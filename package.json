@@ -1,0 +1,20 @@
+{
+  "name": "gimkit-source-tracker",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "getCode": "bun run src/getCode.ts"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/js-beautify": "^1.14.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "js-beautify": "^1.15.4",
+    "node-html-parser": "^7.0.1"
+  }
+}
