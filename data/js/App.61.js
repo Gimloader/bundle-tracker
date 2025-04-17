@@ -1,7 +1,7 @@
-function e(e, t, n, r) {
+function e(e, t, r, n) {
     Object.defineProperty(e, t, {
-        get: n,
-        set: r,
+        get: r,
+        set: n,
         enumerable: !0,
         configurable: !0
     })
@@ -10,422 +10,215 @@ function e(e, t, n, r) {
 function t(e) {
     return e && e.__esModule ? e.default : e
 }
-var n = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-n.register("iEbZz", (function(t, r) {
-    var a;
-    a = t.exports, Object.defineProperty(a, "__esModule", {
+var r = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
+r.register("jK8aP", (function(t, n) {
+    var o;
+    o = t.exports, Object.defineProperty(o, "__esModule", {
         value: !0,
         configurable: !0
     }), e(t.exports, "default", (function() {
-        return C
+        return N
     }));
-    var o = n("hxEiv");
-    n("fywoC");
-    var i = n("iMOcM"),
-        s = n("6HErB"),
-        c = n("dhtBz"),
-        l = n("cnKYR"),
-        u = n("7uhUF"),
-        f = n("9yFzx"),
-        d = n("fC6cp"),
-        p = n("8Odwy"),
-        g = n("2FDaO"),
-        m = n("lKmIF"),
-        v = n("69SUA"),
-        h = n("cHCps");
-    let x, y, w = e => e;
-    const b = ["Payment with purchase order", "Payment with credit/debit card", "Group admin panel", "Discounted pricing"];
-    var C = () => (0, o.jsxs)(o.Fragment, {
-        children: [(0, o.jsx)(i.Title, {
-            title: "Group Pricing"
-        }), (0, o.jsxs)(j, {
-            children: [(0, o.jsx)(h.default, {
-                includeSpacer: !0
-            }), (0, o.jsxs)(O, {
-                style: {
-                    maxWidth: 700
+    var a = r("hxEiv"),
+        i = r("fywoC"),
+        s = r("2FDaO"),
+        c = r("lKmIF"),
+        l = r("69SUA"),
+        u = r("93yIm"),
+        d = r("fC6cp"),
+        f = r("b9Zw0"),
+        p = r("gHmyG"),
+        g = r("iMOcM"),
+        m = r("sgWtV"),
+        v = r("dknAM"),
+        h = r("3uz2P"),
+        y = r("iROck"),
+        x = r("cHCps");
+    let b, w, C, _, O, E, S = e => e;
+    var N = () => {
+        const [e, t] = i.useState(!0), [r, n] = i.useState(""), [o, s] = i.useState(""), [c, l] = i.useState((0, g.isLoggedIn)() ? (0, g.getUser)().email : ""), [b, w] = i.useState(!1), {
+            plan: C
+        } = (0, h.useParams)();
+        i.useEffect((() => {
+            (0, g.request)({
+                url: "/api/quote/fetch-plans",
+                success: e => {
+                    C && (e && e.plans && !e.plans.includes(C) ? (0, m.throwError)({
+                        title: "Invalid plan",
+                        onOk: () => window.location.href = "/"
+                    }) : (n(C), t(!1)))
                 },
-                children: [(0, o.jsx)(u.default, {}), (0, o.jsx)(s.default, {}), (0, o.jsx)("div", {
-                    style: {
-                        height: 20
-                    }
-                }), (0, o.jsx)(f.default, {
-                    features: b.map((e => ({
-                        good: !0,
-                        text: e
-                    })))
-                }), (0, o.jsx)("div", {
-                    style: {
-                        height: 20
-                    }
-                }), (0, o.jsx)(d.default, {
-                    children: (0, o.jsx)("div", {
-                        style: {
-                            fontSize: 23
-                        },
-                        children: "Choose a plan to get a quote"
-                    })
-                }), (0, o.jsx)(c.default, {
-                    plan: l.SchoolGroup,
-                    size: "large"
-                }), (0, o.jsx)("div", {
-                    style: {
-                        height: 10
-                    }
-                }), (0, o.jsx)(c.default, {
-                    plan: l.DepartmentGroup,
-                    size: "small"
-                }), (0, o.jsx)("div", {
-                    style: {
-                        height: 10
-                    }
-                }), (0, o.jsxs)(d.default, {
-                    children: [" ", (0, o.jsx)("div", {
-                        style: {
-                            fontSize: 23
-                        },
-                        children: "Have some more questions?"
-                    })]
-                }), (0, o.jsx)(p.default, {}), (0, o.jsx)("div", {
-                    style: {
-                        height: 40
-                    }
-                })]
-            })]
-        })]
-    });
-    const j = g.default.div.attrs({
-            className: "flex-column vc maxWidth"
-        })(x || (x = w`
-  background: ${0};
-  font-family: ${0};
-  color: ${0};
-`), m.default.Snow, v.Fonts.SFPro, m.default.Black),
-        O = g.default.div(y || (y = w`
-  width: 90%;
-  max-width: 1000px;
-`))
-})), n.register("6HErB", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return f
-    }));
-    var a = n("hxEiv");
-    n("fywoC");
-    var o = n("2FDaO"),
-        i = n("69SUA"),
-        s = n("7ECC6"),
-        c = n("lKmIF");
-    let l;
-    const u = ["Simple and transparent pricing.", "No quote forms asking a million things.", "No calls with the sales team."];
-    var f = () => (0, a.jsx)(s.default, {
-        style: {
-            color: c.default.Black,
-            textAlign: "left"
-        },
-        children: u.map((e => (0, a.jsx)(d, {
-            children: e
-        }, e)))
-    });
-    const d = o.default.div(l || (l = (e => e)`
-  font-size: 23px;
-  font-weight: ${0};
-`), i.FontWeights.Bold)
-})), n.register("dhtBz", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return p
-    }));
-    var a = n("hxEiv");
-    n("fywoC");
-    var o = n("lKmIF"),
-        i = n("69SUA"),
-        s = n("iMOcM"),
-        c = n("2FDaO"),
-        l = n("kyvf1"),
-        u = n("b1oE9");
-    let f;
-    const d = c.default.div(f || (f = (e => e)`
-  background: ${0};
-  width: 100%;
-  padding: 20px;
-  border-radius: 5px;
-  color: ${0};
-  font-family: ${0};
-  text-align: left;
-  transition: all 0.25s;
-  &:hover {
-    transform: scale(1.04);
-  }
-`), (e => e.background || "#101da5"), o.default.White, i.Fonts.SFPro);
-    var p = e => {
-        const t = "large" == e.size,
-            n = {
-                imageHeight: t ? 14 : 10,
-                planNameFontSize: t ? 48 : 30,
-                planNameMarginTop: t ? 5 : 7,
-                planNameLineHeight: t ? "35px" : "17px",
-                priceFontSize: t ? 37 : 24,
-                priceDescriptionFontSize: t ? 11 : 9,
-                priceDescriptionMarginTop: t ? -9 : -7
+                error: () => (0, m.throwError)({
+                    title: "Plan not found"
+                })
+            })
+        }), []);
+        const _ = o && c && (0, v.validateEmail)(c),
+            O = e => {
+                s(e.target.value)
             },
-            r = (0, s.isLoggedIn)() && e.plan.id ? u.CHECKOUT : e.plan.link;
-        return (0, a.jsx)(l.default, {
-            to: r,
-            className: "maxWidth",
-            onClick: e.onClick,
-            style: {
-                textDecoration: "none"
+            E = e => {
+                l(e.target.value)
             },
-            children: (0, a.jsx)(d, {
-                background: e.plan.background,
-                children: (0, a.jsxs)("div", {
-                    className: "flex flex-wrap vc",
-                    style: {
-                        justifyContent: "space-between"
+            S = () => {
+                !b && _ && (w(!0), (0, g.request)({
+                    url: "/api/quote/createFromPlan",
+                    method: "post",
+                    data: {
+                        planId: r,
+                        email: c,
+                        name: o
                     },
-                    children: [(0, a.jsxs)("div", {
+                    success: e => {
+                        (0, y.NavigateTo)(`/quote/${e.quoteId}`)
+                    },
+                    error: () => (0, m.throwError)({
+                        title: "Error creating quote",
+                        content: "Please contact support"
+                    }),
+                    both: () => w(!1)
+                }))
+            };
+        return (0, a.jsxs)(j, {
+            className: "flex-column vc",
+            children: [(0, a.jsx)(x.default, {
+                includeSpacer: !0
+            }), (0, a.jsx)(I, {
+                children: e ? (0, a.jsx)("div", {
+                    className: "maxWidth hc flex",
+                    children: (0, a.jsx)(p.default, {})
+                }) : (0, a.jsxs)(a.Fragment, {
+                    children: [(0, a.jsx)(g.Title, {
+                        title: "New Quote"
+                    }), (0, a.jsxs)(k, {
+                        className: "flex vc wrap",
                         children: [(0, a.jsx)("img", {
-                            src: "/client/img/svgLogoWhite.svg",
+                            src: "/client/img/quote/together.svg",
                             style: {
-                                opacity: .7,
-                                height: n.imageHeight
+                                height: 120,
+                                width: 120,
+                                marginRight: 15
                             }
-                        }), (0, a.jsx)("div", {
-                            style: {
-                                fontWeight: i.FontWeights.UltraBold,
-                                fontSize: n.planNameFontSize,
-                                marginTop: n.planNameMarginTop,
-                                lineHeight: n.planNameLineHeight
-                            },
-                            children: e.plan.name
+                        }), (0, a.jsxs)("div", {
+                            children: [(0, a.jsx)(P, {
+                                children: "New Quote"
+                            }), (0, a.jsx)(z, {
+                                children: "We're so excited to get your group on Gimkit Pro!"
+                            })]
                         })]
-                    }), (0, a.jsxs)("div", {
+                    }), (0, a.jsx)(d.default, {}), (0, a.jsx)(M, {
+                        children: "What is the name of your group?"
+                    }), (0, a.jsx)(f.default, {
+                        onChange: O,
+                        placeholder: "Group name...",
+                        size: "large",
+                        maxLength: 55,
+                        onPressEnter: S
+                    }), (0, a.jsx)("div", {
                         style: {
-                            textAlign: "right"
+                            height: 10
+                        }
+                    }), (0, a.jsx)(M, {
+                        children: "What is your email?"
+                    }), (0, a.jsx)(f.default, {
+                        onChange: E,
+                        placeholder: "Email here...",
+                        size: "large",
+                        value: c,
+                        onPressEnter: S,
+                        type: "email"
+                    }), (0, a.jsxs)("div", {
+                        className: "maxWidth flex",
+                        style: {
+                            justifyContent: "space-between",
+                            marginTop: 5
                         },
-                        children: [(0, a.jsx)("div", {
-                            style: {
-                                fontSize: n.priceFontSize,
-                                fontWeight: i.FontWeights.UltraBold
-                            },
-                            children: e.plan.price
-                        }), e.plan.description && (0, a.jsx)("div", {
-                            style: {
-                                fontSize: n.priceDescriptionFontSize,
-                                opacity: .7,
-                                marginTop: n.priceDescriptionMarginTop
-                            },
-                            children: e.plan.description
+                        children: [(0, a.jsx)("div", {}), (0, a.jsx)(u.default, {
+                            onClick: S,
+                            loading: b,
+                            disabled: !_,
+                            type: "primary",
+                            children: "Submit"
                         })]
                     })]
                 })
-            })
+            })]
         })
-    }
-})), n.register("kyvf1", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return i
-    }));
-    var a = n("hxEiv"),
-        o = n("beXRF");
-    n("fywoC");
-    var i = e => e.external || !e.to ? (0, a.jsx)("a", {
-        href: e.to,
-        tabIndex: Number(e.tabIndex || "0"),
-        onClick: e.onClick,
-        onKeyPress: t => {
-            e.onClick && "Enter" === t.key && (t.preventDefault(), e.onClick())
-        },
-        className: e.className,
-        target: e.target,
-        style: e.style,
-        children: e.children
-    }) : (0, a.jsx)(o.Link, {
-        to: e.to,
-        tabIndex: Number(e.tabIndex || "0"),
-        onClick: e.onClick,
-        className: e.className,
-        target: e.target,
-        style: e.style,
-        children: e.children
-    })
-})), n.register("cnKYR", (function(t, r) {
-    e(t.exports, "DepartmentGroup", (function() {
-        return c
-    })), e(t.exports, "SchoolGroup", (function() {
-        return l
-    }));
-    var a = n("hxEiv");
-    n("fywoC");
-    var o = n("69SUA"),
-        i = n("b1oE9"),
-        s = n("91OKC");
-    s.PlanIds.basic, o.FontWeights.Bold, s.PlanIds.pro, s.PlanIds.pro, s.PlanIds.proPass, s.PlanIds.proPass, i.GROUP_PRICING;
-    const c = {
-            name: "Department",
-            price: "$650",
-            description: (0, a.jsx)("span", {
-                style: {
-                    fontSize: 16
-                },
-                children: "per year, Pro for 20 teachers"
-            }),
-            background: "#311b92",
-            link: "/quote/new/department-1"
-        },
-        l = {
-            name: "School",
-            price: "$1,000",
-            description: (0, a.jsx)("span", {
-                style: {
-                    fontSize: 16
-                },
-                children: "per year, Pro for every teacher at your school"
-            }),
-            background: "#2e7d32",
-            link: "/quote/new/school-1"
-        }
-})), n.register("7uhUF", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return i
-    }));
-    var a = n("hxEiv");
-    n("fywoC");
-    var o = n("69SUA");
-    var i = () => (0, a.jsxs)("div", {
-        className: "flex vc maxWidth hc flex-column",
-        style: {
-            marginTop: 35
-        },
-        children: [(0, a.jsx)("img", {
-            src: "/client/img/svgLogo.svg",
-            style: {
-                height: 36,
-                opacity: .86
-            }
-        }), (0, a.jsx)("div", {
-            style: {
-                fontSize: 83,
-                marginTop: -28,
-                fontWeight: o.FontWeights.UltraBold
-            },
-            children: "Groups"
-        })]
-    })
-})), n.register("9yFzx", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return c
-    }));
-    var a = n("hxEiv");
-    n("fywoC");
-    var o = n("2FDaO");
-    let i;
-    const s = e => (0, a.jsxs)("div", {
-        className: "flex vc",
-        style: {
-            margin: 10
-        },
-        children: [(0, a.jsx)("div", {
-            style: {
-                marginRight: 7,
-                fontSize: 25
-            },
-            children: e.good ? (0, a.jsx)("i", {
-                className: "fad fa-check-circle",
-                style: {
-                    color: "green"
-                }
-            }) : (0, a.jsx)("i", {
-                className: "fad fa-times-circle",
-                style: {
-                    color: "red"
-                }
-            })
-        }), (0, a.jsx)("div", {
-            children: e.text
-        })]
-    });
-    var c = e => (0, a.jsx)(l, {
-        className: "flex maxWidth wrap vc hc",
-        children: e.features.map((e => (0, a.jsx)(s, {
-            good: e.good,
-            text: e.text
-        }, `feat-${e.good}-${e.text}`)))
-    });
-    const l = o.default.div(i || (i = (e => e)`
-  text-align: left;
-  font-size: 17px;
-`))
-})), n.register("8Odwy", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return l
-    }));
-    var a = n("hxEiv");
-    n("fywoC");
-    var o = n("7ECC6"),
-        i = n("lKmIF"),
-        s = n("69SUA");
-    const c = {
-        width: "calc(100% - 10px)",
-        color: i.default.Black,
-        textAlign: "center",
-        fontFamily: s.Fonts.SFPro,
-        fontSize: 25,
-        fontWeight: s.FontWeights.Bold,
-        cursor: "pointer"
     };
-    var l = () => (0, a.jsxs)("div", {
-        className: "maxWidth flex",
-        children: [(0, a.jsx)(o.default, {
-            onClick: () => window.open("https://help.gimkit.com/en/category/group-subscriptions-3m7198/"),
-            style: c,
-            hoverable: !0,
-            children: "FAQ"
-        }), (0, a.jsx)("div", {
-            style: {
-                width: 20
-            }
-        }), (0, a.jsx)(o.default, {
-            onClick: () => window.open("mailto:groups@gimkit.com", "_self"),
-            style: c,
-            hoverable: !0,
-            children: "Ask a question"
-        })]
-    })
-})), n.register("kuEJ4", (function(t, r) {
+    const j = s.default.div(b || (b = S`
+  min-height: 100%;
+  background: ${0};
+  width: 100%;
+  color: ${0};
+  font-family: ${0};
+`), c.default.Snow, c.default.Black, l.Fonts.SFPro),
+        I = s.default.div(w || (w = S`
+  width: 100%;
+  max-width: 550px;
+  padding: 20px;
+`)),
+        k = s.default.div(C || (C = S`
+  width: 100%;
+`)),
+        P = s.default.h1(_ || (_ = S`
+  font-size: 39px;
+  color: ${0};
+  font-weight: ${0};
+  margin-bottom: -10px;
+`), c.default.Black, l.FontWeights.UltraBold),
+        z = s.default.p(O || (O = S`
+  font-size: 17px;
+  margin-bottom: 0px;
+`)),
+        M = s.default.h2(E || (E = S`
+  font-weight: ${0};
+  color: ${0};
+  font-size: 22px;
+  margin-bottom: 0px;
+`), l.FontWeights.Bold, c.default.Black)
+})), r.register("iROck", (function(t, n) {
+    e(t.exports, "NavigateTo", (function() {
+        return a
+    }));
+    var o = r("bd8je");
+    const a = e => {
+        o.history.push(e)
+    }
+})), r.register("kuEJ4", (function(t, n) {
     e(t.exports, "default", (function() {
         return s
     }));
-    var a = n("iI4DW"),
-        o = n("fywoC"),
-        i = n("4gMdJ");
+    var o = r("iI4DW"),
+        a = r("fywoC"),
+        i = r("4gMdJ");
 
-    function s(e, t, n) {
-        return function(r) {
+    function s(e, t, r) {
+        return function(n) {
             const {
                 prefixCls: s,
                 style: c
-            } = r, l = o.useRef(null), [u, f] = o.useState(0), [d, p] = o.useState(0), [g, m] = (0, a.default)(!1, {
-                value: r.open
+            } = n, l = a.useRef(null), [u, d] = a.useState(0), [f, p] = a.useState(0), [g, m] = (0, o.default)(!1, {
+                value: n.open
             }), {
                 getPrefixCls: v
-            } = o.useContext(i.ConfigContext), h = v(t || "select", s);
-            return o.useEffect((() => {
+            } = a.useContext(i.ConfigContext), h = v(t || "select", s);
+            return a.useEffect((() => {
                 if (m(!0), "undefined" != typeof ResizeObserver) {
                     const e = new ResizeObserver((e => {
                             const t = e[0].target;
-                            f(t.offsetHeight + 8), p(t.offsetWidth)
+                            d(t.offsetHeight + 8), p(t.offsetWidth)
                         })),
                         t = setInterval((() => {
-                            var r;
-                            const a = n ? `.${n(h)}` : `.${h}-dropdown`,
-                                o = null === (r = l.current) || void 0 === r ? void 0 : r.querySelector(a);
-                            o && (clearInterval(t), e.observe(o))
+                            var n;
+                            const o = r ? `.${r(h)}` : `.${h}-dropdown`,
+                                a = null === (n = l.current) || void 0 === n ? void 0 : n.querySelector(o);
+                            a && (clearInterval(t), e.observe(a))
                         }), 10);
                     return () => {
                         clearInterval(t), e.disconnect()
                     }
                 }
-            }), []), o.createElement(i.default, {
+            }), []), a.createElement(i.default, {
                 theme: {
                     token: {
                         motionDurationFast: "0.01s",
@@ -433,15 +226,15 @@ n.register("iEbZz", (function(t, r) {
                         motionDurationSlow: "0.01s"
                     }
                 }
-            }, o.createElement("div", {
+            }, a.createElement("div", {
                 ref: l,
                 style: {
                     paddingBottom: u,
                     position: "relative",
                     width: "fit-content",
-                    minWidth: d
+                    minWidth: f
                 }
-            }, o.createElement(e, Object.assign({}, r, {
+            }, a.createElement(e, Object.assign({}, n, {
                 style: Object.assign(Object.assign({}, c), {
                     margin: 0
                 }),
@@ -451,13 +244,13 @@ n.register("iEbZz", (function(t, r) {
             }))))
         }
     }
-})), n.register("hacAX", (function(t, r) {
+})), r.register("hacAX", (function(t, n) {
     e(t.exports, "initMoveMotion", (function() {
         return p
     }));
-    var a = n("lt5sb"),
-        o = n("aWAHQ");
-    const i = new(0, a.Keyframes)("antMoveDownIn", {
+    var o = r("lt5sb"),
+        a = r("aWAHQ");
+    const i = new(0, o.Keyframes)("antMoveDownIn", {
             "0%": {
                 transform: "translate3d(0, 100%, 0)",
                 transformOrigin: "0 0",
@@ -469,7 +262,7 @@ n.register("iEbZz", (function(t, r) {
                 opacity: 1
             }
         }),
-        s = new(0, a.Keyframes)("antMoveDownOut", {
+        s = new(0, o.Keyframes)("antMoveDownOut", {
             "0%": {
                 transform: "translate3d(0, 0, 0)",
                 transformOrigin: "0 0",
@@ -481,7 +274,7 @@ n.register("iEbZz", (function(t, r) {
                 opacity: 0
             }
         }),
-        c = new(0, a.Keyframes)("antMoveLeftIn", {
+        c = new(0, o.Keyframes)("antMoveLeftIn", {
             "0%": {
                 transform: "translate3d(-100%, 0, 0)",
                 transformOrigin: "0 0",
@@ -493,7 +286,7 @@ n.register("iEbZz", (function(t, r) {
                 opacity: 1
             }
         }),
-        l = new(0, a.Keyframes)("antMoveLeftOut", {
+        l = new(0, o.Keyframes)("antMoveLeftOut", {
             "0%": {
                 transform: "translate3d(0, 0, 0)",
                 transformOrigin: "0 0",
@@ -505,7 +298,7 @@ n.register("iEbZz", (function(t, r) {
                 opacity: 0
             }
         }),
-        u = new(0, a.Keyframes)("antMoveRightIn", {
+        u = new(0, o.Keyframes)("antMoveRightIn", {
             "0%": {
                 transform: "translate3d(100%, 0, 0)",
                 transformOrigin: "0 0",
@@ -517,7 +310,7 @@ n.register("iEbZz", (function(t, r) {
                 opacity: 1
             }
         }),
-        f = new(0, a.Keyframes)("antMoveRightOut", {
+        d = new(0, o.Keyframes)("antMoveRightOut", {
             "0%": {
                 transform: "translate3d(0, 0, 0)",
                 transformOrigin: "0 0",
@@ -529,9 +322,9 @@ n.register("iEbZz", (function(t, r) {
                 opacity: 0
             }
         }),
-        d = {
+        f = {
             "move-up": {
-                inKeyframes: new(0, a.Keyframes)("antMoveUpIn", {
+                inKeyframes: new(0, o.Keyframes)("antMoveUpIn", {
                     "0%": {
                         transform: "translate3d(0, -100%, 0)",
                         transformOrigin: "0 0",
@@ -543,7 +336,7 @@ n.register("iEbZz", (function(t, r) {
                         opacity: 1
                     }
                 }),
-                outKeyframes: new(0, a.Keyframes)("antMoveUpOut", {
+                outKeyframes: new(0, o.Keyframes)("antMoveUpOut", {
                     "0%": {
                         transform: "translate3d(0, 0, 0)",
                         transformOrigin: "0 0",
@@ -566,52 +359,52 @@ n.register("iEbZz", (function(t, r) {
             },
             "move-right": {
                 inKeyframes: u,
-                outKeyframes: f
+                outKeyframes: d
             }
         },
         p = (e, t) => {
             const {
-                antCls: n
-            } = e, r = `${n}-${t}`, {
-                inKeyframes: a,
+                antCls: r
+            } = e, n = `${r}-${t}`, {
+                inKeyframes: o,
                 outKeyframes: i
-            } = d[t];
-            return [(0, o.initMotion)(r, a, i, e.motionDurationMid), {
-                [`\n        ${r}-enter,\n        ${r}-appear\n      `]: {
+            } = f[t];
+            return [(0, a.initMotion)(n, o, i, e.motionDurationMid), {
+                [`\n        ${n}-enter,\n        ${n}-appear\n      `]: {
                     opacity: 0,
                     animationTimingFunction: e.motionEaseOutCirc
                 },
-                [`${r}-leave`]: {
+                [`${n}-leave`]: {
                     animationTimingFunction: e.motionEaseInOutCirc
                 }
             }]
         }
-})), n.register("i5Qjx", (function(r, a) {
-    e(r.exports, "SpaceContext", (function() {
+})), r.register("i5Qjx", (function(n, o) {
+    e(n.exports, "SpaceContext", (function() {
         return g
     }), (function(e) {
         return g = e
-    })), e(r.exports, "default", (function() {
+    })), e(n.exports, "default", (function() {
         return h
     }), (function(e) {
         return h = e
     }));
-    var o = n("fe1on"),
-        i = n("jyxW7"),
-        s = n("fywoC"),
-        c = n("4gMdJ"),
-        l = n("1eqVQ"),
-        u = n("7yXSw"),
-        f = n("c9Vcn"),
-        d = n("5gjI2"),
+    var a = r("fe1on"),
+        i = r("jyxW7"),
+        s = r("fywoC"),
+        c = r("4gMdJ"),
+        l = r("1eqVQ"),
+        u = r("7yXSw"),
+        d = r("c9Vcn"),
+        f = r("5gjI2"),
         p = function(e, t) {
-            var n = {};
-            for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
+            var r = {};
+            for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
             if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-                var a = 0;
-                for (r = Object.getOwnPropertySymbols(e); a < r.length; a++) t.indexOf(r[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[a]) && (n[r[a]] = e[r[a]])
+                var o = 0;
+                for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (r[n[o]] = e[n[o]])
             }
-            return n
+            return r
         };
     const g = s.createContext({
             latestIndex: 0,
@@ -626,83 +419,83 @@ n.register("iEbZz", (function(t, r) {
         };
     const v = e => {
         const {
-            getPrefixCls: n,
-            space: r,
-            direction: a
+            getPrefixCls: r,
+            space: n,
+            direction: o
         } = s.useContext(c.ConfigContext), {
-            size: u = (null == r ? void 0 : r.size) || "small",
+            size: u = (null == n ? void 0 : n.size) || "small",
             align: v,
             className: h,
-            rootClassName: x,
-            children: y,
-            direction: w = "horizontal",
-            prefixCls: b,
+            rootClassName: y,
+            children: x,
+            direction: b = "horizontal",
+            prefixCls: w,
             split: C,
-            style: j,
+            style: _,
             wrap: O = !1
-        } = e, S = p(e, ["size", "align", "className", "rootClassName", "children", "direction", "prefixCls", "split", "style", "wrap"]), z = (0, l.default)(), [E, k] = s.useMemo((() => (Array.isArray(u) ? u : [u, u]).map((e => function(e) {
+        } = e, E = p(e, ["size", "align", "className", "rootClassName", "children", "direction", "prefixCls", "split", "style", "wrap"]), S = (0, l.default)(), [N, j] = s.useMemo((() => (Array.isArray(u) ? u : [u, u]).map((e => function(e) {
             return "string" == typeof e ? m[e] : e || 0
-        }(e)))), [u]), N = (0, i.default)(y, {
+        }(e)))), [u]), I = (0, i.default)(x, {
             keepEmpty: !0
-        }), M = void 0 === v && "horizontal" === w ? "center" : v, P = n("space", b), [D, F] = (0, d.default)(P), W = t(o)(P, F, `${P}-${w}`, {
-            [`${P}-rtl`]: "rtl" === a,
-            [`${P}-align-${M}`]: M
-        }, h, x), K = `${P}-item`, _ = "rtl" === a ? "marginLeft" : "marginRight";
-        let B = 0;
-        const I = N.map(((e, t) => {
-                null != e && (B = t);
-                const n = e && e.key || `${K}-${t}`;
-                return s.createElement(f.default, {
-                    className: K,
-                    key: n,
-                    direction: w,
+        }), k = void 0 === v && "horizontal" === b ? "center" : v, P = r("space", w), [z, M] = (0, f.default)(P), A = t(a)(P, M, `${P}-${b}`, {
+            [`${P}-rtl`]: "rtl" === o,
+            [`${P}-align-${k}`]: k
+        }, h, y), L = `${P}-item`, T = "rtl" === o ? "marginLeft" : "marginRight";
+        let D = 0;
+        const R = I.map(((e, t) => {
+                null != e && (D = t);
+                const r = e && e.key || `${L}-${t}`;
+                return s.createElement(d.default, {
+                    className: L,
+                    key: r,
+                    direction: b,
                     index: t,
-                    marginDirection: _,
+                    marginDirection: T,
                     split: C,
                     wrap: O
                 }, e)
             })),
-            R = s.useMemo((() => ({
-                horizontalSize: E,
-                verticalSize: k,
-                latestIndex: B,
-                supportFlexGap: z
-            })), [E, k, B, z]);
-        if (0 === N.length) return null;
-        const L = {};
-        return O && (L.flexWrap = "wrap", z || (L.marginBottom = -k)), z && (L.columnGap = E, L.rowGap = k), D(s.createElement("div", Object.assign({
-            className: W,
-            style: Object.assign(Object.assign({}, L), j)
-        }, S), s.createElement(g.Provider, {
-            value: R
-        }, I)))
+            W = s.useMemo((() => ({
+                horizontalSize: N,
+                verticalSize: j,
+                latestIndex: D,
+                supportFlexGap: S
+            })), [N, j, D, S]);
+        if (0 === I.length) return null;
+        const K = {};
+        return O && (K.flexWrap = "wrap", S || (K.marginBottom = -j)), S && (K.columnGap = N, K.rowGap = j), z(s.createElement("div", Object.assign({
+            className: A,
+            style: Object.assign(Object.assign({}, K), _)
+        }, E), s.createElement(g.Provider, {
+            value: W
+        }, R)))
     };
     v.Compact = u.default;
     var h = v
-})), n.register("1eqVQ", (function(t, r) {
+})), r.register("1eqVQ", (function(t, n) {
     e(t.exports, "default", (function() {
         return i
     }));
-    var a = n("fywoC"),
-        o = n("azMeL"),
+    var o = r("fywoC"),
+        a = r("azMeL"),
         i = () => {
-            const [e, t] = a.useState(!1);
-            return a.useEffect((() => {
-                t((0, o.detectFlexGapSupported)())
+            const [e, t] = o.useState(!1);
+            return o.useEffect((() => {
+                t((0, a.detectFlexGapSupported)())
             }), []), e
         }
-})), n.register("c9Vcn", (function(t, r) {
+})), r.register("c9Vcn", (function(t, n) {
     e(t.exports, "default", (function() {
         return i
     }));
-    var a = n("fywoC"),
-        o = n("i5Qjx");
+    var o = r("fywoC"),
+        a = r("i5Qjx");
 
     function i(e) {
         let {
             className: t,
-            direction: n,
-            index: r,
+            direction: r,
+            index: n,
             marginDirection: i,
             children: s,
             split: c,
@@ -710,66 +503,66 @@ n.register("iEbZz", (function(t, r) {
         } = e;
         const {
             horizontalSize: u,
-            verticalSize: f,
-            latestIndex: d,
+            verticalSize: d,
+            latestIndex: f,
             supportFlexGap: p
-        } = a.useContext(o.SpaceContext);
+        } = o.useContext(a.SpaceContext);
         let g = {};
-        return p || ("vertical" === n ? r < d && (g = {
+        return p || ("vertical" === r ? n < f && (g = {
             marginBottom: u / (c ? 2 : 1)
-        }) : g = Object.assign(Object.assign({}, r < d && {
+        }) : g = Object.assign(Object.assign({}, n < f && {
             [i]: u / (c ? 2 : 1)
         }), l && {
-            paddingBottom: f
-        })), null == s ? null : a.createElement(a.Fragment, null, a.createElement("div", {
+            paddingBottom: d
+        })), null == s ? null : o.createElement(o.Fragment, null, o.createElement("div", {
             className: t,
             style: g
-        }, s), r < d && c && a.createElement("span", {
+        }, s), n < f && c && o.createElement("span", {
             className: `${t}-split`,
             style: g
         }, c))
     }
-})), n.register("dhxiD", (function(e, t) {
-    var r = n("1fK2g"),
-        a = {
+})), r.register("dhxiD", (function(e, t) {
+    var n = r("1fK2g"),
+        o = {
             "text/plain": "Text",
             "text/html": "Url",
             default: "Text"
         };
     e.exports = function(e, t) {
-        var n, o, i, s, c, l, u = !1;
-        t || (t = {}), n = t.debug || !1;
+        var r, a, i, s, c, l, u = !1;
+        t || (t = {}), r = t.debug || !1;
         try {
-            if (i = r(), s = document.createRange(), c = document.getSelection(), (l = document.createElement("span")).textContent = e, l.ariaHidden = "true", l.style.all = "unset", l.style.position = "fixed", l.style.top = 0, l.style.clip = "rect(0, 0, 0, 0)", l.style.whiteSpace = "pre", l.style.webkitUserSelect = "text", l.style.MozUserSelect = "text", l.style.msUserSelect = "text", l.style.userSelect = "text", l.addEventListener("copy", (function(r) {
-                    if (r.stopPropagation(), t.format)
-                        if (r.preventDefault(), void 0 === r.clipboardData) {
-                            n && console.warn("unable to use e.clipboardData"), n && console.warn("trying IE specific stuff"), window.clipboardData.clearData();
-                            var o = a[t.format] || a.default;
-                            window.clipboardData.setData(o, e)
-                        } else r.clipboardData.clearData(), r.clipboardData.setData(t.format, e);
-                    t.onCopy && (r.preventDefault(), t.onCopy(r.clipboardData))
+            if (i = n(), s = document.createRange(), c = document.getSelection(), (l = document.createElement("span")).textContent = e, l.ariaHidden = "true", l.style.all = "unset", l.style.position = "fixed", l.style.top = 0, l.style.clip = "rect(0, 0, 0, 0)", l.style.whiteSpace = "pre", l.style.webkitUserSelect = "text", l.style.MozUserSelect = "text", l.style.msUserSelect = "text", l.style.userSelect = "text", l.addEventListener("copy", (function(n) {
+                    if (n.stopPropagation(), t.format)
+                        if (n.preventDefault(), void 0 === n.clipboardData) {
+                            r && console.warn("unable to use e.clipboardData"), r && console.warn("trying IE specific stuff"), window.clipboardData.clearData();
+                            var a = o[t.format] || o.default;
+                            window.clipboardData.setData(a, e)
+                        } else n.clipboardData.clearData(), n.clipboardData.setData(t.format, e);
+                    t.onCopy && (n.preventDefault(), t.onCopy(n.clipboardData))
                 })), document.body.appendChild(l), s.selectNodeContents(l), c.addRange(s), !document.execCommand("copy")) throw new Error("copy command was unsuccessful");
             u = !0
-        } catch (r) {
-            n && console.error("unable to copy using execCommand: ", r), n && console.warn("trying IE specific stuff");
+        } catch (n) {
+            r && console.error("unable to copy using execCommand: ", n), r && console.warn("trying IE specific stuff");
             try {
                 window.clipboardData.setData(t.format || "text", e), t.onCopy && t.onCopy(window.clipboardData), u = !0
-            } catch (r) {
-                n && console.error("unable to copy using clipboardData: ", r), n && console.error("falling back to prompt"), o = function(e) {
+            } catch (n) {
+                r && console.error("unable to copy using clipboardData: ", n), r && console.error("falling back to prompt"), a = function(e) {
                     var t = (/mac os x/i.test(navigator.userAgent) ? "⌘" : "Ctrl") + "+C";
                     return e.replace(/#{\s*key\s*}/g, t)
-                }("message" in t ? t.message : "Copy to clipboard: #{key}, Enter"), window.prompt(o, e)
+                }("message" in t ? t.message : "Copy to clipboard: #{key}, Enter"), window.prompt(a, e)
             }
         } finally {
             c && ("function" == typeof c.removeRange ? c.removeRange(s) : c.removeAllRanges()), l && document.body.removeChild(l), i()
         }
         return u
     }
-})), n.register("1fK2g", (function(e, t) {
+})), r.register("1fK2g", (function(e, t) {
     e.exports = function() {
         var e = document.getSelection();
         if (!e.rangeCount) return function() {};
-        for (var t = document.activeElement, n = [], r = 0; r < e.rangeCount; r++) n.push(e.getRangeAt(r));
+        for (var t = document.activeElement, r = [], n = 0; n < e.rangeCount; n++) r.push(e.getRangeAt(n));
         switch (t.tagName.toUpperCase()) {
             case "INPUT":
             case "TEXTAREA":
@@ -780,89 +573,89 @@ n.register("iEbZz", (function(t, r) {
         }
         return e.removeAllRanges(),
             function() {
-                "Caret" === e.type && e.removeAllRanges(), e.rangeCount || n.forEach((function(t) {
+                "Caret" === e.type && e.removeAllRanges(), e.rangeCount || r.forEach((function(t) {
                     e.addRange(t)
                 })), t && t.focus()
             }
     }
-})), n.register("6WS0O", (function(t, n) {
+})), r.register("6WS0O", (function(t, r) {
     e(t.exports, "default", (function() {
-        return r
+        return n
     }));
-    var r = {
+    var n = {
         sideMargin: 50,
         optionWidth: 200
     }
-})), n.register("77qSl", (function(t, r) {
+})), r.register("77qSl", (function(t, n) {
     e(t.exports, "useMediaMatch", (function() {
-        return o
+        return a
     }));
-    var a = n("fywoC");
+    var o = r("fywoC");
 
-    function o(e) {
+    function a(e) {
         if ("undefined" == typeof window) return console.warn("useMediaMatch cannot function as window is undefined."), !1;
-        var t = (0, a.useMemo)((function() {
+        var t = (0, o.useMemo)((function() {
                 return window.matchMedia(e)
             }), [e]),
-            n = (0, a.useState)((function() {
+            r = (0, o.useState)((function() {
                 return t.matches
             })),
-            r = n[0],
-            o = n[1];
-        return (0, a.useEffect)((function() {
-            o(t.matches);
+            n = r[0],
+            a = r[1];
+        return (0, o.useEffect)((function() {
+            a(t.matches);
             var e = function(e) {
-                return o(e.matches)
+                return a(e.matches)
             };
             return t.addEventListener ? (t.addEventListener("change", e), function() {
                 return t.removeEventListener("change", e)
             }) : (t.addListener(e), function() {
                 return t.removeListener(e)
             })
-        }), [t]), r
+        }), [t]), n
     }
-})), n.register("3bHhZ", (function(e, t) {
-    var r = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, n, r) {
-            void 0 === r && (r = n), Object.defineProperty(e, r, {
+})), r.register("3bHhZ", (function(e, t) {
+    var n = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, r, n) {
+            void 0 === n && (n = r), Object.defineProperty(e, n, {
                 enumerable: !0,
                 get: function() {
-                    return t[n]
+                    return t[r]
                 }
             })
-        } : function(e, t, n, r) {
-            void 0 === r && (r = n), e[r] = t[n]
+        } : function(e, t, r, n) {
+            void 0 === n && (n = r), e[n] = t[r]
         }),
-        a = e.exports && e.exports.__exportStar || function(e, t) {
-            for (var n in e) "default" === n || Object.prototype.hasOwnProperty.call(t, n) || r(t, e, n)
+        o = e.exports && e.exports.__exportStar || function(e, t) {
+            for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || n(t, e, r)
         };
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
-    }), a(n("coa3i"), e.exports), a(n("exKSe"), e.exports), a(n("4Nv4f"), e.exports)
-})), n.register("coa3i", (function(e, t) {
+    }), o(r("coa3i"), e.exports), o(r("exKSe"), e.exports), o(r("4Nv4f"), e.exports)
+})), r.register("coa3i", (function(e, t) {
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.useBreakpoints = e.exports.useBreakpoint = void 0;
-    var r = n("4Nv4f");
+    var n = r("4Nv4f");
     e.exports.useBreakpoint = function(e) {
-        return (0, r.useWindowSize)().width < e
+        return (0, n.useWindowSize)().width < e
     }, e.exports.useBreakpoints = function(e) {
-        var t = (0, r.useWindowSize)().width;
+        var t = (0, n.useWindowSize)().width;
         return e.map((function(e) {
             return t < e
         }))
     }
-})), n.register("4Nv4f", (function(e, t) {
-    var r = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, n, r) {
-            void 0 === r && (r = n), Object.defineProperty(e, r, {
+})), r.register("4Nv4f", (function(e, t) {
+    var n = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, r, n) {
+            void 0 === n && (n = r), Object.defineProperty(e, n, {
                 enumerable: !0,
                 get: function() {
-                    return t[n]
+                    return t[r]
                 }
             })
-        } : function(e, t, n, r) {
-            void 0 === r && (r = n), e[r] = t[n]
+        } : function(e, t, r, n) {
+            void 0 === n && (n = r), e[n] = t[r]
         }),
-        a = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
+        o = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
             Object.defineProperty(e, "default", {
                 enumerable: !0,
                 value: t
@@ -870,17 +663,17 @@ n.register("iEbZz", (function(t, r) {
         } : function(e, t) {
             e.default = t
         }),
-        o = e.exports && e.exports.__importStar || function(e) {
+        a = e.exports && e.exports.__importStar || function(e) {
             if (e && e.__esModule) return e;
             var t = {};
             if (null != e)
-                for (var n in e) "default" !== n && Object.prototype.hasOwnProperty.call(e, n) && r(t, e, n);
-            return a(t, e), t
+                for (var r in e) "default" !== r && Object.prototype.hasOwnProperty.call(e, r) && n(t, e, r);
+            return o(t, e), t
         };
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.useWindowSize = void 0;
-    var i = o(n("fywoC"));
+    var i = a(r("fywoC"));
 
     function s() {
         return {
@@ -891,10 +684,10 @@ n.register("iEbZz", (function(t, r) {
     e.exports.useWindowSize = function() {
         var e = i.useState(s()),
             t = e[0],
-            n = e[1];
+            r = e[1];
         return i.useLayoutEffect((function() {
             function e() {
-                n(s())
+                r(s())
             }
             return window.addEventListener("resize", e),
                 function() {
@@ -902,25 +695,25 @@ n.register("iEbZz", (function(t, r) {
                 }
         }), []), t
     }
-})), n.register("exKSe", (function(e, t) {
-    var r = e.exports && e.exports.__assign || function() {
-            return r = Object.assign || function(e) {
-                for (var t, n = 1, r = arguments.length; n < r; n++)
-                    for (var a in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
+})), r.register("exKSe", (function(e, t) {
+    var n = e.exports && e.exports.__assign || function() {
+            return n = Object.assign || function(e) {
+                for (var t, r = 1, n = arguments.length; r < n; r++)
+                    for (var o in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o]);
                 return e
-            }, r.apply(this, arguments)
+            }, n.apply(this, arguments)
         },
-        a = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, n, r) {
-            void 0 === r && (r = n), Object.defineProperty(e, r, {
+        o = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, r, n) {
+            void 0 === n && (n = r), Object.defineProperty(e, n, {
                 enumerable: !0,
                 get: function() {
-                    return t[n]
+                    return t[r]
                 }
             })
-        } : function(e, t, n, r) {
-            void 0 === r && (r = n), e[r] = t[n]
+        } : function(e, t, r, n) {
+            void 0 === n && (n = r), e[n] = t[r]
         }),
-        o = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
+        a = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
             Object.defineProperty(e, "default", {
                 enumerable: !0,
                 value: t
@@ -932,68 +725,68 @@ n.register("iEbZz", (function(t, r) {
             if (e && e.__esModule) return e;
             var t = {};
             if (null != e)
-                for (var n in e) "default" !== n && Object.prototype.hasOwnProperty.call(e, n) && a(t, e, n);
-            return o(t, e), t
+                for (var r in e) "default" !== r && Object.prototype.hasOwnProperty.call(e, r) && o(t, e, r);
+            return a(t, e), t
         };
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.useComponentSize = void 0;
-    var s = i(n("fywoC"));
+    var s = i(r("fywoC"));
     e.exports.useComponentSize = function() {
         var e = s.useState({
                 height: 0,
                 width: 0
             }),
             t = e[0],
-            n = e[1],
-            a = s.useRef(),
-            o = s.useCallback((function() {
-                if (a.current) {
-                    var e = a.current.offsetHeight,
-                        r = a.current.offsetWidth;
-                    e === t.height && r === t.width || n({
+            r = e[1],
+            o = s.useRef(),
+            a = s.useCallback((function() {
+                if (o.current) {
+                    var e = o.current.offsetHeight,
+                        n = o.current.offsetWidth;
+                    e === t.height && n === t.width || r({
                         height: e,
-                        width: r
+                        width: n
                     })
                 }
             }), [t.height, t.width]);
         return s.useLayoutEffect((function() {
-            if (a && a.current) {
-                var e = new ResizeObserver(o);
-                return e.observe(a.current),
+            if (o && o.current) {
+                var e = new ResizeObserver(a);
+                return e.observe(o.current),
                     function() {
                         return e.disconnect()
                     }
             }
-        }), [a, o]), r({
-            ref: a
+        }), [o, a]), n({
+            ref: o
         }, t)
     }
-})), n.register("hDWWf", (function(t, n) {
-    let r;
-    var a;
+})), r.register("hDWWf", (function(t, r) {
+    let n;
+    var o;
     e(t.exports, "SiteHeaderTheme", (function() {
-        return r
-    })), (a = r || (r = {})).light = "light", a.dark = "dark"
-})), n.register("hSz8d", (function(t, n) {
-    let r;
-    var a;
+        return n
+    })), (o = n || (n = {})).light = "light", o.dark = "dark"
+})), r.register("hSz8d", (function(t, r) {
+    let n;
+    var o;
     e(t.exports, "SiteHeaderAlpha", (function() {
-        return r
-    })), (a = r || (r = {})).none = "none", a.standard = "standard", a.darker = "darker"
-})), n.register("9Vz35", (function(t, r) {
+        return n
+    })), (o = n || (n = {})).none = "none", o.standard = "standard", o.darker = "darker"
+})), r.register("9Vz35", (function(t, n) {
     e(t.exports, "default", (function() {
-        return a
+        return o
     }));
-    var a = {
-        name: n("2Y5iQ").default.areaName,
+    var o = {
+        name: r("2Y5iQ").default.areaName,
         iconImage: "/client/img/header/rewards.svg"
     }
-})), n.register("2Y5iQ", (function(t, n) {
+})), r.register("2Y5iQ", (function(t, r) {
     e(t.exports, "default", (function() {
-        return r
+        return n
     }));
-    var r = {
+    var n = {
         areaName: "Rewards",
         level: "Level",
         xp: "XP",
@@ -1002,27 +795,27 @@ n.register("iEbZz", (function(t, r) {
         sticker: "Sticker",
         trail: "Trail"
     }
-})), n.register("dohZB", (function(t, r) {
+})), r.register("dohZB", (function(t, n) {
     e(t.exports, "default", (function() {
         return l
     }));
-    var a = n("dnh3u"),
-        o = n("fywoC"),
-        i = n("bVHCc"),
-        s = n("dwKuN"),
+    var o = r("dnh3u"),
+        a = r("fywoC"),
+        i = r("bVHCc"),
+        s = r("dwKuN"),
         c = function(e, t) {
-            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
+            return a.createElement(s.default, (0, o.default)((0, o.default)({}, e), {}, {
                 ref: t,
                 icon: i.default
             }))
         };
     c.displayName = "UsergroupAddOutlined";
-    var l = o.forwardRef(c)
-})), n.register("bVHCc", (function(t, n) {
+    var l = a.forwardRef(c)
+})), r.register("bVHCc", (function(t, r) {
     e(t.exports, "default", (function() {
-        return r
+        return n
     }));
-    var r = {
+    var n = {
         icon: {
             tag: "svg",
             attrs: {
@@ -1039,27 +832,27 @@ n.register("iEbZz", (function(t, r) {
         name: "usergroup-add",
         theme: "outlined"
     }
-})), n.register("kVS28", (function(t, r) {
+})), r.register("kVS28", (function(t, n) {
     e(t.exports, "default", (function() {
         return l
     }));
-    var a = n("dnh3u"),
-        o = n("fywoC"),
-        i = n("4GmeK"),
-        s = n("dwKuN"),
+    var o = r("dnh3u"),
+        a = r("fywoC"),
+        i = r("4GmeK"),
+        s = r("dwKuN"),
         c = function(e, t) {
-            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
+            return a.createElement(s.default, (0, o.default)((0, o.default)({}, e), {}, {
                 ref: t,
                 icon: i.default
             }))
         };
     c.displayName = "LogoutOutlined";
-    var l = o.forwardRef(c)
-})), n.register("4GmeK", (function(t, n) {
+    var l = a.forwardRef(c)
+})), r.register("4GmeK", (function(t, r) {
     e(t.exports, "default", (function() {
-        return r
+        return n
     }));
-    var r = {
+    var n = {
         icon: {
             tag: "svg",
             attrs: {
@@ -1076,33 +869,60 @@ n.register("iEbZz", (function(t, r) {
         name: "logout",
         theme: "outlined"
     }
-})), n.register("9kZfj", (function(t, r) {
-    e(t.exports, "onlyOfferAnnualUpgrade", (function() {
-        return o
+})), r.register("kyvf1", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return i
     }));
-    var a = n("hrYih");
-    const o = () => "annual-only" === a.default.getFeatureFlag("annual-only-pro")
-})), n.register("aYYSA", (function(t, r) {
+    var o = r("hxEiv"),
+        a = r("beXRF");
+    r("fywoC");
+    var i = e => e.external || !e.to ? (0, o.jsx)("a", {
+        href: e.to,
+        tabIndex: Number(e.tabIndex || "0"),
+        onClick: e.onClick,
+        onKeyPress: t => {
+            e.onClick && "Enter" === t.key && (t.preventDefault(), e.onClick())
+        },
+        className: e.className,
+        target: e.target,
+        style: e.style,
+        children: e.children
+    }) : (0, o.jsx)(a.Link, {
+        to: e.to,
+        tabIndex: Number(e.tabIndex || "0"),
+        onClick: e.onClick,
+        className: e.className,
+        target: e.target,
+        style: e.style,
+        children: e.children
+    })
+})), r.register("9kZfj", (function(t, n) {
+    e(t.exports, "onlyOfferAnnualUpgrade", (function() {
+        return a
+    }));
+    var o = r("hrYih");
+    const a = () => "annual-only" === o.default.getFeatureFlag("annual-only-pro")
+})), r.register("aYYSA", (function(t, n) {
     e(t.exports, "default", (function() {
         return l
     }));
-    var a = n("dnh3u"),
-        o = n("fywoC"),
-        i = n("5UEB4"),
-        s = n("dwKuN"),
+    var o = r("dnh3u"),
+        a = r("fywoC"),
+        i = r("5UEB4"),
+        s = r("dwKuN"),
         c = function(e, t) {
-            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
+            return a.createElement(s.default, (0, o.default)((0, o.default)({}, e), {}, {
                 ref: t,
                 icon: i.default
             }))
         };
     c.displayName = "StarOutlined";
-    var l = o.forwardRef(c)
-})), n.register("5UEB4", (function(t, n) {
+    var l = a.forwardRef(c)
+})), r.register("5UEB4", (function(t, r) {
     e(t.exports, "default", (function() {
-        return r
+        return n
     }));
-    var r = {
+    var n = {
         icon: {
             tag: "svg",
             attrs: {
@@ -1119,147 +939,139 @@ n.register("iEbZz", (function(t, r) {
         name: "star",
         theme: "outlined"
     }
-})), n.register("56tQE", (function(t, r) {
+})), r.register("56tQE", (function(t, n) {
     e(t.exports, "default", (function() {
         return s
     }));
-    var a = n("fywoC"),
-        o = n("3KQc0"),
-        i = n("9iNNJ");
+    var o = r("fywoC"),
+        a = r("3KQc0"),
+        i = r("9iNNJ");
     var s = (e, t) => {
-        const [n, r] = a.useState((() => {
-            var n, r;
-            const a = e && "current" in e ? e.current : e;
-            return a ? [a.offsetWidth, a.offsetHeight] : [null !== (n = null == t ? void 0 : t.initialWidth) && void 0 !== n ? n : 0, null !== (r = null == t ? void 0 : t.initialHeight) && void 0 !== r ? r : 0]
+        const [r, n] = o.useState((() => {
+            var r, n;
+            const o = e && "current" in e ? e.current : e;
+            return o ? [o.offsetWidth, o.offsetHeight] : [null !== (r = null == t ? void 0 : t.initialWidth) && void 0 !== r ? r : 0, null !== (n = null == t ? void 0 : t.initialHeight) && void 0 !== n ? n : 0]
         }));
         return (0, i.default)((() => {
             const t = e && "current" in e ? e.current : e;
-            t && r([t.offsetWidth, t.offsetHeight])
-        }), [e]), (0, o.default)(e, (e => {
+            t && n([t.offsetWidth, t.offsetHeight])
+        }), [e]), (0, a.default)(e, (e => {
             const t = e.target;
-            r([t.offsetWidth, t.offsetHeight])
-        })), n
+            n([t.offsetWidth, t.offsetHeight])
+        })), r
     }
-})), n.register("3KQc0", (function(t, r) {
+})), r.register("3KQc0", (function(t, n) {
     e(t.exports, "default", (function() {
         return u
     }));
-    var a = n("6rvT3"),
-        o = n("9iNNJ"),
-        i = n("3Yjty"),
-        s = n("f1PHW");
+    var o = r("6rvT3"),
+        a = r("9iNNJ"),
+        i = r("3Yjty"),
+        s = r("f1PHW");
     let c;
     const l = () => c || (c = function() {
         const e = new Map,
-            t = new(0, a.default)((0, s.default)(((t, n) => {
-                var r;
-                if (1 === t.length) null === (r = e.get(t[0].target)) || void 0 === r || r(t[0], n);
+            t = new(0, o.default)((0, s.default)(((t, r) => {
+                var n;
+                if (1 === t.length) null === (n = e.get(t[0].target)) || void 0 === n || n(t[0], r);
                 else
-                    for (let r = 0; r < t.length; r++) {
-                        var a;
-                        null === (a = e.get(t[r].target)) || void 0 === a || a(t[r], n)
+                    for (let n = 0; n < t.length; n++) {
+                        var o;
+                        null === (o = e.get(t[n].target)) || void 0 === o || o(t[n], r)
                     }
             })));
         return {
             observer: t,
-            subscribe(n, r) {
-                t.observe(n), e.set(n, r)
+            subscribe(r, n) {
+                t.observe(r), e.set(r, n)
             },
-            unsubscribe(n) {
-                t.unobserve(n), e.delete(n)
+            unsubscribe(r) {
+                t.unobserve(r), e.delete(r)
             }
         }
     }());
     var u = function(e, t) {
-        const n = l(),
-            r = (0, i.default)(t);
-        return (0, o.default)((() => {
+        const r = l(),
+            n = (0, i.default)(t);
+        return (0, a.default)((() => {
             let t = !1;
-            const a = e && "current" in e ? e.current : e;
-            if (a) return n.subscribe(a, ((e, n) => {
-                t || r.current(e, n)
+            const o = e && "current" in e ? e.current : e;
+            if (o) return r.subscribe(o, ((e, r) => {
+                t || n.current(e, r)
             })), () => {
-                t = !0, n.unsubscribe(a)
+                t = !0, r.unsubscribe(o)
             }
-        }), [e, n, r]), n.observer
+        }), [e, r, n]), r.observer
     }
-})), n.register("9iNNJ", (function(r, a) {
-    e(r.exports, "default", (function() {
-        return o
+})), r.register("9iNNJ", (function(n, o) {
+    e(n.exports, "default", (function() {
+        return a
     }));
-    var o = t(n("fywoC"))["undefined" != typeof document && void 0 !== document.createElement ? "useLayoutEffect" : "useEffect"]
-})), n.register("3Yjty", (function(t, r) {
+    var a = t(r("fywoC"))["undefined" != typeof document && void 0 !== document.createElement ? "useLayoutEffect" : "useEffect"]
+})), r.register("3Yjty", (function(t, n) {
     e(t.exports, "default", (function() {
-        return o
+        return a
     }));
-    var a = n("fywoC");
-    var o = e => {
-        const t = a.useRef(e);
-        return a.useEffect((() => {
+    var o = r("fywoC");
+    var a = e => {
+        const t = o.useRef(e);
+        return o.useEffect((() => {
             t.current = e
         })), t
     }
-})), n.register("f1PHW", (function(t, n) {
+})), r.register("f1PHW", (function(t, r) {
     e(t.exports, "default", (function() {
-        return r
+        return n
     }));
-    var r = function(e) {
+    var n = function(e) {
         var t = [],
-            n = null,
-            r = function() {
-                for (var r = arguments.length, a = new Array(r), o = 0; o < r; o++) a[o] = arguments[o];
-                t = a, n || (n = requestAnimationFrame((function() {
-                    n = null, e.apply(void 0, t)
+            r = null,
+            n = function() {
+                for (var n = arguments.length, o = new Array(n), a = 0; a < n; a++) o[a] = arguments[a];
+                t = o, r || (r = requestAnimationFrame((function() {
+                    r = null, e.apply(void 0, t)
                 })))
             };
-        return r.cancel = function() {
-            n && (cancelAnimationFrame(n), n = null)
-        }, r
+        return n.cancel = function() {
+            r && (cancelAnimationFrame(r), r = null)
+        }, n
     }
-})), n.register("iROck", (function(t, r) {
-    e(t.exports, "NavigateTo", (function() {
-        return o
-    }));
-    var a = n("bd8je");
-    const o = e => {
-        a.history.push(e)
-    }
-})), n.register("py2Xr", (function(t, r) {
+})), r.register("py2Xr", (function(t, n) {
     e(t.exports, "default", (function() {
-        return o
+        return a
     }));
-    var a = n("hxEiv");
-    n("fywoC");
-    var o = e => (0, a.jsx)("i", {
+    var o = r("hxEiv");
+    r("fywoC");
+    var a = e => (0, o.jsx)("i", {
         className: `${e.name}${e.className?` ${e.className}`:""}`,
         style: e.style
     })
-})), n.register("bmTnW", (function(e, t) {
+})), r.register("bmTnW", (function(e, t) {
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.lazyWithPreload = void 0;
-    var r = n("fywoC");
+    var n = r("fywoC");
 
-    function a(e) {
-        var t, n, a = (0, r.lazy)(e),
-            o = (0, r.forwardRef)((function(e, n) {
-                var o = (0, r.useRef)(null != t ? t : a);
-                return (0, r.createElement)(o.current, Object.assign(n ? {
-                    ref: n
+    function o(e) {
+        var t, r, o = (0, n.lazy)(e),
+            a = (0, n.forwardRef)((function(e, r) {
+                var a = (0, n.useRef)(null != t ? t : o);
+                return (0, n.createElement)(a.current, Object.assign(r ? {
+                    ref: r
                 } : {}, e))
             }));
-        return o.preload = function() {
-            return n || (n = e().then((function(e) {
+        return a.preload = function() {
+            return r || (r = e().then((function(e) {
                 return t = e.default
-            }))), n
-        }, o
+            }))), r
+        }, a
     }
-    e.exports.lazyWithPreload = a, e.exports.default = a
-})), n.register("4aaLU", (function(t, n) {
+    e.exports.lazyWithPreload = o, e.exports.default = o
+})), r.register("4aaLU", (function(t, r) {
     e(t.exports, "default", (function() {
-        return r
+        return n
     }));
-    var r = {
+    var n = {
         White: "white",
         Black: "black",
         BackgroundGray: "#eeeeee",
@@ -1269,27 +1081,27 @@ n.register("iEbZz", (function(t, r) {
         LightSuccessGreen: "#6abf69",
         DarkSuccessGreen: "#2e7d32"
     }
-})), n.register("exbzb", (function(t, r) {
+})), r.register("exbzb", (function(t, n) {
     e(t.exports, "default", (function() {
         return l
     }));
-    var a = n("dnh3u"),
-        o = n("fywoC"),
-        i = n("8N8s4"),
-        s = n("dwKuN"),
+    var o = r("dnh3u"),
+        a = r("fywoC"),
+        i = r("8N8s4"),
+        s = r("dwKuN"),
         c = function(e, t) {
-            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
+            return a.createElement(s.default, (0, o.default)((0, o.default)({}, e), {}, {
                 ref: t,
                 icon: i.default
             }))
         };
     c.displayName = "QuestionCircleOutlined";
-    var l = o.forwardRef(c)
-})), n.register("8N8s4", (function(t, n) {
+    var l = a.forwardRef(c)
+})), r.register("8N8s4", (function(t, r) {
     e(t.exports, "default", (function() {
-        return r
+        return n
     }));
-    var r = {
+    var n = {
         icon: {
             tag: "svg",
             attrs: {
@@ -1311,4 +1123,164 @@ n.register("iEbZz", (function(t, r) {
         name: "question-circle",
         theme: "outlined"
     }
+})), r.register("bcnSK", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return i
+    }));
+    var o = r("fywoC"),
+        a = r("bSGy0");
+    var i = o.createContext(a.default)
+})), r.register("bSGy0", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return i
+    }));
+    var o = r("g4NpA"),
+        a = r("lvpm8");
+    var i = {
+        login: new(0, o.default),
+        navigation: new(0, a.default)
+    }
+})), r.register("g4NpA", (function(t, n) {
+    e(t.exports, "informationTypes", (function() {
+        return i
+    })), e(t.exports, "default", (function() {
+        return O
+    }));
+    var o = r("kHqmx"),
+        a = r("4MuSt");
+    const i = {
+            email: "EMAIL",
+            password: "PASSWORD",
+            accountPassword: "ACCOUNT_PASSWORD",
+            firstName: "FIRST_NAME",
+            lastName: "LAST_NAME",
+            accountType: "ACCOUNT_TYPE",
+            country: "COUNTRY",
+            areaOfExpertise: "AREA_OF_EXPERTISE",
+            gradeLevel: "GRADE_LEVEL",
+            organization: "ORGANIZATION",
+            acceptedLatestPolicies: "ACCEPTED_LATEST_POLICIES",
+            schoolId: "SCHOOL_ID",
+            districtId: "DISTRICT_ID"
+        },
+        s = {
+            userExists: !1,
+            email: "",
+            accountType: null,
+            googleToken: "",
+            firstName: "",
+            lastName: "",
+            password: "",
+            schoolId: "",
+            districtId: "",
+            country: "",
+            areaOfExpertise: "",
+            gradeLevel: "",
+            organization: "",
+            acceptsLatestPolicies: !1,
+            authenticated: !1
+        },
+        {
+            userExists: c,
+            email: l,
+            accountType: u,
+            googleToken: d,
+            firstName: f,
+            lastName: p,
+            password: g,
+            schoolId: m,
+            districtId: v,
+            country: h,
+            areaOfExpertise: y,
+            gradeLevel: x,
+            organization: b,
+            acceptsLatestPolicies: w,
+            authenticated: C
+        } = s;
+    class _ {
+        constructor() {
+            this.userExists = c, this.email = l, this.accountType = u, this.googleToken = d, this.firstName = f, this.lastName = p, this.password = g, this.schoolId = m, this.districtId = v, this.country = h, this.areaOfExpertise = y, this.gradeLevel = x, this.organization = b, this.acceptsLatestPolicies = w, this.authenticated = C, this.informationNeeded = a.observable.array([i.email]), this.reset = () => {
+                Object.keys(s).forEach((e => this[e] = s[e])), this.informationNeeded.replace([i.email])
+            }, (0, a.makeObservable)(this)
+        }
+    }(0, o.__decorate)([a.observable], _.prototype, "userExists", void 0), (0, o.__decorate)([a.observable], _.prototype, "email", void 0), (0, o.__decorate)([a.observable], _.prototype, "accountType", void 0), (0, o.__decorate)([a.observable], _.prototype, "googleToken", void 0), (0, o.__decorate)([a.observable], _.prototype, "firstName", void 0), (0, o.__decorate)([a.observable], _.prototype, "lastName", void 0), (0, o.__decorate)([a.observable], _.prototype, "password", void 0), (0, o.__decorate)([a.observable], _.prototype, "schoolId", void 0), (0, o.__decorate)([a.observable], _.prototype, "districtId", void 0), (0, o.__decorate)([a.observable], _.prototype, "country", void 0), (0, o.__decorate)([a.observable], _.prototype, "areaOfExpertise", void 0), (0, o.__decorate)([a.observable], _.prototype, "gradeLevel", void 0), (0, o.__decorate)([a.observable], _.prototype, "organization", void 0), (0, o.__decorate)([a.observable], _.prototype, "acceptsLatestPolicies", void 0), (0, o.__decorate)([a.observable], _.prototype, "authenticated", void 0), (0, o.__decorate)([a.observable], _.prototype, "informationNeeded", void 0), (0, o.__decorate)([a.action], _.prototype, "reset", void 0);
+    var O = _
+})), r.register("lvpm8", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return y
+    }));
+    var o = r("kHqmx"),
+        a = r("4MuSt");
+    const i = {
+            currentStage: r("9ZLc2").default.email,
+            emailSignInBlocked: !1,
+            creatingAccount: !1,
+            loggingIn: !1,
+            updatingAccountInformation: !1,
+            loginError: null,
+            redirectUri: "",
+            classJoiningId: "",
+            classJoiningName: "",
+            classJoiningTeacherName: ""
+        },
+        {
+            currentStage: s,
+            emailSignInBlocked: c,
+            creatingAccount: l,
+            loggingIn: u,
+            updatingAccountInformation: d,
+            loginError: f,
+            redirectUri: p,
+            classJoiningId: g,
+            classJoiningName: m,
+            classJoiningTeacherName: v
+        } = i;
+    class h {
+        constructor() {
+            this.currentStage = s, this.emailSignInBlocked = c, this.creatingAccount = l, this.loggingIn = u, this.updatingAccountInformation = d, this.loginError = f, this.redirectUri = p, this.classJoiningId = g, this.classJoiningName = m, this.classJoiningTeacherName = v, this.reset = () => {
+                Object.keys(i).forEach((e => this[e] = i[e]))
+            }, (0, a.makeObservable)(this)
+        }
+    }(0, o.__decorate)([a.observable], h.prototype, "currentStage", void 0), (0, o.__decorate)([a.observable], h.prototype, "emailSignInBlocked", void 0), (0, o.__decorate)([a.observable], h.prototype, "creatingAccount", void 0), (0, o.__decorate)([a.observable], h.prototype, "loggingIn", void 0), (0, o.__decorate)([a.observable], h.prototype, "updatingAccountInformation", void 0), (0, o.__decorate)([a.observable], h.prototype, "loginError", void 0), (0, o.__decorate)([a.observable], h.prototype, "redirectUri", void 0), (0, o.__decorate)([a.observable], h.prototype, "classJoiningId", void 0), (0, o.__decorate)([a.observable], h.prototype, "classJoiningName", void 0), (0, o.__decorate)([a.observable], h.prototype, "classJoiningTeacherName", void 0), (0, o.__decorate)([a.action], h.prototype, "reset", void 0);
+    var y = h
+})), r.register("9ZLc2", (function(t, r) {
+    let n;
+    var o;
+    e(t.exports, "default", (function() {
+        return a
+    })), (o = n || (n = {})).email = "email", o.password = "password", o.accountType = "accountType", o.studentSpecificInfo = "studentSpecificInfo", o.nameAndPassword = "nameAndPassword", o.school = "school", o.educatorSpecificInfo = "educatorSpecificInfo", o.nonSchoolSpecificInfo = "nonSchoolSpecificInfo", o.acceptPolicies = "acceptPolicies", o.verifyClass = "verifyClass";
+    var a = n
+})), r.register("7abSH", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return s
+    }));
+    var o = r("hxEiv");
+    r("fywoC");
+    var a = r("lpEVe"),
+        i = r("93yIm");
+    var s = (0, a.observer)((e => (0, o.jsx)(i.default, {
+        disabled: e.disabled,
+        size: e.size || "middle",
+        type: "primary",
+        onClick: e.onClick,
+        style: Object.assign({
+            width: "100%"
+        }, e.style),
+        loading: e.loading,
+        children: e.children
+    })))
+})), r.register("da8gK", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return i
+    }));
+    var o = r("hxEiv");
+    r("fywoC");
+    var a = r("bfV0l");
+    var i = e => e.error ? (0, o.jsx)(a.default, {
+        message: "Error",
+        style: e.style,
+        type: "error",
+        description: e.error && e.error.message && e.error.message.text ? e.error.message.text : "string" == typeof e.error ? e.error : "Unknown Error. Please try again.",
+        showIcon: !0
+    }) : null
 }));

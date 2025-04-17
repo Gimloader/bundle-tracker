@@ -11,350 +11,852 @@ function t(e) {
     return e && e.__esModule ? e.default : e
 }
 var r = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-r.register("64608", (function(t, n) {
-    var o;
-    o = t.exports, Object.defineProperty(o, "__esModule", {
+r.register("a9VTo", (function(t, n) {
+    var a;
+    a = t.exports, Object.defineProperty(a, "__esModule", {
         value: !0,
         configurable: !0
     }), e(t.exports, "default", (function() {
-        return k
+        return O
     }));
-    var i = r("hxEiv"),
-        a = r("fywoC"),
-        s = r("2FDaO"),
-        c = r("lKmIF"),
-        l = r("69SUA"),
-        u = r("2qgOv"),
-        f = r("glDUi"),
-        d = r("fC6cp"),
+    var o = r("hxEiv"),
+        i = r("fywoC"),
+        s = r("iMOcM"),
+        l = r("sgWtV"),
+        c = r("2FDaO"),
+        u = r("lKmIF"),
+        d = r("69SUA"),
+        f = r("bfV0l"),
         p = r("gHmyG"),
-        m = r("03k9L"),
-        g = r("4xePQ"),
-        v = r("giscZ"),
-        h = r("iMOcM"),
-        x = r("sgWtV"),
-        y = r("bGoag"),
+        m = r("7xle4"),
+        g = r("lq0to"),
+        h = r("347bU"),
+        v = r("3uz2P"),
+        y = r("b1oE9"),
+        x = r("iROck"),
         b = r("cHCps");
-    let w, j, C = e => e;
-    const O = "Error fetching subscription info. Try refreshing the page. If you continue to see this error, please contact support.";
-    var k = () => {
-        const [e, t] = a.useState(!0), [r, n] = a.useState(""), [o, s] = a.useState(""), [c, l] = a.useState(""), [w, j] = a.useState(!1);
-        a.useEffect((() => {
-            (0, y.default)({})
-        }), []), a.useEffect((() => {
-            const e = (0, h.getUrlVariable)("session_id");
-            if (e)(0, h.verifyStripe)({
-                sessionId: e,
-                onSuccess: e => {
-                    (0, h.request)({
-                        url: `/api/bulk/complete/${e.subscriptionId}`,
-                        success: e => {
-                            n(e.paymentMethod), s(e.receiptUrl), l(e.invoiceUrl), j(e.renewal), t(!1)
-                        },
-                        error: e => (0, x.throwError)({
-                            title: O
-                        })
-                    })
+    let w, E, j = e => e;
+    const C = "cc",
+        S = "po";
+    var O = () => {
+        const [e, t] = i.useState(null), [r, n] = i.useState(null), [a, c] = i.useState(!1), [u, d] = i.useState(null), {
+            id: w,
+            source: E
+        } = (0, v.useParams)();
+        i.useEffect((() => {
+            E !== C && E !== S && (0, x.NavigateTo)(y.HOMEPAGE)
+        }), [E]), i.useEffect((() => {
+            (0, s.request)({
+                url: "/api/quote/fetch/" + w,
+                success: e => {
+                    const {
+                        quote: r,
+                        plan: a
+                    } = e;
+                    c(!!e.quote.renewalForExistingBulk), t(r), n(a)
                 },
-                onError: e => (0, x.throwError)({
-                    title: O
-                }),
-                onBoth: () => t(!1)
-            });
-            else {
-                const e = (0, h.getUrlVariable)("subscriptionId");
-                (0, h.request)({
-                    url: `/api/bulk/complete/${e}`,
-                    success: e => {
-                        n(e.paymentMethod), s(e.receiptUrl), l(e.invoiceUrl), j(e.renewal), t(!1)
-                    },
-                    error: e => (0, h.throwMessageError)({
-                        e: e,
-                        default: {
-                            title: O
-                        }
+                error: e => {
+                    d(e), (0, l.throwError)({
+                        title: "Error fetching quote"
                     })
-                })
-            }
-        }), []);
-        return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(h.Title, {
-                title: "Group License Complete"
-            }), (0, i.jsxs)(S, {
-                className: "flex-column vc",
-                children: [(0, i.jsx)(b.default, {
-                    includeSpacer: !0
-                }), (0, i.jsx)(E, {
-                    children: e ? (0, i.jsx)("div", {
-                        className: "maxWidth flex hc",
-                        children: (0, i.jsx)(p.default, {})
-                    }) : (0, i.jsxs)(i.Fragment, {
-                        children: [(0, i.jsx)(u.default, {
-                            isRenewal: w
-                        }), (0, i.jsx)(d.default, {}), "creditCard" === r && (0, i.jsx)(m.default, {
-                            receiptLink: o
-                        }), "purchaseOrder" === r && (0, i.jsx)(f.default, {
-                            invoiceLink: c
-                        }), (0, i.jsx)("div", {
-                            style: {
-                                height: 10
-                            }
-                        }), (0, i.jsx)(g.default, {
-                            isRenewal: w
-                        }), (0, i.jsx)(d.default, {}), (0, i.jsx)(v.default, {})]
+                }
+            })
+        }), [w]);
+        return (0, o.jsxs)(N, {
+            className: "flex-column vc",
+            children: [(0, o.jsx)(b.default, {
+                includeSpacer: !0
+            }), (0, o.jsx)(_, {
+                children: (() => {
+                    if (u) return (0, o.jsx)(f.default, {
+                        type: "error",
+                        message: "Error fetching quote"
+                    });
+                    if (!e || !r) return (0, o.jsx)(p.default, {});
+                    let t = "";
+                    E === S && (t = "Purchase Order"), E === C && (t = "Credit Card ");
+                    return (0, o.jsxs)(o.Fragment, {
+                        children: [(0, o.jsx)(g.default, {
+                            title: a ? `Renew with a ${t}` : `Paying with ${t}`,
+                            plan: r.name,
+                            cost: e.price
+                        }), E === S && (0, o.jsx)(m.default, {
+                            quote: e,
+                            planId: r.id,
+                            planLengthInDays: r.days
+                        }), E === C && (0, o.jsx)(h.default, {
+                            quote: e,
+                            planId: r.id,
+                            planLengthInDays: r.days
+                        })]
                     })
-                })]
+                })()
             })]
         })
     };
-    const S = s.default.div(w || (w = C`
-  flex: 1;
+    const N = c.default.div(w || (w = j`
+  min-height: 100%;
   background: ${0};
   width: 100%;
   color: ${0};
   font-family: ${0};
   padding: 20px;
-  min-height: 900px;
-`), c.default.Snow, c.default.Black, l.Fonts.SFPro),
-        E = s.default.div(j || (j = C`
+`), u.default.Snow, u.default.Black, d.Fonts.SFPro),
+        _ = c.default.div(E || (E = j`
   width: 100%;
-  max-width: 550px;
+  max-width: 700px;
 `))
-})), r.register("2qgOv", (function(t, n) {
-    e(t.exports, "default", (function() {
-        return f
+})), r.register("7xle4", (function(n, a) {
+    e(n.exports, "MANAGER_DOES_NOT_EXIST_ERROR", (function() {
+        return O
+    })), e(n.exports, "PeopleFormContainer", (function() {
+        return I
+    })), e(n.exports, "PeopleFormHeader", (function() {
+        return P
+    })), e(n.exports, "default", (function() {
+        return N
     }));
-    var o = r("hxEiv");
-    r("fywoC");
-    var i = r("2FDaO"),
-        a = r("lKmIF"),
-        s = r("69SUA");
-    let c, l, u = e => e;
-    var f = e => (0, o.jsxs)("div", {
-        className: "flex vc flex-column",
-        children: [(0, o.jsx)("img", {
-            src: "/client/img/quote/medal.svg",
-            style: {
-                height: 130
-            }
-        }), (0, o.jsx)(d, {
-            children: "Woohoo!"
-        }), (0, o.jsx)(p, {
-            children: e.isRenewal ? "Your group license renewal is complete!" : "Your group license is ready to go!"
-        })]
-    });
-    const d = i.default.h1(c || (c = u`
-  color: ${0};
-  font-weight: ${0};
-  font-size: 50px;
-`), a.default.Black, s.FontWeights.UltraBold),
-        p = i.default.p(l || (l = u`
-  margin-top: -41px;
-  font-size: 18px;
-`))
-})), r.register("glDUi", (function(t, n) {
-    e(t.exports, "default", (function() {
-        return l
-    }));
-    var o = r("hxEiv");
-    r("fywoC");
-    var i = r("lPcFV"),
-        a = r("93yIm"),
-        s = r("fC6cp"),
-        c = r("46bRO");
-    var l = e => (0, o.jsxs)(o.Fragment, {
-        children: [(0, o.jsxs)(i.AntCard, {
-            children: [(0, o.jsx)(i.Header, {
-                children: "Invoice"
-            }), (0, o.jsx)(i.Description, {
-                children: "Click the button below to print out your invoice. A copy of this invoice has also been sent to your email."
-            }), (0, o.jsx)(a.default, {
+    var o = r("hxEiv"),
+        i = r("fywoC"),
+        s = r("kuXvx"),
+        l = r("93yIm"),
+        c = r("fC6cp"),
+        u = r("b9Zw0"),
+        d = r("cy4A6"),
+        f = r("gHmyG"),
+        p = r("03g0M"),
+        m = r("2FDaO"),
+        g = r("iMOcM"),
+        h = r("sgWtV"),
+        v = r("69SUA"),
+        y = r("j9HoW"),
+        x = r("iROck"),
+        b = r("2nCEo");
+    let w, E, j, C, S = e => e;
+    const O = "Managers are required to have a Gimkit account, and it looks like one doesn't exist under this email.";
+    var N = e => {
+        const [r, n] = i.useState(!1), [a, m] = i.useState(e.quote.name), [v, w] = i.useState(""), [E, j] = i.useState(""), [C, S] = i.useState(!1), [N, M] = i.useState(""), [A, L] = i.useState([]), [z, D] = i.useState([]), F = !!(a && E && N && v);
+        return (0, o.jsxs)(o.Fragment, {
+            children: [(0, o.jsx)(c.default, {}), (0, o.jsx)(k, {
+                children: "Group Name"
+            }), (0, o.jsx)(u.default, {
+                placeholder: "Name here...",
+                onChange: e => m(e.target.value),
+                value: a,
+                maxLength: 50,
+                autoComplete: "chrome-off"
+            }), (0, o.jsx)("div", {
                 style: {
-                    marginTop: 5
+                    height: 10
+                }
+            }), (0, o.jsx)(k, {
+                children: "School or District Name"
+            }), (0, o.jsx)(u.default, {
+                placeholder: "Name here...",
+                onChange: e => w(e.target.value),
+                value: v,
+                maxLength: 100,
+                autoComplete: "chrome-off"
+            }), (0, o.jsx)("div", {
+                style: {
+                    height: 10
+                }
+            }), (0, o.jsx)(k, {
+                children: "Purchase Order Number"
+            }), (0, o.jsx)(u.default, {
+                placeholder: "Purchase order number here...",
+                value: E,
+                onChange: e => j(e.target.value)
+            }), (0, o.jsx)(c.default, {}), (0, o.jsxs)("div", {
+                className: "flex",
+                children: [(0, o.jsxs)(I, {
+                    children: [(0, o.jsx)(P, {
+                        children: "Send a copy of the invoice to..."
+                    }), (0, o.jsx)(y.default, {
+                        type: "invoiceCopy",
+                        initialEmail: (0, g.getUser)().email,
+                        addType: "Recipient",
+                        onChange: L
+                    })]
+                }), (0, o.jsx)("div", {
+                    style: {
+                        width: 12
+                    }
+                }), (0, o.jsxs)(I, {
+                    children: [(0, o.jsx)(P, {
+                        children: "Group license managers..."
+                    }), (0, o.jsx)(y.default, {
+                        type: "manager",
+                        initialEmail: (0, g.getUser)().email,
+                        addType: "Manager",
+                        ensureActiveUser: !0,
+                        ensureActiveUserErrorMessage: O,
+                        onChange: D
+                    })]
+                })]
+            }), (0, o.jsx)(c.default, {}), (0, o.jsx)(k, {
+                children: "Purchase Order PDF"
+            }), (0, o.jsx)(_, {
+                children: (0, o.jsx)(p.default.Dragger, {
+                    disabled: !(!C && !N),
+                    multiple: !1,
+                    height: 200,
+                    showUploadList: !1,
+                    accept: "application/pdf",
+                    beforeUpload: e => {
+                        const t = e.size / 1024 / 1024 < 5;
+                        return t || d.default.error("PDF must be less than 5MB"), t
+                    },
+                    customRequest: ({
+                        file: e
+                    }) => {
+                        const t = new FormData;
+                        t.append("file", e), S(!0), (0, g.request)({
+                            url: "/bulk/purchase-order/upload",
+                            method: "post",
+                            data: t,
+                            success: e => M(e.url),
+                            error: () => (0, h.throwError)({
+                                title: "Error uploading document",
+                                content: "Please try again"
+                            }),
+                            both: () => S(!1)
+                        })
+                    },
+                    children: (0, o.jsx)(o.Fragment, {
+                        children: N ? (0, o.jsxs)(o.Fragment, {
+                            children: [(0, o.jsx)("p", {
+                                className: "ant-upload-drag-icon",
+                                children: (0, o.jsx)(s.default, {})
+                            }), (0, o.jsx)("p", {
+                                className: "ant-upload-text",
+                                children: "Purchase Order Uploaded!"
+                            })]
+                        }) : C ? (0, o.jsx)(f.default, {}) : (0, o.jsxs)(o.Fragment, {
+                            children: [(0, o.jsx)("p", {
+                                className: "ant-upload-drag-icon",
+                                children: (0, o.jsx)(s.default, {})
+                            }), (0, o.jsx)("p", {
+                                className: "ant-upload-text",
+                                children: "Click or drag to upload a PDF"
+                            }), (0, o.jsx)("p", {
+                                className: "ant-upload-hint",
+                                children: "Document must be less than 5MB."
+                            })]
+                        })
+                    })
+                })
+            }), (0, o.jsxs)(l.default, {
+                style: {
+                    marginTop: 10
                 },
-                href: e.invoiceLink,
-                target: "_blank",
+                onClick: () => {
+                    !r && F && (n(!0), (0, g.request)({
+                        url: "/api/bulk/createFromPlan",
+                        method: "post",
+                        data: {
+                            name: a,
+                            billingName: v,
+                            quoteId: e.quote.quoteId,
+                            purchaseOrderDocument: N,
+                            purchaseOrderNumber: E,
+                            invoiceEmails: A,
+                            adminEmails: z
+                        },
+                        success: e => (0, x.NavigateTo)(`/group-subscription/complete?subscriptionId=${e.subscriptionId}`),
+                        error: e => (0, g.throwMessageError)({
+                            e: e,
+                            default: {
+                                title: "Error creating subscription"
+                            }
+                        }),
+                        both: () => n(!1)
+                    }))
+                },
+                loading: r,
                 type: "primary",
                 block: !0,
-                children: "Print Invoice"
+                size: "large",
+                disabled: !F,
+                children: [e.quote.renewalForExistingBulk ? "Renew" : "Start", " License"]
+            }), (0, o.jsx)(c.default, {}), (0, o.jsx)("div", {
+                style: {
+                    marginBottom: 20
+                },
+                children: e.quote.renewalForExistingBulk ? (0, o.jsxs)(o.Fragment, {
+                    children: ["This group license will become active immediately. All group members will be imported automatically from your expiring group to this group. Educators covered under this license will have full Pro access until whichever is later:", " ", (0, o.jsxs)("b", {
+                        children: [t(b)().add(e.planLengthInDays, "day").format("L"), " or a year after the current group license expiration."]
+                    }), " ", "If payment is not received within 45 days, the license will automatically deactivate."]
+                }) : (0, o.jsxs)(o.Fragment, {
+                    children: ["This group license will become active immediately. Educators covered under this license will have full Pro access until", " ", (0, o.jsxs)("b", {
+                        children: [t(b)().add(e.planLengthInDays, "day").format("L"), "."]
+                    }), " If payment is not received within 45 days, the license will automatically deactivate."]
+                })
             })]
-        }), (0, o.jsx)("div", {
-            style: {
-                height: 10
-            }
-        }), (0, o.jsxs)(i.AntCard, {
-            children: [(0, o.jsx)(i.Header, {
-                children: "Payment Information"
-            }), (0, o.jsxs)(i.Description, {
-                children: [(0, o.jsx)("div", {
+        })
+    };
+    const _ = m.default.div(w || (w = S`
+  .ant-upload.ant-upload-drag {
+    height: 200px;
+  }
+`)),
+        k = m.default.div(E || (E = S`
+  font-weight: ${0};
+  font-size: 19px;
+  margin-bottom: 2px;
+`), v.FontWeights.Bold),
+        I = m.default.div(j || (j = S`
+  width: calc(50% - 6px);
+`)),
+        P = m.default.div(C || (C = S`
+  font-weight: ${0};
+  font-size: 19px;
+  margin-bottom: 6px;
+`), v.FontWeights.Bold)
+})), r.register("kuXvx", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return c
+    }));
+    var a = r("dnh3u"),
+        o = r("fywoC"),
+        i = r("eDOL9"),
+        s = r("dwKuN"),
+        l = function(e, t) {
+            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
+                ref: t,
+                icon: i.default
+            }))
+        };
+    l.displayName = "UploadOutlined";
+    var c = o.forwardRef(l)
+})), r.register("eDOL9", (function(t, r) {
+    e(t.exports, "default", (function() {
+        return n
+    }));
+    var n = {
+        icon: {
+            tag: "svg",
+            attrs: {
+                viewBox: "64 64 896 896",
+                focusable: "false"
+            },
+            children: [{
+                tag: "path",
+                attrs: {
+                    d: "M400 317.7h73.9V656c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V317.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 163a8 8 0 00-12.6 0l-112 141.7c-4.1 5.3-.4 13 6.3 13zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z"
+                }
+            }]
+        },
+        name: "upload",
+        theme: "outlined"
+    }
+})), r.register("j9HoW", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return w
+    }));
+    var a = r("hxEiv"),
+        o = r("hjoUW"),
+        i = r("93yIm"),
+        s = r("b9Zw0"),
+        l = r("fBuQJ"),
+        c = r("lKmIF"),
+        u = r("69SUA"),
+        d = r("sgWtV"),
+        f = r("dknAM"),
+        p = r("iMOcM"),
+        m = r("fywoC"),
+        g = r("2FDaO");
+    let h, v, y, x, b = e => e;
+    var w = e => {
+        const [t, r] = m.useState([e.initialEmail]), [n, g] = m.useState(""), [h, v] = m.useState(!1), [y, x] = m.useState(!1), b = () => v(!1);
+        m.useEffect((() => {
+            e.onChange(t)
+        }), [t.length]);
+        const w = !(!n || !(0, f.validateEmail)(n)),
+            O = e => {
+                r((t => [...t, e])), b(), g("")
+            },
+            N = () => {
+                w && (y || (t.includes(n) ? (0, d.throwError)({
+                    title: "Email is already on the list!"
+                }) : e.ensureActiveUser ? (x(!0), (0, p.request)({
+                    url: "/api/bulk/user/exists",
+                    data: {
+                        email: n
+                    },
+                    success: t => {
+                        t.exists ? O(n) : (0, d.throwError)({
+                            title: "Couldn't add them!",
+                            content: e.ensureActiveUserErrorMessage || "User not found"
+                        })
+                    },
+                    error: () => {
+                        (0, d.throwError)({
+                            title: "We ran into an error. Please try again later."
+                        })
+                    },
+                    both: () => x(!1)
+                })) : O(n)))
+            };
+        return (0, a.jsxs)(a.Fragment, {
+            children: [(0, a.jsxs)(E, {
+                children: [t.map((t => (0, a.jsx)(j, {
+                    children: t
+                }, `${e.type}-${t}`))), (0, a.jsx)(C, {
+                    children: (0, a.jsxs)(i.default, {
+                        type: "primary",
+                        icon: (0, a.jsx)(o.default, {}),
+                        onClick: () => {
+                            v(!0)
+                        },
+                        children: ["Add ", e.addType]
+                    })
+                })]
+            }), (0, a.jsxs)(l.default, {
+                open: h,
+                onCancel: b,
+                closable: !0,
+                style: {
+                    color: c.default.Black,
+                    fontFamily: u.Fonts.SFPro
+                },
+                footer: null,
+                children: [(0, a.jsxs)(S, {
+                    children: ["Add ", e.addType]
+                }), (0, a.jsxs)("div", {
+                    className: "flex",
                     style: {
                         marginTop: 3
                     },
-                    children: "Please send your check to the following address:"
-                }), (0, o.jsx)("br", {}), (0, o.jsx)("div", {
-                    children: (0, o.jsx)("b", {
-                        children: "Gimkit, Inc"
-                    })
-                }), (0, o.jsx)("div", {
-                    children: c.COMPANY_TOP_ADDRESS
-                }), (0, o.jsx)("div", {
-                    children: c.COMPANY_BOTTOM_ADDRESS
-                }), (0, o.jsx)(s.default, {}), (0, o.jsx)("div", {
-                    children: "With the check, please include a copy of the invoice. All Gimkit invoices on Purchase Orders have NET45 Terms."
+                    children: [(0, a.jsx)(s.default, {
+                        type: "email",
+                        placeholder: "Email address here...",
+                        autoFocus: !0,
+                        value: n,
+                        onChange: e => g(e.target.value.trim().toLowerCase()),
+                        onPressEnter: e => {
+                            e.preventDefault(), N()
+                        },
+                        autoComplete: "chrome-off"
+                    }), (0, a.jsx)(i.default, {
+                        type: "primary",
+                        icon: (0, a.jsx)(o.default, {}),
+                        style: {
+                            marginLeft: 10
+                        },
+                        disabled: !w,
+                        onClick: N,
+                        loading: y,
+                        children: "Add"
+                    })]
                 })]
             })]
-        })]
-    })
-})), r.register("03k9L", (function(t, n) {
-    e(t.exports, "default", (function() {
-        return s
-    }));
-    var o = r("hxEiv");
-    r("fywoC");
-    var i = r("lPcFV"),
-        a = r("93yIm");
-    var s = e => (0, o.jsx)(o.Fragment, {
-        children: (0, o.jsxs)(i.AntCard, {
-            children: [(0, o.jsx)(i.Header, {
-                children: "Receipt"
-            }), (0, o.jsx)(i.Description, {
-                children: "Click the button below to print out your receipt A copy of this receipt has also been sent to your email."
-            }), (0, o.jsx)(a.default, {
-                style: {
-                    marginTop: 5
-                },
-                href: e.receiptLink,
-                target: "_blank",
-                type: "primary",
-                block: !0,
-                children: "Print Receipt"
-            })]
         })
-    })
-})), r.register("4xePQ", (function(t, n) {
-    e(t.exports, "default", (function() {
-        return l
+    };
+    const E = g.default.div.attrs({
+            className: "maxWidth"
+        })(h || (h = b`
+  background: ${0};
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+`), c.default.White),
+        j = g.default.div(v || (v = b`
+  border: 1px solid #d9d9d9;
+  padding: 6px 12px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+`)),
+        C = g.default.div.attrs({
+            className: "maxWidth flex hc"
+        })(y || (y = b`
+  margin-top: 30px;
+`)),
+        S = g.default.div(x || (x = b`
+  font-size: 24px;
+  font-weight: ${0};
+`), u.FontWeights.Bold)
+})), r.register("iROck", (function(t, n) {
+    e(t.exports, "NavigateTo", (function() {
+        return o
     }));
-    var o = r("hxEiv");
-    r("fywoC");
-    var i = r("lPcFV"),
-        a = r("93yIm"),
-        s = r("b1oE9"),
-        c = r("46bRO");
-    var l = e => {
-        const {
-            isRenewal: t
-        } = e;
-        return (0, o.jsxs)(i.AntCard, {
-            children: [(0, o.jsx)(i.Header, {
-                children: t ? "Renewal Complete!" : "Get Started!"
-            }), (0, o.jsx)(i.Description, {
-                children: t ? "Your new group license is active! All of your teachers have been imported over from your expiring group. Click the button below to manage your new group license!" : `Your group license is active! Click the button below to invite your teachers to join your license and gain ${c.COMPANY_NAME} Pro access!`
-            }), (0, o.jsx)(a.default, {
-                href: s.GROUP_DASHBOARD,
-                type: "primary",
-                style: {
-                    marginTop: 5
-                },
-                block: !0,
-                children: "Manage Group"
-            })]
-        })
+    var a = r("bd8je");
+    const o = e => {
+        a.history.push(e)
     }
-})), r.register("giscZ", (function(t, n) {
+})), r.register("lq0to", (function(t, n) {
     e(t.exports, "default", (function() {
-        return m
+        return f
     }));
-    var o = r("hxEiv");
+    var a = r("hxEiv");
     r("fywoC");
-    var i = r("2FDaO"),
-        a = r("lKmIF"),
+    var o = r("iMOcM"),
+        i = r("2FDaO"),
         s = r("69SUA"),
-        c = r("fC6cp");
-    let l, u, f, d = e => e;
-    const p = [{
-        text: "Group license help center",
-        link: "https://help.gimkit.com/en/category/group-subscriptions-3m7198/"
-    }, {
-        text: "Managing group licenses",
-        link: "https://help.gimkit.com/en/article/managing-group-subscriptions-117yzia/"
-    }];
-    var m = () => (0, o.jsxs)(g, {
-        className: "flex vc flex-column",
-        children: [(0, o.jsx)(v, {
-            children: "📚 Resources"
-        }), (0, o.jsx)(h, {
-            children: "Take a look at the resources below to help you use your group license!"
-        }), p.map((e => (0, o.jsx)("div", {
-            style: {
-                fontSize: 16,
-                marginBottom: 5
-            },
-            children: (0, o.jsx)("a", {
-                href: e.link,
-                target: "_blank",
-                children: e.text
-            })
-        }, e.link))), (0, o.jsx)(c.default, {}), (0, o.jsx)(v, {
-            children: "👋 Need Help?"
-        }), (0, o.jsx)("div", {
-            style: {
-                height: 5
-            }
-        }), (0, o.jsxs)(h, {
-            children: ["Just email us at", " ", (0, o.jsx)("a", {
-                href: "mailto:groups@gimkit.com",
-                children: "groups@gimkit.com"
-            }), "!"]
+        l = r("lKmIF");
+    let c, u, d = e => e;
+    var f = e => (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(p, {
+            children: e.title
+        }), (0, a.jsxs)(m, {
+            children: [e.plan, " - ", (0, o.getMoney)(e.cost / 100, {
+                forceUSD: !0
+            })]
         })]
     });
-    const g = i.default.div(l || (l = d`
-  text-align: center;
-`)),
-        v = i.default.h2(u || (u = d`
-  font-size: 32px;
+    const p = i.default.h2(c || (c = d`
   font-weight: ${0};
+  font-size: 37px;
   color: ${0};
-`), s.FontWeights.UltraBold, a.default.Black),
-        h = i.default.p(f || (f = d`
+`), s.FontWeights.UltraBold, l.default.Black),
+        m = i.default.p(u || (u = d`
+  margin-top: -26px;
   font-size: 17px;
-  margin-top: -25px;
 `))
+})), r.register("347bU", (function(n, a) {
+    e(n.exports, "default", (function() {
+        return x
+    }));
+    var o = r("hxEiv"),
+        i = r("fywoC"),
+        s = r("93yIm"),
+        l = r("fC6cp"),
+        c = r("b9Zw0"),
+        u = r("gHmyG"),
+        d = r("2FDaO"),
+        f = r("iMOcM"),
+        p = r("69SUA"),
+        m = r("kgPjU"),
+        g = r("7xle4"),
+        h = r("j9HoW"),
+        v = r("2nCEo");
+    let y;
+    var x = e => {
+        const [r, n] = i.useState(!1), [a, d] = i.useState(e.quote.name), [p, y] = i.useState(""), [x, w] = i.useState(""), [E, j] = i.useState([]), [C, S] = i.useState([]), O = !(!a || !p);
+        if (i.useEffect((() => {
+                n(!0), (0, f.request)({
+                    url: "/api/billing/stripe-key",
+                    success: e => {
+                        e && e.key && w(e.key)
+                    },
+                    error: e => (0, f.throwMessageError)({
+                        e: e,
+                        default: {
+                            title: "Our payment processor is currently down",
+                            content: "Please try again later"
+                        }
+                    }),
+                    both: () => n(!1)
+                })
+            }), []), !x) return (0, o.jsx)(u.default, {});
+        return (0, o.jsxs)(o.Fragment, {
+            children: [(0, o.jsx)(l.default, {}), (0, o.jsx)(b, {
+                children: "Group Name"
+            }), (0, o.jsx)(c.default, {
+                placeholder: "Name here...",
+                onChange: e => d(e.target.value),
+                value: a,
+                maxLength: 50,
+                autoComplete: "chrome-off"
+            }), (0, o.jsx)("div", {
+                style: {
+                    height: 10
+                }
+            }), (0, o.jsx)(b, {
+                children: "School or District Name"
+            }), (0, o.jsx)(c.default, {
+                placeholder: "Name here...",
+                onChange: e => y(e.target.value),
+                value: p,
+                maxLength: 100,
+                autoComplete: "chrome-off"
+            }), (0, o.jsx)(l.default, {}), (0, o.jsxs)("div", {
+                className: "flex",
+                children: [(0, o.jsxs)(g.PeopleFormContainer, {
+                    children: [(0, o.jsx)(g.PeopleFormHeader, {
+                        children: "Send a copy of the receipt to..."
+                    }), (0, o.jsx)(h.default, {
+                        type: "receiptCopy",
+                        initialEmail: (0, f.getUser)().email,
+                        addType: "Recipient",
+                        onChange: j
+                    })]
+                }), (0, o.jsx)("div", {
+                    style: {
+                        width: 12
+                    }
+                }), (0, o.jsxs)(g.PeopleFormContainer, {
+                    children: [(0, o.jsx)(g.PeopleFormHeader, {
+                        children: "Group license managers..."
+                    }), (0, o.jsx)(h.default, {
+                        type: "manager",
+                        initialEmail: (0, f.getUser)().email,
+                        addType: "Manager",
+                        ensureActiveUser: !0,
+                        ensureActiveUserErrorMessage: g.MANAGER_DOES_NOT_EXIST_ERROR,
+                        onChange: S
+                    })]
+                })]
+            }), (0, o.jsx)(l.default, {}), (0, o.jsx)(s.default, {
+                id: "checkout-button",
+                style: {
+                    marginBottom: 20
+                },
+                loading: r,
+                type: "primary",
+                block: !0,
+                size: "large",
+                onClick: async t => {
+                    if (r || !O) return;
+                    let o;
+                    n(!0);
+                    try {
+                        o = await (0, m.loadStripe)(x)
+                    } catch (e) {
+                        n(!1), (0, f.throwMessageError)({
+                            e: e,
+                            default: {
+                                title: "Issue connecting to our payment provider",
+                                content: "An error ocurred while connecting to our payments provider. Please try again later"
+                            }
+                        })
+                    }(0, f.request)({
+                        url: "/api/billing/create-bulk-session",
+                        method: "POST",
+                        data: {
+                            name: a,
+                            billingName: p,
+                            quoteId: e.quote.quoteId,
+                            receiptEmails: E,
+                            adminEmails: C
+                        },
+                        success: async e => {
+                            const t = e;
+                            let r;
+                            try {
+                                if (r = await o.redirectToCheckout({
+                                        sessionId: t.id
+                                    }), r && r.error) throw r.error
+                            } catch (e) {
+                                (0, f.throwMessageError)({
+                                    e: e,
+                                    default: {
+                                        title: "Error",
+                                        content: "An error ocurred. Please try again later"
+                                    }
+                                })
+                            }
+                        },
+                        error: e => {
+                            (0, f.throwMessageError)({
+                                e: e,
+                                default: {
+                                    title: "Error",
+                                    content: "An error ocurred. Please try again later"
+                                }
+                            })
+                        },
+                        both: () => n(!1)
+                    })
+                },
+                disabled: !O,
+                children: "Checkout"
+            }), (0, o.jsx)("div", {
+                style: {
+                    marginBottom: 20
+                },
+                children: e.quote.renewalForExistingBulk ? (0, o.jsxs)(o.Fragment, {
+                    children: ["This group license will become active immediately. All group members will be imported automatically from your expiring group to this group. Educators covered under this license will have full Pro access until whichever is later:", " ", (0, o.jsxs)("b", {
+                        children: [t(v)().add(1, "year").format("L"), ", or a year after the current group license expiration."]
+                    }), " "]
+                }) : (0, o.jsxs)(o.Fragment, {
+                    children: ["This group license will become active immediately. Educators covered under the license will have full Pro access until", " ", (0, o.jsxs)("b", {
+                        children: [" ", t(v)().add(1, "year").format("L"), "."]
+                    })]
+                })
+            })]
+        })
+    };
+    const b = d.default.div(y || (y = (e => e)`
+  font-weight: ${0};
+  font-size: 19px;
+  margin-bottom: 2px;
+`), p.FontWeights.Bold)
+})), r.register("kgPjU", (function(t, r) {
+    e(t.exports, "loadStripe", (function() {
+        return d
+    }));
+    var n = "https://js.stripe.com/v3",
+        a = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
+        o = "loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used",
+        i = null,
+        s = function(e) {
+            return null !== i || (i = new Promise((function(t, r) {
+                if ("undefined" != typeof window)
+                    if (window.Stripe && e && console.warn(o), window.Stripe) t(window.Stripe);
+                    else try {
+                        var i = function() {
+                            for (var e = document.querySelectorAll('script[src^="'.concat(n, '"]')), t = 0; t < e.length; t++) {
+                                var r = e[t];
+                                if (a.test(r.src)) return r
+                            }
+                            return null
+                        }();
+                        i && e ? console.warn(o) : i || (i = function(e) {
+                            var t = e && !e.advancedFraudSignals ? "?advancedFraudSignals=false" : "",
+                                r = document.createElement("script");
+                            r.src = "".concat(n).concat(t);
+                            var a = document.head || document.body;
+                            if (!a) throw new Error("Expected document.body not to be null. Stripe.js requires a <body> element.");
+                            return a.appendChild(r), r
+                        }(e)), i.addEventListener("load", (function() {
+                            window.Stripe ? t(window.Stripe) : r(new Error("Stripe.js not available"))
+                        })), i.addEventListener("error", (function() {
+                            r(new Error("Failed to load Stripe.js"))
+                        }))
+                    } catch (e) {
+                        return void r(e)
+                    } else t(null)
+            }))), i
+        },
+        l = function(e, t, r) {
+            if (null === e) return null;
+            var n = e.apply(void 0, t);
+            return function(e, t) {
+                e && e._registerWrapper && e._registerWrapper({
+                    name: "stripe-js",
+                    version: "1.9.0",
+                    startTime: t
+                })
+            }(n, r), n
+        },
+        c = Promise.resolve().then((function() {
+            return s(null)
+        })),
+        u = !1;
+    c.catch((function(e) {
+        u || console.warn(e)
+    }));
+    var d = function() {
+        for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
+        u = !0;
+        var n = Date.now();
+        return c.then((function(e) {
+            return l(e, t, n)
+        }))
+    }
+})), r.register("9g8O0", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return c
+    }));
+    var a = r("dnh3u"),
+        o = r("fywoC"),
+        i = r("ewhoP"),
+        s = r("dwKuN"),
+        l = function(e, t) {
+            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
+                ref: t,
+                icon: i.default
+            }))
+        };
+    l.displayName = "DeleteOutlined";
+    var c = o.forwardRef(l)
+})), r.register("ewhoP", (function(t, r) {
+    e(t.exports, "default", (function() {
+        return n
+    }));
+    var n = {
+        icon: {
+            tag: "svg",
+            attrs: {
+                viewBox: "64 64 896 896",
+                focusable: "false"
+            },
+            children: [{
+                tag: "path",
+                attrs: {
+                    d: "M360 184h-8c4.4 0 8-3.6 8-8v8h304v-8c0 4.4 3.6 8 8 8h-8v72h72v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80h72v-72zm504 72H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM731.3 840H292.7l-24.2-512h487l-24.2 512z"
+                }
+            }]
+        },
+        name: "delete",
+        theme: "outlined"
+    }
+})), r.register("hy09K", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return c
+    }));
+    var a = r("dnh3u"),
+        o = r("fywoC"),
+        i = r("eLGc8"),
+        s = r("dwKuN"),
+        l = function(e, t) {
+            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
+                ref: t,
+                icon: i.default
+            }))
+        };
+    l.displayName = "PaperClipOutlined";
+    var c = o.forwardRef(l)
+})), r.register("eLGc8", (function(t, r) {
+    e(t.exports, "default", (function() {
+        return n
+    }));
+    var n = {
+        icon: {
+            tag: "svg",
+            attrs: {
+                viewBox: "64 64 896 896",
+                focusable: "false"
+            },
+            children: [{
+                tag: "path",
+                attrs: {
+                    d: "M779.3 196.6c-94.2-94.2-247.6-94.2-341.7 0l-261 260.8c-1.7 1.7-2.6 4-2.6 6.4s.9 4.7 2.6 6.4l36.9 36.9a9 9 0 0012.7 0l261-260.8c32.4-32.4 75.5-50.2 121.3-50.2s88.9 17.8 121.2 50.2c32.4 32.4 50.2 75.5 50.2 121.2 0 45.8-17.8 88.8-50.2 121.2l-266 265.9-43.1 43.1c-40.3 40.3-105.8 40.3-146.1 0-19.5-19.5-30.2-45.4-30.2-73s10.7-53.5 30.2-73l263.9-263.8c6.7-6.6 15.5-10.3 24.9-10.3h.1c9.4 0 18.1 3.7 24.7 10.3 6.7 6.7 10.3 15.5 10.3 24.9 0 9.3-3.7 18.1-10.3 24.7L372.4 653c-1.7 1.7-2.6 4-2.6 6.4s.9 4.7 2.6 6.4l36.9 36.9a9 9 0 0012.7 0l215.6-215.6c19.9-19.9 30.8-46.3 30.8-74.4s-11-54.6-30.8-74.4c-41.1-41.1-107.9-41-149 0L463 364 224.8 602.1A172.22 172.22 0 00174 724.8c0 46.3 18.1 89.8 50.8 122.5 33.9 33.8 78.3 50.7 122.7 50.7 44.4 0 88.8-16.9 122.6-50.7l309.2-309C824.8 492.7 850 432 850 367.5c.1-64.6-25.1-125.3-70.7-170.9z"
+                }
+            }]
+        },
+        name: "paper-clip",
+        theme: "outlined"
+    }
 })), r.register("kuEJ4", (function(t, n) {
     e(t.exports, "default", (function() {
         return s
     }));
-    var o = r("iI4DW"),
-        i = r("fywoC"),
-        a = r("4gMdJ");
+    var a = r("iI4DW"),
+        o = r("fywoC"),
+        i = r("4gMdJ");
 
     function s(e, t, r) {
         return function(n) {
             const {
                 prefixCls: s,
-                style: c
-            } = n, l = i.useRef(null), [u, f] = i.useState(0), [d, p] = i.useState(0), [m, g] = (0, o.default)(!1, {
+                style: l
+            } = n, c = o.useRef(null), [u, d] = o.useState(0), [f, p] = o.useState(0), [m, g] = (0, a.default)(!1, {
                 value: n.open
             }), {
-                getPrefixCls: v
-            } = i.useContext(a.ConfigContext), h = v(t || "select", s);
-            return i.useEffect((() => {
+                getPrefixCls: h
+            } = o.useContext(i.ConfigContext), v = h(t || "select", s);
+            return o.useEffect((() => {
                 if (g(!0), "undefined" != typeof ResizeObserver) {
                     const e = new ResizeObserver((e => {
                             const t = e[0].target;
-                            f(t.offsetHeight + 8), p(t.offsetWidth)
+                            d(t.offsetHeight + 8), p(t.offsetWidth)
                         })),
                         t = setInterval((() => {
                             var n;
-                            const o = r ? `.${r(h)}` : `.${h}-dropdown`,
-                                i = null === (n = l.current) || void 0 === n ? void 0 : n.querySelector(o);
-                            i && (clearInterval(t), e.observe(i))
+                            const a = r ? `.${r(v)}` : `.${v}-dropdown`,
+                                o = null === (n = c.current) || void 0 === n ? void 0 : n.querySelector(a);
+                            o && (clearInterval(t), e.observe(o))
                         }), 10);
                     return () => {
                         clearInterval(t), e.disconnect()
                     }
                 }
-            }), []), i.createElement(a.default, {
+            }), []), o.createElement(i.default, {
                 theme: {
                     token: {
                         motionDurationFast: "0.01s",
@@ -362,21 +864,21 @@ r.register("64608", (function(t, n) {
                         motionDurationSlow: "0.01s"
                     }
                 }
-            }, i.createElement("div", {
-                ref: l,
+            }, o.createElement("div", {
+                ref: c,
                 style: {
                     paddingBottom: u,
                     position: "relative",
                     width: "fit-content",
-                    minWidth: d
+                    minWidth: f
                 }
-            }, i.createElement(e, Object.assign({}, n, {
-                style: Object.assign(Object.assign({}, c), {
+            }, o.createElement(e, Object.assign({}, n, {
+                style: Object.assign(Object.assign({}, l), {
                     margin: 0
                 }),
                 open: m,
                 visible: m,
-                getPopupContainer: () => l.current
+                getPopupContainer: () => c.current
             }))))
         }
     }
@@ -384,9 +886,9 @@ r.register("64608", (function(t, n) {
     e(t.exports, "initMoveMotion", (function() {
         return p
     }));
-    var o = r("lt5sb"),
-        i = r("aWAHQ");
-    const a = new(0, o.Keyframes)("antMoveDownIn", {
+    var a = r("lt5sb"),
+        o = r("aWAHQ");
+    const i = new(0, a.Keyframes)("antMoveDownIn", {
             "0%": {
                 transform: "translate3d(0, 100%, 0)",
                 transformOrigin: "0 0",
@@ -398,7 +900,7 @@ r.register("64608", (function(t, n) {
                 opacity: 1
             }
         }),
-        s = new(0, o.Keyframes)("antMoveDownOut", {
+        s = new(0, a.Keyframes)("antMoveDownOut", {
             "0%": {
                 transform: "translate3d(0, 0, 0)",
                 transformOrigin: "0 0",
@@ -410,7 +912,7 @@ r.register("64608", (function(t, n) {
                 opacity: 0
             }
         }),
-        c = new(0, o.Keyframes)("antMoveLeftIn", {
+        l = new(0, a.Keyframes)("antMoveLeftIn", {
             "0%": {
                 transform: "translate3d(-100%, 0, 0)",
                 transformOrigin: "0 0",
@@ -422,7 +924,7 @@ r.register("64608", (function(t, n) {
                 opacity: 1
             }
         }),
-        l = new(0, o.Keyframes)("antMoveLeftOut", {
+        c = new(0, a.Keyframes)("antMoveLeftOut", {
             "0%": {
                 transform: "translate3d(0, 0, 0)",
                 transformOrigin: "0 0",
@@ -434,7 +936,7 @@ r.register("64608", (function(t, n) {
                 opacity: 0
             }
         }),
-        u = new(0, o.Keyframes)("antMoveRightIn", {
+        u = new(0, a.Keyframes)("antMoveRightIn", {
             "0%": {
                 transform: "translate3d(100%, 0, 0)",
                 transformOrigin: "0 0",
@@ -446,7 +948,7 @@ r.register("64608", (function(t, n) {
                 opacity: 1
             }
         }),
-        f = new(0, o.Keyframes)("antMoveRightOut", {
+        d = new(0, a.Keyframes)("antMoveRightOut", {
             "0%": {
                 transform: "translate3d(0, 0, 0)",
                 transformOrigin: "0 0",
@@ -458,9 +960,9 @@ r.register("64608", (function(t, n) {
                 opacity: 0
             }
         }),
-        d = {
+        f = {
             "move-up": {
-                inKeyframes: new(0, o.Keyframes)("antMoveUpIn", {
+                inKeyframes: new(0, a.Keyframes)("antMoveUpIn", {
                     "0%": {
                         transform: "translate3d(0, -100%, 0)",
                         transformOrigin: "0 0",
@@ -472,7 +974,7 @@ r.register("64608", (function(t, n) {
                         opacity: 1
                     }
                 }),
-                outKeyframes: new(0, o.Keyframes)("antMoveUpOut", {
+                outKeyframes: new(0, a.Keyframes)("antMoveUpOut", {
                     "0%": {
                         transform: "translate3d(0, 0, 0)",
                         transformOrigin: "0 0",
@@ -486,26 +988,26 @@ r.register("64608", (function(t, n) {
                 })
             },
             "move-down": {
-                inKeyframes: a,
+                inKeyframes: i,
                 outKeyframes: s
             },
             "move-left": {
-                inKeyframes: c,
-                outKeyframes: l
+                inKeyframes: l,
+                outKeyframes: c
             },
             "move-right": {
                 inKeyframes: u,
-                outKeyframes: f
+                outKeyframes: d
             }
         },
         p = (e, t) => {
             const {
                 antCls: r
             } = e, n = `${r}-${t}`, {
-                inKeyframes: o,
-                outKeyframes: a
-            } = d[t];
-            return [(0, i.initMotion)(n, o, a, e.motionDurationMid), {
+                inKeyframes: a,
+                outKeyframes: i
+            } = f[t];
+            return [(0, o.initMotion)(n, a, i, e.motionDurationMid), {
                 [`\n        ${n}-enter,\n        ${n}-appear\n      `]: {
                     opacity: 0,
                     animationTimingFunction: e.motionEaseOutCirc
@@ -515,30 +1017,30 @@ r.register("64608", (function(t, n) {
                 }
             }]
         }
-})), r.register("i5Qjx", (function(n, o) {
+})), r.register("i5Qjx", (function(n, a) {
     e(n.exports, "SpaceContext", (function() {
         return m
     }), (function(e) {
         return m = e
     })), e(n.exports, "default", (function() {
-        return h
+        return v
     }), (function(e) {
-        return h = e
+        return v = e
     }));
-    var i = r("fe1on"),
-        a = r("jyxW7"),
+    var o = r("fe1on"),
+        i = r("jyxW7"),
         s = r("fywoC"),
-        c = r("4gMdJ"),
-        l = r("1eqVQ"),
+        l = r("4gMdJ"),
+        c = r("1eqVQ"),
         u = r("7yXSw"),
-        f = r("c9Vcn"),
-        d = r("5gjI2"),
+        d = r("c9Vcn"),
+        f = r("5gjI2"),
         p = function(e, t) {
             var r = {};
             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
             if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-                var o = 0;
-                for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (r[n[o]] = e[n[o]])
+                var a = 0;
+                for (n = Object.getOwnPropertySymbols(e); a < n.length; a++) t.indexOf(n[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[a]) && (r[n[a]] = e[n[a]])
             }
             return r
         };
@@ -553,144 +1055,144 @@ r.register("64608", (function(t, n) {
             middle: 16,
             large: 24
         };
-    const v = e => {
+    const h = e => {
         const {
             getPrefixCls: r,
             space: n,
-            direction: o
-        } = s.useContext(c.ConfigContext), {
+            direction: a
+        } = s.useContext(l.ConfigContext), {
             size: u = (null == n ? void 0 : n.size) || "small",
-            align: v,
-            className: h,
-            rootClassName: x,
-            children: y,
+            align: h,
+            className: v,
+            rootClassName: y,
+            children: x,
             direction: b = "horizontal",
             prefixCls: w,
-            split: j,
-            style: C,
-            wrap: O = !1
-        } = e, k = p(e, ["size", "align", "className", "rootClassName", "children", "direction", "prefixCls", "split", "style", "wrap"]), S = (0, l.default)(), [E, M] = s.useMemo((() => (Array.isArray(u) ? u : [u, u]).map((e => function(e) {
+            split: E,
+            style: j,
+            wrap: C = !1
+        } = e, S = p(e, ["size", "align", "className", "rootClassName", "children", "direction", "prefixCls", "split", "style", "wrap"]), O = (0, c.default)(), [N, _] = s.useMemo((() => (Array.isArray(u) ? u : [u, u]).map((e => function(e) {
             return "string" == typeof e ? g[e] : e || 0
-        }(e)))), [u]), N = (0, a.default)(y, {
+        }(e)))), [u]), k = (0, i.default)(x, {
             keepEmpty: !0
-        }), z = void 0 === v && "horizontal" === b ? "center" : v, P = r("space", w), [D, _] = (0, d.default)(P), R = t(i)(P, _, `${P}-${b}`, {
-            [`${P}-rtl`]: "rtl" === o,
-            [`${P}-align-${z}`]: z
-        }, h, x), A = `${P}-item`, I = "rtl" === o ? "marginLeft" : "marginRight";
-        let K = 0;
-        const L = N.map(((e, t) => {
-                null != e && (K = t);
-                const r = e && e.key || `${A}-${t}`;
-                return s.createElement(f.default, {
-                    className: A,
+        }), I = void 0 === h && "horizontal" === b ? "center" : h, P = r("space", w), [M, A] = (0, f.default)(P), L = t(o)(P, A, `${P}-${b}`, {
+            [`${P}-rtl`]: "rtl" === a,
+            [`${P}-align-${I}`]: I
+        }, v, y), z = `${P}-item`, D = "rtl" === a ? "marginLeft" : "marginRight";
+        let F = 0;
+        const T = k.map(((e, t) => {
+                null != e && (F = t);
+                const r = e && e.key || `${z}-${t}`;
+                return s.createElement(d.default, {
+                    className: z,
                     key: r,
                     direction: b,
                     index: t,
-                    marginDirection: I,
-                    split: j,
-                    wrap: O
+                    marginDirection: D,
+                    split: E,
+                    wrap: C
                 }, e)
             })),
-            B = s.useMemo((() => ({
-                horizontalSize: E,
-                verticalSize: M,
-                latestIndex: K,
-                supportFlexGap: S
-            })), [E, M, K, S]);
-        if (0 === N.length) return null;
-        const W = {};
-        return O && (W.flexWrap = "wrap", S || (W.marginBottom = -M)), S && (W.columnGap = E, W.rowGap = M), D(s.createElement("div", Object.assign({
-            className: R,
-            style: Object.assign(Object.assign({}, W), C)
-        }, k), s.createElement(m.Provider, {
-            value: B
-        }, L)))
+            R = s.useMemo((() => ({
+                horizontalSize: N,
+                verticalSize: _,
+                latestIndex: F,
+                supportFlexGap: O
+            })), [N, _, F, O]);
+        if (0 === k.length) return null;
+        const B = {};
+        return C && (B.flexWrap = "wrap", O || (B.marginBottom = -_)), O && (B.columnGap = N, B.rowGap = _), M(s.createElement("div", Object.assign({
+            className: L,
+            style: Object.assign(Object.assign({}, B), j)
+        }, S), s.createElement(m.Provider, {
+            value: R
+        }, T)))
     };
-    v.Compact = u.default;
-    var h = v
+    h.Compact = u.default;
+    var v = h
 })), r.register("1eqVQ", (function(t, n) {
     e(t.exports, "default", (function() {
-        return a
+        return i
     }));
-    var o = r("fywoC"),
-        i = r("azMeL"),
-        a = () => {
-            const [e, t] = o.useState(!1);
-            return o.useEffect((() => {
-                t((0, i.detectFlexGapSupported)())
+    var a = r("fywoC"),
+        o = r("azMeL"),
+        i = () => {
+            const [e, t] = a.useState(!1);
+            return a.useEffect((() => {
+                t((0, o.detectFlexGapSupported)())
             }), []), e
         }
 })), r.register("c9Vcn", (function(t, n) {
     e(t.exports, "default", (function() {
-        return a
+        return i
     }));
-    var o = r("fywoC"),
-        i = r("i5Qjx");
+    var a = r("fywoC"),
+        o = r("i5Qjx");
 
-    function a(e) {
+    function i(e) {
         let {
             className: t,
             direction: r,
             index: n,
-            marginDirection: a,
+            marginDirection: i,
             children: s,
-            split: c,
-            wrap: l
+            split: l,
+            wrap: c
         } = e;
         const {
             horizontalSize: u,
-            verticalSize: f,
-            latestIndex: d,
+            verticalSize: d,
+            latestIndex: f,
             supportFlexGap: p
-        } = o.useContext(i.SpaceContext);
+        } = a.useContext(o.SpaceContext);
         let m = {};
-        return p || ("vertical" === r ? n < d && (m = {
-            marginBottom: u / (c ? 2 : 1)
-        }) : m = Object.assign(Object.assign({}, n < d && {
-            [a]: u / (c ? 2 : 1)
-        }), l && {
-            paddingBottom: f
-        })), null == s ? null : o.createElement(o.Fragment, null, o.createElement("div", {
+        return p || ("vertical" === r ? n < f && (m = {
+            marginBottom: u / (l ? 2 : 1)
+        }) : m = Object.assign(Object.assign({}, n < f && {
+            [i]: u / (l ? 2 : 1)
+        }), c && {
+            paddingBottom: d
+        })), null == s ? null : a.createElement(a.Fragment, null, a.createElement("div", {
             className: t,
             style: m
-        }, s), n < d && c && o.createElement("span", {
+        }, s), n < f && l && a.createElement("span", {
             className: `${t}-split`,
             style: m
-        }, c))
+        }, l))
     }
 })), r.register("dhxiD", (function(e, t) {
     var n = r("1fK2g"),
-        o = {
+        a = {
             "text/plain": "Text",
             "text/html": "Url",
             default: "Text"
         };
     e.exports = function(e, t) {
-        var r, i, a, s, c, l, u = !1;
+        var r, o, i, s, l, c, u = !1;
         t || (t = {}), r = t.debug || !1;
         try {
-            if (a = n(), s = document.createRange(), c = document.getSelection(), (l = document.createElement("span")).textContent = e, l.ariaHidden = "true", l.style.all = "unset", l.style.position = "fixed", l.style.top = 0, l.style.clip = "rect(0, 0, 0, 0)", l.style.whiteSpace = "pre", l.style.webkitUserSelect = "text", l.style.MozUserSelect = "text", l.style.msUserSelect = "text", l.style.userSelect = "text", l.addEventListener("copy", (function(n) {
+            if (i = n(), s = document.createRange(), l = document.getSelection(), (c = document.createElement("span")).textContent = e, c.ariaHidden = "true", c.style.all = "unset", c.style.position = "fixed", c.style.top = 0, c.style.clip = "rect(0, 0, 0, 0)", c.style.whiteSpace = "pre", c.style.webkitUserSelect = "text", c.style.MozUserSelect = "text", c.style.msUserSelect = "text", c.style.userSelect = "text", c.addEventListener("copy", (function(n) {
                     if (n.stopPropagation(), t.format)
                         if (n.preventDefault(), void 0 === n.clipboardData) {
                             r && console.warn("unable to use e.clipboardData"), r && console.warn("trying IE specific stuff"), window.clipboardData.clearData();
-                            var i = o[t.format] || o.default;
-                            window.clipboardData.setData(i, e)
+                            var o = a[t.format] || a.default;
+                            window.clipboardData.setData(o, e)
                         } else n.clipboardData.clearData(), n.clipboardData.setData(t.format, e);
                     t.onCopy && (n.preventDefault(), t.onCopy(n.clipboardData))
-                })), document.body.appendChild(l), s.selectNodeContents(l), c.addRange(s), !document.execCommand("copy")) throw new Error("copy command was unsuccessful");
+                })), document.body.appendChild(c), s.selectNodeContents(c), l.addRange(s), !document.execCommand("copy")) throw new Error("copy command was unsuccessful");
             u = !0
         } catch (n) {
             r && console.error("unable to copy using execCommand: ", n), r && console.warn("trying IE specific stuff");
             try {
                 window.clipboardData.setData(t.format || "text", e), t.onCopy && t.onCopy(window.clipboardData), u = !0
             } catch (n) {
-                r && console.error("unable to copy using clipboardData: ", n), r && console.error("falling back to prompt"), i = function(e) {
+                r && console.error("unable to copy using clipboardData: ", n), r && console.error("falling back to prompt"), o = function(e) {
                     var t = (/mac os x/i.test(navigator.userAgent) ? "⌘" : "Ctrl") + "+C";
                     return e.replace(/#{\s*key\s*}/g, t)
-                }("message" in t ? t.message : "Copy to clipboard: #{key}, Enter"), window.prompt(i, e)
+                }("message" in t ? t.message : "Copy to clipboard: #{key}, Enter"), window.prompt(o, e)
             }
         } finally {
-            c && ("function" == typeof c.removeRange ? c.removeRange(s) : c.removeAllRanges()), l && document.body.removeChild(l), a()
+            l && ("function" == typeof l.removeRange ? l.removeRange(s) : l.removeAllRanges()), c && document.body.removeChild(c), i()
         }
         return u
     }
@@ -724,24 +1226,24 @@ r.register("64608", (function(t, n) {
     }
 })), r.register("77qSl", (function(t, n) {
     e(t.exports, "useMediaMatch", (function() {
-        return i
+        return o
     }));
-    var o = r("fywoC");
+    var a = r("fywoC");
 
-    function i(e) {
+    function o(e) {
         if ("undefined" == typeof window) return console.warn("useMediaMatch cannot function as window is undefined."), !1;
-        var t = (0, o.useMemo)((function() {
+        var t = (0, a.useMemo)((function() {
                 return window.matchMedia(e)
             }), [e]),
-            r = (0, o.useState)((function() {
+            r = (0, a.useState)((function() {
                 return t.matches
             })),
             n = r[0],
-            i = r[1];
-        return (0, o.useEffect)((function() {
-            i(t.matches);
+            o = r[1];
+        return (0, a.useEffect)((function() {
+            o(t.matches);
             var e = function(e) {
-                return i(e.matches)
+                return o(e.matches)
             };
             return t.addEventListener ? (t.addEventListener("change", e), function() {
                 return t.removeEventListener("change", e)
@@ -761,12 +1263,12 @@ r.register("64608", (function(t, n) {
         } : function(e, t, r, n) {
             void 0 === n && (n = r), e[n] = t[r]
         }),
-        o = e.exports && e.exports.__exportStar || function(e, t) {
+        a = e.exports && e.exports.__exportStar || function(e, t) {
             for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || n(t, e, r)
         };
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
-    }), o(r("coa3i"), e.exports), o(r("exKSe"), e.exports), o(r("4Nv4f"), e.exports)
+    }), a(r("coa3i"), e.exports), a(r("exKSe"), e.exports), a(r("4Nv4f"), e.exports)
 })), r.register("coa3i", (function(e, t) {
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
@@ -791,7 +1293,7 @@ r.register("64608", (function(t, n) {
         } : function(e, t, r, n) {
             void 0 === n && (n = r), e[n] = t[r]
         }),
-        o = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
+        a = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
             Object.defineProperty(e, "default", {
                 enumerable: !0,
                 value: t
@@ -799,17 +1301,17 @@ r.register("64608", (function(t, n) {
         } : function(e, t) {
             e.default = t
         }),
-        i = e.exports && e.exports.__importStar || function(e) {
+        o = e.exports && e.exports.__importStar || function(e) {
             if (e && e.__esModule) return e;
             var t = {};
             if (null != e)
                 for (var r in e) "default" !== r && Object.prototype.hasOwnProperty.call(e, r) && n(t, e, r);
-            return o(t, e), t
+            return a(t, e), t
         };
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.useWindowSize = void 0;
-    var a = i(r("fywoC"));
+    var i = o(r("fywoC"));
 
     function s() {
         return {
@@ -818,10 +1320,10 @@ r.register("64608", (function(t, n) {
         }
     }
     e.exports.useWindowSize = function() {
-        var e = a.useState(s()),
+        var e = i.useState(s()),
             t = e[0],
             r = e[1];
-        return a.useLayoutEffect((function() {
+        return i.useLayoutEffect((function() {
             function e() {
                 r(s())
             }
@@ -835,11 +1337,11 @@ r.register("64608", (function(t, n) {
     var n = e.exports && e.exports.__assign || function() {
             return n = Object.assign || function(e) {
                 for (var t, r = 1, n = arguments.length; r < n; r++)
-                    for (var o in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o]);
+                    for (var a in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
                 return e
             }, n.apply(this, arguments)
         },
-        o = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, r, n) {
+        a = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, r, n) {
             void 0 === n && (n = r), Object.defineProperty(e, n, {
                 enumerable: !0,
                 get: function() {
@@ -849,7 +1351,7 @@ r.register("64608", (function(t, n) {
         } : function(e, t, r, n) {
             void 0 === n && (n = r), e[n] = t[r]
         }),
-        i = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
+        o = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
             Object.defineProperty(e, "default", {
                 enumerable: !0,
                 value: t
@@ -857,17 +1359,17 @@ r.register("64608", (function(t, n) {
         } : function(e, t) {
             e.default = t
         }),
-        a = e.exports && e.exports.__importStar || function(e) {
+        i = e.exports && e.exports.__importStar || function(e) {
             if (e && e.__esModule) return e;
             var t = {};
             if (null != e)
-                for (var r in e) "default" !== r && Object.prototype.hasOwnProperty.call(e, r) && o(t, e, r);
-            return i(t, e), t
+                for (var r in e) "default" !== r && Object.prototype.hasOwnProperty.call(e, r) && a(t, e, r);
+            return o(t, e), t
         };
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.useComponentSize = void 0;
-    var s = a(r("fywoC"));
+    var s = i(r("fywoC"));
     e.exports.useComponentSize = function() {
         var e = s.useState({
                 height: 0,
@@ -875,11 +1377,11 @@ r.register("64608", (function(t, n) {
             }),
             t = e[0],
             r = e[1],
-            o = s.useRef(),
-            i = s.useCallback((function() {
-                if (o.current) {
-                    var e = o.current.offsetHeight,
-                        n = o.current.offsetWidth;
+            a = s.useRef(),
+            o = s.useCallback((function() {
+                if (a.current) {
+                    var e = a.current.offsetHeight,
+                        n = a.current.offsetWidth;
                     e === t.height && n === t.width || r({
                         height: e,
                         width: n
@@ -887,34 +1389,34 @@ r.register("64608", (function(t, n) {
                 }
             }), [t.height, t.width]);
         return s.useLayoutEffect((function() {
-            if (o && o.current) {
-                var e = new ResizeObserver(i);
-                return e.observe(o.current),
+            if (a && a.current) {
+                var e = new ResizeObserver(o);
+                return e.observe(a.current),
                     function() {
                         return e.disconnect()
                     }
             }
-        }), [o, i]), n({
-            ref: o
+        }), [a, o]), n({
+            ref: a
         }, t)
     }
 })), r.register("hDWWf", (function(t, r) {
     let n;
-    var o;
+    var a;
     e(t.exports, "SiteHeaderTheme", (function() {
         return n
-    })), (o = n || (n = {})).light = "light", o.dark = "dark"
+    })), (a = n || (n = {})).light = "light", a.dark = "dark"
 })), r.register("hSz8d", (function(t, r) {
     let n;
-    var o;
+    var a;
     e(t.exports, "SiteHeaderAlpha", (function() {
         return n
-    })), (o = n || (n = {})).none = "none", o.standard = "standard", o.darker = "darker"
+    })), (a = n || (n = {})).none = "none", a.standard = "standard", a.darker = "darker"
 })), r.register("9Vz35", (function(t, n) {
     e(t.exports, "default", (function() {
-        return o
+        return a
     }));
-    var o = {
+    var a = {
         name: r("2Y5iQ").default.areaName,
         iconImage: "/client/img/header/rewards.svg"
     }
@@ -933,20 +1435,20 @@ r.register("64608", (function(t, n) {
     }
 })), r.register("dohZB", (function(t, n) {
     e(t.exports, "default", (function() {
-        return l
+        return c
     }));
-    var o = r("dnh3u"),
-        i = r("fywoC"),
-        a = r("bVHCc"),
+    var a = r("dnh3u"),
+        o = r("fywoC"),
+        i = r("bVHCc"),
         s = r("dwKuN"),
-        c = function(e, t) {
-            return i.createElement(s.default, (0, o.default)((0, o.default)({}, e), {}, {
+        l = function(e, t) {
+            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
                 ref: t,
-                icon: a.default
+                icon: i.default
             }))
         };
-    c.displayName = "UsergroupAddOutlined";
-    var l = i.forwardRef(c)
+    l.displayName = "UsergroupAddOutlined";
+    var c = o.forwardRef(l)
 })), r.register("bVHCc", (function(t, r) {
     e(t.exports, "default", (function() {
         return n
@@ -970,20 +1472,20 @@ r.register("64608", (function(t, n) {
     }
 })), r.register("kVS28", (function(t, n) {
     e(t.exports, "default", (function() {
-        return l
+        return c
     }));
-    var o = r("dnh3u"),
-        i = r("fywoC"),
-        a = r("4GmeK"),
+    var a = r("dnh3u"),
+        o = r("fywoC"),
+        i = r("4GmeK"),
         s = r("dwKuN"),
-        c = function(e, t) {
-            return i.createElement(s.default, (0, o.default)((0, o.default)({}, e), {}, {
+        l = function(e, t) {
+            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
                 ref: t,
-                icon: a.default
+                icon: i.default
             }))
         };
-    c.displayName = "LogoutOutlined";
-    var l = i.forwardRef(c)
+    l.displayName = "LogoutOutlined";
+    var c = o.forwardRef(l)
 })), r.register("4GmeK", (function(t, r) {
     e(t.exports, "default", (function() {
         return n
@@ -1005,14 +1507,51 @@ r.register("64608", (function(t, n) {
         name: "logout",
         theme: "outlined"
     }
+})), r.register("kLpOI", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return c
+    }));
+    var a = r("dnh3u"),
+        o = r("fywoC"),
+        i = r("ayjhg"),
+        s = r("dwKuN"),
+        l = function(e, t) {
+            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
+                ref: t,
+                icon: i.default
+            }))
+        };
+    l.displayName = "CheckOutlined";
+    var c = o.forwardRef(l)
+})), r.register("ayjhg", (function(t, r) {
+    e(t.exports, "default", (function() {
+        return n
+    }));
+    var n = {
+        icon: {
+            tag: "svg",
+            attrs: {
+                viewBox: "64 64 896 896",
+                focusable: "false"
+            },
+            children: [{
+                tag: "path",
+                attrs: {
+                    d: "M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"
+                }
+            }]
+        },
+        name: "check",
+        theme: "outlined"
+    }
 })), r.register("kyvf1", (function(t, n) {
     e(t.exports, "default", (function() {
-        return a
+        return i
     }));
-    var o = r("hxEiv"),
-        i = r("beXRF");
+    var a = r("hxEiv"),
+        o = r("beXRF");
     r("fywoC");
-    var a = e => e.external || !e.to ? (0, o.jsx)("a", {
+    var i = e => e.external || !e.to ? (0, a.jsx)("a", {
         href: e.to,
         tabIndex: Number(e.tabIndex || "0"),
         onClick: e.onClick,
@@ -1023,7 +1562,7 @@ r.register("64608", (function(t, n) {
         target: e.target,
         style: e.style,
         children: e.children
-    }) : (0, o.jsx)(i.Link, {
+    }) : (0, a.jsx)(o.Link, {
         to: e.to,
         tabIndex: Number(e.tabIndex || "0"),
         onClick: e.onClick,
@@ -1034,26 +1573,26 @@ r.register("64608", (function(t, n) {
     })
 })), r.register("9kZfj", (function(t, n) {
     e(t.exports, "onlyOfferAnnualUpgrade", (function() {
-        return i
+        return o
     }));
-    var o = r("hrYih");
-    const i = () => "annual-only" === o.default.getFeatureFlag("annual-only-pro")
+    var a = r("hrYih");
+    const o = () => "annual-only" === a.default.getFeatureFlag("annual-only-pro")
 })), r.register("aYYSA", (function(t, n) {
     e(t.exports, "default", (function() {
-        return l
+        return c
     }));
-    var o = r("dnh3u"),
-        i = r("fywoC"),
-        a = r("5UEB4"),
+    var a = r("dnh3u"),
+        o = r("fywoC"),
+        i = r("5UEB4"),
         s = r("dwKuN"),
-        c = function(e, t) {
-            return i.createElement(s.default, (0, o.default)((0, o.default)({}, e), {}, {
+        l = function(e, t) {
+            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
                 ref: t,
-                icon: a.default
+                icon: i.default
             }))
         };
-    c.displayName = "StarOutlined";
-    var l = i.forwardRef(c)
+    l.displayName = "StarOutlined";
+    var c = o.forwardRef(l)
 })), r.register("5UEB4", (function(t, r) {
     e(t.exports, "default", (function() {
         return n
@@ -1079,19 +1618,19 @@ r.register("64608", (function(t, n) {
     e(t.exports, "default", (function() {
         return s
     }));
-    var o = r("fywoC"),
-        i = r("3KQc0"),
-        a = r("9iNNJ");
+    var a = r("fywoC"),
+        o = r("3KQc0"),
+        i = r("9iNNJ");
     var s = (e, t) => {
-        const [r, n] = o.useState((() => {
+        const [r, n] = a.useState((() => {
             var r, n;
-            const o = e && "current" in e ? e.current : e;
-            return o ? [o.offsetWidth, o.offsetHeight] : [null !== (r = null == t ? void 0 : t.initialWidth) && void 0 !== r ? r : 0, null !== (n = null == t ? void 0 : t.initialHeight) && void 0 !== n ? n : 0]
+            const a = e && "current" in e ? e.current : e;
+            return a ? [a.offsetWidth, a.offsetHeight] : [null !== (r = null == t ? void 0 : t.initialWidth) && void 0 !== r ? r : 0, null !== (n = null == t ? void 0 : t.initialHeight) && void 0 !== n ? n : 0]
         }));
-        return (0, a.default)((() => {
+        return (0, i.default)((() => {
             const t = e && "current" in e ? e.current : e;
             t && n([t.offsetWidth, t.offsetHeight])
-        }), [e]), (0, i.default)(e, (e => {
+        }), [e]), (0, o.default)(e, (e => {
             const t = e.target;
             n([t.offsetWidth, t.offsetHeight])
         })), r
@@ -1100,20 +1639,20 @@ r.register("64608", (function(t, n) {
     e(t.exports, "default", (function() {
         return u
     }));
-    var o = r("6rvT3"),
-        i = r("9iNNJ"),
-        a = r("3Yjty"),
+    var a = r("6rvT3"),
+        o = r("9iNNJ"),
+        i = r("3Yjty"),
         s = r("f1PHW");
-    let c;
-    const l = () => c || (c = function() {
+    let l;
+    const c = () => l || (l = function() {
         const e = new Map,
-            t = new(0, o.default)((0, s.default)(((t, r) => {
+            t = new(0, a.default)((0, s.default)(((t, r) => {
                 var n;
                 if (1 === t.length) null === (n = e.get(t[0].target)) || void 0 === n || n(t[0], r);
                 else
                     for (let n = 0; n < t.length; n++) {
-                        var o;
-                        null === (o = e.get(t[n].target)) || void 0 === o || o(t[n], r)
+                        var a;
+                        null === (a = e.get(t[n].target)) || void 0 === a || a(t[n], r)
                     }
             })));
         return {
@@ -1127,31 +1666,31 @@ r.register("64608", (function(t, n) {
         }
     }());
     var u = function(e, t) {
-        const r = l(),
-            n = (0, a.default)(t);
-        return (0, i.default)((() => {
+        const r = c(),
+            n = (0, i.default)(t);
+        return (0, o.default)((() => {
             let t = !1;
-            const o = e && "current" in e ? e.current : e;
-            if (o) return r.subscribe(o, ((e, r) => {
+            const a = e && "current" in e ? e.current : e;
+            if (a) return r.subscribe(a, ((e, r) => {
                 t || n.current(e, r)
             })), () => {
-                t = !0, r.unsubscribe(o)
+                t = !0, r.unsubscribe(a)
             }
         }), [e, r, n]), r.observer
     }
-})), r.register("9iNNJ", (function(n, o) {
+})), r.register("9iNNJ", (function(n, a) {
     e(n.exports, "default", (function() {
-        return i
+        return o
     }));
-    var i = t(r("fywoC"))["undefined" != typeof document && void 0 !== document.createElement ? "useLayoutEffect" : "useEffect"]
+    var o = t(r("fywoC"))["undefined" != typeof document && void 0 !== document.createElement ? "useLayoutEffect" : "useEffect"]
 })), r.register("3Yjty", (function(t, n) {
     e(t.exports, "default", (function() {
-        return i
+        return o
     }));
-    var o = r("fywoC");
-    var i = e => {
-        const t = o.useRef(e);
-        return o.useEffect((() => {
+    var a = r("fywoC");
+    var o = e => {
+        const t = a.useRef(e);
+        return a.useEffect((() => {
             t.current = e
         })), t
     }
@@ -1163,8 +1702,8 @@ r.register("64608", (function(t, n) {
         var t = [],
             r = null,
             n = function() {
-                for (var n = arguments.length, o = new Array(n), i = 0; i < n; i++) o[i] = arguments[i];
-                t = o, r || (r = requestAnimationFrame((function() {
+                for (var n = arguments.length, a = new Array(n), o = 0; o < n; o++) a[o] = arguments[o];
+                t = a, r || (r = requestAnimationFrame((function() {
                     r = null, e.apply(void 0, t)
                 })))
             };
@@ -1172,45 +1711,47 @@ r.register("64608", (function(t, n) {
             r && (cancelAnimationFrame(r), r = null)
         }, n
     }
-})), r.register("iROck", (function(t, n) {
-    e(t.exports, "NavigateTo", (function() {
-        return i
-    }));
-    var o = r("bd8je");
-    const i = e => {
-        o.history.push(e)
-    }
 })), r.register("py2Xr", (function(t, n) {
     e(t.exports, "default", (function() {
-        return i
+        return o
     }));
-    var o = r("hxEiv");
+    var a = r("hxEiv");
     r("fywoC");
-    var i = e => (0, o.jsx)("i", {
+    var o = e => (0, a.jsx)("i", {
         className: `${e.name}${e.className?` ${e.className}`:""}`,
         style: e.style
     })
+})), r.register("eFy2j", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return o
+    }));
+    var a = r("fywoC");
+
+    function o() {
+        const [, e] = a.useReducer((e => e + 1), 0);
+        return e
+    }
 })), r.register("bmTnW", (function(e, t) {
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.lazyWithPreload = void 0;
     var n = r("fywoC");
 
-    function o(e) {
-        var t, r, o = (0, n.lazy)(e),
-            i = (0, n.forwardRef)((function(e, r) {
-                var i = (0, n.useRef)(null != t ? t : o);
-                return (0, n.createElement)(i.current, Object.assign(r ? {
+    function a(e) {
+        var t, r, a = (0, n.lazy)(e),
+            o = (0, n.forwardRef)((function(e, r) {
+                var o = (0, n.useRef)(null != t ? t : a);
+                return (0, n.createElement)(o.current, Object.assign(r ? {
                     ref: r
                 } : {}, e))
             }));
-        return i.preload = function() {
+        return o.preload = function() {
             return r || (r = e().then((function(e) {
                 return t = e.default
             }))), r
-        }, i
+        }, o
     }
-    e.exports.lazyWithPreload = o, e.exports.default = o
+    e.exports.lazyWithPreload = a, e.exports.default = a
 })), r.register("4aaLU", (function(t, r) {
     e(t.exports, "default", (function() {
         return n
@@ -1227,20 +1768,20 @@ r.register("64608", (function(t, n) {
     }
 })), r.register("exbzb", (function(t, n) {
     e(t.exports, "default", (function() {
-        return l
+        return c
     }));
-    var o = r("dnh3u"),
-        i = r("fywoC"),
-        a = r("8N8s4"),
+    var a = r("dnh3u"),
+        o = r("fywoC"),
+        i = r("8N8s4"),
         s = r("dwKuN"),
-        c = function(e, t) {
-            return i.createElement(s.default, (0, o.default)((0, o.default)({}, e), {}, {
+        l = function(e, t) {
+            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
                 ref: t,
-                icon: a.default
+                icon: i.default
             }))
         };
-    c.displayName = "QuestionCircleOutlined";
-    var l = i.forwardRef(c)
+    l.displayName = "QuestionCircleOutlined";
+    var c = o.forwardRef(l)
 })), r.register("8N8s4", (function(t, r) {
     e(t.exports, "default", (function() {
         return n
@@ -1265,6 +1806,203 @@ r.register("64608", (function(t, n) {
             }]
         },
         name: "question-circle",
+        theme: "outlined"
+    }
+})), r.register("bcnSK", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return i
+    }));
+    var a = r("fywoC"),
+        o = r("bSGy0");
+    var i = a.createContext(o.default)
+})), r.register("bSGy0", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return i
+    }));
+    var a = r("g4NpA"),
+        o = r("lvpm8");
+    var i = {
+        login: new(0, a.default),
+        navigation: new(0, o.default)
+    }
+})), r.register("g4NpA", (function(t, n) {
+    e(t.exports, "informationTypes", (function() {
+        return i
+    })), e(t.exports, "default", (function() {
+        return C
+    }));
+    var a = r("kHqmx"),
+        o = r("4MuSt");
+    const i = {
+            email: "EMAIL",
+            password: "PASSWORD",
+            accountPassword: "ACCOUNT_PASSWORD",
+            firstName: "FIRST_NAME",
+            lastName: "LAST_NAME",
+            accountType: "ACCOUNT_TYPE",
+            country: "COUNTRY",
+            areaOfExpertise: "AREA_OF_EXPERTISE",
+            gradeLevel: "GRADE_LEVEL",
+            organization: "ORGANIZATION",
+            acceptedLatestPolicies: "ACCEPTED_LATEST_POLICIES",
+            schoolId: "SCHOOL_ID",
+            districtId: "DISTRICT_ID"
+        },
+        s = {
+            userExists: !1,
+            email: "",
+            accountType: null,
+            googleToken: "",
+            firstName: "",
+            lastName: "",
+            password: "",
+            schoolId: "",
+            districtId: "",
+            country: "",
+            areaOfExpertise: "",
+            gradeLevel: "",
+            organization: "",
+            acceptsLatestPolicies: !1,
+            authenticated: !1
+        },
+        {
+            userExists: l,
+            email: c,
+            accountType: u,
+            googleToken: d,
+            firstName: f,
+            lastName: p,
+            password: m,
+            schoolId: g,
+            districtId: h,
+            country: v,
+            areaOfExpertise: y,
+            gradeLevel: x,
+            organization: b,
+            acceptsLatestPolicies: w,
+            authenticated: E
+        } = s;
+    class j {
+        constructor() {
+            this.userExists = l, this.email = c, this.accountType = u, this.googleToken = d, this.firstName = f, this.lastName = p, this.password = m, this.schoolId = g, this.districtId = h, this.country = v, this.areaOfExpertise = y, this.gradeLevel = x, this.organization = b, this.acceptsLatestPolicies = w, this.authenticated = E, this.informationNeeded = o.observable.array([i.email]), this.reset = () => {
+                Object.keys(s).forEach((e => this[e] = s[e])), this.informationNeeded.replace([i.email])
+            }, (0, o.makeObservable)(this)
+        }
+    }(0, a.__decorate)([o.observable], j.prototype, "userExists", void 0), (0, a.__decorate)([o.observable], j.prototype, "email", void 0), (0, a.__decorate)([o.observable], j.prototype, "accountType", void 0), (0, a.__decorate)([o.observable], j.prototype, "googleToken", void 0), (0, a.__decorate)([o.observable], j.prototype, "firstName", void 0), (0, a.__decorate)([o.observable], j.prototype, "lastName", void 0), (0, a.__decorate)([o.observable], j.prototype, "password", void 0), (0, a.__decorate)([o.observable], j.prototype, "schoolId", void 0), (0, a.__decorate)([o.observable], j.prototype, "districtId", void 0), (0, a.__decorate)([o.observable], j.prototype, "country", void 0), (0, a.__decorate)([o.observable], j.prototype, "areaOfExpertise", void 0), (0, a.__decorate)([o.observable], j.prototype, "gradeLevel", void 0), (0, a.__decorate)([o.observable], j.prototype, "organization", void 0), (0, a.__decorate)([o.observable], j.prototype, "acceptsLatestPolicies", void 0), (0, a.__decorate)([o.observable], j.prototype, "authenticated", void 0), (0, a.__decorate)([o.observable], j.prototype, "informationNeeded", void 0), (0, a.__decorate)([o.action], j.prototype, "reset", void 0);
+    var C = j
+})), r.register("lvpm8", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return y
+    }));
+    var a = r("kHqmx"),
+        o = r("4MuSt");
+    const i = {
+            currentStage: r("9ZLc2").default.email,
+            emailSignInBlocked: !1,
+            creatingAccount: !1,
+            loggingIn: !1,
+            updatingAccountInformation: !1,
+            loginError: null,
+            redirectUri: "",
+            classJoiningId: "",
+            classJoiningName: "",
+            classJoiningTeacherName: ""
+        },
+        {
+            currentStage: s,
+            emailSignInBlocked: l,
+            creatingAccount: c,
+            loggingIn: u,
+            updatingAccountInformation: d,
+            loginError: f,
+            redirectUri: p,
+            classJoiningId: m,
+            classJoiningName: g,
+            classJoiningTeacherName: h
+        } = i;
+    class v {
+        constructor() {
+            this.currentStage = s, this.emailSignInBlocked = l, this.creatingAccount = c, this.loggingIn = u, this.updatingAccountInformation = d, this.loginError = f, this.redirectUri = p, this.classJoiningId = m, this.classJoiningName = g, this.classJoiningTeacherName = h, this.reset = () => {
+                Object.keys(i).forEach((e => this[e] = i[e]))
+            }, (0, o.makeObservable)(this)
+        }
+    }(0, a.__decorate)([o.observable], v.prototype, "currentStage", void 0), (0, a.__decorate)([o.observable], v.prototype, "emailSignInBlocked", void 0), (0, a.__decorate)([o.observable], v.prototype, "creatingAccount", void 0), (0, a.__decorate)([o.observable], v.prototype, "loggingIn", void 0), (0, a.__decorate)([o.observable], v.prototype, "updatingAccountInformation", void 0), (0, a.__decorate)([o.observable], v.prototype, "loginError", void 0), (0, a.__decorate)([o.observable], v.prototype, "redirectUri", void 0), (0, a.__decorate)([o.observable], v.prototype, "classJoiningId", void 0), (0, a.__decorate)([o.observable], v.prototype, "classJoiningName", void 0), (0, a.__decorate)([o.observable], v.prototype, "classJoiningTeacherName", void 0), (0, a.__decorate)([o.action], v.prototype, "reset", void 0);
+    var y = v
+})), r.register("9ZLc2", (function(t, r) {
+    let n;
+    var a;
+    e(t.exports, "default", (function() {
+        return o
+    })), (a = n || (n = {})).email = "email", a.password = "password", a.accountType = "accountType", a.studentSpecificInfo = "studentSpecificInfo", a.nameAndPassword = "nameAndPassword", a.school = "school", a.educatorSpecificInfo = "educatorSpecificInfo", a.nonSchoolSpecificInfo = "nonSchoolSpecificInfo", a.acceptPolicies = "acceptPolicies", a.verifyClass = "verifyClass";
+    var o = n
+})), r.register("7abSH", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return s
+    }));
+    var a = r("hxEiv");
+    r("fywoC");
+    var o = r("lpEVe"),
+        i = r("93yIm");
+    var s = (0, o.observer)((e => (0, a.jsx)(i.default, {
+        disabled: e.disabled,
+        size: e.size || "middle",
+        type: "primary",
+        onClick: e.onClick,
+        style: Object.assign({
+            width: "100%"
+        }, e.style),
+        loading: e.loading,
+        children: e.children
+    })))
+})), r.register("da8gK", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return i
+    }));
+    var a = r("hxEiv");
+    r("fywoC");
+    var o = r("bfV0l");
+    var i = e => e.error ? (0, a.jsx)(o.default, {
+        message: "Error",
+        style: e.style,
+        type: "error",
+        description: e.error && e.error.message && e.error.message.text ? e.error.message.text : "string" == typeof e.error ? e.error : "Unknown Error. Please try again.",
+        showIcon: !0
+    }) : null
+})), r.register("4eEdH", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return c
+    }));
+    var a = r("dnh3u"),
+        o = r("fywoC"),
+        i = r("ddWN5"),
+        s = r("dwKuN"),
+        l = function(e, t) {
+            return o.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
+                ref: t,
+                icon: i.default
+            }))
+        };
+    l.displayName = "DownloadOutlined";
+    var c = o.forwardRef(l)
+})), r.register("ddWN5", (function(t, r) {
+    e(t.exports, "default", (function() {
+        return n
+    }));
+    var n = {
+        icon: {
+            tag: "svg",
+            attrs: {
+                viewBox: "64 64 896 896",
+                focusable: "false"
+            },
+            children: [{
+                tag: "path",
+                attrs: {
+                    d: "M505.7 661a8 8 0 0012.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z"
+                }
+            }]
+        },
+        name: "download",
         theme: "outlined"
     }
 }));

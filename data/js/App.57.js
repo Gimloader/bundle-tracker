@@ -11,779 +11,359 @@ function t(e) {
     return e && e.__esModule ? e.default : e
 }
 var r = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-r.register("43ebL", (function(t, n) {
-    var i;
-    i = t.exports, Object.defineProperty(i, "__esModule", {
+r.register("3iku3", (function(t, n) {
+    var a;
+    a = t.exports, Object.defineProperty(a, "__esModule", {
         value: !0,
         configurable: !0
     }), e(t.exports, "default", (function() {
-        return d
+        return z
     }));
-    var o = r("hxEiv");
+    var i = r("divCp"),
+        o = r("hxEiv"),
+        s = r("fywoC"),
+        d = r("2FDaO"),
+        c = r("kpdXN"),
+        u = r("93yIm"),
+        l = r("fBuQJ"),
+        f = r("gHmyG"),
+        p = r("69SUA"),
+        m = r("lKmIF"),
+        g = r("bXIOg"),
+        h = r("kpEqP"),
+        v = r("iMOcM"),
+        x = r("cHCps");
+    let y, w, b, C, O = e => e;
+    const j = d.default.div(y || (y = O`
+  min-height: 100%;
+  background-color: ${0};
+`), m.default.Snow),
+        S = d.default.div(w || (w = O`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+`)),
+        M = d.default.h1(b || (b = O`
+  font-size: 80px;
+  margin-bottom: 0px;
+  font-weight: ${0};
+  margin-top: -10px;
+`), p.FontWeights.UltraBold),
+        k = d.default.h2(C || (C = O`
+  font-size: 23px;
+  margin-top: -14px;
+`));
+    class E extends s.Component {
+        componentDidMount() {
+            this.fetchPurchasedAndRedeemedGiftCards()
+        }
+        render() {
+            return (0, o.jsxs)(j, {
+                children: [(0, o.jsx)(x.default, {
+                    includeSpacer: !0
+                }), this.state.loading && !this.state.redeemingGiftCard && (0, o.jsx)("div", {
+                    className: "ant-modal-mask flex hc vc",
+                    style: {
+                        flex: 1,
+                        width: "100%"
+                    },
+                    children: (0, o.jsx)(f.default, {
+                        indicator: (0, o.jsx)(c.default, {
+                            style: {
+                                color: "white",
+                                fontSize: 40
+                            },
+                            spin: !0
+                        })
+                    })
+                }), (0, o.jsxs)(S, {
+                    children: [(0, o.jsx)("img", {
+                        className: "animated jackInTheBox",
+                        src: "/client/img/dashboard/gift.svg",
+                        style: {
+                            width: 140,
+                            marginTop: 40,
+                            height: 140
+                        }
+                    }), (0, o.jsx)(M, {
+                        children: "GiftKit"
+                    }), (0, o.jsx)(k, {
+                        children: "Have a Gimkit gift card? This is the place to redeem it!"
+                    }), (0, o.jsx)(u.default, {
+                        style: {
+                            width: 400,
+                            height: 55,
+                            marginTop: 20,
+                            marginBottom: 50
+                        },
+                        type: "primary",
+                        size: "large",
+                        onClick: this.showRedemptionModal,
+                        children: "Redeem Gift Card"
+                    }), (0, o.jsx)(g.default, {
+                        purchasedGiftCards: this.state.purchasedGiftCards,
+                        redeemedGiftCards: this.state.redeemedGiftCards
+                    }), (0, o.jsx)(h.default, {
+                        show: this.state.showingRedemptionModal,
+                        onHide: this.hideRedemptionModal,
+                        redeemGiftCard: this.redeemGiftCard,
+                        onCardCodeChange: this.onCardCodeChange,
+                        cardCode: this.state.cardCode,
+                        loading: this.state.loading
+                    })]
+                })]
+            })
+        }
+        constructor(...e) {
+            super(...e), (0, i.default)(this, "state", {
+                cardValue: 0,
+                cardCode: "",
+                purchasedGiftCards: [],
+                redeemedGiftCards: [],
+                showingRedemptionModal: !1,
+                loading: !0,
+                redeemingGiftCard: !1
+            }), (0, i.default)(this, "fetchPurchasedAndRedeemedGiftCards", (() => {
+                (0, v.request)({
+                    url: "/api/gift-cards/fetch",
+                    success: e => {
+                        this.setState({
+                            purchasedGiftCards: e.purchased,
+                            redeemedGiftCards: e.redeemed
+                        })
+                    },
+                    both: () => this.setState({
+                        loading: !1
+                    })
+                })
+            })), (0, i.default)(this, "redeemGiftCard", (() => {
+                this.setState({
+                    loading: !0,
+                    redeemingGiftCard: !0
+                }), (0, v.request)({
+                    url: "/api/gift-cards/redeem",
+                    data: {
+                        code: this.state.cardCode
+                    },
+                    success: e => {
+                        l.default.success({
+                            title: "Success!",
+                            content: `Gift card redeemed! ${(0,v.getDollar)(e.value/100)} has been added to your account balance.`
+                        }), this.hideRedemptionModal(), this.fetchPurchasedAndRedeemedGiftCards(), this.setState({
+                            cardCode: ""
+                        })
+                    },
+                    error: e => {
+                        const t = e && e.message && e.message.text;
+                        let r = "An error occured while redeeming your gift card. Please try again.";
+                        t && (t.includes("redeemed") ? r = "This gift card has already been redeemed" : t.includes("invalid") && (r = "This gift card code is invalid")), l.default.error({
+                            content: r
+                        })
+                    },
+                    both: () => {
+                        this.setState({
+                            loading: !1,
+                            redeemingGiftCard: !1
+                        })
+                    }
+                })
+            })), (0, i.default)(this, "showRedemptionModal", (() => {
+                this.setState({
+                    showingRedemptionModal: !0
+                })
+            })), (0, i.default)(this, "hideRedemptionModal", (() => {
+                this.setState({
+                    showingRedemptionModal: !1
+                })
+            })), (0, i.default)(this, "onCardCodeChange", (e => this.setState({
+                cardCode: e.target.value
+            })))
+        }
+    }
+    var z = E
+})), r.register("bXIOg", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return u
+    }));
+    var a = r("hxEiv");
     r("fywoC");
-    var a = r("iMOcM"),
-        s = r("jPgIz"),
-        c = r("3BiSM"),
-        l = r("fC6cp"),
-        u = r("cHCps");
-    var d = () => (0, o.jsxs)(s.LegalContainer, {
-        children: [(0, o.jsx)(a.Title, {
-            title: "Terms of Service"
-        }), (0, o.jsx)(u.default, {
-            includeSpacer: !0
-        }), (0, o.jsxs)(s.LegalContent, {
-            children: [(0, o.jsx)(c.default, {}), (0, o.jsx)(l.default, {}), (0, o.jsx)("h2", {
-                id: "-overview-",
-                children: (0, o.jsx)("strong", {
-                    children: "Overview"
-                })
-            }), (0, o.jsx)("p", {
-                children: "Welcome to the Gimkit, Inc (“Gimkit,” “Our,” “We,” “Us”) Terms of Service (the “Terms”). Our Terms of Service have been created to ensure Gimkit will be a safe, productive, fun environment for educators and students to teach and learn."
-            }), (0, o.jsx)("p", {
-                children: "Please read these Terms carefully as they govern your use of our website www.gimkit.com (the “Site”) and the services and products available at or through the website."
-            }), (0, o.jsxs)("p", {
-                children: ["If you have any questions, you can contact us at", " ", (0, o.jsx)("a", {
-                    target: "_blank",
-                    href: "mailto:hello@gimkit.com",
-                    children: "hello@gimkit.com"
-                }), ". To make these Terms easier to read, the Site and our products and services are collectively called the “Services.”"]
-            }), (0, o.jsx)("h2", {
-                id: "-agreement-to-terms-",
-                children: (0, o.jsx)("strong", {
-                    children: "Agreement to Terms"
-                })
-            }), (0, o.jsx)("p", {
-                children: "By accessing or using our Services, you agree to be bound by these Terms. If you do not agree to these Terms, don’t use the Services."
-            }), (0, o.jsx)("h2", {
-                id: "-changes-to-terms-or-services-",
-                children: (0, o.jsx)("strong", {
-                    children: "Changes to Terms or Services"
-                })
-            }), (0, o.jsx)("p", {
-                children: "We may modify the Terms and our Services at any time, in our sole discretion. If we do so, we may let you know by email and by posting a notice on the Site. It is important that you review the Terms whenever we modify them because continuing to use the Services after we have posted modified Terms on the Site indicates to us that you agree to be bound by the modified Terms. If you don’t agree to be bound by the modified Terms, please discontinue use of the Services immediately. Because our Services are evolving over time we may change or discontinue all or any part of the Services at any time, and without notice to you, at our sole discretion."
-            }), (0, o.jsx)("h2", {
-                id: "your-privacy",
-                children: (0, o.jsx)("strong", {
-                    children: "Your Privacy"
-                })
-            }), (0, o.jsxs)("p", {
-                children: ["Your privacy and that of your Students is important to us. We do not use personal information to market or advertise to you or Students, and we do not sell User personal data. We do use your information for certain stated purposes, such as providing and improving the Service and communicating with Educators about Gimkit features and events.", " "]
-            }), (0, o.jsxs)("p", {
-                children: ["Our full Privacy Policy is incorporated in these Terms, and is available at", " ", (0, o.jsx)("a", {
-                    target: "_blank",
-                    href: "https://www.gimkit.com/privacy",
-                    children: "https://www.gimkit.com/privacy"
-                }), ". Please read our Privacy Policy, as it describes what information we collect from you, how we use that information, and the legal bases we have to process your information."]
-            }), (0, o.jsx)("h2", {
-                id: "-creating-an-account-",
-                children: (0, o.jsx)("strong", {
-                    children: "Creating an Account"
-                })
-            }), (0, o.jsx)("h3", {
-                id: "-educator-accounts-",
-                children: (0, o.jsx)("strong", {
-                    children: "Educator Accounts"
-                })
-            }), (0, o.jsx)("p", {
-                children: "If you are a User (who is not a Student), you also represent that you are at least 18 years old and have the legal capacity to accept these Terms. If you are not 18 or older, not a Student, or do not have parental consent to access the Service, you may not use the Service."
-            }), (0, o.jsx)("p", {
-                children: "You agree that we may provide notice to you of updated terms by posting them on the Service. We may also email updated terms to your account email address. Use or continued use of our Service following notice of such updated terms indicates your consent to be bound by them."
-            }), (0, o.jsxs)("h3", {
-                id: "educator-s-associated-with-schools-",
-                children: ["Educator", (0, o.jsx)("strong", {
-                    children: "s Associated with Schools"
-                })]
-            }), (0, o.jsx)("p", {
-                children: "By nature of their role, Educators associated with Schools have additional responsibilities to the Students that they represent. In using the Service, such Educators:"
-            }), (0, o.jsxs)("p", {
-                children: [(0, o.jsx)("strong", {
-                    children: "(a)"
-                }), " Must comply with our", " ", (0, o.jsx)("strong", {
-                    children: (0, o.jsx)("a", {
-                        target: "_blank",
-                        href: "https://www.gimkit.com/privacy",
-                        children: "Privacy Policy"
-                    })
-                }), "."]
-            }), (0, o.jsxs)("p", {
-                children: [(0, o.jsx)("strong", {
-                    children: "(b)"
-                }), ' Represent and warrant that they have: (i) the authority to consent to our collection and use of personal information from their Students; (ii) obtained any required parental consent, including if required verifiable parental consent under the Children’s Online Privacy Protection Act ("COPPA"); (iii) not received any revocation of parental consent; (iv) filed evidence of parental consent with their School administrator before using the Service; and (v) will only use the personal information provided by or otherwise collected from a Student when using the Service in accordance with the purposes for which the Student joined an Educator Class. The Educator may act as the parent’s agent and for purposes of giving consent by the parent to us for the collection and use of Student information for children below the minimum age (e.g. the minimum age for COPPA is under age 13). By enrolling a Student or helping the Student use the Service, the Educator provides such consent to us and agrees that the Student’s online activities are subject to these terms.']
-            }), (0, o.jsxs)("p", {
-                children: [(0, o.jsx)("strong", {
-                    children: "(c)"
-                }), ' Must ensure their Classes are compliant with all applicable laws related to disclosure of Student information and regulations, including The Family Educational Rights and Privacy Act ("FERPA"); and acquired FERPA-compliant disclosure consents from the parents of children under 18, or from the Students aged 18 and older; and grant us a nonexclusive license to view, download, reproduce, modify, create derivative works of, distribute, and display any information provided by or collected from a Student solely for the purposes discussed in these Terms. Student information is the property of and under the control of the Educator. The Classes containing Student content cannot be posted publicly by Educators. Accordingly, Educators must ensure they have proper consent before sharing any Student information with third parties. If Educators invite unaffiliated guests (e.g., classroom guests or co-teachers) to participate on their Classes, they are solely responsible for (a) obtaining parental consent for sharing Student information with any guests. Gimkit has no responsibility for Educator or guest activity.']
-            }), (0, o.jsx)("h3", {
-                id: "-additional-information-for-account-creation-",
-                children: (0, o.jsx)("strong", {
-                    children: "Additional Information for Account Creation"
-                })
-            }), (0, o.jsx)("p", {
-                children: "Your Account should be yours – don’t use the Services under the name of another person with the intent to impersonate that person, or use a username that is subject to the rights of another person without appropriate authorization. You must be a human to use the Services and an automated account is not allowed. This policy also applies beyond Account creation to the general use of the Services. “Robot” (or automatic) activity is not allowed. Keep it real, people."
-            }), (0, o.jsx)("p", {
-                children: "We reserve the right to suspend or terminate your Account if any information provided during the registration process or thereafter proves to be inaccurate, false, or misleading, or to reclaim any Account that you create through the Services that violates our Terms. You are responsible for maintaining the confidentiality of your password and Account and agree to notify us if your password is lost, stolen, or disclosed to an unauthorized third party, or otherwise may have been compromised. You are responsible for activities that occur under your Account."
-            }), (0, o.jsx)("h2", {
-                id: "-feedback-",
-                children: (0, o.jsx)("strong", {
-                    children: "Feedback"
-                })
-            }), (0, o.jsxs)("p", {
-                children: ["We welcome feedback, comments, and suggestions for improvements to the Services. You can submit feedback anytime by emailing us at", " ", (0, o.jsx)("a", {
-                    target: "_blank",
-                    href: "mailto:hello@gimkit.com",
-                    children: "hello@gimkit.com"
-                }), ". We also have a feedback center for product ideas and suggestions", " ", (0, o.jsx)("strong", {
-                    children: (0, o.jsx)("a", {
-                        target: "_blank",
-                        href: "https://gimkit.nolt.io/",
-                        children: "here"
-                    })
-                }), ".", " "]
-            }), (0, o.jsx)("p", {
-                children: "You grant to us a non-exclusive, worldwide, perpetual, irrevocable, fully-paid, royalty-free, sub-licensable, and transferable license under any and all intellectual property rights that you own or control to use, copy, modify, create derivative works based upon, and otherwise exploit the feedback for any purpose."
-            }), (0, o.jsx)("h2", {
-                id: "-member-content-",
-                children: (0, o.jsx)("strong", {
-                    children: "Member Content"
-                })
-            }), (0, o.jsx)("p", {
-                children: "For purposes of these Terms:"
-            }), (0, o.jsxs)("p", {
-                children: ["(i) “", (0, o.jsx)("strong", {
-                    children: "Content"
-                }), "” means text, graphics, images, music, software, audio, video, works of authorship of any kind, and information or other materials that are posted, generated, provided, or otherwise made available through the Services; and (ii) any Content that Members (including you) provide to be made available through the Services."]
-            }), (0, o.jsx)("p", {
-                children: "You are responsible for the Content that you post to the Services, including its legality, reliability, and appropriateness. By posting Content to the Services, you grant us a non-exclusive, transferable, sub-licensable, worldwide, royalty-free right and license to use, modify, publicly perform, publicly display, reproduce, and distribute such Content on and through the Services. You agree that this license includes the right for us to make such Content available to other Members of the Services, who may also use such Content subject to these Terms."
-            }), (0, o.jsx)("p", {
-                children: "You represent and warrant that: (i) the Content is yours (you own it) or you have the right to use it and grant us the rights and license as provided in these Terms, and (ii) the posting of the Content on or through the Services does not violate the privacy rights, publicity rights, copyrights, contract rights, or any other rights of any person."
-            }), (0, o.jsx)("p", {
-                children: "We do not claim any ownership rights in any Content that you make available through the Services and nothing in these Terms will be deemed to restrict any rights that you may have to use and exploit your own Content. However, you grant us a non-exclusive, non-transferable, non-sublicenseable, worldwide license to use any Content submitted by you in relation to the Services, including the promotion and advertisement of Services."
-            }), (0, o.jsx)("h2", {
-                id: "-member-and-user-conduct-",
-                children: (0, o.jsx)("strong", {
-                    children: "Member and User Conduct"
-                })
-            }), (0, o.jsx)("h3", {
-                id: "-while-using-gimkit-and-related-services-be-kind-respectful-and-honest-",
-                children: (0, o.jsx)("strong", {
-                    children: "While using Gimkit and related Services be kind, respectful, and honest"
-                })
-            }), (0, o.jsx)("p", {
-                children: "We invite you to participate in our community and help us make it special. As part of that invitation, we ask that you respect other Members and Users when posting Content and using Gimkit and the services it provides."
-            }), (0, o.jsx)("p", {
-                children: (0, o.jsx)("strong", {
-                    children: "We’re all here to make learning memorable and more effective. We ask that you treat other members of the Gimkit community the way you want to be treated. We have zero-tolerance for bullying, hate speech, hurtful words or behavior, and exclusion of any kind."
-                })
-            }), (0, o.jsxs)("p", {
-                children: ["By using Gimkit and our Services you Agree ", (0, o.jsx)("strong", {
-                    children: "NOT"
-                }), " to:"]
-            }), (0, o.jsxs)("ul", {
-                children: [(0, o.jsx)("li", {
-                    children: "use language or transmit content that may be considered offensive or profane to other Members, Users, or game participants. This includes profanity and offensive images, or other media containing obscene, hurtful, demeaning, sexually explicit, or excessively violent content."
-                }), (0, o.jsx)("li", {
-                    children: "harass or threaten other Members or Users. Harassing behavior and language includes insults, ethnic or homophobic slurs, defamatory statements, invasive statements that may infringe on a Member’s privacy, or the transmission or sharing of any content that may cause another Member or user to experience ridicule, threat, or discomfort."
-                }), (0, o.jsx)("li", {
-                    children: "submit material that violates a third party’s proprietary rights, including privacy and publicity rights, or that otherwise violates any applicable law;"
-                }), (0, o.jsx)("li", {
-                    children: "publish falsehoods or misrepresentations that could damage us, our Members, or any third party;"
-                }), (0, o.jsx)("li", {
-                    children: "publish any private information of someone (like their address or phone number) without their permission;"
-                }), (0, o.jsx)("li", {
-                    children: "submit material that is unlawful, obscene, defamatory, libelous, threatening, pornographic, harassing, hateful, racially or ethnically offensive, or encourages conduct that would be considered a criminal offense, give rise to civil liability, violate any law, or is otherwise inappropriate;"
-                }), (0, o.jsx)("li", {
-                    children: "post advertisements;"
-                }), (0, o.jsx)("li", {
-                    children: "impersonate another person or represent yourself as affiliated with us, our staff, or other industry professionals;"
-                }), (0, o.jsx)("li", {
-                    children: "solicit a User or Member’s password or other Account information; or"
-                }), (0, o.jsx)("li", {
-                    children: "harvest User or Member names, addresses, or email addresses for any purpose."
-                })]
-            }), (0, o.jsx)("p", {
-                children: "This list is an example and is not intended to be complete or exhaustive. We don’t have an obligation to monitor your access to, or use of, the Services, but we reserve the right to do so for the purpose of operating the Services, to ensure your compliance with these Terms, or to comply with applicable law or the order or requirement of a court, administrative agency, or another governmental body. We reserve the right, at any time and without prior notice, to remove or disable access to your Account or any Content that we consider, in our sole discretion, to be in violation of these Terms or otherwise harmful to our community or the Services."
-            }), (0, o.jsx)("p", {
-                children: "Gimkit has a flagging process for content that is inaccurate, inappropriate, offensive, hurtful, or in violation of these Terms of Service. When a community member flags a Kit, they are asked a series of questions to identify why they have flagged it. When they have submitted their flag, we get a notification and can review the flagged Kit. Upon completing a review, Gimkit will take one of three actions:"
-            }), (0, o.jsxs)("ol", {
-                children: [(0, o.jsx)("li", {
-                    children: "If we determine the Kit content is safe, we will send an email to the flagger notifying them that the Kit has been determined to be safe and no action will be taken."
-                }), (0, o.jsx)("li", {
-                    children: "If we determine there is incorrect information in the Kit, we will set the Kit to private and send an email to the owner of the Kit notifying them that their Kit has been flagged as inaccurate and can be made public once the error or inaccuracy has been updated. We will also send an email to the flagger notifying them that the Kit has been removed from the community until it can be verified as accurate."
-                }), (0, o.jsx)("li", {
-                    children: "If we determine the Kit contains content in violation of our Terms of Service, including but not limited to hurtful, inappropriate, or offensive language or images, we will delete the Kit. We will notify the creator of the Kit that their Kit has been deleted and why. We will also notify the flagger of our action taken."
-                })]
-            }), (0, o.jsx)("p", {
-                children: "The safety and health of our community are of the utmost importance to us and multiple deleted Kits for inappropriate, offensive, hurtful, or in violation of these Terms of Service may result in account suspension or deletion."
-            }), (0, o.jsx)("p", {
-                children: "Likewise, repeated inaccurate Kit flagging may result in account suspension or deletion."
-            }), (0, o.jsx)("p", {
-                children: "You can remove your Content by specifically deleting it. However, in certain instances, some of your Content (such as posts or comments you make) may not be completely removed, or may not be removable (audible content), and copies of your Content may continue to exist on the Services. We are not responsible or liable for the removal or deletion of (or the failure to remove or delete) any of the Content."
-            }), (0, o.jsx)("h3", {
-                id: "-account-sharing-",
-                children: (0, o.jsx)("strong", {
-                    children: "Account Sharing"
-                })
-            }), (0, o.jsx)("p", {
-                children: "Gimkit accounts are intended for individual use."
-            }), (0, o.jsx)("p", {
-                children: "Our community is built on the content created by Gimkit Members and Users and is made healthier and more vibrant by the people involved in it and the Kits they create. As such, we believe Gimkit will be a safer, more authentic community if the User accounts within it are owned and operated by individuals only and not shared."
-            }), (0, o.jsx)("p", {
-                children: "By using the Service you are agreeing that you will be the sole owner and user of your Gimkit account."
-            }), (0, o.jsx)("h3", {
-                id: "-integrity-of-the-game-and-community-",
-                children: (0, o.jsx)("strong", {
-                    children: "Integrity of the Game and Community"
-                })
-            }), (0, o.jsx)("p", {
-                children: "Gimkit is fun and engaging because it is built on a game that takes strategy and knowledge to win. The Gimkit community is here to have fun learning and the integrity of the game is central to that core element of the community."
-            }), (0, o.jsx)("p", {
-                children: "Cheating, hacking, and other behaviors intended to disrupt the game or gameplay will not be tolerated. All behaviors, including but not limited cheating, using bots, and hacking, may result in suspension or account termination."
-            }), (0, o.jsx)("h2", {
-                id: "-our-content-",
-                children: (0, o.jsx)("strong", {
-                    children: "Our Content"
-                })
-            }), (0, o.jsx)("p", {
-                children: "Subject to your compliance with these Terms, We grant you a limited, non-exclusive, non-transferable, non-sub licensable license to access and view our content (“Our Content”) solely in connection with your permitted use of the Services. For the purposes of these Terms, Our Content shall include all text, graphics, images, site and screen layouts, arrangements and themes, music, software, audio, video, works of authorship by us or our affiliates of any kind, and information or other materials that are posted or generated by us or our affiliates."
-            }), (0, o.jsx)("p", {
-                children: "You have the right to view and access Our Content. However, you may not copy, borrow, modify, or otherwise reproduce, and must immediately cease using, copying, borrowing, modifying, or otherwise reproducing any site and screen layouts, arrangements and themes provided through this Service. At no time is any Member permitted to: (i) transfer, sublicense, sell, lease, lend, rent, or otherwise distribute Our Content or the Services to a third party; (ii) decompile, reverse-engineer, disassemble, or create derivative works of the Services or any Our Content; or (iii) use the Services or Our Content in any unlawful manner, for any unlawful purpose, or in any manner inconsistent with these Terms."
-            }), (0, o.jsx)("h2", {
-                id: "-intellectual-property-",
-                children: (0, o.jsx)("strong", {
-                    children: "Intellectual Property"
-                })
-            }), (0, o.jsx)("p", {
-                children: "The Services contain material that may be protected by United States and international copyright, trademark, and other proprietary information, including, but not limited to, audio, video, graphic, photographic and text information, and all Our Content. We, and any of our licensors, exclusively own all right, title and interest in, and to the Services and Our Content, including all associated intellectual property rights. You acknowledge that the Services and Our Content are protected by copyright, trademark, and other laws of the United States and foreign countries. You agree not to remove, alter, or obscure any copyright, trademark, service mark, or other proprietary rights or notices incorporated in or accompanying the Services and Our Content. Further, you may not modify, distribute, publish, transmit, publicly display, publicly perform, participate in the transfer or sale, create derivative works of, or in any way exploit any of the Our Content, in whole or in part. Any violation of these restrictions may result in intellectual property infringement that may subject you to civil and/or criminal penalties. You will be solely liable for any damage resulting from any infringement of copyrights, trademarks, proprietary rights or any other harm resulting from a submission of information protected by intellectual property rights in a third party, if such submission is made without the express permission of the intellectual property rights holder."
-            }), (0, o.jsx)("h2", {
-                id: "-dmca-copyright-policy-",
-                children: (0, o.jsx)("strong", {
-                    children: "DMCA/Copyright Policy"
-                })
-            }), (0, o.jsx)("p", {
-                children: "We respect copyright law and expects its visitors, Users, and Members to do the same. It is our policy to terminate in appropriate circumstances the Accounts of Users and Members who repeatedly infringe the rights of copyright holders."
-            }), (0, o.jsxs)("p", {
-                children: ['The Digital Millennium Copyright Act of 1998 (the "DMCA") provides recourse for copyright owners who believe that material appearing on the Internet infringes their rights under U.S. copyright law. If you believe in good faith that Content infringes your copyright, you (or your agent) may send us a notice requesting that the Content be removed or access to it blocked. Federal law requires that your notification include the following information: (i) a physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed; (ii) identification of the copyrighted work claimed to have been infringed or, if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site; (iii) identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled and information reasonably sufficient to permit us to locate the material; (iv) information reasonably sufficient to permit us to contact you, such as an address, telephone number, and, if available, an electronic mail; (v) a statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and (vi) a statement that the information in the notification is accurate, and under penalty of perjury, that you are authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.', " ", (0, o.jsx)("strong", {
-                    children: "The notification must be sent to:"
-                })]
-            }), (0, o.jsx)("p", {
-                children: "415 1st Ave N, PO BOX 19833, Seattle, WA 98109"
-            }), (0, o.jsx)("p", {
-                children: "We provide the above contact information for purposes of the DMCA only and reserve the right to respond only to correspondence that is relevant to this purpose."
-            }), (0, o.jsx)("h2", {
-                id: "-links-to-third-party-websites-or-resources-",
-                children: (0, o.jsx)("strong", {
-                    children: "Links to Third-Party Websites or Resources"
-                })
-            }), (0, o.jsx)("p", {
-                children: "The Services may connect to or contain links to third-party websites (that are not affiliated) or resources. We are not responsible for the content, products or services on or available from those websites, resources or links displayed on such sites. You acknowledge sole responsibility for and assume all risk arising from your use of any third-party websites or resources."
-            }), (0, o.jsx)("h2", {
-                id: "-indemnity-",
-                children: (0, o.jsx)("strong", {
-                    children: "Indemnity"
-                })
-            }), (0, o.jsx)("p", {
-                children: "You agree to defend, indemnify and hold harmless us, or our officers, directors, employees and agents, from and against any and all claims, damages, obligations, losses, liabilities, costs, debts, or expenses (including but not limited to attorneys’ fees), to the extent allowed by applicable law, that arise from or are caused by: (i) your use of and access to the Services; (ii) your violation of these Terms; (iii) your violation of any third party right, including without limitation any copyright, property, moral or privacy right; or (iv) any claim that your Content caused damage to any third party. This section shall survive these Terms and your use and termination of the Services."
-            }), (0, o.jsx)("h2", {
-                id: "-termination-",
-                children: (0, o.jsx)("strong", {
-                    children: "Termination"
-                })
-            }), (0, o.jsx)("p", {
-                children: "We may terminate your access to and use of the Services and Account at our sole discretion, at any time and without notice to you. Upon any termination, discontinuation or cancellation of Services or your Account, all provisions of these Terms which by their nature should survive will survive, including, without limitation, ownership provisions, indemnification, warranty disclaimers, limitations of liability, and dispute resolution provisions."
-            }), (0, o.jsx)("h2", {
-                id: "-warranty-disclaimers-",
-                children: (0, o.jsx)("strong", {
-                    children: "Warranty Disclaimers"
-                })
-            }), (0, o.jsx)("p", {
-                children: "The Services and Content are provided “AS IS,” without warranty of any kind. Without limiting the foregoing, WE EXPLICITLY DISCLAIM ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE. We make no warranty that the Services will meet your requirements or be available on an uninterrupted, secure, or error-free basis. We make no warranty regarding the quality, accuracy, timeliness, truthfulness, completeness or reliability of any Content."
-            }), (0, o.jsx)("h2", {
-                id: "-limitation-of-liability-",
-                children: (0, o.jsx)("strong", {
-                    children: "Limitation of Liability"
-                })
-            }), (0, o.jsx)("p", {
-                children: "NEITHER WE NOR ANY OTHER party involved in creating, producing, or delivering the services or content will be liable for any incidental, special, exemplary or consequential damages, INCLUDING LOST PROFITS, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, MOBILE DAMAGE OR SYSTEM FAILURE OR THE COST OF SUBSTITUTE SERVICES arising out of or in connection with THESE TERMS or from the use OF or inability to use the ServiceS or CONTENT, whether based on warranty, contract, tort (including negligence), PRODUCT LIABILITY or any other legal theory, and whether or not WE have been informed of the possibility of such damage, EVEN IF A limited REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE."
-            }), (0, o.jsx)("p", {
-                children: "In no event will OUR total liability arising out of or in connection with THESE TERMS OR FROM THE USE OF OR INABILITY TO USE the Service or content EXCEED THE LESSER of the AMOUNTS YOU HAVE PAID TO US FOR USE OF THE SERVICES DURING THE TWELVE (12) MONTHS PRIOR TO THE CAUSE OF ACTION, OR ONE HUNDRED DOLLARS ($100), IF YOU HAVE NOT HAD ANY PAYMENT OBLIGATIONS TO US, AS APPLICABLE."
-            }), (0, o.jsx)("h2", {
-                id: "-dispute-resolution-",
-                children: (0, o.jsx)("strong", {
-                    children: "Dispute Resolution"
-                })
-            }), (0, o.jsx)("p", {
-                children: "We prefer to resolve things amicably when possible; therefore, you agree to the following dispute resolution policy in connection with any potential claims or disputes arising from your use of the Application. Start by notifying us of your dispute by sending a notice to the contact email address listed above."
-            }), (0, o.jsxs)("ol", {
-                children: [(0, o.jsxs)("li", {
-                    children: [(0, o.jsx)("strong", {
-                        children: "Informal"
-                    }), " ", (0, o.jsx)("strong", {
-                        children: "Negotiations"
-                    }), ": Parties to a dispute concerning the Terms, the Privacy Policy, or the use of the Services will attempt to informally negotiate a potential settlement or resolution to the dispute;"]
-                }), (0, o.jsxs)("li", {
-                    children: [(0, o.jsx)("strong", {
-                        children: "Arbitration"
-                    }), ": In the event that informal negotiations are unsuccessful, the parties agree to follow the arbitration procedures set forth by the American Arbitration Association (AAA) to resolve the dispute."]
-                }), (0, o.jsxs)("li", {
-                    children: [(0, o.jsx)("strong", {
-                        children: "Binding"
-                    }), " ", (0, o.jsx)("strong", {
-                        children: "Arbitration"
-                    }), ": If for any reason arbitration is unsuccessful or unavailable to the parties, parties agree to submit to binding arbitration in the jurisdiction of the State of Washington. Each of us is responsible for paying our own filing, administrative and arbitrator fees. Judgment on the arbitration award may be entered in any court having jurisdiction thereof."]
-                })]
-            }), (0, o.jsx)("h2", {
-                id: "-entire-agreement-",
-                children: (0, o.jsx)("strong", {
-                    children: "Entire Agreement"
-                })
-            }), (0, o.jsx)("p", {
-                children: "These Terms constitute the entire and exclusive understanding and agreement between us and you. These Terms supersede and replace any and all prior oral or written understandings or agreements between us. If for any reason a court of competent jurisdiction finds any provision of these Terms invalid or unenforceable, that provision will be enforced to the maximum extent permissible and the other provisions of these Terms will remain in full force and effect."
-            }), (0, o.jsx)("p", {
-                children: "You may not assign or transfer these Terms, by operation of law or otherwise, without our prior written consent. Any attempt by you to assign or transfer these Terms, without such consent, will be null and of no effect."
-            }), (0, o.jsx)("p", {
-                children: "Any notices or other communications provided by us under these Terms, including those regarding modifications to these Terms, will be given by us (i) via email; or (ii) by posting to the Services. For notices made by email, the date of receipt will be deemed the date on which such notice is transmitted."
-            }), (0, o.jsx)("p", {
-                children: "Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. The waiver of any such right or provision will be effective only if in writing and signed by a duly authorized representative of us. Except as expressly set forth in these Terms, the exercise by either party of any of its remedies under these Terms will be without prejudice to its other remedies under these Terms or otherwise."
-            }), (0, o.jsx)("h2", {
-                id: "-questions-contact-information-",
-                children: (0, o.jsx)("strong", {
-                    children: "Questions & contact information"
-                })
-            }), (0, o.jsxs)("p", {
-                children: ["If you have any questions regarding these Terms, please", " ", (0, o.jsx)("a", {
-                    target: "_blank",
-                    href: "mailto:hello@gimkit.com",
-                    children: "contact us"
-                }), "."]
-            })]
+    var i = r("2FDaO"),
+        o = r("fC6cp"),
+        s = r("7RYKv");
+    let d;
+    const c = i.default.div(d || (d = (e => e)`
+  width: 80%;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+`));
+    var u = e => (0, a.jsxs)(c, {
+        children: [(0, a.jsx)(s.default, {
+            title: "Gifts you've purchased",
+            gifts: e.purchasedGiftCards
+        }), e.redeemedGiftCards && 0 !== e.redeemedGiftCards.length && e.purchasedGiftCards && 0 !== e.purchasedGiftCards.length && (0, a.jsx)(o.default, {}), (0, a.jsx)(s.default, {
+            title: "Gifts you've redeemed",
+            gifts: e.redeemedGiftCards,
+            hidePurchaseDate: !0
         })]
     })
-})), r.register("jPgIz", (function(t, n) {
-    e(t.exports, "LegalContainer", (function() {
-        return u
-    })), e(t.exports, "LegalContent", (function() {
-        return d
-    }));
-    var i = r("2FDaO"),
-        o = r("lKmIF"),
-        a = r("69SUA");
-    let s, c, l = e => e;
-    const u = i.default.div.attrs({
-            className: "flex-column vc"
-        })(s || (s = l`
-  flex: 1;
-  background: ${0};
-`), o.default.Snow),
-        d = i.default.div(c || (c = l`
-  width: 90%;
-  max-width: 800px;
-  font-size: 18px;
-  color: ${0};
-  margin: 30px 0px;
-  h1,
-  h2,
-  h3 {
-    font-weight: ${0};
-  }
-`), o.default.Black, a.FontWeights.Bold)
-})), r.register("3BiSM", (function(t, n) {
+})), r.register("7RYKv", (function(t, n) {
     e(t.exports, "default", (function() {
-        return d
+        return p
+    }));
+    var a = r("hxEiv");
+    r("fywoC");
+    var i = r("2FDaO"),
+        o = r("69SUA"),
+        s = r("HwhgN");
+    let d, c, u = e => e;
+    const l = i.default.div(d || (d = u``)),
+        f = i.default.h2(c || (c = u`
+  text-align: center;
+  font-size: 36px;
+  font-family: ${0};
+  font-weight: ${0};
+`), o.Fonts.SFPro, o.FontWeights.UltraBold);
+    var p = e => e.gifts && 0 !== e.gifts.length ? (0, a.jsxs)(l, {
+        children: [(0, a.jsx)(f, {
+            children: e.title
+        }), e.gifts.map((t => (0, a.jsx)(s.default, {
+            value: t.value,
+            dateRedeemed: t.dateRedeemed,
+            code: t.dateRedeemed ? null : t.code,
+            purchaseDate: e.hidePurchaseDate ? null : t.createdAt
+        }, t.code)))]
+    }) : null
+})), r.register("HwhgN", (function(n, a) {
+    e(n.exports, "default", (function() {
+        return z
     }));
     var i = r("hxEiv");
     r("fywoC");
     var o = r("2FDaO"),
-        a = r("69SUA");
-    let s, c, l, u = e => e;
-    var d = () => (0, i.jsxs)(h, {
-        children: [(0, i.jsx)(f, {
-            children: "Gimkit Terms Of Service"
-        }), (0, i.jsx)(m, {
-            children: "Last updated April 4th, 2022."
-        })]
-    });
-    const h = o.default.div.attrs({
-            className: "flex-center flex-column maxWidth"
-        })(s || (s = u``)),
-        f = o.default.div(c || (c = u`
-  font-size: 48px;
+        s = r("7ECC6"),
+        d = r("cy4A6"),
+        c = r("dhxiD"),
+        u = r("69SUA"),
+        l = r("iMOcM"),
+        f = r("2KDwk");
+    let p, m, g, h, v, x, y, w = e => e;
+    const b = (0, o.default)(s.default)(p || (p = w`
+  display: flex;
+  padding: 20px;
+  margin-bottom: 14px !important;
+  border-radius: 6px;
+  color: black;
+  font-family: ${0};
+
+  .ant-card-body {
+    width: 100%;
+    display: flex;
+  }
+`), u.Fonts.SFPro),
+        C = o.default.h2(m || (m = w`
+  font-size: 27px;
   font-weight: ${0};
-`), a.FontWeights.UltraBold),
-        m = o.default.div(l || (l = u`
+  margin-bottom: 0px;
+`), u.FontWeights.UltraBold),
+        O = (0, o.default)(C)(g || (g = w`
   font-size: 22px;
-  color: rgba(0, 0, 0, 0.9);
-`))
-})), r.register("kuEJ4", (function(t, n) {
-    e(t.exports, "default", (function() {
-        return s
-    }));
-    var i = r("iI4DW"),
-        o = r("fywoC"),
-        a = r("4gMdJ");
+`)),
+        j = o.default.p(h || (h = w`
+  margin-bottom: 0px;
+`)),
+        S = o.default.div(v || (v = w`
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+`)),
+        M = o.default.div(x || (x = w`
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 50%;
+`)),
+        k = o.default.div(y || (y = w`
+  margin: 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 32px;
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
 
-    function s(e, t, r) {
-        return function(n) {
-            const {
-                prefixCls: s,
-                style: c
-            } = n, l = o.useRef(null), [u, d] = o.useState(0), [h, f] = o.useState(0), [m, p] = (0, i.default)(!1, {
-                value: n.open
-            }), {
-                getPrefixCls: y
-            } = o.useContext(a.ConfigContext), g = y(t || "select", s);
-            return o.useEffect((() => {
-                if (p(!0), "undefined" != typeof ResizeObserver) {
-                    const e = new ResizeObserver((e => {
-                            const t = e[0].target;
-                            d(t.offsetHeight + 8), f(t.offsetWidth)
-                        })),
-                        t = setInterval((() => {
-                            var n;
-                            const i = r ? `.${r(g)}` : `.${g}-dropdown`,
-                                o = null === (n = l.current) || void 0 === n ? void 0 : n.querySelector(i);
-                            o && (clearInterval(t), e.observe(o))
-                        }), 10);
-                    return () => {
-                        clearInterval(t), e.disconnect()
-                    }
-                }
-            }), []), o.createElement(a.default, {
-                theme: {
-                    token: {
-                        motionDurationFast: "0.01s",
-                        motionDurationMid: "0.01s",
-                        motionDurationSlow: "0.01s"
-                    }
-                }
-            }, o.createElement("div", {
-                ref: l,
-                style: {
-                    paddingBottom: u,
-                    position: "relative",
-                    width: "fit-content",
-                    minWidth: h
-                }
-            }, o.createElement(e, Object.assign({}, n, {
-                style: Object.assign(Object.assign({}, c), {
-                    margin: 0
-                }),
-                open: m,
-                visible: m,
-                getPopupContainer: () => l.current
-            }))))
-        }
-    }
-})), r.register("hacAX", (function(t, n) {
-    e(t.exports, "initMoveMotion", (function() {
-        return f
-    }));
-    var i = r("lt5sb"),
-        o = r("aWAHQ");
-    const a = new(0, i.Keyframes)("antMoveDownIn", {
-            "0%": {
-                transform: "translate3d(0, 100%, 0)",
-                transformOrigin: "0 0",
-                opacity: 0
-            },
-            "100%": {
-                transform: "translate3d(0, 0, 0)",
-                transformOrigin: "0 0",
-                opacity: 1
-            }
-        }),
-        s = new(0, i.Keyframes)("antMoveDownOut", {
-            "0%": {
-                transform: "translate3d(0, 0, 0)",
-                transformOrigin: "0 0",
-                opacity: 1
-            },
-            "100%": {
-                transform: "translate3d(0, 100%, 0)",
-                transformOrigin: "0 0",
-                opacity: 0
-            }
-        }),
-        c = new(0, i.Keyframes)("antMoveLeftIn", {
-            "0%": {
-                transform: "translate3d(-100%, 0, 0)",
-                transformOrigin: "0 0",
-                opacity: 0
-            },
-            "100%": {
-                transform: "translate3d(0, 0, 0)",
-                transformOrigin: "0 0",
-                opacity: 1
-            }
-        }),
-        l = new(0, i.Keyframes)("antMoveLeftOut", {
-            "0%": {
-                transform: "translate3d(0, 0, 0)",
-                transformOrigin: "0 0",
-                opacity: 1
-            },
-            "100%": {
-                transform: "translate3d(-100%, 0, 0)",
-                transformOrigin: "0 0",
-                opacity: 0
-            }
-        }),
-        u = new(0, i.Keyframes)("antMoveRightIn", {
-            "0%": {
-                transform: "translate3d(100%, 0, 0)",
-                transformOrigin: "0 0",
-                opacity: 0
-            },
-            "100%": {
-                transform: "translate3d(0, 0, 0)",
-                transformOrigin: "0 0",
-                opacity: 1
-            }
-        }),
-        d = new(0, i.Keyframes)("antMoveRightOut", {
-            "0%": {
-                transform: "translate3d(0, 0, 0)",
-                transformOrigin: "0 0",
-                opacity: 1
-            },
-            "100%": {
-                transform: "translate3d(100%, 0, 0)",
-                transformOrigin: "0 0",
-                opacity: 0
-            }
-        }),
-        h = {
-            "move-up": {
-                inKeyframes: new(0, i.Keyframes)("antMoveUpIn", {
-                    "0%": {
-                        transform: "translate3d(0, -100%, 0)",
-                        transformOrigin: "0 0",
-                        opacity: 0
-                    },
-                    "100%": {
-                        transform: "translate3d(0, 0, 0)",
-                        transformOrigin: "0 0",
-                        opacity: 1
-                    }
-                }),
-                outKeyframes: new(0, i.Keyframes)("antMoveUpOut", {
-                    "0%": {
-                        transform: "translate3d(0, 0, 0)",
-                        transformOrigin: "0 0",
-                        opacity: 1
-                    },
-                    "100%": {
-                        transform: "translate3d(0, -100%, 0)",
-                        transformOrigin: "0 0",
-                        opacity: 0
-                    }
-                })
-            },
-            "move-down": {
-                inKeyframes: a,
-                outKeyframes: s
-            },
-            "move-left": {
-                inKeyframes: c,
-                outKeyframes: l
-            },
-            "move-right": {
-                inKeyframes: u,
-                outKeyframes: d
-            }
-        },
-        f = (e, t) => {
-            const {
-                antCls: r
-            } = e, n = `${r}-${t}`, {
-                inKeyframes: i,
-                outKeyframes: a
-            } = h[t];
-            return [(0, o.initMotion)(n, i, a, e.motionDurationMid), {
-                [`\n        ${n}-enter,\n        ${n}-appear\n      `]: {
-                    opacity: 0,
-                    animationTimingFunction: e.motionEaseOutCirc
+  &:hover {
+    cursor: pointer;
+  }
+`)),
+        E = e => e.replace(/(.{4})(.{4})(.{4})(.{4})(.{4})/, "$1-$2-$3-$4-$5");
+    var z = e => (0, i.jsxs)(b, {
+        children: [(0, i.jsxs)(S, {
+            children: [(0, i.jsx)(C, {
+                children: (0, f.centsToFormatedMoney)(e.value)
+            }), e.purchaseDate && (0, i.jsxs)(j, {
+                children: ["Purchased ", (0, l.timeSince)(e.purchaseDate), " "]
+            }), e.dateRedeemed ? (0, i.jsxs)(j, {
+                children: ["Redeemed ", (0, l.timeSince)(e.dateRedeemed), " "]
+            }) : (0, i.jsx)(j, {
+                children: "Not yet redeemed"
+            })]
+        }), e.code && (0, i.jsxs)(M, {
+            children: [(0, i.jsx)(O, {
+                children: "Gift Card Code:"
+            }), (0, i.jsx)(k, {
+                onClick: () => {
+                    return r = e.code, t(c)(E(r)), void d.default.success("Gift card copied to clipboard!");
+                    var r
                 },
-                [`${n}-leave`]: {
-                    animationTimingFunction: e.motionEaseInOutCirc
-                }
-            }]
-        }
-})), r.register("i5Qjx", (function(n, i) {
-    e(n.exports, "SpaceContext", (function() {
-        return m
-    }), (function(e) {
-        return m = e
-    })), e(n.exports, "default", (function() {
-        return g
-    }), (function(e) {
-        return g = e
-    }));
-    var o = r("fe1on"),
-        a = r("jyxW7"),
-        s = r("fywoC"),
-        c = r("4gMdJ"),
-        l = r("1eqVQ"),
-        u = r("7yXSw"),
-        d = r("c9Vcn"),
-        h = r("5gjI2"),
-        f = function(e, t) {
-            var r = {};
-            for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
-            if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-                var i = 0;
-                for (n = Object.getOwnPropertySymbols(e); i < n.length; i++) t.indexOf(n[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[i]) && (r[n[i]] = e[n[i]])
-            }
-            return r
-        };
-    const m = s.createContext({
-            latestIndex: 0,
-            horizontalSize: 0,
-            verticalSize: 0,
-            supportFlexGap: !1
-        }),
-        p = {
-            small: 8,
-            middle: 16,
-            large: 24
-        };
-    const y = e => {
-        const {
-            getPrefixCls: r,
-            space: n,
-            direction: i
-        } = s.useContext(c.ConfigContext), {
-            size: u = (null == n ? void 0 : n.size) || "small",
-            align: y,
-            className: g,
-            rootClassName: v,
-            children: b,
-            direction: w = "horizontal",
-            prefixCls: x,
-            split: j,
-            style: S,
-            wrap: O = !1
-        } = e, C = f(e, ["size", "align", "className", "rootClassName", "children", "direction", "prefixCls", "split", "style", "wrap"]), E = (0, l.default)(), [T, k] = s.useMemo((() => (Array.isArray(u) ? u : [u, u]).map((e => function(e) {
-            return "string" == typeof e ? p[e] : e || 0
-        }(e)))), [u]), A = (0, a.default)(b, {
-            keepEmpty: !0
-        }), I = void 0 === y && "horizontal" === w ? "center" : y, N = r("space", x), [M, R] = (0, h.default)(N), P = t(o)(N, R, `${N}-${w}`, {
-            [`${N}-rtl`]: "rtl" === i,
-            [`${N}-align-${I}`]: I
-        }, g, v), W = `${N}-item`, L = "rtl" === i ? "marginLeft" : "marginRight";
-        let U = 0;
-        const D = A.map(((e, t) => {
-                null != e && (U = t);
-                const r = e && e.key || `${W}-${t}`;
-                return s.createElement(d.default, {
-                    className: W,
-                    key: r,
-                    direction: w,
-                    index: t,
-                    marginDirection: L,
-                    split: j,
-                    wrap: O
-                }, e)
-            })),
-            z = s.useMemo((() => ({
-                horizontalSize: T,
-                verticalSize: k,
-                latestIndex: U,
-                supportFlexGap: E
-            })), [T, k, U, E]);
-        if (0 === A.length) return null;
-        const F = {};
-        return O && (F.flexWrap = "wrap", E || (F.marginBottom = -k)), E && (F.columnGap = T, F.rowGap = k), M(s.createElement("div", Object.assign({
-            className: P,
-            style: Object.assign(Object.assign({}, F), S)
-        }, C), s.createElement(m.Provider, {
-            value: z
-        }, D)))
-    };
-    y.Compact = u.default;
-    var g = y
-})), r.register("1eqVQ", (function(t, n) {
-    e(t.exports, "default", (function() {
-        return a
-    }));
-    var i = r("fywoC"),
-        o = r("azMeL"),
-        a = () => {
-            const [e, t] = i.useState(!1);
-            return i.useEffect((() => {
-                t((0, o.detectFlexGapSupported)())
-            }), []), e
-        }
-})), r.register("c9Vcn", (function(t, n) {
-    e(t.exports, "default", (function() {
-        return a
-    }));
-    var i = r("fywoC"),
-        o = r("i5Qjx");
-
-    function a(e) {
-        let {
-            className: t,
-            direction: r,
-            index: n,
-            marginDirection: a,
-            children: s,
-            split: c,
-            wrap: l
-        } = e;
-        const {
-            horizontalSize: u,
-            verticalSize: d,
-            latestIndex: h,
-            supportFlexGap: f
-        } = i.useContext(o.SpaceContext);
-        let m = {};
-        return f || ("vertical" === r ? n < h && (m = {
-            marginBottom: u / (c ? 2 : 1)
-        }) : m = Object.assign(Object.assign({}, n < h && {
-            [a]: u / (c ? 2 : 1)
-        }), l && {
-            paddingBottom: d
-        })), null == s ? null : i.createElement(i.Fragment, null, i.createElement("div", {
-            className: t,
-            style: m
-        }, s), n < h && c && i.createElement("span", {
-            className: `${t}-split`,
-            style: m
-        }, c))
-    }
+                children: E(e.code)
+            })]
+        })]
+    })
 })), r.register("dhxiD", (function(e, t) {
     var n = r("1fK2g"),
-        i = {
+        a = {
             "text/plain": "Text",
             "text/html": "Url",
             default: "Text"
         };
     e.exports = function(e, t) {
-        var r, o, a, s, c, l, u = !1;
+        var r, i, o, s, d, c, u = !1;
         t || (t = {}), r = t.debug || !1;
         try {
-            if (a = n(), s = document.createRange(), c = document.getSelection(), (l = document.createElement("span")).textContent = e, l.ariaHidden = "true", l.style.all = "unset", l.style.position = "fixed", l.style.top = 0, l.style.clip = "rect(0, 0, 0, 0)", l.style.whiteSpace = "pre", l.style.webkitUserSelect = "text", l.style.MozUserSelect = "text", l.style.msUserSelect = "text", l.style.userSelect = "text", l.addEventListener("copy", (function(n) {
+            if (o = n(), s = document.createRange(), d = document.getSelection(), (c = document.createElement("span")).textContent = e, c.ariaHidden = "true", c.style.all = "unset", c.style.position = "fixed", c.style.top = 0, c.style.clip = "rect(0, 0, 0, 0)", c.style.whiteSpace = "pre", c.style.webkitUserSelect = "text", c.style.MozUserSelect = "text", c.style.msUserSelect = "text", c.style.userSelect = "text", c.addEventListener("copy", (function(n) {
                     if (n.stopPropagation(), t.format)
                         if (n.preventDefault(), void 0 === n.clipboardData) {
                             r && console.warn("unable to use e.clipboardData"), r && console.warn("trying IE specific stuff"), window.clipboardData.clearData();
-                            var o = i[t.format] || i.default;
-                            window.clipboardData.setData(o, e)
+                            var i = a[t.format] || a.default;
+                            window.clipboardData.setData(i, e)
                         } else n.clipboardData.clearData(), n.clipboardData.setData(t.format, e);
                     t.onCopy && (n.preventDefault(), t.onCopy(n.clipboardData))
-                })), document.body.appendChild(l), s.selectNodeContents(l), c.addRange(s), !document.execCommand("copy")) throw new Error("copy command was unsuccessful");
+                })), document.body.appendChild(c), s.selectNodeContents(c), d.addRange(s), !document.execCommand("copy")) throw new Error("copy command was unsuccessful");
             u = !0
         } catch (n) {
             r && console.error("unable to copy using execCommand: ", n), r && console.warn("trying IE specific stuff");
             try {
                 window.clipboardData.setData(t.format || "text", e), t.onCopy && t.onCopy(window.clipboardData), u = !0
             } catch (n) {
-                r && console.error("unable to copy using clipboardData: ", n), r && console.error("falling back to prompt"), o = function(e) {
+                r && console.error("unable to copy using clipboardData: ", n), r && console.error("falling back to prompt"), i = function(e) {
                     var t = (/mac os x/i.test(navigator.userAgent) ? "⌘" : "Ctrl") + "+C";
                     return e.replace(/#{\s*key\s*}/g, t)
-                }("message" in t ? t.message : "Copy to clipboard: #{key}, Enter"), window.prompt(o, e)
+                }("message" in t ? t.message : "Copy to clipboard: #{key}, Enter"), window.prompt(i, e)
             }
         } finally {
-            c && ("function" == typeof c.removeRange ? c.removeRange(s) : c.removeAllRanges()), l && document.body.removeChild(l), a()
+            d && ("function" == typeof d.removeRange ? d.removeRange(s) : d.removeAllRanges()), c && document.body.removeChild(c), o()
         }
         return u
     }
@@ -807,6 +387,398 @@ r.register("43ebL", (function(t, n) {
                 })), t && t.focus()
             }
     }
+})), r.register("2KDwk", (function(t, r) {
+    e(t.exports, "centsToFormatedMoney", (function() {
+        return n
+    }));
+    const n = e => (e / 100).toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD"
+    })
+})), r.register("kpEqP", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return h
+    }));
+    var a = r("hxEiv");
+    r("fywoC");
+    var i = r("b9Zw0"),
+        o = r("fBuQJ"),
+        s = r("2FDaO"),
+        d = r("69SUA");
+    let c, u, l, f = e => e;
+    const p = (0, s.default)(o.default)(c || (c = f`
+  font-family: ${0};
+  color: black;
+`), d.Fonts.SFPro),
+        m = s.default.h2(u || (u = f`
+  font-weight: ${0};
+  font-size: 25px;
+  margin-bottom: -4px;
+`), d.FontWeights.UltraBold),
+        g = s.default.p(l || (l = f`
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+`));
+    var h = e => (0, a.jsxs)(p, {
+        visible: e.show,
+        onOk: e.redeemGiftCard,
+        onCancel: e.onHide,
+        okText: "Redeem",
+        okButtonProps: {
+            disabled: !e.cardCode,
+            loading: e.loading
+        },
+        closable: !0,
+        children: [(0, a.jsx)(m, {
+            children: "Redeem a gift card"
+        }), (0, a.jsx)(g, {
+            children: "Dashes not required"
+        }), (0, a.jsx)(i.default, {
+            onChange: e.onCardCodeChange,
+            value: e.cardCode,
+            size: "large",
+            placeholder: "Gift card code..."
+        })]
+    })
+})), r.register("kuEJ4", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return s
+    }));
+    var a = r("iI4DW"),
+        i = r("fywoC"),
+        o = r("4gMdJ");
+
+    function s(e, t, r) {
+        return function(n) {
+            const {
+                prefixCls: s,
+                style: d
+            } = n, c = i.useRef(null), [u, l] = i.useState(0), [f, p] = i.useState(0), [m, g] = (0, a.default)(!1, {
+                value: n.open
+            }), {
+                getPrefixCls: h
+            } = i.useContext(o.ConfigContext), v = h(t || "select", s);
+            return i.useEffect((() => {
+                if (g(!0), "undefined" != typeof ResizeObserver) {
+                    const e = new ResizeObserver((e => {
+                            const t = e[0].target;
+                            l(t.offsetHeight + 8), p(t.offsetWidth)
+                        })),
+                        t = setInterval((() => {
+                            var n;
+                            const a = r ? `.${r(v)}` : `.${v}-dropdown`,
+                                i = null === (n = c.current) || void 0 === n ? void 0 : n.querySelector(a);
+                            i && (clearInterval(t), e.observe(i))
+                        }), 10);
+                    return () => {
+                        clearInterval(t), e.disconnect()
+                    }
+                }
+            }), []), i.createElement(o.default, {
+                theme: {
+                    token: {
+                        motionDurationFast: "0.01s",
+                        motionDurationMid: "0.01s",
+                        motionDurationSlow: "0.01s"
+                    }
+                }
+            }, i.createElement("div", {
+                ref: c,
+                style: {
+                    paddingBottom: u,
+                    position: "relative",
+                    width: "fit-content",
+                    minWidth: f
+                }
+            }, i.createElement(e, Object.assign({}, n, {
+                style: Object.assign(Object.assign({}, d), {
+                    margin: 0
+                }),
+                open: m,
+                visible: m,
+                getPopupContainer: () => c.current
+            }))))
+        }
+    }
+})), r.register("hacAX", (function(t, n) {
+    e(t.exports, "initMoveMotion", (function() {
+        return p
+    }));
+    var a = r("lt5sb"),
+        i = r("aWAHQ");
+    const o = new(0, a.Keyframes)("antMoveDownIn", {
+            "0%": {
+                transform: "translate3d(0, 100%, 0)",
+                transformOrigin: "0 0",
+                opacity: 0
+            },
+            "100%": {
+                transform: "translate3d(0, 0, 0)",
+                transformOrigin: "0 0",
+                opacity: 1
+            }
+        }),
+        s = new(0, a.Keyframes)("antMoveDownOut", {
+            "0%": {
+                transform: "translate3d(0, 0, 0)",
+                transformOrigin: "0 0",
+                opacity: 1
+            },
+            "100%": {
+                transform: "translate3d(0, 100%, 0)",
+                transformOrigin: "0 0",
+                opacity: 0
+            }
+        }),
+        d = new(0, a.Keyframes)("antMoveLeftIn", {
+            "0%": {
+                transform: "translate3d(-100%, 0, 0)",
+                transformOrigin: "0 0",
+                opacity: 0
+            },
+            "100%": {
+                transform: "translate3d(0, 0, 0)",
+                transformOrigin: "0 0",
+                opacity: 1
+            }
+        }),
+        c = new(0, a.Keyframes)("antMoveLeftOut", {
+            "0%": {
+                transform: "translate3d(0, 0, 0)",
+                transformOrigin: "0 0",
+                opacity: 1
+            },
+            "100%": {
+                transform: "translate3d(-100%, 0, 0)",
+                transformOrigin: "0 0",
+                opacity: 0
+            }
+        }),
+        u = new(0, a.Keyframes)("antMoveRightIn", {
+            "0%": {
+                transform: "translate3d(100%, 0, 0)",
+                transformOrigin: "0 0",
+                opacity: 0
+            },
+            "100%": {
+                transform: "translate3d(0, 0, 0)",
+                transformOrigin: "0 0",
+                opacity: 1
+            }
+        }),
+        l = new(0, a.Keyframes)("antMoveRightOut", {
+            "0%": {
+                transform: "translate3d(0, 0, 0)",
+                transformOrigin: "0 0",
+                opacity: 1
+            },
+            "100%": {
+                transform: "translate3d(100%, 0, 0)",
+                transformOrigin: "0 0",
+                opacity: 0
+            }
+        }),
+        f = {
+            "move-up": {
+                inKeyframes: new(0, a.Keyframes)("antMoveUpIn", {
+                    "0%": {
+                        transform: "translate3d(0, -100%, 0)",
+                        transformOrigin: "0 0",
+                        opacity: 0
+                    },
+                    "100%": {
+                        transform: "translate3d(0, 0, 0)",
+                        transformOrigin: "0 0",
+                        opacity: 1
+                    }
+                }),
+                outKeyframes: new(0, a.Keyframes)("antMoveUpOut", {
+                    "0%": {
+                        transform: "translate3d(0, 0, 0)",
+                        transformOrigin: "0 0",
+                        opacity: 1
+                    },
+                    "100%": {
+                        transform: "translate3d(0, -100%, 0)",
+                        transformOrigin: "0 0",
+                        opacity: 0
+                    }
+                })
+            },
+            "move-down": {
+                inKeyframes: o,
+                outKeyframes: s
+            },
+            "move-left": {
+                inKeyframes: d,
+                outKeyframes: c
+            },
+            "move-right": {
+                inKeyframes: u,
+                outKeyframes: l
+            }
+        },
+        p = (e, t) => {
+            const {
+                antCls: r
+            } = e, n = `${r}-${t}`, {
+                inKeyframes: a,
+                outKeyframes: o
+            } = f[t];
+            return [(0, i.initMotion)(n, a, o, e.motionDurationMid), {
+                [`\n        ${n}-enter,\n        ${n}-appear\n      `]: {
+                    opacity: 0,
+                    animationTimingFunction: e.motionEaseOutCirc
+                },
+                [`${n}-leave`]: {
+                    animationTimingFunction: e.motionEaseInOutCirc
+                }
+            }]
+        }
+})), r.register("i5Qjx", (function(n, a) {
+    e(n.exports, "SpaceContext", (function() {
+        return m
+    }), (function(e) {
+        return m = e
+    })), e(n.exports, "default", (function() {
+        return v
+    }), (function(e) {
+        return v = e
+    }));
+    var i = r("fe1on"),
+        o = r("jyxW7"),
+        s = r("fywoC"),
+        d = r("4gMdJ"),
+        c = r("1eqVQ"),
+        u = r("7yXSw"),
+        l = r("c9Vcn"),
+        f = r("5gjI2"),
+        p = function(e, t) {
+            var r = {};
+            for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
+            if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+                var a = 0;
+                for (n = Object.getOwnPropertySymbols(e); a < n.length; a++) t.indexOf(n[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[a]) && (r[n[a]] = e[n[a]])
+            }
+            return r
+        };
+    const m = s.createContext({
+            latestIndex: 0,
+            horizontalSize: 0,
+            verticalSize: 0,
+            supportFlexGap: !1
+        }),
+        g = {
+            small: 8,
+            middle: 16,
+            large: 24
+        };
+    const h = e => {
+        const {
+            getPrefixCls: r,
+            space: n,
+            direction: a
+        } = s.useContext(d.ConfigContext), {
+            size: u = (null == n ? void 0 : n.size) || "small",
+            align: h,
+            className: v,
+            rootClassName: x,
+            children: y,
+            direction: w = "horizontal",
+            prefixCls: b,
+            split: C,
+            style: O,
+            wrap: j = !1
+        } = e, S = p(e, ["size", "align", "className", "rootClassName", "children", "direction", "prefixCls", "split", "style", "wrap"]), M = (0, c.default)(), [k, E] = s.useMemo((() => (Array.isArray(u) ? u : [u, u]).map((e => function(e) {
+            return "string" == typeof e ? g[e] : e || 0
+        }(e)))), [u]), z = (0, o.default)(y, {
+            keepEmpty: !0
+        }), R = void 0 === h && "horizontal" === w ? "center" : h, D = r("space", b), [G, N] = (0, f.default)(D), P = t(i)(D, N, `${D}-${w}`, {
+            [`${D}-rtl`]: "rtl" === a,
+            [`${D}-align-${R}`]: R
+        }, v, x), K = `${D}-item`, _ = "rtl" === a ? "marginLeft" : "marginRight";
+        let $ = 0;
+        const B = z.map(((e, t) => {
+                null != e && ($ = t);
+                const r = e && e.key || `${K}-${t}`;
+                return s.createElement(l.default, {
+                    className: K,
+                    key: r,
+                    direction: w,
+                    index: t,
+                    marginDirection: _,
+                    split: C,
+                    wrap: j
+                }, e)
+            })),
+            F = s.useMemo((() => ({
+                horizontalSize: k,
+                verticalSize: E,
+                latestIndex: $,
+                supportFlexGap: M
+            })), [k, E, $, M]);
+        if (0 === z.length) return null;
+        const W = {};
+        return j && (W.flexWrap = "wrap", M || (W.marginBottom = -E)), M && (W.columnGap = k, W.rowGap = E), G(s.createElement("div", Object.assign({
+            className: P,
+            style: Object.assign(Object.assign({}, W), O)
+        }, S), s.createElement(m.Provider, {
+            value: F
+        }, B)))
+    };
+    h.Compact = u.default;
+    var v = h
+})), r.register("1eqVQ", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return o
+    }));
+    var a = r("fywoC"),
+        i = r("azMeL"),
+        o = () => {
+            const [e, t] = a.useState(!1);
+            return a.useEffect((() => {
+                t((0, i.detectFlexGapSupported)())
+            }), []), e
+        }
+})), r.register("c9Vcn", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return o
+    }));
+    var a = r("fywoC"),
+        i = r("i5Qjx");
+
+    function o(e) {
+        let {
+            className: t,
+            direction: r,
+            index: n,
+            marginDirection: o,
+            children: s,
+            split: d,
+            wrap: c
+        } = e;
+        const {
+            horizontalSize: u,
+            verticalSize: l,
+            latestIndex: f,
+            supportFlexGap: p
+        } = a.useContext(i.SpaceContext);
+        let m = {};
+        return p || ("vertical" === r ? n < f && (m = {
+            marginBottom: u / (d ? 2 : 1)
+        }) : m = Object.assign(Object.assign({}, n < f && {
+            [o]: u / (d ? 2 : 1)
+        }), c && {
+            paddingBottom: l
+        })), null == s ? null : a.createElement(a.Fragment, null, a.createElement("div", {
+            className: t,
+            style: m
+        }, s), n < f && d && a.createElement("span", {
+            className: `${t}-split`,
+            style: m
+        }, d))
+    }
 })), r.register("6WS0O", (function(t, r) {
     e(t.exports, "default", (function() {
         return n
@@ -817,24 +789,24 @@ r.register("43ebL", (function(t, n) {
     }
 })), r.register("77qSl", (function(t, n) {
     e(t.exports, "useMediaMatch", (function() {
-        return o
+        return i
     }));
-    var i = r("fywoC");
+    var a = r("fywoC");
 
-    function o(e) {
+    function i(e) {
         if ("undefined" == typeof window) return console.warn("useMediaMatch cannot function as window is undefined."), !1;
-        var t = (0, i.useMemo)((function() {
+        var t = (0, a.useMemo)((function() {
                 return window.matchMedia(e)
             }), [e]),
-            r = (0, i.useState)((function() {
+            r = (0, a.useState)((function() {
                 return t.matches
             })),
             n = r[0],
-            o = r[1];
-        return (0, i.useEffect)((function() {
-            o(t.matches);
+            i = r[1];
+        return (0, a.useEffect)((function() {
+            i(t.matches);
             var e = function(e) {
-                return o(e.matches)
+                return i(e.matches)
             };
             return t.addEventListener ? (t.addEventListener("change", e), function() {
                 return t.removeEventListener("change", e)
@@ -854,12 +826,12 @@ r.register("43ebL", (function(t, n) {
         } : function(e, t, r, n) {
             void 0 === n && (n = r), e[n] = t[r]
         }),
-        i = e.exports && e.exports.__exportStar || function(e, t) {
+        a = e.exports && e.exports.__exportStar || function(e, t) {
             for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || n(t, e, r)
         };
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
-    }), i(r("coa3i"), e.exports), i(r("exKSe"), e.exports), i(r("4Nv4f"), e.exports)
+    }), a(r("coa3i"), e.exports), a(r("exKSe"), e.exports), a(r("4Nv4f"), e.exports)
 })), r.register("coa3i", (function(e, t) {
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
@@ -884,7 +856,7 @@ r.register("43ebL", (function(t, n) {
         } : function(e, t, r, n) {
             void 0 === n && (n = r), e[n] = t[r]
         }),
-        i = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
+        a = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
             Object.defineProperty(e, "default", {
                 enumerable: !0,
                 value: t
@@ -892,17 +864,17 @@ r.register("43ebL", (function(t, n) {
         } : function(e, t) {
             e.default = t
         }),
-        o = e.exports && e.exports.__importStar || function(e) {
+        i = e.exports && e.exports.__importStar || function(e) {
             if (e && e.__esModule) return e;
             var t = {};
             if (null != e)
                 for (var r in e) "default" !== r && Object.prototype.hasOwnProperty.call(e, r) && n(t, e, r);
-            return i(t, e), t
+            return a(t, e), t
         };
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.useWindowSize = void 0;
-    var a = o(r("fywoC"));
+    var o = i(r("fywoC"));
 
     function s() {
         return {
@@ -911,10 +883,10 @@ r.register("43ebL", (function(t, n) {
         }
     }
     e.exports.useWindowSize = function() {
-        var e = a.useState(s()),
+        var e = o.useState(s()),
             t = e[0],
             r = e[1];
-        return a.useLayoutEffect((function() {
+        return o.useLayoutEffect((function() {
             function e() {
                 r(s())
             }
@@ -928,11 +900,11 @@ r.register("43ebL", (function(t, n) {
     var n = e.exports && e.exports.__assign || function() {
             return n = Object.assign || function(e) {
                 for (var t, r = 1, n = arguments.length; r < n; r++)
-                    for (var i in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
+                    for (var a in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
                 return e
             }, n.apply(this, arguments)
         },
-        i = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, r, n) {
+        a = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, r, n) {
             void 0 === n && (n = r), Object.defineProperty(e, n, {
                 enumerable: !0,
                 get: function() {
@@ -942,7 +914,7 @@ r.register("43ebL", (function(t, n) {
         } : function(e, t, r, n) {
             void 0 === n && (n = r), e[n] = t[r]
         }),
-        o = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
+        i = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
             Object.defineProperty(e, "default", {
                 enumerable: !0,
                 value: t
@@ -950,17 +922,17 @@ r.register("43ebL", (function(t, n) {
         } : function(e, t) {
             e.default = t
         }),
-        a = e.exports && e.exports.__importStar || function(e) {
+        o = e.exports && e.exports.__importStar || function(e) {
             if (e && e.__esModule) return e;
             var t = {};
             if (null != e)
-                for (var r in e) "default" !== r && Object.prototype.hasOwnProperty.call(e, r) && i(t, e, r);
-            return o(t, e), t
+                for (var r in e) "default" !== r && Object.prototype.hasOwnProperty.call(e, r) && a(t, e, r);
+            return i(t, e), t
         };
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.useComponentSize = void 0;
-    var s = a(r("fywoC"));
+    var s = o(r("fywoC"));
     e.exports.useComponentSize = function() {
         var e = s.useState({
                 height: 0,
@@ -968,11 +940,11 @@ r.register("43ebL", (function(t, n) {
             }),
             t = e[0],
             r = e[1],
-            i = s.useRef(),
-            o = s.useCallback((function() {
-                if (i.current) {
-                    var e = i.current.offsetHeight,
-                        n = i.current.offsetWidth;
+            a = s.useRef(),
+            i = s.useCallback((function() {
+                if (a.current) {
+                    var e = a.current.offsetHeight,
+                        n = a.current.offsetWidth;
                     e === t.height && n === t.width || r({
                         height: e,
                         width: n
@@ -980,34 +952,34 @@ r.register("43ebL", (function(t, n) {
                 }
             }), [t.height, t.width]);
         return s.useLayoutEffect((function() {
-            if (i && i.current) {
-                var e = new ResizeObserver(o);
-                return e.observe(i.current),
+            if (a && a.current) {
+                var e = new ResizeObserver(i);
+                return e.observe(a.current),
                     function() {
                         return e.disconnect()
                     }
             }
-        }), [i, o]), n({
-            ref: i
+        }), [a, i]), n({
+            ref: a
         }, t)
     }
 })), r.register("hDWWf", (function(t, r) {
     let n;
-    var i;
+    var a;
     e(t.exports, "SiteHeaderTheme", (function() {
         return n
-    })), (i = n || (n = {})).light = "light", i.dark = "dark"
+    })), (a = n || (n = {})).light = "light", a.dark = "dark"
 })), r.register("hSz8d", (function(t, r) {
     let n;
-    var i;
+    var a;
     e(t.exports, "SiteHeaderAlpha", (function() {
         return n
-    })), (i = n || (n = {})).none = "none", i.standard = "standard", i.darker = "darker"
+    })), (a = n || (n = {})).none = "none", a.standard = "standard", a.darker = "darker"
 })), r.register("9Vz35", (function(t, n) {
     e(t.exports, "default", (function() {
-        return i
+        return a
     }));
-    var i = {
+    var a = {
         name: r("2Y5iQ").default.areaName,
         iconImage: "/client/img/header/rewards.svg"
     }
@@ -1026,20 +998,20 @@ r.register("43ebL", (function(t, n) {
     }
 })), r.register("dohZB", (function(t, n) {
     e(t.exports, "default", (function() {
-        return l
+        return c
     }));
-    var i = r("dnh3u"),
-        o = r("fywoC"),
-        a = r("bVHCc"),
+    var a = r("dnh3u"),
+        i = r("fywoC"),
+        o = r("bVHCc"),
         s = r("dwKuN"),
-        c = function(e, t) {
-            return o.createElement(s.default, (0, i.default)((0, i.default)({}, e), {}, {
+        d = function(e, t) {
+            return i.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
                 ref: t,
-                icon: a.default
+                icon: o.default
             }))
         };
-    c.displayName = "UsergroupAddOutlined";
-    var l = o.forwardRef(c)
+    d.displayName = "UsergroupAddOutlined";
+    var c = i.forwardRef(d)
 })), r.register("bVHCc", (function(t, r) {
     e(t.exports, "default", (function() {
         return n
@@ -1063,20 +1035,20 @@ r.register("43ebL", (function(t, n) {
     }
 })), r.register("kVS28", (function(t, n) {
     e(t.exports, "default", (function() {
-        return l
+        return c
     }));
-    var i = r("dnh3u"),
-        o = r("fywoC"),
-        a = r("4GmeK"),
+    var a = r("dnh3u"),
+        i = r("fywoC"),
+        o = r("4GmeK"),
         s = r("dwKuN"),
-        c = function(e, t) {
-            return o.createElement(s.default, (0, i.default)((0, i.default)({}, e), {}, {
+        d = function(e, t) {
+            return i.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
                 ref: t,
-                icon: a.default
+                icon: o.default
             }))
         };
-    c.displayName = "LogoutOutlined";
-    var l = o.forwardRef(c)
+    d.displayName = "LogoutOutlined";
+    var c = i.forwardRef(d)
 })), r.register("4GmeK", (function(t, r) {
     e(t.exports, "default", (function() {
         return n
@@ -1100,12 +1072,12 @@ r.register("43ebL", (function(t, n) {
     }
 })), r.register("kyvf1", (function(t, n) {
     e(t.exports, "default", (function() {
-        return a
+        return o
     }));
-    var i = r("hxEiv"),
-        o = r("beXRF");
+    var a = r("hxEiv"),
+        i = r("beXRF");
     r("fywoC");
-    var a = e => e.external || !e.to ? (0, i.jsx)("a", {
+    var o = e => e.external || !e.to ? (0, a.jsx)("a", {
         href: e.to,
         tabIndex: Number(e.tabIndex || "0"),
         onClick: e.onClick,
@@ -1116,7 +1088,7 @@ r.register("43ebL", (function(t, n) {
         target: e.target,
         style: e.style,
         children: e.children
-    }) : (0, i.jsx)(o.Link, {
+    }) : (0, a.jsx)(i.Link, {
         to: e.to,
         tabIndex: Number(e.tabIndex || "0"),
         onClick: e.onClick,
@@ -1127,26 +1099,26 @@ r.register("43ebL", (function(t, n) {
     })
 })), r.register("9kZfj", (function(t, n) {
     e(t.exports, "onlyOfferAnnualUpgrade", (function() {
-        return o
+        return i
     }));
-    var i = r("hrYih");
-    const o = () => "annual-only" === i.default.getFeatureFlag("annual-only-pro")
+    var a = r("hrYih");
+    const i = () => "annual-only" === a.default.getFeatureFlag("annual-only-pro")
 })), r.register("aYYSA", (function(t, n) {
     e(t.exports, "default", (function() {
-        return l
+        return c
     }));
-    var i = r("dnh3u"),
-        o = r("fywoC"),
-        a = r("5UEB4"),
+    var a = r("dnh3u"),
+        i = r("fywoC"),
+        o = r("5UEB4"),
         s = r("dwKuN"),
-        c = function(e, t) {
-            return o.createElement(s.default, (0, i.default)((0, i.default)({}, e), {}, {
+        d = function(e, t) {
+            return i.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
                 ref: t,
-                icon: a.default
+                icon: o.default
             }))
         };
-    c.displayName = "StarOutlined";
-    var l = o.forwardRef(c)
+    d.displayName = "StarOutlined";
+    var c = i.forwardRef(d)
 })), r.register("5UEB4", (function(t, r) {
     e(t.exports, "default", (function() {
         return n
@@ -1172,19 +1144,19 @@ r.register("43ebL", (function(t, n) {
     e(t.exports, "default", (function() {
         return s
     }));
-    var i = r("fywoC"),
-        o = r("3KQc0"),
-        a = r("9iNNJ");
+    var a = r("fywoC"),
+        i = r("3KQc0"),
+        o = r("9iNNJ");
     var s = (e, t) => {
-        const [r, n] = i.useState((() => {
+        const [r, n] = a.useState((() => {
             var r, n;
-            const i = e && "current" in e ? e.current : e;
-            return i ? [i.offsetWidth, i.offsetHeight] : [null !== (r = null == t ? void 0 : t.initialWidth) && void 0 !== r ? r : 0, null !== (n = null == t ? void 0 : t.initialHeight) && void 0 !== n ? n : 0]
+            const a = e && "current" in e ? e.current : e;
+            return a ? [a.offsetWidth, a.offsetHeight] : [null !== (r = null == t ? void 0 : t.initialWidth) && void 0 !== r ? r : 0, null !== (n = null == t ? void 0 : t.initialHeight) && void 0 !== n ? n : 0]
         }));
-        return (0, a.default)((() => {
+        return (0, o.default)((() => {
             const t = e && "current" in e ? e.current : e;
             t && n([t.offsetWidth, t.offsetHeight])
-        }), [e]), (0, o.default)(e, (e => {
+        }), [e]), (0, i.default)(e, (e => {
             const t = e.target;
             n([t.offsetWidth, t.offsetHeight])
         })), r
@@ -1193,20 +1165,20 @@ r.register("43ebL", (function(t, n) {
     e(t.exports, "default", (function() {
         return u
     }));
-    var i = r("6rvT3"),
-        o = r("9iNNJ"),
-        a = r("3Yjty"),
+    var a = r("6rvT3"),
+        i = r("9iNNJ"),
+        o = r("3Yjty"),
         s = r("f1PHW");
-    let c;
-    const l = () => c || (c = function() {
+    let d;
+    const c = () => d || (d = function() {
         const e = new Map,
-            t = new(0, i.default)((0, s.default)(((t, r) => {
+            t = new(0, a.default)((0, s.default)(((t, r) => {
                 var n;
                 if (1 === t.length) null === (n = e.get(t[0].target)) || void 0 === n || n(t[0], r);
                 else
                     for (let n = 0; n < t.length; n++) {
-                        var i;
-                        null === (i = e.get(t[n].target)) || void 0 === i || i(t[n], r)
+                        var a;
+                        null === (a = e.get(t[n].target)) || void 0 === a || a(t[n], r)
                     }
             })));
         return {
@@ -1220,31 +1192,31 @@ r.register("43ebL", (function(t, n) {
         }
     }());
     var u = function(e, t) {
-        const r = l(),
-            n = (0, a.default)(t);
-        return (0, o.default)((() => {
+        const r = c(),
+            n = (0, o.default)(t);
+        return (0, i.default)((() => {
             let t = !1;
-            const i = e && "current" in e ? e.current : e;
-            if (i) return r.subscribe(i, ((e, r) => {
+            const a = e && "current" in e ? e.current : e;
+            if (a) return r.subscribe(a, ((e, r) => {
                 t || n.current(e, r)
             })), () => {
-                t = !0, r.unsubscribe(i)
+                t = !0, r.unsubscribe(a)
             }
         }), [e, r, n]), r.observer
     }
-})), r.register("9iNNJ", (function(n, i) {
+})), r.register("9iNNJ", (function(n, a) {
     e(n.exports, "default", (function() {
-        return o
+        return i
     }));
-    var o = t(r("fywoC"))["undefined" != typeof document && void 0 !== document.createElement ? "useLayoutEffect" : "useEffect"]
+    var i = t(r("fywoC"))["undefined" != typeof document && void 0 !== document.createElement ? "useLayoutEffect" : "useEffect"]
 })), r.register("3Yjty", (function(t, n) {
     e(t.exports, "default", (function() {
-        return o
+        return i
     }));
-    var i = r("fywoC");
-    var o = e => {
-        const t = i.useRef(e);
-        return i.useEffect((() => {
+    var a = r("fywoC");
+    var i = e => {
+        const t = a.useRef(e);
+        return a.useEffect((() => {
             t.current = e
         })), t
     }
@@ -1256,8 +1228,8 @@ r.register("43ebL", (function(t, n) {
         var t = [],
             r = null,
             n = function() {
-                for (var n = arguments.length, i = new Array(n), o = 0; o < n; o++) i[o] = arguments[o];
-                t = i, r || (r = requestAnimationFrame((function() {
+                for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) a[i] = arguments[i];
+                t = a, r || (r = requestAnimationFrame((function() {
                     r = null, e.apply(void 0, t)
                 })))
             };
@@ -1267,19 +1239,19 @@ r.register("43ebL", (function(t, n) {
     }
 })), r.register("iROck", (function(t, n) {
     e(t.exports, "NavigateTo", (function() {
-        return o
+        return i
     }));
-    var i = r("bd8je");
-    const o = e => {
-        i.history.push(e)
+    var a = r("bd8je");
+    const i = e => {
+        a.history.push(e)
     }
 })), r.register("py2Xr", (function(t, n) {
     e(t.exports, "default", (function() {
-        return o
+        return i
     }));
-    var i = r("hxEiv");
+    var a = r("hxEiv");
     r("fywoC");
-    var o = e => (0, i.jsx)("i", {
+    var i = e => (0, a.jsx)("i", {
         className: `${e.name}${e.className?` ${e.className}`:""}`,
         style: e.style
     })
@@ -1289,21 +1261,21 @@ r.register("43ebL", (function(t, n) {
     }), e.exports.lazyWithPreload = void 0;
     var n = r("fywoC");
 
-    function i(e) {
-        var t, r, i = (0, n.lazy)(e),
-            o = (0, n.forwardRef)((function(e, r) {
-                var o = (0, n.useRef)(null != t ? t : i);
-                return (0, n.createElement)(o.current, Object.assign(r ? {
+    function a(e) {
+        var t, r, a = (0, n.lazy)(e),
+            i = (0, n.forwardRef)((function(e, r) {
+                var i = (0, n.useRef)(null != t ? t : a);
+                return (0, n.createElement)(i.current, Object.assign(r ? {
                     ref: r
                 } : {}, e))
             }));
-        return o.preload = function() {
+        return i.preload = function() {
             return r || (r = e().then((function(e) {
                 return t = e.default
             }))), r
-        }, o
+        }, i
     }
-    e.exports.lazyWithPreload = i, e.exports.default = i
+    e.exports.lazyWithPreload = a, e.exports.default = a
 })), r.register("4aaLU", (function(t, r) {
     e(t.exports, "default", (function() {
         return n
@@ -1320,20 +1292,20 @@ r.register("43ebL", (function(t, n) {
     }
 })), r.register("exbzb", (function(t, n) {
     e(t.exports, "default", (function() {
-        return l
+        return c
     }));
-    var i = r("dnh3u"),
-        o = r("fywoC"),
-        a = r("8N8s4"),
+    var a = r("dnh3u"),
+        i = r("fywoC"),
+        o = r("8N8s4"),
         s = r("dwKuN"),
-        c = function(e, t) {
-            return o.createElement(s.default, (0, i.default)((0, i.default)({}, e), {}, {
+        d = function(e, t) {
+            return i.createElement(s.default, (0, a.default)((0, a.default)({}, e), {}, {
                 ref: t,
-                icon: a.default
+                icon: o.default
             }))
         };
-    c.displayName = "QuestionCircleOutlined";
-    var l = o.forwardRef(c)
+    d.displayName = "QuestionCircleOutlined";
+    var c = i.forwardRef(d)
 })), r.register("8N8s4", (function(t, r) {
     e(t.exports, "default", (function() {
         return n

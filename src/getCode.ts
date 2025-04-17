@@ -26,7 +26,6 @@ const registryJson = registryRegex.exec(indexFile)?.[1];
 if(!registryJson) throw new Error("Failed to get module registry");
 
 const registry = JSON.parse(registryJson);
-let groups: { name: string, ext: string, urls: { index: number, url: string }[] }[] = [];
 
 // remove the existing files
 const extensions = ["js", "css"]; 
@@ -38,6 +37,8 @@ for(const ext of extensions) {
     fs.mkdirSync(folder);
 }
 
+let groups: { name: string, ext: string, urls: { index: number, url: string }[] }[] = [];
+
 // group the files
 for(const id in registry) {
     const parts = registry[id].split(".");
@@ -46,7 +47,7 @@ for(const id in registry) {
     if(parts[0] === "index" && parts[2] === "js") continue;
     if(!extensions.includes(parts[2])) continue;
 
-    let group = groups.find(g => g.name === parts[0]);
+    let group = groups.find(g => g.name === parts[0] && g.ext === parts[2]);
     if(!group) {
         group = { name: parts[0], ext: parts[2], urls: [] };
         groups.push(group);

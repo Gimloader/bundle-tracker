@@ -1,7 +1,7 @@
-function e(e, t, i, o) {
+function e(e, t, r, n) {
     Object.defineProperty(e, t, {
-        get: i,
-        set: o,
+        get: r,
+        set: n,
         enumerable: !0,
         configurable: !0
     })
@@ -10,48 +10,371 @@ function e(e, t, i, o) {
 function t(e) {
     return e && e.__esModule ? e.default : e
 }
-var i = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-i.register("gO6da", (function(t, o) {
-    var n;
-    n = t.exports, Object.defineProperty(n, "__esModule", {
+var r = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
+r.register("43ebL", (function(t, n) {
+    var i;
+    i = t.exports, Object.defineProperty(i, "__esModule", {
         value: !0,
         configurable: !0
     }), e(t.exports, "default", (function() {
-        return u
+        return d
     }));
-    var r = i("hxEiv");
-    i("fywoC");
-    var a = i("iMOcM"),
-        s = i("jPgIz"),
-        c = i("iho3s"),
-        l = i("h67aZ"),
-        d = i("cHCps");
-    var u = () => (0, r.jsxs)(s.LegalContainer, {
-        children: [(0, r.jsx)(d.default, {
+    var o = r("hxEiv");
+    r("fywoC");
+    var a = r("iMOcM"),
+        s = r("jPgIz"),
+        c = r("3BiSM"),
+        l = r("fC6cp"),
+        u = r("cHCps");
+    var d = () => (0, o.jsxs)(s.LegalContainer, {
+        children: [(0, o.jsx)(a.Title, {
+            title: "Terms of Service"
+        }), (0, o.jsx)(u.default, {
             includeSpacer: !0
-        }), (0, r.jsxs)(s.LegalContent, {
-            children: [(0, r.jsx)(a.Title, {
-                title: "Privacy Policy"
-            }), (0, r.jsx)(c.default, {}), (0, r.jsx)(l.default, {})]
+        }), (0, o.jsxs)(s.LegalContent, {
+            children: [(0, o.jsx)(c.default, {}), (0, o.jsx)(l.default, {}), (0, o.jsx)("h2", {
+                id: "-overview-",
+                children: (0, o.jsx)("strong", {
+                    children: "Overview"
+                })
+            }), (0, o.jsx)("p", {
+                children: "Welcome to the Gimkit, Inc (“Gimkit,” “Our,” “We,” “Us”) Terms of Service (the “Terms”). Our Terms of Service have been created to ensure Gimkit will be a safe, productive, fun environment for educators and students to teach and learn."
+            }), (0, o.jsx)("p", {
+                children: "Please read these Terms carefully as they govern your use of our website www.gimkit.com (the “Site”) and the services and products available at or through the website."
+            }), (0, o.jsxs)("p", {
+                children: ["If you have any questions, you can contact us at", " ", (0, o.jsx)("a", {
+                    target: "_blank",
+                    href: "mailto:hello@gimkit.com",
+                    children: "hello@gimkit.com"
+                }), ". To make these Terms easier to read, the Site and our products and services are collectively called the “Services.”"]
+            }), (0, o.jsx)("h2", {
+                id: "-agreement-to-terms-",
+                children: (0, o.jsx)("strong", {
+                    children: "Agreement to Terms"
+                })
+            }), (0, o.jsx)("p", {
+                children: "By accessing or using our Services, you agree to be bound by these Terms. If you do not agree to these Terms, don’t use the Services."
+            }), (0, o.jsx)("h2", {
+                id: "-changes-to-terms-or-services-",
+                children: (0, o.jsx)("strong", {
+                    children: "Changes to Terms or Services"
+                })
+            }), (0, o.jsx)("p", {
+                children: "We may modify the Terms and our Services at any time, in our sole discretion. If we do so, we may let you know by email and by posting a notice on the Site. It is important that you review the Terms whenever we modify them because continuing to use the Services after we have posted modified Terms on the Site indicates to us that you agree to be bound by the modified Terms. If you don’t agree to be bound by the modified Terms, please discontinue use of the Services immediately. Because our Services are evolving over time we may change or discontinue all or any part of the Services at any time, and without notice to you, at our sole discretion."
+            }), (0, o.jsx)("h2", {
+                id: "your-privacy",
+                children: (0, o.jsx)("strong", {
+                    children: "Your Privacy"
+                })
+            }), (0, o.jsxs)("p", {
+                children: ["Your privacy and that of your Students is important to us. We do not use personal information to market or advertise to you or Students, and we do not sell User personal data. We do use your information for certain stated purposes, such as providing and improving the Service and communicating with Educators about Gimkit features and events.", " "]
+            }), (0, o.jsxs)("p", {
+                children: ["Our full Privacy Policy is incorporated in these Terms, and is available at", " ", (0, o.jsx)("a", {
+                    target: "_blank",
+                    href: "https://www.gimkit.com/privacy",
+                    children: "https://www.gimkit.com/privacy"
+                }), ". Please read our Privacy Policy, as it describes what information we collect from you, how we use that information, and the legal bases we have to process your information."]
+            }), (0, o.jsx)("h2", {
+                id: "-creating-an-account-",
+                children: (0, o.jsx)("strong", {
+                    children: "Creating an Account"
+                })
+            }), (0, o.jsx)("h3", {
+                id: "-educator-accounts-",
+                children: (0, o.jsx)("strong", {
+                    children: "Educator Accounts"
+                })
+            }), (0, o.jsx)("p", {
+                children: "If you are a User (who is not a Student), you also represent that you are at least 18 years old and have the legal capacity to accept these Terms. If you are not 18 or older, not a Student, or do not have parental consent to access the Service, you may not use the Service."
+            }), (0, o.jsx)("p", {
+                children: "You agree that we may provide notice to you of updated terms by posting them on the Service. We may also email updated terms to your account email address. Use or continued use of our Service following notice of such updated terms indicates your consent to be bound by them."
+            }), (0, o.jsxs)("h3", {
+                id: "educator-s-associated-with-schools-",
+                children: ["Educator", (0, o.jsx)("strong", {
+                    children: "s Associated with Schools"
+                })]
+            }), (0, o.jsx)("p", {
+                children: "By nature of their role, Educators associated with Schools have additional responsibilities to the Students that they represent. In using the Service, such Educators:"
+            }), (0, o.jsxs)("p", {
+                children: [(0, o.jsx)("strong", {
+                    children: "(a)"
+                }), " Must comply with our", " ", (0, o.jsx)("strong", {
+                    children: (0, o.jsx)("a", {
+                        target: "_blank",
+                        href: "https://www.gimkit.com/privacy",
+                        children: "Privacy Policy"
+                    })
+                }), "."]
+            }), (0, o.jsxs)("p", {
+                children: [(0, o.jsx)("strong", {
+                    children: "(b)"
+                }), ' Represent and warrant that they have: (i) the authority to consent to our collection and use of personal information from their Students; (ii) obtained any required parental consent, including if required verifiable parental consent under the Children’s Online Privacy Protection Act ("COPPA"); (iii) not received any revocation of parental consent; (iv) filed evidence of parental consent with their School administrator before using the Service; and (v) will only use the personal information provided by or otherwise collected from a Student when using the Service in accordance with the purposes for which the Student joined an Educator Class. The Educator may act as the parent’s agent and for purposes of giving consent by the parent to us for the collection and use of Student information for children below the minimum age (e.g. the minimum age for COPPA is under age 13). By enrolling a Student or helping the Student use the Service, the Educator provides such consent to us and agrees that the Student’s online activities are subject to these terms.']
+            }), (0, o.jsxs)("p", {
+                children: [(0, o.jsx)("strong", {
+                    children: "(c)"
+                }), ' Must ensure their Classes are compliant with all applicable laws related to disclosure of Student information and regulations, including The Family Educational Rights and Privacy Act ("FERPA"); and acquired FERPA-compliant disclosure consents from the parents of children under 18, or from the Students aged 18 and older; and grant us a nonexclusive license to view, download, reproduce, modify, create derivative works of, distribute, and display any information provided by or collected from a Student solely for the purposes discussed in these Terms. Student information is the property of and under the control of the Educator. The Classes containing Student content cannot be posted publicly by Educators. Accordingly, Educators must ensure they have proper consent before sharing any Student information with third parties. If Educators invite unaffiliated guests (e.g., classroom guests or co-teachers) to participate on their Classes, they are solely responsible for (a) obtaining parental consent for sharing Student information with any guests. Gimkit has no responsibility for Educator or guest activity.']
+            }), (0, o.jsx)("h3", {
+                id: "-additional-information-for-account-creation-",
+                children: (0, o.jsx)("strong", {
+                    children: "Additional Information for Account Creation"
+                })
+            }), (0, o.jsx)("p", {
+                children: "Your Account should be yours – don’t use the Services under the name of another person with the intent to impersonate that person, or use a username that is subject to the rights of another person without appropriate authorization. You must be a human to use the Services and an automated account is not allowed. This policy also applies beyond Account creation to the general use of the Services. “Robot” (or automatic) activity is not allowed. Keep it real, people."
+            }), (0, o.jsx)("p", {
+                children: "We reserve the right to suspend or terminate your Account if any information provided during the registration process or thereafter proves to be inaccurate, false, or misleading, or to reclaim any Account that you create through the Services that violates our Terms. You are responsible for maintaining the confidentiality of your password and Account and agree to notify us if your password is lost, stolen, or disclosed to an unauthorized third party, or otherwise may have been compromised. You are responsible for activities that occur under your Account."
+            }), (0, o.jsx)("h2", {
+                id: "-feedback-",
+                children: (0, o.jsx)("strong", {
+                    children: "Feedback"
+                })
+            }), (0, o.jsxs)("p", {
+                children: ["We welcome feedback, comments, and suggestions for improvements to the Services. You can submit feedback anytime by emailing us at", " ", (0, o.jsx)("a", {
+                    target: "_blank",
+                    href: "mailto:hello@gimkit.com",
+                    children: "hello@gimkit.com"
+                }), ". We also have a feedback center for product ideas and suggestions", " ", (0, o.jsx)("strong", {
+                    children: (0, o.jsx)("a", {
+                        target: "_blank",
+                        href: "https://gimkit.nolt.io/",
+                        children: "here"
+                    })
+                }), ".", " "]
+            }), (0, o.jsx)("p", {
+                children: "You grant to us a non-exclusive, worldwide, perpetual, irrevocable, fully-paid, royalty-free, sub-licensable, and transferable license under any and all intellectual property rights that you own or control to use, copy, modify, create derivative works based upon, and otherwise exploit the feedback for any purpose."
+            }), (0, o.jsx)("h2", {
+                id: "-member-content-",
+                children: (0, o.jsx)("strong", {
+                    children: "Member Content"
+                })
+            }), (0, o.jsx)("p", {
+                children: "For purposes of these Terms:"
+            }), (0, o.jsxs)("p", {
+                children: ["(i) “", (0, o.jsx)("strong", {
+                    children: "Content"
+                }), "” means text, graphics, images, music, software, audio, video, works of authorship of any kind, and information or other materials that are posted, generated, provided, or otherwise made available through the Services; and (ii) any Content that Members (including you) provide to be made available through the Services."]
+            }), (0, o.jsx)("p", {
+                children: "You are responsible for the Content that you post to the Services, including its legality, reliability, and appropriateness. By posting Content to the Services, you grant us a non-exclusive, transferable, sub-licensable, worldwide, royalty-free right and license to use, modify, publicly perform, publicly display, reproduce, and distribute such Content on and through the Services. You agree that this license includes the right for us to make such Content available to other Members of the Services, who may also use such Content subject to these Terms."
+            }), (0, o.jsx)("p", {
+                children: "You represent and warrant that: (i) the Content is yours (you own it) or you have the right to use it and grant us the rights and license as provided in these Terms, and (ii) the posting of the Content on or through the Services does not violate the privacy rights, publicity rights, copyrights, contract rights, or any other rights of any person."
+            }), (0, o.jsx)("p", {
+                children: "We do not claim any ownership rights in any Content that you make available through the Services and nothing in these Terms will be deemed to restrict any rights that you may have to use and exploit your own Content. However, you grant us a non-exclusive, non-transferable, non-sublicenseable, worldwide license to use any Content submitted by you in relation to the Services, including the promotion and advertisement of Services."
+            }), (0, o.jsx)("h2", {
+                id: "-member-and-user-conduct-",
+                children: (0, o.jsx)("strong", {
+                    children: "Member and User Conduct"
+                })
+            }), (0, o.jsx)("h3", {
+                id: "-while-using-gimkit-and-related-services-be-kind-respectful-and-honest-",
+                children: (0, o.jsx)("strong", {
+                    children: "While using Gimkit and related Services be kind, respectful, and honest"
+                })
+            }), (0, o.jsx)("p", {
+                children: "We invite you to participate in our community and help us make it special. As part of that invitation, we ask that you respect other Members and Users when posting Content and using Gimkit and the services it provides."
+            }), (0, o.jsx)("p", {
+                children: (0, o.jsx)("strong", {
+                    children: "We’re all here to make learning memorable and more effective. We ask that you treat other members of the Gimkit community the way you want to be treated. We have zero-tolerance for bullying, hate speech, hurtful words or behavior, and exclusion of any kind."
+                })
+            }), (0, o.jsxs)("p", {
+                children: ["By using Gimkit and our Services you Agree ", (0, o.jsx)("strong", {
+                    children: "NOT"
+                }), " to:"]
+            }), (0, o.jsxs)("ul", {
+                children: [(0, o.jsx)("li", {
+                    children: "use language or transmit content that may be considered offensive or profane to other Members, Users, or game participants. This includes profanity and offensive images, or other media containing obscene, hurtful, demeaning, sexually explicit, or excessively violent content."
+                }), (0, o.jsx)("li", {
+                    children: "harass or threaten other Members or Users. Harassing behavior and language includes insults, ethnic or homophobic slurs, defamatory statements, invasive statements that may infringe on a Member’s privacy, or the transmission or sharing of any content that may cause another Member or user to experience ridicule, threat, or discomfort."
+                }), (0, o.jsx)("li", {
+                    children: "submit material that violates a third party’s proprietary rights, including privacy and publicity rights, or that otherwise violates any applicable law;"
+                }), (0, o.jsx)("li", {
+                    children: "publish falsehoods or misrepresentations that could damage us, our Members, or any third party;"
+                }), (0, o.jsx)("li", {
+                    children: "publish any private information of someone (like their address or phone number) without their permission;"
+                }), (0, o.jsx)("li", {
+                    children: "submit material that is unlawful, obscene, defamatory, libelous, threatening, pornographic, harassing, hateful, racially or ethnically offensive, or encourages conduct that would be considered a criminal offense, give rise to civil liability, violate any law, or is otherwise inappropriate;"
+                }), (0, o.jsx)("li", {
+                    children: "post advertisements;"
+                }), (0, o.jsx)("li", {
+                    children: "impersonate another person or represent yourself as affiliated with us, our staff, or other industry professionals;"
+                }), (0, o.jsx)("li", {
+                    children: "solicit a User or Member’s password or other Account information; or"
+                }), (0, o.jsx)("li", {
+                    children: "harvest User or Member names, addresses, or email addresses for any purpose."
+                })]
+            }), (0, o.jsx)("p", {
+                children: "This list is an example and is not intended to be complete or exhaustive. We don’t have an obligation to monitor your access to, or use of, the Services, but we reserve the right to do so for the purpose of operating the Services, to ensure your compliance with these Terms, or to comply with applicable law or the order or requirement of a court, administrative agency, or another governmental body. We reserve the right, at any time and without prior notice, to remove or disable access to your Account or any Content that we consider, in our sole discretion, to be in violation of these Terms or otherwise harmful to our community or the Services."
+            }), (0, o.jsx)("p", {
+                children: "Gimkit has a flagging process for content that is inaccurate, inappropriate, offensive, hurtful, or in violation of these Terms of Service. When a community member flags a Kit, they are asked a series of questions to identify why they have flagged it. When they have submitted their flag, we get a notification and can review the flagged Kit. Upon completing a review, Gimkit will take one of three actions:"
+            }), (0, o.jsxs)("ol", {
+                children: [(0, o.jsx)("li", {
+                    children: "If we determine the Kit content is safe, we will send an email to the flagger notifying them that the Kit has been determined to be safe and no action will be taken."
+                }), (0, o.jsx)("li", {
+                    children: "If we determine there is incorrect information in the Kit, we will set the Kit to private and send an email to the owner of the Kit notifying them that their Kit has been flagged as inaccurate and can be made public once the error or inaccuracy has been updated. We will also send an email to the flagger notifying them that the Kit has been removed from the community until it can be verified as accurate."
+                }), (0, o.jsx)("li", {
+                    children: "If we determine the Kit contains content in violation of our Terms of Service, including but not limited to hurtful, inappropriate, or offensive language or images, we will delete the Kit. We will notify the creator of the Kit that their Kit has been deleted and why. We will also notify the flagger of our action taken."
+                })]
+            }), (0, o.jsx)("p", {
+                children: "The safety and health of our community are of the utmost importance to us and multiple deleted Kits for inappropriate, offensive, hurtful, or in violation of these Terms of Service may result in account suspension or deletion."
+            }), (0, o.jsx)("p", {
+                children: "Likewise, repeated inaccurate Kit flagging may result in account suspension or deletion."
+            }), (0, o.jsx)("p", {
+                children: "You can remove your Content by specifically deleting it. However, in certain instances, some of your Content (such as posts or comments you make) may not be completely removed, or may not be removable (audible content), and copies of your Content may continue to exist on the Services. We are not responsible or liable for the removal or deletion of (or the failure to remove or delete) any of the Content."
+            }), (0, o.jsx)("h3", {
+                id: "-account-sharing-",
+                children: (0, o.jsx)("strong", {
+                    children: "Account Sharing"
+                })
+            }), (0, o.jsx)("p", {
+                children: "Gimkit accounts are intended for individual use."
+            }), (0, o.jsx)("p", {
+                children: "Our community is built on the content created by Gimkit Members and Users and is made healthier and more vibrant by the people involved in it and the Kits they create. As such, we believe Gimkit will be a safer, more authentic community if the User accounts within it are owned and operated by individuals only and not shared."
+            }), (0, o.jsx)("p", {
+                children: "By using the Service you are agreeing that you will be the sole owner and user of your Gimkit account."
+            }), (0, o.jsx)("h3", {
+                id: "-integrity-of-the-game-and-community-",
+                children: (0, o.jsx)("strong", {
+                    children: "Integrity of the Game and Community"
+                })
+            }), (0, o.jsx)("p", {
+                children: "Gimkit is fun and engaging because it is built on a game that takes strategy and knowledge to win. The Gimkit community is here to have fun learning and the integrity of the game is central to that core element of the community."
+            }), (0, o.jsx)("p", {
+                children: "Cheating, hacking, and other behaviors intended to disrupt the game or gameplay will not be tolerated. All behaviors, including but not limited cheating, using bots, and hacking, may result in suspension or account termination."
+            }), (0, o.jsx)("h2", {
+                id: "-our-content-",
+                children: (0, o.jsx)("strong", {
+                    children: "Our Content"
+                })
+            }), (0, o.jsx)("p", {
+                children: "Subject to your compliance with these Terms, We grant you a limited, non-exclusive, non-transferable, non-sub licensable license to access and view our content (“Our Content”) solely in connection with your permitted use of the Services. For the purposes of these Terms, Our Content shall include all text, graphics, images, site and screen layouts, arrangements and themes, music, software, audio, video, works of authorship by us or our affiliates of any kind, and information or other materials that are posted or generated by us or our affiliates."
+            }), (0, o.jsx)("p", {
+                children: "You have the right to view and access Our Content. However, you may not copy, borrow, modify, or otherwise reproduce, and must immediately cease using, copying, borrowing, modifying, or otherwise reproducing any site and screen layouts, arrangements and themes provided through this Service. At no time is any Member permitted to: (i) transfer, sublicense, sell, lease, lend, rent, or otherwise distribute Our Content or the Services to a third party; (ii) decompile, reverse-engineer, disassemble, or create derivative works of the Services or any Our Content; or (iii) use the Services or Our Content in any unlawful manner, for any unlawful purpose, or in any manner inconsistent with these Terms."
+            }), (0, o.jsx)("h2", {
+                id: "-intellectual-property-",
+                children: (0, o.jsx)("strong", {
+                    children: "Intellectual Property"
+                })
+            }), (0, o.jsx)("p", {
+                children: "The Services contain material that may be protected by United States and international copyright, trademark, and other proprietary information, including, but not limited to, audio, video, graphic, photographic and text information, and all Our Content. We, and any of our licensors, exclusively own all right, title and interest in, and to the Services and Our Content, including all associated intellectual property rights. You acknowledge that the Services and Our Content are protected by copyright, trademark, and other laws of the United States and foreign countries. You agree not to remove, alter, or obscure any copyright, trademark, service mark, or other proprietary rights or notices incorporated in or accompanying the Services and Our Content. Further, you may not modify, distribute, publish, transmit, publicly display, publicly perform, participate in the transfer or sale, create derivative works of, or in any way exploit any of the Our Content, in whole or in part. Any violation of these restrictions may result in intellectual property infringement that may subject you to civil and/or criminal penalties. You will be solely liable for any damage resulting from any infringement of copyrights, trademarks, proprietary rights or any other harm resulting from a submission of information protected by intellectual property rights in a third party, if such submission is made without the express permission of the intellectual property rights holder."
+            }), (0, o.jsx)("h2", {
+                id: "-dmca-copyright-policy-",
+                children: (0, o.jsx)("strong", {
+                    children: "DMCA/Copyright Policy"
+                })
+            }), (0, o.jsx)("p", {
+                children: "We respect copyright law and expects its visitors, Users, and Members to do the same. It is our policy to terminate in appropriate circumstances the Accounts of Users and Members who repeatedly infringe the rights of copyright holders."
+            }), (0, o.jsxs)("p", {
+                children: ['The Digital Millennium Copyright Act of 1998 (the "DMCA") provides recourse for copyright owners who believe that material appearing on the Internet infringes their rights under U.S. copyright law. If you believe in good faith that Content infringes your copyright, you (or your agent) may send us a notice requesting that the Content be removed or access to it blocked. Federal law requires that your notification include the following information: (i) a physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed; (ii) identification of the copyrighted work claimed to have been infringed or, if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site; (iii) identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled and information reasonably sufficient to permit us to locate the material; (iv) information reasonably sufficient to permit us to contact you, such as an address, telephone number, and, if available, an electronic mail; (v) a statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and (vi) a statement that the information in the notification is accurate, and under penalty of perjury, that you are authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.', " ", (0, o.jsx)("strong", {
+                    children: "The notification must be sent to:"
+                })]
+            }), (0, o.jsx)("p", {
+                children: "415 1st Ave N, PO BOX 19833, Seattle, WA 98109"
+            }), (0, o.jsx)("p", {
+                children: "We provide the above contact information for purposes of the DMCA only and reserve the right to respond only to correspondence that is relevant to this purpose."
+            }), (0, o.jsx)("h2", {
+                id: "-links-to-third-party-websites-or-resources-",
+                children: (0, o.jsx)("strong", {
+                    children: "Links to Third-Party Websites or Resources"
+                })
+            }), (0, o.jsx)("p", {
+                children: "The Services may connect to or contain links to third-party websites (that are not affiliated) or resources. We are not responsible for the content, products or services on or available from those websites, resources or links displayed on such sites. You acknowledge sole responsibility for and assume all risk arising from your use of any third-party websites or resources."
+            }), (0, o.jsx)("h2", {
+                id: "-indemnity-",
+                children: (0, o.jsx)("strong", {
+                    children: "Indemnity"
+                })
+            }), (0, o.jsx)("p", {
+                children: "You agree to defend, indemnify and hold harmless us, or our officers, directors, employees and agents, from and against any and all claims, damages, obligations, losses, liabilities, costs, debts, or expenses (including but not limited to attorneys’ fees), to the extent allowed by applicable law, that arise from or are caused by: (i) your use of and access to the Services; (ii) your violation of these Terms; (iii) your violation of any third party right, including without limitation any copyright, property, moral or privacy right; or (iv) any claim that your Content caused damage to any third party. This section shall survive these Terms and your use and termination of the Services."
+            }), (0, o.jsx)("h2", {
+                id: "-termination-",
+                children: (0, o.jsx)("strong", {
+                    children: "Termination"
+                })
+            }), (0, o.jsx)("p", {
+                children: "We may terminate your access to and use of the Services and Account at our sole discretion, at any time and without notice to you. Upon any termination, discontinuation or cancellation of Services or your Account, all provisions of these Terms which by their nature should survive will survive, including, without limitation, ownership provisions, indemnification, warranty disclaimers, limitations of liability, and dispute resolution provisions."
+            }), (0, o.jsx)("h2", {
+                id: "-warranty-disclaimers-",
+                children: (0, o.jsx)("strong", {
+                    children: "Warranty Disclaimers"
+                })
+            }), (0, o.jsx)("p", {
+                children: "The Services and Content are provided “AS IS,” without warranty of any kind. Without limiting the foregoing, WE EXPLICITLY DISCLAIM ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE. We make no warranty that the Services will meet your requirements or be available on an uninterrupted, secure, or error-free basis. We make no warranty regarding the quality, accuracy, timeliness, truthfulness, completeness or reliability of any Content."
+            }), (0, o.jsx)("h2", {
+                id: "-limitation-of-liability-",
+                children: (0, o.jsx)("strong", {
+                    children: "Limitation of Liability"
+                })
+            }), (0, o.jsx)("p", {
+                children: "NEITHER WE NOR ANY OTHER party involved in creating, producing, or delivering the services or content will be liable for any incidental, special, exemplary or consequential damages, INCLUDING LOST PROFITS, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, MOBILE DAMAGE OR SYSTEM FAILURE OR THE COST OF SUBSTITUTE SERVICES arising out of or in connection with THESE TERMS or from the use OF or inability to use the ServiceS or CONTENT, whether based on warranty, contract, tort (including negligence), PRODUCT LIABILITY or any other legal theory, and whether or not WE have been informed of the possibility of such damage, EVEN IF A limited REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE."
+            }), (0, o.jsx)("p", {
+                children: "In no event will OUR total liability arising out of or in connection with THESE TERMS OR FROM THE USE OF OR INABILITY TO USE the Service or content EXCEED THE LESSER of the AMOUNTS YOU HAVE PAID TO US FOR USE OF THE SERVICES DURING THE TWELVE (12) MONTHS PRIOR TO THE CAUSE OF ACTION, OR ONE HUNDRED DOLLARS ($100), IF YOU HAVE NOT HAD ANY PAYMENT OBLIGATIONS TO US, AS APPLICABLE."
+            }), (0, o.jsx)("h2", {
+                id: "-dispute-resolution-",
+                children: (0, o.jsx)("strong", {
+                    children: "Dispute Resolution"
+                })
+            }), (0, o.jsx)("p", {
+                children: "We prefer to resolve things amicably when possible; therefore, you agree to the following dispute resolution policy in connection with any potential claims or disputes arising from your use of the Application. Start by notifying us of your dispute by sending a notice to the contact email address listed above."
+            }), (0, o.jsxs)("ol", {
+                children: [(0, o.jsxs)("li", {
+                    children: [(0, o.jsx)("strong", {
+                        children: "Informal"
+                    }), " ", (0, o.jsx)("strong", {
+                        children: "Negotiations"
+                    }), ": Parties to a dispute concerning the Terms, the Privacy Policy, or the use of the Services will attempt to informally negotiate a potential settlement or resolution to the dispute;"]
+                }), (0, o.jsxs)("li", {
+                    children: [(0, o.jsx)("strong", {
+                        children: "Arbitration"
+                    }), ": In the event that informal negotiations are unsuccessful, the parties agree to follow the arbitration procedures set forth by the American Arbitration Association (AAA) to resolve the dispute."]
+                }), (0, o.jsxs)("li", {
+                    children: [(0, o.jsx)("strong", {
+                        children: "Binding"
+                    }), " ", (0, o.jsx)("strong", {
+                        children: "Arbitration"
+                    }), ": If for any reason arbitration is unsuccessful or unavailable to the parties, parties agree to submit to binding arbitration in the jurisdiction of the State of Washington. Each of us is responsible for paying our own filing, administrative and arbitrator fees. Judgment on the arbitration award may be entered in any court having jurisdiction thereof."]
+                })]
+            }), (0, o.jsx)("h2", {
+                id: "-entire-agreement-",
+                children: (0, o.jsx)("strong", {
+                    children: "Entire Agreement"
+                })
+            }), (0, o.jsx)("p", {
+                children: "These Terms constitute the entire and exclusive understanding and agreement between us and you. These Terms supersede and replace any and all prior oral or written understandings or agreements between us. If for any reason a court of competent jurisdiction finds any provision of these Terms invalid or unenforceable, that provision will be enforced to the maximum extent permissible and the other provisions of these Terms will remain in full force and effect."
+            }), (0, o.jsx)("p", {
+                children: "You may not assign or transfer these Terms, by operation of law or otherwise, without our prior written consent. Any attempt by you to assign or transfer these Terms, without such consent, will be null and of no effect."
+            }), (0, o.jsx)("p", {
+                children: "Any notices or other communications provided by us under these Terms, including those regarding modifications to these Terms, will be given by us (i) via email; or (ii) by posting to the Services. For notices made by email, the date of receipt will be deemed the date on which such notice is transmitted."
+            }), (0, o.jsx)("p", {
+                children: "Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. The waiver of any such right or provision will be effective only if in writing and signed by a duly authorized representative of us. Except as expressly set forth in these Terms, the exercise by either party of any of its remedies under these Terms will be without prejudice to its other remedies under these Terms or otherwise."
+            }), (0, o.jsx)("h2", {
+                id: "-questions-contact-information-",
+                children: (0, o.jsx)("strong", {
+                    children: "Questions & contact information"
+                })
+            }), (0, o.jsxs)("p", {
+                children: ["If you have any questions regarding these Terms, please", " ", (0, o.jsx)("a", {
+                    target: "_blank",
+                    href: "mailto:hello@gimkit.com",
+                    children: "contact us"
+                }), "."]
+            })]
         })]
     })
-})), i.register("jPgIz", (function(t, o) {
+})), r.register("jPgIz", (function(t, n) {
     e(t.exports, "LegalContainer", (function() {
-        return d
-    })), e(t.exports, "LegalContent", (function() {
         return u
+    })), e(t.exports, "LegalContent", (function() {
+        return d
     }));
-    var n = i("2FDaO"),
-        r = i("lKmIF"),
-        a = i("69SUA");
+    var i = r("2FDaO"),
+        o = r("lKmIF"),
+        a = r("69SUA");
     let s, c, l = e => e;
-    const d = n.default.div.attrs({
+    const u = i.default.div.attrs({
             className: "flex-column vc"
         })(s || (s = l`
   flex: 1;
   background: ${0};
-`), r.default.Snow),
-        u = n.default.div(c || (c = l`
+`), o.default.Snow),
+        d = i.default.div(c || (c = l`
   width: 90%;
   max-width: 800px;
   font-size: 18px;
@@ -62,761 +385,69 @@ i.register("gO6da", (function(t, o) {
   h3 {
     font-weight: ${0};
   }
-`), r.default.Black, a.FontWeights.Bold)
-})), i.register("iho3s", (function(t, o) {
+`), o.default.Black, a.FontWeights.Bold)
+})), r.register("3BiSM", (function(t, n) {
     e(t.exports, "default", (function() {
-        return g
+        return d
     }));
-    var n = i("hxEiv");
-    i("fywoC");
-    var r = i("2FDaO"),
-        a = i("69SUA");
-    let s, c, l, d, u, h, f, m, p = e => e;
-    const y = e => (0, n.jsxs)(b, {
-        children: [(0, n.jsx)("div", {
-            style: {
-                marginRight: 30
-            },
-            children: (0, n.jsx)("i", {
-                className: "fas fa-badge-check",
-                style: {
-                    fontSize: 42,
-                    color: "#81c784"
-                }
-            })
-        }), (0, n.jsxs)("div", {
-            children: [(0, n.jsx)(S, {
-                children: e.title
-            }), (0, n.jsx)(P, {
-                children: e.description
-            })]
+    var i = r("hxEiv");
+    r("fywoC");
+    var o = r("2FDaO"),
+        a = r("69SUA");
+    let s, c, l, u = e => e;
+    var d = () => (0, i.jsxs)(h, {
+        children: [(0, i.jsx)(f, {
+            children: "Gimkit Terms Of Service"
+        }), (0, i.jsx)(m, {
+            children: "Last updated April 4th, 2022."
         })]
     });
-    var g = () => (0, n.jsxs)(v, {
-        children: [(0, n.jsx)(w, {}), (0, n.jsx)(x, {
-            children: "Gimkit Privacy"
-        }), (0, n.jsx)(j, {
-            children: "Scroll down to read our full privacy policy."
-        }), (0, n.jsx)(y, {
-            title: "Students don’t need accounts",
-            description: "Students can participate in Gimkit without signing up. While student accounts can be used to help improve the safety of games, they’re always optional."
-        }), (0, n.jsx)(k, {}), (0, n.jsx)(y, {
-            title: "FERPA, COPPA, Ed-Law 2D Compliant",
-            description: (0, n.jsxs)(n.Fragment, {
-                children: ["We comply with major US and State-wide privacy laws.", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "Email us"
-                }), " if you’re not sure if we comply with your local privacy laws – chances are, we do!"]
-            })
-        }), (0, n.jsx)(k, {}), (0, n.jsx)(y, {
-            title: "Sometimes, it’s good to be alone",
-            description: "100% of Gimkit’s revenue comes from subscriptions. Because of that, the data we collect is just for making Gimkit the best it can be. None of your information is ever sold to third parties & you’ll never find a single advertisement on Gimkit."
-        })]
-    });
-    const v = r.default.div.attrs({
+    const h = o.default.div.attrs({
             className: "flex-center flex-column maxWidth"
-        })(s || (s = p``)),
-        w = r.default.img.attrs({
-            src: "/client/img/icons/secure.svg"
-        })(c || (c = p`
-  width: 100%;
-  max-width: 120px;
-  margin-bottom: 10px;
-`)),
-        x = r.default.div(l || (l = p`
+        })(s || (s = u``)),
+        f = o.default.div(c || (c = u`
   font-size: 48px;
   font-weight: ${0};
 `), a.FontWeights.UltraBold),
-        j = r.default.div(d || (d = p`
+        m = o.default.div(l || (l = u`
   font-size: 22px;
   color: rgba(0, 0, 0, 0.9);
-  margin-bottom: 20px;
-`)),
-        b = r.default.div.attrs({
-            className: "flex vc"
-        })(u || (u = p`
-  padding: 30px;
-  background: #e8f5e9;
-  border-radius: 5px;
-  border: 3px solid #81c784;
-`)),
-        S = r.default.div(h || (h = p`
-  font-weight: ${0};
-  font-size: 22px;
-`), a.FontWeights.Bold),
-        P = r.default.div(f || (f = p`
-  font-size: 18px;
-  margin-top: 3px;
-`)),
-        k = r.default.div(m || (m = p`
-  height: 13px;
 `))
-})), i.register("h67aZ", (function(t, o) {
-    e(t.exports, "default", (function() {
-        return f
-    }));
-    var n = i("hxEiv"),
-        r = i("fC6cp");
-    i("fywoC");
-    var a = i("2FDaO"),
-        s = i("69SUA");
-    let c, l, d, u, h = e => e;
-    var f = () => (0, n.jsxs)(m, {
-        children: [(0, n.jsxs)(p, {
-            children: [(0, n.jsx)(y, {
-                children: "Gimkit Privacy Policy"
-            }), (0, n.jsx)(g, {
-                children: "Last updated April 4th, 2022"
-            })]
-        }), (0, n.jsx)(r.default, {}), (0, n.jsxs)("div", {
-            children: [(0, n.jsx)("h2", {
-                id: "introduction",
-                children: "Introduction"
-            }), (0, n.jsxs)("p", {
-                children: ["Thank you for using Gimkit! We created and adhere to this Privacy Policy to ensure Gimkit is the safest place possible for everyone who uses it.", " "]
-            }), (0, n.jsx)("p", {
-                children: "We commit to you that:"
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsx)("li", {
-                    children: "We never sell or share your Personal Information."
-                }), (0, n.jsx)("li", {
-                    children: "We do not advertise on Gimkit."
-                }), (0, n.jsx)("li", {
-                    children: "The information we collect is used exclusively for the purpose of building, improving, and maintaining Gimkit Services."
-                }), (0, n.jsx)("li", {
-                    children: "You own the original content you create on Gimkit."
-                }), (0, n.jsx)("li", {
-                    children: "We encrypt data in motion and at rest and use industry best practices to securely store and transmit your information."
-                }), (0, n.jsx)("li", {
-                    children: "You have the right to view, request, and remove your Personal Information."
-                })]
-            }), (0, n.jsx)("p", {
-                children: "Our Privacy Policy (the “Privacy Policy,” “this Policy,” or “Policy”) constitutes an agreement between you (“user,” “you,” or “your”) and Gimkit (“Gimkit,” “us,” “our,” or “we”). This Policy describes how Gimkit collects, protects, uses, retains, discloses, and deletes information and data created in the course of your access to and use of the Site, Content, and Services (each as defined below). This Privacy Policy applies only to information collected through the Site and/or Services."
-            }), (0, n.jsx)("p", {
-                children: "We will notify you inside your Gimkit Account of any material changes to this policy. We do this the first time you log on following changes to this policy with a prominent note that explains you are providing consent by continuing to use Gimkit. We also recommend you check back to keep up to date on this policy."
-            }), (0, n.jsx)("p", {
-                children: "If you do not agree to this Privacy Policy, do not use Gimkit."
-            }), (0, n.jsxs)("p", {
-                children: ["You can reach us any time to discuss our approach to privacy, this Policy, or ask questions by emailing", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), "."]
-            }), (0, n.jsx)("h2", {
-                id: "definitions",
-                children: "Definitions"
-            }), (0, n.jsx)("p", {
-                children: "For the purposes of this Privacy Policy:"
-            }), (0, n.jsx)("p", {
-                children: "“Child or Children” means any child or children under the age of thirteen (13) years old in the United States and under the age of sixteen (16) years old outside of the United States."
-            }), (0, n.jsx)("p", {
-                children: "“Content” means any expression fixed in a tangible medium and includes, without limitation, text, images, photographs, moving images, videos, links, or any other kind of content."
-            }), (0, n.jsx)("p", {
-                children: "“Educator(s)” means a teacher or individual employed by an educational institution, or the educational institution itself."
-            }), (0, n.jsx)("p", {
-                children: "“Student” means anyone under 18 who creates a Gimkit account."
-            }), (0, n.jsx)("p", {
-                children: "“Services” means all of the services Gimkit provides, including but not limited to storing content provided by you, playing Gimkit games with Students, and providing results information based on Student in-game performance."
-            }), (0, n.jsxs)("p", {
-                children: ["“Site” means ", (0, n.jsx)("a", {
-                    href: "http://www.gimkit.com",
-                    children: "www.gimkit.com"
-                }), " and all other affiliated subdomains of", " ", (0, n.jsx)("a", {
-                    href: "https://www.gimkit.com",
-                    children: "gimkit.com"
-                }), "."]
-            }), (0, n.jsx)("p", {
-                children: "“Account” means a user who is logged into Gimkit."
-            }), (0, n.jsx)("p", {
-                children: "“PII,” “Personally Identifiable Information,” or “Personal Information” means any information that can identify an individual."
-            }), (0, n.jsx)("h2", {
-                id: "-compliance-with-privacy-laws-",
-                children: "Compliance with Privacy Laws"
-            }), (0, n.jsx)("p", {
-                children: "Gimkit is compliant with the requirements of United States privacy laws including:"
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsxs)("li", {
-                    children: [(0, n.jsx)("strong", {
-                        children: "United States"
-                    }), ": the Children’s Online Privacy Protection Act (“COPPA”); the Family Educational Rights and Privacy Act (“FERPA”)"]
-                }), (0, n.jsxs)("li", {
-                    children: [(0, n.jsx)("strong", {
-                        children: "California"
-                    }), ": the California Consumer Privacy Act (“CCPA”); the Student Online Personal Information Protection Act (“SOPIPA”)"]
-                }), (0, n.jsxs)("li", {
-                    children: [(0, n.jsx)("strong", {
-                        children: "Illinois"
-                    }), ": the Student Online Personal Protection Act (“SOPPA”)"]
-                }), (0, n.jsxs)("li", {
-                    children: [(0, n.jsx)("strong", {
-                        children: "New York"
-                    }), ": Education Law Section 2-D (“Ed Law 2-D”)"]
-                })]
-            }), (0, n.jsxs)("p", {
-                children: ["Don't hesitate to contact", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), " if you are unsure whether Gimkit complies with your local privacy laws – chances are, we do!"]
-            }), (0, n.jsx)("h2", {
-                id: "collection-of-information",
-                children: "Collection of Information"
-            }), (0, n.jsx)("p", {
-                children: "We may collect information, including Personal Information, as follows:"
-            }), (0, n.jsxs)("ol", {
-                children: [(0, n.jsxs)("li", {
-                    children: [(0, n.jsx)("strong", {
-                        children: "Information you provide to us upon registration."
-                    }), " If you choose to register, open an Account, request support, or in any other way take steps that require the submission of information, we may collect Personal Information such as your email address and your name."]
-                }), (0, n.jsxs)("li", {
-                    children: [(0, n.jsx)("strong", {
-                        children: "Purchases."
-                    }), " If you choose to make a purchase on the Site and/or Services, our payment processor, Stripe, will collect your credit card information. We do not collect or store your credit card information."]
-                }), (0, n.jsxs)("li", {
-                    children: [(0, n.jsx)("strong", {
-                        children: "Information you submit to us."
-                    }), " If you choose to submit your information to us for any other reason in any other form, we will collect such information and use it for the purposes for which you submitted it. In COPPA applicable jurisdictions, you will need to submit verifiable parental, guardian, or Educator consent for Students under 13 prior to submitting Personal Information if not previously consented to."]
-                }), (0, n.jsxs)("li", {
-                    children: [(0, n.jsx)("strong", {
-                        children: "Visiting our Site."
-                    }), " We will not collect any Personal Information from you simply for visiting the Site; we only collect Personal Information if you choose to submit it to us. We do, however, collect Non-Personal Information such as Usage Data, when you use the Site and/or Services.", " "]
-                }), (0, n.jsxs)("li", {
-                    children: [(0, n.jsx)("strong", {
-                        children: "Where permitted by law."
-                    }), " We may also collect information, including Personal Information as otherwise permitted by law."]
-                }), (0, n.jsxs)("li", {
-                    children: [(0, n.jsx)("strong", {
-                        children: "Email messages."
-                    }), " We may collect Non-Personal Information through emails we send you which contain code that allows us to track whether the message was opened and/or links were clicked."]
-                }), (0, n.jsxs)("li", {
-                    children: [(0, n.jsx)("strong", {
-                        children: "Cookies."
-                    }), " In connection with the foregoing collection of information, we may also use “cookies” or similar technologies (small amounts of data that are stored on your computer's hard drive when you use or access the Site and/or Services that identify your computer. We only use cookies on Gimkit for logged-in users who have created an Account and, thereby, agreed to this Policy. Should you choose to submit Personal Information to us, we may link cookie information to such Personal Information. If you do not wish to accept cookies, you have the option of blocking or disabling cookies. However, please be aware that some of the Site and/or Services will not function properly if you do so and you may lose access to the Services. In light of the above, if you are in a jurisdiction in which COPPA applies, we will not collect any Personal Information with cookies and will not link any cookie information with Personal Information without verifiable parental consent for Students under 13."]
-                }), (0, n.jsxs)("li", {
-                    children: [(0, n.jsx)("strong", {
-                        children: "Third-party advertisers."
-                    }), " No third-party advertising is permitted on the Site."]
-                })]
-            }), (0, n.jsx)("h2", {
-                id: "-information-we-collect-",
-                children: "Information We Collect"
-            }), (0, n.jsxs)("p", {
-                children: ["The information noted below is the only Personal Information we collect. You have full control of maintaining the accuracy of the information we collect, including by updating and deleting your information from inside of your Account or notifying us at", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), " if you wish to have the information changed or removed. We need to collect the information listed below to provide the Services to you, or because we are legally required to do so."]
-            }), (0, n.jsxs)("p", {
-                children: ["If you submit any Personal Information relating to other people to us or to our service providers in connection with the Services, you represent that you have the authority to do so and to permit us to use the information in accordance with this Privacy Policy.", " "]
-            }), (0, n.jsx)("p", {
-                children: "We have two different Account types, Educator and Student. The information we collect for each is listed in full below."
-            }), (0, n.jsx)("h3", {
-                id: "educator-accounts",
-                children: "Educator Accounts"
-            }), (0, n.jsx)("p", {
-                children: "When you create an Educator Account, you are representing to us that you are at least eighteen (18) years of age or older. To create an Educator Account for you we ask for:"
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsx)("li", {
-                    children: "First name"
-                }), (0, n.jsx)("li", {
-                    children: "Last name"
-                }), (0, n.jsx)("li", {
-                    children: "Email address"
-                }), (0, n.jsx)("li", {
-                    children: "Your school"
-                }), (0, n.jsx)("li", {
-                    children: "Discipline/subject"
-                })]
-            }), (0, n.jsx)("p", {
-                children: "This information is stored exclusively for the purposes of creating your Account and delivering and improving the Services as described in this policy."
-            }), (0, n.jsx)("p", {
-                children: "When you create an Educator Account, we also ask for, but do not store, the following information for the purposes of determining your school:"
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsx)("li", {
-                    children: "Country"
-                }), (0, n.jsx)("li", {
-                    children: "Zip Code"
-                })]
-            }), (0, n.jsx)("h2", {
-                id: "student-accounts",
-                children: "Student Accounts"
-            }), (0, n.jsx)("p", {
-                children: "Student Accounts in Gimkit are available but not required for Students to access and play Gimkit. We only collect Student Personal Information when a Student Account is created. We do not allow Students under thirteen (13) in the United States or under sixteen (16) outside of the United States to create Student Accounts or submit Personal Information to us without Parental or Guardian Consent."
-            }), (0, n.jsxs)("p", {
-                children: ["The Student Personal Information we collect and the two methods we use to create Student Accounts comply with Federal Privacy Laws as well as with all of the Privacy Laws mentioned in the above “Compliance with Privacy Laws” section.", " "]
-            }), (0, n.jsxs)("p", {
-                children: ["When you create a Student Account, you are representing to us that you are thirteen (13) years of age or older in the United States or sixteen (16) years of age or older outside of the United States", " ", (0, n.jsx)("strong", {
-                    children: "OR"
-                }), " have Parental Consent to create an Account as described below in the ", (0, n.jsx)("strong", {
-                    children: "Classes"
-                }), " sub-section.", " "]
-            }), (0, n.jsx)("p", {
-                children: "To create a Student Account we ask for:"
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsx)("li", {
-                    children: "First name"
-                }), (0, n.jsx)("li", {
-                    children: "Last initial"
-                }), (0, n.jsx)("li", {
-                    children: "Email address"
-                })]
-            }), (0, n.jsxs)("p", {
-                children: ["This information is collected and stored exclusively for the purposes of delivering the Services and can be reviewed any time while logged into Gimkit at", " ", (0, n.jsx)("a", {
-                    href: "https://www.gimkit.com/settings",
-                    children: "https://www.gimkit.com/settings"
-                }), "."]
-            }), (0, n.jsxs)("p", {
-                children: [(0, n.jsx)("strong", {
-                    children: "Creating"
-                }), " ", (0, n.jsx)("strong", {
-                    children: "Student Accounts"
-                })]
-            }), (0, n.jsxs)("p", {
-                children: ["There are two ways to create Student Accounts in Gimkit, one for Students who do not need Parental or Guardian Consent to join Gimkit (", (0, n.jsx)("strong", {
-                    children: "Direct Sign-Up)"
-                }), " and another for students who do (", (0, n.jsx)("strong", {
-                    children: "Classes)"
-                }), ".", " "]
-            }), (0, n.jsx)("p", {
-                children: (0, n.jsx)("strong", {
-                    children: "Direct Sign-Up"
-                })
-            }), (0, n.jsx)("p", {
-                children: "Students over thirteen (13) in the United States or over sixteen (16) outside of the United States can join Gimkit independently by creating their own Student Accounts."
-            }), (0, n.jsxs)("p", {
-                children: ["By creating a Student Account without an invitation from an Educator you are confirming that you are at least thirteen (13) years of age or older ", (0, n.jsx)("strong", {
-                    children: "OR"
-                }), " at least sixteen (16) years of age or older and outside of the United States."]
-            }), (0, n.jsx)("p", {
-                children: (0, n.jsx)("strong", {
-                    children: "Classes"
-                })
-            }), (0, n.jsx)("p", {
-                children: "Classes is designed to: (i) make games more secure while providing Educators with more control over who joins games; and (ii) to allow Educators to provide parental consent for Students younger than thirteen (13) years of age or younger than sixteen (16) years of age and outside of the United States."
-            }), (0, n.jsx)("p", {
-                children: "Our Classes system allows Educators to provide parental consent for Students of any age to sign up for Gimkit by sharing with them an invitation link."
-            }), (0, n.jsxs)("p", {
-                children: ["By using Classes, Educators provide consent for the collection of Student Personal Information as discussed under the COPPA Compliance section of this Privacy Policy. When a Student who has signed up for Gimkit through Classes participates in a Gimkit game or creates content (text, images, photographs, links, or any other kind of content) using the Service, the information we collect, including all collected Personal Information and participation data generated from gameplay will be stored in our Service as per the consent provided by the Educator.", " "]
-            }), (0, n.jsx)("h2", {
-                id: "-use-of-your-information-",
-                children: "Use of Your Information"
-            }), (0, n.jsx)("p", {
-                children: "We may use your information (including Personal Information) for the following purposes:"
-            }), (0, n.jsxs)("ol", {
-                children: [(0, n.jsx)("li", {
-                    children: "to provide you with any services or functionality you have requested, including the Services;"
-                }), (0, n.jsx)("li", {
-                    children: "to improve the Site and/or Services, and to inform the creation of future Services;"
-                }), (0, n.jsx)("li", {
-                    children: "to send you information related to the Site and/or Services, including confirmations, Site news, technical notices, updates, security alerts, and support and administrative messages;"
-                }), (0, n.jsx)("li", {
-                    children: "to process transactions for the Services;"
-                }), (0, n.jsx)("li", {
-                    children: "to manage your Account with Gimkit;"
-                }), (0, n.jsx)("li", {
-                    children: "to respond to customer support inquiries;"
-                }), (0, n.jsx)("li", {
-                    children: "to troubleshoot problems with the Site and/or Services;"
-                }), (0, n.jsxs)("li", {
-                    children: ["to enforce our Terms of Service (available at", " ", (0, n.jsx)("a", {
-                        href: "https://www.gimkit.com/terms-of-service",
-                        children: "https://www.gimkit.com/terms-of-service"
-                    }), ");"]
-                }), (0, n.jsx)("li", {
-                    children: "to protect against unlawful activities or other misuses of the Site and/or and Services or for other security reasons;"
-                }), (0, n.jsx)("li", {
-                    children: "to compile statistics;"
-                }), (0, n.jsx)("li", {
-                    children: "for Educators only, to invite you to participate in Gimkit surveys, special events, or other activities;"
-                }), (0, n.jsx)("li", {
-                    children: "to allow you to share your Content with your colleagues, friends or family;"
-                }), (0, n.jsx)("li", {
-                    children: "to authenticate your identity; and"
-                }), (0, n.jsx)("li", {
-                    children: "to integrate third-party authentication from trusted Single Sign-On providers, including Google or Microsoft."
-                })]
-            }), (0, n.jsxs)("p", {
-                children: ["By providing Personal Information through the access to, or use of, the Site and any of the Services, you acknowledge, consent and agree that we may use the Personal Information for the purposes set out in this Privacy Policy and by accessing or using any of the Site and/or Services or submitting information to us you also agree that we may use the Non-Personal Information for the purposes set out in this Privacy Policy.", " "]
-            }), (0, n.jsx)("h2", {
-                id: "-how-we-handle-personal-information-",
-                children: "How We Handle Personal Information"
-            }), (0, n.jsx)("p", {
-                children: "We take all measures reasonably necessary to protect against the unauthorized access, use, alteration, or destruction of Personal Information. We disclose Personal Information only on an as-needed (or required) basis as follows:"
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsx)("li", {
-                    children: "With our employees who: (i) need to know that information to process it on our behalf or to provide the Services; and (ii) who have expressly agreed not to disclose it to others."
-                }), (0, n.jsx)("li", {
-                    children: "As required by law (including but not limited to COPPA and FERPA regulations) such as to comply with a subpoena or similar legal process. To the extent we are legally permitted to do so, we will take commercially reasonable steps to notify you if we are required to provide your Personal Information to third parties as part of a legal process."
-                }), (0, n.jsx)("li", {
-                    children: "When we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a written government request."
-                }), (0, n.jsx)("li", {
-                    children: "If we become involved in a merger, acquisition, or any form of sale of some or all of Gimkit's assets. In the event of a merger, acquisition, or any form of sale of some or all of our assets, we will ensure that the acquiring organization agrees to protect Personal Information in accordance with the commitments we have made in this Privacy Policy, and that the acquiring organization will provide notice before Personal Information, customer information, or business information becomes subject to a different privacy notice."
-                })]
-            }), (0, n.jsx)("h2", {
-                id: "-protection-of-your-information-",
-                children: "Protection of Your Information"
-            }), (0, n.jsx)("p", {
-                children: "Gimkit has implemented reasonable physical and technical measures to protect the information we collect or are provided with from access and against loss, misuse, or alteration by third parties, including but not limited to:"
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsx)("li", {
-                    children: "Encryption of database data in transit and at rest;"
-                }), (0, n.jsx)("li", {
-                    children: "Use of SSL / HTTPS for all data transmission over the Internet;"
-                }), (0, n.jsx)("li", {
-                    children: "Multifactor authentication on administrator-level access;"
-                }), (0, n.jsx)("li", {
-                    children: "Code reviews and scans to monitor for security vulnerabilities;"
-                }), (0, n.jsx)("li", {
-                    children: "Firewalls, private keys, IP address whitelists, and encrypted local hard drives."
-                })]
-            }), (0, n.jsx)("p", {
-                children: "Further, while we attempt to ensure the integrity and security of our network and systems, we cannot guarantee that our security measures will prevent third-party “hackers” from illegally obtaining access to this information. We do not warrant or represent that your information will be protected against, loss, misuse, or alteration by third parties. No method of transmission over the Internet, or method of electronic storage, is 100% secure."
-            }), (0, n.jsx)("p", {
-                children: "Gimkit strives to exceed commercially reasonable efforts to protect your Personal Information, however, to the maximum extent permitted by law, we expressly disclaim any guarantee of security in connection with your Personal Information."
-            }), (0, n.jsx)("h2", {
-                id: "specific-third-party-services-",
-                children: "Specific Third-Party Services"
-            }), (0, n.jsxs)("p", {
-                children: ["Gimkit may use third-party service providers to help us provide, analyze, and improve our services, including but not limited to data storage, maintenance services, payment processing, web analytics, email communications, and management. We only share student data with trusted third-party partners whose privacy policies, practices, and commitments are consistent with ours. The third parties we work with may access your information and can only do so to support our services and have similar expectations with caring for your private information.", " "]
-            }), (0, n.jsx)("p", {
-                children: "As of the date of this policy, the third parties we use who access your information include but are not limited to:"
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsx)("li", {
-                    children: "Digital Ocean, Heroku, AWS, & Mongo Atlas for site & database hosting"
-                }), (0, n.jsx)("li", {
-                    children: "Stripe for payment processing"
-                }), (0, n.jsx)("li", {
-                    children: "Cloudinary for image & audio storage"
-                }), (0, n.jsx)("li", {
-                    children: "Google Analytics for website analytics"
-                }), (0, n.jsx)("li", {
-                    children: "Mailjet for email communications"
-                })]
-            }), (0, n.jsxs)("p", {
-                children: ["Please visit our", " ", (0, n.jsx)("strong", {
-                    children: (0, n.jsx)("a", {
-                        href: "https://help.gimkit.com/en/article/third-parties-gimkit-uses-18k9i1w/",
-                        children: "Third Party List"
-                    })
-                }), " ", "for our complete, updated list of third parties we work with and what we use them for."]
-            }), (0, n.jsx)("h2", {
-                id: "-incident-response-plan-",
-                children: "Incident Response Plan"
-            }), (0, n.jsx)("p", {
-                children: "If we discover or receive reports of a security breach, we will take the following steps to address it:"
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsx)("li", {
-                    children: "The staff member who detects or receives a report of a breach will forward all details to Gimkit’s Leadership Team"
-                }), (0, n.jsxs)("li", {
-                    children: ["The Leadership Team will:", (0, n.jsxs)("ol", {
-                        children: [(0, n.jsx)("li", {
-                            children: "Determine the severity of the potential impact. Is it real or perceived? Is it still in progress? What data is threatened and how critical is it? What is the impact on the business should the attack succeed – minimal, serious, or critical?"
-                        }), (0, n.jsx)("li", {
-                            children: "If the breach is real, determine the system(s) being targeted, along with all relevant details such as the attacker's IP address."
-                        }), (0, n.jsx)("li", {
-                            children: "Determine how the incident can be contained, and contain it. This may involve changing passwords, encryption keys, or other system access information."
-                        }), (0, n.jsx)("li", {
-                            children: "Determine what data has been compromised, and who should be notified about the incident."
-                        }), (0, n.jsx)("li", {
-                            children: "Notify affected parties by email, including relevant details including the data that was compromised and the measures being taken to prevent future incidents."
-                        }), (0, n.jsx)("li", {
-                            children: "Document the incident, including date detected, date occurred, notifications issued, and response."
-                        }), (0, n.jsx)("li", {
-                            children: "Consider how the intrusion could have been prevented, and make changes to systems and/or policies accordingly."
-                        })]
-                    })]
-                })]
-            }), (0, n.jsx)("h2", {
-                id: "-retention-of-your-information-",
-                children: "Retention of Your Information"
-            }), (0, n.jsxs)("p", {
-                children: ["The data and information we collect is stored and maintained by Gimkit or our third-party service providers until you delete it or instruct us to delete it, or until it is deleted by us either for violation of this Privacy Policy or our Terms of Service agreement or following 18 months of inactivity. We will retain a backup of the data and information we collect for a period of 30 days after your Account is deleted, at which time all backup information will be permanently deleted. We only retain data for as long as is reasonably necessary to fulfill the purpose for which the information was collected.", " "]
-            }), (0, n.jsxs)("p", {
-                children: ["To view and update your information, or to delete your Account, log in to your Account and visit", " ", (0, n.jsx)("a", {
-                    href: "https://www.gimkit.com/settings",
-                    children: "https://www.gimkit.com/settings"
-                }), " ", "or email us at", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), "", "with specific details, including the email address on the Account. We will only make changes to your Account, including deleting your Account, if you correspond with us using the email address associated with your Account or can verify your identity by providing photo identification or Account information only you could know."]
-            }), (0, n.jsx)("p", {
-                children: "Currently, Gimkit or our third-party service providers retain and store information collected by, or provided to, us in the cloud and on secure servers in the United States. You hereby consent to Gimkit storing any Personal Information you provide to us on secure servers in the United States."
-            }), (0, n.jsx)("h2", {
-                id: "-access-and-accuracy-of-information-",
-                children: "Access and Accuracy of Information"
-            }), (0, n.jsxs)("p", {
-                children: ["To review, access, or update your Personal Information, to review the accuracy of the data we collected, or to request Account deletion, visit the Settings section in your Account at", " ", (0, n.jsx)("a", {
-                    href: "http://www.gimkit.com/settings",
-                    children: "www.gimkit.com/settings"
-                }), " ", "or contact us at", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), ".", " "]
-            }), (0, n.jsxs)("p", {
-                children: ["Account deletion is accomplished by Gimkit modifying Personal Information of the Account to make it unreadable or indecipherable. This is our preferred method that complies with applicable laws and minimizes disruption in services.", " "]
-            }), (0, n.jsx)("p", {
-                children: "Subject to applicable law, including COPPA, Gimkit reserves the right to deny access to your Personal Information on any of the following grounds:"
-            }), (0, n.jsxs)("ol", {
-                children: [(0, n.jsx)("li", {
-                    children: "when denial of access is required by law;"
-                }), (0, n.jsx)("li", {
-                    children: "when granting you access is reasonably likely to negatively impact other people's privacy;"
-                }), (0, n.jsx)("li", {
-                    children: "when granting access is, in our judgment and acting reasonably, cost-prohibitive; or"
-                }), (0, n.jsx)("li", {
-                    children: "when we have reason to believe that such requests are frivolous or made in bad faith."
-                })]
-            }), (0, n.jsxs)("p", {
-                children: ["You are responsible for ensuring that all information created through your access to and use of the Site and/or Services is accurate, reliable, and complete. You acknowledge and accept that the use of such information is at your own risk. We can only provide accurate Services if we are in possession of your current and accurate information, therefore, we ask that you keep any Personal Information that you provide to us current and accurate. You represent and warrant that all Personal Information you provide us is true and accurate and relates to you and not to any other person.", " "]
-            }), (0, n.jsxs)("p", {
-                children: ["If you believe that the Personal Information maintained by Gimkit about you is inaccurate or incomplete, you may make updates to the information directly in your Account or notify us by describing in detail any inaccuracies or omissions via email at", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), ". Following receipt of a properly submitted notice, we will, within a reasonable time period and acting in our sole discretion, use commercially reasonable efforts to either: (a) amend or correct your Personal Information to reflect corrected or additional information provided by you, or (b) in connection with your Personal Information, make note of any claimed inaccuracies or omissions reported in the notice submitted by you."]
-            }), (0, n.jsx)("h2", {
-                id: "account-security",
-                children: "Account Security"
-            }), (0, n.jsxs)("p", {
-                children: ["If you access the Site and/or use any of the Services, you are responsible for protecting the confidentiality of your Account password and for restricting access to your computer and you agree to accept responsibility for all activities that occur under your Account. We encourage you to help us by also taking precautions to protect your personal data when you use the Services. Change your Account password often, using a combination of letters, numbers, and characters, and make sure you use a secure connection when using the Site and/or Services. Please notify us immediately if you detect suspected misuse of your Account via email at:", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), "."]
-            }), (0, n.jsx)("h2", {
-                id: "our-policy-regarding-children",
-                children: "Our Policy Regarding Children"
-            }), (0, n.jsxs)("p", {
-                children: ["Gimkit recognizes the privacy interest of children and we encourage Parents and Guardians to take an active role in their children’s use of the Site and/or Services. Children under the age of thirteen (13) in the United States, or sixteen (16) outside of the United States, may only create Accounts on and submit Personal Information to the Site and/or Services through our Classes system as described above in the ", (0, n.jsx)("strong", {
-                    children: "Student Account"
-                }), " section of this policy. If an Educator wishes for a Student under the age of thirteen (13) in the United States, or sixteen (16) outside of the United States (each a “Permitted Minor”), to use the Site and/or Services with a Student Account, after obtaining consent from the Permitted Minor's parent or legal guardian, the Educator may use our Classes system to provide a Invitation Link to the Permitted Minor so the Permitted Minor can register a Student Account. Any educator who uses our Classes system and/or presents a Invitation Link to a permitted minor for a permitted minor hereby represents and warrants that the educator has obtained the necessary consent(s) from the parent or legal guardian of each permitted minor as required under this privacy policy.", " "]
-            }), (0, n.jsxs)("p", {
-                children: ["If a parent/guardian or Educator becomes aware that a Student under the age of thirteen (13) in the United States, or sixteen (16) outside of the United States, has accessed the Site and/or Services on their own, registered for Gimkit in a way that violates this Policy or our Terms of Service, or provided us with inaccurate information, contact us at ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), ". We will delete such information from our files within a reasonable time."]
-            }), (0, n.jsx)("p", {
-                children: "If we believe a Child has registered for Gimkit and is under the age of thirteen (13) in the United States, under sixteen (16) outside of the United States, has not received parental consent as described above, or is otherwise in violation of this Policy or our Terms of Service we may restrict or remove access to the Site and/or Services at our sole discretion."
-            }), (0, n.jsx)("h2", {
-                id: "-ferpa-compliance-",
-                children: "FERPA Compliance"
-            }), (0, n.jsx)("p", {
-                children: "While we don’t anticipate that the data created by using Gimkit constitutes FERPA Records today, if such data does amount to FERPA Records we agree to comply with the regulations of FERPA."
-            }), (0, n.jsx)("p", {
-                children: "Gimkit encourages gameplay that may result in scores or results that might be subject to the Family Educational Rights and Privacy Act (FERPA). If this is the case, then you designate Gimkit to serve as a “School Official” (as used in FERPA regulations) under the direct control of the respective school concerning the maintenance of FERPA Records."
-            }), (0, n.jsx)("h2", {
-                id: "coppa-and-students-",
-                children: "COPPA and Students"
-            }), (0, n.jsx)("p", {
-                children: (0, n.jsx)("strong", {
-                    children: "Notice to Parents and Schools"
-                })
-            }), (0, n.jsxs)("p", {
-                children: ['Under the United States Children’s Online Privacy Protection Act ("COPPA"), verifiable parental consent is needed to collect, use, or disclose Personal Information (e.g., full name and email address) from each user under 13 years old. In accordance with COPPA, an Educator may act as the agent of the parent or legal guardian of a Student and provide consent on their behalf for Gimkit\'s collection, use, and disclosure of the Student’s Personal Information. By enrolling a Student under 13 to use the Service using our Classes system, the School provides such consent to Gimkit and agrees that the Students’ activities while on the Service are subject to our Terms of Service.', " "]
-            }), (0, n.jsx)("p", {
-                children: "This Privacy Policy does not govern any School's collection, use, or disclosure of a Student user’s Personal Information through the Service, and we are not responsible for any such collection, use, or disclosure. Parents should contact the Educator or School directly to understand the Educator’s or School's privacy practices or to request to access, change, or delete information collected by the Educator or School in connection with the Service that cannot otherwise be accessed, changed or deleted as described in this Privacy Policy."
-            }), (0, n.jsxs)("p", {
-                children: ["As required under COPPA, parents can make certain choices regarding how their child’s information is used. For more details, see “Parent’s Choices Regarding Information on Students Under 13”. Parents should submit these requests to the Educators, who, as the parent’s agent, must pass those requests to us by emailing", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), "."]
-            }), (0, n.jsx)("p", {
-                children: (0, n.jsx)("strong", {
-                    children: "Parent’s Choices Regarding Information on Students Under 13"
-                })
-            }), (0, n.jsxs)("p", {
-                children: ["Under COPPA, parents of Students under 13 have certain rights with respect to our collection, use, retention, and disclosure of their Students' information. This includes the right to review, update, or delete Student information, as well as prohibit our sharing Student information with third parties. Parents can exercise these rights by contacting the Student’s Educator, who should submit these requests, on the parent’s behalf, to Gimkit by emailing", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), ". Notwithstanding any such requests, we may continue to share the Student information as described in this Policy."]
-            }), (0, n.jsxs)("p", {
-                children: ["A Parent should request deletion of the Student’s information (such as email submitted for joining a Class) through the Educator. Upon receiving such requests, the Educator can request deletion of the Student’s information by emailing", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), ". This action will allow us to delete the Student information from our live databases. Students or Parents with access to the Student Account can also delete the Account and all Personal Information we collected from inside of the Account from", " ", (0, n.jsx)("a", {
-                    href: "http://www.gimkit.com/settings",
-                    children: "www.gimkit.com/settings"
-                }), ". We will not have any liability whatsoever for any termination of the Account or related deletion of the Student information. When we delete Personal Information, it will be deleted from our active databases but may remain in our archives for 30 days."]
-            }), (0, n.jsxs)("p", {
-                children: ["Schools and Gimkit Educators should always obtain parental consent for a Student under 13 in the United States to use the Service using your school or district's forms and documentation for obtaining parental consent or Gimkit's", " ", (0, n.jsx)("a", {
-                    href: "https://drive.google.com/file/d/1GIN_lLlrXD47C66XDggn4d-pN4jBi8oj/view?usp=sharing",
-                    children: "Parent Consent Form"
-                }), "."]
-            }), (0, n.jsx)("h2", {
-                id: "rights-of-california-residents",
-                children: "Rights of California Residents"
-            }), (0, n.jsx)("h3", {
-                id: "-california-consumer-privacy-act-",
-                children: "California Consumer Privacy Act"
-            }), (0, n.jsx)("p", {
-                children: "If you are a California resident, we process your personal data in accordance with the California Consumer Privacy Act (CCPA). This CCPA section of our Privacy Policy contains information required by the CCPA and supplements our Privacy Policy."
-            }), (0, n.jsxs)("p", {
-                children: [(0, n.jsx)("strong", {
-                    children: "Sale."
-                }), " We do not sell your Personal Information. So, we do not offer an opt-out to the sale of Personal Information."]
-            }), (0, n.jsxs)("p", {
-                children: [(0, n.jsx)("strong", {
-                    children: "Rights."
-                }), " You have the right to request that we (i) disclose what Personal Information we collect, use, disclose, and sell and (ii) delete your Personal Information. You may make these requests yourself or through an authorized agent. If you use an authorized agent, we may request information from you or the agent demonstrating that the agent is acting on your behalf."]
-            }), (0, n.jsxs)("p", {
-                children: ["If you are an Educator or Student, you must exercise your rights through ", (0, n.jsx)("a", {
-                    href: "http://www.gimkit.com",
-                    children: "www.gimkit.com"
-                }), ". You can view all information collected on you from inside of your Account. If you have an additional request or questions after reviewing your information through ", (0, n.jsx)("a", {
-                    href: "http://www.gimkit.com",
-                    children: "www.gimkit.com"
-                }), ", or if you are not an Educator or Student, you may exercise your rights by contacting Gimkit by email at", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), ". We may ask for additional information to validate your identity and request before honoring it."]
-            }), (0, n.jsx)("p", {
-                children: "You have a right not to receive discriminatory treatment if you exercise your CCPA rights. We will not discriminate against you if you exercise your CCPA rights."
-            }), (0, n.jsxs)("p", {
-                children: [(0, n.jsx)("strong", {
-                    children: "Personal Information Processing."
-                }), " In the bulleted list below, we outline the categories of Personal Information we collect, the sources of the Personal Information, our purposes of processing, and the categories of third-party recipients with whom we share the Personal Information. For details about the information we collect, see the ", (0, n.jsx)("strong", {
-                    children: "Information We Collect"
-                }), " section above."]
-            }), (0, n.jsx)("p", {
-                children: "Categories of Personal Information:"
-            }), (0, n.jsx)("p", {
-                children: (0, n.jsx)("strong", {
-                    children: "Educator Personal Information"
-                })
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsx)("li", {
-                    children: "Sources of Personal Information: Submission by Educator and trusted third-party Account providers such as Google or Microsoft."
-                }), (0, n.jsx)("li", {
-                    children: "Purposes of Processing (Collection and Sharing with Third Parties): Provide, improve, and develop the Service; provide customer support; communicate with Educators including as related to events, opportunities, news, and technical or administrative messages; comply with applicable laws; and for other purposes with Educator permission."
-                }), (0, n.jsx)("li", {
-                    children: "Recipients: Service providers and Educator-directed individuals and entities including other users and external sites."
-                })]
-            }), (0, n.jsx)("p", {
-                children: (0, n.jsx)("strong", {
-                    children: "Student Personal Information"
-                })
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsx)("li", {
-                    children: "Sources of Personal Information: Submission by Educator, Students, and trusted third party Account providers such as Google or Microsoft."
-                }), (0, n.jsx)("li", {
-                    children: "Purposes of Processing (Collection and Sharing with Third Parties): Provide, improve and develop the Service, provide customer service, communicate with Students including as related to technical or administrative messages; comply with applicable laws."
-                }), (0, n.jsx)("li", {
-                    children: "Recipients: Service providers and Educator-directed individuals and entities including other users and external sites"
-                })]
-            }), (0, n.jsx)("p", {
-                children: (0, n.jsx)("strong", {
-                    children: "Automatically Collected Information"
-                })
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsx)("li", {
-                    children: "Sources of Personal Information: Interactions with users, including Educators and Students"
-                }), (0, n.jsx)("li", {
-                    children: "Purposes of Processing (Collection and Sharing with Third Parties): Provide, improve and develop the Service; provide customer service; comply with applicable laws; and for other purposes with user permission"
-                }), (0, n.jsx)("li", {
-                    children: "Recipients: Service providers and user-directed entities"
-                })]
-            }), (0, n.jsx)("p", {
-                children: (0, n.jsx)("strong", {
-                    children: "Personal Information Collected through Cookies and Similar Technologies"
-                })
-            }), (0, n.jsxs)("ul", {
-                children: [(0, n.jsx)("li", {
-                    children: "Sources of Personal Information: Interactions with users, including Educators and Students"
-                }), (0, n.jsx)("li", {
-                    children: "Purposes of Processing (Collection and Sharing with Third Parties): Provide, improve and develop the Service; provide customer service; communicate with Users including as related to events, opportunities and news; comply with applicable laws; and for other purposes with user permission"
-                }), (0, n.jsx)("li", {
-                    children: "Recipients: Service providers and user-directed entities"
-                })]
-            }), (0, n.jsxs)("p", {
-                children: ["While the bulleted list above contains the primary sources and purposes of processing for each category of Personal Information, we may collect Personal Information from any of the sources listed in the Information Gimkit Collects section above. Similarly, we may process any category of Personal Information for any of the purposes described in the ", (0, n.jsx)("strong", {
-                    children: "Use of Your Information"
-                }), " section above.", " "]
-            }), (0, n.jsx)("p", {
-                children: (0, n.jsx)("strong", {
-                    children: "Disclosures of Personal Information for business or commercial purposes"
-                })
-            }), (0, n.jsx)("p", {
-                children: "As indicated in this Policy, we may share Personal Information with third parties for various business and commercial purposes. The primary business and commercial purposes for which we share Personal Information are the purposes of processing listed in this section. However, we may share any category of Personal Information for any of the business and commercial purposes in this Policy."
-            }), (0, n.jsx)("h2", {
-                id: "-other-rights-",
-                children: "Other Rights"
-            }), (0, n.jsxs)("p", {
-                children: ["Gimkit complies with California's \"Shine the Light\" law, as applicable. Gimkit does not share Students’ personal information with third-party marketers (Gimkit does not share the Personal Information of ANY user with third-party marketers). If you are a California resident you can request a list of Personal Information about you we have disclosed to all third parties in the preceding calendar year, as well as the names and addresses of those third parties. You may make such a request only once per year, and you don't have to pay for it. To make a request, send an email to", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), " or send a written request to Gimkit, PO BOX 19833, Seattle, WA 98109."]
-            }), (0, n.jsx)("h2", {
-                id: "-gimkit-business-transfer-",
-                children: "Gimkit Business Transfer"
-            }), (0, n.jsx)("p", {
-                children: "If our ownership substantially changes, such that all of its assets were acquired or merged into another entity, or in the unlikely event that we enter bankruptcy, you understand that any stored personally identifying, and non-personally-identifying information and data will likely be one of the assets transferred or acquired by a third party. You acknowledge that such transfers may occur and that any acquirer of our merging entity may continue to use your Personal Information in compliance with this policy."
-            }), (0, n.jsx)("h2", {
-                id: "-feedback-",
-                children: "Feedback"
-            }), (0, n.jsxs)("p", {
-                children: ["If you send us a request (via a", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "support email"
-                }), " or one of our feedback channels), we reserve the right to publish it (with all Personal Information removed) to help us clarify or respond to your request or to help us support other users (e.g. create an FAQ database or share an answer to a specific question)."]
-            }), (0, n.jsx)("h2", {
-                id: "-questions-",
-                children: "Questions"
-            }), (0, n.jsxs)("p", {
-                children: ["We welcome questions and comments about our Privacy Policy. If you have questions about this Policy, the information we have collected about you, updating your information, or Account deletion please contact us at", " ", (0, n.jsx)("a", {
-                    href: "mailto:privacy@gimkit.com",
-                    children: "privacy@gimkit.com"
-                }), "."]
-            })]
-        })]
-    });
-    const m = a.default.div(c || (c = h`
-  background: rgba(0, 0, 0, 0.03);
-  padding: 30px 40px;
-  border-radius: 10px;
-  margin-top: 20px;
-  border: 4px solid rgba(0, 0, 0, 0.3);
-`)),
-        p = a.default.div.attrs({
-            className: "flex-column flex-center max-width"
-        })(l || (l = h``)),
-        y = a.default.div(d || (d = h`
-  font-weight: ${0};
-  font-size: 36px;
-`), s.FontWeights.UltraBold),
-        g = a.default.div(u || (u = h`
-  font-size: 21px;
-  color: rgba(0, 0, 0, 0.9);
-`))
-})), i.register("kuEJ4", (function(t, o) {
+})), r.register("kuEJ4", (function(t, n) {
     e(t.exports, "default", (function() {
         return s
     }));
-    var n = i("iI4DW"),
-        r = i("fywoC"),
-        a = i("4gMdJ");
+    var i = r("iI4DW"),
+        o = r("fywoC"),
+        a = r("4gMdJ");
 
-    function s(e, t, i) {
-        return function(o) {
+    function s(e, t, r) {
+        return function(n) {
             const {
                 prefixCls: s,
                 style: c
-            } = o, l = r.useRef(null), [d, u] = r.useState(0), [h, f] = r.useState(0), [m, p] = (0, n.default)(!1, {
-                value: o.open
+            } = n, l = o.useRef(null), [u, d] = o.useState(0), [h, f] = o.useState(0), [m, p] = (0, i.default)(!1, {
+                value: n.open
             }), {
                 getPrefixCls: y
-            } = r.useContext(a.ConfigContext), g = y(t || "select", s);
-            return r.useEffect((() => {
+            } = o.useContext(a.ConfigContext), g = y(t || "select", s);
+            return o.useEffect((() => {
                 if (p(!0), "undefined" != typeof ResizeObserver) {
                     const e = new ResizeObserver((e => {
                             const t = e[0].target;
-                            u(t.offsetHeight + 8), f(t.offsetWidth)
+                            d(t.offsetHeight + 8), f(t.offsetWidth)
                         })),
                         t = setInterval((() => {
-                            var o;
-                            const n = i ? `.${i(g)}` : `.${g}-dropdown`,
-                                r = null === (o = l.current) || void 0 === o ? void 0 : o.querySelector(n);
-                            r && (clearInterval(t), e.observe(r))
+                            var n;
+                            const i = r ? `.${r(g)}` : `.${g}-dropdown`,
+                                o = null === (n = l.current) || void 0 === n ? void 0 : n.querySelector(i);
+                            o && (clearInterval(t), e.observe(o))
                         }), 10);
                     return () => {
                         clearInterval(t), e.disconnect()
                     }
                 }
-            }), []), r.createElement(a.default, {
+            }), []), o.createElement(a.default, {
                 theme: {
                     token: {
                         motionDurationFast: "0.01s",
@@ -824,15 +455,15 @@ i.register("gO6da", (function(t, o) {
                         motionDurationSlow: "0.01s"
                     }
                 }
-            }, r.createElement("div", {
+            }, o.createElement("div", {
                 ref: l,
                 style: {
-                    paddingBottom: d,
+                    paddingBottom: u,
                     position: "relative",
                     width: "fit-content",
                     minWidth: h
                 }
-            }, r.createElement(e, Object.assign({}, o, {
+            }, o.createElement(e, Object.assign({}, n, {
                 style: Object.assign(Object.assign({}, c), {
                     margin: 0
                 }),
@@ -842,13 +473,13 @@ i.register("gO6da", (function(t, o) {
             }))))
         }
     }
-})), i.register("hacAX", (function(t, o) {
+})), r.register("hacAX", (function(t, n) {
     e(t.exports, "initMoveMotion", (function() {
         return f
     }));
-    var n = i("lt5sb"),
-        r = i("aWAHQ");
-    const a = new(0, n.Keyframes)("antMoveDownIn", {
+    var i = r("lt5sb"),
+        o = r("aWAHQ");
+    const a = new(0, i.Keyframes)("antMoveDownIn", {
             "0%": {
                 transform: "translate3d(0, 100%, 0)",
                 transformOrigin: "0 0",
@@ -860,7 +491,7 @@ i.register("gO6da", (function(t, o) {
                 opacity: 1
             }
         }),
-        s = new(0, n.Keyframes)("antMoveDownOut", {
+        s = new(0, i.Keyframes)("antMoveDownOut", {
             "0%": {
                 transform: "translate3d(0, 0, 0)",
                 transformOrigin: "0 0",
@@ -872,7 +503,7 @@ i.register("gO6da", (function(t, o) {
                 opacity: 0
             }
         }),
-        c = new(0, n.Keyframes)("antMoveLeftIn", {
+        c = new(0, i.Keyframes)("antMoveLeftIn", {
             "0%": {
                 transform: "translate3d(-100%, 0, 0)",
                 transformOrigin: "0 0",
@@ -884,7 +515,7 @@ i.register("gO6da", (function(t, o) {
                 opacity: 1
             }
         }),
-        l = new(0, n.Keyframes)("antMoveLeftOut", {
+        l = new(0, i.Keyframes)("antMoveLeftOut", {
             "0%": {
                 transform: "translate3d(0, 0, 0)",
                 transformOrigin: "0 0",
@@ -896,7 +527,7 @@ i.register("gO6da", (function(t, o) {
                 opacity: 0
             }
         }),
-        d = new(0, n.Keyframes)("antMoveRightIn", {
+        u = new(0, i.Keyframes)("antMoveRightIn", {
             "0%": {
                 transform: "translate3d(100%, 0, 0)",
                 transformOrigin: "0 0",
@@ -908,7 +539,7 @@ i.register("gO6da", (function(t, o) {
                 opacity: 1
             }
         }),
-        u = new(0, n.Keyframes)("antMoveRightOut", {
+        d = new(0, i.Keyframes)("antMoveRightOut", {
             "0%": {
                 transform: "translate3d(0, 0, 0)",
                 transformOrigin: "0 0",
@@ -922,7 +553,7 @@ i.register("gO6da", (function(t, o) {
         }),
         h = {
             "move-up": {
-                inKeyframes: new(0, n.Keyframes)("antMoveUpIn", {
+                inKeyframes: new(0, i.Keyframes)("antMoveUpIn", {
                     "0%": {
                         transform: "translate3d(0, -100%, 0)",
                         transformOrigin: "0 0",
@@ -934,7 +565,7 @@ i.register("gO6da", (function(t, o) {
                         opacity: 1
                     }
                 }),
-                outKeyframes: new(0, n.Keyframes)("antMoveUpOut", {
+                outKeyframes: new(0, i.Keyframes)("antMoveUpOut", {
                     "0%": {
                         transform: "translate3d(0, 0, 0)",
                         transformOrigin: "0 0",
@@ -956,53 +587,53 @@ i.register("gO6da", (function(t, o) {
                 outKeyframes: l
             },
             "move-right": {
-                inKeyframes: d,
-                outKeyframes: u
+                inKeyframes: u,
+                outKeyframes: d
             }
         },
         f = (e, t) => {
             const {
-                antCls: i
-            } = e, o = `${i}-${t}`, {
-                inKeyframes: n,
+                antCls: r
+            } = e, n = `${r}-${t}`, {
+                inKeyframes: i,
                 outKeyframes: a
             } = h[t];
-            return [(0, r.initMotion)(o, n, a, e.motionDurationMid), {
-                [`\n        ${o}-enter,\n        ${o}-appear\n      `]: {
+            return [(0, o.initMotion)(n, i, a, e.motionDurationMid), {
+                [`\n        ${n}-enter,\n        ${n}-appear\n      `]: {
                     opacity: 0,
                     animationTimingFunction: e.motionEaseOutCirc
                 },
-                [`${o}-leave`]: {
+                [`${n}-leave`]: {
                     animationTimingFunction: e.motionEaseInOutCirc
                 }
             }]
         }
-})), i.register("i5Qjx", (function(o, n) {
-    e(o.exports, "SpaceContext", (function() {
+})), r.register("i5Qjx", (function(n, i) {
+    e(n.exports, "SpaceContext", (function() {
         return m
     }), (function(e) {
         return m = e
-    })), e(o.exports, "default", (function() {
+    })), e(n.exports, "default", (function() {
         return g
     }), (function(e) {
         return g = e
     }));
-    var r = i("fe1on"),
-        a = i("jyxW7"),
-        s = i("fywoC"),
-        c = i("4gMdJ"),
-        l = i("1eqVQ"),
-        d = i("7yXSw"),
-        u = i("c9Vcn"),
-        h = i("5gjI2"),
+    var o = r("fe1on"),
+        a = r("jyxW7"),
+        s = r("fywoC"),
+        c = r("4gMdJ"),
+        l = r("1eqVQ"),
+        u = r("7yXSw"),
+        d = r("c9Vcn"),
+        h = r("5gjI2"),
         f = function(e, t) {
-            var i = {};
-            for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (i[o] = e[o]);
+            var r = {};
+            for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
             if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-                var n = 0;
-                for (o = Object.getOwnPropertySymbols(e); n < o.length; n++) t.indexOf(o[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, o[n]) && (i[o[n]] = e[o[n]])
+                var i = 0;
+                for (n = Object.getOwnPropertySymbols(e); i < n.length; i++) t.indexOf(n[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[i]) && (r[n[i]] = e[n[i]])
             }
-            return i
+            return r
         };
     const m = s.createContext({
             latestIndex: 0,
@@ -1017,150 +648,150 @@ i.register("gO6da", (function(t, o) {
         };
     const y = e => {
         const {
-            getPrefixCls: i,
-            space: o,
-            direction: n
+            getPrefixCls: r,
+            space: n,
+            direction: i
         } = s.useContext(c.ConfigContext), {
-            size: d = (null == o ? void 0 : o.size) || "small",
+            size: u = (null == n ? void 0 : n.size) || "small",
             align: y,
             className: g,
             rootClassName: v,
-            children: w,
-            direction: x = "horizontal",
-            prefixCls: j,
-            split: b,
+            children: b,
+            direction: w = "horizontal",
+            prefixCls: x,
+            split: j,
             style: S,
-            wrap: P = !1
-        } = e, k = f(e, ["size", "align", "className", "rootClassName", "children", "direction", "prefixCls", "split", "style", "wrap"]), C = (0, l.default)(), [I, A] = s.useMemo((() => (Array.isArray(d) ? d : [d, d]).map((e => function(e) {
+            wrap: O = !1
+        } = e, C = f(e, ["size", "align", "className", "rootClassName", "children", "direction", "prefixCls", "split", "style", "wrap"]), E = (0, l.default)(), [T, k] = s.useMemo((() => (Array.isArray(u) ? u : [u, u]).map((e => function(e) {
             return "string" == typeof e ? p[e] : e || 0
-        }(e)))), [d]), E = (0, a.default)(w, {
+        }(e)))), [u]), A = (0, a.default)(b, {
             keepEmpty: !0
-        }), O = void 0 === y && "horizontal" === x ? "center" : y, G = i("space", j), [W, z] = (0, h.default)(G), N = t(r)(G, z, `${G}-${x}`, {
-            [`${G}-rtl`]: "rtl" === n,
-            [`${G}-align-${O}`]: O
-        }, g, v), R = `${G}-item`, T = "rtl" === n ? "marginLeft" : "marginRight";
-        let M = 0;
-        const q = E.map(((e, t) => {
-                null != e && (M = t);
-                const i = e && e.key || `${R}-${t}`;
-                return s.createElement(u.default, {
-                    className: R,
-                    key: i,
-                    direction: x,
+        }), I = void 0 === y && "horizontal" === w ? "center" : y, N = r("space", x), [M, R] = (0, h.default)(N), P = t(o)(N, R, `${N}-${w}`, {
+            [`${N}-rtl`]: "rtl" === i,
+            [`${N}-align-${I}`]: I
+        }, g, v), W = `${N}-item`, L = "rtl" === i ? "marginLeft" : "marginRight";
+        let U = 0;
+        const D = A.map(((e, t) => {
+                null != e && (U = t);
+                const r = e && e.key || `${W}-${t}`;
+                return s.createElement(d.default, {
+                    className: W,
+                    key: r,
+                    direction: w,
                     index: t,
-                    marginDirection: T,
-                    split: b,
-                    wrap: P
+                    marginDirection: L,
+                    split: j,
+                    wrap: O
                 }, e)
             })),
-            U = s.useMemo((() => ({
-                horizontalSize: I,
-                verticalSize: A,
-                latestIndex: M,
-                supportFlexGap: C
-            })), [I, A, M, C]);
-        if (0 === E.length) return null;
-        const D = {};
-        return P && (D.flexWrap = "wrap", C || (D.marginBottom = -A)), C && (D.columnGap = I, D.rowGap = A), W(s.createElement("div", Object.assign({
-            className: N,
-            style: Object.assign(Object.assign({}, D), S)
-        }, k), s.createElement(m.Provider, {
-            value: U
-        }, q)))
+            z = s.useMemo((() => ({
+                horizontalSize: T,
+                verticalSize: k,
+                latestIndex: U,
+                supportFlexGap: E
+            })), [T, k, U, E]);
+        if (0 === A.length) return null;
+        const F = {};
+        return O && (F.flexWrap = "wrap", E || (F.marginBottom = -k)), E && (F.columnGap = T, F.rowGap = k), M(s.createElement("div", Object.assign({
+            className: P,
+            style: Object.assign(Object.assign({}, F), S)
+        }, C), s.createElement(m.Provider, {
+            value: z
+        }, D)))
     };
-    y.Compact = d.default;
+    y.Compact = u.default;
     var g = y
-})), i.register("1eqVQ", (function(t, o) {
+})), r.register("1eqVQ", (function(t, n) {
     e(t.exports, "default", (function() {
         return a
     }));
-    var n = i("fywoC"),
-        r = i("azMeL"),
+    var i = r("fywoC"),
+        o = r("azMeL"),
         a = () => {
-            const [e, t] = n.useState(!1);
-            return n.useEffect((() => {
-                t((0, r.detectFlexGapSupported)())
+            const [e, t] = i.useState(!1);
+            return i.useEffect((() => {
+                t((0, o.detectFlexGapSupported)())
             }), []), e
         }
-})), i.register("c9Vcn", (function(t, o) {
+})), r.register("c9Vcn", (function(t, n) {
     e(t.exports, "default", (function() {
         return a
     }));
-    var n = i("fywoC"),
-        r = i("i5Qjx");
+    var i = r("fywoC"),
+        o = r("i5Qjx");
 
     function a(e) {
         let {
             className: t,
-            direction: i,
-            index: o,
+            direction: r,
+            index: n,
             marginDirection: a,
             children: s,
             split: c,
             wrap: l
         } = e;
         const {
-            horizontalSize: d,
-            verticalSize: u,
+            horizontalSize: u,
+            verticalSize: d,
             latestIndex: h,
             supportFlexGap: f
-        } = n.useContext(r.SpaceContext);
+        } = i.useContext(o.SpaceContext);
         let m = {};
-        return f || ("vertical" === i ? o < h && (m = {
-            marginBottom: d / (c ? 2 : 1)
-        }) : m = Object.assign(Object.assign({}, o < h && {
-            [a]: d / (c ? 2 : 1)
+        return f || ("vertical" === r ? n < h && (m = {
+            marginBottom: u / (c ? 2 : 1)
+        }) : m = Object.assign(Object.assign({}, n < h && {
+            [a]: u / (c ? 2 : 1)
         }), l && {
-            paddingBottom: u
-        })), null == s ? null : n.createElement(n.Fragment, null, n.createElement("div", {
+            paddingBottom: d
+        })), null == s ? null : i.createElement(i.Fragment, null, i.createElement("div", {
             className: t,
             style: m
-        }, s), o < h && c && n.createElement("span", {
+        }, s), n < h && c && i.createElement("span", {
             className: `${t}-split`,
             style: m
         }, c))
     }
-})), i.register("dhxiD", (function(e, t) {
-    var o = i("1fK2g"),
-        n = {
+})), r.register("dhxiD", (function(e, t) {
+    var n = r("1fK2g"),
+        i = {
             "text/plain": "Text",
             "text/html": "Url",
             default: "Text"
         };
     e.exports = function(e, t) {
-        var i, r, a, s, c, l, d = !1;
-        t || (t = {}), i = t.debug || !1;
+        var r, o, a, s, c, l, u = !1;
+        t || (t = {}), r = t.debug || !1;
         try {
-            if (a = o(), s = document.createRange(), c = document.getSelection(), (l = document.createElement("span")).textContent = e, l.ariaHidden = "true", l.style.all = "unset", l.style.position = "fixed", l.style.top = 0, l.style.clip = "rect(0, 0, 0, 0)", l.style.whiteSpace = "pre", l.style.webkitUserSelect = "text", l.style.MozUserSelect = "text", l.style.msUserSelect = "text", l.style.userSelect = "text", l.addEventListener("copy", (function(o) {
-                    if (o.stopPropagation(), t.format)
-                        if (o.preventDefault(), void 0 === o.clipboardData) {
-                            i && console.warn("unable to use e.clipboardData"), i && console.warn("trying IE specific stuff"), window.clipboardData.clearData();
-                            var r = n[t.format] || n.default;
-                            window.clipboardData.setData(r, e)
-                        } else o.clipboardData.clearData(), o.clipboardData.setData(t.format, e);
-                    t.onCopy && (o.preventDefault(), t.onCopy(o.clipboardData))
+            if (a = n(), s = document.createRange(), c = document.getSelection(), (l = document.createElement("span")).textContent = e, l.ariaHidden = "true", l.style.all = "unset", l.style.position = "fixed", l.style.top = 0, l.style.clip = "rect(0, 0, 0, 0)", l.style.whiteSpace = "pre", l.style.webkitUserSelect = "text", l.style.MozUserSelect = "text", l.style.msUserSelect = "text", l.style.userSelect = "text", l.addEventListener("copy", (function(n) {
+                    if (n.stopPropagation(), t.format)
+                        if (n.preventDefault(), void 0 === n.clipboardData) {
+                            r && console.warn("unable to use e.clipboardData"), r && console.warn("trying IE specific stuff"), window.clipboardData.clearData();
+                            var o = i[t.format] || i.default;
+                            window.clipboardData.setData(o, e)
+                        } else n.clipboardData.clearData(), n.clipboardData.setData(t.format, e);
+                    t.onCopy && (n.preventDefault(), t.onCopy(n.clipboardData))
                 })), document.body.appendChild(l), s.selectNodeContents(l), c.addRange(s), !document.execCommand("copy")) throw new Error("copy command was unsuccessful");
-            d = !0
-        } catch (o) {
-            i && console.error("unable to copy using execCommand: ", o), i && console.warn("trying IE specific stuff");
+            u = !0
+        } catch (n) {
+            r && console.error("unable to copy using execCommand: ", n), r && console.warn("trying IE specific stuff");
             try {
-                window.clipboardData.setData(t.format || "text", e), t.onCopy && t.onCopy(window.clipboardData), d = !0
-            } catch (o) {
-                i && console.error("unable to copy using clipboardData: ", o), i && console.error("falling back to prompt"), r = function(e) {
+                window.clipboardData.setData(t.format || "text", e), t.onCopy && t.onCopy(window.clipboardData), u = !0
+            } catch (n) {
+                r && console.error("unable to copy using clipboardData: ", n), r && console.error("falling back to prompt"), o = function(e) {
                     var t = (/mac os x/i.test(navigator.userAgent) ? "⌘" : "Ctrl") + "+C";
                     return e.replace(/#{\s*key\s*}/g, t)
-                }("message" in t ? t.message : "Copy to clipboard: #{key}, Enter"), window.prompt(r, e)
+                }("message" in t ? t.message : "Copy to clipboard: #{key}, Enter"), window.prompt(o, e)
             }
         } finally {
             c && ("function" == typeof c.removeRange ? c.removeRange(s) : c.removeAllRanges()), l && document.body.removeChild(l), a()
         }
-        return d
+        return u
     }
-})), i.register("1fK2g", (function(e, t) {
+})), r.register("1fK2g", (function(e, t) {
     e.exports = function() {
         var e = document.getSelection();
         if (!e.rangeCount) return function() {};
-        for (var t = document.activeElement, i = [], o = 0; o < e.rangeCount; o++) i.push(e.getRangeAt(o));
+        for (var t = document.activeElement, r = [], n = 0; n < e.rangeCount; n++) r.push(e.getRangeAt(n));
         switch (t.tagName.toUpperCase()) {
             case "INPUT":
             case "TEXTAREA":
@@ -1171,89 +802,89 @@ i.register("gO6da", (function(t, o) {
         }
         return e.removeAllRanges(),
             function() {
-                "Caret" === e.type && e.removeAllRanges(), e.rangeCount || i.forEach((function(t) {
+                "Caret" === e.type && e.removeAllRanges(), e.rangeCount || r.forEach((function(t) {
                     e.addRange(t)
                 })), t && t.focus()
             }
     }
-})), i.register("6WS0O", (function(t, i) {
+})), r.register("6WS0O", (function(t, r) {
     e(t.exports, "default", (function() {
-        return o
+        return n
     }));
-    var o = {
+    var n = {
         sideMargin: 50,
         optionWidth: 200
     }
-})), i.register("77qSl", (function(t, o) {
+})), r.register("77qSl", (function(t, n) {
     e(t.exports, "useMediaMatch", (function() {
-        return r
+        return o
     }));
-    var n = i("fywoC");
+    var i = r("fywoC");
 
-    function r(e) {
+    function o(e) {
         if ("undefined" == typeof window) return console.warn("useMediaMatch cannot function as window is undefined."), !1;
-        var t = (0, n.useMemo)((function() {
+        var t = (0, i.useMemo)((function() {
                 return window.matchMedia(e)
             }), [e]),
-            i = (0, n.useState)((function() {
+            r = (0, i.useState)((function() {
                 return t.matches
             })),
-            o = i[0],
-            r = i[1];
-        return (0, n.useEffect)((function() {
-            r(t.matches);
+            n = r[0],
+            o = r[1];
+        return (0, i.useEffect)((function() {
+            o(t.matches);
             var e = function(e) {
-                return r(e.matches)
+                return o(e.matches)
             };
             return t.addEventListener ? (t.addEventListener("change", e), function() {
                 return t.removeEventListener("change", e)
             }) : (t.addListener(e), function() {
                 return t.removeListener(e)
             })
-        }), [t]), o
+        }), [t]), n
     }
-})), i.register("3bHhZ", (function(e, t) {
-    var o = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, i, o) {
-            void 0 === o && (o = i), Object.defineProperty(e, o, {
+})), r.register("3bHhZ", (function(e, t) {
+    var n = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, r, n) {
+            void 0 === n && (n = r), Object.defineProperty(e, n, {
                 enumerable: !0,
                 get: function() {
-                    return t[i]
+                    return t[r]
                 }
             })
-        } : function(e, t, i, o) {
-            void 0 === o && (o = i), e[o] = t[i]
+        } : function(e, t, r, n) {
+            void 0 === n && (n = r), e[n] = t[r]
         }),
-        n = e.exports && e.exports.__exportStar || function(e, t) {
-            for (var i in e) "default" === i || Object.prototype.hasOwnProperty.call(t, i) || o(t, e, i)
+        i = e.exports && e.exports.__exportStar || function(e, t) {
+            for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || n(t, e, r)
         };
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
-    }), n(i("coa3i"), e.exports), n(i("exKSe"), e.exports), n(i("4Nv4f"), e.exports)
-})), i.register("coa3i", (function(e, t) {
+    }), i(r("coa3i"), e.exports), i(r("exKSe"), e.exports), i(r("4Nv4f"), e.exports)
+})), r.register("coa3i", (function(e, t) {
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.useBreakpoints = e.exports.useBreakpoint = void 0;
-    var o = i("4Nv4f");
+    var n = r("4Nv4f");
     e.exports.useBreakpoint = function(e) {
-        return (0, o.useWindowSize)().width < e
+        return (0, n.useWindowSize)().width < e
     }, e.exports.useBreakpoints = function(e) {
-        var t = (0, o.useWindowSize)().width;
+        var t = (0, n.useWindowSize)().width;
         return e.map((function(e) {
             return t < e
         }))
     }
-})), i.register("4Nv4f", (function(e, t) {
-    var o = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, i, o) {
-            void 0 === o && (o = i), Object.defineProperty(e, o, {
+})), r.register("4Nv4f", (function(e, t) {
+    var n = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, r, n) {
+            void 0 === n && (n = r), Object.defineProperty(e, n, {
                 enumerable: !0,
                 get: function() {
-                    return t[i]
+                    return t[r]
                 }
             })
-        } : function(e, t, i, o) {
-            void 0 === o && (o = i), e[o] = t[i]
+        } : function(e, t, r, n) {
+            void 0 === n && (n = r), e[n] = t[r]
         }),
-        n = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
+        i = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
             Object.defineProperty(e, "default", {
                 enumerable: !0,
                 value: t
@@ -1261,17 +892,17 @@ i.register("gO6da", (function(t, o) {
         } : function(e, t) {
             e.default = t
         }),
-        r = e.exports && e.exports.__importStar || function(e) {
+        o = e.exports && e.exports.__importStar || function(e) {
             if (e && e.__esModule) return e;
             var t = {};
             if (null != e)
-                for (var i in e) "default" !== i && Object.prototype.hasOwnProperty.call(e, i) && o(t, e, i);
-            return n(t, e), t
+                for (var r in e) "default" !== r && Object.prototype.hasOwnProperty.call(e, r) && n(t, e, r);
+            return i(t, e), t
         };
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.useWindowSize = void 0;
-    var a = r(i("fywoC"));
+    var a = o(r("fywoC"));
 
     function s() {
         return {
@@ -1282,10 +913,10 @@ i.register("gO6da", (function(t, o) {
     e.exports.useWindowSize = function() {
         var e = a.useState(s()),
             t = e[0],
-            i = e[1];
+            r = e[1];
         return a.useLayoutEffect((function() {
             function e() {
-                i(s())
+                r(s())
             }
             return window.addEventListener("resize", e),
                 function() {
@@ -1293,25 +924,25 @@ i.register("gO6da", (function(t, o) {
                 }
         }), []), t
     }
-})), i.register("exKSe", (function(e, t) {
-    var o = e.exports && e.exports.__assign || function() {
-            return o = Object.assign || function(e) {
-                for (var t, i = 1, o = arguments.length; i < o; i++)
-                    for (var n in t = arguments[i]) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);
+})), r.register("exKSe", (function(e, t) {
+    var n = e.exports && e.exports.__assign || function() {
+            return n = Object.assign || function(e) {
+                for (var t, r = 1, n = arguments.length; r < n; r++)
+                    for (var i in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
                 return e
-            }, o.apply(this, arguments)
+            }, n.apply(this, arguments)
         },
-        n = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, i, o) {
-            void 0 === o && (o = i), Object.defineProperty(e, o, {
+        i = e.exports && e.exports.__createBinding || (Object.create ? function(e, t, r, n) {
+            void 0 === n && (n = r), Object.defineProperty(e, n, {
                 enumerable: !0,
                 get: function() {
-                    return t[i]
+                    return t[r]
                 }
             })
-        } : function(e, t, i, o) {
-            void 0 === o && (o = i), e[o] = t[i]
+        } : function(e, t, r, n) {
+            void 0 === n && (n = r), e[n] = t[r]
         }),
-        r = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
+        o = e.exports && e.exports.__setModuleDefault || (Object.create ? function(e, t) {
             Object.defineProperty(e, "default", {
                 enumerable: !0,
                 value: t
@@ -1323,68 +954,68 @@ i.register("gO6da", (function(t, o) {
             if (e && e.__esModule) return e;
             var t = {};
             if (null != e)
-                for (var i in e) "default" !== i && Object.prototype.hasOwnProperty.call(e, i) && n(t, e, i);
-            return r(t, e), t
+                for (var r in e) "default" !== r && Object.prototype.hasOwnProperty.call(e, r) && i(t, e, r);
+            return o(t, e), t
         };
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.useComponentSize = void 0;
-    var s = a(i("fywoC"));
+    var s = a(r("fywoC"));
     e.exports.useComponentSize = function() {
         var e = s.useState({
                 height: 0,
                 width: 0
             }),
             t = e[0],
-            i = e[1],
-            n = s.useRef(),
-            r = s.useCallback((function() {
-                if (n.current) {
-                    var e = n.current.offsetHeight,
-                        o = n.current.offsetWidth;
-                    e === t.height && o === t.width || i({
+            r = e[1],
+            i = s.useRef(),
+            o = s.useCallback((function() {
+                if (i.current) {
+                    var e = i.current.offsetHeight,
+                        n = i.current.offsetWidth;
+                    e === t.height && n === t.width || r({
                         height: e,
-                        width: o
+                        width: n
                     })
                 }
             }), [t.height, t.width]);
         return s.useLayoutEffect((function() {
-            if (n && n.current) {
-                var e = new ResizeObserver(r);
-                return e.observe(n.current),
+            if (i && i.current) {
+                var e = new ResizeObserver(o);
+                return e.observe(i.current),
                     function() {
                         return e.disconnect()
                     }
             }
-        }), [n, r]), o({
-            ref: n
+        }), [i, o]), n({
+            ref: i
         }, t)
     }
-})), i.register("hDWWf", (function(t, i) {
-    let o;
-    var n;
+})), r.register("hDWWf", (function(t, r) {
+    let n;
+    var i;
     e(t.exports, "SiteHeaderTheme", (function() {
-        return o
-    })), (n = o || (o = {})).light = "light", n.dark = "dark"
-})), i.register("hSz8d", (function(t, i) {
-    let o;
-    var n;
+        return n
+    })), (i = n || (n = {})).light = "light", i.dark = "dark"
+})), r.register("hSz8d", (function(t, r) {
+    let n;
+    var i;
     e(t.exports, "SiteHeaderAlpha", (function() {
-        return o
-    })), (n = o || (o = {})).none = "none", n.standard = "standard", n.darker = "darker"
-})), i.register("9Vz35", (function(t, o) {
+        return n
+    })), (i = n || (n = {})).none = "none", i.standard = "standard", i.darker = "darker"
+})), r.register("9Vz35", (function(t, n) {
+    e(t.exports, "default", (function() {
+        return i
+    }));
+    var i = {
+        name: r("2Y5iQ").default.areaName,
+        iconImage: "/client/img/header/rewards.svg"
+    }
+})), r.register("2Y5iQ", (function(t, r) {
     e(t.exports, "default", (function() {
         return n
     }));
     var n = {
-        name: i("2Y5iQ").default.areaName,
-        iconImage: "/client/img/header/rewards.svg"
-    }
-})), i.register("2Y5iQ", (function(t, i) {
-    e(t.exports, "default", (function() {
-        return o
-    }));
-    var o = {
         areaName: "Rewards",
         level: "Level",
         xp: "XP",
@@ -1393,27 +1024,27 @@ i.register("gO6da", (function(t, o) {
         sticker: "Sticker",
         trail: "Trail"
     }
-})), i.register("dohZB", (function(t, o) {
+})), r.register("dohZB", (function(t, n) {
     e(t.exports, "default", (function() {
         return l
     }));
-    var n = i("dnh3u"),
-        r = i("fywoC"),
-        a = i("bVHCc"),
-        s = i("dwKuN"),
+    var i = r("dnh3u"),
+        o = r("fywoC"),
+        a = r("bVHCc"),
+        s = r("dwKuN"),
         c = function(e, t) {
-            return r.createElement(s.default, (0, n.default)((0, n.default)({}, e), {}, {
+            return o.createElement(s.default, (0, i.default)((0, i.default)({}, e), {}, {
                 ref: t,
                 icon: a.default
             }))
         };
     c.displayName = "UsergroupAddOutlined";
-    var l = r.forwardRef(c)
-})), i.register("bVHCc", (function(t, i) {
+    var l = o.forwardRef(c)
+})), r.register("bVHCc", (function(t, r) {
     e(t.exports, "default", (function() {
-        return o
+        return n
     }));
-    var o = {
+    var n = {
         icon: {
             tag: "svg",
             attrs: {
@@ -1430,27 +1061,27 @@ i.register("gO6da", (function(t, o) {
         name: "usergroup-add",
         theme: "outlined"
     }
-})), i.register("kVS28", (function(t, o) {
+})), r.register("kVS28", (function(t, n) {
     e(t.exports, "default", (function() {
         return l
     }));
-    var n = i("dnh3u"),
-        r = i("fywoC"),
-        a = i("4GmeK"),
-        s = i("dwKuN"),
+    var i = r("dnh3u"),
+        o = r("fywoC"),
+        a = r("4GmeK"),
+        s = r("dwKuN"),
         c = function(e, t) {
-            return r.createElement(s.default, (0, n.default)((0, n.default)({}, e), {}, {
+            return o.createElement(s.default, (0, i.default)((0, i.default)({}, e), {}, {
                 ref: t,
                 icon: a.default
             }))
         };
     c.displayName = "LogoutOutlined";
-    var l = r.forwardRef(c)
-})), i.register("4GmeK", (function(t, i) {
+    var l = o.forwardRef(c)
+})), r.register("4GmeK", (function(t, r) {
     e(t.exports, "default", (function() {
-        return o
+        return n
     }));
-    var o = {
+    var n = {
         icon: {
             tag: "svg",
             attrs: {
@@ -1467,14 +1098,14 @@ i.register("gO6da", (function(t, o) {
         name: "logout",
         theme: "outlined"
     }
-})), i.register("kyvf1", (function(t, o) {
+})), r.register("kyvf1", (function(t, n) {
     e(t.exports, "default", (function() {
         return a
     }));
-    var n = i("hxEiv"),
-        r = i("beXRF");
-    i("fywoC");
-    var a = e => e.external || !e.to ? (0, n.jsx)("a", {
+    var i = r("hxEiv"),
+        o = r("beXRF");
+    r("fywoC");
+    var a = e => e.external || !e.to ? (0, i.jsx)("a", {
         href: e.to,
         tabIndex: Number(e.tabIndex || "0"),
         onClick: e.onClick,
@@ -1485,7 +1116,7 @@ i.register("gO6da", (function(t, o) {
         target: e.target,
         style: e.style,
         children: e.children
-    }) : (0, n.jsx)(r.Link, {
+    }) : (0, i.jsx)(o.Link, {
         to: e.to,
         tabIndex: Number(e.tabIndex || "0"),
         onClick: e.onClick,
@@ -1494,33 +1125,33 @@ i.register("gO6da", (function(t, o) {
         style: e.style,
         children: e.children
     })
-})), i.register("9kZfj", (function(t, o) {
+})), r.register("9kZfj", (function(t, n) {
     e(t.exports, "onlyOfferAnnualUpgrade", (function() {
-        return r
+        return o
     }));
-    var n = i("hrYih");
-    const r = () => "annual-only" === n.default.getFeatureFlag("annual-only-pro")
-})), i.register("aYYSA", (function(t, o) {
+    var i = r("hrYih");
+    const o = () => "annual-only" === i.default.getFeatureFlag("annual-only-pro")
+})), r.register("aYYSA", (function(t, n) {
     e(t.exports, "default", (function() {
         return l
     }));
-    var n = i("dnh3u"),
-        r = i("fywoC"),
-        a = i("5UEB4"),
-        s = i("dwKuN"),
+    var i = r("dnh3u"),
+        o = r("fywoC"),
+        a = r("5UEB4"),
+        s = r("dwKuN"),
         c = function(e, t) {
-            return r.createElement(s.default, (0, n.default)((0, n.default)({}, e), {}, {
+            return o.createElement(s.default, (0, i.default)((0, i.default)({}, e), {}, {
                 ref: t,
                 icon: a.default
             }))
         };
     c.displayName = "StarOutlined";
-    var l = r.forwardRef(c)
-})), i.register("5UEB4", (function(t, i) {
+    var l = o.forwardRef(c)
+})), r.register("5UEB4", (function(t, r) {
     e(t.exports, "default", (function() {
-        return o
+        return n
     }));
-    var o = {
+    var n = {
         icon: {
             tag: "svg",
             attrs: {
@@ -1537,147 +1168,147 @@ i.register("gO6da", (function(t, o) {
         name: "star",
         theme: "outlined"
     }
-})), i.register("56tQE", (function(t, o) {
+})), r.register("56tQE", (function(t, n) {
     e(t.exports, "default", (function() {
         return s
     }));
-    var n = i("fywoC"),
-        r = i("3KQc0"),
-        a = i("9iNNJ");
+    var i = r("fywoC"),
+        o = r("3KQc0"),
+        a = r("9iNNJ");
     var s = (e, t) => {
-        const [i, o] = n.useState((() => {
-            var i, o;
-            const n = e && "current" in e ? e.current : e;
-            return n ? [n.offsetWidth, n.offsetHeight] : [null !== (i = null == t ? void 0 : t.initialWidth) && void 0 !== i ? i : 0, null !== (o = null == t ? void 0 : t.initialHeight) && void 0 !== o ? o : 0]
+        const [r, n] = i.useState((() => {
+            var r, n;
+            const i = e && "current" in e ? e.current : e;
+            return i ? [i.offsetWidth, i.offsetHeight] : [null !== (r = null == t ? void 0 : t.initialWidth) && void 0 !== r ? r : 0, null !== (n = null == t ? void 0 : t.initialHeight) && void 0 !== n ? n : 0]
         }));
         return (0, a.default)((() => {
             const t = e && "current" in e ? e.current : e;
-            t && o([t.offsetWidth, t.offsetHeight])
-        }), [e]), (0, r.default)(e, (e => {
+            t && n([t.offsetWidth, t.offsetHeight])
+        }), [e]), (0, o.default)(e, (e => {
             const t = e.target;
-            o([t.offsetWidth, t.offsetHeight])
-        })), i
+            n([t.offsetWidth, t.offsetHeight])
+        })), r
     }
-})), i.register("3KQc0", (function(t, o) {
+})), r.register("3KQc0", (function(t, n) {
     e(t.exports, "default", (function() {
-        return d
+        return u
     }));
-    var n = i("6rvT3"),
-        r = i("9iNNJ"),
-        a = i("3Yjty"),
-        s = i("f1PHW");
+    var i = r("6rvT3"),
+        o = r("9iNNJ"),
+        a = r("3Yjty"),
+        s = r("f1PHW");
     let c;
     const l = () => c || (c = function() {
         const e = new Map,
-            t = new(0, n.default)((0, s.default)(((t, i) => {
-                var o;
-                if (1 === t.length) null === (o = e.get(t[0].target)) || void 0 === o || o(t[0], i);
+            t = new(0, i.default)((0, s.default)(((t, r) => {
+                var n;
+                if (1 === t.length) null === (n = e.get(t[0].target)) || void 0 === n || n(t[0], r);
                 else
-                    for (let o = 0; o < t.length; o++) {
-                        var n;
-                        null === (n = e.get(t[o].target)) || void 0 === n || n(t[o], i)
+                    for (let n = 0; n < t.length; n++) {
+                        var i;
+                        null === (i = e.get(t[n].target)) || void 0 === i || i(t[n], r)
                     }
             })));
         return {
             observer: t,
-            subscribe(i, o) {
-                t.observe(i), e.set(i, o)
+            subscribe(r, n) {
+                t.observe(r), e.set(r, n)
             },
-            unsubscribe(i) {
-                t.unobserve(i), e.delete(i)
+            unsubscribe(r) {
+                t.unobserve(r), e.delete(r)
             }
         }
     }());
-    var d = function(e, t) {
-        const i = l(),
-            o = (0, a.default)(t);
-        return (0, r.default)((() => {
+    var u = function(e, t) {
+        const r = l(),
+            n = (0, a.default)(t);
+        return (0, o.default)((() => {
             let t = !1;
-            const n = e && "current" in e ? e.current : e;
-            if (n) return i.subscribe(n, ((e, i) => {
-                t || o.current(e, i)
+            const i = e && "current" in e ? e.current : e;
+            if (i) return r.subscribe(i, ((e, r) => {
+                t || n.current(e, r)
             })), () => {
-                t = !0, i.unsubscribe(n)
+                t = !0, r.unsubscribe(i)
             }
-        }), [e, i, o]), i.observer
+        }), [e, r, n]), r.observer
     }
-})), i.register("9iNNJ", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return r
+})), r.register("9iNNJ", (function(n, i) {
+    e(n.exports, "default", (function() {
+        return o
     }));
-    var r = t(i("fywoC"))["undefined" != typeof document && void 0 !== document.createElement ? "useLayoutEffect" : "useEffect"]
-})), i.register("3Yjty", (function(t, o) {
+    var o = t(r("fywoC"))["undefined" != typeof document && void 0 !== document.createElement ? "useLayoutEffect" : "useEffect"]
+})), r.register("3Yjty", (function(t, n) {
     e(t.exports, "default", (function() {
-        return r
+        return o
     }));
-    var n = i("fywoC");
-    var r = e => {
-        const t = n.useRef(e);
-        return n.useEffect((() => {
+    var i = r("fywoC");
+    var o = e => {
+        const t = i.useRef(e);
+        return i.useEffect((() => {
             t.current = e
         })), t
     }
-})), i.register("f1PHW", (function(t, i) {
+})), r.register("f1PHW", (function(t, r) {
+    e(t.exports, "default", (function() {
+        return n
+    }));
+    var n = function(e) {
+        var t = [],
+            r = null,
+            n = function() {
+                for (var n = arguments.length, i = new Array(n), o = 0; o < n; o++) i[o] = arguments[o];
+                t = i, r || (r = requestAnimationFrame((function() {
+                    r = null, e.apply(void 0, t)
+                })))
+            };
+        return n.cancel = function() {
+            r && (cancelAnimationFrame(r), r = null)
+        }, n
+    }
+})), r.register("iROck", (function(t, n) {
+    e(t.exports, "NavigateTo", (function() {
+        return o
+    }));
+    var i = r("bd8je");
+    const o = e => {
+        i.history.push(e)
+    }
+})), r.register("py2Xr", (function(t, n) {
     e(t.exports, "default", (function() {
         return o
     }));
-    var o = function(e) {
-        var t = [],
-            i = null,
-            o = function() {
-                for (var o = arguments.length, n = new Array(o), r = 0; r < o; r++) n[r] = arguments[r];
-                t = n, i || (i = requestAnimationFrame((function() {
-                    i = null, e.apply(void 0, t)
-                })))
-            };
-        return o.cancel = function() {
-            i && (cancelAnimationFrame(i), i = null)
-        }, o
-    }
-})), i.register("iROck", (function(t, o) {
-    e(t.exports, "NavigateTo", (function() {
-        return r
-    }));
-    var n = i("bd8je");
-    const r = e => {
-        n.history.push(e)
-    }
-})), i.register("py2Xr", (function(t, o) {
-    e(t.exports, "default", (function() {
-        return r
-    }));
-    var n = i("hxEiv");
-    i("fywoC");
-    var r = e => (0, n.jsx)("i", {
+    var i = r("hxEiv");
+    r("fywoC");
+    var o = e => (0, i.jsx)("i", {
         className: `${e.name}${e.className?` ${e.className}`:""}`,
         style: e.style
     })
-})), i.register("bmTnW", (function(e, t) {
+})), r.register("bmTnW", (function(e, t) {
     Object.defineProperty(e.exports, "__esModule", {
         value: !0
     }), e.exports.lazyWithPreload = void 0;
-    var o = i("fywoC");
+    var n = r("fywoC");
 
-    function n(e) {
-        var t, i, n = (0, o.lazy)(e),
-            r = (0, o.forwardRef)((function(e, i) {
-                var r = (0, o.useRef)(null != t ? t : n);
-                return (0, o.createElement)(r.current, Object.assign(i ? {
-                    ref: i
+    function i(e) {
+        var t, r, i = (0, n.lazy)(e),
+            o = (0, n.forwardRef)((function(e, r) {
+                var o = (0, n.useRef)(null != t ? t : i);
+                return (0, n.createElement)(o.current, Object.assign(r ? {
+                    ref: r
                 } : {}, e))
             }));
-        return r.preload = function() {
-            return i || (i = e().then((function(e) {
+        return o.preload = function() {
+            return r || (r = e().then((function(e) {
                 return t = e.default
-            }))), i
-        }, r
+            }))), r
+        }, o
     }
-    e.exports.lazyWithPreload = n, e.exports.default = n
-})), i.register("4aaLU", (function(t, i) {
+    e.exports.lazyWithPreload = i, e.exports.default = i
+})), r.register("4aaLU", (function(t, r) {
     e(t.exports, "default", (function() {
-        return o
+        return n
     }));
-    var o = {
+    var n = {
         White: "white",
         Black: "black",
         BackgroundGray: "#eeeeee",
@@ -1687,27 +1318,27 @@ i.register("gO6da", (function(t, o) {
         LightSuccessGreen: "#6abf69",
         DarkSuccessGreen: "#2e7d32"
     }
-})), i.register("exbzb", (function(t, o) {
+})), r.register("exbzb", (function(t, n) {
     e(t.exports, "default", (function() {
         return l
     }));
-    var n = i("dnh3u"),
-        r = i("fywoC"),
-        a = i("8N8s4"),
-        s = i("dwKuN"),
+    var i = r("dnh3u"),
+        o = r("fywoC"),
+        a = r("8N8s4"),
+        s = r("dwKuN"),
         c = function(e, t) {
-            return r.createElement(s.default, (0, n.default)((0, n.default)({}, e), {}, {
+            return o.createElement(s.default, (0, i.default)((0, i.default)({}, e), {}, {
                 ref: t,
                 icon: a.default
             }))
         };
     c.displayName = "QuestionCircleOutlined";
-    var l = r.forwardRef(c)
-})), i.register("8N8s4", (function(t, i) {
+    var l = o.forwardRef(c)
+})), r.register("8N8s4", (function(t, r) {
     e(t.exports, "default", (function() {
-        return o
+        return n
     }));
-    var o = {
+    var n = {
         icon: {
             tag: "svg",
             attrs: {
