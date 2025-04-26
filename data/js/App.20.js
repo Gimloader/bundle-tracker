@@ -1,106 +1,133 @@
-function e(e, t, r, n) {
-    Object.defineProperty(e, t, {
-        get: r,
-        set: n,
+function a(a, b, q, c) {
+    Object.defineProperty(a, b, {
+        get: q,
+        set: c,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("jPAXw", (function(r, n) {
-    var o;
-    o = r.exports, Object.defineProperty(o, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('5d3ST', function(q, c) {
+    var c;
+    c = q.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(r.exports, "default", (function() {
-        return p
-    }));
-    var a = t("hxEiv");
-    t("fywoC");
-    var i = t("aHKz1"),
-        s = t("jYr4j"),
-        l = t("fFAil"),
-        c = t("i5Qjx"),
-        d = t("1iNoj"),
-        u = t("guNSj"),
-        f = t("77Dar");
-    var p = e => (0, a.jsx)(f.LimitedWidth, {
-        children: (0, a.jsxs)(c.default, {
-            direction: "vertical",
-            size: 30,
-            className: "maxWidth",
-            children: [(0, a.jsx)(i.default, {
-                pageMode: e.pageMode
-            }), (0, a.jsx)(s.default, {
-                title: "Benefits",
-                description: "Access these exclusive benefits all season long",
-                children: (0, a.jsx)(l.default, {
-                    forSelf: !0
-                })
-            }), (0, a.jsx)(d.default, {}), (0, a.jsx)(u.default, {
-                pageMode: e.pageMode
-            })]
-        })
-    })
-})), t.register("aHKz1", (function(r, n) {
-    e(r.exports, "default", (function() {
-        return k
-    }));
-    var o = t("hxEiv");
-    t("fywoC");
-    var a = t("2FDaO"),
-        i = t("4ifJF"),
-        s = t("69SUA"),
-        l = t("aQuqp"),
-        c = t("py2Xr"),
-        d = t("lKmIF"),
-        u = t("kyvf1"),
-        f = t("b1oE9"),
-        p = t("hqWys"),
-        x = t("6tOle"),
-        h = t("7u0qw"),
-        m = t("lR9Fx");
-    let g, y, v, b, j, w, S = e => e;
-    var k = e => (0, o.jsxs)(C, {
-        children: [(0, o.jsx)(E, {}), (0, o.jsxs)(T, {
-            children: [p.SeasonTicketSeason.seasonName, " ", p.SeasonTicketSeason.seasonNumber]
-        }), (0, o.jsx)(O, {
-            children: p.SeasonTicketName.name
-        }), (0, h.OwnsSeasonTicket)() ? (0, o.jsxs)(F, {
-            children: ["You already own this ", p.SeasonTicketName.name, ". Thanks so much for your support!"]
-        }) : (0, o.jsx)(u.default, {
-            to: f.SEASON_TICKET_BASE,
-            style: {
-                textDecoration: "none"
-            },
-            target: e.pageMode ? void 0 : "_blank",
-            children: (0, o.jsxs)(l.default, {
-                style: {
-                    fontFamily: s.Fonts.SFPro,
-                    marginTop: 15
-                },
-                customFontWeight: s.FontWeights.Bold,
-                customColor: "#1677ff",
-                ariaLabel: `Purchase ${p.SeasonTicketName.name}`,
-                children: [(0, o.jsx)(c.default, {
-                    name: "fal fa-sparkles",
-                    style: {
-                        marginRight: 10
-                    }
-                }), "Purchase ", p.SeasonTicketName.name]
-            })
-        }), (0, o.jsxs)(N, {
-            children: ["Season ends ", m.SEASON_TICKET_END_DATE, "."]
-        })]
+    }), a(q.exports, 'default', function() {
+        return l;
     });
-    const C = (0, a.default)(i.CenteredColumn).attrs({
-            className: "maxWidth medium-shadow"
-        })(g || (g = S`
-  font-family: ${0};
+    var d = b('8kSQZ');
+    b('uPP4W');
+    var e = b('wnejr'),
+        f = b('qMdxg'),
+        g = b('tRI+l'),
+        h = b('5nJMd26'),
+        i = b('qfDnR'),
+        j = b('l2bw2'),
+        k = b('0Gy6k');
+    var l = a => (0, d.jsx)(k.LimitedWidth, {
+        children: (0, d.jsxs)(h.default, {
+            direction: 'vertical',
+            size: 30,
+            className: 'maxWidth',
+            children: [
+                (0, d.jsx)(e.default, {
+                    pageMode: a.pageMode
+                }),
+                (0, d.jsx)(f.default, {
+                    title: 'Benefits',
+                    description: 'Access these exclusive benefits all season long',
+                    children: (0, d.jsx)(g.default, {
+                        forSelf: !0
+                    })
+                }),
+                (0, d.jsx)(i.default, {}),
+                (0, d.jsx)(j.default, {
+                    pageMode: a.pageMode
+                })
+            ]
+        })
+    });
+}), b.register('wnejr', function(q, c) {
+    a(q.exports, 'default', function() {
+        return w;
+    });
+    var c = b('8kSQZ');
+    b('uPP4W');
+    var d = b('h99Nu'),
+        e = b('YimJ0'),
+        f = b('gSUVO'),
+        g = b('Dog9Y'),
+        h = b('iMnBi'),
+        i = b('lmfrI'),
+        j = b('iYEuk12'),
+        k = b('q721a'),
+        l = b('ImHrc1'),
+        m = b('70zaw'),
+        n = b('rZ3/P'),
+        o = b('uHmrc');
+    let p, q, r, s, t, u, v = a => a;
+    var w = a => (0, c.jsxs)(x, {
+        children: [
+            (0, c.jsx)(y, {}),
+            (0, c.jsxs)(z, {
+                children: [
+                    l.SeasonTicketSeason.seasonName,
+                    ' ',
+                    l.SeasonTicketSeason.seasonNumber
+                ]
+            }),
+            (0, c.jsx)(A, {
+                children: l.SeasonTicketName.name
+            }),
+            (0, n.OwnsSeasonTicket)() ? (0, c.jsxs)(B, {
+                children: [
+                    'You already own this ',
+                    l.SeasonTicketName.name,
+                    '. Thanks so much for your support!'
+                ]
+            }) : (0, c.jsx)(j.default, {
+                to: k.SEASON_TICKET_BASE,
+                style: {
+                    textDecoration: 'none'
+                },
+                target: a.pageMode ? void 0 : '_blank',
+                children: (0, c.jsxs)(g.default, {
+                    style: {
+                        fontFamily: f.Fonts.SFPro,
+                        marginTop: 15
+                    },
+                    customFontWeight: f.FontWeights.Bold,
+                    customColor: '#1677ff',
+                    ariaLabel: `Purchase ${ l.SeasonTicketName.name }`,
+                    children: [
+                        (0, c.jsx)(h.default, {
+                            name: 'fal fa-sparkles',
+                            style: {
+                                marginRight: 10
+                            }
+                        }),
+                        'Purchase ',
+                        l.SeasonTicketName.name
+                    ]
+                })
+            }),
+            (0, c.jsxs)(C, {
+                children: [
+                    'Season ends ',
+                    o.SEASON_TICKET_END_DATE,
+                    '.'
+                ]
+            })
+        ]
+    });
+    const x = (0, d.default)(e.CenteredColumn).attrs({
+            className: 'maxWidth medium-shadow'
+        })(p || (p = v`
+  font-family: ${ 0 };
   text-transform: uppercase;
   padding: 60px 30px;
   border-radius: 8px;
-  border: 4px solid ${0};
+  border: 4px solid ${ 0 };
   background-image: linear-gradient(
     179deg,
     rgb(255 226 6) 9.2%,
@@ -109,23 +136,23 @@ t.register("jPAXw", (function(r, n) {
   @media (max-width: 820px) {
     text-align: center;
   }
-`), s.Fonts.FugazOne, d.default.White),
-        E = a.default.img.attrs({
-            src: x.SEASON_TICKET_TICKET_IMAGE
-        })(y || (y = S`
+`), f.Fonts.FugazOne, i.default.White),
+        y = d.default.img.attrs({
+            src: m.SEASON_TICKET_TICKET_IMAGE
+        })(q || (q = v`
   height: 97px;
   margin-bottom: 35px;
   filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.5));
   transform: rotate(354deg);
 `)),
-        T = a.default.div(v || (v = S`
+        z = d.default.div(r || (r = v`
   font-size: 21px;
   color: rgba(255, 255, 255, 0.9);
   @media (max-width: 820px) {
     font-size: 18px;
   }
 `)),
-        O = a.default.div(b || (b = S`
+        A = d.default.div(s || (s = v`
   font-size: 48px;
   margin-top: -10px;
   text-shadow: 1px 1px 21px rgba(0, 0, 0, 0.4);
@@ -134,136 +161,153 @@ t.register("jPAXw", (function(r, n) {
     margin-top: -8px;
   }
 `)),
-        F = a.default.div(j || (j = S`
+        B = d.default.div(t || (t = v`
   text-transform: none;
-  font-family: ${0};
+  font-family: ${ 0 };
   background: rgba(0, 0, 0, 0.15);
   color: rgba(255, 255, 255, 0.9);
   margin-top: 10px;
   padding: 15px 30px;
   font-size: 16px;
   border-radius: 6px;
-`), s.Fonts.SFPro),
-        N = a.default.div(w || (w = S`
+`), f.Fonts.SFPro),
+        C = d.default.div(u || (u = v`
   text-transform: none;
-  font-family: ${0};
+  font-family: ${ 0 };
   color: rgba(255, 255, 255, 0.9);
   font-size: 12px;
   margin-top: 10px;
-`), s.Fonts.SFPro)
-})), t.register("6tOle", (function(r, n) {
-    e(r.exports, "SEASON_TICKET_TICKET_IMAGE", (function() {
-        return o
-    }));
-    const o = (0, t("alREA").default)("stickers/season_3_2025.png")
-})), t.register("lR9Fx", (function(t, r) {
-    e(t.exports, "SEASON_TICKET_END_DATE", (function() {
-        return n
-    }));
-    const n = "August 20th"
-})), t.register("jYr4j", (function(r, n) {
-    e(r.exports, "default", (function() {
-        return u
-    }));
-    var o = t("hxEiv");
-    t("fywoC");
-    var a = t("2FDaO"),
-        i = t("69SUA");
-    let s, l, c, d = e => e;
-    var u = e => (0, o.jsxs)(f, {
-        children: [(0, o.jsx)(p, {
-            children: e.title
-        }), (0, o.jsx)(x, {
-            children: e.description
-        }), e.children]
+`), f.Fonts.SFPro);
+}), b.register('70zaw', function(q, c) {
+    a(q.exports, 'SEASON_TICKET_TICKET_IMAGE', function() {
+        return c;
     });
-    const f = a.default.div(s || (s = d``)),
-        p = a.default.div(l || (l = d`
-  font-family: ${0};
+    const c = (0, b('JJQ0+').default)('stickers/season_3_2025.png');
+}), b.register('uHmrc', function(b, q) {
+    a(b.exports, 'SEASON_TICKET_END_DATE', function() {
+        return c;
+    });
+    const c = 'August 20th';
+}), b.register('qMdxg', function(q, r) {
+    a(q.exports, 'default', function() {
+        return j;
+    });
+    var c = b('8kSQZ');
+    b('uPP4W');
+    var d = b('h99Nu'),
+        e = b('gSUVO');
+    let f, g, h, i = a => a;
+    var j = a => (0, c.jsxs)(k, {
+        children: [
+            (0, c.jsx)(l, {
+                children: a.title
+            }),
+            (0, c.jsx)(m, {
+                children: a.description
+            }),
+            a.children
+        ]
+    });
+    const k = d.default.div(f || (f = i``)),
+        l = d.default.div(g || (g = i`
+  font-family: ${ 0 };
   text-transform: uppercase;
   font-size: 32px;
-`), i.Fonts.FugazOne),
-        x = a.default.div(c || (c = d`
+`), e.Fonts.FugazOne),
+        m = d.default.div(h || (h = i`
   font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
   font-style: italic;
   margin-top: -6px;
   margin-bottom: 20px;
-`))
-})), t.register("fFAil", (function(r, n) {
-    e(r.exports, "default", (function() {
-        return u
-    }));
-    var o = t("hxEiv"),
-        a = t("i5Qjx");
-    t("fywoC");
-    var i = t("39g5p"),
-        s = t("hqWys"),
-        l = t("iMOcM"),
-        c = t("2Y5iQ");
-    const d = [{
-        icon: "vip",
-        title: "Exclusive Cosmetics",
-        description: `Instantly earn over 15 exclusive cosmetics, only available by purchasing this season's ${s.SeasonTicketName.singularName}. Cosmetics stay in your Locker after the season ends.`
-    }, {
-        icon: "rise",
-        title: "Increased XP Limit",
-        description: "Weekly XP limit increased to 20,000. Earn more GimBucks and rewards for your learning!"
-    }, {
-        icon: "hammer",
-        title: "Terrains, Props, & Devices",
-        description: "Exclusive access to over 75 terrains, props, and devices to use in your Gimkit Creative maps."
-    }, {
-        icon: "megaphone",
-        title: "Free Creative Publishing",
-        description: `Publish your maps to the world without paying 1,000 ${c.default.currency}!`
-    }, {
-        icon: "idea",
-        title: "Creative Slots",
-        description: "Store up to 25 maps on your account!"
-    }, {
-        icon: "dog",
-        title: "Play With Friends",
-        description: "Host live games with up to 15 players!",
-        show: e => !e || (0, l.isStudent)()
-    }];
-    var u = e => (0, o.jsx)(a.default, {
-        direction: "vertical",
-        size: 20,
-        className: "maxWidth",
-        children: d.filter((t => !t.show || t.show(e.forSelf))).map(((e, t) => (0, o.jsx)(i.default, {
-            ...e
-        }, "benefit" + t)))
-    })
-})), t.register("39g5p", (function(r, n) {
-    e(r.exports, "default", (function() {
-        return g
-    }));
-    var o = t("hxEiv");
-    t("fywoC");
-    var a = t("2FDaO"),
-        i = t("4ifJF"),
-        s = t("69SUA"),
-        l = t("alREA");
-    let c, d, u, f, p, x, h, m = e => e;
-    var g = e => (0, o.jsxs)(y, {
-        children: [(0, o.jsx)(v, {
-            children: (0, o.jsx)(b, {
-                src: (0, l.default)(`seasonTicket/${e.icon}.svg`)
-            })
-        }), (0, o.jsxs)(j, {
-            children: [e.tag ? (0, o.jsx)(w, {
-                children: e.tag
-            }) : null, (0, o.jsx)(S, {
-                children: e.title
-            }), (0, o.jsx)(k, {
-                children: e.description
-            })]
-        })]
+`));
+}), b.register('tRI+l', function(q, r) {
+    a(q.exports, 'default', function() {
+        return j;
     });
-    const y = (0, a.default)(i.VerticalCentered).attrs({
-            className: "maxWidth light-shadow"
-        })(c || (c = m`
+    var c = b('8kSQZ'),
+        d = b('5nJMd26');
+    b('uPP4W');
+    var e = b('jxnVk'),
+        f = b('ImHrc1'),
+        g = b('PjB0f'),
+        h = b('y8lS825');
+    const i = [{
+            icon: 'vip',
+            title: 'Exclusive Cosmetics',
+            description: `Instantly earn over 15 exclusive cosmetics, only available by purchasing this season's ${ f.SeasonTicketName.singularName }. Cosmetics stay in your Locker after the season ends.`
+        },
+        {
+            icon: 'rise',
+            title: 'Increased XP Limit',
+            description: 'Weekly XP limit increased to 20,000. Earn more GimBucks and rewards for your learning!'
+        },
+        {
+            icon: 'hammer',
+            title: 'Terrains, Props, & Devices',
+            description: 'Exclusive access to over 75 terrains, props, and devices to use in your Gimkit Creative maps.'
+        },
+        {
+            icon: 'megaphone',
+            title: 'Free Creative Publishing',
+            description: `Publish your maps to the world without paying 1,000 ${ h.default.currency }!`
+        },
+        {
+            icon: 'idea',
+            title: 'Creative Slots',
+            description: 'Store up to 25 maps on your account!'
+        },
+        {
+            icon: 'dog',
+            title: 'Play With Friends',
+            description: 'Host live games with up to 15 players!',
+            show: a => !a || (0, g.isStudent)()
+        }
+    ];
+    var j = a => (0, c.jsx)(d.default, {
+        direction: 'vertical',
+        size: 20,
+        className: 'maxWidth',
+        children: i.filter(b => !b.show || b.show(a.forSelf)).map((a, b) => (0, c.jsx)(e.default, {
+            ...a
+        }, 'benefit' + b))
+    });
+}), b.register('jxnVk', function(q, r) {
+    a(q.exports, 'default', function() {
+        return p;
+    });
+    var c = b('8kSQZ');
+    b('uPP4W');
+    var d = b('h99Nu'),
+        e = b('YimJ0'),
+        f = b('gSUVO'),
+        g = b('JJQ0+');
+    let h, i, j, k, l, m, n, o = a => a;
+    var p = a => (0, c.jsxs)(q, {
+        children: [
+            (0, c.jsx)(r, {
+                children: (0, c.jsx)(s, {
+                    src: (0, g.default)(`seasonTicket/${ a.icon }.svg`)
+                })
+            }),
+            (0, c.jsxs)(t, {
+                children: [
+                    a.tag ? (0, c.jsx)(u, {
+                        children: a.tag
+                    }) : null,
+                    (0, c.jsx)(v, {
+                        children: a.title
+                    }),
+                    (0, c.jsx)(w, {
+                        children: a.description
+                    })
+                ]
+            })
+        ]
+    });
+    const q = (0, d.default)(e.VerticalCentered).attrs({
+            className: 'maxWidth light-shadow'
+        })(h || (h = o`
   padding: 28px 32px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
@@ -274,19 +318,19 @@ t.register("jPAXw", (function(r, n) {
     background: rgba(255, 255, 255, 0.17);
   }
 `)),
-        v = a.default.div(d || (d = m`
+        r = d.default.div(i || (i = o`
   margin-right: 32px;
 `)),
-        b = a.default.img(u || (u = m`
+        s = d.default.img(j || (j = o`
   width: 40px;
 `)),
-        j = a.default.div.attrs({
-            className: "flex-column"
-        })(f || (f = m`
+        t = d.default.div.attrs({
+            className: 'flex-column'
+        })(k || (k = o`
   align-items: flex-start;
 `)),
-        w = a.default.div(p || (p = m`
-  font-family: ${0};
+        u = d.default.div(l || (l = o`
+  font-family: ${ 0 };
   background: rgba(255, 255, 255, 0.1);
   line-height: 1;
   text-transform: uppercase;
@@ -299,273 +343,295 @@ t.register("jPAXw", (function(r, n) {
   &:hover {
     background: rgba(255, 255, 255, 0.17);
   }
-`), s.Fonts.FugazOne),
-        S = a.default.div(x || (x = m`
-  font-family: ${0};
+`), f.Fonts.FugazOne),
+        v = d.default.div(m || (m = o`
+  font-family: ${ 0 };
   text-transform: uppercase;
   font-size: 22px;
-`), s.Fonts.FugazOne),
-        k = a.default.div(h || (h = m`
+`), f.Fonts.FugazOne),
+        w = d.default.div(n || (n = o`
   font-size: 16px;
   color: rgba(255, 255, 255, 0.94);
   margin-top: -1px;
-`))
-})), t.register("1iNoj", (function(r, n) {
-    e(r.exports, "default", (function() {
-        return l
-    }));
-    var o = t("hxEiv");
-    t("fywoC");
-    var a = t("jYr4j"),
-        i = t("y1HNZ"),
-        s = t("iNk8F");
-    var l = () => {
+`));
+}), b.register('qfDnR', function(q, r) {
+    a(q.exports, 'default', function() {
+        return g;
+    });
+    var c = b('8kSQZ');
+    b('uPP4W');
+    var d = b('qMdxg'),
+        e = b('gj2HS'),
+        f = b('Xnshu');
+    var g = () => {
         const {
-            data: e
-        } = (0, i.default)();
-        return e && e.length ? (0, o.jsx)(a.default, {
-            title: "Cosmetics",
-            description: "Instantly earn these exclusive cosmetics",
-            children: e.map((e => (0, o.jsx)(s.default, {
-                cosmetic: e
-            }, e.id + "-item")))
-        }) : null
-    }
-})), t.register("y1HNZ", (function(r, n) {
-    e(r.exports, "default", (function() {
-        return s
-    }));
-    var o = t("eMRqp"),
-        a = t("iMOcM");
-    const i = ["season-ticket-cosmetics"];
-    var s = () => (0, o.useQuery)(i, (() => (0, a.requestAsPromise)({
-        url: "/api/cosmos/season-ticket"
-    })))
-})), t.register("iNk8F", (function(r, n) {
-    e(r.exports, "default", (function() {
-        return h
-    }));
-    var o = t("hxEiv"),
-        a = t("fywoC"),
-        i = t("6a2jS"),
-        s = t("6Jzz1"),
-        l = t("2PrJL"),
-        c = t("iMOcM"),
-        d = t("53ySl"),
-        u = t("1lU5G"),
-        f = t("a5sZj"),
-        p = t("bDJkg"),
-        x = t("hifxW");
-    var h = e => {
-        const {
-            cosmetic: t
-        } = e, [r, n, h] = (0, c.useBoolean)(!1), [m, g, y] = (0, c.useBoolean)(!1), v = a.useMemo((() => t.type === i.CosmeticType.sticker ? 30 : 10), [t.type]);
-        return (0, o.jsxs)(o.Fragment, {
-            children: [(0, o.jsxs)(s.Container, {
-                onMouseEnter: g,
-                onMouseLeave: y,
-                onClick: n,
-                children: [(0, o.jsx)(s.PreviewArea, {
-                    children: (0, o.jsx)(s.PreviewContent, {
-                        style: {
-                            transform: `scale(${m?1.1:1})`
-                        },
-                        children: (0, o.jsx)(d.default, {
-                            image: (0, u.default)({
-                                id: t.id,
-                                type: t.type
-                            }),
-                            background: (0, f.rarityToBackground)(t.rarity),
-                            padding: v
-                        })
-                    })
-                }), (0, o.jsx)(l.Container, {
-                    style: {
-                        background: (0, f.rarityToBackground)(t.rarity)
-                    },
-                    children: (0, o.jsx)(l.Content, {
-                        className: "flex-center",
-                        children: (0, o.jsxs)("div", {
-                            className: "flex-column flex-center",
-                            children: [(0, o.jsx)(l.Title, {
-                                children: t.name
-                            }), (0, o.jsx)(l.Description, {
-                                children: (0, p.cosmeticTypeName)(t.type)
-                            })]
-                        })
-                    })
-                })]
-            }), (0, o.jsx)(x.default, {
-                open: r,
-                close: h,
-                pack: t.packName,
-                ...t,
-                image: (0, u.default)({
-                    id: t.id,
-                    type: t.type
-                }),
-                callToAction: () => {}
-            })]
-        })
-    }
-})), t.register("6Jzz1", (function(r, n) {
-    e(r.exports, "BORDER_RADIUS", (function() {
-        return v
-    })), e(r.exports, "Container", (function() {
-        return j
-    })), e(r.exports, "PreviewArea", (function() {
-        return w
-    })), e(r.exports, "PreviewContent", (function() {
-        return S
-    })), e(r.exports, "default", (function() {
-        return b
-    }));
-    var o = t("hxEiv"),
-        a = t("fywoC"),
-        i = t("2FDaO"),
-        s = t("2PrJL"),
-        l = t("6a2jS"),
-        c = t("iMOcM"),
-        d = t("6BIRj"),
-        u = t("53ySl"),
-        f = t("a5sZj"),
-        p = t("69SUA"),
-        x = t("e5CAx");
-    let h, m, g, y = e => e;
-    const v = 6;
-    var b = e => {
-        const [t, r, n] = (0, c.useBoolean)(!1), [i, p, h] = (0, c.useBoolean)(!1), m = a.useMemo((() => e.type === l.CosmeticType.sticker ? 30 : 10), [e.type]);
-        return (0, o.jsxs)(o.Fragment, {
-            children: [(0, o.jsxs)(j, {
-                onMouseEnter: p,
-                onMouseLeave: h,
-                onClick: () => {
-                    (0, d.playClickSound)(), r()
-                },
-                children: [(0, o.jsx)(w, {
-                    children: (0, o.jsx)(S, {
-                        style: {
-                            transform: `scale(${i?1.1:1})`
-                        },
-                        children: (0, o.jsx)(u.default, {
-                            image: e.image,
-                            background: (0, f.rarityToBackground)(e.rarity),
-                            padding: m
-                        })
-                    })
-                }), (0, o.jsx)(s.default, {
-                    name: e.name,
-                    type: e.type,
-                    rarity: e.rarity,
-                    owned: e.owned,
-                    cost: e.cost,
-                    tag: e.tag
-                })]
-            }), (0, o.jsx)(x.default, {
-                open: t,
-                close: n,
-                ...e
-            })]
-        })
+            data: h
+        } = (0, e.default)();
+        return h && h.length ? (0, c.jsx)(d.default, {
+            title: 'Cosmetics',
+            description: 'Instantly earn these exclusive cosmetics',
+            children: h.map(h => (0, c.jsx)(f.default, {
+                cosmetic: h
+            }, h.id + '-item'))
+        }) : null;
     };
-    const j = i.default.div.attrs({
-            className: "maxWidth medium-shadow"
-        })(h || (h = y`
-  border-radius: ${0}px;
+}), b.register('gj2HS', function(q, r) {
+    a(q.exports, 'default', function() {
+        return f;
+    });
+    var c = b('IsAdf'),
+        d = b('PjB0f');
+    const e = ['season-ticket-cosmetics'];
+    var f = () => (0, c.useQuery)(e, () => (0, d.requestAsPromise)({
+        url: '/api/cosmos/season-ticket'
+    }));
+}), b.register('Xnshu', function(q, r) {
+    a(q.exports, 'default', function() {
+        return n;
+    });
+    var c = b('8kSQZ'),
+        d = b('uPP4W'),
+        e = b('hoTkY'),
+        f = b('8jDAw0'),
+        g = b('D8u+L0'),
+        h = b('PjB0f'),
+        i = b('Xgmcq0'),
+        j = b('Rbi1s'),
+        k = b('SmomX'),
+        l = b('Zb18q'),
+        m = b('QIGeq');
+    var n = a => {
+        const {
+            cosmetic: o
+        } = p, [q, r, s] = (0, h.useBoolean)(!1), [t, u, v] = (0, h.useBoolean)(!1), w = d.useMemo(() => o.type === e.CosmeticType.sticker ? 30 : 10, [o.type]);
+        return (0, c.jsxs)(c.Fragment, {
+            children: [
+                (0, c.jsxs)(f.Container, {
+                    onMouseEnter: u,
+                    onMouseLeave: v,
+                    onClick: r,
+                    children: [
+                        (0, c.jsx)(f.PreviewArea, {
+                            children: (0, c.jsx)(f.PreviewContent, {
+                                style: {
+                                    transform: `scale(${ t ? 1.1 : 1 })`
+                                },
+                                children: (0, c.jsx)(i.default, {
+                                    image: (0, j.default)({
+                                        id: o.id,
+                                        type: o.type
+                                    }),
+                                    background: (0, k.rarityToBackground)(o.rarity),
+                                    padding: w
+                                })
+                            })
+                        }),
+                        (0, c.jsx)(g.Container, {
+                            style: {
+                                background: (0, k.rarityToBackground)(o.rarity)
+                            },
+                            children: (0, c.jsx)(g.Content, {
+                                className: 'flex-center',
+                                children: (0, c.jsxs)('div', {
+                                    className: 'flex-column flex-center',
+                                    children: [
+                                        (0, c.jsx)(g.Title, {
+                                            children: o.name
+                                        }),
+                                        (0, c.jsx)(g.Description, {
+                                            children: (0, l.cosmeticTypeName)(o.type)
+                                        })
+                                    ]
+                                })
+                            })
+                        })
+                    ]
+                }),
+                (0, c.jsx)(m.default, {
+                    open: q,
+                    close: s,
+                    pack: o.packName,
+                    ...o,
+                    image: (0, j.default)({
+                        id: o.id,
+                        type: o.type
+                    }),
+                    callToAction: () => {}
+                })
+            ]
+        });
+    };
+}), b.register('8jDAw0', function(u, v) {
+    a(u.exports, 'BORDER_RADIUS', function() {
+        return r;
+    }), a(u.exports, 'Container', function() {
+        return t;
+    }), a(u.exports, 'PreviewArea', function() {
+        return u;
+    }), a(u.exports, 'PreviewContent', function() {
+        return v;
+    }), a(u.exports, 'default', function() {
+        return s;
+    });
+    var c = b('8kSQZ'),
+        d = b('uPP4W'),
+        e = b('h99Nu'),
+        f = b('D8u+L0'),
+        g = b('hoTkY'),
+        h = b('PjB0f'),
+        i = b('SeRL7'),
+        j = b('Xgmcq0'),
+        k = b('SmomX'),
+        l = b('gSUVO'),
+        m = b('Q3m9x0');
+    let n, o, p, q = a => a;
+    const r = 6;
+    var s = a => {
+        const [t, u, v] = (0, h.useBoolean)(!1), [w, x, y] = (0, h.useBoolean)(!1), z = d.useMemo(() => a.type === g.CosmeticType.sticker ? 30 : 10, [a.type]);
+        return (0, c.jsxs)(c.Fragment, {
+            children: [
+                (0, c.jsxs)(t, {
+                    onMouseEnter: x,
+                    onMouseLeave: y,
+                    onClick: () => {
+                        (0, i.playClickSound)(), u();
+                    },
+                    children: [
+                        (0, c.jsx)(u, {
+                            children: (0, c.jsx)(v, {
+                                style: {
+                                    transform: `scale(${ w ? 1.1 : 1 })`
+                                },
+                                children: (0, c.jsx)(j.default, {
+                                    image: a.image,
+                                    background: (0, k.rarityToBackground)(a.rarity),
+                                    padding: z
+                                })
+                            })
+                        }),
+                        (0, c.jsx)(f.default, {
+                            name: a.name,
+                            type: a.type,
+                            rarity: a.rarity,
+                            owned: a.owned,
+                            cost: a.cost,
+                            tag: a.tag
+                        })
+                    ]
+                }),
+                (0, c.jsx)(m.default, {
+                    open: t,
+                    close: v,
+                    ...a
+                })
+            ]
+        });
+    };
+    const t = e.default.div.attrs({
+            className: 'maxWidth medium-shadow'
+        })(n || (n = q`
+  border-radius: ${ 0 }px;
   overflow: hidden;
   cursor: pointer;
   margin-bottom: 20px;
   border: 3px solid;
-  font-family: ${0};
+  font-family: ${ 0 };
   &:last-child {
     margin-bottom: 0px;
   }
-`), v, p.Fonts.FugazOne),
-        w = i.default.div.attrs({
-            className: "maxWidth"
-        })(m || (m = y`
+`), r, l.Fonts.FugazOne),
+        u = e.default.div.attrs({
+            className: 'maxWidth'
+        })(o || (o = q`
   height: 140px;
   overflow: hidden;
 `)),
-        S = i.default.div.attrs({
-            className: "maxAll"
-        })(g || (g = y`
+        v = e.default.div.attrs({
+            className: 'maxAll'
+        })(p || (p = q`
   transition: transform 0.25s;
-`))
-})), t.register("2PrJL", (function(r, n) {
-    e(r.exports, "Container", (function() {
-        return v
-    })), e(r.exports, "Content", (function() {
-        return b
-    })), e(r.exports, "Title", (function() {
-        return j
-    })), e(r.exports, "Description", (function() {
-        return w
-    })), e(r.exports, "default", (function() {
-        return y
-    }));
-    var o = t("hxEiv");
-    t("fywoC");
-    var a = t("2FDaO"),
-        i = t("6Jzz1"),
-        s = t("a5sZj"),
-        l = t("bDJkg"),
-        c = t("7v0W8"),
-        d = t("lKmIF");
-    let u, f, p, x, h, m, g = e => e;
-    var y = e => (0, o.jsx)(v, {
+`));
+}), b.register('D8u+L0', function(k, g) {
+    a(k.exports, 'Container', function() {
+        return r;
+    }), a(k.exports, 'Content', function() {
+        return s;
+    }), a(k.exports, 'Title', function() {
+        return t;
+    }), a(k.exports, 'Description', function() {
+        return u;
+    }), a(k.exports, 'default', function() {
+        return q;
+    });
+    var c = b('8kSQZ');
+    b('uPP4W');
+    var d = b('h99Nu'),
+        e = b('8jDAw0'),
+        f = b('SmomX'),
+        g = b('Zb18q'),
+        h = b('EAfQq'),
+        i = b('lmfrI');
+    let j, k, l, m, n, o, p = a => a;
+    var q = a => (0, c.jsx)(r, {
         style: {
-            background: (0, s.rarityToBackground)(e.rarity)
+            background: (0, f.rarityToBackground)(a.rarity)
         },
-        children: (0, o.jsxs)(b, {
-            children: [(0, o.jsxs)("div", {
-                className: "flex-column",
-                style: {
-                    alignItems: "flex-start"
-                },
-                children: [e.tag ? (0, o.jsx)(k, {
-                    children: e.tag
-                }) : null, (0, o.jsx)(j, {
-                    children: e.name
-                }), (0, o.jsx)(w, {
-                    children: e.owned ? "Owned" : (0, l.cosmeticTypeName)(e.type)
-                })]
-            }), (0, o.jsx)(S, {
-                children: e.owned ? null : (0, o.jsx)(c.default, {
-                    amount: e.cost
+        children: (0, c.jsxs)(s, {
+            children: [
+                (0, c.jsxs)('div', {
+                    className: 'flex-column',
+                    style: {
+                        alignItems: 'flex-start'
+                    },
+                    children: [
+                        a.tag ? (0, c.jsx)(w, {
+                            children: a.tag
+                        }) : null,
+                        (0, c.jsx)(t, {
+                            children: a.name
+                        }),
+                        (0, c.jsx)(u, {
+                            children: a.owned ? 'Owned' : (0, g.cosmeticTypeName)(a.type)
+                        })
+                    ]
+                }),
+                (0, c.jsx)(v, {
+                    children: a.owned ? null : (0, c.jsx)(h.default, {
+                        amount: a.cost
+                    })
                 })
-            })]
+            ]
         })
     });
-    const v = a.default.div(u || (u = g`
+    const r = d.default.div(j || (j = p`
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
-  color: ${0};
+  color: ${ 0 };
   text-transform: uppercase;
-  border-bottom-left-radius: ${0}px;
-  border-bottom-right-radius: ${0}px;
+  border-bottom-left-radius: ${ 0 }px;
+  border-bottom-right-radius: ${ 0 }px;
   overflow: hidden;
   line-height: 1;
-`), d.default.White, (() => i.BORDER_RADIUS), (() => i.BORDER_RADIUS)),
-        b = a.default.div.attrs({
-            className: "maxWidth flex vc between"
-        })(f || (f = g`
+`), i.default.White, () => e.BORDER_RADIUS, () => e.BORDER_RADIUS),
+        s = d.default.div.attrs({
+            className: 'maxWidth flex vc between'
+        })(k || (k = p`
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
   padding: 25px;
 `)),
-        j = a.default.div(p || (p = g`
+        t = d.default.div(l || (l = p`
   font-size: 24px;
 `)),
-        w = a.default.div(x || (x = g`
+        u = d.default.div(m || (m = p`
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
   margin-top: 6px;
 `)),
-        S = a.default.div(h || (h = g`
+        v = d.default.div(n || (n = p`
   margin-left: 10px;
 `)),
-        k = a.default.div(m || (m = g`
+        w = d.default.div(o || (o = p`
   background: #00897b;
   padding: 11px;
   border-radius: 7px;
@@ -573,470 +639,516 @@ t.register("jPAXw", (function(r, n) {
   margin-bottom: 11px;
   font-size: 13px;
   text-transform: uppercase;
-`))
-})), t.register("53ySl", (function(r, n) {
-    e(r.exports, "default", (function() {
-        return d
-    }));
-    var o = t("hxEiv");
-    t("fywoC");
-    var a = t("2FDaO"),
-        i = t("6L1wG");
-    let s, l, c = e => e;
-    var d = e => {
-        const [t, r] = (0, i.useInViewRef)();
-        return (0, o.jsx)(u, {
-            ref: t,
+`));
+}), b.register('Xgmcq0', function(k, g) {
+    a(k.exports, 'default', function() {
+        return i;
+    });
+    var c = b('8kSQZ');
+    b('uPP4W');
+    var d = b('h99Nu'),
+        e = b('iPHbw0');
+    let f, g, h = a => a;
+    var i = a => {
+        const [j, k] = (0, e.useInViewRef)();
+        return (0, c.jsx)(j, {
+            ref: j,
             style: {
-                padding: e.padding,
-                background: e.background
+                padding: a.padding,
+                background: a.background
             },
-            children: r ? (0, o.jsx)(f, {
+            children: k ? (0, c.jsx)(k, {
                 draggable: !1,
-                src: e.image
+                src: a.image
             }) : null
-        })
+        });
     };
-    const u = a.default.div.attrs({
-            className: "maxAll flex-center"
-        })(s || (s = c`
+    const j = d.default.div.attrs({
+            className: 'maxAll flex-center'
+        })(f || (f = h`
   background: rgb(255, 255, 255);
   overflow: hidden;
 `)),
-        f = a.default.img(l || (l = c`
+        k = d.default.img(g || (g = h`
   max-width: 100%;
   max-height: 100%;
-`))
-})), t.register("6L1wG", (function(r, n) {
-    e(r.exports, "useInViewRef", (function() {
-        return i
-    }));
-    var o = t("fywoC"),
-        a = {
+`));
+}), b.register('iPHbw0', function(f, g) {
+    a(f.exports, 'useInViewRef', function() {
+        return e;
+    });
+    var c = b('uPP4W'),
+        d = {
             root: null,
-            rootMargin: "0px 0px 0px 0px",
-            threshold: [0, 1]
+            rootMargin: '0px 0px 0px 0px',
+            threshold: [
+                0,
+                1
+            ]
         };
 
-    function i(e, t) {
-        void 0 === e && (e = function() {}), void 0 === t && (t = a);
-        var r = t.root,
-            n = void 0 === r ? null : r,
-            i = t.rootMargin,
-            s = t.threshold,
-            l = (0, o.useState)(null),
-            c = l[0],
-            d = l[1],
-            u = (0, o.useState)(!1),
-            f = u[0],
-            p = u[1];
-        (0, o.useEffect)((function() {
-            if (c) {
-                var r = new IntersectionObserver((function(t, r) {
-                    t.forEach((function(e) {
-                        var t = e.isIntersecting;
-                        return p(t)
-                    })), e(t, r)
-                }), t);
-                return r.observe(c),
+    function e(a, b) {
+        void 0 === a && (a = function() {}), void 0 === b && (b = d);
+        var f = b.root,
+            g = void 0 === f ? null : f,
+            h = b.rootMargin,
+            i = b.threshold,
+            j = (0, c.useState)(null),
+            k = j[0],
+            l = j[1],
+            m = (0, c.useState)(!1),
+            n = m[0],
+            o = m[1];
+        (0, c.useEffect)(function() {
+            if (k) {
+                var p = new IntersectionObserver(function(b, p) {
+                    b.forEach(function(a) {
+                        var q = a.isIntersecting;
+                        return o(q);
+                    }), a(b, p);
+                }, b);
+                return p.observe(k),
                     function() {
-                        r.disconnect()
-                    }
+                        p.disconnect();
+                    };
             }
-        }), [c, e, n, i, s]);
-        var x = (0, o.useCallback)((function(e) {
-            d(e)
-        }), []);
-        return [x, f]
+        }, [
+            k,
+            a,
+            g,
+            h,
+            i
+        ]);
+        var p = (0, c.useCallback)(function(a) {
+            l(a);
+        }, []);
+        return [
+            p,
+            n
+        ];
     }
-})), t.register("e5CAx", (function(r, n) {
-    e(r.exports, "default", (function() {
-        return h
-    }));
-    var o = t("hxEiv"),
-        a = t("fywoC"),
-        i = t("hifxW"),
-        s = t("1lU5G"),
-        l = t("7v0W8"),
-        c = t("iMOcM"),
-        d = t("jVQO4"),
-        u = t("alREA"),
-        f = t("djNPM"),
-        p = t("79q1I"),
-        x = t("8p0tB");
-    var h = e => {
-        const [t, r] = a.useState(!1), [n, h] = a.useState(!1), {
-            id: m,
-            name: g,
-            rarity: y,
+}), b.register('Q3m9x0', function(p, q) {
+    a(p.exports, 'default', function() {
+        return n;
+    });
+    var c = b('8kSQZ'),
+        d = b('uPP4W'),
+        e = b('QIGeq'),
+        f = b('Rbi1s'),
+        g = b('EAfQq'),
+        h = b('PjB0f'),
+        i = b('OlpXx'),
+        j = b('JJQ0+'),
+        k = b('mEBCp'),
+        l = b('rjuBh'),
+        m = b('CJCMN4');
+    var n = a => {
+        const [o, p] = d.useState(!1), [q, r] = d.useState(!1), {
+            id: s,
+            name: t,
+            rarity: u,
             type: v,
-            description: b,
-            style: j
-        } = e, w = e.owned || e.currentCurrency < e.cost, S = () => {
-            w || t || (r(!0), (0, c.request)({
-                url: "/api/cosmos/purchase-item",
+            description: w,
+            style: x
+        } = y, z = y.owned || y.currentCurrency < y.cost, A = () => {
+            z || o || (p(!0), (0, h.request)({
+                url: '/api/cosmos/purchase-item',
                 data: {
-                    cosmeticId: e.id
+                    cosmeticId: y.id
                 },
                 success: () => {
-                    (0, x.AnalyticsTrackEvent)({
-                        event: "cosmetic_purchased",
+                    (0, m.AnalyticsTrackEvent)({
+                        event: 'cosmetic_purchased',
                         properties: {
-                            id: m,
-                            name: g,
+                            id: s,
+                            name: t,
                             type: v
                         }
-                    }), (0, d.playSound)({
-                        path: (0, u.default)("cosmos/cosmeticPurchased.mp3"),
-                        volume: .6
-                    }), (0, p.invalidateCosmosBasics)(), (0, f.refetchCosmosItemShop)(), h(!0)
+                    }), (0, i.playSound)({
+                        path: (0, j.default)('cosmos/cosmeticPurchased.mp3'),
+                        volume: 0.6
+                    }), (0, l.invalidateCosmosBasics)(), (0, k.refetchCosmosItemShop)(), r(!0);
                 },
-                error: t => {
-                    (0, c.throwMessageError)({
-                        e: t,
+                error: o => {
+                    (0, h.throwMessageError)({
+                        e: o,
                         default: {
-                            title: "Error purchasing item.",
-                            content: "Please try again later."
+                            title: 'Error purchasing item.',
+                            content: 'Please try again later.'
                         }
-                    }), e.close()
+                    }), y.close();
                 }
-            }))
+            }));
         };
-        return (0, o.jsx)(i.default, {
-            open: e.open,
-            close: e.close,
-            id: m,
-            name: g,
-            image: (0, s.default)({
-                id: m,
+        return (0, c.jsx)(e.default, {
+            open: y.open,
+            close: y.close,
+            id: s,
+            name: t,
+            image: (0, f.default)({
+                id: s,
                 type: v
             }),
-            rarity: y,
+            rarity: u,
             type: v,
-            description: b,
-            style: j,
-            purchased: n,
+            description: w,
+            style: x,
+            purchased: q,
             callToAction: () => ({
-                text: e.owned ? "Owned" : (0, o.jsxs)("div", {
-                    className: "flex vc",
+                text: y.owned ? 'Owned' : (0, c.jsxs)('div', {
+                    className: 'flex vc',
                     style: {
                         lineHeight: 1,
-                        padding: "2px 0px"
+                        padding: '2px 0px'
                     },
-                    children: [(0, o.jsx)("div", {
-                        style: {
-                            marginTop: 2
-                        },
-                        children: "Purchase"
-                    }), (0, o.jsx)("div", {
-                        style: {
-                            margin: "0px 7px"
-                        },
-                        children: "-"
-                    }), (0, o.jsx)(l.default, {
-                        amount: e.cost,
-                        size: 16,
-                        grayscale: w
-                    })]
+                    children: [
+                        (0, c.jsx)('div', {
+                            style: {
+                                marginTop: 2
+                            },
+                            children: 'Purchase'
+                        }),
+                        (0, c.jsx)('div', {
+                            style: {
+                                margin: '0px 7px'
+                            },
+                            children: '-'
+                        }),
+                        (0, c.jsx)(g.default, {
+                            amount: y.cost,
+                            size: 16,
+                            grayscale: z
+                        })
+                    ]
                 }),
-                ariaLabel: e.owned ? "Owned" : "Purchase",
-                disabled: w,
-                onClick: S
+                ariaLabel: y.owned ? 'Owned' : 'Purchase',
+                disabled: z,
+                onClick: A
             }),
-            blockCharacterPreview: e.blockCharacterPreview,
-            onCosmeticSelectionChanged: e.onCosmeticSelectionChanged
-        })
-    }
-})), t.register("jVQO4", (function(r, n) {
-    e(r.exports, "playSound", (function() {
-        return i
-    })), e(r.exports, "preloadSound", (function() {
-        return l
-    }));
-    var o = t("6yrsF");
-    const a = new Map,
-        i = e => {
-            const t = Date.now();
-            if (!e.path) return null;
-            const r = e.forceCreateNewSound ? void 0 : a.get(e.path),
-                n = r || new(0, o.Howl)({
-                    src: e.path
-                });
-            if (n.volume(e.volume), r) e.delay ? setTimeout((() => {
-                n.play()
-            }), e.delay) : n.play();
-            else {
-                const r = () => {
-                    if (a.get(e.path) || e.forceCreateNewSound || a.set(e.path, n), e.delay) {
-                        const r = t + e.delay,
-                            o = Date.now();
-                        o > r ? n.play() : setTimeout((() => {
-                            n.play()
-                        }), r - o)
-                    } else n.play()
-                };
-                "loaded" === n.state() ? r() : n.once("load", r)
-            }
-            return n
-        },
-        s = new Set,
-        l = e => {
-            const {
-                path: t
-            } = e;
-            if (a.get(t)) return;
-            if (s.has(t)) return;
-            s.add(t);
-            const r = new(0, o.Howl)({
-                src: t
-            });
-            r.once("load", (() => {
-                s.delete(t), a.set(t, r)
-            }))
-        }
-})), t.register("djNPM", (function(r, n) {
-    e(r.exports, "removeCosmosItemShop", (function() {
-        return l
-    })), e(r.exports, "refetchCosmosItemShop", (function() {
-        return c
-    })), e(r.exports, "default", (function() {
-        return d
-    }));
-    var o = t("eMRqp"),
-        a = t("bKPD8"),
-        i = t("iMOcM");
-    const s = ["cosmos-item-shop"],
-        l = () => {
-            a.default.removeQueries(s)
-        },
-        c = () => a.default.refetchQueries(s);
-    var d = () => (0, o.useQuery)(s, (() => (0, i.requestAsPromise)({
-        url: "/api/cosmos/shop"
-    })))
-})), t.register("8p0tB", (function(r, n) {
-    e(r.exports, "AnalyticsTrackEvent", (function() {
-        return l
-    }));
-    var o = t("6fFlL"),
-        a = t("iMOcM"),
-        i = t("dOsOD"),
-        s = t("amvOw");
-    const l = e => {
-        var t, r, n;
-        if ((window.gtag && !(null === (t = e.blockedSource) || void 0 === t ? void 0 : t.google) && window.gtag("event", e.event, e.properties), i.AnalyticsFlags.educatorOnly) && (null === (n = (0, a.getUser)()) || void 0 === n ? void 0 : n.accountType) !== o.default.educator) return;
-        (null === (r = e.blockedSource) || void 0 === r ? void 0 : r.posthog) || (0, s.TrackPostHogEvent)({
-            event: e.event,
-            properties: e.properties,
-            force: e.forcePostHog
-        })
-    }
-})), t.register("guNSj", (function(r, n) {
-    e(r.exports, "default", (function() {
-        return y
-    }));
-    var o = t("hxEiv");
-    t("fywoC");
-    var a = t("2FDaO"),
-        i = t("4ifJF"),
-        s = t("69SUA"),
-        l = t("aQuqp"),
-        c = t("py2Xr"),
-        d = t("kyvf1"),
-        u = t("b1oE9"),
-        f = t("hqWys"),
-        p = t("7u0qw"),
-        x = t("lR9Fx");
-    let h, m, g = e => e;
-    var y = e => (0, p.OwnsSeasonTicket)() ? null : (0, o.jsxs)(v, {
-        children: [(0, o.jsx)(d.default, {
-            to: u.SEASON_TICKET_BASE,
-            style: {
-                textDecoration: "none"
-            },
-            target: e.pageMode ? void 0 : "_blank",
-            children: (0, o.jsxs)(l.default, {
-                style: {
-                    fontFamily: s.Fonts.SFPro,
-                    marginTop: 15
-                },
-                size: "large",
-                customFontWeight: s.FontWeights.Bold,
-                customColor: "#1677ff",
-                ariaLabel: `Purchase ${f.SeasonTicketName.name}`,
-                children: [(0, o.jsx)(c.default, {
-                    name: "fal fa-sparkles",
-                    style: {
-                        marginRight: 10
-                    }
-                }), "Purchase ", f.SeasonTicketName.name]
-            })
-        }), (0, o.jsxs)(b, {
-            children: ["Season ends ", x.SEASON_TICKET_END_DATE, "."]
-        })]
+            blockCharacterPreview: y.blockCharacterPreview,
+            onCosmeticSelectionChanged: y.onCosmeticSelectionChanged
+        });
+    };
+}), b.register('OlpXx', function(g, h) {
+    a(g.exports, 'playSound', function() {
+        return e;
+    }), a(g.exports, 'preloadSound', function() {
+        return g;
     });
-    const v = (0, a.default)(i.CenteredColumn).attrs({
-            className: "maxWidth"
-        })(h || (h = g`
+    var c = b('6yrsF');
+    const d = new Map(),
+        e = a => {
+            const f = Date.now();
+            if (!a.path)
+                return null;
+            const g = a.forceCreateNewSound ? void 0 : d.get(a.path),
+                h = g || new(0, c.Howl)({
+                    src: a.path
+                });
+            if (h.volume(a.volume), g)
+                a.delay ? setTimeout(() => {
+                    h.play();
+                }, a.delay) : h.play();
+            else {
+                const i = () => {
+                    if (d.get(a.path) || a.forceCreateNewSound || d.set(a.path, h), a.delay) {
+                        const j = f + a.delay,
+                            k = Date.now();
+                        k > j ? h.play() : setTimeout(() => {
+                            h.play();
+                        }, j - k);
+                    } else
+                        h.play();
+                };
+                'loaded' === h.state() ? i() : h.once('load', i);
+            }
+            return h;
+        },
+        f = new Set(),
+        g = a => {
+            const {
+                path: h
+            } = i;
+            if (d.get(h))
+                return;
+            if (f.has(h))
+                return;
+            f.add(h);
+            const j = new(0, c.Howl)({
+                src: h
+            });
+            j.once('load', () => {
+                f.delete(h), d.set(h, j);
+            });
+        };
+}), b.register('mEBCp', function(i, j) {
+    a(i.exports, 'removeCosmosItemShop', function() {
+        return g;
+    }), a(i.exports, 'refetchCosmosItemShop', function() {
+        return h;
+    }), a(i.exports, 'default', function() {
+        return i;
+    });
+    var c = b('IsAdf'),
+        d = b('jnSVn'),
+        e = b('PjB0f');
+    const f = ['cosmos-item-shop'],
+        g = () => {
+            d.default.removeQueries(f);
+        },
+        h = () => d.default.refetchQueries(f);
+    var i = () => (0, c.useQuery)(f, () => (0, e.requestAsPromise)({
+        url: '/api/cosmos/shop'
+    }));
+}), b.register('CJCMN4', function(i, j) {
+    a(i.exports, 'AnalyticsTrackEvent', function() {
+        return g;
+    });
+    var c = b('pvZv3'),
+        d = b('PjB0f'),
+        e = b('61G7M'),
+        f = b('OW/xn');
+    const g = a => {
+        var h, i, j;
+        if ((window.gtag && !(null === (h = a.blockedSource) || void 0 === h ? void 0 : h.google) && window.gtag('event', a.event, a.properties), e.AnalyticsFlags.educatorOnly) && (null === (j = (0, d.getUser)()) || void 0 === j ? void 0 : j.accountType) !== c.default.educator)
+            return;
+        (null === (i = a.blockedSource) || void 0 === i ? void 0 : i.posthog) || (0, f.TrackPostHogEvent)({
+            event: a.event,
+            properties: a.properties,
+            force: a.forcePostHog
+        });
+    };
+}), b.register('l2bw2', function(f, c) {
+    a(f.exports, 'default', function() {
+        return q;
+    });
+    var c = b('8kSQZ');
+    b('uPP4W');
+    var d = b('h99Nu'),
+        e = b('YimJ0'),
+        f = b('gSUVO'),
+        g = b('Dog9Y'),
+        h = b('iMnBi'),
+        i = b('iYEuk12'),
+        j = b('q721a'),
+        k = b('ImHrc1'),
+        l = b('rZ3/P'),
+        m = b('uHmrc');
+    let n, o, p = a => a;
+    var q = a => (0, l.OwnsSeasonTicket)() ? null : (0, c.jsxs)(r, {
+        children: [
+            (0, c.jsx)(i.default, {
+                to: j.SEASON_TICKET_BASE,
+                style: {
+                    textDecoration: 'none'
+                },
+                target: a.pageMode ? void 0 : '_blank',
+                children: (0, c.jsxs)(g.default, {
+                    style: {
+                        fontFamily: f.Fonts.SFPro,
+                        marginTop: 15
+                    },
+                    size: 'large',
+                    customFontWeight: f.FontWeights.Bold,
+                    customColor: '#1677ff',
+                    ariaLabel: `Purchase ${ k.SeasonTicketName.name }`,
+                    children: [
+                        (0, c.jsx)(h.default, {
+                            name: 'fal fa-sparkles',
+                            style: {
+                                marginRight: 10
+                            }
+                        }),
+                        'Purchase ',
+                        k.SeasonTicketName.name
+                    ]
+                })
+            }),
+            (0, c.jsxs)(s, {
+                children: [
+                    'Season ends ',
+                    m.SEASON_TICKET_END_DATE,
+                    '.'
+                ]
+            })
+        ]
+    });
+    const r = (0, d.default)(e.CenteredColumn).attrs({
+            className: 'maxWidth'
+        })(n || (n = p`
   padding: 6px 0px;
 `)),
-        b = a.default.div(m || (m = g`
+        s = d.default.div(o || (o = p`
   text-transform: none;
-  font-family: ${0};
+  font-family: ${ 0 };
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   margin-top: 10px;
-`), s.Fonts.SFPro)
-})), t.register("2RhIb", (function(e, r) {
-    Object.defineProperty(e.exports, "__esModule", {
+`), f.Fonts.SFPro);
+}), b.register('wiooy2', function(a, f) {
+    Object.defineProperty(a.exports, '__esModule', {
         value: !0
     });
-    var n, o = function() {
-            function e(e, t) {
-                for (var r = 0; r < t.length; r++) {
-                    var n = t[r];
-                    n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
+    var c, d = function() {
+            function e(e, b) {
+                for (var f = 0; f < b.length; f++) {
+                    var g = b[f];
+                    g.enumerable = g.enumerable || !1, g.configurable = !0, 'value' in g && (g.writable = !0), Object.defineProperty(e, g.key, g);
                 }
             }
-            return function(t, r, n) {
-                return r && e(t.prototype, r), n && e(t, n), t
-            }
+            return function(b, k, c) {
+                return k && e(b.prototype, k), c && e(b, c), b;
+            };
         }(),
-        a = t("fywoC"),
-        i = (n = a) && n.__esModule ? n : {
-            default: n
+        e = b('uPP4W'),
+        f = (c = e) && c.__esModule ? c : {
+            default: c
         },
-        s = t("3o5yH");
-    var l = {
-            position: "relative"
+        g = b('alDvw');
+    var h = {
+            position: 'relative'
         },
-        c = function(e) {
-            function t(e) {
-                ! function(e, t) {
-                    if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-                }(this, t);
-                var r = function(e, t) {
-                    if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-                    return !t || "object" != typeof t && "function" != typeof t ? e : t
-                }(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
-                return r.setRef = r.setRef.bind(r), r
+        i = function(a) {
+            function j(a) {
+                ! function(a, j) {
+                    if (!(a instanceof j))
+                        throw new TypeError('Cannot call a class as a function');
+                }(this, j);
+                var k = function(a, j) {
+                    if (!a)
+                        throw new ReferenceError('this hasn\'t been initialised - super() hasn\'t been called');
+                    return !j || 'object' != typeof j && 'function' != typeof j ? a : j;
+                }(this, (j.__proto__ || Object.getPrototypeOf(j)).call(this, a));
+                return k.setRef = k.setRef.bind(k), k;
             }
-            return function(e, t) {
-                if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-                e.prototype = Object.create(t && t.prototype, {
+            return function(a, j) {
+                if ('function' != typeof j && null !== j)
+                    throw new TypeError('Super expression must either be null or a function, not ' + typeof j);
+                a.prototype = Object.create(j && j.prototype, {
                     constructor: {
-                        value: e,
+                        value: a,
                         enumerable: !1,
                         writable: !0,
                         configurable: !0
                     }
-                }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-            }(t, e), o(t, [{
-                key: "componentWillReceiveProps",
-                value: function(e) {
-                    e.active && !this.props.active && (0, s.confetti)(this.container, e.config)
+                }), j && (Object.setPrototypeOf ? Object.setPrototypeOf(a, j) : a.__proto__ = j);
+            }(j, a), d(j, [{
+                    key: 'componentWillReceiveProps',
+                    value: function(a) {
+                        a.active && !this.props.active && (0, g.confetti)(this.container, a.config);
+                    }
+                },
+                {
+                    key: 'setRef',
+                    value: function(a) {
+                        this.container = a;
+                    }
+                },
+                {
+                    key: 'render',
+                    value: function() {
+                        return f.default.createElement('div', {
+                            className: this.props.className,
+                            style: h,
+                            ref: this.setRef
+                        });
+                    }
                 }
-            }, {
-                key: "setRef",
-                value: function(e) {
-                    this.container = e
-                }
-            }, {
-                key: "render",
-                value: function() {
-                    return i.default.createElement("div", {
-                        className: this.props.className,
-                        style: l,
-                        ref: this.setRef
-                    })
-                }
-            }]), t
-        }(a.Component);
-    e.exports.default = c
-})), t.register("3o5yH", (function(e, t) {
-    Object.defineProperty(e.exports, "__esModule", {
+            ]), j;
+        }(e.Component);
+    a.exports.default = i;
+}), b.register('alDvw', function(a, b) {
+    Object.defineProperty(a.exports, '__esModule', {
         value: !0
-    }), e.exports.confetti = function(e) {
-        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-            i = Object.assign({}, a, t),
-            s = i.elementCount,
-            l = i.colors,
-            c = i.width,
-            d = i.height,
-            u = i.angle,
-            f = i.spread,
-            p = i.startVelocity,
-            x = i.decay,
-            h = i.duration,
-            m = i.random,
-            g = r(e, s, l, c, d),
-            y = g.map((function(e) {
+    }), a.exports.confetti = function(a) {
+        var c = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+            d = Object.assign({}, f, c),
+            e = d.elementCount,
+            f = d.colors,
+            g = d.width,
+            h = d.height,
+            i = d.angle,
+            j = d.spread,
+            k = d.startVelocity,
+            l = d.decay,
+            m = d.duration,
+            n = d.random,
+            o = c(a, e, f, g, h),
+            p = o.map(function(a) {
                 return {
-                    element: e,
-                    physics: n(u, f, p, m)
-                }
-            }));
-        return o(e, y, x, h)
+                    element: a,
+                    physics: d(i, j, k, n)
+                };
+            });
+        return e(a, p, l, m);
     };
 
-    function r(e, t, r, n, o) {
+    function c(a, b, c, d, e) {
         return Array.from({
-            length: t
-        }).map((function(t, a) {
-            var i = document.createElement("div"),
-                s = r[a % r.length];
-            return i.style["background-color"] = s, i.style.width = n, i.style.height = o, i.style.position = "absolute", i.style.willChange = "transform, opacity", e.appendChild(i), i
-        }))
+            length: b
+        }).map(function(b, f) {
+            var d = document.createElement('div'),
+                e = c[f % c.length];
+            return d.style['background-color'] = e, d.style.width = d, d.style.height = e, d.style.position = 'absolute', d.style.willChange = 'transform, opacity', a.appendChild(d), d;
+        });
     }
 
-    function n(e, t, r, n) {
-        var o = e * (Math.PI / 180),
-            a = t * (Math.PI / 180);
+    function d(a, b, c, d) {
+        var e = a * (Math.PI / 180),
+            f = b * (Math.PI / 180);
         return {
             x: 0,
             y: 0,
-            wobble: 10 * n(),
-            wobbleSpeed: .1 + .1 * n(),
-            velocity: .5 * r + n() * r,
-            angle2D: -o + (.5 * a - n() * a),
-            angle3D: -Math.PI / 4 + n() * (Math.PI / 2),
-            tiltAngle: n() * Math.PI,
-            tiltAngleSpeed: .1 + .3 * n()
-        }
+            wobble: 10 * d(),
+            wobbleSpeed: 0.1 + 0.1 * d(),
+            velocity: 0.5 * c + d() * c,
+            angle2D: -e + (0.5 * f - d() * f),
+            angle3D: -Math.PI / 4 + d() * (Math.PI / 2),
+            tiltAngle: d() * Math.PI,
+            tiltAngleSpeed: 0.1 + 0.3 * d()
+        };
     }
 
-    function o(e, t, r, n) {
-        var o = void 0;
-        return new Promise((function(a) {
-            requestAnimationFrame((function i(s) {
-                o || (o = s);
-                var l = o === s ? 0 : (s - o) / n;
-                t.forEach((function(e) {
-                    return function(e, t, r) {
-                        e.physics.x += Math.cos(e.physics.angle2D) * e.physics.velocity, e.physics.y += Math.sin(e.physics.angle2D) * e.physics.velocity, e.physics.z += Math.sin(e.physics.angle3D) * e.physics.velocity, e.physics.wobble += e.physics.wobbleSpeed, e.physics.velocity *= r, e.physics.y += 3, e.physics.tiltAngle += e.physics.tiltAngleSpeed;
-                        var n = e.physics,
-                            o = n.x,
-                            a = n.y,
-                            i = n.tiltAngle,
-                            s = n.wobble,
-                            l = "translate3d(" + (o + 10 * Math.cos(s)) + "px, " + (a + 10 * Math.sin(s)) + "px, 0) rotate3d(1, 1, 1, " + i + "rad)";
-                        e.element.style.transform = l, e.element.style.opacity = 1 - t
-                    }(e, l, r)
-                })), s - o < n ? requestAnimationFrame(i) : (t.forEach((function(t) {
-                    if (t.element.parentNode === e) return e.removeChild(t.element)
-                })), a())
-            }))
-        }))
+    function e(a, b, c, d) {
+        var f = void 0;
+        return new Promise(function(j) {
+            requestAnimationFrame(function k(l) {
+                f || (f = l);
+                var g = f === l ? 0 : (l - f) / d;
+                b.forEach(function(a) {
+                    return function(a, b, c) {
+                        a.physics.x += Math.cos(a.physics.angle2D) * a.physics.velocity, a.physics.y += Math.sin(a.physics.angle2D) * a.physics.velocity, a.physics.z += Math.sin(a.physics.angle3D) * a.physics.velocity, a.physics.wobble += a.physics.wobbleSpeed, a.physics.velocity *= c, a.physics.y += 3, a.physics.tiltAngle += a.physics.tiltAngleSpeed;
+                        var h = a.physics,
+                            i = h.x,
+                            j = h.y,
+                            k = h.tiltAngle,
+                            l = h.wobble,
+                            m = 'translate3d(' + (i + 10 * Math.cos(l)) + 'px, ' + (j + 10 * Math.sin(l)) + 'px, 0) rotate3d(1, 1, 1, ' + k + 'rad)';
+                        a.element.style.transform = m, a.element.style.opacity = 1 - b;
+                    }(a, g, c);
+                }), s - f < d ? requestAnimationFrame(i) : (b.forEach(function(b) {
+                    if (b.element.parentNode === a)
+                        return a.removeChild(b.element);
+                }), f());
+            });
+        });
     }
-    var a = {
+    var f = {
         angle: 90,
-        decay: .9,
+        decay: 0.9,
         spread: 45,
         startVelocity: 45,
         elementCount: 50,
-        width: "10px",
-        height: "10px",
-        colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
-        duration: 3e3,
+        width: '10px',
+        height: '10px',
+        colors: [
+            '#a864fd',
+            '#29cdff',
+            '#78ff44',
+            '#ff718d',
+            '#fdff6a'
+        ],
+        duration: 3000,
         random: Math.random
-    }
-}));
+    };
+});

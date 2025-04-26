@@ -1,68 +1,68 @@
-function e(e, t, o, r) {
-    Object.defineProperty(e, t, {
+function a(a, b, o, r) {
+    Object.defineProperty(a, b, {
         get: o,
         set: r,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("hsBOu", (function(o, r) {
-    var s;
-    s = o.exports, Object.defineProperty(s, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('D/K+w', function(o, r) {
+    var c;
+    c = o.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(o.exports, "default", (function() {
-        return g
-    }));
-    var n = t("hxEiv"),
-        a = t("fywoC"),
-        i = t("fBuQJ"),
-        c = t("gHmyG"),
-        u = t("iMOcM"),
-        l = t("b1oE9"),
-        f = t("sgWtV"),
-        d = t("iROck");
-    var g = () => (a.useEffect((() => {
-        const e = (0, u.getUrlVariable)("token");
-        e ? i.default.confirm({
-            title: "Are you sure you want to revoke your child's access to Gimkit?",
+    }), a(o.exports, 'default', function() {
+        return l;
+    });
+    var d = b('8kSQZ'),
+        e = b('uPP4W'),
+        f = b('cR5QE'),
+        g = b('iHElh'),
+        h = b('PjB0f'),
+        i = b('q721a'),
+        j = b('GFgjD'),
+        k = b('k0s2g17');
+    var l = () => (e.useEffect(() => {
+        const m = (0, h.getUrlVariable)('token');
+        m ? f.default.confirm({
+            title: 'Are you sure you want to revoke your child\'s access to Gimkit?',
             onOk: () => {
-                (0, u.request)({
-                    url: "/api/users/revokeAccess",
-                    method: "post",
+                (0, h.request)({
+                    url: '/api/users/revokeAccess',
+                    method: 'post',
                     data: {
-                        token: decodeURIComponent(e)
+                        token: decodeURIComponent(m)
                     },
                     success: () => {
-                        i.default.success({
-                            content: "Your student's access has been revoked"
-                        }), (0, d.NavigateTo)(l.HOMEPAGE)
+                        f.default.success({
+                            content: 'Your student\'s access has been revoked'
+                        }), (0, k.NavigateTo)(i.HOMEPAGE);
                     },
-                    error: () => (0, f.throwError)({
-                        title: "Error revoking access",
-                        content: "The link might have expired. Please contact support for further assistance"
+                    error: () => (0, j.throwError)({
+                        title: 'Error revoking access',
+                        content: 'The link might have expired. Please contact support for further assistance'
                     })
-                })
+                });
             },
             onCancel: () => {
-                (0, d.NavigateTo)("/")
+                (0, k.NavigateTo)('/');
             },
-            okText: "Yes",
-            cancelText: "No"
-        }) : (0, d.NavigateTo)("/")
-    }), []), (0, n.jsx)("div", {
-        className: "maxWidth maxHeight hc vc flex",
-        children: (0, n.jsx)(c.default, {
-            size: "large"
+            okText: 'Yes',
+            cancelText: 'No'
+        }) : (0, k.NavigateTo)('/');
+    }, []), (0, d.jsx)('div', {
+        className: 'maxWidth maxHeight hc vc flex',
+        children: (0, d.jsx)(g.default, {
+            size: 'large'
         })
-    }))
-})), t.register("iROck", (function(o, r) {
-    e(o.exports, "NavigateTo", (function() {
-        return n
     }));
-    var s = t("bd8je");
-    const n = e => {
-        s.history.push(e)
-    }
-}));
+}), b.register('k0s2g17', function(o, r) {
+    a(o.exports, 'NavigateTo', function() {
+        return d;
+    });
+    var c = b('Cr/BM');
+    const d = a => {
+        c.history.push(a);
+    };
+});

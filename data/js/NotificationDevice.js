@@ -1,52 +1,52 @@
-function e(e, o, n, t) {
-    Object.defineProperty(e, o, {
+function a(a, b, n, c) {
+    Object.defineProperty(a, b, {
         get: n,
-        set: t,
+        set: c,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var o = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-o.register("fGVfM", (function(n, t) {
-    var i;
-    i = n.exports, Object.defineProperty(i, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('8Rbag', function(n, c) {
+    var c;
+    c = n.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(n.exports, "default", (function() {
-        return g
-    }));
-    var l = o("divCp"),
-        r = o("alREA"),
-        a = o("4uojN"),
-        s = o("6Tpu2"),
-        f = o("bNmF9"),
-        c = o("dPNN3"),
-        u = o("h6SIm"),
-        d = o("7Kygx");
-    class b extends f.default {
-        constructor(e) {
-            if (super(e), (0, l.default)(this, "useCallToAction", (() => {
-                    this.sendToServerDevice(d.Messages.callToAction)
-                })), (0, s.InPreGamePhase)() && (0, a.isSavedVersion)()) {
-                const e = u.default.Overlay;
-                new(0, c.default)({
+    }), a(n.exports, 'default', function() {
+        return m;
+    });
+    var d = b('UM8oI'),
+        e = b('JJQ0+'),
+        f = b('Bpt+p'),
+        g = b('5Ux1a'),
+        h = b('sgILU'),
+        i = b('phu0d'),
+        j = b('Gqspz'),
+        k = b('X3k95');
+    class l extends h.default {
+        constructor(a) {
+            if (super(a), (0, d.default)(this, 'useCallToAction', () => {
+                    this.sendToServerDevice(k.Messages.callToAction);
+                }), (0, g.InPreGamePhase)() && (0, f.isSavedVersion)()) {
+                const m = j.default.Overlay;
+                new(0, i.default)({
                     device: this,
-                    baseColor: e.baseColor,
-                    boxColor: e.boxColor,
+                    baseColor: m.baseColor,
+                    boxColor: m.boxColor,
                     content: {
                         icon: {
-                            image: (0, r.default)("devices/notification/icon.png"),
-                            scale: .8
+                            image: (0, e.default)('devices/notification/icon.png'),
+                            scale: 0.8
                         }
                     }
-                })
+                });
             }
         }
     }
-    var g = b
-})), o.register("7Kygx", (function(o, n) {
-    let t;
-    e(o.exports, "Messages", (function() {
-        return t
-    })), (t || (t = {})).callToAction = "primaryCallToAction"
-}));
+    var m = n;
+}), b.register('X3k95', function(b, n) {
+    let c;
+    a(b.exports, 'Messages', function() {
+        return c;
+    }), (c || (c = {})).callToAction = 'primaryCallToAction';
+});

@@ -1,40 +1,40 @@
-var e = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-e.register("8ZAQ0", (function(o, n) {
-    var a, r, l, t, i;
-    a = o.exports, Object.defineProperty(a, "__esModule", {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('wVu9f', function(o, n) {
+    var b, c, d, e, f;
+    b = o.exports, Object.defineProperty(b, '__esModule', {
         value: !0,
         configurable: !0
-    }), r = o.exports, l = "default", t = function() {
-        return p
-    }, Object.defineProperty(r, l, {
-        get: t,
-        set: i,
+    }), c = o.exports, d = 'default', e = function() {
+        return n;
+    }, Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
-    var d = e("alREA"),
-        s = e("4uojN"),
-        f = e("6Tpu2"),
-        u = e("bNmF9"),
-        c = e("dPNN3"),
-        b = e("h6SIm");
-    class g extends u.default {
-        constructor(e) {
-            if (super(e), (0, f.InPreGamePhase)() && (0, s.isSavedVersion)()) {
-                const e = b.default.Manager;
-                new(0, c.default)({
+    var g = a('JJQ0+'),
+        h = a('Bpt+p'),
+        i = a('5Ux1a'),
+        j = a('sgILU'),
+        k = a('phu0d'),
+        l = a('Gqspz');
+    class m extends j.default {
+        constructor(a) {
+            if (super(a), (0, i.InPreGamePhase)() && (0, h.isSavedVersion)()) {
+                const n = l.default.Manager;
+                new(0, k.default)({
                     device: this,
-                    baseColor: e.baseColor,
-                    boxColor: e.boxColor,
+                    baseColor: n.baseColor,
+                    boxColor: n.boxColor,
                     content: {
                         icon: {
-                            image: (0, d.default)("devices/end_game/icon.png"),
-                            scale: .8
+                            image: (0, g.default)('devices/end_game/icon.png'),
+                            scale: 0.8
                         }
                     }
-                })
+                });
             }
         }
     }
-    var p = g
-}));
+    var n = o;
+});

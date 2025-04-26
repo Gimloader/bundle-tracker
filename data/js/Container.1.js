@@ -1,213 +1,233 @@
-function e(e, t, a, r) {
-    Object.defineProperty(e, t, {
-        get: a,
-        set: r,
+function a(a, b, c, v) {
+    Object.defineProperty(a, b, {
+        get: c,
+        set: v,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
 
-function t(e) {
-    return e && e.__esModule ? e.default : e
+function b(a) {
+    return a && a.__esModule ? a.default : a;
 }
-var a = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-a.register("2XIEk", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return b
-    }));
-    var n = a("hxEiv"),
-        i = a("fywoC"),
-        l = a("iMOcM"),
-        o = a("cPGmn"),
-        s = a("jtOL4"),
-        d = a("93yIm"),
-        c = a("4gMdJ"),
-        u = a("fC6cp"),
-        f = a("fBuQJ"),
-        h = a("i5Qjx"),
-        g = a("l4uFh"),
-        m = a("1DrO4"),
-        p = a("2FDaO"),
-        v = a("jERab");
-    let x;
-    var b = e => {
-        const [t, a] = i.useState(!0), [r, p] = i.useState([]), [x, b] = (0, s.useLocalstorage)("last-viewed-news", 0), [j, w] = i.useState(!1), [C, S, k] = (0, l.useBoolean)(!0), N = i.useCallback((() => {
-            w(!0)
-        }), [w]), M = i.useCallback((() => {
-            w(!1), e.onClose && e.onClose()
-        }), [w, e.onClose]);
-        if ((0, o.useDidMount)((() => {
-                (0, l.request)({
-                    url: "/api/news/fetch",
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('EOKUI', function(b, v) {
+    a(b.exports, 'default', function() {
+        return s;
+    });
+    var d = c('8kSQZ'),
+        e = c('uPP4W'),
+        f = c('PjB0f'),
+        g = c('laJ/S'),
+        h = c('LI7Cy'),
+        i = c('IsmrL'),
+        j = c('qEw51'),
+        k = c('ExtIT'),
+        l = c('cR5QE'),
+        m = c('5nJMd26'),
+        n = c('KlhV/'),
+        o = c('gL6W3'),
+        p = c('h99Nu'),
+        q = c('eFxzD');
+    let r;
+    var s = a => {
+        const [t, u] = e.useState(!0), [v, w] = e.useState([]), [x, y] = (0, h.useLocalstorage)('last-viewed-news', 0), [z, A] = e.useState(!1), [B, C, D] = (0, f.useBoolean)(!0), E = e.useCallback(() => {
+            A(!0);
+        }, [A]), F = e.useCallback(() => {
+            A(!1), a.onClose && a.onClose();
+        }, [
+            A,
+            a.onClose
+        ]);
+        if ((0, g.useDidMount)(() => {
+                (0, f.request)({
+                    url: '/api/news/fetch',
                     data: {
-                        isStudent: (0, l.isStudent)()
+                        isStudent: (0, f.isStudent)()
                     },
                     success: t => {
-                        p(t);
-                        const a = null != x ? x : 0,
-                            r = t[0];
-                        r && (r && r.publishDate > a && e.allowAutoOpen && N(), b(r.publishDate))
+                        w(t);
+                        const G = null != x ? x : 0,
+                            H = t[0];
+                        H && (H && H.publishDate > G && a.allowAutoOpen && E(), y(H.publishDate));
                     },
                     error: t => {
-                        e.open && (0, l.throwMessageError)({
+                        a.open && (0, f.throwMessageError)({
                             e: t,
                             default: {
-                                title: "Error loading news"
+                                title: 'Error loading news'
                             }
-                        })
+                        });
                     },
                     both: () => {
-                        a(!1)
+                        u(!1);
                     }
-                })
-            })), i.useEffect((() => {
-                e.open && N()
-            }), [e.open]), t) return null;
-        return (0, n.jsxs)(n.Fragment, {
-            children: [(0, n.jsx)(y, {}), (0, n.jsx)(c.default, {
-                theme: {
-                    algorithm: g.default.defaultAlgorithm
-                },
-                children: (0, n.jsxs)(f.default, {
-                    className: "news-modal",
-                    open: j,
-                    onCancel: M,
-                    closable: !1,
-                    footer: null,
-                    width: 650,
-                    bodyStyle: {
-                        padding: 0
+                });
+            }), e.useEffect(() => {
+                a.open && E();
+            }, [a.open]), t)
+            return null;
+        return (0, d.jsxs)(d.Fragment, {
+            children: [
+                (0, d.jsx)(t, {}),
+                (0, d.jsx)(j.default, {
+                    theme: {
+                        algorithm: n.default.defaultAlgorithm
                     },
-                    style: {
-                        top: 25,
-                        padding: 0,
-                        marginBottom: 100
-                    },
-                    children: [(0, n.jsx)(v.default, {
-                        close: M
-                    }), r.length ? 1 !== r.length && C ? (0, n.jsxs)("div", {
-                        style: {
-                            paddingBottom: 35
+                    children: (0, d.jsxs)(l.default, {
+                        className: 'news-modal',
+                        open: z,
+                        onCancel: F,
+                        closable: !1,
+                        footer: null,
+                        width: 650,
+                        bodyStyle: {
+                            padding: 0
                         },
-                        children: [(0, n.jsx)(m.default, {
-                            item: r[0],
-                            isFirstItem: !0
-                        }), (0, n.jsx)("div", {
-                            className: "maxWidth flex-center",
-                            style: {
-                                marginTop: 30
-                            },
-                            children: (0, n.jsx)(d.default, {
-                                shape: "round",
-                                onClick: k,
-                                children: "View more news..."
-                            })
-                        })]
-                    }) : (0, n.jsx)(n.Fragment, {
-                        children: (0, n.jsx)(h.default, {
-                            className: "maxWidth",
-                            size: 30,
-                            direction: "vertical",
-                            style: {
-                                paddingBottom: 35
-                            },
-                            split: (0, n.jsx)(u.default, {
-                                style: {
-                                    margin: 0
-                                }
+                        style: {
+                            top: 25,
+                            padding: 0,
+                            marginBottom: 100
+                        },
+                        children: [
+                            (0, d.jsx)(q.default, {
+                                close: F
                             }),
-                            children: r.map(((e, t) => (0, n.jsx)(m.default, {
-                                item: e,
-                                isFirstItem: 0 === t
-                            }, e._id)))
-                        })
-                    }) : (0, n.jsx)(n.Fragment, {
-                        children: (0, n.jsx)("div", {
-                            className: "maxWidth flex-center",
-                            style: {
-                                padding: 50,
-                                fontSize: 16,
-                                textAlign: "center"
-                            },
-                            children: "There currently is no news. Check back again later!"
-                        })
-                    })]
+                            v.length ? 1 !== v.length && B ? (0, d.jsxs)('div', {
+                                style: {
+                                    paddingBottom: 35
+                                },
+                                children: [
+                                    (0, d.jsx)(o.default, {
+                                        item: v[0],
+                                        isFirstItem: !0
+                                    }),
+                                    (0, d.jsx)('div', {
+                                        className: 'maxWidth flex-center',
+                                        style: {
+                                            marginTop: 30
+                                        },
+                                        children: (0, d.jsx)(i.default, {
+                                            shape: 'round',
+                                            onClick: D,
+                                            children: 'View more news...'
+                                        })
+                                    })
+                                ]
+                            }) : (0, d.jsx)(d.Fragment, {
+                                children: (0, d.jsx)(m.default, {
+                                    className: 'maxWidth',
+                                    size: 30,
+                                    direction: 'vertical',
+                                    style: {
+                                        paddingBottom: 35
+                                    },
+                                    split: (0, d.jsx)(k.default, {
+                                        style: {
+                                            margin: 0
+                                        }
+                                    }),
+                                    children: v.map((a, t) => (0, d.jsx)(o.default, {
+                                        item: a,
+                                        isFirstItem: 0 === t
+                                    }, a._id))
+                                })
+                            }) : (0, d.jsx)(d.Fragment, {
+                                children: (0, d.jsx)('div', {
+                                    className: 'maxWidth flex-center',
+                                    style: {
+                                        padding: 50,
+                                        fontSize: 16,
+                                        textAlign: 'center'
+                                    },
+                                    children: 'There currently is no news. Check back again later!'
+                                })
+                            })
+                        ]
+                    })
                 })
-            })]
-        })
+            ]
+        });
     };
-    const y = (0, p.createGlobalStyle)(x || (x = (e => e)`
+    const t = (0, p.createGlobalStyle)(r || (r = (a => a)`
   .news-modal > .ant-modal-content {
     overflow: hidden;
     padding: 0px !important;
   }
-`))
-})), a.register("jtOL4", (function(t, r) {
-    e(t.exports, "useLocalstorage", (function() {
-        return i
-    }));
-    var n = a("fywoC");
+`));
+}), c.register('LI7Cy', function(b, g) {
+    a(b.exports, 'useLocalstorage', function() {
+        return e;
+    });
+    var d = c('uPP4W');
 
-    function i(e, t) {
-        void 0 === t && (t = null);
-        var a = (0, n.useState)(l()),
-            r = a[0],
-            i = a[1];
+    function e(a, b) {
+        void 0 === b && (b = null);
+        var f = (0, d.useState)(i()),
+            g = f[0],
+            h = f[1];
 
-        function l() {
-            if ("undefined" == typeof localStorage) return null;
-            var t = localStorage.getItem(e) || "null";
+        function i() {
+            if ('undefined' == typeof localStorage)
+                return null;
+            var j = localStorage.getItem(a) || 'null';
             try {
-                return JSON.parse(t)
-            } catch (e) {
-                console.error(e)
+                return JSON.parse(j);
+            } catch (a) {
+                console.error(a);
             }
-            return t
+            return j;
         }
-        var o = (0, n.useCallback)((function(t) {
-                var a;
-                i(t), a = t, "undefined" != typeof localStorage && localStorage.setItem(e, JSON.stringify(a))
-            }), []),
-            s = (0, n.useCallback)((function(t) {
-                t.storageArea === localStorage && t.key === e && i(t.newValue)
-            }), []),
-            d = (0, n.useCallback)((function() {
-                if (o(null), "undefined" == typeof localStorage) return !1;
-                localStorage.removeItem(e)
-            }), [e]);
-        return (0, n.useEffect)((function() {
-            var e;
-            null !== (e = l()) && "null" !== e || o(t)
-        }), []), (0, n.useEffect)((function() {
-            if ("undefined" != typeof window) return window.addEventListener("storage", s),
-                function() {
-                    window.removeEventListener("storage", s)
-                };
-            console.warn("useLocalstorage: window is undefined.")
-        }), []), Object.assign([r, o, d], {
-            value: r,
-            remove: d,
-            set: o
-        })
+        var j = (0, d.useCallback)(function(b) {
+                var k;
+                h(b), k = b, 'undefined' != typeof localStorage && localStorage.setItem(a, JSON.stringify(k));
+            }, []),
+            k = (0, d.useCallback)(function(b) {
+                b.storageArea === localStorage && b.key === a && h(b.newValue);
+            }, []),
+            l = (0, d.useCallback)(function() {
+                if (j(null), 'undefined' == typeof localStorage)
+                    return !1;
+                localStorage.removeItem(a);
+            }, [a]);
+        return (0, d.useEffect)(function() {
+            var m;
+            null !== (m = i()) && 'null' !== m || j(b);
+        }, []), (0, d.useEffect)(function() {
+            if ('undefined' != typeof window)
+                return window.addEventListener('storage', k),
+                    function() {
+                        window.removeEventListener('storage', k);
+                    };
+            console.warn('useLocalstorage: window is undefined.');
+        }, []), Object.assign([
+            g,
+            j,
+            l
+        ], {
+            value: g,
+            remove: l,
+            set: j
+        });
     }
-})), a.register("1DrO4", (function(r, n) {
-    e(r.exports, "default", (function() {
-        return k
-    }));
-    var i = a("hxEiv"),
-        l = a("fywoC"),
-        o = a("eEYFA"),
-        s = a("4Gnmi"),
-        d = a("bmTnW"),
-        c = a("cPGmn"),
-        u = a("2FDaO"),
-        f = a("iMOcM"),
-        h = a("2nCEo"),
-        g = a("69SUA"),
-        m = a("py2Xr");
-    let p, v, x, b, y, j, w = e => e;
-    const C = t(d)((() => a("9mi4b"))),
-        S = () => (0, i.jsx)(s.default, {
+}), c.register('gL6W3', function(z, A) {
+    a(z.exports, 'default', function() {
+        return x;
+    });
+    var d = c('8kSQZ'),
+        e = c('uPP4W'),
+        f = c('uVDHR'),
+        g = c('+98NM'),
+        h = c('u1rFO25'),
+        i = c('laJ/S'),
+        j = c('h99Nu'),
+        k = c('PjB0f'),
+        l = c('2MCaL'),
+        m = c('gSUVO'),
+        n = c('iMnBi');
+    let o, p, q, r, s, t, u = a => a;
+    const v = b(h)(() => c('nRwdv4')),
+        w = () => (0, d.jsx)(g.default, {
             active: !0,
             title: !1,
             paragraph: {
@@ -217,313 +237,368 @@ a.register("2XIEk", (function(t, r) {
                 padding: 20
             }
         });
-    var k = e => {
-        const [a, r] = l.useState(), {
+    var x = a => {
+        const [y, z] = e.useState(), {
             item: {
-                notionPageId: n,
-                publishDate: s
+                notionPageId: A,
+                publishDate: B
             }
-        } = e;
-        (0, c.useDidMount)((() => {
-            C.preload()
-        })), l.useEffect((() => {
-            !a && n && (0, o.Request)({
-                url: `/api/content/${n}`,
-                cacheKey: "NOTION_CONTENT",
-                success: e => r(e)
-            })
-        }), [n, a]);
-        return (0, i.jsx)(N, {
+        } = C;
+        (0, i.useDidMount)(() => {
+            v.preload();
+        }), e.useEffect(() => {
+            !y && A && (0, f.Request)({
+                url: `/api/content/${ A }`,
+                cacheKey: 'NOTION_CONTENT',
+                success: C => z(C)
+            });
+        }, [
+            A,
+            y
+        ]);
+        return (0, d.jsx)(y, {
             children: (() => {
-                if (!a) return (0, i.jsx)(S, {});
+                if (!y)
+                    return (0, d.jsx)(w, {});
                 const {
-                    title: r,
-                    coverImage: o
+                    title: D,
+                    coverImage: E
                 } = (() => {
-                    var e, t;
-                    const r = n.replace(/-/g, ""),
-                        i = Object.keys(a).find((e => e.replace(/-/g, "") === r));
-                    if (!i) return null;
-                    const l = a[i];
-                    var o;
-                    const s = null !== (o = null === (e = l.value.properties) || void 0 === e ? void 0 : e.title[0][0]) && void 0 !== o ? o : "News";
-                    var d;
-                    let c = null !== (d = null === (t = l.value.format) || void 0 === t ? void 0 : t.page_cover) && void 0 !== d ? d : null;
-                    return c && c.startsWith("/") && (c = `https://notion.so${c}`), {
-                        title: s,
-                        coverImage: c
-                    }
+                    var F, G;
+                    const H = A.replace(/-/g, ''),
+                        I = Object.keys(y).find(F => F.replace(/-/g, '') === H);
+                    if (!I)
+                        return null;
+                    const J = y[I];
+                    var K;
+                    const L = null !== (K = null === (F = J.value.properties) || void 0 === F ? void 0 : F.title[0][0]) && void 0 !== K ? K : 'News';
+                    var M;
+                    let N = null !== (M = null === (G = J.value.format) || void 0 === G ? void 0 : G.page_cover) && void 0 !== M ? M : null;
+                    return N && N.startsWith('/') && (N = `https://notion.so${ N }`), {
+                        title: L,
+                        coverImage: N
+                    };
                 })();
-                return (0, i.jsxs)(l.Suspense, {
-                    fallback: (0, i.jsx)(S, {}),
-                    children: [o ? (0, i.jsx)(M, {
-                        draggable: !1,
-                        src: o
-                    }) : null, (0, i.jsxs)(E, {
-                        children: [(0, i.jsxs)(O, {
-                            style: {
-                                marginTop: e.isFirstItem && !o ? 30 : 0
-                            },
-                            children: [(0, i.jsx)(A, {
-                                children: r
-                            }), (0, i.jsxs)(I, {
-                                children: [(0, i.jsx)(m.default, {
-                                    name: "far fa-calendar-alt",
+                return (0, d.jsxs)(e.Suspense, {
+                    fallback: (0, d.jsx)(w, {}),
+                    children: [
+                        E ? (0, d.jsx)(z, {
+                            draggable: !1,
+                            src: E
+                        }) : null,
+                        (0, d.jsxs)(A, {
+                            children: [
+                                (0, d.jsxs)(B, {
                                     style: {
-                                        fontSize: "0.8em",
-                                        marginRight: 5
-                                    }
-                                }), (0, f.capitalizeFirstLetter)(t(h).unix(s).fromNow())]
-                            })]
-                        }), (0, i.jsx)(C, {
-                            content: a
-                        })]
-                    })]
-                })
+                                        marginTop: C.isFirstItem && !E ? 30 : 0
+                                    },
+                                    children: [
+                                        (0, d.jsx)(C, {
+                                            children: D
+                                        }),
+                                        (0, d.jsxs)(D, {
+                                            children: [
+                                                (0, d.jsx)(n.default, {
+                                                    name: 'far fa-calendar-alt',
+                                                    style: {
+                                                        fontSize: '0.8em',
+                                                        marginRight: 5
+                                                    }
+                                                }),
+                                                (0, k.capitalizeFirstLetter)(b(l).unix(B).fromNow())
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                (0, d.jsx)(v, {
+                                    content: y
+                                })
+                            ]
+                        })
+                    ]
+                });
             })()
-        })
+        });
     };
-    const N = u.default.div.attrs({
-            className: "maxWidth"
-        })(p || (p = w``)),
-        M = u.default.img.attrs({
-            className: "maxWidth"
-        })(v || (v = w`
+    const y = j.default.div.attrs({
+            className: 'maxWidth'
+        })(o || (o = u``)),
+        z = j.default.img.attrs({
+            className: 'maxWidth'
+        })(p || (p = u`
   margin-bottom: 25px;
 `)),
-        E = u.default.div.attrs({
-            className: "maxWidth"
-        })(x || (x = w`
+        A = j.default.div.attrs({
+            className: 'maxWidth'
+        })(q || (q = u`
   padding: 0px 20px;
-  font-family: ${0};
-`), g.Fonts.SFPro),
-        O = u.default.div.attrs({
-            className: "maxWidth flex between vc"
-        })(b || (b = w`
+  font-family: ${ 0 };
+`), m.Fonts.SFPro),
+        B = j.default.div.attrs({
+            className: 'maxWidth flex between vc'
+        })(r || (r = u`
   line-height: 1;
   margin-bottom: 20px;
 `)),
-        A = u.default.div(y || (y = w`
+        C = j.default.div(s || (s = u`
   font-size: 28px;
-  font-weight: ${0};
-`), g.FontWeights.Bold),
-        I = u.default.div.attrs({
-            className: "flex vc"
-        })(j || (j = w`
+  font-weight: ${ 0 };
+`), m.FontWeights.Bold),
+        D = j.default.div.attrs({
+            className: 'flex vc'
+        })(t || (t = u`
   color: rgba(0, 0, 0, 0.8);
   margin-left: 20px;
   font-size: 12px;
   flex-shrink: 0;
-`))
-})), a.register("9mi4b", (function(e, t) {
-    e.exports = Promise.all([a("g2MeW")(new URL(a("ihc6Q").resolve("2nG1U"), import.meta.url).toString()), import("./" + a("ihc6Q").resolve("6iUO5"))]).then((() => a("jLITb")))
-})), a.register("g2MeW", (function(e, t) {
-    var r = a("7vyZq");
-    e.exports = r((function(e) {
-        return new Promise((function(t, a) {
-            var r = document.getElementsByTagName("link");
-            if ([].concat(r).some((function(t) {
-                    return t.href === e && t.rel.indexOf("stylesheet") > -1
-                }))) t();
+`));
+}), c.register('nRwdv4', function(a, b) {
+    a.exports = Promise.all([
+        c('wqdSG')(new URL(c('tIOy4').resolve('2nG1U'), import.meta.url).toString()),
+        import('./' + c('tIOy4').resolve('6iUO5'))
+    ]).then(() => c('NBVgF'));
+}), c.register('wqdSG', function(a, b) {
+    var d = c('0Hkma');
+    a.exports = d(function(a) {
+        return new Promise(function(b, c) {
+            var e = document.getElementsByTagName('link');
+            if ([].concat(e).some(function(b) {
+                    return b.href === a && b.rel.indexOf('stylesheet') > -1;
+                }))
+                b();
             else {
-                var n = document.createElement("link");
-                n.rel = "stylesheet", n.href = e, n.onerror = function(e) {
-                    n.onerror = n.onload = null, n.remove(), a(e)
-                }, n.onload = function() {
-                    n.onerror = n.onload = null, t()
-                }, document.getElementsByTagName("head")[0].appendChild(n)
+                var f = document.createElement('link');
+                f.rel = 'stylesheet', f.href = a, f.onerror = function(a) {
+                    f.onerror = f.onload = null, f.remove(), c(a);
+                }, f.onload = function() {
+                    f.onerror = f.onload = null, b();
+                }, document.getElementsByTagName('head')[0].appendChild(f);
             }
-        }))
-    }))
-})), a.register("7vyZq", (function(e, t) {
-    var a = {},
-        r = {},
-        n = {};
+        });
+    });
+}), c.register('0Hkma', function(a, b) {
+    var d = {},
+        e = {},
+        f = {};
 
-    function i(e) {
-        switch (e) {
-            case "preload":
-                return r;
-            case "prefetch":
-                return n;
+    function g(a) {
+        switch (a) {
+            case 'preload':
+                return e;
+            case 'prefetch':
+                return f;
             default:
-                return a
+                return d;
         }
     }
-    e.exports = function(e, t) {
-        return function(a) {
-            var r = i(t);
-            return r[a] ? r[a] : r[a] = e.apply(null, arguments).catch((function(e) {
-                throw delete r[a], e
-            }))
-        }
-    }
-})), a.register("ihc6Q", (function(t, a) {
-    var r, n;
-    e(t.exports, "register", (function() {
-        return r
-    }), (function(e) {
-        return r = e
-    })), e(t.exports, "resolve", (function() {
-        return n
-    }), (function(e) {
-        return n = e
-    }));
-    var i = {};
-    r = function(e) {
-        for (var t = Object.keys(e), a = 0; a < t.length; a++) i[t[a]] = e[t[a]]
-    }, n = function(e) {
-        var t = i[e];
-        if (null == t) throw new Error("Could not resolve bundle with id " + e);
-        return t
-    }
-})), a.register("jERab", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return x
-    }));
-    var n = a("hxEiv");
-    a("fywoC");
-    var i = a("2FDaO"),
-        l = a("4aaLU"),
-        o = a("93yIm"),
-        s = a("4gMdJ"),
-        d = a("l4uFh"),
-        c = a("legzE"),
-        u = a("69SUA"),
-        f = a("46bRO");
-    let h, g, m, p, v = e => e;
-    var x = e => (0, n.jsxs)(b, {
-        children: [(0, n.jsxs)(y, {
-            children: [(0, n.jsxs)(j, {
-                children: [f.COMPANY_NAME, " News"]
-            }), (0, n.jsxs)(w, {
-                children: ["Your source for all things ", f.COMPANY_NAME, "!"]
-            })]
-        }), (0, n.jsx)("div", {
-            children: (0, n.jsx)(s.default, {
-                theme: {
-                    algorithm: d.default.darkAlgorithm
-                },
-                children: (0, n.jsx)(o.default, {
-                    onClick: e.close,
-                    type: "text",
-                    icon: (0, n.jsx)(c.default, {})
+    a.exports = function(a, b) {
+        return function(d) {
+            var h = g(b);
+            return h[d] ? h[d] : h[d] = a.apply(null, arguments).catch(function(a) {
+                throw delete h[d], a;
+            });
+        };
+    };
+}), c.register('tIOy4', function(b, c) {
+    var d, e;
+    a(b.exports, 'register', function() {
+        return d;
+    }, function(a) {
+        return d = a;
+    }), a(b.exports, 'resolve', function() {
+        return e;
+    }, function(a) {
+        return e = a;
+    });
+    var f = {};
+    d = function(a) {
+        for (var g = Object.keys(a), h = 0; h < g.length; h++)
+            f[g[h]] = a[g[h]];
+    }, e = function(a) {
+        var g = f[a];
+        if (null == g)
+            throw new Error('Could not resolve bundle with id ' + a);
+        return g;
+    };
+}), c.register('eFxzD', function(b, C) {
+    a(b.exports, 'default', function() {
+        return r;
+    });
+    var d = c('8kSQZ');
+    c('uPP4W');
+    var e = c('h99Nu'),
+        f = c('cdiGP23'),
+        g = c('IsmrL'),
+        h = c('qEw51'),
+        i = c('KlhV/'),
+        j = c('obWo+'),
+        k = c('gSUVO'),
+        l = c('0wLl2');
+    let m, n, o, p, q = a => a;
+    var r = a => (0, d.jsxs)(s, {
+        children: [
+            (0, d.jsxs)(t, {
+                children: [
+                    (0, d.jsxs)(u, {
+                        children: [
+                            l.COMPANY_NAME,
+                            ' News'
+                        ]
+                    }),
+                    (0, d.jsxs)(v, {
+                        children: [
+                            'Your source for all things ',
+                            l.COMPANY_NAME,
+                            '!'
+                        ]
+                    })
+                ]
+            }),
+            (0, d.jsx)('div', {
+                children: (0, d.jsx)(h.default, {
+                    theme: {
+                        algorithm: i.default.darkAlgorithm
+                    },
+                    children: (0, d.jsx)(g.default, {
+                        onClick: a.close,
+                        type: 'text',
+                        icon: (0, d.jsx)(j.default, {})
+                    })
                 })
             })
-        })]
+        ]
     });
-    const b = i.default.div.attrs({
-            className: "maxWidth flex vc between"
-        })(h || (h = v`
-  color: ${0};
+    const s = e.default.div.attrs({
+            className: 'maxWidth flex vc between'
+        })(m || (m = q`
+  color: ${ 0 };
   padding: 20px;
   background: #730aad;
-`), l.default.White),
-        y = i.default.div(g || (g = v``)),
-        j = i.default.div(m || (m = v`
+`), f.default.White),
+        t = e.default.div(n || (n = q``)),
+        u = e.default.div(o || (o = q`
   font-size: 16px;
-  font-weight: ${0};
-`), u.FontWeights.Bold),
-        w = i.default.div(p || (p = v`
+  font-weight: ${ 0 };
+`), k.FontWeights.Bold),
+        v = e.default.div(p || (p = q`
   font-size: 12px;
   font-style: italic;
   opacity: 0.9;
-`))
-})), a.register("cHCps", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return l
-    }));
-    var n = a("hxEiv");
-    a("fywoC");
-    var i = a("dsIqT");
-    var l = e => (0, n.jsx)(i.default, {
-        ...e
-    })
-})), a.register("dsIqT", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return N
-    }));
-    var n = a("hxEiv"),
-        i = a("fywoC"),
-        l = a("iMOcM"),
-        o = a("fBwf1"),
-        s = a("jIVjI"),
-        d = a("3bHhZ"),
-        c = a("gvUHr"),
-        u = a("2FDaO"),
-        f = a("lABPu"),
-        h = a("8j47p"),
-        g = a("hDWWf"),
-        m = a("hSz8d"),
-        p = a("aYjbz"),
-        v = a("69SUA"),
-        x = a("4gMdJ"),
-        b = a("l4uFh"),
-        y = a("Divs5"),
-        j = a("h5M3u");
-    let w, C, S, k = e => e;
-    var N = e => {
-        const [t, a] = i.useState(!1), {
-            navigation: r
-        } = i.useContext(c.default), {
-            ref: u,
-            height: w
-        } = (0, d.useComponentSize)();
-        i.useEffect((() => {
-            document.documentElement.style.setProperty("--header-height", `${w}px`), r.headerHeight = w
-        }), [w]);
-        const C = i.useMemo((() => {
-                var t;
-                return null !== (t = e.theme) && void 0 !== t ? t : g.SiteHeaderTheme.light
-            }), [e.theme]),
-            S = i.useMemo((() => {
-                var t;
-                return null !== (t = e.alpha) && void 0 !== t ? t : m.SiteHeaderAlpha.standard
-            }), [e.alpha]),
-            k = i.useMemo((() => S === m.SiteHeaderAlpha.none ? 1 : S === m.SiteHeaderAlpha.darker ? C === g.SiteHeaderTheme.light ? .9 : .75 : C === g.SiteHeaderTheme.light ? .85 : .45), [S, C]),
-            N = i.useMemo((() => C === g.SiteHeaderTheme.light ? `rgba(255, 255, 255, ${k})` : `rgba(16,16,16, ${k})`), [C, S]),
-            A = i.useMemo((() => C === g.SiteHeaderTheme.light ? "rgb(235, 238, 241)" : "rgb(143 143 143 / 60%)"), [C, k]);
-        return (0, n.jsx)(n.Fragment, {
-            children: (0, n.jsxs)(x.default, {
+`));
+}), c.register('1//3g', function(b, C) {
+    a(b.exports, 'default', function() {
+        return f;
+    });
+    var d = c('8kSQZ');
+    c('uPP4W');
+    var e = c('4t8hY');
+    var f = a => (0, d.jsx)(e.default, {
+        ...a
+    });
+}), c.register('4t8hY', function(b, C) {
+    a(b.exports, 'default', function() {
+        return z;
+    });
+    var d = c('8kSQZ'),
+        e = c('uPP4W'),
+        f = c('PjB0f'),
+        g = c('NS10B'),
+        h = c('RrDRa'),
+        i = c('tYruc25'),
+        j = c('Xu07t'),
+        k = c('h99Nu'),
+        l = c('iUWIw'),
+        m = c('VsZIM'),
+        n = c('UnfL724'),
+        o = c('dN+BG24'),
+        p = c('C891a'),
+        q = c('gSUVO'),
+        r = c('qEw51'),
+        s = c('KlhV/'),
+        t = c('Xp99w'),
+        u = c('umlOF');
+    let v, w, x, y = a => a;
+    var z = a => {
+        const [A, B] = e.useState(!1), {
+            navigation: C
+        } = e.useContext(j.default), {
+            ref: D,
+            height: E
+        } = (0, i.useComponentSize)();
+        e.useEffect(() => {
+            document.documentElement.style.setProperty('--header-height', `${ E }px`), C.headerHeight = E;
+        }, [E]);
+        const F = e.useMemo(() => {
+                var G;
+                return null !== (G = a.theme) && void 0 !== G ? G : n.SiteHeaderTheme.light;
+            }, [a.theme]),
+            G = e.useMemo(() => {
+                var H;
+                return null !== (H = a.alpha) && void 0 !== H ? H : o.SiteHeaderAlpha.standard;
+            }, [a.alpha]),
+            H = e.useMemo(() => G === o.SiteHeaderAlpha.none ? 1 : G === o.SiteHeaderAlpha.darker ? F === n.SiteHeaderTheme.light ? 0.9 : 0.75 : F === n.SiteHeaderTheme.light ? 0.85 : 0.45, [
+                G,
+                F
+            ]),
+            I = e.useMemo(() => F === n.SiteHeaderTheme.light ? `rgba(255, 255, 255, ${ H })` : `rgba(16,16,16, ${ H })`, [
+                F,
+                G
+            ]),
+            J = e.useMemo(() => F === n.SiteHeaderTheme.light ? 'rgb(235, 238, 241)' : 'rgb(143 143 143 / 60%)', [
+                F,
+                H
+            ]);
+        return (0, d.jsx)(d.Fragment, {
+            children: (0, d.jsxs)(r.default, {
                 theme: {
-                    algorithm: C === g.SiteHeaderTheme.light ? b.default.defaultAlgorithm : b.default.darkAlgorithm,
+                    algorithm: F === n.SiteHeaderTheme.light ? s.default.defaultAlgorithm : s.default.darkAlgorithm,
                     token: {
-                        fontFamily: v.Fonts.SFPro
+                        fontFamily: q.Fonts.SFPro
                     }
                 },
-                children: [(0, n.jsxs)(M, {
-                    ref: u,
-                    style: e.containerDivStyle,
-                    children: [(0, n.jsx)(E, {
-                        background: N,
-                        hideBorder: e.hideBorder,
-                        borderColor: A,
-                        children: (0, n.jsx)(o.default.Provider, {
-                            value: s.default,
-                            children: (0, n.jsxs)(O, {
-                                children: [(0, n.jsx)(j.default, {
-                                    theme: e.theme
-                                }), (0, l.isLoggedIn)() ? (0, n.jsx)(y.default, {
-                                    showUpgradeModal: () => a(!0),
-                                    theme: C
-                                }) : (0, n.jsx)(f.default, {
-                                    theme: e.theme
-                                })]
-                            })
-                        })
-                    }), e.children]
-                }), t ? (0, n.jsx)(h.default, {
-                    id: "header",
-                    visible: t,
-                    close: () => a(!1),
-                    showModes: !0
-                }) : null, e.includeSpacer ? (0, n.jsx)(p.default, {}) : null]
+                children: [
+                    (0, d.jsxs)(A, {
+                        ref: D,
+                        style: a.containerDivStyle,
+                        children: [
+                            (0, d.jsx)(B, {
+                                background: I,
+                                hideBorder: a.hideBorder,
+                                borderColor: J,
+                                children: (0, d.jsx)(g.default.Provider, {
+                                    value: h.default,
+                                    children: (0, d.jsxs)(C, {
+                                        children: [
+                                            (0, d.jsx)(u.default, {
+                                                theme: a.theme
+                                            }),
+                                            (0, f.isLoggedIn)() ? (0, d.jsx)(t.default, {
+                                                showUpgradeModal: () => B(!0),
+                                                theme: F
+                                            }) : (0, d.jsx)(l.default, {
+                                                theme: a.theme
+                                            })
+                                        ]
+                                    })
+                                })
+                            }),
+                            a.children
+                        ]
+                    }),
+                    A ? (0, d.jsx)(m.default, {
+                        id: 'header',
+                        visible: A,
+                        close: () => B(!1),
+                        showModes: !0
+                    }) : null,
+                    a.includeSpacer ? (0, d.jsx)(p.default, {}) : null
+                ]
             })
-        })
+        });
     };
-    const M = u.default.div.attrs({
-            className: "maxWidth"
-        })(w || (w = k`
+    const A = k.default.div.attrs({
+            className: 'maxWidth'
+        })(v || (v = y`
   height: auto;
   position: fixed;
   top: 0;
@@ -531,10 +606,10 @@ a.register("2XIEk", (function(t, r) {
   right: 0;
   z-index: 9;
 `)),
-        E = u.default.header(C || (C = k`
+        B = k.default.header(w || (w = y`
   display: flex;
   height: auto;
-  background: ${0};
+  background: ${ 0 };
   backdrop-filter: blur(4px);
   overflow: hidden;
   flex-wrap: wrap;
@@ -542,715 +617,753 @@ a.register("2XIEk", (function(t, r) {
   padding: 15px 25px;
   justify-content: space-between;
   width: 100%;
-  box-shadow: inset 0 -1px ${0};
+  box-shadow: inset 0 -1px ${ 0 };
   @media print {
     display: none;
   }
-`), (e => e.background), (e => e.hideBorder ? "rgba(255,255,255,0)" : e.borderColor)),
-        O = u.default.div.attrs({
-            className: "flex maxWidth between vc"
-        })(S || (S = k``))
-})), a.register("fBwf1", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return l
-    }));
-    var n = a("fywoC"),
-        i = a("jIVjI");
-    var l = n.createContext(i.default)
-})), a.register("jIVjI", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return l
-    }));
-    var n = a("7guh7"),
-        i = a("3mkC4");
-    var l = {
-        navigation: new(0, n.default),
-        billing: new(0, i.default)
+`), a => a.background, a => a.hideBorder ? 'rgba(255,255,255,0)' : a.borderColor),
+        C = k.default.div.attrs({
+            className: 'flex maxWidth between vc'
+        })(x || (x = y``));
+}), c.register('NS10B', function(b, d) {
+    a(b.exports, 'default', function() {
+        return f;
+    });
+    var d = c('uPP4W'),
+        e = c('RrDRa');
+    var f = d.createContext(e.default);
+}), c.register('RrDRa', function(b, d) {
+    a(b.exports, 'default', function() {
+        return f;
+    });
+    var d = c('2RKXD'),
+        e = c('TjX5L');
+    var f = {
+        navigation: new(0, d.default)(),
+        billing: new(0, e.default)()
+    };
+}), c.register('2RKXD', function(b, d) {
+    a(b.exports, 'default', function() {
+        return h;
+    });
+    var d = c('6gioo'),
+        e = c('UnUp5'),
+        f = c('Is2Mj');
+    class g {
+        constructor() {
+            this.currentTab = f.default.accountInformation, (0, e.makeObservable)(this);
+        }
     }
-})), a.register("7guh7", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return s
-    }));
-    var n = a("kHqmx"),
-        i = a("4MuSt"),
-        l = a("9XhDS");
-    class o {
+    (0, d.__decorate)([e.observable], g.prototype, 'currentTab', void 0);
+    var h = i;
+}), c.register('Is2Mj', function(b, c) {
+    let d;
+    var e;
+    a(b.exports, 'default', function() {
+        return f;
+    }), (e = d || (d = {})).accountInformation = 'accountInformation', e.gameSettings = 'gameSettings', e.billing = 'billing', e.support = 'support';
+    var f = g;
+}), c.register('TjX5L', function(b, q) {
+    a(b.exports, 'default', function() {
+        return h;
+    });
+    var d = c('6gioo'),
+        e = c('UnUp5');
+    const f = e.observable.array();
+    class g {
         constructor() {
-            this.currentTab = l.default.accountInformation, (0, i.makeObservable)(this)
+            this.planName = '', this.planDescription = '', this.billingInterval = '', this.hasNextCharge = false, this.nextChargeAmount = '', this.nextChargeDate = '', this.accountBalance = 0, this.charges = f, this.cardName = '', this.last4DigitsOfCard = '', this.stripePublicKey = '', this.canDowngrade = false, this.downgradeMessage = '', this.downgradeDateMessage = '', this.reset = () => {
+                this.planName = '', this.planDescription = '', this.billingInterval = '', this.hasNextCharge = false, this.nextChargeAmount = '', this.nextChargeDate = '', this.accountBalance = 0, this.charges.replace([]), this.cardName = '', this.last4DigitsOfCard = '', this.stripePublicKey = '', this.canDowngrade = false, this.downgradeMessage = '', this.downgradeDateMessage = '';
+            }, (0, e.makeObservable)(this);
         }
-    }(0, n.__decorate)([i.observable], o.prototype, "currentTab", void 0);
-    var s = o
-})), a.register("9XhDS", (function(t, a) {
-    let r;
-    var n;
-    e(t.exports, "default", (function() {
-        return i
-    })), (n = r || (r = {})).accountInformation = "accountInformation", n.gameSettings = "gameSettings", n.billing = "billing", n.support = "support";
-    var i = r
-})), a.register("3mkC4", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return s
-    }));
-    var n = a("kHqmx"),
-        i = a("4MuSt");
-    const l = i.observable.array();
-    class o {
-        constructor() {
-            this.planName = "", this.planDescription = "", this.billingInterval = "", this.hasNextCharge = false, this.nextChargeAmount = "", this.nextChargeDate = "", this.accountBalance = 0, this.charges = l, this.cardName = "", this.last4DigitsOfCard = "", this.stripePublicKey = "", this.canDowngrade = false, this.downgradeMessage = "", this.downgradeDateMessage = "", this.reset = () => {
-                this.planName = "", this.planDescription = "", this.billingInterval = "", this.hasNextCharge = false, this.nextChargeAmount = "", this.nextChargeDate = "", this.accountBalance = 0, this.charges.replace([]), this.cardName = "", this.last4DigitsOfCard = "", this.stripePublicKey = "", this.canDowngrade = false, this.downgradeMessage = "", this.downgradeDateMessage = ""
-            }, (0, i.makeObservable)(this)
-        }
-    }(0, n.__decorate)([i.observable], o.prototype, "planName", void 0), (0, n.__decorate)([i.observable], o.prototype, "planDescription", void 0), (0, n.__decorate)([i.observable], o.prototype, "billingInterval", void 0), (0, n.__decorate)([i.observable], o.prototype, "hasNextCharge", void 0), (0, n.__decorate)([i.observable], o.prototype, "nextChargeAmount", void 0), (0, n.__decorate)([i.observable], o.prototype, "nextChargeDate", void 0), (0, n.__decorate)([i.observable], o.prototype, "accountBalance", void 0), (0, n.__decorate)([i.observable], o.prototype, "charges", void 0), (0, n.__decorate)([i.observable], o.prototype, "cardName", void 0), (0, n.__decorate)([i.observable], o.prototype, "last4DigitsOfCard", void 0), (0, n.__decorate)([i.observable], o.prototype, "stripePublicKey", void 0), (0, n.__decorate)([i.observable], o.prototype, "canDowngrade", void 0), (0, n.__decorate)([i.observable], o.prototype, "downgradeMessage", void 0), (0, n.__decorate)([i.observable], o.prototype, "downgradeDateMessage", void 0), (0, n.__decorate)([i.action], o.prototype, "reset", void 0);
-    var s = o
-})), a.register("lABPu", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return g
-    }));
-    var n = a("hxEiv"),
-        i = a("lpEVe");
-    a("fywoC");
-    var l = a("97s6z"),
-        o = a("93yIm"),
-        s = a("kyvf1"),
-        d = a("b1oE9"),
-        c = a("77qSl"),
-        u = a("fzxir"),
-        f = a("e1mXL"),
-        h = a("hDWWf");
-    var g = (0, i.observer)((e => {
-        const t = (0, c.useMediaMatch)("(max-width: 600px)"),
-            a = (0, c.useMediaMatch)("(max-width: 750px)"),
-            r = [];
-        return r.push({
-            key: "join",
-            item: (0, n.jsx)(f.default, {
+    }
+    (0, d.__decorate)([e.observable], g.prototype, 'planName', void 0), (0, d.__decorate)([e.observable], g.prototype, 'planDescription', void 0), (0, d.__decorate)([e.observable], g.prototype, 'billingInterval', void 0), (0, d.__decorate)([e.observable], g.prototype, 'hasNextCharge', void 0), (0, d.__decorate)([e.observable], g.prototype, 'nextChargeAmount', void 0), (0, d.__decorate)([e.observable], g.prototype, 'nextChargeDate', void 0), (0, d.__decorate)([e.observable], g.prototype, 'accountBalance', void 0), (0, d.__decorate)([e.observable], g.prototype, 'charges', void 0), (0, d.__decorate)([e.observable], g.prototype, 'cardName', void 0), (0, d.__decorate)([e.observable], g.prototype, 'last4DigitsOfCard', void 0), (0, d.__decorate)([e.observable], g.prototype, 'stripePublicKey', void 0), (0, d.__decorate)([e.observable], g.prototype, 'canDowngrade', void 0), (0, d.__decorate)([e.observable], g.prototype, 'downgradeMessage', void 0), (0, d.__decorate)([e.observable], g.prototype, 'downgradeDateMessage', void 0), (0, d.__decorate)([e.action], g.prototype, 'reset', void 0);
+    var h = i;
+}), c.register('iUWIw', function(b, q) {
+    a(b.exports, 'default', function() {
+        return n;
+    });
+    var d = c('8kSQZ'),
+        e = c('Vlfxs');
+    c('uPP4W');
+    var f = c('svNXj'),
+        g = c('IsmrL'),
+        h = c('iYEuk12'),
+        i = c('q721a'),
+        j = c('QNMlx24'),
+        k = c('euCLs'),
+        l = c('8vT5P'),
+        m = c('UnfL724');
+    var n = (0, e.observer)(a => {
+        const o = (0, j.useMediaMatch)('(max-width: 600px)'),
+            p = (0, j.useMediaMatch)('(max-width: 750px)'),
+            q = [];
+        return q.push({
+            key: 'join',
+            item: (0, d.jsx)(l.default, {
                 onClick: () => {
-                    window.open("/join", "_self")
+                    window.open('/join', '_self');
                 },
-                icon: (0, n.jsx)("i", {
-                    className: "far fa-gamepad"
+                icon: (0, d.jsx)('i', {
+                    className: 'far fa-gamepad'
                 }),
-                theme: h.SiteHeaderTheme.light,
+                theme: m.SiteHeaderTheme.light,
                 fontSize: 15,
-                children: "Join Game"
+                children: 'Join Game'
             })
-        }), t || a || r.push({
-            key: "pricing",
-            item: (0, n.jsx)(f.default, {
-                path: d.GROUP_PRICING,
-                icon: (0, n.jsx)("i", {
-                    className: "far fa-users"
+        }), o || p || q.push({
+            key: 'pricing',
+            item: (0, d.jsx)(l.default, {
+                path: i.GROUP_PRICING,
+                icon: (0, d.jsx)('i', {
+                    className: 'far fa-users'
                 }),
-                theme: h.SiteHeaderTheme.light,
+                theme: m.SiteHeaderTheme.light,
                 fontSize: 15,
-                children: "  Group Pricing"
+                children: '\xA0 Group Pricing'
             })
-        }), r.push({
-            key: "signup",
-            item: (0, n.jsx)(f.default, {
-                path: d.REGISTER_BASE,
-                icon: (0, n.jsx)("i", {
-                    className: "far fa-user-plus"
+        }), q.push({
+            key: 'signup',
+            item: (0, d.jsx)(l.default, {
+                path: i.REGISTER_BASE,
+                icon: (0, d.jsx)('i', {
+                    className: 'far fa-user-plus'
                 }),
-                theme: h.SiteHeaderTheme.light,
+                theme: m.SiteHeaderTheme.light,
                 fontSize: 15,
-                children: "Sign Up"
+                children: 'Sign Up'
             })
-        }), r.push({
-            key: "login",
-            item: (0, n.jsx)(s.default, {
+        }), q.push({
+            key: 'login',
+            item: (0, d.jsx)(h.default, {
                 to: (() => {
-                    let e = "/login";
-                    return window && window.location && window.location.pathname && window.location.pathname.startsWith("/view") && (e += `?location=${encodeURIComponent(window.location.pathname)}`), e
+                    let r = '/login';
+                    return window && window.location && window.location.pathname && window.location.pathname.startsWith('/view') && (r += `?location=${ encodeURIComponent(window.location.pathname) }`), r;
                 })(),
-                className: "maxAll",
-                children: (0, n.jsx)(o.default, {
-                    type: "primary",
-                    size: "large",
-                    icon: (0, n.jsx)(l.default, {}),
-                    children: "Login"
+                className: 'maxAll',
+                children: (0, d.jsx)(g.default, {
+                    type: 'primary',
+                    size: 'large',
+                    icon: (0, d.jsx)(f.default, {}),
+                    children: 'Login'
                 })
             })
-        }), (0, n.jsx)(u.default, {
-            items: r
-        })
-    }))
-})), a.register("97s6z", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return d
-    }));
-    var n = a("dnh3u"),
-        i = a("fywoC"),
-        l = a("ldkoB"),
-        o = a("dwKuN"),
-        s = function(e, t) {
-            return i.createElement(o.default, (0, n.default)((0, n.default)({}, e), {}, {
-                ref: t,
-                icon: l.default
-            }))
+        }), (0, d.jsx)(k.default, {
+            items: q
+        });
+    });
+}), c.register('svNXj', function(b, d) {
+    a(b.exports, 'default', function() {
+        return i;
+    });
+    var d = c('uhRWM'),
+        e = c('uPP4W'),
+        f = c('SsEbQ'),
+        g = c('tEXgG'),
+        h = function(a, b) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
+                ref: b,
+                icon: f.default
+            }));
         };
-    s.displayName = "LoginOutlined";
-    var d = i.forwardRef(s)
-})), a.register("ldkoB", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return r
-    }));
-    var r = {
+    h.displayName = 'LoginOutlined';
+    var i = e.forwardRef(h);
+}), c.register('SsEbQ', function(b, c) {
+    a(b.exports, 'default', function() {
+        return d;
+    });
+    var d = {
         icon: {
-            tag: "svg",
+            tag: 'svg',
             attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
+                viewBox: '64 64 896 896',
+                focusable: 'false'
             },
             children: [{
-                tag: "defs",
-                attrs: {},
-                children: [{
-                    tag: "style",
-                    attrs: {}
-                }]
-            }, {
-                tag: "path",
-                attrs: {
-                    d: "M521.7 82c-152.5-.4-286.7 78.5-363.4 197.7-3.4 5.3.4 12.3 6.7 12.3h70.3c4.8 0 9.3-2.1 12.3-5.8 7-8.5 14.5-16.7 22.4-24.5 32.6-32.5 70.5-58.1 112.7-75.9 43.6-18.4 90-27.8 137.9-27.8 47.9 0 94.3 9.3 137.9 27.8 42.2 17.8 80.1 43.4 112.7 75.9 32.6 32.5 58.1 70.4 76 112.5C865.7 417.8 875 464.1 875 512c0 47.9-9.4 94.2-27.8 137.8-17.8 42.1-43.4 80-76 112.5s-70.5 58.1-112.7 75.9A352.8 352.8 0 01520.6 866c-47.9 0-94.3-9.4-137.9-27.8A353.84 353.84 0 01270 762.3c-7.9-7.9-15.3-16.1-22.4-24.5-3-3.7-7.6-5.8-12.3-5.8H165c-6.3 0-10.2 7-6.7 12.3C234.9 863.2 368.5 942 520.6 942c236.2 0 428-190.1 430.4-425.6C953.4 277.1 761.3 82.6 521.7 82zM395.02 624v-76h-314c-4.4 0-8-3.6-8-8v-56c0-4.4 3.6-8 8-8h314v-76c0-6.7 7.8-10.5 13-6.3l141.9 112a8 8 0 010 12.6l-141.9 112c-5.2 4.1-13 .4-13-6.3z"
+                    tag: 'defs',
+                    attrs: {},
+                    children: [{
+                        tag: 'style',
+                        attrs: {}
+                    }]
+                },
+                {
+                    tag: 'path',
+                    attrs: {
+                        d: 'M521.7 82c-152.5-.4-286.7 78.5-363.4 197.7-3.4 5.3.4 12.3 6.7 12.3h70.3c4.8 0 9.3-2.1 12.3-5.8 7-8.5 14.5-16.7 22.4-24.5 32.6-32.5 70.5-58.1 112.7-75.9 43.6-18.4 90-27.8 137.9-27.8 47.9 0 94.3 9.3 137.9 27.8 42.2 17.8 80.1 43.4 112.7 75.9 32.6 32.5 58.1 70.4 76 112.5C865.7 417.8 875 464.1 875 512c0 47.9-9.4 94.2-27.8 137.8-17.8 42.1-43.4 80-76 112.5s-70.5 58.1-112.7 75.9A352.8 352.8 0 01520.6 866c-47.9 0-94.3-9.4-137.9-27.8A353.84 353.84 0 01270 762.3c-7.9-7.9-15.3-16.1-22.4-24.5-3-3.7-7.6-5.8-12.3-5.8H165c-6.3 0-10.2 7-6.7 12.3C234.9 863.2 368.5 942 520.6 942c236.2 0 428-190.1 430.4-425.6C953.4 277.1 761.3 82.6 521.7 82zM395.02 624v-76h-314c-4.4 0-8-3.6-8-8v-56c0-4.4 3.6-8 8-8h314v-76c0-6.7 7.8-10.5 13-6.3l141.9 112a8 8 0 010 12.6l-141.9 112c-5.2 4.1-13 .4-13-6.3z'
+                    }
                 }
-            }]
+            ]
         },
-        name: "login",
-        theme: "outlined"
-    }
-})), a.register("fzxir", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return x
-    }));
-    var n = a("hxEiv"),
-        i = a("93yIm"),
-        l = a("fC6cp"),
-        o = a("9xElQ"),
-        s = a("i5Qjx"),
-        d = a("fywoC"),
-        c = a("2FDaO"),
-        u = a("eOMWZ"),
-        f = a("56tQE"),
-        h = a("3bHhZ"),
-        g = a("iMOcM");
-    let m, p, v = e => e;
-    var x = e => {
-        const {
-            width: t
-        } = (0, h.useWindowSize)(), [a, r, c] = (0, g.useBoolean)(!1), [m, p] = d.useState(!1), [v, x] = d.useState(null), j = d.useRef(), [w] = (0, f.default)(j), C = d.useRef(), [S] = (0, f.default)(C);
-        return d.useEffect((() => {
-            !!t && !!w && !S && (!v || t > v) && x(t)
-        }), [t, v, w, S]), d.useEffect((() => {
-            p(!!(v && t <= v))
-        }), [t, v]), (0, n.jsxs)(b, {
-            ref: j,
-            children: [(0, n.jsx)("div", {
-                ref: C,
-                style: {
-                    flex: 1
-                }
-            }), m ? (0, n.jsx)("div", {
-                style: {
-                    flexShrink: 0
-                },
-                children: (0, n.jsx)(i.default, {
-                    onClick: r,
-                    type: "text",
-                    icon: (0, n.jsx)(u.default, {})
-                })
-            }) : (0, n.jsx)(y, {
-                style: {
-                    opacity: S ? 1 : 0
-                },
-                children: (0, n.jsx)(s.default, {
-                    size: 10,
-                    split: (0, n.jsx)(l.default, {
-                        type: "vertical"
-                    }),
-                    direction: "horizontal",
-                    children: e.items.map((e => (0, n.jsx)(d.Fragment, {
-                        children: e.item
-                    }, e.key)))
-                })
-            }), m ? (0, n.jsx)(o.default, {
-                placement: "right",
-                open: a,
-                onClose: c,
-                children: (0, n.jsx)(s.default, {
-                    size: 2,
-                    split: (0, n.jsx)(l.default, {
-                        type: "horizontal"
-                    }),
-                    direction: "vertical",
-                    className: "maxWidth",
-                    children: e.items.map((e => (0, n.jsx)(d.Fragment, {
-                        children: (0, n.jsx)("div", {
-                            className: "maxAll flex-center",
-                            children: e.item
-                        })
-                    }, e.key)))
-                })
-            }) : null]
-        })
+        name: 'login',
+        theme: 'outlined'
     };
-    const b = c.default.div(m || (m = v`
+}), c.register('euCLs', function(b, u) {
+    a(b.exports, 'default', function() {
+        return r;
+    });
+    var d = c('8kSQZ'),
+        e = c('IsmrL'),
+        f = c('ExtIT'),
+        g = c('KV+OV'),
+        h = c('5nJMd26'),
+        i = c('uPP4W'),
+        j = c('h99Nu'),
+        k = c('+OzS/'),
+        l = c('U8PGt'),
+        m = c('tYruc25'),
+        n = c('PjB0f');
+    let o, p, q = a => a;
+    var r = a => {
+        const {
+            width: s
+        } = (0, m.useWindowSize)(), [t, u, v] = (0, n.useBoolean)(!1), [w, x] = i.useState(!1), [y, z] = i.useState(null), A = i.useRef(), [B] = (0, l.default)(A), C = i.useRef(), [D] = (0, l.default)(C);
+        return i.useEffect(() => {
+            !!s && !!B && !D && (!y || s > y) && z(s);
+        }, [
+            s,
+            y,
+            B,
+            D
+        ]), i.useEffect(() => {
+            x(!!(y && s <= y));
+        }, [
+            s,
+            y
+        ]), (0, d.jsxs)(s, {
+            ref: A,
+            children: [
+                (0, d.jsx)('div', {
+                    ref: C,
+                    style: {
+                        flex: 1
+                    }
+                }),
+                w ? (0, d.jsx)('div', {
+                    style: {
+                        flexShrink: 0
+                    },
+                    children: (0, d.jsx)(e.default, {
+                        onClick: u,
+                        type: 'text',
+                        icon: (0, d.jsx)(k.default, {})
+                    })
+                }) : (0, d.jsx)(t, {
+                    style: {
+                        opacity: D ? 1 : 0
+                    },
+                    children: (0, d.jsx)(h.default, {
+                        size: 10,
+                        split: (0, d.jsx)(f.default, {
+                            type: 'vertical'
+                        }),
+                        direction: 'horizontal',
+                        children: a.items.map(a => (0, d.jsx)(i.Fragment, {
+                            children: a.item
+                        }, a.key))
+                    })
+                }),
+                w ? (0, d.jsx)(g.default, {
+                    placement: 'right',
+                    open: t,
+                    onClose: v,
+                    children: (0, d.jsx)(h.default, {
+                        size: 2,
+                        split: (0, d.jsx)(f.default, {
+                            type: 'horizontal'
+                        }),
+                        direction: 'vertical',
+                        className: 'maxWidth',
+                        children: a.items.map(a => (0, d.jsx)(i.Fragment, {
+                            children: (0, d.jsx)('div', {
+                                className: 'maxAll flex-center',
+                                children: a.item
+                            })
+                        }, a.key))
+                    })
+                }) : null
+            ]
+        });
+    };
+    const s = j.default.div(o || (o = q`
   flex: 1;
   overflow: hidden;
   display: flex;
 `)),
-        y = c.default.div(p || (p = v`
+        t = j.default.div(p || (p = q`
   flex-shrink: 0;
-`))
-})), a.register("eOMWZ", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return d
-    }));
-    var n = a("dnh3u"),
-        i = a("fywoC"),
-        l = a("3s2Wi"),
-        o = a("dwKuN"),
-        s = function(e, t) {
-            return i.createElement(o.default, (0, n.default)((0, n.default)({}, e), {}, {
-                ref: t,
-                icon: l.default
-            }))
+`));
+}), c.register('+OzS/', function(b, d) {
+    a(b.exports, 'default', function() {
+        return i;
+    });
+    var d = c('uhRWM'),
+        e = c('uPP4W'),
+        f = c('2KKLH'),
+        g = c('tEXgG'),
+        h = function(a, b) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
+                ref: b,
+                icon: f.default
+            }));
         };
-    s.displayName = "MenuOutlined";
-    var d = i.forwardRef(s)
-})), a.register("3s2Wi", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return r
-    }));
-    var r = {
+    h.displayName = 'MenuOutlined';
+    var i = e.forwardRef(h);
+}), c.register('2KKLH', function(b, c) {
+    a(b.exports, 'default', function() {
+        return d;
+    });
+    var d = {
         icon: {
-            tag: "svg",
+            tag: 'svg',
             attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
+                viewBox: '64 64 896 896',
+                focusable: 'false'
             },
             children: [{
-                tag: "path",
+                tag: 'path',
                 attrs: {
-                    d: "M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"
+                    d: 'M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z'
                 }
             }]
         },
-        name: "menu",
-        theme: "outlined"
-    }
-})), a.register("e1mXL", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return f
-    }));
-    var n = a("hxEiv"),
-        i = a("fywoC"),
-        l = a("2FDaO"),
-        o = a("hDWWf"),
-        s = a("lKmIF"),
-        d = a("kyvf1"),
-        c = a("69SUA");
-    let u;
-    var f = e => {
-        const {
-            icon: t,
-            path: a,
-            theme: r
-        } = e, l = i.useMemo((() => r === o.SiteHeaderTheme.light ? "inherit" : s.default.White), [r]);
-        return (0, n.jsx)(d.default, {
-            className: "flex maxWidth",
-            to: a,
-            onClick: e.onClick,
-            style: {
-                cursor: "pointer"
-            },
-            children: (0, n.jsxs)(h, {
-                color: l,
-                style: {
-                    fontSize: e.fontSize || 20
-                },
-                children: [t ? (0, n.jsx)("span", {
-                    style: {
-                        marginRight: "0.35em",
-                        fontSize: "1em"
-                    },
-                    children: t
-                }) : null, (0, n.jsx)("span", {
-                    style: {
-                        fontSize: "0.9em",
-                        marginTop: "0.1em"
-                    },
-                    children: e.children
-                })]
-            })
-        })
+        name: 'menu',
+        theme: 'outlined'
     };
-    const h = l.default.div.attrs({
-        className: "flex-center"
-    })(u || (u = (e => e)`
+}), c.register('8vT5P', function(b, o) {
+    a(b.exports, 'default', function() {
+        return l;
+    });
+    var d = c('8kSQZ'),
+        e = c('uPP4W'),
+        f = c('h99Nu'),
+        g = c('UnfL724'),
+        h = c('lmfrI'),
+        i = c('iYEuk12'),
+        j = c('gSUVO');
+    let k;
+    var l = a => {
+        const {
+            icon: m,
+            path: n,
+            theme: o
+        } = p, q = e.useMemo(() => o === g.SiteHeaderTheme.light ? 'inherit' : h.default.White, [o]);
+        return (0, d.jsx)(i.default, {
+            className: 'flex maxWidth',
+            to: n,
+            onClick: p.onClick,
+            style: {
+                cursor: 'pointer'
+            },
+            children: (0, d.jsxs)(m, {
+                color: q,
+                style: {
+                    fontSize: p.fontSize || 20
+                },
+                children: [
+                    m ? (0, d.jsx)('span', {
+                        style: {
+                            marginRight: '0.35em',
+                            fontSize: '1em'
+                        },
+                        children: m
+                    }) : null,
+                    (0, d.jsx)('span', {
+                        style: {
+                            fontSize: '0.9em',
+                            marginTop: '0.1em'
+                        },
+                        children: p.children
+                    })
+                ]
+            })
+        });
+    };
+    const m = f.default.div.attrs({
+        className: 'flex-center'
+    })(k || (k = (a => a)`
   line-height: 1;
   background: transparent;
   white-space: nowrap;
-  color: ${0};
-  font-family: ${0};
+  color: ${ 0 };
+  font-family: ${ 0 };
   cursor: pointer;
-  font-weight: ${0};
-`), (e => e.color), c.Fonts.SFPro, c.FontWeights.Bold)
-})), a.register("aYjbz", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return i
-    }));
-    var n = a("hxEiv");
-    a("fywoC");
-    var i = () => (0, n.jsx)("div", {
+  font-weight: ${ 0 };
+`), a => a.color, j.Fonts.SFPro, j.FontWeights.Bold);
+}), c.register('C891a', function(b, M) {
+    a(b.exports, 'default', function() {
+        return e;
+    });
+    var d = c('8kSQZ');
+    c('uPP4W');
+    var e = () => (0, d.jsx)('div', {
         style: {
-            height: "var(--header-height)",
+            height: 'var(--header-height)',
             flexShrink: 0,
-            width: "100%"
-        }
-    })
-})), a.register("Divs5", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return W
-    }));
-    var n = a("hxEiv"),
-        i = a("fywoC"),
-        l = a("93yIm"),
-        o = a("4gMdJ"),
-        s = a("gnAdP"),
-        d = a("13AMv"),
-        c = a("l4uFh"),
-        u = a("jIVjI"),
-        f = a("b1oE9"),
-        h = a("9XhDS"),
-        g = a("iMOcM"),
-        m = a("2FDaO"),
-        p = a("69SUA"),
-        v = a("6HXn4"),
-        x = a("dv9KL"),
-        b = a("kiOoU"),
-        y = a("kVS28"),
-        j = a("exbzb"),
-        w = a("hKWVS"),
-        C = a("aXEUe"),
-        S = a("dohZB"),
-        k = a("iROck"),
-        N = a("fzxir"),
-        M = a("e1mXL"),
-        E = a("9Vz35"),
-        O = a("2XIEk"),
-        A = a("hrYih");
-    let I, z, _, F = e => e;
-    const D = e => (0, n.jsx)("img", {
-        src: e.src,
-        style: {
-            height: "1em",
-            display: "block"
+            width: '100%'
         }
     });
-    var W = e => {
-        const [t, a, r] = (0, g.useBoolean)(!1), [m, p] = (0, g.useBoolean)(!1), I = (0, g.isUpgraded)(), z = [], _ = i.useMemo((() => () => {
-            const e = [{
-                name: "Settings",
-                icon: C.default,
-                onClick: () => (0, k.NavigateTo)("/settings")
-            }, {
-                name: "Billing",
-                icon: x.default,
-                onClick: () => {
-                    u.default.navigation.currentTab = h.default.billing, (0, k.NavigateTo)("/settings")
+}), c.register('Xp99w', function(b, M) {
+    a(b.exports, 'default', function() {
+        return J;
+    });
+    var d = c('8kSQZ'),
+        e = c('uPP4W'),
+        f = c('IsmrL'),
+        g = c('qEw51'),
+        h = c('M1Vx4'),
+        i = c('u3X1v'),
+        j = c('KlhV/'),
+        k = c('RrDRa'),
+        l = c('q721a'),
+        m = c('Is2Mj'),
+        n = c('PjB0f'),
+        o = c('h99Nu'),
+        p = c('gSUVO'),
+        q = c('2lDHL'),
+        r = c('HKcK8'),
+        s = c('K4Jzb'),
+        t = c('tK/kr24'),
+        u = c('b+LEP25'),
+        v = c('L2h2Z'),
+        w = c('XSFhr'),
+        x = c('qgO2124'),
+        y = c('k0s2g17'),
+        z = c('euCLs'),
+        A = c('8vT5P'),
+        B = c('mblWO24'),
+        C = c('EOKUI'),
+        D = c('3EnRx');
+    let E, F, G, H = a => a;
+    const I = a => (0, d.jsx)('img', {
+        src: a.src,
+        style: {
+            height: '1em',
+            display: 'block'
+        }
+    });
+    var J = a => {
+        const [K, L, M] = (0, n.useBoolean)(!1), [N, O] = (0, n.useBoolean)(!1), P = (0, n.isUpgraded)(), Q = [], R = e.useMemo(() => () => {
+            const S = [{
+                    name: 'Settings',
+                    icon: w.default,
+                    onClick: () => (0, y.NavigateTo)('/settings')
                 },
-                blockIf: [g.isStudent]
-            }, {
-                name: "News",
-                icon: w.default,
-                onClick: () => {
-                    a(), p()
-                }
-            }, {
-                name: "Group Licenses",
-                icon: S.default,
-                onClick: () => (0, k.NavigateTo)(f.GROUP_DASHBOARD),
-                blockIf: [g.isStudent]
-            }, {
-                name: "GiveKit",
-                icon: b.default,
-                onClick: () => (0, k.NavigateTo)(f.GIVEKIT),
-                blockIf: [g.isStudent]
-            }, {
-                name: "Support",
-                icon: j.default,
-                onClick: () => {
-                    u.default.navigation.currentTab = h.default.support, (0, k.NavigateTo)("/settings")
-                },
-                blockIf: [g.isStudent]
-            }, {
-                name: "Logout",
-                icon: y.default,
-                onClick: () => (0, g.request)({
-                    url: "/logout",
-                    success: () => {
-                        A.default.reset()
+                {
+                    name: 'Billing',
+                    icon: r.default,
+                    onClick: () => {
+                        k.default.navigation.currentTab = m.default.billing, (0, y.NavigateTo)('/settings');
                     },
-                    both: () => window.open("/", "_self")
-                })
-            }];
-            return (0, n.jsx)(n.Fragment, {
-                children: (0, n.jsxs)(d.default, {
+                    blockIf: [n.isStudent]
+                },
+                {
+                    name: 'News',
+                    icon: v.default,
+                    onClick: () => {
+                        L(), O();
+                    }
+                },
+                {
+                    name: 'Group Licenses',
+                    icon: x.default,
+                    onClick: () => (0, y.NavigateTo)(l.GROUP_DASHBOARD),
+                    blockIf: [n.isStudent]
+                },
+                {
+                    name: 'GiveKit',
+                    icon: s.default,
+                    onClick: () => (0, y.NavigateTo)(l.GIVEKIT),
+                    blockIf: [n.isStudent]
+                },
+                {
+                    name: 'Support',
+                    icon: u.default,
+                    onClick: () => {
+                        k.default.navigation.currentTab = m.default.support, (0, y.NavigateTo)('/settings');
+                    },
+                    blockIf: [n.isStudent]
+                },
+                {
+                    name: 'Logout',
+                    icon: t.default,
+                    onClick: () => (0, n.request)({
+                        url: '/logout',
+                        success: () => {
+                            D.default.reset();
+                        },
+                        both: () => window.open('/', '_self')
+                    })
+                }
+            ];
+            return (0, d.jsx)(d.Fragment, {
+                children: (0, d.jsxs)(i.default, {
                     style: {
                         width: 250
                     },
-                    children: [(0, g.isStudent)() ? null : (0, n.jsxs)(B, {
-                        children: [(0, n.jsx)(T, {
-                            children: (0, g.getFirstName)((0, g.getUser)())
-                        }), (0, n.jsx)(P, {
-                            children: (0, v.default)((0, g.getUser)().type)
-                        })]
-                    }), e.filter((e => !e.blockIf || !e.blockIf.some((e => e())))).map((e => (0, n.jsx)(d.default.Item, {
-                        onClick: e.onClick,
-                        children: (0, n.jsxs)("div", {
-                            className: "flex vc",
-                            style: {
-                                textAlign: "center"
-                            },
-                            children: [(0, n.jsx)(e.icon, {}), (0, n.jsx)("div", {
+                    children: [
+                        (0, n.isStudent)() ? null : (0, d.jsxs)(K, {
+                            children: [
+                                (0, d.jsx)(L, {
+                                    children: (0, n.getFirstName)((0, n.getUser)())
+                                }),
+                                (0, d.jsx)(M, {
+                                    children: (0, q.default)((0, n.getUser)().type)
+                                })
+                            ]
+                        }),
+                        S.filter(S => !S.blockIf || !S.blockIf.some(S => S())).map(S => (0, d.jsx)(i.default.Item, {
+                            onClick: S.onClick,
+                            children: (0, d.jsxs)('div', {
+                                className: 'flex vc',
                                 style: {
-                                    marginLeft: 7
+                                    textAlign: 'center'
                                 },
-                                children: e.name
-                            })]
-                        })
-                    }, e.name)))]
+                                children: [
+                                    (0, d.jsx)(S.icon, {}),
+                                    (0, d.jsx)('div', {
+                                        style: {
+                                            marginLeft: 7
+                                        },
+                                        children: S.name
+                                    })
+                                ]
+                            })
+                        }, S.name))
+                    ]
                 })
-            })
-        }), [a]);
-        return z.push({
-            key: "creative",
-            item: (0, n.jsx)(M.default, {
-                path: f.CREATIVE_BASE,
-                icon: (0, n.jsx)(D, {
-                    src: "/client/img/header/creative.svg"
+            });
+        }, [L]);
+        return Q.push({
+            key: 'creative',
+            item: (0, d.jsx)(A.default, {
+                path: l.CREATIVE_BASE,
+                icon: (0, d.jsx)(I, {
+                    src: '/client/img/header/creative.svg'
                 }),
-                theme: e.theme,
-                children: "Creative"
+                theme: a.theme,
+                children: 'Creative'
             })
-        }), z.push({
-            key: "rewards",
-            item: (0, n.jsx)(M.default, {
-                path: f.COSMOS_BASE,
-                icon: (0, n.jsx)(D, {
-                    src: E.default.iconImage
+        }), Q.push({
+            key: 'rewards',
+            item: (0, d.jsx)(A.default, {
+                path: l.COSMOS_BASE,
+                icon: (0, d.jsx)(I, {
+                    src: B.default.iconImage
                 }),
-                theme: e.theme,
-                children: E.default.name
+                theme: a.theme,
+                children: B.default.name
             })
-        }), z.push({
-            key: "me",
-            item: (0, n.jsx)(o.default, {
+        }), Q.push({
+            key: 'me',
+            item: (0, d.jsx)(g.default, {
                 theme: {
-                    algorithm: c.default.defaultAlgorithm
+                    algorithm: j.default.defaultAlgorithm
                 },
-                children: (0, n.jsx)(s.default, {
-                    trigger: ["click"],
-                    overlay: _,
-                    children: (0, n.jsx)("div", {
-                        className: "maxWidth",
-                        children: (0, n.jsx)(M.default, {
-                            icon: (0, n.jsx)(D, {
-                                src: "/client/img/header/smile.svg"
+                children: (0, d.jsx)(h.default, {
+                    trigger: ['click'],
+                    overlay: R,
+                    children: (0, d.jsx)('div', {
+                        className: 'maxWidth',
+                        children: (0, d.jsx)(A.default, {
+                            icon: (0, d.jsx)(I, {
+                                src: '/client/img/header/smile.svg'
                             }),
-                            theme: e.theme,
-                            children: "Me"
+                            theme: a.theme,
+                            children: 'Me'
                         })
                     })
                 })
             })
-        }), I || (0, g.isStudent)() || z.push({
-            key: "upgrade",
-            item: (0, n.jsx)("div", {
-                className: "maxAll",
-                children: (0, n.jsx)(l.default, {
-                    size: "large",
-                    type: "primary",
-                    onClick: e.showUpgradeModal,
-                    children: "Upgrade"
+        }), P || (0, n.isStudent)() || Q.push({
+            key: 'upgrade',
+            item: (0, d.jsx)('div', {
+                className: 'maxAll',
+                children: (0, d.jsx)(f.default, {
+                    size: 'large',
+                    type: 'primary',
+                    onClick: a.showUpgradeModal,
+                    children: 'Upgrade'
                 })
             })
-        }), (0, n.jsxs)(n.Fragment, {
-            children: [(0, n.jsx)(N.default, {
-                items: z
-            }), (0, n.jsx)(i.Suspense, {
-                fallback: null,
-                children: m ? (0, n.jsx)(O.default, {
-                    open: t,
-                    onClose: r
-                }) : null
-            })]
-        })
+        }), (0, d.jsxs)(d.Fragment, {
+            children: [
+                (0, d.jsx)(z.default, {
+                    items: Q
+                }),
+                (0, d.jsx)(e.Suspense, {
+                    fallback: null,
+                    children: N ? (0, d.jsx)(C.default, {
+                        open: K,
+                        onClose: M
+                    }) : null
+                })
+            ]
+        });
     };
-    const B = m.default.div(I || (I = F`
+    const K = o.default.div(E || (E = H`
   background: rgb(232, 232, 232);
   margin: 6px 12px;
   padding: 14px;
   border-radius: 4px;
-  font-family: ${0};
+  font-family: ${ 0 };
   color: rgba(0, 0, 0, 0.8);
 `), p.Fonts.SFPro),
-        T = m.default.div(z || (z = F`
+        L = o.default.div(F || (F = H`
   font-size: 18px;
-  font-weight: ${0};
+  font-weight: ${ 0 };
 `), p.FontWeights.Bold),
-        P = m.default.div(_ || (_ = F`
+        M = o.default.div(G || (G = H`
   font-size: 12px;
-`))
-})), a.register("6HXn4", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return l
-    }));
-    var n = a("46bRO"),
-        i = a("91OKC");
-    var l = e => e === i.PlanIds.pro ? `${n.COMPANY_NAME} Pro` : e === i.PlanIds.go ? `${n.COMPANY_NAME} Go` : e === i.PlanIds.proPass ? `${n.COMPANY_NAME} Pro (Monthly)` : e === i.PlanIds.basic ? `${n.COMPANY_NAME} Basic` : `Unknown ${n.COMPANY_NAME} Plan`
-})), a.register("dv9KL", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return d
-    }));
-    var n = a("dnh3u"),
-        i = a("fywoC"),
-        l = a("hxrfV"),
-        o = a("dwKuN"),
-        s = function(e, t) {
-            return i.createElement(o.default, (0, n.default)((0, n.default)({}, e), {}, {
-                ref: t,
-                icon: l.default
-            }))
+`));
+}), c.register('2lDHL', function(b, d) {
+    a(b.exports, 'default', function() {
+        return f;
+    });
+    var d = c('0wLl2'),
+        e = c('TO+cq');
+    var f = a => a === e.PlanIds.pro ? `${ d.COMPANY_NAME } Pro` : a === e.PlanIds.go ? `${ d.COMPANY_NAME } Go` : a === e.PlanIds.proPass ? `${ d.COMPANY_NAME } Pro (Monthly)` : a === e.PlanIds.basic ? `${ d.COMPANY_NAME } Basic` : `Unknown ${ d.COMPANY_NAME } Plan`;
+}), c.register('HKcK8', function(b, d) {
+    a(b.exports, 'default', function() {
+        return i;
+    });
+    var d = c('uhRWM'),
+        e = c('uPP4W'),
+        f = c('SuF5a'),
+        g = c('tEXgG'),
+        h = function(a, b) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
+                ref: b,
+                icon: f.default
+            }));
         };
-    s.displayName = "CreditCardOutlined";
-    var d = i.forwardRef(s)
-})), a.register("hxrfV", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return r
-    }));
-    var r = {
+    h.displayName = 'CreditCardOutlined';
+    var i = e.forwardRef(h);
+}), c.register('SuF5a', function(b, c) {
+    a(b.exports, 'default', function() {
+        return d;
+    });
+    var d = {
         icon: {
-            tag: "svg",
+            tag: 'svg',
             attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
+                viewBox: '64 64 896 896',
+                focusable: 'false'
             },
             children: [{
-                tag: "path",
+                tag: 'path',
                 attrs: {
-                    d: "M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-792 72h752v120H136V232zm752 560H136V440h752v352zm-237-64h165c4.4 0 8-3.6 8-8v-72c0-4.4-3.6-8-8-8H651c-4.4 0-8 3.6-8 8v72c0 4.4 3.6 8 8 8z"
+                    d: 'M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-792 72h752v120H136V232zm752 560H136V440h752v352zm-237-64h165c4.4 0 8-3.6 8-8v-72c0-4.4-3.6-8-8-8H651c-4.4 0-8 3.6-8 8v72c0 4.4 3.6 8 8 8z'
                 }
             }]
         },
-        name: "credit-card",
-        theme: "outlined"
-    }
-})), a.register("kiOoU", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return d
-    }));
-    var n = a("dnh3u"),
-        i = a("fywoC"),
-        l = a("26gAl"),
-        o = a("dwKuN"),
-        s = function(e, t) {
-            return i.createElement(o.default, (0, n.default)((0, n.default)({}, e), {}, {
-                ref: t,
-                icon: l.default
-            }))
+        name: 'credit-card',
+        theme: 'outlined'
+    };
+}), c.register('K4Jzb', function(b, d) {
+    a(b.exports, 'default', function() {
+        return i;
+    });
+    var d = c('uhRWM'),
+        e = c('uPP4W'),
+        f = c('+O/o9'),
+        g = c('tEXgG'),
+        h = function(a, b) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
+                ref: b,
+                icon: f.default
+            }));
         };
-    s.displayName = "HeartOutlined";
-    var d = i.forwardRef(s)
-})), a.register("26gAl", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return r
-    }));
-    var r = {
+    h.displayName = 'HeartOutlined';
+    var i = e.forwardRef(h);
+}), c.register('+O/o9', function(b, c) {
+    a(b.exports, 'default', function() {
+        return d;
+    });
+    var d = {
         icon: {
-            tag: "svg",
+            tag: 'svg',
             attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
+                viewBox: '64 64 896 896',
+                focusable: 'false'
             },
             children: [{
-                tag: "path",
+                tag: 'path',
                 attrs: {
-                    d: "M923 283.6a260.04 260.04 0 00-56.9-82.8 264.4 264.4 0 00-84-55.5A265.34 265.34 0 00679.7 125c-49.3 0-97.4 13.5-139.2 39-10 6.1-19.5 12.8-28.5 20.1-9-7.3-18.5-14-28.5-20.1-41.8-25.5-89.9-39-139.2-39-35.5 0-69.9 6.8-102.4 20.3-31.4 13-59.7 31.7-84 55.5a258.44 258.44 0 00-56.9 82.8c-13.9 32.3-21 66.6-21 101.9 0 33.3 6.8 68 20.3 103.3 11.3 29.5 27.5 60.1 48.2 91 32.8 48.9 77.9 99.9 133.9 151.6 92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3 56-51.7 101.1-102.7 133.9-151.6 20.7-30.9 37-61.5 48.2-91 13.5-35.3 20.3-70 20.3-103.3.1-35.3-7-69.6-20.9-101.9zM512 814.8S156 586.7 156 385.5C156 283.6 240.3 201 344.3 201c73.1 0 136.5 40.8 167.7 100.4C543.2 241.8 606.6 201 679.7 201c104 0 188.3 82.6 188.3 184.5 0 201.2-356 429.3-356 429.3z"
+                    d: 'M923 283.6a260.04 260.04 0 00-56.9-82.8 264.4 264.4 0 00-84-55.5A265.34 265.34 0 00679.7 125c-49.3 0-97.4 13.5-139.2 39-10 6.1-19.5 12.8-28.5 20.1-9-7.3-18.5-14-28.5-20.1-41.8-25.5-89.9-39-139.2-39-35.5 0-69.9 6.8-102.4 20.3-31.4 13-59.7 31.7-84 55.5a258.44 258.44 0 00-56.9 82.8c-13.9 32.3-21 66.6-21 101.9 0 33.3 6.8 68 20.3 103.3 11.3 29.5 27.5 60.1 48.2 91 32.8 48.9 77.9 99.9 133.9 151.6 92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3 56-51.7 101.1-102.7 133.9-151.6 20.7-30.9 37-61.5 48.2-91 13.5-35.3 20.3-70 20.3-103.3.1-35.3-7-69.6-20.9-101.9zM512 814.8S156 586.7 156 385.5C156 283.6 240.3 201 344.3 201c73.1 0 136.5 40.8 167.7 100.4C543.2 241.8 606.6 201 679.7 201c104 0 188.3 82.6 188.3 184.5 0 201.2-356 429.3-356 429.3z'
                 }
             }]
         },
-        name: "heart",
-        theme: "outlined"
-    }
-})), a.register("aXEUe", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return d
-    }));
-    var n = a("dnh3u"),
-        i = a("fywoC"),
-        l = a("iunFU"),
-        o = a("dwKuN"),
-        s = function(e, t) {
-            return i.createElement(o.default, (0, n.default)((0, n.default)({}, e), {}, {
-                ref: t,
-                icon: l.default
-            }))
+        name: 'heart',
+        theme: 'outlined'
+    };
+}), c.register('XSFhr', function(b, d) {
+    a(b.exports, 'default', function() {
+        return i;
+    });
+    var d = c('uhRWM'),
+        e = c('uPP4W'),
+        f = c('o3fwB'),
+        g = c('tEXgG'),
+        h = function(a, b) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
+                ref: b,
+                icon: f.default
+            }));
         };
-    s.displayName = "SettingOutlined";
-    var d = i.forwardRef(s)
-})), a.register("iunFU", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return r
-    }));
-    var r = {
+    h.displayName = 'SettingOutlined';
+    var i = e.forwardRef(h);
+}), c.register('o3fwB', function(b, c) {
+    a(b.exports, 'default', function() {
+        return d;
+    });
+    var d = {
         icon: {
-            tag: "svg",
+            tag: 'svg',
             attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
+                viewBox: '64 64 896 896',
+                focusable: 'false'
             },
             children: [{
-                tag: "path",
+                tag: 'path',
                 attrs: {
-                    d: "M924.8 625.7l-65.5-56c3.1-19 4.7-38.4 4.7-57.8s-1.6-38.8-4.7-57.8l65.5-56a32.03 32.03 0 009.3-35.2l-.9-2.6a443.74 443.74 0 00-79.7-137.9l-1.8-2.1a32.12 32.12 0 00-35.1-9.5l-81.3 28.9c-30-24.6-63.5-44-99.7-57.6l-15.7-85a32.05 32.05 0 00-25.8-25.7l-2.7-.5c-52.1-9.4-106.9-9.4-159 0l-2.7.5a32.05 32.05 0 00-25.8 25.7l-15.8 85.4a351.86 351.86 0 00-99 57.4l-81.9-29.1a32 32 0 00-35.1 9.5l-1.8 2.1a446.02 446.02 0 00-79.7 137.9l-.9 2.6c-4.5 12.5-.8 26.5 9.3 35.2l66.3 56.6c-3.1 18.8-4.6 38-4.6 57.1 0 19.2 1.5 38.4 4.6 57.1L99 625.5a32.03 32.03 0 00-9.3 35.2l.9 2.6c18.1 50.4 44.9 96.9 79.7 137.9l1.8 2.1a32.12 32.12 0 0035.1 9.5l81.9-29.1c29.8 24.5 63.1 43.9 99 57.4l15.8 85.4a32.05 32.05 0 0025.8 25.7l2.7.5a449.4 449.4 0 00159 0l2.7-.5a32.05 32.05 0 0025.8-25.7l15.7-85a350 350 0 0099.7-57.6l81.3 28.9a32 32 0 0035.1-9.5l1.8-2.1c34.8-41.1 61.6-87.5 79.7-137.9l.9-2.6c4.5-12.3.8-26.3-9.3-35zM788.3 465.9c2.5 15.1 3.8 30.6 3.8 46.1s-1.3 31-3.8 46.1l-6.6 40.1 74.7 63.9a370.03 370.03 0 01-42.6 73.6L721 702.8l-31.4 25.8c-23.9 19.6-50.5 35-79.3 45.8l-38.1 14.3-17.9 97a377.5 377.5 0 01-85 0l-17.9-97.2-37.8-14.5c-28.5-10.8-55-26.2-78.7-45.7l-31.4-25.9-93.4 33.2c-17-22.9-31.2-47.6-42.6-73.6l75.5-64.5-6.5-40c-2.4-14.9-3.7-30.3-3.7-45.5 0-15.3 1.2-30.6 3.7-45.5l6.5-40-75.5-64.5c11.3-26.1 25.6-50.7 42.6-73.6l93.4 33.2 31.4-25.9c23.7-19.5 50.2-34.9 78.7-45.7l37.9-14.3 17.9-97.2c28.1-3.2 56.8-3.2 85 0l17.9 97 38.1 14.3c28.7 10.8 55.4 26.2 79.3 45.8l31.4 25.8 92.8-32.9c17 22.9 31.2 47.6 42.6 73.6L781.8 426l6.5 39.9zM512 326c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm79.2 255.2A111.6 111.6 0 01512 614c-29.9 0-58-11.7-79.2-32.8A111.6 111.6 0 01400 502c0-29.9 11.7-58 32.8-79.2C454 401.6 482.1 390 512 390c29.9 0 58 11.6 79.2 32.8A111.6 111.6 0 01624 502c0 29.9-11.7 58-32.8 79.2z"
+                    d: 'M924.8 625.7l-65.5-56c3.1-19 4.7-38.4 4.7-57.8s-1.6-38.8-4.7-57.8l65.5-56a32.03 32.03 0 009.3-35.2l-.9-2.6a443.74 443.74 0 00-79.7-137.9l-1.8-2.1a32.12 32.12 0 00-35.1-9.5l-81.3 28.9c-30-24.6-63.5-44-99.7-57.6l-15.7-85a32.05 32.05 0 00-25.8-25.7l-2.7-.5c-52.1-9.4-106.9-9.4-159 0l-2.7.5a32.05 32.05 0 00-25.8 25.7l-15.8 85.4a351.86 351.86 0 00-99 57.4l-81.9-29.1a32 32 0 00-35.1 9.5l-1.8 2.1a446.02 446.02 0 00-79.7 137.9l-.9 2.6c-4.5 12.5-.8 26.5 9.3 35.2l66.3 56.6c-3.1 18.8-4.6 38-4.6 57.1 0 19.2 1.5 38.4 4.6 57.1L99 625.5a32.03 32.03 0 00-9.3 35.2l.9 2.6c18.1 50.4 44.9 96.9 79.7 137.9l1.8 2.1a32.12 32.12 0 0035.1 9.5l81.9-29.1c29.8 24.5 63.1 43.9 99 57.4l15.8 85.4a32.05 32.05 0 0025.8 25.7l2.7.5a449.4 449.4 0 00159 0l2.7-.5a32.05 32.05 0 0025.8-25.7l15.7-85a350 350 0 0099.7-57.6l81.3 28.9a32 32 0 0035.1-9.5l1.8-2.1c34.8-41.1 61.6-87.5 79.7-137.9l.9-2.6c4.5-12.3.8-26.3-9.3-35zM788.3 465.9c2.5 15.1 3.8 30.6 3.8 46.1s-1.3 31-3.8 46.1l-6.6 40.1 74.7 63.9a370.03 370.03 0 01-42.6 73.6L721 702.8l-31.4 25.8c-23.9 19.6-50.5 35-79.3 45.8l-38.1 14.3-17.9 97a377.5 377.5 0 01-85 0l-17.9-97.2-37.8-14.5c-28.5-10.8-55-26.2-78.7-45.7l-31.4-25.9-93.4 33.2c-17-22.9-31.2-47.6-42.6-73.6l75.5-64.5-6.5-40c-2.4-14.9-3.7-30.3-3.7-45.5 0-15.3 1.2-30.6 3.7-45.5l6.5-40-75.5-64.5c11.3-26.1 25.6-50.7 42.6-73.6l93.4 33.2 31.4-25.9c23.7-19.5 50.2-34.9 78.7-45.7l37.9-14.3 17.9-97.2c28.1-3.2 56.8-3.2 85 0l17.9 97 38.1 14.3c28.7 10.8 55.4 26.2 79.3 45.8l31.4 25.8 92.8-32.9c17 22.9 31.2 47.6 42.6 73.6L781.8 426l6.5 39.9zM512 326c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm79.2 255.2A111.6 111.6 0 01512 614c-29.9 0-58-11.7-79.2-32.8A111.6 111.6 0 01400 502c0-29.9 11.7-58 32.8-79.2C454 401.6 482.1 390 512 390c29.9 0 58 11.6 79.2 32.8A111.6 111.6 0 01624 502c0 29.9-11.7 58-32.8 79.2z'
                 }
             }]
         },
-        name: "setting",
-        theme: "outlined"
-    }
-})), a.register("h5M3u", (function(t, r) {
-    e(t.exports, "default", (function() {
-        return g
-    }));
-    var n = a("hxEiv"),
-        i = a("fywoC"),
-        l = a("2FDaO"),
-        o = a("beXRF"),
-        s = a("lpEVe"),
-        d = a("gvUHr"),
-        c = a("hDWWf");
-    let u, f, h = e => e;
-    var g = (0, s.observer)((e => {
+        name: 'setting',
+        theme: 'outlined'
+    };
+}), c.register('umlOF', function(b, r) {
+    a(b.exports, 'default', function() {
+        return n;
+    });
+    var d = c('8kSQZ'),
+        e = c('uPP4W'),
+        f = c('h99Nu'),
+        g = c('KzqIz'),
+        h = c('Vlfxs'),
+        i = c('Xu07t'),
+        j = c('UnfL724');
+    let k, l, m = a => a;
+    var n = (0, h.observer)(a => {
         const {
             navigation: {
-                homeUrl: t
+                homeUrl: o
             }
-        } = i.useContext(d.default), a = e.theme === c.SiteHeaderTheme.dark ? "/client/img/svgLogoWhite.svg" : "/client/img/svgLogo.svg";
-        return (0, n.jsx)(m, {
-            to: t,
-            children: (0, n.jsx)(p, {
-                src: a
-            }, a)
-        })
-    }));
-    const m = (0, l.default)(o.Link)(u || (u = h``)),
-        p = l.default.img.attrs({
-            alt: "Gimkit Logo"
-        })(f || (f = h`
+        } = e.useContext(i.default), p = a.theme === j.SiteHeaderTheme.dark ? '/client/img/svgLogoWhite.svg' : '/client/img/svgLogo.svg';
+        return (0, d.jsx)(o, {
+            to: o,
+            children: (0, d.jsx)(p, {
+                src: p
+            }, p)
+        });
+    });
+    const o = (0, f.default)(g.Link)(k || (k = m``)),
+        p = f.default.img.attrs({
+            alt: 'Gimkit Logo'
+        })(l || (l = m`
   height: 32px;
   margin-right: 90px;
-`))
-}));
+`));
+});

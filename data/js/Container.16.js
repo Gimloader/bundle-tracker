@@ -1,80 +1,89 @@
-function e(e, t, o, n) {
-    Object.defineProperty(e, t, {
-        get: o,
-        set: n,
+function a(a, b, l, j) {
+    Object.defineProperty(a, b, {
+        get: l,
+        set: j,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("36y6c", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return u
-    }));
-    var i = t("hxEiv"),
-        r = t("lqzWa"),
-        a = t("6WS0O"),
-        l = t("36UFo");
-    var u = e => (0, i.jsx)(l.default, {
-        emoji: e.emoji,
-        title: e.title,
-        description: e.description,
-        children: (0, i.jsx)(r.default, {
-            value: e.value,
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('sHGAj', function(l, j) {
+    a(l.exports, 'default', function() {
+        return g;
+    });
+    var c = b('8kSQZ'),
+        d = b('Ly1h3'),
+        e = b('2gkXu26'),
+        f = b('oyXSd');
+    var g = a => (0, c.jsx)(f.default, {
+        emoji: a.emoji,
+        title: a.title,
+        description: a.description,
+        children: (0, c.jsx)(d.default, {
+            value: a.value,
             style: {
-                width: e.customWidth || a.default.optionWidth
+                width: a.customWidth || e.default.optionWidth
             },
-            size: "large",
-            onChange: t => e.onValueChanged(t),
-            disabled: e.readOnly,
-            children: e.options.map((t => (0, i.jsx)(r.default.Option, {
-                value: t.value,
-                children: t.name
-            }, `${e.title||"no-title"}-${t.value}`)))
+            size: 'large',
+            onChange: b => a.onValueChanged(b),
+            disabled: a.readOnly,
+            children: a.options.map(b => (0, c.jsx)(d.default.Option, {
+                value: b.value,
+                children: b.name
+            }, `${ a.title || 'no-title' }-${ b.value }`))
         })
-    })
-})), t.register("36UFo", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return a
-    }));
-    var i = t("hxEiv");
-    t("fywoC");
-    var r = t("lmxut");
-    var a = e => (0, i.jsxs)(r.OptionContainer, {
-        children: [(0, i.jsxs)(r.OptionInfoContainer, {
-            children: [e.emoji ? (0, i.jsx)(r.OptionEmoji, {
-                children: e.emoji
-            }) : null, (0, i.jsxs)("div", {
-                children: [(0, i.jsx)(r.OptionTitle, {
-                    children: e.title
-                }), e.description ? (0, i.jsx)(r.OptionDescription, {
-                    children: e.description
-                }) : null]
-            })]
-        }), (0, i.jsx)(r.OptionChangerContainer, {
-            children: e.children
-        })]
-    })
-})), t.register("lmxut", (function(o, n) {
-    e(o.exports, "OptionContainer", (function() {
-        return c
-    })), e(o.exports, "OptionInfoContainer", (function() {
-        return h
-    })), e(o.exports, "OptionEmoji", (function() {
-        return v
-    })), e(o.exports, "OptionTitle", (function() {
-        return x
-    })), e(o.exports, "OptionDescription", (function() {
-        return y
-    })), e(o.exports, "OptionChangerContainer", (function() {
-        return m
-    }));
-    var i = t("69SUA"),
-        r = t("2FDaO");
-    let a, l, u, s, d, f, p = e => e;
-    const c = r.default.div.attrs({
-            className: "maxWidth flex vc between"
-        })(a || (a = p`
+    });
+}), b.register('oyXSd', function(l, j) {
+    a(l.exports, 'default', function() {
+        return e;
+    });
+    var c = b('8kSQZ');
+    b('uPP4W');
+    var d = b('+UK2/');
+    var e = a => (0, c.jsxs)(d.OptionContainer, {
+        children: [
+            (0, c.jsxs)(d.OptionInfoContainer, {
+                children: [
+                    a.emoji ? (0, c.jsx)(d.OptionEmoji, {
+                        children: a.emoji
+                    }) : null,
+                    (0, c.jsxs)('div', {
+                        children: [
+                            (0, c.jsx)(d.OptionTitle, {
+                                children: a.title
+                            }),
+                            a.description ? (0, c.jsx)(d.OptionDescription, {
+                                children: a.description
+                            }) : null
+                        ]
+                    })
+                ]
+            }),
+            (0, c.jsx)(d.OptionChangerContainer, {
+                children: a.children
+            })
+        ]
+    });
+}), b.register('+UK2/', function(l, j) {
+    a(l.exports, 'OptionContainer', function() {
+        return l;
+    }), a(l.exports, 'OptionInfoContainer', function() {
+        return m;
+    }), a(l.exports, 'OptionEmoji', function() {
+        return n;
+    }), a(l.exports, 'OptionTitle', function() {
+        return o;
+    }), a(l.exports, 'OptionDescription', function() {
+        return p;
+    }), a(l.exports, 'OptionChangerContainer', function() {
+        return q;
+    });
+    var c = b('gSUVO'),
+        d = b('h99Nu');
+    let e, f, g, h, i, j, k = a => a;
+    const l = d.default.div.attrs({
+            className: 'maxWidth flex vc between'
+        })(e || (e = k`
   box-sizing: border-box;
   padding: 13px 20px;
   border-style: solid;
@@ -89,414 +98,439 @@ t.register("36y6c", (function(o, n) {
     transform: scale(1.02);
   }
 `)),
-        h = r.default.div.attrs({
-            className: "flex vc"
-        })(l || (l = p``)),
-        v = r.default.div(u || (u = p`
+        m = d.default.div.attrs({
+            className: 'flex vc'
+        })(f || (f = k``)),
+        n = d.default.div(g || (g = k`
   font-size: 23px;
   margin-right: 10px;
 `)),
-        x = r.default.div(s || (s = p`
+        o = d.default.div(h || (h = k`
   font-size: 23px;
-  font-weight: ${0};
-`), i.FontWeights.Bold),
-        y = r.default.div(d || (d = p`
+  font-weight: ${ 0 };
+`), c.FontWeights.Bold),
+        p = d.default.div(i || (i = k`
   font-size: 15px;
   margin-top: -2px;
 `)),
-        m = r.default.div(f || (f = p`
+        q = d.default.div(j || (j = k`
   flex-shrink: 0;
   margin-left: 25px;
-`))
-})), t.register("dbbFP", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return f
-    }));
-    var i = t("hxEiv"),
-        r = t("fywoC"),
-        a = t("6WS0O"),
-        l = t("1pMe1"),
-        u = t("36UFo"),
-        s = t("cmvpZ"),
-        d = t("gaBR9");
-    var f = e => {
-        const t = r.useCallback((t => {
-            if ((0, s.isNil)(t) && e.allowEmpty) return t;
-            let o = t ? e.step ? Math.round(t / e.step) * e.step : t : 0;
-            return !(0, s.isNil)(e.min) && o < e.min ? o = e.min : !(0, s.isNil)(e.max) && o > e.max && (o = e.max), o
-        }), [e.max, e.min, e.step]);
-        r.useEffect((() => {
-            (0, s.isNil)(e.value) || e.max && e.value > e.max && o(t(e.max))
-        }), [e.value, e.max]);
-        const o = o => {
-            e.onValueChanged(t(o))
+`));
+}), b.register('Zl/uU', function(l, j) {
+    a(l.exports, 'default', function() {
+        return j;
+    });
+    var c = b('8kSQZ'),
+        d = b('uPP4W'),
+        e = b('2gkXu26'),
+        f = b('iEGOV'),
+        g = b('oyXSd'),
+        h = b('4/f+U'),
+        i = b('ntvHp');
+    var j = a => {
+        const k = d.useCallback(k => {
+            if ((0, h.isNil)(k) && a.allowEmpty)
+                return k;
+            let l = k ? a.step ? Math.round(k / a.step) * a.step : k : 0;
+            return !(0, h.isNil)(a.min) && l < a.min ? l = a.min : !(0, h.isNil)(a.max) && l > a.max && (l = a.max), l;
+        }, [
+            a.max,
+            a.min,
+            a.step
+        ]);
+        d.useEffect(() => {
+            (0, h.isNil)(a.value) || a.max && a.value > a.max && l(k(a.max));
+        }, [
+            a.value,
+            a.max
+        ]);
+        const l = l => {
+            a.onValueChanged(k(l));
         };
-        return (0, i.jsx)(u.default, {
-            emoji: e.emoji,
-            title: e.title,
-            description: e.description,
-            children: (0, i.jsx)(d.default, {
-                size: "large",
-                formatter: l.default,
-                value: e.value,
-                max: e.max,
-                min: e.min,
-                step: e.step,
+        return (0, c.jsx)(g.default, {
+            emoji: a.emoji,
+            title: a.title,
+            description: a.description,
+            children: (0, c.jsx)(i.default, {
+                size: 'large',
+                formatter: f.default,
+                value: a.value,
+                max: a.max,
+                min: a.min,
+                step: a.step,
                 style: {
-                    width: e.customWidth || a.default.optionWidth
+                    width: a.customWidth || e.default.optionWidth
                 },
-                onChange: o,
-                disabled: e.readOnly
+                onChange: l,
+                disabled: a.readOnly
             })
-        })
-    }
-})), t.register("1pMe1", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return r
-    }));
-    var i = t("iMOcM");
-    var r = e => "" === e ? "" : isNaN(Number(e)) ? String(e) : (0, i.numberWithCommas)(Number(e))
-})), t.register("gaBR9", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return u
-    }));
-    var i = t("hxEiv"),
-        r = t("8K4sH"),
-        a = t("fywoC"),
-        l = t("iMOcM");
-    var u = e => {
-        const [t, o] = a.useState(e.value), [n, u] = a.useState(e.value), [s, d, f] = (0, l.useBoolean)(!1);
-        a.useEffect((() => {
-            u(e.value), o(e.value)
-        }), [e.value]);
-        return (0, i.jsx)(r.default, {
-            ...e,
-            value: s ? t : n,
-            onChange: e => {
-                o(e)
-            },
-            onFocus: d,
-            onBlur: () => {
-                t !== n && e.onChange(t), f(), o(e.value)
-            }
-        })
-    }
-})), t.register("1VXVp", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return u
-    }));
-    var i = t("cmvpZ"),
-        r = t("f9d7r"),
-        a = t("5mRwo");
-    const l = (e, t) => {
-        var o;
-        return null === (o = JSON.parse(localStorage.getItem(a.LocalStorageNames.hookSavedOptions) || "{}")[t]) || void 0 === o ? void 0 : o[e]
+        });
     };
-    var u = e => {
-        var t;
+}), b.register('iEGOV', function(i, j) {
+    a(i.exports, 'default', function() {
+        return d;
+    });
+    var c = b('PjB0f');
+    var d = a => '' === a ? '' : isNaN(Number(a)) ? String(a) : (0, c.numberWithCommas)(Number(a));
+}), b.register('ntvHp', function(i, j) {
+    a(i.exports, 'default', function() {
+        return g;
+    });
+    var c = b('8kSQZ'),
+        d = b('TNIOj'),
+        e = b('uPP4W'),
+        f = b('PjB0f');
+    var g = a => {
+        const [h, i] = e.useState(a.value), [j, k] = e.useState(a.value), [l, m, n] = (0, f.useBoolean)(!1);
+        e.useEffect(() => {
+            k(a.value), i(a.value);
+        }, [a.value]);
+        return (0, c.jsx)(d.default, {
+            ...a,
+            value: l ? h : j,
+            onChange: a => {
+                i(a);
+            },
+            onFocus: m,
+            onBlur: () => {
+                h !== j && a.onChange(h), n(), i(a.value);
+            }
+        });
+    };
+}), b.register('lcKX8', function(g, j) {
+    a(g.exports, 'default', function() {
+        return g;
+    });
+    var c = b('4/f+U'),
+        d = b('uzjvO4'),
+        e = b('SprP3');
+    const f = (a, b) => {
+        var g;
+        return null === (g = JSON.parse(localStorage.getItem(e.LocalStorageNames.hookSavedOptions) || '{}')[b]) || void 0 === g ? void 0 : g[a];
+    };
+    var g = a => {
+        var h;
         const {
-            hookJSON: o,
-            experienceId: n,
-            kitId: a
-        } = e, u = {};
-        return null == o || null === (t = o.hooks) || void 0 === t || t.forEach((e => {
-            if (e.type === r.HookType.kit) u[e.key] = a || "";
-            else if (e.type == r.HookType.selectBox) {
-                const t = e.options;
-                if (t.options.length) {
-                    let o = t.options.find((e => e === t.defaultOption)) || t.options[0];
-                    if (n) {
-                        const i = l(e.key, n);
-                        if (i) {
-                            const e = t.options.find((e => e === i));
-                            e && (o = e)
+            hookJSON: i,
+            experienceId: j,
+            kitId: k
+        } = l, m = {};
+        return null == i || null === (h = i.hooks) || void 0 === h || h.forEach(l => {
+            if (l.type === d.HookType.kit)
+                m[l.key] = k || '';
+            else if (l.type == d.HookType.selectBox) {
+                const n = l.options;
+                if (n.options.length) {
+                    let o = n.options.find(l => l === n.defaultOption) || n.options[0];
+                    if (j) {
+                        const p = f(l.key, j);
+                        if (p) {
+                            const q = n.options.find(q => q === p);
+                            q && (o = q);
                         }
                     }
-                    o && (u[e.key] = o)
+                    o && (m[l.key] = o);
                 }
-            } else if (e.type === r.HookType.number) {
-                const t = e.options;
-                let o = t.defaultValue;
-                if (n) {
-                    const r = l(e.key, n);
-                    if (!(0, i.isNil)(r) && "number" == typeof r) {
-                        let e = !1;
-                        ((0, i.isNil)(t.min) || r > t.min) && ((0, i.isNil)(t.max) || r < t.max) && ((0, i.isNil)(t.step) || r % t.step == 0) && (e = !0), e && (o = r)
+            } else if (l.type === d.HookType.number) {
+                const o = l.options;
+                let p = o.defaultValue;
+                if (j) {
+                    const q = f(l.key, j);
+                    if (!(0, c.isNil)(q) && 'number' == typeof q) {
+                        let r = !1;
+                        ((0, c.isNil)(o.min) || q > o.min) && ((0, c.isNil)(o.max) || q < o.max) && ((0, c.isNil)(o.step) || q % o.step == 0) && (r = !0), r && (p = q);
                     }
                 }
-                u[e.key] = o
+                m[l.key] = p;
             }
-        })), u
-    }
-})), t.register("duwmE", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return p
-    }));
-    var i = t("hxEiv"),
-        r = t("4MuSt"),
-        a = t("lpEVe"),
-        l = t("fywoC"),
-        u = t("kYeTD"),
-        s = t("fMJkl"),
-        d = t("8KPyf"),
-        f = t("1VXVp");
-    var p = (0, a.observer)((e => {
-        const [t] = l.useState((() => (0, r.observable)(e.defaultState || (0, f.default)({
-            hookJSON: e.hooks
-        })))), o = (e, o) => {
-            t[e] = o
-        }, n = (0, r.toJS)(t), a = JSON.stringify(n);
-        l.useEffect((() => {
-            e.onConnectedResourcesChange && e.onConnectedResourcesChange((0, s.default)(e, n)), e.readOnly || e.onStateChange && e.onStateChange(n)
-        }), [a, e.readOnly]);
-        const p = (0, d.default)(e, n);
-        return (0, i.jsxs)(i.Fragment, {
-            children: [e.header ? e.header(p.length) : null, p.map(((t, r) => (0, i.jsxs)(l.Fragment, {
-                children: [(0, i.jsx)(u.default, {
-                    hook: t,
-                    state: n,
-                    modifyState: o,
-                    location: e.location,
-                    readOnly: e.readOnly
-                }), r !== p.length - 1 && (0, i.jsx)("div", {
-                    style: {
-                        height: 10
-                    }
-                })]
-            }, `hook-form-${t.key}`))), e.footer ? e.footer(p.length) : null]
-        })
-    }))
-})), t.register("kYeTD", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return s
-    }));
-    var i = t("hxEiv");
-    t("fywoC");
-    var r = t("f9d7r"),
-        a = t("1njXE"),
-        l = t("bEHrS"),
-        u = t("lPp5C");
-    var s = e => {
-        const t = e.state[e.hook.key],
-            o = t => {
-                e.modifyState(e.hook.key, t)
+        }), m;
+    };
+}), b.register('RxXGC', function(m, n) {
+    a(m.exports, 'default', function() {
+        return k;
+    });
+    var c = b('8kSQZ'),
+        d = b('UnUp5'),
+        e = b('Vlfxs'),
+        f = b('uPP4W'),
+        g = b('X12rx'),
+        h = b('ioF/t'),
+        i = b('9t6Nl'),
+        j = b('lcKX8');
+    var k = (0, e.observer)(a => {
+        const [l] = f.useState(() => (0, d.observable)(a.defaultState || (0, j.default)({
+            hookJSON: a.hooks
+        }))), m = (a, m) => {
+            l[a] = m;
+        }, n = (0, d.toJS)(l), o = JSON.stringify(n);
+        f.useEffect(() => {
+            a.onConnectedResourcesChange && a.onConnectedResourcesChange((0, h.default)(a, n)), a.readOnly || a.onStateChange && a.onStateChange(n);
+        }, [
+            o,
+            a.readOnly
+        ]);
+        const p = (0, i.default)(a, n);
+        return (0, c.jsxs)(c.Fragment, {
+            children: [
+                a.header ? a.header(p.length) : null,
+                p.map((l, d) => (0, c.jsxs)(f.Fragment, {
+                    children: [
+                        (0, c.jsx)(g.default, {
+                            hook: l,
+                            state: n,
+                            modifyState: m,
+                            location: a.location,
+                            readOnly: a.readOnly
+                        }),
+                        d !== p.length - 1 && (0, c.jsx)('div', {
+                            style: {
+                                height: 10
+                            }
+                        })
+                    ]
+                }, `hook-form-${ l.key }`)),
+                a.footer ? a.footer(p.length) : null
+            ]
+        });
+    });
+}), b.register('X12rx', function(j, c) {
+    a(j.exports, 'default', function() {
+        return h;
+    });
+    var c = b('8kSQZ');
+    b('uPP4W');
+    var d = b('uzjvO4'),
+        e = b('Zbna5'),
+        f = b('QLqxR'),
+        g = b('q6rhe');
+    var h = a => {
+        const i = a.state[a.hook.key],
+            j = i => {
+                a.modifyState(a.hook.key, i);
             };
-        return e.hook.type === r.HookType.selectBox ? (0, i.jsx)(u.default, {
-            value: t,
-            onChange: o,
-            hook: e.hook,
-            readOnly: e.readOnly
-        }) : e.hook.type === r.HookType.kit ? (0, i.jsx)(a.default, {
-            value: t,
-            onChange: o,
-            hook: e.hook,
-            location: e.location,
-            readOnly: e.readOnly
-        }) : e.hook.type === r.HookType.number ? (0, i.jsx)(l.default, {
-            value: t,
-            onChange: o,
-            hook: e.hook,
-            readOnly: e.readOnly
-        }) : null
-    }
-})), t.register("1njXE", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return u
-    }));
-    var i = t("hxEiv");
-    t("fywoC");
-    var r = t("lC3yj"),
-        a = t("ijMF4"),
-        l = t("e3N7l");
-    var u = e => {
+        return a.hook.type === d.HookType.selectBox ? (0, c.jsx)(g.default, {
+            value: i,
+            onChange: j,
+            hook: a.hook,
+            readOnly: a.readOnly
+        }) : a.hook.type === d.HookType.kit ? (0, c.jsx)(e.default, {
+            value: i,
+            onChange: j,
+            hook: a.hook,
+            location: a.location,
+            readOnly: a.readOnly
+        }) : a.hook.type === d.HookType.number ? (0, c.jsx)(f.default, {
+            value: i,
+            onChange: j,
+            hook: a.hook,
+            readOnly: a.readOnly
+        }) : null;
+    };
+}), b.register('Zbna5', function(i, c) {
+    a(i.exports, 'default', function() {
+        return g;
+    });
+    var c = b('8kSQZ');
+    b('uPP4W');
+    var d = b('hAeIC'),
+        e = b('lZ+7Q'),
+        f = b('4564n');
+    var g = a => {
         let {
-            title: t,
-            description: o
-        } = (0, l.default)(e.hook);
-        if (e.location === a.HookFormLocation.editor) {
-            const e = "We're showing this hook for testing purposes, but this hook won't be visible when choosing this map from the Mode Picker.";
-            o ? o += ` - ${e}` : o = e
+            title: h,
+            description: i
+        } = (0, f.default)(a.hook);
+        if (a.location === e.HookFormLocation.editor) {
+            const j = 'We\'re showing this hook for testing purposes, but this hook won\'t be visible when choosing this map from the Mode Picker.';
+            i ? i += ` - ${ j }` : i = j;
         }
-        return (0, i.jsx)(r.default, {
-            title: t,
-            description: o,
-            value: e.value,
-            onValueChanged: e.onChange,
-            placeholder: "Kit ID",
-            readOnly: e.readOnly
-        })
-    }
-})), t.register("lC3yj", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return u
-    }));
-    var i = t("hxEiv");
-    t("fywoC");
-    var r = t("b9Zw0"),
-        a = t("6WS0O"),
-        l = t("36UFo");
-    var u = e => (0, i.jsx)(l.default, {
-        emoji: e.emoji,
-        title: e.title,
-        description: e.description,
-        children: (0, i.jsx)(r.default, {
-            size: "large",
-            value: e.value,
-            placeholder: e.placeholder,
+        return (0, c.jsx)(d.default, {
+            title: h,
+            description: i,
+            value: a.value,
+            onValueChanged: a.onChange,
+            placeholder: 'Kit ID',
+            readOnly: a.readOnly
+        });
+    };
+}), b.register('hAeIC', function(e, c) {
+    a(e.exports, 'default', function() {
+        return g;
+    });
+    var c = b('8kSQZ');
+    b('uPP4W');
+    var d = b('c6x8w'),
+        e = b('2gkXu26'),
+        f = b('oyXSd');
+    var g = a => (0, c.jsx)(f.default, {
+        emoji: a.emoji,
+        title: a.title,
+        description: a.description,
+        children: (0, c.jsx)(d.default, {
+            size: 'large',
+            value: a.value,
+            placeholder: a.placeholder,
             style: {
-                width: e.customWidth || a.default.optionWidth
+                width: a.customWidth || e.default.optionWidth
             },
-            onChange: t => {
-                e.onValueChanged(t.target.value)
+            onChange: b => {
+                a.onValueChanged(b.target.value);
             },
-            disabled: e.readOnly
+            disabled: a.readOnly
         })
-    })
-})), t.register("ijMF4", (function(t, o) {
-    let n;
-    var i;
-    let r;
-    e(t.exports, "HookFormLocation", (function() {
-        return n
-    })), e(t.exports, "IHookConnectedResourceType", (function() {
-        return r
-    })), (i = n || (n = {})).editor = "editor", i.experiencePicker = "experiencePicker", (r || (r = {})).kit = "kit"
-})), t.register("e3N7l", (function(t, o) {
-    e(t.exports, "default", (function() {
-        return n
-    }));
-    var n = e => {
-        let t, o;
-        return t = e.key, e.displayName && (t = e.displayName), e.displayDescription && (o = e.displayDescription), {
-            title: t,
-            description: o
-        }
-    }
-})), t.register("bEHrS", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return u
-    }));
-    var i = t("hxEiv"),
-        r = t("cmvpZ");
-    t("fywoC");
-    var a = t("dbbFP"),
-        l = t("e3N7l");
-    var u = e => {
+    });
+}), b.register('lZ+7Q', function(b, e) {
+    let c;
+    var d;
+    let e;
+    a(b.exports, 'HookFormLocation', function() {
+        return c;
+    }), a(b.exports, 'IHookConnectedResourceType', function() {
+        return e;
+    }), (d = c || (c = {})).editor = 'editor', d.experiencePicker = 'experiencePicker', (e || (e = {})).kit = 'kit';
+}), b.register('4564n', function(b, e) {
+    a(b.exports, 'default', function() {
+        return c;
+    });
+    var c = a => {
+        let d, e;
+        return d = a.key, a.displayName && (d = a.displayName), a.displayDescription && (e = a.displayDescription), {
+            title: d,
+            description: e
+        };
+    };
+}), b.register('QLqxR', function(i, j) {
+    a(i.exports, 'default', function() {
+        return g;
+    });
+    var c = b('8kSQZ'),
+        d = b('4/f+U');
+    b('uPP4W');
+    var e = b('Zl/uU'),
+        f = b('4564n');
+    var g = a => {
         const {
-            title: t,
-            description: o
-        } = (0, l.default)(e.hook), n = e.hook.options;
-        return (0, i.jsx)(a.default, {
-            title: t,
-            description: o,
-            value: e.value,
-            onValueChanged: t => {
-                !(0, r.isNil)(t) || (0, r.isNil)(n.defaultValue) ? e.onChange(t): e.onChange(n.defaultValue)
+            title: h,
+            description: i
+        } = (0, f.default)(a.hook), j = a.hook.options;
+        return (0, c.jsx)(e.default, {
+            title: h,
+            description: i,
+            value: a.value,
+            onValueChanged: h => {
+                !(0, d.isNil)(h) || (0, d.isNil)(j.defaultValue) ? a.onChange(h): a.onChange(j.defaultValue);
             },
-            min: n.min,
-            max: n.max,
-            step: n.step,
+            min: j.min,
+            max: j.max,
+            step: j.step,
             allowEmpty: !0,
-            readOnly: e.readOnly
-        })
-    }
-})), t.register("lPp5C", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return l
-    }));
-    var i = t("hxEiv");
-    t("fywoC");
-    var r = t("36y6c"),
-        a = t("e3N7l");
-    var l = e => {
+            readOnly: a.readOnly
+        });
+    };
+}), b.register('q6rhe', function(h, i) {
+    a(h.exports, 'default', function() {
+        return f;
+    });
+    var c = b('8kSQZ');
+    b('uPP4W');
+    var d = b('sHGAj'),
+        e = b('4564n');
+    var f = a => {
         const {
-            title: t,
-            description: o
-        } = (0, a.default)(e.hook), n = e.hook.options;
-        return (0, i.jsx)(r.default, {
-            title: t,
-            description: o,
-            value: e.value,
-            onValueChanged: e.onChange,
-            options: n.options.map((e => ({
-                value: e,
-                name: e
-            }))),
-            readOnly: e.readOnly
-        })
-    }
-})), t.register("fMJkl", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return u
-    }));
-    var i = t("cmvpZ"),
-        r = t("f9d7r"),
-        a = t("ijMF4"),
-        l = t("8KPyf");
-    var u = (e, t) => {
-        const o = [];
-        return (0, l.default)({
-            ...e,
-            location: a.HookFormLocation.editor
-        }, t).forEach((e => {
-            e.type === r.HookType.kit && t[e.key] && o.push({
-                type: a.IHookConnectedResourceType.kit,
-                value: t[e.key]
-            })
-        })), (0, i.uniqBy)(o, "value")
-    }
-})), t.register("8KPyf", (function(o, n) {
-    e(o.exports, "default", (function() {
-        return l
-    }));
-    var i = t("lQVxa"),
-        r = t("f9d7r"),
-        a = t("ijMF4");
-    var l = (e, t) => {
-        var o, n;
-        const l = [];
-        return null == e || null === (o = e.hooks) || void 0 === o || null === (n = o.hooks) || void 0 === n || n.forEach((o => {
-            var n;
-            if (o.type === r.HookType.kit) {
-                if (!!t[o.key] && e.location === a.HookFormLocation.experiencePicker) return
+            title: g,
+            description: h
+        } = (0, e.default)(a.hook), i = a.hook.options;
+        return (0, c.jsx)(d.default, {
+            title: g,
+            description: h,
+            value: a.value,
+            onValueChanged: a.onChange,
+            options: i.options.map(a => ({
+                value: a,
+                name: a
+            })),
+            readOnly: a.readOnly
+        });
+    };
+}), b.register('ioF/t', function(h, h) {
+    a(h.exports, 'default', function() {
+        return g;
+    });
+    var c = b('4/f+U'),
+        d = b('uzjvO4'),
+        e = b('lZ+7Q'),
+        f = b('9t6Nl');
+    var g = (a, b) => {
+        const h = [];
+        return (0, f.default)({
+            ...a,
+            location: e.HookFormLocation.editor
+        }, b).forEach(a => {
+            a.type === d.HookType.kit && b[a.key] && h.push({
+                type: e.IHookConnectedResourceType.kit,
+                value: b[a.key]
+            });
+        }), (0, c.uniqBy)(h, 'value');
+    };
+}), b.register('9t6Nl', function(g, h) {
+    a(g.exports, 'default', function() {
+        return f;
+    });
+    var c = b('zPY9u'),
+        d = b('uzjvO4'),
+        e = b('lZ+7Q');
+    var f = (a, b) => {
+        var g, h;
+        const i = [];
+        return null == a || null === (g = a.hooks) || void 0 === g || null === (h = g.hooks) || void 0 === h || h.forEach(g => {
+            var j;
+            if (g.type === d.HookType.kit) {
+                if (!!b[g.key] && a.location === e.HookFormLocation.experiencePicker)
+                    return;
             }
-            if (o.type === r.HookType.selectBox) {
-                var u;
-                const e = o.options;
-                if (!(null == e || null === (u = e.options) || void 0 === u ? void 0 : u.length)) return
-            }(null == o || null === (n = o.hiddenScenarios) || void 0 === n ? void 0 : n.find((o => {
-                var n, r;
-                if (!!!(null === (n = o.conditions) || void 0 === n ? void 0 : n.length)) return !1;
-                return !!(null === (r = o.conditions) || void 0 === r ? void 0 : r.every((o => {
-                    if (o.type === i.HiddenConditionType.hookValue) {
-                        const e = o.options,
-                            n = e.value,
-                            r = t[e.key];
-                        if (e.compare === i.HookValueHiddenConditionCompare.equal) {
-                            if (n == r) return !0
-                        } else if (e.compare === i.HookValueHiddenConditionCompare.notEqual && n != r) return !0
-                    } else if (o.type === i.HiddenConditionType.modeType) {
-                        const t = e.modeType,
-                            n = o.options;
-                        return n.compare === i.ModeTypeHiddenConditionCompare.equal ? t === n.mode : t !== n.mode
+            if (g.type === d.HookType.selectBox) {
+                var k;
+                const l = g.options;
+                if (!(null == l || null === (k = l.options) || void 0 === k ? void 0 : k.length))
+                    return;
+            }
+            (null == g || null === (j = g.hiddenScenarios) || void 0 === j ? void 0 : j.find(g => {
+                var k, l;
+                if (!!!(null === (k = g.conditions) || void 0 === k ? void 0 : k.length))
+                    return !1;
+                return !!(null === (l = g.conditions) || void 0 === l ? void 0 : l.every(g => {
+                    if (g.type === c.HiddenConditionType.hookValue) {
+                        const m = g.options,
+                            n = m.value,
+                            o = b[m.key];
+                        if (m.compare === c.HookValueHiddenConditionCompare.equal) {
+                            if (n == o)
+                                return !0;
+                        } else if (m.compare === c.HookValueHiddenConditionCompare.notEqual && n != o)
+                            return !0;
+                    } else if (g.type === c.HiddenConditionType.modeType) {
+                        const p = m.modeType,
+                            q = g.options;
+                        return q.compare === c.ModeTypeHiddenConditionCompare.equal ? p === q.mode : p !== q.mode;
                     }
-                    return !1
-                })))
-            }))) || l.push(o)
-        })), l
-    }
-})), t.register("lQVxa", (function(t, o) {
-    let n;
-    var i;
-    let r;
-    var a;
-    let l;
-    var u;
-    e(t.exports, "HiddenConditionType", (function() {
-        return n
-    })), e(t.exports, "HookValueHiddenConditionCompare", (function() {
-        return r
-    })), e(t.exports, "ModeTypeHiddenConditionCompare", (function() {
-        return l
-    })), (i = n || (n = {})).hookValue = "hookValue", i.modeType = "modeType", (a = r || (r = {})).equal = "EQUAL", a.notEqual = "NOT_EQUAL", (u = l || (l = {})).equal = "EQUAL", u.notEqual = "NOT_EQUAL"
-}));
+                    return !1;
+                }));
+            })) || i.push(g);
+        }), i;
+    };
+}), b.register('zPY9u', function(b, o) {
+    let c;
+    var d;
+    let e;
+    var f;
+    let g;
+    var h;
+    a(b.exports, 'HiddenConditionType', function() {
+        return c;
+    }), a(b.exports, 'HookValueHiddenConditionCompare', function() {
+        return e;
+    }), a(b.exports, 'ModeTypeHiddenConditionCompare', function() {
+        return g;
+    }), (d = c || (c = {})).hookValue = 'hookValue', d.modeType = 'modeType', (f = e || (e = {})).equal = 'EQUAL', f.notEqual = 'NOT_EQUAL', (h = g || (g = {})).equal = 'EQUAL', h.notEqual = 'NOT_EQUAL';
+});

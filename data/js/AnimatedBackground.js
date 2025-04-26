@@ -1,33 +1,47 @@
-var i = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-i.register("cZown", (function(e, t) {
-    var l, a, n, d, s;
-    l = e.exports, Object.defineProperty(l, "__esModule", {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('07BOy', function(e, t) {
+    var b, c, d, e, f;
+    b = e.exports, Object.defineProperty(b, '__esModule', {
         value: !0,
         configurable: !0
-    }), a = e.exports, n = "default", d = function() {
-        return p
-    }, Object.defineProperty(a, n, {
-        get: d,
-        set: s,
+    }), c = e.exports, d = 'default', e = function() {
+        return l;
+    }, Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
-    var o = i("hxEiv");
-    i("fywoC");
-    var h = i("2FDaO");
-    let r, c, x = i => i;
-    var p = i => (0, o.jsxs)(f, {
-        children: [(0, o.jsx)("div", {
-            className: "area",
-            children: (0, o.jsxs)("ul", {
-                className: "circles",
-                children: [(0, o.jsx)("li", {}), (0, o.jsx)("li", {}), (0, o.jsx)("li", {}), (0, o.jsx)("li", {}), (0, o.jsx)("li", {}), (0, o.jsx)("li", {}), (0, o.jsx)("li", {}), (0, o.jsx)("li", {}), (0, o.jsx)("li", {}), (0, o.jsx)("li", {})]
+    var g = a('8kSQZ');
+    a('uPP4W');
+    var h = a('h99Nu');
+    let i, j, k = a => a;
+    var l = a => (0, g.jsxs)(m, {
+        children: [
+            (0, g.jsx)('div', {
+                className: 'area',
+                children: (0, g.jsxs)('ul', {
+                    className: 'circles',
+                    children: [
+                        (0, g.jsx)('li', {}),
+                        (0, g.jsx)('li', {}),
+                        (0, g.jsx)('li', {}),
+                        (0, g.jsx)('li', {}),
+                        (0, g.jsx)('li', {}),
+                        (0, g.jsx)('li', {}),
+                        (0, g.jsx)('li', {}),
+                        (0, g.jsx)('li', {}),
+                        (0, g.jsx)('li', {}),
+                        (0, g.jsx)('li', {})
+                    ]
+                })
+            }),
+            (0, g.jsx)(n, {
+                children: a.children
             })
-        }), (0, o.jsx)(u, {
-            children: i.children
-        })]
+        ]
     });
-    const f = h.default.div(r || (r = x`
+    const m = h.default.div(i || (i = k`
   flex: 1;
   height: 100%;
   width: 100%;
@@ -151,11 +165,11 @@ i.register("cZown", (function(e, t) {
     }
   }
 `)),
-        u = h.default.div.attrs({
-            className: "maxAll"
-        })(c || (c = x`
+        n = h.default.div.attrs({
+            className: 'maxAll'
+        })(j || (j = k`
   position: absolute;
   top: 0;
   left: 0;
-`))
-}));
+`));
+});

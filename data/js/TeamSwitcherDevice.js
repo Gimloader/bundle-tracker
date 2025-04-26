@@ -1,39 +1,39 @@
-var e = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-e.register("79WBY", (function(o, t) {
-    var n, r, i, l, a;
-    n = o.exports, Object.defineProperty(n, "__esModule", {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('z0Ix1', function(o, t) {
+    var b, c, d, e, f;
+    b = o.exports, Object.defineProperty(b, '__esModule', {
         value: !0,
         configurable: !0
-    }), r = o.exports, i = "default", l = function() {
-        return g
-    }, Object.defineProperty(r, i, {
-        get: l,
-        set: a,
+    }), c = o.exports, d = 'default', e = function() {
+        return n;
+    }, Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
-    var d = e("alREA"),
-        s = e("4uojN"),
-        f = e("6Tpu2"),
-        u = e("bNmF9"),
-        c = e("dPNN3"),
-        b = e("h6SIm");
-    class p extends u.default {
-        constructor(e) {
-            if (super(e), (0, f.InPreGamePhase)() && (0, s.isSavedVersion)()) {
-                const e = b.default.Utility;
-                new(0, c.default)({
+    var g = a('JJQ0+'),
+        h = a('Bpt+p'),
+        i = a('5Ux1a'),
+        j = a('sgILU'),
+        k = a('phu0d'),
+        l = a('Gqspz');
+    class m extends j.default {
+        constructor(a) {
+            if (super(a), (0, i.InPreGamePhase)() && (0, h.isSavedVersion)()) {
+                const n = l.default.Utility;
+                new(0, k.default)({
                     device: this,
-                    baseColor: e.baseColor,
-                    boxColor: e.boxColor,
+                    baseColor: n.baseColor,
+                    boxColor: n.boxColor,
                     content: {
                         icon: {
-                            image: (0, d.default)("devices/team_switcher/icon.png")
+                            image: (0, g.default)('devices/team_switcher/icon.png')
                         }
                     }
-                })
+                });
             }
         }
     }
-    var g = p
-}));
+    var n = o;
+});

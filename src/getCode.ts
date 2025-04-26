@@ -1,7 +1,7 @@
 import { parse } from "node-html-parser";
 import { join } from "path";
-import fs from 'fs';
-import beautify from "js-beautify";
+import fs, { rename } from 'fs';
+import { formatCss, formatJs, renameModules } from "./format";
 
 const base = "https://www.gimkit.com";
 const data = join(__dirname, "../", "data");
@@ -15,11 +15,9 @@ const script = root.querySelector(`script[type="module"]`);
 if(!script) throw new Error("Failed to find index script");
 
 // get the module registry
-const url = script.getAttribute("src");
-const indexRes = await fetch(base + url);
+const indexUrl = script.getAttribute("src");
+const indexRes = await fetch(base + indexUrl);
 const indexFile = await indexRes.text();
-
-Bun.file(join(data, "js", "index.js")).write(beautify.js(indexFile));
 
 const registryRegex = /register\(JSON.parse\('(.*?)'/g;
 const registryJson = registryRegex.exec(indexFile)?.[1];
@@ -36,6 +34,9 @@ for(const ext of extensions) {
     if(fs.existsSync(folder)) fs.rmSync(folder, { recursive: true });
     fs.mkdirSync(folder);
 }
+
+await Bun.file(join(data, "js", "index.js")).write(formatJs(indexFile));
+console.log(`Downloaded index.js from ${indexUrl}`);
 
 let groups: { name: string, ext: string, urls: { index: number, url: string }[] }[] = [];
 
@@ -67,9 +68,6 @@ for(const group of groups) {
         const res = await fetch(base + "/" + url);
         let text = await res.text();
 
-        if(group.ext === "js") text = beautify.js(text);
-        else text = beautify.css(text);
-
         let name: string;
         if(group.urls.length === 1) {
             name = `${group.name}.${group.ext}`;
@@ -77,7 +75,12 @@ for(const group of groups) {
             name = `${group.name}.${i + 1}.${group.ext}`;
         }
 
+        if(group.ext === "js") text = formatJs(text);
+        else text = formatCss(text);
+
         await Bun.file(join(data, group.ext, name)).write(text);
         console.log(`Downloaded ${name} from ${url}`);
     }
 }
+
+renameModules();

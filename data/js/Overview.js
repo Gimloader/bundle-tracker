@@ -1,73 +1,85 @@
-var e = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-e.register("6LTxW", (function(t, a) {
-    var l, r, n, o, i;
-    l = t.exports, Object.defineProperty(l, "__esModule", {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('ASSvy', function(t, a) {
+    var b, c, d, e, f;
+    b = t.exports, Object.defineProperty(b, '__esModule', {
         value: !0,
         configurable: !0
-    }), r = t.exports, n = "default", o = function() {
-        return j
-    }, Object.defineProperty(r, n, {
-        get: o,
-        set: i,
+    }), c = t.exports, d = 'default', e = function() {
+        return u;
+    }, Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
-    var s = e("hxEiv");
-    e("fywoC");
-    var d = e("2FDaO"),
-        f = e("4ifJF"),
-        u = e("93yIm"),
-        p = e("fC6cp"),
-        y = e("4y75y"),
-        c = e("69SUA"),
-        g = e("alREA"),
-        h = e("kyvf1"),
-        x = e("b1oE9"),
-        b = e("8UJqa");
-    let m, v, w = e => e;
-    var j = e => (0, s.jsxs)(C, {
-        children: [(0, s.jsx)(T, {}), (0, s.jsx)(y.default.Title, {
-            style: {
-                fontFamily: c.Fonts.FugazOne,
-                textTransform: "uppercase"
-            },
-            level: 1,
-            children: "Publish"
-        }), (0, s.jsxs)(y.default.Text, {
-            style: {
-                marginTop: 10
-            },
-            children: ["Share your map with the world! Publish your map to have it appear on our", " ", (0, s.jsx)(h.default, {
-                to: x.CREATIVE_DISCOVERY,
-                target: "_blank",
+    var g = a('8kSQZ');
+    a('uPP4W');
+    var h = a('h99Nu'),
+        i = a('YimJ0'),
+        j = a('IsmrL'),
+        k = a('ExtIT'),
+        l = a('UzdPH'),
+        m = a('gSUVO'),
+        n = a('JJQ0+'),
+        o = a('iYEuk12'),
+        p = a('q721a'),
+        q = a('S/jX4');
+    let r, s, t = a => a;
+    var u = a => (0, g.jsxs)(v, {
+        children: [
+            (0, g.jsx)(w, {}),
+            (0, g.jsx)(l.default.Title, {
                 style: {
-                    color: b.default.Yellow,
-                    textDecoration: "underline"
+                    fontFamily: m.Fonts.FugazOne,
+                    textTransform: 'uppercase'
                 },
-                children: "Creative Discovery"
-            }), " ", "page, where anybody can find and play your map!"]
-        }), (0, s.jsx)(p.default, {}), (0, s.jsx)(u.default, {
-            size: "large",
-            block: !0,
-            type: "primary",
-            style: {
-                height: 55
-            },
-            onClick: e.next,
-            children: "Continue"
-        })]
+                level: 1,
+                children: 'Publish'
+            }),
+            (0, g.jsxs)(l.default.Text, {
+                style: {
+                    marginTop: 10
+                },
+                children: [
+                    'Share your map with the world! Publish your map to have it appear on our',
+                    ' ',
+                    (0, g.jsx)(o.default, {
+                        to: p.CREATIVE_DISCOVERY,
+                        target: '_blank',
+                        style: {
+                            color: q.default.Yellow,
+                            textDecoration: 'underline'
+                        },
+                        children: 'Creative Discovery'
+                    }),
+                    ' ',
+                    'page, where anybody can find and play your map!'
+                ]
+            }),
+            (0, g.jsx)(k.default, {}),
+            (0, g.jsx)(j.default, {
+                size: 'large',
+                block: !0,
+                type: 'primary',
+                style: {
+                    height: 55
+                },
+                onClick: a.next,
+                children: 'Continue'
+            })
+        ]
     });
-    const C = (0, d.default)(f.CenteredColumn).attrs({
-            className: "maxWidth"
-        })(m || (m = w`
+    const v = (0, h.default)(i.CenteredColumn).attrs({
+            className: 'maxWidth'
+        })(r || (r = t`
   text-align: center;
 `)),
-        T = d.default.img.attrs({
-            src: (0, g.default)("publishing/megaphone.svg")
-        })(v || (v = w`
+        w = h.default.img.attrs({
+            src: (0, n.default)('publishing/megaphone.svg')
+        })(s || (s = t`
   height: 85px;
   margin-bottom: 17px;
   filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.5));
   transform: rotate(-8deg);
-`))
-}));
+`));
+});

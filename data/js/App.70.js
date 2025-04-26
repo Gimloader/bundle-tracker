@@ -1,233 +1,266 @@
-var t = "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {};
-t.parcelRequire388b.register("lJnts", (function(e, n) {
-    e.exports,
-        function(e) {
-            function n(t, e) {
-                return e.forEach((function(e) {
-                    e && "string" != typeof e && !Array.isArray(e) && Object.keys(e).forEach((function(n) {
-                        if ("default" !== n && !(n in t)) {
-                            var o = Object.getOwnPropertyDescriptor(e, n);
-                            Object.defineProperty(t, n, o.get ? o : {
+var a = 'undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {};
+a.parcelRequire388b.register('lJnts', function(g, b) {
+    g.exports,
+        function(g) {
+            function b(a, g) {
+                return g.forEach(function(g) {
+                    g && 'string' != typeof g && !Array.isArray(g) && Object.keys(g).forEach(function(b) {
+                        if ('default' !== b && !(b in a)) {
+                            var c = Object.getOwnPropertyDescriptor(g, b);
+                            Object.defineProperty(a, b, c.get ? c : {
                                 enumerable: !0,
                                 get: function() {
-                                    return e[n]
+                                    return g[b];
                                 }
-                            })
+                            });
                         }
-                    }))
-                })), Object.freeze(t)
+                    });
+                }), Object.freeze(a);
             }
-            ArrayBuffer.isView || (ArrayBuffer.isView = function(t) {
-                return null !== t && "object" == typeof t && t.buffer instanceof ArrayBuffer
-            }), "undefined" == typeof globalThis && "undefined" != typeof window && (window.globalThis = window);
-            var o = function(t, e) {
-                return o = Object.setPrototypeOf || {
+            ArrayBuffer.isView || (ArrayBuffer.isView = function(a) {
+                return null !== a && 'object' == typeof a && a.buffer instanceof ArrayBuffer;
+            }), 'undefined' == typeof globalThis && 'undefined' != typeof window && (window.globalThis = window);
+            var c = function(a, g) {
+                return c = Object.setPrototypeOf || {
                     __proto__: []
                 }
-                instanceof Array && function(t, e) {
-                    t.__proto__ = e
-                } || function(t, e) {
-                    for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n])
-                }, o(t, e)
+                instanceof Array && function(a, g) {
+                    a.__proto__ = g;
+                } || function(a, g) {
+                    for (var d in g)
+                        Object.prototype.hasOwnProperty.call(g, d) && (a[d] = g[d]);
+                }, c(a, g);
             };
 
-            function i(t, e) {
-                if ("function" != typeof e && null !== e) throw new TypeError("Class extends value " + String(e) + " is not a constructor or null");
+            function d(a, g) {
+                if ('function' != typeof g && null !== g)
+                    throw new TypeError('Class extends value ' + String(g) + ' is not a constructor or null');
 
-                function n() {
-                    this.constructor = t
+                function e() {
+                    this.constructor = a;
                 }
-                o(t, e), t.prototype = null === e ? Object.create(e) : (n.prototype = e.prototype, new n)
+                c(a, g), a.prototype = null === g ? Object.create(g) : (e.prototype = g.prototype, new e());
             }
-            var r, s = function() {
-                return s = Object.assign || function(t) {
-                    for (var e, n = 1, o = arguments.length; n < o; n++)
-                        for (var i in e = arguments[n]) Object.prototype.hasOwnProperty.call(e, i) && (t[i] = e[i]);
-                    return t
-                }, s.apply(this, arguments)
+            var e, f = function() {
+                return f = Object.assign || function(a) {
+                    for (var g, h = 1, i = arguments.length; h < i; h++)
+                        for (var j in g = arguments[h])
+                            Object.prototype.hasOwnProperty.call(g, j) && (a[j] = g[j]);
+                    return a;
+                }, f.apply(this, arguments);
             };
 
-            function a(t, e, n, o) {
-                function i(t) {
-                    return t instanceof n ? t : new n((function(e) {
-                        e(t)
-                    }))
+            function g(a, l, b, c) {
+                function h(a) {
+                    return a instanceof b ? a : new b(function(l) {
+                        l(a);
+                    });
                 }
-                return new(n || (n = Promise))((function(n, r) {
-                    function s(t) {
+                return new(b || (b = Promise))(function(b, e) {
+                    function i(a) {
                         try {
-                            c(o.next(t))
-                        } catch (t) {
-                            r(t)
+                            k(c.next(a));
+                        } catch (a) {
+                            e(a);
                         }
                     }
 
-                    function a(t) {
+                    function j(a) {
                         try {
-                            c(o.throw(t))
-                        } catch (t) {
-                            r(t)
+                            k(c.throw(a));
+                        } catch (a) {
+                            e(a);
                         }
                     }
 
-                    function c(t) {
-                        t.done ? n(t.value) : i(t.value).then(s, a)
+                    function k(a) {
+                        a.done ? b(a.value) : h(a.value).then(i, j);
                     }
-                    c((o = o.apply(t, e || [])).next())
-                }))
+                    k((c = c.apply(a, l || [])).next());
+                });
             }
 
-            function c(t, e) {
-                var n, o, i, r, s = {
+            function h(a, l) {
+                var i, j, k, l, m = {
                     label: 0,
                     sent: function() {
-                        if (1 & i[0]) throw i[1];
-                        return i[1]
+                        if (1 & k[0])
+                            throw k[1];
+                        return k[1];
                     },
                     trys: [],
                     ops: []
                 };
-                return r = {
-                    next: a(0),
-                    throw: a(1),
-                    return: a(2)
-                }, "function" == typeof Symbol && (r[Symbol.iterator] = function() {
-                    return this
-                }), r;
+                return l = {
+                    next: g(0),
+                    throw: g(1),
+                    return: g(2)
+                }, 'function' == typeof Symbol && (l[Symbol.iterator] = function() {
+                    return this;
+                }), l;
 
-                function a(t) {
-                    return function(e) {
-                        return c([t, e])
-                    }
+                function n(a) {
+                    return function(l) {
+                        return h([
+                            a,
+                            l
+                        ]);
+                    };
                 }
 
-                function c(a) {
-                    if (n) throw new TypeError("Generator is already executing.");
-                    for (; r && (r = 0, a[0] && (s = 0)), s;) try {
-                        if (n = 1, o && (i = 2 & a[0] ? o.return : a[0] ? o.throw || ((i = o.return) && i.call(o), 0) : o.next) && !(i = i.call(o, a[1])).done) return i;
-                        switch (o = 0, i && (a = [2 & a[0], i.value]), a[0]) {
-                            case 0:
-                            case 1:
-                                i = a;
-                                break;
-                            case 4:
-                                return s.label++, {
-                                    value: a[1],
-                                    done: !1
-                                };
-                            case 5:
-                                s.label++, o = a[1], a = [0];
-                                continue;
-                            case 7:
-                                a = s.ops.pop(), s.trys.pop();
-                                continue;
-                            default:
-                                if (!((i = (i = s.trys).length > 0 && i[i.length - 1]) || 6 !== a[0] && 2 !== a[0])) {
-                                    s = 0;
-                                    continue
-                                }
-                                if (3 === a[0] && (!i || a[1] > i[0] && a[1] < i[3])) {
-                                    s.label = a[1];
-                                    break
-                                }
-                                if (6 === a[0] && s.label < i[1]) {
-                                    s.label = i[1], i = a;
-                                    break
-                                }
-                                if (i && s.label < i[2]) {
-                                    s.label = i[2], s.ops.push(a);
-                                    break
-                                }
-                                i[2] && s.ops.pop(), s.trys.pop();
-                                continue
+                function o(n) {
+                    if (i)
+                        throw new TypeError('Generator is already executing.');
+                    for (; l && (l = 0, n[0] && (m = 0)), m;)
+                        try {
+                            if (i = 1, j && (k = 2 & n[0] ? j.return : n[0] ? j.throw || ((k = j.return) && k.call(j), 0) : j.next) && !(k = k.call(j, n[1])).done)
+                                return k;
+                            switch (j = 0, k && (n = [
+                                    2 & n[0],
+                                    k.value
+                                ]), n[0]) {
+                                case 0:
+                                case 1:
+                                    k = n;
+                                    break;
+                                case 4:
+                                    return m.label++, {
+                                        value: n[1],
+                                        done: !1
+                                    };
+                                case 5:
+                                    m.label++, j = n[1], n = [0];
+                                    continue;
+                                case 7:
+                                    n = m.ops.pop(), m.trys.pop();
+                                    continue;
+                                default:
+                                    if (!((k = (k = m.trys).length > 0 && k[k.length - 1]) || 6 !== n[0] && 2 !== n[0])) {
+                                        m = 0;
+                                        continue;
+                                    }
+                                    if (3 === n[0] && (!k || n[1] > k[0] && n[1] < k[3])) {
+                                        m.label = n[1];
+                                        break;
+                                    }
+                                    if (6 === n[0] && m.label < k[1]) {
+                                        m.label = k[1], k = n;
+                                        break;
+                                    }
+                                    if (k && m.label < k[2]) {
+                                        m.label = k[2], m.ops.push(n);
+                                        break;
+                                    }
+                                    k[2] && m.ops.pop(), m.trys.pop();
+                                    continue;
+                            }
+                            n = l.call(a, m);
+                        } catch (a) {
+                            n = [
+                                6,
+                                a
+                            ], j = 0;
+                        } finally {
+                            i = k = 0;
                         }
-                        a = e.call(t, s)
-                    } catch (t) {
-                        a = [6, t], o = 0
-                    } finally {
-                        n = i = 0
-                    }
-                    if (5 & a[0]) throw a[1];
+                    if (5 & n[0])
+                        throw n[1];
                     return {
-                        value: a[0] ? a[1] : void 0,
+                        value: n[0] ? n[1] : void 0,
                         done: !0
-                    }
+                    };
                 }
             }
 
-            function f(t, e, n, o) {
-                if ("a" === n && !o) throw new TypeError("Private accessor was defined without a getter");
-                if ("function" == typeof e ? t !== e || !o : !e.has(t)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
-                return "m" === n ? o : "a" === n ? o.call(t) : o ? o.value : e.get(t)
+            function i(a, l, b, c) {
+                if ('a' === b && !c)
+                    throw new TypeError('Private accessor was defined without a getter');
+                if ('function' == typeof l ? a !== l || !c : !l.has(a))
+                    throw new TypeError('Cannot read private member from an object whose class did not declare it');
+                return 'm' === b ? c : 'a' === b ? c.call(a) : c ? c.value : l.get(a);
             }
 
-            function h(t, e, n, o, i) {
-                if ("m" === o) throw new TypeError("Private method is not writable");
-                if ("a" === o && !i) throw new TypeError("Private accessor was defined without a setter");
-                if ("function" == typeof e ? t !== e || !i : !e.has(t)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
-                return "a" === o ? i.call(t, n) : i ? i.value = n : e.set(t, n), n
-            }! function(t) {
-                t[t.CONSENTED = 4e3] = "CONSENTED", t[t.DEVMODE_RESTART = 4010] = "DEVMODE_RESTART"
-            }(r || (r = {}));
-            var u = function(t) {
-                function e(e, n) {
-                    var o = t.call(this, n) || this;
-                    return o.name = "ServerError", o.code = e, o
+            function j(a, l, b, c, d) {
+                if ('m' === c)
+                    throw new TypeError('Private method is not writable');
+                if ('a' === c && !d)
+                    throw new TypeError('Private accessor was defined without a setter');
+                if ('function' == typeof l ? a !== l || !d : !l.has(a))
+                    throw new TypeError('Cannot write private member to an object whose class did not declare it');
+                return 'a' === c ? d.call(a, b) : d ? d.value = b : l.set(a, b), b;
+            }! function(a) {
+                a[a.CONSENTED = 4000] = 'CONSENTED', a[a.DEVMODE_RESTART = 4010] = 'DEVMODE_RESTART';
+            }(e || (e = {}));
+            var k = function(a) {
+                function l(l, b) {
+                    var m = a.call(this, b) || this;
+                    return m.name = 'ServerError', m.code = l, m;
                 }
-                return i(e, t), e
+                return d(l, a), l;
             }(Error);
 
-            function d(t, e) {
-                if (this._offset = e, t instanceof ArrayBuffer) this._buffer = t, this._view = new DataView(this._buffer);
+            function l(a, q) {
+                if (this._offset = q, a instanceof ArrayBuffer)
+                    this._buffer = a, this._view = new DataView(this._buffer);
                 else {
-                    if (!ArrayBuffer.isView(t)) throw new Error("Invalid argument");
-                    this._buffer = t.buffer, this._view = new DataView(this._buffer, t.byteOffset, t.byteLength)
+                    if (!ArrayBuffer.isView(a))
+                        throw new Error('Invalid argument');
+                    this._buffer = a.buffer, this._view = new DataView(this._buffer, a.byteOffset, a.byteLength);
                 }
             }
 
-            function l(t, e, n) {
-                for (var o = "", i = 0, r = e, s = e + n; r < s; r++) {
-                    var a = t.getUint8(r);
-                    if (0 != (128 & a))
-                        if (192 != (224 & a))
-                            if (224 != (240 & a)) {
-                                if (240 != (248 & a)) throw new Error("Invalid byte " + a.toString(16));
-                                (i = (7 & a) << 18 | (63 & t.getUint8(++r)) << 12 | (63 & t.getUint8(++r)) << 6 | (63 & t.getUint8(++r)) << 0) >= 65536 ? (i -= 65536, o += String.fromCharCode(55296 + (i >>> 10), 56320 + (1023 & i))) : o += String.fromCharCode(i)
-                            } else o += String.fromCharCode((15 & a) << 12 | (63 & t.getUint8(++r)) << 6 | (63 & t.getUint8(++r)) << 0);
-                    else o += String.fromCharCode((31 & a) << 6 | 63 & t.getUint8(++r));
-                    else o += String.fromCharCode(a)
+            function m(a, q, b) {
+                for (var n = '', o = 0, p = q, r = q + b; p < r; p++) {
+                    var s = a.getUint8(p);
+                    if (0 != (128 & s))
+                        if (192 != (224 & s))
+                            if (224 != (240 & s)) {
+                                if (240 != (248 & s))
+                                    throw new Error('Invalid byte ' + s.toString(16));
+                                (o = (7 & s) << 18 | (63 & a.getUint8(++p)) << 12 | (63 & a.getUint8(++p)) << 6 | (63 & a.getUint8(++p)) << 0) >= 65536 ? (o -= 65536, n += String.fromCharCode(55296 + (o >>> 10), 56320 + (1023 & o))) : n += String.fromCharCode(o);
+                            } else
+                                n += String.fromCharCode((15 & s) << 12 | (63 & a.getUint8(++p)) << 6 | (63 & a.getUint8(++p)) << 0);
+                    else
+                        n += String.fromCharCode((31 & s) << 6 | 63 & a.getUint8(++p));
+                    else
+                        n += String.fromCharCode(s);
                 }
-                return o
+                return n;
             }
 
-            function p(t, e) {
-                void 0 === e && (e = 0);
-                var n = new d(t, e),
-                    o = n._parse();
-                if (n._offset !== t.byteLength) throw new Error(t.byteLength - n._offset + " trailing bytes");
-                return o
+            function n(a, o) {
+                void 0 === o && (o = 0);
+                var o = new l(a, o),
+                    p = o._parse();
+                if (o._offset !== a.byteLength)
+                    throw new Error(a.byteLength - o._offset + ' trailing bytes');
+                return p;
             }
-            d.prototype._array = function(t) {
-                for (var e = new Array(t), n = 0; n < t; n++) e[n] = this._parse();
-                return e
-            }, d.prototype._map = function(t) {
-                for (var e = {}, n = 0; n < t; n++) e[this._parse()] = this._parse();
-                return e
-            }, d.prototype._str = function(t) {
-                var e = l(this._view, this._offset, t);
-                return this._offset += t, e
-            }, d.prototype._bin = function(t) {
-                var e = this._buffer.slice(this._offset, this._offset + t);
-                return this._offset += t, e
-            }, d.prototype._parse = function() {
-                var t, e = this._view.getUint8(this._offset++),
-                    n = 0,
-                    o = 0,
-                    i = 0,
-                    r = 0;
-                if (e < 192) return e < 128 ? e : e < 144 ? this._map(15 & e) : e < 160 ? this._array(15 & e) : this._str(31 & e);
-                if (e > 223) return -1 * (255 - e + 1);
-                switch (e) {
+            l.prototype._array = function(a) {
+                for (var o = new Array(a), p = 0; p < a; p++)
+                    o[p] = this._parse();
+                return o;
+            }, l.prototype._map = function(a) {
+                for (var o = {}, p = 0; p < a; p++)
+                    o[this._parse()] = this._parse();
+                return o;
+            }, l.prototype._str = function(a) {
+                var o = m(this._view, this._offset, a);
+                return this._offset += a, o;
+            }, l.prototype._bin = function(a) {
+                var o = this._buffer.slice(this._offset, this._offset + a);
+                return this._offset += a, o;
+            }, l.prototype._parse = function() {
+                var o, p = this._view.getUint8(this._offset++),
+                    q = 0,
+                    r = 0,
+                    s = 0,
+                    t = 0;
+                if (p < 192)
+                    return p < 128 ? p : p < 144 ? this._map(15 & p) : p < 160 ? this._array(15 & p) : this._str(31 & p);
+                if (p > 223)
+                    return -1 * (255 - p + 1);
+                switch (p) {
                     case 192:
                         return null;
                     case 194:
@@ -235,1374 +268,1477 @@ t.parcelRequire388b.register("lJnts", (function(e, n) {
                     case 195:
                         return !0;
                     case 196:
-                        return n = this._view.getUint8(this._offset), this._offset += 1, this._bin(n);
+                        return q = this._view.getUint8(this._offset), this._offset += 1, this._bin(q);
                     case 197:
-                        return n = this._view.getUint16(this._offset), this._offset += 2, this._bin(n);
+                        return q = this._view.getUint16(this._offset), this._offset += 2, this._bin(q);
                     case 198:
-                        return n = this._view.getUint32(this._offset), this._offset += 4, this._bin(n);
+                        return q = this._view.getUint32(this._offset), this._offset += 4, this._bin(q);
                     case 199:
-                        if (n = this._view.getUint8(this._offset), o = this._view.getInt8(this._offset + 1), this._offset += 2, -1 === o) {
-                            var s = this._view.getUint32(this._offset);
-                            return i = this._view.getInt32(this._offset + 4), r = this._view.getUint32(this._offset + 8), this._offset += 12, new Date(1e3 * (4294967296 * i + r) + s / 1e6)
+                        if (q = this._view.getUint8(this._offset), r = this._view.getInt8(this._offset + 1), this._offset += 2, -1 === r) {
+                            var u = this._view.getUint32(this._offset);
+                            return s = this._view.getInt32(this._offset + 4), t = this._view.getUint32(this._offset + 8), this._offset += 12, new Date(1000 * (4294967296 * s + t) + u / 1000000);
                         }
-                        return [o, this._bin(n)];
+                        return [
+                            r,
+                            this._bin(q)
+                        ];
                     case 200:
-                        return n = this._view.getUint16(this._offset), o = this._view.getInt8(this._offset + 2), this._offset += 3, [o, this._bin(n)];
+                        return q = this._view.getUint16(this._offset), r = this._view.getInt8(this._offset + 2), this._offset += 3, [
+                            r,
+                            this._bin(q)
+                        ];
                     case 201:
-                        return n = this._view.getUint32(this._offset), o = this._view.getInt8(this._offset + 4), this._offset += 5, [o, this._bin(n)];
+                        return q = this._view.getUint32(this._offset), r = this._view.getInt8(this._offset + 4), this._offset += 5, [
+                            r,
+                            this._bin(q)
+                        ];
                     case 202:
-                        return t = this._view.getFloat32(this._offset), this._offset += 4, t;
+                        return o = this._view.getFloat32(this._offset), this._offset += 4, o;
                     case 203:
-                        return t = this._view.getFloat64(this._offset), this._offset += 8, t;
+                        return o = this._view.getFloat64(this._offset), this._offset += 8, o;
                     case 204:
-                        return t = this._view.getUint8(this._offset), this._offset += 1, t;
+                        return o = this._view.getUint8(this._offset), this._offset += 1, o;
                     case 205:
-                        return t = this._view.getUint16(this._offset), this._offset += 2, t;
+                        return o = this._view.getUint16(this._offset), this._offset += 2, o;
                     case 206:
-                        return t = this._view.getUint32(this._offset), this._offset += 4, t;
+                        return o = this._view.getUint32(this._offset), this._offset += 4, o;
                     case 207:
-                        return i = this._view.getUint32(this._offset) * Math.pow(2, 32), r = this._view.getUint32(this._offset + 4), this._offset += 8, i + r;
+                        return s = this._view.getUint32(this._offset) * Math.pow(2, 32), t = this._view.getUint32(this._offset + 4), this._offset += 8, s + t;
                     case 208:
-                        return t = this._view.getInt8(this._offset), this._offset += 1, t;
+                        return o = this._view.getInt8(this._offset), this._offset += 1, o;
                     case 209:
-                        return t = this._view.getInt16(this._offset), this._offset += 2, t;
+                        return o = this._view.getInt16(this._offset), this._offset += 2, o;
                     case 210:
-                        return t = this._view.getInt32(this._offset), this._offset += 4, t;
+                        return o = this._view.getInt32(this._offset), this._offset += 4, o;
                     case 211:
-                        return i = this._view.getInt32(this._offset) * Math.pow(2, 32), r = this._view.getUint32(this._offset + 4), this._offset += 8, i + r;
+                        return s = this._view.getInt32(this._offset) * Math.pow(2, 32), t = this._view.getUint32(this._offset + 4), this._offset += 8, s + t;
                     case 212:
-                        return o = this._view.getInt8(this._offset), this._offset += 1, 0 === o ? void(this._offset += 1) : [o, this._bin(1)];
+                        return r = this._view.getInt8(this._offset), this._offset += 1, 0 === r ? void(this._offset += 1) : [
+                            r,
+                            this._bin(1)
+                        ];
                     case 213:
-                        return o = this._view.getInt8(this._offset), this._offset += 1, [o, this._bin(2)];
+                        return r = this._view.getInt8(this._offset), this._offset += 1, [
+                            r,
+                            this._bin(2)
+                        ];
                     case 214:
-                        return o = this._view.getInt8(this._offset), this._offset += 1, -1 === o ? (t = this._view.getUint32(this._offset), this._offset += 4, new Date(1e3 * t)) : [o, this._bin(4)];
+                        return r = this._view.getInt8(this._offset), this._offset += 1, -1 === r ? (o = this._view.getUint32(this._offset), this._offset += 4, new Date(1000 * o)) : [
+                            r,
+                            this._bin(4)
+                        ];
                     case 215:
-                        return o = this._view.getInt8(this._offset), this._offset += 1, 0 === o ? (i = this._view.getInt32(this._offset) * Math.pow(2, 32), r = this._view.getUint32(this._offset + 4), this._offset += 8, new Date(i + r)) : -1 === o ? (i = this._view.getUint32(this._offset), r = this._view.getUint32(this._offset + 4), this._offset += 8, new Date(1e3 * (4294967296 * (3 & i) + r) + (i >>> 2) / 1e6)) : [o, this._bin(8)];
+                        return r = this._view.getInt8(this._offset), this._offset += 1, 0 === r ? (s = this._view.getInt32(this._offset) * Math.pow(2, 32), t = this._view.getUint32(this._offset + 4), this._offset += 8, new Date(s + t)) : -1 === r ? (s = this._view.getUint32(this._offset), t = this._view.getUint32(this._offset + 4), this._offset += 8, new Date(1000 * (4294967296 * (3 & s) + t) + (s >>> 2) / 1000000)) : [
+                            r,
+                            this._bin(8)
+                        ];
                     case 216:
-                        return o = this._view.getInt8(this._offset), this._offset += 1, [o, this._bin(16)];
+                        return r = this._view.getInt8(this._offset), this._offset += 1, [
+                            r,
+                            this._bin(16)
+                        ];
                     case 217:
-                        return n = this._view.getUint8(this._offset), this._offset += 1, this._str(n);
+                        return q = this._view.getUint8(this._offset), this._offset += 1, this._str(q);
                     case 218:
-                        return n = this._view.getUint16(this._offset), this._offset += 2, this._str(n);
+                        return q = this._view.getUint16(this._offset), this._offset += 2, this._str(q);
                     case 219:
-                        return n = this._view.getUint32(this._offset), this._offset += 4, this._str(n);
+                        return q = this._view.getUint32(this._offset), this._offset += 4, this._str(q);
                     case 220:
-                        return n = this._view.getUint16(this._offset), this._offset += 2, this._array(n);
+                        return q = this._view.getUint16(this._offset), this._offset += 2, this._array(q);
                     case 221:
-                        return n = this._view.getUint32(this._offset), this._offset += 4, this._array(n);
+                        return q = this._view.getUint32(this._offset), this._offset += 4, this._array(q);
                     case 222:
-                        return n = this._view.getUint16(this._offset), this._offset += 2, this._map(n);
+                        return q = this._view.getUint16(this._offset), this._offset += 2, this._map(q);
                     case 223:
-                        return n = this._view.getUint32(this._offset), this._offset += 4, this._map(n)
+                        return q = this._view.getUint32(this._offset), this._offset += 4, this._map(q);
                 }
-                throw new Error("Could not parse")
+                throw new Error('Could not parse');
             };
-            var v = 4294967295,
-                y = 17179869183;
+            var o = 4294967295,
+                p = 17179869183;
 
-            function g(t, e, n) {
-                for (var o = 0, i = 0, r = n.length; i < r; i++)(o = n.charCodeAt(i)) < 128 ? t.setUint8(e++, o) : o < 2048 ? (t.setUint8(e++, 192 | o >> 6), t.setUint8(e++, 128 | 63 & o)) : o < 55296 || o >= 57344 ? (t.setUint8(e++, 224 | o >> 12), t.setUint8(e++, 128 | o >> 6 & 63), t.setUint8(e++, 128 | 63 & o)) : (i++, o = 65536 + ((1023 & o) << 10 | 1023 & n.charCodeAt(i)), t.setUint8(e++, 240 | o >> 18), t.setUint8(e++, 128 | o >> 12 & 63), t.setUint8(e++, 128 | o >> 6 & 63), t.setUint8(e++, 128 | 63 & o))
+            function q(a, s, b) {
+                for (var r = 0, s = 0, t = b.length; s < t; s++)
+                    (r = b.charCodeAt(s)) < 128 ? a.setUint8(s++, r) : r < 2048 ? (a.setUint8(s++, 192 | r >> 6), a.setUint8(s++, 128 | 63 & r)) : r < 55296 || r >= 57344 ? (a.setUint8(s++, 224 | r >> 12), a.setUint8(s++, 128 | r >> 6 & 63), a.setUint8(s++, 128 | 63 & r)) : (s++, r = 65536 + ((1023 & r) << 10 | 1023 & b.charCodeAt(s)), a.setUint8(s++, 240 | r >> 18), a.setUint8(s++, 128 | r >> 12 & 63), a.setUint8(s++, 128 | r >> 6 & 63), a.setUint8(s++, 128 | 63 & r));
             }
 
-            function m(t) {
-                for (var e = 0, n = 0, o = 0, i = t.length; o < i; o++)(e = t.charCodeAt(o)) < 128 ? n += 1 : e < 2048 ? n += 2 : e < 55296 || e >= 57344 ? n += 3 : (o++, n += 4);
-                return n
+            function r(a) {
+                for (var s = 0, t = 0, u = 0, v = a.length; u < v; u++)
+                    (s = a.charCodeAt(u)) < 128 ? t += 1 : s < 2048 ? t += 2 : s < 55296 || s >= 57344 ? t += 3 : (u++, t += 4);
+                return t;
             }
 
-            function w(t, e, n) {
-                var o = typeof n,
-                    i = 0,
-                    r = 0,
-                    s = 0,
-                    a = 0,
-                    c = 0,
-                    f = 0;
-                if ("string" === o) {
-                    if ((c = m(n)) < 32) t.push(160 | c), f = 1;
-                    else if (c < 256) t.push(217, c), f = 2;
-                    else if (c < 65536) t.push(218, c >> 8, c), f = 3;
+            function s(a, u, b) {
+                var t = typeof b,
+                    u = 0,
+                    v = 0,
+                    w = 0,
+                    x = 0,
+                    y = 0,
+                    z = 0;
+                if ('string' === t) {
+                    if ((y = r(b)) < 32)
+                        a.push(160 | y), z = 1;
+                    else if (y < 256)
+                        a.push(217, y), z = 2;
+                    else if (y < 65536)
+                        a.push(218, y >> 8, y), z = 3;
                     else {
-                        if (!(c < 4294967296)) throw new Error("String too long");
-                        t.push(219, c >> 24, c >> 16, c >> 8, c), f = 5
+                        if (!(y < 4294967296))
+                            throw new Error('String too long');
+                        a.push(219, y >> 24, y >> 16, y >> 8, y), z = 5;
                     }
-                    return e.push({
-                        _str: n,
-                        _length: c,
-                        _offset: t.length
-                    }), f + c
+                    return u.push({
+                        _str: b,
+                        _length: y,
+                        _offset: a.length
+                    }), z + y;
                 }
-                if ("number" === o) return Math.floor(n) === n && isFinite(n) ? n >= 0 ? n < 128 ? (t.push(n), 1) : n < 256 ? (t.push(204, n), 2) : n < 65536 ? (t.push(205, n >> 8, n), 3) : n < 4294967296 ? (t.push(206, n >> 24, n >> 16, n >> 8, n), 5) : (s = n / Math.pow(2, 32) >> 0, a = n >>> 0, t.push(207, s >> 24, s >> 16, s >> 8, s, a >> 24, a >> 16, a >> 8, a), 9) : n >= -32 ? (t.push(n), 1) : n >= -128 ? (t.push(208, n), 2) : n >= -32768 ? (t.push(209, n >> 8, n), 3) : n >= -2147483648 ? (t.push(210, n >> 24, n >> 16, n >> 8, n), 5) : (s = Math.floor(n / Math.pow(2, 32)), a = n >>> 0, t.push(211, s >> 24, s >> 16, s >> 8, s, a >> 24, a >> 16, a >> 8, a), 9) : (t.push(203), e.push({
-                    _float: n,
-                    _length: 8,
-                    _offset: t.length
-                }), 9);
-                if ("object" === o) {
-                    if (null === n) return t.push(192), 1;
-                    if (Array.isArray(n)) {
-                        if ((c = n.length) < 16) t.push(144 | c), f = 1;
-                        else if (c < 65536) t.push(220, c >> 8, c), f = 3;
+                if ('number' === t)
+                    return Math.floor(b) === b && isFinite(b) ? b >= 0 ? b < 128 ? (a.push(b), 1) : b < 256 ? (a.push(204, b), 2) : b < 65536 ? (a.push(205, b >> 8, b), 3) : b < 4294967296 ? (a.push(206, b >> 24, b >> 16, b >> 8, b), 5) : (w = b / Math.pow(2, 32) >> 0, x = b >>> 0, a.push(207, w >> 24, w >> 16, w >> 8, w, x >> 24, x >> 16, x >> 8, x), 9) : b >= -32 ? (a.push(b), 1) : b >= -128 ? (a.push(208, b), 2) : b >= -32768 ? (a.push(209, b >> 8, b), 3) : b >= -2147483648 ? (a.push(210, b >> 24, b >> 16, b >> 8, b), 5) : (w = Math.floor(b / Math.pow(2, 32)), x = b >>> 0, a.push(211, w >> 24, w >> 16, w >> 8, w, x >> 24, x >> 16, x >> 8, x), 9) : (a.push(203), u.push({
+                        _float: b,
+                        _length: 8,
+                        _offset: a.length
+                    }), 9);
+                if ('object' === t) {
+                    if (null === b)
+                        return a.push(192), 1;
+                    if (Array.isArray(b)) {
+                        if ((y = b.length) < 16)
+                            a.push(144 | y), z = 1;
+                        else if (y < 65536)
+                            a.push(220, y >> 8, y), z = 3;
                         else {
-                            if (!(c < 4294967296)) throw new Error("Array too large");
-                            t.push(221, c >> 24, c >> 16, c >> 8, c), f = 5
+                            if (!(y < 4294967296))
+                                throw new Error('Array too large');
+                            a.push(221, y >> 24, y >> 16, y >> 8, y), z = 5;
                         }
-                        for (i = 0; i < c; i++) f += w(t, e, n[i]);
-                        return f
+                        for (u = 0; u < y; u++)
+                            z += s(a, u, b[u]);
+                        return z;
                     }
-                    if (n instanceof Date) {
-                        var h = n.getTime(),
-                            u = Math.floor(h / 1e3),
-                            d = 1e6 * (h - 1e3 * u);
-                        return u >= 0 && d >= 0 && u <= y ? 0 === d && u <= v ? (t.push(214, 255, u >> 24, u >> 16, u >> 8, u), 6) : (s = u / 4294967296, a = 4294967295 & u, t.push(215, 255, d >> 22, d >> 14, d >> 6, s, a >> 24, a >> 16, a >> 8, a), 10) : (s = Math.floor(u / 4294967296), a = u >>> 0, t.push(199, 12, 255, d >> 24, d >> 16, d >> 8, d, s >> 24, s >> 16, s >> 8, s, a >> 24, a >> 16, a >> 8, a), 15)
+                    if (b instanceof Date) {
+                        var A = b.getTime(),
+                            B = Math.floor(A / 1000),
+                            C = 1000000 * (A - 1000 * B);
+                        return B >= 0 && C >= 0 && B <= p ? 0 === C && B <= o ? (a.push(214, 255, B >> 24, B >> 16, B >> 8, B), 6) : (w = B / 4294967296, x = 4294967295 & B, a.push(215, 255, C >> 22, C >> 14, C >> 6, w, x >> 24, x >> 16, x >> 8, x), 10) : (w = Math.floor(B / 4294967296), x = B >>> 0, a.push(199, 12, 255, C >> 24, C >> 16, C >> 8, C, w >> 24, w >> 16, w >> 8, w, x >> 24, x >> 16, x >> 8, x), 15);
                     }
-                    if (n instanceof ArrayBuffer) {
-                        if ((c = n.byteLength) < 256) t.push(196, c), f = 2;
-                        else if (c < 65536) t.push(197, c >> 8, c), f = 3;
+                    if (b instanceof ArrayBuffer) {
+                        if ((y = b.byteLength) < 256)
+                            a.push(196, y), z = 2;
+                        else if (y < 65536)
+                            a.push(197, y >> 8, y), z = 3;
                         else {
-                            if (!(c < 4294967296)) throw new Error("Buffer too large");
-                            t.push(198, c >> 24, c >> 16, c >> 8, c), f = 5
+                            if (!(y < 4294967296))
+                                throw new Error('Buffer too large');
+                            a.push(198, y >> 24, y >> 16, y >> 8, y), z = 5;
                         }
-                        return e.push({
-                            _bin: n,
-                            _length: c,
-                            _offset: t.length
-                        }), f + c
+                        return u.push({
+                            _bin: b,
+                            _length: y,
+                            _offset: a.length
+                        }), z + y;
                     }
-                    if ("function" == typeof n.toJSON) return w(t, e, n.toJSON());
-                    var l = [],
-                        p = "",
-                        g = Object.keys(n);
-                    for (i = 0, r = g.length; i < r; i++) void 0 !== n[p = g[i]] && "function" != typeof n[p] && l.push(p);
-                    if ((c = l.length) < 16) t.push(128 | c), f = 1;
-                    else if (c < 65536) t.push(222, c >> 8, c), f = 3;
+                    if ('function' == typeof b.toJSON)
+                        return s(a, u, b.toJSON());
+                    var A = [],
+                        B = '',
+                        C = Object.keys(b);
+                    for (u = 0, v = C.length; u < v; u++)
+                        void 0 !== b[B = C[u]] && 'function' != typeof b[B] && A.push(B);
+                    if ((y = A.length) < 16)
+                        a.push(128 | y), z = 1;
+                    else if (y < 65536)
+                        a.push(222, y >> 8, y), z = 3;
                     else {
-                        if (!(c < 4294967296)) throw new Error("Object too large");
-                        t.push(223, c >> 24, c >> 16, c >> 8, c), f = 5
+                        if (!(y < 4294967296))
+                            throw new Error('Object too large');
+                        a.push(223, y >> 24, y >> 16, y >> 8, y), z = 5;
                     }
-                    for (i = 0; i < c; i++) f += w(t, e, p = l[i]), f += w(t, e, n[p]);
-                    return f
+                    for (u = 0; u < y; u++)
+                        z += s(a, u, B = A[u]), z += s(a, u, b[B]);
+                    return z;
                 }
-                if ("boolean" === o) return t.push(n ? 195 : 194), 1;
-                if ("undefined" === o) return t.push(192), 1;
-                if ("function" == typeof n.toJSON) return w(t, e, n.toJSON());
-                throw new Error("Could not encode")
+                if ('boolean' === t)
+                    return a.push(b ? 195 : 194), 1;
+                if ('undefined' === t)
+                    return a.push(192), 1;
+                if ('function' == typeof b.toJSON)
+                    return s(a, u, b.toJSON());
+                throw new Error('Could not encode');
             }
 
-            function E(t) {
-                var e = [],
-                    n = [],
-                    o = w(e, n, t),
-                    i = new ArrayBuffer(o),
-                    r = new DataView(i),
-                    s = 0,
-                    a = 0,
-                    c = -1;
-                n.length > 0 && (c = n[0]._offset);
-                for (var f, h = 0, u = 0, d = 0, l = e.length; d < l; d++)
-                    if (r.setUint8(a + d, e[d]), d + 1 === c) {
-                        if (h = (f = n[s])._length, u = a + c, f._bin)
-                            for (var p = new Uint8Array(f._bin), v = 0; v < h; v++) r.setUint8(u + v, p[v]);
-                        else f._str ? g(r, u, f._str) : void 0 !== f._float && r.setFloat64(u, f._float);
-                        a += h, n[++s] && (c = n[s]._offset)
-                    } return i
+            function t(a) {
+                var u = [],
+                    v = [],
+                    w = s(u, v, a),
+                    x = new ArrayBuffer(w),
+                    y = new DataView(x),
+                    z = 0,
+                    A = 0,
+                    B = -1;
+                v.length > 0 && (B = v[0]._offset);
+                for (var C, D = 0, E = 0, F = 0, G = u.length; F < G; F++)
+                    if (y.setUint8(A + F, u[F]), F + 1 === B) {
+                        if (D = (C = v[z])._length, E = A + B, C._bin)
+                            for (var H = new Uint8Array(C._bin), I = 0; I < D; I++)
+                                y.setUint8(E + I, H[I]);
+                        else
+                            C._str ? q(y, E, C._str) : void 0 !== C._float && y.setFloat64(E, C._float);
+                        A += D, v[++z] && (B = v[z]._offset);
+                    }
+                return x;
             }
-            var A, _, O = function() {
-                    throw new Error("ws does not work in the browser. Browser clients must use the native WebSocket object")
+            var u, v, w = function() {
+                    throw new Error('ws does not work in the browser. Browser clients must use the native WebSocket object');
                 },
-                $ = globalThis.WebSocket || O,
-                b = function() {
-                    function t(t) {
-                        this.events = t
+                x = globalThis.WebSocket || w,
+                y = function() {
+                    function z(z) {
+                        this.events = z;
                     }
-                    return t.prototype.send = function(t) {
-                        t instanceof ArrayBuffer ? this.ws.send(t) : Array.isArray(t) && this.ws.send(new Uint8Array(t).buffer)
-                    }, t.prototype.connect = function(t) {
-                        this.ws = new $(t, this.protocols), this.ws.binaryType = "arraybuffer", this.ws.onopen = this.events.onopen, this.ws.onmessage = this.events.onmessage, this.ws.onclose = this.events.onclose, this.ws.onerror = this.events.onerror
-                    }, t.prototype.close = function(t, e) {
-                        this.ws.close(t, e)
-                    }, Object.defineProperty(t.prototype, "isOpen", {
+                    return z.prototype.send = function(z) {
+                        z instanceof ArrayBuffer ? this.ws.send(z) : Array.isArray(z) && this.ws.send(new Uint8Array(z).buffer);
+                    }, z.prototype.connect = function(z) {
+                        this.ws = new x(z, this.protocols), this.ws.binaryType = 'arraybuffer', this.ws.onopen = this.events.onopen, this.ws.onmessage = this.events.onmessage, this.ws.onclose = this.events.onclose, this.ws.onerror = this.events.onerror;
+                    }, z.prototype.close = function(z, F) {
+                        this.ws.close(z, F);
+                    }, Object.defineProperty(z.prototype, 'isOpen', {
                         get: function() {
-                            return this.ws.readyState === $.OPEN
+                            return this.ws.readyState === x.OPEN;
                         },
                         enumerable: !1,
                         configurable: !0
-                    }), t
+                    }), z;
                 }(),
-                I = function() {
-                    function t() {
-                        this.events = {}, this.transport = new b(this.events)
+                z = function() {
+                    function A() {
+                        this.events = {}, this.transport = new y(this.events);
                     }
-                    return t.prototype.send = function(t) {
-                        this.transport.send(t)
-                    }, t.prototype.connect = function(t) {
-                        this.transport.connect(t)
-                    }, t.prototype.close = function(t, e) {
-                        this.transport.close(t, e)
-                    }, Object.defineProperty(t.prototype, "isOpen", {
+                    return A.prototype.send = function(A) {
+                        this.transport.send(A);
+                    }, A.prototype.connect = function(A) {
+                        this.transport.connect(A);
+                    }, A.prototype.close = function(A, F) {
+                        this.transport.close(A, F);
+                    }, Object.defineProperty(A.prototype, 'isOpen', {
                         get: function() {
-                            return this.transport.isOpen
+                            return this.transport.isOpen;
                         },
                         enumerable: !1,
                         configurable: !0
-                    }), t
+                    }), A;
                 }();
 
-            function T(t, e) {
-                for (var n = t[e++], o = "", i = 0, r = e, s = e + n; r < s; r++) {
-                    var a = t[r];
-                    if (0 != (128 & a))
-                        if (192 != (224 & a))
-                            if (224 != (240 & a)) {
-                                if (240 != (248 & a)) throw new Error("Invalid byte " + a.toString(16));
-                                (i = (7 & a) << 18 | (63 & t[++r]) << 12 | (63 & t[++r]) << 6 | (63 & t[++r]) << 0) >= 65536 ? (i -= 65536, o += String.fromCharCode(55296 + (i >>> 10), 56320 + (1023 & i))) : o += String.fromCharCode(i)
-                            } else o += String.fromCharCode((15 & a) << 12 | (63 & t[++r]) << 6 | (63 & t[++r]) << 0);
-                    else o += String.fromCharCode((31 & a) << 6 | 63 & t[++r]);
-                    else o += String.fromCharCode(a)
+            function A(a, F) {
+                for (var B = a[F++], C = '', D = 0, E = F, G = F + B; E < G; E++) {
+                    var H = a[E];
+                    if (0 != (128 & H))
+                        if (192 != (224 & H))
+                            if (224 != (240 & H)) {
+                                if (240 != (248 & H))
+                                    throw new Error('Invalid byte ' + H.toString(16));
+                                (D = (7 & H) << 18 | (63 & a[++E]) << 12 | (63 & a[++E]) << 6 | (63 & a[++E]) << 0) >= 65536 ? (D -= 65536, C += String.fromCharCode(55296 + (D >>> 10), 56320 + (1023 & D))) : C += String.fromCharCode(D);
+                            } else
+                                C += String.fromCharCode((15 & H) << 12 | (63 & a[++E]) << 6 | (63 & a[++E]) << 0);
+                    else
+                        C += String.fromCharCode((31 & H) << 6 | 63 & a[++E]);
+                    else
+                        C += String.fromCharCode(H);
                 }
-                return o
+                return C;
             }
 
-            function x(t) {
-                void 0 === t && (t = "");
-                for (var e = 0, n = 0, o = 0, i = t.length; o < i; o++)(e = t.charCodeAt(o)) < 128 ? n += 1 : e < 2048 ? n += 2 : e < 55296 || e >= 57344 ? n += 3 : (o++, n += 4);
-                return n + 1
+            function B(a) {
+                void 0 === a && (a = '');
+                for (var C = 0, D = 0, E = 0, F = a.length; E < F; E++)
+                    (C = a.charCodeAt(E)) < 128 ? D += 1 : C < 2048 ? D += 2 : C < 55296 || C >= 57344 ? D += 3 : (E++, D += 4);
+                return D + 1;
             }
-            e.Protocol = void 0, (_ = e.Protocol || (e.Protocol = {}))[_.HANDSHAKE = 9] = "HANDSHAKE", _[_.JOIN_ROOM = 10] = "JOIN_ROOM", _[_.ERROR = 11] = "ERROR", _[_.LEAVE_ROOM = 12] = "LEAVE_ROOM", _[_.ROOM_DATA = 13] = "ROOM_DATA", _[_.ROOM_STATE = 14] = "ROOM_STATE", _[_.ROOM_STATE_PATCH = 15] = "ROOM_STATE_PATCH", _[_.ROOM_DATA_SCHEMA = 16] = "ROOM_DATA_SCHEMA", _[_.ROOM_DATA_BYTES = 17] = "ROOM_DATA_BYTES", e.ErrorCode = void 0, (A = e.ErrorCode || (e.ErrorCode = {}))[A.MATCHMAKE_NO_HANDLER = 4210] = "MATCHMAKE_NO_HANDLER", A[A.MATCHMAKE_INVALID_CRITERIA = 4211] = "MATCHMAKE_INVALID_CRITERIA", A[A.MATCHMAKE_INVALID_ROOM_ID = 4212] = "MATCHMAKE_INVALID_ROOM_ID", A[A.MATCHMAKE_UNHANDLED = 4213] = "MATCHMAKE_UNHANDLED", A[A.MATCHMAKE_EXPIRED = 4214] = "MATCHMAKE_EXPIRED", A[A.AUTH_FAILED = 4215] = "AUTH_FAILED", A[A.APPLICATION_ERROR = 4216] = "APPLICATION_ERROR";
-            var R = {};
+            F.Protocol = void 0, (v = F.Protocol || (F.Protocol = {}))[v.HANDSHAKE = 9] = 'HANDSHAKE', v[v.JOIN_ROOM = 10] = 'JOIN_ROOM', v[v.ERROR = 11] = 'ERROR', v[v.LEAVE_ROOM = 12] = 'LEAVE_ROOM', v[v.ROOM_DATA = 13] = 'ROOM_DATA', v[v.ROOM_STATE = 14] = 'ROOM_STATE', v[v.ROOM_STATE_PATCH = 15] = 'ROOM_STATE_PATCH', v[v.ROOM_DATA_SCHEMA = 16] = 'ROOM_DATA_SCHEMA', v[v.ROOM_DATA_BYTES = 17] = 'ROOM_DATA_BYTES', F.ErrorCode = void 0, (u = F.ErrorCode || (F.ErrorCode = {}))[u.MATCHMAKE_NO_HANDLER = 4210] = 'MATCHMAKE_NO_HANDLER', u[u.MATCHMAKE_INVALID_CRITERIA = 4211] = 'MATCHMAKE_INVALID_CRITERIA', u[u.MATCHMAKE_INVALID_ROOM_ID = 4212] = 'MATCHMAKE_INVALID_ROOM_ID', u[u.MATCHMAKE_UNHANDLED = 4213] = 'MATCHMAKE_UNHANDLED', u[u.MATCHMAKE_EXPIRED = 4214] = 'MATCHMAKE_EXPIRED', u[u.AUTH_FAILED = 4215] = 'AUTH_FAILED', u[u.APPLICATION_ERROR = 4216] = 'APPLICATION_ERROR';
+            var C = {};
 
-            function P(t, e) {
-                R[t] = e
+            function D(a, F) {
+                C[a] = F;
             }
 
-            function C(t) {
-                var e = R[t];
-                if (!e) throw new Error("missing serializer: " + t);
-                return e
+            function E(a) {
+                var F = C[a];
+                if (!F)
+                    throw new Error('missing serializer: ' + a);
+                return F;
             }
-            var k = function() {
+            var F = function() {
                     return {
-                        emit: function(t) {
-                            for (var e = [], n = 1; n < arguments.length; n++) e[n - 1] = arguments[n];
-                            for (var o = this.events[t] || [], i = 0, r = o.length; i < r; i++) o[i].apply(o, e)
+                        emit: function(a) {
+                            for (var G = [], H = 1; H < arguments.length; H++)
+                                G[H - 1] = arguments[H];
+                            for (var I = this.events[a] || [], J = 0, K = I.length; J < K; J++)
+                                I[J].apply(I, G);
                         },
                         events: {},
-                        on: function(t, e) {
-                            var n, o = this;
-                            return (null === (n = this.events[t]) || void 0 === n ? void 0 : n.push(e)) || (this.events[t] = [e]),
+                        on: function(a, J) {
+                            var G, H = this;
+                            return (null === (G = this.events[a]) || void 0 === G ? void 0 : G.push(J)) || (this.events[a] = [J]),
                                 function() {
-                                    var n;
-                                    o.events[t] = null === (n = o.events[t]) || void 0 === n ? void 0 : n.filter((function(t) {
-                                        return e !== t
-                                    }))
-                                }
+                                    var I;
+                                    H.events[a] = null === (I = H.events[a]) || void 0 === I ? void 0 : I.filter(function(a) {
+                                        return J !== a;
+                                    });
+                                };
                         }
-                    }
+                    };
                 },
-                D = function() {
-                    function t() {
-                        this.handlers = []
+                G = function() {
+                    function H() {
+                        this.handlers = [];
                     }
-                    return t.prototype.register = function(t, e) {
-                        return this.handlers.push(t), this
-                    }, t.prototype.invoke = function() {
-                        for (var t = this, e = [], n = 0; n < arguments.length; n++) e[n] = arguments[n];
-                        this.handlers.forEach((function(n) {
-                            return n.apply(t, e)
-                        }))
-                    }, t.prototype.invokeAsync = function() {
-                        for (var t = this, e = [], n = 0; n < arguments.length; n++) e[n] = arguments[n];
-                        return Promise.all(this.handlers.map((function(n) {
-                            return n.apply(t, e)
-                        })))
-                    }, t.prototype.remove = function(t) {
-                        var e = this.handlers.indexOf(t);
-                        this.handlers[e] = this.handlers[this.handlers.length - 1], this.handlers.pop()
-                    }, t.prototype.clear = function() {
-                        this.handlers = []
-                    }, t
+                    return H.prototype.register = function(H, J) {
+                        return this.handlers.push(H), this;
+                    }, H.prototype.invoke = function() {
+                        for (var I = this, J = [], K = 0; K < arguments.length; K++)
+                            J[K] = arguments[K];
+                        this.handlers.forEach(function(K) {
+                            return K.apply(I, J);
+                        });
+                    }, H.prototype.invokeAsync = function() {
+                        for (var I = this, J = [], K = 0; K < arguments.length; K++)
+                            J[K] = arguments[K];
+                        return Promise.all(this.handlers.map(function(K) {
+                            return K.apply(I, J);
+                        }));
+                    }, H.prototype.remove = function(H) {
+                        var I = this.handlers.indexOf(H);
+                        this.handlers[I] = this.handlers[this.handlers.length - 1], this.handlers.pop();
+                    }, H.prototype.clear = function() {
+                        this.handlers = [];
+                    }, H;
                 }();
 
-            function N() {
-                var t = new D;
+            function H() {
+                var I = new G();
 
-                function e(e) {
-                    return t.register(e, null === this)
+                function J(J) {
+                    return I.register(J, null === this);
                 }
-                return e.once = function(e) {
-                    var n = function() {
-                        for (var o = [], i = 0; i < arguments.length; i++) o[i] = arguments[i];
-                        e.apply(this, o), t.remove(n)
+                return J.once = function(J) {
+                    var K = function() {
+                        for (var L = [], M = 0; M < arguments.length; M++)
+                            L[M] = arguments[M];
+                        J.apply(this, L), I.remove(K);
                     };
-                    t.register(n)
-                }, e.remove = function(e) {
-                    return t.remove(e)
-                }, e.invoke = function() {
-                    for (var e = [], n = 0; n < arguments.length; n++) e[n] = arguments[n];
-                    return t.invoke.apply(t, e)
-                }, e.invokeAsync = function() {
-                    for (var e = [], n = 0; n < arguments.length; n++) e[n] = arguments[n];
-                    return t.invokeAsync.apply(t, e)
-                }, e.clear = function() {
-                    return t.clear()
-                }, e
+                    I.register(K);
+                }, J.remove = function(J) {
+                    return I.remove(J);
+                }, J.invoke = function() {
+                    for (var K = [], L = 0; L < arguments.length; L++)
+                        K[L] = arguments[L];
+                    return I.invoke.apply(I, K);
+                }, J.invokeAsync = function() {
+                    for (var K = [], L = 0; L < arguments.length; L++)
+                        K[L] = arguments[L];
+                    return I.invokeAsync.apply(I, K);
+                }, J.clear = function() {
+                    return I.clear();
+                }, J;
             }
 
-            function S(t) {
-                var e = {
+            function I(a) {
+                var J = {
                     exports: {}
                 };
-                return t(e, e.exports), e.exports
+                return a(J, J.exports), J.exports;
             }
-            "undefined" != typeof globalThis ? globalThis : "undefined" != typeof window ? window : void 0 !== t || "undefined" != typeof self && self;
-            var M = S((function(t, e) {
-                    ! function(t, n) {
-                        n(e)
-                    }(0, (function(t) {
-                        var e = function(t, n) {
-                            return e = Object.setPrototypeOf || {
+            'undefined' != typeof globalThis ? globalThis : 'undefined' != typeof window ? window : void 0 !== a || 'undefined' != typeof self && self;
+            var J = I(function(a, K) {
+                    ! function(a, b) {
+                        b(K);
+                    }(0, function(a) {
+                        var K = function(a, b) {
+                            return K = Object.setPrototypeOf || {
                                 __proto__: []
                             }
-                            instanceof Array && function(t, e) {
-                                t.__proto__ = e
-                            } || function(t, e) {
-                                for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n])
-                            }, e(t, n)
+                            instanceof Array && function(a, K) {
+                                a.__proto__ = K;
+                            } || function(a, K) {
+                                for (var L in K)
+                                    Object.prototype.hasOwnProperty.call(K, L) && (a[L] = K[L]);
+                            }, K(a, b);
                         };
 
-                        function n(t, n) {
-                            if ("function" != typeof n && null !== n) throw new TypeError("Class extends value " + String(n) + " is not a constructor or null");
+                        function L(a, L) {
+                            if ('function' != typeof L && null !== L)
+                                throw new TypeError('Class extends value ' + String(L) + ' is not a constructor or null');
 
-                            function o() {
-                                this.constructor = t
+                            function M() {
+                                this.constructor = a;
                             }
-                            e(t, n), t.prototype = null === n ? Object.create(n) : (o.prototype = n.prototype, new o)
+                            K(a, L), a.prototype = null === L ? Object.create(L) : (M.prototype = L.prototype, new M());
                         }
 
-                        function o(t, e, n, o) {
-                            var i, r = arguments.length,
-                                s = r < 3 ? e : null === o ? o = Object.getOwnPropertyDescriptor(e, n) : o;
-                            if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(t, e, n, o);
+                        function M(a, K, L, M) {
+                            var N, O = arguments.length,
+                                P = O < 3 ? K : null === M ? M = Object.getOwnPropertyDescriptor(K, L) : M;
+                            if ('object' == typeof Reflect && 'function' == typeof Reflect.decorate)
+                                P = Reflect.decorate(a, K, L, M);
                             else
-                                for (var a = t.length - 1; a >= 0; a--)(i = t[a]) && (s = (r < 3 ? i(s) : r > 3 ? i(e, n, s) : i(e, n)) || s);
-                            return r > 3 && s && Object.defineProperty(e, n, s), s
+                                for (var Q = a.length - 1; Q >= 0; Q--)
+                                    (N = a[Q]) && (P = (O < 3 ? N(P) : O > 3 ? N(K, L, P) : N(K, L)) || P);
+                            return O > 3 && P && Object.defineProperty(K, L, P), P;
                         }
 
-                        function i(t, e, n) {
-                            if (n || 2 === arguments.length)
-                                for (var o, i = 0, r = e.length; i < r; i++) !o && i in e || (o || (o = Array.prototype.slice.call(e, 0, i)), o[i] = e[i]);
-                            return t.concat(o || Array.prototype.slice.call(e))
+                        function N(a, K, L) {
+                            if (L || 2 === arguments.length)
+                                for (var O, P = 0, Q = K.length; P < Q; P++)
+                                    !O && P in K || (O || (O = Array.prototype.slice.call(K, 0, P)), O[P] = K[P]);
+                            return a.concat(M || Array.prototype.slice.call(K));
                         }
-                        var r, s = 255,
-                            a = 213;
-                        t.OPERATION = void 0, (r = t.OPERATION || (t.OPERATION = {}))[r.ADD = 128] = "ADD", r[r.REPLACE = 0] = "REPLACE", r[r.DELETE = 64] = "DELETE", r[r.DELETE_AND_ADD = 192] = "DELETE_AND_ADD", r[r.TOUCH = 1] = "TOUCH", r[r.CLEAR = 10] = "CLEAR";
-                        var c = function() {
-                            function e(t, e, n) {
-                                this.changed = !1, this.changes = new Map, this.allChanges = new Set, this.caches = {}, this.currentCustomOperation = 0, this.ref = t, this.setParent(e, n)
+                        var O, P = 255,
+                            Q = 213;
+                        a.OPERATION = void 0, (O = a.OPERATION || (a.OPERATION = {}))[O.ADD = 128] = 'ADD', O[O.REPLACE = 0] = 'REPLACE', O[O.DELETE = 64] = 'DELETE', O[O.DELETE_AND_ADD = 192] = 'DELETE_AND_ADD', O[O.TOUCH = 1] = 'TOUCH', O[O.CLEAR = 10] = 'CLEAR';
+                        var R = function() {
+                            function S(a, S, L) {
+                                this.changed = !1, this.changes = new Map(), this.allChanges = new Set(), this.caches = {}, this.currentCustomOperation = 0, this.ref = a, this.setParent(S, L);
                             }
-                            return e.prototype.setParent = function(t, e, n) {
-                                var o = this;
-                                if (this.indexes || (this.indexes = this.ref instanceof Rt ? this.ref._definition.indexes : {}), this.parent = t, this.parentIndex = n, e)
-                                    if (this.root = e, this.ref instanceof Rt) {
-                                        var i = this.ref._definition;
-                                        for (var r in i.schema) {
-                                            var s = this.ref[r];
-                                            if (s && s.$changes) {
-                                                var a = i.indexes[r];
-                                                s.$changes.setParent(this.ref, e, a)
+                            return S.prototype.setParent = function(a, S, L) {
+                                var T = this;
+                                if (this.indexes || (this.indexes = this.ref instanceof kc ? this.ref._definition.indexes : {}), this.parent = a, this.parentIndex = L, S)
+                                    if (this.root = S, this.ref instanceof kc) {
+                                        var U = this.ref._definition;
+                                        for (var V in U.schema) {
+                                            var W = this.ref[V];
+                                            if (W && W.$changes) {
+                                                var X = U.indexes[V];
+                                                W.$changes.setParent(this.ref, S, X);
                                             }
                                         }
-                                    } else "object" == typeof this.ref && this.ref.forEach((function(t, e) {
-                                        if (t instanceof Rt) {
-                                            var n = t.$changes,
-                                                i = o.ref.$changes.indexes[e];
-                                            n.setParent(o.ref, o.root, i)
-                                        }
-                                    }))
-                            }, e.prototype.operation = function(t) {
-                                this.changes.set(--this.currentCustomOperation, t)
-                            }, e.prototype.change = function(e, n) {
-                                void 0 === n && (n = t.OPERATION.ADD);
-                                var o = "number" == typeof e ? e : this.indexes[e];
-                                this.assertValidIndex(o, e);
-                                var i = this.changes.get(o);
-                                i && i.op !== t.OPERATION.DELETE && i.op !== t.OPERATION.TOUCH || this.changes.set(o, {
-                                    op: i && i.op === t.OPERATION.DELETE ? t.OPERATION.DELETE_AND_ADD : n,
-                                    index: o
-                                }), this.allChanges.add(o), this.changed = !0, this.touchParents()
-                            }, e.prototype.touch = function(e) {
-                                var n = "number" == typeof e ? e : this.indexes[e];
-                                this.assertValidIndex(n, e), this.changes.has(n) || this.changes.set(n, {
-                                    op: t.OPERATION.TOUCH,
-                                    index: n
-                                }), this.allChanges.add(n), this.touchParents()
-                            }, e.prototype.touchParents = function() {
-                                this.parent && this.parent.$changes.touch(this.parentIndex)
-                            }, e.prototype.getType = function(t) {
-                                if (this.ref._definition) return (e = this.ref._definition).schema[e.fieldsByIndex[t]];
-                                var e, n = (e = this.parent._definition).schema[e.fieldsByIndex[this.parentIndex]];
-                                return Object.values(n)[0]
-                            }, e.prototype.getChildrenFilter = function() {
-                                var t = this.parent._definition.childFilters;
-                                return t && t[this.parentIndex]
-                            }, e.prototype.getValue = function(t) {
-                                return this.ref.getByIndex(t)
-                            }, e.prototype.delete = function(e) {
-                                var n = "number" == typeof e ? e : this.indexes[e];
-                                if (void 0 !== n) {
-                                    var o = this.getValue(n);
-                                    this.changes.set(n, {
-                                        op: t.OPERATION.DELETE,
-                                        index: n
-                                    }), this.allChanges.delete(n), delete this.caches[n], o && o.$changes && (o.$changes.parent = void 0), this.changed = !0, this.touchParents()
-                                } else console.warn("@colyseus/schema ".concat(this.ref.constructor.name, ": trying to delete non-existing index: ").concat(e, " (").concat(n, ")"))
-                            }, e.prototype.discard = function(e, n) {
-                                var o = this;
-                                void 0 === e && (e = !1), void 0 === n && (n = !1), this.ref instanceof Rt || this.changes.forEach((function(e) {
-                                    if (e.op === t.OPERATION.DELETE) {
-                                        var n = o.ref.getIndex(e.index);
-                                        delete o.indexes[n]
+                                    } else
+                                        'object' == typeof this.ref && this.ref.forEach(function(a, S) {
+                                            if (a instanceof kc) {
+                                                var U = a.$changes,
+                                                    V = T.ref.$changes.indexes[S];
+                                                U.setParent(T.ref, T.root, V);
+                                            }
+                                        });
+                            }, S.prototype.operation = function(a) {
+                                this.changes.set(--this.currentCustomOperation, a);
+                            }, S.prototype.change = function(S, L) {
+                                void 0 === L && (L = a.OPERATION.ADD);
+                                var T = 'number' == typeof S ? S : this.indexes[S];
+                                this.assertValidIndex(T, S);
+                                var U = this.changes.get(T);
+                                U && U.op !== a.OPERATION.DELETE && U.op !== a.OPERATION.TOUCH || this.changes.set(T, {
+                                    op: U && U.op === a.OPERATION.DELETE ? a.OPERATION.DELETE_AND_ADD : L,
+                                    index: T
+                                }), this.allChanges.add(T), this.changed = !0, this.touchParents();
+                            }, S.prototype.touch = function(S) {
+                                var T = 'number' == typeof S ? S : this.indexes[S];
+                                this.assertValidIndex(T, S), this.changes.has(T) || this.changes.set(T, {
+                                    op: a.OPERATION.TOUCH,
+                                    index: T
+                                }), this.allChanges.add(T), this.touchParents();
+                            }, S.prototype.touchParents = function() {
+                                this.parent && this.parent.$changes.touch(this.parentIndex);
+                            }, S.prototype.getType = function(a) {
+                                if (this.ref._definition)
+                                    return (S = this.ref._definition).schema[S.fieldsByIndex[a]];
+                                var T, U = (T = this.parent._definition).schema[T.fieldsByIndex[this.parentIndex]];
+                                return Object.values(U)[0];
+                            }, S.prototype.getChildrenFilter = function() {
+                                var T = this.parent._definition.childFilters;
+                                return T && T[this.parentIndex];
+                            }, S.prototype.getValue = function(a) {
+                                return this.ref.getByIndex(a);
+                            }, S.prototype.delete = function(S) {
+                                var T = 'number' == typeof S ? S : this.indexes[S];
+                                if (void 0 !== T) {
+                                    var U = this.getValue(T);
+                                    this.changes.set(T, {
+                                        op: a.OPERATION.DELETE,
+                                        index: T
+                                    }), this.allChanges.delete(T), delete this.caches[T], U && U.$changes && (U.$changes.parent = void 0), this.changed = !0, this.touchParents();
+                                } else
+                                    console.warn('@colyseus/schema '.concat(this.ref.constructor.name, ': trying to delete non-existing index: ').concat(S, ' (').concat(T, ')'));
+                            }, S.prototype.discard = function(S, L) {
+                                var T = this;
+                                void 0 === S && (S = !1), void 0 === L && (L = !1), this.ref instanceof kc || this.changes.forEach(function(S) {
+                                    if (S.op === a.OPERATION.DELETE) {
+                                        var U = T.ref.getIndex(S.index);
+                                        delete T.indexes[U];
                                     }
-                                })), this.changes.clear(), this.changed = e, n && this.allChanges.clear(), this.currentCustomOperation = 0
-                            }, e.prototype.discardAll = function() {
-                                var t = this;
-                                this.changes.forEach((function(e) {
-                                    var n = t.getValue(e.index);
-                                    n && n.$changes && n.$changes.discardAll()
-                                })), this.discard()
-                            }, e.prototype.cache = function(t, e) {
-                                this.caches[t] = e
-                            }, e.prototype.clone = function() {
-                                return new e(this.ref, this.parent, this.root)
-                            }, e.prototype.ensureRefId = function() {
-                                void 0 === this.refId && (this.refId = this.root.getNextUniqueId())
-                            }, e.prototype.assertValidIndex = function(t, e) {
-                                if (void 0 === t) throw new Error('ChangeTree: missing index for field "'.concat(e, '"'))
-                            }, e
+                                }), this.changes.clear(), this.changed = S, L && this.allChanges.clear(), this.currentCustomOperation = 0;
+                            }, S.prototype.discardAll = function() {
+                                var T = this;
+                                this.changes.forEach(function(S) {
+                                    var U = T.getValue(S.index);
+                                    U && U.$changes && U.$changes.discardAll();
+                                }), this.discard();
+                            }, S.prototype.cache = function(a, S) {
+                                this.caches[a] = S;
+                            }, S.prototype.clone = function() {
+                                return new S(this.ref, this.parent, this.root);
+                            }, S.prototype.ensureRefId = function() {
+                                void 0 === this.refId && (this.refId = this.root.getNextUniqueId());
+                            }, S.prototype.assertValidIndex = function(a, S) {
+                                if (void 0 === a)
+                                    throw new Error('ChangeTree: missing index for field "'.concat(S, '"'));
+                            }, S;
                         }();
 
-                        function f(t, e, n, o) {
-                            return t[e] || (t[e] = []), t[e].push(n), null == o || o.forEach((function(t, e) {
-                                    return n(t, e)
-                                })),
+                        function S(a, K, L, M) {
+                            return a[K] || (a[K] = []), a[K].push(L), null == M || M.forEach(function(a, K) {
+                                    return L(a, K);
+                                }),
                                 function() {
-                                    return u(t[e], t[e].indexOf(n))
-                                }
+                                    return k(a[K], a[K].indexOf(L));
+                                };
                         }
 
-                        function h(e) {
-                            var n = this,
-                                o = "string" != typeof this.$changes.getType();
-                            this.$items.forEach((function(i, r) {
-                                e.push({
-                                    refId: n.$changes.refId,
-                                    op: t.OPERATION.DELETE,
-                                    field: r,
+                        function T(K) {
+                            var U = this,
+                                V = 'string' != typeof this.$changes.getType();
+                            this.$items.forEach(function(N, O) {
+                                K.push({
+                                    refId: U.$changes.refId,
+                                    op: a.OPERATION.DELETE,
+                                    field: O,
                                     value: void 0,
-                                    previousValue: i
-                                }), o && n.$changes.root.removeRef(i.$changes.refId)
-                            }))
+                                    previousValue: N
+                                }), V && U.$changes.root.removeRef(N.$changes.refId);
+                            });
                         }
 
-                        function u(t, e) {
-                            if (-1 === e || e >= t.length) return !1;
-                            for (var n = t.length - 1, o = e; o < n; o++) t[o] = t[o + 1];
-                            return t.length = n, !0
+                        function U(a, K) {
+                            if (-1 === K || K >= a.length)
+                                return !1;
+                            for (var V = a.length - 1, W = X; W < V; W++)
+                                a[W] = a[W + 1];
+                            return a.length = V, !0;
                         }
-                        var d = function(t, e) {
-                            var n = t.toString(),
-                                o = e.toString();
-                            return n < o ? -1 : n > o ? 1 : 0
+                        var V = function(a, K) {
+                            var W = a.toString(),
+                                X = K.toString();
+                            return W < X ? -1 : W > X ? 1 : 0;
                         };
 
-                        function l(t) {
-                            return t.$proxy = !0, t = new Proxy(t, {
-                                get: function(t, e) {
-                                    return "symbol" == typeof e || isNaN(e) ? t[e] : t.at(e)
+                        function W(a) {
+                            return a.$proxy = !0, a = new Proxy(a, {
+                                get: function(a, K) {
+                                    return 'symbol' == typeof K || isNaN(K) ? a[K] : a.at(K);
                                 },
-                                set: function(t, e, n) {
-                                    if ("symbol" == typeof e || isNaN(e)) t[e] = n;
+                                set: function(a, K, L) {
+                                    if ('symbol' == typeof K || isNaN(K))
+                                        a[K] = L;
                                     else {
-                                        var o = Array.from(t.$items.keys()),
-                                            i = parseInt(o[e] || e);
-                                        null == n ? t.deleteAt(i) : t.setAt(i, n)
+                                        var X = Array.from(a.$items.keys()),
+                                            Y = parseInt(X[K] || K);
+                                        null == L ? a.deleteAt(Y) : a.setAt(Y, L);
                                     }
-                                    return !0
+                                    return !0;
                                 },
-                                deleteProperty: function(t, e) {
-                                    return "number" == typeof e ? t.deleteAt(e) : delete t[e], !0
+                                deleteProperty: function(a, K) {
+                                    return 'number' == typeof K ? a.deleteAt(K) : delete a[K], !0;
                                 }
-                            })
+                            });
                         }
-                        var p = function() {
-                            function e() {
-                                for (var t = [], e = 0; e < arguments.length; e++) t[e] = arguments[e];
-                                this.$changes = new c(this), this.$items = new Map, this.$indexes = new Map, this.$refId = 0, this.push.apply(this, t)
+                        var X = function() {
+                            function Y() {
+                                for (var Z = [], $ = 0; $ < arguments.length; $++)
+                                    Z[$] = arguments[$];
+                                this.$changes = new R(this), this.$items = new Map(), this.$indexes = new Map(), this.$refId = 0, this.push.apply(this, Z);
                             }
-                            return e.prototype.onAdd = function(e, n) {
-                                return void 0 === n && (n = !0), f(this.$callbacks || (this.$callbacks = []), t.OPERATION.ADD, e, n ? this.$items : void 0)
-                            }, e.prototype.onRemove = function(e) {
-                                return f(this.$callbacks || (this.$callbacks = []), t.OPERATION.DELETE, e)
-                            }, e.prototype.onChange = function(e) {
-                                return f(this.$callbacks || (this.$callbacks = []), t.OPERATION.REPLACE, e)
-                            }, e.is = function(t) {
-                                return Array.isArray(t) || void 0 !== t.array
-                            }, Object.defineProperty(e.prototype, "length", {
+                            return Y.prototype.onAdd = function(Y, L) {
+                                return void 0 === L && (L = !0), S(this.$callbacks || (this.$callbacks = []), a.OPERATION.ADD, Y, L ? this.$items : void 0);
+                            }, Y.prototype.onRemove = function(Y) {
+                                return S(this.$callbacks || (this.$callbacks = []), a.OPERATION.DELETE, Y);
+                            }, Y.prototype.onChange = function(Y) {
+                                return S(this.$callbacks || (this.$callbacks = []), a.OPERATION.REPLACE, Y);
+                            }, Y.is = function(a) {
+                                return Array.isArray(a) || void 0 !== a.array;
+                            }, Object.defineProperty(Y.prototype, 'length', {
                                 get: function() {
-                                    return this.$items.size
+                                    return this.$items.size;
                                 },
-                                set: function(t) {
-                                    0 === t ? this.clear() : this.splice(t, this.length - t)
+                                set: function(a) {
+                                    0 === a ? this.clear() : this.splice(a, this.length - a);
                                 },
                                 enumerable: !1,
                                 configurable: !0
-                            }), e.prototype.push = function() {
-                                for (var t, e = this, n = [], o = 0; o < arguments.length; o++) n[o] = arguments[o];
-                                return n.forEach((function(n) {
-                                    t = e.$refId++, e.setAt(t, n)
-                                })), t
-                            }, e.prototype.pop = function() {
-                                var t = Array.from(this.$indexes.values()).pop();
-                                if (void 0 !== t) {
-                                    this.$changes.delete(t), this.$indexes.delete(t);
-                                    var e = this.$items.get(t);
-                                    return this.$items.delete(t), e
+                            }), Y.prototype.push = function() {
+                                for (var Z, $ = this, _ = [], ab = 0; ab < arguments.length; ab++)
+                                    _[ab] = arguments[ab];
+                                return _.forEach(function(_) {
+                                    Z = $.$refId++, $.setAt(Z, _);
+                                }), Z;
+                            }, Y.prototype.pop = function() {
+                                var Z = Array.from(this.$indexes.values()).pop();
+                                if (void 0 !== Z) {
+                                    this.$changes.delete(Z), this.$indexes.delete(Z);
+                                    var $ = this.$items.get(Z);
+                                    return this.$items.delete(Z), $;
                                 }
-                            }, e.prototype.at = function(t) {
-                                var e = Array.from(this.$items.keys())[t];
-                                return this.$items.get(e)
-                            }, e.prototype.setAt = function(e, n) {
-                                var o, i;
-                                void 0 !== n.$changes && n.$changes.setParent(this, this.$changes.root, e);
-                                var r = null !== (i = null === (o = this.$changes.indexes[e]) || void 0 === o ? void 0 : o.op) && void 0 !== i ? i : t.OPERATION.ADD;
-                                this.$changes.indexes[e] = e, this.$indexes.set(e, e), this.$items.set(e, n), this.$changes.change(e, r)
-                            }, e.prototype.deleteAt = function(t) {
-                                var e = Array.from(this.$items.keys())[t];
-                                return void 0 !== e && this.$deleteAt(e)
-                            }, e.prototype.$deleteAt = function(t) {
-                                return this.$changes.delete(t), this.$indexes.delete(t), this.$items.delete(t)
-                            }, e.prototype.clear = function(e) {
-                                this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), e && h.call(this, e), this.$items.clear(), this.$changes.operation({
+                            }, Y.prototype.at = function(a) {
+                                var Z = Array.from(this.$items.keys())[a];
+                                return this.$items.get(Z);
+                            }, Y.prototype.setAt = function(Y, L) {
+                                var Z, $;
+                                void 0 !== L.$changes && L.$changes.setParent(this, this.$changes.root, Y);
+                                var _ = null !== ($ = null === (Z = this.$changes.indexes[Y]) || void 0 === Z ? void 0 : Z.op) && void 0 !== $ ? $ : a.OPERATION.ADD;
+                                this.$changes.indexes[Y] = Y, this.$indexes.set(Y, Y), this.$items.set(Y, L), this.$changes.change(Y, _);
+                            }, Y.prototype.deleteAt = function(a) {
+                                var Z = Array.from(this.$items.keys())[a];
+                                return void 0 !== Z && this.$deleteAt(Z);
+                            }, Y.prototype.$deleteAt = function(a) {
+                                return this.$changes.delete(a), this.$indexes.delete(a), this.$items.delete(a);
+                            }, Y.prototype.clear = function(Y) {
+                                this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), Y && T.call(this, Y), this.$items.clear(), this.$changes.operation({
                                     index: 0,
-                                    op: t.OPERATION.CLEAR
-                                }), this.$changes.touchParents()
-                            }, e.prototype.concat = function() {
-                                for (var t, n = [], o = 0; o < arguments.length; o++) n[o] = arguments[o];
-                                return new(e.bind.apply(e, i([void 0], (t = Array.from(this.$items.values())).concat.apply(t, n), !1)))
-                            }, e.prototype.join = function(t) {
-                                return Array.from(this.$items.values()).join(t)
-                            }, e.prototype.reverse = function() {
-                                var t = this,
-                                    e = Array.from(this.$items.keys());
-                                return Array.from(this.$items.values()).reverse().forEach((function(n, o) {
-                                    t.setAt(e[o], n)
-                                })), this
-                            }, e.prototype.shift = function() {
-                                var t = Array.from(this.$items.keys()).shift();
-                                if (void 0 !== t) {
-                                    var e = this.$items.get(t);
-                                    return this.$deleteAt(t), e
+                                    op: a.OPERATION.CLEAR
+                                }), this.$changes.touchParents();
+                            }, Y.prototype.concat = function() {
+                                for (var Z, $ = [], _ = 0; _ < arguments.length; _++)
+                                    $[_] = arguments[_];
+                                return new(Y.bind.apply(Y, N([void 0], (Z = Array.from(this.$items.values())).concat.apply(Z, $), !1)))();
+                            }, Y.prototype.join = function(a) {
+                                return Array.from(this.$items.values()).join(a);
+                            }, Y.prototype.reverse = function() {
+                                var Z = this,
+                                    $ = Array.from(this.$items.keys());
+                                return Array.from(this.$items.values()).reverse().forEach(function(L, M) {
+                                    Z.setAt($[M], L);
+                                }), this;
+                            }, Y.prototype.shift = function() {
+                                var Z = Array.from(this.$items.keys()).shift();
+                                if (void 0 !== Z) {
+                                    var $ = this.$items.get(Z);
+                                    return this.$deleteAt(Z), $;
                                 }
-                            }, e.prototype.slice = function(t, n) {
-                                var o = new e;
-                                return o.push.apply(o, Array.from(this.$items.values()).slice(t, n)), o
-                            }, e.prototype.sort = function(t) {
-                                var e = this;
-                                void 0 === t && (t = d);
-                                var n = Array.from(this.$items.keys());
-                                return Array.from(this.$items.values()).sort(t).forEach((function(t, o) {
-                                    e.setAt(n[o], t)
-                                })), this
-                            }, e.prototype.splice = function(t, e) {
-                                void 0 === e && (e = this.length - t);
-                                for (var n = Array.from(this.$items.keys()), o = [], i = t; i < t + e; i++) o.push(this.$items.get(n[i])), this.$deleteAt(n[i]);
-                                return o
-                            }, e.prototype.unshift = function() {
-                                for (var t = this, e = [], n = 0; n < arguments.length; n++) e[n] = arguments[n];
-                                var o = this.length,
-                                    i = e.length,
-                                    r = Array.from(this.$items.values());
-                                return e.forEach((function(e, n) {
-                                    t.setAt(n, e)
-                                })), r.forEach((function(e, n) {
-                                    t.setAt(i + n, e)
-                                })), o + i
-                            }, e.prototype.indexOf = function(t, e) {
-                                return Array.from(this.$items.values()).indexOf(t, e)
-                            }, e.prototype.lastIndexOf = function(t, e) {
-                                return void 0 === e && (e = this.length - 1), Array.from(this.$items.values()).lastIndexOf(t, e)
-                            }, e.prototype.every = function(t, e) {
-                                return Array.from(this.$items.values()).every(t, e)
-                            }, e.prototype.some = function(t, e) {
-                                return Array.from(this.$items.values()).some(t, e)
-                            }, e.prototype.forEach = function(t, e) {
-                                Array.from(this.$items.values()).forEach(t, e)
-                            }, e.prototype.map = function(t, e) {
-                                return Array.from(this.$items.values()).map(t, e)
-                            }, e.prototype.filter = function(t, e) {
-                                return Array.from(this.$items.values()).filter(t, e)
-                            }, e.prototype.reduce = function(t, e) {
-                                return Array.prototype.reduce.apply(Array.from(this.$items.values()), arguments)
-                            }, e.prototype.reduceRight = function(t, e) {
-                                return Array.prototype.reduceRight.apply(Array.from(this.$items.values()), arguments)
-                            }, e.prototype.find = function(t, e) {
-                                return Array.from(this.$items.values()).find(t, e)
-                            }, e.prototype.findIndex = function(t, e) {
-                                return Array.from(this.$items.values()).findIndex(t, e)
-                            }, e.prototype.fill = function(t, e, n) {
-                                throw new Error("ArraySchema#fill() not implemented")
-                            }, e.prototype.copyWithin = function(t, e, n) {
-                                throw new Error("ArraySchema#copyWithin() not implemented")
-                            }, e.prototype.toString = function() {
-                                return this.$items.toString()
-                            }, e.prototype.toLocaleString = function() {
-                                return this.$items.toLocaleString()
-                            }, e.prototype[Symbol.iterator] = function() {
-                                return Array.from(this.$items.values())[Symbol.iterator]()
-                            }, e.prototype.entries = function() {
-                                return this.$items.entries()
-                            }, e.prototype.keys = function() {
-                                return this.$items.keys()
-                            }, e.prototype.values = function() {
-                                return this.$items.values()
-                            }, e.prototype.includes = function(t, e) {
-                                return Array.from(this.$items.values()).includes(t, e)
-                            }, e.prototype.flatMap = function(t, e) {
-                                throw new Error("ArraySchema#flatMap() is not supported.")
-                            }, e.prototype.flat = function(t) {
-                                throw new Error("ArraySchema#flat() is not supported.")
-                            }, e.prototype.findLast = function() {
-                                var t = Array.from(this.$items.values());
-                                return t.findLast.apply(t, arguments)
-                            }, e.prototype.findLastIndex = function() {
-                                var t = Array.from(this.$items.values());
-                                return t.findLastIndex.apply(t, arguments)
-                            }, e.prototype.setIndex = function(t, e) {
-                                this.$indexes.set(t, e)
-                            }, e.prototype.getIndex = function(t) {
-                                return this.$indexes.get(t)
-                            }, e.prototype.getByIndex = function(t) {
-                                return this.$items.get(this.$indexes.get(t))
-                            }, e.prototype.deleteByIndex = function(t) {
-                                var e = this.$indexes.get(t);
-                                this.$items.delete(e), this.$indexes.delete(t)
-                            }, e.prototype.toArray = function() {
-                                return Array.from(this.$items.values())
-                            }, e.prototype.toJSON = function() {
-                                return this.toArray().map((function(t) {
-                                    return "function" == typeof t.toJSON ? t.toJSON() : t
-                                }))
-                            }, e.prototype.clone = function(t) {
-                                return t ? new(e.bind.apply(e, i([void 0], Array.from(this.$items.values()), !1))) : new(e.bind.apply(e, i([void 0], this.map((function(t) {
-                                    return t.$changes ? t.clone() : t
-                                })), !1)))
-                            }, e
+                            }, Y.prototype.slice = function(a, L) {
+                                var Z = new Y();
+                                return Z.push.apply(Z, Array.from(this.$items.values()).slice(a, L)), Z;
+                            }, Y.prototype.sort = function(a) {
+                                var Z = this;
+                                void 0 === a && (a = V);
+                                var $ = Array.from(this.$items.keys());
+                                return Array.from(this.$items.values()).sort(a).forEach(function(a, M) {
+                                    Z.setAt($[M], a);
+                                }), this;
+                            }, Y.prototype.splice = function(a, Y) {
+                                void 0 === Y && (Y = this.length - a);
+                                for (var Z = Array.from(this.$items.keys()), $ = [], _ = ab; _ < ab + Y; _++)
+                                    $.push(this.$items.get(Z[_])), this.$deleteAt(Z[_]);
+                                return $;
+                            }, Y.prototype.unshift = function() {
+                                for (var Z = this, $ = [], _ = 0; _ < arguments.length; _++)
+                                    $[_] = arguments[_];
+                                var ab = this.length,
+                                    bb = $.length,
+                                    cb = Array.from(this.$items.values());
+                                return $.forEach(function($, _) {
+                                    Z.setAt(_, $);
+                                }), cb.forEach(function($, _) {
+                                    Z.setAt(bb + _, $);
+                                }), ab + bb;
+                            }, Y.prototype.indexOf = function(a, Y) {
+                                return Array.from(this.$items.values()).indexOf(a, Y);
+                            }, Y.prototype.lastIndexOf = function(a, Y) {
+                                return void 0 === Y && (Y = this.length - 1), Array.from(this.$items.values()).lastIndexOf(a, Y);
+                            }, Y.prototype.every = function(a, Y) {
+                                return Array.from(this.$items.values()).every(a, Y);
+                            }, Y.prototype.some = function(a, Y) {
+                                return Array.from(this.$items.values()).some(a, Y);
+                            }, Y.prototype.forEach = function(a, Y) {
+                                Array.from(this.$items.values()).forEach(a, Y);
+                            }, Y.prototype.map = function(a, Y) {
+                                return Array.from(this.$items.values()).map(a, Y);
+                            }, Y.prototype.filter = function(a, Y) {
+                                return Array.from(this.$items.values()).filter(a, Y);
+                            }, Y.prototype.reduce = function(a, Y) {
+                                return Array.prototype.reduce.apply(Array.from(this.$items.values()), arguments);
+                            }, Y.prototype.reduceRight = function(a, Y) {
+                                return Array.prototype.reduceRight.apply(Array.from(this.$items.values()), arguments);
+                            }, Y.prototype.find = function(a, Y) {
+                                return Array.from(this.$items.values()).find(a, Y);
+                            }, Y.prototype.findIndex = function(a, Y) {
+                                return Array.from(this.$items.values()).findIndex(a, Y);
+                            }, Y.prototype.fill = function(a, Y, L) {
+                                throw new Error('ArraySchema#fill() not implemented');
+                            }, Y.prototype.copyWithin = function(a, Y, L) {
+                                throw new Error('ArraySchema#copyWithin() not implemented');
+                            }, Y.prototype.toString = function() {
+                                return this.$items.toString();
+                            }, Y.prototype.toLocaleString = function() {
+                                return this.$items.toLocaleString();
+                            }, Y.prototype[Symbol.iterator] = function() {
+                                return Array.from(this.$items.values())[Symbol.iterator]();
+                            }, Y.prototype.entries = function() {
+                                return this.$items.entries();
+                            }, Y.prototype.keys = function() {
+                                return this.$items.keys();
+                            }, Y.prototype.values = function() {
+                                return this.$items.values();
+                            }, Y.prototype.includes = function(a, Y) {
+                                return Array.from(this.$items.values()).includes(a, Y);
+                            }, Y.prototype.flatMap = function(a, Y) {
+                                throw new Error('ArraySchema#flatMap() is not supported.');
+                            }, Y.prototype.flat = function(a) {
+                                throw new Error('ArraySchema#flat() is not supported.');
+                            }, Y.prototype.findLast = function() {
+                                var Z = Array.from(this.$items.values());
+                                return Z.findLast.apply(Z, arguments);
+                            }, Y.prototype.findLastIndex = function() {
+                                var Z = Array.from(this.$items.values());
+                                return Z.findLastIndex.apply(Z, arguments);
+                            }, Y.prototype.setIndex = function(a, Y) {
+                                this.$indexes.set(a, Y);
+                            }, Y.prototype.getIndex = function(a) {
+                                return this.$indexes.get(a);
+                            }, Y.prototype.getByIndex = function(a) {
+                                return this.$items.get(this.$indexes.get(a));
+                            }, Y.prototype.deleteByIndex = function(a) {
+                                var Z = this.$indexes.get(a);
+                                this.$items.delete(Z), this.$indexes.delete(a);
+                            }, Y.prototype.toArray = function() {
+                                return Array.from(this.$items.values());
+                            }, Y.prototype.toJSON = function() {
+                                return this.toArray().map(function(a) {
+                                    return 'function' == typeof a.toJSON ? a.toJSON() : a;
+                                });
+                            }, Y.prototype.clone = function(a) {
+                                return a ? new(Y.bind.apply(Y, N([void 0], Array.from(this.$items.values()), !1)))() : new(Y.bind.apply(Y, N([void 0], this.map(function(a) {
+                                    return a.$changes ? a.clone() : a;
+                                }), !1)))();
+                            }, Y;
                         }();
 
-                        function v(t) {
-                            return t.$proxy = !0, t = new Proxy(t, {
-                                get: function(t, e) {
-                                    return "symbol" != typeof e && void 0 === t[e] ? t.get(e) : t[e]
+                        function Y(a) {
+                            return a.$proxy = !0, a = new Proxy(a, {
+                                get: function(a, K) {
+                                    return 'symbol' != typeof K && void 0 === a[K] ? a.get(K) : a[K];
                                 },
-                                set: function(t, e, n) {
-                                    return "symbol" != typeof e && -1 === e.indexOf("$") && "onAdd" !== e && "onRemove" !== e && "onChange" !== e ? t.set(e, n) : t[e] = n, !0
+                                set: function(a, K, L) {
+                                    return 'symbol' != typeof K && -1 === K.indexOf('$') && 'onAdd' !== K && 'onRemove' !== K && 'onChange' !== K ? a.set(K, L) : a[K] = L, !0;
                                 },
-                                deleteProperty: function(t, e) {
-                                    return t.delete(e), !0
+                                deleteProperty: function(a, K) {
+                                    return a.delete(K), !0;
                                 }
-                            })
+                            });
                         }
-                        var y = function() {
-                                function e(t) {
-                                    var n = this;
-                                    if (this.$changes = new c(this), this.$items = new Map, this.$indexes = new Map, this.$refId = 0, t)
-                                        if (t instanceof Map || t instanceof e) t.forEach((function(t, e) {
-                                            return n.set(e, t)
-                                        }));
+                        var Z = function() {
+                                function $(a) {
+                                    var _ = this;
+                                    if (this.$changes = new R(this), this.$items = new Map(), this.$indexes = new Map(), this.$refId = 0, a)
+                                        if (a instanceof Map || a instanceof $)
+                                            a.forEach(function(a, $) {
+                                                return _.set($, a);
+                                            });
                                         else
-                                            for (var o in t) this.set(o, t[o])
+                                            for (var ab in a)
+                                                this.set(ab, a[ab]);
                                 }
-                                return e.prototype.onAdd = function(e, n) {
-                                    return void 0 === n && (n = !0), f(this.$callbacks || (this.$callbacks = []), t.OPERATION.ADD, e, n ? this.$items : void 0)
-                                }, e.prototype.onRemove = function(e) {
-                                    return f(this.$callbacks || (this.$callbacks = []), t.OPERATION.DELETE, e)
-                                }, e.prototype.onChange = function(e) {
-                                    return f(this.$callbacks || (this.$callbacks = []), t.OPERATION.REPLACE, e)
-                                }, e.is = function(t) {
-                                    return void 0 !== t.map
-                                }, e.prototype[Symbol.iterator] = function() {
-                                    return this.$items[Symbol.iterator]()
-                                }, Object.defineProperty(e.prototype, Symbol.toStringTag, {
+                                return $.prototype.onAdd = function($, L) {
+                                    return void 0 === L && (L = !0), S(this.$callbacks || (this.$callbacks = []), a.OPERATION.ADD, $, L ? this.$items : void 0);
+                                }, $.prototype.onRemove = function($) {
+                                    return S(this.$callbacks || (this.$callbacks = []), a.OPERATION.DELETE, $);
+                                }, $.prototype.onChange = function($) {
+                                    return S(this.$callbacks || (this.$callbacks = []), a.OPERATION.REPLACE, $);
+                                }, $.is = function(a) {
+                                    return void 0 !== a.map;
+                                }, $.prototype[Symbol.iterator] = function() {
+                                    return this.$items[Symbol.iterator]();
+                                }, Object.defineProperty($.prototype, Symbol.toStringTag, {
                                     get: function() {
-                                        return this.$items[Symbol.toStringTag]
+                                        return this.$items[Symbol.toStringTag];
                                     },
                                     enumerable: !1,
                                     configurable: !0
-                                }), e.prototype.set = function(e, n) {
-                                    if (null == n) throw new Error("MapSchema#set('".concat(e, "', ").concat(n, "): trying to set ").concat(n, " value on '").concat(e, "'."));
-                                    var o = void 0 !== this.$changes.indexes[e],
-                                        i = o ? this.$changes.indexes[e] : this.$refId++,
-                                        r = o ? t.OPERATION.REPLACE : t.OPERATION.ADD,
-                                        s = void 0 !== n.$changes;
-                                    return s && n.$changes.setParent(this, this.$changes.root, i), o ? s && this.$items.get(e) !== n && (r = t.OPERATION.ADD) : (this.$changes.indexes[e] = i, this.$indexes.set(i, e)), this.$items.set(e, n), this.$changes.change(e, r), this
-                                }, e.prototype.get = function(t) {
-                                    return this.$items.get(t)
-                                }, e.prototype.delete = function(t) {
-                                    return this.$changes.delete(t), this.$items.delete(t)
-                                }, e.prototype.clear = function(e) {
-                                    this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), e && h.call(this, e), this.$items.clear(), this.$changes.operation({
+                                }), $.prototype.set = function($, L) {
+                                    if (null == L)
+                                        throw new Error('MapSchema#set(\''.concat($, '\', ').concat(L, '): trying to set ').concat(L, ' value on \'').concat($, '\'.'));
+                                    var _ = void 0 !== this.$changes.indexes[$],
+                                        ab = _ ? this.$changes.indexes[$] : this.$refId++,
+                                        bb = _ ? a.OPERATION.REPLACE : a.OPERATION.ADD,
+                                        cb = void 0 !== L.$changes;
+                                    return cb && L.$changes.setParent(this, this.$changes.root, ab), _ ? cb && this.$items.get($) !== L && (bb = a.OPERATION.ADD) : (this.$changes.indexes[$] = ab, this.$indexes.set(ab, $)), this.$items.set($, L), this.$changes.change($, bb), this;
+                                }, $.prototype.get = function(a) {
+                                    return this.$items.get(a);
+                                }, $.prototype.delete = function(a) {
+                                    return this.$changes.delete(a), this.$items.delete(a);
+                                }, $.prototype.clear = function($) {
+                                    this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), $ && T.call(this, $), this.$items.clear(), this.$changes.operation({
                                         index: 0,
-                                        op: t.OPERATION.CLEAR
-                                    }), this.$changes.touchParents()
-                                }, e.prototype.has = function(t) {
-                                    return this.$items.has(t)
-                                }, e.prototype.forEach = function(t) {
-                                    this.$items.forEach(t)
-                                }, e.prototype.entries = function() {
-                                    return this.$items.entries()
-                                }, e.prototype.keys = function() {
-                                    return this.$items.keys()
-                                }, e.prototype.values = function() {
-                                    return this.$items.values()
-                                }, Object.defineProperty(e.prototype, "size", {
+                                        op: a.OPERATION.CLEAR
+                                    }), this.$changes.touchParents();
+                                }, $.prototype.has = function(a) {
+                                    return this.$items.has(a);
+                                }, $.prototype.forEach = function(a) {
+                                    this.$items.forEach(a);
+                                }, $.prototype.entries = function() {
+                                    return this.$items.entries();
+                                }, $.prototype.keys = function() {
+                                    return this.$items.keys();
+                                }, $.prototype.values = function() {
+                                    return this.$items.values();
+                                }, Object.defineProperty($.prototype, 'size', {
                                     get: function() {
-                                        return this.$items.size
+                                        return this.$items.size;
                                     },
                                     enumerable: !1,
                                     configurable: !0
-                                }), e.prototype.setIndex = function(t, e) {
-                                    this.$indexes.set(t, e)
-                                }, e.prototype.getIndex = function(t) {
-                                    return this.$indexes.get(t)
-                                }, e.prototype.getByIndex = function(t) {
-                                    return this.$items.get(this.$indexes.get(t))
-                                }, e.prototype.deleteByIndex = function(t) {
-                                    var e = this.$indexes.get(t);
-                                    this.$items.delete(e), this.$indexes.delete(t)
-                                }, e.prototype.toJSON = function() {
-                                    var t = {};
-                                    return this.forEach((function(e, n) {
-                                        t[n] = "function" == typeof e.toJSON ? e.toJSON() : e
-                                    })), t
-                                }, e.prototype.clone = function(t) {
-                                    var n;
-                                    return t ? n = Object.assign(new e, this) : (n = new e, this.forEach((function(t, e) {
-                                        t.$changes ? n.set(e, t.clone()) : n.set(e, t)
-                                    }))), n
-                                }, e
+                                }), $.prototype.setIndex = function(a, $) {
+                                    this.$indexes.set(a, $);
+                                }, $.prototype.getIndex = function(a) {
+                                    return this.$indexes.get(a);
+                                }, $.prototype.getByIndex = function(a) {
+                                    return this.$items.get(this.$indexes.get(a));
+                                }, $.prototype.deleteByIndex = function(a) {
+                                    var _ = this.$indexes.get(a);
+                                    this.$items.delete(_), this.$indexes.delete(a);
+                                }, $.prototype.toJSON = function() {
+                                    var _ = {};
+                                    return this.forEach(function($, L) {
+                                        _[L] = 'function' == typeof $.toJSON ? $.toJSON() : $;
+                                    }), _;
+                                }, $.prototype.clone = function(a) {
+                                    var _;
+                                    return a ? _ = Object.assign(new $(), this) : (_ = new $(), this.forEach(function(a, $) {
+                                        a.$changes ? _.set($, a.clone()) : _.set($, a);
+                                    })), _;
+                                }, $;
                             }(),
-                            g = {};
+                            $ = {};
 
-                        function m(t, e) {
-                            g[t] = e
+                        function _(a, K) {
+                            $[a] = K;
                         }
 
-                        function w(t) {
-                            return g[t]
+                        function ab(a) {
+                            return $[a];
                         }
-                        var E = function() {
-                            function t() {
-                                this.indexes = {}, this.fieldsByIndex = {}, this.deprecated = {}, this.descriptors = {}
+                        var bb = function() {
+                            function cb() {
+                                this.indexes = {}, this.fieldsByIndex = {}, this.deprecated = {}, this.descriptors = {};
                             }
-                            return t.create = function(e) {
-                                var n = new t;
-                                return n.schema = Object.assign({}, e && e.schema || {}), n.indexes = Object.assign({}, e && e.indexes || {}), n.fieldsByIndex = Object.assign({}, e && e.fieldsByIndex || {}), n.descriptors = Object.assign({}, e && e.descriptors || {}), n.deprecated = Object.assign({}, e && e.deprecated || {}), n
-                            }, t.prototype.addField = function(t, e) {
-                                var n = this.getNextFieldIndex();
-                                this.fieldsByIndex[n] = t, this.indexes[t] = n, this.schema[t] = Array.isArray(e) ? {
-                                    array: e[0]
-                                } : e
-                            }, t.prototype.hasField = function(t) {
-                                return void 0 !== this.indexes[t]
-                            }, t.prototype.addFilter = function(t, e) {
-                                return this.filters || (this.filters = {}, this.indexesWithFilters = []), this.filters[this.indexes[t]] = e, this.indexesWithFilters.push(this.indexes[t]), !0
-                            }, t.prototype.addChildrenFilter = function(t, e) {
-                                var n = this.indexes[t],
-                                    o = this.schema[t];
-                                if (w(Object.keys(o)[0])) return this.childFilters || (this.childFilters = {}), this.childFilters[n] = e, !0;
-                                console.warn("@filterChildren: field '".concat(t, "' can't have children. Ignoring filter."))
-                            }, t.prototype.getChildrenFilter = function(t) {
-                                return this.childFilters && this.childFilters[this.indexes[t]]
-                            }, t.prototype.getNextFieldIndex = function() {
-                                return Object.keys(this.schema || {}).length
-                            }, t
+                            return cb.create = function(K) {
+                                var db = new cb();
+                                return db.schema = Object.assign({}, K && K.schema || {}), db.indexes = Object.assign({}, K && K.indexes || {}), db.fieldsByIndex = Object.assign({}, K && K.fieldsByIndex || {}), db.descriptors = Object.assign({}, K && K.descriptors || {}), db.deprecated = Object.assign({}, K && K.deprecated || {}), db;
+                            }, cb.prototype.addField = function(cb, K) {
+                                var db = this.getNextFieldIndex();
+                                this.fieldsByIndex[db] = cb, this.indexes[cb] = db, this.schema[cb] = Array.isArray(K) ? {
+                                    array: K[0]
+                                } : K;
+                            }, cb.prototype.hasField = function(cb) {
+                                return void 0 !== this.indexes[cb];
+                            }, cb.prototype.addFilter = function(cb, K) {
+                                return this.filters || (this.filters = {}, this.indexesWithFilters = []), this.filters[this.indexes[cb]] = K, this.indexesWithFilters.push(this.indexes[cb]), !0;
+                            }, cb.prototype.addChildrenFilter = function(cb, K) {
+                                var db = this.indexes[cb],
+                                    eb = this.schema[cb];
+                                if (ab(Object.keys(eb)[0]))
+                                    return this.childFilters || (this.childFilters = {}), this.childFilters[db] = K, !0;
+                                console.warn('@filterChildren: field \''.concat(cb, '\' can\'t have children. Ignoring filter.'));
+                            }, cb.prototype.getChildrenFilter = function(cb) {
+                                return this.childFilters && this.childFilters[this.indexes[cb]];
+                            }, cb.prototype.getNextFieldIndex = function() {
+                                return Object.keys(this.schema || {}).length;
+                            }, cb;
                         }();
 
-                        function A(t) {
-                            return t._context && t._context.useFilters
+                        function cb(a) {
+                            return a._context && a._context.useFilters;
                         }
-                        var _ = function() {
-                                function t() {
-                                    this.types = {}, this.schemas = new Map, this.useFilters = !1
+                        var db = function() {
+                                function eb() {
+                                    this.types = {}, this.schemas = new Map(), this.useFilters = !1;
                                 }
-                                return t.prototype.has = function(t) {
-                                    return this.schemas.has(t)
-                                }, t.prototype.get = function(t) {
-                                    return this.types[t]
-                                }, t.prototype.add = function(t, e) {
-                                    void 0 === e && (e = this.schemas.size), t._definition = E.create(t._definition), t._typeid = e, this.types[e] = t, this.schemas.set(t, e)
-                                }, t.create = function(e) {
-                                    return void 0 === e && (e = {}),
-                                        function(n) {
-                                            return e.context || (e.context = new t), $(n, e)
-                                        }
-                                }, t
+                                return eb.prototype.has = function(eb) {
+                                    return this.schemas.has(eb);
+                                }, eb.prototype.get = function(eb) {
+                                    return this.types[eb];
+                                }, eb.prototype.add = function(eb, K) {
+                                    void 0 === K && (K = this.schemas.size), eb._definition = bb.create(eb._definition), eb._typeid = K, this.types[K] = eb, this.schemas.set(eb, K);
+                                }, eb.create = function(K) {
+                                    return void 0 === K && (K = {}),
+                                        function(L) {
+                                            return K.context || (K.context = new eb()), x(L, K);
+                                        };
+                                }, eb;
                             }(),
-                            O = new _;
+                            eb = new db();
 
-                        function $(t, e) {
-                            return void 0 === e && (e = {}),
-                                function(n, o) {
-                                    var r = e.context || O,
-                                        s = n.constructor;
-                                    if (s._context = r, !t) throw new Error("".concat(s.name, ': @type() reference provided for "').concat(o, "\" is undefined. Make sure you don't have any circular dependencies."));
-                                    r.has(s) || r.add(s);
-                                    var a = s._definition;
-                                    if (a.addField(o, t), a.descriptors[o]) {
-                                        if (a.deprecated[o]) return;
+                        function fb(a, K) {
+                            return void 0 === K && (K = {}),
+                                function(L, M) {
+                                    var gb = K.context || eb,
+                                        hb = L.constructor;
+                                    if (hb._context = gb, !a)
+                                        throw new Error(''.concat(hb.name, ': @type() reference provided for "').concat(M, '" is undefined. Make sure you don\'t have any circular dependencies.'));
+                                    gb.has(hb) || gb.add(hb);
+                                    var ib = hb._definition;
+                                    if (ib.addField(M, a), ib.descriptors[M]) {
+                                        if (ib.deprecated[M])
+                                            return;
                                         try {
-                                            throw new Error("@colyseus/schema: Duplicate '".concat(o, "' definition on '").concat(s.name, "'.\nCheck @type() annotation"))
-                                        } catch (t) {
-                                            var c = t.stack.split("\n")[4].trim();
-                                            throw new Error("".concat(t.message, " ").concat(c))
+                                            throw new Error('@colyseus/schema: Duplicate \''.concat(M, '\' definition on \'').concat(hb.name, '\'.\nCheck @type() annotation'));
+                                        } catch (a) {
+                                            var jb = a.stack.split('\n')[4].trim();
+                                            throw new Error(''.concat(a.message, ' ').concat(jb));
                                         }
                                     }
-                                    var f = p.is(t),
-                                        h = !f && y.is(t);
-                                    if ("string" != typeof t && !Rt.is(t)) {
-                                        var u = Object.values(t)[0];
-                                        "string" == typeof u || r.has(u) || r.add(u)
+                                    var jb = X.is(a),
+                                        kb = !jb && Z.is(a);
+                                    if ('string' != typeof a && !kc.is(a)) {
+                                        var lb = Object.values(a)[0];
+                                        'string' == typeof lb || gb.has(lb) || gb.add(lb);
                                     }
-                                    if (e.manual) a.descriptors[o] = {
-                                        enumerable: !0,
-                                        configurable: !0,
-                                        writable: !0
-                                    };
+                                    if (K.manual)
+                                        ib.descriptors[M] = {
+                                            enumerable: !0,
+                                            configurable: !0,
+                                            writable: !0
+                                        };
                                     else {
-                                        var d = "_".concat(o);
-                                        a.descriptors[d] = {
+                                        var lb = '_'.concat(M);
+                                        ib.descriptors[lb] = {
                                             enumerable: !1,
                                             configurable: !1,
                                             writable: !0
-                                        }, a.descriptors[o] = {
+                                        }, ib.descriptors[M] = {
                                             get: function() {
-                                                return this[d]
+                                                return this[lb];
                                             },
-                                            set: function(t) {
-                                                t !== this[d] && (null != t ? (!f || t instanceof p || (t = new(p.bind.apply(p, i([void 0], t, !1)))), !h || t instanceof y || (t = new y(t)), void 0 === t.$proxy && (h ? t = v(t) : f && (t = l(t))), this.$changes.change(o), t.$changes && t.$changes.setParent(this, this.$changes.root, this._definition.indexes[o])) : this[d] && this.$changes.delete(o), this[d] = t)
+                                            set: function(a) {
+                                                a !== this[lb] && (null != a ? (!jb || a instanceof X || (a = new(X.bind.apply(X, N([void 0], a, !1)))()), !kb || a instanceof Z || (a = new Z(a)), void 0 === a.$proxy && (kb ? a = Y(a) : jb && (a = W(a))), this.$changes.change(M), a.$changes && a.$changes.setParent(this, this.$changes.root, this._definition.indexes[M])) : this[lb] && this.$changes.delete(M), this[lb] = a);
                                             },
                                             enumerable: !0,
                                             configurable: !0
-                                        }
+                                        };
                                     }
-                                }
+                                };
                         }
 
-                        function b(t) {
-                            return function(e, n) {
-                                var o = e.constructor;
-                                o._definition.addFilter(n, t) && (o._context.useFilters = !0)
-                            }
+                        function gb(a) {
+                            return function(K, L) {
+                                var hb = K.constructor;
+                                hb._definition.addFilter(L, a) && (hb._context.useFilters = !0);
+                            };
                         }
 
-                        function I(t) {
-                            return function(e, n) {
-                                var o = e.constructor;
-                                o._definition.addChildrenFilter(n, t) && (o._context.useFilters = !0)
-                            }
+                        function hb(a) {
+                            return function(K, L) {
+                                var ib = K.constructor;
+                                ib._definition.addChildrenFilter(L, a) && (ib._context.useFilters = !0);
+                            };
                         }
 
-                        function T(t) {
-                            return void 0 === t && (t = !0),
-                                function(e, n) {
-                                    var o = e.constructor._definition;
-                                    o.deprecated[n] = !0, t && (o.descriptors[n] = {
+                        function ib(a) {
+                            return void 0 === a && (a = !0),
+                                function(K, L) {
+                                    var jb = K.constructor._definition;
+                                    jb.deprecated[L] = !0, a && (jb.descriptors[L] = {
                                         get: function() {
-                                            throw new Error("".concat(n, " is deprecated."))
+                                            throw new Error(''.concat(L, ' is deprecated.'));
                                         },
-                                        set: function(t) {},
+                                        set: function(a) {},
                                         enumerable: !1,
                                         configurable: !0
-                                    })
-                                }
+                                    });
+                                };
                         }
 
-                        function x(t, e, n) {
-                            for (var o in void 0 === n && (n = {}), n.context || (n.context = t._context || n.context || O), e) $(e[o], n)(t.prototype, o);
-                            return t
+                        function jb(a, K, L) {
+                            for (var kb in (void 0 === L && (L = {}), L.context || (L.context = a._context || L.context || eb), K))
+                                fb(K[kb], L)(a.prototype, kb);
+                            return a;
                         }
 
-                        function R(t) {
-                            for (var e = 0, n = 0, o = 0, i = t.length; o < i; o++)(e = t.charCodeAt(o)) < 128 ? n += 1 : e < 2048 ? n += 2 : e < 55296 || e >= 57344 ? n += 3 : (o++, n += 4);
-                            return n
+                        function kb(a) {
+                            for (var lb = 0, mb = 0, nb = 0, ob = a.length; nb < ob; nb++)
+                                (lb = a.charCodeAt(nb)) < 128 ? mb += 1 : lb < 2048 ? mb += 2 : lb < 55296 || lb >= 57344 ? mb += 3 : (nb++, mb += 4);
+                            return mb;
                         }
 
-                        function P(t, e, n) {
-                            for (var o = 0, i = 0, r = n.length; i < r; i++)(o = n.charCodeAt(i)) < 128 ? t[e++] = o : o < 2048 ? (t[e++] = 192 | o >> 6, t[e++] = 128 | 63 & o) : o < 55296 || o >= 57344 ? (t[e++] = 224 | o >> 12, t[e++] = 128 | o >> 6 & 63, t[e++] = 128 | 63 & o) : (i++, o = 65536 + ((1023 & o) << 10 | 1023 & n.charCodeAt(i)), t[e++] = 240 | o >> 18, t[e++] = 128 | o >> 12 & 63, t[e++] = 128 | o >> 6 & 63, t[e++] = 128 | 63 & o)
+                        function lb(a, K, L) {
+                            for (var mb = 0, nb = 0, ob = L.length; nb < ob; nb++)
+                                (mb = L.charCodeAt(nb)) < 128 ? a[K++] = mb : mb < 2048 ? (a[K++] = 192 | mb >> 6, a[K++] = 128 | 63 & mb) : mb < 55296 || mb >= 57344 ? (a[K++] = 224 | mb >> 12, a[K++] = 128 | mb >> 6 & 63, a[K++] = 128 | 63 & mb) : (nb++, mb = 65536 + ((1023 & mb) << 10 | 1023 & L.charCodeAt(nb)), a[K++] = 240 | mb >> 18, a[K++] = 128 | mb >> 12 & 63, a[K++] = 128 | mb >> 6 & 63, a[K++] = 128 | 63 & mb);
                         }
 
-                        function C(t, e) {
-                            t.push(255 & e)
+                        function mb(a, K) {
+                            a.push(255 & K);
                         }
 
-                        function k(t, e) {
-                            t.push(255 & e)
+                        function nb(a, K) {
+                            a.push(255 & K);
                         }
 
-                        function D(t, e) {
-                            t.push(255 & e), t.push(e >> 8 & 255)
+                        function ob(a, K) {
+                            a.push(255 & K), a.push(K >> 8 & 255);
                         }
 
-                        function N(t, e) {
-                            t.push(255 & e), t.push(e >> 8 & 255)
+                        function pb(a, K) {
+                            a.push(255 & K), a.push(K >> 8 & 255);
                         }
 
-                        function S(t, e) {
-                            t.push(255 & e), t.push(e >> 8 & 255), t.push(e >> 16 & 255), t.push(e >> 24 & 255)
+                        function qb(a, K) {
+                            a.push(255 & K), a.push(K >> 8 & 255), a.push(K >> 16 & 255), a.push(K >> 24 & 255);
                         }
 
-                        function M(t, e) {
-                            var n = e >> 24,
-                                o = e >> 16,
-                                i = e >> 8,
-                                r = e;
-                            t.push(255 & r), t.push(255 & i), t.push(255 & o), t.push(255 & n)
+                        function rb(a, K) {
+                            var sb = K >> 24,
+                                tb = K >> 16,
+                                ub = K >> 8,
+                                vb = wb;
+                            a.push(255 & vb), a.push(255 & ub), a.push(255 & tb), a.push(255 & sb);
                         }
 
-                        function L(t, e) {
-                            var n = Math.floor(e / Math.pow(2, 32));
-                            M(t, e >>> 0), M(t, n)
+                        function sb(a, K) {
+                            var tb = Math.floor(K / Math.pow(2, 32));
+                            rb(a, K >>> 0), rb(a, tb);
                         }
 
-                        function j(t, e) {
-                            var n = e / Math.pow(2, 32) >> 0;
-                            M(t, e >>> 0), M(t, n)
+                        function tb(a, K) {
+                            var ub = K / Math.pow(2, 32) >> 0;
+                            rb(a, K >>> 0), rb(a, ub);
                         }
 
-                        function U(t, e) {
-                            J(t, e)
+                        function ub(a, K) {
+                            zb(a, K);
                         }
 
-                        function F(t, e) {
-                            z(t, e)
+                        function vb(a, K) {
+                            Ab(a, K);
                         }
-                        var H = new Int32Array(2),
-                            B = new Float32Array(H.buffer),
-                            V = new Float64Array(H.buffer);
+                        var wb = new Int32Array(2),
+                            xb = new Float32Array(wb.buffer),
+                            yb = new Float64Array(wb.buffer);
 
-                        function J(t, e) {
-                            B[0] = e, S(t, H[0])
-                        }
-
-                        function z(t, e) {
-                            V[0] = e, S(t, H[0]), S(t, H[1])
+                        function zb(a, K) {
+                            xb[0] = K, qb(a, wb[0]);
                         }
 
-                        function W(t, e) {
-                            return k(t, e ? 1 : 0)
+                        function Ab(a, K) {
+                            yb[0] = K, qb(a, wb[0]), qb(a, wb[1]);
                         }
 
-                        function q(t, e) {
-                            e || (e = "");
-                            var n = R(e),
-                                o = 0;
-                            if (n < 32) t.push(160 | n), o = 1;
-                            else if (n < 256) t.push(217), k(t, n), o = 2;
-                            else if (n < 65536) t.push(218), N(t, n), o = 3;
+                        function Bb(a, K) {
+                            return nb(a, K ? 1 : 0);
+                        }
+
+                        function Cb(a, K) {
+                            K || (K = '');
+                            var Db = kb(K),
+                                Eb = 0;
+                            if (Db < 32)
+                                a.push(160 | Db), Eb = 1;
+                            else if (Db < 256)
+                                a.push(217), nb(a, Db), Eb = 2;
+                            else if (Db < 65536)
+                                a.push(218), pb(a, Db), Eb = 3;
                             else {
-                                if (!(n < 4294967296)) throw new Error("String too long");
-                                t.push(219), M(t, n), o = 5
+                                if (!(Db < 4294967296))
+                                    throw new Error('String too long');
+                                a.push(219), rb(a, Db), Eb = 5;
                             }
-                            return P(t, t.length, e), o + n
+                            return lb(a, a.length, K), Eb + Db;
                         }
 
-                        function K(t, e) {
-                            return isNaN(e) ? K(t, 0) : isFinite(e) ? e !== (0 | e) ? (t.push(203), z(t, e), 9) : e >= 0 ? e < 128 ? (k(t, e), 1) : e < 256 ? (t.push(204), k(t, e), 2) : e < 65536 ? (t.push(205), N(t, e), 3) : e < 4294967296 ? (t.push(206), M(t, e), 5) : (t.push(207), j(t, e), 9) : e >= -32 ? (t.push(224 | e + 32), 1) : e >= -128 ? (t.push(208), C(t, e), 2) : e >= -32768 ? (t.push(209), D(t, e), 3) : e >= -2147483648 ? (t.push(210), S(t, e), 5) : (t.push(211), L(t, e), 9) : K(t, e > 0 ? Number.MAX_SAFE_INTEGER : -Number.MAX_SAFE_INTEGER)
+                        function Db(a, K) {
+                            return isNaN(K) ? Db(a, 0) : isFinite(K) ? K !== (0 | K) ? (a.push(203), Ab(a, K), 9) : K >= 0 ? K < 128 ? (nb(a, K), 1) : K < 256 ? (a.push(204), nb(a, K), 2) : K < 65536 ? (a.push(205), pb(a, K), 3) : K < 4294967296 ? (a.push(206), rb(a, K), 5) : (a.push(207), tb(a, K), 9) : K >= -32 ? (a.push(224 | K + 32), 1) : K >= -128 ? (a.push(208), mb(a, K), 2) : K >= -32768 ? (a.push(209), ob(a, K), 3) : K >= -2147483648 ? (a.push(210), qb(a, K), 5) : (a.push(211), sb(a, K), 9) : Db(a, K > 0 ? Number.MAX_SAFE_INTEGER : -Number.MAX_SAFE_INTEGER);
                         }
-                        var Y = Object.freeze({
+                        var Eb = Object.freeze({
                             __proto__: null,
-                            utf8Write: P,
-                            int8: C,
-                            uint8: k,
-                            int16: D,
-                            uint16: N,
-                            int32: S,
-                            uint32: M,
-                            int64: L,
-                            uint64: j,
-                            float32: U,
-                            float64: F,
-                            writeFloat32: J,
-                            writeFloat64: z,
-                            boolean: W,
-                            string: q,
-                            number: K
+                            utf8Write: lb,
+                            int8: mb,
+                            uint8: nb,
+                            int16: ob,
+                            uint16: pb,
+                            int32: qb,
+                            uint32: rb,
+                            int64: sb,
+                            uint64: tb,
+                            float32: ub,
+                            float64: vb,
+                            writeFloat32: zb,
+                            writeFloat64: Ab,
+                            boolean: Bb,
+                            string: Cb,
+                            number: Db
                         });
 
-                        function G(t, e, n) {
-                            for (var o = "", i = 0, r = e, s = e + n; r < s; r++) {
-                                var a = t[r];
-                                0 != (128 & a) ? 192 != (224 & a) ? 224 != (240 & a) ? 240 != (248 & a) ? console.error("Invalid byte " + a.toString(16)) : (i = (7 & a) << 18 | (63 & t[++r]) << 12 | (63 & t[++r]) << 6 | (63 & t[++r]) << 0) >= 65536 ? (i -= 65536, o += String.fromCharCode(55296 + (i >>> 10), 56320 + (1023 & i))) : o += String.fromCharCode(i) : o += String.fromCharCode((15 & a) << 12 | (63 & t[++r]) << 6 | (63 & t[++r]) << 0) : o += String.fromCharCode((31 & a) << 6 | 63 & t[++r]) : o += String.fromCharCode(a)
+                        function Fb(a, K, L) {
+                            for (var Gb = '', Hb = 0, Ib = Jb, Kb = Jb + L; Ib < Kb; Ib++) {
+                                var Lb = a[Ib];
+                                0 != (128 & Lb) ? 192 != (224 & Lb) ? 224 != (240 & Lb) ? 240 != (248 & Lb) ? console.error('Invalid byte ' + Lb.toString(16)) : (Hb = (7 & Lb) << 18 | (63 & a[++Ib]) << 12 | (63 & a[++Ib]) << 6 | (63 & a[++Ib]) << 0) >= 65536 ? (Hb -= 65536, Gb += String.fromCharCode(55296 + (Hb >>> 10), 56320 + (1023 & Hb))) : Gb += String.fromCharCode(Hb) : Gb += String.fromCharCode((15 & Lb) << 12 | (63 & a[++Ib]) << 6 | (63 & a[++Ib]) << 0) : Gb += String.fromCharCode((31 & Lb) << 6 | 63 & a[++Ib]) : Gb += String.fromCharCode(Lb);
                             }
-                            return o
+                            return Gb;
                         }
 
-                        function X(t, e) {
-                            return Q(t, e) << 24 >> 24
+                        function Gb(a, K) {
+                            return Hb(a, K) << 24 >> 24;
                         }
 
-                        function Q(t, e) {
-                            return t[e.offset++]
+                        function Hb(a, K) {
+                            return a[K.offset++];
                         }
 
-                        function Z(t, e) {
-                            return tt(t, e) << 16 >> 16
+                        function Ib(a, K) {
+                            return Jb(a, K) << 16 >> 16;
                         }
 
-                        function tt(t, e) {
-                            return t[e.offset++] | t[e.offset++] << 8
+                        function Jb(a, K) {
+                            return a[K.offset++] | a[K.offset++] << 8;
                         }
 
-                        function et(t, e) {
-                            return t[e.offset++] | t[e.offset++] << 8 | t[e.offset++] << 16 | t[e.offset++] << 24
+                        function Kb(a, K) {
+                            return a[K.offset++] | a[K.offset++] << 8 | a[K.offset++] << 16 | a[K.offset++] << 24;
                         }
 
-                        function nt(t, e) {
-                            return et(t, e) >>> 0
+                        function Lb(a, K) {
+                            return Kb(a, K) >>> 0;
                         }
 
-                        function ot(t, e) {
-                            return ht(t, e)
+                        function Mb(a, K) {
+                            return Tb(a, K);
                         }
 
-                        function it(t, e) {
-                            return ut(t, e)
+                        function Nb(a, K) {
+                            return Ub(a, K);
                         }
 
-                        function rt(t, e) {
-                            var n = nt(t, e);
-                            return et(t, e) * Math.pow(2, 32) + n
+                        function Ob(a, K) {
+                            var Pb = Lb(a, K);
+                            return Kb(a, K) * Math.pow(2, 32) + Pb;
                         }
 
-                        function st(t, e) {
-                            var n = nt(t, e);
-                            return nt(t, e) * Math.pow(2, 32) + n
+                        function Pb(a, K) {
+                            var Qb = Lb(a, K);
+                            return Lb(a, K) * Math.pow(2, 32) + Qb;
                         }
-                        var at = new Int32Array(2),
-                            ct = new Float32Array(at.buffer),
-                            ft = new Float64Array(at.buffer);
+                        var Qb = new Int32Array(2),
+                            Rb = new Float32Array(Qb.buffer),
+                            Sb = new Float64Array(Qb.buffer);
 
-                        function ht(t, e) {
-                            return at[0] = et(t, e), ct[0]
-                        }
-
-                        function ut(t, e) {
-                            return at[0] = et(t, e), at[1] = et(t, e), ft[0]
+                        function Tb(a, K) {
+                            return Qb[0] = Kb(a, K), Rb[0];
                         }
 
-                        function dt(t, e) {
-                            return Q(t, e) > 0
+                        function Ub(a, K) {
+                            return Qb[0] = Kb(a, K), Qb[1] = Kb(a, K), Sb[0];
                         }
 
-                        function lt(t, e) {
-                            var n, o = t[e.offset++];
-                            o < 192 ? n = 31 & o : 217 === o ? n = Q(t, e) : 218 === o ? n = tt(t, e) : 219 === o && (n = nt(t, e));
-                            var i = G(t, e.offset, n);
-                            return e.offset += n, i
+                        function Vb(a, K) {
+                            return Hb(a, K) > 0;
                         }
 
-                        function pt(t, e) {
-                            var n = t[e.offset];
-                            return n < 192 && n > 160 || 217 === n || 218 === n || 219 === n
+                        function Wb(a, K) {
+                            var Xb, Yb = a[K.offset++];
+                            Yb < 192 ? Xb = 31 & Yb : 217 === Yb ? Xb = Hb(a, K) : 218 === Yb ? Xb = Jb(a, K) : 219 === Yb && (Xb = Lb(a, K));
+                            var Zb = Fb(a, K.offset, Xb);
+                            return K.offset += Xb, Zb;
                         }
 
-                        function vt(t, e) {
-                            var n = t[e.offset++];
-                            return n < 128 ? n : 202 === n ? ht(t, e) : 203 === n ? ut(t, e) : 204 === n ? Q(t, e) : 205 === n ? tt(t, e) : 206 === n ? nt(t, e) : 207 === n ? st(t, e) : 208 === n ? X(t, e) : 209 === n ? Z(t, e) : 210 === n ? et(t, e) : 211 === n ? rt(t, e) : n > 223 ? -1 * (255 - n + 1) : void 0
+                        function Xb(a, K) {
+                            var Yb = a[K.offset];
+                            return Yb < 192 && Yb > 160 || 217 === Yb || 218 === Yb || 219 === Yb;
                         }
 
-                        function yt(t, e) {
-                            var n = t[e.offset];
-                            return n < 128 || n >= 202 && n <= 211
+                        function Yb(a, K) {
+                            var Zb = a[K.offset++];
+                            return Zb < 128 ? Zb : 202 === Zb ? Tb(a, K) : 203 === Zb ? Ub(a, K) : 204 === Zb ? Hb(a, K) : 205 === Zb ? Jb(a, K) : 206 === Zb ? Lb(a, K) : 207 === Zb ? Pb(a, K) : 208 === Zb ? Gb(a, K) : 209 === Zb ? Ib(a, K) : 210 === Zb ? Kb(a, K) : 211 === Zb ? Ob(a, K) : Zb > 223 ? -1 * (255 - Zb + 1) : void 0;
                         }
 
-                        function gt(t, e) {
-                            return t[e.offset] < 160
+                        function Zb(a, K) {
+                            var $b = a[K.offset];
+                            return $b < 128 || $b >= 202 && $b <= 211;
                         }
 
-                        function mt(t, e) {
-                            return t[e.offset - 1] === s && (t[e.offset] < 128 || t[e.offset] >= 202 && t[e.offset] <= 211)
+                        function $b(a, K) {
+                            return a[K.offset] < 160;
                         }
-                        var wt = Object.freeze({
+
+                        function _b(a, K) {
+                            return a[K.offset - 1] === P && (a[K.offset] < 128 || a[K.offset] >= 202 && a[K.offset] <= 211);
+                        }
+                        var ac = Object.freeze({
                                 __proto__: null,
-                                int8: X,
-                                uint8: Q,
-                                int16: Z,
-                                uint16: tt,
-                                int32: et,
-                                uint32: nt,
-                                float32: ot,
-                                float64: it,
-                                int64: rt,
-                                uint64: st,
-                                readFloat32: ht,
-                                readFloat64: ut,
-                                boolean: dt,
-                                string: lt,
-                                stringCheck: pt,
-                                number: vt,
-                                numberCheck: yt,
-                                arrayCheck: gt,
-                                switchStructureCheck: mt
+                                int8: Gb,
+                                uint8: Hb,
+                                int16: Ib,
+                                uint16: Jb,
+                                int32: Kb,
+                                uint32: Lb,
+                                float32: Mb,
+                                float64: Nb,
+                                int64: Ob,
+                                uint64: Pb,
+                                readFloat32: Tb,
+                                readFloat64: Ub,
+                                boolean: Vb,
+                                string: Wb,
+                                stringCheck: Xb,
+                                number: Yb,
+                                numberCheck: Zb,
+                                arrayCheck: $b,
+                                switchStructureCheck: _b
                             }),
-                            Et = function() {
-                                function e(t) {
-                                    var e = this;
-                                    this.$changes = new c(this), this.$items = new Map, this.$indexes = new Map, this.$refId = 0, t && t.forEach((function(t) {
-                                        return e.add(t)
-                                    }))
+                            bc = function() {
+                                function cc(a) {
+                                    var dc = this;
+                                    this.$changes = new R(this), this.$items = new Map(), this.$indexes = new Map(), this.$refId = 0, a && a.forEach(function(a) {
+                                        return dc.add(a);
+                                    });
                                 }
-                                return e.prototype.onAdd = function(e, n) {
-                                    return void 0 === n && (n = !0), f(this.$callbacks || (this.$callbacks = []), t.OPERATION.ADD, e, n ? this.$items : void 0)
-                                }, e.prototype.onRemove = function(e) {
-                                    return f(this.$callbacks || (this.$callbacks = []), t.OPERATION.DELETE, e)
-                                }, e.prototype.onChange = function(e) {
-                                    return f(this.$callbacks || (this.$callbacks = []), t.OPERATION.REPLACE, e)
-                                }, e.is = function(t) {
-                                    return void 0 !== t.collection
-                                }, e.prototype.add = function(t) {
-                                    var e = this.$refId++;
-                                    return void 0 !== t.$changes && t.$changes.setParent(this, this.$changes.root, e), this.$changes.indexes[e] = e, this.$indexes.set(e, e), this.$items.set(e, t), this.$changes.change(e), e
-                                }, e.prototype.at = function(t) {
-                                    var e = Array.from(this.$items.keys())[t];
-                                    return this.$items.get(e)
-                                }, e.prototype.entries = function() {
-                                    return this.$items.entries()
-                                }, e.prototype.delete = function(t) {
-                                    for (var e, n, o = this.$items.entries();
-                                        (n = o.next()) && !n.done;)
-                                        if (t === n.value[1]) {
-                                            e = n.value[0];
-                                            break
-                                        } return void 0 !== e && (this.$changes.delete(e), this.$indexes.delete(e), this.$items.delete(e))
-                                }, e.prototype.clear = function(e) {
-                                    this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), e && h.call(this, e), this.$items.clear(), this.$changes.operation({
-                                        index: 0,
-                                        op: t.OPERATION.CLEAR
-                                    }), this.$changes.touchParents()
-                                }, e.prototype.has = function(t) {
-                                    return Array.from(this.$items.values()).some((function(e) {
-                                        return e === t
-                                    }))
-                                }, e.prototype.forEach = function(t) {
-                                    var e = this;
-                                    this.$items.forEach((function(n, o, i) {
-                                        return t(n, o, e)
-                                    }))
-                                }, e.prototype.values = function() {
-                                    return this.$items.values()
-                                }, Object.defineProperty(e.prototype, "size", {
-                                    get: function() {
-                                        return this.$items.size
-                                    },
-                                    enumerable: !1,
-                                    configurable: !0
-                                }), e.prototype.setIndex = function(t, e) {
-                                    this.$indexes.set(t, e)
-                                }, e.prototype.getIndex = function(t) {
-                                    return this.$indexes.get(t)
-                                }, e.prototype.getByIndex = function(t) {
-                                    return this.$items.get(this.$indexes.get(t))
-                                }, e.prototype.deleteByIndex = function(t) {
-                                    var e = this.$indexes.get(t);
-                                    this.$items.delete(e), this.$indexes.delete(t)
-                                }, e.prototype.toArray = function() {
-                                    return Array.from(this.$items.values())
-                                }, e.prototype.toJSON = function() {
-                                    var t = [];
-                                    return this.forEach((function(e, n) {
-                                        t.push("function" == typeof e.toJSON ? e.toJSON() : e)
-                                    })), t
-                                }, e.prototype.clone = function(t) {
-                                    var n;
-                                    return t ? n = Object.assign(new e, this) : (n = new e, this.forEach((function(t) {
-                                        t.$changes ? n.add(t.clone()) : n.add(t)
-                                    }))), n
-                                }, e
-                            }(),
-                            At = function() {
-                                function e(t) {
-                                    var e = this;
-                                    this.$changes = new c(this), this.$items = new Map, this.$indexes = new Map, this.$refId = 0, t && t.forEach((function(t) {
-                                        return e.add(t)
-                                    }))
-                                }
-                                return e.prototype.onAdd = function(e, n) {
-                                    return void 0 === n && (n = !0), f(this.$callbacks || (this.$callbacks = []), t.OPERATION.ADD, e, n ? this.$items : void 0)
-                                }, e.prototype.onRemove = function(e) {
-                                    return f(this.$callbacks || (this.$callbacks = []), t.OPERATION.DELETE, e)
-                                }, e.prototype.onChange = function(e) {
-                                    return f(this.$callbacks || (this.$callbacks = []), t.OPERATION.REPLACE, e)
-                                }, e.is = function(t) {
-                                    return void 0 !== t.set
-                                }, e.prototype.add = function(e) {
-                                    var n, o;
-                                    if (this.has(e)) return !1;
-                                    var i = this.$refId++;
-                                    void 0 !== e.$changes && e.$changes.setParent(this, this.$changes.root, i);
-                                    var r = null !== (o = null === (n = this.$changes.indexes[i]) || void 0 === n ? void 0 : n.op) && void 0 !== o ? o : t.OPERATION.ADD;
-                                    return this.$changes.indexes[i] = i, this.$indexes.set(i, i), this.$items.set(i, e), this.$changes.change(i, r), i
-                                }, e.prototype.entries = function() {
-                                    return this.$items.entries()
-                                }, e.prototype.delete = function(t) {
-                                    for (var e, n, o = this.$items.entries();
-                                        (n = o.next()) && !n.done;)
-                                        if (t === n.value[1]) {
-                                            e = n.value[0];
-                                            break
-                                        } return void 0 !== e && (this.$changes.delete(e), this.$indexes.delete(e), this.$items.delete(e))
-                                }, e.prototype.clear = function(e) {
-                                    this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), e && h.call(this, e), this.$items.clear(), this.$changes.operation({
-                                        index: 0,
-                                        op: t.OPERATION.CLEAR
-                                    }), this.$changes.touchParents()
-                                }, e.prototype.has = function(t) {
-                                    for (var e, n = this.$items.values(), o = !1;
-                                        (e = n.next()) && !e.done;)
-                                        if (t === e.value) {
-                                            o = !0;
-                                            break
-                                        } return o
-                                }, e.prototype.forEach = function(t) {
-                                    var e = this;
-                                    this.$items.forEach((function(n, o, i) {
-                                        return t(n, o, e)
-                                    }))
-                                }, e.prototype.values = function() {
-                                    return this.$items.values()
-                                }, Object.defineProperty(e.prototype, "size", {
-                                    get: function() {
-                                        return this.$items.size
-                                    },
-                                    enumerable: !1,
-                                    configurable: !0
-                                }), e.prototype.setIndex = function(t, e) {
-                                    this.$indexes.set(t, e)
-                                }, e.prototype.getIndex = function(t) {
-                                    return this.$indexes.get(t)
-                                }, e.prototype.getByIndex = function(t) {
-                                    return this.$items.get(this.$indexes.get(t))
-                                }, e.prototype.deleteByIndex = function(t) {
-                                    var e = this.$indexes.get(t);
-                                    this.$items.delete(e), this.$indexes.delete(t)
-                                }, e.prototype.toArray = function() {
-                                    return Array.from(this.$items.values())
-                                }, e.prototype.toJSON = function() {
-                                    var t = [];
-                                    return this.forEach((function(e, n) {
-                                        t.push("function" == typeof e.toJSON ? e.toJSON() : e)
-                                    })), t
-                                }, e.prototype.clone = function(t) {
-                                    var n;
-                                    return t ? n = Object.assign(new e, this) : (n = new e, this.forEach((function(t) {
-                                        t.$changes ? n.add(t.clone()) : n.add(t)
-                                    }))), n
-                                }, e
-                            }(),
-                            _t = function() {
-                                function t() {
-                                    this.refIds = new WeakSet, this.containerIndexes = new WeakMap
-                                }
-                                return t.prototype.addRefId = function(t) {
-                                    this.refIds.has(t) || (this.refIds.add(t), this.containerIndexes.set(t, new Set))
-                                }, t.get = function(e) {
-                                    return void 0 === e.$filterState && (e.$filterState = new t), e.$filterState
-                                }, t
-                            }(),
-                            Ot = function() {
-                                function t() {
-                                    this.refs = new Map, this.refCounts = {}, this.deletedRefs = new Set, this.nextUniqueId = 0
-                                }
-                                return t.prototype.getNextUniqueId = function() {
-                                    return this.nextUniqueId++
-                                }, t.prototype.addRef = function(t, e, n) {
-                                    void 0 === n && (n = !0), this.refs.set(t, e), n && (this.refCounts[t] = (this.refCounts[t] || 0) + 1)
-                                }, t.prototype.removeRef = function(t) {
-                                    this.refCounts[t] = this.refCounts[t] - 1, this.deletedRefs.add(t)
-                                }, t.prototype.clearRefs = function() {
-                                    this.refs.clear(), this.deletedRefs.clear(), this.refCounts = {}
-                                }, t.prototype.garbageCollectDeletedRefs = function() {
-                                    var t = this;
-                                    this.deletedRefs.forEach((function(e) {
-                                        if (!(t.refCounts[e] > 0)) {
-                                            var n = t.refs.get(e);
-                                            if (n instanceof Rt)
-                                                for (var o in n._definition.schema) "string" != typeof n._definition.schema[o] && n[o] && n[o].$changes && t.removeRef(n[o].$changes.refId);
-                                            else {
-                                                var i = n.$changes.parent._definition,
-                                                    r = i.schema[i.fieldsByIndex[n.$changes.parentIndex]];
-                                                "function" == typeof Object.values(r)[0] && Array.from(n.values()).forEach((function(e) {
-                                                    return t.removeRef(e.$changes.refId)
-                                                }))
-                                            }
-                                            t.refs.delete(e), delete t.refCounts[e]
+                                return cc.prototype.onAdd = function(cc, L) {
+                                    return void 0 === L && (L = !0), S(this.$callbacks || (this.$callbacks = []), a.OPERATION.ADD, cc, L ? this.$items : void 0);
+                                }, cc.prototype.onRemove = function(cc) {
+                                    return S(this.$callbacks || (this.$callbacks = []), a.OPERATION.DELETE, cc);
+                                }, cc.prototype.onChange = function(cc) {
+                                    return S(this.$callbacks || (this.$callbacks = []), a.OPERATION.REPLACE, cc);
+                                }, cc.is = function(a) {
+                                    return void 0 !== a.collection;
+                                }, cc.prototype.add = function(a) {
+                                    var dc = this.$refId++;
+                                    return void 0 !== a.$changes && a.$changes.setParent(this, this.$changes.root, dc), this.$changes.indexes[dc] = dc, this.$indexes.set(dc, dc), this.$items.set(dc, a), this.$changes.change(dc), dc;
+                                }, cc.prototype.at = function(a) {
+                                    var dc = Array.from(this.$items.keys())[a];
+                                    return this.$items.get(dc);
+                                }, cc.prototype.entries = function() {
+                                    return this.$items.entries();
+                                }, cc.prototype.delete = function(a) {
+                                    for (var dc, ec, fc = this.$items.entries();
+                                        (ec = fc.next()) && !ec.done;)
+                                        if (a === ec.value[1]) {
+                                            dc = ec.value[0];
+                                            break;
                                         }
-                                    })), this.deletedRefs.clear()
-                                }, t
+                                    return void 0 !== dc && (this.$changes.delete(dc), this.$indexes.delete(dc), this.$items.delete(dc));
+                                }, cc.prototype.clear = function(cc) {
+                                    this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), cc && T.call(this, cc), this.$items.clear(), this.$changes.operation({
+                                        index: 0,
+                                        op: a.OPERATION.CLEAR
+                                    }), this.$changes.touchParents();
+                                }, cc.prototype.has = function(a) {
+                                    return Array.from(this.$items.values()).some(function(cc) {
+                                        return cc === a;
+                                    });
+                                }, cc.prototype.forEach = function(a) {
+                                    var dc = this;
+                                    this.$items.forEach(function(L, M, N) {
+                                        return a(L, M, dc);
+                                    });
+                                }, cc.prototype.values = function() {
+                                    return this.$items.values();
+                                }, Object.defineProperty(cc.prototype, 'size', {
+                                    get: function() {
+                                        return this.$items.size;
+                                    },
+                                    enumerable: !1,
+                                    configurable: !0
+                                }), cc.prototype.setIndex = function(a, cc) {
+                                    this.$indexes.set(a, cc);
+                                }, cc.prototype.getIndex = function(a) {
+                                    return this.$indexes.get(a);
+                                }, cc.prototype.getByIndex = function(a) {
+                                    return this.$items.get(this.$indexes.get(a));
+                                }, cc.prototype.deleteByIndex = function(a) {
+                                    var dc = this.$indexes.get(a);
+                                    this.$items.delete(dc), this.$indexes.delete(a);
+                                }, cc.prototype.toArray = function() {
+                                    return Array.from(this.$items.values());
+                                }, cc.prototype.toJSON = function() {
+                                    var dc = [];
+                                    return this.forEach(function(cc, L) {
+                                        dc.push('function' == typeof cc.toJSON ? cc.toJSON() : cc);
+                                    }), dc;
+                                }, cc.prototype.clone = function(a) {
+                                    var dc;
+                                    return a ? dc = Object.assign(new cc(), this) : (dc = new cc(), this.forEach(function(a) {
+                                        a.$changes ? dc.add(a.clone()) : dc.add(a);
+                                    })), dc;
+                                }, cc;
                             }(),
-                            $t = function(t) {
-                                function e() {
-                                    return null !== t && t.apply(this, arguments) || this
+                            cc = function() {
+                                function dc(a) {
+                                    var ec = this;
+                                    this.$changes = new R(this), this.$items = new Map(), this.$indexes = new Map(), this.$refId = 0, a && a.forEach(function(a) {
+                                        return ec.add(a);
+                                    });
                                 }
-                                return n(e, t), e
+                                return dc.prototype.onAdd = function(dc, L) {
+                                    return void 0 === L && (L = !0), S(this.$callbacks || (this.$callbacks = []), a.OPERATION.ADD, dc, L ? this.$items : void 0);
+                                }, dc.prototype.onRemove = function(dc) {
+                                    return S(this.$callbacks || (this.$callbacks = []), a.OPERATION.DELETE, dc);
+                                }, dc.prototype.onChange = function(dc) {
+                                    return S(this.$callbacks || (this.$callbacks = []), a.OPERATION.REPLACE, dc);
+                                }, dc.is = function(a) {
+                                    return void 0 !== a.set;
+                                }, dc.prototype.add = function(dc) {
+                                    var ec, fc;
+                                    if (this.has(dc))
+                                        return !1;
+                                    var gc = this.$refId++;
+                                    void 0 !== dc.$changes && dc.$changes.setParent(this, this.$changes.root, gc);
+                                    var hc = null !== (fc = null === (ec = this.$changes.indexes[gc]) || void 0 === ec ? void 0 : ec.op) && void 0 !== fc ? fc : a.OPERATION.ADD;
+                                    return this.$changes.indexes[gc] = gc, this.$indexes.set(gc, gc), this.$items.set(gc, dc), this.$changes.change(gc, hc), gc;
+                                }, dc.prototype.entries = function() {
+                                    return this.$items.entries();
+                                }, dc.prototype.delete = function(a) {
+                                    for (var ec, fc, gc = this.$items.entries();
+                                        (fc = gc.next()) && !fc.done;)
+                                        if (a === fc.value[1]) {
+                                            ec = fc.value[0];
+                                            break;
+                                        }
+                                    return void 0 !== ec && (this.$changes.delete(ec), this.$indexes.delete(ec), this.$items.delete(ec));
+                                }, dc.prototype.clear = function(dc) {
+                                    this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), dc && T.call(this, dc), this.$items.clear(), this.$changes.operation({
+                                        index: 0,
+                                        op: a.OPERATION.CLEAR
+                                    }), this.$changes.touchParents();
+                                }, dc.prototype.has = function(a) {
+                                    for (var ec, fc = this.$items.values(), gc = !1;
+                                        (ec = fc.next()) && !ec.done;)
+                                        if (a === ec.value) {
+                                            gc = !0;
+                                            break;
+                                        }
+                                    return gc;
+                                }, dc.prototype.forEach = function(a) {
+                                    var ec = this;
+                                    this.$items.forEach(function(L, M, N) {
+                                        return a(L, M, ec);
+                                    });
+                                }, dc.prototype.values = function() {
+                                    return this.$items.values();
+                                }, Object.defineProperty(dc.prototype, 'size', {
+                                    get: function() {
+                                        return this.$items.size;
+                                    },
+                                    enumerable: !1,
+                                    configurable: !0
+                                }), dc.prototype.setIndex = function(a, dc) {
+                                    this.$indexes.set(a, dc);
+                                }, dc.prototype.getIndex = function(a) {
+                                    return this.$indexes.get(a);
+                                }, dc.prototype.getByIndex = function(a) {
+                                    return this.$items.get(this.$indexes.get(a));
+                                }, dc.prototype.deleteByIndex = function(a) {
+                                    var ec = this.$indexes.get(a);
+                                    this.$items.delete(ec), this.$indexes.delete(a);
+                                }, dc.prototype.toArray = function() {
+                                    return Array.from(this.$items.values());
+                                }, dc.prototype.toJSON = function() {
+                                    var ec = [];
+                                    return this.forEach(function(dc, L) {
+                                        ec.push('function' == typeof dc.toJSON ? dc.toJSON() : dc);
+                                    }), ec;
+                                }, dc.prototype.clone = function(a) {
+                                    var ec;
+                                    return a ? ec = Object.assign(new dc(), this) : (ec = new dc(), this.forEach(function(a) {
+                                        a.$changes ? ec.add(a.clone()) : ec.add(a);
+                                    })), ec;
+                                }, dc;
+                            }(),
+                            dc = function() {
+                                function ec() {
+                                    this.refIds = new WeakSet(), this.containerIndexes = new WeakMap();
+                                }
+                                return ec.prototype.addRefId = function(ec) {
+                                    this.refIds.has(ec) || (this.refIds.add(ec), this.containerIndexes.set(ec, new Set()));
+                                }, ec.get = function(K) {
+                                    return void 0 === K.$filterState && (K.$filterState = new ec()), K.$filterState;
+                                }, ec;
+                            }(),
+                            ec = function() {
+                                function fc() {
+                                    this.refs = new Map(), this.refCounts = {}, this.deletedRefs = new Set(), this.nextUniqueId = 0;
+                                }
+                                return fc.prototype.getNextUniqueId = function() {
+                                    return this.nextUniqueId++;
+                                }, fc.prototype.addRef = function(fc, K, L) {
+                                    void 0 === L && (L = !0), this.refs.set(fc, K), L && (this.refCounts[fc] = (this.refCounts[fc] || 0) + 1);
+                                }, fc.prototype.removeRef = function(fc) {
+                                    this.refCounts[fc] = this.refCounts[fc] - 1, this.deletedRefs.add(fc);
+                                }, fc.prototype.clearRefs = function() {
+                                    this.refs.clear(), this.deletedRefs.clear(), this.refCounts = {};
+                                }, fc.prototype.garbageCollectDeletedRefs = function() {
+                                    var gc = this;
+                                    this.deletedRefs.forEach(function(K) {
+                                        if (!(gc.refCounts[K] > 0)) {
+                                            var hc = gc.refs.get(K);
+                                            if (hc instanceof kc)
+                                                for (var ic in hc._definition.schema)
+                                                    'string' != typeof hc._definition.schema[ic] && hc[ic] && hc[ic].$changes && gc.removeRef(hc[ic].$changes.refId);
+                                            else {
+                                                var jc = hc.$changes.parent._definition,
+                                                    kc = jc.schema[jc.fieldsByIndex[hc.$changes.parentIndex]];
+                                                'function' == typeof Object.values(kc)[0] && Array.from(hc.values()).forEach(function(K) {
+                                                    return gc.removeRef(K.$changes.refId);
+                                                });
+                                            }
+                                            gc.refs.delete(K), delete gc.refCounts[K];
+                                        }
+                                    }), this.deletedRefs.clear();
+                                }, fc;
+                            }(),
+                            fc = function(a) {
+                                function gc() {
+                                    return null !== a && a.apply(this, arguments) || this;
+                                }
+                                return L(gc, a), gc;
                             }(Error);
 
-                        function bt(t, e, n, o) {
-                            var i, r = !1;
-                            switch (e) {
-                                case "number":
-                                case "int8":
-                                case "uint8":
-                                case "int16":
-                                case "uint16":
-                                case "int32":
-                                case "uint32":
-                                case "int64":
-                                case "uint64":
-                                case "float32":
-                                case "float64":
-                                    i = "number", isNaN(t) && console.log('trying to encode "NaN" in '.concat(n.constructor.name, "#").concat(o));
+                        function gc(a, K, L, M) {
+                            var hc, ic = !1;
+                            switch (K) {
+                                case 'number':
+                                case 'int8':
+                                case 'uint8':
+                                case 'int16':
+                                case 'uint16':
+                                case 'int32':
+                                case 'uint32':
+                                case 'int64':
+                                case 'uint64':
+                                case 'float32':
+                                case 'float64':
+                                    hc = 'number', isNaN(a) && console.log('trying to encode "NaN" in '.concat(L.constructor.name, '#').concat(M));
                                     break;
-                                case "string":
-                                    i = "string", r = !0;
+                                case 'string':
+                                    hc = 'string', ic = !0;
                                     break;
-                                case "boolean":
-                                    return
+                                case 'boolean':
+                                    return;
                             }
-                            if (typeof t !== i && (!r || r && null !== t)) {
-                                var s = "'".concat(JSON.stringify(t), "'").concat(t && t.constructor && " (".concat(t.constructor.name, ")") || "");
-                                throw new $t("a '".concat(i, "' was expected, but ").concat(s, " was provided in ").concat(n.constructor.name, "#").concat(o))
+                            if (typeof a !== hc && (!ic || ic && null !== a)) {
+                                var jc = '\''.concat(JSON.stringify(a), '\'').concat(a && a.constructor && ' ('.concat(a.constructor.name, ')') || '');
+                                throw new fc('a \''.concat(hc, '\' was expected, but ').concat(jc, ' was provided in ').concat(L.constructor.name, '#').concat(M));
                             }
                         }
 
-                        function It(t, e, n, o) {
-                            if (!(t instanceof e)) throw new $t("a '".concat(e.name, "' was expected, but '").concat(t.constructor.name, "' was provided in ").concat(n.constructor.name, "#").concat(o))
+                        function hc(a, K, L, M) {
+                            if (!(a instanceof K))
+                                throw new fc('a \''.concat(K.name, '\' was expected, but \'').concat(a.constructor.name, '\' was provided in ').concat(L.constructor.name, '#').concat(M));
                         }
 
-                        function Tt(t, e, n, o, i) {
-                            bt(n, t, o, i);
-                            var r = Y[t];
-                            if (!r) throw new $t("a '".concat(t, "' was expected, but ").concat(n, " was provided in ").concat(o.constructor.name, "#").concat(i));
-                            r(e, n)
+                        function ic(a, K, L, M, N) {
+                            gc(L, a, M, N);
+                            var jc = Eb[a];
+                            if (!jc)
+                                throw new fc('a \''.concat(a, '\' was expected, but ').concat(L, ' was provided in ').concat(M.constructor.name, '#').concat(N));
+                            jc(K, L);
                         }
 
-                        function xt(t, e, n) {
-                            return wt[t](e, n)
+                        function jc(a, K, L) {
+                            return ac[a](K, L);
                         }
-                        var Rt = function() {
-                            function e() {
-                                for (var t = [], e = 0; e < arguments.length; e++) t[e] = arguments[e];
+                        var kc = function() {
+                            function lc() {
+                                for (var mc = [], nc = 0; nc < arguments.length; nc++)
+                                    mc[nc] = arguments[nc];
                                 Object.defineProperties(this, {
                                     $changes: {
-                                        value: new c(this, void 0, new Ot),
+                                        value: new R(this, void 0, new ec()),
                                         enumerable: !1,
                                         writable: !0
                                     },
@@ -1612,958 +1748,1094 @@ t.parcelRequire388b.register("lJnts", (function(e, n) {
                                         writable: !0
                                     }
                                 });
-                                var n = this._definition.descriptors;
-                                n && Object.defineProperties(this, n), t[0] && this.assign(t[0])
+                                var oc = this._definition.descriptors;
+                                oc && Object.defineProperties(this, oc), mc[0] && this.assign(mc[0]);
                             }
-                            return e.onError = function(t) {
-                                console.error(t)
-                            }, e.is = function(t) {
-                                return t._definition && void 0 !== t._definition.schema
-                            }, e.prototype.onChange = function(e) {
-                                return f(this.$callbacks || (this.$callbacks = []), t.OPERATION.REPLACE, e)
-                            }, e.prototype.onRemove = function(e) {
-                                return f(this.$callbacks || (this.$callbacks = []), t.OPERATION.DELETE, e)
-                            }, e.prototype.assign = function(t) {
-                                return Object.assign(this, t), this
-                            }, Object.defineProperty(e.prototype, "_definition", {
+                            return lc.onError = function(a) {
+                                console.error(a);
+                            }, lc.is = function(a) {
+                                return a._definition && void 0 !== a._definition.schema;
+                            }, lc.prototype.onChange = function(lc) {
+                                return S(this.$callbacks || (this.$callbacks = []), a.OPERATION.REPLACE, lc);
+                            }, lc.prototype.onRemove = function(lc) {
+                                return S(this.$callbacks || (this.$callbacks = []), a.OPERATION.DELETE, lc);
+                            }, lc.prototype.assign = function(a) {
+                                return Object.assign(this, a), this;
+                            }, Object.defineProperty(lc.prototype, '_definition', {
                                 get: function() {
-                                    return this.constructor._definition
+                                    return this.constructor._definition;
                                 },
                                 enumerable: !1,
                                 configurable: !0
-                            }), e.prototype.setDirty = function(t, e) {
-                                this.$changes.change(t, e)
-                            }, e.prototype.listen = function(t, e, n) {
-                                var o = this;
-                                return void 0 === n && (n = !0), this.$callbacks || (this.$callbacks = {}), this.$callbacks[t] || (this.$callbacks[t] = []), this.$callbacks[t].push(e), n && void 0 !== this[t] && e(this[t], void 0),
+                            }), lc.prototype.setDirty = function(a, lc) {
+                                this.$changes.change(a, lc);
+                            }, lc.prototype.listen = function(a, lc, L) {
+                                var mc = this;
+                                return void 0 === L && (L = !0), this.$callbacks || (this.$callbacks = {}), this.$callbacks[a] || (this.$callbacks[a] = []), this.$callbacks[a].push(lc), L && void 0 !== this[a] && lc(this[a], void 0),
                                     function() {
-                                        return u(o.$callbacks[t], o.$callbacks[t].indexOf(e))
-                                    }
-                            }, e.prototype.decode = function(n, o, i) {
-                                var r;
-                                void 0 === o && (o = {
+                                        return U(mc.$callbacks[a], mc.$callbacks[a].indexOf(lc));
+                                    };
+                            }, lc.prototype.decode = function(L, M, N) {
+                                var mc;
+                                void 0 === M && (M = {
                                     offset: 0
-                                }), void 0 === i && (i = this);
-                                var a = [],
-                                    c = this.$changes.root,
-                                    f = n.length,
-                                    h = 0;
-                                for (c.refs.set(h, this); o.offset < f;) {
-                                    var u = n[o.offset++];
-                                    if (u != s) {
-                                        var d = i.$changes,
-                                            l = void 0 !== i._definition,
-                                            v = l ? u >> 6 << 6 : u;
-                                        if (v !== t.OPERATION.CLEAR) {
-                                            var g = l ? u % (v || 255) : vt(n, o),
-                                                m = l ? i._definition.fieldsByIndex[g] : "",
-                                                E = d.getType(g),
-                                                A = void 0,
-                                                _ = void 0,
-                                                O = void 0;
-                                            if (l ? _ = i["_".concat(m)] : (_ = i.getByIndex(g), (v & t.OPERATION.ADD) === t.OPERATION.ADD ? (O = i instanceof y ? lt(n, o) : g, i.setIndex(g, O)) : O = i.getIndex(g)), (v & t.OPERATION.DELETE) === t.OPERATION.DELETE && (v !== t.OPERATION.DELETE_AND_ADD && i.deleteByIndex(g), _ && _.$changes && c.removeRef(_.$changes.refId), A = null), void 0 !== m) {
-                                                if (v === t.OPERATION.DELETE);
-                                                else if (e.is(E)) {
-                                                    var $ = vt(n, o);
-                                                    if (A = c.refs.get($), v !== t.OPERATION.REPLACE) {
-                                                        var b = this.getSchemaType(n, o, E);
-                                                        A || ((A = this.createTypeInstance(b)).$changes.refId = $, _ && (A.$callbacks = _.$callbacks, _.$changes.refId && $ !== _.$changes.refId && c.removeRef(_.$changes.refId))), c.addRef($, A, A !== _)
+                                }), void 0 === N && (N = this);
+                                var nc = [],
+                                    oc = this.$changes.root,
+                                    pc = L.length,
+                                    qc = 0;
+                                for (oc.refs.set(qc, this); M.offset < pc;) {
+                                    var rc = L[M.offset++];
+                                    if (rc != P) {
+                                        var sc = N.$changes,
+                                            tc = void 0 !== N._definition,
+                                            uc = tc ? rc >> 6 << 6 : rc;
+                                        if (uc !== a.OPERATION.CLEAR) {
+                                            var vc = tc ? rc % (uc || 255) : Yb(L, M),
+                                                wc = tc ? N._definition.fieldsByIndex[vc] : '',
+                                                xc = sc.getType(vc),
+                                                yc = void 0,
+                                                zc = void 0,
+                                                Ac = void 0;
+                                            if (tc ? zc = N['_'.concat(wc)] : (zc = N.getByIndex(vc), (uc & a.OPERATION.ADD) === a.OPERATION.ADD ? (Ac = N instanceof Z ? Wb(L, M) : vc, N.setIndex(vc, Ac)) : Ac = N.getIndex(vc)), (uc & a.OPERATION.DELETE) === a.OPERATION.DELETE && (uc !== a.OPERATION.DELETE_AND_ADD && N.deleteByIndex(vc), zc && zc.$changes && oc.removeRef(zc.$changes.refId), yc = null), void 0 !== wc) {
+                                                if (uc === a.OPERATION.DELETE);
+                                                else if (lc.is(xc)) {
+                                                    var Bc = Yb(L, M);
+                                                    if (yc = oc.refs.get(Bc), uc !== a.OPERATION.REPLACE) {
+                                                        var Cc = this.getSchemaType(L, M, xc);
+                                                        yc || ((yc = this.createTypeInstance(Cc)).$changes.refId = Bc, zc && (yc.$callbacks = zc.$callbacks, zc.$changes.refId && Bc !== zc.$changes.refId && oc.removeRef(zc.$changes.refId))), oc.addRef(Bc, yc, yc !== zc);
                                                     }
-                                                } else if ("string" == typeof E) A = xt(E, n, o);
+                                                } else if ('string' == typeof xc)
+                                                    yc = jc(xc, L, M);
                                                 else {
-                                                    var I = w(Object.keys(E)[0]),
-                                                        T = vt(n, o),
-                                                        x = c.refs.has(T) ? _ || c.refs.get(T) : new I.constructor;
-                                                    if ((A = x.clone(!0)).$changes.refId = T, _ && (A.$callbacks = _.$callbacks, _.$changes.refId && T !== _.$changes.refId)) {
-                                                        c.removeRef(_.$changes.refId);
-                                                        for (var R = _.entries(), P = void 0;
-                                                            (P = R.next()) && !P.done;) {
-                                                            var C = (r = P.value)[0],
-                                                                k = r[1];
-                                                            a.push({
-                                                                refId: T,
-                                                                op: t.OPERATION.DELETE,
-                                                                field: C,
+                                                    var Cc = ab(Object.keys(xc)[0]),
+                                                        Dc = Yb(L, M),
+                                                        Ec = oc.refs.has(Dc) ? zc || oc.refs.get(Dc) : new Cc.constructor();
+                                                    if ((yc = Ec.clone(!0)).$changes.refId = Dc, zc && (yc.$callbacks = zc.$callbacks, zc.$changes.refId && Dc !== zc.$changes.refId)) {
+                                                        oc.removeRef(zc.$changes.refId);
+                                                        for (var Fc = zc.entries(), Gc = void 0;
+                                                            (Gc = Fc.next()) && !Gc.done;) {
+                                                            var Hc = (mc = Gc.value)[0],
+                                                                Ic = mc[1];
+                                                            nc.push({
+                                                                refId: Dc,
+                                                                op: a.OPERATION.DELETE,
+                                                                field: Hc,
                                                                 value: void 0,
-                                                                previousValue: k
-                                                            })
+                                                                previousValue: Ic
+                                                            });
                                                         }
                                                     }
-                                                    c.addRef(T, A, x !== _)
+                                                    oc.addRef(Dc, yc, Ec !== zc);
                                                 }
-                                                if (null != A)
-                                                    if (A.$changes && A.$changes.setParent(d.ref, d.root, g), i instanceof e) i[m] = A;
-                                                    else if (i instanceof y) C = O, i.$items.set(C, A), i.$changes.allChanges.add(g);
-                                                else if (i instanceof p) i.setAt(g, A);
-                                                else if (i instanceof Et) {
-                                                    var D = i.add(A);
-                                                    i.setIndex(g, D)
-                                                } else i instanceof At && !1 !== (D = i.add(A)) && i.setIndex(g, D);
-                                                _ !== A && a.push({
-                                                    refId: h,
-                                                    op: v,
-                                                    field: m,
-                                                    dynamicIndex: O,
-                                                    value: A,
-                                                    previousValue: _
-                                                })
+                                                if (null != yc)
+                                                    if (yc.$changes && yc.$changes.setParent(sc.ref, sc.root, vc), N instanceof lc)
+                                                        N[wc] = yc;
+                                                    else if (N instanceof Z)
+                                                    mb = Ac, N.$items.set(mb, yc), N.$changes.allChanges.add(vc);
+                                                else if (N instanceof X)
+                                                    N.setAt(vc, yc);
+                                                else if (N instanceof bc) {
+                                                    var Bc = N.add(yc);
+                                                    N.setIndex(vc, Bc);
+                                                } else
+                                                    N instanceof cc && !1 !== (ob = N.add(yc)) && N.setIndex(vc, ob);
+                                                zc !== yc && nc.push({
+                                                    refId: qc,
+                                                    op: uc,
+                                                    field: wc,
+                                                    dynamicIndex: Ac,
+                                                    value: yc,
+                                                    previousValue: zc
+                                                });
                                             } else {
-                                                console.warn("@colyseus/schema: definition mismatch");
-                                                for (var N = {
-                                                        offset: o.offset
-                                                    }; o.offset < f && (!mt(n, o) || (N.offset = o.offset + 1, !c.refs.has(vt(n, N))));) o.offset++
+                                                console.warn('@colyseus/schema: definition mismatch');
+                                                for (var Bc = {
+                                                        offset: M.offset
+                                                    }; M.offset < pc && (!_b(L, M) || (Bc.offset = M.offset + 1, !oc.refs.has(Yb(L, Bc))));)
+                                                    M.offset++;
                                             }
-                                        } else i.clear(a)
+                                        } else
+                                            N.clear(nc);
                                     } else {
-                                        h = vt(n, o);
-                                        var S = c.refs.get(h);
-                                        if (!S) throw new Error('"refId" not found: '.concat(h));
-                                        i = S
+                                        qc = Yb(L, M);
+                                        var vc = oc.refs.get(qc);
+                                        if (!vc)
+                                            throw new Error('"refId" not found: '.concat(qc));
+                                        N = vc;
                                     }
                                 }
-                                return this._triggerChanges(a), c.garbageCollectDeletedRefs(), a
-                            }, e.prototype.encode = function(n, o, i) {
-                                void 0 === n && (n = !1), void 0 === o && (o = []), void 0 === i && (i = !1);
-                                for (var r = this.$changes, a = new WeakSet, c = [r], f = 1, h = 0; h < f; h++) {
-                                    var u = c[h],
-                                        d = u.ref,
-                                        l = d instanceof e;
-                                    u.ensureRefId(), a.add(u), u !== r && (u.changed || n) && (k(o, s), K(o, u.refId));
-                                    for (var p = n ? Array.from(u.allChanges) : Array.from(u.changes.values()), v = 0, g = p.length; v < g; v++) {
-                                        var m = n ? {
-                                                op: t.OPERATION.ADD,
-                                                index: p[v]
-                                            } : p[v],
-                                            E = m.index,
-                                            A = l ? d._definition.fieldsByIndex && d._definition.fieldsByIndex[E] : E,
-                                            _ = o.length;
-                                        if (m.op !== t.OPERATION.TOUCH)
-                                            if (l) k(o, E | m.op);
+                                return this._triggerChanges(nc), oc.garbageCollectDeletedRefs(), nc;
+                            }, lc.prototype.encode = function(L, M, N) {
+                                void 0 === L && (L = !1), void 0 === M && (M = []), void 0 === N && (N = !1);
+                                for (var mc = this.$changes, nc = new WeakSet(), oc = [mc], pc = 1, qc = 0; qc < pc; qc++) {
+                                    var rc = oc[qc],
+                                        sc = rc.ref,
+                                        tc = sc instanceof lc;
+                                    rc.ensureRefId(), nc.add(rc), rc !== mc && (rc.changed || L) && (nb(M, P), Db(M, rc.refId));
+                                    for (var uc = L ? Array.from(rc.allChanges) : Array.from(rc.changes.values()), vc = 0, wc = uc.length; vc < wc; vc++) {
+                                        var xc = L ? {
+                                                op: a.OPERATION.ADD,
+                                                index: uc[vc]
+                                            } : uc[vc],
+                                            yc = xc.index,
+                                            zc = tc ? sc._definition.fieldsByIndex && sc._definition.fieldsByIndex[yc] : yc,
+                                            Ac = M.length;
+                                        if (xc.op !== a.OPERATION.TOUCH)
+                                            if (tc)
+                                                nb(M, yc | xc.op);
                                             else {
-                                                if (k(o, m.op), m.op === t.OPERATION.CLEAR) continue;
-                                                K(o, E)
-                                            } if (l || (m.op & t.OPERATION.ADD) != t.OPERATION.ADD || d instanceof y && q(o, u.ref.$indexes.get(E)), m.op !== t.OPERATION.DELETE) {
-                                            var O = u.getType(E),
-                                                $ = u.getValue(E);
-                                            if ($ && $.$changes && !a.has($.$changes) && (c.push($.$changes), $.$changes.ensureRefId(), f++), m.op !== t.OPERATION.TOUCH) {
-                                                if (e.is(O)) It($, O, d, A), K(o, $.$changes.refId), (m.op & t.OPERATION.ADD) === t.OPERATION.ADD && this.tryEncodeTypeId(o, O, $.constructor);
-                                                else if ("string" == typeof O) Tt(O, o, $, d, A);
+                                                if (nb(M, xc.op), xc.op === a.OPERATION.CLEAR)
+                                                    continue;
+                                                Db(M, yc);
+                                            }
+                                        if (tc || (xc.op & a.OPERATION.ADD) != a.OPERATION.ADD || sc instanceof Z && Cb(M, rc.ref.$indexes.get(yc)), xc.op !== a.OPERATION.DELETE) {
+                                            var Bc = rc.getType(yc),
+                                                Cc = rc.getValue(yc);
+                                            if (Cc && Cc.$changes && !nc.has(Cc.$changes) && (oc.push(Cc.$changes), Cc.$changes.ensureRefId(), pc++), xc.op !== a.OPERATION.TOUCH) {
+                                                if (lc.is(Bc))
+                                                    hc(Cc, Bc, sc, zc), Db(M, Cc.$changes.refId), (xc.op & a.OPERATION.ADD) === a.OPERATION.ADD && this.tryEncodeTypeId(M, Bc, Cc.constructor);
+                                                else if ('string' == typeof Bc)
+                                                    ic(Bc, M, Cc, sc, zc);
                                                 else {
-                                                    var b = w(Object.keys(O)[0]);
-                                                    It(d["_".concat(A)], b.constructor, d, A), K(o, $.$changes.refId)
+                                                    var Dc = ab(Object.keys(Bc)[0]);
+                                                    hc(sc['_'.concat(zc)], Dc.constructor, sc, zc), Db(M, Cc.$changes.refId);
                                                 }
-                                                i && u.cache(E, o.slice(_))
+                                                N && rc.cache(yc, M.slice(Ac));
                                             }
                                         }
                                     }
-                                    n || i || u.discard()
+                                    L || N || rc.discard();
                                 }
-                                return o
-                            }, e.prototype.encodeAll = function(t) {
-                                return this.encode(!0, [], t)
-                            }, e.prototype.applyFilters = function(n, o) {
-                                var i, r;
-                                void 0 === o && (o = !1);
-                                for (var a = this, c = new Set, f = _t.get(n), h = [this.$changes], u = 1, d = [], l = function(l) {
-                                        var p = h[l];
-                                        if (c.has(p.refId)) return "continue";
-                                        var v = p.ref,
-                                            g = v instanceof e;
-                                        k(d, s), K(d, p.refId);
-                                        var m = f.refIds.has(p),
-                                            w = o || !m;
-                                        f.addRefId(p);
-                                        var E = f.containerIndexes.get(p),
-                                            A = w ? Array.from(p.allChanges) : Array.from(p.changes.values());
-                                        !o && g && v._definition.indexesWithFilters && v._definition.indexesWithFilters.forEach((function(e) {
-                                            !E.has(e) && p.allChanges.has(e) && (w ? A.push(e) : A.push({
-                                                op: t.OPERATION.ADD,
-                                                index: e
-                                            }))
-                                        }));
-                                        for (var _ = 0, O = A.length; _ < O; _++) {
-                                            var $ = w ? {
-                                                op: t.OPERATION.ADD,
-                                                index: A[_]
-                                            } : A[_];
-                                            if ($.op !== t.OPERATION.CLEAR) {
-                                                var b = $.index;
-                                                if ($.op !== t.OPERATION.DELETE) {
-                                                    var I = p.getValue(b),
-                                                        T = p.getType(b);
-                                                    if (g) {
-                                                        if ((x = v._definition.filters && v._definition.filters[b]) && !x.call(v, n, I, a)) {
-                                                            I && I.$changes && c.add(I.$changes.refId);
-                                                            continue
+                                return M;
+                            }, lc.prototype.encodeAll = function(a) {
+                                return this.encode(!0, [], a);
+                            }, lc.prototype.applyFilters = function(L, M) {
+                                var mc, nc;
+                                void 0 === M && (M = !1);
+                                for (var oc = this, pc = new Set(), qc = dc.get(L), rc = [this.$changes], sc = 1, tc = [], uc = function(uc) {
+                                        var vc = rc[uc];
+                                        if (pc.has(vc.refId))
+                                            return 'continue';
+                                        var wc = vc.ref,
+                                            xc = wc instanceof lc;
+                                        nb(tc, P), Db(tc, vc.refId);
+                                        var yc = qc.refIds.has(vc),
+                                            zc = M || !yc;
+                                        qc.addRefId(vc);
+                                        var Ac = qc.containerIndexes.get(vc),
+                                            Bc = zc ? Array.from(vc.allChanges) : Array.from(vc.changes.values());
+                                        !M && xc && wc._definition.indexesWithFilters && wc._definition.indexesWithFilters.forEach(function(lc) {
+                                            !Ac.has(lc) && vc.allChanges.has(lc) && (zc ? Bc.push(lc) : Bc.push({
+                                                op: a.OPERATION.ADD,
+                                                index: lc
+                                            }));
+                                        });
+                                        for (var Cc = 0, Dc = Bc.length; Cc < Dc; Cc++) {
+                                            var Ec = zc ? {
+                                                op: a.OPERATION.ADD,
+                                                index: Bc[Cc]
+                                            } : Bc[Cc];
+                                            if (Ec.op !== a.OPERATION.CLEAR) {
+                                                var Fc = Ec.index;
+                                                if (Ec.op !== a.OPERATION.DELETE) {
+                                                    var Gc = vc.getValue(Fc),
+                                                        Hc = vc.getType(Fc);
+                                                    if (xc) {
+                                                        if ((jb = wc._definition.filters && wc._definition.filters[Fc]) && !jb.call(wc, L, Gc, oc)) {
+                                                            Gc && Gc.$changes && pc.add(Gc.$changes.refId);
+                                                            continue;
                                                         }
                                                     } else {
-                                                        var x, R = p.parent;
-                                                        if ((x = p.getChildrenFilter()) && !x.call(R, n, v.$indexes.get(b), I, a)) {
-                                                            I && I.$changes && c.add(I.$changes.refId);
-                                                            continue
+                                                        var Ic, Jc = vc.parent;
+                                                        if ((Ic = vc.getChildrenFilter()) && !Ic.call(Jc, L, wc.$indexes.get(Fc), Gc, oc)) {
+                                                            Gc && Gc.$changes && pc.add(Gc.$changes.refId);
+                                                            continue;
                                                         }
                                                     }
-                                                    if (I.$changes && (h.push(I.$changes), u++), $.op !== t.OPERATION.TOUCH)
-                                                        if ($.op === t.OPERATION.ADD || g) d.push.apply(d, null !== (i = p.caches[b]) && void 0 !== i ? i : []), E.add(b);
-                                                        else if (E.has(b)) d.push.apply(d, null !== (r = p.caches[b]) && void 0 !== r ? r : []);
+                                                    if (Gc.$changes && (rc.push(Gc.$changes), sc++), Ec.op !== a.OPERATION.TOUCH)
+                                                        if (Ec.op === a.OPERATION.ADD || xc)
+                                                            tc.push.apply(tc, null !== (mc = vc.caches[Fc]) && void 0 !== mc ? mc : []), Ac.add(Fc);
+                                                        else if (Ac.has(Fc))
+                                                        tc.push.apply(tc, null !== (nc = vc.caches[Fc]) && void 0 !== nc ? nc : []);
                                                     else {
-                                                        if (E.add(b), k(d, t.OPERATION.ADD), K(d, b), v instanceof y) {
-                                                            var P = p.ref.$indexes.get(b);
-                                                            q(d, P)
+                                                        if (Ac.add(Fc), nb(tc, a.OPERATION.ADD), Db(tc, Fc), wc instanceof Z) {
+                                                            var Ic = vc.ref.$indexes.get(Fc);
+                                                            Cb(tc, Ic);
                                                         }
-                                                        I.$changes ? K(d, I.$changes.refId) : Y[T](d, I)
-                                                    } else I.$changes && !g && (k(d, t.OPERATION.ADD), K(d, b), v instanceof y && (P = p.ref.$indexes.get(b), q(d, P)), K(d, I.$changes.refId))
-                                                } else g ? k(d, $.op | b) : (k(d, $.op), K(d, b))
-                                            } else k(d, $.op)
+                                                        Gc.$changes ? Db(tc, Gc.$changes.refId) : Eb[Hc](tc, Gc);
+                                                    } else
+                                                        Gc.$changes && !xc && (nb(tc, a.OPERATION.ADD), Db(tc, Fc), wc instanceof Z && (lb = vc.ref.$indexes.get(Fc), Cb(tc, lb)), Db(tc, Gc.$changes.refId));
+                                                } else
+                                                    xc ? nb(tc, Ec.op | Fc) : (nb(tc, Ec.op), Db(tc, Fc));
+                                            } else
+                                                nb(tc, Ec.op);
                                         }
-                                    }, p = 0; p < u; p++) l(p);
-                                return d
-                            }, e.prototype.clone = function() {
-                                var t, e = new this.constructor,
-                                    n = this._definition.schema;
-                                for (var o in n) "object" == typeof this[o] && "function" == typeof(null === (t = this[o]) || void 0 === t ? void 0 : t.clone) ? e[o] = this[o].clone() : e[o] = this[o];
-                                return e
-                            }, e.prototype.toJSON = function() {
-                                var t = this._definition.schema,
-                                    e = this._definition.deprecated,
-                                    n = {};
-                                for (var o in t) e[o] || null === this[o] || void 0 === this[o] || (n[o] = "function" == typeof this[o].toJSON ? this[o].toJSON() : this["_".concat(o)]);
-                                return n
-                            }, e.prototype.discardAllChanges = function() {
-                                this.$changes.discardAll()
-                            }, e.prototype.getByIndex = function(t) {
-                                return this[this._definition.fieldsByIndex[t]]
-                            }, e.prototype.deleteByIndex = function(t) {
-                                this[this._definition.fieldsByIndex[t]] = void 0
-                            }, e.prototype.tryEncodeTypeId = function(t, e, n) {
-                                e._typeid !== n._typeid && (k(t, a), K(t, n._typeid))
-                            }, e.prototype.getSchemaType = function(t, e, n) {
-                                var o;
-                                return t[e.offset] === a && (e.offset++, o = this.constructor._context.get(vt(t, e))), o || n
-                            }, e.prototype.createTypeInstance = function(t) {
-                                var e = new t;
-                                return e.$changes.root = this.$changes.root, e
-                            }, e.prototype._triggerChanges = function(n) {
-                                for (var o, i, r, s, a, c, f, h, u, d = new Set, l = this.$changes.root.refs, p = function(p) {
-                                        var v = n[p],
-                                            y = v.refId,
-                                            g = l.get(y),
-                                            m = g.$callbacks;
-                                        if ((v.op & t.OPERATION.DELETE) === t.OPERATION.DELETE && v.previousValue instanceof e && (null === (i = null === (o = v.previousValue.$callbacks) || void 0 === o ? void 0 : o[t.OPERATION.DELETE]) || void 0 === i || i.forEach((function(t) {
-                                                return t()
-                                            }))), !m) return "continue";
-                                        if (g instanceof e) {
-                                            if (!d.has(y)) try {
-                                                null === (r = null == m ? void 0 : m[t.OPERATION.REPLACE]) || void 0 === r || r.forEach((function(t) {
-                                                    return t(n)
-                                                }))
-                                            } catch (t) {
-                                                e.onError(t)
-                                            }
+                                    }, vc = 0; vc < sc; vc++)
+                                    uc(vc);
+                                return tc;
+                            }, lc.prototype.clone = function() {
+                                var mc, nc = new this.constructor(),
+                                    oc = this._definition.schema;
+                                for (var pc in oc)
+                                    'object' == typeof this[pc] && 'function' == typeof(null === (mc = this[pc]) || void 0 === mc ? void 0 : mc.clone) ? nc[pc] = this[pc].clone() : nc[pc] = this[pc];
+                                return nc;
+                            }, lc.prototype.toJSON = function() {
+                                var mc = this._definition.schema,
+                                    nc = this._definition.deprecated,
+                                    oc = {};
+                                for (var pc in mc)
+                                    nc[pc] || null === this[pc] || void 0 === this[pc] || (oc[pc] = 'function' == typeof this[pc].toJSON ? this[pc].toJSON() : this['_'.concat(pc)]);
+                                return oc;
+                            }, lc.prototype.discardAllChanges = function() {
+                                this.$changes.discardAll();
+                            }, lc.prototype.getByIndex = function(a) {
+                                return this[this._definition.fieldsByIndex[a]];
+                            }, lc.prototype.deleteByIndex = function(a) {
+                                this[this._definition.fieldsByIndex[a]] = void 0;
+                            }, lc.prototype.tryEncodeTypeId = function(a, lc, L) {
+                                lc._typeid !== L._typeid && (nb(a, Q), Db(a, L._typeid));
+                            }, lc.prototype.getSchemaType = function(a, lc, L) {
+                                var mc;
+                                return a[lc.offset] === Q && (lc.offset++, mc = this.constructor._context.get(Yb(a, lc))), mc || L;
+                            }, lc.prototype.createTypeInstance = function(a) {
+                                var mc = new a();
+                                return mc.$changes.root = this.$changes.root, mc;
+                            }, lc.prototype._triggerChanges = function(L) {
+                                for (var mc, nc, oc, pc, qc, rc, sc, tc, uc, vc = new Set(), wc = this.$changes.root.refs, xc = function(xc) {
+                                        var yc = L[xc],
+                                            zc = yc.refId,
+                                            Ac = wc.get(zc),
+                                            Bc = Ac.$callbacks;
+                                        if ((yc.op & a.OPERATION.DELETE) === a.OPERATION.DELETE && yc.previousValue instanceof lc && (null === (nc = null === (mc = yc.previousValue.$callbacks) || void 0 === mc ? void 0 : mc[a.OPERATION.DELETE]) || void 0 === nc || nc.forEach(function(a) {
+                                                return a();
+                                            })), !Bc)
+                                            return 'continue';
+                                        if (Ac instanceof lc) {
+                                            if (!vc.has(zc))
+                                                try {
+                                                    null === (oc = null == Bc ? void 0 : Bc[a.OPERATION.REPLACE]) || void 0 === oc || oc.forEach(function(a) {
+                                                        return a(L);
+                                                    });
+                                                } catch (a) {
+                                                    lc.onError(a);
+                                                }
                                             try {
-                                                m.hasOwnProperty(v.field) && (null === (s = m[v.field]) || void 0 === s || s.forEach((function(t) {
-                                                    return t(v.value, v.previousValue)
-                                                })))
-                                            } catch (t) {
-                                                e.onError(t)
+                                                Bc.hasOwnProperty(yc.field) && (null === (pc = Bc[yc.field]) || void 0 === pc || pc.forEach(function(a) {
+                                                    return a(yc.value, yc.previousValue);
+                                                }));
+                                            } catch (a) {
+                                                lc.onError(a);
                                             }
-                                        } else v.op === t.OPERATION.ADD && void 0 === v.previousValue ? null === (a = m[t.OPERATION.ADD]) || void 0 === a || a.forEach((function(t) {
-                                            var e;
-                                            return t(v.value, null !== (e = v.dynamicIndex) && void 0 !== e ? e : v.field)
-                                        })) : v.op === t.OPERATION.DELETE ? void 0 !== v.previousValue && (null === (c = m[t.OPERATION.DELETE]) || void 0 === c || c.forEach((function(t) {
-                                            var e;
-                                            return t(v.previousValue, null !== (e = v.dynamicIndex) && void 0 !== e ? e : v.field)
-                                        }))) : v.op === t.OPERATION.DELETE_AND_ADD && (void 0 !== v.previousValue && (null === (f = m[t.OPERATION.DELETE]) || void 0 === f || f.forEach((function(t) {
-                                            var e;
-                                            return t(v.previousValue, null !== (e = v.dynamicIndex) && void 0 !== e ? e : v.field)
-                                        }))), null === (h = m[t.OPERATION.ADD]) || void 0 === h || h.forEach((function(t) {
-                                            var e;
-                                            return t(v.value, null !== (e = v.dynamicIndex) && void 0 !== e ? e : v.field)
-                                        }))), v.value !== v.previousValue && (null === (u = m[t.OPERATION.REPLACE]) || void 0 === u || u.forEach((function(t) {
-                                            var e;
-                                            return t(v.value, null !== (e = v.dynamicIndex) && void 0 !== e ? e : v.field)
-                                        })));
-                                        d.add(y)
-                                    }, v = 0; v < n.length; v++) p(v)
-                            }, e._definition = E.create(), e
+                                        } else
+                                            yc.op === a.OPERATION.ADD && void 0 === yc.previousValue ? null === (qc = Bc[a.OPERATION.ADD]) || void 0 === qc || qc.forEach(function(a) {
+                                                var Cc;
+                                                return a(yc.value, null !== (Cc = yc.dynamicIndex) && void 0 !== Cc ? Cc : yc.field);
+                                            }) : yc.op === a.OPERATION.DELETE ? void 0 !== yc.previousValue && (null === (rc = Bc[a.OPERATION.DELETE]) || void 0 === rc || rc.forEach(function(a) {
+                                                var Cc;
+                                                return a(yc.previousValue, null !== (Cc = yc.dynamicIndex) && void 0 !== Cc ? Cc : yc.field);
+                                            })) : yc.op === a.OPERATION.DELETE_AND_ADD && (void 0 !== yc.previousValue && (null === (sc = Bc[a.OPERATION.DELETE]) || void 0 === sc || sc.forEach(function(a) {
+                                                var Cc;
+                                                return a(yc.previousValue, null !== (Cc = yc.dynamicIndex) && void 0 !== Cc ? Cc : yc.field);
+                                            })), null === (tc = Bc[a.OPERATION.ADD]) || void 0 === tc || tc.forEach(function(a) {
+                                                var Cc;
+                                                return a(yc.value, null !== (Cc = yc.dynamicIndex) && void 0 !== Cc ? Cc : yc.field);
+                                            })), yc.value !== yc.previousValue && (null === (uc = Bc[a.OPERATION.REPLACE]) || void 0 === uc || uc.forEach(function(a) {
+                                                var Cc;
+                                                return a(yc.value, null !== (Cc = yc.dynamicIndex) && void 0 !== Cc ? Cc : yc.field);
+                                            }));
+                                        vc.add(zc);
+                                    }, yc = 0; yc < L.length; yc++)
+                                    xc(yc);
+                            }, lc._definition = bb.create(), lc;
                         }();
 
-                        function Pt(t) {
-                            for (var e = [t.$changes], n = 1, o = {}, i = o, r = function(t) {
-                                    var n = e[t];
-                                    n.changes.forEach((function(t) {
-                                        var e = n.ref,
-                                            o = t.index,
-                                            r = e._definition ? e._definition.fieldsByIndex[o] : e.$indexes.get(o);
-                                        i[r] = n.getValue(o)
-                                    }))
-                                }, s = 0; s < n; s++) r(s);
-                            return o
+                        function lc(a) {
+                            for (var mc = [a.$changes], nc = 1, oc = {}, pc = qc, rc = function(a) {
+                                    var sc = mc[a];
+                                    sc.changes.forEach(function(a) {
+                                        var tc = sc.ref,
+                                            uc = a.index,
+                                            vc = tc._definition ? tc._definition.fieldsByIndex[uc] : tc.$indexes.get(uc);
+                                        pc[vc] = sc.getValue(uc);
+                                    });
+                                }, sc = 0; sc < nc; sc++)
+                                rc(sc);
+                            return qc;
                         }
-                        var Ct = {
-                                context: new _
+                        var mc = {
+                                context: new db()
                             },
-                            kt = function(t) {
-                                function e() {
-                                    return null !== t && t.apply(this, arguments) || this
+                            nc = function(a) {
+                                function oc() {
+                                    return null !== a && a.apply(this, arguments) || this;
                                 }
-                                return n(e, t), o([$("string", Ct)], e.prototype, "name", void 0), o([$("string", Ct)], e.prototype, "type", void 0), o([$("number", Ct)], e.prototype, "referencedType", void 0), e
-                            }(Rt),
-                            Dt = function(t) {
-                                function e() {
-                                    var e = null !== t && t.apply(this, arguments) || this;
-                                    return e.fields = new p, e
+                                return L(oc, a), M([fb('string', mc)], oc.prototype, 'name', void 0), M([fb('string', mc)], oc.prototype, 'type', void 0), M([fb('number', mc)], oc.prototype, 'referencedType', void 0), oc;
+                            }(kc),
+                            oc = function(a) {
+                                function pc() {
+                                    var qc = null !== a && a.apply(this, arguments) || this;
+                                    return qc.fields = new X(), qc;
                                 }
-                                return n(e, t), o([$("number", Ct)], e.prototype, "id", void 0), o([$([kt], Ct)], e.prototype, "fields", void 0), e
-                            }(Rt),
-                            Nt = function(t) {
-                                function e() {
-                                    var e = null !== t && t.apply(this, arguments) || this;
-                                    return e.types = new p, e
+                                return L(pc, a), M([fb('number', mc)], pc.prototype, 'id', void 0), M([fb([nc], mc)], pc.prototype, 'fields', void 0), pc;
+                            }(kc),
+                            pc = function(a) {
+                                function qc() {
+                                    var rc = null !== a && a.apply(this, arguments) || this;
+                                    return rc.types = new X(), rc;
                                 }
-                                return n(e, t), e.encode = function(t) {
-                                    var n = t.constructor,
-                                        o = new e;
-                                    o.rootType = n._typeid;
-                                    var i = function(t, e) {
-                                            for (var n in e) {
-                                                var i = new kt;
-                                                i.name = n;
-                                                var r = void 0;
-                                                if ("string" == typeof e[n]) r = e[n];
+                                return L(qc, a), qc.encode = function(a) {
+                                    var rc = a.constructor,
+                                        sc = new qc();
+                                    sc.rootType = rc._typeid;
+                                    var tc = function(a, qc) {
+                                            for (var uc in qc) {
+                                                var vc = new nc();
+                                                vc.name = uc;
+                                                var wc = void 0;
+                                                if ('string' == typeof qc[uc])
+                                                    wc = qc[uc];
                                                 else {
-                                                    var s = e[n],
-                                                        a = void 0;
-                                                    Rt.is(s) ? (r = "ref", a = e[n]) : "string" == typeof s[r = Object.keys(s)[0]] ? r += ":" + s[r] : a = s[r], i.referencedType = a ? a._typeid : -1
+                                                    var xc = qc[uc],
+                                                        yc = void 0;
+                                                    kc.is(xc) ? (wc = 'ref', yc = qc[uc]) : 'string' == typeof xc[wc = Object.keys(xc)[0]] ? wc += ':' + xc[wc] : yc = xc[wc], vc.referencedType = yc ? yc._typeid : -1;
                                                 }
-                                                i.type = r, t.fields.push(i)
+                                                vc.type = wc, a.fields.push(vc);
                                             }
-                                            o.types.push(t)
+                                            sc.types.push(a);
                                         },
-                                        r = n._context.types;
-                                    for (var s in r) {
-                                        var a = new Dt;
-                                        a.id = Number(s), i(a, r[s]._definition.schema)
+                                        uc = rc._context.types;
+                                    for (var vc in uc) {
+                                        var wc = new oc();
+                                        wc.id = Number(vc), tc(wc, uc[vc]._definition.schema);
                                     }
-                                    return o.encodeAll()
-                                }, e.decode = function(t, o) {
-                                    var i = new _,
-                                        r = new e;
-                                    r.decode(t, o);
-                                    var s = r.types.reduce((function(t, e) {
-                                        var o = function(t) {
-                                                function e() {
-                                                    return null !== t && t.apply(this, arguments) || this
+                                    return sc.encodeAll();
+                                }, qc.decode = function(a, M) {
+                                    var rc = new db(),
+                                        sc = new qc();
+                                    sc.decode(a, M);
+                                    var tc = sc.types.reduce(function(a, qc) {
+                                        var uc = function(a) {
+                                                function vc() {
+                                                    return null !== a && a.apply(this, arguments) || this;
                                                 }
-                                                return n(e, t), e
-                                            }(Rt),
-                                            r = e.id;
-                                        return t[r] = o, i.add(o, r), t
-                                    }), {});
-                                    r.types.forEach((function(t) {
-                                        var e = s[t.id];
-                                        t.fields.forEach((function(t) {
-                                            var n;
-                                            if (void 0 !== t.referencedType) {
-                                                var o = t.type,
-                                                    r = s[t.referencedType];
-                                                if (!r) {
-                                                    var a = t.type.split(":");
-                                                    o = a[0], r = a[1]
+                                                return L(vc, a), vc;
+                                            }(kc),
+                                            vc = qc.id;
+                                        return a[vc] = uc, rc.add(uc, vc), a;
+                                    }, {});
+                                    sc.types.forEach(function(a) {
+                                        var uc = tc[a.id];
+                                        a.fields.forEach(function(a) {
+                                            var vc;
+                                            if (void 0 !== a.referencedType) {
+                                                var wc = a.type,
+                                                    xc = tc[a.referencedType];
+                                                if (!xc) {
+                                                    var yc = a.type.split(':');
+                                                    wc = yc[0], xc = yc[1];
                                                 }
-                                                "ref" === o ? $(r, {
-                                                    context: i
-                                                })(e.prototype, t.name) : $(((n = {})[o] = r, n), {
-                                                    context: i
-                                                })(e.prototype, t.name)
-                                            } else $(t.type, {
-                                                context: i
-                                            })(e.prototype, t.name)
-                                        }))
-                                    }));
-                                    var a = s[r.rootType],
-                                        c = new a;
-                                    for (var f in a._definition.schema) {
-                                        var h = a._definition.schema[f];
-                                        "string" != typeof h && (c[f] = "function" == typeof h ? new h : new(w(Object.keys(h)[0]).constructor))
+                                                'ref' === wc ? fb(xc, {
+                                                    context: rc
+                                                })(uc.prototype, a.name) : fb(((vc = {})[wc] = xc, vc), {
+                                                    context: rc
+                                                })(uc.prototype, a.name);
+                                            } else
+                                                fb(a.type, {
+                                                    context: rc
+                                                })(uc.prototype, a.name);
+                                        });
+                                    });
+                                    var uc = tc[sc.rootType],
+                                        vc = new uc();
+                                    for (var wc in uc._definition.schema) {
+                                        var xc = uc._definition.schema[wc];
+                                        'string' != typeof xc && (vc[wc] = 'function' == typeof xc ? new xc() : new(ab(Object.keys(xc)[0])).constructor());
                                     }
-                                    return c
-                                }, o([$([Dt], Ct)], e.prototype, "types", void 0), o([$("number", Ct)], e.prototype, "rootType", void 0), e
-                            }(Rt);
-                        m("map", {
-                            constructor: y
-                        }), m("array", {
-                            constructor: p
-                        }), m("set", {
-                            constructor: At
-                        }), m("collection", {
-                            constructor: Et
-                        }), t.ArraySchema = p, t.CollectionSchema = Et, t.Context = _, t.MapSchema = y, t.Reflection = Nt, t.ReflectionField = kt, t.ReflectionType = Dt, t.Schema = Rt, t.SchemaDefinition = E, t.SetSchema = At, t.decode = wt, t.defineTypes = x, t.deprecated = T, t.dumpChanges = Pt, t.encode = Y, t.filter = b, t.filterChildren = I, t.hasFilter = A, t.registerType = m, t.type = $, Object.defineProperty(t, "__esModule", {
+                                    return vc;
+                                }, M([fb([oc], mc)], qc.prototype, 'types', void 0), M([fb('number', mc)], qc.prototype, 'rootType', void 0), qc;
+                            }(kc);
+                        _('map', {
+                            constructor: Z
+                        }), _('array', {
+                            constructor: X
+                        }), _('set', {
+                            constructor: cc
+                        }), _('collection', {
+                            constructor: bc
+                        }), a.ArraySchema = X, a.CollectionSchema = bc, a.Context = db, a.MapSchema = Z, a.Reflection = pc, a.ReflectionField = nc, a.ReflectionType = oc, a.Schema = kc, a.SchemaDefinition = bb, a.SetSchema = cc, a.decode = ac, a.defineTypes = jb, a.deprecated = ib, a.dumpChanges = lc, a.encode = Eb, a.filter = gb, a.filterChildren = hb, a.hasFilter = cb, a.registerType = _, a.type = fb, Object.defineProperty(a, '__esModule', {
                             value: !0
-                        })
-                    }))
-                })),
-                L = function() {
-                    function t(t, e) {
-                        var n = this;
-                        this.onStateChange = N(), this.onError = N(), this.onLeave = N(), this.onJoin = N(), this.hasJoined = !1, this.onMessageHandlers = k(), this.roomId = null, this.name = t, e && (this.serializer = new(C("schema")), this.rootSchema = e, this.serializer.state = new e), this.onError((function(t, e) {
-                            var n;
-                            return null === (n = console.warn) || void 0 === n ? void 0 : n.call(console, "colyseus.js - onError => (".concat(t, ") ").concat(e))
-                        })), this.onLeave((function() {
-                            return n.removeAllListeners()
-                        }))
+                        });
+                    });
+                }),
+                K = function() {
+                    function L(L, N) {
+                        var M = this;
+                        this.onStateChange = H(), this.onError = H(), this.onLeave = H(), this.onJoin = H(), this.hasJoined = !1, this.onMessageHandlers = F(), this.roomId = null, this.name = L, N && (this.serializer = new(E('schema'))(), this.rootSchema = N, this.serializer.state = new N()), this.onError(function(L, N) {
+                            var N;
+                            return null === (N = console.warn) || void 0 === N ? void 0 : N.call(console, 'colyseus.js - onError => ('.concat(L, ') ').concat(N));
+                        }), this.onLeave(function() {
+                            return N.removeAllListeners();
+                        });
                     }
-                    return Object.defineProperty(t.prototype, "id", {
+                    return Object.defineProperty(L.prototype, 'id', {
                         get: function() {
-                            return this.roomId
+                            return this.roomId;
                         },
                         enumerable: !1,
                         configurable: !0
-                    }), t.prototype.connect = function(e, n, o) {
-                        void 0 === o && (o = this);
-                        var i = new I;
-                        o.connection = i, i.events.onmessage = t.prototype.onMessageCallback.bind(o), i.events.onclose = function(t) {
-                            var e;
-                            if (!o.hasJoined) return null === (e = console.warn) || void 0 === e || e.call(console, "Room connection was closed unexpectedly (".concat(t.code, "): ").concat(t.reason)), void o.onError.invoke(t.code, t.reason);
-                            t.code === r.DEVMODE_RESTART && n ? n() : (o.onLeave.invoke(t.code), o.destroy())
-                        }, i.events.onerror = function(t) {
-                            var e;
-                            null === (e = console.warn) || void 0 === e || e.call(console, "Room, onError (".concat(t.code, "): ").concat(t.reason)), o.onError.invoke(t.code, t.reason)
-                        }, i.connect(e)
-                    }, t.prototype.leave = function(t) {
-                        var n = this;
-                        return void 0 === t && (t = !0), new Promise((function(o) {
-                            n.onLeave((function(t) {
-                                return o(t)
-                            })), n.connection ? t ? n.connection.send([e.Protocol.LEAVE_ROOM]) : n.connection.close() : n.onLeave.invoke(r.CONSENTED)
-                        }))
-                    }, t.prototype.onMessage = function(t, e) {
-                        return this.onMessageHandlers.on(this.getMessageHandlerKey(t), e)
-                    }, t.prototype.send = function(t, n) {
-                        var o, i = [e.Protocol.ROOM_DATA];
-                        if ("string" == typeof t ? M.encode.string(i, t) : M.encode.number(i, t), void 0 !== n) {
-                            var r = E(n);
-                            (o = new Uint8Array(i.length + r.byteLength)).set(new Uint8Array(i), 0), o.set(new Uint8Array(r), i.length)
-                        } else o = new Uint8Array(i);
-                        this.connection.send(o.buffer)
-                    }, t.prototype.sendBytes = function(t, n) {
-                        var o, i = [e.Protocol.ROOM_DATA_BYTES];
-                        "string" == typeof t ? M.encode.string(i, t) : M.encode.number(i, t), (o = new Uint8Array(i.length + (n.byteLength || n.length))).set(new Uint8Array(i), 0), o.set(new Uint8Array(n), i.length), this.connection.send(o.buffer)
-                    }, Object.defineProperty(t.prototype, "state", {
+                    }), L.prototype.connect = function(N, b, c) {
+                        void 0 === c && (c = this);
+                        var M = new z();
+                        c.connection = M, M.events.onmessage = L.prototype.onMessageCallback.bind(c), M.events.onclose = function(L) {
+                            var N;
+                            if (!c.hasJoined)
+                                return null === (N = console.warn) || void 0 === N || N.call(console, 'Room connection was closed unexpectedly ('.concat(L.code, '): ').concat(L.reason)), void c.onError.invoke(L.code, L.reason);
+                            L.code === e.DEVMODE_RESTART && b ? b() : (c.onLeave.invoke(L.code), c.destroy());
+                        }, M.events.onerror = function(L) {
+                            var N;
+                            null === (N = console.warn) || void 0 === N || N.call(console, 'Room, onError ('.concat(L.code, '): ').concat(L.reason)), c.onError.invoke(L.code, L.reason);
+                        }, M.connect(_);
+                    }, L.prototype.leave = function(L) {
+                        var M = this;
+                        return void 0 === L && (L = !0), new Promise(function(c) {
+                            M.onLeave(function(L) {
+                                return c(L);
+                            }), M.connection ? L ? M.connection.send([_.Protocol.LEAVE_ROOM]) : M.connection.close() : M.onLeave.invoke(e.CONSENTED);
+                        });
+                    }, L.prototype.onMessage = function(L, _) {
+                        return this.onMessageHandlers.on(this.getMessageHandlerKey(L), _);
+                    }, L.prototype.send = function(L, b) {
+                        var M, N = [_.Protocol.ROOM_DATA];
+                        if ('string' == typeof L ? J.encode.string(N, L) : J.encode.number(N, L), void 0 !== b) {
+                            var O = t(b);
+                            (M = new Uint8Array(N.length + O.byteLength)).set(new Uint8Array(N), 0), M.set(new Uint8Array(O), N.length);
+                        } else
+                            M = new Uint8Array(N);
+                        this.connection.send(M.buffer);
+                    }, L.prototype.sendBytes = function(L, b) {
+                        var M, N = [_.Protocol.ROOM_DATA_BYTES];
+                        'string' == typeof L ? J.encode.string(N, L) : J.encode.number(N, L), (M = new Uint8Array(N.length + (b.byteLength || b.length))).set(new Uint8Array(N), 0), M.set(new Uint8Array(b), N.length), this.connection.send(M.buffer);
+                    }, Object.defineProperty(L.prototype, 'state', {
                         get: function() {
-                            return this.serializer.getState()
+                            return this.serializer.getState();
                         },
                         enumerable: !1,
                         configurable: !0
-                    }), t.prototype.removeAllListeners = function() {
-                        this.onJoin.clear(), this.onStateChange.clear(), this.onError.clear(), this.onLeave.clear(), this.onMessageHandlers.events = {}
-                    }, t.prototype.onMessageCallback = function(t) {
-                        var n = Array.from(new Uint8Array(t.data)),
-                            o = n[0];
-                        if (o === e.Protocol.JOIN_ROOM) {
-                            var i = 1,
-                                r = T(n, i);
-                            if (i += x(r), this.serializerId = T(n, i), i += x(this.serializerId), !this.serializer) {
-                                var s = C(this.serializerId);
-                                this.serializer = new s
+                    }), L.prototype.removeAllListeners = function() {
+                        this.onJoin.clear(), this.onStateChange.clear(), this.onError.clear(), this.onLeave.clear(), this.onMessageHandlers.events = {};
+                    }, L.prototype.onMessageCallback = function(L) {
+                        var M = Array.from(new Uint8Array(L.data)),
+                            N = M[0];
+                        if (N === _.Protocol.JOIN_ROOM) {
+                            var O = 1,
+                                P = A(M, O);
+                            if (O += B(P), this.serializerId = A(M, O), O += B(this.serializerId), !this.serializer) {
+                                var Q = E(this.serializerId);
+                                this.serializer = new Q();
                             }
-                            n.length > i && this.serializer.handshake && this.serializer.handshake(n, {
-                                offset: i
-                            }), this.reconnectionToken = "".concat(this.roomId, ":").concat(r), this.hasJoined = !0, this.onJoin.invoke(), this.connection.send([e.Protocol.JOIN_ROOM])
-                        } else if (o === e.Protocol.ERROR) {
-                            var a = {
+                            M.length > O && this.serializer.handshake && this.serializer.handshake(M, {
+                                offset: O
+                            }), this.reconnectionToken = ''.concat(this.roomId, ':').concat(P), this.hasJoined = !0, this.onJoin.invoke(), this.connection.send([_.Protocol.JOIN_ROOM]);
+                        } else if (N === _.Protocol.ERROR) {
+                            var Q = {
                                     offset: 1
                                 },
-                                c = M.decode.number(n, a),
-                                f = M.decode.string(n, a);
-                            this.onError.invoke(c, f)
-                        } else if (o === e.Protocol.LEAVE_ROOM) this.leave();
-                        else if (o === e.Protocol.ROOM_DATA_SCHEMA) {
-                            var h = {
+                                R = J.decode.number(M, Q),
+                                S = J.decode.string(M, Q);
+                            this.onError.invoke(R, S);
+                        } else if (N === _.Protocol.LEAVE_ROOM)
+                            this.leave();
+                        else if (N === _.Protocol.ROOM_DATA_SCHEMA) {
+                            var T = {
                                 offset: 1
                             };
-                            (f = new(d = this.serializer.getState().constructor._context.get(M.decode.number(n, h)))).decode(n, h), this.dispatchMessage(d, f)
-                        } else if (o === e.Protocol.ROOM_STATE) n.shift(), this.setState(n);
-                        else if (o === e.Protocol.ROOM_STATE_PATCH) n.shift(), this.patch(n);
-                        else if (o === e.Protocol.ROOM_DATA) {
-                            var u = {
+                            (S = new(l = (this.serializer.getState().constructor._context.get(J.decode.number(M, T))))()).decode(M, T), this.dispatchMessage(l, S);
+                        } else if (N === _.Protocol.ROOM_STATE)
+                            M.shift(), this.setState(M);
+                        else if (N === _.Protocol.ROOM_STATE_PATCH)
+                            M.shift(), this.patch(M);
+                        else if (N === _.Protocol.ROOM_DATA) {
+                            var U = {
                                     offset: 1
                                 },
-                                d = M.decode.stringCheck(n, u) ? M.decode.string(n, u) : M.decode.number(n, u);
-                            f = n.length > u.offset ? p(t.data, u.offset) : void 0, this.dispatchMessage(d, f)
-                        } else if (o === e.Protocol.ROOM_DATA_BYTES) {
-                            var l = {
+                                V = J.decode.stringCheck(M, U) ? J.decode.string(M, U) : J.decode.number(M, U);
+                            S = M.length > U.offset ? n(L.data, U.offset) : void 0, this.dispatchMessage(V, S);
+                        } else if (N === _.Protocol.ROOM_DATA_BYTES) {
+                            var W = {
                                 offset: 1
                             };
-                            d = M.decode.stringCheck(n, l) ? M.decode.string(n, l) : M.decode.number(n, l), this.dispatchMessage(d, new Uint8Array(n.slice(l.offset)))
+                            V = J.decode.stringCheck(M, W) ? J.decode.string(M, W) : J.decode.number(M, W), this.dispatchMessage(V, new Uint8Array(M.slice(W.offset)));
                         }
-                    }, t.prototype.setState = function(t) {
-                        this.serializer.setState(t), this.onStateChange.invoke(this.serializer.getState())
-                    }, t.prototype.patch = function(t) {
-                        this.serializer.patch(t), this.onStateChange.invoke(this.serializer.getState())
-                    }, t.prototype.dispatchMessage = function(t, e) {
-                        var n, o = this.getMessageHandlerKey(t);
-                        this.onMessageHandlers.events[o] ? this.onMessageHandlers.emit(o, e) : this.onMessageHandlers.events["*"] ? this.onMessageHandlers.emit("*", t, e) : null === (n = console.warn) || void 0 === n || n.call(console, "colyseus.js: onMessage() not registered for type '".concat(t, "'."))
-                    }, t.prototype.destroy = function() {
-                        this.serializer && this.serializer.teardown()
-                    }, t.prototype.getMessageHandlerKey = function(t) {
-                        switch (typeof t) {
-                            case "function":
-                                return "$".concat(t._typeid);
-                            case "string":
-                                return t;
-                            case "number":
-                                return "i".concat(t);
+                    }, L.prototype.setState = function(L) {
+                        this.serializer.setState(L), this.onStateChange.invoke(this.serializer.getState());
+                    }, L.prototype.patch = function(L) {
+                        this.serializer.patch(L), this.onStateChange.invoke(this.serializer.getState());
+                    }, L.prototype.dispatchMessage = function(L, _) {
+                        var M, N = this.getMessageHandlerKey(L);
+                        this.onMessageHandlers.events[N] ? this.onMessageHandlers.emit(N, _) : this.onMessageHandlers.events['*'] ? this.onMessageHandlers.emit('*', L, _) : null === (M = console.warn) || void 0 === M || M.call(console, 'colyseus.js: onMessage() not registered for type \''.concat(L, '\'.'));
+                    }, L.prototype.destroy = function() {
+                        this.serializer && this.serializer.teardown();
+                    }, L.prototype.getMessageHandlerKey = function(L) {
+                        switch (typeof L) {
+                            case 'function':
+                                return '$'.concat(L._typeid);
+                            case 'string':
+                                return L;
+                            case 'number':
+                                return 'i'.concat(L);
                             default:
-                                throw new Error("invalid message type.")
+                                throw new Error('invalid message type.');
                         }
-                    }, t
+                    }, L;
                 }();
 
-            function j(t, e) {
-                e.statusMessage = t.statusText, e.statusCode = t.status, e.data = t.body
+            function L(a, _) {
+                _.statusMessage = a.statusText, _.statusCode = a.status, _.data = a.body;
             }
 
-            function U(t, e, n) {
-                var o, i, r = (n = n || {}).body;
-                return n.method = t, n.headers = n.headers || {}, r instanceof FormData || r && "object" == typeof r && (n.headers["content-type"] = "application/json", n.body = JSON.stringify(r)), n.withCredentials && (n.credentials = "include"), n.timeout && (i = new AbortController, n.signal = i.signal, o = setTimeout(i.abort, n.timeout)), new Promise(((t, s) => {
-                    fetch(e, n).then(((e, i) => {
-                        clearTimeout(o), j(e, e), i = e.status >= 400 ? s : t, (r = e.headers.get("content-type")) && ~r.indexOf("application/json") ? e.text().then((t => {
+            function M(a, _, b) {
+                var N, O, P = (b = b || {}).body;
+                return b.method = a, b.headers = b.headers || {}, P instanceof FormData || P && 'object' == typeof P && (b.headers['content-type'] = 'application/json', b.body = JSON.stringify(P)), b.withCredentials && (b.credentials = 'include'), b.timeout && (O = new AbortController(), b.signal = O.signal, N = setTimeout(O.abort, b.timeout)), new Promise((a, f) => {
+                    fetch(_, b).then((_, O) => {
+                        clearTimeout(N), L(_, _), O = _.status >= 400 ? f : a, (P = _.headers.get('content-type')) && ~P.indexOf('application/json') ? _.text().then(a => {
                             try {
-                                e.data = JSON.parse(t, n.reviver), i(e)
-                            } catch (t) {
-                                t.headers = e.headers, j(e, t), s(t)
+                                _.data = JSON.parse(a, b.reviver), O(_);
+                            } catch (a) {
+                                a.headers = _.headers, L(_, a), f(a);
                             }
-                        })) : i(e)
-                    })).catch((t => {
-                        t.timeout = i && i.signal.aborted, s(t)
-                    }))
-                }))
+                        }) : O(_);
+                    }).catch(a => {
+                        a.timeout = O && O.signal.aborted, f(a);
+                    });
+                });
             }
-            var F, H, B, V, J, z = U.bind(U, "GET"),
-                W = U.bind(U, "POST"),
-                q = U.bind(U, "PATCH"),
-                K = U.bind(U, "DELETE"),
-                Y = U.bind(U, "PUT"),
-                G = {
-                    del: K,
-                    get: z,
-                    patch: q,
-                    post: W,
-                    put: Y,
-                    send: U
+            var N, O, P, Q, R, S = M.bind(M, 'GET'),
+                T = M.bind(M, 'POST'),
+                U = M.bind(M, 'PATCH'),
+                V = M.bind(M, 'DELETE'),
+                W = M.bind(M, 'PUT'),
+                X = {
+                    del: V,
+                    get: S,
+                    patch: U,
+                    post: T,
+                    put: W,
+                    send: M
                 },
-                X = n({
+                Y = b({
                     __proto__: null,
-                    default: G,
-                    del: K,
-                    get: z,
-                    patch: q,
-                    post: W,
-                    put: Y,
-                    send: U
-                }, [G]),
-                Q = function() {
-                    function t(t) {
-                        this.client = t
+                    default: X,
+                    del: V,
+                    get: S,
+                    patch: U,
+                    post: T,
+                    put: W,
+                    send: M
+                }, [X]),
+                Z = function() {
+                    function $($) {
+                        this.client = $;
                     }
-                    return t.prototype.get = function(t, e) {
-                        return void 0 === e && (e = {}), this.request("get", t, e)
-                    }, t.prototype.post = function(t, e) {
-                        return void 0 === e && (e = {}), this.request("post", t, e)
-                    }, t.prototype.del = function(t, e) {
-                        return void 0 === e && (e = {}), this.request("del", t, e)
-                    }, t.prototype.put = function(t, e) {
-                        return void 0 === e && (e = {}), this.request("put", t, e)
-                    }, t.prototype.request = function(t, e, n) {
-                        return void 0 === n && (n = {}), X[t](this.client.getHttpEndpoint(e), this.getOptions(n)).catch((function(t) {
-                            var e;
-                            throw new u(t.statusCode || -1, (null === (e = t.data) || void 0 === e ? void 0 : e.error) || t.statusMessage || t.message || "offline")
-                        }))
-                    }, t.prototype.getOptions = function(t) {
-                        return this.authToken && (t.headers || (t.headers = {}), t.headers.Authorization = "Bearer ".concat(this.authToken), t.withCredentials = !0), t
-                    }, t
+                    return $.prototype.get = function($, _) {
+                        return void 0 === _ && (_ = {}), this.request('get', $, _);
+                    }, $.prototype.post = function($, _) {
+                        return void 0 === _ && (_ = {}), this.request('post', $, _);
+                    }, $.prototype.del = function($, _) {
+                        return void 0 === _ && (_ = {}), this.request('del', $, _);
+                    }, $.prototype.put = function($, _) {
+                        return void 0 === _ && (_ = {}), this.request('put', $, _);
+                    }, $.prototype.request = function($, _, b) {
+                        return void 0 === b && (b = {}), Y[$](this.client.getHttpEndpoint(_), this.getOptions(b)).catch(function($) {
+                            var _;
+                            throw new k($.statusCode || -1, (null === (_ = $.data) || void 0 === _ ? void 0 : _.error) || $.statusMessage || $.message || 'offline');
+                        });
+                    }, $.prototype.getOptions = function($) {
+                        return this.authToken && ($.headers || ($.headers = {}), $.headers.Authorization = 'Bearer '.concat(this.authToken), $.withCredentials = !0), $;
+                    }, $;
                 }();
 
-            function Z() {
-                return F || (F = "undefined" != typeof cc && cc.sys && cc.sys.localStorage ? cc.sys.localStorage : "undefined" != typeof window && window.localStorage ? window.localStorage : {
+            function $() {
+                return N || (N = 'undefined' != typeof cc && cc.sys && cc.sys.localStorage ? cc.sys.localStorage : 'undefined' != typeof window && window.localStorage ? window.localStorage : {
                     cache: {},
-                    setItem: function(t, e) {
-                        this.cache[t] = e
+                    setItem: function(a, fb) {
+                        this.cache[a] = fb;
                     },
-                    getItem: function(t) {
-                        this.cache[t]
+                    getItem: function(a) {
+                        this.cache[a];
                     },
-                    removeItem: function(t) {
-                        delete this.cache[t]
+                    removeItem: function(a) {
+                        delete this.cache[a];
                     }
-                }), F
+                }), N;
             }
 
-            function tt(t, e) {
-                Z().setItem(t, e)
+            function _(a, fb) {
+                $().setItem(a, fb);
             }
 
-            function et(t) {
-                Z().removeItem(t)
+            function ab(a) {
+                $().removeItem(a);
             }
 
-            function nt(t, e) {
-                var n = Z().getItem(t);
-                "undefined" != typeof Promise && n instanceof Promise ? n.then((function(t) {
-                    return e(t)
-                })) : e(n)
+            function bb(a, fb) {
+                var cb = $().getItem(a);
+                'undefined' != typeof Promise && cb instanceof Promise ? cb.then(function(a) {
+                    return fb(a);
+                }) : fb(cb);
             }
-            var ot, it = function() {
-                function t(t) {
-                    var e = this;
-                    this.http = t, this.settings = {
-                        path: "/auth",
-                        key: "colyseus-auth-token"
-                    }, H.set(this, !1), B.set(this, void 0), V.set(this, void 0), J.set(this, k()), nt(this.settings.key, (function(t) {
-                        return e.token = t
-                    }))
+            var cb, db = function() {
+                function eb(eb) {
+                    var fb = this;
+                    this.http = eb, this.settings = {
+                        path: '/auth',
+                        key: 'colyseus-auth-token'
+                    }, O.set(this, !1), P.set(this, void 0), Q.set(this, void 0), R.set(this, F()), bb(this.settings.key, function(eb) {
+                        return fb.token = eb;
+                    });
                 }
-                return Object.defineProperty(t.prototype, "token", {
+                return Object.defineProperty(eb.prototype, 'token', {
                     get: function() {
-                        return this.http.authToken
+                        return this.http.authToken;
                     },
-                    set: function(t) {
-                        this.http.authToken = t
+                    set: function(eb) {
+                        this.http.authToken = eb;
                     },
                     enumerable: !1,
                     configurable: !0
-                }), t.prototype.onChange = function(t) {
-                    var e = this,
-                        n = f(this, J, "f").on("change", t);
-                    return f(this, H, "f") || h(this, B, new Promise((function(t, n) {
-                        e.getUserData().then((function(t) {
-                            e.emitChange(s(s({}, t), {
-                                token: e.token
-                            }))
-                        })).catch((function(t) {
-                            e.emitChange({
+                }), eb.prototype.onChange = function(eb) {
+                    var fb = this,
+                        gb = i(this, R, 'f').on('change', eb);
+                    return i(this, O, 'f') || j(this, P, new Promise(function(eb, gb) {
+                        fb.getUserData().then(function(eb) {
+                            fb.emitChange(f(f({}, eb), {
+                                token: fb.token
+                            }));
+                        }).catch(function(eb) {
+                            fb.emitChange({
                                 user: null,
                                 token: void 0
-                            })
-                        })).finally((function() {
-                            t()
-                        }))
-                    })), "f"), h(this, H, !0, "f"), n
-                }, t.prototype.getUserData = function() {
-                    return a(this, void 0, void 0, (function() {
-                        return c(this, (function(t) {
-                            switch (t.label) {
+                            });
+                        }).finally(function() {
+                            eb();
+                        });
+                    }), 'f'), j(this, O, !0, 'f'), gb;
+                }, eb.prototype.getUserData = function() {
+                    return g(this, void 0, void 0, function() {
+                        return h(this, function(eb) {
+                            switch (eb.label) {
                                 case 0:
-                                    return this.token ? [4, this.http.get("".concat(this.settings.path, "/userdata"))] : [3, 2];
+                                    return this.token ? [
+                                        4,
+                                        this.http.get(''.concat(this.settings.path, '/userdata'))
+                                    ] : [
+                                        3,
+                                        2
+                                    ];
                                 case 1:
-                                    return [2, t.sent().data];
+                                    return [
+                                        2,
+                                        eb.sent().data
+                                    ];
                                 case 2:
-                                    throw new Error("missing auth.token")
+                                    throw new Error('missing auth.token');
                             }
-                        }))
-                    }))
-                }, t.prototype.registerWithEmailAndPassword = function(t, e, n) {
-                    return a(this, void 0, void 0, (function() {
-                        var o;
-                        return c(this, (function(i) {
-                            switch (i.label) {
+                        });
+                    });
+                }, eb.prototype.registerWithEmailAndPassword = function(eb, fb, b) {
+                    return g(this, void 0, void 0, function() {
+                        var fb;
+                        return h(this, function(d) {
+                            switch (d.label) {
                                 case 0:
-                                    return [4, this.http.post("".concat(this.settings.path, "/register"), {
-                                        body: {
-                                            email: t,
-                                            password: e,
-                                            options: n
-                                        }
-                                    })];
+                                    return [
+                                        4,
+                                        this.http.post(''.concat(this.settings.path, '/register'), {
+                                            body: {
+                                                email: eb,
+                                                password: fb,
+                                                options: b
+                                            }
+                                        })
+                                    ];
                                 case 1:
-                                    return o = i.sent().data, this.emitChange(o), [2, o]
+                                    return fb = d.sent().data, this.emitChange(fb), [
+                                        2,
+                                        fb
+                                    ];
                             }
-                        }))
-                    }))
-                }, t.prototype.signInWithEmailAndPassword = function(t, e) {
-                    return a(this, void 0, void 0, (function() {
-                        var n;
-                        return c(this, (function(o) {
-                            switch (o.label) {
+                        });
+                    });
+                }, eb.prototype.signInWithEmailAndPassword = function(eb, fb) {
+                    return g(this, void 0, void 0, function() {
+                        var fb;
+                        return h(this, function(c) {
+                            switch (c.label) {
                                 case 0:
-                                    return [4, this.http.post("".concat(this.settings.path, "/login"), {
-                                        body: {
-                                            email: t,
-                                            password: e
-                                        }
-                                    })];
+                                    return [
+                                        4,
+                                        this.http.post(''.concat(this.settings.path, '/login'), {
+                                            body: {
+                                                email: eb,
+                                                password: fb
+                                            }
+                                        })
+                                    ];
                                 case 1:
-                                    return n = o.sent().data, this.emitChange(n), [2, n]
+                                    return fb = c.sent().data, this.emitChange(fb), [
+                                        2,
+                                        fb
+                                    ];
                             }
-                        }))
-                    }))
-                }, t.prototype.signInAnonymously = function(t) {
-                    return a(this, void 0, void 0, (function() {
-                        var e;
-                        return c(this, (function(n) {
-                            switch (n.label) {
+                        });
+                    });
+                }, eb.prototype.signInAnonymously = function(eb) {
+                    return g(this, void 0, void 0, function() {
+                        var fb;
+                        return h(this, function(b) {
+                            switch (b.label) {
                                 case 0:
-                                    return [4, this.http.post("".concat(this.settings.path, "/anonymous"), {
-                                        body: {
-                                            options: t
-                                        }
-                                    })];
+                                    return [
+                                        4,
+                                        this.http.post(''.concat(this.settings.path, '/anonymous'), {
+                                            body: {
+                                                options: eb
+                                            }
+                                        })
+                                    ];
                                 case 1:
-                                    return e = n.sent().data, this.emitChange(e), [2, e]
+                                    return fb = b.sent().data, this.emitChange(fb), [
+                                        2,
+                                        fb
+                                    ];
                             }
-                        }))
-                    }))
-                }, t.prototype.sendPasswordResetEmail = function(t) {
-                    return a(this, void 0, void 0, (function() {
-                        return c(this, (function(e) {
-                            switch (e.label) {
+                        });
+                    });
+                }, eb.prototype.sendPasswordResetEmail = function(eb) {
+                    return g(this, void 0, void 0, function() {
+                        return h(this, function(fb) {
+                            switch (fb.label) {
                                 case 0:
-                                    return [4, this.http.post("".concat(this.settings.path, "/forgot-password"), {
-                                        body: {
-                                            email: t
-                                        }
-                                    })];
+                                    return [
+                                        4,
+                                        this.http.post(''.concat(this.settings.path, '/forgot-password'), {
+                                            body: {
+                                                email: eb
+                                            }
+                                        })
+                                    ];
                                 case 1:
-                                    return [2, e.sent().data]
+                                    return [
+                                        2,
+                                        fb.sent().data
+                                    ];
                             }
-                        }))
-                    }))
-                }, t.prototype.signInWithProvider = function(t, e) {
-                    return void 0 === e && (e = {}), a(this, void 0, void 0, (function() {
-                        var n = this;
-                        return c(this, (function(o) {
-                            return [2, new Promise((function(o, i) {
-                                var r = e.width || 480,
-                                    s = e.height || 768,
-                                    a = n.token ? "?token=".concat(n.token) : "",
-                                    c = "Login with ".concat(t[0].toUpperCase() + t.substring(1)),
-                                    u = n.http.client.getHttpEndpoint("".concat(e.prefix || "".concat(n.settings.path, "/provider"), "/").concat(t).concat(a)),
-                                    d = screen.width / 2 - r / 2,
-                                    l = screen.height / 2 - s / 2;
-                                h(n, V, window.open(u, c, "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=" + r + ", height=" + s + ", top=" + l + ", left=" + d), "f");
-                                var p = function(t) {
-                                        void 0 === t.data.user && void 0 === t.data.token || (clearInterval(v), f(n, V, "f").close(), h(n, V, void 0, "f"), window.removeEventListener("message", p), void 0 !== t.data.error ? i(t.data.error) : (o(t.data), n.emitChange(t.data)))
-                                    },
-                                    v = setInterval((function() {
-                                        f(n, V, "f") && !f(n, V, "f").closed || (h(n, V, void 0, "f"), i("cancelled"), window.removeEventListener("message", p))
-                                    }), 200);
-                                window.addEventListener("message", p)
-                            }))]
-                        }))
-                    }))
-                }, t.prototype.signOut = function() {
-                    return a(this, void 0, void 0, (function() {
-                        return c(this, (function(t) {
+                        });
+                    });
+                }, eb.prototype.signInWithProvider = function(eb, fb) {
+                    return void 0 === fb && (fb = {}), g(this, void 0, void 0, function() {
+                        var fb = this;
+                        return h(this, function(c) {
+                            return [
+                                2,
+                                new Promise(function(c, d) {
+                                    var gb = fb.width || 480,
+                                        hb = fb.height || 768,
+                                        ib = fb.token ? '?token='.concat(fb.token) : '',
+                                        jb = 'Login with '.concat(eb[0].toUpperCase() + eb.substring(1)),
+                                        kb = fb.http.client.getHttpEndpoint(''.concat(fb.prefix || ''.concat(fb.settings.path, '/provider'), '/').concat(eb).concat(ib)),
+                                        lb = screen.width / 2 - gb / 2,
+                                        mb = screen.height / 2 - hb / 2;
+                                    j(fb, Q, window.open(kb, jb, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + gb + ', height=' + hb + ', top=' + mb + ', left=' + lb), 'f');
+                                    var nb = function(eb) {
+                                            void 0 === eb.data.user && void 0 === eb.data.token || (clearInterval(o), i(fb, Q, 'f').close(), j(fb, Q, void 0, 'f'), window.removeEventListener('message', nb), void 0 !== eb.data.error ? d(eb.data.error) : (c(eb.data), fb.emitChange(eb.data)));
+                                        },
+                                        ob = setInterval(function() {
+                                            i(fb, Q, 'f') && !i(fb, Q, 'f').closed || (j(fb, Q, void 0, 'f'), d('cancelled'), window.removeEventListener('message', nb));
+                                        }, 200);
+                                    window.addEventListener('message', nb);
+                                })
+                            ];
+                        });
+                    });
+                }, eb.prototype.signOut = function() {
+                    return g(this, void 0, void 0, function() {
+                        return h(this, function(eb) {
                             return this.emitChange({
                                 user: null,
                                 token: null
-                            }), [2]
-                        }))
-                    }))
-                }, t.prototype.emitChange = function(t) {
-                    void 0 !== t.token && (this.token = t.token, null === t.token ? et(this.settings.key) : tt(this.settings.key, t.token)), f(this, J, "f").emit("change", t)
-                }, t
+                            }), [2];
+                        });
+                    });
+                }, eb.prototype.emitChange = function(eb) {
+                    void 0 !== eb.token && (this.token = eb.token, null === eb.token ? ab(this.settings.key) : _(this.settings.key, eb.token)), i(this, R, 'f').emit('change', eb);
+                }, eb;
             }();
-            H = new WeakMap, B = new WeakMap, V = new WeakMap, J = new WeakMap;
-            var rt = function(t) {
-                    function e(n, o) {
-                        var i = t.call(this, n) || this;
-                        return i.code = o, Object.setPrototypeOf(i, e.prototype), i
+            O = new WeakMap(), P = new WeakMap(), Q = new WeakMap(), R = new WeakMap();
+            var eb = function(a) {
+                    function fb(b, c) {
+                        var gb = a.call(this, b) || this;
+                        return gb.code = c, Object.setPrototypeOf(gb, fb.prototype), gb;
                     }
-                    return i(e, t), e
+                    return d(fb, a), fb;
                 }(Error),
-                st = "undefined" != typeof window && void 0 !== (null === (ot = null === window || void 0 === window ? void 0 : window.location) || void 0 === ot ? void 0 : ot.hostname) ? "".concat(window.location.protocol.replace("http", "ws"), "//").concat(window.location.hostname).concat(window.location.port && ":".concat(window.location.port)) : "ws://127.0.0.1:2567",
-                at = function() {
-                    function t(t) {
-                        if (void 0 === t && (t = st), "string" == typeof t) {
-                            var e = new URL(t),
-                                n = "https:" === e.protocol || "wss:" === e.protocol,
-                                o = Number(e.port || (n ? 443 : 80));
+                fb = 'undefined' != typeof window && void 0 !== (null === (cb = null === window || void 0 === window ? void 0 : window.location) || void 0 === cb ? void 0 : cb.hostname) ? ''.concat(window.location.protocol.replace('http', 'ws'), '//').concat(window.location.hostname).concat(window.location.port && ':'.concat(window.location.port)) : 'ws://127.0.0.1:2567',
+                gb = function() {
+                    function hb(hb) {
+                        if (void 0 === hb && (hb = fb), 'string' == typeof hb) {
+                            var ib = new URL(hb),
+                                jb = 'https:' === ib.protocol || 'wss:' === ib.protocol,
+                                kb = Number(ib.port || (jb ? 443 : 80));
                             this.settings = {
-                                hostname: e.hostname,
-                                pathname: e.pathname,
-                                port: o,
-                                secure: n
-                            }
-                        } else void 0 === t.port && (t.port = t.secure ? 443 : 80), void 0 === t.pathname && (t.pathname = ""), this.settings = t;
-                        this.settings.pathname.endsWith("/") && (this.settings.pathname = this.settings.pathname.slice(0, -1)), this.http = new Q(this), this.auth = new it(this.http)
+                                hostname: ib.hostname,
+                                pathname: ib.pathname,
+                                port: kb,
+                                secure: jb
+                            };
+                        } else
+                            void 0 === hb.port && (hb.port = hb.secure ? 443 : 80), void 0 === hb.pathname && (hb.pathname = ''), this.settings = hb;
+                        this.settings.pathname.endsWith('/') && (this.settings.pathname = this.settings.pathname.slice(0, -1)), this.http = new Z(this), this.auth = new db(this.http);
                     }
-                    return t.prototype.joinOrCreate = function(t, e, n) {
-                        return void 0 === e && (e = {}), a(this, void 0, void 0, (function() {
-                            return c(this, (function(o) {
-                                switch (o.label) {
+                    return hb.prototype.joinOrCreate = function(hb, ib, b) {
+                        return void 0 === ib && (ib = {}), g(this, void 0, void 0, function() {
+                            return h(this, function(c) {
+                                switch (c.label) {
                                     case 0:
-                                        return [4, this.createMatchMakeRequest("joinOrCreate", t, e, n)];
+                                        return [
+                                            4,
+                                            this.createMatchMakeRequest('joinOrCreate', hb, ib, b)
+                                        ];
                                     case 1:
-                                        return [2, o.sent()]
+                                        return [
+                                            2,
+                                            c.sent()
+                                        ];
                                 }
-                            }))
-                        }))
-                    }, t.prototype.create = function(t, e, n) {
-                        return void 0 === e && (e = {}), a(this, void 0, void 0, (function() {
-                            return c(this, (function(o) {
-                                switch (o.label) {
+                            });
+                        });
+                    }, hb.prototype.create = function(hb, ib, b) {
+                        return void 0 === ib && (ib = {}), g(this, void 0, void 0, function() {
+                            return h(this, function(c) {
+                                switch (c.label) {
                                     case 0:
-                                        return [4, this.createMatchMakeRequest("create", t, e, n)];
+                                        return [
+                                            4,
+                                            this.createMatchMakeRequest('create', hb, ib, b)
+                                        ];
                                     case 1:
-                                        return [2, o.sent()]
+                                        return [
+                                            2,
+                                            c.sent()
+                                        ];
                                 }
-                            }))
-                        }))
-                    }, t.prototype.join = function(t, e, n) {
-                        return void 0 === e && (e = {}), a(this, void 0, void 0, (function() {
-                            return c(this, (function(o) {
-                                switch (o.label) {
+                            });
+                        });
+                    }, hb.prototype.join = function(hb, ib, b) {
+                        return void 0 === ib && (ib = {}), g(this, void 0, void 0, function() {
+                            return h(this, function(c) {
+                                switch (c.label) {
                                     case 0:
-                                        return [4, this.createMatchMakeRequest("join", t, e, n)];
+                                        return [
+                                            4,
+                                            this.createMatchMakeRequest('join', hb, ib, b)
+                                        ];
                                     case 1:
-                                        return [2, o.sent()]
+                                        return [
+                                            2,
+                                            c.sent()
+                                        ];
                                 }
-                            }))
-                        }))
-                    }, t.prototype.joinById = function(t, e, n) {
-                        return void 0 === e && (e = {}), a(this, void 0, void 0, (function() {
-                            return c(this, (function(o) {
-                                switch (o.label) {
+                            });
+                        });
+                    }, hb.prototype.joinById = function(hb, ib, b) {
+                        return void 0 === ib && (ib = {}), g(this, void 0, void 0, function() {
+                            return h(this, function(c) {
+                                switch (c.label) {
                                     case 0:
-                                        return [4, this.createMatchMakeRequest("joinById", t, e, n)];
+                                        return [
+                                            4,
+                                            this.createMatchMakeRequest('joinById', hb, ib, b)
+                                        ];
                                     case 1:
-                                        return [2, o.sent()]
+                                        return [
+                                            2,
+                                            c.sent()
+                                        ];
                                 }
-                            }))
-                        }))
-                    }, t.prototype.reconnect = function(t, e) {
-                        return a(this, void 0, void 0, (function() {
-                            var n, o, i;
-                            return c(this, (function(r) {
-                                switch (r.label) {
-                                    case 0:
-                                        if ("string" == typeof t && "string" == typeof e) throw new Error("DEPRECATED: .reconnect() now only accepts 'reconnectionToken' as argument.\nYou can get this token from previously connected `room.reconnectionToken`");
-                                        if (n = t.split(":"), o = n[0], i = n[1], !o || !i) throw new Error("Invalid reconnection token format.\nThe format should be roomId:reconnectionToken");
-                                        return [4, this.createMatchMakeRequest("reconnect", o, {
-                                            reconnectionToken: i
-                                        }, e)];
-                                    case 1:
-                                        return [2, r.sent()]
-                                }
-                            }))
-                        }))
-                    }, t.prototype.getAvailableRooms = function(t) {
-                        return void 0 === t && (t = ""), a(this, void 0, void 0, (function() {
-                            return c(this, (function(e) {
+                            });
+                        });
+                    }, hb.prototype.reconnect = function(hb, ib) {
+                        return g(this, void 0, void 0, function() {
+                            var ib, jb, kb;
+                            return h(this, function(e) {
                                 switch (e.label) {
                                     case 0:
-                                        return [4, this.http.get("matchmake/".concat(t), {
-                                            headers: {
-                                                Accept: "application/json"
-                                            }
-                                        })];
+                                        if ('string' == typeof hb && 'string' == typeof ib)
+                                            throw new Error('DEPRECATED: .reconnect() now only accepts \'reconnectionToken\' as argument.\nYou can get this token from previously connected `room.reconnectionToken`');
+                                        if (ib = hb.split(':'), jb = ib[0], kb = ib[1], !jb || !kb)
+                                            throw new Error('Invalid reconnection token format.\nThe format should be roomId:reconnectionToken');
+                                        return [
+                                            4,
+                                            this.createMatchMakeRequest('reconnect', jb, {
+                                                reconnectionToken: kb
+                                            }, ib)
+                                        ];
                                     case 1:
-                                        return [2, e.sent().data]
+                                        return [
+                                            2,
+                                            e.sent()
+                                        ];
                                 }
-                            }))
-                        }))
-                    }, t.prototype.consumeSeatReservation = function(t, e, n) {
-                        return a(this, void 0, void 0, (function() {
-                            var o, i, r, s = this;
-                            return c(this, (function(f) {
-                                return (o = this.createRoom(t.room.name, e)).roomId = t.room.roomId, o.sessionId = t.sessionId, i = {
-                                    sessionId: o.sessionId
-                                }, t.reconnectionToken && (i.reconnectionToken = t.reconnectionToken), r = n || o, o.connect(this.buildEndpoint(t.room, i), t.devMode && function() {
-                                    return a(s, void 0, void 0, (function() {
-                                        var n, i, s, f = this;
-                                        return c(this, (function(h) {
-                                            return console.info("[Colyseus devMode]: ".concat(String.fromCodePoint(128260), " Re-establishing connection with room id '").concat(o.roomId, "'...")), n = 0, i = 8, s = function() {
-                                                return a(f, void 0, void 0, (function() {
-                                                    return c(this, (function(a) {
-                                                        switch (a.label) {
-                                                            case 0:
-                                                                n++, a.label = 1;
-                                                            case 1:
-                                                                return a.trys.push([1, 3, , 4]), [4, this.consumeSeatReservation(t, e, r)];
-                                                            case 2:
-                                                                return a.sent(), console.info("[Colyseus devMode]: ".concat(String.fromCodePoint(9989), " Successfully re-established connection with room '").concat(o.roomId, "'")), [3, 4];
-                                                            case 3:
-                                                                return a.sent(), n < i ? (console.info("[Colyseus devMode]: ".concat(String.fromCodePoint(128260), " retrying... (").concat(n, " out of ").concat(i, ")")), setTimeout(s, 2e3)) : console.info("[Colyseus devMode]: ".concat(String.fromCodePoint(10060), " Failed to reconnect. Is your server running? Please check server logs.")), [3, 4];
-                                                            case 4:
-                                                                return [2]
-                                                        }
-                                                    }))
-                                                }))
-                                            }, setTimeout(s, 2e3), [2]
-                                        }))
-                                    }))
-                                }, r), [2, new Promise((function(t, e) {
-                                    var n = function(t, n) {
-                                        return e(new u(t, n))
-                                    };
-                                    r.onError.once(n), r.onJoin.once((function() {
-                                        r.onError.remove(n), t(r)
-                                    }))
-                                }))]
-                            }))
-                        }))
-                    }, t.prototype.createMatchMakeRequest = function(t, e, n, o, i) {
-                        return void 0 === n && (n = {}), a(this, void 0, void 0, (function() {
-                            var r;
-                            return c(this, (function(s) {
-                                switch (s.label) {
+                            });
+                        });
+                    }, hb.prototype.getAvailableRooms = function(hb) {
+                        return void 0 === hb && (hb = ''), g(this, void 0, void 0, function() {
+                            return h(this, function(ib) {
+                                switch (ib.label) {
                                     case 0:
-                                        return [4, this.http.post("matchmake/".concat(t, "/").concat(e), {
-                                            headers: {
-                                                Accept: "application/json",
-                                                "Content-Type": "application/json"
-                                            },
-                                            body: JSON.stringify(n)
-                                        })];
+                                        return [
+                                            4,
+                                            this.http.get('matchmake/'.concat(hb), {
+                                                headers: {
+                                                    Accept: 'application/json'
+                                                }
+                                            })
+                                        ];
                                     case 1:
-                                        if ((r = s.sent().data).error) throw new rt(r.error, r.code);
-                                        return "reconnect" === t && (r.reconnectionToken = n.reconnectionToken), [4, this.consumeSeatReservation(r, o, i)];
-                                    case 2:
-                                        return [2, s.sent()]
+                                        return [
+                                            2,
+                                            ib.sent().data
+                                        ];
                                 }
-                            }))
-                        }))
-                    }, t.prototype.createRoom = function(t, e) {
-                        return new L(t, e)
-                    }, t.prototype.buildEndpoint = function(t, e) {
-                        void 0 === e && (e = {});
-                        var n = [];
-                        for (var o in e) e.hasOwnProperty(o) && n.push("".concat(o, "=").concat(e[o]));
-                        var i = this.settings.secure ? "wss://" : "ws://";
-                        return t.publicAddress ? i += "".concat(t.publicAddress) : i += "".concat(this.settings.hostname).concat(this.getEndpointPort()).concat(this.settings.pathname), "".concat(i, "/").concat(t.processId, "/").concat(t.roomId, "?").concat(n.join("&"))
-                    }, t.prototype.getHttpEndpoint = function(t) {
-                        void 0 === t && (t = "");
-                        var e = t.startsWith("/") ? t : "/".concat(t);
-                        return "".concat(this.settings.secure ? "https" : "http", "://").concat(this.settings.hostname).concat(this.getEndpointPort()).concat(this.settings.pathname).concat(e)
-                    }, t.prototype.getEndpointPort = function() {
-                        return 80 !== this.settings.port && 443 !== this.settings.port ? ":".concat(this.settings.port) : ""
-                    }, t
+                            });
+                        });
+                    }, hb.prototype.consumeSeatReservation = function(hb, ib, b) {
+                        return g(this, void 0, void 0, function() {
+                            var ib, jb, kb, lb = this;
+                            return h(this, function(i) {
+                                return (ib = this.createRoom(hb.room.name, ib)).roomId = hb.room.roomId, ib.sessionId = hb.sessionId, jb = {
+                                    sessionId: ib.sessionId
+                                }, hb.reconnectionToken && (jb.reconnectionToken = hb.reconnectionToken), kb = b || ib, ib.connect(this.buildEndpoint(hb.room, jb), hb.devMode && function() {
+                                    return g(lb, void 0, void 0, function() {
+                                        var mb, nb, ob, pb = this;
+                                        return h(this, function(j) {
+                                            return console.info('[Colyseus devMode]: '.concat(String.fromCodePoint(128260), ' Re-establishing connection with room id \'').concat(ib.roomId, '\'...')), mb = 0, nb = 8, ob = function() {
+                                                return g(pb, void 0, void 0, function() {
+                                                    return h(this, function(g) {
+                                                        switch (g.label) {
+                                                            case 0:
+                                                                mb++, g.label = 1;
+                                                            case 1:
+                                                                return g.trys.push([
+                                                                    1,
+                                                                    3, ,
+                                                                    4
+                                                                ]), [
+                                                                    4,
+                                                                    this.consumeSeatReservation(hb, ib, kb)
+                                                                ];
+                                                            case 2:
+                                                                return g.sent(), console.info('[Colyseus devMode]: '.concat(String.fromCodePoint(9989), ' Successfully re-established connection with room \'').concat(ib.roomId, '\'')), [
+                                                                    3,
+                                                                    4
+                                                                ];
+                                                            case 3:
+                                                                return g.sent(), mb < nb ? (console.info('[Colyseus devMode]: '.concat(String.fromCodePoint(128260), ' retrying... (').concat(mb, ' out of ').concat(nb, ')')), setTimeout(ob, 2000)) : console.info('[Colyseus devMode]: '.concat(String.fromCodePoint(10060), ' Failed to reconnect. Is your server running? Please check server logs.')), [
+                                                                    3,
+                                                                    4
+                                                                ];
+                                                            case 4:
+                                                                return [2];
+                                                        }
+                                                    });
+                                                });
+                                            }, setTimeout(ob, 2000), [2];
+                                        });
+                                    });
+                                }, kb), [
+                                    2,
+                                    new Promise(function(hb, ib) {
+                                        var mb = function(hb, mb) {
+                                            return ib(new k(hb, mb));
+                                        };
+                                        kb.onError.once(mb), kb.onJoin.once(function() {
+                                            kb.onError.remove(mb), hb(kb);
+                                        });
+                                    })
+                                ];
+                            });
+                        });
+                    }, hb.prototype.createMatchMakeRequest = function(hb, ib, b, c, d) {
+                        return void 0 === b && (b = {}), g(this, void 0, void 0, function() {
+                            var ib;
+                            return h(this, function(f) {
+                                switch (f.label) {
+                                    case 0:
+                                        return [
+                                            4,
+                                            this.http.post('matchmake/'.concat(hb, '/').concat(ib), {
+                                                headers: {
+                                                    Accept: 'application/json',
+                                                    'Content-Type': 'application/json'
+                                                },
+                                                body: JSON.stringify(b)
+                                            })
+                                        ];
+                                    case 1:
+                                        if ((ib = f.sent().data).error)
+                                            throw new eb(ib.error, ib.code);
+                                        return 'reconnect' === hb && (ib.reconnectionToken = b.reconnectionToken), [
+                                            4,
+                                            this.consumeSeatReservation(ib, c, d)
+                                        ];
+                                    case 2:
+                                        return [
+                                            2,
+                                            f.sent()
+                                        ];
+                                }
+                            });
+                        });
+                    }, hb.prototype.createRoom = function(hb, ib) {
+                        return new K(hb, ib);
+                    }, hb.prototype.buildEndpoint = function(hb, ib) {
+                        void 0 === ib && (ib = {});
+                        var ib = [];
+                        for (var jb in ib)
+                            ib.hasOwnProperty(jb) && ib.push(''.concat(jb, '=').concat(ib[jb]));
+                        var kb = this.settings.secure ? 'wss://' : 'ws://';
+                        return hb.publicAddress ? kb += ''.concat(hb.publicAddress) : kb += ''.concat(this.settings.hostname).concat(this.getEndpointPort()).concat(this.settings.pathname), ''.concat(kb, '/').concat(hb.processId, '/').concat(hb.roomId, '?').concat(ib.join('&'));
+                    }, hb.prototype.getHttpEndpoint = function(hb) {
+                        void 0 === hb && (hb = '');
+                        var ib = hb.startsWith('/') ? hb : '/'.concat(hb);
+                        return ''.concat(this.settings.secure ? 'https' : 'http', '://').concat(this.settings.hostname).concat(this.getEndpointPort()).concat(this.settings.pathname).concat(ib);
+                    }, hb.prototype.getEndpointPort = function() {
+                        return 80 !== this.settings.port && 443 !== this.settings.port ? ':'.concat(this.settings.port) : '';
+                    }, hb;
                 }(),
-                ct = function() {
-                    function t() {}
-                    return t.prototype.setState = function(t) {
-                        return this.state.decode(t)
-                    }, t.prototype.getState = function() {
-                        return this.state
-                    }, t.prototype.patch = function(t) {
-                        return this.state.decode(t)
-                    }, t.prototype.teardown = function() {
-                        var t, e;
-                        null === (e = null === (t = this.state) || void 0 === t ? void 0 : t.$changes) || void 0 === e || e.root.clearRefs()
-                    }, t.prototype.handshake = function(t, e) {
-                        this.state ? (new M.Reflection).decode(t, e) : this.state = M.Reflection.decode(t, e)
-                    }, t
+                hb = function() {
+                    function ib() {}
+                    return ib.prototype.setState = function(ib) {
+                        return this.state.decode(ib);
+                    }, ib.prototype.getState = function() {
+                        return this.state;
+                    }, ib.prototype.patch = function(ib) {
+                        return this.state.decode(ib);
+                    }, ib.prototype.teardown = function() {
+                        var jb, kb;
+                        null === (kb = null === (jb = this.state) || void 0 === jb ? void 0 : jb.$changes) || void 0 === kb || kb.root.clearRefs();
+                    }, ib.prototype.handshake = function(ib, e) {
+                        this.state ? new J.Reflection().decode(ib, e) : this.state = J.Reflection.decode(ib, e);
+                    }, ib;
                 }(),
-                ft = function() {
-                    function t() {}
-                    return t.prototype.setState = function(t) {}, t.prototype.getState = function() {
-                        return null
-                    }, t.prototype.patch = function(t) {}, t.prototype.teardown = function() {}, t.prototype.handshake = function(t) {}, t
+                ib = function() {
+                    function jb() {}
+                    return jb.prototype.setState = function(jb) {}, jb.prototype.getState = function() {
+                        return null;
+                    }, jb.prototype.patch = function(jb) {}, jb.prototype.teardown = function() {}, jb.prototype.handshake = function(jb) {}, jb;
                 }();
-            P("schema", ct), P("none", ft), e.Auth = it, e.Client = at, e.Room = L, e.SchemaSerializer = ct, e.registerSerializer = P, Object.defineProperty(e, "__esModule", {
+            D('schema', hb), D('none', ib), e.Auth = db, e.Client = gb, e.Room = K, e.SchemaSerializer = hb, e.registerSerializer = D, Object.defineProperty(e, '__esModule', {
                 value: !0
-            })
-        }(e.exports)
-}));
+            });
+        }(e.exports);
+});

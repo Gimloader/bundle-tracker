@@ -8,12 +8,16 @@
   "private": true,
   "devDependencies": {
     "@types/bun": "latest",
+    "@types/escodegen": "^0.0.10",
     "@types/js-beautify": "^1.14.3"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
+    "acorn": "^8.14.1",
+    "acorn-walk": "^8.3.4",
+    "escodegen": "^2.1.0",
     "js-beautify": "^1.15.4",
     "node-html-parser": "^7.0.1"
   }

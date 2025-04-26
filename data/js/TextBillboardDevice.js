@@ -1,142 +1,147 @@
-function t(t, e, i, s) {
-    Object.defineProperty(t, e, {
-        get: i,
+function a(a, b, c, s) {
+    Object.defineProperty(a, b, {
+        get: c,
         set: s,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
 
-function e(t) {
-    return t && t.__esModule ? t.default : t
+function b(a) {
+    return a && a.__esModule ? a.default : a;
 }
-var i = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-i.register("eKWDI", (function(e, s) {
-    var o;
-    o = e.exports, Object.defineProperty(o, "__esModule", {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('Rv/4f', function(b, s) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), t(e.exports, "default", (function() {
-        return v
-    }));
-    var n = i("divCp"),
-        a = i("bNmF9"),
-        r = i("2BPYb"),
-        h = i("hcPgY"),
-        l = i("6Tpu2"),
-        d = i("gwuwo"),
-        u = i("gbYDQ"),
-        c = i("4uojN"),
-        p = i("cnijD"),
-        f = i("cK78N");
-    class g extends a.default {
-        constructor(t) {
-            super(t), (0, n.default)(this, "createVisuals", (() => {
-                if (this.isDestroyed) return;
-                const t = (0, r.isGoogleFontLoaded)(this.options.googleFont),
-                    e = (0, d.default)().cameraHelper.zoom,
-                    i = 1 / e;
+    }), a(b.exports, 'default', function() {
+        return p;
+    });
+    var e = c('UM8oI'),
+        f = c('sgILU'),
+        g = c('crVjo2'),
+        h = c('IuVhK'),
+        i = c('5Ux1a'),
+        j = c('dAmf5'),
+        k = c('qxeBa0'),
+        l = c('Bpt+p'),
+        m = c('wSwKo5'),
+        n = c('/Lvpl17');
+    class o extends f.default {
+        constructor(a) {
+            super(a), (0, e.default)(this, 'createVisuals', () => {
+                if (this.isDestroyed)
+                    return;
+                const p = (0, g.isGoogleFontLoaded)(this.options.googleFont),
+                    q = (0, j.default)().cameraHelper.zoom,
+                    r = 1 / q;
                 let s = {
-                    fontSize: `${this.options.fontSize*e}px`,
-                    align: "center",
-                    fontFamily: t ? `"${this.options.googleFont}"` : "Roboto",
+                    fontSize: `${ this.options.fontSize * q }px`,
+                    align: 'center',
+                    fontFamily: p ? `"${ this.options.googleFont }"` : 'Roboto',
                     color: this.state.textColor || this.options.color
                 };
-                this.options.strokeThickness && this.options.strokeColor && (s.strokeThickness = this.options.strokeThickness * e, s.stroke = this.options.strokeColor);
-                let o = this.state.text || this.options.text;
-                o || (0, c.isSavedVersion)() && (o = "Text Here"), this.text = this.parts.add.text({
-                    text: o,
+                this.options.strokeThickness && this.options.strokeColor && (s.strokeThickness = this.options.strokeThickness * q, s.stroke = this.options.strokeColor);
+                let t = this.state.text || this.options.text;
+                t || (0, l.isSavedVersion)() && (t = 'Text Here'), this.text = this.parts.add.text({
+                    text: t,
                     textStyle: s
-                }), this.text.view.scale = i, this.text.view.angle = this.options.rotation, !t && this.options.googleFont ? (0, r.default)({
+                }), this.text.view.scale = r, this.text.view.angle = this.options.rotation, !p && this.options.googleFont ? (0, g.default)({
                     familyName: this.options.googleFont,
                     onLoad: () => {
-                        this.isDestroyed || (this.text.view.setFontFamily(`"${this.options.googleFont}"`), this.updateScale(), this.parts.show(), this.setupVisualEditing())
+                        this.isDestroyed || (this.text.view.setFontFamily(`"${ this.options.googleFont }"`), this.updateScale(), this.parts.show(), this.setupVisualEditing());
                     }
-                }) : (this.parts.show(), this.setupVisualEditing()), this.text.view.setAlpha(this.getAlpha())
-            })), (0, n.default)(this, "onUpdate", (() => {
-                this.currentScale !== this.neededScale && this.cull.isInsideView && this.updateScale()
-            })), (0, n.default)(this, "getWidth", (() => this.text ? this.text.view.width : 100)), (0, n.default)(this, "getHeight", (() => this.text ? 2 * this.text.view.height : 100)), (0, n.default)(this, "updateScale", (() => {
-                const t = 1 / (0, d.default)().cameraHelper.zoom;
-                this.neededScale = t, this.currentScale !== t && this.cull.isInsideView && (this.setFontSize(), this.setStroke(), this.currentScale = t, this.boundingBox.clearCached())
-            })), (0, n.default)(this, "setFontSize", (() => {
-                const t = this.neededScale;
-                this.text.view.scale = t;
-                const e = this.options.fontSize * (0, d.default)().cameraHelper.zoom,
-                    i = (0, u.TextPadding)();
-                this.text.view.setPadding(i, i, i, i), this.text.view.setFontSize(e)
-            })), (0, n.default)(this, "setStroke", (() => {
+                }) : (this.parts.show(), this.setupVisualEditing()), this.text.view.setAlpha(this.getAlpha());
+            }), (0, e.default)(this, 'onUpdate', () => {
+                this.currentScale !== this.neededScale && this.cull.isInsideView && this.updateScale();
+            }), (0, e.default)(this, 'getWidth', () => this.text ? this.text.view.width : 100), (0, e.default)(this, 'getHeight', () => this.text ? 2 * this.text.view.height : 100), (0, e.default)(this, 'updateScale', () => {
+                const p = 1 / (0, j.default)().cameraHelper.zoom;
+                this.neededScale = p, this.currentScale !== p && this.cull.isInsideView && (this.setFontSize(), this.setStroke(), this.currentScale = p, this.boundingBox.clearCached());
+            }), (0, e.default)(this, 'setFontSize', () => {
+                const p = this.neededScale;
+                this.text.view.scale = p;
+                const q = this.options.fontSize * (0, j.default)().cameraHelper.zoom,
+                    r = (0, k.TextPadding)();
+                this.text.view.setPadding(r, r, r, r), this.text.view.setFontSize(q);
+            }), (0, e.default)(this, 'setStroke', () => {
                 if (this.options.strokeThickness && this.options.strokeColor) {
-                    const t = this.options.strokeThickness * (0, d.default)().cameraHelper.zoom;
-                    this.text.view.setStroke(this.options.strokeColor, t)
+                    const p = this.options.strokeThickness * (0, j.default)().cameraHelper.zoom;
+                    this.text.view.setStroke(this.options.strokeColor, p);
                 }
-            })), (0, n.default)(this, "getAlpha", (() => (0, c.isSavedVersion)() && (0, l.InPreGamePhase)() ? this.options.alpha : (0, c.isPublishedVersion)() && (0, l.InPreGamePhase)() ? "No" === this.options.visibleOnGameStart ? 0 : this.options.alpha : this.state.visible ? this.options.alpha : 0)), (0, n.default)(this, "onStateChange", (t => {
+            }), (0, e.default)(this, 'getAlpha', () => (0, l.isSavedVersion)() && (0, i.InPreGamePhase)() ? this.options.alpha : (0, l.isPublishedVersion)() && (0, i.InPreGamePhase)() ? 'No' === this.options.visibleOnGameStart ? 0 : this.options.alpha : this.state.visible ? this.options.alpha : 0), (0, e.default)(this, 'onStateChange', a => {
                 if (this.text) {
-                    if ("visible" === t) {
-                        if (!(0, l.InGamePhase)()) return;
+                    if ('visible' === a) {
+                        if (!(0, i.InGamePhase)())
+                            return;
                         this.tweens.add({
                             targets: [this.text.view],
                             alpha: this.getAlpha(),
                             duration: h.default.Animation.Visibility.DurationMS,
                             ease: h.default.Animation.Visibility.Ease
-                        })
-                    } else "text" === t ? this.text.view.setText(this.state.text) : "textColor" === t && this.text.view.setColor(this.state.textColor);
-                    this.updateScale()
+                        });
+                    } else
+                        'text' === a ? this.text.view.setText(this.state.text) : 'textColor' === a && this.text.view.setColor(this.state.textColor);
+                    this.updateScale();
                 }
-            })), (0, n.default)(this, "setupVisualEditing", (() => {
-                if (!(0, l.InPreGamePhase)() || !(0, c.isSavedVersion)()) return;
-                if (this.visualEditing.uses()) return;
-                const t = (0, f.FetchOptionSchemaProperty)(this, "fontSize"),
-                    e = this.getWidth() * t.min / this.options.fontSize,
-                    i = this.getWidth() * t.max / this.options.fontSize,
-                    s = this.getHeight() * t.min / this.options.fontSize,
-                    o = this.getHeight() * t.max / this.options.fontSize;
+            }), (0, e.default)(this, 'setupVisualEditing', () => {
+                if (!(0, i.InPreGamePhase)() || !(0, l.isSavedVersion)())
+                    return;
+                if (this.visualEditing.uses())
+                    return;
+                const p = (0, n.FetchOptionSchemaProperty)(this, 'fontSize'),
+                    q = this.getWidth() * p.min / this.options.fontSize,
+                    r = this.getWidth() * p.max / this.options.fontSize,
+                    s = this.getHeight() * p.min / this.options.fontSize,
+                    t = this.getHeight() * p.max / this.options.fontSize;
                 this.visualEditing.add.box({
                     width: 2 * this.getWidth(),
                     height: this.getHeight(),
                     angle: this.options.rotation,
-                    minWidth: e,
-                    maxWidth: i,
+                    minWidth: q,
+                    maxWidth: r,
                     minHeight: s,
-                    maxHeight: o,
-                    onChange: t => {
-                        (0, p.ReplaceVisualEditingPreview)(t.x, t.y, {
-                            rotation: t.angle,
-                            fontSize: t.height / this.getHeight() * this.options.fontSize
-                        })
+                    maxHeight: t,
+                    onChange: p => {
+                        (0, m.ReplaceVisualEditingPreview)(p.x, p.y, {
+                            rotation: p.angle,
+                            fontSize: p.height / this.getHeight() * this.options.fontSize
+                        });
                     }
-                })
-            })), this.createVisuals()
+                });
+            }), this.createVisuals();
         }
     }
-    var v = g
-})), i.register("2BPYb", (function(s, o) {
-    t(s.exports, "isGoogleFontLoaded", (function() {
-        return r
-    })), t(s.exports, "default", (function() {
-        return h
-    }));
-    var n = i("7P9gc");
-    const a = [],
-        r = t => a.includes(t);
-    var h = t => {
+    var p = q;
+}), c.register('crVjo2', function(i, d) {
+    a(i.exports, 'isGoogleFontLoaded', function() {
+        return f;
+    }), a(i.exports, 'default', function() {
+        return g;
+    });
+    var d = c('2qGsE');
+    const e = [],
+        f = a => e.includes(a);
+    var g = a => {
         const {
-            familyName: i,
-            onLoad: s
-        } = t;
-        a.includes(i) ? s && s() : e(n).load({
+            familyName: h,
+            onLoad: i
+        } = j;
+        e.includes(h) ? i && i() : b(d).load({
             google: {
-                families: [`${i}:400,700`]
+                families: [`${ h }:400,700`]
             },
-            fontactive: t => {
-                a.includes(t) || a.push(t), i === t && s && s()
+            fontactive: j => {
+                e.includes(j) || e.push(j), h === j && i && i();
             }
-        })
-    }
-})), i.register("hcPgY", (function(s, o) {
-    t(s.exports, "default", (function() {
-        return n
-    }));
-    var n = {
+        });
+    };
+}), c.register('IuVhK', function(d, d) {
+    a(d.exports, 'default', function() {
+        return d;
+    });
+    var d = {
         TextStyle: {
             BorderWidth: 3,
             BorderRadius: 8
@@ -144,65 +149,66 @@ i.register("eKWDI", (function(e, s) {
         Animation: {
             Visibility: {
                 DurationMS: 400,
-                Ease: e(i("c3ah8")).Math.Easing.Linear
+                Ease: b(c('kneek')).Math.Easing.Linear
             }
         }
-    }
-})), i.register("gbYDQ", (function(e, i) {
-    t(e.exports, "TextPadding", (function() {
-        return s
-    }));
-    const s = () => 4
-})), i.register("cnijD", (function(e, s) {
-    t(e.exports, "ReplaceVisualEditingPreview", (function() {
-        return h
-    }));
-    var o = i("dWqri"),
-        n = i("eCsxR"),
-        a = i("ittx1"),
-        r = i("dNzyU");
-    const h = (t, e, i) => {
-        const s = (0, r.FetchVisualEditingPreview)(),
-            h = (0, a.FetchCurrentlyEditedDevice)();
-        if (!h || !s) return;
-        const l = h.layers.isOnNaturalDepth() ? void 0 : e + h.layers.getDepthShift();
-        (0, n.default)({
-            deviceOption: s.deviceOption,
-            id: o.VisualEditingConstants.previewId,
-            x: t,
-            y: e,
-            depth: l,
-            layerId: h.layers.getLayer(),
-            name: s.name,
+    };
+}), c.register('qxeBa0', function(b, c) {
+    a(b.exports, 'TextPadding', function() {
+        return d;
+    });
+    const d = () => 4;
+}), c.register('wSwKo5', function(b, i) {
+    a(b.exports, 'ReplaceVisualEditingPreview', function() {
+        return h;
+    });
+    var d = c('2pEsK'),
+        e = c('Am0b71'),
+        f = c('KDS1x'),
+        g = c('83+vO');
+    const h = (a, b, c) => {
+        const i = (0, g.FetchVisualEditingPreview)(),
+            j = (0, f.FetchCurrentlyEditedDevice)();
+        if (!j || !i)
+            return;
+        const k = j.layers.isOnNaturalDepth() ? void 0 : b + j.layers.getDepthShift();
+        (0, e.default)({
+            deviceOption: i.deviceOption,
+            id: d.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: k,
+            layerId: j.layers.getLayer(),
+            name: i.name,
             isPreview: !0,
             options: {
-                ...s.options,
-                ...i
+                ...i.options,
+                ...c
             },
             placedByClient: !0,
-            state: s.deviceOption.defaultState
-        })
-    }
-})), i.register("eCsxR", (function(e, s) {
-    t(e.exports, "default", (function() {
-        return a
-    }));
-    var o = i("gwuwo"),
-        n = i("fCcDT");
-    var a = t => {
-        (0, o.default)().worldManager.devices.getDeviceById(t.id) && (0, n.default)(t)
-    }
-})), i.register("cK78N", (function(e, i) {
-    t(e.exports, "FetchOptionSchemaProperty", (function() {
-        return s
-    }));
-    const s = (t, e) => {
-        var i, s, o;
-        const n = t.deviceOption.optionSchema.options.find((t => t.key === e));
+            state: i.deviceOption.defaultState
+        });
+    };
+}), c.register('Am0b71', function(b, d) {
+    a(b.exports, 'default', function() {
+        return f;
+    });
+    var d = c('dAmf5'),
+        e = c('jgFbX');
+    var f = a => {
+        (0, d.default)().worldManager.devices.getDeviceById(a.id) && (0, e.default)(a);
+    };
+}), c.register('/Lvpl17', function(b, c) {
+    a(b.exports, 'FetchOptionSchemaProperty', function() {
+        return d;
+    });
+    const d = (a, b) => {
+        var e, f, g;
+        const h = a.deviceOption.optionSchema.options.find(a => a.key === b);
         return {
-            min: null === (i = null == n ? void 0 : n.option.props) || void 0 === i ? void 0 : i.min,
-            max: null === (s = null == n ? void 0 : n.option.props) || void 0 === s ? void 0 : s.max,
-            step: null === (o = null == n ? void 0 : n.option.props) || void 0 === o ? void 0 : o.step
-        }
-    }
-}));
+            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
+            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
+            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
+        };
+    };
+});

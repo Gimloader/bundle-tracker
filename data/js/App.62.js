@@ -1,110 +1,111 @@
-function e(e, t, o, r) {
-    Object.defineProperty(e, t, {
-        get: o,
+function a(a, b, q, r) {
+    Object.defineProperty(a, b, {
+        get: q,
         set: r,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("iecur", (function(o, r) {
-    var n;
-    n = o.exports, Object.defineProperty(n, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('F9k3r', function(q, r) {
+    var c;
+    c = q.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(o.exports, "default", (function() {
-        return v
-    }));
-    var i = t("hxEiv"),
-        s = t("fywoC"),
-        a = t("fBuQJ"),
-        c = t("gHmyG"),
-        u = t("iMOcM"),
-        l = t("bGoag"),
-        d = t("b1oE9"),
-        g = t("3uz2P"),
-        f = t("iROck"),
-        p = t("8p0tB");
-    var v = () => {
+    }), a(q.exports, 'default', function() {
+        return n;
+    });
+    var d = b('8kSQZ'),
+        e = b('uPP4W'),
+        f = b('cR5QE'),
+        g = b('iHElh'),
+        h = b('PjB0f'),
+        i = b('I9mdQ'),
+        j = b('q721a'),
+        k = b('0R8EW'),
+        l = b('k0s2g17'),
+        m = b('CJCMN4');
+    var n = () => {
         const {
-            id: e
-        } = (0, g.useParams)();
-        return s.useEffect((() => {
-            (0, u.request)({
-                url: "/api/bulk/join",
-                method: "post",
+            id: o
+        } = (0, k.useParams)();
+        return e.useEffect(() => {
+            (0, h.request)({
+                url: '/api/bulk/join',
+                method: 'post',
                 data: {
-                    id: e
+                    id: o
                 },
-                success: e => {
-                    var t;
-                    const o = (0, u.isUpgraded)(),
-                        r = String(null === (t = (0, u.getUser)()) || void 0 === t ? void 0 : t.type),
-                        n = () => {
+                success: o => {
+                    var p;
+                    const q = (0, h.isUpgraded)(),
+                        r = String(null === (p = (0, h.getUser)()) || void 0 === p ? void 0 : p.type),
+                        s = () => {
                             var t;
-                            o || (0, p.AnalyticsTrackEvent)({
-                                event: "upgrade",
+                            q || (0, m.AnalyticsTrackEvent)({
+                                event: 'upgrade',
                                 properties: {
-                                    plan: null === (t = (0, u.getUser)()) || void 0 === t ? void 0 : t.type,
-                                    source: "group"
+                                    plan: null === (t = (0, h.getUser)()) || void 0 === t ? void 0 : t.type,
+                                    source: 'group'
                                 },
                                 forcePostHog: !0
-                            }), (0, p.AnalyticsTrackEvent)({
-                                event: "group_join",
+                            }), (0, m.AnalyticsTrackEvent)({
+                                event: 'group_join',
                                 properties: {
                                     currentPlan: r
                                 },
                                 forcePostHog: !0
-                            }), (0, f.NavigateTo)(d.DASHBOARD), a.default.success({
-                                title: "Joined Group License!",
-                                content: e && e.message ? e.message : ""
-                            })
+                            }), (0, l.NavigateTo)(j.DASHBOARD), f.default.success({
+                                title: 'Joined Group License!',
+                                content: o && o.message ? o.message : ''
+                            });
                         };
-                    (0, l.default)({
-                        onSuccess: n,
-                        onError: n
-                    })
+                    (0, i.default)({
+                        onSuccess: s,
+                        onError: s
+                    });
                 },
-                error: e => {
-                    (0, f.NavigateTo)(d.DASHBOARD), e && e.message && e.message.text ? a.default.error({
-                        title: "Error joining group",
-                        content: e.message.text
-                    }) : a.default.error({
-                        title: "Error joining subscription",
-                        content: "Please try again"
-                    })
+                error: o => {
+                    (0, l.NavigateTo)(j.DASHBOARD), o && o.message && o.message.text ? f.default.error({
+                        title: 'Error joining group',
+                        content: o.message.text
+                    }) : f.default.error({
+                        title: 'Error joining subscription',
+                        content: 'Please try again'
+                    });
                 }
+            });
+        }, []), (0, d.jsx)('div', {
+            className: 'maxWidth maxHeight flex hc vc',
+            children: (0, d.jsx)(g.default, {
+                size: 'large'
             })
-        }), []), (0, i.jsx)("div", {
-            className: "maxWidth maxHeight flex hc vc",
-            children: (0, i.jsx)(c.default, {
-                size: "large"
-            })
-        })
-    }
-})), t.register("iROck", (function(o, r) {
-    e(o.exports, "NavigateTo", (function() {
-        return i
-    }));
-    var n = t("bd8je");
-    const i = e => {
-        n.history.push(e)
-    }
-})), t.register("8p0tB", (function(o, r) {
-    e(o.exports, "AnalyticsTrackEvent", (function() {
-        return c
-    }));
-    var n = t("6fFlL"),
-        i = t("iMOcM"),
-        s = t("dOsOD"),
-        a = t("amvOw");
-    const c = e => {
-        var t, o, r;
-        if ((window.gtag && !(null === (t = e.blockedSource) || void 0 === t ? void 0 : t.google) && window.gtag("event", e.event, e.properties), s.AnalyticsFlags.educatorOnly) && (null === (r = (0, i.getUser)()) || void 0 === r ? void 0 : r.accountType) !== n.default.educator) return;
-        (null === (o = e.blockedSource) || void 0 === o ? void 0 : o.posthog) || (0, a.TrackPostHogEvent)({
-            event: e.event,
-            properties: e.properties,
-            force: e.forcePostHog
-        })
-    }
-}));
+        });
+    };
+}), b.register('k0s2g17', function(i, j) {
+    a(i.exports, 'NavigateTo', function() {
+        return d;
+    });
+    var c = b('Cr/BM');
+    const d = a => {
+        c.history.push(a);
+    };
+}), b.register('CJCMN4', function(i, j) {
+    a(i.exports, 'AnalyticsTrackEvent', function() {
+        return g;
+    });
+    var c = b('pvZv3'),
+        d = b('PjB0f'),
+        e = b('61G7M'),
+        f = b('OW/xn');
+    const g = a => {
+        var h, i, j;
+        if ((window.gtag && !(null === (h = a.blockedSource) || void 0 === h ? void 0 : h.google) && window.gtag('event', a.event, a.properties), e.AnalyticsFlags.educatorOnly) && (null === (j = (0, d.getUser)()) || void 0 === j ? void 0 : j.accountType) !== c.default.educator)
+            return;
+        (null === (i = a.blockedSource) || void 0 === i ? void 0 : i.posthog) || (0, f.TrackPostHogEvent)({
+            event: a.event,
+            properties: a.properties,
+            force: a.forcePostHog
+        });
+    };
+});

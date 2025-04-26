@@ -1,116 +1,118 @@
-function e(e, i, t, n) {
-    Object.defineProperty(e, i, {
-        get: t,
-        set: n,
+function a(a, b, p, q) {
+    Object.defineProperty(a, b, {
+        get: p,
+        set: q,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var i = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-i.register("h8xEk", (function(t, n) {
-    var a;
-    a = t.exports, Object.defineProperty(a, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('kf5Sk', function(p, q) {
+    var c;
+    c = p.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(t.exports, "default", (function() {
-        return g
-    }));
-    var r = i("divCp"),
-        o = i("4uojN"),
-        s = i("6Tpu2"),
-        d = i("cnijD"),
-        l = i("cK78N"),
-        c = i("bNmF9"),
-        u = i("alREA"),
-        p = i("81UFP"),
-        f = i("050o1"),
-        v = i("bDCcz");
-    class h extends c.default {
-        constructor(e) {
-            if (super(e), (0, r.default)(this, "currentFallVelocity", 0), (0, s.InGamePhase)() || (0, o.isPublishedVersion)()) return;
-            const i = (0, l.FetchOptionSchemaProperty)(this, "rangeRadius");
+    }), a(p.exports, 'default', function() {
+        return o;
+    });
+    var d = b('UM8oI'),
+        e = b('Bpt+p'),
+        f = b('5Ux1a'),
+        g = b('wSwKo5'),
+        h = b('/Lvpl17'),
+        i = b('sgILU'),
+        j = b('JJQ0+'),
+        k = b('eaWFX'),
+        l = b('Q0Vn8'),
+        m = b('HMNV0');
+    class n extends i.default {
+        constructor(a) {
+            if (super(a), (0, d.default)(this, 'currentFallVelocity', 0), (0, f.InGamePhase)() || (0, e.isPublishedVersion)())
+                return;
+            const o = (0, h.FetchOptionSchemaProperty)(this, 'rangeRadius');
             this.visualEditing.add.circle({
                 radius: this.options.rangeRadius,
-                minRadius: i.min,
-                maxRadius: i.max,
+                minRadius: o.min,
+                maxRadius: o.max,
                 rotable: !1,
-                onChange: e => {
-                    (0, d.ReplaceVisualEditingPreview)(e.x, e.y, {
-                        rangeRadius: Math.round(e.radius)
-                    })
+                onChange: a => {
+                    (0, g.ReplaceVisualEditingPreview)(a.x, a.y, {
+                        rangeRadius: Math.round(a.radius)
+                    });
                 }
             });
-            const t = this.options.skinId.replace("character_", ""),
-                n = (0, u.default)(`characters/spine/normalized_preview/${t}.png`);
+            const p = this.options.skinId.replace('character_', ''),
+                q = (0, j.default)(`characters/spine/normalized_preview/${ p }.png`);
             this.parts.add.sprite({
-                y: 30 - 50 * .28,
-                imageId: n,
-                imageUrl: n,
-                depthChange: (0, f.default)(2),
-                onReady: e => {
-                    e.view.setScale(.28 * this.options.scale), e.view.setOrigin(.5, 550 / 600)
+                y: 30 - 50 * 0.28,
+                imageId: q,
+                imageUrl: q,
+                depthChange: (0, l.default)(2),
+                onReady: a => {
+                    a.view.setScale(0.28 * this.options.scale), a.view.setOrigin(0.5, 550 / 600);
                 }
-            }), (0, v.isPlatformer)() || this.parts.add.sprite({
+            }), (0, m.isPlatformer)() || this.parts.add.sprite({
                 y: 15 - 5 * this.options.scale,
-                imageId: "character-shadow",
-                imageUrl: (0, u.default)("characters/shadow.png"),
-                onReady: e => {
-                    e.view.setOrigin(.5, .5), e.view.setScale(p.SHADOW_SCALE * this.options.scale), e.view.setAlpha(p.SHADOW_ALPHA)
+                imageId: 'character-shadow',
+                imageUrl: (0, j.default)('characters/shadow.png'),
+                onReady: a => {
+                    a.view.setOrigin(0.5, 0.5), a.view.setScale(k.SHADOW_SCALE * this.options.scale), a.view.setAlpha(k.SHADOW_ALPHA);
                 }
-            })
+            });
         }
     }
-    var g = h
-})), i.register("cnijD", (function(t, n) {
-    e(t.exports, "ReplaceVisualEditingPreview", (function() {
-        return d
-    }));
-    var a = i("dWqri"),
-        r = i("eCsxR"),
-        o = i("ittx1"),
-        s = i("dNzyU");
-    const d = (e, i, t) => {
-        const n = (0, s.FetchVisualEditingPreview)(),
-            d = (0, o.FetchCurrentlyEditedDevice)();
-        if (!d || !n) return;
-        const l = d.layers.isOnNaturalDepth() ? void 0 : i + d.layers.getDepthShift();
-        (0, r.default)({
-            deviceOption: n.deviceOption,
-            id: a.VisualEditingConstants.previewId,
-            x: e,
-            y: i,
-            depth: l,
-            layerId: d.layers.getLayer(),
-            name: n.name,
+    var o = p;
+}), b.register('wSwKo5', function(d, h) {
+    a(d.exports, 'ReplaceVisualEditingPreview', function() {
+        return g;
+    });
+    var c = b('2pEsK'),
+        d = b('Am0b71'),
+        e = b('KDS1x'),
+        f = b('83+vO');
+    const g = (a, b, d) => {
+        const h = (0, f.FetchVisualEditingPreview)(),
+            i = (0, e.FetchCurrentlyEditedDevice)();
+        if (!i || !h)
+            return;
+        const j = i.layers.isOnNaturalDepth() ? void 0 : b + i.layers.getDepthShift();
+        (0, d.default)({
+            deviceOption: h.deviceOption,
+            id: c.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: j,
+            layerId: i.layers.getLayer(),
+            name: h.name,
             isPreview: !0,
             options: {
-                ...n.options,
-                ...t
+                ...h.options,
+                ...d
             },
             placedByClient: !0,
-            state: n.deviceOption.defaultState
-        })
-    }
-})), i.register("eCsxR", (function(t, n) {
-    e(t.exports, "default", (function() {
-        return o
-    }));
-    var a = i("gwuwo"),
-        r = i("fCcDT");
-    var o = e => {
-        (0, a.default)().worldManager.devices.getDeviceById(e.id) && (0, r.default)(e)
-    }
-})), i.register("cK78N", (function(i, t) {
-    e(i.exports, "FetchOptionSchemaProperty", (function() {
-        return n
-    }));
-    const n = (e, i) => {
-        var t, n, a;
-        const r = e.deviceOption.optionSchema.options.find((e => e.key === i));
+            state: h.deviceOption.defaultState
+        });
+    };
+}), b.register('Am0b71', function(d, c) {
+    a(d.exports, 'default', function() {
+        return e;
+    });
+    var c = b('dAmf5'),
+        d = b('jgFbX');
+    var e = a => {
+        (0, c.default)().worldManager.devices.getDeviceById(a.id) && (0, d.default)(a);
+    };
+}), b.register('/Lvpl17', function(b, d) {
+    a(b.exports, 'FetchOptionSchemaProperty', function() {
+        return c;
+    });
+    const c = (a, b) => {
+        var d, e, f;
+        const g = a.deviceOption.optionSchema.options.find(a => a.key === b);
         return {
-            min: null === (t = null == r ? void 0 : r.option.props) || void 0 === t ? void 0 : t.min,
-            max: null === (n = null == r ? void 0 : r.option.props) || void 0 === n ? void 0 : n.max,
-            step: null === (a = null == r ? void 0 : r.option.props) || void 0 === a ? void 0 : a.step
-        }
-    }
-}));
+            min: null === (d = null == g ? void 0 : g.option.props) || void 0 === d ? void 0 : d.min,
+            max: null === (e = null == g ? void 0 : g.option.props) || void 0 === e ? void 0 : e.max,
+            step: null === (f = null == g ? void 0 : g.option.props) || void 0 === f ? void 0 : f.step
+        };
+    };
+});

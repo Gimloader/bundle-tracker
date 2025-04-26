@@ -1,172 +1,175 @@
-function e(e) {
-    return e && e.__esModule ? e.default : e
+function a(a) {
+    return a && a.__esModule ? a.default : a;
 }
 
-function i(e, i, t, n) {
-    Object.defineProperty(e, i, {
-        get: t,
-        set: n,
+function b(a, b, c, d) {
+    Object.defineProperty(a, b, {
+        get: c,
+        set: d,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("lhuaa", (function(n, o) {
-    var s;
-    s = n.exports, Object.defineProperty(s, "__esModule", {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('xAWb+', function(d, e) {
+    var d;
+    d = d.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), i(n.exports, "default", (function() {
-        return w
-    }));
-    var a = t("divCp"),
-        r = t("4uojN"),
-        l = t("6Tpu2"),
-        u = t("bNmF9"),
-        d = t("6q6Jx"),
-        p = t("cnijD"),
-        c = t("cK78N"),
-        h = t("6EcnK"),
-        g = t("fniCL"),
-        v = t("rUtvU"),
-        f = t("c3ah8");
-    class m extends u.default {
-        constructor(i) {
-            super(i), (0, a.default)(this, "createVisuals", (() => {
-                const i = {
-                        ...g.UnknownItemAsset
+    }), b(d.exports, 'default', function() {
+        return q;
+    });
+    var e = c('UM8oI'),
+        f = c('Bpt+p'),
+        g = c('5Ux1a'),
+        h = c('sgILU'),
+        i = c('MVCx0'),
+        j = c('wSwKo5'),
+        k = c('/Lvpl17'),
+        l = c('0x6bL'),
+        m = c('Sbl6W'),
+        n = c('95CV8'),
+        o = c('kneek');
+    class p extends h.default {
+        constructor(b) {
+            super(b), (0, e.default)(this, 'createVisuals', () => {
+                const q = {
+                        ...m.UnknownItemAsset
                     },
-                    t = (0, h.default)(this.options.itemId);
-                t && (i.imageId = t.previewImage, i.imageUrl = t.previewImage), this.part = this.parts.add.sprite({
-                    ...i,
-                    onReady: i => {
-                        if (i.view.displayWidth = this.options.size, i.view.displayHeight = this.options.size, i.view.angle = this.options.angle, this.options.outline) {
-                            let t = this.options.outlineSize === d.OutlineSizeOption.custom ? this.options.customOutlineSize : this.options.size / 25;
-                            t > this.options.size / 10 && (t = this.options.size / 10), (0, v.AddOutline)({
-                                view: i.view,
+                    r = (0, l.default)(this.options.itemId);
+                r && (q.imageId = r.previewImage, q.imageUrl = r.previewImage), this.part = this.parts.add.sprite({
+                    ...q,
+                    onReady: q => {
+                        if (q.view.displayWidth = this.options.size, q.view.displayHeight = this.options.size, q.view.angle = this.options.angle, this.options.outline) {
+                            let s = this.options.outlineSize === i.OutlineSizeOption.custom ? this.options.customOutlineSize : this.options.size / 25;
+                            s > this.options.size / 10 && (s = this.options.size / 10), (0, n.AddOutline)({
+                                view: q.view,
                                 options: {
-                                    outlineColor: e(f).Display.Color.HexStringToColor(this.options.outlineColor).color,
-                                    thickness: t
+                                    outlineColor: a(o).Display.Color.HexStringToColor(this.options.outlineColor).color,
+                                    thickness: s
                                 }
-                            })
+                            });
                         }
                     }
-                }), this.part.view.alpha = this.getAlpha()
-            })), (0, a.default)(this, "getAlpha", (() => (0, l.InPreGamePhase)() ? (0, r.isSavedVersion)() || this.options.visibleOnGameStart ? 1 : 0 : this.state.visible ? 1 : 0)), (0, a.default)(this, "setupVisualEditing", (() => {
-                if (!(0, l.InPreGamePhase)() || !(0, r.isSavedVersion)()) return;
-                const e = (0, c.FetchOptionSchemaProperty)(this, "size");
+                }), this.part.view.alpha = this.getAlpha();
+            }), (0, e.default)(this, 'getAlpha', () => (0, g.InPreGamePhase)() ? (0, f.isSavedVersion)() || this.options.visibleOnGameStart ? 1 : 0 : this.state.visible ? 1 : 0), (0, e.default)(this, 'setupVisualEditing', () => {
+                if (!(0, g.InPreGamePhase)() || !(0, f.isSavedVersion)())
+                    return;
+                const q = (0, k.FetchOptionSchemaProperty)(this, 'size');
                 this.visualEditing.add.box({
                     width: this.options.size,
                     height: this.options.size,
                     angle: this.options.angle,
-                    minWidth: e.min,
-                    maxWidth: e.max,
-                    minHeight: e.min,
-                    maxHeight: e.max,
+                    minWidth: q.min,
+                    maxWidth: q.max,
+                    minHeight: q.min,
+                    maxHeight: q.max,
                     rotable: !0,
                     keepRatio: !0,
-                    onChange: e => {
-                        (0, p.ReplaceVisualEditingPreview)(e.x, e.y, {
-                            size: e.width,
-                            angle: e.angle
-                        })
+                    onChange: q => {
+                        (0, j.ReplaceVisualEditingPreview)(q.x, q.y, {
+                            size: q.width,
+                            angle: q.angle
+                        });
                     }
-                })
-            })), (0, a.default)(this, "onStateChange", (e => {
-                "visible" === e && (this.part.view.alpha = this.getAlpha())
-            })), this.setupVisualEditing(), this.createVisuals()
+                });
+            }), (0, e.default)(this, 'onStateChange', a => {
+                'visible' === a && (this.part.view.alpha = this.getAlpha());
+            }), this.setupVisualEditing(), this.createVisuals();
         }
     }
-    var w = m
-})), t.register("6q6Jx", (function(e, t) {
-    let n;
-    var o;
-    i(e.exports, "OutlineSizeOption", (function() {
-        return n
-    })), (o = n || (n = {})).automatic = "automatic", o.custom = "custom"
-})), t.register("cnijD", (function(e, n) {
-    i(e.exports, "ReplaceVisualEditingPreview", (function() {
-        return l
-    }));
-    var o = t("dWqri"),
-        s = t("eCsxR"),
-        a = t("ittx1"),
-        r = t("dNzyU");
-    const l = (e, i, t) => {
-        const n = (0, r.FetchVisualEditingPreview)(),
-            l = (0, a.FetchCurrentlyEditedDevice)();
-        if (!l || !n) return;
-        const u = l.layers.isOnNaturalDepth() ? void 0 : i + l.layers.getDepthShift();
-        (0, s.default)({
-            deviceOption: n.deviceOption,
-            id: o.VisualEditingConstants.previewId,
-            x: e,
-            y: i,
-            depth: u,
-            layerId: l.layers.getLayer(),
-            name: n.name,
+    var q = r;
+}), c.register('MVCx0', function(a, c) {
+    let d;
+    var e;
+    b(a.exports, 'OutlineSizeOption', function() {
+        return d;
+    }), (e = d || (d = {})).automatic = 'automatic', e.custom = 'custom';
+}), c.register('wSwKo5', function(a, i) {
+    b(a.exports, 'ReplaceVisualEditingPreview', function() {
+        return h;
+    });
+    var d = c('2pEsK'),
+        e = c('Am0b71'),
+        f = c('KDS1x'),
+        g = c('83+vO');
+    const h = (a, b, c) => {
+        const i = (0, g.FetchVisualEditingPreview)(),
+            j = (0, f.FetchCurrentlyEditedDevice)();
+        if (!j || !i)
+            return;
+        const k = j.layers.isOnNaturalDepth() ? void 0 : b + j.layers.getDepthShift();
+        (0, e.default)({
+            deviceOption: i.deviceOption,
+            id: d.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: k,
+            layerId: j.layers.getLayer(),
+            name: i.name,
             isPreview: !0,
             options: {
-                ...n.options,
-                ...t
+                ...i.options,
+                ...c
             },
             placedByClient: !0,
-            state: n.deviceOption.defaultState
-        })
-    }
-})), t.register("eCsxR", (function(e, n) {
-    i(e.exports, "default", (function() {
-        return a
-    }));
-    var o = t("gwuwo"),
-        s = t("fCcDT");
-    var a = e => {
-        (0, o.default)().worldManager.devices.getDeviceById(e.id) && (0, s.default)(e)
-    }
-})), t.register("cK78N", (function(e, t) {
-    i(e.exports, "FetchOptionSchemaProperty", (function() {
-        return n
-    }));
-    const n = (e, i) => {
-        var t, n, o;
-        const s = e.deviceOption.optionSchema.options.find((e => e.key === i));
+            state: i.deviceOption.defaultState
+        });
+    };
+}), c.register('Am0b71', function(a, d) {
+    b(a.exports, 'default', function() {
+        return f;
+    });
+    var d = c('dAmf5'),
+        e = c('jgFbX');
+    var f = a => {
+        (0, d.default)().worldManager.devices.getDeviceById(a.id) && (0, e.default)(a);
+    };
+}), c.register('/Lvpl17', function(a, c) {
+    b(a.exports, 'FetchOptionSchemaProperty', function() {
+        return d;
+    });
+    const d = (a, b) => {
+        var e, f, g;
+        const h = a.deviceOption.optionSchema.options.find(a => a.key === b);
         return {
-            min: null === (t = null == s ? void 0 : s.option.props) || void 0 === t ? void 0 : t.min,
-            max: null === (n = null == s ? void 0 : s.option.props) || void 0 === n ? void 0 : n.max,
-            step: null === (o = null == s ? void 0 : s.option.props) || void 0 === o ? void 0 : o.step
-        }
-    }
-})), t.register("fniCL", (function(e, n) {
-    i(e.exports, "BaseAsset", (function() {
-        return s
-    })), i(e.exports, "UnknownItemAsset", (function() {
-        return a
-    }));
-    var o = t("alREA");
-    const s = {
-            imageId: (0, o.default)("devices/item_granter/base.png"),
-            imageUrl: (0, o.default)("devices/item_granter/base.png")
+            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
+            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
+            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
+        };
+    };
+}), c.register('Sbl6W', function(a, n) {
+    b(a.exports, 'BaseAsset', function() {
+        return e;
+    }), b(a.exports, 'UnknownItemAsset', function() {
+        return f;
+    });
+    var d = c('JJQ0+');
+    const e = {
+            imageId: (0, d.default)('devices/item_granter/base.png'),
+            imageUrl: (0, d.default)('devices/item_granter/base.png')
         },
-        a = {
-            imageId: "__UNKNOWN_ITEM",
-            imageUrl: (0, o.default)("devices/item_granter/question-mark-2.png")
-        }
-})), t.register("rUtvU", (function(e, n) {
-    i(e.exports, "AddOutline", (function() {
-        return s
-    }));
-    var o = t("gwuwo");
-    const s = e => {
-        if (!e.view || !e.view.active) return;
-        const i = {
+        f = {
+            imageId: '__UNKNOWN_ITEM',
+            imageUrl: (0, d.default)('devices/item_granter/question-mark-2.png')
+        };
+}), c.register('95CV8', function(a, n) {
+    b(a.exports, 'AddOutline', function() {
+        return e;
+    });
+    var d = c('dAmf5');
+    const e = a => {
+        if (!a.view || !a.view.active)
+            return;
+        const f = {
                 thickness: 2
             },
-            t = e.options ? {
-                ...i,
-                ...e.options
+            g = a.options ? {
+                ...f,
+                ...a.options
             } : {
-                ...i
+                ...f
             };
-        (0, o.default)().plugins.get("rexOutlinePipeline").add(e.view, t)
-    }
-}));
+        (0, d.default)().plugins.get('rexOutlinePipeline').add(a.view, g);
+    };
+});

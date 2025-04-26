@@ -1,77 +1,78 @@
-function e(e, t, i, s) {
-    Object.defineProperty(e, t, {
+function a(a, b, i, c) {
+    Object.defineProperty(a, b, {
         get: i,
-        set: s,
+        set: c,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("lhcdg", (function(i, s) {
-    var n;
-    n = i.exports, Object.defineProperty(n, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('sYSW4', function(i, c) {
+    var c;
+    c = i.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(i.exports, "default", (function() {
-        return w
-    }));
-    var r = t("divCp"),
-        a = t("6Tpu2"),
-        o = t("bNmF9"),
-        d = t("2v5dT"),
-        u = t("grQGx"),
-        p = t("4uojN"),
-        l = t("gwuwo");
-    const h = e => {
-            (0, l.default)().plugins.get("rexGrayScalePipeline").add(e, {
+    }), a(i.exports, 'default', function() {
+        return n;
+    });
+    var d = b('UM8oI'),
+        e = b('5Ux1a'),
+        f = b('sgILU'),
+        g = b('KW8vR'),
+        h = b('Ft6ks'),
+        i = b('Bpt+p'),
+        j = b('dAmf5');
+    const k = a => {
+            (0, j.default)().plugins.get('rexGrayScalePipeline').add(a, {
                 intensity: 1
-            })
+            });
         },
-        g = e => {
-            (0, l.default)().plugins.get("rexGrayScalePipeline").remove(e)
+        l = a => {
+            (0, j.default)().plugins.get('rexGrayScalePipeline').remove(a);
         };
-    class f extends o.default {
-        constructor(e) {
-            super(e), (0, r.default)(this, "stepOnCounter", 0), (0, r.default)(this, "onMessage", (e => {
-                if (e.key === u.Messages.steppedOn) {
-                    if (!this.up || !this.down) return;
+    class m extends f.default {
+        constructor(a) {
+            super(a), (0, d.default)(this, 'stepOnCounter', 0), (0, d.default)(this, 'onMessage', a => {
+                if (a.key === h.Messages.steppedOn) {
+                    if (!this.up || !this.down)
+                        return;
                     this.stepOnCounter += 1;
-                    const e = this.stepOnCounter;
-                    this.down.view.setAlpha(1), this.up.view.setAlpha(0), this.downTimeout = window.setTimeout((() => {
-                        e === this.stepOnCounter && (this.down.view.setAlpha(0), this.up.view.setAlpha(1))
-                    }), 350)
+                    const n = this.stepOnCounter;
+                    this.down.view.setAlpha(1), this.up.view.setAlpha(0), this.downTimeout = window.setTimeout(() => {
+                        n === this.stepOnCounter && (this.down.view.setAlpha(0), this.up.view.setAlpha(1));
+                    }, 350);
                 }
-            })), (0, r.default)(this, "onDestroy", (() => {
-                this.downTimeout && window.clearTimeout(this.downTimeout)
-            })), (0, r.default)(this, "onStateChange", (e => {
-                "active" === e && this.updateGrayscale()
-            })), (0, r.default)(this, "updateGrayscale", (() => {
+            }), (0, d.default)(this, 'onDestroy', () => {
+                this.downTimeout && window.clearTimeout(this.downTimeout);
+            }), (0, d.default)(this, 'onStateChange', a => {
+                'active' === a && this.updateGrayscale();
+            }), (0, d.default)(this, 'updateGrayscale', () => {
                 if (this.up && this.down) {
-                    let e = this.state.active;
-                    (0, a.InPreGamePhase)() && (e = this.options.activeOnGameStart), e ? (g(this.up.view), g(this.down.view)) : (h(this.up.view), h(this.down.view))
+                    let n = this.state.active;
+                    (0, e.InPreGamePhase)() && (n = this.options.activeOnGameStart), n ? (l(this.up.view), l(this.down.view)) : (k(this.up.view), k(this.down.view));
                 }
-            })), (this.options.visibleInGame || !(0, a.InGamePhase)() && !(0, p.isPublishedVersion)()) && (this.up = this.parts.add.sprite(d.UpAsset), this.down = this.parts.add.sprite(d.DownAsset), this.up.view.setScale(.4), this.down.view.setScale(.4), this.down.view.setAlpha(0), this.updateGrayscale())
+            }), (this.options.visibleInGame || !(0, e.InGamePhase)() && !(0, i.isPublishedVersion)()) && (this.up = this.parts.add.sprite(g.UpAsset), this.down = this.parts.add.sprite(g.DownAsset), this.up.view.setScale(0.4), this.down.view.setScale(0.4), this.down.view.setAlpha(0), this.updateGrayscale());
         }
     }
-    var w = f
-})), t.register("2v5dT", (function(i, s) {
-    e(i.exports, "UpAsset", (function() {
-        return r
-    })), e(i.exports, "DownAsset", (function() {
-        return a
-    }));
-    var n = t("alREA");
-    const r = {
-            imageId: (0, n.default)("devices/trigger/trigger_up.png"),
-            imageUrl: (0, n.default)("devices/trigger/trigger_up.png")
+    var n = o;
+}), b.register('KW8vR', function(i, c) {
+    a(i.exports, 'UpAsset', function() {
+        return d;
+    }), a(i.exports, 'DownAsset', function() {
+        return e;
+    });
+    var c = b('JJQ0+');
+    const d = {
+            imageId: (0, c.default)('devices/trigger/trigger_up.png'),
+            imageUrl: (0, c.default)('devices/trigger/trigger_up.png')
         },
-        a = {
-            imageId: (0, n.default)("devices/trigger/trigger_down.png"),
-            imageUrl: (0, n.default)("devices/trigger/trigger_down.png")
-        }
-})), t.register("grQGx", (function(t, i) {
-    let s;
-    e(t.exports, "Messages", (function() {
-        return s
-    })), (s || (s = {})).steppedOn = "steppedOn"
-}));
+        e = {
+            imageId: (0, c.default)('devices/trigger/trigger_down.png'),
+            imageUrl: (0, c.default)('devices/trigger/trigger_down.png')
+        };
+}), b.register('Ft6ks', function(b, i) {
+    let c;
+    a(b.exports, 'Messages', function() {
+        return c;
+    }), (c || (c = {})).steppedOn = 'steppedOn';
+});

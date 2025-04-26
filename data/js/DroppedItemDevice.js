@@ -1,126 +1,127 @@
-function t(t, e, i, s) {
-    Object.defineProperty(t, e, {
-        get: i,
-        set: s,
+function a(a, b, C, D) {
+    Object.defineProperty(a, b, {
+        get: C,
+        set: D,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var e = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-e.register("j6eu0", (function(i, s) {
-    var a;
-    a = i.exports, Object.defineProperty(a, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('lacHU', function(C, D) {
+    var c;
+    c = C.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), t(i.exports, "default", (function() {
-        return R
-    }));
-    var n = e("divCp"),
-        o = e("bvStP"),
-        r = e("9oxA4"),
-        d = e("fHf8O"),
-        l = e("bNmF9"),
-        h = e("hsmfd"),
-        u = e("rUtvU"),
-        c = e("5xt14"),
-        f = e("iRjsB"),
-        v = e("jVQO4"),
-        w = e("alREA"),
-        m = e("3iPiZ"),
-        p = e("3ugly"),
-        g = e("7qUZR"),
-        I = e("4awyC"),
-        y = e("7ypii"),
-        x = e("eURCd"),
-        O = e("jSE8L"),
-        S = e("kRzgw"),
-        C = e("9zkt5"),
-        b = e("bDCcz"),
-        P = e("780Y0");
-    class E extends l.default {
-        constructor(t) {
-            if (super(t), (0, n.default)(this, "hidden", !1), (0, n.default)(this, "onUpdate", (t => {
-                    var e;
-                    (0, b.isPlatformer)() && (null === (e = this.item) || void 0 === e ? void 0 : e.view) && (this.item.view.y < this.state.fallY && (this.item.view.y += (0, P.default)(S.default.fall.fallSpeedPerSecond) * t / 1e3, this.item.view.y >= this.state.fallY && (this.item.view.y = this.state.fallY)), this.y = this.item.view.y)
-                })), (0, n.default)(this, "setInteractionInfo", (() => {
-                    const t = (0, p.ItemName)(this.options.itemId),
-                        e = (0, I.IsWeapon)(this.options.itemId),
-                        i = (0, y.IsItem)(this.options.itemId);
-                    let s = !0;
-                    if (e || i) {
-                        var a, n;
-                        const t = null !== (n = null === (a = f.default.me.inventory.slots.get(this.options.itemId)) || void 0 === a ? void 0 : a.amount) && void 0 !== n ? n : 0;
-                        if (e) {
-                            s = t < (0, x.GetMaxAmountOfWeapon)({
+    }), a(C.exports, 'default', function() {
+        return A;
+    });
+    var d = b('UM8oI'),
+        e = b('cMsWT'),
+        f = b('VkIHd0'),
+        g = b('Mr5c3'),
+        h = b('sgILU'),
+        i = b('WCnVH'),
+        j = b('95CV8'),
+        k = b('HBzWf'),
+        l = b('7Sbqr'),
+        m = b('OlpXx'),
+        n = b('JJQ0+'),
+        o = b('Ena4B'),
+        p = b('bBQb9'),
+        q = b('y7G4G'),
+        r = b('im/Hv'),
+        s = b('C95/2'),
+        t = b('6oJNt'),
+        u = b('ssApT'),
+        v = b('Xo6NF'),
+        w = b('FsWdw'),
+        x = b('HMNV0'),
+        y = b('qCS7H');
+    class z extends h.default {
+        constructor(a) {
+            if (super(a), (0, d.default)(this, 'hidden', !1), (0, d.default)(this, 'onUpdate', a => {
+                    var A;
+                    (0, x.isPlatformer)() && (null === (A = this.item) || void 0 === A ? void 0 : A.view) && (this.item.view.y < this.state.fallY && (this.item.view.y += (0, y.default)(v.default.fall.fallSpeedPerSecond) * a / 1000, this.item.view.y >= this.state.fallY && (this.item.view.y = this.state.fallY)), this.y = this.item.view.y);
+                }), (0, d.default)(this, 'setInteractionInfo', () => {
+                    const A = (0, p.ItemName)(this.options.itemId),
+                        B = (0, r.IsWeapon)(this.options.itemId),
+                        C = (0, s.IsItem)(this.options.itemId);
+                    let D = !0;
+                    if (B || C) {
+                        var E, F;
+                        const G = null !== (F = null === (E = l.default.me.inventory.slots.get(this.options.itemId)) || void 0 === E ? void 0 : E.amount) && void 0 !== F ? F : 0;
+                        if (B) {
+                            D = G < (0, t.GetMaxAmountOfWeapon)({
                                 itemId: this.options.itemId
-                            })
-                        } else if (i) {
-                            s = t < (0, O.GetMaxAmountOfItem)({
+                            });
+                        } else if (C) {
+                            D = G < (0, u.GetMaxAmountOfItem)({
                                 itemId: this.options.itemId
-                            })
+                            });
                         }
                     }
-                    if (t) {
-                        const e = this.state.amount || this.options.amount;
+                    if (A) {
+                        const E = this.state.amount || this.options.amount;
                         this.interactiveZones.setInfo({
-                            message: (0, C.ItemNameWithCount)(t, e),
-                            action: S.default.interaction.message.action,
-                            allowedToInteract: s,
-                            topHeader: s ? void 0 : S.default.interaction.message.fullInventory,
-                            topHeaderColor: S.default.interaction.message.fullInventoryColor
-                        })
+                            message: (0, w.ItemNameWithCount)(A, E),
+                            action: v.default.interaction.message.action,
+                            allowedToInteract: D,
+                            topHeader: D ? void 0 : v.default.interaction.message.fullInventory,
+                            topHeaderColor: v.default.interaction.message.fullInventoryColor
+                        });
                     }
-                })), (0, n.default)(this, "startShowUpTweens", (() => {
-                    if (!this.state.visible) return;
-                    this.item.view.alpha = 0, this.item.view.displayWidth = 0, this.item.view.displayHeight = 0, (0, b.isPlatformer)() && this.item.view.setOrigin(.5);
-                    const t = this.item.view.x,
-                        e = this.item.view.y;
-                    var i, s;
-                    if (this.item.view.x = null !== (i = this.options.originX) && void 0 !== i ? i : t, this.item.view.y = null !== (s = this.options.originY) && void 0 !== s ? s : e, this.tweens.add({
+                }), (0, d.default)(this, 'startShowUpTweens', () => {
+                    if (!this.state.visible)
+                        return;
+                    this.item.view.alpha = 0, this.item.view.displayWidth = 0, this.item.view.displayHeight = 0, (0, x.isPlatformer)() && this.item.view.setOrigin(0.5);
+                    const A = this.item.view.x,
+                        B = this.item.view.y;
+                    var C, D;
+                    if (this.item.view.x = null !== (C = this.options.originX) && void 0 !== C ? C : A, this.item.view.y = null !== (D = this.options.originY) && void 0 !== D ? D : B, this.tweens.add({
                             targets: this.item.view,
                             alpha: 1,
                             displayWidth: 60,
                             displayHeight: 60,
-                            x: t,
-                            y: e,
+                            x: A,
+                            y: B,
                             duration: 350,
                             ease: Phaser.Math.Easing.Back.Out,
                             onComplete: () => {
-                                this.startIdleTweens()
+                                this.startIdleTweens();
                             }
                         }), this.shadow) {
                         this.shadow.view.alpha = 0, this.shadow.view.scaleX = this.shadow.view.scaleY = 0;
-                        const i = this.shadow.view.x,
-                            s = this.shadow.view.y;
-                        this.shadow.view.x += this.item.view.x - t, this.shadow.view.y += this.item.view.y - e, this.tweens.add({
+                        const E = this.shadow.view.x,
+                            F = this.shadow.view.y;
+                        this.shadow.view.x += this.item.view.x - A, this.shadow.view.y += this.item.view.y - B, this.tweens.add({
                             targets: this.shadow.view,
-                            alpha: .3,
-                            scaleX: .6,
-                            scaleY: .6,
-                            x: i,
-                            y: s,
+                            alpha: 0.3,
+                            scaleX: 0.6,
+                            scaleY: 0.6,
+                            x: E,
+                            y: F,
                             duration: 350,
                             ease: Phaser.Math.Easing.Back.Out
-                        })
+                        });
                     }
-                })), (0, n.default)(this, "startHideTweens", (() => {
+                }), (0, d.default)(this, 'startHideTweens', () => {
                     this.state.visible && (this.tweens.add({
                         targets: this.item.view,
                         displayWidth: 0,
                         displayHeight: 0,
                         duration: 350,
                         ease: Phaser.Math.Easing.Back.In
-                    }), this.shadow && (this.scene.tweens.getTweensOf(this.shadow.view).forEach((t => {
-                        t.remove()
-                    })), this.tweens.add({
+                    }), this.shadow && (this.scene.tweens.getTweensOf(this.shadow.view).forEach(a => {
+                        a.remove();
+                    }), this.tweens.add({
                         targets: this.shadow.view,
                         scaleX: 0,
                         scaleY: 0,
                         duration: 250,
                         ease: Phaser.Math.Easing.Back.In
-                    })))
-                })), (0, n.default)(this, "startIdleTweens", (() => {
-                    (0, b.isPlatformer)() || this.state.visible && (this.item.view.alpha = 1, this.tweens.add({
+                    })));
+                }), (0, d.default)(this, 'startIdleTweens', () => {
+                    (0, x.isPlatformer)() || this.state.visible && (this.item.view.alpha = 1, this.tweens.add({
                         targets: this.item.view,
                         y: this.item.view.y - 15,
                         alpha: 1,
@@ -128,176 +129,180 @@ e.register("j6eu0", (function(i, s) {
                         yoyo: !0,
                         repeat: -1,
                         ease: Phaser.Math.Easing.Sine.InOut
-                    }), this.shadow && (this.shadow.view.alpha = .3, this.shadow.view.setScale(.6), this.tweens.add({
+                    }), this.shadow && (this.shadow.view.alpha = 0.3, this.shadow.view.setScale(0.6), this.tweens.add({
                         targets: this.shadow.view,
-                        scaleX: .5,
-                        scaleY: .5,
-                        alpha: .2,
+                        scaleX: 0.5,
+                        scaleY: 0.5,
+                        alpha: 0.2,
                         duration: 1200,
                         yoyo: !0,
                         repeat: -1,
                         ease: Phaser.Math.Easing.Sine.InOut
-                    })))
-                })), (0, n.default)(this, "onStateChange", (t => {
-                    "amount" === t && this.setInteractionInfo(), "alreadyCollected" === t && (this.prevState.alreadyCollected || !this.state.alreadyCollected || this.hidden || (this.hidden = !0, this.startHideTweens()))
-                })), (0, n.default)(this, "addOutline", (() => {
-                    this.state.visible && (0, u.AddOutline)({
+                    })));
+                }), (0, d.default)(this, 'onStateChange', a => {
+                    'amount' === a && this.setInteractionInfo(), 'alreadyCollected' === a && (this.prevState.alreadyCollected || !this.state.alreadyCollected || this.hidden || (this.hidden = !0, this.startHideTweens()));
+                }), (0, d.default)(this, 'addOutline', () => {
+                    this.state.visible && (0, j.AddOutline)({
                         view: this.item.view
-                    })
-                })), (0, n.default)(this, "removeOutline", (() => {
-                    this.state.visible && (0, c.RemoveOutline)({
+                    });
+                }), (0, d.default)(this, 'removeOutline', () => {
+                    this.state.visible && (0, k.RemoveOutline)({
                         view: this.item.view
-                    })
-                })), (0, b.isPlatformer)() ? this.cull.ignoreCulling() : this.boundingBox.setHardcoded({
+                    });
+                }), (0, x.isPlatformer)() ? this.cull.ignoreCulling() : this.boundingBox.setHardcoded({
                     width: 75,
                     height: 125,
                     y: -112.5
-                }), !this.state.visible) return;
-            if (this.state.alreadyCollected) return;
-            (0, b.isPlatformer)() || (this.shadow = this.parts.add.sprite({
-                ...h.ShadowAsset,
-                layerId: o.default.DevicesUnderCharacters
+                }), !this.state.visible)
+                return;
+            if (this.state.alreadyCollected)
+                return;
+            (0, x.isPlatformer)() || (this.shadow = this.parts.add.sprite({
+                ...i.ShadowAsset,
+                layerId: e.default.DevicesUnderCharacters
             }));
-            const e = f.default.worldOptions.itemOptions.find((t => t.id === this.options.itemId));
-            if (e) {
-                const t = e.id,
-                    i = e.previewImage,
-                    s = (0, d.default)(t),
-                    a = (0, r.default)({
-                        height: s.height,
-                        width: s.width,
-                        newWidth: S.default.itemWidth
+            const A = l.default.worldOptions.itemOptions.find(a => a.id === this.options.itemId);
+            if (A) {
+                const B = A.id,
+                    C = A.previewImage,
+                    D = (0, g.default)(B),
+                    E = (0, f.default)({
+                        height: D.height,
+                        width: D.width,
+                        newWidth: v.default.itemWidth
                     });
-                (0, g.default)({
-                    key: t,
-                    url: i,
+                (0, q.default)({
+                    key: B,
+                    url: C,
                     onLoad: () => {
                         this.isDestroyed || (this.item = this.parts.add.sprite({
-                            imageId: t,
-                            imageUrl: i,
-                            layerId: o.default.DepthSortedCharactersAndDevices,
-                            y: (0, b.isPlatformer)() ? 0 : -65,
+                            imageId: B,
+                            imageUrl: C,
+                            layerId: e.default.DepthSortedCharactersAndDevices,
+                            y: (0, x.isPlatformer)() ? 0 : -65,
                             depthChange: 75,
-                            displayWidth: a.width,
-                            displayHeight: a.height
+                            displayWidth: E.width,
+                            displayHeight: E.height
                         }), this.interactiveZones.add.circle({
                             x: 0,
                             y: 0,
-                            r: S.default.interaction.radius
+                            r: v.default.interaction.radius
                         }), this.setInteractionInfo(), this.interactiveZones.onInteractiveCb = () => {
-                            this.setInteractionInfo(), this.addOutline()
+                            this.setInteractionInfo(), this.addOutline();
                         }, this.interactiveZones.onNonInteractive = () => {
-                            this.removeOutline()
+                            this.removeOutline();
                         }, this.interactiveZones.onInteraction = () => {
-                            this.state.canBeCollected && !this.state.alreadyCollected && (this.sendToServerDevice("interacted"), (0, v.playSound)({
-                                path: (0, w.default)("sounds/core/collectItem.mp3"),
-                                volume: (0, m.getVolume)({
-                                    volume: .7,
-                                    type: m.SoundType.soundEffect
+                            this.state.canBeCollected && !this.state.alreadyCollected && (this.sendToServerDevice('interacted'), (0, m.playSound)({
+                                path: (0, n.default)('sounds/core/collectItem.mp3'),
+                                volume: (0, o.getVolume)({
+                                    volume: 0.7,
+                                    type: o.SoundType.soundEffect
                                 })
-                            }))
-                        }, this.interactiveZones.setCanInteractThroughColliders(!0), this.state.canBeCollected ? this.startIdleTweens() : this.startShowUpTweens())
+                            }));
+                        }, this.interactiveZones.setCanInteractThroughColliders(!0), this.state.canBeCollected ? this.startIdleTweens() : this.startShowUpTweens());
                     }
-                })
+                });
             }
         }
     }
-    var R = E
-})), e.register("9oxA4", (function(e, i) {
-    t(e.exports, "default", (function() {
-        return s
-    }));
-    var s = t => {
-        const e = t.newWidth / t.width;
+    var A = B;
+}), b.register('VkIHd0', function(b, f) {
+    a(b.exports, 'default', function() {
+        return c;
+    });
+    var c = a => {
+        const d = a.newWidth / a.width;
         return {
-            height: t.height * e,
-            width: t.width * e
-        }
-    }
-})), e.register("hsmfd", (function(i, s) {
-    t(i.exports, "ShadowAsset", (function() {
-        return a
-    }));
-    const a = {
-        imageId: "item_shadow",
-        imageUrl: (0, e("alREA").default)("devices/dropped_item/item-shadow.png")
-    }
-})), e.register("rUtvU", (function(i, s) {
-    t(i.exports, "AddOutline", (function() {
-        return n
-    }));
-    var a = e("gwuwo");
-    const n = t => {
-        if (!t.view || !t.view.active) return;
+            height: a.height * d,
+            width: a.width * d
+        };
+    };
+}), b.register('WCnVH', function(f, h) {
+    a(f.exports, 'ShadowAsset', function() {
+        return c;
+    });
+    const c = {
+        imageId: 'item_shadow',
+        imageUrl: (0, b('JJQ0+').default)('devices/dropped_item/item-shadow.png')
+    };
+}), b.register('95CV8', function(f, h) {
+    a(f.exports, 'AddOutline', function() {
+        return d;
+    });
+    var c = b('dAmf5');
+    const d = a => {
+        if (!a.view || !a.view.active)
+            return;
         const e = {
                 thickness: 2
             },
-            i = t.options ? {
+            f = a.options ? {
                 ...e,
-                ...t.options
+                ...a.options
             } : {
                 ...e
             };
-        (0, a.default)().plugins.get("rexOutlinePipeline").add(t.view, i)
-    }
-})), e.register("5xt14", (function(i, s) {
-    t(i.exports, "RemoveOutline", (function() {
-        return n
-    }));
-    var a = e("gwuwo");
-    const n = t => {
-        t.view && (0, a.default)().plugins.get("rexOutlinePipeline").remove(t.view)
-    }
-})), e.register("eURCd", (function(i, s) {
-    t(i.exports, "GetMaxAmountOfWeapon", (function() {
-        return n
-    }));
-    var a = e("8GQrR");
-    const n = t => {
+        (0, c.default)().plugins.get('rexOutlinePipeline').add(a.view, f);
+    };
+}), b.register('HBzWf', function(g, h) {
+    a(g.exports, 'RemoveOutline', function() {
+        return d;
+    });
+    var c = b('dAmf5');
+    const d = a => {
+        a.view && (0, c.default)().plugins.get('rexOutlinePipeline').remove(a.view);
+    };
+}), b.register('6oJNt', function(g, h) {
+    a(g.exports, 'GetMaxAmountOfWeapon', function() {
+        return d;
+    });
+    var c = b('OkFOu');
+    const d = a => {
         let e = 0;
-        return (0, a.EachInteractiveSlot)({
-            callback: i => {
-                i.itemId !== t.itemId && "" !== i.itemId && i.itemId || (e += 1)
+        return (0, c.EachInteractiveSlot)({
+            callback: g => {
+                g.itemId !== a.itemId && '' !== g.itemId && g.itemId || (e += 1);
             }
-        }), e
-    }
-})), e.register("8GQrR", (function(i, s) {
-    t(i.exports, "EachInteractiveSlot", (function() {
-        return o
-    }));
-    var a = e("iRjsB"),
-        n = e("30KqB");
-    const o = t => {
-        const e = (0, n.FetchMapOptions)().interactiveItemsSlots,
-            i = a.default.me.inventory.interactiveSlotsOrder;
-        for (let s = 0; s < e; s++) {
-            const e = i[s],
-                n = a.default.me.inventory.interactiveSlots.get(`${e}`);
-            if (t.callback(n, e)) return
+        }), e;
+    };
+}), b.register('OkFOu', function(g, h) {
+    a(g.exports, 'EachInteractiveSlot', function() {
+        return e;
+    });
+    var c = b('7Sbqr'),
+        d = b('lRhCY');
+    const e = a => {
+        const f = (0, d.FetchMapOptions)().interactiveItemsSlots,
+            g = c.default.me.inventory.interactiveSlotsOrder;
+        for (let h = 0; h < f; h++) {
+            const i = g[h],
+                j = c.default.me.inventory.interactiveSlots.get(`${ i }`);
+            if (a.callback(j, i))
+                return;
         }
-    }
-})), e.register("jSE8L", (function(i, s) {
-    t(i.exports, "GetMaxAmountOfItem", (function() {
-        return o
-    }));
-    var a = e("6EcnK"),
-        n = e("8GQrR");
-    const o = t => {
-        var e;
-        const i = null !== (e = (0, a.default)(t.itemId).maxStackSize) && void 0 !== e ? e : 1;
-        let s = 0;
-        return (0, n.EachInteractiveSlot)({
-            ...t,
-            callback: e => {
-                e.itemId !== t.itemId && "" !== e.itemId && e.itemId || (s += i)
+    };
+}), b.register('ssApT', function(g, h) {
+    a(g.exports, 'GetMaxAmountOfItem', function() {
+        return e;
+    });
+    var c = b('0x6bL'),
+        d = b('OkFOu');
+    const e = a => {
+        var f;
+        const g = null !== (f = (0, c.default)(a.itemId).maxStackSize) && void 0 !== f ? f : 1;
+        let h = 0;
+        return (0, d.EachInteractiveSlot)({
+            ...a,
+            callback: f => {
+                f.itemId !== a.itemId && '' !== f.itemId && f.itemId || (h += g);
             }
-        }), s
-    }
-})), e.register("kRzgw", (function(i, s) {
-    t(i.exports, "default", (function() {
-        return a
-    }));
-    var a = {
+        }), h;
+    };
+}), b.register('Xo6NF', function(i, s) {
+    a(i.exports, 'default', function() {
+        return c;
+    });
+    var c = {
         itemWidth: 60,
         floatingHeight: {
             topDown: 112.5,
@@ -306,13 +311,13 @@ e.register("j6eu0", (function(i, s) {
         interaction: {
             radius: 50,
             message: {
-                action: "to collect",
-                fullInventory: "Inventory Full",
-                fullInventoryColor: "#ffcdd2"
+                action: 'to collect',
+                fullInventory: 'Inventory Full',
+                fullInventoryColor: '#ffcdd2'
             }
         },
         fall: {
-            fallSpeedPerSecond: (0, e("r04Cv").default)(100)
+            fallSpeedPerSecond: (0, b('N50Eu').default)(100)
         }
-    }
-}));
+    };
+});

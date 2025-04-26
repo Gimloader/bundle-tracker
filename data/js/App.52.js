@@ -1,496 +1,554 @@
-function e(e, t, r, n) {
-    Object.defineProperty(e, t, {
-        get: r,
-        set: n,
+function a(a, b, c, z) {
+    Object.defineProperty(a, b, {
+        get: c,
+        set: z,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
 
-function t(e) {
-    return e && e.__esModule ? e.default : e
+function b(a) {
+    return a && a.__esModule ? a.default : a;
 }
-var r = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-r.register("aTija", (function(t, n) {
-    var i;
-    i = t.exports, Object.defineProperty(i, "__esModule", {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('2BF72', function(b, z) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(t.exports, "default", (function() {
-        return w
-    }));
-    var o = r("hxEiv"),
-        s = r("3uz2P"),
-        a = r("beXRF"),
-        l = r("hIClP"),
-        d = r("1CCl5"),
-        c = r("dYca8"),
-        u = r("4Gnmi"),
-        p = r("a48Yf"),
-        g = r("8L7R7"),
-        f = r("Cw8yg"),
-        h = r("fywoC"),
-        m = r("eRL7n"),
-        v = r("iMOcM"),
-        x = r("d8JxI"),
-        y = r("8j47p"),
-        j = r("iROck"),
-        b = r("46bRO");
-    var w = () => {
+    }), a(b.exports, 'default', function() {
+        return v;
+    });
+    var e = c('8kSQZ'),
+        f = c('0R8EW'),
+        g = c('KzqIz'),
+        h = c('HZrmb'),
+        i = c('r2BNY'),
+        j = c('GzycZ'),
+        k = c('+98NM'),
+        l = c('m/z61'),
+        m = c('hJPGt'),
+        n = c('TRW+v'),
+        o = c('uPP4W'),
+        p = c('dlNtt1'),
+        q = c('PjB0f'),
+        r = c('qpNcE0'),
+        s = c('VsZIM'),
+        t = c('k0s2g17'),
+        u = c('0wLl2');
+    var v = () => {
         const {
-            id: e
-        } = (0, s.useParams)(), [t, r] = (0, a.useSearchParams)();
-        var n;
-        const i = Math.max(1, null !== (n = Number(t.get("page"))) && void 0 !== n ? n : 1),
+            id: w
+        } = (0, f.useParams)(), [x, y] = (0, g.useSearchParams)();
+        var z;
+        const A = Math.max(1, null !== (z = Number(x.get('page'))) && void 0 !== z ? z : 1),
             {
-                isLoading: w,
+                isLoading: B,
                 error: C,
-                data: R
-            } = (0, c.default)(e),
+                data: D
+            } = (0, j.default)(w),
             {
-                isLoading: k,
-                error: P,
-                data: M,
-                isFetching: T
-            } = (0, g.useClassReports)(i, e),
-            [I, F] = h.useState(0),
-            O = h.useRef(null);
-        (0, x.default)(O, (e => {
-            var t, r;
-            F(null !== (r = null === (t = e.target) || void 0 === t ? void 0 : t.offsetTop) && void 0 !== r ? r : 0)
-        }));
-        const A = h.useMemo((() => C || (P || void 0)), [C, e, R, P]);
-        h.useEffect((() => {
-            window.scrollTo(0, 0)
-        }), [i]);
-        const $ = M && M.totalItems ? (0, o.jsx)(m.ReportPagination, {
-                total: M.totalItems,
-                current: i,
-                onPageChange: e => {
-                    r({
-                        page: e
-                    })
+                isLoading: E,
+                error: F,
+                data: G,
+                isFetching: H
+            } = (0, m.useClassReports)(A, w),
+            [I, J] = o.useState(0),
+            K = o.useRef(null);
+        (0, r.default)(K, w => {
+            var L, M;
+            J(null !== (M = null === (L = w.target) || void 0 === L ? void 0 : L.offsetTop) && void 0 !== M ? M : 0);
+        });
+        const L = o.useMemo(() => C || (F || void 0), [
+            C,
+            w,
+            D,
+            F
+        ]);
+        o.useEffect(() => {
+            window.scrollTo(0, 0);
+        }, [A]);
+        const M = G && G.totalItems ? (0, e.jsx)(p.ReportPagination, {
+                total: G.totalItems,
+                current: A,
+                onPageChange: w => {
+                    y({
+                        page: w
+                    });
                 }
             }) : null,
-            z = (0, v.isUpgraded)();
-        return (0, o.jsxs)(l.Container, {
-            style: z ? void 0 : {
-                filter: "blur(4px)"
+            N = (0, q.isUpgraded)();
+        return (0, e.jsxs)(h.Container, {
+            style: N ? void 0 : {
+                filter: 'blur(4px)'
             },
-            children: [(0, o.jsx)(y.default, {
-                id: "class progress",
-                visible: !z,
-                copy: {
-                    title: "View class progress with Pro",
-                    description: `To view all reports for a class in one place, upgrade to ${b.COMPANY_NAME} Pro.`
-                },
-                close: () => {
-                    (0, j.NavigateTo)(`/class/${e}`)
-                }
-            }), (0, o.jsx)(v.Title, {
-                title: (null == R ? void 0 : R.name) ? `${null==R?void 0:R.name} | Reports` : "Class Reports"
-            }), (0, o.jsx)(d.GroupViewTopNavigationHeader, {
-                id: e
-            }), (0, o.jsxs)(l.ContentContainer, {
-                ref: O,
-                children: [A ? (0, o.jsx)("div", {
-                    style: {
-                        height: 35
-                    }
-                }) : (0, o.jsx)(p.GroupViewHeader, {
-                    data: R,
-                    customRightComponent: $
-                }), (0, o.jsx)(l.Content, {
-                    className: "flex",
-                    style: {
-                        padding: 0
+            children: [
+                (0, e.jsx)(s.default, {
+                    id: 'class progress',
+                    visible: !N,
+                    copy: {
+                        title: 'View class progress with Pro',
+                        description: `To view all reports for a class in one place, upgrade to ${ u.COMPANY_NAME } Pro.`
                     },
-                    children: w || k ? (0, o.jsx)(u.default, {
-                        paragraph: {
-                            rows: 4
-                        },
-                        title: !1,
-                        active: !0,
-                        className: "maxWidth",
-                        style: {
-                            padding: 35
-                        }
-                    }) : A ? (0, o.jsx)("div", {
-                        style: {
-                            padding: 35
-                        },
-                        children: (null == A || null === (E = A.message) || void 0 === E ? void 0 : E.text) || "There was an error fetching this class. Please try again."
-                    }) : (0, o.jsx)(f.GroupViewReportsTable, {
-                        data: null !== (N = null == M ? void 0 : M.items) && void 0 !== N ? N : [],
-                        pagination: $,
-                        containerTopOffset: I,
-                        isFetching: T,
-                        totalItems: null !== (_ = null == M ? void 0 : M.totalItems) && void 0 !== _ ? _ : 0
-                    })
-                })]
-            })]
+                    close: () => {
+                        (0, t.NavigateTo)(`/class/${ w }`);
+                    }
+                }),
+                (0, e.jsx)(q.Title, {
+                    title: (null == D ? void 0 : D.name) ? `${ null == D ? void 0 : D.name } | Reports` : 'Class Reports'
+                }),
+                (0, e.jsx)(i.GroupViewTopNavigationHeader, {
+                    id: w
+                }),
+                (0, e.jsxs)(h.ContentContainer, {
+                    ref: K,
+                    children: [
+                        L ? (0, e.jsx)('div', {
+                            style: {
+                                height: 35
+                            }
+                        }) : (0, e.jsx)(l.GroupViewHeader, {
+                            data: D,
+                            customRightComponent: M
+                        }),
+                        (0, e.jsx)(h.Content, {
+                            className: 'flex',
+                            style: {
+                                padding: 0
+                            },
+                            children: B || E ? (0, e.jsx)(k.default, {
+                                paragraph: {
+                                    rows: 4
+                                },
+                                title: !1,
+                                active: !0,
+                                className: 'maxWidth',
+                                style: {
+                                    padding: 35
+                                }
+                            }) : L ? (0, e.jsx)('div', {
+                                style: {
+                                    padding: 35
+                                },
+                                children: (null == L || null === (O = L.message) || void 0 === O ? void 0 : O.text) || 'There was an error fetching this class. Please try again.'
+                            }) : (0, e.jsx)(n.GroupViewReportsTable, {
+                                data: null !== (P = null == G ? void 0 : G.items) && void 0 !== P ? P : [],
+                                pagination: M,
+                                containerTopOffset: I,
+                                isFetching: H,
+                                totalItems: null !== (Q = null == G ? void 0 : G.totalItems) && void 0 !== Q ? Q : 0
+                            })
+                        })
+                    ]
+                })
+            ]
         });
-        var E, N, _
-    }
-})), r.register("8L7R7", (function(t, n) {
-    e(t.exports, "useClassReports", (function() {
-        return s
-    }));
-    var i = r("eMRqp"),
-        o = r("iMOcM");
-    const s = (e, t) => (0, i.useQuery)({
-        queryKey: ["group-reports", t, {
-            page: e
-        }],
+        var O, P, Q;
+    };
+}), c.register('hJPGt', function(b, d) {
+    a(b.exports, 'useClassReports', function() {
+        return f;
+    });
+    var d = c('IsAdf'),
+        e = c('PjB0f');
+    const f = (a, b) => (0, d.useQuery)({
+        queryKey: [
+            'group-reports',
+            b,
+            {
+                page: a
+            }
+        ],
         keepPreviousData: !0,
-        staleTime: 6e4,
+        staleTime: 60000,
         retry: 2,
-        queryFn: () => (0, o.requestAsPromise)({
-            url: "/api/game-report/fetch-all",
+        queryFn: () => (0, e.requestAsPromise)({
+            url: '/api/game-report/fetch-all',
             data: {
-                page: e,
-                groupId: t
+                page: a,
+                groupId: b
             }
         })
-    })
-})), r.register("Cw8yg", (function(t, n) {
-    e(t.exports, "GroupViewReportsTable", (function() {
-        return u
-    }));
-    var i = r("hxEiv"),
-        o = r("4gMdJ"),
-        s = r("26Lv9"),
-        a = r("iROck"),
-        l = r("ipbvF"),
-        d = r("7QXuE"),
-        c = r("haemy");
-    const u = e => e.totalItems ? (0, i.jsxs)("div", {
-            id: "group-reports-container",
-            className: "maxWidth",
-            children: [(0, i.jsx)(o.default, {
-                theme: {
-                    token: {
-                        padding: 35
-                    }
-                },
-                children: (0, i.jsx)(s.default, {
-                    className: "maxWidth",
-                    dataSource: e.data.map((e => ({
-                        key: e._id,
-                        ...e
-                    }))),
-                    columns: p,
-                    bordered: !0,
-                    pagination: !1,
-                    tableLayout: "auto",
-                    size: "large",
-                    onRow: e => ({
-                        onClick: () => {
-                            (0, a.NavigateTo)(`/report/${e._id}`)
-                        },
-                        style: {
-                            cursor: "pointer"
+    });
+}), c.register('TRW+v', function(b, d) {
+    a(b.exports, 'GroupViewReportsTable', function() {
+        return k;
+    });
+    var d = c('8kSQZ'),
+        e = c('qEw51'),
+        f = c('VaygL'),
+        g = c('k0s2g17'),
+        h = c('cKlnM'),
+        i = c('gl+210'),
+        j = c('9d2W5');
+    const k = a => a.totalItems ? (0, d.jsxs)('div', {
+            id: 'group-reports-container',
+            className: 'maxWidth',
+            children: [
+                (0, d.jsx)(e.default, {
+                    theme: {
+                        token: {
+                            padding: 35
                         }
-                    }),
-                    loading: {
-                        spinning: e.isFetching,
-                        indicator: null
                     },
-                    sticky: {
-                        offsetHeader: e.containerTopOffset,
-                        getContainer: () => document.getElementById("group-reports-container")
-                    }
-                })
-            }), e.pagination ? (0, i.jsx)("div", {
-                className: "maxWidth flex-center",
-                style: {
-                    padding: "35px 0px"
-                },
-                children: e.pagination
-            }) : null]
-        }) : (0, i.jsxs)("div", {
+                    children: (0, d.jsx)(f.default, {
+                        className: 'maxWidth',
+                        dataSource: a.data.map(a => ({
+                            key: a._id,
+                            ...a
+                        })),
+                        columns: l,
+                        bordered: !0,
+                        pagination: !1,
+                        tableLayout: 'auto',
+                        size: 'large',
+                        onRow: a => ({
+                            onClick: () => {
+                                (0, g.NavigateTo)(`/report/${ a._id }`);
+                            },
+                            style: {
+                                cursor: 'pointer'
+                            }
+                        }),
+                        loading: {
+                            spinning: a.isFetching,
+                            indicator: null
+                        },
+                        sticky: {
+                            offsetHeader: a.containerTopOffset,
+                            getContainer: () => document.getElementById('group-reports-container')
+                        }
+                    })
+                }),
+                a.pagination ? (0, d.jsx)('div', {
+                    className: 'maxWidth flex-center',
+                    style: {
+                        padding: '35px 0px'
+                    },
+                    children: a.pagination
+                }) : null
+            ]
+        }) : (0, d.jsxs)('div', {
             style: {
                 padding: 35,
                 flex: 1
             },
-            className: "flex-column flex-center",
-            children: [(0, i.jsx)("img", {
-                src: "/client/img/dashboard/report.svg",
-                style: {
-                    height: 80
-                }
-            }), (0, i.jsxs)("div", {
-                style: {
-                    textAlign: "center",
-                    fontSize: "1.15em",
-                    marginTop: 10
-                },
-                children: ["Check back here after you host a live game or assignment with this class! ", (0, i.jsx)("br", {}), "All their reports will be displayed here for you to easily check in on their progress."]
-            })]
+            className: 'flex-column flex-center',
+            children: [
+                (0, d.jsx)('img', {
+                    src: '/client/img/dashboard/report.svg',
+                    style: {
+                        height: 80
+                    }
+                }),
+                (0, d.jsxs)('div', {
+                    style: {
+                        textAlign: 'center',
+                        fontSize: '1.15em',
+                        marginTop: 10
+                    },
+                    children: [
+                        'Check back here after you host a live game or assignment with this class! ',
+                        (0, d.jsx)('br', {}),
+                        'All their reports will be displayed here for you to easily check in on their progress.'
+                    ]
+                })
+            ]
         }),
-        p = [{
-            title: "Kit",
-            dataIndex: "kit",
-            key: "report-kit",
-            render: (e, t) => (0, i.jsx)(l.ReportKit, {
-                kit: e,
-                dateId: t._id,
-                assignmentId: t.mapAssignment
-            })
-        }, {
-            title: "Accuracy",
-            dataIndex: "accuracy",
-            key: "report-accuracy",
-            render: e => (0, i.jsx)(d.ReportProgressAccuracyMeter, {
-                percent: e
-            })
-        }, {
-            title: "Participants",
-            dataIndex: "groups",
-            key: "report-groups",
-            render: (e, t) => (0, i.jsx)(c.ReportParticipantsAndGroups, {
-                reportId: t._id,
-                participants: t.participants,
-                groups: []
-            })
-        }]
-})), r.register("ipbvF", (function(n, i) {
-    e(n.exports, "ReportKit", (function() {
-        return x
-    }));
-    var o = r("hxEiv");
-    r("fywoC");
-    var s = r("2FDaO"),
-        a = r("i5Qjx"),
-        l = r("2nCEo"),
-        d = r("iMOcM"),
-        c = r("69SUA"),
-        u = r("gmwFZ"),
-        p = r("lKmIF"),
-        g = r("1djzF");
-    let f, h, m, v = e => e;
-    const x = e => {
-            const r = t(l)((0, d.dateFromObjectId)(e.dateId)).format("MMMM Do [at] LT");
-            return (0, o.jsxs)(a.default, {
-                direction: "horizontal",
+        l = [{
+                title: 'Kit',
+                dataIndex: 'kit',
+                key: 'report-kit',
+                render: (a, b) => (0, d.jsx)(h.ReportKit, {
+                    kit: a,
+                    dateId: b._id,
+                    assignmentId: b.mapAssignment
+                })
+            },
+            {
+                title: 'Accuracy',
+                dataIndex: 'accuracy',
+                key: 'report-accuracy',
+                render: a => (0, d.jsx)(i.ReportProgressAccuracyMeter, {
+                    percent: a
+                })
+            },
+            {
+                title: 'Participants',
+                dataIndex: 'groups',
+                key: 'report-groups',
+                render: (a, b) => (0, d.jsx)(j.ReportParticipantsAndGroups, {
+                    reportId: b._id,
+                    participants: b.participants,
+                    groups: []
+                })
+            }
+        ];
+}), c.register('cKlnM', function(d, d) {
+    a(d.exports, 'ReportKit', function() {
+        return q;
+    });
+    var d = c('8kSQZ');
+    c('uPP4W');
+    var e = c('h99Nu'),
+        f = c('5nJMd26'),
+        g = c('2MCaL'),
+        h = c('PjB0f'),
+        i = c('gSUVO'),
+        j = c('DorSq'),
+        k = c('lmfrI'),
+        l = c('2WDH6');
+    let m, n, o, p = a => a;
+    const q = a => {
+            const r = b(g)((0, h.dateFromObjectId)(a.dateId)).format('MMMM Do [at] LT');
+            return (0, d.jsxs)(f.default, {
+                direction: 'horizontal',
                 size: 14,
-                align: "center",
-                children: [(0, o.jsx)("div", {
-                    children: (0, o.jsx)(y, {
-                        src: (0, g.getCloudinaryUrl)(e.kit.gif),
-                        style: {
-                            width: 55,
-                            height: 55
-                        }
-                    })
-                }), (0, o.jsxs)("div", {
-                    children: [(0, o.jsx)(j, {
-                        children: e.kit.title
-                    }), (0, o.jsx)(b, {
-                        children: r
-                    }), e.assignmentId ? (0, o.jsx)("div", {
-                        style: {
-                            marginTop: "0.25em"
-                        },
-                        children: (0, o.jsx)(u.ReportLinkTag, {
-                            to: `/assignment/${e.assignmentId}`,
-                            children: "Assignment"
+                align: 'center',
+                children: [
+                    (0, d.jsx)('div', {
+                        children: (0, d.jsx)(r, {
+                            src: (0, l.getCloudinaryUrl)(a.kit.gif),
+                            style: {
+                                width: 55,
+                                height: 55
+                            }
                         })
-                    }) : null]
-                })]
-            })
+                    }),
+                    (0, d.jsxs)('div', {
+                        children: [
+                            (0, d.jsx)(s, {
+                                children: a.kit.title
+                            }),
+                            (0, d.jsx)(t, {
+                                children: r
+                            }),
+                            a.assignmentId ? (0, d.jsx)('div', {
+                                style: {
+                                    marginTop: '0.25em'
+                                },
+                                children: (0, d.jsx)(j.ReportLinkTag, {
+                                    to: `/assignment/${ a.assignmentId }`,
+                                    children: 'Assignment'
+                                })
+                            }) : null
+                        ]
+                    })
+                ]
+            });
         },
-        y = s.default.img(f || (f = v`
+        r = e.default.img(m || (m = p`
   border-radius: 5px;
-  border: solid ${0} 1px;
+  border: solid ${ 0 } 1px;
   flex-shrink: 0;
   object-fit: cover;
-`), p.default.Black),
-        j = s.default.div(h || (h = v`
+`), k.default.Black),
+        s = e.default.div(n || (n = p`
   font-size: 1.1em;
-  font-weight: ${0};
-`), c.FontWeights.Bold),
-        b = s.default.div(m || (m = v`
+  font-weight: ${ 0 };
+`), i.FontWeights.Bold),
+        t = e.default.div(o || (o = p`
   font-size: 0.9em;
   font-style: italic;
   margin-top: 0.05em;
-`))
-})), r.register("gmwFZ", (function(t, n) {
-    e(t.exports, "ReportLinkTag", (function() {
-        return l
-    }));
-    var i = r("hxEiv");
-    r("fywoC");
-    var o = r("kyvf1"),
-        s = r("2FDaO");
-    let a;
-    const l = e => (0, i.jsx)(d, {
-            onClick: e => null == e ? void 0 : e.stopPropagation(),
-            to: e.to,
-            children: e.children
+`));
+}), c.register('DorSq', function(b, d) {
+    a(b.exports, 'ReportLinkTag', function() {
+        return h;
+    });
+    var d = c('8kSQZ');
+    c('uPP4W');
+    var e = c('iYEuk12'),
+        f = c('h99Nu');
+    let g;
+    const h = a => (0, d.jsx)(i, {
+            onClick: a => null == a ? void 0 : a.stopPropagation(),
+            to: a.to,
+            children: a.children
         }),
-        d = (0, s.default)(o.default)(a || (a = (e => e)`
+        i = (0, f.default)(e.default)(g || (g = (a => a)`
   background-color: rgba(0, 0, 0, 0.05) !important;
   padding: 0.2em 0.73em;
   font-size: 0.9em;
   border-radius: 50px;
-`))
-})), r.register("1djzF", (function(t, r) {
-    e(t.exports, "getCloudinaryUrl", (function() {
-        return n
-    }));
-    const n = e => {
-            const t = i(e);
-            return t ? e.includes("/video/upload") ? `https://${o}/video/upload/${t}` : `https://${o}/image/upload/f_auto,fl_lossy,q_auto/${t}` : e
+`));
+}), c.register('2WDH6', function(b, c) {
+    a(b.exports, 'getCloudinaryUrl', function() {
+        return d;
+    });
+    const d = a => {
+            const e = e(a);
+            return e ? a.includes('/video/upload') ? `https://${ f }/video/upload/${ e }` : `https://${ f }/image/upload/f_auto,fl_lossy,q_auto/${ e }` : a;
         },
-        i = e => {
-            if (!l.some((t => e.includes(t)))) return null;
-            if (e.includes(s) && !e.includes(`/${a}/`)) return null;
-            const t = e.split("/");
-            if (!t || !t.length || t.length < 2) return null;
-            const r = t[t.length - 2],
-                n = t[t.length - 1];
-            return r && n && r.startsWith("v") ? `${r}/${n}` : null
+        e = a => {
+            if (!i.some(b => a.includes(b)))
+                return null;
+            if (a.includes(g) && !a.includes(`/${ h }/`))
+                return null;
+            const f = a.split('/');
+            if (!f || !f.length || f.length < 2)
+                return null;
+            const g = f[f.length - 2],
+                h = f[f.length - 1];
+            return g && h && g.startsWith('v') ? `${ g }/${ h }` : null;
         },
-        o = "media.gimkit.com",
-        s = "res.cloudinary.com",
-        a = "gimkit-production",
-        l = [o, s]
-})), r.register("7QXuE", (function(t, n) {
-    e(t.exports, "ReportProgressAccuracyMeter", (function() {
-        return l
-    }));
-    var i = r("hxEiv"),
-        o = r("4gMdJ"),
-        s = r("fI2SP");
-    r("fywoC");
-    var a = r("6edaj");
-    const l = e => {
-        const t = e.percent < 60 ? "#F44336" : e.percent < 80 ? "#FFC107" : "#66BB6A";
-        return (0, i.jsx)(o.default, {
+        f = 'media.gimkit.com',
+        g = 'res.cloudinary.com',
+        h = 'gimkit-production',
+        i = [
+            f,
+            g
+        ];
+}), c.register('gl+210', function(b, i) {
+    a(b.exports, 'ReportProgressAccuracyMeter', function() {
+        return h;
+    });
+    var d = c('8kSQZ'),
+        e = c('qEw51'),
+        f = c('0x1Q5');
+    c('uPP4W');
+    var g = c('CDq40');
+    const h = a => {
+        const i = a.percent < 60 ? '#F44336' : a.percent < 80 ? '#FFC107' : '#66BB6A';
+        return (0, d.jsx)(e.default, {
             theme: {
                 components: {
                     Progress: {
-                        colorText: (0, a.darken)(.2, t)
+                        colorText: (0, g.darken)(0.2, i)
                     }
                 }
             },
-            children: (0, i.jsx)(s.default, {
-                type: "dashboard",
-                percent: e.percent,
+            children: (0, d.jsx)(f.default, {
+                type: 'dashboard',
+                percent: a.percent,
                 width: 65,
-                strokeColor: t,
-                status: "normal"
+                strokeColor: i,
+                status: 'normal'
             })
-        })
-    }
-})), r.register("haemy", (function(t, n) {
-    e(t.exports, "ReportParticipantsAndGroups", (function() {
-        return l
-    }));
-    var i = r("hxEiv");
-    r("fywoC");
-    var o = r("iMOcM"),
-        s = r("i5Qjx"),
-        a = r("gmwFZ");
-    const l = e => {
-        var t;
-        return (0, i.jsxs)("div", {
-            children: [(0, i.jsxs)("div", {
-                style: {
-                    fontStyle: "italic"
-                },
-                children: [e.participants, " ", (0, o.plural)("participant", e.participants)]
-            }), (null === (t = e.groups) || void 0 === t ? void 0 : t.length) ? (0, i.jsx)(s.default, {
-                direction: "horizontal",
-                wrap: !0,
-                size: "small",
-                style: {
-                    marginTop: "0.3em"
-                },
-                children: e.groups.map((t => (0, i.jsx)(a.ReportLinkTag, {
-                    to: `/class/${t._id}`,
-                    children: t.name
-                }, e.reportId + t._id)))
-            }) : null]
-        })
-    }
-})), r.register("eRL7n", (function(t, n) {
-    e(t.exports, "ReportPagination", (function() {
-        return s
-    }));
-    var i = r("hxEiv"),
-        o = r("7jcHh");
-    r("fywoC");
-    const s = e => {
+        });
+    };
+}), c.register('9d2W5', function(b, i) {
+    a(b.exports, 'ReportParticipantsAndGroups', function() {
+        return h;
+    });
+    var d = c('8kSQZ');
+    c('uPP4W');
+    var e = c('PjB0f'),
+        f = c('5nJMd26'),
+        g = c('DorSq');
+    const h = a => {
+        var i;
+        return (0, d.jsxs)('div', {
+            children: [
+                (0, d.jsxs)('div', {
+                    style: {
+                        fontStyle: 'italic'
+                    },
+                    children: [
+                        a.participants,
+                        ' ',
+                        (0, e.plural)('participant', a.participants)
+                    ]
+                }),
+                (null === (i = a.groups) || void 0 === i ? void 0 : i.length) ? (0, d.jsx)(f.default, {
+                    direction: 'horizontal',
+                    wrap: !0,
+                    size: 'small',
+                    style: {
+                        marginTop: '0.3em'
+                    },
+                    children: a.groups.map(i => (0, d.jsx)(g.ReportLinkTag, {
+                        to: `/class/${ i._id }`,
+                        children: i.name
+                    }, a.reportId + i._id))
+                }) : null
+            ]
+        });
+    };
+}), c.register('dlNtt1', function(b, i) {
+    a(b.exports, 'ReportPagination', function() {
+        return f;
+    });
+    var d = c('8kSQZ'),
+        e = c('+WsvB');
+    c('uPP4W');
+    const f = a => {
         const {
-            total: t,
-            current: r,
-            onPageChange: n
-        } = e;
-        return (0, i.jsx)(o.default, {
+            total: g,
+            current: h,
+            onPageChange: i
+        } = j;
+        return (0, d.jsx)(e.default, {
             simple: !0,
-            current: r,
-            total: t,
+            current: h,
+            total: g,
             defaultPageSize: 10,
-            onChange: n
-        })
-    }
-})), r.register("d8JxI", (function(t, n) {
-    e(t.exports, "default", (function() {
-        return d
-    }));
-    var i = r("9iNNJ"),
-        o = r("3Yjty");
+            onChange: i
+        });
+    };
+}), c.register('qpNcE0', function(b, k) {
+    a(b.exports, 'default', function() {
+        return i;
+    });
+    var d = c('vxwW1'),
+        e = c('X8LPJ');
 
-    function s() {}
-    let a;
-    const l = e => a || (a = function(e) {
-        let t = !1,
-            r = [];
-        const n = new Map,
-            i = new(e || window.ResizeObserver)(((e, i) => {
-                r = r.concat(e), t || window.requestAnimationFrame((function() {
-                    const e = new Set;
-                    for (let t = 0; t < r.length; t++) {
-                        if (e.has(r[t].target)) continue;
-                        e.add(r[t].target);
-                        const o = n.get(r[t].target);
-                        null == o || o.forEach((e => e(r[t], i)))
+    function f() {}
+    let g;
+    const h = a => g || (g = function(a) {
+        let i = !1,
+            j = [];
+        const k = new Map(),
+            l = new(a || window.ResizeObserver)((a, l) => {
+                j = j.concat(a), i || window.requestAnimationFrame(function() {
+                    const m = new Set();
+                    for (let n = 0; n < j.length; n++) {
+                        if (m.has(j[n].target))
+                            continue;
+                        m.add(j[n].target);
+                        const o = k.get(j[n].target);
+                        null == o || o.forEach(m => m(j[n], l));
                     }
-                    r = [], t = !1
-                })), t = !0
-            }));
+                    j = [], n = !1;
+                }), i = !0;
+            });
         return {
-            observer: i,
-            subscribe(e, t) {
-                var r;
-                i.observe(e);
-                const o = null !== (r = n.get(e)) && void 0 !== r ? r : [];
-                o.push(t), n.set(e, o)
+            observer: l,
+            subscribe(a, i) {
+                var m;
+                l.observe(a);
+                const n = null !== (m = k.get(a)) && void 0 !== m ? m : [];
+                n.push(i), k.set(a, n);
             },
-            unsubscribe(e, t) {
-                var r;
-                const o = null !== (r = n.get(e)) && void 0 !== r ? r : [];
-                if (1 === o.length) return i.unobserve(e), void n.delete(e);
-                const s = o.indexOf(t); - 1 !== s && o.splice(s, 1), n.set(e, o)
+            unsubscribe(a, i) {
+                var m;
+                const n = null !== (m = k.get(a)) && void 0 !== m ? m : [];
+                if (1 === n.length)
+                    return l.unobserve(a), void k.delete(a);
+                const o = n.indexOf(i); -
+                1 !== o && n.splice(o, 1), k.set(a, n);
             }
-        }
-    }(e));
-    var d = function(e, t, r = {}) {
-        const n = l(r.polyfill),
-            a = (0, o.default)(t);
-        return (0, i.default)((() => {
-            let t = !1;
-            const r = e && "current" in e ? e.current : e;
-            if (!r) return s;
+        };
+    }(a));
+    var i = function(a, b, j = {}) {
+        const k = h(j.polyfill),
+            l = (0, e.default)(b);
+        return (0, d.default)(() => {
+            let m = !1;
+            const n = a && 'current' in a ? a.current : a;
+            if (!n)
+                return f;
 
-            function i(e, r) {
-                t || a.current(e, r)
+            function o(a, n) {
+                m || l.current(a, n);
             }
-            return n.subscribe(r, i), () => {
-                t = !0, n.unsubscribe(r, i)
-            }
-        }), [e, n, a]), n.observer
-    }
-}));
+            return k.subscribe(n, o), () => {
+                m = !0, k.unsubscribe(n, o);
+            };
+        }, [
+            a,
+            k,
+            l
+        ]), k.observer;
+    };
+});

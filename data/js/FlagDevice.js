@@ -1,161 +1,162 @@
-function t(t, e, a, i) {
-    Object.defineProperty(t, e, {
-        get: a,
-        set: i,
+function a(a, b, j, c) {
+    Object.defineProperty(a, b, {
+        get: j,
+        set: c,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var e = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-e.register("1QGRJ", (function(a, i) {
-    var r;
-    r = a.exports, Object.defineProperty(r, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('hmu3T', function(j, c) {
+    var c;
+    c = j.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), t(a.exports, "default", (function() {
-        return k
-    }));
-    var s = e("divCp"),
-        n = e("bNmF9"),
-        o = e("9akbZ"),
-        d = e("kD2Z6"),
-        l = e("6Tpu2"),
-        c = e("bvStP"),
-        u = e("jA9Ql"),
-        h = e("efsDV"),
-        p = e("a5ZMe"),
-        f = e("cpvHe"),
-        g = e("aiwFZ"),
-        S = e("kXNtU"),
-        v = e("hW9Ub"),
-        w = e("9pePj"),
-        C = e("050o1"),
-        y = e("aKxRF"),
-        m = e("4uojN"),
-        F = e("cK78N"),
-        x = e("cnijD");
-    class I extends n.default {
-        constructor(t) {
-            if (super(t), (0, s.default)(this, "goingBackToBase", !1), (0, s.default)(this, "idleRotation", 0), (0, s.default)(this, "currentFlagX", 0), (0, s.default)(this, "currentFlagY", 0), (0, s.default)(this, "pickupShiftX", 0), (0, s.default)(this, "pickupShiftY", 0), (0, s.default)(this, "dropShiftY", 0), (0, s.default)(this, "backScale", 1), (0, s.default)(this, "backAlpha", 1), (0, s.default)(this, "shadowAlpha", 0), (0, s.default)(this, "shadowScale", 0), (0, s.default)(this, "flipScale", 1), (0, s.default)(this, "cumulTime", 1e3 * Math.random()), (0, s.default)(this, "onUpdate", (t => {
-                    (0, w.UpdateCarriedFlag)(this), this.cumulTime += t, this.idleRotation = Math.sin(this.cumulTime / 400 / h.Consts.FlagSwingInterval) * h.Consts.FlagSwingAmplitude, this.flag.view.rotation = this.idleRotation, this.flag.view.scaleX = h.Consts.BaseScale * this.flipScale, this.flag.view.scaleY = h.Consts.BaseScale * this.backScale, this.flag.view.x = this.currentFlagX + this.pickupShiftX, this.flag.view.y = this.currentFlagY + this.pickupShiftY + this.dropShiftY, this.flag.view.setDepth((0, u.GetGlobalDepth)(this.flag.view.y, c.default.DepthSortedCharactersAndDevices)), this.flagShadow.view.alpha = this.shadowAlpha, this.flagShadow.view.scaleX = this.flagShadow.view.scaleY = this.shadowScale
-                })), (0, s.default)(this, "transitionToState", (() => {
-                    this.state.currentState === o.CurrentState.carried ? (0, g.OnPickup)(this) : this.state.currentState === o.CurrentState.dropped ? (0, S.OnDrop)(this) : this.state.currentState === o.CurrentState.idle && (0, v.OnBackToBase)(this)
-                })), (0, s.default)(this, "onStateChange", (t => {
-                    (0, f.UpdateZone)(this), (0, p.UpdateInteractiveInfo)(this), "currentState" === t && this.transitionToState(), "characterId" === t && this.state.characterId && (this.lastCharacterIdToHoldFlag = this.state.characterId)
-                })), (0, s.default)(this, "setupVisualEditing", (() => {
-                    if (!(0, l.InPreGamePhase)() || !(0, m.isSavedVersion)()) return;
-                    const t = (0, F.FetchOptionSchemaProperty)(this, "radius");
+    }), a(j.exports, 'default', function() {
+        return x;
+    });
+    var d = b('UM8oI'),
+        e = b('sgILU'),
+        f = b('oGwma'),
+        g = b('NypLh'),
+        h = b('5Ux1a'),
+        i = b('cMsWT'),
+        j = b('aR65c'),
+        k = b('fV94y'),
+        l = b('1f5/Q'),
+        m = b('C5in8'),
+        n = b('+KH6E'),
+        o = b('dfOCE'),
+        p = b('4me3n'),
+        q = b('CUvci'),
+        r = b('Q0Vn8'),
+        s = b('julgI'),
+        t = b('Bpt+p'),
+        u = b('/Lvpl17'),
+        v = b('wSwKo5');
+    class w extends e.default {
+        constructor(a) {
+            if (super(a), (0, d.default)(this, 'goingBackToBase', !1), (0, d.default)(this, 'idleRotation', 0), (0, d.default)(this, 'currentFlagX', 0), (0, d.default)(this, 'currentFlagY', 0), (0, d.default)(this, 'pickupShiftX', 0), (0, d.default)(this, 'pickupShiftY', 0), (0, d.default)(this, 'dropShiftY', 0), (0, d.default)(this, 'backScale', 1), (0, d.default)(this, 'backAlpha', 1), (0, d.default)(this, 'shadowAlpha', 0), (0, d.default)(this, 'shadowScale', 0), (0, d.default)(this, 'flipScale', 1), (0, d.default)(this, 'cumulTime', 1000 * Math.random()), (0, d.default)(this, 'onUpdate', a => {
+                    (0, q.UpdateCarriedFlag)(this), this.cumulTime += a, this.idleRotation = Math.sin(this.cumulTime / 400 / k.Consts.FlagSwingInterval) * k.Consts.FlagSwingAmplitude, this.flag.view.rotation = this.idleRotation, this.flag.view.scaleX = k.Consts.BaseScale * this.flipScale, this.flag.view.scaleY = k.Consts.BaseScale * this.backScale, this.flag.view.x = this.currentFlagX + this.pickupShiftX, this.flag.view.y = this.currentFlagY + this.pickupShiftY + this.dropShiftY, this.flag.view.setDepth((0, j.GetGlobalDepth)(this.flag.view.y, i.default.DepthSortedCharactersAndDevices)), this.flagShadow.view.alpha = this.shadowAlpha, this.flagShadow.view.scaleX = this.flagShadow.view.scaleY = this.shadowScale;
+                }), (0, d.default)(this, 'transitionToState', () => {
+                    this.state.currentState === f.CurrentState.carried ? (0, n.OnPickup)(this) : this.state.currentState === f.CurrentState.dropped ? (0, o.OnDrop)(this) : this.state.currentState === f.CurrentState.idle && (0, p.OnBackToBase)(this);
+                }), (0, d.default)(this, 'onStateChange', a => {
+                    (0, m.UpdateZone)(this), (0, l.UpdateInteractiveInfo)(this), 'currentState' === a && this.transitionToState(), 'characterId' === a && this.state.characterId && (this.lastCharacterIdToHoldFlag = this.state.characterId);
+                }), (0, d.default)(this, 'setupVisualEditing', () => {
+                    if (!(0, h.InPreGamePhase)() || !(0, t.isSavedVersion)())
+                        return;
+                    const x = (0, u.FetchOptionSchemaProperty)(this, 'radius');
                     this.visualEditing.add.circle({
                         radius: this.options.radius,
-                        minRadius: t.min,
-                        maxRadius: t.max,
+                        minRadius: x.min,
+                        maxRadius: x.max,
                         rotable: !1,
-                        onChange: t => {
-                            (0, x.ReplaceVisualEditingPreview)(t.x, t.y, {
-                                radius: t.radius
-                            })
+                        onChange: x => {
+                            (0, v.ReplaceVisualEditingPreview)(x.x, x.y, {
+                                radius: x.radius
+                            });
                         }
-                    })
-                })), (0, s.default)(this, "isInBase", (() => this.state.currentState === o.CurrentState.idle)), this.cull.ignoreCulling(), this.flag = this.parts.add.sprite({
-                    ...(0, d.GetFlagAsset)(this.options.flagColor),
-                    originX: h.Consts.FlagOriginX,
-                    originY: h.Consts.FlagOriginY,
-                    onReady: t => {
-                        t.view.setScale(h.Consts.BaseScale)
+                    });
+                }), (0, d.default)(this, 'isInBase', () => this.state.currentState === f.CurrentState.idle), this.cull.ignoreCulling(), this.flag = this.parts.add.sprite({
+                    ...(0, g.GetFlagAsset)(this.options.flagColor),
+                    originX: k.Consts.FlagOriginX,
+                    originY: k.Consts.FlagOriginY,
+                    onReady: a => {
+                        a.view.setScale(k.Consts.BaseScale);
                     }
                 }), this.flagPlatform = this.parts.add.sprite({
-                    ...d.FlagPlatform,
-                    originX: h.Consts.PlatformOriginX,
-                    originY: h.Consts.PlatformOriginY,
-                    layerId: c.default.DevicesUnderCharacters,
-                    depthChange: (0, C.default)(2),
-                    onReady: t => {
-                        t.view.setScale(h.Consts.BaseScale)
+                    ...g.FlagPlatform,
+                    originX: k.Consts.PlatformOriginX,
+                    originY: k.Consts.PlatformOriginY,
+                    layerId: i.default.DevicesUnderCharacters,
+                    depthChange: (0, r.default)(2),
+                    onReady: a => {
+                        a.view.setScale(k.Consts.BaseScale);
                     }
                 }), this.flagShadow = this.parts.add.sprite({
-                    ...d.FlagShadow,
-                    layerId: c.default.DevicesUnderCharacters,
-                    onReady: t => {
-                        t.view.setScale(0)
+                    ...g.FlagShadow,
+                    layerId: i.default.DevicesUnderCharacters,
+                    onReady: a => {
+                        a.view.setScale(0);
                     }
-                }), this.currentFlagX = this.x, this.currentFlagY = this.y, (0, l.InGamePhase)() && (this.zone = this.interactiveZones.add.circle({
-                    r: h.Consts.InteractivityRadius
+                }), this.currentFlagX = this.x, this.currentFlagY = this.y, (0, h.InGamePhase)() && (this.zone = this.interactiveZones.add.circle({
+                    r: k.Consts.InteractivityRadius
                 }), this.interactiveZones.onInteraction = () => {
-                    this.sendToServerDevice("interact")
-                }, (0, p.UpdateInteractiveInfo)(this), (0, f.UpdateZone)(this), this.state.currentState === o.CurrentState.carried ? (0, g.SetCarriedState)(this) : this.state.currentState === o.CurrentState.dropped && (0, S.SetDroppedState)(this)), this.options.useSafeZone) {
+                    this.sendToServerDevice('interact');
+                }, (0, l.UpdateInteractiveInfo)(this), (0, m.UpdateZone)(this), this.state.currentState === f.CurrentState.carried ? (0, n.SetCarriedState)(this) : this.state.currentState === f.CurrentState.dropped && (0, o.SetDroppedState)(this)), this.options.useSafeZone) {
                 this.setupVisualEditing();
-                const t = this.options.owningTeamId === (0, y.default)();
+                const x = this.options.owningTeamId === (0, s.default)();
                 this.parts.add.circle({
                     x: 0,
                     y: 0,
                     r: this.options.radius,
-                    color: t ? h.Consts.Colors.SafeZone.Body.Owner : h.Consts.Colors.SafeZone.Body.NonOwner,
-                    alpha: .2,
-                    borderColor: t ? h.Consts.Colors.SafeZone.Border.Owner : h.Consts.Colors.SafeZone.Border.NonOwner,
-                    borderAlpha: .5,
+                    color: x ? k.Consts.Colors.SafeZone.Body.Owner : k.Consts.Colors.SafeZone.Body.NonOwner,
+                    alpha: 0.2,
+                    borderColor: x ? k.Consts.Colors.SafeZone.Border.Owner : k.Consts.Colors.SafeZone.Border.NonOwner,
+                    borderAlpha: 0.5,
                     borderWidth: 4,
-                    depthChange: (0, C.default)(1)
-                }), t && this.colliders.add.circle({
+                    depthChange: (0, r.default)(1)
+                }), x && this.colliders.add.circle({
                     x: 0,
                     y: 0,
                     r: this.options.radius
-                })
+                });
             }
-            this.lastCharacterIdToHoldFlag = this.state.characterId
+            this.lastCharacterIdToHoldFlag = this.state.characterId;
         }
     }
-    var k = I
-})), e.register("9akbZ", (function(e, a) {
-    let i;
-    var r;
-    let s;
-    var n;
-    t(e.exports, "CurrentState", (function() {
-        return s
-    })), (r = i || (i = {})).black = "black", r.blue = "blue", r.green = "green", r.orange = "orange", r.purple = "purple", r.red = "red", r.white = "white", (n = s || (s = {})).idle = "idle", n.carried = "carried", n.dropped = "dropped";
-    s.idle
-})), e.register("kD2Z6", (function(a, i) {
-    t(a.exports, "FlagPlatform", (function() {
-        return s
-    })), t(a.exports, "FlagShadow", (function() {
-        return n
-    })), t(a.exports, "GetFlagAsset", (function() {
-        return o
-    }));
-    var r = e("alREA");
-    const s = {
-            imageId: "flag_platform",
-            imageUrl: (0, r.default)("devices/flag/flag_platform.png")
+    var x = y;
+}), b.register('oGwma', function(b, j) {
+    let c;
+    var d;
+    let e;
+    var f;
+    a(b.exports, 'CurrentState', function() {
+        return e;
+    }), (d = c || (c = {})).black = 'black', d.blue = 'blue', d.green = 'green', d.orange = 'orange', d.purple = 'purple', d.red = 'red', d.white = 'white', (f = e || (e = {})).idle = 'idle', f.carried = 'carried', f.dropped = 'dropped';
+    e.idle;
+}), b.register('NypLh', function(j, c) {
+    a(j.exports, 'FlagPlatform', function() {
+        return d;
+    }), a(j.exports, 'FlagShadow', function() {
+        return e;
+    }), a(j.exports, 'GetFlagAsset', function() {
+        return f;
+    });
+    var c = b('JJQ0+');
+    const d = {
+            imageId: 'flag_platform',
+            imageUrl: (0, c.default)('devices/flag/flag_platform.png')
         },
-        n = {
-            imageId: "flag_shadow",
-            imageUrl: (0, r.default)("devices/shadow/shadow_device.png")
+        e = {
+            imageId: 'flag_shadow',
+            imageUrl: (0, c.default)('devices/shadow/shadow_device.png')
         },
-        o = t => ({
-            imageId: `flag_${t}`,
-            imageUrl: (0, r.default)(`devices/flag/flag_${t}.png`)
-        })
-})), e.register("efsDV", (function(e, a) {
-    t(e.exports, "Consts", (function() {
-        return i
-    }));
-    const i = {
-        FlagOriginX: .935,
+        f = a => ({
+            imageId: `flag_${ a }`,
+            imageUrl: (0, c.default)(`devices/flag/flag_${ a }.png`)
+        });
+}), b.register('fV94y', function(b, j) {
+    a(b.exports, 'Consts', function() {
+        return c;
+    });
+    const c = {
+        FlagOriginX: 0.935,
         FlagOriginY: 356 / 359,
         PlatformOriginX: 106 / 211,
         PlatformOriginY: 56 / 142,
-        BackToBaseText: "Return Flag To Base",
-        PickUpText: "Pick Up Flag",
-        NoInteractiveSlotsHeader: "No Interactive Slots",
-        NoInteractiveSlotsText: "Interactive Items Disabled",
-        NoInteractiveSlotsHeaderColor: "#ffcdd2",
-        FlagShiftFactor: -.1,
-        FlagSwingAmplitude: .1,
+        BackToBaseText: 'Return Flag To Base',
+        PickUpText: 'Pick Up Flag',
+        NoInteractiveSlotsHeader: 'No Interactive Slots',
+        NoInteractiveSlotsText: 'Interactive Items Disabled',
+        NoInteractiveSlotsHeaderColor: '#ffcdd2',
+        FlagShiftFactor: -0.1,
+        FlagSwingAmplitude: 0.1,
         FlagSwingInterval: 1,
         FlagDockedShift: -35,
         FlagDropShift: -35,
         FlagDropHeight: 35,
-        BaseScale: .35,
+        BaseScale: 0.35,
         InteractivityRadius: 100,
         Colors: {
             SafeZone: {
@@ -169,234 +170,239 @@ e.register("1QGRJ", (function(a, i) {
                 }
             }
         }
-    }
-})), e.register("a5ZMe", (function(a, i) {
-    t(a.exports, "UpdateInteractiveInfo", (function() {
-        return l
-    }));
-    var r = e("aKxRF"),
-        s = e("6Tpu2"),
-        n = e("efsDV"),
-        o = e("9akbZ"),
-        d = e("30KqB");
-    const l = t => {
-        if ((0, s.InPreGamePhase)()) return;
-        if (!(0, d.FetchMapOptions)().interactiveItemsSlots) return void t.interactiveZones.setInfo({
-            message: n.Consts.NoInteractiveSlotsText,
-            allowedToInteract: !1,
-            topHeaderColor: n.Consts.NoInteractiveSlotsHeaderColor,
-            topHeader: n.Consts.NoInteractiveSlotsHeader,
-            duration: 1
-        });
-        const e = t.options.owningTeamId === (0, r.default)(),
-            a = t.state.currentState === o.CurrentState.dropped,
-            i = t.state.currentState === o.CurrentState.idle;
-        return e && a ? (t.interactiveZones.setForceDisabled(!1), void t.interactiveZones.setInfo({
-            message: n.Consts.BackToBaseText,
+    };
+}), b.register('1f5/Q', function(j, k) {
+    a(j.exports, 'UpdateInteractiveInfo', function() {
+        return h;
+    });
+    var c = b('julgI'),
+        d = b('5Ux1a'),
+        e = b('fV94y'),
+        f = b('oGwma'),
+        g = b('lRhCY');
+    const h = a => {
+        if ((0, d.InPreGamePhase)())
+            return;
+        if (!(0, g.FetchMapOptions)().interactiveItemsSlots)
+            return void a.interactiveZones.setInfo({
+                message: e.Consts.NoInteractiveSlotsText,
+                allowedToInteract: !1,
+                topHeaderColor: e.Consts.NoInteractiveSlotsHeaderColor,
+                topHeader: e.Consts.NoInteractiveSlotsHeader,
+                duration: 1
+            });
+        const i = a.options.owningTeamId === (0, c.default)(),
+            j = a.state.currentState === f.CurrentState.dropped,
+            k = a.state.currentState === f.CurrentState.idle;
+        return i && j ? (a.interactiveZones.setForceDisabled(!1), void a.interactiveZones.setInfo({
+            message: e.Consts.BackToBaseText,
             allowedToInteract: !0,
             duration: 1
-        })) : e || !i && !a ? void t.interactiveZones.setForceDisabled(!0) : (t.interactiveZones.setForceDisabled(!1), void t.interactiveZones.setInfo({
-            message: n.Consts.PickUpText,
+        })) : i || !k && !j ? void a.interactiveZones.setForceDisabled(!0) : (a.interactiveZones.setForceDisabled(!1), void a.interactiveZones.setInfo({
+            message: e.Consts.PickUpText,
             allowedToInteract: !0,
             duration: 1
-        }))
-    }
-})), e.register("cpvHe", (function(a, i) {
-    t(a.exports, "UpdateZone", (function() {
-        return s
-    }));
-    var r = e("9akbZ");
-    const s = t => {
-        if (!t.zone) return;
+        }));
+    };
+}), b.register('C5in8', function(f, g) {
+    a(f.exports, 'UpdateZone', function() {
+        return d;
+    });
+    var c = b('oGwma');
+    const d = a => {
+        if (!a.zone)
+            return;
         let e = {
-            x: t.x,
-            y: t.y
+            x: a.x,
+            y: a.y
         };
-        t.state.currentState === r.CurrentState.dropped && (e.x = t.state.x, e.y = t.state.y);
-        const a = e.x - t.x,
-            i = e.y - t.y;
-        t.zone.x = a, t.zone.y = i
-    }
-})), e.register("aiwFZ", (function(a, i) {
-    t(a.exports, "OnPickup", (function() {
-        return c
-    })), t(a.exports, "SetCarriedState", (function() {
-        return u
-    }));
-    var r = e("1UlqS"),
-        s = e("alREA"),
-        n = e("fhnJp"),
-        o = e("3iPiZ"),
-        d = e("jVQO4"),
-        l = e("efsDV");
-    const c = t => {
-            const e = (0, r.default)(t.state.characterId),
-                a = (0, n.default)();
-            t.state.characterId === a && (0, d.playSound)({
-                path: (0, s.default)("sounds/core/collectItem.mp3"),
-                volume: (0, o.getVolume)({
-                    volume: .7,
-                    type: o.SoundType.soundEffect
+        a.state.currentState === c.CurrentState.dropped && (e.x = a.state.x, e.y = a.state.y);
+        const f = e.x - a.x,
+            g = e.y - a.y;
+        a.zone.x = f, a.zone.y = g;
+    };
+}), b.register('+KH6E', function(k, c) {
+    a(k.exports, 'OnPickup', function() {
+        return i;
+    }), a(k.exports, 'SetCarriedState', function() {
+        return j;
+    });
+    var c = b('EdRoV'),
+        d = b('JJQ0+'),
+        e = b('PUlKf'),
+        f = b('Ena4B'),
+        g = b('OlpXx'),
+        h = b('fV94y');
+    const i = a => {
+            const j = (0, c.default)(a.state.characterId),
+                k = (0, e.default)();
+            a.state.characterId === k && (0, g.playSound)({
+                path: (0, d.default)('sounds/core/collectItem.mp3'),
+                volume: (0, f.getVolume)({
+                    volume: 0.7,
+                    type: f.SoundType.soundEffect
                 })
-            }), e && (t.pickupShiftX = t.flag.view.x - e.body.x, t.pickupShiftY = t.flag.view.y - e.body.y, t.tweens.add({
-                targets: t,
+            }), j && (a.pickupShiftX = a.flag.view.x - j.body.x, a.pickupShiftY = a.flag.view.y - j.body.y, a.tweens.add({
+                targets: a,
                 pickupShiftX: 0,
-                pickupShiftY: l.Consts.FlagDockedShift,
+                pickupShiftY: h.Consts.FlagDockedShift,
                 duration: 250,
                 ease: Phaser.Math.Easing.Back.Out
-            }), t.tweens.add({
-                targets: t,
+            }), a.tweens.add({
+                targets: a,
                 shadowAlpha: 0,
                 shadowScale: 0,
                 duration: 100
-            }))
+            }));
         },
-        u = t => {
-            t.pickupShiftX = 0, t.pickupShiftY = l.Consts.FlagDockedShift
-        }
-})), e.register("kXNtU", (function(a, i) {
-    t(a.exports, "OnDrop", (function() {
-        return l
-    })), t(a.exports, "SetDroppedState", (function() {
-        return c
-    }));
-    var r = e("alREA"),
-        s = e("fhnJp"),
-        n = e("3iPiZ"),
-        o = e("jVQO4"),
-        d = e("efsDV");
-    const l = t => {
-            t.lastCharacterIdToHoldFlag === (0, s.default)() && (0, o.playSound)({
-                path: (0, r.default)("sounds/core/dropItem.mp3"),
-                volume: (0, n.getVolume)({
-                    volume: .45,
-                    type: n.SoundType.soundEffect
+        j = a => {
+            a.pickupShiftX = 0, a.pickupShiftY = h.Consts.FlagDockedShift;
+        };
+}), b.register('dfOCE', function(d, c) {
+    a(d.exports, 'OnDrop', function() {
+        return h;
+    }), a(d.exports, 'SetDroppedState', function() {
+        return i;
+    });
+    var c = b('JJQ0+'),
+        d = b('PUlKf'),
+        e = b('Ena4B'),
+        f = b('OlpXx'),
+        g = b('fV94y');
+    const h = a => {
+            a.lastCharacterIdToHoldFlag === (0, d.default)() && (0, f.playSound)({
+                path: (0, c.default)('sounds/core/dropItem.mp3'),
+                volume: (0, e.getVolume)({
+                    volume: 0.45,
+                    type: e.SoundType.soundEffect
                 })
-            }), t.flagShadow.view.x = t.state.x, t.flagShadow.view.y = t.state.y + d.Consts.FlagDropShift, t.pickupShiftY = d.Consts.FlagDockedShift, t.tweens.add({
-                targets: t,
-                currentFlagX: t.state.x,
-                currentFlagY: t.state.y,
+            }), a.flagShadow.view.x = a.state.x, a.flagShadow.view.y = a.state.y + g.Consts.FlagDropShift, a.pickupShiftY = g.Consts.FlagDockedShift, a.tweens.add({
+                targets: a,
+                currentFlagX: a.state.x,
+                currentFlagY: a.state.y,
                 duration: 300
-            }), t.tweens.add({
-                targets: t,
-                dropShiftY: -d.Consts.FlagDropHeight,
+            }), a.tweens.add({
+                targets: a,
+                dropShiftY: -g.Consts.FlagDropHeight,
                 duration: 150,
                 ease: Phaser.Math.Easing.Sine.Out,
                 onComplete: () => {
-                    t.tweens.add({
-                        targets: t,
-                        shadowAlpha: .5,
-                        shadowScale: .25,
+                    a.tweens.add({
+                        targets: a,
+                        shadowAlpha: 0.5,
+                        shadowScale: 0.25,
                         ease: Phaser.Math.Easing.Back.Out,
                         duration: 200
-                    }), t.tweens.add({
-                        targets: t,
+                    }), a.tweens.add({
+                        targets: a,
                         dropShiftY: 0,
                         duration: 150,
                         ease: Phaser.Math.Easing.Sine.In
-                    })
+                    });
                 }
-            })
+            });
         },
-        c = t => {
-            t.flagShadow.view.x = t.state.x, t.flagShadow.view.y = t.state.y + d.Consts.FlagDropShift, t.pickupShiftY = d.Consts.FlagDockedShift, t.currentFlagX = t.state.x, t.currentFlagY = t.state.y, t.shadowAlpha = .5, t.shadowScale = .25, t.dropShiftY = 0
-        }
-})), e.register("hW9Ub", (function(e, a) {
-    t(e.exports, "OnBackToBase", (function() {
-        return i
-    }));
-    const i = t => {
-        t.goingBackToBase = !0, t.tweens.add({
-            targets: t,
+        i = a => {
+            a.flagShadow.view.x = a.state.x, a.flagShadow.view.y = a.state.y + g.Consts.FlagDropShift, a.pickupShiftY = g.Consts.FlagDockedShift, a.currentFlagX = a.state.x, a.currentFlagY = a.state.y, a.shadowAlpha = 0.5, a.shadowScale = 0.25, a.dropShiftY = 0;
+        };
+}), b.register('4me3n', function(b, d) {
+    a(b.exports, 'OnBackToBase', function() {
+        return c;
+    });
+    const c = a => {
+        a.goingBackToBase = !0, a.tweens.add({
+            targets: a,
             shadowAlpha: 0,
             shadowScale: 0,
             ease: Phaser.Math.Easing.Back.In,
             duration: 200
-        }), t.tweens.add({
-            targets: t,
+        }), a.tweens.add({
+            targets: a,
             backScale: 0,
             ease: Phaser.Math.Easing.Back.In,
             duration: 300
-        }), t.tweens.add({
-            targets: t,
+        }), a.tweens.add({
+            targets: a,
             backAlpha: 0,
             duration: 100,
             delay: 150,
             onComplete: () => {
-                t.goingBackToBase = !1, t.dropShiftY = 0, t.pickupShiftY = 0, t.currentFlagX = t.x, t.currentFlagY = t.y, t.tweens.add({
-                    targets: t,
+                a.goingBackToBase = !1, a.dropShiftY = 0, a.pickupShiftY = 0, a.currentFlagX = a.x, a.currentFlagY = a.y, a.tweens.add({
+                    targets: a,
                     backScale: 1,
                     ease: Phaser.Math.Easing.Back.Out,
                     duration: 300
-                }), t.tweens.add({
-                    targets: t,
+                }), a.tweens.add({
+                    targets: a,
                     backAlpha: 0,
                     duration: 150
-                })
+                });
             }
-        })
-    }
-})), e.register("9pePj", (function(a, i) {
-    t(a.exports, "UpdateCarriedFlag", (function() {
-        return n
-    }));
-    var r = e("1UlqS"),
-        s = e("9akbZ");
-    const n = t => {
-        if (t.state.currentState !== s.CurrentState.carried) return;
-        const e = (0, r.default)(t.state.characterId);
-        e && (t.currentFlagX = e.body.x, t.currentFlagY = e.body.y, t.flipScale = e.flip.isFlipped ? -1 : 1)
-    }
-})), e.register("cK78N", (function(e, a) {
-    t(e.exports, "FetchOptionSchemaProperty", (function() {
-        return i
-    }));
-    const i = (t, e) => {
-        var a, i, r;
-        const s = t.deviceOption.optionSchema.options.find((t => t.key === e));
+        });
+    };
+}), b.register('CUvci', function(d, c) {
+    a(d.exports, 'UpdateCarriedFlag', function() {
+        return e;
+    });
+    var c = b('EdRoV'),
+        d = b('oGwma');
+    const e = a => {
+        if (a.state.currentState !== d.CurrentState.carried)
+            return;
+        const f = (0, c.default)(a.state.characterId);
+        f && (a.currentFlagX = f.body.x, a.currentFlagY = f.body.y, a.flipScale = f.flip.isFlipped ? -1 : 1);
+    };
+}), b.register('/Lvpl17', function(b, d) {
+    a(b.exports, 'FetchOptionSchemaProperty', function() {
+        return c;
+    });
+    const c = (a, b) => {
+        var d, e, f;
+        const g = a.deviceOption.optionSchema.options.find(a => a.key === b);
         return {
-            min: null === (a = null == s ? void 0 : s.option.props) || void 0 === a ? void 0 : a.min,
-            max: null === (i = null == s ? void 0 : s.option.props) || void 0 === i ? void 0 : i.max,
-            step: null === (r = null == s ? void 0 : s.option.props) || void 0 === r ? void 0 : r.step
-        }
-    }
-})), e.register("cnijD", (function(a, i) {
-    t(a.exports, "ReplaceVisualEditingPreview", (function() {
-        return d
-    }));
-    var r = e("dWqri"),
-        s = e("eCsxR"),
-        n = e("ittx1"),
-        o = e("dNzyU");
-    const d = (t, e, a) => {
-        const i = (0, o.FetchVisualEditingPreview)(),
-            d = (0, n.FetchCurrentlyEditedDevice)();
-        if (!d || !i) return;
-        const l = d.layers.isOnNaturalDepth() ? void 0 : e + d.layers.getDepthShift();
-        (0, s.default)({
-            deviceOption: i.deviceOption,
-            id: r.VisualEditingConstants.previewId,
-            x: t,
-            y: e,
-            depth: l,
-            layerId: d.layers.getLayer(),
-            name: i.name,
+            min: null === (d = null == g ? void 0 : g.option.props) || void 0 === d ? void 0 : d.min,
+            max: null === (e = null == g ? void 0 : g.option.props) || void 0 === e ? void 0 : e.max,
+            step: null === (f = null == g ? void 0 : g.option.props) || void 0 === f ? void 0 : f.step
+        };
+    };
+}), b.register('wSwKo5', function(a, h) {
+    a(a.exports, 'ReplaceVisualEditingPreview', function() {
+        return g;
+    });
+    var c = b('2pEsK'),
+        d = b('Am0b71'),
+        e = b('KDS1x'),
+        f = b('83+vO');
+    const g = (a, b, a) => {
+        const h = (0, f.FetchVisualEditingPreview)(),
+            i = (0, e.FetchCurrentlyEditedDevice)();
+        if (!i || !h)
+            return;
+        const j = i.layers.isOnNaturalDepth() ? void 0 : b + i.layers.getDepthShift();
+        (0, d.default)({
+            deviceOption: h.deviceOption,
+            id: c.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: j,
+            layerId: i.layers.getLayer(),
+            name: h.name,
             isPreview: !0,
             options: {
-                ...i.options,
+                ...h.options,
                 ...a
             },
             placedByClient: !0,
-            state: i.deviceOption.defaultState
-        })
-    }
-})), e.register("eCsxR", (function(a, i) {
-    t(a.exports, "default", (function() {
-        return n
-    }));
-    var r = e("gwuwo"),
-        s = e("fCcDT");
-    var n = t => {
-        (0, r.default)().worldManager.devices.getDeviceById(t.id) && (0, s.default)(t)
-    }
-}));
+            state: h.deviceOption.defaultState
+        });
+    };
+}), b.register('Am0b71', function(a, i) {
+    a(a.exports, 'default', function() {
+        return e;
+    });
+    var c = b('dAmf5'),
+        d = b('jgFbX');
+    var e = a => {
+        (0, c.default)().worldManager.devices.getDeviceById(a.id) && (0, d.default)(a);
+    };
+});

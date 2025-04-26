@@ -1,107 +1,108 @@
-function e(e, t, i, n) {
-    Object.defineProperty(e, t, {
-        get: i,
-        set: n,
+function a(a, b, d, c) {
+    Object.defineProperty(a, b, {
+        get: d,
+        set: c,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("bAATY", (function(i, n) {
-    var o;
-    o = i.exports, Object.defineProperty(o, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('8Nm0G', function(d, c) {
+    var c;
+    c = d.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(i.exports, "default", (function() {
-        return f
-    }));
-    var r = t("cK78N"),
-        a = t("4uojN"),
-        s = t("6Tpu2"),
-        d = t("bNmF9"),
-        l = t("dPNN3"),
-        u = t("h6SIm"),
-        c = t("cnijD");
-    class p extends d.default {
-        constructor(e) {
-            if (super(e), (0, s.InPreGamePhase)() && (0, a.isSavedVersion)()) {
-                const e = u.default.Zombies,
-                    t = (0, r.FetchOptionSchemaProperty)(this, "targetRadius");
+    }), a(d.exports, 'default', function() {
+        return l;
+    });
+    var d = b('/Lvpl17'),
+        e = b('Bpt+p'),
+        f = b('5Ux1a'),
+        g = b('sgILU'),
+        h = b('phu0d'),
+        i = b('Gqspz'),
+        j = b('wSwKo5');
+    class k extends g.default {
+        constructor(a) {
+            if (super(a), (0, f.InPreGamePhase)() && (0, e.isSavedVersion)()) {
+                const l = i.default.Zombies,
+                    m = (0, d.FetchOptionSchemaProperty)(this, 'targetRadius');
                 this.visualEditing.add.circle({
                     angle: 0,
                     rotable: !1,
                     radius: this.options.targetRadius,
-                    minRadius: t.min,
-                    maxRadius: t.max,
-                    onChange: e => {
-                        (0, c.ReplaceVisualEditingPreview)(e.x, e.y, {
-                            targetRadius: e.radius
-                        })
+                    minRadius: m.min,
+                    maxRadius: m.max,
+                    onChange: l => {
+                        (0, j.ReplaceVisualEditingPreview)(l.x, l.y, {
+                            targetRadius: l.radius
+                        });
                     }
-                }), new(0, l.default)({
+                }), new(0, h.default)({
                     device: this,
-                    baseColor: e.baseColor,
-                    boxColor: e.boxColor,
+                    baseColor: l.baseColor,
+                    boxColor: l.boxColor,
                     content: {
                         text: {
-                            text: "Zombie\nInvasion"
+                            text: 'Zombie\nInvasion'
                         }
                     }
-                })
+                });
             }
         }
     }
-    var f = p
-})), t.register("cK78N", (function(t, i) {
-    e(t.exports, "FetchOptionSchemaProperty", (function() {
-        return n
-    }));
-    const n = (e, t) => {
-        var i, n, o;
-        const r = e.deviceOption.optionSchema.options.find((e => e.key === t));
+    var l = m;
+}), b.register('/Lvpl17', function(b, d) {
+    a(b.exports, 'FetchOptionSchemaProperty', function() {
+        return c;
+    });
+    const c = (a, b) => {
+        var d, e, f;
+        const g = a.deviceOption.optionSchema.options.find(a => a.key === b);
         return {
-            min: null === (i = null == r ? void 0 : r.option.props) || void 0 === i ? void 0 : i.min,
-            max: null === (n = null == r ? void 0 : r.option.props) || void 0 === n ? void 0 : n.max,
-            step: null === (o = null == r ? void 0 : r.option.props) || void 0 === o ? void 0 : o.step
-        }
-    }
-})), t.register("cnijD", (function(i, n) {
-    e(i.exports, "ReplaceVisualEditingPreview", (function() {
-        return d
-    }));
-    var o = t("dWqri"),
-        r = t("eCsxR"),
-        a = t("ittx1"),
-        s = t("dNzyU");
-    const d = (e, t, i) => {
-        const n = (0, s.FetchVisualEditingPreview)(),
-            d = (0, a.FetchCurrentlyEditedDevice)();
-        if (!d || !n) return;
-        const l = d.layers.isOnNaturalDepth() ? void 0 : t + d.layers.getDepthShift();
-        (0, r.default)({
-            deviceOption: n.deviceOption,
-            id: o.VisualEditingConstants.previewId,
-            x: e,
-            y: t,
-            depth: l,
-            layerId: d.layers.getLayer(),
-            name: n.name,
+            min: null === (d = null == g ? void 0 : g.option.props) || void 0 === d ? void 0 : d.min,
+            max: null === (e = null == g ? void 0 : g.option.props) || void 0 === e ? void 0 : e.max,
+            step: null === (f = null == g ? void 0 : g.option.props) || void 0 === f ? void 0 : f.step
+        };
+    };
+}), b.register('wSwKo5', function(i, h) {
+    a(i.exports, 'ReplaceVisualEditingPreview', function() {
+        return g;
+    });
+    var c = b('2pEsK'),
+        d = b('Am0b71'),
+        e = b('KDS1x'),
+        f = b('83+vO');
+    const g = (a, b, i) => {
+        const h = (0, f.FetchVisualEditingPreview)(),
+            i = (0, e.FetchCurrentlyEditedDevice)();
+        if (!i || !h)
+            return;
+        const j = i.layers.isOnNaturalDepth() ? void 0 : b + i.layers.getDepthShift();
+        (0, d.default)({
+            deviceOption: h.deviceOption,
+            id: c.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: j,
+            layerId: i.layers.getLayer(),
+            name: h.name,
             isPreview: !0,
             options: {
-                ...n.options,
+                ...h.options,
                 ...i
             },
             placedByClient: !0,
-            state: n.deviceOption.defaultState
-        })
-    }
-})), t.register("eCsxR", (function(i, n) {
-    e(i.exports, "default", (function() {
-        return a
-    }));
-    var o = t("gwuwo"),
-        r = t("fCcDT");
-    var a = e => {
-        (0, o.default)().worldManager.devices.getDeviceById(e.id) && (0, r.default)(e)
-    }
-}));
+            state: h.deviceOption.defaultState
+        });
+    };
+}), b.register('Am0b71', function(i, n) {
+    a(i.exports, 'default', function() {
+        return e;
+    });
+    var c = b('dAmf5'),
+        d = b('jgFbX');
+    var e = a => {
+        (0, c.default)().worldManager.devices.getDeviceById(a.id) && (0, d.default)(a);
+    };
+});

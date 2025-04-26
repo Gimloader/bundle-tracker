@@ -1,69 +1,69 @@
-function e(e, o, t, n) {
-    Object.defineProperty(e, o, {
+function a(a, b, t, c) {
+    Object.defineProperty(a, b, {
         get: t,
-        set: n,
+        set: c,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var o = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-o.register("eQnrj", (function(t, n) {
-    var a;
-    a = t.exports, Object.defineProperty(a, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('wXgxl', function(t, c) {
+    var c;
+    c = t.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(t.exports, "default", (function() {
-        return m
-    }));
-    var r = o("divCp"),
-        l = o("3ydpO"),
-        i = o("alREA"),
-        s = o("lnD8D"),
-        u = o("fhnJp"),
-        d = o("4uojN"),
-        f = o("6Tpu2"),
-        p = o("3iPiZ"),
-        c = o("jVQO4"),
-        y = o("bNmF9"),
-        h = o("dPNN3"),
-        g = o("h6SIm"),
-        b = o("iovRh");
-    class v extends y.default {
+    }), a(t.exports, 'default', function() {
+        return r;
+    });
+    var d = b('UM8oI'),
+        e = b('s2CSz'),
+        f = b('JJQ0+'),
+        g = b('Il8g9'),
+        h = b('PUlKf'),
+        i = b('Bpt+p'),
+        j = b('5Ux1a'),
+        k = b('Ena4B'),
+        l = b('OlpXx'),
+        m = b('sgILU'),
+        n = b('phu0d'),
+        o = b('Gqspz'),
+        p = b('YX0qO');
+    class q extends m.default {
         play() {
-            this.options.audioUrl && (this.options.characterType !== b.SoundEffectCharacterType.gameOwner || (0, s.AmIGameOwner)()) && (0, c.playSound)({
-                path: (0, l.GetSoundUrl)(this.options.audioUrl),
-                volume: (0, p.getVolume)({
+            this.options.audioUrl && (this.options.characterType !== p.SoundEffectCharacterType.gameOwner || (0, g.AmIGameOwner)()) && (0, l.playSound)({
+                path: (0, e.GetSoundUrl)(this.options.audioUrl),
+                volume: (0, k.getVolume)({
                     volume: this.options.volume / 100,
-                    type: p.SoundType.soundEffect
+                    type: k.SoundType.soundEffect
                 })
-            })
+            });
         }
-        constructor(e) {
-            if (super(e), (0, r.default)(this, "onMessage", (e => {
-                    e.key === b.Messages.play && e.data.characterId === (0, u.default)() && this.play()
-                })), (0, f.InPreGamePhase)() && (0, d.isSavedVersion)()) {
-                const e = g.default.Utility;
-                new(0, h.default)({
+        constructor(a) {
+            if (super(a), (0, d.default)(this, 'onMessage', a => {
+                    a.key === p.Messages.play && a.data.characterId === (0, h.default)() && this.play();
+                }), (0, j.InPreGamePhase)() && (0, i.isSavedVersion)()) {
+                const r = o.default.Utility;
+                new(0, n.default)({
                     device: this,
-                    baseColor: e.baseColor,
-                    boxColor: e.boxColor,
+                    baseColor: r.baseColor,
+                    boxColor: r.boxColor,
                     content: {
                         icon: {
-                            image: (0, i.default)("devices/sound_effect/icon.png")
+                            image: (0, f.default)('devices/sound_effect/icon.png')
                         }
                     }
-                })
+                });
             }
         }
     }
-    var m = v
-})), o.register("iovRh", (function(o, t) {
-    let n;
-    let a;
-    var r;
-    e(o.exports, "Messages", (function() {
-        return n
-    })), e(o.exports, "SoundEffectCharacterType", (function() {
-        return a
-    })), (n || (n = {})).play = "play", (r = a || (a = {})).all = "all", r.gameOwner = "gameOwner"
-}));
+    var r = s;
+}), b.register('YX0qO', function(b, t) {
+    let c;
+    let d;
+    var e;
+    a(b.exports, 'Messages', function() {
+        return c;
+    }), a(b.exports, 'SoundEffectCharacterType', function() {
+        return d;
+    }), (c || (c = {})).play = 'play', (e = d || (d = {})).all = 'all', e.gameOwner = 'gameOwner';
+});

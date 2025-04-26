@@ -1,42 +1,42 @@
-function e(e) {
-    return e && e.__esModule ? e.default : e
+function a(a) {
+    return a && a.__esModule ? a.default : a;
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("3XuSu", (function(o, a) {
-    var n, i, r, d, u;
-    n = o.exports, Object.defineProperty(n, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('UNwj3', function(w, x) {
+    var c, d, e, f, g;
+    c = w.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), i = o.exports, r = "default", d = function() {
-        return k
-    }, Object.defineProperty(i, r, {
-        get: d,
-        set: u,
+    }), d = w.exports, e = 'default', f = function() {
+        return v;
+    }, Object.defineProperty(d, e, {
+        get: f,
+        set: g,
         enumerable: !0,
         configurable: !0
     });
-    var l = t("hxEiv");
-    t("fywoC");
-    var s = t("2FDaO"),
-        f = t("dmyzc"),
-        c = t("aXyEn"),
-        b = t("c3ah8"),
-        g = t("5OQ4z"),
-        p = t("6vbUb"),
-        x = t("5JgWp"),
-        y = t("dSzUP");
-    let h, m, v = e => e;
-    const w = {
+    var h = b('8kSQZ');
+    b('uPP4W');
+    var i = b('h99Nu'),
+        j = b('EefFJ'),
+        k = b('LyXMx'),
+        l = b('kneek'),
+        m = b('+0Tb/'),
+        n = b('b9Bct'),
+        o = b('USLU1'),
+        p = b('nbHO+');
+    let q, r, s = a => a;
+    const t = {
             out: {
-                background: "rgba(0,0,0,0)"
+                background: 'rgba(0,0,0,0)'
             },
             in: {
-                background: "rgba(0,0,0,0.6)"
+                background: 'rgba(0,0,0,0.6)'
             }
         },
-        j = {
+        u = {
             out: {
-                y: "100%",
+                y: '100%',
                 opacity: 0
             },
             in: {
@@ -44,54 +44,57 @@ t.register("3XuSu", (function(o, a) {
                 opacity: 1
             }
         };
-    var k = t => {
-        const o = (0, x.useIsPresent)() ? .3 : .2,
-            a = () => {
-                t.setToHomeScreen()
+    var v = b => {
+        const w = (0, o.useIsPresent)() ? 0.3 : 0.2,
+            x = () => {
+                b.setToHomeScreen();
             };
-        return (0, g.default)(e(b).Input.Keyboard.KeyCodes.ESC, a, [a]), (0, l.jsxs)(f.default, {
-            children: [(0, l.jsx)(C, {
-                onClick: a,
-                initial: w.out,
-                animate: w.in,
-                exit: w.out,
-                transition: {
-                    duration: o,
-                    ease: "easeOut"
-                },
-                children: (0, l.jsx)(O, {
-                    onClick: e => e.stopPropagation(),
-                    initial: j.out,
-                    animate: j.in,
-                    exit: j.out,
+        return (0, m.default)(a(l).Input.Keyboard.KeyCodes.ESC, x, [x]), (0, h.jsxs)(j.default, {
+            children: [
+                (0, h.jsx)(w, {
+                    onClick: x,
+                    initial: t.out,
+                    animate: t.in,
+                    exit: t.out,
                     transition: {
-                        duration: o,
-                        ease: "easeOut"
+                        duration: w,
+                        ease: 'easeOut'
                     },
-                    children: (0, l.jsx)(c.default, {})
+                    children: (0, h.jsx)(x, {
+                        onClick: a => a.stopPropagation(),
+                        initial: u.out,
+                        animate: u.in,
+                        exit: u.out,
+                        transition: {
+                            duration: w,
+                            ease: 'easeOut'
+                        },
+                        children: (0, h.jsx)(k.default, {})
+                    })
+                }),
+                (0, h.jsx)(p.default, {
+                    onClick: x
                 })
-            }), (0, l.jsx)(y.default, {
-                onClick: a
-            })]
-        })
+            ]
+        });
     };
-    const C = (0, s.default)(p.motion.div).attrs({
-            className: "maxAll flex-center"
-        })(h || (h = v`
+    const w = (0, i.default)(n.motion.div).attrs({
+            className: 'maxAll flex-center'
+        })(q || (q = s`
   position: absolute;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.6);
   overflow: hidden;
 `)),
-        O = (0, s.default)(p.motion.div).attrs({
-            className: "medium-shadow"
-        })(m || (m = v`
+        x = (0, i.default)(n.motion.div).attrs({
+            className: 'medium-shadow'
+        })(r || (r = s`
   background: rgba(48, 28, 86, 0.9);
   width: 90%;
   max-width: 800px;
   height: 80%;
   border-radius: 10px;
   overflow: hidden;
-`))
-}));
+`));
+});

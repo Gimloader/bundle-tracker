@@ -1,74 +1,77 @@
-function e(e, t, a, s) {
-    Object.defineProperty(e, t, {
-        get: a,
-        set: s,
+function a(a, b, u, v) {
+    Object.defineProperty(a, b, {
+        get: u,
+        set: v,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("inu9S", (function(a, s) {
-    var n;
-    n = a.exports, Object.defineProperty(n, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('OGpWH', function(u, v) {
+    var c;
+    c = u.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(a.exports, "default", (function() {
-        return A
-    }));
-    var o = t("hxEiv");
-    t("fywoC");
-    var r = t("6vbUb"),
-        i = t("5JgWp"),
-        l = t("2FDaO"),
-        u = t("5j0Lk"),
-        d = t("dSzUP"),
-        c = t("iMOcM"),
-        p = t("69SUA"),
-        m = t("lJbRx"),
-        f = t("cPGmn");
-    let x, g, h = e => e;
-    const b = {
-            y: " 100%",
+    }), a(u.exports, 'default', function() {
+        return s;
+    });
+    var d = b('8kSQZ');
+    b('uPP4W');
+    var e = b('b9Bct'),
+        f = b('USLU1'),
+        g = b('h99Nu'),
+        h = b('ge6u9'),
+        i = b('nbHO+'),
+        j = b('PjB0f'),
+        k = b('gSUVO'),
+        l = b('0PMO4'),
+        m = b('laJ/S');
+    let n, o, p = a => a;
+    const q = {
+            y: ' 100%',
             opacity: 0
         },
-        y = {
-            y: "0%",
+        r = {
+            y: '0%',
             opacity: 1
         };
-    var A = e => {
-        const t = (0, i.useIsPresent)(),
-            [a, s] = (0, c.useBoolean)(!1);
-        (0, f.useDidMount)((() => {
-            (0, c.loadFont)("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap")
-        }));
-        return (0, o.jsxs)(v, {
+    var s = a => {
+        const t = (0, f.useIsPresent)(),
+            [u, v] = (0, j.useBoolean)(!1);
+        (0, m.useDidMount)(() => {
+            (0, j.loadFont)('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+        });
+        return (0, d.jsxs)(t, {
             onClick: () => {
-                t && a && e.close()
+                t && u && a.close();
             },
-            children: [(0, o.jsx)(w, {
-                initial: b,
-                animate: y,
-                exit: b,
-                transition: {
-                    duration: u.ANIMATION_DURATION,
-                    ease: "easeOut"
-                },
-                onClick: e => e.stopPropagation(),
-                onAnimationComplete: s,
-                children: (0, o.jsx)(m.default, {
-                    ...e
+            children: [
+                (0, d.jsx)(u, {
+                    initial: q,
+                    animate: r,
+                    exit: q,
+                    transition: {
+                        duration: h.ANIMATION_DURATION,
+                        ease: 'easeOut'
+                    },
+                    onClick: a => a.stopPropagation(),
+                    onAnimationComplete: v,
+                    children: (0, d.jsx)(l.default, {
+                        ...a
+                    })
+                }),
+                (0, d.jsx)(i.default, {
+                    onClick: a.close
                 })
-            }), (0, o.jsx)(d.default, {
-                onClick: e.close
-            })]
-        })
+            ]
+        });
     };
-    const v = l.default.div.attrs({
-            className: "maxAll flex-center"
-        })(x || (x = h``)),
-        w = (0, l.default)(r.motion.div).attrs({
-            className: "medium-shadow scroll-y"
-        })(g || (g = h`
+    const t = g.default.div.attrs({
+            className: 'maxAll flex-center'
+        })(n || (n = p``)),
+        u = (0, g.default)(e.motion.div).attrs({
+            className: 'medium-shadow scroll-y'
+        })(o || (o = p`
   max-height: 80%;
   background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(3px);
@@ -77,91 +80,106 @@ t.register("inu9S", (function(a, s) {
   border-radius: 14px;
   max-width: 650px;
   font-family: 'PT Mono', monospace;
-  font-weight: ${0};
-`), p.FontWeights.Bold)
-})), t.register("lJbRx", (function(a, s) {
-    e(a.exports, "default", (function() {
-        return x
-    }));
-    var n = t("hxEiv"),
-        o = t("fywoC"),
-        r = t("1tUw4"),
-        i = t("2FDaO"),
-        l = t("iMOcM"),
-        u = t("aQuqp");
-    let d, c, p, m, f = e => e;
-    var x = e => {
-        const [t, a] = o.useState(""), [s, i, d] = (0, l.useBoolean)(!1), c = () => {
-            const a = t.trim();
-            a.length && e.guess(a)
+  font-weight: ${ 0 };
+`), k.FontWeights.Bold);
+}), b.register('0PMO4', function(p, q) {
+    a(p.exports, 'default', function() {
+        return n;
+    });
+    var c = b('8kSQZ'),
+        d = b('uPP4W'),
+        e = b('4MvmP'),
+        f = b('h99Nu'),
+        g = b('PjB0f'),
+        h = b('Dog9Y');
+    let i, j, k, l, m = a => a;
+    var n = a => {
+        const [o, p] = d.useState(''), [q, r, s] = (0, g.useBoolean)(!1), t = () => {
+            const u = o.trim();
+            u.length && a.guess(u);
         };
-        (0, r.useDidUpdate)((() => {
-            i(), a("")
-        }), [e.incorrectCounter]), o.useEffect((() => {
-            e.useMaxAttempts && e.attempts >= e.maxAttempts && a("")
-        }), [e.attempts, e.maxAttempts, e.useMaxAttempts]);
-        const p = o.useMemo((() => {
-                if (!e.useMaxAttempts) return null;
-                if (e.attempts >= e.maxAttempts) return {
-                    message: "No More Guesses Allowed",
-                    color: "red"
-                };
-                const t = e.maxAttempts - e.attempts;
+        (0, e.useDidUpdate)(() => {
+            r(), p('');
+        }, [a.incorrectCounter]), d.useEffect(() => {
+            a.useMaxAttempts && a.attempts >= a.maxAttempts && p('');
+        }, [
+            a.attempts,
+            a.maxAttempts,
+            a.useMaxAttempts
+        ]);
+        const u = d.useMemo(() => {
+                if (!a.useMaxAttempts)
+                    return null;
+                if (a.attempts >= a.maxAttempts)
+                    return {
+                        message: 'No More Guesses Allowed',
+                        color: 'red'
+                    };
+                const v = a.maxAttempts - a.attempts;
                 return {
-                    message: `${t} ${(0,l.plural)("attempt",t)} remaining`,
-                    color: "yellow"
-                }
-            }), [e.maxAttempts, e.attempts, e.useMaxAttempts]),
-            m = e.useMaxAttempts && e.attempts >= e.maxAttempts;
-        return (0, n.jsxs)(g, {
-            children: [(0, n.jsx)(h, {
-                children: "Enter Password:"
-            }), p ? (0, n.jsx)(b, {
-                style: {
-                    color: p.color
-                },
-                children: p.message
-            }) : null, (0, n.jsx)(y, {
-                className: s ? "animated shake" : "",
-                placeholder: "Enter password here...",
-                type: "text",
-                autoFocus: !0,
-                value: t,
-                onChange: e => {
-                    a(e.target.value), d()
-                },
-                maxLength: "64",
-                onKeyDown: e => {
-                    "Enter" === e.key && c()
-                },
-                disabled: m,
-                style: m ? {} : {
-                    cursor: "not-allowed"
-                }
-            }), (0, n.jsx)(u.default, {
-                size: "small",
-                type: "success",
-                onClick: c,
-                ariaLabel: "Submit",
-                children: "Submit"
-            })]
-        })
+                    message: `${ v } ${ (0, g.plural)('attempt', v) } remaining`,
+                    color: 'yellow'
+                };
+            }, [
+                a.maxAttempts,
+                a.attempts,
+                a.useMaxAttempts
+            ]),
+            v = a.useMaxAttempts && a.attempts >= a.maxAttempts;
+        return (0, c.jsxs)(o, {
+            children: [
+                (0, c.jsx)(p, {
+                    children: 'Enter Password:'
+                }),
+                u ? (0, c.jsx)(q, {
+                    style: {
+                        color: u.color
+                    },
+                    children: u.message
+                }) : null,
+                (0, c.jsx)(r, {
+                    className: q ? 'animated shake' : '',
+                    placeholder: 'Enter password here...',
+                    type: 'text',
+                    autoFocus: !0,
+                    value: o,
+                    onChange: a => {
+                        p(a.target.value), s();
+                    },
+                    maxLength: '64',
+                    onKeyDown: a => {
+                        'Enter' === a.key && t();
+                    },
+                    disabled: v,
+                    style: v ? {} : {
+                        cursor: 'not-allowed'
+                    }
+                }),
+                (0, c.jsx)(h.default, {
+                    size: 'small',
+                    type: 'success',
+                    onClick: t,
+                    ariaLabel: 'Submit',
+                    children: 'Submit'
+                })
+            ]
+        });
     };
-    const g = i.default.div.attrs({
-            className: "maxWidth flex-center flex-column"
-        })(d || (d = f`
+    const o = f.default.div.attrs({
+            className: 'maxWidth flex-center flex-column'
+        })(i || (i = m`
   line-height: 1;
 `)),
-        h = i.default.div(c || (c = f`
+        p = f.default.div(j || (j = m`
   font-size: 26px;
 `)),
-        b = i.default.div(p || (p = f`
+        q = f.default.div(k || (k = m`
   font-size: 14px;
   margin-top: 11px;
 `)),
-        y = i.default.input.attrs({
-            className: "maxWidth"
-        })(m || (m = f`
+        r = f.default.input.attrs({
+            className: 'maxWidth'
+        })(l || (l = m`
   background: rgba(255, 255, 255, 0.1);
   border: 0px;
   border-radius: 2px;
@@ -169,17 +187,17 @@ t.register("inu9S", (function(a, s) {
   font-size: 18px;
   margin-top: 22px;
   margin-bottom: 22px;
-`))
-})), t.register("1tUw4", (function(a, s) {
-    e(a.exports, "useDidUpdate", (function() {
-        return o
-    }));
-    var n = t("fywoC");
+`));
+}), b.register('4MvmP', function(e, s) {
+    a(e.exports, 'useDidUpdate', function() {
+        return d;
+    });
+    var c = b('uPP4W');
 
-    function o(e, t) {
-        var a = (0, n.useRef)(!1);
-        void 0 === t || Array.isArray(t) ? Array.isArray(t) && 0 === t.length && console.warn("Using [] as the second argument makes useDidUpdate a noop. The second argument should either be `undefined` or an array of length greater than 0.") : t = [t], (0, n.useEffect)((function() {
-            a.current ? e() : a.current = !0
-        }), t)
+    function d(a, b) {
+        var e = (0, c.useRef)(!1);
+        void 0 === b || Array.isArray(b) ? Array.isArray(b) && 0 === b.length && console.warn('Using [] as the second argument makes useDidUpdate a noop. The second argument should either be `undefined` or an array of length greater than 0.') : b = [b], (0, c.useEffect)(function() {
+            e.current ? a() : e.current = !0;
+        }, b);
     }
-}));
+});

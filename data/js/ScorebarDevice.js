@@ -1,59 +1,60 @@
-var e = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-e.register("icsZG", (function(t, o) {
-    var s, i, a, r, n;
-    s = t.exports, Object.defineProperty(s, "__esModule", {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('yQn5g', function(p, q) {
+    var b, c, d, e, f;
+    b = p.exports, Object.defineProperty(b, '__esModule', {
         value: !0,
         configurable: !0
-    }), i = t.exports, a = "default", r = function() {
-        return m
-    }, Object.defineProperty(i, a, {
-        get: r,
-        set: n,
+    }), c = p.exports, d = 'default', e = function() {
+        return p;
+    }, Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
-    var l = e("divCp"),
-        u = e("iRjsB"),
-        f = e("alREA"),
-        d = e("4uojN"),
-        c = e("6Tpu2"),
-        h = e("bNmF9"),
-        p = e("dPNN3"),
-        b = e("h6SIm");
-    class g extends h.default {
-        constructor(e) {
-            if (super(e), (0, l.default)(this, "getTeamColor", (e => {
-                    const t = "colorTeam" + e;
-                    var o;
-                    return this.options.useTeamSettingsDeviceForColors ? null !== (o = this.state[t]) && void 0 !== o ? o : "#ffffff" : this.options[t]
-                })), (0, l.default)(this, "setStore", (() => {
-                    const e = [],
-                        t = [];
-                    for (let o = 1; o <= this.options.numberOfTeams && !(o > 4); o++) e.push(this.options["team" + o]), t.push(this.getTeamColor(o));
-                    u.default.gui.scorebar = {
-                        teams: e,
-                        teamColors: t
-                    }
-                })), (0, l.default)(this, "onStateChange", (e => {
-                    this.setStore()
-                })), (0, l.default)(this, "onDestroy", (e => {
-                    e.isBeingReplaced || (u.default.gui.scorebar = void 0)
-                })), (0, c.InPreGamePhase)() && (0, d.isSavedVersion)()) {
-                const e = b.default.Overlay;
-                new(0, p.default)({
+    var g = a('UM8oI'),
+        h = a('7Sbqr'),
+        i = a('JJQ0+'),
+        j = a('Bpt+p'),
+        k = a('5Ux1a'),
+        l = a('sgILU'),
+        m = a('phu0d'),
+        n = a('Gqspz');
+    class o extends l.default {
+        constructor(a) {
+            if (super(a), (0, g.default)(this, 'getTeamColor', a => {
+                    const p = 'colorTeam' + a;
+                    var q;
+                    return this.options.useTeamSettingsDeviceForColors ? null !== (q = this.state[p]) && void 0 !== q ? q : '#ffffff' : this.options[p];
+                }), (0, g.default)(this, 'setStore', () => {
+                    const p = [],
+                        q = [];
+                    for (let r = 1; r <= this.options.numberOfTeams && !(r > 4); r++)
+                        p.push(this.options['team' + r]), q.push(this.getTeamColor(r));
+                    h.default.gui.scorebar = {
+                        teams: p,
+                        teamColors: q
+                    };
+                }), (0, g.default)(this, 'onStateChange', a => {
+                    this.setStore();
+                }), (0, g.default)(this, 'onDestroy', a => {
+                    a.isBeingReplaced || (h.default.gui.scorebar = void 0);
+                }), (0, k.InPreGamePhase)() && (0, j.isSavedVersion)()) {
+                const p = n.default.Overlay;
+                new(0, m.default)({
                     device: this,
-                    baseColor: e.baseColor,
-                    boxColor: e.boxColor,
+                    baseColor: p.baseColor,
+                    boxColor: p.boxColor,
                     content: {
                         icon: {
-                            image: (0, f.default)("devices/gui/icon.png"),
-                            scale: .9
+                            image: (0, i.default)('devices/gui/icon.png'),
+                            scale: 0.9
                         }
                     }
-                })
+                });
             }
-            this.setStore()
+            this.setStore();
         }
     }
-    var m = g
-}));
+    var p = q;
+});

@@ -1,28 +1,28 @@
-var e = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-e.register("9UopL", (function(a, r) {
-    var t, i, n, o, l;
-    t = a.exports, Object.defineProperty(t, "__esModule", {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('JQskZ', function(a, r) {
+    var b, c, d, e, f;
+    b = a.exports, Object.defineProperty(b, '__esModule', {
         value: !0,
         configurable: !0
-    }), i = a.exports, n = "default", o = function() {
-        return c
-    }, Object.defineProperty(i, n, {
-        get: o,
-        set: l,
+    }), c = a.exports, d = 'default', e = function() {
+        return k;
+    }, Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
-    var d = e("hxEiv");
-    e("fywoC");
-    var u = e("12Ng4"),
-        s = e("iMOcM"),
-        f = e("cy4A6");
-    var c = e => (0, d.jsx)(u.default, {
-        ...e,
+    var g = a('8kSQZ');
+    a('uPP4W');
+    var h = a('PY40b'),
+        i = a('PjB0f'),
+        j = a('jrTkz0');
+    var k = a => (0, g.jsx)(h.default, {
+        ...a,
         isForUpdating: !0,
-        handleSubmit: a => new Promise(((r, t) => {
-            (0, s.request)({
-                url: "/api/created-map/listing/create",
+        handleSubmit: a => new Promise((r, b) => {
+            (0, i.request)({
+                url: '/api/created-map/listing/create',
                 data: {
                     name: a.name,
                     description: a.description,
@@ -31,18 +31,18 @@ e.register("9UopL", (function(a, r) {
                     map: window._mapId
                 },
                 success: () => {
-                    f.default.success("Map updated!"), e.refetch(), r(null)
+                    j.default.success('Map updated!'), a.refetch(), r(null);
                 },
-                error: e => {
-                    (0, s.throwMessageError)({
-                        e: e,
+                error: a => {
+                    (0, i.throwMessageError)({
+                        e: a,
                         default: {
-                            title: "Error updating map",
-                            content: "Please try again."
+                            title: 'Error updating map',
+                            content: 'Please try again.'
                         }
-                    }), t(e)
+                    }), b(a);
                 }
-            })
-        }))
-    })
-}));
+            });
+        })
+    });
+});

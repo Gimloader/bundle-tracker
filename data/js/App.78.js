@@ -1,408 +1,467 @@
-function e(e, t, n, a) {
-    Object.defineProperty(e, t, {
-        get: n,
-        set: a,
+function a(a, b, u, v) {
+    Object.defineProperty(a, b, {
+        get: u,
+        set: v,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("iOAmC", (function(n, a) {
-    var r;
-    r = n.exports, Object.defineProperty(r, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('SAb81', function(u, v) {
+    var c;
+    c = u.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(n.exports, "default", (function() {
-        return h
-    }));
-    var o = t("hxEiv"),
-        u = t("fywoC"),
-        i = t("3uz2P"),
-        c = t("iMOcM"),
-        d = t("2FDaO"),
-        s = t("4ifJF"),
-        l = t("lKmIF"),
-        g = t("9Mv96"),
-        b = t("fC6cp"),
-        x = t("fBuQJ"),
-        f = t("BLWbP"),
-        p = t("69SUA"),
-        k = t("3EK5n");
-    let m;
-    var h = () => {
+    }), a(u.exports, 'default', function() {
+        return r;
+    });
+    var d = b('8kSQZ'),
+        e = b('uPP4W'),
+        f = b('0R8EW'),
+        g = b('PjB0f'),
+        h = b('h99Nu'),
+        i = b('YimJ0'),
+        j = b('lmfrI'),
+        k = b('fgVTE0'),
+        l = b('ExtIT'),
+        m = b('cR5QE'),
+        n = b('jf6jE'),
+        o = b('gSUVO'),
+        p = b('5F55/');
+    let q;
+    var r = () => {
         const {
-            id: e
-        } = (0, i.useParams)(), [t, n] = u.useState(""), [a, r, d] = (0, c.useBoolean)(!1), [s, m] = u.useState("");
-        u.useEffect((() => {
-            r(), m(""), (0, c.request)({
-                url: "/api/matchmaker/intent/map/play/publish-link/create",
+            id: s
+        } = (0, f.useParams)(), [t, u] = e.useState(''), [v, w, x] = (0, g.useBoolean)(!1), [y, z] = e.useState('');
+        e.useEffect(() => {
+            w(), z(''), (0, g.request)({
+                url: '/api/matchmaker/intent/map/play/publish-link/create',
                 data: {
-                    id: e
+                    id: s
                 },
-                success: e => {
-                    n(e)
+                success: s => {
+                    u(s);
                 },
-                error: e => {
-                    var t;
-                    (null == e || null === (t = e.message) || void 0 === t ? void 0 : t.text) ? m(e.message.text): m("There was an error. Please try again.")
+                error: s => {
+                    var A;
+                    (null == s || null === (A = s.message) || void 0 === A ? void 0 : A.text) ? z(s.message.text): z('There was an error. Please try again.');
                 },
-                both: d
-            })
-        }), [e]);
-        return (0, o.jsxs)(o.Fragment, {
-            children: [(0, o.jsx)(c.Title, {
-                title: "Gimkit Creative Map"
-            }), (() => {
-                if (t) return (0, o.jsx)(k.default, {
-                    createDetails: {
-                        intentId: t
-                    }
-                });
-                return (0, o.jsx)(v, {
-                    children: a ? (0, o.jsx)(g.default, {
-                        style: {
-                            color: l.default.White
-                        },
-                        size: 42
-                    }) : s ? (0, o.jsx)(x.default, {
-                        open: !0,
-                        closable: !1,
-                        footer: null,
-                        width: 700,
-                        centered: !0,
-                        bodyStyle: {
-                            padding: 40
-                        },
-                        children: (0, o.jsxs)("div", {
-                            className: "maxAll flex-column flex-center",
+                both: x
+            });
+        }, [s]);
+        return (0, d.jsxs)(d.Fragment, {
+            children: [
+                (0, d.jsx)(g.Title, {
+                    title: 'Gimkit Creative Map'
+                }),
+                (() => {
+                    if (t)
+                        return (0, d.jsx)(p.default, {
+                            createDetails: {
+                                intentId: t
+                            }
+                        });
+                    return (0, d.jsx)(s, {
+                        children: v ? (0, d.jsx)(k.default, {
                             style: {
-                                color: l.default.Black,
-                                textAlign: "center",
-                                font: p.Fonts.SFPro
+                                color: j.default.White
                             },
-                            children: [(0, o.jsx)(f.default, {
+                            size: 42
+                        }) : y ? (0, d.jsx)(m.default, {
+                            open: !0,
+                            closable: !1,
+                            footer: null,
+                            width: 700,
+                            centered: !0,
+                            bodyStyle: {
+                                padding: 40
+                            },
+                            children: (0, d.jsxs)('div', {
+                                className: 'maxAll flex-column flex-center',
                                 style: {
-                                    color: "darkorange",
-                                    fontSize: 51
-                                }
-                            }), " ", (0, o.jsx)(b.default, {}), (0, o.jsx)("div", {
-                                style: {
-                                    textAlign: "center",
-                                    fontSize: 23,
-                                    fontWeight: "bold"
+                                    color: j.default.Black,
+                                    textAlign: 'center',
+                                    font: o.Fonts.SFPro
                                 },
-                                children: s
-                            })]
-                        })
-                    }) : null
-                })
-            })()]
-        })
+                                children: [
+                                    (0, d.jsx)(n.default, {
+                                        style: {
+                                            color: 'darkorange',
+                                            fontSize: 51
+                                        }
+                                    }),
+                                    ' ',
+                                    (0, d.jsx)(l.default, {}),
+                                    (0, d.jsx)('div', {
+                                        style: {
+                                            textAlign: 'center',
+                                            fontSize: 23,
+                                            fontWeight: 'bold'
+                                        },
+                                        children: y
+                                    })
+                                ]
+                            })
+                        }) : null
+                    });
+                })()
+            ]
+        });
     };
-    const v = (0, d.default)(s.Centered)(m || (m = (e => e)`
+    const s = (0, h.default)(i.Centered)(q || (q = (a => a)`
   flex: 1;
   padding: 20px;
-  background: ${0};
-`), l.default.BackgroundPurple)
-})), t.register("BLWbP", (function(n, a) {
-    e(n.exports, "default", (function() {
-        return d
-    }));
-    var r = t("dnh3u"),
-        o = t("fywoC"),
-        u = t("28FNC"),
-        i = t("dwKuN"),
-        c = function(e, t) {
-            return o.createElement(i.default, (0, r.default)((0, r.default)({}, e), {}, {
-                ref: t,
-                icon: u.default
-            }))
+  background: ${ 0 };
+`), j.default.BackgroundPurple);
+}), b.register('jf6jE', function(n, c) {
+    a(n.exports, 'default', function() {
+        return h;
+    });
+    var c = b('uhRWM'),
+        d = b('uPP4W'),
+        e = b('TM8xK'),
+        f = b('tEXgG'),
+        g = function(a, b) {
+            return d.createElement(f.default, (0, c.default)((0, c.default)({}, a), {}, {
+                ref: b,
+                icon: e.default
+            }));
         };
-    c.displayName = "WarningOutlined";
-    var d = o.forwardRef(c)
-})), t.register("28FNC", (function(t, n) {
-    e(t.exports, "default", (function() {
-        return a
-    }));
-    var a = {
+    g.displayName = 'WarningOutlined';
+    var h = d.forwardRef(g);
+}), b.register('TM8xK', function(b, n) {
+    a(b.exports, 'default', function() {
+        return c;
+    });
+    var c = {
         icon: {
-            tag: "svg",
+            tag: 'svg',
             attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
+                viewBox: '64 64 896 896',
+                focusable: 'false'
             },
             children: [{
-                tag: "path",
+                tag: 'path',
                 attrs: {
-                    d: "M464 720a48 48 0 1096 0 48 48 0 10-96 0zm16-304v184c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V416c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8zm475.7 440l-416-720c-6.2-10.7-16.9-16-27.7-16s-21.6 5.3-27.7 16l-416 720C56 877.4 71.4 904 96 904h832c24.6 0 40-26.6 27.7-48zm-783.5-27.9L512 239.9l339.8 588.2H172.2z"
+                    d: 'M464 720a48 48 0 1096 0 48 48 0 10-96 0zm16-304v184c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V416c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8zm475.7 440l-416-720c-6.2-10.7-16.9-16-27.7-16s-21.6 5.3-27.7 16l-416 720C56 877.4 71.4 904 96 904h832c24.6 0 40-26.6 27.7-48zm-783.5-27.9L512 239.9l339.8 588.2H172.2z'
                 }
             }]
         },
-        name: "warning",
-        theme: "outlined"
-    }
-})), t.register("j2XHK", (function(t, n) {
-    let a;
-    var r;
-    let o;
-    var u;
-    let i;
-    var c;
-    let d;
-    let s;
-    var l;
-    e(t.exports, "QuestionType", (function() {
-        return a
-    })), e(t.exports, "Privacy", (function() {
-        return o
-    })), e(t.exports, "GameStatus", (function() {
-        return i
-    })), e(t.exports, "GameType", (function() {
-        return d
-    })), e(t.exports, "GameGoal", (function() {
-        return s
-    })), e(t.exports, "themes", (function() {
-        return p
-    })), e(t.exports, "ExperienceSource", (function() {
-        return k
-    })), (r = a || (a = {})).multipleChoice = "mc", r.textInput = "text", (u = o || (o = {})).public = "public", u.private = "private", (c = i || (i = {})).setup = "setup", c.join = "join", c.teams = "teams", c.gameplay = "gameplay", c.results = "results", (d || (d = {})).live = "live", (l = s || (s = {})).time = "time", l.race = "race", l.allIn = "allIn";
-    const g = "#ffffff",
-        b = "#000000";
-    let x;
+        name: 'warning',
+        theme: 'outlined'
+    };
+}), b.register('PDLD/2', function(b, n) {
+    let c;
+    var d;
+    let e;
     var f;
-    (f = x || (x = {})).easy = "easy", f.medium = "medium", f.hard = "hard", f.veryHard = "veryHard", f.veryVeryHard = "veryVeryHard";
+    let g;
+    var h;
+    let i;
+    let j;
+    var k;
+    a(b.exports, 'QuestionType', function() {
+        return c;
+    }), a(b.exports, 'Privacy', function() {
+        return e;
+    }), a(b.exports, 'GameStatus', function() {
+        return g;
+    }), a(b.exports, 'GameType', function() {
+        return i;
+    }), a(b.exports, 'GameGoal', function() {
+        return j;
+    }), a(b.exports, 'themes', function() {
+        return p;
+    }), a(b.exports, 'ExperienceSource', function() {
+        return q;
+    }), (d = c || (c = {})).multipleChoice = 'mc', d.textInput = 'text', (f = e || (e = {})).public = 'public', f.private = 'private', (h = g || (g = {})).setup = 'setup', h.join = 'join', h.teams = 'teams', h.gameplay = 'gameplay', h.results = 'results', (i || (i = {})).live = 'live', (k = j || (j = {})).time = 'time', k.race = 'race', k.allIn = 'allIn';
+    const l = '#ffffff',
+        m = '#000000';
+    let n;
+    var o;
+    (o = n || (n = {})).easy = 'easy', o.medium = 'medium', o.hard = 'hard', o.veryHard = 'veryHard', o.veryVeryHard = 'veryVeryHard';
     const p = [{
-        cost: 0,
-        name: "Default",
-        description: "Works fine, that's all",
-        question: {
-            background: "#303f9f",
-            text: g
+            cost: 0,
+            name: 'Default',
+            description: 'Works fine, that\'s all',
+            question: {
+                background: '#303f9f',
+                text: l
+            },
+            palette: [{
+                    background: '#771322',
+                    text: l
+                },
+                {
+                    background: '#A85C15',
+                    text: l
+                },
+                {
+                    background: '#0D6B33',
+                    text: l
+                },
+                {
+                    background: '#076296',
+                    text: l
+                }
+            ],
+            owned: !0,
+            isActive: !0
         },
-        palette: [{
-            background: "#771322",
-            text: g
-        }, {
-            background: "#A85C15",
-            text: g
-        }, {
-            background: "#0D6B33",
-            text: g
-        }, {
-            background: "#076296",
-            text: g
-        }],
-        owned: !0,
-        isActive: !0
-    }, {
-        cost: 5,
-        name: "Thanksgiving",
-        description: "The perfect theme to show your thanks",
-        question: {
-            background: "#6C2F00",
-            text: g
+        {
+            cost: 5,
+            name: 'Thanksgiving',
+            description: 'The perfect theme to show your thanks',
+            question: {
+                background: '#6C2F00',
+                text: l
+            },
+            palette: [{
+                    background: '#9E682A',
+                    text: l
+                },
+                {
+                    background: '#B54730',
+                    text: l
+                },
+                {
+                    background: '#8A9748',
+                    text: l
+                },
+                {
+                    background: '#F1B930',
+                    text: l
+                }
+            ],
+            owned: !1,
+            isActive: !1
         },
-        palette: [{
-            background: "#9E682A",
-            text: g
-        }, {
-            background: "#B54730",
-            text: g
-        }, {
-            background: "#8A9748",
-            text: g
-        }, {
-            background: "#F1B930",
-            text: g
-        }],
-        owned: !1,
-        isActive: !1
-    }, {
-        cost: 10,
-        name: "Night",
-        description: "A little easier on the eyes",
-        question: {
-            background: "#000a12",
-            text: g
+        {
+            cost: 10,
+            name: 'Night',
+            description: 'A little easier on the eyes',
+            question: {
+                background: '#000a12',
+                text: l
+            },
+            palette: [{
+                    background: '#263238',
+                    text: l
+                },
+                {
+                    background: '#37474f',
+                    text: l
+                },
+                {
+                    background: '#455a64',
+                    text: l
+                },
+                {
+                    background: '#546e7a',
+                    text: l
+                }
+            ],
+            owned: !1,
+            isActive: !1
         },
-        palette: [{
-            background: "#263238",
-            text: g
-        }, {
-            background: "#37474f",
-            text: g
-        }, {
-            background: "#455a64",
-            text: g
-        }, {
-            background: "#546e7a",
-            text: g
-        }],
-        owned: !1,
-        isActive: !1
-    }, {
-        cost: 5e5,
-        name: "Thanos",
-        description: "Perfectly balanced, as all things should be",
-        question: {
-            background: "#0D0019",
-            text: g
+        {
+            cost: 500000,
+            name: 'Thanos',
+            description: 'Perfectly balanced, as all things should be',
+            question: {
+                background: '#0D0019',
+                text: l
+            },
+            palette: [{
+                    background: '#220044',
+                    text: l
+                },
+                {
+                    background: '#330066',
+                    text: l
+                },
+                {
+                    background: '#3E007C',
+                    text: l
+                },
+                {
+                    background: '#4F1787',
+                    text: l
+                }
+            ],
+            owned: !1,
+            isActive: !1
         },
-        palette: [{
-            background: "#220044",
-            text: g
-        }, {
-            background: "#330066",
-            text: g
-        }, {
-            background: "#3E007C",
-            text: g
-        }, {
-            background: "#4F1787",
-            text: g
-        }],
-        owned: !1,
-        isActive: !1
-    }, {
-        cost: 2e3,
-        name: "Ocean",
-        description: "Under the sea...",
-        question: {
-            background: "#000063",
-            text: g
+        {
+            cost: 2000,
+            name: 'Ocean',
+            description: 'Under the sea...',
+            question: {
+                background: '#000063',
+                text: l
+            },
+            palette: [{
+                    background: '#283593',
+                    text: l
+                },
+                {
+                    background: '#076296',
+                    text: l
+                },
+                {
+                    background: '#0277bd',
+                    text: l
+                },
+                {
+                    background: '#1565c0',
+                    text: l
+                }
+            ],
+            owned: !1,
+            isActive: !1
         },
-        palette: [{
-            background: "#283593",
-            text: g
-        }, {
-            background: "#076296",
-            text: g
-        }, {
-            background: "#0277bd",
-            text: g
-        }, {
-            background: "#1565c0",
-            text: g
-        }],
-        owned: !1,
-        isActive: !1
-    }, {
-        cost: 1e5,
-        name: "Forest",
-        description: "A walk through the woods",
-        question: {
-            background: "#4c3d33",
-            text: g
+        {
+            cost: 100000,
+            name: 'Forest',
+            description: 'A walk through the woods',
+            question: {
+                background: '#4c3d33',
+                text: l
+            },
+            palette: [{
+                    background: '#385645',
+                    text: l
+                },
+                {
+                    background: '#425C49',
+                    text: l
+                },
+                {
+                    background: '#415641',
+                    text: l
+                },
+                {
+                    background: '#4C6349',
+                    text: l
+                }
+            ],
+            owned: !1,
+            isActive: !1
         },
-        palette: [{
-            background: "#385645",
-            text: g
-        }, {
-            background: "#425C49",
-            text: g
-        }, {
-            background: "#415641",
-            text: g
-        }, {
-            background: "#4C6349",
-            text: g
-        }],
-        owned: !1,
-        isActive: !1
-    }, {
-        cost: 1250,
-        name: "Sunset",
-        description: "Take a breather",
-        question: {
-            background: "#7F7496",
-            text: g
+        {
+            cost: 1250,
+            name: 'Sunset',
+            description: 'Take a breather',
+            question: {
+                background: '#7F7496',
+                text: l
+            },
+            palette: [{
+                    background: '#F46F5A',
+                    text: l
+                },
+                {
+                    background: '#ED712D',
+                    text: l
+                },
+                {
+                    background: '#7A596A',
+                    text: l
+                },
+                {
+                    background: '#E8AB3C',
+                    text: l
+                }
+            ],
+            owned: !1,
+            isActive: !1
         },
-        palette: [{
-            background: "#F46F5A",
-            text: g
-        }, {
-            background: "#ED712D",
-            text: g
-        }, {
-            background: "#7A596A",
-            text: g
-        }, {
-            background: "#E8AB3C",
-            text: g
-        }],
-        owned: !1,
-        isActive: !1
-    }, {
-        cost: 750,
-        name: "Pastel",
-        description: "Lighten the mood",
-        question: {
-            background: "#FFbfd1",
-            text: "#434343"
+        {
+            cost: 750,
+            name: 'Pastel',
+            description: 'Lighten the mood',
+            question: {
+                background: '#FFbfd1',
+                text: '#434343'
+            },
+            palette: [{
+                    background: '#FFA69E',
+                    text: '#5b5b5b'
+                },
+                {
+                    background: '#FCF6BF',
+                    text: '#5b5b5b'
+                },
+                {
+                    background: '#D0F4DE',
+                    text: '#5b5b5b'
+                },
+                {
+                    background: '#93E1D8',
+                    text: '#5b5b5b'
+                }
+            ],
+            owned: !1,
+            isActive: !1
         },
-        palette: [{
-            background: "#FFA69E",
-            text: "#5b5b5b"
-        }, {
-            background: "#FCF6BF",
-            text: "#5b5b5b"
-        }, {
-            background: "#D0F4DE",
-            text: "#5b5b5b"
-        }, {
-            background: "#93E1D8",
-            text: "#5b5b5b"
-        }],
-        owned: !1,
-        isActive: !1
-    }, {
-        cost: 500,
-        name: "Retro",
-        description: "Old school...",
-        question: {
-            background: "#9C0022",
-            text: g
+        {
+            cost: 500,
+            name: 'Retro',
+            description: 'Old school...',
+            question: {
+                background: '#9C0022',
+                text: l
+            },
+            palette: [{
+                    background: '#001D3B',
+                    text: l
+                },
+                {
+                    background: '#FFAE52',
+                    text: l
+                },
+                {
+                    background: '#FE5963',
+                    text: l
+                },
+                {
+                    background: '#A71C94',
+                    text: l
+                }
+            ],
+            owned: !1,
+            isActive: !1
         },
-        palette: [{
-            background: "#001D3B",
-            text: g
-        }, {
-            background: "#FFAE52",
-            text: g
-        }, {
-            background: "#FE5963",
-            text: g
-        }, {
-            background: "#A71C94",
-            text: g
-        }],
-        owned: !1,
-        isActive: !1
-    }, {
-        cost: 1e8,
-        name: "Pure Gold",
-        description: "Now you're just showing off",
-        question: {
-            background: b,
-            text: "#FFCD2B"
-        },
-        palette: [{
-            background: "#FFCD2B",
-            text: b
-        }, {
-            background: "#FFC721",
-            text: b
-        }, {
-            background: "#FFD147",
-            text: b
-        }, {
-            background: "#FFCD38",
-            text: b
-        }],
-        owned: !1,
-        isActive: !1
-    }];
-    let k;
-    var m;
-    (m = k || (k = {})).original = "original", m.map = "map"
-}));
+        {
+            cost: 100000000,
+            name: 'Pure Gold',
+            description: 'Now you\'re just showing off',
+            question: {
+                background: m,
+                text: '#FFCD2B'
+            },
+            palette: [{
+                    background: '#FFCD2B',
+                    text: m
+                },
+                {
+                    background: '#FFC721',
+                    text: m
+                },
+                {
+                    background: '#FFD147',
+                    text: m
+                },
+                {
+                    background: '#FFCD38',
+                    text: m
+                }
+            ],
+            owned: !1,
+            isActive: !1
+        }
+    ];
+    let q;
+    var r;
+    (r = q || (q = {})).original = 'original', r.map = 'map';
+});

@@ -1,169 +1,173 @@
-function e(e, t, i, a) {
-    Object.defineProperty(e, t, {
+function a(a, b, i, c) {
+    Object.defineProperty(a, b, {
         get: i,
-        set: a,
+        set: c,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("aeUAR", (function(i, a) {
-    var s;
-    s = i.exports, Object.defineProperty(s, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('mUo5m', function(i, c) {
+    var c;
+    c = i.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(i.exports, "default", (function() {
-        return j
-    }));
-    var n = t("divCp"),
-        r = t("bNmF9"),
-        d = t("84BbZ"),
-        h = t("aq3j0"),
-        o = t("6Tpu2"),
-        u = t("7osw7"),
-        m = t("1UlqS"),
-        l = t("fhnJp"),
-        p = t("4BRdw"),
-        c = t("2jbNQ"),
-        f = t("9oxA4"),
-        v = t("4uojN"),
-        g = t("jVQO4"),
-        y = t("alREA"),
-        w = t("cmvpZ"),
-        b = t("3iPiZ");
-    class A extends r.default {
-        destroy(e) {
-            super.destroy(e), this.timeout && clearTimeout(this.timeout)
+    }), a(i.exports, 'default', function() {
+        return u;
+    });
+    var d = b('UM8oI'),
+        e = b('sgILU'),
+        f = b('U5h8O'),
+        g = b('ft+PY'),
+        h = b('5Ux1a'),
+        i = b('S4uUc'),
+        j = b('EdRoV'),
+        k = b('PUlKf'),
+        l = b('TYrMV'),
+        m = b('+5NyR'),
+        n = b('VkIHd0'),
+        o = b('Bpt+p'),
+        p = b('OlpXx'),
+        q = b('JJQ0+'),
+        r = b('4/f+U'),
+        s = b('Ena4B');
+    class t extends e.default {
+        destroy(a) {
+            super.destroy(a), this.timeout && clearTimeout(this.timeout);
         }
-        constructor(e) {
-            super(e), (0, n.default)(this, "isDisabled", !1), (0, n.default)(this, "isAnimationReady", !1), (0, n.default)(this, "size", {
+        constructor(a) {
+            super(a), (0, d.default)(this, 'isDisabled', !1), (0, d.default)(this, 'isAnimationReady', !1), (0, d.default)(this, 'size', {
                 width: 0,
                 height: 0
-            }), (0, n.default)(this, "grantJumps", (() => {
-                const e = (0, m.default)((0, l.default)());
-                e && ((0, g.playSound)({
-                    path: (0, y.default)(`devices/jump_granter/collect${(0,w.random)(1,3)}.mp3`),
-                    volume: (0, b.getVolume)({
-                        volume: .8,
-                        type: b.SoundType.soundEffect
+            }), (0, d.default)(this, 'grantJumps', () => {
+                const u = (0, j.default)((0, k.default)());
+                u && ((0, p.playSound)({
+                    path: (0, q.default)(`devices/jump_granter/collect${ (0, r.random)(1, 3) }.mp3`),
+                    volume: (0, s.getVolume)({
+                        volume: 0.8,
+                        type: s.SoundType.soundEffect
                     })
-                }), this.options.mode === h.JumpGranterMode.reset ? (e.physics.state.jump.jumpCounter = 0, e.physics.state.jump.jumpsLeft = (0, p.ClassDesignerUtils_GetJumpParams)({
-                    characterId: e.id
-                }).maxJumps) : this.options.mode === h.JumpGranterMode.grant && (e.physics.state.jump.jumpsLeft += this.options.jumpsNumber))
-            })), (0, n.default)(this, "isSensorActive", (() => !this.isDisabled && !this.state.disabled && this.state.active)), (0, n.default)(this, "animateAlpha", (() => {
-                var e;
-                const t = this.state.active ? 1 : 0;
-                (null === (e = this.anim) || void 0 === e ? void 0 : e.view) && this.tweens.add({
+                }), this.options.mode === g.JumpGranterMode.reset ? (u.physics.state.jump.jumpCounter = 0, u.physics.state.jump.jumpsLeft = (0, l.ClassDesignerUtils_GetJumpParams)({
+                    characterId: u.id
+                }).maxJumps) : this.options.mode === g.JumpGranterMode.grant && (u.physics.state.jump.jumpsLeft += this.options.jumpsNumber));
+            }), (0, d.default)(this, 'isSensorActive', () => !this.isDisabled && !this.state.disabled && this.state.active), (0, d.default)(this, 'animateAlpha', () => {
+                var u;
+                const v = this.state.active ? 1 : 0;
+                (null === (u = this.anim) || void 0 === u ? void 0 : u.view) && this.tweens.add({
                     targets: [this.anim.view],
-                    alpha: t,
+                    alpha: v,
                     duration: 250
-                })
-            })), (0, n.default)(this, "onStateChange", (e => {
-                "disabled" === e && (!this.isDisabled && this.state.disabled && this.isAnimationReady ? this.anim.view.play(d.AnimNames.activate) : this.isDisabled || this.state.disabled || !this.isAnimationReady || this.startIdleAnimation()), "active" === e && this.animateAlpha()
-            })), (0, n.default)(this, "startIdleAnimation", (() => {
-                this.anim.view.play(d.AnimNames.idle), this.anim.view.setScale(0), this.tweens.add({
+                });
+            }), (0, d.default)(this, 'onStateChange', a => {
+                'disabled' === a && (!this.isDisabled && this.state.disabled && this.isAnimationReady ? this.anim.view.play(f.AnimNames.activate) : this.isDisabled || this.state.disabled || !this.isAnimationReady || this.startIdleAnimation()), 'active' === a && this.animateAlpha();
+            }), (0, d.default)(this, 'startIdleAnimation', () => {
+                this.anim.view.play(f.AnimNames.idle), this.anim.view.setScale(0), this.tweens.add({
                     targets: this.anim.view,
                     displayWidth: this.size.width,
                     displayHeight: this.size.height,
                     duration: 350,
                     ease: Phaser.Math.Easing.Back.Out
-                })
-            })), this.anim = this.parts.add.animatedSprite({
-                ...d.SpriteAnimAsset,
-                onReady: e => {
+                });
+            }), this.anim = this.parts.add.animatedSprite({
+                ...f.SpriteAnimAsset,
+                onReady: a => {
                     this.size = {
-                        ...(0, f.default)({
-                            height: e.view.height,
-                            width: e.view.width,
-                            newWidth: c.JumpGranterDeviceSize.width
+                        ...(0, n.default)({
+                            height: a.view.height,
+                            width: a.view.width,
+                            newWidth: m.JumpGranterDeviceSize.width
                         })
-                    }, e.view.displayWidth = this.size.width, e.view.displayHeight = this.size.height, this.tweens.add({
-                        targets: e.view,
-                        y: e.view.y - 15,
+                    }, a.view.displayWidth = this.size.width, a.view.displayHeight = this.size.height, this.tweens.add({
+                        targets: a.view,
+                        y: a.view.y - 15,
                         duration: 1500,
                         yoyo: !0,
                         repeat: -1,
                         ease: Phaser.Math.Easing.Sine.InOut
-                    }), this.isAnimationReady = !0, !this.state.active && (0, o.InGamePhase)() && (e.view.alpha = 0), (this.isDisabled || this.state.disabled) && e.view.play(d.AnimNames.inactive)
+                    }), this.isAnimationReady = !0, !this.state.active && (0, h.InGamePhase)() && (a.view.alpha = 0), (this.isDisabled || this.state.disabled) && a.view.play(f.AnimNames.inactive);
                 }
-            }), (0, v.isSavedVersion)() && (0, o.InPreGamePhase)() || this.sensors.add.circle({
-                r: c.JumpGranterDeviceSize.radius,
-                type: u.SensorType.around,
+            }), (0, o.isSavedVersion)() && (0, h.InPreGamePhase)() || this.sensors.add.circle({
+                r: m.JumpGranterDeviceSize.radius,
+                type: i.SensorType.around,
                 onFresh: () => {
-                    if (!this.isSensorActive()) return;
-                    const e = (0, m.default)((0, l.default)());
-                    e && (e.physics.state.grounded || (this.grantJumps(), this.isDisabled = !0, this.isAnimationReady && this.anim.view.play(d.AnimNames.activate), this.timeout = setTimeout((() => {
-                        this.isDestroyed || (this.isDisabled = !1, !this.state.disabled && this.isAnimationReady && this.startIdleAnimation())
-                    }), 1e3 * this.options.disabledTime)))
+                    if (!this.isSensorActive())
+                        return;
+                    const u = (0, j.default)((0, k.default)());
+                    u && (u.physics.state.grounded || (this.grantJumps(), this.isDisabled = !0, this.isAnimationReady && this.anim.view.play(f.AnimNames.activate), this.timeout = setTimeout(() => {
+                        this.isDestroyed || (this.isDisabled = !1, !this.state.disabled && this.isAnimationReady && this.startIdleAnimation());
+                    }, 1000 * this.options.disabledTime)));
                 }
-            })
+            });
         }
     }
-    var j = A
-})), t.register("84BbZ", (function(i, a) {
-    e(i.exports, "AnimNames", (function() {
-        return n
-    })), e(i.exports, "SpriteAnimAsset", (function() {
-        return d
-    }));
-    var s = t("alREA");
-    let n;
-    var r;
-    (r = n || (n = {})).idle = "idle", r.activate = "activate", r.inactive = "inactive";
-    const d = {
-        spritesheetId: (0, s.default)("devices/jump_granter/animation.png"),
-        spritesheetUrl: (0, s.default)("devices/jump_granter/animation.png"),
+    var u = v;
+}), b.register('U5h8O', function(i, c) {
+    a(i.exports, 'AnimNames', function() {
+        return d;
+    }), a(i.exports, 'SpriteAnimAsset', function() {
+        return f;
+    });
+    var c = b('JJQ0+');
+    let d;
+    var e;
+    (e = d || (d = {})).idle = 'idle', e.activate = 'activate', e.inactive = 'inactive';
+    const f = {
+        spritesheetId: (0, c.default)('devices/jump_granter/animation.png'),
+        spritesheetUrl: (0, c.default)('devices/jump_granter/animation.png'),
         frameWidth: 391,
         frameHeight: 373,
         animations: [{
-            animName: n.idle,
-            frameRate: 1,
-            repeat: -1,
-            animFrames: {
-                start: 0,
-                end: 0
+                animName: d.idle,
+                frameRate: 1,
+                repeat: -1,
+                animFrames: {
+                    start: 0,
+                    end: 0
+                }
+            },
+            {
+                animName: d.activate,
+                frameRate: 36,
+                repeat: 0,
+                animFrames: {
+                    start: 0,
+                    end: 7
+                }
+            },
+            {
+                animName: d.inactive,
+                frameRate: 1,
+                repeat: -1,
+                animFrames: {
+                    start: 7,
+                    end: 7
+                }
             }
-        }, {
-            animName: n.activate,
-            frameRate: 36,
-            repeat: 0,
-            animFrames: {
-                start: 0,
-                end: 7
-            }
-        }, {
-            animName: n.inactive,
-            frameRate: 1,
-            repeat: -1,
-            animFrames: {
-                start: 7,
-                end: 7
-            }
-        }]
-    }
-})), t.register("aq3j0", (function(t, i) {
-    let a;
-    var s;
-    e(t.exports, "JumpGranterMode", (function() {
-        return a
-    })), (s = a || (a = {})).reset = "reset", s.grant = "grant"
-})), t.register("2jbNQ", (function(i, a) {
-    e(i.exports, "JumpGranterDeviceSize", (function() {
-        return s
-    }));
-    const s = {
-        radius: (0, t("r04Cv").default)(125),
+        ]
+    };
+}), b.register('ft+PY', function(b, i) {
+    let c;
+    var d;
+    a(b.exports, 'JumpGranterMode', function() {
+        return c;
+    }), (d = c || (c = {})).reset = 'reset', d.grant = 'grant';
+}), b.register('+5NyR', function(i, c) {
+    a(i.exports, 'JumpGranterDeviceSize', function() {
+        return c;
+    });
+    const c = {
+        radius: (0, b('N50Eu').default)(125),
         width: 125
-    }
-})), t.register("9oxA4", (function(t, i) {
-    e(t.exports, "default", (function() {
-        return a
-    }));
-    var a = e => {
-        const t = e.newWidth / e.width;
+    };
+}), b.register('VkIHd0', function(b, i) {
+    a(b.exports, 'default', function() {
+        return c;
+    });
+    var c = a => {
+        const d = a.newWidth / a.width;
         return {
-            height: e.height * t,
-            width: e.width * t
-        }
-    }
-}));
+            height: a.height * d,
+            width: a.width * d
+        };
+    };
+});

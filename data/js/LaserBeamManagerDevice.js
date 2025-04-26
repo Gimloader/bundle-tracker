@@ -1,39 +1,39 @@
-var e = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-e.register("ffy06", (function(o, n) {
-    var a, r, l, t, i;
-    a = o.exports, Object.defineProperty(a, "__esModule", {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('pjQbd', function(o, n) {
+    var b, c, d, e, f;
+    b = o.exports, Object.defineProperty(b, '__esModule', {
         value: !0,
         configurable: !0
-    }), r = o.exports, l = "default", t = function() {
-        return p
-    }, Object.defineProperty(r, l, {
-        get: t,
-        set: i,
+    }), c = o.exports, d = 'default', e = function() {
+        return n;
+    }, Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
-    var f = e("alREA"),
-        d = e("4uojN"),
-        s = e("6Tpu2"),
-        u = e("bNmF9"),
-        b = e("dPNN3"),
-        c = e("h6SIm");
-    class g extends u.default {
-        constructor(e) {
-            if (super(e), (0, s.InPreGamePhase)() && (0, d.isSavedVersion)()) {
-                const e = c.default.Manager;
-                new(0, b.default)({
+    var g = a('JJQ0+'),
+        h = a('Bpt+p'),
+        i = a('5Ux1a'),
+        j = a('sgILU'),
+        k = a('phu0d'),
+        l = a('Gqspz');
+    class m extends j.default {
+        constructor(a) {
+            if (super(a), (0, i.InPreGamePhase)() && (0, h.isSavedVersion)()) {
+                const n = l.default.Manager;
+                new(0, k.default)({
                     device: this,
-                    baseColor: e.baseColor,
-                    boxColor: e.boxColor,
+                    baseColor: n.baseColor,
+                    boxColor: n.boxColor,
                     content: {
                         icon: {
-                            image: (0, f.default)("devices/laser_beam_manager/icon.png")
+                            image: (0, g.default)('devices/laser_beam_manager/icon.png')
                         }
                     }
-                })
+                });
             }
         }
     }
-    var p = g
-}));
+    var n = o;
+});

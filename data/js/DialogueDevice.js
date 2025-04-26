@@ -1,86 +1,86 @@
-function e(e, t, o, i) {
-    Object.defineProperty(e, t, {
-        get: o,
-        set: i,
+function a(a, b, g, j) {
+    Object.defineProperty(a, b, {
+        get: g,
+        set: j,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("8HCWJ", (function(o, i) {
-    var n;
-    n = o.exports, Object.defineProperty(n, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('msFhx', function(g, j) {
+    var c;
+    c = g.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(o.exports, "default", (function() {
-        return g
-    }));
-    var s = t("divCp"),
-        a = t("alREA"),
-        r = t("4uojN"),
-        l = t("6Tpu2"),
-        c = t("bNmF9"),
-        u = t("dPNN3"),
-        d = t("h6SIm"),
-        p = t("2QdpL");
-    class f extends c.default {
-        constructor(e) {
-            if (super(e), (0, s.default)(this, "openDeviceUI", (() => {
+    }), a(g.exports, 'default', function() {
+        return m;
+    });
+    var d = b('UM8oI'),
+        e = b('JJQ0+'),
+        f = b('Bpt+p'),
+        g = b('5Ux1a'),
+        h = b('sgILU'),
+        i = b('phu0d'),
+        j = b('Gqspz'),
+        k = b('xqa8+');
+    class l extends h.default {
+        constructor(a) {
+            if (super(a), (0, d.default)(this, 'openDeviceUI', () => {
                     this.deviceUI.open({
                         message: this.options.message,
-                        actions: (0, p.DialogueDevice_GetDialogueActions)(this),
-                        send: (e, t) => {
-                            this.sendToServerDevice(e, t)
+                        actions: (0, k.DialogueDevice_GetDialogueActions)(this),
+                        send: (a, b) => {
+                            this.sendToServerDevice(a, b);
                         },
                         font: this.options.font,
                         character: this.options.character,
                         typewriter: this.options.typewriter,
                         darkenBackground: this.options.darkenBackground
-                    })
-                })), (0, s.default)(this, "onDialogueActionChange", (() => {
+                    });
+                }), (0, d.default)(this, 'onDialogueActionChange', () => {
                     this.deviceUI.update({
-                        actions: (0, p.DialogueDevice_GetDialogueActions)(this)
-                    })
-                })), (0, l.InPreGamePhase)() && (0, r.isSavedVersion)()) {
-                const e = d.default.Overlay;
-                new(0, u.default)({
+                        actions: (0, k.DialogueDevice_GetDialogueActions)(this)
+                    });
+                }), (0, g.InPreGamePhase)() && (0, f.isSavedVersion)()) {
+                const m = j.default.Overlay;
+                new(0, i.default)({
                     device: this,
-                    baseColor: e.baseColor,
-                    boxColor: e.boxColor,
+                    baseColor: m.baseColor,
+                    boxColor: m.boxColor,
                     content: {
                         icon: {
-                            image: (0, a.default)("devices/dialogue/icon.png"),
-                            scale: .92
+                            image: (0, e.default)('devices/dialogue/icon.png'),
+                            scale: 0.92
                         }
                     }
-                })
+                });
             }
         }
     }
-    var g = f
-})), t.register("2QdpL", (function(o, i) {
-    e(o.exports, "DialogueDevice_GetDialogueActions", (function() {
-        return a
-    }));
-    var n = t("z5iun"),
-        s = t("gwuwo");
-    const a = e => {
-        const t = [],
+    var m = n;
+}), b.register('xqa8+', function(g, j) {
+    a(g.exports, 'DialogueDevice_GetDialogueActions', function() {
+        return e;
+    });
+    var c = b('7X8h3'),
+        d = b('dAmf5');
+    const e = a => {
+        const f = [],
             {
-                options: o
-            } = e;
-        for (let e = 1; e <= 4; e++) {
-            const i = o[`action${e}Text`];
-            i && t.push({
-                text: i,
-                index: e
-            })
+                options: g
+            } = h;
+        for (let i = 1; i <= 4; i++) {
+            const j = g[`action${ i }Text`];
+            j && f.push({
+                text: j,
+                index: i
+            });
         }
-        return (0, s.default)().worldManager.devices.allDevices.filter((e => e.deviceOption.id === n.default.dialogueAction)).filter((e => e.options.group === o.group || !e.options.group && !o.group)).filter((e => !!e.options.text.length)).filter((e => !0 === e.state.active)).sort(((e, t) => e.y - t.y)).forEach((e => {
-            t.push({
-                text: e.options.text,
-                action: e.id
-            })
-        })), t.slice(0, 10)
-    }
-}));
+        return (0, d.default)().worldManager.devices.allDevices.filter(i => i.deviceOption.id === c.default.dialogueAction).filter(i => i.options.group === g.group || !i.options.group && !g.group).filter(i => !!i.options.text.length).filter(i => !0 === i.state.active).sort((i, f) => i.y - f.y).forEach(i => {
+            f.push({
+                text: i.options.text,
+                action: i.id
+            });
+        }), f.slice(0, 10);
+    };
+});

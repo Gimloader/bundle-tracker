@@ -1,33 +1,33 @@
-function t(t, e, i, o) {
-    Object.defineProperty(t, e, {
+function a(a, b, i, c) {
+    Object.defineProperty(a, b, {
         get: i,
-        set: o,
+        set: c,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var e = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-e.register("8CEc3", (function(i, o) {
-    var s;
-    s = i.exports, Object.defineProperty(s, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('GGStz', function(i, c) {
+    var c;
+    c = i.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), t(i.exports, "default", (function() {
-        return p
-    }));
-    var a = e("divCp"),
-        u = e("iRjsB"),
-        d = e("alREA"),
-        n = e("4uojN"),
-        l = e("6Tpu2"),
-        r = e("bNmF9"),
-        c = e("dPNN3"),
-        f = e("h6SIm"),
-        h = e("78379");
-    class g extends r.default {
-        constructor(t) {
-            if (super(t), (0, a.default)(this, "addToGUIDevicesList", (() => {
-                    u.default.gui.guiSlots.some((t => t.id === this.id)) || (u.default.gui.guiSlots.push({
+    }), a(i.exports, 'default', function() {
+        return n;
+    });
+    var d = b('UM8oI'),
+        e = b('7Sbqr'),
+        f = b('JJQ0+'),
+        g = b('Bpt+p'),
+        h = b('5Ux1a'),
+        i = b('sgILU'),
+        j = b('phu0d'),
+        k = b('Gqspz'),
+        l = b('ODdE7');
+    class m extends i.default {
+        constructor(a) {
+            if (super(a), (0, d.default)(this, 'addToGUIDevicesList', () => {
+                    e.default.gui.guiSlots.some(a => a.id === this.id) || (e.default.gui.guiSlots.push({
                         id: this.id,
                         position: this.options.position,
                         text: this.state.text || this.options.text,
@@ -36,41 +36,41 @@ e.register("8CEc3", (function(i, o) {
                         type: this.options.type,
                         priority: this.state.activationTime,
                         color: this.options.color
-                    }), u.default.gui.guiSlots.replace(u.default.gui.guiSlots.slice().sort(((t, e) => e.priority - t.priority))), u.default.gui.guiSlotsChangeCounter += 1)
-                })), (0, a.default)(this, "removeFromGUIDevicesList", (() => {
-                    u.default.gui.guiSlots.replace(u.default.gui.guiSlots.filter((t => t.id !== this.id))), u.default.gui.guiSlotsChangeCounter += 1
-                })), (0, a.default)(this, "onTextUpdated", (() => {
-                    const t = u.default.gui.guiSlots.find((t => t.id === this.id));
-                    t && (t.text = this.state.text || this.options.text, u.default.gui.guiSlotsChangeCounter += 1)
-                })), (0, a.default)(this, "onStateChange", (t => {
-                    "activationTime" === t && (this.state.activationTime ? this.addToGUIDevicesList() : this.removeFromGUIDevicesList()), "text" === t && this.onTextUpdated()
-                })), (0, a.default)(this, "onDestroy", (() => {
-                    this.removeFromGUIDevicesList()
-                })), (0, a.default)(this, "buttonClicked", (() => {
-                    this.sendToServerDevice(h.Messages.clicked)
-                })), (0, l.InPreGamePhase)() && (0, n.isSavedVersion)()) {
-                const t = f.default.Overlay;
-                new(0, c.default)({
+                    }), e.default.gui.guiSlots.replace(e.default.gui.guiSlots.slice().sort((a, b) => b.priority - a.priority)), e.default.gui.guiSlotsChangeCounter += 1);
+                }), (0, d.default)(this, 'removeFromGUIDevicesList', () => {
+                    e.default.gui.guiSlots.replace(e.default.gui.guiSlots.filter(a => a.id !== this.id)), e.default.gui.guiSlotsChangeCounter += 1;
+                }), (0, d.default)(this, 'onTextUpdated', () => {
+                    const n = e.default.gui.guiSlots.find(n => n.id === this.id);
+                    n && (n.text = this.state.text || this.options.text, e.default.gui.guiSlotsChangeCounter += 1);
+                }), (0, d.default)(this, 'onStateChange', a => {
+                    'activationTime' === a && (this.state.activationTime ? this.addToGUIDevicesList() : this.removeFromGUIDevicesList()), 'text' === a && this.onTextUpdated();
+                }), (0, d.default)(this, 'onDestroy', () => {
+                    this.removeFromGUIDevicesList();
+                }), (0, d.default)(this, 'buttonClicked', () => {
+                    this.sendToServerDevice(l.Messages.clicked);
+                }), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) {
+                const n = k.default.Overlay;
+                new(0, j.default)({
                     device: this,
-                    baseColor: t.baseColor,
-                    boxColor: t.boxColor,
+                    baseColor: n.baseColor,
+                    boxColor: n.boxColor,
                     content: {
                         icon: {
-                            image: (0, d.default)("devices/gui/icon.png"),
-                            scale: .9
+                            image: (0, f.default)('devices/gui/icon.png'),
+                            scale: 0.9
                         }
                     }
-                })
+                });
             }
-            this.state.activationTime && this.addToGUIDevicesList()
+            this.state.activationTime && this.addToGUIDevicesList();
         }
     }
-    var p = g
-})), e.register("78379", (function(e, i) {
-    t(e.exports, "Messages", (function() {
-        return o
-    }));
-    const o = {
-        clicked: "clicked"
-    }
-}));
+    var n = o;
+}), b.register('ODdE7', function(b, i) {
+    a(b.exports, 'Messages', function() {
+        return c;
+    });
+    const c = {
+        clicked: 'clicked'
+    };
+});

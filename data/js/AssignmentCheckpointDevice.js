@@ -1,36 +1,36 @@
-function e(e, n, t, s) {
-    Object.defineProperty(e, n, {
+function a(a, b, t, s) {
+    Object.defineProperty(a, b, {
         get: t,
         set: s,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var n = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-n.register("e2zPP", (function(t, s) {
-    var i;
-    i = t.exports, Object.defineProperty(i, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('PcjxR', function(t, s) {
+    var c;
+    c = t.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(t.exports, "default", (function() {
-        return d
-    }));
-    var r = n("4uojN"),
-        a = n("6Tpu2"),
-        o = n("bNmF9"),
-        l = n("ir3dU");
-    class u extends o.default {
-        constructor(e) {
-            super(e), (0, r.isPublishedVersion)() || (0, a.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(l.BaseAsset))
+    }), a(t.exports, 'default', function() {
+        return i;
+    });
+    var d = b('Bpt+p'),
+        e = b('5Ux1a'),
+        f = b('sgILU'),
+        g = b('yRyNh');
+    class h extends f.default {
+        constructor(a) {
+            super(a), (0, d.isPublishedVersion)() || (0, e.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(g.BaseAsset));
         }
     }
-    var d = u
-})), n.register("ir3dU", (function(t, s) {
-    e(t.exports, "BaseAsset", (function() {
-        return i
-    }));
-    const i = {
-        imageId: "assignment_checkpoint_device",
-        imageUrl: (0, n("alREA").default)("devices/assignment_checkpoint/flag.png")
-    }
-}));
+    var i = j;
+}), b.register('yRyNh', function(t, s) {
+    a(t.exports, 'BaseAsset', function() {
+        return c;
+    });
+    const c = {
+        imageId: 'assignment_checkpoint_device',
+        imageUrl: (0, b('JJQ0+').default)('devices/assignment_checkpoint/flag.png')
+    };
+});

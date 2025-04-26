@@ -1,36 +1,36 @@
-function e(e, t, n, s) {
-    Object.defineProperty(e, t, {
+function a(a, b, n, s) {
+    Object.defineProperty(a, b, {
         get: n,
         set: s,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("9fxjW", (function(n, s) {
-    var a;
-    a = n.exports, Object.defineProperty(a, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('fXAim', function(n, s) {
+    var c;
+    c = n.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(n.exports, "default", (function() {
-        return f
-    }));
-    var r = t("4uojN"),
-        i = t("6Tpu2"),
-        o = t("bNmF9"),
-        l = t("7AaRj");
-    class u extends o.default {
-        constructor(e) {
-            super(e), (0, r.isPublishedVersion)() || (0, i.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(l.BaseAsset))
+    }), a(n.exports, 'default', function() {
+        return i;
+    });
+    var d = b('Bpt+p'),
+        e = b('5Ux1a'),
+        f = b('sgILU'),
+        g = b('Lg/JW');
+    class h extends f.default {
+        constructor(a) {
+            super(a), (0, d.isPublishedVersion)() || (0, e.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(g.BaseAsset));
         }
     }
-    var f = u
-})), t.register("7AaRj", (function(n, s) {
-    e(n.exports, "BaseAsset", (function() {
-        return a
-    }));
-    const a = {
-        imageId: "assignment_context_device",
-        imageUrl: (0, t("alREA").default)("devices/assignment_context/search.png")
-    }
-}));
+    var i = j;
+}), b.register('Lg/JW', function(n, s) {
+    a(n.exports, 'BaseAsset', function() {
+        return c;
+    });
+    const c = {
+        imageId: 'assignment_context_device',
+        imageUrl: (0, b('JJQ0+').default)('devices/assignment_context/search.png')
+    };
+});

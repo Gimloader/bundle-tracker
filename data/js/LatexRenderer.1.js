@@ -1,54 +1,57 @@
-var e = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-e.register("9YSp3", (function(t, n) {
-    var l, r, a, o, i;
-    l = t.exports, Object.defineProperty(l, "__esModule", {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('feyVh', function(o, n) {
+    var b, c, d, e, f;
+    b = o.exports, Object.defineProperty(b, '__esModule', {
         value: !0,
         configurable: !0
-    }), r = t.exports, a = "default", o = function() {
-        return y
-    }, Object.defineProperty(r, a, {
-        get: o,
-        set: i,
+    }), c = o.exports, d = 'default', e = function() {
+        return o;
+    }, Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
-    var s = e("hxEiv"),
-        f = e("fywoC"),
-        d = e("mS2fe"),
-        u = e("2FDaO");
-    let c, x, b = e => e;
-    const p = e => {
-        const t = f.useRef(null);
-        return f.useEffect((() => {
-            (0, d.renderMathInElement)(t.current, {})
-        }), []), (0, s.jsxs)(s.Fragment, {
-            children: [(0, s.jsx)(h, {}), (0, s.jsx)(g, {
-                children: (0, s.jsx)("math-field", {
-                    className: "latex",
-                    tabIndex: "-1",
-                    ref: t,
-                    "read-only": !0,
-                    style: {
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center"
-                    },
-                    children: e.latex
+    var g = a('8kSQZ'),
+        h = a('uPP4W'),
+        i = a('f/Oze'),
+        j = a('h99Nu');
+    let k, l, m = a => a;
+    const n = a => {
+        const o = h.useRef(null);
+        return h.useEffect(() => {
+            (0, i.renderMathInElement)(o.current, {});
+        }, []), (0, g.jsxs)(g.Fragment, {
+            children: [
+                (0, g.jsx)(q, {}),
+                (0, g.jsx)(p, {
+                    children: (0, g.jsx)('math-field', {
+                        className: 'latex',
+                        tabIndex: '-1',
+                        ref: o,
+                        'read-only': !0,
+                        style: {
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        },
+                        children: a.latex
+                    })
                 })
-            })]
-        })
+            ]
+        });
     };
-    var y = e => (0, s.jsx)(p, {
-        ...e
-    }, e.latex);
-    const g = u.default.div(c || (c = b`
+    var o = a => (0, g.jsx)(n, {
+        ...a
+    }, a.latex);
+    const p = j.default.div(k || (k = m`
   pointer-events: none;
 `)),
-        h = (0, u.createGlobalStyle)(x || (x = b`
+        q = (0, j.createGlobalStyle)(l || (l = m`
   .latex {
     .ML__base {
       cursor: inherit !important;
     }
   }
-`))
-}));
+`));
+});

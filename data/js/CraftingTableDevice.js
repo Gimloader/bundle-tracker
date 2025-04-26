@@ -1,149 +1,151 @@
-function e(e, t, i, a) {
-    Object.defineProperty(e, t, {
-        get: i,
-        set: a,
+function a(a, b, c, d) {
+    Object.defineProperty(a, b, {
+        get: c,
+        set: d,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
 
-function t(e) {
-    return e && e.__esModule ? e.default : e
+function b(a) {
+    return a && a.__esModule ? a.default : a;
 }
-var i = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-i.register("jhAjg", (function(t, a) {
-    var r;
-    r = t.exports, Object.defineProperty(r, "__esModule", {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('1d4CU', function(b, d) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(t.exports, "default", (function() {
-        return h
-    }));
-    var s = i("divCp"),
-        n = i("bNmF9"),
-        o = i("881Be"),
-        l = i("awovU"),
-        d = i("kakfs"),
-        u = i("4cOQM"),
-        c = i("e5vxg"),
-        f = i("64qN0"),
-        p = i("8Zl5K"),
-        g = i("8W6Kn"),
-        v = i("bGr6O");
-    class m extends n.default {
-        constructor(e) {
-            super(e), (0, s.default)(this, "pieces", {
+    }), a(b.exports, 'default', function() {
+        return q;
+    });
+    var e = c('UM8oI'),
+        f = c('sgILU'),
+        g = c('NtVk4'),
+        h = c('DQ0mq'),
+        i = c('pCzzv'),
+        j = c('8/pZt'),
+        k = c('N6kkw'),
+        l = c('VoiwV'),
+        m = c('lTPJn'),
+        n = c('xCR3e'),
+        o = c('A1VQU');
+    class p extends f.default {
+        constructor(a) {
+            super(a), (0, e.default)(this, 'pieces', {
                 progressBar: {}
-            }), (0, s.default)(this, "interactivity", {
+            }), (0, e.default)(this, 'interactivity', {
                 withinBounds: !1
-            }), (0, s.default)(this, "itemIsOutlined", !1), (0, s.default)(this, "openDeviceUI", (() => {
-                (0, c.default)(this)
-            })), (0, s.default)(this, "onStateChange", (e => {
-                (0, p.default)(e, this)
-            })), (0, s.default)(this, "onUpdate", (() => {
-                (0, v.default)(this)
-            })), (0, s.default)(this, "onDestroy", (() => {
-                this.particles.destroy(), this.refetchInteractionTimeout && window.clearTimeout(this.refetchInteractionTimeout)
-            })), this.createdAt = Date.now(), (0, d.CraftingTableCreateCollider)(this), this.callbackHelper = new(0, o.default)(this), this.particles = new(0, l.default)(this), (0, f.CraftingTableDeviceSetupInteractionRadius)(this), (0, u.default)(this), (0, g.default)(this), this.interactiveZones.onInteractiveCb = () => {
-                this.interactivity.withinBounds = !0
+            }), (0, e.default)(this, 'itemIsOutlined', !1), (0, e.default)(this, 'openDeviceUI', () => {
+                (0, k.default)(this);
+            }), (0, e.default)(this, 'onStateChange', a => {
+                (0, m.default)(a, this);
+            }), (0, e.default)(this, 'onUpdate', () => {
+                (0, o.default)(this);
+            }), (0, e.default)(this, 'onDestroy', () => {
+                this.particles.destroy(), this.refetchInteractionTimeout && window.clearTimeout(this.refetchInteractionTimeout);
+            }), this.createdAt = Date.now(), (0, i.CraftingTableCreateCollider)(this), this.callbackHelper = new(0, g.default)(this), this.particles = new(0, h.default)(this), (0, l.CraftingTableDeviceSetupInteractionRadius)(this), (0, j.default)(this), (0, n.default)(this), this.interactiveZones.onInteractiveCb = () => {
+                this.interactivity.withinBounds = !0;
             }, this.interactiveZones.onNonInteractive = () => {
-                this.interactivity.withinBounds = !1
-            }
-        }
-    }
-    var h = m
-})), i.register("881Be", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return u
-    }));
-    var r = i("divCp"),
-        s = i("1ohuV"),
-        n = i("jVQO4"),
-        o = i("alREA"),
-        l = i("3iPiZ"),
-        d = i("lH0LY");
-    var u = class {
-        constructor(e) {
-            (0, r.default)(this, "craft", (e => {
-                this.device.sendToServerDevice(s.Messages.craft, {
-                    recipe: e
-                });
-                const t = (0, d.default)(e);
-                t && t.timeToCraftMs > 0 && (0, n.playSound)({
-                    path: (0, o.default)("devices/crafting_table/appear.mp3"),
-                    volume: (0, l.getVolume)({
-                        volume: .35,
-                        type: l.SoundType.soundEffect
-                    })
-                })
-            })), (0, r.default)(this, "collect", (() => {
-                this.device.sendToServerDevice(s.Messages.collect), (0, n.playSound)({
-                    path: (0, o.default)("sounds/core/collectItem.mp3"),
-                    volume: (0, l.getVolume)({
-                        volume: .7,
-                        type: l.SoundType.soundEffect
-                    })
-                })
-            })), this.device = e
-        }
-    }
-})), i.register("1ohuV", (function(t, i) {
-    let a;
-    var r;
-    e(t.exports, "Messages", (function() {
-        return a
-    })), (r = a || (a = {})).craft = "craft", r.collect = "collect"
-})), i.register("lH0LY", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return s
-    }));
-    var r = i("iRjsB");
-    var s = e => {
-        const t = r.default.world.devices.devices.get(e);
-        if (!t) return null;
-        const i = t.options,
-            a = new Map,
-            s = e => i.numberOfIngredients >= e,
-            n = (e, t) => {
-                const i = a.get(e);
-                i ? i.amount += t : a.set(e, {
-                    item: e,
-                    amount: t
-                })
+                this.interactivity.withinBounds = !1;
             };
-        s(1) && n(i.ingredient1Item, i.ingredient1Amount), s(2) && n(i.ingredient2Item, i.ingredient2Amount), s(3) && n(i.ingredient3Item, i.ingredient3Amount), s(4) && n(i.ingredient4Item, i.ingredient4Amount), s(5) && n(i.ingredient5Item, i.ingredient5Amount);
-        return {
-            id: e,
-            itemId: i.item,
-            itemAmount: i.itemAmount,
-            ingredients: Array.from(a.values()),
-            timeToCraftMs: i.timeToCraftMs,
-            timeToDisposeMs: i.itemDisposes ? i.disposeItemAfterMs : 0
         }
     }
-})), i.register("awovU", (function(a, r) {
-    e(a.exports, "default", (function() {
-        return u
-    }));
-    var s = i("divCp"),
-        n = i("c3ah8"),
-        o = i("alREA"),
-        l = i("7qUZR"),
-        d = i("6Tpu2");
-    var u = class {
-        constructor(e) {
-            (0, s.default)(this, "burst", (() => {
-                this.emitter && (this.emitter.setDepth(this.device.getMaxDepth() + 1), this.emitter.explode(50))
-            })), (0, s.default)(this, "destroy", (() => {
-                this.emitter && this.emitter.destroy(!0)
-            })), (0, s.default)(this, "load", (() => {
-                if (!(0, d.InGamePhase)()) return;
-                const e = (0, o.default)("devices/crafting_table/particle.png");
-                (0, l.default)({
-                    key: e,
-                    url: e,
+    var q = r;
+}), c.register('NtVk4', function(b, d) {
+    a(b.exports, 'default', function() {
+        return j;
+    });
+    var d = c('UM8oI'),
+        e = c('8HdBA'),
+        f = c('OlpXx'),
+        g = c('JJQ0+'),
+        h = c('Ena4B'),
+        i = c('6df+W0');
+    var j = class {
+        constructor(a) {
+            (0, d.default)(this, 'craft', a => {
+                this.device.sendToServerDevice(e.Messages.craft, {
+                    recipe: a
+                });
+                const k = (0, i.default)(a);
+                k && k.timeToCraftMs > 0 && (0, f.playSound)({
+                    path: (0, g.default)('devices/crafting_table/appear.mp3'),
+                    volume: (0, h.getVolume)({
+                        volume: 0.35,
+                        type: h.SoundType.soundEffect
+                    })
+                });
+            }), (0, d.default)(this, 'collect', () => {
+                this.device.sendToServerDevice(e.Messages.collect), (0, f.playSound)({
+                    path: (0, g.default)('sounds/core/collectItem.mp3'),
+                    volume: (0, h.getVolume)({
+                        volume: 0.7,
+                        type: h.SoundType.soundEffect
+                    })
+                });
+            }), this.device = a;
+        }
+    };
+}), c.register('8HdBA', function(b, c) {
+    let d;
+    var e;
+    a(b.exports, 'Messages', function() {
+        return d;
+    }), (e = d || (d = {})).craft = 'craft', e.collect = 'collect';
+}), c.register('6df+W0', function(b, h) {
+    a(b.exports, 'default', function() {
+        return e;
+    });
+    var d = c('7Sbqr');
+    var e = a => {
+        const f = d.default.world.devices.devices.get(a);
+        if (!f)
+            return null;
+        const g = f.options,
+            h = new Map(),
+            i = a => g.numberOfIngredients >= a,
+            j = (a, f) => {
+                const k = h.get(a);
+                k ? k.amount += f : h.set(a, {
+                    item: a,
+                    amount: f
+                });
+            };
+        i(1) && j(g.ingredient1Item, g.ingredient1Amount), i(2) && j(g.ingredient2Item, g.ingredient2Amount), i(3) && j(g.ingredient3Item, g.ingredient3Amount), i(4) && j(g.ingredient4Item, g.ingredient4Amount), i(5) && j(g.ingredient5Item, g.ingredient5Amount);
+        return {
+            id: a,
+            itemId: g.item,
+            itemAmount: g.itemAmount,
+            ingredients: Array.from(h.values()),
+            timeToCraftMs: g.timeToCraftMs,
+            timeToDisposeMs: g.itemDisposes ? g.disposeItemAfterMs : 0
+        };
+    };
+}), c.register('DQ0mq', function(d, d) {
+    a(d.exports, 'default', function() {
+        return i;
+    });
+    var d = c('UM8oI'),
+        e = c('kneek'),
+        f = c('JJQ0+'),
+        g = c('y7G4G'),
+        h = c('5Ux1a');
+    var i = class {
+        constructor(a) {
+            (0, d.default)(this, 'burst', () => {
+                this.emitter && (this.emitter.setDepth(this.device.getMaxDepth() + 1), this.emitter.explode(50));
+            }), (0, d.default)(this, 'destroy', () => {
+                this.emitter && this.emitter.destroy(!0);
+            }), (0, d.default)(this, 'load', () => {
+                if (!(0, h.InGamePhase)())
+                    return;
+                const j = (0, f.default)('devices/crafting_table/particle.png');
+                (0, g.default)({
+                    key: j,
+                    url: j,
                     onLoad: () => {
-                        this.device.isDestroyed || (this.emitter = this.device.scene.add.particles(this.device.x, this.device.y, e, {
+                        this.device.isDestroyed || (this.emitter = this.device.scene.add.particles(this.device.x, this.device.y, j, {
                             speed: {
                                 min: -400,
                                 max: 400
@@ -153,538 +155,547 @@ i.register("jhAjg", (function(t, a) {
                                 max: 360
                             },
                             scale: {
-                                start: .5,
+                                start: 0.5,
                                 end: 0
                             },
-                            blendMode: t(n).BlendModes.SCREEN,
+                            blendMode: b(e).BlendModes.SCREEN,
                             emitting: !1,
-                            lifespan: 1e3,
+                            lifespan: 1000,
                             gravityY: 250
-                        }))
+                        }));
                     }
-                })
-            })), this.device = e
+                });
+            }), this.device = a;
         }
-    }
-})), i.register("kakfs", (function(t, a) {
-    e(t.exports, "CraftingTableCreateCollider", (function() {
-        return n
-    }));
-    var r = i("bDCcz"),
-        s = i("cRaEs");
-    const n = e => {
-        e.options.style === s.CraftingTableStyle.craft && ((0, r.isTopDown)() ? e.colliders.add.box({
+    };
+}), c.register('pCzzv', function(b, d) {
+    a(b.exports, 'CraftingTableCreateCollider', function() {
+        return f;
+    });
+    var d = c('HMNV0'),
+        e = c('bavPu0');
+    const f = a => {
+        a.options.style === e.CraftingTableStyle.craft && ((0, d.isTopDown)() ? a.colliders.add.box({
             x: 0,
             y: 13,
             w: 105,
             h: 70
-        }) : (0, r.isPlatformer)() && (e.colliders.add.box({
+        }) : (0, d.isPlatformer)() && (a.colliders.add.box({
             x: 0,
             y: 0,
             w: 105,
             h: 92
-        }), e.colliders.add.box({
+        }), a.colliders.add.box({
             x: -39,
             y: 56,
             w: 14,
             h: 24
-        }), e.colliders.add.box({
+        }), a.colliders.add.box({
             x: 38,
             y: 56,
             w: 14,
             h: 24
-        })))
-    }
-})), i.register("cRaEs", (function(t, i) {
-    let a;
-    var r;
-    e(t.exports, "CraftingTableStyle", (function() {
-        return a
-    })), (r = a || (a = {})).plant = "plant", r.craft = "craft", r.store = "store"
-})), i.register("4cOQM", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return p
-    }));
-    var r = i("alREA"),
-        s = i("9oxA4"),
-        n = i("050o1"),
-        o = i("bDCcz"),
-        l = i("cRaEs"),
-        d = i("5dEEM"),
-        u = i("8oOHV"),
-        c = i("1U8o5"),
-        f = i("51atS");
-    var p = e => {
+        })));
+    };
+}), c.register('bavPu0', function(b, c) {
+    let d;
+    var e;
+    a(b.exports, 'CraftingTableStyle', function() {
+        return d;
+    }), (e = d || (d = {})).plant = 'plant', e.craft = 'craft', e.store = 'store';
+}), c.register('8/pZt', function(b, p) {
+    a(b.exports, 'default', function() {
+        return m;
+    });
+    var d = c('JJQ0+'),
+        e = c('VkIHd0'),
+        f = c('Q0Vn8'),
+        g = c('HMNV0'),
+        h = c('bavPu0'),
+        i = c('FnxQ90'),
+        j = c('6LqnM'),
+        k = c('WdciG'),
+        l = c('RPYAs');
+    var m = a => {
         const {
-            key: t,
-            url: i,
-            displayWidth: a,
-            y: p,
-            originY: g
-        } = (e => e.options.style === l.CraftingTableStyle.plant ? {
-            key: "crafting-table-plant",
-            url: (0, r.default)("/devices/crafting_table/dirt.png"),
+            key: n,
+            url: o,
+            displayWidth: p,
+            y: q,
+            originY: r
+        } = (a => a.options.style === h.CraftingTableStyle.plant ? {
+            key: 'crafting-table-plant',
+            url: (0, d.default)('/devices/crafting_table/dirt.png'),
             displayWidth: 120
         } : {
-            key: "crafting-table",
-            url: (0, r.default)("/devices/crafting_table/table.png"),
+            key: 'crafting-table',
+            url: (0, d.default)('/devices/crafting_table/table.png'),
             displayWidth: 110,
             originY: 1,
             y: 67
-        })(e);
-        e.pieces.base = e.parts.add.sprite({
-            imageId: t,
-            imageUrl: i,
-            originY: null != g ? g : .5,
-            y: null != p ? p : 0,
-            layerId: (0, f.GetCraftingTableDeviceLayer)(e),
-            depthChange: (0, n.default)(1),
-            onReady: e => {
-                const t = (0, s.default)({
-                    height: e.view.displayHeight,
-                    width: e.view.displayWidth,
-                    newWidth: a
+        })(a);
+        a.pieces.base = a.parts.add.sprite({
+            imageId: n,
+            imageUrl: o,
+            originY: null != r ? r : 0.5,
+            y: null != q ? q : 0,
+            layerId: (0, l.GetCraftingTableDeviceLayer)(a),
+            depthChange: (0, f.default)(1),
+            onReady: a => {
+                const s = (0, e.default)({
+                    height: a.view.displayHeight,
+                    width: a.view.displayWidth,
+                    newWidth: p
                 });
-                e.view.setDisplaySize(t.width, t.height)
+                a.view.setDisplaySize(s.width, s.height);
             }
-        }), e.options.style === l.CraftingTableStyle.craft && (0, o.isTopDown)() && e.shadows.add({
+        }), a.options.style === h.CraftingTableStyle.craft && (0, g.isTopDown)() && a.shadows.add({
             r1: 70,
             r2: 30,
             y: 52
-        }), e.state.status !== d.CraftingTableStatus.idle && ((0, u.default)(e), e.state.status === d.CraftingTableStatus.availableForCollection && (0, c.default)(e)), e.particles.load()
-    }
-})), i.register("9oxA4", (function(t, i) {
-    e(t.exports, "default", (function() {
-        return a
-    }));
-    var a = e => {
-        const t = e.newWidth / e.width;
+        }), a.state.status !== i.CraftingTableStatus.idle && ((0, j.default)(a), a.state.status === i.CraftingTableStatus.availableForCollection && (0, k.default)(a)), a.particles.load();
+    };
+}), c.register('VkIHd0', function(b, c) {
+    a(b.exports, 'default', function() {
+        return d;
+    });
+    var d = a => {
+        const e = a.newWidth / a.width;
         return {
-            height: e.height * t,
-            width: e.width * t
-        }
-    }
-})), i.register("5dEEM", (function(t, i) {
-    let a;
-    var r;
-    e(t.exports, "CraftingTableStatus", (function() {
-        return a
-    })), (r = a || (a = {})).idle = "idle", r.crafting = "crafting", r.availableForCollection = "availableForCollection"
-})), i.register("8oOHV", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return c
-    }));
-    var r = i("7iSMe"),
-        s = i("050o1"),
-        n = i("6EcnK"),
-        o = i("cLS8f"),
-        l = i("jABV8"),
-        d = i("5dEEM"),
-        u = i("51atS");
-    var c = e => {
-        if (!e.state.itemId) return;
-        const t = (0, n.default)(e.state.itemId);
-        if (t) {
-            if (e.pieces.item) {
-                if (e.pieces.item.view.texture.key === t.previewImage) return;
-                e.pieces.item.destroy(), e.pieces.item = void 0
+            height: a.height * e,
+            width: a.width * e
+        };
+    };
+}), c.register('FnxQ90', function(b, c) {
+    let d;
+    var e;
+    a(b.exports, 'CraftingTableStatus', function() {
+        return d;
+    }), (e = d || (d = {})).idle = 'idle', e.crafting = 'crafting', e.availableForCollection = 'availableForCollection';
+}), c.register('6LqnM', function(b, n) {
+    a(b.exports, 'default', function() {
+        return k;
+    });
+    var d = c('ik1Vy'),
+        e = c('Q0Vn8'),
+        f = c('0x6bL'),
+        g = c('0sBay'),
+        h = c('fFbqX'),
+        i = c('FnxQ90'),
+        j = c('RPYAs');
+    var k = a => {
+        if (!a.state.itemId)
+            return;
+        const l = (0, f.default)(a.state.itemId);
+        if (l) {
+            if (a.pieces.item) {
+                if (a.pieces.item.view.texture.key === l.previewImage)
+                    return;
+                a.pieces.item.destroy(), a.pieces.item = void 0;
             }
-            e.pieces.item = e.parts.add.sprite({
-                imageId: t.previewImage,
-                imageUrl: t.previewImage,
-                layerId: (0, u.GetCraftingTableDeviceLayer)(e),
-                onReady: t => {
-                    t.view.setDepth(e.getMaxDepth() + (0, s.default)(1));
-                    const i = e.state.status === d.CraftingTableStatus.availableForCollection;
-                    t.view.alpha = i ? 1 : 0;
-                    const a = (0, r.default)({
-                        width: t.view.displayWidth,
-                        newWidth: l.default.width
+            a.pieces.item = a.parts.add.sprite({
+                imageId: l.previewImage,
+                imageUrl: l.previewImage,
+                layerId: (0, j.GetCraftingTableDeviceLayer)(a),
+                onReady: l => {
+                    l.view.setDepth(a.getMaxDepth() + (0, e.default)(1));
+                    const m = a.state.status === i.CraftingTableStatus.availableForCollection;
+                    l.view.alpha = m ? 1 : 0;
+                    const n = (0, d.default)({
+                        width: l.view.displayWidth,
+                        newWidth: h.default.width
                     });
-                    if (t.view.setScale(a), i) return void o.default.itemReady.applyItemAnimation(e, t.view);
-                    const n = Number(t.view.scale);
-                    t.view.scale = 0, e.tweens.add({
-                        targets: t.view,
-                        scale: n,
-                        duration: o.default.itemCreated.duration,
-                        ease: o.default.itemCreated.ease
-                    })
+                    if (l.view.setScale(n), m)
+                        return void g.default.itemReady.applyItemAnimation(a, l.view);
+                    const o = Number(l.view.scale);
+                    l.view.scale = 0, a.tweens.add({
+                        targets: l.view,
+                        scale: o,
+                        duration: g.default.itemCreated.duration,
+                        ease: g.default.itemCreated.ease
+                    });
                 }
-            })
+            });
         }
-    }
-})), i.register("7iSMe", (function(t, i) {
-    e(t.exports, "default", (function() {
-        return a
-    }));
-    var a = e => e.newWidth / e.width
-})), i.register("cLS8f", (function(a, r) {
-    e(a.exports, "default", (function() {
-        return n
-    }));
-    var s = i("c3ah8");
-    var n = {
+    };
+}), c.register('ik1Vy', function(b, c) {
+    a(b.exports, 'default', function() {
+        return d;
+    });
+    var d = a => a.newWidth / a.width;
+}), c.register('0sBay', function(f, d) {
+    a(f.exports, 'default', function() {
+        return e;
+    });
+    var d = c('kneek');
+    var e = {
         itemCreated: {
             duration: 250,
-            ease: t(s).Math.Easing.Quadratic.Out
+            ease: b(d).Math.Easing.Quadratic.Out
         },
         itemDestroyed: {
             duration: 200,
-            ease: t(s).Math.Easing.Sine.Out
+            ease: b(d).Math.Easing.Sine.Out
         },
         itemReady: {
-            applyItemAnimation: (e, i) => {
-                const a = i.scale;
-                e.tweens.add({
-                    targets: i,
+            applyItemAnimation: (a, c) => {
+                const f = c.scale;
+                a.tweens.add({
+                    targets: c,
                     scale: {
-                        from: a,
-                        to: 1.1 * a
+                        from: f,
+                        to: 1.1 * f
                     },
-                    duration: 1e3,
-                    ease: t(s).Math.Easing.Sine.Out,
+                    duration: 1000,
+                    ease: b(d).Math.Easing.Sine.Out,
                     yoyo: !0,
                     repeat: -1
-                })
-            },
-            applyShineAnimation: (e, i) => {
-                e.tweens.add({
-                    targets: i,
-                    alpha: .25,
-                    duration: 500,
-                    ease: t(s).Math.Easing.Sine.In,
-                    yoyo: !0,
-                    repeat: -1
-                })
-            }
-        }
-    }
-})), i.register("jABV8", (function(t, i) {
-    e(t.exports, "default", (function() {
-        return a
-    }));
-    var a = {
-        width: 60
-    }
-})), i.register("51atS", (function(t, a) {
-    e(t.exports, "GetCraftingTableDeviceLayer", (function() {
-        return o
-    }));
-    var r = i("bvStP"),
-        s = i("bDCcz"),
-        n = i("cRaEs");
-    const o = e => (0, s.isPlatformer)() ? e.layers.getLayer() : e.options.style == n.CraftingTableStyle.plant ? r.default.DevicesUnderCharacters : r.default.DepthSortedCharactersAndDevices
-})), i.register("1U8o5", (function(a, r) {
-    e(a.exports, "default", (function() {
-        return f
-    }));
-    var s = i("c3ah8"),
-        n = i("7iSMe"),
-        o = i("050o1"),
-        l = i("6EcnK"),
-        d = i("cLS8f"),
-        u = i("jABV8"),
-        c = i("51atS");
-    var f = e => {
-        const i = e.state.itemId;
-        if (!i) return;
-        const a = (0, l.default)(i);
-        a && (e.pieces.itemShine && (e.pieces.itemShine.destroy(), e.pieces.itemShine = null), e.pieces.itemShine = e.parts.add.sprite({
-            imageId: a.previewImage,
-            imageUrl: a.previewImage,
-            layerId: (0, c.GetCraftingTableDeviceLayer)(e),
-            onReady: i => {
-                i.view.setDepth(e.getMaxDepth() + (0, o.default)(2));
-                const a = (0, n.default)({
-                    width: i.view.displayWidth,
-                    newWidth: u.default.width
                 });
-                i.view.setScale(a), i.view.alpha = 0, i.view.blendMode = t(s).BlendModes.ADD, d.default.itemReady.applyShineAnimation(e, i.view)
+            },
+            applyShineAnimation: (a, c) => {
+                a.tweens.add({
+                    targets: c,
+                    alpha: 0.25,
+                    duration: 500,
+                    ease: b(d).Math.Easing.Sine.In,
+                    yoyo: !0,
+                    repeat: -1
+                });
             }
-        }))
-    }
-})), i.register("e5vxg", (function(t, i) {
-    e(t.exports, "default", (function() {
-        return a
-    }));
-    var a = e => {
-        e.deviceUI.open({
-            status: e.state.status,
-            style: e.options.style,
-            tableGroup: e.options.group,
-            craft: e.callbackHelper.craft,
-            collect: e.callbackHelper.collect,
-            item: e.state.itemId,
-            itemAmount: e.state.itemAmount,
-            craftingDurationMs: e.state.craftingDurationMs,
-            itemFinishesCraftingAt: e.state.itemFinishesCraftingAt,
-            itemDisposalMs: e.state.itemDisposalMs,
-            itemDisposedAt: e.state.itemDisposedAt,
-            itemCrafterCharacterId: e.state.itemCrafterCharacterId,
-            useCrafterCollectionAdvantage: e.options.useCrafterCollectionAdvantage
-        })
-    }
-})), i.register("64qN0", (function(t, a) {
-    e(t.exports, "CraftingTableDeviceSetupInteractionRadius", (function() {
-        return s
-    }));
-    var r = i("cRaEs");
-    const s = e => {
-        const {
-            style: t
-        } = e.options;
-        t !== r.CraftingTableStyle.plant ? e.interactiveZones.add.circle({
-            r: 120,
-            y: 10
-        }) : e.interactiveZones.add.circle({
-            r: 100
-        })
-    }
-})), i.register("8Zl5K", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return n
-    }));
-    var r = i("8W6Kn"),
-        s = i("6hzeP");
-    var n = (e, t) => {
-        "status" === e && (0, s.default)(t), "itemId" === e && (t.deviceUI.update({
-            item: t.state.itemId
-        }), (0, r.default)(t)), "craftingDurationMs" === e && t.deviceUI.update({
-            craftingDurationMs: t.state.craftingDurationMs
-        }), "itemFinishesCraftingAt" === e && t.deviceUI.update({
-            itemFinishesCraftingAt: t.state.itemFinishesCraftingAt
-        }), "itemAmount" === e && t.deviceUI.update({
-            itemAmount: t.state.itemAmount
-        }), "itemDisposedAt" === e && t.deviceUI.update({
-            itemDisposedAt: t.state.itemDisposedAt
-        }), "itemDisposalMs" === e && t.deviceUI.update({
-            itemDisposalMs: t.state.itemDisposalMs
-        }), "itemCrafterCharacterId" === e && t.deviceUI.update({
-            itemCrafterCharacterId: t.state.itemCrafterCharacterId
-        })
-    }
-})), i.register("8W6Kn", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return f
-    }));
-    var r = i("3sJmi"),
-        s = i("iRjsB"),
-        n = i("fhnJp"),
-        o = i("577hQ"),
-        l = i("kkz6q"),
-        d = i("5dEEM"),
-        u = i("dsxHT");
-    const c = e => {
-        if (e.state.status === d.CraftingTableStatus.availableForCollection) {
-            let t = 1;
-            if (!(e.state.itemCrafterCharacterId === (0, n.default)()) && e.options.useCrafterCollectionAdvantage) {
-                const i = e.state.itemFinishesCraftingAt + 1e3 * l.default.secondsAdvantage,
-                    a = Math.ceil((i - s.default.session.gameTime) / 1e3);
-                a < 1 ? t = 1 : (e.refetchInteractionTimeout = window.setTimeout((() => {
-                    c(e)
-                }), 250), t = a)
-            }
-            e.interactiveZones.setInfo({
-                message: `Collect ${(0,u.default)(e.state.itemId,e.state.itemAmount)}`,
-                allowedToInteract: !0,
-                duration: t
-            }), e.interactiveZones.onInteraction = () => {
-                e.callbackHelper.collect()
-            }
-        } else e.state.status === d.CraftingTableStatus.idle ? e.interactiveZones.setInfo({
-            message: (0, r.CapitalizeFirstLetter)(o.default.baseVerb(e.options.style)),
-            allowedToInteract: !0
-        }) : e.interactiveZones.setInfo({
-            message: `${(0,r.CapitalizeFirstLetter)(o.default.preparing(e.options.style))} ${(0,u.default)(e.state.itemId,e.state.itemAmount)}`,
-            action: "to check status",
-            allowedToInteract: !0
-        }), e.interactiveZones.onInteraction = () => {
-            e.openDeviceUI()
         }
     };
-    var f = c
-})), i.register("577hQ", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return o
-    }));
-    var r = i("3sJmi"),
-        s = i("cRaEs");
-    const n = e => e === s.CraftingTableStyle.plant ? "plant" : e === s.CraftingTableStyle.craft ? "craft" : "purchase";
-    var o = {
-        noItems: e => `No items currently available to ${n(e)}.`,
-        selectItem: e => `Select an item to ${n(e)}...`,
-        availableToCraft: e => `Available To ${(0,r.CapitalizeFirstLetter)(n(e))}`,
-        instantNote: e => e === s.CraftingTableStyle.store ? "Available immediately" : e === s.CraftingTableStyle.plant ? "Grows instantly" : "Crafts instantly",
-        durationNote: e => t => t === s.CraftingTableStyle.store ? `Takes ${e} to prepare` : t === s.CraftingTableStyle.plant ? `Takes ${e} to grow` : `Takes ${e} to craft`,
-        expireVerb: e => e === s.CraftingTableStyle.plant ? "goes bad" : "expires",
-        resource: e => e === s.CraftingTableStyle.store ? "resource" : "ingredient",
-        preparing: e => e === s.CraftingTableStyle.store ? "preparing" : e === s.CraftingTableStyle.plant ? "growing" : "crafting",
-        baseVerb: n
-    }
-})), i.register("kkz6q", (function(t, i) {
-    e(t.exports, "default", (function() {
-        return a
-    }));
-    var a = {
-        secondsAdvantage: 5
-    }
-})), i.register("dsxHT", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return n
-    }));
-    var r = i("iMOcM"),
-        s = i("3ugly");
-    var n = (e, t) => {
-        let i = (0, s.ItemName)(e) || "Item";
-        return t > 1 && (i += ` (${(0,r.numberWithCommas)(t)})`), i
-    }
-})), i.register("6hzeP", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return v
-    }));
-    var r = i("iRjsB"),
-        s = i("alREA"),
-        n = i("3iPiZ"),
-        o = i("jVQO4"),
-        l = i("cLS8f"),
-        d = i("5dEEM"),
-        u = i("8oOHV"),
-        c = i("1U8o5"),
-        f = i("cm5O9"),
-        p = i("fdwDs"),
-        g = i("8W6Kn");
-    var v = e => {
-        const t = e.state.status;
-        if (t === d.CraftingTableStatus.idle && ((0, f.default)(e), (0, p.default)(e)), t !== d.CraftingTableStatus.crafting && t !== d.CraftingTableStatus.availableForCollection || (0, u.default)(e), t === d.CraftingTableStatus.availableForCollection && (e.pieces.item && l.default.itemReady.applyItemAnimation(e, e.pieces.item.view), (0, c.default)(e), e.state.itemDisposedAt || (0, p.default)(e), e.cull.isInsideView && !r.default.session.loadingPhase)) {
-            Date.now() - e.createdAt > 1500 && ((0, o.playSound)({
-                path: (0, s.default)("devices/crafting_table/complete.mp3"),
-                volume: (0, n.getVolume)({
-                    volume: .4,
-                    type: n.SoundType.soundEffect
-                })
-            }), e.particles.burst())
-        }
-        e.deviceUI.update({
-            status: e.state.status
-        }), (0, g.default)(e)
-    }
-})), i.register("cm5O9", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return s
-    }));
-    var r = i("cLS8f");
-    var s = e => {
-        if (e.pieces.item) {
-            const t = e.pieces.item;
-            e.pieces.item = void 0, e.tweens.add({
-                targets: t.view,
-                scale: 0,
-                opacity: .5,
-                duration: r.default.itemDestroyed.duration,
-                ease: r.default.itemDestroyed.ease,
-                onComplete: () => {
-                    t.destroy()
-                }
-            })
-        }
-        if (e.pieces.itemShine) {
-            const t = e.pieces.itemShine;
-            e.pieces.itemShine = void 0, e.tweens.add({
-                targets: t.view,
-                scale: 0,
-                opacity: .5,
-                duration: r.default.itemDestroyed.duration,
-                ease: r.default.itemDestroyed.ease,
-                onComplete: () => {
-                    t.destroy()
-                }
-            })
-        }
-    }
-})), i.register("fdwDs", (function(t, i) {
-    e(t.exports, "default", (function() {
-        return a
-    }));
-    var a = e => {
-        e.pieces.progressBar.background && e.pieces.progressBar.bar && (e.pieces.progressBar.background.view.destroy(), e.pieces.progressBar.bar.view.destroy(), e.pieces.progressBar.background = void 0, e.pieces.progressBar.bar = void 0)
-    }
-})), i.register("bGr6O", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return c
-    }));
-    var r = i("cmvpZ"),
-        s = i("bssnp"),
-        n = i("rUtvU"),
-        o = i("5xt14"),
-        l = i("9SvNC"),
-        d = i("5dEEM"),
-        u = i("eIE9W");
-    var c = e => {
-        if (e.cull.isInsideView) {
-            if (e.state.status === d.CraftingTableStatus.crafting) {
-                var t, i, a;
-                const n = e.state.itemFinishesCraftingAt - e.state.craftingDurationMs,
-                    o = ((0, s.GetServerGameTimeWithCompensation)() - n) / e.state.craftingDurationMs;
-                (0, u.default)({
-                    device: e,
-                    completion: o,
-                    color: l.default.progressColor
+}), c.register('fFbqX', function(b, c) {
+    a(b.exports, 'default', function() {
+        return d;
+    });
+    var d = {
+        width: 60
+    };
+}), c.register('RPYAs', function(b, m) {
+    a(b.exports, 'GetCraftingTableDeviceLayer', function() {
+        return g;
+    });
+    var d = c('cMsWT'),
+        e = c('HMNV0'),
+        f = c('bavPu0');
+    const g = a => (0, e.isPlatformer)() ? a.layers.getLayer() : a.options.style == f.CraftingTableStyle.plant ? d.default.DevicesUnderCharacters : d.default.DepthSortedCharactersAndDevices;
+}), c.register('WdciG', function(m, d) {
+    a(m.exports, 'default', function() {
+        return k;
+    });
+    var d = c('kneek'),
+        e = c('ik1Vy'),
+        f = c('Q0Vn8'),
+        g = c('0x6bL'),
+        h = c('0sBay'),
+        i = c('fFbqX'),
+        j = c('RPYAs');
+    var k = a => {
+        const l = a.state.itemId;
+        if (!l)
+            return;
+        const m = (0, g.default)(l);
+        m && (a.pieces.itemShine && (a.pieces.itemShine.destroy(), a.pieces.itemShine = null), a.pieces.itemShine = a.parts.add.sprite({
+            imageId: m.previewImage,
+            imageUrl: m.previewImage,
+            layerId: (0, j.GetCraftingTableDeviceLayer)(a),
+            onReady: l => {
+                l.view.setDepth(a.getMaxDepth() + (0, f.default)(2));
+                const n = (0, e.default)({
+                    width: l.view.displayWidth,
+                    newWidth: i.default.width
                 });
-                const d = (0, r.clamp)(o, .25, 1);
-                null === (t = e.pieces) || void 0 === t || null === (i = t.item) || void 0 === i || null === (a = i.view) || void 0 === a || a.setAlpha(d)
+                l.view.setScale(n), l.view.alpha = 0, l.view.blendMode = b(d).BlendModes.ADD, h.default.itemReady.applyShineAnimation(a, l.view);
             }
-            var c, f, p, g, v;
-            if (e.state.status === d.CraftingTableStatus.availableForCollection)
-                if (null === (c = e.pieces) || void 0 === c || null === (f = c.item) || void 0 === f || null === (p = f.view) || void 0 === p || p.setAlpha(1), e.state.itemDisposedAt) {
-                    const t = e.state.itemDisposedAt - e.state.itemDisposalMs,
-                        i = 1 - ((0, s.GetServerGameTimeWithCompensation)() - t) / e.state.itemDisposalMs;
-                    (0, u.default)({
-                        device: e,
-                        completion: i,
-                        color: l.default.expirationColor
-                    })
-                } if (e.itemIsOutlined)
-                if (!e.interactivity.withinBounds || e.state.status !== d.CraftingTableStatus.availableForCollection) e.itemIsOutlined = !1, (null === (g = e.pieces) || void 0 === g ? void 0 : g.item) && (0, o.RemoveOutline)({
-                    view: e.pieces.item.view
-                });
-            if (e.interactivity.withinBounds) e.state.status === d.CraftingTableStatus.availableForCollection && !e.itemIsOutlined && (null === (v = e.pieces.item) || void 0 === v ? void 0 : v.view) && (e.itemIsOutlined = !0, (0, n.AddOutline)({
-                view: e.pieces.item.view
-            }))
+        }));
+    };
+}), c.register('N6kkw', function(b, c) {
+    a(b.exports, 'default', function() {
+        return d;
+    });
+    var d = a => {
+        a.deviceUI.open({
+            status: a.state.status,
+            style: a.options.style,
+            tableGroup: a.options.group,
+            craft: a.callbackHelper.craft,
+            collect: a.callbackHelper.collect,
+            item: a.state.itemId,
+            itemAmount: a.state.itemAmount,
+            craftingDurationMs: a.state.craftingDurationMs,
+            itemFinishesCraftingAt: a.state.itemFinishesCraftingAt,
+            itemDisposalMs: a.state.itemDisposalMs,
+            itemDisposedAt: a.state.itemDisposedAt,
+            itemCrafterCharacterId: a.state.itemCrafterCharacterId,
+            useCrafterCollectionAdvantage: a.options.useCrafterCollectionAdvantage
+        });
+    };
+}), c.register('VoiwV', function(b, n) {
+    a(b.exports, 'CraftingTableDeviceSetupInteractionRadius', function() {
+        return e;
+    });
+    var d = c('bavPu0');
+    const e = a => {
+        const {
+            style: f
+        } = a.options;
+        f !== d.CraftingTableStyle.plant ? a.interactiveZones.add.circle({
+            r: 120,
+            y: 10
+        }) : a.interactiveZones.add.circle({
+            r: 100
+        });
+    };
+}), c.register('lTPJn', function(b, n) {
+    a(b.exports, 'default', function() {
+        return f;
+    });
+    var d = c('xCR3e'),
+        e = c('uGSxC');
+    var f = (a, b) => {
+        'status' === a && (0, e.default)(b), 'itemId' === a && (b.deviceUI.update({
+            item: b.state.itemId
+        }), (0, d.default)(b)), 'craftingDurationMs' === a && b.deviceUI.update({
+            craftingDurationMs: b.state.craftingDurationMs
+        }), 'itemFinishesCraftingAt' === a && b.deviceUI.update({
+            itemFinishesCraftingAt: b.state.itemFinishesCraftingAt
+        }), 'itemAmount' === a && b.deviceUI.update({
+            itemAmount: b.state.itemAmount
+        }), 'itemDisposedAt' === a && b.deviceUI.update({
+            itemDisposedAt: b.state.itemDisposedAt
+        }), 'itemDisposalMs' === a && b.deviceUI.update({
+            itemDisposalMs: b.state.itemDisposalMs
+        }), 'itemCrafterCharacterId' === a && b.deviceUI.update({
+            itemCrafterCharacterId: b.state.itemCrafterCharacterId
+        });
+    };
+}), c.register('xCR3e', function(b, n) {
+    a(b.exports, 'default', function() {
+        return l;
+    });
+    var d = c('RJ/fk'),
+        e = c('7Sbqr'),
+        f = c('PUlKf'),
+        g = c('v2cUN0'),
+        h = c('2XxG10'),
+        i = c('FnxQ90'),
+        j = c('wktBO');
+    const k = a => {
+        if (a.state.status === i.CraftingTableStatus.availableForCollection) {
+            let l = 1;
+            if (!(a.state.itemCrafterCharacterId === (0, f.default)()) && a.options.useCrafterCollectionAdvantage) {
+                const m = a.state.itemFinishesCraftingAt + 1000 * h.default.secondsAdvantage,
+                    n = Math.ceil((m - e.default.session.gameTime) / 1000);
+                n < 1 ? l = 1 : (a.refetchInteractionTimeout = window.setTimeout(() => {
+                    k(a);
+                }, 250), l = n);
+            }
+            a.interactiveZones.setInfo({
+                message: `Collect ${ (0, j.default)(a.state.itemId, a.state.itemAmount) }`,
+                allowedToInteract: !0,
+                duration: l
+            }), a.interactiveZones.onInteraction = () => {
+                a.callbackHelper.collect();
+            };
+        } else
+            a.state.status === i.CraftingTableStatus.idle ? a.interactiveZones.setInfo({
+                message: (0, d.CapitalizeFirstLetter)(g.default.baseVerb(a.options.style)),
+                allowedToInteract: !0
+            }) : a.interactiveZones.setInfo({
+                message: `${ (0, d.CapitalizeFirstLetter)(g.default.preparing(a.options.style)) } ${ (0, j.default)(a.state.itemId, a.state.itemAmount) }`,
+                action: 'to check status',
+                allowedToInteract: !0
+            }), a.interactiveZones.onInteraction = () => {
+                a.openDeviceUI();
+            };
+    };
+    var l = m;
+}), c.register('v2cUN0', function(b, d) {
+    a(b.exports, 'default', function() {
+        return g;
+    });
+    var d = c('RJ/fk'),
+        e = c('bavPu0');
+    const f = a => a === e.CraftingTableStyle.plant ? 'plant' : a === e.CraftingTableStyle.craft ? 'craft' : 'purchase';
+    var g = {
+        noItems: a => `No items currently available to ${ f(a) }.`,
+        selectItem: a => `Select an item to ${ f(a) }...`,
+        availableToCraft: a => `Available To ${ (0, d.CapitalizeFirstLetter)(f(a)) }`,
+        instantNote: a => a === e.CraftingTableStyle.store ? 'Available immediately' : a === e.CraftingTableStyle.plant ? 'Grows instantly' : 'Crafts instantly',
+        durationNote: a => b => b === e.CraftingTableStyle.store ? `Takes ${ a } to prepare` : b === e.CraftingTableStyle.plant ? `Takes ${ a } to grow` : `Takes ${ a } to craft`,
+        expireVerb: a => a === e.CraftingTableStyle.plant ? 'goes bad' : 'expires',
+        resource: a => a === e.CraftingTableStyle.store ? 'resource' : 'ingredient',
+        preparing: a => a === e.CraftingTableStyle.store ? 'preparing' : a === e.CraftingTableStyle.plant ? 'growing' : 'crafting',
+        baseVerb: f
+    };
+}), c.register('2XxG10', function(b, c) {
+    a(b.exports, 'default', function() {
+        return d;
+    });
+    var d = {
+        secondsAdvantage: 5
+    };
+}), c.register('wktBO', function(b, d) {
+    a(b.exports, 'default', function() {
+        return f;
+    });
+    var d = c('PjB0f'),
+        e = c('bBQb9');
+    var f = (a, b) => {
+        let g = (0, e.ItemName)(a) || 'Item';
+        return b > 1 && (g += ` (${ (0, d.numberWithCommas)(b) })`), g;
+    };
+}), c.register('uGSxC', function(b, d) {
+    a(b.exports, 'default', function() {
+        return o;
+    });
+    var d = c('7Sbqr'),
+        e = c('JJQ0+'),
+        f = c('Ena4B'),
+        g = c('OlpXx'),
+        h = c('0sBay'),
+        i = c('FnxQ90'),
+        j = c('6LqnM'),
+        k = c('WdciG'),
+        l = c('4+6b1'),
+        m = c('GjnKF'),
+        n = c('xCR3e');
+    var o = a => {
+        const p = a.state.status;
+        if (p === i.CraftingTableStatus.idle && ((0, l.default)(a), (0, m.default)(a)), p !== i.CraftingTableStatus.crafting && p !== i.CraftingTableStatus.availableForCollection || (0, j.default)(a), p === i.CraftingTableStatus.availableForCollection && (a.pieces.item && h.default.itemReady.applyItemAnimation(a, a.pieces.item.view), (0, k.default)(a), a.state.itemDisposedAt || (0, m.default)(a), a.cull.isInsideView && !d.default.session.loadingPhase)) {
+            Date.now() - a.createdAt > 1500 && ((0, g.playSound)({
+                path: (0, e.default)('devices/crafting_table/complete.mp3'),
+                volume: (0, f.getVolume)({
+                    volume: 0.4,
+                    type: f.SoundType.soundEffect
+                })
+            }), a.particles.burst());
         }
-    }
-})), i.register("rUtvU", (function(t, a) {
-    e(t.exports, "AddOutline", (function() {
-        return s
-    }));
-    var r = i("gwuwo");
-    const s = e => {
-        if (!e.view || !e.view.active) return;
-        const t = {
+        a.deviceUI.update({
+            status: a.state.status
+        }), (0, n.default)(a);
+    };
+}), c.register('4+6b1', function(b, d) {
+    a(b.exports, 'default', function() {
+        return e;
+    });
+    var d = c('0sBay');
+    var e = a => {
+        if (a.pieces.item) {
+            const f = a.pieces.item;
+            a.pieces.item = void 0, a.tweens.add({
+                targets: f.view,
+                scale: 0,
+                opacity: 0.5,
+                duration: d.default.itemDestroyed.duration,
+                ease: d.default.itemDestroyed.ease,
+                onComplete: () => {
+                    f.destroy();
+                }
+            });
+        }
+        if (a.pieces.itemShine) {
+            const f = a.pieces.itemShine;
+            a.pieces.itemShine = void 0, a.tweens.add({
+                targets: f.view,
+                scale: 0,
+                opacity: 0.5,
+                duration: d.default.itemDestroyed.duration,
+                ease: d.default.itemDestroyed.ease,
+                onComplete: () => {
+                    f.destroy();
+                }
+            });
+        }
+    };
+}), c.register('GjnKF', function(b, c) {
+    a(b.exports, 'default', function() {
+        return d;
+    });
+    var d = a => {
+        a.pieces.progressBar.background && a.pieces.progressBar.bar && (a.pieces.progressBar.background.view.destroy(), a.pieces.progressBar.bar.view.destroy(), a.pieces.progressBar.background = void 0, a.pieces.progressBar.bar = void 0);
+    };
+}), c.register('A1VQU', function(b, n) {
+    a(b.exports, 'default', function() {
+        return k;
+    });
+    var d = c('4/f+U'),
+        e = c('tYqUt'),
+        f = c('95CV8'),
+        g = c('HBzWf'),
+        h = c('ysOmq'),
+        i = c('FnxQ90'),
+        j = c('2X2Wl');
+    var k = a => {
+        if (a.cull.isInsideView) {
+            if (a.state.status === i.CraftingTableStatus.crafting) {
+                var l, m, n;
+                const o = a.state.itemFinishesCraftingAt - a.state.craftingDurationMs,
+                    p = ((0, e.GetServerGameTimeWithCompensation)() - o) / a.state.craftingDurationMs;
+                (0, j.default)({
+                    device: a,
+                    completion: p,
+                    color: h.default.progressColor
+                });
+                const q = (0, d.clamp)(p, 0.25, 1);
+                null === (l = a.pieces) || void 0 === l || null === (m = l.item) || void 0 === m || null === (n = m.view) || void 0 === n || n.setAlpha(q);
+            }
+            var l, m, n, o, p;
+            if (a.state.status === i.CraftingTableStatus.availableForCollection)
+                if (null === (l = a.pieces) || void 0 === l || null === (m = l.item) || void 0 === m || null === (n = m.view) || void 0 === n || n.setAlpha(1), a.state.itemDisposedAt) {
+                    const q = a.state.itemDisposedAt - a.state.itemDisposalMs,
+                        r = 1 - ((0, e.GetServerGameTimeWithCompensation)() - q) / a.state.itemDisposalMs;
+                    (0, j.default)({
+                        device: a,
+                        completion: r,
+                        color: h.default.expirationColor
+                    });
+                }
+            if (a.itemIsOutlined)
+                if (!a.interactivity.withinBounds || a.state.status !== i.CraftingTableStatus.availableForCollection)
+                    a.itemIsOutlined = !1, (null === (o = a.pieces) || void 0 === o ? void 0 : o.item) && (0, g.RemoveOutline)({
+                        view: a.pieces.item.view
+                    });
+            if (a.interactivity.withinBounds)
+                a.state.status === i.CraftingTableStatus.availableForCollection && !a.itemIsOutlined && (null === (p = a.pieces.item) || void 0 === p ? void 0 : p.view) && (a.itemIsOutlined = !0, (0, f.AddOutline)({
+                    view: a.pieces.item.view
+                }));
+        }
+    };
+}), c.register('95CV8', function(b, a) {
+    a(b.exports, 'AddOutline', function() {
+        return e;
+    });
+    var d = c('dAmf5');
+    const e = a => {
+        if (!a.view || !a.view.active)
+            return;
+        const f = {
                 thickness: 2
             },
-            i = e.options ? {
-                ...t,
-                ...e.options
+            g = a.options ? {
+                ...f,
+                ...a.options
             } : {
-                ...t
+                ...f
             };
-        (0, r.default)().plugins.get("rexOutlinePipeline").add(e.view, i)
-    }
-})), i.register("5xt14", (function(t, a) {
-    e(t.exports, "RemoveOutline", (function() {
-        return s
-    }));
-    var r = i("gwuwo");
-    const s = e => {
-        e.view && (0, r.default)().plugins.get("rexOutlinePipeline").remove(e.view)
-    }
-})), i.register("9SvNC", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return n
-    }));
-    var r = i("bDCcz"),
-        s = i("cRaEs");
-    var n = {
+        (0, d.default)().plugins.get('rexOutlinePipeline').add(a.view, g);
+    };
+}), c.register('HBzWf', function(b, a) {
+    a(b.exports, 'RemoveOutline', function() {
+        return e;
+    });
+    var d = c('dAmf5');
+    const e = a => {
+        a.view && (0, d.default)().plugins.get('rexOutlinePipeline').remove(a.view);
+    };
+}), c.register('ysOmq', function(b, a) {
+    a(b.exports, 'default', function() {
+        return f;
+    });
+    var d = c('HMNV0'),
+        e = c('bavPu0');
+    var f = {
         width: 55,
         height: 12,
         backgroundColor: 16777215,
@@ -692,59 +703,59 @@ i.register("jhAjg", (function(t, a) {
         borderWidth: 5,
         progressColor: 4431943,
         expirationColor: 15092249,
-        yOffset: e => e.options.style === s.CraftingTableStyle.plant ? 70 : (0, r.isPlatformer)() ? -75 : 85
-    }
-})), i.register("eIE9W", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return n
-    }));
-    var r = i("9SvNC"),
-        s = i("hzrgE");
-    var n = e => {
+        yOffset: a => a.options.style === e.CraftingTableStyle.plant ? 70 : (0, d.isPlatformer)() ? -75 : 85
+    };
+}), c.register('2X2Wl', function(b, a) {
+    a(b.exports, 'default', function() {
+        return f;
+    });
+    var d = c('ysOmq'),
+        e = c('rx+Gh');
+    var f = a => {
         const {
-            device: t,
-            completion: i
-        } = e;
-        t.pieces.progressBar.bar && t.pieces.progressBar.background || (0, s.default)(t), t.pieces.progressBar.bar.updateFillColor({
-            color: e.color,
+            device: g,
+            completion: h
+        } = i;
+        g.pieces.progressBar.bar && g.pieces.progressBar.background || (0, e.default)(g), g.pieces.progressBar.bar.updateFillColor({
+            color: i.color,
             blockRedraw: !0
-        }), t.pieces.progressBar.bar.updateDimensions({
-            height: r.default.height,
-            width: r.default.width * i
-        }), t.pieces.progressBar.bar.view.setX(t.x - (r.default.width - r.default.width * i) / 2)
-    }
-})), i.register("hzrgE", (function(t, a) {
-    e(t.exports, "default", (function() {
-        return o
-    }));
-    var r = i("cLS8f"),
-        s = i("9SvNC"),
-        n = i("51atS");
-    var o = e => {
-        e.pieces.progressBar.background && e.pieces.progressBar.background.destroy(), e.pieces.progressBar.bar && e.pieces.progressBar.bar.destroy(), e.pieces.progressBar.background = e.parts.add.rect({
-            width: s.default.width,
-            height: s.default.height,
-            y: s.default.yOffset(e),
-            color: s.default.backgroundColor,
-            borderColor: s.default.borderColor,
-            borderWidth: s.default.borderWidth,
+        }), g.pieces.progressBar.bar.updateDimensions({
+            height: d.default.height,
+            width: d.default.width * h
+        }), g.pieces.progressBar.bar.view.setX(g.x - (d.default.width - d.default.width * h) / 2);
+    };
+}), c.register('rx+Gh', function(b, a) {
+    a(b.exports, 'default', function() {
+        return g;
+    });
+    var d = c('0sBay'),
+        e = c('ysOmq'),
+        f = c('RPYAs');
+    var g = a => {
+        a.pieces.progressBar.background && a.pieces.progressBar.background.destroy(), a.pieces.progressBar.bar && a.pieces.progressBar.bar.destroy(), a.pieces.progressBar.background = a.parts.add.rect({
+            width: e.default.width,
+            height: e.default.height,
+            y: e.default.yOffset(a),
+            color: e.default.backgroundColor,
+            borderColor: e.default.borderColor,
+            borderWidth: e.default.borderWidth,
             borderAlpha: 1,
-            layerId: (0, n.GetCraftingTableDeviceLayer)(e)
-        }), e.pieces.progressBar.bar = e.parts.add.rect({
-            width: s.default.width,
-            height: s.default.height,
-            y: s.default.yOffset(e),
-            color: s.default.progressColor,
-            layerId: (0, n.GetCraftingTableDeviceLayer)(e)
-        }), e.pieces.progressBar.background.view.setScale(0), e.pieces.progressBar.bar.view.setAlpha(0), e.tweens.add({
-            targets: e.pieces.progressBar.background.view,
+            layerId: (0, f.GetCraftingTableDeviceLayer)(a)
+        }), a.pieces.progressBar.bar = a.parts.add.rect({
+            width: e.default.width,
+            height: e.default.height,
+            y: e.default.yOffset(a),
+            color: e.default.progressColor,
+            layerId: (0, f.GetCraftingTableDeviceLayer)(a)
+        }), a.pieces.progressBar.background.view.setScale(0), a.pieces.progressBar.bar.view.setAlpha(0), a.tweens.add({
+            targets: a.pieces.progressBar.background.view,
             scale: 1,
-            duration: r.default.itemCreated.duration,
-            ease: r.default.itemCreated.ease,
+            duration: d.default.itemCreated.duration,
+            ease: d.default.itemCreated.ease,
             onComplete: () => {
-                var t;
-                (null === (t = e.pieces.progressBar.bar) || void 0 === t ? void 0 : t.view) && e.pieces.progressBar.bar.view.setAlpha(1)
+                var h;
+                (null === (h = a.pieces.progressBar.bar) || void 0 === h ? void 0 : h.view) && a.pieces.progressBar.bar.view.setAlpha(1);
             }
-        })
-    }
-}));
+        });
+    };
+});

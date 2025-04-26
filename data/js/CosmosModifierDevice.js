@@ -1,36 +1,36 @@
-function e(e, s, o, t) {
-    Object.defineProperty(e, s, {
+function a(a, b, o, t) {
+    Object.defineProperty(a, b, {
         get: o,
         set: t,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var s = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-s.register("efON3", (function(o, t) {
-    var n;
-    n = o.exports, Object.defineProperty(n, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('Nu0H2', function(o, t) {
+    var c;
+    c = o.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(o.exports, "default", (function() {
-        return u
-    }));
-    var r = s("4uojN"),
-        i = s("6Tpu2"),
-        a = s("bNmF9"),
-        f = s("6VXC4");
-    class l extends a.default {
-        constructor(e) {
-            super(e), (0, r.isPublishedVersion)() || (0, i.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(f.BaseAsset))
+    }), a(o.exports, 'default', function() {
+        return i;
+    });
+    var d = b('Bpt+p'),
+        e = b('5Ux1a'),
+        f = b('sgILU'),
+        g = b('HyFtC');
+    class h extends f.default {
+        constructor(a) {
+            super(a), (0, d.isPublishedVersion)() || (0, e.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(g.BaseAsset));
         }
     }
-    var u = l
-})), s.register("6VXC4", (function(o, t) {
-    e(o.exports, "BaseAsset", (function() {
-        return n
-    }));
-    const n = {
-        imageId: "cosmos_modifier",
-        imageUrl: (0, s("alREA").default)("devices/cosmos_modifier/icon.png")
-    }
-}));
+    var i = j;
+}), b.register('HyFtC', function(o, t) {
+    a(o.exports, 'BaseAsset', function() {
+        return c;
+    });
+    const c = {
+        imageId: 'cosmos_modifier',
+        imageUrl: (0, b('JJQ0+').default)('devices/cosmos_modifier/icon.png')
+    };
+});

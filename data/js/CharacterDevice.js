@@ -1,68 +1,68 @@
-function e(e, t, i, a) {
-    Object.defineProperty(e, t, {
-        get: i,
-        set: a,
+function a(a, b, s, h) {
+    Object.defineProperty(a, b, {
+        get: s,
+        set: h,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var t = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-t.register("1PnOo", (function(i, a) {
-    var s;
-    s = i.exports, Object.defineProperty(s, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('smd1O', function(s, h) {
+    var c;
+    c = s.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(i.exports, "default", (function() {
-        return y
-    }));
-    var n = t("divCp"),
-        r = t("4uojN"),
-        o = t("6Tpu2"),
-        d = t("cnijD"),
-        h = t("cK78N"),
-        l = t("bNmF9"),
-        c = t("2vrTm"),
-        p = t("alREA"),
-        u = t("050o1"),
-        v = t("bDCcz"),
-        f = t("81UFP"),
-        g = t("bvStP"),
-        w = t("Bn6v3");
-    class m extends l.default {
-        constructor(e) {
-            super(e), (0, n.default)(this, "onStateChange", (e => {
-                (0, o.InPreGamePhase)() || "active" === e && (this.state.active ? (this.interactiveZones.setForceDisabled(!1), this.tweenAlpha(1)) : (this.interactiveZones.setForceDisabled(!0), this.tweenAlpha(0)))
-            })), (0, n.default)(this, "createPreviewVisuals", (() => {
-                const e = this.options.skinId.replace("character_", ""),
-                    t = (0, p.default)(`characters/spine/normalized_preview/${e}.png`);
+    }), a(s.exports, 'default', function() {
+        return r;
+    });
+    var d = b('UM8oI'),
+        e = b('Bpt+p'),
+        f = b('5Ux1a'),
+        g = b('wSwKo5'),
+        h = b('/Lvpl17'),
+        i = b('sgILU'),
+        j = b('SZ9Pa0'),
+        k = b('JJQ0+'),
+        l = b('Q0Vn8'),
+        m = b('HMNV0'),
+        n = b('eaWFX'),
+        o = b('cMsWT'),
+        p = b('Ea3Jh');
+    class q extends i.default {
+        constructor(a) {
+            super(a), (0, d.default)(this, 'onStateChange', a => {
+                (0, f.InPreGamePhase)() || 'active' === a && (this.state.active ? (this.interactiveZones.setForceDisabled(!1), this.tweenAlpha(1)) : (this.interactiveZones.setForceDisabled(!0), this.tweenAlpha(0)));
+            }), (0, d.default)(this, 'createPreviewVisuals', () => {
+                const r = this.options.skinId.replace('character_', ''),
+                    s = (0, k.default)(`characters/spine/normalized_preview/${ r }.png`);
                 this.skin = this.parts.add.sprite({
                     y: 50,
-                    imageId: t,
-                    imageUrl: t,
+                    imageId: s,
+                    imageUrl: s,
                     flipX: this.options.flipX,
-                    manualDepth: this.options.useNaturalDepth ? (0, w.GetCharacterDepthFromYData)(this.y + 34, 1) : void 0,
-                    depthChange: (0, u.default)(2),
-                    onReady: e => {
-                        e.view.setScale(.28), e.view.setOrigin(.5, 1), e.view.alpha = this.state.active ? 1 : 0, !this.options.activeOnStart && (0, o.InPreGamePhase)() && (e.view.alpha = .5)
+                    manualDepth: this.options.useNaturalDepth ? (0, p.GetCharacterDepthFromYData)(this.y + 34, 1) : void 0,
+                    depthChange: (0, l.default)(2),
+                    onReady: r => {
+                        r.view.setScale(0.28), r.view.setOrigin(0.5, 1), r.view.alpha = this.state.active ? 1 : 0, !this.options.activeOnStart && (0, f.InPreGamePhase)() && (r.view.alpha = 0.5);
                     }
-                })
-            })), (0, n.default)(this, "createSpineVisuals", (() => {
+                });
+            }), (0, d.default)(this, 'createSpineVisuals', () => {
                 this.spine = this.parts.add.characterSpine({
                     y: 34,
                     skinId: this.options.skinId,
-                    manualDepth: this.options.useNaturalDepth ? (0, w.GetCharacterDepthFromYData)(this.y + 34, 1) : void 0,
+                    manualDepth: this.options.useNaturalDepth ? (0, p.GetCharacterDepthFromYData)(this.y + 34, 1) : void 0,
                     flipX: this.options.flipX
-                })
-            })), (0, n.default)(this, "createShadow", (() => {
-                (0, v.isPlatformer)() || (this.shadow = this.parts.add.sprite({
+                });
+            }), (0, d.default)(this, 'createShadow', () => {
+                (0, m.isPlatformer)() || (this.shadow = this.parts.add.sprite({
                     y: 45,
-                    imageId: "character-shadow",
-                    imageUrl: (0, p.default)("characters/shadow.png"),
-                    onReady: e => {
-                        e.view.setOrigin(.5, 1), e.view.setScale(f.SHADOW_SCALE), e.view.alpha = this.state.active ? f.SHADOW_ALPHA : 0, !this.options.activeOnStart && (0, o.InPreGamePhase)() && (e.view.alpha = .5 * f.SHADOW_ALPHA)
+                    imageId: 'character-shadow',
+                    imageUrl: (0, k.default)('characters/shadow.png'),
+                    onReady: a => {
+                        a.view.setOrigin(0.5, 1), a.view.setScale(n.SHADOW_SCALE), a.view.alpha = this.state.active ? n.SHADOW_ALPHA : 0, !this.options.activeOnStart && (0, f.InPreGamePhase)() && (a.view.alpha = 0.5 * n.SHADOW_ALPHA);
                     }
-                }))
-            })), (0, n.default)(this, "setupInteractivity", (() => {
+                }));
+            }), (0, d.default)(this, 'setupInteractivity', () => {
                 this.options.interactionEnabled && (this.interactiveZone = this.interactiveZones.add.circle({
                     r: this.options.radius
                 }), this.interactiveZones.setForceDisabled(!this.state.active), this.interactiveZones.setInfo({
@@ -70,94 +70,97 @@ t.register("1PnOo", (function(i, a) {
                     allowedToInteract: !0,
                     duration: this.options.interactionDuration
                 }), this.interactiveZones.setCanInteractThroughColliders(!1), this.interactiveZones.onInteraction = () => {
-                    this.sendToServerDevice(c.Messages.interacted)
-                })
-            })), (0, n.default)(this, "tweenAlpha", (e => {
-                var t, i;
-                (null === (t = this.spine) || void 0 === t ? void 0 : t.view) && this.tweens.add({
+                    this.sendToServerDevice(j.Messages.interacted);
+                });
+            }), (0, d.default)(this, 'tweenAlpha', a => {
+                var r, s;
+                (null === (r = this.spine) || void 0 === r ? void 0 : r.view) && this.tweens.add({
                     targets: this.spine.view,
-                    alpha: e,
+                    alpha: a,
                     duration: 100
-                }), (null === (i = this.shadow) || void 0 === i ? void 0 : i.view) && this.tweens.add({
+                }), (null === (s = this.shadow) || void 0 === s ? void 0 : s.view) && this.tweens.add({
                     targets: this.shadow.view,
-                    alpha: e,
+                    alpha: a,
                     duration: 100
-                })
-            })), (0, n.default)(this, "setupVisualEditing", (() => {
-                if (!(0, o.InPreGamePhase)() || !(0, r.isSavedVersion)()) return;
-                if (!this.options.interactionEnabled) return;
-                const e = (0, h.FetchOptionSchemaProperty)(this, "radius");
+                });
+            }), (0, d.default)(this, 'setupVisualEditing', () => {
+                if (!(0, f.InPreGamePhase)() || !(0, e.isSavedVersion)())
+                    return;
+                if (!this.options.interactionEnabled)
+                    return;
+                const r = (0, h.FetchOptionSchemaProperty)(this, 'radius');
                 this.visualEditing.add.circle({
                     radius: this.options.radius,
-                    minRadius: e.min,
-                    maxRadius: e.max,
+                    minRadius: r.min,
+                    maxRadius: r.max,
                     rotable: !1,
-                    onChange: e => {
-                        (0, d.ReplaceVisualEditingPreview)(e.x, e.y, {
-                            radius: e.radius
-                        })
+                    onChange: r => {
+                        (0, g.ReplaceVisualEditingPreview)(r.x, r.y, {
+                            radius: r.radius
+                        });
                     }
-                })
-            })), this.layers.setDefaultLayer(g.default.DepthSortedCharactersAndDevices), (0, o.InPreGamePhase)() || this.isPreview ? this.createPreviewVisuals() : this.createSpineVisuals(), this.createShadow(), this.setupInteractivity(), this.setupVisualEditing()
+                });
+            }), this.layers.setDefaultLayer(o.default.DepthSortedCharactersAndDevices), (0, f.InPreGamePhase)() || this.isPreview ? this.createPreviewVisuals() : this.createSpineVisuals(), this.createShadow(), this.setupInteractivity(), this.setupVisualEditing();
         }
     }
-    var y = m
-})), t.register("cnijD", (function(i, a) {
-    e(i.exports, "ReplaceVisualEditingPreview", (function() {
-        return d
-    }));
-    var s = t("dWqri"),
-        n = t("eCsxR"),
-        r = t("ittx1"),
-        o = t("dNzyU");
-    const d = (e, t, i) => {
-        const a = (0, o.FetchVisualEditingPreview)(),
-            d = (0, r.FetchCurrentlyEditedDevice)();
-        if (!d || !a) return;
-        const h = d.layers.isOnNaturalDepth() ? void 0 : t + d.layers.getDepthShift();
-        (0, n.default)({
-            deviceOption: a.deviceOption,
-            id: s.VisualEditingConstants.previewId,
-            x: e,
-            y: t,
-            depth: h,
-            layerId: d.layers.getLayer(),
-            name: a.name,
+    var r = s;
+}), b.register('wSwKo5', function(d, h) {
+    a(d.exports, 'ReplaceVisualEditingPreview', function() {
+        return g;
+    });
+    var c = b('2pEsK'),
+        d = b('Am0b71'),
+        e = b('KDS1x'),
+        f = b('83+vO');
+    const g = (a, b, d) => {
+        const h = (0, f.FetchVisualEditingPreview)(),
+            i = (0, e.FetchCurrentlyEditedDevice)();
+        if (!i || !h)
+            return;
+        const j = i.layers.isOnNaturalDepth() ? void 0 : b + i.layers.getDepthShift();
+        (0, d.default)({
+            deviceOption: h.deviceOption,
+            id: c.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: j,
+            layerId: i.layers.getLayer(),
+            name: h.name,
             isPreview: !0,
             options: {
-                ...a.options,
-                ...i
+                ...h.options,
+                ...d
             },
             placedByClient: !0,
-            state: a.deviceOption.defaultState
-        })
-    }
-})), t.register("eCsxR", (function(i, a) {
-    e(i.exports, "default", (function() {
-        return r
-    }));
-    var s = t("gwuwo"),
-        n = t("fCcDT");
-    var r = e => {
-        (0, s.default)().worldManager.devices.getDeviceById(e.id) && (0, n.default)(e)
-    }
-})), t.register("cK78N", (function(t, i) {
-    e(t.exports, "FetchOptionSchemaProperty", (function() {
-        return a
-    }));
-    const a = (e, t) => {
-        var i, a, s;
-        const n = e.deviceOption.optionSchema.options.find((e => e.key === t));
+            state: h.deviceOption.defaultState
+        });
+    };
+}), b.register('Am0b71', function(d, c) {
+    a(d.exports, 'default', function() {
+        return e;
+    });
+    var c = b('dAmf5'),
+        d = b('jgFbX');
+    var e = a => {
+        (0, c.default)().worldManager.devices.getDeviceById(a.id) && (0, d.default)(a);
+    };
+}), b.register('/Lvpl17', function(b, d) {
+    a(b.exports, 'FetchOptionSchemaProperty', function() {
+        return c;
+    });
+    const c = (a, b) => {
+        var d, e, f;
+        const g = a.deviceOption.optionSchema.options.find(a => a.key === b);
         return {
-            min: null === (i = null == n ? void 0 : n.option.props) || void 0 === i ? void 0 : i.min,
-            max: null === (a = null == n ? void 0 : n.option.props) || void 0 === a ? void 0 : a.max,
-            step: null === (s = null == n ? void 0 : n.option.props) || void 0 === s ? void 0 : s.step
-        }
-    }
-})), t.register("2vrTm", (function(t, i) {
-    e(t.exports, "Messages", (function() {
-        return a
-    }));
-    let a;
-    (a || (a = {})).interacted = "interacted"
-}));
+            min: null === (d = null == g ? void 0 : g.option.props) || void 0 === d ? void 0 : d.min,
+            max: null === (e = null == g ? void 0 : g.option.props) || void 0 === e ? void 0 : e.max,
+            step: null === (f = null == g ? void 0 : g.option.props) || void 0 === f ? void 0 : f.step
+        };
+    };
+}), b.register('SZ9Pa0', function(b, i) {
+    a(b.exports, 'Messages', function() {
+        return c;
+    });
+    let c;
+    (c || (c = {})).interacted = 'interacted';
+});

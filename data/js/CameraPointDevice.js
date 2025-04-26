@@ -1,52 +1,52 @@
-var e = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-e.register("cdLEk", (function(t, a) {
-    var i, s, r, n, o;
-    i = t.exports, Object.defineProperty(i, "__esModule", {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('EEJ7C', function(p, a) {
+    var b, c, d, e, f;
+    b = p.exports, Object.defineProperty(b, '__esModule', {
         value: !0,
         configurable: !0
-    }), s = t.exports, r = "default", n = function() {
-        return P
-    }, Object.defineProperty(s, r, {
-        get: n,
-        set: o,
+    }), c = p.exports, d = 'default', e = function() {
+        return p;
+    }, Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
-    var d = e("divCp"),
-        l = e("bvStP"),
-        u = e("alREA"),
-        c = e("4uojN"),
-        f = e("6Tpu2"),
-        h = e("bNmF9"),
-        v = e("gwuwo");
-    const p = (0, u.default)("devices/camera_point/icon.png");
-    class m extends h.default {
-        destroy(e) {
-            this.resetCameraPoint(), super.destroy(e)
+    var g = a('UM8oI'),
+        h = a('cMsWT'),
+        i = a('JJQ0+'),
+        j = a('Bpt+p'),
+        k = a('5Ux1a'),
+        l = a('sgILU'),
+        m = a('dAmf5');
+    const n = (0, i.default)('devices/camera_point/icon.png');
+    class o extends l.default {
+        destroy(a) {
+            this.resetCameraPoint(), super.destroy(a);
         }
-        constructor(e) {
-            super(e), (0, d.default)(this, "resetCameraPoint", (() => {
-                (0, v.default)().cameraHelper.resetCameraPointDevice()
-            })), (0, d.default)(this, "setCameraPoint", (() => {
-                (0, v.default)().cameraHelper.setCameraPointDevice(this.id, this.x, this.y)
-            })), (0, d.default)(this, "onStateChange", (e => {
-                var t;
-                (0, f.InPreGamePhase)() || "active" === e && (!1 === this.state.active && (null === (t = (0, v.default)().cameraHelper.activeCameraPoint) || void 0 === t ? void 0 : t.deviceId) === this.id && this.resetCameraPoint(), this.state.active && this.setCameraPoint())
-            })), this.layers.setDefaultLayer(l.default.DevicesUnderCharacters), (0, f.InPreGamePhase)() && (0, c.isSavedVersion)() ? this.parts.add.sprite({
-                imageId: p,
-                imageUrl: p,
-                onReady: e => {
-                    e.view.setScale(.15), this.tweens.add({
-                        targets: e.view,
-                        scale: .17,
-                        duration: 1e3,
+        constructor(a) {
+            super(a), (0, g.default)(this, 'resetCameraPoint', () => {
+                (0, m.default)().cameraHelper.resetCameraPointDevice();
+            }), (0, g.default)(this, 'setCameraPoint', () => {
+                (0, m.default)().cameraHelper.setCameraPointDevice(this.id, this.x, this.y);
+            }), (0, g.default)(this, 'onStateChange', a => {
+                var p;
+                (0, k.InPreGamePhase)() || 'active' === a && (!1 === this.state.active && (null === (p = (0, m.default)().cameraHelper.activeCameraPoint) || void 0 === p ? void 0 : p.deviceId) === this.id && this.resetCameraPoint(), this.state.active && this.setCameraPoint());
+            }), this.layers.setDefaultLayer(h.default.DevicesUnderCharacters), (0, k.InPreGamePhase)() && (0, j.isSavedVersion)() ? this.parts.add.sprite({
+                imageId: n,
+                imageUrl: n,
+                onReady: a => {
+                    a.view.setScale(0.15), this.tweens.add({
+                        targets: a.view,
+                        scale: 0.17,
+                        duration: 1000,
                         yoyo: !0,
                         repeat: -1,
-                        ease: "Sine.easeInOut"
-                    })
+                        ease: 'Sine.easeInOut'
+                    });
                 }
-            }) : this.state.active && this.setCameraPoint()
+            }) : this.state.active && this.setCameraPoint();
         }
     }
-    var P = m
-}));
+    var p = q;
+});

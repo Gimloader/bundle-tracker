@@ -1,49 +1,49 @@
-function t(t, e, i, a) {
-    Object.defineProperty(t, e, {
-        get: i,
-        set: a,
+function a(a, b, q, r) {
+    Object.defineProperty(a, b, {
+        get: q,
+        set: r,
         enumerable: !0,
         configurable: !0
-    })
+    });
 }
-var e = ("undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}).parcelRequire388b;
-e.register("hfWPP", (function(i, a) {
-    var s;
-    s = i.exports, Object.defineProperty(s, "__esModule", {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('vOEdf', function(q, r) {
+    var c;
+    c = q.exports, Object.defineProperty(c, '__esModule', {
         value: !0,
         configurable: !0
-    }), t(i.exports, "default", (function() {
-        return g
-    }));
-    var o = e("divCp"),
-        n = e("bNmF9"),
-        l = e("3afnZ"),
-        r = e("bG93V"),
-        h = e("iMOcM"),
-        d = e("iRjsB"),
-        c = e("4Sil9"),
-        v = e("6Tpu2"),
-        u = e("4uojN"),
-        f = e("bvStP");
-    class p extends n.default {
-        constructor(t) {
-            super(t), (0, o.default)(this, "activityAlpha", 1), (0, o.default)(this, "createView", (() => {
+    }), a(q.exports, 'default', function() {
+        return o;
+    });
+    var d = b('UM8oI'),
+        e = b('sgILU'),
+        f = b('IfbTZ'),
+        g = b('wQnLu'),
+        h = b('PjB0f'),
+        i = b('7Sbqr'),
+        j = b('vTaNl'),
+        k = b('5Ux1a'),
+        l = b('Bpt+p'),
+        m = b('cMsWT');
+    class n extends e.default {
+        constructor(a) {
+            super(a), (0, d.default)(this, 'activityAlpha', 1), (0, d.default)(this, 'createView', () => {
                 this.back = this.parts.add.sprite({
-                    ...l.BackAsset,
-                    onReady: t => {
-                        t.view.setScale(.4), t.view.alpha = this.activityAlpha
+                    ...f.BackAsset,
+                    onReady: a => {
+                        a.view.setScale(0.4), a.view.alpha = this.activityAlpha;
                     }
                 }), this.front = this.parts.add.sprite({
-                    ...l.FrontAsset,
+                    ...f.FrontAsset,
                     depthChange: 150,
-                    onReady: t => {
-                        t.view.setScale(.4), t.view.alpha = this.activityAlpha
+                    onReady: a => {
+                        a.view.setScale(0.4), a.view.alpha = this.activityAlpha;
                     }
                 }), this.front2 = this.parts.add.sprite({
-                    ...l.Front2Asset,
+                    ...f.Front2Asset,
                     depthChange: 100,
-                    onReady: t => {
-                        t.view.setScale(.4), t.view.alpha = this.activityAlpha
+                    onReady: a => {
+                        a.view.setScale(0.4), a.view.alpha = this.activityAlpha;
                     }
                 }), this.shadow = this.shadows.add({
                     x: 0,
@@ -51,8 +51,8 @@ e.register("hfWPP", (function(i, a) {
                     r1: 150,
                     r2: 60,
                     alphaMultip: this.activityAlpha
-                })
-            })), (0, o.default)(this, "createColliders", (() => {
+                });
+            }), (0, d.default)(this, 'createColliders', () => {
                 this.colliders.add.box({
                     x: -100,
                     y: 10,
@@ -74,83 +74,83 @@ e.register("hfWPP", (function(i, a) {
                     w: 120,
                     h: 20,
                     angle: 20
-                })
-            })), (0, o.default)(this, "setupInteractiveZones", (() => {
+                });
+            }), (0, d.default)(this, 'setupInteractiveZones', () => {
                 this.interactiveZones.add.circle({
                     x: -20,
                     y: 70,
                     r: 60
                 });
-                const t = !d.default.session.cosmosBlocked && (0, h.isLoggedIn)(),
-                    e = t ? c.ChangingBoothConsts.interactiveInfo.normal : d.default.session.cosmosBlocked ? c.ChangingBoothConsts.interactiveInfo.cosmosBlocked : c.ChangingBoothConsts.interactiveInfo.notLoggedIn,
-                    i = t ? void 0 : c.ChangingBoothConsts.interactiveInfo.notAvailableHeader,
-                    a = t ? void 0 : c.ChangingBoothConsts.interactiveInfo.notAvailableColor;
+                const o = !i.default.session.cosmosBlocked && (0, h.isLoggedIn)(),
+                    p = o ? j.ChangingBoothConsts.interactiveInfo.normal : i.default.session.cosmosBlocked ? j.ChangingBoothConsts.interactiveInfo.cosmosBlocked : j.ChangingBoothConsts.interactiveInfo.notLoggedIn,
+                    q = o ? void 0 : j.ChangingBoothConsts.interactiveInfo.notAvailableHeader,
+                    r = o ? void 0 : j.ChangingBoothConsts.interactiveInfo.notAvailableColor;
                 this.interactiveZones.setInfo({
-                    message: e,
-                    allowedToInteract: t,
-                    duration: c.ChangingBoothConsts.interactiveInfo.duration,
-                    topHeader: i,
-                    topHeaderColor: a
+                    message: p,
+                    allowedToInteract: o,
+                    duration: j.ChangingBoothConsts.interactiveInfo.duration,
+                    topHeader: q,
+                    topHeaderColor: r
                 }), this.interactiveZones.onInteraction = () => {
-                    this.sendToServerDevice(r.Messages.open)
-                }
-            })), (0, o.default)(this, "openDeviceUI", (() => {
-                this.deviceUI.open({})
-            })), (0, o.default)(this, "updateActiveState", (() => {
-                const t = this.state.active ? 1 : 0;
+                    this.sendToServerDevice(g.Messages.open);
+                };
+            }), (0, d.default)(this, 'openDeviceUI', () => {
+                this.deviceUI.open({});
+            }), (0, d.default)(this, 'updateActiveState', () => {
+                const o = this.state.active ? 1 : 0;
                 this.tweens.add({
                     targets: this,
-                    activityAlpha: t,
+                    activityAlpha: o,
                     duration: 100,
                     onUpdate: () => {
-                        var t, e, i, a, s, o;
-                        null === (t = this.back) || void 0 === t || null === (e = t.view) || void 0 === e || e.setAlpha(this.activityAlpha), null === (i = this.front) || void 0 === i || null === (a = i.view) || void 0 === a || a.setAlpha(this.activityAlpha), null === (s = this.front2) || void 0 === s || null === (o = s.view) || void 0 === o || o.setAlpha(this.activityAlpha), this.shadow.alphaMultip = this.activityAlpha
+                        var p, q, r, s, t, u;
+                        null === (p = this.back) || void 0 === p || null === (q = p.view) || void 0 === q || q.setAlpha(this.activityAlpha), null === (r = this.front) || void 0 === r || null === (s = r.view) || void 0 === s || s.setAlpha(this.activityAlpha), null === (t = this.front2) || void 0 === t || null === (u = t.view) || void 0 === u || u.setAlpha(this.activityAlpha), this.shadow.alphaMultip = this.activityAlpha;
                     }
-                }), this.interactiveZones.setForceDisabled(!this.state.active), this.state.active || this.deviceUI.close()
-            })), (0, o.default)(this, "onStateChange", (t => {
-                "active" === t && this.updateActiveState()
-            })), (0, o.default)(this, "checkIfCollidersEnabled", (() => this.state.active)), this.layers.setDefaultLayer(f.default.DepthSortedCharactersAndDevices), this.activityAlpha = this.state.active ? 1 : 0, (0, v.InPreGamePhase)() && (0, u.isSavedVersion)() && (this.activityAlpha = 1), this.createView(), this.createColliders(), this.setupInteractiveZones()
+                }), this.interactiveZones.setForceDisabled(!this.state.active), this.state.active || this.deviceUI.close();
+            }), (0, d.default)(this, 'onStateChange', a => {
+                'active' === a && this.updateActiveState();
+            }), (0, d.default)(this, 'checkIfCollidersEnabled', () => this.state.active), this.layers.setDefaultLayer(m.default.DepthSortedCharactersAndDevices), this.activityAlpha = this.state.active ? 1 : 0, (0, k.InPreGamePhase)() && (0, l.isSavedVersion)() && (this.activityAlpha = 1), this.createView(), this.createColliders(), this.setupInteractiveZones();
         }
     }
-    var g = p
-})), e.register("3afnZ", (function(i, a) {
-    t(i.exports, "BackAsset", (function() {
-        return o
-    })), t(i.exports, "FrontAsset", (function() {
-        return n
-    })), t(i.exports, "Front2Asset", (function() {
-        return l
-    }));
-    var s = e("alREA");
-    const o = {
-            imageId: (0, s.default)("devices/changing_booth/back.png"),
-            imageUrl: (0, s.default)("devices/changing_booth/back.png")
+    var o = p;
+}), b.register('IfbTZ', function(i, c) {
+    a(i.exports, 'BackAsset', function() {
+        return d;
+    }), a(i.exports, 'FrontAsset', function() {
+        return e;
+    }), a(i.exports, 'Front2Asset', function() {
+        return f;
+    });
+    var c = b('JJQ0+');
+    const d = {
+            imageId: (0, c.default)('devices/changing_booth/back.png'),
+            imageUrl: (0, c.default)('devices/changing_booth/back.png')
         },
-        n = {
-            imageId: (0, s.default)("devices/changing_booth/front.png"),
-            imageUrl: (0, s.default)("devices/changing_booth/front.png")
+        e = {
+            imageId: (0, c.default)('devices/changing_booth/front.png'),
+            imageUrl: (0, c.default)('devices/changing_booth/front.png')
         },
-        l = {
-            imageId: (0, s.default)("devices/changing_booth/front_2.png"),
-            imageUrl: (0, s.default)("devices/changing_booth/front_2.png")
-        }
-})), e.register("bG93V", (function(e, i) {
-    let a;
-    t(e.exports, "Messages", (function() {
-        return a
-    })), (a || (a = {})).open = "open"
-})), e.register("4Sil9", (function(e, i) {
-    t(e.exports, "ChangingBoothConsts", (function() {
-        return a
-    }));
-    const a = {
+        f = {
+            imageId: (0, c.default)('devices/changing_booth/front_2.png'),
+            imageUrl: (0, c.default)('devices/changing_booth/front_2.png')
+        };
+}), b.register('wQnLu', function(b, i) {
+    let c;
+    a(b.exports, 'Messages', function() {
+        return c;
+    }), (c || (c = {})).open = 'open';
+}), b.register('vTaNl', function(b, i) {
+    a(b.exports, 'ChangingBoothConsts', function() {
+        return c;
+    });
+    const c = {
         interactiveInfo: {
-            normal: "Change Your Cosmetics",
-            cosmosBlocked: "Cosmos Blocked",
-            notLoggedIn: "Log In to Use",
-            notAvailableHeader: "Not Available",
-            notAvailableColor: "#ffcdd2",
+            normal: 'Change Your Cosmetics',
+            cosmosBlocked: 'Cosmos Blocked',
+            notLoggedIn: 'Log In to Use',
+            notAvailableHeader: 'Not Available',
+            notAvailableColor: '#ffcdd2',
             duration: 1
         }
-    }
-}));
+    };
+});
