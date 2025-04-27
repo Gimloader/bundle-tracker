@@ -111,7 +111,7 @@ export function formatJs(code: string) {
 
 const jsDir = join(__dirname, "../data/js");
 
-export function renameModules(dir = jsDir) {
+export async function renameModules(callback: (file: string) => void, dir = jsDir) {
 	// read all the modules, then generate a new id
 	const files = fs.readdirSync(dir);
 
@@ -119,7 +119,7 @@ export function renameModules(dir = jsDir) {
 	let assignedIds = new Set<string>();
 
 	for(const file of files) {
-		const code = fs.readFileSync(join(dir, file)).toString();
+		const code = await Bun.file(join(dir, file)).text();
 		const [registerRegex, importRegex] = getModuleRegex(code);
 
 		// get the indexes of module definitions
@@ -162,7 +162,7 @@ export function renameModules(dir = jsDir) {
 	}
 
 	for(const file of files) {
-		let code = fs.readFileSync(join(dir, file)).toString();
+		let code = await Bun.file(join(dir, file)).text();
 		const [registerRegex, importRegex] = getModuleRegex(code);
 
 		// update to use the new module ids
@@ -183,8 +183,8 @@ export function renameModules(dir = jsDir) {
 			code = code.slice(0, start + 2) + newId + code.slice(start + 7);
 		}
 		
-		console.log("Finalized", file);
-		fs.writeFileSync(join(dir, file), beautify.js(code));
+		callback(file);
+		await Bun.file(join(dir, file)).write(beautify.js(code));
 	}
 }
 
