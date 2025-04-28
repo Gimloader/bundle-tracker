@@ -1,67 +1,67 @@
-function a(a, b, n, o) {
-    Object.defineProperty(a, b, {
-        get: n,
-        set: o,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('PYyKB', function(n, o) {
-    var c;
-    c = n.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('vVuY/', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(n.exports, 'default', function() {
-        return m;
+    }), _n(b.exports, 'default', function() {
+        return _n;
     });
-    var d = b('JJQ0+'),
-        e = b('Bpt+p'),
-        f = b('5Ux1a'),
-        g = b('0x6bL'),
-        h = b('sgILU'),
-        i = b('phu0d'),
-        j = b('Gqspz'),
-        k = b('Sbl6W');
-    class l extends h.default {
-        constructor(a) {
-            if (super(a), (0, e.isPublishedVersion)() || (0, f.InGamePhase)())
+    var e = a('2Xvuf'),
+        f = a('9tz3H'),
+        g = a('/pbxo'),
+        h = a('btxlR'),
+        i = a('I35Ay'),
+        j = a('+uQv7'),
+        k = a('dTXti'),
+        l = a('2M6xn');
+    class m extends i.default {
+        constructor(_n) {
+            if (super(_n), (0, f.isPublishedVersion)() || (0, g.InGamePhase)())
                 return;
-            let m = k.UnknownItemAsset.imageUrl;
-            const n = (0, g.default)(this.options.item);
-            n && (m = n.previewImage);
-            const o = j.default.Overlay;
-            new(0, i.default)({
+            let o = l.UnknownItemAsset.imageUrl;
+            const p = (0, h.default)(this.options.item);
+            p && (o = p.previewImage);
+            const q = k.default.Overlay;
+            new(0, j.default)({
                 device: this,
-                baseColor: o.baseColor,
-                boxColor: o.boxColor,
+                baseColor: q.baseColor,
+                boxColor: q.boxColor,
                 content: {
                     topLeftIcon: {
-                        image: (0, d.default)('devices/crafting_recipe/icon.png'),
+                        image: (0, e.default)('devices/crafting_recipe/icon.png'),
                         scale: 1
                     },
                     icon: {
-                        image: m,
+                        image: o,
                         scale: 1
                     }
                 }
             });
         }
     }
-    var m = n;
-}), b.register('Sbl6W', function(t, i) {
-    a(t.exports, 'BaseAsset', function() {
-        return d;
-    }), a(t.exports, 'UnknownItemAsset', function() {
-        return e;
+    var _n = m;
+}), a.register('2M6xn', function(b, c) {
+    e(b.exports, 'BaseAsset', function() {
+        return _e;
+    }), e(b.exports, 'UnknownItemAsset', function() {
+        return _f;
     });
-    var c = b('JJQ0+');
-    const d = {
-            imageId: (0, c.default)('devices/item_granter/base.png'),
-            imageUrl: (0, c.default)('devices/item_granter/base.png')
+    var d = a('2Xvuf');
+    const _e = {
+            imageId: (0, d.default)('devices/item_granter/base.png'),
+            imageUrl: (0, d.default)('devices/item_granter/base.png')
         },
-        e = {
+        _f = {
             imageId: '__UNKNOWN_ITEM',
-            imageUrl: (0, c.default)('devices/item_granter/question-mark-2.png')
+            imageUrl: (0, d.default)('devices/item_granter/question-mark-2.png')
         };
 });

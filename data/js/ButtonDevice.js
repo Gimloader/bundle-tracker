@@ -1,74 +1,74 @@
-function a(a, b, r, s) {
-    Object.defineProperty(a, b, {
-        get: r,
-        set: s,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('BIjv3', function(r, s) {
-    var c;
-    c = r.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('0UIli', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(r.exports, 'default', function() {
-        return q;
+    }), _r(b.exports, 'default', function() {
+        return _r;
     });
-    var d = b('UM8oI'),
-        e = b('Bpt+p'),
-        f = b('5Ux1a'),
-        g = b('wSwKo5'),
-        h = b('/Lvpl17'),
-        i = b('JJQ0+'),
-        j = b('Ena4B'),
-        k = b('OlpXx'),
-        l = b('sgILU'),
-        m = b('wQZw2'),
-        n = b('4+2h8'),
-        o = b('SZ9Pa');
-    class p extends l.default {
-        constructor(a) {
-            super(a), (0, d.default)(this, 'onStateChange', a => {
-                (0, f.InPreGamePhase)() || 'active' === a && (this.state.active ? (this.interactiveZones.setForceDisabled(!1), this.isDown() || this.setButtonState(n.ButtonState.active)) : (this.interactiveZones.setForceDisabled(!0), this.isDown() || this.setButtonState(n.ButtonState.inactive)));
-            }), (0, d.default)(this, 'isDown', () => this.currentState === n.ButtonState.pressed), (0, d.default)(this, 'setButtonState', a => {
-                var q, r, s, t, u, v;
-                this.currentState = a, !1 === this.options.visibleInGame && (0, f.InGamePhase)() || (a === n.ButtonState.pressed && (0, k.playSound)({
-                    path: (0, i.default)('devices/button/click.mp3'),
-                    volume: (0, j.getVolume)({
+    var e = a('1bFPu'),
+        f = a('9tz3H'),
+        g = a('/pbxo'),
+        h = a('IFO6W13'),
+        i = a('R2Ucl10'),
+        j = a('2Xvuf'),
+        k = a('1f1YX'),
+        l = a('07pQo'),
+        m = a('I35Ay'),
+        n = a('YVysl'),
+        o = a('AtbEP'),
+        p = a('kmL8E');
+    class q extends m.default {
+        constructor(_r) {
+            super(_r), (0, e.default)(this, 'onStateChange', _r => {
+                (0, g.InPreGamePhase)() || 'active' === _r && (this.state.active ? (this.interactiveZones.setForceDisabled(!1), this.isDown() || this.setButtonState(o.ButtonState.active)) : (this.interactiveZones.setForceDisabled(!0), this.isDown() || this.setButtonState(o.ButtonState.inactive)));
+            }), (0, e.default)(this, 'isDown', () => this.currentState === o.ButtonState.pressed), (0, e.default)(this, 'setButtonState', _r => {
+                var s, t, u, v, w, x;
+                this.currentState = _r, !1 === this.options.visibleInGame && (0, g.InGamePhase)() || (_r === o.ButtonState.pressed && (0, l.playSound)({
+                    path: (0, j.default)('devices/button/click.mp3'),
+                    volume: (0, k.getVolume)({
                         volume: 0.2,
-                        type: j.SoundType.soundEffect
+                        type: k.SoundType.soundEffect
                     })
-                }), (null === this || void 0 === this || null === (q = this.active) || void 0 === q ? void 0 : q.view) && (this.active.view.alpha = 0), (null === this || void 0 === this || null === (r = this.pressed) || void 0 === r ? void 0 : r.view) && (this.pressed.view.alpha = 0), (null === this || void 0 === this || null === (s = this.inactive) || void 0 === s ? void 0 : s.view) && (this.inactive.view.alpha = 0), a === n.ButtonState.active ? (null === this || void 0 === this || null === (t = this.active) || void 0 === t ? void 0 : t.view) && (this.active.view.alpha = 1) : a === n.ButtonState.inactive ? (null === this || void 0 === this || null === (u = this.inactive) || void 0 === u ? void 0 : u.view) && (this.inactive.view.alpha = 1) : a === n.ButtonState.pressed && (null === this || void 0 === this || null === (v = this.pressed) || void 0 === v ? void 0 : v.view) && (this.pressed.view.alpha = 1));
-            }), (0, d.default)(this, 'setupVisualEditing', () => {
-                if (!(0, f.InPreGamePhase)() || !(0, e.isSavedVersion)())
+                }), (null === this || void 0 === this || null === (s = this.active) || void 0 === s ? void 0 : s.view) && (this.active.view.alpha = 0), (null === this || void 0 === this || null === (t = this.pressed) || void 0 === t ? void 0 : t.view) && (this.pressed.view.alpha = 0), (null === this || void 0 === this || null === (u = this.inactive) || void 0 === u ? void 0 : u.view) && (this.inactive.view.alpha = 0), _r === o.ButtonState.active ? (null === this || void 0 === this || null === (v = this.active) || void 0 === v ? void 0 : v.view) && (this.active.view.alpha = 1) : _r === o.ButtonState.inactive ? (null === this || void 0 === this || null === (w = this.inactive) || void 0 === w ? void 0 : w.view) && (this.inactive.view.alpha = 1) : _r === o.ButtonState.pressed && (null === this || void 0 === this || null === (x = this.pressed) || void 0 === x ? void 0 : x.view) && (this.pressed.view.alpha = 1));
+            }), (0, e.default)(this, 'setupVisualEditing', () => {
+                if (!(0, g.InPreGamePhase)() || !(0, f.isSavedVersion)())
                     return;
-                const q = (0, h.FetchOptionSchemaProperty)(this, 'radius'),
-                    r = (0, h.FetchOptionSchemaProperty)(this, 'size');
+                const s = (0, i.FetchOptionSchemaProperty)(this, 'radius'),
+                    t = (0, i.FetchOptionSchemaProperty)(this, 'size');
                 this.visualEditing.add.circle({
                     radius: this.options.size,
                     angle: -90,
-                    minRadius: r.min,
-                    maxRadius: r.max,
+                    minRadius: t.min,
+                    maxRadius: t.max,
                     rotable: !1,
                     movable: !1,
-                    onChange: q => {
-                        (0, g.ReplaceVisualEditingPreview)(q.x, q.y, {
-                            size: q.radius
+                    onChange: s => {
+                        (0, h.ReplaceVisualEditingPreview)(s.x, s.y, {
+                            size: s.radius
                         });
                     }
                 }), this.visualEditing.add.circle({
                     radius: this.options.radius,
-                    minRadius: q.min,
-                    maxRadius: q.max,
+                    minRadius: s.min,
+                    maxRadius: s.max,
                     rotable: !1,
-                    onChange: q => {
-                        (0, g.ReplaceVisualEditingPreview)(q.x, q.y, {
-                            radius: q.radius
+                    onChange: s => {
+                        (0, h.ReplaceVisualEditingPreview)(s.x, s.y, {
+                            radius: s.radius
                         });
                     }
                 });
-            }), this.setupVisualEditing(), (!0 === this.options.visibleInGame || (0, f.InPreGamePhase)() && (0, e.isSavedVersion)()) && (this.colliders.add.circle({
+            }), this.setupVisualEditing(), (!0 === this.options.visibleInGame || (0, g.InPreGamePhase)() && (0, f.isSavedVersion)()) && (this.colliders.add.circle({
                 x: 0,
                 y: -10 * this.options.size / 50,
                 r: 45 * this.options.size / 50
@@ -78,25 +78,25 @@ b.register('BIjv3', function(r, s) {
                 w: 150 * this.options.size / 50,
                 h: 80 * this.options.size / 50
             }), this.active = this.parts.add.sprite({
-                ...m.Green1,
-                onReady: a => {
-                    a.view.setScale(this.options.size / 50);
+                ...n.Green1,
+                onReady: _r => {
+                    _r.view.setScale(this.options.size / 50);
                 }
             }), this.pressed = this.parts.add.sprite({
-                ...m.Green2,
-                onReady: a => {
-                    a.view.setScale(this.options.size / 50);
+                ...n.Green2,
+                onReady: _r => {
+                    _r.view.setScale(this.options.size / 50);
                 }
             }), this.inactive = this.parts.add.sprite({
-                ...m.Orange,
-                onReady: a => {
-                    a.view.setScale(this.options.size / 50);
+                ...n.Orange,
+                onReady: _r => {
+                    _r.view.setScale(this.options.size / 50);
                 }
-            }), (0, f.InPreGamePhase)() && this.options.activeOnStart || (0, f.InGamePhase)() && this.state.active ? this.setButtonState(n.ButtonState.active) : this.setButtonState(n.ButtonState.inactive));
-            const q = 2 * Math.max(1.3 * this.options.size, this.options.radius);
+            }), (0, g.InPreGamePhase)() && this.options.activeOnStart || (0, g.InGamePhase)() && this.state.active ? this.setButtonState(o.ButtonState.active) : this.setButtonState(o.ButtonState.inactive));
+            const s = 2 * Math.max(1.3 * this.options.size, this.options.radius);
             this.boundingBox.setHardcoded({
-                width: q,
-                height: q
+                width: s,
+                height: s
             }), this.interactiveZone = this.interactiveZones.add.circle({
                 r: this.options.radius
             }), this.interactiveZones.setForceDisabled(!this.state.active), this.interactiveZones.setInfo({
@@ -104,97 +104,97 @@ b.register('BIjv3', function(r, s) {
                 allowedToInteract: !0,
                 duration: this.options.interactionDuration
             }), this.interactiveZones.setCanInteractThroughColliders(!this.options.visibleInGame), this.interactiveZones.onInteraction = () => {
-                this.sendToServerDevice(o.Messages.interacted), this.setButtonState(n.ButtonState.pressed), setTimeout(() => {
-                    this.state.active ? this.setButtonState(n.ButtonState.active) : this.setButtonState(n.ButtonState.inactive);
+                this.sendToServerDevice(p.Messages.interacted), this.setButtonState(o.ButtonState.pressed), setTimeout(() => {
+                    this.state.active ? this.setButtonState(o.ButtonState.active) : this.setButtonState(o.ButtonState.inactive);
                 }, 200);
             };
         }
     }
-    var q = r;
-}), b.register('wSwKo5', function(d, h) {
-    a(d.exports, 'ReplaceVisualEditingPreview', function() {
-        return g;
+    var _r = q;
+}), a.register('IFO6W13', function(b, c) {
+    t(b.exports, 'ReplaceVisualEditingPreview', function() {
+        return _h;
     });
-    var c = b('2pEsK'),
-        d = b('Am0b71'),
-        e = b('KDS1x'),
-        f = b('83+vO');
-    const g = (a, b, d) => {
-        const h = (0, f.FetchVisualEditingPreview)(),
-            i = (0, e.FetchCurrentlyEditedDevice)();
-        if (!i || !h)
+    var d = a('HqwPM'),
+        e = a('+oovY4'),
+        f = a('A17vD'),
+        g = a('HXXiu');
+    const _h = (t, a, b) => {
+        const i = (0, g.FetchVisualEditingPreview)(),
+            j = (0, f.FetchCurrentlyEditedDevice)();
+        if (!j || !i)
             return;
-        const j = i.layers.isOnNaturalDepth() ? void 0 : b + i.layers.getDepthShift();
-        (0, d.default)({
-            deviceOption: h.deviceOption,
-            id: c.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: j,
-            layerId: i.layers.getLayer(),
-            name: h.name,
+        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
+        (0, e.default)({
+            deviceOption: i.deviceOption,
+            id: d.VisualEditingConstants.previewId,
+            x: t,
+            y: a,
+            depth: k,
+            layerId: j.layers.getLayer(),
+            name: i.name,
             isPreview: !0,
             options: {
-                ...h.options,
-                ...d
+                ...i.options,
+                ...b
             },
             placedByClient: !0,
-            state: h.deviceOption.defaultState
+            state: i.deviceOption.defaultState
         });
     };
-}), b.register('Am0b71', function(d, c) {
-    a(d.exports, 'default', function() {
-        return e;
+}), a.register('+oovY4', function(b, c) {
+    t(b.exports, 'default', function() {
+        return _f;
     });
-    var c = b('dAmf5'),
-        d = b('jgFbX');
-    var e = a => {
-        (0, c.default)().worldManager.devices.getDeviceById(a.id) && (0, d.default)(a);
+    var d = a('D5xLI'),
+        e = a('aIyMH');
+    var _f = t => {
+        (0, d.default)().worldManager.devices.getDeviceById(t.id) && (0, e.default)(t);
     };
-}), b.register('/Lvpl17', function(b, d) {
-    a(b.exports, 'FetchOptionSchemaProperty', function() {
-        return c;
+}), a.register('R2Ucl10', function(b, c) {
+    t(b.exports, 'FetchOptionSchemaProperty', function() {
+        return _d;
     });
-    const c = (a, b) => {
-        var d, e, f;
-        const g = a.deviceOption.optionSchema.options.find(a => a.key === b);
+    const _d = (t, b) => {
+        var e, f, g;
+        const h = t.deviceOption.optionSchema.options.find(t => t.key === b);
         return {
-            min: null === (d = null == g ? void 0 : g.option.props) || void 0 === d ? void 0 : d.min,
-            max: null === (e = null == g ? void 0 : g.option.props) || void 0 === e ? void 0 : e.max,
-            step: null === (f = null == g ? void 0 : g.option.props) || void 0 === f ? void 0 : f.step
+            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
+            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
+            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
         };
     };
-}), b.register('wQZw2', function(i, c) {
-    a(i.exports, 'Green1', function() {
-        return d;
-    }), a(i.exports, 'Green2', function() {
-        return e;
-    }), a(i.exports, 'Orange', function() {
-        return f;
+}), a.register('YVysl', function(b, c) {
+    t(b.exports, 'Green1', function() {
+        return _e;
+    }), t(b.exports, 'Green2', function() {
+        return _f;
+    }), t(b.exports, 'Orange', function() {
+        return _g;
     });
-    var c = b('JJQ0+');
-    const d = {
+    var d = a('2Xvuf');
+    const _e = {
             imageId: 'button_device_green_1',
-            imageUrl: (0, c.default)('devices/button/button-device-green-1.png')
+            imageUrl: (0, d.default)('devices/button/button-device-green-1.png')
         },
-        e = {
+        _f = {
             imageId: 'button_device_green_2',
-            imageUrl: (0, c.default)('devices/button/button-device-green-2.png')
+            imageUrl: (0, d.default)('devices/button/button-device-green-2.png')
         },
-        f = {
+        _g = {
             imageId: 'button_device_orange',
-            imageUrl: (0, c.default)('devices/button/button-device-orange.png')
+            imageUrl: (0, d.default)('devices/button/button-device-orange.png')
         };
-}), b.register('4+2h8', function(b, i) {
-    let c;
-    var d;
-    a(b.exports, 'ButtonState', function() {
-        return c;
-    }), (d = c || (c = {})).active = 'active', d.pressed = 'pressed', d.inactive = 'inactive';
-}), b.register('SZ9Pa', function(b, i) {
-    a(b.exports, 'Messages', function() {
-        return c;
+}), a.register('AtbEP', function(b, c) {
+    let d;
+    var e;
+    t(b.exports, 'ButtonState', function() {
+        return d;
+    }), (e = d || (d = {})).active = 'active', e.pressed = 'pressed', e.inactive = 'inactive';
+}), a.register('kmL8E', function(b, c) {
+    t(b.exports, 'Messages', function() {
+        return _d;
     });
-    let c;
-    (c || (c = {})).interacted = 'interacted';
+    let _d;
+    (_d || (_d = {})).interacted = 'interacted';
 });

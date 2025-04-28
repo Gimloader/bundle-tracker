@@ -1,214 +1,214 @@
-function a(a, b, d, c) {
-    Object.defineProperty(a, b, {
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
         get: d,
-        set: c,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('GXRth', function(d, c) {
-    var c;
-    c = d.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('oq9hm', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function() {
-        return q;
+    }), _r(b.exports, 'default', function() {
+        return _r;
     });
-    var d = b('UM8oI'),
-        e = b('MoC1b0'),
-        f = b('fe2aZ'),
-        g = b('Bpt+p'),
-        h = b('5Ux1a'),
-        i = b('SCq5x4'),
-        j = b('sgILU'),
-        k = b('f4ICC'),
-        l = b('s7uDP'),
-        m = b('Q0Vn8'),
-        n = b('/Lvpl17'),
-        o = b('wSwKo5');
-    class p extends j.default {
+    var e = a('1bFPu'),
+        f = a('25/u70'),
+        g = a('h2EGG'),
+        h = a('9tz3H'),
+        i = a('/pbxo'),
+        j = a('kg3wN6'),
+        k = a('I35Ay'),
+        l = a('v7QIu'),
+        m = a('3eJ7g'),
+        n = a('5CmLs'),
+        o = a('R2Ucl10'),
+        p = a('IFO6W13');
+    class q extends k.default {
         getAlpha() {
-            return (0, h.InGamePhase)() ? this.state.active ? e.ZoneConstants.alpha : 0 : (0, g.isSavedVersion)() && i.default.shouldShowInnerZone(this) ? e.ZoneConstants.alpha : 0;
+            return (0, i.InGamePhase)() ? this.state.active ? f.ZoneConstants.alpha : 0 : (0, h.isSavedVersion)() && j.default.shouldShowInnerZone(this) ? f.ZoneConstants.alpha : 0;
         }
-        constructor(a) {
-            if (super(a), (0, d.default)(this, 'onStateChange', a => {
-                    if ('active' === a && this.zone && this.zone.view) {
-                        const q = this.getAlpha();
-                        this.zone.updateAlpha(q);
+        constructor(_r) {
+            if (super(_r), (0, e.default)(this, 'onStateChange', _r => {
+                    if ('active' === _r && this.zone && this.zone.view) {
+                        const s = this.getAlpha();
+                        this.zone.updateAlpha(s);
                     }
-                }), (0, d.default)(this, 'setupVisualEditing', () => {
-                    if (!(0, h.InPreGamePhase)() || !(0, g.isSavedVersion)())
+                }), (0, e.default)(this, 'setupVisualEditing', () => {
+                    if (!(0, i.InPreGamePhase)() || !(0, h.isSavedVersion)())
                         return;
-                    if (this.options.shape === k.ZoneShape.circle) {
-                        const q = (0, n.FetchOptionSchemaProperty)(this, 'radius');
+                    if (this.options.shape === l.ZoneShape.circle) {
+                        const s = (0, o.FetchOptionSchemaProperty)(this, 'radius');
                         return void this.visualEditing.add.circle({
                             radius: this.options.radius,
                             rotable: !1,
-                            minRadius: q.min,
-                            maxRadius: q.max,
-                            onChange: q => {
-                                (0, o.ReplaceVisualEditingPreview)(q.x, q.y, {
-                                    radius: q.radius
+                            minRadius: s.min,
+                            maxRadius: s.max,
+                            onChange: s => {
+                                (0, p.ReplaceVisualEditingPreview)(s.x, s.y, {
+                                    radius: s.radius
                                 });
                             }
                         });
                     }
-                    const q = (0, n.FetchOptionSchemaProperty)(this, 'width'),
-                        r = (0, n.FetchOptionSchemaProperty)(this, 'height');
+                    const s = (0, o.FetchOptionSchemaProperty)(this, 'width'),
+                        t = (0, o.FetchOptionSchemaProperty)(this, 'height');
                     this.visualEditing.add.box({
                         width: this.options.width,
                         height: this.options.height,
                         angle: this.options.rotation,
-                        minWidth: q.min,
-                        maxWidth: q.max,
-                        minHeight: r.min,
-                        maxHeight: r.max,
+                        minWidth: s.min,
+                        maxWidth: s.max,
+                        minHeight: t.min,
+                        maxHeight: t.max,
                         keepRatio: !1,
-                        onChange: q => {
-                            (0, o.ReplaceVisualEditingPreview)(q.x, q.y, {
-                                rotation: q.angle,
-                                width: q.width,
-                                height: q.height
+                        onChange: s => {
+                            (0, p.ReplaceVisualEditingPreview)(s.x, s.y, {
+                                rotation: s.angle,
+                                width: s.width,
+                                height: s.height
                             });
                         }
                     });
-                }), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) {
-                const q = this.parts.add.sprite({
-                    ...l.BaseAsset,
-                    depthChange: (0, m.default)(2)
+                }), (0, i.InPreGamePhase)() && (0, h.isSavedVersion)()) {
+                const s = this.parts.add.sprite({
+                    ...m.BaseAsset,
+                    depthChange: (0, n.default)(2)
                 });
-                q.view.angle = this.options.rotation, q.view.setScale(0.5);
+                s.view.angle = this.options.rotation, s.view.setScale(0.5);
             }
-            if ((0, h.InGamePhase)() || (0, g.isPublishedVersion)() ? this.options.visibleInGame : i.default.shouldShow(this)) {
+            if ((0, i.InGamePhase)() || (0, h.isPublishedVersion)() ? this.options.visibleInGame : j.default.shouldShow(this)) {
                 this.setupVisualEditing();
-                const q = (0, f.GetNumberFromHexColor)(this.options.color);
-                if (this.options.shape === k.ZoneShape.circle)
+                const s = (0, g.GetNumberFromHexColor)(this.options.color);
+                if (this.options.shape === l.ZoneShape.circle)
                     return void(this.zone = this.parts.add.circle({
-                        color: q,
+                        color: s,
                         alpha: this.getAlpha(),
                         r: this.options.radius,
-                        depthChange: (0, m.default)(1),
+                        depthChange: (0, n.default)(1),
                         ignoreInput: !0,
-                        borderColor: q,
-                        borderAlpha: (0, h.InGamePhase)() ? 0 : 1,
+                        borderColor: s,
+                        borderAlpha: (0, i.InGamePhase)() ? 0 : 1,
                         borderWidth: 4
                     }));
                 this.zone = this.parts.add.rect({
-                    color: q,
+                    color: s,
                     alpha: this.getAlpha(),
                     width: Math.abs(this.options.width),
                     height: Math.abs(this.options.height),
                     angle: this.options.rotation,
-                    borderColor: q,
-                    borderAlpha: (0, h.InGamePhase)() ? 0 : 1,
+                    borderColor: s,
+                    borderAlpha: (0, i.InGamePhase)() ? 0 : 1,
                     borderWidth: 4,
-                    depthChange: (0, m.default)(1),
+                    depthChange: (0, n.default)(1),
                     ignoreInput: !0
                 });
             }
         }
     }
-    var q = r;
-}), b.register('MoC1b0', function(b, d) {
-    a(b.exports, 'ZoneConstants', function() {
-        return c;
+    var _r = q;
+}), a.register('25/u70', function(b, c) {
+    _h(b.exports, 'ZoneConstants', function() {
+        return _d;
     });
-    const c = {
+    const _d = {
         alpha: 0.5,
         activateDeactivateTime: 100
     };
-}), b.register('SCq5x4', function(d, c) {
-    a(d.exports, 'ZonedDeviceDisplayOptions', function() {
-        return d;
-    }), a(d.exports, 'default', function() {
-        return g;
+}), a.register('kg3wN6', function(b, c) {
+    _h(b.exports, 'ZonedDeviceDisplayOptions', function() {
+        return _e;
+    }), _h(b.exports, 'default', function() {
+        return _h;
     });
-    var c = b('aGdJe4');
-    let d;
-    var e;
-    (e = d || (d = {})).visible = 'visible', e.bordersOnly = 'bordersOnly', e.fullyHidden = 'fullyHidden';
-    const f = () => {
-        const g = localStorage.getItem(c.default.zonedDeviceViews);
-        return g || d.bordersOnly;
+    var d = a('+MyMe6');
+    let _e;
+    var f;
+    (f = _e || (_e = {})).visible = 'visible', f.bordersOnly = 'bordersOnly', f.fullyHidden = 'fullyHidden';
+    const g = () => {
+        const _h = localStorage.getItem(d.default.zonedDeviceViews);
+        return _h || _e.bordersOnly;
     };
-    var g = {
-        shouldShow: a => f() !== d.fullyHidden,
-        shouldShowInnerZone: a => f() !== d.bordersOnly
+    var _h = {
+        shouldShow: e => g() !== _e.fullyHidden,
+        shouldShowInnerZone: e => g() !== _e.bordersOnly
     };
-}), b.register('aGdJe4', function(b, d) {
-    a(b.exports, 'default', function() {
-        return c;
+}), a.register('+MyMe6', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var c = {
+    var _d = {
         zonedDeviceViews: 'zoned-device-views'
     };
-}), b.register('f4ICC', function(b, d) {
-    let c;
-    var d;
-    a(b.exports, 'ZoneShape', function() {
-        return c;
-    }), (d = c || (c = {})).rectangle = 'rectangle', d.circle = 'circle';
-}), b.register('s7uDP', function(d, c) {
-    a(d.exports, 'BaseAsset', function() {
+}), a.register('v7QIu', function(b, c) {
+    let d;
+    var e;
+    e(b.exports, 'ZoneShape', function() {
         return d;
+    }), (e = d || (d = {})).rectangle = 'rectangle', e.circle = 'circle';
+}), a.register('3eJ7g', function(b, c) {
+    e(b.exports, 'BaseAsset', function() {
+        return _e;
     });
-    var c = b('JJQ0+');
-    const d = {
-        imageId: (0, c.default)('devices/zone/base.png'),
-        imageUrl: (0, c.default)('devices/zone/base.png')
+    var d = a('2Xvuf');
+    const _e = {
+        imageId: (0, d.default)('devices/zone/base.png'),
+        imageUrl: (0, d.default)('devices/zone/base.png')
     };
-}), b.register('/Lvpl17', function(b, d) {
-    a(b.exports, 'FetchOptionSchemaProperty', function() {
-        return c;
+}), a.register('R2Ucl10', function(b, c) {
+    e(b.exports, 'FetchOptionSchemaProperty', function() {
+        return _d;
     });
-    const c = (a, b) => {
-        var d, e, f;
-        const g = a.deviceOption.optionSchema.options.find(a => a.key === b);
+    const _d = (e, b) => {
+        var e, f, g;
+        const h = e.deviceOption.optionSchema.options.find(e => e.key === b);
         return {
-            min: null === (d = null == g ? void 0 : g.option.props) || void 0 === d ? void 0 : d.min,
-            max: null === (e = null == g ? void 0 : g.option.props) || void 0 === e ? void 0 : e.max,
-            step: null === (f = null == g ? void 0 : g.option.props) || void 0 === f ? void 0 : f.step
+            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
+            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
+            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
         };
     };
-}), b.register('wSwKo5', function(i, h) {
-    a(i.exports, 'ReplaceVisualEditingPreview', function() {
-        return g;
+}), a.register('IFO6W13', function(b, c) {
+    e(b.exports, 'ReplaceVisualEditingPreview', function() {
+        return _h;
     });
-    var c = b('2pEsK'),
-        d = b('Am0b71'),
-        e = b('KDS1x'),
-        f = b('83+vO');
-    const g = (a, b, i) => {
-        const h = (0, f.FetchVisualEditingPreview)(),
-            i = (0, e.FetchCurrentlyEditedDevice)();
-        if (!i || !h)
+    var d = a('HqwPM'),
+        e = a('+oovY4'),
+        f = a('A17vD'),
+        g = a('HXXiu');
+    const _h = (e, a, b) => {
+        const i = (0, g.FetchVisualEditingPreview)(),
+            j = (0, f.FetchCurrentlyEditedDevice)();
+        if (!j || !i)
             return;
-        const j = i.layers.isOnNaturalDepth() ? void 0 : b + i.layers.getDepthShift();
-        (0, d.default)({
-            deviceOption: h.deviceOption,
-            id: c.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: j,
-            layerId: i.layers.getLayer(),
-            name: h.name,
+        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
+        (0, e.default)({
+            deviceOption: i.deviceOption,
+            id: d.VisualEditingConstants.previewId,
+            x: e,
+            y: a,
+            depth: k,
+            layerId: j.layers.getLayer(),
+            name: i.name,
             isPreview: !0,
             options: {
-                ...h.options,
-                ...i
+                ...i.options,
+                ...b
             },
             placedByClient: !0,
-            state: h.deviceOption.defaultState
+            state: i.deviceOption.defaultState
         });
     };
-}), b.register('Am0b71', function(i, n) {
-    a(i.exports, 'default', function() {
-        return e;
+}), a.register('+oovY4', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _f;
     });
-    var c = b('dAmf5'),
-        d = b('jgFbX');
-    var e = a => {
-        (0, c.default)().worldManager.devices.getDeviceById(a.id) && (0, d.default)(a);
+    var d = a('D5xLI'),
+        e = a('aIyMH');
+    var _f = e => {
+        (0, d.default)().worldManager.devices.getDeviceById(e.id) && (0, e.default)(e);
     };
 });

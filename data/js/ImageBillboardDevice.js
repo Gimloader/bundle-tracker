@@ -1,57 +1,57 @@
-function a(a, b, u, v) {
-    Object.defineProperty(a, b, {
-        get: u,
-        set: v,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('n2pQ5', function(u, v) {
-    var c;
-    c = u.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('wpD5k', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(u.exports, 'default', function() {
-        return t;
+    }), _u(b.exports, 'default', function() {
+        return _u;
     });
-    var d = b('UM8oI'),
-        e = b('sgILU'),
-        f = b('zHvBa'),
-        g = b('cMsWT'),
-        h = b('Mr5c3'),
-        i = b('EU1n7'),
-        j = b('KRp9M'),
-        k = b('fe2aZ'),
-        l = b('nEG71'),
-        m = b('5Ux1a'),
-        n = b('so9lE'),
-        o = b('Bpt+p'),
-        p = b('/Lvpl17'),
-        q = b('wSwKo5'),
-        r = b('hpAcY');
-    class s extends e.default {
+    var e = a('1bFPu'),
+        f = a('I35Ay'),
+        g = a('zoM4j'),
+        h = a('JqBF0'),
+        i = a('1Chka'),
+        j = a('t66nK'),
+        k = a('HbVXj'),
+        l = a('h2EGG'),
+        m = a('MfvC6'),
+        n = a('/pbxo'),
+        o = a('AVLqL'),
+        p = a('9tz3H'),
+        q = a('R2Ucl10'),
+        r = a('IFO6W13'),
+        s = a('kPDt8');
+    class t extends f.default {
         createImage() {
             if (!this.matchesPhase)
                 return;
-            if ((0, o.isPublishedVersion)() && (0, m.InPreGamePhase)() && 'No' === this.options.visibleOnGameStart)
+            if ((0, p.isPublishedVersion)() && (0, n.InPreGamePhase)() && 'No' === this.options.visibleOnGameStart)
                 return;
-            const t = (0, r.GetImageUrl)(this.state.imageUrl || this.options.imageUrl);
-            this.lastImageUrl = t, this.parts.add.sprite({
-                imageId: t,
-                imageUrl: t,
-                onReady: b => {
-                    if (t !== this.lastImageUrl)
-                        return void this.parts.destroySpecificPart(b.id);
-                    this.image && this.parts.destroySpecificPart(this.image.id), this.image = b;
-                    const u = (0, h.default)(t),
-                        v = (0, n.default)({
-                            width: u.width,
-                            height: u.height,
+            const _u = (0, s.GetImageUrl)(this.state.imageUrl || this.options.imageUrl);
+            this.lastImageUrl = _u, this.parts.add.sprite({
+                imageId: _u,
+                imageUrl: _u,
+                onReady: a => {
+                    if (_u !== this.lastImageUrl)
+                        return void this.parts.destroySpecificPart(a.id);
+                    this.image && this.parts.destroySpecificPart(this.image.id), this.image = a;
+                    const v = (0, i.default)(_u),
+                        w = (0, o.default)({
+                            width: v.width,
+                            height: v.height,
                             newWidth: 0.75 * Math.abs(this.options.width),
                             newHeight: 0.75 * Math.abs(this.options.height)
                         });
-                    b.view.displayWidth = v.width, b.view.displayHeight = v.height, this.boundingBox.clearHardcoded(), b.view.angle = this.options.rotation, (0, m.InGamePhase)() ? b.view.alpha = this.state.visible ? this.options.alpha : 0 : b.view.alpha = this.options.alpha;
+                    a.view.displayWidth = w.width, a.view.displayHeight = w.height, this.boundingBox.clearHardcoded(), a.view.angle = this.options.rotation, (0, n.InGamePhase)() ? a.view.alpha = this.state.visible ? this.options.alpha : 0 : a.view.alpha = this.options.alpha;
                 }
             });
         }
@@ -62,75 +62,75 @@ b.register('n2pQ5', function(u, v) {
             const u = this.state.frameColor || this.options.frameColor;
             if ('Transparent' === u)
                 return;
-            const v = (0, k.GetNumberFromHexColor)(u);
+            const v = (0, l.GetNumberFromHexColor)(u);
             this.frame = this.parts.add.rect({
                 color: v,
                 alpha: 1,
                 borderAlpha: 1,
                 width: Math.abs(this.options.width),
                 height: Math.abs(this.options.height),
-                borderColor: (0, k.GetNumberFromHexColor)((0, j.GetContrastColor)(u)),
+                borderColor: (0, l.GetNumberFromHexColor)((0, k.GetContrastColor)(u)),
                 borderWidth: 8,
                 cornerRadius: 10
             }), this.frame.view.angle = this.options.rotation;
         }
-        constructor(a) {
-            super(a), (0, d.default)(this, 'matchesPhase', !0), (0, d.default)(this, 'createVisuals', () => {
-                this.matchesPhase && (this.createFrame(), this.createImage()), this.boundingBox.setHardcoded((0, i.GetBoundingBoxForRotatedBox)({
+        constructor(u) {
+            super(u), (0, e.default)(this, 'matchesPhase', !0), (0, e.default)(this, 'createVisuals', () => {
+                this.matchesPhase && (this.createFrame(), this.createImage()), this.boundingBox.setHardcoded((0, j.GetBoundingBoxForRotatedBox)({
                     height: this.options.height,
                     width: this.options.width,
-                    rotation: (0, l.ConvertDegToRad)(this.options.rotation)
+                    rotation: (0, m.ConvertDegToRad)(this.options.rotation)
                 }));
-            }), (0, d.default)(this, 'onStateChange', a => {
-                'frameColor' === a && (this.createFrame(), this.createImage()), 'imageUrl' === a && this.createImage(), 'visible' === a && (0, m.InGamePhase)() && (this.state.visible ? (this.image && (this.image.view.alpha = 1), this.frame && (this.frame.view.alpha = 1)) : (this.image && (this.image.view.alpha = 0), this.frame && (this.frame.view.alpha = 0)));
-            }), (0, d.default)(this, 'setupVisualEditing', () => {
-                if (!(0, m.InPreGamePhase)() || !(0, o.isSavedVersion)())
+            }), (0, e.default)(this, 'onStateChange', u => {
+                'frameColor' === u && (this.createFrame(), this.createImage()), 'imageUrl' === u && this.createImage(), 'visible' === u && (0, n.InGamePhase)() && (this.state.visible ? (this.image && (this.image.view.alpha = 1), this.frame && (this.frame.view.alpha = 1)) : (this.image && (this.image.view.alpha = 0), this.frame && (this.frame.view.alpha = 0)));
+            }), (0, e.default)(this, 'setupVisualEditing', () => {
+                if (!(0, n.InPreGamePhase)() || !(0, p.isSavedVersion)())
                     return;
-                const t = (0, p.FetchOptionSchemaProperty)(this, 'width'),
-                    u = (0, p.FetchOptionSchemaProperty)(this, 'height');
+                const v = (0, q.FetchOptionSchemaProperty)(this, 'width'),
+                    w = (0, q.FetchOptionSchemaProperty)(this, 'height');
                 this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
                     angle: this.options.rotation,
-                    minWidth: t.min,
-                    maxWidth: t.max,
-                    minHeight: u.min,
-                    maxHeight: u.max,
+                    minWidth: v.min,
+                    maxWidth: v.max,
+                    minHeight: w.min,
+                    maxHeight: w.max,
                     keepRatio: !1,
-                    onChange: t => {
-                        (0, q.ReplaceVisualEditingPreview)(t.x, t.y, {
-                            width: t.width,
-                            height: t.height,
-                            rotation: t.angle
+                    onChange: v => {
+                        (0, r.ReplaceVisualEditingPreview)(v.x, v.y, {
+                            width: v.width,
+                            height: v.height,
+                            rotation: v.angle
                         });
                     }
                 });
-            }), this.layers.setDefaultLayer(g.default.DevicesAboveCharacters), this.setupVisualEditing();
-            let t = !0;
-            this.options.visibleDuringPhase === f.VisiblePhases.game && !(0, m.InGamePhase)() && (0, o.isPublishedVersion)() ? t = !1 : this.options.visibleDuringPhase !== f.VisiblePhases.preGame || (0, m.InPreGamePhase)() || (t = !1), this.matchesPhase = t, this.createVisuals();
+            }), this.layers.setDefaultLayer(h.default.DevicesAboveCharacters), this.setupVisualEditing();
+            let v = !0;
+            this.options.visibleDuringPhase === g.VisiblePhases.game && !(0, n.InGamePhase)() && (0, p.isPublishedVersion)() ? v = !1 : this.options.visibleDuringPhase !== g.VisiblePhases.preGame || (0, n.InPreGamePhase)() || (v = !1), this.matchesPhase = v, this.createVisuals();
         }
     }
-    var t = u;
-}), b.register('zHvBa', function(b, e) {
-    let c;
-    var d;
-    a(b.exports, 'VisiblePhases', function() {
-        return c;
-    }), (d = c || (c = {})).all = 'all', d.game = 'game', d.preGame = 'preGame';
-}), b.register('EU1n7', function(b, e) {
-    a(b.exports, 'GetBoundingBoxForRotatedBox', function() {
-        return c;
+    var _u = t;
+}), a.register('zoM4j', function(b, c) {
+    let d;
+    var e;
+    i(b.exports, 'VisiblePhases', function() {
+        return d;
+    }), (e = d || (d = {})).all = 'all', e.game = 'game', e.preGame = 'preGame';
+}), a.register('t66nK', function(b, c) {
+    i(b.exports, 'GetBoundingBoxForRotatedBox', function() {
+        return _d;
     });
-    const c = a => {
-        var d, e;
-        a.originX = null !== (d = a.originX) && void 0 !== d ? d : 0.5, a.originY = null !== (e = a.originY) && void 0 !== e ? e : 0.5;
+    const _d = i => {
+        var e, f;
+        i.originX = null !== (e = i.originX) && void 0 !== e ? e : 0.5, i.originY = null !== (f = i.originY) && void 0 !== f ? f : 0.5;
         const {
-            width: f,
-            height: g,
-            rotation: h,
-            originX: i,
-            originY: j
-        } = k, l = [], m = [];
+            width: g,
+            height: h,
+            rotation: i,
+            originX: j,
+            originY: k
+        } = i, l = [], m = [];
         [{
                 originX: 1,
                 originY: 1
@@ -147,71 +147,71 @@ b.register('n2pQ5', function(u, v) {
                 originX: 0,
                 originY: 0
             }
-        ].forEach(k => {
-            const n = Phaser.Math.Angle.Between(0, 0, (k.originX - i) * f, (k.originY - j) * g),
-                o = Phaser.Math.Distance.Between(0, 0, (k.originX - i) * f, (k.originY - j) * g);
-            l.push(o * Math.cos(n + h)), m.push(o * Math.sin(n + h));
+        ].forEach(i => {
+            const n = Phaser.Math.Angle.Between(0, 0, (i.originX - j) * g, (i.originY - k) * h),
+                o = Phaser.Math.Distance.Between(0, 0, (i.originX - j) * g, (i.originY - k) * h);
+            l.push(o * Math.cos(n + i)), m.push(o * Math.sin(n + i));
         });
         const n = Math.max(...l) - Math.min(...l),
             o = Math.max(...m) - Math.min(...m);
         return {
-            x: -i * n,
-            y: -j * o,
+            x: -j * n,
+            y: -k * o,
             width: n,
             height: o
         };
     };
-}), b.register('/Lvpl17', function(b, d) {
-    a(b.exports, 'FetchOptionSchemaProperty', function() {
-        return c;
+}), a.register('R2Ucl10', function(b, c) {
+    i(b.exports, 'FetchOptionSchemaProperty', function() {
+        return _d;
     });
-    const c = (a, b) => {
-        var d, e, f;
-        const g = a.deviceOption.optionSchema.options.find(a => a.key === b);
+    const _d = (i, b) => {
+        var e, f, g;
+        const h = i.deviceOption.optionSchema.options.find(i => i.key === b);
         return {
-            min: null === (d = null == g ? void 0 : g.option.props) || void 0 === d ? void 0 : d.min,
-            max: null === (e = null == g ? void 0 : g.option.props) || void 0 === e ? void 0 : e.max,
-            step: null === (f = null == g ? void 0 : g.option.props) || void 0 === f ? void 0 : f.step
+            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
+            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
+            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
         };
     };
-}), b.register('wSwKo5', function(t, h) {
-    a(t.exports, 'ReplaceVisualEditingPreview', function() {
-        return g;
+}), a.register('IFO6W13', function(b, c) {
+    i(b.exports, 'ReplaceVisualEditingPreview', function() {
+        return _h;
     });
-    var c = b('2pEsK'),
-        d = b('Am0b71'),
-        e = b('KDS1x'),
-        f = b('83+vO');
-    const g = (a, b, t) => {
-        const h = (0, f.FetchVisualEditingPreview)(),
-            i = (0, e.FetchCurrentlyEditedDevice)();
-        if (!i || !h)
+    var d = a('HqwPM'),
+        e = a('+oovY4'),
+        f = a('A17vD'),
+        g = a('HXXiu');
+    const _h = (i, a, b) => {
+        const i = (0, g.FetchVisualEditingPreview)(),
+            j = (0, f.FetchCurrentlyEditedDevice)();
+        if (!j || !i)
             return;
-        const j = i.layers.isOnNaturalDepth() ? void 0 : b + i.layers.getDepthShift();
-        (0, d.default)({
-            deviceOption: h.deviceOption,
-            id: c.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: j,
-            layerId: i.layers.getLayer(),
-            name: h.name,
+        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
+        (0, e.default)({
+            deviceOption: i.deviceOption,
+            id: d.VisualEditingConstants.previewId,
+            x: i,
+            y: a,
+            depth: k,
+            layerId: j.layers.getLayer(),
+            name: i.name,
             isPreview: !0,
             options: {
-                ...h.options,
-                ...t
+                ...i.options,
+                ...b
             },
             placedByClient: !0,
-            state: h.deviceOption.defaultState
+            state: i.deviceOption.defaultState
         });
     };
-}), b.register('Am0b71', function(t, a) {
-    a(t.exports, 'default', function() {
-        return e;
+}), a.register('+oovY4', function(b, c) {
+    i(b.exports, 'default', function() {
+        return _f;
     });
-    var c = b('dAmf5'),
-        d = b('jgFbX');
-    var e = a => {
-        (0, c.default)().worldManager.devices.getDeviceById(a.id) && (0, d.default)(a);
+    var d = a('D5xLI'),
+        e = a('aIyMH');
+    var _f = i => {
+        (0, d.default)().worldManager.devices.getDeviceById(i.id) && (0, e.default)(i);
     };
 });

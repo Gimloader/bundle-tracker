@@ -1,34 +1,34 @@
-function a(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
 
-function b(a, b, c, r) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: r,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('ngvPT', function(r, d) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('vRW6w', function(b, c) {
     var d;
-    d = r.exports, Object.defineProperty(d, '__esModule', {
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(r.exports, 'default', function() {
-        return p;
+    }), _t(b.exports, 'default', function() {
+        return _p;
     });
-    var e = c('8kSQZ');
-    c('uPP4W');
-    var f = c('h99Nu'),
-        g = c('EefFJ'),
-        h = c('0CXir'),
-        i = c('kneek'),
-        j = c('+0Tb/'),
-        k = c('b9Bct'),
-        l = c('USLU1'),
-        m = c('nbHO+');
+    var e = a('0hzx+');
+    a('LEQ5w');
+    var f = a('Axq+p'),
+        g = a('2GeW4'),
+        h = a('4hxnr'),
+        i = a('8WvaZ'),
+        j = a('ryWAy'),
+        k = a('TwXYL'),
+        l = a('FytBL'),
+        m = a('Ct4sg');
     let n;
     const o = {
         out: {
@@ -38,12 +38,12 @@ c.register('ngvPT', function(r, d) {
             background: 'rgba(0,0,0,0.6)'
         }
     };
-    var p = b => {
+    var _p = _t => {
         const q = (0, l.useIsPresent)(),
-            r = () => b.setToHomeScreen();
-        return (0, j.default)(a(i).Input.Keyboard.KeyCodes.ESC, r, [r]), (0, e.jsxs)(g.default, {
+            r = () => _t.setToHomeScreen();
+        return (0, j.default)(_b(i).Input.Keyboard.KeyCodes.ESC, r, [r]), (0, e.jsxs)(g.default, {
             children: [
-                (0, e.jsx)(q, {
+                (0, e.jsx)(_q, {
                     onClick: r,
                     initial: o.out,
                     animate: o.in,
@@ -60,25 +60,25 @@ c.register('ngvPT', function(r, d) {
             ]
         });
     };
-    const q = (0, f.default)(k.motion.div).attrs({
+    const _q = (0, f.default)(k.motion.div).attrs({
         className: 'maxAll flex-center flex-column'
-    })(n || (n = (a => a)`
+    })(n || (n = (_b => _b)`
   position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
 `));
-}), c.register('0CXir', function(a, v) {
-    b(a.exports, 'default', function() {
-        return l;
+}), a.register('4hxnr', function(_b, c) {
+    _t(_b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('b9Bct'),
-        g = c('USLU1'),
-        h = c('S/jX4'),
-        i = c('6zRK6');
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('TwXYL'),
+        g = a('FytBL'),
+        h = a('vShe/'),
+        i = a('5pOCJ');
     let j;
     const k = {
         out: {
@@ -90,9 +90,9 @@ c.register('ngvPT', function(r, d) {
             opacity: 1
         }
     };
-    var l = () => {
+    var _l = () => {
         const m = (0, g.useIsPresent)();
-        return (0, d.jsx)(m, {
+        return (0, d.jsx)(_m, {
             onClick: m => {
                 m.stopPropagation();
             },
@@ -106,9 +106,9 @@ c.register('ngvPT', function(r, d) {
             children: (0, d.jsx)(i.default, {})
         });
     };
-    const m = (0, e.default)(f.motion.div).attrs({
+    const _m = (0, e.default)(f.motion.div).attrs({
         className: 'medium-shadow flex-column'
-    })(j || (j = (a => a)`
+    })(j || (j = (_b => _b)`
   padding: 40px;
   background: rgba(48, 28, 86, 0.97);
   color: ${ 0 };
@@ -119,29 +119,29 @@ c.register('ngvPT', function(r, d) {
   border-radius: 10px;
   overflow: hidden;
 `), h.default.White);
-}), c.register('6zRK6', function(a, v) {
-    b(a.exports, 'default', function() {
-        return r;
+}), a.register('5pOCJ', function(b, c) {
+    _t(b.exports, 'default', function() {
+        return _r;
     });
-    var d = c('8kSQZ'),
-        e = c('5xmPL'),
-        f = c('4/f+U'),
-        g = c('uPP4W'),
-        h = c('h99Nu'),
-        i = c('gSUVO'),
-        j = c('8w7Vk'),
-        k = c('7X8h3'),
-        l = c('Il8g9'),
-        m = c('dAmf5');
-    let n, o, p = a => a;
-    const q = a => `${ a }%`;
-    var r = () => {
-        const [s, t] = g.useState(1), [u, v] = g.useState(1);
+    var d = a('0hzx+'),
+        e = a('80XJ3'),
+        f = a('4iV4e'),
+        g = a('LEQ5w'),
+        h = a('Axq+p'),
+        i = a('b5kvC'),
+        j = a('103yb'),
+        k = a('EqyfB'),
+        l = a('i3kcr'),
+        m = a('D5xLI');
+    let n, o, p = b => b;
+    const q = b => `${ b }%`;
+    var _r = () => {
+        const [s, _t] = g.useState(1), [u, v] = g.useState(1);
         g.useEffect(() => {
             const w = localStorage.getItem(j.default.musicVolume);
             if (w) {
                 let x = Number(w);
-                isNaN(x) && (x = 1), t(x);
+                isNaN(x) && (x = 1), _t(x);
             }
             const x = localStorage.getItem(j.default.soundEffectVolume);
             if (x) {
@@ -159,11 +159,11 @@ c.register('ngvPT', function(r, d) {
                 }
             });
         }, 200), []);
-        return (0, d.jsxs)(s, {
+        return (0, d.jsxs)(_s, {
             children: [
                 (0, l.AmIGameOwner)() ? (0, d.jsxs)(d.Fragment, {
                     children: [
-                        (0, d.jsx)(t, {
+                        (0, d.jsx)(_t, {
                             children: 'Music Volume'
                         }),
                         (0, d.jsx)(e.default, {
@@ -172,7 +172,7 @@ c.register('ngvPT', function(r, d) {
                             step: 1,
                             value: 100 * s,
                             onChange: s => {
-                                t(s / 100), localStorage.setItem(j.default.musicVolume, (s / 100).toString()), w();
+                                _t(s / 100), localStorage.setItem(j.default.musicVolume, (s / 100).toString()), w();
                             },
                             tooltip: {
                                 formatter: q
@@ -185,7 +185,7 @@ c.register('ngvPT', function(r, d) {
                         })
                     ]
                 }) : null,
-                (0, d.jsx)(t, {
+                (0, d.jsx)(_t, {
                     children: 'Sound Effects Volume'
                 }),
                 (0, d.jsx)(e.default, {
@@ -203,8 +203,8 @@ c.register('ngvPT', function(r, d) {
             ]
         });
     };
-    const s = h.default.div(n || (n = p``)),
-        t = h.default.div(o || (o = p`
+    const _s = h.default.div(n || (n = p``)),
+        _t = h.default.div(o || (o = p`
   font-size: 24px;
   font-weight: ${ 0 };
   margin-bottom: 15px;

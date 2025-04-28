@@ -1,46 +1,46 @@
-function a(a, b, c, r) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: r,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('LSIPD', function(b, r) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('SSj1l', function(b, c) {
     var d;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(b.exports, 'default', function() {
-        return n;
+    }), _o(b.exports, 'default', function() {
+        return _n;
     });
-    var e = c('8kSQZ'),
-        f = c('iHElh'),
-        g = c('uPP4W'),
-        h = c('0R8EW'),
-        i = c('q721a'),
-        j = c('k0s2g17'),
-        k = c('PjB0f'),
-        l = c('oRaWm'),
-        m = c('PLvTJ');
-    var n = () => {
-        const [o, p] = (0, k.useBoolean)(!1), [q, r] = g.useState(null), [s, t] = g.useState(''), {
+    var e = a('0hzx+'),
+        f = a('6CIVV'),
+        g = a('LEQ5w'),
+        h = a('70AkF'),
+        i = a('gs4MT'),
+        j = a('jzxyj10'),
+        k = a('PMl60'),
+        l = a('0AyJ3'),
+        m = a('5cFKR');
+    var _n = () => {
+        const [_o, p] = (0, k.useBoolean)(!1), [q, r] = g.useState(null), [s, t] = g.useState(''), {
             id: u
         } = (0, h.useParams)();
         return g.useEffect(() => {
             (0, k.request)({
                 url: `/api/games/fetch/${ u }`,
-                success: o => {
-                    r(o.kit), t(o.creator.name);
+                success: _o => {
+                    r(_o.kit), t(_o.creator.name);
                 },
                 error: () => (0, j.NavigateTo)(i.HOMEPAGE)
             });
-        }, []), q ? o ? (0, e.jsx)(m.default, {
+        }, []), q ? _o ? (0, e.jsx)(m.default, {
             questions: q.questions
         }) : (0, e.jsx)(l.default, {
             title: q.title,
@@ -58,49 +58,49 @@ c.register('LSIPD', function(b, r) {
             })
         });
     };
-}), c.register('k0s2g17', function(b, n) {
-    a(b.exports, 'NavigateTo', function() {
-        return e;
+}), a.register('jzxyj10', function(b, c) {
+    _b(b.exports, 'NavigateTo', function() {
+        return _e;
     });
-    var d = c('Cr/BM');
-    const e = a => {
-        d.history.push(a);
+    var d = a('oBJ9G');
+    const _e = _b => {
+        d.history.push(_b);
     };
-}), c.register('oRaWm', function(b, n) {
-    a(b.exports, 'default', function() {
-        return t;
+}), a.register('0AyJ3', function(b, c) {
+    _b(b.exports, 'default', function() {
+        return _t;
     });
-    var d = c('8kSQZ'),
-        e = c('ExtIT');
-    c('uPP4W');
-    var f = c('h99Nu'),
-        g = c('0wLl2'),
-        h = c('lmfrI'),
-        i = c('gSUVO'),
-        j = c('Dog9Y'),
-        k = c('FfkIK1'),
-        l = c('PjB0f'),
-        m = c('qLhB38');
-    let n, o, p, q, r, s = a => a;
-    var t = a => (0, d.jsx)(u, {
-        children: (0, d.jsxs)(v, {
+    var d = a('0hzx+'),
+        e = a('fmVdR');
+    a('LEQ5w');
+    var f = a('Axq+p'),
+        g = a('hHkFq'),
+        h = a('sHRDd'),
+        i = a('b5kvC'),
+        j = a('led8j'),
+        k = a('7s5R80'),
+        l = a('PMl60'),
+        m = a('DKaq/');
+    let n, o, p, q, r, s = _b => _b;
+    var _t = _b => (0, d.jsx)(_u, {
+        children: (0, d.jsxs)(_v, {
             children: [
                 (0, d.jsx)(m.default, {
                     size: 92,
                     blockModalOpen: !0,
-                    image: a.image,
+                    image: _b.image,
                     style: {
                         cursor: 'default'
                     }
                 }),
-                (0, d.jsx)(w, {
-                    children: a.title
+                (0, d.jsx)(_w, {
+                    children: _b.title
                 }),
-                (0, d.jsx)(x, {
-                    children: a.creator
+                (0, d.jsx)(_x, {
+                    children: _b.creator
                 }),
                 (0, d.jsx)(e.default, {}),
-                0 === a.numberOfQuestions ? (0, d.jsx)('div', {
+                0 === _b.numberOfQuestions ? (0, d.jsx)('div', {
                     style: {
                         fontSize: 18
                     },
@@ -111,17 +111,17 @@ c.register('LSIPD', function(b, r) {
                             customFontWeight: i.FontWeights.Bold,
                             type: 'success',
                             size: 'large',
-                            onClick: a.setToPreview,
+                            onClick: _b.setToPreview,
                             ariaLabel: 'Practice',
                             children: 'Practice'
                         }),
-                        (0, d.jsxs)(y, {
+                        (0, d.jsxs)(_y, {
                             children: [
                                 (0, d.jsxs)('div', {
                                     children: [
-                                        a.numberOfQuestions,
+                                        _b.numberOfQuestions,
                                         ' ',
-                                        (0, l.plural)('question', a.numberOfQuestions)
+                                        (0, l.plural)('question', _b.numberOfQuestions)
                                     ]
                                 }),
                                 (0, d.jsx)('div', {
@@ -149,14 +149,14 @@ c.register('LSIPD', function(b, r) {
             ]
         })
     });
-    const u = f.default.div.attrs({
+    const _u = f.default.div.attrs({
             className: 'flex-center scroll-y maxAll'
         })(n || (n = s`
   background: #303f9f;
   color: ${ 0 };
   font-family: ${ 0 };
 `), h.default.Black, i.Fonts.SFPro),
-        v = (0, f.default)(k.default).attrs({
+        _v = (0, f.default)(k.default).attrs({
             className: 'flex-center flex-column animated fadeIn'
         })(o || (o = s`
   width: 90%;
@@ -167,17 +167,17 @@ c.register('LSIPD', function(b, r) {
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1),
     0 10px 50px rgba(0, 0, 0, 0.4);
 `)),
-        w = f.default.div(p || (p = s`
+        _w = f.default.div(p || (p = s`
   margin-top: 14px;
   font-size: 48px;
   font-weight: ${ 0 };
   text-align: center;
 `), i.FontWeights.UltraBold),
-        x = f.default.div(q || (q = s`
+        _x = f.default.div(q || (q = s`
   font-size: 24px;
   margin-top: -4px;
 `)),
-        y = f.default.div.attrs({
+        _y = f.default.div.attrs({
             className: 'flex vc'
         })(r || (r = s`
   font-size: 16px;
@@ -185,57 +185,57 @@ c.register('LSIPD', function(b, r) {
   margin-top: 20px;
   line-height: 1;
 `));
-}), c.register('Dog9Y', function(b, n) {
-    a(b.exports, 'default', function() {
-        return k;
+}), a.register('led8j', function(b, c) {
+    _b(b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('8kSQZ'),
-        e = c('CDq40'),
-        f = c('uPP4W'),
-        g = c('h99Nu'),
-        h = c('gSUVO'),
-        i = c('S/jX4');
+    var d = a('0hzx+'),
+        e = a('GT7Vh'),
+        f = a('LEQ5w'),
+        g = a('Axq+p'),
+        h = a('b5kvC'),
+        i = a('vShe/');
     let j;
-    var k = a => {
-        const l = a.size || 'default',
-            m = f.useMemo(() => a.customColor ? a.customColor : a.disabled ? '#546e7a' : 'success' === a.type ? '#2e7d32' : 'danger' === a.type ? '#c62828' : '#3f51b5', [
-                a.disabled,
-                a.type,
-                a.customColor
+    var _k = _b => {
+        const l = _b.size || 'default',
+            m = f.useMemo(() => _b.customColor ? _b.customColor : _b.disabled ? '#546e7a' : 'success' === _b.type ? '#2e7d32' : 'danger' === _b.type ? '#c62828' : '#3f51b5', [
+                _b.disabled,
+                _b.type,
+                _b.customColor
             ]),
             n = f.useMemo(() => (0, e.darken)(0.1, m), [m]),
             o = f.useMemo(() => 'small' === l || 'default' === l ? 14 : 20, [l]),
             p = f.useMemo(() => 'small' === l ? 6 : 'default' === l ? 8 : 12, [l]),
             q = f.useMemo(() => {
                 const r = 'small' === l ? '8px' : '12px';
-                return a.customHorizontalPadding ? `${ r } ${ a.customHorizontalPadding }px` : 'small' === l ? `${ r } 24px` : 'default' === l ? `${ r } 28px` : `${ r } 42px`;
+                return _b.customHorizontalPadding ? `${ r } ${ _b.customHorizontalPadding }px` : 'small' === l ? `${ r } 24px` : 'default' === l ? `${ r } 28px` : `${ r } 42px`;
             }, [
                 l,
-                a.customHorizontalPadding
+                _b.customHorizontalPadding
             ]),
             r = f.useMemo(() => 'small' === l ? 41 : 49, [l]),
-            s = f.useMemo(() => a.customFontWeight ? a.customFontWeight : 'large' === l ? h.FontWeights.Bold : h.FontWeights.Normal, [
-                a.customFontWeight,
+            s = f.useMemo(() => _b.customFontWeight ? _b.customFontWeight : 'large' === l ? h.FontWeights.Bold : h.FontWeights.Normal, [
+                _b.customFontWeight,
                 l
             ]),
             t = () => {
-                a.disabled || a.onClick && a.onClick();
+                _b.disabled || _b.onClick && _b.onClick();
             };
-        return (0, d.jsx)(l, {
+        return (0, d.jsx)(_l, {
             style: Object.assign({
                 pointerEvents: 'all',
                 WebkitFlexShrink: 0,
                 flexShrink: 0,
                 height: r
-            }, a.style || {}),
+            }, _b.style || {}),
             children: (0, d.jsxs)('button', {
                 className: 'btn-pushable',
-                'aria-label': a.ariaLabel,
-                onClick: a.usePointerDownEvent ? void 0 : t,
-                onPointerDown: a.usePointerDownEvent ? t : void 0,
+                'aria-label': _b.ariaLabel,
+                onClick: _b.usePointerDownEvent ? void 0 : t,
+                onPointerDown: _b.usePointerDownEvent ? t : void 0,
                 style: {
-                    cursor: a.disabled ? 'not-allowed' : 'pointer',
-                    width: a.block ? '100%' : 'auto'
+                    cursor: _b.disabled ? 'not-allowed' : 'pointer',
+                    width: _b.block ? '100%' : 'auto'
                 },
                 children: [
                     (0, d.jsx)('span', {
@@ -260,15 +260,15 @@ c.register('LSIPD', function(b, r) {
                             padding: q,
                             fontWeight: s
                         },
-                        children: a.children
+                        children: _b.children
                     })
                 ]
             })
         });
     };
-    const l = g.default.div.attrs({
+    const _l = g.default.div.attrs({
         className: 'flex'
-    })(j || (j = (a => a)`
+    })(j || (j = (_b => _b)`
   align-items: flex-end;
 
   .btn-pushable {
@@ -327,52 +327,52 @@ c.register('LSIPD', function(b, r) {
     transition: transform 34ms;
   }
 `), i.default.White);
-}), c.register('S/jX4', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('vShe/', function(b, c) {
+    _b(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         White: '#FFFFFF',
         Black: '#000000',
         Yellow: '#FFFF00',
         Purple: '#673ab7'
     };
-}), c.register('FfkIK1', function(b, d) {
-    a(b.exports, 'default', function() {
-        return h;
+}), a.register('7s5R80', function(b, c) {
+    _b(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('lmfrI');
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('sHRDd');
     let g;
-    var h = a => (0, d.jsx)(i, {
-        onClick: a.onClick,
-        className: a.className,
-        style: a.style,
-        children: a.children
+    var _h = _b => (0, d.jsx)(_i, {
+        onClick: _b.onClick,
+        className: _b.className,
+        style: _b.style,
+        children: _b.children
     });
-    const i = e.default.div(g || (g = (a => a)`
+    const _i = e.default.div(g || (g = (_b => _b)`
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1),
     0 10px 30px #f3ece8;
   border-radius: 0.2em 0.2em 0 0;
   background: ${ 0 };
   padding: 20px;
 `), f.default.White);
-}), c.register('qLhB38', function(b, d) {
-    a(b.exports, 'default', function() {
-        return l;
+}), a.register('DKaq/', function(b, c) {
+    _b(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('cR5QE'),
-        h = c('lmfrI'),
-        i = c('2WDH6');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('YRlpt'),
+        h = a('sHRDd'),
+        i = a('x8CoD');
     let j;
-    const k = f.default.img.attrs(a => ({
-        src: a.image
-    }))(j || (j = (a => a)`
+    const k = f.default.img.attrs(_b => ({
+        src: _b.image
+    }))(j || (j = (_b => _b)`
   cursor: pointer;
   height: ${ 0 }px;
   width: ${ 0 }px;
@@ -381,26 +381,26 @@ c.register('LSIPD', function(b, r) {
   ${ 0 }
   flex-shrink: 0;
   object-fit: cover;
-`), a => a.size, a => a.size, a => a.customRightMargin ? a.customRightMargin : 0, a => a.showBorder && `border: solid ${ h.default.Black } 1px;`);
-    var l = a => {
+`), _b => _b.size, _b => _b.size, _b => _b.customRightMargin ? _b.customRightMargin : 0, _b => _b.showBorder && `border: solid ${ h.default.Black } 1px;`);
+    var _l = _b => {
         const [m, n] = e.useState(!1);
         return (0, d.jsxs)(d.Fragment, {
             children: [
                 (0, d.jsx)(k, {
-                    ...a,
+                    ..._b,
                     onClick: m => {
-                        m.stopPropagation(), a.onClick && a.onClick(), a.blockModalOpen || n(!0);
+                        m.stopPropagation(), _b.onClick && _b.onClick(), _b.blockModalOpen || n(!0);
                     }
                 }),
                 (0, d.jsx)(g.default, {
                     open: m,
-                    onCancel: a => {
-                        a.stopPropagation(), n(!1);
+                    onCancel: _b => {
+                        _b.stopPropagation(), n(!1);
                     },
                     footer: null,
                     closable: !1,
                     children: (0, d.jsx)('img', {
-                        src: (0, i.getCloudinaryUrl)(a.image),
+                        src: (0, i.getCloudinaryUrl)(_b.image),
                         style: {
                             width: '100%'
                         }
@@ -409,62 +409,62 @@ c.register('LSIPD', function(b, r) {
             ]
         });
     };
-}), c.register('2WDH6', function(b, c) {
-    a(b.exports, 'getCloudinaryUrl', function() {
-        return d;
+}), a.register('x8CoD', function(b, c) {
+    _b(b.exports, 'getCloudinaryUrl', function() {
+        return _d;
     });
-    const d = a => {
-            const e = e(a);
-            return e ? a.includes('/video/upload') ? `https://${ f }/video/upload/${ e }` : `https://${ f }/image/upload/f_auto,fl_lossy,q_auto/${ e }` : a;
+    const _d = _b => {
+            const e = _e(_b);
+            return e ? _b.includes('/video/upload') ? `https://${ _f }/video/upload/${ e }` : `https://${ _f }/image/upload/f_auto,fl_lossy,q_auto/${ e }` : _b;
         },
-        e = a => {
-            if (!i.some(b => a.includes(b)))
+        _e = _b => {
+            if (!_i.some(b => _b.includes(b)))
                 return null;
-            if (a.includes(g) && !a.includes(`/${ h }/`))
+            if (_b.includes(_g) && !_b.includes(`/${ _h }/`))
                 return null;
-            const f = a.split('/');
+            const f = _b.split('/');
             if (!f || !f.length || f.length < 2)
                 return null;
             const g = f[f.length - 2],
                 h = f[f.length - 1];
             return g && h && g.startsWith('v') ? `${ g }/${ h }` : null;
         },
-        f = 'media.gimkit.com',
-        g = 'res.cloudinary.com',
-        h = 'gimkit-production',
-        i = [
-            f,
-            g
+        _f = 'media.gimkit.com',
+        _g = 'res.cloudinary.com',
+        _h = 'gimkit-production',
+        _i = [
+            _f,
+            _g
         ];
-}), c.register('bTRJM', function(b, i) {
-    a(b.exports, 'default', function() {
-        return g;
+}), a.register('dDoty', function(b, c) {
+    _b(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W');
-    const f = e.lazy(() => c('FhxEZ0'));
-    var g = a => (0, d.jsx)(e.Suspense, {
-        fallback: a.fallback || null,
+    var d = a('0hzx+'),
+        e = a('LEQ5w');
+    const f = e.lazy(() => a('l3sIa'));
+    var _g = _b => (0, d.jsx)(e.Suspense, {
+        fallback: _b.fallback || null,
         children: (0, d.jsx)(f, {
-            latex: a.latex
+            latex: _b.latex
         })
     });
-}), c.register('FhxEZ0', function(a, b) {
-    a.exports = Promise.all([
-        import('./' + c('tIOy4').resolve('8pe9D')),
-        import('./' + c('tIOy4').resolve('5OCdz'))
-    ]).then(() => c('feyVh'));
-}), c.register('U8PGt', function(b, i) {
-    a(b.exports, 'default', function() {
-        return g;
+}), a.register('l3sIa', function(_b, c) {
+    _b.exports = Promise.all([
+        import('./' + a('HmN9A').resolve('8pe9D')),
+        import('./' + a('HmN9A').resolve('5OCdz'))
+    ]).then(() => a('vZVkZ'));
+}), a.register('BXKZi0', function(b, c) {
+    _j(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('uPP4W'),
-        e = c('KBP3q'),
-        f = c('vxwW1');
-    var g = (a, b) => {
+    var d = a('LEQ5w'),
+        e = a('+UcJ7'),
+        f = a('dR/Gi');
+    var _g = (_j, b) => {
         const [h, i] = d.useState(() => {
             var j, k;
-            const l = a && 'current' in a ? a.current : a;
+            const l = _j && 'current' in _j ? _j.current : _j;
             return l ? [
                 l.offsetWidth,
                 l.offsetHeight
@@ -474,100 +474,100 @@ c.register('LSIPD', function(b, r) {
             ];
         });
         return (0, f.default)(() => {
-            const j = a && 'current' in a ? a.current : a;
+            const j = _j && 'current' in _j ? _j.current : _j;
             j && i([
                 j.offsetWidth,
                 j.offsetHeight
             ]);
-        }, [a]), (0, e.default)(a, a => {
-            const j = a.target;
+        }, [_j]), (0, e.default)(_j, _j => {
+            const j = _j.target;
             i([
                 j.offsetWidth,
                 j.offsetHeight
             ]);
         }), h;
     };
-}), c.register('KBP3q', function(b, l) {
-    a(b.exports, 'default', function() {
-        return j;
+}), a.register('+UcJ7', function(b, c) {
+    _j(b.exports, 'default', function() {
+        return _j;
     });
-    var d = c('tDeyh'),
-        e = c('vxwW1'),
-        f = c('X8LPJ'),
-        g = c('wZuO1');
+    var d = a('iIbRn'),
+        e = a('dR/Gi'),
+        f = a('20TiJ'),
+        g = a('18t62');
     let h;
     const i = () => h || (h = function() {
-        const j = new Map(),
-            k = new(0, d.default)((0, g.default)((k, c) => {
+        const _j = new Map(),
+            k = new(0, d.default)((0, g.default)((k, a) => {
                 var l;
                 if (1 === k.length)
-                    null === (l = j.get(k[0].target)) || void 0 === l || l(k[0], c);
+                    null === (l = _j.get(k[0].target)) || void 0 === l || l(k[0], a);
                 else
                     for (let m = 0; m < k.length; m++) {
                         var n;
-                        null === (n = j.get(k[m].target)) || void 0 === n || n(k[m], c);
+                        null === (n = _j.get(k[m].target)) || void 0 === n || n(k[m], a);
                     }
             }));
         return {
             observer: k,
-            subscribe(c, l) {
-                k.observe(c), j.set(c, l);
+            subscribe(l, m) {
+                k.observe(l), _j.set(l, m);
             },
-            unsubscribe(c) {
-                k.unobserve(c), j.delete(c);
+            unsubscribe(l) {
+                k.unobserve(l), _j.delete(l);
             }
         };
     }());
-    var j = function(a, b) {
-        const k = i(),
-            l = (0, f.default)(b);
+    var _j = function(k, l) {
+        const m = i(),
+            n = (0, f.default)(l);
         return (0, e.default)(() => {
-            let m = !1;
-            const n = a && 'current' in a ? a.current : a;
-            if (n)
-                return k.subscribe(n, (a, k) => {
-                    m || l.current(a, k);
+            let o = !1;
+            const p = k && 'current' in k ? k.current : k;
+            if (p)
+                return m.subscribe(p, (k, m) => {
+                    o || n.current(k, m);
                 }), () => {
-                    m = !0, k.unsubscribe(n);
+                    o = !0, m.unsubscribe(p);
                 };
         }, [
-            a,
             k,
-            l
-        ]), k.observer;
+            m,
+            n
+        ]), m.observer;
     };
-}), c.register('vxwW1', function(d, d) {
-    a(d.exports, 'default', function() {
-        return d;
+}), a.register('dR/Gi', function(b, c) {
+    _e(b.exports, 'default', function() {
+        return _d;
     });
-    var d = b(c('uPP4W'))['undefined' != typeof document && void 0 !== document.createElement ? 'useLayoutEffect' : 'useEffect'];
-}), c.register('X8LPJ', function(b, d) {
-    a(b.exports, 'default', function() {
-        return e;
+    var _d = _b(a('LEQ5w'))['undefined' != typeof document && void 0 !== document.createElement ? 'useLayoutEffect' : 'useEffect'];
+}), a.register('20TiJ', function(_b, c) {
+    _e(_b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('uPP4W');
-    var e = a => {
-        const f = d.useRef(a);
+    var d = a('LEQ5w');
+    var _e = _e => {
+        const f = d.useRef(_e);
         return d.useEffect(() => {
-            f.current = a;
+            f.current = _e;
         }), f;
     };
-}), c.register('wZuO1', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('18t62', function(b, c) {
+    _e(b.exports, 'default', function() {
+        return _d;
     });
-    var d = function(a) {
-        var e = [],
-            f = null,
-            g = function() {
-                for (var h = arguments.length, i = new Array(h), j = 0; j < h; j++)
-                    i[j] = arguments[j];
-                e = i, f || (f = requestAnimationFrame(function() {
-                    f = null, a.apply(void 0, e);
+    var _d = function(_e) {
+        var f = [],
+            g = null,
+            h = function() {
+                for (var i = arguments.length, j = new Array(i), k = 0; k < i; k++)
+                    j[k] = arguments[k];
+                f = j, g || (g = requestAnimationFrame(function() {
+                    g = null, _e.apply(void 0, f);
                 }));
             };
-        return g.cancel = function() {
-            f && (cancelAnimationFrame(f), f = null);
-        }, g;
+        return h.cancel = function() {
+            g && (cancelAnimationFrame(g), g = null);
+        }, h;
     };
 });

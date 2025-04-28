@@ -1,50 +1,50 @@
-function a(a, b, c, I) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: I,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('v3vsZ', function(b, I) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('eY0+T', function(b, c) {
     var d;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(b.exports, 'default', function() {
-        return F;
+    }), _F(b.exports, 'default', function() {
+        return _F;
     });
-    var e = c('UM8oI'),
-        f = c('sgILU'),
-        g = c('ktQNN'),
-        h = c('5Ux1a'),
-        i = c('s7aO+'),
-        j = c('oIFjt'),
-        k = c('89ZVe'),
-        l = c('PCUfD'),
-        m = c('hbu+b'),
-        n = c('gWXN2'),
-        o = c('Aty9y'),
-        p = c('TK0dC'),
-        q = c('TmkIq'),
-        r = c('pvFdX'),
-        s = c('FPQII'),
-        t = c('PUlKf'),
-        u = c('JJQ0+'),
-        v = c('OlpXx'),
-        w = c('Ena4B'),
-        x = c('dAmf5'),
-        y = c('qxeBa0'),
-        z = c('aePN4'),
-        A = c('bu4o6'),
-        B = c('Bpt+p'),
-        C = c('/Lvpl17'),
-        D = c('wSwKo5');
+    var e = a('1bFPu'),
+        f = a('I35Ay'),
+        g = a('tugRC'),
+        h = a('/pbxo'),
+        i = a('8s38Y'),
+        j = a('lChtH'),
+        k = a('Oa9wC'),
+        l = a('BClWR'),
+        m = a('jL4lN'),
+        n = a('jCQEZ'),
+        o = a('plbfj'),
+        p = a('H7lwa'),
+        q = a('82DGx'),
+        r = a('evF5h'),
+        s = a('H9OuP'),
+        t = a('Jfada'),
+        u = a('2Xvuf'),
+        v = a('07pQo'),
+        w = a('1f1YX'),
+        x = a('D5xLI'),
+        y = a('vfR2b'),
+        z = a('A2dXl'),
+        A = a('2KeuO'),
+        B = a('9tz3H'),
+        C = a('R2Ucl10'),
+        D = a('IFO6W13');
     class E extends f.default {
         addFullLook() {
             this.boundingBox.setHardcoded({
@@ -58,12 +58,12 @@ c.register('v3vsZ', function(b, I) {
         updateFontSize() {
             if (!this.priceText)
                 return;
-            const F = this.priceText.view.text.length,
+            const _F = this.priceText.view.text.length,
                 G = 0.85 * this.options.width;
             let H = i.Consts.PRICE_TEXT_SIZE,
-                I = F * H;
+                I = _F * H;
             const J = () => {
-                I > G && (H -= 1, I = F * H, J());
+                I > G && (H -= 1, I = _F * H, J());
             };
             J();
             const K = (0, x.default)().cameraHelper.zoom,
@@ -72,21 +72,21 @@ c.register('v3vsZ', function(b, I) {
             const M = (0, y.TextPadding)();
             this.priceText.view.setPadding(M, M, M, M);
         }
-        constructor(a) {
-            super(a), (0, e.default)(this, 'grayScalePipelines', []), (0, e.default)(this, 'grayScaleFactor', 0), (0, e.default)(this, 'animationSpeedFactor', 1), (0, e.default)(this, 'rays', []), (0, e.default)(this, 'cumulTime', 0), (0, e.default)(this, 'currentRaysAngle', 0), (0, e.default)(this, 'onUpdate', a => {
+        constructor(F) {
+            super(F), (0, e.default)(this, 'grayScalePipelines', []), (0, e.default)(this, 'grayScaleFactor', 0), (0, e.default)(this, 'animationSpeedFactor', 1), (0, e.default)(this, 'rays', []), (0, e.default)(this, 'cumulTime', 0), (0, e.default)(this, 'currentRaysAngle', 0), (0, e.default)(this, 'onUpdate', F => {
                 if (this.cull.isInsideView) {
-                    if (this.currentRaysAngle += a / 10000 * this.animationSpeedFactor, this.rays.forEach((a, b) => {
-                            (0, j.UpdateRay)(this, a, b);
+                    if (this.currentRaysAngle += F / 10000 * this.animationSpeedFactor, this.rays.forEach((F, b) => {
+                            (0, j.UpdateRay)(this, F, b);
                         }), this.grantedImage && this.grantedImage.view) {
-                        this.cumulTime += a;
-                        const F = this.y - i.Consts.LEGS_HEIGHT / 2,
-                            G = 5;
-                        this.grantedImage.view.y = F + this.animationSpeedFactor * Math.sin(this.cumulTime / 550) * G;
+                        this.cumulTime += F;
+                        const G = this.y - i.Consts.LEGS_HEIGHT / 2,
+                            H = 5;
+                        this.grantedImage.view.y = G + this.animationSpeedFactor * Math.sin(this.cumulTime / 550) * H;
                     }
                     (0, s.UpdateGrayscalePipelines)(this), (0, r.UpdateColors)(this), (0, z.default)(this);
                 }
-            }), (0, e.default)(this, 'onStateChange', a => {
-                'active' === a && (this.state.active ? this.tweens.add({
+            }), (0, e.default)(this, 'onStateChange', F => {
+                'active' === F && (this.state.active ? this.tweens.add({
                     targets: this,
                     grayScaleFactor: 0,
                     animationSpeedFactor: 1,
@@ -96,15 +96,15 @@ c.register('v3vsZ', function(b, I) {
                     grayScaleFactor: i.Consts.INACTIVE_GRAY_SCALE_FACTOR,
                     animationSpeedFactor: i.Consts.INACTIVE_ANIMATION_SLOW_DOWN,
                     duration: 350
-                }))), 'fundedAmount' === a && (0, k.AddPriceElement)(this);
-            }), (0, e.default)(this, 'onMessage', a => {
-                a.key !== g.Messages.purchased && a.key !== g.Messages.funded || a && a.data && a.data.characterId && a.data.characterId === (0, t.default)() && (a.key === g.Messages.purchased && this.options.soundEnabled && (0, v.playSound)({
+                }))), 'fundedAmount' === F && (0, k.AddPriceElement)(this);
+            }), (0, e.default)(this, 'onMessage', F => {
+                F.key !== g.Messages.purchased && F.key !== g.Messages.funded || F && F.data && F.data.characterId && F.data.characterId === (0, t.default)() && (F.key === g.Messages.purchased && this.options.soundEnabled && (0, v.playSound)({
                     path: (0, u.default)('devices/vending_machine/purchase.mp3'),
                     volume: (0, w.getVolume)({
                         volume: 0.76,
                         type: w.SoundType.soundEffect
                     })
-                }), a.key === g.Messages.funded && this.options.soundEnabled && (0, v.playSound)({
+                }), F.key === g.Messages.funded && this.options.soundEnabled && (0, v.playSound)({
                     path: (0, u.default)('devices/vending_machine/fund.mp3'),
                     volume: (0, w.getVolume)({
                         volume: 0.8,
@@ -114,38 +114,38 @@ c.register('v3vsZ', function(b, I) {
             }), (0, e.default)(this, 'setupVisualEditing', () => {
                 if (!(0, h.InPreGamePhase)() || !(0, B.isSavedVersion)())
                     return;
-                const F = (0, C.FetchOptionSchemaProperty)(this, 'width'),
-                    G = (0, C.FetchOptionSchemaProperty)(this, 'height');
+                const G = (0, C.FetchOptionSchemaProperty)(this, 'width'),
+                    H = (0, C.FetchOptionSchemaProperty)(this, 'height');
                 this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
                     angle: 0,
-                    minWidth: F.min,
-                    maxWidth: F.max,
-                    minHeight: G.min,
-                    maxHeight: G.max,
+                    minWidth: G.min,
+                    maxWidth: G.max,
+                    minHeight: H.min,
+                    maxHeight: H.max,
                     rotable: !1,
                     keepRatio: !1,
-                    onChange: F => {
-                        (0, D.ReplaceVisualEditingPreview)(F.x, F.y, {
-                            width: F.width,
-                            height: F.height
+                    onChange: G => {
+                        (0, D.ReplaceVisualEditingPreview)(G.x, G.y, {
+                            width: G.width,
+                            height: G.height
                         });
                     }
                 });
             }), (0, e.default)(this, 'setupVisualEditingInvisible', () => {
                 if (!(0, h.InPreGamePhase)() || !(0, B.isSavedVersion)())
                     return;
-                const F = (0, C.FetchOptionSchemaProperty)(this, 'radius');
+                const G = (0, C.FetchOptionSchemaProperty)(this, 'radius');
                 this.visualEditing.add.circle({
                     radius: this.options.radius,
-                    minRadius: F.min,
-                    maxRadius: F.max,
+                    minRadius: G.min,
+                    maxRadius: G.max,
                     rotable: !1,
                     resizable: !0,
-                    onChange: F => {
-                        (0, D.ReplaceVisualEditingPreview)(F.x, F.y, {
-                            radius: F.radius
+                    onChange: G => {
+                        (0, D.ReplaceVisualEditingPreview)(G.x, G.y, {
+                            radius: G.radius
                         });
                     }
                 });
@@ -155,34 +155,34 @@ c.register('v3vsZ', function(b, I) {
             });
         }
     }
-    var F = G;
-}), c.register('ktQNN', function(b, c) {
+    var _F = E;
+}), a.register('tugRC', function(b, c) {
     let d;
     var e;
-    a(b.exports, 'GrantAction', function() {
+    _l(b.exports, 'GrantAction', function() {
         return d;
-    }), a(b.exports, 'Messages', function() {
-        return f;
+    }), _l(b.exports, 'Messages', function() {
+        return _f;
     }), (e = d || (d = {})).grantItem = 'Grant Item', e.broadcastOnChannel = 'Broadcast On Channel';
-    const f = {
+    const _f = {
         purchase: 'purchase',
         purchased: 'purchased',
         funded: 'funded'
     };
-}), c.register('s7aO+', function(b, k) {
-    a(b.exports, 'Consts', function() {
-        return e;
-    }), a(b.exports, 'Depths', function() {
-        return f;
-    }), a(b.exports, 'REQUIRED_AMOUNT_TEXT_STYLE', function() {
-        return g;
-    }), a(b.exports, 'InteractionMessages', function() {
-        return h;
-    }), a(b.exports, 'GRAYSCALE_COLORS', function() {
-        return i;
+}), a.register('8s38Y', function(b, c) {
+    _l(b.exports, 'Consts', function() {
+        return _e;
+    }), _l(b.exports, 'Depths', function() {
+        return _f;
+    }), _l(b.exports, 'REQUIRED_AMOUNT_TEXT_STYLE', function() {
+        return _g;
+    }), _l(b.exports, 'InteractionMessages', function() {
+        return _h;
+    }), _l(b.exports, 'GRAYSCALE_COLORS', function() {
+        return _i;
     });
-    var d = c('PjB0f');
-    const e = {
+    var d = a('PMl60');
+    const _e = {
             FRAME_SCALE: 0.4,
             FRAME_MARGINS_NINE_SLICE: 120,
             LEGS_HEIGHT: 40,
@@ -195,7 +195,7 @@ c.register('v3vsZ', function(b, I) {
             RAY_TEXTURE_HEIGHT: 380,
             PRICE_TEXT_SIZE: 24
         },
-        f = {
+        _f = {
             BG: 1,
             RAYS: 2,
             LEG: 3,
@@ -204,13 +204,13 @@ c.register('v3vsZ', function(b, I) {
             GRANTED_ITEM: 6,
             FRAME: 7
         },
-        g = {
-            fontSize: `${ e.PRICE_TEXT_SIZE }px`,
+        _g = {
+            fontSize: `${ _e.PRICE_TEXT_SIZE }px`,
             fontFamily: 'Fugaz One'
         },
-        h = {
-            inStock: a => ({
-                message: `In Stock (${ a })`,
+        _h = {
+            inStock: _l => ({
+                message: `In Stock (${ _l })`,
                 color: '#c8e6c9'
             }),
             notEnoughRequiredItem: {
@@ -226,139 +226,139 @@ c.register('v3vsZ', function(b, I) {
                 color: '#ffcdd2'
             },
             fundingStatus: {
-                message: (a, b, c) => `${ (0, d.numberWithCommas)(a) }/${ (0, d.numberWithCommas)(b) } ${ c }`
+                message: (_l, b, a) => `${ (0, d.numberWithCommas)(_l) }/${ (0, d.numberWithCommas)(b) } ${ a }`
             },
             defaultItemName: 'Item',
             purchaseAction: 'to purchase',
             fundingAction: 'to fund'
         },
-        i = {
+        _i = {
             ray: '#CECECE',
             bg1: '#6A6A6A',
             bg2: '#CECECE'
         };
-}), c.register('oIFjt', function(b, k) {
-    a(b.exports, 'AddRays', function() {
-        return i;
-    }), a(b.exports, 'UpdateRay', function() {
-        return j;
+}), a.register('lChtH', function(b, c) {
+    _l(b.exports, 'AddRays', function() {
+        return _i;
+    }), _l(b.exports, 'UpdateRay', function() {
+        return _j;
     });
-    var d = c('fe2aZ'),
-        e = c('s7aO+'),
-        f = c('TmkIq'),
-        g = (e = c('s7aO+'), c('PCUfD')),
-        h = c('pvFdX');
-    const i = a => {
-            const j = (0, h.GetColors)(a);
-            for (let k = 0; k < a.options.numberOfRays; k++)
-                a.parts.add.sprite({
+    var d = a('h2EGG'),
+        e = a('8s38Y'),
+        f = a('82DGx'),
+        g = (e = a('8s38Y'), a('BClWR')),
+        h = a('evF5h');
+    const _i = _l => {
+            const j = (0, h.GetColors)(_l);
+            for (let k = 0; k < _l.options.numberOfRays; k++)
+                _l.parts.add.sprite({
                     imageId: f.RayAsset.imageId,
                     imageUrl: f.RayAsset.imageUrl,
                     y: -20,
                     originX: 0.5,
                     originY: 1,
                     ignoreInput: !0,
-                    depthChange: (0, g.GetDepthChange)(a, e.Depths.RAYS),
-                    onReady: k => {
-                        a.rays.push(k), j(a, k, k), k.view.alpha = a.options.raysAlpha, k.view.blendMode = a.options.raysAdditive ? 1 : 0, k.view.tint = (0, d.GetNumberFromHexColor)(j.rays), k === a.options.numberOfRays - 1 && (0, h.UpdateColors)(a, !0);
+                    depthChange: (0, g.GetDepthChange)(_l, e.Depths.RAYS),
+                    onReady: c => {
+                        _l.rays.push(c), _j(_l, c, k), c.view.alpha = _l.options.raysAlpha, c.view.blendMode = _l.options.raysAdditive ? 1 : 0, c.view.tint = (0, d.GetNumberFromHexColor)(j.rays), k === _l.options.numberOfRays - 1 && (0, h.UpdateColors)(_l, !0);
                     }
                 });
         },
-        j = (a, b, c) => {
-            const k = c * (2 * Math.PI / a.options.numberOfRays) + a.currentRaysAngle;
+        _j = (_l, b, a) => {
+            const k = a * (2 * Math.PI / _l.options.numberOfRays) + _l.currentRaysAngle;
             b.view.rotation = k;
-            const l = m,
-                n = Math.atan(19.5 * a.options.raysWidthFactor / 380),
-                o = a.options.width / 2,
-                p = (a.options.height - e.Consts.LEGS_HEIGHT) / 2;
-            const q = Math.min(Math.abs(p / Math.cos(l - n)), Math.abs(o / Math.cos(Math.PI / 2 - l - n)), Math.abs(p / Math.cos(l + n)), Math.abs(o / Math.cos(Math.PI / 2 - l + n))) / 380;
-            b.view.scaleY = q, b.view.scaleX = q * a.options.raysWidthFactor;
+            const l = k,
+                m = Math.atan(19.5 * _l.options.raysWidthFactor / 380),
+                n = _l.options.width / 2,
+                o = (_l.options.height - e.Consts.LEGS_HEIGHT) / 2;
+            const p = Math.min(Math.abs(o / Math.cos(l - m)), Math.abs(n / Math.cos(Math.PI / 2 - l - m)), Math.abs(o / Math.cos(l + m)), Math.abs(n / Math.cos(Math.PI / 2 - l + m))) / 380;
+            b.view.scaleY = p, b.view.scaleX = p * _l.options.raysWidthFactor;
         };
-}), c.register('TmkIq', function(b, p) {
-    a(b.exports, 'BgAAsset', function() {
-        return e;
-    }), a(b.exports, 'BgBAsset', function() {
-        return f;
-    }), a(b.exports, 'RayAsset', function() {
-        return g;
-    }), a(b.exports, 'FrameAsset', function() {
-        return h;
-    }), a(b.exports, 'LegAsset', function() {
-        return i;
-    }), a(b.exports, 'InfoAsset', function() {
-        return j;
-    }), a(b.exports, 'IconAsset', function() {
-        return k;
+}), a.register('82DGx', function(b, c) {
+    _l(b.exports, 'BgAAsset', function() {
+        return _e;
+    }), _l(b.exports, 'BgBAsset', function() {
+        return _f;
+    }), _l(b.exports, 'RayAsset', function() {
+        return _g;
+    }), _l(b.exports, 'FrameAsset', function() {
+        return _h;
+    }), _l(b.exports, 'LegAsset', function() {
+        return _i;
+    }), _l(b.exports, 'InfoAsset', function() {
+        return _j;
+    }), _l(b.exports, 'IconAsset', function() {
+        return _k;
     });
-    var d = c('JJQ0+');
-    const e = {
+    var d = a('2Xvuf');
+    const _e = {
             imageId: 'vending_machine_bg_a',
             imageUrl: (0, d.default)('devices/vending_machine/bg_a.png')
         },
-        f = {
+        _f = {
             imageId: 'vending_machine_bg_b',
             imageUrl: (0, d.default)('devices/vending_machine/bg_b.png')
         },
-        g = ((0, d.default)('devices/vending_machine/rays.png'), {
+        _g = ((0, d.default)('devices/vending_machine/rays.png'), {
             imageId: 'vending_machine_ray',
             imageUrl: (0, d.default)('devices/vending_machine/ray.png')
         }),
-        h = {
+        _h = {
             imageId: 'vending_machine_frame',
             imageUrl: (0, d.default)('devices/vending_machine/frame.png')
         },
-        i = {
+        _i = {
             imageId: 'vending_machine_leg',
             imageUrl: (0, d.default)('devices/vending_machine/leg.png')
         },
-        j = {
+        _j = {
             imageId: 'vending_machine_info',
             imageUrl: (0, d.default)('devices/vending_machine/info.png')
         },
-        k = {
+        _k = {
             imageId: 'vending_machine_icon',
             imageUrl: (0, d.default)('devices/vending_machine/previewIcon.png')
         };
     (0, d.default)('devices/item_granter/question-mark-2.png');
-}), c.register('PCUfD', function(b, p) {
-    a(b.exports, 'GetDepthChange', function() {
-        return e;
+}), a.register('BClWR', function(b, c) {
+    _l(b.exports, 'GetDepthChange', function() {
+        return _e;
     });
-    var d = c('Q0Vn8');
-    const e = (a, b) => a.options.height / 2 + (0, d.default)(b);
-}), c.register('pvFdX', function(b, p) {
-    a(b.exports, 'GetColors', function() {
-        return m;
-    }), a(b.exports, 'InitColors', function() {
-        return n;
-    }), a(b.exports, 'UpdateColors', function() {
-        return o;
+    var d = a('5CmLs');
+    const _e = (_l, b) => _l.options.height / 2 + (0, d.default)(b);
+}), a.register('evF5h', function(b, c) {
+    _l(b.exports, 'GetColors', function() {
+        return _m;
+    }), _l(b.exports, 'InitColors', function() {
+        return _n;
+    }), _l(b.exports, 'UpdateColors', function() {
+        return _o;
     });
-    var d = c('Ett3+'),
-        e = c('idESs'),
-        f = c('fe2aZ'),
-        g = c('wF1dp'),
-        h = c('CDq40'),
-        i = c('s7aO+'),
-        j = c('ktQNN');
-    const k = (a, b) => {
-            const l = Phaser.Display.Color.HexStringToColor(a);
+    var d = a('SBJDo'),
+        e = a('kc9WN'),
+        f = a('h2EGG'),
+        g = a('exB2i'),
+        h = a('GT7Vh'),
+        i = a('8s38Y'),
+        j = a('tugRC');
+    const k = (_l, b) => {
+            const l = Phaser.Display.Color.HexStringToColor(_l);
             return {
                 grayscale: Phaser.Display.Color.HexStringToColor(b),
                 color: l
             };
         },
-        l = (a, b) => {
+        l = (_l, b) => {
             const m = {
-                red: Math.round(Phaser.Math.Linear(a.color.red, a.grayscale.red, b)),
-                green: Math.round(Phaser.Math.Linear(a.color.green, a.grayscale.green, b)),
-                blue: Math.round(Phaser.Math.Linear(a.color.blue, a.grayscale.blue, b))
+                red: Math.round(Phaser.Math.Linear(_l.color.red, _l.grayscale.red, b)),
+                green: Math.round(Phaser.Math.Linear(_l.color.green, _l.grayscale.green, b)),
+                blue: Math.round(Phaser.Math.Linear(_l.color.blue, _l.grayscale.blue, b))
             };
             return (0, f.GetNumberFromHexColor)((0, h.rgbToColorString)(m));
         },
-        m = a => {
-            if (a.options.grantAction === j.GrantAction.grantItem && a.options.matchItemRarity) {
-                const n = (0, g.FetchItemOption)(a.options.grantedItemId);
+        _m = _l => {
+            if (_l.options.grantAction === j.GrantAction.grantItem && _l.options.matchItemRarity) {
+                const n = (0, g.FetchItemOption)(_l.options.grantedItemId);
                 var o;
                 const p = null !== (o = null == n ? void 0 : n.rarity) && void 0 !== o ? o : e.InventoryItemRarity.common,
                     q = d.InventoryRarityColorsHex[p];
@@ -369,246 +369,246 @@ c.register('v3vsZ', function(b, I) {
                 };
             }
             return {
-                rays: a.options.raysColor,
-                bg1: a.options.backgroundColor1,
-                bg2: a.options.backgroundColor2
+                rays: _l.options.raysColor,
+                bg1: _l.options.backgroundColor1,
+                bg2: _l.options.backgroundColor2
             };
         },
-        n = a => {
-            const o = m(a);
-            a.raysGrayscale = k(o.rays, i.GRAYSCALE_COLORS.ray), a.bg1Grayscale = k(o.bg1, i.GRAYSCALE_COLORS.bg1), a.bg2Grayscale = k(o.bg2, i.GRAYSCALE_COLORS.bg2);
+        _n = _l => {
+            const o = _m(_l);
+            _l.raysGrayscale = k(o.rays, i.GRAYSCALE_COLORS.ray), _l.bg1Grayscale = k(o.bg1, i.GRAYSCALE_COLORS.bg1), _l.bg2Grayscale = k(o.bg2, i.GRAYSCALE_COLORS.bg2);
         },
-        o = (a, p = !1) => {
+        _o = (_l, p = !1) => {
             var q, r, s, t;
-            if (a.lastGrayscaleFactorUpdate === a.grayScaleFactor && !p)
+            if (_l.lastGrayscaleFactorUpdate === _l.grayScaleFactor && !p)
                 return;
-            a.lastGrayscaleFactorUpdate = a.grayScaleFactor, a.raysGrayscale || n(a);
-            const u = l(a.raysGrayscale, a.grayScaleFactor),
-                v = l(a.bg1Grayscale, a.grayScaleFactor),
-                w = l(a.bg2Grayscale, a.grayScaleFactor);
-            a.rays.forEach(a => {
-                a.view.tint = u;
-            }), null === (q = a.bg1) || void 0 === q || null === (r = q.view) || void 0 === r || r.setTint(v), null === (s = a.bg2) || void 0 === s || null === (t = s.view) || void 0 === t || t.setTint(w);
+            _l.lastGrayscaleFactorUpdate = _l.grayScaleFactor, _l.raysGrayscale || _n(_l);
+            const u = l(_l.raysGrayscale, _l.grayScaleFactor),
+                v = l(_l.bg1Grayscale, _l.grayScaleFactor),
+                w = l(_l.bg2Grayscale, _l.grayScaleFactor);
+            _l.rays.forEach(_l => {
+                _l.view.tint = u;
+            }), null === (q = _l.bg1) || void 0 === q || null === (r = q.view) || void 0 === r || r.setTint(v), null === (s = _l.bg2) || void 0 === s || null === (t = s.view) || void 0 === t || t.setTint(w);
         };
-}), c.register('89ZVe', function(b, m) {
-    a(b.exports, 'AddPriceElement', function() {
-        return j;
+}), a.register('Oa9wC', function(b, c) {
+    _l(b.exports, 'AddPriceElement', function() {
+        return _j;
     });
-    var d = c('s7aO+'),
-        e = c('TmkIq'),
-        f = (d = c('s7aO+'), c('PCUfD')),
-        g = c('TK0dC'),
-        h = c('crVjo2'),
-        i = c('bC5MZ');
-    const j = a => {
-        if (!a.options.visibleInGame)
+    var d = a('8s38Y'),
+        e = a('82DGx'),
+        f = (d = a('8s38Y'), a('BClWR')),
+        g = a('H7lwa'),
+        h = a('sCbH9'),
+        i = a('dxggN');
+    const _j = _l => {
+        if (!_l.options.visibleInGame)
             return;
-        const k = a.options.height / 2 - 90;
-        a.priceAreaInfoRectangle || (a.priceAreaInfoRectangle = a.parts.add.sprite({
+        const k = _l.options.height / 2 - 90;
+        _l.priceAreaInfoRectangle || (_l.priceAreaInfoRectangle = _l.parts.add.sprite({
             ...e.InfoAsset,
             y: k,
-            depthChange: (0, f.GetDepthChange)(a, d.Depths.INFO_BG)
+            depthChange: (0, f.GetDepthChange)(_l, d.Depths.INFO_BG)
         })), (0, h.default)({
             familyName: d.REQUIRED_AMOUNT_TEXT_STYLE.fontFamily,
             onLoad: () => {
-                const l = (0, i.default)(a);
-                if (a.priceText)
-                    a.priceText.view.setText(l);
+                const l = (0, i.default)(_l);
+                if (_l.priceText)
+                    _l.priceText.view.setText(l);
                 else {
-                    const m = a.parts.add.text({
-                        text: (0, i.default)(a),
+                    const m = _l.parts.add.text({
+                        text: (0, i.default)(_l),
                         y: k,
-                        depthChange: (0, f.GetDepthChange)(a, d.Depths.INFO),
+                        depthChange: (0, f.GetDepthChange)(_l, d.Depths.INFO),
                         textStyle: d.REQUIRED_AMOUNT_TEXT_STYLE
                     });
-                    a.priceText = m;
+                    _l.priceText = m;
                 }
-                a.updateFontSize();
+                _l.updateFontSize();
                 const m = d.Consts.REQUIRED_ITEM_MAX_SIZE,
                     n = l => {
-                        l.view.y = a.y + k;
-                        const o = a.priceText.getBounds().width,
+                        l.view.y = _l.y + k;
+                        const o = _l.priceText.getBounds().width,
                             p = m + o + 7;
-                        l.view.x = -p / 2 + m / 2 + a.x, a.priceText.view.x = p / 2 - o / 2 + a.x;
+                        l.view.x = -p / 2 + m / 2 + _l.x, _l.priceText.view.x = p / 2 - o / 2 + _l.x;
                     };
-                a.requiredImage ? n(a.requiredImage) : a.requiredImage = (0, g.AddItemImage)(a, a.options.requiredItemId, m, 0.8 * d.Consts.PRICE_HEIGHT, d.Depths.INFO, a => {
-                    n(a);
+                _l.requiredImage ? n(_l.requiredImage) : _l.requiredImage = (0, g.AddItemImage)(_l, _l.options.requiredItemId, m, 0.8 * d.Consts.PRICE_HEIGHT, d.Depths.INFO, _l => {
+                    n(_l);
                 });
             }
         });
     };
-}), c.register('TK0dC', function(b, d) {
-    a(b.exports, 'AddItemImage', function() {
-        return j;
+}), a.register('H7lwa', function(b, c) {
+    _l(b.exports, 'AddItemImage', function() {
+        return _j;
     });
-    var d = c('7Sbqr'),
-        e = c('Mr5c3'),
-        f = c('so9lE'),
-        g = c('Sbl6W'),
-        h = c('PCUfD'),
-        i = c('FPQII');
-    const j = (a, b, c, d, j, o) => {
+    var d = a('iWivW'),
+        e = a('1Chka'),
+        f = a('AVLqL'),
+        g = a('2M6xn'),
+        h = a('BClWR'),
+        i = a('H9OuP');
+    const _j = (_l, b, a, c, _j, _o) => {
         const k = {
             ...g.UnknownItemAsset
         };
         if (b) {
-            const l = d.default.worldOptions.itemOptions.find(l => l.id === b);
-            l && (k.imageId = l.id, k.imageUrl = l.previewImage);
+            const _l = d.default.worldOptions.itemOptions.find(_l => _l.id === b);
+            _l && (k.imageId = _l.id, k.imageUrl = _l.previewImage);
         }
         const l = (0, e.default)(k.imageId),
             m = (0, f.default)({
                 height: l.height,
                 width: l.width,
-                newWidth: d,
-                newHeight: c
+                newWidth: c,
+                newHeight: a
             });
-        return a.parts.add.sprite({
+        return e.parts.add.sprite({
             imageId: k.imageId,
             imageUrl: k.imageUrl,
-            depthChange: (0, h.GetDepthChange)(a, j),
+            depthChange: (0, h.GetDepthChange)(e, _j),
             displayWidth: m.width,
             displayHeight: m.height,
             onReady: b => {
-                a.grayScaleFactor > 0 && (0, i.AddGrayscalePipeline)(a, b), o && o(b);
+                e.grayScaleFactor > 0 && (0, i.AddGrayscalePipeline)(e, b), _o && _o(b);
             }
         });
     };
-}), c.register('Sbl6W', function(b, d) {
-    a(b.exports, 'BaseAsset', function() {
-        return e;
-    }), a(b.exports, 'UnknownItemAsset', function() {
-        return f;
+}), a.register('2M6xn', function(b, c) {
+    e(b.exports, 'BaseAsset', function() {
+        return _e;
+    }), e(b.exports, 'UnknownItemAsset', function() {
+        return _f;
     });
-    var d = c('JJQ0+');
-    const e = {
+    var d = a('2Xvuf');
+    const _e = {
             imageId: (0, d.default)('devices/item_granter/base.png'),
             imageUrl: (0, d.default)('devices/item_granter/base.png')
         },
-        f = {
+        _f = {
             imageId: '__UNKNOWN_ITEM',
             imageUrl: (0, d.default)('devices/item_granter/question-mark-2.png')
         };
-}), c.register('FPQII', function(b, c) {
-    a(b.exports, 'AddGrayscalePipeline', function() {
-        return d;
-    }), a(b.exports, 'UpdateGrayscalePipelines', function() {
-        return f;
+}), a.register('H9OuP', function(b, c) {
+    e(b.exports, 'AddGrayscalePipeline', function() {
+        return _d;
+    }), e(b.exports, 'UpdateGrayscalePipelines', function() {
+        return _f;
     });
-    const d = (a, b) => {
-            a.grayScalePipelines.push(a.scene.plugins.get('rexGrayScalePipeline').add(b.view, {
-                intensity: a.grayScaleFactor
+    const _d = (e, b) => {
+            e.grayScalePipelines.push(e.scene.plugins.get('rexGrayScalePipeline').add(b.view, {
+                intensity: e.grayScaleFactor
             }));
         },
-        e = (a, b) => {
-            a.scene.plugins.get('rexGrayScalePipeline').remove(b.view);
+        e = (e, b) => {
+            e.scene.plugins.get('rexGrayScalePipeline').remove(b.view);
         },
-        f = a => {
-            a.grayScaleFactor > 0 ? ((a => {
+        _f = e => {
+            e.grayScaleFactor > 0 ? ((e => {
                 var g, h;
-                a.grayScalePipelines.length > 0 || ((null === (g = a.requiredImage) || void 0 === g ? void 0 : g.view) && d(a, a.requiredImage), (null === (h = a.grantedImage) || void 0 === h ? void 0 : h.view) && d(a, a.grantedImage));
-            })(a), a.grayScalePipelines.forEach(b => {
-                b.intensity = a.grayScaleFactor;
-            })) : (a => {
+                e.grayScalePipelines.length > 0 || ((null === (g = e.requiredImage) || void 0 === g ? void 0 : g.view) && _d(e, e.requiredImage), (null === (h = e.grantedImage) || void 0 === h ? void 0 : h.view) && _d(e, e.grantedImage));
+            })(e), e.grayScalePipelines.forEach(b => {
+                b.intensity = e.grayScaleFactor;
+            })) : (e => {
                 var g, h;
-                0 !== a.grayScalePipelines.length && ((null === (g = a.requiredImage) || void 0 === g ? void 0 : g.view) && e(a, a.requiredImage), (null === (h = a.grantedImage) || void 0 === h ? void 0 : h.view) && e(a, a.grantedImage), a.grayScalePipelines = []);
-            })(a);
+                0 !== e.grayScalePipelines.length && ((null === (g = e.requiredImage) || void 0 === g ? void 0 : g.view) && e(e, e.requiredImage), (null === (h = e.grantedImage) || void 0 === h ? void 0 : h.view) && e(e, e.grantedImage), e.grayScalePipelines = []);
+            })(e);
         };
-}), c.register('crVjo2', function(i, d) {
-    a(i.exports, 'isGoogleFontLoaded', function() {
-        return f;
-    }), a(i.exports, 'default', function() {
-        return g;
+}), a.register('sCbH9', function(b, c) {
+    e(b.exports, 'isGoogleFontLoaded', function() {
+        return _f;
+    }), e(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('2qGsE');
+    var d = a('/oq/k');
     const e = [],
-        f = a => e.includes(a);
-    var g = a => {
+        _f = e => e.includes(e);
+    var _g = e => {
         const {
             familyName: h,
             onLoad: i
-        } = j;
-        e.includes(h) ? i && i() : b(d).load({
+        } = e;
+        e.includes(h) ? i && i() : _b(d).load({
             google: {
                 families: [`${ h }:400,700`]
             },
-            fontactive: j => {
-                e.includes(j) || e.push(j), h === j && i && i();
+            fontactive: e => {
+                e.includes(e) || e.push(e), h === e && i && i();
             }
         });
     };
-}), c.register('bC5MZ', function(b, m) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('dxggN', function(_b, c) {
+    e(_b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('PjB0f'),
-        e = c('3Rm+3');
-    var f = a => {
-        let g = `${ (0, d.numberWithCommas)((0, e.GetCost)(a)) }`;
-        return a.options.allowFunding ? `${ (0, d.numberWithCommas)(a.state.fundedAmount || 0) } / ${ g }` : g;
+    var d = a('PMl60'),
+        e = a('TAzUt');
+    var _f = e => {
+        let g = `${ (0, d.numberWithCommas)((0, e.GetCost)(e)) }`;
+        return e.options.allowFunding ? `${ (0, d.numberWithCommas)(e.state.fundedAmount || 0) } / ${ g }` : g;
     };
-}), c.register('3Rm+3', function(b, m) {
-    a(b.exports, 'GetCost', function() {
-        return e;
+}), a.register('TAzUt', function(b, c) {
+    e(b.exports, 'GetCost', function() {
+        return _e;
     });
-    var d = c('5Ux1a');
-    const e = a => {
-        return (0, d.InPreGamePhase)() ? a.options.amountOfRequiredItem : null !== (b = a.state.cost) && void 0 !== b ? b : a.options.amountOfRequiredItem;
+    var d = a('/pbxo');
+    const _e = e => {
+        return (0, d.InPreGamePhase)() ? e.options.amountOfRequiredItem : null !== (b = e.state.cost) && void 0 !== b ? b : e.options.amountOfRequiredItem;
         var f;
     };
-}), c.register('hbu+b', function(b, m) {
-    a(b.exports, 'AddMachineBody', function() {
-        return j;
+}), a.register('jL4lN', function(b, c) {
+    e(b.exports, 'AddMachineBody', function() {
+        return _j;
     });
-    var d = c('fe2aZ'),
-        e = c('TmkIq'),
-        f = c('s7aO+'),
-        g = c('pvFdX'),
-        h = c('PCUfD'),
-        i = c('HMNV0');
-    const j = a => {
+    var d = a('h2EGG'),
+        e = a('82DGx'),
+        f = a('8s38Y'),
+        g = a('evF5h'),
+        h = a('BClWR'),
+        i = a('JEGzD');
+    const _j = e => {
         const k = -f.Consts.LEGS_HEIGHT / 2,
             l = {
-                displayWidth: a.options.width - 20,
-                displayHeight: a.options.height - 20 - f.Consts.LEGS_HEIGHT,
-                depthChange: (0, h.GetDepthChange)(a, f.Depths.BG),
+                displayWidth: e.options.width - 20,
+                displayHeight: e.options.height - 20 - f.Consts.LEGS_HEIGHT,
+                depthChange: (0, h.GetDepthChange)(e, f.Depths.BG),
                 y: k
             };
-        a.options.showShadow && !(0, i.isPlatformer)() && a.shadows.add({
-            r1: a.options.width / 2 + 20,
+        e.options.showShadow && !(0, i.isPlatformer)() && e.shadows.add({
+            r1: e.options.width / 2 + 20,
             r2: 60,
-            y: a.options.height / 2 - 20
+            y: e.options.height / 2 - 20
         });
-        const m = (0, g.GetColors)(a);
-        a.parts.add.sprite({
+        const m = (0, g.GetColors)(e);
+        e.parts.add.sprite({
             ...e.BgAAsset,
             ...l,
             onReady: k => {
-                a.bg1 = k, k.view.setTint((0, d.GetNumberFromHexColor)(m.bg1)), (0, g.UpdateColors)(a, !0);
+                e.bg1 = k, k.view.setTint((0, d.GetNumberFromHexColor)(m.bg1)), (0, g.UpdateColors)(e, !0);
             }
-        }), a.parts.add.sprite({
+        }), e.parts.add.sprite({
             ...e.BgBAsset,
             ...l,
             ignoreInput: !0,
             onReady: k => {
-                a.bg2 = k, k.view.setTint((0, d.GetNumberFromHexColor)(m.bg2)), (0, g.UpdateColors)(a, !0);
+                e.bg2 = k, k.view.setTint((0, d.GetNumberFromHexColor)(m.bg2)), (0, g.UpdateColors)(e, !0);
             }
         });
         const n = {
                 ...e.LegAsset,
-                y: a.options.height / 2 + k - 2,
-                depthChange: (0, h.GetDepthChange)(a, f.Depths.LEG)
+                y: e.options.height / 2 + k - 2,
+                depthChange: (0, h.GetDepthChange)(e, f.Depths.LEG)
             },
-            o = -a.options.width / 2 + 60;
-        a.parts.add.sprite({
+            _o = -e.options.width / 2 + 60;
+        e.parts.add.sprite({
             ...n,
-            x: o
-        }), a.parts.add.sprite({
+            x: _o
+        }), e.parts.add.sprite({
             ...n,
-            x: -o,
+            x: -_o,
             flipX: !0
         });
         const p = f.Consts.FRAME_MARGINS_NINE_SLICE;
-        a.parts.add.ninePatch({
+        e.parts.add.ninePatch({
             columns: [
                 p,
                 p
@@ -619,259 +619,259 @@ c.register('v3vsZ', function(b, I) {
             ],
             y: k,
             scale: f.Consts.FRAME_SCALE,
-            height: a.options.height - f.Consts.LEGS_HEIGHT,
-            width: a.options.width,
-            depthChange: (0, h.GetDepthChange)(a, f.Depths.FRAME),
+            height: e.options.height - f.Consts.LEGS_HEIGHT,
+            width: e.options.width,
+            depthChange: (0, h.GetDepthChange)(e, f.Depths.FRAME),
             imageUrl: e.FrameAsset.imageUrl
         });
     };
-}), c.register('gWXN2', function(b, l) {
-    a(b.exports, 'AddColliders', function() {
-        return e;
+}), a.register('jCQEZ', function(b, c) {
+    e(b.exports, 'AddColliders', function() {
+        return _e;
     });
-    var d = c('s7aO+');
-    const e = a => {
-        a.colliders.add.box({
+    var d = a('8s38Y');
+    const _e = e => {
+        e.colliders.add.box({
             x: 0,
             y: 5 - d.Consts.LEGS_HEIGHT + d.Consts.LEGS_HEIGHT / 2,
-            w: a.options.width,
-            h: a.options.height - d.Consts.LEGS_HEIGHT + 10
+            w: e.options.width,
+            h: e.options.height - d.Consts.LEGS_HEIGHT + 10
         });
     };
-}), c.register('Aty9y', function(b, l) {
-    a(b.exports, 'AddImageFromUrl', function() {
-        return j;
+}), a.register('plbfj', function(b, c) {
+    e(b.exports, 'AddImageFromUrl', function() {
+        return _j;
     });
-    var d = c('Mr5c3'),
-        e = c('so9lE'),
-        f = c('s7aO+'),
-        g = c('PCUfD'),
-        h = c('FPQII'),
-        i = c('hpAcY');
-    const j = a => {
-        const k = (0, i.GetImageUrl)(a.options.grantedItemImageUrl);
-        return a.parts.add.sprite({
+    var d = a('1Chka'),
+        e = a('AVLqL'),
+        f = a('8s38Y'),
+        g = a('BClWR'),
+        h = a('H9OuP'),
+        i = a('kPDt8');
+    const _j = e => {
+        const k = (0, i.GetImageUrl)(e.options.grantedItemImageUrl);
+        return e.parts.add.sprite({
             imageId: k,
             imageUrl: k,
             y: -f.Consts.LEGS_HEIGHT / 2,
-            depthChange: (0, g.GetDepthChange)(a, f.Depths.GRANTED_ITEM),
-            onReady: c => {
+            depthChange: (0, g.GetDepthChange)(e, f.Depths.GRANTED_ITEM),
+            onReady: a => {
                 const l = (0, d.default)(k),
                     m = (0, e.default)({
                         height: l.height,
                         width: l.width,
-                        newWidth: Math.min(f.Consts.ITEM_MAX_SIZE, 0.7 * a.options.width),
-                        newHeight: Math.min(f.Consts.ITEM_MAX_SIZE, 0.4 * a.options.height - f.Consts.PRICE_HEIGHT)
+                        newWidth: Math.min(f.Consts.ITEM_MAX_SIZE, 0.7 * e.options.width),
+                        newHeight: Math.min(f.Consts.ITEM_MAX_SIZE, 0.4 * e.options.height - f.Consts.PRICE_HEIGHT)
                     });
-                c.view.setDisplaySize(m.width, m.height), a.grayScaleFactor > 0 && (0, h.AddGrayscalePipeline)(a, c);
+                a.view.setDisplaySize(m.width, m.height), e.grayScaleFactor > 0 && (0, h.AddGrayscalePipeline)(e, a);
             }
         });
     };
-}), c.register('qxeBa0', function(b, c) {
-    a(b.exports, 'TextPadding', function() {
-        return d;
+}), a.register('vfR2b', function(b, c) {
+    e(b.exports, 'TextPadding', function() {
+        return _d;
     });
-    const d = () => 4;
-}), c.register('aePN4', function(b, n) {
-    a(b.exports, 'default', function() {
-        return l;
+    const _d = () => 4;
+}), a.register('A2dXl', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('6pLip'),
-        e = c('totz4'),
-        f = c('uHgaJ'),
-        g = c('IFImv'),
-        h = c('EagVW'),
-        i = c('/pv5/'),
-        j = c('ugvdi'),
-        k = c('tLl4R');
-    var l = (a, b) => {
-        if ((0, j.default)(a))
-            return void a.interactiveZones.setForceDisabled(!0);
-        if (a.interactiveZones.setForceDisabled(!1), !(0, d.IsCurrentInteractive)(a.id) && !b)
+    var d = a('7Ubfv'),
+        e = a('/fx4O'),
+        f = a('gWYGD'),
+        g = a('SjWsC'),
+        h = a('zot+n'),
+        i = a('N++y/'),
+        j = a('B/ThC'),
+        k = a('cSZ9W');
+    var _l = (e, b) => {
+        if ((0, j.default)(e))
+            return void e.interactiveZones.setForceDisabled(!0);
+        if (e.interactiveZones.setForceDisabled(!1), !(0, d.IsCurrentInteractive)(e.id) && !b)
             return;
-        const m = (0, k.default)(a),
+        const m = (0, k.default)(e),
             n = {
-                message: (0, i.default)(a),
-                action: (0, e.default)(a),
+                message: (0, i.default)(e),
+                action: (0, e.default)(e),
                 topHeader: null == m ? void 0 : m.text,
                 topHeaderColor: null == m ? void 0 : m.color,
-                bottomHeader: (0, g.default)(a),
-                duration: (0, h.default)(a),
-                allowedToInteract: (0, f.default)(a)
+                bottomHeader: (0, g.default)(e),
+                duration: (0, h.default)(e),
+                allowedToInteract: (0, f.default)(e)
             };
-        a.interactiveZones.setInfo(n);
+        e.interactiveZones.setInfo(n);
     };
-}), c.register('6pLip', function(b, d) {
-    a(b.exports, 'IsCurrentInteractive', function() {
-        return e;
+}), a.register('7Ubfv', function(b, c) {
+    e(b.exports, 'IsCurrentInteractive', function() {
+        return _e;
     });
-    var d = c('dAmf5');
-    const e = a => {
+    var d = a('D5xLI');
+    const _e = e => {
         var f;
-        return (null === (f = (0, d.default)().worldManager.devices.interactives.currentDevice) || void 0 === f ? void 0 : f.id) === a;
+        return (null === (f = (0, d.default)().worldManager.devices.interactives.currentDevice) || void 0 === f ? void 0 : f.id) === e;
     };
-}), c.register('totz4', function(b, d) {
-    a(b.exports, 'default', function() {
-        return g;
+}), a.register('/fx4O', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('s7aO+'),
-        e = c('kbZwa'),
-        f = c('Cct/B');
-    var g = a => {
-        const h = (0, e.VendingMachineDeviceAmountRequiredToPurchase)(a),
-            i = (0, e.VendingMachineDeviceAmountOfRequiredItemIHave)(a);
-        return (0, f.VendingMachineDeviceFundingIsEnabled)(a) && i < h ? d.InteractionMessages.fundingAction : d.InteractionMessages.purchaseAction;
+    var d = a('8s38Y'),
+        e = a('KCnBM'),
+        f = a('zU+QS');
+    var _g = e => {
+        const h = (0, e.VendingMachineDeviceAmountRequiredToPurchase)(e),
+            i = (0, e.VendingMachineDeviceAmountOfRequiredItemIHave)(e);
+        return (0, f.VendingMachineDeviceFundingIsEnabled)(e) && i < h ? d.InteractionMessages.fundingAction : d.InteractionMessages.purchaseAction;
     };
-}), c.register('kbZwa', function(b, d) {
-    a(b.exports, 'VendingMachineDeviceAmountRequiredToPurchase', function() {
-        return g;
-    }), a(b.exports, 'VendingMachineDeviceAmountOfRequiredItemIHave', function() {
-        return h;
+}), a.register('KCnBM', function(b, c) {
+    e(b.exports, 'VendingMachineDeviceAmountRequiredToPurchase', function() {
+        return _g;
+    }), e(b.exports, 'VendingMachineDeviceAmountOfRequiredItemIHave', function() {
+        return _h;
     });
-    var d = c('7Sbqr'),
-        e = c('3Rm+3'),
-        f = c('Cct/B');
-    const g = a => Math.max(0, (0, e.GetCost)(a) - ((0, f.VendingMachineDeviceFundingIsEnabled)(a) && a.state.fundedAmount || 0)),
-        h = a => {
+    var d = a('iWivW'),
+        e = a('TAzUt'),
+        f = a('zU+QS');
+    const _g = e => Math.max(0, (0, e.GetCost)(e) - ((0, f.VendingMachineDeviceFundingIsEnabled)(e) && e.state.fundedAmount || 0)),
+        _h = e => {
             let i = 0;
-            const j = d.default.me.inventory.slots.get(a.options.requiredItemId);
+            const j = d.default.me.inventory.slots.get(e.options.requiredItemId);
             return j && (i = j.amount), i;
         };
-}), c.register('Cct/B', function(b, c) {
-    a(b.exports, 'VendingMachineDeviceFundingIsEnabled', function() {
-        return d;
+}), a.register('zU+QS', function(b, c) {
+    e(b.exports, 'VendingMachineDeviceFundingIsEnabled', function() {
+        return _d;
     });
-    const d = a => a.options.allowFunding;
-}), c.register('uHgaJ', function(b, d) {
-    a(b.exports, 'default', function() {
-        return f;
+    const _d = e => e.options.allowFunding;
+}), a.register('gWYGD', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('kbZwa'),
-        e = c('Cct/B');
-    var f = a => {
-        if (!a.state.active)
+    var d = a('KCnBM'),
+        e = a('zU+QS');
+    var _f = e => {
+        if (!e.state.active)
             return !1;
-        if (a.options.useLimitedStock && a.state.currentStock <= 0)
+        if (e.options.useLimitedStock && e.state.currentStock <= 0)
             return !1;
-        const g = (0, d.VendingMachineDeviceAmountRequiredToPurchase)(a),
-            h = (0, d.VendingMachineDeviceAmountOfRequiredItemIHave)(a);
-        return (0, e.VendingMachineDeviceFundingIsEnabled)(a) ? !!h : !(h < g);
+        const g = (0, d.VendingMachineDeviceAmountRequiredToPurchase)(e),
+            h = (0, d.VendingMachineDeviceAmountOfRequiredItemIHave)(e);
+        return (0, e.VendingMachineDeviceFundingIsEnabled)(e) ? !!h : !(h < g);
     };
-}), c.register('IFImv', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('SjWsC', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var d = a => {
+    var _d = e => {
         var e;
-        const f = null === (e = a.options.grantedItemDescription) || void 0 === e ? void 0 : e.trim();
+        const f = null === (e = e.options.grantedItemDescription) || void 0 === e ? void 0 : e.trim();
         if (null == f ? void 0 : f.length)
             return f;
     };
-}), c.register('EagVW', function(b, l) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('zot+n', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('kbZwa');
-    var e = a => {
-        const f = (0, d.VendingMachineDeviceAmountOfRequiredItemIHave)(a);
-        return (0, d.VendingMachineDeviceAmountOfRequiredItemIHave)(a) >= f ? a.options.interactionDuration : 1;
+    var d = a('KCnBM');
+    var _e = e => {
+        const f = (0, d.VendingMachineDeviceAmountOfRequiredItemIHave)(e);
+        return (0, d.VendingMachineDeviceAmountOfRequiredItemIHave)(e) >= f ? e.options.interactionDuration : 1;
     };
-}), c.register('/pv5/', function(b, l) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('N++y/', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('PjB0f'),
-        e = c('bBQb9'),
-        f = c('s7aO+'),
-        g = c('ktQNN'),
-        h = c('3Rm+3');
-    var i = a => {
+    var d = a('PMl60'),
+        e = a('ZCz9W'),
+        f = a('8s38Y'),
+        g = a('tugRC'),
+        h = a('TAzUt');
+    var _i = e => {
         var j;
-        let k = null === (j = a.options.grantedItemName) || void 0 === j ? void 0 : j.trim();
-        return k || a.options.grantAction !== g.GrantAction.grantItem || (k = (0, e.ItemName)(a.options.grantedItemId)), k || (k = f.InteractionMessages.defaultItemName), a.options.grantAction === g.GrantAction.grantItem && !a.options.visibleInGame && a.options.attachCostToNameWhenHidden && a.options.requiredItemId && (0, h.GetCost)(a) ? `${ k } - ${ (0, d.numberWithCommas)(a.options.amountOfRequiredItem) } ${ (0, e.ItemName)(a.options.requiredItemId) }` : k;
+        let k = null === (j = e.options.grantedItemName) || void 0 === j ? void 0 : j.trim();
+        return k || e.options.grantAction !== g.GrantAction.grantItem || (k = (0, e.ItemName)(e.options.grantedItemId)), k || (k = f.InteractionMessages.defaultItemName), e.options.grantAction === g.GrantAction.grantItem && !e.options.visibleInGame && e.options.attachCostToNameWhenHidden && e.options.requiredItemId && (0, h.GetCost)(e) ? `${ k } - ${ (0, d.numberWithCommas)(e.options.amountOfRequiredItem) } ${ (0, e.ItemName)(e.options.requiredItemId) }` : k;
     };
-}), c.register('ugvdi', function(b, l) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('B/ThC', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('O1hRg'),
-        e = c('julgI');
-    var f = a => !a.options.visibleInGame && !a.state.active || !(!a.options.allowedPurchaseTeam || a.options.allowedPurchaseTeam === d.ANY_TEAM_DEVICE_OPTION || (0, e.default)() === a.options.allowedPurchaseTeam);
-}), c.register('tLl4R', function(b, l) {
-    a(b.exports, 'default', function() {
-        return i;
+    var d = a('AeM98'),
+        e = a('k4WXU');
+    var _f = e => !e.options.visibleInGame && !e.state.active || !(!e.options.allowedPurchaseTeam || e.options.allowedPurchaseTeam === d.ANY_TEAM_DEVICE_OPTION || (0, e.default)() === e.options.allowedPurchaseTeam);
+}), a.register('cSZ9W', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('bBQb9'),
-        e = c('s7aO+'),
-        f = c('3Rm+3'),
-        g = c('kbZwa'),
-        h = c('Cct/B');
-    var i = a => {
-        if (!a.state.active)
+    var d = a('ZCz9W'),
+        e = a('8s38Y'),
+        f = a('TAzUt'),
+        g = a('KCnBM'),
+        h = a('zU+QS');
+    var _i = e => {
+        if (!e.state.active)
             return {
                 text: e.InteractionMessages.notAvailable.message,
                 color: e.InteractionMessages.notAvailable.color
             };
-        if (a.options.useLimitedStock && a.state.currentStock <= 0)
+        if (e.options.useLimitedStock && e.state.currentStock <= 0)
             return {
                 text: e.InteractionMessages.outOfStock.message,
                 color: e.InteractionMessages.outOfStock.color
             };
-        const j = (0, g.VendingMachineDeviceAmountRequiredToPurchase)(a),
-            k = (0, g.VendingMachineDeviceAmountOfRequiredItemIHave)(a),
-            l = (0, h.VendingMachineDeviceFundingIsEnabled)(a);
+        const j = (0, g.VendingMachineDeviceAmountRequiredToPurchase)(e),
+            k = (0, g.VendingMachineDeviceAmountOfRequiredItemIHave)(e),
+            l = (0, h.VendingMachineDeviceFundingIsEnabled)(e);
         return k < j && !l ? {
             text: e.InteractionMessages.notEnoughRequiredItem.message,
             color: e.InteractionMessages.notEnoughRequiredItem.color
-        } : a.options.useLimitedStock ? {
-            text: e.InteractionMessages.inStock(a.state.currentStock).message,
-            color: e.InteractionMessages.inStock(a.state.currentStock).color
+        } : e.options.useLimitedStock ? {
+            text: e.InteractionMessages.inStock(e.state.currentStock).message,
+            color: e.InteractionMessages.inStock(e.state.currentStock).color
         } : l ? {
-            text: e.InteractionMessages.fundingStatus.message(a.state.fundedAmount || 0, (0, f.GetCost)(a), (0, d.ItemName)(a.options.requiredItemId))
+            text: e.InteractionMessages.fundingStatus.message(e.state.fundedAmount || 0, (0, f.GetCost)(e), (0, d.ItemName)(e.options.requiredItemId))
         } : {};
     };
-}), c.register('bu4o6', function(b, d) {
-    a(b.exports, 'default', function() {
-        return g;
+}), a.register('2KeuO', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('5Ux1a'),
-        e = c('ktQNN'),
-        f = c('aePN4');
-    var g = a => {
-        (0, d.InPreGamePhase)() || (a.options.visibleInGame ? a.interactiveZones.add.rect({
+    var d = a('/pbxo'),
+        e = a('tugRC'),
+        f = a('A2dXl');
+    var _g = e => {
+        (0, d.InPreGamePhase)() || (e.options.visibleInGame ? e.interactiveZones.add.rect({
             y: 25,
-            width: a.options.width + 150,
-            height: a.options.height + 150
-        }) : a.interactiveZones.add.circle({
-            r: a.options.radius
-        }), a.interactiveZones.setCanInteractThroughColliders(!0), a.interactiveZones.onInteraction = () => {
-            a.sendToServerDevice(e.Messages.purchase);
-        }, a.interactiveZones.onInteractiveCb = () => {
-            (0, f.default)(a, !0);
+            width: e.options.width + 150,
+            height: e.options.height + 150
+        }) : e.interactiveZones.add.circle({
+            r: e.options.radius
+        }), e.interactiveZones.setCanInteractThroughColliders(!0), e.interactiveZones.onInteraction = () => {
+            e.sendToServerDevice(e.Messages.purchase);
+        }, e.interactiveZones.onInteractiveCb = () => {
+            (0, f.default)(e, !0);
         });
     };
-}), c.register('/Lvpl17', function(b, c) {
-    a(b.exports, 'FetchOptionSchemaProperty', function() {
-        return d;
+}), a.register('R2Ucl10', function(b, c) {
+    e(b.exports, 'FetchOptionSchemaProperty', function() {
+        return _d;
     });
-    const d = (a, b) => {
+    const _d = (e, b) => {
         var e, f, g;
-        const h = a.deviceOption.optionSchema.options.find(a => a.key === b);
+        const h = e.deviceOption.optionSchema.options.find(e => e.key === b);
         return {
             min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
             max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
             step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
         };
     };
-}), c.register('wSwKo5', function(b, i) {
-    a(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return h;
+}), a.register('IFO6W13', function(b, c) {
+    e(b.exports, 'ReplaceVisualEditingPreview', function() {
+        return _h;
     });
-    var d = c('2pEsK'),
-        e = c('Am0b71'),
-        f = c('KDS1x'),
-        g = c('83+vO');
-    const h = (a, b, c) => {
+    var d = a('HqwPM'),
+        e = a('+oovY4'),
+        f = a('A17vD'),
+        g = a('HXXiu');
+    const _h = (e, b, a) => {
         const i = (0, g.FetchVisualEditingPreview)(),
             j = (0, f.FetchCurrentlyEditedDevice)();
         if (!j || !i)
@@ -880,7 +880,7 @@ c.register('v3vsZ', function(b, I) {
         (0, e.default)({
             deviceOption: i.deviceOption,
             id: d.VisualEditingConstants.previewId,
-            x: a,
+            x: e,
             y: b,
             depth: k,
             layerId: j.layers.getLayer(),
@@ -888,19 +888,19 @@ c.register('v3vsZ', function(b, I) {
             isPreview: !0,
             options: {
                 ...i.options,
-                ...c
+                ...a
             },
             placedByClient: !0,
             state: i.deviceOption.defaultState
         });
     };
-}), c.register('Am0b71', function(b, i) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('+oovY4', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('dAmf5'),
-        e = c('jgFbX');
-    var f = a => {
-        (0, d.default)().worldManager.devices.getDeviceById(a.id) && (0, e.default)(a);
+    var d = a('D5xLI'),
+        e = a('aIyMH');
+    var _f = e => {
+        (0, d.default)().worldManager.devices.getDeviceById(e.id) && (0, e.default)(e);
     };
 });

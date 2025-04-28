@@ -1,41 +1,41 @@
-function a(a, b, n, c) {
-    Object.defineProperty(a, b, {
-        get: n,
-        set: c,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('8Rbag', function(n, c) {
-    var c;
-    c = n.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('10ZuL', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(n.exports, 'default', function() {
-        return m;
+    }), _n(b.exports, 'default', function() {
+        return _n;
     });
-    var d = b('UM8oI'),
-        e = b('JJQ0+'),
-        f = b('Bpt+p'),
-        g = b('5Ux1a'),
-        h = b('sgILU'),
-        i = b('phu0d'),
-        j = b('Gqspz'),
-        k = b('X3k95');
-    class l extends h.default {
-        constructor(a) {
-            if (super(a), (0, d.default)(this, 'useCallToAction', () => {
-                    this.sendToServerDevice(k.Messages.callToAction);
-                }), (0, g.InPreGamePhase)() && (0, f.isSavedVersion)()) {
-                const m = j.default.Overlay;
-                new(0, i.default)({
+    var e = a('1bFPu'),
+        f = a('2Xvuf'),
+        g = a('9tz3H'),
+        h = a('/pbxo'),
+        i = a('I35Ay'),
+        j = a('+uQv7'),
+        k = a('dTXti'),
+        l = a('ddHnt');
+    class m extends i.default {
+        constructor(_n) {
+            if (super(_n), (0, e.default)(this, 'useCallToAction', () => {
+                    this.sendToServerDevice(l.Messages.callToAction);
+                }), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) {
+                const o = k.default.Overlay;
+                new(0, j.default)({
                     device: this,
-                    baseColor: m.baseColor,
-                    boxColor: m.boxColor,
+                    baseColor: o.baseColor,
+                    boxColor: o.boxColor,
                     content: {
                         icon: {
-                            image: (0, e.default)('devices/notification/icon.png'),
+                            image: (0, f.default)('devices/notification/icon.png'),
                             scale: 0.8
                         }
                     }
@@ -43,10 +43,10 @@ b.register('8Rbag', function(n, c) {
             }
         }
     }
-    var m = n;
-}), b.register('X3k95', function(b, n) {
-    let c;
-    a(b.exports, 'Messages', function() {
-        return c;
-    }), (c || (c = {})).callToAction = 'primaryCallToAction';
+    var _n = m;
+}), a.register('ddHnt', function(b, c) {
+    let d;
+    e(b.exports, 'Messages', function() {
+        return d;
+    }), (d || (d = {})).callToAction = 'primaryCallToAction';
 });

@@ -1,49 +1,49 @@
-function a(a, b, q, r) {
-    Object.defineProperty(a, b, {
-        get: q,
-        set: r,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('vOEdf', function(q, r) {
-    var c;
-    c = q.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('10L9E', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(q.exports, 'default', function() {
-        return o;
+    }), _p(b.exports, 'default', function() {
+        return _p;
     });
-    var d = b('UM8oI'),
-        e = b('sgILU'),
-        f = b('IfbTZ'),
-        g = b('wQnLu'),
-        h = b('PjB0f'),
-        i = b('7Sbqr'),
-        j = b('vTaNl'),
-        k = b('5Ux1a'),
-        l = b('Bpt+p'),
-        m = b('cMsWT');
-    class n extends e.default {
-        constructor(a) {
-            super(a), (0, d.default)(this, 'activityAlpha', 1), (0, d.default)(this, 'createView', () => {
+    var e = a('1bFPu'),
+        f = a('I35Ay'),
+        g = a('I1Kh+'),
+        h = a('Q+eBo'),
+        i = a('PMl60'),
+        j = a('iWivW'),
+        k = a('HWnN/'),
+        l = a('/pbxo'),
+        m = a('9tz3H'),
+        n = a('JqBF0');
+    class o extends f.default {
+        constructor(_p) {
+            super(_p), (0, e.default)(this, 'activityAlpha', 1), (0, e.default)(this, 'createView', () => {
                 this.back = this.parts.add.sprite({
-                    ...f.BackAsset,
-                    onReady: a => {
-                        a.view.setScale(0.4), a.view.alpha = this.activityAlpha;
+                    ...g.BackAsset,
+                    onReady: _p => {
+                        _p.view.setScale(0.4), _p.view.alpha = this.activityAlpha;
                     }
                 }), this.front = this.parts.add.sprite({
-                    ...f.FrontAsset,
+                    ...g.FrontAsset,
                     depthChange: 150,
-                    onReady: a => {
-                        a.view.setScale(0.4), a.view.alpha = this.activityAlpha;
+                    onReady: _p => {
+                        _p.view.setScale(0.4), _p.view.alpha = this.activityAlpha;
                     }
                 }), this.front2 = this.parts.add.sprite({
-                    ...f.Front2Asset,
+                    ...g.Front2Asset,
                     depthChange: 100,
-                    onReady: a => {
-                        a.view.setScale(0.4), a.view.alpha = this.activityAlpha;
+                    onReady: _p => {
+                        _p.view.setScale(0.4), _p.view.alpha = this.activityAlpha;
                     }
                 }), this.shadow = this.shadows.add({
                     x: 0,
@@ -52,7 +52,7 @@ b.register('vOEdf', function(q, r) {
                     r2: 60,
                     alphaMultip: this.activityAlpha
                 });
-            }), (0, d.default)(this, 'createColliders', () => {
+            }), (0, e.default)(this, 'createColliders', () => {
                 this.colliders.add.box({
                     x: -100,
                     y: 10,
@@ -75,75 +75,75 @@ b.register('vOEdf', function(q, r) {
                     h: 20,
                     angle: 20
                 });
-            }), (0, d.default)(this, 'setupInteractiveZones', () => {
+            }), (0, e.default)(this, 'setupInteractiveZones', () => {
                 this.interactiveZones.add.circle({
                     x: -20,
                     y: 70,
                     r: 60
                 });
-                const o = !i.default.session.cosmosBlocked && (0, h.isLoggedIn)(),
-                    p = o ? j.ChangingBoothConsts.interactiveInfo.normal : i.default.session.cosmosBlocked ? j.ChangingBoothConsts.interactiveInfo.cosmosBlocked : j.ChangingBoothConsts.interactiveInfo.notLoggedIn,
-                    q = o ? void 0 : j.ChangingBoothConsts.interactiveInfo.notAvailableHeader,
-                    r = o ? void 0 : j.ChangingBoothConsts.interactiveInfo.notAvailableColor;
+                const q = !j.default.session.cosmosBlocked && (0, i.isLoggedIn)(),
+                    r = q ? k.ChangingBoothConsts.interactiveInfo.normal : j.default.session.cosmosBlocked ? k.ChangingBoothConsts.interactiveInfo.cosmosBlocked : k.ChangingBoothConsts.interactiveInfo.notLoggedIn,
+                    s = q ? void 0 : k.ChangingBoothConsts.interactiveInfo.notAvailableHeader,
+                    t = q ? void 0 : k.ChangingBoothConsts.interactiveInfo.notAvailableColor;
                 this.interactiveZones.setInfo({
-                    message: p,
-                    allowedToInteract: o,
-                    duration: j.ChangingBoothConsts.interactiveInfo.duration,
-                    topHeader: q,
-                    topHeaderColor: r
+                    message: r,
+                    allowedToInteract: q,
+                    duration: k.ChangingBoothConsts.interactiveInfo.duration,
+                    topHeader: s,
+                    topHeaderColor: t
                 }), this.interactiveZones.onInteraction = () => {
-                    this.sendToServerDevice(g.Messages.open);
+                    this.sendToServerDevice(h.Messages.open);
                 };
-            }), (0, d.default)(this, 'openDeviceUI', () => {
+            }), (0, e.default)(this, 'openDeviceUI', () => {
                 this.deviceUI.open({});
-            }), (0, d.default)(this, 'updateActiveState', () => {
-                const o = this.state.active ? 1 : 0;
+            }), (0, e.default)(this, 'updateActiveState', () => {
+                const q = this.state.active ? 1 : 0;
                 this.tweens.add({
                     targets: this,
-                    activityAlpha: o,
+                    activityAlpha: q,
                     duration: 100,
                     onUpdate: () => {
-                        var p, q, r, s, t, u;
-                        null === (p = this.back) || void 0 === p || null === (q = p.view) || void 0 === q || q.setAlpha(this.activityAlpha), null === (r = this.front) || void 0 === r || null === (s = r.view) || void 0 === s || s.setAlpha(this.activityAlpha), null === (t = this.front2) || void 0 === t || null === (u = t.view) || void 0 === u || u.setAlpha(this.activityAlpha), this.shadow.alphaMultip = this.activityAlpha;
+                        var r, s, t, u, v, w;
+                        null === (r = this.back) || void 0 === r || null === (s = r.view) || void 0 === s || s.setAlpha(this.activityAlpha), null === (t = this.front) || void 0 === t || null === (u = t.view) || void 0 === u || u.setAlpha(this.activityAlpha), null === (v = this.front2) || void 0 === v || null === (w = v.view) || void 0 === w || w.setAlpha(this.activityAlpha), this.shadow.alphaMultip = this.activityAlpha;
                     }
                 }), this.interactiveZones.setForceDisabled(!this.state.active), this.state.active || this.deviceUI.close();
-            }), (0, d.default)(this, 'onStateChange', a => {
-                'active' === a && this.updateActiveState();
-            }), (0, d.default)(this, 'checkIfCollidersEnabled', () => this.state.active), this.layers.setDefaultLayer(m.default.DepthSortedCharactersAndDevices), this.activityAlpha = this.state.active ? 1 : 0, (0, k.InPreGamePhase)() && (0, l.isSavedVersion)() && (this.activityAlpha = 1), this.createView(), this.createColliders(), this.setupInteractiveZones();
+            }), (0, e.default)(this, 'onStateChange', _p => {
+                'active' === _p && this.updateActiveState();
+            }), (0, e.default)(this, 'checkIfCollidersEnabled', () => this.state.active), this.layers.setDefaultLayer(n.default.DepthSortedCharactersAndDevices), this.activityAlpha = this.state.active ? 1 : 0, (0, l.InPreGamePhase)() && (0, m.isSavedVersion)() && (this.activityAlpha = 1), this.createView(), this.createColliders(), this.setupInteractiveZones();
         }
     }
-    var o = p;
-}), b.register('IfbTZ', function(i, c) {
-    a(i.exports, 'BackAsset', function() {
-        return d;
-    }), a(i.exports, 'FrontAsset', function() {
-        return e;
-    }), a(i.exports, 'Front2Asset', function() {
-        return f;
+    var _p = o;
+}), a.register('I1Kh+', function(b, c) {
+    t(b.exports, 'BackAsset', function() {
+        return _e;
+    }), t(b.exports, 'FrontAsset', function() {
+        return _f;
+    }), t(b.exports, 'Front2Asset', function() {
+        return _g;
     });
-    var c = b('JJQ0+');
-    const d = {
-            imageId: (0, c.default)('devices/changing_booth/back.png'),
-            imageUrl: (0, c.default)('devices/changing_booth/back.png')
+    var d = a('2Xvuf');
+    const _e = {
+            imageId: (0, d.default)('devices/changing_booth/back.png'),
+            imageUrl: (0, d.default)('devices/changing_booth/back.png')
         },
-        e = {
-            imageId: (0, c.default)('devices/changing_booth/front.png'),
-            imageUrl: (0, c.default)('devices/changing_booth/front.png')
+        _f = {
+            imageId: (0, d.default)('devices/changing_booth/front.png'),
+            imageUrl: (0, d.default)('devices/changing_booth/front.png')
         },
-        f = {
-            imageId: (0, c.default)('devices/changing_booth/front_2.png'),
-            imageUrl: (0, c.default)('devices/changing_booth/front_2.png')
+        _g = {
+            imageId: (0, d.default)('devices/changing_booth/front_2.png'),
+            imageUrl: (0, d.default)('devices/changing_booth/front_2.png')
         };
-}), b.register('wQnLu', function(b, i) {
-    let c;
-    a(b.exports, 'Messages', function() {
-        return c;
-    }), (c || (c = {})).open = 'open';
-}), b.register('vTaNl', function(b, i) {
-    a(b.exports, 'ChangingBoothConsts', function() {
-        return c;
+}), a.register('Q+eBo', function(b, c) {
+    let d;
+    t(b.exports, 'Messages', function() {
+        return d;
+    }), (d || (d = {})).open = 'open';
+}), a.register('HWnN/', function(b, c) {
+    t(b.exports, 'ChangingBoothConsts', function() {
+        return _d;
     });
-    const c = {
+    const _d = {
         interactiveInfo: {
             normal: 'Change Your Cosmetics',
             cosmosBlocked: 'Cosmos Blocked',

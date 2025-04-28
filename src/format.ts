@@ -1,7 +1,7 @@
 import beautify from "js-beautify";
 import { createHash } from "node:crypto";
 import * as walk from "acorn-walk";
-import { parse, type ClassDeclaration, type FunctionDeclaration, type Identifier, type Node } from "acorn";
+import { parse, type ClassDeclaration, type FunctionDeclaration, type FunctionExpression, type Identifier, type Node, type VariableDeclarator } from "acorn";
 import { generate } from "escodegen";
 import fs from "node:fs";
 import { join } from "node:path";
@@ -12,12 +12,12 @@ export function formatJs(code: string) {
 		sourceType: "module"
 	});
 
-	const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$_";
-	let unassignedIdentifiers = new Map<string, Identifier[]>();
-	let newNames: Map<string, string>[] = [];
-	let nameIndex: number[] = [];
+	const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$";
 	let names: string[] = [];
 	let nameNumber = 0;
+
+	// if we get beyond 3 characters something has gone seriously wrong
+	const reserved = ["in", "if", "of", "do", "for", "try", "int", "new", "var"];
 
 	const nextName = () => {
 		let number = nameNumber++;
@@ -37,37 +37,70 @@ export function formatJs(code: string) {
 		else names.push(name);
 	}
 
-	// if we get beyond 3 characters something has gone seriously wrong
-	const reserved = ["in", "if", "of", "do", "for", "try", "int", "new", "var"];
-	const scopeChanges = ["IfStatement", "SwitchStatement", "TryStatement", "Function", "BlockStatement"];
+	const scopeChanges = ["Program", "IfStatement", "SwitchStatement", "TryStatement", "FunctionDeclaration", "FunctionExpression", "BlockStatement"];
+	let unassignedIdentifiers = new Map<string, Identifier[]>();
 
+	interface Scope {
+		names: Map<string, string>;
+		nameIndex: number;
+		node: Node;
+	}
+
+	let scopes: Scope[] = [{ node: ast, nameIndex: 0, names: new Map() }];
+	
 	const Identifier = (node: Identifier, _: never, ancestors: Node[]) => {
-		let depth = 0;
 		let declaration = false;
 
-		for(let ancestor of ancestors) {
-			if(scopeChanges.includes(ancestor.type)) depth++;
+		// Find the first shared ancestor
+		let ancestor = ancestors[0];
+		let scopesIndex = 0;
+		let ancestorIndex = 0;
+		for(let i = ancestors.length - 1; i >= 1; i--) {
+			let node = ancestors[i];
+			if(!scopeChanges.includes(node.type)) continue;
+
+			let index = scopes.findIndex(s => s.node === node);
+			if(index === -1) continue;
+			
+			ancestor = node;
+			scopesIndex = index;
+			ancestorIndex = i;
+			break;
 		}
+
+		// Remove all the unnecessary scopes
+		scopes = scopes.slice(0, scopesIndex + 1);
+
+		// Add on the new ones
+		for(let i = ancestorIndex + 1; i < ancestors.length; i++) {
+			let node = ancestors[i];
+			if(!scopeChanges.includes(node.type)) continue;
+
+			scopes.push({ node, nameIndex: 0, names: new Map() });
+		}
+
+		// console.log(node.name, scopes.length, scopes.map(s => s.node.type), ancestors.map(a => a.type));
 
 		let parent = ancestors[ancestors.length - 2];
 
 		if(
-			(parent.type === "VariableDeclarator") || (parent.type.endsWith("Pattern")) ||
+			(parent.type.endsWith("Pattern")) ||
+			(parent.type === "VariableDeclarator" && (parent as VariableDeclarator).id === node) ||
 			(parent.type === "FunctionDeclaration" && (parent as FunctionDeclaration).id === node) ||
+			(parent.type === "FunctionDeclaration" && (parent as FunctionDeclaration).params.includes(node)) ||
+			(parent.type === "FunctionExpression" && (parent as FunctionExpression).params.includes(node)) ||
 			(parent.type === "ClassDeclaration" && (parent as ClassDeclaration).id === node)
 		) {
 			declaration = true;
 		}
-		
-		newNames = newNames.slice(0, depth + 1);
-		nameIndex = nameIndex.slice(0, depth + 1);
+
+		let scope = scopes[scopes.length - 1];
 
 		if(declaration) {
 			// generate a new name to replace it with
-			if(!nameIndex[depth]) nameIndex[depth] = 1;
-			else nameIndex[depth]++;
+			scope.nameIndex++;
 
-			let number = nameIndex.reduce((a, b) => a + b, 0) - 1;
+			let number = scopes.reduce((a, b) => a + b.nameIndex, 0) - 1;
 			if(!names[number]) nextName();
 
 			let name = names[number];
@@ -75,20 +108,20 @@ export function formatJs(code: string) {
 			// rename all the unassigned ones
 			let unassigned = unassignedIdentifiers.get(node.name);
 			if(unassigned) {
+				name = "_" + name;
 				for(let node of unassigned) node.name = name;
 				unassignedIdentifiers.delete(node.name);
 			}
 
-			if(!newNames[depth]) newNames[depth] = new Map();
-			newNames[depth].set(node.name, name);
+			scope.names.set(node.name, name);
 			node.name = name;
 		} else {
 			// find the name to replace it with
-			for(let i = newNames.length - 1; i >= 0; i--) {
-				let names = newNames[i];
-				if(!names || !names.has(node.name)) continue;
+			for(let i = scopes.length - 1; i >= 0; i--) {
+				let scope = scopes[i];
+				if(!scope.names.has(node.name)) continue;
 
-				node.name = names.get(node.name);
+				node.name = scope.names.get(node.name);
 				return;
 			}
 

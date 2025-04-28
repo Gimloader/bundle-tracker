@@ -1,67 +1,67 @@
-function a(a, b, i, j) {
-    Object.defineProperty(a, b, {
-        get: i,
-        set: j,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('0GMUe', function(i, j) {
-    var c;
-    c = i.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('Lb0bk', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(i.exports, 'default', function() {
-        return s;
+    }), _u(b.exports, 'default', function() {
+        return _t;
     });
-    var d = b('8kSQZ'),
-        e = b('uPP4W'),
-        f = b('h99Nu'),
-        g = b('cR5QE'),
-        h = b('iHElh'),
-        i = b('Vlfxs'),
-        j = b('PjB0f'),
-        k = b('gSUVO'),
-        l = b('lmfrI'),
-        m = b('+3d9H'),
-        n = b('q721a'),
-        o = b('k0s2g17');
-    let p, q, r = a => a;
-    var s = (0, i.observer)(() => {
-        const t = (0, j.getUrlVariable)('session_id');
-        e.useEffect(() => {
-            (0, j.isStudent)() ? (0, o.NavigateTo)(n.DASHBOARD) : t && (0, m.default)(t);
+    var e = a('0hzx+'),
+        f = a('LEQ5w'),
+        g = a('Axq+p'),
+        h = a('YRlpt'),
+        i = a('6CIVV'),
+        j = a('2x11J'),
+        k = a('PMl60'),
+        l = a('b5kvC'),
+        m = a('sHRDd'),
+        n = a('jE4mH'),
+        o = a('gs4MT'),
+        p = a('jzxyj10');
+    let q, r, s = _u => _u;
+    var _t = (0, j.observer)(() => {
+        const _u = (0, k.getUrlVariable)('session_id');
+        f.useEffect(() => {
+            (0, k.isStudent)() ? (0, p.NavigateTo)(o.DASHBOARD) : _u && (0, n.default)(_u);
         }, []);
-        return (0, d.jsx)(t, {
-            children: (0, d.jsx)(u, {
-                children: t ? (0, d.jsxs)('div', {
+        return (0, e.jsx)(_u, {
+            children: (0, e.jsx)(_v, {
+                children: _u ? (0, e.jsxs)('div', {
                     className: 'maxWidth flex hc vc flex-column',
                     children: [
-                        (0, d.jsx)(h.default, {
+                        (0, e.jsx)(i.default, {
                             size: 'large'
                         }),
-                        (0, j.isLoggedIn)() && (0, d.jsx)('div', {
+                        (0, k.isLoggedIn)() && (0, e.jsx)('div', {
                             style: {
                                 fontSize: 23,
-                                fontWeight: k.FontWeights.UltraBold
+                                fontWeight: l.FontWeights.UltraBold
                             },
                             children: 'Upgrading your account...'
                         }),
-                        (0, d.jsx)('div', {
+                        (0, e.jsx)('div', {
                             style: {
                                 fontSize: 16
                             },
                             children: 'Please don\'t close this tab'
                         })
                     ]
-                }) : (g.default.error({
+                }) : (h.default.error({
                     title: 'An error ocurred during checkout. Please contact customer support'
                 }), null)
             })
         });
     });
-    const t = f.default.div(p || (p = r`
+    const _u = g.default.div(q || (q = s`
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/client/img/signup/funky-lines.png') repeat 0 0;
   height: 100%;
@@ -70,9 +70,9 @@ b.register('0GMUe', function(i, j) {
   justify-content: center;
   align-items: center;
 `)),
-        u = f.default.div.attrs({
+        _v = g.default.div.attrs({
             className: 'scroll-y'
-        })(q || (q = r`
+        })(r || (r = s`
   background: ${ 0 };
   padding: 20px;
   border-radius: 5px;
@@ -82,54 +82,54 @@ b.register('0GMUe', function(i, j) {
   max-height: 90%;
   font-family: ${ 0 };
   color: ${ 0 };
-`), l.default.White, k.Fonts.SFPro, l.default.Black);
-}), b.register('+3d9H', function(i, j) {
-    a(i.exports, 'default', function() {
-        return j;
+`), m.default.White, l.Fonts.SFPro, m.default.Black);
+}), a.register('jE4mH', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _k;
     });
-    var c = b('PjB0f'),
-        d = b('I1CoM'),
-        e = b('q721a'),
-        f = b('I9mdQ'),
-        g = b('cR5QE'),
-        h = b('k0s2g17'),
-        i = b('CJCMN4');
-    var j = a => {
-        d.default.navigation.loadingTokenSubmit = !0;
-        (0, c.verifyStripe)({
-            sessionId: a,
-            onSuccess: (0, c.isLoggedIn)() ? () => {
-                const k = (0, c.isUpgraded)();
-                (0, f.default)({
+    var d = a('PMl60'),
+        e = a('x/Eg+0'),
+        f = a('gs4MT'),
+        g = a('Pkvp4'),
+        h = a('YRlpt'),
+        i = a('jzxyj10'),
+        j = a('Pq0g9');
+    var _k = _l => {
+        e.default.navigation.loadingTokenSubmit = !0;
+        (0, d.verifyStripe)({
+            sessionId: _l,
+            onSuccess: (0, d.isLoggedIn)() ? () => {
+                const _l = (0, d.isUpgraded)();
+                (0, g.default)({
                     onSuccess: () => {
-                        var l;
-                        k || (0, i.AnalyticsTrackEvent)({
+                        var m;
+                        _l || (0, j.AnalyticsTrackEvent)({
                             event: 'upgrade',
                             properties: {
-                                plan: null === (l = (0, c.getUser)()) || void 0 === l ? void 0 : l.type,
+                                plan: null === (m = (0, d.getUser)()) || void 0 === m ? void 0 : m.type,
                                 source: 'individual'
                             },
                             forcePostHog: !0
-                        }), window.location.href = e.DASHBOARD + '?from=upgrade';
+                        }), window.location.href = f.DASHBOARD + '?from=upgrade';
                     },
-                    onError: () => g.default.success({
+                    onError: () => h.default.success({
                         title: 'Upgraded!',
                         content: 'You have upgraded but must log out and back in first.',
-                        onOk: () => (0, c.request)({
+                        onOk: () => (0, d.request)({
                             url: '/logout',
                             both: () => window.open('/login', '_self')
                         })
                     })
                 });
             } : () => {
-                g.default.success({
+                h.default.success({
                     title: 'The purchase has been completed',
-                    onOk: () => (0, h.NavigateTo)(e.HOMEPAGE)
+                    onOk: () => (0, i.NavigateTo)(f.HOMEPAGE)
                 });
             },
-            onError: a => {
-                d.default.navigation.loadingTokenSubmit = !1, (0, c.throwMessageError)({
-                    e: a,
+            onError: _v => {
+                e.default.navigation.loadingTokenSubmit = !1, (0, d.throwMessageError)({
+                    e: _v,
                     default: {
                         title: 'Error ocurred when upgrading account',
                         content: 'An error ocurred on our end while upgrading your account. Please contact support.'
@@ -138,50 +138,50 @@ b.register('0GMUe', function(i, j) {
             }
         });
     };
-}), b.register('I1CoM', function(i, j) {
-    a(i.exports, 'default', function() {
-        return e;
+}), a.register('x/Eg+0', function(b, c) {
+    _v(b.exports, 'default', function() {
+        return _f;
     });
-    var c = b('SWSuU'),
-        d = b('voqY9');
-    var e = {
-        navigation: new(0, c.default)(),
-        checkout: new(0, d.default)()
+    var d = a('xguoe0'),
+        e = a('QKunP');
+    var _f = {
+        navigation: new(0, d.default)(),
+        checkout: new(0, e.default)()
     };
-}), b.register('SWSuU', function(i, j) {
-    a(i.exports, 'Screen', function() {
-        return e;
-    }), a(i.exports, 'default', function() {
-        return k;
+}), a.register('xguoe0', function(b, c) {
+    _v(b.exports, 'Screen', function() {
+        return _f;
+    }), _v(b.exports, 'default', function() {
+        return _k;
     });
-    var c = b('6gioo'),
-        d = b('UnUp5');
-    let e;
-    (e || (e = {})).checkout = 'checkout';
-    const f = {
-            screen: e.checkout,
+    var d = a('csYze'),
+        e = a('YuT/D');
+    let _f;
+    (_f || (_f = {})).checkout = 'checkout';
+    const g = {
+            screen: _f.checkout,
             loadingTokenSubmit: !1
         },
         {
-            screen: g,
-            loadingTokenSubmit: h
-        } = i;
+            screen: h,
+            loadingTokenSubmit: i
+        } = g;
     class j {
         constructor() {
-            this.screen = g, this.loadingTokenSubmit = h, this.reset = () => {
-                Object.keys(i).forEach(a => this[a] = i[a]);
-            }, (0, d.makeObservable)(this);
+            this.screen = h, this.loadingTokenSubmit = i, this.reset = () => {
+                Object.keys(g).forEach(_v => this[_v] = g[_v]);
+            }, (0, e.makeObservable)(this);
         }
     }
-    (0, c.__decorate)([d.observable], j.prototype, 'screen', void 0), (0, c.__decorate)([d.observable], j.prototype, 'loadingTokenSubmit', void 0), (0, c.__decorate)([d.action], j.prototype, 'reset', void 0);
-    var k = l;
-}), b.register('voqY9', function(i, j) {
-    a(i.exports, 'default', function() {
-        return v;
+    (0, d.__decorate)([e.observable], j.prototype, 'screen', void 0), (0, d.__decorate)([e.observable], j.prototype, 'loadingTokenSubmit', void 0), (0, d.__decorate)([e.action], j.prototype, 'reset', void 0);
+    var _k = j;
+}), a.register('QKunP', function(b, c) {
+    _v(b.exports, 'default', function() {
+        return _v;
     });
-    var c = b('6gioo'),
-        d = b('UnUp5');
-    const e = {
+    var d = a('csYze'),
+        e = a('YuT/D');
+    const f = {
             planName: '',
             planId: '',
             couponId: '',
@@ -198,60 +198,60 @@ b.register('0GMUe', function(i, j) {
             stripePublicKey: ''
         },
         {
-            planName: f,
-            planId: g,
-            couponId: h,
-            planCost: i,
-            planDescription: j,
-            accountCredit: k,
-            percentageOff: l,
-            amountOff: m,
-            couponDescription: n,
-            hasCoupon: o,
-            couponOneUseOnly: p,
-            couponIsOnlyForPlan: q,
-            existingPayingPlan: r,
-            stripePublicKey: s
-        } = t;
+            planName: g,
+            planId: h,
+            couponId: i,
+            planCost: j,
+            planDescription: k,
+            accountCredit: l,
+            percentageOff: m,
+            amountOff: n,
+            couponDescription: o,
+            hasCoupon: p,
+            couponOneUseOnly: q,
+            couponIsOnlyForPlan: r,
+            existingPayingPlan: s,
+            stripePublicKey: t
+        } = f;
     class u {
         get totalCost() {
-            const v = this.planCost * this.percentageOff - this.amountOff - this.accountCredit;
-            return v < 0 ? 0 : v;
+            const _v = this.planCost * this.percentageOff - this.amountOff - this.accountCredit;
+            return _v < 0 ? 0 : _v;
         }
         constructor() {
-            this.planName = f, this.planId = g, this.couponId = h, this.planCost = i, this.planDescription = j, this.accountCredit = k, this.percentageOff = l, this.amountOff = m, this.couponDescription = n, this.hasCoupon = o, this.couponOneUseOnly = p, this.couponIsOnlyForPlan = q, this.existingPayingPlan = r, this.stripePublicKey = s, this.reset = () => {
-                Object.keys(t).forEach(v => {
-                    this[v] = t[v];
+            this.planName = g, this.planId = h, this.couponId = i, this.planCost = j, this.planDescription = k, this.accountCredit = l, this.percentageOff = m, this.amountOff = n, this.couponDescription = o, this.hasCoupon = p, this.couponOneUseOnly = q, this.couponIsOnlyForPlan = r, this.existingPayingPlan = s, this.stripePublicKey = t, this.reset = () => {
+                Object.keys(f).forEach(e => {
+                    this[e] = f[e];
                 });
-            }, (0, d.makeObservable)(this);
+            }, (0, e.makeObservable)(this);
         }
     }
-    (0, c.__decorate)([d.observable], u.prototype, 'planName', void 0), (0, c.__decorate)([d.observable], u.prototype, 'planId', void 0), (0, c.__decorate)([d.observable], u.prototype, 'couponId', void 0), (0, c.__decorate)([d.observable], u.prototype, 'planCost', void 0), (0, c.__decorate)([d.observable], u.prototype, 'planDescription', void 0), (0, c.__decorate)([d.observable], u.prototype, 'accountCredit', void 0), (0, c.__decorate)([d.observable], u.prototype, 'percentageOff', void 0), (0, c.__decorate)([d.observable], u.prototype, 'amountOff', void 0), (0, c.__decorate)([d.observable], u.prototype, 'couponDescription', void 0), (0, c.__decorate)([d.observable], u.prototype, 'hasCoupon', void 0), (0, c.__decorate)([d.observable], u.prototype, 'couponOneUseOnly', void 0), (0, c.__decorate)([d.observable], u.prototype, 'couponIsOnlyForPlan', void 0), (0, c.__decorate)([d.observable], u.prototype, 'existingPayingPlan', void 0), (0, c.__decorate)([d.observable], u.prototype, 'stripePublicKey', void 0), (0, c.__decorate)([d.computed], u.prototype, 'totalCost', null), (0, c.__decorate)([d.action], u.prototype, 'reset', void 0);
-    var v = w;
-}), b.register('k0s2g17', function(i, j) {
-    a(i.exports, 'NavigateTo', function() {
-        return d;
+    (0, d.__decorate)([e.observable], u.prototype, 'planName', void 0), (0, d.__decorate)([e.observable], u.prototype, 'planId', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponId', void 0), (0, d.__decorate)([e.observable], u.prototype, 'planCost', void 0), (0, d.__decorate)([e.observable], u.prototype, 'planDescription', void 0), (0, d.__decorate)([e.observable], u.prototype, 'accountCredit', void 0), (0, d.__decorate)([e.observable], u.prototype, 'percentageOff', void 0), (0, d.__decorate)([e.observable], u.prototype, 'amountOff', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponDescription', void 0), (0, d.__decorate)([e.observable], u.prototype, 'hasCoupon', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponOneUseOnly', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponIsOnlyForPlan', void 0), (0, d.__decorate)([e.observable], u.prototype, 'existingPayingPlan', void 0), (0, d.__decorate)([e.observable], u.prototype, 'stripePublicKey', void 0), (0, d.__decorate)([e.computed], u.prototype, 'totalCost', null), (0, d.__decorate)([e.action], u.prototype, 'reset', void 0);
+    var _v = u;
+}), a.register('jzxyj10', function(b, c) {
+    e(b.exports, 'NavigateTo', function() {
+        return _e;
     });
-    var c = b('Cr/BM');
-    const d = a => {
-        c.history.push(a);
+    var d = a('oBJ9G');
+    const _e = e => {
+        d.history.push(e);
     };
-}), b.register('CJCMN4', function(i, j) {
-    a(i.exports, 'AnalyticsTrackEvent', function() {
-        return g;
+}), a.register('Pq0g9', function(b, c) {
+    e(b.exports, 'AnalyticsTrackEvent', function() {
+        return _h;
     });
-    var c = b('pvZv3'),
-        d = b('PjB0f'),
-        e = b('61G7M'),
-        f = b('OW/xn');
-    const g = a => {
-        var h, i, j;
-        if ((window.gtag && !(null === (h = a.blockedSource) || void 0 === h ? void 0 : h.google) && window.gtag('event', a.event, a.properties), e.AnalyticsFlags.educatorOnly) && (null === (j = (0, d.getUser)()) || void 0 === j ? void 0 : j.accountType) !== c.default.educator)
+    var d = a('e7pFf'),
+        e = a('PMl60'),
+        f = a('Td6aM'),
+        g = a('J3ZQI');
+    const _h = e => {
+        var i, j, k;
+        if ((window.gtag && !(null === (i = e.blockedSource) || void 0 === i ? void 0 : i.google) && window.gtag('event', e.event, e.properties), f.AnalyticsFlags.educatorOnly) && (null === (k = (0, e.getUser)()) || void 0 === k ? void 0 : k.accountType) !== d.default.educator)
             return;
-        (null === (i = a.blockedSource) || void 0 === i ? void 0 : i.posthog) || (0, f.TrackPostHogEvent)({
-            event: a.event,
-            properties: a.properties,
-            force: a.forcePostHog
+        (null === (j = e.blockedSource) || void 0 === j ? void 0 : j.posthog) || (0, g.TrackPostHogEvent)({
+            event: e.event,
+            properties: e.properties,
+            force: e.forcePostHog
         });
     };
 });

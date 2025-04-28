@@ -1,134 +1,134 @@
-function a(a, b, c, d) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: d,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('jh162', function(b, c) {
-    a(b.exports, 'EncryptData', function() {
-        return h;
-    }), a(b.exports, 'DecryptData', function() {
-        return i;
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('5drJf', function(b, c) {
+    _j(b.exports, 'EncryptData', function() {
+        return _h;
+    }), _j(b.exports, 'DecryptData', function() {
+        return _i;
     });
     const d = new Map(),
         e = new Map(),
         f = new Map();
     let g = 1;
-    const h = (a, b) => {
+    const _h = (_j, b) => {
             const i = (() => {
-                const j = g.toString();
-                return g++, j;
+                const _j = g.toString();
+                return g++, _j;
             })();
             if (b) {
-                const k = d.get(b);
-                k && (f.delete(k), e.set(k, i)), d.set(b, i);
+                const j = d.get(b);
+                j && (f.delete(j), e.set(j, i)), d.set(b, i);
             }
-            return f.set(i, a), i;
+            return f.set(i, _G), i;
         },
-        i = a => {
-            if (!a)
+        _i = _G => {
+            if (!_G)
                 return;
-            const j = e.get(a);
-            return j ? i(j) : f.get(a);
+            const j = e.get(_G);
+            return j ? _i(j) : f.get(_G);
         };
-}), c.register('OK62W', function(B, C) {
-    a(B.exports, 'default', function() {
-        return z;
+}), a.register('9fFDn', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _z;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('Vlfxs'),
-        h = c('LChhu'),
-        i = c('FgarE'),
-        j = c('b9Bct'),
-        k = c('FNaij'),
-        l = c('CWdy5'),
-        m = c('w1JIe'),
-        n = c('P8qrB'),
-        o = c('l6m0e'),
-        p = c('7A6V/'),
-        q = c('7C60q'),
-        r = c('9bAEj'),
-        s = c('bfuFC'),
-        t = c('jh162');
-    let u, v, w, x = a => a;
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('2x11J'),
+        h = a('Lwb9P'),
+        i = a('XZe6/'),
+        j = a('TwXYL'),
+        k = a('gk6FN'),
+        l = a('VS/cl'),
+        m = a('t4/iW'),
+        n = a('kOSsb'),
+        o = a('dt9Wz'),
+        p = a('L1szR'),
+        q = a('B7Zhl'),
+        r = a('gwrMQ'),
+        s = a('4RTv9'),
+        t = a('5drJf');
+    let u, v, w, x = _G => _G;
     var y;
     (y = w || (w = {})).questions = 'questions', y.response = 'response';
-    var z = (0, g.observer)(a => {
-        const [A, B] = b(e).useState(!1), [C, D] = b(e).useState(w.questions), [E, F] = b(e).useState(!1), [G, H] = b(e).useState(a.ecc), [I, J] = b(e).useState(), K = (0, k.useMotionValue)('0%'), L = (0, k.useMotionValue)(1), M = (0, k.useMotionValue)(a.disableFadeInOnMount ? 1 : 0);
-        b(e).useEffect(() => {
-            J(a.ecc);
-        }, [a.ecc]), b(e).useEffect(() => {
-            G || H(a.ecc);
-        }, [a.ecc]);
-        const N = b(e).useMemo(() => {
+    var _z = (0, g.observer)(_G => {
+        const [A, B] = _T(e).useState(!1), [C, D] = _T(e).useState(w.questions), [E, F] = _T(e).useState(!1), [G, H] = _T(e).useState(_G.ecc), [I, J] = _T(e).useState(), K = (0, k.useMotionValue)('0%'), L = (0, k.useMotionValue)(1), M = (0, k.useMotionValue)(_G.disableFadeInOnMount ? 1 : 0);
+        _T(e).useEffect(() => {
+            J(_G.ecc);
+        }, [_G.ecc]), _T(e).useEffect(() => {
+            G || H(_G.ecc);
+        }, [_G.ecc]);
+        const N = _T(e).useMemo(() => {
                 if (G)
                     return (0, t.DecryptData)(G);
             }, [G]),
-            O = b(e).useMemo(() => {
+            O = _T(e).useMemo(() => {
                 if (N)
                     return (0, t.EncryptData)(N.answers, `${ N._id }-answers`);
             }, [N]);
-        b(e).useEffect(() => (a.onMount && a.onMount(), a.disableFadeInOnMount || (0, h.animate)(M, 1, {
+        _T(e).useEffect(() => (_G.onMount && _G.onMount(), _G.disableFadeInOnMount || (0, h.animate)(M, 1, {
             duration: 0.25,
             delay: 0.01,
             ease: 'easeOut'
         }), () => {
             n.default.stop();
-        }), []), b(e).useEffect(() => {
-            o.default.readToMe.enabled = a.readToMeEnabled || !1, C === w.response ? n.default.stop() : C === w.questions && G && n.default.play(N);
+        }), []), _T(e).useEffect(() => {
+            o.default.readToMe.enabled = _G.readToMeEnabled || !1, C === w.response ? n.default.stop() : C === w.questions && G && n.default.play(N);
         }, [
-            a.readToMeEnabled,
+            _G.readToMeEnabled,
             C
         ]);
-        const P = b => {
+        const P = _T => {
                 if (!E) {
-                    a.onActionSound && a.onActionSound.play(), F(!0);
-                    const Q = a.onQuestionAnswered(b);
+                    _G.onActionSound && _G.onActionSound.play(), F(!0);
+                    const Q = _G.onQuestionAnswered(_T);
                     (0, h.animate)(K, '100%', {
                         ease: 'easeIn',
                         duration: 0.23,
                         onComplete: () => {
-                            F(!1), (b => {
+                            F(!1), (_T => {
                                 var R, S;
-                                b ? null === (R = a.correctSound) || void 0 === R || R.play() : null === (S = a.incorrectSound) || void 0 === S || S.play();
-                            })(Q), a.nextQuestion && a.nextQuestion(), Q();
+                                _T ? null === (R = _G.correctSound) || void 0 === R || R.play() : null === (S = _G.incorrectSound) || void 0 === S || S.play();
+                            })(Q), _G.nextQuestion && _G.nextQuestion(), _Q();
                         }
                     });
                 }
             },
-            Q = () => {
-                n.default.stop(), L.set(0), a.beforeOpenAnswerResponse && a.beforeOpenAnswerResponse(), D(w.response), (0, h.animate)(L, 1, {
+            _Q = () => {
+                n.default.stop(), L.set(0), _G.beforeOpenAnswerResponse && _G.beforeOpenAnswerResponse(), D(w.response), (0, h.animate)(L, 1, {
                     duration: 0.3,
-                    onUpdate: a => {
-                        !A && a >= 0.3 * 0.75 && B(!0);
+                    onUpdate: _G => {
+                        !A && _G >= 0.3 * 0.75 && B(!0);
                     }
                 });
             },
             R = () => {
-                K.set('0%'), B(!1), n.default.stop(), a.continueAction && a.continueAction(), H(I), D(w.questions), M.set(0), (0, h.animate)(M, 1, {
+                K.set('0%'), B(!1), n.default.stop(), _G.continueAction && _G.continueAction(), H(I), D(w.questions), M.set(0), (0, h.animate)(M, 1, {
                     duration: 0.2
                 });
             },
             S = () => {
-                var T;
+                var _T;
                 const U = {
-                    background: (null == a || null === (T = a.continueButtonColor) || void 0 === T ? void 0 : T.background) || q.default.response.continue.background,
+                    background: (null == _G || null === (_T = _G.continueButtonColor) || void 0 === _T ? void 0 : _T.background) || q.default.response.continue.background,
                     text: 'Continue',
                     handleClick: () => {
                         R();
                     }
                 };
-                return a.responseActions ? [
-                    ...a.responseActions,
+                return _G.responseActions ? [
+                    ..._G.responseActions,
                     U
                 ] : [U];
             };
@@ -137,85 +137,85 @@ c.register('jh162', function(b, c) {
             children: C === w.questions ? G ? (0, d.jsxs)(r.default, {
                 opacity: M,
                 yPosition: K,
-                defaultBackgroundColor: a.defaultBackgroundColor || q.default.defaultBackground,
+                defaultBackgroundColor: _G.defaultBackgroundColor || q.default.defaultBackground,
                 children: [
-                    (0, d.jsx)(A, {
-                        questionColor: a.questionColor || q.default.question,
+                    (0, d.jsx)(_A, {
+                        questionColor: _G.questionColor || q.default.question,
                         children: (0, d.jsx)(l.default, {
                             text: null == N ? void 0 : N.text,
                             image: null == N ? void 0 : N.image,
                             audio: null == N ? void 0 : N.audio,
                             latex: null == N ? void 0 : N.latex,
-                            allowGoogleTranslate: a.allowGoogleTranslate
+                            allowGoogleTranslate: _G.allowGoogleTranslate
                         })
                     }),
                     (0, d.jsx)(m.default, {
                         onQuestionAnswered: P,
                         eas: O,
                         type: (null == N ? void 0 : N.type) || s.QuestionType.multipleChoice,
-                        blockKeyboardEvent: a.blockKeyboardEvents || !1,
-                        allowGoogleTranslate: a.allowGoogleTranslate || !1,
-                        language: a.language || 'en',
-                        translations: a.translations || {},
-                        answerColors: a.answerColors || q.default.palette,
-                        desktopBreakpoint: a.desktopBreakpoint || q.default.desktopBreakpoint,
-                        defaultBackgroundColor: a.defaultBackgroundColor || q.default.defaultBackground,
-                        textInputButtonColor: a.textInputButtonColor || q.default.palette[2]
+                        blockKeyboardEvent: _G.blockKeyboardEvents || !1,
+                        allowGoogleTranslate: _G.allowGoogleTranslate || !1,
+                        language: _G.language || 'en',
+                        translations: _G.translations || {},
+                        answerColors: _G.answerColors || q.default.palette,
+                        desktopBreakpoint: _G.desktopBreakpoint || q.default.desktopBreakpoint,
+                        defaultBackgroundColor: _G.defaultBackgroundColor || q.default.defaultBackground,
+                        textInputButtonColor: _G.textInputButtonColor || q.default.palette[2]
                     })
                 ]
-            }) : a.noQuestionContent || null : (0, d.jsx)(B, {
+            }) : _G.noQuestionContent || null : (0, d.jsx)(_B, {
                 style: {
                     opacity: L
                 },
                 children: (0, d.jsx)(p.default, {
                     canAdvanceToQuestions: A,
-                    correctAnswer: a.lastQuestionCorrectAnswer,
+                    correctAnswer: _G.lastQuestionCorrectAnswer,
                     continueToQuestions: R,
-                    blockKeyboardEvents: a.blockKeyboardEvents,
-                    lastQuestionCorrect: a.lastQuestionAnsweredCorrect || !1,
+                    blockKeyboardEvents: _G.blockKeyboardEvents,
+                    lastQuestionCorrect: _G.lastQuestionAnsweredCorrect || !1,
                     actions: S(),
-                    lastQuestion: a.lastQuestion,
-                    allowGoogleTranslate: a.allowGoogleTranslate || !1,
-                    textShownWhenAnsweringCorrectly: a.textShownWhenAnsweringCorrectly || 'Correct!',
-                    textShownWhenAnsweringIncorrectly: a.textShownWhenAnsweringIncorrectly || 'Incorrect!',
-                    customCorrectTextAnimation: a.customCorrectTextAnimation,
-                    language: a.language || 'en',
-                    translations: a.translations || {},
-                    desktopBreakpoint: a.desktopBreakpoint || q.default.desktopBreakpoint,
-                    defaultBackgroundColor: a.defaultBackgroundColor || q.default.defaultBackground,
-                    correctAnswerColor: a.correctAnswerColor || q.default.response.correctAnswer,
-                    incorrectAnswerColor: a.incorrectAnswerColor || q.default.response.incorrectAnswer,
-                    continueButtonColor: a.continueButtonColor || q.default.response.continue,
-                    onActionSound: a.onActionSound,
-                    onLockedChange: a.onLockedChange
+                    lastQuestion: _G.lastQuestion,
+                    allowGoogleTranslate: _G.allowGoogleTranslate || !1,
+                    textShownWhenAnsweringCorrectly: _G.textShownWhenAnsweringCorrectly || 'Correct!',
+                    textShownWhenAnsweringIncorrectly: _G.textShownWhenAnsweringIncorrectly || 'Incorrect!',
+                    customCorrectTextAnimation: _G.customCorrectTextAnimation,
+                    language: _G.language || 'en',
+                    translations: _G.translations || {},
+                    desktopBreakpoint: _G.desktopBreakpoint || q.default.desktopBreakpoint,
+                    defaultBackgroundColor: _G.defaultBackgroundColor || q.default.defaultBackground,
+                    correctAnswerColor: _G.correctAnswerColor || q.default.response.correctAnswer,
+                    incorrectAnswerColor: _G.incorrectAnswerColor || q.default.response.incorrectAnswer,
+                    continueButtonColor: _G.continueButtonColor || q.default.response.continue,
+                    onActionSound: _G.onActionSound,
+                    onLockedChange: _G.onLockedChange
                 })
             })
         });
     });
-    const A = f.default.div(u || (u = x`
+    const _A = f.default.div(u || (u = x`
   color: ${ 0 };
   height: 35%;
   background-color: ${ 0 };
-`), a => a.questionColor.text, a => a.questionColor.background),
-        B = (0, f.default)(j.motion.div)(v || (v = x`
+`), _G => _G.questionColor.text, _G => _G.questionColor.background),
+        _B = (0, f.default)(j.motion.div)(v || (v = x`
   width: 100%;
   height: 100%;
   will-change: opacity;
 `));
-}), c.register('CWdy5', function(b, q) {
-    a(b.exports, 'default', function() {
-        return n;
+}), a.register('VS/cl', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('Vlfxs'),
-        h = c('Ez+ug'),
-        i = c('T19c3'),
-        j = c('Ud+L4'),
-        k = c('91NTa');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('2x11J'),
+        h = a('w8Dki'),
+        i = a('VSAwN'),
+        j = a('T4lH8'),
+        k = a('Rh1i7');
     let l;
-    const m = f.default.div(l || (l = (a => a)`
+    const m = f.default.div(l || (l = (_G => _G)`
   height: 100%;
   width: 100%;
   display: flex;
@@ -223,7 +223,7 @@ c.register('jh162', function(b, c) {
   align-items: center;
   text-align: left;
 `));
-    var n = (0, g.observer)(a => {
+    var _n = (0, g.observer)(_G => {
         const {
             readToMe: o
         } = e.useContext(k.default), {
@@ -231,7 +231,7 @@ c.register('jh162', function(b, c) {
             image: q,
             audio: r,
             latex: s
-        } = t;
+        } = _G;
         return (0, d.jsx)(m, {
             children: p ? q || r || s ? (0, d.jsx)(j.default, {
                 text: p,
@@ -239,11 +239,11 @@ c.register('jh162', function(b, c) {
                 latex: s,
                 audio: r,
                 highlighted: o.currentlyPlayingQuestionText,
-                allowGoogleTranslate: t.allowGoogleTranslate || !1
+                allowGoogleTranslate: _G.allowGoogleTranslate || !1
             }) : (0, d.jsx)(i.default, {
                 text: p,
                 highlighted: o.currentlyPlayingQuestionText,
-                allowGoogleTranslate: t.allowGoogleTranslate
+                allowGoogleTranslate: _G.allowGoogleTranslate
             }) : (0, d.jsx)(h.default, {
                 image: q,
                 latex: s,
@@ -251,30 +251,30 @@ c.register('jh162', function(b, c) {
             })
         });
     });
-}), c.register('91NTa', function(u, v) {
-    a(u.exports, 'default', function() {
-        return f;
+}), a.register('Rh1i7', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('uPP4W'),
-        e = c('l6m0e');
-    var f = b(d).createContext(e.default);
-}), c.register('w1JIe', function(u, v) {
-    a(u.exports, 'default', function() {
-        return s;
+    var d = a('LEQ5w'),
+        e = a('dt9Wz');
+    var _f = _j(d).createContext(e.default);
+}), a.register('t4/iW', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _s;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('Vlfxs'),
-        h = c('8mGRo'),
-        i = c('oIEQe'),
-        j = c('Kef43'),
-        k = c('l6m0e'),
-        l = c('91NTa'),
-        m = c('U8PGt'),
-        n = c('bfuFC'),
-        o = c('jh162'),
-        p = c('4/f+U');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('2x11J'),
+        h = a('zuCKH'),
+        i = a('48Ui0'),
+        j = a('XNA/m'),
+        k = a('dt9Wz'),
+        l = a('Rh1i7'),
+        m = a('BXKZi0'),
+        n = a('4RTv9'),
+        o = a('5drJf'),
+        p = a('4iV4e');
     let q;
     const r = [
         49,
@@ -282,53 +282,53 @@ c.register('jh162', function(b, c) {
         51,
         52
     ];
-    var s = (0, g.observer)(a => {
-        const [t, u] = b(e).useState(!0), [v, w] = b(e).useState(), {
+    var _s = (0, g.observer)(_G => {
+        const [t, u] = _j(e).useState(!0), [v, w] = _j(e).useState(), {
             readToMe: x
-        } = b(e).useContext(l.default), y = b(e).useRef(null), [z] = (0, m.default)(y), A = b(e).useMemo(() => (0, p.take)((0, o.DecryptData)(a.eas), 4), []);
-        if (b(e).useEffect(() => {
-                v && a.onQuestionAnswered(v);
-            }, [v]), a.type === n.QuestionType.textInput)
-            return (0, d.jsx)(t, {
-                defaultBackgroundColor: a.defaultBackgroundColor,
+        } = _j(e).useContext(l.default), y = _j(e).useRef(null), [z] = (0, m.default)(y), A = _j(e).useMemo(() => (0, p.take)((0, o.DecryptData)(_G.eas), 4), []);
+        if (_j(e).useEffect(() => {
+                v && _G.onQuestionAnswered(v);
+            }, [v]), _G.type === n.QuestionType.textInput)
+            return (0, d.jsx)(_t, {
+                defaultBackgroundColor: _G.defaultBackgroundColor,
                 children: (0, d.jsx)(i.default, {
-                    language: a.language,
-                    translations: a.translations,
-                    onQuestionAnswered: a.onQuestionAnswered,
-                    buttonColor: a.textInputButtonColor
+                    language: _G.language,
+                    translations: _G.translations,
+                    onQuestionAnswered: _G.onQuestionAnswered,
+                    buttonColor: _G.textInputButtonColor
                 })
             });
-        const B = A.some(a => !(!a || !a.image)),
-            C = a => {
-                u(!1), w(a);
+        const B = A.some(_G => !(!_G || !_G.image)),
+            C = _G => {
+                u(!1), w(_G);
             };
-        return (0, d.jsx)(t, {
+        return (0, d.jsx)(_t, {
             ref: y,
-            defaultBackgroundColor: a.defaultBackgroundColor,
-            children: A.map((b, u) => (0, d.jsx)(h.default, {
-                id: b._id,
+            defaultBackgroundColor: _G.defaultBackgroundColor,
+            children: A.map((_j, u) => (0, d.jsx)(h.default, {
+                id: _j._id,
                 position: u,
                 canAnswer: t,
                 keyCode: r[u],
                 gridView: B,
                 onQuestionAnswered: C,
-                answer: b._id,
-                blockKeyboardEvent: a.blockKeyboardEvent,
-                answerColors: a.answerColors,
+                answer: _j._id,
+                blockKeyboardEvent: _G.blockKeyboardEvent,
+                answerColors: _G.answerColors,
                 containerWidth: z,
-                desktopBreakpoint: a.desktopBreakpoint,
+                desktopBreakpoint: _G.desktopBreakpoint,
                 answerCount: A.length,
                 children: (0, d.jsx)(j.default, {
-                    allowGoogleTranslate: a.allowGoogleTranslate,
-                    text: b.text,
-                    image: b.image,
-                    latex: b.latex,
+                    allowGoogleTranslate: _G.allowGoogleTranslate,
+                    text: _j.text,
+                    image: _j.image,
+                    latex: _j.latex,
                     highlighted: x.currentlyPlayingAnswerAudio && u === k.default.readToMe.answerIndex
                 })
             }, u))
         });
     });
-    const t = f.default.div(q || (q = (a => a)`
+    const _t = f.default.div(q || (q = (_G => _G)`
   background: ${ 0 };
   height: 65%;
   width: 100%;
@@ -336,73 +336,73 @@ c.register('jh162', function(b, c) {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-`), a => a.defaultBackgroundColor);
-}), c.register('8mGRo', function(n, o) {
-    a(n.exports, 'default', function() {
-        return l;
+`), _G => _G.defaultBackgroundColor);
+}), a.register('zuCKH', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('CDq40'),
-        h = c('pd99Q');
-    let i, j, k = a => a;
-    var l = a => {
-        b(e).useEffect(() => (document.addEventListener('keydown', n), () => document.removeEventListener('keydown', n)), []);
-        const m = b => {
-                if (!a.canAnswer)
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('GT7Vh'),
+        h = a('G8w+m');
+    let i, j, k = _G => _G;
+    var _l = _G => {
+        _j(e).useEffect(() => (document.addEventListener('keydown', b), () => document.removeEventListener('keydown', b)), []);
+        const m = _j => {
+                if (!_G.canAnswer)
                     return;
-                (0, h.clickHandler)(b, () => {
-                    a.onQuestionAnswered(a.answer);
+                (0, h.clickHandler)(_j, () => {
+                    _G.onQuestionAnswered(_G.answer);
                 });
             },
-            n = b => {
-                if (a.blockKeyboardEvent)
+            n = _j => {
+                if (_G.blockKeyboardEvent)
                     return;
                 const {
                     keyCode: o
-                } = p;
-                o === a.keyCode && m(p);
+                } = _j;
+                o === _G.keyCode && m(_j);
             },
-            o = a.containerWidth >= a.desktopBreakpoint,
-            p = b(e).useMemo(() => 4 === a.answerCount ? a.gridView || o ? {
+            o = _G.containerWidth >= _G.desktopBreakpoint,
+            p = _j(e).useMemo(() => 4 === _G.answerCount ? _G.gridView || o ? {
                 height: 50,
                 width: 50
             } : {
                 height: 25,
                 width: 100
             } : o ? {
-                width: 100 / a.answerCount,
+                width: 100 / _G.answerCount,
                 height: 100
             } : {
                 width: 100,
-                height: 100 / a.answerCount
+                height: 100 / _G.answerCount
             }, [
-                a.answerCount,
+                _G.answerCount,
                 o,
-                a.gridView
+                _G.gridView
             ]);
-        return (0, d.jsx)(m, {
+        return (0, d.jsx)(_m, {
             onClick: m,
-            gridView: a.gridView,
+            gridView: _G.gridView,
             isOnDesktop: o,
             heightPercentage: p.height,
             widthPercentage: p.width,
-            children: (0, d.jsx)(n, {
-                position: a.position,
-                answerColors: a.answerColors,
+            children: (0, d.jsx)(_n, {
+                position: _G.position,
+                answerColors: _G.answerColors,
                 isOnDesktop: o,
-                children: a.children
+                children: _G.children
             })
         });
     };
-    const m = f.default.div(i || (i = k`
+    const _m = f.default.div(i || (i = k`
   text-align: center;
   height: ${ 0 }%;
   width: ${ 0 }%;
   cursor: pointer;
-`), a => a.heightPercentage, a => a.widthPercentage),
-        n = f.default.div(j || (j = k`
+`), _G => _G.heightPercentage, _G => _G.widthPercentage),
+        _n = f.default.div(j || (j = k`
   width: 100%;
   height: 100%;
   display: flex;
@@ -416,59 +416,59 @@ c.register('jh162', function(b, c) {
   border-width: 6px;
   border-style: solid;
   ${ 0 }
-`), a => a.answerColors[a.position].background, a => a.answerColors[a.position].text, a => a.isOnDesktop && `\n    transition: background 0.18s ease-in-out;\n    &:hover {\n      background: ${ (0, g.lighten)(0.1, a.answerColors[a.position].background) };\n    }\n  `);
-}), c.register('oIEQe', function(r, s) {
-    a(r.exports, 'default', function() {
-        return p;
+`), _G => _G.answerColors[_G.position].background, _G => _G.answerColors[_G.position].text, _G => _G.isOnDesktop && `\n    transition: background 0.18s ease-in-out;\n    &:hover {\n      background: ${ (0, g.lighten)(0.1, _G.answerColors[_G.position].background) };\n    }\n  `);
+}), a.register('48Ui0', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _p;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('CDq40'),
-        h = c('vIVBw'),
-        i = c('cdiGP24'),
-        j = c('ZdPV1');
-    let k, l, m, n, o = a => a;
-    var p = a => {
-        const [q, r] = b(e).useState(''), [s, t] = b(e).useState(!0), u = () => {
-            q && s && (t(!1), a.onQuestionAnswered(q));
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('GT7Vh'),
+        h = a('GOPeW'),
+        i = a('fCxtw'),
+        j = a('5PMl8');
+    let k, l, m, n, o = _G => _G;
+    var _p = _G => {
+        const [q, r] = _j(e).useState(''), [s, t] = _j(e).useState(!0), u = () => {
+            q && s && (t(!1), _G.onQuestionAnswered(q));
         };
-        return (0, d.jsxs)(q, {
+        return (0, d.jsxs)(_q, {
             children: [
-                (0, d.jsx)(r, {
-                    onSubmit: a => {
-                        a.preventDefault(), u();
+                (0, d.jsx)(_r, {
+                    onSubmit: _G => {
+                        _G.preventDefault(), u();
                     },
-                    children: (0, d.jsx)(s, {
+                    children: (0, d.jsx)(_s, {
                         autoFocus: !0,
                         value: q,
-                        onChange: a => {
-                            r(a.target.value);
+                        onChange: _G => {
+                            r(_G.target.value);
                         },
                         placeholder: 'Enter answer here...'
                     })
                 }),
-                (0, d.jsx)(t, {
-                    buttonColor: a.buttonColor,
+                (0, d.jsx)(_t, {
+                    buttonColor: _G.buttonColor,
                     onClick: u,
                     children: (0, d.jsx)(h.default, {
-                        language: a.language,
-                        translations: a.translations,
+                        language: _G.language,
+                        translations: _G.translations,
                         text: 'Submit'
                     })
                 })
             ]
         });
     };
-    const q = f.default.div(k || (k = o`
+    const _q = f.default.div(k || (k = o`
   height: 100%;
   width: 100%;
 `)),
-        r = f.default.form(l || (l = o`
+        _r = f.default.form(l || (l = o`
   height: 55%;
   width: 100%;
 `)),
-        s = f.default.input(m || (m = o`
+        _s = f.default.input(m || (m = o`
   padding-left: 15px;
   padding-right: 15px;
   font-size: 27px;
@@ -481,7 +481,7 @@ c.register('jh162', function(b, c) {
   width: 100%;
   height: 100%;
 `), i.default.DisabledGray, i.default.Black, j.default.name),
-        t = f.default.div(n || (n = o`
+        _t = f.default.div(n || (n = o`
   box-sizing: border-box;
   border-color: rgba(0, 0, 0, 0.3);
   border-width: 6px;
@@ -500,40 +500,40 @@ c.register('jh162', function(b, c) {
   display: flex;
   justify-content: center;
   align-items: center;
-`), a => a.buttonColor.background, a => a.buttonColor.text, a => (0, g.lighten)(0.1, a.buttonColor.background));
-}), c.register('vIVBw', function(i, e) {
-    a(i.exports, 'default', function() {
-        return g;
+`), _G => _G.buttonColor.background, _G => _G.buttonColor.text, _G => (0, g.lighten)(0.1, _G.buttonColor.background));
+}), a.register('GOPeW', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('PjB0f');
-    var g = a => {
-        const [h, i] = b(e).useState(a.text);
-        b(e).useEffect(() => {
-            a.text !== h && (i(a.text), 'en' !== a.language && (a.disableIfContains && a.text.includes(a.disableIfContains) || (a.translations && a.translations[a.text] ? i(a.translations[a.text]) : (0, f.request)({
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('PMl60');
+    var _g = _G => {
+        const [h, i] = _j(e).useState(_G.text);
+        _j(e).useEffect(() => {
+            _G.text !== h && (i(_G.text), 'en' !== _G.language && (_G.disableIfContains && _G.text.includes(_G.disableIfContains) || (_G.translations && _G.translations[_G.text] ? i(_G.translations[_G.text]) : (0, f.request)({
                 url: '',
                 data: {
-                    to: a.language,
-                    text: a.text
+                    to: _G.language,
+                    text: _G.text
                 },
-                success: b => {
-                    i(b), a.translations[a.text] = b;
+                success: _j => {
+                    i(_j), _G.translations[_G.text] = _j;
                 }
             }))));
-        }, [a.text]);
+        }, [_G.text]);
         return (0, d.jsx)(d.Fragment, {
             children: (() => {
-                let j = k;
-                return a.suffix && (j += a.suffix), j;
+                let _j = h;
+                return _G.suffix && (_j += _G.suffix), _j;
             })()
         });
     };
-}), c.register('cdiGP24', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('fCxtw', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         White: 'white',
         Black: 'black',
         BackgroundGray: '#eeeeee',
@@ -543,181 +543,181 @@ c.register('jh162', function(b, c) {
         LightSuccessGreen: '#6abf69',
         DarkSuccessGreen: '#2e7d32'
     };
-}), c.register('ZdPV1', function(b, c) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('5PMl8', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _e;
     });
     const d = '"Product Sans"';
-    var e = {
+    var _e = {
         mainFontName: d,
         name: `${ d }, sans-serif`,
         important: `${ d }, sans-serif !important`
     };
-}), c.register('Kef43', function(b, k) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('XNA/m', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('2WDH6'),
-        f = c('bTRJM'),
-        g = c('pm/mI'),
-        h = c('pd99Q');
-    var i = a => (0, d.jsxs)(d.Fragment, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('x8CoD'),
+        f = a('dDoty'),
+        g = a('X133d'),
+        h = a('G8w+m');
+    var _i = _G => (0, d.jsxs)(d.Fragment, {
         children: [
-            a.text && (0, d.jsx)(g.default, {
+            _G.text && (0, d.jsx)(g.default, {
                 mode: 'multi',
-                text: (0, h.parseText)(a.allowGoogleTranslate, a.text),
-                paddingVertical: a.customTextHorizontalPadding || 7,
-                paddingHorizontal: a.customTextHorizontalPadding,
-                max: a.customMaxTextSize || 25,
-                highlighted: a.highlighted
+                text: (0, h.parseText)(_G.allowGoogleTranslate, _G.text),
+                paddingVertical: _G.customTextHorizontalPadding || 7,
+                paddingHorizontal: _G.customTextHorizontalPadding,
+                max: _G.customMaxTextSize || 25,
+                highlighted: _G.highlighted
             }),
-            a.image && (0, d.jsx)('img', {
-                src: (0, e.getCloudinaryUrl)(a.image),
+            _G.image && (0, d.jsx)('img', {
+                src: (0, e.getCloudinaryUrl)(_G.image),
                 alt: 'Answer Choice',
                 style: {
-                    maxHeight: a.customImageHeight || '90%',
-                    height: a.customImageHeight || '90%',
-                    maxWidth: a.customImageWidth || '90%',
+                    maxHeight: _G.customImageHeight || '90%',
+                    height: _G.customImageHeight || '90%',
+                    maxWidth: _G.customImageWidth || '90%',
                     borderRadius: 4,
                     objectFit: 'contain'
                 }
             }),
-            a.latex && (0, d.jsx)(g.default, {
+            _G.latex && (0, d.jsx)(g.default, {
                 text: (0, d.jsx)(f.default, {
-                    latex: a.latex
+                    latex: _G.latex
                 }),
-                paddingVertical: a.customTextHorizontalPadding || 7,
-                paddingHorizontal: a.customTextHorizontalPadding,
-                max: a.customMaxTextSize || 25,
+                paddingVertical: _G.customTextHorizontalPadding || 7,
+                paddingHorizontal: _G.customTextHorizontalPadding,
+                max: _G.customMaxTextSize || 25,
                 noBold: !0
             })
         ]
     });
-}), c.register('7A6V/', function(b, k) {
-    a(b.exports, 'default', function() {
-        return g;
+}), a.register('L1szR', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('CB7A7'),
-        f = c('Z+S7d');
-    var g = a => a.lastQuestionCorrect ? (0, d.jsx)(e.default, {
-        textShownWhenAnsweringCorrectly: a.textShownWhenAnsweringCorrectly,
-        customCorrectTextAnimation: a.customCorrectTextAnimation,
-        onActionSound: a.onActionSound,
-        language: a.language,
-        translations: a.translations,
-        allowGoogleTranslate: a.allowGoogleTranslate,
-        continueToQuestions: a.continueToQuestions,
-        actions: a.actions,
-        desktopBreakpoint: a.desktopBreakpoint,
-        defaultBackgroundColor: a.defaultBackgroundColor,
-        correctAnswerColor: a.correctAnswerColor,
-        blockKeyboardEvents: a.blockKeyboardEvents,
-        canAdvanceToQuestions: a.canAdvanceToQuestions
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('uZVWk'),
+        f = a('IZuTz');
+    var _g = _G => _G.lastQuestionCorrect ? (0, d.jsx)(e.default, {
+        textShownWhenAnsweringCorrectly: _G.textShownWhenAnsweringCorrectly,
+        customCorrectTextAnimation: _G.customCorrectTextAnimation,
+        onActionSound: _G.onActionSound,
+        language: _G.language,
+        translations: _G.translations,
+        allowGoogleTranslate: _G.allowGoogleTranslate,
+        continueToQuestions: _G.continueToQuestions,
+        actions: _G.actions,
+        desktopBreakpoint: _G.desktopBreakpoint,
+        defaultBackgroundColor: _G.defaultBackgroundColor,
+        correctAnswerColor: _G.correctAnswerColor,
+        blockKeyboardEvents: _G.blockKeyboardEvents,
+        canAdvanceToQuestions: _G.canAdvanceToQuestions
     }) : (0, d.jsx)(f.default, {
-        textShownWhenAnsweringIncorrectly: a.textShownWhenAnsweringIncorrectly,
-        lastQuestion: a.lastQuestion,
-        onActionSound: a.onActionSound,
-        language: a.language,
-        translations: a.translations,
-        allowGoogleTranslate: a.allowGoogleTranslate,
-        desktopBreakpoint: a.desktopBreakpoint,
-        canAdvanceToQuestions: a.canAdvanceToQuestions,
-        blockKeyboardEvents: a.blockKeyboardEvents,
-        continueToQuestions: a.continueToQuestions,
-        incorrectAnswerColor: a.incorrectAnswerColor,
-        continueButtonColor: a.continueButtonColor,
-        onLockedChange: a.onLockedChange
+        textShownWhenAnsweringIncorrectly: _G.textShownWhenAnsweringIncorrectly,
+        lastQuestion: _G.lastQuestion,
+        onActionSound: _G.onActionSound,
+        language: _G.language,
+        translations: _G.translations,
+        allowGoogleTranslate: _G.allowGoogleTranslate,
+        desktopBreakpoint: _G.desktopBreakpoint,
+        canAdvanceToQuestions: _G.canAdvanceToQuestions,
+        blockKeyboardEvents: _G.blockKeyboardEvents,
+        continueToQuestions: _G.continueToQuestions,
+        incorrectAnswerColor: _G.incorrectAnswerColor,
+        continueButtonColor: _G.continueButtonColor,
+        onLockedChange: _G.onLockedChange
     });
-}), c.register('CB7A7', function(b, k) {
-    a(b.exports, 'default', function() {
-        return k;
+}), a.register('uZVWk', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('cdiGP24'),
-        h = c('OzfbH'),
-        i = c('AVXq8');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('fCxtw'),
+        h = a('kV0aj'),
+        i = a('CRlOT');
     let j;
-    var k = a => {
+    var _k = _G => {
         e.useEffect(() => (document.addEventListener('keydown', b), () => {
             document.removeEventListener('keydown', b);
         }), [
-            a.canAdvanceToQuestions,
-            a.blockKeyboardEvents
+            _G.canAdvanceToQuestions,
+            _G.blockKeyboardEvents
         ]);
         const l = l => {
-            a.blockKeyboardEvents || l.key && 'Enter' === l.key && a.canAdvanceToQuestions && a.continueToQuestions();
+            _G.blockKeyboardEvents || l.key && 'Enter' === l.key && _G.canAdvanceToQuestions && _G.continueToQuestions();
         };
-        return (0, d.jsxs)(l, {
-            defaultBackgroundColor: a.defaultBackgroundColor,
+        return (0, d.jsxs)(_l, {
+            defaultBackgroundColor: _G.defaultBackgroundColor,
             children: [
                 (0, d.jsx)(h.default, {
-                    textShownWhenAnsweringCorrectly: a.textShownWhenAnsweringCorrectly,
-                    customCorrectTextAnimation: a.customCorrectTextAnimation,
-                    correctAnswerColor: a.correctAnswerColor
+                    textShownWhenAnsweringCorrectly: _G.textShownWhenAnsweringCorrectly,
+                    customCorrectTextAnimation: _G.customCorrectTextAnimation,
+                    correctAnswerColor: _G.correctAnswerColor
                 }),
                 (0, d.jsx)(i.default, {
-                    actions: a.actions,
-                    language: a.language,
-                    translations: a.translations,
-                    desktopBreakpoint: a.desktopBreakpoint,
-                    onActionSound: a.onActionSound
+                    actions: _G.actions,
+                    language: _G.language,
+                    translations: _G.translations,
+                    desktopBreakpoint: _G.desktopBreakpoint,
+                    onActionSound: _G.onActionSound
                 })
             ]
         });
     };
-    const l = f.default.div.attrs({
+    const _l = f.default.div.attrs({
         className: 'flex-column maxAll'
-    })(j || (j = (a => a)`
+    })(j || (j = (_G => _G)`
   color: ${ 0 };
   background: ${ 0 };
-`), g.default.White, a => a.defaultBackgroundColor);
-}), c.register('OzfbH', function(b, k) {
-    a(b.exports, 'default', function() {
-        return h;
+`), g.default.White, _G => _G.defaultBackgroundColor);
+}), a.register('kV0aj', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('743Kp');
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('JFnsU');
     let g;
-    var h = a => (0, d.jsx)(i, {
-        backgroundColor: a.correctAnswerColor.background,
+    var _h = _G => (0, d.jsx)(_i, {
+        backgroundColor: _G.correctAnswerColor.background,
         children: (0, d.jsx)(f.default, {
-            textShownWhenAnsweringCorrectly: a.textShownWhenAnsweringCorrectly,
-            customCorrectTextAnimation: a.customCorrectTextAnimation,
-            textColor: a.correctAnswerColor.text
+            textShownWhenAnsweringCorrectly: _G.textShownWhenAnsweringCorrectly,
+            customCorrectTextAnimation: _G.customCorrectTextAnimation,
+            textColor: _G.correctAnswerColor.text
         })
     });
-    const i = e.default.div.attrs({
+    const _i = e.default.div.attrs({
         className: 'maxWidth flex-center'
-    })(g || (g = (a => a)`
+    })(g || (g = (_G => _G)`
   height: 40%;
   background: ${ 0 };
-`), a => a.backgroundColor);
-}), c.register('743Kp', function(k, d) {
-    a(k.exports, 'default', function() {
-        return i;
+`), _G => _G.backgroundColor);
+}), a.register('JFnsU', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('pm/mI');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('X133d');
     let h;
-    var i = a => {
-        const j = a.textColor,
-            k = b(e).useMemo(() => a.textShownWhenAnsweringCorrectly, []);
-        return (0, d.jsx)(j, {
+    var _i = _G => {
+        const j = _G.textColor,
+            k = _b(e).useMemo(() => _G.textShownWhenAnsweringCorrectly, []);
+        return (0, d.jsx)(_j, {
             style: {
                 color: j,
-                animationDuration: `${ a.customCorrectTextAnimation && a.customCorrectTextAnimation.duration ? a.customCorrectTextAnimation.duration : 1 }s`
+                animationDuration: `${ _G.customCorrectTextAnimation && _G.customCorrectTextAnimation.duration ? _G.customCorrectTextAnimation.duration : 1 }s`
             },
-            className: a.customCorrectTextAnimation && a.customCorrectTextAnimation.className ? a.customCorrectTextAnimation.className : 'animated tada',
+            className: _G.customCorrectTextAnimation && _G.customCorrectTextAnimation.className ? _G.customCorrectTextAnimation.className : 'animated tada',
             children: (0, d.jsx)(g.default, {
                 max: 170,
                 mode: 'single',
@@ -725,83 +725,83 @@ c.register('jh162', function(b, c) {
             })
         });
     };
-    const j = f.default.div.attrs({
+    const _j = f.default.div.attrs({
         className: 'maxAll flex-center'
-    })(h || (h = (a => a)``));
-}), c.register('AVXq8', function(b, q) {
-    a(b.exports, 'default', function() {
-        return h;
+    })(h || (h = (_G => _G)``));
+}), a.register('CRlOT', function(_b, c) {
+    _G(_b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('4cM0K');
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('Tbo7T');
     let g;
-    var h = a => {
-        const i = 1 / a.actions.length * 100;
-        return (0, d.jsx)(i, {
-            children: a.actions.filter(a => null !== a).map(c => (0, d.jsx)(f.default, {
-                ...c,
+    var _h = _G => {
+        const i = 1 / _G.actions.length * 100;
+        return (0, d.jsx)(_i, {
+            children: _G.actions.filter(_G => null !== _G).map(a => (0, d.jsx)(f.default, {
+                ...a,
                 heightPercentage: i,
-                language: a.language,
-                translations: a.translations,
-                desktopBreakpoint: a.desktopBreakpoint,
-                onActionSound: a.onActionSound
-            }, c.text))
+                language: _G.language,
+                translations: _G.translations,
+                desktopBreakpoint: _G.desktopBreakpoint,
+                onActionSound: _G.onActionSound
+            }, a.text))
         });
     };
-    const i = e.default.div.attrs({
+    const _i = e.default.div.attrs({
         className: 'maxWidth'
-    })(g || (g = (a => a)`
+    })(g || (g = (_G => _G)`
   height: 60%;
   text-align: center;
 `));
-}), c.register('4cM0K', function(q, d) {
-    a(q.exports, 'GimkitLiveActionItemContainer', function() {
-        return p;
-    }), a(q.exports, 'default', function() {
-        return o;
+}), a.register('Tbo7T', function(b, c) {
+    _G(b.exports, 'GimkitLiveActionItemContainer', function() {
+        return _p;
+    }), _G(b.exports, 'default', function() {
+        return _o;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('CDq40'),
-        h = c('02Dw2'),
-        i = c('vIVBw'),
-        j = c('pm/mI'),
-        k = c('cdiGP24'),
-        l = c('pd99Q'),
-        m = c('U8PGt');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('GT7Vh'),
+        h = a('5yDn4'),
+        i = a('GOPeW'),
+        j = a('X133d'),
+        k = a('fCxtw'),
+        l = a('G8w+m'),
+        m = a('BXKZi0');
     let n;
-    var o = a => {
-        const p = b(e).useRef(null),
+    var _o = _G => {
+        const p = _r(e).useRef(null),
             [q] = (0, m.default)(p);
         return (0, d.jsx)(h.default, {
-            onClick: b => {
-                (0, l.clickHandler)(b, () => {
-                    var r;
-                    null === (r = a.onActionSound) || void 0 === r || r.play(), a.handleClick && a.handleClick();
+            onClick: _r => {
+                (0, l.clickHandler)(_r, () => {
+                    var _r;
+                    null === (_r = _G.onActionSound) || void 0 === _r || _r.play(), _G.handleClick && _G.handleClick();
                 });
             },
-            children: (0, d.jsx)(p, {
+            children: (0, d.jsx)(_p, {
                 ref: p,
-                background: a.background,
-                heightPercentage: a.heightPercentage,
-                isOnDesktop: q >= a.desktopBreakpoint,
+                background: _G.background,
+                heightPercentage: _G.heightPercentage,
+                isOnDesktop: q >= _G.desktopBreakpoint,
                 children: (0, d.jsx)(j.default, {
                     text: (0, d.jsx)(i.default, {
-                        language: a.language,
-                        translations: a.translations,
-                        text: a.text
+                        language: _G.language,
+                        translations: _G.translations,
+                        text: _G.text
                     }),
                     max: 40
                 })
             })
         });
     };
-    const p = f.default.div.attrs({
+    const _p = f.default.div.attrs({
         className: 'flex-center maxWidth'
-    })(n || (n = (a => a)`
+    })(n || (n = (_G => _G)`
   height: ${ 0 }%;
   background: ${ 0 };
   color: ${ 0 };
@@ -811,53 +811,53 @@ c.register('jh162', function(b, c) {
   border-style: solid;
   cursor: pointer;
   ${ 0 }
-`), a => a.heightPercentage, a => a.background, k.default.White, a => a.isOnDesktop && `transition: background 0.15s;\n    &:hover {\n      background: ${ (0, g.lighten)(0.1, a.background) };\n    }\n\n  `);
-}), c.register('02Dw2', function(b, t) {
-    a(b.exports, 'default', function() {
-        return e;
+`), _G => _G.heightPercentage, _G => _G.background, k.default.White, _G => _G.isOnDesktop && `transition: background 0.15s;\n    &:hover {\n      background: ${ (0, g.lighten)(0.1, _G.background) };\n    }\n\n  `);
+}), a.register('5yDn4', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = a => (0, d.jsx)('span', {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var _e = _G => (0, d.jsx)('span', {
         onClick: b => {
-            a.onClick && a.onClick(b);
+            _G.onClick && _G.onClick(b);
         },
-        children: a.children
+        children: _G.children
     });
-}), c.register('Z+S7d', function(b, t) {
-    a(b.exports, 'default', function() {
-        return q;
+}), a.register('IZuTz', function(b, c) {
+    _G(b.exports, 'default', function() {
+        return _q;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('FgarE'),
-        g = c('qg4Oj'),
-        h = c('iQxLN'),
-        i = c('U8PGt'),
-        j = c('WRy6v'),
-        k = c('4JvRz'),
-        l = c('iSFyV'),
-        m = c('rUIvb'),
-        n = c('CDq40');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('XZe6/'),
+        g = a('6oezR'),
+        h = a('v8zOW'),
+        i = a('BXKZi0'),
+        j = a('kOROi'),
+        k = a('DNhpF'),
+        l = a('ASvPU'),
+        m = a('xE/yE'),
+        n = a('GT7Vh');
     let o;
     var p;
     (p = o || (o = {})).message = 'message', p.answer = 'answer';
-    var q = a => {
-        const [r, s] = e.useState(o.message), t = e.useRef(null), [u, v] = (0, i.default)(t), w = e.useRef(null), [x, y] = (0, i.default)(w), z = e.useMemo(() => a.secondsToWaitBeforeContinue ? a.secondsToWaitBeforeContinue : 3, [a.secondsToWaitBeforeContinue]), A = e.useMemo(() => a.lastQuestion ? a.lastQuestion.answers.find(a => a.correct) : null, [a.lastQuestion]);
+    var _q = _G => {
+        const [r, s] = e.useState(o.message), t = e.useRef(null), [u, v] = (0, i.default)(t), w = e.useRef(null), [x, y] = (0, i.default)(w), z = e.useMemo(() => _G.secondsToWaitBeforeContinue ? _G.secondsToWaitBeforeContinue : 3, [_G.secondsToWaitBeforeContinue]), A = e.useMemo(() => _G.lastQuestion ? _G.lastQuestion.answers.find(_G => _G.correct) : null, [_G.lastQuestion]);
         (0, j.useTimeoutWhen)(() => {
             s(o.answer);
-        }, a.showCorrectAnswerAfterMs || 800);
-        const B = e.useMemo(() => r === o.message ? a.incorrectAnswerColor.background : (0, n.lighten)(0.2, a.incorrectAnswerColor.background), [
+        }, _G.showCorrectAnswerAfterMs || 800);
+        const B = e.useMemo(() => r === o.message ? _G.incorrectAnswerColor.background : (0, n.lighten)(0.2, _G.incorrectAnswerColor.background), [
                 r,
-                a.incorrectAnswerColor.background
+                _G.incorrectAnswerColor.background
             ]),
             C = e.useMemo(() => r === o.message, [r]),
             D = e.useMemo(() => r === o.answer, [r]),
             E = e.useMemo(() => v * h.default.marginPercentage, [v]),
             F = e.useMemo(() => {
-                const G = h.default.textHeightPercentage * v / y,
+                const _G = h.default.textHeightPercentage * v / y,
                     H = u * h.default.maxTextWidthPercentage / x;
-                return Math.min(G, H);
+                return Math.min(_G, H);
             }, [
                 v,
                 y,
@@ -887,9 +887,9 @@ c.register('jh162', function(b, c) {
                 E
             ]),
             J = e.useMemo(() => v * h.default.continueButtonHeightPercentage, [v]);
-        e.useEffect(() => (a.onLockedChange && a.onLockedChange(!0), () => {
-            a.onLockedChange && a.onLockedChange(!1);
-        }), [a.onLockedChange]);
+        e.useEffect(() => (_m.onLockedChange && _m.onLockedChange(!0), () => {
+            _m.onLockedChange && _m.onLockedChange(!1);
+        }), [_m.onLockedChange]);
         return (0, d.jsx)(f.AnimatePresence, {
             mode: 'wait',
             children: (0, d.jsx)(g.Container, {
@@ -902,7 +902,7 @@ c.register('jh162', function(b, c) {
                 ref: t,
                 children: (0, d.jsxs)(g.Content, {
                     style: {
-                        color: a.incorrectAnswerColor.text
+                        color: _m.incorrectAnswerColor.text
                     },
                     children: [
                         (0, d.jsx)(g.TextContainer, {
@@ -920,7 +920,7 @@ c.register('jh162', function(b, c) {
                                     mode: 'single',
                                     text: (0, d.jsx)('div', {
                                         ref: w,
-                                        children: a.textShownWhenAnsweringIncorrectly
+                                        children: _m.textShownWhenAnsweringIncorrectly
                                     })
                                 })
                             })
@@ -939,23 +939,23 @@ c.register('jh162', function(b, c) {
                                         answerBoxHeight: I,
                                         margin: E,
                                         correctAnswer: A,
-                                        allowGoogleTranslate: a.allowGoogleTranslate,
-                                        language: a.language,
-                                        translations: a.translations
+                                        allowGoogleTranslate: _m.allowGoogleTranslate,
+                                        language: _m.language,
+                                        translations: _m.translations
                                     }),
                                     (0, d.jsx)(m.default, {
                                         continueButtonHeight: J,
                                         containerWidth: u,
                                         secondsToWait: z,
-                                        continueToQuestions: a.continueToQuestions,
-                                        desktopBreakpoint: a.desktopBreakpoint,
-                                        language: a.language,
-                                        translations: a.translations,
-                                        onActionSound: a.onActionSound,
-                                        continueButtonColor: a.continueButtonColor,
-                                        blockKeyboardEvents: a.blockKeyboardEvents,
-                                        canAdvanceToQuestions: a.canAdvanceToQuestions,
-                                        onLockedChange: a.onLockedChange
+                                        continueToQuestions: _m.continueToQuestions,
+                                        desktopBreakpoint: _m.desktopBreakpoint,
+                                        language: _m.language,
+                                        translations: _m.translations,
+                                        onActionSound: _m.onActionSound,
+                                        continueButtonColor: _m.continueButtonColor,
+                                        blockKeyboardEvents: _m.blockKeyboardEvents,
+                                        canAdvanceToQuestions: _m.canAdvanceToQuestions,
+                                        onLockedChange: _m.onLockedChange
                                     })
                                 ]
                             })
@@ -965,65 +965,65 @@ c.register('jh162', function(b, c) {
             })
         });
     };
-}), c.register('qg4Oj', function(b, d) {
-    a(b.exports, 'Container', function() {
-        return w;
-    }), a(b.exports, 'Content', function() {
-        return x;
-    }), a(b.exports, 'TextContainer', function() {
-        return y;
-    }), a(b.exports, 'AnimatedText', function() {
-        return z;
-    }), a(b.exports, 'BottomContainer', function() {
-        return A;
-    }), a(b.exports, 'AnimatedBottomContent', function() {
-        return B;
-    }), a(b.exports, 'AnswerBox', function() {
-        return C;
-    }), a(b.exports, 'CorrectAnswerLabelContainer', function() {
-        return D;
-    }), a(b.exports, 'CorrectAnswerLabel', function() {
-        return E;
-    }), a(b.exports, 'AnswerContainer', function() {
-        return F;
-    }), a(b.exports, 'AnswerButtonAreaContainer', function() {
-        return G;
-    }), a(b.exports, 'AnswerButtonProgressBar', function() {
-        return H;
-    }), a(b.exports, 'ActionButtonContainer', function() {
-        return I;
-    }), a(b.exports, 'ActionButtonContent', function() {
-        return J;
-    }), a(b.exports, 'ActionButtonTextFitContent', function() {
-        return K;
+}), a.register('6oezR', function(b, c) {
+    _m(b.exports, 'Container', function() {
+        return _w;
+    }), _m(b.exports, 'Content', function() {
+        return _x;
+    }), _m(b.exports, 'TextContainer', function() {
+        return _y;
+    }), _m(b.exports, 'AnimatedText', function() {
+        return _z;
+    }), _m(b.exports, 'BottomContainer', function() {
+        return _A;
+    }), _m(b.exports, 'AnimatedBottomContent', function() {
+        return _B;
+    }), _m(b.exports, 'AnswerBox', function() {
+        return _C;
+    }), _m(b.exports, 'CorrectAnswerLabelContainer', function() {
+        return _D;
+    }), _m(b.exports, 'CorrectAnswerLabel', function() {
+        return _E;
+    }), _m(b.exports, 'AnswerContainer', function() {
+        return _F;
+    }), _m(b.exports, 'AnswerButtonAreaContainer', function() {
+        return _G;
+    }), _m(b.exports, 'AnswerButtonProgressBar', function() {
+        return _H;
+    }), _m(b.exports, 'ActionButtonContainer', function() {
+        return _I;
+    }), _m(b.exports, 'ActionButtonContent', function() {
+        return _J;
+    }), _m(b.exports, 'ActionButtonTextFitContent', function() {
+        return _K;
     });
-    var d = c('b9Bct'),
-        e = c('h99Nu'),
-        f = c('gSUVO');
-    let g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v = a => a;
-    const w = (0, e.default)(d.motion.div).attrs({
+    var d = a('TwXYL'),
+        e = a('Axq+p'),
+        f = a('b5kvC');
+    let g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v = _m => _m;
+    const _w = (0, e.default)(d.motion.div).attrs({
             className: 'maxAll'
         })(g || (g = v`
   overflow: hidden;
 `)),
-        x = e.default.div.attrs({
+        _x = e.default.div.attrs({
             className: 'maxAll animated headShake'
         })(h || (h = v``)),
-        y = e.default.div.attrs({
+        _y = e.default.div.attrs({
             className: 'maxAll flex-center animated fadeIn'
         })(i || (i = v``)),
-        z = (0, e.default)(d.motion.div).attrs({
+        _z = (0, e.default)(d.motion.div).attrs({
             layout: !0
         })(j || (j = v`
   width: 90%;
   height: 80%;
 `)),
-        A = e.default.div.attrs({
+        _A = e.default.div.attrs({
             className: 'maxWidth'
         })(k || (k = v`
   text-align: center;
 `)),
-        B = (0, e.default)(d.motion.div).attrs({
+        _B = (0, e.default)(d.motion.div).attrs({
             className: 'maxWidth maxHeight',
             layout: !0,
             animate: {
@@ -1036,36 +1036,36 @@ c.register('jh162', function(b, c) {
                 opacity: 0
             }
         })(l || (l = v``)),
-        C = e.default.div.attrs({
+        _C = e.default.div.attrs({
             className: 'maxAll flex flex-column'
         })(m || (m = v`
   background: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
 `)),
-        D = e.default.div.attrs({
+        _D = e.default.div.attrs({
             className: 'maxWidth'
         })(n || (n = v`
   background: rgba(0, 0, 0, 0.2);
   padding: 16px;
 `)),
-        E = e.default.div(o || (o = v`
+        _E = e.default.div(o || (o = v`
   font-size: 22px;
   opacity: 0.7;
   font-weight: ${ 0 };
   font-style: italic;
 `), f.FontWeights.Normal),
-        F = e.default.div(p || (p = v`
+        _F = e.default.div(p || (p = v`
   flex: 1;
   overflow: hidden;
 `)),
-        G = e.default.div.attrs({
+        _G = e.default.div.attrs({
             className: 'maxWidth'
         })(q || (q = v`
   position: relative;
   background: gray;
 `)),
-        H = (0, e.default)(d.motion.div).attrs({
+        _H = (0, e.default)(d.motion.div).attrs({
             animate: {
                 width: '100%'
             },
@@ -1077,55 +1077,55 @@ c.register('jh162', function(b, c) {
   position: absolute;
   top: 0;
 `)),
-        I = e.default.div.attrs({
+        _I = e.default.div.attrs({
             className: 'maxAll'
         })(s || (s = v`
   position: absolute;
   top: 0;
 `)),
-        J = e.default.div.attrs({
+        _J = e.default.div.attrs({
             className: 'maxAll'
         })(t || (t = v``)),
-        K = e.default.div.attrs({
+        _K = e.default.div.attrs({
             className: 'flex vc'
         })(u || (u = v``));
-}), c.register('iQxLN', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('v8zOW', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         textHeightPercentage: 0.08,
         maxTextWidthPercentage: 0.5,
         marginPercentage: 0.04,
         continueButtonHeightPercentage: 0.3
     };
-}), c.register('4JvRz', function(o, d) {
-    a(o.exports, 'default', function() {
-        return m;
+}), a.register('DNhpF', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _m;
     });
-    var d = c('UM8oI'),
-        e = c('8kSQZ'),
-        f = c('uPP4W'),
-        g = c('iVIaF'),
-        h = c('h99Nu');
+    var d = a('1bFPu'),
+        e = a('0hzx+'),
+        f = a('LEQ5w'),
+        g = a('86aCL'),
+        h = a('Axq+p');
     let i;
     const j = {
             backgroundColor: 'rgba(255,255,31, 0.21)',
             boxShadow: '10px 0 0 rgba(255,255,31, 0.21), -10px 0 0 rgba(255,255,31, 0.21)',
             borderRadius: 9
         },
-        k = h.default.div(i || (i = (a => a)`
+        k = h.default.div(i || (i = (_m => _m)`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
 `));
-    class l extends b(f).Component {
+    class l extends _n(f).Component {
             render() {
                 const {
-                    paddingHorizontal: m,
-                    paddingVertical: n,
+                    paddingHorizontal: _m,
+                    paddingVertical: _n,
                     ...o
                 } = this.props;
                 return delete o.text, delete o.highlighted, (0, e.jsx)(k, {
@@ -1138,10 +1138,10 @@ c.register('jh162', function(b, c) {
                             display: 'flex',
                             justifyContent: this.props.disableHorizontalCentering ? 'flex-start' : 'center',
                             alignItems: 'center',
-                            paddingTop: n,
-                            paddingBottom: n,
-                            paddingLeft: this.props.paddingLeft || m,
-                            paddingRight: m,
+                            paddingTop: _n,
+                            paddingBottom: _n,
+                            paddingLeft: this.props.paddingLeft || _m,
+                            paddingRight: _m,
                             boxSizing: 'border-box',
                             fontWeight: this.props.noBold ? 'normal' : 900
                         },
@@ -1161,23 +1161,23 @@ c.register('jh162', function(b, c) {
             mode: 'single',
             forceSingleModeWidth: !1
         });
-    var m = n;
-}), c.register('iSFyV', function(b, o) {
-    a(b.exports, 'default', function() {
-        return h;
+    var _m = l;
+}), a.register('ASvPU', function(b, c) {
+    _h(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('wEVnZ'),
-        f = c('Kef43'),
-        g = c('qg4Oj');
-    var h = a => (0, d.jsxs)(g.AnswerBox, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('pNn9U'),
+        f = a('XNA/m'),
+        g = a('6oezR');
+    var _h = _h => (0, d.jsxs)(g.AnswerBox, {
         style: {
-            height: a.answerBoxHeight,
-            marginBottom: a.margin,
+            height: _h.answerBoxHeight,
+            marginBottom: _h.margin,
             borderRadius: 10,
-            marginLeft: a.margin,
-            width: a.containerWidth - 2 * a.margin
+            marginLeft: _h.margin,
+            width: _h.containerWidth - 2 * _h.margin
         },
         children: [
             (0, d.jsx)(g.CorrectAnswerLabelContainer, {
@@ -1185,8 +1185,8 @@ c.register('jh162', function(b, c) {
                     children: [
                         (0, d.jsx)(e.default, {
                             text: 'Correct Answer',
-                            language: a.language,
-                            translations: a.translations
+                            language: _h.language,
+                            translations: _h.translations
                         }),
                         ':'
                     ]
@@ -1194,13 +1194,13 @@ c.register('jh162', function(b, c) {
             }),
             (0, d.jsx)(g.AnswerContainer, {
                 style: {
-                    padding: `${ Math.max(0.1 * a.containerHeight, 30) }px ${ Math.max(0.1 * a.containerWidth, 30) }px`
+                    padding: `${ Math.max(0.1 * _h.containerHeight, 30) }px ${ Math.max(0.1 * _h.containerWidth, 30) }px`
                 },
                 children: (0, d.jsx)(f.default, {
-                    allowGoogleTranslate: a.allowGoogleTranslate,
-                    text: a.correctAnswer ? a.correctAnswer.text : 'No Correct Answer',
-                    image: a.correctAnswer ? a.correctAnswer.image : void 0,
-                    latex: a.correctAnswer ? a.correctAnswer.latex : void 0,
+                    allowGoogleTranslate: _h.allowGoogleTranslate,
+                    text: _h.correctAnswer ? _h.correctAnswer.text : 'No Correct Answer',
+                    image: _h.correctAnswer ? _h.correctAnswer.image : void 0,
+                    latex: _h.correctAnswer ? _h.correctAnswer.latex : void 0,
                     customTextHorizontalPadding: '0px',
                     customTextVerticalPadding: '0px',
                     customImageHeight: '100%',
@@ -1210,16 +1210,16 @@ c.register('jh162', function(b, c) {
             })
         ]
     });
-}), c.register('wEVnZ', function(o, d) {
-    a(o.exports, 'default', function() {
-        return h;
+}), a.register('pNn9U', function(b, c) {
+    _h(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('UM8oI'),
-        e = c('uPP4W'),
-        f = c('qLBdK');
-    class g extends b(e).Component {
-        componentDidUpdate(a) {
-            a.text !== this.props.text && (this.setState({
+    var d = a('1bFPu'),
+        e = a('LEQ5w'),
+        f = a('bgvr8');
+    class g extends _b(e).Component {
+        componentDidUpdate(_h) {
+            _h.text !== this.props.text && (this.setState({
                 text: this.props.text
             }), this.onTranslate());
         }
@@ -1230,72 +1230,72 @@ c.register('jh162', function(b, c) {
             if ('en' !== this.props.language && !this.props.text.includes(this.props.disableIfContains))
                 return this.props.translations && this.props.translations[this.props.text] ? this.setState({
                     text: this.props.translations[this.props.text]
-                }) : void this.requestTranslation().then(a => {
-                    this.props.translations[this.props.text] = a, this.setState({
-                        text: a
+                }) : void this.requestTranslation().then(_h => {
+                    this.props.translations[this.props.text] = _h, this.setState({
+                        text: _h
                     });
                 }).catch();
         }
         render() {
             return this.buildString();
         }
-        constructor(...a) {
-            super(...a), (0, d.default)(this, 'state', {
+        constructor(..._h) {
+            super(..._h), (0, d.default)(this, 'state', {
                 text: this.props.text
             }), (0, d.default)(this, 'buildString', () => {
-                let h = this.state.text;
-                return this.props.suffix && (h += this.props.suffix), h;
+                let _h = this.state.text;
+                return this.props.suffix && (_h += this.props.suffix), _h;
             }), (0, d.default)(this, 'requestTranslation', async () => {
                 try {
                     return (await f.default.post('/api/translate', {
                         to: this.props.language,
                         text: this.props.text
                     })).data;
-                } catch (a) {
+                } catch (_v) {
                     return this.props.text;
                 }
             });
         }
     }
-    var h = i;
-}), c.register('rUIvb', function(b, o) {
-    a(b.exports, 'default', function() {
-        return l;
+    var _h = g;
+}), a.register('xE/yE', function(_b, c) {
+    _v(_b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('4JvRz'),
-        g = c('4cM0K'),
-        h = c('qg4Oj'),
-        i = c('b9Bct'),
-        j = c('PjB0f'),
-        k = c('kKvrw');
-    var l = a => {
-        const [m, n] = (0, j.useBoolean)(!1), [o, p] = e.useState(a.secondsToWait), q = e.useMemo(() => a.canAdvanceToQuestions && o > 0, [
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('DNhpF'),
+        g = a('Tbo7T'),
+        h = a('6oezR'),
+        i = a('TwXYL'),
+        j = a('PMl60'),
+        k = a('mLNYZ');
+    var _l = _v => {
+        const [m, n] = (0, j.useBoolean)(!1), [o, p] = e.useState(_v.secondsToWait), q = e.useMemo(() => _v.canAdvanceToQuestions && o > 0, [
             o,
-            a.canAdvanceToQuestions
+            _v.canAdvanceToQuestions
         ]);
         e.useEffect(() => {
-            a.onLockedChange && a.onLockedChange(q);
+            _v.onLockedChange && _v.onLockedChange(q);
         }, [
             q,
-            a.onLockedChange
+            _v.onLockedChange
         ]);
         const r = (0, k.default)({
                 text: 'Continue',
-                language: a.language,
-                translations: a.translations
+                language: _v.language,
+                translations: _v.translations
             }),
             s = e.useCallback(() => {
-                q || a.continueToQuestions();
+                q || _v.continueToQuestions();
             }, [
-                a.continueToQuestions,
+                _v.continueToQuestions,
                 q
             ]),
             t = e.useCallback(m => {
-                a.blockKeyboardEvents || m.key && 'Enter' === m.key && s();
+                _v.blockKeyboardEvents || m.key && 'Enter' === m.key && s();
             }, [
-                a.blockKeyboardEvents,
+                _v.blockKeyboardEvents,
                 s
             ]);
         e.useEffect(() => (document.addEventListener('keydown', t), () => {
@@ -1303,18 +1303,18 @@ c.register('jh162', function(b, c) {
         }), [t]);
         const u = e.useCallback(() => {
             var v;
-            q || (null === (v = a.onActionSound) || void 0 === v || v.play(), s());
+            q || (null === (v = _v.onActionSound) || void 0 === v || v.play(), s());
         }, [
             q,
             s,
-            a.onActionSound
+            _v.onActionSound
         ]);
         return e.useEffect(() => {
             if (m && o) {
-                const v = setTimeout(() => {
+                const _v = setTimeout(() => {
                     p(o - 1);
                 }, 1000);
-                return () => clearTimeout(v);
+                return () => clearTimeout(_v);
             }
             return () => null;
         }, [
@@ -1322,15 +1322,15 @@ c.register('jh162', function(b, c) {
             o
         ]), (0, d.jsxs)(h.AnswerButtonAreaContainer, {
             style: {
-                height: a.continueButtonHeight
+                height: e.continueButtonHeight
             },
             children: [
                 (0, d.jsx)(h.AnswerButtonProgressBar, {
                     style: {
-                        background: a.continueButtonColor.background
+                        background: e.continueButtonColor.background
                     },
                     transition: {
-                        duration: a.secondsToWait,
+                        duration: e.secondsToWait,
                         ease: 'linear'
                     },
                     onAnimationStart: n
@@ -1338,11 +1338,11 @@ c.register('jh162', function(b, c) {
                 (0, d.jsx)(h.ActionButtonContainer, {
                     children: (0, d.jsx)(g.GimkitLiveActionItemContainer, {
                         heightPercentage: 100,
-                        isOnDesktop: a.containerWidth >= a.desktopBreakpoint,
-                        background: o ? 'transparent' : a.continueButtonColor.background,
+                        isOnDesktop: e.containerWidth >= e.desktopBreakpoint,
+                        background: o ? 'transparent' : e.continueButtonColor.background,
                         style: {
                             cursor: o ? 'not-allowed' : 'pointer',
-                            color: a.continueButtonColor.text
+                            color: e.continueButtonColor.text
                         },
                         onClick: u,
                         children: (0, d.jsx)(h.ActionButtonContent, {
@@ -1385,37 +1385,37 @@ c.register('jh162', function(b, c) {
             ]
         });
     };
-}), c.register('kKvrw', function(b, o) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('mLNYZ', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('uPP4W'),
-        e = c('PjB0f');
-    var f = a => {
-        const [g, h] = d.useState(a.text);
+    var d = a('LEQ5w'),
+        e = a('PMl60');
+    var _f = e => {
+        const [g, h] = d.useState(e.text);
         d.useEffect(() => {
-            a.text !== g && (h(a.text), 'en' !== a.language && (a.disableIfContains && a.text.includes(a.disableIfContains) || (a.translations && a.translations[a.text] ? h(a.translations[a.text]) : (0, e.request)({
+            e.text !== g && (h(e.text), 'en' !== e.language && (e.disableIfContains && e.text.includes(e.disableIfContains) || (e.translations && e.translations[e.text] ? h(e.translations[e.text]) : (0, e.request)({
                 url: '',
                 data: {
-                    to: a.language,
-                    text: a.text
+                    to: e.language,
+                    text: e.text
                 },
                 success: g => {
-                    h(g), a.translations[a.text] = g;
+                    h(g), e.translations[e.text] = g;
                 }
             }))));
-        }, [a.text]);
+        }, [e.text]);
         return (() => {
-            let i = j;
-            return a.suffix && (i += a.suffix), i;
+            let i = g;
+            return e.suffix && (i += e.suffix), i;
         })();
     };
-}), c.register('7C60q', function(b, o) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('B7Zhl', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('cdiGP24');
-    var e = {
+    var d = a('fCxtw');
+    var _e = {
         defaultBackground: '#303f9f',
         question: {
             background: '#303f9f',
@@ -1458,33 +1458,33 @@ c.register('jh162', function(b, c) {
         },
         desktopBreakpoint: 650
     };
-}), c.register('9bAEj', function(o, r) {
-    a(o.exports, 'default', function() {
-        return m;
+}), a.register('gwrMQ', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _m;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('Vlfxs'),
-        h = c('b9Bct'),
-        i = c('7C60q'),
-        j = c('l6m0e');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('2x11J'),
+        h = a('TwXYL'),
+        i = a('B7Zhl'),
+        j = a('dt9Wz');
     let k;
-    const l = (0, f.default)(h.motion.div)(k || (k = (a => a)`
+    const l = (0, f.default)(h.motion.div)(k || (k = (e => e)`
   background: ${ 0 };
   flex: 1 1 auto;
   height: 100%;
   width: 100%;
   will-change: transform;
-`), a => a.defaultBackgroundColor);
-    var m = (0, g.observer)(a => (b(e).useEffect(() => (j.default.readToMe.canPlayAgain = !0, () => {
+`), e => e.defaultBackgroundColor);
+    var _m = (0, g.observer)(e => (t(e).useEffect(() => (j.default.readToMe.canPlayAgain = !0, () => {
         j.default.readToMe.canPlayAgain = !1;
     }), []), (0, d.jsx)(l, {
         style: {
-            opacity: a.opacity,
-            y: a.yPosition
+            opacity: e.opacity,
+            y: e.yPosition
         },
-        defaultBackgroundColor: a.defaultBackgroundColor || i.default.defaultBackground,
-        children: a.children
+        defaultBackgroundColor: e.defaultBackgroundColor || i.default.defaultBackground,
+        children: e.children
     })));
 });

@@ -1,72 +1,72 @@
-function a(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
 
-function b(a, b, c, t) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: t,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('Cy7D8', function(t, u) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('FzQB2', function(b, c) {
     var d;
-    d = t.exports, Object.defineProperty(d, '__esModule', {
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(t.exports, 'default', function() {
-        return q;
+    }), _r(b.exports, 'default', function() {
+        return _q;
     });
-    var e = c('8kSQZ'),
-        f = c('uPP4W'),
-        g = c('IsmrL'),
-        h = c('ExtIT'),
-        i = c('iHElh'),
-        j = c('mIF0p'),
-        k = c('PjB0f'),
-        l = c('IKf+p'),
-        m = c('hF8r9'),
-        n = c('0wLl2'),
-        o = c('iWnTh'),
-        p = c('0R8EW');
-    var q = () => {
+    var e = a('0hzx+'),
+        f = a('LEQ5w'),
+        g = a('ulE4q'),
+        h = a('fmVdR'),
+        i = a('6CIVV'),
+        j = a('AzS0C1'),
+        k = a('PMl60'),
+        l = a('W2+XK'),
+        m = a('KBJS7'),
+        n = a('hHkFq'),
+        o = a('XWne8'),
+        p = a('70AkF');
+    var _q = () => {
         const {
-            checkout: r
-        } = a(f).useContext(l.default);
-        let [s, t] = a(f).useState(!1), [u, v] = a(f).useState(!0), [w, x] = a(f).useState(''), [y, z] = a(f).useState(''), [A, B] = a(f).useState(!1), [C, D] = a(f).useState(null);
+            checkout: _r
+        } = _F(f).useContext(l.default);
+        let [s, t] = _F(f).useState(!1), [u, v] = _F(f).useState(!0), [w, x] = _F(f).useState(''), [y, z] = _F(f).useState(''), [A, B] = _F(f).useState(!1), [C, D] = _F(f).useState(null);
         const {
             id: E
         } = (0, p.useParams)();
-        a(f).useEffect(() => {
+        _F(f).useEffect(() => {
             (0, m.default)();
-            const F = (0, k.getUrlVariable)('session_id');
-            F ? (0, k.verifyStripe)({
-                sessionId: F,
+            const _F = (0, k.getUrlVariable)('session_id');
+            _F ? (0, k.verifyStripe)({
+                sessionId: _F,
                 onSuccess: () => {
-                    B(!0), F();
+                    B(!0), _F();
                 },
-                onError: F => {
+                onError: _F => {
                     v(!1), (0, k.throwMessageError)({
-                        e: F,
+                        e: _F,
                         default: {
                             title: 'An error ocurred when charging your card',
                             content: 'Please contact support.'
                         }
                     });
                 }
-            }) : F();
+            }) : _F();
         }, []);
-        const F = () => {
+        const _F = () => {
                 (0, k.request)({
                     url: `/api/billing/pay-for-me-info/${ E }`,
                     method: 'GET',
-                    success: a => {
-                        t(a.isUpgraded), x(a.firstName), z(a.lastName), D(a.receiptUrl);
+                    success: _H => {
+                        t(_H.isUpgraded), x(_H.firstName), z(_H.lastName), D(_H.receiptUrl);
                     },
-                    error: a => (0, k.throwMessageError)({
-                        e: a,
+                    error: _H => (0, k.throwMessageError)({
+                        e: _H,
                         default: {
                             title: 'We were unable to verify the user\'s id',
                             content: 'Please try again later'
@@ -75,15 +75,15 @@ c.register('Cy7D8', function(t, u) {
                     both: () => v(!1)
                 });
             },
-            G = async a => {
-                if (r.stripePublicKey) {
+            G = async _H => {
+                if (_r.stripePublicKey) {
                     if (u)
                         return;
-                    let H;
+                    let _H;
                     v(!0);
                     try {
-                        H = await (0, j.loadStripe)(r.stripePublicKey);
-                    } catch (H) {
+                        _H = await (0, j.loadStripe)(_r.stripePublicKey);
+                    } catch (_H) {
                         v(!1), (0, k.throwMessageError)({
                             default: {
                                 title: 'Connection Error',
@@ -91,23 +91,23 @@ c.register('Cy7D8', function(t, u) {
                             }
                         });
                     }
-                    H && (0, k.request)({
+                    _H && (0, k.request)({
                         url: '/api/billing/create-pay-for-me-session',
                         method: 'POST',
                         data: {
                             encryptedUserId: E
                         },
-                        success: async r => {
-                            const I = J;
-                            let K;
+                        success: async _r => {
+                            const I = _r;
+                            let J;
                             try {
-                                if (K = await H.redirectToCheckout({
+                                if (J = await _H.redirectToCheckout({
                                         sessionId: I.id
-                                    }), K && K.error)
-                                    throw K.error;
-                            } catch (H) {
+                                    }), J && J.error)
+                                    throw J.error;
+                            } catch (_H) {
                                 v(!1), (0, k.throwMessageError)({
-                                    e: H,
+                                    e: _H,
                                     default: {
                                         title: 'Connection Error',
                                         content: 'An error ocurred. Please try again later'
@@ -115,9 +115,9 @@ c.register('Cy7D8', function(t, u) {
                                 });
                             }
                         },
-                        error: H => {
+                        error: _H => {
                             v(!1), (0, k.throwMessageError)({
-                                e: H,
+                                e: _H,
                                 default: {
                                     title: 'Connection Error',
                                     content: 'An error ocurred while connecting to our payments provider. Please try again later'
@@ -256,127 +256,127 @@ c.register('Cy7D8', function(t, u) {
             ]
         });
     };
-}), c.register('mIF0p', function(a, c) {
-    b(a.exports, 'loadStripe', function() {
-        return l;
+}), a.register('AzS0C1', function(b, c) {
+    _j(b.exports, 'loadStripe', function() {
+        return _l;
     });
     var d = 'https://js.stripe.com/v3',
         e = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
         f = 'loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used',
         g = null,
-        h = function(a) {
-            return null !== g || (g = new Promise(function(b, c) {
+        h = function(i) {
+            return null !== g || (g = new Promise(function(_j, k) {
                 if ('undefined' != typeof window)
-                    if (window.Stripe && a && console.warn(f), window.Stripe)
-                        b(window.Stripe);
+                    if (window.Stripe && i && console.warn(f), window.Stripe)
+                        _j(window.Stripe);
                     else
                         try {
-                            var i = function() {
-                                for (var j = document.querySelectorAll('script[src^="'.concat(d, '"]')), k = 0; k < j.length; k++) {
-                                    var l = j[k];
-                                    if (e.test(l.src))
-                                        return l;
+                            var l = function() {
+                                for (var m = document.querySelectorAll('script[src^="'.concat(d, '"]')), n = 0; n < m.length; n++) {
+                                    var o = m[n];
+                                    if (e.test(o.src))
+                                        return o;
                                 }
                                 return null;
                             }();
-                            i && a ? console.warn(f) : i || (i = function(a) {
-                                var j = a && !a.advancedFraudSignals ? '?advancedFraudSignals=false' : '',
-                                    k = document.createElement('script');
-                                k.src = ''.concat(d).concat(j);
-                                var l = document.head || document.body;
-                                if (!l)
+                            l && i ? console.warn(f) : l || (l = function(m) {
+                                var n = m && !m.advancedFraudSignals ? '?advancedFraudSignals=false' : '',
+                                    o = document.createElement('script');
+                                o.src = ''.concat(d).concat(n);
+                                var p = document.head || document.body;
+                                if (!p)
                                     throw new Error('Expected document.body not to be null. Stripe.js requires a <body> element.');
-                                return l.appendChild(k), k;
-                            }(a)), i.addEventListener('load', function() {
-                                window.Stripe ? b(window.Stripe) : c(new Error('Stripe.js not available'));
-                            }), i.addEventListener('error', function() {
-                                c(new Error('Failed to load Stripe.js'));
+                                return p.appendChild(o), o;
+                            }(i)), l.addEventListener('load', function() {
+                                window.Stripe ? _j(window.Stripe) : k(new Error('Stripe.js not available'));
+                            }), l.addEventListener('error', function() {
+                                k(new Error('Failed to load Stripe.js'));
                             });
-                        } catch (a) {
-                            return void c(a);
+                        } catch (i) {
+                            return void k(i);
                         }
                 else
-                    b(null);
+                    _j(null);
             })), g;
         },
-        i = function(a, b, c) {
-            if (null === a)
+        i = function(j, k, l) {
+            if (null === j)
                 return null;
-            var j = a.apply(void 0, b);
-            return function(a, b) {
-                a && a._registerWrapper && a._registerWrapper({
+            var m = j.apply(void 0, k);
+            return function(n, o) {
+                n && n._registerWrapper && n._registerWrapper({
                     name: 'stripe-js',
                     version: '1.9.0',
-                    startTime: b
+                    startTime: o
                 });
-            }(j, c), j;
+            }(m, l), m;
         },
         j = Promise.resolve().then(function() {
             return h(null);
         }),
         k = !1;
-    j.catch(function(a) {
-        k || console.warn(a);
+    j.catch(function(l) {
+        k || console.warn(l);
     });
-    var l = function() {
+    var _l = function() {
         for (var m = arguments.length, n = new Array(m), o = 0; o < m; o++)
             n[o] = arguments[o];
         k = !0;
         var p = Date.now();
-        return j.then(function(m) {
-            return i(m, n, p);
+        return j.then(function(q) {
+            return i(q, n, p);
         });
     };
-}), c.register('IKf+p', function(a, o) {
-    b(a.exports, 'default', function() {
-        return f;
+}), a.register('W2+XK', function(b, c) {
+    t(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('uPP4W'),
-        e = c('I1CoM');
-    var f = d.createContext(e.default);
-}), c.register('I1CoM', function(a, o) {
-    b(a.exports, 'default', function() {
-        return f;
+    var d = a('LEQ5w'),
+        e = a('x/Eg+0');
+    var _f = d.createContext(e.default);
+}), a.register('x/Eg+0', function(b, c) {
+    t(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('SWSuU'),
-        e = c('voqY9');
-    var f = {
+    var d = a('xguoe0'),
+        e = a('QKunP');
+    var _f = {
         navigation: new(0, d.default)(),
         checkout: new(0, e.default)()
     };
-}), c.register('SWSuU', function(a, o) {
-    b(a.exports, 'Screen', function() {
-        return f;
-    }), b(a.exports, 'default', function() {
-        return l;
+}), a.register('xguoe0', function(b, c) {
+    t(b.exports, 'Screen', function() {
+        return _f;
+    }), t(b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('6gioo'),
-        e = c('UnUp5');
-    let f;
-    (f || (f = {})).checkout = 'checkout';
+    var d = a('csYze'),
+        e = a('YuT/D');
+    let _f;
+    (_f || (_f = {})).checkout = 'checkout';
     const g = {
-            screen: f.checkout,
+            screen: _f.checkout,
             loadingTokenSubmit: !1
         },
         {
             screen: h,
             loadingTokenSubmit: i
-        } = j;
-    class k {
+        } = g;
+    class j {
         constructor() {
             this.screen = h, this.loadingTokenSubmit = i, this.reset = () => {
-                Object.keys(j).forEach(a => this[a] = j[a]);
+                Object.keys(g).forEach(b => this[b] = g[b]);
             }, (0, e.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], k.prototype, 'screen', void 0), (0, d.__decorate)([e.observable], k.prototype, 'loadingTokenSubmit', void 0), (0, d.__decorate)([e.action], k.prototype, 'reset', void 0);
-    var l = m;
-}), c.register('voqY9', function(a, o) {
-    b(a.exports, 'default', function() {
-        return w;
+    (0, d.__decorate)([e.observable], j.prototype, 'screen', void 0), (0, d.__decorate)([e.observable], j.prototype, 'loadingTokenSubmit', void 0), (0, d.__decorate)([e.action], j.prototype, 'reset', void 0);
+    var _k = j;
+}), a.register('QKunP', function(b, c) {
+    t(b.exports, 'default', function() {
+        return _v;
     });
-    var d = c('6gioo'),
-        e = c('UnUp5');
+    var d = a('csYze'),
+        e = a('YuT/D');
     const f = {
             planName: '',
             planId: '',
@@ -408,35 +408,35 @@ c.register('Cy7D8', function(t, u) {
             couponIsOnlyForPlan: r,
             existingPayingPlan: s,
             stripePublicKey: t
-        } = u;
-    class v {
+        } = f;
+    class u {
         get totalCost() {
-            const w = this.planCost * this.percentageOff - this.amountOff - this.accountCredit;
-            return w < 0 ? 0 : w;
+            const v = this.planCost * this.percentageOff - this.amountOff - this.accountCredit;
+            return v < 0 ? 0 : v;
         }
         constructor() {
             this.planName = g, this.planId = h, this.couponId = i, this.planCost = j, this.planDescription = k, this.accountCredit = l, this.percentageOff = m, this.amountOff = n, this.couponDescription = o, this.hasCoupon = p, this.couponOneUseOnly = q, this.couponIsOnlyForPlan = r, this.existingPayingPlan = s, this.stripePublicKey = t, this.reset = () => {
-                Object.keys(u).forEach(w => {
-                    this[w] = u[w];
+                Object.keys(f).forEach(b => {
+                    this[b] = f[b];
                 });
             }, (0, e.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], v.prototype, 'planName', void 0), (0, d.__decorate)([e.observable], v.prototype, 'planId', void 0), (0, d.__decorate)([e.observable], v.prototype, 'couponId', void 0), (0, d.__decorate)([e.observable], v.prototype, 'planCost', void 0), (0, d.__decorate)([e.observable], v.prototype, 'planDescription', void 0), (0, d.__decorate)([e.observable], v.prototype, 'accountCredit', void 0), (0, d.__decorate)([e.observable], v.prototype, 'percentageOff', void 0), (0, d.__decorate)([e.observable], v.prototype, 'amountOff', void 0), (0, d.__decorate)([e.observable], v.prototype, 'couponDescription', void 0), (0, d.__decorate)([e.observable], v.prototype, 'hasCoupon', void 0), (0, d.__decorate)([e.observable], v.prototype, 'couponOneUseOnly', void 0), (0, d.__decorate)([e.observable], v.prototype, 'couponIsOnlyForPlan', void 0), (0, d.__decorate)([e.observable], v.prototype, 'existingPayingPlan', void 0), (0, d.__decorate)([e.observable], v.prototype, 'stripePublicKey', void 0), (0, d.__decorate)([e.computed], v.prototype, 'totalCost', null), (0, d.__decorate)([e.action], v.prototype, 'reset', void 0);
-    var w = x;
-}), c.register('hF8r9', function(a, o) {
-    b(a.exports, 'default', function() {
-        return i;
+    (0, d.__decorate)([e.observable], u.prototype, 'planName', void 0), (0, d.__decorate)([e.observable], u.prototype, 'planId', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponId', void 0), (0, d.__decorate)([e.observable], u.prototype, 'planCost', void 0), (0, d.__decorate)([e.observable], u.prototype, 'planDescription', void 0), (0, d.__decorate)([e.observable], u.prototype, 'accountCredit', void 0), (0, d.__decorate)([e.observable], u.prototype, 'percentageOff', void 0), (0, d.__decorate)([e.observable], u.prototype, 'amountOff', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponDescription', void 0), (0, d.__decorate)([e.observable], u.prototype, 'hasCoupon', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponOneUseOnly', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponIsOnlyForPlan', void 0), (0, d.__decorate)([e.observable], u.prototype, 'existingPayingPlan', void 0), (0, d.__decorate)([e.observable], u.prototype, 'stripePublicKey', void 0), (0, d.__decorate)([e.computed], u.prototype, 'totalCost', null), (0, d.__decorate)([e.action], u.prototype, 'reset', void 0);
+    var _v = u;
+}), a.register('KBJS7', function(b, c) {
+    t(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('PjB0f'),
-        e = c('I1CoM'),
-        f = c('GFgjD'),
-        g = c('q721a'),
-        h = c('k0s2g17');
-    var i = () => {
+    var d = a('PMl60'),
+        e = a('x/Eg+0'),
+        f = a('INKb2'),
+        g = a('gs4MT'),
+        h = a('jzxyj10');
+    var _i = () => {
         (0, d.request)({
             url: '/api/billing/stripe-key',
-            success: a => e.default.checkout.stripePublicKey = a.key,
+            success: b => e.default.checkout.stripePublicKey = b.key,
             error: () => (0, f.throwError)({
                 title: 'Our payments provider is currently down',
                 content: 'Please try again later',
@@ -444,39 +444,39 @@ c.register('Cy7D8', function(t, u) {
             })
         });
     };
-}), c.register('k0s2g17', function(a, o) {
-    b(a.exports, 'NavigateTo', function() {
-        return e;
+}), a.register('jzxyj10', function(b, c) {
+    t(b.exports, 'NavigateTo', function() {
+        return _e;
     });
-    var d = c('Cr/BM');
-    const e = a => {
-        d.history.push(a);
+    var d = a('oBJ9G');
+    const _e = b => {
+        d.history.push(b);
     };
-}), c.register('iWnTh', function(a, o) {
-    b(a.exports, 'Container', function() {
-        return p;
-    }), b(a.exports, 'Content', function() {
-        return q;
-    }), b(a.exports, 'TopSectionContainer', function() {
-        return r;
-    }), b(a.exports, 'Logo', function() {
-        return s;
-    }), b(a.exports, 'MainContent', function() {
-        return t;
-    }), b(a.exports, 'Message', function() {
-        return u;
+}), a.register('XWne8', function(b, c) {
+    t(b.exports, 'Container', function() {
+        return _p;
+    }), t(b.exports, 'Content', function() {
+        return _q;
+    }), t(b.exports, 'TopSectionContainer', function() {
+        return _r;
+    }), t(b.exports, 'Logo', function() {
+        return _s;
+    }), t(b.exports, 'MainContent', function() {
+        return _t;
+    }), t(b.exports, 'Message', function() {
+        return _u;
     });
-    var d = c('lmfrI'),
-        e = c('gSUVO'),
-        f = c('h99Nu');
-    let g, h, i, j, k, l, m, n, o = a => a;
-    const p = f.default.div.attrs({
+    var d = a('sHRDd'),
+        e = a('b5kvC'),
+        f = a('Axq+p');
+    let g, h, i, j, k, l, m, n, o = b => b;
+    const _p = f.default.div.attrs({
             className: 'maxWidth maxHeight flex hc vc'
         })(g || (g = o`
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/client/img/signup/funky-lines.png') repeat 0 0;
 `)),
-        q = f.default.div.attrs({
+        _q = f.default.div.attrs({
             className: 'scroll-y'
         })(h || (h = o`
   background: ${ 0 };
@@ -489,18 +489,18 @@ c.register('Cy7D8', function(t, u) {
   font-family: ${ 0 };
   color: ${ 0 };
 `), d.default.White, e.Fonts.SFPro, d.default.Black),
-        r = f.default.div.attrs({
+        _r = f.default.div.attrs({
             className: 'maxWidth flex flex-column vc'
         })(i || (i = o``)),
-        s = f.default.img.attrs({
+        _s = f.default.img.attrs({
             src: '/client/img/svgLogo.svg'
         })(j || (j = o`
   height: 35px;
 `)),
-        t = f.default.div.attrs({
+        _t = f.default.div.attrs({
             className: 'maxWidth flex flex-column vc'
         })(k || (k = o``)),
-        u = {
+        _u = {
             TopHeader: f.default.div(l || (l = o`
     font-size: 17px;
   `)),

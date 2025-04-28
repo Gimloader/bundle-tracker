@@ -1,41 +1,41 @@
-function a(a, b, j, k) {
-    Object.defineProperty(a, b, {
-        get: j,
-        set: k,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('kHSoZ', function(j, k) {
-    var c;
-    c = j.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('h8+db', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(j.exports, 'default', function() {
-        return m;
+    }), _n(b.exports, 'default', function() {
+        return _n;
     });
-    var d = b('UM8oI'),
-        e = b('JJQ0+'),
-        f = b('Bpt+p'),
-        g = b('5Ux1a'),
-        h = b('sgILU'),
-        i = b('phu0d'),
-        j = b('Gqspz'),
-        k = b('ZnzPM0');
-    class l extends h.default {
-        constructor(a) {
-            if (super(a), (0, d.default)(this, 'onMessage', a => {
-                    'hit' === a.key && (0, k.OnHit)(a.data);
-                }), (0, g.InPreGamePhase)() && (0, f.isSavedVersion)()) {
-                const m = j.default.Utility;
-                new(0, i.default)({
+    var e = a('1bFPu'),
+        f = a('2Xvuf'),
+        g = a('9tz3H'),
+        h = a('/pbxo'),
+        i = a('I35Ay'),
+        j = a('+uQv7'),
+        k = a('dTXti'),
+        l = a('bu42I0');
+    class m extends i.default {
+        constructor(_n) {
+            if (super(_n), (0, e.default)(this, 'onMessage', _n => {
+                    'hit' === _n.key && (0, l.OnHit)(_n.data);
+                }), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) {
+                const o = k.default.Utility;
+                new(0, j.default)({
                     device: this,
-                    baseColor: m.baseColor,
-                    boxColor: m.boxColor,
+                    baseColor: o.baseColor,
+                    boxColor: o.boxColor,
                     content: {
                         icon: {
-                            image: (0, e.default)('devices/damager/icon.png'),
+                            image: (0, f.default)('devices/damager/icon.png'),
                             scale: 0.85
                         }
                     }
@@ -43,30 +43,30 @@ b.register('kHSoZ', function(j, k) {
             }
         }
     }
-    var m = n;
-}), b.register('ZnzPM0', function(j, k) {
-    a(j.exports, 'OnHit', function() {
-        return h;
+    var _n = m;
+}), a.register('bu42I0', function(b, c) {
+    _m(b.exports, 'OnHit', function() {
+        return _i;
     });
-    var c = b('PUlKf'),
-        d = b('BEe8M'),
-        e = b('dAmf5'),
-        f = b('mdnc8'),
-        g = b('hTFUq');
-    const h = a => {
+    var d = a('Jfada'),
+        e = a('B9G/J'),
+        f = a('D5xLI'),
+        g = a('O4Fyc'),
+        h = a('vqFRL');
+    const _i = _m => {
         const {
-            characterId: i,
-            damage: j,
-            type: k
-        } = l;
-        if (i && j && k) {
-            const m = (0, f.AmISpectator)() ? (0, d.FetchSpectatedId)() : (0, c.default)();
-            (0, e.default)().worldManager.projectiles.damageMarkers.characters.applyDamage({
-                characterId: i,
-                damage: j,
-                type: k
-            }), i === m && (0, g.default)({
-                type: k
+            characterId: j,
+            damage: k,
+            type: l
+        } = _m;
+        if (j && k && l) {
+            const _m = (0, g.AmISpectator)() ? (0, e.FetchSpectatedId)() : (0, d.default)();
+            (0, f.default)().worldManager.projectiles.damageMarkers.characters.applyDamage({
+                characterId: j,
+                damage: k,
+                type: l
+            }), j === _m && (0, h.default)({
+                type: l
             });
         }
     };

@@ -1,39 +1,39 @@
-function a(a, b, c, B) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: B,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('ndLzW', function(b, B) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('YEoUd', function(b, c) {
     var d;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(b.exports, 'default', function() {
-        return q;
+    }), _r(b.exports, 'default', function() {
+        return _q;
     });
-    var e = c('8kSQZ'),
-        f = c('uPP4W'),
-        g = c('NS10B'),
-        h = c('RrDRa'),
-        i = c('h99Nu'),
-        j = c('WCMsb'),
-        k = c('cPPSp'),
-        l = c('PjB0f'),
-        m = c('Is2Mj'),
-        n = c('kMQjd3'),
-        o = c('1//3g');
+    var e = a('0hzx+'),
+        f = a('LEQ5w'),
+        g = a('R3x1N'),
+        h = a('78pxp'),
+        i = a('Axq+p'),
+        j = a('AlPWL'),
+        k = a('ixW97'),
+        l = a('PMl60'),
+        m = a('ahAbF'),
+        n = a('RC6kl3'),
+        o = a('RJjEi');
     let p;
-    var q = () => (f.useEffect(() => {
-        const r = (0, l.getUrlVariable)('tab');
-        r && r === m.default.billing && (h.default.navigation.currentTab = m.default.billing);
+    var _q = () => (f.useEffect(() => {
+        const _r = (0, l.getUrlVariable)('tab');
+        _r && _r === m.default.billing && (h.default.navigation.currentTab = m.default.billing);
     }, []), (0, e.jsxs)(e.Fragment, {
         children: [
             (0, e.jsx)(g.default.Provider, {
@@ -42,7 +42,7 @@ c.register('ndLzW', function(b, B) {
                     className: 'flex-column',
                     children: [
                         (0, e.jsx)(o.default, {}),
-                        (0, e.jsxs)(r, {
+                        (0, e.jsxs)(_r, {
                             children: [
                                 (0, e.jsx)(j.default, {}),
                                 (0, e.jsx)(k.default, {})
@@ -56,39 +56,39 @@ c.register('ndLzW', function(b, B) {
             })
         ]
     }));
-    const r = i.default.div.attrs({
+    const _r = i.default.div.attrs({
         className: 'flex'
-    })(p || (p = (a => a)`
+    })(p || (p = (_y => _y)`
   flex: 1;
   overflow: hidden;
 `));
-}), c.register('WCMsb', function(b, B) {
-    a(b.exports, 'default', function() {
-        return x;
+}), a.register('AlPWL', function(b, c) {
+    _y(b.exports, 'default', function() {
+        return _x;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('lmfrI'),
-        h = c('Vlfxs'),
-        i = c('NS10B'),
-        j = c('Is2Mj'),
-        k = c('PjB0f'),
-        l = c('HKcK8'),
-        m = c('2Hg8W4'),
-        n = c('b+LEP25'),
-        o = c('K8wbk'),
-        p = c('iYEuk12'),
-        q = c('q721a'),
-        r = c('gSUVO'),
-        s = c('C891a'),
-        t = c('U31rS3');
-    let u, v, w = a => a;
-    var x = (0, h.observer)(() => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('sHRDd'),
+        h = a('2x11J'),
+        i = a('R3x1N'),
+        j = a('ahAbF'),
+        k = a('PMl60'),
+        l = a('XetsG'),
+        m = a('ZYBJo4'),
+        n = a('dBHoZ22'),
+        o = a('tCLSR'),
+        p = a('2HvvA11'),
+        q = a('gs4MT'),
+        r = a('b5kvC'),
+        s = a('iIoYI'),
+        t = a('YEu6T2');
+    let u, v, w = _y => _y;
+    var _x = (0, h.observer)(() => {
         const {
-            navigation: y
-        } = e.useContext(i.default), z = z => y.currentTab === z, A = z => y.currentTab = z, B = !(0, k.isStudent)();
-        return (0, d.jsxs)(y, {
+            navigation: _y
+        } = e.useContext(i.default), z = z => _y.currentTab === z, A = z => _y.currentTab = z, B = !(0, k.isStudent)();
+        return (0, d.jsxs)(_y, {
             children: [
                 (0, d.jsx)(s.default, {}),
                 (0, d.jsx)(t.default, {
@@ -115,7 +115,7 @@ c.register('ndLzW', function(b, B) {
                     selected: z(j.default.support),
                     onClick: () => A(j.default.support)
                 }),
-                (0, k.isStudent)() ? null : (0, d.jsxs)(z, {
+                (0, k.isStudent)() ? null : (0, d.jsxs)(_z, {
                     children: [
                         'Looking to manage a group license?',
                         (0, d.jsx)('br', {}),
@@ -138,14 +138,14 @@ c.register('ndLzW', function(b, B) {
             ]
         });
     });
-    const y = f.default.div.attrs({
+    const _y = f.default.div.attrs({
             className: 'scroll-y'
         })(u || (u = w`
   height: 100%;
   width: 320px;
   border-right: 1px solid ${ 0 };
 `), g.default.BorderGray),
-        z = f.default.div(v || (v = w`
+        _z = f.default.div(v || (v = w`
   padding: 20px 15px;
   background: rgba(0, 0, 0, 0.07);
   font-size: 12px;
@@ -155,27 +155,27 @@ c.register('ndLzW', function(b, B) {
   margin-left: 22px;
   width: 84%;
 `));
-}), c.register('2Hg8W4', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('ZYBJo4', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('Yt9re4'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('CHYV/2'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'PlayCircleOutlined';
-    var i = e.forwardRef(h);
-}), c.register('Yt9re4', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('CHYV/2', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -199,27 +199,27 @@ c.register('ndLzW', function(b, B) {
         name: 'play-circle',
         theme: 'outlined'
     };
-}), c.register('b+LEP25', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('dBHoZ22', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('Kl7ed13'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('7tpbI13'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'QuestionCircleOutlined';
-    var i = e.forwardRef(h);
-}), c.register('Kl7ed13', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('7tpbI13', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -243,27 +243,27 @@ c.register('ndLzW', function(b, B) {
         name: 'question-circle',
         theme: 'outlined'
     };
-}), c.register('K8wbk', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('tCLSR', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('9dTzb'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('bnBi9'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'UserOutlined';
-    var i = e.forwardRef(h);
-}), c.register('9dTzb', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('bnBi9', function(b, c) {
+    _r(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -280,43 +280,43 @@ c.register('ndLzW', function(b, B) {
         name: 'user',
         theme: 'outlined'
     };
-}), c.register('iYEuk12', function(b, u) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('2HvvA11', function(b, c) {
+    _r(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('8kSQZ'),
-        e = c('KzqIz');
-    c('uPP4W');
-    var f = a => a.external || !a.to ? (0, d.jsx)('a', {
-        href: a.to,
-        tabIndex: Number(a.tabIndex || '0'),
-        onClick: a.onClick,
+    var d = a('0hzx+'),
+        e = a('wYGc3');
+    a('LEQ5w');
+    var _f = _r => _r.external || !_r.to ? (0, d.jsx)('a', {
+        href: _r.to,
+        tabIndex: Number(_r.tabIndex || '0'),
+        onClick: _r.onClick,
         onKeyPress: b => {
-            a.onClick && 'Enter' === b.key && (b.preventDefault(), a.onClick());
+            _r.onClick && 'Enter' === b.key && (b.preventDefault(), _r.onClick());
         },
-        className: a.className,
-        target: a.target,
-        style: a.style,
-        children: a.children
+        className: _r.className,
+        target: _r.target,
+        style: _r.style,
+        children: _r.children
     }) : (0, d.jsx)(e.Link, {
-        to: a.to,
-        tabIndex: Number(a.tabIndex || '0'),
-        onClick: a.onClick,
-        className: a.className,
-        target: a.target,
-        style: a.style,
-        children: a.children
+        to: _r.to,
+        tabIndex: Number(_r.tabIndex || '0'),
+        onClick: _r.onClick,
+        className: _r.className,
+        target: _r.target,
+        style: _r.style,
+        children: _r.children
     });
-}), c.register('U31rS3', function(b, u) {
-    a(b.exports, 'default', function() {
-        return r;
+}), a.register('YEu6T2', function(b, c) {
+    _r(b.exports, 'default', function() {
+        return _r;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('lmfrI'),
-        h = c('gSUVO');
-    let i, j, k, l = a => a;
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('sHRDd'),
+        h = a('b5kvC');
+    let i, j, k, l = _r => _r;
     const m = '#1890FF',
         n = f.default.div(i || (i = l`
   width: 100%;
@@ -338,7 +338,7 @@ c.register('ndLzW', function(b, B) {
   &:hover {
     color: ${ 0 };
   }
-`), h.Fonts.SFPro, 14, a => a.selected && !a.blockBackground ? '#E5F7FE' : g.default.White, a => a.selected ? m : 'rgba(0,0,0,.65)', a => a.selected && !a.blockStripe && 'border-right: 3px solid ' + m + ';', m),
+`), h.Fonts.SFPro, 14, _r => _r.selected && !_r.blockBackground ? '#E5F7FE' : g.default.White, _r => _r.selected ? m : 'rgba(0,0,0,.65)', _r => _r.selected && !_r.blockStripe && 'border-right: 3px solid ' + m + ';', m),
         o = f.default.div.attrs({
             className: 'flex vc maxWidth'
         })(j || (j = l``)),
@@ -346,7 +346,7 @@ c.register('ndLzW', function(b, B) {
     class q extends e.Component {
         render() {
             const {
-                title: r,
+                title: _r,
                 onClick: s,
                 selected: t,
                 blockStripe: u,
@@ -371,7 +371,7 @@ c.register('ndLzW', function(b, B) {
                     (0, d.jsxs)(o, {
                         children: [
                             (0, d.jsx)(p, {
-                                children: r
+                                children: _r
                             }),
                             this.props.customRightComponent ? this.props.customRightComponent : null
                         ]
@@ -380,44 +380,44 @@ c.register('ndLzW', function(b, B) {
             });
         }
     }
-    var r = s;
-}), c.register('cPPSp', function(b, t) {
-    a(b.exports, 'default', function() {
-        return r;
+    var _r = q;
+}), a.register('ixW97', function(b, c) {
+    _s(b.exports, 'default', function() {
+        return _r;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('EPN7x'),
-        h = c('gSUVO'),
-        i = c('lmfrI'),
-        j = c('Vlfxs'),
-        k = c('NS10B'),
-        l = c('Is2Mj'),
-        m = c('bwKYG'),
-        n = c('6VWVh'),
-        o = c('XEed7'),
-        p = c('C891a');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('yAxFM'),
+        h = a('b5kvC'),
+        i = a('sHRDd'),
+        j = a('2x11J'),
+        k = a('R3x1N'),
+        l = a('ahAbF'),
+        m = a('btszz'),
+        n = a('Bp5xg'),
+        o = a('fOAV4'),
+        p = a('iIoYI');
     let q;
-    var r = (0, j.observer)(() => {
+    var _r = (0, j.observer)(() => {
         const {
-            navigation: s
+            navigation: _s
         } = e.useContext(k.default);
-        return (0, d.jsxs)(s, {
+        return (0, d.jsxs)(_s, {
             children: [
                 (0, d.jsx)(p.default, {}),
                 (() => {
                     const {
                         currentTab: t
-                    } = u;
+                    } = _s;
                     return t === l.default.accountInformation ? (0, d.jsx)(g.default, {}) : t === l.default.gameSettings ? (0, d.jsx)(m.default, {}) : t === l.default.billing ? (0, d.jsx)(n.default, {}) : t === l.default.support ? (0, d.jsx)(o.default, {}) : null;
                 })()
             ]
         });
     });
-    const s = f.default.div.attrs({
+    const _s = f.default.div.attrs({
         className: 'scroll'
-    })(q || (q = (a => a)`
+    })(q || (q = (_q => _q)`
   flex: 1;
   height: 100%;
   box-sizing: border-box;
@@ -425,41 +425,41 @@ c.register('ndLzW', function(b, B) {
   font-family: ${ 0 };
   color: ${ 0 };
 `), h.Fonts.SFPro, i.default.Black);
-}), c.register('EPN7x', function(b, t) {
-    a(b.exports, 'default', function() {
-        return p;
+}), a.register('yAxFM', function(b, c) {
+    _q(b.exports, 'default', function() {
+        return _p;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('gSUVO'),
-        g = c('f9f+a'),
-        h = c('HQsyw'),
-        i = c('lmfrI'),
-        j = c('REfzd'),
-        k = c('XjjVZ'),
-        l = c('ofYOa'),
-        m = c('PjB0f');
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('b5kvC'),
+        g = a('oXQNI'),
+        h = a('/5bVc'),
+        i = a('sHRDd'),
+        j = a('tBKoe'),
+        k = a('hRYSf'),
+        l = a('n3+0G'),
+        m = a('PMl60');
     let n;
-    const o = a => (0, d.jsx)(g.default, {
+    const o = _q => (0, d.jsx)(g.default, {
         style: {
             fontFamily: f.Fonts.SFPro,
             color: i.default.Black,
             marginBottom: 20
         },
-        ...a
+        ..._q
     });
-    var p = () => (0, d.jsxs)(d.Fragment, {
+    var _p = () => (0, d.jsxs)(d.Fragment, {
         children: [
             (0, d.jsxs)(d.Fragment, {
                 children: [
-                    (0, d.jsx)(q, {
+                    (0, d.jsx)(_q, {
                         children: '\uD83D\uDC4B Name'
                     }),
                     (0, d.jsx)(o, {
                         children: (0, d.jsx)(h.default, {})
                     }),
-                    (0, d.jsx)(q, {
+                    (0, d.jsx)(_q, {
                         children: '\uD83D\uDD11 Authentication'
                     }),
                     (0, d.jsx)(o, {
@@ -467,7 +467,7 @@ c.register('ndLzW', function(b, B) {
                     }),
                     !(0, m.isStudent)() && (0, d.jsxs)(d.Fragment, {
                         children: [
-                            (0, d.jsx)(q, {
+                            (0, d.jsx)(_q, {
                                 children: '\uD83C\uDFEB School'
                             }),
                             (0, d.jsx)(o, {
@@ -477,7 +477,7 @@ c.register('ndLzW', function(b, B) {
                     })
                 ]
             }),
-            (0, d.jsx)(q, {
+            (0, d.jsx)(_q, {
                 children: (0, m.isStudent)() ? '\u2328️ Manage' : '\uD83D\uDD12 Account'
             }),
             (0, d.jsx)(o, {
@@ -485,54 +485,54 @@ c.register('ndLzW', function(b, B) {
             })
         ]
     });
-    const q = e.default.div(n || (n = (a => a)`
+    const _q = e.default.div(n || (n = (_q => _q)`
   font-size: 30px;
   font-weight: ${ 0 };
   margin-bottom: 5px;
 `), f.FontWeights.UltraBold);
-}), c.register('HQsyw', function(b, t) {
-    a(b.exports, 'Description', function() {
-        return r;
-    }), a(b.exports, 'default', function() {
-        return p;
+}), a.register('/5bVc', function(b, c) {
+    _q(b.exports, 'Description', function() {
+        return _r;
+    }), _q(b.exports, 'default', function() {
+        return _p;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('gSUVO'),
-        h = c('c6x8w'),
-        i = c('bNL33'),
-        j = c('MHioT3'),
-        k = c('eMhMk1'),
-        l = c('PjB0f');
-    let m, n, o = a => a;
-    var p = () => {
-        const [q, r] = e.useState((0, l.getUser)().firstName), [s, t] = e.useState((0, l.getUser)().lastName), u = (0, l.isStudent)() && (0, l.getUser)().lastName.length < 2 ? 'Last Initial' : 'Last Name', v = (0, l.isStudent)() && (0, l.getUser)().lastName.length < 2 ? 1 : k.MAX_LENGTH_LAST_NAME;
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('b5kvC'),
+        h = a('ewwAh'),
+        i = a('7fQMx'),
+        j = a('Hi0/F0'),
+        k = a('d1g2b2'),
+        l = a('PMl60');
+    let m, n, o = _q => _q;
+    var _p = () => {
+        const [_q, r] = e.useState((0, l.getUser)().firstName), [s, t] = e.useState((0, l.getUser)().lastName), u = (0, l.isStudent)() && (0, l.getUser)().lastName.length < 2 ? 'Last Initial' : 'Last Name', v = (0, l.isStudent)() && (0, l.getUser)().lastName.length < 2 ? 1 : k.MAX_LENGTH_LAST_NAME;
         return (0, d.jsxs)(d.Fragment, {
             children: [
-                (0, d.jsxs)(q, {
+                (0, d.jsxs)(_q, {
                     children: [
-                        (0, d.jsx)(r, {
+                        (0, d.jsx)(_r, {
                             children: 'First Name'
                         }),
                         (0, d.jsx)(h.default, {
                             onBlur: () => {
-                                q && (0, i.default)({
+                                _q && (0, i.default)({
                                     changes: [{
                                         key: j.informationTypes.firstName,
-                                        value: q
+                                        value: _q
                                     }]
                                 });
                             },
-                            onChange: q => r(q.target.value),
-                            value: q,
+                            onChange: _q => r(_q.target.value),
+                            value: _q,
                             maxLength: k.MAX_LENGTH_FIRST_NAME
                         })
                     ]
                 }),
-                (0, d.jsxs)(q, {
+                (0, d.jsxs)(_q, {
                     children: [
-                        (0, d.jsx)(r, {
+                        (0, d.jsx)(_r, {
                             children: u
                         }),
                         (0, d.jsx)(h.default, {
@@ -544,7 +544,7 @@ c.register('ndLzW', function(b, B) {
                                     }]
                                 });
                             },
-                            onChange: q => t(q.target.value),
+                            onChange: _q => t(_q.target.value),
                             value: s,
                             maxLength: v
                         })
@@ -553,43 +553,43 @@ c.register('ndLzW', function(b, B) {
             ]
         });
     };
-    const q = f.default.div(m || (m = o`
+    const _q = f.default.div(m || (m = o`
   margin-bottom: 8px;
 `)),
-        r = f.default.div(n || (n = o`
+        _r = f.default.div(n || (n = o`
   font-weight: ${ 0 };
   font-size: 18px;
 `), g.FontWeights.Bold);
-}), c.register('bNL33', function(b, w) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('7fQMx', function(b, c) {
+    _t(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('PjB0f'),
-        e = c('I9mdQ');
-    var f = a => {
+    var d = a('PMl60'),
+        e = a('Pkvp4');
+    var _f = _t => {
         (0, d.request)({
             url: '/api/users/update-information',
             method: 'post',
             data: {
-                changes: a.changes
+                changes: _t.changes
             },
             success: b => {
-                a.onSuccess && a.onSuccess(b), (0, e.default)({});
+                _t.onSuccess && _t.onSuccess(b), (0, e.default)({});
             },
             error: b => {
-                a.onError && a.onError(b);
+                _t.onError && _t.onError(b);
             }
         });
     };
-}), c.register('MHioT3', function(b, w) {
-    a(b.exports, 'informationTypes', function() {
-        return f;
-    }), a(b.exports, 'default', function() {
-        return y;
+}), a.register('Hi0/F0', function(b, c) {
+    _t(b.exports, 'informationTypes', function() {
+        return _f;
+    }), _t(b.exports, 'default', function() {
+        return _x;
     });
-    var d = c('6gioo'),
-        e = c('UnUp5');
-    const f = {
+    var d = a('csYze'),
+        e = a('YuT/D');
+    const _f = {
             email: 'EMAIL',
             password: 'PASSWORD',
             accountPassword: 'ACCOUNT_PASSWORD',
@@ -637,47 +637,47 @@ c.register('ndLzW', function(b, B) {
             organization: t,
             acceptsLatestPolicies: u,
             authenticated: v
-        } = w;
-    class x {
+        } = g;
+    class w {
         constructor() {
-            this.userExists = h, this.email = i, this.accountType = j, this.googleToken = k, this.firstName = l, this.lastName = m, this.password = n, this.schoolId = o, this.districtId = p, this.country = q, this.areaOfExpertise = r, this.gradeLevel = s, this.organization = t, this.acceptsLatestPolicies = u, this.authenticated = v, this.informationNeeded = e.observable.array([f.email]), this.reset = () => {
-                Object.keys(w).forEach(a => this[a] = w[a]), this.informationNeeded.replace([f.email]);
+            this.userExists = h, this.email = i, this.accountType = j, this.googleToken = k, this.firstName = l, this.lastName = m, this.password = n, this.schoolId = o, this.districtId = p, this.country = q, this.areaOfExpertise = r, this.gradeLevel = s, this.organization = t, this.acceptsLatestPolicies = u, this.authenticated = v, this.informationNeeded = e.observable.array([_f.email]), this.reset = () => {
+                Object.keys(g).forEach(_t => this[_t] = g[_t]), this.informationNeeded.replace([_f.email]);
             }, (0, e.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], x.prototype, 'userExists', void 0), (0, d.__decorate)([e.observable], x.prototype, 'email', void 0), (0, d.__decorate)([e.observable], x.prototype, 'accountType', void 0), (0, d.__decorate)([e.observable], x.prototype, 'googleToken', void 0), (0, d.__decorate)([e.observable], x.prototype, 'firstName', void 0), (0, d.__decorate)([e.observable], x.prototype, 'lastName', void 0), (0, d.__decorate)([e.observable], x.prototype, 'password', void 0), (0, d.__decorate)([e.observable], x.prototype, 'schoolId', void 0), (0, d.__decorate)([e.observable], x.prototype, 'districtId', void 0), (0, d.__decorate)([e.observable], x.prototype, 'country', void 0), (0, d.__decorate)([e.observable], x.prototype, 'areaOfExpertise', void 0), (0, d.__decorate)([e.observable], x.prototype, 'gradeLevel', void 0), (0, d.__decorate)([e.observable], x.prototype, 'organization', void 0), (0, d.__decorate)([e.observable], x.prototype, 'acceptsLatestPolicies', void 0), (0, d.__decorate)([e.observable], x.prototype, 'authenticated', void 0), (0, d.__decorate)([e.observable], x.prototype, 'informationNeeded', void 0), (0, d.__decorate)([e.action], x.prototype, 'reset', void 0);
-    var y = z;
-}), c.register('eMhMk1', function(b, w) {
-    a(b.exports, 'MAX_LENGTH_FIRST_NAME', function() {
-        return o;
-    }), a(b.exports, 'MAX_LENGTH_LAST_NAME', function() {
-        return p;
-    }), a(b.exports, 'Title', function() {
-        return q;
-    }), a(b.exports, 'default', function() {
-        return s;
+    (0, d.__decorate)([e.observable], w.prototype, 'userExists', void 0), (0, d.__decorate)([e.observable], w.prototype, 'email', void 0), (0, d.__decorate)([e.observable], w.prototype, 'accountType', void 0), (0, d.__decorate)([e.observable], w.prototype, 'googleToken', void 0), (0, d.__decorate)([e.observable], w.prototype, 'firstName', void 0), (0, d.__decorate)([e.observable], w.prototype, 'lastName', void 0), (0, d.__decorate)([e.observable], w.prototype, 'password', void 0), (0, d.__decorate)([e.observable], w.prototype, 'schoolId', void 0), (0, d.__decorate)([e.observable], w.prototype, 'districtId', void 0), (0, d.__decorate)([e.observable], w.prototype, 'country', void 0), (0, d.__decorate)([e.observable], w.prototype, 'areaOfExpertise', void 0), (0, d.__decorate)([e.observable], w.prototype, 'gradeLevel', void 0), (0, d.__decorate)([e.observable], w.prototype, 'organization', void 0), (0, d.__decorate)([e.observable], w.prototype, 'acceptsLatestPolicies', void 0), (0, d.__decorate)([e.observable], w.prototype, 'authenticated', void 0), (0, d.__decorate)([e.observable], w.prototype, 'informationNeeded', void 0), (0, d.__decorate)([e.action], w.prototype, 'reset', void 0);
+    var _x = w;
+}), a.register('d1g2b2', function(b, c) {
+    _t(b.exports, 'MAX_LENGTH_FIRST_NAME', function() {
+        return _o;
+    }), _t(b.exports, 'MAX_LENGTH_LAST_NAME', function() {
+        return _p;
+    }), _t(b.exports, 'Title', function() {
+        return _q;
+    }), _t(b.exports, 'default', function() {
+        return _s;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('/rcVD4'),
-        g = c('gSUVO'),
-        h = c('lmfrI'),
-        i = c('ExtIT'),
-        j = c('c6x8w'),
-        k = c('+qN5a2'),
-        l = c('MHioT3'),
-        m = c('PawcO1'),
-        n = c('KBr/41');
-    const o = 20,
-        p = 25,
-        q = a => (0, d.jsx)('div', {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('NmrDs1'),
+        g = a('b5kvC'),
+        h = a('sHRDd'),
+        i = a('fmVdR'),
+        j = a('ewwAh'),
+        k = a('pYmyT1'),
+        l = a('Hi0/F0'),
+        m = a('XQD071'),
+        n = a('dq4zH');
+    const _o = 20,
+        _p = 25,
+        _q = _t => (0, d.jsx)('div', {
             style: {
                 fontFamily: g.Fonts.SFPro,
                 fontWeight: g.FontWeights.Bold,
                 color: h.default.Black,
                 fontSize: 18
             },
-            children: a.children
+            children: _t.children
         }),
         r = {
             width: '100%',
@@ -685,26 +685,26 @@ c.register('ndLzW', function(b, B) {
             marginTop: 0,
             minHeight: 0
         };
-    var s = () => {
+    var _s = () => {
         const {
-            login: t
-        } = e.useContext(f.default), [u, v] = e.useState(t.firstName), [w, x] = e.useState(t.lastName), [y, z] = e.useState(t.password), A = () => {
+            login: _t
+        } = e.useContext(f.default), [u, v] = e.useState(_t.firstName), [w, x] = e.useState(_t.lastName), [y, z] = e.useState(_t.password), A = () => {
             let B = !0;
-            return t.informationNeeded.includes(l.informationTypes.firstName) && (u || (B = !1)), t.informationNeeded.includes(l.informationTypes.lastName) && (w || (B = !1)), t.informationNeeded.includes(l.informationTypes.accountPassword) && (!y || y.length < 6) && (B = !1), B;
+            return _t.informationNeeded.includes(l.informationTypes.firstName) && (u || (B = !1)), _t.informationNeeded.includes(l.informationTypes.lastName) && (w || (B = !1)), _t.informationNeeded.includes(l.informationTypes.accountPassword) && (!y || y.length < 6) && (B = !1), B;
         }, B = () => {
-            A() && (u && (t.firstName = u), w && (t.lastName = w), y && (t.password = y), t.informationNeeded.replace(t.informationNeeded.filter(t => t !== l.informationTypes.firstName && t !== l.informationTypes.lastName && t !== l.informationTypes.accountPassword)));
-        }, C = t.accountType === n.default.student;
+            A() && (u && (_t.firstName = u), w && (_t.lastName = w), y && (_t.password = y), _t.informationNeeded.replace(_t.informationNeeded.filter(_t => _t !== l.informationTypes.firstName && _t !== l.informationTypes.lastName && _t !== l.informationTypes.accountPassword)));
+        }, C = _t.accountType === n.default.student;
         return (0, d.jsxs)(d.Fragment, {
             children: [
-                (0, d.jsx)(q, {
+                (0, d.jsx)(_q, {
                     children: 'First Name'
                 }),
                 (0, d.jsx)(j.default, {
-                    maxLength: o,
+                    maxLength: _o,
                     style: r,
                     size: 'large',
                     placeholder: 'First Name here...',
-                    onChange: t => v(t.target.value),
+                    onChange: _t => v(_t.target.value),
                     onPressEnter: B,
                     autoFocus: !0
                 }),
@@ -713,24 +713,24 @@ c.register('ndLzW', function(b, B) {
                         height: 10
                     }
                 }),
-                (0, d.jsxs)(q, {
+                (0, d.jsxs)(_q, {
                     children: [
                         'Last ',
                         C ? 'Initial' : 'Name'
                     ]
                 }),
                 (0, d.jsx)(j.default, {
-                    maxLength: C ? 1 : p,
+                    maxLength: C ? 1 : _p,
                     style: r,
                     size: 'large',
                     placeholder: `Last ${ C ? 'Initial' : 'Name' } here...`,
-                    onChange: t => x(t.target.value),
+                    onChange: _t => x(_t.target.value),
                     onPressEnter: B
                 }),
-                t.informationNeeded.includes(l.informationTypes.accountPassword) && (0, d.jsxs)(d.Fragment, {
+                _t.informationNeeded.includes(l.informationTypes.accountPassword) && (0, d.jsxs)(d.Fragment, {
                     children: [
                         (0, d.jsx)(i.default, {}),
-                        (0, d.jsx)(q, {
+                        (0, d.jsx)(_q, {
                             children: 'Password'
                         }),
                         (0, d.jsx)('div', {
@@ -743,7 +743,7 @@ c.register('ndLzW', function(b, B) {
                         }),
                         (0, d.jsx)(j.default.Password, {
                             style: r,
-                            onChange: t => z(t.target.value),
+                            onChange: _t => z(_t.target.value),
                             placeholder: 'Password here...',
                             size: 'large',
                             maxLength: 96,
@@ -772,31 +772,31 @@ c.register('ndLzW', function(b, B) {
             ]
         });
     };
-}), c.register('/rcVD4', function(b, d) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('NmrDs1', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('uPP4W'),
-        e = c('J7Y504');
-    var f = d.createContext(e.default);
-}), c.register('J7Y504', function(b, d) {
-    a(b.exports, 'default', function() {
-        return f;
+    var d = a('LEQ5w'),
+        e = a('ha/3p1');
+    var _f = d.createContext(e.default);
+}), a.register('ha/3p1', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('MHioT3'),
-        e = c('Ek+Wy4');
-    var f = {
+    var d = a('Hi0/F0'),
+        e = a('5ka2e1');
+    var _f = {
         login: new(0, d.default)(),
         navigation: new(0, e.default)()
     };
-}), c.register('Ek+Wy4', function(b, d) {
-    a(b.exports, 'default', function() {
-        return s;
+}), a.register('5ka2e1', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _r;
     });
-    var d = c('6gioo'),
-        e = c('UnUp5');
+    var d = a('csYze'),
+        e = a('YuT/D');
     const f = {
-            currentStage: c('bDt8q4').default.email,
+            currentStage: a('AUbBm1').default.email,
             emailSignInBlocked: !1,
             creatingAccount: !1,
             loggingIn: !1,
@@ -818,50 +818,50 @@ c.register('ndLzW', function(b, B) {
             classJoiningId: n,
             classJoiningName: o,
             classJoiningTeacherName: p
-        } = q;
-    class r {
+        } = f;
+    class q {
         constructor() {
             this.currentStage = g, this.emailSignInBlocked = h, this.creatingAccount = i, this.loggingIn = j, this.updatingAccountInformation = k, this.loginError = l, this.redirectUri = m, this.classJoiningId = n, this.classJoiningName = o, this.classJoiningTeacherName = p, this.reset = () => {
-                Object.keys(q).forEach(a => this[a] = q[a]);
+                Object.keys(f).forEach(_i => this[_i] = f[_i]);
             }, (0, e.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], r.prototype, 'currentStage', void 0), (0, d.__decorate)([e.observable], r.prototype, 'emailSignInBlocked', void 0), (0, d.__decorate)([e.observable], r.prototype, 'creatingAccount', void 0), (0, d.__decorate)([e.observable], r.prototype, 'loggingIn', void 0), (0, d.__decorate)([e.observable], r.prototype, 'updatingAccountInformation', void 0), (0, d.__decorate)([e.observable], r.prototype, 'loginError', void 0), (0, d.__decorate)([e.observable], r.prototype, 'redirectUri', void 0), (0, d.__decorate)([e.observable], r.prototype, 'classJoiningId', void 0), (0, d.__decorate)([e.observable], r.prototype, 'classJoiningName', void 0), (0, d.__decorate)([e.observable], r.prototype, 'classJoiningTeacherName', void 0), (0, d.__decorate)([e.action], r.prototype, 'reset', void 0);
-    var s = t;
-}), c.register('bDt8q4', function(b, c) {
+    (0, d.__decorate)([e.observable], q.prototype, 'currentStage', void 0), (0, d.__decorate)([e.observable], q.prototype, 'emailSignInBlocked', void 0), (0, d.__decorate)([e.observable], q.prototype, 'creatingAccount', void 0), (0, d.__decorate)([e.observable], q.prototype, 'loggingIn', void 0), (0, d.__decorate)([e.observable], q.prototype, 'updatingAccountInformation', void 0), (0, d.__decorate)([e.observable], q.prototype, 'loginError', void 0), (0, d.__decorate)([e.observable], q.prototype, 'redirectUri', void 0), (0, d.__decorate)([e.observable], q.prototype, 'classJoiningId', void 0), (0, d.__decorate)([e.observable], q.prototype, 'classJoiningName', void 0), (0, d.__decorate)([e.observable], q.prototype, 'classJoiningTeacherName', void 0), (0, d.__decorate)([e.action], q.prototype, 'reset', void 0);
+    var _r = q;
+}), a.register('AUbBm1', function(b, c) {
     let d;
     var e;
-    a(b.exports, 'default', function() {
-        return f;
+    _i(b.exports, 'default', function() {
+        return _f;
     }), (e = d || (d = {})).email = 'email', e.password = 'password', e.accountType = 'accountType', e.studentSpecificInfo = 'studentSpecificInfo', e.nameAndPassword = 'nameAndPassword', e.school = 'school', e.educatorSpecificInfo = 'educatorSpecificInfo', e.nonSchoolSpecificInfo = 'nonSchoolSpecificInfo', e.acceptPolicies = 'acceptPolicies', e.verifyClass = 'verifyClass';
-    var f = g;
-}), c.register('+qN5a2', function(b, d) {
-    a(b.exports, 'default', function() {
-        return g;
+    var _f = d;
+}), a.register('pYmyT1', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('Vlfxs'),
-        f = c('IsmrL');
-    var g = (0, e.observer)(a => (0, d.jsx)(f.default, {
-        disabled: a.disabled,
-        size: a.size || 'middle',
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('2x11J'),
+        f = a('ulE4q');
+    var _g = (0, e.observer)(_i => (0, d.jsx)(f.default, {
+        disabled: _i.disabled,
+        size: _i.size || 'middle',
         type: 'primary',
-        onClick: a.onClick,
+        onClick: _i.onClick,
         style: Object.assign({
             width: '100%'
-        }, a.style),
-        loading: a.loading,
-        children: a.children
+        }, _i.style),
+        loading: _i.loading,
+        children: _i.children
     }));
-}), c.register('PawcO1', function(b, d) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('XQD071', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('vKGUd1');
-    var f = a => (0, d.jsxs)('div', {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('aFzmN2');
+    var _f = _i => (0, d.jsxs)('div', {
         style: {
             justifyContent: 'space-between'
         },
@@ -869,20 +869,20 @@ c.register('ndLzW', function(b, B) {
         children: [
             (0, d.jsx)('div', {}),
             (0, d.jsx)(e.default, {
-                link: a.link
+                link: _i.link
             })
         ]
     });
-}), c.register('vKGUd1', function(b, d) {
-    a(b.exports, 'default', function() {
-        return h;
+}), a.register('aFzmN2', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('nx8MB1'),
-        f = c('IsmrL'),
-        g = c('YfLmS');
-    var h = a => (0, d.jsx)(g.default, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('13V8F2'),
+        f = a('ulE4q'),
+        g = a('ijg0s');
+    var _h = _i => (0, d.jsx)(g.default, {
         title: 'Learn more on why we collect this data',
         children: (0, d.jsx)(f.default, {
             style: {
@@ -892,31 +892,31 @@ c.register('ndLzW', function(b, B) {
             },
             shape: 'circle',
             icon: (0, d.jsx)(e.default, {}),
-            href: a.link || '',
+            href: _i.link || '',
             target: '_blank'
         })
     });
-}), c.register('nx8MB1', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('13V8F2', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('84zdK1'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('5uH+S'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'LockOutlined';
-    var i = e.forwardRef(h);
-}), c.register('84zdK1', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('5uH+S', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -933,28 +933,28 @@ c.register('ndLzW', function(b, B) {
         name: 'lock',
         theme: 'outlined'
     };
-}), c.register('KBr/41', function(b, c) {
+}), a.register('dq4zH', function(b, c) {
     let d;
     var e;
-    a(b.exports, 'default', function() {
-        return f;
+    _n(b.exports, 'default', function() {
+        return _f;
     }), (e = d || (d = {})).educator = 'educator', e.student = 'student', e.guardian = 'guardian', e.nonSchool = 'nonSchool';
-    var f = g;
-}), c.register('REfzd', function(b, q) {
-    a(b.exports, 'default', function() {
-        return m;
+    var _f = d;
+}), a.register('tBKoe', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _m;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('c6x8w'),
-        g = c('cR5QE'),
-        h = c('HQsyw'),
-        i = c('y7zuv'),
-        j = c('MxXR+'),
-        k = c('PjB0f'),
-        l = c('iYEuk12');
-    var m = () => {
-        const [n, o] = e.useState((0, k.getUser)().email), [p, q] = e.useState(!1), [r, s] = e.useState(!1), t = () => q(!p), u = (0, k.getUser)().passwordless;
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('ewwAh'),
+        g = a('YRlpt'),
+        h = a('/5bVc'),
+        i = a('J7SSP'),
+        j = a('iwgXa'),
+        k = a('PMl60'),
+        l = a('2HvvA11');
+    var _m = () => {
+        const [_n, o] = e.useState((0, k.getUser)().email), [p, q] = e.useState(!1), [r, s] = e.useState(!1), t = () => q(!p), u = (0, k.getUser)().passwordless;
         return (0, d.jsxs)(d.Fragment, {
             children: [
                 (0, d.jsx)(h.Description, {
@@ -962,7 +962,7 @@ c.register('ndLzW', function(b, B) {
                 }),
                 (0, d.jsx)(f.default, {
                     readOnly: !0,
-                    value: n,
+                    value: _n,
                     onFocus: t
                 }),
                 (0, d.jsxs)('div', {
@@ -983,11 +983,11 @@ c.register('ndLzW', function(b, B) {
                     ]
                 }),
                 p && (0, d.jsx)(i.default, {
-                    onEmailChange: n => {
+                    onEmailChange: _n => {
                         g.default.success({
                             title: 'Email changed!',
-                            content: `Email changed to "${ n }"`
-                        }), o(n), q(!1);
+                            content: `Email changed to "${ _n }"`
+                        }), o(_n), q(!1);
                     },
                     close: t
                 }),
@@ -999,49 +999,49 @@ c.register('ndLzW', function(b, B) {
             ]
         });
     };
-}), c.register('y7zuv', function(b, t) {
-    a(b.exports, 'default', function() {
-        return q;
+}), a.register('J7SSP', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _q;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('IsmrL'),
-        g = c('c6x8w'),
-        h = c('cR5QE'),
-        i = c('gSUVO'),
-        j = c('6jNxr'),
-        k = c('lmfrI'),
-        l = c('nHGjF'),
-        m = c('PjB0f'),
-        n = c('I9mdQ');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('ulE4q'),
+        g = a('ewwAh'),
+        h = a('YRlpt'),
+        i = a('b5kvC'),
+        j = a('Jhh4y'),
+        k = a('sHRDd'),
+        l = a('uvADe0'),
+        m = a('PMl60'),
+        n = a('Pkvp4');
     let o;
     var p;
     (p = o || (o = {})).newEmail = 'newEmail', p.code = 'code';
-    var q = a => {
-        const [r, s] = e.useState(o.newEmail), [t, u] = e.useState(''), [v, w] = e.useState(!1), [x, y] = e.useState(!1), [z, A] = e.useState(''), [B, C] = e.useState(''), [D, E] = e.useState(null), F = a => u(a.target.value.toLowerCase()), G = t && (0, j.validateEmail)(t) && t !== (0, m.getUser)().email, H = () => {
+    var _q = _n => {
+        const [r, s] = e.useState(o.newEmail), [t, u] = e.useState(''), [v, w] = e.useState(!1), [x, y] = e.useState(!1), [z, A] = e.useState(''), [B, C] = e.useState(''), [D, E] = e.useState(null), F = _n => u(_n.target.value.toLowerCase()), G = t && (0, j.validateEmail)(t) && t !== (0, m.getUser)().email, H = () => {
             G && (w(!0), (0, m.request)({
                 url: '/api/users/register/email-info',
                 method: 'post',
                 data: {
                     email: t
                 },
-                success: a => {
-                    a.accountExists ? (E(`Account already exists with email "${ t }"`), w(!1)) : (0, m.request)({
+                success: _n => {
+                    _n.accountExists ? (E(`Account already exists with email "${ t }"`), w(!1)) : (0, m.request)({
                         url: '/api/users/requestEmailChange',
                         method: 'post',
                         data: {
                             emailToChangeTo: t
                         },
-                        success: a => {
-                            A(a.encryptedToken), s(o.code);
+                        success: _n => {
+                            A(_n.encryptedToken), s(o.code);
                         },
-                        error: a => E(a),
+                        error: _n => E(_n),
                         both: () => w(!1)
                     });
                 },
                 error: () => w(!1)
             }));
-        }, I = a => C(a.target.value), J = !!B, K = () => {
+        }, I = _n => C(_n.target.value), J = !!B, K = () => {
             J && (y(!0), (0, m.request)({
                 url: '/api/users/changeEmail',
                 method: 'post',
@@ -1051,10 +1051,10 @@ c.register('ndLzW', function(b, B) {
                 },
                 success: () => {
                     (0, n.default)({
-                        onSuccess: () => a.onEmailChange(t)
+                        onSuccess: () => _n.onEmailChange(t)
                     });
                 },
-                error: a => E(a),
+                error: _n => E(_n),
                 both: () => y(!1)
             }));
         };
@@ -1065,7 +1065,7 @@ c.register('ndLzW', function(b, B) {
             },
             footer: null,
             open: !0,
-            onCancel: a.close,
+            onCancel: _n.close,
             closable: !0,
             children: [
                 r === o.newEmail ? (0, d.jsxs)(d.Fragment, {
@@ -1151,36 +1151,36 @@ c.register('ndLzW', function(b, B) {
             ]
         });
     };
-}), c.register('nHGjF', function(b, q) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('uvADe0', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('bPH7V');
-    var f = a => a.error ? (0, d.jsx)(e.default, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('NIZyA');
+    var _f = _n => _n.error ? (0, d.jsx)(e.default, {
         message: 'Error',
-        style: a.style,
+        style: _n.style,
         type: 'error',
-        description: a.error && a.error.message && a.error.message.text ? a.error.message.text : 'string' == typeof a.error ? a.error : 'Unknown Error. Please try again.',
+        description: _n.error && _n.error.message && _n.error.message.text ? _n.error.message.text : 'string' == typeof _n.error ? _n.error : 'Unknown Error. Please try again.',
         showIcon: !0
     }) : null;
-}), c.register('XjjVZ', function(b, q) {
-    a(b.exports, 'default', function() {
-        return m;
+}), a.register('hRYSf', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _m;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('pvZv3'),
-        f = c('gSUVO'),
-        g = c('5qDBV'),
-        h = c('ExtIT'),
-        i = c('cR5QE'),
-        j = c('PjB0f'),
-        k = c('iYEuk12'),
-        l = c('q721a');
-    var m = () => {
-        const n = n => {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('e7pFf'),
+        f = a('b5kvC'),
+        g = a('nvxPL'),
+        h = a('fmVdR'),
+        i = a('YRlpt'),
+        j = a('PMl60'),
+        k = a('2HvvA11'),
+        l = a('gs4MT');
+    var _m = () => {
+        const _n = _n => {
                 (0, j.request)({
                     url: '/api/user/reset-account-type',
                     success: () => {
@@ -1189,7 +1189,7 @@ c.register('ndLzW', function(b, B) {
                             both: () => {
                                 i.default.success({
                                     title: 'One more thing!',
-                                    content: `When you log back in, choose "${ n }" as your role.`,
+                                    content: `When you log back in, choose "${ _n }" as your role.`,
                                     onOk: () => {
                                         window.location.href = l.LOGIN;
                                     }
@@ -1227,18 +1227,18 @@ c.register('ndLzW', function(b, B) {
                             style: {
                                 marginTop: 10
                             },
-                            children: p.map(n => (0, d.jsxs)('div', {
+                            children: p.map(_n => (0, d.jsxs)('div', {
                                 children: [
                                     (0, d.jsxs)('b', {
                                         children: [
-                                            n[0],
+                                            _n[0],
                                             ':'
                                         ]
                                     }),
                                     ' ',
-                                    n[1]
+                                    _n[1]
                                 ]
-                            }, n[0]))
+                            }, _n[0]))
                         }),
                         (0, d.jsx)('div', {
                             children: (0, d.jsxs)(k.default, {
@@ -1247,12 +1247,12 @@ c.register('ndLzW', function(b, B) {
                                         title: 'Are you sure you want to switch to an educator account?',
                                         content: 'Doing so will remove you from all your current classes.',
                                         okText: 'Yes',
-                                        onOk: () => n('Educator')
+                                        onOk: () => _n('Educator')
                                     }): i.default.confirm({
                                         title: 'Are you sure you want to switch to a student account?',
                                         content: 'Many educator features are not available with student accounts.',
                                         okText: 'Yes',
-                                        onOk: () => n('Student')
+                                        onOk: () => _n('Student')
                                     });
                                 },
                                 children: [
@@ -1273,11 +1273,11 @@ c.register('ndLzW', function(b, B) {
                                 children: (0, d.jsx)(k.default, {
                                     onClick: () => (0, j.request)({
                                         url: '/api/user/request-info',
-                                        success: n => {
+                                        success: _n => {
                                             i.default.info({
                                                 title: 'Information',
                                                 content: (0, d.jsx)('div', {
-                                                    children: Object.keys(n).map(o => (0, d.jsxs)('div', {
+                                                    children: Object.keys(_n).map(o => (0, d.jsxs)('div', {
                                                         children: [
                                                             (0, d.jsx)('span', {
                                                                 style: {
@@ -1287,7 +1287,7 @@ c.register('ndLzW', function(b, B) {
                                                             }),
                                                             ':',
                                                             ' ',
-                                                            n[o],
+                                                            _n[o],
                                                             (0, d.jsx)('br', {})
                                                         ]
                                                     }, `info-item-${ o }`))
@@ -1311,333 +1311,333 @@ c.register('ndLzW', function(b, B) {
             ]
         });
     };
-}), c.register('5qDBV', function(b, q) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('nvxPL', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _d;
     });
-    var d = c('0HASa').default;
-}), c.register('0HASa', function(q, r) {
-    a(q.exports, 'default', function() {
-        return u;
+    var _d = a('hj+X0').default;
+}), a.register('hj+X0', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _u;
     });
-    var d = c('sbeTE'),
-        e = c('VAIs1'),
-        f = c('UbR+H'),
-        g = c('uPP4W'),
-        h = c('8N2Yw'),
-        i = c('xORK+'),
-        j = c('qEw51'),
-        k = c('XiKtc'),
-        l = c('Cpebg'),
-        m = c('kLJIY'),
-        n = c('ysccP'),
-        o = c('26hV8');
-    const p = g.forwardRef((a, c) => {
+    var d = a('n/s4T'),
+        e = a('JrtKP'),
+        f = a('so96J'),
+        g = a('LEQ5w'),
+        h = a('Ug51y0'),
+        i = a('sWKBM'),
+        j = a('1P5ls'),
+        k = a('GaHpv'),
+        l = a('CMcLV'),
+        m = a('lWjQ8'),
+        n = a('TRVr5'),
+        o = a('+aoQo');
+    const p = g.forwardRef((_m, a) => {
         const {
             getPrefixCls: q,
             direction: r
         } = g.useContext(j.ConfigContext), s = g.useContext(m.default), {
             prefixCls: t,
-            className: u,
+            className: _u,
             rootClassName: v,
             bordered: w = !0,
             ghost: x,
             size: y,
             expandIconPosition: z = 'start'
-        } = A, B = y || s || 'middle', C = q('collapse', t), D = q(), [E, F] = (0, o.default)(C), G = g.useMemo(() => 'left' === z ? 'start' : 'right' === z ? 'end' : z, [z]), H = b(e)(`${ C }-icon-position-${ G }`, {
-            [`${ C }-borderless`]: !w,
-            [`${ C }-rtl`]: 'rtl' === r,
-            [`${ C }-ghost`]: !!x,
-            [`${ C }-${ B }`]: 'middle' !== B
-        }, u, v, F), I = Object.assign(Object.assign({}, (0, k.default)(D)), {
+        } = _m, A = y || s || 'middle', B = q('collapse', t), C = q(), [D, E] = (0, o.default)(B), F = g.useMemo(() => 'left' === z ? 'start' : 'right' === z ? 'end' : z, [z]), G = _I(e)(`${ B }-icon-position-${ F }`, {
+            [`${ B }-borderless`]: !w,
+            [`${ B }-rtl`]: 'rtl' === r,
+            [`${ B }-ghost`]: !!x,
+            [`${ B }-${ A }`]: 'middle' !== A
+        }, _u, v, E), H = Object.assign(Object.assign({}, (0, k.default)(C)), {
             motionAppear: !1,
-            leavedClassName: `${ C }-content-hidden`
+            leavedClassName: `${ B }-content-hidden`
         });
-        return E(g.createElement(f.default, Object.assign({
-            ref: c,
-            openMotion: I
-        }, (0, i.default)(A, ['rootClassName']), {
+        return D(g.createElement(f.default, Object.assign({
+            ref: a,
+            openMotion: H
+        }, (0, i.default)(_m, ['rootClassName']), {
             expandIcon: function() {
-                let J = v.length > 0 && void 0 !== v[0] ? v[0] : {};
+                let I = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
                 const {
-                    expandIcon: K
-                } = L, M = K ? K(J) : g.createElement(d.default, {
-                    rotate: J.isActive ? 90 : void 0
+                    expandIcon: J
+                } = _m, K = J ? J(I) : g.createElement(d.default, {
+                    rotate: I.isActive ? 90 : void 0
                 });
-                return (0, l.cloneElement)(M, () => ({
-                    className: b(e)(M.props.className, `${ C }-arrow`)
+                return (0, l.cloneElement)(K, () => ({
+                    className: _I(e)(K.props.className, `${ B }-arrow`)
                 }));
             },
-            prefixCls: C,
-            className: H
+            prefixCls: B,
+            className: G
         }), (() => {
             const {
-                children: J
-            } = K;
-            return (0, h.default)(J).map((K, J) => {
-                var L;
-                if (null === (L = K.props) || void 0 === L ? void 0 : L.disabled) {
-                    const M = K.key || String(J),
+                children: _I
+            } = _m;
+            return (0, h.default)(_I).map((_m, _I) => {
+                var J;
+                if (null === (J = _m.props) || void 0 === J ? void 0 : J.disabled) {
+                    const K = _m.key || String(_I),
                         {
-                            disabled: N,
-                            collapsible: O
-                        } = K.props,
-                        P = Object.assign(Object.assign({}, (0, i.default)(K.props, ['disabled'])), {
-                            key: M,
-                            collapsible: null != O ? O : N ? 'disabled' : void 0
+                            disabled: L,
+                            collapsible: M
+                        } = _m.props,
+                        N = Object.assign(Object.assign({}, (0, i.default)(_m.props, ['disabled'])), {
+                            key: K,
+                            collapsible: null != M ? M : L ? 'disabled' : void 0
                         });
-                    return (0, l.cloneElement)(K, P);
+                    return (0, l.cloneElement)(_m, N);
                 }
-                return K;
+                return _m;
             });
         })()));
     });
     var q = Object.assign(p, {
         Panel: n.default
     });
-}), c.register('UbR+H', function(b, n) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('so96J', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('PkJIv'),
-        e = d.default;
+    var d = a('Ox8Eb'),
+        _e = d.default;
     d.default.Panel;
-}), c.register('PkJIv', function(n, o) {
-    a(n.exports, 'default', function() {
-        return s;
+}), a.register('Ox8Eb', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _t;
     });
-    var d = c('bOoWo'),
-        e = c('WtrvT'),
-        f = c('iwiaz'),
-        g = c('VAIs1'),
-        h = c('8N2Yw'),
-        i = c('xgR9K'),
-        j = c('uPP4W'),
-        k = c('cY6EP');
+    var d = a('7DbAz'),
+        e = a('sIY+p'),
+        f = a('3wJIw'),
+        g = a('JrtKP'),
+        h = a('Ug51y0'),
+        i = a('TTc70'),
+        j = a('LEQ5w'),
+        k = a('rrzSK');
 
-    function l(a) {
-        var m = n;
-        if (!Array.isArray(m)) {
-            var o = (0, f.default)(m);
-            m = 'number' === o || 'string' === o ? [m] : [];
+    function l(_m) {
+        var n = _m;
+        if (!Array.isArray(n)) {
+            var o = (0, f.default)(n);
+            n = 'number' === o || 'string' === o ? [n] : [];
         }
-        return m.map(function(n) {
-            return String(n);
+        return n.map(function(o) {
+            return String(o);
         });
     }
-    var m = b(j).forwardRef(function(a, c) {
-            var n = a.prefixCls,
-                o = void 0 === n ? 'rc-collapse' : n,
-                p = a.destroyInactivePanel,
-                q = void 0 !== p && p,
-                r = a.style,
-                s = a.accordion,
-                t = a.className,
-                u = a.children,
-                v = a.collapsible,
-                w = a.openMotion,
-                x = a.expandIcon,
-                y = a.activeKey,
-                z = a.defaultActiveKey,
-                A = a.onChange,
-                B = b(g)(o, t),
-                C = (0, i.default)([], {
-                    value: y,
-                    onChange: function(a) {
-                        return null == A ? void 0 : A(a);
+    var l = _W(j).forwardRef(function(m, n) {
+            var o = m.prefixCls,
+                p = void 0 === o ? 'rc-collapse' : o,
+                q = m.destroyInactivePanel,
+                r = void 0 !== q && q,
+                s = m.style,
+                _t = m.accordion,
+                u = m.className,
+                v = m.children,
+                w = m.collapsible,
+                x = m.openMotion,
+                y = m.expandIcon,
+                z = m.activeKey,
+                A = m.defaultActiveKey,
+                B = m.onChange,
+                C = _W(g)(p, u),
+                D = (0, i.default)([], {
+                    value: z,
+                    onChange: function(E) {
+                        return null == B ? void 0 : B(E);
                     },
-                    defaultValue: z,
-                    postState: l
+                    defaultValue: A,
+                    postState: _Q
                 }),
-                D = (0, d.default)(C, 2),
-                E = D[0],
-                F = D[1],
-                G = (0, h.default)(u).map(function(a, c) {
-                    if (!a)
+                E = (0, d.default)(D, 2),
+                F = E[0],
+                G = E[1],
+                H = (0, h.default)(v).map(function(I, J) {
+                    if (!I)
                         return null;
-                    var H = a.key || String(c),
-                        I = a.props,
-                        J = I.header,
-                        K = I.headerClass,
-                        L = I.destroyInactivePanel,
-                        M = I.collapsible,
-                        N = I.onItemClick,
-                        O = !1;
-                    O = s ? E[0] === H : E.indexOf(H) > -1;
-                    var P = null != M ? M : v,
-                        Q = {
-                            key: H,
-                            panelKey: H,
-                            header: J,
-                            headerClass: K,
-                            isActive: O,
-                            prefixCls: o,
-                            destroyInactivePanel: null != L ? L : q,
-                            openMotion: w,
-                            accordion: s,
-                            children: a.props.children,
-                            onItemClick: function(a) {
-                                'disabled' !== P && (! function(a) {
-                                    F(function() {
-                                        return s ? E[0] === a ? [] : [a] : E.indexOf(a) > -1 ? E.filter(function(b) {
-                                            return b !== a;
-                                        }) : [].concat((0, e.default)(E), [a]);
+                    var K = I.key || String(J),
+                        L = I.props,
+                        M = L.header,
+                        N = L.headerClass,
+                        O = L.destroyInactivePanel,
+                        P = L.collapsible,
+                        _Q = L.onItemClick,
+                        R = !1;
+                    R = _t ? F[0] === K : F.indexOf(K) > -1;
+                    var S = null != P ? P : w,
+                        T = {
+                            key: K,
+                            panelKey: K,
+                            header: M,
+                            headerClass: N,
+                            isActive: R,
+                            prefixCls: p,
+                            destroyInactivePanel: null != O ? O : r,
+                            openMotion: x,
+                            accordion: _t,
+                            children: I.props.children,
+                            onItemClick: function(U) {
+                                'disabled' !== S && (! function(V) {
+                                    G(function() {
+                                        return _t ? F[0] === V ? [] : [V] : F.indexOf(V) > -1 ? F.filter(function(_W) {
+                                            return _W !== V;
+                                        }) : [].concat((0, e.default)(F), [V]);
                                     });
-                                }(a), null == N || N(a));
+                                }(U), null == _Q || _Q(U));
                             },
-                            expandIcon: x,
-                            collapsible: P
+                            expandIcon: y,
+                            collapsible: S
                         };
-                    return 'string' == typeof a.type ? a : (Object.keys(Q).forEach(function(a) {
-                        void 0 === Q[a] && delete Q[a];
-                    }), b(j).cloneElement(a, Q));
+                    return 'string' == typeof I.type ? I : (Object.keys(T).forEach(function(U) {
+                        void 0 === T[U] && delete T[U];
+                    }), _b(j).cloneElement(I, T));
                 });
-            return b(j).createElement('div', {
-                ref: c,
-                className: B,
-                style: r,
-                role: s ? 'tablist' : void 0
-            }, G);
+            return _b(j).createElement('div', {
+                ref: n,
+                className: C,
+                style: s,
+                role: _t ? 'tablist' : void 0
+            }, H);
         }),
-        n = Object.assign(m, {
+        m = Object.assign(l, {
             Panel: k.default
         });
-}), c.register('bOoWo', function(b, d) {
-    a(b.exports, 'default', function() {
-        return h;
+}), a.register('7DbAz', function(_b, c) {
+    _i(_b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('xwjsD'),
-        e = c('Yb+Bf'),
-        f = c('o35ej'),
-        g = c('X3Kmt');
+    var d = a('sHYTk'),
+        e = a('MNRrk'),
+        f = a('Ilmqj'),
+        g = a('q+u9s');
 
-    function h(a, b) {
-        return (0, d.default)(a) || (0, e.default)(a, b) || (0, f.default)(a, b) || (0, g.default)();
+    function _h(_i, j) {
+        return (0, d.default)(_i) || (0, e.default)(_i, j) || (0, f.default)(_i, j) || (0, g.default)();
     }
-}), c.register('xwjsD', function(b, c) {
-    function d(a) {
-        if (Array.isArray(a))
-            return a;
+}), a.register('sHYTk', function(b, c) {
+    function d(e) {
+        if (Array.isArray(e))
+            return e;
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _e(b.exports, 'default', function() {
+        return _d;
     });
-}), c.register('Yb+Bf', function(b, c) {
-    function d(a, b) {
-        var e = null == a ? null : 'undefined' != typeof Symbol && a[Symbol.iterator] || a['@@iterator'];
-        if (null != e) {
-            var f, g, h = [],
-                i = !0,
-                j = !1;
+}), a.register('MNRrk', function(b, c) {
+    function _d(_e, f) {
+        var g = null == _e ? null : 'undefined' != typeof Symbol && _e[Symbol.iterator] || _e['@@iterator'];
+        if (null != g) {
+            var h, i, j = [],
+                k = !0,
+                l = !1;
             try {
-                for (e = e.call(a); !(i = (f = e.next()).done) && (h.push(f.value), !b || h.length !== b); i = !0);
-            } catch (a) {
-                j = !0, g = a;
+                for (g = g.call(_e); !(k = (h = g.next()).done) && (j.push(h.value), !f || j.length !== f); k = !0);
+            } catch (_e) {
+                l = !0, i = _e;
             } finally {
                 try {
-                    i || null == e.return || e.return();
+                    k || null == g.return || g.return();
                 } finally {
-                    if (j)
-                        throw g;
+                    if (l)
+                        throw i;
                 }
             }
-            return h;
+            return j;
         }
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _f(b.exports, 'default', function() {
+        return _c;
     });
-}), c.register('o35ej', function(b, d) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('Ilmqj', function(b, _c) {
+    _f(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('083f7');
+    var d = a('YW0Mt');
 
-    function e(a, b) {
-        if (a) {
-            if ('string' == typeof a)
-                return (0, d.default)(a, b);
-            var f = Object.prototype.toString.call(a).slice(8, -1);
-            return 'Object' === f && a.constructor && (f = a.constructor.name), 'Map' === f || 'Set' === f ? Array.from(a) : 'Arguments' === f || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(f) ? (0, d.default)(a, b) : void 0;
+    function _e(_f, g) {
+        if (_f) {
+            if ('string' == typeof _f)
+                return (0, d.default)(_f, g);
+            var h = Object.prototype.toString.call(_f).slice(8, -1);
+            return 'Object' === h && _f.constructor && (h = _f.constructor.name), 'Map' === h || 'Set' === h ? Array.from(_f) : 'Arguments' === h || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(h) ? (0, d.default)(_f, g) : void 0;
         }
     }
-}), c.register('083f7', function(b, c) {
-    function d(a, b) {
-        (null == b || b > a.length) && (b = a.length);
-        for (var e = 0, f = new Array(b); e < b; e++)
-            f[e] = a[e];
-        return f;
+}), a.register('YW0Mt', function(b, c) {
+    function d(e, f) {
+        (null == f || f > e.length) && (f = e.length);
+        for (var g = 0, h = new Array(f); g < f; g++)
+            h[g] = e[g];
+        return h;
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-}), c.register('X3Kmt', function(b, c) {
-    function d() {
+}), a.register('q+u9s', function(b, c) {
+    function _d() {
         throw new TypeError('Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.');
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _i(b.exports, 'default', function() {
+        return _c;
     });
-}), c.register('WtrvT', function(b, d) {
-    a(b.exports, 'default', function() {
-        return h;
+}), a.register('sIY+p', function(b, _c) {
+    _i(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('ViH3b'),
-        e = c('HvQE/'),
-        f = c('o35ej'),
-        g = c('7rjEe');
+    var d = a('eO3oC'),
+        e = a('l0sWy'),
+        f = a('Ilmqj'),
+        g = a('fFMxf');
 
-    function h(a) {
-        return (0, d.default)(a) || (0, e.default)(a) || (0, f.default)(a) || (0, g.default)();
+    function _h(_i) {
+        return (0, d.default)(_i) || (0, e.default)(_i) || (0, f.default)(_i) || (0, g.default)();
     }
-}), c.register('ViH3b', function(b, d) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('eO3oC', function(b, c) {
+    _f(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('083f7');
+    var d = a('YW0Mt');
 
-    function e(a) {
-        if (Array.isArray(a))
-            return (0, d.default)(a);
+    function _e(_f) {
+        if (Array.isArray(_f))
+            return (0, d.default)(_f);
     }
-}), c.register('HvQE/', function(b, c) {
-    function d(a) {
-        if ('undefined' != typeof Symbol && null != a[Symbol.iterator] || null != a['@@iterator'])
-            return Array.from(a);
+}), a.register('l0sWy', function(b, c) {
+    function d(e) {
+        if ('undefined' != typeof Symbol && null != e[Symbol.iterator] || null != e['@@iterator'])
+            return Array.from(e);
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _e(b.exports, 'default', function() {
+        return _d;
     });
-}), c.register('7rjEe', function(b, c) {
-    function d() {
+}), a.register('fFMxf', function(b, c) {
+    function _d() {
         throw new TypeError('Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.');
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _e(b.exports, 'default', function() {
+        return _d;
     });
-}), c.register('iwiaz', function(b, c) {
-    function d(a) {
-        return d = 'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator ? function(a) {
-            return typeof a;
-        } : function(a) {
-            return a && 'function' == typeof Symbol && a.constructor === Symbol && a !== Symbol.prototype ? 'symbol' : typeof a;
-        }, d(a);
+}), a.register('3wJIw', function(b, c) {
+    function _d(_e) {
+        return _d = 'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator ? function(f) {
+            return typeof f;
+        } : function(f) {
+            return f && 'function' == typeof Symbol && f.constructor === Symbol && f !== Symbol.prototype ? 'symbol' : typeof f;
+        }, _d(_e);
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _n(b.exports, 'default', function() {
+        return _b;
     });
-}), c.register('cY6EP', function(n, o) {
-    a(n.exports, 'default', function() {
-        return m;
+}), a.register('rrzSK', function(_b, c) {
+    _n(_b.exports, 'default', function() {
+        return _m;
     });
-    var d = c('WfHYJ2'),
-        e = c('ShjA01'),
-        f = c('UBC/h'),
-        g = c('VAIs1'),
-        h = c('AIfHy'),
-        i = c('8dJ620'),
-        j = c('uPP4W'),
-        k = c('IJKDo'),
+    var d = a('5DaKQ'),
+        e = a('jAUcB'),
+        f = a('moq/A'),
+        g = a('JrtKP'),
+        h = a('YqmOj'),
+        i = a('qBGaA0'),
+        j = a('LEQ5w'),
+        k = a('dcCrA'),
         l = [
             'showArrow',
             'headerClass',
@@ -1656,205 +1656,205 @@ c.register('ndLzW', function(b, B) {
             'destroyInactivePanel',
             'children'
         ],
-        m = b(j).forwardRef(function(a, c) {
-            var n, o, p = a.showArrow,
-                q = void 0 === p || p,
-                r = a.headerClass,
-                s = a.isActive,
-                t = a.onItemClick,
-                u = a.forceRender,
-                v = a.className,
-                w = a.prefixCls,
-                x = a.collapsible,
-                y = a.accordion,
-                z = a.panelKey,
-                A = a.extra,
-                B = a.header,
-                C = a.expandIcon,
-                D = a.openMotion,
-                E = a.destroyInactivePanel,
-                F = a.children,
-                G = (0, f.default)(a, l),
-                H = 'disabled' === x,
-                I = 'header' === x,
-                J = 'icon' === x,
-                K = null != A && 'boolean' != typeof A,
-                L = function() {
-                    null == t || t(z);
+        _m = _b(j).forwardRef(function(_n, o) {
+            var p, q, r = _n.showArrow,
+                s = void 0 === r || r,
+                t = _n.headerClass,
+                u = _n.isActive,
+                v = _n.onItemClick,
+                w = _n.forceRender,
+                x = _n.className,
+                y = _n.prefixCls,
+                z = _n.collapsible,
+                A = _n.accordion,
+                B = _n.panelKey,
+                C = _n.extra,
+                D = _n.header,
+                E = _n.expandIcon,
+                F = _n.openMotion,
+                G = _n.destroyInactivePanel,
+                H = _n.children,
+                I = (0, f.default)(_n, l),
+                J = 'disabled' === z,
+                K = 'header' === z,
+                L = 'icon' === z,
+                M = null != C && 'boolean' != typeof C,
+                N = function() {
+                    null == v || v(B);
                 },
-                M = 'function' == typeof C ? C(a) : b(j).createElement('i', {
+                O = 'function' == typeof E ? E(_n) : _b(j).createElement('i', {
                     className: 'arrow'
                 });
-            M && (M = b(j).createElement('div', {
-                className: ''.concat(w, '-expand-icon'),
+            O && (O = _b(j).createElement('div', {
+                className: ''.concat(y, '-expand-icon'),
                 onClick: [
                     'header',
                     'icon'
-                ].includes(x) ? L : void 0
-            }, M));
-            var N = b(g)((n = {}, (0, d.default)(n, ''.concat(w, '-item'), !0), (0, d.default)(n, ''.concat(w, '-item-active'), s), (0, d.default)(n, ''.concat(w, '-item-disabled'), H), n), v),
-                O = {
-                    className: b(g)((o = {}, (0, d.default)(o, ''.concat(w, '-header'), !0), (0, d.default)(o, 'headerClass', r), (0, d.default)(o, ''.concat(w, '-header-collapsible-only'), I), (0, d.default)(o, ''.concat(w, '-icon-collapsible-only'), J), o)),
-                    'aria-expanded': s,
-                    'aria-disabled': H,
-                    onKeyPress: function(a) {
-                        'Enter' !== a.key && a.keyCode !== i.default.ENTER && a.which !== i.default.ENTER || L();
+                ].includes(z) ? N : void 0
+            }, O));
+            var P = _b(g)((p = {}, (0, d.default)(p, ''.concat(y, '-item'), !0), (0, d.default)(p, ''.concat(y, '-item-active'), u), (0, d.default)(p, ''.concat(y, '-item-disabled'), J), p), x),
+                Q = {
+                    className: _b(g)((q = {}, (0, d.default)(q, ''.concat(y, '-header'), !0), (0, d.default)(q, 'headerClass', t), (0, d.default)(q, ''.concat(y, '-header-collapsible-only'), K), (0, d.default)(q, ''.concat(y, '-icon-collapsible-only'), L), q)),
+                    'aria-expanded': u,
+                    'aria-disabled': J,
+                    onKeyPress: function(R) {
+                        'Enter' !== R.key && R.keyCode !== i.default.ENTER && R.which !== i.default.ENTER || N();
                     }
                 };
-            return I || J || (O.onClick = L, O.role = y ? 'tab' : 'button', O.tabIndex = H ? -1 : 0), b(j).createElement('div', (0, e.default)({}, G, {
-                ref: c,
-                className: N
-            }), b(j).createElement('div', O, q && M, b(j).createElement('span', {
-                className: ''.concat(w, '-header-text'),
-                onClick: 'header' === x ? L : void 0
-            }, B), K && b(j).createElement('div', {
-                className: ''.concat(w, '-extra')
-            }, A)), b(j).createElement(h.default, (0, e.default)({
-                visible: s,
-                leavedClassName: ''.concat(w, '-content-hidden')
-            }, D, {
-                forceRender: u,
-                removeOnLeave: E
-            }), function(a, c) {
-                var P = a.className,
-                    Q = a.style;
-                return b(j).createElement(k.default, {
-                    ref: c,
-                    prefixCls: w,
-                    className: P,
-                    style: Q,
-                    isActive: s,
-                    forceRender: u,
-                    role: y ? 'tabpanel' : void 0
-                }, F);
+            return K || L || (Q.onClick = N, Q.role = A ? 'tab' : 'button', Q.tabIndex = J ? -1 : 0), _b(j).createElement('div', (0, e.default)({}, I, {
+                ref: o,
+                className: P
+            }), _b(j).createElement('div', Q, s && O, _b(j).createElement('span', {
+                className: ''.concat(y, '-header-text'),
+                onClick: 'header' === z ? N : void 0
+            }, D), M && _b(j).createElement('div', {
+                className: ''.concat(y, '-extra')
+            }, C)), _b(j).createElement(h.default, (0, e.default)({
+                visible: u,
+                leavedClassName: ''.concat(y, '-content-hidden')
+            }, F, {
+                forceRender: w,
+                removeOnLeave: G
+            }), function(R, S) {
+                var T = R.className,
+                    U = R.style;
+                return _b(j).createElement(k.default, {
+                    ref: S,
+                    prefixCls: y,
+                    className: T,
+                    style: U,
+                    isActive: u,
+                    forceRender: w,
+                    role: A ? 'tabpanel' : void 0
+                }, H);
             }));
         });
-}), c.register('WfHYJ2', function(b, c) {
-    function d(a, b, c) {
-        return b in a ? Object.defineProperty(a, b, {
-            value: c,
+}), a.register('5DaKQ', function(_b, c) {
+    function d(e, f, g) {
+        return f in e ? Object.defineProperty(e, f, {
+            value: g,
             enumerable: !0,
             configurable: !0,
             writable: !0
-        }) : a[b] = c, a;
+        }) : e[f] = g, e;
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _e(_b.exports, 'default', function() {
+        return _d;
     });
-}), c.register('ShjA01', function(b, c) {
-    function d() {
-        return d = Object.assign || function(a) {
-            for (var e = 1; e < v.length; e++) {
-                var f = v[e];
-                for (var g in f)
-                    Object.prototype.hasOwnProperty.call(f, g) && (a[g] = f[g]);
+}), a.register('jAUcB', function(b, c) {
+    function _d() {
+        return _d = Object.assign || function(_e) {
+            for (var f = 1; f < arguments.length; f++) {
+                var g = arguments[f];
+                for (var h in g)
+                    Object.prototype.hasOwnProperty.call(g, h) && (_e[h] = g[h]);
             }
-            return a;
-        }, d.apply(this, v);
+            return _e;
+        }, _d.apply(this, arguments);
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _f(b.exports, 'default', function() {
+        return _c;
     });
-}), c.register('UBC/h', function(b, g) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('moq/A', function(b, _c) {
+    _f(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('l2czd2');
+    var d = a('bFBSc');
 
-    function e(a, b) {
-        if (null == a)
+    function _e(_f, g) {
+        if (null == _f)
             return {};
-        var f, g, h = (0, d.default)(a, b);
+        var h, i, j = (0, d.default)(_f, g);
         if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(a);
-            for (g = 0; g < i.length; g++)
-                f = i[g], b.indexOf(f) >= 0 || Object.prototype.propertyIsEnumerable.call(a, f) && (h[f] = a[f]);
+            var k = Object.getOwnPropertySymbols(_f);
+            for (i = 0; i < k.length; i++)
+                h = k[i], g.indexOf(h) >= 0 || Object.prototype.propertyIsEnumerable.call(_f, h) && (j[h] = _f[h]);
         }
-        return h;
+        return j;
     }
-}), c.register('l2czd2', function(b, c) {
-    function d(a, b) {
-        if (null == a)
+}), a.register('bFBSc', function(b, c) {
+    function d(e, f) {
+        if (null == e)
             return {};
-        var e, f, g = {},
-            h = Object.keys(a);
-        for (f = 0; f < h.length; f++)
-            e = h[f], b.indexOf(e) >= 0 || (g[e] = a[e]);
-        return g;
+        var g, h, i = {},
+            j = Object.keys(e);
+        for (h = 0; h < j.length; h++)
+            g = j[h], f.indexOf(g) >= 0 || (i[g] = e[g]);
+        return i;
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _i(b.exports, 'default', function() {
+        return _b;
     });
-}), c.register('IJKDo', function(i, j) {
-    a(i.exports, 'default', function() {
-        return l;
+}), a.register('dcCrA', function(_b, c) {
+    _i(_b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('WfHYJ2'),
-        e = c('bOoWo'),
-        f = c('VAIs1'),
-        g = c('uPP4W'),
-        h = b(g).forwardRef(function(a, c) {
-            var i, j = a.prefixCls,
-                k = a.forceRender,
-                l = a.className,
-                m = a.style,
-                n = a.children,
-                o = a.isActive,
-                p = a.role,
-                q = b(g).useState(o || k),
-                r = (0, e.default)(q, 2),
-                s = r[0],
-                t = r[1];
-            return b(g).useEffect(function() {
-                (k || o) && t(!0);
+    var d = a('5DaKQ'),
+        e = a('7DbAz'),
+        f = a('JrtKP'),
+        g = a('LEQ5w'),
+        h = _b(g).forwardRef(function(_i, j) {
+            var k, l = _i.prefixCls,
+                m = _i.forceRender,
+                _n = _i.className,
+                o = _i.style,
+                p = _i.children,
+                q = _i.isActive,
+                r = _i.role,
+                s = _b(g).useState(q || m),
+                t = (0, e.default)(s, 2),
+                u = t[0],
+                v = t[1];
+            return _b(g).useEffect(function() {
+                (m || q) && v(!0);
             }, [
-                k,
-                o
-            ]), s ? b(g).createElement('div', {
-                ref: c,
-                className: b(f)(''.concat(j, '-content'), (i = {}, (0, d.default)(i, ''.concat(j, '-content-active'), o), (0, d.default)(i, ''.concat(j, '-content-inactive'), !o), i), l),
-                style: m,
-                role: p
-            }, b(g).createElement('div', {
-                className: ''.concat(j, '-content-box')
-            }, n)) : null;
+                m,
+                q
+            ]), u ? _b(g).createElement('div', {
+                ref: j,
+                className: _b(f)(''.concat(l, '-content'), (k = {}, (0, d.default)(k, ''.concat(l, '-content-active'), q), (0, d.default)(k, ''.concat(l, '-content-inactive'), !q), k), _n),
+                style: o,
+                role: r
+            }, _b(g).createElement('div', {
+                className: ''.concat(l, '-content-box')
+            }, p)) : null;
         });
     h.displayName = 'PanelContent';
-    var i = j;
-}), c.register('ysccP', function(i, j) {
-    a(i.exports, 'default', function() {
-        return h;
+    var i = h;
+}), a.register('TRVr5', function(b, c) {
+    _o(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('VAIs1'),
-        e = c('UbR+H'),
-        f = c('uPP4W'),
-        g = c('qEw51');
-    var h = f.forwardRef((a, c) => {
+    var d = a('JrtKP'),
+        e = a('so96J'),
+        f = a('LEQ5w'),
+        g = a('1P5ls');
+    var _h = f.forwardRef((_o, a) => {
         const {
             getPrefixCls: i
         } = f.useContext(g.ConfigContext), {
             prefixCls: j,
             className: k = '',
             showArrow: l = !0
-        } = m, n = i('collapse', j), o = b(d)({
-            [`${ n }-no-arrow`]: !l
+        } = _o, m = i('collapse', j), n = _b(d)({
+            [`${ m }-no-arrow`]: !l
         }, k);
         return f.createElement(e.default.Panel, Object.assign({
-            ref: c
-        }, m, {
-            prefixCls: n,
-            className: o
+            ref: a
+        }, _o, {
+            prefixCls: m,
+            className: n
         }));
     });
-}), c.register('26hV8', function(b, k) {
-    a(b.exports, 'default', function() {
-        return s;
+}), a.register('+aoQo', function(_b, c) {
+    _o(_b.exports, 'default', function() {
+        return _s;
     });
-    var d = c('KPzwS'),
-        e = c('vvwoA'),
-        f = c('jnIuq'),
-        g = c('P38j/');
-    const h = a => {
+    var d = a('vM2UK'),
+        e = a('XC0UB'),
+        f = a('l+IVY'),
+        g = a('7hbGU');
+    const h = _o => {
             const {
                 componentCls: i,
                 collapseContentBg: j,
@@ -1866,7 +1866,7 @@ c.register('ndLzW', function(b, B) {
                 collapseHeaderPaddingLG: p,
                 collapsePanelBorderRadius: q,
                 lineWidth: r,
-                lineType: s,
+                lineType: _s,
                 colorBorder: t,
                 colorText: u,
                 colorTextHeading: v,
@@ -1879,18 +1879,18 @@ c.register('ndLzW', function(b, B) {
                 paddingLG: C,
                 motionDurationSlow: D,
                 fontSizeIcon: E
-            } = F, G = `${ r }px ${ s } ${ t }`;
+            } = _o, F = `${ r }px ${ _s } ${ t }`;
             return {
-                [i]: Object.assign(Object.assign({}, (0, g.resetComponent)(F)), {
+                [i]: Object.assign(Object.assign({}, (0, g.resetComponent)(_o)), {
                     backgroundColor: m,
-                    border: G,
+                    border: F,
                     borderBottom: 0,
                     borderRadius: `${ q }px`,
                     '&-rtl': {
                         direction: 'rtl'
                     },
                     [`& > ${ i }-item`]: {
-                        borderBottom: G,
+                        borderBottom: F,
                         '&:last-child': {
                             [`\n            &,\n            & > ${ i }-header`]: {
                                 borderRadius: `0 0 ${ q }px ${ q }px`
@@ -1950,7 +1950,7 @@ c.register('ndLzW', function(b, B) {
                     [`${ i }-content`]: {
                         color: u,
                         backgroundColor: j,
-                        borderTop: G,
+                        borderTop: F,
                         [`& > ${ i }-content-box`]: {
                             padding: `${ k }px ${ l }px`
                         },
@@ -2007,10 +2007,10 @@ c.register('ndLzW', function(b, B) {
                 })
             };
         },
-        i = a => {
+        i = _o => {
             const {
                 componentCls: j
-            } = k;
+            } = _o;
             return {
                 [`${ j }-rtl`]: {
                     [`> ${ j }-item > ${ j }-header ${ j }-arrow svg`]: {
@@ -2019,13 +2019,13 @@ c.register('ndLzW', function(b, B) {
                 }
             };
         },
-        j = a => {
+        j = _o => {
             const {
                 componentCls: k,
                 collapseHeaderBg: l,
                 paddingXXS: m,
                 colorBorder: n
-            } = o;
+            } = _o;
             return {
                 [`${ k }-borderless`]: {
                     backgroundColor: l,
@@ -2049,11 +2049,11 @@ c.register('ndLzW', function(b, B) {
                 }
             };
         },
-        k = a => {
+        k = _o => {
             const {
                 componentCls: l,
                 paddingSM: m
-            } = n;
+            } = _o;
             return {
                 [`${ l }-ghost`]: {
                     backgroundColor: 'transparent',
@@ -2071,14 +2071,14 @@ c.register('ndLzW', function(b, B) {
                 }
             };
         };
-    var l = (0, e.default)('Collapse', a => {
-        const m = (0, f.merge)(a, {
-            collapseContentBg: a.colorBgContainer,
-            collapseHeaderBg: a.colorFillAlter,
-            collapseHeaderPadding: `${ a.paddingSM }px ${ a.padding }px`,
-            collapseHeaderPaddingSM: `${ a.paddingXS }px ${ a.paddingSM }px`,
-            collapseHeaderPaddingLG: `${ a.padding }px ${ a.paddingLG }px`,
-            collapsePanelBorderRadius: a.borderRadiusLG,
+    var l = (0, e.default)('Collapse', _o => {
+        const m = (0, f.merge)(_o, {
+            collapseContentBg: _o.colorBgContainer,
+            collapseHeaderBg: _o.colorFillAlter,
+            collapseHeaderPadding: `${ _o.paddingSM }px ${ _o.padding }px`,
+            collapseHeaderPaddingSM: `${ _o.paddingXS }px ${ _o.paddingSM }px`,
+            collapseHeaderPaddingLG: `${ _o.padding }px ${ _o.paddingLG }px`,
+            collapsePanelBorderRadius: _o.borderRadiusLG,
             collapseContentPaddingHorizontal: 16
         });
         return [
@@ -2089,27 +2089,27 @@ c.register('ndLzW', function(b, B) {
             (0, d.default)(m)
         ];
     });
-}), c.register('ofYOa', function(b, r) {
-    a(b.exports, 'default', function() {
-        return n;
+}), a.register('n3+0G', function(b, c) {
+    _o(b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('PjB0f'),
-        g = c('ExtIT'),
-        h = c('cR5QE'),
-        i = c('I9mdQ'),
-        j = c('iYEuk12'),
-        k = c('gSUVO'),
-        l = c('CIJ2q'),
-        m = c('axWAk');
-    var n = (0, c('Vlfxs').observer)(() => {
-        var o;
-        const [p, q] = e.useState(!1), r = o => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('PMl60'),
+        g = a('fmVdR'),
+        h = a('YRlpt'),
+        i = a('Pkvp4'),
+        j = a('2HvvA11'),
+        k = a('b5kvC'),
+        l = a('k41Xr'),
+        m = a('GUi2g');
+    var _n = (0, a('2x11J').observer)(() => {
+        var _o;
+        const [p, q] = e.useState(!1), r = _o => {
             (0, f.request)({
                 url: '/api/user/update-school',
                 data: {
-                    schoolDiggerId: null == o ? void 0 : o.schoolid
+                    schoolDiggerId: null == _o ? void 0 : _o.schoolid
                 },
                 success: () => {
                     q(!1), (0, i.default)({
@@ -2127,7 +2127,7 @@ c.register('ndLzW', function(b, B) {
                     });
                 }
             });
-        }, s = null === (o = (0, f.getUser)()) || void 0 === o ? void 0 : o.schoolName;
+        }, s = null === (_o = (0, f.getUser)()) || void 0 === _o ? void 0 : _o.schoolName;
         return (0, d.jsxs)(d.Fragment, {
             children: [
                 (0, d.jsxs)('div', {
@@ -2187,30 +2187,30 @@ c.register('ndLzW', function(b, B) {
             ]
         });
     });
-}), c.register('axWAk', function(b, w) {
-    a(b.exports, 'default', function() {
-        return s;
+}), a.register('GUi2g', function(b, c) {
+    _t(b.exports, 'default', function() {
+        return _s;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('5BgNK'),
-        g = c('bPH7V'),
-        h = c('ExtIT'),
-        i = c('KV+OV'),
-        j = c('c6x8w'),
-        k = c('cR5QE'),
-        l = c('lmfrI'),
-        m = c('gSUVO'),
-        n = c('h99Nu'),
-        o = c('PjB0f'),
-        p = c('GFgjD'),
-        q = c('QgV8u');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('e2X+l'),
+        g = a('NIZyA'),
+        h = a('fmVdR'),
+        i = a('sgToH'),
+        j = a('ewwAh'),
+        k = a('YRlpt'),
+        l = a('sHRDd'),
+        m = a('b5kvC'),
+        n = a('Axq+p'),
+        o = a('PMl60'),
+        p = a('INKb2'),
+        q = a('HHk7T');
     let r;
-    var s = a => {
+    var _s = _t => {
         const {
             visible: t,
             close: u
-        } = v, [w, x] = e.useState(null), [y, z] = e.useState(!1), [A, B] = e.useState([]);
+        } = _t, [v, w] = e.useState(null), [x, y] = e.useState(!1), [z, A] = e.useState([]);
         return (0, d.jsxs)(i.default, {
             open: t,
             onClose: u,
@@ -2223,7 +2223,7 @@ c.register('ndLzW', function(b, B) {
                 scrollbarWidth: 'none'
             },
             children: [
-                (0, d.jsx)(u, {
+                (0, d.jsx)(_u, {
                     children: 'School search'
                 }),
                 (0, d.jsx)(g.default, {
@@ -2239,25 +2239,25 @@ c.register('ndLzW', function(b, B) {
                 (0, d.jsx)(j.default.Search, {
                     placeholder: 'Zip Code',
                     onSearch: () => {
-                        w && (5 === String(w).length ? (z(!0), (0, o.request)({
+                        v && (5 === String(v).length ? (y(!0), (0, o.request)({
                             url: '/api/users/fetch-schools',
                             method: 'post',
                             data: {
-                                zipCode: w
+                                zipCode: v
                             },
-                            success: v => {
-                                v && v.schoolList && v.schoolList.length ? B(v.schoolList) : (0, p.throwError)({
+                            success: _t => {
+                                _t && _t.schoolList && _t.schoolList.length ? A(_t.schoolList) : (0, p.throwError)({
                                     title: 'No schools found for this zip code.'
                                 });
                             },
-                            error: v => {
+                            error: _t => {
                                 (0, p.throwError)({
                                     title: 'An error occurred while searching for your school',
                                     content: 'Please try again later'
                                 });
                             },
                             both: () => {
-                                z(!1);
+                                y(!1);
                             }
                         })) : k.default.warning({
                             title: 'Please enter a 5 digit zip code'
@@ -2270,11 +2270,11 @@ c.register('ndLzW', function(b, B) {
                         flex: 1
                     },
                     maxLength: 5,
-                    loading: y,
-                    value: w,
-                    onChange: v => {
-                        const C = v.target.value;
-                        x(C);
+                    loading: x,
+                    value: v,
+                    onChange: _t => {
+                        const B = _t.target.value;
+                        w(B);
                     }
                 }),
                 (0, d.jsx)('div', {
@@ -2282,17 +2282,17 @@ c.register('ndLzW', function(b, B) {
                         marginTop: 25
                     }
                 }),
-                A && A.length ? (0, d.jsx)(d.Fragment, {
-                    children: A.map(t => (0, d.jsx)(q.default, {
+                z && z.length ? (0, d.jsx)(d.Fragment, {
+                    children: z.map(t => (0, d.jsx)(q.default, {
                         name: t.schoolName,
                         description: `${ t.address.city }, ${ t.address.stateFull }`,
-                        onSelect: () => v.selectSchool(t)
+                        onSelect: () => _t.selectSchool(t)
                     }, t.schoolid))
-                }) : (0, d.jsx)(t, {})
+                }) : (0, d.jsx)(_t, {})
             ]
         });
     };
-    const t = () => (0, d.jsxs)('div', {
+    const _t = () => (0, d.jsxs)('div', {
             className: 'flex hc vc flex-column',
             style: {
                 color: l.default.Black,
@@ -2314,28 +2314,28 @@ c.register('ndLzW', function(b, B) {
                 })
             ]
         }),
-        u = n.default.div(r || (r = (a => a)`
+        _u = n.default.div(r || (r = (_t => _t)`
   font-weight: ${ 0 };
   font-size: 42px;
   color: ${ 0 };
   line-height: 1;
   margin-bottom: 10px;
 `), m.FontWeights.UltraBold, l.default.Black);
-}), c.register('QgV8u', function(b, n) {
-    a(b.exports, 'default', function() {
-        return h;
+}), a.register('HHk7T', function(b, c) {
+    _t(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('f9f+a'),
-        f = c('gSUVO'),
-        g = c('lmfrI');
-    var h = a => (0, d.jsx)(e.default, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('oXQNI'),
+        f = a('b5kvC'),
+        g = a('sHRDd');
+    var _h = _t => (0, d.jsx)(e.default, {
         hoverable: !0,
         style: {
             marginBottom: 10
         },
-        onClick: a.onSelect,
+        onClick: _t.onSelect,
         children: (0, d.jsxs)('div', {
             style: {
                 fontFamily: f.Fonts.SFPro,
@@ -2347,37 +2347,37 @@ c.register('ndLzW', function(b, B) {
                         fontSize: 18,
                         fontWeight: f.FontWeights.Bold
                     },
-                    children: a.name
+                    children: _t.name
                 }),
                 (0, d.jsx)('div', {
                     style: {
                         fontSize: 14
                     },
-                    children: a.description
+                    children: _t.description
                 })
             ]
         })
     });
-}), c.register('bwKYG', function(b, n) {
-    a(b.exports, 'Setting', function() {
-        return r;
-    }), a(b.exports, 'default', function() {
-        return s;
+}), a.register('btszz', function(b, c) {
+    _t(b.exports, 'Setting', function() {
+        return _r;
+    }), _t(b.exports, 'default', function() {
+        return _s;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('gSUVO'),
-        g = c('f9f+a'),
-        h = c('5nJMd26'),
-        i = c('lmfrI'),
-        j = c('KQ+tn'),
-        k = c('fJ7YM'),
-        l = c('PjB0f'),
-        m = c('+Hkl0'),
-        n = c('UPZXy');
-    let o, p, q = a => a;
-    const r = a => (0, d.jsx)(g.default, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('b5kvC'),
+        g = a('oXQNI'),
+        h = a('cvto726'),
+        i = a('sHRDd'),
+        j = a('BRh1Q'),
+        k = a('IAIAD'),
+        l = a('PMl60'),
+        m = a('m8qqA'),
+        n = a('TmP6v');
+    let o, p, q = _t => _t;
+    const _r = _t => (0, d.jsx)(g.default, {
         style: {
             fontFamily: f.Fonts.SFPro,
             color: i.default.Black
@@ -2390,22 +2390,22 @@ c.register('ndLzW', function(b, B) {
                         marginRight: 40
                     },
                     children: [
-                        (0, d.jsx)(t, {
-                            children: a.title
+                        (0, d.jsx)(_t, {
+                            children: _t.title
                         }),
-                        (0, d.jsx)(u, {
-                            children: a.description
+                        (0, d.jsx)(_u, {
+                            children: _t.description
                         })
                     ]
                 }),
                 (0, d.jsx)('div', {
-                    children: a.children
+                    children: _t.children
                 })
             ]
         })
     });
-    var s = () => {
-        const [t, u] = (0, l.useBoolean)(!1);
+    var _s = () => {
+        const [_t, u] = (0, l.useBoolean)(!1);
         return (0, d.jsx)(d.Fragment, {
             children: (0, d.jsxs)(h.default, {
                 direction: 'vertical',
@@ -2421,43 +2421,43 @@ c.register('ndLzW', function(b, B) {
             })
         });
     };
-    const t = e.default.div(o || (o = q`
+    const _t = e.default.div(o || (o = q`
   font-weight: ${ 0 };
   font-size: 18px;
 `), f.FontWeights.UltraBold),
-        u = e.default.div(p || (p = q`
+        _u = e.default.div(p || (p = q`
   font-size: 14px;
 `));
-}), c.register('5nJMd26', function(n, o) {
-    a(n.exports, 'SpaceContext', function() {
-        return m;
-    }, function(a) {
-        return m = a;
-    }), a(n.exports, 'default', function() {
-        return u;
-    }, function(a) {
-        return u = a;
+}), a.register('cvto726', function(b, c) {
+    _d(b.exports, 'SpaceContext', function() {
+        return _m;
+    }, function(_d) {
+        return _m = _d;
+    }), _d(b.exports, 'default', function() {
+        return _u;
+    }, function(_d) {
+        return _u = _d;
     });
-    var d = c('VAIs1'),
-        e = c('8N2Yw'),
-        f = c('uPP4W'),
-        g = c('qEw51'),
-        h = c('azbx226'),
-        i = c('okyqG'),
-        j = c('W5kb426'),
-        k = c('pGyzR'),
-        l = function(a, b) {
-            var m = {};
-            for (var n in a)
-                Object.prototype.hasOwnProperty.call(a, n) && b.indexOf(n) < 0 && (m[n] = a[n]);
-            if (null != a && 'function' == typeof Object.getOwnPropertySymbols) {
-                var o = 0;
-                for (n = Object.getOwnPropertySymbols(a); o < n.length; o++)
-                    b.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(a, n[o]) && (m[n[o]] = a[n[o]]);
+    var d = a('JrtKP'),
+        e = a('Ug51y0'),
+        f = a('LEQ5w'),
+        g = a('1P5ls'),
+        h = a('4gObz26'),
+        i = a('VqIM2'),
+        j = a('P8P+826'),
+        k = a('/xlT+'),
+        l = function(m, n) {
+            var o = {};
+            for (var p in m)
+                Object.prototype.hasOwnProperty.call(m, p) && n.indexOf(p) < 0 && (o[p] = m[p]);
+            if (null != m && 'function' == typeof Object.getOwnPropertySymbols) {
+                var q = 0;
+                for (p = Object.getOwnPropertySymbols(m); q < p.length; q++)
+                    n.indexOf(p[q]) < 0 && Object.prototype.propertyIsEnumerable.call(m, p[q]) && (o[p[q]] = m[p[q]]);
             }
-            return m;
+            return o;
         };
-    const m = f.createContext({
+    const _m = f.createContext({
             latestIndex: 0,
             horizontalSize: 0,
             verticalSize: 0,
@@ -2468,7 +2468,7 @@ c.register('ndLzW', function(b, B) {
             middle: 16,
             large: 24
         };
-    const o = a => {
+    const o = _G => {
         const {
             getPrefixCls: p,
             space: q,
@@ -2476,7 +2476,7 @@ c.register('ndLzW', function(b, B) {
         } = f.useContext(g.ConfigContext), {
             size: s = (null == q ? void 0 : q.size) || 'small',
             align: t,
-            className: u,
+            className: _u,
             rootClassName: v,
             children: w,
             direction: x = 'horizontal',
@@ -2484,7 +2484,7 @@ c.register('ndLzW', function(b, B) {
             split: z,
             style: A,
             wrap: B = !1
-        } = C, D = l(C, [
+        } = _G, C = l(_G, [
             'size',
             'align',
             'className',
@@ -2495,83 +2495,83 @@ c.register('ndLzW', function(b, B) {
             'split',
             'style',
             'wrap'
-        ]), E = (0, h.default)(), [F, G] = f.useMemo(() => (Array.isArray(s) ? s : [
+        ]), D = (0, h.default)(), [E, F] = f.useMemo(() => (Array.isArray(s) ? s : [
             s,
             s
-        ]).map(C => function(C) {
-            return 'string' == typeof C ? n[C] : C || 0;
-        }(C)), [s]), H = (0, e.default)(w, {
+        ]).map(_G => function(_G) {
+            return 'string' == typeof _G ? n[_G] : _G || 0;
+        }(_g)), [s]), G = (0, e.default)(w, {
             keepEmpty: !0
-        }), I = void 0 === t && 'horizontal' === x ? 'center' : t, J = p('space', y), [K, L] = (0, k.default)(J), M = b(d)(J, L, `${ J }-${ x }`, {
-            [`${ J }-rtl`]: 'rtl' === r,
-            [`${ J }-align-${ I }`]: I
-        }, u, v), N = `${ J }-item`, O = 'rtl' === r ? 'marginLeft' : 'marginRight';
-        let P = 0;
-        const Q = H.map((C, b) => {
-                null != C && (P = b);
-                const R = C && C.key || `${ N }-${ b }`;
+        }), H = void 0 === t && 'horizontal' === x ? 'center' : t, I = p('space', y), [J, K] = (0, k.default)(I), L = _b(d)(I, K, `${ I }-${ x }`, {
+            [`${ I }-rtl`]: 'rtl' === r,
+            [`${ I }-align-${ H }`]: H
+        }, _u, v), M = `${ I }-item`, N = 'rtl' === r ? 'marginLeft' : 'marginRight';
+        let O = 0;
+        const P = G.map((_g, _b) => {
+                null != _g && (O = _b);
+                const Q = _g && _g.key || `${ M }-${ _b }`;
                 return f.createElement(j.default, {
-                    className: N,
-                    key: R,
+                    className: M,
+                    key: Q,
                     direction: x,
-                    index: b,
-                    marginDirection: O,
+                    index: _b,
+                    marginDirection: N,
                     split: z,
                     wrap: B
-                }, C);
+                }, _g);
             }),
-            R = f.useMemo(() => ({
-                horizontalSize: F,
-                verticalSize: G,
-                latestIndex: P,
-                supportFlexGap: E
+            Q = f.useMemo(() => ({
+                horizontalSize: E,
+                verticalSize: F,
+                latestIndex: O,
+                supportFlexGap: D
             }), [
+                E,
                 F,
-                G,
-                P,
-                E
+                O,
+                D
             ]);
-        if (0 === H.length)
+        if (0 === G.length)
             return null;
-        const S = {};
-        return B && (S.flexWrap = 'wrap', E || (S.marginBottom = -G)), E && (S.columnGap = F, S.rowGap = G), K(f.createElement('div', Object.assign({
-            className: M,
-            style: Object.assign(Object.assign({}, S), A)
-        }, D), f.createElement(m.Provider, {
-            value: R
-        }, Q)));
+        const R = {};
+        return B && (R.flexWrap = 'wrap', D || (R.marginBottom = -F)), D && (R.columnGap = E, R.rowGap = F), J(f.createElement('div', Object.assign({
+            className: L,
+            style: Object.assign(Object.assign({}, R), A)
+        }, C), f.createElement(_m.Provider, {
+            value: Q
+        }, P)));
     };
     o.Compact = i.default;
-    var p = q;
-}), c.register('azbx226', function(b, i) {
-    a(b.exports, 'default', function() {
-        return f;
+    var p = o;
+}), a.register('4gObz26', function(_b, c) {
+    _g(_b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('uPP4W'),
-        e = c('94UTy'),
-        f = () => {
-            const [g, h] = d.useState(!1);
+    var d = a('LEQ5w'),
+        e = a('XPzGa'),
+        _f = () => {
+            const [_g, h] = d.useState(!1);
             return d.useEffect(() => {
                 h((0, e.detectFlexGapSupported)());
-            }, []), g;
+            }, []), _g;
         };
-}), c.register('W5kb426', function(b, i) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('P8P+826', function(b, c) {
+    _g(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('uPP4W'),
-        e = c('5nJMd26');
+    var d = a('LEQ5w'),
+        e = a('cvto726');
 
-    function f(a) {
+    function _f(_g) {
         let {
-            className: g,
-            direction: h,
-            index: i,
-            marginDirection: j,
-            children: k,
-            split: l,
-            wrap: m
-        } = n;
+            className: h,
+            direction: i,
+            index: j,
+            marginDirection: k,
+            children: l,
+            split: m,
+            wrap: n
+        } = _g;
         const {
             horizontalSize: o,
             verticalSize: p,
@@ -2579,29 +2579,29 @@ c.register('ndLzW', function(b, B) {
             supportFlexGap: r
         } = d.useContext(e.SpaceContext);
         let s = {};
-        return r || ('vertical' === h ? i < q && (s = {
-            marginBottom: o / (l ? 2 : 1)
-        }) : s = Object.assign(Object.assign({}, i < q && {
-            [j]: o / (l ? 2 : 1)
-        }), m && {
+        return r || ('vertical' === i ? j < q && (s = {
+            marginBottom: o / (m ? 2 : 1)
+        }) : s = Object.assign(Object.assign({}, j < q && {
+            [k]: o / (m ? 2 : 1)
+        }), n && {
             paddingBottom: p
-        })), null == k ? null : d.createElement(d.Fragment, null, d.createElement('div', {
-            className: g,
+        })), null == l ? null : d.createElement(d.Fragment, null, d.createElement('div', {
+            className: h,
             style: s
-        }, k), i < q && l && d.createElement('span', {
-            className: `${ g }-split`,
+        }, l), j < q && m && d.createElement('span', {
+            className: `${ h }-split`,
             style: s
-        }, l));
+        }, m));
     }
-}), c.register('KQ+tn', function(b, d) {
-    a(b.exports, 'default', function() {
-        return k;
+}), a.register('BRh1Q', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('SprP3'),
-        g = c('bwKYG'),
-        h = c('Ly1h3');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('y4x7Q'),
+        g = a('btszz'),
+        h = a('inwN3');
     const {
         Option: i
     } = h.default, j = [
@@ -2612,70 +2612,70 @@ c.register('ndLzW', function(b, B) {
         'X̶',
         '\u20A9'
     ];
-    var k = () => {
-        const [l, m] = e.useState(localStorage.getItem(f.LocalStorageNames.currency) || '$');
+    var _k = () => {
+        const [_l, m] = e.useState(localStorage.getItem(f.LocalStorageNames.currency) || '$');
         return (0, d.jsx)(g.Setting, {
             title: 'Currency',
             description: 'Currency to be used while playing Gimkit (non-2D modes)',
             children: (0, d.jsx)(h.default, {
-                value: l,
+                value: _l,
                 style: {
                     width: 200
                 },
-                onChange: l => {
-                    localStorage.setItem(f.LocalStorageNames.currency, l), m(l);
+                onChange: _l => {
+                    localStorage.setItem(f.LocalStorageNames.currency, _l), m(_l);
                 },
-                children: j.map(l => (0, d.jsx)(i, {
-                    value: l,
-                    children: l
-                }, l))
+                children: j.map(_l => (0, d.jsx)(i, {
+                    value: _l,
+                    children: _l
+                }, _l))
             })
         });
     };
-}), c.register('SprP3', function(b, c) {
+}), a.register('y4x7Q', function(b, c) {
     let d;
     var e;
     let f;
     var g;
-    a(b.exports, 'LocalStorageNames', function() {
+    _n(b.exports, 'LocalStorageNames', function() {
         return f;
     }), (e = d || (d = {})).time = 'time', e.target = 'target', e.race = 'race', e.allIn = 'allIn', (g = f || (f = {})).language = 'gimkit-3.0-game-language', g.currency = 'gimkit-game-currency', g.music = 'gimkit-music-track', g.allowGoogleTranslate = 'gimkit-google-translate-allowed', g.editorDefaultLanguage = 'gimkit-editor-v4-default-language', g.editorDefaultGradeLevel = 'gimkit-editor-v4-default-grade-level', g.editorDefaultSubject = 'gimkit-editor-v4-default-subject', g.cosmosBlockedInGame = 'gimkit-cosmos-blocked-in-game', g.hookSavedOptions = 'gimkit-hook-saved-options';
-}), c.register('fJ7YM', function(b, d) {
-    a(b.exports, 'Language', function() {
-        return m;
-    }), a(b.exports, 'GoogleTranslate', function() {
-        return n;
+}), a.register('IAIAD', function(b, c) {
+    _n(b.exports, 'Language', function() {
+        return _m;
+    }), _n(b.exports, 'GoogleTranslate', function() {
+        return _n;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('bwKYG'),
-        g = c('VJ4d21'),
-        h = c('Ly1h3'),
-        i = c('i0MGm'),
-        j = c('SprP3');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('btszz'),
+        g = a('983xi'),
+        h = a('inwN3'),
+        i = a('vKq/0'),
+        j = a('y4x7Q');
     const {
         Option: k
-    } = h.default, l = (0, g.getListOfLanguages)(), m = () => {
-        const [n, o] = e.useState((0, g.getLanguageName)(localStorage.getItem(j.LocalStorageNames.language)) || 'English');
+    } = h.default, l = (0, g.getListOfLanguages)(), _m = () => {
+        const [_n, o] = e.useState((0, g.getLanguageName)(localStorage.getItem(j.LocalStorageNames.language)) || 'English');
         return (0, d.jsx)(f.Setting, {
             title: 'Language',
             description: 'Language used for upgrade names and other text while playing Gimkit (non-2D modes)',
             children: (0, d.jsx)(h.default, {
-                value: n,
+                value: _n,
                 style: {
                     width: 200
                 },
-                onChange: n => {
-                    const p = (0, g.getLanguageKey)(n);
-                    localStorage.setItem(j.LocalStorageNames.language, p), o(n);
+                onChange: _n => {
+                    const p = (0, g.getLanguageKey)(_n);
+                    localStorage.setItem(j.LocalStorageNames.language, p), o(_n);
                 },
-                children: l.map(n => (0, d.jsx)(k, {
-                    value: n,
-                    children: n
-                }, n))
+                children: l.map(_n => (0, d.jsx)(k, {
+                    value: _n,
+                    children: _n
+                }, _n))
             })
         });
-    }, n = () => {
+    }, _n = () => {
         const [o, p] = e.useState(!!localStorage.getItem(j.LocalStorageNames.allowGoogleTranslate));
         return (0, d.jsx)(f.Setting, {
             title: 'Allow Google Translate',
@@ -2688,13 +2688,13 @@ c.register('ndLzW', function(b, B) {
             })
         });
     };
-}), c.register('VJ4d21', function(b, c) {
-    a(b.exports, 'getListOfLanguages', function() {
-        return e;
-    }), a(b.exports, 'getLanguageKey', function() {
-        return f;
-    }), a(b.exports, 'getLanguageName', function() {
-        return g;
+}), a.register('983xi', function(b, c) {
+    _j(b.exports, 'getListOfLanguages', function() {
+        return _e;
+    }), _j(b.exports, 'getLanguageKey', function() {
+        return _f;
+    }), _j(b.exports, 'getLanguageName', function() {
+        return _g;
     });
     const d = {
             en: 'English',
@@ -2802,49 +2802,49 @@ c.register('ndLzW', function(b, B) {
             yo: 'Yoruba',
             zu: 'Zulu'
         },
-        e = () => Object.keys(d).map(a => d[a]),
-        f = a => Object.keys(d).filter(b => d[b] === a)[0],
-        g = a => d[a];
-}), c.register('+Hkl0', function(b, q) {
-    a(b.exports, 'default', function() {
-        return i;
+        _e = () => Object.keys(d).map(_j => d[_j]),
+        _f = _j => Object.keys(d).filter(b => d[b] === _j)[0],
+        _g = _j => d[_j];
+}), a.register('m8qqA', function(b, c) {
+    _j(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('bwKYG'),
-        g = c('i0MGm'),
-        h = c('SprP3');
-    var i = () => {
-        const [j, k] = e.useState(!!localStorage.getItem(h.LocalStorageNames.cosmosBlockedInGame));
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('btszz'),
+        g = a('vKq/0'),
+        h = a('y4x7Q');
+    var _i = () => {
+        const [_j, k] = e.useState(!!localStorage.getItem(h.LocalStorageNames.cosmosBlockedInGame));
         return (0, d.jsx)(f.Setting, {
             title: 'Disable Cosmetics',
             description: 'Gims, trails, and stickers are disabled in-game. All players appear as default Gims.',
             children: (0, d.jsx)(g.default, {
-                onClick: j => {
-                    j ? localStorage.setItem(h.LocalStorageNames.cosmosBlockedInGame, 'true') : localStorage.removeItem(h.LocalStorageNames.cosmosBlockedInGame), k(j);
+                onClick: _j => {
+                    _j ? localStorage.setItem(h.LocalStorageNames.cosmosBlockedInGame, 'true') : localStorage.removeItem(h.LocalStorageNames.cosmosBlockedInGame), k(_j);
                 },
-                checked: j
+                checked: _j
             })
         });
     };
-}), c.register('UPZXy', function(b, q) {
-    a(b.exports, 'default', function() {
-        return m;
+}), a.register('TmP6v', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _m;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('bwKYG'),
-        g = c('IsmrL'),
-        h = c('c6x8w'),
-        i = c('jrTkz0'),
-        j = c('PjB0f'),
-        k = c('laJ/S'),
-        l = c('uVDHR');
-    var m = () => {
-        const [n, o] = e.useState(!0), [p, q] = e.useState(!1), [r, s] = e.useState(''), t = () => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('btszz'),
+        g = a('ulE4q'),
+        h = a('ewwAh'),
+        i = a('MSsQO'),
+        j = a('PMl60'),
+        k = a('+i8ep'),
+        l = a('w0a3U');
+    var _m = () => {
+        const [_n, o] = e.useState(!0), [p, q] = e.useState(!1), [r, s] = e.useState(''), t = () => {
             if (p)
                 return;
-            let u = v;
+            let u = r;
             u && (u = u.trim(), u.length < 2) ? (0, j.throwMessageError)({
                 default: {
                     title: 'Display name must be at least 2 characters long'
@@ -2871,8 +2871,8 @@ c.register('ndLzW', function(b, B) {
         return (0, k.useDidMount)(() => {
             (0, l.Request)({
                 url: '/api/user/display-name',
-                success: n => {
-                    s(n.name);
+                success: _n => {
+                    s(_n.name);
                 },
                 both: () => o(!1)
             });
@@ -2883,7 +2883,7 @@ c.register('ndLzW', function(b, B) {
                 className: 'flex vc',
                 children: [
                     (0, d.jsx)(h.default, {
-                        disabled: n,
+                        disabled: _n,
                         value: r,
                         maxLength: 20,
                         style: {
@@ -2892,8 +2892,8 @@ c.register('ndLzW', function(b, B) {
                         },
                         placeholder: 'Ms. Gimkit',
                         onPressEnter: t,
-                        onChange: n => {
-                            s(n.target.value);
+                        onChange: _n => {
+                            s(_n.target.value);
                         }
                     }),
                     (0, d.jsx)(g.default, {
@@ -2906,21 +2906,21 @@ c.register('ndLzW', function(b, B) {
             })
         });
     };
-}), c.register('6VWVh', function(b, n) {
-    a(b.exports, 'default', function() {
-        return n;
+}), a.register('Bp5xg', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('mcAUY'),
-        g = c('zR1Bk'),
-        h = c('0fUsy'),
-        i = c('rmwRN'),
-        j = c('Bbl7N'),
-        k = c('ohLcQ'),
-        l = c('xNi98'),
-        m = c('0e2dr');
-    var n = () => (e.useEffect(() => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('xRjuc'),
+        g = a('2PdBN'),
+        h = a('i25Pw'),
+        i = a('1Ojwa'),
+        j = a('SEnTb'),
+        k = a('ba39C'),
+        l = a('b0KlL'),
+        m = a('9d1uR');
+    var _n = () => (e.useEffect(() => {
         (0, k.default)();
     }, []), (0, d.jsxs)(d.Fragment, {
         children: [
@@ -2933,21 +2933,21 @@ c.register('ndLzW', function(b, B) {
             (0, d.jsx)(l.default, {})
         ]
     }));
-}), c.register('mcAUY', function(b, n) {
-    a(b.exports, 'default', function() {
-        return l;
+}), a.register('xRjuc', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('Vlfxs'),
-        g = c('f9f+a'),
-        h = c('gSUVO'),
-        i = c('NS10B'),
-        j = c('lmfrI'),
-        k = c('PjB0f');
-    var l = (0, f.observer)(() => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('2x11J'),
+        g = a('oXQNI'),
+        h = a('b5kvC'),
+        i = a('R3x1N'),
+        j = a('sHRDd'),
+        k = a('PMl60');
+    var _l = (0, f.observer)(() => {
         const {
-            billing: m
+            billing: _m
         } = e.useContext(i.default);
         return (0, d.jsx)(g.default, {
             style: {
@@ -2975,13 +2975,13 @@ c.register('ndLzW', function(b, B) {
                                     fontWeight: h.FontWeights.UltraBold,
                                     fontSize: 28
                                 },
-                                children: m.planName
+                                children: _m.planName
                             }),
                             (0, d.jsx)('div', {
                                 style: {
                                     marginTop: -8
                                 },
-                                children: m.downgradeMessage || m.planDescription
+                                children: _m.downgradeMessage || _m.planDescription
                             })
                         ]
                     })
@@ -2989,25 +2989,25 @@ c.register('ndLzW', function(b, B) {
             })
         });
     });
-}), c.register('zR1Bk', function(n, o) {
-    a(n.exports, 'default', function() {
-        return o;
+}), a.register('2PdBN', function(b, c) {
+    _p(b.exports, 'default', function() {
+        return _o;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('f9f+a'),
-        g = c('JQ8A18'),
-        h = c('lmfrI'),
-        i = c('gSUVO'),
-        j = c('Vlfxs'),
-        k = c('NS10B'),
-        l = c('1nZYn'),
-        m = c('2MCaL');
-    const n = a => {
-        const o = !!a.amountRefunded,
-            p = o && a.amountRefunded === a.amount;
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('oXQNI'),
+        g = a('6BM9K6'),
+        h = a('sHRDd'),
+        i = a('b5kvC'),
+        j = a('2x11J'),
+        k = a('R3x1N'),
+        l = a('ctFqV'),
+        m = a('ECzOP');
+    const n = _p => {
+        const o = !!_p.amountRefunded,
+            p = o && _p.amountRefunded === _p.amount;
         return (0, d.jsx)('a', {
-            href: a.link,
+            href: _p.link,
             target: '_blank',
             children: (0, d.jsx)(f.default, {
                 style: {
@@ -3030,13 +3030,13 @@ c.register('ndLzW', function(b, B) {
                                         marginBottom: -5,
                                         opacity: 0.7
                                     },
-                                    children: a.date
+                                    children: _p.date
                                 }),
                                 (0, d.jsx)('div', {
                                     style: {
                                         fontSize: 14
                                     },
-                                    children: (0, l.centsToFormatedMoney)(a.amount)
+                                    children: (0, l.centsToFormatedMoney)(_p.amount)
                                 })
                             ]
                         }),
@@ -3051,11 +3051,11 @@ c.register('ndLzW', function(b, B) {
             })
         });
     };
-    var o = (0, j.observer)(() => {
+    var _o = (0, j.observer)(() => {
         const {
-            billing: p
+            billing: _p
         } = e.useContext(k.default);
-        return p.charges.length ? (0, d.jsxs)(f.default, {
+        return _p.charges.length ? (0, d.jsxs)(f.default, {
             style: {
                 color: h.default.Black,
                 fontFamily: i.Fonts.SFPro,
@@ -3076,53 +3076,53 @@ c.register('ndLzW', function(b, B) {
                     },
                     children: 'Click a charge to open the receipt'
                 }),
-                p.charges.map(p => (0, d.jsx)(n, {
-                    date: b(m).unix(p.unixDate).format('MMMM Do, YYYY'),
-                    amount: p.amount,
-                    link: p.receiptUrl,
-                    amountRefunded: p.amountRefunded
-                }, p.id))
+                _p.charges.map(_p => (0, d.jsx)(n, {
+                    date: _n(m).unix(_p.unixDate).format('MMMM Do, YYYY'),
+                    amount: _p.amount,
+                    link: _p.receiptUrl,
+                    amountRefunded: _p.amountRefunded
+                }, _p.id))
             ]
         }) : null;
     });
-}), c.register('JQ8A18', function(n, o) {
-    a(n.exports, 'default', function() {
-        return s;
-    }, function(a) {
-        return s = a;
+}), a.register('6BM9K6', function(b, c) {
+    _d(b.exports, 'default', function() {
+        return _s;
+    }, function(_d) {
+        return _s = _d;
     });
-    var d = c('obWo+'),
-        e = c('VAIs1'),
-        f = c('uPP4W'),
-        g = c('qEw51'),
-        h = c('HVIEA'),
-        i = c('PYjVb'),
-        j = c('13lgq8'),
-        k = c('RdtDA8'),
-        l = function(a, b) {
-            var m = {};
-            for (var n in a)
-                Object.prototype.hasOwnProperty.call(a, n) && b.indexOf(n) < 0 && (m[n] = a[n]);
-            if (null != a && 'function' == typeof Object.getOwnPropertySymbols) {
-                var o = 0;
-                for (n = Object.getOwnPropertySymbols(a); o < n.length; o++)
-                    b.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(a, n[o]) && (m[n[o]] = a[n[o]]);
+    var d = a('QECub'),
+        e = a('JrtKP'),
+        f = a('LEQ5w'),
+        g = a('1P5ls'),
+        h = a('dFMJk'),
+        i = a('QyNEL'),
+        j = a('J4wJU8'),
+        k = a('E4QrV8'),
+        l = function(m, _n) {
+            var o = {};
+            for (var p in m)
+                Object.prototype.hasOwnProperty.call(m, p) && _n.indexOf(p) < 0 && (o[p] = m[p]);
+            if (null != m && 'function' == typeof Object.getOwnPropertySymbols) {
+                var q = 0;
+                for (p = Object.getOwnPropertySymbols(m); q < p.length; q++)
+                    _n.indexOf(p[q]) < 0 && Object.prototype.propertyIsEnumerable.call(m, p[q]) && (o[p[q]] = m[p[q]]);
             }
-            return m;
+            return o;
         };
-    const m = (a, c) => {
+    const m = (_d, a) => {
             var {
                 prefixCls: n,
                 className: o,
                 rootClassName: p,
                 style: q,
                 children: r,
-                icon: s,
+                icon: _s,
                 color: t,
                 onClose: u,
                 closeIcon: v,
                 closable: w = !1
-            } = x, y = l(x, [
+            } = _d, x = l(_d, [
                 'prefixCls',
                 'className',
                 'rootClassName',
@@ -3135,75 +3135,75 @@ c.register('ndLzW', function(b, B) {
                 'closable'
             ]);
             const {
-                getPrefixCls: z,
-                direction: A
-            } = f.useContext(g.ConfigContext), [B, C] = f.useState(!0);
+                getPrefixCls: y,
+                direction: z
+            } = f.useContext(g.ConfigContext), [A, B] = f.useState(!0);
             f.useEffect(() => {
-                'visible' in y && C(y.visible);
-            }, [y.visible]);
-            const D = (0, h.isPresetColor)(t) || (0, h.isPresetStatusColor)(t),
-                E = Object.assign({
-                    backgroundColor: t && !D ? t : void 0
+                'visible' in x && B(x.visible);
+            }, [x.visible]);
+            const C = (0, h.isPresetColor)(t) || (0, h.isPresetStatusColor)(t),
+                D = Object.assign({
+                    backgroundColor: t && !C ? t : void 0
                 }, q),
-                F = z('tag', n),
-                [G, H] = (0, k.default)(F),
-                I = b(e)(F, {
-                    [`${ F }-${ t }`]: D,
-                    [`${ F }-has-color`]: t && !D,
-                    [`${ F }-hidden`]: !B,
-                    [`${ F }-rtl`]: 'rtl' === A
-                }, o, p, H),
-                J = x => {
-                    x.stopPropagation(), null == u || u(x), x.defaultPrevented || C(!1);
+                E = y('tag', n),
+                [F, G] = (0, k.default)(E),
+                H = _j(e)(E, {
+                    [`${ E }-${ t }`]: C,
+                    [`${ E }-has-color`]: t && !C,
+                    [`${ E }-hidden`]: !A,
+                    [`${ E }-rtl`]: 'rtl' === z
+                }, o, p, G),
+                I = _d => {
+                    _d.stopPropagation(), null == u || u(_d), _d.defaultPrevented || B(!1);
                 },
-                K = 'function' == typeof y.onClick || r && 'a' === r.type,
-                L = s || null,
-                M = L ? f.createElement(f.Fragment, null, L, f.createElement('span', null, r)) : r,
-                N = f.createElement('span', Object.assign({}, y, {
-                    ref: c,
-                    className: I,
-                    style: E
-                }), M, w ? v ? f.createElement('span', {
-                    className: `${ F }-close-icon`,
-                    onClick: J
+                J = 'function' == typeof x.onClick || r && 'a' === r.type,
+                K = _s || null,
+                L = K ? f.createElement(f.Fragment, null, K, f.createElement('span', null, r)) : r,
+                M = f.createElement('span', Object.assign({}, x, {
+                    ref: a,
+                    className: H,
+                    style: D
+                }), L, w ? v ? f.createElement('span', {
+                    className: `${ E }-close-icon`,
+                    onClick: I
                 }, v) : f.createElement(d.default, {
-                    className: `${ F }-close-icon`,
-                    onClick: J
+                    className: `${ E }-close-icon`,
+                    onClick: I
                 }) : null);
-            return G(K ? f.createElement(i.default, null, N) : N);
+            return F(J ? f.createElement(i.default, null, M) : M);
         },
         n = f.forwardRef(m);
     n.CheckableTag = j.default;
-    var o = p;
-}), c.register('13lgq8', function(j, k) {
-    a(j.exports, 'default', function() {
-        return i;
-    }, function(a) {
-        return i = a;
+    var o = n;
+}), a.register('J4wJU8', function(b, c) {
+    _d(b.exports, 'default', function() {
+        return _i;
+    }, function(_d) {
+        return _i = _d;
     });
-    var d = c('VAIs1'),
-        e = c('uPP4W'),
-        f = c('qEw51'),
-        g = c('RdtDA8'),
-        h = function(a, b) {
-            var i = {};
-            for (var j in a)
-                Object.prototype.hasOwnProperty.call(a, j) && b.indexOf(j) < 0 && (i[j] = a[j]);
-            if (null != a && 'function' == typeof Object.getOwnPropertySymbols) {
-                var k = 0;
-                for (j = Object.getOwnPropertySymbols(a); k < j.length; k++)
-                    b.indexOf(j[k]) < 0 && Object.prototype.propertyIsEnumerable.call(a, j[k]) && (i[j[k]] = a[j[k]]);
+    var d = a('JrtKP'),
+        e = a('LEQ5w'),
+        f = a('1P5ls'),
+        g = a('E4QrV8'),
+        h = function(i, _j) {
+            var k = {};
+            for (var l in i)
+                Object.prototype.hasOwnProperty.call(i, l) && _j.indexOf(l) < 0 && (k[l] = i[l]);
+            if (null != i && 'function' == typeof Object.getOwnPropertySymbols) {
+                var m = 0;
+                for (l = Object.getOwnPropertySymbols(i); m < l.length; m++)
+                    _j.indexOf(l[m]) < 0 && Object.prototype.propertyIsEnumerable.call(i, l[m]) && (k[l[m]] = i[l[m]]);
             }
-            return i;
+            return k;
         };
-    var i = a => {
+    var _i = _e => {
         var {
             prefixCls: j,
             className: k,
             checked: l,
             onChange: m,
             onClick: n
-        } = o, p = h(o, [
+        } = _e, o = h(_e, [
             'prefixCls',
             'className',
             'checked',
@@ -3211,99 +3211,99 @@ c.register('ndLzW', function(b, B) {
             'onClick'
         ]);
         const {
-            getPrefixCls: q
-        } = e.useContext(f.ConfigContext), r = q('tag', j), [s, t] = (0, g.default)(r), u = b(d)(r, {
-            [`${ r }-checkable`]: !0,
-            [`${ r }-checkable-checked`]: l
-        }, k, t);
-        return s(e.createElement('span', Object.assign({}, p, {
-            className: u,
-            onClick: o => {
-                null == m || m(!l), null == n || n(o);
+            getPrefixCls: p
+        } = e.useContext(f.ConfigContext), q = p('tag', j), [r, s] = (0, g.default)(q), t = _b(d)(q, {
+            [`${ q }-checkable`]: !0,
+            [`${ q }-checkable-checked`]: l
+        }, k, s);
+        return r(e.createElement('span', Object.assign({}, o, {
+            className: t,
+            onClick: _e => {
+                null == m || m(!l), null == n || n(_e);
             }
         })));
     };
-}), c.register('RdtDA8', function(b, j) {
-    a(b.exports, 'default', function() {
-        return l;
+}), a.register('E4QrV8', function(_b, c) {
+    _e(_b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('vvwoA'),
-        e = c('jnIuq'),
-        f = c('hTZV68'),
-        g = c('JkiNt'),
-        h = c('P38j/');
-    const i = (a, b, c) => {
-            const j = (0, f.default)(c);
+    var d = a('XC0UB'),
+        e = a('l+IVY'),
+        f = a('xbYck1'),
+        g = a('bL6OF'),
+        h = a('7hbGU');
+    const i = (_e, _b, a) => {
+            const j = (0, f.default)(a);
             return {
-                [`${ a.componentCls }-${ b }`]: {
-                    color: a[`color${ c }`],
-                    background: a[`color${ j }Bg`],
-                    borderColor: a[`color${ j }Border`]
+                [`${ _e.componentCls }-${ _b }`]: {
+                    color: _e[`color${ a }`],
+                    background: _e[`color${ j }Bg`],
+                    borderColor: _e[`color${ j }Border`]
                 }
             };
         },
-        j = a => (0, g.genPresetColor)(a, (b, c) => {
+        j = _e => (0, g.genPresetColor)(_e, (_b, a) => {
             let {
                 textColor: k,
                 lightBorderColor: l,
                 lightColor: m,
                 darkColor: n
-            } = o;
+            } = a;
             return {
-                [`${ a.componentCls }-${ b }`]: {
+                [`${ _e.componentCls }-${ _b }`]: {
                     color: k,
                     background: m,
                     borderColor: l,
                     '&-inverse': {
-                        color: a.colorTextLightSolid,
+                        color: _e.colorTextLightSolid,
                         background: n,
                         borderColor: n
                     }
                 }
             };
         }),
-        k = a => {
+        k = _e => {
             const {
                 paddingXXS: l,
                 lineWidth: m,
                 tagPaddingHorizontal: n,
                 componentCls: o
-            } = p, q = n - m, r = l - m;
+            } = _e, p = n - m, q = l - m;
             return {
-                [o]: Object.assign(Object.assign({}, (0, h.resetComponent)(p)), {
+                [o]: Object.assign(Object.assign({}, (0, h.resetComponent)(_e)), {
                     display: 'inline-block',
                     height: 'auto',
-                    marginInlineEnd: p.marginXS,
-                    paddingInline: q,
-                    fontSize: p.tagFontSize,
-                    lineHeight: `${ p.tagLineHeight }px`,
+                    marginInlineEnd: _e.marginXS,
+                    paddingInline: p,
+                    fontSize: _e.tagFontSize,
+                    lineHeight: `${ _e.tagLineHeight }px`,
                     whiteSpace: 'nowrap',
-                    background: p.tagDefaultBg,
-                    border: `${ p.lineWidth }px ${ p.lineType } ${ p.colorBorder }`,
-                    borderRadius: p.borderRadiusSM,
+                    background: _e.tagDefaultBg,
+                    border: `${ _e.lineWidth }px ${ _e.lineType } ${ _e.colorBorder }`,
+                    borderRadius: _e.borderRadiusSM,
                     opacity: 1,
-                    transition: `all ${ p.motionDurationMid }`,
+                    transition: `all ${ _e.motionDurationMid }`,
                     textAlign: 'start',
                     [`&${ o }-rtl`]: {
                         direction: 'rtl'
                     },
                     '&, a, a:hover': {
-                        color: p.tagDefaultColor
+                        color: _e.tagDefaultColor
                     },
                     [`${ o }-close-icon`]: {
-                        marginInlineStart: r,
-                        color: p.colorTextDescription,
-                        fontSize: p.tagIconSize,
+                        marginInlineStart: q,
+                        color: _e.colorTextDescription,
+                        fontSize: _e.tagIconSize,
                         cursor: 'pointer',
-                        transition: `all ${ p.motionDurationMid }`,
+                        transition: `all ${ _e.motionDurationMid }`,
                         '&:hover': {
-                            color: p.colorTextHeading
+                            color: _e.colorTextHeading
                         }
                     },
                     [`&${ o }-has-color`]: {
                         borderColor: 'transparent',
-                        [`&, a, a:hover, ${ p.iconCls }-close, ${ p.iconCls }-close:hover`]: {
-                            color: p.colorTextLightSolid
+                        [`&, a, a:hover, ${ _e.iconCls }-close, ${ _e.iconCls }-close:hover`]: {
+                            color: _e.colorTextLightSolid
                         }
                     },
                     '&-checkable': {
@@ -3311,87 +3311,87 @@ c.register('ndLzW', function(b, B) {
                         borderColor: 'transparent',
                         cursor: 'pointer',
                         [`&:not(${ o }-checkable-checked):hover`]: {
-                            color: p.colorPrimary,
-                            backgroundColor: p.colorFillSecondary
+                            color: _e.colorPrimary,
+                            backgroundColor: _e.colorFillSecondary
                         },
                         '&:active, &-checked': {
-                            color: p.colorTextLightSolid
+                            color: _e.colorTextLightSolid
                         },
                         '&-checked': {
-                            backgroundColor: p.colorPrimary,
+                            backgroundColor: _e.colorPrimary,
                             '&:hover': {
-                                backgroundColor: p.colorPrimaryHover
+                                backgroundColor: _e.colorPrimaryHover
                             }
                         },
                         '&:active': {
-                            backgroundColor: p.colorPrimaryActive
+                            backgroundColor: _e.colorPrimaryActive
                         }
                     },
                     '&-hidden': {
                         display: 'none'
                     },
-                    [`> ${ p.iconCls } + span, > span + ${ p.iconCls }`]: {
-                        marginInlineStart: q
+                    [`> ${ _e.iconCls } + span, > span + ${ _e.iconCls }`]: {
+                        marginInlineStart: p
                     }
                 })
             };
         };
-    var l = (0, d.default)('Tag', a => {
+    var _l = (0, d.default)('Tag', _e => {
         const {
             fontSize: m,
             lineHeight: n,
             lineWidth: o,
             fontSizeIcon: p
-        } = q, r = Math.round(m * n), s = q.fontSizeSM, t = r - 2 * o, u = q.colorFillAlter, v = q.colorText, w = (0, e.merge)(q, {
-            tagFontSize: s,
-            tagLineHeight: t,
-            tagDefaultBg: u,
-            tagDefaultColor: v,
+        } = _e, q = Math.round(m * n), r = _e.fontSizeSM, s = q - 2 * o, t = _e.colorFillAlter, u = _e.colorText, v = (0, e.merge)(_e, {
+            tagFontSize: r,
+            tagLineHeight: s,
+            tagDefaultBg: t,
+            tagDefaultColor: u,
             tagIconSize: p - 2 * o,
             tagPaddingHorizontal: 8
         });
         return [
-            k(w),
-            j(w),
-            i(w, 'success', 'Success'),
-            i(w, 'processing', 'Info'),
-            i(w, 'error', 'Error'),
-            i(w, 'warning', 'Warning')
+            k(v),
+            j(v),
+            i(v, 'success', 'Success'),
+            i(v, 'processing', 'Info'),
+            i(v, 'error', 'Error'),
+            i(v, 'warning', 'Warning')
         ];
     });
-}), c.register('hTZV68', function(b, c) {
-    function d(a) {
-        if ('string' != typeof a)
-            return a;
-        return a.charAt(0).toUpperCase() + a.slice(1);
+}), a.register('xbYck1', function(b, c) {
+    function d(_e) {
+        if ('string' != typeof _e)
+            return _e;
+        return _e.charAt(0).toUpperCase() + _e.slice(1);
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _l(b.exports, 'default', function() {
+        return _d;
     });
-}), c.register('1nZYn', function(b, c) {
-    a(b.exports, 'centsToFormatedMoney', function() {
-        return d;
+}), a.register('ctFqV', function(b, c) {
+    _l(b.exports, 'centsToFormatedMoney', function() {
+        return _d;
     });
-    const d = a => (a / 100).toLocaleString('en-US', {
+    const _d = _l => (_l / 100).toLocaleString('en-US', {
         style: 'currency',
         currency: 'USD'
     });
-}), c.register('0fUsy', function(b, v) {
-    a(b.exports, 'default', function() {
-        return k;
+}), a.register('i25Pw', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('Vlfxs'),
-        g = c('NS10B'),
-        h = c('f9f+a'),
-        i = c('lmfrI'),
-        j = c('gSUVO');
-    var k = (0, f.observer)(() => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('2x11J'),
+        g = a('R3x1N'),
+        h = a('oXQNI'),
+        i = a('sHRDd'),
+        j = a('b5kvC');
+    var _k = (0, f.observer)(() => {
         const {
-            billing: l
+            billing: _l
         } = e.useContext(g.default);
-        return !l.hasNextCharge || l.planName.toLowerCase().includes('basic') ? null : (0, d.jsxs)(h.default, {
+        return !_l.hasNextCharge || _l.planName.toLowerCase().includes('basic') ? null : (0, d.jsxs)(h.default, {
             style: {
                 marginTop: 10,
                 color: i.default.Black
@@ -3412,7 +3412,7 @@ c.register('ndLzW', function(b, B) {
                                 fontSize: 27,
                                 fontWeight: j.FontWeights.UltraBold
                             },
-                            children: l.nextChargeAmount
+                            children: _l.nextChargeAmount
                         }),
                         (0, d.jsxs)('div', {
                             style: {
@@ -3422,7 +3422,7 @@ c.register('ndLzW', function(b, B) {
                             },
                             children: [
                                 'on ',
-                                l.nextChargeDate
+                                _l.nextChargeDate
                             ]
                         })
                     ]
@@ -3430,23 +3430,23 @@ c.register('ndLzW', function(b, B) {
             ]
         });
     });
-}), c.register('rmwRN', function(b, v) {
-    a(b.exports, 'default', function() {
-        return l;
+}), a.register('1Ojwa', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('Vlfxs'),
-        g = c('f9f+a'),
-        h = c('lmfrI'),
-        i = c('gSUVO'),
-        j = c('1nZYn'),
-        k = c('NS10B');
-    var l = (0, f.observer)(() => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('2x11J'),
+        g = a('oXQNI'),
+        h = a('sHRDd'),
+        i = a('b5kvC'),
+        j = a('ctFqV'),
+        k = a('R3x1N');
+    var _l = (0, f.observer)(() => {
         const {
-            billing: m
+            billing: _m
         } = e.useContext(k.default);
-        return m.accountBalance ? (0, d.jsxs)(g.default, {
+        return _m.accountBalance ? (0, d.jsxs)(g.default, {
             style: {
                 color: h.default.Black,
                 fontFamily: i.Fonts.SFPro,
@@ -3465,31 +3465,31 @@ c.register('ndLzW', function(b, B) {
                         marginTop: -5,
                         fontWeight: i.FontWeights.UltraBold
                     },
-                    children: (0, j.centsToFormatedMoney)(m.accountBalance)
+                    children: (0, j.centsToFormatedMoney)(_m.accountBalance)
                 })
             ]
         }) : null;
     });
-}), c.register('Bbl7N', function(b, v) {
-    a(b.exports, 'default', function() {
-        return r;
+}), a.register('SEnTb', function(b, c) {
+    _s(b.exports, 'default', function() {
+        return _r;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('HKcK8'),
-        g = c('IsmrL'),
-        h = c('f9f+a'),
-        i = c('jrTkz0'),
-        j = c('lmfrI'),
-        k = c('gSUVO'),
-        l = c('NS10B'),
-        m = c('Vlfxs'),
-        n = c('mIF0p'),
-        o = c('PjB0f'),
-        p = c('qAmwF'),
-        q = (g = c('IsmrL'), h = c('f9f+a'), i = c('jrTkz0'), c('GFgjD'));
-    var r = (0, m.observer)(() => {
-        const [s, t] = e.useState(!1), {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('XetsG'),
+        g = a('ulE4q'),
+        h = a('oXQNI'),
+        i = a('MSsQO'),
+        j = a('sHRDd'),
+        k = a('b5kvC'),
+        l = a('R3x1N'),
+        m = a('2x11J'),
+        n = a('AzS0C1'),
+        o = a('PMl60'),
+        p = a('CutOX'),
+        q = (g = a('ulE4q'), h = a('oXQNI'), i = a('MSsQO'), a('INKb2'));
+    var _r = (0, m.observer)(() => {
+        const [_s, t] = e.useState(!1), {
             billing: {
                 last4DigitsOfCard: u,
                 stripePublicKey: v,
@@ -3594,13 +3594,13 @@ c.register('ndLzW', function(b, B) {
                                     url: '/api/billing/create-billing-info-session',
                                     method: 'POST',
                                     success: async t => {
-                                        const y = z;
-                                        let A;
+                                        const y = t;
+                                        let z;
                                         try {
-                                            if (A = await x.redirectToCheckout({
+                                            if (z = await x.redirectToCheckout({
                                                     sessionId: y.id
-                                                }), A && A.error)
-                                                throw A.error;
+                                                }), z && z.error)
+                                                throw z.error;
                                         } catch (x) {
                                             (0, o.throwMessageError)({
                                                 e: x,
@@ -3622,7 +3622,7 @@ c.register('ndLzW', function(b, B) {
                                     }
                                 });
                             },
-                            loading: s,
+                            loading: _s,
                             children: 'Change Credit Card'
                         })
                     ]
@@ -3630,219 +3630,219 @@ c.register('ndLzW', function(b, B) {
             ]
         });
     });
-}), c.register('mIF0p', function(b, c) {
-    a(b.exports, 'loadStripe', function() {
-        return l;
+}), a.register('AzS0C1', function(b, c) {
+    _i(b.exports, 'loadStripe', function() {
+        return _l;
     });
     var d = 'https://js.stripe.com/v3',
         e = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
         f = 'loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used',
         g = null,
-        h = function(a) {
-            return null !== g || (g = new Promise(function(b, c) {
+        h = function(_i) {
+            return null !== g || (g = new Promise(function(j, k) {
                 if ('undefined' != typeof window)
-                    if (window.Stripe && a && console.warn(f), window.Stripe)
-                        b(window.Stripe);
+                    if (window.Stripe && _i && console.warn(f), window.Stripe)
+                        j(window.Stripe);
                     else
                         try {
-                            var i = function() {
-                                for (var j = document.querySelectorAll('script[src^="'.concat(d, '"]')), k = 0; k < j.length; k++) {
-                                    var l = j[k];
-                                    if (e.test(l.src))
-                                        return l;
+                            var l = function() {
+                                for (var m = document.querySelectorAll('script[src^="'.concat(d, '"]')), n = 0; n < m.length; n++) {
+                                    var o = m[n];
+                                    if (e.test(o.src))
+                                        return o;
                                 }
                                 return null;
                             }();
-                            i && a ? console.warn(f) : i || (i = function(a) {
-                                var j = a && !a.advancedFraudSignals ? '?advancedFraudSignals=false' : '',
-                                    k = document.createElement('script');
-                                k.src = ''.concat(d).concat(j);
-                                var l = document.head || document.body;
-                                if (!l)
+                            l && _i ? console.warn(f) : l || (l = function(m) {
+                                var n = m && !m.advancedFraudSignals ? '?advancedFraudSignals=false' : '',
+                                    o = document.createElement('script');
+                                o.src = ''.concat(d).concat(n);
+                                var p = document.head || document.body;
+                                if (!p)
                                     throw new Error('Expected document.body not to be null. Stripe.js requires a <body> element.');
-                                return l.appendChild(k), k;
-                            }(a)), i.addEventListener('load', function() {
-                                window.Stripe ? b(window.Stripe) : c(new Error('Stripe.js not available'));
-                            }), i.addEventListener('error', function() {
-                                c(new Error('Failed to load Stripe.js'));
+                                return p.appendChild(o), o;
+                            }(_i)), l.addEventListener('load', function() {
+                                window.Stripe ? j(window.Stripe) : k(new Error('Stripe.js not available'));
+                            }), l.addEventListener('error', function() {
+                                k(new Error('Failed to load Stripe.js'));
                             });
-                        } catch (a) {
-                            return void c(a);
+                        } catch (_i) {
+                            return void k(_i);
                         }
                 else
-                    b(null);
+                    j(null);
             })), g;
         },
-        i = function(a, b, c) {
-            if (null === a)
+        i = function(j, k, l) {
+            if (null === j)
                 return null;
-            var j = a.apply(void 0, b);
-            return function(a, b) {
-                a && a._registerWrapper && a._registerWrapper({
+            var m = j.apply(void 0, k);
+            return function(n, o) {
+                n && n._registerWrapper && n._registerWrapper({
                     name: 'stripe-js',
                     version: '1.9.0',
-                    startTime: b
+                    startTime: o
                 });
-            }(j, c), j;
+            }(m, l), m;
         },
         j = Promise.resolve().then(function() {
             return h(null);
         }),
         k = !1;
-    j.catch(function(a) {
-        k || console.warn(a);
+    j.catch(function(l) {
+        k || console.warn(l);
     });
-    var l = function() {
-        for (var m = v.length, n = new Array(m), o = 0; o < m; o++)
-            n[o] = v[o];
+    var _l = function() {
+        for (var m = arguments.length, n = new Array(m), o = 0; o < m; o++)
+            n[o] = arguments[o];
         k = !0;
         var p = Date.now();
-        return j.then(function(m) {
-            return i(m, n, p);
+        return j.then(function(q) {
+            return i(q, n, p);
         });
     };
-}), c.register('qAmwF', function(b, q) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('CutOX', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('PjB0f'),
-        e = c('RrDRa');
-    var f = () => {
+    var d = a('PMl60'),
+        e = a('78pxp');
+    var _f = () => {
         (0, d.request)({
             url: '/api/billing/payment-source',
-            success: a => {
-                e.default.billing.cardName = a.source.cardType, e.default.billing.last4DigitsOfCard = a.source.last4Digits, (0, d.request)({
+            success: _n => {
+                e.default.billing.cardName = _n.source.cardType, e.default.billing.last4DigitsOfCard = _n.source.last4Digits, (0, d.request)({
                     url: '/api/billing/stripe-key',
-                    success: a => e.default.billing.stripePublicKey = a.key
+                    success: _n => e.default.billing.stripePublicKey = _n.key
                 });
             }
         });
     };
-}), c.register('ohLcQ', function(b, q) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('ba39C', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('KPNEB'),
-        e = c('9BIne'),
-        f = c('hu5Wv'),
-        g = c('qAmwF'),
-        h = c('I9mdQ');
-    var i = () => {
+    var d = a('RROrh'),
+        e = a('cKZxw'),
+        f = a('hPAAR'),
+        g = a('CutOX'),
+        h = a('Pkvp4');
+    var _i = () => {
         (0, h.default)({
             onSuccess: () => {
                 (0, d.default)(), (0, e.default)(), (0, f.default)(), (0, g.default)();
             }
         });
     };
-}), c.register('KPNEB', function(b, q) {
-    a(b.exports, 'default', function() {
-        return j;
+}), a.register('RROrh', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _j;
     });
-    var d = c('PjB0f'),
-        e = c('RrDRa'),
-        f = c('2lDHL'),
-        g = c('LRoqi'),
-        h = c('1nZYn'),
-        i = c('SeqiC');
-    var j = () => {
+    var d = a('PMl60'),
+        e = a('78pxp'),
+        f = a('OI9Yf'),
+        g = a('uw0dZ'),
+        h = a('ctFqV'),
+        i = a('gAofW');
+    var _j = () => {
         (0, d.isUpgraded)() && (0, i.default)(), (0, d.request)({
             url: '/api/billing/plan-info',
-            success: a => {
+            success: _n => {
                 const {
                     info: k
-                } = l;
-                e.default.billing.planName = (0, f.default)(k.plan), e.default.billing.planDescription = (l => {
-                    if ('basic' === l.info.plan)
+                } = _n;
+                e.default.billing.planName = (0, f.default)(k.plan), e.default.billing.planDescription = (_n => {
+                    if ('basic' === _n.info.plan)
                         return 'Free Forever!';
-                    if (l.info.info) {
-                        const m = l.info.info;
-                        if (m.providedByMessage)
-                            return m.providedByMessage;
-                        if (m.cost && m.timePeriod)
-                            return `${ (0, h.centsToFormatedMoney)(m.cost) } per ${ m.timePeriod }`;
-                        if (m.bulkName)
-                            return `Paid by ${ m.bulkName }.`;
+                    if (_n.info.info) {
+                        const l = _n.info.info;
+                        if (l.providedByMessage)
+                            return l.providedByMessage;
+                        if (l.cost && l.timePeriod)
+                            return `${ (0, h.centsToFormatedMoney)(l.cost) } per ${ l.timePeriod }`;
+                        if (l.bulkName)
+                            return `Paid by ${ l.bulkName }.`;
                     }
                     return '';
-                })(l), k.info && k.info.timePeriod && (e.default.billing.billingInterval = k.info.timePeriod), 'stripe' === k.source && (0, g.default)();
+                })(_n), k.info && k.info.timePeriod && (e.default.billing.billingInterval = k.info.timePeriod), 'stripe' === k.source && (0, g.default)();
             }
         });
     };
-}), c.register('LRoqi', function(b, q) {
-    a(b.exports, 'default', function() {
-        return g;
+}), a.register('uw0dZ', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('PjB0f'),
-        e = c('RrDRa'),
-        f = c('1nZYn');
-    var g = () => {
+    var d = a('PMl60'),
+        e = a('78pxp'),
+        f = a('ctFqV');
+    var _g = () => {
         (0, d.request)({
             url: '/api/billing/upcoming-invoice',
-            success: a => {
-                e.default.billing.nextChargeAmount = (0, f.centsToFormatedMoney)(a.amount), e.default.billing.nextChargeDate = a.date, e.default.billing.hasNextCharge = !0;
+            success: _n => {
+                e.default.billing.nextChargeAmount = (0, f.centsToFormatedMoney)(_n.amount), e.default.billing.nextChargeDate = _n.date, e.default.billing.hasNextCharge = !0;
             }
         });
     };
-}), c.register('SeqiC', function(b, q) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('gAofW', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('PjB0f'),
-        e = c('RrDRa');
-    var f = () => {
+    var d = a('PMl60'),
+        e = a('78pxp');
+    var _f = () => {
         (0, d.request)({
             url: '/api/billing/downgrade-details',
-            success: a => {
-                e.default.billing.canDowngrade = a.canDowngrade, a.message && (e.default.billing.downgradeMessage = a.message), a.subscriptionEndDateText && (e.default.billing.downgradeDateMessage = a.subscriptionEndDateText);
+            success: _n => {
+                e.default.billing.canDowngrade = _n.canDowngrade, _n.message && (e.default.billing.downgradeMessage = _n.message), _n.subscriptionEndDateText && (e.default.billing.downgradeDateMessage = _n.subscriptionEndDateText);
             }
         });
     };
-}), c.register('9BIne', function(b, q) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('cKZxw', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('PjB0f'),
-        e = c('RrDRa');
-    var f = () => {
+    var d = a('PMl60'),
+        e = a('78pxp');
+    var _f = () => {
         (0, d.request)({
             url: '/api/billing/charges',
-            success: a => e.default.billing.charges.replace(a.charges)
+            success: _n => e.default.billing.charges.replace(_n.charges)
         });
     };
-}), c.register('hu5Wv', function(b, q) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('hPAAR', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('PjB0f'),
-        e = c('RrDRa');
-    var f = () => {
+    var d = a('PMl60'),
+        e = a('78pxp');
+    var _f = () => {
         (0, d.request)({
             url: '/api/billing/account-balance',
-            success: a => {
-                e.default.billing.accountBalance = a.balance;
+            success: _n => {
+                e.default.billing.accountBalance = _n.balance;
             }
         });
     };
-}), c.register('xNi98', function(b, q) {
-    a(b.exports, 'default', function() {
-        return m;
+}), a.register('b0KlL', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _m;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('IsmrL'),
-        g = c('f9f+a'),
-        h = c('gSUVO'),
-        i = c('lmfrI'),
-        j = c('Vlfxs'),
-        k = c('NS10B'),
-        l = c('0/vMN');
-    var m = (0, j.observer)(() => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('ulE4q'),
+        g = a('oXQNI'),
+        h = a('b5kvC'),
+        i = a('sHRDd'),
+        j = a('2x11J'),
+        k = a('R3x1N'),
+        l = a('38yX1');
+    var _m = (0, j.observer)(() => {
         const {
-            billing: n
+            billing: _n
         } = e.useContext(k.default), [o, p] = e.useState(!1), q = () => p(!o);
-        if (!n.canDowngrade) {
-            if (n.downgradeMessage && n.downgradeMessage.includes('set to end')) {
-                const r = n.downgradeMessage.split('end on ')[1];
+        if (!_n.canDowngrade) {
+            if (_n.downgradeMessage && _n.downgradeMessage.includes('set to end')) {
+                const r = _n.downgradeMessage.split('end on ')[1];
                 return r ? (0, d.jsxs)(g.default, {
                     style: {
                         fontFamily: h.Fonts.SFPro,
@@ -3875,7 +3875,7 @@ c.register('ndLzW', function(b, B) {
                         },
                         children: [
                             (0, d.jsx)('div', {}),
-                            n.canDowngrade && (0, d.jsx)(f.default, {
+                            _n.canDowngrade && (0, d.jsx)(f.default, {
                                 onClick: q,
                                 type: 'primary',
                                 danger: !0,
@@ -3891,33 +3891,33 @@ c.register('ndLzW', function(b, B) {
             ]
         });
     });
-}), c.register('0/vMN', function(b, y) {
-    a(b.exports, 'default', function() {
-        return v;
+}), a.register('38yX1', function(b, c) {
+    _s(b.exports, 'default', function() {
+        return _v;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('Vlfxs'),
-        g = c('IsmrL'),
-        h = c('ExtIT'),
-        i = c('c6x8w'),
-        j = c('cR5QE'),
-        k = c('eAjRL0'),
-        l = c('gSUVO'),
-        m = c('lmfrI'),
-        n = c('2lDHL'),
-        o = c('NS10B'),
-        p = c('PjB0f'),
-        q = c('GFgjD'),
-        r = c('ohLcQ'),
-        s = c('4/f+U');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('2x11J'),
+        g = a('ulE4q'),
+        h = a('fmVdR'),
+        i = a('ewwAh'),
+        j = a('YRlpt'),
+        k = a('yiusa0'),
+        l = a('b5kvC'),
+        m = a('sHRDd'),
+        n = a('OI9Yf'),
+        o = a('R3x1N'),
+        p = a('PMl60'),
+        q = a('INKb2'),
+        r = a('ba39C'),
+        s = a('4iV4e');
     let t;
     var u;
     (u = t || (t = {})).firstAsk = 'firstAsk', u.reason = 'reason', u.groupOrder = 'groupOrder';
-    var v = (0, f.observer)(a => {
+    var _v = (0, f.observer)(_s => {
         const {
             billing: w
-        } = e.useContext(o.default), [x, y] = e.useState(t.firstAsk), [z, A] = e.useState(''), [B, C] = e.useState(''), [D, E] = e.useState(!1), F = !D, G = a => A(a.target.value), H = a => C(a.target.value), I = () => {
+        } = e.useContext(o.default), [x, y] = e.useState(t.firstAsk), [z, A] = e.useState(''), [B, C] = e.useState(''), [D, E] = e.useState(!1), F = !D, G = _s => A(_s.target.value), H = _s => C(_s.target.value), I = () => {
             F && (E(!0), (0, p.request)({
                 url: '/api/billing/downgrade',
                 data: {
@@ -3927,7 +3927,7 @@ c.register('ndLzW', function(b, B) {
                 success: () => {
                     j.default.success({
                         title: `You've canceled your ${ (0, n.default)((0, p.getUser)().type) } subscription${ w.downgradeDateMessage && ' to end on ' + w.downgradeDateMessage }.`
-                    }), w.reset(), (0, r.default)(), a.close();
+                    }), w.reset(), (0, r.default)(), _s.close();
                 },
                 error: () => (0, q.throwError)({
                     title: 'Error canceling subscription',
@@ -3937,8 +3937,8 @@ c.register('ndLzW', function(b, B) {
             }));
         }, J = () => y(t.reason), K = () => y(t.groupOrder);
         return (0, d.jsx)(j.default, {
-            open: a.visible,
-            onCancel: a.close,
+            open: _s.visible,
+            onCancel: _s.close,
             style: {
                 fontFamily: l.Fonts.SFPro,
                 color: m.default.Black
@@ -4011,7 +4011,7 @@ c.register('ndLzW', function(b, B) {
                         block: !0,
                         type: 'primary',
                         size: 'large',
-                        onClick: a.close,
+                        onClick: _s.close,
                         children: 'Got It!'
                     }),
                     (0, d.jsx)('div', {
@@ -4070,15 +4070,15 @@ c.register('ndLzW', function(b, B) {
                         },
                         onChange: G,
                         value: z,
-                        children: w.map(a => (0, d.jsx)(k.default, {
-                            value: a.id,
+                        children: _w.map(_s => (0, d.jsx)(k.default, {
+                            value: _s.id,
                             style: {
                                 fontSize: 15,
                                 color: m.default.Black,
                                 marginBottom: 4
                             },
-                            children: a.text
-                        }, a.id))
+                            children: _s.text
+                        }, _s.id))
                     }),
                     'other' === z ? (0, d.jsx)(i.default, {
                         placeholder: 'Reason...',
@@ -4105,7 +4105,7 @@ c.register('ndLzW', function(b, B) {
             }) : null
         });
     });
-    const w = [{
+    const _w = [{
             id: 'break',
             text: 'Summer break/taking a break'
         },
@@ -4151,37 +4151,37 @@ c.register('ndLzW', function(b, B) {
             text: 'Other'
         }
     ];
-}), c.register('0e2dr', function(b, d) {
-    a(b.exports, 'default', function() {
-        return r;
+}), a.register('9d1uR', function(b, c) {
+    _s(b.exports, 'default', function() {
+        return _r;
     });
-    var d = c('8kSQZ'),
-        e = c('Vlfxs'),
-        f = c('uPP4W'),
-        g = c('NS10B'),
-        h = c('PjB0f'),
-        i = c('IsmrL'),
-        j = c('f9f+a'),
-        k = c('gSUVO'),
-        l = c('lmfrI'),
-        m = c('zgQWX27'),
-        n = c('0wLl2'),
-        o = c('iYEuk12'),
-        p = c('q721a');
-    const q = a => (0, d.jsx)(j.default, {
+    var d = a('0hzx+'),
+        e = a('2x11J'),
+        f = a('LEQ5w'),
+        g = a('R3x1N'),
+        h = a('PMl60'),
+        i = a('ulE4q'),
+        j = a('oXQNI'),
+        k = a('b5kvC'),
+        l = a('sHRDd'),
+        m = a('xQDqe25'),
+        n = a('hHkFq'),
+        o = a('2HvvA11'),
+        p = a('gs4MT');
+    const q = _s => (0, d.jsx)(j.default, {
         style: {
             fontFamily: k.Fonts.SFPro,
             color: l.default.White,
             marginTop: 10,
             overflow: 'hidden'
         },
-        ...a
+        ..._s
     });
-    var r = (0, e.observer)(() => {
+    var _r = (0, e.observer)(() => {
         const {
-            billing: s
+            billing: _s
         } = f.useContext(g.default);
-        return (0, h.isUpgraded)() && s.billingInterval && 'year' !== s.billingInterval ? (0, d.jsx)(q, {
+        return (0, h.isUpgraded)() && _s.billingInterval && 'year' !== _s.billingInterval ? (0, d.jsx)(q, {
             bodyStyle: {
                 backgroundImage: 'linear-gradient(to left, #434343 0%, #1c1c1c 100%)',
                 padding: 40
@@ -4230,27 +4230,27 @@ c.register('ndLzW', function(b, B) {
             })
         }) : null;
     });
-}), c.register('zgQWX27', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('xQDqe25', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('+Ag0S27'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('AxRpU23'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'StarOutlined';
-    var i = e.forwardRef(h);
-}), c.register('+Ag0S27', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('AxRpU23', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -4267,20 +4267,20 @@ c.register('ndLzW', function(b, B) {
         name: 'star',
         theme: 'outlined'
     };
-}), c.register('XEed7', function(b, h) {
-    a(b.exports, 'default', function() {
-        return m;
+}), a.register('fOAV4', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _m;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('gSUVO'),
-        f = c('lmfrI'),
-        g = c('ExtIT'),
-        h = c('h99Nu');
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('b5kvC'),
+        f = a('sHRDd'),
+        g = a('fmVdR'),
+        h = a('Axq+p');
     let i;
-    const j = a => (0, d.jsx)('div', {
+    const j = _n => (0, d.jsx)('div', {
             style: {
-                backgroundImage: `url(${ a.src })`,
+                backgroundImage: `url(${ _n.src })`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 borderRadius: '50%',
@@ -4291,12 +4291,12 @@ c.register('ndLzW', function(b, B) {
                 borderColor: '#607d8b'
             }
         }),
-        k = a => (0, d.jsxs)('div', {
+        k = _n => (0, d.jsxs)('div', {
             className: 'flex wrap vc',
             children: [
                 (0, d.jsx)('div', {
                     children: (0, d.jsx)('img', {
-                        src: a.image,
+                        src: _n.image,
                         style: {
                             height: 99,
                             marginRight: 22
@@ -4307,7 +4307,7 @@ c.register('ndLzW', function(b, B) {
                     style: {
                         flex: 1
                     },
-                    children: a.content
+                    children: _n.content
                 })
             ]
         }),
@@ -4316,11 +4316,11 @@ c.register('ndLzW', function(b, B) {
                 height: 35
             }
         });
-    var m = () => {
-        const n = () => {
+    var _m = () => {
+        const _n = () => {
             window.open('https://help.gimkit.com');
         };
-        return (0, d.jsx)(n, {
+        return (0, d.jsx)(_n, {
             className: 'flex hc',
             children: (0, d.jsxs)('div', {
                 style: {
@@ -4389,7 +4389,7 @@ c.register('ndLzW', function(b, B) {
                                         'Check our',
                                         ' ',
                                         (0, d.jsx)('a', {
-                                            onClick: n,
+                                            onClick: _n,
                                             href: '#',
                                             children: 'helpdesk'
                                         })
@@ -4405,7 +4405,7 @@ c.register('ndLzW', function(b, B) {
                                         ' ',
                                         (0, d.jsx)('a', {
                                             href: '#',
-                                            onClick: n,
+                                            onClick: _n,
                                             children: 'Click here'
                                         }),
                                         ' ',
@@ -4511,77 +4511,77 @@ c.register('ndLzW', function(b, B) {
             })
         });
     };
-    const n = h.default.div(i || (i = (a => a)``));
-}), c.register('kMQjd3', function(b, h) {
-    a(b.exports, 'default', function() {
-        return f;
+    const _n = h.default.div(i || (i = (_d => _d)``));
+}), a.register('RC6kl3', function(b, c) {
+    _d(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('GQAFg1');
-    var f = a => {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('KAA9h2');
+    var _f = _d => {
         const g = (0, e.use100vh)();
         return (0, d.jsx)('div', {
             style: {
                 height: g,
                 width: '100%'
             },
-            className: a.className,
-            children: a.children
+            className: _d.className,
+            children: _d.children
         });
     };
-}), c.register('GQAFg1', function(h, i) {
-    a(h.exports, 'use100vh', function() {
-        return i;
-    }, function(a) {
-        return i = a;
+}), a.register('KAA9h2', function(b, c) {
+    _d(b.exports, 'use100vh', function() {
+        return _i;
+    }, function(_d) {
+        return _i = _d;
     });
-    var d = c('uPP4W'),
+    var d = a('LEQ5w'),
         e = function() {
-            return e = Object.assign || function(a) {
-                for (var f, g = 1, h = v.length; g < h; g++)
-                    for (var i in f = v[g])
-                        Object.prototype.hasOwnProperty.call(f, i) && (a[i] = f[i]);
-                return a;
-            }, e.apply(this, v);
+            return e = Object.assign || function(f) {
+                for (var g, h = 1, i = arguments.length; h < i; h++)
+                    for (var j in g = arguments[h])
+                        Object.prototype.hasOwnProperty.call(g, j) && (f[j] = g[j]);
+                return f;
+            }, e.apply(this, arguments);
         },
-        f = function(a, b) {
-            var g = {};
-            for (var h in a)
-                Object.prototype.hasOwnProperty.call(a, h) && b.indexOf(h) < 0 && (g[h] = a[h]);
-            if (null != a && 'function' == typeof Object.getOwnPropertySymbols) {
-                var i = 0;
-                for (h = Object.getOwnPropertySymbols(a); i < h.length; i++)
-                    b.indexOf(h[i]) < 0 && Object.prototype.propertyIsEnumerable.call(a, h[i]) && (g[h[i]] = a[h[i]]);
+        f = function(g, h) {
+            var i = {};
+            for (var j in g)
+                Object.prototype.hasOwnProperty.call(g, j) && h.indexOf(j) < 0 && (i[j] = g[j]);
+            if (null != g && 'function' == typeof Object.getOwnPropertySymbols) {
+                var k = 0;
+                for (j = Object.getOwnPropertySymbols(g); k < j.length; k++)
+                    h.indexOf(j[k]) < 0 && Object.prototype.propertyIsEnumerable.call(g, j[k]) && (i[j[k]] = g[j[k]]);
             }
-            return g;
+            return i;
         },
         g = !1,
-        h = (0, d.forwardRef)(function(a, c) {
-            var i = a.style,
-                j = f(a, ['style']),
-                k = i();
-            !g && (null == i ? void 0 : i.height) && (g = !0, console.warn('<Div100vh /> overrides the height property of the style prop'));
-            var l = e(e({}, i), {
-                height: k ? k + 'px' : '100vh'
+        h = (0, d.forwardRef)(function(i, j) {
+            var k = i.style,
+                l = f(i, ['style']),
+                m = _i();
+            !g && (null == k ? void 0 : k.height) && (g = !0, console.warn('<Div100vh /> overrides the height property of the style prop'));
+            var n = e(e({}, k), {
+                height: m ? m + 'px' : '100vh'
             });
-            return b(d).createElement('div', e({
-                ref: c,
-                style: l
-            }, j));
+            return _k(d).createElement('div', e({
+                ref: j,
+                style: n
+            }, l));
         });
     h.displayName = 'Div100vh';
 
-    function i() {
-        var j = (0, d.useState)(j),
-            k = j[0],
+    function _i() {
+        var j = (0, d.useState)(_i),
+            _k = j[0],
             l = j[1],
             m = function() {
                 var n = (0, d.useState)(!1),
                     o = n[0],
                     p = n[1];
                 return (0, d.useEffect)(function() {
-                    k() && p(!0);
+                    _i() && p(!0);
                 }, []), o;
             }();
         return (0, d.useEffect)(function() {
@@ -4592,51 +4592,51 @@ c.register('ndLzW', function(b, B) {
                     };
 
             function n() {
-                var o = j();
+                var o = _i();
                 l(o);
             }
-        }, [m]), m ? k : null;
+        }, [m]), m ? _k : null;
     }
 
-    function j() {
-        return k() ? window.innerHeight : null;
+    function _i() {
+        return _i() ? window.innerHeight : null;
     }
 
-    function k() {
+    function _i() {
         return 'undefined' != typeof window && 'undefined' != typeof document;
     }
-}), c.register('XRX1525', function(b, j) {
-    a(b.exports, 'default', function() {
-        return g;
+}), a.register('kRwUk25', function(b, c) {
+    _h(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('xgR9K'),
-        e = c('uPP4W'),
-        f = c('qEw51');
+    var d = a('TTc70'),
+        e = a('LEQ5w'),
+        f = a('1P5ls');
 
-    function g(a, b, c) {
-        return function(j) {
+    function _g(_h, i, j) {
+        return function(k) {
             const {
-                prefixCls: h,
-                style: i
-            } = j, k = e.useRef(null), [l, m] = e.useState(0), [n, o] = e.useState(0), [p, q] = (0, d.default)(!1, {
-                value: j.open
+                prefixCls: l,
+                style: m
+            } = k, n = e.useRef(null), [o, p] = e.useState(0), [q, r] = e.useState(0), [s, t] = (0, d.default)(!1, {
+                value: k.open
             }), {
-                getPrefixCls: r
-            } = e.useContext(f.ConfigContext), s = r(b || 'select', h);
+                getPrefixCls: u
+            } = e.useContext(f.ConfigContext), v = u(i || 'select', l);
             return e.useEffect(() => {
-                if (q(!0), 'undefined' != typeof ResizeObserver) {
-                    const t = new ResizeObserver(t => {
-                            const u = t[0].target;
-                            m(u.offsetHeight + 8), o(u.offsetWidth);
+                if (t(!0), 'undefined' != typeof ResizeObserver) {
+                    const w = new ResizeObserver(w => {
+                            const x = w[0].target;
+                            p(x.offsetHeight + 8), r(x.offsetWidth);
                         }),
-                        u = setInterval(() => {
-                            var v;
-                            const w = c ? `.${ c(s) }` : `.${ s }-dropdown`,
-                                x = null === (v = k.current) || void 0 === v ? void 0 : v.querySelector(w);
-                            x && (clearInterval(u), t.observe(x));
+                        x = setInterval(() => {
+                            var y;
+                            const z = j ? `.${ j(v) }` : `.${ v }-dropdown`,
+                                A = null === (y = n.current) || void 0 === y ? void 0 : y.querySelector(z);
+                            A && (clearInterval(x), w.observe(A));
                         }, 10);
                     return () => {
-                        clearInterval(u), t.disconnect();
+                        clearInterval(x), w.disconnect();
                     };
                 }
             }, []), e.createElement(f.default, {
@@ -4648,29 +4648,29 @@ c.register('ndLzW', function(b, B) {
                     }
                 }
             }, e.createElement('div', {
-                ref: k,
+                ref: n,
                 style: {
-                    paddingBottom: l,
+                    paddingBottom: o,
                     position: 'relative',
                     width: 'fit-content',
-                    minWidth: n
+                    minWidth: q
                 }
-            }, e.createElement(a, Object.assign({}, j, {
-                style: Object.assign(Object.assign({}, i), {
+            }, e.createElement(_h, Object.assign({}, k, {
+                style: Object.assign(Object.assign({}, m), {
                     margin: 0
                 }),
-                open: p,
-                visible: p,
-                getPopupContainer: () => k.current
+                open: s,
+                visible: s,
+                getPopupContainer: () => n.current
             }))));
         };
     }
-}), c.register('2TjlJ25', function(b, p) {
-    a(b.exports, 'initMoveMotion', function() {
-        return m;
+}), a.register('N9LXh20', function(b, c) {
+    _b(b.exports, 'initMoveMotion', function() {
+        return _m;
     });
-    var d = c('M5GjZ'),
-        e = c('YNerC');
+    var d = a('wC0DT'),
+        e = a('4vKB9');
     const f = new(0, d.Keyframes)('antMoveDownIn', {
             '0%': {
                 transform: 'translate3d(0, 100%, 0)',
@@ -4783,66 +4783,66 @@ c.register('ndLzW', function(b, B) {
                 outKeyframes: k
             }
         },
-        m = (a, b) => {
+        _m = (_b, b) => {
             const {
                 antCls: n
-            } = o, p = `${ n }-${ b }`, {
-                inKeyframes: q,
-                outKeyframes: r
+            } = _b, o = `${ n }-${ b }`, {
+                inKeyframes: p,
+                outKeyframes: q
             } = l[b];
             return [
-                (0, e.initMotion)(p, q, r, o.motionDurationMid),
+                (0, e.initMotion)(o, p, q, _b.motionDurationMid),
                 {
-                    [`\n        ${ p }-enter,\n        ${ p }-appear\n      `]: {
+                    [`\n        ${ o }-enter,\n        ${ o }-appear\n      `]: {
                         opacity: 0,
-                        animationTimingFunction: o.motionEaseOutCirc
+                        animationTimingFunction: _b.motionEaseOutCirc
                     },
-                    [`${ p }-leave`]: {
-                        animationTimingFunction: o.motionEaseInOutCirc
+                    [`${ o }-leave`]: {
+                        animationTimingFunction: _b.motionEaseInOutCirc
                     }
                 }
             ];
         };
-}), c.register('SlNZ027', function(a, b) {
-    var d = c('QMiH027'),
+}), a.register('jlX4s16', function(_b, c) {
+    var d = a('RnV2k27'),
         e = {
             'text/plain': 'Text',
             'text/html': 'Url',
             default: 'Text'
         };
-    a.exports = function(a, b) {
-        var f, g, h, i, j, k, l = !1;
-        b || (b = {}), f = b.debug || !1;
+    _b.exports = function(f, g) {
+        var h, i, j, k, l, m, n = !1;
+        g || (g = {}), h = g.debug || !1;
         try {
-            if (h = d(), i = document.createRange(), j = document.getSelection(), (k = document.createElement('span')).textContent = a, k.ariaHidden = 'true', k.style.all = 'unset', k.style.position = 'fixed', k.style.top = 0, k.style.clip = 'rect(0, 0, 0, 0)', k.style.whiteSpace = 'pre', k.style.webkitUserSelect = 'text', k.style.MozUserSelect = 'text', k.style.msUserSelect = 'text', k.style.userSelect = 'text', k.addEventListener('copy', function(d) {
-                    if (d.stopPropagation(), b.format)
-                        if (d.preventDefault(), void 0 === d.clipboardData) {
-                            f && console.warn('unable to use e.clipboardData'), f && console.warn('trying IE specific stuff'), window.clipboardData.clearData();
-                            var m = e[b.format] || e.default;
-                            window.clipboardData.setData(m, a);
+            if (j = d(), k = document.createRange(), l = document.getSelection(), (m = document.createElement('span')).textContent = f, m.ariaHidden = 'true', m.style.all = 'unset', m.style.position = 'fixed', m.style.top = 0, m.style.clip = 'rect(0, 0, 0, 0)', m.style.whiteSpace = 'pre', m.style.webkitUserSelect = 'text', m.style.MozUserSelect = 'text', m.style.msUserSelect = 'text', m.style.userSelect = 'text', m.addEventListener('copy', function(o) {
+                    if (o.stopPropagation(), g.format)
+                        if (o.preventDefault(), void 0 === o.clipboardData) {
+                            h && console.warn('unable to use e.clipboardData'), h && console.warn('trying IE specific stuff'), window.clipboardData.clearData();
+                            var p = e[g.format] || e.default;
+                            window.clipboardData.setData(p, f);
                         } else
-                            d.clipboardData.clearData(), d.clipboardData.setData(b.format, a);
-                    b.onCopy && (d.preventDefault(), b.onCopy(d.clipboardData));
-                }), document.body.appendChild(k), i.selectNodeContents(k), j.addRange(i), !document.execCommand('copy'))
+                            o.clipboardData.clearData(), o.clipboardData.setData(g.format, f);
+                    g.onCopy && (o.preventDefault(), g.onCopy(o.clipboardData));
+                }), document.body.appendChild(m), k.selectNodeContents(m), l.addRange(k), !document.execCommand('copy'))
                 throw new Error('copy command was unsuccessful');
-            l = !0;
+            n = !0;
         } catch (d) {
-            f && console.error('unable to copy using execCommand: ', d), f && console.warn('trying IE specific stuff');
+            h && console.error('unable to copy using execCommand: ', d), h && console.warn('trying IE specific stuff');
             try {
-                window.clipboardData.setData(b.format || 'text', a), b.onCopy && b.onCopy(window.clipboardData), l = !0;
+                window.clipboardData.setData(g.format || 'text', f), g.onCopy && g.onCopy(window.clipboardData), n = !0;
             } catch (d) {
-                f && console.error('unable to copy using clipboardData: ', d), f && console.error('falling back to prompt'), g = function(a) {
-                    var m = (/mac os x/i.test(navigator.userAgent) ? '\u2318' : 'Ctrl') + '+C';
-                    return a.replace(/#{\s*key\s*}/g, m);
-                }('message' in b ? b.message : 'Copy to clipboard: #{key}, Enter'), window.prompt(g, a);
+                h && console.error('unable to copy using clipboardData: ', d), h && console.error('falling back to prompt'), i = function(o) {
+                    var p = (/mac os x/i.test(navigator.userAgent) ? '\u2318' : 'Ctrl') + '+C';
+                    return o.replace(/#{\s*key\s*}/g, p);
+                }('message' in g ? g.message : 'Copy to clipboard: #{key}, Enter'), window.prompt(i, f);
             }
         } finally {
-            j && ('function' == typeof j.removeRange ? j.removeRange(i) : j.removeAllRanges()), k && document.body.removeChild(k), h();
+            l && ('function' == typeof l.removeRange ? l.removeRange(k) : l.removeAllRanges()), m && document.body.removeChild(m), j();
         }
-        return l;
+        return n;
     };
-}), c.register('QMiH027', function(a, b) {
-    a.exports = function() {
+}), a.register('RnV2k27', function(b, c) {
+    b.exports = function() {
         var d = document.getSelection();
         if (!d.rangeCount)
             return function() {};
@@ -4858,25 +4858,25 @@ c.register('ndLzW', function(b, B) {
         }
         return d.removeAllRanges(),
             function() {
-                'Caret' === d.type && d.removeAllRanges(), d.rangeCount || f.forEach(function(e) {
-                    d.addRange(e);
+                'Caret' === d.type && d.removeAllRanges(), d.rangeCount || f.forEach(function(h) {
+                    d.addRange(h);
                 }), e && e.focus();
             };
     };
-}), c.register('qLhB38', function(b, d) {
-    a(b.exports, 'default', function() {
-        return l;
+}), a.register('DKaq/', function(b, c) {
+    _f(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('cR5QE'),
-        h = c('lmfrI'),
-        i = c('2WDH6');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('YRlpt'),
+        h = a('sHRDd'),
+        i = a('x8CoD');
     let j;
-    const k = f.default.img.attrs(a => ({
-        src: a.image
-    }))(j || (j = (a => a)`
+    const k = f.default.img.attrs(_f => ({
+        src: _f.image
+    }))(j || (j = (_f => _f)`
   cursor: pointer;
   height: ${ 0 }px;
   width: ${ 0 }px;
@@ -4885,26 +4885,26 @@ c.register('ndLzW', function(b, B) {
   ${ 0 }
   flex-shrink: 0;
   object-fit: cover;
-`), a => a.size, a => a.size, a => a.customRightMargin ? a.customRightMargin : 0, a => a.showBorder && `border: solid ${ h.default.Black } 1px;`);
-    var l = a => {
+`), _f => _f.size, _f => _f.size, _f => _f.customRightMargin ? _f.customRightMargin : 0, _f => _f.showBorder && `border: solid ${ h.default.Black } 1px;`);
+    var _l = _f => {
         const [m, n] = e.useState(!1);
         return (0, d.jsxs)(d.Fragment, {
             children: [
                 (0, d.jsx)(k, {
-                    ...a,
+                    ..._f,
                     onClick: m => {
-                        m.stopPropagation(), a.onClick && a.onClick(), a.blockModalOpen || n(!0);
+                        m.stopPropagation(), _f.onClick && _f.onClick(), _f.blockModalOpen || n(!0);
                     }
                 }),
                 (0, d.jsx)(g.default, {
                     open: m,
-                    onCancel: a => {
-                        a.stopPropagation(), n(!1);
+                    onCancel: _f => {
+                        _f.stopPropagation(), n(!1);
                     },
                     footer: null,
                     closable: !1,
                     children: (0, d.jsx)('img', {
-                        src: (0, i.getCloudinaryUrl)(a.image),
+                        src: (0, i.getCloudinaryUrl)(_f.image),
                         style: {
                             width: '100%'
                         }
@@ -4913,133 +4913,133 @@ c.register('ndLzW', function(b, B) {
             ]
         });
     };
-}), c.register('2WDH6', function(b, c) {
-    a(b.exports, 'getCloudinaryUrl', function() {
-        return d;
+}), a.register('x8CoD', function(b, c) {
+    _f(b.exports, 'getCloudinaryUrl', function() {
+        return _d;
     });
-    const d = a => {
-            const e = e(a);
-            return e ? a.includes('/video/upload') ? `https://${ f }/video/upload/${ e }` : `https://${ f }/image/upload/f_auto,fl_lossy,q_auto/${ e }` : a;
+    const _d = _f => {
+            const e = _e(_f);
+            return e ? _f.includes('/video/upload') ? `https://${ _f }/video/upload/${ e }` : `https://${ _f }/image/upload/f_auto,fl_lossy,q_auto/${ e }` : _f;
         },
-        e = a => {
-            if (!i.some(b => a.includes(b)))
+        _e = _f => {
+            if (!_i.some(b => _f.includes(b)))
                 return null;
-            if (a.includes(g) && !a.includes(`/${ h }/`))
+            if (_f.includes(_g) && !_f.includes(`/${ _h }/`))
                 return null;
-            const f = a.split('/');
+            const f = _f.split('/');
             if (!f || !f.length || f.length < 2)
                 return null;
             const g = f[f.length - 2],
                 h = f[f.length - 1];
             return g && h && g.startsWith('v') ? `${ g }/${ h }` : null;
         },
-        f = 'media.gimkit.com',
-        g = 'res.cloudinary.com',
-        h = 'gimkit-production',
-        i = [
-            f,
-            g
+        _f = 'media.gimkit.com',
+        _g = 'res.cloudinary.com',
+        _h = 'gimkit-production',
+        _i = [
+            _f,
+            _g
         ];
-}), c.register('2gkXu26', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('Kc6XZ23', function(b, c) {
+    _f(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         sideMargin: 50,
         optionWidth: 200
     };
-}), c.register('QNMlx24', function(b, h) {
-    a(b.exports, 'useMediaMatch', function() {
-        return e;
+}), a.register('/2bBN24', function(b, c) {
+    _f(b.exports, 'useMediaMatch', function() {
+        return _e;
     });
-    var d = c('uPP4W');
+    var d = a('LEQ5w');
 
-    function e(a) {
+    function _e(_f) {
         if ('undefined' == typeof window)
             return console.warn('useMediaMatch cannot function as window is undefined.'), !1;
-        var f = (0, d.useMemo)(function() {
-                return window.matchMedia(a);
-            }, [a]),
-            g = (0, d.useState)(function() {
-                return f.matches;
+        var g = (0, d.useMemo)(function() {
+                return window.matchMedia(_f);
+            }, [_f]),
+            h = (0, d.useState)(function() {
+                return g.matches;
             }),
-            h = g[0],
-            i = g[1];
+            i = h[0],
+            j = h[1];
         return (0, d.useEffect)(function() {
-            i(f.matches);
-            var j = function(j) {
-                return i(j.matches);
+            j(g.matches);
+            var k = function(l) {
+                return j(l.matches);
             };
-            return f.addEventListener ? (f.addEventListener('change', j), function() {
-                return f.removeEventListener('change', j);
-            }) : (f.addListener(j), function() {
-                return f.removeListener(j);
+            return g.addEventListener ? (g.addEventListener('change', k), function() {
+                return g.removeEventListener('change', k);
+            }) : (g.addListener(k), function() {
+                return g.removeListener(k);
             });
-        }, [f]), h;
+        }, [g]), i;
     }
-}), c.register('tYruc25', function(a, b) {
-    var d = a.exports && a.exports.__createBinding || (Object.create ? function(a, b, c, d) {
-            void 0 === d && (d = c), Object.defineProperty(a, d, {
+}), a.register('ptkti24', function(b, c) {
+    var d = b.exports && b.exports.__createBinding || (Object.create ? function(e, f, g, h) {
+            void 0 === h && (h = g), Object.defineProperty(e, h, {
                 enumerable: !0,
                 get: function() {
-                    return b[c];
+                    return f[g];
                 }
             });
-        } : function(a, b, c, d) {
-            void 0 === d && (d = c), a[d] = b[c];
+        } : function(e, f, g, h) {
+            void 0 === h && (h = g), e[h] = f[g];
         }),
-        e = a.exports && a.exports.__exportStar || function(a, b) {
-            for (var f in a)
-                'default' === f || Object.prototype.hasOwnProperty.call(b, f) || d(b, a, f);
+        e = b.exports && b.exports.__exportStar || function(f, g) {
+            for (var h in f)
+                'default' === h || Object.prototype.hasOwnProperty.call(g, h) || d(g, f, h);
         };
-    Object.defineProperty(a.exports, '__esModule', {
+    Object.defineProperty(b.exports, '__esModule', {
         value: !0
-    }), e(c('v2PV625'), a.exports), e(c('IqYAK22'), a.exports), e(c('50wG025'), a.exports);
-}), c.register('v2PV625', function(a, b) {
-    Object.defineProperty(a.exports, '__esModule', {
+    }), e(a('hDE9a25'), b.exports), e(a('rPed825'), b.exports), e(a('hpMH825'), b.exports);
+}), a.register('hDE9a25', function(b, c) {
+    Object.defineProperty(b.exports, '__esModule', {
         value: !0
-    }), a.exports.useBreakpoints = a.exports.useBreakpoint = void 0;
-    var d = c('50wG025');
-    a.exports.useBreakpoint = function(a) {
-        return (0, d.useWindowSize)().width < a;
-    }, a.exports.useBreakpoints = function(a) {
-        var e = (0, d.useWindowSize)().width;
-        return a.map(function(a) {
-            return e < a;
+    }), b.exports.useBreakpoints = b.exports.useBreakpoint = void 0;
+    var d = a('hpMH825');
+    b.exports.useBreakpoint = function(e) {
+        return (0, d.useWindowSize)().width < e;
+    }, b.exports.useBreakpoints = function(e) {
+        var f = (0, d.useWindowSize)().width;
+        return e.map(function(g) {
+            return f < g;
         });
     };
-}), c.register('50wG025', function(a, b) {
-    var d = a.exports && a.exports.__createBinding || (Object.create ? function(a, b, c, d) {
-            void 0 === d && (d = c), Object.defineProperty(a, d, {
+}), a.register('hpMH825', function(b, c) {
+    var d = b.exports && b.exports.__createBinding || (Object.create ? function(e, f, g, h) {
+            void 0 === h && (h = g), Object.defineProperty(e, h, {
                 enumerable: !0,
                 get: function() {
-                    return b[c];
+                    return f[g];
                 }
             });
-        } : function(a, b, c, d) {
-            void 0 === d && (d = c), a[d] = b[c];
+        } : function(e, f, g, h) {
+            void 0 === h && (h = g), e[h] = f[g];
         }),
-        e = a.exports && a.exports.__setModuleDefault || (Object.create ? function(a, b) {
-            Object.defineProperty(a, 'default', {
+        e = b.exports && b.exports.__setModuleDefault || (Object.create ? function(f, g) {
+            Object.defineProperty(f, 'default', {
                 enumerable: !0,
-                value: b
+                value: g
             });
-        } : function(a, b) {
-            a.default = b;
+        } : function(f, g) {
+            f.default = g;
         }),
-        f = a.exports && a.exports.__importStar || function(a) {
-            if (a && a.__esModule)
-                return a;
-            var g = {};
-            if (null != a)
-                for (var h in a)
-                    'default' !== h && Object.prototype.hasOwnProperty.call(a, h) && d(g, a, h);
-            return e(g, a), g;
+        f = b.exports && b.exports.__importStar || function(g) {
+            if (g && g.__esModule)
+                return g;
+            var h = {};
+            if (null != g)
+                for (var i in g)
+                    'default' !== i && Object.prototype.hasOwnProperty.call(g, i) && d(h, g, i);
+            return e(h, g), h;
         };
-    Object.defineProperty(a.exports, '__esModule', {
+    Object.defineProperty(b.exports, '__esModule', {
         value: !0
-    }), a.exports.useWindowSize = void 0;
-    var g = f(c('uPP4W'));
+    }), b.exports.useWindowSize = void 0;
+    var g = f(a('LEQ5w'));
 
     function h() {
         return {
@@ -5047,69 +5047,69 @@ c.register('ndLzW', function(b, B) {
             width: window.innerWidth
         };
     }
-    a.exports.useWindowSize = function() {
-        var i = g.useState(h()),
-            j = i[0],
-            k = i[1];
+    b.exports.useWindowSize = function() {
+        var h = g.useState(_h()),
+            i = h[0],
+            j = h[1];
         return g.useLayoutEffect(function() {
-            function l() {
-                k(h());
+            function k() {
+                j(_h());
             }
-            return window.addEventListener('resize', l),
+            return window.addEventListener('resize', h),
                 function() {
-                    return window.removeEventListener('resize', l);
+                    return window.removeEventListener('resize', h);
                 };
-        }, []), j;
+        }, []), i;
     };
-}), c.register('IqYAK22', function(a, b) {
-    var d = a.exports && a.exports.__assign || function() {
-            return d = Object.assign || function(a) {
-                for (var e, f = 1, g = v.length; f < g; f++)
-                    for (var h in e = v[f])
-                        Object.prototype.hasOwnProperty.call(e, h) && (a[h] = e[h]);
-                return a;
-            }, d.apply(this, v);
+}), a.register('rPed825', function(b, c) {
+    var d = b.exports && b.exports.__assign || function() {
+            return d = Object.assign || function(e) {
+                for (var f, g = 1, h = arguments.length; g < h; g++)
+                    for (var i in f = arguments[g])
+                        Object.prototype.hasOwnProperty.call(f, i) && (e[i] = f[i]);
+                return e;
+            }, d.apply(this, arguments);
         },
-        e = a.exports && a.exports.__createBinding || (Object.create ? function(a, b, c, d) {
-            void 0 === d && (d = c), Object.defineProperty(a, d, {
+        e = b.exports && b.exports.__createBinding || (Object.create ? function(f, g, h, i) {
+            void 0 === i && (i = h), Object.defineProperty(f, i, {
                 enumerable: !0,
                 get: function() {
-                    return b[c];
+                    return g[h];
                 }
             });
-        } : function(a, b, c, d) {
-            void 0 === d && (d = c), a[d] = b[c];
+        } : function(f, g, h, i) {
+            void 0 === i && (i = h), f[i] = g[h];
         }),
-        f = a.exports && a.exports.__setModuleDefault || (Object.create ? function(a, b) {
-            Object.defineProperty(a, 'default', {
+        f = b.exports && b.exports.__setModuleDefault || (Object.create ? function(g, h) {
+            Object.defineProperty(g, 'default', {
                 enumerable: !0,
-                value: b
+                value: h
             });
-        } : function(a, b) {
-            a.default = b;
+        } : function(g, h) {
+            g.default = h;
         }),
-        g = a.exports && a.exports.__importStar || function(a) {
-            if (a && a.__esModule)
-                return a;
-            var h = {};
-            if (null != a)
-                for (var i in a)
-                    'default' !== i && Object.prototype.hasOwnProperty.call(a, i) && e(h, a, i);
-            return f(h, a), h;
+        g = b.exports && b.exports.__importStar || function(h) {
+            if (h && h.__esModule)
+                return h;
+            var i = {};
+            if (null != h)
+                for (var j in h)
+                    'default' !== j && Object.prototype.hasOwnProperty.call(h, j) && e(i, h, j);
+            return f(i, h), i;
         };
-    Object.defineProperty(a.exports, '__esModule', {
+    Object.defineProperty(b.exports, '__esModule', {
         value: !0
-    }), a.exports.useComponentSize = void 0;
-    var h = g(c('uPP4W'));
-    a.exports.useComponentSize = function() {
-        var i = h.useState({
+    }), b.exports.useComponentSize = void 0;
+    var _h = g(a('LEQ5w'));
+    b.exports.useComponentSize = function() {
+        var i = _h.useState({
                 height: 0,
                 width: 0
             }),
             j = i[0],
             k = i[1],
-            l = h.useRef(),
-            m = h.useCallback(function() {
+            l = _h.useRef(),
+            m = _h.useCallback(function() {
                 if (l.current) {
                     var n = l.current.offsetHeight,
                         o = l.current.offsetWidth;
@@ -5122,7 +5122,7 @@ c.register('ndLzW', function(b, B) {
                 j.height,
                 j.width
             ]);
-        return h.useLayoutEffect(function() {
+        return _h.useLayoutEffect(function() {
             if (l && l.current) {
                 var n = new ResizeObserver(m);
                 return n.observe(l.current),
@@ -5137,31 +5137,31 @@ c.register('ndLzW', function(b, B) {
             ref: l
         }, j);
     };
-}), c.register('UnfL724', function(b, c) {
+}), a.register('s+8hx17', function(b, c) {
     let d;
     var e;
-    a(b.exports, 'SiteHeaderTheme', function() {
+    _i(b.exports, 'SiteHeaderTheme', function() {
         return d;
     }), (e = d || (d = {})).light = 'light', e.dark = 'dark';
-}), c.register('dN+BG24', function(b, c) {
+}), a.register('bdn4O17', function(b, c) {
     let d;
     var e;
-    a(b.exports, 'SiteHeaderAlpha', function() {
+    _i(b.exports, 'SiteHeaderAlpha', function() {
         return d;
     }), (e = d || (d = {})).none = 'none', e.standard = 'standard', e.darker = 'darker';
-}), c.register('mblWO24', function(b, d) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('PqMjn20', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
-        name: c('y8lS825').default.areaName,
+    var _d = {
+        name: a('Mmd0d21').default.areaName,
         iconImage: '/client/img/header/rewards.svg'
     };
-}), c.register('y8lS825', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('Mmd0d21', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         areaName: 'Rewards',
         level: 'Level',
         xp: 'XP',
@@ -5170,27 +5170,27 @@ c.register('ndLzW', function(b, B) {
         sticker: 'Sticker',
         trail: 'Trail'
     };
-}), c.register('qgO2124', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('gCqar24', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('wOJzl24'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('skUox22'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'UsergroupAddOutlined';
-    var i = e.forwardRef(h);
-}), c.register('wOJzl24', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('skUox22', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -5207,27 +5207,27 @@ c.register('ndLzW', function(b, B) {
         name: 'usergroup-add',
         theme: 'outlined'
     };
-}), c.register('tK/kr24', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('+UyIc24', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('XEZLJ24'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('r3/DU21'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'LogoutOutlined';
-    var i = e.forwardRef(h);
-}), c.register('XEZLJ24', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('r3/DU21', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -5244,27 +5244,27 @@ c.register('ndLzW', function(b, B) {
         name: 'logout',
         theme: 'outlined'
     };
-}), c.register('oSNZM', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('CJCpN', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('lByv9'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('v47zB'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'CheckOutlined';
-    var i = e.forwardRef(h);
-}), c.register('lByv9', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('v47zB', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -5281,27 +5281,27 @@ c.register('ndLzW', function(b, B) {
         name: 'check',
         theme: 'outlined'
     };
-}), c.register('JegR3', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('pMmde1', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('WKaIG'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('+bIFH'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'DownOutlined';
-    var i = e.forwardRef(h);
-}), c.register('WKaIG', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('+bIFH', function(b, c) {
+    _o(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -5318,53 +5318,53 @@ c.register('ndLzW', function(b, B) {
         name: 'down',
         theme: 'outlined'
     };
-}), c.register('CrMLT9', function(p, t) {
-    a(p.exports, 'default', function() {
-        return A;
+}), a.register('RW2Mp', function(b, c) {
+    _o(b.exports, 'default', function() {
+        return _A;
     });
-    var d = c('b5p1k13'),
-        e = c('WfHYJ18'),
-        f = c('cabca9'),
-        g = c('aCkIb5'),
-        h = c('PKxjP16'),
-        i = c('zTitA16'),
-        j = c('MvitG9'),
-        k = c('oG3bd5'),
-        l = c('uPP4W'),
-        m = c('VAIs1'),
-        n = function(a) {
-            (0, j.default)(p, a);
-            var o = (0, k.default)(p);
+    var d = a('5jnR813'),
+        e = a('8DsNq12'),
+        f = a('Li49B9'),
+        g = a('hc2IK9'),
+        h = a('HgFD113'),
+        i = a('a01Gf12'),
+        j = a('i+h089'),
+        k = a('kp44T9'),
+        l = a('LEQ5w'),
+        m = a('JrtKP'),
+        n = function(_o) {
+            (0, j.default)(b, _o);
+            var p = (0, k.default)(b);
 
-            function p(a) {
-                var q;
-                (0, h.default)(this, p), (q = o.call(this, a)).handleChange = function(a) {
-                    var r = q.props,
-                        s = r.disabled,
-                        t = r.onChange;
-                    s || ('checked' in q.props || q.setState({
-                        checked: a.target.checked
-                    }), t && t({
-                        target: (0, g.default)((0, g.default)({}, q.props), {}, {
-                            checked: a.target.checked
+            function q(r) {
+                var s;
+                (0, h.default)(this, q), (s = p.call(this, r)).handleChange = function(t) {
+                    var u = s.props,
+                        v = u.disabled,
+                        w = u.onChange;
+                    v || ('checked' in s.props || s.setState({
+                        checked: t.target.checked
+                    }), w && w({
+                        target: (0, g.default)((0, g.default)({}, s.props), {}, {
+                            checked: t.target.checked
                         }),
                         stopPropagation: function() {
-                            a.stopPropagation();
+                            t.stopPropagation();
                         },
                         preventDefault: function() {
-                            a.preventDefault();
+                            t.preventDefault();
                         },
-                        nativeEvent: a.nativeEvent
+                        nativeEvent: t.nativeEvent
                     }));
-                }, q.saveInput = function(a) {
-                    q.input = a;
+                }, s.saveInput = function(t) {
+                    s.input = t;
                 };
-                var r = 'checked' in a ? a.checked : a.defaultChecked;
-                return q.state = {
-                    checked: r
-                }, q;
+                var t = 'checked' in r ? r.checked : r.defaultChecked;
+                return s.state = {
+                    checked: t
+                }, s;
             }
-            return (0, i.default)(p, [{
+            return (0, i.default)(b, [{
                     key: 'focus',
                     value: function() {
                         this.input.focus();
@@ -5388,7 +5388,7 @@ c.register('ndLzW', function(b, B) {
                             x = r.type,
                             y = r.disabled,
                             z = r.readOnly,
-                            A = r.tabIndex,
+                            _A = r.tabIndex,
                             B = r.onClick,
                             C = r.onFocus,
                             D = r.onBlur,
@@ -5418,22 +5418,22 @@ c.register('ndLzW', function(b, B) {
                                 'value',
                                 'required'
                             ]),
-                            L = Object.keys(K).reduce(function(q, b) {
-                                return 'aria-' !== b.substr(0, 5) && 'data-' !== b.substr(0, 5) && 'role' !== b || (q[b] = K[b]), q;
+                            L = Object.keys(K).reduce(function(M, N) {
+                                return 'aria-' !== N.substr(0, 5) && 'data-' !== N.substr(0, 5) && 'role' !== N || (M[N] = K[N]), M;
                             }, {}),
                             M = this.state.checked,
-                            N = b(m)(s, t, (q = {}, (0, e.default)(q, ''.concat(s, '-checked'), M), (0, e.default)(q, ''.concat(s, '-disabled'), y), q));
-                        return b(l).createElement('span', {
+                            N = _r(m)(s, t, (q = {}, (0, e.default)(q, ''.concat(s, '-checked'), M), (0, e.default)(q, ''.concat(s, '-disabled'), y), q));
+                        return _r(l).createElement('span', {
                             className: N,
                             style: u
-                        }, b(l).createElement('input', (0, d.default)({
+                        }, _r(l).createElement('input', (0, d.default)({
                             name: v,
                             id: w,
                             type: x,
                             required: J,
                             readOnly: z,
                             disabled: y,
-                            tabIndex: A,
+                            tabIndex: _A,
                             className: ''.concat(s, '-input'),
                             checked: !!M,
                             onClick: B,
@@ -5446,19 +5446,19 @@ c.register('ndLzW', function(b, B) {
                             autoFocus: H,
                             ref: this.saveInput,
                             value: I
-                        }, L)), b(l).createElement('span', {
+                        }, L)), _r(l).createElement('span', {
                             className: ''.concat(s, '-inner')
                         }));
                     }
                 }
             ], [{
                 key: 'getDerivedStateFromProps',
-                value: function(a, b) {
-                    return 'checked' in a ? (0, g.default)((0, g.default)({}, b), {}, {
-                        checked: a.checked
+                value: function(q, _r) {
+                    return 'checked' in q ? (0, g.default)((0, g.default)({}, _r), {}, {
+                        checked: q.checked
                     }) : null;
                 }
-            }]), p;
+            }]), b;
         }(l.Component);
     n.defaultProps = {
         prefixCls: 'rc-checkbox',
@@ -5473,170 +5473,170 @@ c.register('ndLzW', function(b, B) {
         onKeyPress: function() {},
         onKeyUp: function() {}
     };
-    var o = p;
-}), c.register('b5p1k13', function(b, c) {
+    var o = n;
+}), a.register('5jnR813', function(b, c) {
     function d() {
-        return d = Object.assign || function(a) {
-            for (var e = 1; e < v.length; e++) {
-                var f = v[e];
-                for (var g in f)
-                    Object.prototype.hasOwnProperty.call(f, g) && (a[g] = f[g]);
+        return d = Object.assign || function(e) {
+            for (var f = 1; f < arguments.length; f++) {
+                var g = arguments[f];
+                for (var h in g)
+                    Object.prototype.hasOwnProperty.call(g, h) && (e[h] = g[h]);
             }
-            return a;
-        }, d.apply(this, v);
+            return e;
+        }, d.apply(this, arguments);
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _e(b.exports, 'default', function() {
+        return _d;
     });
-}), c.register('WfHYJ18', function(b, c) {
-    function d(a, b, c) {
-        return b in a ? Object.defineProperty(a, b, {
-            value: c,
+}), a.register('8DsNq12', function(b, c) {
+    function _d(_e, f, g) {
+        return f in _e ? Object.defineProperty(_e, f, {
+            value: g,
             enumerable: !0,
             configurable: !0,
             writable: !0
-        }) : a[b] = c, a;
+        }) : _e[f] = g, _e;
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _f(b.exports, 'default', function() {
+        return _c;
     });
-}), c.register('cabca9', function(b, g) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('Li49B9', function(b, _c) {
+    _f(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('l2czd17');
+    var d = a('QUESF9');
 
-    function e(a, b) {
-        if (null == a)
+    function _e(_f, g) {
+        if (null == _f)
             return {};
-        var f, g, h = (0, d.default)(a, b);
+        var h, i, j = (0, d.default)(_f, g);
         if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(a);
-            for (g = 0; g < i.length; g++)
-                f = i[g], b.indexOf(f) >= 0 || Object.prototype.propertyIsEnumerable.call(a, f) && (h[f] = a[f]);
+            var k = Object.getOwnPropertySymbols(_f);
+            for (i = 0; i < k.length; i++)
+                h = k[i], g.indexOf(h) >= 0 || Object.prototype.propertyIsEnumerable.call(_f, h) && (j[h] = _f[h]);
+        }
+        return j;
+    }
+}), a.register('QUESF9', function(b, c) {
+    function d(e, f) {
+        if (null == e)
+            return {};
+        var g, h, i = {},
+            j = Object.keys(e);
+        for (h = 0; h < j.length; h++)
+            g = j[h], f.indexOf(g) >= 0 || (i[g] = e[g]);
+        return i;
+    }
+    _f(b.exports, 'default', function() {
+        return _c;
+    });
+}), a.register('hc2IK9', function(b, _c) {
+    _f(b.exports, 'default', function() {
+        return _e;
+    });
+    var d = a('8DsNq12');
+
+    function e(_f, g) {
+        var h = Object.keys(_f);
+        if (Object.getOwnPropertySymbols) {
+            var i = Object.getOwnPropertySymbols(_f);
+            g && (i = i.filter(function(j) {
+                return Object.getOwnPropertyDescriptor(_f, j).enumerable;
+            })), h.push.apply(h, i);
         }
         return h;
     }
-}), c.register('l2czd17', function(b, c) {
-    function d(a, b) {
-        if (null == a)
-            return {};
-        var e, f, g = {},
-            h = Object.keys(a);
-        for (f = 0; f < h.length; f++)
-            e = h[f], b.indexOf(e) >= 0 || (g[e] = a[e]);
-        return g;
-    }
-    a(b.exports, 'default', function() {
-        return d;
-    });
-}), c.register('aCkIb5', function(b, g) {
-    a(b.exports, 'default', function() {
-        return f;
-    });
-    var d = c('WfHYJ18');
 
-    function e(a, b) {
-        var f = Object.keys(a);
-        if (Object.getOwnPropertySymbols) {
-            var g = Object.getOwnPropertySymbols(a);
-            b && (g = g.filter(function(b) {
-                return Object.getOwnPropertyDescriptor(a, b).enumerable;
-            })), f.push.apply(f, g);
-        }
-        return f;
-    }
-
-    function f(a) {
-        for (var g = 1; g < v.length; g++) {
-            var h = null != v[g] ? v[g] : {};
-            g % 2 ? e(Object(h), !0).forEach(function(g) {
-                (0, d.default)(a, g, h[g]);
-            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(h)) : e(Object(h)).forEach(function(g) {
-                Object.defineProperty(a, g, Object.getOwnPropertyDescriptor(h, g));
+    function _e(f) {
+        for (var g = 1; g < arguments.length; g++) {
+            var h = null != arguments[g] ? arguments[g] : {};
+            g % 2 ? _e(Object(h), !0).forEach(function(i) {
+                (0, d.default)(f, i, h[i]);
+            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(f, Object.getOwnPropertyDescriptors(h)) : _e(Object(h)).forEach(function(i) {
+                Object.defineProperty(f, i, Object.getOwnPropertyDescriptor(h, i));
             });
         }
-        return a;
+        return f;
     }
-}), c.register('PKxjP16', function(b, c) {
-    function d(a, b) {
-        if (!(a instanceof b))
+}), a.register('HgFD113', function(b, c) {
+    function d(e, f) {
+        if (!(e instanceof f))
             throw new TypeError('Cannot call a class as a function');
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _e(b.exports, 'default', function() {
+        return _d;
     });
-}), c.register('zTitA16', function(b, c) {
-    function d(a, b) {
-        for (var e = 0; e < b.length; e++) {
-            var f = b[e];
-            f.enumerable = f.enumerable || !1, f.configurable = !0, 'value' in f && (f.writable = !0), Object.defineProperty(a, f.key, f);
+}), a.register('a01Gf12', function(b, c) {
+    function _d(_e, f) {
+        for (var g = 0; g < f.length; g++) {
+            var h = f[g];
+            h.enumerable = h.enumerable || !1, h.configurable = !0, 'value' in h && (h.writable = !0), Object.defineProperty(_e, h.key, h);
         }
     }
 
-    function e(a, b, c) {
-        return b && d(a.prototype, b), c && d(a, c), a;
+    function d(e, f, g) {
+        return f && _c(e.prototype, f), g && _c(e, g), e;
     }
-    a(b.exports, 'default', function() {
-        return e;
+    _f(b.exports, 'default', function() {
+        return _d;
     });
-}), c.register('MvitG9', function(b, d) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('i+h089', function(b, _c) {
+    _f(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('/jzVl15');
+    var _d = a('ALEzF15');
 
-    function e(a, b) {
-        if ('function' != typeof b && null !== b)
+    function _e(_f, g) {
+        if ('function' != typeof g && null !== g)
             throw new TypeError('Super expression must either be null or a function');
-        a.prototype = Object.create(b && b.prototype, {
+        _f.prototype = Object.create(g && g.prototype, {
             constructor: {
-                value: a,
+                value: _f,
                 writable: !0,
                 configurable: !0
             }
-        }), b && (0, d.default)(a, b);
+        }), g && (0, _d.default)(_f, g);
     }
-}), c.register('/jzVl15', function(b, c) {
-    function d(a, b) {
-        return d = Object.setPrototypeOf || function(a, b) {
-            return a.__proto__ = b, a;
-        }, d(a, b);
+}), a.register('ALEzF15', function(b, c) {
+    function d(e, f) {
+        return d = Object.setPrototypeOf || function(g, h) {
+            return g.__proto__ = h, g;
+        }, d(e, f);
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _h(b.exports, 'default', function() {
+        return _c;
     });
-}), c.register('oG3bd5', function(b, j) {
-    a(b.exports, 'default', function() {
-        return g;
+}), a.register('kp44T9', function(b, _c) {
+    _h(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('fmP4g15'),
-        e = c('5UNjR15'),
-        f = c('EDgo89');
+    var d = a('28Pwf16'),
+        e = a('sQfA/14'),
+        f = a('rKHa09');
 
-    function g(a) {
-        var h = (0, e.default)();
+    function _g(_h) {
+        var i = (0, e.default)();
         return function() {
-            var i, j = (0, d.default)(a);
-            if (h) {
-                var k = (0, d.default)(this).constructor;
-                i = Reflect.construct(j, v, k);
+            var j, k = (0, d.default)(_h);
+            if (i) {
+                var l = (0, d.default)(this).constructor;
+                j = Reflect.construct(k, arguments, l);
             } else
-                i = j.apply(this, v);
-            return (0, f.default)(this, i);
+                j = k.apply(this, arguments);
+            return (0, f.default)(this, j);
         };
     }
-}), c.register('fmP4g15', function(b, c) {
-    function d(a) {
-        return d = Object.setPrototypeOf ? Object.getPrototypeOf : function(a) {
-            return a.__proto__ || Object.getPrototypeOf(a);
-        }, d(a);
+}), a.register('28Pwf16', function(b, c) {
+    function d(e) {
+        return d = Object.setPrototypeOf ? Object.getPrototypeOf : function(f) {
+            return f.__proto__ || Object.getPrototypeOf(f);
+        }, d(e);
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _g(b.exports, 'default', function() {
+        return _d;
     });
-}), c.register('5UNjR15', function(b, c) {
-    function d() {
+}), a.register('sQfA/14', function(b, c) {
+    function _d() {
         if ('undefined' == typeof Reflect || !Reflect.construct)
             return !1;
         if (Reflect.construct.sham)
@@ -5645,62 +5645,62 @@ c.register('ndLzW', function(b, B) {
             return !0;
         try {
             return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {})), !0;
-        } catch (a) {
+        } catch (_g) {
             return !1;
         }
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _g(b.exports, 'default', function() {
+        return _b;
     });
-}), c.register('EDgo89', function(d, d) {
-    a(d.exports, 'default', function() {
-        return f;
+}), a.register('rKHa09', function(_b, c) {
+    _g(_b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('V09ZX15'),
-        e = c('//YgM17');
+    var d = a('cW6NX14'),
+        e = a('JgIFg');
 
-    function f(a, c) {
-        if (c && ('object' === b(d)(c) || 'function' == typeof c))
-            return c;
-        if (void 0 !== c)
+    function _f(_g, h) {
+        if (h && ('object' === _c(d)(h) || 'function' == typeof h))
+            return h;
+        if (void 0 !== h)
             throw new TypeError('Derived constructors may only return object or undefined');
-        return (0, e.default)(a);
+        return (0, e.default)(_g);
     }
-}), c.register('V09ZX15', function(a, b) {
-    function d(b) {
-        return 'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator ? (a.exports = d = function(a) {
-            return typeof a;
-        }, a.exports.default = a.exports, a.exports.__esModule = !0) : (a.exports = d = function(a) {
-            return a && 'function' == typeof Symbol && a.constructor === Symbol && a !== Symbol.prototype ? 'symbol' : typeof a;
-        }, a.exports.default = a.exports, a.exports.__esModule = !0), d(b);
+}), a.register('cW6NX14', function(b, _c) {
+    function d(e) {
+        return 'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator ? (b.exports = d = function(f) {
+            return typeof f;
+        }, b.exports.default = b.exports, b.exports.__esModule = !0) : (b.exports = d = function(f) {
+            return f && 'function' == typeof Symbol && f.constructor === Symbol && f !== Symbol.prototype ? 'symbol' : typeof f;
+        }, b.exports.default = b.exports, b.exports.__esModule = !0), d(e);
     }
-    a.exports = d, a.exports.default = a.exports, a.exports.__esModule = !0;
-}), c.register('//YgM17', function(b, c) {
-    function d(a) {
-        if (void 0 === a)
+    b.exports = a, b.exports.default = b.exports, b.exports.__esModule = !0;
+}), a.register('JgIFg', function(b, c) {
+    function d(e) {
+        if (void 0 === e)
             throw new ReferenceError('this hasn\'t been initialised - super() hasn\'t been called');
-        return a;
-    }
-    a(b.exports, 'default', function() {
-        return d;
-    });
-}), c.register('bdX0N23', function(b, i) {
-    a(b.exports, 'onlyOfferAnnualUpgrade', function() {
         return e;
+    }
+    _j(b.exports, 'default', function() {
+        return _c;
     });
-    var d = c('3EnRx');
-    const e = () => 'annual-only' === d.default.getFeatureFlag('annual-only-pro');
-}), c.register('U8PGt', function(b, i) {
-    a(b.exports, 'default', function() {
-        return g;
+}), a.register('Rtfgy20', function(b, _c) {
+    _j(b.exports, 'onlyOfferAnnualUpgrade', function() {
+        return _e;
     });
-    var d = c('uPP4W'),
-        e = c('KBP3q'),
-        f = c('vxwW1');
-    var g = (a, b) => {
+    var d = a('THxMC');
+    const _e = () => 'annual-only' === d.default.getFeatureFlag('annual-only-pro');
+}), a.register('BXKZi0', function(b, c) {
+    _j(b.exports, 'default', function() {
+        return _g;
+    });
+    var d = a('LEQ5w'),
+        e = a('+UcJ7'),
+        f = a('dR/Gi');
+    var _g = (_j, b) => {
         const [h, i] = d.useState(() => {
             var j, k;
-            const l = a && 'current' in a ? a.current : a;
+            const l = _j && 'current' in _j ? _j.current : _j;
             return l ? [
                 l.offsetWidth,
                 l.offsetHeight
@@ -5710,125 +5710,125 @@ c.register('ndLzW', function(b, B) {
             ];
         });
         return (0, f.default)(() => {
-            const j = a && 'current' in a ? a.current : a;
+            const j = _j && 'current' in _j ? _j.current : _j;
             j && i([
                 j.offsetWidth,
                 j.offsetHeight
             ]);
-        }, [a]), (0, e.default)(a, a => {
-            const j = a.target;
+        }, [_j]), (0, e.default)(_j, _j => {
+            const j = _j.target;
             i([
                 j.offsetWidth,
                 j.offsetHeight
             ]);
         }), h;
     };
-}), c.register('KBP3q', function(b, l) {
-    a(b.exports, 'default', function() {
-        return j;
+}), a.register('+UcJ7', function(b, c) {
+    _j(b.exports, 'default', function() {
+        return _j;
     });
-    var d = c('tDeyh'),
-        e = c('vxwW1'),
-        f = c('X8LPJ'),
-        g = c('wZuO1');
+    var d = a('iIbRn'),
+        e = a('dR/Gi'),
+        f = a('20TiJ'),
+        g = a('18t62');
     let h;
     const i = () => h || (h = function() {
-        const j = new Map(),
-            k = new(0, d.default)((0, g.default)((k, c) => {
+        const _j = new Map(),
+            k = new(0, d.default)((0, g.default)((k, a) => {
                 var l;
                 if (1 === k.length)
-                    null === (l = j.get(k[0].target)) || void 0 === l || l(k[0], c);
+                    null === (l = _j.get(k[0].target)) || void 0 === l || l(k[0], a);
                 else
                     for (let m = 0; m < k.length; m++) {
                         var n;
-                        null === (n = j.get(k[m].target)) || void 0 === n || n(k[m], c);
+                        null === (n = _j.get(k[m].target)) || void 0 === n || n(k[m], a);
                     }
             }));
         return {
             observer: k,
-            subscribe(c, l) {
-                k.observe(c), j.set(c, l);
+            subscribe(l, m) {
+                k.observe(l), _j.set(l, m);
             },
-            unsubscribe(c) {
-                k.unobserve(c), j.delete(c);
+            unsubscribe(l) {
+                k.unobserve(l), _j.delete(l);
             }
         };
     }());
-    var j = function(a, b) {
-        const k = i(),
-            l = (0, f.default)(b);
+    var _j = function(k, l) {
+        const m = i(),
+            n = (0, f.default)(l);
         return (0, e.default)(() => {
-            let m = !1;
-            const n = a && 'current' in a ? a.current : a;
-            if (n)
-                return k.subscribe(n, (a, k) => {
-                    m || l.current(a, k);
+            let o = !1;
+            const p = k && 'current' in k ? k.current : k;
+            if (p)
+                return m.subscribe(p, (k, m) => {
+                    o || n.current(k, m);
                 }), () => {
-                    m = !0, k.unsubscribe(n);
+                    o = !0, m.unsubscribe(p);
                 };
         }, [
-            a,
             k,
-            l
-        ]), k.observer;
+            m,
+            n
+        ]), m.observer;
     };
-}), c.register('vxwW1', function(d, d) {
-    a(d.exports, 'default', function() {
-        return d;
+}), a.register('dR/Gi', function(b, c) {
+    _e(b.exports, 'default', function() {
+        return _d;
     });
-    var d = b(c('uPP4W'))['undefined' != typeof document && void 0 !== document.createElement ? 'useLayoutEffect' : 'useEffect'];
-}), c.register('X8LPJ', function(b, d) {
-    a(b.exports, 'default', function() {
-        return e;
+    var _d = _b(a('LEQ5w'))['undefined' != typeof document && void 0 !== document.createElement ? 'useLayoutEffect' : 'useEffect'];
+}), a.register('20TiJ', function(_b, c) {
+    _e(_b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('uPP4W');
-    var e = a => {
-        const f = d.useRef(a);
+    var d = a('LEQ5w');
+    var _e = _e => {
+        const f = d.useRef(_e);
         return d.useEffect(() => {
-            f.current = a;
+            f.current = _e;
         }), f;
     };
-}), c.register('wZuO1', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('18t62', function(b, c) {
+    _e(b.exports, 'default', function() {
+        return _d;
     });
-    var d = function(a) {
-        var e = [],
-            f = null,
-            g = function() {
-                for (var h = v.length, i = new Array(h), j = 0; j < h; j++)
-                    i[j] = v[j];
-                e = i, f || (f = requestAnimationFrame(function() {
-                    f = null, a.apply(void 0, e);
+    var _d = function(_e) {
+        var f = [],
+            g = null,
+            h = function() {
+                for (var i = arguments.length, j = new Array(i), k = 0; k < i; k++)
+                    j[k] = arguments[k];
+                f = j, g || (g = requestAnimationFrame(function() {
+                    g = null, _e.apply(void 0, f);
                 }));
             };
-        return g.cancel = function() {
-            f && (cancelAnimationFrame(f), f = null);
-        }, g;
+        return h.cancel = function() {
+            g && (cancelAnimationFrame(g), g = null);
+        }, h;
     };
-}), c.register('Nsg/l3', function(i, j) {
-    a(i.exports, 'default', function() {
-        return l;
+}), a.register('0qmC91', function(b, c) {
+    _f(b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('uPP4W'),
-        e = function(a, b) {
+    var d = a('LEQ5w'),
+        e = function(_f, g) {
             return e = Object.setPrototypeOf || {
                 __proto__: []
             }
-            instanceof Array && function(a, b) {
-                a.__proto__ = b;
-            } || function(a, b) {
-                for (var f in b)
-                    b.hasOwnProperty(f) && (a[f] = b[f]);
-            }, e(a, b);
+            instanceof Array && function(h, i) {
+                h.__proto__ = i;
+            } || function(h, i) {
+                for (var j in i)
+                    i.hasOwnProperty(j) && (h[j] = i[j]);
+            }, e(_f, g);
         };
     var f = function() {
-        return f = Object.assign || function(a) {
-            for (var g, h = 1, i = v.length; h < i; h++)
-                for (var j in g = v[h])
-                    Object.prototype.hasOwnProperty.call(g, j) && (a[j] = g[j]);
-            return a;
-        }, f.apply(this, v);
+        return f = Object.assign || function(g) {
+            for (var h, i = 1, j = arguments.length; i < j; i++)
+                for (var k in h = arguments[i])
+                    Object.prototype.hasOwnProperty.call(h, k) && (g[k] = h[k]);
+            return g;
+        }, f.apply(this, arguments);
     };
     var g = 'Pixel',
         h = 'Percent',
@@ -5837,181 +5837,181 @@ c.register('ndLzW', function(b, B) {
             value: 0.8
         };
 
-    function j(a) {
-        return 'number' == typeof a ? {
+    function j(k) {
+        return 'number' == typeof k ? {
             unit: h,
-            value: 100 * a
-        } : 'string' == typeof a ? a.match(/^(\d*(\.\d+)?)px$/) ? {
+            value: 100 * k
+        } : 'string' == typeof k ? k.match(/^(\d*(\.\d+)?)px$/) ? {
             unit: g,
-            value: parseFloat(a)
-        } : a.match(/^(\d*(\.\d+)?)%$/) ? {
+            value: parseFloat(k)
+        } : k.match(/^(\d*(\.\d+)?)%$/) ? {
             unit: h,
-            value: parseFloat(a)
+            value: parseFloat(k)
         } : (console.warn('scrollThreshold format is invalid. Valid formats: "120px", "50%"...'), i) : (console.warn('scrollThreshold should be string or number'), i);
     }
-    var k = function(a) {
-            function l(b) {
-                var m = a.call(this, b) || this;
-                return m.lastScrollTop = 0, m.actionTriggered = !1, m.startY = 0, m.currentY = 0, m.dragging = !1, m.maxPullDownDistance = 0, m.getScrollableTarget = function() {
-                    return m.props.scrollableTarget instanceof HTMLElement ? m.props.scrollableTarget : 'string' == typeof m.props.scrollableTarget ? document.getElementById(m.props.scrollableTarget) : (null === m.props.scrollableTarget && console.warn('You are trying to pass scrollableTarget but it is null. This might\n        happen because the element may not have been added to DOM yet.\n        See https://github.com/ankeetmaini/react-infinite-scroll-component/issues/59 for more info.\n      '), null);
-                }, m.onStart = function(a) {
-                    m.lastScrollTop || (m.dragging = !0, a instanceof MouseEvent ? m.startY = a.pageY : a instanceof TouchEvent && (m.startY = a.touches[0].pageY), m.currentY = m.startY, m._infScroll && (m._infScroll.style.willChange = 'transform', m._infScroll.style.transition = 'transform 0.2s cubic-bezier(0,0,0.31,1)'));
-                }, m.onMove = function(a) {
-                    m.dragging && (a instanceof MouseEvent ? m.currentY = a.pageY : a instanceof TouchEvent && (m.currentY = a.touches[0].pageY), m.currentY < m.startY || (m.currentY - m.startY >= Number(m.props.pullDownToRefreshThreshold) && m.setState({
+    var j = function(k) {
+            function l(m) {
+                var n = k.call(this, m) || this;
+                return n.lastScrollTop = 0, n.actionTriggered = !1, n.startY = 0, n.currentY = 0, n.dragging = !1, n.maxPullDownDistance = 0, n.getScrollableTarget = function() {
+                    return n.props.scrollableTarget instanceof HTMLElement ? n.props.scrollableTarget : 'string' == typeof n.props.scrollableTarget ? document.getElementById(n.props.scrollableTarget) : (null === n.props.scrollableTarget && console.warn('You are trying to pass scrollableTarget but it is null. This might\n        happen because the element may not have been added to DOM yet.\n        See https://github.com/ankeetmaini/react-infinite-scroll-component/issues/59 for more info.\n      '), null);
+                }, n.onStart = function(o) {
+                    n.lastScrollTop || (n.dragging = !0, o instanceof MouseEvent ? n.startY = o.pageY : o instanceof TouchEvent && (n.startY = o.touches[0].pageY), n.currentY = n.startY, n._infScroll && (n._infScroll.style.willChange = 'transform', n._infScroll.style.transition = 'transform 0.2s cubic-bezier(0,0,0.31,1)'));
+                }, n.onMove = function(o) {
+                    n.dragging && (o instanceof MouseEvent ? n.currentY = o.pageY : o instanceof TouchEvent && (n.currentY = o.touches[0].pageY), n.currentY < n.startY || (n.currentY - n.startY >= Number(n.props.pullDownToRefreshThreshold) && n.setState({
                         pullToRefreshThresholdBreached: !0
-                    }), m.currentY - m.startY > 1.5 * m.maxPullDownDistance || m._infScroll && (m._infScroll.style.overflow = 'visible', m._infScroll.style.transform = 'translate3d(0px, ' + (m.currentY - m.startY) + 'px, 0px)')));
-                }, m.onEnd = function() {
-                    m.startY = 0, m.currentY = 0, m.dragging = !1, m.state.pullToRefreshThresholdBreached && (m.props.refreshFunction && m.props.refreshFunction(), m.setState({
+                    }), n.currentY - n.startY > 1.5 * n.maxPullDownDistance || n._infScroll && (n._infScroll.style.overflow = 'visible', n._infScroll.style.transform = 'translate3d(0px, ' + (n.currentY - n.startY) + 'px, 0px)')));
+                }, n.onEnd = function() {
+                    n.startY = 0, n.currentY = 0, n.dragging = !1, n.state.pullToRefreshThresholdBreached && (n.props.refreshFunction && n.props.refreshFunction(), n.setState({
                         pullToRefreshThresholdBreached: !1
                     })), requestAnimationFrame(function() {
-                        m._infScroll && (m._infScroll.style.overflow = 'auto', m._infScroll.style.transform = 'none', m._infScroll.style.willChange = 'none');
+                        n._infScroll && (n._infScroll.style.overflow = 'auto', n._infScroll.style.transform = 'none', n._infScroll.style.willChange = 'none');
                     });
-                }, m.onScrollListener = function(a) {
-                    'function' == typeof m.props.onScroll && setTimeout(function() {
-                        return m.props.onScroll && m.props.onScroll(a);
+                }, n.onScrollListener = function(o) {
+                    'function' == typeof n.props.onScroll && setTimeout(function() {
+                        return n.props.onScroll && n.props.onScroll(o);
                     }, 0);
-                    var n = m.props.height || m._scrollableNode ? a.target : document.documentElement.scrollTop ? document.documentElement : document.body;
-                    m.actionTriggered || ((m.props.inverse ? m.isElementAtTop(n, m.props.scrollThreshold) : m.isElementAtBottom(n, m.props.scrollThreshold)) && m.props.hasMore && (m.actionTriggered = !0, m.setState({
+                    var p = n.props.height || n._scrollableNode ? o.target : document.documentElement.scrollTop ? document.documentElement : document.body;
+                    n.actionTriggered || ((n.props.inverse ? n.isElementAtTop(p, n.props.scrollThreshold) : n.isElementAtBottom(p, n.props.scrollThreshold)) && n.props.hasMore && (n.actionTriggered = !0, n.setState({
                         showLoader: !0
-                    }), m.props.next && m.props.next()), m.lastScrollTop = n.scrollTop);
-                }, m.state = {
+                    }), n.props.next && n.props.next()), n.lastScrollTop = p.scrollTop);
+                }, n.state = {
                     showLoader: !1,
                     pullToRefreshThresholdBreached: !1
-                }, m.throttledOnScrollListener = function(a, b, m, n) {
-                    var n, o = !1,
-                        p = 0;
+                }, n.throttledOnScrollListener = function(o, p, q, r) {
+                    var s, t = !1,
+                        u = 0;
 
-                    function q() {
-                        n && clearTimeout(n);
+                    function v() {
+                        s && clearTimeout(s);
                     }
 
-                    function r() {
-                        var s = this,
-                            t = Date.now() - p,
-                            u = v;
+                    function v() {
+                        var w = this,
+                            x = Date.now() - u,
+                            y = arguments;
 
-                        function w() {
-                            p = Date.now(), m.apply(s, u);
+                        function z() {
+                            u = Date.now(), q.apply(w, y);
                         }
 
-                        function x() {
-                            n = void 0;
+                        function z() {
+                            s = void 0;
                         }
-                        o || (n && !n && w(), q(), void 0 === n && t > a ? w() : !0 !== b && (n = setTimeout(n ? x : w, void 0 === n ? a - t : a)));
+                        t || (r && !s && d(), f(), void 0 === r && x > o ? d() : !0 !== p && (s = setTimeout(r ? j : d, void 0 === r ? o - x : o)));
                     }
-                    return 'boolean' != typeof b && (n = m, m = b, b = void 0), r.cancel = function() {
-                        q(), o = !0;
-                    }, r;
-                }(150, m.onScrollListener).bind(m), m.onStart = m.onStart.bind(m), m.onMove = m.onMove.bind(m), m.onEnd = m.onEnd.bind(m), m;
+                    return 'boolean' != typeof p && (r = q, q = p, p = void 0), g.cancel = function() {
+                        f(), t = !0;
+                    }, g;
+                }(150, n.onScrollListener).bind(n), n.onStart = n.onStart.bind(n), n.onMove = n.onMove.bind(n), n.onEnd = n.onEnd.bind(n), n;
             }
-            return function(a, b) {
-                function m() {
-                    this.constructor = a;
+            return function(l, m) {
+                function n() {
+                    this.constructor = l;
                 }
-                e(a, b), a.prototype = null === b ? Object.create(b) : (m.prototype = b.prototype, new m());
-            }(l, a), l.prototype.componentDidMount = function() {
+                e(l, m), l.prototype = null === m ? Object.create(m) : (a.prototype = m.prototype, new a());
+            }(a, k), a.prototype.componentDidMount = function() {
                 if (void 0 === this.props.dataLength)
                     throw new Error('mandatory prop "dataLength" is missing. The prop is needed when loading more content. Check README.md for usage');
                 if (this._scrollableNode = this.getScrollableTarget(), this.el = this.props.height ? this._infScroll : this._scrollableNode || window, this.el && this.el.addEventListener('scroll', this.throttledOnScrollListener), 'number' == typeof this.props.initialScrollY && this.el && this.el instanceof HTMLElement && this.el.scrollHeight > this.props.initialScrollY && this.el.scrollTo(0, this.props.initialScrollY), this.props.pullDownToRefresh && this.el && (this.el.addEventListener('touchstart', this.onStart), this.el.addEventListener('touchmove', this.onMove), this.el.addEventListener('touchend', this.onEnd), this.el.addEventListener('mousedown', this.onStart), this.el.addEventListener('mousemove', this.onMove), this.el.addEventListener('mouseup', this.onEnd), this.maxPullDownDistance = this._pullDown && this._pullDown.firstChild && this._pullDown.firstChild.getBoundingClientRect().height || 0, this.forceUpdate(), 'function' != typeof this.props.refreshFunction))
                     throw new Error('Mandatory prop "refreshFunction" missing.\n          Pull Down To Refresh functionality will not work\n          as expected. Check README.md for usage\'');
-            }, l.prototype.componentWillUnmount = function() {
+            }, a.prototype.componentWillUnmount = function() {
                 this.el && (this.el.removeEventListener('scroll', this.throttledOnScrollListener), this.props.pullDownToRefresh && (this.el.removeEventListener('touchstart', this.onStart), this.el.removeEventListener('touchmove', this.onMove), this.el.removeEventListener('touchend', this.onEnd), this.el.removeEventListener('mousedown', this.onStart), this.el.removeEventListener('mousemove', this.onMove), this.el.removeEventListener('mouseup', this.onEnd)));
-            }, l.prototype.UNSAFE_componentWillReceiveProps = function(a) {
-                this.props.dataLength !== a.dataLength && (this.actionTriggered = !1, this.setState({
+            }, a.prototype.UNSAFE_componentWillReceiveProps = function(l) {
+                this.props.dataLength !== l.dataLength && (this.actionTriggered = !1, this.setState({
                     showLoader: !1
                 }));
-            }, l.prototype.isElementAtTop = function(a, b) {
-                void 0 === b && (b = 0.8);
-                var m = a === document.body || a === document.documentElement ? window.screen.availHeight : a.clientHeight,
-                    n = j(b);
-                return n.unit === g ? a.scrollTop <= n.value + m - a.scrollHeight + 1 || 0 === a.scrollTop : a.scrollTop <= n.value / 100 + m - a.scrollHeight + 1 || 0 === a.scrollTop;
-            }, l.prototype.isElementAtBottom = function(a, b) {
-                void 0 === b && (b = 0.8);
-                var m = a === document.body || a === document.documentElement ? window.screen.availHeight : a.clientHeight,
-                    n = j(b);
-                return n.unit === g ? a.scrollTop + m >= a.scrollHeight - n.value : a.scrollTop + m >= n.value / 100 * a.scrollHeight;
-            }, l.prototype.render = function() {
-                var m = this,
-                    n = f({
+            }, a.prototype.isElementAtTop = function(l, m) {
+                void 0 === m && (m = 0.8);
+                var n = l === document.body || l === document.documentElement ? window.screen.availHeight : l.clientHeight,
+                    o = d(m);
+                return o.unit === g ? l.scrollTop <= o.value + n - l.scrollHeight + 1 || 0 === l.scrollTop : l.scrollTop <= o.value / 100 + n - l.scrollHeight + 1 || 0 === l.scrollTop;
+            }, a.prototype.isElementAtBottom = function(l, m) {
+                void 0 === m && (m = 0.8);
+                var n = l === document.body || l === document.documentElement ? window.screen.availHeight : l.clientHeight,
+                    o = d(m);
+                return o.unit === g ? l.scrollTop + n >= l.scrollHeight - o.value : l.scrollTop + n >= o.value / 100 * l.scrollHeight;
+            }, a.prototype.render = function() {
+                var l = this,
+                    m = f({
                         height: this.props.height || 'auto',
                         overflow: 'auto',
                         WebkitOverflowScrolling: 'touch'
                     }, this.props.style),
-                    o = this.props.hasChildren || !!(this.props.children && this.props.children instanceof Array && this.props.children.length),
-                    p = this.props.pullDownToRefresh && this.props.height ? {
+                    n = this.props.hasChildren || !!(this.props.children && this.props.children instanceof Array && this.props.children.length),
+                    o = this.props.pullDownToRefresh && this.props.height ? {
                         overflow: 'auto'
                     } : {};
-                return b(d).createElement('div', {
-                    style: p,
+                return _p(d).createElement('div', {
+                    style: o,
                     className: 'infinite-scroll-component__outerdiv'
-                }, b(d).createElement('div', {
+                }, _p(d).createElement('div', {
                     className: 'infinite-scroll-component ' + (this.props.className || ''),
-                    ref: function(b) {
-                        return m._infScroll = b;
+                    ref: function(_p) {
+                        return l._infScroll = _p;
                     },
-                    style: n
-                }, this.props.pullDownToRefresh && b(d).createElement('div', {
+                    style: m
+                }, this.props.pullDownToRefresh && _p(d).createElement('div', {
                     style: {
                         position: 'relative'
                     },
-                    ref: function(b) {
-                        return m._pullDown = b;
+                    ref: function(_p) {
+                        return l._pullDown = _p;
                     }
-                }, b(d).createElement('div', {
+                }, _b(d).createElement('div', {
                     style: {
                         position: 'absolute',
                         left: 0,
                         right: 0,
                         top: -1 * this.maxPullDownDistance
                     }
-                }, this.state.pullToRefreshThresholdBreached ? this.props.releaseToRefreshContent : this.props.pullDownToRefreshContent)), this.props.children, !this.state.showLoader && !o && this.props.hasMore && this.props.loader, this.state.showLoader && this.props.hasMore && this.props.loader, !this.props.hasMore && this.props.endMessage));
-            }, l;
+                }, this.state.pullToRefreshThresholdBreached ? this.props.releaseToRefreshContent : this.props.pullDownToRefreshContent)), this.props.children, !this.state.showLoader && !n && this.props.hasMore && this.props.loader, this.state.showLoader && this.props.hasMore && this.props.loader, !this.props.hasMore && this.props.endMessage));
+            }, a;
         }(d.Component),
-        l = m;
-}), c.register('k0s2g17', function(b, d) {
-    a(b.exports, 'NavigateTo', function() {
-        return e;
+        _k = j;
+}), a.register('jzxyj10', function(_b, c) {
+    _b(_b.exports, 'NavigateTo', function() {
+        return _e;
     });
-    var d = c('Cr/BM');
-    const e = a => {
-        d.history.push(a);
+    var d = a('oBJ9G');
+    const _e = _b => {
+        d.history.push(_b);
     };
-}), c.register('iMnBi', function(b, d) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('9R7cy', function(b, c) {
+    _b(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = a => (0, d.jsx)('i', {
-        className: `${ a.name }${ a.className ? ` ${ a.className }` : '' }`,
-        style: a.style
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var _e = _b => (0, d.jsx)('i', {
+        className: `${ _b.name }${ _b.className ? ` ${ _b.className }` : '' }`,
+        style: _b.style
     });
-}), c.register('u1rFO25', function(a, b) {
-    Object.defineProperty(a.exports, '__esModule', {
+}), a.register('7B+hJ16', function(_b, c) {
+    Object.defineProperty(_b.exports, '__esModule', {
         value: !0
-    }), a.exports.lazyWithPreload = void 0;
-    var d = c('uPP4W');
+    }), _b.exports.lazyWithPreload = void 0;
+    var d = a('LEQ5w');
 
-    function e(a) {
-        var f, g, h = (0, d.lazy)(a),
-            i = (0, d.forwardRef)(function(a, g) {
-                var j = (0, d.useRef)(null != f ? f : h);
-                return (0, d.createElement)(j.current, Object.assign(g ? {
-                    ref: g
-                } : {}, a));
+    function e(f) {
+        var g, h, i = (0, d.lazy)(f),
+            j = (0, d.forwardRef)(function(k, l) {
+                var m = (0, d.useRef)(null != g ? g : i);
+                return (0, d.createElement)(m.current, Object.assign(l ? {
+                    ref: l
+                } : {}, k));
             });
-        return i.preload = function() {
-            return g || (g = a().then(function(a) {
-                return f = a.default;
-            })), g;
-        }, i;
+        return j.preload = function() {
+            return h || (h = f().then(function(k) {
+                return g = k.default;
+            })), h;
+        }, j;
     }
-    a.exports.lazyWithPreload = e, a.exports.default = e;
-}), c.register('cdiGP23', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    _b.exports.lazyWithPreload = o, _b.exports.default = o;
+}), a.register('ibLRf19', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         White: 'white',
         Black: 'black',
         BackgroundGray: '#eeeeee',

@@ -1,36 +1,36 @@
-function a(a, b, c, d) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: d,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('kiaj0', function(b, d) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('w57ai', function(b, c) {
     var d;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(b.exports, 'default', function() {
-        return o;
+    }), _o(b.exports, 'default', function() {
+        return _o;
     });
-    var e = c('UM8oI'),
-        f = c('5Ux1a'),
-        g = c('sgILU'),
-        h = c('37gtH'),
-        i = c('crVjo2'),
-        j = c('Bpt+p'),
-        k = c('phu0d'),
-        l = c('JJQ0+'),
-        m = c('Gqspz');
+    var e = a('1bFPu'),
+        f = a('/pbxo'),
+        g = a('I35Ay'),
+        h = a('6Rd7a'),
+        i = a('sCbH9'),
+        j = a('9tz3H'),
+        k = a('+uQv7'),
+        l = a('2Xvuf'),
+        m = a('dTXti');
     class n extends g.default {
-        constructor(a) {
-            if (super(a), (0, e.default)(this, 'openDeviceUI', () => {
+        constructor(_o) {
+            if (super(_o), (0, e.default)(this, 'openDeviceUI', () => {
                     this.deviceUI.open({
                         style: this.options.style,
                         defaultFontFamily: this.options.defaultFontFamily,
@@ -38,18 +38,18 @@ c.register('kiaj0', function(b, d) {
                         closableByUser: this.options.closableByUser,
                         code: this.options.code
                     });
-                }), (0, e.default)(this, 'callAction', a => {
+                }), (0, e.default)(this, 'callAction', _o => {
                     this.sendToServerDevice(h.Messages.callAction, {
-                        calledActionName: a
+                        calledActionName: _o
                     });
                 }), (0, i.default)({
                     familyName: this.options.defaultFontFamily
                 }), (0, f.InPreGamePhase)() && (0, j.isSavedVersion)()) {
-                const o = m.default.Overlay;
+                const p = m.default.Overlay;
                 new(0, k.default)({
                     device: this,
-                    baseColor: o.baseColor,
-                    boxColor: o.boxColor,
+                    baseColor: p.baseColor,
+                    boxColor: p.boxColor,
                     content: {
                         icon: {
                             image: (0, l.default)('devices/code_ui/icon.png'),
@@ -60,32 +60,32 @@ c.register('kiaj0', function(b, d) {
             }
         }
     }
-    var o = p;
-}), c.register('37gtH', function(b, c) {
+    var _o = n;
+}), a.register('6Rd7a', function(b, c) {
     let d;
-    a(b.exports, 'Messages', function() {
+    e(b.exports, 'Messages', function() {
         return d;
     }), (d || (d = {})).callAction = 'callAction';
-}), c.register('crVjo2', function(i, i) {
-    a(i.exports, 'isGoogleFontLoaded', function() {
-        return f;
-    }), a(i.exports, 'default', function() {
-        return g;
+}), a.register('sCbH9', function(b, c) {
+    e(b.exports, 'isGoogleFontLoaded', function() {
+        return _f;
+    }), e(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('2qGsE');
+    var d = a('/oq/k');
     const e = [],
-        f = a => e.includes(a);
-    var g = a => {
+        _f = e => e.includes(e);
+    var _g = e => {
         const {
             familyName: h,
             onLoad: i
-        } = j;
-        e.includes(h) ? i && i() : b(d).load({
+        } = e;
+        e.includes(h) ? i && i() : o(d).load({
             google: {
                 families: [`${ h }:400,700`]
             },
-            fontactive: j => {
-                e.includes(j) || e.push(j), h === j && i && i();
+            fontactive: e => {
+                e.includes(e) || e.push(e), h === e && i && i();
             }
         });
     };

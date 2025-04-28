@@ -1,215 +1,215 @@
-function a(a, b, k, l) {
-    Object.defineProperty(a, b, {
-        get: k,
-        set: l,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('Qzbof', function(k, l) {
-    var c;
-    c = k.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('Hx0ga', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(k.exports, 'OutlineDevice', function() {
-        return g;
-    }), a(k.exports, 'default', function() {
-        return h;
+    }), _i(b.exports, 'OutlineDevice', function() {
+        return _h;
+    }), _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = b('UM8oI'),
-        e = b('sgILU'),
-        f = b('hrOCH');
-    class g extends e.default {
-        constructor(a) {
-            super(a), (0, d.default)(this, 'onStateChange', a => {}), (0, f.CreateVisuals)(this);
+    var e = a('1bFPu'),
+        f = a('I35Ay'),
+        g = a('jhkRw');
+    class _h extends f.default {
+        constructor(_i) {
+            super(_i), (0, e.default)(this, 'onStateChange', _i => {}), (0, g.CreateVisuals)(this);
         }
     }
-    var h = i;
-}), b.register('hrOCH', function(k, l) {
-    a(k.exports, 'CreateVisuals', function() {
-        return i;
+    var _i = _h;
+}), a.register('jhkRw', function(b, c) {
+    i(b.exports, 'CreateVisuals', function() {
+        return _j;
     });
-    var c = b('T/YBH'),
-        d = b('y3cfQ'),
-        e = b('Sn7al'),
-        f = b('8fVzI'),
-        g = b('IGGqR'),
-        h = b('93aaR');
-    const i = a => {
-        const j = a.options.shape === c.OutlineShape.line,
-            k = a.options.shape === c.OutlineShape.circle,
-            l = a.options.style === c.OutlineStyle.solid,
-            m = a.options.style === c.OutlineStyle.dashed;
-        a.options.circleFill && k ? (0, f.CreateFilledCircle)(a) : j && l ? (0, h.CreateSolidLine)(a) : k && l ? (0, g.CreateSolidCircle)(a) : j && m ? (0, e.CreateDashedLine)(a) : k && m && (0, d.CreateDashedCircle)(a);
+    var d = a('yl0a4'),
+        e = a('l4Rhv'),
+        f = a('LWBoF'),
+        g = a('o0xoR'),
+        h = a('C/u3U'),
+        i = a('9W3iy');
+    const _j = i => {
+        const k = i.options.shape === d.OutlineShape.line,
+            l = i.options.shape === d.OutlineShape.circle,
+            m = i.options.style === d.OutlineStyle.solid,
+            n = i.options.style === d.OutlineStyle.dashed;
+        i.options.circleFill && l ? (0, g.CreateFilledCircle)(i) : k && m ? (0, i.CreateSolidLine)(i) : l && m ? (0, h.CreateSolidCircle)(i) : k && n ? (0, f.CreateDashedLine)(i) : l && n && (0, e.CreateDashedCircle)(i);
     };
-}), b.register('T/YBH', function(b, f) {
-    let c;
-    var d;
-    let e;
-    var f;
-    a(b.exports, 'OutlineShape', function() {
-        return c;
-    }), a(b.exports, 'OutlineStyle', function() {
-        return e;
-    }), (d = c || (c = {})).line = 'rectangle', d.circle = 'circle', (f = e || (e = {})).solid = 'solid', f.dashed = 'dashed';
-}), b.register('y3cfQ', function(f, g) {
-    a(f.exports, 'CreateDashedCircle', function() {
+}), a.register('yl0a4', function(b, c) {
+    let d;
+    var e;
+    let f;
+    var g;
+    i(b.exports, 'OutlineShape', function() {
         return d;
+    }), i(b.exports, 'OutlineStyle', function() {
+        return f;
+    }), (e = d || (d = {})).line = 'rectangle', e.circle = 'circle', (g = f || (f = {})).solid = 'solid', g.dashed = 'dashed';
+}), a.register('l4Rhv', function(b, c) {
+    i(b.exports, 'CreateDashedCircle', function() {
+        return _e;
     });
-    var c = b('u91K4');
-    const d = a => {
-        const e = 2 * a.options.circleRadius + a.options.thickness / 2,
-            f = 2 * a.options.circleRadius + a.options.thickness / 2,
-            g = -Math.PI / 2 - a.options.circlePercentage / 100 * Math.PI,
-            h = -Math.PI / 2 + a.options.circlePercentage / 100 * Math.PI;
-        a.graphics = a.parts.add.graphics({
+    var d = a('zYVjR');
+    const _e = i => {
+        const f = 2 * i.options.circleRadius + i.options.thickness / 2,
+            g = 2 * i.options.circleRadius + i.options.thickness / 2,
+            h = -Math.PI / 2 - i.options.circlePercentage / 100 * Math.PI,
+            i = -Math.PI / 2 + i.options.circlePercentage / 100 * Math.PI;
+        i.graphics = i.parts.add.graphics({
             x: 0,
             y: 0,
-            width: e,
-            height: f,
-            hitCallback: (e, f) => (0, c.CircleHitCallback)(a, e, f)
-        }), a.graphics.view.lineStyle(Math.min(a.options.thickness, 2 * a.options.circleRadius), Phaser.Display.Color.HexStringToColor(a.options.color).color, a.options.alpha);
-        const i = a.options.circlePercentage / 100 * Math.PI * 2,
-            j = Math.PI * a.options.circleRadius * 2,
-            k = j * a.options.circlePercentage / 100,
-            l = a.options.dashLength,
-            m = a.options.dashSpacing,
-            n = l / j * Math.PI * 2,
-            o = m / j * Math.PI * 2;
-        if (o >= k) {
-            const p = Math.min(g, -n / 2),
-                q = Math.max(h, n / 2);
-            return void a.graphics.view.arc(0, 0, a.options.circleRadius, p, q, !1, 0.01);
+            width: f,
+            height: g,
+            hitCallback: (f, g) => (0, d.CircleHitCallback)(i, f, g)
+        }), i.graphics.view.lineStyle(Math.min(i.options.thickness, 2 * i.options.circleRadius), Phaser.Display.Color.HexStringToColor(i.options.color).color, i.options.alpha);
+        const j = i.options.circlePercentage / 100 * Math.PI * 2,
+            k = Math.PI * i.options.circleRadius * 2,
+            l = k * i.options.circlePercentage / 100,
+            m = i.options.dashLength,
+            n = i.options.dashSpacing,
+            o = m / k * Math.PI * 2,
+            p = n / k * Math.PI * 2;
+        if (p >= l) {
+            const q = Math.min(h, -o / 2),
+                r = Math.max(i, o / 2);
+            return void i.graphics.view.arc(0, 0, i.options.circleRadius, q, r, !1, 0.01);
         }
-        const p = n + o,
-            q = Math.max(1, Math.floor(i / p)),
-            r = i - q * p,
-            s = Math.min(n, (r + n) / 2),
-            t = Math.max(0, (r - n) / 2);
-        a.graphics.view.beginPath(), a.graphics.view.arc(0, 0, a.options.circleRadius, g + t, g + t + s, !1, 0.01), a.graphics.view.strokePath();
-        let u = g + t + s + o;
-        for (let v = 0; v < q - 1; v++)
-            a.graphics.view.beginPath(), a.graphics.view.arc(0, 0, a.options.circleRadius, u, u + n, !1, 0.01), a.graphics.view.strokePath(), u += p;
-        a.graphics.view.beginPath(), a.graphics.view.arc(0, 0, a.options.circleRadius, h - t - s, h - t, !1, 0.01), a.graphics.view.strokePath(), a.graphics.view.angle = a.options.angle;
+        const q = o + p,
+            r = Math.max(1, Math.floor(j / q)),
+            s = j - r * q,
+            t = Math.min(o, (s + o) / 2),
+            u = Math.max(0, (s - o) / 2);
+        i.graphics.view.beginPath(), i.graphics.view.arc(0, 0, i.options.circleRadius, h + u, h + u + t, !1, 0.01), i.graphics.view.strokePath();
+        let v = h + u + t + p;
+        for (let w = 0; w < r - 1; w++)
+            i.graphics.view.beginPath(), i.graphics.view.arc(0, 0, i.options.circleRadius, v, v + o, !1, 0.01), i.graphics.view.strokePath(), v += q;
+        i.graphics.view.beginPath(), i.graphics.view.arc(0, 0, i.options.circleRadius, i - u - t, i - u, !1, 0.01), i.graphics.view.strokePath(), i.graphics.view.angle = i.options.angle;
     };
-}), b.register('u91K4', function(b, f) {
-    a(b.exports, 'CircleHitCallback', function() {
-        return c;
+}), a.register('zYVjR', function(b, c) {
+    i(b.exports, 'CircleHitCallback', function() {
+        return _d;
     });
-    const c = (a, b, f, c, c) => {
-        c = null != c ? c : a.options.circleRadius + a.options.thickness / 2, c = null != c ? c : a.options.circleRadius - a.options.thickness / 2;
-        const d = -Math.PI / 2 - a.options.circlePercentage / 100 * Math.PI,
-            e = -Math.PI / 2 + a.options.circlePercentage / 100 * Math.PI,
-            f = Phaser.Math.Angle.Between(0, 0, b, f);
-        if (f < d || f > e)
+    const _d = (i, b, c, _d, _d) => {
+        _d = null != _d ? _d : i.options.circleRadius + i.options.thickness / 2, _d = null != _d ? _d : i.options.circleRadius - i.options.thickness / 2;
+        const e = -Math.PI / 2 - i.options.circlePercentage / 100 * Math.PI,
+            f = -Math.PI / 2 + i.options.circlePercentage / 100 * Math.PI,
+            g = Phaser.Math.Angle.Between(0, 0, b, c);
+        if (g < e || g > f)
             return !1;
-        const g = Phaser.Math.Distance.Between(0, 0, b, f);
-        return !(g < c || g > c);
+        const h = Phaser.Math.Distance.Between(0, 0, b, c);
+        return !(h < _d || h > _d);
     };
-}), b.register('Sn7al', function(f, g) {
-    a(f.exports, 'CreateDashedLine', function() {
-        return d;
+}), a.register('LWBoF', function(b, c) {
+    i(b.exports, 'CreateDashedLine', function() {
+        return _e;
     });
-    var c = b('K8LoI');
-    const d = a => {
-        const e = a.options.lineLength,
-            f = a.options.thickness;
-        a.graphics = a.parts.add.graphics({
+    var _d = a('yrAFK');
+    const _e = i => {
+        const f = i.options.lineLength,
+            g = i.options.thickness;
+        i.graphics = i.parts.add.graphics({
             x: 0,
             y: 0,
-            width: e,
-            height: f
-        }), a.graphics.view.fillStyle(Phaser.Display.Color.HexStringToColor(a.options.color).color, a.options.alpha);
-        const g = a.options.dashLength,
-            h = a.options.dashSpacing;
-        if (h >= e) {
-            const i = Math.min(g, e);
-            return void a.graphics.view.fillRect(-i / 2, -f / 2, i, f);
+            width: f,
+            height: g
+        }), i.graphics.view.fillStyle(Phaser.Display.Color.HexStringToColor(i.options.color).color, i.options.alpha);
+        const h = i.options.dashLength,
+            i = i.options.dashSpacing;
+        if (i >= f) {
+            const j = Math.min(h, f);
+            return void i.graphics.view.fillRect(-j / 2, -g / 2, j, g);
         }
-        const i = g + h,
-            j = Math.max(1, Math.floor(e / i)),
-            k = e - j * i,
-            l = Math.min(g, (k + g) / 2),
-            m = Math.max(0, (k - g) / 2);
-        a.graphics.view.fillRect(-e / 2 + m, -f / 2, l, f);
-        let n = -e / 2 + m + l + h;
-        for (let o = 0; o < j - 1; o++)
-            a.graphics.view.fillRect(n, -f / 2, g, f), n += i;
-        a.graphics.view.fillRect(o / 2 - m - l, -f / 2, l, f), a.graphics.view.angle = a.options.angle, (0, c.SetLineBoundingBox)(a);
+        const j = h + i,
+            k = Math.max(1, Math.floor(f / j)),
+            l = f - k * j,
+            m = Math.min(h, (l + h) / 2),
+            n = Math.max(0, (l - h) / 2);
+        i.graphics.view.fillRect(-f / 2 + n, -g / 2, m, g);
+        let o = -f / 2 + n + m + i;
+        for (let p = 0; p < k - 1; p++)
+            i.graphics.view.fillRect(o, -g / 2, h, g), o += j;
+        i.graphics.view.fillRect(p / 2 - n - m, -g / 2, m, g), i.graphics.view.angle = i.options.angle, (0, _d.SetLineBoundingBox)(i);
     };
-}), b.register('K8LoI', function(f, g) {
-    a(f.exports, 'SetLineBoundingBox', function() {
-        return d;
+}), a.register('yrAFK', function(b, c) {
+    i(b.exports, 'SetLineBoundingBox', function() {
+        return _e;
     });
-    var c = b('nEG71');
-    const d = a => {
-        const e = a.x,
-            f = a.y,
-            g = (0, c.ConvertDegToRad)(a.options.angle),
-            h = a.options.lineLength / 2,
-            i = e - h * Math.cos(g),
-            j = f - h * Math.sin(g),
-            k = e + h * Math.cos(g),
-            l = f + h * Math.sin(g),
-            m = Math.min(i, k),
+    var d = a('MfvC6');
+    const _e = i => {
+        const f = i.x,
+            g = i.y,
+            h = (0, d.ConvertDegToRad)(i.options.angle),
+            i = i.options.lineLength / 2,
+            j = f - i * Math.cos(h),
+            k = g - i * Math.sin(h),
+            l = f + i * Math.cos(h),
+            m = g + i * Math.sin(h),
             n = Math.min(j, l),
-            o = Math.max(i, k) - m,
-            p = Math.max(j, l) - n;
-        a.boundingBox.setHardcoded({
-            width: o,
-            height: p
+            o = Math.min(k, m),
+            p = Math.max(j, l) - n,
+            q = Math.max(k, m) - o;
+        i.boundingBox.setHardcoded({
+            width: p,
+            height: q
         });
     };
-}), b.register('8fVzI', function(f, g) {
-    a(f.exports, 'CreateFilledCircle', function() {
-        return d;
+}), a.register('o0xoR', function(b, c) {
+    i(b.exports, 'CreateFilledCircle', function() {
+        return _e;
     });
-    var c = b('u91K4');
-    const d = a => {
-        const e = 2 * a.options.circleRadius + a.options.thickness / 2,
-            f = 2 * a.options.circleRadius + a.options.thickness / 2,
-            g = -Math.PI / 2 - a.options.circlePercentage / 100 * Math.PI,
-            h = -Math.PI / 2 + a.options.circlePercentage / 100 * Math.PI;
-        a.graphics = a.parts.add.graphics({
+    var d = a('zYVjR');
+    const _e = i => {
+        const f = 2 * i.options.circleRadius + i.options.thickness / 2,
+            g = 2 * i.options.circleRadius + i.options.thickness / 2,
+            h = -Math.PI / 2 - i.options.circlePercentage / 100 * Math.PI,
+            i = -Math.PI / 2 + i.options.circlePercentage / 100 * Math.PI;
+        i.graphics = i.parts.add.graphics({
             x: 0,
             y: 0,
-            width: e,
-            height: f,
-            hitCallback: (e, f) => (0, c.CircleHitCallback)(a, e, f, 0, a.options.circleRadius)
-        }), a.graphics.view.fillStyle(Phaser.Display.Color.HexStringToColor(a.options.color).color, a.options.alpha), a.graphics.view.slice(0, 0, a.options.circleRadius, g, h, !1), a.graphics.view.fillPath(), a.graphics.view.angle = a.options.angle;
+            width: f,
+            height: g,
+            hitCallback: (f, g) => (0, d.CircleHitCallback)(i, f, g, 0, i.options.circleRadius)
+        }), i.graphics.view.fillStyle(Phaser.Display.Color.HexStringToColor(i.options.color).color, i.options.alpha), i.graphics.view.slice(0, 0, i.options.circleRadius, h, i, !1), i.graphics.view.fillPath(), i.graphics.view.angle = i.options.angle;
     };
-}), b.register('IGGqR', function(f, g) {
-    a(f.exports, 'CreateSolidCircle', function() {
-        return d;
+}), a.register('C/u3U', function(b, c) {
+    i(b.exports, 'CreateSolidCircle', function() {
+        return _e;
     });
-    var c = b('u91K4');
-    const d = a => {
-        const e = 2 * a.options.circleRadius + a.options.thickness / 2,
-            f = 2 * a.options.circleRadius + a.options.thickness / 2,
-            g = -Math.PI / 2 - a.options.circlePercentage / 100 * Math.PI,
-            h = -Math.PI / 2 + a.options.circlePercentage / 100 * Math.PI;
-        a.graphics = a.parts.add.graphics({
+    var d = a('zYVjR');
+    const _e = i => {
+        const f = 2 * i.options.circleRadius + i.options.thickness / 2,
+            g = 2 * i.options.circleRadius + i.options.thickness / 2,
+            h = -Math.PI / 2 - i.options.circlePercentage / 100 * Math.PI,
+            i = -Math.PI / 2 + i.options.circlePercentage / 100 * Math.PI;
+        i.graphics = i.parts.add.graphics({
             x: 0,
             y: 0,
-            width: e,
-            height: f,
-            hitCallback: (e, f) => (0, c.CircleHitCallback)(a, e, f)
-        }), a.graphics.view.lineStyle(Math.min(a.options.thickness, 2 * a.options.circleRadius), Phaser.Display.Color.HexStringToColor(a.options.color).color, a.options.alpha), a.graphics.view.arc(0, 0, a.options.circleRadius, g, h, !1, 0.01), a.graphics.view.strokePath(), a.graphics.view.angle = a.options.angle;
+            width: f,
+            height: g,
+            hitCallback: (f, g) => (0, d.CircleHitCallback)(i, f, g)
+        }), i.graphics.view.lineStyle(Math.min(i.options.thickness, 2 * i.options.circleRadius), Phaser.Display.Color.HexStringToColor(i.options.color).color, i.options.alpha), i.graphics.view.arc(0, 0, i.options.circleRadius, h, i, !1, 0.01), i.graphics.view.strokePath(), i.graphics.view.angle = i.options.angle;
     };
-}), b.register('93aaR', function(f, o) {
-    a(f.exports, 'CreateSolidLine', function() {
-        return d;
+}), a.register('9W3iy', function(b, c) {
+    i(b.exports, 'CreateSolidLine', function() {
+        return _e;
     });
-    var c = b('K8LoI');
-    const d = a => {
-        const e = a.options.lineLength,
-            f = a.options.thickness;
-        a.graphics = a.parts.add.graphics({
+    var d = a('yrAFK');
+    const _e = i => {
+        const f = i.options.lineLength,
+            g = i.options.thickness;
+        i.graphics = i.parts.add.graphics({
             x: 0,
             y: 0,
-            width: e,
-            height: f
-        }), a.graphics.view.fillStyle(Phaser.Display.Color.HexStringToColor(a.options.color).color, a.options.alpha), a.graphics.view.fillRect(-e / 2, -f / 2, e, f), a.graphics.view.angle = a.options.angle, (0, c.SetLineBoundingBox)(a);
+            width: f,
+            height: g
+        }), i.graphics.view.fillStyle(Phaser.Display.Color.HexStringToColor(i.options.color).color, i.options.alpha), i.graphics.view.fillRect(-f / 2, -g / 2, f, g), i.graphics.view.angle = i.options.angle, (0, d.SetLineBoundingBox)(i);
     };
 });

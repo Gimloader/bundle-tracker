@@ -1,118 +1,118 @@
-function a(a, b, p, q) {
-    Object.defineProperty(a, b, {
-        get: p,
-        set: q,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('kf5Sk', function(p, q) {
-    var c;
-    c = p.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('H0TeK', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(p.exports, 'default', function() {
-        return o;
+    }), _p(b.exports, 'default', function() {
+        return _p;
     });
-    var d = b('UM8oI'),
-        e = b('Bpt+p'),
-        f = b('5Ux1a'),
-        g = b('wSwKo5'),
-        h = b('/Lvpl17'),
-        i = b('sgILU'),
-        j = b('JJQ0+'),
-        k = b('eaWFX'),
-        l = b('Q0Vn8'),
-        m = b('HMNV0');
-    class n extends i.default {
-        constructor(a) {
-            if (super(a), (0, d.default)(this, 'currentFallVelocity', 0), (0, f.InGamePhase)() || (0, e.isPublishedVersion)())
+    var e = a('1bFPu'),
+        f = a('9tz3H'),
+        g = a('/pbxo'),
+        h = a('IFO6W13'),
+        i = a('R2Ucl10'),
+        j = a('I35Ay'),
+        k = a('2Xvuf'),
+        l = a('DWF4E'),
+        m = a('5CmLs'),
+        n = a('JEGzD');
+    class o extends j.default {
+        constructor(_p) {
+            if (super(_p), (0, e.default)(this, 'currentFallVelocity', 0), (0, g.InGamePhase)() || (0, f.isPublishedVersion)())
                 return;
-            const o = (0, h.FetchOptionSchemaProperty)(this, 'rangeRadius');
+            const q = (0, i.FetchOptionSchemaProperty)(this, 'rangeRadius');
             this.visualEditing.add.circle({
                 radius: this.options.rangeRadius,
-                minRadius: o.min,
-                maxRadius: o.max,
+                minRadius: q.min,
+                maxRadius: q.max,
                 rotable: !1,
-                onChange: a => {
-                    (0, g.ReplaceVisualEditingPreview)(a.x, a.y, {
-                        rangeRadius: Math.round(a.radius)
+                onChange: _p => {
+                    (0, h.ReplaceVisualEditingPreview)(_p.x, _p.y, {
+                        rangeRadius: Math.round(_p.radius)
                     });
                 }
             });
-            const p = this.options.skinId.replace('character_', ''),
-                q = (0, j.default)(`characters/spine/normalized_preview/${ p }.png`);
+            const r = this.options.skinId.replace('character_', ''),
+                s = (0, k.default)(`characters/spine/normalized_preview/${ r }.png`);
             this.parts.add.sprite({
                 y: 30 - 50 * 0.28,
-                imageId: q,
-                imageUrl: q,
-                depthChange: (0, l.default)(2),
-                onReady: a => {
-                    a.view.setScale(0.28 * this.options.scale), a.view.setOrigin(0.5, 550 / 600);
+                imageId: s,
+                imageUrl: s,
+                depthChange: (0, m.default)(2),
+                onReady: _p => {
+                    _p.view.setScale(0.28 * this.options.scale), _p.view.setOrigin(0.5, 550 / 600);
                 }
-            }), (0, m.isPlatformer)() || this.parts.add.sprite({
+            }), (0, n.isPlatformer)() || this.parts.add.sprite({
                 y: 15 - 5 * this.options.scale,
                 imageId: 'character-shadow',
-                imageUrl: (0, j.default)('characters/shadow.png'),
-                onReady: a => {
-                    a.view.setOrigin(0.5, 0.5), a.view.setScale(k.SHADOW_SCALE * this.options.scale), a.view.setAlpha(k.SHADOW_ALPHA);
+                imageUrl: (0, k.default)('characters/shadow.png'),
+                onReady: _p => {
+                    _p.view.setOrigin(0.5, 0.5), _p.view.setScale(l.SHADOW_SCALE * this.options.scale), _p.view.setAlpha(l.SHADOW_ALPHA);
                 }
             });
         }
     }
-    var o = p;
-}), b.register('wSwKo5', function(d, h) {
-    a(d.exports, 'ReplaceVisualEditingPreview', function() {
-        return g;
+    var _p = o;
+}), a.register('IFO6W13', function(b, c) {
+    e(b.exports, 'ReplaceVisualEditingPreview', function() {
+        return _h;
     });
-    var c = b('2pEsK'),
-        d = b('Am0b71'),
-        e = b('KDS1x'),
-        f = b('83+vO');
-    const g = (a, b, d) => {
-        const h = (0, f.FetchVisualEditingPreview)(),
-            i = (0, e.FetchCurrentlyEditedDevice)();
-        if (!i || !h)
+    var d = a('HqwPM'),
+        e = a('+oovY4'),
+        f = a('A17vD'),
+        g = a('HXXiu');
+    const _h = (e, a, b) => {
+        const i = (0, g.FetchVisualEditingPreview)(),
+            j = (0, f.FetchCurrentlyEditedDevice)();
+        if (!j || !i)
             return;
-        const j = i.layers.isOnNaturalDepth() ? void 0 : b + i.layers.getDepthShift();
-        (0, d.default)({
-            deviceOption: h.deviceOption,
-            id: c.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: j,
-            layerId: i.layers.getLayer(),
-            name: h.name,
+        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
+        (0, e.default)({
+            deviceOption: i.deviceOption,
+            id: d.VisualEditingConstants.previewId,
+            x: e,
+            y: a,
+            depth: k,
+            layerId: j.layers.getLayer(),
+            name: i.name,
             isPreview: !0,
             options: {
-                ...h.options,
-                ...d
+                ...i.options,
+                ...b
             },
             placedByClient: !0,
-            state: h.deviceOption.defaultState
+            state: i.deviceOption.defaultState
         });
     };
-}), b.register('Am0b71', function(d, c) {
-    a(d.exports, 'default', function() {
-        return e;
+}), a.register('+oovY4', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _f;
     });
-    var c = b('dAmf5'),
-        d = b('jgFbX');
-    var e = a => {
-        (0, c.default)().worldManager.devices.getDeviceById(a.id) && (0, d.default)(a);
+    var d = a('D5xLI'),
+        e = a('aIyMH');
+    var _f = e => {
+        (0, d.default)().worldManager.devices.getDeviceById(e.id) && (0, e.default)(e);
     };
-}), b.register('/Lvpl17', function(b, d) {
-    a(b.exports, 'FetchOptionSchemaProperty', function() {
-        return c;
+}), a.register('R2Ucl10', function(b, c) {
+    e(b.exports, 'FetchOptionSchemaProperty', function() {
+        return _d;
     });
-    const c = (a, b) => {
-        var d, e, f;
-        const g = a.deviceOption.optionSchema.options.find(a => a.key === b);
+    const _d = (e, b) => {
+        var e, f, g;
+        const h = e.deviceOption.optionSchema.options.find(e => e.key === b);
         return {
-            min: null === (d = null == g ? void 0 : g.option.props) || void 0 === d ? void 0 : d.min,
-            max: null === (e = null == g ? void 0 : g.option.props) || void 0 === e ? void 0 : e.max,
-            step: null === (f = null == g ? void 0 : g.option.props) || void 0 === f ? void 0 : f.step
+            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
+            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
+            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
         };
     };
 });

@@ -1,55 +1,55 @@
-function a(a, b, c, n) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: n,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('QtkH71', function(b, n) {
-    a(b.exports, 'default', function() {
-        return g;
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('q0pUc1', function(b, c) {
+    _d(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('0RCfO0'),
-        e = c('WjvOI1');
+    var d = a('2SA1z'),
+        e = a('GvkEq1');
     const f = d.default;
     f.Group = e.default, f.__ANT_CHECKBOX = !0;
-    var g = h;
-}), c.register('0RCfO0', function(n, o) {
-    a(n.exports, 'default', function() {
-        return q;
-    }, function(a) {
-        return q = a;
+    var _g = f;
+}), a.register('2SA1z', function(b, c) {
+    _d(b.exports, 'default', function() {
+        return _q;
+    }, function(_d) {
+        return _q = _d;
     });
-    var d = c('VAIs1'),
-        e = c('CrMLT9'),
-        f = c('uPP4W'),
-        g = c('qEw51'),
-        h = c('LhviC'),
-        i = c('WjvOI1'),
-        j = c('Cm5dS'),
-        k = c('qBaIr0'),
-        l = function(a, b) {
-            var m = {};
-            for (var n in a)
-                Object.prototype.hasOwnProperty.call(a, n) && b.indexOf(n) < 0 && (m[n] = a[n]);
-            if (null != a && 'function' == typeof Object.getOwnPropertySymbols) {
-                var o = 0;
-                for (n = Object.getOwnPropertySymbols(a); o < n.length; o++)
-                    b.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(a, n[o]) && (m[n[o]] = a[n[o]]);
+    var d = a('JrtKP'),
+        e = a('RW2Mp'),
+        f = a('LEQ5w'),
+        g = a('1P5ls'),
+        h = a('UWoHW'),
+        i = a('GvkEq1'),
+        j = a('hFUNe'),
+        k = a('oaXRt'),
+        l = function(m, n) {
+            var o = {};
+            for (var p in m)
+                Object.prototype.hasOwnProperty.call(m, p) && n.indexOf(p) < 0 && (o[p] = m[p]);
+            if (null != m && 'function' == typeof Object.getOwnPropertySymbols) {
+                var q = 0;
+                for (p = Object.getOwnPropertySymbols(m); q < p.length; q++)
+                    n.indexOf(p[q]) < 0 && Object.prototype.propertyIsEnumerable.call(m, p[q]) && (o[p[q]] = m[p[q]]);
             }
-            return m;
+            return o;
         };
-    const m = (a, c) => {
+    const m = (_d, a) => {
         var n, {
                 prefixCls: o,
                 className: p,
-                rootClassName: q,
+                rootClassName: _q,
                 children: r,
                 indeterminate: s = !1,
                 style: t,
@@ -57,8 +57,8 @@ c.register('QtkH71', function(b, n) {
                 onMouseLeave: v,
                 skipGroup: w = !1,
                 disabled: x
-            } = y,
-            z = l(y, [
+            } = _d,
+            y = l(_d, [
                 'prefixCls',
                 'className',
                 'rootClassName',
@@ -71,92 +71,92 @@ c.register('QtkH71', function(b, n) {
                 'disabled'
             ]);
         const {
-            getPrefixCls: A,
-            direction: B
-        } = f.useContext(g.ConfigContext), C = f.useContext(i.GroupContext), {
-            isFormItemInput: D
-        } = f.useContext(h.FormItemInputContext), E = f.useContext(j.default), F = null !== (n = (null == C ? void 0 : C.disabled) || x) && void 0 !== n ? n : E, G = f.useRef(z.value);
+            getPrefixCls: z,
+            direction: A
+        } = f.useContext(g.ConfigContext), B = f.useContext(i.GroupContext), {
+            isFormItemInput: C
+        } = f.useContext(h.FormItemInputContext), D = f.useContext(j.default), E = null !== (n = (null == B ? void 0 : B.disabled) || x) && void 0 !== n ? n : D, F = f.useRef(y.value);
         f.useEffect(() => {
-            null == C || C.registerValue(z.value);
+            null == B || B.registerValue(y.value);
         }, []), f.useEffect(() => {
             if (!w)
-                return z.value !== G.current && (null == C || C.cancelValue(G.current), null == C || C.registerValue(z.value), G.current = z.value), () => null == C ? void 0 : C.cancelValue(z.value);
-        }, [z.value]);
-        const H = A('checkbox', o),
-            [I, J] = (0, k.default)(H),
-            K = Object.assign({}, z);
-        C && !w && (K.onChange = function() {
-            z.onChange && z.onChange.apply(z, arguments), C.toggleOption && C.toggleOption({
+                return y.value !== F.current && (null == B || B.cancelValue(F.current), null == B || B.registerValue(y.value), F.current = y.value), () => null == B ? void 0 : B.cancelValue(y.value);
+        }, [y.value]);
+        const G = z('checkbox', o),
+            [H, I] = (0, k.default)(G),
+            J = Object.assign({}, y);
+        B && !w && (J.onChange = function() {
+            y.onChange && y.onChange.apply(y, arguments), B.toggleOption && B.toggleOption({
                 label: r,
-                value: z.value
+                value: y.value
             });
-        }, K.name = C.name, K.checked = C.value.includes(z.value));
-        const L = b(d)({
-                [`${ H }-wrapper`]: !0,
-                [`${ H }-rtl`]: 'rtl' === B,
-                [`${ H }-wrapper-checked`]: K.checked,
-                [`${ H }-wrapper-disabled`]: F,
-                [`${ H }-wrapper-in-form-item`]: D
-            }, p, q, J),
-            M = b(d)({
-                [`${ H }-indeterminate`]: s
-            }, J),
-            N = s ? 'mixed' : void 0;
-        return I(f.createElement('label', {
-            className: L,
+        }, J.name = B.name, J.checked = B.value.includes(y.value));
+        const K = _m(d)({
+                [`${ G }-wrapper`]: !0,
+                [`${ G }-rtl`]: 'rtl' === A,
+                [`${ G }-wrapper-checked`]: J.checked,
+                [`${ G }-wrapper-disabled`]: E,
+                [`${ G }-wrapper-in-form-item`]: C
+            }, p, _q, I),
+            L = _m(d)({
+                [`${ G }-indeterminate`]: s
+            }, I),
+            M = s ? 'mixed' : void 0;
+        return H(f.createElement('label', {
+            className: K,
             style: t,
             onMouseEnter: u,
             onMouseLeave: v
         }, f.createElement(e.default, Object.assign({
-            'aria-checked': N
-        }, K, {
-            prefixCls: H,
-            className: M,
-            disabled: F,
-            ref: c
+            'aria-checked': M
+        }, J, {
+            prefixCls: G,
+            className: L,
+            disabled: E,
+            ref: a
         })), void 0 !== r && f.createElement('span', null, r)));
     };
     var n = f.forwardRef(m);
-}), c.register('WjvOI1', function(m, n) {
-    a(m.exports, 'GroupContext', function() {
-        return l;
-    }, function(a) {
-        return l = a;
-    }), a(m.exports, 'default', function() {
-        return r;
-    }, function(a) {
-        return r = a;
+}), a.register('GvkEq1', function(b, c) {
+    _d(b.exports, 'GroupContext', function() {
+        return _l;
+    }, function(_d) {
+        return _l = _d;
+    }), _d(b.exports, 'default', function() {
+        return _r;
+    }, function(_d) {
+        return _r = _d;
     });
-    var d = c('P7Ub/'),
-        e = c('VAIs1'),
-        f = c('xORK+'),
-        g = c('uPP4W'),
-        h = c('qEw51'),
-        i = c('0RCfO0'),
-        j = c('qBaIr0'),
-        k = function(a, b) {
-            var l = {};
-            for (var m in a)
-                Object.prototype.hasOwnProperty.call(a, m) && b.indexOf(m) < 0 && (l[m] = a[m]);
-            if (null != a && 'function' == typeof Object.getOwnPropertySymbols) {
-                var n = 0;
-                for (m = Object.getOwnPropertySymbols(a); n < m.length; n++)
-                    b.indexOf(m[n]) < 0 && Object.prototype.propertyIsEnumerable.call(a, m[n]) && (l[m[n]] = a[m[n]]);
+    var d = a('gK9Sd'),
+        e = a('JrtKP'),
+        f = a('sWKBM'),
+        g = a('LEQ5w'),
+        h = a('1P5ls'),
+        i = a('2SA1z'),
+        j = a('oaXRt'),
+        k = function(l, _m) {
+            var n = {};
+            for (var o in l)
+                Object.prototype.hasOwnProperty.call(l, o) && _m.indexOf(o) < 0 && (n[o] = l[o]);
+            if (null != l && 'function' == typeof Object.getOwnPropertySymbols) {
+                var p = 0;
+                for (o = Object.getOwnPropertySymbols(l); p < o.length; p++)
+                    _m.indexOf(o[p]) < 0 && Object.prototype.propertyIsEnumerable.call(l, o[p]) && (n[o[p]] = l[o[p]]);
             }
-            return l;
+            return n;
         };
-    const l = g.createContext(null),
-        m = (a, c) => {
+    const _l = g.createContext(null),
+        m = (_k, a) => {
             var {
                 defaultValue: n,
                 children: o,
                 options: p = [],
                 prefixCls: q,
-                className: r,
+                className: _r,
                 rootClassName: s,
                 style: t,
                 onChange: u
-            } = v, w = k(v, [
+            } = _k, v = k(_k, [
                 'defaultValue',
                 'children',
                 'options',
@@ -167,75 +167,75 @@ c.register('QtkH71', function(b, n) {
                 'onChange'
             ]);
             const {
-                getPrefixCls: x,
-                direction: y
-            } = g.useContext(h.ConfigContext), [z, A] = g.useState(w.value || n || []), [B, C] = g.useState([]);
+                getPrefixCls: w,
+                direction: x
+            } = g.useContext(h.ConfigContext), [y, z] = g.useState(v.value || n || []), [A, B] = g.useState([]);
             g.useEffect(() => {
-                'value' in w && A(w.value || []);
-            }, [w.value]);
-            const D = () => p.map(v => 'string' == typeof v || 'number' == typeof v ? {
-                    label: v,
-                    value: v
-                } : v),
-                E = x('checkbox', q),
-                F = `${ E }-group`,
-                [G, H] = (0, j.default)(E),
-                I = (0, f.default)(w, [
+                'value' in v && z(v.value || []);
+            }, [v.value]);
+            const C = () => p.map(_k => 'string' == typeof _k || 'number' == typeof _k ? {
+                    label: _k,
+                    value: _k
+                } : _k),
+                D = w('checkbox', q),
+                E = `${ D }-group`,
+                [F, G] = (0, j.default)(D),
+                H = (0, f.default)(v, [
                     'value',
                     'disabled'
                 ]);
-            p && p.length > 0 && (o = D().map(v => g.createElement(i.default, {
-                prefixCls: E,
-                key: v.value.toString(),
-                disabled: 'disabled' in v ? v.disabled : w.disabled,
-                value: v.value,
-                checked: z.includes(v.value),
-                onChange: v.onChange,
-                className: `${ F }-item`,
-                style: v.style
-            }, v.label)));
-            const J = {
-                    toggleOption: v => {
-                        const K = z.indexOf(v.value),
-                            L = (0, d.default)(z); -
-                        1 === K ? L.push(v.value) : L.splice(K, 1), 'value' in w || A(L);
-                        const M = D();
-                        null == u || u(L.filter(v => B.includes(v)).sort((v, K) => M.findIndex(K => K.value === v) - M.findIndex(v => v.value === K)));
+            p && p.length > 0 && (o = C().map(_k => g.createElement(i.default, {
+                prefixCls: D,
+                key: _k.value.toString(),
+                disabled: 'disabled' in _k ? _k.disabled : v.disabled,
+                value: _k.value,
+                checked: y.includes(_k.value),
+                onChange: _k.onChange,
+                className: `${ E }-item`,
+                style: _k.style
+            }, _k.label)));
+            const I = {
+                    toggleOption: _k => {
+                        const J = y.indexOf(_k.value),
+                            K = (0, d.default)(y); -
+                        1 === J ? K.push(_k.value) : K.splice(J, 1), 'value' in v || z(K);
+                        const L = C();
+                        null == u || u(K.filter(_k => A.includes(_k)).sort((_k, J) => L.findIndex(J => J.value === _k) - L.findIndex(_k => _k.value === J)));
                     },
-                    value: z,
-                    disabled: w.disabled,
-                    name: w.name,
-                    registerValue: v => {
-                        C(b => [].concat((0, d.default)(b), [v]));
+                    value: y,
+                    disabled: v.disabled,
+                    name: v.name,
+                    registerValue: _k => {
+                        B(_b => [].concat((0, d.default)(_b), [_k]));
                     },
-                    cancelValue: v => {
-                        C(b => b.filter(b => b !== v));
+                    cancelValue: _k => {
+                        B(_b => _b.filter(_b => _b !== _k));
                     }
                 },
-                K = b(e)(F, {
-                    [`${ F }-rtl`]: 'rtl' === y
-                }, r, s, H);
-            return G(g.createElement('div', Object.assign({
-                className: K,
+                J = _b(e)(E, {
+                    [`${ E }-rtl`]: 'rtl' === x
+                }, _r, s, G);
+            return F(g.createElement('div', Object.assign({
+                className: J,
                 style: t
-            }, I, {
-                ref: c
-            }), g.createElement(l.Provider, {
-                value: J
+            }, H, {
+                ref: a
+            }), g.createElement(_l.Provider, {
+                value: I
             }, o)));
         },
         n = g.forwardRef(m);
     var o = g.memo(n);
-}), c.register('qBaIr0', function(b, n) {
-    a(b.exports, 'getStyle', function() {
-        return j;
-    }), a(b.exports, 'default', function() {
-        return k;
+}), a.register('oaXRt', function(_b, c) {
+    _k(_b.exports, 'getStyle', function() {
+        return _j;
+    }), _k(_b.exports, 'default', function() {
+        return _j;
     });
-    var d = c('M5GjZ'),
-        e = c('vvwoA'),
-        f = c('jnIuq'),
-        g = c('P38j/');
+    var d = a('wC0DT'),
+        e = a('XC0UB'),
+        f = a('l+IVY'),
+        g = a('7hbGU');
     const h = new(0, d.Keyframes)('antCheckboxEffect', {
             '0%': {
                 transform: 'scale(1)',
@@ -246,15 +246,15 @@ c.register('QtkH71', function(b, n) {
                 opacity: 0
             }
         }),
-        i = a => {
+        i = _k => {
             const {
                 checkboxCls: j
-            } = k, l = `${ j }-wrapper`;
+            } = _k, k = `${ j }-wrapper`;
             return [{
-                    [`${ j }-group`]: Object.assign(Object.assign({}, (0, g.resetComponent)(k)), {
+                    [`${ j }-group`]: Object.assign(Object.assign({}, (0, g.resetComponent)(_k)), {
                         display: 'inline-flex'
                     }),
-                    [l]: Object.assign(Object.assign({}, (0, g.resetComponent)(k)), {
+                    [k]: Object.assign(Object.assign({}, (0, g.resetComponent)(_k)), {
                         display: 'inline-flex',
                         alignItems: 'baseline',
                         cursor: 'pointer',
@@ -264,17 +264,17 @@ c.register('QtkH71', function(b, n) {
                             overflow: 'hidden',
                             content: '\'\\a0\''
                         },
-                        [`& + ${ l }`]: {
-                            marginInlineStart: k.marginXS
+                        [`& + ${ k }`]: {
+                            marginInlineStart: _k.marginXS
                         },
-                        [`&${ l }-in-form-item`]: {
+                        [`&${ k }-in-form-item`]: {
                             'input[type="checkbox"]': {
                                 width: 14,
                                 height: 14
                             }
                         }
                     }),
-                    [j]: Object.assign(Object.assign({}, (0, g.resetComponent)(k)), {
+                    [j]: Object.assign(Object.assign({}, (0, g.resetComponent)(_k)), {
                         top: '0.2em',
                         position: 'relative',
                         whiteSpace: 'nowrap',
@@ -288,7 +288,7 @@ c.register('QtkH71', function(b, n) {
                             height: '100%',
                             cursor: 'pointer',
                             opacity: 0,
-                            [`&:focus-visible + ${ j }-inner`]: Object.assign({}, (0, g.genFocusOutline)(k))
+                            [`&:focus-visible + ${ j }-inner`]: Object.assign({}, (0, g.genFocusOutline)(_k))
                         },
                         [`${ j }-inner`]: {
                             boxSizing: 'border-box',
@@ -296,34 +296,34 @@ c.register('QtkH71', function(b, n) {
                             top: 0,
                             insetInlineStart: 0,
                             display: 'block',
-                            width: k.checkboxSize,
-                            height: k.checkboxSize,
+                            width: _k.checkboxSize,
+                            height: _k.checkboxSize,
                             direction: 'ltr',
-                            backgroundColor: k.colorBgContainer,
-                            border: `${ k.lineWidth }px ${ k.lineType } ${ k.colorBorder }`,
-                            borderRadius: k.borderRadiusSM,
+                            backgroundColor: _k.colorBgContainer,
+                            border: `${ _k.lineWidth }px ${ _k.lineType } ${ _k.colorBorder }`,
+                            borderRadius: _k.borderRadiusSM,
                             borderCollapse: 'separate',
-                            transition: `all ${ k.motionDurationSlow }`,
+                            transition: `all ${ _k.motionDurationSlow }`,
                             '&:after': {
                                 boxSizing: 'border-box',
                                 position: 'absolute',
                                 top: '50%',
                                 insetInlineStart: '21.5%',
                                 display: 'table',
-                                width: k.checkboxSize / 14 * 5,
-                                height: k.checkboxSize / 14 * 8,
-                                border: `${ k.lineWidthBold }px solid ${ k.colorWhite }`,
+                                width: _k.checkboxSize / 14 * 5,
+                                height: _k.checkboxSize / 14 * 8,
+                                border: `${ _k.lineWidthBold }px solid ${ _k.colorWhite }`,
                                 borderTop: 0,
                                 borderInlineStart: 0,
                                 transform: 'rotate(45deg) scale(0) translate(-50%,-50%)',
                                 opacity: 0,
                                 content: '""',
-                                transition: `all ${ k.motionDurationFast } ${ k.motionEaseInBack }, opacity ${ k.motionDurationFast }`
+                                transition: `all ${ _k.motionDurationFast } ${ _k.motionEaseInBack }, opacity ${ _k.motionDurationFast }`
                             }
                         },
                         '& + span': {
-                            paddingInlineStart: k.paddingXS,
-                            paddingInlineEnd: k.paddingXS
+                            paddingInlineStart: _k.paddingXS,
+                            paddingInlineEnd: _k.paddingXS
                         }
                     })
                 },
@@ -334,9 +334,9 @@ c.register('QtkH71', function(b, n) {
                                 '&:after': {
                                     top: '50%',
                                     insetInlineStart: '50%',
-                                    width: k.fontSizeLG / 2,
-                                    height: k.fontSizeLG / 2,
-                                    backgroundColor: k.colorPrimary,
+                                    width: _k.fontSizeLG / 2,
+                                    height: _k.fontSizeLG / 2,
+                                    backgroundColor: _k.colorPrimary,
                                     border: 0,
                                     transform: 'translate(-50%, -50%) scale(1)',
                                     opacity: 1,
@@ -347,33 +347,33 @@ c.register('QtkH71', function(b, n) {
                     }
                 },
                 {
-                    [`${ l }:hover ${ j }:after`]: {
+                    [`${ k }:hover ${ j }:after`]: {
                         visibility: 'visible'
                     },
-                    [`\n        ${ l }:not(${ l }-disabled),\n        ${ j }:not(${ j }-disabled)\n      `]: {
+                    [`\n        ${ k }:not(${ k }-disabled),\n        ${ j }:not(${ j }-disabled)\n      `]: {
                         [`&:hover ${ j }-inner`]: {
-                            borderColor: k.colorPrimary
+                            borderColor: _k.colorPrimary
                         }
                     },
-                    [`${ l }:not(${ l }-disabled)`]: {
+                    [`${ k }:not(${ k }-disabled)`]: {
                         [`&:hover ${ j }-checked:not(${ j }-disabled) ${ j }-inner`]: {
-                            backgroundColor: k.colorPrimaryHover,
+                            backgroundColor: _k.colorPrimaryHover,
                             borderColor: 'transparent'
                         },
                         [`&:hover ${ j }-checked:not(${ j }-disabled):after`]: {
-                            borderColor: k.colorPrimaryHover
+                            borderColor: _k.colorPrimaryHover
                         }
                     }
                 },
                 {
                     [`${ j }-checked`]: {
                         [`${ j }-inner`]: {
-                            backgroundColor: k.colorPrimary,
-                            borderColor: k.colorPrimary,
+                            backgroundColor: _k.colorPrimary,
+                            borderColor: _k.colorPrimary,
                             '&:after': {
                                 opacity: 1,
                                 transform: 'rotate(45deg) scale(1) translate(-50%,-50%)',
-                                transition: `all ${ k.motionDurationMid } ${ k.motionEaseOutBack } ${ k.motionDurationFast }`
+                                transition: `all ${ _k.motionDurationMid } ${ _k.motionEaseOutBack } ${ _k.motionDurationFast }`
                             }
                         },
                         '&:after': {
@@ -382,29 +382,29 @@ c.register('QtkH71', function(b, n) {
                             insetInlineStart: 0,
                             width: '100%',
                             height: '100%',
-                            borderRadius: k.borderRadiusSM,
+                            borderRadius: _k.borderRadiusSM,
                             visibility: 'hidden',
-                            border: `${ k.lineWidthBold }px solid ${ k.colorPrimary }`,
+                            border: `${ _k.lineWidthBold }px solid ${ _k.colorPrimary }`,
                             animationName: h,
-                            animationDuration: k.motionDurationSlow,
+                            animationDuration: _k.motionDurationSlow,
                             animationTimingFunction: 'ease-in-out',
                             animationFillMode: 'backwards',
                             content: '""',
-                            transition: `all ${ k.motionDurationSlow }`
+                            transition: `all ${ _k.motionDurationSlow }`
                         }
                     },
-                    [`\n        ${ l }-checked:not(${ l }-disabled),\n        ${ j }-checked:not(${ j }-disabled)\n      `]: {
+                    [`\n        ${ k }-checked:not(${ k }-disabled),\n        ${ j }-checked:not(${ j }-disabled)\n      `]: {
                         [`&:hover ${ j }-inner`]: {
-                            backgroundColor: k.colorPrimaryHover,
+                            backgroundColor: _k.colorPrimaryHover,
                             borderColor: 'transparent'
                         },
                         [`&:hover ${ j }:after`]: {
-                            borderColor: k.colorPrimaryHover
+                            borderColor: _k.colorPrimaryHover
                         }
                     }
                 },
                 {
-                    [`${ l }-disabled`]: {
+                    [`${ k }-disabled`]: {
                         cursor: 'not-allowed'
                     },
                     [`${ j }-disabled`]: {
@@ -413,37 +413,37 @@ c.register('QtkH71', function(b, n) {
                             pointerEvents: 'none'
                         },
                         [`${ j }-inner`]: {
-                            background: k.colorBgContainerDisabled,
-                            borderColor: k.colorBorder,
+                            background: _k.colorBgContainerDisabled,
+                            borderColor: _k.colorBorder,
                             '&:after': {
-                                borderColor: k.colorTextDisabled
+                                borderColor: _k.colorTextDisabled
                             }
                         },
                         '&:after': {
                             display: 'none'
                         },
                         '& + span': {
-                            color: k.colorTextDisabled
+                            color: _k.colorTextDisabled
                         },
                         [`&${ j }-indeterminate ${ j }-inner::after`]: {
-                            background: k.colorTextDisabled
+                            background: _k.colorTextDisabled
                         }
                     }
                 }
             ];
         };
 
-    function j(a, b) {
-        const k = (0, f.merge)(b, {
-            checkboxCls: `.${ a }`,
-            checkboxSize: b.controlInteractiveSize
+    function _j(_k, l) {
+        const m = (0, f.merge)(l, {
+            checkboxCls: `.${ _k }`,
+            checkboxSize: l.controlInteractiveSize
         });
-        return [i(k)];
+        return [i(m)];
     }
-    var k = (0, e.default)('Checkbox', (a, b) => {
+    var _j = (0, e.default)('Checkbox', (e, _b) => {
         let {
-            prefixCls: l
-        } = m;
-        return [j(l, a)];
+            prefixCls: k
+        } = _b;
+        return [d(k, e)];
     });
 });

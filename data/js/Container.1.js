@@ -1,43 +1,43 @@
-function a(a, b, c, v) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: v,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('EOKUI', function(b, v) {
-    a(b.exports, 'default', function() {
-        return s;
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('nNplT', function(b, c) {
+    _f(b.exports, 'default', function() {
+        return _s;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('PjB0f'),
-        g = c('laJ/S'),
-        h = c('LI7Cy'),
-        i = c('IsmrL'),
-        j = c('qEw51'),
-        k = c('ExtIT'),
-        l = c('cR5QE'),
-        m = c('5nJMd26'),
-        n = c('KlhV/'),
-        o = c('gL6W3'),
-        p = c('h99Nu'),
-        q = c('eFxzD');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('PMl60'),
+        g = a('+i8ep'),
+        h = a('L9I9e'),
+        i = a('ulE4q'),
+        j = a('1P5ls'),
+        k = a('fmVdR'),
+        l = a('YRlpt'),
+        m = a('cvto726'),
+        n = a('cH8qQ'),
+        o = a('aG/k7'),
+        p = a('Axq+p'),
+        q = a('YYeL3');
     let r;
-    var s = a => {
+    var _s = _f => {
         const [t, u] = e.useState(!0), [v, w] = e.useState([]), [x, y] = (0, h.useLocalstorage)('last-viewed-news', 0), [z, A] = e.useState(!1), [B, C, D] = (0, f.useBoolean)(!0), E = e.useCallback(() => {
             A(!0);
         }, [A]), F = e.useCallback(() => {
-            A(!1), a.onClose && a.onClose();
+            A(!1), _f.onClose && _f.onClose();
         }, [
             A,
-            a.onClose
+            _f.onClose
         ]);
         if ((0, g.useDidMount)(() => {
                 (0, f.request)({
@@ -49,10 +49,10 @@ c.register('EOKUI', function(b, v) {
                         w(t);
                         const G = null != x ? x : 0,
                             H = t[0];
-                        H && (H && H.publishDate > G && a.allowAutoOpen && E(), y(H.publishDate));
+                        H && (H && H.publishDate > G && _f.allowAutoOpen && E(), y(H.publishDate));
                     },
                     error: t => {
-                        a.open && (0, f.throwMessageError)({
+                        _f.open && (0, f.throwMessageError)({
                             e: t,
                             default: {
                                 title: 'Error loading news'
@@ -64,12 +64,12 @@ c.register('EOKUI', function(b, v) {
                     }
                 });
             }), e.useEffect(() => {
-                a.open && E();
-            }, [a.open]), t)
+                _f.open && E();
+            }, [_f.open]), t)
             return null;
         return (0, d.jsxs)(d.Fragment, {
             children: [
-                (0, d.jsx)(t, {}),
+                (0, d.jsx)(_t, {}),
                 (0, d.jsx)(j.default, {
                     theme: {
                         algorithm: n.default.defaultAlgorithm
@@ -127,10 +127,10 @@ c.register('EOKUI', function(b, v) {
                                             margin: 0
                                         }
                                     }),
-                                    children: v.map((a, t) => (0, d.jsx)(o.default, {
-                                        item: a,
+                                    children: v.map((_f, t) => (0, d.jsx)(o.default, {
+                                        item: _f,
                                         isFirstItem: 0 === t
-                                    }, a._id))
+                                    }, _f._id))
                                 })
                             }) : (0, d.jsx)(d.Fragment, {
                                 children: (0, d.jsx)('div', {
@@ -149,84 +149,84 @@ c.register('EOKUI', function(b, v) {
             ]
         });
     };
-    const t = (0, p.createGlobalStyle)(r || (r = (a => a)`
+    const _t = (0, p.createGlobalStyle)(r || (r = (_f => _f)`
   .news-modal > .ant-modal-content {
     overflow: hidden;
     padding: 0px !important;
   }
 `));
-}), c.register('LI7Cy', function(b, g) {
-    a(b.exports, 'useLocalstorage', function() {
-        return e;
+}), a.register('L9I9e', function(b, c) {
+    _f(b.exports, 'useLocalstorage', function() {
+        return _e;
     });
-    var d = c('uPP4W');
+    var d = a('LEQ5w');
 
-    function e(a, b) {
-        void 0 === b && (b = null);
-        var f = (0, d.useState)(i()),
-            g = f[0],
-            h = f[1];
+    function _e(_f, g) {
+        void 0 === g && (g = null);
+        var h = (0, d.useState)(_k()),
+            i = h[0],
+            j = h[1];
 
-        function i() {
+        function _k() {
             if ('undefined' == typeof localStorage)
                 return null;
-            var j = localStorage.getItem(a) || 'null';
+            var l = localStorage.getItem(_f) || 'null';
             try {
-                return JSON.parse(j);
-            } catch (a) {
-                console.error(a);
+                return JSON.parse(l);
+            } catch (_f) {
+                console.error(_f);
             }
-            return j;
+            return l;
         }
-        var j = (0, d.useCallback)(function(b) {
-                var k;
-                h(b), k = b, 'undefined' != typeof localStorage && localStorage.setItem(a, JSON.stringify(k));
+        var k = (0, d.useCallback)(function(l) {
+                var m;
+                j(l), m = l, 'undefined' != typeof localStorage && localStorage.setItem(_f, JSON.stringify(m));
             }, []),
-            k = (0, d.useCallback)(function(b) {
-                b.storageArea === localStorage && b.key === a && h(b.newValue);
+            l = (0, d.useCallback)(function(m) {
+                m.storageArea === localStorage && m.key === _f && j(m.newValue);
             }, []),
-            l = (0, d.useCallback)(function() {
-                if (j(null), 'undefined' == typeof localStorage)
+            m = (0, d.useCallback)(function() {
+                if (k(null), 'undefined' == typeof localStorage)
                     return !1;
-                localStorage.removeItem(a);
-            }, [a]);
+                localStorage.removeItem(_f);
+            }, [_f]);
         return (0, d.useEffect)(function() {
-            var m;
-            null !== (m = i()) && 'null' !== m || j(b);
+            var n;
+            null !== (n = _e()) && 'null' !== n || k(g);
         }, []), (0, d.useEffect)(function() {
             if ('undefined' != typeof window)
-                return window.addEventListener('storage', k),
+                return window.addEventListener('storage', l),
                     function() {
-                        window.removeEventListener('storage', k);
+                        window.removeEventListener('storage', l);
                     };
             console.warn('useLocalstorage: window is undefined.');
         }, []), Object.assign([
-            g,
-            j,
-            l
+            i,
+            k,
+            m
         ], {
-            value: g,
-            remove: l,
-            set: j
+            value: i,
+            remove: m,
+            set: k
         });
     }
-}), c.register('gL6W3', function(z, A) {
-    a(z.exports, 'default', function() {
-        return x;
+}), a.register('aG/k7', function(b, c) {
+    _E(b.exports, 'default', function() {
+        return _x;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('uVDHR'),
-        g = c('+98NM'),
-        h = c('u1rFO25'),
-        i = c('laJ/S'),
-        j = c('h99Nu'),
-        k = c('PjB0f'),
-        l = c('2MCaL'),
-        m = c('gSUVO'),
-        n = c('iMnBi');
-    let o, p, q, r, s, t, u = a => a;
-    const v = b(h)(() => c('nRwdv4')),
+    var d = a('0hzx+'),
+        _e = a('LEQ5w'),
+        f = a('w0a3U'),
+        g = a('oBBW6'),
+        h = a('7B+hJ16'),
+        i = a('+i8ep'),
+        j = a('Axq+p'),
+        k = a('PMl60'),
+        l = a('ECzOP'),
+        m = a('b5kvC'),
+        n = a('9R7cy');
+    let o, p, q, r, s, t, u = _E => _E;
+    const v = _F(h)(() => a('7cBN63')),
         w = () => (0, d.jsx)(g.default, {
             active: !0,
             title: !1,
@@ -237,66 +237,66 @@ c.register('EOKUI', function(b, v) {
                 padding: 20
             }
         });
-    var x = a => {
-        const [y, z] = e.useState(), {
+    var _x = _E => {
+        const [y, z] = _e.useState(), {
             item: {
                 notionPageId: A,
                 publishDate: B
             }
-        } = C;
+        } = _E;
         (0, i.useDidMount)(() => {
             v.preload();
-        }), e.useEffect(() => {
+        }), _e.useEffect(() => {
             !y && A && (0, f.Request)({
                 url: `/api/content/${ A }`,
                 cacheKey: 'NOTION_CONTENT',
-                success: C => z(C)
+                success: _E => z(_E)
             });
         }, [
             A,
             y
         ]);
-        return (0, d.jsx)(y, {
+        return (0, d.jsx)(_y, {
             children: (() => {
                 if (!y)
                     return (0, d.jsx)(w, {});
                 const {
-                    title: D,
-                    coverImage: E
+                    title: C,
+                    coverImage: D
                 } = (() => {
-                    var F, G;
-                    const H = A.replace(/-/g, ''),
-                        I = Object.keys(y).find(F => F.replace(/-/g, '') === H);
-                    if (!I)
+                    var _E, _F;
+                    const G = A.replace(/-/g, ''),
+                        H = Object.keys(y).find(_E => _E.replace(/-/g, '') === G);
+                    if (!H)
                         return null;
-                    const J = y[I];
-                    var K;
-                    const L = null !== (K = null === (F = J.value.properties) || void 0 === F ? void 0 : F.title[0][0]) && void 0 !== K ? K : 'News';
-                    var M;
-                    let N = null !== (M = null === (G = J.value.format) || void 0 === G ? void 0 : G.page_cover) && void 0 !== M ? M : null;
-                    return N && N.startsWith('/') && (N = `https://notion.so${ N }`), {
-                        title: L,
-                        coverImage: N
+                    const I = y[H];
+                    var J;
+                    const K = null !== (J = null === (_E = I.value.properties) || void 0 === _E ? void 0 : _E.title[0][0]) && void 0 !== J ? J : 'News';
+                    var L;
+                    let M = null !== (L = null === (_F = I.value.format) || void 0 === _F ? void 0 : _F.page_cover) && void 0 !== L ? L : null;
+                    return M && M.startsWith('/') && (M = `https://notion.so${ M }`), {
+                        title: K,
+                        coverImage: M
                     };
                 })();
-                return (0, d.jsxs)(e.Suspense, {
+                return (0, d.jsxs)(_e.Suspense, {
                     fallback: (0, d.jsx)(w, {}),
                     children: [
-                        E ? (0, d.jsx)(z, {
+                        D ? (0, d.jsx)(_z, {
                             draggable: !1,
-                            src: E
+                            src: D
                         }) : null,
-                        (0, d.jsxs)(A, {
+                        (0, d.jsxs)(_A, {
                             children: [
-                                (0, d.jsxs)(B, {
+                                (0, d.jsxs)(_B, {
                                     style: {
-                                        marginTop: C.isFirstItem && !E ? 30 : 0
+                                        marginTop: _b.isFirstItem && !D ? 30 : 0
                                     },
                                     children: [
-                                        (0, d.jsx)(C, {
-                                            children: D
+                                        (0, d.jsx)(_C, {
+                                            children: C
                                         }),
-                                        (0, d.jsxs)(D, {
+                                        (0, d.jsxs)(_D, {
                                             children: [
                                                 (0, d.jsx)(n.default, {
                                                     name: 'far fa-calendar-alt',
@@ -305,7 +305,7 @@ c.register('EOKUI', function(b, v) {
                                                         marginRight: 5
                                                     }
                                                 }),
-                                                (0, k.capitalizeFirstLetter)(b(l).unix(B).fromNow())
+                                                (0, k.capitalizeFirstLetter)(_c(l).unix(B).fromNow())
                                             ]
                                         })
                                     ]
@@ -320,31 +320,31 @@ c.register('EOKUI', function(b, v) {
             })()
         });
     };
-    const y = j.default.div.attrs({
+    const _y = j.default.div.attrs({
             className: 'maxWidth'
         })(o || (o = u``)),
-        z = j.default.img.attrs({
+        _z = j.default.img.attrs({
             className: 'maxWidth'
         })(p || (p = u`
   margin-bottom: 25px;
 `)),
-        A = j.default.div.attrs({
+        _A = j.default.div.attrs({
             className: 'maxWidth'
         })(q || (q = u`
   padding: 0px 20px;
   font-family: ${ 0 };
 `), m.Fonts.SFPro),
-        B = j.default.div.attrs({
+        _B = j.default.div.attrs({
             className: 'maxWidth flex between vc'
         })(r || (r = u`
   line-height: 1;
   margin-bottom: 20px;
 `)),
-        C = j.default.div(s || (s = u`
+        _C = j.default.div(s || (s = u`
   font-size: 28px;
   font-weight: ${ 0 };
 `), m.FontWeights.Bold),
-        D = j.default.div.attrs({
+        _D = j.default.div.attrs({
             className: 'flex vc'
         })(t || (t = u`
   color: rgba(0, 0, 0, 0.8);
@@ -352,37 +352,37 @@ c.register('EOKUI', function(b, v) {
   font-size: 12px;
   flex-shrink: 0;
 `));
-}), c.register('nRwdv4', function(a, b) {
-    a.exports = Promise.all([
-        c('wqdSG')(new URL(c('tIOy4').resolve('2nG1U'), import.meta.url).toString()),
-        import('./' + c('tIOy4').resolve('6iUO5'))
-    ]).then(() => c('NBVgF'));
-}), c.register('wqdSG', function(a, b) {
-    var d = c('0Hkma');
-    a.exports = d(function(a) {
-        return new Promise(function(b, c) {
-            var e = document.getElementsByTagName('link');
-            if ([].concat(e).some(function(b) {
-                    return b.href === a && b.rel.indexOf('stylesheet') > -1;
+}), a.register('7cBN63', function(_b, _c) {
+    _b.exports = Promise.all([
+        a('o60By')(new URL(a('HmN9A').resolve('2nG1U'), import.meta.url).toString()),
+        import('./' + a('HmN9A').resolve('6iUO5'))
+    ]).then(() => a('cg5Ud'));
+}), a.register('o60By', function(b, c) {
+    var d = a('0k2Qd');
+    b.exports = d(function(e) {
+        return new Promise(function(f, g) {
+            var h = document.getElementsByTagName('link');
+            if ([].concat(h).some(function(i) {
+                    return i.href === e && i.rel.indexOf('stylesheet') > -1;
                 }))
-                b();
+                f();
             else {
-                var f = document.createElement('link');
-                f.rel = 'stylesheet', f.href = a, f.onerror = function(a) {
-                    f.onerror = f.onload = null, f.remove(), c(a);
-                }, f.onload = function() {
-                    f.onerror = f.onload = null, b();
-                }, document.getElementsByTagName('head')[0].appendChild(f);
+                var i = document.createElement('link');
+                i.rel = 'stylesheet', i.href = e, i.onerror = function(j) {
+                    i.onerror = i.onload = null, i.remove(), g(j);
+                }, i.onload = function() {
+                    i.onerror = i.onload = null, f();
+                }, document.getElementsByTagName('head')[0].appendChild(i);
             }
         });
     });
-}), c.register('0Hkma', function(a, b) {
+}), a.register('0k2Qd', function(b, c) {
     var d = {},
         e = {},
         f = {};
 
-    function g(a) {
-        switch (a) {
+    function g(h) {
+        switch (h) {
             case 'preload':
                 return e;
             case 'prefetch':
@@ -391,61 +391,61 @@ c.register('EOKUI', function(b, v) {
                 return d;
         }
     }
-    a.exports = function(a, b) {
-        return function(d) {
-            var h = g(b);
-            return h[d] ? h[d] : h[d] = a.apply(null, arguments).catch(function(a) {
-                throw delete h[d], a;
+    b.exports = function(g, h) {
+        return function(i) {
+            var j = _f(h);
+            return j[i] ? j[i] : j[i] = g.apply(null, arguments).catch(function(k) {
+                throw delete j[i], k;
             });
         };
     };
-}), c.register('tIOy4', function(b, c) {
+}), a.register('HmN9A', function(b, c) {
     var d, e;
-    a(b.exports, 'register', function() {
+    _f(b.exports, 'register', function() {
         return d;
-    }, function(a) {
-        return d = a;
-    }), a(b.exports, 'resolve', function() {
+    }, function(_f) {
+        return d = _f;
+    }), _f(b.exports, 'resolve', function() {
         return e;
-    }, function(a) {
-        return e = a;
+    }, function(_f) {
+        return e = _f;
     });
-    var f = {};
-    d = function(a) {
-        for (var g = Object.keys(a), h = 0; h < g.length; h++)
-            f[g[h]] = a[g[h]];
-    }, e = function(a) {
-        var g = f[a];
-        if (null == g)
-            throw new Error('Could not resolve bundle with id ' + a);
-        return g;
+    var _f = {};
+    d = function(g) {
+        for (var h = Object.keys(g), i = 0; i < h.length; i++)
+            _f[h[i]] = g[h[i]];
+    }, e = function(g) {
+        var h = _f[g];
+        if (null == h)
+            throw new Error('Could not resolve bundle with id ' + g);
+        return h;
     };
-}), c.register('eFxzD', function(b, C) {
-    a(b.exports, 'default', function() {
-        return r;
+}), a.register('YYeL3', function(b, c) {
+    _r(b.exports, 'default', function() {
+        return _r;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('cdiGP23'),
-        g = c('IsmrL'),
-        h = c('qEw51'),
-        i = c('KlhV/'),
-        j = c('obWo+'),
-        k = c('gSUVO'),
-        l = c('0wLl2');
-    let m, n, o, p, q = a => a;
-    var r = a => (0, d.jsxs)(s, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('ibLRf19'),
+        g = a('ulE4q'),
+        h = a('1P5ls'),
+        i = a('cH8qQ'),
+        j = a('QECub'),
+        k = a('b5kvC'),
+        l = a('hHkFq');
+    let m, n, o, p, q = _r => _r;
+    var _r = _r => (0, d.jsxs)(_s, {
         children: [
-            (0, d.jsxs)(t, {
+            (0, d.jsxs)(_t, {
                 children: [
-                    (0, d.jsxs)(u, {
+                    (0, d.jsxs)(_u, {
                         children: [
                             l.COMPANY_NAME,
                             ' News'
                         ]
                     }),
-                    (0, d.jsxs)(v, {
+                    (0, d.jsxs)(_v, {
                         children: [
                             'Your source for all things ',
                             l.COMPANY_NAME,
@@ -460,7 +460,7 @@ c.register('EOKUI', function(b, v) {
                         algorithm: i.default.darkAlgorithm
                     },
                     children: (0, d.jsx)(g.default, {
-                        onClick: a.close,
+                        onClick: _r.close,
                         type: 'text',
                         icon: (0, d.jsx)(j.default, {})
                     })
@@ -468,57 +468,57 @@ c.register('EOKUI', function(b, v) {
             })
         ]
     });
-    const s = e.default.div.attrs({
+    const _s = e.default.div.attrs({
             className: 'maxWidth flex vc between'
         })(m || (m = q`
   color: ${ 0 };
   padding: 20px;
   background: #730aad;
 `), f.default.White),
-        t = e.default.div(n || (n = q``)),
-        u = e.default.div(o || (o = q`
+        _t = e.default.div(n || (n = q``)),
+        _u = e.default.div(o || (o = q`
   font-size: 16px;
   font-weight: ${ 0 };
 `), k.FontWeights.Bold),
-        v = e.default.div(p || (p = q`
+        _v = e.default.div(p || (p = q`
   font-size: 12px;
   font-style: italic;
   opacity: 0.9;
 `));
-}), c.register('1//3g', function(b, C) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('RJjEi', function(b, c) {
+    _r(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('4t8hY');
-    var f = a => (0, d.jsx)(e.default, {
-        ...a
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('aHDfy');
+    var _f = _r => (0, d.jsx)(e.default, {
+        ..._r
     });
-}), c.register('4t8hY', function(b, C) {
-    a(b.exports, 'default', function() {
-        return z;
+}), a.register('aHDfy', function(b, c) {
+    _r(b.exports, 'default', function() {
+        return _z;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('PjB0f'),
-        g = c('NS10B'),
-        h = c('RrDRa'),
-        i = c('tYruc25'),
-        j = c('Xu07t'),
-        k = c('h99Nu'),
-        l = c('iUWIw'),
-        m = c('VsZIM'),
-        n = c('UnfL724'),
-        o = c('dN+BG24'),
-        p = c('C891a'),
-        q = c('gSUVO'),
-        r = c('qEw51'),
-        s = c('KlhV/'),
-        t = c('Xp99w'),
-        u = c('umlOF');
-    let v, w, x, y = a => a;
-    var z = a => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('PMl60'),
+        g = a('R3x1N'),
+        h = a('78pxp'),
+        i = a('ptkti24'),
+        j = a('Genmk'),
+        k = a('Axq+p'),
+        l = a('voEoW'),
+        m = a('BtZXP'),
+        n = a('s+8hx17'),
+        o = a('bdn4O17'),
+        p = a('iIoYI'),
+        q = a('b5kvC'),
+        r = a('1P5ls'),
+        s = a('cH8qQ'),
+        t = a('Rzoyo'),
+        u = a('SjnO4');
+    let v, w, x, y = _r => _r;
+    var _z = _r => {
         const [A, B] = e.useState(!1), {
             navigation: C
         } = e.useContext(j.default), {
@@ -530,12 +530,12 @@ c.register('EOKUI', function(b, v) {
         }, [E]);
         const F = e.useMemo(() => {
                 var G;
-                return null !== (G = a.theme) && void 0 !== G ? G : n.SiteHeaderTheme.light;
-            }, [a.theme]),
+                return null !== (G = _r.theme) && void 0 !== G ? G : n.SiteHeaderTheme.light;
+            }, [_r.theme]),
             G = e.useMemo(() => {
                 var H;
-                return null !== (H = a.alpha) && void 0 !== H ? H : o.SiteHeaderAlpha.standard;
-            }, [a.alpha]),
+                return null !== (H = _r.alpha) && void 0 !== H ? H : o.SiteHeaderAlpha.standard;
+            }, [_r.alpha]),
             H = e.useMemo(() => G === o.SiteHeaderAlpha.none ? 1 : G === o.SiteHeaderAlpha.darker ? F === n.SiteHeaderTheme.light ? 0.9 : 0.75 : F === n.SiteHeaderTheme.light ? 0.85 : 0.45, [
                 G,
                 F
@@ -557,32 +557,32 @@ c.register('EOKUI', function(b, v) {
                     }
                 },
                 children: [
-                    (0, d.jsxs)(A, {
+                    (0, d.jsxs)(_A, {
                         ref: D,
-                        style: a.containerDivStyle,
+                        style: _r.containerDivStyle,
                         children: [
-                            (0, d.jsx)(B, {
+                            (0, d.jsx)(_B, {
                                 background: I,
-                                hideBorder: a.hideBorder,
+                                hideBorder: _r.hideBorder,
                                 borderColor: J,
                                 children: (0, d.jsx)(g.default.Provider, {
                                     value: h.default,
-                                    children: (0, d.jsxs)(C, {
+                                    children: (0, d.jsxs)(_C, {
                                         children: [
                                             (0, d.jsx)(u.default, {
-                                                theme: a.theme
+                                                theme: _r.theme
                                             }),
                                             (0, f.isLoggedIn)() ? (0, d.jsx)(t.default, {
                                                 showUpgradeModal: () => B(!0),
                                                 theme: F
                                             }) : (0, d.jsx)(l.default, {
-                                                theme: a.theme
+                                                theme: _r.theme
                                             })
                                         ]
                                     })
                                 })
                             }),
-                            a.children
+                            _r.children
                         ]
                     }),
                     A ? (0, d.jsx)(m.default, {
@@ -591,12 +591,12 @@ c.register('EOKUI', function(b, v) {
                         close: () => B(!1),
                         showModes: !0
                     }) : null,
-                    a.includeSpacer ? (0, d.jsx)(p.default, {}) : null
+                    _r.includeSpacer ? (0, d.jsx)(p.default, {}) : null
                 ]
             })
         });
     };
-    const A = k.default.div.attrs({
+    const _A = k.default.div.attrs({
             className: 'maxWidth'
         })(v || (v = y`
   height: auto;
@@ -606,7 +606,7 @@ c.register('EOKUI', function(b, v) {
   right: 0;
   z-index: 9;
 `)),
-        B = k.default.header(w || (w = y`
+        _B = k.default.header(w || (w = y`
   display: flex;
   height: auto;
   background: ${ 0 };
@@ -621,54 +621,54 @@ c.register('EOKUI', function(b, v) {
   @media print {
     display: none;
   }
-`), a => a.background, a => a.hideBorder ? 'rgba(255,255,255,0)' : a.borderColor),
-        C = k.default.div.attrs({
+`), _r => _r.background, _r => _r.hideBorder ? 'rgba(255,255,255,0)' : _r.borderColor),
+        _C = k.default.div.attrs({
             className: 'flex maxWidth between vc'
         })(x || (x = y``));
-}), c.register('NS10B', function(b, d) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('R3x1N', function(b, c) {
+    _r(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('uPP4W'),
-        e = c('RrDRa');
-    var f = d.createContext(e.default);
-}), c.register('RrDRa', function(b, d) {
-    a(b.exports, 'default', function() {
-        return f;
+    var d = a('LEQ5w'),
+        e = a('78pxp');
+    var _f = d.createContext(e.default);
+}), a.register('78pxp', function(b, c) {
+    _r(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('2RKXD'),
-        e = c('TjX5L');
-    var f = {
+    var d = a('Ge19+'),
+        e = a('f2xFb');
+    var _f = {
         navigation: new(0, d.default)(),
         billing: new(0, e.default)()
     };
-}), c.register('2RKXD', function(b, d) {
-    a(b.exports, 'default', function() {
-        return h;
+}), a.register('Ge19+', function(b, c) {
+    _r(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('6gioo'),
-        e = c('UnUp5'),
-        f = c('Is2Mj');
+    var d = a('csYze'),
+        e = a('YuT/D'),
+        f = a('ahAbF');
     class g {
         constructor() {
             this.currentTab = f.default.accountInformation, (0, e.makeObservable)(this);
         }
     }
     (0, d.__decorate)([e.observable], g.prototype, 'currentTab', void 0);
-    var h = i;
-}), c.register('Is2Mj', function(b, c) {
+    var _h = g;
+}), a.register('ahAbF', function(b, c) {
     let d;
     var e;
-    a(b.exports, 'default', function() {
-        return f;
+    _r(b.exports, 'default', function() {
+        return _f;
     }), (e = d || (d = {})).accountInformation = 'accountInformation', e.gameSettings = 'gameSettings', e.billing = 'billing', e.support = 'support';
-    var f = g;
-}), c.register('TjX5L', function(b, q) {
-    a(b.exports, 'default', function() {
-        return h;
+    var _f = d;
+}), a.register('f2xFb', function(b, c) {
+    _r(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('6gioo'),
-        e = c('UnUp5');
+    var d = a('csYze'),
+        e = a('YuT/D');
     const f = e.observable.array();
     class g {
         constructor() {
@@ -678,23 +678,23 @@ c.register('EOKUI', function(b, v) {
         }
     }
     (0, d.__decorate)([e.observable], g.prototype, 'planName', void 0), (0, d.__decorate)([e.observable], g.prototype, 'planDescription', void 0), (0, d.__decorate)([e.observable], g.prototype, 'billingInterval', void 0), (0, d.__decorate)([e.observable], g.prototype, 'hasNextCharge', void 0), (0, d.__decorate)([e.observable], g.prototype, 'nextChargeAmount', void 0), (0, d.__decorate)([e.observable], g.prototype, 'nextChargeDate', void 0), (0, d.__decorate)([e.observable], g.prototype, 'accountBalance', void 0), (0, d.__decorate)([e.observable], g.prototype, 'charges', void 0), (0, d.__decorate)([e.observable], g.prototype, 'cardName', void 0), (0, d.__decorate)([e.observable], g.prototype, 'last4DigitsOfCard', void 0), (0, d.__decorate)([e.observable], g.prototype, 'stripePublicKey', void 0), (0, d.__decorate)([e.observable], g.prototype, 'canDowngrade', void 0), (0, d.__decorate)([e.observable], g.prototype, 'downgradeMessage', void 0), (0, d.__decorate)([e.observable], g.prototype, 'downgradeDateMessage', void 0), (0, d.__decorate)([e.action], g.prototype, 'reset', void 0);
-    var h = i;
-}), c.register('iUWIw', function(b, q) {
-    a(b.exports, 'default', function() {
-        return n;
+    var _h = g;
+}), a.register('voEoW', function(b, c) {
+    _r(b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('8kSQZ'),
-        e = c('Vlfxs');
-    c('uPP4W');
-    var f = c('svNXj'),
-        g = c('IsmrL'),
-        h = c('iYEuk12'),
-        i = c('q721a'),
-        j = c('QNMlx24'),
-        k = c('euCLs'),
-        l = c('8vT5P'),
-        m = c('UnfL724');
-    var n = (0, e.observer)(a => {
+    var d = a('0hzx+'),
+        e = a('2x11J');
+    a('LEQ5w');
+    var f = a('HM87Y'),
+        g = a('ulE4q'),
+        h = a('2HvvA11'),
+        i = a('gs4MT'),
+        j = a('/2bBN24'),
+        k = a('76NCl'),
+        l = a('IWIj7'),
+        m = a('s+8hx17');
+    var _n = (0, e.observer)(_r => {
         const o = (0, j.useMediaMatch)('(max-width: 600px)'),
             p = (0, j.useMediaMatch)('(max-width: 750px)'),
             q = [];
@@ -737,8 +737,8 @@ c.register('EOKUI', function(b, v) {
             key: 'login',
             item: (0, d.jsx)(h.default, {
                 to: (() => {
-                    let r = '/login';
-                    return window && window.location && window.location.pathname && window.location.pathname.startsWith('/view') && (r += `?location=${ encodeURIComponent(window.location.pathname) }`), r;
+                    let _r = '/login';
+                    return window && window.location && window.location.pathname && window.location.pathname.startsWith('/view') && (_r += `?location=${ encodeURIComponent(window.location.pathname) }`), _r;
                 })(),
                 className: 'maxAll',
                 children: (0, d.jsx)(g.default, {
@@ -752,27 +752,27 @@ c.register('EOKUI', function(b, v) {
             items: q
         });
     });
-}), c.register('svNXj', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('HM87Y', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('SsEbQ'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('2dRy9'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'LoginOutlined';
-    var i = e.forwardRef(h);
-}), c.register('SsEbQ', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('2dRy9', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -798,23 +798,23 @@ c.register('EOKUI', function(b, v) {
         name: 'login',
         theme: 'outlined'
     };
-}), c.register('euCLs', function(b, u) {
-    a(b.exports, 'default', function() {
-        return r;
+}), a.register('76NCl', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _r;
     });
-    var d = c('8kSQZ'),
-        e = c('IsmrL'),
-        f = c('ExtIT'),
-        g = c('KV+OV'),
-        h = c('5nJMd26'),
-        i = c('uPP4W'),
-        j = c('h99Nu'),
-        k = c('+OzS/'),
-        l = c('U8PGt'),
-        m = c('tYruc25'),
-        n = c('PjB0f');
-    let o, p, q = a => a;
-    var r = a => {
+    var d = a('0hzx+'),
+        e = a('ulE4q'),
+        f = a('fmVdR'),
+        g = a('sgToH'),
+        h = a('cvto726'),
+        i = a('LEQ5w'),
+        j = a('Axq+p'),
+        k = a('HjqyT'),
+        l = a('BXKZi0'),
+        m = a('ptkti24'),
+        n = a('PMl60');
+    let o, p, q = _i => _i;
+    var _r = _i => {
         const {
             width: s
         } = (0, m.useWindowSize)(), [t, u, v] = (0, n.useBoolean)(!1), [w, x] = i.useState(!1), [y, z] = i.useState(null), A = i.useRef(), [B] = (0, l.default)(A), C = i.useRef(), [D] = (0, l.default)(C);
@@ -830,7 +830,7 @@ c.register('EOKUI', function(b, v) {
         }, [
             s,
             y
-        ]), (0, d.jsxs)(s, {
+        ]), (0, d.jsxs)(_s, {
             ref: A,
             children: [
                 (0, d.jsx)('div', {
@@ -848,7 +848,7 @@ c.register('EOKUI', function(b, v) {
                         type: 'text',
                         icon: (0, d.jsx)(k.default, {})
                     })
-                }) : (0, d.jsx)(t, {
+                }) : (0, d.jsx)(_t, {
                     style: {
                         opacity: D ? 1 : 0
                     },
@@ -858,9 +858,9 @@ c.register('EOKUI', function(b, v) {
                             type: 'vertical'
                         }),
                         direction: 'horizontal',
-                        children: a.items.map(a => (0, d.jsx)(i.Fragment, {
-                            children: a.item
-                        }, a.key))
+                        children: _i.items.map(_i => (0, d.jsx)(i.Fragment, {
+                            children: _i.item
+                        }, _i.key))
                     })
                 }),
                 w ? (0, d.jsx)(g.default, {
@@ -874,46 +874,46 @@ c.register('EOKUI', function(b, v) {
                         }),
                         direction: 'vertical',
                         className: 'maxWidth',
-                        children: a.items.map(a => (0, d.jsx)(i.Fragment, {
+                        children: _i.items.map(_i => (0, d.jsx)(i.Fragment, {
                             children: (0, d.jsx)('div', {
                                 className: 'maxAll flex-center',
-                                children: a.item
+                                children: _i.item
                             })
-                        }, a.key))
+                        }, _i.key))
                     })
                 }) : null
             ]
         });
     };
-    const s = j.default.div(o || (o = q`
+    const _s = j.default.div(o || (o = q`
   flex: 1;
   overflow: hidden;
   display: flex;
 `)),
-        t = j.default.div(p || (p = q`
+        _t = j.default.div(p || (p = q`
   flex-shrink: 0;
 `));
-}), c.register('+OzS/', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('HjqyT', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('2KKLH'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('A7k50'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'MenuOutlined';
-    var i = e.forwardRef(h);
-}), c.register('2KKLH', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('A7k50', function(b, c) {
+    _S(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -930,35 +930,35 @@ c.register('EOKUI', function(b, v) {
         name: 'menu',
         theme: 'outlined'
     };
-}), c.register('8vT5P', function(b, o) {
-    a(b.exports, 'default', function() {
-        return l;
+}), a.register('IWIj7', function(b, c) {
+    _S(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('UnfL724'),
-        h = c('lmfrI'),
-        i = c('iYEuk12'),
-        j = c('gSUVO');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('s+8hx17'),
+        h = a('sHRDd'),
+        i = a('2HvvA11'),
+        j = a('b5kvC');
     let k;
-    var l = a => {
+    var _l = _S => {
         const {
             icon: m,
             path: n,
             theme: o
-        } = p, q = e.useMemo(() => o === g.SiteHeaderTheme.light ? 'inherit' : h.default.White, [o]);
+        } = _S, p = e.useMemo(() => o === g.SiteHeaderTheme.light ? 'inherit' : h.default.White, [o]);
         return (0, d.jsx)(i.default, {
             className: 'flex maxWidth',
             to: n,
-            onClick: p.onClick,
+            onClick: _S.onClick,
             style: {
                 cursor: 'pointer'
             },
-            children: (0, d.jsxs)(m, {
-                color: q,
+            children: (0, d.jsxs)(_m, {
+                color: p,
                 style: {
-                    fontSize: p.fontSize || 20
+                    fontSize: _S.fontSize || 20
                 },
                 children: [
                     m ? (0, d.jsx)('span', {
@@ -973,15 +973,15 @@ c.register('EOKUI', function(b, v) {
                             fontSize: '0.9em',
                             marginTop: '0.1em'
                         },
-                        children: p.children
+                        children: _S.children
                     })
                 ]
             })
         });
     };
-    const m = f.default.div.attrs({
+    const _m = f.default.div.attrs({
         className: 'flex-center'
-    })(k || (k = (a => a)`
+    })(k || (k = (_S => _S)`
   line-height: 1;
   background: transparent;
   white-space: nowrap;
@@ -989,62 +989,62 @@ c.register('EOKUI', function(b, v) {
   font-family: ${ 0 };
   cursor: pointer;
   font-weight: ${ 0 };
-`), a => a.color, j.Fonts.SFPro, j.FontWeights.Bold);
-}), c.register('C891a', function(b, M) {
-    a(b.exports, 'default', function() {
-        return e;
+`), _S => _S.color, j.Fonts.SFPro, j.FontWeights.Bold);
+}), a.register('iIoYI', function(b, c) {
+    _S(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = () => (0, d.jsx)('div', {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var _e = () => (0, d.jsx)('div', {
         style: {
             height: 'var(--header-height)',
             flexShrink: 0,
             width: '100%'
         }
     });
-}), c.register('Xp99w', function(b, M) {
-    a(b.exports, 'default', function() {
-        return J;
+}), a.register('Rzoyo', function(b, c) {
+    _S(b.exports, 'default', function() {
+        return _J;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('IsmrL'),
-        g = c('qEw51'),
-        h = c('M1Vx4'),
-        i = c('u3X1v'),
-        j = c('KlhV/'),
-        k = c('RrDRa'),
-        l = c('q721a'),
-        m = c('Is2Mj'),
-        n = c('PjB0f'),
-        o = c('h99Nu'),
-        p = c('gSUVO'),
-        q = c('2lDHL'),
-        r = c('HKcK8'),
-        s = c('K4Jzb'),
-        t = c('tK/kr24'),
-        u = c('b+LEP25'),
-        v = c('L2h2Z'),
-        w = c('XSFhr'),
-        x = c('qgO2124'),
-        y = c('k0s2g17'),
-        z = c('euCLs'),
-        A = c('8vT5P'),
-        B = c('mblWO24'),
-        C = c('EOKUI'),
-        D = c('3EnRx');
-    let E, F, G, H = a => a;
-    const I = a => (0, d.jsx)('img', {
-        src: a.src,
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('ulE4q'),
+        g = a('1P5ls'),
+        h = a('/rAT0'),
+        i = a('WfOD7'),
+        j = a('cH8qQ'),
+        k = a('78pxp'),
+        l = a('gs4MT'),
+        m = a('ahAbF'),
+        n = a('PMl60'),
+        o = a('Axq+p'),
+        p = a('b5kvC'),
+        q = a('OI9Yf'),
+        r = a('XetsG'),
+        s = a('mBug4'),
+        t = a('+UyIc24'),
+        u = a('dBHoZ22'),
+        v = a('kXV54'),
+        w = a('LuMZa'),
+        x = a('gCqar24'),
+        y = a('jzxyj10'),
+        z = a('76NCl'),
+        A = a('IWIj7'),
+        B = a('PqMjn20'),
+        C = a('nNplT'),
+        D = a('THxMC');
+    let E, F, G, H = _S => _S;
+    const I = _S => (0, d.jsx)('img', {
+        src: _S.src,
         style: {
             height: '1em',
             display: 'block'
         }
     });
-    var J = a => {
+    var _J = _S => {
         const [K, L, M] = (0, n.useBoolean)(!1), [N, O] = (0, n.useBoolean)(!1), P = (0, n.isUpgraded)(), Q = [], R = e.useMemo(() => () => {
-            const S = [{
+            const _S = [{
                     name: 'Settings',
                     icon: w.default,
                     onClick: () => (0, y.NavigateTo)('/settings')
@@ -1102,34 +1102,34 @@ c.register('EOKUI', function(b, v) {
                         width: 250
                     },
                     children: [
-                        (0, n.isStudent)() ? null : (0, d.jsxs)(K, {
+                        (0, n.isStudent)() ? null : (0, d.jsxs)(_K, {
                             children: [
-                                (0, d.jsx)(L, {
+                                (0, d.jsx)(_L, {
                                     children: (0, n.getFirstName)((0, n.getUser)())
                                 }),
-                                (0, d.jsx)(M, {
+                                (0, d.jsx)(_M, {
                                     children: (0, q.default)((0, n.getUser)().type)
                                 })
                             ]
                         }),
-                        S.filter(S => !S.blockIf || !S.blockIf.some(S => S())).map(S => (0, d.jsx)(i.default.Item, {
-                            onClick: S.onClick,
+                        _S.filter(_S => !_S.blockIf || !_S.blockIf.some(_S => _S())).map(_S => (0, d.jsx)(i.default.Item, {
+                            onClick: _S.onClick,
                             children: (0, d.jsxs)('div', {
                                 className: 'flex vc',
                                 style: {
                                     textAlign: 'center'
                                 },
                                 children: [
-                                    (0, d.jsx)(S.icon, {}),
+                                    (0, d.jsx)(_S.icon, {}),
                                     (0, d.jsx)('div', {
                                         style: {
                                             marginLeft: 7
                                         },
-                                        children: S.name
+                                        children: _S.name
                                     })
                                 ]
                             })
-                        }, S.name))
+                        }, _S.name))
                     ]
                 })
             });
@@ -1141,7 +1141,7 @@ c.register('EOKUI', function(b, v) {
                 icon: (0, d.jsx)(I, {
                     src: '/client/img/header/creative.svg'
                 }),
-                theme: a.theme,
+                theme: _i.theme,
                 children: 'Creative'
             })
         }), Q.push({
@@ -1151,7 +1151,7 @@ c.register('EOKUI', function(b, v) {
                 icon: (0, d.jsx)(I, {
                     src: B.default.iconImage
                 }),
-                theme: a.theme,
+                theme: _i.theme,
                 children: B.default.name
             })
         }), Q.push({
@@ -1169,7 +1169,7 @@ c.register('EOKUI', function(b, v) {
                             icon: (0, d.jsx)(I, {
                                 src: '/client/img/header/smile.svg'
                             }),
-                            theme: a.theme,
+                            theme: _i.theme,
                             children: 'Me'
                         })
                     })
@@ -1182,7 +1182,7 @@ c.register('EOKUI', function(b, v) {
                 children: (0, d.jsx)(f.default, {
                     size: 'large',
                     type: 'primary',
-                    onClick: a.showUpgradeModal,
+                    onClick: _i.showUpgradeModal,
                     children: 'Upgrade'
                 })
             })
@@ -1201,7 +1201,7 @@ c.register('EOKUI', function(b, v) {
             ]
         });
     };
-    const K = o.default.div(E || (E = H`
+    const _K = o.default.div(E || (E = H`
   background: rgb(232, 232, 232);
   margin: 6px 12px;
   padding: 14px;
@@ -1209,41 +1209,41 @@ c.register('EOKUI', function(b, v) {
   font-family: ${ 0 };
   color: rgba(0, 0, 0, 0.8);
 `), p.Fonts.SFPro),
-        L = o.default.div(F || (F = H`
+        _L = o.default.div(F || (F = H`
   font-size: 18px;
   font-weight: ${ 0 };
 `), p.FontWeights.Bold),
-        M = o.default.div(G || (G = H`
+        _M = o.default.div(G || (G = H`
   font-size: 12px;
 `));
-}), c.register('2lDHL', function(b, d) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('OI9Yf', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('0wLl2'),
-        e = c('TO+cq');
-    var f = a => a === e.PlanIds.pro ? `${ d.COMPANY_NAME } Pro` : a === e.PlanIds.go ? `${ d.COMPANY_NAME } Go` : a === e.PlanIds.proPass ? `${ d.COMPANY_NAME } Pro (Monthly)` : a === e.PlanIds.basic ? `${ d.COMPANY_NAME } Basic` : `Unknown ${ d.COMPANY_NAME } Plan`;
-}), c.register('HKcK8', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+    var d = a('hHkFq'),
+        e = a('nCi40');
+    var _f = _i => _i === e.PlanIds.pro ? `${ d.COMPANY_NAME } Pro` : _i === e.PlanIds.go ? `${ d.COMPANY_NAME } Go` : _i === e.PlanIds.proPass ? `${ d.COMPANY_NAME } Pro (Monthly)` : _i === e.PlanIds.basic ? `${ d.COMPANY_NAME } Basic` : `Unknown ${ d.COMPANY_NAME } Plan`;
+}), a.register('XetsG', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('SuF5a'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('Dh/f9'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'CreditCardOutlined';
-    var i = e.forwardRef(h);
-}), c.register('SuF5a', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('Dh/f9', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -1260,27 +1260,27 @@ c.register('EOKUI', function(b, v) {
         name: 'credit-card',
         theme: 'outlined'
     };
-}), c.register('K4Jzb', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('mBug4', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('+O/o9'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('J4ZXu'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'HeartOutlined';
-    var i = e.forwardRef(h);
-}), c.register('+O/o9', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('J4ZXu', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -1297,27 +1297,27 @@ c.register('EOKUI', function(b, v) {
         name: 'heart',
         theme: 'outlined'
     };
-}), c.register('XSFhr', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('LuMZa', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('o3fwB'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('MH0UT'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'SettingOutlined';
-    var i = e.forwardRef(h);
-}), c.register('o3fwB', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('MH0UT', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -1334,33 +1334,33 @@ c.register('EOKUI', function(b, v) {
         name: 'setting',
         theme: 'outlined'
     };
-}), c.register('umlOF', function(b, r) {
-    a(b.exports, 'default', function() {
-        return n;
+}), a.register('SjnO4', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('KzqIz'),
-        h = c('Vlfxs'),
-        i = c('Xu07t'),
-        j = c('UnfL724');
-    let k, l, m = a => a;
-    var n = (0, h.observer)(a => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('wYGc3'),
+        h = a('2x11J'),
+        i = a('Genmk'),
+        j = a('s+8hx17');
+    let k, l, m = e => e;
+    var _n = (0, h.observer)(e => {
         const {
             navigation: {
                 homeUrl: o
             }
-        } = e.useContext(i.default), p = a.theme === j.SiteHeaderTheme.dark ? '/client/img/svgLogoWhite.svg' : '/client/img/svgLogo.svg';
-        return (0, d.jsx)(o, {
+        } = e.useContext(i.default), p = e.theme === j.SiteHeaderTheme.dark ? '/client/img/svgLogoWhite.svg' : '/client/img/svgLogo.svg';
+        return (0, d.jsx)(_o, {
             to: o,
-            children: (0, d.jsx)(p, {
+            children: (0, d.jsx)(_p, {
                 src: p
             }, p)
         });
     });
-    const o = (0, f.default)(g.Link)(k || (k = m``)),
-        p = f.default.img.attrs({
+    const _o = (0, f.default)(g.Link)(k || (k = m``)),
+        _p = f.default.img.attrs({
             alt: 'Gimkit Logo'
         })(l || (l = m`
   height: 32px;

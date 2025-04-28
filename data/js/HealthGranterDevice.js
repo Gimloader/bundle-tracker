@@ -1,40 +1,40 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('MEQLP', function(n, n) {
-    var b, c, d, e, f;
-    b = n.exports, Object.defineProperty(b, '__esModule', {
+a.register('5f+V5', function(b, c) {
+    var d, e, f, g, h;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), c = n.exports, d = 'default', e = function() {
-        return n;
-    }, Object.defineProperty(c, d, {
-        get: e,
-        set: f,
+    }), e = b.exports, f = 'default', g = function() {
+        return _p;
+    }, Object.defineProperty(e, f, {
+        get: g,
+        set: h,
         enumerable: !0,
         configurable: !0
     });
-    var g = a('JJQ0+'),
-        h = a('Bpt+p'),
-        i = a('5Ux1a'),
-        j = a('sgILU'),
-        k = a('phu0d'),
-        l = a('Gqspz');
-    class m extends j.default {
-        constructor(a) {
-            if (super(a), (0, i.InGamePhase)() || (0, h.isPublishedVersion)())
+    var i = a('2Xvuf'),
+        j = a('9tz3H'),
+        k = a('/pbxo'),
+        l = a('I35Ay'),
+        m = a('+uQv7'),
+        n = a('dTXti');
+    class o extends l.default {
+        constructor(p) {
+            if (super(p), (0, k.InGamePhase)() || (0, j.isPublishedVersion)())
                 return;
-            const n = l.default.Utility;
-            new(0, k.default)({
+            const q = n.default.Utility;
+            new(0, m.default)({
                 device: this,
-                baseColor: n.baseColor,
-                boxColor: n.boxColor,
+                baseColor: q.baseColor,
+                boxColor: q.boxColor,
                 content: {
                     icon: {
-                        image: (0, g.default)('devices/health_granter/icon.png'),
+                        image: (0, i.default)('devices/health_granter/icon.png'),
                         scale: 0.95
                     }
                 }
             });
         }
     }
-    var n = o;
+    var _p = o;
 });

@@ -1,46 +1,46 @@
-function a(a, b, o, o) {
-    Object.defineProperty(a, b, {
-        get: o,
-        set: o,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('qSlNz', function(o, o) {
-    var c;
-    c = o.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('KkLK0', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(o.exports, 'default', function() {
-        return m;
+    }), _n(b.exports, 'default', function() {
+        return _n;
     });
-    var d = b('0x6bL'),
-        e = b('JJQ0+'),
-        f = b('Bpt+p'),
-        g = b('5Ux1a'),
-        h = b('sgILU'),
-        i = b('phu0d'),
-        j = b('Gqspz'),
-        k = b('Sbl6W');
-    class l extends h.default {
-        constructor(a) {
-            if (super(a), (0, g.InPreGamePhase)() && (0, f.isSavedVersion)()) {
-                let m = k.UnknownItemAsset.imageUrl;
-                const n = (0, d.default)(this.options.itemId);
-                n && (m = n.previewImage);
-                const o = j.default.Manager;
-                new(0, i.default)({
+    var e = a('btxlR'),
+        f = a('2Xvuf'),
+        g = a('9tz3H'),
+        h = a('/pbxo'),
+        i = a('I35Ay'),
+        j = a('+uQv7'),
+        k = a('dTXti'),
+        l = a('2M6xn');
+    class m extends i.default {
+        constructor(_n) {
+            if (super(_n), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) {
+                let o = l.UnknownItemAsset.imageUrl;
+                const p = (0, e.default)(this.options.itemId);
+                p && (o = p.previewImage);
+                const q = k.default.Manager;
+                new(0, j.default)({
                     device: this,
-                    baseColor: o.baseColor,
-                    boxColor: o.boxColor,
+                    baseColor: q.baseColor,
+                    boxColor: q.boxColor,
                     content: {
                         topLeftIcon: {
-                            image: (0, e.default)('devices/inventory_item_manager/icon.png'),
+                            image: (0, f.default)('devices/inventory_item_manager/icon.png'),
                             scale: 1
                         },
                         icon: {
-                            image: m,
+                            image: o,
                             scale: 1
                         }
                     }
@@ -48,20 +48,20 @@ b.register('qSlNz', function(o, o) {
             }
         }
     }
-    var m = n;
-}), b.register('Sbl6W', function(t, o) {
-    a(t.exports, 'BaseAsset', function() {
-        return d;
-    }), a(t.exports, 'UnknownItemAsset', function() {
-        return e;
+    var _n = m;
+}), a.register('2M6xn', function(b, c) {
+    e(b.exports, 'BaseAsset', function() {
+        return _e;
+    }), e(b.exports, 'UnknownItemAsset', function() {
+        return _f;
     });
-    var c = b('JJQ0+');
-    const d = {
-            imageId: (0, c.default)('devices/item_granter/base.png'),
-            imageUrl: (0, c.default)('devices/item_granter/base.png')
+    var d = a('2Xvuf');
+    const _e = {
+            imageId: (0, d.default)('devices/item_granter/base.png'),
+            imageUrl: (0, d.default)('devices/item_granter/base.png')
         },
-        e = {
+        _f = {
             imageId: '__UNKNOWN_ITEM',
-            imageUrl: (0, c.default)('devices/item_granter/question-mark-2.png')
+            imageUrl: (0, d.default)('devices/item_granter/question-mark-2.png')
         };
 });

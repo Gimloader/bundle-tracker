@@ -1,73 +1,73 @@
-function a(a, b, c, r) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: r,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('nj8vi', function(b, r) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('KuuVw', function(b, c) {
     var d;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(b.exports, 'default', function() {
-        return k;
+    }), _l(b.exports, 'default', function() {
+        return _k;
     });
-    var e = c('8kSQZ'),
-        f = c('Vlfxs');
-    c('uPP4W');
-    var g = c('iAe3o'),
-        h = c('am7L5'),
-        i = c('TnPB+'),
-        j = c('ugV6X');
-    var k = (0, f.observer)(() => {
+    var e = a('0hzx+'),
+        f = a('2x11J');
+    a('LEQ5w');
+    var g = a('11nl3'),
+        h = a('bHGrl'),
+        i = a('mQCZt'),
+        j = a('Cc8U1');
+    var _k = (0, f.observer)(() => {
         const {
             hooks: {
-                hookJSON: l
+                hookJSON: _l
             }
         } = (0, h.default)();
         return (0, e.jsx)(j.default, {
-            stringifiedData: l,
+            stringifiedData: _l,
             onClose: () => {
                 (0, i.default)(g.default.none);
             }
         });
     });
-}), c.register('ugV6X', function(b, r) {
-    a(b.exports, 'default', function() {
-        return o;
+}), a.register('Cc8U1', function(b, c) {
+    _v(b.exports, 'default', function() {
+        return _o;
     });
-    var d = c('8kSQZ'),
-        e = c('KV+OV'),
-        f = c('Vlfxs'),
-        g = c('uPP4W'),
-        h = c('PjB0f'),
-        i = c('9a8Pk'),
-        j = c('c8w5r'),
-        k = c('xck3q'),
-        l = c('QgmDb'),
-        m = c('3iZfA'),
-        n = c('XiR4U');
-    var o = (0, f.observer)(a => {
+    var d = a('0hzx+'),
+        e = a('sgToH'),
+        f = a('2x11J'),
+        g = a('LEQ5w'),
+        h = a('PMl60'),
+        i = a('nEBHu'),
+        j = a('Gxfhq'),
+        k = a('le6+G'),
+        l = a('//Rup'),
+        m = a('31UsN'),
+        n = a('oKonb');
+    var _o = (0, f.observer)(_v => {
         const [p, q] = g.useState(!1), [r, s, t] = (0, h.useBoolean)(!1), u = (0, j.default)();
         g.useEffect(() => {
             q(!0);
-            const v = (0, k.AddInputBlockingUI)().dispose;
-            return () => v();
+            const _v = (0, k.AddInputBlockingUI)().dispose;
+            return () => _v();
         }, []), g.useEffect(() => (window.addEventListener('TEST_VALUES_VISIBLE', s), window.addEventListener('TEST_VALUES_HIDDEN', t), () => {
             window.removeEventListener('TEST_VALUES_VISIBLE', s), window.removeEventListener('TEST_VALUES_HIDDEN', t);
         })), g.useEffect(() => {
-            n.default.data = JSON.parse(a.stringifiedData);
-        }, [a.stringifiedData]), g.useEffect(() => {
-            u || v();
+            n.default.data = JSON.parse(_l.stringifiedData);
+        }, [_l.stringifiedData]), g.useEffect(() => {
+            u || _v();
         }, [u]);
-        const v = () => {
+        const _v = () => {
                 q(!1);
             },
             w = (0, j.default)() && p;
@@ -76,9 +76,9 @@ c.register('nj8vi', function(b, r) {
             children: (0, d.jsx)(e.default, {
                 open: w,
                 afterOpenChange: () => {
-                    w || a.onClose();
+                    w || _l.onClose();
                 },
-                onClose: v,
+                onClose: _v,
                 placement: i.default.drawer.placement,
                 closable: !0,
                 width: r ? i.default.drawer.widths.testValues : i.default.drawer.widths.default,
@@ -86,11 +86,11 @@ c.register('nj8vi', function(b, r) {
             })
         });
     });
-}), c.register('9a8Pk', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('nEBHu', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         name: 'Hook',
         drawer: {
             placement: 'left',
@@ -100,28 +100,28 @@ c.register('nj8vi', function(b, r) {
             }
         }
     };
-}), c.register('QgmDb', function(b, s) {
-    a(b.exports, 'default', function() {
-        return n;
+}), a.register('//Rup', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('gSUVO'),
-        g = c('9a8Pk'),
-        h = c('vaQAz'),
-        i = c('FoKFN');
-    let j, k, l, m = a => a;
-    var n = () => (0, d.jsx)(h.default, {
-        children: (0, d.jsxs)(o, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('b5kvC'),
+        g = a('nEBHu'),
+        h = a('aPprg'),
+        i = a('xhIul');
+    let j, k, l, m = _l => _l;
+    var _n = () => (0, d.jsx)(h.default, {
+        children: (0, d.jsxs)(_o, {
             children: [
-                (0, d.jsxs)(p, {
+                (0, d.jsxs)(_p, {
                     children: [
                         g.default.name,
                         's'
                     ]
                 }),
-                (0, d.jsxs)(q, {
+                (0, d.jsxs)(_q, {
                     children: [
                         g.default.name,
                         's are options that game hosts can customize before playing your map. Use ',
@@ -133,46 +133,46 @@ c.register('nj8vi', function(b, r) {
             ]
         })
     });
-    const o = e.default.div.attrs({
+    const _o = e.default.div.attrs({
             className: 'flex-column flex-center maxWidth'
         })(j || (j = m``)),
-        p = e.default.div(k || (k = m`
+        _p = e.default.div(k || (k = m`
   font-size: 36px;
   font-weight: ${ 0 };
 `), f.FontWeights.Bold),
-        q = e.default.div(l || (l = m`
+        _q = e.default.div(l || (l = m`
   font-size: 18px;
   margin-top: 4px;
 `));
-}), c.register('vaQAz', function(b, s) {
-    a(b.exports, 'default', function() {
-        return h;
+}), a.register('aPprg', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('h99Nu'),
-        e = c('gSUVO'),
-        f = c('S/jX4');
+    var d = a('Axq+p'),
+        e = a('b5kvC'),
+        f = a('vShe/');
     let g;
-    var h = d.default.div(g || (g = (a => a)`
+    var _h = d.default.div(g || (g = (_l => _l)`
   color: ${ 0 };
   font-family: ${ 0 };
 `), f.default.Black, e.Fonts.ProductSans);
-}), c.register('FoKFN', function(b, s) {
-    a(b.exports, 'default', function() {
-        return k;
+}), a.register('xhIul', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('8kSQZ'),
-        e = c('/nMwY'),
-        f = c('Vlfxs');
-    c('uPP4W');
-    var g = c('SB1TS'),
-        h = c('7mlcg'),
-        i = c('ymRjp'),
-        j = c('EG1bC');
-    var k = (0, f.observer)(() => {
-        var l;
+    var d = a('0hzx+'),
+        e = a('CAKUf'),
+        f = a('2x11J');
+    a('LEQ5w');
+    var g = a('JNsYL'),
+        h = a('yotix'),
+        i = a('lcrzD'),
+        j = a('tA5HU');
+    var _k = (0, f.observer)(() => {
+        var _l;
         const m = (0, h.default)(),
             n = (0, g.useAmIGameOwner)();
-        return (null === (l = m.hooks) || void 0 === l ? void 0 : l.length) && n ? (0, d.jsxs)(e.default, {
+        return (null === (_l = m.hooks) || void 0 === _l ? void 0 : _l.length) && n ? (0, d.jsxs)(e.default, {
             type: 'card',
             style: {
                 width: '100%',
@@ -197,18 +197,18 @@ c.register('nj8vi', function(b, r) {
             children: (0, d.jsx)(i.default, {})
         });
     });
-}), c.register('7mlcg', function(b, s) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('yotix', function(b, c) {
+    _p(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('XiR4U');
-    var e = () => d.default.data;
-}), c.register('XiR4U', function(b, s) {
-    a(b.exports, 'default', function() {
-        return g;
+    var d = a('oKonb');
+    var _e = () => d.default.data;
+}), a.register('oKonb', function(b, c) {
+    _p(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('6gioo'),
-        e = c('UnUp5');
+    var d = a('csYze'),
+        e = a('YuT/D');
     class f {
         constructor() {
             this.data = {
@@ -217,31 +217,31 @@ c.register('nj8vi', function(b, r) {
         }
     }
     (0, d.__decorate)([e.observable], f.prototype, 'data', void 0);
-    var g = new f();
-}), c.register('ymRjp', function(b, s) {
-    a(b.exports, 'default', function() {
-        return o;
+    var _g = new f();
+}), a.register('lcrzD', function(b, c) {
+    _p(b.exports, 'default', function() {
+        return _o;
     });
-    var d = c('8kSQZ'),
-        e = c('Vlfxs');
-    c('uPP4W');
-    var f = c('h99Nu'),
-        g = c('PjB0f'),
-        h = c('9a8Pk'),
-        i = c('gXcsF'),
-        j = c('bzk6e'),
-        k = c('7mlcg'),
-        l = c('A5wKW'),
-        m = c('9QZbK');
+    var d = a('0hzx+'),
+        e = a('2x11J');
+    a('LEQ5w');
+    var f = a('Axq+p'),
+        g = a('PMl60'),
+        h = a('nEBHu'),
+        i = a('2AWDu'),
+        j = a('LbvQU'),
+        k = a('yotix'),
+        l = a('kig3a'),
+        m = a('YzWnC');
     let n;
-    var o = (0, e.observer)(() => {
-        const p = (0, k.default)(),
+    var _o = (0, e.observer)(() => {
+        const _p = (0, k.default)(),
             [q, r, s] = (0, g.useBoolean)(!1);
         return (0, d.jsxs)(d.Fragment, {
             children: [
-                (0, d.jsxs)(p, {
+                (0, d.jsxs)(_p, {
                     children: [
-                        p.hooks.length < i.default.maxHooks ? (0, d.jsxs)(j.HookNewCardButton, {
+                        _p.hooks.length < i.default.maxHooks ? (0, d.jsxs)(j.HookNewCardButton, {
                             style: {
                                 marginBottom: 10
                             },
@@ -251,11 +251,11 @@ c.register('nj8vi', function(b, r) {
                                 h.default.name
                             ]
                         }) : null,
-                        p.hooks.map((q, r) => (0, d.jsx)(l.default, {
+                        _p.hooks.map((q, r) => (0, d.jsx)(l.default, {
                             id: q.key,
                             type: q.type,
                             index: r,
-                            totalHooks: p.hooks.length
+                            totalHooks: _p.hooks.length
                         }, q.key))
                     ]
                 }),
@@ -266,14 +266,14 @@ c.register('nj8vi', function(b, r) {
             ]
         });
     });
-    const p = f.default.div.attrs({
+    const _p = f.default.div.attrs({
         className: 'maxWidth'
-    })(n || (n = (a => a)``));
-}), c.register('gXcsF', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    })(n || (n = (_w => _w)``));
+}), a.register('2AWDu', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         maxHooks: 12,
         maxKeyLength: 32,
         maxDisplayNameLength: 64,
@@ -287,24 +287,24 @@ c.register('nj8vi', function(b, r) {
             maxNameLength: 64
         }
     };
-}), c.register('bzk6e', function(b, D) {
-    a(b.exports, 'HookNewCardButton', function() {
-        return l;
-    }), a(b.exports, 'HookCardButton', function() {
-        return m;
+}), a.register('LbvQU', function(b, c) {
+    _w(b.exports, 'HookNewCardButton', function() {
+        return _l;
+    }), _w(b.exports, 'HookCardButton', function() {
+        return _m;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('f9f+a'),
-        f = c('h99Nu'),
-        g = c('S/jX4'),
-        h = c('gSUVO');
-    let i, j, k = a => a;
-    const l = a => (0, d.jsx)(n, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('oXQNI'),
+        f = a('Axq+p'),
+        g = a('vShe/'),
+        h = a('b5kvC');
+    let i, j, k = _w => _w;
+    const _l = _w => (0, d.jsx)(_n, {
             hoverable: !0,
-            onClick: a.onClick,
-            style: a.style,
-            children: (0, d.jsx)(o, {
+            onClick: _w.onClick,
+            style: _w.style,
+            children: (0, d.jsx)(_o, {
                 children: (0, d.jsxs)('div', {
                     className: 'flex vc',
                     children: [
@@ -317,57 +317,57 @@ c.register('nj8vi', function(b, r) {
                             className: 'fas fa-plus-circle'
                         }),
                         (0, d.jsx)('div', {
-                            children: a.children
+                            children: _w.children
                         })
                     ]
                 })
             })
         }),
-        m = a => (0, d.jsx)(n, {
+        _m = _w => (0, d.jsx)(_n, {
             hoverable: !0,
-            onClick: a.onClick,
-            style: a.style,
-            children: (0, d.jsx)(o, {
-                children: a.children
+            onClick: _w.onClick,
+            style: _w.style,
+            children: (0, d.jsx)(_o, {
+                children: _w.children
             })
         }),
-        n = (0, f.default)(e.default)(i || (i = k``)),
-        o = f.default.div(j || (j = k`
+        _n = (0, f.default)(e.default)(i || (i = k``)),
+        _o = f.default.div(j || (j = k`
   color: ${ 0 };
   font-size: 18px;
   font-weight: ${ 0 };
 `), g.default.Black, h.FontWeights.Bold);
-}), c.register('A5wKW', function(b, D) {
-    a(b.exports, 'default', function() {
-        return A;
+}), a.register('kig3a', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _A;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('h99Nu'),
-        g = c('IsmrL'),
-        h = c('M1Vx4'),
-        i = c('u3X1v'),
-        j = c('cR5QE'),
-        k = c('j/N3t'),
-        l = c('gSUVO'),
-        m = c('PjB0f'),
-        n = c('OOHxb'),
-        o = c('DuuvX'),
-        p = c('bzk6e'),
-        q = c('3I8Ro0'),
-        r = c('//+kT'),
-        s = c('HlKeV'),
-        t = c('9a8Pk');
-    let u, v, w, x, y, z = a => a;
-    var A = a => {
-        const [B, C, D] = (0, m.useBoolean)(!1), E = e.useMemo(() => (0, o.default)(a.type), [a.type]), F = () => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('ulE4q'),
+        h = a('/rAT0'),
+        i = a('WfOD7'),
+        j = a('YRlpt'),
+        k = a('LHeQv'),
+        l = a('b5kvC'),
+        m = a('PMl60'),
+        n = a('CM/CB'),
+        o = a('sWOBO'),
+        p = a('LbvQU'),
+        q = a('fNsdX'),
+        r = a('exDBf'),
+        s = a('blUBm'),
+        t = a('nEBHu');
+    let u, v, w, x, y, z = _w => _w;
+    var _A = _w => {
+        const [B, C, D] = (0, m.useBoolean)(!1), E = e.useMemo(() => (0, o.default)(_w.type), [_w.type]), F = () => {
             j.default.confirm({
                 title: `Are you sure you want to delete this ${ t.default.name.toLowerCase() }?`,
                 onOk: () => {
                     (0, r.default)({
                         action: s.default.removeHook,
                         payload: {
-                            key: a.id
+                            key: _w.id
                         }
                     });
                 }
@@ -376,7 +376,7 @@ c.register('nj8vi', function(b, r) {
             (0, r.default)({
                 action: s.default.moveHook,
                 payload: {
-                    key: a.id,
+                    key: _w.id,
                     direction: B
                 }
             });
@@ -388,19 +388,19 @@ c.register('nj8vi', function(b, r) {
                         marginBottom: 10
                     },
                     onClick: C,
-                    children: (0, d.jsxs)(B, {
+                    children: (0, d.jsxs)(_B, {
                         children: [
-                            (0, d.jsxs)(C, {
+                            (0, d.jsxs)(_C, {
                                 children: [
-                                    (0, d.jsx)(E, {
+                                    (0, d.jsx)(_E, {
                                         children: E
                                     }),
-                                    (0, d.jsx)(F, {
-                                        children: a.id
+                                    (0, d.jsx)(_F, {
+                                        children: _w.id
                                     })
                                 ]
                             }),
-                            (0, d.jsx)(D, {
+                            (0, d.jsx)(_D, {
                                 children: (0, d.jsx)(h.default, {
                                     overlay: () => (0, d.jsxs)(i.default, {
                                         children: [
@@ -411,11 +411,11 @@ c.register('nj8vi', function(b, r) {
                                                     t.default.name
                                                 ]
                                             }),
-                                            a.index > 0 && a.totalHooks > 1 ? (0, d.jsx)(i.default.Item, {
+                                            _w.index > 0 && _w.totalHooks > 1 ? (0, d.jsx)(i.default.Item, {
                                                 onClick: (0, q.default)(() => G('up')),
                                                 children: 'Move Up'
                                             }) : null,
-                                            a.index !== a.totalHooks && a.totalHooks > 1 ? (0, d.jsx)(i.default.Item, {
+                                            _w.index !== _w.totalHooks && _w.totalHooks > 1 ? (0, d.jsx)(i.default.Item, {
                                                 onClick: (0, q.default)(() => G('down')),
                                                 children: 'Move Down'
                                             }) : null
@@ -434,49 +434,49 @@ c.register('nj8vi', function(b, r) {
                 (0, d.jsx)(n.default, {
                     visible: B,
                     close: D,
-                    hookKey: a.id
+                    hookKey: _w.id
                 })
             ]
         });
     };
-    const B = f.default.div.attrs({
+    const _B = f.default.div.attrs({
             className: 'flex vc between maxWidth'
         })(u || (u = z``)),
-        C = f.default.div(v || (v = z``)),
-        D = f.default.div(w || (w = z``)),
-        E = f.default.div(x || (x = z`
+        _C = f.default.div(v || (v = z``)),
+        _D = f.default.div(w || (w = z``)),
+        _E = f.default.div(x || (x = z`
   font-size: 12px;
   font-style: italic;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.65);
   font-weight: ${ 0 };
 `), l.FontWeights.Normal),
-        F = f.default.div(y || (y = z``));
-}), c.register('OOHxb', function(b, d) {
-    a(b.exports, 'default', function() {
-        return l;
+        _F = f.default.div(y || (y = z``));
+}), a.register('CM/CB', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('KV+OV'),
-        f = c('Vlfxs');
-    c('uPP4W');
-    var g = c('9a8Pk'),
-        h = c('vaQAz'),
-        i = c('XoZxl'),
-        j = c('FPfTP'),
-        k = c('enxoX');
-    var l = (0, f.observer)(a => {
-        const m = (0, i.default)(a.hookKey);
+    var d = a('0hzx+'),
+        e = a('sgToH'),
+        f = a('2x11J');
+    a('LEQ5w');
+    var g = a('nEBHu'),
+        h = a('aPprg'),
+        i = a('gs/5D'),
+        j = a('2wIB0'),
+        k = a('I/rJl');
+    var _l = (0, f.observer)(_w => {
+        const m = (0, i.default)(_w.hookKey);
         return m ? (0, d.jsxs)(e.default, {
-            open: a.visible,
+            open: _w.visible,
             placement: g.default.drawer.placement,
             width: g.default.drawer.widths.default,
-            onClose: a.close,
+            onClose: _w.close,
             closable: !0,
             children: [
                 (0, d.jsx)(h.default, {
                     children: (0, d.jsx)(j.default, {
-                        name: a.hookKey,
+                        name: _w.hookKey,
                         type: m.type
                     })
                 }),
@@ -486,85 +486,85 @@ c.register('nj8vi', function(b, r) {
                     }
                 }),
                 (0, d.jsx)(k.default, {
-                    hookKey: a.hookKey
+                    hookKey: _w.hookKey
                 })
             ]
         }) : null;
     });
-}), c.register('XoZxl', function(b, d) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('gs/5D', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('XiR4U');
-    var e = a => {
+    var d = a('oKonb');
+    var _e = _w => {
         var f, g;
-        return null === (f = d.default.data) || void 0 === f || null === (g = f.hooks) || void 0 === g ? void 0 : g.find(f => f.key === a);
+        return null === (f = d.default.data) || void 0 === f || null === (g = f.hooks) || void 0 === g ? void 0 : g.find(f => f.key === _w);
     };
-}), c.register('FPfTP', function(b, d) {
-    a(b.exports, 'default', function() {
-        return m;
+}), a.register('2wIB0', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _m;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('DuuvX'),
-        g = c('9a8Pk'),
-        h = c('gSUVO');
-    let i, j, k, l = a => a;
-    var m = a => (0, d.jsxs)(n, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('sWOBO'),
+        g = a('nEBHu'),
+        h = a('b5kvC');
+    let i, j, k, l = _w => _w;
+    var _m = _w => (0, d.jsxs)(_n, {
         children: [
-            (0, d.jsxs)(o, {
+            (0, d.jsxs)(_o, {
                 children: [
                     g.default.name,
                     ' - ',
-                    (0, f.default)(a.type)
+                    (0, f.default)(_w.type)
                 ]
             }),
-            (0, d.jsx)(p, {
-                children: a.name
+            (0, d.jsx)(_p, {
+                children: _w.name
             })
         ]
     });
-    const n = e.default.div(i || (i = l``)),
-        o = e.default.div(j || (j = l`
+    const _n = e.default.div(i || (i = l``)),
+        _o = e.default.div(j || (j = l`
   text-transform: uppercase;
   font-style: italic;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
 `)),
-        p = e.default.div(k || (k = l`
+        _p = e.default.div(k || (k = l`
   font-size: 28px;
   font-weight: ${ 0 };
 `), h.FontWeights.Bold);
-}), c.register('DuuvX', function(b, d) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('sWOBO', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('uzjvO4');
-    var e = a => a === d.HookType.selectBox ? 'Select Box' : a === d.HookType.number ? 'Number' : a === d.HookType.kit ? 'Kit' : 'Unknown Type';
-}), c.register('uzjvO4', function(b, c) {
+    var d = a('QdGLB');
+    var _e = _w => _w === d.HookType.selectBox ? 'Select Box' : _w === d.HookType.number ? 'Number' : _w === d.HookType.kit ? 'Kit' : 'Unknown Type';
+}), a.register('QdGLB', function(b, c) {
     let d;
     var e;
-    a(b.exports, 'HookType', function() {
+    _w(b.exports, 'HookType', function() {
         return d;
     }), (e = d || (d = {})).selectBox = 'selectBox', e.kit = 'kit', e.number = 'number';
-}), c.register('enxoX', function(b, u) {
-    a(b.exports, 'default', function() {
-        return o;
+}), a.register('I/rJl', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _o;
     });
-    var d = c('8kSQZ'),
-        e = c('/nMwY'),
-        f = c('8k9IL'),
-        g = c('uPP4W'),
-        h = c('uzjvO4'),
-        i = c('vaQAz'),
-        j = c('XoZxl'),
-        k = c('ppzOO'),
-        l = c('WtAmH'),
-        m = c('Y8OPu'),
-        n = c('VYFfl');
-    var o = (0, f.observer)(a => {
-        const p = (0, j.default)(a.hookKey);
+    var d = a('0hzx+'),
+        e = a('CAKUf'),
+        f = a('7up2I'),
+        g = a('LEQ5w'),
+        h = a('QdGLB'),
+        i = a('aPprg'),
+        j = a('gs/5D'),
+        k = a('B9adZ'),
+        l = a('4rtw4'),
+        m = a('Mb8oX'),
+        n = a('pWC1H');
+    var _o = (0, f.observer)(_w => {
+        const p = (0, j.default)(_w.hookKey);
         return (0, d.jsxs)(e.default, {
             style: {
                 width: '100%'
@@ -575,7 +575,7 @@ c.register('nj8vi', function(b, r) {
                     tab: 'Options',
                     children: (0, d.jsx)(i.default, {
                         children: (0, d.jsx)(m.default, {
-                            hookKey: a.hookKey
+                            hookKey: _w.hookKey
                         })
                     })
                 }, 'tab-hook-select-options') : null,
@@ -585,7 +585,7 @@ c.register('nj8vi', function(b, r) {
                             tab: 'Settings',
                             children: (0, d.jsx)(i.default, {
                                 children: (0, d.jsx)(n.default, {
-                                    hookKey: a.hookKey
+                                    hookKey: _w.hookKey
                                 })
                             })
                         }, 'tab-hook-settings'),
@@ -593,7 +593,7 @@ c.register('nj8vi', function(b, r) {
                             tab: 'Hidden',
                             children: (0, d.jsx)(i.default, {
                                 children: (0, d.jsx)(l.default, {
-                                    hookKey: a.hookKey
+                                    hookKey: _w.hookKey
                                 })
                             })
                         }, 'tab-hook-hidden')
@@ -603,28 +603,28 @@ c.register('nj8vi', function(b, r) {
                     tab: 'Devices',
                     children: (0, d.jsx)(i.default, {
                         children: (0, d.jsx)(k.default, {
-                            hookKey: a.hookKey
+                            hookKey: _w.hookKey
                         })
                     })
                 }, 'tab-hook-devices')
             ]
         });
     });
-}), c.register('ppzOO', function(b, u) {
-    a(b.exports, 'default', function() {
-        return r;
+}), a.register('B9adZ', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _r;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('am7L5'),
-        g = c('h99Nu'),
-        h = c('9a8Pk'),
-        i = c('bzk6e'),
-        j = c('gSUVO'),
-        k = c('TnPB+'),
-        l = c('iAe3o');
-    let m, n, o, p, q = a => a;
-    var r = a => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('bHGrl'),
+        g = a('Axq+p'),
+        h = a('nEBHu'),
+        i = a('LbvQU'),
+        j = a('b5kvC'),
+        k = a('mQCZt'),
+        l = a('11nl3');
+    let m, n, o, p, q = _w => _w;
+    var _r = _w => {
         const {
             world: {
                 devices: {
@@ -636,44 +636,44 @@ c.register('nj8vi', function(b, r) {
             }
         } = (0, f.default)(), u = e.useMemo(() => {
             const v = [];
-            return Array.from(s).map(a => a[1]).forEach(s => {
+            return Array.from(s).map(_w => _w[1]).forEach(s => {
                 s.hooks && s.hooks.connections && s.hooks.connections.length && s.hooks.connections.forEach(u => {
-                    if (u.hook === a.hookKey) {
-                        const w = s.deviceOption.optionSchema.options.find(w => w.key === u.option).option.label;
+                    if (u.hook === _w.hookKey) {
+                        const _w = s.deviceOption.optionSchema.options.find(_w => _w.key === u.option).option.label;
                         v.push({
                             deviceId: s.id,
                             deviceOptionId: s.deviceOption.id,
                             deviceName: s.name || s.deviceOption.name,
-                            optionName: w
+                            optionName: _w
                         });
                     }
                 });
             }), v;
         }, []);
-        return (0, d.jsx)(s, {
+        return (0, d.jsx)(_s, {
             children: u.length ? (0, d.jsx)(d.Fragment, {
-                children: u.map(a => (0, d.jsx)(i.HookCardButton, {
+                children: u.map(_n => (0, d.jsx)(i.HookCardButton, {
                     style: {
                         marginBottom: 10
                     },
                     onClick: () => {
                         t.device.currentlyEditedDevice = {
-                            id: a.deviceId,
-                            deviceOptionId: a.deviceOptionId
+                            id: _n.deviceId,
+                            deviceOptionId: _n.deviceOptionId
                         }, (0, k.default)(l.default.editingDevice);
                     },
                     children: (0, d.jsxs)('div', {
                         children: [
-                            (0, d.jsx)(u, {
-                                children: a.optionName
+                            (0, d.jsx)(_u, {
+                                children: _n.optionName
                             }),
-                            (0, d.jsx)(v, {
-                                children: a.deviceName
+                            (0, d.jsx)(_v, {
+                                children: _n.deviceName
                             })
                         ]
                     })
-                }, a.deviceId + a.optionName))
-            }) : (0, d.jsxs)(t, {
+                }, _n.deviceId + _n.optionName))
+            }) : (0, d.jsxs)(_t, {
                 children: [
                     'No devices are using this ',
                     h.default.name.toLowerCase(),
@@ -684,30 +684,30 @@ c.register('nj8vi', function(b, r) {
             })
         });
     };
-    const s = g.default.div(m || (m = q``)),
-        t = g.default.div(n || (n = q`
+    const _s = g.default.div(m || (m = q``)),
+        _t = g.default.div(n || (n = q`
   font-size: 16px;
 `)),
-        u = g.default.div(o || (o = q`
+        _u = g.default.div(o || (o = q`
   font-size: 12px;
   font-style: italic;
   color: rgba(0, 0, 0, 0.65);
   font-weight: ${ 0 };
 `), j.FontWeights.Normal),
-        v = g.default.div(p || (p = q``));
-}), c.register('WtAmH', function(b, o) {
-    a(b.exports, 'default', function() {
-        return k;
+        _v = g.default.div(p || (p = q``));
+}), a.register('4rtw4', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('9a8Pk'),
-        g = c('hv9NE');
-    let h, i, j = a => a;
-    var k = a => (0, d.jsxs)(l, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('nEBHu'),
+        g = a('lyZQx');
+    let h, i, j = _n => _n;
+    var _k = _n => (0, d.jsxs)(_l, {
         children: [
-            (0, d.jsxs)(m, {
+            (0, d.jsxs)(_m, {
                 children: [
                     'Sometimes you don\'t want a ',
                     f.default.name.toLowerCase(),
@@ -726,29 +726,29 @@ c.register('nj8vi', function(b, r) {
                 ]
             }),
             (0, d.jsx)(g.default, {
-                hookKey: a.hookKey
+                hookKey: _n.hookKey
             })
         ]
     });
-    const l = e.default.div(h || (h = j``)),
-        m = e.default.div(i || (i = j`
+    const _l = e.default.div(h || (h = j``)),
+        _m = e.default.div(i || (i = j`
   margin-bottom: 15px;
 `));
-}), c.register('hv9NE', function(b, o) {
-    a(b.exports, 'default', function() {
-        return l;
+}), a.register('lyZQx', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('Vlfxs');
-    c('uPP4W');
-    var f = c('PjB0f'),
-        g = c('gXcsF'),
-        h = c('bzk6e'),
-        i = c('XoZxl'),
-        j = c('jIbA+'),
-        k = c('NbuRl');
-    var l = (0, e.observer)(a => {
-        const m = (0, i.default)(a.hookKey),
+    var d = a('0hzx+'),
+        e = a('2x11J');
+    a('LEQ5w');
+    var f = a('PMl60'),
+        g = a('2AWDu'),
+        h = a('LbvQU'),
+        i = a('gs/5D'),
+        j = a('xsZsm'),
+        k = a('kS4PY');
+    var _l = (0, e.observer)(_n => {
+        const m = (0, i.default)(_n.hookKey),
             [n, o, p] = (0, f.useBoolean)(!1);
         if (!m)
             return null;
@@ -764,47 +764,47 @@ c.register('nj8vi', function(b, r) {
                 }) : null,
                 (m.hiddenScenarios || []).map(m => (0, d.jsx)(k.default, {
                     name: m.name,
-                    hookKey: a.hookKey
-                }, `scenario-${ m.name }-${ a.hookKey }`)),
+                    hookKey: _n.hookKey
+                }, `scenario-${ m.name }-${ _n.hookKey }`)),
                 (0, d.jsx)(j.default, {
-                    hookKey: a.hookKey,
+                    hookKey: _n.hookKey,
                     visible: n,
                     close: p
                 })
             ]
         });
     });
-}), c.register('jIbA+', function(b, r) {
-    a(b.exports, 'default', function() {
-        return o;
+}), a.register('xsZsm', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _o;
     });
-    var d = c('8kSQZ'),
-        e = c('IsmrL'),
-        f = c('KV+OV'),
-        g = c('c6x8w'),
-        h = c('uPP4W'),
-        i = c('9a8Pk'),
-        j = c('gXcsF'),
-        k = c('HlKeV'),
-        l = c('//+kT'),
-        m = c('vaQAz'),
-        n = c('xooCA');
-    var o = a => {
+    var d = a('0hzx+'),
+        e = a('ulE4q'),
+        f = a('sgToH'),
+        g = a('ewwAh'),
+        h = a('LEQ5w'),
+        i = a('nEBHu'),
+        j = a('2AWDu'),
+        k = a('blUBm'),
+        l = a('exDBf'),
+        m = a('aPprg'),
+        n = a('yYQqX');
+    var _o = _n => {
         const [p, q] = h.useState(''), r = () => {
             const s = p.trim();
             s.length && ((0, l.default)({
                 action: k.default.newHiddenScenario,
                 payload: {
-                    key: a.hookKey,
+                    key: _n.hookKey,
                     name: s
                 }
-            }), q(''), a.close());
+            }), q(''), _n.close());
         };
         return (0, d.jsx)(f.default, {
             placement: i.default.drawer.placement,
             width: i.default.drawer.widths.default,
-            open: a.visible,
-            onClose: a.close,
+            open: _n.visible,
+            onClose: _n.close,
             closable: !0,
             children: (0, d.jsxs)(m.default, {
                 children: [
@@ -815,8 +815,8 @@ c.register('nj8vi', function(b, r) {
                         size: 'large',
                         placeholder: 'Name here...',
                         value: p,
-                        onChange: a => {
-                            q(a.target.value);
+                        onChange: _n => {
+                            q(_n.target.value);
                         },
                         onPressEnter: r,
                         maxLength: j.default.hiddenScenario.maxNameLength
@@ -837,11 +837,11 @@ c.register('nj8vi', function(b, r) {
             })
         });
     };
-}), c.register('HlKeV', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('blUBm', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         newHook: 'NEW_HOOK',
         removeHook: 'REMOVE_HOOK',
         newOption: 'NEW_OPTION',
@@ -859,69 +859,69 @@ c.register('nj8vi', function(b, r) {
         moveHook: 'MOVE_HOOK',
         changeNumberOption: 'CHANGE_NUMBER_OPTION'
     };
-}), c.register('//+kT', function(b, t) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('exDBf', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('ULD33');
-    var e = a => {
-        (0, d.default)(a);
+    var d = a('dv/zq');
+    var _e = _n => {
+        (0, d.default)(_n);
     };
-}), c.register('ULD33', function(b, t) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('dv/zq', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('sPSvg'),
-        e = c('DM38W');
-    var f = a => {
+    var d = a('x7BBh'),
+        e = a('Quxw3');
+    var _f = _n => {
         (0, e.default)(d.default.hookAction, {
-            action: a.action,
-            payload: a.payload
+            action: _n.action,
+            payload: _n.payload
         });
     };
-}), c.register('xooCA', function(b, t) {
-    a(b.exports, 'HookFormInputLabel', function() {
-        return i;
-    }), a(b.exports, 'HookFormInputLabelDescription', function() {
-        return j;
+}), a.register('yYQqX', function(b, c) {
+    _n(b.exports, 'HookFormInputLabel', function() {
+        return _i;
+    }), _n(b.exports, 'HookFormInputLabelDescription', function() {
+        return _j;
     });
-    var d = c('h99Nu'),
-        e = c('gSUVO');
-    let f, g, h = a => a;
-    const i = d.default.div(f || (f = h`
+    var d = a('Axq+p'),
+        e = a('b5kvC');
+    let f, g, h = _n => _n;
+    const _i = d.default.div(f || (f = h`
   font-size: 18px;
   font-weight: ${ 0 };
   margin-bottom: 4px;
 `), e.FontWeights.Bold),
-        j = d.default.div(g || (g = h`
+        _j = d.default.div(g || (g = h`
   font-size: 14px;
   margin-bottom: 4px;
 `));
-}), c.register('NbuRl', function(b, t) {
-    a(b.exports, 'default', function() {
-        return q;
+}), a.register('kS4PY', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _q;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('bzk6e'),
-        f = c('h99Nu'),
-        g = c('IsmrL'),
-        h = c('M1Vx4'),
-        i = c('u3X1v'),
-        j = c('j/N3t'),
-        k = c('PjB0f'),
-        l = c('V/r3W'),
-        m = c('3I8Ro0'),
-        n = c('//+kT'),
-        o = c('HlKeV');
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('LbvQU'),
+        f = a('Axq+p'),
+        g = a('ulE4q'),
+        h = a('/rAT0'),
+        i = a('WfOD7'),
+        j = a('LHeQv'),
+        k = a('PMl60'),
+        l = a('wWCmY'),
+        m = a('fNsdX'),
+        n = a('exDBf'),
+        o = a('blUBm');
     let p;
-    var q = a => {
+    var _q = _n => {
         const [r, s, t] = (0, k.useBoolean)(!1), u = () => {
             (0, n.default)({
                 action: o.default.removeHiddenScenario,
                 payload: {
-                    key: a.hookKey,
-                    name: a.name
+                    key: _n.hookKey,
+                    name: _n.name
                 }
             });
         };
@@ -932,10 +932,10 @@ c.register('nj8vi', function(b, r) {
                         marginBottom: 10
                     },
                     onClick: s,
-                    children: (0, d.jsxs)(r, {
+                    children: (0, d.jsxs)(_r, {
                         children: [
                             (0, d.jsx)('div', {
-                                children: a.name
+                                children: _n.name
                             }),
                             (0, d.jsx)(h.default, {
                                 overlay: (0, d.jsx)(i.default, {
@@ -956,120 +956,120 @@ c.register('nj8vi', function(b, r) {
                 (0, d.jsx)(l.default, {
                     visible: r,
                     close: t,
-                    scenarioName: a.name,
-                    hookKey: a.hookKey
+                    scenarioName: _n.name,
+                    hookKey: _n.hookKey
                 })
             ]
         });
     };
-    const r = f.default.div.attrs({
+    const _r = f.default.div.attrs({
         className: 'maxWidth flex between vc'
-    })(p || (p = (a => a)``));
-}), c.register('V/r3W', function(b, A) {
-    a(b.exports, 'default', function() {
-        return n;
+    })(p || (p = (_n => _n)``));
+}), a.register('wWCmY', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('8kSQZ'),
-        e = c('ExtIT'),
-        f = c('KV+OV'),
-        g = c('Vlfxs');
-    c('uPP4W');
-    var h = c('9a8Pk'),
-        i = c('vaQAz'),
-        j = c('MKzy/'),
-        k = c('XoZxl'),
-        l = c('pwHqg'),
-        m = c('il480');
-    var n = (0, g.observer)(a => {
-        const o = (0, k.default)(a.hookKey);
+    var d = a('0hzx+'),
+        e = a('fmVdR'),
+        f = a('sgToH'),
+        g = a('2x11J');
+    a('LEQ5w');
+    var h = a('nEBHu'),
+        i = a('aPprg'),
+        j = a('w1AGN'),
+        k = a('gs/5D'),
+        l = a('wP6kf'),
+        m = a('UueDK');
+    var _n = (0, g.observer)(_n => {
+        const o = (0, k.default)(_n.hookKey);
         if (!o)
             return null;
-        const p = (o.hiddenScenarios || []).find(o => o.name === a.scenarioName);
+        const p = (o.hiddenScenarios || []).find(o => o.name === _n.scenarioName);
         return p ? (0, d.jsx)(f.default, {
-            open: a.visible,
-            onClose: a.close,
+            open: _n.visible,
+            onClose: _n.close,
             width: h.default.drawer.widths.default,
             placement: h.default.drawer.placement,
             closable: !0,
             children: (0, d.jsxs)(i.default, {
                 children: [
                     (0, d.jsx)(j.default, {
-                        title: a.scenarioName,
+                        title: _n.scenarioName,
                         descriptor: 'Scenario'
                     }),
                     (0, d.jsx)(e.default, {}),
                     (0, d.jsx)(m.default, {
-                        hookKey: a.hookKey,
-                        scenarioName: a.scenarioName
+                        hookKey: _n.hookKey,
+                        scenarioName: _n.scenarioName
                     }),
                     p.conditions.map(o => (0, d.jsx)(l.default, {
-                        hookKey: a.hookKey,
-                        scenarioName: a.scenarioName,
+                        hookKey: _n.hookKey,
+                        scenarioName: _n.scenarioName,
                         condition: o
                     }, `condition-${ o.id }`))
                 ]
             })
         }) : null;
     });
-}), c.register('MKzy/', function(b, A) {
-    a(b.exports, 'default', function() {
-        return k;
+}), a.register('w1AGN', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('gSUVO');
-    let g, h, i, j = a => a;
-    var k = a => (0, d.jsxs)(l, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('b5kvC');
+    let g, h, i, j = _n => _n;
+    var _k = _n => (0, d.jsxs)(_l, {
         children: [
-            (0, d.jsx)(m, {
-                children: a.descriptor
+            (0, d.jsx)(_m, {
+                children: _n.descriptor
             }),
-            (0, d.jsx)(n, {
-                children: a.title
+            (0, d.jsx)(_n, {
+                children: _n.title
             })
         ]
     });
-    const l = e.default.div(g || (g = j``)),
-        m = e.default.div(h || (h = j`
+    const _l = e.default.div(g || (g = j``)),
+        _m = e.default.div(h || (h = j`
   text-transform: uppercase;
   font-style: italic;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
 `)),
-        n = e.default.div(i || (i = j`
+        _n = e.default.div(i || (i = j`
   font-size: 28px;
   font-weight: ${ 0 };
 `), f.FontWeights.Bold);
-}), c.register('pwHqg', function(b, A) {
-    a(b.exports, 'default', function() {
-        return x;
+}), a.register('wP6kf', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _x;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('zPY9u'),
-        g = c('bzk6e'),
-        h = c('h99Nu'),
-        i = c('IsmrL'),
-        j = c('M1Vx4'),
-        k = c('u3X1v'),
-        l = c('j/N3t'),
-        m = c('gSUVO'),
-        n = c('HlKeV'),
-        o = c('//+kT'),
-        p = c('3I8Ro0'),
-        q = c('PjB0f'),
-        r = c('J7AyN'),
-        s = c('9a8Pk');
-    let t, u, v, w = a => a;
-    var x = a => {
-        const [y, z, A] = (0, q.useBoolean)(!1), B = e.useMemo(() => a.condition.type === f.HiddenConditionType.hookValue ? `${ s.default.name } Value` : a.condition.type === f.HiddenConditionType.modeType ? 'Mode' : 'Unknown', [a.condition.type]), C = () => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Rq6L+0'),
+        g = a('LbvQU'),
+        h = a('Axq+p'),
+        i = a('ulE4q'),
+        j = a('/rAT0'),
+        k = a('WfOD7'),
+        l = a('LHeQv'),
+        m = a('b5kvC'),
+        n = a('blUBm'),
+        o = a('exDBf'),
+        p = a('fNsdX'),
+        q = a('PMl60'),
+        r = a('+pC8s'),
+        s = a('nEBHu');
+    let t, u, v, w = _n => _n;
+    var _x = _n => {
+        const [y, z, A] = (0, q.useBoolean)(!1), B = e.useMemo(() => _n.condition.type === f.HiddenConditionType.hookValue ? `${ s.default.name } Value` : _n.condition.type === f.HiddenConditionType.modeType ? 'Mode' : 'Unknown', [_n.condition.type]), C = () => {
             (0, o.default)({
                 action: n.default.removeHiddenCondition,
                 payload: {
-                    key: a.hookKey,
-                    scenario: a.scenarioName,
-                    condition: a.condition.id
+                    key: _n.hookKey,
+                    scenario: _n.scenarioName,
+                    condition: _n.condition.id
                 }
             });
         };
@@ -1080,14 +1080,14 @@ c.register('nj8vi', function(b, r) {
                         marginBottom: 10
                     },
                     onClick: z,
-                    children: (0, d.jsxs)(y, {
+                    children: (0, d.jsxs)(_y, {
                         children: [
                             (0, d.jsxs)('div', {
                                 children: [
-                                    (0, d.jsx)(z, {
+                                    (0, d.jsx)(_z, {
                                         children: 'Condition'
                                     }),
-                                    (0, d.jsx)(A, {
+                                    (0, d.jsx)(_A, {
                                         children: B
                                     })
                                 ]
@@ -1111,102 +1111,102 @@ c.register('nj8vi', function(b, r) {
                 (0, d.jsx)(r.default, {
                     visible: y,
                     close: A,
-                    hookKey: a.hookKey,
-                    scenarioName: a.scenarioName,
-                    condition: a.condition.id
+                    hookKey: _n.hookKey,
+                    scenarioName: _n.scenarioName,
+                    condition: _n.condition.id
                 })
             ]
         });
     };
-    const y = h.default.div.attrs({
+    const _y = h.default.div.attrs({
             className: 'maxWidth flex between vc'
         })(t || (t = w``)),
-        z = h.default.div(u || (u = w`
+        _z = h.default.div(u || (u = w`
   font-size: 12px;
   font-style: italic;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.65);
   font-weight: ${ 0 };
 `), m.FontWeights.Normal),
-        A = h.default.div(v || (v = w``));
-}), c.register('3I8Ro0', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+        _A = h.default.div(v || (v = w``));
+}), a.register('fNsdX', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _d;
     });
-    var d = a => b => {
-        b.domEvent.stopPropagation(), a && a();
+    var _d = _n => b => {
+        b.domEvent.stopPropagation(), _n && _n();
     };
-}), c.register('J7AyN', function(b, p) {
-    a(b.exports, 'default', function() {
-        return m;
+}), a.register('+pC8s', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _m;
     });
-    var d = c('8kSQZ'),
-        e = c('KV+OV'),
-        f = c('Vlfxs');
-    c('uPP4W');
-    var g = c('9a8Pk'),
-        h = c('zPY9u'),
-        i = c('vaQAz'),
-        j = c('XoZxl'),
-        k = c('13jfd'),
-        l = c('JS45o');
-    var m = (0, f.observer)(a => {
-        const n = (0, j.default)(a.hookKey);
+    var d = a('0hzx+'),
+        e = a('sgToH'),
+        f = a('2x11J');
+    a('LEQ5w');
+    var g = a('nEBHu'),
+        h = a('Rq6L+0'),
+        i = a('aPprg'),
+        j = a('gs/5D'),
+        k = a('GSEP+'),
+        l = a('Az7iW');
+    var _m = (0, f.observer)(_n => {
+        const n = (0, j.default)(_n.hookKey);
         if (!n)
             return null;
-        const o = (n.hiddenScenarios || []).find(n => n.name === a.scenarioName);
+        const o = (n.hiddenScenarios || []).find(n => n.name === _n.scenarioName);
         if (!o)
             return null;
-        const p = o.conditions.find(n => n.id === a.condition);
+        const p = o.conditions.find(n => n.id === _n.condition);
         if (!p)
             return null;
         return (0, d.jsx)(e.default, {
             placement: g.default.drawer.placement,
             width: g.default.drawer.widths.default,
-            open: a.visible,
-            onClose: a.close,
+            open: _n.visible,
+            onClose: _n.close,
             closable: !0,
             children: (0, d.jsx)(i.default, {
                 children: p.type === h.HiddenConditionType.hookValue ? (0, d.jsx)(k.default, {
                     condition: p,
-                    hookKey: a.hookKey,
-                    scenarioName: a.scenarioName,
-                    close: a.close
+                    hookKey: _n.hookKey,
+                    scenarioName: _n.scenarioName,
+                    close: _n.close
                 }) : p.type === h.HiddenConditionType.modeType ? (0, d.jsx)(l.default, {
                     condition: p,
-                    hookKey: a.hookKey,
-                    scenarioName: a.scenarioName,
-                    close: a.close
+                    hookKey: _n.hookKey,
+                    scenarioName: _n.scenarioName,
+                    close: _n.close
                 }) : null
             })
         });
     });
-}), c.register('13jfd', function(b, y) {
-    a(b.exports, 'default', function() {
-        return v;
+}), a.register('GSEP+', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _v;
     });
-    var d = c('8kSQZ'),
-        e = c('bPH7V'),
-        f = c('16ojk0'),
-        g = c('IsmrL'),
-        h = c('ExtIT'),
-        i = c('c6x8w'),
-        j = c('Ly1h3'),
-        k = c('Vlfxs'),
-        l = c('uPP4W'),
-        m = c('h99Nu'),
-        n = c('9a8Pk'),
-        o = c('HlKeV'),
-        p = c('zPY9u'),
-        q = c('//+kT'),
-        r = c('MKzy/'),
-        s = c('xooCA'),
-        t = c('7mlcg');
+    var d = a('0hzx+'),
+        e = a('NIZyA'),
+        f = a('OB7Pc'),
+        g = a('ulE4q'),
+        h = a('fmVdR'),
+        i = a('ewwAh'),
+        j = a('inwN3'),
+        k = a('2x11J'),
+        l = a('LEQ5w'),
+        m = a('Axq+p'),
+        n = a('nEBHu'),
+        o = a('blUBm'),
+        p = a('Rq6L+0'),
+        q = a('exDBf'),
+        r = a('w1AGN'),
+        s = a('yYQqX'),
+        t = a('yotix');
     let u;
-    var v = (0, k.observer)(a => {
+    var _v = (0, k.observer)(_n => {
         const {
             options: w
-        } = a.condition, x = (0, t.default)(), [y, z] = l.useState(null == w ? void 0 : w.key), [A, B] = l.useState(null == w ? void 0 : w.compare), [C, D] = l.useState(null == w ? void 0 : w.value);
+        } = _n.condition, x = (0, t.default)(), [y, z] = l.useState(null == w ? void 0 : w.key), [A, B] = l.useState(null == w ? void 0 : w.compare), [C, D] = l.useState(null == w ? void 0 : w.value);
         if (l.useEffect(() => {
                 z(null == w ? void 0 : w.key);
             }, [null == w ? void 0 : w.key]), l.useEffect(() => {
@@ -1215,11 +1215,11 @@ c.register('nj8vi', function(b, r) {
                 D(null == w ? void 0 : w.value);
             }, [null == w ? void 0 : w.value]), !w)
             return null;
-        const E = y.trim() === a.hookKey,
-            F = x.hooks.filter(w => w.key !== a.hookKey).map(a => ({
-                value: a.key
+        const E = y.trim() === _n.hookKey,
+            F = x.hooks.filter(w => w.key !== _n.hookKey).map(_n => ({
+                value: _n.key
             }));
-        return (0, d.jsxs)(w, {
+        return (0, d.jsxs)(_w, {
             children: [
                 (0, d.jsx)(r.default, {
                     title: `${ n.default.name } Value`,
@@ -1235,16 +1235,16 @@ c.register('nj8vi', function(b, r) {
                 (0, d.jsx)(f.default, {
                     value: y,
                     options: F,
-                    onChange: a => {
-                        z(a);
+                    onChange: _n => {
+                        z(_n);
                     },
                     style: {
                         width: '100%'
                     },
                     placeholder: 'Name here...',
-                    filterOption: (a, w) => {
+                    filterOption: (_n, w) => {
                         var G;
-                        return -1 !== (null === (G = w.value) || void 0 === G ? void 0 : G.toUpperCase().indexOf(a.toUpperCase()));
+                        return -1 !== (null === (G = w.value) || void 0 === G ? void 0 : G.toUpperCase().indexOf(_n.toUpperCase()));
                     }
                 }),
                 (0, d.jsx)('div', {
@@ -1260,8 +1260,8 @@ c.register('nj8vi', function(b, r) {
                         width: '100%'
                     },
                     size: 'large',
-                    onChange: a => {
-                        B(a);
+                    onChange: _n => {
+                        B(_n);
                     },
                     value: A,
                     children: [
@@ -1285,8 +1285,8 @@ c.register('nj8vi', function(b, r) {
                 }),
                 (0, d.jsx)(i.default, {
                     value: C,
-                    onChange: a => {
-                        D(a.target.value);
+                    onChange: _n => {
+                        D(_n.target.value);
                     },
                     size: 'large',
                     placeholder: 'Value here...'
@@ -1308,16 +1308,16 @@ c.register('nj8vi', function(b, r) {
                         E || ((0, q.default)({
                             action: o.default.saveHookValueHiddenConditionOptions,
                             payload: {
-                                key: a.hookKey,
-                                scenario: a.scenarioName,
-                                condition: a.condition.id,
+                                key: _n.hookKey,
+                                scenario: _n.scenarioName,
+                                condition: _n.condition.id,
                                 options: {
                                     key: y,
                                     compare: A,
                                     value: C
                                 }
                             }
-                        }), a.close());
+                        }), _n.close());
                     },
                     children: 'Save'
                 }),
@@ -1333,111 +1333,111 @@ c.register('nj8vi', function(b, r) {
             ]
         });
     });
-    const w = m.default.div(u || (u = (a => a)``));
-}), c.register('16ojk0', function(o, p) {
-    a(o.exports, 'default', function() {
-        return v;
+    const _w = m.default.div(u || (u = (_n => _n)``));
+}), a.register('OB7Pc', function(b, c) {
+    _n(b.exports, 'default', function() {
+        return _t;
     });
-    var d = c('VAIs1'),
-        e = c('8N2Yw'),
-        f = c('xORK+'),
-        g = c('uPP4W'),
-        h = c('qEw51'),
-        i = c('Ly1h3'),
-        j = c('XRX1525'),
-        k = c('Cpebg');
+    var d = a('JrtKP'),
+        e = a('Ug51y0'),
+        f = a('sWKBM'),
+        g = a('LEQ5w'),
+        h = a('1P5ls'),
+        i = a('inwN3'),
+        j = a('kRwUk25'),
+        k = a('CMcLV');
     const {
         Option: l
     } = i.default;
 
-    function m(a) {
-        return a && a.type && (a.type.isSelectOption || a.type.isSelectOptGroup);
+    function m(_n) {
+        return _n && _n.type && (_n.type.isSelectOption || _n.type.isSelectOptGroup);
     }
-    const n = (a, c) => {
+    const m = (_w, a) => {
             const {
-                prefixCls: o,
-                className: p,
-                popupClassName: q,
-                dropdownClassName: r,
-                children: s,
-                dataSource: t
-            } = u, v = (0, e.default)(s);
-            let w;
-            1 === v.length && (0, k.isValidElement)(v[0]) && !m(v[0]) && ([x] = v);
-            const y = x ? () => x : void 0;
-            let z;
-            z = v.length && m(v[0]) ? s : t ? t.map(u => {
-                if ((0, k.isValidElement)(u))
-                    return u;
-                switch (typeof u) {
+                prefixCls: n,
+                className: o,
+                popupClassName: p,
+                dropdownClassName: q,
+                children: r,
+                dataSource: s
+            } = _w, _t = (0, e.default)(r);
+            let u;
+            1 === _t.length && (0, k.isValidElement)(_t[0]) && !_n(_t[0]) && ([v] = _t);
+            const w = v ? () => v : void 0;
+            let x;
+            x = _t.length && _n(_t[0]) ? r : s ? s.map(_w => {
+                if ((0, k.isValidElement)(_w))
+                    return _w;
+                switch (typeof _w) {
                     case 'string':
                         return g.createElement(l, {
-                            key: u,
-                            value: u
-                        }, u);
+                            key: _w,
+                            value: _w
+                        }, _w);
                     case 'object': {
                         const {
-                            value: A
-                        } = B;
+                            value: y
+                        } = _w;
                         return g.createElement(l, {
-                            key: A,
-                            value: A
-                        }, B.text);
+                            key: y,
+                            value: y
+                        }, _w.text);
                     }
                     default:
                         return;
                 }
             }) : [];
             const {
-                getPrefixCls: A
-            } = g.useContext(h.ConfigContext), B = A('select', o);
+                getPrefixCls: y
+            } = g.useContext(h.ConfigContext), z = y('select', n);
             return g.createElement(i.default, Object.assign({
-                ref: c
-            }, (0, f.default)(u, [
+                ref: a
+            }, (0, f.default)(_w, [
                 'dataSource',
                 'dropdownClassName'
             ]), {
-                prefixCls: B,
-                popupClassName: q || r,
-                className: b(d)(`${ B }-auto-complete`, p),
+                prefixCls: z,
+                popupClassName: p || q,
+                className: _b(d)(`${ z }-auto-complete`, o),
                 mode: i.default.SECRET_COMBOBOX_MODE_DO_NOT_USE
             }, {
-                getInputElement: y
-            }), z);
+                getInputElement: w
+            }), x);
         },
-        o = g.forwardRef(n),
-        p = (0, j.default)(o);
-    o.Option = l, o._InternalPanelDoNotUseOrYouWillBeFired = p;
-    var q = r;
-}), c.register('JS45o', function(b, u) {
-    a(b.exports, 'default', function() {
-        return r;
+        n = g.forwardRef(m),
+        o = (0, j.default)(n);
+    n.Option = l, n._InternalPanelDoNotUseOrYouWillBeFired = o;
+    var p = n;
+}), a.register('Az7iW', function(_b, c) {
+    _w(_b.exports, 'default', function() {
+        return _r;
     });
-    var d = c('8kSQZ'),
-        e = c('IsmrL'),
-        f = c('ExtIT'),
-        g = c('Ly1h3'),
-        h = c('uPP4W'),
-        i = c('h99Nu'),
-        j = c('9a8Pk'),
-        k = c('HlKeV'),
-        l = c('+WQL73'),
-        m = c('zPY9u'),
-        n = c('//+kT'),
-        o = c('MKzy/'),
-        p = c('xooCA');
+    var d = a('0hzx+'),
+        e = a('ulE4q'),
+        f = a('fmVdR'),
+        g = a('inwN3'),
+        h = a('LEQ5w'),
+        i = a('Axq+p'),
+        j = a('nEBHu'),
+        k = a('blUBm'),
+        l = a('66RLp2'),
+        m = a('Rq6L+0'),
+        _n = a('exDBf'),
+        o = a('w1AGN'),
+        p = a('yYQqX');
     let q;
-    var r = a => {
+    var _r = _w => {
         const {
             options: s
-        } = a.condition, [t, u] = h.useState(null == s ? void 0 : s.mode), [v, w] = h.useState(null == s ? void 0 : s.compare);
+        } = _w.condition, [t, u] = h.useState(null == s ? void 0 : s.mode), [v, w] = h.useState(null == s ? void 0 : s.compare);
         if (h.useEffect(() => {
                 u(null == s ? void 0 : s.mode);
             }, [null == s ? void 0 : s.mode]), h.useEffect(() => {
                 w(null == s ? void 0 : s.compare);
             }, [null == s ? void 0 : s.compare]), !s)
             return null;
-        return (0, d.jsxs)(s, {
+        return (0, d.jsxs)(_s, {
             children: [
                 (0, d.jsx)(o.default, {
                     title: `${ j.default.name } Value`,
@@ -1452,8 +1452,8 @@ c.register('nj8vi', function(b, r) {
                         width: '100%'
                     },
                     size: 'large',
-                    onChange: a => {
-                        w(a);
+                    onChange: _w => {
+                        w(_w);
                     },
                     value: v,
                     children: [
@@ -1480,8 +1480,8 @@ c.register('nj8vi', function(b, r) {
                         width: '100%'
                     },
                     size: 'large',
-                    onChange: a => {
-                        u(a);
+                    onChange: _w => {
+                        u(_w);
                     },
                     value: t,
                     children: [
@@ -1508,35 +1508,35 @@ c.register('nj8vi', function(b, r) {
                         height: 50
                     },
                     onClick: () => {
-                        (0, n.default)({
+                        (0, _n.default)({
                             action: k.default.saveModeTypeHiddenConditionOptions,
                             payload: {
-                                key: a.hookKey,
-                                scenario: a.scenarioName,
-                                condition: a.condition.id,
+                                key: _w.hookKey,
+                                scenario: _w.scenarioName,
+                                condition: _w.condition.id,
                                 options: {
                                     mode: t,
                                     compare: v
                                 }
                             }
-                        }), a.close();
+                        }), _w.close();
                     },
                     children: 'Save'
                 })
             ]
         });
     };
-    const s = i.default.div(q || (q = (a => a)``));
-}), c.register('il480', function(b, k) {
-    a(b.exports, 'default', function() {
-        return h;
+    const _s = i.default.div(q || (q = (_w => _w)``));
+}), a.register('UueDK', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('PjB0f'),
-        f = c('bzk6e'),
-        g = c('Wpo21');
-    var h = a => {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('PMl60'),
+        f = a('LbvQU'),
+        g = a('HZZ9R');
+    var _h = _w => {
         const [i, j, k] = (0, e.useBoolean)(!1);
         return (0, d.jsxs)(d.Fragment, {
             children: [
@@ -1550,62 +1550,62 @@ c.register('nj8vi', function(b, r) {
                 (0, d.jsx)(g.default, {
                     visible: i,
                     close: k,
-                    hookKey: a.hookKey,
-                    scenarioName: a.scenarioName
+                    hookKey: _w.hookKey,
+                    scenarioName: _w.scenarioName
                 })
             ]
         });
     };
-}), c.register('Wpo21', function(b, q) {
-    a(b.exports, 'default', function() {
-        return t;
+}), a.register('HZZ9R', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _t;
     });
-    var d = c('8kSQZ'),
-        e = c('ExtIT'),
-        f = c('KV+OV');
-    c('uPP4W');
-    var g = c('9a8Pk'),
-        h = c('vaQAz'),
-        i = c('h99Nu'),
-        j = c('bzk6e'),
-        k = c('gSUVO'),
-        l = c('//+kT'),
-        m = c('HlKeV'),
-        n = c('zPY9u');
-    let o, p, q, r, s = a => a;
-    var t = a => {
+    var d = a('0hzx+'),
+        e = a('fmVdR'),
+        f = a('sgToH');
+    a('LEQ5w');
+    var g = a('nEBHu'),
+        h = a('aPprg'),
+        i = a('Axq+p'),
+        j = a('LbvQU'),
+        k = a('b5kvC'),
+        l = a('exDBf'),
+        m = a('blUBm'),
+        n = a('Rq6L+0');
+    let o, p, q, r, s = _w => _w;
+    var _t = _w => {
         const u = u => {
             (0, l.default)({
                 action: m.default.newHiddenCondition,
                 payload: {
-                    key: a.hookKey,
-                    scenario: a.scenarioName,
+                    key: _w.hookKey,
+                    scenario: _w.scenarioName,
                     conditionType: u
                 }
-            }), a.close();
+            }), _w.close();
         };
         return (0, d.jsx)(f.default, {
-            open: a.visible,
-            onClose: a.close,
+            open: _w.visible,
+            onClose: _w.close,
             width: g.default.drawer.widths.default,
             placement: g.default.drawer.placement,
             closable: !0,
             children: (0, d.jsxs)(h.default, {
                 children: [
-                    (0, d.jsx)(u, {
+                    (0, d.jsx)(_u, {
                         children: 'New Condition'
                     }),
-                    (0, d.jsx)(v, {
+                    (0, d.jsx)(_v, {
                         children: 'Select a condition type'
                     }),
                     (0, d.jsx)(e.default, {}),
                     (0, d.jsxs)(j.HookCardButton, {
                         onClick: () => u(n.HiddenConditionType.hookValue),
                         children: [
-                            (0, d.jsx)(w, {
+                            (0, d.jsx)(_w, {
                                 children: 'Hook Value'
                             }),
-                            (0, d.jsx)(x, {
+                            (0, d.jsx)(_x, {
                                 children: 'Hide depending on the value of another hook'
                             })
                         ]
@@ -1616,10 +1616,10 @@ c.register('nj8vi', function(b, r) {
                             marginTop: 10
                         },
                         children: [
-                            (0, d.jsx)(w, {
+                            (0, d.jsx)(_w, {
                                 children: 'Mode'
                             }),
-                            (0, d.jsx)(x, {
+                            (0, d.jsx)(_x, {
                                 children: 'Hide depending on the mode (live game or assignment)'
                             })
                         ]
@@ -1628,45 +1628,45 @@ c.register('nj8vi', function(b, r) {
             })
         });
     };
-    const u = i.default.div(o || (o = s`
+    const _u = i.default.div(o || (o = s`
   font-size: 28px;
   font-weight: ${ 0 };
 `), k.FontWeights.Bold),
-        v = i.default.div(p || (p = s`
+        _v = i.default.div(p || (p = s`
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
 `)),
-        w = i.default.div(q || (q = s``)),
-        x = i.default.div(r || (r = s`
+        _w = i.default.div(q || (q = s``)),
+        _x = i.default.div(r || (r = s`
   font-size: 15px;
   font-weight: ${ 0 };
   margin-top: 2px;
   color: rgba(0, 0, 0, 0.8);
 `), k.FontWeights.Normal);
-}), c.register('Y8OPu', function(b, q) {
-    a(b.exports, 'default', function() {
-        return n;
+}), a.register('Mb8oX', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('8kSQZ'),
-        e = c('Vlfxs');
-    c('uPP4W');
-    var f = c('h99Nu'),
-        g = c('PjB0f'),
-        h = c('gXcsF'),
-        i = c('bzk6e'),
-        j = c('XoZxl'),
-        k = c('m6IZZ'),
-        l = c('4vzAU');
+    var d = a('0hzx+'),
+        e = a('2x11J');
+    a('LEQ5w');
+    var f = a('Axq+p'),
+        g = a('PMl60'),
+        h = a('2AWDu'),
+        i = a('LbvQU'),
+        j = a('gs/5D'),
+        k = a('ZA/7N'),
+        l = a('lQwMP');
     let m;
-    var n = (0, e.observer)(a => {
-        const o = (0, j.default)(a.hookKey),
+    var _n = (0, e.observer)(_w => {
+        const o = (0, j.default)(_w.hookKey),
             [p, q, r] = (0, g.useBoolean)(!1);
         if (!o)
             return null;
         const s = o.options;
         return (0, d.jsxs)(d.Fragment, {
             children: [
-                (0, d.jsx)(o, {
+                (0, d.jsx)(_o, {
                     children: s.options.length <= h.default.selectBox.maxOptions ? (0, d.jsx)(i.HookNewCardButton, {
                         onClick: q,
                         style: {
@@ -1679,47 +1679,47 @@ c.register('nj8vi', function(b, r) {
                     name: o,
                     index: p,
                     numberOfItems: s.options.length,
-                    hookKey: a.hookKey,
+                    hookKey: _w.hookKey,
                     isDefaultOption: s.defaultOption === o
-                }, `hook-${ a.hookKey }-${ o }`)),
+                }, `hook-${ _w.hookKey }-${ o }`)),
                 (0, d.jsx)(k.default, {
-                    hookKey: a.hookKey,
+                    hookKey: _w.hookKey,
                     visible: p,
                     close: r
                 })
             ]
         });
     });
-    const o = f.default.div.attrs({
+    const _o = f.default.div.attrs({
         className: 'maxWidth'
-    })(m || (m = (a => a)``));
-}), c.register('m6IZZ', function(b, q) {
-    a(b.exports, 'default', function() {
-        return n;
+    })(m || (m = (_w => _w)``));
+}), a.register('ZA/7N', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('8kSQZ'),
-        e = c('IsmrL'),
-        f = c('KV+OV'),
-        g = c('c6x8w'),
-        h = c('uPP4W'),
-        i = c('9a8Pk'),
-        j = c('HlKeV'),
-        k = c('//+kT'),
-        l = c('vaQAz'),
-        m = c('xooCA');
-    var n = a => {
+    var d = a('0hzx+'),
+        e = a('ulE4q'),
+        f = a('sgToH'),
+        g = a('ewwAh'),
+        h = a('LEQ5w'),
+        i = a('nEBHu'),
+        j = a('blUBm'),
+        k = a('exDBf'),
+        l = a('aPprg'),
+        m = a('yYQqX');
+    var _n = _w => {
         const [o, p] = h.useState(''), q = () => {
             o.trim().length && ((0, k.default)({
                 action: j.default.newOption,
                 payload: {
-                    key: a.hookKey,
+                    key: _w.hookKey,
                     option: o.trim()
                 }
-            }), a.close(), p(''));
+            }), _w.close(), p(''));
         };
         return (0, d.jsxs)(f.default, {
-            open: a.visible,
-            onClose: a.close,
+            open: _w.visible,
+            onClose: _w.close,
             placement: i.default.drawer.placement,
             width: i.default.drawer.widths.default,
             closable: !0,
@@ -1731,8 +1731,8 @@ c.register('nj8vi', function(b, r) {
                         }),
                         (0, d.jsx)(g.default, {
                             value: o,
-                            onChange: a => {
-                                p(a.target.value);
+                            onChange: _w => {
+                                p(_w.target.value);
                             },
                             size: 'large',
                             placeholder: 'Option name here...',
@@ -1755,29 +1755,29 @@ c.register('nj8vi', function(b, r) {
             ]
         });
     };
-}), c.register('4vzAU', function(b, r) {
-    a(b.exports, 'default', function() {
-        return o;
+}), a.register('lQwMP', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _o;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('bzk6e'),
-        f = c('h99Nu'),
-        g = c('IsmrL'),
-        h = c('M1Vx4'),
-        i = c('u3X1v'),
-        j = c('j/N3t'),
-        k = c('//+kT'),
-        l = c('HlKeV'),
-        m = c('3I8Ro0');
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('LbvQU'),
+        f = a('Axq+p'),
+        g = a('ulE4q'),
+        h = a('/rAT0'),
+        i = a('WfOD7'),
+        j = a('LHeQv'),
+        k = a('exDBf'),
+        l = a('blUBm'),
+        m = a('fNsdX');
     let n;
-    var o = a => {
+    var _o = _w => {
         const p = p => {
                 (0, k.default)({
                     action: l.default.moveOption,
                     payload: {
-                        key: a.hookKey,
-                        option: a.name,
+                        key: _w.hookKey,
+                        option: _w.name,
                         direction: p
                     }
                 });
@@ -1786,8 +1786,8 @@ c.register('nj8vi', function(b, r) {
                 (0, k.default)({
                     action: l.default.removeOption,
                     payload: {
-                        key: a.hookKey,
-                        option: a.name
+                        key: _w.hookKey,
+                        option: _w.name
                     }
                 });
             },
@@ -1795,8 +1795,8 @@ c.register('nj8vi', function(b, r) {
                 (0, k.default)({
                     action: l.default.makeOptionDefault,
                     payload: {
-                        key: a.hookKey,
-                        option: a.name
+                        key: _w.hookKey,
+                        option: _w.name
                     }
                 });
             },
@@ -1804,8 +1804,8 @@ c.register('nj8vi', function(b, r) {
                 (0, k.default)({
                     action: l.default.removeDefaultOption,
                     payload: {
-                        key: a.hookKey,
-                        option: a.name
+                        key: _w.hookKey,
+                        option: _w.name
                     }
                 });
             };
@@ -1814,26 +1814,26 @@ c.register('nj8vi', function(b, r) {
             style: {
                 marginBottom: 10
             },
-            children: (0, d.jsxs)(p, {
+            children: (0, d.jsxs)(_p, {
                 children: [
                     (0, d.jsx)('div', {
-                        children: a.name
+                        children: _w.name
                     }),
                     (0, d.jsx)(h.default, {
                         overlay: (0, d.jsxs)(i.default, {
                             children: [
-                                a.isDefaultOption ? (0, d.jsx)(i.default.Item, {
+                                _w.isDefaultOption ? (0, d.jsx)(i.default.Item, {
                                     onClick: (0, m.default)(s),
                                     children: 'Remove As Default Option'
                                 }, 'remove-as-default-option') : (0, d.jsx)(i.default.Item, {
                                     onClick: (0, m.default)(r),
                                     children: 'Make Default Option'
                                 }, 'make-default-option'),
-                                0 !== a.index ? (0, d.jsx)(i.default.Item, {
+                                0 !== _w.index ? (0, d.jsx)(i.default.Item, {
                                     onClick: (0, m.default)(() => p('up')),
                                     children: 'Move Up'
                                 }, 'move-up') : null,
-                                a.index !== a.numberOfItems - 1 ? (0, d.jsx)(i.default.Item, {
+                                _w.index !== _w.numberOfItems - 1 ? (0, d.jsx)(i.default.Item, {
                                     onClick: (0, m.default)(() => p('down')),
                                     children: 'Move Down'
                                 }, 'move-down') : null,
@@ -1853,30 +1853,30 @@ c.register('nj8vi', function(b, r) {
             })
         });
     };
-    const p = f.default.div.attrs({
+    const _p = f.default.div.attrs({
         className: 'maxWidth flex between vc'
-    })(n || (n = (a => a)``));
-}), c.register('VYFfl', function(b, v) {
-    a(b.exports, 'default', function() {
-        return s;
+    })(n || (n = (_w => _w)``));
+}), a.register('pWC1H', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _s;
     });
-    var d = c('8kSQZ'),
-        e = c('Vlfxs'),
-        f = c('uPP4W'),
-        g = c('9a8Pk'),
-        h = c('xooCA'),
-        i = c('h99Nu'),
-        j = c('c6x8w'),
-        k = c('XoZxl'),
-        l = c('//+kT'),
-        m = c('HlKeV'),
-        n = c('gXcsF'),
-        o = c('uzjvO4'),
-        p = c('ciZvT');
+    var d = a('0hzx+'),
+        e = a('2x11J'),
+        f = a('LEQ5w'),
+        g = a('nEBHu'),
+        h = a('yYQqX'),
+        i = a('Axq+p'),
+        j = a('ewwAh'),
+        k = a('gs/5D'),
+        l = a('exDBf'),
+        m = a('blUBm'),
+        n = a('2AWDu'),
+        o = a('QdGLB'),
+        p = a('KalhB');
     let q;
     const r = g.default.name.toLowerCase();
-    var s = (0, e.observer)(a => {
-        const t = (0, k.default)(a.hookKey),
+    var _s = (0, e.observer)(_w => {
+        const t = (0, k.default)(_w.hookKey),
             [u, v] = f.useState(null == t ? void 0 : t.displayName),
             [w, x] = f.useState(null == t ? void 0 : t.displayDescription);
         f.useEffect(() => {
@@ -1884,10 +1884,10 @@ c.register('nj8vi', function(b, r) {
         }, [null == t ? void 0 : t.displayName]), f.useEffect(() => {
             x(null == t ? void 0 : t.displayDescription);
         }, [null == t ? void 0 : t.displayDescription]);
-        return t ? (0, d.jsxs)(t, {
+        return t ? (0, d.jsxs)(_t, {
             children: [
                 t.type === o.HookType.number ? (0, d.jsx)(p.default, {
-                    hookKey: a.hookKey,
+                    hookKey: _w.hookKey,
                     options: t.options
                 }) : null,
                 (0, d.jsx)(h.HookFormInputLabel, {
@@ -1908,14 +1908,14 @@ c.register('nj8vi', function(b, r) {
                     size: 'large',
                     placeholder: t.key,
                     value: u,
-                    onChange: a => {
-                        v(a.target.value);
+                    onChange: _w => {
+                        v(_w.target.value);
                     },
                     onBlur: () => {
                         (0, l.default)({
                             action: m.default.setNameOrDescription,
                             payload: {
-                                key: a.hookKey,
+                                key: _w.hookKey,
                                 value: u,
                                 property: 'displayName'
                             }
@@ -1938,14 +1938,14 @@ c.register('nj8vi', function(b, r) {
                     size: 'large',
                     placeholder: 'Description here...',
                     value: w,
-                    onChange: a => {
-                        x(a.target.value);
+                    onChange: _w => {
+                        x(_w.target.value);
                     },
                     onBlur: () => {
                         (0, l.default)({
                             action: m.default.setNameOrDescription,
                             payload: {
-                                key: a.hookKey,
+                                key: _w.hookKey,
                                 value: w,
                                 property: 'displayDescription'
                             }
@@ -1956,48 +1956,48 @@ c.register('nj8vi', function(b, r) {
             ]
         }) : null;
     });
-    const t = i.default.div(q || (q = (a => a)``));
-}), c.register('ciZvT', function(b, o) {
-    a(b.exports, 'default', function() {
-        return l;
+    const _t = i.default.div(q || (q = (_w => _w)``));
+}), a.register('KalhB', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('xooCA'),
-        g = c('//+kT'),
-        h = c('HlKeV'),
-        i = c('4/f+U'),
-        j = c('ntvHp');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('yYQqX'),
+        g = a('exDBf'),
+        h = a('blUBm'),
+        i = a('4iV4e'),
+        j = a('rw8oD0');
     const k = {
         width: '100%'
     };
-    var l = a => {
+    var _l = _w => {
         var m, n, o, p;
         const [q, r] = e.useState({
-            defaultValue: a.options.defaultValue,
-            min: a.options.min,
-            max: a.options.max,
-            step: a.options.step
+            defaultValue: _w.options.defaultValue,
+            min: _w.options.min,
+            max: _w.options.max,
+            step: _w.options.step
         });
         e.useEffect(() => {
             r({
-                defaultValue: a.options.defaultValue,
-                min: a.options.min,
-                max: a.options.max,
-                step: a.options.step
+                defaultValue: _w.options.defaultValue,
+                min: _w.options.min,
+                max: _w.options.max,
+                step: _w.options.step
             });
         }, [
-            null === (m = a.options) || void 0 === m ? void 0 : m.defaultValue,
-            null === (n = a.options) || void 0 === n ? void 0 : n.min,
-            null === (o = a.options) || void 0 === o ? void 0 : o.max,
-            null === (p = a.options) || void 0 === p ? void 0 : p.step
+            null === (m = _w.options) || void 0 === m ? void 0 : m.defaultValue,
+            null === (n = _w.options) || void 0 === n ? void 0 : n.min,
+            null === (o = _w.options) || void 0 === o ? void 0 : o.max,
+            null === (p = _w.options) || void 0 === p ? void 0 : p.step
         ]);
         const s = m => n => {
             ((m, n) => {
                 (0, g.default)({
                     action: h.default.changeNumberOption,
                     payload: {
-                        hookKey: a.hookKey,
+                        hookKey: _w.hookKey,
                         key: m,
                         value: n
                     }
@@ -2081,39 +2081,39 @@ c.register('nj8vi', function(b, r) {
             ]
         });
     };
-}), c.register('9QZbK', function(b, y) {
-    a(b.exports, 'default', function() {
-        return v;
+}), a.register('YzWnC', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _v;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('IsmrL'),
-        g = c('ExtIT'),
-        h = c('KV+OV'),
-        i = c('c6x8w'),
-        j = c('Ly1h3'),
-        k = c('9a8Pk'),
-        l = c('vaQAz'),
-        m = c('h99Nu'),
-        n = c('uzjvO4'),
-        o = c('gSUVO'),
-        p = c('//+kT'),
-        q = c('HlKeV'),
-        r = c('gXcsF'),
-        s = c('xooCA');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('ulE4q'),
+        g = a('fmVdR'),
+        h = a('sgToH'),
+        i = a('ewwAh'),
+        j = a('inwN3'),
+        k = a('nEBHu'),
+        l = a('aPprg'),
+        m = a('Axq+p'),
+        n = a('QdGLB'),
+        o = a('b5kvC'),
+        p = a('exDBf'),
+        q = a('blUBm'),
+        r = a('2AWDu'),
+        s = a('yYQqX');
     let t;
     const u = n.HookType.selectBox;
-    var v = a => {
+    var _v = _w => {
         const [w, x] = e.useState(''), [y, z] = e.useState(u);
         return (0, d.jsx)(h.default, {
-            open: a.visible,
-            onClose: a.close,
+            open: _w.visible,
+            onClose: _w.close,
             placement: k.default.drawer.placement,
             width: k.default.drawer.widths.default,
             closable: !0,
             children: (0, d.jsxs)(l.default, {
                 children: [
-                    (0, d.jsxs)(w, {
+                    (0, d.jsxs)(_w, {
                         children: [
                             'New ',
                             k.default.name
@@ -2132,8 +2132,8 @@ c.register('nj8vi', function(b, r) {
                             width: '100%'
                         },
                         placeholder: 'Name here...',
-                        onChange: a => {
-                            x(a.target.value);
+                        onChange: _w => {
+                            x(_w.target.value);
                         },
                         value: w,
                         maxLength: r.default.maxKeyLength
@@ -2155,8 +2155,8 @@ c.register('nj8vi', function(b, r) {
                             width: '100%'
                         },
                         value: y,
-                        onChange: a => {
-                            z(a);
+                        onChange: _w => {
+                            z(_w);
                         },
                         children: [
                             (0, d.jsx)(j.default.Option, {
@@ -2192,7 +2192,7 @@ c.register('nj8vi', function(b, r) {
                                     key: w,
                                     type: y
                                 }
-                            }), x(''), z(u), a.close());
+                            }), x(''), z(u), _w.close());
                         },
                         children: [
                             'Create ',
@@ -2203,42 +2203,42 @@ c.register('nj8vi', function(b, r) {
             })
         });
     };
-    const w = m.default.div(t || (t = (a => a)`
+    const _w = m.default.div(t || (t = (_w => _w)`
   font-size: 28px;
   font-weight: ${ 0 };
 `), o.FontWeights.UltraBold);
-}), c.register('EG1bC', function(b, z) {
-    a(b.exports, 'default', function() {
-        return v;
+}), a.register('tA5HU', function(b, c) {
+    _w(b.exports, 'default', function() {
+        return _v;
     });
-    var d = c('8kSQZ'),
-        e = c('IsmrL'),
-        f = c('Vlfxs'),
-        g = c('uPP4W'),
-        h = c('h99Nu'),
-        i = c('RxXGC'),
-        j = c('lZ+7Q'),
-        k = c('S/jX4'),
-        l = c('9a8Pk'),
-        m = c('sPSvg'),
-        n = c('7Sbqr'),
-        o = c('bMFDV'),
-        p = c('am7L5'),
-        q = c('DM38W'),
-        r = c('7mlcg'),
-        s = c('+WQL73'),
-        t = c('k6F40');
+    var d = a('0hzx+'),
+        e = a('ulE4q'),
+        f = a('2x11J'),
+        g = a('LEQ5w'),
+        h = a('Axq+p'),
+        i = a('bkqTR0'),
+        j = a('ED5Qu0'),
+        k = a('vShe/'),
+        l = a('nEBHu'),
+        m = a('x7BBh'),
+        n = a('iWivW'),
+        o = a('RxX2a'),
+        p = a('bHGrl'),
+        q = a('Quxw3'),
+        r = a('yotix'),
+        s = a('66RLp2'),
+        t = a('GqzrW');
     let u;
-    var v = (0, f.observer)(() => {
-        const w = g.useRef(),
+    var _v = (0, f.observer)(() => {
+        const _w = g.useRef(),
             x = (0, r.default)(),
             {
                 me: {
                     preferences: y
                 }
             } = (0, p.default)(),
-            z = w => {
-                y.startGameWithMode = w;
+            z = _w => {
+                y.startGameWithMode = _w;
             };
         (0, t.useWillUnmount)(() => {
             z(s.MapModeType.liveGame);
@@ -2248,16 +2248,16 @@ c.register('nj8vi', function(b, r) {
         const A = () => {
             (0, q.default)(m.default.startGame, {
                 ownerAsSpectator: n.default.session.ownerRole === o.default.spectator,
-                hookFormState: w.current,
+                hookFormState: _w.current,
                 modeType: n.default.me.preferences.startGameWithMode
             });
         };
-        return (0, d.jsx)(w, {
+        return (0, d.jsx)(_w, {
             children: (0, d.jsx)(i.default, {
                 hooks: x,
                 modeType: y.startGameWithMode,
                 location: j.HookFormLocation.editor,
-                footer: w => 0 === w ? (0, d.jsxs)('div', {
+                footer: _w => 0 === _w ? (0, d.jsxs)('div', {
                     style: {
                         fontSize: 16
                     },
@@ -2293,50 +2293,50 @@ c.register('nj8vi', function(b, r) {
                         })
                     ]
                 }),
-                onStateChange: x => w.current = x
+                onStateChange: x => _w.current = x
             })
         });
     });
-    const w = h.default.div(u || (u = (a => a)`
+    const _w = h.default.div(u || (u = (_i => _i)`
   padding: 2px 10px 40px 10px;
   color: ${ 0 };
 `), k.default.Black);
-}), c.register('3iZfA', function(b, d) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('31UsN', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('uPP4W'),
-        e = c('XiR4U');
-    var f = d.createContext(e.default);
-}), c.register('2gkXu26', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var d = a('LEQ5w'),
+        e = a('oKonb');
+    var _f = d.createContext(e.default);
+}), a.register('Kc6XZ23', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         sideMargin: 50,
         optionWidth: 200
     };
-}), c.register('JegR3', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('pMmde1', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('WKaIG'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('+bIFH'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'DownOutlined';
-    var i = e.forwardRef(h);
-}), c.register('WKaIG', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('+bIFH', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -2353,12 +2353,12 @@ c.register('nj8vi', function(b, r) {
         name: 'down',
         theme: 'outlined'
     };
-}), c.register('SprP3', function(b, c) {
+}), a.register('y4x7Q', function(b, c) {
     let d;
     var e;
     let f;
     var g;
-    a(b.exports, 'LocalStorageNames', function() {
+    e(b.exports, 'LocalStorageNames', function() {
         return f;
     }), (e = d || (d = {})).time = 'time', e.target = 'target', e.race = 'race', e.allIn = 'allIn', (g = f || (f = {})).language = 'gimkit-3.0-game-language', g.currency = 'gimkit-game-currency', g.music = 'gimkit-music-track', g.allowGoogleTranslate = 'gimkit-google-translate-allowed', g.editorDefaultLanguage = 'gimkit-editor-v4-default-language', g.editorDefaultGradeLevel = 'gimkit-editor-v4-default-grade-level', g.editorDefaultSubject = 'gimkit-editor-v4-default-subject', g.cosmosBlockedInGame = 'gimkit-cosmos-blocked-in-game', g.hookSavedOptions = 'gimkit-hook-saved-options';
 });

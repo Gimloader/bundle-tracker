@@ -1,111 +1,111 @@
-function a(a, b, q, r) {
-    Object.defineProperty(a, b, {
-        get: q,
-        set: r,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('F9k3r', function(q, r) {
-    var c;
-    c = q.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('jD+rP', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(q.exports, 'default', function() {
-        return n;
+    }), _p(b.exports, 'default', function() {
+        return _o;
     });
-    var d = b('8kSQZ'),
-        e = b('uPP4W'),
-        f = b('cR5QE'),
-        g = b('iHElh'),
-        h = b('PjB0f'),
-        i = b('I9mdQ'),
-        j = b('q721a'),
-        k = b('0R8EW'),
-        l = b('k0s2g17'),
-        m = b('CJCMN4');
-    var n = () => {
+    var e = a('0hzx+'),
+        f = a('LEQ5w'),
+        g = a('YRlpt'),
+        h = a('6CIVV'),
+        i = a('PMl60'),
+        j = a('Pkvp4'),
+        k = a('gs4MT'),
+        l = a('70AkF'),
+        m = a('jzxyj10'),
+        n = a('Pq0g9');
+    var _o = () => {
         const {
-            id: o
-        } = (0, k.useParams)();
-        return e.useEffect(() => {
-            (0, h.request)({
+            id: _p
+        } = (0, l.useParams)();
+        return f.useEffect(() => {
+            (0, i.request)({
                 url: '/api/bulk/join',
                 method: 'post',
                 data: {
-                    id: o
+                    id: _p
                 },
-                success: o => {
-                    var p;
-                    const q = (0, h.isUpgraded)(),
-                        r = String(null === (p = (0, h.getUser)()) || void 0 === p ? void 0 : p.type),
-                        s = () => {
-                            var t;
-                            q || (0, m.AnalyticsTrackEvent)({
+                success: _p => {
+                    var q;
+                    const r = (0, i.isUpgraded)(),
+                        s = String(null === (q = (0, i.getUser)()) || void 0 === q ? void 0 : q.type),
+                        t = () => {
+                            var u;
+                            r || (0, n.AnalyticsTrackEvent)({
                                 event: 'upgrade',
                                 properties: {
-                                    plan: null === (t = (0, h.getUser)()) || void 0 === t ? void 0 : t.type,
+                                    plan: null === (u = (0, i.getUser)()) || void 0 === u ? void 0 : u.type,
                                     source: 'group'
                                 },
                                 forcePostHog: !0
-                            }), (0, m.AnalyticsTrackEvent)({
+                            }), (0, n.AnalyticsTrackEvent)({
                                 event: 'group_join',
                                 properties: {
-                                    currentPlan: r
+                                    currentPlan: s
                                 },
                                 forcePostHog: !0
-                            }), (0, l.NavigateTo)(j.DASHBOARD), f.default.success({
+                            }), (0, m.NavigateTo)(k.DASHBOARD), g.default.success({
                                 title: 'Joined Group License!',
-                                content: o && o.message ? o.message : ''
+                                content: _p && _p.message ? _p.message : ''
                             });
                         };
-                    (0, i.default)({
-                        onSuccess: s,
-                        onError: s
+                    (0, j.default)({
+                        onSuccess: t,
+                        onError: t
                     });
                 },
-                error: o => {
-                    (0, l.NavigateTo)(j.DASHBOARD), o && o.message && o.message.text ? f.default.error({
+                error: _p => {
+                    (0, m.NavigateTo)(k.DASHBOARD), _p && _p.message && _p.message.text ? g.default.error({
                         title: 'Error joining group',
-                        content: o.message.text
-                    }) : f.default.error({
+                        content: _p.message.text
+                    }) : g.default.error({
                         title: 'Error joining subscription',
                         content: 'Please try again'
                     });
                 }
             });
-        }, []), (0, d.jsx)('div', {
+        }, []), (0, e.jsx)('div', {
             className: 'maxWidth maxHeight flex hc vc',
-            children: (0, d.jsx)(g.default, {
+            children: (0, e.jsx)(h.default, {
                 size: 'large'
             })
         });
     };
-}), b.register('k0s2g17', function(i, j) {
-    a(i.exports, 'NavigateTo', function() {
-        return d;
+}), a.register('jzxyj10', function(b, c) {
+    e(b.exports, 'NavigateTo', function() {
+        return _e;
     });
-    var c = b('Cr/BM');
-    const d = a => {
-        c.history.push(a);
+    var d = a('oBJ9G');
+    const _e = e => {
+        d.history.push(e);
     };
-}), b.register('CJCMN4', function(i, j) {
-    a(i.exports, 'AnalyticsTrackEvent', function() {
-        return g;
+}), a.register('Pq0g9', function(b, c) {
+    e(b.exports, 'AnalyticsTrackEvent', function() {
+        return _h;
     });
-    var c = b('pvZv3'),
-        d = b('PjB0f'),
-        e = b('61G7M'),
-        f = b('OW/xn');
-    const g = a => {
-        var h, i, j;
-        if ((window.gtag && !(null === (h = a.blockedSource) || void 0 === h ? void 0 : h.google) && window.gtag('event', a.event, a.properties), e.AnalyticsFlags.educatorOnly) && (null === (j = (0, d.getUser)()) || void 0 === j ? void 0 : j.accountType) !== c.default.educator)
+    var d = a('e7pFf'),
+        e = a('PMl60'),
+        f = a('Td6aM'),
+        g = a('J3ZQI');
+    const _h = e => {
+        var i, j, k;
+        if ((window.gtag && !(null === (i = e.blockedSource) || void 0 === i ? void 0 : i.google) && window.gtag('event', e.event, e.properties), f.AnalyticsFlags.educatorOnly) && (null === (k = (0, e.getUser)()) || void 0 === k ? void 0 : k.accountType) !== d.default.educator)
             return;
-        (null === (i = a.blockedSource) || void 0 === i ? void 0 : i.posthog) || (0, f.TrackPostHogEvent)({
-            event: a.event,
-            properties: a.properties,
-            force: a.forcePostHog
+        (null === (j = e.blockedSource) || void 0 === j ? void 0 : j.posthog) || (0, g.TrackPostHogEvent)({
+            event: e.event,
+            properties: e.properties,
+            force: e.forcePostHog
         });
     };
 });

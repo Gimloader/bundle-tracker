@@ -1,35 +1,35 @@
-function a(a, b, c, r) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: r,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('G2ekc', function(b, r) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('Bx8X5', function(b, c) {
     var d;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(b.exports, 'default', function() {
-        return k;
+    }), e(b.exports, 'default', function() {
+        return _k;
     });
-    var e = c('8kSQZ');
-    c('uPP4W');
-    var f = c('5pxna'),
-        g = c('5nJMd26'),
-        h = c('60KV4'),
-        i = c('fUu8s'),
-        j = c('Xj2uw');
-    var k = a => {
+    var e = a('0hzx+');
+    a('LEQ5w');
+    var f = a('Yz2Bk'),
+        g = a('cvto726'),
+        h = a('CGys7'),
+        i = a('xG58X'),
+        j = a('wT7vQ');
+    var _k = e => {
         const {
             data: l
-        } = m;
+        } = e;
         return (0, e.jsxs)(g.default, {
             className: 'maxWidth',
             direction: 'vertical',
@@ -40,7 +40,7 @@ c.register('G2ekc', function(b, r) {
                 }),
                 (0, e.jsx)(h.default, {
                     lastPublish: l.lastPublish,
-                    refetch: m.refetch
+                    refetch: e.refetch
                 }),
                 (0, e.jsx)(i.default, {
                     total: l.plays.total,
@@ -49,25 +49,25 @@ c.register('G2ekc', function(b, r) {
                 }),
                 (0, e.jsx)(j.default, {
                     id: l._id,
-                    close: m.close
+                    close: e.close
                 })
             ]
         });
     };
-}), c.register('5pxna', function(r, d) {
-    a(r.exports, 'default', function() {
-        return l;
+}), a.register('Yz2Bk', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('IsmrL'),
-        f = c('c6x8w'),
-        g = c('jrTkz0'),
-        h = c('UzdPH'),
-        i = c('PjB0f'),
-        j = c('SlNZ027'),
-        k = c('n5LnU');
-    var l = a => {
-        const m = `${ (0, i.getDomain)() }/creative/map/${ a.id }`;
+    var d = a('0hzx+'),
+        e = a('ulE4q'),
+        f = a('ewwAh'),
+        g = a('MSsQO'),
+        h = a('j2ADs'),
+        i = a('PMl60'),
+        j = a('jlX4s16'),
+        k = a('kkK6w');
+    var _l = e => {
+        const m = `${ (0, i.getDomain)() }/creative/map/${ e.id }`;
         return (0, d.jsxs)(k.Container, {
             children: [
                 (0, d.jsxs)('div', {
@@ -97,7 +97,7 @@ c.register('G2ekc', function(b, r) {
                         (0, d.jsx)(e.default, {
                             type: 'primary',
                             onClick: () => {
-                                b(j)(m), g.default.success('Link copied to clipboard!');
+                                _b(j)(m), g.default.success('Link copied to clipboard!');
                             },
                             style: {
                                 marginLeft: 10
@@ -109,52 +109,52 @@ c.register('G2ekc', function(b, r) {
             ]
         });
     };
-}), c.register('n5LnU', function(b, r) {
-    a(b.exports, 'Container', function() {
-        return i;
-    }), a(b.exports, 'Title', function() {
-        return j;
+}), a.register('kkK6w', function(_b, c) {
+    e(_b.exports, 'Container', function() {
+        return _i;
+    }), e(_b.exports, 'Title', function() {
+        return _j;
     });
-    var d = c('8kSQZ'),
-        e = c('UzdPH'),
-        f = c('h99Nu'),
-        g = c('gSUVO');
+    var d = a('0hzx+'),
+        e = a('j2ADs'),
+        f = a('Axq+p'),
+        g = a('b5kvC');
     let h;
-    const i = f.default.div.attrs({
+    const _i = f.default.div.attrs({
             className: 'maxWidth'
-        })(h || (h = (a => a)`
+        })(h || (h = (e => e)`
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   border-radius: 8px;
 `)),
-        j = a => (0, d.jsx)(e.default.Title, {
+        _j = e => (0, d.jsx)(e.default.Title, {
             style: {
                 fontFamily: g.Fonts.FugazOne,
                 textTransform: 'uppercase',
                 marginBottom: '0.2em'
             },
             level: 3,
-            children: a.children
+            children: e.children
         });
-}), c.register('60KV4', function(r, s) {
-    a(r.exports, 'default', function() {
-        return p;
+}), a.register('CGys7', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _p;
     });
-    var d = c('8kSQZ'),
-        e = c('IsmrL'),
-        f = c('cR5QE'),
-        g = c('UzdPH');
-    c('uPP4W');
-    var h = c('2MCaL'),
-        i = c('iYEuk12'),
-        j = c('S/jX4'),
-        k = c('n5LnU'),
-        l = c('PjB0f'),
-        m = c('uVDHR'),
-        n = c('DM38W'),
-        o = c('sPSvg');
-    var p = a => {
-        const [q, r, s] = (0, l.useBoolean)(!1), t = b(h).unix(a.lastPublish);
+    var d = a('0hzx+'),
+        e = a('ulE4q'),
+        f = a('YRlpt'),
+        g = a('j2ADs');
+    a('LEQ5w');
+    var h = a('ECzOP'),
+        i = a('2HvvA11'),
+        j = a('vShe/'),
+        k = a('kkK6w'),
+        l = a('PMl60'),
+        m = a('w0a3U'),
+        n = a('Quxw3'),
+        o = a('x7BBh');
+    var _p = e => {
+        const [q, r, s] = (0, l.useBoolean)(!1), t = _b(h).unix(e.lastPublish);
         return (0, d.jsxs)(k.Container, {
             children: [
                 (0, d.jsxs)('div', {
@@ -196,11 +196,11 @@ c.register('G2ekc', function(b, r) {
                                         f.default.success({
                                             title: 'Changes published!',
                                             content: 'Players will now experience the latest version of your map!'
-                                        }), a.refetch();
+                                        }), e.refetch();
                                     },
-                                    error: a => {
+                                    error: e => {
                                         (0, l.throwMessageError)({
-                                            e: a,
+                                            e: e,
                                             default: {
                                                 title: 'Error publishing changes',
                                                 content: 'Please try again.'
@@ -250,19 +250,19 @@ c.register('G2ekc', function(b, r) {
             ]
         });
     };
-}), c.register('fUu8s', function(b, l) {
-    a(b.exports, 'default', function() {
-        return l;
+}), a.register('xG58X', function(_b, c) {
+    e(_b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('5nJMd26'),
-        f = c('UzdPH');
-    c('uPP4W');
-    var g = c('gSUVO'),
-        h = c('lmfrI'),
-        i = c('PjB0f'),
-        j = c('n5LnU');
-    const k = a => (0, d.jsxs)('div', {
+    var d = a('0hzx+'),
+        e = a('cvto726'),
+        f = a('j2ADs');
+    a('LEQ5w');
+    var g = a('b5kvC'),
+        h = a('sHRDd'),
+        i = a('PMl60'),
+        j = a('kkK6w');
+    const k = e => (0, d.jsxs)('div', {
         className: 'maxWidth flex-column flex-center',
         style: {
             padding: 20,
@@ -280,18 +280,18 @@ c.register('G2ekc', function(b, r) {
                     fontSize: 14,
                     marginBottom: 8
                 },
-                children: a.label
+                children: e.label
             }),
             (0, d.jsx)('div', {
                 style: {
                     fontSize: 32,
                     fontWeight: g.FontWeights.Black
                 },
-                children: (0, i.numberWithCommas)(a.value)
+                children: (0, i.numberWithCommas)(e.value)
             })
         ]
     });
-    var l = a => (0, d.jsxs)(j.Container, {
+    var _l = e => (0, d.jsxs)(j.Container, {
         children: [
             (0, d.jsxs)('div', {
                 children: [
@@ -313,32 +313,32 @@ c.register('G2ekc', function(b, r) {
                 children: [
                     (0, d.jsx)(k, {
                         label: 'Total Plays',
-                        value: a.total
+                        value: e.total
                     }),
                     (0, d.jsx)(k, {
                         label: 'Last 30 Days',
-                        value: a.last30
+                        value: e.last30
                     }),
                     (0, d.jsx)(k, {
                         label: 'Last 7 Days',
-                        value: a.last7
+                        value: e.last7
                     })
                 ]
             })
         ]
     });
-}), c.register('Xj2uw', function(b, l) {
-    a(b.exports, 'default', function() {
-        return k;
+}), a.register('wT7vQ', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('8kSQZ'),
-        e = c('jrTkz0'),
-        f = c('cR5QE'),
-        g = c('iYEuk12'),
-        h = c('S/jX4'),
-        i = c('uVDHR'),
-        j = c('PjB0f');
-    var k = a => (0, d.jsx)('div', {
+    var d = a('0hzx+'),
+        e = a('MSsQO'),
+        f = a('YRlpt'),
+        g = a('2HvvA11'),
+        h = a('vShe/'),
+        i = a('w0a3U'),
+        j = a('PMl60');
+    var _k = e => (0, d.jsx)('div', {
         children: (0, d.jsx)(g.default, {
             style: {
                 color: h.default.Yellow,
@@ -351,13 +351,13 @@ c.register('G2ekc', function(b, r) {
                     okText: 'Yes',
                     onOk: () => {
                         (0, i.Request)({
-                            url: `/api/created-map/listing/remove/${ a.id }`,
+                            url: `/api/created-map/listing/remove/${ e.id }`,
                             success: () => {
-                                e.default.success('Map unpublished!'), a.close();
+                                e.default.success('Map unpublished!'), e.close();
                             },
-                            error: a => {
+                            error: e => {
                                 (0, j.throwMessageError)({
-                                    e: a,
+                                    e: e,
                                     default: {
                                         title: 'Error unpublishing map'
                                     }

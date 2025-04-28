@@ -1,43 +1,43 @@
-function a(a, b, c, y) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: y,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('eqwqZ', function(b, y) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('KINYN', function(b, c) {
     var d;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(b.exports, 'default', function() {
-        return p;
+    }), _q(b.exports, 'default', function() {
+        return _p;
     });
-    var e = c('8kSQZ');
-    c('uPP4W');
-    var f = c('bmRaR'),
-        g = c('h99Nu'),
-        h = c('lmfrI'),
-        i = c('gSUVO'),
-        j = c('OrwLw'),
-        k = c('hl5ws'),
-        l = c('9MSfK'),
-        m = c('0R8EW'),
-        n = c('1//3g');
+    var e = a('0hzx+');
+    a('LEQ5w');
+    var f = a('sQsFp'),
+        g = a('Axq+p'),
+        h = a('sHRDd'),
+        i = a('b5kvC'),
+        j = a('x/+rF'),
+        k = a('SpgBu'),
+        l = a('2uW6I'),
+        m = a('70AkF'),
+        n = a('RJjEi');
     let o;
-    var p = () => {
+    var _p = () => {
         const {
-            id: q
-        } = (0, m.useParams)(), r = s;
+            id: _q
+        } = (0, m.useParams)(), r = _q;
         return (0, e.jsx)(f.QueryClientProvider, {
             client: j.default,
-            children: (0, e.jsxs)(q, {
+            children: (0, e.jsxs)(_q, {
                 children: [
                     (0, e.jsx)(n.default, {
                         includeSpacer: !0
@@ -49,52 +49,52 @@ c.register('eqwqZ', function(b, y) {
             })
         });
     };
-    const q = g.default.div.attrs({
+    const _q = g.default.div.attrs({
         className: 'flex-column'
-    })(o || (o = (a => a)`
+    })(o || (o = (_i => _i)`
   flex: 1;
   color: ${ 0 };
   background: ${ 0 };
   font-family: ${ 0 };
 `), h.default.Black, h.default.Snow, i.Fonts.SFPro);
-}), c.register('OrwLw', function(b, y) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('x/+rF', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = new(0, (c('Wj38c')).QueryClient)();
-}), c.register('hl5ws', function(b, y) {
-    a(b.exports, 'default', function() {
-        return u;
+    var _d = new(0, (a('2Letd')).QueryClient)();
+}), a.register('SpgBu', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _u;
     });
-    var d = c('8kSQZ'),
-        e = c('iHElh'),
-        f = c('/nMwY'),
-        g = c('uPP4W'),
-        h = c('q721a'),
-        i = c('VF2Dt'),
-        j = c('ovhV9'),
-        k = c('2tyK4'),
-        l = c('oELFp'),
-        m = c('EKzOJ'),
-        n = c('cRfEu'),
-        o = c('PjB0f'),
-        p = c('k0s2g17');
-    const q = g.lazy(() => c('5Ey98'));
+    var d = a('0hzx+'),
+        e = a('6CIVV'),
+        f = a('CAKUf'),
+        g = a('LEQ5w'),
+        h = a('gs4MT'),
+        i = a('wQa8B'),
+        j = a('jXz1K'),
+        k = a('hk77B'),
+        l = a('bemuk'),
+        m = a('BtGn5'),
+        n = a('q7Uge'),
+        o = a('PMl60'),
+        p = a('jzxyj10');
+    const q = g.lazy(() => a('MvRMF'));
     let r;
     var s;
     (s = r || (r = {})).invite = 'invite', s.members = 'members', s.managers = 'managers', s.analytics = 'analytics', s.invoice = 'invoice', s.receipt = 'receipt';
     const {
         TabPane: t
     } = f.default;
-    var u = a => {
+    var _u = _i => {
         const {
             bulkId: v
-        } = w, [x, y] = g.useState(r.invite), {
-            data: z,
-            error: A,
-            isLoading: B
+        } = _i, [w, x] = g.useState(r.invite), {
+            data: y,
+            error: z,
+            isLoading: A
         } = (0, i.default)(v);
-        if (B)
+        if (A)
             return (0, d.jsxs)('div', {
                 style: {
                     flex: 1
@@ -109,46 +109,46 @@ c.register('eqwqZ', function(b, y) {
                     })
                 ]
             });
-        if (A)
+        if (z)
             return (0, p.NavigateTo)(h.GROUP_DASHBOARD), null;
         return (0, d.jsxs)(j.Container, {
             children: [
                 (0, d.jsx)(o.Title, {
-                    title: `${ z.name } | Group License`
+                    title: `${ y.name } | Group License`
                 }),
                 (0, d.jsxs)(j.Content, {
                     children: [
                         (0, d.jsx)(l.default, {
-                            bulk: z,
-                            bulkId: w.bulkId
+                            bulk: y,
+                            bulkId: _i.bulkId
                         }),
                         (0, d.jsx)(j.PrimaryContent, {
                             children: (0, d.jsxs)(f.default, {
                                 type: 'card',
-                                activeKey: x,
-                                onChange: w => {
-                                    const C = D;
-                                    C !== r.invoice ? C !== r.receipt ? y(C) : z.receiptUrl && window.open(z.receiptUrl) : z.invoiceUrl && window.open(z.invoiceUrl);
+                                activeKey: w,
+                                onChange: _i => {
+                                    const B = _i;
+                                    B !== r.invoice ? B !== r.receipt ? x(B) : y.receiptUrl && window.open(y.receiptUrl) : y.invoiceUrl && window.open(y.invoiceUrl);
                                 },
                                 children: [
                                     (0, d.jsx)(t, {
                                         tab: 'Invite',
                                         children: (0, d.jsx)(m.default, {
-                                            bulk: z,
+                                            bulk: y,
                                             bulkId: v
                                         })
                                     }, r.invite),
                                     (0, d.jsx)(t, {
                                         tab: 'Members',
                                         children: (0, d.jsx)(n.default, {
-                                            bulk: z,
+                                            bulk: y,
                                             bulkId: v
                                         })
                                     }, r.members),
                                     (0, d.jsx)(t, {
                                         tab: 'Managers',
                                         children: (0, d.jsx)(k.default, {
-                                            bulk: z,
+                                            bulk: y,
                                             bulkId: v
                                         })
                                     }, r.managers),
@@ -161,10 +161,10 @@ c.register('eqwqZ', function(b, y) {
                                             })
                                         })
                                     }, r.analytics),
-                                    z.receiptUrl ? (0, d.jsx)(t, {
+                                    y.receiptUrl ? (0, d.jsx)(t, {
                                         tab: 'View Receipt'
                                     }, r.receipt) : null,
-                                    z.invoiceUrl ? (0, d.jsx)(t, {
+                                    y.invoiceUrl ? (0, d.jsx)(t, {
                                         tab: 'View Invoice'
                                     }, r.invoice) : null
                                 ]
@@ -175,54 +175,54 @@ c.register('eqwqZ', function(b, y) {
             ]
         });
     };
-}), c.register('VF2Dt', function(b, q) {
-    a(b.exports, 'refetchSpecificBulk', function() {
-        return h;
-    }), a(b.exports, 'default', function() {
-        return i;
+}), a.register('wQa8B', function(b, c) {
+    _i(b.exports, 'refetchSpecificBulk', function() {
+        return _h;
+    }), _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('IsAdf'),
-        e = c('PjB0f'),
-        f = c('OrwLw');
+    var d = a('UapK50'),
+        e = a('PMl60'),
+        f = a('x/+rF');
     const g = ['specific-bulk'],
-        h = a => f.default.refetchQueries([
+        _h = _i => f.default.refetchQueries([
             g,
-            a
+            _i
         ]);
-    var i = a => (0, d.useQuery)([
+    var _i = _i => (0, d.useQuery)([
         g,
-        a
+        _i
     ], () => (0, e.requestAsPromise)({
-        url: '/api/bulk/fetch/' + a
+        url: '/api/bulk/fetch/' + _i
     }));
-}), c.register('ovhV9', function(q, d) {
-    a(q.exports, 'Container', function() {
-        return w;
-    }), a(q.exports, 'Content', function() {
-        return x;
-    }), a(q.exports, 'Title', function() {
-        return y;
-    }), a(q.exports, 'PrimaryContent', function() {
-        return A;
-    }), a(q.exports, 'default', function() {
-        return v;
+}), a.register('jXz1K', function(b, c) {
+    _i(b.exports, 'Container', function() {
+        return _w;
+    }), _i(b.exports, 'Content', function() {
+        return _x;
+    }), _i(b.exports, 'Title', function() {
+        return _y;
+    }), _i(b.exports, 'PrimaryContent', function() {
+        return _A;
+    }), _i(b.exports, 'default', function() {
+        return _v;
     });
-    var d = c('8kSQZ'),
-        e = c('lnkpW'),
-        f = c('IsmrL'),
-        g = c('2MCaL');
-    c('uPP4W');
-    var h = c('h99Nu'),
-        i = c('0wLl2'),
-        j = c('gSUVO'),
-        k = c('q721a'),
-        l = c('iYEuk12'),
-        m = c('FfkIK1'),
-        n = c('PjB0f'),
-        o = c('XincZ');
-    let p, q, r, s, t, u = a => a;
-    var v = a => (0, d.jsx)(w, {
-        children: (0, d.jsxs)(x, {
+    var d = a('0hzx+'),
+        e = a('NiL4/'),
+        f = a('ulE4q'),
+        g = a('ECzOP');
+    a('LEQ5w');
+    var h = a('Axq+p'),
+        i = a('hHkFq'),
+        j = a('b5kvC'),
+        k = a('gs4MT'),
+        l = a('2HvvA11'),
+        m = a('7s5R80'),
+        n = a('PMl60'),
+        o = a('zoqzn');
+    let p, q, r, s, t, u = _i => _i;
+    var _v = _i => (0, d.jsx)(_w, {
+        children: (0, d.jsxs)(_x, {
             children: [
                 (0, d.jsxs)('div', {
                     style: {
@@ -230,13 +230,13 @@ c.register('eqwqZ', function(b, y) {
                     },
                     className: 'flex-column flex-center',
                     children: [
-                        (0, d.jsxs)(y, {
+                        (0, d.jsxs)(_y, {
                             children: [
                                 i.COMPANY_NAME,
                                 ' Groups'
                             ]
                         }),
-                        (0, d.jsxs)(z, {
+                        (0, d.jsxs)(_z, {
                             children: [
                                 'Welcome to ',
                                 i.COMPANY_NAME,
@@ -258,18 +258,18 @@ c.register('eqwqZ', function(b, y) {
                         })
                     ]
                 }),
-                (0, d.jsx)(A, {
-                    children: a.bulks.map(a => (0, d.jsx)(o.default, {
-                        id: a.id,
-                        name: a.name,
-                        isActive: a.isActive,
-                        startDate: b(g)((0, n.dateFromId)(a.id)).format('MMMM Do, YYYY')
-                    }, a.id + '-item'))
+                (0, d.jsx)(_A, {
+                    children: _i.bulks.map(_i => (0, d.jsx)(o.default, {
+                        id: _i.id,
+                        name: _i.name,
+                        isActive: _i.isActive,
+                        startDate: _b(g)((0, n.dateFromId)(_i.id)).format('MMMM Do, YYYY')
+                    }, _i.id + '-item'))
                 })
             ]
         })
     });
-    const w = h.default.div.attrs({
+    const _w = h.default.div.attrs({
             className: 'flex-column vc'
         })(p || (p = u`
   flex: 1;
@@ -277,23 +277,23 @@ c.register('eqwqZ', function(b, y) {
   padding-bottom: 0px;
   overflow: hidden;
 `)),
-        x = h.default.div.attrs({
+        _x = h.default.div.attrs({
             className: 'flex-column'
         })(q || (q = u`
   flex: 1;
   width: 90%;
   max-width: 1200px;
 `)),
-        y = h.default.div(r || (r = u`
+        _y = h.default.div(r || (r = u`
   font-size: 54px;
   font-weight: ${ 0 };
 `), j.FontWeights.UltraBold),
-        z = h.default.div(s || (s = u`
+        _z = h.default.div(s || (s = u`
   font-size: 16px;
   margin-bottom: 30px;
   max-width: 700px;
 `)),
-        A = (0, h.default)(m.default).attrs({
+        _A = (0, h.default)(m.default).attrs({
             className: 'maxWidth'
         })(t || (t = u`
   flex: 1;
@@ -302,86 +302,86 @@ c.register('eqwqZ', function(b, y) {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 `));
-}), c.register('iYEuk12', function(b, q) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('2HvvA11', function(_b, c) {
+    _i(_b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('8kSQZ'),
-        e = c('KzqIz');
-    c('uPP4W');
-    var f = a => a.external || !a.to ? (0, d.jsx)('a', {
-        href: a.to,
-        tabIndex: Number(a.tabIndex || '0'),
-        onClick: a.onClick,
-        onKeyPress: b => {
-            a.onClick && 'Enter' === b.key && (b.preventDefault(), a.onClick());
+    var d = a('0hzx+'),
+        e = a('wYGc3');
+    a('LEQ5w');
+    var _f = _i => _i.external || !_i.to ? (0, d.jsx)('a', {
+        href: _i.to,
+        tabIndex: Number(_i.tabIndex || '0'),
+        onClick: _i.onClick,
+        onKeyPress: _b => {
+            _i.onClick && 'Enter' === _b.key && (_b.preventDefault(), _i.onClick());
         },
-        className: a.className,
-        target: a.target,
-        style: a.style,
-        children: a.children
+        className: _i.className,
+        target: _i.target,
+        style: _i.style,
+        children: _i.children
     }) : (0, d.jsx)(e.Link, {
-        to: a.to,
-        tabIndex: Number(a.tabIndex || '0'),
-        onClick: a.onClick,
-        className: a.className,
-        target: a.target,
-        style: a.style,
-        children: a.children
+        to: _i.to,
+        tabIndex: Number(_i.tabIndex || '0'),
+        onClick: _i.onClick,
+        className: _i.className,
+        target: _i.target,
+        style: _i.style,
+        children: _i.children
     });
-}), c.register('FfkIK1', function(b, q) {
-    a(b.exports, 'default', function() {
-        return h;
+}), a.register('7s5R80', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('lmfrI');
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('sHRDd');
     let g;
-    var h = a => (0, d.jsx)(i, {
-        onClick: a.onClick,
-        className: a.className,
-        style: a.style,
-        children: a.children
+    var _h = _i => (0, d.jsx)(_i, {
+        onClick: _i.onClick,
+        className: _i.className,
+        style: _i.style,
+        children: _i.children
     });
-    const i = e.default.div(g || (g = (a => a)`
+    const _i = e.default.div(g || (g = (_i => _i)`
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1),
     0 10px 30px #f3ece8;
   border-radius: 0.2em 0.2em 0 0;
   background: ${ 0 };
   padding: 20px;
 `), f.default.White);
-}), c.register('XincZ', function(b, q) {
-    a(b.exports, 'default', function() {
-        return n;
+}), a.register('zoqzn', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('lmfrI'),
-        g = c('gSUVO'),
-        h = c('iYEuk12');
-    let i, j, k, l, m = a => a;
-    var n = a => {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('sHRDd'),
+        g = a('b5kvC'),
+        h = a('2HvvA11');
+    let i, j, k, l, m = _i => _i;
+    var _n = _i => {
         const {
             id: o,
             name: p,
             startDate: q,
             isActive: r
-        } = s;
-        return (0, d.jsxs)(o, {
+        } = _i;
+        return (0, d.jsxs)(_o, {
             to: `/groups/${ o }`,
             children: [
-                (0, d.jsx)(p, {
+                (0, d.jsx)(_p, {
                     style: {
                         background: r ? '#388e3c' : '#f44336'
                     },
                     children: r ? 'Active' : 'Inactive'
                 }),
-                (0, d.jsx)(q, {
+                (0, d.jsx)(_q, {
                     children: p
                 }),
-                q ? (0, d.jsxs)(r, {
+                q ? (0, d.jsxs)(_r, {
                     children: [
                         'Started on ',
                         q
@@ -390,7 +390,7 @@ c.register('eqwqZ', function(b, y) {
             ]
         });
     };
-    const o = (0, e.default)(h.default).attrs({
+    const _o = (0, e.default)(h.default).attrs({
             className: 'flex-column'
         })(i || (i = m`
   padding-top: 0px;
@@ -412,7 +412,7 @@ c.register('eqwqZ', function(b, y) {
     margin-bottom: 0px;
   }
 `), f.default.BorderGray, f.default.Black, f.default.Black),
-        p = e.default.div(j || (j = m`
+        _p = e.default.div(j || (j = m`
   font-style: italic;
   padding: 4px 16px;
   border-radius: 8px;
@@ -420,61 +420,61 @@ c.register('eqwqZ', function(b, y) {
   margin-bottom: 9px;
   font-size: 12px;
 `), f.default.White),
-        q = e.default.div(k || (k = m`
+        _q = e.default.div(k || (k = m`
   font-weight: ${ 0 };
   font-size: 16px;
 `), g.FontWeights.Bold),
-        r = e.default.div(l || (l = m`
+        _r = e.default.div(l || (l = m`
   font-style: italic;
   font-size: 13px;
   margin-top: 2px;
   color: rgba(0, 0, 0, 0.9);
 `));
-}), c.register('2tyK4', function(b, y) {
-    a(b.exports, 'default', function() {
-        return u;
+}), a.register('hk77B', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _u;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('IsmrL'),
-        g = c('f9f+a'),
-        h = c('c6x8w'),
-        i = c('jrTkz0'),
-        j = c('cR5QE'),
-        k = c('gSUVO'),
-        l = c('lmfrI'),
-        m = c('Ex2wZ'),
-        n = c('cBb/w'),
-        o = c('VF2Dt'),
-        p = c('GFgjD'),
-        q = c('6jNxr'),
-        r = c('PjB0f'),
-        s = c('nHGjF');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('ulE4q'),
+        g = a('oXQNI'),
+        h = a('ewwAh'),
+        i = a('MSsQO'),
+        j = a('YRlpt'),
+        k = a('b5kvC'),
+        l = a('sHRDd'),
+        m = a('p+dWb'),
+        n = a('R6gfH'),
+        o = a('wQa8B'),
+        p = a('INKb2'),
+        q = a('Jhh4y'),
+        r = a('PMl60'),
+        s = a('uvADe0');
     const t = {
         fontFamily: k.Fonts.SFPro,
         color: l.default.Black
     };
-    var u = a => {
+    var _u = _i => {
         const {
             bulk: v,
             bulkId: w
-        } = x, [y, z] = e.useState(''), [A, B] = e.useState(!1), [C, D] = e.useState(null), E = y && (0, q.validateEmail)(y), F = () => {
-            E && (B(!0), (0, r.request)({
+        } = _i, [x, y] = e.useState(''), [z, A] = e.useState(!1), [B, C] = e.useState(null), D = x && (0, q.validateEmail)(x), E = () => {
+            D && (A(!0), (0, r.request)({
                 url: '/api/bulk/add-admin',
                 data: {
                     bulk: w,
-                    newAdmin: y
+                    newAdmin: x
                 },
                 success: () => {
-                    (0, o.refetchSpecificBulk)(w), i.default.success('Manager added!'), z('');
+                    (0, o.refetchSpecificBulk)(w), i.default.success('Manager added!'), y('');
                 },
-                error: x => {
-                    x && x.message && x.message.text && 'USER NOT FOUND' === x.message.text ? (0, p.throwError)({
+                error: _i => {
+                    _i && _i.message && _i.message.text && 'USER NOT FOUND' === _i.message.text ? (0, p.throwError)({
                         title: 'User not found',
                         content: 'This user does not exist on Gimkit yet. In order to be an manager for this license, they will need to create a free account first.'
-                    }) : D(x);
+                    }) : C(_i);
                 },
-                both: () => B(!1)
+                both: () => A(!1)
             }));
         };
         return (0, d.jsxs)(d.Fragment, {
@@ -521,11 +521,11 @@ c.register('eqwqZ', function(b, y) {
                                 width: '100%',
                                 marginTop: -1
                             },
-                            value: y,
-                            onChange: x => {
-                                z(x.target.value.toLowerCase()), D(null);
+                            value: x,
+                            onChange: _i => {
+                                y(_i.target.value.toLowerCase()), C(null);
                             },
-                            onPressEnter: F
+                            onPressEnter: E
                         }),
                         (0, d.jsx)(f.default, {
                             style: {
@@ -533,13 +533,13 @@ c.register('eqwqZ', function(b, y) {
                                 marginTop: 5
                             },
                             type: 'primary',
-                            disabled: !E,
-                            loading: A,
-                            onClick: F,
+                            disabled: !D,
+                            loading: z,
+                            onClick: E,
                             children: 'Add'
                         }),
                         (0, d.jsx)(s.default, {
-                            error: C,
+                            error: B,
                             style: {
                                 marginTop: 5
                             }
@@ -547,14 +547,14 @@ c.register('eqwqZ', function(b, y) {
                     ]
                 }),
                 (0, d.jsx)(n.default, {
-                    children: v.owners.map(x => (0, d.jsx)('div', {
+                    children: v.owners.map(_i => (0, d.jsx)('div', {
                         children: (0, d.jsx)(m.default, {
-                            email: x,
+                            email: _i,
                             remove: () => {
-                                return y = x, void(v.owners.length < 2 ? (0, p.throwError)({
+                                return x = _i, void(v.owners.length < 2 ? (0, p.throwError)({
                                     title: 'Cannot remove',
                                     content: 'Please add another admin before removing yourself'
-                                }) : (0, r.getUser)().email === y ? j.default.confirm({
+                                }) : (0, r.getUser)().email === x ? j.default.confirm({
                                     title: 'Are you sure you want to remove yourself as a manager?',
                                     onOk: () => {
                                         (0, r.request)({
@@ -572,26 +572,26 @@ c.register('eqwqZ', function(b, y) {
                                     title: 'Cannot remove',
                                     content: 'Managers can only remove themselves'
                                 }));
-                                var G;
+                                var F;
                             }
                         })
-                    }, 'admin-' + x))
+                    }, 'admin-' + _i))
                 })
             ]
         });
     };
-}), c.register('Ex2wZ', function(b, d) {
-    a(b.exports, 'default', function() {
-        return j;
+}), a.register('p+dWb', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _j;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('4jOgw8'),
-        f = c('f9f+a'),
-        g = c('YfLmS'),
-        h = c('gSUVO'),
-        i = c('lmfrI');
-    var j = a => (0, d.jsx)(f.default, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('ieNls8'),
+        f = a('oXQNI'),
+        g = a('ijg0s'),
+        h = a('b5kvC'),
+        i = a('sHRDd');
+    var _j = _i => (0, d.jsx)(f.default, {
         style: {
             fontFamily: h.Fonts.SFPro,
             color: i.default.Black,
@@ -604,13 +604,13 @@ c.register('eqwqZ', function(b, y) {
             },
             children: [
                 (0, d.jsx)('div', {
-                    children: a.email
+                    children: _i.email
                 }),
                 (0, d.jsx)('div', {
                     children: (0, d.jsx)(g.default, {
                         title: 'Remove',
                         children: (0, d.jsx)(e.default, {
-                            onClick: a.remove,
+                            onClick: _i.remove,
                             style: {
                                 cursor: 'pointer'
                             }
@@ -620,27 +620,27 @@ c.register('eqwqZ', function(b, y) {
             ]
         })
     });
-}), c.register('4jOgw8', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('ieNls8', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('4LDCB8'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('8auc66'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'DeleteOutlined';
-    var i = e.forwardRef(h);
-}), c.register('4LDCB8', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('8auc66', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -657,54 +657,54 @@ c.register('eqwqZ', function(b, y) {
         name: 'delete',
         theme: 'outlined'
     };
-}), c.register('nHGjF', function(b, w) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('uvADe0', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('bPH7V');
-    var f = a => a.error ? (0, d.jsx)(e.default, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('NIZyA');
+    var _f = _i => _i.error ? (0, d.jsx)(e.default, {
         message: 'Error',
-        style: a.style,
+        style: _i.style,
         type: 'error',
-        description: a.error && a.error.message && a.error.message.text ? a.error.message.text : 'string' == typeof a.error ? a.error : 'Unknown Error. Please try again.',
+        description: _i.error && _i.error.message && _i.error.message.text ? _i.error.message.text : 'string' == typeof _i.error ? _i.error : 'Unknown Error. Please try again.',
         showIcon: !0
     }) : null;
-}), c.register('oELFp', function(w, x) {
-    a(w.exports, 'default', function() {
-        return u;
+}), a.register('bemuk', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _u;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('gSUVO'),
-        g = c('zgQWX27'),
-        h = c('bPH7V'),
-        i = c('IsmrL'),
-        j = c('c6x8w'),
-        k = c('cR5QE'),
-        l = c('JQ8A18'),
-        m = c('YfLmS'),
-        n = c('PjB0f'),
-        o = c('iYEuk12'),
-        p = c('VF2Dt'),
-        q = c('AZuy8'),
-        r = c('k0s2g17'),
-        s = c('2MCaL');
-    const t = a => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('b5kvC'),
+        g = a('xQDqe25'),
+        h = a('NIZyA'),
+        i = a('ulE4q'),
+        j = a('ewwAh'),
+        k = a('YRlpt'),
+        l = a('6BM9K6'),
+        m = a('ijg0s'),
+        n = a('PMl60'),
+        o = a('2HvvA11'),
+        p = a('wQa8B'),
+        q = a('Y0Ni9'),
+        r = a('jzxyj10'),
+        s = a('ECzOP');
+    const t = _i => {
         const [u, v] = e.useState(''), w = !!u, x = () => {
-            w && (a.onNewName(u), a.close());
+            w && (_i.onNewName(u), _i.close());
         };
         return (0, d.jsx)(k.default, {
-            open: a.open,
+            open: _i.open,
             closable: !0,
-            onCancel: a.close,
+            onCancel: _i.close,
             title: 'Rename Group',
             afterClose: () => v(''),
             footer: (0, d.jsxs)(d.Fragment, {
                 children: [
                     (0, d.jsx)(i.default, {
-                        onClick: a.close,
+                        onClick: _i.close,
                         children: 'Cancel'
                     }),
                     (0, d.jsx)(i.default, {
@@ -724,21 +724,21 @@ c.register('eqwqZ', function(b, y) {
                 placeholder: 'New group name...',
                 value: u,
                 maxLength: 32,
-                onChange: a => v(a.target.value),
+                onChange: _i => v(_i.target.value),
                 onPressEnter: x
             })
         });
     };
-    var u = a => {
+    var _u = _i => {
         const {
             bulk: v,
             bulkId: w
-        } = x, [y, z] = e.useState(!1), [A, B] = e.useState(!1), {
-            isActive: C,
-            name: D,
-            expiration: E,
-            statusText: F
-        } = G;
+        } = _i, [x, y] = e.useState(!1), [z, A] = e.useState(!1), {
+            isActive: B,
+            name: C,
+            expiration: D,
+            statusText: E
+        } = v;
         return (0, d.jsx)(d.Fragment, {
             children: (0, d.jsxs)('div', {
                 className: 'maxWidth',
@@ -766,19 +766,19 @@ c.register('eqwqZ', function(b, y) {
                                                     fontSize: 34,
                                                     cursor: 'pointer'
                                                 },
-                                                onClick: () => B(!0),
+                                                onClick: () => A(!0),
                                                 children: (0, d.jsx)(m.default, {
                                                     title: 'Rename Group License',
                                                     placement: 'topLeft',
-                                                    children: D
+                                                    children: C
                                                 })
                                             }),
                                             (0, d.jsx)(l.default, {
                                                 style: {
                                                     marginLeft: 10
                                                 },
-                                                color: C ? 'green' : 'red',
-                                                children: C ? F || 'Active' : E && b(s)().isAfter(b(s).unix(E)) ? 'Inactive' : F || 'Inactive'
+                                                color: B ? 'green' : 'red',
+                                                children: B ? E || 'Active' : D && _b(s)().isAfter(_b(s).unix(D)) ? 'Inactive' : E || 'Inactive'
                                             })
                                         ]
                                     }),
@@ -787,43 +787,43 @@ c.register('eqwqZ', function(b, y) {
                                             fontSize: 18,
                                             opacity: 0.8
                                         },
-                                        children: C ? E ? `Expires on ${ b(s).unix(E).format('L') }` : 'Paid with credit/debit card' : E && b(s)().isAfter(b(s).unix(E)) ? `Expired on ${ b(s).unix(E).format('L') }` : 'Inactive group license'
+                                        children: B ? D ? `Expires on ${ _b(s).unix(D).format('L') }` : 'Paid with credit/debit card' : D && _b(s)().isAfter(_b(s).unix(D)) ? `Expired on ${ _b(s).unix(D).format('L') }` : 'Inactive group license'
                                     })
                                 ]
                             }),
                             (0, d.jsx)('div', {
-                                children: G.allowedToRenew ? (0, d.jsx)(i.default, {
+                                children: v.allowedToRenew ? (0, d.jsx)(i.default, {
                                     size: 'large',
                                     type: 'primary',
                                     onClick: () => {
-                                        z(!0), (0, n.request)({
+                                        y(!0), (0, n.request)({
                                             url: '/api/quote/createFromRenewal',
                                             method: 'post',
                                             data: {
                                                 id: w
                                             },
-                                            success: x => {
-                                                (0, r.NavigateTo)(`/quote/${ x }`);
+                                            success: _i => {
+                                                (0, r.NavigateTo)(`/quote/${ _i }`);
                                             },
-                                            error: x => {
+                                            error: _i => {
                                                 (0, n.throwMessageError)({
-                                                    e: x,
+                                                    e: _i,
                                                     default: {
                                                         title: 'Error generating a renewal quote. Please try again later'
                                                     }
                                                 });
                                             },
-                                            both: () => z(!1)
+                                            both: () => y(!1)
                                         });
                                     },
-                                    loading: y,
+                                    loading: x,
                                     icon: (0, d.jsx)(g.default, {}),
                                     children: 'Renew'
                                 }) : null
                             })
                         ]
                     }),
-                    G.isActive ? null : (0, d.jsx)(h.default, {
+                    v.isActive ? null : (0, d.jsx)(h.default, {
                         type: 'error',
                         message: 'Group License No Longer Active',
                         description: (0, d.jsxs)(d.Fragment, {
@@ -843,14 +843,14 @@ c.register('eqwqZ', function(b, y) {
                         showIcon: !0
                     }),
                     (0, d.jsx)(t, {
-                        open: A,
-                        close: () => B(!1),
-                        onNewName: x => {
+                        open: z,
+                        close: () => A(!1),
+                        onNewName: _i => {
                             (0, n.request)({
                                 url: '/api/bulk/rename',
                                 data: {
                                     id: w,
-                                    name: x
+                                    name: _i
                                 }
                             }), (0, p.refetchSpecificBulk)(w), (0, q.invalidateAllBulks)();
                         }
@@ -859,27 +859,27 @@ c.register('eqwqZ', function(b, y) {
             })
         });
     };
-}), c.register('zgQWX27', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('xQDqe25', function(_b, c) {
+    _i(_b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('+Ag0S27'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('AxRpU23'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'StarOutlined';
-    var i = e.forwardRef(h);
-}), c.register('+Ag0S27', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('AxRpU23', function(b, c) {
+    _d(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -896,44 +896,44 @@ c.register('eqwqZ', function(b, y) {
         name: 'star',
         theme: 'outlined'
     };
-}), c.register('JQ8A18', function(n, o) {
-    a(n.exports, 'default', function() {
-        return s;
-    }, function(a) {
-        return s = a;
+}), a.register('6BM9K6', function(b, c) {
+    _d(b.exports, 'default', function() {
+        return _s;
+    }, function(_d) {
+        return _s = _d;
     });
-    var d = c('obWo+'),
-        e = c('VAIs1'),
-        f = c('uPP4W'),
-        g = c('qEw51'),
-        h = c('HVIEA'),
-        i = c('PYjVb'),
-        j = c('13lgq8'),
-        k = c('RdtDA8'),
-        l = function(a, b) {
-            var m = {};
-            for (var n in a)
-                Object.prototype.hasOwnProperty.call(a, n) && b.indexOf(n) < 0 && (m[n] = a[n]);
-            if (null != a && 'function' == typeof Object.getOwnPropertySymbols) {
-                var o = 0;
-                for (n = Object.getOwnPropertySymbols(a); o < n.length; o++)
-                    b.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(a, n[o]) && (m[n[o]] = a[n[o]]);
+    var d = a('QECub'),
+        e = a('JrtKP'),
+        f = a('LEQ5w'),
+        g = a('1P5ls'),
+        h = a('dFMJk'),
+        i = a('QyNEL'),
+        j = a('J4wJU8'),
+        k = a('E4QrV8'),
+        l = function(m, n) {
+            var o = {};
+            for (var p in m)
+                Object.prototype.hasOwnProperty.call(m, p) && n.indexOf(p) < 0 && (o[p] = m[p]);
+            if (null != m && 'function' == typeof Object.getOwnPropertySymbols) {
+                var q = 0;
+                for (p = Object.getOwnPropertySymbols(m); q < p.length; q++)
+                    n.indexOf(p[q]) < 0 && Object.prototype.propertyIsEnumerable.call(m, p[q]) && (o[p[q]] = m[p[q]]);
             }
-            return m;
+            return o;
         };
-    const m = (a, c) => {
+    const m = (_d, a) => {
             var {
                 prefixCls: n,
                 className: o,
                 rootClassName: p,
                 style: q,
                 children: r,
-                icon: s,
+                icon: _s,
                 color: t,
                 onClose: u,
                 closeIcon: v,
                 closable: w = !1
-            } = x, y = l(x, [
+            } = _d, x = l(_d, [
                 'prefixCls',
                 'className',
                 'rootClassName',
@@ -946,75 +946,75 @@ c.register('eqwqZ', function(b, y) {
                 'closable'
             ]);
             const {
-                getPrefixCls: z,
-                direction: A
-            } = f.useContext(g.ConfigContext), [B, C] = f.useState(!0);
+                getPrefixCls: y,
+                direction: z
+            } = f.useContext(g.ConfigContext), [A, B] = f.useState(!0);
             f.useEffect(() => {
-                'visible' in y && C(y.visible);
-            }, [y.visible]);
-            const D = (0, h.isPresetColor)(t) || (0, h.isPresetStatusColor)(t),
-                E = Object.assign({
-                    backgroundColor: t && !D ? t : void 0
+                'visible' in x && B(x.visible);
+            }, [x.visible]);
+            const C = (0, h.isPresetColor)(t) || (0, h.isPresetStatusColor)(t),
+                D = Object.assign({
+                    backgroundColor: t && !C ? t : void 0
                 }, q),
-                F = z('tag', n),
-                [G, H] = (0, k.default)(F),
-                I = b(e)(F, {
-                    [`${ F }-${ t }`]: D,
-                    [`${ F }-has-color`]: t && !D,
-                    [`${ F }-hidden`]: !B,
-                    [`${ F }-rtl`]: 'rtl' === A
-                }, o, p, H),
-                J = x => {
-                    x.stopPropagation(), null == u || u(x), x.defaultPrevented || C(!1);
+                E = y('tag', n),
+                [F, G] = (0, k.default)(E),
+                H = _j(e)(E, {
+                    [`${ E }-${ t }`]: C,
+                    [`${ E }-has-color`]: t && !C,
+                    [`${ E }-hidden`]: !A,
+                    [`${ E }-rtl`]: 'rtl' === z
+                }, o, p, G),
+                I = _d => {
+                    _d.stopPropagation(), null == u || u(_d), _d.defaultPrevented || B(!1);
                 },
-                K = 'function' == typeof y.onClick || r && 'a' === r.type,
-                L = s || null,
-                M = L ? f.createElement(f.Fragment, null, L, f.createElement('span', null, r)) : r,
-                N = f.createElement('span', Object.assign({}, y, {
-                    ref: c,
-                    className: I,
-                    style: E
-                }), M, w ? v ? f.createElement('span', {
-                    className: `${ F }-close-icon`,
-                    onClick: J
+                J = 'function' == typeof x.onClick || r && 'a' === r.type,
+                K = _s || null,
+                L = K ? f.createElement(f.Fragment, null, K, f.createElement('span', null, r)) : r,
+                M = f.createElement('span', Object.assign({}, x, {
+                    ref: a,
+                    className: H,
+                    style: D
+                }), L, w ? v ? f.createElement('span', {
+                    className: `${ E }-close-icon`,
+                    onClick: I
                 }, v) : f.createElement(d.default, {
-                    className: `${ F }-close-icon`,
-                    onClick: J
+                    className: `${ E }-close-icon`,
+                    onClick: I
                 }) : null);
-            return G(K ? f.createElement(i.default, null, N) : N);
+            return F(J ? f.createElement(i.default, null, M) : M);
         },
         n = f.forwardRef(m);
     n.CheckableTag = j.default;
-    var o = p;
-}), c.register('13lgq8', function(j, k) {
-    a(j.exports, 'default', function() {
-        return i;
-    }, function(a) {
-        return i = a;
+    var o = n;
+}), a.register('J4wJU8', function(b, c) {
+    _d(b.exports, 'default', function() {
+        return _i;
+    }, function(_d) {
+        return _i = _d;
     });
-    var d = c('VAIs1'),
-        e = c('uPP4W'),
-        f = c('qEw51'),
-        g = c('RdtDA8'),
-        h = function(a, b) {
-            var i = {};
-            for (var j in a)
-                Object.prototype.hasOwnProperty.call(a, j) && b.indexOf(j) < 0 && (i[j] = a[j]);
-            if (null != a && 'function' == typeof Object.getOwnPropertySymbols) {
-                var k = 0;
-                for (j = Object.getOwnPropertySymbols(a); k < j.length; k++)
-                    b.indexOf(j[k]) < 0 && Object.prototype.propertyIsEnumerable.call(a, j[k]) && (i[j[k]] = a[j[k]]);
+    var d = a('JrtKP'),
+        e = a('LEQ5w'),
+        f = a('1P5ls'),
+        g = a('E4QrV8'),
+        h = function(i, _j) {
+            var k = {};
+            for (var l in i)
+                Object.prototype.hasOwnProperty.call(i, l) && _j.indexOf(l) < 0 && (k[l] = i[l]);
+            if (null != i && 'function' == typeof Object.getOwnPropertySymbols) {
+                var m = 0;
+                for (l = Object.getOwnPropertySymbols(i); m < l.length; m++)
+                    _j.indexOf(l[m]) < 0 && Object.prototype.propertyIsEnumerable.call(i, l[m]) && (k[l[m]] = i[l[m]]);
             }
-            return i;
+            return k;
         };
-    var i = a => {
+    var _i = _e => {
         var {
             prefixCls: j,
             className: k,
             checked: l,
             onChange: m,
             onClick: n
-        } = o, p = h(o, [
+        } = _e, o = h(_e, [
             'prefixCls',
             'className',
             'checked',
@@ -1022,99 +1022,99 @@ c.register('eqwqZ', function(b, y) {
             'onClick'
         ]);
         const {
-            getPrefixCls: q
-        } = e.useContext(f.ConfigContext), r = q('tag', j), [s, t] = (0, g.default)(r), u = b(d)(r, {
-            [`${ r }-checkable`]: !0,
-            [`${ r }-checkable-checked`]: l
-        }, k, t);
-        return s(e.createElement('span', Object.assign({}, p, {
-            className: u,
-            onClick: o => {
-                null == m || m(!l), null == n || n(o);
+            getPrefixCls: p
+        } = e.useContext(f.ConfigContext), q = p('tag', j), [r, s] = (0, g.default)(q), t = _b(d)(q, {
+            [`${ q }-checkable`]: !0,
+            [`${ q }-checkable-checked`]: l
+        }, k, s);
+        return r(e.createElement('span', Object.assign({}, o, {
+            className: t,
+            onClick: _e => {
+                null == m || m(!l), null == n || n(_e);
             }
         })));
     };
-}), c.register('RdtDA8', function(b, j) {
-    a(b.exports, 'default', function() {
-        return l;
+}), a.register('E4QrV8', function(_b, c) {
+    _e(_b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('vvwoA'),
-        e = c('jnIuq'),
-        f = c('hTZV68'),
-        g = c('JkiNt'),
-        h = c('P38j/');
-    const i = (a, b, c) => {
-            const j = (0, f.default)(c);
+    var d = a('XC0UB'),
+        e = a('l+IVY'),
+        f = a('xbYck1'),
+        g = a('bL6OF'),
+        h = a('7hbGU');
+    const i = (_e, _b, a) => {
+            const j = (0, f.default)(a);
             return {
-                [`${ a.componentCls }-${ b }`]: {
-                    color: a[`color${ c }`],
-                    background: a[`color${ j }Bg`],
-                    borderColor: a[`color${ j }Border`]
+                [`${ _e.componentCls }-${ _b }`]: {
+                    color: _e[`color${ a }`],
+                    background: _e[`color${ j }Bg`],
+                    borderColor: _e[`color${ j }Border`]
                 }
             };
         },
-        j = a => (0, g.genPresetColor)(a, (b, c) => {
+        j = _e => (0, g.genPresetColor)(_e, (_b, a) => {
             let {
                 textColor: k,
                 lightBorderColor: l,
                 lightColor: m,
                 darkColor: n
-            } = o;
+            } = a;
             return {
-                [`${ a.componentCls }-${ b }`]: {
+                [`${ _e.componentCls }-${ _b }`]: {
                     color: k,
                     background: m,
                     borderColor: l,
                     '&-inverse': {
-                        color: a.colorTextLightSolid,
+                        color: _e.colorTextLightSolid,
                         background: n,
                         borderColor: n
                     }
                 }
             };
         }),
-        k = a => {
+        k = _e => {
             const {
                 paddingXXS: l,
                 lineWidth: m,
                 tagPaddingHorizontal: n,
                 componentCls: o
-            } = p, q = n - m, r = l - m;
+            } = _e, p = n - m, q = l - m;
             return {
-                [o]: Object.assign(Object.assign({}, (0, h.resetComponent)(p)), {
+                [o]: Object.assign(Object.assign({}, (0, h.resetComponent)(_e)), {
                     display: 'inline-block',
                     height: 'auto',
-                    marginInlineEnd: p.marginXS,
-                    paddingInline: q,
-                    fontSize: p.tagFontSize,
-                    lineHeight: `${ p.tagLineHeight }px`,
+                    marginInlineEnd: _e.marginXS,
+                    paddingInline: p,
+                    fontSize: _e.tagFontSize,
+                    lineHeight: `${ _e.tagLineHeight }px`,
                     whiteSpace: 'nowrap',
-                    background: p.tagDefaultBg,
-                    border: `${ p.lineWidth }px ${ p.lineType } ${ p.colorBorder }`,
-                    borderRadius: p.borderRadiusSM,
+                    background: _e.tagDefaultBg,
+                    border: `${ _e.lineWidth }px ${ _e.lineType } ${ _e.colorBorder }`,
+                    borderRadius: _e.borderRadiusSM,
                     opacity: 1,
-                    transition: `all ${ p.motionDurationMid }`,
+                    transition: `all ${ _e.motionDurationMid }`,
                     textAlign: 'start',
                     [`&${ o }-rtl`]: {
                         direction: 'rtl'
                     },
                     '&, a, a:hover': {
-                        color: p.tagDefaultColor
+                        color: _e.tagDefaultColor
                     },
                     [`${ o }-close-icon`]: {
-                        marginInlineStart: r,
-                        color: p.colorTextDescription,
-                        fontSize: p.tagIconSize,
+                        marginInlineStart: q,
+                        color: _e.colorTextDescription,
+                        fontSize: _e.tagIconSize,
                         cursor: 'pointer',
-                        transition: `all ${ p.motionDurationMid }`,
+                        transition: `all ${ _e.motionDurationMid }`,
                         '&:hover': {
-                            color: p.colorTextHeading
+                            color: _e.colorTextHeading
                         }
                     },
                     [`&${ o }-has-color`]: {
                         borderColor: 'transparent',
-                        [`&, a, a:hover, ${ p.iconCls }-close, ${ p.iconCls }-close:hover`]: {
-                            color: p.colorTextLightSolid
+                        [`&, a, a:hover, ${ _e.iconCls }-close, ${ _e.iconCls }-close:hover`]: {
+                            color: _e.colorTextLightSolid
                         }
                     },
                     '&-checkable': {
@@ -1122,111 +1122,111 @@ c.register('eqwqZ', function(b, y) {
                         borderColor: 'transparent',
                         cursor: 'pointer',
                         [`&:not(${ o }-checkable-checked):hover`]: {
-                            color: p.colorPrimary,
-                            backgroundColor: p.colorFillSecondary
+                            color: _e.colorPrimary,
+                            backgroundColor: _e.colorFillSecondary
                         },
                         '&:active, &-checked': {
-                            color: p.colorTextLightSolid
+                            color: _e.colorTextLightSolid
                         },
                         '&-checked': {
-                            backgroundColor: p.colorPrimary,
+                            backgroundColor: _e.colorPrimary,
                             '&:hover': {
-                                backgroundColor: p.colorPrimaryHover
+                                backgroundColor: _e.colorPrimaryHover
                             }
                         },
                         '&:active': {
-                            backgroundColor: p.colorPrimaryActive
+                            backgroundColor: _e.colorPrimaryActive
                         }
                     },
                     '&-hidden': {
                         display: 'none'
                     },
-                    [`> ${ p.iconCls } + span, > span + ${ p.iconCls }`]: {
-                        marginInlineStart: q
+                    [`> ${ _e.iconCls } + span, > span + ${ _e.iconCls }`]: {
+                        marginInlineStart: p
                     }
                 })
             };
         };
-    var l = (0, d.default)('Tag', a => {
+    var _l = (0, d.default)('Tag', _e => {
         const {
             fontSize: m,
             lineHeight: n,
             lineWidth: o,
             fontSizeIcon: p
-        } = q, r = Math.round(m * n), s = q.fontSizeSM, t = r - 2 * o, u = q.colorFillAlter, v = q.colorText, w = (0, e.merge)(q, {
-            tagFontSize: s,
-            tagLineHeight: t,
-            tagDefaultBg: u,
-            tagDefaultColor: v,
+        } = _e, q = Math.round(m * n), r = _e.fontSizeSM, s = q - 2 * o, t = _e.colorFillAlter, u = _e.colorText, v = (0, e.merge)(_e, {
+            tagFontSize: r,
+            tagLineHeight: s,
+            tagDefaultBg: t,
+            tagDefaultColor: u,
             tagIconSize: p - 2 * o,
             tagPaddingHorizontal: 8
         });
         return [
-            k(w),
-            j(w),
-            i(w, 'success', 'Success'),
-            i(w, 'processing', 'Info'),
-            i(w, 'error', 'Error'),
-            i(w, 'warning', 'Warning')
+            k(v),
+            j(v),
+            i(v, 'success', 'Success'),
+            i(v, 'processing', 'Info'),
+            i(v, 'error', 'Error'),
+            i(v, 'warning', 'Warning')
         ];
     });
-}), c.register('hTZV68', function(b, c) {
-    function d(a) {
-        if ('string' != typeof a)
-            return a;
-        return a.charAt(0).toUpperCase() + a.slice(1);
+}), a.register('xbYck1', function(b, c) {
+    function d(_e) {
+        if ('string' != typeof _e)
+            return _e;
+        return _e.charAt(0).toUpperCase() + _e.slice(1);
     }
-    a(b.exports, 'default', function() {
-        return d;
+    _i(b.exports, 'default', function() {
+        return _c;
     });
-}), c.register('AZuy8', function(b, D) {
-    a(b.exports, 'invalidateAllBulks', function() {
-        return h;
-    }), a(b.exports, 'default', function() {
-        return i;
+}), a.register('Y0Ni9', function(b, _c) {
+    _i(b.exports, 'invalidateAllBulks', function() {
+        return _h;
+    }), _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('IsAdf'),
-        e = c('PjB0f'),
-        f = c('OrwLw');
+    var d = a('UapK50'),
+        e = a('PMl60'),
+        f = a('x/+rF');
     const g = ['all-bulks'],
-        h = () => {
+        _h = () => {
             f.default.invalidateQueries(g);
         };
-    var i = () => (0, d.useQuery)(g, () => (0, e.requestAsPromise)({
+    var _i = () => (0, d.useQuery)(g, () => (0, e.requestAsPromise)({
         url: '/api/bulk/fetch-all'
     }));
-}), c.register('k0s2g17', function(b, D) {
-    a(b.exports, 'NavigateTo', function() {
-        return e;
+}), a.register('jzxyj10', function(b, c) {
+    _i(b.exports, 'NavigateTo', function() {
+        return _e;
     });
-    var d = c('Cr/BM');
-    const e = a => {
-        d.history.push(a);
+    var d = a('oBJ9G');
+    const _e = _i => {
+        d.history.push(_i);
     };
-}), c.register('EKzOJ', function(D, E) {
-    a(D.exports, 'default', function() {
-        return B;
+}), a.register('BtGn5', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _B;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('BSqHU'),
-        g = c('qgO2124'),
-        h = c('IsmrL'),
-        i = c('f9f+a'),
-        j = c('ExtIT'),
-        k = c('c6x8w'),
-        l = c('jrTkz0'),
-        m = c('cRfEu'),
-        n = c('h99Nu'),
-        o = c('gSUVO'),
-        p = c('SlNZ027'),
-        q = c('iYEuk12'),
-        r = c('PjB0f'),
-        s = c('0wLl2'),
-        t = c('VF2Dt'),
-        u = c('AZuy8'),
-        v = c('5XmoU');
-    let w, x, y = a => a;
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('rPP+1'),
+        g = a('gCqar24'),
+        h = a('ulE4q'),
+        i = a('oXQNI'),
+        j = a('fmVdR'),
+        k = a('ewwAh'),
+        l = a('MSsQO'),
+        m = a('q7Uge'),
+        n = a('Axq+p'),
+        o = a('b5kvC'),
+        p = a('jlX4s16'),
+        q = a('2HvvA11'),
+        r = a('PMl60'),
+        s = a('hHkFq'),
+        t = a('wQa8B'),
+        u = a('Y0Ni9'),
+        v = a('g9B6V');
+    let w, x, y = _i => _i;
     const z = {
             ...m.CardStyle,
             width: 'calc(50% - 4px)',
@@ -1236,11 +1236,11 @@ c.register('eqwqZ', function(b, y) {
             textAlign: 'center',
             fontSize: 32
         };
-    var B = a => {
+    var _B = _i => {
         const [C, D] = e.useState(!1), E = (0, u.default)().data, {
             bulkId: F,
             bulk: G
-        } = H, I = `${ (0, r.getDomain)() }/group/join/${ F }`, J = (E || []).filter(H => H.id !== F), K = !G.joinByLinkEnabled;
+        } = _i, H = `${ (0, r.getDomain)() }/group/join/${ F }`, I = (E || []).filter(_i => _i.id !== F), J = !G.joinByLinkEnabled;
         return (0, d.jsxs)(d.Fragment, {
             children: [
                 (0, d.jsxs)('div', {
@@ -1248,14 +1248,14 @@ c.register('eqwqZ', function(b, y) {
                     children: [
                         (0, d.jsxs)('div', {
                             style: {
-                                opacity: K ? 0.6 : 1,
-                                pointerEvents: K ? 'none' : 'auto'
+                                opacity: J ? 0.6 : 1,
+                                pointerEvents: J ? 'none' : 'auto'
                             },
                             children: [
-                                (0, d.jsx)(C, {
+                                (0, d.jsx)(_C, {
                                     children: 'Invite'
                                 }),
-                                (0, d.jsx)(D, {
+                                (0, d.jsx)(_D, {
                                     children: 'Get educators under your group license! Share the invite link below to have them automatically join this group.'
                                 }),
                                 (0, d.jsxs)('div', {
@@ -1265,13 +1265,13 @@ c.register('eqwqZ', function(b, y) {
                                     },
                                     children: [
                                         (0, d.jsx)(k.default, {
-                                            value: I,
+                                            value: H,
                                             readOnly: !0,
                                             size: 'large'
                                         }),
                                         (0, d.jsx)(h.default, {
                                             onClick: () => {
-                                                b(p)(I), l.default.success('Link copied to clipboard!');
+                                                _b(p)(H), l.default.success('Link copied to clipboard!');
                                             },
                                             style: {
                                                 marginLeft: 10
@@ -1352,8 +1352,8 @@ c.register('eqwqZ', function(b, y) {
                                             success: () => {
                                                 l.default.success(`Group is ${ G.joinByLinkEnabled ? 'closed' : 'open' } to new members!`), (0, t.refetchSpecificBulk)(F);
                                             },
-                                            error: H => (0, r.throwMessageError)({
-                                                e: H,
+                                            error: _i => (0, r.throwMessageError)({
+                                                e: _i,
                                                 default: {
                                                     title: 'Error switching.'
                                                 }
@@ -1361,11 +1361,11 @@ c.register('eqwqZ', function(b, y) {
                                         });
                                     },
                                     children: [
-                                        K ? 'Open' : 'Close',
+                                        J ? 'Open' : 'Close',
                                         ' group to new members'
                                     ]
                                 }),
-                                J.length && G.isActive ? (0, d.jsx)(q.default, {
+                                I.length && G.isActive ? (0, d.jsx)(q.default, {
                                     onClick: () => D(!0),
                                     children: 'Import members from previous group license'
                                 }) : null,
@@ -1381,41 +1381,41 @@ c.register('eqwqZ', function(b, y) {
                 (0, d.jsx)(v.default, {
                     visible: C,
                     currentBulk: F,
-                    otherBulks: J,
+                    otherBulks: I,
                     close: () => D(!1)
                 })
             ]
         });
     };
-    const C = n.default.div(w || (w = y`
+    const _C = n.default.div(w || (w = y`
   font-weight: ${ 0 };
   font-size: 30px;
 `), o.FontWeights.UltraBold),
-        D = n.default.div(x || (x = y`
+        _D = n.default.div(x || (x = y`
   font-size: 18px;
   margin-top: -7px;
 `));
-}), c.register('BSqHU', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('rPP+1', function(_b, c) {
+    _i(_b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('YqSK/'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('rZa1L'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'DollarOutlined';
-    var i = e.forwardRef(h);
-}), c.register('YqSK/', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('rZa1L', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -1432,27 +1432,27 @@ c.register('eqwqZ', function(b, y) {
         name: 'dollar',
         theme: 'outlined'
     };
-}), c.register('qgO2124', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('gCqar24', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('wOJzl24'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('skUox22'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'UsergroupAddOutlined';
-    var i = e.forwardRef(h);
-}), c.register('wOJzl24', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('skUox22', function(b, c) {
+    _b(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -1469,38 +1469,38 @@ c.register('eqwqZ', function(b, y) {
         name: 'usergroup-add',
         theme: 'outlined'
     };
-}), c.register('cRfEu', function(b, u) {
-    a(b.exports, 'CardStyle', function() {
-        return n;
-    }), a(b.exports, 'default', function() {
-        return q;
+}), a.register('q7Uge', function(b, c) {
+    _b(b.exports, 'CardStyle', function() {
+        return _n;
+    }), _b(b.exports, 'default', function() {
+        return _q;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('f9f+a'),
-        f = c('ExtIT'),
-        g = c('gSUVO'),
-        h = c('lmfrI'),
-        i = c('0wLl2'),
-        j = c('Ex2wZ'),
-        k = c('cBb/w'),
-        l = c('PjB0f'),
-        m = c('VF2Dt');
-    const n = {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('oXQNI'),
+        f = a('fmVdR'),
+        g = a('b5kvC'),
+        h = a('sHRDd'),
+        i = a('hHkFq'),
+        j = a('p+dWb'),
+        k = a('R6gfH'),
+        l = a('PMl60'),
+        m = a('wQa8B');
+    const _n = {
             fontFamily: g.Fonts.SFPro,
             color: h.default.Black
         },
-        o = a => (0, d.jsx)(e.default, {
+        o = _b => (0, d.jsx)(e.default, {
             style: {
-                ...n,
+                ..._n,
                 minWidth: 215,
                 marginLeft: 20
             },
             children: (0, d.jsxs)('div', {
                 className: 'flex vc',
                 children: [
-                    (0, d.jsx)(p, {
-                        count: a.maxSeats,
+                    (0, d.jsx)(_p, {
+                        count: _b.maxSeats,
                         description: 'total seats'
                     }),
                     (0, d.jsx)(f.default, {
@@ -1510,14 +1510,14 @@ c.register('eqwqZ', function(b, y) {
                             marginRight: 20
                         }
                     }),
-                    (0, d.jsx)(p, {
-                        count: a.seatsRemaining,
-                        description: `${ (0, l.plural)('seat', a.seatsRemaining) } remaining`
+                    (0, d.jsx)(_p, {
+                        count: _b.seatsRemaining,
+                        description: `${ (0, l.plural)('seat', _b.seatsRemaining) } remaining`
                     })
                 ]
             })
         }),
-        p = a => (0, d.jsxs)('div', {
+        _p = _b => (0, d.jsxs)('div', {
             className: 'flex flex-column vc',
             children: [
                 (0, d.jsx)('div', {
@@ -1525,7 +1525,7 @@ c.register('eqwqZ', function(b, y) {
                         fontSize: 23,
                         fontWeight: g.FontWeights.UltraBold
                     },
-                    children: a.count
+                    children: _b.count
                 }),
                 (0, d.jsx)('div', {
                     style: {
@@ -1533,19 +1533,19 @@ c.register('eqwqZ', function(b, y) {
                         fontSize: 11,
                         opacity: 0.8
                     },
-                    children: a.description
+                    children: _b.description
                 })
             ]
         });
-    var q = a => {
+    var _q = _b => {
         const {
             bulkId: r,
             bulk: s
-        } = t, u = Math.abs(s.maxSeats - s.seats.length);
+        } = _b, t = Math.abs(s.maxSeats - s.seats.length);
         return (0, d.jsxs)(d.Fragment, {
             children: [
                 (0, d.jsx)(e.default, {
-                    style: n,
+                    style: _n,
                     children: (0, d.jsxs)('div', {
                         className: 'flex vc',
                         style: {
@@ -1576,7 +1576,7 @@ c.register('eqwqZ', function(b, y) {
                             }),
                             !s.hiddenSeatLimit && (0, d.jsx)(o, {
                                 maxSeats: s.maxSeats,
-                                seatsRemaining: u
+                                seatsRemaining: t
                             })
                         ]
                     })
@@ -1585,28 +1585,28 @@ c.register('eqwqZ', function(b, y) {
                     style: {
                         marginTop: 10
                     },
-                    children: s.seats.map(t => (0, d.jsx)('div', {
+                    children: s.seats.map(_b => (0, d.jsx)('div', {
                         children: (0, d.jsx)(j.default, {
-                            email: t,
+                            email: _b,
                             remove: () => {
-                                return s = t, void(0, l.request)({
+                                return s = _b, void(0, l.request)({
                                     url: '/api/bulk/remove-member',
                                     data: {
                                         bulk: r,
                                         removedMember: s
                                     },
                                     success: () => (0, m.refetchSpecificBulk)(r),
-                                    error: t => (0, l.throwMessageError)({
-                                        e: t,
+                                    error: _b => (0, l.throwMessageError)({
+                                        e: _b,
                                         default: {
                                             title: 'Error removing user from license'
                                         }
                                     })
                                 });
-                                var v;
+                                var u;
                             }
                         })
-                    }, 'member-' + t))
+                    }, 'member-' + _b))
                 }) : (0, d.jsx)(e.default, {
                     className: 'maxWidth',
                     style: {
@@ -1617,46 +1617,46 @@ c.register('eqwqZ', function(b, y) {
             ]
         });
     };
-}), c.register('SlNZ027', function(a, b) {
-    var d = c('QMiH027'),
+}), a.register('jlX4s16', function(_b, c) {
+    var d = a('RnV2k27'),
         e = {
             'text/plain': 'Text',
             'text/html': 'Url',
             default: 'Text'
         };
-    a.exports = function(a, b) {
-        var f, g, h, i, j, k, l = !1;
-        b || (b = {}), f = b.debug || !1;
+    _b.exports = function(f, g) {
+        var h, i, j, k, l, m, n = !1;
+        g || (g = {}), h = g.debug || !1;
         try {
-            if (h = d(), i = document.createRange(), j = document.getSelection(), (k = document.createElement('span')).textContent = a, k.ariaHidden = 'true', k.style.all = 'unset', k.style.position = 'fixed', k.style.top = 0, k.style.clip = 'rect(0, 0, 0, 0)', k.style.whiteSpace = 'pre', k.style.webkitUserSelect = 'text', k.style.MozUserSelect = 'text', k.style.msUserSelect = 'text', k.style.userSelect = 'text', k.addEventListener('copy', function(d) {
-                    if (d.stopPropagation(), b.format)
-                        if (d.preventDefault(), void 0 === d.clipboardData) {
-                            f && console.warn('unable to use e.clipboardData'), f && console.warn('trying IE specific stuff'), window.clipboardData.clearData();
-                            var m = e[b.format] || e.default;
-                            window.clipboardData.setData(m, a);
+            if (j = d(), k = document.createRange(), l = document.getSelection(), (m = document.createElement('span')).textContent = f, m.ariaHidden = 'true', m.style.all = 'unset', m.style.position = 'fixed', m.style.top = 0, m.style.clip = 'rect(0, 0, 0, 0)', m.style.whiteSpace = 'pre', m.style.webkitUserSelect = 'text', m.style.MozUserSelect = 'text', m.style.msUserSelect = 'text', m.style.userSelect = 'text', m.addEventListener('copy', function(o) {
+                    if (o.stopPropagation(), g.format)
+                        if (o.preventDefault(), void 0 === o.clipboardData) {
+                            h && console.warn('unable to use e.clipboardData'), h && console.warn('trying IE specific stuff'), window.clipboardData.clearData();
+                            var p = e[g.format] || e.default;
+                            window.clipboardData.setData(p, f);
                         } else
-                            d.clipboardData.clearData(), d.clipboardData.setData(b.format, a);
-                    b.onCopy && (d.preventDefault(), b.onCopy(d.clipboardData));
-                }), document.body.appendChild(k), i.selectNodeContents(k), j.addRange(i), !document.execCommand('copy'))
+                            o.clipboardData.clearData(), o.clipboardData.setData(g.format, f);
+                    g.onCopy && (o.preventDefault(), g.onCopy(o.clipboardData));
+                }), document.body.appendChild(m), k.selectNodeContents(m), l.addRange(k), !document.execCommand('copy'))
                 throw new Error('copy command was unsuccessful');
-            l = !0;
+            n = !0;
         } catch (d) {
-            f && console.error('unable to copy using execCommand: ', d), f && console.warn('trying IE specific stuff');
+            h && console.error('unable to copy using execCommand: ', d), h && console.warn('trying IE specific stuff');
             try {
-                window.clipboardData.setData(b.format || 'text', a), b.onCopy && b.onCopy(window.clipboardData), l = !0;
+                window.clipboardData.setData(g.format || 'text', f), g.onCopy && g.onCopy(window.clipboardData), n = !0;
             } catch (d) {
-                f && console.error('unable to copy using clipboardData: ', d), f && console.error('falling back to prompt'), g = function(a) {
-                    var m = (/mac os x/i.test(navigator.userAgent) ? '\u2318' : 'Ctrl') + '+C';
-                    return a.replace(/#{\s*key\s*}/g, m);
-                }('message' in b ? b.message : 'Copy to clipboard: #{key}, Enter'), window.prompt(g, a);
+                h && console.error('unable to copy using clipboardData: ', d), h && console.error('falling back to prompt'), i = function(o) {
+                    var p = (/mac os x/i.test(navigator.userAgent) ? '\u2318' : 'Ctrl') + '+C';
+                    return o.replace(/#{\s*key\s*}/g, p);
+                }('message' in g ? g.message : 'Copy to clipboard: #{key}, Enter'), window.prompt(i, f);
             }
         } finally {
-            j && ('function' == typeof j.removeRange ? j.removeRange(i) : j.removeAllRanges()), k && document.body.removeChild(k), h();
+            l && ('function' == typeof l.removeRange ? l.removeRange(k) : l.removeAllRanges()), m && document.body.removeChild(m), j();
         }
-        return l;
+        return n;
     };
-}), c.register('QMiH027', function(a, b) {
-    a.exports = function() {
+}), a.register('RnV2k27', function(b, c) {
+    b.exports = function() {
         var d = document.getSelection();
         if (!d.rangeCount)
             return function() {};
@@ -1672,42 +1672,42 @@ c.register('eqwqZ', function(b, y) {
         }
         return d.removeAllRanges(),
             function() {
-                'Caret' === d.type && d.removeAllRanges(), d.rangeCount || f.forEach(function(e) {
-                    d.addRange(e);
+                'Caret' === d.type && d.removeAllRanges(), d.rangeCount || f.forEach(function(h) {
+                    d.addRange(h);
                 }), e && e.focus();
             };
     };
-}), c.register('5XmoU', function(u, d) {
-    a(u.exports, 'default', function() {
-        return s;
+}), a.register('g9B6V', function(b, c) {
+    _b(b.exports, 'default', function() {
+        return _s;
     });
-    var d = c('8kSQZ'),
-        e = c('f9f+a'),
-        f = c('ExtIT'),
-        g = c('cR5QE'),
-        h = c('lmfrI'),
-        i = c('gSUVO'),
-        j = c('GFgjD'),
-        k = c('PjB0f'),
-        l = c('2MCaL'),
-        m = c('uPP4W'),
-        n = c('h99Nu'),
-        o = c('VF2Dt');
-    let p, q, r = a => a;
-    var s = a => {
+    var d = a('0hzx+'),
+        e = a('oXQNI'),
+        f = a('fmVdR'),
+        g = a('YRlpt'),
+        h = a('sHRDd'),
+        i = a('b5kvC'),
+        j = a('INKb2'),
+        k = a('PMl60'),
+        l = a('ECzOP'),
+        m = a('LEQ5w'),
+        n = a('Axq+p'),
+        o = a('wQa8B');
+    let p, q, r = _b => _b;
+    var _s = _b => {
         const [t, u] = m.useState(!1);
         return (0, d.jsx)(g.default, {
-            open: a.visible,
-            onCancel: a.close,
+            open: _b.visible,
+            onCancel: _b.close,
             width: 650,
             footer: null,
             closable: !0,
             style: {
                 top: 25
             },
-            children: (0, d.jsxs)(t, {
+            children: (0, d.jsxs)(_t, {
                 children: [
-                    (0, d.jsx)(u, {
+                    (0, d.jsx)(_u, {
                         children: 'Import members from which group license?'
                     }),
                     (0, d.jsx)(f.default, {
@@ -1715,21 +1715,21 @@ c.register('eqwqZ', function(b, y) {
                             margin: '30px 0px'
                         }
                     }),
-                    a.otherBulks.map(d => (0, d.jsxs)(e.default, {
+                    _b.otherBulks.map(c => (0, d.jsxs)(e.default, {
                         style: {
                             marginBottom: 10,
                             color: h.default.Black
                         },
                         className: 'maxWidth',
                         onClick: () => {
-                            return b = d.id, e = d.name, void(t || (u(!0), (0, k.request)({
+                            return _v = c.id, e = c.name, void(t || (u(!0), (0, k.request)({
                                 url: '/api/bulk/members/import',
                                 data: {
-                                    bulk: a.currentBulk,
-                                    importedBulk: b
+                                    bulk: _b.currentBulk,
+                                    importedBulk: _v
                                 },
                                 success: () => {
-                                    (0, o.refetchSpecificBulk)(a.currentBulk), g.default.success({
+                                    (0, o.refetchSpecificBulk)(_b.currentBulk), g.default.success({
                                         title: 'Members imported!',
                                         content: (0, d.jsxs)(d.Fragment, {
                                             children: [
@@ -1742,17 +1742,17 @@ c.register('eqwqZ', function(b, y) {
                                         })
                                     });
                                 },
-                                error: a => {
+                                error: _b => {
                                     (0, j.throwError)({
                                         title: 'Error importing members',
                                         content: 'Please try again.'
                                     });
                                 },
                                 both: () => {
-                                    u(!1), a.close();
+                                    u(!1), _b.close();
                                 }
                             })));
-                            var v, w;
+                            var _v, w;
                         },
                         hoverable: !0,
                         children: [
@@ -1761,53 +1761,53 @@ c.register('eqwqZ', function(b, y) {
                                     fontSize: 18,
                                     fontWeight: i.FontWeights.Bold
                                 },
-                                children: d.name
+                                children: c.name
                             }),
                             (0, d.jsxs)('div', {
                                 children: [
                                     'Started',
                                     ' ',
-                                    b(l)((0, k.dateFromObjectId)(d.id)).format('MMMM Do, YYYY')
+                                    _c(l)((0, k.dateFromObjectId)(c.id)).format('MMMM Do, YYYY')
                                 ]
                             })
                         ]
-                    }, `import-sub-${ d.id }`))
+                    }, `import-sub-${ c.id }`))
                 ]
             })
         });
     };
-    const t = n.default.div(p || (p = r`
+    const _t = n.default.div(p || (p = r`
   color: ${ 0 };
   font-family: ${ 0 };
 `), h.default.Black, i.Fonts.SFPro),
-        u = n.default.div(q || (q = r`
+        _u = n.default.div(q || (q = r`
   font-size: 28px;
   font-weight: ${ 0 };
   line-height: 1;
   margin-top: 20px;
 `), i.FontWeights.Bold);
-}), c.register('5Ey98', function(a, b) {
-    a.exports = Promise.all([
-        import('./' + c('tIOy4').resolve('fzXqn')),
-        import('./' + c('tIOy4').resolve('kKpXS')),
-        import('./' + c('tIOy4').resolve('bRCFZ'))
-    ]).then(() => c('nGQWW'));
-}), c.register('9MSfK', function(b, j) {
-    a(b.exports, 'default', function() {
-        return l;
+}), a.register('MvRMF', function(_b, _c) {
+    _b.exports = Promise.all([
+        import('./' + a('HmN9A').resolve('fzXqn')),
+        import('./' + a('HmN9A').resolve('kKpXS')),
+        import('./' + a('HmN9A').resolve('bRCFZ'))
+    ]).then(() => a('/G2V3'));
+}), a.register('2uW6I', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('AZuy8'),
-        f = c('h99Nu'),
-        g = c('iHElh'),
-        h = c('ovhV9'),
-        i = c('PjB0f'),
-        j = c('DuGQ5');
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Y0Ni9'),
+        f = a('Axq+p'),
+        g = a('6CIVV'),
+        h = a('jXz1K'),
+        i = a('PMl60'),
+        j = a('RfJdQ');
     let k;
-    var l = () => {
+    var _l = () => {
         const {
-            isLoading: m,
+            isLoading: _m,
             data: n
         } = (0, e.default)();
         return (0, d.jsxs)(d.Fragment, {
@@ -1816,8 +1816,8 @@ c.register('eqwqZ', function(b, y) {
                     title: 'Group Licenses'
                 }),
                 (() => {
-                    if (m)
-                        return (0, d.jsx)(m, {
+                    if (_m)
+                        return (0, d.jsx)(_m, {
                             children: (0, d.jsx)(g.default, {
                                 size: 'large'
                             })
@@ -1830,25 +1830,25 @@ c.register('eqwqZ', function(b, y) {
             ]
         });
     };
-    const m = f.default.div.attrs({
+    const _m = f.default.div.attrs({
         className: 'maxAll flex-center'
-    })(k || (k = (a => a)``));
-}), c.register('DuGQ5', function(b, j) {
-    a(b.exports, 'default', function() {
-        return p;
+    })(k || (k = (_h => _h)``));
+}), a.register('RfJdQ', function(b, c) {
+    _h(b.exports, 'default', function() {
+        return _p;
     });
-    var d = c('8kSQZ'),
-        e = c('IsmrL');
-    c('uPP4W');
-    var f = c('h99Nu'),
-        g = c('0wLl2'),
-        h = c('lmfrI'),
-        i = c('q721a'),
-        j = c('iYEuk12'),
-        k = c('ovhV9');
-    let l, m, n, o = a => a;
-    var p = () => (0, d.jsx)(q, {
-        children: (0, d.jsxs)(r, {
+    var d = a('0hzx+'),
+        e = a('ulE4q');
+    a('LEQ5w');
+    var f = a('Axq+p'),
+        g = a('hHkFq'),
+        h = a('sHRDd'),
+        i = a('gs4MT'),
+        j = a('2HvvA11'),
+        k = a('jXz1K');
+    let l, m, n, o = _h => _h;
+    var _p = () => (0, d.jsx)(_q, {
+        children: (0, d.jsxs)(_r, {
             children: [
                 (0, d.jsxs)(k.Title, {
                     children: [
@@ -1856,7 +1856,7 @@ c.register('eqwqZ', function(b, y) {
                         ' Groups'
                     ]
                 }),
-                (0, d.jsxs)(s, {
+                (0, d.jsxs)(_s, {
                     children: [
                         'Welcome to ',
                         g.COMPANY_NAME,
@@ -1880,10 +1880,10 @@ c.register('eqwqZ', function(b, y) {
             ]
         })
     });
-    const q = f.default.div.attrs({
+    const _q = f.default.div.attrs({
             className: 'maxAll flex-center'
         })(l || (l = o``)),
-        r = f.default.div.attrs({
+        _r = f.default.div.attrs({
             className: 'flex-center flex-column medium-shadow'
         })(m || (m = o`
   width: 80%;
@@ -1893,42 +1893,42 @@ c.register('eqwqZ', function(b, y) {
   padding: 45px;
   border-radius: 6px;
 `), h.default.White),
-        s = f.default.div(n || (n = o`
+        _s = f.default.div(n || (n = o`
   font-size: 16px;
   margin-top: 3px;
 `));
-}), c.register('XRX1525', function(b, j) {
-    a(b.exports, 'default', function() {
-        return g;
+}), a.register('kRwUk25', function(b, c) {
+    _h(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('xgR9K'),
-        e = c('uPP4W'),
-        f = c('qEw51');
+    var d = a('TTc70'),
+        e = a('LEQ5w'),
+        f = a('1P5ls');
 
-    function g(a, b, c) {
-        return function(j) {
+    function _g(_h, i, j) {
+        return function(k) {
             const {
-                prefixCls: h,
-                style: i
-            } = j, k = e.useRef(null), [l, m] = e.useState(0), [n, o] = e.useState(0), [p, q] = (0, d.default)(!1, {
-                value: j.open
+                prefixCls: l,
+                style: m
+            } = k, n = e.useRef(null), [o, p] = e.useState(0), [q, r] = e.useState(0), [s, t] = (0, d.default)(!1, {
+                value: k.open
             }), {
-                getPrefixCls: r
-            } = e.useContext(f.ConfigContext), s = r(b || 'select', h);
+                getPrefixCls: u
+            } = e.useContext(f.ConfigContext), v = u(i || 'select', l);
             return e.useEffect(() => {
-                if (q(!0), 'undefined' != typeof ResizeObserver) {
-                    const t = new ResizeObserver(t => {
-                            const u = t[0].target;
-                            m(u.offsetHeight + 8), o(u.offsetWidth);
+                if (t(!0), 'undefined' != typeof ResizeObserver) {
+                    const w = new ResizeObserver(w => {
+                            const x = w[0].target;
+                            p(x.offsetHeight + 8), r(x.offsetWidth);
                         }),
-                        u = setInterval(() => {
-                            var v;
-                            const w = c ? `.${ c(s) }` : `.${ s }-dropdown`,
-                                x = null === (v = k.current) || void 0 === v ? void 0 : v.querySelector(w);
-                            x && (clearInterval(u), t.observe(x));
+                        x = setInterval(() => {
+                            var y;
+                            const z = j ? `.${ j(v) }` : `.${ v }-dropdown`,
+                                A = null === (y = n.current) || void 0 === y ? void 0 : y.querySelector(z);
+                            A && (clearInterval(x), w.observe(A));
                         }, 10);
                     return () => {
-                        clearInterval(u), t.disconnect();
+                        clearInterval(x), w.disconnect();
                     };
                 }
             }, []), e.createElement(f.default, {
@@ -1940,29 +1940,29 @@ c.register('eqwqZ', function(b, y) {
                     }
                 }
             }, e.createElement('div', {
-                ref: k,
+                ref: n,
                 style: {
-                    paddingBottom: l,
+                    paddingBottom: o,
                     position: 'relative',
                     width: 'fit-content',
-                    minWidth: n
+                    minWidth: q
                 }
-            }, e.createElement(a, Object.assign({}, j, {
-                style: Object.assign(Object.assign({}, i), {
+            }, e.createElement(_h, Object.assign({}, k, {
+                style: Object.assign(Object.assign({}, m), {
                     margin: 0
                 }),
-                open: p,
-                visible: p,
-                getPopupContainer: () => k.current
+                open: s,
+                visible: s,
+                getPopupContainer: () => n.current
             }))));
         };
     }
-}), c.register('2TjlJ25', function(b, p) {
-    a(b.exports, 'initMoveMotion', function() {
-        return m;
+}), a.register('N9LXh20', function(b, c) {
+    _d(b.exports, 'initMoveMotion', function() {
+        return _m;
     });
-    var d = c('M5GjZ'),
-        e = c('YNerC');
+    var d = a('wC0DT'),
+        e = a('4vKB9');
     const f = new(0, d.Keyframes)('antMoveDownIn', {
             '0%': {
                 transform: 'translate3d(0, 100%, 0)',
@@ -2075,56 +2075,56 @@ c.register('eqwqZ', function(b, y) {
                 outKeyframes: k
             }
         },
-        m = (a, b) => {
+        _m = (_d, b) => {
             const {
                 antCls: n
-            } = o, p = `${ n }-${ b }`, {
-                inKeyframes: q,
-                outKeyframes: r
+            } = _d, o = `${ n }-${ b }`, {
+                inKeyframes: p,
+                outKeyframes: q
             } = l[b];
             return [
-                (0, e.initMotion)(p, q, r, o.motionDurationMid),
+                (0, e.initMotion)(o, p, q, _d.motionDurationMid),
                 {
-                    [`\n        ${ p }-enter,\n        ${ p }-appear\n      `]: {
+                    [`\n        ${ o }-enter,\n        ${ o }-appear\n      `]: {
                         opacity: 0,
-                        animationTimingFunction: o.motionEaseOutCirc
+                        animationTimingFunction: _d.motionEaseOutCirc
                     },
-                    [`${ p }-leave`]: {
-                        animationTimingFunction: o.motionEaseInOutCirc
+                    [`${ o }-leave`]: {
+                        animationTimingFunction: _d.motionEaseInOutCirc
                     }
                 }
             ];
         };
-}), c.register('5nJMd26', function(n, o) {
-    a(n.exports, 'SpaceContext', function() {
-        return m;
-    }, function(a) {
-        return m = a;
-    }), a(n.exports, 'default', function() {
-        return u;
-    }, function(a) {
-        return u = a;
+}), a.register('cvto726', function(b, c) {
+    _d(b.exports, 'SpaceContext', function() {
+        return _m;
+    }, function(_d) {
+        return _m = _d;
+    }), _d(b.exports, 'default', function() {
+        return _u;
+    }, function(_d) {
+        return _u = _d;
     });
-    var d = c('VAIs1'),
-        e = c('8N2Yw'),
-        f = c('uPP4W'),
-        g = c('qEw51'),
-        h = c('azbx226'),
-        i = c('okyqG'),
-        j = c('W5kb426'),
-        k = c('pGyzR'),
-        l = function(a, b) {
-            var m = {};
-            for (var n in a)
-                Object.prototype.hasOwnProperty.call(a, n) && b.indexOf(n) < 0 && (m[n] = a[n]);
-            if (null != a && 'function' == typeof Object.getOwnPropertySymbols) {
-                var o = 0;
-                for (n = Object.getOwnPropertySymbols(a); o < n.length; o++)
-                    b.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(a, n[o]) && (m[n[o]] = a[n[o]]);
+    var d = a('JrtKP'),
+        e = a('Ug51y0'),
+        f = a('LEQ5w'),
+        g = a('1P5ls'),
+        h = a('4gObz26'),
+        i = a('VqIM2'),
+        j = a('P8P+826'),
+        k = a('/xlT+'),
+        l = function(m, n) {
+            var o = {};
+            for (var p in m)
+                Object.prototype.hasOwnProperty.call(m, p) && n.indexOf(p) < 0 && (o[p] = m[p]);
+            if (null != m && 'function' == typeof Object.getOwnPropertySymbols) {
+                var q = 0;
+                for (p = Object.getOwnPropertySymbols(m); q < p.length; q++)
+                    n.indexOf(p[q]) < 0 && Object.prototype.propertyIsEnumerable.call(m, p[q]) && (o[p[q]] = m[p[q]]);
             }
-            return m;
+            return o;
         };
-    const m = f.createContext({
+    const _m = f.createContext({
             latestIndex: 0,
             horizontalSize: 0,
             verticalSize: 0,
@@ -2135,7 +2135,7 @@ c.register('eqwqZ', function(b, y) {
             middle: 16,
             large: 24
         };
-    const o = a => {
+    const o = _G => {
         const {
             getPrefixCls: p,
             space: q,
@@ -2143,7 +2143,7 @@ c.register('eqwqZ', function(b, y) {
         } = f.useContext(g.ConfigContext), {
             size: s = (null == q ? void 0 : q.size) || 'small',
             align: t,
-            className: u,
+            className: _u,
             rootClassName: v,
             children: w,
             direction: x = 'horizontal',
@@ -2151,7 +2151,7 @@ c.register('eqwqZ', function(b, y) {
             split: z,
             style: A,
             wrap: B = !1
-        } = C, D = l(C, [
+        } = _G, C = l(_G, [
             'size',
             'align',
             'className',
@@ -2162,83 +2162,83 @@ c.register('eqwqZ', function(b, y) {
             'split',
             'style',
             'wrap'
-        ]), E = (0, h.default)(), [F, G] = f.useMemo(() => (Array.isArray(s) ? s : [
+        ]), D = (0, h.default)(), [E, F] = f.useMemo(() => (Array.isArray(s) ? s : [
             s,
             s
-        ]).map(C => function(C) {
-            return 'string' == typeof C ? n[C] : C || 0;
-        }(C)), [s]), H = (0, e.default)(w, {
+        ]).map(_G => function(_G) {
+            return 'string' == typeof _G ? n[_G] : _G || 0;
+        }(_g)), [s]), G = (0, e.default)(w, {
             keepEmpty: !0
-        }), I = void 0 === t && 'horizontal' === x ? 'center' : t, J = p('space', y), [K, L] = (0, k.default)(J), M = b(d)(J, L, `${ J }-${ x }`, {
-            [`${ J }-rtl`]: 'rtl' === r,
-            [`${ J }-align-${ I }`]: I
-        }, u, v), N = `${ J }-item`, O = 'rtl' === r ? 'marginLeft' : 'marginRight';
-        let P = 0;
-        const Q = H.map((C, b) => {
-                null != C && (P = b);
-                const R = C && C.key || `${ N }-${ b }`;
+        }), H = void 0 === t && 'horizontal' === x ? 'center' : t, I = p('space', y), [J, K] = (0, k.default)(I), L = _b(d)(I, K, `${ I }-${ x }`, {
+            [`${ I }-rtl`]: 'rtl' === r,
+            [`${ I }-align-${ H }`]: H
+        }, _u, v), M = `${ I }-item`, N = 'rtl' === r ? 'marginLeft' : 'marginRight';
+        let O = 0;
+        const P = G.map((_g, _b) => {
+                null != _g && (O = _b);
+                const Q = _g && _g.key || `${ M }-${ _b }`;
                 return f.createElement(j.default, {
-                    className: N,
-                    key: R,
+                    className: M,
+                    key: Q,
                     direction: x,
-                    index: b,
-                    marginDirection: O,
+                    index: _b,
+                    marginDirection: N,
                     split: z,
                     wrap: B
-                }, C);
+                }, _g);
             }),
-            R = f.useMemo(() => ({
-                horizontalSize: F,
-                verticalSize: G,
-                latestIndex: P,
-                supportFlexGap: E
+            Q = f.useMemo(() => ({
+                horizontalSize: E,
+                verticalSize: F,
+                latestIndex: O,
+                supportFlexGap: D
             }), [
+                E,
                 F,
-                G,
-                P,
-                E
+                O,
+                D
             ]);
-        if (0 === H.length)
+        if (0 === G.length)
             return null;
-        const S = {};
-        return B && (S.flexWrap = 'wrap', E || (S.marginBottom = -G)), E && (S.columnGap = F, S.rowGap = G), K(f.createElement('div', Object.assign({
-            className: M,
-            style: Object.assign(Object.assign({}, S), A)
-        }, D), f.createElement(m.Provider, {
-            value: R
-        }, Q)));
+        const R = {};
+        return B && (R.flexWrap = 'wrap', D || (R.marginBottom = -F)), D && (R.columnGap = E, R.rowGap = F), J(f.createElement('div', Object.assign({
+            className: L,
+            style: Object.assign(Object.assign({}, R), A)
+        }, C), f.createElement(_m.Provider, {
+            value: Q
+        }, P)));
     };
     o.Compact = i.default;
-    var p = q;
-}), c.register('azbx226', function(b, i) {
-    a(b.exports, 'default', function() {
-        return f;
+    var p = o;
+}), a.register('4gObz26', function(_b, c) {
+    _g(_b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('uPP4W'),
-        e = c('94UTy'),
-        f = () => {
-            const [g, h] = d.useState(!1);
+    var d = a('LEQ5w'),
+        e = a('XPzGa'),
+        _f = () => {
+            const [_g, h] = d.useState(!1);
             return d.useEffect(() => {
                 h((0, e.detectFlexGapSupported)());
-            }, []), g;
+            }, []), _g;
         };
-}), c.register('W5kb426', function(b, i) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('P8P+826', function(b, c) {
+    _g(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('uPP4W'),
-        e = c('5nJMd26');
+    var d = a('LEQ5w'),
+        e = a('cvto726');
 
-    function f(a) {
+    function _f(_g) {
         let {
-            className: g,
-            direction: h,
-            index: i,
-            marginDirection: j,
-            children: k,
-            split: l,
-            wrap: m
-        } = n;
+            className: h,
+            direction: i,
+            index: j,
+            marginDirection: k,
+            children: l,
+            split: m,
+            wrap: n
+        } = _g;
         const {
             horizontalSize: o,
             verticalSize: p,
@@ -2246,120 +2246,120 @@ c.register('eqwqZ', function(b, y) {
             supportFlexGap: r
         } = d.useContext(e.SpaceContext);
         let s = {};
-        return r || ('vertical' === h ? i < q && (s = {
-            marginBottom: o / (l ? 2 : 1)
-        }) : s = Object.assign(Object.assign({}, i < q && {
-            [j]: o / (l ? 2 : 1)
-        }), m && {
+        return r || ('vertical' === i ? j < q && (s = {
+            marginBottom: o / (m ? 2 : 1)
+        }) : s = Object.assign(Object.assign({}, j < q && {
+            [k]: o / (m ? 2 : 1)
+        }), n && {
             paddingBottom: p
-        })), null == k ? null : d.createElement(d.Fragment, null, d.createElement('div', {
-            className: g,
+        })), null == l ? null : d.createElement(d.Fragment, null, d.createElement('div', {
+            className: h,
             style: s
-        }, k), i < q && l && d.createElement('span', {
-            className: `${ g }-split`,
+        }, l), j < q && m && d.createElement('span', {
+            className: `${ h }-split`,
             style: s
-        }, l));
+        }, m));
     }
-}), c.register('2gkXu26', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('Kc6XZ23', function(b, c) {
+    _f(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         sideMargin: 50,
         optionWidth: 200
     };
-}), c.register('QNMlx24', function(b, h) {
-    a(b.exports, 'useMediaMatch', function() {
-        return e;
+}), a.register('/2bBN24', function(b, c) {
+    _f(b.exports, 'useMediaMatch', function() {
+        return _e;
     });
-    var d = c('uPP4W');
+    var d = a('LEQ5w');
 
-    function e(a) {
+    function _e(_f) {
         if ('undefined' == typeof window)
             return console.warn('useMediaMatch cannot function as window is undefined.'), !1;
-        var f = (0, d.useMemo)(function() {
-                return window.matchMedia(a);
-            }, [a]),
-            g = (0, d.useState)(function() {
-                return f.matches;
+        var g = (0, d.useMemo)(function() {
+                return window.matchMedia(_f);
+            }, [_f]),
+            h = (0, d.useState)(function() {
+                return g.matches;
             }),
-            h = g[0],
-            i = g[1];
+            i = h[0],
+            j = h[1];
         return (0, d.useEffect)(function() {
-            i(f.matches);
-            var j = function(j) {
-                return i(j.matches);
+            j(g.matches);
+            var k = function(l) {
+                return j(l.matches);
             };
-            return f.addEventListener ? (f.addEventListener('change', j), function() {
-                return f.removeEventListener('change', j);
-            }) : (f.addListener(j), function() {
-                return f.removeListener(j);
+            return g.addEventListener ? (g.addEventListener('change', k), function() {
+                return g.removeEventListener('change', k);
+            }) : (g.addListener(k), function() {
+                return g.removeListener(k);
             });
-        }, [f]), h;
+        }, [g]), i;
     }
-}), c.register('tYruc25', function(a, b) {
-    var d = a.exports && a.exports.__createBinding || (Object.create ? function(a, b, c, d) {
-            void 0 === d && (d = c), Object.defineProperty(a, d, {
+}), a.register('ptkti24', function(b, c) {
+    var d = b.exports && b.exports.__createBinding || (Object.create ? function(e, f, g, h) {
+            void 0 === h && (h = g), Object.defineProperty(e, h, {
                 enumerable: !0,
                 get: function() {
-                    return b[c];
+                    return f[g];
                 }
             });
-        } : function(a, b, c, d) {
-            void 0 === d && (d = c), a[d] = b[c];
+        } : function(e, f, g, h) {
+            void 0 === h && (h = g), e[h] = f[g];
         }),
-        e = a.exports && a.exports.__exportStar || function(a, b) {
-            for (var f in a)
-                'default' === f || Object.prototype.hasOwnProperty.call(b, f) || d(b, a, f);
+        e = b.exports && b.exports.__exportStar || function(f, g) {
+            for (var h in f)
+                'default' === h || Object.prototype.hasOwnProperty.call(g, h) || d(g, f, h);
         };
-    Object.defineProperty(a.exports, '__esModule', {
+    Object.defineProperty(b.exports, '__esModule', {
         value: !0
-    }), e(c('v2PV625'), a.exports), e(c('IqYAK22'), a.exports), e(c('50wG025'), a.exports);
-}), c.register('v2PV625', function(a, b) {
-    Object.defineProperty(a.exports, '__esModule', {
+    }), e(a('hDE9a25'), b.exports), e(a('rPed825'), b.exports), e(a('hpMH825'), b.exports);
+}), a.register('hDE9a25', function(b, c) {
+    Object.defineProperty(b.exports, '__esModule', {
         value: !0
-    }), a.exports.useBreakpoints = a.exports.useBreakpoint = void 0;
-    var d = c('50wG025');
-    a.exports.useBreakpoint = function(a) {
-        return (0, d.useWindowSize)().width < a;
-    }, a.exports.useBreakpoints = function(a) {
-        var e = (0, d.useWindowSize)().width;
-        return a.map(function(a) {
-            return e < a;
+    }), b.exports.useBreakpoints = b.exports.useBreakpoint = void 0;
+    var d = a('hpMH825');
+    b.exports.useBreakpoint = function(e) {
+        return (0, d.useWindowSize)().width < e;
+    }, b.exports.useBreakpoints = function(e) {
+        var f = (0, d.useWindowSize)().width;
+        return e.map(function(g) {
+            return f < g;
         });
     };
-}), c.register('50wG025', function(a, b) {
-    var d = a.exports && a.exports.__createBinding || (Object.create ? function(a, b, c, d) {
-            void 0 === d && (d = c), Object.defineProperty(a, d, {
+}), a.register('hpMH825', function(b, c) {
+    var d = b.exports && b.exports.__createBinding || (Object.create ? function(e, f, g, h) {
+            void 0 === h && (h = g), Object.defineProperty(e, h, {
                 enumerable: !0,
                 get: function() {
-                    return b[c];
+                    return f[g];
                 }
             });
-        } : function(a, b, c, d) {
-            void 0 === d && (d = c), a[d] = b[c];
+        } : function(e, f, g, h) {
+            void 0 === h && (h = g), e[h] = f[g];
         }),
-        e = a.exports && a.exports.__setModuleDefault || (Object.create ? function(a, b) {
-            Object.defineProperty(a, 'default', {
+        e = b.exports && b.exports.__setModuleDefault || (Object.create ? function(f, g) {
+            Object.defineProperty(f, 'default', {
                 enumerable: !0,
-                value: b
+                value: g
             });
-        } : function(a, b) {
-            a.default = b;
+        } : function(f, g) {
+            f.default = g;
         }),
-        f = a.exports && a.exports.__importStar || function(a) {
-            if (a && a.__esModule)
-                return a;
-            var g = {};
-            if (null != a)
-                for (var h in a)
-                    'default' !== h && Object.prototype.hasOwnProperty.call(a, h) && d(g, a, h);
-            return e(g, a), g;
+        f = b.exports && b.exports.__importStar || function(g) {
+            if (g && g.__esModule)
+                return g;
+            var h = {};
+            if (null != g)
+                for (var i in g)
+                    'default' !== i && Object.prototype.hasOwnProperty.call(g, i) && d(h, g, i);
+            return e(h, g), h;
         };
-    Object.defineProperty(a.exports, '__esModule', {
+    Object.defineProperty(b.exports, '__esModule', {
         value: !0
-    }), a.exports.useWindowSize = void 0;
-    var g = f(c('uPP4W'));
+    }), b.exports.useWindowSize = void 0;
+    var g = f(a('LEQ5w'));
 
     function h() {
         return {
@@ -2367,69 +2367,69 @@ c.register('eqwqZ', function(b, y) {
             width: window.innerWidth
         };
     }
-    a.exports.useWindowSize = function() {
-        var i = g.useState(h()),
-            j = i[0],
-            k = i[1];
+    b.exports.useWindowSize = function() {
+        var h = g.useState(_h()),
+            i = h[0],
+            j = h[1];
         return g.useLayoutEffect(function() {
-            function l() {
-                k(h());
+            function k() {
+                j(_h());
             }
-            return window.addEventListener('resize', l),
+            return window.addEventListener('resize', h),
                 function() {
-                    return window.removeEventListener('resize', l);
+                    return window.removeEventListener('resize', h);
                 };
-        }, []), j;
+        }, []), i;
     };
-}), c.register('IqYAK22', function(a, b) {
-    var d = a.exports && a.exports.__assign || function() {
-            return d = Object.assign || function(a) {
-                for (var e, f = 1, g = arguments.length; f < g; f++)
-                    for (var h in e = arguments[f])
-                        Object.prototype.hasOwnProperty.call(e, h) && (a[h] = e[h]);
-                return a;
+}), a.register('rPed825', function(b, c) {
+    var d = b.exports && b.exports.__assign || function() {
+            return d = Object.assign || function(e) {
+                for (var f, g = 1, h = arguments.length; g < h; g++)
+                    for (var i in f = arguments[g])
+                        Object.prototype.hasOwnProperty.call(f, i) && (e[i] = f[i]);
+                return e;
             }, d.apply(this, arguments);
         },
-        e = a.exports && a.exports.__createBinding || (Object.create ? function(a, b, c, d) {
-            void 0 === d && (d = c), Object.defineProperty(a, d, {
+        e = b.exports && b.exports.__createBinding || (Object.create ? function(f, g, h, i) {
+            void 0 === i && (i = h), Object.defineProperty(f, i, {
                 enumerable: !0,
                 get: function() {
-                    return b[c];
+                    return g[h];
                 }
             });
-        } : function(a, b, c, d) {
-            void 0 === d && (d = c), a[d] = b[c];
+        } : function(f, g, h, i) {
+            void 0 === i && (i = h), f[i] = g[h];
         }),
-        f = a.exports && a.exports.__setModuleDefault || (Object.create ? function(a, b) {
-            Object.defineProperty(a, 'default', {
+        f = b.exports && b.exports.__setModuleDefault || (Object.create ? function(g, h) {
+            Object.defineProperty(g, 'default', {
                 enumerable: !0,
-                value: b
+                value: h
             });
-        } : function(a, b) {
-            a.default = b;
+        } : function(g, h) {
+            g.default = h;
         }),
-        g = a.exports && a.exports.__importStar || function(a) {
-            if (a && a.__esModule)
-                return a;
-            var h = {};
-            if (null != a)
-                for (var i in a)
-                    'default' !== i && Object.prototype.hasOwnProperty.call(a, i) && e(h, a, i);
-            return f(h, a), h;
+        g = b.exports && b.exports.__importStar || function(h) {
+            if (h && h.__esModule)
+                return h;
+            var i = {};
+            if (null != h)
+                for (var j in h)
+                    'default' !== j && Object.prototype.hasOwnProperty.call(h, j) && e(i, h, j);
+            return f(i, h), i;
         };
-    Object.defineProperty(a.exports, '__esModule', {
+    Object.defineProperty(b.exports, '__esModule', {
         value: !0
-    }), a.exports.useComponentSize = void 0;
-    var h = g(c('uPP4W'));
-    a.exports.useComponentSize = function() {
-        var i = h.useState({
+    }), b.exports.useComponentSize = void 0;
+    var _h = g(a('LEQ5w'));
+    b.exports.useComponentSize = function() {
+        var i = _h.useState({
                 height: 0,
                 width: 0
             }),
             j = i[0],
             k = i[1],
-            l = h.useRef(),
-            m = h.useCallback(function() {
+            l = _h.useRef(),
+            m = _h.useCallback(function() {
                 if (l.current) {
                     var n = l.current.offsetHeight,
                         o = l.current.offsetWidth;
@@ -2442,7 +2442,7 @@ c.register('eqwqZ', function(b, y) {
                 j.height,
                 j.width
             ]);
-        return h.useLayoutEffect(function() {
+        return _h.useLayoutEffect(function() {
             if (l && l.current) {
                 var n = new ResizeObserver(m);
                 return n.observe(l.current),
@@ -2457,31 +2457,31 @@ c.register('eqwqZ', function(b, y) {
             ref: l
         }, j);
     };
-}), c.register('UnfL724', function(b, c) {
+}), a.register('s+8hx17', function(b, c) {
     let d;
     var e;
-    a(b.exports, 'SiteHeaderTheme', function() {
+    _i(b.exports, 'SiteHeaderTheme', function() {
         return d;
     }), (e = d || (d = {})).light = 'light', e.dark = 'dark';
-}), c.register('dN+BG24', function(b, c) {
+}), a.register('bdn4O17', function(b, c) {
     let d;
     var e;
-    a(b.exports, 'SiteHeaderAlpha', function() {
+    _i(b.exports, 'SiteHeaderAlpha', function() {
         return d;
     }), (e = d || (d = {})).none = 'none', e.standard = 'standard', e.darker = 'darker';
-}), c.register('mblWO24', function(b, d) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('PqMjn20', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
-        name: c('y8lS825').default.areaName,
+    var _d = {
+        name: a('Mmd0d21').default.areaName,
         iconImage: '/client/img/header/rewards.svg'
     };
-}), c.register('y8lS825', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('Mmd0d21', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         areaName: 'Rewards',
         level: 'Level',
         xp: 'XP',
@@ -2490,27 +2490,27 @@ c.register('eqwqZ', function(b, y) {
         sticker: 'Sticker',
         trail: 'Trail'
     };
-}), c.register('tK/kr24', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('+UyIc24', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('XEZLJ24'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('r3/DU21'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'LogoutOutlined';
-    var i = e.forwardRef(h);
-}), c.register('XEZLJ24', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('r3/DU21', function(b, c) {
+    _j(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -2527,23 +2527,23 @@ c.register('eqwqZ', function(b, y) {
         name: 'logout',
         theme: 'outlined'
     };
-}), c.register('bdX0N23', function(b, i) {
-    a(b.exports, 'onlyOfferAnnualUpgrade', function() {
-        return e;
+}), a.register('Rtfgy20', function(b, c) {
+    _j(b.exports, 'onlyOfferAnnualUpgrade', function() {
+        return _e;
     });
-    var d = c('3EnRx');
-    const e = () => 'annual-only' === d.default.getFeatureFlag('annual-only-pro');
-}), c.register('U8PGt', function(b, i) {
-    a(b.exports, 'default', function() {
-        return g;
+    var d = a('THxMC');
+    const _e = () => 'annual-only' === d.default.getFeatureFlag('annual-only-pro');
+}), a.register('BXKZi0', function(b, c) {
+    _j(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('uPP4W'),
-        e = c('KBP3q'),
-        f = c('vxwW1');
-    var g = (a, b) => {
+    var d = a('LEQ5w'),
+        e = a('+UcJ7'),
+        f = a('dR/Gi');
+    var _g = (_j, b) => {
         const [h, i] = d.useState(() => {
             var j, k;
-            const l = a && 'current' in a ? a.current : a;
+            const l = _j && 'current' in _j ? _j.current : _j;
             return l ? [
                 l.offsetWidth,
                 l.offsetHeight
@@ -2553,138 +2553,138 @@ c.register('eqwqZ', function(b, y) {
             ];
         });
         return (0, f.default)(() => {
-            const j = a && 'current' in a ? a.current : a;
+            const j = _j && 'current' in _j ? _j.current : _j;
             j && i([
                 j.offsetWidth,
                 j.offsetHeight
             ]);
-        }, [a]), (0, e.default)(a, a => {
-            const j = a.target;
+        }, [_j]), (0, e.default)(_j, _j => {
+            const j = _j.target;
             i([
                 j.offsetWidth,
                 j.offsetHeight
             ]);
         }), h;
     };
-}), c.register('KBP3q', function(b, l) {
-    a(b.exports, 'default', function() {
-        return j;
+}), a.register('+UcJ7', function(b, c) {
+    _j(b.exports, 'default', function() {
+        return _j;
     });
-    var d = c('tDeyh'),
-        e = c('vxwW1'),
-        f = c('X8LPJ'),
-        g = c('wZuO1');
+    var d = a('iIbRn'),
+        e = a('dR/Gi'),
+        f = a('20TiJ'),
+        g = a('18t62');
     let h;
     const i = () => h || (h = function() {
-        const j = new Map(),
-            k = new(0, d.default)((0, g.default)((k, c) => {
+        const _j = new Map(),
+            k = new(0, d.default)((0, g.default)((k, a) => {
                 var l;
                 if (1 === k.length)
-                    null === (l = j.get(k[0].target)) || void 0 === l || l(k[0], c);
+                    null === (l = _j.get(k[0].target)) || void 0 === l || l(k[0], a);
                 else
                     for (let m = 0; m < k.length; m++) {
                         var n;
-                        null === (n = j.get(k[m].target)) || void 0 === n || n(k[m], c);
+                        null === (n = _j.get(k[m].target)) || void 0 === n || n(k[m], a);
                     }
             }));
         return {
             observer: k,
-            subscribe(c, l) {
-                k.observe(c), j.set(c, l);
+            subscribe(l, m) {
+                k.observe(l), _j.set(l, m);
             },
-            unsubscribe(c) {
-                k.unobserve(c), j.delete(c);
+            unsubscribe(l) {
+                k.unobserve(l), _j.delete(l);
             }
         };
     }());
-    var j = function(a, b) {
-        const k = i(),
-            l = (0, f.default)(b);
+    var _j = function(k, l) {
+        const m = i(),
+            n = (0, f.default)(l);
         return (0, e.default)(() => {
-            let m = !1;
-            const n = a && 'current' in a ? a.current : a;
-            if (n)
-                return k.subscribe(n, (a, k) => {
-                    m || l.current(a, k);
+            let o = !1;
+            const p = k && 'current' in k ? k.current : k;
+            if (p)
+                return m.subscribe(p, (k, m) => {
+                    o || n.current(k, m);
                 }), () => {
-                    m = !0, k.unsubscribe(n);
+                    o = !0, m.unsubscribe(p);
                 };
         }, [
-            a,
             k,
-            l
-        ]), k.observer;
+            m,
+            n
+        ]), m.observer;
     };
-}), c.register('vxwW1', function(d, d) {
-    a(d.exports, 'default', function() {
-        return d;
+}), a.register('dR/Gi', function(b, c) {
+    _e(b.exports, 'default', function() {
+        return _d;
     });
-    var d = b(c('uPP4W'))['undefined' != typeof document && void 0 !== document.createElement ? 'useLayoutEffect' : 'useEffect'];
-}), c.register('X8LPJ', function(b, d) {
-    a(b.exports, 'default', function() {
-        return e;
+    var _d = _b(a('LEQ5w'))['undefined' != typeof document && void 0 !== document.createElement ? 'useLayoutEffect' : 'useEffect'];
+}), a.register('20TiJ', function(_b, c) {
+    _e(_b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('uPP4W');
-    var e = a => {
-        const f = d.useRef(a);
+    var d = a('LEQ5w');
+    var _e = _e => {
+        const f = d.useRef(_e);
         return d.useEffect(() => {
-            f.current = a;
+            f.current = _e;
         }), f;
     };
-}), c.register('wZuO1', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('18t62', function(b, c) {
+    _e(b.exports, 'default', function() {
+        return _d;
     });
-    var d = function(a) {
-        var e = [],
-            f = null,
-            g = function() {
-                for (var h = arguments.length, i = new Array(h), j = 0; j < h; j++)
-                    i[j] = arguments[j];
-                e = i, f || (f = requestAnimationFrame(function() {
-                    f = null, a.apply(void 0, e);
+    var _d = function(_e) {
+        var f = [],
+            g = null,
+            h = function() {
+                for (var i = arguments.length, j = new Array(i), k = 0; k < i; k++)
+                    j[k] = arguments[k];
+                f = j, g || (g = requestAnimationFrame(function() {
+                    g = null, _e.apply(void 0, f);
                 }));
             };
-        return g.cancel = function() {
-            f && (cancelAnimationFrame(f), f = null);
-        }, g;
+        return h.cancel = function() {
+            g && (cancelAnimationFrame(g), g = null);
+        }, h;
     };
-}), c.register('iMnBi', function(b, d) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('9R7cy', function(b, c) {
+    _b(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = a => (0, d.jsx)('i', {
-        className: `${ a.name }${ a.className ? ` ${ a.className }` : '' }`,
-        style: a.style
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var _e = _b => (0, d.jsx)('i', {
+        className: `${ _b.name }${ _b.className ? ` ${ _b.className }` : '' }`,
+        style: _b.style
     });
-}), c.register('u1rFO25', function(a, b) {
-    Object.defineProperty(a.exports, '__esModule', {
+}), a.register('7B+hJ16', function(_b, c) {
+    Object.defineProperty(_b.exports, '__esModule', {
         value: !0
-    }), a.exports.lazyWithPreload = void 0;
-    var d = c('uPP4W');
+    }), _b.exports.lazyWithPreload = void 0;
+    var d = a('LEQ5w');
 
-    function e(a) {
-        var f, g, h = (0, d.lazy)(a),
-            i = (0, d.forwardRef)(function(a, g) {
-                var j = (0, d.useRef)(null != f ? f : h);
-                return (0, d.createElement)(j.current, Object.assign(g ? {
-                    ref: g
-                } : {}, a));
+    function e(f) {
+        var g, h, i = (0, d.lazy)(f),
+            j = (0, d.forwardRef)(function(k, l) {
+                var m = (0, d.useRef)(null != g ? g : i);
+                return (0, d.createElement)(m.current, Object.assign(l ? {
+                    ref: l
+                } : {}, k));
             });
-        return i.preload = function() {
-            return g || (g = a().then(function(a) {
-                return f = a.default;
-            })), g;
-        }, i;
+        return j.preload = function() {
+            return h || (h = f().then(function(k) {
+                return g = k.default;
+            })), h;
+        }, j;
     }
-    a.exports.lazyWithPreload = e, a.exports.default = e;
-}), c.register('cdiGP23', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    _b.exports.lazyWithPreload = _d, _b.exports.default = _d;
+}), a.register('ibLRf19', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         White: 'white',
         Black: 'black',
         BackgroundGray: '#eeeeee',
@@ -2694,27 +2694,27 @@ c.register('eqwqZ', function(b, y) {
         LightSuccessGreen: '#6abf69',
         DarkSuccessGreen: '#2e7d32'
     };
-}), c.register('b+LEP25', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('dBHoZ22', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('Kl7ed13'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var _d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('7tpbI13'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, _d.default)((0, _d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'QuestionCircleOutlined';
-    var i = e.forwardRef(h);
-}), c.register('Kl7ed13', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('7tpbI13', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -2738,32 +2738,32 @@ c.register('eqwqZ', function(b, y) {
         name: 'question-circle',
         theme: 'outlined'
     };
-}), c.register('/rcVD4', function(b, d) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('NmrDs1', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('uPP4W'),
-        e = c('J7Y504');
-    var f = d.createContext(e.default);
-}), c.register('J7Y504', function(b, d) {
-    a(b.exports, 'default', function() {
-        return f;
+    var d = a('LEQ5w'),
+        e = a('ha/3p1');
+    var _f = d.createContext(e.default);
+}), a.register('ha/3p1', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('MHioT3'),
-        e = c('Ek+Wy4');
-    var f = {
+    var d = a('Hi0/F0'),
+        e = a('5ka2e1');
+    var _f = {
         login: new(0, d.default)(),
         navigation: new(0, e.default)()
     };
-}), c.register('MHioT3', function(b, d) {
-    a(b.exports, 'informationTypes', function() {
-        return f;
-    }), a(b.exports, 'default', function() {
-        return y;
+}), a.register('Hi0/F0', function(b, c) {
+    e(b.exports, 'informationTypes', function() {
+        return _f;
+    }), e(b.exports, 'default', function() {
+        return _x;
     });
-    var d = c('6gioo'),
-        e = c('UnUp5');
-    const f = {
+    var d = a('csYze'),
+        e = a('YuT/D');
+    const _f = {
             email: 'EMAIL',
             password: 'PASSWORD',
             accountPassword: 'ACCOUNT_PASSWORD',
@@ -2811,24 +2811,24 @@ c.register('eqwqZ', function(b, y) {
             organization: t,
             acceptsLatestPolicies: u,
             authenticated: v
-        } = w;
-    class x {
+        } = g;
+    class w {
         constructor() {
-            this.userExists = h, this.email = i, this.accountType = j, this.googleToken = k, this.firstName = l, this.lastName = m, this.password = n, this.schoolId = o, this.districtId = p, this.country = q, this.areaOfExpertise = r, this.gradeLevel = s, this.organization = t, this.acceptsLatestPolicies = u, this.authenticated = v, this.informationNeeded = e.observable.array([f.email]), this.reset = () => {
-                Object.keys(w).forEach(a => this[a] = w[a]), this.informationNeeded.replace([f.email]);
+            this.userExists = h, this.email = i, this.accountType = j, this.googleToken = k, this.firstName = l, this.lastName = m, this.password = n, this.schoolId = o, this.districtId = p, this.country = q, this.areaOfExpertise = r, this.gradeLevel = s, this.organization = t, this.acceptsLatestPolicies = u, this.authenticated = v, this.informationNeeded = e.observable.array([_f.email]), this.reset = () => {
+                Object.keys(g).forEach(e => this[e] = g[e]), this.informationNeeded.replace([_f.email]);
             }, (0, e.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], x.prototype, 'userExists', void 0), (0, d.__decorate)([e.observable], x.prototype, 'email', void 0), (0, d.__decorate)([e.observable], x.prototype, 'accountType', void 0), (0, d.__decorate)([e.observable], x.prototype, 'googleToken', void 0), (0, d.__decorate)([e.observable], x.prototype, 'firstName', void 0), (0, d.__decorate)([e.observable], x.prototype, 'lastName', void 0), (0, d.__decorate)([e.observable], x.prototype, 'password', void 0), (0, d.__decorate)([e.observable], x.prototype, 'schoolId', void 0), (0, d.__decorate)([e.observable], x.prototype, 'districtId', void 0), (0, d.__decorate)([e.observable], x.prototype, 'country', void 0), (0, d.__decorate)([e.observable], x.prototype, 'areaOfExpertise', void 0), (0, d.__decorate)([e.observable], x.prototype, 'gradeLevel', void 0), (0, d.__decorate)([e.observable], x.prototype, 'organization', void 0), (0, d.__decorate)([e.observable], x.prototype, 'acceptsLatestPolicies', void 0), (0, d.__decorate)([e.observable], x.prototype, 'authenticated', void 0), (0, d.__decorate)([e.observable], x.prototype, 'informationNeeded', void 0), (0, d.__decorate)([e.action], x.prototype, 'reset', void 0);
-    var y = z;
-}), c.register('Ek+Wy4', function(b, d) {
-    a(b.exports, 'default', function() {
-        return s;
+    (0, d.__decorate)([e.observable], w.prototype, 'userExists', void 0), (0, d.__decorate)([e.observable], w.prototype, 'email', void 0), (0, d.__decorate)([e.observable], w.prototype, 'accountType', void 0), (0, d.__decorate)([e.observable], w.prototype, 'googleToken', void 0), (0, d.__decorate)([e.observable], w.prototype, 'firstName', void 0), (0, d.__decorate)([e.observable], w.prototype, 'lastName', void 0), (0, d.__decorate)([e.observable], w.prototype, 'password', void 0), (0, d.__decorate)([e.observable], w.prototype, 'schoolId', void 0), (0, d.__decorate)([e.observable], w.prototype, 'districtId', void 0), (0, d.__decorate)([e.observable], w.prototype, 'country', void 0), (0, d.__decorate)([e.observable], w.prototype, 'areaOfExpertise', void 0), (0, d.__decorate)([e.observable], w.prototype, 'gradeLevel', void 0), (0, d.__decorate)([e.observable], w.prototype, 'organization', void 0), (0, d.__decorate)([e.observable], w.prototype, 'acceptsLatestPolicies', void 0), (0, d.__decorate)([e.observable], w.prototype, 'authenticated', void 0), (0, d.__decorate)([e.observable], w.prototype, 'informationNeeded', void 0), (0, d.__decorate)([e.action], w.prototype, 'reset', void 0);
+    var _x = w;
+}), a.register('5ka2e1', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _r;
     });
-    var d = c('6gioo'),
-        e = c('UnUp5');
+    var d = a('csYze'),
+        e = a('YuT/D');
     const f = {
-            currentStage: c('bDt8q4').default.email,
+            currentStage: a('AUbBm1').default.email,
             emailSignInBlocked: !1,
             creatingAccount: !1,
             loggingIn: !1,
@@ -2850,40 +2850,40 @@ c.register('eqwqZ', function(b, y) {
             classJoiningId: n,
             classJoiningName: o,
             classJoiningTeacherName: p
-        } = q;
-    class r {
+        } = f;
+    class q {
         constructor() {
             this.currentStage = g, this.emailSignInBlocked = h, this.creatingAccount = i, this.loggingIn = j, this.updatingAccountInformation = k, this.loginError = l, this.redirectUri = m, this.classJoiningId = n, this.classJoiningName = o, this.classJoiningTeacherName = p, this.reset = () => {
-                Object.keys(q).forEach(a => this[a] = q[a]);
+                Object.keys(f).forEach(e => this[e] = f[e]);
             }, (0, e.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], r.prototype, 'currentStage', void 0), (0, d.__decorate)([e.observable], r.prototype, 'emailSignInBlocked', void 0), (0, d.__decorate)([e.observable], r.prototype, 'creatingAccount', void 0), (0, d.__decorate)([e.observable], r.prototype, 'loggingIn', void 0), (0, d.__decorate)([e.observable], r.prototype, 'updatingAccountInformation', void 0), (0, d.__decorate)([e.observable], r.prototype, 'loginError', void 0), (0, d.__decorate)([e.observable], r.prototype, 'redirectUri', void 0), (0, d.__decorate)([e.observable], r.prototype, 'classJoiningId', void 0), (0, d.__decorate)([e.observable], r.prototype, 'classJoiningName', void 0), (0, d.__decorate)([e.observable], r.prototype, 'classJoiningTeacherName', void 0), (0, d.__decorate)([e.action], r.prototype, 'reset', void 0);
-    var s = t;
-}), c.register('bDt8q4', function(b, c) {
+    (0, d.__decorate)([e.observable], q.prototype, 'currentStage', void 0), (0, d.__decorate)([e.observable], q.prototype, 'emailSignInBlocked', void 0), (0, d.__decorate)([e.observable], q.prototype, 'creatingAccount', void 0), (0, d.__decorate)([e.observable], q.prototype, 'loggingIn', void 0), (0, d.__decorate)([e.observable], q.prototype, 'updatingAccountInformation', void 0), (0, d.__decorate)([e.observable], q.prototype, 'loginError', void 0), (0, d.__decorate)([e.observable], q.prototype, 'redirectUri', void 0), (0, d.__decorate)([e.observable], q.prototype, 'classJoiningId', void 0), (0, d.__decorate)([e.observable], q.prototype, 'classJoiningName', void 0), (0, d.__decorate)([e.observable], q.prototype, 'classJoiningTeacherName', void 0), (0, d.__decorate)([e.action], q.prototype, 'reset', void 0);
+    var _r = q;
+}), a.register('AUbBm1', function(b, c) {
     let d;
     var e;
-    a(b.exports, 'default', function() {
-        return f;
+    e(b.exports, 'default', function() {
+        return _f;
     }), (e = d || (d = {})).email = 'email', e.password = 'password', e.accountType = 'accountType', e.studentSpecificInfo = 'studentSpecificInfo', e.nameAndPassword = 'nameAndPassword', e.school = 'school', e.educatorSpecificInfo = 'educatorSpecificInfo', e.nonSchoolSpecificInfo = 'nonSchoolSpecificInfo', e.acceptPolicies = 'acceptPolicies', e.verifyClass = 'verifyClass';
-    var f = g;
-}), c.register('+qN5a2', function(b, n) {
-    a(b.exports, 'default', function() {
-        return g;
+    var _f = d;
+}), a.register('pYmyT1', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('Vlfxs'),
-        f = c('IsmrL');
-    var g = (0, e.observer)(a => (0, d.jsx)(f.default, {
-        disabled: a.disabled,
-        size: a.size || 'middle',
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('2x11J'),
+        f = a('ulE4q');
+    var _g = (0, e.observer)(e => (0, d.jsx)(f.default, {
+        disabled: e.disabled,
+        size: e.size || 'middle',
         type: 'primary',
-        onClick: a.onClick,
+        onClick: e.onClick,
         style: Object.assign({
             width: '100%'
-        }, a.style),
-        loading: a.loading,
-        children: a.children
+        }, e.style),
+        loading: e.loading,
+        children: e.children
     }));
 });

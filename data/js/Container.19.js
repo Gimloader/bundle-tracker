@@ -1,29 +1,29 @@
-function a(a, b, c, i) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: i,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('Lm/x1', function(b, i) {
-    a(b.exports, 'default', function() {
-        return d;
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('lUVF/', function(b, c) {
+    _h(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
-        titleFont: c('gSUVO').Fonts.FugazOne
+    var _d = {
+        titleFont: a('b5kvC').Fonts.FugazOne
     };
-}), c.register('exyhx', function(b, i) {
-    a(b.exports, 'default', function() {
-        return g;
+}), a.register('R043n', function(b, c) {
+    _h(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('uPP4W'),
-        e = c('sR0vy'),
+    var d = a('LEQ5w'),
+        e = a('VWUSb'),
         f = new Map([
             [
                 'Win',
@@ -94,95 +94,95 @@ c.register('Lm/x1', function(b, i) {
                 '/'
             ]
         ]),
-        g = function(a, b) {
-            var h = (0, e.default)(a),
-                i = (0, e.default)(b);
+        _g = function(_h, i) {
+            var j = (0, e.default)(_h),
+                k = (0, e.default)(i);
             (0, d.useEffect)(function() {
-                var j = function(j) {
-                    var k;
-                    ! function(j) {
-                        if (f.has(j.key)) {
-                            var l = f.get(j.key);
-                            Object.defineProperty(j, 'key', {
+                var l = function(m) {
+                    var n;
+                    ! function(o) {
+                        if (f.has(o.key)) {
+                            var p = f.get(o.key);
+                            Object.defineProperty(o, 'key', {
                                 get: function() {
-                                    return l;
+                                    return p;
                                 }
                             });
                         }
-                    }(j), (k = h.current, Array.isArray(k) ? k : [k]).includes(j.key) && i.current(j);
+                    }(m), (n = j.current, Array.isArray(n) ? n : [n]).includes(m.key) && k.current(m);
                 };
-                return window.addEventListener('keydown', j),
+                return window.addEventListener('keydown', l),
                     function() {
-                        window.removeEventListener('keydown', j);
+                        window.removeEventListener('keydown', l);
                     };
             }, []);
         };
-}), c.register('sR0vy', function(b, A) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('VWUSb', function(b, c) {
+    _g(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('uPP4W'),
-        e = c('0b/Ed'),
-        f = function(a) {
-            var g = (0, d.useRef)(a);
+    var d = a('LEQ5w'),
+        e = a('85FZz'),
+        _f = function(_g) {
+            var h = (0, d.useRef)(_g);
             return (0, e.default)(function() {
-                g.current = a;
-            }), g;
+                h.current = _g;
+            }), h;
         };
-}), c.register('0b/Ed', function(b, A) {
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('85FZz', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _d;
     });
-    var d = c('uPP4W').useLayoutEffect;
-}), c.register('QcyFw', function(b, A) {
-    a(b.exports, 'FreePlanType', function() {
-        return e;
-    }), a(b.exports, 'getFreePlanType', function() {
-        return g;
-    }), a(b.exports, 'getLimitedGameLimit', function() {
-        return h;
+    var _d = a('LEQ5w').useLayoutEffect;
+}), a.register('/urNL', function(b, c) {
+    _m(b.exports, 'FreePlanType', function() {
+        return _e;
+    }), _m(b.exports, 'getFreePlanType', function() {
+        return _g;
+    }), _m(b.exports, 'getLimitedGameLimit', function() {
+        return _h;
     });
-    var d = c('3EnRx');
-    let e;
+    var d = a('THxMC');
+    let _e;
     var f;
-    (f = e || (e = {})).limitedModes = 'limitedModes', f.limitedGames = 'limitedGames';
-    const g = () => 'game-limit' === d.default.getFeatureFlag('game-limit-free-plan-secondary') ? e.limitedGames : e.limitedModes,
-        h = () => 5;
-}), c.register('EyDtu', function(b, A) {
-    a(b.exports, 'default', function() {
-        return x;
+    (f = _e || (_e = {})).limitedModes = 'limitedModes', f.limitedGames = 'limitedGames';
+    const _g = () => 'game-limit' === d.default.getFeatureFlag('game-limit-free-plan-secondary') ? _e.limitedGames : _e.limitedModes,
+        _h = () => 5;
+}), a.register('kJEAP', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _x;
     });
-    var d = c('8kSQZ'),
-        e = c('b9Bct'),
-        f = c('uPP4W'),
-        g = c('h99Nu'),
-        h = c('aVhTi'),
-        i = c('U8PGt'),
-        j = c('exyhx'),
-        k = c('2gkXu26'),
-        l = c('Lm/x1'),
-        m = c('lmfrI');
-    let n, o, p, q, r, s, t, u, v, w = a => a;
-    var x = a => {
-        const [y, z] = f.useState(0), A = f.useRef(!1), B = f.useRef(null), [C] = (0, i.default)(B), D = f.useMemo(() => a.verticalList ? 0 : y * h.EXPERIENCE_FULL_WIDTH * -1 + k.default.sideMargin, [
+    var d = a('0hzx+'),
+        e = a('TwXYL'),
+        f = a('LEQ5w'),
+        g = a('Axq+p'),
+        h = a('mHJPF'),
+        i = a('BXKZi0'),
+        j = a('R043n'),
+        k = a('Kc6XZ23'),
+        l = a('lUVF/'),
+        m = a('sHRDd');
+    let n, o, p, q, r, s, t, u, v, w = _m => _m;
+    var _x = _m => {
+        const [y, z] = f.useState(0), A = f.useRef(!1), B = f.useRef(null), [C] = (0, i.default)(B), D = f.useMemo(() => _m.verticalList ? 0 : y * h.EXPERIENCE_FULL_WIDTH * -1 + k.default.sideMargin, [
             y,
-            a.verticalList
+            _m.verticalList
         ]), E = f.useMemo(() => !(y <= 0), [y]);
         (0, j.default)([
             'ArrowLeft',
             'ArrowRight'
-        ], a => {
-            A.current && ('ArrowLeft' === a.key && o(), 'ArrowRight' === a.key && p());
+        ], _m => {
+            A.current && ('ArrowLeft' === _m.key && o(), 'ArrowRight' === _m.key && p());
         });
         const F = f.useMemo(() => {
-                if (y + 1 === a.list.items.length)
+                if (y + 1 === _m.list.items.length)
                     return !1;
                 const G = (C - k.default.sideMargin) / h.EXPERIENCE_FULL_WIDTH;
-                return !(y >= a.list.items.length - G);
+                return !(y >= _m.list.items.length - G);
             }, [
                 C,
                 y,
-                a.list.items.length
+                _m.list.items.length
             ]),
             G = () => {
                 E && z(Math.max(0, y - 1));
@@ -190,7 +190,7 @@ c.register('Lm/x1', function(b, i) {
             H = () => {
                 F && z(y + 1);
             };
-        return (0, d.jsxs)(y, {
+        return (0, d.jsxs)(_y, {
             onMouseEnter: () => {
                 A.current = !0;
             },
@@ -198,23 +198,23 @@ c.register('Lm/x1', function(b, i) {
                 A.current = !1;
             },
             children: [
-                a.hideListName ? null : (0, d.jsx)(z, {
-                    children: a.list.name
+                _m.hideListName ? null : (0, d.jsx)(_z, {
+                    children: _m.list.name
                 }),
-                (0, d.jsxs)(A, {
+                (0, d.jsxs)(_A, {
                     children: [
-                        (0, d.jsx)(B, {
+                        (0, d.jsx)(_B, {
                             animate: {
                                 x: D
                             },
                             initial: {
-                                x: a.verticalList ? 0 : k.default.sideMargin
+                                x: _m.verticalList ? 0 : k.default.sideMargin
                             },
                             transition: {
                                 duration: 0.3,
                                 ease: 'easeOut'
                             },
-                            style: a.verticalList ? {
+                            style: _m.verticalList ? {
                                 display: 'grid',
                                 gridTemplateColumns: `repeat(auto-fill, ${ h.EXPERIENCE_WIDTH }px)`,
                                 justifyContent: 'center',
@@ -224,21 +224,21 @@ c.register('Lm/x1', function(b, i) {
                                 gap: h.MARGIN_RIGHT
                             },
                             ref: B,
-                            children: a.list.items.map(y => (0, d.jsx)(h.default, {
+                            children: _m.list.items.map(y => (0, d.jsx)(h.default, {
                                 name: y.name,
                                 tagline: y.tagline,
                                 image: y.imageUrl,
-                                currentlySelected: !!a.forceAllSelected || a.currentlySelectedExperienceId === y._id,
-                                onSelect: a.onExperienceSelected ? () => a.onExperienceSelected(y._id) : null,
+                                currentlySelected: !!_m.forceAllSelected || _m.currentlySelectedExperienceId === y._id,
+                                onSelect: _m.onExperienceSelected ? () => _m.onExperienceSelected(y._id) : null,
                                 isProExperience: y.isPremiumExperience,
-                                noShadowOnContainer: a.noShadowOnItems,
-                                forcePremiumBadge: a.forcePremiumBadge,
+                                noShadowOnContainer: _m.noShadowOnItems,
+                                forcePremiumBadge: _m.forcePremiumBadge,
                                 tag: y.tag
-                            }, `list-${ a.list._id }-${ y._id }`))
+                            }, `list-${ _m.list._id }-${ y._id }`))
                         }),
-                        a.verticalList ? null : (0, d.jsxs)(C, {
+                        _m.verticalList ? null : (0, d.jsxs)(_C, {
                             children: [
-                                (0, d.jsx)(E, {
+                                (0, d.jsx)(_E, {
                                     animate: {
                                         opacity: E ? 1 : 0
                                     },
@@ -246,7 +246,7 @@ c.register('Lm/x1', function(b, i) {
                                         opacity: 0
                                     },
                                     onClick: G,
-                                    children: (0, d.jsx)(G, {
+                                    children: (0, d.jsx)(_G, {
                                         style: {
                                             cursor: E ? 'pointer' : 'auto'
                                         },
@@ -255,7 +255,7 @@ c.register('Lm/x1', function(b, i) {
                                         })
                                     })
                                 }),
-                                (0, d.jsx)(F, {
+                                (0, d.jsx)(_F, {
                                     animate: {
                                         opacity: F ? 1 : 0
                                     },
@@ -263,7 +263,7 @@ c.register('Lm/x1', function(b, i) {
                                         opacity: 0
                                     },
                                     onClick: H,
-                                    children: (0, d.jsx)(G, {
+                                    children: (0, d.jsx)(_G, {
                                         style: {
                                             cursor: F ? 'pointer' : 'auto'
                                         },
@@ -279,10 +279,10 @@ c.register('Lm/x1', function(b, i) {
             ]
         });
     };
-    const y = g.default.div.attrs({
+    const _y = g.default.div.attrs({
             className: 'maxWidth'
         })(n || (n = w``)),
-        z = g.default.div(o || (o = w`
+        _z = g.default.div(o || (o = w`
   font-family: ${ 0 };
   text-align: center;
   margin-bottom: 15px;
@@ -290,16 +290,16 @@ c.register('Lm/x1', function(b, i) {
   font-size: 26px;
   color: rgba(255, 255, 255, 0.9);
 `), l.default.titleFont),
-        A = g.default.div.attrs({
+        _A = g.default.div.attrs({
             className: 'maxWidth'
         })(p || (p = w`
   position: relative;
   overflow: hidden;
 `)),
-        B = (0, g.default)(e.motion.div).attrs({
+        _B = (0, g.default)(e.motion.div).attrs({
             className: 'flex'
         })(q || (q = w``)),
-        C = g.default.div.attrs({
+        _C = g.default.div.attrs({
             className: 'maxAll flex vc between'
         })(r || (r = w`
   position: absolute;
@@ -314,7 +314,7 @@ c.register('Lm/x1', function(b, i) {
   line-height: 1;
   color: ${ 0 };
 `), m.default.White),
-        E = (0, g.default)(D)(t || (t = w`
+        _E = (0, g.default)(D)(t || (t = w`
   background: linear-gradient(
     to right,
     hsla(0, 0%, 0%, 0.61) 0%,
@@ -335,7 +335,7 @@ c.register('Lm/x1', function(b, i) {
     hsla(0, 0%, 0%, 0) 100%
   );
 `)),
-        F = (0, g.default)(D)(u || (u = w`
+        _F = (0, g.default)(D)(u || (u = w`
   background: linear-gradient(
     to left,
     hsla(0, 0%, 0%, 0.61) 0%,
@@ -356,7 +356,7 @@ c.register('Lm/x1', function(b, i) {
     hsla(0, 0%, 0%, 0) 100%
   );
 `)),
-        G = g.default.div.attrs({
+        _G = g.default.div.attrs({
             className: 'flex-center'
         })(v || (v = w`
   font-size: 32px;
@@ -367,46 +367,46 @@ c.register('Lm/x1', function(b, i) {
     transform: scale(1.1);
   }
 `));
-}), c.register('aVhTi', function(b, C) {
-    a(b.exports, 'EXPERIENCE_WIDTH', function() {
-        return v;
-    }), a(b.exports, 'MARGIN_RIGHT', function() {
-        return w;
-    }), a(b.exports, 'EXPERIENCE_FULL_WIDTH', function() {
-        return x;
-    }), a(b.exports, 'default', function() {
-        return z;
+}), a.register('mHJPF', function(b, c) {
+    _m(b.exports, 'EXPERIENCE_WIDTH', function() {
+        return _v;
+    }), _m(b.exports, 'MARGIN_RIGHT', function() {
+        return _w;
+    }), _m(b.exports, 'EXPERIENCE_FULL_WIDTH', function() {
+        return _x;
+    }), _m(b.exports, 'default', function() {
+        return _z;
     });
-    var d = c('8kSQZ'),
-        e = c('lmfrI'),
-        f = c('gSUVO'),
-        g = c('PjB0f'),
-        h = c('b9Bct'),
-        i = c('uPP4W'),
-        j = c('h99Nu'),
-        k = c('Lm/x1'),
-        l = c('QcyFw');
-    let m, n, o, p, q, r, s, t, u = a => a;
-    const v = 350,
-        w = 10,
-        x = v + w,
+    var d = a('0hzx+'),
+        e = a('sHRDd'),
+        f = a('b5kvC'),
+        g = a('PMl60'),
+        h = a('TwXYL'),
+        i = a('LEQ5w'),
+        j = a('Axq+p'),
+        k = a('lUVF/'),
+        l = a('/urNL');
+    let m, n, o, p, q, r, s, t, u = _m => _m;
+    const _v = 350,
+        _w = 10,
+        _x = _v + _w,
         y = 0.2;
-    var z = a => {
-        const [A, B, C] = (0, g.useBoolean)(!1), D = (0, l.getFreePlanType)(), E = i.useMemo(() => a.isProExperience && !(0, g.isStudent)() && D === l.FreePlanType.limitedModes && !(0, g.isUpgraded)(), [
-            a.isProExperience,
+    var _z = _m => {
+        const [A, B, C] = (0, g.useBoolean)(!1), D = (0, l.getFreePlanType)(), E = i.useMemo(() => _m.isProExperience && !(0, g.isStudent)() && D === l.FreePlanType.limitedModes && !(0, g.isUpgraded)(), [
+            _m.isProExperience,
             D
         ]);
-        return (0, d.jsxs)(A, {
+        return (0, d.jsxs)(_A, {
             onMouseEnter: B,
             onMouseLeave: C,
             style: {
-                backgroundImage: `url('${ a.image }')`,
-                borderColor: a.currentlySelected ? '#fdd835' : e.default.White
+                backgroundImage: `url('${ _m.image }')`,
+                borderColor: _m.currentlySelected ? '#fdd835' : e.default.White
             },
-            onClick: a.onSelect,
-            className: a.noShadowOnContainer ? '' : 'light-shadow',
+            onClick: _m.onSelect,
+            className: _m.noShadowOnContainer ? '' : 'light-shadow',
             children: [
-                a.forcePremiumBadge || E ? (0, d.jsx)(B, {
+                _m.forcePremiumBadge || E ? (0, d.jsx)(_B, {
                     animate: {
                         opacity: A ? 0 : 1
                     },
@@ -416,11 +416,11 @@ c.register('Lm/x1', function(b, i) {
                     transition: {
                         duration: y
                     },
-                    children: (0, d.jsx)(C, {})
+                    children: (0, d.jsx)(_C, {})
                 }) : (0, d.jsx)('div', {}),
-                (0, d.jsxs)(D, {
+                (0, d.jsxs)(_D, {
                     children: [
-                        E ? (0, d.jsx)(E, {
+                        E ? (0, d.jsx)(_E, {
                             animate: {
                                 opacity: A ? 0 : 1
                             },
@@ -432,7 +432,7 @@ c.register('Lm/x1', function(b, i) {
                             },
                             children: 'Gimkit Pro Exclusive'
                         }) : null,
-                        !E && a.tag ? (0, d.jsx)(F, {
+                        !E && _m.tag ? (0, d.jsx)(_F, {
                             animate: {
                                 opacity: A ? 0 : 1
                             },
@@ -442,12 +442,12 @@ c.register('Lm/x1', function(b, i) {
                             transition: {
                                 duration: y
                             },
-                            children: a.tag
+                            children: _m.tag
                         }) : null,
-                        (0, d.jsx)(G, {
-                            children: a.name
+                        (0, d.jsx)(_G, {
+                            children: _m.name
                         }),
-                        (0, d.jsx)(H, {
+                        (0, d.jsx)(_H, {
                             animate: {
                                 height: A ? 'auto' : 0
                             },
@@ -457,14 +457,14 @@ c.register('Lm/x1', function(b, i) {
                             transition: {
                                 duration: y
                             },
-                            children: a.tagline
+                            children: _m.tagline
                         })
                     ]
                 })
             ]
         });
     };
-    const A = j.default.div.attrs({
+    const _A = j.default.div.attrs({
             className: 'flex flex-column between'
         })(m || (m = u`
   border-width: 4px;
@@ -479,18 +479,18 @@ c.register('Lm/x1', function(b, i) {
   flex-shrink: 0;
   cursor: pointer;
   transition: border-color 0.3s;
-`), v),
-        B = (0, j.default)(h.motion.div).attrs({
+`), _v),
+        _B = (0, j.default)(h.motion.div).attrs({
             className: 'maxWidth'
         })(n || (n = u`
   padding: 10px 15px;
 `)),
-        C = j.default.img.attrs({
+        _C = j.default.img.attrs({
             src: '/client/img/pro/star.svg'
         })(o || (o = u`
   height: 20px;
 `)),
-        D = j.default.div.attrs({
+        _D = j.default.div.attrs({
             className: 'maxWidth flex-column'
         })(p || (p = u`
   padding: 10px 15px;
@@ -516,7 +516,7 @@ c.register('Lm/x1', function(b, i) {
   overflow: hidden;
   align-items: flex-start;
 `)),
-        E = (0, j.default)(h.motion.div)(q || (q = u`
+        _E = (0, j.default)(h.motion.div)(q || (q = u`
   font-family: ${ 0 };
   text-transform: uppercase;
   font-size: 12px;
@@ -524,7 +524,7 @@ c.register('Lm/x1', function(b, i) {
   text-shadow: 1px 1px 1px ${ 0 };
   color: ${ 0 };
 `), k.default.titleFont, e.default.Black, e.default.White),
-        F = (0, j.default)(h.motion.div)(r || (r = u`
+        _F = (0, j.default)(h.motion.div)(r || (r = u`
   font-family: ${ 0 };
   text-transform: uppercase;
   background: rgba(255, 87, 34, 0.8);
@@ -534,14 +534,14 @@ c.register('Lm/x1', function(b, i) {
   border-radius: 10px;
   margin-bottom: 4px;
 `), k.default.titleFont),
-        G = j.default.div(s || (s = u`
+        _G = j.default.div(s || (s = u`
   font-family: ${ 0 };
   text-transform: uppercase;
   font-size: 22px;
   text-shadow: 2px 2px 2px ${ 0 };
   color: ${ 0 };
 `), k.default.titleFont, e.default.Black, e.default.White),
-        H = (0, j.default)(h.motion.div)(t || (t = u`
+        _H = (0, j.default)(h.motion.div)(t || (t = u`
   font-size: 14px;
   text-shadow: 1px 1px 1px ${ 0 };
   color: rgba(255, 255, 255, 0.95);
@@ -549,52 +549,52 @@ c.register('Lm/x1', function(b, i) {
   overflow: hidden;
   font-family: ${ 0 };
 `), e.default.Black, f.Fonts.ProductSans);
-}), c.register('VsZIM', function(b, x) {
-    a(b.exports, 'PADDING', function() {
-        return t;
-    }), a(b.exports, 'default', function() {
-        return u;
+}), a.register('BtZXP', function(b, c) {
+    _m(b.exports, 'PADDING', function() {
+        return _t;
+    }), _m(b.exports, 'default', function() {
+        return _u;
     });
-    var d = c('8kSQZ'),
-        e = c('cR5QE'),
-        f = c('lmfrI'),
-        g = c('gSUVO'),
-        h = c('PjB0f'),
-        i = c('uPP4W'),
-        j = c('h99Nu'),
-        k = c('2gkXu26'),
-        l = c('Lektn'),
-        m = c('m4FEw'),
-        n = c('d/j4H'),
-        o = c('OW/xn'),
-        p = c('QcyFw');
-    let q, r, s = a => a;
-    const t = k.default.sideMargin;
-    var u = a => {
+    var d = a('0hzx+'),
+        e = a('YRlpt'),
+        f = a('sHRDd'),
+        g = a('b5kvC'),
+        h = a('PMl60'),
+        i = a('LEQ5w'),
+        j = a('Axq+p'),
+        k = a('Kc6XZ23'),
+        l = a('GXYoL'),
+        m = a('NPZ0g'),
+        n = a('kX1xb'),
+        o = a('J3ZQI'),
+        p = a('/urNL');
+    let q, r, s = _m => _m;
+    const _t = k.default.sideMargin;
+    var _u = _m => {
         i.useEffect(() => {
-            a.visible && a.showModes && (0, h.loadFont)('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+            _m.visible && _m.showModes && (0, h.loadFont)('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
         }, [
-            a.visible,
-            a.showModes
+            _m.visible,
+            _m.showModes
         ]), i.useEffect(() => {
-            a.visible && (0, o.TrackPostHogEvent)({
+            _m.visible && (0, o.TrackPostHogEvent)({
                 event: 'upgrade modal open',
                 properties: {
-                    reason: a.id
+                    reason: _m.id
                 }
             });
         }, [
-            a.visible,
-            a.id
+            _m.visible,
+            _m.id
         ]);
         const v = (0, h.getUser)();
         if (!v)
             return null;
         const w = (0, p.getFreePlanType)(),
-            x = a.showModes && w === p.FreePlanType.limitedModes;
+            x = _m.showModes && w === p.FreePlanType.limitedModes;
         return (0, d.jsxs)(d.Fragment, {
             children: [
-                (0, d.jsx)(v, {}),
+                (0, d.jsx)(_v, {}),
                 (0, d.jsx)(e.default, {
                     className: 'upgrade-modal',
                     footer: null,
@@ -606,15 +606,15 @@ c.register('Lm/x1', function(b, i) {
                         padding: '0px',
                         background: f.default.Snow
                     },
-                    open: a.visible,
-                    onCancel: a.close,
+                    open: _m.visible,
+                    onCancel: _m.close,
                     closable: !1,
-                    children: (0, d.jsxs)(w, {
+                    children: (0, d.jsxs)(_w, {
                         children: [
                             (0, d.jsx)(n.default, {
                                 user: v,
-                                close: a.close,
-                                copy: a.copy,
+                                close: _m.close,
+                                copy: _m.copy,
                                 showingModes: x
                             }),
                             x ? (0, d.jsx)(m.default, {}) : null,
@@ -627,43 +627,43 @@ c.register('Lm/x1', function(b, i) {
             ]
         });
     };
-    const v = (0, j.createGlobalStyle)(q || (q = s`
+    const _v = (0, j.createGlobalStyle)(q || (q = s`
   .upgrade-modal > .ant-modal-content {
     border-radius: 10px;
     overflow: hidden !important;
     padding: 0px !important;
   }
 `)),
-        w = j.default.div.attrs({
+        _w = j.default.div.attrs({
             className: 'maxWidth'
         })(r || (r = s`
   color: ${ 0 };
   font-family: ${ 0 };
 `), f.default.Black, g.Fonts.SFPro);
-}), c.register('Lektn', function(b, x) {
-    a(b.exports, 'default', function() {
-        return u;
+}), a.register('GXYoL', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _u;
     });
-    var d = c('8kSQZ'),
-        e = c('zgQWX27'),
-        f = c('IsmrL'),
-        g = c('ExtIT'),
-        h = c('lmfrI'),
-        i = c('q721a'),
-        j = c('iYEuk12'),
-        k = c('PjB0f'),
-        l = c('uPP4W'),
-        m = c('h99Nu'),
-        n = c('bdX0N23'),
-        o = c('YC0ht'),
-        p = c('XW3wc');
-    let q, r, s, t = a => a;
-    var u = a => {
+    var d = a('0hzx+'),
+        e = a('xQDqe25'),
+        f = a('ulE4q'),
+        g = a('fmVdR'),
+        h = a('sHRDd'),
+        i = a('gs4MT'),
+        j = a('2HvvA11'),
+        k = a('PMl60'),
+        l = a('LEQ5w'),
+        m = a('Axq+p'),
+        n = a('Rtfgy20'),
+        o = a('xs/eX'),
+        p = a('jPLfO');
+    let q, r, s, t = _m => _m;
+    var _u = _m => {
         const [v, w] = l.useState(!1), [x, y] = l.useState(!1);
         return (0, d.jsxs)('div', {
             className: 'flex flex-column vc',
             style: {
-                marginTop: a.showingModes ? 25 : 20,
+                marginTop: _m.showingModes ? 25 : 20,
                 paddingBottom: 30
             },
             children: [
@@ -680,7 +680,7 @@ c.register('Lm/x1', function(b, i) {
                         children: (0, k.isUpgraded)() ? 'Upgrade to Gimkit Pro early' : 'Upgrade to Gimkit Pro'
                     })
                 }),
-                (0, n.onlyOfferAnnualUpgrade)() ? (0, d.jsx)(v, {
+                (0, n.onlyOfferAnnualUpgrade)() ? (0, d.jsx)(_v, {
                     children: '$59.88 a year - works out to $4.99 a month'
                 }) : null,
                 (0, d.jsx)(g.default, {
@@ -691,19 +691,19 @@ c.register('Lm/x1', function(b, i) {
                 (0, d.jsxs)('div', {
                     className: 'flex vc',
                     children: [
-                        (0, d.jsx)(w, {
+                        (0, d.jsx)(_w, {
                             to: i.GROUP_PRICING,
                             children: 'Group license pricing'
                         }),
-                        (0, d.jsx)(x, {}),
-                        (0, d.jsx)(w, {
+                        (0, d.jsx)(_x, {}),
+                        (0, d.jsx)(_w, {
                             onClick: () => y(!0),
                             children: 'Pay For Me Link'
                         }),
                         !v && (0, d.jsxs)(d.Fragment, {
                             children: [
-                                (0, d.jsx)(x, {}),
-                                (0, d.jsx)(w, {
+                                (0, d.jsx)(_x, {}),
+                                (0, d.jsx)(_w, {
                                     onClick: () => w(!0),
                                     children: 'FAQ'
                                 })
@@ -719,36 +719,36 @@ c.register('Lm/x1', function(b, i) {
             ]
         });
     };
-    const v = m.default.div(q || (q = t`
+    const _v = m.default.div(q || (q = t`
   font-size: 14px;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 12px;
 `)),
-        w = (0, m.default)(j.default)(r || (r = t`
+        _w = (0, m.default)(j.default)(r || (r = t`
   font-size: 16px;
   display: block;
   color: ${ 0 };
   text-decoration: underline;
 `), h.default.Black),
-        x = m.default.i.attrs({
+        _x = m.default.i.attrs({
             className: 'fas fa-circle'
         })(s || (s = t`
   margin: 0px 12px;
   font-size: 10px;
 `));
-}), c.register('YC0ht', function(b, y) {
-    a(b.exports, 'default', function() {
-        return q;
+}), a.register('xs/eX', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _q;
     });
-    var d = c('8kSQZ'),
-        e = c('ExtIT'),
-        f = c('lmfrI'),
-        g = c('gSUVO');
-    c('uPP4W');
-    var h = c('h99Nu'),
-        i = c('VsZIM'),
-        j = c('QcyFw');
-    let k, l, m, n, o = a => a;
+    var d = a('0hzx+'),
+        e = a('fmVdR'),
+        f = a('sHRDd'),
+        g = a('b5kvC');
+    a('LEQ5w');
+    var h = a('Axq+p'),
+        i = a('BtZXP'),
+        j = a('/urNL');
+    let k, l, m, n, o = _m => _m;
     const p = [{
             question: 'What happens if I pay now and my school pays later?',
             answer: (0, d.jsxs)('span', {
@@ -788,33 +788,33 @@ c.register('Lm/x1', function(b, i) {
             })
         }
     ];
-    var q = () => (0, d.jsxs)(d.Fragment, {
+    var _q = () => (0, d.jsxs)(d.Fragment, {
         children: [
             (0, d.jsx)(e.default, {
                 style: {
                     margin: '26px 0px'
                 }
             }),
-            (0, d.jsx)(r, {
-                children: p.map(a => (0, d.jsxs)(s, {
+            (0, d.jsx)(_r, {
+                children: p.map(_m => (0, d.jsxs)(_s, {
                     children: [
-                        (0, d.jsx)(t, {
-                            children: a.question
+                        (0, d.jsx)(_t, {
+                            children: _m.question
                         }),
-                        (0, d.jsx)(u, {
-                            children: a.answer
+                        (0, d.jsx)(_u, {
+                            children: _m.answer
                         })
                     ]
-                }, a.question))
+                }, _m.question))
             })
         ]
     });
-    const r = h.default.div.attrs({
+    const _r = h.default.div.attrs({
             className: 'maxWidth'
         })(k || (k = o`
   padding: 0px ${ 0 }px;
 `), () => i.PADDING),
-        s = h.default.div(l || (l = o`
+        _s = h.default.div(l || (l = o`
   margin-bottom: 15px;
   background: ${ 0 };
   padding: 30px;
@@ -826,45 +826,45 @@ c.register('Lm/x1', function(b, i) {
     margin-bottom: 0px;
   }
 `), f.default.White, f.default.BorderGray),
-        t = h.default.div(m || (m = o`
+        _t = h.default.div(m || (m = o`
   font-size: 21px;
   font-weight: ${ 0 };
 `), g.FontWeights.Bold),
-        u = h.default.div(n || (n = o`
+        _u = h.default.div(n || (n = o`
   font-size: 16px;
   margin-top: 5px;
 `));
-}), c.register('XW3wc', function(y, z) {
-    a(y.exports, 'default', function() {
-        return w;
+}), a.register('jPLfO', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _w;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('IsmrL'),
-        g = c('ExtIT'),
-        h = c('c6x8w'),
-        i = c('jrTkz0'),
-        j = c('cR5QE'),
-        k = c('iHElh'),
-        l = c('PjB0f'),
-        m = c('SlNZ027'),
-        n = c('0wLl2'),
-        o = c('h99Nu'),
-        p = c('lmfrI'),
-        q = c('gSUVO');
-    let r, s, t, u, v = a => a;
-    var w = a => {
-        const [x, y] = b(e).useState(!0), [z, A] = b(e).useState(null), [B, C] = b(e).useState(null), D = () => `${ (0, l.getDomain)() }/pay-for-me/${ B }`;
-        return b(e).useEffect(() => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('ulE4q'),
+        g = a('fmVdR'),
+        h = a('ewwAh'),
+        i = a('MSsQO'),
+        j = a('YRlpt'),
+        k = a('6CIVV'),
+        l = a('PMl60'),
+        m = a('jlX4s16'),
+        n = a('hHkFq'),
+        o = a('Axq+p'),
+        p = a('sHRDd'),
+        q = a('b5kvC');
+    let r, s, t, u, v = _m => _m;
+    var _w = _m => {
+        const [x, y] = _b(e).useState(!0), [z, A] = _b(e).useState(null), [B, C] = _b(e).useState(null), D = () => `${ (0, l.getDomain)() }/pay-for-me/${ B }`;
+        return _b(e).useEffect(() => {
             (0, l.request)({
                 method: 'GET',
                 url: '/api/billing/pay-for-me-link',
-                success: a => {
-                    C(a);
+                success: _m => {
+                    C(_m);
                 },
-                error: a => {
-                    A(a), (0, l.throwMessageError)({
-                        e: a,
+                error: _m => {
+                    A(_m), (0, l.throwMessageError)({
+                        e: _m,
                         default: {
                             title: 'Error connecting to our server',
                             content: 'An error ocurred while connecting to our server. Please try again later.'
@@ -874,8 +874,8 @@ c.register('Lm/x1', function(b, i) {
                 both: () => y(!1)
             });
         }, []), (0, d.jsx)(j.default, {
-            open: a.showPayForMeModal,
-            onCancel: a.onCancel,
+            open: _m.showPayForMeModal,
+            onCancel: _m.onCancel,
             footer: null,
             closable: !1,
             width: 690,
@@ -890,12 +890,12 @@ c.register('Lm/x1', function(b, i) {
                 children: (0, d.jsx)(k.default, {
                     size: 'large'
                 })
-            }) : (0, d.jsxs)(x, {
+            }) : (0, d.jsxs)(_x, {
                 children: [
-                    (0, d.jsx)(A, {
-                        onClick: a.onCancel
+                    (0, d.jsx)(_A, {
+                        onClick: _m.onCancel
                     }),
-                    (0, d.jsxs)(y, {
+                    (0, d.jsxs)(_y, {
                         children: [
                             (0, d.jsx)('span', {
                                 style: {
@@ -907,7 +907,7 @@ c.register('Lm/x1', function(b, i) {
                             'link'
                         ]
                     }),
-                    (0, d.jsxs)(z, {
+                    (0, d.jsxs)(_z, {
                         children: [
                             'Send this link to someone to allow them to pay for your',
                             ' ',
@@ -937,7 +937,7 @@ c.register('Lm/x1', function(b, i) {
                                     marginLeft: 10
                                 },
                                 onClick: () => {
-                                    b(m)(D()), i.default.success('Pay For Me link copied to clipboard!');
+                                    _b(m)(D()), i.default.success('Pay For Me link copied to clipboard!');
                                 },
                                 children: 'Copy Link'
                             })
@@ -947,21 +947,21 @@ c.register('Lm/x1', function(b, i) {
             })
         });
     };
-    const x = o.default.div.attrs({
+    const _x = o.default.div.attrs({
             className: 'maxWidth'
         })(r || (r = v`
   color: ${ 0 };
   font-family: ${ 0 };
   padding: 30px;
 `), p.default.Black, q.Fonts.SFPro),
-        y = o.default.div(s || (s = v`
+        _y = o.default.div(s || (s = v`
   font-size: 32px;
 `)),
-        z = o.default.div(t || (t = v`
+        _z = o.default.div(t || (t = v`
   font-size: 17px;
   margin-top: 14px;
 `)),
-        A = o.default.i.attrs({
+        _A = o.default.i.attrs({
             className: 'fal fa-times'
         })(u || (u = v`
   position: absolute;
@@ -975,22 +975,22 @@ c.register('Lm/x1', function(b, i) {
     opacity: 1;
   }
 `));
-}), c.register('m4FEw', function(b, p) {
-    a(b.exports, 'default', function() {
-        return l;
+}), a.register('NPZ0g', function(_b, c) {
+    _m(_b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('PjB0f'),
-        f = c('uPP4W'),
-        g = c('h99Nu'),
-        h = c('EyDtu'),
-        i = c('d/j4H');
+    var d = a('0hzx+'),
+        e = a('PMl60'),
+        f = a('LEQ5w'),
+        g = a('Axq+p'),
+        h = a('kJEAP'),
+        i = a('kX1xb');
     let j;
     const k = {
         Classic: 1
     };
-    var l = () => {
-        const [m, n] = f.useState([]);
+    var _l = () => {
+        const [_m, n] = f.useState([]);
         return f.useEffect(() => {
             (0, e.request)({
                 url: '/api/experiences',
@@ -998,36 +998,36 @@ c.register('Lm/x1', function(b, i) {
                     mode: 'liveGame'
                 },
                 cacheKey: 'EXPERIENCES',
-                success: m => {
+                success: _m => {
                     let o = [];
                     const p = [];
-                    m.forEach(m => {
-                        m.items.forEach(m => {
-                            m.isPremiumExperience && (p.includes(m._id) || (o.push({
-                                ...m,
+                    _m.forEach(_m => {
+                        _m.items.forEach(_m => {
+                            _m.isPremiumExperience && (p.includes(_m._id) || (o.push({
+                                ..._m,
                                 isPremiumExperience: !0
-                            }), p.push(m._id)));
+                            }), p.push(_m._id)));
                         });
-                    }), Object.keys(k).forEach(m => {
-                        const q = k[m],
-                            r = o.find(q => q.name === m);
-                        r && (o = o.filter(q => q.name !== m), o.splice(q, 0, r));
+                    }), Object.keys(k).forEach(_m => {
+                        const q = k[_m],
+                            r = o.find(q => q.name === _m);
+                        r && (o = o.filter(q => q.name !== _m), o.splice(q, 0, r));
                     }), n(o);
                 }
             });
-        }, []), m.length ? (0, d.jsx)(m, {
+        }, []), _m.length ? (0, d.jsx)(_m, {
             children: (0, d.jsx)(h.default, {
                 list: {
                     _id: '_',
                     name: '_',
-                    items: m
+                    items: _m
                 },
                 hideListName: !0,
                 noShadowOnItems: !0,
                 forceAllSelected: !0,
                 forcePremiumBadge: !0
             })
-        }) : (0, d.jsx)(m, {
+        }) : (0, d.jsx)(_m, {
             children: (0, d.jsx)('div', {
                 style: {
                     height: 180
@@ -1035,43 +1035,43 @@ c.register('Lm/x1', function(b, i) {
             })
         });
     };
-    const m = g.default.div.attrs({
+    const _m = g.default.div.attrs({
         className: 'maxWidth'
-    })(j || (j = (a => a)`
+    })(j || (j = (_t => _t)`
   margin-top: ${ 0 }px;
 `), () => 25 - i.BOTTOM_PADDING);
-}), c.register('d/j4H', function(b, d) {
-    a(b.exports, 'BOTTOM_PADDING', function() {
-        return q;
-    }), a(b.exports, 'default', function() {
-        return r;
+}), a.register('kX1xb', function(b, c) {
+    _t(b.exports, 'BOTTOM_PADDING', function() {
+        return _q;
+    }), _t(b.exports, 'default', function() {
+        return _r;
     });
-    var d = c('8kSQZ'),
-        e = c('lmfrI'),
-        f = c('gSUVO'),
-        g = c('PjB0f');
-    c('uPP4W');
-    var h = c('h99Nu'),
-        i = c('VsZIM'),
-        j = c('QcyFw');
-    let k, l, m, n, o, p = a => a;
-    const q = 180;
-    var r = a => {
+    var d = a('0hzx+'),
+        e = a('sHRDd'),
+        f = a('b5kvC'),
+        g = a('PMl60');
+    a('LEQ5w');
+    var h = a('Axq+p'),
+        i = a('BtZXP'),
+        j = a('/urNL');
+    let k, l, m, n, o, p = _t => _t;
+    const _q = 180;
+    var _r = _t => {
         const {
             copy: s
-        } = t;
-        return (0, d.jsxs)(s, {
-            background: t.showingModes ? '#0A2540' : 'transparent',
-            color: t.showingModes ? e.default.White : e.default.Black,
-            bottomPadding: t.showingModes ? q : 0,
-            maskImage: !!t.showingModes,
+        } = _t;
+        return (0, d.jsxs)(_s, {
+            background: _t.showingModes ? '#0A2540' : 'transparent',
+            color: _t.showingModes ? e.default.White : e.default.Black,
+            bottomPadding: _t.showingModes ? _q : 0,
+            maskImage: !!_t.showingModes,
             children: [
-                (0, d.jsx)(t, {
-                    onClick: t.close
+                (0, d.jsx)(_t, {
+                    onClick: _t.close
                 }),
-                (0, d.jsxs)(u, {
+                (0, d.jsxs)(_u, {
                     children: [
-                        (0, d.jsx)(v, {
+                        (0, d.jsx)(_v, {
                             children: s && s.title ? s.title : (0, g.isUpgraded)() ? (0, d.jsx)(d.Fragment, {
                                 children: 'Your trial ends soon.'
                             }) : (0, j.getFreePlanType)() === j.FreePlanType.limitedGames ? (0, d.jsx)(d.Fragment, {
@@ -1084,29 +1084,29 @@ c.register('Lm/x1', function(b, i) {
                                 children: 'Get all game modes for $4.99 a month.'
                             })
                         }),
-                        (0, d.jsx)(w, {
+                        (0, d.jsx)(_w, {
                             style: {
-                                marginTop: t.showingModes ? 10 : 5
+                                marginTop: _t.showingModes ? 10 : 5
                             },
                             children: (() => {
                                 if (s && s.description)
                                     return s.description;
-                                const u = (0, j.getFreePlanType)(),
-                                    v = u === j.FreePlanType.limitedModes ? 'a few game modes that rotate every few weeks' : `host ${ (0, j.getLimitedGameLimit)() } games per month`;
+                                const _t = (0, j.getFreePlanType)(),
+                                    u = _t === j.FreePlanType.limitedModes ? 'a few game modes that rotate every few weeks' : `host ${ (0, j.getLimitedGameLimit)() } games per month`;
                                 return (0, d.jsxs)('div', {
                                     className: 'maxWidth',
                                     style: {
                                         textAlign: 'left'
                                     },
                                     children: [
-                                        (0, g.isUpgraded)() ? `After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${ v }.` : `You're on the free version of Gimkit, which limits you to ${ v }.`,
+                                        (0, g.isUpgraded)() ? `After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${ u }.` : `You're on the free version of Gimkit, which limits you to ${ u }.`,
                                         (0, d.jsx)('br', {}),
                                         ' ',
                                         (0, d.jsx)('br', {}),
-                                        u === j.FreePlanType.limitedModes ? 'Want access to every single mode?' : 'Want to host unlimited games?',
+                                        _t === j.FreePlanType.limitedModes ? 'Want access to every single mode?' : 'Want to host unlimited games?',
                                         ' ',
                                         'Upgrade to Gimkit Pro! It\u2019s just $4.99 a month and you\u2019ll be helping support us, an independent small business.',
-                                        u === j.FreePlanType.limitedModes ? (0, d.jsxs)(d.Fragment, {
+                                        _t === j.FreePlanType.limitedModes ? (0, d.jsxs)(d.Fragment, {
                                             children: [
                                                 (0, d.jsx)('br', {}),
                                                 ' ',
@@ -1123,7 +1123,7 @@ c.register('Lm/x1', function(b, i) {
             ]
         });
     };
-    const s = h.default.div.attrs({
+    const _s = h.default.div.attrs({
             className: 'maxWidth flex flex-column vc'
         })(k || (k = p`
   padding: ${ 0 }px 0px;
@@ -1133,8 +1133,8 @@ c.register('Lm/x1', function(b, i) {
   text-align: center;
   padding-bottom: ${ 0 }px;
   ${ 0 }
-`), () => i.PADDING, a => a.background, a => a.color, a => a.bottomPadding, a => a.maskImage ? `mask-image: linear-gradient(\n    to bottom,\n    ${ a.background } 50%,\n    transparent 100%);` : ''),
-        t = h.default.i.attrs({
+`), () => i.PADDING, _i => _i.background, _i => _i.color, _i => _i.bottomPadding, _i => _i.maskImage ? `mask-image: linear-gradient(\n    to bottom,\n    ${ _i.background } 50%,\n    transparent 100%);` : ''),
+        _t = h.default.i.attrs({
             className: 'fal fa-times'
         })(l || (l = p`
   position: absolute;
@@ -1148,39 +1148,39 @@ c.register('Lm/x1', function(b, i) {
     opacity: 1;
   }
 `), () => i.PADDING),
-        u = h.default.div.attrs({
+        _u = h.default.div.attrs({
             className: 'maxWidth'
         })(m || (m = p`
   padding: 0px ${ 0 }px;
 `), () => i.PADDING),
-        v = h.default.div(n || (n = p`
+        _v = h.default.div(n || (n = p`
   font-size: 42px;
   font-weight: ${ 0 };
 `), f.FontWeights.UltraBold),
-        w = h.default.div(o || (o = p`
+        _w = h.default.div(o || (o = p`
   font-size: 20px;
 `));
-}), c.register('L2h2Z', function(b, d) {
-    a(b.exports, 'default', function() {
-        return i;
+}), a.register('kXV54', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('ot5Uq'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('Ljprz'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
                 icon: f.default
             }));
         };
     h.displayName = 'ReadOutlined';
-    var i = e.forwardRef(h);
-}), c.register('ot5Uq', function(b, c) {
-    a(b.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('Ljprz', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {

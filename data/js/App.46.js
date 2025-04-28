@@ -1,166 +1,166 @@
-function a(a, b, A, c) {
-    Object.defineProperty(a, b, {
-        get: A,
-        set: c,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('ABRlx', function(b, A) {
-    a(b.exports, 'default', function() {
-        return c;
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('htSmB', function(b, c) {
+    _x(b.exports, 'default', function() {
+        return _d;
     });
-    var c = {
+    var _d = {
         Red: '#d32f2f',
         Green: '#388e3c',
         Blue: '#303f9f'
     };
-}), b.register('1oJMT', function(A, B) {
-    a(A.exports, 'default', function() {
-        return y;
+}), a.register('ERGdH', function(b, c) {
+    _x(b.exports, 'default', function() {
+        return _z;
     });
-    var c = b('8kSQZ');
-    b('uPP4W');
-    var d = b('h99Nu'),
-        e = b('IsmrL'),
-        f = b('ExtIT'),
-        g = b('gSUVO'),
-        h = b('bzteU5'),
-        i = b('PjB0f'),
-        j = b('VsZIM'),
-        k = b('0wLl2');
-    let l, m, n, o, p, q, r = a => a;
-    const s = d.default.div(l || (l = r`
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('ulE4q'),
+        g = a('fmVdR'),
+        h = a('b5kvC'),
+        i = a('PElTf4'),
+        j = a('PMl60'),
+        k = a('BtZXP'),
+        l = a('hHkFq');
+    let m, n, o, p, q, r, s = _x => _x;
+    const t = e.default.div(m || (m = s`
   display: flex;
   flex-direction: column;
   min-height: max-content;
 `)),
-        t = d.default.div(m || (m = r`
+        u = e.default.div(n || (n = s`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 `)),
-        u = d.default.div(n || (n = r`
+        v = e.default.div(o || (o = s`
   display: flex;
   flex-direction: column;
 `)),
-        v = d.default.h2(o || (o = r`
+        w = e.default.h2(p || (p = s`
   font-size: 46px;
   line-height: 46px;
   font-weight: ${ 0 };
   margin-bottom: 0px;
   margin-top: 3px;
-`), g.FontWeights.UltraBold),
-        w = d.default.p(p || (p = r`
+`), h.FontWeights.UltraBold),
+        x = e.default.p(q || (q = s`
   margin-bottom: 0px;
   font-size: 20px;
 `)),
-        x = (0, d.default)(e.default)(q || (q = r`
+        y = (0, e.default)(f.default)(r || (r = s`
   @media print {
     display: none;
   }
 `));
-    var y = a => {
-        const [z, A, B] = (0, i.useBoolean)(!1);
-        return (0, c.jsxs)(c.Fragment, {
+    var _z = _x => {
+        const [A, B, C] = (0, j.useBoolean)(!1);
+        return (0, d.jsxs)(d.Fragment, {
             children: [
-                (0, c.jsxs)(s, {
+                (0, d.jsxs)(t, {
                     children: [
-                        (0, c.jsxs)(t, {
+                        (0, d.jsxs)(u, {
                             children: [
-                                (0, c.jsxs)(u, {
+                                (0, d.jsxs)(v, {
                                     children: [
-                                        (0, c.jsx)(v, {
-                                            children: a.title
+                                        (0, d.jsx)(w, {
+                                            children: _x.title
                                         }),
-                                        a.description && (0, c.jsx)(w, {
-                                            children: a.description
+                                        _x.description && (0, d.jsx)(x, {
+                                            children: _x.description
                                         })
                                     ]
                                 }),
-                                a.download ? (0, c.jsx)(x, {
+                                _x.download ? (0, d.jsx)(y, {
                                     style: {
                                         marginLeft: 30
                                     },
                                     size: 'large',
-                                    icon: (0, c.jsx)(h.default, {}),
+                                    icon: (0, d.jsx)(i.default, {}),
                                     onClick: () => {
-                                        (0, i.isUpgraded)() ? null == a || a.download(): A();
+                                        (0, j.isUpgraded)() ? null == _x || _x.download(): B();
                                     },
                                     children: 'Export'
                                 }) : null
                             ]
                         }),
-                        (0, c.jsx)(f.default, {})
+                        (0, d.jsx)(g.default, {})
                     ]
                 }),
-                (0, c.jsx)(j.default, {
+                (0, d.jsx)(k.default, {
                     id: 'report export',
                     copy: {
                         title: 'Export reports with Pro',
-                        description: (0, c.jsxs)(c.Fragment, {
+                        description: (0, d.jsxs)(d.Fragment, {
                             children: [
                                 'To export a game report to a spreadsheet file,',
                                 ' ',
-                                (0, c.jsxs)('b', {
+                                (0, d.jsxs)('b', {
                                     children: [
                                         'upgrade to ',
-                                        k.COMPANY_NAME,
+                                        l.COMPANY_NAME,
                                         ' Pro.'
                                     ]
                                 })
                             ]
                         })
                     },
-                    visible: z,
-                    close: B
+                    visible: A,
+                    close: C
                 })
             ]
         });
     };
-}), b.register('/mQJs', function(u, w) {
-    a(u.exports, 'default', function() {
-        return o;
+}), a.register('r2OBp', function(b, c) {
+    _x(b.exports, 'default', function() {
+        return _p;
     });
-    var c = b('8kSQZ');
-    b('uPP4W');
-    var d = b('h99Nu'),
-        e = b('f9f+a'),
-        f = b('gSUVO'),
-        g = b('lmfrI');
-    let h, i, j, k = a => a;
-    const l = (0, d.default)(e.default)(h || (h = k`
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('oXQNI'),
+        g = a('b5kvC'),
+        h = a('sHRDd');
+    let i, j, k, l = _x => _x;
+    const m = (0, e.default)(f.default)(i || (i = l`
   margin-bottom: 10px !important;
 `)),
-        m = d.default.h2(i || (i = k`
+        n = e.default.h2(j || (j = l`
   margin-bottom: -9px;
   font-weight: ${ 0 };
-`), f.FontWeights.Bold),
-        n = d.default.span(j || (j = k`
+`), g.FontWeights.Bold),
+        o = e.default.span(k || (k = l`
   font-size: 40px;
   font-weight: ${ 0 };
   color: ${ 0 };
-`), f.FontWeights.Black, a => a.color ? a.color : g.default.Black);
-    var o = a => (0, c.jsxs)(l, {
-        className: a.className,
+`), g.FontWeights.Black, _x => _x.color ? _x.color : h.default.Black);
+    var _p = _x => (0, d.jsxs)(m, {
+        className: _x.className,
         children: [
-            null !== a.header && (0, c.jsx)(m, {
-                children: a.header
+            null !== _x.header && (0, d.jsx)(n, {
+                children: _x.header
             }),
-            null !== a.content && (0, c.jsx)(n, {
-                color: a.contentColor,
-                children: a.content
+            null !== _x.content && (0, d.jsx)(o, {
+                color: _x.contentColor,
+                children: _x.content
             })
         ]
     });
-}), b.register('9rz8D', function(u, w) {
-    a(u.exports, 'default', function() {
-        return d;
+}), a.register('smHLt', function(b, c) {
+    _x(b.exports, 'default', function() {
+        return _e;
     });
-    let c;
-    var d = b('h99Nu').default.div(c || (c = (a => a)`
+    let d;
+    var _e = a('Axq+p').default.div(d || (d = (_x => _x)`
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -174,52 +174,52 @@ b.register('ABRlx', function(b, A) {
       visibility: hidden;
     }
   }
-`), a => a.preventScroll ? 'hidden' : 'auto');
-}), b.register('7W7GT', function(u, w) {
-    a(u.exports, 'default', function() {
-        return l;
+`), _x => _x.preventScroll ? 'hidden' : 'auto');
+}), a.register('YZWWM', function(b, c) {
+    _x(b.exports, 'default', function() {
+        return _m;
     });
-    var c = b('8kSQZ');
-    b('uPP4W');
-    var d = b('h99Nu'),
-        e = b('oczPp'),
-        f = b('O5zf8');
-    let g, h, i = a => a;
-    const j = d.default.div(g || (g = i`
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('+0Sy50'),
+        g = a('GHMZl');
+    let h, i, j = _x => _x;
+    const k = e.default.div(h || (h = j`
   display: flex;
   width: 100%;
   justify-content: space-between;
 `)),
-        k = d.default.div(h || (h = i`
+        l = e.default.div(i || (i = j`
   width: 100%;
 `));
-    var l = a => (0, c.jsxs)(j, {
+    var _m = _x => (0, d.jsxs)(k, {
         children: [
-            (0, c.jsx)(k, {
-                children: (0, c.jsx)(e.default, {
-                    question: a.question
+            (0, d.jsx)(l, {
+                children: (0, d.jsx)(f.default, {
+                    question: _x.question
                 })
             }),
-            (0, c.jsx)(f.default, {
-                correct: a.correct,
-                incorrect: a.incorrect,
-                accuracy: a.accuracy
+            (0, d.jsx)(g.default, {
+                correct: _x.correct,
+                incorrect: _x.incorrect,
+                accuracy: _x.accuracy
             })
         ]
     });
-}), b.register('O5zf8', function(u, w) {
-    a(u.exports, 'default', function() {
-        return t;
+}), a.register('GHMZl', function(b, c) {
+    _x(b.exports, 'default', function() {
+        return _u;
     });
-    var c = b('8kSQZ');
-    b('uPP4W');
-    var d = b('h99Nu'),
-        e = b('f9f+a'),
-        f = b('YfLmS'),
-        g = b('lmfrI'),
-        h = b('ABRlx');
-    let i, j, k, l, m, n = a => a;
-    const o = d.default.div(i || (i = n`
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('oXQNI'),
+        g = a('ijg0s'),
+        h = a('sHRDd'),
+        i = a('htSmB');
+    let j, k, l, m, n, o = _x => _x;
+    const p = e.default.div(j || (j = o`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -230,75 +230,75 @@ b.register('ABRlx', function(b, A) {
     break-inside: avoid;
   }
 `)),
-        p = (0, d.default)(e.default).attrs({
+        q = (0, e.default)(f.default).attrs({
             bodyStyle: {
                 textAlign: 'center',
                 padding: 0
             }
-        })(j || (j = n`
+        })(k || (k = o`
   text-align: center;
   font-size: 20px !important;
   padding: 7px 0px !important;
   color: ${ 0 };
   cursor: default;
   width: 100px !important;
-`), g.default.Black),
-        q = (0, d.default)(p)(k || (k = n`
+`), h.default.Black),
+        r = (0, e.default)(q)(l || (l = o`
   color: ${ 0 } !important;
   margin-left: 20px !important;
-`), h.default.Green),
-        r = (0, d.default)(p)(l || (l = n`
+`), i.default.Green),
+        s = (0, e.default)(q)(m || (m = o`
   color: ${ 0 } !important;
   margin-left: 10px !important;
-`), h.default.Red),
-        s = (0, d.default)(p)(m || (m = n`
+`), i.default.Red),
+        t = (0, e.default)(q)(n || (n = o`
   color: ${ 0 } !important;
   margin-left: 10px !important;
-`), h.default.Blue);
-    var t = a => (0, c.jsxs)(o, {
+`), i.default.Blue);
+    var _u = _x => (0, d.jsxs)(p, {
         children: [
-            (0, c.jsx)(f.default, {
+            (0, d.jsx)(g.default, {
                 title: 'Correct',
-                children: (0, c.jsx)(q, {
-                    children: a.correct
+                children: (0, d.jsx)(r, {
+                    children: _x.correct
                 })
             }),
-            (0, c.jsx)(f.default, {
+            (0, d.jsx)(g.default, {
                 title: 'Incorrect',
-                children: (0, c.jsx)(r, {
-                    children: a.incorrect
+                children: (0, d.jsx)(s, {
+                    children: _x.incorrect
                 })
             }),
-            (0, c.jsx)(f.default, {
+            (0, d.jsx)(g.default, {
                 title: 'Accuracy',
-                children: (0, c.jsx)(s, {
-                    children: `${ a.accuracy }%`
+                children: (0, d.jsx)(t, {
+                    children: `${ _x.accuracy }%`
                 })
             })
         ]
     });
-}), b.register('9TAjB', function(u, w) {
-    a(u.exports, 'default', function() {
-        return s;
+}), a.register('sjiOn', function(b, c) {
+    _x(b.exports, 'default', function() {
+        return _t;
     });
-    var c = b('8kSQZ'),
-        d = b('uPP4W'),
-        e = b('h99Nu'),
-        f = b('ExtIT'),
-        g = b('PjB0f'),
-        h = b('7W7GT'),
-        i = b('gSUVO'),
-        j = b('ABRlx'),
-        k = b('1oJMT'),
-        l = b('/mQJs'),
-        m = b('9rz8D');
-    let n, o, p = a => a;
-    const q = e.default.div(n || (n = p`
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('fmVdR'),
+        h = a('PMl60'),
+        i = a('YZWWM'),
+        j = a('b5kvC'),
+        k = a('htSmB'),
+        l = a('ERGdH'),
+        m = a('r2OBp'),
+        n = a('smHLt');
+    let o, p, q = _x => _x;
+    const r = f.default.div(o || (o = q`
   display: flex;
   justify-content: space-around;
   min-height: max-content;
 `)),
-        r = (0, e.default)(l.default)(o || (o = p`
+        s = (0, f.default)(m.default)(p || (p = q`
   flex-basis: 33%;
   margin-bottom: 10px;
   text-align: center;
@@ -306,90 +306,90 @@ b.register('ABRlx', function(b, A) {
     margin-right: 10px;
   }
 `));
-    var s = a => {
+    var _t = _x => {
         const {
-            player: t,
-            questions: u
-        } = v, w = d.useMemo(() => {
-            const x = new Set();
-            t.correctQuestionIds.forEach(t => {
-                x.add(t);
-            }), t.incorrectQuestionIds.forEach(t => {
-                x.add(t);
+            player: u,
+            questions: v
+        } = _x, w = e.useMemo(() => {
+            const _x = new Set();
+            u.correctQuestionIds.forEach(u => {
+                _x.add(u);
+            }), u.incorrectQuestionIds.forEach(u => {
+                _x.add(u);
             });
             const y = [];
-            return x.forEach(x => {
-                const z = u.find(z => z._id === x);
+            return _x.forEach(_x => {
+                const z = v.find(z => z._id === _x);
                 z && y.push(z);
             }), y;
         }, [
-            u.length,
-            t.correctQuestionIds.length,
-            t.incorrectQuestionIds.length
-        ]), x = d.useMemo(() => w.map(v => {
+            v.length,
+            u.correctQuestionIds.length,
+            u.incorrectQuestionIds.length
+        ]), x = e.useMemo(() => w.map(e => {
             let y = 0,
                 z = 0;
-            return t.correctQuestionIds.forEach(t => {
-                t === v._id && y++;
-            }), t.incorrectQuestionIds.forEach(t => {
-                t === v._id && z++;
+            return u.correctQuestionIds.forEach(u => {
+                u === e._id && y++;
+            }), u.incorrectQuestionIds.forEach(u => {
+                u === e._id && z++;
             }), {
-                question: v,
+                question: e,
                 resultData: {
                     correct: y,
                     incorrect: z,
-                    accuracy: (0, g.calculateAccuracy)(y, z)
+                    accuracy: (0, h.calculateAccuracy)(y, z)
                 }
             };
         }), [
             w.length,
-            t.correctQuestionIds.length,
-            t.incorrectQuestionIds.length
+            u.correctQuestionIds.length,
+            u.incorrectQuestionIds.length
         ]);
-        return (0, c.jsxs)(m.default, {
-            preventScroll: v.preventScroll,
+        return (0, d.jsxs)(n.default, {
+            preventScroll: e.preventScroll,
             children: [
-                (0, c.jsx)(k.default, {
-                    title: t.name
+                (0, d.jsx)(l.default, {
+                    title: u.name
                 }),
-                (0, c.jsxs)(q, {
+                (0, d.jsxs)(r, {
                     children: [
-                        (0, c.jsx)(r, {
+                        (0, d.jsx)(s, {
                             header: 'Correct',
-                            content: t.correctQuestionIds.length,
-                            contentColor: j.default.Green
+                            content: u.correctQuestionIds.length,
+                            contentColor: k.default.Green
                         }),
-                        (0, c.jsx)(r, {
+                        (0, d.jsx)(s, {
                             header: 'Incorrect',
-                            content: t.incorrectQuestionIds.length,
-                            contentColor: j.default.Red
+                            content: u.incorrectQuestionIds.length,
+                            contentColor: k.default.Red
                         }),
-                        (0, c.jsx)(r, {
+                        (0, d.jsx)(s, {
                             header: 'Accuracy',
-                            content: `${ (0, g.calculateAccuracy)(t.correctQuestionIds.length, t.incorrectQuestionIds.length) }%`,
-                            contentColor: j.default.Blue
+                            content: `${ (0, h.calculateAccuracy)(u.correctQuestionIds.length, u.incorrectQuestionIds.length) }%`,
+                            contentColor: k.default.Blue
                         })
                     ]
                 }),
-                (0, c.jsx)('div', {
+                (0, d.jsx)('div', {
                     className: 'maxWidth',
-                    children: (0, c.jsx)(f.default, {
+                    children: (0, d.jsx)(g.default, {
                         style: {
                             fontSize: 20,
-                            fontWeight: i.FontWeights.UltraBold
+                            fontWeight: j.FontWeights.UltraBold
                         },
-                        children: (0, c.jsx)('div', {
+                        children: (0, d.jsx)('div', {
                             children: 'Questions'
                         })
                     })
                 }),
-                (0, c.jsx)('div', {
-                    children: x.sort((v, t) => v.resultData.accuracy > t.resultData.accuracy ? 1 : -1).map(v => (0, c.jsx)(h.default, {
-                        question: v.question,
-                        correct: v.resultData.correct,
-                        incorrect: v.resultData.incorrect,
-                        accuracy: v.resultData.accuracy
-                    }, v.question._id + '-' + t.name + '-breakdown'))
+                (0, d.jsx)('div', {
+                    children: x.sort((e, u) => e.resultData.accuracy > u.resultData.accuracy ? 1 : -1).map(e => (0, d.jsx)(i.default, {
+                        question: e.question,
+                        correct: e.resultData.correct,
+                        incorrect: e.resultData.incorrect,
+                        accuracy: e.resultData.accuracy
+                    }, e.question._id + '-' + u.name + '-breakdown'))
                 })
             ]
         });

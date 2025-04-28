@@ -1,51 +1,51 @@
-function a(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
 
-function b(a, b, c, G) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: G,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('3mzvZ', function(G, d) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('PK2j1', function(b, c) {
     var d;
-    d = G.exports, Object.defineProperty(d, '__esModule', {
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(G.exports, 'default', function() {
-        return D;
+    }), _E(b.exports, 'default', function() {
+        return _D;
     });
-    var e = c('8kSQZ'),
-        f = c('ExtIT'),
-        g = c('UzdPH'),
-        h = c('Vlfxs'),
-        i = c('uPP4W'),
-        j = c('h99Nu'),
-        k = c('S/jX4'),
-        l = c('iAe3o'),
-        m = c('E7bPp'),
-        n = c('FFDo5'),
-        o = c('TnPB+'),
-        p = c('B/6cb'),
-        q = c('kneek'),
-        r = c('+0Tb/'),
-        s = c('7Sbqr'),
-        t = c('7fo7e'),
-        u = c('snog9'),
-        v = c('sc9jo'),
-        w = c('3w8wZ'),
-        x = c('nbHO+'),
-        y = c('gSUVO'),
-        z = c('YimJ0'),
-        A = c('X6IzA'),
-        B = c('8+IVG');
+    var e = a('0hzx+'),
+        f = a('fmVdR'),
+        g = a('j2ADs'),
+        h = a('2x11J'),
+        i = a('LEQ5w'),
+        j = a('Axq+p'),
+        k = a('vShe/'),
+        l = a('11nl3'),
+        m = a('WluX+'),
+        n = a('YMjEj'),
+        o = a('mQCZt'),
+        p = a('WIRQZ'),
+        q = a('8WvaZ'),
+        r = a('ryWAy'),
+        s = a('iWivW'),
+        t = a('rWzgW'),
+        u = a('ILZh4'),
+        v = a('e07Rt'),
+        w = a('6vkJ5'),
+        x = a('Ct4sg'),
+        y = a('b5kvC'),
+        z = a('0HHAH'),
+        A = a('Dv0SO'),
+        B = a('oqbdA');
     let C;
-    var D = (0, h.observer)(() => {
-        const E = (0, m.default)(),
+    var _D = (0, h.observer)(() => {
+        const _E = (0, m.default)(),
             F = () => {
                 (0, o.default)(l.default.none);
             };
@@ -63,7 +63,7 @@ c.register('3mzvZ', function(G, d) {
         }, [
             G,
             F
-        ]), (0, r.default)(a(q).Input.Keyboard.KeyCodes.ESC, F, [F]), (0, e.jsx)(w.Container, {
+        ]), (0, r.default)(_b(q).Input.Keyboard.KeyCodes.ESC, F, [F]), (0, e.jsx)(w.Container, {
             children: (0, e.jsxs)(w.Content, {
                 style: {
                     paddingTop: 53
@@ -83,9 +83,9 @@ c.register('3mzvZ', function(G, d) {
                         },
                         children: 'Eraser'
                     }),
-                    (0, e.jsx)(E, {
-                        children: E ? (0, e.jsx)(B.default, {
-                            removalInfo: E
+                    (0, e.jsx)(_E, {
+                        children: _E ? (0, e.jsx)(B.default, {
+                            removalInfo: _E
                         }) : (0, e.jsx)(A.default, {})
                     }),
                     (0, e.jsx)(f.default, {
@@ -98,9 +98,9 @@ c.register('3mzvZ', function(G, d) {
             })
         });
     });
-    const E = (0, j.default)(z.Centered).attrs({
+    const _E = (0, j.default)(z.Centered).attrs({
         className: 'maxWidth'
-    })(C || (C = (a => a)`
+    })(C || (C = (_b => _b)`
   margin-top: 10px;
   padding: 20px;
   min-height: 190px;
@@ -108,19 +108,19 @@ c.register('3mzvZ', function(G, d) {
   background: rgba(255, 255, 255, 0.07);
   border: 2px dashed rgba(255, 255, 255, 0.5);
 `));
-}), c.register('E7bPp', function(a, o) {
-    b(a.exports, 'default', function() {
-        return k;
+}), a.register('WluX+', function(_b, c) {
+    _m(_b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('uPP4W'),
-        e = c('7Sbqr'),
-        f = c('YARc1'),
-        g = c('RJ/fk'),
-        h = c('Wgw1x0'),
-        i = c('7X8h3'),
-        j = c('xXIOh');
-    var k = () => {
-        const [l, m] = d.useState(!1), [n, o] = d.useState(''), [p, q] = d.useState(''), [r, s] = d.useState('');
+    var d = a('LEQ5w'),
+        e = a('iWivW'),
+        f = a('PUGQx1'),
+        g = a('qVhMZ'),
+        h = a('bzU3s'),
+        i = a('EqyfB'),
+        j = a('47u/+');
+    var _k = () => {
+        const [l, _m] = d.useState(!1), [n, o] = d.useState(''), [p, q] = d.useState(''), [r, s] = d.useState('');
         return d.useEffect(() => {
             const t = (0, j.ReactionToMultipleProps)([
                 () => e.default.me.removing.tilesToRemove,
@@ -158,7 +158,7 @@ c.register('3mzvZ', function(G, d) {
                         description: A
                     } : null;
                 })();
-                u ? (o(u.type), q(u.name), s(u.description || ''), m(!0)) : m(!1);
+                u ? (o(u.type), q(u.name), s(u.description || ''), _m(!0)) : _m(!1);
             }, {
                 fireImmediately: !0
             });
@@ -169,57 +169,57 @@ c.register('3mzvZ', function(G, d) {
             description: r
         } : null;
     };
-}), c.register('xXIOh', function(a, f) {
-    b(a.exports, 'ReactionToMultipleProps', function() {
-        return e;
+}), a.register('47u/+', function(b, c) {
+    _v(b.exports, 'ReactionToMultipleProps', function() {
+        return _e;
     });
-    var d = c('UnUp5');
-    const e = (a, b, c) => {
+    var d = a('YuT/D');
+    const _e = (b, _v, a) => {
         const f = [];
-        return a.forEach(a => {
-            const g = (0, d.reaction)(a, b, c);
+        return b.forEach(b => {
+            const g = (0, d.reaction)(b, _v, a);
             f.push(g);
         }), () => {
-            f.forEach(a => {
-                a();
+            f.forEach(b => {
+                b();
             });
         };
     };
-}), c.register('sc9jo', function(a, x) {
-    b(a.exports, 'default', function() {
-        return t;
+}), a.register('e07Rt', function(b, c) {
+    _v(b.exports, 'default', function() {
+        return _t;
     });
-    var d = c('8kSQZ'),
-        e = c('Ly1h3'),
-        f = c('5nJMd26'),
-        g = c('UzdPH'),
-        h = c('Vlfxs'),
-        i = c('uPP4W'),
-        j = c('h99Nu'),
-        k = c('S/jX4'),
-        l = c('am7L5'),
-        m = c('EefFJ'),
-        n = c('/44Hu'),
-        o = c('gSUVO'),
-        p = c('5YE/F0'),
-        q = c('RJ/fk'),
-        r = c('Wgw1x0');
+    var d = a('0hzx+'),
+        e = a('inwN3'),
+        f = a('cvto726'),
+        g = a('j2ADs'),
+        h = a('2x11J'),
+        i = a('LEQ5w'),
+        j = a('Axq+p'),
+        k = a('vShe/'),
+        l = a('bHGrl'),
+        m = a('2GeW4'),
+        n = a('N/g4T'),
+        o = a('b5kvC'),
+        p = a('8Yhx/'),
+        q = a('qVhMZ'),
+        r = a('bzU3s');
     let s;
-    var t = (0, h.observer)(() => {
+    var _t = (0, h.observer)(() => {
         const {
             me: {
                 removing: u
             }
-        } = (0, l.default)(), v = i.useRef(), w = i.useRef(), x = i.useRef(), y = () => {
+        } = (0, l.default)(), _v = i.useRef(), w = i.useRef(), x = i.useRef(), y = () => {
             var z, A, B, C, D, E;
-            null == v || null === (z = v.current) || void 0 === z || null === (A = z.blur) || void 0 === A || A.call(z), null == w || null === (B = w.current) || void 0 === B || null === (C = B.blur) || void 0 === C || C.call(B), null == x || null === (D = x.current) || void 0 === D || null === (E = D.blur) || void 0 === E || E.call(D);
+            null == _v || null === (z = _v.current) || void 0 === z || null === (A = z.blur) || void 0 === A || A.call(z), null == w || null === (B = w.current) || void 0 === B || null === (C = B.blur) || void 0 === C || C.call(B), null == x || null === (D = x.current) || void 0 === D || null === (E = D.blur) || void 0 === E || E.call(D);
         }, z = u => {
             const A = u === n.RemovingMode.propsAndDevices ? `${ (0, q.CapitalizeFirstLetter)(r.default.prop.plural) } & ${ (0, q.CapitalizeFirstLetter)(r.default.device.plural) }` : u === n.RemovingMode.tiles ? (0, q.CapitalizeFirstLetter)(r.default.terrain.singular) : u === n.RemovingMode.wires ? (0, q.CapitalizeFirstLetter)(r.default.wire.plural) : u;
             return (0, d.jsx)(e.default.Option, {
                 value: u,
                 children: A
             }, `remove-options-mode-${ u }`);
-        }, A = (u, v) => {
+        }, A = (u, _v) => {
             if (u === n.RemovingTilesMode.allLayers)
                 return (0, d.jsx)(e.default.Option, {
                     ref: w,
@@ -231,10 +231,10 @@ c.register('3mzvZ', function(G, d) {
                     value: 100,
                     children: u
                 }, `remove-tiles-mode-${ u }`);
-            const B = `${ u }-${ v }`;
+            const B = `${ u }-${ _v }`;
             return (0, d.jsx)(e.default.Option, {
-                value: v,
-                children: v + ' - ' + p.TerrainLayerNames[v - 1] || 'Layer'
+                value: _v,
+                children: _v + ' - ' + p.TerrainLayerNames[_v - 1] || 'Layer'
             }, `remove-tiles-mode-${ B }`);
         };
         return (0, d.jsx)(m.default, {
@@ -244,19 +244,19 @@ c.register('3mzvZ', function(G, d) {
                 direction: 'vertical',
                 size: 13,
                 children: [
-                    (0, d.jsxs)(u, {
+                    (0, d.jsxs)(_u, {
                         children: [
-                            (0, d.jsx)(v, {
+                            (0, d.jsx)(_v, {
                                 children: 'Eraser Mode:'
                             }),
                             (0, d.jsxs)(e.default, {
-                                ref: v,
+                                ref: _v,
                                 style: {
                                     width: 200
                                 },
                                 value: u.removingMode,
-                                onChange: v => {
-                                    u.removingMode = v, y();
+                                onChange: _v => {
+                                    u.removingMode = _v, y();
                                 },
                                 children: [
                                     z(n.RemovingMode.everything),
@@ -267,9 +267,9 @@ c.register('3mzvZ', function(G, d) {
                             })
                         ]
                     }),
-                    u.removingMode === n.RemovingMode.tiles ? (0, d.jsxs)(u, {
+                    u.removingMode === n.RemovingMode.tiles ? (0, d.jsxs)(_u, {
                         children: [
-                            (0, d.jsx)(v, {
+                            (0, d.jsx)(_v, {
                                 children: 'Layer:'
                             }),
                             (0, d.jsxs)(e.default, {
@@ -278,8 +278,8 @@ c.register('3mzvZ', function(G, d) {
                                     width: 200
                                 },
                                 value: u.removingTilesMode === n.RemovingTilesMode.allLayers ? 99 : u.removingTilesMode === n.RemovingTilesMode.topLayer ? 100 : u.removingTilesLayer,
-                                onChange: v => {
-                                    99 === v ? u.removingTilesMode = n.RemovingTilesMode.allLayers : 100 === v ? u.removingTilesMode = n.RemovingTilesMode.topLayer : (u.removingTilesMode = n.RemovingTilesMode.layer, u.removingTilesLayer = v), y();
+                                onChange: _v => {
+                                    99 === _v ? u.removingTilesMode = n.RemovingTilesMode.allLayers : 100 === _v ? u.removingTilesMode = n.RemovingTilesMode.topLayer : (u.removingTilesMode = n.RemovingTilesMode.layer, u.removingTilesLayer = _v), y();
                                 },
                                 children: [
                                     A(n.RemovingTilesMode.topLayer),
@@ -289,9 +289,9 @@ c.register('3mzvZ', function(G, d) {
                             })
                         ]
                     }) : null,
-                    u.removingMode === n.RemovingMode.tiles ? (0, d.jsxs)(u, {
+                    u.removingMode === n.RemovingMode.tiles ? (0, d.jsxs)(_u, {
                         children: [
-                            (0, d.jsx)(v, {
+                            (0, d.jsx)(_v, {
                                 children: 'Eraser Size:'
                             }),
                             (0, d.jsx)(e.default, {
@@ -300,8 +300,8 @@ c.register('3mzvZ', function(G, d) {
                                     width: 200
                                 },
                                 value: u.removingTilesEraserSize,
-                                onChange: v => {
-                                    u.removingTilesEraserSize = v, y();
+                                onChange: _v => {
+                                    u.removingTilesEraserSize = _v, y();
                                 },
                                 children: Array.from(Array(3).keys()).map(u => (u => (0, d.jsx)(e.default.Option, {
                                     value: u,
@@ -314,42 +314,42 @@ c.register('3mzvZ', function(G, d) {
             })
         });
     });
-    const u = j.default.div.attrs({
+    const _u = j.default.div.attrs({
             className: 'maxWidth vc between flex'
-        })(s || (s = (a => a)``)),
-        v = a => (0, d.jsx)(g.default.Text, {
+        })(s || (s = (b => b)``)),
+        _v = b => (0, d.jsx)(g.default.Text, {
             style: {
                 fontWeight: o.FontWeights.Bold,
                 color: k.default.White
             },
-            children: a.children
+            children: b.children
         });
-}), c.register('5YE/F0', function(a, c) {
-    b(a.exports, 'TerrainLayerNames', function() {
-        return d;
+}), a.register('8Yhx/', function(b, c) {
+    _m(b.exports, 'TerrainLayerNames', function() {
+        return _d;
     });
-    const d = [
+    const _d = [
         'Bottom',
         'Lower',
         'Middle',
         'Upper',
         'Top'
     ];
-}), c.register('X6IzA', function(a, o) {
-    b(a.exports, 'default', function() {
-        return m;
+}), a.register('Dv0SO', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _m;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('YimJ0'),
-        g = c('iMnBi'),
-        h = c('UzdPH'),
-        i = c('lmfrI');
-    let j, k, l = a => a;
-    var m = () => (0, d.jsxs)(n, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('0HHAH'),
+        g = a('9R7cy'),
+        h = a('j2ADs'),
+        i = a('sHRDd');
+    let j, k, l = b => b;
+    var _m = () => (0, d.jsxs)(_n, {
         children: [
-            (0, d.jsx)(o, {
+            (0, d.jsx)(_o, {
                 children: (0, d.jsx)(g.default, {
                     name: 'fas fa-eraser'
                 })
@@ -364,39 +364,39 @@ c.register('3mzvZ', function(G, d) {
             })
         ]
     });
-    const n = (0, e.default)(f.CenteredColumn)(j || (j = l``)),
-        o = e.default.div(k || (k = l`
+    const _n = (0, e.default)(f.CenteredColumn)(j || (j = l``)),
+        _o = e.default.div(k || (k = l`
   font-size: 24px;
   color: ${ 0 };
 `), i.default.White);
-}), c.register('8+IVG', function(a, o) {
-    b(a.exports, 'default', function() {
-        return l;
+}), a.register('oqbdA', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('UzdPH'),
-        g = c('YimJ0'),
-        h = c('lmfrI');
-    let i, j, k = a => a;
-    var l = a => {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('j2ADs'),
+        g = a('0HHAH'),
+        h = a('sHRDd');
+    let i, j, k = b => b;
+    var _l = b => {
         const {
             removalInfo: {
-                type: m,
+                type: _m,
                 name: n,
                 description: o
             }
-        } = p;
-        return (0, d.jsxs)(m, {
+        } = b;
+        return (0, d.jsxs)(_m, {
             children: [
-                (0, d.jsx)(n, {
+                (0, d.jsx)(_n, {
                     style: o ? {
                         marginBottom: 10
                     } : void 0,
                     children: (0, d.jsx)(f.default.Text, {
                         italic: !0,
-                        children: m
+                        children: _m
                     })
                 }),
                 (0, d.jsx)('div', {
@@ -419,31 +419,31 @@ c.register('3mzvZ', function(G, d) {
             ]
         });
     };
-    const m = (0, e.default)(g.CenteredColumn).attrs({
+    const _m = (0, e.default)(g.CenteredColumn).attrs({
             className: 'maxAll'
         })(i || (i = k``)),
-        n = e.default.div(j || (j = k``));
-}), c.register('JegR3', function(a, d) {
-    b(a.exports, 'default', function() {
-        return i;
+        _n = e.default.div(j || (j = k``));
+}), a.register('pMmde1', function(b, c) {
+    _j(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('WKaIG'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('+bIFH'),
+        g = a('sLVIW'),
+        h = function(i, _j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, i), {}, {
+                ref: _j,
                 icon: f.default
             }));
         };
     h.displayName = 'DownOutlined';
-    var i = e.forwardRef(h);
-}), c.register('WKaIG', function(a, c) {
-    b(a.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('+bIFH', function(b, c) {
+    t(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {

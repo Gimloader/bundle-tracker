@@ -1,52 +1,52 @@
-function a(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
 
-function b(a, b, c, d) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: d,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('xAWb+', function(d, e) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('Imhl6', function(b, c) {
     var d;
-    d = d.exports, Object.defineProperty(d, '__esModule', {
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(d.exports, 'default', function() {
-        return q;
+    }), _q(b.exports, 'default', function() {
+        return _q;
     });
-    var e = c('UM8oI'),
-        f = c('Bpt+p'),
-        g = c('5Ux1a'),
-        h = c('sgILU'),
-        i = c('MVCx0'),
-        j = c('wSwKo5'),
-        k = c('/Lvpl17'),
-        l = c('0x6bL'),
-        m = c('Sbl6W'),
-        n = c('95CV8'),
-        o = c('kneek');
+    var e = a('1bFPu'),
+        f = a('9tz3H'),
+        g = a('/pbxo'),
+        h = a('I35Ay'),
+        i = a('SiQeJ'),
+        j = a('IFO6W13'),
+        k = a('R2Ucl10'),
+        l = a('btxlR'),
+        m = a('2M6xn'),
+        n = a('qMN8v'),
+        o = a('8WvaZ');
     class p extends h.default {
-        constructor(b) {
-            super(b), (0, e.default)(this, 'createVisuals', () => {
-                const q = {
+        constructor(_q) {
+            super(_q), (0, e.default)(this, 'createVisuals', () => {
+                const r = {
                         ...m.UnknownItemAsset
                     },
-                    r = (0, l.default)(this.options.itemId);
-                r && (q.imageId = r.previewImage, q.imageUrl = r.previewImage), this.part = this.parts.add.sprite({
-                    ...q,
-                    onReady: q => {
-                        if (q.view.displayWidth = this.options.size, q.view.displayHeight = this.options.size, q.view.angle = this.options.angle, this.options.outline) {
-                            let s = this.options.outlineSize === i.OutlineSizeOption.custom ? this.options.customOutlineSize : this.options.size / 25;
-                            s > this.options.size / 10 && (s = this.options.size / 10), (0, n.AddOutline)({
-                                view: q.view,
+                    s = (0, l.default)(this.options.itemId);
+                s && (r.imageId = s.previewImage, r.imageUrl = s.previewImage), this.part = this.parts.add.sprite({
+                    ...r,
+                    onReady: r => {
+                        if (r.view.displayWidth = this.options.size, r.view.displayHeight = this.options.size, r.view.angle = this.options.angle, this.options.outline) {
+                            let t = this.options.outlineSize === i.OutlineSizeOption.custom ? this.options.customOutlineSize : this.options.size / 25;
+                            t > this.options.size / 10 && (t = this.options.size / 10), (0, n.AddOutline)({
+                                view: r.view,
                                 options: {
-                                    outlineColor: a(o).Display.Color.HexStringToColor(this.options.outlineColor).color,
-                                    thickness: s
+                                    outlineColor: _r(o).Display.Color.HexStringToColor(this.options.outlineColor).color,
+                                    thickness: t
                                 }
                             });
                         }
@@ -55,121 +55,121 @@ c.register('xAWb+', function(d, e) {
             }), (0, e.default)(this, 'getAlpha', () => (0, g.InPreGamePhase)() ? (0, f.isSavedVersion)() || this.options.visibleOnGameStart ? 1 : 0 : this.state.visible ? 1 : 0), (0, e.default)(this, 'setupVisualEditing', () => {
                 if (!(0, g.InPreGamePhase)() || !(0, f.isSavedVersion)())
                     return;
-                const q = (0, k.FetchOptionSchemaProperty)(this, 'size');
+                const _r = (0, k.FetchOptionSchemaProperty)(this, 'size');
                 this.visualEditing.add.box({
                     width: this.options.size,
                     height: this.options.size,
                     angle: this.options.angle,
-                    minWidth: q.min,
-                    maxWidth: q.max,
-                    minHeight: q.min,
-                    maxHeight: q.max,
+                    minWidth: _r.min,
+                    maxWidth: _r.max,
+                    minHeight: _r.min,
+                    maxHeight: _r.max,
                     rotable: !0,
                     keepRatio: !0,
-                    onChange: q => {
-                        (0, j.ReplaceVisualEditingPreview)(q.x, q.y, {
-                            size: q.width,
-                            angle: q.angle
+                    onChange: _r => {
+                        (0, j.ReplaceVisualEditingPreview)(_r.x, _r.y, {
+                            size: _r.width,
+                            angle: _r.angle
                         });
                     }
                 });
-            }), (0, e.default)(this, 'onStateChange', a => {
-                'visible' === a && (this.part.view.alpha = this.getAlpha());
+            }), (0, e.default)(this, 'onStateChange', _b => {
+                'visible' === _b && (this.part.view.alpha = this.getAlpha());
             }), this.setupVisualEditing(), this.createVisuals();
         }
     }
-    var q = r;
-}), c.register('MVCx0', function(a, c) {
+    var _q = p;
+}), a.register('SiQeJ', function(_b, c) {
     let d;
     var e;
-    b(a.exports, 'OutlineSizeOption', function() {
+    _f(_b.exports, 'OutlineSizeOption', function() {
         return d;
     }), (e = d || (d = {})).automatic = 'automatic', e.custom = 'custom';
-}), c.register('wSwKo5', function(a, i) {
-    b(a.exports, 'ReplaceVisualEditingPreview', function() {
-        return h;
+}), a.register('IFO6W13', function(b, c) {
+    _f(b.exports, 'ReplaceVisualEditingPreview', function() {
+        return _h;
     });
-    var d = c('2pEsK'),
-        e = c('Am0b71'),
-        f = c('KDS1x'),
-        g = c('83+vO');
-    const h = (a, b, c) => {
+    var d = a('HqwPM'),
+        e = a('+oovY4'),
+        f = a('A17vD'),
+        g = a('HXXiu');
+    const _h = (b, _f, a) => {
         const i = (0, g.FetchVisualEditingPreview)(),
             j = (0, f.FetchCurrentlyEditedDevice)();
         if (!j || !i)
             return;
-        const k = j.layers.isOnNaturalDepth() ? void 0 : b + j.layers.getDepthShift();
+        const k = j.layers.isOnNaturalDepth() ? void 0 : _f + j.layers.getDepthShift();
         (0, e.default)({
             deviceOption: i.deviceOption,
             id: d.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
+            x: b,
+            y: _f,
             depth: k,
             layerId: j.layers.getLayer(),
             name: i.name,
             isPreview: !0,
             options: {
                 ...i.options,
-                ...c
+                ...a
             },
             placedByClient: !0,
             state: i.deviceOption.defaultState
         });
     };
-}), c.register('Am0b71', function(a, d) {
-    b(a.exports, 'default', function() {
-        return f;
+}), a.register('+oovY4', function(b, c) {
+    _f(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('dAmf5'),
-        e = c('jgFbX');
-    var f = a => {
-        (0, d.default)().worldManager.devices.getDeviceById(a.id) && (0, e.default)(a);
+    var d = a('D5xLI'),
+        e = a('aIyMH');
+    var _f = b => {
+        (0, d.default)().worldManager.devices.getDeviceById(b.id) && (0, e.default)(b);
     };
-}), c.register('/Lvpl17', function(a, c) {
-    b(a.exports, 'FetchOptionSchemaProperty', function() {
-        return d;
+}), a.register('R2Ucl10', function(b, c) {
+    _f(b.exports, 'FetchOptionSchemaProperty', function() {
+        return _d;
     });
-    const d = (a, b) => {
+    const _d = (b, _f) => {
         var e, f, g;
-        const h = a.deviceOption.optionSchema.options.find(a => a.key === b);
+        const h = b.deviceOption.optionSchema.options.find(b => b.key === _f);
         return {
             min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
             max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
             step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
         };
     };
-}), c.register('Sbl6W', function(a, n) {
-    b(a.exports, 'BaseAsset', function() {
-        return e;
-    }), b(a.exports, 'UnknownItemAsset', function() {
-        return f;
+}), a.register('2M6xn', function(b, c) {
+    _f(b.exports, 'BaseAsset', function() {
+        return _e;
+    }), _f(b.exports, 'UnknownItemAsset', function() {
+        return _f;
     });
-    var d = c('JJQ0+');
-    const e = {
+    var d = a('2Xvuf');
+    const _e = {
             imageId: (0, d.default)('devices/item_granter/base.png'),
             imageUrl: (0, d.default)('devices/item_granter/base.png')
         },
-        f = {
+        _f = {
             imageId: '__UNKNOWN_ITEM',
             imageUrl: (0, d.default)('devices/item_granter/question-mark-2.png')
         };
-}), c.register('95CV8', function(a, n) {
-    b(a.exports, 'AddOutline', function() {
-        return e;
+}), a.register('qMN8v', function(b, c) {
+    _f(b.exports, 'AddOutline', function() {
+        return _e;
     });
-    var d = c('dAmf5');
-    const e = a => {
-        if (!a.view || !a.view.active)
+    var d = a('D5xLI');
+    const _e = b => {
+        if (!b.view || !b.view.active)
             return;
-        const f = {
+        const _f = {
                 thickness: 2
             },
-            g = a.options ? {
-                ...f,
-                ...a.options
+            g = b.options ? {
+                ..._f,
+                ...b.options
             } : {
-                ...f
+                ..._f
             };
-        (0, d.default)().plugins.get('rexOutlinePipeline').add(a.view, g);
+        (0, d.default)().plugins.get('rexOutlinePipeline').add(b.view, g);
     };
 });

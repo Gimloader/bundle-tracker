@@ -1,78 +1,78 @@
-function a(a, b, i, c) {
-    Object.defineProperty(a, b, {
-        get: i,
-        set: c,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('sYSW4', function(i, c) {
-    var c;
-    c = i.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('mRnvx', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(i.exports, 'default', function() {
-        return n;
+    }), _o(b.exports, 'default', function() {
+        return _o;
     });
-    var d = b('UM8oI'),
-        e = b('5Ux1a'),
-        f = b('sgILU'),
-        g = b('KW8vR'),
-        h = b('Ft6ks'),
-        i = b('Bpt+p'),
-        j = b('dAmf5');
-    const k = a => {
-            (0, j.default)().plugins.get('rexGrayScalePipeline').add(a, {
+    var e = a('1bFPu'),
+        f = a('/pbxo'),
+        g = a('I35Ay'),
+        h = a('MrJ1V'),
+        i = a('d0wY5'),
+        j = a('9tz3H'),
+        k = a('D5xLI');
+    const l = _o => {
+            (0, k.default)().plugins.get('rexGrayScalePipeline').add(_o, {
                 intensity: 1
             });
         },
-        l = a => {
-            (0, j.default)().plugins.get('rexGrayScalePipeline').remove(a);
+        m = _o => {
+            (0, k.default)().plugins.get('rexGrayScalePipeline').remove(_o);
         };
-    class m extends f.default {
-        constructor(a) {
-            super(a), (0, d.default)(this, 'stepOnCounter', 0), (0, d.default)(this, 'onMessage', a => {
-                if (a.key === h.Messages.steppedOn) {
+    class n extends g.default {
+        constructor(_o) {
+            super(_o), (0, e.default)(this, 'stepOnCounter', 0), (0, e.default)(this, 'onMessage', _o => {
+                if (_o.key === i.Messages.steppedOn) {
                     if (!this.up || !this.down)
                         return;
                     this.stepOnCounter += 1;
-                    const n = this.stepOnCounter;
+                    const p = this.stepOnCounter;
                     this.down.view.setAlpha(1), this.up.view.setAlpha(0), this.downTimeout = window.setTimeout(() => {
-                        n === this.stepOnCounter && (this.down.view.setAlpha(0), this.up.view.setAlpha(1));
+                        p === this.stepOnCounter && (this.down.view.setAlpha(0), this.up.view.setAlpha(1));
                     }, 350);
                 }
-            }), (0, d.default)(this, 'onDestroy', () => {
+            }), (0, e.default)(this, 'onDestroy', () => {
                 this.downTimeout && window.clearTimeout(this.downTimeout);
-            }), (0, d.default)(this, 'onStateChange', a => {
-                'active' === a && this.updateGrayscale();
-            }), (0, d.default)(this, 'updateGrayscale', () => {
+            }), (0, e.default)(this, 'onStateChange', _o => {
+                'active' === _o && this.updateGrayscale();
+            }), (0, e.default)(this, 'updateGrayscale', () => {
                 if (this.up && this.down) {
-                    let n = this.state.active;
-                    (0, e.InPreGamePhase)() && (n = this.options.activeOnGameStart), n ? (l(this.up.view), l(this.down.view)) : (k(this.up.view), k(this.down.view));
+                    let p = this.state.active;
+                    (0, f.InPreGamePhase)() && (p = this.options.activeOnGameStart), p ? (m(this.up.view), m(this.down.view)) : (l(this.up.view), l(this.down.view));
                 }
-            }), (this.options.visibleInGame || !(0, e.InGamePhase)() && !(0, i.isPublishedVersion)()) && (this.up = this.parts.add.sprite(g.UpAsset), this.down = this.parts.add.sprite(g.DownAsset), this.up.view.setScale(0.4), this.down.view.setScale(0.4), this.down.view.setAlpha(0), this.updateGrayscale());
+            }), (this.options.visibleInGame || !(0, f.InGamePhase)() && !(0, j.isPublishedVersion)()) && (this.up = this.parts.add.sprite(h.UpAsset), this.down = this.parts.add.sprite(h.DownAsset), this.up.view.setScale(0.4), this.down.view.setScale(0.4), this.down.view.setAlpha(0), this.updateGrayscale());
         }
     }
-    var n = o;
-}), b.register('KW8vR', function(i, c) {
-    a(i.exports, 'UpAsset', function() {
-        return d;
-    }), a(i.exports, 'DownAsset', function() {
-        return e;
+    var _o = n;
+}), a.register('MrJ1V', function(b, c) {
+    e(b.exports, 'UpAsset', function() {
+        return _e;
+    }), e(b.exports, 'DownAsset', function() {
+        return _f;
     });
-    var c = b('JJQ0+');
-    const d = {
-            imageId: (0, c.default)('devices/trigger/trigger_up.png'),
-            imageUrl: (0, c.default)('devices/trigger/trigger_up.png')
+    var d = a('2Xvuf');
+    const _e = {
+            imageId: (0, d.default)('devices/trigger/trigger_up.png'),
+            imageUrl: (0, d.default)('devices/trigger/trigger_up.png')
         },
-        e = {
-            imageId: (0, c.default)('devices/trigger/trigger_down.png'),
-            imageUrl: (0, c.default)('devices/trigger/trigger_down.png')
+        _f = {
+            imageId: (0, d.default)('devices/trigger/trigger_down.png'),
+            imageUrl: (0, d.default)('devices/trigger/trigger_down.png')
         };
-}), b.register('Ft6ks', function(b, i) {
-    let c;
-    a(b.exports, 'Messages', function() {
-        return c;
-    }), (c || (c = {})).steppedOn = 'steppedOn';
+}), a.register('d0wY5', function(b, c) {
+    let d;
+    e(b.exports, 'Messages', function() {
+        return d;
+    }), (d || (d = {})).steppedOn = 'steppedOn';
 });

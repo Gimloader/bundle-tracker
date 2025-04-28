@@ -1,36 +1,36 @@
-function a(a, b, t, o) {
-    Object.defineProperty(a, b, {
-        get: t,
-        set: o,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('8kQSj', function(t, o) {
-    var c;
-    c = t.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('oysoq', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(t.exports, 'default', function() {
-        return i;
+    }), _j(b.exports, 'default', function() {
+        return _j;
     });
-    var d = b('Bpt+p'),
-        e = b('5Ux1a'),
-        f = b('sgILU'),
-        g = b('EZP85');
-    class h extends f.default {
-        constructor(a) {
-            super(a), (0, e.InPreGamePhase)() && (0, d.isSavedVersion)() && this.parts.add.sprite(g.BaseAsset);
+    var e = a('9tz3H'),
+        f = a('/pbxo'),
+        g = a('I35Ay'),
+        h = a('3PKZ6');
+    class i extends g.default {
+        constructor(_j) {
+            super(_j), (0, f.InPreGamePhase)() && (0, e.isSavedVersion)() && this.parts.add.sprite(h.BaseAsset);
         }
     }
-    var i = j;
-}), b.register('EZP85', function(t, o) {
-    a(t.exports, 'BaseAsset', function() {
-        return c;
+    var _j = i;
+}), a.register('3PKZ6', function(b, c) {
+    e(b.exports, 'BaseAsset', function() {
+        return _d;
     });
-    const c = {
+    const _d = {
         imageId: 'countdown_device',
-        imageUrl: (0, b('JJQ0+').default)('devices/countdown/count-down-device.png')
+        imageUrl: (0, a('2Xvuf').default)('devices/countdown/count-down-device.png')
     };
 });

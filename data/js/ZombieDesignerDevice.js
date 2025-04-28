@@ -1,30 +1,30 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('fA24R', function(o, t) {
-    var b, c, d, e, f;
-    b = o.exports, Object.defineProperty(b, '__esModule', {
+a.register('IP1lP', function(b, c) {
+    var d, e, f, g, h;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), c = o.exports, d = 'default', e = function() {
-        return m;
-    }, Object.defineProperty(c, d, {
-        get: e,
-        set: f,
+    }), e = b.exports, f = 'default', g = function() {
+        return _o;
+    }, Object.defineProperty(e, f, {
+        get: g,
+        set: h,
         enumerable: !0,
         configurable: !0
     });
-    var g = a('Bpt+p'),
-        h = a('5Ux1a'),
-        i = a('sgILU'),
-        j = a('phu0d'),
-        k = a('Gqspz');
-    class l extends i.default {
-        constructor(a) {
-            if (super(a), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) {
-                const m = k.default.Zombies;
-                new(0, j.default)({
+    var i = a('9tz3H'),
+        j = a('/pbxo'),
+        k = a('I35Ay'),
+        l = a('+uQv7'),
+        m = a('dTXti');
+    class n extends k.default {
+        constructor(o) {
+            if (super(o), (0, j.InPreGamePhase)() && (0, i.isSavedVersion)()) {
+                const p = m.default.Zombies;
+                new(0, l.default)({
                     device: this,
-                    baseColor: m.baseColor,
-                    boxColor: m.boxColor,
+                    baseColor: p.baseColor,
+                    boxColor: p.boxColor,
                     content: {
                         text: {
                             text: this.options.type ? `Zombie\n${ this.options.type }` : 'Zombie\nDesigner'
@@ -34,5 +34,5 @@ a.register('fA24R', function(o, t) {
             }
         }
     }
-    var m = n;
+    var _o = n;
 });

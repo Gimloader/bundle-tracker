@@ -1,20 +1,20 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('VILz5', function(n, l) {
-    var b, c, d, e, f;
-    b = n.exports, Object.defineProperty(b, '__esModule', {
+a.register('qc42G', function(b, c) {
+    var d, e, f, g, h;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), c = n.exports, d = 'default', e = function() {
-        return i;
-    }, Object.defineProperty(c, d, {
-        get: e,
-        set: f,
+    }), e = b.exports, f = 'default', g = function() {
+        return _k;
+    }, Object.defineProperty(e, f, {
+        get: g,
+        set: h,
         enumerable: !0,
         configurable: !0
     });
-    var g = a('8kSQZ'),
-        h = a('PMzGD');
-    var i = a => (0, g.jsx)(h.default, {
+    var i = a('0hzx+'),
+        j = a('3Bibb');
+    var _k = a => (0, i.jsx)(j.default, {
         value: a.link,
         size: 300
     });

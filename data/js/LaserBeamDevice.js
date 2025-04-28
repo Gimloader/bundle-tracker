@@ -1,152 +1,152 @@
-function a(a, b, s, t) {
-    Object.defineProperty(a, b, {
-        get: s,
-        set: t,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('aJUHg', function(s, t) {
-    var c;
-    c = s.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('yoEa0', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(s.exports, 'default', function() {
-        return q;
+    }), _r(b.exports, 'default', function() {
+        return _r;
     });
-    var d = b('UM8oI'),
-        e = b('sgILU'),
-        f = b('MQaoo'),
-        g = b('fe2aZ'),
-        h = b('5Ux1a'),
-        i = b('Bpt+p'),
-        j = b('/Lvpl17'),
-        k = b('wSwKo5'),
-        l = b('ZnzPM0'),
-        m = b('eCuzb'),
-        n = b('cMsWT');
-    const o = 0.35;
-    class p extends e.default {
+    var e = a('1bFPu'),
+        f = a('I35Ay'),
+        g = a('N57jq'),
+        h = a('h2EGG'),
+        i = a('/pbxo'),
+        j = a('9tz3H'),
+        k = a('R2Ucl10'),
+        l = a('IFO6W13'),
+        m = a('bu42I0'),
+        n = a('ibV5b'),
+        o = a('JqBF0');
+    const p = 0.35;
+    class q extends f.default {
         createPath() {
             if (!this.options.showPath)
                 return;
-            const q = Phaser.Math.DegToRad(this.options.angle),
-                r = 16 * Math.floor((this.options.distance - 55 - 24) / 16),
-                s = Math.cos(q) * r,
-                t = Math.sin(q) * r,
-                u = -s / 2,
+            const _r = Phaser.Math.DegToRad(this.options.angle),
+                s = 16 * Math.floor((this.options.distance - 55 - 24) / 16),
+                t = Math.cos(_r) * s,
+                u = Math.sin(_r) * s,
                 v = -t / 2,
-                w = s / 2,
+                w = -u / 2,
                 x = t / 2,
-                y = Math.floor(r / 16),
-                z = (w - u) / y,
-                A = (x - v) / y,
-                B = (0, h.InPreGamePhase)() ? o : (1 - this.activeFactor) * o,
-                C = (0, h.InPreGamePhase)() ? Phaser.BlendModes.NORMAL : Phaser.BlendModes.ADD;
-            for (let D = 0; D <= y; D++) {
-                const E = u + D * z,
-                    F = v + D * A;
+                y = u / 2,
+                z = Math.floor(s / 16),
+                A = (x - v) / z,
+                B = (y - w) / z,
+                C = (0, i.InPreGamePhase)() ? p : (1 - this.activeFactor) * p,
+                D = (0, i.InPreGamePhase)() ? Phaser.BlendModes.NORMAL : Phaser.BlendModes.ADD;
+            for (let E = 0; E <= z; E++) {
+                const F = v + E * A,
+                    G = w + E * B;
                 this.parts.add.sprite({
-                    ...f.DotAsset,
-                    depthChange: Math.min(v, x) - F,
+                    ...g.DotAsset,
+                    depthChange: Math.min(w, y) - G,
                     ignoreInput: !0,
-                    layerId: n.default.DevicesUnderCharacters,
-                    x: E,
-                    y: F,
-                    onReady: D => {
-                        D.view.tint = (0, g.GetNumberFromHexColor)(this.options.laserColor), D.view.alpha = B, D.view.blendMode = C, D.view.setScale(0.2), this.dots.push(D);
+                    layerId: o.default.DevicesUnderCharacters,
+                    x: F,
+                    y: G,
+                    onReady: E => {
+                        E.view.tint = (0, h.GetNumberFromHexColor)(this.options.laserColor), E.view.alpha = C, E.view.blendMode = D, E.view.setScale(0.2), this.dots.push(E);
                     }
                 });
             }
         }
-        constructor(a) {
-            super(a), (0, d.default)(this, 'activeFactor', 1), (0, d.default)(this, 'animationsReady', !1), (0, d.default)(this, 'dots', []), (0, d.default)(this, 'onUpdate', () => {
-                (0, h.InGamePhaseVisible)() && (this.laser.view.scaleY = (0.5 * Math.random() + 0.5) * this.activeFactor, this.origin.view.scale = 0.03 * Math.random() * this.activeFactor + this.base.baseScale, this.endPoint.view.scale = 0.03 * Math.random() * this.activeFactor + this.base.baseScale, this.options.showPath && this.dots.forEach(a => {
-                    a.view.alpha = (1 - this.activeFactor) * o;
+        constructor(r) {
+            super(r), (0, e.default)(this, 'activeFactor', 1), (0, e.default)(this, 'animationsReady', !1), (0, e.default)(this, 'dots', []), (0, e.default)(this, 'onUpdate', () => {
+                (0, i.InGamePhaseVisible)() && (this.laser.view.scaleY = (0.5 * Math.random() + 0.5) * this.activeFactor, this.origin.view.scale = 0.03 * Math.random() * this.activeFactor + this.base.baseScale, this.endPoint.view.scale = 0.03 * Math.random() * this.activeFactor + this.base.baseScale, this.options.showPath && this.dots.forEach(r => {
+                    r.view.alpha = (1 - this.activeFactor) * p;
                 }));
-            }), (0, d.default)(this, 'onStateChange', a => {
-                if ('active' === a) {
-                    const q = this.state.active ? 1 : 0;
+            }), (0, e.default)(this, 'onStateChange', r => {
+                if ('active' === r) {
+                    const s = this.state.active ? 1 : 0;
                     if (this.tweens.add({
                             targets: this,
-                            activeFactor: q,
+                            activeFactor: s,
                             duration: 150,
-                            delay: 200 * q
+                            delay: 200 * s
                         }), !this.animationsReady)
                         return;
-                    this.state.active && !this.prevState.active ? (this.origin.view.play((0, m.GetAnimName)(m.Anims.toActive, this.options.appearance)), this.endPoint.view.play((0, m.GetAnimName)(m.Anims.toActive, this.options.appearance))) : !this.state.active && this.prevState.active && (this.origin.view.play((0, m.GetAnimName)(m.Anims.toInactive, this.options.appearance)), this.endPoint.view.play((0, m.GetAnimName)(m.Anims.toInactive, this.options.appearance)));
+                    this.state.active && !this.prevState.active ? (this.origin.view.play((0, n.GetAnimName)(n.Anims.toActive, this.options.appearance)), this.endPoint.view.play((0, n.GetAnimName)(n.Anims.toActive, this.options.appearance))) : !this.state.active && this.prevState.active && (this.origin.view.play((0, n.GetAnimName)(n.Anims.toInactive, this.options.appearance)), this.endPoint.view.play((0, n.GetAnimName)(n.Anims.toInactive, this.options.appearance)));
                 }
-            }), (0, d.default)(this, 'onMessage', a => {
-                'hit' === a.key && (0, l.OnHit)(a.data);
-            }), (0, d.default)(this, 'setupVisualEditing', () => {
-                if (!(0, h.InPreGamePhase)() || !(0, i.isSavedVersion)())
+            }), (0, e.default)(this, 'onMessage', r => {
+                'hit' === r.key && (0, m.OnHit)(r.data);
+            }), (0, e.default)(this, 'setupVisualEditing', () => {
+                if (!(0, i.InPreGamePhase)() || !(0, j.isSavedVersion)())
                     return;
-                const q = (0, j.FetchOptionSchemaProperty)(this, 'distance');
+                const s = (0, k.FetchOptionSchemaProperty)(this, 'distance');
                 this.visualEditing.add.circle({
                     radius: this.options.distance / 2 + 40,
                     angle: this.options.angle - 90,
-                    minRadius: q.min,
-                    maxRadius: q.max,
-                    onChange: q => {
-                        (0, k.ReplaceVisualEditingPreview)(q.x, q.y, {
-                            distance: 2 * (q.radius - 40),
-                            angle: q.angle + 90
+                    minRadius: s.min,
+                    maxRadius: s.max,
+                    onChange: s => {
+                        (0, l.ReplaceVisualEditingPreview)(s.x, s.y, {
+                            distance: 2 * (s.radius - 40),
+                            angle: s.angle + 90
                         });
                     }
                 });
-            }), this.base = f.bases[this.options.appearance], this.setupVisualEditing();
-            const q = Phaser.Math.DegToRad(this.options.angle),
-                r = Math.cos(q) * this.options.distance,
-                s = Math.sin(q) * this.options.distance;
+            }), this.base = g.bases[this.options.appearance], this.setupVisualEditing();
+            const s = Phaser.Math.DegToRad(this.options.angle),
+                t = Math.cos(s) * this.options.distance,
+                u = Math.sin(s) * this.options.distance;
             this.createPath(), this.origin = this.parts.add.animatedSprite({
                 ...this.base,
-                x: -r / 2,
-                y: -s / 2
+                x: -t / 2,
+                y: -u / 2
             }), this.endPoint = this.parts.add.animatedSprite({
                 ...this.base,
-                x: r / 2,
-                y: s / 2,
-                onReady: a => {
-                    this.animationsReady = !0, this.state.active || (0, h.InPreGamePhase)() ? (this.origin.view.play((0, m.GetAnimName)(m.Anims.active, this.options.appearance)), a.view.play((0, m.GetAnimName)(m.Anims.active, this.options.appearance))) : (this.origin.view.play((0, m.GetAnimName)(m.Anims.inactive, this.options.appearance)), a.view.play((0, m.GetAnimName)(m.Anims.inactive, this.options.appearance)));
+                x: t / 2,
+                y: u / 2,
+                onReady: r => {
+                    this.animationsReady = !0, this.state.active || (0, i.InPreGamePhase)() ? (this.origin.view.play((0, n.GetAnimName)(n.Anims.active, this.options.appearance)), r.view.play((0, n.GetAnimName)(n.Anims.active, this.options.appearance))) : (this.origin.view.play((0, n.GetAnimName)(n.Anims.inactive, this.options.appearance)), r.view.play((0, n.GetAnimName)(n.Anims.inactive, this.options.appearance)));
                 }
             }), this.laser = this.parts.add.sprite({
-                ...f.LaserAsset,
-                layerId: n.default.DevicesAboveCharacters
-            }), this.origin.view.rotation = q, this.endPoint.view.rotation = this.origin.view.rotation + Math.PI, this.origin.view.setScale(this.base.baseScale), this.endPoint.view.setScale(this.base.baseScale), this.laser.view.rotation = q, this.laser.view.blendMode = Phaser.BlendModes.ADD, this.laser.view.tint = (0, g.GetNumberFromHexColor)(this.options.laserColor), this.laser.view.scaleX = (this.options.distance - 55) / 600, this.laser.view.scaleY = 0.75, this.options.showOrigin || (this.origin.view.alpha = 0), this.options.showEndPoint || (this.endPoint.view.alpha = 0), (0, h.InGamePhase)() && !this.state.active && (this.activeFactor = 0, this.laser.view.scaleY = 0);
+                ...g.LaserAsset,
+                layerId: o.default.DevicesAboveCharacters
+            }), this.origin.view.rotation = s, this.endPoint.view.rotation = this.origin.view.rotation + Math.PI, this.origin.view.setScale(this.base.baseScale), this.endPoint.view.setScale(this.base.baseScale), this.laser.view.rotation = s, this.laser.view.blendMode = Phaser.BlendModes.ADD, this.laser.view.tint = (0, h.GetNumberFromHexColor)(this.options.laserColor), this.laser.view.scaleX = (this.options.distance - 55) / 600, this.laser.view.scaleY = 0.75, this.options.showOrigin || (this.origin.view.alpha = 0), this.options.showEndPoint || (this.endPoint.view.alpha = 0), (0, i.InGamePhase)() && !this.state.active && (this.activeFactor = 0, this.laser.view.scaleY = 0);
         }
     }
-    var q = r;
-}), b.register('MQaoo', function(d, c) {
-    a(d.exports, 'LaserAsset', function() {
-        return f;
-    }), a(d.exports, 'DotAsset', function() {
-        return g;
-    }), a(d.exports, 'bases', function() {
-        return j;
+    var _r = q;
+}), a.register('N57jq', function(b, c) {
+    _m(b.exports, 'LaserAsset', function() {
+        return _g;
+    }), _m(b.exports, 'DotAsset', function() {
+        return _h;
+    }), _m(b.exports, 'bases', function() {
+        return _k;
     });
-    var c = b('JJQ0+'),
-        d = b('eCuzb'),
-        e = b('TAtYv');
-    const f = {
-            imageId: (0, c.default)('devices/laser_beam/laser.png'),
-            imageUrl: (0, c.default)('devices/laser_beam/laser.png')
+    var d = a('2Xvuf'),
+        e = a('ibV5b'),
+        f = a('WVCjw');
+    const _g = {
+            imageId: (0, d.default)('devices/laser_beam/laser.png'),
+            imageUrl: (0, d.default)('devices/laser_beam/laser.png')
         },
-        g = {
-            imageId: (0, c.default)('devices/laser_beam/dot.png'),
-            imageUrl: (0, c.default)('devices/laser_beam/dot.png')
+        _h = {
+            imageId: (0, d.default)('devices/laser_beam/dot.png'),
+            imageUrl: (0, d.default)('devices/laser_beam/dot.png')
         },
-        h = e.LaserBeamAppearance.standard,
-        i = e.LaserBeamAppearance.plant,
-        j = {
-            [h]: {
+        i = f.LaserBeamAppearance.standard,
+        j = f.LaserBeamAppearance.plant,
+        _k = {
+            [i]: {
                 baseScale: 0.36,
-                spritesheetId: (0, c.default)('devices/laser_beam/standard_base.png'),
-                spritesheetUrl: (0, c.default)('devices/laser_beam/standard_base.png'),
+                spritesheetId: (0, d.default)('devices/laser_beam/standard_base.png'),
+                spritesheetUrl: (0, d.default)('devices/laser_beam/standard_base.png'),
                 frameWidth: 215,
                 frameHeight: 130,
                 animations: [{
-                        animName: (0, d.GetAnimName)(d.Anims.inactive, h),
+                        animName: (0, e.GetAnimName)(e.Anims.inactive, i),
                         frameRate: 1,
                         animFrames: {
                             start: 0,
@@ -154,7 +154,7 @@ b.register('aJUHg', function(s, t) {
                         }
                     },
                     {
-                        animName: (0, d.GetAnimName)(d.Anims.toActive, h),
+                        animName: (0, e.GetAnimName)(e.Anims.toActive, i),
                         repeat: 0,
                         frameRate: 24,
                         animFrames: {
@@ -163,7 +163,7 @@ b.register('aJUHg', function(s, t) {
                         }
                     },
                     {
-                        animName: (0, d.GetAnimName)(d.Anims.active, h),
+                        animName: (0, e.GetAnimName)(e.Anims.active, i),
                         frameRate: 1,
                         animFrames: {
                             start: 7,
@@ -171,7 +171,7 @@ b.register('aJUHg', function(s, t) {
                         }
                     },
                     {
-                        animName: (0, d.GetAnimName)(d.Anims.toInactive, h),
+                        animName: (0, e.GetAnimName)(e.Anims.toInactive, i),
                         repeat: 0,
                         frameRate: 24,
                         animFrames: {
@@ -181,14 +181,14 @@ b.register('aJUHg', function(s, t) {
                     }
                 ]
             },
-            [i]: {
+            [j]: {
                 baseScale: 0.5,
-                spritesheetId: (0, c.default)('devices/laser_beam/plant_base.png'),
-                spritesheetUrl: (0, c.default)('devices/laser_beam/plant_base.png'),
+                spritesheetId: (0, d.default)('devices/laser_beam/plant_base.png'),
+                spritesheetUrl: (0, d.default)('devices/laser_beam/plant_base.png'),
                 frameWidth: 127,
                 frameHeight: 122,
                 animations: [{
-                        animName: (0, d.GetAnimName)(d.Anims.inactive, i),
+                        animName: (0, e.GetAnimName)(e.Anims.inactive, j),
                         frameRate: 12,
                         animFrames: {
                             start: 0,
@@ -196,7 +196,7 @@ b.register('aJUHg', function(s, t) {
                         }
                     },
                     {
-                        animName: (0, d.GetAnimName)(d.Anims.toActive, i),
+                        animName: (0, e.GetAnimName)(e.Anims.toActive, j),
                         repeat: 0,
                         frameRate: 24,
                         animFrames: {
@@ -205,7 +205,7 @@ b.register('aJUHg', function(s, t) {
                         }
                     },
                     {
-                        animName: (0, d.GetAnimName)(d.Anims.active, i),
+                        animName: (0, e.GetAnimName)(e.Anims.active, j),
                         frameRate: 12,
                         animFrames: {
                             start: 4,
@@ -213,7 +213,7 @@ b.register('aJUHg', function(s, t) {
                         }
                     },
                     {
-                        animName: (0, d.GetAnimName)(d.Anims.toInactive, i),
+                        animName: (0, e.GetAnimName)(e.Anims.toInactive, j),
                         repeat: 0,
                         frameRate: 24,
                         animFrames: {
@@ -224,97 +224,97 @@ b.register('aJUHg', function(s, t) {
                 ]
             }
         };
-}), b.register('eCuzb', function(b, d) {
-    let c;
-    var d;
-    a(b.exports, 'Anims', function() {
-        return c;
-    }), a(b.exports, 'GetAnimName', function() {
-        return e;
-    }), (d = c || (c = {})).active = 'ACTIVE', d.inactive = 'INACTIVE', d.toActive = 'TO_ACTIVE', d.toInactive = 'TO_INACTIVE';
-    const e = (a, b) => 'LASER_BEAM_DEVICE_ORIGIN_ANIM_' + b + a;
-}), b.register('TAtYv', function(b, d) {
-    let c;
-    var d;
-    a(b.exports, 'LaserBeamAppearance', function() {
-        return c;
-    }), (d = c || (c = {})).standard = 'Standard', d.plant = 'Plant';
-}), b.register('/Lvpl17', function(b, d) {
-    a(b.exports, 'FetchOptionSchemaProperty', function() {
-        return c;
+}), a.register('ibV5b', function(b, c) {
+    let d;
+    var e;
+    _m(b.exports, 'Anims', function() {
+        return d;
+    }), _m(b.exports, 'GetAnimName', function() {
+        return _f;
+    }), (e = d || (d = {})).active = 'ACTIVE', e.inactive = 'INACTIVE', e.toActive = 'TO_ACTIVE', e.toInactive = 'TO_INACTIVE';
+    const _f = (_m, b) => 'LASER_BEAM_DEVICE_ORIGIN_ANIM_' + b + _m;
+}), a.register('WVCjw', function(b, c) {
+    let d;
+    var e;
+    _m(b.exports, 'LaserBeamAppearance', function() {
+        return d;
+    }), (e = d || (d = {})).standard = 'Standard', e.plant = 'Plant';
+}), a.register('R2Ucl10', function(b, c) {
+    _m(b.exports, 'FetchOptionSchemaProperty', function() {
+        return _d;
     });
-    const c = (a, b) => {
-        var d, e, f;
-        const g = a.deviceOption.optionSchema.options.find(a => a.key === b);
+    const _d = (_m, b) => {
+        var e, f, g;
+        const h = _m.deviceOption.optionSchema.options.find(_m => _m.key === b);
         return {
-            min: null === (d = null == g ? void 0 : g.option.props) || void 0 === d ? void 0 : d.min,
-            max: null === (e = null == g ? void 0 : g.option.props) || void 0 === e ? void 0 : e.max,
-            step: null === (f = null == g ? void 0 : g.option.props) || void 0 === f ? void 0 : f.step
+            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
+            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
+            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
         };
     };
-}), b.register('wSwKo5', function(j, h) {
-    a(j.exports, 'ReplaceVisualEditingPreview', function() {
-        return g;
+}), a.register('IFO6W13', function(b, c) {
+    _m(b.exports, 'ReplaceVisualEditingPreview', function() {
+        return _h;
     });
-    var c = b('2pEsK'),
-        d = b('Am0b71'),
-        e = b('KDS1x'),
-        f = b('83+vO');
-    const g = (a, b, j) => {
-        const h = (0, f.FetchVisualEditingPreview)(),
-            i = (0, e.FetchCurrentlyEditedDevice)();
-        if (!i || !h)
+    var d = a('HqwPM'),
+        e = a('+oovY4'),
+        f = a('A17vD'),
+        g = a('HXXiu');
+    const _h = (_m, a, b) => {
+        const i = (0, g.FetchVisualEditingPreview)(),
+            j = (0, f.FetchCurrentlyEditedDevice)();
+        if (!j || !i)
             return;
-        const j = i.layers.isOnNaturalDepth() ? void 0 : b + i.layers.getDepthShift();
-        (0, d.default)({
-            deviceOption: h.deviceOption,
-            id: c.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: j,
-            layerId: i.layers.getLayer(),
-            name: h.name,
+        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
+        (0, e.default)({
+            deviceOption: i.deviceOption,
+            id: d.VisualEditingConstants.previewId,
+            x: _m,
+            y: a,
+            depth: k,
+            layerId: j.layers.getLayer(),
+            name: i.name,
             isPreview: !0,
             options: {
-                ...h.options,
-                ...j
+                ...i.options,
+                ...b
             },
             placedByClient: !0,
-            state: h.deviceOption.defaultState
+            state: i.deviceOption.defaultState
         });
     };
-}), b.register('Am0b71', function(j, k) {
-    a(j.exports, 'default', function() {
-        return e;
+}), a.register('+oovY4', function(b, c) {
+    _m(b.exports, 'default', function() {
+        return _f;
     });
-    var c = b('dAmf5'),
-        d = b('jgFbX');
-    var e = a => {
-        (0, c.default)().worldManager.devices.getDeviceById(a.id) && (0, d.default)(a);
+    var d = a('D5xLI'),
+        e = a('aIyMH');
+    var _f = _m => {
+        (0, d.default)().worldManager.devices.getDeviceById(_m.id) && (0, e.default)(_m);
     };
-}), b.register('ZnzPM0', function(j, k) {
-    a(j.exports, 'OnHit', function() {
-        return h;
+}), a.register('bu42I0', function(b, c) {
+    _m(b.exports, 'OnHit', function() {
+        return _i;
     });
-    var c = b('PUlKf'),
-        d = b('BEe8M'),
-        e = b('dAmf5'),
-        f = b('mdnc8'),
-        g = b('hTFUq');
-    const h = a => {
+    var d = a('Jfada'),
+        e = a('B9G/J'),
+        f = a('D5xLI'),
+        g = a('O4Fyc'),
+        h = a('vqFRL');
+    const _i = _m => {
         const {
-            characterId: i,
-            damage: j,
-            type: k
-        } = l;
-        if (i && j && k) {
-            const m = (0, f.AmISpectator)() ? (0, d.FetchSpectatedId)() : (0, c.default)();
-            (0, e.default)().worldManager.projectiles.damageMarkers.characters.applyDamage({
-                characterId: i,
-                damage: j,
-                type: k
-            }), i === m && (0, g.default)({
-                type: k
+            characterId: j,
+            damage: k,
+            type: l
+        } = _m;
+        if (j && k && l) {
+            const _m = (0, g.AmISpectator)() ? (0, e.FetchSpectatedId)() : (0, d.default)();
+            (0, f.default)().worldManager.projectiles.damageMarkers.characters.applyDamage({
+                characterId: j,
+                damage: k,
+                type: l
+            }), j === _m && (0, h.default)({
+                type: l
             });
         }
     };

@@ -1,48 +1,48 @@
-function a(a, b, q, r) {
-    Object.defineProperty(a, b, {
-        get: q,
-        set: r,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('kxc8y', function(q, r) {
-    var c;
-    c = q.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('9xzx0', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(q.exports, 'default', function() {
-        return n;
+    }), _p(b.exports, 'default', function() {
+        return _o;
     });
-    var d = b('8kSQZ'),
-        e = b('0R8EW'),
-        f = b('FECEn'),
-        g = b('h99Nu'),
-        h = b('kno7P'),
-        i = b('fgVTE0'),
-        j = b('YimJ0'),
-        k = b('iMnBi'),
-        l = b('S/jX4');
-    let m;
-    var n = () => {
-        var o;
+    var e = a('0hzx+'),
+        f = a('70AkF'),
+        g = a('zVNit'),
+        h = a('Axq+p'),
+        i = a('rdBwA'),
+        j = a('FpbFp'),
+        k = a('0HHAH'),
+        l = a('9R7cy'),
+        m = a('vShe/');
+    let n;
+    var _o = () => {
+        var _p;
         const {
-            id: p
-        } = (0, e.useParams)(), {
-            data: q,
-            isLoading: r,
-            error: s
-        } = (0, f.default)(p);
-        return r ? (0, d.jsx)(o, {
-            children: (0, d.jsx)(i.default, {
+            id: q
+        } = (0, f.useParams)(), {
+            data: r,
+            isLoading: s,
+            error: t
+        } = (0, g.default)(q);
+        return s ? (0, e.jsx)(_p, {
+            children: (0, e.jsx)(j.default, {
                 style: {
-                    color: l.default.White,
+                    color: m.default.White,
                     marginTop: 50
                 }
             })
-        }) : s ? (0, d.jsx)(o, {
-            children: (0, d.jsxs)(j.CenteredColumn, {
+        }) : t ? (0, e.jsx)(_p, {
+            children: (0, e.jsxs)(k.CenteredColumn, {
                 className: 'light-shadow',
                 style: {
                     background: 'rgba(255,255,255,0.1)',
@@ -53,178 +53,178 @@ b.register('kxc8y', function(q, r) {
                     maxWidth: 500
                 },
                 children: [
-                    (0, d.jsx)('div', {
-                        children: (0, d.jsx)(k.default, {
+                    (0, e.jsx)('div', {
+                        children: (0, e.jsx)(l.default, {
                             name: 'fas fa-exclamation-triangle',
                             style: {
-                                color: l.default.Yellow,
+                                color: m.default.Yellow,
                                 fontSize: 42,
                                 marginBottom: 20
                             }
                         })
                     }),
-                    (0, d.jsx)('div', {
+                    (0, e.jsx)('div', {
                         style: {
                             fontSize: 16
                         },
-                        children: (null == s || null === (o = s.message) || void 0 === o ? void 0 : o.text) || 'There was an error. Please refresh and try again.'
+                        children: (null == t || null === (_p = t.message) || void 0 === _p ? void 0 : _p.text) || 'There was an error. Please refresh and try again.'
                     })
                 ]
             })
-        }) : (0, d.jsx)(o, {
-            children: q ? (0, d.jsx)(h.default, {
-                response: q
+        }) : (0, e.jsx)(_p, {
+            children: r ? (0, e.jsx)(i.default, {
+                response: r
             }) : null
         });
     };
-    const o = g.default.div.attrs({
+    const _p = h.default.div.attrs({
         className: 'maxWidth flex-center'
-    })(m || (m = (a => a)`
+    })(n || (n = (e => e)`
   padding: 35px 0px;
 `));
-}), b.register('FECEn', function(u, v) {
-    a(u.exports, 'default', function() {
-        return f;
+}), a.register('zVNit', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _g;
     });
-    var c = b('IsAdf'),
-        d = b('PjB0f');
-    const e = ['creative-map-listing'];
-    var f = a => (0, c.useQuery)({
+    var d = a('UapK50'),
+        e = a('PMl60');
+    const f = ['creative-map-listing'];
+    var _g = e => (0, d.useQuery)({
         queryKey: [
-            e,
-            a
+            f,
+            e
         ],
         retry: !1,
-        queryFn: () => (0, d.requestAsPromise)({
-            url: `/api/created-map/listing/info/${ a }`
+        queryFn: () => (0, e.requestAsPromise)({
+            url: `/api/created-map/listing/info/${ e }`
         })
     });
-}), b.register('kno7P', function(u, v) {
-    a(u.exports, 'default', function() {
-        return s;
+}), a.register('rdBwA', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _t;
     });
-    var c = b('8kSQZ'),
-        d = b('uPP4W'),
-        e = b('h99Nu'),
-        f = b('U8PGt'),
-        g = b('N+DRo'),
-        h = b('qEw51'),
-        i = b('ExtIT'),
-        j = b('KlhV/'),
-        k = b('cBqDd'),
-        l = b('PjB0f'),
-        m = b('0wLl2'),
-        n = b('2WDH6');
-    let o, p, q, r = a => a;
-    var s = a => {
-        const t = d.useRef(null),
-            [u] = (0, f.default)(t),
-            v = Math.min(500, 0.9 * u),
-            w = v * (9 / 16);
-        return (0, c.jsxs)(t, {
-            ref: t,
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('BXKZi0'),
+        h = a('Na/F6'),
+        i = a('1P5ls'),
+        j = a('fmVdR'),
+        k = a('cH8qQ'),
+        l = a('KcMEX'),
+        m = a('PMl60'),
+        n = a('hHkFq'),
+        o = a('x8CoD');
+    let p, q, r, s = e => e;
+    var _t = e => {
+        const u = e.useRef(null),
+            [v] = (0, g.default)(u),
+            w = Math.min(500, 0.9 * v),
+            x = w * (9 / 16);
+        return (0, d.jsxs)(_u, {
+            ref: u,
             children: [
-                (0, c.jsx)(u, {
+                (0, d.jsx)(_v, {
                     style: {
-                        width: v,
-                        height: w,
-                        backgroundImage: `url(${ (0, n.getCloudinaryUrl)(a.response.image) })`
+                        width: w,
+                        height: x,
+                        backgroundImage: `url(${ (0, o.getCloudinaryUrl)(e.response.image) })`
                     }
                 }),
-                (0, c.jsxs)(v, {
+                (0, d.jsxs)(_w, {
                     style: {
-                        marginTop: w / 2 * -1,
-                        paddingTop: w / 2 + 35
+                        marginTop: x / 2 * -1,
+                        paddingTop: x / 2 + 35
                     },
                     children: [
-                        (0, c.jsx)(l.Title, {
-                            title: `${ a.response.title } | ${ m.COMPANY_NAME } Creative`,
+                        (0, d.jsx)(m.Title, {
+                            title: `${ e.response.title } | ${ n.COMPANY_NAME } Creative`,
                             override: !0
                         }),
-                        (0, c.jsx)(g.default, {
-                            ...a.response
+                        (0, d.jsx)(h.default, {
+                            ...e.response
                         }),
-                        (0, c.jsx)(h.default, {
+                        (0, d.jsx)(i.default, {
                             theme: {
-                                algorithm: j.default.darkAlgorithm
+                                algorithm: k.default.darkAlgorithm
                             },
-                            children: (0, c.jsx)(i.default, {})
+                            children: (0, d.jsx)(j.default, {})
                         }),
-                        (0, c.jsx)(k.default, {
-                            response: a.response
+                        (0, d.jsx)(l.default, {
+                            response: e.response
                         })
                     ]
                 })
             ]
         });
     };
-    const t = e.default.div.attrs({
+    const _u = f.default.div.attrs({
             className: 'flex-column flex-center'
-        })(o || (o = r`
+        })(p || (p = s`
   width: 80%;
   max-width: 900px;
 `)),
-        u = e.default.div.attrs({
+        _v = f.default.div.attrs({
             className: 'medium-shadow'
-        })(p || (p = r`
+        })(q || (q = s`
   border-radius: 8px;
   background-size: cover;
   z-index: 2;
 `)),
-        v = e.default.div.attrs({
+        _w = f.default.div.attrs({
             className: 'maxWidth light-shadow'
-        })(q || (q = r`
+        })(r || (r = s`
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(3px);
   padding: 35px;
   border-radius: 12px;
 `));
-}), b.register('N+DRo', function(i, A) {
-    a(i.exports, 'default', function() {
-        return m;
+}), a.register('Na/F6', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _n;
     });
-    var c = b('8kSQZ');
-    b('uPP4W');
-    var d = b('h99Nu'),
-        e = b('YimJ0'),
-        f = b('gSUVO'),
-        g = b('5nJMd26');
-    let h, i, j, k, l = a => a;
-    var m = a => (0, c.jsxs)(n, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('0HHAH'),
+        g = a('b5kvC'),
+        h = a('cvto726');
+    let i, j, k, l, m = e => e;
+    var _n = e => (0, d.jsxs)(_o, {
         children: [
-            a.tags.length ? (0, c.jsx)(g.default, {
+            e.tags.length ? (0, d.jsx)(h.default, {
                 wrap: !0,
                 direction: 'horizontal',
                 size: 10,
                 style: {
                     marginBottom: 6
                 },
-                children: a.tags.map((a, b) => (0, c.jsx)(p, {
-                    children: a
-                }, a + b))
+                children: e.tags.map((e, a) => (0, d.jsx)(_q, {
+                    children: e
+                }, e + a))
             }) : null,
-            (0, c.jsx)(o, {
-                children: a.title
+            (0, d.jsx)(_p, {
+                children: e.title
             }),
-            (0, c.jsx)(q, {
-                children: a.description
+            (0, d.jsx)(_r, {
+                children: e.description
             })
         ]
     });
-    const n = (0, d.default)(e.CenteredColumn).attrs({
+    const _o = (0, e.default)(f.CenteredColumn).attrs({
             className: 'maxWidth'
-        })(h || (h = l`
+        })(i || (i = m`
   font-family: ${ 0 };
   font-size: 42px;
   margin-bottom: 6px;
   text-transform: uppercase;
   text-align: center;
-`), f.Fonts.FugazOne),
-        o = d.default.div(i || (i = l`
+`), g.Fonts.FugazOne),
+        _p = e.default.div(j || (j = m`
   margin-bottom: 2px;
   font-size: 42px;
 `)),
-        p = d.default.div(j || (j = l`
+        _q = e.default.div(k || (k = m`
   font-family: ${ 0 };
   background: rgba(255, 255, 255, 0.1);
   line-height: 1;
@@ -236,72 +236,72 @@ b.register('kxc8y', function(q, r) {
   &:hover {
     background: rgba(255, 255, 255, 0.17);
   }
-`), f.Fonts.FugazOne),
-        q = d.default.div(k || (k = l`
+`), g.Fonts.FugazOne),
+        _r = e.default.div(l || (l = m`
   font-family: ${ 0 };
   text-transform: none;
   font-size: 16px;
   font-style: italic;
   color: rgba(255, 255, 255, 0.9);
-`), f.Fonts.SFPro);
-}), b.register('cBqDd', function(i, A) {
-    a(i.exports, 'default', function() {
-        return g;
+`), g.Fonts.SFPro);
+}), a.register('KcMEX', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _h;
     });
-    var c = b('8kSQZ'),
-        d = b('uPP4W'),
-        e = b('Fr1wt'),
-        f = b('rjv6T');
-    var g = a => {
-        const [h, i] = d.useState();
-        return !h && a.response.kits ? (0, c.jsx)(f.default, {
-            kits: a.response.kits,
-            selectKit: i
-        }) : (0, c.jsx)(e.default, {
-            kitId: h
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('GCmKS'),
+        g = a('w+7xi');
+    var _h = e => {
+        const [i, j] = e.useState();
+        return !i && e.response.kits ? (0, d.jsx)(g.default, {
+            kits: e.response.kits,
+            selectKit: j
+        }) : (0, d.jsx)(f.default, {
+            kitId: i
         });
     };
-}), b.register('Fr1wt', function(z, A) {
-    a(z.exports, 'default', function() {
-        return x;
+}), a.register('GCmKS', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _y;
     });
-    var c = b('8kSQZ'),
-        d = b('uPP4W'),
-        e = b('Dog9Y'),
-        f = b('h99Nu'),
-        g = b('YimJ0'),
-        h = b('gSUVO'),
-        i = b('iYEuk12'),
-        j = b('S/jX4'),
-        k = b('0wLl2'),
-        l = b('q721a'),
-        m = b('IsmrL'),
-        n = b('c6x8w'),
-        o = b('cR5QE'),
-        p = b('PjB0f'),
-        q = b('0R8EW'),
-        r = b('CJCMN4');
-    let s, t, u, v = a => a;
-    const w = 'https://docs.creative.gimkit.com/general/publishing/community-rules-for-publishing-with-gimkit-creative';
-    var x = a => {
-        const [y, z, A] = (0, p.useBoolean)(!1), [B, C, D] = (0, p.useBoolean)(!1), [E, F] = (0, p.useBoolean)(!1), [G, H] = d.useState(''), [I, J, K] = (0, p.useBoolean)(!1), {
-            id: L
-        } = (0, q.useParams)();
-        return (0, c.jsxs)(y, {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('led8j'),
+        g = a('Axq+p'),
+        h = a('0HHAH'),
+        i = a('b5kvC'),
+        j = a('2HvvA11'),
+        k = a('vShe/'),
+        l = a('hHkFq'),
+        m = a('gs4MT'),
+        n = a('ulE4q'),
+        o = a('ewwAh'),
+        p = a('YRlpt'),
+        q = a('PMl60'),
+        r = a('70AkF'),
+        s = a('Pq0g9');
+    let t, u, v, w = e => e;
+    const x = 'https://docs.creative.gimkit.com/general/publishing/community-rules-for-publishing-with-gimkit-creative';
+    var _y = e => {
+        const [z, A, B] = (0, q.useBoolean)(!1), [C, D, E] = (0, q.useBoolean)(!1), [F, G] = (0, q.useBoolean)(!1), [H, I] = e.useState(''), [J, K, L] = (0, q.useBoolean)(!1), {
+            id: M
+        } = (0, r.useParams)();
+        return (0, d.jsxs)(_z, {
             children: [
-                (0, p.isUpgraded)() || (0, p.isStudent)() ? null : (0, c.jsxs)(z, {
+                (0, q.isUpgraded)() || (0, q.isStudent)() ? null : (0, d.jsxs)(_A, {
                     children: [
                         'This map is limited to 5 players.',
                         ' ',
-                        (0, c.jsxs)(i.default, {
-                            to: l.CHECKOUT,
+                        (0, d.jsxs)(j.default, {
+                            to: m.CHECKOUT,
                             style: {
-                                color: j.default.Yellow,
+                                color: k.default.Yellow,
                                 textDecoration: 'underline'
                             },
                             children: [
                                 'Upgrade to ',
-                                k.COMPANY_NAME,
+                                l.COMPANY_NAME,
                                 ' Pro'
                             ]
                         }),
@@ -309,125 +309,125 @@ b.register('kxc8y', function(q, r) {
                         'to remove this limit.'
                     ]
                 }),
-                (0, c.jsx)(e.default, {
+                (0, d.jsx)(f.default, {
                     size: 'large',
                     type: 'success',
                     block: !0,
                     onClick: () => {
-                        if (y)
+                        if (z)
                             return;
-                        z();
-                        const M = {
-                            listing: L
+                        A();
+                        const N = {
+                            listing: M
                         };
-                        a.kitId && (M.kit = a.kitId), (0, r.AnalyticsTrackEvent)({
+                        e.kitId && (N.kit = e.kitId), (0, s.AnalyticsTrackEvent)({
                             event: 'creative_discovery_hosted',
                             properties: {
-                                id: L
+                                id: M
                             }
-                        }), (0, p.request)({
+                        }), (0, q.request)({
                             url: '/api/matchmaker/intent/map/play/listing/create',
-                            data: M,
-                            success: a => {
-                                window.location.href = `/host?id=${ a }`;
+                            data: N,
+                            success: e => {
+                                window.location.href = `/host?id=${ e }`;
                             },
-                            error: a => {
-                                (0, p.throwMessageError)({
-                                    e: a,
+                            error: e => {
+                                (0, q.throwMessageError)({
+                                    e: e,
                                     default: {
                                         title: 'There was an error loading you in.'
                                     }
                                 });
                             },
-                            both: A
+                            both: B
                         });
                     },
                     ariaLabel: 'Play Live',
                     style: {
-                        fontFamily: h.Fonts.FugazOne,
+                        fontFamily: i.Fonts.FugazOne,
                         width: '100%',
                         maxWidth: 350,
                         lineHeight: 1
                     },
-                    children: (0, c.jsx)('span', {
+                    children: (0, d.jsx)('span', {
                         style: {
                             textTransform: 'uppercase'
                         },
                         children: 'Play Live'
                     })
                 }),
-                (0, c.jsxs)(A, {
+                (0, d.jsxs)(_B, {
                     children: [
                         'This map was not created by ',
-                        k.COMPANY_NAME,
+                        l.COMPANY_NAME,
                         '. If anything in this map breaks our',
                         ' ',
-                        (0, c.jsx)(i.default, {
-                            to: w,
+                        (0, d.jsx)(j.default, {
+                            to: x,
                             external: !0,
                             target: '_blank',
                             style: {
-                                color: j.default.Yellow,
+                                color: k.default.Yellow,
                                 textDecoration: 'underline'
                             },
                             children: 'Community Guidelines'
                         }),
                         ', please',
                         ' ',
-                        (0, c.jsx)(i.default, {
+                        (0, d.jsx)(j.default, {
                             style: {
-                                color: j.default.Yellow,
+                                color: k.default.Yellow,
                                 textDecoration: 'underline',
                                 cursor: 'pointer'
                             },
-                            onClick: J,
+                            onClick: K,
                             children: 'report'
                         }),
                         ' ',
                         'and we will take proper action.'
                     ]
                 }),
-                (0, c.jsx)(o.default, {
-                    open: I,
-                    onCancel: K,
+                (0, d.jsx)(p.default, {
+                    open: J,
+                    onCancel: L,
                     title: 'Report map',
-                    footer: E ? (0, c.jsx)(m.default, {
-                        onClick: K,
+                    footer: F ? (0, d.jsx)(n.default, {
+                        onClick: L,
                         type: 'primary',
                         children: 'Close'
                     }, 'reported-close') : [
-                        (0, c.jsx)(m.default, {
-                            onClick: K,
+                        (0, d.jsx)(n.default, {
+                            onClick: L,
                             children: 'Cancel'
                         }, 'reporting-close'),
-                        (0, c.jsx)(m.default, {
+                        (0, d.jsx)(n.default, {
                             danger: !0,
-                            loading: B,
+                            loading: C,
                             onClick: () => {
-                                B || (C(), (0, p.request)({
-                                    url: `/api/created-map/listing/report/${ L }`,
+                                C || (D(), (0, q.request)({
+                                    url: `/api/created-map/listing/report/${ M }`,
                                     data: {
-                                        comment: G
+                                        comment: H
                                     },
                                     success: () => {
-                                        F();
+                                        G();
                                     },
                                     both: () => {
-                                        D();
+                                        E();
                                     }
                                 }));
                             },
                             children: 'Report Map'
                         }, 'reporting-submit')
                     ],
-                    children: E ? (0, c.jsx)(c.Fragment, {
+                    children: F ? (0, d.jsx)(d.Fragment, {
                         children: 'Your report was sent to our team. Thanks for keeping Gimkit safe!'
-                    }) : (0, c.jsxs)(c.Fragment, {
+                    }) : (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Found a map that breaks our',
                             ' ',
-                            (0, c.jsx)(i.default, {
-                                to: w,
+                            (0, d.jsx)(j.default, {
+                                to: x,
                                 external: !0,
                                 target: '_blank',
                                 style: {
@@ -436,13 +436,13 @@ b.register('kxc8y', function(q, r) {
                                 children: 'Community Guidelines'
                             }),
                             '? Report it here and our team will take a look. Thanks for keeping Gimkit safe!',
-                            (0, c.jsx)(n.default.TextArea, {
+                            (0, d.jsx)(o.default.TextArea, {
                                 placeholder: 'Optional comment...',
                                 style: {
                                     marginTop: 10
                                 },
                                 maxLength: 1000,
-                                onChange: a => H(a.target.value)
+                                onChange: e => I(e.target.value)
                             })
                         ]
                     })
@@ -450,12 +450,12 @@ b.register('kxc8y', function(q, r) {
             ]
         });
     };
-    const y = (0, f.default)(g.CenteredColumn).attrs({
+    const _z = (0, g.default)(h.CenteredColumn).attrs({
             className: 'maxWidth'
-        })(s || (s = v`
+        })(t || (t = w`
   padding-top: 10px;
 `)),
-        z = f.default.div(t || (t = v`
+        _A = g.default.div(u || (u = w`
   font-size: 14px;
   font-style: italic;
   margin-bottom: 25px;
@@ -463,82 +463,82 @@ b.register('kxc8y', function(q, r) {
   padding: 14px 22px;
   border-radius: 6px;
 `)),
-        A = f.default.div(u || (u = v`
+        _B = g.default.div(v || (v = w`
   font-size: 12px;
   font-style: italic;
   margin-top: 20px;
 `));
-}), b.register('rjv6T', function(f, c) {
-    a(f.exports, 'default', function() {
-        return s;
+}), a.register('w+7xi', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _t;
     });
-    var c = b('8kSQZ');
-    b('uPP4W');
-    var d = b('h99Nu'),
-        e = b('YimJ0'),
-        f = b('S/jX4'),
-        g = b('5nJMd26'),
-        h = b('gSUVO'),
-        i = b('iYEuk12'),
-        j = b('q721a'),
-        k = b('2WDH6');
-    let l, m, n, o, p, q = a => a;
-    const r = a => (0, c.jsx)(v, {
-        onClick: a.onSelect,
-        children: (0, c.jsxs)(g.default, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('0HHAH'),
+        g = a('vShe/'),
+        h = a('cvto726'),
+        i = a('b5kvC'),
+        j = a('2HvvA11'),
+        k = a('gs4MT'),
+        l = a('x8CoD');
+    let m, n, o, p, q, r = e => e;
+    const s = e => (0, d.jsx)(_w, {
+        onClick: e.onSelect,
+        children: (0, d.jsxs)(h.default, {
             direction: 'horizontal',
             size: 16,
             wrap: !0,
             align: 'center',
             children: [
-                (0, c.jsx)(w, {
+                (0, d.jsx)(_x, {
                     style: {
-                        backgroundImage: `url(${ (0, k.getCloudinaryUrl)(a.gif) })`
+                        backgroundImage: `url(${ (0, l.getCloudinaryUrl)(e.gif) })`
                     }
                 }),
-                (0, c.jsx)(x, {
-                    children: a.title
+                (0, d.jsx)(_y, {
+                    children: e.title
                 })
             ]
         })
     });
-    var s = a => a.kits.length ? (0, c.jsxs)(t, {
+    var _t = e => e.kits.length ? (0, d.jsxs)(_u, {
         children: [
-            (0, c.jsxs)(u, {
+            (0, d.jsxs)(_v, {
                 children: [
                     'This map allows players to answer questions.',
-                    (0, c.jsx)('br', {}),
+                    (0, d.jsx)('br', {}),
                     'Select the kit you would like players to answer questions from:'
                 ]
             }),
-            (0, c.jsx)(g.default, {
+            (0, d.jsx)(h.default, {
                 direction: 'vertical',
                 size: 15,
                 className: 'maxWidth',
                 style: {
                     marginTop: 25
                 },
-                children: a.kits.map(b => (0, c.jsx)(r, {
-                    onSelect: () => a.selectKit(b._id),
-                    title: b.title,
-                    gif: b.gif
-                }, b._id))
+                children: e.kits.map(a => (0, d.jsx)(s, {
+                    onSelect: () => e.selectKit(a._id),
+                    title: a.title,
+                    gif: a.gif
+                }, a._id))
             })
         ]
-    }) : (0, c.jsx)(t, {
-        children: (0, c.jsxs)(u, {
+    }) : (0, d.jsx)(_u, {
+        children: (0, d.jsxs)(_v, {
             children: [
                 'This map has players answer questions from a kit, but you',
                 ' ',
-                (0, c.jsx)('b', {
+                (0, d.jsx)('b', {
                     children: 'do not currently have any kits with questions.'
                 }),
-                (0, c.jsx)('br', {}),
-                (0, c.jsx)('br', {}),
-                (0, c.jsx)(i.default, {
-                    to: j.KIT_CREATOR,
+                (0, d.jsx)('br', {}),
+                (0, d.jsx)('br', {}),
+                (0, d.jsx)(j.default, {
+                    to: k.KIT_CREATOR,
                     style: {
-                        color: f.default.Yellow,
+                        color: g.default.Yellow,
                         textDecoration: 'underline'
                     },
                     children: 'Create a kit,'
@@ -548,15 +548,15 @@ b.register('kxc8y', function(q, r) {
             ]
         })
     });
-    const t = (0, d.default)(e.CenteredColumn).attrs({
+    const _u = (0, e.default)(f.CenteredColumn).attrs({
             className: 'maxWidth'
-        })(l || (l = q``)),
-        u = d.default.div(m || (m = q`
+        })(m || (m = r``)),
+        _v = e.default.div(n || (n = r`
   text-align: center;
 `)),
-        v = d.default.div.attrs({
+        _w = e.default.div.attrs({
             className: 'maxWidth flex vc'
-        })(n || (n = q`
+        })(o || (o = r`
   cursor: pointer;
 
   border-radius: 6px;
@@ -570,44 +570,44 @@ b.register('kxc8y', function(q, r) {
     background: rgba(255, 255, 255, 0.17);
     border-color: ${ 0 };
   }
-`), f.default.Yellow),
-        w = d.default.div.attrs({
+`), g.default.Yellow),
+        _x = e.default.div.attrs({
             className: 'light-shadow'
-        })(o || (o = q`
+        })(p || (p = r`
   height: 65px;
   width: 65px;
   border-radius: 5px;
   background-size: cover;
 `)),
-        x = d.default.div(p || (p = q`
+        _y = e.default.div(q || (q = r`
   font-weight: ${ 0 };
   font-size: 16px;
-`), h.FontWeights.Bold);
-}), b.register('2WDH6', function(b, f) {
-    a(b.exports, 'getCloudinaryUrl', function() {
-        return c;
+`), i.FontWeights.Bold);
+}), a.register('x8CoD', function(b, c) {
+    e(b.exports, 'getCloudinaryUrl', function() {
+        return _d;
     });
-    const c = a => {
-            const d = d(a);
-            return d ? a.includes('/video/upload') ? `https://${ e }/video/upload/${ d }` : `https://${ e }/image/upload/f_auto,fl_lossy,q_auto/${ d }` : a;
+    const _d = e => {
+            const e = _e(e);
+            return e ? e.includes('/video/upload') ? `https://${ _f }/video/upload/${ e }` : `https://${ _f }/image/upload/f_auto,fl_lossy,q_auto/${ e }` : e;
         },
-        d = a => {
-            if (!h.some(b => a.includes(b)))
+        _e = e => {
+            if (!_i.some(b => e.includes(b)))
                 return null;
-            if (a.includes(f) && !a.includes(`/${ g }/`))
+            if (e.includes(_g) && !e.includes(`/${ _h }/`))
                 return null;
-            const e = a.split('/');
-            if (!e || !e.length || e.length < 2)
+            const f = e.split('/');
+            if (!f || !f.length || f.length < 2)
                 return null;
-            const f = e[e.length - 2],
-                g = e[e.length - 1];
-            return f && g && f.startsWith('v') ? `${ f }/${ g }` : null;
+            const g = f[f.length - 2],
+                h = f[f.length - 1];
+            return g && h && g.startsWith('v') ? `${ g }/${ h }` : null;
         },
-        e = 'media.gimkit.com',
-        f = 'res.cloudinary.com',
-        g = 'gimkit-production',
-        h = [
-            e,
-            f
+        _f = 'media.gimkit.com',
+        _g = 'res.cloudinary.com',
+        _h = 'gimkit-production',
+        _i = [
+            _f,
+            _g
         ];
 });

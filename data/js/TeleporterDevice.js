@@ -1,41 +1,41 @@
-function a(a, b, i, c) {
-    Object.defineProperty(a, b, {
-        get: i,
-        set: c,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('JIaOs', function(i, c) {
-    var c;
-    c = i.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('B1tV8', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(i.exports, 'default', function() {
-        return l;
+    }), _m(b.exports, 'default', function() {
+        return _m;
     });
-    var d = b('UM8oI'),
-        e = b('VkIHd0'),
-        f = b('5Ux1a'),
-        g = b('Bpt+p'),
-        h = b('sgILU'),
-        i = b('NT/OX'),
-        j = b('Y2Xz8');
-    class k extends h.default {
-        constructor(a) {
-            super(a), (0, d.default)(this, 'addTeleporterAnim', () => {
-                if (!1 === this.options.visibleInGame && ((0, f.InGamePhase)() || (0, g.isPublishedVersion)()))
+    var e = a('1bFPu'),
+        f = a('SINjC2'),
+        g = a('/pbxo'),
+        h = a('9tz3H'),
+        i = a('I35Ay'),
+        j = a('meQR6'),
+        k = a('Bt5KN');
+    class l extends i.default {
+        constructor(_m) {
+            super(_m), (0, e.default)(this, 'addTeleporterAnim', () => {
+                if (!1 === this.options.visibleInGame && ((0, g.InGamePhase)() || (0, h.isPublishedVersion)()))
                     return;
-                const l = (0, e.default)({
-                    width: j.Consts.FRAME_WIDTH,
-                    height: j.Consts.FRAME_HEIGHT,
-                    newWidth: j.Consts.TELEPORTER_WIDTH
+                const n = (0, f.default)({
+                    width: k.Consts.FRAME_WIDTH,
+                    height: k.Consts.FRAME_HEIGHT,
+                    newWidth: k.Consts.TELEPORTER_WIDTH
                 });
                 this.parts.add.animatedSprite({
-                    ...i.SpritesheetAsset,
-                    displayWidth: l.width,
-                    displayHeight: l.height
+                    ...j.SpritesheetAsset,
+                    displayWidth: n.width,
+                    displayHeight: n.height
                 });
             }), this.boundingBox.setHardcoded({
                 width: 175,
@@ -43,30 +43,30 @@ b.register('JIaOs', function(i, c) {
             }), this.addTeleporterAnim();
         }
     }
-    var l = m;
-}), b.register('VkIHd0', function(b, i) {
-    a(b.exports, 'default', function() {
-        return c;
+    var _m = l;
+}), a.register('SINjC2', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var c = a => {
-        const d = a.newWidth / a.width;
+    var _d = e => {
+        const e = e.newWidth / e.width;
         return {
-            height: a.height * d,
-            width: a.width * d
+            height: e.height * e,
+            width: e.width * e
         };
     };
-}), b.register('NT/OX', function(i, c) {
-    a(i.exports, 'SpritesheetAsset', function() {
-        return e;
+}), a.register('meQR6', function(b, c) {
+    e(b.exports, 'SpritesheetAsset', function() {
+        return _f;
     });
-    var c = b('JJQ0+'),
-        d = b('Y2Xz8');
-    (0, c.default)('devices/teleporter/base.png');
-    const e = {
-        spritesheetUrl: (0, c.default)('devices/teleporter/anim.png'),
+    var d = a('2Xvuf'),
+        e = a('Bt5KN');
+    (0, d.default)('devices/teleporter/base.png');
+    const _f = {
+        spritesheetUrl: (0, d.default)('devices/teleporter/anim.png'),
         spritesheetId: '__TELEPORTER_SPRITESHEET',
-        frameWidth: d.Consts.FRAME_WIDTH,
-        frameHeight: d.Consts.FRAME_HEIGHT,
+        frameWidth: e.Consts.FRAME_WIDTH,
+        frameHeight: e.Consts.FRAME_HEIGHT,
         animations: [{
             animName: 'TELEPORTER_ANIM',
             animFrames: {
@@ -77,11 +77,11 @@ b.register('JIaOs', function(i, c) {
             frameRate: 12
         }]
     };
-}), b.register('Y2Xz8', function(b, i) {
-    a(b.exports, 'Consts', function() {
-        return c;
+}), a.register('Bt5KN', function(b, c) {
+    e(b.exports, 'Consts', function() {
+        return _d;
     });
-    const c = {
+    const _d = {
         TELEPORTER_WIDTH: 168,
         FRAME_WIDTH: 258,
         FRAME_HEIGHT: 234

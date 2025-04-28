@@ -1,31 +1,31 @@
-function a(a, b, c, o) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: o,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('+4qMp', function(b, o) {
-    a(b.exports, 'default', function() {
-        return y;
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('Jjcl0', function(b, c) {
+    _F(b.exports, 'default', function() {
+        return _y;
     });
-    var d = c('4NqVP'),
-        e = c('uPP4W'),
-        f = c('qEw51'),
-        g = c('ykUUB'),
-        h = c('1Qq13');
+    var d = a('K3ZV0'),
+        e = a('LEQ5w'),
+        f = a('1P5ls'),
+        g = a('N+6vg'),
+        h = a('3V4ym');
     let i = null,
-        j = a => a(),
+        j = _F => _F(),
         k = [],
         l = {};
-    const m = e.forwardRef((a, b) => {
-        const [n, o] = e.useState(), [p, q] = e.useState(), [r, s] = e.useState(), [t, u] = e.useState(), [v, w] = e.useState(), [x, y] = e.useState(), [z, A] = (0, h.useInternalNotification)({
+    const m = e.forwardRef((_F, b) => {
+        const [n, o] = e.useState(), [p, q] = e.useState(), [r, s] = e.useState(), [t, u] = e.useState(), [v, w] = e.useState(), [x, _y] = e.useState(), [z, A] = (0, h.useInternalNotification)({
             prefixCls: n,
             getContainer: () => p,
             maxCount: r,
@@ -34,7 +34,7 @@ c.register('+4qMp', function(b, o) {
             bottom: x
         }), B = (0, f.globalConfig)(), C = B.getRootPrefixCls(), D = B.getIconPrefixCls(), E = () => {
             const {
-                prefixCls: F,
+                prefixCls: _F,
                 container: G,
                 maxCount: H,
                 rtl: I,
@@ -48,7 +48,7 @@ c.register('+4qMp', function(b, o) {
                     maxCount: O,
                     top: P,
                     bottom: Q
-                } = R;
+                } = l;
                 return {
                     prefixCls: null != L ? L : (0, f.globalConfig)().getPrefixCls('notification'),
                     container: (null == M ? void 0 : M()) || document.body,
@@ -58,7 +58,7 @@ c.register('+4qMp', function(b, o) {
                     bottom: Q
                 };
             }();
-            o(F), q(G), s(H), u(I), w(J), y(K);
+            o(_F), q(G), s(H), u(I), w(J), _y(K);
         };
         return e.useEffect(E, []), e.useImperativeHandle(b, () => {
             const F = Object.assign({}, z);
@@ -96,39 +96,39 @@ c.register('+4qMp', function(b, o) {
                 }), o);
             });
         }
-        i.instance && (k.forEach(a => {
-            switch (a.type) {
+        i.instance && (k.forEach(_o => {
+            switch (_o.type) {
                 case 'open':
                     j(() => {
-                        i.instance.open(Object.assign(Object.assign({}, l), a.config));
+                        i.instance.open(Object.assign(Object.assign({}, l), _o.config));
                     });
                     break;
                 case 'destroy':
                     j(() => {
-                        null == i || i.instance.destroy(a.key);
+                        null == i || i.instance.destroy(_o.key);
                     });
             }
         }), k = []);
     }
 
-    function o(a) {
+    function n(_o) {
         k.push({
             type: 'open',
-            config: a
-        }), n();
+            config: _o
+        }), _m();
     }
-    const p = {
-        open: o,
-        destroy: function(a) {
+    const n = {
+        open: _n,
+        destroy: function(o) {
             k.push({
                 type: 'destroy',
-                key: a
-            }), n();
+                key: o
+            }), _m();
         },
-        config: function(a) {
-            l = Object.assign(Object.assign({}, l), a), j(() => {
-                var q;
-                null === (q = null == i ? void 0 : i.sync) || void 0 === q || q.call(i);
+        config: function(o) {
+            l = Object.assign(Object.assign({}, l), o), j(() => {
+                var p;
+                null === (p = null == i ? void 0 : i.sync) || void 0 === p || p.call(i);
             });
         },
         useNotification: h.default,
@@ -139,53 +139,53 @@ c.register('+4qMp', function(b, o) {
         'info',
         'warning',
         'error'
-    ].forEach(a => {
-        p[a] = b => o(Object.assign(Object.assign({}, b), {
-            type: a
+    ].forEach(_d => {
+        n[_d] = b => _n(Object.assign(Object.assign({}, b), {
+            type: _d
         }));
     });
-    var q = r;
-}), c.register('ykUUB', function(q, r) {
-    a(q.exports, 'TypeIcon', function() {
-        return p;
-    }, function(a) {
-        return p = a;
-    }), a(q.exports, 'getCloseIcon', function() {
-        return q;
-    }, function(a) {
-        return q = a;
-    }), a(q.exports, 'PureContent', function() {
-        return s;
-    }, function(a) {
-        return s = a;
-    }), a(q.exports, 'default', function() {
-        return t;
-    }, function(a) {
-        return t = a;
+    var o = n;
+}), a.register('N+6vg', function(b, c) {
+    _d(b.exports, 'TypeIcon', function() {
+        return _p;
+    }, function(_d) {
+        return _p = _d;
+    }), _d(b.exports, 'getCloseIcon', function() {
+        return _q;
+    }, function(_d) {
+        return _q = _d;
+    }), _d(b.exports, 'PureContent', function() {
+        return _r;
+    }, function(_d) {
+        return _r = _d;
+    }), _d(b.exports, 'default', function() {
+        return _r;
+    }, function(_d) {
+        return _r = _d;
     });
-    var d = c('uPP4W'),
-        e = c('TyHdy'),
-        f = c('3QPei'),
-        g = c('PAFXG'),
-        h = c('fTLdQ'),
-        i = c('D3laK'),
-        j = c('obWo+'),
-        k = c('BLIEh'),
-        l = c('VAIs1'),
-        m = c('yoICQ'),
-        n = c('qEw51'),
-        o = function(a, b) {
-            var p = {};
-            for (var q in a)
-                Object.prototype.hasOwnProperty.call(a, q) && b.indexOf(q) < 0 && (p[q] = a[q]);
-            if (null != a && 'function' == typeof Object.getOwnPropertySymbols) {
-                var r = 0;
-                for (q = Object.getOwnPropertySymbols(a); r < q.length; r++)
-                    b.indexOf(q[r]) < 0 && Object.prototype.propertyIsEnumerable.call(a, q[r]) && (p[q[r]] = a[q[r]]);
+    var d = a('LEQ5w'),
+        e = a('mPo/q'),
+        f = a('G1f7z'),
+        g = a('UAiDO'),
+        h = a('alXMi'),
+        i = a('xQyso'),
+        j = a('QECub'),
+        k = a('6HRXq'),
+        l = a('JrtKP'),
+        _m = a('HXCZ3'),
+        _n = a('1P5ls'),
+        o = function(p, q) {
+            var r = {};
+            for (var s in p)
+                Object.prototype.hasOwnProperty.call(p, s) && q.indexOf(s) < 0 && (r[s] = p[s]);
+            if (null != p && 'function' == typeof Object.getOwnPropertySymbols) {
+                var t = 0;
+                for (s = Object.getOwnPropertySymbols(p); t < s.length; t++)
+                    q.indexOf(s[t]) < 0 && Object.prototype.propertyIsEnumerable.call(p, s[t]) && (r[s[t]] = p[s[t]]);
             }
-            return p;
+            return r;
         };
-    const p = {
+    const _p = {
         info: d.createElement(i.default, null),
         success: d.createElement(h.default, null),
         error: d.createElement(g.default, null),
@@ -193,21 +193,21 @@ c.register('+4qMp', function(b, o) {
         loading: d.createElement(e.default, null)
     };
 
-    function q(a, b) {
-        return b || d.createElement('span', {
-            className: `${ a }-close-x`
+    function _q(r, s) {
+        return s || d.createElement('span', {
+            className: `${ r }-close-x`
         }, d.createElement(j.default, {
-            className: `${ a }-close-icon`
+            className: `${ r }-close-icon`
         }));
     }
-    const r = {
+    const q = {
         success: h.default,
         info: i.default,
         error: g.default,
         warning: f.default
     };
 
-    function s(a) {
+    function _r(s) {
         let {
             prefixCls: t,
             icon: u,
@@ -215,17 +215,17 @@ c.register('+4qMp', function(b, o) {
             message: w,
             description: x,
             btn: y
-        } = z, A = null;
-        return u ? A = d.createElement('span', {
+        } = s, z = null;
+        return u ? z = d.createElement('span', {
             className: `${ t }-icon`
-        }, u) : v && (A = d.createElement(r[v] || null, {
-            className: b(l)(`${ t }-icon`, `${ t }-icon-${ v }`)
+        }, u) : v && (z = d.createElement(q[v] || null, {
+            className: _b(l)(`${ t }-icon`, `${ t }-icon-${ v }`)
         })), d.createElement('div', {
-            className: b(l)({
-                [`${ t }-with-icon`]: A
+            className: _b(l)({
+                [`${ t }-with-icon`]: z
             }),
             role: 'alert'
-        }, A, d.createElement('div', {
+        }, z, d.createElement('div', {
             className: `${ t }-message`
         }, w), d.createElement('div', {
             className: `${ t }-description`
@@ -234,18 +234,18 @@ c.register('+4qMp', function(b, o) {
         }, y));
     }
 
-    function t(a) {
+    function _r(s) {
         const {
-            prefixCls: u,
-            className: v,
-            icon: w,
-            type: x,
-            message: y,
-            description: z,
-            btn: A,
-            closable: B = !0,
-            closeIcon: C
-        } = D, E = o(D, [
+            prefixCls: t,
+            className: u,
+            icon: v,
+            type: w,
+            message: x,
+            description: y,
+            btn: z,
+            closable: A = !0,
+            closeIcon: B
+        } = s, C = o(s, [
             'prefixCls',
             'className',
             'icon',
@@ -256,35 +256,35 @@ c.register('+4qMp', function(b, o) {
             'closable',
             'closeIcon'
         ]), {
-            getPrefixCls: F
-        } = d.useContext(n.ConfigContext), G = u || F('notification'), H = `${ G }-notice`, [, I] = (0, m.default)(G);
-        return d.createElement(k.Notice, Object.assign({}, E, {
-            prefixCls: G,
-            className: b(l)(v, I, `${ H }-pure-panel`),
+            getPrefixCls: D
+        } = d.useContext(_n.ConfigContext), E = t || D('notification'), F = `${ E }-notice`, [, G] = (0, _m.default)(E);
+        return d.createElement(k.Notice, Object.assign({}, C, {
+            prefixCls: E,
+            className: _b(l)(u, G, `${ F }-pure-panel`),
             eventKey: 'pure',
             duration: null,
-            closable: B,
-            closeIcon: q(G, C),
-            content: d.createElement(s, {
-                prefixCls: H,
-                icon: w,
-                type: x,
-                message: y,
-                description: z,
-                btn: A
+            closable: A,
+            closeIcon: _x(E, B),
+            content: d.createElement(_z, {
+                prefixCls: F,
+                icon: v,
+                type: w,
+                message: x,
+                description: y,
+                btn: z
             })
         }));
     }
-}), c.register('yoICQ', function(b, l) {
-    a(b.exports, 'default', function() {
-        return p;
+}), a.register('HXCZ3', function(_b, c) {
+    _d(_b.exports, 'default', function() {
+        return _p;
     });
-    var d = c('M5GjZ'),
-        e = c('vvwoA'),
-        f = c('jnIuq'),
-        g = c('yOxu+'),
-        h = c('P38j/');
-    const i = a => {
+    var d = a('wC0DT'),
+        e = a('XC0UB'),
+        f = a('l+IVY'),
+        g = a('z4Zkr'),
+        h = a('7hbGU');
+    const i = _d => {
         const {
             iconCls: j,
             componentCls: k,
@@ -292,7 +292,7 @@ c.register('+4qMp', function(b, o) {
             fontSizeLG: m,
             notificationMarginBottom: n,
             borderRadiusLG: o,
-            colorSuccess: p,
+            colorSuccess: _p,
             colorInfo: q,
             colorWarning: r,
             colorError: s,
@@ -300,13 +300,13 @@ c.register('+4qMp', function(b, o) {
             notificationBg: u,
             notificationPadding: v,
             notificationMarginEdge: w,
-            motionDurationMid: x,
+            motionDurationMid: _x,
             motionEaseInOut: y,
-            fontSize: z,
+            fontSize: _z,
             lineHeight: A,
             width: B,
             notificationIconSize: C
-        } = D, E = `${ k }-notice`, F = new(0, d.Keyframes)('antNotificationFadeIn', {
+        } = _d, D = `${ k }-notice`, E = new(0, d.Keyframes)('antNotificationFadeIn', {
             '0%': {
                 left: {
                     _skip_check_: !0,
@@ -321,9 +321,9 @@ c.register('+4qMp', function(b, o) {
                 },
                 opacity: 1
             }
-        }), G = new(0, d.Keyframes)('antNotificationFadeOut', {
+        }), F = new(0, d.Keyframes)('antNotificationFadeOut', {
             '0%': {
-                maxHeight: D.animationMaxHeight,
+                maxHeight: _d.animationMaxHeight,
                 marginBottom: n,
                 opacity: 1
             },
@@ -336,9 +336,9 @@ c.register('+4qMp', function(b, o) {
             }
         });
         return [{
-                [k]: Object.assign(Object.assign(Object.assign(Object.assign({}, (0, h.resetComponent)(D)), {
+                [k]: Object.assign(Object.assign(Object.assign(Object.assign({}, (0, h.resetComponent)(_d)), {
                     position: 'fixed',
-                    zIndex: D.zIndexPopup,
+                    zIndex: _d.zIndexPopup,
                     marginInlineEnd: w,
                     [`${ k }-hook-holder`]: {
                         position: 'relative'
@@ -355,7 +355,7 @@ c.register('+4qMp', function(b, o) {
                         }
                     },
                     [`${ k }-fade-enter, ${ k }-fade-appear`]: {
-                        animationDuration: D.motionDurationMid,
+                        animationDuration: _d.motionDurationMid,
                         animationTimingFunction: y,
                         animationFillMode: 'both',
                         opacity: 0,
@@ -364,18 +364,18 @@ c.register('+4qMp', function(b, o) {
                     [`${ k }-fade-leave`]: {
                         animationTimingFunction: y,
                         animationFillMode: 'both',
-                        animationDuration: x,
+                        animationDuration: _x,
                         animationPlayState: 'paused'
                     },
                     [`${ k }-fade-enter${ k }-fade-enter-active, ${ k }-fade-appear${ k }-fade-appear-active`]: {
-                        animationName: F,
+                        animationName: E,
                         animationPlayState: 'running'
                     },
                     [`${ k }-fade-leave${ k }-fade-leave-active`]: {
-                        animationName: G,
+                        animationName: F,
                         animationPlayState: 'running'
                     }
-                }), (0, g.default)(D)), {
+                }), (0, g.default)(_d)), {
                     '&-rtl': {
                         direction: 'rtl',
                         [`${ k }-notice-btn`]: {
@@ -385,7 +385,7 @@ c.register('+4qMp', function(b, o) {
                 })
             },
             {
-                [E]: {
+                [D]: {
                     position: 'relative',
                     width: B,
                     maxWidth: `calc(100vw - ${ 2 * w }px)`,
@@ -399,36 +399,36 @@ c.register('+4qMp', function(b, o) {
                     borderRadius: o,
                     boxShadow: l,
                     [`${ k }-close-icon`]: {
-                        fontSize: z,
+                        fontSize: _z,
                         cursor: 'pointer'
                     },
-                    [`${ E }-message`]: {
-                        marginBottom: D.marginXS,
+                    [`${ D }-message`]: {
+                        marginBottom: _d.marginXS,
                         color: t,
                         fontSize: m,
-                        lineHeight: D.lineHeightLG
+                        lineHeight: _d.lineHeightLG
                     },
-                    [`${ E }-description`]: {
-                        fontSize: z
+                    [`${ D }-description`]: {
+                        fontSize: _z
                     },
-                    [`&${ E }-closable ${ E }-message`]: {
-                        paddingInlineEnd: D.paddingLG
+                    [`&${ D }-closable ${ D }-message`]: {
+                        paddingInlineEnd: _d.paddingLG
                     },
-                    [`${ E }-with-icon ${ E }-message`]: {
-                        marginBottom: D.marginXS,
-                        marginInlineStart: D.marginSM + C,
+                    [`${ D }-with-icon ${ D }-message`]: {
+                        marginBottom: _d.marginXS,
+                        marginInlineStart: _d.marginSM + C,
                         fontSize: m
                     },
-                    [`${ E }-with-icon ${ E }-description`]: {
-                        marginInlineStart: D.marginSM + C,
-                        fontSize: z
+                    [`${ D }-with-icon ${ D }-description`]: {
+                        marginInlineStart: _d.marginSM + C,
+                        fontSize: _z
                     },
-                    [`${ E }-icon`]: {
+                    [`${ D }-icon`]: {
                         position: 'absolute',
                         fontSize: C,
                         lineHeight: 0,
                         [`&-success${ j }`]: {
-                            color: p
+                            color: _p
                         },
                         [`&-info${ j }`]: {
                             color: q
@@ -440,67 +440,67 @@ c.register('+4qMp', function(b, o) {
                             color: s
                         }
                     },
-                    [`${ E }-close`]: {
+                    [`${ D }-close`]: {
                         position: 'absolute',
-                        top: D.notificationPaddingVertical,
-                        insetInlineEnd: D.notificationPaddingHorizontal,
-                        color: D.colorIcon,
+                        top: _d.notificationPaddingVertical,
+                        insetInlineEnd: _d.notificationPaddingHorizontal,
+                        color: _d.colorIcon,
                         outline: 'none',
-                        width: D.notificationCloseButtonSize,
-                        height: D.notificationCloseButtonSize,
-                        borderRadius: D.borderRadiusSM,
-                        transition: `background-color ${ D.motionDurationMid }, color ${ D.motionDurationMid }`,
+                        width: _d.notificationCloseButtonSize,
+                        height: _d.notificationCloseButtonSize,
+                        borderRadius: _d.borderRadiusSM,
+                        transition: `background-color ${ _d.motionDurationMid }, color ${ _d.motionDurationMid }`,
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         '&:hover': {
-                            color: D.colorIconHover,
-                            backgroundColor: D.wireframe ? 'transparent' : D.colorFillContent
+                            color: _d.colorIconHover,
+                            backgroundColor: _d.wireframe ? 'transparent' : _d.colorFillContent
                         }
                     },
-                    [`${ E }-btn`]: {
+                    [`${ D }-btn`]: {
                         float: 'right',
-                        marginTop: D.marginSM
+                        marginTop: _d.marginSM
                     }
                 }
             },
             {
-                [`${ E }-pure-panel`]: {
+                [`${ D }-pure-panel`]: {
                     margin: 0
                 }
             }
         ];
     };
-    var j = (0, e.default)('Notification', a => {
-        const k = a.paddingMD,
-            l = a.paddingLG,
-            m = (0, f.merge)(a, {
-                notificationBg: a.colorBgElevated,
+    var j = (0, e.default)('Notification', _d => {
+        const k = _d.paddingMD,
+            l = _d.paddingLG,
+            m = (0, f.merge)(_d, {
+                notificationBg: _d.colorBgElevated,
                 notificationPaddingVertical: k,
                 notificationPaddingHorizontal: l,
-                notificationPadding: `${ a.paddingMD }px ${ a.paddingContentHorizontalLG }px`,
-                notificationMarginBottom: a.margin,
-                notificationMarginEdge: a.marginLG,
+                notificationPadding: `${ _d.paddingMD }px ${ _d.paddingContentHorizontalLG }px`,
+                notificationMarginBottom: _d.margin,
+                notificationMarginEdge: _d.marginLG,
                 animationMaxHeight: 150,
-                notificationIconSize: a.fontSizeLG * a.lineHeightLG,
-                notificationCloseButtonSize: 0.55 * a.controlHeightLG
+                notificationIconSize: _d.fontSizeLG * _d.lineHeightLG,
+                notificationCloseButtonSize: 0.55 * _d.controlHeightLG
             });
         return [i(m)];
-    }, a => ({
-        zIndexPopup: a.zIndexPopupBase + 50,
+    }, _d => ({
+        zIndexPopup: _d.zIndexPopupBase + 50,
         width: 384
     }));
-}), c.register('yOxu+', function(b, h) {
-    a(b.exports, 'default', function() {
-        return e;
+}), a.register('z4Zkr', function(b, c) {
+    _d(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('M5GjZ');
-    var e = a => {
+    var d = a('wC0DT');
+    var _e = _d => {
         const {
             componentCls: f,
             width: g,
             notificationMarginEdge: h
-        } = i;
+        } = _d;
         return {
             [`&${ f }-top, &${ f }-bottom`]: {
                 marginInline: 0
@@ -557,86 +557,86 @@ c.register('+4qMp', function(b, o) {
             }
         };
     };
-}), c.register('1Qq13', function(m, n) {
-    a(m.exports, 'useInternalNotification', function() {
-        return q;
-    }, function(a) {
-        return q = a;
-    }), a(m.exports, 'default', function() {
-        return r;
-    }, function(a) {
-        return r = a;
+}), a.register('3V4ym', function(b, c) {
+    _d(b.exports, 'useInternalNotification', function() {
+        return _q;
+    }, function(_d) {
+        return _q = _d;
+    }), _d(b.exports, 'default', function() {
+        return _r;
+    }, function(_d) {
+        return _r = _d;
     });
-    var d = c('uPP4W'),
-        e = c('BLIEh'),
-        f = c('VAIs1'),
-        g = c('qEw51'),
-        h = c('vBZXT'),
-        i = c('yoICQ'),
-        j = c('ykUUB'),
-        k = function(a, b) {
-            var l = {};
-            for (var m in a)
-                Object.prototype.hasOwnProperty.call(a, m) && b.indexOf(m) < 0 && (l[m] = a[m]);
-            if (null != a && 'function' == typeof Object.getOwnPropertySymbols) {
-                var n = 0;
-                for (m = Object.getOwnPropertySymbols(a); n < m.length; n++)
-                    b.indexOf(m[n]) < 0 && Object.prototype.propertyIsEnumerable.call(a, m[n]) && (l[m[n]] = a[m[n]]);
+    var d = a('LEQ5w'),
+        e = a('6HRXq'),
+        f = a('JrtKP'),
+        g = a('1P5ls'),
+        h = a('pTTyV'),
+        i = a('HXCZ3'),
+        j = a('N+6vg'),
+        k = function(l, m) {
+            var n = {};
+            for (var o in l)
+                Object.prototype.hasOwnProperty.call(l, o) && m.indexOf(o) < 0 && (n[o] = l[o]);
+            if (null != l && 'function' == typeof Object.getOwnPropertySymbols) {
+                var p = 0;
+                for (o = Object.getOwnPropertySymbols(l); p < o.length; p++)
+                    m.indexOf(o[p]) < 0 && Object.prototype.propertyIsEnumerable.call(l, o[p]) && (n[o[p]] = l[o[p]]);
             }
-            return l;
+            return n;
         };
-    const l = d.forwardRef((a, c) => {
+    const l = d.forwardRef((_n, a) => {
         const {
             top: m,
             bottom: n,
             prefixCls: o,
             getContainer: p,
-            maxCount: q,
-            rtl: r,
+            maxCount: _q,
+            rtl: _r,
             onAllRemoved: s
-        } = t, {
-            getPrefixCls: u,
-            getPopupContainer: v
-        } = d.useContext(g.ConfigContext), w = o || u('notification'), [, x] = (0, i.default)(w), [y, z] = (0, e.useNotification)({
-            prefixCls: w,
-            style: t => (0, h.getPlacementStyle)(t, null != m ? m : 24, null != n ? n : 24),
-            className: () => b(f)(x, {
-                [`${ w }-rtl`]: r
+        } = _n, {
+            getPrefixCls: t,
+            getPopupContainer: u
+        } = d.useContext(g.ConfigContext), v = o || t('notification'), [, w] = (0, i.default)(v), [x, y] = (0, e.useNotification)({
+            prefixCls: v,
+            style: _n => (0, h.getPlacementStyle)(_n, null != m ? m : 24, null != n ? n : 24),
+            className: () => _r(f)(w, {
+                [`${ v }-rtl`]: _r
             }),
-            motion: () => (0, h.getMotion)(w),
+            motion: () => (0, h.getMotion)(v),
             closable: !0,
-            closeIcon: (0, j.getCloseIcon)(w),
+            closeIcon: (0, j.getCloseIcon)(v),
             duration: 4.5,
-            getContainer: () => (null == p ? void 0 : p()) || (null == v ? void 0 : v()) || document.body,
-            maxCount: q,
+            getContainer: () => (null == p ? void 0 : p()) || (null == u ? void 0 : u()) || document.body,
+            maxCount: _q,
             onAllRemoved: s
         });
-        return d.useImperativeHandle(c, () => Object.assign(Object.assign({}, y), {
-            prefixCls: w,
-            hashId: x
-        })), z;
+        return d.useImperativeHandle(a, () => Object.assign(Object.assign({}, x), {
+            prefixCls: v,
+            hashId: w
+        })), y;
     });
 
-    function m(a) {
-        const n = d.useRef(null);
+    function m(_n) {
+        const o = d.useRef(null);
         return [
             d.useMemo(() => {
-                const o = o => {
-                        if (!n.current)
+                const p = p => {
+                        if (!o.current)
                             return;
                         const {
-                            open: p,
-                            prefixCls: q,
-                            hashId: r
-                        } = n.current, s = `${ q }-notice`, {
-                            message: t,
-                            description: u,
-                            icon: v,
-                            type: w,
-                            placement: x = 'topRight',
-                            btn: y,
-                            className: z
-                        } = A, B = k(A, [
+                            open: q,
+                            prefixCls: r,
+                            hashId: s
+                        } = o.current, t = `${ r }-notice`, {
+                            message: u,
+                            description: v,
+                            icon: w,
+                            type: x,
+                            placement: y = 'topRight',
+                            btn: z,
+                            className: A
+                        } = p, B = k(p, [
                             'message',
                             'description',
                             'icon',
@@ -645,24 +645,24 @@ c.register('+4qMp', function(b, o) {
                             'btn',
                             'className'
                         ]);
-                        return p(Object.assign(Object.assign({}, B), {
+                        return q(Object.assign(Object.assign({}, B), {
                             content: d.createElement(j.PureContent, {
-                                prefixCls: s,
-                                icon: v,
-                                type: w,
-                                message: t,
-                                description: u,
-                                btn: y
+                                prefixCls: t,
+                                icon: w,
+                                type: x,
+                                message: u,
+                                description: v,
+                                btn: z
                             }),
-                            placement: x,
-                            className: b(f)(w && `${ s }-${ w }`, r, z)
+                            placement: y,
+                            className: _r(f)(x && `${ t }-${ x }`, s, A)
                         }));
                     },
-                    p = {
-                        open: o,
-                        destroy: o => {
-                            var q, r;
-                            void 0 !== o ? null === (q = n.current) || void 0 === q || q.close(o) : null === (r = n.current) || void 0 === r || r.destroy();
+                    q = {
+                        open: p,
+                        destroy: p => {
+                            var _r, s;
+                            void 0 !== p ? null === (_r = o.current) || void 0 === _r || _r.close(p) : null === (s = o.current) || void 0 === s || s.destroy();
                         }
                     };
                 return [
@@ -670,84 +670,84 @@ c.register('+4qMp', function(b, o) {
                     'info',
                     'warning',
                     'error'
-                ].forEach(b => {
-                    p[b] = n => o(Object.assign(Object.assign({}, n), {
-                        type: b
+                ].forEach(_b => {
+                    q[_b] = o => p(Object.assign(Object.assign({}, o), {
+                        type: _b
                     }));
-                }), p;
+                }), q;
             }, []),
             d.createElement(l, Object.assign({
                 key: 'notification-holder'
-            }, a, {
-                ref: n
+            }, _n, {
+                ref: o
             }))
         ];
     }
 
-    function n(a) {
-        return m(a);
+    function m(n) {
+        return m(n);
     }
-}), c.register('vBZXT', function(b, c) {
-    function d(a, b, c) {
-        let e;
-        switch (a) {
+}), a.register('pTTyV', function(_b, c) {
+    function d(e, f, g) {
+        let h;
+        switch (e) {
             case 'top':
-                e = {
+                h = {
                     left: '50%',
                     transform: 'translateX(-50%)',
                     right: 'auto',
-                    top: b,
+                    top: f,
                     bottom: 'auto'
                 };
                 break;
             case 'topLeft':
-                e = {
+                h = {
                     left: 0,
-                    top: b,
+                    top: f,
                     bottom: 'auto'
                 };
                 break;
             case 'topRight':
-                e = {
+                h = {
                     right: 0,
-                    top: b,
+                    top: f,
                     bottom: 'auto'
                 };
                 break;
             case 'bottom':
-                e = {
+                h = {
                     left: '50%',
                     transform: 'translateX(-50%)',
                     right: 'auto',
                     top: 'auto',
-                    bottom: c
+                    bottom: g
                 };
                 break;
             case 'bottomLeft':
-                e = {
+                h = {
                     left: 0,
                     top: 'auto',
-                    bottom: c
+                    bottom: g
                 };
                 break;
             default:
-                e = {
+                h = {
                     right: 0,
                     top: 'auto',
-                    bottom: c
+                    bottom: g
                 };
         }
-        return e;
+        return h;
     }
 
-    function e(a) {
+    function d(e) {
         return {
-            motionName: `${ a }-fade`
+            motionName: `${ e }-fade`
         };
     }
-    a(b.exports, 'getPlacementStyle', function() {
-        return d;
-    }), a(b.exports, 'getMotion', function() {
-        return e;
+    e(_b.exports, 'getPlacementStyle', function() {
+        return o;
+    }), e(_b.exports, 'getMotion', function() {
+        return i;
     });
 });

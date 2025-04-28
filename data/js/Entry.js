@@ -1,42 +1,42 @@
-function a(a, b, p, q) {
-    Object.defineProperty(a, b, {
-        get: p,
-        set: q,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('jhMXd', function(p, q) {
-    var c;
-    c = p.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('E7oFF', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(p.exports, 'Container', function() {
-        return n;
-    }), a(p.exports, 'default', function() {
-        return m;
+    }), _o(b.exports, 'Container', function() {
+        return _o;
+    }), _o(b.exports, 'default', function() {
+        return _n;
     });
-    var d = b('8kSQZ'),
-        e = b('uPP4W'),
-        f = b('h99Nu'),
-        g = b('YimJ0'),
-        h = b('iHElh'),
-        i = b('PjB0f'),
-        j = b('VukDU'),
-        k = b('4O5ns');
-    let l;
-    var m = () => {
-        const [n, o] = e.useState(null), [p, q] = (0, i.useBoolean)(!1);
-        e.useEffect(() => {
-            (0, i.request)({
+    var e = a('0hzx+'),
+        f = a('LEQ5w'),
+        g = a('Axq+p'),
+        h = a('0HHAH'),
+        i = a('6CIVV'),
+        j = a('PMl60'),
+        k = a('4VQGS'),
+        l = a('Am38a');
+    let m;
+    var _n = () => {
+        const [_o, p] = f.useState(null), [q, r] = (0, j.useBoolean)(!1);
+        f.useEffect(() => {
+            (0, j.request)({
                 url: '/api/matchmaker/intent/map/tutorial/create',
-                success: n => {
-                    o(n);
+                success: _o => {
+                    p(_o);
                 },
-                error: n => {
-                    (0, i.throwMessageError)({
-                        e: n,
+                error: _o => {
+                    (0, j.throwMessageError)({
+                        e: _o,
                         default: {
                             title: 'There was an error loading into the tutorial.'
                         },
@@ -45,138 +45,138 @@ b.register('jhMXd', function(p, q) {
                 }
             });
         }, []);
-        return (0, d.jsxs)(d.Fragment, {
+        return (0, e.jsxs)(e.Fragment, {
             children: [
-                (0, d.jsx)(i.Title, {
+                (0, e.jsx)(j.Title, {
                     title: 'Gimkit Creative Tutorial'
                 }),
-                n ? p ? (0, d.jsx)(k.default, {}) : (0, d.jsx)(j.default, {
-                    intentId: n,
-                    onTutorialComplete: q
-                }) : (0, d.jsx)(n, {
-                    children: (0, d.jsx)(h.default, {
+                _o ? q ? (0, e.jsx)(l.default, {}) : (0, e.jsx)(k.default, {
+                    intentId: _o,
+                    onTutorialComplete: r
+                }) : (0, e.jsx)(_o, {
+                    children: (0, e.jsx)(i.default, {
                         size: 'large'
                     })
                 })
             ]
         });
     };
-    const n = (0, f.default)(g.Centered).attrs({
+    const _o = (0, g.default)(h.Centered).attrs({
         className: 'maxAll'
-    })(l || (l = (a => a)``));
-}), b.register('YimJ0', function(C, D) {
-    a(C.exports, 'Centered', function() {
-        return i;
-    }), a(C.exports, 'VerticallyCentered', function() {
-        return j;
-    }), a(C.exports, 'CenteredColumn', function() {
-        return k;
-    }), a(C.exports, 'VerticalCentered', function() {
-        return l;
+    })(m || (m = (_K => _K)``));
+}), a.register('0HHAH', function(b, c) {
+    _K(b.exports, 'Centered', function() {
+        return _j;
+    }), _K(b.exports, 'VerticallyCentered', function() {
+        return _k;
+    }), _K(b.exports, 'CenteredColumn', function() {
+        return _l;
+    }), _K(b.exports, 'VerticalCentered', function() {
+        return _m;
     });
-    var c = b('h99Nu');
-    let d, e, f, g, h = a => a;
-    const i = c.default.div.attrs({
+    var d = a('Axq+p');
+    let e, f, g, h, i = _K => _K;
+    const _j = d.default.div.attrs({
             className: 'flex-center'
-        })(d || (d = h``)),
-        j = c.default.div.attrs({
+        })(e || (e = i``)),
+        _k = d.default.div.attrs({
             className: 'flex vc'
-        })(e || (e = h``)),
-        k = (0, c.default)(i).attrs({
+        })(f || (f = i``)),
+        _l = (0, d.default)(_j).attrs({
             className: 'flex-column'
-        })(f || (f = h``)),
-        l = c.default.div.attrs({
+        })(g || (g = i``)),
+        _m = d.default.div.attrs({
             className: 'flex vc'
-        })(g || (g = h``));
-}), b.register('VukDU', function(C, D) {
-    a(C.exports, 'default', function() {
-        return A;
+        })(h || (h = i``));
+}), a.register('4VQGS', function(b, c) {
+    _K(b.exports, 'default', function() {
+        return _B;
     });
-    var c = b('8kSQZ'),
-        d = b('lmfrI'),
-        e = b('JJQ0+'),
-        f = b('uPP4W'),
-        g = b('h99Nu'),
-        h = b('0x1Q5'),
-        i = b('D0n26'),
-        j = b('QHCfu'),
-        k = b('PjB0f'),
-        l = b('Dog9Y'),
-        m = b('gSUVO'),
-        n = b('YimJ0'),
-        o = b('Yn39D');
-    let p, q, r, s, t, u, v, w, x, y, z = a => a;
-    var A = a => {
-        const [B, C] = f.useState(0), D = f.useRef(null), E = j.TutorialData.steps[B].text, F = j.TutorialData.steps[B].cb, G = F === j.OnNextClicked, H = (a, B) => {
-            const I = j.TutorialData.steps[B];
-            I && I.cb !== j.OnNextClicked && (I.completed || I.cb(a) && (I.cb = j.OnNextClicked));
+    var d = a('0hzx+'),
+        e = a('sHRDd'),
+        f = a('2Xvuf'),
+        g = a('LEQ5w'),
+        h = a('Axq+p'),
+        i = a('8y7vq'),
+        j = a('L1523'),
+        k = a('y1th1'),
+        l = a('PMl60'),
+        m = a('led8j'),
+        n = a('b5kvC'),
+        o = a('0HHAH'),
+        p = a('7IstX');
+    let q, r, s, t, u, v, w, x, y, z, A = _K => _K;
+    var _B = _K => {
+        const [C, D] = g.useState(0), E = g.useRef(null), F = k.TutorialData.steps[C].text, G = k.TutorialData.steps[C].cb, H = G === k.OnNextClicked, I = (_K, C) => {
+            const J = k.TutorialData.steps[C];
+            J && J.cb !== k.OnNextClicked && (J.completed || J.cb(_K) && (J.cb = k.OnNextClicked));
         };
-        (0, i.SetTutorialEventListener)(a => {
-            for (let I = 1; I < 6; I++)
-                H(a, B + I);
-            F(a) && B < j.TutorialData.steps.length - 1 && (() => {
-                for (let J = 1; J < j.TutorialData.steps.length; J++) {
-                    const K = j.TutorialData.steps[B + J];
-                    if (K && !K.completed) {
-                        I(B + J);
+        (0, j.SetTutorialEventListener)(_K => {
+            for (let J = 1; J < 6; J++)
+                I(_K, C + J);
+            G(_K) && C < k.TutorialData.steps.length - 1 && (() => {
+                for (let _K = 1; _K < k.TutorialData.steps.length; _K++) {
+                    const L = k.TutorialData.steps[C + _K];
+                    if (L && !L.completed) {
+                        J(C + _K);
                         break;
                     }
                 }
             })();
         });
-        const [I, J] = f.useState(!0);
-        f.useEffect(() => {
-            J(!0);
-            const K = setTimeout(() => {
-                J(!1);
+        const [J, K] = g.useState(!0);
+        g.useEffect(() => {
+            K(!0);
+            const L = setTimeout(() => {
+                K(!1);
             }, 1500);
             return () => {
-                clearTimeout(K);
+                clearTimeout(L);
             };
-        }, [B]), f.useEffect(() => {
-            const K = setInterval(() => {
-                var L;
-                null === (L = D.current) || void 0 === L || L.focus();
+        }, [C]), g.useEffect(() => {
+            const L = setInterval(() => {
+                var M;
+                null === (M = E.current) || void 0 === M || M.focus();
             }, 100);
             return () => {
                 clearInterval(L);
             };
         }, []);
-        const K = `/host?id=${ a.intentId }`,
-            L = B === j.TutorialData.steps.length - 1,
-            M = L ? 'Claim Reward' : 'Next';
-        return (0, c.jsxs)(B, {
+        const L = `/host?id=${ _g.intentId }`,
+            M = C === k.TutorialData.steps.length - 1,
+            N = M ? 'Claim Reward' : 'Next';
+        return (0, d.jsxs)(_C, {
             children: [
-                (0, c.jsx)(k.Title, {
+                (0, d.jsx)(l.Title, {
                     title: 'Gimkit Creative Tutorial',
                     override: !0
                 }),
-                (0, c.jsxs)(C, {
+                (0, d.jsxs)(_D, {
                     children: [
-                        (0, c.jsx)(D, {
-                            children: (0, c.jsx)('iframe', {
-                                ref: D,
+                        (0, d.jsx)(_E, {
+                            children: (0, d.jsx)('iframe', {
+                                ref: E,
                                 style: {
                                     border: 'none'
                                 },
                                 className: 'maxAll',
                                 width: '100%',
                                 height: '100%',
-                                src: K,
+                                src: L,
                                 title: 'Creative Tutorial',
                                 allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                             })
                         }),
-                        (0, c.jsx)(E, {
-                            children: (0, c.jsx)(o.default, {
-                                children: (0, c.jsxs)(F, {
+                        (0, d.jsx)(_F, {
+                            children: (0, d.jsx)(p.default, {
+                                children: (0, d.jsxs)(_G, {
                                     children: [
-                                        (0, c.jsx)(G, {
-                                            src: (0, e.default)('characters/spine/preview/construction.png')
+                                        (0, d.jsx)(_H, {
+                                            src: (0, f.default)('characters/spine/preview/construction.png')
                                         }),
-                                        (0, c.jsx)(H, {
-                                            children: (0, c.jsx)(h.default, {
-                                                percent: L ? 99.99 : B / j.TutorialData.steps.length * 100,
+                                        (0, d.jsx)(_I, {
+                                            children: (0, d.jsx)(i.default, {
+                                                percent: M ? 99.99 : C / k.TutorialData.steps.length * 100,
                                                 status: 'active',
                                                 style: {
                                                     width: '80%',
@@ -187,23 +187,23 @@ b.register('jhMXd', function(p, q) {
                                                 showInfo: !1
                                             })
                                         }),
-                                        (0, c.jsx)(I, {
-                                            children: (0, c.jsx)(J, {
-                                                children: E
+                                        (0, d.jsx)(_J, {
+                                            children: (0, d.jsx)(_K, {
+                                                children: F
                                             })
                                         }),
-                                        !G && !L || I ? (0, c.jsx)(K, {}) : (0, c.jsx)(K, {
+                                        !H && !M || J ? (0, d.jsx)(_L, {}) : (0, d.jsx)(_L, {
                                             className: 'animated fadeIn',
-                                            children: (0, c.jsx)(l.default, {
+                                            children: (0, d.jsx)(m.default, {
                                                 type: 'success',
-                                                customFontWeight: m.FontWeights.Bold,
+                                                customFontWeight: n.FontWeights.Bold,
                                                 onClick: () => {
-                                                    L ? a.onTutorialComplete() : (0, i.EmitTutorialEvent)({
-                                                        event: i.TutorialEventName.NEXT
+                                                    M ? _g.onTutorialComplete() : (0, j.EmitTutorialEvent)({
+                                                        event: j.TutorialEventName.NEXT
                                                     });
                                                 },
-                                                ariaLabel: M,
-                                                children: M
+                                                ariaLabel: N,
+                                                children: N
                                             })
                                         })
                                     ]
@@ -215,40 +215,40 @@ b.register('jhMXd', function(p, q) {
             ]
         });
     };
-    const B = g.default.div.attrs({
+    const _C = h.default.div.attrs({
             className: 'flex hc'
-        })(p || (p = z`
+        })(q || (q = A`
   flex: 1;
   background: ${ 0 };
-`), d.default.BackgroundPurple),
-        C = (0, g.default)(n.CenteredColumn).attrs({
+`), e.default.BackgroundPurple),
+        _D = (0, h.default)(o.CenteredColumn).attrs({
             className: 'maxAll'
-        })(q || (q = z`
+        })(r || (r = A`
   flex-direction: column;
 `)),
-        D = g.default.div(r || (r = z`
+        _E = h.default.div(s || (s = A`
   flex: 1;
   width: 100%;
 `)),
-        E = g.default.div.attrs({
+        _F = h.default.div.attrs({
             className: 'maxWidth'
-        })(s || (s = z`
+        })(t || (t = A`
   min-height: ${ 0 }px;
   box-shadow: 0px 2px 14px 0px black;
   background: #182673;
   color: ${ 0 };
   overflow: hidden;
   flex-shrink: 0;
-`), 125, d.default.White),
-        F = g.default.div.attrs({
+`), 125, e.default.White),
+        _G = h.default.div.attrs({
             className: 'maxAll flex vc between'
-        })(t || (t = z`
+        })(u || (u = A`
   position: relative;
   min-height: ${ 0 }px;
   padding: 25px 30px;
   padding-top: 40px;
 `), 125),
-        G = g.default.img(u || (u = z`
+        _H = h.default.img(v || (v = A`
   height: 153px;
   position: absolute;
   bottom: -32px;
@@ -256,90 +256,90 @@ b.register('jhMXd', function(p, q) {
   opacity: 0.9;
   transform: rotate(356deg);
 `)),
-        H = g.default.div.attrs({
+        _I = h.default.div.attrs({
             className: 'maxWidth flex-center'
-        })(v || (v = z`
+        })(w || (w = A`
   position: absolute;
   top: 0px;
   left: 0px;
   height: 20px;
 `)),
-        I = g.default.div(w || (w = z`
+        _J = h.default.div(x || (x = A`
   font-size: 19px;
   margin-left: 105px;
 `)),
-        J = g.default.div(x || (x = z`
+        _K = h.default.div(y || (y = A`
   text-align: left;
   margin: auto auto auto 0;
 `)),
-        K = g.default.div.attrs({
+        _L = h.default.div.attrs({
             className: 'flex hc vc maxHeight'
-        })(y || (y = z`
+        })(z || (z = A`
   margin-left: 35px;
   flex-shrink: 0;
   min-width: 85px;
 `));
-}), b.register('JJQ0+', function(b, j) {
-    let c;
-    a(b.exports, 'default', function() {
-        return d;
+}), a.register('2Xvuf', function(b, c) {
+    let d;
+    _g(b.exports, 'default', function() {
+        return _e;
     });
-    var d = a => {
-        const e = (() => {
-            var f;
-            if (c)
-                return c;
-            const g = null === (f = document.querySelector('meta[property="cdn-map-assets-url"]')) || void 0 === f ? void 0 : f.getAttribute('content');
-            return void 0 !== g && '$CDN_MAP_ASSETS_URL' !== g ? (c = g, c) : '';
+    var _e = _g => {
+        const f = (() => {
+            var _g;
+            if (d)
+                return d;
+            const h = null === (_g = document.querySelector('meta[property="cdn-map-assets-url"]')) || void 0 === _g ? void 0 : _g.getAttribute('content');
+            return void 0 !== h && '$CDN_MAP_ASSETS_URL' !== h ? (d = h, d) : '';
         })();
-        return a.startsWith('/assets/map') ? `${ e }${ a }` : `${ e }/assets/map/${ a }`;
+        return _v.startsWith('/assets/map') ? `${ f }${ _v }` : `${ f }/assets/map/${ _v }`;
     };
-}), b.register('D0n26', function(j, c) {
-    a(j.exports, 'TutorialEventName', function() {
-        return e;
-    }), a(j.exports, 'EmitTutorialEvent', function() {
-        return h;
-    }), a(j.exports, 'SetTutorialEventListener', function() {
-        return i;
+}), a.register('L1523', function(b, c) {
+    _v(b.exports, 'TutorialEventName', function() {
+        return _f;
+    }), _v(b.exports, 'EmitTutorialEvent', function() {
+        return _i;
+    }), _v(b.exports, 'SetTutorialEventListener', function() {
+        return _j;
     });
-    var c = b('SUzmj');
-    const d = 'tutorial_event';
-    let e;
-    var f;
-    let g;
-    (f = e || (e = {})).NEXT = 'next', f.OPEN_ADD_MENU = 'open_add_menu', f.OPEN_ADD_SUBMENU = 'open_add_submenu', f.SELECT_PROP_TO_ADD = 'select_prop_to_add', f.SELECT_TERRAIN_TO_ADD = 'select_terrain_to_add', f.SELECT_DEVICE_TO_ADD = 'select_device_to_add', f.START_COPY_DEVICE = 'start_copy_device', f.PLACE_DEVICE_DOWN = 'place_device_down', f.START_THE_GAME = 'start_the_game', f.ANSWER_A_QUESTION = 'answer_a_question', f.END_THE_GAME = 'end_the_game', f.END_THE_GAME_BY_DEVICE = 'end_the_game_by_device', f.RESTORE_THE_MAP = 'restore_the_map', f.OPEN_DEVICE_OPTIONS = 'open_device_options', f.CHANGE_DEVICE_OPTION = 'change_device_option', f.CLOSE_DEVICE_OPTIONS = 'close_device_options', f.START_ADDING_WIRE = 'start_adding_wire', f.START_WIRE_FROM_DEVICE = 'start_wire_from_device', f.END_WIRE_TO_DEVICE = 'end_wire_to_device', f.CONFIGURE_WIRE = 'configure_wire', f.GRANT_ITEM = 'grant_item', window.document.addEventListener(d, a => {
-        g && g(a.detail);
+    var d = a('Xc4Kz');
+    const e = 'tutorial_event';
+    let _f;
+    var g;
+    let h;
+    (g = _f || (_f = {})).NEXT = 'next', g.OPEN_ADD_MENU = 'open_add_menu', g.OPEN_ADD_SUBMENU = 'open_add_submenu', g.SELECT_PROP_TO_ADD = 'select_prop_to_add', g.SELECT_TERRAIN_TO_ADD = 'select_terrain_to_add', g.SELECT_DEVICE_TO_ADD = 'select_device_to_add', g.START_COPY_DEVICE = 'start_copy_device', g.PLACE_DEVICE_DOWN = 'place_device_down', g.START_THE_GAME = 'start_the_game', g.ANSWER_A_QUESTION = 'answer_a_question', g.END_THE_GAME = 'end_the_game', g.END_THE_GAME_BY_DEVICE = 'end_the_game_by_device', g.RESTORE_THE_MAP = 'restore_the_map', g.OPEN_DEVICE_OPTIONS = 'open_device_options', g.CHANGE_DEVICE_OPTION = 'change_device_option', g.CLOSE_DEVICE_OPTIONS = 'close_device_options', g.START_ADDING_WIRE = 'start_adding_wire', g.START_WIRE_FROM_DEVICE = 'start_wire_from_device', g.END_WIRE_TO_DEVICE = 'end_wire_to_device', g.CONFIGURE_WIRE = 'configure_wire', g.GRANT_ITEM = 'grant_item', window.document.addEventListener(e, _v => {
+        h && h(_v.detail);
     }, !1);
-    const h = a => {
-            if (!(0, c.IsTutorial)() && a.event !== e.NEXT)
+    const _i = _v => {
+            if (!(0, d.IsTutorial)() && _v.event !== _f.NEXT)
                 return;
-            const i = new CustomEvent(d, {
-                detail: a
+            const j = new CustomEvent(e, {
+                detail: _v
             });
-            window.top.document.dispatchEvent(i);
+            window.top.document.dispatchEvent(j);
         },
-        i = a => {
-            g = a;
+        _j = _v => {
+            h = _v;
         };
-}), b.register('SUzmj', function(j, c) {
-    a(j.exports, 'IsTutorial', function() {
-        return d;
+}), a.register('Xc4Kz', function(b, c) {
+    _v(b.exports, 'IsTutorial', function() {
+        return _e;
     });
-    var c = b('aSd8d');
-    const d = () => window._mapId === c.TutorialConsts.mapId;
-}), b.register('aSd8d', function(j, c) {
-    a(j.exports, 'TutorialConsts', function() {
-        return d;
+    var d = a('D6J6Y');
+    const _e = () => window._mapId === d.TutorialConsts.mapId;
+}), a.register('D6J6Y', function(b, c) {
+    _v(b.exports, 'TutorialConsts', function() {
+        return _e;
     });
-    var c = b('7X8h3');
-    const d = {
+    var d = a('EqyfB');
+    const _e = {
         mapId: 'tutorial0001',
         topDevices: [
-            c.default.characterSpawnPad,
-            c.default.gimkitLiveQuestion,
-            c.default.itemGranter,
-            c.default.sentry,
-            c.default.endGame
+            d.default.characterSpawnPad,
+            d.default.gimkitLiveQuestion,
+            d.default.itemGranter,
+            d.default.sentry,
+            d.default.endGame
         ],
         topProps: [
             'bare-tree-1',
@@ -357,149 +357,149 @@ b.register('jhMXd', function(p, q) {
             'Snowy Grass'
         ]
     };
-}), b.register('7X8h3', function(b, j) {
-    let c;
-    var d;
-    a(b.exports, 'default', function() {
-        return e;
-    }), (d = c || (c = {})).luckyBlock = 'luckyBlock', d.chest = 'chest', d.jumpGranter = 'jumpGranter', d.teamColorTilesManager = 'teamColorTilesManager', d.changingBooth = 'changingBooth', d.popupListItem = 'popupListItem', d.gadgetModifier = 'gadgetModifier', d.zombieSpawnZone = 'zombieSpawnZone', d.zombieWaveDesigner = 'zombieWaveDesigner', d.zombieDesigner = 'zombieDesigner', d.zombieInvasion = 'zombieInvasion', d.codeUI = 'codeUI', d.damager = 'damager', d.cameraPoint = 'cameraPoint', d.blockingZone = 'blockingZone', d.character = 'character', d.classDesigner = 'classDesigner', d.backgroundTilesZone = 'backgroundTilesZone', d.proceduralTerrainZoneZoneInstruction = 'proceduralTerrainZoneZoneInstruction', d.proceduralTerrainZone = 'proceduralTerrainZone', d.dialogueAction = 'dialogueAction', d.dialogue = 'dialogue', d.voiceLine = 'voiceLine', d.scorebar = 'scorebar', d.outline = 'outline', d.ball = 'ball', d.damageBoost = 'damageBoost', d.checkpoint = 'checkpoint', d.playerPositionDetector = 'playerPositionDetector', d.itemImage = 'itemImage', d.mood = 'mood', d.playerAppearanceModifier = 'playerAppearanceModifier', d.waypoint = 'waypoint', d.flag = 'flag', d.checker = 'checker', d.trigger = 'trigger', d.counter = 'counter', d.teleporter = 'teleporter', d.itemGranter = 'itemGranter', d.characterSpawnPad = 'characterSpawnPad', d.textBillboard = 'textBillboard', d.prop = 'prop', d.barrier = 'barrier', d.button = 'button', d.droppedItem = 'droppedItem', d.property = 'property', d.mapOptions = 'mapOptions', d.teamSettings = 'teamSettings', d.imageBillboard = 'imageBillboard', d.gimkitLiveQuestion = 'gimkitLiveQuestion', d.ballZone = 'ballZone', d.zone = 'zone', d.captureFlagZone = 'captureFlagZone', d.textExplainer = 'textExplainer', d.relay = 'relay', d.cameraSize = 'cameraSize', d.music = 'music', d.speed = 'speed', d.soundEffect = 'soundEffect', d.inventoryItemManager = 'inventoryItemManager', d.guiDevice = 'guiDevice', d.lifecycle = 'lifecycle', d.endGame = 'endGame', d.countdown = 'countdown', d.shadow = 'shadow', d.characterProximity = 'characterProximity', d.repeater = 'repeater', d.vendingMachine = 'vendingMachine', d.teamSwitcher = 'teamSwitcher', d.notification = 'notification', d.endOfGameWidget = 'endOfGameWidget', d.respawn = 'respawn', d.xp = 'xp', d.assignmentCheckpoint = 'assignmentCheckpoint', d.assignmentContext = 'assignmentContext', d.placedSticker = 'placedSticker', d.wireRepeater = 'wireRepeater', d.movementMeter = 'movementMeter', d.craftingTable = 'craftingTable', d.craftingRecipe = 'craftingRecipe', d.startingInventory = 'startingInventory', d.healthGranter = 'healthGranter', d.sentry = 'sentry', d.knockoutManager = 'knockoutManager', d.laserBeam = 'laserBeam', d.laserBeamManager = 'laserBeamManager', d.cosmosModifier = 'cosmosModifier', d.passwordLock = 'passwordLock', d.itemSpawner = 'itemSpawner', d.tagZone = 'tagZone';
-    var e = f;
-}), b.register('QHCfu', function(j, k) {
-    a(j.exports, 'OnNextClicked', function() {
-        return k;
-    }), a(j.exports, 'TutorialData', function() {
-        return n;
+}), a.register('EqyfB', function(b, c) {
+    let d;
+    var e;
+    _v(b.exports, 'default', function() {
+        return _f;
+    }), (e = d || (d = {})).luckyBlock = 'luckyBlock', e.chest = 'chest', e.jumpGranter = 'jumpGranter', e.teamColorTilesManager = 'teamColorTilesManager', e.changingBooth = 'changingBooth', e.popupListItem = 'popupListItem', e.gadgetModifier = 'gadgetModifier', e.zombieSpawnZone = 'zombieSpawnZone', e.zombieWaveDesigner = 'zombieWaveDesigner', e.zombieDesigner = 'zombieDesigner', e.zombieInvasion = 'zombieInvasion', e.codeUI = 'codeUI', e.damager = 'damager', e.cameraPoint = 'cameraPoint', e.blockingZone = 'blockingZone', e.character = 'character', e.classDesigner = 'classDesigner', e.backgroundTilesZone = 'backgroundTilesZone', e.proceduralTerrainZoneZoneInstruction = 'proceduralTerrainZoneZoneInstruction', e.proceduralTerrainZone = 'proceduralTerrainZone', e.dialogueAction = 'dialogueAction', e.dialogue = 'dialogue', e.voiceLine = 'voiceLine', e.scorebar = 'scorebar', e.outline = 'outline', e.ball = 'ball', e.damageBoost = 'damageBoost', e.checkpoint = 'checkpoint', e.playerPositionDetector = 'playerPositionDetector', e.itemImage = 'itemImage', e.mood = 'mood', e.playerAppearanceModifier = 'playerAppearanceModifier', e.waypoint = 'waypoint', e.flag = 'flag', e.checker = 'checker', e.trigger = 'trigger', e.counter = 'counter', e.teleporter = 'teleporter', e.itemGranter = 'itemGranter', e.characterSpawnPad = 'characterSpawnPad', e.textBillboard = 'textBillboard', e.prop = 'prop', e.barrier = 'barrier', e.button = 'button', e.droppedItem = 'droppedItem', e.property = 'property', e.mapOptions = 'mapOptions', e.teamSettings = 'teamSettings', e.imageBillboard = 'imageBillboard', e.gimkitLiveQuestion = 'gimkitLiveQuestion', e.ballZone = 'ballZone', e.zone = 'zone', e.captureFlagZone = 'captureFlagZone', e.textExplainer = 'textExplainer', e.relay = 'relay', e.cameraSize = 'cameraSize', e.music = 'music', e.speed = 'speed', e.soundEffect = 'soundEffect', e.inventoryItemManager = 'inventoryItemManager', e.guiDevice = 'guiDevice', e.lifecycle = 'lifecycle', e.endGame = 'endGame', e.countdown = 'countdown', e.shadow = 'shadow', e.characterProximity = 'characterProximity', e.repeater = 'repeater', e.vendingMachine = 'vendingMachine', e.teamSwitcher = 'teamSwitcher', e.notification = 'notification', e.endOfGameWidget = 'endOfGameWidget', e.respawn = 'respawn', e.xp = 'xp', e.assignmentCheckpoint = 'assignmentCheckpoint', e.assignmentContext = 'assignmentContext', e.placedSticker = 'placedSticker', e.wireRepeater = 'wireRepeater', e.movementMeter = 'movementMeter', e.craftingTable = 'craftingTable', e.craftingRecipe = 'craftingRecipe', e.startingInventory = 'startingInventory', e.healthGranter = 'healthGranter', e.sentry = 'sentry', e.knockoutManager = 'knockoutManager', e.laserBeam = 'laserBeam', e.laserBeamManager = 'laserBeamManager', e.cosmosModifier = 'cosmosModifier', e.passwordLock = 'passwordLock', e.itemSpawner = 'itemSpawner', e.tagZone = 'tagZone';
+    var _f = d;
+}), a.register('y1th1', function(b, c) {
+    _v(b.exports, 'OnNextClicked', function() {
+        return _l;
+    }), _v(b.exports, 'TutorialData', function() {
+        return _o;
     });
-    var c = b('8kSQZ'),
-        d = b('7X8h3'),
-        e = b('D0n26'),
-        f = b('lV1Oj'),
-        g = b('iMnBi'),
-        h = b('lmfrI'),
-        i = b('Dog9Y'),
-        j = b('PjB0f');
-    const k = a => a.event === e.TutorialEventName.NEXT,
-        l = a => (0, c.jsx)('span', {
+    var d = a('0hzx+'),
+        e = a('EqyfB'),
+        f = a('L1523'),
+        g = a('ARJGy'),
+        h = a('9R7cy'),
+        i = a('sHRDd'),
+        j = a('led8j'),
+        k = a('PMl60');
+    const _l = _v => _v.event === f.TutorialEventName.NEXT,
+        m = _v => (0, d.jsx)('span', {
             style: {
                 fontWeight: 'bold',
                 color: '#ffff94'
             },
-            children: a.children
+            children: _v.children
         }),
-        m = () => (0, c.jsx)(c.Fragment, {
-            children: (0, c.jsx)('br', {})
+        n = () => (0, d.jsx)(d.Fragment, {
+            children: (0, d.jsx)('br', {})
         }),
-        n = {
+        _o = {
             steps: [{
-                    text: (0, c.jsxs)('div', {
+                    text: (0, d.jsxs)('div', {
                         children: [
                             'Hey there! Welcome to ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Gimkit Creative'
                             }),
                             ', a tool which you can use to build your own maps, game modes, and more!'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)('div', {
+                    text: (0, d.jsxs)('div', {
                         children: [
                             'I\u2019ll be here to show you the basics of Gimkit Creative.',
-                            (0, c.jsx)('br', {}),
+                            (0, d.jsx)('br', {}),
                             'Once you get the basics down, you\'ll be able to build all sorts of maps & games!'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
                     text: 'Let\'s chat about the game you\'re going to build today!',
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'In this game, there will be an ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'enemy you have to knockout'
                             }),
                             ' ',
                             'to win the game!'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'However, you\'re going to start with ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'nothing'
                             }),
                             ' in your inventory! ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'You\'ll have to answer a question correctly to earn a Snowball Launcher.'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Once you have that Snowball Launcher, you can use it to',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'knockout the enemy!'
                             })
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'To recap, in your game, you will...',
-                            (0, c.jsxs)('ol', {
+                            (0, d.jsxs)('ol', {
                                 style: {
                                     marginTop: 10
                                 },
                                 children: [
-                                    (0, c.jsx)('li', {
+                                    (0, d.jsx)('li', {
                                         children: 'Answer a question correctly'
                                     }),
-                                    (0, c.jsx)('li', {
+                                    (0, d.jsx)('li', {
                                         children: 'Earn a Snowball Launcher'
                                     }),
-                                    (0, c.jsx)('li', {
+                                    (0, d.jsx)('li', {
                                         children: 'Knockout the enemy with the Snowball Launcher'
                                     })
                                 ]
                             })
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
                     text: 'You ready? Let\u2019s get building!',
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)('div', {
+                    text: (0, d.jsxs)('div', {
                         children: [
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'To add anything to your map'
                             }),
                             ', click the',
                             ' ',
-                            (0, c.jsx)('div', {
+                            (0, d.jsx)('div', {
                                 style: {
                                     display: 'inline-block',
                                     margin: 10
                                 },
-                                children: (0, c.jsx)(f.default, {
+                                children: (0, d.jsx)(g.default, {
                                     tooltip: '',
                                     onClick: () => !1,
-                                    children: (0, c.jsx)(g.default, {
+                                    children: (0, d.jsx)(h.default, {
                                         name: 'fas fa-plus'
                                     })
                                 })
@@ -508,107 +508,107 @@ b.register('jhMXd', function(p, q) {
                             'button on the top right! Go ahead and click it now!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.OPEN_ADD_MENU
+                    cb: _v => _v.event === f.TutorialEventName.OPEN_ADD_MENU
                 },
                 {
-                    text: (0, c.jsxs)('div', {
+                    text: (0, d.jsxs)('div', {
                         children: [
                             'Nice! This is the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Add Menu'
                             }),
                             ', which is where you\u2019ll go to add things to your map. ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'Terrain, Props, Devices, and Wires are all things you can add to your map. Let\u2019s start by selecting ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Terrain'
                             }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.OPEN_ADD_SUBMENU && 'terrain' === a.menu
+                    cb: _v => _v.event === f.TutorialEventName.OPEN_ADD_SUBMENU && 'terrain' === _v.menu
                 },
                 {
-                    text: (0, c.jsxs)('div', {
+                    text: (0, d.jsxs)('div', {
                         children: [
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Terrain are the floors and walls of your map.'
                             }),
                             ' As you can see, there are many different options to choose from! ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' Since this game will have the player using a Snowball Launcher, let\u2019s add some snow! Select the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Snow'
                             }),
                             ' terrain.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.SELECT_TERRAIN_TO_ADD && 'Snow' === a.terrainId
+                    cb: _v => _v.event === f.TutorialEventName.SELECT_TERRAIN_TO_ADD && 'Snow' === _v.terrainId
                 },
                 {
-                    text: (0, c.jsxs)('div', {
+                    text: (0, d.jsxs)('div', {
                         children: [
                             'Awesome! You have the Snow Terrain selected, and you can start',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'clicking to place it anywhere on the map!'
                             }),
                             ' ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' Go ahead and place a bunch of snow on the map and',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'click the Next Button when you\u2019re done!'
                             })
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Looking good! But\u2026our map is looking a little empty. That is where',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'props'
                             }),
                             ' come in!'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Props are objects you can place on your map for decoration.'
                             }),
                             ' ',
                             'Things like trees, tables, and chairs.',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Let\u2019s add some trees to liven things up!'
                             }),
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'If you haven\u2019t yet, close out of the terrain adding screen by clicking the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'X'
                             }),
                             ' button.',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'From there, open up the add menu again by clicking',
                             ' ',
-                            (0, c.jsx)('div', {
+                            (0, d.jsx)('div', {
                                 style: {
                                     display: 'inline-block',
                                     margin: 10
                                 },
-                                children: (0, c.jsx)(f.default, {
+                                children: (0, d.jsx)(g.default, {
                                     tooltip: '',
                                     onClick: () => !1,
-                                    children: (0, c.jsx)(g.default, {
+                                    children: (0, d.jsx)(h.default, {
                                         name: 'fas fa-plus'
                                     })
                                 })
@@ -617,50 +617,50 @@ b.register('jhMXd', function(p, q) {
                             'on the top right!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.OPEN_ADD_MENU
+                    cb: _v => _v.event === f.TutorialEventName.OPEN_ADD_MENU
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'And now, select ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Props'
                             }),
                             '!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.OPEN_ADD_SUBMENU && 'props' === a.menu
+                    cb: _v => _v.event === f.TutorialEventName.OPEN_ADD_SUBMENU && 'props' === _v.menu
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Here you can find all the props available to use! ',
-                            (0, c.jsx)(m, {}),
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(n, {}),
+                            (0, d.jsx)(m, {
                                 children: 'Select one of the trees'
                             }),
                             ' to begin adding it to the map!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.SELECT_PROP_TO_ADD && a.propId.toLocaleLowerCase().includes('tree')
+                    cb: _v => _v.event === f.TutorialEventName.SELECT_PROP_TO_ADD && _v.propId.toLocaleLowerCase().includes('tree')
                 },
                 {
                     text: 'Just click to place the tree down on your map!',
-                    cb: a => a.event === e.TutorialEventName.PLACE_DEVICE_DOWN && a.device.deviceOption.id === d.default.prop && a.device.options.propId.toLocaleLowerCase().includes('tree')
+                    cb: _v => _v.event === f.TutorialEventName.PLACE_DEVICE_DOWN && _v.device.deviceOption.id === e.default.prop && _v.device.options.propId.toLocaleLowerCase().includes('tree')
                 },
                 {
-                    text: (0, c.jsxs)('div', {
+                    text: (0, d.jsxs)('div', {
                         children: [
                             'Nice! But one tree isn\u2019t enough. Let\u2019s add another one. ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'To make things quicker, you can hover your mouse over the tree and then press',
                             ' ',
-                            (0, c.jsx)('span', {
+                            (0, d.jsx)('span', {
                                 style: {
-                                    color: h.default.Black,
-                                    background: h.default.White,
+                                    color: i.default.Black,
+                                    background: i.default.White,
                                     padding: '4px 8px',
                                     borderRadius: 4,
                                     margin: 4
@@ -671,76 +671,76 @@ b.register('jhMXd', function(p, q) {
                             'on your keyboard (C for copy). Try that now!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.START_COPY_DEVICE && a.device.deviceOption.id === d.default.prop && a.device.options.propId.toLocaleLowerCase().includes('tree')
+                    cb: _v => _v.event === f.TutorialEventName.START_COPY_DEVICE && _v.device.deviceOption.id === e.default.prop && _v.device.options.propId.toLocaleLowerCase().includes('tree')
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Perfect! Now go place as many trees on your map as you would like, and then click the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Next Button'
                             }),
                             ' when you\u2019re ready!'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Awesome work. Terrain and props are how you get your map to look exactly how you want it to! ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'But, how do you actually make this map\u2026a game? That is where',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Devices'
                             }),
                             ' come in!'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Devices are how game mechanics are built.'
                             }),
                             ' Each device is responsible for a small part of your gameplay.',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'For example, the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Spawn Pad device'
                             }),
                             ' is responsible for setting the location of players when your game begins. ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'The ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Teleporter device'
                             }),
                             ' is responsible for teleporting a player from one place to another!'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Let\u2019s start off by placing our first device. Click the',
                             ' ',
-                            (0, c.jsx)('div', {
+                            (0, d.jsx)('div', {
                                 style: {
                                     display: 'inline-block',
                                     margin: 10
                                 },
-                                children: (0, c.jsx)(f.default, {
+                                children: (0, d.jsx)(g.default, {
                                     tooltip: '',
                                     onClick: () => !1,
-                                    children: (0, c.jsx)(g.default, {
+                                    children: (0, d.jsx)(h.default, {
                                         name: 'fas fa-plus'
                                     })
                                 })
@@ -748,93 +748,93 @@ b.register('jhMXd', function(p, q) {
                             ' ',
                             'button on the top right to open the add menu, and then select',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Devices'
                             }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.OPEN_ADD_SUBMENU && 'devices' === a.menu
+                    cb: _v => _v.event === f.TutorialEventName.OPEN_ADD_SUBMENU && 'devices' === _v.menu
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Here are all the devices you can place! It might look like a lot, but each device typically does just one small task. ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'Select the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Spawn Pad'
                             }),
                             ' device.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.SELECT_DEVICE_TO_ADD && a.deviceTypeId === d.default.characterSpawnPad
+                    cb: _v => _v.event === f.TutorialEventName.SELECT_DEVICE_TO_ADD && _v.deviceTypeId === e.default.characterSpawnPad
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Click to place the Spawn Pad device anywhere'
                             }),
                             '. That is where you will spawn once the game begins!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.PLACE_DEVICE_DOWN && a.device.deviceOption.id === d.default.characterSpawnPad
+                    cb: _v => _v.event === f.TutorialEventName.PLACE_DEVICE_DOWN && _v.device.deviceOption.id === e.default.characterSpawnPad
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Perfect. Now\u2026what should we add in next? How about a way for players to answer multiple-choice questions, like in normal Gimkit modes?',
-                            (0, c.jsx)(m, {}),
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
+                            (0, d.jsx)(n, {}),
                             ' Open the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Add Menu'
                             }),
                             ', select ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Devices'
                             }),
                             ', and then select the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Questioner'
                             }),
                             ' device.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.SELECT_DEVICE_TO_ADD && a.deviceTypeId === d.default.gimkitLiveQuestion
+                    cb: _v => _v.event === f.TutorialEventName.SELECT_DEVICE_TO_ADD && _v.deviceTypeId === e.default.gimkitLiveQuestion
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'With this device,',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'players will be able to walk up to it and start answering multiple choice questions!'
                             }),
                             ' ',
                             'Place it next to the Spawn Pad so that players won\u2019t have to walk far to start answering.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.PLACE_DEVICE_DOWN && a.device.deviceOption.id === d.default.gimkitLiveQuestion
+                    cb: _v => _v.event === f.TutorialEventName.PLACE_DEVICE_DOWN && _v.device.deviceOption.id === e.default.gimkitLiveQuestion
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Nice work. At this point, you\u2019ve added a lot. Let\'s test your game to make sure everything works properly. ',
-                            (0, c.jsx)(m, {}),
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
+                            (0, d.jsx)(n, {}),
                             'You\u2019re currently in editing mode, but you can quickly jump into a game by clicking the',
                             ' ',
-                            (0, c.jsx)('div', {
+                            (0, d.jsx)('div', {
                                 style: {
                                     display: 'inline-block',
                                     margin: 10
                                 },
-                                children: (0, c.jsx)(f.default, {
+                                children: (0, d.jsx)(g.default, {
                                     tooltip: '',
                                     onClick: () => !1,
-                                    children: (0, c.jsx)(g.default, {
+                                    children: (0, d.jsx)(h.default, {
                                         name: 'fas fa-play'
                                     })
                                 })
@@ -842,45 +842,45 @@ b.register('jhMXd', function(p, q) {
                             ' ',
                             'button on the bottom right.',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Click that button and start the game!'
                             })
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.START_THE_GAME
+                    cb: _v => _v.event === f.TutorialEventName.START_THE_GAME
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Now you\u2019re in-game! This is what players will experience when they play your map! ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'Walk over to the Questioner Device you placed and',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'answer a question!'
                             })
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.ANSWER_A_QUESTION
+                    cb: _v => _v.event === f.TutorialEventName.ANSWER_A_QUESTION
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Woohoo! Everything works! ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'Let\u2019s go back to editing and finishing up our game. Close out of this screen and end the game by clicking',
                             ' ',
-                            (0, c.jsx)('div', {
+                            (0, d.jsx)('div', {
                                 style: {
                                     display: 'inline-block',
                                     margin: 10
                                 },
-                                children: (0, c.jsx)(i.default, {
+                                children: (0, d.jsx)(j.default, {
                                     type: 'danger',
                                     onClick: () => !1,
                                     customHorizontalPadding: 18,
                                     ariaLabel: 'Stop',
-                                    children: (0, c.jsx)('i', {
+                                    children: (0, d.jsx)('i', {
                                         className: 'far fa-stop-circle'
                                     })
                                 })
@@ -889,250 +889,250 @@ b.register('jhMXd', function(p, q) {
                             'on the top right.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.END_THE_GAME
+                    cb: _v => _v.event === f.TutorialEventName.END_THE_GAME
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'And now you can head back into editing mode by clicking',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Restore Map'
                             }),
                             ' on the bottom right.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.RESTORE_THE_MAP
+                    cb: _v => _v.event === f.TutorialEventName.RESTORE_THE_MAP
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Let\u2019s think. What do we need to add next? ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'Well, we\u2019re going to want to have a ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Snowball Launcher.'
                             }),
                             ' ',
                             'This way you can fight back against the enemy (which you\u2019ll add later).'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'To do this, you\u2019ll use the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Item Granter device.'
                             }),
                             ' This device allows you to grant players items in their inventory. ',
-                            (0, c.jsx)(m, {}),
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
+                            (0, d.jsx)(n, {}),
                             'Go add an Item Granter device to the map, and place it to the right of your Questioner!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.PLACE_DEVICE_DOWN && a.device.deviceOption.id === d.default.itemGranter
+                    cb: _v => _v.event === f.TutorialEventName.PLACE_DEVICE_DOWN && _v.device.deviceOption.id === e.default.itemGranter
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Right now, the Item Granter doesn\u2019t know which item you want to grant, you have to edit it! ',
-                            (0, c.jsx)(m, {}),
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(n, {}),
+                            (0, d.jsx)(m, {
                                 children: 'You can edit any device by clicking on it.'
                             }),
                             ' Go click on the Item Granter you just placed.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.OPEN_DEVICE_OPTIONS && a.device.deviceOption.id === d.default.itemGranter
+                    cb: _v => _v.event === f.TutorialEventName.OPEN_DEVICE_OPTIONS && _v.device.deviceOption.id === e.default.itemGranter
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'You\u2019re now on the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'editing screen'
                             }),
                             ', where you can customize this device exactly how you want! ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'You\u2019ll see on the right side that there are all sorts of options you can change, including the item to grant, and how many of that item to grant.'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Go change the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Item To Grant'
                             }),
                             ' option and select any',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Snowball Launcher'
                             }),
                             '!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.CHANGE_DEVICE_OPTION && a.device.deviceOption.id === d.default.itemGranter && 'itemId' === a.option && a.value.toLocaleLowerCase().includes('snowball_launcher')
+                    cb: _v => _v.event === f.TutorialEventName.CHANGE_DEVICE_OPTION && _v.device.deviceOption.id === e.default.itemGranter && 'itemId' === _v.option && _v.value.toLocaleLowerCase().includes('snowball_launcher')
                 },
                 {
                     text: 'Fantastic! Now this Item Granter will give the player a Snowball Launcher! ',
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Close out of the editing screen by clicking the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'X'
                             }),
                             ' on the top right!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.CLOSE_DEVICE_OPTIONS
+                    cb: _v => _v.event === f.TutorialEventName.CLOSE_DEVICE_OPTIONS
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'The Item Granter is setup, but now we need to connect it to Questioner in some way. ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'We want to give the player a Snowball Launcher when they answer a question correctly.',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'How can we do that?'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'That is where the final piece of Gimkit Creative comes into play:',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'wires!'
                             })
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Wires connect devices together'
                             }),
                             ' \u2014 it\u2019s the way different devices can communicate with one another.'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Open the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Add Menu'
                             }),
                             ' and then select ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Wires'
                             }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.START_ADDING_WIRE
+                    cb: _v => _v.event === f.TutorialEventName.START_ADDING_WIRE
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Now select where the wire will come from.'
                             }),
                             ' Since we\u2019re waiting on a player to answer a question, we want the wire to come from the Questioner device. ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'Click the Questioner device to begin the wire!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.START_WIRE_FROM_DEVICE && a.device.deviceOption.id === d.default.gimkitLiveQuestion
+                    cb: _v => _v.event === f.TutorialEventName.START_WIRE_FROM_DEVICE && _v.device.deviceOption.id === e.default.gimkitLiveQuestion
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Now select where the wire will end.'
                             }),
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'We want the player to get the Snowball Launcher, and the Item Granter is responsible for doing that! So,',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'select the Item Granter'
                             }),
                             ' for the end of the wire.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.END_WIRE_TO_DEVICE && a.device.deviceOption.id === d.default.itemGranter
+                    cb: _v => _v.event === f.TutorialEventName.END_WIRE_TO_DEVICE && _v.device.deviceOption.id === e.default.itemGranter
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Nice work! ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'You connected the two devices together, but now you need to',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'tell it exactly what to do.'
                             })
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'We want to grant the Snowball Launcher when a player answers a question correctly. ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'On the left side, select ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Question answered correctly'
                             }),
                             '. On the right side, select ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Grant item'
                             }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.CONFIGURE_WIRE && 'questionCorrect' === a.wire.startConnection && 'grant' === a.wire.endConnection
+                    cb: _v => _v.event === f.TutorialEventName.CONFIGURE_WIRE && 'questionCorrect' === _v.wire.startConnection && 'grant' === _v.wire.endConnection
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Perfection! Just like that,',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'you\u2019ve connected these two devices together.'
                             }),
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'Let\u2019s make sure everything works! Close out of this screen by clicking the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'X'
                             }),
                             ' on the top right. Then, start the game by clicking',
                             ' ',
-                            (0, c.jsx)('div', {
+                            (0, d.jsx)('div', {
                                 style: {
                                     display: 'inline-block',
                                     margin: 10
                                 },
-                                children: (0, c.jsx)(f.default, {
+                                children: (0, d.jsx)(g.default, {
                                     tooltip: '',
                                     onClick: () => !1,
-                                    children: (0, c.jsx)(g.default, {
+                                    children: (0, d.jsx)(h.default, {
                                         name: 'fas fa-play'
                                     })
                                 })
@@ -1141,268 +1141,268 @@ b.register('jhMXd', function(p, q) {
                             'on the bottom right.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.START_THE_GAME
+                    cb: _v => _v.event === f.TutorialEventName.START_THE_GAME
                 },
                 {
-                    text: (0, c.jsx)(c.Fragment, {
+                    text: (0, d.jsx)(d.Fragment, {
                         children: 'Go answer a question correctly, and let\u2019s see if you get a Snowball Launcher!'
                     }),
-                    cb: a => a.event === e.TutorialEventName.GRANT_ITEM && a.itemId.toLocaleLowerCase().includes('snowball_launcher')
+                    cb: _v => _v.event === f.TutorialEventName.GRANT_ITEM && _v.itemId.toLocaleLowerCase().includes('snowball_launcher')
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'You got the Snowball Launcher, woohoo!'
                             }),
                             ' ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' In Gimkit Creative, this is exactly how you\u2019ll create your own game mechanics.',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'You\u2019ll place different devices together and connect them via wires!'
                             })
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'And just like that, you now know the four fundamentals of Gimkit Creative: ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'terrain, props, devices, and wires!'
                             })
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'End the game and then click ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Restore Map'
                             }),
                             ' to go back into Editing Mode.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.RESTORE_THE_MAP
+                    cb: _v => _v.event === f.TutorialEventName.RESTORE_THE_MAP
                 },
                 {
-                    text: (0, c.jsx)(c.Fragment, {
+                    text: (0, d.jsx)(d.Fragment, {
                         children: 'Let\u2018s finish your game by adding an enemy. You\u2019ll have to defeat this enemy to win the game!'
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Open the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Add Menu'
                             }),
                             ' and select ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Devices'
                             }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.OPEN_ADD_SUBMENU && 'devices' === a.menu
+                    cb: _v => _v.event === f.TutorialEventName.OPEN_ADD_SUBMENU && 'devices' === _v.menu
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Let\u2019s add a ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Sentry Device'
                             }),
                             '. ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' The Sentry Device spawns an enemy that will fire at you in-game.',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Select the Sentry Device.'
                             })
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.SELECT_DEVICE_TO_ADD && a.deviceTypeId === d.default.sentry
+                    cb: _v => _v.event === f.TutorialEventName.SELECT_DEVICE_TO_ADD && _v.deviceTypeId === e.default.sentry
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Now place the Sentry on the map! ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'Make sure to place it in an open area so that you\u2019re able to fire at it!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.PLACE_DEVICE_DOWN && a.device.deviceOption.id === d.default.sentry
+                    cb: _v => _v.event === f.TutorialEventName.PLACE_DEVICE_DOWN && _v.device.deviceOption.id === e.default.sentry
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'When you knockout the Sentry, we want the game to end. To end the game, we can use the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'End Game Device!'
                             }),
                             ' ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' Open the',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Add Menu'
                             }),
                             ', select ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Devices'
                             }),
                             ', and then select the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'End Game Device'
                             }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.SELECT_DEVICE_TO_ADD && a.deviceTypeId === d.default.endGame
+                    cb: _v => _v.event === f.TutorialEventName.SELECT_DEVICE_TO_ADD && _v.deviceTypeId === e.default.endGame
                 },
                 {
                     text: 'Place the End Game device just a little bit to the right of the Sentry!',
-                    cb: a => a.event === e.TutorialEventName.PLACE_DEVICE_DOWN && a.device.deviceOption.id === d.default.endGame
+                    cb: _v => _v.event === f.TutorialEventName.PLACE_DEVICE_DOWN && _v.device.deviceOption.id === e.default.endGame
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Now\u2026we want to connect these two devices together. And you know how we can do that: ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'wires!'
                             })
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Open the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Add Menu'
                             }),
                             ', select ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Wires'
                             }),
                             ', and then place a wire starting from the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Sentry Device'
                             }),
                             ' and ending at the ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'End Game Device'
                             }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.END_WIRE_TO_DEVICE && a.device.deviceOption.id === d.default.endGame
+                    cb: _v => _v.event === f.TutorialEventName.END_WIRE_TO_DEVICE && _v.device.deviceOption.id === e.default.endGame
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Perfect. Now, let\u2019s configure the wire.',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'Make it so once the Sentry gets knocked out, the game ends!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.CONFIGURE_WIRE && 'knockedOut' === a.wire.startConnection && 'endGame' === a.wire.endConnection
+                    cb: _v => _v.event === f.TutorialEventName.CONFIGURE_WIRE && 'knockedOut' === _v.wire.startConnection && 'endGame' === _v.wire.endConnection
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Way to go! With that, I think your game is ready! ',
-                            (0, c.jsx)(m, {}),
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(n, {}),
+                            (0, d.jsx)(m, {
                                 children: 'Start the game'
                             }),
                             ' and let\u2019s try it for real!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.START_THE_GAME
+                    cb: _v => _v.event === f.TutorialEventName.START_THE_GAME
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'The game has started!'
                             }),
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'Go answer a question correctly, gain the snowball launcher, and knockout that enemy!'
                         ]
                     }),
-                    cb: a => a.event === e.TutorialEventName.END_THE_GAME_BY_DEVICE
+                    cb: _v => _v.event === f.TutorialEventName.END_THE_GAME_BY_DEVICE
                 },
                 {
-                    text: (0, c.jsx)(c.Fragment, {
-                        children: (0, c.jsx)('div', {
+                    text: (0, d.jsx)(d.Fragment, {
+                        children: (0, d.jsx)('div', {
                             className: 'animated tada',
                             children: 'Woohoo! It worked!'
                         })
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
-                            (0, c.jsxs)(l, {
+                            (0, d.jsxs)(m, {
                                 children: [
                                     'Great work today, ',
-                                    (0, j.getUser)().firstName,
+                                    (0, k.getUser)().firstName,
                                     '!'
                                 ]
                             }),
                             ' You\'ve already built your very own mini-game!'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Keep exploring Gimkit Creative!',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             'As you explore and learn, you\'ll be able to build more & more types of maps & games! ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'The possibilities are endless!'
                             })
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'Also, don\u2019t worry if you\u2019re not understanding something! Gimkit Creative is open for you to just experiment, and play around!',
                             ' ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' ',
-                            (0, c.jsx)(m, {}),
+                            (0, d.jsx)(n, {}),
                             ' Just like any other skill, you may not get it right away. But',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'the more you practice, the better you\u2019ll get.'
                             }),
                             ' You can do this!'
                         ]
                     }),
-                    cb: k
+                    cb: _l
                 },
                 {
-                    text: (0, c.jsxs)(c.Fragment, {
+                    text: (0, d.jsxs)(d.Fragment, {
                         children: [
                             'And...that\'s the end of the tutorial.',
                             ' ',
-                            (0, c.jsx)(l, {
+                            (0, d.jsx)(m, {
                                 children: 'Click the button to the right to claim your reward!'
                             })
                         ]
@@ -1411,123 +1411,123 @@ b.register('jhMXd', function(p, q) {
                 }
             ]
         };
-}), b.register('lV1Oj', function(j, k) {
-    a(j.exports, 'default', function() {
-        return h;
+}), a.register('ARJGy', function(b, c) {
+    _v(b.exports, 'default', function() {
+        return _i;
     });
-    var c = b('8kSQZ'),
-        d = b('uPP4W'),
-        e = b('PjB0f'),
-        f = b('YfLmS'),
-        g = b('Dog9Y');
-    var h = a => {
-        const [i, j, k] = (0, e.useBoolean)(!1), l = d.useRef(null);
-        return (0, c.jsx)('div', {
-            ref: l,
-            children: (0, c.jsx)(f.default, {
-                title: a.tooltip,
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('PMl60'),
+        g = a('ijg0s'),
+        h = a('led8j');
+    var _i = _v => {
+        const [j, k, l] = (0, f.useBoolean)(!1), m = e.useRef(null);
+        return (0, d.jsx)('div', {
+            ref: m,
+            children: (0, d.jsx)(g.default, {
+                title: _v.tooltip,
                 placement: 'bottom',
-                open: i,
-                getPopupContainer: () => l.current,
-                children: (0, c.jsx)('div', {
-                    onMouseEnter: j,
-                    onMouseLeave: k,
-                    children: (0, c.jsx)(g.default, {
+                open: j,
+                getPopupContainer: () => m.current,
+                children: (0, d.jsx)('div', {
+                    onMouseEnter: k,
+                    onMouseLeave: l,
+                    children: (0, d.jsx)(h.default, {
                         type: 'default',
-                        onClick: a.onClick,
+                        onClick: _v.onClick,
                         customHorizontalPadding: 18,
                         customColor: '#4A2C83',
-                        ariaLabel: a.tooltip,
-                        children: a.children
+                        ariaLabel: _v.tooltip,
+                        children: _v.children
                     })
                 })
             })
         });
     };
-}), b.register('Dog9Y', function(l, m) {
-    a(l.exports, 'default', function() {
-        return j;
+}), a.register('led8j', function(b, c) {
+    _v(b.exports, 'default', function() {
+        return _k;
     });
-    var c = b('8kSQZ'),
-        d = b('CDq40'),
-        e = b('uPP4W'),
-        f = b('h99Nu'),
-        g = b('gSUVO'),
-        h = b('S/jX4');
-    let i;
-    var j = a => {
-        const k = a.size || 'default',
-            l = e.useMemo(() => a.customColor ? a.customColor : a.disabled ? '#546e7a' : 'success' === a.type ? '#2e7d32' : 'danger' === a.type ? '#c62828' : '#3f51b5', [
-                a.disabled,
-                a.type,
-                a.customColor
+    var d = a('0hzx+'),
+        e = a('GT7Vh'),
+        f = a('LEQ5w'),
+        g = a('Axq+p'),
+        h = a('b5kvC'),
+        i = a('vShe/');
+    let j;
+    var _k = _v => {
+        const l = _v.size || 'default',
+            m = f.useMemo(() => _v.customColor ? _v.customColor : _v.disabled ? '#546e7a' : 'success' === _v.type ? '#2e7d32' : 'danger' === _v.type ? '#c62828' : '#3f51b5', [
+                _v.disabled,
+                _v.type,
+                _v.customColor
             ]),
-            m = e.useMemo(() => (0, d.darken)(0.1, l), [l]),
-            n = e.useMemo(() => 'small' === k || 'default' === k ? 14 : 20, [k]),
-            o = e.useMemo(() => 'small' === k ? 6 : 'default' === k ? 8 : 12, [k]),
-            p = e.useMemo(() => {
-                const q = 'small' === k ? '8px' : '12px';
-                return a.customHorizontalPadding ? `${ q } ${ a.customHorizontalPadding }px` : 'small' === k ? `${ q } 24px` : 'default' === k ? `${ q } 28px` : `${ q } 42px`;
+            n = f.useMemo(() => (0, e.darken)(0.1, m), [m]),
+            o = f.useMemo(() => 'small' === l || 'default' === l ? 14 : 20, [l]),
+            p = f.useMemo(() => 'small' === l ? 6 : 'default' === l ? 8 : 12, [l]),
+            q = f.useMemo(() => {
+                const r = 'small' === l ? '8px' : '12px';
+                return _v.customHorizontalPadding ? `${ r } ${ _v.customHorizontalPadding }px` : 'small' === l ? `${ r } 24px` : 'default' === l ? `${ r } 28px` : `${ r } 42px`;
             }, [
-                k,
-                a.customHorizontalPadding
+                l,
+                _v.customHorizontalPadding
             ]),
-            q = e.useMemo(() => 'small' === k ? 41 : 49, [k]),
-            r = e.useMemo(() => a.customFontWeight ? a.customFontWeight : 'large' === k ? g.FontWeights.Bold : g.FontWeights.Normal, [
-                a.customFontWeight,
-                k
+            r = f.useMemo(() => 'small' === l ? 41 : 49, [l]),
+            s = f.useMemo(() => _v.customFontWeight ? _v.customFontWeight : 'large' === l ? h.FontWeights.Bold : h.FontWeights.Normal, [
+                _v.customFontWeight,
+                l
             ]),
-            s = () => {
-                a.disabled || a.onClick && a.onClick();
+            t = () => {
+                _v.disabled || _v.onClick && _v.onClick();
             };
-        return (0, c.jsx)(k, {
+        return (0, d.jsx)(_l, {
             style: Object.assign({
                 pointerEvents: 'all',
                 WebkitFlexShrink: 0,
                 flexShrink: 0,
-                height: q
-            }, a.style || {}),
-            children: (0, c.jsxs)('button', {
+                height: r
+            }, _v.style || {}),
+            children: (0, d.jsxs)('button', {
                 className: 'btn-pushable',
-                'aria-label': a.ariaLabel,
-                onClick: a.usePointerDownEvent ? void 0 : s,
-                onPointerDown: a.usePointerDownEvent ? s : void 0,
+                'aria-label': _v.ariaLabel,
+                onClick: _v.usePointerDownEvent ? void 0 : t,
+                onPointerDown: _v.usePointerDownEvent ? t : void 0,
                 style: {
-                    cursor: a.disabled ? 'not-allowed' : 'pointer',
-                    width: a.block ? '100%' : 'auto'
+                    cursor: _v.disabled ? 'not-allowed' : 'pointer',
+                    width: _v.block ? '100%' : 'auto'
                 },
                 children: [
-                    (0, c.jsx)('span', {
+                    (0, d.jsx)('span', {
                         className: 'btn-shadow',
                         style: {
-                            borderRadius: o
+                            borderRadius: p
                         }
                     }),
-                    (0, c.jsx)('span', {
+                    (0, d.jsx)('span', {
                         className: 'btn-edge',
                         style: {
-                            background: m,
-                            borderRadius: o
+                            background: n,
+                            borderRadius: p
                         }
                     }),
-                    (0, c.jsx)('span', {
+                    (0, d.jsx)('span', {
                         className: 'btn-front',
                         style: {
-                            background: l,
-                            fontSize: n,
-                            borderRadius: o,
-                            padding: p,
-                            fontWeight: r
+                            background: m,
+                            fontSize: o,
+                            borderRadius: p,
+                            padding: q,
+                            fontWeight: s
                         },
-                        children: a.children
+                        children: _v.children
                     })
                 ]
             })
         });
     };
-    const k = f.default.div.attrs({
+    const _l = g.default.div.attrs({
         className: 'flex'
-    })(i || (i = (a => a)`
+    })(j || (j = (_v => _v)`
   align-items: flex-end;
 
   .btn-pushable {
@@ -1585,61 +1585,61 @@ b.register('jhMXd', function(p, q) {
     transform: translateY(1px);
     transition: transform 34ms;
   }
-`), h.default.White);
-}), b.register('S/jX4', function(b, w) {
-    a(b.exports, 'default', function() {
-        return c;
+`), i.default.White);
+}), a.register('vShe/', function(b, c) {
+    _v(b.exports, 'default', function() {
+        return _d;
     });
-    var c = {
+    var _d = {
         White: '#FFFFFF',
         Black: '#000000',
         Yellow: '#FFFF00',
         Purple: '#673ab7'
     };
-}), b.register('iMnBi', function(w, x) {
-    a(w.exports, 'default', function() {
-        return d;
+}), a.register('9R7cy', function(b, c) {
+    _v(b.exports, 'default', function() {
+        return _e;
     });
-    var c = b('8kSQZ');
-    b('uPP4W');
-    var d = a => (0, c.jsx)('i', {
-        className: `${ a.name }${ a.className ? ` ${ a.className }` : '' }`,
-        style: a.style
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var _e = _v => (0, d.jsx)('i', {
+        className: `${ _v.name }${ _v.className ? ` ${ _v.className }` : '' }`,
+        style: _v.style
     });
-}), b.register('Yn39D', function(w, x) {
-    a(w.exports, 'default', function() {
-        return h;
+}), a.register('7IstX', function(b, c) {
+    _v(b.exports, 'default', function() {
+        return _i;
     });
-    var c = b('8kSQZ');
-    b('uPP4W');
-    var d = b('h99Nu');
-    let e, f, g = a => a;
-    var h = a => (0, c.jsxs)(i, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p');
+    let f, g, h = _v => _v;
+    var _i = _v => (0, d.jsxs)(_j, {
         children: [
-            (0, c.jsx)(j, {
-                children: a.children
+            (0, d.jsx)(_k, {
+                children: _v.children
             }),
-            (0, c.jsx)('div', {
+            (0, d.jsx)('div', {
                 className: 'area',
-                children: (0, c.jsxs)('ul', {
+                children: (0, d.jsxs)('ul', {
                     className: 'circles',
                     children: [
-                        (0, c.jsx)('li', {}),
-                        (0, c.jsx)('li', {}),
-                        (0, c.jsx)('li', {}),
-                        (0, c.jsx)('li', {}),
-                        (0, c.jsx)('li', {}),
-                        (0, c.jsx)('li', {}),
-                        (0, c.jsx)('li', {}),
-                        (0, c.jsx)('li', {}),
-                        (0, c.jsx)('li', {}),
-                        (0, c.jsx)('li', {})
+                        (0, d.jsx)('li', {}),
+                        (0, d.jsx)('li', {}),
+                        (0, d.jsx)('li', {}),
+                        (0, d.jsx)('li', {}),
+                        (0, d.jsx)('li', {}),
+                        (0, d.jsx)('li', {}),
+                        (0, d.jsx)('li', {}),
+                        (0, d.jsx)('li', {}),
+                        (0, d.jsx)('li', {}),
+                        (0, d.jsx)('li', {})
                     ]
                 })
             })
         ]
     });
-    const i = d.default.div(e || (e = g`
+    const _j = e.default.div(f || (f = h`
   flex: 1;
   height: 100%;
   width: 100%;
@@ -1766,87 +1766,87 @@ b.register('jhMXd', function(p, q) {
     }
   }
 `)),
-        j = d.default.div(f || (f = g`
+        _k = e.default.div(g || (g = h`
   z-index: 1;
   /* background: rgba(0, 0, 0, 0.4); */
   flex: 1;
 `));
-}), b.register('4O5ns', function(w, x) {
-    a(w.exports, 'default', function() {
-        return t;
+}), a.register('Am38a', function(b, c) {
+    _v(b.exports, 'default', function() {
+        return _u;
     });
-    var c = b('8kSQZ'),
-        d = b('uPP4W'),
-        e = b('h99Nu'),
-        f = b('YimJ0'),
-        g = b('lmfrI'),
-        h = b('gSUVO'),
-        i = b('PjB0f'),
-        j = b('Dog9Y'),
-        k = b('IsmrL'),
-        l = b('iHElh'),
-        m = b('JJQ0+');
-    let n, o, p, q, r, s = a => a;
-    var t = () => {
-        const [u, v] = d.useState(!0), [w, x] = d.useState(!1), y = () => {
-            v(!0), (0, i.request)({
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('Axq+p'),
+        g = a('0HHAH'),
+        h = a('sHRDd'),
+        i = a('b5kvC'),
+        j = a('PMl60'),
+        k = a('led8j'),
+        l = a('ulE4q'),
+        m = a('6CIVV'),
+        n = a('2Xvuf');
+    let o, p, q, r, s, t = _v => _v;
+    var _u = () => {
+        const [_v, w] = e.useState(!0), [x, y] = e.useState(!1), z = () => {
+            w(!0), (0, j.request)({
                 url: '/api/created-map/tutorial-reward',
                 method: 'POST',
                 success: () => {
-                    x(!1);
+                    y(!1);
                 },
                 error: () => {
-                    x(!0);
+                    y(!0);
                 },
                 both: () => {
-                    v(!1);
+                    w(!1);
                 }
             });
         };
-        return d.useEffect(() => {
-            (0, i.loadFont)('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap'), y();
-        }, []), u ? (0, c.jsx)(u, {
-            children: (0, c.jsx)(l.default, {
+        return e.useEffect(() => {
+            (0, j.loadFont)('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap'), z();
+        }, []), _v ? (0, d.jsx)(_v, {
+            children: (0, d.jsx)(m.default, {
                 size: 'large'
             })
-        }) : w ? (0, c.jsxs)(u, {
+        }) : x ? (0, d.jsxs)(_v, {
             children: [
-                (0, c.jsx)('div', {
+                (0, d.jsx)('div', {
                     style: {
-                        fontFamily: h.Fonts.SFPro,
+                        fontFamily: i.Fonts.SFPro,
                         fontSize: 18,
                         textTransform: 'none',
                         marginBottom: 10
                     },
                     children: 'An error occurred redeeming your reward. Click the button to try again.'
                 }),
-                (0, c.jsx)(k.default, {
-                    onClick: y,
+                (0, d.jsx)(l.default, {
+                    onClick: z,
                     children: 'Try Again'
                 })
             ]
-        }) : (0, c.jsx)(u, {
-            children: (0, c.jsxs)(u, {
+        }) : (0, d.jsx)(_v, {
+            children: (0, d.jsxs)(_v, {
                 className: 'animated fadeIn',
                 children: [
-                    (0, c.jsx)(v, {
+                    (0, d.jsx)(_w, {
                         children: 'Gimkit Creative'
                     }),
-                    (0, c.jsx)(w, {
+                    (0, d.jsx)(_x, {
                         children: 'Tutorial Complete!'
                     }),
-                    (0, c.jsx)('div', {
+                    (0, d.jsx)('div', {
                         className: 'animated pulse infinite',
                         style: {
                             animationDuration: '3s'
                         },
-                        children: (0, c.jsx)(x, {})
+                        children: (0, d.jsx)(_y, {})
                     }),
-                    (0, c.jsxs)(y, {
+                    (0, d.jsxs)(_z, {
                         children: [
                             'You unlocked the',
                             ' ',
-                            (0, c.jsx)('span', {
+                            (0, d.jsx)('span', {
                                 style: {
                                     color: '#ffff94'
                                 },
@@ -1855,15 +1855,15 @@ b.register('jhMXd', function(p, q) {
                             ' You can find it in your Locker!'
                         ]
                     }),
-                    (0, c.jsx)('div', {
+                    (0, d.jsx)('div', {
                         style: {
                             marginTop: 30
                         },
-                        children: (0, c.jsx)(j.default, {
+                        children: (0, d.jsx)(k.default, {
                             type: 'success',
-                            customFontWeight: h.FontWeights.Bold,
+                            customFontWeight: i.FontWeights.Bold,
                             style: {
-                                fontFamily: h.Fonts.SFPro
+                                fontFamily: i.Fonts.SFPro
                             },
                             size: 'large',
                             onClick: () => window.location.href = '/',
@@ -1875,7 +1875,7 @@ b.register('jhMXd', function(p, q) {
             })
         });
     };
-    const u = (0, e.default)(f.CenteredColumn)(n || (n = s`
+    const _v = (0, f.default)(g.CenteredColumn)(o || (o = t`
   flex: 1;
   background: #25397d;
   color: ${ 0 };
@@ -1883,52 +1883,52 @@ b.register('jhMXd', function(p, q) {
   text-transform: uppercase;
   padding: 20px;
   text-align: center;
-`), g.default.White, h.Fonts.FugazOne),
-        v = e.default.div(o || (o = s`
+`), h.default.White, i.Fonts.FugazOne),
+        _w = f.default.div(p || (p = t`
   text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.75);
   font-size: 26px;
   opacity: 0.85;
 `)),
-        w = e.default.div(p || (p = s`
+        _x = f.default.div(q || (q = t`
   text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.75);
   font-size: 48px;
   margin-top: -9px;
 `)),
-        x = e.default.img.attrs({
-            src: (0, m.default)('characters/spine/preview/construction.png')
-        })(q || (q = s`
+        _y = f.default.img.attrs({
+            src: (0, n.default)('characters/spine/preview/construction.png')
+        })(r || (r = t`
   height: 279px;
   transform: rotate(355deg);
   filter: drop-shadow(0px 0px 9px rgba(255, 255, 255, 0.9));
 `)),
-        y = e.default.div(r || (r = s`
+        _z = f.default.div(s || (s = t`
   font-family: ${ 0 };
   text-transform: none;
   font-weight: ${ 0 };
   font-size: 21px;
   margin-top: 10px;
-`), h.Fonts.SFPro, h.FontWeights.Bold);
-}), b.register('oSNZM', function(n, c) {
-    a(n.exports, 'default', function() {
-        return h;
+`), i.Fonts.SFPro, i.FontWeights.Bold);
+}), a.register('CJCpN', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var c = b('uhRWM'),
-        d = b('uPP4W'),
-        e = b('lByv9'),
-        f = b('tEXgG'),
-        g = function(a, b) {
-            return d.createElement(f.default, (0, c.default)((0, c.default)({}, a), {}, {
-                ref: b,
-                icon: e.default
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('v47zB'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
+                icon: f.default
             }));
         };
-    g.displayName = 'CheckOutlined';
-    var h = d.forwardRef(g);
-}), b.register('lByv9', function(b, n) {
-    a(b.exports, 'default', function() {
-        return c;
+    h.displayName = 'CheckOutlined';
+    var _i = e.forwardRef(h);
+}), a.register('v47zB', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var c = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {

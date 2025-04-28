@@ -1,43 +1,43 @@
-function a(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
 
-function b(a, b, c, y) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: y,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('+3jM7', function(y, z) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('g9c1U', function(b, c) {
     var d;
-    d = y.exports, Object.defineProperty(d, '__esModule', {
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(y.exports, 'default', function() {
-        return w;
+    }), _S(b.exports, 'default', function() {
+        return _w;
     });
-    var e = c('8kSQZ'),
-        f = c('uPP4W'),
-        g = c('+0Tb/'),
-        h = c('kneek'),
-        i = c('Vlfxs'),
-        j = c('am7L5'),
-        k = c('tx7zP'),
-        l = c('4BAHF'),
-        m = c('04Q/S'),
-        n = c('UnUp5'),
-        o = c('GHmRa'),
-        p = c('PjB0f'),
-        q = c('wiVnp'),
-        r = c('htVdm'),
-        s = c('RJ/fk'),
-        t = c('Wgw1x0'),
-        u = c('jrTkz0'),
-        v = c('RhbNx');
-    var w = (0, i.observer)(b => {
+    var e = a('0hzx+'),
+        f = a('LEQ5w'),
+        g = a('ryWAy'),
+        h = a('8WvaZ'),
+        i = a('2x11J'),
+        j = a('bHGrl'),
+        k = a('DLHL2'),
+        l = a('OBEOK'),
+        m = a('lKsve'),
+        n = a('YuT/D'),
+        o = a('rr5bz'),
+        p = a('PMl60'),
+        q = a('Le6om'),
+        r = a('iulrc'),
+        s = a('qVhMZ'),
+        t = a('bzU3s'),
+        u = a('MSsQO'),
+        v = a('QVC+I');
+    var _w = (0, i.observer)(_S => {
         const {
             me: {
                 editing: {
@@ -57,20 +57,20 @@ c.register('+3jM7', function(y, z) {
             clear: Q
         } = (0, o.useTimeout)(() => {
             var R;
-            (null === (R = y.get(b.deviceId)) || void 0 === R ? void 0 : R.items.has(x.currentlyEditedGridId)) || (u.default.error(`This ${ v.default.grid.singular } was deleted!`), b.close());
+            (null === (R = y.get(_S.deviceId)) || void 0 === R ? void 0 : R.items.has(x.currentlyEditedGridId)) || (u.default.error(`This ${ v.default.grid.singular } was deleted!`), _S.close());
         }, 25), R = x.currentlyEditedGridId;
         f.useEffect(() => ((0, m.default)({
-            deviceId: b.deviceId,
+            deviceId: _S.deviceId,
             gridId: R
         }), () => {
             (0, l.default)({
-                deviceId: b.deviceId,
+                deviceId: _S.deviceId,
                 gridId: R
             });
         }), []), f.useEffect(() => {
             const S = (0, n.reaction)(() => {
                     var T;
-                    return null === (T = y.get(b.deviceId)) || void 0 === T ? void 0 : T.items.has(R);
+                    return null === (T = y.get(_S.deviceId)) || void 0 === T ? void 0 : T.items.has(R);
                 }, S => {
                     S || (Q(), P());
                 }, {
@@ -78,7 +78,7 @@ c.register('+3jM7', function(y, z) {
                 }),
                 T = (0, n.reaction)(() => {
                     var U, V, W;
-                    return null === (U = null === (V = y.get(b.deviceId)) || void 0 === V || null === (W = V.items) || void 0 === W ? void 0 : W.get(R)) || void 0 === U ? void 0 : U.visitors;
+                    return null === (U = null === (V = y.get(_S.deviceId)) || void 0 === V || null === (W = V.items) || void 0 === W ? void 0 : W.get(R)) || void 0 === U ? void 0 : U.visitors;
                 }, S => {
                     S && L(S);
                 }, {
@@ -86,7 +86,7 @@ c.register('+3jM7', function(y, z) {
                 }),
                 U = (0, n.reaction)(() => {
                     var V, W, X;
-                    return null === (V = null === (W = y.get(b.deviceId)) || void 0 === W || null === (X = W.items) || void 0 === X ? void 0 : X.get(R)) || void 0 === V ? void 0 : V.json;
+                    return null === (V = null === (W = y.get(_S.deviceId)) || void 0 === W || null === (X = W.items) || void 0 === X ? void 0 : X.get(R)) || void 0 === V ? void 0 : V.json;
                 }, S => {
                     void 0 !== S && H(S);
                 }, {
@@ -94,7 +94,7 @@ c.register('+3jM7', function(y, z) {
                 }),
                 V = (0, n.reaction)(() => {
                     var W, X, Y;
-                    return null === (W = null === (X = y.get(b.deviceId)) || void 0 === X || null === (Y = X.items) || void 0 === Y ? void 0 : Y.get(R)) || void 0 === W ? void 0 : W.owner;
+                    return null === (W = null === (X = y.get(_S.deviceId)) || void 0 === X || null === (Y = X.items) || void 0 === Y ? void 0 : Y.get(R)) || void 0 === W ? void 0 : W.owner;
                 }, S => {
                     void 0 !== S && N(S);
                 }, {
@@ -103,11 +103,11 @@ c.register('+3jM7', function(y, z) {
             return () => {
                 Q(), S(), T(), U(), V();
             };
-        }, []), (0, g.default)(a(h).Input.Keyboard.KeyCodes.ESC, b.close);
+        }, []), (0, g.default)(_b(h).Input.Keyboard.KeyCodes.ESC, _S.close);
         return void 0 === G || void 0 === K || void 0 === M ? null : (0, e.jsxs)(e.Fragment, {
             children: [
                 (0, e.jsx)(k.default, {
-                    deviceId: b.deviceId,
+                    deviceId: _S.deviceId,
                     gridId: R,
                     gridJSON: G,
                     gridVisitors: K,
@@ -115,7 +115,7 @@ c.register('+3jM7', function(y, z) {
                     gridBlockCount: I,
                     setGridBlockCount: J,
                     switchToHomeScreen: () => {
-                        b.close();
+                        _S.close();
                     },
                     openChannelBrowser: B,
                     channelBrowserOpen: A,
@@ -131,9 +131,9 @@ c.register('+3jM7', function(y, z) {
                     category: r.default.channel,
                     noResultsText: 'All the channels you broadcast on and listen to will appear here!',
                     noResultsFilteredText: 'No channels matching your search. Press Enter to add the channel currently in the search bar!',
-                    onItemSelected: a => {
-                        var S;
-                        I >= z.blocksPerCodeGrid || null == O || null === (S = O.current) || void 0 === S || S.addTextBlock(a);
+                    onItemSelected: _b => {
+                        var _S;
+                        I >= z.blocksPerCodeGrid || null == O || null === (_S = O.current) || void 0 === _S || _S.addTextBlock(_b);
                     }
                 }),
                 (0, e.jsx)(q.default, {
@@ -144,32 +144,32 @@ c.register('+3jM7', function(y, z) {
                     category: r.default.property,
                     noResultsText: `Properties you create using the Property ${ (0, s.CapitalizeFirstLetter)(t.default.device.singular) } will show up here!`,
                     noResultsFilteredText: `No properties match your search. Press Enter to add the property\n        currently in the search bar. Remember to add a corresponding Property\n        ${ (0, s.CapitalizeFirstLetter)(t.default.device.singular) } to your map!`,
-                    onItemSelected: a => {
+                    onItemSelected: _b => {
                         var S;
-                        I >= z.blocksPerCodeGrid || null == O || null === (S = O.current) || void 0 === S || S.addTextBlock(a);
+                        I >= z.blocksPerCodeGrid || null == O || null === (S = O.current) || void 0 === S || S.addTextBlock(_b);
                     }
                 })
             ]
         });
     });
-}), c.register('tx7zP', function(a, q) {
-    b(a.exports, 'default', function() {
-        return n;
+}), a.register('DLHL2', function(_b, c) {
+    _o(_b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('mdi6y'),
-        f = c('oMVkc'),
-        g = c('PUlKf'),
-        h = c('+82NM'),
-        i = c('ZYjQ5'),
-        j = c('D7q/A'),
-        k = (j = c('D7q/A'), c('rFtvN1')),
-        l = c('nbHO+'),
-        m = c('S/jX4');
-    var n = a => {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('kPtyl'),
+        f = a('aCmo+'),
+        g = a('Jfada'),
+        h = a('VvMpg'),
+        i = a('QN7GP'),
+        j = a('EuBHl'),
+        k = (j = a('EuBHl'), a('0PFEY')),
+        l = a('Ct4sg'),
+        m = a('vShe/');
+    var _n = _b => {
         const {
-            deviceId: o,
+            deviceId: _o,
             gridId: p,
             gridOwner: q,
             gridVisitors: r,
@@ -180,10 +180,10 @@ c.register('+3jM7', function(y, z) {
             openPropertyBrowser: w,
             propertyBrowserOpen: x,
             editorRef: y
-        } = z, A = ((0, g.default)() === q || !r.length || !q) && (0, f.default)();
+        } = _b, z = ((0, g.default)() === q || !r.length || !q) && (0, f.default)();
         return (0, d.jsx)(j.ContentContainer, {
-            onClick: z => {
-                (0, k.default)(z), t();
+            onClick: _b => {
+                (0, k.default)(_b), t();
             },
             children: (0, d.jsxs)(j.Modal, {
                 initial: e.default.Animation.content.codegrid.initial,
@@ -193,7 +193,7 @@ c.register('+3jM7', function(y, z) {
                     duration: e.default.Animation.durationSeconds,
                     ease: e.default.Animation.easeType
                 },
-                onClick: z => z.stopPropagation(),
+                onClick: _b => _b.stopPropagation(),
                 children: [
                     (0, d.jsx)(l.default, {
                         onClick: t,
@@ -203,23 +203,23 @@ c.register('+3jM7', function(y, z) {
                     (0, d.jsx)(j.CodeGridEditor, {
                         children: (0, d.jsx)(h.default, {
                             ref: y,
-                            deviceId: o,
+                            deviceId: _o,
                             gridJSON: s,
                             gridId: p,
-                            onBlockCountChange: z.setGridBlockCount,
-                            isOwner: A,
+                            onBlockCountChange: _b.setGridBlockCount,
+                            isOwner: z,
                             openChannelBrowser: u,
                             channelBrowserOpen: v,
                             openPropertyBrowser: w,
                             propertyBrowserOpen: x
-                        }, `blockly-editor-${ String(A) }`)
+                        }, `blockly-editor-${ String(z) }`)
                     }),
                     (0, d.jsx)(i.default, {
-                        deviceId: o,
+                        deviceId: _o,
                         gridId: p,
-                        isOwner: A,
+                        isOwner: z,
                         gridOwner: q,
-                        blockCount: z.gridBlockCount,
+                        blockCount: _b.gridBlockCount,
                         openChannelBrowser: u,
                         openPropertyBrowser: w
                     })
@@ -227,11 +227,11 @@ c.register('+3jM7', function(y, z) {
             })
         });
     };
-}), c.register('mdi6y', function(a, c) {
-    b(a.exports, 'default', function() {
-        return d;
+}), a.register('kPtyl', function(b, c) {
+    _h(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         Animation: {
             durationSeconds: 0.2,
             easeType: 'easeOut',
@@ -269,95 +269,95 @@ c.register('+3jM7', function(y, z) {
             }
         }
     };
-}), c.register('+82NM', function(t, u) {
-    b(t.exports, 'default', function() {
-        return s;
+}), a.register('VvMpg', function(b, c) {
+    _h(b.exports, 'default', function() {
+        return _s;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W');
-    c('phbZH');
-    var f = c('8MLEB'),
-        g = c('Z+Quh'),
-        h = c('ZVZgU'),
-        i = c('WtdZG'),
-        j = c('Vlfxs'),
-        k = c('dQHV1'),
-        l = c('AKJ7r'),
-        m = c('DUDiB'),
-        n = c('YmXYT'),
-        o = c('vBLZk'),
-        p = c('9p9dz'),
-        q = c('eH7P7'),
-        r = c('am7L5');
-    a(g).FieldTextInput.prototype.doClassValidation_ = function(a) {
-        return a.substring(0, 512);
+    var d = a('0hzx+'),
+        e = a('LEQ5w');
+    a('2YhaM');
+    var f = a('0AYvY'),
+        g = a('uaSUf'),
+        h = a('jzeh7'),
+        i = a('hVk9x'),
+        j = a('2x11J'),
+        k = a('fi5uw'),
+        l = a('wqlaN'),
+        m = a('Znlkb'),
+        n = a('jQr2o'),
+        o = a('12BCx'),
+        p = a('Ggo1o'),
+        q = a('2v3ft'),
+        r = a('bHGrl');
+    _s(g).FieldTextInput.prototype.doClassValidation_ = function(_s) {
+        return _s.substring(0, 512);
     };
-    var s = (0, j.observer)(e.forwardRef((b, c) => {
+    var _s = (0, j.observer)(e.forwardRef((_h, a) => {
         const {
             memorySystem: t
-        } = (0, r.default)(), [u, v] = e.useState(b.gridJSON), w = e.useRef(), x = e.useRef(), [y] = (0, k.default)((0, l.default)([
+        } = (0, r.default)(), [u, v] = e.useState(_h.gridJSON), w = e.useRef(), x = e.useRef(), [y] = (0, k.default)((0, l.default)([
             n.default.messageBroadcaster,
             n.default.playerProximityMessageBroadcaster
-        ]), a => {
-            b.isOwner && (a.x && a.y && (w.current = {
-                x: a.x,
-                y: a.y
-            }), b.openChannelBrowser());
+        ]), _b => {
+            _h.isOwner && (_b.x && _b.y && (w.current = {
+                x: _b.x,
+                y: _b.y
+            }), _h.openChannelBrowser());
         }), [z] = (0, k.default)((0, l.default)([
             n.default.getProperty,
             n.default.setProperty,
             n.default.playerProximityGetProperty,
             n.default.playerProximitySetProperty
-        ]), a => {
-            b.isOwner && (a.x && a.y && (w.current = {
-                x: a.x,
-                y: a.y
-            }), b.openPropertyBrowser());
+        ]), _b => {
+            _h.isOwner && (_b.x && _b.y && (w.current = {
+                x: _b.x,
+                y: _b.y
+            }), _h.openPropertyBrowser());
         });
         e.useEffect(() => {
-            A(b.gridJSON);
-        }, [b.gridJSON]), e.useEffect(() => () => {
+            _A(_h.gridJSON);
+        }, [_h.gridJSON]), e.useEffect(() => () => {
             (0, o.destroyAllModals)();
         }, []);
-        const A = c => {
+        const _A = a => {
                 var B;
-                b.isOwner || c !== u && (v(c), null == x || null === (B = x.current) || void 0 === B || B.clear(), a(g).serialization.workspaces.load(JSON.parse(c), x.current));
+                _h.isOwner || a !== u && (v(a), null == x || null === (B = x.current) || void 0 === B || B.clear(), _b(g).serialization.workspaces.load(JSON.parse(a), x.current));
             },
-            B = (0, i.useDebounceCallback)(a => {
-                b.isOwner && a !== u && ((0, q.default)({
-                    json: a,
-                    deviceId: b.deviceId,
-                    gridId: b.gridId
-                }), v(a));
+            B = (0, i.useDebounceCallback)(_b => {
+                _h.isOwner && _b !== u && ((0, q.default)({
+                    json: _b,
+                    deviceId: _h.deviceId,
+                    gridId: _h.gridId
+                }), v(_b));
             }, p.default.debouncedSaveDurationMs),
-            C = e.useMemo(() => (0, h.default)(b.deviceId, b.gridId), []);
-        e.useImperativeHandle(c, () => ({
-            addTextBlock: D
+            C = e.useMemo(() => (0, h.default)(_h.deviceId, _h.gridId), []);
+        e.useImperativeHandle(a, () => ({
+            addTextBlock: _D
         }));
-        const D = a => {
-                b.isOwner && (0, m.default)({
-                    text: a,
+        const _D = _b => {
+                _h.isOwner && (0, m.default)({
+                    text: _b,
                     location: w.current,
                     workspace: x.current
                 });
             },
             E = '' === u ? {} : JSON.parse(u);
         return (0, d.jsx)(f.default, {
-            toolboxConfiguration: b.isOwner ? C : void 0,
+            toolboxConfiguration: _h.isOwner ? C : void 0,
             initialJson: E,
             className: 'fill-height',
-            onInject: c => {
+            onInject: a => {
                 var F;
-                x.current = c, null === (F = x.current) || void 0 === F || F.addChangeListener(c => {
-                    b.isOwner && (y(c), z(c), (() => {
-                        const G = a(g).serialization.workspaces.save(x.current),
+                x.current = a, null === (F = x.current) || void 0 === F || F.addChangeListener(a => {
+                    _h.isOwner && (y(a), z(a), (() => {
+                        const G = _b(g).serialization.workspaces.save(x.current),
                             H = x.current.getAllBlocks(!1).length;
-                        b.onBlockCountChange(H), B(JSON.stringify(G));
+                        _h.onBlockCountChange(H), B(JSON.stringify(G));
                     })());
                 });
             },
             workspaceConfiguration: {
-                readOnly: !b.isOwner,
+                readOnly: !_h.isOwner,
                 comments: !1,
                 disable: !1,
                 collapse: !1,
@@ -374,20 +374,20 @@ c.register('+3jM7', function(y, z) {
             }
         });
     }));
-}), c.register('phbZH', function(a, j) {
-    b(a.exports, 'BlocklyWorkspace', function() {
-        return c('8MLEB').default;
+}), a.register('2YhaM', function(_b, c) {
+    _h(_b.exports, 'BlocklyWorkspace', function() {
+        return a('0AYvY').default;
     });
-    c('79xFw'), c('8MLEB'), c('Z+Quh');
-}), c.register('79xFw', function(j, k) {
-    b(j.exports, 'default', function() {
-        return g;
+    a('uAQzc'), a('0AYvY'), a('uaSUf');
+}), a.register('uAQzc', function(b, c) {
+    _h(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('uPP4W'),
-        e = c('Z+Quh'),
-        f = c('EPBhX');
-    var g = ({
-        ref: h,
+    var d = a('LEQ5w'),
+        e = a('uaSUf'),
+        f = a('qRZsz');
+    var _g = ({
+        ref: _h,
         initialXml: i,
         initialJson: j,
         toolboxConfiguration: k,
@@ -399,31 +399,31 @@ c.register('+3jM7', function(y, z) {
         onDispose: q
     }) => {
         o = null != o ? o : n;
-        const [r, s] = a(d).useState(null), [t, u] = a(d).useState(i || null), [v, w] = a(d).useState(j || null), [x, y] = a(d).useState(!1), [z, A] = a(d).useState(!1), B = a(d).useRef(l);
-        a(d).useEffect(() => {
+        const [r, s] = _G(d).useState(null), [t, u] = _G(d).useState(i || null), [v, w] = _G(d).useState(j || null), [x, y] = _G(d).useState(!1), [z, A] = _G(d).useState(!1), B = _G(d).useRef(l);
+        _G(d).useEffect(() => {
             B.current = l;
         }, [l]);
-        const C = a(d).useRef(k);
-        a(d).useEffect(() => {
+        const C = _G(d).useRef(k);
+        _G(d).useEffect(() => {
             C.current = k, k && r && r.updateToolbox(k);
         }, [
             k,
             r
         ]);
-        const D = a(d).useRef(p),
-            E = a(d).useRef(q);
-        a(d).useEffect(() => {
+        const D = _G(d).useRef(p),
+            E = _G(d).useRef(q);
+        _G(d).useEffect(() => {
             D.current = p;
-        }, [p]), a(d).useEffect(() => {
+        }, [p]), _G(d).useEffect(() => {
             E.current = q;
         }, [q]);
-        const F = a(d).useCallback(a => {
-            m && m(a);
+        const F = _G(d).useCallback(_G => {
+            m && m(_G);
         }, [m]);
-        return a(d).useEffect(() => {
-            if (!h.current)
+        return _G(d).useEffect(() => {
+            if (!_h.current)
                 return;
-            const G = a(e).inject(h.current, {
+            const G = _G(e).inject(_h.current, {
                 ...B.current,
                 toolbox: C.current
             });
@@ -432,32 +432,32 @@ c.register('+3jM7', function(y, z) {
             return () => {
                 G.dispose(), H && H(G);
             };
-        }, [h]), a(d).useEffect(() => {
+        }, [_h]), _G(d).useEffect(() => {
             r && !z && F(r);
         }, [
             F,
             z,
             r
-        ]), a(d).useEffect(() => {
+        ]), _G(d).useEffect(() => {
             if (null == r)
                 return;
-            const G = () => {
+            const _G = () => {
                 F(r);
             };
-            return r.addChangeListener(G), () => {
-                r.removeChangeListener(G);
+            return r.addChangeListener(_G), () => {
+                r.removeChangeListener(_G);
             };
         }, [
             r,
             F
-        ]), a(d).useEffect(() => {
+        ]), _b(d).useEffect(() => {
             if (null == r)
                 return;
             const [G, H] = (0, f.default)(() => {
-                const I = a(e).Xml.domToText(a(e).Xml.workspaceToDom(r));
+                const I = _b(e).Xml.domToText(_b(e).Xml.workspaceToDom(r));
                 if (I === t)
                     return;
-                const J = a(e).serialization.workspaces.save(r);
+                const J = _b(e).serialization.workspaces.save(r);
                 w(J), u(I);
             }, 200);
             return r.addChangeListener(G), () => {
@@ -466,29 +466,29 @@ c.register('+3jM7', function(y, z) {
         }, [
             r,
             t
-        ]), a(d).useEffect(() => {
+        ]), _b(d).useEffect(() => {
             if (t && r && !x) {
-                const G = function(G, i, j) {
+                const G = function(H, I, J) {
                     try {
-                        if (i.getAllBlocks(!1).length > 0)
+                        if (I.getAllBlocks(!1).length > 0)
                             return;
-                        return a(e).Xml.domToWorkspace(a(e).Xml.textToDom(G), i), !0;
-                    } catch (a) {
-                        return j && j(a), !1;
+                        return _b(e).Xml.domToWorkspace(_b(e).Xml.textToDom(H), I), !0;
+                    } catch (_b) {
+                        return J && J(_b), !1;
                     }
                 }(t, r, o);
                 G || u(null), y(!0);
             } else if (v && r && !x) {
-                const H = function(H, i, j) {
+                const G = function(H, I, J) {
                     try {
-                        return a(e).serialization.workspaces.load(H, i), !0;
-                    } catch (a) {
-                        return j && j(a), !1;
+                        return _b(e).serialization.workspaces.load(H, I), !0;
+                    } catch (_b) {
+                        return J && J(_b), !1;
                     }
                 }(v, r, o);
-                H || w(null);
-                const I = a(e).Xml.domToText(a(e).Xml.workspaceToDom(r));
-                u(I), y(!0);
+                G || w(null);
+                const H = _b(e).Xml.domToText(_b(e).Xml.workspaceToDom(r));
+                u(H), y(!0);
             }
         }, [
             v,
@@ -502,68 +502,68 @@ c.register('+3jM7', function(y, z) {
             json: v
         };
     };
-}), c.register('EPBhX', function(a, c) {
-    function d(a, b) {
-        let e = null,
-            f = null;
+}), a.register('qRZsz', function(_b, c) {
+    function d(e, f) {
+        let g = null,
+            h = null;
         return [
-            (...m) => {
-                f = () => {
-                    e = null, a(...m);
-                }, null != e && clearTimeout(e), e = window.setTimeout(f, b);
+            (..._c) => {
+                h = () => {
+                    g = null, e(..._c);
+                }, null != g && clearTimeout(g), g = window.setTimeout(h, f);
             },
             () => {
-                null != e && (clearTimeout(e), f && f());
+                null != g && (clearTimeout(g), h && h());
             }
         ];
     }
-    b(a.exports, 'default', function() {
-        return d;
+    _j(_b.exports, 'default', function() {
+        return _b;
     });
-}), c.register('8MLEB', function(l, m) {
-    b(l.exports, 'default', function() {
-        return q;
+}), a.register('0AYvY', function(_b, _c) {
+    _j(_b.exports, 'default', function() {
+        return _q;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('uj3CK'),
-        g = c('79xFw');
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('WPpLv'),
+        g = a('uAQzc');
     const h = {
-        initialXml: a(f).string,
-        initialJson: a(f).object,
-        toolboxConfiguration: a(f).object,
-        workspaceConfiguration: a(f).object,
-        className: a(f).string,
-        onWorkspaceChange: a(f).func,
-        onImportXmlError: a(f).func,
-        onImportError: a(f).func,
-        onXmlChange: a(f).func,
-        onJsonChange: a(f).func,
-        onInject: a(f).func,
-        onDispose: a(f).func
+        initialXml: _b(f).string,
+        initialJson: _b(f).object,
+        toolboxConfiguration: _b(f).object,
+        workspaceConfiguration: _b(f).object,
+        className: _b(f).string,
+        onWorkspaceChange: _b(f).func,
+        onImportXmlError: _b(f).func,
+        onImportError: _b(f).func,
+        onXmlChange: _b(f).func,
+        onJsonChange: _b(f).func,
+        onInject: _b(f).func,
+        onDispose: _b(f).func
     };
 
     function i({
-        initialXml: j,
+        initialXml: _j,
         initialJson: k,
         toolboxConfiguration: l,
         workspaceConfiguration: m,
         className: n,
         onWorkspaceChange: o,
         onXmlChange: p,
-        onJsonChange: q,
+        onJsonChange: _q,
         onImportXmlError: r,
         onImportError: s,
         onInject: t,
         onDispose: u
     }) {
-        const v = a(e).useRef(null),
+        const v = _b(e).useRef(null),
             {
                 xml: w,
                 json: x
             } = (0, g.default)({
                 ref: v,
-                initialXml: j,
+                initialXml: _j,
                 initialJson: k,
                 toolboxConfiguration: l,
                 workspaceConfiguration: m,
@@ -573,14 +573,14 @@ c.register('+3jM7', function(y, z) {
                 onInject: t,
                 onDispose: u
             }),
-            y = a(e).useRef(p);
-        a(e).useEffect(() => {
+            y = _b(e).useRef(p);
+        _b(e).useEffect(() => {
             y.current = p;
         }, [p]);
-        const z = a(e).useRef(q);
-        return a(e).useEffect(() => {
-            z.current = q;
-        }, [q]), a(e).useEffect(() => {
+        const z = _b(e).useRef(_q);
+        return _b(e).useEffect(() => {
+            z.current = _q;
+        }, [_q]), _b(e).useEffect(() => {
             y.current && w && y.current(w), z.current && x && z.current(x);
         }, [
             w,
@@ -590,7 +590,7 @@ c.register('+3jM7', function(y, z) {
             ref: v
         });
     }
-    p.propTypes = o, p.defaultProps = {
+    _m.propTypes = h, _m.defaultProps = {
         initialXml: null,
         initialJson: null,
         toolboxConfiguration: null,
@@ -604,34 +604,34 @@ c.register('+3jM7', function(y, z) {
         onInject: null,
         onDispose: null
     };
-    var v = w;
-}), c.register('ZVZgU', function(a, j) {
-    b(a.exports, 'default', function() {
-        return i;
+    var i = _m;
+}), a.register('jzeh7', function(_b, c) {
+    _q(_b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('ao9fO'),
-        e = c('7Sbqr'),
-        f = c('PvmGd'),
-        g = c('h1T4n');
-    const h = (a, b) => {
-        let i = a.deviceOption.codeGridSchema.customBlocks || [];
-        const j = (null == b ? void 0 : b.customBlocks) || [];
-        return (null == b ? void 0 : b.blockedCustomBlocks) && (i = i.filter(a => {
+    var d = a('caZad'),
+        e = a('iWivW'),
+        f = a('mdAM3'),
+        g = a('zZJfb');
+    const h = (_b, _q) => {
+        let i = _b.deviceOption.codeGridSchema.customBlocks || [];
+        const j = (null == _q ? void 0 : _q.customBlocks) || [];
+        return (null == _q ? void 0 : _q.blockedCustomBlocks) && (i = i.filter(_b => {
             var k;
-            return !(null === (k = b.blockedCustomBlocks) || void 0 === k ? void 0 : k.includes(a));
+            return !(null === (k = _q.blockedCustomBlocks) || void 0 === k ? void 0 : k.includes(_b));
         })), {
             deviceSpecificBlocks: i,
             triggerSpecificBlocks: j
         };
     };
-    var i = (a, b) => {
+    var _i = (_b, _q) => {
         var j, k;
-        let l, m = [],
+        let l, _m = [],
             n = [];
-        const o = (0, g.default)(a);
+        const o = (0, g.default)(_b);
         if (o) {
             var p, q;
-            const r = null === (p = e.default.world.devices.codeGrids.get(a)) || void 0 === p || null === (q = p.items) || void 0 === q ? void 0 : q.get(b);
+            const r = null === (p = e.default.world.devices.codeGrids.get(_b)) || void 0 === p || null === (q = p.items) || void 0 === q ? void 0 : q.get(_q);
             if (r) {
                 const s = o.deviceOption.codeGridSchema.triggers.find(s => s.type === r.triggerType);
                 var t;
@@ -641,53 +641,53 @@ c.register('+3jM7', function(y, z) {
                     l = h(o);
             }
         }
-        l && l.triggerSpecificBlocks.length && m.push({
+        l && l.triggerSpecificBlocks.length && _m.push({
             name: d.default.triggerOnly.name,
             color: d.default.triggerOnly.color,
-            blocks: l.triggerSpecificBlocks.map(a => ({
-                type: a
-            })).filter(a => (0, f.CanAddCustomBlock)(a.type))
-        }), (null == l ? void 0 : l.deviceSpecificBlocks.length) && m.push({
+            blocks: l.triggerSpecificBlocks.map(_b => ({
+                type: _b
+            })).filter(_b => (0, f.CanAddCustomBlock)(_b.type))
+        }), (null == l ? void 0 : l.deviceSpecificBlocks.length) && _m.push({
             name: d.default.deviceOnly.name,
             color: d.default.triggerOnly.color,
-            blocks: l.deviceSpecificBlocks.map(a => ({
-                type: a
-            })).filter(a => (0, f.CanAddCustomBlock)(a.type))
+            blocks: l.deviceSpecificBlocks.map(_b => ({
+                type: _b
+            })).filter(_b => (0, f.CanAddCustomBlock)(_b.type))
         });
         let p = JSON.parse((null === (j = e.default.worldOptions) || void 0 === j || null === (k = j.codeGrids) || void 0 === k ? void 0 : k.blockCategories) || '[]');
-        n.length && (p = p.map(a => ({
-            ...a,
-            blocks: a.blocks.filter(a => !n.includes(a.type))
-        }))), m = [
-            ...m,
+        n.length && (p = p.map(_b => ({
+            ..._b,
+            blocks: _b.blocks.filter(_b => !n.includes(_b.type))
+        }))), _m = [
+            ..._m,
             ...p
         ];
         return {
             kind: 'categoryToolbox',
-            contents: m.map(a => {
-                const q = a.custom ? {
-                    custom: a.custom
+            contents: _m.map(_b => {
+                const _q = _b.custom ? {
+                    custom: _b.custom
                 } : {};
                 return {
                     kind: 'category',
-                    name: a.name,
-                    colour: a.color,
+                    name: _b.name,
+                    colour: _b.color,
                     expanded: !0,
-                    contents: a.blocks.map(a => ({
+                    contents: _b.blocks.map(_b => ({
                         kind: 'block',
-                        type: a.type,
-                        message0: a.type
+                        type: _b.type,
+                        message0: _b.type
                     })),
-                    ...q
+                    ..._q
                 };
             })
         };
     };
-}), c.register('ao9fO', function(a, c) {
-    b(a.exports, 'default', function() {
-        return d;
+}), a.register('caZad', function(b, c) {
+    _g(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         triggerOnly: {
             name: 'For This Block',
             color: '#FFBF00'
@@ -697,164 +697,164 @@ c.register('+3jM7', function(y, z) {
             color: '#FFBF00'
         }
     };
-}), c.register('PvmGd', function(a, i) {
-    b(a.exports, 'CanAddCustomBlock', function() {
-        return f;
+}), a.register('mdAM3', function(b, c) {
+    _g(b.exports, 'CanAddCustomBlock', function() {
+        return _f;
     });
-    var d = c('7Sbqr'),
-        e = c('2hh8R');
-    const f = a => {
-        const g = d.default.worldOptions.codeGrids.customBlocksParsed.find(g => g.type === a);
-        if (!g)
+    var d = a('iWivW'),
+        e = a('O3NOb');
+    const _f = b => {
+        const _g = d.default.worldOptions.codeGrids.customBlocksParsed.find(_g => _g.type === b);
+        if (!_g)
             return !0;
-        const h = g.minimumRoleLevel,
-            i = g.maximumRoleLevel;
+        const h = _g.minimumRoleLevel,
+            i = _g.maximumRoleLevel;
         return (0, e.IsRoleLevelBetween)(h, i);
     };
-}), c.register('dQHV1', function(a, g) {
-    b(a.exports, 'default', function() {
-        return e;
+}), a.register('fi5uw', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('uPP4W');
-    var e = (a, b) => {
+    var d = a('LEQ5w');
+    var _e = (b, _l) => {
         const f = d.useRef(0),
             g = d.useRef(),
-            h = a => g.current = a,
+            h = b => g.current = b,
             i = d => {
-                const j = a[f.current];
+                const j = b[f.current];
                 if (!j)
                     return f.current = 0, void i(d);
                 if (j(d, g.current, h))
-                    f.current = f.current + 1, f.current === a.length && (b(g.current), f.current = 0);
+                    f.current = f.current + 1, f.current === b.length && (_l(g.current), f.current = 0);
                 else {
                     if (0 === f.current)
                         return;
                     f.current = 0, i(d);
                 }
             };
-        return [a => {
-            i(a);
+        return [b => {
+            i(b);
         }];
     };
-}), c.register('AKJ7r', function(g, f) {
-    b(g.exports, 'default', function() {
-        return e;
+}), a.register('wqlaN', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('Z+Quh');
-    var e = b => [
-        b => b.type === a(d).Events.TOOLBOX_ITEM_SELECT,
-        (c, g, f) => {
-            if (c.type === a(d).Events.CREATE && c.json && c.json.type) {
-                if (b.some(a => c.json.type.includes(a)))
-                    return f({
-                        ...g,
-                        blockId: c.blockId
+    var d = a('uaSUf');
+    var _e = _l => [
+        _l => _l.type === _h(d).Events.TOOLBOX_ITEM_SELECT,
+        (a, b, c) => {
+            if (a.type === _h(d).Events.CREATE && a.json && a.json.type) {
+                if (_l.some(_h => a.json.type.includes(_h)))
+                    return c({
+                        ...b,
+                        blockId: a.blockId
                     }), !0;
             }
             return !1;
         },
-        (b, c) => b.type === a(d).Events.SELECTED && (b.newElementId && b.newElementId === c.blockId),
-        (b, c) => !(b.type !== a(d).Events.BLOCK_DRAG || !b.isStart || b.blockId !== c.blockId),
-        (b, c, g) => {
-            if (b.type === a(d).Events.BLOCK_DRAG && !b.isStart && b.blockId === c.blockId) {
+        (_l, a) => _l.type === _h(d).Events.SELECTED && (_l.newElementId && _l.newElementId === a.blockId),
+        (_l, a) => !(_l.type !== _h(d).Events.BLOCK_DRAG || !_l.isStart || _l.blockId !== a.blockId),
+        (_l, a, b) => {
+            if (_l.type === _h(d).Events.BLOCK_DRAG && !_l.isStart && _l.blockId === a.blockId) {
                 var f, g;
-                const h = null === (f = b.blocks) || void 0 === f || null === (g = f[0]) || void 0 === g ? void 0 : g.getRelativeToSurfaceXY();
-                if (h)
-                    return g({
-                        ...c,
-                        x: h.x,
-                        y: h.y
+                const _h = null === (f = _l.blocks) || void 0 === f || null === (g = f[0]) || void 0 === g ? void 0 : g.getRelativeToSurfaceXY();
+                if (_h)
+                    return b({
+                        ...a,
+                        x: _h.x,
+                        y: _h.y
                     }), !0;
             }
             return !1;
         }
     ];
-}), c.register('DUDiB', function(g, h) {
-    b(g.exports, 'default', function() {
-        return e;
+}), a.register('Znlkb', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('Z+Quh');
-    var e = b => {
+    var d = a('uaSUf');
+    var _e = _l => {
         const {
             text: f,
             location: g,
             workspace: h
-        } = i;
-        let j = 0,
-            k = 0;
+        } = _l;
+        let i = 0,
+            j = 0;
         if (g)
-            j = g.x, k = g.y;
+            i = g.x, j = g.y;
         else {
-            const l = h.getAllBlocks(!0);
-            if (l.length) {
-                const m = l[l.length - 1].getRelativeToSurfaceXY();
-                j = m.x, k = m.y;
+            const k = h.getAllBlocks(!0);
+            if (k.length) {
+                const _l = k[k.length - 1].getRelativeToSurfaceXY();
+                i = _l.x, j = _l.y;
             }
         }
-        j += 40, k += 40, j = Math.round(j), k = Math.round(k);
-        const l = a(d).serialization.workspaces.save(h);
-        l.blocks || (l.blocks = {
+        i += 40, j += 40, i = Math.round(i), j = Math.round(j);
+        const k = _b(d).serialization.workspaces.save(h);
+        k.blocks || (k.blocks = {
             blocks: []
-        }), l.blocks.blocks.push({
+        }), k.blocks.blocks.push({
             type: 'text',
-            x: j,
-            y: k,
+            x: i,
+            y: j,
             fields: {
                 TEXT: f
             }
-        }), a(d).serialization.workspaces.load(l, h);
+        }), _b(d).serialization.workspaces.load(k, h);
     };
-}), c.register('9p9dz', function(a, c) {
-    b(a.exports, 'default', function() {
-        return d;
+}), a.register('Ggo1o', function(_b, c) {
+    _l(_b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         debouncedSaveDurationMs: 150
     };
-}), c.register('eH7P7', function(a, r) {
-    b(a.exports, 'default', function() {
-        return f;
+}), a.register('2v3ft', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('sPSvg'),
-        e = c('DM38W');
-    var f = a => {
+    var d = a('x7BBh'),
+        e = a('Quxw3');
+    var _f = b => {
         (0, e.default)(d.default.setCodeGridJSON, {
-            json: a.json,
-            deviceId: a.deviceId,
-            gridId: a.gridId
+            json: b.json,
+            deviceId: b.deviceId,
+            gridId: b.gridId
         });
     };
-}), c.register('ZYjQ5', function(a, r) {
-    b(a.exports, 'default', function() {
-        return n;
+}), a.register('QN7GP', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('YimJ0'),
-        g = c('S/jX4'),
-        h = c('4fYJk'),
-        i = c('EPKXG'),
-        j = c('c3b73');
-    let k, l, m = a => a;
-    var n = a => (0, d.jsx)(o, {
-        children: (0, d.jsxs)(p, {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('0HHAH'),
+        g = a('vShe/'),
+        h = a('/TVUI'),
+        i = a('aysQ9'),
+        j = a('Dj6qx');
+    let k, l, m = b => b;
+    var _n = b => (0, d.jsx)(_o, {
+        children: (0, d.jsxs)(_p, {
             children: [
                 (0, d.jsx)(h.default, {
-                    deviceId: a.deviceId,
-                    gridId: a.gridId
+                    deviceId: b.deviceId,
+                    gridId: b.gridId
                 }),
-                a.isOwner ? (0, d.jsx)(i.default, {
-                    blockCount: a.blockCount,
-                    openChannelBrowser: a.openChannelBrowser,
-                    openPropertyBrowser: a.openPropertyBrowser
+                b.isOwner ? (0, d.jsx)(i.default, {
+                    blockCount: b.blockCount,
+                    openChannelBrowser: b.openChannelBrowser,
+                    openPropertyBrowser: b.openPropertyBrowser
                 }) : (0, d.jsx)(j.default, {
-                    gridOwner: a.gridOwner
+                    gridOwner: b.gridOwner
                 })
             ]
         })
     });
-    const o = (0, e.default)(f.Centered).attrs({
+    const _o = (0, e.default)(f.Centered).attrs({
             className: 'maxAll'
         })(k || (k = m`
   flex-shrink: 0;
@@ -863,20 +863,20 @@ c.register('+3jM7', function(y, z) {
   padding: 25px;
   padding-right: 0px;
 `), g.default.White),
-        p = e.default.div(l || (l = m``));
-}), c.register('4fYJk', function(a, r) {
-    b(a.exports, 'default', function() {
-        return k;
+        _p = e.default.div(l || (l = m``));
+}), a.register('/TVUI', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('8kSQZ'),
-        e = c('UzdPH');
-    c('uPP4W');
-    var f = c('gSUVO'),
-        g = c('S/jX4'),
-        h = c('RJ/fk'),
-        i = c('RhbNx'),
-        j = c('l8dwR');
-    var k = a => (0, d.jsxs)(d.Fragment, {
+    var d = a('0hzx+'),
+        e = a('j2ADs');
+    a('LEQ5w');
+    var f = a('b5kvC'),
+        g = a('vShe/'),
+        h = a('qVhMZ'),
+        i = a('QVC+I'),
+        j = a('JV94u');
+    var _k = b => (0, d.jsxs)(d.Fragment, {
         children: [
             (0, d.jsx)(e.default.Text, {
                 style: {
@@ -893,25 +893,25 @@ c.register('+3jM7', function(y, z) {
                     color: g.default.White,
                     marginTop: 2
                 },
-                children: (0, j.default)(a.deviceId, a.gridId)
+                children: (0, j.default)(b.deviceId, b.gridId)
             })
         ]
     });
-}), c.register('EPKXG', function(a, r) {
-    b(a.exports, 'default', function() {
-        return k;
+}), a.register('aysQ9', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _k;
     });
-    var d = c('8kSQZ'),
-        e = c('IsmrL'),
-        f = c('5nJMd26'),
-        g = c('UzdPH');
-    c('uPP4W');
-    var h = c('PjB0f'),
-        i = c('am7L5'),
-        j = c('RhbNx');
-    var k = a => {
+    var d = a('0hzx+'),
+        e = a('ulE4q'),
+        f = a('cvto726'),
+        g = a('j2ADs');
+    a('LEQ5w');
+    var h = a('PMl60'),
+        i = a('bHGrl'),
+        j = a('QVC+I');
+    var _k = b => {
         const {
-            memorySystem: l
+            memorySystem: _l
         } = (0, i.default)();
         return (0, d.jsxs)(d.Fragment, {
             children: [
@@ -923,12 +923,12 @@ c.register('+3jM7', function(y, z) {
                     },
                     children: [
                         (0, d.jsx)(e.default, {
-                            onClick: a.openChannelBrowser,
+                            onClick: b.openChannelBrowser,
                             type: 'primary',
                             children: 'Channel Browser'
                         }),
                         (0, d.jsx)(e.default, {
-                            onClick: a.openPropertyBrowser,
+                            onClick: b.openPropertyBrowser,
                             type: 'primary',
                             children: 'Property Browser'
                         })
@@ -943,9 +943,9 @@ c.register('+3jM7', function(y, z) {
                             color: 'rgba(255,255,255,0.6)'
                         },
                         children: [
-                            (0, h.numberWithCommas)(a.blockCount),
+                            (0, h.numberWithCommas)(b.blockCount),
                             '/',
-                            (0, h.numberWithCommas)(l.limits.blocksPerCodeGrid),
+                            (0, h.numberWithCommas)(_l.limits.blocksPerCodeGrid),
                             ' ',
                             j.default.blocklyBlock.plural,
                             ' placed'
@@ -955,17 +955,17 @@ c.register('+3jM7', function(y, z) {
             ]
         });
     };
-}), c.register('c3b73', function(a, r) {
-    b(a.exports, 'default', function() {
-        return i;
+}), a.register('Dj6qx', function(b, c) {
+    _f(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('8kSQZ'),
-        e = c('ExtIT'),
-        f = c('UzdPH');
-    c('uPP4W');
-    var g = c('gSUVO'),
-        h = c('wbz0L');
-    var i = a => a.gridOwner ? (0, d.jsxs)(d.Fragment, {
+    var d = a('0hzx+'),
+        e = a('fmVdR'),
+        f = a('j2ADs');
+    a('LEQ5w');
+    var g = a('b5kvC'),
+        h = a('FuBjM');
+    var _i = b => b.gridOwner ? (0, d.jsxs)(d.Fragment, {
         children: [
             (0, d.jsx)(e.default, {
                 style: {
@@ -979,7 +979,7 @@ c.register('+3jM7', function(y, z) {
                             style: {
                                 fontWeight: g.FontWeights.Bold
                             },
-                            children: (0, h.default)(a.gridOwner)
+                            children: (0, h.default)(b.gridOwner)
                         }),
                         ' ',
                         'is currently editing this block. Only one person can edit a block at a time.'
@@ -988,28 +988,28 @@ c.register('+3jM7', function(y, z) {
             })
         ]
     }) : null;
-}), c.register('wbz0L', function(a, r) {
-    b(a.exports, 'default', function() {
-        return e;
+}), a.register('FuBjM', function(b, c) {
+    _f(b.exports, 'default', function() {
+        return _e;
     });
-    var d = c('7Sbqr');
-    var e = a => {
-        const f = d.default.characters.characters.get(a);
-        return f ? f.name : 'Player';
+    var d = a('iWivW');
+    var _e = b => {
+        const _f = d.default.characters.characters.get(b);
+        return _f ? _f.name : 'Player';
     };
-}), c.register('D7q/A', function(a, r) {
-    b(a.exports, 'Modal', function() {
-        return m;
-    }), b(a.exports, 'ContentContainer', function() {
-        return n;
-    }), b(a.exports, 'CodeGridEditor', function() {
-        return o;
+}), a.register('EuBHl', function(b, c) {
+    _p(b.exports, 'Modal', function() {
+        return _m;
+    }), _p(b.exports, 'ContentContainer', function() {
+        return _n;
+    }), _p(b.exports, 'CodeGridEditor', function() {
+        return _o;
     });
-    var d = c('b9Bct'),
-        e = c('h99Nu'),
-        f = c('S/jX4'),
-        g = c('YimJ0');
-    let h, i, j, k, l = a => a;
+    var d = a('TwXYL'),
+        e = a('Axq+p'),
+        f = a('vShe/'),
+        g = a('0HHAH');
+    let h, i, j, k, l = b => b;
     e.default.div(h || (h = l`
   height: 100%;
   width: 100%;
@@ -1018,7 +1018,7 @@ c.register('+3jM7', function(y, z) {
   align-items: center;
   background: rgba(0, 0, 0, 0.6);
 `));
-    const m = (0, e.default)(d.motion.div).attrs({
+    const _m = (0, e.default)(d.motion.div).attrs({
             className: 'flex medium-shadow'
         })(i || (i = l`
   position: relative;
@@ -1030,10 +1030,10 @@ c.register('+3jM7', function(y, z) {
   width: 90%;
   height: 90%;
 `), f.default.Black),
-        n = (0, e.default)(g.Centered).attrs({
+        _n = (0, e.default)(g.Centered).attrs({
             className: 'maxAll'
         })(j || (j = l``)),
-        o = e.default.div.attrs({
+        _o = e.default.div.attrs({
             className: 'maxAll'
         })(k || (k = l`
   .fill-height {
@@ -1055,95 +1055,95 @@ c.register('+3jM7', function(y, z) {
     filter: brightness(2);
   }
 `));
-}), c.register('4BAHF', function(a, r) {
-    b(a.exports, 'default', function() {
-        return f;
+}), a.register('OBEOK', function(b, c) {
+    _p(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('sPSvg'),
-        e = c('DM38W');
-    var f = a => {
+    var d = a('x7BBh'),
+        e = a('Quxw3');
+    var _f = b => {
         (0, e.default)(d.default.leaveCodeGrid, {
-            deviceId: a.deviceId,
-            gridId: a.gridId
+            deviceId: b.deviceId,
+            gridId: b.gridId
         });
     };
-}), c.register('04Q/S', function(a, r) {
-    b(a.exports, 'default', function() {
-        return f;
+}), a.register('lKsve', function(b, c) {
+    _p(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('sPSvg'),
-        e = c('DM38W');
-    var f = a => {
+    var d = a('x7BBh'),
+        e = a('Quxw3');
+    var _f = b => {
         (0, e.default)(d.default.joinCodeGrid, {
-            deviceId: a.deviceId,
-            gridId: a.gridId
+            deviceId: b.deviceId,
+            gridId: b.gridId
         });
     };
-}), c.register('wiVnp', function(a, r) {
-    b(a.exports, 'default', function() {
-        return o;
+}), a.register('Le6om', function(b, c) {
+    _p(b.exports, 'default', function() {
+        return _o;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('KV+OV'),
-        g = c('c6x8w'),
-        h = c('5nJMd26'),
-        i = c('UzdPH'),
-        j = c('4/f+U'),
-        k = c('+0Tb/'),
-        l = c('JahBI'),
-        m = c('lOVAA'),
-        n = c('rFtvN1');
-    var o = a => {
-        const [p, q] = e.useState(-1), [r, s] = e.useState(''), t = e.useRef(), u = (0, l.default)(a.category), v = e.useMemo(() => (0, j.orderBy)(r ? u.filter(a => a.toLowerCase().includes(r.toLowerCase())) : u, [a => a.toLowerCase()], ['asc']), [r]);
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('sgToH'),
+        g = a('ewwAh'),
+        h = a('cvto726'),
+        i = a('j2ADs'),
+        j = a('4iV4e'),
+        k = a('ryWAy'),
+        l = a('m8UaK'),
+        m = a('MM421'),
+        n = a('0PFEY');
+    var _o = b => {
+        const [_p, q] = e.useState(-1), [r, s] = e.useState(''), t = e.useRef(), u = (0, l.default)(b.category), v = e.useMemo(() => (0, j.orderBy)(r ? u.filter(b => b.toLowerCase().includes(r.toLowerCase())) : u, [b => b.toLowerCase()], ['asc']), [r]);
         (0, k.default)(Phaser.Input.Keyboard.KeyCodes.DOWN, () => {
-            const w = p + 1;
+            const w = _p + 1;
             v[w] && q(w);
         }, [
             v.length,
-            p
+            _p
         ]), (0, k.default)(Phaser.Input.Keyboard.KeyCodes.UP, () => {
-            if (-1 === p)
+            if (-1 === _p)
                 return;
-            const w = Math.max(0, p - 1);
+            const w = Math.max(0, _p - 1);
             q(w);
         }, [
             v.length,
-            p
+            _p
         ]);
-        const w = p => {
-            a.onItemSelected(p), a.close();
+        const w = _p => {
+            b.onItemSelected(_p), b.close();
         };
         return (0, d.jsx)('div', {
             onClick: n.default,
             children: (0, d.jsxs)(f.default, {
-                open: a.visible,
-                onClose: p => {
-                    p.stopPropagation(), a.close();
+                open: b.visible,
+                onClose: _p => {
+                    _p.stopPropagation(), b.close();
                 },
                 placement: 'right',
                 width: 400,
-                afterOpenChange: a => {
+                afterOpenChange: b => {
                     var x;
-                    s(''), q(-1), a && (null == t || null === (x = t.current) || void 0 === x || x.focus());
+                    s(''), q(-1), b && (null == t || null === (x = t.current) || void 0 === x || x.focus());
                 },
-                title: a.title,
+                title: b.title,
                 children: [
                     (0, d.jsx)(g.default, {
                         ref: t,
                         size: 'large',
                         className: 'maxWidth',
-                        placeholder: a.searchPlaceholder,
+                        placeholder: b.searchPlaceholder,
                         style: {
                             marginBottom: 20
                         },
                         allowClear: !0,
                         value: r,
-                        onChange: a => {
-                            s(a.target.value), q(0);
+                        onChange: b => {
+                            s(b.target.value), q(0);
                         },
                         onPressEnter: () => {
-                            const x = v[p];
+                            const x = v[_p];
                             if (x)
                                 w(x);
                             else {
@@ -1157,46 +1157,46 @@ c.register('+3jM7', function(y, z) {
                         className: 'maxWidth',
                         direction: 'vertical',
                         size: 8,
-                        children: v.map((a, q) => (0, d.jsx)(m.default, {
-                            name: a,
-                            focused: p === q,
-                            onSelect: () => w(a)
-                        }, a))
+                        children: v.map((b, q) => (0, d.jsx)(m.default, {
+                            name: b,
+                            focused: _p === q,
+                            onSelect: () => w(b)
+                        }, b))
                     }) : (0, d.jsx)(i.default.Text, {
-                        children: a.noResultsFilteredText
+                        children: b.noResultsFilteredText
                     }) : (0, d.jsx)(i.default.Text, {
-                        children: a.noResultsText
+                        children: b.noResultsText
                     })
                 ]
             })
         });
     };
-}), c.register('lOVAA', function(a, o) {
-    b(a.exports, 'default', function() {
-        return i;
+}), a.register('MM421', function(b, c) {
+    _j(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('h99Nu'),
-        f = c('KlhV/'),
-        g = c('UzdPH');
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('cH8qQ'),
+        g = a('j2ADs');
     let h;
-    var i = a => {
+    var _i = b => {
         const {
             token: {
-                borderRadius: j
+                borderRadius: _j
             }
         } = f.default.useToken();
-        return (0, d.jsx)(j, {
-            borderRadius: j,
-            focused: a.focused,
-            onClick: a.onSelect,
+        return (0, d.jsx)(_j, {
+            borderRadius: _j,
+            focused: b.focused,
+            onClick: b.onSelect,
             children: (0, d.jsx)(g.default.Text, {
-                children: a.name
+                children: b.name
             })
         });
     };
-    const j = e.default.div(h || (h = (a => a)`
+    const _j = e.default.div(h || (h = (b => b)`
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   border-radius: ${ 0 }px;
@@ -1208,5 +1208,5 @@ c.register('+3jM7', function(y, z) {
   &:hover {
     background: rgba(255, 255, 255, 0.25);
   }
-`), a => a.borderRadius, a => a.focused ? '#ffca28' : 'rgba(255, 255, 255, 0.1)');
+`), b => b.borderRadius, b => b.focused ? '#ffca28' : 'rgba(255, 255, 255, 0.1)');
 });

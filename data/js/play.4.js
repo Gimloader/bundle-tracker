@@ -1,75 +1,75 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('4GmKU', function(j, k) {
-    var b, c, d, e, f;
-    j.exports, j.exports = (e = a('9kmux'), f = a('uPP4W'), b = {
-        21: function(a, j, k) {
-            var g = this && this.__createBinding || (Object.create ? function(a, j, k, g) {
-                    void 0 === g && (g = k);
-                    var h = Object.getOwnPropertyDescriptor(j, k);
-                    h && !('get' in h ? !j.__esModule : h.writable || h.configurable) || (h = {
+a.register('5GGbn', function(b, c) {
+    var d, e, f, g, h;
+    b.exports, b.exports = (g = a('XRZOB'), h = a('LEQ5w'), d = {
+        21: function(i, j, k) {
+            var l = this && this.__createBinding || (Object.create ? function(m, n, o, p) {
+                    void 0 === p && (p = o);
+                    var q = Object.getOwnPropertyDescriptor(n, o);
+                    q && !('get' in q ? !n.__esModule : q.writable || q.configurable) || (q = {
                         enumerable: !0,
                         get: function() {
-                            return j[k];
+                            return n[o];
                         }
-                    }), Object.defineProperty(a, g, h);
-                } : function(a, j, k, g) {
-                    void 0 === g && (g = k), a[g] = j[k];
+                    }), Object.defineProperty(m, p, q);
+                } : function(m, n, o, p) {
+                    void 0 === p && (p = o), m[p] = n[o];
                 }),
-                h = this && this.__setModuleDefault || (Object.create ? function(a, j) {
-                    Object.defineProperty(a, 'default', {
+                m = this && this.__setModuleDefault || (Object.create ? function(n, o) {
+                    Object.defineProperty(n, 'default', {
                         enumerable: !0,
-                        value: j
+                        value: o
                     });
-                } : function(a, j) {
-                    a.default = j;
+                } : function(n, o) {
+                    n.default = o;
                 }),
-                i = this && this.__importStar || function(a) {
-                    if (a && a.__esModule)
-                        return a;
-                    var j = {};
-                    if (null != a)
-                        for (var k in a)
-                            'default' !== k && Object.prototype.hasOwnProperty.call(a, k) && g(j, a, k);
-                    return h(j, a), j;
+                n = this && this.__importStar || function(o) {
+                    if (o && o.__esModule)
+                        return o;
+                    var p = {};
+                    if (null != o)
+                        for (var q in o)
+                            'default' !== q && Object.prototype.hasOwnProperty.call(o, q) && l(p, o, q);
+                    return m(p, o), p;
                 };
-            Object.defineProperty(l, '__esModule', {
+            Object.defineProperty(j, '__esModule', {
                 value: !0
-            }), l.Fireworks = l.useFireworks = void 0;
-            var j = i(m(156)),
-                k = m(522);
-            l.useFireworks = a => {
+            }), j.Fireworks = j.useFireworks = void 0;
+            var o = n(k(156)),
+                p = k(522);
+            j.useFireworks = i => {
                 var {
-                    initialStart: l = !0,
-                    initialOptions: m = {}
-                } = n, [o, p] = (0, j.useState)(l), [q, r] = (0, j.useState)(m);
+                    initialStart: q = !0,
+                    initialOptions: r = {}
+                } = i, [s, t] = (0, o.useState)(q), [u, v] = (0, o.useState)(r);
                 return {
-                    enabled: o,
-                    options: q,
-                    setOptions: r,
-                    setEnabled: n => {
-                        p(l => null != n ? n : !l);
+                    enabled: s,
+                    options: u,
+                    setOptions: v,
+                    setEnabled: i => {
+                        t(q => null != i ? i : !q);
                     }
                 };
             };
-            class l extends j.Component {
+            class q extends o.Component {
                 componentDidMount() {
-                    this._ref && (this._fw = new k.Fireworks(this._ref, this.props.options), this.toggleStart());
+                    this._ref && (this._fw = new p.Fireworks(this._ref, this.props.options), this.toggleStart());
                 }
                 componentDidUpdate() {
-                    var m;
-                    this.toggleStart(), this.props.options && (null === (m = this._fw) || void 0 === m || m.setOptions(Object.assign({}, this.props.options)));
+                    var r;
+                    this.toggleStart(), this.props.options && (null === (r = this._fw) || void 0 === r || r.setOptions(Object.assign({}, this.props.options)));
                 }
                 componentWillUnmount() {
-                    var n, o;
-                    null === (n = this._fw) || void 0 === n || n.unmount(), null === (o = this._fw) || void 0 === o || o.stop();
+                    var r, s;
+                    null === (r = this._fw) || void 0 === r || r.unmount(), null === (s = this._fw) || void 0 === s || s.stop();
                 }
                 toggleStart() {
-                    var p, q;
-                    this.props.enabled ? null === (p = this._fw) || void 0 === p || p.start() : null === (q = this._fw) || void 0 === q || q.stop();
+                    var r, s;
+                    this.props.enabled ? null === (r = this._fw) || void 0 === r || r.start() : null === (s = this._fw) || void 0 === s || s.stop();
                 }
                 render() {
-                    return j.default.createElement('div', {
-                        ref: p => this._ref = p,
+                    return o.default.createElement('div', {
+                        ref: i => this._ref = i,
                         className: this.props.className,
                         children: this.props.children,
                         style: this.props.style
@@ -79,139 +79,139 @@ a.register('4GmKU', function(j, k) {
                     super(...arguments), this._fw = null, this._ref = null;
                 }
             }
-            d.Fireworks = l, l.defaultProps = {
+            j.Fireworks = q, q.defaultProps = {
                 enabled: !0
             };
         },
         522: a => {
-            a.exports = e;
+            a.exports = g;
         },
         156: a => {
-            a.exports = f;
+            a.exports = h;
         }
-    }, c = {}, d = function a(d) {
-        var g = c[d];
-        if (void 0 !== g)
-            return g.exports;
-        var h = c[d] = {
+    }, e = {}, f = function a(i) {
+        var j = e[i];
+        if (void 0 !== j)
+            return j.exports;
+        var k = e[i] = {
             exports: {}
         };
-        return b[d].call(h.exports, h, h.exports, a), h.exports;
-    }(21), d);
-}), a.register('9kmux', function(a, d) {
-    a.exports, a.exports = (() => {
-        var b = {
-                511: (b, d, e) => {
-                    Object.defineProperty(d, '__esModule', {
+        return d[i].call(k.exports, k, k.exports, a), k.exports;
+    }(21), f);
+}), a.register('XRZOB', function(b, c) {
+    b.exports, b.exports = (() => {
+        var d = {
+                511: (d, c, _h) => {
+                    Object.defineProperty(c, '__esModule', {
                         value: !0
-                    }), d.Explosion = void 0;
-                    var c = e(909);
-                    d.Explosion = class {
-                        update(b) {
+                    }), c.Explosion = void 0;
+                    var e = _h(909);
+                    c.Explosion = class {
+                        update(f) {
                             this._coordinates.pop(), this._coordinates.unshift([
                                 this._x,
                                 this._y
-                            ]), this._speed *= this._friction, this._x += Math.cos(this._angle) * this._speed, this._y += Math.sin(this._angle) * this._speed + this._gravity, this._alpha -= this._decay, this._alpha <= this._decay && b();
+                            ]), this._speed *= this._friction, this._x += Math.cos(this._angle) * this._speed, this._y += Math.sin(this._angle) * this._speed + this._gravity, this._alpha -= this._decay, this._alpha <= this._decay && f();
                         }
                         draw() {
-                            var d = this._coordinates.length - 1;
-                            this._ctx.beginPath(), this._ctx.lineWidth = this._lineWidth, this._ctx.fillStyle = (0, c.hsla)(this._hue, this._brightness, this._alpha), this._ctx.moveTo(this._coordinates[d][0], this._coordinates[d][1]), this._ctx.lineTo(this._x, this._y), this._ctx.strokeStyle = (0, c.hsla)(this._hue, this._flickering ? (0, c.randomFloat)(0, this._brightness) : this._brightness, this._alpha), this._ctx.stroke();
+                            var f = this._coordinates.length - 1;
+                            this._ctx.beginPath(), this._ctx.lineWidth = this._lineWidth, this._ctx.fillStyle = (0, e.hsla)(this._hue, this._brightness, this._alpha), this._ctx.moveTo(this._coordinates[f][0], this._coordinates[f][1]), this._ctx.lineTo(this._x, this._y), this._ctx.strokeStyle = (0, e.hsla)(this._hue, this._flickering ? (0, e.randomFloat)(0, this._brightness) : this._brightness, this._alpha), this._ctx.stroke();
                         }
-                        constructor(b) {
+                        constructor(f) {
                             var {
-                                x: d,
-                                y: e,
-                                ctx: f,
-                                hue: g,
-                                gravity: h,
-                                friction: i,
-                                brightness: j,
-                                flickering: k,
-                                lineWidth: l,
-                                explosionLength: m
-                            } = n;
-                            for (this._coordinates = [], this._alpha = 1, this._x = d, this._y = e, this._ctx = f, this._gravity = h, this._friction = i, this._flickering = k, this._lineWidth = l, this._explosionLength = m; this._explosionLength--;)
+                                x: g,
+                                y: _h,
+                                ctx: i,
+                                hue: j,
+                                gravity: k,
+                                friction: l,
+                                brightness: m,
+                                flickering: n,
+                                lineWidth: o,
+                                explosionLength: p
+                            } = f;
+                            for (this._coordinates = [], this._alpha = 1, this._x = g, this._y = _h, this._ctx = i, this._gravity = k, this._friction = l, this._flickering = n, this._lineWidth = o, this._explosionLength = p; this._explosionLength--;)
                                 this._coordinates.push([
-                                    d,
-                                    e
+                                    g,
+                                    _h
                                 ]);
-                            this._angle = (0, c.randomFloat)(0, 2 * Math.PI), this._speed = (0, c.randomInt)(1, 10), this._hue = (0, c.randomInt)(g - 20, g + 20), this._brightness = (0, c.randomInt)(j.min, j.max), this._decay = (0, c.randomFloat)(j.decay.min, j.decay.max);
+                            this._angle = (0, e.randomFloat)(0, 2 * Math.PI), this._speed = (0, e.randomInt)(1, 10), this._hue = (0, e.randomInt)(j - 20, j + 20), this._brightness = (0, e.randomInt)(m.min, m.max), this._decay = (0, e.randomFloat)(m.decay.min, m.decay.max);
                         }
                     };
                 },
-                909: (b, g) => {
-                    Object.defineProperty(g, '__esModule', {
+                909: (d, c) => {
+                    Object.defineProperty(c, '__esModule', {
                         value: !0
-                    }), g.hsla = g.getDistance = g.randomInt = g.randomFloat = void 0, g.randomFloat = function(b, g) {
-                        return Math.random() * (g - b) + b;
-                    }, g.randomInt = function(b, g) {
-                        return Math.floor(b + Math.random() * (g + 1 - b));
-                    }, g.getDistance = function(b, g, c, c) {
-                        var c = Math.pow;
-                        return Math.sqrt(c(b - c, 2) + c(g - c, 2));
-                    }, g.hsla = function(b, g) {
-                        var c = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
-                        return 'hsla('.concat(b, ', 100%, ').concat(g, '%, ').concat(c, ')');
+                    }), c.hsla = c.getDistance = c.randomInt = c.randomFloat = void 0, c.randomFloat = function(e, f) {
+                        return Math.random() * (f - e) + e;
+                    }, c.randomInt = function(e, f) {
+                        return Math.floor(e + Math.random() * (f + 1 - e));
+                    }, c.getDistance = function(e, f, g, h) {
+                        var i = Math.pow;
+                        return Math.sqrt(i(e - g, 2) + i(f - h, 2));
+                    }, c.hsla = function(e, f) {
+                        var g = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
+                        return 'hsla('.concat(e, ', 100%, ').concat(f, '%, ').concat(g, ')');
                     };
                 },
-                449: function(b, g, i) {
-                    var c = this && this.__awaiter || function(b, g, i, c) {
-                        return new(i || (i = Promise))(function(d, g) {
-                            function d(b) {
+                449: function(e, f, g) {
+                    var h = this && this.__awaiter || function(i, j, k, l) {
+                        return new(k || (k = Promise))(function(m, n) {
+                            function o(p) {
                                 try {
-                                    f(c.next(b));
-                                } catch (b) {
-                                    g(b);
+                                    _o(l.next(p));
+                                } catch (p) {
+                                    n(p);
                                 }
                             }
 
-                            function e(b) {
+                            function o(p) {
                                 try {
-                                    f(c.throw(b));
-                                } catch (b) {
-                                    g(b);
+                                    _o(l.throw(p));
+                                } catch (p) {
+                                    n(p);
                                 }
                             }
 
-                            function f(b) {
-                                var g;
-                                b.done ? d(b.value) : (g = b.value, g instanceof i ? g : new i(function(b) {
-                                    b(g);
-                                })).then(d, e);
+                            function _o(p) {
+                                var q;
+                                p.done ? m(p.value) : (q = p.value, q instanceof k ? q : new k(function(r) {
+                                    r(q);
+                                })).then(_k, _l);
                             }
-                            f((c = c.apply(b, f || [])).next());
+                            _m((l = l.apply(i, j || [])).next());
                         });
                     };
                     Object.defineProperty(f, '__esModule', {
                         value: !0
                     }), f.Sound = void 0;
-                    var d = i(909);
+                    var i = g(909);
                     f.Sound = class {
                         init() {
                             this.onInit && this.options.enabled && (this.onInit = !1, this._audioContext = new(window.AudioContext || window.webkitAudioContext)(), this.load());
                         }
                         load() {
-                            return c(this, void 0, void 0, function*() {
-                                for (var e of this.options.files) {
-                                    var f = yield(yield fetch(e)).arrayBuffer();
-                                    this._audioContext.decodeAudioData(f).then(e => {
-                                        this._buffer.push(e);
-                                    }).catch(e => {
-                                        throw e;
+                            return h(this, void 0, void 0, function*() {
+                                for (var j of this.options.files) {
+                                    var k = yield(yield fetch(j)).arrayBuffer();
+                                    this._audioContext.decodeAudioData(k).then(j => {
+                                        this._buffer.push(j);
+                                    }).catch(j => {
+                                        throw j;
                                     });
                                 }
                             });
                         }
                         play() {
                             if (this.options.enabled && this._buffer.length) {
-                                var g = this._audioContext.createBufferSource(),
-                                    h = this._buffer[(0, d.randomInt)(0, this._buffer.length - 1)],
-                                    i = this._audioContext.createGain();
-                                g.buffer = h, i.gain.value = (0, d.randomFloat)(this.options.volume.min / 100, this.options.volume.max / 100), i.connect(this._audioContext.destination), g.connect(i), g.start(0);
+                                var j = this._audioContext.createBufferSource(),
+                                    k = this._buffer[(0, i.randomInt)(0, this._buffer.length - 1)],
+                                    l = this._audioContext.createGain();
+                                j.buffer = k, l.gain.value = (0, i.randomFloat)(this.options.volume.min / 100, this.options.volume.max / 100), l.connect(this._audioContext.destination), j.connect(l), j.start(0);
                             } else
                                 this.init();
                         }
-                        constructor(b) {
+                        constructor(j) {
                             this._buffer = [], this.onInit = !0, this.options = Object.assign({
                                 enabled: !1,
                                 files: [
@@ -223,73 +223,73 @@ a.register('4GmKU', function(j, k) {
                                     min: 4,
                                     max: 8
                                 }
-                            }, b), this.init();
+                            }, j), this.init();
                         }
                     };
                 },
-                668: (b, d, e) => {
-                    Object.defineProperty(d, '__esModule', {
+                668: (d, c, _h) => {
+                    Object.defineProperty(c, '__esModule', {
                         value: !0
-                    }), d.Trace = void 0;
-                    var c = e(909);
-                    d.Trace = class {
-                        update(b) {
+                    }), c.Trace = void 0;
+                    var e = _h(909);
+                    c.Trace = class {
+                        update(f) {
                             this._coordinates.pop(), this._coordinates.unshift([
                                 this._x,
                                 this._y
                             ]), this._speed *= this._acceleration;
-                            var d = Math.cos(this._angle) * this._speed,
-                                e = Math.sin(this._angle) * this._speed;
-                            this._currentDistance = (0, c.getDistance)(this._sx, this._sy, this._x + d, this._y + e), this._currentDistance >= this._totalDistance ? b(this._dx, this._dy, this._hue) : (this._x += d, this._y += e);
+                            var g = Math.cos(this._angle) * this._speed,
+                                _h = Math.sin(this._angle) * this._speed;
+                            this._currentDistance = (0, e.getDistance)(this._sx, this._sy, this._x + g, this._y + _h), this._currentDistance >= this._totalDistance ? f(this._dx, this._dy, this._hue) : (this._x += g, this._y += _h);
                         }
                         draw() {
                             var f = this._coordinates.length - 1;
-                            this._ctx.beginPath(), this._ctx.moveTo(this._coordinates[f][0], this._coordinates[f][1]), this._ctx.lineTo(this._x, this._y), this._ctx.strokeStyle = (0, c.hsla)(this._hue, this._brightness), this._ctx.stroke();
+                            this._ctx.beginPath(), this._ctx.moveTo(this._coordinates[f][0], this._coordinates[f][1]), this._ctx.lineTo(this._x, this._y), this._ctx.strokeStyle = (0, e.hsla)(this._hue, this._brightness), this._ctx.stroke();
                         }
-                        constructor(b) {
+                        constructor(f) {
                             var {
-                                x: d,
-                                y: e,
-                                dx: f,
-                                dy: g,
-                                ctx: h,
-                                hue: i,
-                                speed: j,
-                                traceLength: k,
-                                acceleration: l
-                            } = m;
-                            for (this._coordinates = [], this._currentDistance = 0, this._x = d, this._y = e, this._sx = d, this._sy = e, this._dx = f, this._dy = g, this._ctx = h, this._hue = i, this._speed = j, this._traceLength = k, this._acceleration = l, this._totalDistance = (0, c.getDistance)(d, e, f, g); this._traceLength--;)
+                                x: g,
+                                y: h,
+                                dx: i,
+                                dy: j,
+                                ctx: _k,
+                                hue: _l,
+                                speed: _m,
+                                traceLength: n,
+                                acceleration: o
+                            } = f;
+                            for (this._coordinates = [], this._currentDistance = 0, this._x = g, this._y = h, this._sx = g, this._sy = h, this._dx = i, this._dy = j, this._ctx = _k, this._hue = _l, this._speed = _m, this._traceLength = n, this._acceleration = o, this._totalDistance = (0, e.getDistance)(g, h, i, j); this._traceLength--;)
                                 this._coordinates.push([
-                                    d,
-                                    e
+                                    g,
+                                    h
                                 ]);
-                            this._angle = Math.atan2(g - e, f - d), this._brightness = (0, c.randomInt)(50, 70);
+                            this._angle = Math.atan2(j - h, i - g), this._brightness = (0, e.randomInt)(50, 70);
                         }
                     };
                 }
             },
-            c = {};
+            e = {};
 
-        function d(e) {
-            var e = c[e];
-            if (void 0 !== e)
-                return e.exports;
-            var f = c[e] = {
+        function f(g) {
+            var h = e[g];
+            if (void 0 !== h)
+                return h.exports;
+            var i = e[g] = {
                 exports: {}
             };
-            return b[e].call(f.exports, f, f.exports, d), f.exports;
+            return d[g].call(i.exports, i, i.exports, f), i.exports;
         }
-        var e = {};
+        var f = {};
         return (() => {
-            var f = g;
-            Object.defineProperty(f, '__esModule', {
+            var g = f;
+            Object.defineProperty(g, '__esModule', {
                 value: !0
-            }), f.Fireworks = void 0;
-            var h = d(668),
-                i = d(449),
-                j = d(511),
-                k = d(909);
-            f.Fireworks = class {
+            }), g.Fireworks = void 0;
+            var h = _n(668),
+                i = _n(449),
+                j = _n(511),
+                k = _n(909);
+            g.Fireworks = class {
                 get isRunning() {
                     return this._running;
                 }
@@ -311,41 +311,41 @@ a.register('4GmKU', function(j, k) {
                 clear() {
                     this._ctx && (this._traces = [], this._explosions = [], this._ctx.clearRect(0, 0, this._width, this._height));
                 }
-                setOptions(f) {
-                    for (var [l, m] of Object.entries(f)) {
-                        var n = Object.prototype.hasOwnProperty.call(this, l);
-                        if ('function' == typeof this[l])
+                setOptions(l) {
+                    for (var [m, _n] of Object.entries(l)) {
+                        var o = Object.prototype.hasOwnProperty.call(this, m);
+                        if ('function' == typeof this[m])
                             throw new Error('You cannot change the methods of the class!');
-                        n && ('object' == typeof this[l] ? Object.assign(this[l], m) : this[l] = m), 'sound' === l && Object.assign(this._sound.options, m);
+                        o && ('object' == typeof this[m] ? Object.assign(this[m], _n) : this[m] = _n), 'sound' === m && Object.assign(this._sound.options, _n);
                     }
                 }
                 setSize() {
                     var {
-                        width: n = this._container instanceof HTMLCanvasElement ? this._canvas.width : this._container.clientWidth,
-                        height: o = this._container instanceof HTMLCanvasElement ? this._canvas.height : this._container.clientHeight
+                        width: l = this._container instanceof HTMLCanvasElement ? this._canvas.width : this._container.clientWidth,
+                        height: m = this._container instanceof HTMLCanvasElement ? this._canvas.height : this._container.clientHeight
                     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    this._width = n, this._height = o, this._canvas.width = n, this._canvas.height = o, this.setBoundaries({
-                        width: n,
-                        height: o
+                    this._width = l, this._height = m, this._canvas.width = l, this._canvas.height = m, this.setBoundaries({
+                        width: l,
+                        height: m
                     });
                 }
-                setBoundaries(f) {
-                    this.boundaries = Object.assign(Object.assign({}, this.boundaries), f);
+                setBoundaries(l) {
+                    this.boundaries = Object.assign(Object.assign({}, this.boundaries), l);
                 }
-                useMouse(f, h) {
-                    (this.mouse.click || this.mouse.move) && (this._mx = f.pageX - this._canvas.offsetLeft, this._my = f.pageY - this._canvas.offsetTop, this._m = h);
+                useMouse(l, m) {
+                    (this.mouse.click || this.mouse.move) && (this._mx = l.pageX - this._canvas.offsetLeft, this._my = l.pageY - this._canvas.offsetTop, this._m = m);
                 }
                 windowResize() {
                     this.setSize();
                 }
-                mouseDown(f) {
-                    this.useMouse(f, this.mouse.click);
+                mouseDown(l) {
+                    this.useMouse(l, this.mouse.click);
                 }
-                mouseUp(f) {
-                    this.useMouse(f, !1);
+                mouseUp(l) {
+                    this.useMouse(l, !1);
                 }
-                mouseMove(f) {
-                    this.useMouse(f, this._m);
+                mouseMove(l) {
+                    this.useMouse(l, this._m);
                 }
                 render() {
                     var l = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this._timestamp;
@@ -372,19 +372,19 @@ a.register('4GmKU', function(j, k) {
                     })), this._tick = 0);
                 }
                 drawTrace() {
-                    var m = this._traces.length;
-                    for (this._ctx.lineWidth = (0, k.randomFloat)(this.lineWidth.trace.min, this.lineWidth.trace.max); m--;)
-                        this._traces[m].draw(), this._traces[m].update((h, d, g) => {
-                            this.initExplosion(h, d, g), this._sound.play(), this._traces.splice(m, 1);
+                    var l = this._traces.length;
+                    for (this._ctx.lineWidth = (0, k.randomFloat)(this.lineWidth.trace.min, this.lineWidth.trace.max); l--;)
+                        this._traces[l].draw(), this._traces[l].update((h, _n, f) => {
+                            this.initExplosion(h, _n, f), this._sound.play(), this._traces.splice(l, 1);
                         });
                 }
-                initExplosion(f, h, d) {
-                    for (var l = this.particles; l--;)
+                initExplosion(l, m, _n) {
+                    for (var o = this.particles; o--;)
                         this._explosions.push(new j.Explosion({
-                            x: f,
-                            y: h,
+                            x: l,
+                            y: m,
                             ctx: this._ctx,
-                            hue: d,
+                            hue: _n,
                             friction: this.friction,
                             gravity: this.gravity,
                             flickering: (0, k.randomInt)(0, 100) <= this.flickering,
@@ -394,45 +394,45 @@ a.register('4GmKU', function(j, k) {
                         }));
                 }
                 drawExplosion() {
-                    for (var m = this._explosions.length; m--;)
-                        this._explosions[m].draw(), this._explosions[m].update(() => {
-                            this._explosions.splice(m, 1);
+                    for (var l = this._explosions.length; l--;)
+                        this._explosions[l].draw(), this._explosions[l].update(() => {
+                            this._explosions.splice(l, 1);
                         });
                 }
-                constructor(f) {
+                constructor(l) {
                     var {
-                        autoresize: l = !0,
-                        boundaries: m,
-                        brightness: n,
-                        delay: o,
-                        hue: p,
-                        mouse: q,
-                        sound: r,
-                        rocketsPoint: s,
-                        lineWidth: t,
-                        lineStyle: u = 'round',
-                        flickering: v = 50,
-                        trace: w = 3,
-                        traceSpeed: x = 10,
-                        intensity: y = 30,
-                        explosion: z = 5,
-                        gravity: A = 1.5,
-                        opacity: B = 0.5,
-                        particles: C = 50,
-                        friction: D = 0.95,
-                        acceleration: E = 1.05
+                        autoresize: m = !0,
+                        boundaries: n,
+                        brightness: o,
+                        delay: p,
+                        hue: q,
+                        mouse: r,
+                        sound: s,
+                        rocketsPoint: t,
+                        lineWidth: u,
+                        lineStyle: v = 'round',
+                        flickering: w = 50,
+                        trace: x = 3,
+                        traceSpeed: y = 10,
+                        intensity: z = 30,
+                        explosion: A = 5,
+                        gravity: B = 1.5,
+                        opacity: C = 0.5,
+                        particles: D = 50,
+                        friction: E = 0.95,
+                        acceleration: F = 1.05
                     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                    this._tick = 0, this._timestamp = performance.now(), this._version = '1.4.0', this._running = !1, this._m = !1, f instanceof HTMLCanvasElement ? (this._container = f, this._canvas = f) : (this._container = f, this._canvas = document.createElement('canvas'), this._container.appendChild(this._canvas)), this._ctx = this._canvas.getContext('2d'), this._sound = new i.Sound(r), this.setSize(), this.setBoundaries(Object.assign({
+                    this._tick = 0, this._timestamp = performance.now(), this._version = '1.4.0', this._running = !1, this._m = !1, l instanceof HTMLCanvasElement ? (this._container = l, this._canvas = l) : (this._container = l, this._canvas = document.createElement('canvas'), this._container.appendChild(this._canvas)), this._ctx = this._canvas.getContext('2d'), this._sound = new i.Sound(s), this.setSize(), this.setBoundaries(Object.assign({
                         visible: !1,
                         x: 50,
                         y: 50
-                    }, m)), this.autoresize = l, this.trace = w, this.explosion = z, this.gravity = A, this.opacity = B, this.particles = C, this.friction = D, this.acceleration = E, this.flickering = v, this.intensity = y, this.traceSpeed = x, this.lineStyle = u, this.hue = Object.assign({
+                    }, n)), this.autoresize = m, this.trace = x, this.explosion = A, this.gravity = B, this.opacity = C, this.particles = D, this.friction = E, this.acceleration = F, this.flickering = w, this.intensity = z, this.traceSpeed = y, this.lineStyle = v, this.hue = Object.assign({
                         min: 0,
                         max: 360
-                    }, p), this.rocketsPoint = Object.assign({
+                    }, q), this.rocketsPoint = Object.assign({
                         min: 50,
                         max: 50
-                    }, s), this.lineWidth = Object.assign({
+                    }, t), this.lineWidth = Object.assign({
                         explosion: {
                             min: 1,
                             max: 3
@@ -441,23 +441,23 @@ a.register('4GmKU', function(j, k) {
                             min: 1,
                             max: 2
                         }
-                    }, t), this.mouse = Object.assign({
+                    }, u), this.mouse = Object.assign({
                         click: !1,
                         move: !1,
                         max: 1
-                    }, q), this.delay = Object.assign({
+                    }, r), this.delay = Object.assign({
                         min: 15,
                         max: 30
-                    }, o), this.brightness = Object.assign({
+                    }, p), this.brightness = Object.assign({
                         min: 50,
                         max: 80,
                         decay: {
                             min: 0.015,
                             max: 0.03
                         }
-                    }, n), this.autoresize && window.addEventListener('resize', () => this.windowResize()), this._canvas.addEventListener('mousedown', f => this.mouseDown(f)), this._canvas.addEventListener('mouseup', f => this.mouseUp(f)), this._canvas.addEventListener('mousemove', f => this.mouseMove(f));
+                    }, o), this.autoresize && window.addEventListener('resize', () => this.windowResize()), this._canvas.addEventListener('mousedown', l => this.mouseDown(l)), this._canvas.addEventListener('mouseup', l => this.mouseUp(l)), this._canvas.addEventListener('mousemove', l => this.mouseMove(l));
                 }
             };
-        })(), e;
+        })(), f;
     })();
 });

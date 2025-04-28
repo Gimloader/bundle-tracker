@@ -1,136 +1,136 @@
-function a(a, b, r, c) {
-    Object.defineProperty(a, b, {
-        get: r,
-        set: c,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('TO2ej', function(r, c) {
-    var c;
-    c = r.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('CbW7q', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(r.exports, 'default', function() {
-        return p;
+    }), _q(b.exports, 'default', function() {
+        return _q;
     });
-    var d = b('UM8oI'),
-        e = b('sgILU'),
-        f = b('npgvx'),
-        g = b('cMsWT'),
-        h = b('5Ux1a'),
-        i = b('Bpt+p'),
-        j = b('/Lvpl17'),
-        k = b('3670e'),
-        l = b('wSwKo5');
-    let m;
-    var n;
-    (n = m || (m = {})).idleActive = 'idle-active', n.idleInactive = 'idle-inactive', n.explode = 'explode', n.reactivate = 'reactivate';
-    class o extends e.default {
-        constructor(a) {
-            super(a), (0, d.default)(this, 'use', () => {
-                this.playAnimation(m.explode);
-            }), (0, d.default)(this, 'recharge', () => {
-                this.state.active && this.playAnimation(m.reactivate);
-            }), (0, d.default)(this, 'activate', () => {
-                this.state.charged && this.playAnimation(m.idleActive);
-            }), (0, d.default)(this, 'deactivate', () => {
-                this.playAnimation(m.idleInactive);
-            }), (0, d.default)(this, 'playAnimation', a => {
+    var e = a('1bFPu'),
+        f = a('I35Ay'),
+        g = a('zjQC8'),
+        h = a('JqBF0'),
+        i = a('/pbxo'),
+        j = a('9tz3H'),
+        k = a('R2Ucl10'),
+        l = a('wduhO'),
+        m = a('IFO6W13');
+    let n;
+    var o;
+    (o = n || (n = {})).idleActive = 'idle-active', o.idleInactive = 'idle-inactive', o.explode = 'explode', o.reactivate = 'reactivate';
+    class p extends f.default {
+        constructor(_q) {
+            super(_q), (0, e.default)(this, 'use', () => {
+                this.playAnimation(n.explode);
+            }), (0, e.default)(this, 'recharge', () => {
+                this.state.active && this.playAnimation(n.reactivate);
+            }), (0, e.default)(this, 'activate', () => {
+                this.state.charged && this.playAnimation(n.idleActive);
+            }), (0, e.default)(this, 'deactivate', () => {
+                this.playAnimation(n.idleInactive);
+            }), (0, e.default)(this, 'playAnimation', _q => {
                 if (!this.spine.view)
                     return;
-                const p = a === m.idleActive || a === m.idleInactive;
-                this.spine.view.animationState.setAnimation(0, a, p);
-            }), (0, d.default)(this, 'onStateChange', a => {
-                'active' === a && (this.state.active ? this.activate() : this.deactivate()), 'charged' === a && !1 === this.prevState.charged && !0 === this.state.charged && this.recharge(), 'useCounter' === a && this.state.useCounter > 0 && this.use();
-            }), (0, d.default)(this, 'setupView', () => {
-                const p = k.LuckyBlockDeviceConsts.boundingBox.width,
-                    q = k.LuckyBlockDeviceConsts.boundingBox.height;
+                const r = _q === n.idleActive || _q === n.idleInactive;
+                this.spine.view.animationState.setAnimation(0, _q, r);
+            }), (0, e.default)(this, 'onStateChange', _q => {
+                'active' === _q && (this.state.active ? this.activate() : this.deactivate()), 'charged' === _q && !1 === this.prevState.charged && !0 === this.state.charged && this.recharge(), 'useCounter' === _q && this.state.useCounter > 0 && this.use();
+            }), (0, e.default)(this, 'setupView', () => {
+                const r = l.LuckyBlockDeviceConsts.boundingBox.width,
+                    s = l.LuckyBlockDeviceConsts.boundingBox.height;
                 this.spine = this.parts.add.spine({
-                    ...f.SpineAsset,
+                    ...g.SpineAsset,
                     spineViewId: this.id,
-                    y: (q / 2 - k.LuckyBlockDeviceConsts.spine.yCorrection) * this.options.scale,
-                    defaultAnimation: this.options.activeOnGameStart ? m.idleActive : m.idleInactive,
+                    y: (s / 2 - l.LuckyBlockDeviceConsts.spine.yCorrection) * this.options.scale,
+                    defaultAnimation: this.options.activeOnGameStart ? n.idleActive : n.idleInactive,
                     boundingBox: {
-                        left: -p / 2 * this.options.scale,
-                        right: p / 2 * this.options.scale,
-                        top: (-q + k.LuckyBlockDeviceConsts.spine.yCorrection) * this.options.scale,
+                        left: -r / 2 * this.options.scale,
+                        right: r / 2 * this.options.scale,
+                        top: (-s + l.LuckyBlockDeviceConsts.spine.yCorrection) * this.options.scale,
                         bottom: 2 * this.options.scale
                     },
-                    onAnimationComplete: p => {
-                        p === m.reactivate && this.playAnimation(m.idleActive), p === m.explode && this.state.active && 0 === this.options.rechargeAfterTime && this.playAnimation(m.reactivate);
+                    onAnimationComplete: r => {
+                        r === n.reactivate && this.playAnimation(n.idleActive), r === n.explode && this.state.active && 0 === this.options.rechargeAfterTime && this.playAnimation(n.reactivate);
                     },
-                    onReady: p => {
-                        p.view.setScale(k.LuckyBlockDeviceConsts.spine.baseScale * this.options.scale);
+                    onReady: r => {
+                        r.view.setScale(l.LuckyBlockDeviceConsts.spine.baseScale * this.options.scale);
                     }
                 });
-            }), (0, d.default)(this, 'setupCollider', () => {
+            }), (0, e.default)(this, 'setupCollider', () => {
                 this.colliders.add.box({
-                    x: k.LuckyBlockDeviceConsts.collisions.x * this.options.scale,
-                    y: k.LuckyBlockDeviceConsts.collisions.y * this.options.scale,
-                    w: k.LuckyBlockDeviceConsts.collisions.width * this.options.scale + k.LuckyBlockDeviceConsts.collisions.margin,
-                    h: k.LuckyBlockDeviceConsts.collisions.height * this.options.scale
+                    x: l.LuckyBlockDeviceConsts.collisions.x * this.options.scale,
+                    y: l.LuckyBlockDeviceConsts.collisions.y * this.options.scale,
+                    w: l.LuckyBlockDeviceConsts.collisions.width * this.options.scale + l.LuckyBlockDeviceConsts.collisions.margin,
+                    h: l.LuckyBlockDeviceConsts.collisions.height * this.options.scale
                 });
-            }), (0, d.default)(this, 'setupShadow', () => {
+            }), (0, e.default)(this, 'setupShadow', () => {
                 this.options.showShadow && this.shadows.add({
-                    x: k.LuckyBlockDeviceConsts.shadow.x * this.options.scale,
-                    y: k.LuckyBlockDeviceConsts.shadow.y * this.options.scale,
-                    r1: k.LuckyBlockDeviceConsts.shadow.r1 * this.options.scale,
-                    r2: k.LuckyBlockDeviceConsts.shadow.r2 * this.options.scale
+                    x: l.LuckyBlockDeviceConsts.shadow.x * this.options.scale,
+                    y: l.LuckyBlockDeviceConsts.shadow.y * this.options.scale,
+                    r1: l.LuckyBlockDeviceConsts.shadow.r1 * this.options.scale,
+                    r2: l.LuckyBlockDeviceConsts.shadow.r2 * this.options.scale
                 });
-            }), (0, d.default)(this, 'setupVisualEditing', () => {
-                if ((0, h.InGamePhase)() || (0, i.isPublishedVersion)())
+            }), (0, e.default)(this, 'setupVisualEditing', () => {
+                if ((0, i.InGamePhase)() || (0, j.isPublishedVersion)())
                     return;
-                const p = (0, j.FetchOptionSchemaProperty)(this, 'scale'),
-                    q = k.LuckyBlockDeviceConsts.boundingBox.width,
-                    r = k.LuckyBlockDeviceConsts.boundingBox.height;
+                const r = (0, k.FetchOptionSchemaProperty)(this, 'scale'),
+                    s = l.LuckyBlockDeviceConsts.boundingBox.width,
+                    t = l.LuckyBlockDeviceConsts.boundingBox.height;
                 this.visualEditing.add.box({
                     keepRatio: !0,
                     rotable: !1,
-                    width: q * this.options.scale,
-                    height: r * this.options.scale,
-                    minWidth: q * p.min,
-                    maxWidth: q * p.max,
-                    minHeight: r * p.min,
-                    maxHeight: r * p.max,
-                    onChange: p => {
-                        (0, l.ReplaceVisualEditingPreview)(p.x, p.y, {
-                            scale: p.width / q
+                    width: s * this.options.scale,
+                    height: t * this.options.scale,
+                    minWidth: s * r.min,
+                    maxWidth: s * r.max,
+                    minHeight: t * r.min,
+                    maxHeight: t * r.max,
+                    onChange: r => {
+                        (0, m.ReplaceVisualEditingPreview)(r.x, r.y, {
+                            scale: r.width / s
                         });
                     }
                 });
-            }), this.layers.setDefaultLayer(g.default.DepthSortedCharactersAndDevices), this.setupView(), this.setupShadow(), this.setupCollider(), this.setupVisualEditing();
+            }), this.layers.setDefaultLayer(h.default.DepthSortedCharactersAndDevices), this.setupView(), this.setupShadow(), this.setupCollider(), this.setupVisualEditing();
         }
     }
-    var p = q;
-}), b.register('npgvx', function(d, c) {
-    a(d.exports, 'SpineAsset', function() {
-        return d;
+    var _q = p;
+}), a.register('zjQC8', function(b, c) {
+    e(b.exports, 'SpineAsset', function() {
+        return _e;
     });
-    var c = b('JJQ0+');
-    const d = {
-        atlasUrl: (0, c.default)('devices/lucky_block/spine/luckyBlock.atlas'),
-        jsonUrl: (0, c.default)('devices/lucky_block/spine/luckyBlock.json')
+    var d = a('2Xvuf');
+    const _e = {
+        atlasUrl: (0, d.default)('devices/lucky_block/spine/luckyBlock.atlas'),
+        jsonUrl: (0, d.default)('devices/lucky_block/spine/luckyBlock.json')
     };
-}), b.register('/Lvpl17', function(b, d) {
-    a(b.exports, 'FetchOptionSchemaProperty', function() {
-        return c;
+}), a.register('R2Ucl10', function(b, c) {
+    e(b.exports, 'FetchOptionSchemaProperty', function() {
+        return _d;
     });
-    const c = (a, b) => {
-        var d, e, f;
-        const g = a.deviceOption.optionSchema.options.find(a => a.key === b);
+    const _d = (e, b) => {
+        var e, f, g;
+        const h = e.deviceOption.optionSchema.options.find(e => e.key === b);
         return {
-            min: null === (d = null == g ? void 0 : g.option.props) || void 0 === d ? void 0 : d.min,
-            max: null === (e = null == g ? void 0 : g.option.props) || void 0 === e ? void 0 : e.max,
-            step: null === (f = null == g ? void 0 : g.option.props) || void 0 === f ? void 0 : f.step
+            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
+            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
+            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
         };
     };
-}), b.register('3670e', function(b, i) {
-    a(b.exports, 'LuckyBlockDeviceConsts', function() {
-        return c;
+}), a.register('wduhO', function(b, c) {
+    e(b.exports, 'LuckyBlockDeviceConsts', function() {
+        return _d;
     });
-    const c = {
+    const _d = {
         boundingBox: {
             width: 110,
             height: 134
@@ -153,44 +153,44 @@ b.register('TO2ej', function(r, c) {
             r2: 60
         }
     };
-}), b.register('wSwKo5', function(i, h) {
-    a(i.exports, 'ReplaceVisualEditingPreview', function() {
-        return g;
+}), a.register('IFO6W13', function(b, c) {
+    e(b.exports, 'ReplaceVisualEditingPreview', function() {
+        return _h;
     });
-    var c = b('2pEsK'),
-        d = b('Am0b71'),
-        e = b('KDS1x'),
-        f = b('83+vO');
-    const g = (a, b, i) => {
-        const h = (0, f.FetchVisualEditingPreview)(),
-            i = (0, e.FetchCurrentlyEditedDevice)();
-        if (!i || !h)
+    var d = a('HqwPM'),
+        e = a('+oovY4'),
+        f = a('A17vD'),
+        g = a('HXXiu');
+    const _h = (e, a, b) => {
+        const i = (0, g.FetchVisualEditingPreview)(),
+            j = (0, f.FetchCurrentlyEditedDevice)();
+        if (!j || !i)
             return;
-        const j = i.layers.isOnNaturalDepth() ? void 0 : b + i.layers.getDepthShift();
-        (0, d.default)({
-            deviceOption: h.deviceOption,
-            id: c.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: j,
-            layerId: i.layers.getLayer(),
-            name: h.name,
+        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
+        (0, e.default)({
+            deviceOption: i.deviceOption,
+            id: d.VisualEditingConstants.previewId,
+            x: e,
+            y: a,
+            depth: k,
+            layerId: j.layers.getLayer(),
+            name: i.name,
             isPreview: !0,
             options: {
-                ...h.options,
-                ...i
+                ...i.options,
+                ...b
             },
             placedByClient: !0,
-            state: h.deviceOption.defaultState
+            state: i.deviceOption.defaultState
         });
     };
-}), b.register('Am0b71', function(i, s) {
-    a(i.exports, 'default', function() {
-        return e;
+}), a.register('+oovY4', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _f;
     });
-    var c = b('dAmf5'),
-        d = b('jgFbX');
-    var e = a => {
-        (0, c.default)().worldManager.devices.getDeviceById(a.id) && (0, d.default)(a);
+    var d = a('D5xLI'),
+        e = a('aIyMH');
+    var _f = e => {
+        (0, d.default)().worldManager.devices.getDeviceById(e.id) && (0, e.default)(e);
     };
 });

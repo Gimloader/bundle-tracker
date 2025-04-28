@@ -1,53 +1,53 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('ASSvy', function(t, a) {
-    var b, c, d, e, f;
-    b = t.exports, Object.defineProperty(b, '__esModule', {
+a.register('iIx9r', function(b, c) {
+    var d, e, f, g, h;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), c = t.exports, d = 'default', e = function() {
-        return u;
-    }, Object.defineProperty(c, d, {
-        get: e,
-        set: f,
+    }), e = b.exports, f = 'default', g = function() {
+        return _w;
+    }, Object.defineProperty(e, f, {
+        get: g,
+        set: h,
         enumerable: !0,
         configurable: !0
     });
-    var g = a('8kSQZ');
-    a('uPP4W');
-    var h = a('h99Nu'),
-        i = a('YimJ0'),
-        j = a('IsmrL'),
-        k = a('ExtIT'),
-        l = a('UzdPH'),
-        m = a('gSUVO'),
-        n = a('JJQ0+'),
-        o = a('iYEuk12'),
-        p = a('q721a'),
-        q = a('S/jX4');
-    let r, s, t = a => a;
-    var u = a => (0, g.jsxs)(v, {
+    var i = a('0hzx+');
+    a('LEQ5w');
+    var j = a('Axq+p'),
+        k = a('0HHAH'),
+        l = a('ulE4q'),
+        m = a('fmVdR'),
+        n = a('j2ADs'),
+        o = a('b5kvC'),
+        p = a('2Xvuf'),
+        q = a('2HvvA11'),
+        r = a('gs4MT'),
+        s = a('vShe/');
+    let t, u, v = a => a;
+    var _w = a => (0, i.jsxs)(_x, {
         children: [
-            (0, g.jsx)(w, {}),
-            (0, g.jsx)(l.default.Title, {
+            (0, i.jsx)(_y, {}),
+            (0, i.jsx)(n.default.Title, {
                 style: {
-                    fontFamily: m.Fonts.FugazOne,
+                    fontFamily: o.Fonts.FugazOne,
                     textTransform: 'uppercase'
                 },
                 level: 1,
                 children: 'Publish'
             }),
-            (0, g.jsxs)(l.default.Text, {
+            (0, i.jsxs)(n.default.Text, {
                 style: {
                     marginTop: 10
                 },
                 children: [
                     'Share your map with the world! Publish your map to have it appear on our',
                     ' ',
-                    (0, g.jsx)(o.default, {
-                        to: p.CREATIVE_DISCOVERY,
+                    (0, i.jsx)(q.default, {
+                        to: r.CREATIVE_DISCOVERY,
                         target: '_blank',
                         style: {
-                            color: q.default.Yellow,
+                            color: s.default.Yellow,
                             textDecoration: 'underline'
                         },
                         children: 'Creative Discovery'
@@ -56,8 +56,8 @@ a.register('ASSvy', function(t, a) {
                     'page, where anybody can find and play your map!'
                 ]
             }),
-            (0, g.jsx)(k.default, {}),
-            (0, g.jsx)(j.default, {
+            (0, i.jsx)(m.default, {}),
+            (0, i.jsx)(l.default, {
                 size: 'large',
                 block: !0,
                 type: 'primary',
@@ -69,14 +69,14 @@ a.register('ASSvy', function(t, a) {
             })
         ]
     });
-    const v = (0, h.default)(i.CenteredColumn).attrs({
+    const _x = (0, j.default)(k.CenteredColumn).attrs({
             className: 'maxWidth'
-        })(r || (r = t`
+        })(t || (t = v`
   text-align: center;
 `)),
-        w = h.default.img.attrs({
-            src: (0, n.default)('publishing/megaphone.svg')
-        })(s || (s = t`
+        _y = j.default.img.attrs({
+            src: (0, p.default)('publishing/megaphone.svg')
+        })(u || (u = v`
   height: 85px;
   margin-bottom: 17px;
   filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.5));

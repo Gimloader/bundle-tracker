@@ -1,55 +1,55 @@
-function a(a, b, g, j) {
-    Object.defineProperty(a, b, {
-        get: g,
-        set: j,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('msFhx', function(g, j) {
-    var c;
-    c = g.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('Tbj/R', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(g.exports, 'default', function() {
-        return m;
+    }), _n(b.exports, 'default', function() {
+        return _n;
     });
-    var d = b('UM8oI'),
-        e = b('JJQ0+'),
-        f = b('Bpt+p'),
-        g = b('5Ux1a'),
-        h = b('sgILU'),
-        i = b('phu0d'),
-        j = b('Gqspz'),
-        k = b('xqa8+');
-    class l extends h.default {
-        constructor(a) {
-            if (super(a), (0, d.default)(this, 'openDeviceUI', () => {
+    var e = a('1bFPu'),
+        f = a('2Xvuf'),
+        g = a('9tz3H'),
+        h = a('/pbxo'),
+        i = a('I35Ay'),
+        j = a('+uQv7'),
+        k = a('dTXti'),
+        l = a('Da5pK');
+    class m extends i.default {
+        constructor(_n) {
+            if (super(_n), (0, e.default)(this, 'openDeviceUI', () => {
                     this.deviceUI.open({
                         message: this.options.message,
-                        actions: (0, k.DialogueDevice_GetDialogueActions)(this),
-                        send: (a, b) => {
-                            this.sendToServerDevice(a, b);
+                        actions: (0, l.DialogueDevice_GetDialogueActions)(this),
+                        send: (_n, a) => {
+                            this.sendToServerDevice(_n, a);
                         },
                         font: this.options.font,
                         character: this.options.character,
                         typewriter: this.options.typewriter,
                         darkenBackground: this.options.darkenBackground
                     });
-                }), (0, d.default)(this, 'onDialogueActionChange', () => {
+                }), (0, e.default)(this, 'onDialogueActionChange', () => {
                     this.deviceUI.update({
-                        actions: (0, k.DialogueDevice_GetDialogueActions)(this)
+                        actions: (0, l.DialogueDevice_GetDialogueActions)(this)
                     });
-                }), (0, g.InPreGamePhase)() && (0, f.isSavedVersion)()) {
-                const m = j.default.Overlay;
-                new(0, i.default)({
+                }), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) {
+                const o = k.default.Overlay;
+                new(0, j.default)({
                     device: this,
-                    baseColor: m.baseColor,
-                    boxColor: m.boxColor,
+                    baseColor: o.baseColor,
+                    boxColor: o.boxColor,
                     content: {
                         icon: {
-                            image: (0, e.default)('devices/dialogue/icon.png'),
+                            image: (0, f.default)('devices/dialogue/icon.png'),
                             scale: 0.92
                         }
                     }
@@ -57,30 +57,30 @@ b.register('msFhx', function(g, j) {
             }
         }
     }
-    var m = n;
-}), b.register('xqa8+', function(g, j) {
-    a(g.exports, 'DialogueDevice_GetDialogueActions', function() {
-        return e;
+    var _n = m;
+}), a.register('Da5pK', function(b, c) {
+    _i(b.exports, 'DialogueDevice_GetDialogueActions', function() {
+        return _f;
     });
-    var c = b('7X8h3'),
-        d = b('dAmf5');
-    const e = a => {
-        const f = [],
+    var d = a('EqyfB'),
+        e = a('D5xLI');
+    const _f = _i => {
+        const g = [],
             {
-                options: g
-            } = h;
-        for (let i = 1; i <= 4; i++) {
-            const j = g[`action${ i }Text`];
-            j && f.push({
+                options: h
+            } = _i;
+        for (let _i = 1; _i <= 4; _i++) {
+            const j = h[`action${ _i }Text`];
+            j && g.push({
                 text: j,
-                index: i
+                index: _i
             });
         }
-        return (0, d.default)().worldManager.devices.allDevices.filter(i => i.deviceOption.id === c.default.dialogueAction).filter(i => i.options.group === g.group || !i.options.group && !g.group).filter(i => !!i.options.text.length).filter(i => !0 === i.state.active).sort((i, f) => i.y - f.y).forEach(i => {
-            f.push({
-                text: i.options.text,
-                action: i.id
+        return (0, e.default)().worldManager.devices.allDevices.filter(_i => _i.deviceOption.id === d.default.dialogueAction).filter(_i => _i.options.group === h.group || !_i.options.group && !h.group).filter(_i => !!_i.options.text.length).filter(_i => !0 === _i.state.active).sort((_i, g) => _i.y - g.y).forEach(_i => {
+            g.push({
+                text: _i.options.text,
+                action: _i.id
             });
-        }), f.slice(0, 10);
+        }), g.slice(0, 10);
     };
 });

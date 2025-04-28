@@ -1,43 +1,43 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('EEJ7C', function(p, a) {
-    var b, c, d, e, f;
-    b = p.exports, Object.defineProperty(b, '__esModule', {
+a.register('KUfSh', function(b, c) {
+    var d, e, f, g, h;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), c = p.exports, d = 'default', e = function() {
-        return p;
-    }, Object.defineProperty(c, d, {
-        get: e,
-        set: f,
+    }), e = b.exports, f = 'default', g = function() {
+        return _r;
+    }, Object.defineProperty(e, f, {
+        get: g,
+        set: h,
         enumerable: !0,
         configurable: !0
     });
-    var g = a('UM8oI'),
-        h = a('cMsWT'),
-        i = a('JJQ0+'),
-        j = a('Bpt+p'),
-        k = a('5Ux1a'),
-        l = a('sgILU'),
-        m = a('dAmf5');
-    const n = (0, i.default)('devices/camera_point/icon.png');
-    class o extends l.default {
-        destroy(a) {
-            this.resetCameraPoint(), super.destroy(a);
+    var i = a('1bFPu'),
+        j = a('JqBF0'),
+        k = a('2Xvuf'),
+        l = a('9tz3H'),
+        m = a('/pbxo'),
+        n = a('I35Ay'),
+        o = a('D5xLI');
+    const p = (0, k.default)('devices/camera_point/icon.png');
+    class q extends n.default {
+        destroy(r) {
+            this.resetCameraPoint(), super.destroy(r);
         }
-        constructor(a) {
-            super(a), (0, g.default)(this, 'resetCameraPoint', () => {
-                (0, m.default)().cameraHelper.resetCameraPointDevice();
-            }), (0, g.default)(this, 'setCameraPoint', () => {
-                (0, m.default)().cameraHelper.setCameraPointDevice(this.id, this.x, this.y);
-            }), (0, g.default)(this, 'onStateChange', a => {
-                var p;
-                (0, k.InPreGamePhase)() || 'active' === a && (!1 === this.state.active && (null === (p = (0, m.default)().cameraHelper.activeCameraPoint) || void 0 === p ? void 0 : p.deviceId) === this.id && this.resetCameraPoint(), this.state.active && this.setCameraPoint());
-            }), this.layers.setDefaultLayer(h.default.DevicesUnderCharacters), (0, k.InPreGamePhase)() && (0, j.isSavedVersion)() ? this.parts.add.sprite({
-                imageId: n,
-                imageUrl: n,
-                onReady: a => {
-                    a.view.setScale(0.15), this.tweens.add({
-                        targets: a.view,
+        constructor(r) {
+            super(r), (0, i.default)(this, 'resetCameraPoint', () => {
+                (0, o.default)().cameraHelper.resetCameraPointDevice();
+            }), (0, i.default)(this, 'setCameraPoint', () => {
+                (0, o.default)().cameraHelper.setCameraPointDevice(this.id, this.x, this.y);
+            }), (0, i.default)(this, 'onStateChange', r => {
+                var s;
+                (0, m.InPreGamePhase)() || 'active' === r && (!1 === this.state.active && (null === (s = (0, o.default)().cameraHelper.activeCameraPoint) || void 0 === s ? void 0 : s.deviceId) === this.id && this.resetCameraPoint(), this.state.active && this.setCameraPoint());
+            }), this.layers.setDefaultLayer(j.default.DevicesUnderCharacters), (0, m.InPreGamePhase)() && (0, l.isSavedVersion)() ? this.parts.add.sprite({
+                imageId: p,
+                imageUrl: p,
+                onReady: r => {
+                    r.view.setScale(0.15), this.tweens.add({
+                        targets: r.view,
                         scale: 0.17,
                         duration: 1000,
                         yoyo: !0,
@@ -48,5 +48,5 @@ a.register('EEJ7C', function(p, a) {
             }) : this.state.active && this.setCameraPoint();
         }
     }
-    var p = q;
+    var _r = q;
 });

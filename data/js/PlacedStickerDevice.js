@@ -1,29 +1,29 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('2tkGq', function(p, q) {
-    var b, c, d, e, f;
-    b = p.exports, Object.defineProperty(b, '__esModule', {
+a.register('xMhFM', function(b, c) {
+    var d, e, f, g, h;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), c = p.exports, d = 'default', e = function() {
-        return p;
-    }, Object.defineProperty(c, d, {
-        get: e,
-        set: f,
+    }), e = b.exports, f = 'default', g = function() {
+        return _r;
+    }, Object.defineProperty(e, f, {
+        get: g,
+        set: h,
         enumerable: !0,
         configurable: !0
     });
-    var g = a('UM8oI'),
-        h = a('CfW3Y'),
-        i = a('7Sbqr'),
-        j = a('JJQ0+'),
-        k = a('PUlKf'),
-        l = a('Ena4B'),
-        m = a('OlpXx'),
-        n = a('sgILU');
-    class o extends n.default {
-        constructor(a) {
-            if (super(a), (0, g.default)(this, 'onStateChange', a => {
-                    'beingRemoved' === a && this.state.beingRemoved && this.sticker && this.tweens.add({
+    var i = a('1bFPu'),
+        j = a('E78vn'),
+        k = a('iWivW'),
+        l = a('2Xvuf'),
+        m = a('Jfada'),
+        n = a('1f1YX'),
+        o = a('07pQo'),
+        p = a('I35Ay');
+    class q extends p.default {
+        constructor(r) {
+            if (super(r), (0, i.default)(this, 'onStateChange', r => {
+                    'beingRemoved' === r && this.state.beingRemoved && this.sticker && this.tweens.add({
                         targets: this.sticker.view,
                         alpha: 0,
                         scale: 0.25 * this.sticker.view.scale,
@@ -34,35 +34,35 @@ a.register('2tkGq', function(p, q) {
                 return;
             if (!this.options.stickerId)
                 return;
-            const p = this.options.stickerId.replace('sticker_', ''),
-                q = (0, j.default)(`stickers/${ p }.png`);
+            const s = this.options.stickerId.replace('sticker_', ''),
+                t = (0, l.default)(`stickers/${ s }.png`);
             this.parts.add.sprite({
-                imageId: q,
-                imageUrl: q,
-                onReady: a => {
-                    const r = i.default.session.gameTime - this.options.placedAtTimeStamp;
-                    this.sticker = a, a.view.setScale(this.options.scale), this.boundingBox.setHardcoded({
-                        width: a.view.displayWidth,
-                        height: a.view.displayHeight
-                    }), a.view.setScale(this.options.scale), a.view.setDepth(this.options.depth + h.default.Fill + 0.1), a.view.setAlpha(0);
-                    const s = a.view.y;
-                    a.view.setY(s - 25), r > 1000 ? (a.view.setAlpha(0.85), a.view.setY(s), a.view.setScale(this.options.scale)) : (this.tweens.add({
-                        targets: a.view,
+                imageId: t,
+                imageUrl: t,
+                onReady: r => {
+                    const u = k.default.session.gameTime - this.options.placedAtTimeStamp;
+                    this.sticker = r, r.view.setScale(this.options.scale), this.boundingBox.setHardcoded({
+                        width: r.view.displayWidth,
+                        height: r.view.displayHeight
+                    }), r.view.setScale(this.options.scale), r.view.setDepth(this.options.depth + j.default.Fill + 0.1), r.view.setAlpha(0);
+                    const v = r.view.y;
+                    r.view.setY(v - 25), u > 1000 ? (r.view.setAlpha(0.85), r.view.setY(v), r.view.setScale(this.options.scale)) : (this.tweens.add({
+                        targets: r.view,
                         scale: this.options.scale,
                         alpha: 0.95,
-                        y: s,
+                        y: v,
                         duration: 400,
                         ease: Phaser.Math.Easing.Bounce.Out
-                    }), this.options.placedByCharacterId === (0, k.default)() && (0, m.playSound)({
-                        path: (0, j.default)('devices/placed_sticker/placed.mp3'),
-                        volume: (0, l.getVolume)({
+                    }), this.options.placedByCharacterId === (0, m.default)() && (0, o.playSound)({
+                        path: (0, l.default)('devices/placed_sticker/placed.mp3'),
+                        volume: (0, n.getVolume)({
                             volume: 0.6,
-                            type: l.SoundType.soundEffect
+                            type: n.SoundType.soundEffect
                         })
                     }));
                 }
             });
         }
     }
-    var p = q;
+    var _r = q;
 });

@@ -1,73 +1,73 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('J9gPG', function(t, i) {
-    var b, c, d, e, f;
-    b = t.exports, Object.defineProperty(b, '__esModule', {
+a.register('E8iF1', function(b, c) {
+    var d, e, f, g, h;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), c = t.exports, d = 'default', e = function() {
-        return t;
-    }, Object.defineProperty(c, d, {
-        get: e,
-        set: f,
+    }), e = b.exports, f = 'default', g = function() {
+        return _v;
+    }, Object.defineProperty(e, f, {
+        get: g,
+        set: h,
         enumerable: !0,
         configurable: !0
     });
-    var g = a('8kSQZ'),
-        h = a('IsmrL'),
-        i = a('ExtIT'),
-        j = a('5nJMd26'),
-        k = a('UzdPH');
-    a('uPP4W');
-    var l = a('gSUVO'),
-        m = a('0wLl2'),
-        n = a('ImHrc1'),
-        o = a('y8lS825'),
-        p = a('iYEuk12'),
-        q = a('q721a'),
-        r = a('S/jX4');
-    const s = a => (0, g.jsxs)('div', {
+    var i = a('0hzx+'),
+        j = a('ulE4q'),
+        k = a('fmVdR'),
+        l = a('cvto726'),
+        m = a('j2ADs');
+    a('LEQ5w');
+    var n = a('b5kvC'),
+        o = a('hHkFq'),
+        p = a('l0C72'),
+        q = a('Mmd0d21'),
+        r = a('2HvvA11'),
+        s = a('gs4MT'),
+        t = a('vShe/');
+    const u = a => (0, i.jsxs)('div', {
         style: {
             padding: 25,
             background: 'rgba(255,255,255,0.1)',
             borderRadius: 8
         },
         children: [
-            (0, g.jsx)('div', {
+            (0, i.jsx)('div', {
                 style: {
                     marginBottom: 5
                 },
-                children: (0, g.jsx)(k.default.Text, {
+                children: (0, i.jsx)(m.default.Text, {
                     style: {
-                        fontWeight: l.FontWeights.Bold
+                        fontWeight: n.FontWeights.Bold
                     },
                     children: a.title
                 })
             }),
-            (0, g.jsx)(k.default.Text, {
+            (0, i.jsx)(m.default.Text, {
                 italic: !0,
                 children: a.description
             })
         ]
     });
-    var t = a => (0, g.jsxs)('div', {
+    var _v = a => (0, i.jsxs)('div', {
         className: 'maxWidth',
         children: [
-            (0, g.jsx)(k.default.Title, {
+            (0, i.jsx)(m.default.Title, {
                 style: {
-                    fontFamily: l.Fonts.FugazOne,
+                    fontFamily: n.Fonts.FugazOne,
                     textTransform: 'uppercase',
                     marginBottom: 5
                 },
                 level: 3,
                 children: 'Community Guidelines'
             }),
-            (0, g.jsxs)(k.default.Text, {
+            (0, i.jsxs)(m.default.Text, {
                 children: [
                     'All published content must follow our',
                     ' ',
-                    (0, g.jsx)(p.default, {
+                    (0, i.jsx)(r.default, {
                         style: {
-                            color: r.default.Yellow,
+                            color: t.default.Yellow,
                             textDecoration: 'underline'
                         },
                         to: 'https://docs.creative.gimkit.com/general/publishing/community-rules-for-publishing-with-gimkit-creative',
@@ -79,16 +79,16 @@ a.register('J9gPG', function(t, i) {
                     'Failure to meet our guidelines may result in permanent account suspension.'
                 ]
             }),
-            (0, g.jsx)(k.default.Title, {
+            (0, i.jsx)(m.default.Title, {
                 style: {
-                    fontFamily: l.Fonts.FugazOne,
+                    fontFamily: n.Fonts.FugazOne,
                     textTransform: 'uppercase',
                     marginTop: 35
                 },
                 level: 3,
                 children: 'Publishing Requirements'
             }),
-            (0, g.jsxs)(j.default, {
+            (0, i.jsxs)(l.default, {
                 className: 'maxWidth',
                 direction: 'vertical',
                 size: 14,
@@ -96,50 +96,50 @@ a.register('J9gPG', function(t, i) {
                     marginTop: 10
                 },
                 children: [
-                    (0, g.jsx)(s, {
+                    (0, i.jsx)(u, {
                         title: 'Career Level 50+',
-                        description: `You must have leveled up 50+ times in all your time playing ${ m.COMPANY_NAME }, unless you're a ${ n.SeasonTicketName.name } holder!`
+                        description: `You must have leveled up 50+ times in all your time playing ${ o.COMPANY_NAME }, unless you're a ${ p.SeasonTicketName.name } holder!`
                     }),
-                    (0, g.jsx)(s, {
-                        title: `1,000+ ${ o.default.currency }`,
-                        description: `Publishing a map costs 1,000 ${ o.default.currency }. ${ n.SeasonTicketName.name } holders publish for free!`
+                    (0, i.jsx)(u, {
+                        title: `1,000+ ${ q.default.currency }`,
+                        description: `Publishing a map costs 1,000 ${ q.default.currency }. ${ p.SeasonTicketName.name } holders publish for free!`
                     })
                 ]
             }),
-            (0, g.jsx)(i.default, {}),
-            a.publishRequirementError ? (0, g.jsx)('div', {
+            (0, i.jsx)(k.default, {}),
+            a.publishRequirementError ? (0, i.jsx)('div', {
                 style: {
                     background: 'rgba(255,0,0,0.1)',
                     padding: 25,
                     borderRadius: 8,
                     border: '1px solid rgba(255,0,0,0.5)'
                 },
-                children: (0, g.jsxs)(k.default.Text, {
+                children: (0, i.jsxs)(m.default.Text, {
                     children: [
                         a.publishRequirementError,
                         ' ',
-                        (0, g.jsx)('br', {}),
-                        (0, g.jsx)('br', {}),
-                        (0, g.jsxs)(p.default, {
+                        (0, i.jsx)('br', {}),
+                        (0, i.jsx)('br', {}),
+                        (0, i.jsxs)(r.default, {
                             style: {
-                                color: r.default.Yellow,
+                                color: t.default.Yellow,
                                 textDecoration: 'underline'
                             },
-                            to: q.SEASON_TICKET_BASE,
+                            to: s.SEASON_TICKET_BASE,
                             target: '_blank',
                             children: [
                                 'Purchase the ',
-                                n.SeasonTicketName.name
+                                p.SeasonTicketName.name
                             ]
                         }),
                         ' ',
                         'to immediately become eligible & publish for free!'
                     ]
                 })
-            }) : (0, g.jsxs)('div', {
+            }) : (0, i.jsxs)('div', {
                 className: 'maxWidth flex-center flex-column',
                 children: [
-                    (0, g.jsx)(h.default, {
+                    (0, i.jsx)(j.default, {
                         size: 'large',
                         block: !0,
                         type: 'primary',
@@ -149,7 +149,7 @@ a.register('J9gPG', function(t, i) {
                         onClick: a.next,
                         children: 'Continue'
                     }),
-                    (0, g.jsx)(k.default.Text, {
+                    (0, i.jsx)(m.default.Text, {
                         italic: !0,
                         style: {
                             marginTop: 10,

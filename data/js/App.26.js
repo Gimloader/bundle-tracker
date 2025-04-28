@@ -1,52 +1,52 @@
-function a(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
 
-function b(a, b, c, L) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: L,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('AASUi', function(L, M) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('GkEgD', function(b, c) {
     var d;
-    d = L.exports, Object.defineProperty(d, '__esModule', {
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(L.exports, 'default', function() {
-        return I;
+    }), _J(b.exports, 'default', function() {
+        return _I;
     });
-    var e = c('8kSQZ'),
-        f = c('Vlfxs'),
-        g = c('uPP4W'),
-        h = c('h99Nu'),
-        i = c('S/jX4'),
-        j = c('iAe3o'),
-        k = c('TnPB+'),
-        l = c('yJU7a'),
-        m = c('0Gzg6'),
-        n = c('/PHqW'),
-        o = c('/iKSE'),
-        p = c('M/vL7'),
-        q = c('kkxCN'),
-        r = (g = c('uPP4W'), c('+0Tb/')),
-        s = c('kneek'),
-        t = c('ulmmZ'),
-        u = c('7Sbqr'),
-        v = c('xXIOh'),
-        w = c('b9Bct'),
-        x = c('UzdPH'),
-        y = c('gSUVO'),
-        z = c('iMnBi'),
-        A = c('/gzrK'),
-        B = c('obWo+'),
-        C = c('EefFJ');
-    let D, E, F, G, H = a => a;
-    var I = (0, f.observer)(() => {
-        const [J, K] = (0, g.useState)(!0), [L, M] = (0, g.useState)((0, m.default)());
+    var e = a('0hzx+'),
+        f = a('2x11J'),
+        g = a('LEQ5w'),
+        h = a('Axq+p'),
+        i = a('vShe/'),
+        j = a('11nl3'),
+        k = a('mQCZt'),
+        l = a('NjKgc'),
+        m = a('F0mqt'),
+        n = a('kRSxQ'),
+        o = a('rXElh'),
+        p = a('dGfO9'),
+        q = a('ejMkR'),
+        r = (g = a('LEQ5w'), a('ryWAy')),
+        s = a('8WvaZ'),
+        t = a('VBu6r'),
+        u = a('iWivW'),
+        v = a('47u/+'),
+        w = a('TwXYL'),
+        x = a('j2ADs'),
+        y = a('b5kvC'),
+        z = a('9R7cy'),
+        A = a('hoBfP'),
+        B = a('QECub'),
+        C = a('2GeW4');
+    let D, E, F, G, H = _b => _b;
+    var _I = (0, f.observer)(() => {
+        const [_J, K] = (0, g.useState)(!0), [L, M] = (0, g.useState)((0, m.default)());
         g.useEffect(() => (0, v.ReactionToMultipleProps)([
             () => u.default.memorySystem.usedMemoryCost,
             () => u.default.me.adding.terrain.brushSize,
@@ -69,9 +69,9 @@ c.register('AASUi', function(L, M) {
         const O = () => {
             (0, n.default)(o.NoneScreen.home), (0, k.default)(j.default.none), (0, p.default)(q.AddScreen.home);
         };
-        return (0, r.default)(a(s).Input.Keyboard.KeyCodes.ESC, O), J ? (0, e.jsx)(e.Fragment, {
-            children: (0, e.jsx)(J, {
-                children: (0, e.jsxs)(L, {
+        return (0, r.default)(_b(s).Input.Keyboard.KeyCodes.ESC, O), _J ? (0, e.jsx)(e.Fragment, {
+            children: (0, e.jsx)(_J, {
+                children: (0, e.jsxs)(_L, {
                     initial: {
                         y: '100%',
                         opacity: 0.25
@@ -89,7 +89,7 @@ c.register('AASUi', function(L, M) {
                         ease: 'easeOut'
                     },
                     children: [
-                        (0, e.jsx)(K, {
+                        (0, e.jsx)(_K, {
                             children: (0, e.jsx)(C.default, {
                                 children: (0, e.jsx)(B.default, {
                                     style: {
@@ -102,7 +102,7 @@ c.register('AASUi', function(L, M) {
                         (0, e.jsx)(A.default, {
                             addingInfo: L
                         }),
-                        L.notAllowedToAddMessage ? (0, e.jsx)(M, {
+                        L.notAllowedToAddMessage ? (0, e.jsx)(_M, {
                             children: (0, e.jsxs)(x.default.Text, {
                                 style: {
                                     fontWeight: y.FontWeights.Bold
@@ -121,13 +121,13 @@ c.register('AASUi', function(L, M) {
             })
         }) : null;
     });
-    const J = h.default.div.attrs({
+    const _J = h.default.div.attrs({
             className: 'flex maxAll'
         })(D || (D = H`
   align-items: flex-end;
   position: relative;
 `)),
-        K = h.default.div.attrs({
+        _K = h.default.div.attrs({
             className: 'maxAll flex'
         })(E || (E = H`
   position: absolute;
@@ -135,36 +135,36 @@ c.register('AASUi', function(L, M) {
   align-items: flex-start;
   justify-content: flex-end;
 `)),
-        L = (0, h.default)(w.motion.div).attrs({
+        _L = (0, h.default)(w.motion.div).attrs({
             className: 'maxWidth'
         })(F || (F = H`
   background: rgba(48, 28, 86, 0.85);
   backdrop-filter: blur(3px);
   color: ${ 0 };
 `), i.default.White),
-        M = h.default.div.attrs({
+        _M = h.default.div.attrs({
             className: 'maxWidth'
         })(G || (G = H`
   padding: 10px 25px;
   background: #c62828;
 `));
-}), c.register('yJU7a', function(a, q) {
-    b(a.exports, 'default', function() {
-        return n;
+}), a.register('NjKgc', function(_b, c) {
+    _o(_b.exports, 'default', function() {
+        return _n;
     });
-    var d = c('uPP4W'),
-        e = c('B/6cb'),
-        f = c('FFDo5'),
-        g = c('/iKSE'),
-        h = c('iAe3o'),
-        i = c('am7L5'),
-        j = c('TnPB+'),
-        k = c('qPvuG'),
-        l = c('snog9'),
-        m = c('HMNV0');
-    var n = a => {
+    var d = a('LEQ5w'),
+        e = a('WIRQZ'),
+        f = a('YMjEj'),
+        g = a('rXElh'),
+        h = a('11nl3'),
+        i = a('bHGrl'),
+        j = a('mQCZt'),
+        k = a('pT6Pg'),
+        l = a('ILZh4'),
+        m = a('JEGzD');
+    var _n = _b => {
         const {
-            me: o,
+            me: _o,
             gui: p
         } = (0, i.default)();
         d.useEffect(() => {
@@ -178,64 +178,64 @@ c.register('AASUi', function(L, M) {
                     if ((0, k.isAddingTerrain)()) {
                         if ((0, m.isPlatformer)())
                             return;
-                        o.adding.terrain.buildTerrainAsWall = !o.adding.terrain.buildTerrainAsWall;
+                        _o.adding.terrain.buildTerrainAsWall = !_o.adding.terrain.buildTerrainAsWall;
                     }
                 }),
                 t = (0, f.default)(e.default.Adding.Terrain.BrushSize.One(), () => {
-                    (0, k.isAddingTerrain)() && (o.adding.terrain.brushSize = 1);
+                    (0, k.isAddingTerrain)() && (_o.adding.terrain.brushSize = 1);
                 }),
                 u = (0, f.default)(e.default.Adding.Terrain.BrushSize.Two(), () => {
-                    (0, k.isAddingTerrain)() && (o.adding.terrain.brushSize = 2);
+                    (0, k.isAddingTerrain)() && (_o.adding.terrain.brushSize = 2);
                 }),
                 v = (0, f.default)(e.default.Adding.Terrain.BrushSize.Three(), () => {
-                    (0, k.isAddingTerrain)() && (o.adding.terrain.brushSize = 3);
+                    (0, k.isAddingTerrain)() && (_o.adding.terrain.brushSize = 3);
                 }),
                 w = (0, f.default)(e.default.Adding.Terrain.BrushSize.Four(), () => {
-                    (0, k.isAddingTerrain)() && (o.adding.terrain.brushSize = 4);
+                    (0, k.isAddingTerrain)() && (_o.adding.terrain.brushSize = 4);
                 }),
                 x = (0, f.default)(e.default.Adding.ToggleShow(), () => {
-                    a.setShow(a => !a);
+                    _b.setShow(_b => !_b);
                 });
             return () => {
                 q(), r(), s(), t(), u(), v(), w(), x();
             };
         }, []);
     };
-}), c.register('0Gzg6', function(a, D) {
-    b(a.exports, 'default', function() {
-        return z;
+}), a.register('F0mqt', function(b, c) {
+    _B(b.exports, 'default', function() {
+        return _z;
     });
-    var d = c('TLG+n'),
-        e = c('BbPVz'),
-        f = c('k9b/9'),
-        g = c('qPvuG'),
-        h = c('7Sbqr'),
-        i = c('jMYtD'),
-        j = c('ZfiQ/'),
-        k = c('7X8h3'),
-        l = c('SHIqQ'),
-        m = c('EVJpa'),
-        n = c('dAmf5'),
-        o = c('dy0FV'),
-        p = c('a9g4s'),
-        q = c('RGtXr'),
-        r = c('QL3w1'),
-        s = c('vA+yT'),
-        t = c('8+3er'),
-        u = c('RJ/fk'),
-        v = c('Wgw1x0'),
-        w = c('mCZDR'),
-        x = c('YARc1'),
-        y = c('ZH/OP');
-    var z = () => {
+    var d = a('6DK0G'),
+        e = a('oKr6+'),
+        f = a('t+r9P'),
+        g = a('pT6Pg'),
+        h = a('iWivW'),
+        i = a('0rIMQ'),
+        j = a('Wo5Au'),
+        k = a('EqyfB'),
+        l = a('hp1yb'),
+        m = a('BPqXJ'),
+        n = a('D5xLI'),
+        o = a('ikBWx'),
+        p = a('OpngO'),
+        q = a('LiOye'),
+        r = a('M/Cby'),
+        s = a('CkNyT'),
+        t = a('c3Nxl'),
+        u = a('qVhMZ'),
+        v = a('bzU3s'),
+        w = a('AvtVx'),
+        x = a('PUGQx1'),
+        y = a('bV9vv');
+    var _z = () => {
         if ((0, g.isAddingTerrain)()) {
             const A = h.default.worldOptions.terrainOptions.find(A => A.id === h.default.me.adding.terrain.currentlySelectedTerrain),
-                B = (0, q.CanAddTile)({
+                _B = (0, q.CanAddTile)({
                     colliding: h.default.me.adding.terrain.buildTerrainAsWall,
                     count: h.default.me.adding.terrain.brushSize * h.default.me.adding.terrain.brushSize
                 }),
                 C = (0, r.GetTileMessage)({
-                    reason: B.reason,
+                    reason: _B.reason,
                     colliding: h.default.me.adding.terrain.buildTerrainAsWall,
                     count: h.default.me.adding.terrain.brushSize * h.default.me.adding.terrain.brushSize
                 }),
@@ -350,30 +350,30 @@ c.register('AASUi', function(L, M) {
             title: 'Unknown Entity'
         };
     };
-}), c.register('SHIqQ', function(a, d) {
-    b(a.exports, 'GetDeviceOptionMessage', function() {
-        return i;
+}), a.register('hp1yb', function(b, c) {
+    _j(b.exports, 'GetDeviceOptionMessage', function() {
+        return _i;
     });
-    var d = c('7X8h3'),
-        e = c('iEonH'),
-        f = c('mCZDR'),
-        g = c('Wgw1x0'),
-        h = c('m0LR2');
-    const i = a => {
-        if (a.reason === e.OutOfResourcesReason.limit) {
-            const j = (0, h.CountDevicesOnMap)({
-                deviceTypeId: a.deviceTypeId
+    var d = a('EqyfB'),
+        e = a('ttkWv'),
+        f = a('AvtVx'),
+        g = a('bzU3s'),
+        h = a('xn4K5');
+    const _i = b => {
+        if (b.reason === e.OutOfResourcesReason.limit) {
+            const _j = (0, h.CountDevicesOnMap)({
+                deviceTypeId: b.deviceTypeId
             });
-            return `Reached placement limit for this ${ g.default.device.singular } (${ j.current }/${ j.max })`;
+            return `Reached placement limit for this ${ g.default.device.singular } (${ _j.current }/${ _j.max })`;
         }
         let j = g.default.device.singular;
-        return a.deviceTypeId === d.default.prop && (j = g.default.prop.singular), a.reason === e.OutOfResourcesReason.noMemory ? `Not enough ${ f.MemoryName } available to place this ${ j }` : '';
+        return b.deviceTypeId === d.default.prop && (j = g.default.prop.singular), b.reason === e.OutOfResourcesReason.noMemory ? `Not enough ${ f.MemoryName } available to place this ${ j }` : '';
     };
-}), c.register('Wgw1x0', function(a, c) {
-    b(a.exports, 'default', function() {
-        return d;
+}), a.register('bzU3s', function(b, c) {
+    _g(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         terrain: {
             singular: 'terrain',
             plural: 'terrains'
@@ -391,84 +391,84 @@ c.register('AASUi', function(L, M) {
             plural: 'wires'
         }
     };
-}), c.register('m0LR2', function(a, i) {
-    b(a.exports, 'CountDevicesOnMap', function() {
-        return f;
+}), a.register('xn4K5', function(b, c) {
+    _g(b.exports, 'CountDevicesOnMap', function() {
+        return _f;
     });
-    var d = c('7Sbqr'),
-        e = c('BUfP2');
-    const f = a => {
-        var g, h;
+    var d = a('iWivW'),
+        e = a('KzfsH');
+    const _f = b => {
+        var _g, h;
         var i;
         return {
-            current: null !== (h = d.default.memorySystem.counters.devices.get(a.deviceTypeId)) && void 0 !== h ? h : 0,
-            max: null !== (i = null === (g = (0, e.FetchDeviceOptionById)(a.deviceTypeId)) || void 0 === g ? void 0 : g.maxOnMap) && void 0 !== i ? i : d.default.memorySystem.limits.deviceMaxOnMapDefault
+            current: null !== (h = d.default.memorySystem.counters.devices.get(b.deviceTypeId)) && void 0 !== h ? h : 0,
+            max: null !== (i = null === (_g = (0, e.FetchDeviceOptionById)(b.deviceTypeId)) || void 0 === _g ? void 0 : _g.maxOnMap) && void 0 !== i ? i : d.default.memorySystem.limits.deviceMaxOnMapDefault
         };
     };
-}), c.register('a9g4s', function(a, l) {
-    b(a.exports, 'GetMultiselectMessage', function() {
-        return i;
+}), a.register('OpngO', function(b, c) {
+    _j(b.exports, 'GetMultiselectMessage', function() {
+        return _i;
     });
-    var d = c('7Sbqr'),
-        e = c('iEonH'),
-        f = c('BUfP2'),
-        g = c('m0LR2'),
-        h = c('Wgw1x0');
-    const i = a => {
-        if (a.reason === e.OutOfResourcesReason.limit) {
-            var j;
-            const k = null === (j = (0, f.FetchDeviceOptionById)(a.limitReachedDeviceTypeId)) || void 0 === j ? void 0 : j.name,
+    var d = a('iWivW'),
+        e = a('ttkWv'),
+        f = a('KzfsH'),
+        g = a('xn4K5'),
+        h = a('bzU3s');
+    const _i = b => {
+        if (b.reason === e.OutOfResourcesReason.limit) {
+            var _j;
+            const k = null === (_j = (0, f.FetchDeviceOptionById)(b.limitReachedDeviceTypeId)) || void 0 === _j ? void 0 : _j.name,
                 l = (0, g.CountDevicesOnMap)({
-                    deviceTypeId: a.limitReachedDeviceTypeId
+                    deviceTypeId: b.limitReachedDeviceTypeId
                 });
             return `Cannot add additional ${ k } ${ h.default.device.plural }. Used ${ l.current }/${ l.max }.`;
         }
-        return a.reason === e.OutOfResourcesReason.noMemory ? `Not enough memory to copy. Requires ${ a.totalCost }, used ${ d.default.memorySystem.usedMemoryCost }/${ d.default.memorySystem.maxUsedMemory }` : '';
+        return b.reason === e.OutOfResourcesReason.noMemory ? `Not enough memory to copy. Requires ${ b.totalCost }, used ${ d.default.memorySystem.usedMemoryCost }/${ d.default.memorySystem.maxUsedMemory }` : '';
     };
-}), c.register('QL3w1', function(a, k) {
-    b(a.exports, 'GetTileMessage', function() {
-        return h;
+}), a.register('M/Cby', function(b, c) {
+    _i(b.exports, 'GetTileMessage', function() {
+        return _h;
     });
-    var d = c('7Sbqr'),
-        e = c('iEonH'),
-        f = c('mCZDR'),
-        g = c('Wgw1x0');
-    const h = a => {
-        const i = a.colliding ? d.default.memorySystem.counters.collidingTiles : d.default.memorySystem.counters.nonCollidingTiles,
-            j = a.colliding ? d.default.memorySystem.limits.collidingTiles : d.default.memorySystem.limits.nonCollidingTiles,
-            k = a.colliding ? 'wall' : 'floor',
-            l = (a.colliding ? d.default.memorySystem.costs.collidingTile : d.default.memorySystem.costs.nonCollidingTile) * a.count;
-        return a.reason === e.OutOfResourcesReason.limit ? `Can't add ${ a.count } more ${ k } ${ g.default.terrain.singular }. Used ${ i }/${ j }` : a.reason === e.OutOfResourcesReason.noMemory ? `Not enough ${ f.MemoryName } to add ${ a.count } ${ k } ${ g.default.terrain.singular }. Requires ${ l } ${ f.MemoryName }.` : '';
+    var d = a('iWivW'),
+        e = a('ttkWv'),
+        f = a('AvtVx'),
+        g = a('bzU3s');
+    const _h = b => {
+        const _i = b.colliding ? d.default.memorySystem.counters.collidingTiles : d.default.memorySystem.counters.nonCollidingTiles,
+            j = b.colliding ? d.default.memorySystem.limits.collidingTiles : d.default.memorySystem.limits.nonCollidingTiles,
+            k = b.colliding ? 'wall' : 'floor',
+            l = (b.colliding ? d.default.memorySystem.costs.collidingTile : d.default.memorySystem.costs.nonCollidingTile) * b.count;
+        return b.reason === e.OutOfResourcesReason.limit ? `Can't add ${ b.count } more ${ k } ${ g.default.terrain.singular }. Used ${ _i }/${ j }` : b.reason === e.OutOfResourcesReason.noMemory ? `Not enough ${ f.MemoryName } to add ${ b.count } ${ k } ${ g.default.terrain.singular }. Requires ${ l } ${ f.MemoryName }.` : '';
     };
-}), c.register('8+3er', function(a, i) {
-    b(a.exports, 'GetWireMessage', function() {
-        return f;
+}), a.register('c3Nxl', function(b, c) {
+    _g(b.exports, 'GetWireMessage', function() {
+        return _f;
     });
-    var d = c('7Sbqr'),
-        e = c('iEonH');
-    const f = a => {
-        const g = d.default.memorySystem.counters.wires,
+    var d = a('iWivW'),
+        e = a('ttkWv');
+    const _f = b => {
+        const _g = d.default.memorySystem.counters.wires,
             h = d.default.memorySystem.limits.wires;
-        if (a.reason === e.OutOfResourcesReason.limit)
-            return `Can't add more wires. Used ${ g }/${ h }`;
+        if (b.reason === e.OutOfResourcesReason.limit)
+            return `Can't add more wires. Used ${ _g }/${ h }`;
         const i = d.default.memorySystem.costs.wire;
-        return a.reason === e.OutOfResourcesReason.noMemory ? `Not enough memory to add wire. Requires ${ i }, used ${ d.default.memorySystem.usedMemoryCost }/${ d.default.memorySystem.maxUsedMemory }` : '';
+        return b.reason === e.OutOfResourcesReason.noMemory ? `Not enough memory to add wire. Requires ${ i }, used ${ d.default.memorySystem.usedMemoryCost }/${ d.default.memorySystem.maxUsedMemory }` : '';
     };
-}), c.register('YARc1', function(a, f) {
-    b(a.exports, 'FetchDeviceName', function() {
-        return g;
+}), a.register('PUGQx1', function(b, c) {
+    _h(b.exports, 'FetchDeviceName', function() {
+        return _g;
     });
-    var d = c('7X8h3'),
-        e = c('ZH/OP'),
-        f = c('7Sbqr');
-    const g = a => {
-        const h = f.default.world.devices.devices.get(a);
-        if (!h)
+    var d = a('EqyfB'),
+        e = a('bV9vv'),
+        f = a('iWivW');
+    const _g = b => {
+        const _h = f.default.world.devices.devices.get(b);
+        if (!_h)
             return '';
-        if (h.name)
-            return h.name;
-        if (h.deviceOption.id === d.default.prop) {
-            const i = h.options;
+        if (_h.name)
+            return _h.name;
+        if (_h.deviceOption.id === d.default.prop) {
+            const i = _h.options;
             if (i.propId) {
                 var j;
                 const k = null === (j = (0, e.default)(i.propId)) || void 0 === j ? void 0 : j.name;
@@ -476,53 +476,53 @@ c.register('AASUi', function(L, M) {
                     return k;
             }
         }
-        return h.deviceOption.name;
+        return _h.deviceOption.name;
     };
-}), c.register('M/vL7', function(a, f) {
-    b(a.exports, 'default', function() {
-        return g;
+}), a.register('dGfO9', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('D0n26'),
-        e = c('7Sbqr'),
-        f = c('kkxCN');
-    var g = a => {
-        a !== f.AddScreen.home && (0, d.EmitTutorialEvent)({
+    var d = a('L1523'),
+        e = a('iWivW'),
+        f = a('ejMkR');
+    var _g = b => {
+        b !== f.AddScreen.home && (0, d.EmitTutorialEvent)({
             event: d.TutorialEventName.OPEN_ADD_SUBMENU,
-            menu: a
-        }), e.default.gui.none.addMenu.screen = a;
+            menu: b
+        }), e.default.gui.none.addMenu.screen = b;
     };
-}), c.register('xXIOh', function(a, f) {
-    b(a.exports, 'ReactionToMultipleProps', function() {
-        return e;
+}), a.register('47u/+', function(b, c) {
+    _i(b.exports, 'ReactionToMultipleProps', function() {
+        return _e;
     });
-    var d = c('UnUp5');
-    const e = (a, b, c) => {
+    var d = a('YuT/D');
+    const _e = (b, _i, a) => {
         const f = [];
-        return a.forEach(a => {
-            const g = (0, d.reaction)(a, b, c);
+        return b.forEach(b => {
+            const g = (0, d.reaction)(b, _i, a);
             f.push(g);
         }), () => {
-            f.forEach(a => {
-                a();
+            f.forEach(b => {
+                b();
             });
         };
     };
-}), c.register('/gzrK', function(a, C) {
-    b(a.exports, 'default', function() {
-        return l;
+}), a.register('hoBfP', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _l;
     });
-    var d = c('8kSQZ'),
-        e = c('h99Nu'),
-        f = c('wiAjn'),
-        g = c('opHmm'),
-        h = c('VcXme');
-    let i, j, k = a => a;
-    var l = a => (0, d.jsxs)(m, {
+    var d = a('0hzx+'),
+        e = a('Axq+p'),
+        f = a('zow3t'),
+        g = a('/Rq0t'),
+        h = a('Zb/Iz');
+    let i, j, k = b => b;
+    var _l = b => (0, d.jsxs)(_m, {
         children: [
-            (0, d.jsxs)(n, {
+            (0, d.jsxs)(_n, {
                 children: [
                     (0, d.jsx)(f.default, {
-                        addingInfo: a.addingInfo
+                        addingInfo: b.addingInfo
                     }),
                     (0, d.jsx)(g.default, {})
                 ]
@@ -530,23 +530,23 @@ c.register('AASUi', function(L, M) {
             (0, d.jsx)(h.default, {})
         ]
     });
-    const m = e.default.div(i || (i = k`
+    const _m = e.default.div(i || (i = k`
   padding: 25px;
 `)),
-        n = e.default.div.attrs({
+        _n = e.default.div.attrs({
             className: 'flex between vc'
         })(j || (j = k``));
-}), c.register('wiAjn', function(a, C) {
-    b(a.exports, 'default', function() {
-        return h;
+}), a.register('zow3t', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _h;
     });
-    var d = c('8kSQZ'),
-        e = c('UzdPH');
-    c('uPP4W');
-    var f = c('gSUVO'),
-        g = c('S/jX4');
-    var h = a => {
-        const i = a.addingInfo;
+    var d = a('0hzx+'),
+        e = a('j2ADs');
+    a('LEQ5w');
+    var f = a('b5kvC'),
+        g = a('vShe/');
+    var _h = b => {
+        const _i = b.addingInfo;
         return (0, d.jsxs)('div', {
             children: [
                 (0, d.jsxs)(e.default.Text, {
@@ -555,7 +555,7 @@ c.register('AASUi', function(L, M) {
                     },
                     className: 'allCaps',
                     children: [
-                        i.tagline,
+                        _i.tagline,
                         ':'
                     ]
                 }),
@@ -567,57 +567,57 @@ c.register('AASUi', function(L, M) {
                         marginTop: 2
                     },
                     className: 'allCaps',
-                    children: i.title
+                    children: _i.title
                 }),
-                i.memoryCost ? (0, d.jsx)(e.default.Text, {
+                _i.memoryCost ? (0, d.jsx)(e.default.Text, {
                     style: {
                         marginTop: 5
                     },
-                    children: i.memoryCost
+                    children: _i.memoryCost
                 }) : null
             ]
         });
     };
-}), c.register('opHmm', function(a, C) {
-    b(a.exports, 'default', function() {
-        return g;
+}), a.register('/Rq0t', function(b, c) {
+    _A(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('qPvuG'),
-        f = c('Ta5t9');
-    var g = () => (0, e.isAddingTerrain)() ? (0, d.jsx)(f.default, {}) : (0, d.jsx)('div', {});
-}), c.register('Ta5t9', function(a, C) {
-    b(a.exports, 'default', function() {
-        return y;
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('pT6Pg'),
+        f = a('eLTRc');
+    var _g = () => (0, e.isAddingTerrain)() ? (0, d.jsx)(f.default, {}) : (0, d.jsx)('div', {});
+}), a.register('eLTRc', function(b, c) {
+    _A(b.exports, 'default', function() {
+        return _y;
     });
-    var d = c('8kSQZ'),
-        e = c('IsmrL'),
-        f = c('Ly1h3'),
-        g = c('5nJMd26'),
-        h = c('UzdPH'),
-        i = c('Vlfxs'),
-        j = c('uPP4W'),
-        k = c('h99Nu'),
-        l = c('knLPA'),
-        m = c('am7L5'),
-        n = c('EefFJ'),
-        o = c('5YE/F0'),
-        p = c('gSUVO'),
-        q = c('RJ/fk'),
-        r = c('Wgw1x0'),
-        s = c('HMNV0');
-    let t, u, v, w, x = a => a;
-    var y = (0, i.observer)(() => {
+    var d = a('0hzx+'),
+        e = a('ulE4q'),
+        f = a('inwN3'),
+        g = a('cvto726'),
+        h = a('j2ADs'),
+        i = a('2x11J'),
+        j = a('LEQ5w'),
+        k = a('Axq+p'),
+        l = a('QGvEI'),
+        m = a('bHGrl'),
+        n = a('2GeW4'),
+        o = a('8Yhx/'),
+        p = a('b5kvC'),
+        q = a('qVhMZ'),
+        r = a('bzU3s'),
+        s = a('JEGzD');
+    let t, u, v, w, x = b => b;
+    var _y = (0, i.observer)(() => {
         const {
             me: {
                 adding: {
                     terrain: z
                 }
             }
-        } = (0, m.default)(), A = j.useRef(), B = j.useRef(), C = z.buildTerrainAsWall;
+        } = (0, m.default)(), _A = j.useRef(), B = j.useRef(), C = z.buildTerrainAsWall;
         return (0, d.jsx)(n.default, {
-            children: (0, d.jsx)(z, {
+            children: (0, d.jsx)(_z, {
                 children: (0, d.jsxs)(g.default, {
                     direction: 'vertical',
                     size: 10,
@@ -625,71 +625,71 @@ c.register('AASUi', function(L, M) {
                         (0, d.jsxs)(g.default, {
                             size: 10,
                             children: [
-                                (0, d.jsxs)(B, {
+                                (0, d.jsxs)(_B, {
                                     children: [
-                                        (0, d.jsx)(C, {
+                                        (0, d.jsx)(_C, {
                                             children: (0, d.jsx)(h.default.Text, {
-                                                style: D,
+                                                style: _D,
                                                 children: 'Layer'
                                             })
                                         }),
-                                        (0, d.jsx)(A, {
+                                        (0, d.jsx)(_A, {
                                             children: (0, d.jsx)(f.default, {
-                                                ref: A,
+                                                ref: _A,
                                                 style: {
                                                     width: 150
                                                 },
                                                 value: z.currentlySelectedTerrainDepth,
                                                 onChange: B => {
                                                     var D, E;
-                                                    z.currentlySelectedTerrainDepth = B, null == A || null === (D = A.current) || void 0 === D || null === (E = D.blur) || void 0 === E || E.call(D);
+                                                    z.currentlySelectedTerrainDepth = B, null == _A || null === (D = _A.current) || void 0 === D || null === (E = D.blur) || void 0 === E || E.call(D);
                                                 },
-                                                children: new Array(l.default.maxDepth - l.default.minDepth + 1).fill(0).map((z, A) => (0, d.jsxs)(f.default.Option, {
-                                                    value: A + 1,
+                                                children: new Array(l.default.maxDepth - l.default.minDepth + 1).fill(0).map((z, _A) => (0, d.jsxs)(f.default.Option, {
+                                                    value: _A + 1,
                                                     children: [
-                                                        A + 1,
+                                                        _A + 1,
                                                         ' - ',
-                                                        o.TerrainLayerNames[A] || 'Layer'
+                                                        o.TerrainLayerNames[_A] || 'Layer'
                                                     ]
-                                                }, `terrain-layer-${ A }`))
+                                                }, `terrain-layer-${ _A }`))
                                             })
                                         })
                                     ]
                                 }),
-                                (0, d.jsxs)(B, {
+                                (0, d.jsxs)(_B, {
                                     children: [
-                                        (0, d.jsx)(C, {
+                                        (0, d.jsx)(_C, {
                                             children: (0, d.jsx)(h.default.Text, {
-                                                style: D,
+                                                style: _D,
                                                 children: 'Brush Size'
                                             })
                                         }),
-                                        (0, d.jsx)(A, {
+                                        (0, d.jsx)(_A, {
                                             children: (0, d.jsx)(f.default, {
                                                 ref: B,
                                                 style: {
                                                     width: 100
                                                 },
                                                 value: z.brushSize,
-                                                onChange: A => {
+                                                onChange: _A => {
                                                     var D, E;
-                                                    z.brushSize = A, null == B || null === (D = B.current) || void 0 === D || null === (E = D.blur) || void 0 === E || E.call(D);
+                                                    z.brushSize = _A, null == B || null === (D = B.current) || void 0 === D || null === (E = D.blur) || void 0 === E || E.call(D);
                                                 },
-                                                children: new Array(4).fill(0).map((z, A) => (0, d.jsx)(f.default.Option, {
-                                                    value: A + 1,
-                                                    children: A + 1
-                                                }, `terrain-brush-size-${ A }`))
+                                                children: new Array(4).fill(0).map((z, _A) => (0, d.jsx)(f.default.Option, {
+                                                    value: _A + 1,
+                                                    children: _A + 1
+                                                }, `terrain-brush-size-${ _A }`))
                                             })
                                         })
                                     ]
                                 })
                             ]
                         }),
-                        (0, s.isPlatformer)() ? null : (0, d.jsxs)(B, {
+                        (0, s.isPlatformer)() ? null : (0, d.jsxs)(_B, {
                             children: [
-                                (0, d.jsx)(C, {
+                                (0, d.jsx)(_C, {
                                     children: (0, d.jsxs)(h.default.Text, {
-                                        style: D,
+                                        style: _D,
                                         children: [
                                             (0, q.CapitalizeFirstLetter)(r.default.terrain.singular),
                                             ' ',
@@ -697,7 +697,7 @@ c.register('AASUi', function(L, M) {
                                         ]
                                     })
                                 }),
-                                (0, d.jsx)(A, {
+                                (0, d.jsx)(_A, {
                                     children: (0, d.jsxs)(e.default.Group, {
                                         style: {
                                             width: '100%'
@@ -729,90 +729,90 @@ c.register('AASUi', function(L, M) {
             })
         });
     });
-    const z = k.default.div(t || (t = x``)),
-        A = k.default.div.attrs({
+    const _z = k.default.div(t || (t = x``)),
+        _A = k.default.div.attrs({
             className: 'maxWidth'
         })(u || (u = x``)),
-        B = (0, k.default)(A)(v || (v = x``)),
-        C = (0, k.default)(A)(w || (w = x`
+        _B = (0, k.default)(_A)(v || (v = x``)),
+        _C = (0, k.default)(_A)(w || (w = x`
   margin-bottom: 4px;
 `)),
-        D = {
+        _D = {
             fontWeight: p.FontWeights.Bold,
             fontStyle: 'italic'
         };
-}), c.register('5YE/F0', function(a, c) {
-    b(a.exports, 'TerrainLayerNames', function() {
-        return d;
+}), a.register('8Yhx/', function(b, c) {
+    _v(b.exports, 'TerrainLayerNames', function() {
+        return _d;
     });
-    const d = [
+    const _d = [
         'Bottom',
         'Lower',
         'Middle',
         'Upper',
         'Top'
     ];
-}), c.register('VcXme', function(a, d) {
-    b(a.exports, 'default', function() {
-        return g;
+}), a.register('Zb/Iz', function(b, c) {
+    _v(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('jMYtD'),
-        f = c('R+kVV');
-    var g = (0, c('Vlfxs').observer)(() => (0, e.IsAddingWire)() ? (0, d.jsx)(f.default, {}) : null);
-}), c.register('R+kVV', function(a, d) {
-    b(a.exports, 'default', function() {
-        return t;
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('0rIMQ'),
+        f = a('OdVR2');
+    var _g = (0, a('2x11J').observer)(() => (0, e.IsAddingWire)() ? (0, d.jsx)(f.default, {}) : null);
+}), a.register('OdVR2', function(b, c) {
+    _v(b.exports, 'default', function() {
+        return _t;
     });
-    var d = c('8kSQZ'),
-        e = c('uPP4W'),
-        f = c('YimJ0'),
-        g = c('UzdPH'),
-        h = c('h99Nu'),
-        i = c('gSUVO'),
-        j = c('am7L5'),
-        k = c('Vlfxs'),
-        l = c('YARc1'),
-        m = c('PjB0f'),
-        n = c('Wgw1x0'),
-        o = c('S/jX4');
-    let p, q, r, s = a => a;
-    var t = (0, k.observer)(() => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('0HHAH'),
+        g = a('j2ADs'),
+        h = a('Axq+p'),
+        i = a('b5kvC'),
+        j = a('bHGrl'),
+        k = a('2x11J'),
+        l = a('PUGQx1'),
+        m = a('PMl60'),
+        n = a('bzU3s'),
+        o = a('vShe/');
+    let p, q, r, s = b => b;
+    var _t = (0, k.observer)(() => {
         const {
             me: {
                 adding: {
                     wires: u
                 },
                 context: {
-                    __devicesUnderCursor: v
+                    __devicesUnderCursor: _v
                 }
             }
         } = (0, j.default)(), w = e.useMemo(() => {
             var x;
-            return u.hoveringOverSupportedDevice ? v[0] && null !== (x = (0, l.FetchDeviceName)(v[0])) && void 0 !== x ? x : (0, m.capitalizeFirstLetter)(n.default.device.singular) : `Select a ${ n.default.device.singular } or ${ n.default.prop.singular } to ${ u.startDeviceSelected ? 'complete' : 'start' } the ${ n.default.wire.singular }`;
+            return u.hoveringOverSupportedDevice ? _v[0] && null !== (x = (0, l.FetchDeviceName)(_v[0])) && void 0 !== x ? x : (0, m.capitalizeFirstLetter)(n.default.device.singular) : `Select a ${ n.default.device.singular } or ${ n.default.prop.singular } to ${ u.startDeviceSelected ? 'complete' : 'start' } the ${ n.default.wire.singular }`;
         }, [
             u.hoveringOverSupportedDevice,
-            v,
+            _v,
             u.startDeviceSelected
         ]);
         return (0, d.jsxs)(f.CenteredColumn, {
             className: 'maxWidth',
             children: [
-                (0, d.jsx)(u, {
+                (0, d.jsx)(_u, {
                     children: (0, d.jsx)(g.default.Text, {
                         italic: !0,
                         children: w
                     })
                 }),
-                (0, d.jsxs)(v, {
+                (0, d.jsxs)(_v, {
                     children: [
-                        (0, d.jsx)(w, {
+                        (0, d.jsx)(_w, {
                             selected: !u.startDeviceSelected,
                             children: 'Out'
                         }),
-                        (0, d.jsx)(x, {}),
-                        (0, d.jsx)(w, {
+                        (0, d.jsx)(_x, {}),
+                        (0, d.jsx)(_w, {
                             selected: u.startDeviceSelected,
                             children: 'In'
                         })
@@ -821,11 +821,11 @@ c.register('AASUi', function(L, M) {
             ]
         });
     });
-    const u = h.default.div(p || (p = s``)),
-        v = (0, h.default)(f.Centered).attrs({
+    const _u = h.default.div(p || (p = s``)),
+        _v = (0, h.default)(f.Centered).attrs({
             className: 'maxWidth'
         })(q || (q = s``)),
-        w = a => (0, d.jsx)(f.Centered, {
+        _w = b => (0, d.jsx)(f.Centered, {
             style: {
                 height: 50,
                 width: 50,
@@ -835,38 +835,38 @@ c.register('AASUi', function(L, M) {
                 lineHeight: 1,
                 fontSize: 10,
                 background: 'rgba(255,255,255,0.15)',
-                border: (a.selected ? 3 : 0) + 'px solid #ffca28',
+                border: (b.selected ? 3 : 0) + 'px solid #ffca28',
                 flexShrink: 0,
                 borderRadius: '50%'
             },
-            children: a.children
+            children: b.children
         }),
-        x = h.default.div(r || (r = s`
+        _x = h.default.div(r || (r = s`
   height: 2px;
   flex: 1;
   background: rgba(255, 255, 255, 0.7);
 `));
-}), c.register('JegR3', function(a, d) {
-    b(a.exports, 'default', function() {
-        return i;
+}), a.register('pMmde1', function(b, c) {
+    _j(b.exports, 'default', function() {
+        return _i;
     });
-    var d = c('uhRWM'),
-        e = c('uPP4W'),
-        f = c('WKaIG'),
-        g = c('tEXgG'),
-        h = function(a, b) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, a), {}, {
-                ref: b,
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('+bIFH'),
+        g = a('sLVIW'),
+        h = function(i, _j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, i), {}, {
+                ref: _j,
                 icon: f.default
             }));
         };
     h.displayName = 'DownOutlined';
-    var i = e.forwardRef(h);
-}), c.register('WKaIG', function(a, c) {
-    b(a.exports, 'default', function() {
-        return d;
+    var _i = e.forwardRef(h);
+}), a.register('+bIFH', function(b, c) {
+    t(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {

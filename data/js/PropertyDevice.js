@@ -1,53 +1,53 @@
-function a(a, b, i, c) {
-    Object.defineProperty(a, b, {
-        get: i,
-        set: c,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('SFCtr', function(i, c) {
-    var c;
-    c = i.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('APryM', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(i.exports, 'default', function() {
-        return n;
+    }), _o(b.exports, 'default', function() {
+        return _o;
     });
-    var d = b('UM8oI'),
-        e = b('9618n'),
-        f = b('5Ux1a'),
-        g = b('sgILU'),
-        h = b('Bpt+p'),
-        i = b('Gqspz'),
-        j = b('phu0d'),
-        k = b('JJQ0+'),
-        l = b('7Sbqr');
-    class m extends g.default {
+    var e = a('1bFPu'),
+        f = a('LP9lx'),
+        g = a('/pbxo'),
+        h = a('I35Ay'),
+        i = a('9tz3H'),
+        j = a('dTXti'),
+        k = a('+uQv7'),
+        l = a('2Xvuf'),
+        m = a('iWivW');
+    class n extends h.default {
         setStoredValue() {
-            this.options.valueType === e.PrimitiveType.boolean ? l.default.me.properties.set(this.options.propertyName, this.state.valueBoolean) : this.options.valueType === e.PrimitiveType.number ? l.default.me.properties.set(this.options.propertyName, this.state.valueNumber) : this.options.valueType === e.PrimitiveType.string && l.default.me.properties.set(this.options.propertyName, this.state.valueString);
+            this.options.valueType === f.PrimitiveType.boolean ? m.default.me.properties.set(this.options.propertyName, this.state.valueBoolean) : this.options.valueType === f.PrimitiveType.number ? m.default.me.properties.set(this.options.propertyName, this.state.valueNumber) : this.options.valueType === f.PrimitiveType.string && m.default.me.properties.set(this.options.propertyName, this.state.valueString);
         }
-        destroy(a) {
-            super.destroy(a), l.default.me.properties.delete(this.options.propertyName);
+        destroy(_o) {
+            super.destroy(_o), m.default.me.properties.delete(this.options.propertyName);
         }
-        constructor(a) {
-            if (super(a), (0, d.default)(this, 'onStateChange', a => {
-                    (this.options.valueType === e.PrimitiveType.boolean && 'valueBoolean' === a || this.options.valueType === e.PrimitiveType.number && 'valueNumber' === a || this.options.valueType === e.PrimitiveType.string && 'valueString' === a) && this.setStoredValue();
-                }), this.setStoredValue(), (0, f.InGamePhase)() || (0, h.isPublishedVersion)())
+        constructor(o) {
+            if (super(o), (0, e.default)(this, 'onStateChange', o => {
+                    (this.options.valueType === f.PrimitiveType.boolean && 'valueBoolean' === o || this.options.valueType === f.PrimitiveType.number && 'valueNumber' === o || this.options.valueType === f.PrimitiveType.string && 'valueString' === o) && this.setStoredValue();
+                }), this.setStoredValue(), (0, g.InGamePhase)() || (0, i.isPublishedVersion)())
                 return;
-            const n = i.default.Overlay;
-            new(0, j.default)({
+            const p = j.default.Overlay;
+            new(0, k.default)({
                 device: this,
-                baseColor: n.baseColor,
-                boxColor: n.boxColor,
+                baseColor: p.baseColor,
+                boxColor: p.boxColor,
                 content: {
                     text: {
                         text: '' === this.options.propertyName ? 'property' : this.options.propertyName,
                         shiftY: 15
                     },
                     icon: {
-                        image: (0, k.default)('devices/property/icon.png'),
+                        image: (0, l.default)('devices/property/icon.png'),
                         scale: 0.5,
                         shiftY: -15
                     }
@@ -55,11 +55,11 @@ b.register('SFCtr', function(i, c) {
             });
         }
     }
-    var n = o;
-}), b.register('9618n', function(b, i) {
-    let c;
-    var d;
-    a(b.exports, 'PrimitiveType', function() {
-        return c;
-    }), (d = c || (c = {})).boolean = 'boolean', d.number = 'number', d.string = 'string';
+    var _o = n;
+}), a.register('LP9lx', function(b, c) {
+    let d;
+    var e;
+    e(b.exports, 'PrimitiveType', function() {
+        return d;
+    }), (e = d || (d = {})).boolean = 'boolean', e.number = 'number', e.string = 'string';
 });

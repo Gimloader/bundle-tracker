@@ -1,73 +1,73 @@
-function a(a, b, u, v) {
-    Object.defineProperty(a, b, {
-        get: u,
-        set: v,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('SAb81', function(u, v) {
-    var c;
-    c = u.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('AxLje', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(u.exports, 'default', function() {
-        return r;
+    }), _t(b.exports, 'default', function() {
+        return _s;
     });
-    var d = b('8kSQZ'),
-        e = b('uPP4W'),
-        f = b('0R8EW'),
-        g = b('PjB0f'),
-        h = b('h99Nu'),
-        i = b('YimJ0'),
-        j = b('lmfrI'),
-        k = b('fgVTE0'),
-        l = b('ExtIT'),
-        m = b('cR5QE'),
-        n = b('jf6jE'),
-        o = b('gSUVO'),
-        p = b('5F55/');
-    let q;
-    var r = () => {
+    var e = a('0hzx+'),
+        f = a('LEQ5w'),
+        g = a('70AkF'),
+        h = a('PMl60'),
+        i = a('Axq+p'),
+        j = a('0HHAH'),
+        k = a('sHRDd'),
+        l = a('FpbFp'),
+        m = a('fmVdR'),
+        n = a('YRlpt'),
+        o = a('mbGc60'),
+        p = a('b5kvC'),
+        q = a('AQ78Z');
+    let r;
+    var _s = () => {
         const {
-            id: s
-        } = (0, f.useParams)(), [t, u] = e.useState(''), [v, w, x] = (0, g.useBoolean)(!1), [y, z] = e.useState('');
-        e.useEffect(() => {
-            w(), z(''), (0, g.request)({
+            id: _t
+        } = (0, g.useParams)(), [u, v] = f.useState(''), [w, x, y] = (0, h.useBoolean)(!1), [z, A] = f.useState('');
+        f.useEffect(() => {
+            x(), A(''), (0, h.request)({
                 url: '/api/matchmaker/intent/map/play/publish-link/create',
                 data: {
-                    id: s
+                    id: _t
                 },
-                success: s => {
-                    u(s);
+                success: _t => {
+                    v(_t);
                 },
-                error: s => {
-                    var A;
-                    (null == s || null === (A = s.message) || void 0 === A ? void 0 : A.text) ? z(s.message.text): z('There was an error. Please try again.');
+                error: _t => {
+                    var B;
+                    (null == _t || null === (B = _t.message) || void 0 === B ? void 0 : B.text) ? A(_t.message.text): A('There was an error. Please try again.');
                 },
-                both: x
+                both: y
             });
-        }, [s]);
-        return (0, d.jsxs)(d.Fragment, {
+        }, [_t]);
+        return (0, e.jsxs)(e.Fragment, {
             children: [
-                (0, d.jsx)(g.Title, {
+                (0, e.jsx)(h.Title, {
                     title: 'Gimkit Creative Map'
                 }),
                 (() => {
-                    if (t)
-                        return (0, d.jsx)(p.default, {
+                    if (u)
+                        return (0, e.jsx)(q.default, {
                             createDetails: {
-                                intentId: t
+                                intentId: u
                             }
                         });
-                    return (0, d.jsx)(s, {
-                        children: v ? (0, d.jsx)(k.default, {
+                    return (0, e.jsx)(_t, {
+                        children: w ? (0, e.jsx)(l.default, {
                             style: {
-                                color: j.default.White
+                                color: k.default.White
                             },
                             size: 42
-                        }) : y ? (0, d.jsx)(m.default, {
+                        }) : z ? (0, e.jsx)(n.default, {
                             open: !0,
                             closable: !1,
                             footer: null,
@@ -76,29 +76,29 @@ b.register('SAb81', function(u, v) {
                             bodyStyle: {
                                 padding: 40
                             },
-                            children: (0, d.jsxs)('div', {
+                            children: (0, e.jsxs)('div', {
                                 className: 'maxAll flex-column flex-center',
                                 style: {
-                                    color: j.default.Black,
+                                    color: k.default.Black,
                                     textAlign: 'center',
-                                    font: o.Fonts.SFPro
+                                    font: p.Fonts.SFPro
                                 },
                                 children: [
-                                    (0, d.jsx)(n.default, {
+                                    (0, e.jsx)(o.default, {
                                         style: {
                                             color: 'darkorange',
                                             fontSize: 51
                                         }
                                     }),
                                     ' ',
-                                    (0, d.jsx)(l.default, {}),
-                                    (0, d.jsx)('div', {
+                                    (0, e.jsx)(m.default, {}),
+                                    (0, e.jsx)('div', {
                                         style: {
                                             textAlign: 'center',
                                             fontSize: 23,
                                             fontWeight: 'bold'
                                         },
-                                        children: y
+                                        children: z
                                     })
                                 ]
                             })
@@ -108,32 +108,32 @@ b.register('SAb81', function(u, v) {
             ]
         });
     };
-    const s = (0, h.default)(i.Centered)(q || (q = (a => a)`
+    const _t = (0, i.default)(j.Centered)(r || (r = (_i => _i)`
   flex: 1;
   padding: 20px;
   background: ${ 0 };
-`), j.default.BackgroundPurple);
-}), b.register('jf6jE', function(n, c) {
-    a(n.exports, 'default', function() {
-        return h;
+`), k.default.BackgroundPurple);
+}), a.register('mbGc60', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var c = b('uhRWM'),
-        d = b('uPP4W'),
-        e = b('TM8xK'),
-        f = b('tEXgG'),
-        g = function(a, b) {
-            return d.createElement(f.default, (0, c.default)((0, c.default)({}, a), {}, {
-                ref: b,
-                icon: e.default
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('UkYu/'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
+                icon: f.default
             }));
         };
-    g.displayName = 'WarningOutlined';
-    var h = d.forwardRef(g);
-}), b.register('TM8xK', function(b, n) {
-    a(b.exports, 'default', function() {
-        return c;
+    h.displayName = 'WarningOutlined';
+    var _i = e.forwardRef(h);
+}), a.register('UkYu/', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var c = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -150,59 +150,59 @@ b.register('SAb81', function(u, v) {
         name: 'warning',
         theme: 'outlined'
     };
-}), b.register('PDLD/2', function(b, n) {
-    let c;
-    var d;
-    let e;
-    var f;
-    let g;
-    var h;
-    let i;
+}), a.register('6XgQB1', function(b, c) {
+    let d;
+    var e;
+    let f;
+    var g;
+    let h;
+    var i;
     let j;
-    var k;
-    a(b.exports, 'QuestionType', function() {
-        return c;
-    }), a(b.exports, 'Privacy', function() {
-        return e;
-    }), a(b.exports, 'GameStatus', function() {
-        return g;
-    }), a(b.exports, 'GameType', function() {
-        return i;
-    }), a(b.exports, 'GameGoal', function() {
+    let k;
+    var l;
+    e(b.exports, 'QuestionType', function() {
+        return d;
+    }), e(b.exports, 'Privacy', function() {
+        return f;
+    }), e(b.exports, 'GameStatus', function() {
+        return h;
+    }), e(b.exports, 'GameType', function() {
         return j;
-    }), a(b.exports, 'themes', function() {
-        return p;
-    }), a(b.exports, 'ExperienceSource', function() {
-        return q;
-    }), (d = c || (c = {})).multipleChoice = 'mc', d.textInput = 'text', (f = e || (e = {})).public = 'public', f.private = 'private', (h = g || (g = {})).setup = 'setup', h.join = 'join', h.teams = 'teams', h.gameplay = 'gameplay', h.results = 'results', (i || (i = {})).live = 'live', (k = j || (j = {})).time = 'time', k.race = 'race', k.allIn = 'allIn';
-    const l = '#ffffff',
-        m = '#000000';
-    let n;
-    var o;
-    (o = n || (n = {})).easy = 'easy', o.medium = 'medium', o.hard = 'hard', o.veryHard = 'veryHard', o.veryVeryHard = 'veryVeryHard';
-    const p = [{
+    }), e(b.exports, 'GameGoal', function() {
+        return k;
+    }), e(b.exports, 'themes', function() {
+        return _q;
+    }), e(b.exports, 'ExperienceSource', function() {
+        return _r;
+    }), (e = d || (d = {})).multipleChoice = 'mc', e.textInput = 'text', (g = f || (f = {})).public = 'public', g.private = 'private', (i = h || (h = {})).setup = 'setup', i.join = 'join', i.teams = 'teams', i.gameplay = 'gameplay', i.results = 'results', (j || (j = {})).live = 'live', (l = k || (k = {})).time = 'time', l.race = 'race', l.allIn = 'allIn';
+    const m = '#ffffff',
+        n = '#000000';
+    let o;
+    var p;
+    (p = o || (o = {})).easy = 'easy', p.medium = 'medium', p.hard = 'hard', p.veryHard = 'veryHard', p.veryVeryHard = 'veryVeryHard';
+    const _q = [{
             cost: 0,
             name: 'Default',
             description: 'Works fine, that\'s all',
             question: {
                 background: '#303f9f',
-                text: l
+                text: m
             },
             palette: [{
                     background: '#771322',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#A85C15',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#0D6B33',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#076296',
-                    text: l
+                    text: m
                 }
             ],
             owned: !0,
@@ -214,23 +214,23 @@ b.register('SAb81', function(u, v) {
             description: 'The perfect theme to show your thanks',
             question: {
                 background: '#6C2F00',
-                text: l
+                text: m
             },
             palette: [{
                     background: '#9E682A',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#B54730',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#8A9748',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#F1B930',
-                    text: l
+                    text: m
                 }
             ],
             owned: !1,
@@ -242,23 +242,23 @@ b.register('SAb81', function(u, v) {
             description: 'A little easier on the eyes',
             question: {
                 background: '#000a12',
-                text: l
+                text: m
             },
             palette: [{
                     background: '#263238',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#37474f',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#455a64',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#546e7a',
-                    text: l
+                    text: m
                 }
             ],
             owned: !1,
@@ -270,23 +270,23 @@ b.register('SAb81', function(u, v) {
             description: 'Perfectly balanced, as all things should be',
             question: {
                 background: '#0D0019',
-                text: l
+                text: m
             },
             palette: [{
                     background: '#220044',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#330066',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#3E007C',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#4F1787',
-                    text: l
+                    text: m
                 }
             ],
             owned: !1,
@@ -298,23 +298,23 @@ b.register('SAb81', function(u, v) {
             description: 'Under the sea...',
             question: {
                 background: '#000063',
-                text: l
+                text: m
             },
             palette: [{
                     background: '#283593',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#076296',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#0277bd',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#1565c0',
-                    text: l
+                    text: m
                 }
             ],
             owned: !1,
@@ -326,23 +326,23 @@ b.register('SAb81', function(u, v) {
             description: 'A walk through the woods',
             question: {
                 background: '#4c3d33',
-                text: l
+                text: m
             },
             palette: [{
                     background: '#385645',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#425C49',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#415641',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#4C6349',
-                    text: l
+                    text: m
                 }
             ],
             owned: !1,
@@ -354,23 +354,23 @@ b.register('SAb81', function(u, v) {
             description: 'Take a breather',
             question: {
                 background: '#7F7496',
-                text: l
+                text: m
             },
             palette: [{
                     background: '#F46F5A',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#ED712D',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#7A596A',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#E8AB3C',
-                    text: l
+                    text: m
                 }
             ],
             owned: !1,
@@ -410,23 +410,23 @@ b.register('SAb81', function(u, v) {
             description: 'Old school...',
             question: {
                 background: '#9C0022',
-                text: l
+                text: m
             },
             palette: [{
                     background: '#001D3B',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#FFAE52',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#FE5963',
-                    text: l
+                    text: m
                 },
                 {
                     background: '#A71C94',
-                    text: l
+                    text: m
                 }
             ],
             owned: !1,
@@ -437,31 +437,31 @@ b.register('SAb81', function(u, v) {
             name: 'Pure Gold',
             description: 'Now you\'re just showing off',
             question: {
-                background: m,
+                background: n,
                 text: '#FFCD2B'
             },
             palette: [{
                     background: '#FFCD2B',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#FFC721',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#FFD147',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#FFCD38',
-                    text: m
+                    text: n
                 }
             ],
             owned: !1,
             isActive: !1
         }
     ];
-    let q;
-    var r;
-    (r = q || (q = {})).original = 'original', r.map = 'map';
+    let _r;
+    var s;
+    (s = _r || (_r = {})).original = 'original', s.map = 'map';
 });

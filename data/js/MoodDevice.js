@@ -1,42 +1,42 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('Dvo+z', function(t, o) {
-    var b, c, d, e, f;
-    b = t.exports, Object.defineProperty(b, '__esModule', {
+a.register('GnQiO', function(b, c) {
+    var d, e, f, g, h;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), c = t.exports, d = 'default', e = function() {
-        return p;
-    }, Object.defineProperty(c, d, {
-        get: e,
-        set: f,
+    }), e = b.exports, f = 'default', g = function() {
+        return _r;
+    }, Object.defineProperty(e, f, {
+        get: g,
+        set: h,
         enumerable: !0,
         configurable: !0
     });
-    var g = a('UM8oI'),
-        h = a('7Sbqr'),
-        i = a('JJQ0+'),
-        j = a('Bpt+p'),
-        k = a('5Ux1a'),
-        l = a('sgILU'),
-        m = a('phu0d'),
-        n = a('Gqspz');
-    class o extends l.default {
-        constructor(a) {
-            if (super(a), (0, g.default)(this, 'resetStore', () => {
-                    h.default.me.mood.activeDeviceId = '', h.default.me.mood.vignetteActive = !1, h.default.me.mood.vignetteStrength = 0;
-                }), (0, g.default)(this, 'setStore', () => {
-                    h.default.me.mood.activeDeviceId = this.id, h.default.me.mood.vignetteActive = !0, h.default.me.mood.vignetteStrength = this.options.vignetteStrength;
-                }), (0, g.default)(this, 'onStateChange', a => {
-                    (0, k.InPreGamePhase)() || 'active' === a && (!1 === this.state.active && h.default.me.mood.activeDeviceId === this.id && this.resetStore(), this.state.active && this.setStore());
-                }), (0, k.InPreGamePhase)() && (0, j.isSavedVersion)()) {
-                const p = n.default.Overlay;
-                new(0, m.default)({
+    var i = a('1bFPu'),
+        j = a('iWivW'),
+        k = a('2Xvuf'),
+        l = a('9tz3H'),
+        m = a('/pbxo'),
+        n = a('I35Ay'),
+        o = a('+uQv7'),
+        p = a('dTXti');
+    class q extends n.default {
+        constructor(r) {
+            if (super(r), (0, i.default)(this, 'resetStore', () => {
+                    j.default.me.mood.activeDeviceId = '', j.default.me.mood.vignetteActive = !1, j.default.me.mood.vignetteStrength = 0;
+                }), (0, i.default)(this, 'setStore', () => {
+                    j.default.me.mood.activeDeviceId = this.id, j.default.me.mood.vignetteActive = !0, j.default.me.mood.vignetteStrength = this.options.vignetteStrength;
+                }), (0, i.default)(this, 'onStateChange', r => {
+                    (0, m.InPreGamePhase)() || 'active' === r && (!1 === this.state.active && j.default.me.mood.activeDeviceId === this.id && this.resetStore(), this.state.active && this.setStore());
+                }), (0, m.InPreGamePhase)() && (0, l.isSavedVersion)()) {
+                const s = p.default.Overlay;
+                new(0, o.default)({
                     device: this,
-                    baseColor: p.baseColor,
-                    boxColor: p.boxColor,
+                    baseColor: s.baseColor,
+                    boxColor: s.boxColor,
                     content: {
                         icon: {
-                            image: (0, i.default)('devices/mood/icon.png'),
+                            image: (0, k.default)('devices/mood/icon.png'),
                             scale: 1
                         }
                     }
@@ -44,5 +44,5 @@ a.register('Dvo+z', function(t, o) {
             }
         }
     }
-    var p = q;
+    var _r = q;
 });

@@ -1,54 +1,54 @@
-function a(a, b, c, s) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: s,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
 
-function b(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('Rv/4f', function(b, s) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('wXYDn', function(b, c) {
     var d;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(b.exports, 'default', function() {
-        return p;
+    }), _p(b.exports, 'default', function() {
+        return _p;
     });
-    var e = c('UM8oI'),
-        f = c('sgILU'),
-        g = c('crVjo2'),
-        h = c('IuVhK'),
-        i = c('5Ux1a'),
-        j = c('dAmf5'),
-        k = c('qxeBa0'),
-        l = c('Bpt+p'),
-        m = c('wSwKo5'),
-        n = c('/Lvpl17');
+    var e = a('1bFPu'),
+        f = a('I35Ay'),
+        g = a('sCbH9'),
+        h = a('RKoHq'),
+        i = a('/pbxo'),
+        j = a('D5xLI'),
+        k = a('vfR2b'),
+        l = a('9tz3H'),
+        m = a('IFO6W13'),
+        n = a('R2Ucl10');
     class o extends f.default {
-        constructor(a) {
-            super(a), (0, e.default)(this, 'createVisuals', () => {
+        constructor(_p) {
+            super(_p), (0, e.default)(this, 'createVisuals', () => {
                 if (this.isDestroyed)
                     return;
-                const p = (0, g.isGoogleFontLoaded)(this.options.googleFont),
-                    q = (0, j.default)().cameraHelper.zoom,
-                    r = 1 / q;
-                let s = {
-                    fontSize: `${ this.options.fontSize * q }px`,
+                const q = (0, g.isGoogleFontLoaded)(this.options.googleFont),
+                    r = (0, j.default)().cameraHelper.zoom,
+                    s = 1 / r;
+                let t = {
+                    fontSize: `${ this.options.fontSize * r }px`,
                     align: 'center',
-                    fontFamily: p ? `"${ this.options.googleFont }"` : 'Roboto',
+                    fontFamily: q ? `"${ this.options.googleFont }"` : 'Roboto',
                     color: this.state.textColor || this.options.color
                 };
-                this.options.strokeThickness && this.options.strokeColor && (s.strokeThickness = this.options.strokeThickness * q, s.stroke = this.options.strokeColor);
-                let t = this.state.text || this.options.text;
-                t || (0, l.isSavedVersion)() && (t = 'Text Here'), this.text = this.parts.add.text({
-                    text: t,
-                    textStyle: s
-                }), this.text.view.scale = r, this.text.view.angle = this.options.rotation, !p && this.options.googleFont ? (0, g.default)({
+                this.options.strokeThickness && this.options.strokeColor && (t.strokeThickness = this.options.strokeThickness * r, t.stroke = this.options.strokeColor);
+                let u = this.state.text || this.options.text;
+                u || (0, l.isSavedVersion)() && (u = 'Text Here'), this.text = this.parts.add.text({
+                    text: u,
+                    textStyle: t
+                }), this.text.view.scale = s, this.text.view.angle = this.options.rotation, !q && this.options.googleFont ? (0, g.default)({
                     familyName: this.options.googleFont,
                     onLoad: () => {
                         this.isDestroyed || (this.text.view.setFontFamily(`"${ this.options.googleFont }"`), this.updateScale(), this.parts.show(), this.setupVisualEditing());
@@ -57,22 +57,22 @@ c.register('Rv/4f', function(b, s) {
             }), (0, e.default)(this, 'onUpdate', () => {
                 this.currentScale !== this.neededScale && this.cull.isInsideView && this.updateScale();
             }), (0, e.default)(this, 'getWidth', () => this.text ? this.text.view.width : 100), (0, e.default)(this, 'getHeight', () => this.text ? 2 * this.text.view.height : 100), (0, e.default)(this, 'updateScale', () => {
-                const p = 1 / (0, j.default)().cameraHelper.zoom;
-                this.neededScale = p, this.currentScale !== p && this.cull.isInsideView && (this.setFontSize(), this.setStroke(), this.currentScale = p, this.boundingBox.clearCached());
+                const q = 1 / (0, j.default)().cameraHelper.zoom;
+                this.neededScale = q, this.currentScale !== q && this.cull.isInsideView && (this.setFontSize(), this.setStroke(), this.currentScale = q, this.boundingBox.clearCached());
             }), (0, e.default)(this, 'setFontSize', () => {
-                const p = this.neededScale;
-                this.text.view.scale = p;
-                const q = this.options.fontSize * (0, j.default)().cameraHelper.zoom,
-                    r = (0, k.TextPadding)();
-                this.text.view.setPadding(r, r, r, r), this.text.view.setFontSize(q);
+                const q = this.neededScale;
+                this.text.view.scale = q;
+                const r = this.options.fontSize * (0, j.default)().cameraHelper.zoom,
+                    s = (0, k.TextPadding)();
+                this.text.view.setPadding(s, s, s, s), this.text.view.setFontSize(r);
             }), (0, e.default)(this, 'setStroke', () => {
                 if (this.options.strokeThickness && this.options.strokeColor) {
-                    const p = this.options.strokeThickness * (0, j.default)().cameraHelper.zoom;
-                    this.text.view.setStroke(this.options.strokeColor, p);
+                    const q = this.options.strokeThickness * (0, j.default)().cameraHelper.zoom;
+                    this.text.view.setStroke(this.options.strokeColor, q);
                 }
-            }), (0, e.default)(this, 'getAlpha', () => (0, l.isSavedVersion)() && (0, i.InPreGamePhase)() ? this.options.alpha : (0, l.isPublishedVersion)() && (0, i.InPreGamePhase)() ? 'No' === this.options.visibleOnGameStart ? 0 : this.options.alpha : this.state.visible ? this.options.alpha : 0), (0, e.default)(this, 'onStateChange', a => {
+            }), (0, e.default)(this, 'getAlpha', () => (0, l.isSavedVersion)() && (0, i.InPreGamePhase)() ? this.options.alpha : (0, l.isPublishedVersion)() && (0, i.InPreGamePhase)() ? 'No' === this.options.visibleOnGameStart ? 0 : this.options.alpha : this.state.visible ? this.options.alpha : 0), (0, e.default)(this, 'onStateChange', _p => {
                 if (this.text) {
-                    if ('visible' === a) {
+                    if ('visible' === _p) {
                         if (!(0, i.InGamePhase)())
                             return;
                         this.tweens.add({
@@ -82,7 +82,7 @@ c.register('Rv/4f', function(b, s) {
                             ease: h.default.Animation.Visibility.Ease
                         });
                     } else
-                        'text' === a ? this.text.view.setText(this.state.text) : 'textColor' === a && this.text.view.setColor(this.state.textColor);
+                        'text' === _p ? this.text.view.setText(this.state.text) : 'textColor' === _p && this.text.view.setColor(this.state.textColor);
                     this.updateScale();
                 }
             }), (0, e.default)(this, 'setupVisualEditing', () => {
@@ -90,58 +90,58 @@ c.register('Rv/4f', function(b, s) {
                     return;
                 if (this.visualEditing.uses())
                     return;
-                const p = (0, n.FetchOptionSchemaProperty)(this, 'fontSize'),
-                    q = this.getWidth() * p.min / this.options.fontSize,
-                    r = this.getWidth() * p.max / this.options.fontSize,
-                    s = this.getHeight() * p.min / this.options.fontSize,
-                    t = this.getHeight() * p.max / this.options.fontSize;
+                const q = (0, n.FetchOptionSchemaProperty)(this, 'fontSize'),
+                    r = this.getWidth() * q.min / this.options.fontSize,
+                    s = this.getWidth() * q.max / this.options.fontSize,
+                    t = this.getHeight() * q.min / this.options.fontSize,
+                    u = this.getHeight() * q.max / this.options.fontSize;
                 this.visualEditing.add.box({
                     width: 2 * this.getWidth(),
                     height: this.getHeight(),
                     angle: this.options.rotation,
-                    minWidth: q,
-                    maxWidth: r,
-                    minHeight: s,
-                    maxHeight: t,
-                    onChange: p => {
-                        (0, m.ReplaceVisualEditingPreview)(p.x, p.y, {
-                            rotation: p.angle,
-                            fontSize: p.height / this.getHeight() * this.options.fontSize
+                    minWidth: r,
+                    maxWidth: s,
+                    minHeight: t,
+                    maxHeight: u,
+                    onChange: q => {
+                        (0, m.ReplaceVisualEditingPreview)(q.x, q.y, {
+                            rotation: q.angle,
+                            fontSize: q.height / this.getHeight() * this.options.fontSize
                         });
                     }
                 });
             }), this.createVisuals();
         }
     }
-    var p = q;
-}), c.register('crVjo2', function(i, d) {
-    a(i.exports, 'isGoogleFontLoaded', function() {
-        return f;
-    }), a(i.exports, 'default', function() {
-        return g;
+    var _p = o;
+}), a.register('sCbH9', function(b, c) {
+    t(b.exports, 'isGoogleFontLoaded', function() {
+        return _f;
+    }), t(b.exports, 'default', function() {
+        return _g;
     });
-    var d = c('2qGsE');
+    var d = a('/oq/k');
     const e = [],
-        f = a => e.includes(a);
-    var g = a => {
+        _f = t => e.includes(t);
+    var _g = t => {
         const {
             familyName: h,
             onLoad: i
-        } = j;
-        e.includes(h) ? i && i() : b(d).load({
+        } = t;
+        e.includes(h) ? i && i() : _b(d).load({
             google: {
                 families: [`${ h }:400,700`]
             },
-            fontactive: j => {
-                e.includes(j) || e.push(j), h === j && i && i();
+            fontactive: t => {
+                e.includes(t) || e.push(t), h === t && i && i();
             }
         });
     };
-}), c.register('IuVhK', function(d, d) {
-    a(d.exports, 'default', function() {
-        return d;
+}), a.register('RKoHq', function(b, c) {
+    t(b.exports, 'default', function() {
+        return _d;
     });
-    var d = {
+    var _d = {
         TextStyle: {
             BorderWidth: 3,
             BorderRadius: 8
@@ -149,24 +149,24 @@ c.register('Rv/4f', function(b, s) {
         Animation: {
             Visibility: {
                 DurationMS: 400,
-                Ease: b(c('kneek')).Math.Easing.Linear
+                Ease: _b(a('8WvaZ')).Math.Easing.Linear
             }
         }
     };
-}), c.register('qxeBa0', function(b, c) {
-    a(b.exports, 'TextPadding', function() {
-        return d;
+}), a.register('vfR2b', function(_b, c) {
+    t(_b.exports, 'TextPadding', function() {
+        return _d;
     });
-    const d = () => 4;
-}), c.register('wSwKo5', function(b, i) {
-    a(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return h;
+    const _d = () => 4;
+}), a.register('IFO6W13', function(b, c) {
+    t(b.exports, 'ReplaceVisualEditingPreview', function() {
+        return _h;
     });
-    var d = c('2pEsK'),
-        e = c('Am0b71'),
-        f = c('KDS1x'),
-        g = c('83+vO');
-    const h = (a, b, c) => {
+    var d = a('HqwPM'),
+        e = a('+oovY4'),
+        f = a('A17vD'),
+        g = a('HXXiu');
+    const _h = (t, b, a) => {
         const i = (0, g.FetchVisualEditingPreview)(),
             j = (0, f.FetchCurrentlyEditedDevice)();
         if (!j || !i)
@@ -175,7 +175,7 @@ c.register('Rv/4f', function(b, s) {
         (0, e.default)({
             deviceOption: i.deviceOption,
             id: d.VisualEditingConstants.previewId,
-            x: a,
+            x: t,
             y: b,
             depth: k,
             layerId: j.layers.getLayer(),
@@ -183,28 +183,28 @@ c.register('Rv/4f', function(b, s) {
             isPreview: !0,
             options: {
                 ...i.options,
-                ...c
+                ...a
             },
             placedByClient: !0,
             state: i.deviceOption.defaultState
         });
     };
-}), c.register('Am0b71', function(b, d) {
-    a(b.exports, 'default', function() {
-        return f;
+}), a.register('+oovY4', function(b, c) {
+    t(b.exports, 'default', function() {
+        return _f;
     });
-    var d = c('dAmf5'),
-        e = c('jgFbX');
-    var f = a => {
-        (0, d.default)().worldManager.devices.getDeviceById(a.id) && (0, e.default)(a);
+    var d = a('D5xLI'),
+        e = a('aIyMH');
+    var _f = t => {
+        (0, d.default)().worldManager.devices.getDeviceById(t.id) && (0, e.default)(t);
     };
-}), c.register('/Lvpl17', function(b, c) {
-    a(b.exports, 'FetchOptionSchemaProperty', function() {
-        return d;
+}), a.register('R2Ucl10', function(b, c) {
+    t(b.exports, 'FetchOptionSchemaProperty', function() {
+        return _d;
     });
-    const d = (a, b) => {
+    const _d = (t, b) => {
         var e, f, g;
-        const h = a.deviceOption.optionSchema.options.find(a => a.key === b);
+        const h = t.deviceOption.optionSchema.options.find(t => t.key === b);
         return {
             min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
             max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,

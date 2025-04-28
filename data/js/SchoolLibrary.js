@@ -1,54 +1,54 @@
-function a(a) {
-    return a && a.__esModule ? a.default : a;
+function a(b) {
+    return b && b.__esModule ? b.default : b;
 }
 
-function b(a, b, c, y) {
-    Object.defineProperty(a, b, {
-        get: c,
-        set: y,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('CIJ2q', function(y, z) {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('k41Xr', function(b, c) {
     var d;
-    d = y.exports, Object.defineProperty(d, '__esModule', {
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(y.exports, 'LIBRARY_CACHE_KEY', function() {
-        return u;
-    }), b(y.exports, 'default', function() {
-        return v;
+    }), _w(b.exports, 'LIBRARY_CACHE_KEY', function() {
+        return _u;
+    }), _w(b.exports, 'default', function() {
+        return _v;
     });
-    var e = c('8kSQZ'),
-        f = c('h99Nu'),
-        g = c('GFgjD'),
-        h = c('hSkRl'),
-        i = c('PjB0f'),
-        j = c('uPP4W'),
-        k = c('Nsg/l3'),
-        l = c('gSUVO'),
-        m = c('lmfrI'),
-        n = c('2MCaL'),
-        o = c('iHElh');
-    let p, q, r, s, t = a => a;
-    const u = 'GIMKIT_LIBRARY_CACHE';
-    var v = () => {
-        const [w, x] = a(j).useState(!0), [y, z] = a(j).useState([]), [A, B] = a(j).useState(!0), [C, D] = a(j).useState(0);
-        a(j).useEffect(() => {
+    var e = a('0hzx+'),
+        f = a('Axq+p'),
+        g = a('INKb2'),
+        h = a('Z8D3a'),
+        i = a('PMl60'),
+        j = a('LEQ5w'),
+        k = a('0qmC91'),
+        l = a('b5kvC'),
+        m = a('sHRDd'),
+        n = a('ECzOP'),
+        o = a('6CIVV');
+    let p, q, r, s, t = e => e;
+    const _u = 'GIMKIT_LIBRARY_CACHE';
+    var _v = () => {
+        const [_w, x] = e(j).useState(!0), [y, z] = e(j).useState([]), [A, B] = e(j).useState(!0), [C, D] = e(j).useState(0);
+        e(j).useEffect(() => {
             p();
         }, []);
         const E = () => {
                 x(!0), (0, i.request)({
-                    cacheKey: u,
+                    cacheKey: _u,
                     url: `/api/get-school-library/${ C }`,
                     method: 'GET',
-                    success: a => {
+                    success: e => {
                         z([
                             ...y,
-                            ...a.games
-                        ]), B(a.hasMore), D(a.newPage);
+                            ...e.games
+                        ]), B(e.hasMore), D(e.newPage);
                     },
                     error: () => (0, g.throwError)({
                         title: 'Error fetching Kits'
@@ -59,7 +59,7 @@ c.register('CIJ2q', function(y, z) {
             F = (() => {
                 const G = new Map();
                 return y.forEach(x => {
-                    const H = a(n)(x.createdDate).format('MMMM YYYY').toString();
+                    const H = e(n)(x.createdDate).format('MMMM YYYY').toString();
                     G[H] ? G[H].push(x) : G[H] = [x];
                 }), G;
             })();
@@ -70,7 +70,7 @@ c.register('CIJ2q', function(y, z) {
                 }),
                 (0, e.jsx)('div', {
                     className: 'maxHeight',
-                    children: w && !y.length ? (0, e.jsx)('div', {
+                    children: _w && !y.length ? (0, e.jsx)('div', {
                         className: 'maxAll flex-center',
                         children: (0, e.jsx)(o.default, {
                             size: 'large'
@@ -87,27 +87,27 @@ c.register('CIJ2q', function(y, z) {
                             },
                             next: E,
                             loader: null,
-                            children: Object.keys(F).map(a => (0, e.jsxs)(z, {
+                            children: Object.keys(F).map(e => (0, e.jsxs)(_z, {
                                 children: [
-                                    (0, e.jsxs)(w, {
+                                    (0, e.jsxs)(_w, {
                                         children: [
-                                            (0, e.jsx)(x, {
-                                                children: a
+                                            (0, e.jsx)(_x, {
+                                                children: e
                                             }),
-                                            (0, e.jsx)(y, {})
+                                            (0, e.jsx)(_y, {})
                                         ]
                                     }),
-                                    F[a].map(a => (0, e.jsx)(h.default, {
-                                        id: a._id,
-                                        title: a.title,
-                                        gif: a.gif,
-                                        numberOfQuestions: a.questions,
-                                        creator: a.creator,
+                                    F[e].map(e => (0, e.jsx)(h.default, {
+                                        id: e._id,
+                                        title: e.title,
+                                        gif: e.gif,
+                                        numberOfQuestions: e.questions,
+                                        creator: e.creator,
                                         redirectOnImageClick: !0,
                                         size: 'small'
-                                    }, a._id))
+                                    }, e._id))
                                 ]
-                            }, a))
+                            }, e))
                         })
                     }) : (0, e.jsxs)('div', {
                         className: 'maxAll flex-center flex-column',
@@ -138,46 +138,46 @@ c.register('CIJ2q', function(y, z) {
             ]
         });
     };
-    const w = f.default.div.attrs({
+    const _w = f.default.div.attrs({
             className: 'flex vc maxWidth'
         })(p || (p = t`
   margin-bottom: 20px;
 `)),
-        x = f.default.div(q || (q = t`
+        _x = f.default.div(q || (q = t`
   font-weight: ${ 0 };
   font-size: 28px;
   flex-shrink: 0;
   margin-right: 30px;
   line-height: 1;
 `), l.FontWeights.Bold),
-        y = f.default.div.attrs({
+        _y = f.default.div.attrs({
             className: 'maxWidth'
         })(r || (r = t`
   height: 1px;
   background: ${ 0 };
 `), m.default.BorderGray),
-        z = f.default.div.attrs({
+        _z = f.default.div.attrs({
             className: 'maxWidth'
         })(s || (s = t`
   margin-bottom: 20px;
 `));
-}), c.register('hSkRl', function(a, l) {
-    b(a.exports, 'default', function() {
-        return L;
+}), a.register('Z8D3a', function(b, c) {
+    t(b.exports, 'default', function() {
+        return _L;
     });
-    var d = c('8kSQZ');
-    c('uPP4W');
-    var e = c('f9f+a'),
-        f = c('ExtIT'),
-        g = c('gSUVO'),
-        h = c('qLhB38'),
-        i = c('h99Nu'),
-        j = c('PjB0f'),
-        k = c('lmfrI'),
-        l = c('iYEuk12'),
-        m = c('k0s2g17'),
-        n = c('2MCaL');
-    let o, p, q, r, s, t, u, v, w, x, y, z = a => a;
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('oXQNI'),
+        f = a('fmVdR'),
+        g = a('b5kvC'),
+        h = a('DKaq/'),
+        i = a('Axq+p'),
+        j = a('PMl60'),
+        k = a('sHRDd'),
+        l = a('2HvvA11'),
+        m = a('jzxyj10'),
+        n = a('ECzOP');
+    let o, p, q, r, s, t, u, v, w, x, y, z = e => e;
     const A = (0, i.default)(l.default).attrs({
             className: 'maxWidth'
         })(o || (o = z`
@@ -237,28 +237,28 @@ c.register('CIJ2q', function(y, z) {
         K = (0, i.default)(I).attrs({
             className: 'fad fa-calendar-alt'
         })(y || (y = z``));
-    var L = b => {
-        const M = 'normal' === b.size;
+    var _L = t => {
+        const M = 'normal' === t.size;
         return (0, d.jsx)(A, {
-            to: b.blockRedirect ? void 0 : `/view/${ b.id }`,
+            to: t.blockRedirect ? void 0 : `/view/${ t.id }`,
             children: (0, d.jsx)(B, {
                 className: 'maxWidth',
-                onMouseEnter: b.handleHover,
+                onMouseEnter: t.handleHover,
                 bodyStyle: {
                     padding: 14
                 },
-                hoverable: !b.blockHoverable,
+                hoverable: !t.blockHoverable,
                 style: {
-                    backgroundColor: b.selected ? '#eeeeee' : k.default.White
+                    backgroundColor: t.selected ? '#eeeeee' : k.default.White
                 },
                 children: (0, d.jsxs)('div', {
                     className: 'flex maxWidth',
                     children: [
                         (0, d.jsx)('div', {
                             children: (0, d.jsx)(h.default, {
-                                image: b.gif,
+                                image: t.gif,
                                 size: M ? 178 : 148,
-                                onClick: b.redirectOnImageClick && (() => b.blockRedirect ? null : (0, m.NavigateTo)(`/view/${ b.id }`))
+                                onClick: t.redirectOnImageClick && (() => t.blockRedirect ? null : (0, m.NavigateTo)(`/view/${ t.id }`))
                             })
                         }),
                         (0, d.jsx)(C, {
@@ -268,38 +268,38 @@ c.register('CIJ2q', function(y, z) {
                                         style: {
                                             fontSize: M ? 32 : 23
                                         },
-                                        children: b.title
+                                        children: t.title
                                     }),
-                                    b.creator && (0, d.jsx)(F, {
+                                    t.creator && (0, d.jsx)(F, {
                                         style: {
                                             fontSize: M ? 18 : 16
                                         },
-                                        children: (0, j.capitalizeFirstLetter)(b.creator)
+                                        children: (0, j.capitalizeFirstLetter)(t.creator)
                                     }),
                                     (0, d.jsx)(f.default, {
                                         style: {
                                             margin: '16px 0px 18px 0px'
                                         }
                                     }),
-                                    !!b.numberOfQuestions && (0, d.jsxs)(G, {
+                                    !!t.numberOfQuestions && (0, d.jsxs)(G, {
                                         children: [
                                             (0, d.jsx)(J, {}),
                                             (0, d.jsxs)('span', {
                                                 children: [
-                                                    b.numberOfQuestions ? b.numberOfQuestions : '',
+                                                    t.numberOfQuestions ? t.numberOfQuestions : '',
                                                     ' ',
-                                                    b.numberOfQuestions ? (0, j.plural)('question', b.numberOfQuestions) : ''
+                                                    t.numberOfQuestions ? (0, j.plural)('question', t.numberOfQuestions) : ''
                                                 ]
                                             })
                                         ]
                                     }),
-                                    b.dateCreated && M && (0, d.jsxs)(H, {
+                                    t.dateCreated && M && (0, d.jsxs)(H, {
                                         children: [
                                             (0, d.jsx)(K, {}),
                                             (0, d.jsxs)('span', {
                                                 children: [
                                                     'Created ',
-                                                    a(n)(b.dateCreated).fromNow()
+                                                    e(n)(t.dateCreated).fromNow()
                                                 ]
                                             })
                                         ]

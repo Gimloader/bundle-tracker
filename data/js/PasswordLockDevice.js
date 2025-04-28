@@ -1,34 +1,34 @@
-function a(a, b, s, c) {
-    Object.defineProperty(a, b, {
-        get: s,
-        set: c,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('Kr3dR', function(s, c) {
-    var c;
-    c = s.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('jwQso', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(s.exports, 'default', function() {
-        return l;
+    }), _m(b.exports, 'default', function() {
+        return _m;
     });
-    var d = b('UM8oI'),
-        e = b('PUlKf'),
-        f = b('Bpt+p'),
-        g = b('5Ux1a'),
-        h = b('sgILU'),
-        i = b('RC3mS'),
-        j = b('kYc89');
-    class k extends h.default {
-        constructor(a) {
-            super(a), (0, d.default)(this, 'incorrectCounter', 0), (0, d.default)(this, 'guess', a => {
-                this.sendToServerDevice(j.PasswordLockDeviceSentToServerMessages.guess, {
-                    password: a
+    var e = a('1bFPu'),
+        f = a('Jfada'),
+        g = a('9tz3H'),
+        h = a('/pbxo'),
+        i = a('I35Ay'),
+        j = a('K1I+O'),
+        k = a('i9d3N');
+    class l extends i.default {
+        constructor(_m) {
+            super(_m), (0, e.default)(this, 'incorrectCounter', 0), (0, e.default)(this, 'guess', _m => {
+                this.sendToServerDevice(k.PasswordLockDeviceSentToServerMessages.guess, {
+                    password: _m
                 });
-            }), (0, d.default)(this, 'openDeviceUI', () => {
+            }), (0, e.default)(this, 'openDeviceUI', () => {
                 this.deviceUI.open({
                     maxAttempts: this.options.maxAttempts,
                     useMaxAttempts: this.options.useMaxAttempts,
@@ -36,32 +36,32 @@ b.register('Kr3dR', function(s, c) {
                     guess: this.guess,
                     incorrectCounter: this.incorrectCounter
                 });
-            }), (0, d.default)(this, 'onStateChange', a => {
-                'attempts' === a && this.deviceUI.update({
+            }), (0, e.default)(this, 'onStateChange', _m => {
+                'attempts' === _m && this.deviceUI.update({
                     attempts: this.state.attempts
                 });
-            }), (0, d.default)(this, 'onMessage', a => {
-                a.key === j.PasswordLockDeviceSentToClientMessages.incorrect && (null == a ? void 0 : a.data) === (0, e.default)() && (this.incorrectCounter += 1, this.deviceUI.update({
+            }), (0, e.default)(this, 'onMessage', _m => {
+                _m.key === k.PasswordLockDeviceSentToClientMessages.incorrect && (null == _m ? void 0 : _m.data) === (0, f.default)() && (this.incorrectCounter += 1, this.deviceUI.update({
                     incorrectCounter: this.incorrectCounter
                 }));
-            }), (0, f.isPublishedVersion)() || (0, g.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(i.BaseAsset));
+            }), (0, g.isPublishedVersion)() || (0, h.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(j.BaseAsset));
         }
     }
-    var l = m;
-}), b.register('RC3mS', function(s, c) {
-    a(s.exports, 'BaseAsset', function() {
-        return c;
+    var _m = l;
+}), a.register('K1I+O', function(b, c) {
+    e(b.exports, 'BaseAsset', function() {
+        return _d;
     });
-    const c = {
+    const _d = {
         imageId: 'password_lock',
-        imageUrl: (0, b('JJQ0+').default)('devices/password_lock/icon.png')
+        imageUrl: (0, a('2Xvuf').default)('devices/password_lock/icon.png')
     };
-}), b.register('kYc89', function(b, s) {
-    let c;
+}), a.register('i9d3N', function(b, c) {
     let d;
-    a(b.exports, 'PasswordLockDeviceSentToServerMessages', function() {
-        return c;
-    }), a(b.exports, 'PasswordLockDeviceSentToClientMessages', function() {
+    let e;
+    e(b.exports, 'PasswordLockDeviceSentToServerMessages', function() {
         return d;
-    }), (c || (c = {})).guess = 'guess', (d || (d = {})).incorrect = 'incorrect';
+    }), e(b.exports, 'PasswordLockDeviceSentToClientMessages', function() {
+        return e;
+    }), (d || (d = {})).guess = 'guess', (e || (e = {})).incorrect = 'incorrect';
 });

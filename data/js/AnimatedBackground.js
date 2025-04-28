@@ -1,47 +1,47 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('07BOy', function(e, t) {
-    var b, c, d, e, f;
-    b = e.exports, Object.defineProperty(b, '__esModule', {
+a.register('D9bjZ', function(b, c) {
+    var d, e, f, g, h;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), c = e.exports, d = 'default', e = function() {
-        return l;
-    }, Object.defineProperty(c, d, {
-        get: e,
-        set: f,
+    }), e = b.exports, f = 'default', g = function() {
+        return _n;
+    }, Object.defineProperty(e, f, {
+        get: g,
+        set: h,
         enumerable: !0,
         configurable: !0
     });
-    var g = a('8kSQZ');
-    a('uPP4W');
-    var h = a('h99Nu');
-    let i, j, k = a => a;
-    var l = a => (0, g.jsxs)(m, {
+    var i = a('0hzx+');
+    a('LEQ5w');
+    var j = a('Axq+p');
+    let k, l, m = a => a;
+    var _n = a => (0, i.jsxs)(_o, {
         children: [
-            (0, g.jsx)('div', {
+            (0, i.jsx)('div', {
                 className: 'area',
-                children: (0, g.jsxs)('ul', {
+                children: (0, i.jsxs)('ul', {
                     className: 'circles',
                     children: [
-                        (0, g.jsx)('li', {}),
-                        (0, g.jsx)('li', {}),
-                        (0, g.jsx)('li', {}),
-                        (0, g.jsx)('li', {}),
-                        (0, g.jsx)('li', {}),
-                        (0, g.jsx)('li', {}),
-                        (0, g.jsx)('li', {}),
-                        (0, g.jsx)('li', {}),
-                        (0, g.jsx)('li', {}),
-                        (0, g.jsx)('li', {})
+                        (0, i.jsx)('li', {}),
+                        (0, i.jsx)('li', {}),
+                        (0, i.jsx)('li', {}),
+                        (0, i.jsx)('li', {}),
+                        (0, i.jsx)('li', {}),
+                        (0, i.jsx)('li', {}),
+                        (0, i.jsx)('li', {}),
+                        (0, i.jsx)('li', {}),
+                        (0, i.jsx)('li', {}),
+                        (0, i.jsx)('li', {})
                     ]
                 })
             }),
-            (0, g.jsx)(n, {
+            (0, i.jsx)(_p, {
                 children: a.children
             })
         ]
     });
-    const m = h.default.div(i || (i = k`
+    const _o = j.default.div(k || (k = m`
   flex: 1;
   height: 100%;
   width: 100%;
@@ -165,9 +165,9 @@ a.register('07BOy', function(e, t) {
     }
   }
 `)),
-        n = h.default.div.attrs({
+        _p = j.default.div.attrs({
             className: 'maxAll'
-        })(j || (j = k`
+        })(l || (l = m`
   position: absolute;
   top: 0;
   left: 0;

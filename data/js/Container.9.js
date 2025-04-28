@@ -1,37 +1,37 @@
-function a(a, b, A, B) {
-    Object.defineProperty(a, b, {
-        get: A,
-        set: B,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('oczPp', function(A, B) {
-    a(A.exports, 'default', function() {
-        return y;
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('+0Sy50', function(b, c) {
+    _z(b.exports, 'default', function() {
+        return _z;
     });
-    var c = b('UM8oI'),
-        d = b('8kSQZ'),
-        e = b('uPP4W'),
-        f = b('o/FCM'),
-        g = b('s/4yx'),
-        h = b('SHiyt7'),
-        i = b('Ynp9Z7'),
-        j = b('Y0KLM'),
-        k = b('IsmrL'),
-        l = b('f9f+a'),
-        m = b('QtkH71'),
-        n = b('ExtIT'),
-        o = b('JQ8A18'),
-        p = b('YfLmS'),
-        q = b('h99Nu'),
-        r = b('gSUVO'),
-        s = b('lmfrI'),
-        t = b('Kp/yk'),
-        u = b('2WDH6');
-    let v;
-    const w = (0, q.default)(l.default)(v || (v = (a => a)`
+    var d = a('1bFPu'),
+        e = a('0hzx+'),
+        f = a('LEQ5w'),
+        g = a('+M5wm'),
+        h = a('g2qtU0'),
+        i = a('gn3Uk7'),
+        j = a('GldUd7'),
+        k = a('aNszb0'),
+        l = a('ulE4q'),
+        m = a('oXQNI'),
+        n = a('q0pUc1'),
+        o = a('fmVdR'),
+        p = a('6BM9K6'),
+        q = a('ijg0s'),
+        r = a('Axq+p'),
+        s = a('b5kvC'),
+        t = a('sHRDd'),
+        u = a('k0Og2'),
+        v = a('x8CoD');
+    let w;
+    const x = (0, r.default)(m.default)(w || (w = (_z => _z)`
   font-family: ${ 0 };
   color: ${ 0 };
   margin-bottom: 5px !important;
@@ -40,10 +40,10 @@ b.register('oczPp', function(A, B) {
   justify-content: space-between;
   min-height: max-content;
   cursor: pointer;
-`), a => a.font ? a.font : r.Fonts.SFPro, s.default.Black);
-    class x extends e.Component {
-        componentDidUpdate(a) {
-            a.showAllAnswers !== this.props.showAllAnswers && (this.props.showAllAnswers ? this.setState({
+`), _z => _z.font ? _z.font : s.Fonts.SFPro, t.default.Black);
+    class y extends f.Component {
+        componentDidUpdate(_z) {
+            _z.showAllAnswers !== this.props.showAllAnswers && (this.props.showAllAnswers ? this.setState({
                 showingAnswers: !0
             }) : this.setState({
                 showingAnswers: !1
@@ -51,18 +51,18 @@ b.register('oczPp', function(A, B) {
         }
         render() {
             const {
-                question: y,
-                showCheckbox: z,
-                checked: A,
-                canEdit: B,
-                canAdd: C,
-                fontFamily: D
+                question: z,
+                showCheckbox: A,
+                checked: B,
+                canEdit: C,
+                canAdd: D,
+                fontFamily: E
             } = this.props;
-            let E = r.Fonts.SFPro;
-            D && (E = D);
-            const F = y.audio && !y.text && !y.image && !y.latex;
-            return (0, d.jsxs)(w, {
-                font: E,
+            let F = s.Fonts.SFPro;
+            E && (F = E);
+            const G = z.audio && !z.text && !z.image && !z.latex;
+            return (0, e.jsxs)(x, {
+                font: F,
                 style: this.props.customStyle,
                 bodyStyle: Object.assign(this.props.customBodyStyle || {}, {
                     width: '100%'
@@ -71,74 +71,74 @@ b.register('oczPp', function(A, B) {
                 onClick: this.toggleShowingAnswers,
                 children: [
                     this.props.customTopComponent ? this.props.customTopComponent : null,
-                    (0, d.jsxs)('div', {
+                    (0, e.jsxs)('div', {
                         style: this.props.customContentStyle,
                         children: [
-                            (0, d.jsxs)('div', {
+                            (0, e.jsxs)('div', {
                                 style: {
                                     justifyContent: 'space-between'
                                 },
                                 className: 'flex vc maxWidth',
                                 children: [
-                                    (0, d.jsxs)('div', {
+                                    (0, e.jsxs)('div', {
                                         className: 'flex vc',
                                         children: [
-                                            z && (0, d.jsx)(m.default, {
+                                            A && (0, e.jsx)(n.default, {
                                                 style: {
                                                     zoom: 1.3,
                                                     marginRight: 10,
                                                     marginTop: 4
                                                 },
                                                 onChange: this.props.handleCheckChange,
-                                                onClick: y => y.stopPropagation(),
-                                                checked: A
+                                                onClick: z => z.stopPropagation(),
+                                                checked: B
                                             }),
-                                            (0, d.jsx)(t.default, {
-                                                text: y.text,
-                                                image: y.image,
-                                                latex: y.latex,
+                                            (0, e.jsx)(u.default, {
+                                                text: z.text,
+                                                image: z.image,
+                                                latex: z.latex,
                                                 customImageMargin: 10,
                                                 customImageSize: 72
                                             }),
-                                            y.audio && (0, d.jsx)(p.default, {
+                                            z.audio && (0, e.jsx)(q.default, {
                                                 title: 'Play Audio',
-                                                children: (0, d.jsx)(k.default, {
+                                                children: (0, e.jsx)(l.default, {
                                                     style: {
-                                                        marginLeft: F ? 0 : 10,
-                                                        marginRight: F ? 10 : 0
+                                                        marginLeft: G ? 0 : 10,
+                                                        marginRight: G ? 10 : 0
                                                     },
                                                     type: 'primary',
                                                     shape: 'circle',
-                                                    icon: (0, d.jsx)(g.default, {}),
+                                                    icon: (0, e.jsx)(h.default, {}),
                                                     onClick: this.onAudioPress
                                                 })
                                             }),
-                                            F && (0, d.jsx)(t.default, {
+                                            G && (0, e.jsx)(u.default, {
                                                 text: 'Audio Only Question',
                                                 customTextColor: '#bdbdbd'
                                             }),
-                                            y.type === f.QuestionType.textInput && (0, d.jsx)(o.default, {
+                                            z.type === g.QuestionType.textInput && (0, e.jsx)(p.default, {
                                                 color: 'magenta',
                                                 style: {
                                                     marginLeft: 10,
-                                                    fontFamily: E
+                                                    fontFamily: F
                                                 },
                                                 children: 'Text Input'
                                             })
                                         ]
                                     }),
-                                    B && (0, d.jsxs)('div', {
+                                    C && (0, e.jsxs)('div', {
                                         className: 'flex vc',
                                         style: {
                                             marginLeft: 10
                                         },
                                         children: [
-                                            (0, d.jsx)(p.default, {
+                                            (0, e.jsx)(q.default, {
                                                 title: 'Copy',
                                                 placement: 'bottom',
-                                                children: (0, d.jsx)(k.default, {
+                                                children: (0, e.jsx)(l.default, {
                                                     shape: 'circle',
-                                                    icon: (0, d.jsx)(h.default, {}),
+                                                    icon: (0, e.jsx)(i.default, {}),
                                                     onClick: this.props.onCopyClicked,
                                                     size: 'small',
                                                     style: {
@@ -146,22 +146,22 @@ b.register('oczPp', function(A, B) {
                                                     }
                                                 })
                                             }),
-                                            (0, d.jsx)(p.default, {
+                                            (0, e.jsx)(q.default, {
                                                 title: 'Edit',
                                                 placement: 'bottom',
-                                                children: (0, d.jsx)(k.default, {
+                                                children: (0, e.jsx)(l.default, {
                                                     shape: 'circle',
-                                                    icon: (0, d.jsx)(i.default, {}),
+                                                    icon: (0, e.jsx)(j.default, {}),
                                                     size: 'small',
                                                     onClick: this.props.onEditClicked
                                                 })
                                             })
                                         ]
                                     }),
-                                    C && (0, d.jsx)(p.default, {
+                                    D && (0, e.jsx)(q.default, {
                                         title: 'Add Question',
                                         placement: 'left',
-                                        children: (0, d.jsx)(j.default, {
+                                        children: (0, e.jsx)(k.default, {
                                             style: {
                                                 fontSize: 19
                                             },
@@ -171,47 +171,47 @@ b.register('oczPp', function(A, B) {
                                     this.props.customRightComponent ? this.props.customRightComponent : null
                                 ]
                             }),
-                            this.state.showingAnswers && (0, d.jsx)('div', {
+                            this.state.showingAnswers && (0, e.jsx)('div', {
                                 style: {
                                     height: 12
                                 }
                             }),
-                            this.state.showingAnswers && (0, d.jsx)('div', {
+                            this.state.showingAnswers && (0, e.jsx)('div', {
                                 className: 'maxWidth',
                                 style: {
-                                    paddingLeft: z ? 34 : 0
+                                    paddingLeft: A ? 34 : 0
                                 },
-                                children: y.answers.map((z, A) => (0, d.jsxs)(e.Fragment, {
+                                children: z.answers.map((A, B) => (0, e.jsxs)(f.Fragment, {
                                     children: [
-                                        (0, d.jsxs)('div', {
+                                        (0, e.jsxs)('div', {
                                             className: 'flex vc',
                                             children: [
-                                                (0, d.jsx)(t.default, {
-                                                    text: z.text,
-                                                    image: z.image,
-                                                    latex: z.latex,
-                                                    customTextColor: z.correct ? 'green' : null,
+                                                (0, e.jsx)(u.default, {
+                                                    text: A.text,
+                                                    image: A.image,
+                                                    latex: A.latex,
+                                                    customTextColor: A.correct ? 'green' : null,
                                                     customFontSize: 18,
                                                     customFontWeight: 400,
                                                     blockOutsideClicks: !0
                                                 }),
-                                                z.image || z.latex ? (0, d.jsx)(o.default, {
-                                                    color: z.correct ? 'green' : 'red',
+                                                A.image || A.latex ? (0, e.jsx)(p.default, {
+                                                    color: A.correct ? 'green' : 'red',
                                                     style: {
-                                                        marginLeft: z.image ? 2 : 12
+                                                        marginLeft: A.image ? 2 : 12
                                                     },
-                                                    children: z.correct ? 'Correct' : 'Incorrect'
+                                                    children: A.correct ? 'Correct' : 'Incorrect'
                                                 }) : null
                                             ]
                                         }),
-                                        A + 1 !== y.answers.length && (0, d.jsx)(n.default, {
+                                        B + 1 !== z.answers.length && (0, e.jsx)(o.default, {
                                             style: {
                                                 marginTop: 6,
                                                 marginBottom: 6
                                             }
                                         })
                                     ]
-                                }, z._id))
+                                }, A._id))
                             })
                         ]
                     }),
@@ -219,66 +219,66 @@ b.register('oczPp', function(A, B) {
                 ]
             });
         }
-        constructor(...a) {
-            super(...a), (0, c.default)(this, 'state', {
+        constructor(..._i) {
+            super(..._i), (0, d.default)(this, 'state', {
                 showingAnswers: this.props.showAllAnswers
-            }), (0, c.default)(this, 'toggleShowingAnswers', () => {
+            }), (0, d.default)(this, 'toggleShowingAnswers', () => {
                 this.props.blockToggleShowAnswers || this.setState({
                     showingAnswers: !this.state.showingAnswers
                 });
-            }), (0, c.default)(this, 'onAudioPress', a => {
-                a.stopPropagation();
-                new Audio((0, u.getCloudinaryUrl)(this.props.question.audio)).play();
+            }), (0, d.default)(this, 'onAudioPress', _i => {
+                _i.stopPropagation();
+                new Audio((0, v.getCloudinaryUrl)(this.props.question.audio)).play();
             });
         }
     }
-    var y = z;
-}), b.register('o/FCM', function(b, s) {
-    let c;
-    var d;
-    let e;
-    var f;
-    let g;
-    var h;
-    let i;
-    var j;
-    let k;
-    var l;
-    let m;
+    var _z = y;
+}), a.register('+M5wm', function(b, c) {
+    let d;
+    var e;
+    let f;
+    var g;
+    let h;
+    var i;
+    let j;
+    var k;
+    let l;
+    var m;
     let n;
-    var o;
-    a(b.exports, 'Privacy', function() {
-        return c;
-    }), a(b.exports, 'QuestionType', function() {
-        return g;
-    }), a(b.exports, 'TextInputAnswerType', function() {
-        return i;
-    }), a(b.exports, 'HubItemType', function() {
-        return m;
-    }), a(b.exports, 'HubItemStatus', function() {
-        return n;
-    }), (d = c || (c = {})).public = 'public', d.private = 'private', (f = e || (e = {})).basic = 'basic', f.go = 'go', f.pro = 'pro', (h = g || (g = {})).multipleChoice = 'mc', h.textInput = 'text', (j = i || (i = {}))[j.exact = 1] = 'exact', j[j.contains = 2] = 'contains', (l = k || (k = {})).reachedCashGoal = 'reached-cash-goal', l.reachedMaxTime = 'reached-max-time', (m || (m = {})).mapAssignment = 'mapAssignment', (o = n || (n = {})).completed = 'completed', o.inProgress = 'inProgress', o.notStarted = 'notStarted';
-}), b.register('s/4yx', function(s, c) {
-    a(s.exports, 'default', function() {
+    let o;
+    var p;
+    _i(b.exports, 'Privacy', function() {
+        return d;
+    }), _i(b.exports, 'QuestionType', function() {
         return h;
+    }), _i(b.exports, 'TextInputAnswerType', function() {
+        return j;
+    }), _i(b.exports, 'HubItemType', function() {
+        return n;
+    }), _i(b.exports, 'HubItemStatus', function() {
+        return o;
+    }), (e = d || (d = {})).public = 'public', e.private = 'private', (g = f || (f = {})).basic = 'basic', g.go = 'go', g.pro = 'pro', (i = h || (h = {})).multipleChoice = 'mc', i.textInput = 'text', (k = j || (j = {}))[k.exact = 1] = 'exact', k[k.contains = 2] = 'contains', (m = l || (l = {})).reachedCashGoal = 'reached-cash-goal', m.reachedMaxTime = 'reached-max-time', (n || (n = {})).mapAssignment = 'mapAssignment', (p = o || (o = {})).completed = 'completed', p.inProgress = 'inProgress', p.notStarted = 'notStarted';
+}), a.register('g2qtU0', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var c = b('uhRWM'),
-        d = b('uPP4W'),
-        e = b('waxee'),
-        f = b('tEXgG'),
-        g = function(a, b) {
-            return d.createElement(f.default, (0, c.default)((0, c.default)({}, a), {}, {
-                ref: b,
-                icon: e.default
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('EXicI0'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
+                icon: f.default
             }));
         };
-    g.displayName = 'AudioOutlined';
-    var h = d.forwardRef(g);
-}), b.register('waxee', function(b, s) {
-    a(b.exports, 'default', function() {
-        return c;
+    h.displayName = 'AudioOutlined';
+    var _i = e.forwardRef(h);
+}), a.register('EXicI0', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _d;
     });
-    var c = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -295,27 +295,27 @@ b.register('oczPp', function(A, B) {
         name: 'audio',
         theme: 'outlined'
     };
-}), b.register('Y0KLM', function(s, c) {
-    a(s.exports, 'default', function() {
-        return h;
+}), a.register('aNszb0', function(b, c) {
+    _i(b.exports, 'default', function() {
+        return _i;
     });
-    var c = b('uhRWM'),
-        d = b('uPP4W'),
-        e = b('0iMlD'),
-        f = b('tEXgG'),
-        g = function(a, b) {
-            return d.createElement(f.default, (0, c.default)((0, c.default)({}, a), {}, {
-                ref: b,
-                icon: e.default
+    var d = a('fbkyQ'),
+        e = a('LEQ5w'),
+        f = a('Cu9ym'),
+        g = a('sLVIW'),
+        h = function(_i, j) {
+            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
+                ref: j,
+                icon: f.default
             }));
         };
-    g.displayName = 'PlusCircleOutlined';
-    var h = d.forwardRef(g);
-}), b.register('0iMlD', function(b, s) {
-    a(b.exports, 'default', function() {
-        return c;
+    h.displayName = 'PlusCircleOutlined';
+    var _i = e.forwardRef(h);
+}), a.register('Cu9ym', function(b, c) {
+    t(b.exports, 'default', function() {
+        return _d;
     });
-    var c = {
+    var _d = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -339,57 +339,57 @@ b.register('oczPp', function(A, B) {
         name: 'plus-circle',
         theme: 'outlined'
     };
-}), b.register('Kp/yk', function(s, o) {
-    a(s.exports, 'default', function() {
-        return o;
+}), a.register('k0Og2', function(b, c) {
+    t(b.exports, 'default', function() {
+        return _p;
     });
-    var c = b('8kSQZ');
-    b('uPP4W');
-    var d = b('h99Nu'),
-        e = b('lmfrI'),
-        f = b('qLhB38'),
-        g = b('bTRJM');
-    let h, i, j, k = a => a;
-    const l = d.default.div(h || (h = k`
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('sHRDd'),
+        g = a('DKaq/'),
+        h = a('dDoty');
+    let i, j, k, l = t => t;
+    const m = e.default.div(i || (i = l`
   display: flex;
   align-items: center;
 `)),
-        m = d.default.div(i || (i = k`
+        n = e.default.div(j || (j = l`
   color: ${ 0 };
   font-size: ${ 0 }px;
   font-weight: ${ 0 };
-`), a => a.customTextColor ? a.customTextColor : e.default.Black, a => a.customFontSize ? a.customFontSize : 26, a => a.customFontWeight ? a.customFontWeight : 600),
-        n = d.default.div(j || (j = k``));
-    var o = a => {
-        var p;
-        return (0, c.jsxs)(l, {
-            onClick: p => a.blockOutsideClicks ? p.stopPropagation() : null,
+`), t => t.customTextColor ? t.customTextColor : f.default.Black, t => t.customFontSize ? t.customFontSize : 26, t => t.customFontWeight ? t.customFontWeight : 600),
+        o = e.default.div(k || (k = l``));
+    var _p = t => {
+        var q;
+        return (0, d.jsxs)(m, {
+            onClick: q => t.blockOutsideClicks ? q.stopPropagation() : null,
             children: [
-                a.image && (0, c.jsx)(f.default, {
-                    image: a.image,
-                    size: a.customImageSize || 45,
-                    customRightMargin: a.customImageMargin || 5,
+                t.image && (0, d.jsx)(g.default, {
+                    image: t.image,
+                    size: t.customImageSize || 45,
+                    customRightMargin: t.customImageMargin || 5,
                     showBorder: !0
                 }),
-                a.latex ? (0, c.jsx)(n, {
-                    style: (null === (p = a.text) || void 0 === p ? void 0 : p.length) ? {
-                        color: e.default.Black,
+                t.latex ? (0, d.jsx)(o, {
+                    style: (null === (q = t.text) || void 0 === q ? void 0 : q.length) ? {
+                        color: f.default.Black,
                         padding: 20,
-                        border: `1px solid ${ e.default.Black }`,
+                        border: `1px solid ${ f.default.Black }`,
                         borderRadius: 5,
                         marginRight: 10,
-                        fontSize: a.customFontSize || 26
+                        fontSize: t.customFontSize || 26
                     } : {
-                        color: e.default.Black,
-                        fontSize: a.customFontSize || 26
+                        color: f.default.Black,
+                        fontSize: t.customFontSize || 26
                     },
-                    children: (0, c.jsx)(g.default, {
-                        latex: a.latex
+                    children: (0, d.jsx)(h.default, {
+                        latex: t.latex
                     })
                 }) : null,
-                (0, c.jsx)(m, {
-                    ...a,
-                    children: a.text
+                (0, d.jsx)(n, {
+                    ...t,
+                    children: t.text
                 })
             ]
         });

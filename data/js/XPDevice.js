@@ -1,36 +1,36 @@
-function a(a, b, n, r) {
-    Object.defineProperty(a, b, {
-        get: n,
-        set: r,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('PHdAf', function(n, r) {
-    var c;
-    c = n.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('YWA1R', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(n.exports, 'default', function() {
-        return i;
+    }), _j(b.exports, 'default', function() {
+        return _j;
     });
-    var d = b('Bpt+p'),
-        e = b('5Ux1a'),
-        f = b('sgILU'),
-        g = b('ej2kU');
-    class h extends f.default {
-        constructor(a) {
-            super(a), (0, e.InGamePhase)() || (0, d.isPublishedVersion)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(g.BaseAsset));
+    var e = a('9tz3H'),
+        f = a('/pbxo'),
+        g = a('I35Ay'),
+        h = a('/vfSj');
+    class i extends g.default {
+        constructor(_j) {
+            super(_j), (0, f.InGamePhase)() || (0, e.isPublishedVersion)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(h.BaseAsset));
         }
     }
-    var i = j;
-}), b.register('ej2kU', function(n, r) {
-    a(n.exports, 'BaseAsset', function() {
-        return c;
+    var _j = i;
+}), a.register('/vfSj', function(b, c) {
+    e(b.exports, 'BaseAsset', function() {
+        return _d;
     });
-    const c = {
+    const _d = {
         imageId: 'xp_device',
-        imageUrl: (0, b('JJQ0+').default)('devices/xp/xp.png')
+        imageUrl: (0, a('2Xvuf').default)('devices/xp/xp.png')
     };
 });

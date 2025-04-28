@@ -1,53 +1,53 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('yQn5g', function(p, q) {
-    var b, c, d, e, f;
-    b = p.exports, Object.defineProperty(b, '__esModule', {
+a.register('MU6pg', function(b, c) {
+    var d, e, f, g, h;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), c = p.exports, d = 'default', e = function() {
-        return p;
-    }, Object.defineProperty(c, d, {
-        get: e,
-        set: f,
+    }), e = b.exports, f = 'default', g = function() {
+        return _r;
+    }, Object.defineProperty(e, f, {
+        get: g,
+        set: h,
         enumerable: !0,
         configurable: !0
     });
-    var g = a('UM8oI'),
-        h = a('7Sbqr'),
-        i = a('JJQ0+'),
-        j = a('Bpt+p'),
-        k = a('5Ux1a'),
-        l = a('sgILU'),
-        m = a('phu0d'),
-        n = a('Gqspz');
-    class o extends l.default {
-        constructor(a) {
-            if (super(a), (0, g.default)(this, 'getTeamColor', a => {
-                    const p = 'colorTeam' + a;
-                    var q;
-                    return this.options.useTeamSettingsDeviceForColors ? null !== (q = this.state[p]) && void 0 !== q ? q : '#ffffff' : this.options[p];
-                }), (0, g.default)(this, 'setStore', () => {
-                    const p = [],
-                        q = [];
-                    for (let r = 1; r <= this.options.numberOfTeams && !(r > 4); r++)
-                        p.push(this.options['team' + r]), q.push(this.getTeamColor(r));
-                    h.default.gui.scorebar = {
-                        teams: p,
-                        teamColors: q
+    var i = a('1bFPu'),
+        j = a('iWivW'),
+        k = a('2Xvuf'),
+        l = a('9tz3H'),
+        m = a('/pbxo'),
+        n = a('I35Ay'),
+        o = a('+uQv7'),
+        p = a('dTXti');
+    class q extends n.default {
+        constructor(r) {
+            if (super(r), (0, i.default)(this, 'getTeamColor', r => {
+                    const s = 'colorTeam' + r;
+                    var t;
+                    return this.options.useTeamSettingsDeviceForColors ? null !== (t = this.state[s]) && void 0 !== t ? t : '#ffffff' : this.options[s];
+                }), (0, i.default)(this, 'setStore', () => {
+                    const s = [],
+                        t = [];
+                    for (let u = 1; u <= this.options.numberOfTeams && !(u > 4); u++)
+                        s.push(this.options['team' + u]), t.push(this.getTeamColor(u));
+                    j.default.gui.scorebar = {
+                        teams: s,
+                        teamColors: t
                     };
-                }), (0, g.default)(this, 'onStateChange', a => {
+                }), (0, i.default)(this, 'onStateChange', r => {
                     this.setStore();
-                }), (0, g.default)(this, 'onDestroy', a => {
-                    a.isBeingReplaced || (h.default.gui.scorebar = void 0);
-                }), (0, k.InPreGamePhase)() && (0, j.isSavedVersion)()) {
-                const p = n.default.Overlay;
-                new(0, m.default)({
+                }), (0, i.default)(this, 'onDestroy', r => {
+                    r.isBeingReplaced || (j.default.gui.scorebar = void 0);
+                }), (0, m.InPreGamePhase)() && (0, l.isSavedVersion)()) {
+                const s = p.default.Overlay;
+                new(0, o.default)({
                     device: this,
-                    baseColor: p.baseColor,
-                    boxColor: p.boxColor,
+                    baseColor: s.baseColor,
+                    boxColor: s.boxColor,
                     content: {
                         icon: {
-                            image: (0, i.default)('devices/gui/icon.png'),
+                            image: (0, k.default)('devices/gui/icon.png'),
                             scale: 0.9
                         }
                     }
@@ -56,5 +56,5 @@ a.register('yQn5g', function(p, q) {
             this.setStore();
         }
     }
-    var p = q;
+    var _r = q;
 });

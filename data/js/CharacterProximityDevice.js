@@ -1,55 +1,55 @@
-function a(a, b, d, h) {
-    Object.defineProperty(a, b, {
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
         get: d,
-        set: h,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('qrRPG', function(d, h) {
-    var c;
-    c = d.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('heGwq', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function() {
-        return n;
+    }), _o(b.exports, 'default', function() {
+        return _o;
     });
-    var d = b('UM8oI'),
-        e = b('Bpt+p'),
-        f = b('wSwKo5'),
-        g = b('/Lvpl17'),
-        h = b('5Ux1a'),
-        i = b('SCq5x4'),
-        j = b('sgILU'),
-        k = b('NiTBJ'),
-        l = b('qfGAa');
-    class m extends j.default {
-        constructor(a) {
-            super(a), (0, d.default)(this, 'setupVisualEditing', () => {
-                if (!(0, h.InPreGamePhase)() || !(0, e.isSavedVersion)())
+    var e = a('1bFPu'),
+        f = a('9tz3H'),
+        g = a('IFO6W13'),
+        h = a('R2Ucl10'),
+        i = a('/pbxo'),
+        j = a('kg3wN6'),
+        k = a('I35Ay'),
+        l = a('QYCe9'),
+        m = a('K3oEQ');
+    class n extends k.default {
+        constructor(_o) {
+            super(_o), (0, e.default)(this, 'setupVisualEditing', () => {
+                if (!(0, i.InPreGamePhase)() || !(0, f.isSavedVersion)())
                     return;
-                const n = (0, g.FetchOptionSchemaProperty)(this, 'width'),
-                    o = (0, g.FetchOptionSchemaProperty)(this, 'height');
+                const p = (0, h.FetchOptionSchemaProperty)(this, 'width'),
+                    q = (0, h.FetchOptionSchemaProperty)(this, 'height');
                 this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
-                    minWidth: n.min,
-                    maxWidth: n.max,
-                    minHeight: o.min,
-                    maxHeight: o.max,
+                    minWidth: p.min,
+                    maxWidth: p.max,
+                    minHeight: q.min,
+                    maxHeight: q.max,
                     rotable: !1,
                     keepRatio: !1,
-                    onChange: n => {
-                        (0, f.ReplaceVisualEditingPreview)(n.x, n.y, {
-                            width: n.width,
-                            height: n.height
+                    onChange: p => {
+                        (0, g.ReplaceVisualEditingPreview)(p.x, p.y, {
+                            width: p.width,
+                            height: p.height
                         });
                     }
                 });
-            }), (0, h.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(k.BaseAsset), this.options.detectionArea !== l.DetectionArea.everywhere && i.default.shouldShow(this) && (this.setupVisualEditing(), this.parts.add.rect({
+            }), (0, i.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(l.BaseAsset), this.options.detectionArea !== m.DetectionArea.everywhere && j.default.shouldShow(this) && (this.setupVisualEditing(), this.parts.add.rect({
                 color: 8375794,
-                alpha: i.default.shouldShowInnerZone(this) ? 0.2 : 0,
+                alpha: j.default.shouldShowInnerZone(this) ? 0.2 : 0,
                 borderAlpha: 1,
                 width: Math.abs(this.options.width),
                 height: Math.abs(this.options.height),
@@ -59,99 +59,99 @@ b.register('qrRPG', function(d, h) {
             })));
         }
     }
-    var n = o;
-}), b.register('wSwKo5', function(d, h) {
-    a(d.exports, 'ReplaceVisualEditingPreview', function() {
-        return g;
+    var _o = n;
+}), a.register('IFO6W13', function(b, c) {
+    _h(b.exports, 'ReplaceVisualEditingPreview', function() {
+        return _h;
     });
-    var c = b('2pEsK'),
-        d = b('Am0b71'),
-        e = b('KDS1x'),
-        f = b('83+vO');
-    const g = (a, b, d) => {
-        const h = (0, f.FetchVisualEditingPreview)(),
-            i = (0, e.FetchCurrentlyEditedDevice)();
-        if (!i || !h)
+    var d = a('HqwPM'),
+        e = a('+oovY4'),
+        f = a('A17vD'),
+        g = a('HXXiu');
+    const _h = (_h, a, b) => {
+        const i = (0, g.FetchVisualEditingPreview)(),
+            j = (0, f.FetchCurrentlyEditedDevice)();
+        if (!j || !i)
             return;
-        const j = i.layers.isOnNaturalDepth() ? void 0 : b + i.layers.getDepthShift();
-        (0, d.default)({
-            deviceOption: h.deviceOption,
-            id: c.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: j,
-            layerId: i.layers.getLayer(),
-            name: h.name,
+        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
+        (0, e.default)({
+            deviceOption: i.deviceOption,
+            id: d.VisualEditingConstants.previewId,
+            x: _h,
+            y: a,
+            depth: k,
+            layerId: j.layers.getLayer(),
+            name: i.name,
             isPreview: !0,
             options: {
-                ...h.options,
-                ...d
+                ...i.options,
+                ...b
             },
             placedByClient: !0,
-            state: h.deviceOption.defaultState
+            state: i.deviceOption.defaultState
         });
     };
-}), b.register('Am0b71', function(d, c) {
-    a(d.exports, 'default', function() {
-        return e;
+}), a.register('+oovY4', function(b, c) {
+    _h(b.exports, 'default', function() {
+        return _f;
     });
-    var c = b('dAmf5'),
-        d = b('jgFbX');
-    var e = a => {
-        (0, c.default)().worldManager.devices.getDeviceById(a.id) && (0, d.default)(a);
+    var d = a('D5xLI'),
+        e = a('aIyMH');
+    var _f = _h => {
+        (0, d.default)().worldManager.devices.getDeviceById(_h.id) && (0, e.default)(_h);
     };
-}), b.register('/Lvpl17', function(b, d) {
-    a(b.exports, 'FetchOptionSchemaProperty', function() {
-        return c;
+}), a.register('R2Ucl10', function(b, c) {
+    _h(b.exports, 'FetchOptionSchemaProperty', function() {
+        return _d;
     });
-    const c = (a, b) => {
-        var d, e, f;
-        const g = a.deviceOption.optionSchema.options.find(a => a.key === b);
+    const _d = (_h, b) => {
+        var e, f, g;
+        const h = _h.deviceOption.optionSchema.options.find(_h => _h.key === b);
         return {
-            min: null === (d = null == g ? void 0 : g.option.props) || void 0 === d ? void 0 : d.min,
-            max: null === (e = null == g ? void 0 : g.option.props) || void 0 === e ? void 0 : e.max,
-            step: null === (f = null == g ? void 0 : g.option.props) || void 0 === f ? void 0 : f.step
+            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
+            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
+            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
         };
     };
-}), b.register('SCq5x4', function(i, c) {
-    a(i.exports, 'ZonedDeviceDisplayOptions', function() {
-        return d;
-    }), a(i.exports, 'default', function() {
-        return g;
+}), a.register('kg3wN6', function(b, c) {
+    _h(b.exports, 'ZonedDeviceDisplayOptions', function() {
+        return _e;
+    }), _h(b.exports, 'default', function() {
+        return _h;
     });
-    var c = b('aGdJe4');
-    let d;
-    var e;
-    (e = d || (d = {})).visible = 'visible', e.bordersOnly = 'bordersOnly', e.fullyHidden = 'fullyHidden';
-    const f = () => {
-        const g = localStorage.getItem(c.default.zonedDeviceViews);
-        return g || d.bordersOnly;
+    var d = a('+MyMe6');
+    let _e;
+    var f;
+    (f = _e || (_e = {})).visible = 'visible', f.bordersOnly = 'bordersOnly', f.fullyHidden = 'fullyHidden';
+    const g = () => {
+        const _h = localStorage.getItem(d.default.zonedDeviceViews);
+        return _h || _e.bordersOnly;
     };
-    var g = {
-        shouldShow: a => f() !== d.fullyHidden,
-        shouldShowInnerZone: a => f() !== d.bordersOnly
+    var _h = {
+        shouldShow: e => g() !== _e.fullyHidden,
+        shouldShowInnerZone: e => g() !== _e.bordersOnly
     };
-}), b.register('aGdJe4', function(b, i) {
-    a(b.exports, 'default', function() {
-        return c;
+}), a.register('+MyMe6', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var c = {
+    var _d = {
         zonedDeviceViews: 'zoned-device-views'
     };
-}), b.register('NiTBJ', function(i, c) {
-    a(i.exports, 'BaseAsset', function() {
-        return c;
+}), a.register('QYCe9', function(b, c) {
+    e(b.exports, 'BaseAsset', function() {
+        return _d;
     });
-    const c = {
+    const _d = {
         imageId: 'character_proximity_device',
-        imageUrl: (0, b('JJQ0+').default)('devices/character_proximity/radar.png')
+        imageUrl: (0, a('2Xvuf').default)('devices/character_proximity/radar.png')
     };
-}), b.register('qfGAa', function(b, i) {
-    let c;
-    var d;
-    let e;
-    var f;
-    a(b.exports, 'DetectionArea', function() {
-        return c;
-    }), (d = c || (c = {})).everywhere = 'everywhere', d.zone = 'zone', (f = e || (e = {})).everybody = 'everybody', f.sameTeam = 'sameTeam', f.differentTeam = 'differentTeam';
+}), a.register('K3oEQ', function(b, c) {
+    let d;
+    var e;
+    let f;
+    var g;
+    e(b.exports, 'DetectionArea', function() {
+        return d;
+    }), (e = d || (d = {})).everywhere = 'everywhere', e.zone = 'zone', (g = f || (f = {})).everybody = 'everybody', g.sameTeam = 'sameTeam', g.differentTeam = 'differentTeam';
 });

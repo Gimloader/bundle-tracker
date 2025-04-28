@@ -1,58 +1,58 @@
-function a(a, b, r, s) {
-    Object.defineProperty(a, b, {
-        get: r,
-        set: s,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('1o5Co', function(r, s) {
-    var c;
-    c = r.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('JM8dn', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(r.exports, 'default', function() {
-        return q;
+    }), _r(b.exports, 'default', function() {
+        return _r;
     });
-    var d = b('UM8oI'),
-        e = b('JJQ0+'),
-        f = b('VkIHd0'),
-        g = b('Bpt+p'),
-        h = b('5Ux1a'),
-        i = b('Ena4B'),
-        j = b('OlpXx'),
-        k = b('wSwKo5'),
-        l = b('/Lvpl17'),
-        m = b('sgILU');
-    const n = 'checkpoint-idle',
-        o = 'checkpoint-pop';
-    class p extends m.default {
-        constructor(a) {
-            if (super(a), (0, d.default)(this, 'bubbleIsReady', !1), (0, d.default)(this, 'createdAt', Date.now()), (0, d.default)(this, 'onBubbleActiveChange', () => {
-                    this.state.active ? (Date.now() - this.createdAt > 1000 && this.options.playAudio && this.options.visibleInGame && this.cull.isInsideView && (0, j.playSound)({
-                        path: (0, e.default)('devices/checkpoint/sound.mp3'),
-                        volume: (0, i.getVolume)({
+    var e = a('1bFPu'),
+        f = a('2Xvuf'),
+        g = a('SINjC2'),
+        h = a('9tz3H'),
+        i = a('/pbxo'),
+        j = a('1f1YX'),
+        k = a('07pQo'),
+        l = a('IFO6W13'),
+        m = a('R2Ucl10'),
+        n = a('I35Ay');
+    const o = 'checkpoint-idle',
+        p = 'checkpoint-pop';
+    class q extends n.default {
+        constructor(_r) {
+            if (super(_r), (0, e.default)(this, 'bubbleIsReady', !1), (0, e.default)(this, 'createdAt', Date.now()), (0, e.default)(this, 'onBubbleActiveChange', () => {
+                    this.state.active ? (Date.now() - this.createdAt > 1000 && this.options.playAudio && this.options.visibleInGame && this.cull.isInsideView && (0, k.playSound)({
+                        path: (0, f.default)('devices/checkpoint/sound.mp3'),
+                        volume: (0, j.getVolume)({
                             volume: 0.75,
-                            type: i.SoundType.soundEffect
+                            type: j.SoundType.soundEffect
                         })
-                    }), this.bubble.view.play(o)) : (this.bubble.view.setAlpha(0), this.tweens.add({
+                    }), this.bubble.view.play(p)) : (this.bubble.view.setAlpha(0), this.tweens.add({
                         targets: this.bubble.view,
                         alpha: 1,
                         duration: 400
-                    }), this.bubble.view.play(n));
-                }), (0, d.default)(this, 'onStateChange', () => {
+                    }), this.bubble.view.play(o));
+                }), (0, e.default)(this, 'onStateChange', () => {
                     this.bubbleIsReady && this.onBubbleActiveChange();
-                }), ((0, g.isPublishedVersion)() || (0, h.InGamePhase)()) && (!this.options.visibleInGame || !this.options.enabled))
+                }), ((0, h.isPublishedVersion)() || (0, i.InGamePhase)()) && (!this.options.visibleInGame || !this.options.enabled))
                 return;
-            const q = (0, l.FetchOptionSchemaProperty)(this, 'width');
+            const s = (0, m.FetchOptionSchemaProperty)(this, 'width');
             this.bubble = this.parts.add.animatedSprite({
                 spritesheetId: 'checkpoint-device',
-                spritesheetUrl: (0, e.default)('devices/checkpoint/bubble.png'),
+                spritesheetUrl: (0, f.default)('devices/checkpoint/bubble.png'),
                 frameWidth: 500,
                 frameHeight: 492,
                 animations: [{
-                        animName: n,
+                        animName: o,
                         frameRate: 1,
                         animFrames: {
                             start: 0,
@@ -60,7 +60,7 @@ b.register('1o5Co', function(r, s) {
                         }
                     },
                     {
-                        animName: o,
+                        animName: p,
                         frameRate: 34,
                         animFrames: {
                             start: 0,
@@ -69,105 +69,105 @@ b.register('1o5Co', function(r, s) {
                         repeat: 0
                     }
                 ],
-                onReady: a => {
-                    const r = (0, f.default)({
-                        width: a.view.width,
-                        height: a.view.height,
+                onReady: _r => {
+                    const t = (0, g.default)({
+                        width: _r.view.width,
+                        height: _r.view.height,
                         newWidth: this.options.width
                     });
-                    a.view.displayWidth = r.width, a.view.displayHeight = r.height;
-                    const s = r.height / a.view.height,
-                        t = q.min * s,
-                        u = q.max * s;
+                    _r.view.displayWidth = t.width, _r.view.displayHeight = t.height;
+                    const u = t.height / _r.view.height,
+                        v = s.min * u,
+                        w = s.max * u;
                     this.visualEditing.add.box({
                         angle: 0,
                         rotable: !1,
-                        width: r.width,
-                        height: r.height,
-                        minWidth: q.min,
-                        maxWidth: q.max,
-                        minHeight: t,
-                        maxHeight: u,
-                        onChange: a => {
-                            (0, k.ReplaceVisualEditingPreview)(a.x, a.y, {
-                                width: a.width
+                        width: t.width,
+                        height: t.height,
+                        minWidth: s.min,
+                        maxWidth: s.max,
+                        minHeight: v,
+                        maxHeight: w,
+                        onChange: _r => {
+                            (0, l.ReplaceVisualEditingPreview)(_r.x, _r.y, {
+                                width: _r.width
                             });
                         }
                     }), this.tweens.add({
-                        targets: a.view,
-                        y: a.view.y - r.height / 20,
+                        targets: _r.view,
+                        y: _r.view.y - t.height / 20,
                         duration: 1500,
                         yoyo: !0,
                         repeat: -1,
                         ease: Phaser.Math.Easing.Sine.InOut
-                    }), this.state.active ? (a.view.setAlpha(0), a.view.play(o)) : a.view.play(n), this.bubbleIsReady = !0;
+                    }), this.state.active ? (_r.view.setAlpha(0), _r.view.play(p)) : _r.view.play(o), this.bubbleIsReady = !0;
                 }
             });
         }
     }
-    var q = r;
-}), b.register('VkIHd0', function(b, d) {
-    a(b.exports, 'default', function() {
-        return c;
+    var _r = q;
+}), a.register('SINjC2', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var c = a => {
-        const d = a.newWidth / a.width;
+    var _d = e => {
+        const e = e.newWidth / e.width;
         return {
-            height: a.height * d,
-            width: a.width * d
+            height: e.height * e,
+            width: e.width * e
         };
     };
-}), b.register('wSwKo5', function(d, h) {
-    a(d.exports, 'ReplaceVisualEditingPreview', function() {
-        return g;
+}), a.register('IFO6W13', function(b, c) {
+    e(b.exports, 'ReplaceVisualEditingPreview', function() {
+        return _h;
     });
-    var c = b('2pEsK'),
-        d = b('Am0b71'),
-        e = b('KDS1x'),
-        f = b('83+vO');
-    const g = (a, b, d) => {
-        const h = (0, f.FetchVisualEditingPreview)(),
-            i = (0, e.FetchCurrentlyEditedDevice)();
-        if (!i || !h)
+    var d = a('HqwPM'),
+        e = a('+oovY4'),
+        f = a('A17vD'),
+        g = a('HXXiu');
+    const _h = (e, a, b) => {
+        const i = (0, g.FetchVisualEditingPreview)(),
+            j = (0, f.FetchCurrentlyEditedDevice)();
+        if (!j || !i)
             return;
-        const j = i.layers.isOnNaturalDepth() ? void 0 : b + i.layers.getDepthShift();
-        (0, d.default)({
-            deviceOption: h.deviceOption,
-            id: c.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: j,
-            layerId: i.layers.getLayer(),
-            name: h.name,
+        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
+        (0, e.default)({
+            deviceOption: i.deviceOption,
+            id: d.VisualEditingConstants.previewId,
+            x: e,
+            y: a,
+            depth: k,
+            layerId: j.layers.getLayer(),
+            name: i.name,
             isPreview: !0,
             options: {
-                ...h.options,
-                ...d
+                ...i.options,
+                ...b
             },
             placedByClient: !0,
-            state: h.deviceOption.defaultState
+            state: i.deviceOption.defaultState
         });
     };
-}), b.register('Am0b71', function(d, c) {
-    a(d.exports, 'default', function() {
-        return e;
+}), a.register('+oovY4', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _f;
     });
-    var c = b('dAmf5'),
-        d = b('jgFbX');
-    var e = a => {
-        (0, c.default)().worldManager.devices.getDeviceById(a.id) && (0, d.default)(a);
+    var d = a('D5xLI'),
+        e = a('aIyMH');
+    var _f = e => {
+        (0, d.default)().worldManager.devices.getDeviceById(e.id) && (0, e.default)(e);
     };
-}), b.register('/Lvpl17', function(b, d) {
-    a(b.exports, 'FetchOptionSchemaProperty', function() {
-        return c;
+}), a.register('R2Ucl10', function(b, c) {
+    e(b.exports, 'FetchOptionSchemaProperty', function() {
+        return _d;
     });
-    const c = (a, b) => {
-        var d, e, f;
-        const g = a.deviceOption.optionSchema.options.find(a => a.key === b);
+    const _d = (e, b) => {
+        var e, f, g;
+        const h = e.deviceOption.optionSchema.options.find(e => e.key === b);
         return {
-            min: null === (d = null == g ? void 0 : g.option.props) || void 0 === d ? void 0 : d.min,
-            max: null === (e = null == g ? void 0 : g.option.props) || void 0 === e ? void 0 : e.max,
-            step: null === (f = null == g ? void 0 : g.option.props) || void 0 === f ? void 0 : f.step
+            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
+            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
+            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
         };
     };
 });

@@ -1,41 +1,41 @@
-function a(a, b, t, u) {
-    Object.defineProperty(a, b, {
-        get: t,
-        set: u,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('84F+e', function(t, u) {
-    var c;
-    c = t.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('OUQCG', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(t.exports, 'ANIMATION_DURATION', function() {
-        return q;
-    }), a(t.exports, 'default', function() {
-        return r;
+    }), _z(b.exports, 'ANIMATION_DURATION', function() {
+        return _r;
+    }), _z(b.exports, 'default', function() {
+        return _s;
     });
-    var d = b('8kSQZ'),
-        e = b('uPP4W'),
-        f = b('hGQrG'),
-        g = b('h99Nu'),
-        h = b('b9Bct'),
-        i = b('+0Tb/'),
-        j = b('EefFJ'),
-        k = b('t9K1H'),
-        l = b('FZOhR'),
-        m = b('wnmVt');
-    let n, o, p = a => a;
-    const q = 0.3;
-    var r = (0, l.withDeviceUIWrapper)(a => {
-        const s = e.useCallback(() => {
-            a.closableByUser && a.close();
-        }, [a.closableByUser]);
-        (0, i.default)(Phaser.Input.Keyboard.KeyCodes.ESC, s, [s]);
-        return (0, d.jsx)(s, {
-            children: (0, d.jsx)(t, {
+    var e = a('0hzx+'),
+        f = a('LEQ5w'),
+        g = a('5BohJ'),
+        h = a('Axq+p'),
+        i = a('TwXYL'),
+        j = a('ryWAy'),
+        k = a('2GeW4'),
+        l = a('w3PQs'),
+        m = a('8eVLU'),
+        n = a('qr+8A');
+    let o, p, q = _z => _z;
+    const _r = 0.3;
+    var _s = (0, m.withDeviceUIWrapper)(_z => {
+        const t = f.useCallback(() => {
+            _z.closableByUser && _z.close();
+        }, [_z.closableByUser]);
+        (0, j.default)(Phaser.Input.Keyboard.KeyCodes.ESC, t, [t]);
+        return (0, e.jsx)(_t, {
+            children: (0, e.jsx)(_u, {
                 initial: {
                     background: 'rgba(0,0,0,0)'
                 },
@@ -46,92 +46,92 @@ b.register('84F+e', function(t, u) {
                     background: 'rgba(0,0,0,0)'
                 },
                 transition: {
-                    duration: q
+                    duration: _r
                 },
                 children: (() => {
-                    const t = {
-                        ...a,
-                        isBanner: a.style === k.CodeUIStyle.banner,
-                        close: s,
-                        code: a.code
+                    const u = {
+                        ..._z,
+                        isBanner: _z.style === l.CodeUIStyle.banner,
+                        close: t,
+                        code: _z.code
                     };
-                    return (0, d.jsx)(f.default, {
-                        ...t
+                    return (0, e.jsx)(g.default, {
+                        ...u
                     });
                 })()
             })
         });
     });
-    const s = (0, g.default)(j.default).attrs({
+    const _t = (0, h.default)(k.default).attrs({
             className: 'maxAll'
-        })(n || (n = p`
+        })(o || (o = q`
   overflow: hidden;
   z-index: ${ 0 };
-`), m.default.primaryContent),
-        t = (0, g.default)(h.motion.div).attrs({
+`), n.default.primaryContent),
+        _u = (0, h.default)(i.motion.div).attrs({
             className: 'maxAll'
-        })(o || (o = p``));
-}), b.register('hGQrG', function(t, u) {
-    a(t.exports, 'default', function() {
-        return r;
+        })(p || (p = q``));
+}), a.register('5BohJ', function(b, c) {
+    _z(b.exports, 'default', function() {
+        return _s;
     });
-    var c = b('8kSQZ'),
-        d = b('uPP4W'),
-        e = b('b9Bct'),
-        f = b('USLU1'),
-        g = b('h99Nu'),
-        h = b('84F+e'),
-        i = b('TBO9c'),
-        j = b('nbHO+'),
-        k = b('PjB0f'),
-        l = b('KRp9M');
-    let m, n, o = a => a;
-    const p = {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('TwXYL'),
+        g = a('FytBL'),
+        h = a('Axq+p'),
+        i = a('OUQCG'),
+        j = a('EAnIn'),
+        k = a('Ct4sg'),
+        l = a('PMl60'),
+        m = a('HbVXj');
+    let n, o, p = _z => _z;
+    const q = {
             y: ' 100%',
             opacity: 0
         },
-        q = {
+        r = {
             y: '0%',
             opacity: 1
         };
-    var r = a => {
-        const s = (0, f.useIsPresent)(),
-            [t, u] = (0, k.useBoolean)(!1),
-            v = (0, l.GetContrastColor)(a.defaultBackgroundColor),
-            w = d.useMemo(() => {
-                let x = {
-                    background: a.defaultBackgroundColor,
-                    color: v,
-                    fontFamily: a.defaultFontFamily
+    var _s = _z => {
+        const t = (0, g.useIsPresent)(),
+            [u, v] = (0, l.useBoolean)(!1),
+            w = (0, m.GetContrastColor)(_z.defaultBackgroundColor),
+            x = e.useMemo(() => {
+                let y = {
+                    background: _z.defaultBackgroundColor,
+                    color: w,
+                    fontFamily: _z.defaultFontFamily
                 };
-                if (a.isBanner) {
-                    const y = {
+                if (_z.isBanner) {
+                    const _z = {
                         padding: '30px 40px',
                         width: '100%',
                         maxWidth: '100%',
                         borderRadius: 0
                     };
                     return {
-                        ...x,
-                        ...y
+                        ...y,
+                        ..._z
                     };
                 }
                 return {
-                    ...x,
+                    ...y,
                     padding: '40px 30px',
                     width: '90%',
                     maxWidth: 650,
                     borderRadius: 5
                 };
             }, [
-                a.defaultBackgroundColor,
-                a.isBanner
+                e.defaultBackgroundColor,
+                e.isBanner
             ]);
-        return (0, c.jsxs)(s, {
+        return (0, d.jsxs)(_t, {
             onClick: () => {
-                s && t && a.close();
+                t && u && e.close();
             },
-            style: a.isBanner ? {
+            style: e.isBanner ? {
                 alignItems: 'flex-end',
                 justifyContent: 'center'
             } : {
@@ -139,106 +139,106 @@ b.register('84F+e', function(t, u) {
                 alignItems: 'center'
             },
             children: [
-                (0, c.jsx)(t, {
-                    initial: p,
-                    animate: q,
-                    exit: p,
+                (0, d.jsx)(_u, {
+                    initial: q,
+                    animate: r,
+                    exit: q,
                     transition: {
-                        duration: h.ANIMATION_DURATION,
+                        duration: i.ANIMATION_DURATION,
                         ease: 'easeOut'
                     },
-                    onClick: a => a.stopPropagation(),
-                    onAnimationComplete: u,
-                    style: w,
-                    children: (0, c.jsx)(i.default, {
-                        ...a
+                    onClick: e => e.stopPropagation(),
+                    onAnimationComplete: v,
+                    style: x,
+                    children: (0, d.jsx)(j.default, {
+                        ...e
                     })
                 }),
-                a.closableByUser ? (0, c.jsx)(j.default, {
-                    onClick: a.close
+                e.closableByUser ? (0, d.jsx)(k.default, {
+                    onClick: e.close
                 }) : null
             ]
         });
     };
-    const s = g.default.div.attrs({
+    const _t = h.default.div.attrs({
             className: 'maxAll flex'
-        })(m || (m = o``)),
-        t = (0, g.default)(e.motion.div).attrs({
+        })(n || (n = p``)),
+        _u = (0, h.default)(f.motion.div).attrs({
             className: 'medium-shadow flex-column vc scroll-y'
-        })(n || (n = o`
+        })(o || (o = p`
   max-height: 80%;
 `));
-}), b.register('TBO9c', function(n, c) {
-    a(n.exports, 'default', function() {
-        return o;
+}), a.register('EAnIn', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _p;
     });
-    var c = b('8kSQZ');
-    b('uPP4W');
-    var d = b('h99Nu'),
-        e = b('IRmsn'),
-        f = b('QEVw+'),
-        g = b('Dog9Y'),
-        h = b('kgfxo'),
-        i = b('n4GIU'),
-        j = b('jDFNP');
-    let k, l, m, n = a => a;
-    var o = a => {
-        const p = () => (0, c.jsx)(c.Fragment, {
-            children: (0, c.jsx)('div', {
-                style: a.isBanner ? void 0 : {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('pjaWs'),
+        g = a('C2gQA'),
+        h = a('led8j'),
+        i = a('U9mPz'),
+        j = a('utXDw'),
+        k = a('JWLDh');
+    let l, m, n, o = e => e;
+    var _p = e => {
+        const q = () => (0, d.jsx)(d.Fragment, {
+            children: (0, d.jsx)('div', {
+                style: e.isBanner ? void 0 : {
                     display: 'flex',
                     width: '100%',
                     alignItems: 'center',
                     flexDirection: 'column'
                 },
-                children: (0, c.jsx)(r, {
-                    children: a.code ? (0, c.jsx)(f.LiveProvider, {
+                children: (0, d.jsx)(_s, {
+                    children: e.code ? (0, d.jsx)(g.LiveProvider, {
                         noInline: !0,
-                        code: a.code,
+                        code: e.code,
                         scope: {
-                            MapButton: g.default,
-                            CallAction: h.CallAction,
-                            usePropertyValue: i.usePropertyValue,
-                            useItemAmount: j.useItemAmount
+                            MapButton: h.default,
+                            CallAction: i.CallAction,
+                            usePropertyValue: j.usePropertyValue,
+                            useItemAmount: k.useItemAmount
                         },
-                        children: (0, c.jsx)(f.LivePreview, {})
-                    }) : e.default.emptyMessage
+                        children: (0, d.jsx)(g.LivePreview, {})
+                    }) : f.default.emptyMessage
                 })
             })
         });
-        return (0, c.jsx)(c.Fragment, {
-            children: a.isBanner ? (0, c.jsx)(p, {
-                children: p()
-            }) : (0, c.jsx)(q, {
-                children: p()
+        return (0, d.jsx)(d.Fragment, {
+            children: e.isBanner ? (0, d.jsx)(_q, {
+                children: q()
+            }) : (0, d.jsx)(_r, {
+                children: q()
             })
         });
     };
-    const p = d.default.div.attrs({
+    const _q = e.default.div.attrs({
             className: 'maxWidth flex vc'
-        })(k || (k = n`
+        })(l || (l = o`
   width: 100%;
   display: flex;
   justify-content: space-between;
 `)),
-        q = d.default.div.attrs({
+        _r = e.default.div.attrs({
             className: 'maxWidth flex-column vc'
-        })(l || (l = n``)),
-        r = d.default.div(m || (m = n`
+        })(m || (m = o``)),
+        _s = e.default.div(n || (n = o`
   font-size: 24px;
   margin: 6px;
 `));
-}), b.register('IRmsn', function(b, n) {
-    a(b.exports, 'default', function() {
-        return c;
+}), a.register('pjaWs', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var c = {
+    var _d = {
         emptyMessage: 'Nothing in here...yet! End the game and modify this device to include your content.'
     };
-}), b.register('t9K1H', function(b, n) {
-    let c;
-    var d;
-    a(b.exports, 'CodeUIStyle', function() {
-        return c;
-    }), (d = c || (c = {})).modal = 'modal', d.banner = 'banner';
+}), a.register('w3PQs', function(b, c) {
+    let d;
+    var e;
+    e(b.exports, 'CodeUIStyle', function() {
+        return d;
+    }), (e = d || (d = {})).modal = 'modal', e.banner = 'banner';
 });

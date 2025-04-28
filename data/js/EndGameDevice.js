@@ -1,40 +1,40 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('cyMa3', function(o, t) {
-    var b, c, d, e, f;
-    b = o.exports, Object.defineProperty(b, '__esModule', {
+a.register('lEA2e', function(b, c) {
+    var d, e, f, g, h;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), c = o.exports, d = 'default', e = function() {
-        return p;
-    }, Object.defineProperty(c, d, {
-        get: e,
-        set: f,
+    }), e = b.exports, f = 'default', g = function() {
+        return _r;
+    }, Object.defineProperty(e, f, {
+        get: g,
+        set: h,
         enumerable: !0,
         configurable: !0
     });
-    var g = a('UM8oI'),
-        h = a('D0n26'),
-        i = a('JJQ0+'),
-        j = a('Bpt+p'),
-        k = a('5Ux1a'),
-        l = a('sgILU'),
-        m = a('phu0d'),
-        n = a('Gqspz');
-    class o extends l.default {
-        constructor(a) {
-            if (super(a), (0, g.default)(this, 'onMessage', a => {
-                    'end_game' == a.key && (0, h.EmitTutorialEvent)({
-                        event: h.TutorialEventName.END_THE_GAME_BY_DEVICE
+    var i = a('1bFPu'),
+        j = a('L1523'),
+        k = a('2Xvuf'),
+        l = a('9tz3H'),
+        m = a('/pbxo'),
+        n = a('I35Ay'),
+        o = a('+uQv7'),
+        p = a('dTXti');
+    class q extends n.default {
+        constructor(r) {
+            if (super(r), (0, i.default)(this, 'onMessage', r => {
+                    'end_game' == r.key && (0, j.EmitTutorialEvent)({
+                        event: j.TutorialEventName.END_THE_GAME_BY_DEVICE
                     });
-                }), (0, k.InPreGamePhase)() && (0, j.isSavedVersion)()) {
-                const p = n.default.Utility;
-                new(0, m.default)({
+                }), (0, m.InPreGamePhase)() && (0, l.isSavedVersion)()) {
+                const s = p.default.Utility;
+                new(0, o.default)({
                     device: this,
-                    baseColor: p.baseColor,
-                    boxColor: p.boxColor,
+                    baseColor: s.baseColor,
+                    boxColor: s.boxColor,
                     content: {
                         icon: {
-                            image: (0, i.default)('devices/end_game/icon.png'),
+                            image: (0, k.default)('devices/end_game/icon.png'),
                             scale: 0.8
                         }
                     }
@@ -42,5 +42,5 @@ a.register('cyMa3', function(o, t) {
             }
         }
     }
-    var p = q;
+    var _r = q;
 });

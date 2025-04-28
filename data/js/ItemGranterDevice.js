@@ -1,68 +1,68 @@
-function a(a, b, q, r) {
-    Object.defineProperty(a, b, {
-        get: q,
-        set: r,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('UzwMr', function(q, r) {
-    var c;
-    c = q.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('iebt4', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(q.exports, 'default', function() {
-        return o;
+    }), _p(b.exports, 'default', function() {
+        return _p;
     });
-    var d = b('UM8oI'),
-        e = b('cMsWT'),
-        f = b('7Sbqr'),
-        g = b('VkIHd0'),
-        h = b('Q0Vn8'),
-        i = b('Mr5c3'),
-        j = b('Bpt+p'),
-        k = b('5Ux1a'),
-        l = b('sgILU'),
-        m = b('Sbl6W');
-    class n extends l.default {
-        constructor(a) {
-            super(a), (0, d.default)(this, 'addBase', () => {
-                const o = (0, h.default)(1);
+    var e = a('1bFPu'),
+        f = a('JqBF0'),
+        g = a('iWivW'),
+        h = a('SINjC2'),
+        i = a('5CmLs'),
+        j = a('1Chka'),
+        k = a('9tz3H'),
+        l = a('/pbxo'),
+        m = a('I35Ay'),
+        n = a('2M6xn');
+    class o extends m.default {
+        constructor(_p) {
+            super(_p), (0, e.default)(this, 'addBase', () => {
+                const q = (0, i.default)(1);
                 this.base = this.parts.add.sprite({
-                    ...m.BaseAsset,
+                    ...n.BaseAsset,
                     y: -30,
-                    depthChange: o
+                    depthChange: q
                 }), this.base.view.setScale(0.5), this.colliders.add.box({
                     x: 0,
                     y: 10,
                     w: 90,
                     h: 40
                 });
-            }), (0, d.default)(this, 'addItemPreview', () => {
+            }), (0, e.default)(this, 'addItemPreview', () => {
                 if (!this.base)
                     return;
-                const o = (0, h.default)(2),
-                    p = {
-                        ...m.UnknownItemAsset
+                const q = (0, i.default)(2),
+                    r = {
+                        ...n.UnknownItemAsset
                     };
                 if (this.options.itemId) {
-                    const q = f.default.worldOptions.itemOptions.find(q => q.id === this.options.itemId);
-                    q && (p.imageId = q.id, p.imageUrl = q.previewImage);
+                    const s = g.default.worldOptions.itemOptions.find(s => s.id === this.options.itemId);
+                    s && (r.imageId = s.id, r.imageUrl = s.previewImage);
                 }
-                const q = (0, i.default)(p.imageId),
-                    r = (0, g.default)({
-                        height: q.height,
-                        width: q.width,
+                const s = (0, j.default)(r.imageId),
+                    t = (0, h.default)({
+                        height: s.height,
+                        width: s.width,
                         newWidth: 60
                     });
                 this.itemPreview = this.parts.add.sprite({
-                    imageId: p.imageId,
-                    imageUrl: p.imageUrl,
-                    depthChange: o,
+                    imageId: r.imageId,
+                    imageUrl: r.imageUrl,
+                    depthChange: q,
                     y: -43,
-                    displayWidth: r.width,
-                    displayHeight: r.height
+                    displayWidth: t.width,
+                    displayHeight: t.height
                 }), this.itemPreview.view.alpha = 0.6, this.tweens.add({
                     targets: this.itemPreview.view,
                     y: this.itemPreview.view.y - 10,
@@ -78,34 +78,34 @@ b.register('UzwMr', function(q, r) {
                     repeat: -1,
                     ease: Phaser.Math.Easing.Sine.InOut
                 });
-            }), (0, j.isPublishedVersion)() || (0, k.InGamePhase)() || (this.layers.setDefaultLayer(e.default.DepthSortedCharactersAndDevices), this.addBase(), this.addItemPreview());
+            }), (0, k.isPublishedVersion)() || (0, l.InGamePhase)() || (this.layers.setDefaultLayer(f.default.DepthSortedCharactersAndDevices), this.addBase(), this.addItemPreview());
         }
     }
-    var o = p;
-}), b.register('VkIHd0', function(b, i) {
-    a(b.exports, 'default', function() {
-        return c;
+    var _p = o;
+}), a.register('SINjC2', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _d;
     });
-    var c = a => {
-        const d = a.newWidth / a.width;
+    var _d = e => {
+        const e = e.newWidth / e.width;
         return {
-            height: a.height * d,
-            width: a.width * d
+            height: e.height * e,
+            width: e.width * e
         };
     };
-}), b.register('Sbl6W', function(i, a) {
-    a(i.exports, 'BaseAsset', function() {
-        return d;
-    }), a(i.exports, 'UnknownItemAsset', function() {
-        return e;
+}), a.register('2M6xn', function(b, c) {
+    e(b.exports, 'BaseAsset', function() {
+        return _e;
+    }), e(b.exports, 'UnknownItemAsset', function() {
+        return _f;
     });
-    var c = b('JJQ0+');
-    const d = {
-            imageId: (0, c.default)('devices/item_granter/base.png'),
-            imageUrl: (0, c.default)('devices/item_granter/base.png')
+    var d = a('2Xvuf');
+    const _e = {
+            imageId: (0, d.default)('devices/item_granter/base.png'),
+            imageUrl: (0, d.default)('devices/item_granter/base.png')
         },
-        e = {
+        _f = {
             imageId: '__UNKNOWN_ITEM',
-            imageUrl: (0, c.default)('devices/item_granter/question-mark-2.png')
+            imageUrl: (0, d.default)('devices/item_granter/question-mark-2.png')
         };
 });

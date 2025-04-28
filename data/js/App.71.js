@@ -1,44 +1,44 @@
-function a(a, b, v, w) {
-    Object.defineProperty(a, b, {
-        get: v,
-        set: w,
+function a(b, c, d, e) {
+    Object.defineProperty(b, c, {
+        get: d,
+        set: e,
         enumerable: !0,
         configurable: !0
     });
 }
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('0TiYh', function(v, w) {
-    var c;
-    c = v.exports, Object.defineProperty(c, '__esModule', {
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('qi4Gg', function(b, c) {
+    var d;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(v.exports, 'default', function() {
-        return s;
+    }), _u(b.exports, 'default', function() {
+        return _t;
     });
-    var d = b('8kSQZ'),
-        e = b('bPH7V'),
-        f = b('ExtIT'),
-        g = b('uPP4W'),
-        h = b('h99Nu'),
-        i = b('lmfrI'),
-        j = b('gSUVO'),
-        k = b('hKRgq'),
-        l = b('k7gmw'),
-        m = b('kYNzL'),
-        n = b('PjB0f'),
-        o = b('FfkIK1');
-    let p, q, r = a => a;
-    var s = () => {
-        const [t, u] = g.useState(0), v = () => u(t => t + 1);
-        return (0, d.jsxs)(t, {
+    var e = a('0hzx+'),
+        f = a('NIZyA'),
+        g = a('fmVdR'),
+        h = a('LEQ5w'),
+        i = a('Axq+p'),
+        j = a('sHRDd'),
+        k = a('b5kvC'),
+        l = a('Yjqqv'),
+        m = a('xgp7G'),
+        n = a('NkjRq'),
+        o = a('PMl60'),
+        p = a('7s5R80');
+    let q, r, s = _u => _u;
+    var _t = () => {
+        const [_u, v] = h.useState(0), w = () => v(_u => _u + 1);
+        return (0, e.jsxs)(_u, {
             children: [
-                (0, d.jsx)(n.Title, {
+                (0, e.jsx)(o.Title, {
                     title: 'Compatibility Check'
                 }),
-                (0, d.jsxs)(u, {
+                (0, e.jsxs)(_v, {
                     children: [
-                        (0, d.jsx)(k.default, {}),
-                        t === m.default.length ? (0, d.jsx)(e.default, {
+                        (0, e.jsx)(l.default, {}),
+                        _u === n.default.length ? (0, e.jsx)(f.default, {
                             type: 'success',
                             style: {
                                 marginTop: 15
@@ -47,48 +47,48 @@ b.register('0TiYh', function(v, w) {
                             message: 'All Test Passed!',
                             description: 'You should be all set to access everything in Gimkit properly!'
                         }) : null,
-                        (0, d.jsx)(f.default, {}),
-                        m.default.map(t => (0, d.jsx)(l.default, {
-                            test: t,
-                            onPass: v
-                        }, t.name))
+                        (0, e.jsx)(g.default, {}),
+                        n.default.map(_u => (0, e.jsx)(m.default, {
+                            test: _u,
+                            onPass: w
+                        }, _u.name))
                     ]
                 })
             ]
         });
     };
-    const t = h.default.div.attrs({
+    const _u = i.default.div.attrs({
             className: 'flex hc'
-        })(p || (p = r`
+        })(q || (q = s`
   flex: 1;
   background: ${ 0 };
   font-family: ${ 0 };
   color: ${ 0 };
-`), i.default.Snow, j.Fonts.SFPro, i.default.Black),
-        u = (0, h.default)(o.default)(q || (q = r`
+`), j.default.Snow, k.Fonts.SFPro, j.default.Black),
+        _v = (0, i.default)(p.default)(r || (r = s`
   width: 90%;
   max-width: 750px;
   margin: 40px 0px;
   border-radius: 8px;
   padding: 40px;
 `));
-}), b.register('hKRgq', function(v, w) {
-    a(v.exports, 'default', function() {
-        return e;
+}), a.register('Yjqqv', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _f;
     });
-    var c = b('8kSQZ');
-    b('uPP4W');
-    var d = b('gSUVO');
-    var e = () => (0, c.jsxs)('div', {
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('b5kvC');
+    var _f = () => (0, d.jsxs)('div', {
         children: [
-            (0, c.jsx)('div', {
+            (0, d.jsx)('div', {
                 style: {
-                    fontWeight: d.FontWeights.Bold,
+                    fontWeight: e.FontWeights.Bold,
                     fontSize: 32
                 },
                 children: 'Gimkit Compatibility Check'
             }),
-            (0, c.jsx)('div', {
+            (0, d.jsx)('div', {
                 style: {
                     fontSize: 16,
                     marginTop: 3
@@ -97,83 +97,83 @@ b.register('0TiYh', function(v, w) {
             })
         ]
     });
-}), b.register('k7gmw', function(v, w) {
-    a(v.exports, 'default', function() {
-        return t;
+}), a.register('xgp7G', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _u;
     });
-    var c = b('8kSQZ'),
-        d = b('uPP4W'),
-        e = b('f9f+a'),
-        f = b('h99Nu'),
-        g = b('lmfrI'),
-        h = b('fgVTE0'),
-        i = b('gSUVO'),
-        j = b('uhGu5');
-    let k, l, m, n, o, p, q, r, s = a => a;
-    var t = a => {
+    var d = a('0hzx+'),
+        e = a('LEQ5w'),
+        f = a('oXQNI'),
+        g = a('Axq+p'),
+        h = a('sHRDd'),
+        i = a('FpbFp'),
+        j = a('b5kvC'),
+        k = a('OVITM');
+    let l, m, n, o, p, q, r, s, t = _l => _l;
+    var _u = _l => {
         const {
-            loading: u,
-            passed: v
-        } = (0, j.useTest)(a.test.test), w = d.useMemo(() => u ? '#4251af' : v ? '#388e3c' : '#f44336', [
-            u,
-            v
-        ]), x = d.useMemo(() => u ? 'Running Test' : v ? 'Test Passed' : 'Test Failed', [
-            u,
-            v
+            loading: v,
+            passed: w
+        } = (0, k.useTest)(_l.test.test), x = e.useMemo(() => v ? '#4251af' : w ? '#388e3c' : '#f44336', [
+            v,
+            w
+        ]), y = e.useMemo(() => v ? 'Running Test' : w ? 'Test Passed' : 'Test Failed', [
+            v,
+            w
         ]);
-        d.useEffect(() => {
-            v && a.onPass();
-        }, [v]);
-        const y = !u && !v;
-        return (0, c.jsx)(e.default, {
+        e.useEffect(() => {
+            w && _l.onPass();
+        }, [w]);
+        const z = !v && !w;
+        return (0, d.jsx)(f.default, {
             hoverable: !0,
             style: {
                 marginBottom: 15
             },
-            children: (0, c.jsxs)(u, {
+            children: (0, d.jsxs)(_v, {
                 children: [
-                    (0, c.jsxs)(v, {
+                    (0, d.jsxs)(_w, {
                         children: [
-                            u ? (0, c.jsx)(h.default, {
+                            v ? (0, d.jsx)(i.default, {
                                 size: 14
                             }) : null,
-                            (0, c.jsx)('div', {
+                            (0, d.jsx)('div', {
                                 style: {
-                                    marginLeft: u ? 8 : 0,
-                                    color: w
+                                    marginLeft: v ? 8 : 0,
+                                    color: x
                                 },
-                                children: x
+                                children: y
                             })
                         ]
                     }),
-                    (0, c.jsx)(w, {
+                    (0, d.jsx)(_x, {
                         style: {
-                            color: v || u ? g.default.Black : w
+                            color: w || v ? h.default.Black : x
                         },
-                        children: a.test.name
+                        children: _l.test.name
                     }),
-                    a.test.description && u ? (0, c.jsx)(x, {
-                        children: a.test.description
+                    _l.test.description && v ? (0, d.jsx)(_y, {
+                        children: _l.test.description
                     }) : null,
-                    y ? (0, c.jsxs)(c.Fragment, {
+                    z ? (0, d.jsxs)(d.Fragment, {
                         children: [
-                            (0, c.jsxs)(y, {
+                            (0, d.jsxs)(_z, {
                                 children: [
-                                    (0, c.jsx)(z, {
+                                    (0, d.jsx)(_A, {
                                         children: 'What It Means'
                                     }),
-                                    (0, c.jsx)(A, {
-                                        children: a.test.whatItMeans
+                                    (0, d.jsx)(_B, {
+                                        children: _l.test.whatItMeans
                                     })
                                 ]
                             }),
-                            (0, c.jsxs)(B, {
+                            (0, d.jsxs)(_C, {
                                 children: [
-                                    (0, c.jsx)(z, {
+                                    (0, d.jsx)(_A, {
                                         children: 'How To Fix'
                                     }),
-                                    (0, c.jsx)(A, {
-                                        children: a.test.howToFix
+                                    (0, d.jsx)(_B, {
+                                        children: _l.test.howToFix
                                     })
                                 ]
                             })
@@ -183,85 +183,85 @@ b.register('0TiYh', function(v, w) {
             })
         });
     };
-    const u = f.default.div(k || (k = s`
+    const _v = g.default.div(l || (l = t`
   color: ${ 0 };
-`), g.default.Black),
-        v = f.default.div.attrs({
+`), h.default.Black),
+        _w = g.default.div.attrs({
             className: 'flex vc'
-        })(l || (l = s`
+        })(m || (m = t`
   font-size: 16px;
 `)),
-        w = f.default.div(m || (m = s`
+        _x = g.default.div(n || (n = t`
   margin-top: 1px;
   font-size: 21px;
   font-weight: ${ 0 };
-`), i.FontWeights.Bold),
-        x = f.default.div(n || (n = s`
+`), j.FontWeights.Bold),
+        _y = g.default.div(o || (o = t`
   font-size: 16px;
   opacity: 0.8;
   margin-top: 2px;
 `)),
-        y = f.default.div.attrs({
+        _z = g.default.div.attrs({
             className: 'maxWidth'
-        })(o || (o = s`
+        })(p || (p = t`
   background: #f5f5f5;
   border: 2px #78909c solid;
   padding: 20px;
   border-radius: 4px;
   margin-top: 10px;
 `)),
-        z = f.default.div(p || (p = s`
+        _A = g.default.div(q || (q = t`
   font-style: italic;
   font-weight: ${ 0 };
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
-`), i.FontWeights.Bold),
-        A = f.default.div(q || (q = s`
+`), j.FontWeights.Bold),
+        _B = g.default.div(r || (r = t`
   margin-top: 5px;
 `)),
-        B = f.default.div.attrs({
+        _C = g.default.div.attrs({
             className: 'maxWidth'
-        })(r || (r = s`
+        })(s || (s = t`
   background: #f1f8e9;
   border: 2px #66bb6a solid;
   padding: 20px;
   border-radius: 4px;
   margin-top: 10px;
 `));
-}), b.register('fgVTE0', function(l, m) {
-    a(l.exports, 'default', function() {
-        return p;
+}), a.register('FpbFp', function(b, c) {
+    _l(b.exports, 'default', function() {
+        return _r;
     });
-    var c = b('b5p1k12'),
-        d = b('lWzbN'),
-        e = b('uPP4W');
-    b('uj3CK');
-    var f = b('LS7Qv'),
-        g = b('knVNm'),
-        h = b('l/I4j'),
-        i = 44;
+    var d = a('r98tK1'),
+        e = a('GepBD'),
+        f = a('LEQ5w');
+    a('WPpLv');
+    var g = a('cO49c'),
+        h = a('QvROH'),
+        i = a('mmS5q'),
+        j = 44;
 
-    function j(a) {
-        var k, l, m;
-        return k = a, l = 0, m = 1, a = (Math.min(Math.max(l, k), m) - l) / (m - l), a = (a -= 1) * a * a + 1;
+    function k(_l) {
+        var m, n, o;
+        return m = _l, n = 0, o = 1, _l = (Math.min(Math.max(n, m), o) - n) / (o - n), _l = (_l -= 1) * _l * _l + 1;
     }
-    var k = e.forwardRef(function(a, b) {
-            var l, m = a.classes,
-                n = a.className,
-                o = a.color,
-                p = void 0 === o ? 'primary' : o,
-                q = a.disableShrink,
-                r = void 0 !== q && q,
-                s = a.size,
-                t = void 0 === s ? 40 : s,
-                u = a.style,
-                v = a.thickness,
-                w = void 0 === v ? 3.6 : v,
-                x = a.value,
-                y = void 0 === x ? 0 : x,
-                z = a.variant,
-                A = void 0 === z ? 'indeterminate' : z,
-                B = (0, d.default)(a, [
+    var k = f.forwardRef(function(l, m) {
+            var n, o = l.classes,
+                p = l.className,
+                q = l.color,
+                _r = void 0 === q ? 'primary' : q,
+                s = l.disableShrink,
+                t = void 0 !== s && s,
+                u = l.size,
+                v = void 0 === u ? 40 : u,
+                w = l.style,
+                x = l.thickness,
+                y = void 0 === x ? 3.6 : x,
+                z = l.value,
+                A = void 0 === z ? 0 : z,
+                B = l.variant,
+                C = void 0 === B ? 'indeterminate' : B,
+                D = (0, e.default)(l, [
                     'classes',
                     'className',
                     'color',
@@ -272,56 +272,56 @@ b.register('0TiYh', function(v, w) {
                     'value',
                     'variant'
                 ]),
-                C = {},
-                D = {},
-                E = {};
-            if ('determinate' === A || 'static' === A) {
-                var F = 2 * Math.PI * ((i - w) / 2);
-                C.strokeDasharray = F.toFixed(3), E['aria-valuenow'] = Math.round(y), 'static' === A ? (C.strokeDashoffset = ''.concat(((100 - y) / 100 * F).toFixed(3), 'px'), D.transform = 'rotate(-90deg)') : (C.strokeDashoffset = ''.concat((l = (100 - y) / 100, l * l * F).toFixed(3), 'px'), D.transform = 'rotate('.concat((270 * j(y / 70)).toFixed(3), 'deg)'));
+                E = {},
+                F = {},
+                G = {};
+            if ('determinate' === C || 'static' === C) {
+                var H = 2 * Math.PI * ((j - y) / 2);
+                E.strokeDasharray = H.toFixed(3), G['aria-valuenow'] = Math.round(A), 'static' === C ? (E.strokeDashoffset = ''.concat(((100 - A) / 100 * H).toFixed(3), 'px'), F.transform = 'rotate(-90deg)') : (E.strokeDashoffset = ''.concat((n = (100 - A) / 100, n * n * H).toFixed(3), 'px'), F.transform = 'rotate('.concat((270 * _k(A / 70)).toFixed(3), 'deg)'));
             }
-            return e.createElement('div', (0, c.default)({
-                className: (0, f.default)(m.root, n, 'inherit' !== p && m['color'.concat((0, h.default)(p))], {
-                    indeterminate: m.indeterminate,
-                    static: m.static
-                } [A]),
-                style: (0, c.default)({
-                    width: t,
-                    height: t
-                }, D, u),
-                ref: b,
+            return f.createElement('div', (0, d.default)({
+                className: (0, g.default)(o.root, p, 'inherit' !== _r && o['color'.concat((0, i.default)(_r))], {
+                    indeterminate: o.indeterminate,
+                    static: o.static
+                } [C]),
+                style: (0, d.default)({
+                    width: v,
+                    height: v
+                }, F, w),
+                ref: m,
                 role: 'progressbar'
-            }, E, B), e.createElement('svg', {
-                className: m.svg,
-                viewBox: ''.concat(22, ' ').concat(22, ' ').concat(i, ' ').concat(i)
-            }, e.createElement('circle', {
-                className: (0, f.default)(m.circle, r && m.circleDisableShrink, {
-                    indeterminate: m.circleIndeterminate,
-                    static: m.circleStatic
-                } [A]),
-                style: C,
-                cx: i,
-                cy: i,
-                r: (i - w) / 2,
+            }, G, D), f.createElement('svg', {
+                className: o.svg,
+                viewBox: ''.concat(22, ' ').concat(22, ' ').concat(j, ' ').concat(j)
+            }, f.createElement('circle', {
+                className: (0, g.default)(o.circle, t && o.circleDisableShrink, {
+                    indeterminate: o.circleIndeterminate,
+                    static: o.circleStatic
+                } [C]),
+                style: E,
+                cx: j,
+                cy: j,
+                r: (j - y) / 2,
                 fill: 'none',
-                strokeWidth: w
+                strokeWidth: y
             })));
         }),
-        l = (0, g.default)(function(a) {
+        l = (0, h.default)(function(m) {
             return {
                 root: {
                     display: 'inline-block'
                 },
                 static: {
-                    transition: a.transitions.create('transform')
+                    transition: m.transitions.create('transform')
                 },
                 indeterminate: {
                     animation: '$circular-rotate 1.4s linear infinite'
                 },
                 colorPrimary: {
-                    color: a.palette.primary.main
+                    color: m.palette.primary.main
                 },
                 colorSecondary: {
-                    color: a.palette.secondary.main
+                    color: m.palette.secondary.main
                 },
                 svg: {
                     display: 'block'
@@ -330,7 +330,7 @@ b.register('0TiYh', function(v, w) {
                     stroke: 'currentColor'
                 },
                 circleStatic: {
-                    transition: a.transitions.create('stroke-dashoffset')
+                    transition: m.transitions.create('stroke-dashoffset')
                 },
                 circleIndeterminate: {
                     animation: '$circular-dash 1.4s ease-in-out infinite',
@@ -367,36 +367,36 @@ b.register('0TiYh', function(v, w) {
             name: 'MuiCircularProgress',
             flip: !1
         })(k);
-}), b.register('uhGu5', function(g, h) {
-    a(g.exports, 'useTest', function() {
-        return e;
+}), a.register('OVITM', function(b, c) {
+    _o(b.exports, 'useTest', function() {
+        return _f;
     });
-    var c = b('uPP4W'),
-        d = b('PjB0f');
-    const e = a => {
-        const [f, , g] = (0, d.useBoolean)(!0), [h, i] = c.useState(!1), j = () => {
-            i(!0), g();
-        }, k = () => {
-            i(!1), g();
+    var d = a('LEQ5w'),
+        e = a('PMl60');
+    const _f = _o => {
+        const [g, , h] = (0, e.useBoolean)(!0), [i, j] = d.useState(!1), k = () => {
+            j(!0), h();
+        }, l = () => {
+            j(!1), h();
         };
-        return c.useEffect(() => {
-            a(j, k);
+        return d.useEffect(() => {
+            _o(k, l);
         }, []), {
-            loading: f,
-            passed: h
+            loading: g,
+            passed: i
         };
     };
-}), b.register('kYNzL', function(f, k) {
-    a(f.exports, 'default', function() {
-        return m;
+}), a.register('NkjRq', function(b, c) {
+    _o(b.exports, 'default', function() {
+        return _n;
     });
-    var c = b('8kSQZ'),
-        d = b('lJnts');
-    b('uPP4W');
-    var e = b('iYEuk12'),
-        f = b('PjB0f'),
-        g = b('2WDH6');
-    const h = a => (0, c.jsx)('div', {
+    var d = a('0hzx+'),
+        e = a('lJnts');
+    a('LEQ5w');
+    var f = a('2HvvA11'),
+        g = a('PMl60'),
+        h = a('x8CoD');
+    const i = _o => (0, d.jsx)('div', {
             style: {
                 border: '2px solid',
                 fontFamily: 'monospace',
@@ -407,63 +407,63 @@ b.register('0TiYh', function(v, w) {
                 borderRadius: 2,
                 margin: '2px 4px'
             },
-            children: a.children
+            children: _o.children
         }),
-        i = {
+        j = {
             name: 'Firewall check on *.gimkitconnect.com',
-            whatItMeans: (0, c.jsx)('span', {
+            whatItMeans: (0, d.jsx)('span', {
                 children: 'You won\'t be able to connect to our game servers. This will prevent you from hosting or participating in games.'
             }),
-            howToFix: (0, c.jsxs)('span', {
+            howToFix: (0, d.jsxs)('span', {
                 children: [
                     'Unblock ',
-                    (0, c.jsx)(h, {
+                    (0, d.jsx)(i, {
                         children: 'https://*.gimkitconnect.com'
                     }),
                     '. Please note this is a wildcard. Gimkit needs access to every subdomain on',
                     ' ',
-                    (0, c.jsx)(h, {
+                    (0, d.jsx)(i, {
                         children: 'gimkitconnect.com'
                     }),
                     '.'
                 ]
             }),
-            test: (a, b) => {
-                (0, f.request)({
+            test: (_o, a) => {
+                (0, g.request)({
                     url: '/api/matchmaker/find-server-to-host-game',
                     method: 'post',
                     data: {
                         source: 'original'
                     },
-                    success: f => {
-                        f && f.url ? (0, f.request)({
-                            url: f.url + '/hello',
-                            success: () => a(),
-                            error: a => b()
-                        }) : b();
+                    success: b => {
+                        b && b.url ? (0, g.request)({
+                            url: b.url + '/hello',
+                            success: () => _o(),
+                            error: _o => a()
+                        }) : a();
                     },
-                    error: a => b()
+                    error: _o => a()
                 });
             }
         },
-        j = {
+        _k = {
             name: 'WebSocket connection to *.gimkitconnect.com',
             description: 'This test takes 60 seconds to complete.',
-            whatItMeans: (0, c.jsx)('span', {
+            whatItMeans: (0, d.jsx)('span', {
                 children: 'You won\'t be able to connect to our game servers. This will prevent you from hosting & participating in all game modes.'
             }),
-            howToFix: (0, c.jsxs)('span', {
+            howToFix: (0, d.jsxs)('span', {
                 children: [
                     'Unblock both of the following domains:',
-                    (0, c.jsxs)('ul', {
+                    (0, d.jsxs)('ul', {
                         children: [
-                            (0, c.jsx)('li', {
-                                children: (0, c.jsx)(h, {
+                            (0, d.jsx)('li', {
+                                children: (0, d.jsx)(i, {
                                     children: 'https://*.gimkitconnect.com'
                                 })
                             }),
-                            (0, c.jsx)('li', {
-                                children: (0, c.jsx)(h, {
+                            (0, d.jsx)('li', {
+                                children: (0, d.jsx)(i, {
                                     children: 'wss://*.gimkitconnect.com'
                                 })
                             })
@@ -471,209 +471,209 @@ b.register('0TiYh', function(v, w) {
                     }),
                     'Note that these are both wildcards. Gimkit needs access to every subdomain for both HTTP Requests & WebSockets on',
                     ' ',
-                    (0, c.jsx)(h, {
+                    (0, d.jsx)(i, {
                         children: 'gimkitconnect.com'
                     }),
                     ' to work properly.',
-                    (0, c.jsx)('br', {}),
+                    (0, d.jsx)('br', {}),
                     ' ',
-                    (0, c.jsx)('br', {}),
+                    (0, d.jsx)('br', {}),
                     'If the firewall check test below passed, this is most likely an issue with your school\'s proxy network. Gimkit requires secure Websockets, which can cause issues with some proxy servers. You may need to allow',
                     ' ',
-                    (0, c.jsx)(h, {
+                    (0, d.jsx)(i, {
                         children: '*.gimkitconnect.com'
                     }),
                     ' in your proxy\u2019s security settings. SSL is used to encrypt data between devices and servers. Networks that monitor SSL activity sometimes replace our certificates with those of the monitoring service. This can cause authentication errors.',
                     ' ',
-                    (0, c.jsx)(h, {
+                    (0, d.jsx)(i, {
                         children: '*.gimkitconnect.com'
                     }),
                     'may need to bypass network monitoring.'
                 ]
             }),
-            test: (a, b) => {
-                (0, f.request)({
+            test: (_o, a) => {
+                (0, g.request)({
                     url: '/api/matchmaker/find-server-to-host-game',
                     method: 'post',
                     data: {
                         source: 'map'
                     },
-                    success: f => {
-                        if (f && f.url) {
-                            new(0, d.Client)(f.url.replace('http', 'ws')).create('ConnectionTest').then(f => {
-                                let k = !1;
+                    success: b => {
+                        if (b && b.url) {
+                            new(0, e.Client)(b.url.replace('http', 'ws')).create('ConnectionTest').then(b => {
+                                let l = !1;
                                 setTimeout(() => {
-                                    k || (k = !0, a());
-                                }, 55000), f.onLeave(() => {
-                                    k || (k = !0, b());
-                                }), f.onError(() => {
-                                    k || (k = !0, b());
+                                    l || (l = !0, _o());
+                                }, 55000), b.onLeave(() => {
+                                    l || (l = !0, a());
+                                }), b.onError(() => {
+                                    l || (l = !0, a());
                                 });
-                            }).catch(a => {
-                                b();
+                            }).catch(_o => {
+                                a();
                             });
                         } else
-                            b();
+                            a();
                     },
-                    error: a => b()
+                    error: _o => a()
                 });
             }
         },
-        k = {
+        l = {
             name: 'Firewall check on media.gimkit.com',
-            whatItMeans: (0, c.jsx)('span', {
+            whatItMeans: (0, d.jsx)('span', {
                 children: 'You won\'t be able to view uploaded images & audio.'
             }),
-            howToFix: (0, c.jsxs)('span', {
+            howToFix: (0, d.jsxs)('span', {
                 children: [
                     'Unblock ',
-                    (0, c.jsx)(h, {
+                    (0, d.jsx)(i, {
                         children: 'media.gimkit.com'
                     }),
                     '.'
                 ]
             }),
-            test: (a, b) => {
-                (0, f.request)({
-                    url: (0, g.getCloudinaryUrl)('https://res.cloudinary.com/gimkit-production/image/upload/v1574562821/btwjkzsjb3vvd5nroxi9.png'),
-                    success: a,
-                    error: b
+            test: (_o, a) => {
+                (0, g.request)({
+                    url: (0, h.getCloudinaryUrl)('https://res.cloudinary.com/gimkit-production/image/upload/v1574562821/btwjkzsjb3vvd5nroxi9.png'),
+                    success: _o,
+                    error: a
                 });
             }
         },
-        l = {
+        m = {
             name: 'Firewall check on unsplash.com',
-            whatItMeans: (0, c.jsx)('span', {
+            whatItMeans: (0, d.jsx)('span', {
                 children: 'You won\'t be able to view cover photos for kits.'
             }),
-            howToFix: (0, c.jsxs)('span', {
+            howToFix: (0, d.jsxs)('span', {
                 children: [
                     'Unblock ',
-                    (0, c.jsx)(h, {
+                    (0, d.jsx)(i, {
                         children: 'unsplash.com'
                     }),
                     '.'
                 ]
             }),
-            test: (a, b) => {
-                (0, f.request)({
+            test: (_o, a) => {
+                (0, g.request)({
                     url: 'https://images.unsplash.com/photo-1574539299747-c0dcef95d2ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80',
-                    success: a,
-                    error: b
+                    success: _o,
+                    error: a
                 });
             }
         };
-    var m = [
+    var _n = [
+        _k,
         j,
-        i,
-        k,
+        l,
         {
             name: 'WebGL support',
-            whatItMeans: (0, c.jsx)('span', {
+            whatItMeans: (0, d.jsx)('span', {
                 children: 'You will not be able to play/host 2D game modes'
             }),
-            howToFix: (0, c.jsxs)('span', {
+            howToFix: (0, d.jsxs)('span', {
                 children: [
                     '2D game modes utilize 2D graphics. To make this work, we use use a technology called WebGL.',
-                    (0, c.jsx)('br', {}),
+                    (0, d.jsx)('br', {}),
                     ' ',
-                    (0, c.jsx)('br', {}),
+                    (0, d.jsx)('br', {}),
                     'This test failing most likely means you have WebGL disabled for your browser. Follow the steps in this article to enable WebGL for your browser:',
                     ' ',
-                    (0, c.jsx)(e.default, {
+                    (0, d.jsx)(f.default, {
                         to: 'https://help.gimkit.com/en/article/how-to-enable-webgl-1wk7fgn',
                         external: !0,
                         children: 'https://help.gimkit.com/en/article/how-to-enable-webgl-1wk7fgn'
                     })
                 ]
             }),
-            test: (a, b) => {
+            test: (_o, a) => {
                 (() => {
                     try {
-                        const n = document.createElement('canvas');
-                        return !(!window.WebGLRenderingContext || !n.getContext('webgl') && !n.getContext('experimental-webgl'));
-                    } catch (a) {
+                        const _o = document.createElement('canvas');
+                        return !(!window.WebGLRenderingContext || !_o.getContext('webgl') && !_o.getContext('experimental-webgl'));
+                    } catch (e) {
                         return !1;
                     }
-                })() ? a(): b();
+                })() ? e(): a();
             }
         },
-        l
+        m
     ];
-}), b.register('iYEuk12', function(f, c) {
-    a(f.exports, 'default', function() {
-        return e;
+}), a.register('2HvvA11', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _f;
     });
-    var c = b('8kSQZ'),
-        d = b('KzqIz');
-    b('uPP4W');
-    var e = a => a.external || !a.to ? (0, c.jsx)('a', {
-        href: a.to,
-        tabIndex: Number(a.tabIndex || '0'),
-        onClick: a.onClick,
-        onKeyPress: b => {
-            a.onClick && 'Enter' === b.key && (b.preventDefault(), a.onClick());
+    var d = a('0hzx+'),
+        e = a('wYGc3');
+    a('LEQ5w');
+    var _f = e => e.external || !e.to ? (0, d.jsx)('a', {
+        href: e.to,
+        tabIndex: Number(e.tabIndex || '0'),
+        onClick: e.onClick,
+        onKeyPress: a => {
+            e.onClick && 'Enter' === a.key && (a.preventDefault(), e.onClick());
         },
-        className: a.className,
-        target: a.target,
-        style: a.style,
-        children: a.children
-    }) : (0, c.jsx)(d.Link, {
-        to: a.to,
-        tabIndex: Number(a.tabIndex || '0'),
-        onClick: a.onClick,
-        className: a.className,
-        target: a.target,
-        style: a.style,
-        children: a.children
+        className: e.className,
+        target: e.target,
+        style: e.style,
+        children: e.children
+    }) : (0, d.jsx)(e.Link, {
+        to: e.to,
+        tabIndex: Number(e.tabIndex || '0'),
+        onClick: e.onClick,
+        className: e.className,
+        target: e.target,
+        style: e.style,
+        children: e.children
     });
-}), b.register('2WDH6', function(b, f) {
-    a(b.exports, 'getCloudinaryUrl', function() {
-        return c;
+}), a.register('x8CoD', function(b, c) {
+    e(b.exports, 'getCloudinaryUrl', function() {
+        return _d;
     });
-    const c = a => {
-            const d = d(a);
-            return d ? a.includes('/video/upload') ? `https://${ e }/video/upload/${ d }` : `https://${ e }/image/upload/f_auto,fl_lossy,q_auto/${ d }` : a;
+    const _d = e => {
+            const e = _e(e);
+            return e ? e.includes('/video/upload') ? `https://${ _f }/video/upload/${ e }` : `https://${ _f }/image/upload/f_auto,fl_lossy,q_auto/${ e }` : e;
         },
-        d = a => {
-            if (!h.some(b => a.includes(b)))
+        _e = e => {
+            if (!_i.some(b => e.includes(b)))
                 return null;
-            if (a.includes(f) && !a.includes(`/${ g }/`))
+            if (e.includes(_g) && !e.includes(`/${ _h }/`))
                 return null;
-            const e = a.split('/');
-            if (!e || !e.length || e.length < 2)
+            const f = e.split('/');
+            if (!f || !f.length || f.length < 2)
                 return null;
-            const f = e[e.length - 2],
-                g = e[e.length - 1];
-            return f && g && f.startsWith('v') ? `${ f }/${ g }` : null;
+            const g = f[f.length - 2],
+                h = f[f.length - 1];
+            return g && h && g.startsWith('v') ? `${ g }/${ h }` : null;
         },
-        e = 'media.gimkit.com',
-        f = 'res.cloudinary.com',
-        g = 'gimkit-production',
-        h = [
-            e,
-            f
+        _f = 'media.gimkit.com',
+        _g = 'res.cloudinary.com',
+        _h = 'gimkit-production',
+        _i = [
+            _f,
+            _g
         ];
-}), b.register('FfkIK1', function(s, o) {
-    a(s.exports, 'default', function() {
-        return g;
+}), a.register('7s5R80', function(b, c) {
+    e(b.exports, 'default', function() {
+        return _h;
     });
-    var c = b('8kSQZ');
-    b('uPP4W');
-    var d = b('h99Nu'),
-        e = b('lmfrI');
-    let f;
-    var g = a => (0, c.jsx)(h, {
-        onClick: a.onClick,
-        className: a.className,
-        style: a.style,
-        children: a.children
+    var d = a('0hzx+');
+    a('LEQ5w');
+    var e = a('Axq+p'),
+        f = a('sHRDd');
+    let g;
+    var _h = e => (0, d.jsx)(_i, {
+        onClick: e.onClick,
+        className: e.className,
+        style: e.style,
+        children: e.children
     });
-    const h = d.default.div(f || (f = (a => a)`
+    const _i = e.default.div(g || (g = (e => e)`
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1),
     0 10px 30px #f3ece8;
   border-radius: 0.2em 0.2em 0 0;
   background: ${ 0 };
   padding: 20px;
-`), e.default.White);
+`), f.default.White);
 });
