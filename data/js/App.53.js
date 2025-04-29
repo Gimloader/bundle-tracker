@@ -11288,16 +11288,16 @@ b.register('2RTaW', function(c, d) {
     });
     var _e = b('hxEiv'),
         f = b('fywoC');
-    const g = f.lazy(() => b('h3n1W'));
+    const g = f.lazy(() => b('gcg11'));
     var _h = c => (0, _e.jsx)(f.Suspense, {
         fallback: c.fallback || null,
         children: (0, _e.jsx)(g, {
             latex: c.latex
         })
     });
-}), b.register('h3n1W', function(c, _d) {
+}), b.register('gcg11', function(c, _d) {
     c.exports = Promise.all([
-        import('./' + b('ihc6Q').resolve('8pe9D')),
+        import('./' + b('ihc6Q').resolve('emcKB')),
         import('./' + b('ihc6Q').resolve('5OCdz'))
     ]).then(() => b('9YSp3'));
 }), b.register('f9d7r', function(c, d) {

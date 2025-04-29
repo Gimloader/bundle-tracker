@@ -612,7 +612,7 @@ a.register('6vkJ5', function(b, c) {
     _h(b.exports, 'FetchDeviceName', function() {
         return _g;
     });
-    var d = a('EqyfB'),
+    var d = a('cPBfb'),
         e = a('bV9vv'),
         f = a('iWivW');
     const _g = b => {

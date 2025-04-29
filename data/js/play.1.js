@@ -235,7 +235,7 @@ a.register('W0sKd', function(b, c) {
         return _h;
     });
     var d = a('csYze'),
-        e = a('4iV4e'),
+        e = a('fe6E3'),
         f = a('YuT/D');
     class g {
         get activePowerups() {
@@ -261,7 +261,7 @@ a.register('W0sKd', function(b, c) {
     var d = a('1bFPu'),
         e = a('csYze'),
         f = a('b3ci8'),
-        g = a('4iV4e'),
+        g = a('fe6E3'),
         h = a('YuT/D'),
         i = a('5drJf'),
         j = a('DmB5I');
@@ -3493,7 +3493,7 @@ a.register('W0sKd', function(b, c) {
     });
     var d = a('O4G7w'),
         e = a('eedQ8'),
-        f = a('4iV4e'),
+        f = a('fe6E3'),
         g = a('b3ci8'),
         h = a('U4qvK');
     const i = [
@@ -6515,7 +6515,7 @@ a.register('W0sKd', function(b, c) {
         D = a('c4qSi'),
         E = a('oN4l0'),
         F = a('YrjGX'),
-        G = a('4iV4e'),
+        G = a('fe6E3'),
         H = a('DmB5I');
     let I;
     const J = [h.default.questions],
@@ -16433,7 +16433,7 @@ url("${ 0 }");
         i = a('b3ci8'),
         j = a('4vC7/'),
         k = a('TgZEH'),
-        l = a('4iV4e'),
+        l = a('fe6E3'),
         m = a('2x11J'),
         n = a('oN4l0'),
         o = a('nrG5X');
@@ -16568,7 +16568,7 @@ url("${ 0 }");
         h = a('YuT/D'),
         i = a('QWK7i'),
         j = a('RYc37'),
-        k = a('4iV4e'),
+        k = a('fe6E3'),
         l = a('Axq+p');
     let m;
     const n = b => {
@@ -16839,7 +16839,7 @@ url("${ 0 }");
     });
     var d = a('0hzx+'),
         e = a('QWK7i'),
-        f = a('4iV4e');
+        f = a('fe6E3');
     a('LEQ5w');
     var g = a('Axq+p'),
         h = a('nrG5X'),
@@ -17088,7 +17088,7 @@ url("${ 0 }");
         m = a('CDjx8'),
         n = a('2x11J'),
         o = a('oN4l0'),
-        p = a('4iV4e');
+        p = a('fe6E3');
     let q, r, s, t, u, v = b => b;
     var _w = (0, n.observer)(b => {
         const {
@@ -17690,7 +17690,7 @@ url("${ 0 }");
         f = a('b3ci8'),
         g = a('oN4l0'),
         h = a('TwXYL'),
-        i = a('4iV4e'),
+        i = a('fe6E3'),
         j = a('2x11J'),
         k = a('LEQ5w'),
         l = a('Axq+p'),
@@ -17841,7 +17841,7 @@ url("${ 0 }");
         j = a('b3ci8'),
         k = a('b5kvC'),
         l = a('fmVdR'),
-        m = a('4iV4e'),
+        m = a('fe6E3'),
         n = a('2x11J'),
         o = a('oN4l0');
     a('KOgpv');
@@ -19055,22 +19055,22 @@ url("${ 0 }");
         name: 'down',
         theme: 'outlined'
     };
-}), a.register('dDoty', function(b, c) {
+}), a.register('JtnSG', function(b, c) {
     _c(b.exports, 'default', function() {
         return _g;
     });
     var d = a('0hzx+'),
         e = a('LEQ5w');
-    const f = e.lazy(() => a('l3sIa'));
+    const f = e.lazy(() => a('am6fB'));
     var _g = b => (0, d.jsx)(e.Suspense, {
         fallback: b.fallback || null,
         children: (0, d.jsx)(f, {
             latex: b.latex
         })
     });
-}), a.register('l3sIa', function(b, _c) {
+}), a.register('am6fB', function(b, _c) {
     b.exports = Promise.all([
-        import('./' + a('HmN9A').resolve('8pe9D')),
+        import('./' + a('HmN9A').resolve('emcKB')),
         import('./' + a('HmN9A').resolve('5OCdz'))
     ]).then(() => a('vZVkZ'));
 }), a.register('gk6FN', function(b, c) {

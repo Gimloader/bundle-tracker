@@ -212,7 +212,7 @@ a.register('GkEgD', function(b, c) {
         h = a('iWivW'),
         i = a('0rIMQ'),
         j = a('Wo5Au'),
-        k = a('EqyfB'),
+        k = a('cPBfb'),
         l = a('hp1yb'),
         m = a('BPqXJ'),
         n = a('D5xLI'),
@@ -354,7 +354,7 @@ a.register('GkEgD', function(b, c) {
     _j(b.exports, 'GetDeviceOptionMessage', function() {
         return _i;
     });
-    var d = a('EqyfB'),
+    var d = a('cPBfb'),
         e = a('ttkWv'),
         f = a('AvtVx'),
         g = a('bzU3s'),
@@ -458,7 +458,7 @@ a.register('GkEgD', function(b, c) {
     _h(b.exports, 'FetchDeviceName', function() {
         return _g;
     });
-    var d = a('EqyfB'),
+    var d = a('cPBfb'),
         e = a('bV9vv'),
         f = a('iWivW');
     const _g = b => {

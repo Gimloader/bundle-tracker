@@ -120,7 +120,7 @@ a.register('wXYDn', function(b, c) {
     }), t(b.exports, 'default', function() {
         return _g;
     });
-    var d = a('/oq/k');
+    var d = a('ARAVZ');
     const e = [],
         _f = t => e.includes(t);
     var _g = t => {

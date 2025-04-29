@@ -149,7 +149,7 @@ a.register('CisNe', function(b, c) {
         r = a('iWivW'),
         s = a('mQCZt'),
         t = a('11nl3'),
-        u = a('EqyfB'),
+        u = a('cPBfb'),
         v = a('O3NOb'),
         w = a('qazBk');
     let x, y, z, A, B = b => b;
@@ -315,7 +315,7 @@ a.register('CisNe', function(b, c) {
     _h(b.exports, 'FetchDeviceName', function() {
         return _g;
     });
-    var d = a('EqyfB'),
+    var d = a('cPBfb'),
         e = a('bV9vv'),
         f = a('iWivW');
     const _g = b => {

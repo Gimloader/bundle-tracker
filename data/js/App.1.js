@@ -968,7 +968,7 @@ b.register('pGTK3', function(c, d) {
         n = b('8WvaZ'),
         o = b('PFW10'),
         p = b('iWivW'),
-        q = b('EqyfB'),
+        q = b('cPBfb'),
         r = b('mQCZt'),
         s = b('11nl3'),
         t = b('rWzgW'),
@@ -1193,7 +1193,7 @@ b.register('pGTK3', function(c, d) {
         g = b('7up2I'),
         h = b('LEQ5w'),
         i = b('u9H7s'),
-        j = b('EqyfB'),
+        j = b('cPBfb'),
         k = b('ryWAy'),
         l = b('bHGrl'),
         m = b('PU1Nu'),
@@ -1278,7 +1278,7 @@ b.register('pGTK3', function(c, d) {
     e(_c.exports, 'default', function() {
         return _g;
     });
-    var e = b('EqyfB');
+    var e = b('cPBfb');
     const f = [
         e.default.placedSticker,
         e.default.droppedItem
@@ -1443,7 +1443,7 @@ b.register('pGTK3', function(c, d) {
     var e = b('0hzx+');
     b('LEQ5w');
     var f = b('Axq+p'),
-        g = b('EqyfB'),
+        g = b('cPBfb'),
         h = b('kBGmY'),
         i = b('qVhMZ'),
         j = b('bzU3s'),

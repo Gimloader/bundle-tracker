@@ -62,7 +62,7 @@ a.register('Tbj/R', function(b, c) {
     _i(b.exports, 'DialogueDevice_GetDialogueActions', function() {
         return _f;
     });
-    var d = a('EqyfB'),
+    var d = a('cPBfb'),
         e = a('D5xLI');
     const _f = _i => {
         const g = [],

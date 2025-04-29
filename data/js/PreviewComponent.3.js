@@ -20,7 +20,7 @@ a.register('w8Dki', function(b, c) {
     a('FJVE0');
     var f = a('o6L40'),
         g = a('x8CoD'),
-        h = a('dDoty'),
+        h = a('JtnSG'),
         i = a('X133d'),
         j = a('SqJXp'),
         k = a('T4lH8');
@@ -2222,7 +2222,7 @@ a.register('w8Dki', function(b, c) {
         j = a('G8w+m'),
         k = a('X133d'),
         l = a('x8CoD'),
-        m = a('dDoty');
+        m = a('JtnSG');
     let n, o, p, q, r = _C => _C;
     var _s = _m => {
         const [t, u] = _C(e).useState({

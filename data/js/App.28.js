@@ -661,7 +661,7 @@ a.register('lESQp', function(b, c) {
     _i(b.exports, 'FetchDeviceName', function() {
         return _g;
     });
-    var d = a('EqyfB'),
+    var d = a('cPBfb'),
         e = a('bV9vv'),
         f = a('iWivW');
     const _g = _i => {
@@ -728,7 +728,7 @@ a.register('lESQp', function(b, c) {
         h = a('0PFEY'),
         i = a('ZWpm0'),
         j = a('UyyDS'),
-        k = a('DiyEG'),
+        k = a('vWJSQ'),
         l = a('S6mEi'),
         m = a('Ct4sg');
     let n, o, p = _N => _N;
@@ -787,7 +787,7 @@ a.register('lESQp', function(b, c) {
   padding-top: 68px;
   position: relative;
 `));
-}), a.register('DiyEG', function(b, c) {
+}), a.register('vWJSQ', function(b, c) {
     _N(b.exports, 'default', function() {
         return _p;
     });
@@ -819,16 +819,16 @@ a.register('lESQp', function(b, c) {
                 size: 40,
                 className: 'maxWidth',
                 children: [
-                    z && A ? (0, d.jsx)(i.default, {
-                        codeGridOptions: x,
-                        deviceId: s,
-                        setIsCreatingNewGrid: u
-                    }) : null,
                     y ? (0, d.jsx)(j.default, {
                         deviceId: s,
                         codeGrids: w,
                         isCreatingNewGrid: t,
                         setIsNotCreatingNewGrid: v
+                    }) : null,
+                    z && A ? (0, d.jsx)(i.default, {
+                        codeGridOptions: x,
+                        deviceId: s,
+                        setIsCreatingNewGrid: u
                     }) : null
                 ]
             })
@@ -1187,7 +1187,7 @@ a.register('lESQp', function(b, c) {
         v = a('0PFEY'),
         w = a('fNsdX'),
         x = a('Q6qwr'),
-        y = a('4iV4e'),
+        y = a('fe6E3'),
         z = a('FK3Hv');
     let A, B, C = _i => _i;
     var _D = (0, o.observer)(_i => {
@@ -1514,7 +1514,7 @@ a.register('lESQp', function(b, c) {
         j = a('b5kvC'),
         k = a('PUGQx1'),
         l = a('BYRTX'),
-        m = a('EqyfB'),
+        m = a('cPBfb'),
         n = a('2x11J'),
         o = a('bHGrl'),
         p = a('mQCZt'),
@@ -1940,7 +1940,7 @@ a.register('lESQp', function(b, c) {
     }), _i(b.exports, 'default', function() {
         return _g;
     });
-    var d = a('/oq/k');
+    var d = a('ARAVZ');
     const e = [],
         _f = _i => e.includes(_i);
     var _g = _i => {

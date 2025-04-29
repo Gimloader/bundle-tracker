@@ -7,7 +7,7 @@ function a(b, c, d, e) {
     });
 }
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('c3kMV', function(b, c) {
+a.register('qZ7qT', function(b, c) {
     var d;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
@@ -24,8 +24,8 @@ a.register('c3kMV', function(b, c) {
         k = a('D6J6Y'),
         l = a('3mdhc');
     let m;
-    const n = f.lazy(() => a('DXwfr')),
-        o = f.lazy(() => a('Kue0q'));
+    const n = f.lazy(() => a('5Q/qq')),
+        o = f.lazy(() => a('40EZl'));
     var _p = () => {
         const [_q, r] = f.useState(!0), [s, t] = f.useState(), u = (0, j.getUrlVariable)('id');
         if (f.useEffect(() => {
@@ -384,7 +384,7 @@ a.register('c3kMV', function(b, c) {
     _b(b.exports, 'TutorialConsts', function() {
         return _e;
     });
-    var d = a('EqyfB');
+    var d = a('cPBfb');
     const _e = {
         mapId: 'tutorial0001',
         topDevices: [
@@ -410,12 +410,12 @@ a.register('c3kMV', function(b, c) {
             'Snowy Grass'
         ]
     };
-}), a.register('EqyfB', function(b, c) {
+}), a.register('cPBfb', function(b, c) {
     let d;
     var e;
     _b(b.exports, 'default', function() {
         return _f;
-    }), (e = d || (d = {})).luckyBlock = 'luckyBlock', e.chest = 'chest', e.jumpGranter = 'jumpGranter', e.teamColorTilesManager = 'teamColorTilesManager', e.changingBooth = 'changingBooth', e.popupListItem = 'popupListItem', e.gadgetModifier = 'gadgetModifier', e.zombieSpawnZone = 'zombieSpawnZone', e.zombieWaveDesigner = 'zombieWaveDesigner', e.zombieDesigner = 'zombieDesigner', e.zombieInvasion = 'zombieInvasion', e.codeUI = 'codeUI', e.damager = 'damager', e.cameraPoint = 'cameraPoint', e.blockingZone = 'blockingZone', e.character = 'character', e.classDesigner = 'classDesigner', e.backgroundTilesZone = 'backgroundTilesZone', e.proceduralTerrainZoneZoneInstruction = 'proceduralTerrainZoneZoneInstruction', e.proceduralTerrainZone = 'proceduralTerrainZone', e.dialogueAction = 'dialogueAction', e.dialogue = 'dialogue', e.voiceLine = 'voiceLine', e.scorebar = 'scorebar', e.outline = 'outline', e.ball = 'ball', e.damageBoost = 'damageBoost', e.checkpoint = 'checkpoint', e.playerPositionDetector = 'playerPositionDetector', e.itemImage = 'itemImage', e.mood = 'mood', e.playerAppearanceModifier = 'playerAppearanceModifier', e.waypoint = 'waypoint', e.flag = 'flag', e.checker = 'checker', e.trigger = 'trigger', e.counter = 'counter', e.teleporter = 'teleporter', e.itemGranter = 'itemGranter', e.characterSpawnPad = 'characterSpawnPad', e.textBillboard = 'textBillboard', e.prop = 'prop', e.barrier = 'barrier', e.button = 'button', e.droppedItem = 'droppedItem', e.property = 'property', e.mapOptions = 'mapOptions', e.teamSettings = 'teamSettings', e.imageBillboard = 'imageBillboard', e.gimkitLiveQuestion = 'gimkitLiveQuestion', e.ballZone = 'ballZone', e.zone = 'zone', e.captureFlagZone = 'captureFlagZone', e.textExplainer = 'textExplainer', e.relay = 'relay', e.cameraSize = 'cameraSize', e.music = 'music', e.speed = 'speed', e.soundEffect = 'soundEffect', e.inventoryItemManager = 'inventoryItemManager', e.guiDevice = 'guiDevice', e.lifecycle = 'lifecycle', e.endGame = 'endGame', e.countdown = 'countdown', e.shadow = 'shadow', e.characterProximity = 'characterProximity', e.repeater = 'repeater', e.vendingMachine = 'vendingMachine', e.teamSwitcher = 'teamSwitcher', e.notification = 'notification', e.endOfGameWidget = 'endOfGameWidget', e.respawn = 'respawn', e.xp = 'xp', e.assignmentCheckpoint = 'assignmentCheckpoint', e.assignmentContext = 'assignmentContext', e.placedSticker = 'placedSticker', e.wireRepeater = 'wireRepeater', e.movementMeter = 'movementMeter', e.craftingTable = 'craftingTable', e.craftingRecipe = 'craftingRecipe', e.startingInventory = 'startingInventory', e.healthGranter = 'healthGranter', e.sentry = 'sentry', e.knockoutManager = 'knockoutManager', e.laserBeam = 'laserBeam', e.laserBeamManager = 'laserBeamManager', e.cosmosModifier = 'cosmosModifier', e.passwordLock = 'passwordLock', e.itemSpawner = 'itemSpawner', e.tagZone = 'tagZone';
+    }), (e = d || (d = {})).scriptRunner = 'scriptRunner', e.rng = 'rng', e.editingAccessPoint = 'editingAccessPoint', e.luckyBlock = 'luckyBlock', e.chest = 'chest', e.jumpGranter = 'jumpGranter', e.teamColorTilesManager = 'teamColorTilesManager', e.changingBooth = 'changingBooth', e.popupListItem = 'popupListItem', e.gadgetModifier = 'gadgetModifier', e.zombieSpawnZone = 'zombieSpawnZone', e.zombieWaveDesigner = 'zombieWaveDesigner', e.zombieDesigner = 'zombieDesigner', e.zombieInvasion = 'zombieInvasion', e.codeUI = 'codeUI', e.damager = 'damager', e.cameraPoint = 'cameraPoint', e.blockingZone = 'blockingZone', e.character = 'character', e.classDesigner = 'classDesigner', e.backgroundTilesZone = 'backgroundTilesZone', e.proceduralTerrainZoneZoneInstruction = 'proceduralTerrainZoneZoneInstruction', e.proceduralTerrainZone = 'proceduralTerrainZone', e.dialogueAction = 'dialogueAction', e.dialogue = 'dialogue', e.voiceLine = 'voiceLine', e.scorebar = 'scorebar', e.outline = 'outline', e.ball = 'ball', e.damageBoost = 'damageBoost', e.checkpoint = 'checkpoint', e.playerPositionDetector = 'playerPositionDetector', e.itemImage = 'itemImage', e.mood = 'mood', e.playerAppearanceModifier = 'playerAppearanceModifier', e.waypoint = 'waypoint', e.flag = 'flag', e.checker = 'checker', e.trigger = 'trigger', e.counter = 'counter', e.teleporter = 'teleporter', e.itemGranter = 'itemGranter', e.characterSpawnPad = 'characterSpawnPad', e.textBillboard = 'textBillboard', e.prop = 'prop', e.barrier = 'barrier', e.button = 'button', e.droppedItem = 'droppedItem', e.property = 'property', e.mapOptions = 'mapOptions', e.teamSettings = 'teamSettings', e.imageBillboard = 'imageBillboard', e.gimkitLiveQuestion = 'gimkitLiveQuestion', e.ballZone = 'ballZone', e.zone = 'zone', e.captureFlagZone = 'captureFlagZone', e.textExplainer = 'textExplainer', e.relay = 'relay', e.cameraSize = 'cameraSize', e.music = 'music', e.speed = 'speed', e.soundEffect = 'soundEffect', e.inventoryItemManager = 'inventoryItemManager', e.guiDevice = 'guiDevice', e.lifecycle = 'lifecycle', e.endGame = 'endGame', e.countdown = 'countdown', e.shadow = 'shadow', e.characterProximity = 'characterProximity', e.repeater = 'repeater', e.vendingMachine = 'vendingMachine', e.teamSwitcher = 'teamSwitcher', e.notification = 'notification', e.endOfGameWidget = 'endOfGameWidget', e.respawn = 'respawn', e.xp = 'xp', e.assignmentCheckpoint = 'assignmentCheckpoint', e.assignmentContext = 'assignmentContext', e.placedSticker = 'placedSticker', e.wireRepeater = 'wireRepeater', e.movementMeter = 'movementMeter', e.craftingTable = 'craftingTable', e.craftingRecipe = 'craftingRecipe', e.startingInventory = 'startingInventory', e.healthGranter = 'healthGranter', e.sentry = 'sentry', e.knockoutManager = 'knockoutManager', e.laserBeam = 'laserBeam', e.laserBeamManager = 'laserBeamManager', e.cosmosModifier = 'cosmosModifier', e.passwordLock = 'passwordLock', e.itemSpawner = 'itemSpawner', e.tagZone = 'tagZone', e.achievement = 'achievement';
     var _f = d;
 }), a.register('3mdhc', function(b, c) {
     _b(b.exports, 'default', function() {
@@ -424,52 +424,52 @@ a.register('c3kMV', function(b, c) {
     var _d = {
         background: '#673ab7'
     };
-}), a.register('DXwfr', function(_b, c) {
+}), a.register('5Q/qq', function(_b, c) {
     _b.exports = Promise.all([
-        import('./' + a('HmN9A').resolve('7pIGN')),
-        import('./' + a('HmN9A').resolve('bmWmo')),
-        import('./' + a('HmN9A').resolve('cbvsE')),
-        import('./' + a('HmN9A').resolve('bRZSS')),
-        import('./' + a('HmN9A').resolve('9pAEb')),
-        import('./' + a('HmN9A').resolve('eIECe')),
-        import('./' + a('HmN9A').resolve('3J6Of')),
-        import('./' + a('HmN9A').resolve('kKpXS')),
-        import('./' + a('HmN9A').resolve('6o2QI')),
-        import('./' + a('HmN9A').resolve('3R3up')),
-        import('./' + a('HmN9A').resolve('lFChG')),
-        import('./' + a('HmN9A').resolve('jnRhB')),
-        import('./' + a('HmN9A').resolve('935wq')),
-        import('./' + a('HmN9A').resolve('cBIIp')),
-        import('./' + a('HmN9A').resolve('6T3MR')),
-        import('./' + a('HmN9A').resolve('jM8u1')),
-        import('./' + a('HmN9A').resolve('99xGA')),
+        import('./' + a('HmN9A').resolve('b7Bno')),
+        import('./' + a('HmN9A').resolve('GSLeG')),
+        import('./' + a('HmN9A').resolve('in5Zm')),
+        import('./' + a('HmN9A').resolve('emV63')),
+        import('./' + a('HmN9A').resolve('aepPt')),
+        import('./' + a('HmN9A').resolve('jScf8')),
+        import('./' + a('HmN9A').resolve('fdG0P')),
+        import('./' + a('HmN9A').resolve('h8E7U')),
+        import('./' + a('HmN9A').resolve('cvq1E')),
+        import('./' + a('HmN9A').resolve('NHzsh')),
+        import('./' + a('HmN9A').resolve('d6saV')),
+        import('./' + a('HmN9A').resolve('6fGMH')),
+        import('./' + a('HmN9A').resolve('5BLiG')),
+        import('./' + a('HmN9A').resolve('83uYn')),
+        import('./' + a('HmN9A').resolve('f3m2d')),
+        import('./' + a('HmN9A').resolve('k0ZSq')),
+        import('./' + a('HmN9A').resolve('ehnD9')),
         import('./' + a('HmN9A').resolve('6AbL8'))
     ]).then(() => a('LQ+V+'));
-}), a.register('Kue0q', function(b, c) {
+}), a.register('40EZl', function(b, c) {
     b.exports = Promise.all([
-        import('./' + a('HmN9A').resolve('7pIGN')),
-        import('./' + a('HmN9A').resolve('fFyZG')),
-        import('./' + a('HmN9A').resolve('kwPwx')),
-        import('./' + a('HmN9A').resolve('cbvsE')),
-        import('./' + a('HmN9A').resolve('bRZSS')),
-        import('./' + a('HmN9A').resolve('9pAEb')),
-        import('./' + a('HmN9A').resolve('eIECe')),
-        import('./' + a('HmN9A').resolve('gXDTI')),
-        import('./' + a('HmN9A').resolve('3J6Of')),
-        import('./' + a('HmN9A').resolve('kKpXS')),
-        import('./' + a('HmN9A').resolve('11biZ')),
-        import('./' + a('HmN9A').resolve('6o2QI')),
-        import('./' + a('HmN9A').resolve('3R3up')),
-        import('./' + a('HmN9A').resolve('5xMxo')),
-        import('./' + a('HmN9A').resolve('lFChG')),
-        import('./' + a('HmN9A').resolve('jnRhB')),
-        import('./' + a('HmN9A').resolve('8SWDc')),
-        import('./' + a('HmN9A').resolve('8Pt2G')),
-        import('./' + a('HmN9A').resolve('935wq')),
-        import('./' + a('HmN9A').resolve('cBIIp')),
-        import('./' + a('HmN9A').resolve('6T3MR')),
-        import('./' + a('HmN9A').resolve('jM8u1')),
-        import('./' + a('HmN9A').resolve('99xGA')),
+        import('./' + a('HmN9A').resolve('b7Bno')),
+        import('./' + a('HmN9A').resolve('2lWdt')),
+        import('./' + a('HmN9A').resolve('1gjsp')),
+        import('./' + a('HmN9A').resolve('in5Zm')),
+        import('./' + a('HmN9A').resolve('emV63')),
+        import('./' + a('HmN9A').resolve('aepPt')),
+        import('./' + a('HmN9A').resolve('jScf8')),
+        import('./' + a('HmN9A').resolve('hEmsF')),
+        import('./' + a('HmN9A').resolve('fdG0P')),
+        import('./' + a('HmN9A').resolve('h8E7U')),
+        import('./' + a('HmN9A').resolve('jZGfx')),
+        import('./' + a('HmN9A').resolve('cvq1E')),
+        import('./' + a('HmN9A').resolve('NHzsh')),
+        import('./' + a('HmN9A').resolve('2odS1')),
+        import('./' + a('HmN9A').resolve('d6saV')),
+        import('./' + a('HmN9A').resolve('6fGMH')),
+        import('./' + a('HmN9A').resolve('3AR7P')),
+        import('./' + a('HmN9A').resolve('jS4Db')),
+        import('./' + a('HmN9A').resolve('5BLiG')),
+        import('./' + a('HmN9A').resolve('83uYn')),
+        import('./' + a('HmN9A').resolve('f3m2d')),
+        import('./' + a('HmN9A').resolve('k0ZSq')),
+        import('./' + a('HmN9A').resolve('ehnD9')),
         import('./' + a('HmN9A').resolve('8PKLa'))
     ]).then(() => a('AQ78Z'));
 });

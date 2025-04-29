@@ -58,7 +58,7 @@ a.register('eedQ8', function(b, c) {
     });
     var d = a('0hzx+'),
         e = a('sHRDd'),
-        f = a('4iV4e'),
+        f = a('fe6E3'),
         g = a('LEQ5w'),
         h = a('JJQ1A');
     const i = () => window.devicePixelRatio || 1,

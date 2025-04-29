@@ -277,7 +277,7 @@ a.register('QVC+I', function(b, c) {
     }), _w(b.exports, 'FilterOutHiddenOptions', function() {
         return _i;
     });
-    var d = a('EqyfB'),
+    var d = a('cPBfb'),
         e = a('bV9vv');
     const f = [
             'shadowsEnabled',
@@ -467,7 +467,7 @@ a.register('QVC+I', function(b, c) {
     a('LEQ5w');
     var e = a('5/bn1'),
         f = a('DyY59'),
-        g = a('vNmNp'),
+        g = a('6u/UN'),
         h = a('L6na6'),
         i = a('Y3EZX'),
         j = a('c3dpp'),
@@ -639,7 +639,7 @@ a.register('QVC+I', function(b, c) {
             }, `option-${ _w.value }`))
         });
     };
-}), a.register('vNmNp', function(b, c) {
+}), a.register('6u/UN', function(b, c) {
     _w(b.exports, 'default', function() {
         return _q;
     });
@@ -764,7 +764,7 @@ a.register('QVC+I', function(b, c) {
             placeholder: s.placeholder || 'Enter a value...',
             filterOption: (_r, r) => {
                 var y;
-                return -1 !== (null === (y = r.name) || void 0 === y ? void 0 : y.toUpperCase().indexOf(_r.toUpperCase()));
+                return -1 !== (null === (y = r.value) || void 0 === y ? void 0 : y.toUpperCase().indexOf(_r.toUpperCase()));
             },
             maxLength: s.maxLength,
             disabled: _r.readOnly
@@ -883,7 +883,7 @@ a.register('QVC+I', function(b, c) {
         return _h;
     });
     var d = a('iWivW'),
-        e = a('EqyfB'),
+        e = a('cPBfb'),
         f = a('m8UaK'),
         g = a('iulrc');
     const _h = () => {

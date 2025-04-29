@@ -7,7 +7,7 @@ function a(b, c, d, e) {
     });
 }
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('lqRJQ', function(b, c) {
+a.register('hC+sP', function(b, c) {
     var d;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
@@ -75,9 +75,10 @@ a.register('lqRJQ', function(b, c) {
                         return;
                     this.item.view.alpha = 0, this.item.view.displayWidth = 0, this.item.view.displayHeight = 0, (0, y.isPlatformer)() && this.item.view.setOrigin(0.5);
                     const C = this.item.view.x,
-                        D = this.item.view.y;
-                    var E, F;
-                    if (this.item.view.x = null !== (E = this.options.originX) && void 0 !== E ? E : C, this.item.view.y = null !== (F = this.options.originY) && void 0 !== F ? F : D, this.tweens.add({
+                        D = this.item.view.y,
+                        E = this.options.originX ? this.options.originX : void 0,
+                        F = this.options.originY ? this.options.originY : void 0;
+                    if (this.item.view.x = null != E ? E : C, this.item.view.y = null != F ? F : D, this.tweens.add({
                             targets: this.item.view,
                             alpha: 1,
                             displayWidth: 60,

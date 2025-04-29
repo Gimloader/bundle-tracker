@@ -4983,7 +4983,7 @@ a.register('S+uwC', function(b, c) {
     var e = a('Axq+p'),
         f = a('sHRDd'),
         g = a('DKaq/'),
-        h = a('dDoty');
+        h = a('JtnSG');
     let i, j, k, l = _b => _b;
     const m = e.default.div(i || (i = l`
   display: flex;
@@ -5029,22 +5029,22 @@ a.register('S+uwC', function(b, c) {
             ]
         });
     };
-}), a.register('dDoty', function(b, c) {
+}), a.register('JtnSG', function(b, c) {
     _b(b.exports, 'default', function() {
         return _g;
     });
     var d = a('0hzx+'),
         e = a('LEQ5w');
-    const f = e.lazy(() => a('l3sIa'));
+    const f = e.lazy(() => a('am6fB'));
     var _g = _b => (0, d.jsx)(e.Suspense, {
         fallback: _b.fallback || null,
         children: (0, d.jsx)(f, {
             latex: _b.latex
         })
     });
-}), a.register('l3sIa', function(_b, c) {
+}), a.register('am6fB', function(_b, c) {
     _b.exports = Promise.all([
-        import('./' + a('HmN9A').resolve('8pe9D')),
+        import('./' + a('HmN9A').resolve('emcKB')),
         import('./' + a('HmN9A').resolve('5OCdz'))
     ]).then(() => a('vZVkZ'));
 }), a.register('Uj5m3', function(b, c) {
@@ -5269,7 +5269,7 @@ a.register('S+uwC', function(b, c) {
         k = a('+0Sy50'),
         l = a('INKb2'),
         m = a('0qmC91'),
-        n = a('4iV4e'),
+        n = a('fe6E3'),
         o = a('b5kvC'),
         p = a('wYGc3'),
         q = a('983xi'),
@@ -6540,7 +6540,7 @@ a.register('S+uwC', function(b, c) {
         t = a('CHk7m'),
         u = a('lQz8N'),
         v = a('2U+ud'),
-        w = a('4iV4e');
+        w = a('fe6E3');
     let x;
     const {
         TextArea: y
@@ -6788,7 +6788,7 @@ a.register('S+uwC', function(b, c) {
     }), _j(b.exports, 'flip', function() {
         return _i;
     });
-    var d = a('4iV4e');
+    var d = a('fe6E3');
     const e = _j => null != _j.match(/\.(jpeg|jpg|gif|png)$/),
         f = _j => _j.text ? _j.text : _j.image ? _j.image : '',
         _g = _j => _j.split('\n').map(_j => {
@@ -7296,7 +7296,7 @@ a.register('S+uwC', function(b, c) {
         o = a('+M5wm'),
         p = a('2x11J'),
         q = a('lQz8N'),
-        r = a('4iV4e'),
+        r = a('fe6E3'),
         s = a('Uj5m3'),
         t = a('e9jXO');
     const u = 'flashcard-entry-editor',
@@ -8101,7 +8101,7 @@ a.register('S+uwC', function(b, c) {
         k = a('LEQ5w'),
         l = a('Axq+p'),
         m = a('fu9ST'),
-        n = a('DKack');
+        n = a('hrXbm');
     let o, p, q, r, s = _u => _u;
     var _t = (0, j.observer)(() => {
         const [_u, v, w] = (0, h.useBoolean)(!1), {
@@ -8836,14 +8836,14 @@ a.register('S+uwC', function(b, c) {
                 }), e && e.focus();
             };
     };
-}), a.register('DKack', function(b, c) {
+}), a.register('hrXbm', function(b, c) {
     _b(b.exports, 'default', function() {
         return _h;
     });
     var d = a('0hzx+'),
         e = a('YRlpt'),
         f = a('LEQ5w');
-    const g = f.lazy(() => a('GN55P'));
+    const g = f.lazy(() => a('PTrw0'));
     var _h = _b => (0, d.jsx)(e.default, {
         open: _b.visible,
         onCancel: _b.close,
@@ -8859,9 +8859,9 @@ a.register('S+uwC', function(b, c) {
             })
         })
     });
-}), a.register('GN55P', function(_b, c) {
+}), a.register('PTrw0', function(_b, c) {
     _b.exports = Promise.all([
-        import('./' + a('HmN9A').resolve('7pIGN')),
+        import('./' + a('HmN9A').resolve('b7Bno')),
         import('./' + a('HmN9A').resolve('i8Pm1'))
     ]).then(() => a('qc42G'));
 }), a.register('DHkXI', function(b, c) {
@@ -11879,7 +11879,7 @@ a.register('S+uwC', function(b, c) {
         f = a('Kc6XZ23'),
         g = a('xi+Va0'),
         h = a('+HMq30'),
-        i = a('4iV4e'),
+        i = a('fe6E3'),
         j = a('rw8oD0');
     var _k = _q => {
         const l = e.useCallback(l => {
@@ -11955,7 +11955,7 @@ a.register('S+uwC', function(b, c) {
     _q(b.exports, 'default', function() {
         return _h;
     });
-    var d = a('4iV4e'),
+    var d = a('fe6E3'),
         e = a('QdGLB'),
         f = a('y4x7Q');
     const g = (_q, b) => {
@@ -12158,7 +12158,7 @@ a.register('S+uwC', function(b, c) {
         return _h;
     });
     var d = a('0hzx+'),
-        e = a('4iV4e');
+        e = a('fe6E3');
     a('LEQ5w');
     var f = a('3xvhx'),
         g = a('uQgEt0');
@@ -12210,7 +12210,7 @@ a.register('S+uwC', function(b, c) {
     _m(b.exports, 'default', function() {
         return _h;
     });
-    var d = a('4iV4e'),
+    var d = a('fe6E3'),
         e = a('QdGLB'),
         f = a('ED5Qu0'),
         g = a('OW0Rw');

@@ -30,7 +30,7 @@ a.register('c03PH', function(b, c) {
         m = a('BAMFo'),
         n = a('JqBF0'),
         o = a('Z15KO'),
-        p = a('Y0x2M'),
+        p = a('CqqzQ'),
         q = a('9tz3H'),
         r = a('+uQv7'),
         s = a('2Xvuf'),
@@ -223,7 +223,7 @@ a.register('c03PH', function(b, c) {
     _F(b.exports, 'FetchFlagOfColor', function() {
         return _f;
     });
-    var d = a('EqyfB'),
+    var d = a('cPBfb'),
         e = a('D5xLI');
     const _f = _F => {
         if (void 0 === _F.options.flagColor)
@@ -235,7 +235,7 @@ a.register('c03PH', function(b, c) {
     _F(b.exports, 'FetchBallOfId', function() {
         return _g;
     });
-    var d = a('EqyfB'),
+    var d = a('cPBfb'),
         e = a('D5xLI'),
         f = a('BYRTX');
     const _g = _F => {
@@ -301,7 +301,7 @@ a.register('c03PH', function(b, c) {
         f = a('WXyRn'),
         g = a('gZftk'),
         h = a('pvAUg'),
-        i = a('igbEM');
+        i = a('5dl5L');
     const _j = (_F, b, a) => {
         var k, l;
         const m = _F.scene.cameras.main.zoom / (0, d.default)(),
@@ -348,35 +348,37 @@ a.register('c03PH', function(b, c) {
             I = Math.round(G / H);
         e.nameText.view.setText(`${ e.options.name } (${ I }m)`);
     };
-}), a.register('igbEM', function(b, c) {
+}), a.register('5dl5L', function(b, c) {
     e(b.exports, 'UpdateCharacterPreview', function() {
-        return _f;
+        return _g;
     });
     var d = a('B7ZvS'),
-        e = a('2Xvuf');
-    const _f = e => {
-        var g;
-        const h = (0, d.default)(e.state.characterId);
-        var i;
-        if (!h)
-            return void(null === (i = e.icon) || void 0 === i || i.destroy());
-        const j = h.skin.skinId.replace('character_', '');
-        if (!j)
+        e = a('2Xvuf'),
+        f = a('JqBF0');
+    const _g = e => {
+        var h;
+        const i = (0, d.default)(e.state.characterId);
+        var j;
+        if (!i)
+            return void(null === (j = e.icon) || void 0 === j || j.destroy());
+        const k = i.skin.skinId.replace('character_', '');
+        if (!k)
             return;
-        const k = (0, e.default)(`characters/spine/normalized_preview/${ j }.png`);
-        (null === (g = e.icon) || void 0 === g ? void 0 : g.options.imageUrl) !== k && e.parts.add.sprite({
-            imageId: k,
-            imageUrl: k,
-            onReady: g => {
-                const l = (0, d.default)(e.state.characterId);
-                if (!l && l !== h)
+        const l = (0, e.default)(`characters/spine/normalized_preview/${ k }.png`);
+        (null === (h = e.icon) || void 0 === h ? void 0 : h.options.imageUrl) !== l && e.parts.add.sprite({
+            imageId: l,
+            imageUrl: l,
+            layerId: f.default.InGameUIElements,
+            onReady: h => {
+                const m = (0, d.default)(e.state.characterId);
+                if (!m && m !== i)
                     return;
-                const m = l.skin.skinId.replace('character_', '');
-                (m || m === j) && (e.icon && e.icon.destroy(), e.icon = g);
+                const n = m.skin.skinId.replace('character_', '');
+                (n || n === k) && (e.icon && e.icon.destroy(), e.icon = h);
             }
         });
     };
-}), a.register('Y0x2M', function(b, c) {
+}), a.register('CqqzQ', function(b, c) {
     e(b.exports, 'UpdateVisibility', function() {
         return _i;
     });
@@ -386,16 +388,16 @@ a.register('c03PH', function(b, c) {
         g = a('k2p3V'),
         h = a('tt0gv');
     const _i = e => {
-        var j, k;
-        let l = 1;
-        if ((0, e.InPreGamePhase)() && (l = 0), e.state.active || (l = 0), e.options.target !== f.WaypointTarget.player || e.state.characterId || (l = 0), e.options.target === f.WaypointTarget.player && e.state.characterId === (0, d.default)() && (l = 0), e.options.target === f.WaypointTarget.flag) {
-            const m = (0, g.FetchFlagOfColor)(e);
-            m ? (m.state.characterId === (0, d.default)() || m.lastCharacterIdToHoldFlag === (0, d.default)() && m.goingBackToBase || e.options.hideWhenFlagIsInBase && m.isInBase()) && (l = 0) : l = 0;
+        var j, k, l;
+        let m = 1;
+        if ((0, e.InPreGamePhase)() && (m = 0), e.state.active || (m = 0), e.options.target !== f.WaypointTarget.player || e.state.characterId || (m = 0), e.options.target === f.WaypointTarget.player && e.state.characterId === (0, d.default)() && (m = 0), e.options.target === f.WaypointTarget.flag) {
+            const n = (0, g.FetchFlagOfColor)(e);
+            n ? (n.state.characterId === (0, d.default)() || n.lastCharacterIdToHoldFlag === (0, d.default)() && n.goingBackToBase || e.options.hideWhenFlagIsInBase && n.isInBase()) && (m = 0) : m = 0;
         } else if (e.options.target === f.WaypointTarget.ball) {
-            const m = (0, h.FetchBallOfId)(e);
-            m && m.state.active || (l = 0);
+            const n = (0, h.FetchBallOfId)(e);
+            n && n.state.active || (m = 0);
         }
-        return (null === (j = e.pointer) || void 0 === j ? void 0 : j.view) && (e.pointer.view.alpha = l), (null === (k = e.nameText) || void 0 === k ? void 0 : k.view) && (e.nameText.view.alpha = l), l;
+        return (null === (j = e.pointer) || void 0 === j ? void 0 : j.view) && (e.pointer.view.alpha = m), (null === (k = e.nameText) || void 0 === k ? void 0 : k.view) && (e.nameText.view.alpha = m), (null === (l = e.icon) || void 0 === l ? void 0 : l.view) && (e.icon.view.alpha = m), m;
     };
 }), a.register('lFuxp', function(b, c) {
     e(b.exports, 'default', function() {
@@ -427,7 +429,7 @@ a.register('c03PH', function(b, c) {
         return _f;
     });
     var d = a('D5xLI'),
-        e = a('EqyfB');
+        e = a('cPBfb');
     const _f = e => {
         if (void 0 === e.options.flagColor)
             return;

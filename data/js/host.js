@@ -672,7 +672,7 @@ b.register('LQ+V+', function(c, d) {
         j = b('Li6uh'),
         k = b('UJt8+'),
         l = b('6yrsF'),
-        m = b('4iV4e'),
+        m = b('fe6E3'),
         n = b('INDrz'),
         o = b('xoHbD');
     const p = function() {
@@ -7363,7 +7363,7 @@ b.register('LQ+V+', function(c, d) {
         g = b('R6gfH'),
         h = b('Axq+p'),
         i = b('hEZVH'),
-        j = b('4iV4e'),
+        j = b('fe6E3'),
         k = b('OQm8Z'),
         l = b('3rMVL'),
         m = b('2x11J'),
@@ -7875,7 +7875,7 @@ b.register('LQ+V+', function(c, d) {
         g = b('Li6uh'),
         h = b('3rMVL'),
         i = b('sjRDa'),
-        j = b('4iV4e'),
+        j = b('fe6E3'),
         k = b('2x11J'),
         l = b('LEQ5w'),
         m = b('Axq+p'),
@@ -9908,7 +9908,7 @@ b.register('LQ+V+', function(c, d) {
         g = b('Lwb9P'),
         h = b('TwXYL'),
         i = b('gk6FN'),
-        j = b('4iV4e'),
+        j = b('fe6E3'),
         k = b('LEQ5w'),
         l = b('Axq+p'),
         m = b('WzNLj');
@@ -11969,7 +11969,7 @@ b.register('LQ+V+', function(c, d) {
         i = b('3rMVL'),
         j = b('hEZVH'),
         k = b('RMEzW'),
-        l = b('4iV4e'),
+        l = b('fe6E3'),
         m = b('2x11J'),
         n = b('LEQ5w'),
         o = b('Axq+p'),
@@ -13843,7 +13843,7 @@ b.register('LQ+V+', function(c, d) {
         o = b('2x11J'),
         p = b('sjRDa'),
         q = b('ApnZz'),
-        r = b('4iV4e'),
+        r = b('fe6E3'),
         s = b('Yv86d'),
         t = b('7Vnm/'),
         u = b('v88Hz');
@@ -16082,22 +16082,22 @@ b.register('LQ+V+', function(c, d) {
             _g,
             _h
         ];
-}), b.register('dDoty', function(c, d) {
+}), b.register('JtnSG', function(c, d) {
     _c(c.exports, 'default', function() {
         return _h;
     });
     var e = b('0hzx+'),
         f = b('LEQ5w');
-    const g = f.lazy(() => b('l3sIa'));
+    const g = f.lazy(() => b('am6fB'));
     var _h = _c => (0, e.jsx)(f.Suspense, {
         fallback: _c.fallback || null,
         children: (0, e.jsx)(g, {
             latex: _c.latex
         })
     });
-}), b.register('l3sIa', function(_c, d) {
+}), b.register('am6fB', function(_c, d) {
     _c.exports = Promise.all([
-        import('./' + b('HmN9A').resolve('8pe9D')),
+        import('./' + b('HmN9A').resolve('emcKB')),
         import('./' + b('HmN9A').resolve('5OCdz'))
     ]).then(() => b('vZVkZ'));
 }), b.register('CO72t', function(c, d) {

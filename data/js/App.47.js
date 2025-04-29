@@ -2413,22 +2413,22 @@ a.register('V9NHP', function(b, c) {
     _b(b.exports, 'default', function() {
         return _c;
     });
-}), a.register('dDoty', function(b, _c) {
+}), a.register('JtnSG', function(b, _c) {
     _b(b.exports, 'default', function() {
         return _g;
     });
     var d = a('0hzx+'),
         e = a('LEQ5w');
-    const f = e.lazy(() => a('l3sIa'));
+    const f = e.lazy(() => a('am6fB'));
     var _g = _b => (0, d.jsx)(e.Suspense, {
         fallback: _b.fallback || null,
         children: (0, d.jsx)(f, {
             latex: _b.latex
         })
     });
-}), a.register('l3sIa', function(_b, c) {
+}), a.register('am6fB', function(_b, c) {
     _b.exports = Promise.all([
-        import('./' + a('HmN9A').resolve('8pe9D')),
+        import('./' + a('HmN9A').resolve('emcKB')),
         import('./' + a('HmN9A').resolve('5OCdz'))
     ]).then(() => a('vZVkZ'));
 }), a.register('Rtfgy20', function(b, c) {

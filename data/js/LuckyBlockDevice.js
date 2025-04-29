@@ -7,13 +7,13 @@ function a(b, c, d, e) {
     });
 }
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('CbW7q', function(b, c) {
+a.register('Y/OME', function(b, c) {
     var d;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), _q(b.exports, 'default', function() {
-        return _q;
+    }), _v(b.exports, 'default', function() {
+        return _v;
     });
     var e = a('1bFPu'),
         f = a('I35Ay'),
@@ -22,47 +22,58 @@ a.register('CbW7q', function(b, c) {
         i = a('/pbxo'),
         j = a('9tz3H'),
         k = a('R2Ucl10'),
-        l = a('wduhO'),
-        m = a('IFO6W13');
-    let n;
-    var o;
-    (o = n || (n = {})).idleActive = 'idle-active', o.idleInactive = 'idle-inactive', o.explode = 'explode', o.reactivate = 'reactivate';
-    class p extends f.default {
-        constructor(_q) {
-            super(_q), (0, e.default)(this, 'use', () => {
-                this.playAnimation(n.explode);
+        l = a('gTBP2'),
+        m = a('IFO6W13'),
+        n = a('07pQo'),
+        o = a('2Xvuf'),
+        p = a('fe6E3'),
+        q = a('QEfvD'),
+        r = a('1f1YX');
+    let s;
+    var t;
+    (t = s || (s = {})).idleActive = 'idle-active', t.idleInactive = 'idle-inactive', t.explode = 'explode-short', t.reactivate = 'reactivate';
+    class u extends f.default {
+        constructor(_v) {
+            super(_v), (0, e.default)(this, 'use', () => {
+                this.cull.isInsideView && (0, n.playSound)({
+                    path: (0, o.default)(`devices/lucky_block/sound/impact${ (0, p.random)(1, 2) }.mp3`),
+                    volume: (0, r.getVolume)({
+                        volume: 0.7 * (0, q.GetVolumeFactorByCameraDistance)(this.x, this.y),
+                        type: r.SoundType.soundEffect
+                    })
+                }), this.playAnimation(s.explode);
             }), (0, e.default)(this, 'recharge', () => {
-                this.state.active && this.playAnimation(n.reactivate);
+                this.state.active && this.playAnimation(s.reactivate);
             }), (0, e.default)(this, 'activate', () => {
-                this.state.charged && this.playAnimation(n.idleActive);
+                this.state.charged && this.playAnimation(s.idleActive);
             }), (0, e.default)(this, 'deactivate', () => {
-                this.playAnimation(n.idleInactive);
-            }), (0, e.default)(this, 'playAnimation', _q => {
+                this.playAnimation(s.idleInactive);
+            }), (0, e.default)(this, 'playAnimation', _v => {
                 if (!this.spine.view)
                     return;
-                const r = _q === n.idleActive || _q === n.idleInactive;
-                this.spine.view.animationState.setAnimation(0, _q, r);
-            }), (0, e.default)(this, 'onStateChange', _q => {
-                'active' === _q && (this.state.active ? this.activate() : this.deactivate()), 'charged' === _q && !1 === this.prevState.charged && !0 === this.state.charged && this.recharge(), 'useCounter' === _q && this.state.useCounter > 0 && this.use();
+                const w = _v === s.idleActive || _v === s.idleInactive;
+                this.spine.view.animationState.setAnimation(0, _v, w);
+            }), (0, e.default)(this, 'onStateChange', _v => {
+                'active' === _v && (this.state.active ? this.activate() : this.deactivate()), 'charged' === _v && !1 === this.prevState.charged && !0 === this.state.charged && this.recharge(), 'useCounter' === _v && this.state.useCounter > 0 && this.use();
             }), (0, e.default)(this, 'setupView', () => {
-                const r = l.LuckyBlockDeviceConsts.boundingBox.width,
-                    s = l.LuckyBlockDeviceConsts.boundingBox.height;
+                const w = l.LuckyBlockDeviceConsts.boundingBox.width,
+                    x = l.LuckyBlockDeviceConsts.boundingBox.height;
                 this.spine = this.parts.add.spine({
                     ...g.SpineAsset,
                     spineViewId: this.id,
-                    y: (s / 2 - l.LuckyBlockDeviceConsts.spine.yCorrection) * this.options.scale,
-                    defaultAnimation: this.options.activeOnGameStart ? n.idleActive : n.idleInactive,
+                    y: (x / 2 - l.LuckyBlockDeviceConsts.spine.yCorrection) * this.options.scale,
+                    defaultAnimation: this.options.activeOnGameStart ? s.idleActive : s.idleInactive,
                     boundingBox: {
-                        left: -r / 2 * this.options.scale,
-                        right: r / 2 * this.options.scale,
-                        top: (-s + l.LuckyBlockDeviceConsts.spine.yCorrection) * this.options.scale,
+                        left: -w / 2 * this.options.scale,
+                        right: w / 2 * this.options.scale,
+                        top: (-x + l.LuckyBlockDeviceConsts.spine.yCorrection) * this.options.scale,
                         bottom: 2 * this.options.scale
                     },
-                    onAnimationComplete: r => {
-                        r === n.reactivate && this.playAnimation(n.idleActive), r === n.explode && this.state.active && 0 === this.options.rechargeAfterTime && this.playAnimation(n.reactivate);
+                    onAnimationComplete: w => {
+                        w === s.reactivate && this.playAnimation(s.idleActive), w === s.explode && this.state.active && 0 === this.options.rechargeAfterTime && this.playAnimation(s.reactivate);
                     },
-                    onReady: r => {
-                        r.view.setScale(l.LuckyBlockDeviceConsts.spine.baseScale * this.options.scale);
+                    onReady: w => {
+                        w.view.setScale(l.LuckyBlockDeviceConsts.spine.baseScale * this.options.scale);
                     }
                 });
             }), (0, e.default)(this, 'setupCollider', () => {
@@ -79,31 +90,35 @@ a.register('CbW7q', function(b, c) {
                     r1: l.LuckyBlockDeviceConsts.shadow.r1 * this.options.scale,
                     r2: l.LuckyBlockDeviceConsts.shadow.r2 * this.options.scale
                 });
+            }), (0, e.default)(this, 'setupInViewCallbacks', () => {
+                (0, i.InPreGamePhase)() || this.cull.setOnEnterViewCallback(() => {
+                    this.spine.setMixDuration(0), this.playAnimation(this.state.active && this.state.charged ? s.idleActive : s.idleInactive), this.spine.view.updatePose(0), this.spine.resetMixDuration();
+                });
             }), (0, e.default)(this, 'setupVisualEditing', () => {
                 if ((0, i.InGamePhase)() || (0, j.isPublishedVersion)())
                     return;
-                const r = (0, k.FetchOptionSchemaProperty)(this, 'scale'),
-                    s = l.LuckyBlockDeviceConsts.boundingBox.width,
-                    t = l.LuckyBlockDeviceConsts.boundingBox.height;
+                const w = (0, k.FetchOptionSchemaProperty)(this, 'scale'),
+                    x = l.LuckyBlockDeviceConsts.boundingBox.width,
+                    y = l.LuckyBlockDeviceConsts.boundingBox.height;
                 this.visualEditing.add.box({
                     keepRatio: !0,
                     rotable: !1,
-                    width: s * this.options.scale,
-                    height: t * this.options.scale,
-                    minWidth: s * r.min,
-                    maxWidth: s * r.max,
-                    minHeight: t * r.min,
-                    maxHeight: t * r.max,
-                    onChange: r => {
-                        (0, m.ReplaceVisualEditingPreview)(r.x, r.y, {
-                            scale: r.width / s
+                    width: x * this.options.scale,
+                    height: y * this.options.scale,
+                    minWidth: x * w.min,
+                    maxWidth: x * w.max,
+                    minHeight: y * w.min,
+                    maxHeight: y * w.max,
+                    onChange: w => {
+                        (0, m.ReplaceVisualEditingPreview)(w.x, w.y, {
+                            scale: w.width / x
                         });
                     }
                 });
-            }), this.layers.setDefaultLayer(h.default.DepthSortedCharactersAndDevices), this.setupView(), this.setupShadow(), this.setupCollider(), this.setupVisualEditing();
+            }), this.layers.setDefaultLayer(h.default.DepthSortedCharactersAndDevices), this.setupView(), this.setupShadow(), this.setupCollider(), this.setupVisualEditing(), this.setupInViewCallbacks(), this.cull.setMargin(50);
         }
     }
-    var _q = p;
+    var _v = u;
 }), a.register('zjQC8', function(b, c) {
     e(b.exports, 'SpineAsset', function() {
         return _e;
@@ -126,7 +141,7 @@ a.register('CbW7q', function(b, c) {
             step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
         };
     };
-}), a.register('wduhO', function(b, c) {
+}), a.register('gTBP2', function(b, c) {
     e(b.exports, 'LuckyBlockDeviceConsts', function() {
         return _d;
     });
@@ -149,8 +164,8 @@ a.register('CbW7q', function(b, c) {
         shadow: {
             x: 0,
             y: 35,
-            r1: 70,
-            r2: 60
+            r1: 75,
+            r2: 50
         }
     };
 }), a.register('IFO6W13', function(b, c) {
