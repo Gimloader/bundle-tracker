@@ -6,28 +6,28 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('IvDBZ', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('GLWjK', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _o(b.exports, 'default', function() {
-        return _o;
+    }), a(c.exports, 'default', function() {
+        return _p;
     });
-    var e = a('1bFPu'),
-        f = a('iWivW'),
-        g = a('2Xvuf'),
-        h = a('9tz3H'),
-        i = a('/pbxo'),
-        j = a('I35Ay'),
-        k = a('+uQv7'),
-        l = a('dTXti'),
-        m = a('irK9p');
-    class n extends j.default {
-        constructor(_o) {
-            if (super(_o), (0, e.default)(this, 'addToGUIDevicesList', () => {
-                    f.default.gui.guiSlots.some(_o => _o.id === this.id) || (f.default.gui.guiSlots.push({
+    var f = b('s/YA9'),
+        g = b('fI6of'),
+        h = b('UaUBz0'),
+        i = b('hycyg'),
+        j = b('UkCpC'),
+        k = b('ltxDW'),
+        l = b('73Aki'),
+        m = b('AHhkR'),
+        n = b('mODY9');
+    class o extends k.default {
+        constructor(p) {
+            if (super(p), (0, f.default)(this, 'addToGUIDevicesList', () => {
+                    g.default.gui.guiSlots.some(p => p.id === this.id) || (g.default.gui.guiSlots.push({
                         id: this.id,
                         position: this.options.position,
                         text: this.state.text || this.options.text,
@@ -36,27 +36,27 @@ a.register('IvDBZ', function(b, c) {
                         type: this.options.type,
                         priority: this.state.activationTime,
                         color: this.options.color
-                    }), f.default.gui.guiSlots.replace(f.default.gui.guiSlots.slice().sort((_o, a) => a.priority - _o.priority)), f.default.gui.guiSlotsChangeCounter += 1);
-                }), (0, e.default)(this, 'removeFromGUIDevicesList', () => {
-                    f.default.gui.guiSlots.replace(f.default.gui.guiSlots.filter(_o => _o.id !== this.id)), f.default.gui.guiSlotsChangeCounter += 1;
-                }), (0, e.default)(this, 'onTextUpdated', () => {
-                    const p = f.default.gui.guiSlots.find(p => p.id === this.id);
-                    p && (p.text = this.state.text || this.options.text, f.default.gui.guiSlotsChangeCounter += 1);
-                }), (0, e.default)(this, 'onStateChange', _o => {
-                    'activationTime' === _o && (this.state.activationTime ? this.addToGUIDevicesList() : this.removeFromGUIDevicesList()), 'text' === _o && this.onTextUpdated();
-                }), (0, e.default)(this, 'onDestroy', () => {
+                    }), g.default.gui.guiSlots.replace(g.default.gui.guiSlots.slice().sort((p, b) => b.priority - p.priority)), g.default.gui.guiSlotsChangeCounter += 1);
+                }), (0, f.default)(this, 'removeFromGUIDevicesList', () => {
+                    g.default.gui.guiSlots.replace(g.default.gui.guiSlots.filter(p => p.id !== this.id)), g.default.gui.guiSlotsChangeCounter += 1;
+                }), (0, f.default)(this, 'onTextUpdated', () => {
+                    const q = g.default.gui.guiSlots.find(q => q.id === this.id);
+                    q && (q.text = this.state.text || this.options.text, g.default.gui.guiSlotsChangeCounter += 1);
+                }), (0, f.default)(this, 'onStateChange', p => {
+                    'activationTime' === p && (this.state.activationTime ? this.addToGUIDevicesList() : this.removeFromGUIDevicesList()), 'text' === p && this.onTextUpdated();
+                }), (0, f.default)(this, 'onDestroy', () => {
                     this.removeFromGUIDevicesList();
-                }), (0, e.default)(this, 'buttonClicked', () => {
-                    this.sendToServerDevice(m.Messages.clicked);
-                }), (0, i.InPreGamePhase)() && (0, h.isSavedVersion)()) {
-                const p = l.default.Overlay;
-                new(0, k.default)({
+                }), (0, f.default)(this, 'buttonClicked', () => {
+                    this.sendToServerDevice(n.Messages.clicked);
+                }), (0, j.InPreGamePhase)() && (0, i.isSavedVersion)()) {
+                const q = m.default.Overlay;
+                new(0, l.default)({
                     device: this,
-                    baseColor: p.baseColor,
-                    boxColor: p.boxColor,
+                    baseColor: q.baseColor,
+                    boxColor: q.boxColor,
                     content: {
                         icon: {
-                            image: (0, g.default)('devices/gui/icon.png'),
+                            image: (0, h.default)('devices/gui/icon.png'),
                             scale: 0.9
                         }
                     }
@@ -65,12 +65,12 @@ a.register('IvDBZ', function(b, c) {
             this.state.activationTime && this.addToGUIDevicesList();
         }
     }
-    var _o = n;
-}), a.register('irK9p', function(b, c) {
-    t(b.exports, 'Messages', function() {
-        return _d;
+    var _p = o;
+}), b.register('mODY9', function(c, d) {
+    a(c.exports, 'Messages', function() {
+        return _e;
     });
-    const _d = {
+    const _e = {
         clicked: 'clicked'
     };
 });

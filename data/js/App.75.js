@@ -2,326 +2,326 @@ function a(b) {
     return b && b.__esModule ? b.default : b;
 }
 
-function a(b, c, d, e) {
-    Object.defineProperty(b, c, {
-        get: d,
-        set: e,
+function b(c, d, e, f) {
+    Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('3Bibb', function(b, c) {
-    _m(b.exports, 'default', function() {
-        return _o;
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('dXXu0', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _q;
     });
-    var d = a('LEQ5w'),
-        e = a('GaKrv'),
-        f = a('JrtKP'),
-        g = a('jem+E'),
-        h = a('1P5ls'),
-        i = a('B9b0M'),
-        j = a('a2lZD'),
-        k = a('6CIVV'),
-        l = a('ulE4q'),
-        m = a('cH8qQ');
+    var f = c('O0Kav'),
+        g = c('y7WZT'),
+        h = c('/U36/'),
+        i = c('H0LNV'),
+        j = c('R2nG3'),
+        k = c('oyXif'),
+        l = c('XTqzK'),
+        m = c('yruHD'),
+        n = c('P1KtI'),
+        o = c('NmQt6');
     const {
-        useToken: n
-    } = m.default;
-    var _o = _m => {
+        useToken: p
+    } = o.default;
+    var _q = b => {
         const {
-            value: p,
-            icon: q = '',
-            size: r = 160,
-            iconSize: s = 40,
-            color: t = '#000',
-            errorLevel: u = 'M',
-            status: v = 'active',
-            bordered: w = !0,
-            onRefresh: x,
-            style: y,
-            className: z,
-            rootClassName: A,
-            prefixCls: B
-        } = _m, {
-            getPrefixCls: C
-        } = (0, d.useContext)(h.ConfigContext), D = C('qrcode', B), [E, F] = (0, j.default)(D), {
-            token: G
-        } = n(), H = (0, d.useMemo)(() => {
-            const I = {
-                src: q,
+            value: r,
+            icon: s = '',
+            size: t = 160,
+            iconSize: u = 40,
+            color: v = '#000',
+            errorLevel: w = 'M',
+            status: x = 'active',
+            bordered: y = !0,
+            onRefresh: z,
+            style: A,
+            className: B,
+            rootClassName: C,
+            prefixCls: D
+        } = b, {
+            getPrefixCls: E
+        } = (0, f.useContext)(j.ConfigContext), F = E('qrcode', D), [G, H] = (0, l.default)(F), {
+            token: I
+        } = p(), J = (0, f.useMemo)(() => {
+            const K = {
+                src: s,
                 x: void 0,
                 y: void 0,
-                height: s,
-                width: s,
+                height: u,
+                width: u,
                 excavate: !0
             };
             return {
-                value: p,
-                size: r - 2 * (G.paddingSM + G.lineWidth),
-                level: u,
+                value: r,
+                size: t - 2 * (I.paddingSM + I.lineWidth),
+                level: w,
                 bgColor: 'transparent',
-                fgColor: t,
-                imageSettings: q ? I : void 0
+                fgColor: v,
+                imageSettings: s ? K : void 0
             };
         }, [
+            w,
+            v,
+            s,
             u,
             t,
-            q,
-            s,
-            r,
-            p
+            r
         ]);
-        if (!p)
+        if (!r)
             return null;
-        const I = _n(f)(D, z, A, F, {
-            [`${ D }-borderless`]: !w
+        const K = a(h)(F, B, C, H, {
+            [`${ F }-borderless`]: !y
         });
-        return E(_n(d).createElement(i.default, {
+        return G(a(f).createElement(k.default, {
             componentName: 'QRCode'
-        }, _m => _n(d).createElement('div', {
-            style: Object.assign(Object.assign({}, y), {
-                width: r,
-                height: r
+        }, b => a(f).createElement('div', {
+            style: Object.assign(Object.assign({}, A), {
+                width: t,
+                height: t
             }),
-            className: I
-        }, 'active' !== v && _n(d).createElement('div', {
-            className: `${ D }-mask`
-        }, 'loading' === v && _n(d).createElement(k.default, null), 'expired' === v && _n(d).createElement(_n(d).Fragment, null, _n(d).createElement('p', {
-            className: `${ D }-expired`
-        }, _m.expired), 'function' == typeof x && _n(d).createElement(l.default, {
+            className: K
+        }, 'active' !== x && a(f).createElement('div', {
+            className: `${ F }-mask`
+        }, 'loading' === x && a(f).createElement(m.default, null), 'expired' === x && a(f).createElement(a(f).Fragment, null, a(f).createElement('p', {
+            className: `${ F }-expired`
+        }, b.expired), 'function' == typeof z && a(f).createElement(n.default, {
             type: 'link',
-            icon: _n(d).createElement(g.default, null),
-            onClick: x
-        }, _m.refresh))), _n(d).createElement(e.QRCodeCanvas, Object.assign({}, H)))));
+            icon: a(f).createElement(i.default, null),
+            onClick: z
+        }, b.refresh))), a(f).createElement(g.QRCodeCanvas, Object.assign({}, J)))));
     };
-}), a.register('GaKrv', function(b, c) {
-    _m(b.exports, 'QRCodeCanvas', function() {
-        return _u;
+}), c.register('y7WZT', function(d, e) {
+    b(d.exports, 'QRCodeCanvas', function() {
+        return _z;
     });
-    var d, e = a('LEQ5w'),
-        f = Object.defineProperty,
-        g = Object.getOwnPropertySymbols,
-        h = Object.prototype.hasOwnProperty,
-        i = Object.prototype.propertyIsEnumerable,
-        j = (_n, _m, a) => _m in _n ? f(_n, _m, {
+    var f, g = c('O0Kav'),
+        h = Object.defineProperty,
+        i = Object.getOwnPropertySymbols,
+        j = Object.prototype.hasOwnProperty,
+        k = Object.prototype.propertyIsEnumerable,
+        l = (a, b, c) => b in a ? h(a, b, {
             enumerable: !0,
             configurable: !0,
             writable: !0,
-            value: a
-        }) : _n[_m] = a,
-        k = (_n, _m) => {
-            for (var l in _m || (_m = {}))
-                h.call(_m, l) && j(_n, l, _m[l]);
-            if (g)
-                for (var m of g(_m))
-                    i.call(_m, m) && j(_n, m, _m[m]);
-            return _n;
+            value: c
+        }) : a[b] = c,
+        m = (a, b) => {
+            for (var n in b || (b = {}))
+                j.call(b, n) && l(a, n, b[n]);
+            if (i)
+                for (var o of i(b))
+                    k.call(b, o) && l(a, o, b[o]);
+            return a;
         },
-        l = (_n, _m) => {
-            var m = {};
-            for (var n in _n)
-                h.call(_n, n) && _m.indexOf(n) < 0 && (m[n] = _n[n]);
-            if (null != _n && g)
-                for (var o of g(_n))
-                    _m.indexOf(o) < 0 && i.call(_n, o) && (m[o] = _n[o]);
-            return m;
+        n = (a, b) => {
+            var o = {};
+            for (var p in a)
+                j.call(a, p) && b.indexOf(p) < 0 && (o[p] = a[p]);
+            if (null != a && i)
+                for (var q of i(a))
+                    b.indexOf(q) < 0 && k.call(a, q) && (o[q] = a[q]);
+            return o;
         };
-    (_n => {
-        const _m = class {
-            static encodeText(n, o) {
-                const p = _n.QrSegment.makeSegments(n);
-                return _m.encodeSegments(p, o);
+    (a => {
+        const o = class {
+            static encodeText(p, q) {
+                const r = a.QrSegment.makeSegments(p);
+                return o.encodeSegments(r, q);
             }
-            static encodeBinary(n, o) {
-                const p = _n.QrSegment.makeBytes(n);
-                return _m.encodeSegments([p], o);
+            static encodeBinary(p, q) {
+                const r = a.QrSegment.makeBytes(p);
+                return o.encodeSegments([r], q);
             }
-            static encodeSegments(_n, o, p = 1, q = 40, r = -1, s = !0) {
-                if (!(_m.MIN_VERSION <= p && p <= q && q <= _m.MAX_VERSION) || r < -1 || r > 7)
+            static encodeSegments(p, q, r = 1, s = 40, t = -1, u = !0) {
+                if (!(o.MIN_VERSION <= r && r <= s && s <= o.MAX_VERSION) || t < -1 || t > 7)
                     throw new RangeError('Invalid value');
-                let t, u;
-                for (t = p;; t++) {
-                    const v = 8 * _m.getNumDataCodewords(t, o),
-                        w = f.getTotalBits(_n, t);
-                    if (w <= v) {
-                        u = w;
+                let v, w;
+                for (v = r;; v++) {
+                    const x = 8 * o.getNumDataCodewords(v, q),
+                        y = h.getTotalBits(p, v);
+                    if (y <= x) {
+                        w = y;
                         break;
                     }
-                    if (t >= q)
+                    if (v >= s)
                         throw new RangeError('Data too long');
                 }
-                for (const v of [
-                        _m.Ecc.MEDIUM,
-                        _m.Ecc.QUARTILE,
-                        _m.Ecc.HIGH
+                for (const x of [
+                        o.Ecc.MEDIUM,
+                        o.Ecc.QUARTILE,
+                        o.Ecc.HIGH
                     ])
-                    s && u <= 8 * _m.getNumDataCodewords(t, v) && (o = v);
-                let w = [];
-                for (const x of v) {
-                    b(x.mode.modeBits, 4, w), b(x.numChars, x.mode.numCharCountBits(t), w);
-                    for (const y of x.getData())
-                        w.push(y);
+                    u && w <= 8 * o.getNumDataCodewords(v, x) && (q = x);
+                let y = [];
+                for (const z of x) {
+                    d(z.mode.modeBits, 4, y), d(z.numChars, z.mode.numCharCountBits(v), y);
+                    for (const A of z.getData())
+                        y.push(A);
                 }
-                d(w.length == u);
-                const y = 8 * x.getNumDataCodewords(t, o);
-                d(w.length <= y), b(0, Math.min(4, y - w.length), w), b(0, (8 - w.length % 8) % 8, w), d(w.length % 8 == 0);
-                for (let z = 236; w.length < y; z ^= 253)
-                    b(z, 8, w);
-                let A = [];
-                for (; 8 * A.length < w.length;)
-                    A.push(0);
-                return w.forEach((z, x) => A[x >>> 3] |= z << 7 - (7 & x)), new x(t, o, A, r);
+                f(y.length == w);
+                const A = 8 * z.getNumDataCodewords(v, q);
+                f(y.length <= A), d(0, Math.min(4, A - y.length), y), d(0, (8 - y.length % 8) % 8, y), f(y.length % 8 == 0);
+                for (let B = 236; y.length < A; B ^= 253)
+                    d(B, 8, y);
+                let C = [];
+                for (; 8 * C.length < y.length;)
+                    C.push(0);
+                return y.forEach((B, z) => C[z >>> 3] |= B << 7 - (7 & z)), new z(v, q, C, t);
             }
-            getModule(n, o) {
-                return 0 <= n && n < this.size && 0 <= o && o < this.size && this.modules[o][n];
+            getModule(p, q) {
+                return 0 <= p && p < this.size && 0 <= q && q < this.size && this.modules[q][p];
             }
             getModules() {
                 return this.modules;
             }
             drawFunctionPatterns() {
-                for (let n = 0; n < this.size; n++)
-                    this.setFunctionModule(6, n, n % 2 == 0), this.setFunctionModule(n, 6, n % 2 == 0);
+                for (let p = 0; p < this.size; p++)
+                    this.setFunctionModule(6, p, p % 2 == 0), this.setFunctionModule(p, 6, p % 2 == 0);
                 this.drawFinderPattern(3, 3), this.drawFinderPattern(this.size - 4, 3), this.drawFinderPattern(3, this.size - 4);
-                const o = this.getAlignmentPatternPositions(),
-                    p = o.length;
-                for (let q = 0; q < p; q++)
-                    for (let r = 0; r < p; r++)
-                        0 == q && 0 == r || 0 == q && r == p - 1 || q == p - 1 && 0 == r || this.drawAlignmentPattern(o[q], o[r]);
+                const q = this.getAlignmentPatternPositions(),
+                    r = q.length;
+                for (let s = 0; s < r; s++)
+                    for (let t = 0; t < r; t++)
+                        0 == s && 0 == t || 0 == s && t == r - 1 || s == r - 1 && 0 == t || this.drawAlignmentPattern(q[s], q[t]);
                 this.drawFormatBits(0), this.drawVersion();
             }
-            drawFormatBits(n) {
-                const o = this.errorCorrectionLevel.formatBits << 3 | n;
-                let p = o;
-                for (let q = 0; q < 10; q++)
-                    p = p << 1 ^ 1335 * (p >>> 9);
-                const r = 21522 ^ (o << 10 | p);
-                d(r >>> 15 == 0);
-                for (let s = 0; s <= 5; s++)
-                    this.setFunctionModule(8, s, c(r, s));
-                this.setFunctionModule(8, 7, c(r, 6)), this.setFunctionModule(8, 8, c(r, 7)), this.setFunctionModule(7, 8, c(r, 8));
-                for (let t = 9; t < 15; t++)
-                    this.setFunctionModule(14 - t, 8, c(r, t));
-                for (let u = 0; u < 8; u++)
-                    this.setFunctionModule(this.size - 1 - u, 8, c(r, u));
-                for (let v = 8; v < 15; v++)
-                    this.setFunctionModule(8, this.size - 15 + v, c(r, v));
+            drawFormatBits(p) {
+                const q = this.errorCorrectionLevel.formatBits << 3 | p;
+                let r = q;
+                for (let s = 0; s < 10; s++)
+                    r = r << 1 ^ 1335 * (r >>> 9);
+                const t = 21522 ^ (q << 10 | r);
+                f(t >>> 15 == 0);
+                for (let u = 0; u <= 5; u++)
+                    this.setFunctionModule(8, u, e(t, u));
+                this.setFunctionModule(8, 7, e(t, 6)), this.setFunctionModule(8, 8, e(t, 7)), this.setFunctionModule(7, 8, e(t, 8));
+                for (let v = 9; v < 15; v++)
+                    this.setFunctionModule(14 - v, 8, e(t, v));
+                for (let w = 0; w < 8; w++)
+                    this.setFunctionModule(this.size - 1 - w, 8, e(t, w));
+                for (let x = 8; x < 15; x++)
+                    this.setFunctionModule(8, this.size - 15 + x, e(t, x));
                 this.setFunctionModule(8, this.size - 8, !0);
             }
             drawVersion() {
                 if (this.version < 7)
                     return;
-                let n = this.version;
-                for (let o = 0; o < 12; o++)
-                    n = n << 1 ^ 7973 * (n >>> 11);
-                const p = this.version << 12 | n;
-                d(p >>> 18 == 0);
-                for (let q = 0; q < 18; q++) {
-                    const r = c(p, q),
-                        s = this.size - 11 + q % 3,
-                        t = Math.floor(q / 3);
-                    this.setFunctionModule(s, t, r), this.setFunctionModule(t, s, r);
+                let p = this.version;
+                for (let q = 0; q < 12; q++)
+                    p = p << 1 ^ 7973 * (p >>> 11);
+                const r = this.version << 12 | p;
+                f(r >>> 18 == 0);
+                for (let s = 0; s < 18; s++) {
+                    const t = e(r, s),
+                        u = this.size - 11 + s % 3,
+                        v = Math.floor(s / 3);
+                    this.setFunctionModule(u, v, t), this.setFunctionModule(v, u, t);
                 }
             }
-            drawFinderPattern(n, o) {
-                for (let p = -4; p <= 4; p++)
-                    for (let q = -4; q <= 4; q++) {
-                        const r = Math.max(Math.abs(q), Math.abs(p)),
-                            s = n + q,
-                            t = o + p;
-                        0 <= s && s < this.size && 0 <= t && t < this.size && this.setFunctionModule(s, t, 2 != r && 4 != r);
+            drawFinderPattern(p, q) {
+                for (let r = -4; r <= 4; r++)
+                    for (let s = -4; s <= 4; s++) {
+                        const t = Math.max(Math.abs(s), Math.abs(r)),
+                            u = p + s,
+                            v = q + r;
+                        0 <= u && u < this.size && 0 <= v && v < this.size && this.setFunctionModule(u, v, 2 != t && 4 != t);
                     }
             }
-            drawAlignmentPattern(n, o) {
-                for (let p = -2; p <= 2; p++)
-                    for (let q = -2; q <= 2; q++)
-                        this.setFunctionModule(n + q, o + p, 1 != Math.max(Math.abs(q), Math.abs(p)));
+            drawAlignmentPattern(p, q) {
+                for (let r = -2; r <= 2; r++)
+                    for (let s = -2; s <= 2; s++)
+                        this.setFunctionModule(p + s, q + r, 1 != Math.max(Math.abs(s), Math.abs(r)));
             }
-            setFunctionModule(n, o, p) {
-                this.modules[o][n] = p, this.isFunction[o][n] = !0;
+            setFunctionModule(p, q, r) {
+                this.modules[q][p] = r, this.isFunction[q][p] = !0;
             }
-            addEccAndInterleave(n) {
-                const o = this.version,
-                    p = this.errorCorrectionLevel;
-                if (n.length != _m.getNumDataCodewords(o, p))
+            addEccAndInterleave(p) {
+                const q = this.version,
+                    r = this.errorCorrectionLevel;
+                if (p.length != o.getNumDataCodewords(q, r))
                     throw new RangeError('Invalid argument');
-                const q = _m.NUM_ERROR_CORRECTION_BLOCKS[p.ordinal][o],
-                    r = _m.ECC_CODEWORDS_PER_BLOCK[p.ordinal][o],
-                    s = Math.floor(_m.getNumRawDataModules(o) / 8),
-                    t = q - s % q,
-                    u = Math.floor(s / q);
-                let v = [];
-                const w = _m.reedSolomonComputeDivisor(r);
-                for (let x = 0, y = 0; x < q; x++) {
-                    let z = n.slice(y, y + u - r + (x < t ? 0 : 1));
-                    y += z.length;
-                    const A = _m.reedSolomonComputeRemainder(z, w);
-                    x < t && z.push(0), v.push(z.concat(A));
+                const s = o.NUM_ERROR_CORRECTION_BLOCKS[r.ordinal][q],
+                    t = o.ECC_CODEWORDS_PER_BLOCK[r.ordinal][q],
+                    u = Math.floor(o.getNumRawDataModules(q) / 8),
+                    v = s - u % s,
+                    w = Math.floor(u / s);
+                let x = [];
+                const y = o.reedSolomonComputeDivisor(t);
+                for (let z = 0, A = 0; z < s; z++) {
+                    let B = p.slice(A, A + w - t + (z < v ? 0 : 1));
+                    A += B.length;
+                    const C = o.reedSolomonComputeRemainder(B, y);
+                    z < v && B.push(0), x.push(B.concat(C));
                 }
-                let z = [];
-                for (let A = 0; A < v[0].length; A++)
-                    v.forEach((_m, x) => {
-                        (A != u - r || x >= t) && z.push(_m[A]);
+                let B = [];
+                for (let C = 0; C < x[0].length; C++)
+                    x.forEach((o, z) => {
+                        (C != w - t || z >= v) && B.push(o[C]);
                     });
-                return d(z.length == s), z;
+                return f(B.length == u), B;
             }
-            drawCodewords(n) {
-                if (n.length != Math.floor(_m.getNumRawDataModules(this.version) / 8))
+            drawCodewords(p) {
+                if (p.length != Math.floor(o.getNumRawDataModules(this.version) / 8))
                     throw new RangeError('Invalid argument');
-                let o = 0;
-                for (let p = this.size - 1; p >= 1; p -= 2) {
-                    6 == p && (p = 5);
-                    for (let q = 0; q < this.size; q++)
-                        for (let r = 0; r < 2; r++) {
-                            const s = p - r,
-                                t = 0 == (p + 1 & 2) ? this.size - 1 - q : q;
-                            !this.isFunction[t][s] && o < 8 * n.length && (this.modules[t][s] = c(n[o >>> 3], 7 - (7 & o)), o++);
+                let q = 0;
+                for (let r = this.size - 1; r >= 1; r -= 2) {
+                    6 == r && (r = 5);
+                    for (let s = 0; s < this.size; s++)
+                        for (let t = 0; t < 2; t++) {
+                            const u = r - t,
+                                v = 0 == (r + 1 & 2) ? this.size - 1 - s : s;
+                            !this.isFunction[v][u] && q < 8 * p.length && (this.modules[v][u] = e(p[q >>> 3], 7 - (7 & q)), q++);
                         }
                 }
-                d(o == 8 * n.length);
+                f(q == 8 * p.length);
             }
-            applyMask(n) {
-                if (n < 0 || n > 7)
+            applyMask(p) {
+                if (p < 0 || p > 7)
                     throw new RangeError('Mask value out of range');
-                for (let o = 0; o < this.size; o++)
-                    for (let p = 0; p < this.size; p++) {
-                        let q;
-                        switch (n) {
+                for (let q = 0; q < this.size; q++)
+                    for (let r = 0; r < this.size; r++) {
+                        let s;
+                        switch (p) {
                             case 0:
-                                q = (p + o) % 2 == 0;
+                                s = (r + q) % 2 == 0;
                                 break;
                             case 1:
-                                q = o % 2 == 0;
+                                s = q % 2 == 0;
                                 break;
                             case 2:
-                                q = p % 3 == 0;
+                                s = r % 3 == 0;
                                 break;
                             case 3:
-                                q = (p + o) % 3 == 0;
+                                s = (r + q) % 3 == 0;
                                 break;
                             case 4:
-                                q = (Math.floor(p / 3) + Math.floor(o / 2)) % 2 == 0;
+                                s = (Math.floor(r / 3) + Math.floor(q / 2)) % 2 == 0;
                                 break;
                             case 5:
-                                q = p * o % 2 + p * o % 3 == 0;
+                                s = r * q % 2 + r * q % 3 == 0;
                                 break;
                             case 6:
-                                q = (p * o % 2 + p * o % 3) % 2 == 0;
+                                s = (r * q % 2 + r * q % 3) % 2 == 0;
                                 break;
                             case 7:
-                                q = ((p + o) % 2 + p * o % 3) % 2 == 0;
+                                s = ((r + q) % 2 + r * q % 3) % 2 == 0;
                                 break;
                             default:
                                 throw new Error('Unreachable');
-                        }!this.isFunction[o][p] && q && (this.modules[o][p] = !this.modules[o][p]);
+                        }!this.isFunction[q][r] && s && (this.modules[q][r] = !this.modules[q][r]);
                     }
             }
             getPenaltyScore() {
-                let n = 0;
-                for (let o = 0; o < this.size; o++) {
-                    let p = !1,
-                        q = 0,
-                        r = [
+                let p = 0;
+                for (let q = 0; q < this.size; q++) {
+                    let r = !1,
+                        s = 0,
+                        t = [
                             0,
                             0,
                             0,
@@ -330,14 +330,14 @@ a.register('3Bibb', function(b, c) {
                             0,
                             0
                         ];
-                    for (let s = 0; s < this.size; s++)
-                        this.modules[o][s] == p ? (q++, 5 == q ? n += _m.PENALTY_N1 : q > 5 && n++) : (this.finderPenaltyAddHistory(q, r), p || (n += this.finderPenaltyCountPatterns(r) * _m.PENALTY_N3), p = this.modules[o][s], q = 1);
-                    n += this.finderPenaltyTerminateAndCount(p, q, r) * _m.PENALTY_N3;
+                    for (let u = 0; u < this.size; u++)
+                        this.modules[q][u] == r ? (s++, 5 == s ? p += o.PENALTY_N1 : s > 5 && p++) : (this.finderPenaltyAddHistory(s, t), r || (p += this.finderPenaltyCountPatterns(t) * o.PENALTY_N3), r = this.modules[q][u], s = 1);
+                    p += this.finderPenaltyTerminateAndCount(r, s, t) * o.PENALTY_N3;
                 }
-                for (let p = 0; p < this.size; p++) {
-                    let q = !1,
-                        r = 0,
-                        s = [
+                for (let r = 0; r < this.size; r++) {
+                    let s = !1,
+                        t = 0,
+                        u = [
                             0,
                             0,
                             0,
@@ -346,132 +346,132 @@ a.register('3Bibb', function(b, c) {
                             0,
                             0
                         ];
-                    for (let t = 0; t < this.size; t++)
-                        this.modules[t][p] == q ? (r++, 5 == r ? n += _m.PENALTY_N1 : r > 5 && n++) : (this.finderPenaltyAddHistory(r, s), q || (n += this.finderPenaltyCountPatterns(s) * _m.PENALTY_N3), q = this.modules[t][p], r = 1);
-                    n += this.finderPenaltyTerminateAndCount(q, r, s) * _m.PENALTY_N3;
+                    for (let v = 0; v < this.size; v++)
+                        this.modules[v][r] == s ? (t++, 5 == t ? p += o.PENALTY_N1 : t > 5 && p++) : (this.finderPenaltyAddHistory(t, u), s || (p += this.finderPenaltyCountPatterns(u) * o.PENALTY_N3), s = this.modules[v][r], t = 1);
+                    p += this.finderPenaltyTerminateAndCount(s, t, u) * o.PENALTY_N3;
                 }
-                for (let q = 0; q < this.size - 1; q++)
-                    for (let r = 0; r < this.size - 1; r++) {
-                        const s = this.modules[q][r];
-                        s == this.modules[q][r + 1] && s == this.modules[q + 1][r] && s == this.modules[q + 1][r + 1] && (n += _m.PENALTY_N2);
+                for (let s = 0; s < this.size - 1; s++)
+                    for (let t = 0; t < this.size - 1; t++) {
+                        const u = this.modules[s][t];
+                        u == this.modules[s][t + 1] && u == this.modules[s + 1][t] && u == this.modules[s + 1][t + 1] && (p += o.PENALTY_N2);
                     }
-                let s = 0;
-                for (const t of this.modules)
-                    s = t.reduce((t, _m) => t + (_m ? 1 : 0), s);
-                const u = this.size * this.size,
-                    v = Math.ceil(Math.abs(20 * s - 10 * u) / u) - 1;
-                return d(0 <= v && v <= 9), t += v * _m.PENALTY_N4, d(0 <= t && t <= 2568888), t;
+                let u = 0;
+                for (const v of this.modules)
+                    u = v.reduce((v, o) => v + (o ? 1 : 0), u);
+                const w = this.size * this.size,
+                    x = Math.ceil(Math.abs(20 * u - 10 * w) / w) - 1;
+                return f(0 <= x && x <= 9), v += x * o.PENALTY_N4, f(0 <= v && v <= 2568888), v;
             }
             getAlignmentPatternPositions() {
                 if (1 == this.version)
                     return [];
                 {
-                    const n = Math.floor(this.version / 7) + 2,
-                        o = 32 == this.version ? 26 : 2 * Math.ceil((4 * this.version + 4) / (2 * n - 2));
-                    let p = [6];
-                    for (let q = this.size - 7; p.length < n; q -= o)
-                        p.splice(1, 0, q);
-                    return p;
+                    const p = Math.floor(this.version / 7) + 2,
+                        q = 32 == this.version ? 26 : 2 * Math.ceil((4 * this.version + 4) / (2 * p - 2));
+                    let r = [6];
+                    for (let s = this.size - 7; r.length < p; s -= q)
+                        r.splice(1, 0, s);
+                    return r;
                 }
             }
-            static getNumRawDataModules(n) {
-                if (n < _m.MIN_VERSION || n > _m.MAX_VERSION)
+            static getNumRawDataModules(p) {
+                if (p < o.MIN_VERSION || p > o.MAX_VERSION)
                     throw new RangeError('Version number out of range');
-                let o = (16 * n + 128) * n + 64;
-                if (n >= 2) {
-                    const p = Math.floor(n / 7) + 2;
-                    o -= (25 * p - 10) * p - 55, n >= 7 && (o -= 36);
+                let q = (16 * p + 128) * p + 64;
+                if (p >= 2) {
+                    const r = Math.floor(p / 7) + 2;
+                    q -= (25 * r - 10) * r - 55, p >= 7 && (q -= 36);
                 }
-                return d(208 <= o && o <= 29648), o;
+                return f(208 <= q && q <= 29648), q;
             }
-            static getNumDataCodewords(n, o) {
-                return Math.floor(_m.getNumRawDataModules(n) / 8) - _m.ECC_CODEWORDS_PER_BLOCK[o.ordinal][n] * _m.NUM_ERROR_CORRECTION_BLOCKS[o.ordinal][n];
+            static getNumDataCodewords(p, q) {
+                return Math.floor(o.getNumRawDataModules(p) / 8) - o.ECC_CODEWORDS_PER_BLOCK[q.ordinal][p] * o.NUM_ERROR_CORRECTION_BLOCKS[q.ordinal][p];
             }
-            static reedSolomonComputeDivisor(n) {
-                if (n < 1 || n > 255)
+            static reedSolomonComputeDivisor(p) {
+                if (p < 1 || p > 255)
                     throw new RangeError('Degree out of range');
-                let o = [];
-                for (let p = 0; p < n - 1; p++)
-                    o.push(0);
-                o.push(1);
-                let q = 1;
-                for (let r = 0; r < n; r++) {
-                    for (let s = 0; s < o.length; s++)
-                        o[s] = p.reedSolomonMultiply(o[s], q), s + 1 < o.length && (o[s] ^= o[s + 1]);
-                    q = p.reedSolomonMultiply(q, 2);
+                let q = [];
+                for (let r = 0; r < p - 1; r++)
+                    q.push(0);
+                q.push(1);
+                let s = 1;
+                for (let t = 0; t < p; t++) {
+                    for (let u = 0; u < q.length; u++)
+                        q[u] = r.reedSolomonMultiply(q[u], s), u + 1 < q.length && (q[u] ^= q[u + 1]);
+                    s = r.reedSolomonMultiply(s, 2);
                 }
-                return o;
+                return q;
             }
-            static reedSolomonComputeRemainder(n, o) {
-                let p = o.map(n => 0);
-                for (const q of n) {
-                    const r = q ^ p.shift();
-                    p.push(0), o.forEach((o, q) => p[q] ^= _m.reedSolomonMultiply(o, r));
+            static reedSolomonComputeRemainder(p, q) {
+                let r = q.map(p => 0);
+                for (const s of p) {
+                    const t = s ^ r.shift();
+                    r.push(0), q.forEach((q, s) => r[s] ^= o.reedSolomonMultiply(q, t));
                 }
-                return p;
+                return r;
             }
-            static reedSolomonMultiply(n, o) {
-                if (n >>> 8 != 0 || o >>> 8 != 0)
+            static reedSolomonMultiply(p, q) {
+                if (p >>> 8 != 0 || q >>> 8 != 0)
                     throw new RangeError('Byte out of range');
-                let p = 0;
-                for (let q = 7; q >= 0; q--)
-                    p = p << 1 ^ 285 * (p >>> 7), p ^= (o >>> q & 1) * n;
-                return d(p >>> 8 == 0), p;
+                let r = 0;
+                for (let s = 7; s >= 0; s--)
+                    r = r << 1 ^ 285 * (r >>> 7), r ^= (q >>> s & 1) * p;
+                return f(r >>> 8 == 0), r;
             }
-            finderPenaltyCountPatterns(n) {
-                const o = n[1];
-                d(o <= 3 * this.size);
-                const p = o > 0 && n[2] == o && n[3] == 3 * o && n[4] == o && n[5] == o;
-                return (p && n[0] >= 4 * o && n[6] >= o ? 1 : 0) + (p && n[6] >= 4 * o && n[0] >= o ? 1 : 0);
+            finderPenaltyCountPatterns(p) {
+                const q = p[1];
+                f(q <= 3 * this.size);
+                const r = q > 0 && p[2] == q && p[3] == 3 * q && p[4] == q && p[5] == q;
+                return (r && p[0] >= 4 * q && p[6] >= q ? 1 : 0) + (r && p[6] >= 4 * q && p[0] >= q ? 1 : 0);
             }
-            finderPenaltyTerminateAndCount(n, o, p) {
-                return n && (this.finderPenaltyAddHistory(o, p), o = 0), o += this.size, this.finderPenaltyAddHistory(o, p), this.finderPenaltyCountPatterns(p);
+            finderPenaltyTerminateAndCount(p, q, r) {
+                return p && (this.finderPenaltyAddHistory(q, r), q = 0), q += this.size, this.finderPenaltyAddHistory(q, r), this.finderPenaltyCountPatterns(r);
             }
-            finderPenaltyAddHistory(n, o) {
-                0 == o[0] && (n += this.size), o.pop(), o.unshift(n);
+            finderPenaltyAddHistory(p, q) {
+                0 == q[0] && (p += this.size), q.pop(), q.unshift(p);
             }
-            constructor(n, o, p, q) {
-                if (this.version = n, this.errorCorrectionLevel = o, this.modules = [], this.isFunction = [], n < _m.MIN_VERSION || n > _m.MAX_VERSION)
+            constructor(p, q, r, s) {
+                if (this.version = p, this.errorCorrectionLevel = q, this.modules = [], this.isFunction = [], p < o.MIN_VERSION || p > o.MAX_VERSION)
                     throw new RangeError('Version value out of range');
-                if (q < -1 || q > 7)
+                if (s < -1 || s > 7)
                     throw new RangeError('Mask value out of range');
-                this.size = 4 * n + 17;
-                let r = [];
-                for (let s = 0; s < this.size; s++)
-                    r.push(!1);
-                for (let t = 0; t < this.size; t++)
-                    this.modules.push(r.slice()), this.isFunction.push(r.slice());
+                this.size = 4 * p + 17;
+                let t = [];
+                for (let u = 0; u < this.size; u++)
+                    t.push(!1);
+                for (let v = 0; v < this.size; v++)
+                    this.modules.push(t.slice()), this.isFunction.push(t.slice());
                 this.drawFunctionPatterns();
-                const u = this.addEccAndInterleave(p);
-                if (this.drawCodewords(u), -1 == q) {
-                    let v = 1000000000;
-                    for (let w = 0; w < 8; w++) {
-                        this.applyMask(w), this.drawFormatBits(w);
-                        const x = this.getPenaltyScore();
-                        x < v && (q = w, v = x), this.applyMask(w);
+                const w = this.addEccAndInterleave(r);
+                if (this.drawCodewords(w), -1 == s) {
+                    let x = 1000000000;
+                    for (let y = 0; y < 8; y++) {
+                        this.applyMask(y), this.drawFormatBits(y);
+                        const z = this.getPenaltyScore();
+                        z < x && (s = y, x = z), this.applyMask(y);
                     }
                 }
-                d(0 <= q && q <= 7), this.mask = q, this.applyMask(q), this.drawFormatBits(q), this.isFunction = [];
+                f(0 <= s && s <= 7), this.mask = s, this.applyMask(s), this.drawFormatBits(s), this.isFunction = [];
             }
         };
-        let n = _m;
+        let p = o;
 
-        function o(p, q, r) {
-            if (q < 0 || q > 31 || p >>> q != 0)
+        function q(r, s, t) {
+            if (s < 0 || s > 31 || r >>> s != 0)
                 throw new RangeError('Value out of range');
-            for (let s = q - 1; s >= 0; s--)
-                r.push(p >>> s & 1);
+            for (let u = s - 1; u >= 0; u--)
+                t.push(r >>> u & 1);
         }
 
-        function o(p, q) {
-            return 0 != (p >>> q & 1);
+        function r(s, t) {
+            return 0 != (s >>> t & 1);
         }
 
-        function o(p) {
-            if (!p)
+        function s(t) {
+            if (!t)
                 throw new Error('Assertion error');
         }
-        n.MIN_VERSION = 1, n.MAX_VERSION = 40, n.PENALTY_N1 = 3, n.PENALTY_N2 = 3, n.PENALTY_N3 = 40, n.PENALTY_N4 = 10, n.ECC_CODEWORDS_PER_BLOCK = [
+        p.MIN_VERSION = 1, p.MAX_VERSION = 40, p.PENALTY_N1 = 3, p.PENALTY_N2 = 3, p.PENALTY_N3 = 40, p.PENALTY_N4 = 10, p.ECC_CODEWORDS_PER_BLOCK = [
             [
                 -1,
                 7,
@@ -644,7 +644,7 @@ a.register('3Bibb', function(b, c) {
                 30,
                 30
             ]
-        ], n.NUM_ERROR_CORRECTION_BLOCKS = [
+        ], p.NUM_ERROR_CORRECTION_BLOCKS = [
             [
                 -1,
                 1,
@@ -817,219 +817,219 @@ a.register('3Bibb', function(b, c) {
                 77,
                 81
             ]
-        ], _p.QrCode = n;
-        const o = class {
-            static makeBytes(_p) {
-                let q = [];
-                for (const r of _p)
-                    b(r, 8, q);
-                return new o(o.Mode.BYTE, _p.length, q);
+        ], a.QrCode = p;
+        const t = class {
+            static makeBytes(u) {
+                let v = [];
+                for (const w of u)
+                    q(w, 8, v);
+                return new t(t.Mode.BYTE, u.length, v);
             }
-            static makeNumeric(p) {
-                if (!o.isNumeric(p))
+            static makeNumeric(u) {
+                if (!t.isNumeric(u))
                     throw new RangeError('String contains non-numeric characters');
-                let q = [];
-                for (let r = 0; r < p.length;) {
-                    const s = Math.min(p.length - r, 3);
-                    b(parseInt(p.substr(r, s), 10), 3 * s + 1, q), r += s;
+                let v = [];
+                for (let w = 0; w < u.length;) {
+                    const x = Math.min(u.length - w, 3);
+                    q(parseInt(u.substr(w, x), 10), 3 * x + 1, v), w += x;
                 }
-                return new o(o.Mode.NUMERIC, p.length, q);
+                return new t(t.Mode.NUMERIC, u.length, v);
             }
-            static makeAlphanumeric(p) {
-                if (!o.isAlphanumeric(p))
+            static makeAlphanumeric(u) {
+                if (!t.isAlphanumeric(u))
                     throw new RangeError('String contains unencodable characters in alphanumeric mode');
-                let q, r = [];
-                for (q = 0; q + 2 <= p.length; q += 2) {
-                    let s = 45 * o.ALPHANUMERIC_CHARSET.indexOf(p.charAt(q));
-                    s += o.ALPHANUMERIC_CHARSET.indexOf(p.charAt(q + 1)), b(s, 11, r);
+                let v, w = [];
+                for (v = 0; v + 2 <= u.length; v += 2) {
+                    let x = 45 * t.ALPHANUMERIC_CHARSET.indexOf(u.charAt(v));
+                    x += t.ALPHANUMERIC_CHARSET.indexOf(u.charAt(v + 1)), q(x, 11, w);
                 }
-                return q < p.length && b(o.ALPHANUMERIC_CHARSET.indexOf(p.charAt(q)), 6, r), new o(o.Mode.ALPHANUMERIC, p.length, r);
+                return v < u.length && q(t.ALPHANUMERIC_CHARSET.indexOf(u.charAt(v)), 6, w), new t(t.Mode.ALPHANUMERIC, u.length, w);
             }
-            static makeSegments(p) {
-                return '' == p ? [] : o.isNumeric(p) ? [o.makeNumeric(p)] : o.isAlphanumeric(p) ? [o.makeAlphanumeric(p)] : [o.makeBytes(o.toUtf8ByteArray(p))];
+            static makeSegments(u) {
+                return '' == u ? [] : t.isNumeric(u) ? [t.makeNumeric(u)] : t.isAlphanumeric(u) ? [t.makeAlphanumeric(u)] : [t.makeBytes(t.toUtf8ByteArray(u))];
             }
-            static makeEci(p) {
-                let q = [];
-                if (p < 0)
+            static makeEci(u) {
+                let v = [];
+                if (u < 0)
                     throw new RangeError('ECI assignment value out of range');
-                if (p < 128)
-                    b(p, 8, q);
-                else if (p < 16384)
-                    b(2, 2, q), b(p, 14, q);
+                if (u < 128)
+                    q(u, 8, v);
+                else if (u < 16384)
+                    q(2, 2, v), q(u, 14, v);
                 else {
-                    if (!(p < 1000000))
+                    if (!(u < 1000000))
                         throw new RangeError('ECI assignment value out of range');
-                    b(6, 3, q), b(p, 21, q);
+                    q(6, 3, v), q(u, 21, v);
                 }
-                return new o(o.Mode.ECI, 0, q);
+                return new t(t.Mode.ECI, 0, v);
             }
-            static isNumeric(p) {
-                return o.NUMERIC_REGEX.test(p);
+            static isNumeric(u) {
+                return t.NUMERIC_REGEX.test(u);
             }
-            static isAlphanumeric(p) {
-                return o.ALPHANUMERIC_REGEX.test(p);
+            static isAlphanumeric(u) {
+                return t.ALPHANUMERIC_REGEX.test(u);
             }
             getData() {
                 return this.bitData.slice();
             }
-            static getTotalBits(p, q) {
-                let r = 0;
-                for (const s of p) {
-                    const t = s.mode.numCharCountBits(q);
-                    if (s.numChars >= 1 << t)
+            static getTotalBits(u, v) {
+                let w = 0;
+                for (const x of u) {
+                    const y = x.mode.numCharCountBits(v);
+                    if (x.numChars >= 1 << y)
                         return 1 / 0;
-                    r += 4 + t + s.bitData.length;
+                    w += 4 + y + x.bitData.length;
                 }
-                return r;
+                return w;
             }
-            static toUtf8ByteArray(p) {
-                p = encodeURI(p);
-                let q = [];
-                for (let r = 0; r < p.length; r++)
-                    '%' != p.charAt(r) ? q.push(p.charCodeAt(r)) : (q.push(parseInt(p.substr(r + 1, 2), 16)), r += 2);
-                return q;
+            static toUtf8ByteArray(u) {
+                u = encodeURI(u);
+                let v = [];
+                for (let w = 0; w < u.length; w++)
+                    '%' != u.charAt(w) ? v.push(u.charCodeAt(w)) : (v.push(parseInt(u.substr(w + 1, 2), 16)), w += 2);
+                return v;
             }
-            constructor(p, q, r) {
-                if (this.mode = p, this.numChars = q, this.bitData = r, q < 0)
+            constructor(u, v, w) {
+                if (this.mode = u, this.numChars = v, this.bitData = w, v < 0)
                     throw new RangeError('Invalid argument');
-                this.bitData = r.slice();
+                this.bitData = w.slice();
             }
         };
-        let p = o;
-        p.NUMERIC_REGEX = /^[0-9]*$/, p.ALPHANUMERIC_REGEX = /^[A-Z0-9 $%*+.\/:-]*$/, p.ALPHANUMERIC_CHARSET = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:', _o.QrSegment = p;
-    })(d || (d = {})), (_o => {
-        let m;
-        (_o => {
-            const n = class {
-                constructor(_o, p) {
-                    this.ordinal = _o, this.formatBits = p;
+        let u = t;
+        u.NUMERIC_REGEX = /^[0-9]*$/, u.ALPHANUMERIC_REGEX = /^[A-Z0-9 $%*+.\/:-]*$/, u.ALPHANUMERIC_CHARSET = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:', a.QrSegment = u;
+    })(f || (f = {})), (a => {
+        let o;
+        (a => {
+            const p = class {
+                constructor(q, r) {
+                    this.ordinal = q, this.formatBits = r;
                 }
             };
-            let o = n;
-            o.LOW = new n(0, 1), o.MEDIUM = new n(1, 0), o.QUARTILE = new n(2, 3), o.HIGH = new n(3, 2), _o.Ecc = o;
-        })(m = _o.QrCode || (_o.QrCode = {}));
-    })(d || (d = {})), (_o => {
-        let m;
-        (_o => {
-            const n = class {
-                numCharCountBits(_o) {
-                    return this.numBitsCharCount[Math.floor((_o + 7) / 17)];
+            let q = p;
+            q.LOW = new p(0, 1), q.MEDIUM = new p(1, 0), q.QUARTILE = new p(2, 3), q.HIGH = new p(3, 2), a.Ecc = q;
+        })(o = a.QrCode || (a.QrCode = {}));
+    })(f || (f = {})), (a => {
+        let o;
+        (a => {
+            const p = class {
+                numCharCountBits(q) {
+                    return this.numBitsCharCount[Math.floor((q + 7) / 17)];
                 }
-                constructor(o, p) {
-                    this.modeBits = o, this.numBitsCharCount = p;
+                constructor(q, r) {
+                    this.modeBits = q, this.numBitsCharCount = r;
                 }
             };
-            let o = n;
-            o.NUMERIC = new n(1, [
+            let q = p;
+            q.NUMERIC = new p(1, [
                 10,
                 12,
                 14
-            ]), o.ALPHANUMERIC = new n(2, [
+            ]), q.ALPHANUMERIC = new p(2, [
                 9,
                 11,
                 13
-            ]), o.BYTE = new n(4, [
+            ]), q.BYTE = new p(4, [
                 8,
                 16,
                 16
-            ]), o.KANJI = new n(8, [
+            ]), q.KANJI = new p(8, [
                 8,
                 10,
                 12
-            ]), o.ECI = new n(7, [
+            ]), q.ECI = new p(7, [
                 0,
                 0,
                 0
-            ]), _u.Mode = o;
-        })(m = _u.QrSegment || (_u.QrSegment = {}));
-    })(d || (d = {}));
-    var m = d,
-        n = {
-            L: m.QrCode.Ecc.LOW,
-            M: m.QrCode.Ecc.MEDIUM,
-            Q: m.QrCode.Ecc.QUARTILE,
-            H: m.QrCode.Ecc.HIGH
+            ]), a.Mode = q;
+        })(o = a.QrSegment || (a.QrSegment = {}));
+    })(f || (f = {}));
+    var o = f,
+        p = {
+            L: o.QrCode.Ecc.LOW,
+            M: o.QrCode.Ecc.MEDIUM,
+            Q: o.QrCode.Ecc.QUARTILE,
+            H: o.QrCode.Ecc.HIGH
         },
-        o = 128,
-        p = 'L',
-        q = '#FFFFFF',
-        r = '#000000',
-        s = !1;
+        q = 128,
+        r = 'L',
+        s = '#FFFFFF',
+        t = '#000000',
+        u = !1;
 
-    function t(_u, v = 0) {
-        const w = [];
-        return _u.forEach(function(x, y) {
-            let z = null;
-            x.forEach(function(A, B) {
-                if (!A && null !== z)
-                    return w.push(`M${ z + v } ${ y + v }h${ B - z }v1H${ z + v }z`), void(z = null);
-                if (B !== x.length - 1)
-                    A && null === z && (z = B);
+    function v(w, x = 0) {
+        const y = [];
+        return w.forEach(function(z, A) {
+            let B = null;
+            z.forEach(function(C, D) {
+                if (!C && null !== B)
+                    return y.push(`M${ B + x } ${ A + x }h${ D - B }v1H${ B + x }z`), void(B = null);
+                if (D !== z.length - 1)
+                    C && null === B && (B = D);
                 else {
-                    if (!A)
+                    if (!C)
                         return;
-                    null === z ? w.push(`M${ B + v },${ y + v } h1v1H${ B + v }z`) : w.push(`M${ z + v },${ y + v } h${ B + 1 - z }v1H${ z + v }z`);
+                    null === B ? y.push(`M${ D + x },${ A + x } h1v1H${ D + x }z`) : y.push(`M${ B + x },${ A + x } h${ D + 1 - B }v1H${ B + x }z`);
                 }
             });
-        }), w.join('');
+        }), y.join('');
     }
 
-    function t(u, v) {
-        return u.slice().map((u, a) => a < v.y || a >= v.y + v.h ? u : u.map((u, a) => (a < v.x || a >= v.x + v.w) && u));
+    function w(x, y) {
+        return x.slice().map((x, c) => c < y.y || c >= y.y + y.h ? x : x.map((x, c) => (c < y.x || c >= y.x + y.w) && x));
     }
 
-    function t(u, v, w, x) {
-        if (null == x)
+    function x(y, z, A, B) {
+        if (null == B)
             return null;
-        const y = w ? 4 : 0,
-            z = u.length + 2 * y,
-            A = Math.floor(0.1 * v),
-            B = z / v,
-            C = (x.width || A) * B,
-            D = (x.height || A) * B,
-            E = null == x.x ? u.length / 2 - C / 2 : x.x * B,
-            F = null == x.y ? u.length / 2 - D / 2 : x.y * B;
-        let G = null;
-        if (x.excavate) {
-            let H = Math.floor(E),
-                I = Math.floor(F);
-            G = {
-                x: H,
-                y: I,
-                w: Math.ceil(C + E - H),
-                h: Math.ceil(D + F - I)
+        const C = A ? 4 : 0,
+            D = y.length + 2 * C,
+            E = Math.floor(0.1 * z),
+            F = D / z,
+            G = (B.width || E) * F,
+            H = (B.height || E) * F,
+            I = null == B.x ? y.length / 2 - G / 2 : B.x * F,
+            J = null == B.y ? y.length / 2 - H / 2 : B.y * F;
+        let K = null;
+        if (B.excavate) {
+            let L = Math.floor(I),
+                M = Math.floor(J);
+            K = {
+                x: L,
+                y: M,
+                w: Math.ceil(G + I - L),
+                h: Math.ceil(H + J - M)
             };
         }
         return {
-            x: E,
-            y: F,
-            h: D,
-            w: C,
-            excavation: G
+            x: I,
+            y: J,
+            h: H,
+            w: G,
+            excavation: K
         };
     }
-    var t = function() {
+    var y = function() {
         try {
             new Path2D().addPath(new Path2D());
-        } catch (_Q) {
+        } catch (a) {
             return !1;
         }
         return !0;
     }();
 
-    function _u(v) {
-        const w = v,
+    function _z(A) {
+        const B = A,
             {
-                value: x,
-                size: y = z,
-                level: A = B,
-                bgColor: C = D,
-                fgColor: E = F,
-                includeMargin: G = H,
-                style: I,
-                imageSettings: J
-            } = w,
-            K = l(w, [
+                value: C,
+                size: D = E,
+                level: F = G,
+                bgColor: H = I,
+                fgColor: J = K,
+                includeMargin: L = M,
+                style: N,
+                imageSettings: O
+            } = B,
+            P = n(B, [
                 'value',
                 'size',
                 'level',
@@ -1039,78 +1039,78 @@ a.register('3Bibb', function(b, c) {
                 'style',
                 'imageSettings'
             ]),
-            L = null == J ? void 0 : J.src,
-            M = (0, e.useRef)(null),
-            N = (0, e.useRef)(null),
-            [O, P] = (0, e.useState)(!1);
-        (0, e.useEffect)(() => {
-            if (null != M.current) {
-                const _Q = M.current,
-                    R = _Q.getContext('2d');
-                if (!R)
+            Q = null == O ? void 0 : O.src,
+            R = (0, g.useRef)(null),
+            S = (0, g.useRef)(null),
+            [T, U] = (0, g.useState)(!1);
+        (0, g.useEffect)(() => {
+            if (null != R.current) {
+                const V = R.current,
+                    W = V.getContext('2d');
+                if (!W)
                     return;
-                let S = m.QrCode.encodeText(x, n[A]).getModules();
-                const T = G ? 4 : 0,
-                    U = S.length + 2 * T,
-                    V = N(S, y, G, J),
-                    W = N.current,
-                    X = null != V && null !== W && W.complete && 0 !== W.naturalHeight && 0 !== W.naturalWidth;
-                X && null != V.excavation && (S = y(S, V.excavation));
-                const Y = window.devicePixelRatio || 1;
-                _Q.height = _Q.width = y * Y;
-                const Z = y / U * Y;
-                R.scale(Z, Z), R.fillStyle = C, R.fillRect(0, 0, U, U), R.fillStyle = E, t ? R.fill(new Path2D(R(S, T))) : S.forEach(function($, ab) {
-                    $.forEach(function(bb, cb) {
-                        bb && R.fillRect(cb + T, ab + T, 1, 1);
+                let X = o.QrCode.encodeText(C, p[F]).getModules();
+                const Y = L ? 4 : 0,
+                    Z = X.length + 2 * Y,
+                    $ = x(X, D, L, O),
+                    ab = S.current,
+                    bb = null != $ && null !== ab && ab.complete && 0 !== ab.naturalHeight && 0 !== ab.naturalWidth;
+                bb && null != $.excavation && (X = w(X, $.excavation));
+                const cb = window.devicePixelRatio || 1;
+                V.height = V.width = D * cb;
+                const db = D / Z * cb;
+                W.scale(db, db), W.fillStyle = H, W.fillRect(0, 0, Z, Z), W.fillStyle = J, y ? W.fill(new Path2D(v(X, Y))) : X.forEach(function(eb, fb) {
+                    eb.forEach(function(gb, hb) {
+                        gb && W.fillRect(hb + Y, fb + Y, 1, 1);
                     });
-                }), X && R.drawImage(W, V.x + T, V.y + T, V.w, V.h);
+                }), bb && W.drawImage(ab, $.x + Y, $.y + Y, $.w, $.h);
             }
-        }), (0, e.useEffect)(() => {
-            P(!1);
-        }, [L]);
-        const Q = k({
-            height: y,
-            width: y
-        }, I);
-        let R = null;
-        return null != L && (R = _b(e).createElement('img', {
-            src: L,
-            key: L,
+        }), (0, g.useEffect)(() => {
+            U(!1);
+        }, [Q]);
+        const V = m({
+            height: D,
+            width: D
+        }, N);
+        let W = null;
+        return null != Q && (W = a(g).createElement('img', {
+            src: Q,
+            key: Q,
             style: {
                 display: 'none'
             },
             onLoad: () => {
-                P(!0);
+                U(!0);
             },
-            ref: N
-        })), _b(e).createElement(_b(e).Fragment, null, _b(e).createElement('canvas', k({
-            style: Q,
-            height: y,
-            width: y,
-            ref: M
-        }, K)), R);
+            ref: S
+        })), a(g).createElement(a(g).Fragment, null, a(g).createElement('canvas', m({
+            style: V,
+            height: D,
+            width: D,
+            ref: R
+        }, P)), W);
     }
-}), a.register('jem+E', function(_b, c) {
-    _j(_b.exports, 'default', function() {
-        return _i;
+}), c.register('H0LNV', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('HNdyU'),
-        g = a('sLVIW'),
-        h = function(i, _j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, i), {}, {
-                ref: _j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('JW6MF'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'ReloadOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('HNdyU', function(b, c) {
-    _h(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'ReloadOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('JW6MF', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -1127,31 +1127,31 @@ a.register('3Bibb', function(b, c) {
         name: 'reload',
         theme: 'outlined'
     };
-}), a.register('a2lZD', function(b, c) {
-    _h(b.exports, 'default', function() {
-        return _g;
+}), c.register('XTqzK', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('XC0UB'),
-        e = a('l+IVY'),
-        f = a('7hbGU');
-    var _g = (0, d.default)('QRCode', b => (b => {
+    var f = c('GhPPX'),
+        g = c('qJkLY'),
+        h = c('/zzpx');
+    var _i = (0, f.default)('QRCode', d => (d => {
         const {
-            componentCls: _h
-        } = b;
+            componentCls: j
+        } = d;
         return {
-            [_h]: Object.assign(Object.assign({}, (0, f.resetComponent)(b)), {
+            [j]: Object.assign(Object.assign({}, (0, h.resetComponent)(d)), {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                padding: b.paddingSM,
-                backgroundColor: b.colorWhite,
-                borderRadius: b.borderRadiusLG,
-                border: `${ b.lineWidth }px ${ b.lineType } ${ b.colorSplit }`,
+                padding: d.paddingSM,
+                backgroundColor: d.colorWhite,
+                borderRadius: d.borderRadiusLG,
+                border: `${ d.lineWidth }px ${ d.lineType } ${ d.colorSplit }`,
                 position: 'relative',
                 width: '100%',
                 height: '100%',
                 overflow: 'hidden',
-                [`& > ${ _h }-mask`]: {
+                [`& > ${ j }-mask`]: {
                     position: 'absolute',
                     insetBlockStart: 0,
                     insetInlineStart: 0,
@@ -1162,24 +1162,24 @@ a.register('3Bibb', function(b, c) {
                     alignItems: 'center',
                     width: '100%',
                     height: '100%',
-                    color: b.colorText,
-                    lineHeight: b.lineHeight,
-                    background: b.QRCodeMaskBackgroundColor,
+                    color: d.colorText,
+                    lineHeight: d.lineHeight,
+                    background: d.QRCodeMaskBackgroundColor,
                     textAlign: 'center',
-                    [`& > ${ _h }-expired`]: {
-                        color: b.QRCodeExpiredTextColor
+                    [`& > ${ j }-expired`]: {
+                        color: d.QRCodeExpiredTextColor
                     }
                 },
                 '&-icon': {
-                    marginBlockEnd: b.marginXS,
-                    fontSize: b.controlHeight
+                    marginBlockEnd: d.marginXS,
+                    fontSize: d.controlHeight
                 }
             }),
-            [`${ _h }-borderless`]: {
+            [`${ j }-borderless`]: {
                 borderColor: 'transparent'
             }
         };
-    })((0, e.merge)(b, {
+    })((0, g.merge)(d, {
         QRCodeExpiredTextColor: 'rgba(0, 0, 0, 0.88)',
         QRCodeMaskBackgroundColor: 'rgba(255, 255, 255, 0.96)'
     })));

@@ -6,36 +6,36 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('10ZuL', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('qchL6', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _n(b.exports, 'default', function() {
-        return _n;
+    }), a(c.exports, 'default', function() {
+        return _o;
     });
-    var e = a('1bFPu'),
-        f = a('2Xvuf'),
-        g = a('9tz3H'),
-        h = a('/pbxo'),
-        i = a('I35Ay'),
-        j = a('+uQv7'),
-        k = a('dTXti'),
-        l = a('ddHnt');
-    class m extends i.default {
-        constructor(_n) {
-            if (super(_n), (0, e.default)(this, 'useCallToAction', () => {
-                    this.sendToServerDevice(l.Messages.callToAction);
-                }), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) {
-                const o = k.default.Overlay;
-                new(0, j.default)({
+    var f = b('s/YA9'),
+        g = b('UaUBz0'),
+        h = b('hycyg'),
+        i = b('UkCpC'),
+        j = b('ltxDW'),
+        k = b('73Aki'),
+        l = b('AHhkR'),
+        m = b('jdzF2');
+    class n extends j.default {
+        constructor(o) {
+            if (super(o), (0, f.default)(this, 'useCallToAction', () => {
+                    this.sendToServerDevice(m.Messages.callToAction);
+                }), (0, i.InPreGamePhase)() && (0, h.isSavedVersion)()) {
+                const p = l.default.Overlay;
+                new(0, k.default)({
                     device: this,
-                    baseColor: o.baseColor,
-                    boxColor: o.boxColor,
+                    baseColor: p.baseColor,
+                    boxColor: p.boxColor,
                     content: {
                         icon: {
-                            image: (0, f.default)('devices/notification/icon.png'),
+                            image: (0, g.default)('devices/notification/icon.png'),
                             scale: 0.8
                         }
                     }
@@ -43,10 +43,10 @@ a.register('10ZuL', function(b, c) {
             }
         }
     }
-    var _n = m;
-}), a.register('ddHnt', function(b, c) {
-    let d;
-    e(b.exports, 'Messages', function() {
-        return d;
-    }), (d || (d = {})).callToAction = 'primaryCallToAction';
+    var _o = n;
+}), b.register('jdzF2', function(c, d) {
+    let e;
+    a(c.exports, 'Messages', function() {
+        return e;
+    }), (e || (e = {})).callToAction = 'primaryCallToAction';
 });

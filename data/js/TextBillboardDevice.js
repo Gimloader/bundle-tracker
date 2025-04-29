@@ -7,141 +7,141 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('wXYDn', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('+88wj', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _p(b.exports, 'default', function() {
-        return _p;
+    }), a(d.exports, 'default', function() {
+        return _r;
     });
-    var e = a('1bFPu'),
-        f = a('I35Ay'),
-        g = a('sCbH9'),
-        h = a('RKoHq'),
-        i = a('/pbxo'),
-        j = a('D5xLI'),
-        k = a('vfR2b'),
-        l = a('9tz3H'),
-        m = a('IFO6W13'),
-        n = a('R2Ucl10');
-    class o extends f.default {
-        constructor(_p) {
-            super(_p), (0, e.default)(this, 'createVisuals', () => {
+    var g = c('s/YA9'),
+        h = c('ltxDW'),
+        i = c('bMaPZ2'),
+        j = c('vDEcc'),
+        k = c('UkCpC'),
+        l = c('heTaO'),
+        m = c('lnsH90'),
+        n = c('hycyg'),
+        o = c('u/WlI21'),
+        p = c('uc4mA17');
+    class q extends h.default {
+        constructor(r) {
+            super(r), (0, g.default)(this, 'createVisuals', () => {
                 if (this.isDestroyed)
                     return;
-                const q = (0, g.isGoogleFontLoaded)(this.options.googleFont),
-                    r = (0, j.default)().cameraHelper.zoom,
-                    s = 1 / r;
-                let t = {
-                    fontSize: `${ this.options.fontSize * r }px`,
+                const s = (0, i.isGoogleFontLoaded)(this.options.googleFont),
+                    t = (0, l.default)().cameraHelper.zoom,
+                    u = 1 / t;
+                let v = {
+                    fontSize: `${ this.options.fontSize * t }px`,
                     align: 'center',
-                    fontFamily: q ? `"${ this.options.googleFont }"` : 'Roboto',
+                    fontFamily: s ? `"${ this.options.googleFont }"` : 'Roboto',
                     color: this.state.textColor || this.options.color
                 };
-                this.options.strokeThickness && this.options.strokeColor && (t.strokeThickness = this.options.strokeThickness * r, t.stroke = this.options.strokeColor);
-                let u = this.state.text || this.options.text;
-                u || (0, l.isSavedVersion)() && (u = 'Text Here'), this.text = this.parts.add.text({
-                    text: u,
-                    textStyle: t
-                }), this.text.view.scale = s, this.text.view.angle = this.options.rotation, !q && this.options.googleFont ? (0, g.default)({
+                this.options.strokeThickness && this.options.strokeColor && (v.strokeThickness = this.options.strokeThickness * t, v.stroke = this.options.strokeColor);
+                let w = this.state.text || this.options.text;
+                w || (0, n.isSavedVersion)() && (w = 'Text Here'), this.text = this.parts.add.text({
+                    text: w,
+                    textStyle: v
+                }), this.text.view.scale = u, this.text.view.angle = this.options.rotation, !s && this.options.googleFont ? (0, i.default)({
                     familyName: this.options.googleFont,
                     onLoad: () => {
                         this.isDestroyed || (this.text.view.setFontFamily(`"${ this.options.googleFont }"`), this.updateScale(), this.parts.show(), this.setupVisualEditing());
                     }
                 }) : (this.parts.show(), this.setupVisualEditing()), this.text.view.setAlpha(this.getAlpha());
-            }), (0, e.default)(this, 'onUpdate', () => {
+            }), (0, g.default)(this, 'onUpdate', () => {
                 this.currentScale !== this.neededScale && this.cull.isInsideView && this.updateScale();
-            }), (0, e.default)(this, 'getWidth', () => this.text ? this.text.view.width : 100), (0, e.default)(this, 'getHeight', () => this.text ? 2 * this.text.view.height : 100), (0, e.default)(this, 'updateScale', () => {
-                const q = 1 / (0, j.default)().cameraHelper.zoom;
-                this.neededScale = q, this.currentScale !== q && this.cull.isInsideView && (this.setFontSize(), this.setStroke(), this.currentScale = q, this.boundingBox.clearCached());
-            }), (0, e.default)(this, 'setFontSize', () => {
-                const q = this.neededScale;
-                this.text.view.scale = q;
-                const r = this.options.fontSize * (0, j.default)().cameraHelper.zoom,
-                    s = (0, k.TextPadding)();
-                this.text.view.setPadding(s, s, s, s), this.text.view.setFontSize(r);
-            }), (0, e.default)(this, 'setStroke', () => {
+            }), (0, g.default)(this, 'getWidth', () => this.text ? this.text.view.width : 100), (0, g.default)(this, 'getHeight', () => this.text ? 2 * this.text.view.height : 100), (0, g.default)(this, 'updateScale', () => {
+                const s = 1 / (0, l.default)().cameraHelper.zoom;
+                this.neededScale = s, this.currentScale !== s && this.cull.isInsideView && (this.setFontSize(), this.setStroke(), this.currentScale = s, this.boundingBox.clearCached());
+            }), (0, g.default)(this, 'setFontSize', () => {
+                const s = this.neededScale;
+                this.text.view.scale = s;
+                const t = this.options.fontSize * (0, l.default)().cameraHelper.zoom,
+                    u = (0, m.TextPadding)();
+                this.text.view.setPadding(u, u, u, u), this.text.view.setFontSize(t);
+            }), (0, g.default)(this, 'setStroke', () => {
                 if (this.options.strokeThickness && this.options.strokeColor) {
-                    const q = this.options.strokeThickness * (0, j.default)().cameraHelper.zoom;
-                    this.text.view.setStroke(this.options.strokeColor, q);
+                    const s = this.options.strokeThickness * (0, l.default)().cameraHelper.zoom;
+                    this.text.view.setStroke(this.options.strokeColor, s);
                 }
-            }), (0, e.default)(this, 'getAlpha', () => (0, l.isSavedVersion)() && (0, i.InPreGamePhase)() ? this.options.alpha : (0, l.isPublishedVersion)() && (0, i.InPreGamePhase)() ? 'No' === this.options.visibleOnGameStart ? 0 : this.options.alpha : this.state.visible ? this.options.alpha : 0), (0, e.default)(this, 'onStateChange', _p => {
+            }), (0, g.default)(this, 'getAlpha', () => (0, n.isSavedVersion)() && (0, k.InPreGamePhase)() ? this.options.alpha : (0, n.isPublishedVersion)() && (0, k.InPreGamePhase)() ? 'No' === this.options.visibleOnGameStart ? 0 : this.options.alpha : this.state.visible ? this.options.alpha : 0), (0, g.default)(this, 'onStateChange', r => {
                 if (this.text) {
-                    if ('visible' === _p) {
-                        if (!(0, i.InGamePhase)())
+                    if ('visible' === r) {
+                        if (!(0, k.InGamePhase)())
                             return;
                         this.tweens.add({
                             targets: [this.text.view],
                             alpha: this.getAlpha(),
-                            duration: h.default.Animation.Visibility.DurationMS,
-                            ease: h.default.Animation.Visibility.Ease
+                            duration: j.default.Animation.Visibility.DurationMS,
+                            ease: j.default.Animation.Visibility.Ease
                         });
                     } else
-                        'text' === _p ? this.text.view.setText(this.state.text) : 'textColor' === _p && this.text.view.setColor(this.state.textColor);
+                        'text' === r ? this.text.view.setText(this.state.text) : 'textColor' === r && this.text.view.setColor(this.state.textColor);
                     this.updateScale();
                 }
-            }), (0, e.default)(this, 'setupVisualEditing', () => {
-                if (!(0, i.InPreGamePhase)() || !(0, l.isSavedVersion)())
+            }), (0, g.default)(this, 'setupVisualEditing', () => {
+                if (!(0, k.InPreGamePhase)() || !(0, n.isSavedVersion)())
                     return;
                 if (this.visualEditing.uses())
                     return;
-                const q = (0, n.FetchOptionSchemaProperty)(this, 'fontSize'),
-                    r = this.getWidth() * q.min / this.options.fontSize,
-                    s = this.getWidth() * q.max / this.options.fontSize,
-                    t = this.getHeight() * q.min / this.options.fontSize,
-                    u = this.getHeight() * q.max / this.options.fontSize;
+                const s = (0, p.FetchOptionSchemaProperty)(this, 'fontSize'),
+                    t = this.getWidth() * s.min / this.options.fontSize,
+                    u = this.getWidth() * s.max / this.options.fontSize,
+                    v = this.getHeight() * s.min / this.options.fontSize,
+                    w = this.getHeight() * s.max / this.options.fontSize;
                 this.visualEditing.add.box({
                     width: 2 * this.getWidth(),
                     height: this.getHeight(),
                     angle: this.options.rotation,
-                    minWidth: r,
-                    maxWidth: s,
-                    minHeight: t,
-                    maxHeight: u,
-                    onChange: q => {
-                        (0, m.ReplaceVisualEditingPreview)(q.x, q.y, {
-                            rotation: q.angle,
-                            fontSize: q.height / this.getHeight() * this.options.fontSize
+                    minWidth: t,
+                    maxWidth: u,
+                    minHeight: v,
+                    maxHeight: w,
+                    onChange: s => {
+                        (0, o.ReplaceVisualEditingPreview)(s.x, s.y, {
+                            rotation: s.angle,
+                            fontSize: s.height / this.getHeight() * this.options.fontSize
                         });
                     }
                 });
             }), this.createVisuals();
         }
     }
-    var _p = o;
-}), a.register('sCbH9', function(b, c) {
-    t(b.exports, 'isGoogleFontLoaded', function() {
-        return _f;
-    }), t(b.exports, 'default', function() {
-        return _g;
+    var _r = q;
+}), c.register('bMaPZ2', function(d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function() {
+        return _h;
+    }), a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('ARAVZ');
-    const e = [],
-        _f = t => e.includes(t);
-    var _g = t => {
+    var f = c('TptDc');
+    const g = [],
+        _h = a => g.includes(a);
+    var _i = a => {
         const {
-            familyName: h,
-            onLoad: i
-        } = t;
-        e.includes(h) ? i && i() : _b(d).load({
+            familyName: j,
+            onLoad: k
+        } = a;
+        g.includes(j) ? k && k() : b(f).load({
             google: {
-                families: [`${ h }:400,700`]
+                families: [`${ j }:400,700`]
             },
-            fontactive: t => {
-                e.includes(t) || e.push(t), h === t && i && i();
+            fontactive: a => {
+                g.includes(a) || g.push(a), j === a && k && k();
             }
         });
     };
-}), a.register('RKoHq', function(b, c) {
-    t(b.exports, 'default', function() {
-        return _d;
+}), c.register('vDEcc', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         TextStyle: {
             BorderWidth: 3,
             BorderRadius: 8
@@ -149,66 +149,66 @@ a.register('wXYDn', function(b, c) {
         Animation: {
             Visibility: {
                 DurationMS: 400,
-                Ease: _b(a('8WvaZ')).Math.Easing.Linear
+                Ease: b(c('ddhGF')).Math.Easing.Linear
             }
         }
     };
-}), a.register('vfR2b', function(_b, c) {
-    t(_b.exports, 'TextPadding', function() {
-        return _d;
-    });
-    const _d = () => 4;
-}), a.register('IFO6W13', function(b, c) {
-    t(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return _h;
-    });
-    var d = a('HqwPM'),
-        e = a('+oovY4'),
-        f = a('A17vD'),
-        g = a('HXXiu');
-    const _h = (t, b, a) => {
-        const i = (0, g.FetchVisualEditingPreview)(),
-            j = (0, f.FetchCurrentlyEditedDevice)();
-        if (!j || !i)
-            return;
-        const k = j.layers.isOnNaturalDepth() ? void 0 : b + j.layers.getDepthShift();
-        (0, e.default)({
-            deviceOption: i.deviceOption,
-            id: d.VisualEditingConstants.previewId,
-            x: t,
-            y: b,
-            depth: k,
-            layerId: j.layers.getLayer(),
-            name: i.name,
-            isPreview: !0,
-            options: {
-                ...i.options,
-                ...a
-            },
-            placedByClient: !0,
-            state: i.deviceOption.defaultState
-        });
-    };
-}), a.register('+oovY4', function(b, c) {
-    t(b.exports, 'default', function() {
+}), c.register('lnsH90', function(d, e) {
+    a(d.exports, 'TextPadding', function() {
         return _f;
     });
-    var d = a('D5xLI'),
-        e = a('aIyMH');
-    var _f = t => {
-        (0, d.default)().worldManager.devices.getDeviceById(t.id) && (0, e.default)(t);
-    };
-}), a.register('R2Ucl10', function(b, c) {
-    t(b.exports, 'FetchOptionSchemaProperty', function() {
-        return _d;
+    const _f = () => 4;
+}), c.register('u/WlI21', function(d, e) {
+    a(d.exports, 'ReplaceVisualEditingPreview', function() {
+        return _j;
     });
-    const _d = (t, b) => {
-        var e, f, g;
-        const h = t.deviceOption.optionSchema.options.find(t => t.key === b);
+    var f = c('hemXM'),
+        g = c('sWmxu5'),
+        h = c('EzUqb'),
+        i = c('GQMbT');
+    const _j = (a, d, c) => {
+        const k = (0, i.FetchVisualEditingPreview)(),
+            l = (0, h.FetchCurrentlyEditedDevice)();
+        if (!l || !k)
+            return;
+        const m = l.layers.isOnNaturalDepth() ? void 0 : d + l.layers.getDepthShift();
+        (0, g.default)({
+            deviceOption: k.deviceOption,
+            id: f.VisualEditingConstants.previewId,
+            x: a,
+            y: d,
+            depth: m,
+            layerId: l.layers.getLayer(),
+            name: k.name,
+            isPreview: !0,
+            options: {
+                ...k.options,
+                ...c
+            },
+            placedByClient: !0,
+            state: k.deviceOption.defaultState
+        });
+    };
+}), c.register('sWmxu5', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
+    });
+    var f = c('heTaO'),
+        g = c('2LtPo');
+    var _h = a => {
+        (0, f.default)().worldManager.devices.getDeviceById(a.id) && (0, g.default)(a);
+    };
+}), c.register('uc4mA17', function(d, e) {
+    a(d.exports, 'FetchOptionSchemaProperty', function() {
+        return _f;
+    });
+    const _f = (a, d) => {
+        var g, h, i;
+        const j = a.deviceOption.optionSchema.options.find(a => a.key === d);
         return {
-            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
-            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
-            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
+            min: null === (g = null == j ? void 0 : j.option.props) || void 0 === g ? void 0 : g.min,
+            max: null === (h = null == j ? void 0 : j.option.props) || void 0 === h ? void 0 : h.max,
+            step: null === (i = null == j ? void 0 : j.option.props) || void 0 === i ? void 0 : i.step
         };
     };
 });

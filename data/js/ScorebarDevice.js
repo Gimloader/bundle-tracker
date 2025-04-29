@@ -12,14 +12,14 @@ a.register('MU6pg', function(b, c) {
         enumerable: !0,
         configurable: !0
     });
-    var i = a('1bFPu'),
-        j = a('iWivW'),
-        k = a('2Xvuf'),
-        l = a('9tz3H'),
-        m = a('/pbxo'),
-        n = a('I35Ay'),
-        o = a('+uQv7'),
-        p = a('dTXti');
+    var i = a('s/YA9'),
+        j = a('fI6of'),
+        k = a('UaUBz0'),
+        l = a('hycyg'),
+        m = a('UkCpC'),
+        n = a('ltxDW'),
+        o = a('73Aki'),
+        p = a('AHhkR');
     class q extends n.default {
         constructor(r) {
             if (super(r), (0, i.default)(this, 'getTeamColor', r => {

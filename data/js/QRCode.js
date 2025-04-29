@@ -12,8 +12,8 @@ a.register('qc42G', function(b, c) {
         enumerable: !0,
         configurable: !0
     });
-    var i = a('0hzx+'),
-        j = a('3Bibb');
+    var i = a('gRbUn'),
+        j = a('dXXu0');
     var _k = a => (0, i.jsx)(j.default, {
         value: a.link,
         size: 300

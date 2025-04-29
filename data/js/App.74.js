@@ -7,139 +7,139 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('SSj1l', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('nQgoc', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _o(b.exports, 'default', function() {
-        return _n;
+    }), a(d.exports, 'default', function() {
+        return _p;
     });
-    var e = a('0hzx+'),
-        f = a('6CIVV'),
-        g = a('LEQ5w'),
-        h = a('70AkF'),
-        i = a('gs4MT'),
-        j = a('jzxyj10'),
-        k = a('PMl60'),
-        l = a('0AyJ3'),
-        m = a('5cFKR');
-    var _n = () => {
-        const [_o, p] = (0, k.useBoolean)(!1), [q, r] = g.useState(null), [s, t] = g.useState(''), {
-            id: u
-        } = (0, h.useParams)();
-        return g.useEffect(() => {
-            (0, k.request)({
-                url: `/api/games/fetch/${ u }`,
-                success: _o => {
-                    r(_o.kit), t(_o.creator.name);
+    var g = c('gRbUn'),
+        h = c('yruHD'),
+        i = c('O0Kav'),
+        j = c('zcfNM'),
+        k = c('nKuOQ'),
+        l = c('KxkP827'),
+        m = c('quE27'),
+        n = c('fEyuQ'),
+        o = c('C7Pfa');
+    var _p = () => {
+        const [q, r] = (0, m.useBoolean)(!1), [s, t] = i.useState(null), [u, v] = i.useState(''), {
+            id: w
+        } = (0, j.useParams)();
+        return i.useEffect(() => {
+            (0, m.request)({
+                url: `/api/games/fetch/${ w }`,
+                success: q => {
+                    t(q.kit), v(q.creator.name);
                 },
-                error: () => (0, j.NavigateTo)(i.HOMEPAGE)
+                error: () => (0, l.NavigateTo)(k.HOMEPAGE)
             });
-        }, []), q ? _o ? (0, e.jsx)(m.default, {
-            questions: q.questions
-        }) : (0, e.jsx)(l.default, {
-            title: q.title,
-            image: q.gif,
-            creator: s,
-            numberOfQuestions: q.questions.length,
-            setToPreview: p
-        }) : (0, e.jsx)('div', {
+        }, []), s ? q ? (0, g.jsx)(o.default, {
+            questions: s.questions
+        }) : (0, g.jsx)(n.default, {
+            title: s.title,
+            image: s.gif,
+            creator: u,
+            numberOfQuestions: s.questions.length,
+            setToPreview: r
+        }) : (0, g.jsx)('div', {
             className: 'maxAll flex-center',
             style: {
                 background: '#303f9f'
             },
-            children: (0, e.jsx)(f.default, {
+            children: (0, g.jsx)(h.default, {
                 size: 'large'
             })
         });
     };
-}), a.register('jzxyj10', function(b, c) {
-    _b(b.exports, 'NavigateTo', function() {
-        return _e;
+}), c.register('KxkP827', function(d, e) {
+    a(d.exports, 'NavigateTo', function() {
+        return _g;
     });
-    var d = a('oBJ9G');
-    const _e = _b => {
-        d.history.push(_b);
+    var f = c('qb3Ih');
+    const _g = a => {
+        f.history.push(a);
     };
-}), a.register('0AyJ3', function(b, c) {
-    _b(b.exports, 'default', function() {
-        return _t;
+}), c.register('fEyuQ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _v;
     });
-    var d = a('0hzx+'),
-        e = a('fmVdR');
-    a('LEQ5w');
-    var f = a('Axq+p'),
-        g = a('hHkFq'),
-        h = a('sHRDd'),
-        i = a('b5kvC'),
-        j = a('led8j'),
-        k = a('7s5R80'),
-        l = a('PMl60'),
-        m = a('DKaq/');
-    let n, o, p, q, r, s = _b => _b;
-    var _t = _b => (0, d.jsx)(_u, {
-        children: (0, d.jsxs)(_v, {
+    var f = c('gRbUn'),
+        g = c('VNuyu');
+    c('O0Kav');
+    var h = c('u4s09'),
+        i = c('jw1ib'),
+        j = c('8KqQ+'),
+        k = c('Eh2Wh'),
+        l = c('aPZ+w'),
+        m = c('F0ESS9'),
+        n = c('quE27'),
+        o = c('HFnro8');
+    let p, q, r, s, t, u = a => a;
+    var _v = a => (0, f.jsx)(_w, {
+        children: (0, f.jsxs)(_x, {
             children: [
-                (0, d.jsx)(m.default, {
+                (0, f.jsx)(o.default, {
                     size: 92,
                     blockModalOpen: !0,
-                    image: _b.image,
+                    image: a.image,
                     style: {
                         cursor: 'default'
                     }
                 }),
-                (0, d.jsx)(_w, {
-                    children: _b.title
+                (0, f.jsx)(_y, {
+                    children: a.title
                 }),
-                (0, d.jsx)(_x, {
-                    children: _b.creator
+                (0, f.jsx)(_z, {
+                    children: a.creator
                 }),
-                (0, d.jsx)(e.default, {}),
-                0 === _b.numberOfQuestions ? (0, d.jsx)('div', {
+                (0, f.jsx)(g.default, {}),
+                0 === a.numberOfQuestions ? (0, f.jsx)('div', {
                     style: {
                         fontSize: 18
                     },
                     children: 'This kit cannot be practiced as it does not contain any questions.'
-                }) : (0, d.jsxs)(d.Fragment, {
+                }) : (0, f.jsxs)(f.Fragment, {
                     children: [
-                        (0, d.jsx)(j.default, {
-                            customFontWeight: i.FontWeights.Bold,
+                        (0, f.jsx)(l.default, {
+                            customFontWeight: k.FontWeights.Bold,
                             type: 'success',
                             size: 'large',
-                            onClick: _b.setToPreview,
+                            onClick: a.setToPreview,
                             ariaLabel: 'Practice',
                             children: 'Practice'
                         }),
-                        (0, d.jsxs)(_y, {
+                        (0, f.jsxs)(_A, {
                             children: [
-                                (0, d.jsxs)('div', {
+                                (0, f.jsxs)('div', {
                                     children: [
-                                        _b.numberOfQuestions,
+                                        a.numberOfQuestions,
                                         ' ',
-                                        (0, l.plural)('question', _b.numberOfQuestions)
+                                        (0, n.plural)('question', a.numberOfQuestions)
                                     ]
                                 }),
-                                (0, d.jsx)('div', {
+                                (0, f.jsx)('div', {
                                     style: {
                                         margin: '0px 12px'
                                     },
                                     className: 'flex',
-                                    children: (0, d.jsx)('i', {
+                                    children: (0, f.jsx)('i', {
                                         className: 'fas fa-circle',
                                         style: {
                                             fontSize: 10
                                         }
                                     })
                                 }),
-                                (0, d.jsxs)('div', {
+                                (0, f.jsxs)('div', {
                                     children: [
                                         'Powered by ',
-                                        g.COMPANY_NAME
+                                        i.COMPANY_NAME
                                     ]
                                 })
                             ]
@@ -149,16 +149,16 @@ a.register('SSj1l', function(b, c) {
             ]
         })
     });
-    const _u = f.default.div.attrs({
+    const _w = h.default.div.attrs({
             className: 'flex-center scroll-y maxAll'
-        })(n || (n = s`
+        })(p || (p = u`
   background: #303f9f;
   color: ${ 0 };
   font-family: ${ 0 };
-`), h.default.Black, i.Fonts.SFPro),
-        _v = (0, f.default)(k.default).attrs({
+`), j.default.Black, k.Fonts.SFPro),
+        _x = (0, h.default)(m.default).attrs({
             className: 'flex-center flex-column animated fadeIn'
-        })(o || (o = s`
+        })(q || (q = u`
   width: 90%;
   max-width: 700px;
   border-radius: 8px;
@@ -167,108 +167,108 @@ a.register('SSj1l', function(b, c) {
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1),
     0 10px 50px rgba(0, 0, 0, 0.4);
 `)),
-        _w = f.default.div(p || (p = s`
+        _y = h.default.div(r || (r = u`
   margin-top: 14px;
   font-size: 48px;
   font-weight: ${ 0 };
   text-align: center;
-`), i.FontWeights.UltraBold),
-        _x = f.default.div(q || (q = s`
+`), k.FontWeights.UltraBold),
+        _z = h.default.div(s || (s = u`
   font-size: 24px;
   margin-top: -4px;
 `)),
-        _y = f.default.div.attrs({
+        _A = h.default.div.attrs({
             className: 'flex vc'
-        })(r || (r = s`
+        })(t || (t = u`
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 20px;
   line-height: 1;
 `));
-}), a.register('led8j', function(b, c) {
-    _b(b.exports, 'default', function() {
-        return _k;
+}), c.register('aPZ+w', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _m;
     });
-    var d = a('0hzx+'),
-        e = a('GT7Vh'),
-        f = a('LEQ5w'),
-        g = a('Axq+p'),
-        h = a('b5kvC'),
-        i = a('vShe/');
-    let j;
-    var _k = _b => {
-        const l = _b.size || 'default',
-            m = f.useMemo(() => _b.customColor ? _b.customColor : _b.disabled ? '#546e7a' : 'success' === _b.type ? '#2e7d32' : 'danger' === _b.type ? '#c62828' : '#3f51b5', [
-                _b.disabled,
-                _b.type,
-                _b.customColor
+    var f = c('gRbUn'),
+        g = c('SAYZy'),
+        h = c('O0Kav'),
+        i = c('u4s09'),
+        j = c('Eh2Wh'),
+        k = c('HOIhZ');
+    let l;
+    var _m = a => {
+        const n = a.size || 'default',
+            o = h.useMemo(() => a.customColor ? a.customColor : a.disabled ? '#546e7a' : 'success' === a.type ? '#2e7d32' : 'danger' === a.type ? '#c62828' : '#3f51b5', [
+                a.disabled,
+                a.type,
+                a.customColor
             ]),
-            n = f.useMemo(() => (0, e.darken)(0.1, m), [m]),
-            o = f.useMemo(() => 'small' === l || 'default' === l ? 14 : 20, [l]),
-            p = f.useMemo(() => 'small' === l ? 6 : 'default' === l ? 8 : 12, [l]),
-            q = f.useMemo(() => {
-                const r = 'small' === l ? '8px' : '12px';
-                return _b.customHorizontalPadding ? `${ r } ${ _b.customHorizontalPadding }px` : 'small' === l ? `${ r } 24px` : 'default' === l ? `${ r } 28px` : `${ r } 42px`;
+            p = h.useMemo(() => (0, g.darken)(0.1, o), [o]),
+            q = h.useMemo(() => 'small' === n || 'default' === n ? 14 : 20, [n]),
+            r = h.useMemo(() => 'small' === n ? 6 : 'default' === n ? 8 : 12, [n]),
+            s = h.useMemo(() => {
+                const t = 'small' === n ? '8px' : '12px';
+                return a.customHorizontalPadding ? `${ t } ${ a.customHorizontalPadding }px` : 'small' === n ? `${ t } 24px` : 'default' === n ? `${ t } 28px` : `${ t } 42px`;
             }, [
-                l,
-                _b.customHorizontalPadding
+                n,
+                a.customHorizontalPadding
             ]),
-            r = f.useMemo(() => 'small' === l ? 41 : 49, [l]),
-            s = f.useMemo(() => _b.customFontWeight ? _b.customFontWeight : 'large' === l ? h.FontWeights.Bold : h.FontWeights.Normal, [
-                _b.customFontWeight,
-                l
+            t = h.useMemo(() => 'small' === n ? 41 : 49, [n]),
+            u = h.useMemo(() => a.customFontWeight ? a.customFontWeight : 'large' === n ? j.FontWeights.Bold : j.FontWeights.Normal, [
+                a.customFontWeight,
+                n
             ]),
-            t = () => {
-                _b.disabled || _b.onClick && _b.onClick();
+            v = () => {
+                a.disabled || a.onClick && a.onClick();
             };
-        return (0, d.jsx)(_l, {
+        return (0, f.jsx)(_n, {
             style: Object.assign({
                 pointerEvents: 'all',
                 WebkitFlexShrink: 0,
                 flexShrink: 0,
-                height: r
-            }, _b.style || {}),
-            children: (0, d.jsxs)('button', {
+                height: t
+            }, a.style || {}),
+            children: (0, f.jsxs)('button', {
                 className: 'btn-pushable',
-                'aria-label': _b.ariaLabel,
-                onClick: _b.usePointerDownEvent ? void 0 : t,
-                onPointerDown: _b.usePointerDownEvent ? t : void 0,
+                'aria-label': a.ariaLabel,
+                onClick: a.usePointerDownEvent ? void 0 : v,
+                onPointerDown: a.usePointerDownEvent ? v : void 0,
                 style: {
-                    cursor: _b.disabled ? 'not-allowed' : 'pointer',
-                    width: _b.block ? '100%' : 'auto'
+                    cursor: a.disabled ? 'not-allowed' : 'pointer',
+                    width: a.block ? '100%' : 'auto'
                 },
                 children: [
-                    (0, d.jsx)('span', {
+                    (0, f.jsx)('span', {
                         className: 'btn-shadow',
                         style: {
-                            borderRadius: p
+                            borderRadius: r
                         }
                     }),
-                    (0, d.jsx)('span', {
+                    (0, f.jsx)('span', {
                         className: 'btn-edge',
                         style: {
-                            background: n,
-                            borderRadius: p
+                            background: p,
+                            borderRadius: r
                         }
                     }),
-                    (0, d.jsx)('span', {
+                    (0, f.jsx)('span', {
                         className: 'btn-front',
                         style: {
-                            background: m,
-                            fontSize: o,
-                            borderRadius: p,
-                            padding: q,
-                            fontWeight: s
+                            background: o,
+                            fontSize: q,
+                            borderRadius: r,
+                            padding: s,
+                            fontWeight: u
                         },
-                        children: _b.children
+                        children: a.children
                     })
                 ]
             })
         });
     };
-    const _l = g.default.div.attrs({
+    const _n = i.default.div.attrs({
         className: 'flex'
-    })(j || (j = (_b => _b)`
+    })(l || (l = (a => a)`
   align-items: flex-end;
 
   .btn-pushable {
@@ -326,53 +326,53 @@ a.register('SSj1l', function(b, c) {
     transform: translateY(1px);
     transition: transform 34ms;
   }
-`), i.default.White);
-}), a.register('vShe/', function(b, c) {
-    _b(b.exports, 'default', function() {
-        return _d;
+`), k.default.White);
+}), c.register('HOIhZ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         White: '#FFFFFF',
         Black: '#000000',
         Yellow: '#FFFF00',
         Purple: '#673ab7'
     };
-}), a.register('7s5R80', function(b, c) {
-    _b(b.exports, 'default', function() {
-        return _h;
+}), c.register('F0ESS9', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _j;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('sHRDd');
-    let g;
-    var _h = _b => (0, d.jsx)(_i, {
-        onClick: _b.onClick,
-        className: _b.className,
-        style: _b.style,
-        children: _b.children
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('8KqQ+');
+    let i;
+    var _j = a => (0, f.jsx)(_k, {
+        onClick: a.onClick,
+        className: a.className,
+        style: a.style,
+        children: a.children
     });
-    const _i = e.default.div(g || (g = (_b => _b)`
+    const _k = g.default.div(i || (i = (a => a)`
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1),
     0 10px 30px #f3ece8;
   border-radius: 0.2em 0.2em 0 0;
   background: ${ 0 };
   padding: 20px;
-`), f.default.White);
-}), a.register('DKaq/', function(b, c) {
-    _b(b.exports, 'default', function() {
-        return _l;
+`), h.default.White);
+}), c.register('HFnro8', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _n;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('YRlpt'),
-        h = a('sHRDd'),
-        i = a('x8CoD');
-    let j;
-    const k = f.default.img.attrs(_b => ({
-        src: _b.image
-    }))(j || (j = (_b => _b)`
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('AE7vR'),
+        j = c('8KqQ+'),
+        k = c('HloXO');
+    let l;
+    const m = h.default.img.attrs(a => ({
+        src: a.image
+    }))(l || (l = (a => a)`
   cursor: pointer;
   height: ${ 0 }px;
   width: ${ 0 }px;
@@ -381,26 +381,26 @@ a.register('SSj1l', function(b, c) {
   ${ 0 }
   flex-shrink: 0;
   object-fit: cover;
-`), _b => _b.size, _b => _b.size, _b => _b.customRightMargin ? _b.customRightMargin : 0, _b => _b.showBorder && `border: solid ${ h.default.Black } 1px;`);
-    var _l = _b => {
-        const [m, n] = e.useState(!1);
-        return (0, d.jsxs)(d.Fragment, {
+`), a => a.size, a => a.size, a => a.customRightMargin ? a.customRightMargin : 0, a => a.showBorder && `border: solid ${ j.default.Black } 1px;`);
+    var _n = a => {
+        const [o, p] = g.useState(!1);
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, d.jsx)(k, {
-                    ..._b,
-                    onClick: m => {
-                        m.stopPropagation(), _b.onClick && _b.onClick(), _b.blockModalOpen || n(!0);
+                (0, f.jsx)(m, {
+                    ...a,
+                    onClick: o => {
+                        o.stopPropagation(), a.onClick && a.onClick(), a.blockModalOpen || p(!0);
                     }
                 }),
-                (0, d.jsx)(g.default, {
-                    open: m,
-                    onCancel: _b => {
-                        _b.stopPropagation(), n(!1);
+                (0, f.jsx)(i.default, {
+                    open: o,
+                    onCancel: a => {
+                        a.stopPropagation(), p(!1);
                     },
                     footer: null,
                     closable: !1,
-                    children: (0, d.jsx)('img', {
-                        src: (0, i.getCloudinaryUrl)(_b.image),
+                    children: (0, f.jsx)('img', {
+                        src: (0, k.getCloudinaryUrl)(a.image),
                         style: {
                             width: '100%'
                         }
@@ -409,165 +409,165 @@ a.register('SSj1l', function(b, c) {
             ]
         });
     };
-}), a.register('x8CoD', function(b, c) {
-    _b(b.exports, 'getCloudinaryUrl', function() {
-        return _d;
+}), c.register('HloXO', function(d, e) {
+    a(d.exports, 'getCloudinaryUrl', function() {
+        return _f;
     });
-    const _d = _b => {
-            const e = _e(_b);
-            return e ? _b.includes('/video/upload') ? `https://${ _f }/video/upload/${ e }` : `https://${ _f }/image/upload/f_auto,fl_lossy,q_auto/${ e }` : _b;
+    const _f = a => {
+            const g = _g(a);
+            return g ? a.includes('/video/upload') ? `https://${ _h }/video/upload/${ g }` : `https://${ _h }/image/upload/f_auto,fl_lossy,q_auto/${ g }` : a;
         },
-        _e = _b => {
-            if (!_i.some(b => _b.includes(b)))
+        _g = a => {
+            if (!_k.some(d => a.includes(d)))
                 return null;
-            if (_b.includes(_g) && !_b.includes(`/${ _h }/`))
+            if (a.includes(_i) && !a.includes(`/${ _j }/`))
                 return null;
-            const f = _b.split('/');
-            if (!f || !f.length || f.length < 2)
+            const h = a.split('/');
+            if (!h || !h.length || h.length < 2)
                 return null;
-            const g = f[f.length - 2],
-                h = f[f.length - 1];
-            return g && h && g.startsWith('v') ? `${ g }/${ h }` : null;
+            const i = h[h.length - 2],
+                j = h[h.length - 1];
+            return i && j && i.startsWith('v') ? `${ i }/${ j }` : null;
         },
-        _f = 'media.gimkit.com',
-        _g = 'res.cloudinary.com',
-        _h = 'gimkit-production',
-        _i = [
-            _f,
-            _g
+        _h = 'media.gimkit.com',
+        _i = 'res.cloudinary.com',
+        _j = 'gimkit-production',
+        _k = [
+            _h,
+            _i
         ];
-}), a.register('JtnSG', function(b, c) {
-    _b(b.exports, 'default', function() {
-        return _g;
+}), c.register('JuRCP', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w');
-    const f = e.lazy(() => a('am6fB'));
-    var _g = _b => (0, d.jsx)(e.Suspense, {
-        fallback: _b.fallback || null,
-        children: (0, d.jsx)(f, {
-            latex: _b.latex
+    var f = c('gRbUn'),
+        g = c('O0Kav');
+    const h = g.lazy(() => c('bPSSr0'));
+    var _i = a => (0, f.jsx)(g.Suspense, {
+        fallback: a.fallback || null,
+        children: (0, f.jsx)(h, {
+            latex: a.latex
         })
     });
-}), a.register('am6fB', function(_b, c) {
-    _b.exports = Promise.all([
-        import('./' + a('HmN9A').resolve('emcKB')),
-        import('./' + a('HmN9A').resolve('5OCdz'))
-    ]).then(() => a('vZVkZ'));
-}), a.register('BXKZi0', function(b, c) {
-    _j(b.exports, 'default', function() {
-        return _g;
+}), c.register('bPSSr0', function(d, e) {
+    d.exports = Promise.all([
+        import('./' + c('Dq3qN').resolve('emcKB')),
+        import('./' + c('Dq3qN').resolve('5OCdz'))
+    ]).then(() => c('vZVkZ'));
+}), c.register('bQWYI', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('LEQ5w'),
-        e = a('+UcJ7'),
-        f = a('dR/Gi');
-    var _g = (_j, b) => {
-        const [h, i] = d.useState(() => {
-            var j, k;
-            const l = _j && 'current' in _j ? _j.current : _j;
-            return l ? [
-                l.offsetWidth,
-                l.offsetHeight
+    var f = c('O0Kav'),
+        g = c('GkLtI'),
+        h = c('Nnw7z');
+    var _i = (a, d) => {
+        const [j, k] = f.useState(() => {
+            var l, m;
+            const n = a && 'current' in a ? a.current : a;
+            return n ? [
+                n.offsetWidth,
+                n.offsetHeight
             ] : [
-                null !== (j = null == b ? void 0 : b.initialWidth) && void 0 !== j ? j : 0,
-                null !== (k = null == b ? void 0 : b.initialHeight) && void 0 !== k ? k : 0
+                null !== (l = null == d ? void 0 : d.initialWidth) && void 0 !== l ? l : 0,
+                null !== (m = null == d ? void 0 : d.initialHeight) && void 0 !== m ? m : 0
             ];
         });
-        return (0, f.default)(() => {
-            const j = _j && 'current' in _j ? _j.current : _j;
-            j && i([
-                j.offsetWidth,
-                j.offsetHeight
+        return (0, h.default)(() => {
+            const l = a && 'current' in a ? a.current : a;
+            l && k([
+                l.offsetWidth,
+                l.offsetHeight
             ]);
-        }, [_j]), (0, e.default)(_j, _j => {
-            const j = _j.target;
-            i([
-                j.offsetWidth,
-                j.offsetHeight
+        }, [a]), (0, g.default)(a, a => {
+            const l = a.target;
+            k([
+                l.offsetWidth,
+                l.offsetHeight
             ]);
-        }), h;
+        }), j;
     };
-}), a.register('+UcJ7', function(b, c) {
-    _j(b.exports, 'default', function() {
-        return _j;
+}), c.register('GkLtI', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _l;
     });
-    var d = a('iIbRn'),
-        e = a('dR/Gi'),
-        f = a('20TiJ'),
-        g = a('18t62');
-    let h;
-    const i = () => h || (h = function() {
-        const _j = new Map(),
-            k = new(0, d.default)((0, g.default)((k, a) => {
-                var l;
-                if (1 === k.length)
-                    null === (l = _j.get(k[0].target)) || void 0 === l || l(k[0], a);
+    var f = c('1PitP'),
+        g = c('Nnw7z'),
+        h = c('xRoVg'),
+        i = c('8Q3ZG');
+    let j;
+    const k = () => j || (j = function() {
+        const l = new Map(),
+            m = new(0, f.default)((0, i.default)((m, c) => {
+                var n;
+                if (1 === m.length)
+                    null === (n = l.get(m[0].target)) || void 0 === n || n(m[0], c);
                 else
-                    for (let m = 0; m < k.length; m++) {
-                        var n;
-                        null === (n = _j.get(k[m].target)) || void 0 === n || n(k[m], a);
+                    for (let o = 0; o < m.length; o++) {
+                        var p;
+                        null === (p = l.get(m[o].target)) || void 0 === p || p(m[o], c);
                     }
             }));
         return {
-            observer: k,
-            subscribe(l, m) {
-                k.observe(l), _j.set(l, m);
+            observer: m,
+            subscribe(n, o) {
+                m.observe(n), l.set(n, o);
             },
-            unsubscribe(l) {
-                k.unobserve(l), _j.delete(l);
+            unsubscribe(n) {
+                m.unobserve(n), l.delete(n);
             }
         };
     }());
-    var _j = function(k, l) {
-        const m = i(),
-            n = (0, f.default)(l);
-        return (0, e.default)(() => {
-            let o = !1;
-            const p = k && 'current' in k ? k.current : k;
-            if (p)
-                return m.subscribe(p, (k, m) => {
-                    o || n.current(k, m);
+    var _l = function(m, n) {
+        const o = k(),
+            p = (0, h.default)(n);
+        return (0, g.default)(() => {
+            let q = !1;
+            const r = m && 'current' in m ? m.current : m;
+            if (r)
+                return o.subscribe(r, (m, o) => {
+                    q || p.current(m, o);
                 }), () => {
-                    o = !0, m.unsubscribe(p);
+                    q = !0, o.unsubscribe(r);
                 };
         }, [
-            k,
             m,
-            n
-        ]), m.observer;
+            o,
+            p
+        ]), o.observer;
     };
-}), a.register('dR/Gi', function(b, c) {
-    _e(b.exports, 'default', function() {
-        return _d;
+}), c.register('Nnw7z', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = _b(a('LEQ5w'))['undefined' != typeof document && void 0 !== document.createElement ? 'useLayoutEffect' : 'useEffect'];
-}), a.register('20TiJ', function(_b, c) {
-    _e(_b.exports, 'default', function() {
-        return _e;
+    var _f = b(c('O0Kav'))['undefined' != typeof document && void 0 !== document.createElement ? 'useLayoutEffect' : 'useEffect'];
+}), c.register('xRoVg', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _g;
     });
-    var d = a('LEQ5w');
-    var _e = _e => {
-        const f = d.useRef(_e);
-        return d.useEffect(() => {
-            f.current = _e;
-        }), f;
+    var f = c('O0Kav');
+    var _g = a => {
+        const h = f.useRef(a);
+        return f.useEffect(() => {
+            h.current = a;
+        }), h;
     };
-}), a.register('18t62', function(b, c) {
-    _e(b.exports, 'default', function() {
-        return _d;
+}), c.register('8Q3ZG', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = function(_e) {
-        var f = [],
-            g = null,
-            h = function() {
-                for (var i = arguments.length, j = new Array(i), k = 0; k < i; k++)
-                    j[k] = arguments[k];
-                f = j, g || (g = requestAnimationFrame(function() {
-                    g = null, _e.apply(void 0, f);
+    var _f = function(g) {
+        var h = [],
+            i = null,
+            j = function() {
+                for (var k = arguments.length, l = new Array(k), m = 0; m < k; m++)
+                    l[m] = arguments[m];
+                h = l, i || (i = requestAnimationFrame(function() {
+                    i = null, g.apply(void 0, h);
                 }));
             };
-        return h.cancel = function() {
-            g && (cancelAnimationFrame(g), g = null);
-        }, h;
+        return j.cancel = function() {
+            i && (cancelAnimationFrame(i), i = null);
+        }, j;
     };
 });

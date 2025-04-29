@@ -6,145 +6,145 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('jWDNJ', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('zmuk6', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _x(b.exports, 'ZONE_UNSET_POSITION', function() {
-        return _v;
-    }), _x(b.exports, 'default', function() {
-        return _x;
+    }), a(c.exports, 'ZONE_UNSET_POSITION', function() {
+        return _w;
+    }), a(c.exports, 'default', function() {
+        return _y;
     });
-    var e = a('1bFPu'),
-        f = a('9tz3H'),
-        g = a('/pbxo'),
-        h = a('IFO6W13'),
-        i = a('R2Ucl10'),
-        j = a('I35Ay'),
-        k = a('D5xLI'),
-        l = a('iWivW'),
-        m = a('dTXti'),
-        n = a('+uQv7'),
-        o = a('2Xvuf'),
-        p = a('CZmOd'),
-        q = a('h2EGG'),
-        r = a('shybD'),
-        s = a('/w59D'),
-        t = a('vAe1/'),
-        u = a('pPaP1');
-    const _v = -999999999;
-    class w extends j.default {
-        constructor(_x) {
-            if (super(_x), (0, e.default)(this, 'addLayer', () => {
-                    const y = l.default.worldOptions.terrainOptions.find(y => y.id === this.options.terrainId);
-                    if (!y)
+    var f = b('s/YA9'),
+        g = b('hycyg'),
+        h = b('UkCpC'),
+        i = b('u/WlI21'),
+        j = b('uc4mA17'),
+        k = b('ltxDW'),
+        l = b('heTaO'),
+        m = b('fI6of'),
+        n = b('AHhkR'),
+        o = b('73Aki'),
+        p = b('UaUBz0'),
+        q = b('f2Uff'),
+        r = b('cNVx1'),
+        s = b('KK7/0'),
+        t = b('ZMfQS'),
+        u = b('Px2rd'),
+        v = b('z0TRL');
+    const _w = -999999999;
+    class x extends k.default {
+        constructor(y) {
+            if (super(y), (0, f.default)(this, 'addLayer', () => {
+                    const z = m.default.worldOptions.terrainOptions.find(z => z.id === this.options.terrainId);
+                    if (!z)
                         return;
+                    const {
+                        minX: A,
+                        minY: B,
+                        maxX: C,
+                        maxY: D
+                    } = (0, s.BackgroundTilesZoneUtil_GetTileCoordinatesBounds)(this), E = (0, u.BackgroundTilesZoneUtil_GetLayerDepth)(this), F = (0, l.default)().tileManager.layerManager.backgroundLayersManager.createLayer({
+                        layerId: this.id,
+                        depth: E
+                    }), G = {
+                        priority: this.layers.getGlobalDepth(),
+                        x: A,
+                        y: B,
+                        width: C - A,
+                        height: D - B,
+                        terrainOption: z
+                    };
+                    F.addFillZone(G), F.setScrollData({
+                        scrollFactor: this.options.scrollFactor,
+                        speedX: this.options.overrideScrollingSpeed ? this.options.scrollingSpeedX : void 0,
+                        speedY: this.options.overrideScrollingSpeed ? this.options.scrollingSpeedY : void 0
+                    }), F.addTintModifier({
+                        tint: (0, r.GetNumberFromHexColor)(this.options.tint)
+                    });
+                }), (0, f.default)(this, 'removeLayer', () => {
+                    (0, l.default)().tileManager.layerManager.backgroundLayersManager.removeLayer({
+                        layerId: this.id
+                    });
+                }), (0, f.default)(this, 'onShow', () => {
+                    this.addLayer();
+                }), (0, f.default)(this, 'onHide', () => {
+                    this.removeLayer();
+                }), (0, f.default)(this, 'addConnectionLine', () => {
+                    if (this.options.useFullMapSize)
+                        return;
+                    const z = (0, t.BackgroundTilesZoneUtil_FindClosestPointOnRect)(this),
+                        A = Phaser.Math.Distance.Between(this.x, this.y, z.x, z.y),
+                        B = Phaser.Math.Angle.Between(this.x, this.y, z.x, z.y);
+                    this.parts.add.rect({
+                        x: (z.x - this.x) / 2,
+                        y: (z.y - this.y) / 2,
+                        width: A,
+                        height: v.BackgroundTilesZoneConsts.border.width,
+                        angle: (0, q.ConvertRadToDeg)(B),
+                        color: v.BackgroundTilesZoneConsts.border.color,
+                        alpha: v.BackgroundTilesZoneConsts.border.alpha
+                    });
+                }), (0, f.default)(this, 'addBoundsBox', () => {
                     const {
                         minX: z,
                         minY: A,
                         maxX: B,
                         maxY: C
-                    } = (0, r.BackgroundTilesZoneUtil_GetTileCoordinatesBounds)(this), D = (0, t.BackgroundTilesZoneUtil_GetLayerDepth)(this), E = (0, k.default)().tileManager.layerManager.backgroundLayersManager.createLayer({
-                        layerId: this.id,
-                        depth: D
-                    }), F = {
-                        priority: this.layers.getGlobalDepth(),
-                        x: z,
-                        y: A,
+                    } = (0, s.BackgroundTilesZoneUtil_GetWorldCoordinatesBounds)(this), D = z + (B - z) / 2 - this.x, E = A + (C - A) / 2 - this.y;
+                    this.parts.add.rect({
+                        x: D,
+                        y: E,
+                        ignoreInput: !0,
                         width: B - z,
                         height: C - A,
-                        terrainOption: y
-                    };
-                    E.addFillZone(F), E.setScrollData({
-                        scrollFactor: this.options.scrollFactor,
-                        speedX: this.options.overrideScrollingSpeed ? this.options.scrollingSpeedX : void 0,
-                        speedY: this.options.overrideScrollingSpeed ? this.options.scrollingSpeedY : void 0
-                    }), E.addTintModifier({
-                        tint: (0, q.GetNumberFromHexColor)(this.options.tint)
-                    });
-                }), (0, e.default)(this, 'removeLayer', () => {
-                    (0, k.default)().tileManager.layerManager.backgroundLayersManager.removeLayer({
-                        layerId: this.id
-                    });
-                }), (0, e.default)(this, 'onShow', () => {
-                    this.addLayer();
-                }), (0, e.default)(this, 'onHide', () => {
-                    this.removeLayer();
-                }), (0, e.default)(this, 'addConnectionLine', () => {
-                    if (this.options.useFullMapSize)
-                        return;
-                    const y = (0, s.BackgroundTilesZoneUtil_FindClosestPointOnRect)(this),
-                        z = Phaser.Math.Distance.Between(this.x, this.y, y.x, y.y),
-                        A = Phaser.Math.Angle.Between(this.x, this.y, y.x, y.y);
-                    this.parts.add.rect({
-                        x: (y.x - this.x) / 2,
-                        y: (y.y - this.y) / 2,
-                        width: z,
-                        height: u.BackgroundTilesZoneConsts.border.width,
-                        angle: (0, p.ConvertRadToDeg)(A),
-                        color: u.BackgroundTilesZoneConsts.border.color,
-                        alpha: u.BackgroundTilesZoneConsts.border.alpha
-                    });
-                }), (0, e.default)(this, 'addBoundsBox', () => {
-                    const {
-                        minX: y,
-                        minY: z,
-                        maxX: A,
-                        maxY: B
-                    } = (0, r.BackgroundTilesZoneUtil_GetWorldCoordinatesBounds)(this), C = y + (A - y) / 2 - this.x, D = z + (B - z) / 2 - this.y;
-                    this.parts.add.rect({
-                        x: C,
-                        y: D,
-                        ignoreInput: !0,
-                        width: A - y,
-                        height: B - z,
                         color: 16777215,
                         alpha: 0,
-                        borderAlpha: u.BackgroundTilesZoneConsts.border.alpha,
-                        borderColor: u.BackgroundTilesZoneConsts.border.color,
-                        borderWidth: u.BackgroundTilesZoneConsts.border.width
+                        borderAlpha: v.BackgroundTilesZoneConsts.border.alpha,
+                        borderColor: v.BackgroundTilesZoneConsts.border.color,
+                        borderWidth: v.BackgroundTilesZoneConsts.border.width
                     });
-                }), (0, e.default)(this, 'setupVisualEditing', () => {
-                    if ((0, g.InGamePhase)() || (0, f.isPublishedVersion)())
+                }), (0, f.default)(this, 'setupVisualEditing', () => {
+                    if ((0, h.InGamePhase)() || (0, g.isPublishedVersion)())
                         return;
                     if (this.options.useFullMapSize)
                         return;
-                    const y = (0, i.FetchOptionSchemaProperty)(this, 'width'),
-                        z = (0, i.FetchOptionSchemaProperty)(this, 'height');
+                    const z = (0, j.FetchOptionSchemaProperty)(this, 'width'),
+                        A = (0, j.FetchOptionSchemaProperty)(this, 'height');
                     this.visualEditing.add.box({
                         keepRatio: !1,
                         rotable: !1,
                         width: this.options.width,
                         height: this.options.height,
-                        minWidth: y.min,
-                        maxWidth: y.max,
-                        minHeight: z.min,
-                        maxHeight: z.max,
+                        minWidth: z.min,
+                        maxWidth: z.max,
+                        minHeight: A.min,
+                        maxHeight: A.max,
                         x: this.options.zoneX - this.x,
                         y: this.options.zoneY - this.y,
-                        onChange: y => {
-                            (0, h.ReplaceVisualEditingPreview)(this.x, this.y, {
-                                width: y.width,
-                                height: y.height,
-                                zoneX: y.x,
-                                zoneY: y.y
+                        onChange: z => {
+                            (0, i.ReplaceVisualEditingPreview)(this.x, this.y, {
+                                width: z.width,
+                                height: z.height,
+                                zoneX: z.x,
+                                zoneY: z.y
                             });
                         }
                     });
-                }), (0, e.default)(this, 'destroy', _x => {
-                    super.destroy(_x), this.removeLayer();
-                }), this.addLayer(), (0, g.InGamePhase)() || (0, f.isPublishedVersion)())
+                }), (0, f.default)(this, 'destroy', y => {
+                    super.destroy(y), this.removeLayer();
+                }), this.addLayer(), (0, h.InGamePhase)() || (0, g.isPublishedVersion)())
                 return;
-            const y = m.default.Setting;
-            new(0, n.default)({
+            const z = n.default.Setting;
+            new(0, o.default)({
                 device: this,
-                baseColor: y.baseColor,
-                boxColor: y.boxColor,
+                baseColor: z.baseColor,
+                boxColor: z.boxColor,
                 content: {
                     icon: {
-                        image: (0, o.default)('devices/background_tile_zone/icon.png'),
+                        image: (0, p.default)('devices/background_tile_zone/icon.png'),
                         scale: 1
                     },
                     text: {
@@ -153,148 +153,148 @@ a.register('jWDNJ', function(b, c) {
                         size: 24
                     }
                 }
-            }), this.options.zoneX === _v && (this.options.zoneX = this.x), this.options.zoneY === _v && (this.options.zoneY = this.y), this.addConnectionLine(), this.addBoundsBox(), this.setupVisualEditing();
+            }), this.options.zoneX === _w && (this.options.zoneX = this.x), this.options.zoneY === _w && (this.options.zoneY = this.y), this.addConnectionLine(), this.addBoundsBox(), this.setupVisualEditing();
         }
     }
-    var _x = w;
-}), a.register('IFO6W13', function(b, c) {
-    _n(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return _h;
+    var _y = x;
+}), b.register('u/WlI21', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+        return _i;
     });
-    var d = a('HqwPM'),
-        e = a('+oovY4'),
-        f = a('A17vD'),
-        g = a('HXXiu');
-    const _h = (_n, a, b) => {
-        const i = (0, g.FetchVisualEditingPreview)(),
-            j = (0, f.FetchCurrentlyEditedDevice)();
-        if (!j || !i)
+    var e = b('hemXM'),
+        f = b('sWmxu5'),
+        g = b('EzUqb'),
+        h = b('GQMbT');
+    const _i = (a, b, c) => {
+        const j = (0, h.FetchVisualEditingPreview)(),
+            k = (0, g.FetchCurrentlyEditedDevice)();
+        if (!k || !j)
             return;
-        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
-        (0, e.default)({
-            deviceOption: i.deviceOption,
-            id: d.VisualEditingConstants.previewId,
-            x: _n,
-            y: a,
-            depth: k,
-            layerId: j.layers.getLayer(),
-            name: i.name,
+        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        (0, f.default)({
+            deviceOption: j.deviceOption,
+            id: e.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: l,
+            layerId: k.layers.getLayer(),
+            name: j.name,
             isPreview: !0,
             options: {
-                ...i.options,
-                ...b
+                ...j.options,
+                ...c
             },
             placedByClient: !0,
-            state: i.deviceOption.defaultState
+            state: j.deviceOption.defaultState
         });
     };
-}), a.register('+oovY4', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _f;
-    });
-    var d = a('D5xLI'),
-        e = a('aIyMH');
-    var _f = _n => {
-        (0, d.default)().worldManager.devices.getDeviceById(_n.id) && (0, e.default)(_n);
-    };
-}), a.register('R2Ucl10', function(b, c) {
-    _n(b.exports, 'FetchOptionSchemaProperty', function() {
-        return _d;
-    });
-    const _d = (_n, b) => {
-        var e, f, g;
-        const h = _n.deviceOption.optionSchema.options.find(_n => _n.key === b);
-        return {
-            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
-            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
-            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
-        };
-    };
-}), a.register('shybD', function(b, c) {
-    _n(b.exports, 'BackgroundTilesZoneUtil_GetTileCoordinatesBounds', function() {
-        return _f;
-    }), _n(b.exports, 'BackgroundTilesZoneUtil_GetWorldCoordinatesBounds', function() {
+}), b.register('sWmxu5', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var d = a('nDSr0'),
-        e = a('iWivW');
-    const _f = _n => ({
-            minX: _n.options.useFullMapSize ? 0 : _h(_n.options.zoneX - _n.options.width / 2) + 1,
-            minY: _n.options.useFullMapSize ? 0 : _h(_n.options.zoneY - _n.options.height / 2) + 1,
-            maxX: _n.options.useFullMapSize ? e.default.world.width : _h(_n.options.zoneX + _n.options.width / 2),
-            maxY: _n.options.useFullMapSize ? e.default.world.height : _h(_n.options.zoneY + _n.options.height / 2)
-        }),
-        _g = _n => {
-            const h = _f(_n);
-            return {
-                minX: h.minX * d.default.width,
-                minY: h.minY * d.default.height,
-                maxX: h.maxX * d.default.width,
-                maxY: h.maxY * d.default.height
-            };
-        },
-        _h = _n => Math.floor(_n / d.default.width);
-}), a.register('/w59D', function(b, c) {
-    _n(b.exports, 'BackgroundTilesZoneUtil_FindClosestPointOnRect', function() {
+    var e = b('heTaO'),
+        f = b('2LtPo');
+    var _g = a => {
+        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
+    };
+}), b.register('uc4mA17', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
-    var d = a('shybD');
-    const _e = _n => {
-        const f = {
-                x: _n.x,
-                y: _n.y
+    const _e = (a, c) => {
+        var f, g, h;
+        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
+        return {
+            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
+            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
+            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
+        };
+    };
+}), b.register('KK7/0', function(c, d) {
+    a(c.exports, 'BackgroundTilesZoneUtil_GetTileCoordinatesBounds', function() {
+        return _g;
+    }), a(c.exports, 'BackgroundTilesZoneUtil_GetWorldCoordinatesBounds', function() {
+        return _h;
+    });
+    var e = b('quTte'),
+        f = b('fI6of');
+    const _g = a => ({
+            minX: a.options.useFullMapSize ? 0 : _i(a.options.zoneX - a.options.width / 2) + 1,
+            minY: a.options.useFullMapSize ? 0 : _i(a.options.zoneY - a.options.height / 2) + 1,
+            maxX: a.options.useFullMapSize ? f.default.world.width : _i(a.options.zoneX + a.options.width / 2),
+            maxY: a.options.useFullMapSize ? f.default.world.height : _i(a.options.zoneY + a.options.height / 2)
+        }),
+        _h = a => {
+            const i = _g(a);
+            return {
+                minX: i.minX * e.default.width,
+                minY: i.minY * e.default.height,
+                maxX: i.maxX * e.default.width,
+                maxY: i.maxY * e.default.height
+            };
+        },
+        _i = a => Math.floor(a / e.default.width);
+}), b.register('ZMfQS', function(c, d) {
+    a(c.exports, 'BackgroundTilesZoneUtil_FindClosestPointOnRect', function() {
+        return _f;
+    });
+    var e = b('KK7/0');
+    const _f = a => {
+        const g = {
+                x: a.x,
+                y: a.y
             },
             {
-                minX: g,
-                minY: h,
-                maxX: i,
-                maxY: j
-            } = (0, d.BackgroundTilesZoneUtil_GetWorldCoordinatesBounds)(_n),
-            k = {
-                x: g,
-                y: h,
-                width: i - g,
-                height: j - h
+                minX: h,
+                minY: i,
+                maxX: j,
+                maxY: k
+            } = (0, e.BackgroundTilesZoneUtil_GetWorldCoordinatesBounds)(a),
+            l = {
+                x: h,
+                y: i,
+                width: j - h,
+                height: k - i
             },
-            l = Math.max(k.x, Math.min(f.x, k.x + k.width)),
-            m = Math.max(k.y, Math.min(f.y, k.y + k.height));
-        if (f.x >= k.x && f.x <= k.x + k.width && f.y >= k.y && f.y <= k.y + k.height) {
-            const _n = f.x - k.x,
-                o = k.x + k.width - f.x,
-                p = f.y - k.y,
-                q = k.y + k.height - f.y,
-                r = Math.min(_n, o, p, q);
-            return r === _n ? {
-                x: k.x,
-                y: f.y
-            } : r === o ? {
-                x: k.x + k.width,
-                y: f.y
-            } : r === p ? {
-                x: f.x,
-                y: k.y
+            m = Math.max(l.x, Math.min(g.x, l.x + l.width)),
+            n = Math.max(l.y, Math.min(g.y, l.y + l.height));
+        if (g.x >= l.x && g.x <= l.x + l.width && g.y >= l.y && g.y <= l.y + l.height) {
+            const o = g.x - l.x,
+                p = l.x + l.width - g.x,
+                q = g.y - l.y,
+                r = l.y + l.height - g.y,
+                s = Math.min(o, p, q, r);
+            return s === o ? {
+                x: l.x,
+                y: g.y
+            } : s === p ? {
+                x: l.x + l.width,
+                y: g.y
+            } : s === q ? {
+                x: g.x,
+                y: l.y
             } : {
-                x: f.x,
-                y: k.y + k.height
+                x: g.x,
+                y: l.y + l.height
             };
         }
         return {
-            x: l,
-            y: m
+            x: m,
+            y: n
         };
     };
-}), a.register('vAe1/', function(b, c) {
-    e(b.exports, 'BackgroundTilesZoneUtil_GetLayerDepth', function() {
-        return _f;
+}), b.register('Px2rd', function(c, d) {
+    a(c.exports, 'BackgroundTilesZoneUtil_GetLayerDepth', function() {
+        return _g;
     });
-    var d = a('E78vn'),
-        e = a('5CmLs');
-    const _f = e => d.default.Fill3 + 0.1 + 0.1 * (1000 - e.options.order + (0, e.default)(e.y) / 1000);
-}), a.register('pPaP1', function(b, c) {
-    e(b.exports, 'BackgroundTilesZoneConsts', function() {
-        return _d;
+    var e = b('YQpGS'),
+        f = b('H4eGM');
+    const _g = a => e.default.Fill3 + 0.1 + 0.1 * (1000 - a.options.order + (0, f.default)(a.y) / 1000);
+}), b.register('z0TRL', function(c, d) {
+    a(c.exports, 'BackgroundTilesZoneConsts', function() {
+        return _e;
     });
-    const _d = {
+    const _e = {
         border: {
             alpha: 0.5,
             width: 5,

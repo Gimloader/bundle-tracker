@@ -7,30 +7,30 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('w57ai', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('JIwzI', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _o(b.exports, 'default', function() {
-        return _o;
+    }), a(d.exports, 'default', function() {
+        return _q;
     });
-    var e = a('1bFPu'),
-        f = a('/pbxo'),
-        g = a('I35Ay'),
-        h = a('6Rd7a'),
-        i = a('sCbH9'),
-        j = a('9tz3H'),
-        k = a('+uQv7'),
-        l = a('2Xvuf'),
-        m = a('dTXti');
-    class n extends g.default {
-        constructor(_o) {
-            if (super(_o), (0, e.default)(this, 'openDeviceUI', () => {
+    var g = c('s/YA9'),
+        h = c('UkCpC'),
+        i = c('ltxDW'),
+        j = c('gl6Wg'),
+        k = c('bMaPZ2'),
+        l = c('hycyg'),
+        m = c('73Aki'),
+        n = c('UaUBz0'),
+        o = c('AHhkR');
+    class p extends i.default {
+        constructor(q) {
+            if (super(q), (0, g.default)(this, 'openDeviceUI', () => {
                     this.deviceUI.open({
                         style: this.options.style,
                         defaultFontFamily: this.options.defaultFontFamily,
@@ -38,21 +38,21 @@ a.register('w57ai', function(b, c) {
                         closableByUser: this.options.closableByUser,
                         code: this.options.code
                     });
-                }), (0, e.default)(this, 'callAction', _o => {
-                    this.sendToServerDevice(h.Messages.callAction, {
-                        calledActionName: _o
+                }), (0, g.default)(this, 'callAction', q => {
+                    this.sendToServerDevice(j.Messages.callAction, {
+                        calledActionName: q
                     });
-                }), (0, i.default)({
+                }), (0, k.default)({
                     familyName: this.options.defaultFontFamily
-                }), (0, f.InPreGamePhase)() && (0, j.isSavedVersion)()) {
-                const p = m.default.Overlay;
-                new(0, k.default)({
+                }), (0, h.InPreGamePhase)() && (0, l.isSavedVersion)()) {
+                const r = o.default.Overlay;
+                new(0, m.default)({
                     device: this,
-                    baseColor: p.baseColor,
-                    boxColor: p.boxColor,
+                    baseColor: r.baseColor,
+                    boxColor: r.boxColor,
                     content: {
                         icon: {
-                            image: (0, l.default)('devices/code_ui/icon.png'),
+                            image: (0, n.default)('devices/code_ui/icon.png'),
                             scale: 0.92
                         }
                     }
@@ -60,32 +60,32 @@ a.register('w57ai', function(b, c) {
             }
         }
     }
-    var _o = n;
-}), a.register('6Rd7a', function(b, c) {
-    let d;
-    e(b.exports, 'Messages', function() {
-        return d;
-    }), (d || (d = {})).callAction = 'callAction';
-}), a.register('sCbH9', function(b, c) {
-    e(b.exports, 'isGoogleFontLoaded', function() {
-        return _f;
-    }), e(b.exports, 'default', function() {
-        return _g;
+    var _q = p;
+}), c.register('gl6Wg', function(d, e) {
+    let f;
+    a(d.exports, 'Messages', function() {
+        return f;
+    }), (f || (f = {})).callAction = 'callAction';
+}), c.register('bMaPZ2', function(d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function() {
+        return _h;
+    }), a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('ARAVZ');
-    const e = [],
-        _f = e => e.includes(e);
-    var _g = e => {
+    var f = c('TptDc');
+    const g = [],
+        _h = a => g.includes(a);
+    var _i = a => {
         const {
-            familyName: h,
-            onLoad: i
-        } = e;
-        e.includes(h) ? i && i() : o(d).load({
+            familyName: j,
+            onLoad: k
+        } = a;
+        g.includes(j) ? k && k() : b(f).load({
             google: {
-                families: [`${ h }:400,700`]
+                families: [`${ j }:400,700`]
             },
-            fontactive: e => {
-                e.includes(e) || e.push(e), h === e && i && i();
+            fontactive: a => {
+                g.includes(a) || g.push(a), j === a && k && k();
             }
         });
     };

@@ -6,224 +6,224 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('Ohd7H', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('xTO+D', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _t(b.exports, 'BallZoneDevice', function() {
-        return _s;
-    }), _t(b.exports, 'default', function() {
+    }), a(c.exports, 'BallZoneDevice', function() {
         return _t;
+    }), a(c.exports, 'default', function() {
+        return _u;
     });
-    var e = a('1bFPu'),
-        f = a('h2EGG'),
-        g = a('9tz3H'),
-        h = a('/pbxo'),
-        i = a('kg3wN6'),
-        j = a('I35Ay'),
-        k = a('6zVq0'),
-        l = a('0v2nG'),
-        m = a('5CmLs'),
-        n = a('R2Ucl10'),
-        o = a('IFO6W13'),
-        p = a('NE1c5'),
-        q = a('NyV64'),
-        r = a('JqBF0');
-    class _s extends j.default {
+    var f = b('s/YA9'),
+        g = b('cNVx1'),
+        h = b('hycyg'),
+        i = b('UkCpC'),
+        j = b('FWW2T6'),
+        k = b('ltxDW'),
+        l = b('LlClK'),
+        m = b('qslaC'),
+        n = b('H4eGM'),
+        o = b('uc4mA17'),
+        p = b('u/WlI21'),
+        q = b('HAjVr'),
+        r = b('/YaFu1'),
+        s = b('GIe9o');
+    class _t extends k.default {
         getAlpha() {
-            return (0, h.InGamePhase)() ? this.state.active ? this.options.backgroundAlpha : 0 : (0, g.isPublishedVersion)() || (0, g.isSavedVersion)() && i.default.shouldShowInnerZone(this) ? this.options.backgroundAlpha : 0;
+            return (0, i.InGamePhase)() ? this.state.active ? this.options.backgroundAlpha : 0 : (0, h.isPublishedVersion)() || (0, h.isSavedVersion)() && j.default.shouldShowInnerZone(this) ? this.options.backgroundAlpha : 0;
         }
-        constructor(_t) {
-            if (super(_t), (0, e.default)(this, 'updatePartAlpha', _t => {
-                    const u = this.getAlpha();
-                    (0, h.InGamePhase)() && _t.updateAlpha(u > 0 ? 1 : 0);
-                }), (0, e.default)(this, 'updateAlpha', () => {
-                    const u = this.getAlpha();
-                    (0, h.InGamePhase)() && this.parts.forEach(a => {
-                        a.updateAlpha(u > 0 ? 1 : 0);
-                    }), this.rect && this.rect.updateAlpha(u);
-                }), (0, e.default)(this, 'onStateChange', _t => {
-                    'active' === _t && (this.updateAlpha(), this.state.active && (0, q.default)(this));
-                }), (0, e.default)(this, 'checkIfCollidersEnabled', () => this.state.active), (0, e.default)(this, 'setupVisualEditing', () => {
-                    if (!(0, h.InPreGamePhase)() || !(0, g.isSavedVersion)())
+        constructor(u) {
+            if (super(u), (0, f.default)(this, 'updatePartAlpha', u => {
+                    const v = this.getAlpha();
+                    (0, i.InGamePhase)() && u.updateAlpha(v > 0 ? 1 : 0);
+                }), (0, f.default)(this, 'updateAlpha', () => {
+                    const v = this.getAlpha();
+                    (0, i.InGamePhase)() && this.parts.forEach(b => {
+                        b.updateAlpha(v > 0 ? 1 : 0);
+                    }), this.rect && this.rect.updateAlpha(v);
+                }), (0, f.default)(this, 'onStateChange', u => {
+                    'active' === u && (this.updateAlpha(), this.state.active && (0, r.default)(this));
+                }), (0, f.default)(this, 'checkIfCollidersEnabled', () => this.state.active), (0, f.default)(this, 'setupVisualEditing', () => {
+                    if (!(0, i.InPreGamePhase)() || !(0, h.isSavedVersion)())
                         return;
-                    const u = (0, n.FetchOptionSchemaProperty)(this, 'width'),
-                        v = (0, n.FetchOptionSchemaProperty)(this, 'height');
+                    const v = (0, o.FetchOptionSchemaProperty)(this, 'width'),
+                        w = (0, o.FetchOptionSchemaProperty)(this, 'height');
                     this.visualEditing.add.box({
                         width: this.options.width,
                         height: this.options.height,
                         angle: 0,
                         rotable: !1,
-                        minWidth: u.min,
-                        maxWidth: u.max,
-                        minHeight: v.min,
-                        maxHeight: v.max,
+                        minWidth: v.min,
+                        maxWidth: v.max,
+                        minHeight: w.min,
+                        maxHeight: w.max,
                         keepRatio: !1,
-                        onChange: u => {
-                            (0, o.ReplaceVisualEditingPreview)(u.x, u.y, {
-                                width: u.width,
-                                height: u.height
+                        onChange: v => {
+                            (0, p.ReplaceVisualEditingPreview)(v.x, v.y, {
+                                width: v.width,
+                                height: v.height
                             });
                         }
                     });
-                }), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) {
+                }), (0, i.InPreGamePhase)() && (0, h.isSavedVersion)()) {
                 this.parts.add.sprite({
-                    ...l.IconAsset,
-                    depthChange: (0, m.default)(2)
+                    ...m.IconAsset,
+                    depthChange: (0, n.default)(2)
                 }).view.setScale(0.17);
             }
-            if ((0, h.InGamePhase)() || (0, g.isPublishedVersion)() ? this.options.visibleInGame : i.default.shouldShow(this)) {
+            if ((0, i.InGamePhase)() || (0, h.isPublishedVersion)() ? this.options.visibleInGame : j.default.shouldShow(this)) {
                 this.setupVisualEditing();
-                const u = (0, f.GetNumberFromHexColor)(this.options.color);
+                const v = (0, g.GetNumberFromHexColor)(this.options.color);
                 this.rect = this.parts.add.rect({
-                    color: u,
-                    layerId: r.default.DevicesUnderCharacters,
+                    color: v,
+                    layerId: s.default.DevicesUnderCharacters,
                     alpha: this.getAlpha(),
                     width: Math.abs(this.options.width),
                     height: Math.abs(this.options.height),
-                    borderColor: u,
-                    borderAlpha: (0, h.InGamePhase)() || (0, g.isPublishedVersion)() ? 0 : this.options.backgroundAlpha,
+                    borderColor: v,
+                    borderAlpha: (0, i.InGamePhase)() || (0, h.isPublishedVersion)() ? 0 : this.options.backgroundAlpha,
                     borderWidth: 4,
-                    depthChange: (0, m.default)(1),
+                    depthChange: (0, n.default)(1),
                     ignoreInput: !0
-                }), this.options.style === k.Style.blastball && (0, p.CreateBlastBallStyle)(this);
+                }), this.options.style === l.Style.blastball && (0, q.CreateBlastBallStyle)(this);
             }
         }
     }
-    var _t = _s;
-}), a.register('kg3wN6', function(b, c) {
-    _h(b.exports, 'ZonedDeviceDisplayOptions', function() {
+    var _u = _t;
+}), b.register('FWW2T6', function(c, d) {
+    a(c.exports, 'ZonedDeviceDisplayOptions', function() {
+        return _f;
+    }), a(c.exports, 'default', function() {
+        return _i;
+    });
+    var e = b('OR/wR6');
+    let _f;
+    var g;
+    (g = _f || (_f = {})).visible = 'visible', g.bordersOnly = 'bordersOnly', g.fullyHidden = 'fullyHidden';
+    const h = () => {
+        const i = localStorage.getItem(e.default.zonedDeviceViews);
+        return i || _f.bordersOnly;
+    };
+    var _i = {
+        shouldShow: a => h() !== _f.fullyHidden,
+        shouldShowInnerZone: a => h() !== _f.bordersOnly
+    };
+}), b.register('OR/wR6', function(c, d) {
+    a(c.exports, 'default', function() {
         return _e;
-    }), _h(b.exports, 'default', function() {
-        return _h;
     });
-    var d = a('+MyMe6');
-    let _e;
-    var f;
-    (f = _e || (_e = {})).visible = 'visible', f.bordersOnly = 'bordersOnly', f.fullyHidden = 'fullyHidden';
-    const g = () => {
-        const _h = localStorage.getItem(d.default.zonedDeviceViews);
-        return _h || _e.bordersOnly;
-    };
-    var _h = {
-        shouldShow: e => g() !== _e.fullyHidden,
-        shouldShowInnerZone: e => g() !== _e.bordersOnly
-    };
-}), a.register('+MyMe6', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _d;
-    });
-    var _d = {
+    var _e = {
         zonedDeviceViews: 'zoned-device-views'
     };
-}), a.register('6zVq0', function(b, c) {
-    let d;
-    var e;
-    let f;
-    var g;
-    e(b.exports, 'Style', function() {
-        return d;
-    }), e(b.exports, 'Side', function() {
-        return f;
-    }), (e = d || (d = {})).none = 'None', e.blastball = 'Blastball', (g = f || (f = {})).left = 'Left', g.right = 'Right';
-}), a.register('0v2nG', function(b, c) {
-    e(b.exports, 'IconAsset', function() {
-        return _e;
-    }), e(b.exports, 'BlastBallAssets', function() {
+}), b.register('LlClK', function(c, d) {
+    let e;
+    var f;
+    let g;
+    var h;
+    a(c.exports, 'Style', function() {
+        return e;
+    }), a(c.exports, 'Side', function() {
+        return g;
+    }), (f = e || (e = {})).none = 'None', f.blastball = 'Blastball', (h = g || (g = {})).left = 'Left', h.right = 'Right';
+}), b.register('qslaC', function(c, d) {
+    a(c.exports, 'IconAsset', function() {
         return _f;
+    }), a(c.exports, 'BlastBallAssets', function() {
+        return _g;
     });
-    var d = a('2Xvuf');
-    const _e = {
-            imageId: (0, d.default)('devices/ball_zone/icon.png'),
-            imageUrl: (0, d.default)('devices/ball_zone/icon.png')
+    var e = b('UaUBz0');
+    const _f = {
+            imageId: (0, e.default)('devices/ball_zone/icon.png'),
+            imageUrl: (0, e.default)('devices/ball_zone/icon.png')
         },
-        _f = {
+        _g = {
             side_bottom: {
-                imageId: (0, d.default)('devices/ball_zone/blastball_side_bottom.png'),
-                imageUrl: (0, d.default)('devices/ball_zone/blastball_side_bottom.png')
+                imageId: (0, e.default)('devices/ball_zone/blastball_side_bottom.png'),
+                imageUrl: (0, e.default)('devices/ball_zone/blastball_side_bottom.png')
             },
             side_top: {
-                imageId: (0, d.default)('devices/ball_zone/blastball_side_top.png'),
-                imageUrl: (0, d.default)('devices/ball_zone/blastball_side_top.png')
+                imageId: (0, e.default)('devices/ball_zone/blastball_side_top.png'),
+                imageUrl: (0, e.default)('devices/ball_zone/blastball_side_top.png')
             },
             crossbar: {
-                imageId: (0, d.default)('devices/ball_zone/blastball_crossbar.png'),
-                imageUrl: (0, d.default)('devices/ball_zone/blastball_crossbar.png')
+                imageId: (0, e.default)('devices/ball_zone/blastball_crossbar.png'),
+                imageUrl: (0, e.default)('devices/ball_zone/blastball_crossbar.png')
             },
             dot: {
-                imageId: (0, d.default)('devices/ball_zone/blastball_dot.png'),
-                imageUrl: (0, d.default)('devices/ball_zone/blastball_dot.png')
+                imageId: (0, e.default)('devices/ball_zone/blastball_dot.png'),
+                imageUrl: (0, e.default)('devices/ball_zone/blastball_dot.png')
             }
         };
-}), a.register('R2Ucl10', function(b, c) {
-    e(b.exports, 'FetchOptionSchemaProperty', function() {
-        return _d;
+}), b.register('uc4mA17', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
+        return _e;
     });
-    const _d = (e, b) => {
-        var e, f, g;
-        const h = e.deviceOption.optionSchema.options.find(e => e.key === b);
+    const _e = (a, c) => {
+        var f, g, h;
+        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
         return {
-            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
-            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
-            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
+            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
+            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
+            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
         };
     };
-}), a.register('IFO6W13', function(b, c) {
-    e(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return _h;
+}), b.register('u/WlI21', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+        return _i;
     });
-    var d = a('HqwPM'),
-        e = a('+oovY4'),
-        f = a('A17vD'),
-        g = a('HXXiu');
-    const _h = (e, a, b) => {
-        const i = (0, g.FetchVisualEditingPreview)(),
-            j = (0, f.FetchCurrentlyEditedDevice)();
-        if (!j || !i)
+    var e = b('hemXM'),
+        f = b('sWmxu5'),
+        g = b('EzUqb'),
+        h = b('GQMbT');
+    const _i = (a, b, c) => {
+        const j = (0, h.FetchVisualEditingPreview)(),
+            k = (0, g.FetchCurrentlyEditedDevice)();
+        if (!k || !j)
             return;
-        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
-        (0, e.default)({
-            deviceOption: i.deviceOption,
-            id: d.VisualEditingConstants.previewId,
-            x: e,
-            y: a,
-            depth: k,
-            layerId: j.layers.getLayer(),
-            name: i.name,
+        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        (0, f.default)({
+            deviceOption: j.deviceOption,
+            id: e.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: l,
+            layerId: k.layers.getLayer(),
+            name: j.name,
             isPreview: !0,
             options: {
-                ...i.options,
-                ...b
+                ...j.options,
+                ...c
             },
             placedByClient: !0,
-            state: i.deviceOption.defaultState
+            state: j.deviceOption.defaultState
         });
     };
-}), a.register('+oovY4', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _f;
+}), b.register('sWmxu5', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('D5xLI'),
-        e = a('aIyMH');
-    var _f = e => {
-        (0, d.default)().worldManager.devices.getDeviceById(e.id) && (0, e.default)(e);
+    var e = b('heTaO'),
+        f = b('2LtPo');
+    var _g = a => {
+        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
     };
-}), a.register('NE1c5', function(b, c) {
-    e(b.exports, 'CreateBlastBallStyle', function() {
-        return _h;
+}), b.register('HAjVr', function(c, d) {
+    a(c.exports, 'CreateBlastBallStyle', function() {
+        return _i;
     });
-    var d = a('0v2nG'),
-        e = a('JqBF0'),
-        f = a('6zVq0'),
-        g = a('5CmLs');
-    const _h = e => {
-        const i = 0.15,
-            j = i => e.options.side === f.Side.left ? i : -i;
-        e.parts.add.ninePatch({
-            ...d.BlastBallAssets.crossbar,
-            layerId: e.default.DevicesUnderCharacters,
+    var e = b('qslaC'),
+        f = b('GIe9o'),
+        g = b('LlClK'),
+        h = b('H4eGM');
+    const _i = a => {
+        const j = 0.15,
+            k = j => a.options.side === g.Side.left ? j : -j;
+        a.parts.add.ninePatch({
+            ...e.BlastBallAssets.crossbar,
+            layerId: f.default.DevicesUnderCharacters,
             columns: [
                 0,
                 0
@@ -232,17 +232,17 @@ a.register('Ohd7H', function(b, c) {
                 200,
                 200
             ],
-            height: e.options.height,
+            height: a.options.height,
             width: 30.45,
-            scale: i,
-            depthChange: (0, g.default)(2),
-            x: j(-e.options.width / 2 + 5),
-            onReady: i => {
-                e.updatePartAlpha(i);
+            scale: j,
+            depthChange: (0, h.default)(2),
+            x: k(-a.options.width / 2 + 5),
+            onReady: j => {
+                a.updatePartAlpha(j);
             }
-        }), e.parts.add.ninePatch({
-            ...d.BlastBallAssets.side_top,
-            layerId: e.default.DepthSortedCharactersAndDevices,
+        }), a.parts.add.ninePatch({
+            ...e.BlastBallAssets.side_top,
+            layerId: f.default.DepthSortedCharactersAndDevices,
             columns: [
                 850,
                 850
@@ -251,17 +251,17 @@ a.register('Ohd7H', function(b, c) {
                 0,
                 0
             ],
-            height: 606 * i,
-            width: j(e.options.width + 30),
-            scale: i,
-            x: j(-5),
-            y: -e.options.height / 2,
-            onReady: i => {
-                e.updatePartAlpha(i);
+            height: 606 * j,
+            width: k(a.options.width + 30),
+            scale: j,
+            x: k(-5),
+            y: -a.options.height / 2,
+            onReady: j => {
+                a.updatePartAlpha(j);
             }
-        }), e.parts.add.ninePatch({
-            ...d.BlastBallAssets.side_bottom,
-            layerId: e.default.DepthSortedCharactersAndDevices,
+        }), a.parts.add.ninePatch({
+            ...e.BlastBallAssets.side_bottom,
+            layerId: f.default.DepthSortedCharactersAndDevices,
             columns: [
                 850,
                 850
@@ -270,61 +270,61 @@ a.register('Ohd7H', function(b, c) {
                 0,
                 0
             ],
-            height: 606 * i,
-            width: j(e.options.width + 30),
-            scale: i,
-            x: j(-5),
-            y: e.options.height / 2,
-            onReady: i => {
-                e.updatePartAlpha(i);
+            height: 606 * j,
+            width: k(a.options.width + 30),
+            scale: j,
+            x: k(-5),
+            y: a.options.height / 2,
+            onReady: j => {
+                a.updatePartAlpha(j);
             }
-        }), e.colliders.add.box({
+        }), a.colliders.add.box({
             x: 0,
-            y: -e.options.height / 2 + 10,
-            w: e.options.width + 16,
+            y: -a.options.height / 2 + 10,
+            w: a.options.width + 16,
             h: 50
-        }), e.colliders.add.box({
+        }), a.colliders.add.box({
             x: 0,
-            y: e.options.height / 2 + 10,
-            w: e.options.width + 16,
+            y: a.options.height / 2 + 10,
+            w: a.options.width + 16,
             h: 50
-        }), e.colliders.add.box({
-            x: j(-e.options.width / 2 + 5),
+        }), a.colliders.add.box({
+            x: k(-a.options.width / 2 + 5),
             y: 0,
             w: 28,
-            h: e.options.height
-        }), e.parts.add.sprite({
-            ...d.BlastBallAssets.dot,
-            layerId: e.default.DepthSortedCharactersAndDevices,
-            x: j(5),
-            y: -e.options.height / 2 + 20,
+            h: a.options.height
+        }), a.parts.add.sprite({
+            ...e.BlastBallAssets.dot,
+            layerId: f.default.DepthSortedCharactersAndDevices,
+            x: k(5),
+            y: -a.options.height / 2 + 20,
             depthChange: 10,
-            onReady: j => {
-                e.updatePartAlpha(j), j.view.setScale(i);
+            onReady: k => {
+                a.updatePartAlpha(k), k.view.setScale(j);
             }
-        }), e.parts.add.sprite({
-            ...d.BlastBallAssets.dot,
-            layerId: e.default.DepthSortedCharactersAndDevices,
-            x: j(5),
-            y: e.options.height / 2 + 20,
+        }), a.parts.add.sprite({
+            ...e.BlastBallAssets.dot,
+            layerId: f.default.DepthSortedCharactersAndDevices,
+            x: k(5),
+            y: a.options.height / 2 + 20,
             depthChange: 10,
-            onReady: j => {
-                e.updatePartAlpha(j), j.view.setScale(i);
+            onReady: k => {
+                a.updatePartAlpha(k), k.view.setScale(j);
             }
         });
     };
-}), a.register('NyV64', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _f;
+}), b.register('/YaFu1', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('Jfada'),
-        e = a('B7ZvS');
-    var _f = e => {
-        const g = (0, e.default)((0, d.default)());
-        e.colliders.forEach(e => {
-            var h, i, j;
-            const k = e.bodyId;
-            null === (h = null == g ? void 0 : g.physics.getBody()) || void 0 === h || null === (i = h.character) || void 0 === i || null === (j = i.ignoredStaticBodies) || void 0 === j || j.add(k);
+    var e = b('5Fjxs'),
+        f = b('d7UqH');
+    var _g = a => {
+        const h = (0, f.default)((0, e.default)());
+        a.colliders.forEach(a => {
+            var i, j, k;
+            const l = a.bodyId;
+            null === (i = null == h ? void 0 : h.physics.getBody()) || void 0 === i || null === (j = i.character) || void 0 === j || null === (k = j.ignoredStaticBodies) || void 0 === k || k.add(l);
         });
     };
 });

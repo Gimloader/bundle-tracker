@@ -12,8 +12,8 @@ a.register('9+bDj', function(b, c) {
         enumerable: !0,
         configurable: !0
     });
-    var i = a('PMl60'),
-        j = a('LEQ5w');
+    var i = a('quE27'),
+        j = a('O0Kav');
     var _k = () => (j.useEffect(() => {
         if (window.location.href.includes('/group-subscription/complete')) {
             let l = (0, i.getUrlVariable)('subscriptionId');

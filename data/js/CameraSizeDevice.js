@@ -6,56 +6,56 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('SJE8Y', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('g6jJt', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _n(b.exports, 'default', function() {
-        return _n;
+    }), a(c.exports, 'default', function() {
+        return _o;
     });
-    var e = a('1bFPu'),
-        f = a('I35Ay'),
-        g = a('6w1oh'),
-        h = a('/pbxo'),
-        i = a('9tz3H'),
-        j = a('kg3wN6'),
-        k = a('IFO6W13'),
-        l = a('R2Ucl10');
-    class m extends f.default {
-        constructor(_n) {
-            if (super(_n), (0, e.default)(this, 'notifyManagerAboutUpdate', () => {
+    var f = b('s/YA9'),
+        g = b('ltxDW'),
+        h = b('5Y6la'),
+        i = b('UkCpC'),
+        j = b('hycyg'),
+        k = b('FWW2T6'),
+        l = b('u/WlI21'),
+        m = b('uc4mA17');
+    class n extends g.default {
+        constructor(o) {
+            if (super(o), (0, f.default)(this, 'notifyManagerAboutUpdate', () => {
                     this.scene.worldManager.devices.cameras.allCamerasNeedsUpdate = !0;
-                }), (0, e.default)(this, 'onDestroy', () => {
+                }), (0, f.default)(this, 'onDestroy', () => {
                     this.notifyManagerAboutUpdate();
-                }), (0, e.default)(this, 'setupVisualEditing', () => {
-                    if (!(0, h.InPreGamePhase)() || !(0, i.isSavedVersion)())
+                }), (0, f.default)(this, 'setupVisualEditing', () => {
+                    if (!(0, i.InPreGamePhase)() || !(0, j.isSavedVersion)())
                         return;
-                    const o = (0, l.FetchOptionSchemaProperty)(this, 'width'),
-                        p = (0, l.FetchOptionSchemaProperty)(this, 'height');
+                    const p = (0, m.FetchOptionSchemaProperty)(this, 'width'),
+                        q = (0, m.FetchOptionSchemaProperty)(this, 'height');
                     this.visualEditing.add.box({
                         width: this.options.width,
                         height: this.options.height,
-                        minWidth: o.min,
-                        maxWidth: o.max,
-                        minHeight: p.min,
-                        maxHeight: p.max,
+                        minWidth: p.min,
+                        maxWidth: p.max,
+                        minHeight: q.min,
+                        maxHeight: q.max,
                         rotable: !1,
                         keepRatio: !1,
-                        onChange: o => {
-                            (0, k.ReplaceVisualEditingPreview)(o.x, o.y, {
-                                width: o.width,
-                                height: o.height
+                        onChange: p => {
+                            (0, l.ReplaceVisualEditingPreview)(p.x, p.y, {
+                                width: p.width,
+                                height: p.height
                             });
                         }
                     });
-                }), this.setupVisualEditing(), this.notifyManagerAboutUpdate(), (0, i.isPublishedVersion)() || (0, h.InGamePhase)())
+                }), this.setupVisualEditing(), this.notifyManagerAboutUpdate(), (0, j.isPublishedVersion)() || (0, i.InGamePhase)())
                 return;
             this.layers.forceDepthManually(0);
-            this.parts.add.sprite(g.BaseAsset).view.setScale(0.5), j.default.shouldShow(this) && this.parts.add.rect({
+            this.parts.add.sprite(h.BaseAsset).view.setScale(0.5), k.default.shouldShow(this) && this.parts.add.rect({
                 color: 11400448,
-                alpha: j.default.shouldShowInnerZone(this) ? 0.2 : 0,
+                alpha: k.default.shouldShowInnerZone(this) ? 0.2 : 0,
                 width: Math.abs(this.options.width),
                 height: Math.abs(this.options.height),
                 borderColor: 11400448,
@@ -65,92 +65,92 @@ a.register('SJE8Y', function(b, c) {
             });
         }
     }
-    var _n = m;
-}), a.register('6w1oh', function(b, c) {
-    _h(b.exports, 'BaseAsset', function() {
-        return _e;
-    });
-    var d = a('2Xvuf');
-    const _e = {
-        imageId: (0, d.default)('devices/camera_size/base.png'),
-        imageUrl: (0, d.default)('devices/camera_size/base.png')
-    };
-}), a.register('kg3wN6', function(b, c) {
-    _h(b.exports, 'ZonedDeviceDisplayOptions', function() {
-        return _e;
-    }), _h(b.exports, 'default', function() {
-        return _h;
-    });
-    var d = a('+MyMe6');
-    let _e;
-    var f;
-    (f = _e || (_e = {})).visible = 'visible', f.bordersOnly = 'bordersOnly', f.fullyHidden = 'fullyHidden';
-    const g = () => {
-        const _h = localStorage.getItem(d.default.zonedDeviceViews);
-        return _h || _e.bordersOnly;
-    };
-    var _h = {
-        shouldShow: e => g() !== _e.fullyHidden,
-        shouldShowInnerZone: e => g() !== _e.bordersOnly
-    };
-}), a.register('+MyMe6', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _d;
-    });
-    var _d = {
-        zonedDeviceViews: 'zoned-device-views'
-    };
-}), a.register('IFO6W13', function(b, c) {
-    e(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return _h;
-    });
-    var d = a('HqwPM'),
-        e = a('+oovY4'),
-        f = a('A17vD'),
-        g = a('HXXiu');
-    const _h = (e, a, b) => {
-        const i = (0, g.FetchVisualEditingPreview)(),
-            j = (0, f.FetchCurrentlyEditedDevice)();
-        if (!j || !i)
-            return;
-        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
-        (0, e.default)({
-            deviceOption: i.deviceOption,
-            id: d.VisualEditingConstants.previewId,
-            x: e,
-            y: a,
-            depth: k,
-            layerId: j.layers.getLayer(),
-            name: i.name,
-            isPreview: !0,
-            options: {
-                ...i.options,
-                ...b
-            },
-            placedByClient: !0,
-            state: i.deviceOption.defaultState
-        });
-    };
-}), a.register('+oovY4', function(b, c) {
-    e(b.exports, 'default', function() {
+    var _o = n;
+}), b.register('5Y6la', function(c, d) {
+    a(c.exports, 'BaseAsset', function() {
         return _f;
     });
-    var d = a('D5xLI'),
-        e = a('aIyMH');
-    var _f = e => {
-        (0, d.default)().worldManager.devices.getDeviceById(e.id) && (0, e.default)(e);
+    var e = b('UaUBz0');
+    const _f = {
+        imageId: (0, e.default)('devices/camera_size/base.png'),
+        imageUrl: (0, e.default)('devices/camera_size/base.png')
     };
-}), a.register('R2Ucl10', function(b, c) {
-    e(b.exports, 'FetchOptionSchemaProperty', function() {
-        return _d;
+}), b.register('FWW2T6', function(c, d) {
+    a(c.exports, 'ZonedDeviceDisplayOptions', function() {
+        return _f;
+    }), a(c.exports, 'default', function() {
+        return _i;
     });
-    const _d = (e, b) => {
-        var e, f, g;
-        const h = e.deviceOption.optionSchema.options.find(e => e.key === b);
+    var e = b('OR/wR6');
+    let _f;
+    var g;
+    (g = _f || (_f = {})).visible = 'visible', g.bordersOnly = 'bordersOnly', g.fullyHidden = 'fullyHidden';
+    const h = () => {
+        const i = localStorage.getItem(e.default.zonedDeviceViews);
+        return i || _f.bordersOnly;
+    };
+    var _i = {
+        shouldShow: a => h() !== _f.fullyHidden,
+        shouldShowInnerZone: a => h() !== _f.bordersOnly
+    };
+}), b.register('OR/wR6', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _e;
+    });
+    var _e = {
+        zonedDeviceViews: 'zoned-device-views'
+    };
+}), b.register('u/WlI21', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+        return _i;
+    });
+    var e = b('hemXM'),
+        f = b('sWmxu5'),
+        g = b('EzUqb'),
+        h = b('GQMbT');
+    const _i = (a, b, c) => {
+        const j = (0, h.FetchVisualEditingPreview)(),
+            k = (0, g.FetchCurrentlyEditedDevice)();
+        if (!k || !j)
+            return;
+        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        (0, f.default)({
+            deviceOption: j.deviceOption,
+            id: e.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: l,
+            layerId: k.layers.getLayer(),
+            name: j.name,
+            isPreview: !0,
+            options: {
+                ...j.options,
+                ...c
+            },
+            placedByClient: !0,
+            state: j.deviceOption.defaultState
+        });
+    };
+}), b.register('sWmxu5', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
+    });
+    var e = b('heTaO'),
+        f = b('2LtPo');
+    var _g = a => {
+        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
+    };
+}), b.register('uc4mA17', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
+        return _e;
+    });
+    const _e = (a, c) => {
+        var f, g, h;
+        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
         return {
-            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
-            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
-            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
+            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
+            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
+            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
         };
     };
 });

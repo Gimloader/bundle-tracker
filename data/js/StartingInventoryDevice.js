@@ -6,62 +6,62 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('Epq2u', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('AfhT7', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _n(b.exports, 'default', function() {
-        return _n;
+    }), a(c.exports, 'default', function() {
+        return _o;
     });
-    var e = a('2Xvuf'),
-        f = a('9tz3H'),
-        g = a('/pbxo'),
-        h = a('I35Ay'),
-        i = a('+uQv7'),
-        j = a('dTXti'),
-        k = a('2M6xn'),
-        l = a('btxlR');
-    class m extends h.default {
-        constructor(_n) {
-            if (super(_n), (0, g.InGamePhase)() || (0, f.isPublishedVersion)())
+    var f = b('UaUBz0'),
+        g = b('hycyg'),
+        h = b('UkCpC'),
+        i = b('ltxDW'),
+        j = b('73Aki'),
+        k = b('AHhkR'),
+        l = b('T6zrb'),
+        m = b('256sH');
+    class n extends i.default {
+        constructor(o) {
+            if (super(o), (0, h.InGamePhase)() || (0, g.isPublishedVersion)())
                 return;
-            let o = k.UnknownItemAsset.imageUrl;
-            const p = (0, l.default)(this.options.itemId);
-            p && (o = p.previewImage);
-            const q = j.default.Overlay;
-            new(0, i.default)({
+            let p = l.UnknownItemAsset.imageUrl;
+            const q = (0, m.default)(this.options.itemId);
+            q && (p = q.previewImage);
+            const r = k.default.Overlay;
+            new(0, j.default)({
                 device: this,
-                baseColor: q.baseColor,
-                boxColor: q.boxColor,
+                baseColor: r.baseColor,
+                boxColor: r.boxColor,
                 content: {
                     topLeftIcon: {
-                        image: (0, e.default)('devices/starting_inventory/icon.png'),
+                        image: (0, f.default)('devices/starting_inventory/icon.png'),
                         scale: 1
                     },
                     icon: {
-                        image: o,
+                        image: p,
                         scale: 1
                     }
                 }
             });
         }
     }
-    var _n = m;
-}), a.register('2M6xn', function(b, c) {
-    e(b.exports, 'BaseAsset', function() {
-        return _e;
-    }), e(b.exports, 'UnknownItemAsset', function() {
+    var _o = n;
+}), b.register('T6zrb', function(c, d) {
+    a(c.exports, 'BaseAsset', function() {
         return _f;
+    }), a(c.exports, 'UnknownItemAsset', function() {
+        return _g;
     });
-    var d = a('2Xvuf');
-    const _e = {
-            imageId: (0, d.default)('devices/item_granter/base.png'),
-            imageUrl: (0, d.default)('devices/item_granter/base.png')
+    var e = b('UaUBz0');
+    const _f = {
+            imageId: (0, e.default)('devices/item_granter/base.png'),
+            imageUrl: (0, e.default)('devices/item_granter/base.png')
         },
-        _f = {
+        _g = {
             imageId: '__UNKNOWN_ITEM',
-            imageUrl: (0, d.default)('devices/item_granter/question-mark-2.png')
+            imageUrl: (0, e.default)('devices/item_granter/question-mark-2.png')
         };
 });

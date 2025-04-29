@@ -7,213 +7,213 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('Jhh4y', function(b, c) {
-    _F(b.exports, 'validateEmail', function() {
-        return _D;
-    }), _F(b.exports, 'default', function() {
-        return _E;
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('BTX4Q', function(d, e) {
+    a(d.exports, 'validateEmail', function() {
+        return _F;
+    }), a(d.exports, 'default', function() {
+        return _G;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('2x11J'),
-        h = a('b5kvC'),
-        i = a('NIZyA'),
-        j = a('fmVdR'),
-        k = a('ewwAh'),
-        l = a('MSsQO'),
-        m = a('sHRDd'),
-        n = a('pYmyT1'),
-        o = a('NmrDs1'),
-        p = a('uvADe0'),
-        q = a('PMl60'),
-        r = a('Hi0/F0'),
-        s = a('wvD0o'),
-        t = a('h8z+4'),
-        u = a('gs4MT'),
-        v = a('iwgXa'),
-        w = a('9oUwF'),
-        x = a('x6cBr'),
-        y = a('PeH+r');
-    let z, A, B, C = _F => _F;
-    const _D = _F => /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(_F).toLowerCase());
-    var _E = (0, g.observer)(() => {
-        const [_F, G] = e.useState(!1), [H, I] = e.useState(!1), [J, K] = e.useState(''), [L, M] = e.useState(!1), [N, O] = e.useState(null), [P, Q] = e.useState(!1), {
-            login: R,
-            navigation: S
-        } = e.useContext(o.default), {
-            emailSignInBlocked: T
-        } = S;
-        e.useEffect(() => {
-            (0, q.request)({
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('6jmvl'),
+        j = c('Eh2Wh'),
+        k = c('qMSe6'),
+        l = c('VNuyu'),
+        m = c('aevdF'),
+        n = c('Bjl070'),
+        o = c('8KqQ+'),
+        p = c('qfXCk3'),
+        q = c('UmTL74'),
+        r = c('AvOwZ2'),
+        s = c('quE27'),
+        t = c('zB1Rq4'),
+        u = c('CNAYr'),
+        v = c('30iJZ'),
+        w = c('nKuOQ'),
+        x = c('sL56x'),
+        y = c('yCNJL'),
+        z = c('vrjQO'),
+        A = c('uEqa5');
+    let B, C, D, E = a => a;
+    const _F = a => /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(a).toLowerCase());
+    var _G = (0, i.observer)(() => {
+        const [H, I] = g.useState(!1), [J, K] = g.useState(!1), [L, M] = g.useState(''), [N, O] = g.useState(!1), [P, Q] = g.useState(null), [R, S] = g.useState(!1), {
+            login: T,
+            navigation: U
+        } = g.useContext(q.default), {
+            emailSignInBlocked: V
+        } = U;
+        g.useEffect(() => {
+            (0, s.request)({
                 url: '/api/users/google-token',
-                success: _F => {
-                    _F && _F.token && K(_F.token);
+                success: H => {
+                    H && H.token && M(H.token);
                 }
             });
         }, []);
-        const U = _F => {
-                if (O(null), H)
+        const W = H => {
+                if (Q(null), J)
                     return;
-                const V = _F.target.value || '';
-                R.email = V, G(_D(V));
+                const X = H.target.value || '';
+                T.email = X, I(_F(X));
             },
-            V = () => {
-                _F && _X();
+            X = () => {
+                H && _Z();
             },
-            W = () => {
-                R.informationNeeded.replace(R.informationNeeded.filter(_F => _F !== r.informationTypes.email));
+            Y = () => {
+                T.informationNeeded.replace(T.informationNeeded.filter(H => H !== t.informationTypes.email));
             },
-            _X = () => {
-                H || (O(null), I(!0), Q(!1), (0, q.request)({
+            _Z = () => {
+                J || (Q(null), K(!0), S(!1), (0, s.request)({
                     url: '/api/users/register/email-info',
                     method: 'post',
                     data: {
-                        email: R.email
+                        email: T.email
                     },
-                    success: _F => {
-                        if (I(!1), window.location.pathname.includes('login') && !_F.accountExists)
-                            return R.googleToken = '', void Q(!0);
-                        if (_F.accountExists) {
-                            if (R.userExists = !0, !R.googleToken) {
-                                if (_F.noPassword)
-                                    return void(S.emailSignInBlocked = !0);
-                                R.informationNeeded.replace([
-                                    ...R.informationNeeded,
-                                    r.informationTypes.password
+                    success: H => {
+                        if (K(!1), window.location.pathname.includes('login') && !H.accountExists)
+                            return T.googleToken = '', void S(!0);
+                        if (H.accountExists) {
+                            if (T.userExists = !0, !T.googleToken) {
+                                if (H.noPassword)
+                                    return void(U.emailSignInBlocked = !0);
+                                T.informationNeeded.replace([
+                                    ...T.informationNeeded,
+                                    t.informationTypes.password
                                 ]);
                             }
-                            W();
+                            Y();
                         } else
-                            W(), R.informationNeeded.replace([
-                                ...R.informationNeeded,
-                                r.informationTypes.accountType
-                            ]), R.firstName || R.informationNeeded.replace([
-                                ...R.informationNeeded,
-                                r.informationTypes.firstName
-                            ]), R.lastName || R.informationNeeded.replace([
-                                ...R.informationNeeded,
-                                r.informationTypes.lastName
-                            ]), W();
+                            Y(), T.informationNeeded.replace([
+                                ...T.informationNeeded,
+                                t.informationTypes.accountType
+                            ]), T.firstName || T.informationNeeded.replace([
+                                ...T.informationNeeded,
+                                t.informationTypes.firstName
+                            ]), T.lastName || T.informationNeeded.replace([
+                                ...T.informationNeeded,
+                                t.informationTypes.lastName
+                            ]), Y();
                     },
-                    error: _F => {
-                        I(!1), O(_F);
+                    error: H => {
+                        K(!1), Q(H);
                     }
                 }));
             },
-            Y = () => {
-                l.default.error('Error with Google Authentication. Please try again.');
+            $ = () => {
+                n.default.error('Error with Google Authentication. Please try again.');
             },
-            Z = _F => {
-                (0, y.default)(_F).then(_F => {
-                    (_F => {
+            ab = H => {
+                (0, A.default)(H).then(H => {
+                    (H => {
                         const {
-                            firstName: $,
-                            lastName: ab,
-                            email: bb,
-                            emailVerified: cb,
-                            userToken: db
-                        } = _F;
-                        bb && (cb && db && (R.googleToken = db), R.email = bb, R.firstName = $, R.lastName = ab, _X());
-                    })(_F);
-                }).catch(_F => {
-                    Y();
+                            firstName: bb,
+                            lastName: cb,
+                            email: db,
+                            emailVerified: eb,
+                            userToken: fb
+                        } = H;
+                        db && (eb && fb && (T.googleToken = fb), T.email = db, T.firstName = bb, T.lastName = cb, _Z());
+                    })(H);
+                }).catch(H => {
+                    $();
                 });
             };
-        return (0, d.jsx)(_F, {
+        return (0, f.jsx)(_H, {
             children: (() => {
-                const $ = S.classJoiningName ? 'Join' : 'Continue';
-                return (0, d.jsxs)(d.Fragment, {
+                const bb = U.classJoiningName ? 'Join' : 'Continue';
+                return (0, f.jsxs)(f.Fragment, {
                     children: [
-                        T && (0, d.jsxs)('div', {
+                        V && (0, f.jsxs)('div', {
                             style: {
-                                fontWeight: h.FontWeights.Bold,
-                                color: m.default.Black,
+                                fontWeight: j.FontWeights.Bold,
+                                color: o.default.Black,
                                 fontSize: 19,
                                 marginBottom: 11
                             },
                             children: [
                                 'Authenticate with Google to',
                                 ' ',
-                                S.classJoiningName ? 'join' : 'login'
+                                U.classJoiningName ? 'join' : 'login'
                             ]
                         }),
-                        J ? (0, d.jsx)(s.GoogleOAuthProvider, {
-                            clientId: J,
-                            children: (0, d.jsx)(x.default, {
-                                text: $,
-                                onToken: Z,
-                                onError: Y
+                        L ? (0, f.jsx)(u.GoogleOAuthProvider, {
+                            clientId: L,
+                            children: (0, f.jsx)(z.default, {
+                                text: bb,
+                                onToken: ab,
+                                onError: $
                             })
-                        }) : (0, d.jsx)(w.default, {
-                            text: $
+                        }) : (0, f.jsx)(y.default, {
+                            text: bb
                         }),
-                        T ? (0, d.jsxs)(d.Fragment, {
+                        V ? (0, f.jsxs)(f.Fragment, {
                             children: [
-                                (0, d.jsx)(j.default, {}),
-                                (0, d.jsx)('a', {
-                                    onClick: () => M(!0),
+                                (0, f.jsx)(l.default, {}),
+                                (0, f.jsx)('a', {
+                                    onClick: () => O(!0),
                                     children: 'or add a password...'
                                 }),
-                                (0, d.jsx)(v.default, {
-                                    defaultEmail: R.email,
-                                    open: L,
-                                    close: () => M(!1)
+                                (0, f.jsx)(x.default, {
+                                    defaultEmail: T.email,
+                                    open: N,
+                                    close: () => O(!1)
                                 })
                             ]
                         }) : null,
-                        T ? null : (0, d.jsx)('div', {
+                        V ? null : (0, f.jsx)('div', {
                             className: 'maxWidth',
-                            children: (0, d.jsx)(j.default, {
+                            children: (0, f.jsx)(l.default, {
                                 children: 'or'
                             })
                         }),
-                        !T && (0, d.jsx)(d.Fragment, {
-                            children: (0, d.jsxs)(_G, {
+                        !V && (0, f.jsx)(f.Fragment, {
+                            children: (0, f.jsxs)(_I, {
                                 children: [
-                                    (0, d.jsxs)(_H, {
+                                    (0, f.jsxs)(_J, {
                                         children: [
-                                            S.classJoiningName ? 'Join' : 'Continue',
+                                            U.classJoiningName ? 'Join' : 'Continue',
                                             ' with email...'
                                         ]
                                     }),
-                                    (0, d.jsx)(k.default, {
-                                        onChange: U,
+                                    (0, f.jsx)(m.default, {
+                                        onChange: W,
                                         size: 'large',
                                         placeholder: 'Email address...',
-                                        onPressEnter: V,
+                                        onPressEnter: X,
                                         maxLength: 256
                                     }),
-                                    (0, d.jsx)(n.default, {
-                                        disabled: !_F,
+                                    (0, f.jsx)(p.default, {
+                                        disabled: !H,
                                         style: {
                                             marginTop: 5
                                         },
-                                        onClick: V,
-                                        loading: H,
+                                        onClick: X,
+                                        loading: J,
                                         children: 'Continue'
                                     })
                                 ]
                             })
                         }),
-                        !N && P ? (0, d.jsx)(i.default, {
+                        !P && R ? (0, f.jsx)(k.default, {
                             type: 'warning',
                             style: {
                                 marginTop: 10
                             },
-                            message: (0, d.jsxs)('div', {
+                            message: (0, f.jsxs)('div', {
                                 children: [
                                     'No account found.',
                                     ' ',
-                                    (0, q.getUrlVariable)('blockRedirect') ? null : (0, d.jsxs)(d.Fragment, {
+                                    (0, s.getUrlVariable)('blockRedirect') ? null : (0, f.jsxs)(f.Fragment, {
                                         children: [
                                             'Click here to ',
-                                            (0, d.jsx)('a', {
-                                                href: u.REGISTER_BASE,
+                                            (0, f.jsx)('a', {
+                                                href: w.REGISTER_BASE,
                                                 children: 'sign up.'
                                             })
                                         ]
@@ -221,30 +221,30 @@ a.register('Jhh4y', function(b, c) {
                                 ]
                             })
                         }) : null,
-                        (0, d.jsx)(p.default, {
-                            error: N,
+                        (0, f.jsx)(r.default, {
+                            error: P,
                             style: {
                                 marginTop: 10
                             }
                         }),
-                        (0, d.jsx)(t.default, {}),
-                        S.classJoiningName ? (0, d.jsxs)('div', {
+                        (0, f.jsx)(v.default, {}),
+                        U.classJoiningName ? (0, f.jsxs)('div', {
                             style: {
                                 marginTop: 25
                             },
                             children: [
                                 'By joining, you agree to our',
                                 ' ',
-                                (0, d.jsx)('a', {
-                                    href: u.PRIVACY_POLICY,
+                                (0, f.jsx)('a', {
+                                    href: w.PRIVACY_POLICY,
                                     target: '_blank',
                                     children: 'Privacy Policy'
                                 }),
                                 ' ',
                                 'and',
                                 ' ',
-                                (0, d.jsx)('a', {
-                                    href: u.TERMS_OF_SERVICE,
+                                (0, f.jsx)('a', {
+                                    href: w.TERMS_OF_SERVICE,
                                     target: '_blank',
                                     children: 'Terms Of Service'
                                 }),
@@ -256,177 +256,177 @@ a.register('Jhh4y', function(b, c) {
             })()
         });
     });
-    const _F = f.default.div(z || (z = C`
+    const _H = h.default.div(B || (B = E`
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
 `)),
-        _G = f.default.div(A || (A = C`
+        _I = h.default.div(C || (C = E`
   width: 100%;
   color: ${ 0 };
-`), m.default.Black),
-        _H = f.default.div(B || (B = C`
+`), o.default.Black),
+        _J = h.default.div(D || (D = E`
   font-size: 18px;
   font-weight: ${ 0 };
-`), h.FontWeights.Bold);
-}), a.register('wvD0o', function(b, c) {
-    _g(b.exports, 'GoogleOAuthProvider', function() {
-        return _f;
-    }), _g(b.exports, 'useGoogleLogin', function() {
-        return _f;
+`), j.FontWeights.Bold);
+}), c.register('CNAYr', function(d, e) {
+    a(d.exports, 'GoogleOAuthProvider', function() {
+        return _h;
+    }), a(d.exports, 'useGoogleLogin', function() {
+        return _j;
     });
-    var d = a('LEQ5w');
-    const e = (0, d.createContext)(null);
+    var f = c('O0Kav');
+    const g = (0, f.createContext)(null);
 
-    function _f({
-        clientId: _g,
-        onScriptLoadSuccess: h,
-        onScriptLoadError: i,
-        children: j
+    function _h({
+        clientId: i,
+        onScriptLoadSuccess: j,
+        onScriptLoadError: k,
+        children: l
     }) {
-        const k = function(l = {}) {
+        const m = function(n = {}) {
                 const {
-                    onScriptLoadSuccess: m,
-                    onScriptLoadError: n
-                } = l, [o, p] = (0, d.useState)(!1), q = (0, d.useRef)(m);
-                q.current = m;
-                const r = (0, d.useRef)(n);
-                return r.current = n, (0, d.useEffect)(() => {
-                    const s = document.createElement('script');
-                    return s.src = 'https://accounts.google.com/gsi/client', s.async = !0, s.defer = !0, s.onload = () => {
-                        var t;
-                        p(!0), null === (t = q.current) || void 0 === t || t.call(q);
-                    }, s.onerror = () => {
-                        var t;
-                        p(!1), null === (t = r.current) || void 0 === t || t.call(r);
-                    }, document.body.appendChild(s), () => {
-                        document.body.removeChild(s);
+                    onScriptLoadSuccess: o,
+                    onScriptLoadError: p
+                } = n, [q, r] = (0, f.useState)(!1), s = (0, f.useRef)(o);
+                s.current = o;
+                const t = (0, f.useRef)(p);
+                return t.current = p, (0, f.useEffect)(() => {
+                    const u = document.createElement('script');
+                    return u.src = 'https://accounts.google.com/gsi/client', u.async = !0, u.defer = !0, u.onload = () => {
+                        var v;
+                        r(!0), null === (v = s.current) || void 0 === v || v.call(s);
+                    }, u.onerror = () => {
+                        var v;
+                        r(!1), null === (v = t.current) || void 0 === v || v.call(t);
+                    }, document.body.appendChild(u), () => {
+                        document.body.removeChild(u);
                     };
-                }, []), o;
+                }, []), q;
             }({
-                onScriptLoadSuccess: h,
-                onScriptLoadError: i
+                onScriptLoadSuccess: j,
+                onScriptLoadError: k
             }),
-            l = (0, d.useMemo)(() => ({
-                clientId: _g,
-                scriptLoadedSuccessfully: k
+            n = (0, f.useMemo)(() => ({
+                clientId: i,
+                scriptLoadedSuccessfully: m
             }), [
-                _g,
-                k
+                i,
+                m
             ]);
-        return _h(d).createElement(e.Provider, {
-            value: l
-        }, j);
+        return b(f).createElement(g.Provider, {
+            value: n
+        }, l);
     }
 
-    function f() {
-        const g = (0, d.useContext)(e);
-        if (!g)
+    function i() {
+        const j = (0, f.useContext)(g);
+        if (!j)
             throw new Error('Google OAuth components must be used within GoogleOAuthProvider');
-        return g;
+        return j;
     }
 
-    function _f({
-        flow: g = 'implicit',
-        scope: _h = '',
-        onSuccess: i,
-        onError: j,
-        ...k
+    function _j({
+        flow: k = 'implicit',
+        scope: l = '',
+        onSuccess: m,
+        onError: n,
+        ...o
     }) {
         const {
-            clientId: l,
-            scriptLoadedSuccessfully: m
-        } = _h(), n = (0, d.useRef)(), o = (0, d.useRef)(i);
-        o.current = i;
-        const p = (0, d.useRef)(j);
-        p.current = j, (0, d.useEffect)(() => {
-            var q;
-            if (!m)
+            clientId: p,
+            scriptLoadedSuccessfully: q
+        } = i(), r = (0, f.useRef)(), s = (0, f.useRef)(m);
+        s.current = m;
+        const t = (0, f.useRef)(n);
+        t.current = n, (0, f.useEffect)(() => {
+            var u;
+            if (!q)
                 return;
-            const r = 'implicit' === g ? 'initTokenClient' : 'initCodeClient',
-                s = null === (q = window.google) || void 0 === q ? void 0 : q.accounts.oauth2[r]({
-                    client_id: l,
-                    scope: `openid profile email ${ _h }`,
-                    callback: g => {
-                        var t, u;
-                        if (g.error)
-                            return null === (t = p.current) || void 0 === t ? void 0 : t.call(p, g);
-                        null === (u = o.current) || void 0 === u || u.call(o, g);
+            const v = 'implicit' === k ? 'initTokenClient' : 'initCodeClient',
+                w = null === (u = window.google) || void 0 === u ? void 0 : u.accounts.oauth2[v]({
+                    client_id: p,
+                    scope: `openid profile email ${ l }`,
+                    callback: k => {
+                        var x, y;
+                        if (k.error)
+                            return null === (x = t.current) || void 0 === x ? void 0 : x.call(t, k);
+                        null === (y = s.current) || void 0 === y || y.call(s, k);
                     },
-                    ...k
+                    ...o
                 });
-            n.current = s;
+            r.current = w;
         }, [
-            l,
-            m,
-            g,
-            _h
+            p,
+            q,
+            k,
+            l
         ]);
-        const q = (0, d.useCallback)(g => n.current.requestAccessToken(g), []),
-            r = (0, d.useCallback)(() => n.current.requestCode(), []);
-        return 'implicit' === g ? q : r;
+        const u = (0, f.useCallback)(k => r.current.requestAccessToken(k), []),
+            v = (0, f.useCallback)(() => r.current.requestCode(), []);
+        return 'implicit' === k ? u : v;
     }
-}), a.register('h8z+4', function(b, c) {
-    _j(b.exports, 'default', function() {
-        return _i;
+}), c.register('30iJZ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('NIZyA'),
-        g = a('2x11J'),
-        _h = a('NmrDs1');
-    var _i = (0, g.observer)(() => {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('qMSe6'),
+        i = c('6jmvl'),
+        j = c('UmTL74');
+    var _k = (0, i.observer)(() => {
         const {
-            navigation: _j
-        } = e.useContext(_h.default);
-        return _j.loginError ? (0, d.jsx)(f.default, {
+            navigation: l
+        } = g.useContext(j.default);
+        return l.loginError ? (0, f.jsx)(h.default, {
             style: {
                 marginTop: 5
             },
-            message: _j.loginError && _j.loginError.message && _j.loginError.message.text ? _j.loginError.message.text : 'Error logging in. Please try again.',
+            message: l.loginError && l.loginError.message && l.loginError.message.text ? l.loginError.message.text : 'Error logging in. Please try again.',
             type: 'error',
             showIcon: !0
         }) : null;
     });
-}), a.register('iwgXa', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _o;
+}), c.register('sL56x', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _q;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('ulE4q'),
-        g = a('oXQNI'),
-        h = a('fmVdR'),
-        i = a('YRlpt'),
-        j = a('6CIVV'),
-        k = a('b5kvC'),
-        l = a('sHRDd'),
-        m = a('PMl60');
-    const n = () => (0, d.jsx)('div', {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('P1KtI'),
+        i = c('QZ0Z+'),
+        j = c('VNuyu'),
+        k = c('AE7vR'),
+        l = c('yruHD'),
+        m = c('Eh2Wh'),
+        n = c('8KqQ+'),
+        o = c('quE27');
+    const p = () => (0, f.jsx)('div', {
         style: {
             height: 150
         },
         className: 'maxWidth flex hc vc',
-        children: (0, d.jsx)(j.default, {
+        children: (0, f.jsx)(l.default, {
             size: 'large'
         })
     });
-    var _o = e => {
-        const [p, q] = e.useState([]), [r, s] = e.useState(!1), [t, u] = e.useState(!1), [v, w] = e.useState(!1), [x, y] = e.useState(!1), [z, A] = e.useState('');
-        e.useEffect(() => {
-            e.open ? (u(!0), (0, m.request)({
+    var _q = a => {
+        const [r, s] = g.useState([]), [t, u] = g.useState(!1), [v, w] = g.useState(!1), [x, y] = g.useState(!1), [z, A] = g.useState(!1), [B, C] = g.useState('');
+        g.useEffect(() => {
+            a.open ? (w(!0), (0, o.request)({
                 url: '/api/users/password-reset-options',
                 method: 'post',
                 data: {
-                    email: e.defaultEmail
+                    email: a.defaultEmail
                 },
-                success: e => {
-                    e.passwordless && s(e.passwordless), e.others && e.others.length ? q(e.others) : _C();
+                success: a => {
+                    a.passwordless && u(a.passwordless), a.others && a.others.length ? s(a.others) : _E();
                 },
-                error: e => {
-                    (0, m.throwMessageError)({
-                        e: e,
+                error: a => {
+                    (0, o.throwMessageError)({
+                        e: a,
                         default: {
                             title: 'We ran into an error...'
                         },
@@ -434,24 +434,24 @@ a.register('Jhh4y', function(b, c) {
                     });
                 },
                 both: () => {
-                    u(!1);
+                    w(!1);
                 }
-            })) : (q([]), s(!1), u(!1), w(!1), y(!1), A(''));
-        }, [e.open]);
-        const B = (p, q) => {
-                v || (w(!0), (0, m.request)({
+            })) : (s([]), u(!1), w(!1), y(!1), A(!1), C(''));
+        }, [a.open]);
+        const D = (r, s) => {
+                x || (y(!0), (0, o.request)({
                     url: '/api/users/requestPasswordReset',
                     method: 'post',
                     data: {
-                        email: e.defaultEmail,
-                        target: p
+                        email: a.defaultEmail,
+                        target: r
                     },
                     success: () => {
-                        A(q), y(!0), w(!1);
+                        C(s), A(!0), y(!1);
                     },
-                    error: e => {
-                        (0, m.throwMessageError)({
-                            e: e,
+                    error: a => {
+                        (0, o.throwMessageError)({
+                            e: a,
                             default: {
                                 title: 'Error sending reset link'
                             },
@@ -460,24 +460,24 @@ a.register('Jhh4y', function(b, c) {
                     }
                 }));
             },
-            _C = () => B();
-        return (0, d.jsx)(i.default, {
+            _E = () => D();
+        return (0, f.jsx)(k.default, {
             style: {
-                fontFamily: k.Fonts.SFPro,
-                color: l.default.Black
+                fontFamily: m.Fonts.SFPro,
+                color: n.default.Black
             },
-            footer: [(0, d.jsx)(f.default, {
-                onClick: e.close,
+            footer: [(0, f.jsx)(h.default, {
+                onClick: a.close,
                 children: 'Close'
             }, 1)],
             closable: !1,
             width: 700,
-            open: e.open,
-            children: t || v ? (0, d.jsx)(n, {}) : x ? (0, d.jsxs)('div', {
+            open: a.open,
+            children: v || x ? (0, f.jsx)(p, {}) : z ? (0, f.jsxs)('div', {
                 className: 'flex flex-column maxWidth vc hc',
                 children: [
-                    (0, d.jsx)('div', {
-                        children: (0, d.jsx)('i', {
+                    (0, f.jsx)('div', {
+                        children: (0, f.jsx)('i', {
                             className: 'fas fa-check-circle',
                             style: {
                                 fontSize: 75,
@@ -486,20 +486,20 @@ a.register('Jhh4y', function(b, c) {
                             }
                         })
                     }),
-                    (0, d.jsx)('div', {
+                    (0, f.jsx)('div', {
                         style: {
                             fontSize: 22,
                             textAlign: 'center'
                         },
-                        children: z ? `We just sent ${ r ? 'an add password link' : 'a password reset link' } to ${ z }. Ask them for the link and you should be good to go!` : `We just sent ${ r ? 'an add password link' : 'a password reset link' } to your email. Open that link and you should be good to go!`
+                        children: B ? `We just sent ${ t ? 'an add password link' : 'a password reset link' } to ${ B }. Ask them for the link and you should be good to go!` : `We just sent ${ t ? 'an add password link' : 'a password reset link' } to your email. Open that link and you should be good to go!`
                     })
                 ]
-            }) : p.length ? (0, d.jsxs)('div', {
+            }) : r.length ? (0, f.jsxs)('div', {
                 children: [
-                    (0, d.jsxs)('div', {
+                    (0, f.jsxs)('div', {
                         style: {
                             fontSize: 23,
-                            fontWeight: k.FontWeights.Bold,
+                            fontWeight: m.FontWeights.Bold,
                             textAlign: 'center',
                             marginTop: 15,
                             marginBottom: 5
@@ -507,11 +507,11 @@ a.register('Jhh4y', function(b, c) {
                         children: [
                             'Where should we send the link to',
                             ' ',
-                            r ? 'add a password' : 'reset your password',
+                            t ? 'add a password' : 'reset your password',
                             '?'
                         ]
                     }),
-                    (0, d.jsx)('div', {
+                    (0, f.jsx)('div', {
                         style: {
                             fontSize: 17,
                             textAlign: 'center',
@@ -519,54 +519,54 @@ a.register('Jhh4y', function(b, c) {
                         },
                         children: 'If your school doesn\'t allow you to receive emails, select one of your teachers and they can give the link to you.'
                     }),
-                    (0, d.jsx)(h.default, {}),
-                    (0, d.jsx)(g.default, {
+                    (0, f.jsx)(j.default, {}),
+                    (0, f.jsx)(i.default, {
                         style: {
-                            color: l.default.Black,
-                            fontFamily: k.Fonts.SFPro,
+                            color: n.default.Black,
+                            fontFamily: m.Fonts.SFPro,
                             marginBottom: 10
                         },
-                        onClick: _C,
+                        onClick: _E,
                         hoverable: !0,
                         children: 'Me'
                     }),
-                    p.map(e => (0, d.jsx)(g.default, {
+                    r.map(a => (0, f.jsx)(i.default, {
                         style: {
-                            color: l.default.Black,
-                            fontFamily: k.Fonts.SFPro,
+                            color: n.default.Black,
+                            fontFamily: m.Fonts.SFPro,
                             marginBottom: 10
                         },
                         hoverable: !0,
-                        onClick: () => B(e.id, e.name),
-                        children: e.name
-                    }, `reset-${ e.id }`))
+                        onClick: () => D(a.id, a.name),
+                        children: a.name
+                    }, `reset-${ a.id }`))
                 ]
             }) : null
         });
     };
-}), a.register('9oUwF', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _g;
+}), c.register('yCNJL', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('b5kvC'),
-        f = a('ulE4q');
-    var _g = e => (0, d.jsx)(f.default, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('Eh2Wh'),
+        h = c('P1KtI');
+    var _i = a => (0, f.jsx)(h.default, {
         style: {
             padding: '10px 20px',
             height: 'auto'
         },
-        disabled: !e.onClick,
-        onClick: e.onClick,
-        children: (0, d.jsxs)('div', {
+        disabled: !a.onClick,
+        onClick: a.onClick,
+        children: (0, f.jsxs)('div', {
             style: {
-                fontFamily: e.Fonts.SFPro,
+                fontFamily: g.Fonts.SFPro,
                 color: 'rgba(0,0,0,0.75)'
             },
             className: 'flex vc',
             children: [
-                (0, d.jsx)('img', {
+                (0, f.jsx)('img', {
                     src: '/client/img/signup/google.svg',
                     alt: 'Google Logo',
                     style: {
@@ -574,56 +574,56 @@ a.register('Jhh4y', function(b, c) {
                         marginRight: 11
                     }
                 }),
-                (0, d.jsxs)('div', {
+                (0, f.jsxs)('div', {
                     children: [
-                        e.text,
+                        a.text,
                         ' with Google'
                     ]
                 })
             ]
         })
     });
-}), a.register('x6cBr', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _g;
+}), c.register('vrjQO', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('0hzx+'),
-        e = a('wvD0o');
-    a('LEQ5w');
-    var f = a('9oUwF');
-    var _g = e => {
-        const h = (0, e.useGoogleLogin)({
-            onSuccess: h => {
-                e.onToken(h.code);
+    var f = c('gRbUn'),
+        g = c('CNAYr');
+    c('O0Kav');
+    var h = c('yCNJL');
+    var _i = a => {
+        const j = (0, g.useGoogleLogin)({
+            onSuccess: j => {
+                a.onToken(j.code);
             },
-            onError: h => {
-                e.onError(h);
+            onError: j => {
+                a.onError(j);
             },
             flow: 'auth-code'
         });
-        return (0, d.jsx)(d.Fragment, {
-            children: (0, d.jsx)(f.default, {
-                text: e.text,
-                onClick: h
+        return (0, f.jsx)(f.Fragment, {
+            children: (0, f.jsx)(h.default, {
+                text: a.text,
+                onClick: j
             })
         });
     };
-}), a.register('PeH+r', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _e;
+}), c.register('uEqa5', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _g;
     });
-    var d = a('PMl60');
-    var _e = e => new Promise((b, a) => {
-        (0, d.request)({
+    var f = c('quE27');
+    var _g = a => new Promise((d, c) => {
+        (0, f.request)({
             url: '/api/users/google-auth-details',
             data: {
-                jwt: e
+                jwt: a
             },
-            success: e => {
-                b(e);
+            success: a => {
+                d(a);
             },
-            error: e => {
-                a(e);
+            error: a => {
+                c(a);
             }
         });
     });

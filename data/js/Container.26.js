@@ -6,76 +6,76 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('GdMw0', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('0Cy2W', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _w(b.exports, 'default', function() {
-        return _j;
+    }), a(c.exports, 'default', function() {
+        return _k;
     });
-    var e = a('0hzx+'),
-        f = a('LEQ5w'),
-        g = a('cOojK'),
-        h = a('W2+XK'),
-        i = a('x/Eg+0');
-    var _j = () => (f.useEffect(() => () => {
-        i.default.checkout.reset(), i.default.navigation.reset();
-    }, []), (0, e.jsx)(h.default.Provider, {
-        value: i.default,
-        children: (0, e.jsx)(g.default, {})
+    var f = b('gRbUn'),
+        g = b('O0Kav'),
+        h = b('BKwhq'),
+        i = b('m4cQF'),
+        j = b('8yIOR0');
+    var _k = () => (g.useEffect(() => () => {
+        j.default.checkout.reset(), j.default.navigation.reset();
+    }, []), (0, f.jsx)(i.default.Provider, {
+        value: j.default,
+        children: (0, f.jsx)(h.default, {})
     }));
-}), a.register('cOojK', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _v;
+}), b.register('BKwhq', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _w;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('sHRDd'),
-        h = a('2x11J'),
-        i = a('W2+XK'),
-        j = a('xguoe0'),
-        k = a('gs4MT'),
-        l = a('Wg/LK'),
-        m = a('b5kvC'),
-        n = a('q5U/e'),
-        o = a('I3I1F'),
-        p = a('KBJS7'),
-        q = a('PMl60'),
-        r = a('jzxyj10');
-    let s, t, u = _w => _w;
-    var _v = (0, h.observer)(() => {
+    var e = b('gRbUn'),
+        f = b('O0Kav'),
+        g = b('u4s09'),
+        h = b('8KqQ+'),
+        i = b('6jmvl'),
+        j = b('m4cQF'),
+        k = b('7N+Pu0'),
+        l = b('nKuOQ'),
+        m = b('rZt34'),
+        n = b('Eh2Wh'),
+        o = b('f1ZwQ'),
+        p = b('DIM1K'),
+        q = b('rFNOl'),
+        r = b('quE27'),
+        s = b('KxkP827');
+    let t, u, v = a => a;
+    var _w = (0, i.observer)(() => {
         const {
-            navigation: _w
-        } = e.useContext(i.default);
-        e.useEffect(() => {
-            if ((0, q.isStudent)())
-                return void(0, r.NavigateTo)(k.DASHBOARD);
-            (0, q.isLoggedIn)() && (0, n.default)(), (0, p.default)();
-            const x = (0, q.getUrlVariable)('coupon');
-            x && (0, o.default)(x);
+            navigation: x
+        } = f.useContext(j.default);
+        f.useEffect(() => {
+            if ((0, r.isStudent)())
+                return void(0, s.NavigateTo)(l.DASHBOARD);
+            (0, r.isLoggedIn)() && (0, o.default)(), (0, q.default)();
+            const y = (0, r.getUrlVariable)('coupon');
+            y && (0, p.default)(y);
         }, []);
-        return (0, d.jsxs)(d.Fragment, {
+        return (0, e.jsxs)(e.Fragment, {
             children: [
-                (0, d.jsx)(_w, {
-                    children: (0, d.jsx)(_x, {
+                (0, e.jsx)(_x, {
+                    children: (0, e.jsx)(_y, {
                         children: (() => {
                             const {
-                                screen: x
-                            } = _w;
-                            return x === j.Screen.checkout ? (0, d.jsx)(l.default, {}) : null;
+                                screen: y
+                            } = x;
+                            return y === k.Screen.checkout ? (0, e.jsx)(m.default, {}) : null;
                         })()
                     })
                 }),
-                (0, d.jsx)(q.Title, {
+                (0, e.jsx)(r.Title, {
                     title: 'Checkout'
                 })
             ]
         });
     });
-    const _w = f.default.div(s || (s = u`
+    const _x = g.default.div(t || (t = v`
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/client/img/signup/funky-lines.png') repeat 0 0;
   height: 100%;
@@ -84,9 +84,9 @@ a.register('GdMw0', function(b, c) {
   justify-content: center;
   align-items: center;
 `)),
-        _x = f.default.div.attrs({
+        _y = g.default.div.attrs({
             className: 'scroll-y'
-        })(t || (t = u`
+        })(u || (u = v`
   background: ${ 0 };
   padding: 20px;
   border-radius: 5px;
@@ -96,58 +96,58 @@ a.register('GdMw0', function(b, c) {
   max-height: 90%;
   font-family: ${ 0 };
   color: ${ 0 };
-`), g.default.White, m.Fonts.SFPro, g.default.Black);
-}), a.register('W2+XK', function(b, c) {
-    _v(b.exports, 'default', function() {
-        return _f;
+`), h.default.White, n.Fonts.SFPro, h.default.Black);
+}), b.register('m4cQF', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('LEQ5w'),
-        e = a('x/Eg+0');
-    var _f = d.createContext(e.default);
-}), a.register('x/Eg+0', function(b, c) {
-    _v(b.exports, 'default', function() {
-        return _f;
+    var e = b('O0Kav'),
+        f = b('8yIOR0');
+    var _g = e.createContext(f.default);
+}), b.register('8yIOR0', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('xguoe0'),
-        e = a('QKunP');
-    var _f = {
-        navigation: new(0, d.default)(),
-        checkout: new(0, e.default)()
+    var e = b('7N+Pu0'),
+        f = b('McWWb0');
+    var _g = {
+        navigation: new(0, e.default)(),
+        checkout: new(0, f.default)()
     };
-}), a.register('xguoe0', function(b, c) {
-    _v(b.exports, 'Screen', function() {
-        return _f;
-    }), _v(b.exports, 'default', function() {
-        return _k;
+}), b.register('7N+Pu0', function(c, d) {
+    a(c.exports, 'Screen', function() {
+        return _g;
+    }), a(c.exports, 'default', function() {
+        return _l;
     });
-    var d = a('csYze'),
-        e = a('YuT/D');
-    let _f;
-    (_f || (_f = {})).checkout = 'checkout';
-    const g = {
-            screen: _f.checkout,
+    var e = b('4F2ZN'),
+        f = b('JkQCT');
+    let _g;
+    (_g || (_g = {})).checkout = 'checkout';
+    const h = {
+            screen: _g.checkout,
             loadingTokenSubmit: !1
         },
         {
-            screen: h,
-            loadingTokenSubmit: i
-        } = g;
-    class j {
+            screen: i,
+            loadingTokenSubmit: j
+        } = h;
+    class k {
         constructor() {
-            this.screen = h, this.loadingTokenSubmit = i, this.reset = () => {
-                Object.keys(g).forEach(_v => this[_v] = g[_v]);
-            }, (0, e.makeObservable)(this);
+            this.screen = i, this.loadingTokenSubmit = j, this.reset = () => {
+                Object.keys(h).forEach(a => this[a] = h[a]);
+            }, (0, f.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], j.prototype, 'screen', void 0), (0, d.__decorate)([e.observable], j.prototype, 'loadingTokenSubmit', void 0), (0, d.__decorate)([e.action], j.prototype, 'reset', void 0);
-    var _k = j;
-}), a.register('QKunP', function(b, c) {
-    _v(b.exports, 'default', function() {
-        return _v;
+    (0, e.__decorate)([f.observable], k.prototype, 'screen', void 0), (0, e.__decorate)([f.observable], k.prototype, 'loadingTokenSubmit', void 0), (0, e.__decorate)([f.action], k.prototype, 'reset', void 0);
+    var _l = k;
+}), b.register('McWWb0', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _w;
     });
-    var d = a('csYze'),
-        e = a('YuT/D');
-    const f = {
+    var e = b('4F2ZN'),
+        f = b('JkQCT');
+    const g = {
             planName: '',
             planId: '',
             couponId: '',
@@ -164,92 +164,92 @@ a.register('GdMw0', function(b, c) {
             stripePublicKey: ''
         },
         {
-            planName: g,
-            planId: h,
-            couponId: i,
-            planCost: j,
-            planDescription: k,
-            accountCredit: l,
-            percentageOff: m,
-            amountOff: n,
-            couponDescription: o,
-            hasCoupon: p,
-            couponOneUseOnly: q,
-            couponIsOnlyForPlan: r,
-            existingPayingPlan: s,
-            stripePublicKey: t
-        } = f;
-    class u {
+            planName: h,
+            planId: i,
+            couponId: j,
+            planCost: k,
+            planDescription: l,
+            accountCredit: m,
+            percentageOff: n,
+            amountOff: o,
+            couponDescription: p,
+            hasCoupon: q,
+            couponOneUseOnly: r,
+            couponIsOnlyForPlan: s,
+            existingPayingPlan: t,
+            stripePublicKey: u
+        } = g;
+    class v {
         get totalCost() {
-            const _v = this.planCost * this.percentageOff - this.amountOff - this.accountCredit;
-            return _v < 0 ? 0 : _v;
+            const w = this.planCost * this.percentageOff - this.amountOff - this.accountCredit;
+            return w < 0 ? 0 : w;
         }
         constructor() {
-            this.planName = g, this.planId = h, this.couponId = i, this.planCost = j, this.planDescription = k, this.accountCredit = l, this.percentageOff = m, this.amountOff = n, this.couponDescription = o, this.hasCoupon = p, this.couponOneUseOnly = q, this.couponIsOnlyForPlan = r, this.existingPayingPlan = s, this.stripePublicKey = t, this.reset = () => {
-                Object.keys(f).forEach(_w => {
-                    this[_w] = f[_w];
+            this.planName = h, this.planId = i, this.couponId = j, this.planCost = k, this.planDescription = l, this.accountCredit = m, this.percentageOff = n, this.amountOff = o, this.couponDescription = p, this.hasCoupon = q, this.couponOneUseOnly = r, this.couponIsOnlyForPlan = s, this.existingPayingPlan = t, this.stripePublicKey = u, this.reset = () => {
+                Object.keys(g).forEach(a => {
+                    this[a] = g[a];
                 });
-            }, (0, e.makeObservable)(this);
+            }, (0, f.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], u.prototype, 'planName', void 0), (0, d.__decorate)([e.observable], u.prototype, 'planId', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponId', void 0), (0, d.__decorate)([e.observable], u.prototype, 'planCost', void 0), (0, d.__decorate)([e.observable], u.prototype, 'planDescription', void 0), (0, d.__decorate)([e.observable], u.prototype, 'accountCredit', void 0), (0, d.__decorate)([e.observable], u.prototype, 'percentageOff', void 0), (0, d.__decorate)([e.observable], u.prototype, 'amountOff', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponDescription', void 0), (0, d.__decorate)([e.observable], u.prototype, 'hasCoupon', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponOneUseOnly', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponIsOnlyForPlan', void 0), (0, d.__decorate)([e.observable], u.prototype, 'existingPayingPlan', void 0), (0, d.__decorate)([e.observable], u.prototype, 'stripePublicKey', void 0), (0, d.__decorate)([e.computed], u.prototype, 'totalCost', null), (0, d.__decorate)([e.action], u.prototype, 'reset', void 0);
-    var _v = u;
-}), a.register('Wg/LK', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _v;
+    (0, e.__decorate)([f.observable], v.prototype, 'planName', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planCost', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'accountCredit', void 0), (0, e.__decorate)([f.observable], v.prototype, 'percentageOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'amountOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'hasCoupon', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponOneUseOnly', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponIsOnlyForPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'existingPayingPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'stripePublicKey', void 0), (0, e.__decorate)([f.computed], v.prototype, 'totalCost', null), (0, e.__decorate)([f.action], v.prototype, 'reset', void 0);
+    var _w = v;
+}), b.register('rZt34', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _w;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('fmVdR'),
-        h = a('6CIVV'),
-        i = a('wYGc3'),
-        j = a('gs4MT'),
-        k = a('g+sKd'),
-        l = a('5mvMJ'),
-        m = a('2x11J'),
-        n = a('W2+XK'),
-        o = a('rC9KP'),
-        p = a('nCi40'),
-        q = a('1Nso7'),
-        r = a('PMl60'),
-        s = a('Rtfgy20'),
-        t = a('jzxyj10');
-    let u;
-    var _v = (0, m.observer)(() => {
+    var e = b('gRbUn'),
+        f = b('O0Kav'),
+        g = b('u4s09'),
+        h = b('VNuyu'),
+        i = b('yruHD'),
+        j = b('+cTfn'),
+        k = b('nKuOQ'),
+        l = b('u53gc'),
+        m = b('sNkbe'),
+        n = b('6jmvl'),
+        o = b('m4cQF'),
+        p = b('xuqIh'),
+        q = b('X8He6'),
+        r = b('eLXuV'),
+        s = b('quE27'),
+        t = b('zzCtd25'),
+        u = b('KxkP827');
+    let v;
+    var _w = (0, n.observer)(() => {
         const {
-            checkout: _w
-        } = e.useContext(n.default);
-        e.useEffect(() => {
-            var x;
-            (0, o.default)(p.PlanIds.pro);
-            const y = (0, r.getUser)();
-            if (!(null === (x = y.freeTrial) || void 0 === x ? void 0 : x.currentlyOnFreeTrial) && (0, r.isUpgraded)()) {
-                if (y.type === p.PlanIds.pro) {
-                    if ((0, s.onlyOfferAnnualUpgrade)())
-                        return void(0, t.NavigateTo)(j.DASHBOARD);
-                    (0, o.default)(p.PlanIds.proPass);
+            checkout: x
+        } = f.useContext(o.default);
+        f.useEffect(() => {
+            var y;
+            (0, p.default)(q.PlanIds.pro);
+            const z = (0, s.getUser)();
+            if (!(null === (y = z.freeTrial) || void 0 === y ? void 0 : y.currentlyOnFreeTrial) && (0, s.isUpgraded)()) {
+                if (z.type === q.PlanIds.pro) {
+                    if ((0, t.onlyOfferAnnualUpgrade)())
+                        return void(0, u.NavigateTo)(k.DASHBOARD);
+                    (0, p.default)(q.PlanIds.proPass);
                 }
-                _w.existingPayingPlan = y.type;
+                x.existingPayingPlan = z.type;
             }
         }, []);
-        const x = (0, r.getUser)().type === p.PlanIds.proPass || (0, s.onlyOfferAnnualUpgrade)();
-        return !_w.stripePublicKey || x ? (0, d.jsxs)('div', {
+        const y = (0, s.getUser)().type === q.PlanIds.proPass || (0, t.onlyOfferAnnualUpgrade)();
+        return !x.stripePublicKey || y ? (0, e.jsxs)('div', {
             className: 'maxWidth flex hc',
             style: {
                 padding: 40
             },
             children: [
-                (0, d.jsx)(h.default, {
+                (0, e.jsx)(i.default, {
                     size: 'large'
                 }),
-                x ? (0, d.jsx)(l.default, {}) : null
+                y ? (0, e.jsx)(m.default, {}) : null
             ]
-        }) : (0, d.jsxs)(_w, {
+        }) : (0, e.jsxs)(_x, {
             children: [
-                (0, d.jsx)(i.Link, {
-                    to: j.DASHBOARD,
-                    children: (0, d.jsx)('img', {
+                (0, e.jsx)(j.Link, {
+                    to: k.DASHBOARD,
+                    children: (0, e.jsx)('img', {
                         src: '/client/img/svgLogo.svg',
                         style: {
                             width: 158,
@@ -257,162 +257,162 @@ a.register('GdMw0', function(b, c) {
                         }
                     })
                 }),
-                (0, d.jsx)(g.default, {}),
-                (0, s.onlyOfferAnnualUpgrade)() ? null : (0, d.jsxs)(d.Fragment, {
+                (0, e.jsx)(h.default, {}),
+                (0, t.onlyOfferAnnualUpgrade)() ? null : (0, e.jsxs)(e.Fragment, {
                     children: [
-                        (0, d.jsxs)('div', {
+                        (0, e.jsxs)('div', {
                             className: 'flex maxWidth',
                             style: {
                                 justifyContent: 'space-between',
                                 marginTop: 10
                             },
                             children: [
-                                (0, d.jsx)(q.default, {
+                                (0, e.jsx)(r.default, {
                                     title: 'Annually',
-                                    description: (0, d.jsxs)('span', {
+                                    description: (0, e.jsxs)('span', {
                                         children: [
                                             '$59.88 a year',
-                                            (0, d.jsx)('br', {}),
+                                            (0, e.jsx)('br', {}),
                                             'That works out to $4.99 a month'
                                         ]
                                     }),
-                                    selected: _w.planId === p.PlanIds.pro,
-                                    disabled: _w.existingPayingPlan && _w.existingPayingPlan === p.PlanIds.pro || _w.couponIsOnlyForPlan && _w.couponIsOnlyForPlan !== p.PlanIds.pro,
-                                    onClick: () => (0, o.default)(p.PlanIds.pro),
+                                    selected: x.planId === q.PlanIds.pro,
+                                    disabled: x.existingPayingPlan && x.existingPayingPlan === q.PlanIds.pro || x.couponIsOnlyForPlan && x.couponIsOnlyForPlan !== q.PlanIds.pro,
+                                    onClick: () => (0, p.default)(q.PlanIds.pro),
                                     showSaveTag: !0
                                 }),
-                                (0, d.jsx)(q.default, {
+                                (0, e.jsx)(r.default, {
                                     title: 'Monthly',
-                                    description: (0, d.jsx)('span', {
+                                    description: (0, e.jsx)('span', {
                                         children: '$14.99 a month'
                                     }),
-                                    selected: _w.planId === p.PlanIds.proPass,
-                                    disabled: _w.existingPayingPlan && _w.existingPayingPlan === p.PlanIds.proPass || _w.couponIsOnlyForPlan && _w.couponIsOnlyForPlan !== p.PlanIds.proPass,
-                                    onClick: () => (0, o.default)(p.PlanIds.proPass)
+                                    selected: x.planId === q.PlanIds.proPass,
+                                    disabled: x.existingPayingPlan && x.existingPayingPlan === q.PlanIds.proPass || x.couponIsOnlyForPlan && x.couponIsOnlyForPlan !== q.PlanIds.proPass,
+                                    onClick: () => (0, p.default)(q.PlanIds.proPass)
                                 })
                             ]
                         }),
-                        (0, d.jsx)('div', {
+                        (0, e.jsx)('div', {
                             style: {
                                 height: 20
                             }
                         })
                     ]
                 }),
-                (0, d.jsx)(k.default, {}),
-                (0, d.jsx)('div', {
+                (0, e.jsx)(l.default, {}),
+                (0, e.jsx)('div', {
                     style: {
                         height: 10
                     }
                 }),
-                (0, d.jsx)(l.default, {})
+                (0, e.jsx)(m.default, {})
             ]
         });
     });
-    const _w = f.default.div(u || (u = (_p => _p)`
+    const _x = g.default.div(v || (v = (a => a)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 `));
-}), a.register('g+sKd', function(b, c) {
-    _p(b.exports, 'default', function() {
-        return _o;
+}), b.register('u53gc', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _p;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('2x11J'),
-        g = a('Axq+p'),
-        h = a('W2+XK'),
-        i = a('b5kvC'),
-        j = a('ctFqV'),
-        k = a('fmVdR');
-    let l, m, n = _p => _p;
-    var _o = (0, f.observer)(() => {
+    var e = b('gRbUn'),
+        f = b('O0Kav'),
+        g = b('6jmvl'),
+        h = b('u4s09'),
+        i = b('m4cQF'),
+        j = b('Eh2Wh'),
+        k = b('HXv6Y'),
+        l = b('VNuyu');
+    let m, n, o = a => a;
+    var _p = (0, g.observer)(() => {
         const {
-            checkout: _p
-        } = e.useContext(h.default);
-        return (0, d.jsxs)('div', {
+            checkout: q
+        } = f.useContext(i.default);
+        return (0, e.jsxs)('div', {
             className: 'maxWidth',
             children: [
-                (0, d.jsxs)(_p, {
+                (0, e.jsxs)(_q, {
                     children: [
-                        (0, d.jsxs)('div', {
+                        (0, e.jsxs)('div', {
                             children: [
-                                (0, d.jsx)('div', {
+                                (0, e.jsx)('div', {
                                     style: {
-                                        fontWeight: i.FontWeights.UltraBold,
+                                        fontWeight: j.FontWeights.UltraBold,
                                         fontSize: 23,
                                         marginBottom: -7
                                     },
-                                    children: _p.planName
+                                    children: q.planName
                                 }),
-                                (0, d.jsx)('div', {
+                                (0, e.jsx)('div', {
                                     style: {
                                         fontSize: 13,
                                         opacity: 0.8
                                     },
-                                    children: _p.planDescription
+                                    children: q.planDescription
                                 })
                             ]
                         }),
-                        (0, d.jsx)(_q, {
-                            children: (0, j.centsToFormatedMoney)(_p.planCost)
+                        (0, e.jsx)(_r, {
+                            children: (0, k.centsToFormatedMoney)(q.planCost)
                         })
                     ]
                 }),
-                _p.hasCoupon ? (0, d.jsxs)(_p, {
+                q.hasCoupon ? (0, e.jsxs)(_q, {
                     children: [
-                        (0, d.jsx)('div', {
+                        (0, e.jsx)('div', {
                             style: {
                                 fontSize: 15
                             },
-                            children: _p.couponDescription || 'Coupon'
+                            children: q.couponDescription || 'Coupon'
                         }),
-                        (0, d.jsx)('div', {
-                            children: (0, d.jsxs)(_q, {
+                        (0, e.jsx)('div', {
+                            children: (0, e.jsxs)(_r, {
                                 style: {
                                     color: 'green'
                                 },
                                 children: [
                                     '-',
-                                    (0, j.centsToFormatedMoney)(_p.amountOff ? _p.amountOff : _p.percentageOff ? _p.planCost * (1 - _p.percentageOff) : 0)
+                                    (0, k.centsToFormatedMoney)(q.amountOff ? q.amountOff : q.percentageOff ? q.planCost * (1 - q.percentageOff) : 0)
                                 ]
                             })
                         })
                     ]
                 }) : null,
-                _p.accountCredit ? (0, d.jsxs)(_p, {
+                q.accountCredit ? (0, e.jsxs)(_q, {
                     children: [
-                        (0, d.jsx)('div', {
+                        (0, e.jsx)('div', {
                             style: {
                                 fontSize: 15
                             },
                             children: 'Account Credit'
                         }),
-                        (0, d.jsxs)(_q, {
+                        (0, e.jsxs)(_r, {
                             style: {
                                 color: 'green'
                             },
                             children: [
                                 '-',
-                                (0, j.centsToFormatedMoney)(_p.accountCredit)
+                                (0, k.centsToFormatedMoney)(q.accountCredit)
                             ]
                         })
                     ]
                 }) : null,
-                _p.totalCost !== _p.planCost ? (0, d.jsxs)(d.Fragment, {
+                q.totalCost !== q.planCost ? (0, e.jsxs)(e.Fragment, {
                     children: [
-                        (0, d.jsx)(k.default, {}),
-                        (0, d.jsxs)(_p, {
+                        (0, e.jsx)(l.default, {}),
+                        (0, e.jsxs)(_q, {
                             children: [
-                                (0, d.jsx)('div', {}),
-                                (0, d.jsx)(_q, {
+                                (0, e.jsx)('div', {}),
+                                (0, e.jsx)(_r, {
                                     style: {
-                                        fontWeight: i.FontWeights.UltraBold
+                                        fontWeight: j.FontWeights.UltraBold
                                     },
-                                    children: (0, j.centsToFormatedMoney)(_p.totalCost)
+                                    children: (0, k.centsToFormatedMoney)(q.totalCost)
                                 })
                             ]
                         })
@@ -421,83 +421,83 @@ a.register('GdMw0', function(b, c) {
             ]
         });
     });
-    const _p = g.default.div(l || (l = n`
+    const _q = h.default.div(m || (m = o`
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
 `)),
-        _q = g.default.div(m || (m = n`
+        _r = h.default.div(n || (n = o`
   font-size: 18px;
 `));
-}), a.register('ctFqV', function(b, c) {
-    _p(b.exports, 'centsToFormatedMoney', function() {
-        return _d;
+}), b.register('HXv6Y', function(c, d) {
+    a(c.exports, 'centsToFormatedMoney', function() {
+        return _e;
     });
-    const _d = _p => (_p / 100).toLocaleString('en-US', {
+    const _e = a => (a / 100).toLocaleString('en-US', {
         style: 'currency',
         currency: 'USD'
     });
-}), a.register('5mvMJ', function(b, c) {
-    _p(b.exports, 'default', function() {
-        return _o;
+}), b.register('sNkbe', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _p;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('2x11J'),
-        g = a('W2+XK'),
-        h = a('Axq+p'),
-        i = a('AzS0C1'),
-        j = a('PMl60'),
-        k = a('ulE4q'),
-        l = a('Rtfgy20'),
-        m = a('nCi40');
-    let n;
-    var _o = (0, f.observer)(() => {
-        const [_p, q] = e.useState(!1), {
-            checkout: r
-        } = e.useContext(g.default);
-        e.useEffect(() => {
-            r.planId && r.stripePublicKey && ((0, l.onlyOfferAnnualUpgrade)() || (0, j.getUser)().type === m.PlanIds.proPass) && r.existingPayingPlan !== r.planId && c().then().catch(_p => !1);
+    var e = b('gRbUn'),
+        f = b('O0Kav'),
+        g = b('6jmvl'),
+        h = b('m4cQF'),
+        i = b('u4s09'),
+        j = b('P83Xp'),
+        k = b('quE27'),
+        l = b('P1KtI'),
+        m = b('zzCtd25'),
+        n = b('X8He6');
+    let o;
+    var _p = (0, g.observer)(() => {
+        const [q, r] = f.useState(!1), {
+            checkout: s
+        } = f.useContext(h.default);
+        f.useEffect(() => {
+            s.planId && s.stripePublicKey && ((0, m.onlyOfferAnnualUpgrade)() || (0, k.getUser)().type === n.PlanIds.proPass) && s.existingPayingPlan !== s.planId && d().then().catch(q => !1);
         }, [
-            r.existingPayingPlan,
-            r.stripePublicKey,
-            r.planId
+            s.existingPayingPlan,
+            s.stripePublicKey,
+            s.planId
         ]);
-        const s = async () => {
-            if (r.stripePublicKey) {
-                if (_p)
+        const t = async () => {
+            if (s.stripePublicKey) {
+                if (q)
                     return;
-                let t;
-                q(!0);
+                let u;
+                r(!0);
                 try {
-                    t = await (0, i.loadStripe)(r.stripePublicKey);
-                } catch (_p) {
-                    q(!1), (0, j.throwMessageError)({
+                    u = await (0, j.loadStripe)(s.stripePublicKey);
+                } catch (q) {
+                    r(!1), (0, k.throwMessageError)({
                         default: {
                             title: 'Connection Error',
                             content: 'An error ocurred while connecting to our payments provider. Please try again later'
                         }
                     });
                 }
-                t && (0, j.request)({
+                u && (0, k.request)({
                     url: '/api/billing/create-upgrade-session',
                     method: 'POST',
                     data: {
-                        plan: r.planId
+                        plan: s.planId
                     },
-                    success: async _p => {
-                        const u = _p;
-                        let v;
+                    success: async q => {
+                        const v = q;
+                        let w;
                         try {
-                            if (v = await t.redirectToCheckout({
-                                    sessionId: u.id
-                                }), v && v.error)
-                                throw v.error;
-                        } catch (_p) {
-                            q(!1), (0, j.throwMessageError)({
-                                e: _p,
+                            if (w = await u.redirectToCheckout({
+                                    sessionId: v.id
+                                }), w && w.error)
+                                throw w.error;
+                        } catch (q) {
+                            r(!1), (0, k.throwMessageError)({
+                                e: q,
                                 default: {
                                     title: 'Connection Error',
                                     content: 'An error ocurred. Please try again later'
@@ -505,9 +505,9 @@ a.register('GdMw0', function(b, c) {
                             });
                         }
                     },
-                    error: _p => {
-                        q(!1), (0, j.throwMessageError)({
-                            e: _p,
+                    error: q => {
+                        r(!1), (0, k.throwMessageError)({
+                            e: q,
                             default: {
                                 title: 'Connection Error',
                                 content: 'An error ocurred while connecting to our payments provider. Please try again later'
@@ -517,146 +517,146 @@ a.register('GdMw0', function(b, c) {
                 });
             }
         };
-        return (0, j.getUser)().type === m.PlanIds.proPass || (0, l.onlyOfferAnnualUpgrade)() ? null : (0, d.jsx)('div', {
+        return (0, k.getUser)().type === n.PlanIds.proPass || (0, m.onlyOfferAnnualUpgrade)() ? null : (0, e.jsx)('div', {
             className: 'flex flex-column hc vc maxWidth',
-            children: (0, d.jsx)(_p, {
-                children: (0, d.jsx)(k.default, {
+            children: (0, e.jsx)(_q, {
+                children: (0, e.jsx)(l.default, {
                     id: 'checkout-button',
                     onClick: () => {
-                        s().then().catch(_p => !1);
+                        t().then().catch(q => !1);
                     },
-                    loading: _p,
+                    loading: q,
                     type: 'primary',
                     style: {
                         width: '100%'
                     },
                     size: 'large',
-                    disabled: _p,
-                    children: `Subscribe to ${ r.planName }`
+                    disabled: q,
+                    children: `Subscribe to ${ s.planName }`
                 })
             })
         });
     });
-    const _p = h.default.div(n || (n = (_i => _i)`
+    const _q = i.default.div(o || (o = (a => a)`
   width: 100%;
   div {
     width: 100%;
   }
 `));
-}), a.register('AzS0C1', function(b, c) {
-    _i(b.exports, 'loadStripe', function() {
-        return _l;
+}), b.register('P83Xp', function(c, d) {
+    a(c.exports, 'loadStripe', function() {
+        return _m;
     });
-    var d = 'https://js.stripe.com/v3',
-        e = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
-        f = 'loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used',
-        g = null,
-        h = function(_i) {
-            return null !== g || (g = new Promise(function(j, k) {
+    var e = 'https://js.stripe.com/v3',
+        f = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
+        g = 'loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used',
+        h = null,
+        i = function(j) {
+            return null !== h || (h = new Promise(function(k, l) {
                 if ('undefined' != typeof window)
-                    if (window.Stripe && _i && console.warn(f), window.Stripe)
-                        j(window.Stripe);
+                    if (window.Stripe && j && console.warn(g), window.Stripe)
+                        k(window.Stripe);
                     else
                         try {
-                            var l = function() {
-                                for (var m = document.querySelectorAll('script[src^="'.concat(d, '"]')), n = 0; n < m.length; n++) {
-                                    var o = m[n];
-                                    if (e.test(o.src))
-                                        return o;
+                            var m = function() {
+                                for (var n = document.querySelectorAll('script[src^="'.concat(e, '"]')), o = 0; o < n.length; o++) {
+                                    var p = n[o];
+                                    if (f.test(p.src))
+                                        return p;
                                 }
                                 return null;
                             }();
-                            l && _i ? console.warn(f) : l || (l = function(m) {
-                                var n = m && !m.advancedFraudSignals ? '?advancedFraudSignals=false' : '',
-                                    o = document.createElement('script');
-                                o.src = ''.concat(d).concat(n);
-                                var p = document.head || document.body;
-                                if (!p)
+                            m && j ? console.warn(g) : m || (m = function(n) {
+                                var o = n && !n.advancedFraudSignals ? '?advancedFraudSignals=false' : '',
+                                    p = document.createElement('script');
+                                p.src = ''.concat(e).concat(o);
+                                var q = document.head || document.body;
+                                if (!q)
                                     throw new Error('Expected document.body not to be null. Stripe.js requires a <body> element.');
-                                return p.appendChild(o), o;
-                            }(_i)), l.addEventListener('load', function() {
-                                window.Stripe ? j(window.Stripe) : k(new Error('Stripe.js not available'));
-                            }), l.addEventListener('error', function() {
-                                k(new Error('Failed to load Stripe.js'));
+                                return q.appendChild(p), p;
+                            }(j)), m.addEventListener('load', function() {
+                                window.Stripe ? k(window.Stripe) : l(new Error('Stripe.js not available'));
+                            }), m.addEventListener('error', function() {
+                                l(new Error('Failed to load Stripe.js'));
                             });
-                        } catch (_i) {
-                            return void k(_i);
+                        } catch (j) {
+                            return void l(j);
                         }
                 else
-                    j(null);
-            })), g;
+                    k(null);
+            })), h;
         },
-        i = function(j, k, l) {
-            if (null === j)
+        j = function(k, l, m) {
+            if (null === k)
                 return null;
-            var m = j.apply(void 0, k);
-            return function(n, o) {
-                n && n._registerWrapper && n._registerWrapper({
+            var n = k.apply(void 0, l);
+            return function(o, p) {
+                o && o._registerWrapper && o._registerWrapper({
                     name: 'stripe-js',
                     version: '1.9.0',
-                    startTime: o
+                    startTime: p
                 });
-            }(m, l), m;
+            }(n, m), n;
         },
-        j = Promise.resolve().then(function() {
-            return h(null);
+        k = Promise.resolve().then(function() {
+            return i(null);
         }),
-        k = !1;
-    j.catch(function(l) {
-        k || console.warn(l);
+        l = !1;
+    k.catch(function(m) {
+        l || console.warn(m);
     });
-    var _l = function() {
-        for (var m = arguments.length, n = new Array(m), o = 0; o < m; o++)
-            n[o] = arguments[o];
-        k = !0;
-        var p = Date.now();
-        return j.then(function(q) {
-            return i(q, n, p);
+    var _m = function() {
+        for (var n = arguments.length, o = new Array(n), p = 0; p < n; p++)
+            o[p] = arguments[p];
+        l = !0;
+        var q = Date.now();
+        return k.then(function(r) {
+            return j(r, o, q);
         });
     };
-}), a.register('Rtfgy20', function(b, c) {
-    e(b.exports, 'onlyOfferAnnualUpgrade', function() {
-        return _e;
-    });
-    var d = a('THxMC');
-    const _e = () => 'annual-only' === d.default.getFeatureFlag('annual-only-pro');
-}), a.register('rC9KP', function(b, c) {
-    e(b.exports, 'default', function() {
+}), b.register('zzCtd25', function(c, d) {
+    a(c.exports, 'onlyOfferAnnualUpgrade', function() {
         return _f;
     });
-    var d = a('nCi40'),
-        e = a('x/Eg+0');
-    var _f = e => {
-        e.default.checkout.planName = 'Gimkit Pro', e.default.checkout.planId = e, e.default.checkout.planDescription = ((e, a) => e === d.PlanIds.pro ? 'Billed annually' : e === d.PlanIds.proPass ? 'Billed monthly' : '')(e), e.default.checkout.planCost = (e => e === d.PlanIds.pro ? 5988 : e === d.PlanIds.proPass ? 1499 : 0)(e);
-    };
-}), a.register('1Nso7', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _n;
+    var e = b('SKBBo');
+    const _f = () => 'annual-only' === e.default.getFeatureFlag('annual-only-pro');
+}), b.register('xuqIh', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('sHRDd'),
-        g = a('b5kvC');
-    let h, i, j, k, l = e => e;
-    const m = '#F0FFF6';
-    var _n = e => (0, d.jsxs)(_o, {
-        selected: e.selected,
-        onClick: e.onClick,
-        disabled: e.disabled,
+    var e = b('X8He6'),
+        f = b('8yIOR0');
+    var _g = a => {
+        f.default.checkout.planName = 'Gimkit Pro', f.default.checkout.planId = a, f.default.checkout.planDescription = ((a, b) => a === e.PlanIds.pro ? 'Billed annually' : a === e.PlanIds.proPass ? 'Billed monthly' : '')(a), f.default.checkout.planCost = (a => a === e.PlanIds.pro ? 5988 : a === e.PlanIds.proPass ? 1499 : 0)(a);
+    };
+}), b.register('eLXuV', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _o;
+    });
+    var e = b('gRbUn');
+    b('O0Kav');
+    var f = b('u4s09'),
+        g = b('8KqQ+'),
+        h = b('Eh2Wh');
+    let i, j, k, l, m = a => a;
+    const n = '#F0FFF6';
+    var _o = a => (0, e.jsxs)(_p, {
+        selected: a.selected,
+        onClick: a.onClick,
+        disabled: a.disabled,
         children: [
-            (0, d.jsx)(_p, {
-                children: e.title
+            (0, e.jsx)(_q, {
+                children: a.title
             }),
-            (0, d.jsx)(_q, {
-                children: e.description
+            (0, e.jsx)(_r, {
+                children: a.description
             }),
-            e.showSaveTag ? (0, d.jsx)(_r, {
+            a.showSaveTag ? (0, e.jsx)(_s, {
                 children: 'Save 65%'
             }) : null
         ]
     });
-    const _o = e.default.div(h || (h = l`
+    const _p = f.default.div(i || (i = m`
   border-style: solid;
   border-width: 2px;
   width: 284px;
@@ -670,21 +670,21 @@ a.register('GdMw0', function(b, c) {
   &:hover {
     background: ${ 0 };
   }
-`), e => e.disabled ? '\n  pointer-events: none;\n  opacity: 0.2;\n  ' : null, e => e.selected ? '#a5d6a7' : f.default.BorderGray, e => e.selected ? m : f.default.White, m),
-        _p = e.default.h3(i || (i = l`
+`), a => a.disabled ? '\n  pointer-events: none;\n  opacity: 0.2;\n  ' : null, a => a.selected ? '#a5d6a7' : g.default.BorderGray, a => a.selected ? n : g.default.White, n),
+        _q = f.default.h3(j || (j = m`
   font-weight: ${ 0 };
   font-size: 18px;
   margin-bottom: 0px;
   color: ${ 0 };
-`), g.FontWeights.UltraBold, f.default.Black),
-        _q = e.default.p(j || (j = l`
+`), h.FontWeights.UltraBold, g.default.Black),
+        _r = f.default.p(k || (k = m`
   font-size: 14px;
   margin-top: 2px;
   margin-bottom: 0px;
 `)),
-        _r = e.default.div.attrs({
+        _s = f.default.div.attrs({
             className: 'flex hc vc'
-        })(k || (k = l`
+        })(l || (l = m`
   height: 35px;
   width: 95px;
   background: #1a237e;
@@ -694,61 +694,61 @@ a.register('GdMw0', function(b, c) {
   color: ${ 0 };
   font-size: 14px;
   border-radius: 22px;
-`), f.default.White);
-}), a.register('jzxyj10', function(b, c) {
-    e(b.exports, 'NavigateTo', function() {
-        return _e;
-    });
-    var d = a('oBJ9G');
-    const _e = e => {
-        d.history.push(e);
-    };
-}), a.register('q5U/e', function(b, c) {
-    e(b.exports, 'default', function() {
+`), g.default.White);
+}), b.register('KxkP827', function(c, d) {
+    a(c.exports, 'NavigateTo', function() {
         return _f;
     });
-    var d = a('PMl60'),
-        e = a('x/Eg+0');
-    var _f = () => {
-        (0, d.request)({
-            url: '/api/billing/account-balance',
-            success: e => {
-                e.balance && e.balance > 0 && (e.default.checkout.accountCredit = e.balance);
-            }
-        });
+    var e = b('qb3Ih');
+    const _f = a => {
+        e.history.push(a);
     };
-}), a.register('I3I1F', function(b, c) {
-    e(b.exports, 'default', function() {
+}), b.register('f1ZwQ', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var d = a('PMl60'),
-        e = a('x/Eg+0'),
-        f = a('rC9KP');
-    var _g = e => {
-        (0, d.request)({
-            url: `/api/stripe/coupons/${ e }`,
+    var e = b('quE27'),
+        f = b('8yIOR0');
+    var _g = () => {
+        (0, e.request)({
+            url: '/api/billing/account-balance',
             success: a => {
-                a.metadata && a.metadata.onlyForPlan && ((0, f.default)(a.metadata.onlyForPlan), e.default.checkout.couponIsOnlyForPlan = e.default.checkout.planId), a.metadata && a.metadata.customDesc && (e.default.checkout.couponDescription = a.metadata.customDesc), e.default.checkout.amountOff = a.amountOff, e.default.checkout.percentageOff = 1 - 0.01 * a.percentageOff, e.default.checkout.couponOneUseOnly = a.oneUseOnly, e.default.checkout.couponId = e, e.default.checkout.hasCoupon = !0;
+                a.balance && a.balance > 0 && (f.default.checkout.accountCredit = a.balance);
             }
         });
     };
-}), a.register('KBJS7', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _i;
+}), b.register('DIM1K', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _h;
     });
-    var d = a('PMl60'),
-        e = a('x/Eg+0'),
-        f = a('INKb2'),
-        g = a('gs4MT'),
-        h = a('jzxyj10');
-    var _i = () => {
-        (0, d.request)({
+    var e = b('quE27'),
+        f = b('8yIOR0'),
+        g = b('xuqIh');
+    var _h = a => {
+        (0, e.request)({
+            url: `/api/stripe/coupons/${ a }`,
+            success: b => {
+                b.metadata && b.metadata.onlyForPlan && ((0, g.default)(b.metadata.onlyForPlan), f.default.checkout.couponIsOnlyForPlan = f.default.checkout.planId), b.metadata && b.metadata.customDesc && (f.default.checkout.couponDescription = b.metadata.customDesc), f.default.checkout.amountOff = b.amountOff, f.default.checkout.percentageOff = 1 - 0.01 * b.percentageOff, f.default.checkout.couponOneUseOnly = b.oneUseOnly, f.default.checkout.couponId = a, f.default.checkout.hasCoupon = !0;
+            }
+        });
+    };
+}), b.register('rFNOl', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _j;
+    });
+    var e = b('quE27'),
+        f = b('8yIOR0'),
+        g = b('lptuh'),
+        h = b('nKuOQ'),
+        i = b('KxkP827');
+    var _j = () => {
+        (0, e.request)({
             url: '/api/billing/stripe-key',
-            success: e => e.default.checkout.stripePublicKey = e.key,
-            error: () => (0, f.throwError)({
+            success: a => f.default.checkout.stripePublicKey = a.key,
+            error: () => (0, g.throwError)({
                 title: 'Our payments provider is currently down',
                 content: 'Please try again later',
-                onOk: () => (0, h.NavigateTo)(g.DASHBOARD)
+                onOk: () => (0, i.NavigateTo)(h.DASHBOARD)
             })
         });
     };

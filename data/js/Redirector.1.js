@@ -12,7 +12,7 @@ a.register('dlS9w', function(b, c) {
         enumerable: !0,
         configurable: !0
     });
-    var i = a('LEQ5w');
+    var i = a('O0Kav');
     var _j = () => (i.useEffect(() => {
         window.location.href.includes('/live') && (window.location.href = window.location.href.replace('/live', '/join'));
     }, []), null);

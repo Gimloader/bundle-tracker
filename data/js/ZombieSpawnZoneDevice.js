@@ -6,176 +6,176 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('lXyLB', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('P4zAN', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _q(b.exports, 'ZombieSpawnZoneDevice', function() {
-        return _p;
-    }), _q(b.exports, 'default', function() {
+    }), a(c.exports, 'ZombieSpawnZoneDevice', function() {
         return _q;
+    }), a(c.exports, 'default', function() {
+        return _r;
     });
-    var e = a('1bFPu'),
-        f = a('h2EGG'),
-        g = a('9tz3H'),
-        h = a('/pbxo'),
-        i = a('kg3wN6'),
-        j = a('I35Ay'),
-        k = a('5CmLs'),
-        l = a('R2Ucl10'),
-        m = a('IFO6W13'),
-        n = a('JqBF0'),
-        o = a('PyVwZ');
-    class _p extends j.default {
+    var f = b('s/YA9'),
+        g = b('cNVx1'),
+        h = b('hycyg'),
+        i = b('UkCpC'),
+        j = b('FWW2T6'),
+        k = b('ltxDW'),
+        l = b('H4eGM'),
+        m = b('uc4mA17'),
+        n = b('u/WlI21'),
+        o = b('GIe9o'),
+        p = b('lk5RT');
+    class _q extends k.default {
         getAlpha() {
-            return (0, h.InGamePhase)() ? 0 : (0, g.isPublishedVersion)() || (0, g.isSavedVersion)() && i.default.shouldShowInnerZone(this) ? 1 : 0;
+            return (0, i.InGamePhase)() ? 0 : (0, h.isPublishedVersion)() || (0, h.isSavedVersion)() && j.default.shouldShowInnerZone(this) ? 1 : 0;
         }
-        constructor(_q) {
-            if (super(_q), (0, e.default)(this, 'updatePartAlpha', _q => {
-                    const r = this.getAlpha();
-                    (0, h.InGamePhase)() && _q.updateAlpha(r > 0 ? 1 : 0);
-                }), (0, e.default)(this, 'updateAlpha', () => {
-                    const r = this.getAlpha();
-                    (0, h.InGamePhase)() && this.parts.forEach(a => {
-                        a.updateAlpha(r > 0 ? 1 : 0);
-                    }), this.rect && this.rect.updateAlpha(r);
-                }), (0, e.default)(this, 'setupVisualEditing', () => {
-                    if (!(0, h.InPreGamePhase)() || !(0, g.isSavedVersion)())
+        constructor(r) {
+            if (super(r), (0, f.default)(this, 'updatePartAlpha', r => {
+                    const s = this.getAlpha();
+                    (0, i.InGamePhase)() && r.updateAlpha(s > 0 ? 1 : 0);
+                }), (0, f.default)(this, 'updateAlpha', () => {
+                    const s = this.getAlpha();
+                    (0, i.InGamePhase)() && this.parts.forEach(b => {
+                        b.updateAlpha(s > 0 ? 1 : 0);
+                    }), this.rect && this.rect.updateAlpha(s);
+                }), (0, f.default)(this, 'setupVisualEditing', () => {
+                    if (!(0, i.InPreGamePhase)() || !(0, h.isSavedVersion)())
                         return;
-                    const r = (0, l.FetchOptionSchemaProperty)(this, 'width'),
-                        s = (0, l.FetchOptionSchemaProperty)(this, 'height');
-                    (0, l.FetchOptionSchemaProperty)(this, 'rotation');
+                    const s = (0, m.FetchOptionSchemaProperty)(this, 'width'),
+                        t = (0, m.FetchOptionSchemaProperty)(this, 'height');
+                    (0, m.FetchOptionSchemaProperty)(this, 'rotation');
                     this.visualEditing.add.box({
                         width: this.options.width,
                         height: this.options.height,
                         angle: this.options.rotation,
                         rotable: !0,
-                        minWidth: r.min,
-                        maxWidth: r.max,
-                        minHeight: s.min,
-                        maxHeight: s.max,
+                        minWidth: s.min,
+                        maxWidth: s.max,
+                        minHeight: t.min,
+                        maxHeight: t.max,
                         keepRatio: !1,
-                        onChange: r => {
-                            (0, m.ReplaceVisualEditingPreview)(r.x, r.y, {
-                                width: r.width,
-                                height: r.height,
-                                rotation: r.angle
+                        onChange: s => {
+                            (0, n.ReplaceVisualEditingPreview)(s.x, s.y, {
+                                width: s.width,
+                                height: s.height,
+                                rotation: s.angle
                             });
                         }
                     });
-                }), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) {
+                }), (0, i.InPreGamePhase)() && (0, h.isSavedVersion)()) {
                 this.parts.add.sprite({
-                    ...o.IconAsset,
-                    depthChange: (0, k.default)(2)
+                    ...p.IconAsset,
+                    depthChange: (0, l.default)(2)
                 }).view.setScale(0.17);
             }
-            if ((0, h.InGamePhase)() || (0, g.isPublishedVersion)() ? 0 : i.default.shouldShow(this)) {
+            if ((0, i.InGamePhase)() || (0, h.isPublishedVersion)() ? 0 : j.default.shouldShow(this)) {
                 this.setupVisualEditing();
-                const r = (0, f.GetNumberFromHexColor)('#00FF00');
+                const s = (0, g.GetNumberFromHexColor)('#00FF00');
                 this.rect = this.parts.add.rect({
-                    color: r,
-                    layerId: n.default.DevicesUnderCharacters,
+                    color: s,
+                    layerId: o.default.DevicesUnderCharacters,
                     alpha: this.getAlpha(),
                     width: Math.abs(this.options.width),
                     height: Math.abs(this.options.height),
-                    borderColor: r,
-                    borderAlpha: (0, h.InGamePhase)() || (0, g.isPublishedVersion)() ? 0 : 1,
+                    borderColor: s,
+                    borderAlpha: (0, i.InGamePhase)() || (0, h.isPublishedVersion)() ? 0 : 1,
                     borderWidth: 4,
-                    depthChange: (0, k.default)(1),
+                    depthChange: (0, l.default)(1),
                     ignoreInput: !0,
                     angle: this.options.rotation
                 });
             }
         }
     }
-    var _q = _p;
-}), a.register('kg3wN6', function(b, c) {
-    _h(b.exports, 'ZonedDeviceDisplayOptions', function() {
+    var _r = _q;
+}), b.register('FWW2T6', function(c, d) {
+    a(c.exports, 'ZonedDeviceDisplayOptions', function() {
+        return _f;
+    }), a(c.exports, 'default', function() {
+        return _i;
+    });
+    var e = b('OR/wR6');
+    let _f;
+    var g;
+    (g = _f || (_f = {})).visible = 'visible', g.bordersOnly = 'bordersOnly', g.fullyHidden = 'fullyHidden';
+    const h = () => {
+        const i = localStorage.getItem(e.default.zonedDeviceViews);
+        return i || _f.bordersOnly;
+    };
+    var _i = {
+        shouldShow: a => h() !== _f.fullyHidden,
+        shouldShowInnerZone: a => h() !== _f.bordersOnly
+    };
+}), b.register('OR/wR6', function(c, d) {
+    a(c.exports, 'default', function() {
         return _e;
-    }), _h(b.exports, 'default', function() {
-        return _h;
     });
-    var d = a('+MyMe6');
-    let _e;
-    var f;
-    (f = _e || (_e = {})).visible = 'visible', f.bordersOnly = 'bordersOnly', f.fullyHidden = 'fullyHidden';
-    const g = () => {
-        const _h = localStorage.getItem(d.default.zonedDeviceViews);
-        return _h || _e.bordersOnly;
-    };
-    var _h = {
-        shouldShow: e => g() !== _e.fullyHidden,
-        shouldShowInnerZone: e => g() !== _e.bordersOnly
-    };
-}), a.register('+MyMe6', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _d;
-    });
-    var _d = {
+    var _e = {
         zonedDeviceViews: 'zoned-device-views'
     };
-}), a.register('R2Ucl10', function(b, c) {
-    e(b.exports, 'FetchOptionSchemaProperty', function() {
-        return _d;
-    });
-    const _d = (e, b) => {
-        var e, f, g;
-        const h = e.deviceOption.optionSchema.options.find(e => e.key === b);
-        return {
-            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
-            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
-            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
-        };
-    };
-}), a.register('IFO6W13', function(b, c) {
-    e(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return _h;
-    });
-    var d = a('HqwPM'),
-        e = a('+oovY4'),
-        f = a('A17vD'),
-        g = a('HXXiu');
-    const _h = (e, a, b) => {
-        const i = (0, g.FetchVisualEditingPreview)(),
-            j = (0, f.FetchCurrentlyEditedDevice)();
-        if (!j || !i)
-            return;
-        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
-        (0, e.default)({
-            deviceOption: i.deviceOption,
-            id: d.VisualEditingConstants.previewId,
-            x: e,
-            y: a,
-            depth: k,
-            layerId: j.layers.getLayer(),
-            name: i.name,
-            isPreview: !0,
-            options: {
-                ...i.options,
-                ...b
-            },
-            placedByClient: !0,
-            state: i.deviceOption.defaultState
-        });
-    };
-}), a.register('+oovY4', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _f;
-    });
-    var d = a('D5xLI'),
-        e = a('aIyMH');
-    var _f = e => {
-        (0, d.default)().worldManager.devices.getDeviceById(e.id) && (0, e.default)(e);
-    };
-}), a.register('PyVwZ', function(b, c) {
-    e(b.exports, 'IconAsset', function() {
+}), b.register('uc4mA17', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
-    var d = a('2Xvuf');
-    const _e = {
-        imageId: (0, d.default)('devices/zombie_spawn_zone/icon.png'),
-        imageUrl: (0, d.default)('devices/zombie_spawn_zone/icon.png')
+    const _e = (a, c) => {
+        var f, g, h;
+        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
+        return {
+            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
+            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
+            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
+        };
+    };
+}), b.register('u/WlI21', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+        return _i;
+    });
+    var e = b('hemXM'),
+        f = b('sWmxu5'),
+        g = b('EzUqb'),
+        h = b('GQMbT');
+    const _i = (a, b, c) => {
+        const j = (0, h.FetchVisualEditingPreview)(),
+            k = (0, g.FetchCurrentlyEditedDevice)();
+        if (!k || !j)
+            return;
+        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        (0, f.default)({
+            deviceOption: j.deviceOption,
+            id: e.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: l,
+            layerId: k.layers.getLayer(),
+            name: j.name,
+            isPreview: !0,
+            options: {
+                ...j.options,
+                ...c
+            },
+            placedByClient: !0,
+            state: j.deviceOption.defaultState
+        });
+    };
+}), b.register('sWmxu5', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
+    });
+    var e = b('heTaO'),
+        f = b('2LtPo');
+    var _g = a => {
+        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
+    };
+}), b.register('lk5RT', function(c, d) {
+    a(c.exports, 'IconAsset', function() {
+        return _f;
+    });
+    var e = b('UaUBz0');
+    const _f = {
+        imageId: (0, e.default)('devices/zombie_spawn_zone/icon.png'),
+        imageUrl: (0, e.default)('devices/zombie_spawn_zone/icon.png')
     };
 });

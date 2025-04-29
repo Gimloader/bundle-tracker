@@ -7,65 +7,65 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('Ljwt5', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('EX23x', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _x(b.exports, 'default', function() {
-        return _w;
+    }), a(d.exports, 'default', function() {
+        return _y;
     });
-    var e = a('0hzx+'),
-        f = a('LEQ5w'),
-        g = a('Axq+p'),
-        h = a('7IstX'),
-        i = a('RJjEi'),
-        j = a('s+8hx17'),
-        k = a('sHRDd'),
-        l = a('+i8ep'),
-        m = a('PMl60'),
-        n = a('gs4MT'),
-        o = a('13HCY'),
-        p = a('9R7cy'),
-        q = a('70AkF'),
-        r = a('wYGc3'),
-        s = a('PwZuN');
-    let t;
-    const u = f.lazy(() => a('OPcLZ')),
-        v = f.lazy(() => a('qi0bH'));
-    var _w = () => {
-        (0, l.useDidMount)(() => {
-            (0, m.loadFont)('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+    var g = c('gRbUn'),
+        h = c('O0Kav'),
+        i = c('u4s09'),
+        j = c('8j4mV'),
+        k = c('tBC08'),
+        l = c('W/XnX24'),
+        m = c('8KqQ+'),
+        n = c('lKjHC'),
+        o = c('quE27'),
+        p = c('nKuOQ'),
+        q = c('M3OCl2'),
+        r = c('t52Ep'),
+        s = c('zcfNM'),
+        t = c('+cTfn'),
+        u = c('Q7yTi');
+    let v;
+    const w = h.lazy(() => c('4+WtL')),
+        x = h.lazy(() => c('biMaA'));
+    var _y = () => {
+        (0, n.useDidMount)(() => {
+            (0, o.loadFont)('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
         });
         const {
-            pathname: _x
-        } = (0, r.useLocation)(), y = f.useMemo(() => (0, q.matchPath)({
-            path: n.CREATIVE_MAP
-        }, _x) ? (0, e.jsx)(u, {}) : (0, q.matchPath)({
-            path: n.CREATIVE_DISCOVERY
-        }, _x) ? (0, e.jsx)(v, {}) : (0, e.jsx)(s.default, {}), [_x]);
-        return (0, e.jsxs)(e.Fragment, {
+            pathname: z
+        } = (0, t.useLocation)(), A = h.useMemo(() => (0, s.matchPath)({
+            path: p.CREATIVE_MAP
+        }, z) ? (0, g.jsx)(w, {}) : (0, s.matchPath)({
+            path: p.CREATIVE_DISCOVERY
+        }, z) ? (0, g.jsx)(x, {}) : (0, g.jsx)(u.default, {}), [z]);
+        return (0, g.jsxs)(g.Fragment, {
             children: [
-                (0, e.jsx)(m.Title, {
+                (0, g.jsx)(o.Title, {
                     title: 'Gimkit Creative',
                     override: !0
                 }),
-                (0, e.jsxs)(h.default, {
+                (0, g.jsxs)(j.default, {
                     children: [
-                        (0, e.jsx)(i.default, {
-                            theme: j.SiteHeaderTheme.dark,
+                        (0, g.jsx)(k.default, {
+                            theme: l.SiteHeaderTheme.dark,
                             includeSpacer: !0,
                             hideBorder: !0,
                             containerDivStyle: {
                                 backdropFilter: 'blur(4px)'
                             },
-                            children: (0, e.jsx)(o.default, {
-                                theme: j.SiteHeaderTheme.dark,
-                                bottomContent: (0, e.jsx)('div', {
+                            children: (0, g.jsx)(q.default, {
+                                theme: l.SiteHeaderTheme.dark,
+                                bottomContent: (0, g.jsx)('div', {
                                     style: {
                                         height: 9
                                     }
@@ -73,26 +73,26 @@ a.register('Ljwt5', function(b, c) {
                                 options: [{
                                         id: 'creative-home',
                                         label: 'Build',
-                                        path: n.CREATIVE_BASE,
-                                        icon: (0, e.jsx)(p.default, {
+                                        path: p.CREATIVE_BASE,
+                                        icon: (0, g.jsx)(r.default, {
                                             name: 'fas fa-hammer'
                                         })
                                     },
                                     {
                                         id: 'creative-explore',
                                         label: 'Discovery',
-                                        path: n.CREATIVE_DISCOVERY,
-                                        icon: (0, e.jsx)(p.default, {
+                                        path: p.CREATIVE_DISCOVERY,
+                                        icon: (0, g.jsx)(r.default, {
                                             name: 'fas fa-gamepad-alt'
                                         })
                                     }
                                 ]
                             })
                         }),
-                        (0, e.jsx)(_x, {
-                            children: (0, e.jsx)(f.Suspense, {
+                        (0, g.jsx)(_z, {
+                            children: (0, g.jsx)(h.Suspense, {
                                 fallback: null,
-                                children: y
+                                children: A
                             })
                         })
                     ]
@@ -100,43 +100,43 @@ a.register('Ljwt5', function(b, c) {
             ]
         });
     };
-    const _x = g.default.div(t || (t = (_q => _q)`
+    const _z = i.default.div(v || (v = (a => a)`
   color: ${ 0 };
-`), k.default.White);
-}), a.register('7IstX', function(b, c) {
-    _q(b.exports, 'default', function() {
-        return _i;
+`), m.default.White);
+}), c.register('8j4mV', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p');
-    let f, g, h = _q => _q;
-    var _i = _q => (0, d.jsxs)(_j, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09');
+    let h, i, j = a => a;
+    var _k = a => (0, f.jsxs)(_l, {
         children: [
-            (0, d.jsx)(_k, {
-                children: _q.children
+            (0, f.jsx)(_m, {
+                children: a.children
             }),
-            (0, d.jsx)('div', {
+            (0, f.jsx)('div', {
                 className: 'area',
-                children: (0, d.jsxs)('ul', {
+                children: (0, f.jsxs)('ul', {
                     className: 'circles',
                     children: [
-                        (0, d.jsx)('li', {}),
-                        (0, d.jsx)('li', {}),
-                        (0, d.jsx)('li', {}),
-                        (0, d.jsx)('li', {}),
-                        (0, d.jsx)('li', {}),
-                        (0, d.jsx)('li', {}),
-                        (0, d.jsx)('li', {}),
-                        (0, d.jsx)('li', {}),
-                        (0, d.jsx)('li', {}),
-                        (0, d.jsx)('li', {})
+                        (0, f.jsx)('li', {}),
+                        (0, f.jsx)('li', {}),
+                        (0, f.jsx)('li', {}),
+                        (0, f.jsx)('li', {}),
+                        (0, f.jsx)('li', {}),
+                        (0, f.jsx)('li', {}),
+                        (0, f.jsx)('li', {}),
+                        (0, f.jsx)('li', {}),
+                        (0, f.jsx)('li', {}),
+                        (0, f.jsx)('li', {})
                     ]
                 })
             })
         ]
     });
-    const _j = e.default.div(f || (f = h`
+    const _l = g.default.div(h || (h = j`
   flex: 1;
   height: 100%;
   width: 100%;
@@ -263,166 +263,166 @@ a.register('Ljwt5', function(b, c) {
     }
   }
 `)),
-        _k = e.default.div(g || (g = h`
+        _m = g.default.div(i || (i = j`
   z-index: 1;
   /* background: rgba(0, 0, 0, 0.4); */
   flex: 1;
 `));
-}), a.register('s+8hx17', function(b, c) {
-    let d;
-    var e;
-    _q(b.exports, 'SiteHeaderTheme', function() {
-        return d;
-    }), (e = d || (d = {})).light = 'light', e.dark = 'dark';
-}), a.register('13HCY', function(b, c) {
-    _q(b.exports, 'default', function() {
-        return _m;
+}), c.register('W/XnX24', function(d, e) {
+    let f;
+    var g;
+    a(d.exports, 'SiteHeaderTheme', function() {
+        return f;
+    }), (g = f || (f = {})).light = 'light', g.dark = 'dark';
+}), c.register('M3OCl2', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _o;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('s+8hx17'),
-        h = a('bdn4O17'),
-        i = a('qL8MZ');
-    let j, k, l = _q => _q;
-    var _m = _q => {
-        const n = e.useMemo(() => {
-                var o;
-                return null !== (o = _q.theme) && void 0 !== o ? o : g.SiteHeaderTheme.light;
-            }, [_q.theme]),
-            o = e.useMemo(() => {
-                var p;
-                return null !== (p = _q.alpha) && void 0 !== p ? p : h.SiteHeaderAlpha.standard;
-            }, [_q.alpha]),
-            p = e.useMemo(() => {
-                const _q = o === h.SiteHeaderAlpha.none ? 1 : n === g.SiteHeaderTheme.light ? 0.85 : 0.45;
-                return n === g.SiteHeaderTheme.light ? `rgba(255, 255, 255, ${ _q })` : `rgba(16, 16, 16, ${ _q })`;
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('W/XnX24'),
+        j = c('zOtFd24'),
+        k = c('3IofR2');
+    let l, m, n = a => a;
+    var _o = a => {
+        const p = g.useMemo(() => {
+                var q;
+                return null !== (q = a.theme) && void 0 !== q ? q : i.SiteHeaderTheme.light;
+            }, [a.theme]),
+            q = g.useMemo(() => {
+                var r;
+                return null !== (r = a.alpha) && void 0 !== r ? r : j.SiteHeaderAlpha.standard;
+            }, [a.alpha]),
+            r = g.useMemo(() => {
+                const s = q === j.SiteHeaderAlpha.none ? 1 : p === i.SiteHeaderTheme.light ? 0.85 : 0.45;
+                return p === i.SiteHeaderTheme.light ? `rgba(255, 255, 255, ${ s })` : `rgba(16, 16, 16, ${ s })`;
             }, [
-                n,
-                o
+                p,
+                q
             ]),
-            q = e.useMemo(() => n === g.SiteHeaderTheme.light ? 'rgb(235, 238, 241)' : 'rgb(143 143 143 / 60%)', [n]);
-        return (0, d.jsxs)(_n, {
-            background: p,
-            borderColor: q,
+            s = g.useMemo(() => p === i.SiteHeaderTheme.light ? 'rgb(235, 238, 241)' : 'rgb(143 143 143 / 60%)', [p]);
+        return (0, f.jsxs)(_p, {
+            background: r,
+            borderColor: s,
             children: [
-                (0, d.jsxs)(_o, {
+                (0, f.jsxs)(_q, {
                     children: [
-                        (0, d.jsx)(i.default, {
-                            options: _d.options,
-                            selectedOption: _d.selectedOption,
-                            theme: n
+                        (0, f.jsx)(k.default, {
+                            options: a.options,
+                            selectedOption: a.selectedOption,
+                            theme: p
                         }),
-                        (0, d.jsx)('div', {
-                            children: _d.rightSideContent
+                        (0, f.jsx)('div', {
+                            children: a.rightSideContent
                         })
                     ]
                 }),
-                _d.bottomContent
+                a.bottomContent
             ]
         });
     };
-    const _n = f.default.div.attrs({
+    const _p = h.default.div.attrs({
             className: 'maxWidth'
-        })(j || (j = l`
+        })(l || (l = n`
   background: ${ 0 };
   padding: 7px 25px;
   backdrop-filter: blur(4px);
   box-shadow: inset 0 -1px ${ 0 };
-`), _d => _d.background, _d => _d.borderColor),
-        _o = f.default.div.attrs({
+`), a => a.background, a => a.borderColor),
+        _q = h.default.div.attrs({
             className: 'maxWidth flex vc between'
-        })(k || (k = l``));
-}), a.register('bdn4O17', function(b, c) {
-    let d;
-    var e;
-    _d(b.exports, 'SiteHeaderAlpha', function() {
-        return d;
-    }), (e = d || (d = {})).none = 'none', e.standard = 'standard', e.darker = 'darker';
-}), a.register('qL8MZ', function(b, c) {
-    _d(b.exports, 'default', function() {
-        return _i;
+        })(m || (m = n``));
+}), c.register('zOtFd24', function(d, e) {
+    let f;
+    var g;
+    a(d.exports, 'SiteHeaderAlpha', function() {
+        return f;
+    }), (g = f || (f = {})).none = 'none', g.standard = 'standard', g.darker = 'darker';
+}), c.register('3IofR2', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('cvto726'),
-        f = a('nxOom'),
-        g = a('Axq+p');
-    let h;
-    var _i = _d => (0, d.jsx)(_j, {
-        children: (0, d.jsx)(e.default, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('E2AMI26'),
+        h = c('pWL4I2'),
+        i = c('u4s09');
+    let j;
+    var _k = a => (0, f.jsx)(_l, {
+        children: (0, f.jsx)(g.default, {
             direction: 'horizontal',
             size: 8,
             wrap: !0,
-            children: _d.options.map(b => (0, d.jsx)(f.default, {
-                option: b,
-                selected: _d.selectedOption === b.id,
-                theme: _d.theme
-            }, `option-${ b.id }`))
+            children: a.options.map(d => (0, f.jsx)(h.default, {
+                option: d,
+                selected: a.selectedOption === d.id,
+                theme: a.theme
+            }, `option-${ d.id }`))
         })
     });
-    const _j = g.default.div.attrs({
+    const _l = i.default.div.attrs({
         className: 'scroll-x'
-    })(h || (h = (_d => _d)`
+    })(j || (j = (a => a)`
   flex: 1;
 `));
-}), a.register('cvto726', function(b, c) {
-    _d(b.exports, 'SpaceContext', function() {
-        return _m;
-    }, function(_d) {
-        return _m = _d;
-    }), _d(b.exports, 'default', function() {
-        return _u;
-    }, function(_d) {
-        return _u = _d;
+}), c.register('E2AMI26', function(d, e) {
+    a(d.exports, 'SpaceContext', function() {
+        return _o;
+    }, function(f) {
+        return _o = f;
+    }), a(d.exports, 'default', function() {
+        return _w;
+    }, function(f) {
+        return _w = f;
     });
-    var d = a('JrtKP'),
-        e = a('Ug51y0'),
-        f = a('LEQ5w'),
-        g = a('1P5ls'),
-        h = a('4gObz26'),
-        i = a('VqIM2'),
-        j = a('P8P+826'),
-        k = a('/xlT+'),
-        l = function(m, n) {
-            var o = {};
-            for (var p in m)
-                Object.prototype.hasOwnProperty.call(m, p) && n.indexOf(p) < 0 && (o[p] = m[p]);
-            if (null != m && 'function' == typeof Object.getOwnPropertySymbols) {
-                var q = 0;
-                for (p = Object.getOwnPropertySymbols(m); q < p.length; q++)
-                    n.indexOf(p[q]) < 0 && Object.prototype.propertyIsEnumerable.call(m, p[q]) && (o[p[q]] = m[p[q]]);
+    var f = c('/U36/'),
+        g = c('6E2xk1'),
+        h = c('O0Kav'),
+        i = c('R2nG3'),
+        j = c('42T6R26'),
+        k = c('yRLYd'),
+        l = c('qW/eZ26'),
+        m = c('AzDc2'),
+        n = function(o, p) {
+            var q = {};
+            for (var r in o)
+                Object.prototype.hasOwnProperty.call(o, r) && p.indexOf(r) < 0 && (q[r] = o[r]);
+            if (null != o && 'function' == typeof Object.getOwnPropertySymbols) {
+                var s = 0;
+                for (r = Object.getOwnPropertySymbols(o); s < r.length; s++)
+                    p.indexOf(r[s]) < 0 && Object.prototype.propertyIsEnumerable.call(o, r[s]) && (q[r[s]] = o[r[s]]);
             }
-            return o;
+            return q;
         };
-    const _m = f.createContext({
+    const _o = h.createContext({
             latestIndex: 0,
             horizontalSize: 0,
             verticalSize: 0,
             supportFlexGap: !1
         }),
-        n = {
+        p = {
             small: 8,
             middle: 16,
             large: 24
         };
-    const o = _G => {
+    const q = a => {
         const {
-            getPrefixCls: p,
-            space: q,
-            direction: r
-        } = f.useContext(g.ConfigContext), {
-            size: s = (null == q ? void 0 : q.size) || 'small',
-            align: t,
-            className: _u,
-            rootClassName: v,
-            children: w,
-            direction: x = 'horizontal',
-            prefixCls: y,
-            split: z,
-            style: A,
-            wrap: B = !1
-        } = _G, C = l(_G, [
+            getPrefixCls: r,
+            space: s,
+            direction: t
+        } = h.useContext(i.ConfigContext), {
+            size: u = (null == s ? void 0 : s.size) || 'small',
+            align: v,
+            className: _w,
+            rootClassName: x,
+            children: y,
+            direction: z = 'horizontal',
+            prefixCls: A,
+            split: B,
+            style: C,
+            wrap: D = !1
+        } = a, E = n(a, [
             'size',
             'align',
             'className',
@@ -433,181 +433,181 @@ a.register('Ljwt5', function(b, c) {
             'split',
             'style',
             'wrap'
-        ]), D = (0, h.default)(), [E, F] = f.useMemo(() => (Array.isArray(s) ? s : [
-            s,
-            s
-        ]).map(_G => function(_G) {
-            return 'string' == typeof _G ? n[_G] : _G || 0;
-        }(_g)), [s]), G = (0, e.default)(w, {
+        ]), F = (0, j.default)(), [G, H] = h.useMemo(() => (Array.isArray(u) ? u : [
+            u,
+            u
+        ]).map(a => function(I) {
+            return 'string' == typeof I ? p[I] : I || 0;
+        }(a)), [u]), I = (0, g.default)(y, {
             keepEmpty: !0
-        }), H = void 0 === t && 'horizontal' === x ? 'center' : t, I = p('space', y), [J, K] = (0, k.default)(I), L = _b(d)(I, K, `${ I }-${ x }`, {
-            [`${ I }-rtl`]: 'rtl' === r,
-            [`${ I }-align-${ H }`]: H
-        }, _u, v), M = `${ I }-item`, N = 'rtl' === r ? 'marginLeft' : 'marginRight';
-        let O = 0;
-        const P = G.map((_g, _b) => {
-                null != _g && (O = _b);
-                const Q = _g && _g.key || `${ M }-${ _b }`;
-                return f.createElement(j.default, {
-                    className: M,
-                    key: Q,
-                    direction: x,
-                    index: _b,
-                    marginDirection: N,
-                    split: z,
-                    wrap: B
-                }, _g);
+        }), J = void 0 === v && 'horizontal' === z ? 'center' : v, K = r('space', A), [L, M] = (0, m.default)(K), N = b(f)(K, M, `${ K }-${ z }`, {
+            [`${ K }-rtl`]: 'rtl' === t,
+            [`${ K }-align-${ J }`]: J
+        }, _w, x), O = `${ K }-item`, P = 'rtl' === t ? 'marginLeft' : 'marginRight';
+        let Q = 0;
+        const R = I.map((a, b) => {
+                null != a && (Q = b);
+                const S = a && a.key || `${ O }-${ b }`;
+                return h.createElement(l.default, {
+                    className: O,
+                    key: S,
+                    direction: z,
+                    index: b,
+                    marginDirection: P,
+                    split: B,
+                    wrap: D
+                }, a);
             }),
-            Q = f.useMemo(() => ({
-                horizontalSize: E,
-                verticalSize: F,
-                latestIndex: O,
-                supportFlexGap: D
+            S = h.useMemo(() => ({
+                horizontalSize: G,
+                verticalSize: H,
+                latestIndex: Q,
+                supportFlexGap: F
             }), [
-                E,
-                F,
-                O,
-                D
+                G,
+                H,
+                Q,
+                F
             ]);
-        if (0 === G.length)
+        if (0 === I.length)
             return null;
-        const R = {};
-        return B && (R.flexWrap = 'wrap', D || (R.marginBottom = -F)), D && (R.columnGap = E, R.rowGap = F), J(f.createElement('div', Object.assign({
-            className: L,
-            style: Object.assign(Object.assign({}, R), A)
-        }, C), f.createElement(_m.Provider, {
-            value: Q
-        }, P)));
+        const T = {};
+        return D && (T.flexWrap = 'wrap', F || (T.marginBottom = -H)), F && (T.columnGap = G, T.rowGap = H), L(h.createElement('div', Object.assign({
+            className: N,
+            style: Object.assign(Object.assign({}, T), C)
+        }, E), h.createElement(_o.Provider, {
+            value: S
+        }, R)));
     };
-    o.Compact = i.default;
-    var p = o;
-}), a.register('4gObz26', function(_b, c) {
-    _g(_b.exports, 'default', function() {
-        return _f;
+    q.Compact = k.default;
+    var r = q;
+}), c.register('42T6R26', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
     });
-    var d = a('LEQ5w'),
-        e = a('XPzGa'),
-        _f = () => {
-            const [_g, h] = d.useState(!1);
-            return d.useEffect(() => {
-                h((0, e.detectFlexGapSupported)());
-            }, []), _g;
+    var f = c('O0Kav'),
+        g = c('nzHVd'),
+        _h = () => {
+            const [i, j] = f.useState(!1);
+            return f.useEffect(() => {
+                j((0, g.detectFlexGapSupported)());
+            }, []), i;
         };
-}), a.register('P8P+826', function(b, c) {
-    _g(b.exports, 'default', function() {
-        return _f;
+}), c.register('qW/eZ26', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
     });
-    var d = a('LEQ5w'),
-        e = a('cvto726');
+    var f = c('O0Kav'),
+        g = c('E2AMI26');
 
-    function _f(_g) {
+    function _h(i) {
         let {
-            className: h,
-            direction: i,
-            index: j,
-            marginDirection: k,
-            children: l,
-            split: m,
-            wrap: n
-        } = _g;
+            className: j,
+            direction: k,
+            index: l,
+            marginDirection: m,
+            children: n,
+            split: o,
+            wrap: p
+        } = i;
         const {
-            horizontalSize: o,
-            verticalSize: p,
-            latestIndex: q,
-            supportFlexGap: r
-        } = d.useContext(e.SpaceContext);
-        let s = {};
-        return r || ('vertical' === i ? j < q && (s = {
-            marginBottom: o / (m ? 2 : 1)
-        }) : s = Object.assign(Object.assign({}, j < q && {
-            [k]: o / (m ? 2 : 1)
-        }), n && {
-            paddingBottom: p
-        })), null == l ? null : d.createElement(d.Fragment, null, d.createElement('div', {
-            className: h,
-            style: s
-        }, l), j < q && m && d.createElement('span', {
-            className: `${ h }-split`,
-            style: s
-        }, m));
+            horizontalSize: q,
+            verticalSize: r,
+            latestIndex: s,
+            supportFlexGap: t
+        } = f.useContext(g.SpaceContext);
+        let u = {};
+        return t || ('vertical' === k ? l < s && (u = {
+            marginBottom: q / (o ? 2 : 1)
+        }) : u = Object.assign(Object.assign({}, l < s && {
+            [m]: q / (o ? 2 : 1)
+        }), p && {
+            paddingBottom: r
+        })), null == n ? null : f.createElement(f.Fragment, null, f.createElement('div', {
+            className: j,
+            style: u
+        }, n), l < s && o && f.createElement('span', {
+            className: `${ j }-split`,
+            style: u
+        }, o));
     }
-}), a.register('nxOom', function(b, c) {
-    _s(b.exports, 'default', function() {
-        return _m;
+}), c.register('pWL4I2', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _o;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('s+8hx17'),
-        g = a('Axq+p'),
-        h = a('ibLRf19'),
-        i = a('70AkF'),
-        j = a('wYGc3'),
-        k = a('2HvvA11');
-    let l;
-    var _m = _s => {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('W/XnX24'),
+        i = c('u4s09'),
+        j = c('44iM223'),
+        k = c('zcfNM'),
+        l = c('+cTfn'),
+        m = c('FB7HT26');
+    let n;
+    var _o = a => {
         const {
-            theme: n,
-            option: o
-        } = _s, {
-            pathname: p
-        } = (0, j.useLocation)(), {
-            label: q,
-            icon: r,
-            path: s,
-            otherMatchingPaths: t
-        } = o, u = (() => {
-            if (s) {
-                if ((0, i.matchPath)({
-                        path: s
-                    }, p))
+            theme: p,
+            option: q
+        } = a, {
+            pathname: r
+        } = (0, l.useLocation)(), {
+            label: s,
+            icon: t,
+            path: u,
+            otherMatchingPaths: v
+        } = q, w = (() => {
+            if (u) {
+                if ((0, k.matchPath)({
+                        path: u
+                    }, r))
                     return !0;
-                if ((null == t ? void 0 : t.length) && t.some(_s => (0, i.matchPath)({
-                        path: _s
-                    }, p)))
+                if ((null == v ? void 0 : v.length) && v.some(a => (0, k.matchPath)({
+                        path: a
+                    }, r)))
                     return !0;
             }
             return !1;
-        })(), v = e.useMemo(() => !!u || _s.selected, [
-            u,
-            _s.selected
-        ]), w = e.useMemo(() => v ? '#1677ff' : 'transparent', [
-            n,
-            v
-        ]), x = e.useMemo(() => v ? h.default.White : n === f.SiteHeaderTheme.light ? 'rgb(26, 27, 37)' : h.default.White, [
-            n,
-            v
-        ]), y = e.useMemo(() => v ? w : n === f.SiteHeaderTheme.light ? 'rgba(0, 0, 0, 0.05)' : 'rgba(255, 255, 255, 0.1)', [
-            n,
-            v,
-            w
+        })(), x = g.useMemo(() => !!w || a.selected, [
+            w,
+            a.selected
+        ]), y = g.useMemo(() => x ? '#1677ff' : 'transparent', [
+            p,
+            x
+        ]), z = g.useMemo(() => x ? j.default.White : p === h.SiteHeaderTheme.light ? 'rgb(26, 27, 37)' : j.default.White, [
+            p,
+            x
+        ]), A = g.useMemo(() => x ? y : p === h.SiteHeaderTheme.light ? 'rgba(0, 0, 0, 0.05)' : 'rgba(255, 255, 255, 0.1)', [
+            p,
+            x,
+            y
         ]);
-        return (0, d.jsx)(k.default, {
-            to: s,
-            target: _s.option.target,
-            onClick: o.onSelect,
+        return (0, f.jsx)(m.default, {
+            to: u,
+            target: a.option.target,
+            onClick: q.onSelect,
             style: {
                 cursor: 'pointer'
             },
-            children: (0, d.jsxs)(_n, {
-                background: w,
-                color: x,
-                hoverBackground: y,
+            children: (0, f.jsxs)(_p, {
+                background: y,
+                color: z,
+                hoverBackground: A,
                 children: [
-                    r ? (0, d.jsx)('span', {
+                    t ? (0, f.jsx)('span', {
                         style: {
                             marginRight: 6,
                             fontSize: '0.9em'
                         },
-                        children: r
+                        children: t
                     }) : null,
-                    q
+                    s
                 ]
             })
         });
     };
-    const _n = g.default.div.attrs({
+    const _p = i.default.div.attrs({
         className: 'flex-center'
-    })(l || (l = (_s => _s)`
+    })(n || (n = (a => a)`
   line-height: 1;
   padding: 6px 12px;
   border-radius: 50px;
@@ -620,12 +620,12 @@ a.register('Ljwt5', function(b, c) {
   &:hover {
     background: ${ 0 };
   }
-`), _s => _s.background, _s => _s.color, _s => _s.hoverBackground);
-}), a.register('ibLRf19', function(b, c) {
-    _s(b.exports, 'default', function() {
-        return _d;
+`), a => a.background, a => a.color, a => a.hoverBackground);
+}), c.register('44iM223', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         White: 'white',
         Black: 'black',
         BackgroundGray: '#eeeeee',
@@ -635,74 +635,74 @@ a.register('Ljwt5', function(b, c) {
         LightSuccessGreen: '#6abf69',
         DarkSuccessGreen: '#2e7d32'
     };
-}), a.register('2HvvA11', function(b, c) {
-    _s(b.exports, 'default', function() {
-        return _f;
+}), c.register('FB7HT26', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
     });
-    var d = a('0hzx+'),
-        e = a('wYGc3');
-    a('LEQ5w');
-    var _f = _s => _s.external || !_s.to ? (0, d.jsx)('a', {
-        href: _s.to,
-        tabIndex: Number(_s.tabIndex || '0'),
-        onClick: _s.onClick,
-        onKeyPress: b => {
-            _s.onClick && 'Enter' === b.key && (b.preventDefault(), _s.onClick());
+    var f = c('gRbUn'),
+        g = c('+cTfn');
+    c('O0Kav');
+    var _h = a => a.external || !a.to ? (0, f.jsx)('a', {
+        href: a.to,
+        tabIndex: Number(a.tabIndex || '0'),
+        onClick: a.onClick,
+        onKeyPress: d => {
+            a.onClick && 'Enter' === d.key && (d.preventDefault(), a.onClick());
         },
-        className: _s.className,
-        target: _s.target,
-        style: _s.style,
-        children: _s.children
-    }) : (0, d.jsx)(e.Link, {
-        to: _s.to,
-        tabIndex: Number(_s.tabIndex || '0'),
-        onClick: _s.onClick,
-        className: _s.className,
-        target: _s.target,
-        style: _s.style,
-        children: _s.children
+        className: a.className,
+        target: a.target,
+        style: a.style,
+        children: a.children
+    }) : (0, f.jsx)(g.Link, {
+        to: a.to,
+        tabIndex: Number(a.tabIndex || '0'),
+        onClick: a.onClick,
+        className: a.className,
+        target: a.target,
+        style: a.style,
+        children: a.children
     });
-}), a.register('9R7cy', function(b, c) {
-    _s(b.exports, 'default', function() {
-        return _e;
+}), c.register('t52Ep', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _g;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var _e = _s => (0, d.jsx)('i', {
-        className: `${ _s.name }${ _s.className ? ` ${ _s.className }` : '' }`,
-        style: _s.style
+    var f = c('gRbUn');
+    c('O0Kav');
+    var _g = a => (0, f.jsx)('i', {
+        className: `${ a.name }${ a.className ? ` ${ a.className }` : '' }`,
+        style: a.style
     });
-}), a.register('PwZuN', function(b, c) {
-    _s(b.exports, 'default', function() {
-        return _r;
+}), c.register('Q7yTi', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _t;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('VrzrY'),
-        g = a('0HHAH'),
-        h = a('cvto726'),
-        i = a('E+Wfz'),
-        j = a('MvIHy'),
-        k = a('oUkqc'),
-        l = a('JM8XB'),
-        m = a('bn7X+'),
-        n = a('KIxfA'),
-        o = a('FpbFp'),
-        p = a('sHRDd');
-    let q;
-    var _r = () => {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('m5F5G'),
+        i = c('MgONH'),
+        j = c('E2AMI26'),
+        k = c('4DY7h'),
+        l = c('ngmu/'),
+        m = c('hphdI'),
+        n = c('jQPD7'),
+        o = c('xo476'),
+        p = c('mZxOZ'),
+        q = c('JNGrh0'),
+        r = c('8KqQ+');
+    let s;
+    var _t = () => {
         const {
-            data: _s,
-            isLoading: t,
-            error: u
-        } = (0, n.default)();
-        return u ? (0, d.jsx)('div', {
+            data: u,
+            isLoading: v,
+            error: w
+        } = (0, p.default)();
+        return w ? (0, f.jsx)('div', {
             className: 'flex-center maxWidth',
             style: {
                 marginTop: 50
             },
-            children: (0, d.jsx)('div', {
+            children: (0, f.jsx)('div', {
                 className: 'light-shadow',
                 style: {
                     background: 'rgba(255,255,255,0.1)',
@@ -712,259 +712,259 @@ a.register('Ljwt5', function(b, c) {
                 },
                 children: 'There was an error loading Gimkit Creative. Please refresh and try again.'
             })
-        }) : t ? (0, d.jsx)(g.Centered, {
+        }) : v ? (0, f.jsx)(i.Centered, {
             style: {
                 marginTop: 100
             },
-            children: (0, d.jsx)(o.default, {
+            children: (0, f.jsx)(q.default, {
                 style: {
-                    color: p.default.White
+                    color: r.default.White
                 }
             })
-        }) : (0, d.jsxs)(_s, {
+        }) : (0, f.jsxs)(_u, {
             children: [
-                (0, d.jsx)(f.default, {}),
-                (0, d.jsxs)(h.default, {
+                (0, f.jsx)(h.default, {}),
+                (0, f.jsxs)(j.default, {
                     className: 'maxWidth',
                     direction: 'vertical',
                     size: 25,
                     style: {
                         marginTop: 30,
-                        width: j.CreativeContentWidth.width,
-                        maxWidth: j.CreativeContentWidth.maxWidth
+                        width: l.CreativeContentWidth.width,
+                        maxWidth: l.CreativeContentWidth.maxWidth
                     },
                     children: [
-                        _s.completedTutorial ? null : (0, d.jsx)(i.default, {
-                            children: (0, d.jsx)(k.default, {})
+                        u.completedTutorial ? null : (0, f.jsx)(k.default, {
+                            children: (0, f.jsx)(m.default, {})
                         }),
-                        (0, d.jsx)(i.default, {
-                            children: (0, d.jsx)(l.default, {
-                                mapLimit: _s.mapLimit
+                        (0, f.jsx)(k.default, {
+                            children: (0, f.jsx)(n.default, {
+                                mapLimit: u.mapLimit
                             })
                         }),
-                        (0, d.jsx)(i.default, {
-                            children: (0, d.jsx)(m.default, {})
+                        (0, f.jsx)(k.default, {
+                            children: (0, f.jsx)(o.default, {})
                         })
                     ]
                 })
             ]
         });
     };
-    const _s = (0, e.default)(g.CenteredColumn).attrs({
+    const _u = (0, g.default)(i.CenteredColumn).attrs({
         className: 'maxWidth'
-    })(q || (q = (_n => _n)`
+    })(s || (s = (a => a)`
   padding: 35px 0px;
 `));
-}), a.register('VrzrY', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _p;
+}), c.register('m5F5G', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _r;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('MvIHy'),
-        g = a('0HHAH'),
-        h = a('b5kvC'),
-        i = a('lhG1d');
-    let j, k, l, m, n, o = _n => _n;
-    var _p = () => (0, d.jsxs)(_q, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('ngmu/'),
+        i = c('MgONH'),
+        j = c('Eh2Wh'),
+        k = c('V704d');
+    let l, m, n, o, p, q = a => a;
+    var _r = () => (0, f.jsxs)(_s, {
         children: [
-            (0, d.jsxs)(_r, {
+            (0, f.jsxs)(_t, {
                 children: [
-                    (0, d.jsx)(_s, {
+                    (0, f.jsx)(_u, {
                         src: '/client/img/svgLogoWhite.svg'
                     }),
-                    (0, d.jsx)(_t, {
+                    (0, f.jsx)(_v, {
                         children: 'Creative'
                     })
                 ]
             }),
-            (0, d.jsx)(_u, {
-                children: (0, d.jsx)(i.default, {
+            (0, f.jsx)(_w, {
+                children: (0, f.jsx)(k.default, {
                     children: 'Welcome to Gimkit Creative, where you can build your very own game modes, maps, & worlds! Creative is in early access, so there may be bugs & issues. Have fun building!'
                 })
             })
         ]
     });
-    const _q = (0, e.default)(g.CenteredColumn)(j || (j = o`
+    const _s = (0, g.default)(i.CenteredColumn)(l || (l = q`
   width: ${ 0 };
   max-width: ${ 0 };
-`), f.CreativeContentWidth.width, f.CreativeContentWidth.maxWidth),
-        _r = (0, e.default)(g.CenteredColumn)(k || (k = o``)),
-        _s = e.default.img(l || (l = o`
+`), h.CreativeContentWidth.width, h.CreativeContentWidth.maxWidth),
+        _t = (0, g.default)(i.CenteredColumn)(m || (m = q``)),
+        _u = g.default.img(n || (n = q`
   height: 35px;
   filter: drop-shadow(rgba(0, 0, 0, 0.9) 0px 1px 2px);
 `)),
-        _t = e.default.div(m || (m = o`
+        _v = g.default.div(o || (o = q`
   text-shadow: rgba(0, 0, 0, 0.6) 0px 3px 15px;
   font-size: 72px;
   font-family: ${ 0 };
   text-transform: uppercase;
   line-height: 1;
   margin-top: 10px;
-`), h.Fonts.FugazOne),
-        _u = e.default.div(n || (n = o`
+`), j.Fonts.FugazOne),
+        _w = g.default.div(p || (p = q`
   margin-top: 15px;
   font-size: 18px;
   text-align: center;
 `));
-}), a.register('MvIHy', function(b, c) {
-    _n(b.exports, 'CreativeContentWidth', function() {
-        return _d;
+}), c.register('ngmu/', function(d, e) {
+    a(d.exports, 'CreativeContentWidth', function() {
+        return _f;
     });
-    const _d = {
+    const _f = {
         width: '90%',
         maxWidth: '800px'
     };
-}), a.register('0HHAH', function(b, c) {
-    _n(b.exports, 'Centered', function() {
-        return _j;
-    }), _n(b.exports, 'VerticallyCentered', function() {
-        return _k;
-    }), _n(b.exports, 'CenteredColumn', function() {
+}), c.register('MgONH', function(d, e) {
+    a(d.exports, 'Centered', function() {
         return _l;
-    }), _n(b.exports, 'VerticalCentered', function() {
+    }), a(d.exports, 'VerticallyCentered', function() {
         return _m;
-    });
-    var d = a('Axq+p');
-    let e, f, g, h, i = _n => _n;
-    const _j = d.default.div.attrs({
-            className: 'flex-center'
-        })(e || (e = i``)),
-        _k = d.default.div.attrs({
-            className: 'flex vc'
-        })(f || (f = i``)),
-        _l = (0, d.default)(_j).attrs({
-            className: 'flex-column'
-        })(g || (g = i``)),
-        _m = d.default.div.attrs({
-            className: 'flex vc'
-        })(h || (h = i``));
-}), a.register('lhG1d', function(b, c) {
-    _n(b.exports, 'Provider', function() {
-        return _m;
-    }), _n(b.exports, 'default', function() {
+    }), a(d.exports, 'CenteredColumn', function() {
+        return _n;
+    }), a(d.exports, 'VerticalCentered', function() {
         return _o;
     });
-    var d = a('LEQ5w'),
-        e = '__wrap_b',
-        f = '__wrap_o',
-        g = 'undefined' == typeof window ? _b(d).useEffect : _b(d).useLayoutEffect,
-        h = (_n, _b, a) => {
-            let i = (a = a || document.querySelector(`[data-br="${ _n }"]`)).parentElement,
-                j = _n => a.style.maxWidth = _n + 'px';
-            a.style.maxWidth = '';
-            let k, l = i.clientWidth,
-                m = i.clientHeight,
-                n = l / 2 - 0.25,
-                o = l + 0.5;
-            if (l) {
-                for (; n + 1 < o;)
-                    k = Math.round((n + o) / 2), j(k), i.clientHeight === m ? o = k : n = k;
-                j(o * _b + l * (1 - _b));
+    var f = c('u4s09');
+    let g, h, i, j, k = a => a;
+    const _l = f.default.div.attrs({
+            className: 'flex-center'
+        })(g || (g = k``)),
+        _m = f.default.div.attrs({
+            className: 'flex vc'
+        })(h || (h = k``)),
+        _n = (0, f.default)(_l).attrs({
+            className: 'flex-column'
+        })(i || (i = k``)),
+        _o = f.default.div.attrs({
+            className: 'flex vc'
+        })(j || (j = k``));
+}), c.register('V704d', function(d, e) {
+    a(d.exports, 'Provider', function() {
+        return _o;
+    }), a(d.exports, 'default', function() {
+        return _q;
+    });
+    var f = c('O0Kav'),
+        g = '__wrap_b',
+        h = '__wrap_o',
+        i = 'undefined' == typeof window ? b(f).useEffect : b(f).useLayoutEffect,
+        j = (a, b, c) => {
+            let k = (c = c || document.querySelector(`[data-br="${ a }"]`)).parentElement,
+                l = a => c.style.maxWidth = a + 'px';
+            c.style.maxWidth = '';
+            let m, n = k.clientWidth,
+                o = k.clientHeight,
+                p = n / 2 - 0.25,
+                q = n + 0.5;
+            if (n) {
+                for (; p + 1 < q;)
+                    m = Math.round((p + q) / 2), l(m), k.clientHeight === o ? q = m : p = m;
+                l(q * b + n * (1 - b));
             }
-            a.__wrap_o || (a.__wrap_o = new ResizeObserver(() => {
-                self.__wrap_b(0, +a.dataset.brr, a);
-            })).observe(i);
+            c.__wrap_o || (c.__wrap_o = new ResizeObserver(() => {
+                self.__wrap_b(0, +c.dataset.brr, c);
+            })).observe(k);
         },
-        i = h.toString(),
-        j = (_n, k = '') => _b(d).createElement('script', {
+        k = j.toString(),
+        l = (a, m = '') => b(f).createElement('script', {
             suppressHydrationWarning: !0,
             dangerouslySetInnerHTML: {
-                __html: (_n ? '' : `self.${ e }=${ i };`) + k
+                __html: (a ? '' : `self.${ g }=${ k };`) + m
             }
         }),
-        l = _b(d).createContext(!1),
-        _m = ({
-            children: _n
-        }) => _b(d).createElement(l.Provider, {
-            value: !0
-        }, j(!1), _n),
+        n = b(f).createContext(!1),
         _o = ({
-            as: p = 'span',
-            ratio: q = 1,
-            children: r,
-            ...s
+            children: p
+        }) => b(f).createElement(n.Provider, {
+            value: !0
+        }, l(!1), p),
+        _q = ({
+            as: r = 'span',
+            ratio: s = 1,
+            children: t,
+            ...u
         }) => {
-            let t = _b(d).useId(),
-                u = _b(d).useRef(),
-                v = _b(d).useContext(l);
-            return g(() => {
-                u.current && (self[e] = h)(0, q, u.current);
+            let v = b(f).useId(),
+                w = b(f).useRef(),
+                x = b(f).useContext(n);
+            return i(() => {
+                w.current && (self[g] = j)(0, s, w.current);
             }, [
-                r,
-                q
-            ]), g(() => () => {
-                if (!u.current)
+                t,
+                s
+            ]), i(() => () => {
+                if (!w.current)
                     return;
-                let w = u.current[f];
-                !w || (w.disconnect(), delete u.current[f]);
-            }, []), _b(d).createElement(_b(d).Fragment, null, _b(d).createElement(p, {
-                ...s,
-                'data-br': t,
-                'data-brr': q,
-                ref: u,
+                let y = w.current[h];
+                !y || (y.disconnect(), delete w.current[h]);
+            }, []), b(f).createElement(b(f).Fragment, null, b(f).createElement(r, {
+                ...u,
+                'data-br': v,
+                'data-brr': s,
+                ref: w,
                 style: {
                     display: 'inline-block',
                     verticalAlign: 'top',
                     textDecoration: 'inherit'
                 },
                 suppressHydrationWarning: !0
-            }, r), j(v, `self.${ e }("${ t }",${ q })`));
+            }, t), l(x, `self.${ g }("${ v }",${ s })`));
         };
-}), a.register('E+Wfz', function(_b, c) {
-    _g(_b.exports, 'default', function() {
-        return _g;
+}), c.register('4DY7h', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p');
-    let f;
-    var _g = _g => (0, d.jsx)(_h, {
-        className: _g.className,
-        children: _g.children
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09');
+    let h;
+    var _i = a => (0, f.jsx)(_j, {
+        className: a.className,
+        children: a.children
     });
-    const _h = e.default.div.attrs({
+    const _j = g.default.div.attrs({
         className: 'maxWidth light-shadow'
-    })(f || (f = (_g => _g)`
+    })(h || (h = (a => a)`
   background: rgba(255, 255, 255, 0.1);
   padding: 35px;
   border-radius: 12px;
   backdrop-filter: blur(3px);
 `));
-}), a.register('oUkqc', function(b, c) {
-    _g(b.exports, 'default', function() {
-        return _r;
+}), c.register('hphdI', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _t;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('led8j'),
-        g = a('b5kvC'),
-        h = a('gs4MT'),
-        i = a('lhG1d'),
-        j = a('2Xvuf');
-    let k, l, m, n, o, p, q = _g => _g;
-    var _r = () => (0, d.jsxs)(_s, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('aPZ+w'),
+        i = c('Eh2Wh'),
+        j = c('nKuOQ'),
+        k = c('V704d'),
+        l = c('UaUBz0');
+    let m, n, o, p, q, r, s = a => a;
+    var _t = () => (0, f.jsxs)(_u, {
         children: [
-            (0, d.jsx)(_t, {
-                children: (0, d.jsx)(_u, {})
+            (0, f.jsx)(_v, {
+                children: (0, f.jsx)(_w, {})
             }),
-            (0, d.jsxs)(_v, {
+            (0, f.jsxs)(_x, {
                 children: [
-                    (0, d.jsx)(_w, {
-                        children: (0, d.jsx)(i.default, {
+                    (0, f.jsx)(_y, {
+                        children: (0, f.jsx)(k.default, {
                             children: 'Complete the Gimkit Creative tutorial and receive the Blueprint Gim for free!'
                         })
                     }),
-                    (0, d.jsx)(_x, {
+                    (0, f.jsx)(_z, {
                         children: 'The tutorial takes about 10 minutes to complete.'
                     }),
-                    (0, d.jsx)(f.default, {
+                    (0, f.jsx)(h.default, {
                         size: 'small',
-                        customFontWeight: g.FontWeights.Bold,
+                        customFontWeight: i.FontWeights.Bold,
                         type: 'success',
-                        onClick: () => window.location.href = h.CREATIVE_TUTORIAL,
+                        onClick: () => window.location.href = j.CREATIVE_TUTORIAL,
                         ariaLabel: 'Start Tutorial',
                         children: 'Start Tutorial'
                     })
@@ -972,116 +972,116 @@ a.register('Ljwt5', function(b, c) {
             })
         ]
     });
-    const _s = e.default.div.attrs({
+    const _u = g.default.div.attrs({
             className: 'maxWidth flex-center'
-        })(k || (k = q``)),
-        _t = e.default.div(l || (l = q``)),
-        _u = e.default.img.attrs({
-            src: (0, j.default)('characters/spine/preview/construction.png')
-        })(m || (m = q`
+        })(m || (m = s``)),
+        _v = g.default.div(n || (n = s``)),
+        _w = g.default.img.attrs({
+            src: (0, l.default)('characters/spine/preview/construction.png')
+        })(o || (o = s`
   height: 155px;
   transform: rotate(353deg);
   filter: drop-shadow(0px 0px 9px rgba(255, 255, 255, 0.9));
 `)),
-        _v = e.default.div(n || (n = q`
+        _x = g.default.div(p || (p = s`
   margin-left: 20px;
 `)),
-        _w = e.default.div(o || (o = q`
+        _y = g.default.div(q || (q = s`
   font-weight: ${ 0 };
   font-size: 18px;
   line-height: 1.3;
-`), g.FontWeights.Bold),
-        _x = e.default.div(p || (p = q`
+`), i.FontWeights.Bold),
+        _z = g.default.div(r || (r = s`
   margin-top: 6px;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 12px;
   font-style: italic;
 `));
-}), a.register('led8j', function(b, c) {
-    _g(b.exports, 'default', function() {
-        return _k;
+}), c.register('aPZ+w', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _m;
     });
-    var d = a('0hzx+'),
-        e = a('GT7Vh'),
-        f = a('LEQ5w'),
-        g = a('Axq+p'),
-        h = a('b5kvC'),
-        i = a('vShe/');
-    let j;
-    var _k = _g => {
-        const l = _g.size || 'default',
-            m = f.useMemo(() => _g.customColor ? _g.customColor : _g.disabled ? '#546e7a' : 'success' === _g.type ? '#2e7d32' : 'danger' === _g.type ? '#c62828' : '#3f51b5', [
-                _g.disabled,
-                _g.type,
-                _g.customColor
+    var f = c('gRbUn'),
+        g = c('SAYZy'),
+        h = c('O0Kav'),
+        i = c('u4s09'),
+        j = c('Eh2Wh'),
+        k = c('HOIhZ');
+    let l;
+    var _m = a => {
+        const n = a.size || 'default',
+            o = h.useMemo(() => a.customColor ? a.customColor : a.disabled ? '#546e7a' : 'success' === a.type ? '#2e7d32' : 'danger' === a.type ? '#c62828' : '#3f51b5', [
+                a.disabled,
+                a.type,
+                a.customColor
             ]),
-            n = f.useMemo(() => (0, e.darken)(0.1, m), [m]),
-            o = f.useMemo(() => 'small' === l || 'default' === l ? 14 : 20, [l]),
-            p = f.useMemo(() => 'small' === l ? 6 : 'default' === l ? 8 : 12, [l]),
-            q = f.useMemo(() => {
-                const r = 'small' === l ? '8px' : '12px';
-                return _g.customHorizontalPadding ? `${ r } ${ _g.customHorizontalPadding }px` : 'small' === l ? `${ r } 24px` : 'default' === l ? `${ r } 28px` : `${ r } 42px`;
+            p = h.useMemo(() => (0, g.darken)(0.1, o), [o]),
+            q = h.useMemo(() => 'small' === n || 'default' === n ? 14 : 20, [n]),
+            r = h.useMemo(() => 'small' === n ? 6 : 'default' === n ? 8 : 12, [n]),
+            s = h.useMemo(() => {
+                const t = 'small' === n ? '8px' : '12px';
+                return a.customHorizontalPadding ? `${ t } ${ a.customHorizontalPadding }px` : 'small' === n ? `${ t } 24px` : 'default' === n ? `${ t } 28px` : `${ t } 42px`;
             }, [
-                l,
-                _g.customHorizontalPadding
+                n,
+                a.customHorizontalPadding
             ]),
-            r = f.useMemo(() => 'small' === l ? 41 : 49, [l]),
-            s = f.useMemo(() => _g.customFontWeight ? _g.customFontWeight : 'large' === l ? h.FontWeights.Bold : h.FontWeights.Normal, [
-                _g.customFontWeight,
-                l
+            t = h.useMemo(() => 'small' === n ? 41 : 49, [n]),
+            u = h.useMemo(() => a.customFontWeight ? a.customFontWeight : 'large' === n ? j.FontWeights.Bold : j.FontWeights.Normal, [
+                a.customFontWeight,
+                n
             ]),
-            t = () => {
-                _g.disabled || _g.onClick && _g.onClick();
+            v = () => {
+                a.disabled || a.onClick && a.onClick();
             };
-        return (0, d.jsx)(_l, {
+        return (0, f.jsx)(_n, {
             style: Object.assign({
                 pointerEvents: 'all',
                 WebkitFlexShrink: 0,
                 flexShrink: 0,
-                height: r
-            }, _g.style || {}),
-            children: (0, d.jsxs)('button', {
+                height: t
+            }, a.style || {}),
+            children: (0, f.jsxs)('button', {
                 className: 'btn-pushable',
-                'aria-label': _g.ariaLabel,
-                onClick: _g.usePointerDownEvent ? void 0 : t,
-                onPointerDown: _g.usePointerDownEvent ? t : void 0,
+                'aria-label': a.ariaLabel,
+                onClick: a.usePointerDownEvent ? void 0 : v,
+                onPointerDown: a.usePointerDownEvent ? v : void 0,
                 style: {
-                    cursor: _g.disabled ? 'not-allowed' : 'pointer',
-                    width: _g.block ? '100%' : 'auto'
+                    cursor: a.disabled ? 'not-allowed' : 'pointer',
+                    width: a.block ? '100%' : 'auto'
                 },
                 children: [
-                    (0, d.jsx)('span', {
+                    (0, f.jsx)('span', {
                         className: 'btn-shadow',
                         style: {
-                            borderRadius: p
+                            borderRadius: r
                         }
                     }),
-                    (0, d.jsx)('span', {
+                    (0, f.jsx)('span', {
                         className: 'btn-edge',
                         style: {
-                            background: n,
-                            borderRadius: p
+                            background: p,
+                            borderRadius: r
                         }
                     }),
-                    (0, d.jsx)('span', {
+                    (0, f.jsx)('span', {
                         className: 'btn-front',
                         style: {
-                            background: m,
-                            fontSize: o,
-                            borderRadius: p,
-                            padding: q,
-                            fontWeight: s
+                            background: o,
+                            fontSize: q,
+                            borderRadius: r,
+                            padding: s,
+                            fontWeight: u
                         },
-                        children: _g.children
+                        children: a.children
                     })
                 ]
             })
         });
     };
-    const _l = g.default.div.attrs({
+    const _n = i.default.div.attrs({
         className: 'flex'
-    })(j || (j = (_g => _g)`
+    })(l || (l = (a => a)`
   align-items: flex-end;
 
   .btn-pushable {
@@ -1139,99 +1139,99 @@ a.register('Ljwt5', function(b, c) {
     transform: translateY(1px);
     transition: transform 34ms;
   }
-`), i.default.White);
-}), a.register('vShe/', function(b, c) {
-    _g(b.exports, 'default', function() {
-        return _d;
+`), k.default.White);
+}), c.register('HOIhZ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         White: '#FFFFFF',
         Black: '#000000',
         Yellow: '#FFFF00',
         Purple: '#673ab7'
     };
-}), a.register('2Xvuf', function(b, c) {
-    let d;
-    _g(b.exports, 'default', function() {
-        return _e;
+}), c.register('UaUBz0', function(d, e) {
+    let f;
+    a(d.exports, 'default', function() {
+        return _g;
     });
-    var _e = _g => {
-        const f = (() => {
-            var _g;
-            if (d)
-                return d;
-            const h = null === (_g = document.querySelector('meta[property="cdn-map-assets-url"]')) || void 0 === _g ? void 0 : _g.getAttribute('content');
-            return void 0 !== h && '$CDN_MAP_ASSETS_URL' !== h ? (d = h, d) : '';
+    var _g = a => {
+        const h = (() => {
+            var i;
+            if (f)
+                return f;
+            const j = null === (i = document.querySelector('meta[property="cdn-map-assets-url"]')) || void 0 === i ? void 0 : i.getAttribute('content');
+            return void 0 !== j && '$CDN_MAP_ASSETS_URL' !== j ? (f = j, f) : '';
         })();
-        return _E.startsWith('/assets/map') ? `${ f }${ _E }` : `${ f }/assets/map/${ _E }`;
+        return a.startsWith('/assets/map') ? `${ h }${ a }` : `${ h }/assets/map/${ a }`;
     };
-}), a.register('JM8XB', function(b, c) {
-    _E(b.exports, 'Title', function() {
-        return _y;
-    }), _E(b.exports, 'Description', function() {
-        return _z;
-    }), _E(b.exports, 'default', function() {
-        return _u;
+}), c.register('jQPD7', function(d, e) {
+    a(d.exports, 'Title', function() {
+        return _A;
+    }), a(d.exports, 'Description', function() {
+        return _B;
+    }), a(d.exports, 'default', function() {
+        return _w;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('PA/Lj'),
-        g = a('PMl60'),
-        h = a('led8j'),
-        i = a('b5kvC'),
-        j = a('cvto726'),
-        k = a('lipUu'),
-        l = a('6Csy3'),
-        m = a('rJF+L');
-    let n, o, p, q, r, s, t = _E => _E;
-    var _u = _E => {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('/x6lc'),
+        i = c('quE27'),
+        j = c('aPZ+w'),
+        k = c('Eh2Wh'),
+        l = c('E2AMI26'),
+        m = c('Skuh5'),
+        n = c('6oQwW'),
+        o = c('C1J2w');
+    let p, q, r, s, t, u, v = a => a;
+    var _w = a => {
         const {
-            data: v,
-            isLoading: w,
-            error: x
-        } = (0, f.default)(), [y, z, A] = (0, g.useBoolean)(!1);
-        if (w || x)
+            data: x,
+            isLoading: y,
+            error: z
+        } = (0, h.default)(), [A, B, C] = (0, i.useBoolean)(!1);
+        if (y || z)
             return null;
-        const B = v.length < _E.mapLimit,
-            C = v.slice(0, _E.mapLimit),
-            D = v.slice(_E.mapLimit);
-        return (0, d.jsxs)(d.Fragment, {
+        const D = x.length < a.mapLimit,
+            E = x.slice(0, a.mapLimit),
+            F = x.slice(a.mapLimit);
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, d.jsxs)(_v, {
+                (0, f.jsxs)(_x, {
                     children: [
-                        (0, d.jsxs)(_w, {
+                        (0, f.jsxs)(_y, {
                             children: [
-                                (0, d.jsxs)(_x, {
+                                (0, f.jsxs)(_z, {
                                     children: [
-                                        (0, d.jsx)(_y, {
+                                        (0, f.jsx)(_A, {
                                             children: 'My Maps'
                                         }),
-                                        (0, d.jsxs)(_z, {
+                                        (0, f.jsxs)(_B, {
                                             children: [
-                                                v.length,
+                                                x.length,
                                                 '/',
-                                                _E.mapLimit,
+                                                a.mapLimit,
                                                 ' slots used'
                                             ]
                                         }),
-                                        v.length >= 2 ? (0, d.jsx)(m.default, {
+                                        x.length >= 2 ? (0, f.jsx)(o.default, {
                                             marginTop: 8,
                                             text: 'Store up to 25 maps'
                                         }) : null
                                     ]
                                 }),
-                                B ? (0, d.jsx)(h.default, {
+                                D ? (0, f.jsx)(j.default, {
                                     size: 'small',
-                                    customFontWeight: i.FontWeights.Bold,
-                                    onClick: z,
+                                    customFontWeight: k.FontWeights.Bold,
+                                    onClick: B,
                                     ariaLabel: 'Create New Map',
                                     type: 'success',
                                     children: 'Create New Map'
                                 }) : null
                             ]
                         }),
-                        v.length ? (0, d.jsxs)(j.default, {
+                        x.length ? (0, f.jsxs)(l.default, {
                             direction: 'vertical',
                             size: 14,
                             className: 'maxWidth',
@@ -1239,12 +1239,12 @@ a.register('Ljwt5', function(b, c) {
                                 marginTop: 20
                             },
                             children: [
-                                C.map(_E => (0, d.jsx)(k.default, {
-                                    id: _E._id,
-                                    name: _E.name,
+                                E.map(a => (0, f.jsx)(m.default, {
+                                    id: a._id,
+                                    name: a.name,
                                     disabled: !1
-                                }, _E._id)),
-                                D.length ? (0, d.jsxs)(j.default, {
+                                }, a._id)),
+                                F.length ? (0, f.jsxs)(l.default, {
                                     direction: 'vertical',
                                     size: 14,
                                     className: 'maxWidth medium-shadow',
@@ -1254,7 +1254,7 @@ a.register('Ljwt5', function(b, c) {
                                         borderRadius: 10
                                     },
                                     children: [
-                                        (0, d.jsx)('div', {
+                                        (0, f.jsx)('div', {
                                             style: {
                                                 fontSize: 14,
                                                 fontStyle: 'italic',
@@ -1265,14 +1265,14 @@ a.register('Ljwt5', function(b, c) {
                                             },
                                             children: 'The following maps cannot be accessed until your map limit increases or you delete maps above to make space'
                                         }),
-                                        D.map((_E, v) => (0, d.jsx)(k.default, {
-                                            id: _E._id,
-                                            name: _E.name,
+                                        F.map((a, x) => (0, f.jsx)(m.default, {
+                                            id: a._id,
+                                            name: a.name,
                                             disabled: !0
-                                        }, _E._id))
+                                        }, a._id))
                                     ]
                                 }) : null,
-                                v.length ? (0, d.jsx)('div', {
+                                x.length ? (0, f.jsx)('div', {
                                     style: {
                                         fontSize: 14,
                                         fontStyle: 'italic',
@@ -1281,11 +1281,11 @@ a.register('Ljwt5', function(b, c) {
                                     children: 'In Gimkit Creative, you can collaborate and play your maps with up to 60 players!'
                                 }) : null
                             ]
-                        }) : (0, d.jsxs)(_A, {
+                        }) : (0, f.jsxs)(_C, {
                             children: [
                                 'You haven\'t built any maps yet. Click the',
                                 ' ',
-                                (0, d.jsx)('b', {
+                                (0, f.jsx)('b', {
                                     style: {
                                         color: '#ffff94'
                                     },
@@ -1296,34 +1296,34 @@ a.register('Ljwt5', function(b, c) {
                         })
                     ]
                 }),
-                (0, d.jsx)(l.default, {
-                    open: y,
-                    close: A
+                (0, f.jsx)(n.default, {
+                    open: A,
+                    close: C
                 })
             ]
         });
     };
-    const _v = e.default.div.attrs({
+    const _x = g.default.div.attrs({
             className: 'maxWidth'
-        })(n || (n = t``)),
-        _w = e.default.div.attrs({
+        })(p || (p = v``)),
+        _y = g.default.div.attrs({
             className: 'flex between maxWidth vc'
-        })(o || (o = t``)),
-        _x = e.default.div(p || (p = t``)),
-        _y = e.default.div(q || (q = t`
+        })(q || (q = v``)),
+        _z = g.default.div(r || (r = v``)),
+        _A = g.default.div(s || (s = v`
   font-family: ${ 0 };
   text-transform: uppercase;
   font-size: 22px;
   line-height: 1;
   margin-bottom: 3px;
-`), i.Fonts.FugazOne),
-        _z = e.default.div(r || (r = t`
+`), k.Fonts.FugazOne),
+        _B = g.default.div(t || (t = v`
   font-size: 14px;
   color: rgba(255, 255, 255, 0.8);
 `)),
-        _A = e.default.div.attrs({
+        _C = g.default.div.attrs({
             className: 'maxWidth'
-        })(s || (s = t`
+        })(u || (u = v`
   border: 2px dashed rgba(255, 255, 255, 0.25);
   padding: 35px;
   border-radius: 6px;
@@ -1331,248 +1331,248 @@ a.register('Ljwt5', function(b, c) {
   margin-top: 20px;
   font-size: 16px;
 `));
-}), a.register('PA/Lj', function(b, c) {
-    _E(b.exports, 'invalidateCreatedMaps', function() {
-        return _h;
-    }), _E(b.exports, 'default', function() {
-        return _i;
+}), c.register('/x6lc', function(d, e) {
+    a(d.exports, 'invalidateCreatedMaps', function() {
+        return _j;
+    }), a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('UapK50'),
-        e = a('PMl60'),
-        f = a('ACpZs');
-    const g = ['creative-created-maps'],
-        _h = () => f.default.invalidateQueries(g);
-    var _i = () => (0, d.useQuery)(g, () => (0, e.requestAsPromise)({
+    var f = c('GmO9j'),
+        g = c('quE27'),
+        h = c('9IJbB');
+    const i = ['creative-created-maps'],
+        _j = () => h.default.invalidateQueries(i);
+    var _k = () => (0, f.useQuery)(i, () => (0, g.requestAsPromise)({
         url: '/api/created-maps'
     }));
-}), a.register('lipUu', function(b, c) {
-    _E(b.exports, 'default', function() {
-        return _s;
+}), c.register('Skuh5', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _u;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('ulE4q'),
-        h = a('/rAT0'),
-        i = a('ewwAh'),
-        j = a('YRlpt'),
-        k = a('j2ADs'),
-        l = a('b5kvC'),
-        m = a('sHRDd'),
-        n = a('PMl60'),
-        o = a('PA/Lj'),
-        p = a('9R7cy'),
-        q = a('0HHAH');
-    let r;
-    var _s = _E => {
-        const [t, u, v] = (0, n.useBoolean)(!1), [w, x, y] = (0, n.useBoolean)(!1), [z, A] = e.useState(''), [B, C] = e.useState(''), [D, E, F] = (0, n.useBoolean)(!1), [G, H, I] = (0, n.useBoolean)(!1), [J, K, L] = (0, n.useBoolean)(!1);
-        e.useEffect(() => {
-            A('');
-        }, [t]), e.useEffect(() => {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('P1KtI'),
+        j = c('M3JwW'),
+        k = c('aevdF'),
+        l = c('AE7vR'),
+        m = c('22RS1'),
+        n = c('Eh2Wh'),
+        o = c('8KqQ+'),
+        p = c('quE27'),
+        q = c('/x6lc'),
+        r = c('t52Ep'),
+        s = c('MgONH');
+    let t;
+    var _u = a => {
+        const [v, w, x] = (0, p.useBoolean)(!1), [y, z, A] = (0, p.useBoolean)(!1), [B, C] = g.useState(''), [D, E] = g.useState(''), [F, G, H] = (0, p.useBoolean)(!1), [I, J, K] = (0, p.useBoolean)(!1), [L, M, N] = (0, p.useBoolean)(!1);
+        g.useEffect(() => {
             C('');
-        }, [w]);
-        const M = (null == z ? void 0 : z.trim().length) < 2,
-            N = () => {
-                M || D || (E(), (0, n.request)({
+        }, [v]), g.useEffect(() => {
+            E('');
+        }, [y]);
+        const O = (null == B ? void 0 : B.trim().length) < 2,
+            P = () => {
+                O || F || (G(), (0, p.request)({
                     url: '/api/created-map/rename',
                     data: {
-                        id: _E.id,
-                        name: z
+                        id: a.id,
+                        name: B
                     },
                     success: () => {
-                        (0, o.invalidateCreatedMaps)();
+                        (0, q.invalidateCreatedMaps)();
                     },
-                    error: _E => {
-                        (0, n.throwMessageError)({
-                            e: _E,
+                    error: a => {
+                        (0, p.throwMessageError)({
+                            e: a,
                             default: {
                                 title: 'Error renaming map'
                             }
                         });
                     },
                     both: () => {
-                        v(), F();
+                        x(), H();
                     }
                 }));
             },
-            O = B !== _E.name;
-        return (0, d.jsxs)(d.Fragment, {
+            Q = D !== a.name;
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, d.jsxs)(_t, {
+                (0, f.jsxs)(_v, {
                     onClick: () => {
-                        _E.disabled || J || (K(), (0, n.request)({
+                        a.disabled || L || (M(), (0, p.request)({
                             url: '/api/matchmaker/intent/map/edit/create',
                             data: {
-                                mapId: _E.id
+                                mapId: a.id
                             },
-                            success: _E => window.location.href = `/host?id=${ _E }`,
-                            error: _E => {
-                                (0, n.throwMessageError)({
-                                    e: _E,
+                            success: a => window.location.href = `/host?id=${ a }`,
+                            error: a => {
+                                (0, p.throwMessageError)({
+                                    e: a,
                                     default: {
                                         title: 'Error loading into your map. Please try again.'
                                     }
                                 });
                             },
-                            both: L
+                            both: N
                         }));
                     },
-                    disabled: _E.disabled,
+                    disabled: a.disabled,
                     children: [
-                        (0, d.jsx)('div', {
-                            children: _E.name
+                        (0, f.jsx)('div', {
+                            children: a.name
                         }),
-                        (0, d.jsx)('div', {
-                            onClick: _E => _E.stopPropagation(),
-                            children: (0, d.jsx)(h.default, {
+                        (0, f.jsx)('div', {
+                            onClick: a => a.stopPropagation(),
+                            children: (0, f.jsx)(j.default, {
                                 menu: {
                                     items: [{
-                                            key: `rename-${ _E.id }`,
+                                            key: `rename-${ a.id }`,
                                             label: 'Rename',
-                                            icon: (0, d.jsx)(p.default, {
+                                            icon: (0, f.jsx)(r.default, {
                                                 name: 'far fa-edit'
                                             }),
-                                            onClick: _E => {
-                                                _E.domEvent.stopPropagation(), u();
+                                            onClick: a => {
+                                                a.domEvent.stopPropagation(), w();
                                             }
                                         },
                                         {
-                                            key: `delete-${ _E.id }`,
+                                            key: `delete-${ a.id }`,
                                             label: 'Delete',
-                                            icon: (0, d.jsx)(p.default, {
+                                            icon: (0, f.jsx)(r.default, {
                                                 name: 'far fa-trash-alt'
                                             }),
                                             danger: !0,
-                                            onClick: _E => {
-                                                _E.domEvent.stopPropagation(), x();
+                                            onClick: a => {
+                                                a.domEvent.stopPropagation(), z();
                                             }
                                         }
                                     ]
                                 },
-                                children: (0, d.jsx)(g.default, {
-                                    icon: (0, d.jsx)(p.default, {
+                                children: (0, f.jsx)(i.default, {
+                                    icon: (0, f.jsx)(r.default, {
                                         name: 'far fa-ellipsis-h'
                                     }),
                                     type: 'text',
                                     style: {
-                                        color: m.default.White
+                                        color: o.default.White
                                     }
                                 })
                             })
                         })
                     ]
                 }),
-                (0, d.jsxs)(j.default, {
-                    open: t,
-                    onCancel: v,
+                (0, f.jsxs)(l.default, {
+                    open: v,
+                    onCancel: x,
                     title: 'Rename',
                     footer: [
-                        (0, d.jsx)(g.default, {
-                            onClick: v,
+                        (0, f.jsx)(i.default, {
+                            onClick: x,
                             children: 'Cancel'
                         }, 'cancel-rename'),
-                        (0, d.jsx)(g.default, {
+                        (0, f.jsx)(i.default, {
                             type: 'primary',
-                            onClick: N,
-                            disabled: M,
-                            loading: D,
+                            onClick: P,
+                            disabled: O,
+                            loading: F,
                             children: 'Rename'
                         }, 'rename-map')
                     ],
                     children: [
-                        (0, d.jsxs)(k.default.Text, {
+                        (0, f.jsxs)(m.default.Text, {
                             children: [
                                 'Enter a new name for ',
-                                (0, d.jsxs)('b', {
+                                (0, f.jsxs)('b', {
                                     children: [
-                                        _E.name,
+                                        a.name,
                                         ':'
                                     ]
                                 })
                             ]
                         }),
-                        (0, d.jsx)(i.default, {
-                            value: z,
+                        (0, f.jsx)(k.default, {
+                            value: B,
                             style: {
                                 marginTop: 5
                             },
                             placeholder: 'New name...',
                             maxLength: 32,
-                            onChange: _E => A(_E.target.value),
-                            onPressEnter: N
+                            onChange: a => C(a.target.value),
+                            onPressEnter: P
                         })
                     ]
                 }),
-                (0, d.jsxs)(j.default, {
-                    open: w,
-                    onCancel: y,
+                (0, f.jsxs)(l.default, {
+                    open: y,
+                    onCancel: A,
                     title: 'Delete Map',
                     footer: [
-                        (0, d.jsx)(g.default, {
-                            onClick: y,
+                        (0, f.jsx)(i.default, {
+                            onClick: A,
                             children: 'Cancel'
                         }, 'cancel-delete'),
-                        (0, d.jsx)(g.default, {
+                        (0, f.jsx)(i.default, {
                             type: 'primary',
                             danger: !0,
-                            disabled: O,
+                            disabled: Q,
                             onClick: () => {
-                                O || G || (H(), (0, n.request)({
+                                Q || I || (J(), (0, p.request)({
                                     url: '/api/created-map/delete',
                                     data: {
-                                        id: _E.id
+                                        id: a.id
                                     },
                                     success: () => {
-                                        (0, o.invalidateCreatedMaps)();
+                                        (0, q.invalidateCreatedMaps)();
                                     },
-                                    error: _E => {
-                                        (0, n.throwMessageError)({
-                                            e: _E,
+                                    error: a => {
+                                        (0, p.throwMessageError)({
+                                            e: a,
                                             default: {
                                                 title: 'Error deleting map'
                                             }
                                         });
                                     },
                                     both: () => {
-                                        y(), I();
+                                        A(), K();
                                     }
                                 }));
                             },
-                            loading: G,
+                            loading: I,
                             children: 'Delete Map'
                         }, 'delete-map')
                     ],
                     children: [
-                        (0, d.jsxs)(k.default.Text, {
+                        (0, f.jsxs)(m.default.Text, {
                             children: [
                                 'Deleting a map is permanent and cannot be undone. Please enter the name of the map',
                                 ' ',
-                                (0, d.jsx)('code', {
+                                (0, f.jsx)('code', {
                                     style: {
                                         userSelect: 'none'
                                     },
-                                    children: _E.name
+                                    children: a.name
                                 }),
                                 ' to confirm. Note that deleting a map will also remove it from Creative Discovery.'
                             ]
                         }),
-                        (0, d.jsx)(i.default, {
-                            value: B,
+                        (0, f.jsx)(k.default, {
+                            value: D,
                             style: {
                                 marginTop: 10
                             },
                             placeholder: 'Enter map name here ...',
                             maxLength: 32,
-                            onChange: _E => C(_E.target.value)
+                            onChange: a => E(a.target.value)
                         })
                     ]
                 })
             ]
         });
     };
-    const _t = (0, f.default)(q.VerticallyCentered).attrs({
+    const _v = (0, h.default)(s.VerticallyCentered).attrs({
         className: 'maxWidth between'
-    })(r || (r = (_E => _E)`
+    })(t || (t = (a => a)`
   padding: 11px 16px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
@@ -1585,133 +1585,133 @@ a.register('Ljwt5', function(b, c) {
   &:hover {
     background: rgba(255, 255, 255, 0.17);
   }
-`), l.FontWeights.Bold, _E => _E.disabled ? 'not-allowed' : 'pointer');
-}), a.register('6Csy3', function(b, c) {
-    _E(b.exports, 'default', function() {
-        return _u;
+`), n.FontWeights.Bold, a => a.disabled ? 'not-allowed' : 'pointer');
+}), c.register('6oQwW', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _w;
     });
-    var d = a('0hzx+'),
-        e = a('ulE4q'),
-        f = a('1P5ls'),
-        g = a('ewwAh'),
-        h = a('YRlpt'),
-        i = a('cvto726'),
-        j = a('cH8qQ'),
-        k = a('LEQ5w'),
-        l = a('PMl60'),
-        m = a('PA/Lj'),
-        n = a('Pq0g9'),
-        o = a('Axq+p'),
-        p = a('b5kvC'),
-        q = a('6VsZX'),
-        r = a('2Xvuf'),
-        s = a('eVHVv');
-    let t;
-    var _u = _E => {
-        const v = k.useRef(null),
-            [w, x] = k.useState(''),
-            [y, z] = k.useState(),
-            [A, B, C] = (0, l.useBoolean)(!1),
-            D = (null == w ? void 0 : w.trim().length) < 2 || !y;
-        k.useEffect(() => {
-            _E.open && setTimeout(() => {
-                var _E;
-                null === (_E = v.current) || void 0 === _E || _E.focus();
+    var f = c('gRbUn'),
+        g = c('P1KtI'),
+        h = c('R2nG3'),
+        i = c('aevdF'),
+        j = c('AE7vR'),
+        k = c('E2AMI26'),
+        l = c('NmQt6'),
+        m = c('O0Kav'),
+        n = c('quE27'),
+        o = c('/x6lc'),
+        p = c('IMf/b4'),
+        q = c('u4s09'),
+        r = c('Eh2Wh'),
+        s = c('pegt5'),
+        t = c('UaUBz0'),
+        u = c('5Gr2R');
+    let v;
+    var _w = a => {
+        const x = m.useRef(null),
+            [y, z] = m.useState(''),
+            [A, B] = m.useState(),
+            [C, D, E] = (0, n.useBoolean)(!1),
+            F = (null == y ? void 0 : y.trim().length) < 2 || !A;
+        m.useEffect(() => {
+            a.open && setTimeout(() => {
+                var G;
+                null === (G = x.current) || void 0 === G || G.focus();
             }, 1);
-        }, [_f.open]);
-        const E = () => {
-                D || A || (B(), (0, l.request)({
+        }, [a.open]);
+        const G = () => {
+                F || C || (D(), (0, n.request)({
                     url: '/api/created-map/create',
                     data: {
-                        name: w,
-                        mapStyle: y
+                        name: y,
+                        mapStyle: A
                     },
-                    success: v => {
-                        (0, n.AnalyticsTrackEvent)({
+                    success: x => {
+                        (0, p.AnalyticsTrackEvent)({
                             event: 'creative_map_created',
                             properties: {
-                                mapStyle: y
+                                mapStyle: A
                             }
-                        }), (0, m.invalidateCreatedMaps)(), (0, l.request)({
+                        }), (0, o.invalidateCreatedMaps)(), (0, n.request)({
                             url: '/api/matchmaker/intent/map/edit/create',
                             data: {
-                                mapId: v
+                                mapId: x
                             },
-                            success: _f => window.location.href = `/host?id=${ _f }`,
-                            both: _f.close
+                            success: a => window.location.href = `/host?id=${ a }`,
+                            both: a.close
                         });
                     },
-                    error: _f => {
-                        (0, l.throwMessageError)({
-                            e: _f,
+                    error: a => {
+                        (0, n.throwMessageError)({
+                            e: a,
                             default: {
                                 title: 'Error creating map'
                             }
                         });
                     },
                     both: () => {
-                        C(), x('');
+                        E(), z('');
                     }
                 }));
             },
-            F = _f => {
-                z(_f);
+            H = a => {
+                B(a);
             };
-        return (0, d.jsx)(f.default, {
+        return (0, f.jsx)(h.default, {
             theme: {
-                algorithm: j.default.darkAlgorithm,
+                algorithm: l.default.darkAlgorithm,
                 token: {
                     colorBgBase: '#1C1D57'
                 }
             },
-            children: (0, d.jsx)(h.default, {
-                open: _f.open,
-                onCancel: _f.close,
+            children: (0, f.jsx)(j.default, {
+                open: a.open,
+                onCancel: a.close,
                 width: 668,
                 footer: [
-                    (0, d.jsx)(e.default, {
-                        onClick: _f.close,
+                    (0, f.jsx)(g.default, {
+                        onClick: a.close,
                         children: 'Cancel'
                     }, 'cancel-new-map'),
-                    (0, d.jsx)(e.default, {
+                    (0, f.jsx)(g.default, {
                         type: 'primary',
-                        disabled: D,
-                        loading: A,
-                        onClick: E,
+                        disabled: F,
+                        loading: C,
+                        onClick: G,
                         children: 'Create'
                     }, 'create-new-map')
                 ],
-                children: (0, d.jsxs)(i.default, {
+                children: (0, f.jsxs)(k.default, {
                     direction: 'vertical',
                     size: 20,
                     className: 'maxWidth',
                     children: [
-                        (0, d.jsxs)('div', {
+                        (0, f.jsxs)('div', {
                             className: 'maxWidth',
                             children: [
-                                (0, d.jsx)(_v, {
+                                (0, f.jsx)(_x, {
                                     children: 'Map Name'
                                 }),
-                                (0, d.jsx)(g.default, {
-                                    ref: v,
-                                    value: w,
-                                    onChange: _f => {
-                                        x(_f.target.value);
+                                (0, f.jsx)(i.default, {
+                                    ref: x,
+                                    value: y,
+                                    onChange: a => {
+                                        z(a.target.value);
                                     },
                                     placeholder: 'Enter map name here...',
                                     maxLength: 32,
-                                    onPressEnter: E,
+                                    onPressEnter: G,
                                     size: 'large'
                                 })
                             ]
                         }),
-                        (0, d.jsxs)('div', {
+                        (0, f.jsxs)('div', {
                             className: 'maxWidth',
                             children: [
-                                (0, d.jsx)(_v, {
+                                (0, f.jsx)(_x, {
                                     children: 'Map Style'
                                 }),
-                                (0, d.jsxs)('div', {
+                                (0, f.jsxs)('div', {
                                     className: 'flex',
                                     style: {
                                         flexWrap: 'wrap',
@@ -1719,19 +1719,19 @@ a.register('Ljwt5', function(b, c) {
                                         marginBottom: 3
                                     },
                                     children: [
-                                        (0, d.jsx)(q.default, {
-                                            image: (0, r.default)('creative/top-down.jpeg'),
+                                        (0, f.jsx)(s.default, {
+                                            image: (0, t.default)('creative/top-down.jpeg'),
                                             name: 'Top-Down',
                                             description: 'Players move in all four directions',
-                                            selected: y === s.default.topDown,
-                                            onSelect: () => F(s.default.topDown)
+                                            selected: A === u.default.topDown,
+                                            onSelect: () => H(u.default.topDown)
                                         }),
-                                        (0, d.jsx)(q.default, {
-                                            image: (0, r.default)('creative/platformer.jpeg'),
+                                        (0, f.jsx)(s.default, {
+                                            image: (0, t.default)('creative/platformer.jpeg'),
                                             name: 'Platformer',
                                             description: 'Players move left & right, but can also jump',
-                                            selected: y === s.default.platformer,
-                                            onSelect: () => F(s.default.platformer)
+                                            selected: A === u.default.platformer,
+                                            onSelect: () => H(u.default.platformer)
                                         })
                                     ]
                                 })
@@ -1742,76 +1742,76 @@ a.register('Ljwt5', function(b, c) {
             })
         });
     };
-    const _v = o.default.div(t || (t = (_f => _f)`
+    const _x = q.default.div(v || (v = (a => a)`
   font-family: ${ 0 };
   text-transform: uppercase;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 5px;
-`), p.Fonts.FugazOne);
-}), a.register('Pq0g9', function(b, c) {
-    _f(b.exports, 'AnalyticsTrackEvent', function() {
-        return _h;
+`), r.Fonts.FugazOne);
+}), c.register('IMf/b4', function(d, e) {
+    a(d.exports, 'AnalyticsTrackEvent', function() {
+        return _j;
     });
-    var d = a('e7pFf'),
-        e = a('PMl60'),
-        f = a('Td6aM'),
-        g = a('J3ZQI');
-    const _h = _f => {
-        var i, j, k;
-        if ((window.gtag && !(null === (i = _f.blockedSource) || void 0 === i ? void 0 : i.google) && window.gtag('event', _f.event, _f.properties), f.AnalyticsFlags.educatorOnly) && (null === (k = (0, e.getUser)()) || void 0 === k ? void 0 : k.accountType) !== d.default.educator)
+    var f = c('gK+6L'),
+        g = c('quE27'),
+        h = c('95m0H'),
+        i = c('50Ts4');
+    const _j = a => {
+        var k, l, m;
+        if ((window.gtag && !(null === (k = a.blockedSource) || void 0 === k ? void 0 : k.google) && window.gtag('event', a.event, a.properties), h.AnalyticsFlags.educatorOnly) && (null === (m = (0, g.getUser)()) || void 0 === m ? void 0 : m.accountType) !== f.default.educator)
             return;
-        (null === (j = _f.blockedSource) || void 0 === j ? void 0 : j.posthog) || (0, g.TrackPostHogEvent)({
-            event: _f.event,
-            properties: _f.properties,
-            force: _f.forcePostHog
+        (null === (l = a.blockedSource) || void 0 === l ? void 0 : l.posthog) || (0, i.TrackPostHogEvent)({
+            event: a.event,
+            properties: a.properties,
+            force: a.forcePostHog
         });
     };
-}), a.register('6VsZX', function(b, c) {
-    _f(b.exports, 'default', function() {
-        return _p;
+}), c.register('pegt5', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _r;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('0HHAH'),
-        g = a('b5kvC'),
-        h = a('vShe/');
-    let i, j, k, l, m, n, o = _f => _f;
-    var _p = _f => {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('MgONH'),
+        i = c('Eh2Wh'),
+        j = c('HOIhZ');
+    let k, l, m, n, o, p, q = a => a;
+    var _r = a => {
         const {
-            image: q,
-            name: r,
-            description: s
-        } = _f;
-        return (0, d.jsxs)(_q, {
-            onClick: _f.onSelect,
+            image: s,
+            name: t,
+            description: u
+        } = a;
+        return (0, f.jsxs)(_s, {
+            onClick: a.onSelect,
             style: {
-                borderColor: _f.selected ? h.default.Yellow : 'rgba(255, 255, 255, 0.1)'
+                borderColor: a.selected ? j.default.Yellow : 'rgba(255, 255, 255, 0.1)'
             },
             children: [
-                _f.tag ? (0, d.jsx)(_t, {
-                    children: _f.tag
+                a.tag ? (0, f.jsx)(_v, {
+                    children: a.tag
                 }) : null,
-                (0, d.jsx)(_r, {
+                (0, f.jsx)(_t, {
                     style: {
-                        backgroundImage: `url("${ q }")`
+                        backgroundImage: `url("${ s }")`
                     }
                 }),
-                (0, d.jsxs)(_s, {
+                (0, f.jsxs)(_u, {
                     children: [
-                        (0, d.jsx)(_u, {
-                            children: r
+                        (0, f.jsx)(_w, {
+                            children: t
                         }),
-                        (0, d.jsx)(_v, {
-                            children: s
+                        (0, f.jsx)(_x, {
+                            children: u
                         })
                     ]
                 })
             ]
         });
     };
-    const _q = e.default.div(i || (i = o`
+    const _s = g.default.div(k || (k = q`
   background: rgba(255, 255, 255, 0.1);
   width: 303px;
   border-radius: 8px;
@@ -1826,21 +1826,21 @@ a.register('Ljwt5', function(b, c) {
     background-color: rgba(255, 255, 255, 0.2);
   }
 `)),
-        _r = e.default.div.attrs({
+        _t = g.default.div.attrs({
             className: 'maxWidth'
-        })(j || (j = o`
+        })(l || (l = q`
   height: 132px;
   background-size: cover;
   background-position: center -57px;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 `)),
-        _s = (0, e.default)(f.CenteredColumn).attrs({
+        _u = (0, g.default)(h.CenteredColumn).attrs({
             className: 'maxWidth'
-        })(k || (k = o`
+        })(m || (m = q`
   padding: 10px;
   padding-top: 0px;
 `)),
-        _t = e.default.div(l || (l = o`
+        _v = g.default.div(n || (n = q`
   font-family: ${ 0 };
   text-transform: uppercase;
   font-size: 9px;
@@ -1853,140 +1853,140 @@ a.register('Ljwt5', function(b, c) {
   left: 10px;
   top: 10px;
   z-index: 2;
-`), g.Fonts.FugazOne, h.default.Yellow, h.default.Black),
-        _u = e.default.div(m || (m = o`
+`), i.Fonts.FugazOne, j.default.Yellow, j.default.Black),
+        _w = g.default.div(o || (o = q`
   font-family: ${ 0 };
   text-transform: uppercase;
   font-size: 16px;
-`), g.Fonts.FugazOne),
-        _v = e.default.div(n || (n = o`
+`), i.Fonts.FugazOne),
+        _x = g.default.div(p || (p = q`
   font-family: ${ 0 };
   font-size: 13px;
   margin-top: -3px;
-`), g.Fonts.SFPro);
-}), a.register('eVHVv', function(b, c) {
-    let d;
-    var e;
-    _f(b.exports, 'default', function() {
-        return _f;
-    }), (e = d || (d = {})).topDown = 'topDown', e.platformer = 'platformer';
-    var _f = d;
-}), a.register('rJF+L', function(b, c) {
-    _f(b.exports, 'default', function() {
-        return _m;
+`), i.Fonts.SFPro);
+}), c.register('5Gr2R', function(d, e) {
+    let f;
+    var g;
+    a(d.exports, 'default', function() {
+        return _h;
+    }), (g = f || (f = {})).topDown = 'topDown', g.platformer = 'platformer';
+    var _h = f;
+}), c.register('C1J2w', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _o;
     });
-    var d = a('0hzx+'),
-        e = a('NIZyA'),
-        f = a('1P5ls'),
-        g = a('cH8qQ');
-    a('LEQ5w');
-    var h = a('2HvvA11'),
-        i = a('gs4MT'),
-        j = a('b5kvC'),
-        k = a('l0C72'),
-        l = a('k46wk1');
-    var _m = _f => {
-        return (0, l.OwnsSeasonTicket)() ? null : (0, d.jsx)(f.default, {
+    var f = c('gRbUn'),
+        g = c('qMSe6'),
+        h = c('R2nG3'),
+        i = c('NmQt6');
+    c('O0Kav');
+    var j = c('FB7HT26'),
+        k = c('nKuOQ'),
+        l = c('Eh2Wh'),
+        m = c('hupyL1'),
+        n = c('B/GC10');
+    var _o = a => {
+        return (0, n.OwnsSeasonTicket)() ? null : (0, f.jsx)(h.default, {
             theme: {
-                algorithm: g.default.defaultAlgorithm
+                algorithm: i.default.defaultAlgorithm
             },
-            children: (0, d.jsx)(e.default, {
+            children: (0, f.jsx)(g.default, {
                 showIcon: !0,
                 style: {
-                    marginTop: null !== (b = _f.marginTop) && void 0 !== b ? b : 0,
-                    marginBottom: null !== (a = _f.marginBottom) && void 0 !== a ? a : 0
+                    marginTop: null !== (d = a.marginTop) && void 0 !== d ? d : 0,
+                    marginBottom: null !== (c = a.marginBottom) && void 0 !== c ? c : 0
                 },
-                message: (0, d.jsxs)('span', {
+                message: (0, f.jsxs)('span', {
                     children: [
-                        _f.text,
+                        a.text,
                         ' with the',
                         ' ',
-                        (0, d.jsx)(h.default, {
-                            to: i.SEASON_TICKET_BASE,
+                        (0, f.jsx)(j.default, {
+                            to: k.SEASON_TICKET_BASE,
                             style: {
                                 textDecoration: 'underline',
-                                fontWeight: j.FontWeights.Bold
+                                fontWeight: l.FontWeights.Bold
                             },
-                            children: k.SeasonTicketName.name
+                            children: m.SeasonTicketName.name
                         })
                     ]
                 })
             })
         });
-        var n, o;
+        var p, q;
     };
-}), a.register('l0C72', function(b, c) {
-    _f(b.exports, 'SeasonTicketName', function() {
-        return _d;
-    }), _f(b.exports, 'SeasonTicketSeason', function() {
-        return _e;
+}), c.register('hupyL1', function(d, e) {
+    a(d.exports, 'SeasonTicketName', function() {
+        return _f;
+    }), a(d.exports, 'SeasonTicketSeason', function() {
+        return _g;
     });
-    const _d = {
+    const _f = {
             name: 'Season Ticket',
             singularName: 'ticket'
         },
-        _e = {
+        _g = {
             seasonYear: '2025',
             seasonName: 'Season',
             seasonNumber: '3'
         };
-}), a.register('k46wk1', function(b, c) {
-    _f(b.exports, 'OwnsSeasonTicket', function() {
-        return _e;
+}), c.register('B/GC10', function(d, e) {
+    a(d.exports, 'OwnsSeasonTicket', function() {
+        return _g;
     });
-    var d = a('PMl60');
-    const _e = () => {
-        var _f, g, h;
-        return null !== (h = null === (_f = (0, d.getUser)()) || void 0 === _f || null === (g = _f.seasonTicket) || void 0 === g ? void 0 : g.active) && void 0 !== h && h;
+    var f = c('quE27');
+    const _g = () => {
+        var h, i, j;
+        return null !== (j = null === (h = (0, f.getUser)()) || void 0 === h || null === (i = h.seasonTicket) || void 0 === i ? void 0 : i.active) && void 0 !== j && j;
     };
-}), a.register('bn7X+', function(b, c) {
-    _l(b.exports, 'default', function() {
-        return _q;
+}), c.register('xo476', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _s;
     });
-    var d = a('0hzx+'),
-        e = a('cvto726'),
-        f = a('j2ADs');
-    a('LEQ5w');
-    var g = a('Axq+p'),
-        h = a('b5kvC'),
-        i = a('sHRDd'),
-        j = a('9R7cy'),
-        k = a('0HHAH'),
-        l = a('JM8XB');
-    let m, n, o = _l => _l;
-    const p = _l => (0, d.jsx)('a', {
-        href: _l.url,
+    var f = c('gRbUn'),
+        g = c('E2AMI26'),
+        h = c('22RS1');
+    c('O0Kav');
+    var i = c('u4s09'),
+        j = c('Eh2Wh'),
+        k = c('8KqQ+'),
+        l = c('t52Ep'),
+        m = c('MgONH'),
+        n = c('jQPD7');
+    let o, p, q = a => a;
+    const r = a => (0, f.jsx)('a', {
+        href: a.url,
         target: '_blank',
         className: 'maxWidth',
-        children: (0, d.jsxs)(_s, {
+        children: (0, f.jsxs)(_u, {
             children: [
-                (0, d.jsxs)('div', {
+                (0, f.jsxs)('div', {
                     children: [
-                        (0, d.jsx)('div', {
-                            children: (0, d.jsx)(f.default.Text, {
+                        (0, f.jsx)('div', {
+                            children: (0, f.jsx)(h.default.Text, {
                                 style: {
-                                    fontWeight: h.FontWeights.Bold,
-                                    color: i.default.White,
+                                    fontWeight: j.FontWeights.Bold,
+                                    color: k.default.White,
                                     textDecoration: 'underline'
                                 },
-                                children: _l.title
+                                children: a.title
                             })
                         }),
-                        (0, d.jsx)(f.default.Text, {
+                        (0, f.jsx)(h.default.Text, {
                             style: {
                                 color: 'rgba(255,255,255,0.8)'
                             },
                             italic: !0,
-                            children: _l.description
+                            children: a.description
                         })
                     ]
                 }),
-                (0, d.jsx)('div', {
-                    children: (0, d.jsx)(f.default.Text, {
+                (0, f.jsx)('div', {
+                    children: (0, f.jsx)(h.default.Text, {
                         style: {
-                            color: i.default.White
+                            color: k.default.White
                         },
-                        children: (0, d.jsx)(j.default, {
+                        children: (0, f.jsx)(l.default, {
                             name: 'fas fa-external-link'
                         })
                     })
@@ -1994,12 +1994,12 @@ a.register('Ljwt5', function(b, c) {
             ]
         })
     });
-    var _q = () => (0, d.jsxs)(_r, {
+    var _s = () => (0, f.jsxs)(_t, {
         children: [
-            (0, d.jsx)(l.Title, {
+            (0, f.jsx)(n.Title, {
                 children: 'Resources'
             }),
-            (0, d.jsxs)(e.default, {
+            (0, f.jsxs)(g.default, {
                 size: 10,
                 direction: 'vertical',
                 className: 'maxWidth',
@@ -2007,17 +2007,17 @@ a.register('Ljwt5', function(b, c) {
                     marginTop: 10
                 },
                 children: [
-                    (0, d.jsx)(p, {
+                    (0, f.jsx)(r, {
                         title: 'Changelog',
                         description: 'Read about the latest updates to Gimkit Creative!',
                         url: 'https://docs.creative.gimkit.com/changelog'
                     }),
-                    (0, d.jsx)(p, {
+                    (0, f.jsx)(r, {
                         title: 'Community Forum',
                         description: 'Ask questions and get help building your own maps!',
                         url: 'https://forum.creative.gimkit.com'
                     }),
-                    (0, d.jsx)(p, {
+                    (0, f.jsx)(r, {
                         title: 'Documentation',
                         description: 'Documentation to help you build your own maps.',
                         url: 'https://docs.creative.gimkit.com'
@@ -2026,10 +2026,10 @@ a.register('Ljwt5', function(b, c) {
             })
         ]
     });
-    const _r = g.default.div(m || (m = o``)),
-        _s = (0, g.default)(k.VerticallyCentered).attrs({
+    const _t = i.default.div(o || (o = q``)),
+        _u = (0, i.default)(m.VerticallyCentered).attrs({
             className: 'maxWidth'
-        })(n || (n = o`
+        })(p || (p = q`
   padding: 20px;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
@@ -2041,51 +2041,51 @@ a.register('Ljwt5', function(b, c) {
     background: rgba(255, 255, 255, 0.17);
   }
 `));
-}), a.register('KIxfA', function(b, c) {
-    _l(b.exports, 'default', function() {
-        return _g;
+}), c.register('mZxOZ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('UapK50'),
-        e = a('PMl60');
-    a('ACpZs');
-    const f = ['creative-creative-basics'];
-    var _g = () => (0, d.useQuery)(f, () => (0, e.requestAsPromise)({
+    var f = c('GmO9j'),
+        g = c('quE27');
+    c('9IJbB');
+    const h = ['creative-creative-basics'];
+    var _i = () => (0, f.useQuery)(h, () => (0, g.requestAsPromise)({
         url: '/api/created-map/basics'
     }));
-}), a.register('FpbFp', function(b, c) {
-    _l(b.exports, 'default', function() {
-        return _r;
+}), c.register('JNGrh0', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _u;
     });
-    var d = a('r98tK1'),
-        e = a('GepBD'),
-        f = a('LEQ5w');
-    a('WPpLv');
-    var g = a('cO49c'),
-        h = a('QvROH'),
-        i = a('mmS5q'),
-        j = 44;
+    var f = c('+pD1R19'),
+        g = c('DFnC8'),
+        h = c('O0Kav');
+    c('HoW8Y');
+    var i = c('PEco5'),
+        j = c('T8OqN'),
+        k = c('KOz0K'),
+        l = 44;
 
-    function k(_l) {
-        var m, n, o;
-        return m = _l, n = 0, o = 1, _l = (Math.min(Math.max(n, m), o) - n) / (o - n), _l = (_l -= 1) * _l * _l + 1;
+    function m(n) {
+        var o, p, q;
+        return o = n, p = 0, q = 1, n = (Math.min(Math.max(p, o), q) - p) / (q - p), n = (n -= 1) * n * n + 1;
     }
-    var k = f.forwardRef(function(l, m) {
-            var n, o = l.classes,
-                p = l.className,
-                q = l.color,
-                _r = void 0 === q ? 'primary' : q,
-                s = l.disableShrink,
-                t = void 0 !== s && s,
-                u = l.size,
-                v = void 0 === u ? 40 : u,
-                w = l.style,
-                x = l.thickness,
-                y = void 0 === x ? 3.6 : x,
-                z = l.value,
-                A = void 0 === z ? 0 : z,
-                B = l.variant,
-                C = void 0 === B ? 'indeterminate' : B,
-                D = (0, e.default)(l, [
+    var n = h.forwardRef(function(o, p) {
+            var q, r = o.classes,
+                s = o.className,
+                t = o.color,
+                _u = void 0 === t ? 'primary' : t,
+                v = o.disableShrink,
+                w = void 0 !== v && v,
+                x = o.size,
+                y = void 0 === x ? 40 : x,
+                z = o.style,
+                A = o.thickness,
+                B = void 0 === A ? 3.6 : A,
+                C = o.value,
+                D = void 0 === C ? 0 : C,
+                E = o.variant,
+                F = void 0 === E ? 'indeterminate' : E,
+                G = (0, g.default)(o, [
                     'classes',
                     'className',
                     'color',
@@ -2096,56 +2096,56 @@ a.register('Ljwt5', function(b, c) {
                     'value',
                     'variant'
                 ]),
-                E = {},
-                F = {},
-                G = {};
-            if ('determinate' === C || 'static' === C) {
-                var H = 2 * Math.PI * ((j - y) / 2);
-                E.strokeDasharray = H.toFixed(3), G['aria-valuenow'] = Math.round(A), 'static' === C ? (E.strokeDashoffset = ''.concat(((100 - A) / 100 * H).toFixed(3), 'px'), F.transform = 'rotate(-90deg)') : (E.strokeDashoffset = ''.concat((n = (100 - A) / 100, n * n * H).toFixed(3), 'px'), F.transform = 'rotate('.concat((270 * _p(A / 70)).toFixed(3), 'deg)'));
+                H = {},
+                I = {},
+                J = {};
+            if ('determinate' === F || 'static' === F) {
+                var K = 2 * Math.PI * ((l - B) / 2);
+                H.strokeDasharray = K.toFixed(3), J['aria-valuenow'] = Math.round(D), 'static' === F ? (H.strokeDashoffset = ''.concat(((100 - D) / 100 * K).toFixed(3), 'px'), I.transform = 'rotate(-90deg)') : (H.strokeDashoffset = ''.concat((q = (100 - D) / 100, q * q * K).toFixed(3), 'px'), I.transform = 'rotate('.concat((270 * m(D / 70)).toFixed(3), 'deg)'));
             }
-            return f.createElement('div', (0, d.default)({
-                className: (0, g.default)(o.root, p, 'inherit' !== _r && o['color'.concat((0, i.default)(_r))], {
-                    indeterminate: o.indeterminate,
-                    static: o.static
-                } [C]),
-                style: (0, d.default)({
-                    width: v,
-                    height: v
-                }, F, w),
-                ref: m,
+            return h.createElement('div', (0, f.default)({
+                className: (0, i.default)(r.root, s, 'inherit' !== _u && r['color'.concat((0, k.default)(_u))], {
+                    indeterminate: r.indeterminate,
+                    static: r.static
+                } [F]),
+                style: (0, f.default)({
+                    width: y,
+                    height: y
+                }, I, z),
+                ref: p,
                 role: 'progressbar'
-            }, G, D), f.createElement('svg', {
-                className: o.svg,
-                viewBox: ''.concat(22, ' ').concat(22, ' ').concat(j, ' ').concat(j)
-            }, f.createElement('circle', {
-                className: (0, g.default)(o.circle, t && o.circleDisableShrink, {
-                    indeterminate: o.circleIndeterminate,
-                    static: o.circleStatic
-                } [C]),
-                style: E,
-                cx: j,
-                cy: j,
-                r: (j - y) / 2,
+            }, J, G), h.createElement('svg', {
+                className: r.svg,
+                viewBox: ''.concat(22, ' ').concat(22, ' ').concat(l, ' ').concat(l)
+            }, h.createElement('circle', {
+                className: (0, i.default)(r.circle, w && r.circleDisableShrink, {
+                    indeterminate: r.circleIndeterminate,
+                    static: r.circleStatic
+                } [F]),
+                style: H,
+                cx: l,
+                cy: l,
+                r: (l - B) / 2,
                 fill: 'none',
-                strokeWidth: y
+                strokeWidth: B
             })));
         }),
-        l = (0, h.default)(function(m) {
+        o = (0, j.default)(function(p) {
             return {
                 root: {
                     display: 'inline-block'
                 },
                 static: {
-                    transition: m.transitions.create('transform')
+                    transition: p.transitions.create('transform')
                 },
                 indeterminate: {
                     animation: '$circular-rotate 1.4s linear infinite'
                 },
                 colorPrimary: {
-                    color: m.palette.primary.main
+                    color: p.palette.primary.main
                 },
                 colorSecondary: {
-                    color: m.palette.secondary.main
+                    color: p.palette.secondary.main
                 },
                 svg: {
                     display: 'block'
@@ -2154,7 +2154,7 @@ a.register('Ljwt5', function(b, c) {
                     stroke: 'currentColor'
                 },
                 circleStatic: {
-                    transition: m.transitions.create('stroke-dashoffset')
+                    transition: p.transitions.create('stroke-dashoffset')
                 },
                 circleIndeterminate: {
                     animation: '$circular-dash 1.4s ease-in-out infinite',
@@ -2190,32 +2190,32 @@ a.register('Ljwt5', function(b, c) {
         }, {
             name: 'MuiCircularProgress',
             flip: !1
-        })(k);
-}), a.register('OPcLZ', function(b, c) {
-    b.exports = import('./' + a('HmN9A').resolve('1wUUq')).then(() => a('9xzx0'));
-}), a.register('qi0bH', function(b, c) {
-    b.exports = import('./' + a('HmN9A').resolve('3X4Jt')).then(() => a('s6EBb'));
-}), a.register('gn3Uk7', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+        })(n);
+}), c.register('4+WtL', function(d, e) {
+    d.exports = import('./' + c('Dq3qN').resolve('1wUUq')).then(() => c('EndGa'));
+}), c.register('biMaA', function(d, e) {
+    d.exports = import('./' + c('Dq3qN').resolve('3X4Jt')).then(() => c('62MCK'));
+}), c.register('rLQJQ7', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('haBtH6'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('M2CB57'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'CopyOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('haBtH6', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'CopyOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('M2CB57', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -2232,27 +2232,27 @@ a.register('Ljwt5', function(b, c) {
         name: 'copy',
         theme: 'outlined'
     };
-}), a.register('GldUd7', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('+Nyqr7', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('1tgJh4'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('lzm1Z7'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'EditOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('1tgJh4', function(b, c) {
-    _h(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'EditOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('lzm1Z7', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -2269,41 +2269,41 @@ a.register('Ljwt5', function(b, c) {
         name: 'edit',
         theme: 'outlined'
     };
-}), a.register('kRwUk25', function(b, c) {
-    _h(b.exports, 'default', function() {
-        return _g;
+}), c.register('e5xHg25', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('TTc70'),
-        e = a('LEQ5w'),
-        f = a('1P5ls');
+    var f = c('MsxQz'),
+        g = c('O0Kav'),
+        h = c('R2nG3');
 
-    function _g(_h, i, j) {
-        return function(k) {
+    function _i(j, k, l) {
+        return function(m) {
             const {
-                prefixCls: l,
-                style: m
-            } = k, n = e.useRef(null), [o, _p] = e.useState(0), [q, r] = e.useState(0), [s, t] = (0, d.default)(!1, {
-                value: k.open
+                prefixCls: n,
+                style: o
+            } = m, p = g.useRef(null), [q, r] = g.useState(0), [s, t] = g.useState(0), [u, v] = (0, f.default)(!1, {
+                value: m.open
             }), {
-                getPrefixCls: u
-            } = e.useContext(f.ConfigContext), v = u(i || 'select', l);
-            return e.useEffect(() => {
-                if (t(!0), 'undefined' != typeof ResizeObserver) {
-                    const w = new ResizeObserver(w => {
-                            const x = w[0].target;
-                            _p(x.offsetHeight + 8), r(x.offsetWidth);
+                getPrefixCls: w
+            } = g.useContext(h.ConfigContext), x = w(k || 'select', n);
+            return g.useEffect(() => {
+                if (v(!0), 'undefined' != typeof ResizeObserver) {
+                    const y = new ResizeObserver(y => {
+                            const z = y[0].target;
+                            r(z.offsetHeight + 8), t(z.offsetWidth);
                         }),
-                        x = setInterval(() => {
-                            var y;
-                            const z = j ? `.${ j(v) }` : `.${ v }-dropdown`,
-                                A = null === (y = n.current) || void 0 === y ? void 0 : y.querySelector(z);
-                            A && (clearInterval(x), w.observe(A));
+                        z = setInterval(() => {
+                            var A;
+                            const B = l ? `.${ l(x) }` : `.${ x }-dropdown`,
+                                C = null === (A = p.current) || void 0 === A ? void 0 : A.querySelector(B);
+                            C && (clearInterval(z), y.observe(C));
                         }, 10);
                     return () => {
-                        clearInterval(x), w.disconnect();
+                        clearInterval(z), y.disconnect();
                     };
                 }
-            }, []), e.createElement(f.default, {
+            }, []), g.createElement(h.default, {
                 theme: {
                     token: {
                         motionDurationFast: '0.01s',
@@ -2311,31 +2311,31 @@ a.register('Ljwt5', function(b, c) {
                         motionDurationSlow: '0.01s'
                     }
                 }
-            }, e.createElement('div', {
-                ref: n,
+            }, g.createElement('div', {
+                ref: p,
                 style: {
-                    paddingBottom: o,
+                    paddingBottom: q,
                     position: 'relative',
                     width: 'fit-content',
-                    minWidth: q
+                    minWidth: s
                 }
-            }, e.createElement(_h, Object.assign({}, k, {
-                style: Object.assign(Object.assign({}, m), {
+            }, g.createElement(j, Object.assign({}, m, {
+                style: Object.assign(Object.assign({}, o), {
                     margin: 0
                 }),
-                open: s,
-                visible: s,
-                getPopupContainer: () => n.current
+                open: u,
+                visible: u,
+                getPopupContainer: () => p.current
             }))));
         };
     }
-}), a.register('N9LXh20', function(b, c) {
-    _b(b.exports, 'initMoveMotion', function() {
-        return _m;
+}), c.register('kufQf25', function(d, e) {
+    a(d.exports, 'initMoveMotion', function() {
+        return _o;
     });
-    var d = a('wC0DT'),
-        e = a('4vKB9');
-    const f = new(0, d.Keyframes)('antMoveDownIn', {
+    var f = c('ZyWBF'),
+        g = c('6vEai');
+    const h = new(0, f.Keyframes)('antMoveDownIn', {
             '0%': {
                 transform: 'translate3d(0, 100%, 0)',
                 transformOrigin: '0 0',
@@ -2347,7 +2347,7 @@ a.register('Ljwt5', function(b, c) {
                 opacity: 1
             }
         }),
-        g = new(0, d.Keyframes)('antMoveDownOut', {
+        i = new(0, f.Keyframes)('antMoveDownOut', {
             '0%': {
                 transform: 'translate3d(0, 0, 0)',
                 transformOrigin: '0 0',
@@ -2359,7 +2359,7 @@ a.register('Ljwt5', function(b, c) {
                 opacity: 0
             }
         }),
-        h = new(0, d.Keyframes)('antMoveLeftIn', {
+        j = new(0, f.Keyframes)('antMoveLeftIn', {
             '0%': {
                 transform: 'translate3d(-100%, 0, 0)',
                 transformOrigin: '0 0',
@@ -2371,7 +2371,7 @@ a.register('Ljwt5', function(b, c) {
                 opacity: 1
             }
         }),
-        i = new(0, d.Keyframes)('antMoveLeftOut', {
+        k = new(0, f.Keyframes)('antMoveLeftOut', {
             '0%': {
                 transform: 'translate3d(0, 0, 0)',
                 transformOrigin: '0 0',
@@ -2383,7 +2383,7 @@ a.register('Ljwt5', function(b, c) {
                 opacity: 0
             }
         }),
-        j = new(0, d.Keyframes)('antMoveRightIn', {
+        l = new(0, f.Keyframes)('antMoveRightIn', {
             '0%': {
                 transform: 'translate3d(100%, 0, 0)',
                 transformOrigin: '0 0',
@@ -2395,7 +2395,7 @@ a.register('Ljwt5', function(b, c) {
                 opacity: 1
             }
         }),
-        k = new(0, d.Keyframes)('antMoveRightOut', {
+        m = new(0, f.Keyframes)('antMoveRightOut', {
             '0%': {
                 transform: 'translate3d(0, 0, 0)',
                 transformOrigin: '0 0',
@@ -2407,9 +2407,9 @@ a.register('Ljwt5', function(b, c) {
                 opacity: 0
             }
         }),
-        l = {
+        n = {
             'move-up': {
-                inKeyframes: new(0, d.Keyframes)('antMoveUpIn', {
+                inKeyframes: new(0, f.Keyframes)('antMoveUpIn', {
                     '0%': {
                         transform: 'translate3d(0, -100%, 0)',
                         transformOrigin: '0 0',
@@ -2421,7 +2421,7 @@ a.register('Ljwt5', function(b, c) {
                         opacity: 1
                     }
                 }),
-                outKeyframes: new(0, d.Keyframes)('antMoveUpOut', {
+                outKeyframes: new(0, f.Keyframes)('antMoveUpOut', {
                     '0%': {
                         transform: 'translate3d(0, 0, 0)',
                         transformOrigin: '0 0',
@@ -2435,308 +2435,308 @@ a.register('Ljwt5', function(b, c) {
                 })
             },
             'move-down': {
-                inKeyframes: f,
-                outKeyframes: g
-            },
-            'move-left': {
                 inKeyframes: h,
                 outKeyframes: i
             },
-            'move-right': {
+            'move-left': {
                 inKeyframes: j,
                 outKeyframes: k
+            },
+            'move-right': {
+                inKeyframes: l,
+                outKeyframes: m
             }
         },
-        _m = (_b, b) => {
+        _o = (a, d) => {
             const {
-                antCls: n
-            } = _b, o = `${ n }-${ b }`, {
-                inKeyframes: p,
-                outKeyframes: q
-            } = l[b];
+                antCls: p
+            } = a, q = `${ p }-${ d }`, {
+                inKeyframes: r,
+                outKeyframes: s
+            } = n[d];
             return [
-                (0, e.initMotion)(o, p, q, _b.motionDurationMid),
+                (0, g.initMotion)(q, r, s, a.motionDurationMid),
                 {
-                    [`\n        ${ o }-enter,\n        ${ o }-appear\n      `]: {
+                    [`\n        ${ q }-enter,\n        ${ q }-appear\n      `]: {
                         opacity: 0,
-                        animationTimingFunction: _b.motionEaseOutCirc
+                        animationTimingFunction: a.motionEaseOutCirc
                     },
-                    [`${ o }-leave`]: {
-                        animationTimingFunction: _b.motionEaseInOutCirc
+                    [`${ q }-leave`]: {
+                        animationTimingFunction: a.motionEaseInOutCirc
                     }
                 }
             ];
         };
-}), a.register('jlX4s16', function(_b, c) {
-    var d = a('RnV2k27'),
-        e = {
+}), c.register('gS4g327', function(d, e) {
+    var f = c('OG3rI27'),
+        g = {
             'text/plain': 'Text',
             'text/html': 'Url',
             default: 'Text'
         };
-    _b.exports = function(f, g) {
-        var h, i, j, k, l, m, n = !1;
-        g || (g = {}), h = g.debug || !1;
+    d.exports = function(h, i) {
+        var j, k, l, m, n, o, p = !1;
+        i || (i = {}), j = i.debug || !1;
         try {
-            if (j = d(), k = document.createRange(), l = document.getSelection(), (m = document.createElement('span')).textContent = f, m.ariaHidden = 'true', m.style.all = 'unset', m.style.position = 'fixed', m.style.top = 0, m.style.clip = 'rect(0, 0, 0, 0)', m.style.whiteSpace = 'pre', m.style.webkitUserSelect = 'text', m.style.MozUserSelect = 'text', m.style.msUserSelect = 'text', m.style.userSelect = 'text', m.addEventListener('copy', function(o) {
-                    if (o.stopPropagation(), g.format)
-                        if (o.preventDefault(), void 0 === o.clipboardData) {
-                            h && console.warn('unable to use e.clipboardData'), h && console.warn('trying IE specific stuff'), window.clipboardData.clearData();
-                            var p = e[g.format] || e.default;
-                            window.clipboardData.setData(p, f);
+            if (l = f(), m = document.createRange(), n = document.getSelection(), (o = document.createElement('span')).textContent = h, o.ariaHidden = 'true', o.style.all = 'unset', o.style.position = 'fixed', o.style.top = 0, o.style.clip = 'rect(0, 0, 0, 0)', o.style.whiteSpace = 'pre', o.style.webkitUserSelect = 'text', o.style.MozUserSelect = 'text', o.style.msUserSelect = 'text', o.style.userSelect = 'text', o.addEventListener('copy', function(q) {
+                    if (q.stopPropagation(), i.format)
+                        if (q.preventDefault(), void 0 === q.clipboardData) {
+                            j && console.warn('unable to use e.clipboardData'), j && console.warn('trying IE specific stuff'), window.clipboardData.clearData();
+                            var r = g[i.format] || g.default;
+                            window.clipboardData.setData(r, h);
                         } else
-                            o.clipboardData.clearData(), o.clipboardData.setData(g.format, f);
-                    g.onCopy && (o.preventDefault(), g.onCopy(o.clipboardData));
-                }), document.body.appendChild(m), k.selectNodeContents(m), l.addRange(k), !document.execCommand('copy'))
+                            q.clipboardData.clearData(), q.clipboardData.setData(i.format, h);
+                    i.onCopy && (q.preventDefault(), i.onCopy(q.clipboardData));
+                }), document.body.appendChild(o), m.selectNodeContents(o), n.addRange(m), !document.execCommand('copy'))
                 throw new Error('copy command was unsuccessful');
-            n = !0;
-        } catch (d) {
-            h && console.error('unable to copy using execCommand: ', d), h && console.warn('trying IE specific stuff');
+            p = !0;
+        } catch (f) {
+            j && console.error('unable to copy using execCommand: ', f), j && console.warn('trying IE specific stuff');
             try {
-                window.clipboardData.setData(g.format || 'text', f), g.onCopy && g.onCopy(window.clipboardData), n = !0;
-            } catch (d) {
-                h && console.error('unable to copy using clipboardData: ', d), h && console.error('falling back to prompt'), i = function(o) {
-                    var p = (/mac os x/i.test(navigator.userAgent) ? '\u2318' : 'Ctrl') + '+C';
-                    return o.replace(/#{\s*key\s*}/g, p);
-                }('message' in g ? g.message : 'Copy to clipboard: #{key}, Enter'), window.prompt(i, f);
+                window.clipboardData.setData(i.format || 'text', h), i.onCopy && i.onCopy(window.clipboardData), p = !0;
+            } catch (f) {
+                j && console.error('unable to copy using clipboardData: ', f), j && console.error('falling back to prompt'), k = function(q) {
+                    var r = (/mac os x/i.test(navigator.userAgent) ? '\u2318' : 'Ctrl') + '+C';
+                    return q.replace(/#{\s*key\s*}/g, r);
+                }('message' in i ? i.message : 'Copy to clipboard: #{key}, Enter'), window.prompt(k, h);
             }
         } finally {
-            l && ('function' == typeof l.removeRange ? l.removeRange(k) : l.removeAllRanges()), m && document.body.removeChild(m), j();
+            n && ('function' == typeof n.removeRange ? n.removeRange(m) : n.removeAllRanges()), o && document.body.removeChild(o), l();
         }
-        return n;
+        return p;
     };
-}), a.register('RnV2k27', function(b, c) {
-    b.exports = function() {
-        var d = document.getSelection();
-        if (!d.rangeCount)
+}), c.register('OG3rI27', function(d, e) {
+    d.exports = function() {
+        var f = document.getSelection();
+        if (!f.rangeCount)
             return function() {};
-        for (var e = document.activeElement, f = [], g = 0; g < d.rangeCount; g++)
-            f.push(d.getRangeAt(g));
-        switch (e.tagName.toUpperCase()) {
+        for (var g = document.activeElement, h = [], i = 0; i < f.rangeCount; i++)
+            h.push(f.getRangeAt(i));
+        switch (g.tagName.toUpperCase()) {
             case 'INPUT':
             case 'TEXTAREA':
-                e.blur();
+                g.blur();
                 break;
             default:
-                e = null;
+                g = null;
         }
-        return d.removeAllRanges(),
+        return f.removeAllRanges(),
             function() {
-                'Caret' === d.type && d.removeAllRanges(), d.rangeCount || f.forEach(function(h) {
-                    d.addRange(h);
-                }), e && e.focus();
+                'Caret' === f.type && f.removeAllRanges(), f.rangeCount || h.forEach(function(j) {
+                    f.addRange(j);
+                }), g && g.focus();
             };
     };
-}), a.register('Kc6XZ23', function(b, c) {
-    _f(b.exports, 'default', function() {
-        return _d;
+}), c.register('P11ai26', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         sideMargin: 50,
         optionWidth: 200
     };
-}), a.register('/2bBN24', function(b, c) {
-    _f(b.exports, 'useMediaMatch', function() {
-        return _e;
+}), c.register('ZIYAX24', function(d, e) {
+    a(d.exports, 'useMediaMatch', function() {
+        return _g;
     });
-    var d = a('LEQ5w');
+    var f = c('O0Kav');
 
-    function _e(_f) {
+    function _g(h) {
         if ('undefined' == typeof window)
             return console.warn('useMediaMatch cannot function as window is undefined.'), !1;
-        var g = (0, d.useMemo)(function() {
-                return window.matchMedia(_f);
-            }, [_f]),
-            h = (0, d.useState)(function() {
-                return g.matches;
+        var i = (0, f.useMemo)(function() {
+                return window.matchMedia(h);
+            }, [h]),
+            j = (0, f.useState)(function() {
+                return i.matches;
             }),
-            i = h[0],
-            j = h[1];
-        return (0, d.useEffect)(function() {
-            j(g.matches);
-            var k = function(l) {
-                return j(l.matches);
+            k = j[0],
+            l = j[1];
+        return (0, f.useEffect)(function() {
+            l(i.matches);
+            var m = function(n) {
+                return l(n.matches);
             };
-            return g.addEventListener ? (g.addEventListener('change', k), function() {
-                return g.removeEventListener('change', k);
-            }) : (g.addListener(k), function() {
-                return g.removeListener(k);
+            return i.addEventListener ? (i.addEventListener('change', m), function() {
+                return i.removeEventListener('change', m);
+            }) : (i.addListener(m), function() {
+                return i.removeListener(m);
             });
-        }, [g]), i;
+        }, [i]), k;
     }
-}), a.register('ptkti24', function(b, c) {
-    var d = b.exports && b.exports.__createBinding || (Object.create ? function(e, f, g, h) {
-            void 0 === h && (h = g), Object.defineProperty(e, h, {
+}), c.register('d/TAL25', function(d, e) {
+    var f = d.exports && d.exports.__createBinding || (Object.create ? function(g, h, i, j) {
+            void 0 === j && (j = i), Object.defineProperty(g, j, {
                 enumerable: !0,
                 get: function() {
-                    return f[g];
+                    return h[i];
                 }
             });
-        } : function(e, f, g, h) {
-            void 0 === h && (h = g), e[h] = f[g];
+        } : function(g, h, i, j) {
+            void 0 === j && (j = i), g[j] = h[i];
         }),
-        e = b.exports && b.exports.__exportStar || function(f, g) {
-            for (var h in f)
-                'default' === h || Object.prototype.hasOwnProperty.call(g, h) || d(g, f, h);
+        g = d.exports && d.exports.__exportStar || function(h, i) {
+            for (var j in h)
+                'default' === j || Object.prototype.hasOwnProperty.call(i, j) || f(i, h, j);
         };
-    Object.defineProperty(b.exports, '__esModule', {
+    Object.defineProperty(d.exports, '__esModule', {
         value: !0
-    }), e(a('hDE9a25'), b.exports), e(a('rPed825'), b.exports), e(a('hpMH825'), b.exports);
-}), a.register('hDE9a25', function(b, c) {
-    Object.defineProperty(b.exports, '__esModule', {
+    }), g(c('Tn4aA25'), d.exports), g(c('R+vNj25'), d.exports), g(c('5nRuZ25'), d.exports);
+}), c.register('Tn4aA25', function(d, e) {
+    Object.defineProperty(d.exports, '__esModule', {
         value: !0
-    }), b.exports.useBreakpoints = b.exports.useBreakpoint = void 0;
-    var d = a('hpMH825');
-    b.exports.useBreakpoint = function(e) {
-        return (0, d.useWindowSize)().width < e;
-    }, b.exports.useBreakpoints = function(e) {
-        var f = (0, d.useWindowSize)().width;
-        return e.map(function(g) {
-            return f < g;
+    }), d.exports.useBreakpoints = d.exports.useBreakpoint = void 0;
+    var f = c('5nRuZ25');
+    d.exports.useBreakpoint = function(g) {
+        return (0, f.useWindowSize)().width < g;
+    }, d.exports.useBreakpoints = function(g) {
+        var h = (0, f.useWindowSize)().width;
+        return g.map(function(i) {
+            return h < i;
         });
     };
-}), a.register('hpMH825', function(b, c) {
-    var d = b.exports && b.exports.__createBinding || (Object.create ? function(e, f, g, h) {
-            void 0 === h && (h = g), Object.defineProperty(e, h, {
+}), c.register('5nRuZ25', function(d, e) {
+    var f = d.exports && d.exports.__createBinding || (Object.create ? function(g, h, i, j) {
+            void 0 === j && (j = i), Object.defineProperty(g, j, {
                 enumerable: !0,
                 get: function() {
-                    return f[g];
+                    return h[i];
                 }
             });
-        } : function(e, f, g, h) {
-            void 0 === h && (h = g), e[h] = f[g];
+        } : function(g, h, i, j) {
+            void 0 === j && (j = i), g[j] = h[i];
         }),
-        e = b.exports && b.exports.__setModuleDefault || (Object.create ? function(f, g) {
-            Object.defineProperty(f, 'default', {
+        g = d.exports && d.exports.__setModuleDefault || (Object.create ? function(h, i) {
+            Object.defineProperty(h, 'default', {
                 enumerable: !0,
-                value: g
+                value: i
             });
-        } : function(f, g) {
-            f.default = g;
+        } : function(h, i) {
+            h.default = i;
         }),
-        f = b.exports && b.exports.__importStar || function(g) {
-            if (g && g.__esModule)
-                return g;
-            var h = {};
-            if (null != g)
-                for (var i in g)
-                    'default' !== i && Object.prototype.hasOwnProperty.call(g, i) && d(h, g, i);
-            return e(h, g), h;
+        h = d.exports && d.exports.__importStar || function(i) {
+            if (i && i.__esModule)
+                return i;
+            var j = {};
+            if (null != i)
+                for (var k in i)
+                    'default' !== k && Object.prototype.hasOwnProperty.call(i, k) && f(j, i, k);
+            return g(j, i), j;
         };
-    Object.defineProperty(b.exports, '__esModule', {
+    Object.defineProperty(d.exports, '__esModule', {
         value: !0
-    }), b.exports.useWindowSize = void 0;
-    var g = f(a('LEQ5w'));
+    }), d.exports.useWindowSize = void 0;
+    var i = h(c('O0Kav'));
 
-    function h() {
+    function j() {
         return {
             height: window.innerHeight,
             width: window.innerWidth
         };
     }
-    b.exports.useWindowSize = function() {
-        var h = g.useState(_h()),
-            i = h[0],
-            j = h[1];
-        return g.useLayoutEffect(function() {
-            function k() {
-                j(_h());
+    d.exports.useWindowSize = function() {
+        var k = i.useState(j()),
+            l = k[0],
+            m = k[1];
+        return i.useLayoutEffect(function() {
+            function n() {
+                m(j());
             }
-            return window.addEventListener('resize', h),
+            return window.addEventListener('resize', n),
                 function() {
-                    return window.removeEventListener('resize', h);
+                    return window.removeEventListener('resize', n);
                 };
-        }, []), i;
+        }, []), l;
     };
-}), a.register('rPed825', function(b, c) {
-    var d = b.exports && b.exports.__assign || function() {
-            return d = Object.assign || function(e) {
-                for (var f, g = 1, h = arguments.length; g < h; g++)
-                    for (var i in f = arguments[g])
-                        Object.prototype.hasOwnProperty.call(f, i) && (e[i] = f[i]);
-                return e;
-            }, d.apply(this, arguments);
+}), c.register('R+vNj25', function(d, e) {
+    var f = d.exports && d.exports.__assign || function() {
+            return f = Object.assign || function(g) {
+                for (var h, i = 1, j = arguments.length; i < j; i++)
+                    for (var k in h = arguments[i])
+                        Object.prototype.hasOwnProperty.call(h, k) && (g[k] = h[k]);
+                return g;
+            }, f.apply(this, arguments);
         },
-        e = b.exports && b.exports.__createBinding || (Object.create ? function(f, g, h, i) {
-            void 0 === i && (i = h), Object.defineProperty(f, i, {
+        g = d.exports && d.exports.__createBinding || (Object.create ? function(h, i, j, k) {
+            void 0 === k && (k = j), Object.defineProperty(h, k, {
                 enumerable: !0,
                 get: function() {
-                    return g[h];
+                    return i[j];
                 }
             });
-        } : function(f, g, h, i) {
-            void 0 === i && (i = h), f[i] = g[h];
+        } : function(h, i, j, k) {
+            void 0 === k && (k = j), h[k] = i[j];
         }),
-        f = b.exports && b.exports.__setModuleDefault || (Object.create ? function(g, h) {
-            Object.defineProperty(g, 'default', {
+        h = d.exports && d.exports.__setModuleDefault || (Object.create ? function(i, j) {
+            Object.defineProperty(i, 'default', {
                 enumerable: !0,
-                value: h
+                value: j
             });
-        } : function(g, h) {
-            g.default = h;
+        } : function(i, j) {
+            i.default = j;
         }),
-        g = b.exports && b.exports.__importStar || function(h) {
-            if (h && h.__esModule)
-                return h;
-            var i = {};
-            if (null != h)
-                for (var j in h)
-                    'default' !== j && Object.prototype.hasOwnProperty.call(h, j) && e(i, h, j);
-            return f(i, h), i;
+        i = d.exports && d.exports.__importStar || function(j) {
+            if (j && j.__esModule)
+                return j;
+            var k = {};
+            if (null != j)
+                for (var l in j)
+                    'default' !== l && Object.prototype.hasOwnProperty.call(j, l) && g(k, j, l);
+            return h(k, j), k;
         };
-    Object.defineProperty(b.exports, '__esModule', {
+    Object.defineProperty(d.exports, '__esModule', {
         value: !0
-    }), b.exports.useComponentSize = void 0;
-    var _h = g(a('LEQ5w'));
-    b.exports.useComponentSize = function() {
-        var i = _h.useState({
+    }), d.exports.useComponentSize = void 0;
+    var j = i(c('O0Kav'));
+    d.exports.useComponentSize = function() {
+        var k = j.useState({
                 height: 0,
                 width: 0
             }),
-            j = i[0],
-            k = i[1],
-            l = _h.useRef(),
-            m = _h.useCallback(function() {
-                if (l.current) {
-                    var n = l.current.offsetHeight,
-                        o = l.current.offsetWidth;
-                    n === j.height && o === j.width || k({
-                        height: n,
-                        width: o
+            l = k[0],
+            m = k[1],
+            n = j.useRef(),
+            o = j.useCallback(function() {
+                if (n.current) {
+                    var p = n.current.offsetHeight,
+                        q = n.current.offsetWidth;
+                    p === l.height && q === l.width || m({
+                        height: p,
+                        width: q
                     });
                 }
             }, [
-                j.height,
-                j.width
+                l.height,
+                l.width
             ]);
-        return _h.useLayoutEffect(function() {
-            if (l && l.current) {
-                var n = new ResizeObserver(m);
-                return n.observe(l.current),
+        return j.useLayoutEffect(function() {
+            if (n && n.current) {
+                var p = new ResizeObserver(o);
+                return p.observe(n.current),
                     function() {
-                        return n.disconnect();
+                        return p.disconnect();
                     };
             }
         }, [
-            l,
-            m
-        ]), d({
-            ref: l
-        }, j);
+            n,
+            o
+        ]), f({
+            ref: n
+        }, l);
     };
-}), a.register('PqMjn20', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _d;
+}), c.register('vJWh924', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
-        name: a('Mmd0d21').default.areaName,
+    var _f = {
+        name: c('LE3I425').default.areaName,
         iconImage: '/client/img/header/rewards.svg'
     };
-}), a.register('Mmd0d21', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _d;
+}), c.register('LE3I425', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         areaName: 'Rewards',
         level: 'Level',
         xp: 'XP',
@@ -2745,27 +2745,27 @@ a.register('Ljwt5', function(b, c) {
         sticker: 'Sticker',
         trail: 'Trail'
     };
-}), a.register('gCqar24', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('8sxYw24', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('skUox22'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('2lnmQ24'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'UsergroupAddOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('skUox22', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'UsergroupAddOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('2lnmQ24', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -2782,27 +2782,27 @@ a.register('Ljwt5', function(b, c) {
         name: 'usergroup-add',
         theme: 'outlined'
     };
-}), a.register('+UyIc24', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('JTTlV24', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('r3/DU21'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('P++lt24'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'LogoutOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('r3/DU21', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'LogoutOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('P++lt24', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -2819,27 +2819,27 @@ a.register('Ljwt5', function(b, c) {
         name: 'logout',
         theme: 'outlined'
     };
-}), a.register('CJCpN', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('BA14D', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('v47zB'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('+iTmi'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'CheckOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('v47zB', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'CheckOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('+iTmi', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -2856,33 +2856,33 @@ a.register('Ljwt5', function(b, c) {
         name: 'check',
         theme: 'outlined'
     };
-}), a.register('Rtfgy20', function(b, c) {
-    _i(b.exports, 'onlyOfferAnnualUpgrade', function() {
-        return _e;
+}), c.register('zzCtd25', function(d, e) {
+    a(d.exports, 'onlyOfferAnnualUpgrade', function() {
+        return _g;
     });
-    var d = a('THxMC');
-    const _e = () => 'annual-only' === d.default.getFeatureFlag('annual-only-pro');
-}), a.register('xQDqe25', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+    var f = c('SKBBo');
+    const _g = () => 'annual-only' === f.default.getFeatureFlag('annual-only-pro');
+}), c.register('/poDA27', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('AxRpU23'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('mQ0iF27'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'StarOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('AxRpU23', function(b, c) {
-    _j(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'StarOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('mQ0iF27', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -2899,151 +2899,151 @@ a.register('Ljwt5', function(b, c) {
         name: 'star',
         theme: 'outlined'
     };
-}), a.register('BXKZi0', function(b, c) {
-    _j(b.exports, 'default', function() {
-        return _g;
+}), c.register('bQWYI', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('LEQ5w'),
-        e = a('+UcJ7'),
-        f = a('dR/Gi');
-    var _g = (_j, b) => {
-        const [h, i] = d.useState(() => {
-            var j, k;
-            const l = _j && 'current' in _j ? _j.current : _j;
-            return l ? [
-                l.offsetWidth,
-                l.offsetHeight
+    var f = c('O0Kav'),
+        g = c('GkLtI'),
+        h = c('Nnw7z');
+    var _i = (a, d) => {
+        const [j, k] = f.useState(() => {
+            var l, m;
+            const n = a && 'current' in a ? a.current : a;
+            return n ? [
+                n.offsetWidth,
+                n.offsetHeight
             ] : [
-                null !== (j = null == b ? void 0 : b.initialWidth) && void 0 !== j ? j : 0,
-                null !== (k = null == b ? void 0 : b.initialHeight) && void 0 !== k ? k : 0
+                null !== (l = null == d ? void 0 : d.initialWidth) && void 0 !== l ? l : 0,
+                null !== (m = null == d ? void 0 : d.initialHeight) && void 0 !== m ? m : 0
             ];
         });
-        return (0, f.default)(() => {
-            const j = _j && 'current' in _j ? _j.current : _j;
-            j && i([
-                j.offsetWidth,
-                j.offsetHeight
+        return (0, h.default)(() => {
+            const l = a && 'current' in a ? a.current : a;
+            l && k([
+                l.offsetWidth,
+                l.offsetHeight
             ]);
-        }, [_j]), (0, e.default)(_j, _j => {
-            const j = _j.target;
-            i([
-                j.offsetWidth,
-                j.offsetHeight
+        }, [a]), (0, g.default)(a, a => {
+            const l = a.target;
+            k([
+                l.offsetWidth,
+                l.offsetHeight
             ]);
-        }), h;
+        }), j;
     };
-}), a.register('+UcJ7', function(b, c) {
-    _j(b.exports, 'default', function() {
-        return _j;
+}), c.register('GkLtI', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _l;
     });
-    var d = a('iIbRn'),
-        e = a('dR/Gi'),
-        f = a('20TiJ'),
-        g = a('18t62');
-    let h;
-    const i = () => h || (h = function() {
-        const _j = new Map(),
-            k = new(0, d.default)((0, g.default)((k, a) => {
-                var l;
-                if (1 === k.length)
-                    null === (l = _j.get(k[0].target)) || void 0 === l || l(k[0], a);
+    var f = c('1PitP'),
+        g = c('Nnw7z'),
+        h = c('xRoVg'),
+        i = c('8Q3ZG');
+    let j;
+    const k = () => j || (j = function() {
+        const l = new Map(),
+            m = new(0, f.default)((0, i.default)((m, c) => {
+                var n;
+                if (1 === m.length)
+                    null === (n = l.get(m[0].target)) || void 0 === n || n(m[0], c);
                 else
-                    for (let m = 0; m < k.length; m++) {
-                        var n;
-                        null === (n = _j.get(k[m].target)) || void 0 === n || n(k[m], a);
+                    for (let o = 0; o < m.length; o++) {
+                        var p;
+                        null === (p = l.get(m[o].target)) || void 0 === p || p(m[o], c);
                     }
             }));
         return {
-            observer: k,
-            subscribe(l, m) {
-                k.observe(l), _j.set(l, m);
+            observer: m,
+            subscribe(n, o) {
+                m.observe(n), l.set(n, o);
             },
-            unsubscribe(l) {
-                k.unobserve(l), _j.delete(l);
+            unsubscribe(n) {
+                m.unobserve(n), l.delete(n);
             }
         };
     }());
-    var _j = function(k, l) {
-        const m = i(),
-            n = (0, f.default)(l);
-        return (0, e.default)(() => {
-            let o = !1;
-            const p = k && 'current' in k ? k.current : k;
-            if (p)
-                return m.subscribe(p, (k, m) => {
-                    o || n.current(k, m);
+    var _l = function(m, n) {
+        const o = k(),
+            p = (0, h.default)(n);
+        return (0, g.default)(() => {
+            let q = !1;
+            const r = m && 'current' in m ? m.current : m;
+            if (r)
+                return o.subscribe(r, (m, o) => {
+                    q || p.current(m, o);
                 }), () => {
-                    o = !0, m.unsubscribe(p);
+                    q = !0, o.unsubscribe(r);
                 };
         }, [
-            k,
             m,
-            n
-        ]), m.observer;
+            o,
+            p
+        ]), o.observer;
     };
-}), a.register('dR/Gi', function(b, c) {
-    _e(b.exports, 'default', function() {
-        return _d;
+}), c.register('Nnw7z', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = _b(a('LEQ5w'))['undefined' != typeof document && void 0 !== document.createElement ? 'useLayoutEffect' : 'useEffect'];
-}), a.register('20TiJ', function(_b, c) {
-    _e(_b.exports, 'default', function() {
-        return _e;
+    var _f = b(c('O0Kav'))['undefined' != typeof document && void 0 !== document.createElement ? 'useLayoutEffect' : 'useEffect'];
+}), c.register('xRoVg', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _g;
     });
-    var d = a('LEQ5w');
-    var _e = _e => {
-        const f = d.useRef(_e);
-        return d.useEffect(() => {
-            f.current = _e;
-        }), f;
+    var f = c('O0Kav');
+    var _g = a => {
+        const h = f.useRef(a);
+        return f.useEffect(() => {
+            h.current = a;
+        }), h;
     };
-}), a.register('18t62', function(b, c) {
-    _e(b.exports, 'default', function() {
-        return _d;
+}), c.register('8Q3ZG', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = function(_e) {
-        var f = [],
-            g = null,
-            h = function() {
-                for (var i = arguments.length, j = new Array(i), k = 0; k < i; k++)
-                    j[k] = arguments[k];
-                f = j, g || (g = requestAnimationFrame(function() {
-                    g = null, _e.apply(void 0, f);
+    var _f = function(g) {
+        var h = [],
+            i = null,
+            j = function() {
+                for (var k = arguments.length, l = new Array(k), m = 0; m < k; m++)
+                    l[m] = arguments[m];
+                h = l, i || (i = requestAnimationFrame(function() {
+                    i = null, g.apply(void 0, h);
                 }));
             };
-        return h.cancel = function() {
-            g && (cancelAnimationFrame(g), g = null);
-        }, h;
+        return j.cancel = function() {
+            i && (cancelAnimationFrame(i), i = null);
+        }, j;
     };
-}), a.register('jzxyj10', function(b, c) {
-    _i(b.exports, 'NavigateTo', function() {
-        return _e;
+}), c.register('KxkP827', function(d, e) {
+    a(d.exports, 'NavigateTo', function() {
+        return _g;
     });
-    var d = a('oBJ9G');
-    const _e = _i => {
-        d.history.push(_i);
+    var f = c('qb3Ih');
+    const _g = a => {
+        f.history.push(a);
     };
-}), a.register('mfp3D', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('gWjq2', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('aeDL7'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('Omeih'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'EnterOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('aeDL7', function(b, c) {
-    _b(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'EnterOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('Omeih', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -3060,48 +3060,48 @@ a.register('Ljwt5', function(b, c) {
         name: 'enter',
         theme: 'outlined'
     };
-}), a.register('7B+hJ16', function(_b, c) {
-    Object.defineProperty(_b.exports, '__esModule', {
+}), c.register('AKtTq25', function(d, e) {
+    Object.defineProperty(d.exports, '__esModule', {
         value: !0
-    }), _b.exports.lazyWithPreload = void 0;
-    var d = a('LEQ5w');
+    }), d.exports.lazyWithPreload = void 0;
+    var f = c('O0Kav');
 
-    function e(f) {
-        var g, h, i = (0, d.lazy)(f),
-            j = (0, d.forwardRef)(function(k, l) {
-                var m = (0, d.useRef)(null != g ? g : i);
-                return (0, d.createElement)(m.current, Object.assign(l ? {
-                    ref: l
-                } : {}, k));
+    function g(h) {
+        var i, j, k = (0, f.lazy)(h),
+            l = (0, f.forwardRef)(function(m, n) {
+                var o = (0, f.useRef)(null != i ? i : k);
+                return (0, f.createElement)(o.current, Object.assign(n ? {
+                    ref: n
+                } : {}, m));
             });
-        return j.preload = function() {
-            return h || (h = f().then(function(k) {
-                return g = k.default;
-            })), h;
-        }, j;
+        return l.preload = function() {
+            return j || (j = h().then(function(m) {
+                return i = m.default;
+            })), j;
+        }, l;
     }
-    _b.exports.lazyWithPreload = _d, _b.exports.default = _d;
-}), a.register('dBHoZ22', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+    d.exports.lazyWithPreload = g, d.exports.default = g;
+}), c.register('hxyXq25', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var _d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('7tpbI13'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, _d.default)((0, _d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('1XwWU13'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'QuestionCircleOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('7tpbI13', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'QuestionCircleOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('1XwWU13', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {

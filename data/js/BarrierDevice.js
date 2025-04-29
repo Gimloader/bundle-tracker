@@ -6,33 +6,33 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('Xk92Y', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('oFGwV', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _o(b.exports, 'default', function() {
-        return _o;
+    }), a(c.exports, 'default', function() {
+        return _p;
     });
-    var e = a('1bFPu'),
-        f = a('9tz3H'),
-        g = a('/pbxo'),
-        h = a('I35Ay'),
-        i = a('FyhLk'),
-        j = a('HbVXj'),
-        k = a('IFO6W13'),
-        l = a('R2Ucl10'),
-        m = a('NyV64');
-    class n extends h.default {
+    var f = b('s/YA9'),
+        g = b('hycyg'),
+        h = b('UkCpC'),
+        i = b('ltxDW'),
+        j = b('vvFNE'),
+        k = b('UYyWT'),
+        l = b('u/WlI21'),
+        m = b('uc4mA17'),
+        n = b('/YaFu1');
+    class o extends i.default {
         get alpha() {
-            return (0, g.InPreGamePhase)() && (0, f.isSavedVersion)() || this.options.visibleInGame && this.state.active ? 1 : 0;
+            return (0, h.InPreGamePhase)() && (0, g.isSavedVersion)() || this.options.visibleInGame && this.state.active ? 1 : 0;
         }
         get isCircle() {
-            return this.options.shape === i.BarrierShape.circle;
+            return this.options.shape === j.BarrierShape.circle;
         }
         get isRectangle() {
-            return this.options.shape === i.BarrierShape.rectangle;
+            return this.options.shape === j.BarrierShape.rectangle;
         }
         get color() {
             return Phaser.Display.Color.HexStringToColor(this.options.color).color;
@@ -41,10 +41,10 @@ a.register('Xk92Y', function(b, c) {
             return this.options.showBorder ? 8 : 0;
         }
         get borderColor() {
-            return Phaser.Display.Color.HexStringToColor((0, j.GetContrastColor)(this.options.color)).color;
+            return Phaser.Display.Color.HexStringToColor((0, k.GetContrastColor)(this.options.color)).color;
         }
-        constructor(_o) {
-            if (super(_o), (0, e.default)(this, 'createVisuals', () => {
+        constructor(p) {
+            if (super(p), (0, f.default)(this, 'createVisuals', () => {
                     this.part || (this.isCircle && (this.part = this.parts.add.circle({
                         x: 0,
                         y: 0,
@@ -67,7 +67,7 @@ a.register('Xk92Y', function(b, c) {
                         borderWidth: this.borderWidth,
                         cornerRadius: 8
                     })), this.part.view.alpha = this.alpha);
-                }), (0, e.default)(this, 'createColliders', () => {
+                }), (0, f.default)(this, 'createColliders', () => {
                     this.options.collisionEnabled && (this.isCircle && this.colliders.add.circle({
                         x: 0,
                         y: 0,
@@ -79,41 +79,41 @@ a.register('Xk92Y', function(b, c) {
                         h: this.options.height,
                         angle: this.options.angle
                     }));
-                }), (0, e.default)(this, 'onStateChange', _o => {
-                    'active' === _o && (this.state.active && (0, m.default)(this), this.part.view.setAlpha(this.alpha));
-                }), (0, e.default)(this, 'checkIfCollidersEnabled', () => this.state.active), (0, g.InPreGamePhase)() && (0, f.isSavedVersion)())
+                }), (0, f.default)(this, 'onStateChange', p => {
+                    'active' === p && (this.state.active && (0, n.default)(this), this.part.view.setAlpha(this.alpha));
+                }), (0, f.default)(this, 'checkIfCollidersEnabled', () => this.state.active), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)())
                 if (this.isCircle) {
-                    const p = (0, l.FetchOptionSchemaProperty)(this, 'radius');
+                    const q = (0, m.FetchOptionSchemaProperty)(this, 'radius');
                     this.visualEditing.add.circle({
                         angle: 0,
                         rotable: !1,
                         radius: this.options.radius,
-                        minRadius: p.min,
-                        maxRadius: p.max,
-                        onChange: p => {
-                            (0, k.ReplaceVisualEditingPreview)(p.x, p.y, {
-                                radius: p.radius
+                        minRadius: q.min,
+                        maxRadius: q.max,
+                        onChange: q => {
+                            (0, l.ReplaceVisualEditingPreview)(q.x, q.y, {
+                                radius: q.radius
                             });
                         }
                     });
                 } else {
-                    const p = (0, l.FetchOptionSchemaProperty)(this, 'width'),
-                        q = (0, l.FetchOptionSchemaProperty)(this, 'height');
+                    const q = (0, m.FetchOptionSchemaProperty)(this, 'width'),
+                        r = (0, m.FetchOptionSchemaProperty)(this, 'height');
                     this.visualEditing.add.box({
                         angle: this.options.angle,
                         keepRatio: !1,
                         rotable: !0,
                         width: this.options.width,
                         height: this.options.height,
-                        minWidth: p.min,
-                        maxWidth: p.max,
-                        minHeight: q.min,
-                        maxHeight: q.max,
-                        onChange: p => {
-                            (0, k.ReplaceVisualEditingPreview)(p.x, p.y, {
-                                width: p.width,
-                                height: p.height,
-                                angle: p.angle
+                        minWidth: q.min,
+                        maxWidth: q.max,
+                        minHeight: r.min,
+                        maxHeight: r.max,
+                        onChange: q => {
+                            (0, l.ReplaceVisualEditingPreview)(q.x, q.y, {
+                                width: q.width,
+                                height: q.height,
+                                angle: q.angle
                             });
                         }
                     });
@@ -121,78 +121,78 @@ a.register('Xk92Y', function(b, c) {
             this.createVisuals(), this.createColliders();
         }
     }
-    var _o = n;
-}), a.register('FyhLk', function(b, c) {
-    let d;
-    var e;
-    e(b.exports, 'BarrierShape', function() {
-        return d;
-    }), (e = d || (d = {})).rectangle = 'rectangle', e.circle = 'circle';
-}), a.register('IFO6W13', function(b, c) {
-    e(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return _h;
+    var _p = o;
+}), b.register('vvFNE', function(c, d) {
+    let e;
+    var f;
+    a(c.exports, 'BarrierShape', function() {
+        return e;
+    }), (f = e || (e = {})).rectangle = 'rectangle', f.circle = 'circle';
+}), b.register('u/WlI21', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+        return _i;
     });
-    var d = a('HqwPM'),
-        e = a('+oovY4'),
-        f = a('A17vD'),
-        g = a('HXXiu');
-    const _h = (e, a, b) => {
-        const i = (0, g.FetchVisualEditingPreview)(),
-            j = (0, f.FetchCurrentlyEditedDevice)();
-        if (!j || !i)
+    var e = b('hemXM'),
+        f = b('sWmxu5'),
+        g = b('EzUqb'),
+        h = b('GQMbT');
+    const _i = (a, b, c) => {
+        const j = (0, h.FetchVisualEditingPreview)(),
+            k = (0, g.FetchCurrentlyEditedDevice)();
+        if (!k || !j)
             return;
-        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
-        (0, e.default)({
-            deviceOption: i.deviceOption,
-            id: d.VisualEditingConstants.previewId,
-            x: e,
-            y: a,
-            depth: k,
-            layerId: j.layers.getLayer(),
-            name: i.name,
+        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        (0, f.default)({
+            deviceOption: j.deviceOption,
+            id: e.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: l,
+            layerId: k.layers.getLayer(),
+            name: j.name,
             isPreview: !0,
             options: {
-                ...i.options,
-                ...b
+                ...j.options,
+                ...c
             },
             placedByClient: !0,
-            state: i.deviceOption.defaultState
+            state: j.deviceOption.defaultState
         });
     };
-}), a.register('+oovY4', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _f;
+}), b.register('sWmxu5', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('D5xLI'),
-        e = a('aIyMH');
-    var _f = e => {
-        (0, d.default)().worldManager.devices.getDeviceById(e.id) && (0, e.default)(e);
+    var e = b('heTaO'),
+        f = b('2LtPo');
+    var _g = a => {
+        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
     };
-}), a.register('R2Ucl10', function(b, c) {
-    e(b.exports, 'FetchOptionSchemaProperty', function() {
-        return _d;
+}), b.register('uc4mA17', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
+        return _e;
     });
-    const _d = (e, b) => {
-        var e, f, g;
-        const h = e.deviceOption.optionSchema.options.find(e => e.key === b);
+    const _e = (a, c) => {
+        var f, g, h;
+        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
         return {
-            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
-            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
-            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
+            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
+            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
+            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
         };
     };
-}), a.register('NyV64', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _f;
+}), b.register('/YaFu1', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('Jfada'),
-        e = a('B7ZvS');
-    var _f = e => {
-        const g = (0, e.default)((0, d.default)());
-        e.colliders.forEach(e => {
-            var h, i, j;
-            const k = e.bodyId;
-            null === (h = null == g ? void 0 : g.physics.getBody()) || void 0 === h || null === (i = h.character) || void 0 === i || null === (j = i.ignoredStaticBodies) || void 0 === j || j.add(k);
+    var e = b('5Fjxs'),
+        f = b('d7UqH');
+    var _g = a => {
+        const h = (0, f.default)((0, e.default)());
+        a.colliders.forEach(a => {
+            var i, j, k;
+            const l = a.bodyId;
+            null === (i = null == h ? void 0 : h.physics.getBody()) || void 0 === i || null === (j = i.character) || void 0 === j || null === (k = j.ignoredStaticBodies) || void 0 === k || k.add(l);
         });
     };
 });

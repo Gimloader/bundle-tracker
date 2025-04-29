@@ -6,43 +6,43 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('Oqo8K', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('HMD//', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _o(b.exports, 'default', function() {
-        return _o;
+    }), a(c.exports, 'default', function() {
+        return _p;
     });
-    var e = a('1bFPu'),
-        f = a('PMl60'),
-        g = a('iWivW'),
-        h = a('Jfada'),
-        i = a('9tz3H'),
-        j = a('/pbxo'),
-        k = a('I35Ay'),
-        l = a('9LXPl'),
-        m = a('I6I6X');
-    class n extends k.default {
-        constructor(_o) {
-            super(_o), (0, e.default)(this, 'onMessage', _o => {
-                _o.key === m.Messages.show && (null == _o ? void 0 : _o.data) === (0, h.default)() && g.default.gui.achievement.update(this.id, (0, f.generateId)());
-            }), (0, i.isPublishedVersion)() || (0, j.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(l.BaseAsset));
+    var f = b('s/YA9'),
+        g = b('quE27'),
+        h = b('fI6of'),
+        i = b('5Fjxs'),
+        j = b('hycyg'),
+        k = b('UkCpC'),
+        l = b('ltxDW'),
+        m = b('xyr62'),
+        n = b('5twYG');
+    class o extends l.default {
+        constructor(p) {
+            super(p), (0, f.default)(this, 'onMessage', p => {
+                p.key === n.Messages.show && (null == p ? void 0 : p.data) === (0, i.default)() && h.default.gui.achievement.update(this.id, (0, g.generateId)());
+            }), (0, j.isPublishedVersion)() || (0, k.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(m.BaseAsset));
         }
     }
-    var _o = n;
-}), a.register('9LXPl', function(b, c) {
-    e(b.exports, 'BaseAsset', function() {
-        return _d;
+    var _p = o;
+}), b.register('xyr62', function(c, d) {
+    a(c.exports, 'BaseAsset', function() {
+        return _e;
     });
-    const _d = {
+    const _e = {
         imageId: 'achievement_device',
-        imageUrl: (0, a('2Xvuf').default)('devices/achievement/icon.png')
+        imageUrl: (0, b('UaUBz0').default)('devices/achievement/icon.png')
     };
-}), a.register('I6I6X', function(b, c) {
-    let d;
-    e(b.exports, 'Messages', function() {
-        return d;
-    }), (d || (d = {})).show = 'show';
+}), b.register('5twYG', function(c, d) {
+    let e;
+    a(c.exports, 'Messages', function() {
+        return e;
+    }), (e || (e = {})).show = 'show';
 });

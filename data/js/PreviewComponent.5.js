@@ -6,72 +6,72 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('5cFKR', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('C7Pfa', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _y(b.exports, 'default', function() {
-        return _m;
+    }), a(c.exports, 'default', function() {
+        return _n;
     });
-    var e = a('0hzx+'),
-        f = a('fe6E3'),
-        g = a('LEQ5w'),
-        h = a('5drJf'),
-        i = a('9fFDn'),
-        j = a('G8w+m'),
-        k = a('b5kvC'),
-        l = a('0/10K');
-    var _m = _y => {
-        const [n, o] = g.useState((0, f.shuffle)(_y.questions.map(_y => _y._id))), [p, q] = g.useState(0), [r, s] = g.useState({
-            ..._y.questions.find(_y => _y._id === n[p]),
-            answers: (0, f.shuffle)(_y.questions.find(_y => _y._id === n[p]).answers)
-        }), [t, u] = g.useState(), [v, w] = g.useState(!1);
-        g.useEffect(() => {
-            n.length - 1 === p && o((0, f.shuffle)(_y.questions.map(_y => _y._id)));
+    var f = b('gRbUn'),
+        g = b('9zaF+'),
+        h = b('O0Kav'),
+        i = b('yK0U7'),
+        j = b('6BXeU'),
+        k = b('5oXbu'),
+        l = b('Eh2Wh'),
+        m = b('2BfsU');
+    var _n = a => {
+        const [o, p] = h.useState((0, g.shuffle)(a.questions.map(a => a._id))), [q, r] = h.useState(0), [s, t] = h.useState({
+            ...a.questions.find(a => a._id === o[q]),
+            answers: (0, g.shuffle)(a.questions.find(a => a._id === o[q]).answers)
+        }), [u, v] = h.useState(), [w, x] = h.useState(!1);
+        h.useEffect(() => {
+            o.length - 1 === q && p((0, g.shuffle)(a.questions.map(a => a._id)));
         }, [
-            n.length,
-            p
-        ]), g.useEffect(() => {
-            l.GimkitLiveQuestionDeviceSounds.correct.load(), l.GimkitLiveQuestionDeviceSounds.incorrect.load(), l.GimkitLiveQuestionDeviceSounds.click.load();
+            o.length,
+            q
+        ]), h.useEffect(() => {
+            m.GimkitLiveQuestionDeviceSounds.correct.load(), m.GimkitLiveQuestionDeviceSounds.incorrect.load(), m.GimkitLiveQuestionDeviceSounds.click.load();
         }, []);
-        const x = g.useMemo(() => {
-            var _y;
-            return (null == t || null === (_y = t.answers) || void 0 === _y ? void 0 : _y.find(_y => _y.correct)) || {
+        const y = h.useMemo(() => {
+            var z;
+            return (null == u || null === (z = u.answers) || void 0 === z ? void 0 : z.find(z => z.correct)) || {
                 _id: 'no_correct',
                 text: 'No Correct Answer',
                 correct: !0
             };
-        }, [t]);
-        return (0, e.jsx)('div', {
+        }, [u]);
+        return (0, f.jsx)('div', {
             className: 'maxAll',
             style: {
-                fontFamily: k.Fonts.ProductSans,
+                fontFamily: l.Fonts.ProductSans,
                 background: '#303f9f',
                 userSelect: 'none',
                 overflow: 'hidden'
             },
-            children: (0, e.jsx)(i.default, {
-                ecc: (0, h.EncryptData)(r, r._id),
-                lastQuestion: t,
-                lastQuestionCorrectAnswer: x,
-                lastQuestionAnsweredCorrect: v,
-                onQuestionAnswered: o => {
-                    u(r);
-                    let y = p + 1;
-                    y >= n.length && (y = 0), q(y);
-                    const z = _g.questions.find(_g => _g._id === n[y]);
-                    s({
-                        ...z,
-                        answers: (0, f.shuffle)(z.answers)
+            children: (0, f.jsx)(j.default, {
+                ecc: (0, i.EncryptData)(s, s._id),
+                lastQuestion: u,
+                lastQuestionCorrectAnswer: y,
+                lastQuestionAnsweredCorrect: w,
+                onQuestionAnswered: p => {
+                    v(s);
+                    let z = q + 1;
+                    z >= o.length && (z = 0), r(z);
+                    const A = a.questions.find(a => a._id === o[z]);
+                    t({
+                        ...A,
+                        answers: (0, g.shuffle)(A.answers)
                     });
-                    const A = (0, j.isQuestionCorrect)(r, o);
-                    return w(A), A;
+                    const B = (0, k.isQuestionCorrect)(s, p);
+                    return x(B), B;
                 },
-                correctSound: l.GimkitLiveQuestionDeviceSounds.correct,
-                incorrectSound: l.GimkitLiveQuestionDeviceSounds.incorrect,
-                onActionSound: l.GimkitLiveQuestionDeviceSounds.click,
+                correctSound: m.GimkitLiveQuestionDeviceSounds.correct,
+                incorrectSound: m.GimkitLiveQuestionDeviceSounds.incorrect,
+                onActionSound: m.GimkitLiveQuestionDeviceSounds.click,
                 textShownWhenAnsweringCorrectly: 'Correct!',
                 textShownWhenAnsweringIncorrectly: 'Incorrect!',
                 customCorrectTextAnimation: {
@@ -81,233 +81,233 @@ a.register('5cFKR', function(b, c) {
             })
         });
     };
-}), a.register('0/10K', function(b, c) {
-    _g(b.exports, 'GimkitLiveQuestionDeviceSounds', function() {
-        return _f;
+}), b.register('2BfsU', function(c, d) {
+    a(c.exports, 'GimkitLiveQuestionDeviceSounds', function() {
+        return _g;
     });
-    var d = a('6yrsF'),
-        e = a('2Xvuf');
-    const _f = {
-        correct: new(0, d.Howl)({
-            src: [(0, e.default)('devices/gimkit_live_question/sounds/correct.mp3')],
+    var e = b('6yrsF'),
+        f = b('UaUBz0');
+    const _g = {
+        correct: new(0, e.Howl)({
+            src: [(0, f.default)('devices/gimkit_live_question/sounds/correct.mp3')],
             volume: 0.7,
             preload: !1
         }),
-        correctCash: new(0, d.Howl)({
-            src: [(0, e.default)('devices/gimkit_live_question/sounds/correct_cash.mp3')],
+        correctCash: new(0, e.Howl)({
+            src: [(0, f.default)('devices/gimkit_live_question/sounds/correct_cash.mp3')],
             preload: !1
         }),
-        incorrect: new(0, d.Howl)({
-            src: [(0, e.default)('devices/gimkit_live_question/sounds/incorrect.mp3')],
+        incorrect: new(0, e.Howl)({
+            src: [(0, f.default)('devices/gimkit_live_question/sounds/incorrect.mp3')],
             preload: !1
         }),
-        click: new(0, d.Howl)({
-            src: [(0, e.default)('devices/gimkit_live_question/sounds/click.mp3')],
+        click: new(0, e.Howl)({
+            src: [(0, f.default)('devices/gimkit_live_question/sounds/click.mp3')],
             preload: !1
         })
     };
-}), a.register('2Xvuf', function(b, c) {
-    let d;
-    _g(b.exports, 'default', function() {
-        return _e;
+}), b.register('UaUBz0', function(c, d) {
+    let e;
+    a(c.exports, 'default', function() {
+        return _f;
     });
-    var _e = _g => {
-        const f = (() => {
-            var _g;
-            if (d)
-                return d;
-            const h = null === (_g = document.querySelector('meta[property="cdn-map-assets-url"]')) || void 0 === _g ? void 0 : _g.getAttribute('content');
-            return void 0 !== h && '$CDN_MAP_ASSETS_URL' !== h ? (d = h, d) : '';
+    var _f = a => {
+        const g = (() => {
+            var h;
+            if (e)
+                return e;
+            const i = null === (h = document.querySelector('meta[property="cdn-map-assets-url"]')) || void 0 === h ? void 0 : h.getAttribute('content');
+            return void 0 !== i && '$CDN_MAP_ASSETS_URL' !== i ? (e = i, e) : '';
         })();
-        return _m.startsWith('/assets/map') ? `${ f }${ _m }` : `${ f }/assets/map/${ _m }`;
+        return a.startsWith('/assets/map') ? `${ g }${ a }` : `${ g }/assets/map/${ a }`;
     };
-}), a.register('XZe6/', function(b, c) {
-    _m(b.exports, 'AnimatePresence', function() {
-        return _l;
+}), b.register('TixUC', function(c, d) {
+    a(c.exports, 'AnimatePresence', function() {
+        return _m;
     });
-    var d = a('LEQ5w'),
-        e = (d = a('LEQ5w'), a('v3o9Z')),
-        f = a('u6iOF'),
-        g = a('zJSm3'),
-        h = a('OelFa'),
-        i = a('wiv5g'),
-        j = a('6qem0');
-    const k = _m => _m.key || '';
-    const _l = ({
-        children: _m,
-        custom: n,
-        initial: o = !0,
-        onExitComplete: p,
-        exitBeforeEnter: q,
-        presenceAffectsLayout: r = !0,
-        mode: s = 'sync'
+    var e = b('O0Kav'),
+        f = (e = b('O0Kav'), b('1tp/4')),
+        g = b('Tzvpe'),
+        h = b('LLnOp'),
+        i = b('P/tpU'),
+        j = b('FEEJX'),
+        k = b('kGged');
+    const l = a => a.key || '';
+    const _m = ({
+        children: n,
+        custom: o,
+        initial: p = !0,
+        onExitComplete: q,
+        exitBeforeEnter: r,
+        presenceAffectsLayout: s = !0,
+        mode: t = 'sync'
     }) => {
-        q && (s = 'wait');
-        let [t] = (0, e.useForceUpdate)();
-        const u = (0, d.useContext)(h.LayoutGroupContext).forceRender;
-        u && (t = u);
-        const v = (0, f.useIsMounted)(),
-            w = function(x) {
-                const y = [];
-                return d.Children.forEach(x, x => {
-                    (0, d.isValidElement)(x) && y.push(x);
-                }), y;
-            }(_m);
-        let x = w;
-        const y = new Set(),
-            z = (0, d.useRef)(x),
-            A = (0, d.useRef)(new Map()).current,
-            B = (0, d.useRef)(!0);
-        if ((0, i.useIsomorphicLayoutEffect)(() => {
-                B.current = !1,
-                    function(C, D) {
-                        C.forEach(C => {
-                            const E = k(C);
-                            D.set(E, C);
+        r && (t = 'wait');
+        let [u] = (0, f.useForceUpdate)();
+        const v = (0, e.useContext)(i.LayoutGroupContext).forceRender;
+        v && (u = v);
+        const w = (0, g.useIsMounted)(),
+            x = function(y) {
+                const z = [];
+                return e.Children.forEach(y, y => {
+                    (0, e.isValidElement)(y) && z.push(y);
+                }), z;
+            }(n);
+        let y = x;
+        const z = new Set(),
+            A = (0, e.useRef)(y),
+            B = (0, e.useRef)(new Map()).current,
+            C = (0, e.useRef)(!0);
+        if ((0, j.useIsomorphicLayoutEffect)(() => {
+                C.current = !1,
+                    function(D, E) {
+                        D.forEach(D => {
+                            const F = l(D);
+                            E.set(F, D);
                         });
-                    }(w, A), z.current = x;
-            }), (0, j.useUnmountEffect)(() => {
-                B.current = !0, A.clear(), y.clear();
-            }), B.current)
-            return d.createElement(d.Fragment, null, x.map(_m => d.createElement(g.PresenceChild, {
-                key: k(_m),
+                    }(x, B), A.current = y;
+            }), (0, k.useUnmountEffect)(() => {
+                C.current = !0, B.clear(), z.clear();
+            }), C.current)
+            return e.createElement(e.Fragment, null, y.map(n => e.createElement(h.PresenceChild, {
+                key: l(n),
                 isPresent: !0,
-                initial: !!o && void 0,
-                presenceAffectsLayout: r,
-                mode: s
-            }, _m)));
-        x = [...x];
-        const C = z.current.map(k),
-            D = w.map(k),
-            E = C.length;
-        for (let F = 0; F < E; F++) {
-            const G = C[F]; -
-            1 === D.indexOf(G) && y.add(G);
+                initial: !!p && void 0,
+                presenceAffectsLayout: s,
+                mode: t
+            }, n)));
+        y = [...y];
+        const D = A.current.map(l),
+            E = x.map(l),
+            F = D.length;
+        for (let G = 0; G < F; G++) {
+            const H = D[G]; -
+            1 === E.indexOf(H) && z.add(H);
         }
-        return 'wait' === s && y.size && (x = []), y.forEach(F => {
-            if (-1 !== D.indexOf(F))
+        return 'wait' === t && z.size && (y = []), z.forEach(G => {
+            if (-1 !== E.indexOf(G))
                 return;
-            const G = A.get(F);
-            if (!G)
+            const H = B.get(G);
+            if (!H)
                 return;
-            const H = C.indexOf(F);
-            x.splice(H, 0, d.createElement(g.PresenceChild, {
-                key: k(G),
+            const I = D.indexOf(G);
+            y.splice(I, 0, e.createElement(h.PresenceChild, {
+                key: l(H),
                 isPresent: !1,
                 onExitComplete: () => {
-                    A.delete(F), y.delete(F);
-                    const I = z.current.findIndex(I => I.key === F);
-                    if (z.current.splice(I, 1), !y.size) {
-                        if (z.current = w, !1 === v.current)
+                    B.delete(G), z.delete(G);
+                    const J = A.current.findIndex(J => J.key === G);
+                    if (A.current.splice(J, 1), !z.size) {
+                        if (A.current = x, !1 === w.current)
                             return;
-                        t(), p && p();
+                        u(), q && q();
                     }
                 },
-                custom: n,
-                presenceAffectsLayout: r,
-                mode: s
-            }, G));
-        }), x = x.map(F => {
-            const G = F.key;
-            return y.has(G) ? F : d.createElement(g.PresenceChild, {
-                key: k(F),
+                custom: o,
+                presenceAffectsLayout: s,
+                mode: t
+            }, H));
+        }), y = y.map(G => {
+            const H = G.key;
+            return z.has(H) ? G : e.createElement(h.PresenceChild, {
+                key: l(G),
                 isPresent: !0,
-                presenceAffectsLayout: r,
-                mode: s
-            }, F);
-        }), d.createElement(d.Fragment, null, y.size ? x : x.map(F => (0, d.cloneElement)(F)));
+                presenceAffectsLayout: s,
+                mode: t
+            }, G);
+        }), e.createElement(e.Fragment, null, z.size ? y : y.map(G => (0, e.cloneElement)(G)));
     };
-}), a.register('v3o9Z', function(b, c) {
-    _h(b.exports, 'useForceUpdate', function() {
-        return _g;
-    });
-    var d = a('bGU5Z'),
-        e = a('LEQ5w'),
-        f = a('u6iOF');
-
-    function _g() {
-        const _h = (0, f.useIsMounted)(),
-            [i, j] = (0, e.useState)(0),
-            k = (0, e.useCallback)(() => {
-                _h.current && j(i + 1);
-            }, [i]);
-        return [
-            (0, e.useCallback)(() => d.sync.postRender(k), [k]),
-            i
-        ];
-    }
-}), a.register('u6iOF', function(b, c) {
-    _g(b.exports, 'useIsMounted', function() {
-        return _f;
-    });
-    var d = a('LEQ5w'),
-        e = a('wiv5g');
-
-    function _f() {
-        const _g = (0, d.useRef)(!1);
-        return (0, e.useIsomorphicLayoutEffect)(() => (_g.current = !0, () => {
-            _g.current = !1;
-        }), []), _g;
-    }
-}), a.register('zJSm3', function(b, c) {
-    _i(b.exports, 'PresenceChild', function() {
+}), b.register('1tp/4', function(c, d) {
+    a(c.exports, 'useForceUpdate', function() {
         return _h;
     });
-    var d = a('LEQ5w'),
-        e = (d = a('LEQ5w'), a('iTk+S')),
-        f = a('mk5EJ'),
-        g = a('r3Dbr');
-    const _h = ({
-        children: _i,
-        initial: j,
-        isPresent: k,
-        onExitComplete: l,
-        custom: m,
-        presenceAffectsLayout: n,
-        mode: o
+    var e = b('yVkz9'),
+        f = b('O0Kav'),
+        g = b('Tzvpe');
+
+    function _h() {
+        const i = (0, g.useIsMounted)(),
+            [j, k] = (0, f.useState)(0),
+            l = (0, f.useCallback)(() => {
+                i.current && k(j + 1);
+            }, [j]);
+        return [
+            (0, f.useCallback)(() => e.sync.postRender(l), [l]),
+            j
+        ];
+    }
+}), b.register('Tzvpe', function(c, d) {
+    a(c.exports, 'useIsMounted', function() {
+        return _g;
+    });
+    var e = b('O0Kav'),
+        f = b('FEEJX');
+
+    function _g() {
+        const h = (0, e.useRef)(!1);
+        return (0, f.useIsomorphicLayoutEffect)(() => (h.current = !0, () => {
+            h.current = !1;
+        }), []), h;
+    }
+}), b.register('LLnOp', function(c, d) {
+    a(c.exports, 'PresenceChild', function() {
+        return _i;
+    });
+    var e = b('O0Kav'),
+        f = (e = b('O0Kav'), b('8y9OL')),
+        g = b('lnHFO'),
+        h = b('YjRQH');
+    const _i = ({
+        children: j,
+        initial: k,
+        isPresent: l,
+        onExitComplete: m,
+        custom: n,
+        presenceAffectsLayout: o,
+        mode: p
     }) => {
-        const p = (0, f.useConstant)(_p),
-            q = (0, d.useId)(),
-            r = (0, d.useMemo)(() => ({
-                id: q,
-                initial: j,
-                isPresent: k,
-                custom: m,
-                onExitComplete: _i => {
-                    p.set(_i, !0);
-                    for (const s of p.values())
-                        if (!s)
+        const q = (0, g.useConstant)(_q),
+            r = (0, e.useId)(),
+            s = (0, e.useMemo)(() => ({
+                id: r,
+                initial: k,
+                isPresent: l,
+                custom: n,
+                onExitComplete: j => {
+                    q.set(j, !0);
+                    for (const t of q.values())
+                        if (!t)
                             return;
-                    l && l();
+                    m && m();
                 },
-                register: _i => (p.set(_i, !1), () => p.delete(_i))
-            }), n ? void 0 : [k]);
-        return (0, d.useMemo)(() => {
-            p.forEach((_i, j) => p.set(j, !1));
-        }, [k]), d.useEffect(() => {
-            !k && !p.size && l && l();
-        }, [k]), 'popLayout' === o && (_i = d.createElement(g.PopChild, {
-            isPresent: k
-        }, _i)), d.createElement(e.PresenceContext.Provider, {
-            value: r
-        }, _i);
+                register: j => (q.set(j, !1), () => q.delete(j))
+            }), o ? void 0 : [l]);
+        return (0, e.useMemo)(() => {
+            q.forEach((j, k) => q.set(k, !1));
+        }, [l]), e.useEffect(() => {
+            !l && !q.size && m && m();
+        }, [l]), 'popLayout' === p && (j = e.createElement(h.PopChild, {
+            isPresent: l
+        }, j)), e.createElement(f.PresenceContext.Provider, {
+            value: s
+        }, j);
     };
 
-    function _p() {
+    function _q() {
         return new Map();
     }
-}), a.register('r3Dbr', function(b, c) {
-    _f(b.exports, 'PopChild', function() {
-        return _f;
+}), b.register('YjRQH', function(c, d) {
+    a(c.exports, 'PopChild', function() {
+        return _g;
     });
-    var d = a('LEQ5w');
-    d = a('LEQ5w');
-    class e extends d.Component {
-        getSnapshotBeforeUpdate(_f) {
-            const g = this.props.childRef.current;
-            if (g && _f.isPresent && !this.props.isPresent) {
-                const h = this.props.sizeRef.current;
-                h.height = g.offsetHeight || 0, h.width = g.offsetWidth || 0, h.top = g.offsetTop, h.left = g.offsetLeft;
+    var e = b('O0Kav');
+    e = b('O0Kav');
+    class f extends e.Component {
+        getSnapshotBeforeUpdate(g) {
+            const h = this.props.childRef.current;
+            if (h && g.isPresent && !this.props.isPresent) {
+                const i = this.props.sizeRef.current;
+                i.height = h.offsetHeight || 0, i.width = h.offsetWidth || 0, i.top = h.offsetTop, i.left = h.offsetLeft;
             }
             return null;
         }
@@ -317,91 +317,91 @@ a.register('5cFKR', function(b, c) {
         }
     }
 
-    function _f({
-        children: g,
-        isPresent: h
+    function _g({
+        children: h,
+        isPresent: i
     }) {
-        const i = (0, d.useId)(),
-            j = (0, d.useRef)(null),
-            k = (0, d.useRef)({
+        const j = (0, e.useId)(),
+            k = (0, e.useRef)(null),
+            l = (0, e.useRef)({
                 width: 0,
                 height: 0,
                 top: 0,
                 left: 0
             });
-        return (0, d.useInsertionEffect)(() => {
+        return (0, e.useInsertionEffect)(() => {
             const {
-                width: l,
-                height: m,
-                top: n,
-                left: o
-            } = k.current;
-            if (h || !j.current || !l || !m)
+                width: m,
+                height: n,
+                top: o,
+                left: p
+            } = l.current;
+            if (i || !k.current || !m || !n)
                 return;
-            j.current.dataset.motionPopId = i;
-            const p = document.createElement('style');
-            return document.head.appendChild(p), p.sheet && p.sheet.insertRule(`\n          [data-motion-pop-id="${ i }"] {\n            position: absolute !important;\n            width: ${ l }px !important;\n            height: ${ m }px !important;\n            top: ${ n }px !important;\n            left: ${ o }px !important;\n          }\n        `), () => {
-                document.head.removeChild(p);
+            k.current.dataset.motionPopId = j;
+            const q = document.createElement('style');
+            return document.head.appendChild(q), q.sheet && q.sheet.insertRule(`\n          [data-motion-pop-id="${ j }"] {\n            position: absolute !important;\n            width: ${ m }px !important;\n            height: ${ n }px !important;\n            top: ${ o }px !important;\n            left: ${ p }px !important;\n          }\n        `), () => {
+                document.head.removeChild(q);
             };
-        }, [h]), d.createElement(e, {
-            isPresent: h,
-            childRef: j,
-            sizeRef: k
-        }, d.cloneElement(g, {
-            ref: j
+        }, [i]), e.createElement(f, {
+            isPresent: i,
+            childRef: k,
+            sizeRef: l
+        }, e.cloneElement(h, {
+            ref: k
         }));
     }
-}), a.register('kOROi', function(b, c) {
-    _f(b.exports, 'useTimeoutWhen', function() {
-        return _e;
+}), b.register('6TqRT', function(c, d) {
+    a(c.exports, 'useTimeoutWhen', function() {
+        return _f;
     });
-    var d = a('LEQ5w');
+    var e = b('O0Kav');
 
-    function _e(_f, g, h) {
-        void 0 === g && (g = 0), void 0 === h && (h = !0);
-        var i = (0, d.useRef)();
+    function _f(g, h, i) {
+        void 0 === h && (h = 0), void 0 === i && (i = !0);
+        var j = (0, e.useRef)();
 
-        function j() {
-            i.current && i.current();
+        function k() {
+            j.current && j.current();
         }
-        (0, d.useEffect)(function() {
-            i.current = _f;
-        }), (0, d.useEffect)(function() {
-            if (h) {
+        (0, e.useEffect)(function() {
+            j.current = g;
+        }), (0, e.useEffect)(function() {
+            if (i) {
                 if ('undefined' != typeof window) {
-                    var j = window.setTimeout(_e, g);
+                    var l = window.setTimeout(k, h);
                     return function() {
-                        window.clearTimeout(j);
+                        window.clearTimeout(l);
                     };
                 }
                 console.warn('useTimeoutWhen: window is undefined.');
             }
-        }, [h]);
+        }, [i]);
     }
-}), a.register('gk6FN', function(b, c) {
-    _i(b.exports, 'useMotionValue', function() {
-        return _h;
+}), b.register('P6MZO', function(c, d) {
+    a(c.exports, 'useMotionValue', function() {
+        return _i;
     });
-    var d = a('LEQ5w'),
-        e = a('dssd5'),
-        f = a('v1rLj'),
-        g = a('mk5EJ');
+    var e = b('O0Kav'),
+        f = b('EErEc'),
+        g = b('gqmh2'),
+        h = b('lnHFO');
 
-    function _h(_i) {
-        const j = (0, g.useConstant)(() => (0, e.motionValue)(_i)),
+    function _i(j) {
+        const k = (0, h.useConstant)(() => (0, f.motionValue)(j)),
             {
-                isStatic: k
-            } = (0, d.useContext)(f.MotionConfigContext);
-        if (k) {
-            const [, l] = (0, d.useState)(_i);
-            (0, d.useEffect)(() => j.on('change', l), []);
+                isStatic: l
+            } = (0, e.useContext)(g.MotionConfigContext);
+        if (l) {
+            const [, m] = (0, e.useState)(j);
+            (0, e.useEffect)(() => k.on('change', m), []);
         }
-        return j;
+        return k;
     }
-}), a.register('CO72t', function(b, c) {
-    b.exports = function(d) {
-        return d && d.__esModule ? d : {
-            default: d
+}), b.register('C0gCp', function(c, d) {
+    c.exports = function(e) {
+        return e && e.__esModule ? e : {
+            default: e
         };
     };
 });

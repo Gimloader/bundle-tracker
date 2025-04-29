@@ -7,182 +7,182 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('eY0+T', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('xgS1i', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _F(b.exports, 'default', function() {
-        return _F;
+    }), a(d.exports, 'default', function() {
+        return _H;
     });
-    var e = a('1bFPu'),
-        f = a('I35Ay'),
-        g = a('tugRC'),
-        h = a('/pbxo'),
-        i = a('8s38Y'),
-        j = a('lChtH'),
-        k = a('Oa9wC'),
-        l = a('BClWR'),
-        m = a('jL4lN'),
-        n = a('jCQEZ'),
-        o = a('plbfj'),
-        p = a('H7lwa'),
-        q = a('82DGx'),
-        r = a('evF5h'),
-        s = a('H9OuP'),
-        t = a('Jfada'),
-        u = a('2Xvuf'),
-        v = a('07pQo'),
-        w = a('1f1YX'),
-        x = a('D5xLI'),
-        y = a('vfR2b'),
-        z = a('A2dXl'),
-        A = a('2KeuO'),
-        B = a('9tz3H'),
-        C = a('R2Ucl10'),
-        D = a('IFO6W13');
-    class E extends f.default {
+    var g = c('s/YA9'),
+        h = c('ltxDW'),
+        i = c('iH+cr'),
+        j = c('UkCpC'),
+        k = c('3Fknw'),
+        l = c('ndxRd'),
+        m = c('colFa'),
+        n = c('0EMo0'),
+        o = c('X7kIM'),
+        p = c('omrib'),
+        q = c('K2ru3'),
+        r = c('QyPlq'),
+        s = c('TkEMW'),
+        t = c('pMcSb'),
+        u = c('QwL62'),
+        v = c('5Fjxs'),
+        w = c('UaUBz0'),
+        x = c('3jaMj'),
+        y = c('CbU7r'),
+        z = c('heTaO'),
+        A = c('lnsH90'),
+        B = c('GpPqI'),
+        C = c('56Ofo'),
+        D = c('hycyg'),
+        E = c('uc4mA17'),
+        F = c('u/WlI21');
+    class G extends h.default {
         addFullLook() {
             this.boundingBox.setHardcoded({
                 width: this.options.width,
                 height: this.options.height
-            }), this.wirePoints.setBoth(this.x, this.y - this.options.height / 2 + 20), (0, m.AddMachineBody)(this), this.isPreview || ((0, n.AddColliders)(this), this.options.grantAction === g.GrantAction.broadcastOnChannel ? this.options.grantedItemImageUrl && (this.grantedImage = (0, o.AddImageFromUrl)(this)) : this.grantedImage = (0, p.AddItemImage)(this, this.options.grantedItemId, Math.min(i.Consts.ITEM_MAX_SIZE, 0.7 * this.options.width), Math.min(i.Consts.ITEM_MAX_SIZE, 0.5 * this.options.height - i.Consts.PRICE_HEIGHT), (0, l.GetDepthChange)(this, i.Depths.GRANTED_ITEM)), (0, k.AddPriceElement)(this), (0, j.AddRays)(this), (0, r.InitColors)(this));
+            }), this.wirePoints.setBoth(this.x, this.y - this.options.height / 2 + 20), (0, o.AddMachineBody)(this), this.isPreview || ((0, p.AddColliders)(this), this.options.grantAction === i.GrantAction.broadcastOnChannel ? this.options.grantedItemImageUrl && (this.grantedImage = (0, q.AddImageFromUrl)(this)) : this.grantedImage = (0, r.AddItemImage)(this, this.options.grantedItemId, Math.min(k.Consts.ITEM_MAX_SIZE, 0.7 * this.options.width), Math.min(k.Consts.ITEM_MAX_SIZE, 0.5 * this.options.height - k.Consts.PRICE_HEIGHT), (0, n.GetDepthChange)(this, k.Depths.GRANTED_ITEM)), (0, m.AddPriceElement)(this), (0, l.AddRays)(this), (0, t.InitColors)(this));
         }
         addIconLook() {
-            this.parts.add.sprite(q.IconAsset).view.setScale(0.25);
+            this.parts.add.sprite(s.IconAsset).view.setScale(0.25);
         }
         updateFontSize() {
             if (!this.priceText)
                 return;
-            const _F = this.priceText.view.text.length,
-                G = 0.85 * this.options.width;
-            let H = i.Consts.PRICE_TEXT_SIZE,
-                I = _F * H;
-            const J = () => {
-                I > G && (H -= 1, I = _F * H, J());
+            const H = this.priceText.view.text.length,
+                I = 0.85 * this.options.width;
+            let J = k.Consts.PRICE_TEXT_SIZE,
+                K = H * J;
+            const L = () => {
+                K > I && (J -= 1, K = H * J, L());
             };
-            J();
-            const K = (0, x.default)().cameraHelper.zoom,
-                L = H * K;
-            this.priceText.view.setFontSize(L), this.priceText.view.setScale(1 / K);
-            const M = (0, y.TextPadding)();
-            this.priceText.view.setPadding(M, M, M, M);
+            L();
+            const M = (0, z.default)().cameraHelper.zoom,
+                N = J * M;
+            this.priceText.view.setFontSize(N), this.priceText.view.setScale(1 / M);
+            const O = (0, A.TextPadding)();
+            this.priceText.view.setPadding(O, O, O, O);
         }
-        constructor(F) {
-            super(F), (0, e.default)(this, 'grayScalePipelines', []), (0, e.default)(this, 'grayScaleFactor', 0), (0, e.default)(this, 'animationSpeedFactor', 1), (0, e.default)(this, 'rays', []), (0, e.default)(this, 'cumulTime', 0), (0, e.default)(this, 'currentRaysAngle', 0), (0, e.default)(this, 'onUpdate', F => {
+        constructor(H) {
+            super(H), (0, g.default)(this, 'grayScalePipelines', []), (0, g.default)(this, 'grayScaleFactor', 0), (0, g.default)(this, 'animationSpeedFactor', 1), (0, g.default)(this, 'rays', []), (0, g.default)(this, 'cumulTime', 0), (0, g.default)(this, 'currentRaysAngle', 0), (0, g.default)(this, 'onUpdate', H => {
                 if (this.cull.isInsideView) {
-                    if (this.currentRaysAngle += F / 10000 * this.animationSpeedFactor, this.rays.forEach((F, b) => {
-                            (0, j.UpdateRay)(this, F, b);
+                    if (this.currentRaysAngle += H / 10000 * this.animationSpeedFactor, this.rays.forEach((H, d) => {
+                            (0, l.UpdateRay)(this, H, d);
                         }), this.grantedImage && this.grantedImage.view) {
-                        this.cumulTime += F;
-                        const G = this.y - i.Consts.LEGS_HEIGHT / 2,
-                            H = 5;
-                        this.grantedImage.view.y = G + this.animationSpeedFactor * Math.sin(this.cumulTime / 550) * H;
+                        this.cumulTime += H;
+                        const I = this.y - k.Consts.LEGS_HEIGHT / 2,
+                            J = 5;
+                        this.grantedImage.view.y = I + this.animationSpeedFactor * Math.sin(this.cumulTime / 550) * J;
                     }
-                    (0, s.UpdateGrayscalePipelines)(this), (0, r.UpdateColors)(this), (0, z.default)(this);
+                    (0, u.UpdateGrayscalePipelines)(this), (0, t.UpdateColors)(this), (0, B.default)(this);
                 }
-            }), (0, e.default)(this, 'onStateChange', F => {
-                'active' === F && (this.state.active ? this.tweens.add({
+            }), (0, g.default)(this, 'onStateChange', H => {
+                'active' === H && (this.state.active ? this.tweens.add({
                     targets: this,
                     grayScaleFactor: 0,
                     animationSpeedFactor: 1,
                     duration: 350
                 }) : (this.grayScaleFactor = Math.max(this.grayScaleFactor, 0.00001), this.tweens.add({
                     targets: this,
-                    grayScaleFactor: i.Consts.INACTIVE_GRAY_SCALE_FACTOR,
-                    animationSpeedFactor: i.Consts.INACTIVE_ANIMATION_SLOW_DOWN,
+                    grayScaleFactor: k.Consts.INACTIVE_GRAY_SCALE_FACTOR,
+                    animationSpeedFactor: k.Consts.INACTIVE_ANIMATION_SLOW_DOWN,
                     duration: 350
-                }))), 'fundedAmount' === F && (0, k.AddPriceElement)(this);
-            }), (0, e.default)(this, 'onMessage', F => {
-                F.key !== g.Messages.purchased && F.key !== g.Messages.funded || F && F.data && F.data.characterId && F.data.characterId === (0, t.default)() && (F.key === g.Messages.purchased && this.options.soundEnabled && (0, v.playSound)({
-                    path: (0, u.default)('devices/vending_machine/purchase.mp3'),
-                    volume: (0, w.getVolume)({
+                }))), 'fundedAmount' === H && (0, m.AddPriceElement)(this);
+            }), (0, g.default)(this, 'onMessage', H => {
+                H.key !== i.Messages.purchased && H.key !== i.Messages.funded || H && H.data && H.data.characterId && H.data.characterId === (0, v.default)() && (H.key === i.Messages.purchased && this.options.soundEnabled && (0, x.playSound)({
+                    path: (0, w.default)('devices/vending_machine/purchase.mp3'),
+                    volume: (0, y.getVolume)({
                         volume: 0.76,
-                        type: w.SoundType.soundEffect
+                        type: y.SoundType.soundEffect
                     })
-                }), F.key === g.Messages.funded && this.options.soundEnabled && (0, v.playSound)({
-                    path: (0, u.default)('devices/vending_machine/fund.mp3'),
-                    volume: (0, w.getVolume)({
+                }), H.key === i.Messages.funded && this.options.soundEnabled && (0, x.playSound)({
+                    path: (0, w.default)('devices/vending_machine/fund.mp3'),
+                    volume: (0, y.getVolume)({
                         volume: 0.8,
-                        type: w.SoundType.soundEffect
+                        type: y.SoundType.soundEffect
                     })
                 }));
-            }), (0, e.default)(this, 'setupVisualEditing', () => {
-                if (!(0, h.InPreGamePhase)() || !(0, B.isSavedVersion)())
+            }), (0, g.default)(this, 'setupVisualEditing', () => {
+                if (!(0, j.InPreGamePhase)() || !(0, D.isSavedVersion)())
                     return;
-                const G = (0, C.FetchOptionSchemaProperty)(this, 'width'),
-                    H = (0, C.FetchOptionSchemaProperty)(this, 'height');
+                const I = (0, E.FetchOptionSchemaProperty)(this, 'width'),
+                    J = (0, E.FetchOptionSchemaProperty)(this, 'height');
                 this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
                     angle: 0,
-                    minWidth: G.min,
-                    maxWidth: G.max,
-                    minHeight: H.min,
-                    maxHeight: H.max,
+                    minWidth: I.min,
+                    maxWidth: I.max,
+                    minHeight: J.min,
+                    maxHeight: J.max,
                     rotable: !1,
                     keepRatio: !1,
-                    onChange: G => {
-                        (0, D.ReplaceVisualEditingPreview)(G.x, G.y, {
-                            width: G.width,
-                            height: G.height
+                    onChange: I => {
+                        (0, F.ReplaceVisualEditingPreview)(I.x, I.y, {
+                            width: I.width,
+                            height: I.height
                         });
                     }
                 });
-            }), (0, e.default)(this, 'setupVisualEditingInvisible', () => {
-                if (!(0, h.InPreGamePhase)() || !(0, B.isSavedVersion)())
+            }), (0, g.default)(this, 'setupVisualEditingInvisible', () => {
+                if (!(0, j.InPreGamePhase)() || !(0, D.isSavedVersion)())
                     return;
-                const G = (0, C.FetchOptionSchemaProperty)(this, 'radius');
+                const I = (0, E.FetchOptionSchemaProperty)(this, 'radius');
                 this.visualEditing.add.circle({
                     radius: this.options.radius,
-                    minRadius: G.min,
-                    maxRadius: G.max,
+                    minRadius: I.min,
+                    maxRadius: I.max,
                     rotable: !1,
                     resizable: !0,
-                    onChange: G => {
-                        (0, D.ReplaceVisualEditingPreview)(G.x, G.y, {
-                            radius: G.radius
+                    onChange: I => {
+                        (0, F.ReplaceVisualEditingPreview)(I.x, I.y, {
+                            radius: I.radius
                         });
                     }
                 });
-            }), (0, h.InPreGamePhase)() && !this.options.activeOnStart && (this.animationSpeedFactor = i.Consts.INACTIVE_ANIMATION_SLOW_DOWN, this.grayScaleFactor = i.Consts.INACTIVE_GRAY_SCALE_FACTOR), (0, h.InGamePhase)() && !this.state.active && (this.animationSpeedFactor = i.Consts.INACTIVE_ANIMATION_SLOW_DOWN, this.grayScaleFactor = i.Consts.INACTIVE_GRAY_SCALE_FACTOR), this.options.visibleInGame ? this.setupVisualEditing() : this.setupVisualEditingInvisible(), (0, A.default)(this), this.options.visibleInGame ? this.options.visibleInGame && this.addFullLook() : (0, h.InPreGamePhase)() && (0, B.isSavedVersion)() ? this.addIconLook() : this.boundingBox.setHardcoded({
+            }), (0, j.InPreGamePhase)() && !this.options.activeOnStart && (this.animationSpeedFactor = k.Consts.INACTIVE_ANIMATION_SLOW_DOWN, this.grayScaleFactor = k.Consts.INACTIVE_GRAY_SCALE_FACTOR), (0, j.InGamePhase)() && !this.state.active && (this.animationSpeedFactor = k.Consts.INACTIVE_ANIMATION_SLOW_DOWN, this.grayScaleFactor = k.Consts.INACTIVE_GRAY_SCALE_FACTOR), this.options.visibleInGame ? this.setupVisualEditing() : this.setupVisualEditingInvisible(), (0, C.default)(this), this.options.visibleInGame ? this.options.visibleInGame && this.addFullLook() : (0, j.InPreGamePhase)() && (0, D.isSavedVersion)() ? this.addIconLook() : this.boundingBox.setHardcoded({
                 width: 2 * this.options.radius,
                 height: 2 * this.options.radius
             });
         }
     }
-    var _F = E;
-}), a.register('tugRC', function(b, c) {
-    let d;
-    var e;
-    _l(b.exports, 'GrantAction', function() {
-        return d;
-    }), _l(b.exports, 'Messages', function() {
-        return _f;
-    }), (e = d || (d = {})).grantItem = 'Grant Item', e.broadcastOnChannel = 'Broadcast On Channel';
-    const _f = {
+    var _H = G;
+}), c.register('iH+cr', function(d, e) {
+    let f;
+    var g;
+    a(d.exports, 'GrantAction', function() {
+        return f;
+    }), a(d.exports, 'Messages', function() {
+        return _h;
+    }), (g = f || (f = {})).grantItem = 'Grant Item', g.broadcastOnChannel = 'Broadcast On Channel';
+    const _h = {
         purchase: 'purchase',
         purchased: 'purchased',
         funded: 'funded'
     };
-}), a.register('8s38Y', function(b, c) {
-    _l(b.exports, 'Consts', function() {
-        return _e;
-    }), _l(b.exports, 'Depths', function() {
-        return _f;
-    }), _l(b.exports, 'REQUIRED_AMOUNT_TEXT_STYLE', function() {
+}), c.register('3Fknw', function(d, e) {
+    a(d.exports, 'Consts', function() {
         return _g;
-    }), _l(b.exports, 'InteractionMessages', function() {
+    }), a(d.exports, 'Depths', function() {
         return _h;
-    }), _l(b.exports, 'GRAYSCALE_COLORS', function() {
+    }), a(d.exports, 'REQUIRED_AMOUNT_TEXT_STYLE', function() {
         return _i;
+    }), a(d.exports, 'InteractionMessages', function() {
+        return _j;
+    }), a(d.exports, 'GRAYSCALE_COLORS', function() {
+        return _k;
     });
-    var d = a('PMl60');
-    const _e = {
+    var f = c('quE27');
+    const _g = {
             FRAME_SCALE: 0.4,
             FRAME_MARGINS_NINE_SLICE: 120,
             LEGS_HEIGHT: 40,
@@ -195,7 +195,7 @@ a.register('eY0+T', function(b, c) {
             RAY_TEXTURE_HEIGHT: 380,
             PRICE_TEXT_SIZE: 24
         },
-        _f = {
+        _h = {
             BG: 1,
             RAYS: 2,
             LEG: 3,
@@ -204,13 +204,13 @@ a.register('eY0+T', function(b, c) {
             GRANTED_ITEM: 6,
             FRAME: 7
         },
-        _g = {
-            fontSize: `${ _e.PRICE_TEXT_SIZE }px`,
+        _i = {
+            fontSize: `${ _g.PRICE_TEXT_SIZE }px`,
             fontFamily: 'Fugaz One'
         },
-        _h = {
-            inStock: _l => ({
-                message: `In Stock (${ _l })`,
+        _j = {
+            inStock: a => ({
+                message: `In Stock (${ a })`,
                 color: '#c8e6c9'
             }),
             notEnoughRequiredItem: {
@@ -226,681 +226,681 @@ a.register('eY0+T', function(b, c) {
                 color: '#ffcdd2'
             },
             fundingStatus: {
-                message: (_l, b, a) => `${ (0, d.numberWithCommas)(_l) }/${ (0, d.numberWithCommas)(b) } ${ a }`
+                message: (a, d, c) => `${ (0, f.numberWithCommas)(a) }/${ (0, f.numberWithCommas)(d) } ${ c }`
             },
             defaultItemName: 'Item',
             purchaseAction: 'to purchase',
             fundingAction: 'to fund'
         },
-        _i = {
+        _k = {
             ray: '#CECECE',
             bg1: '#6A6A6A',
             bg2: '#CECECE'
         };
-}), a.register('lChtH', function(b, c) {
-    _l(b.exports, 'AddRays', function() {
-        return _i;
-    }), _l(b.exports, 'UpdateRay', function() {
-        return _j;
+}), c.register('ndxRd', function(d, e) {
+    a(d.exports, 'AddRays', function() {
+        return _k;
+    }), a(d.exports, 'UpdateRay', function() {
+        return _l;
     });
-    var d = a('h2EGG'),
-        e = a('8s38Y'),
-        f = a('82DGx'),
-        g = (e = a('8s38Y'), a('BClWR')),
-        h = a('evF5h');
-    const _i = _l => {
-            const j = (0, h.GetColors)(_l);
-            for (let k = 0; k < _l.options.numberOfRays; k++)
-                _l.parts.add.sprite({
-                    imageId: f.RayAsset.imageId,
-                    imageUrl: f.RayAsset.imageUrl,
+    var f = c('cNVx1'),
+        g = c('3Fknw'),
+        h = c('TkEMW'),
+        i = (g = c('3Fknw'), c('0EMo0')),
+        j = c('pMcSb');
+    const _k = a => {
+            const l = (0, j.GetColors)(a);
+            for (let m = 0; m < a.options.numberOfRays; m++)
+                a.parts.add.sprite({
+                    imageId: h.RayAsset.imageId,
+                    imageUrl: h.RayAsset.imageUrl,
                     y: -20,
                     originX: 0.5,
                     originY: 1,
                     ignoreInput: !0,
-                    depthChange: (0, g.GetDepthChange)(_l, e.Depths.RAYS),
-                    onReady: c => {
-                        _l.rays.push(c), _j(_l, c, k), c.view.alpha = _l.options.raysAlpha, c.view.blendMode = _l.options.raysAdditive ? 1 : 0, c.view.tint = (0, d.GetNumberFromHexColor)(j.rays), k === _l.options.numberOfRays - 1 && (0, h.UpdateColors)(_l, !0);
+                    depthChange: (0, i.GetDepthChange)(a, g.Depths.RAYS),
+                    onReady: e => {
+                        a.rays.push(e), _l(a, e, m), e.view.alpha = a.options.raysAlpha, e.view.blendMode = a.options.raysAdditive ? 1 : 0, e.view.tint = (0, f.GetNumberFromHexColor)(l.rays), m === a.options.numberOfRays - 1 && (0, j.UpdateColors)(a, !0);
                     }
                 });
         },
-        _j = (_l, b, a) => {
-            const k = a * (2 * Math.PI / _l.options.numberOfRays) + _l.currentRaysAngle;
-            b.view.rotation = k;
-            const l = k,
-                m = Math.atan(19.5 * _l.options.raysWidthFactor / 380),
-                n = _l.options.width / 2,
-                o = (_l.options.height - e.Consts.LEGS_HEIGHT) / 2;
-            const p = Math.min(Math.abs(o / Math.cos(l - m)), Math.abs(n / Math.cos(Math.PI / 2 - l - m)), Math.abs(o / Math.cos(l + m)), Math.abs(n / Math.cos(Math.PI / 2 - l + m))) / 380;
-            b.view.scaleY = p, b.view.scaleX = p * _l.options.raysWidthFactor;
+        _l = (a, d, c) => {
+            const m = c * (2 * Math.PI / a.options.numberOfRays) + a.currentRaysAngle;
+            d.view.rotation = m;
+            const n = m,
+                o = Math.atan(19.5 * a.options.raysWidthFactor / 380),
+                p = a.options.width / 2,
+                q = (a.options.height - g.Consts.LEGS_HEIGHT) / 2;
+            const r = Math.min(Math.abs(q / Math.cos(n - o)), Math.abs(p / Math.cos(Math.PI / 2 - n - o)), Math.abs(q / Math.cos(n + o)), Math.abs(p / Math.cos(Math.PI / 2 - n + o))) / 380;
+            d.view.scaleY = r, d.view.scaleX = r * a.options.raysWidthFactor;
         };
-}), a.register('82DGx', function(b, c) {
-    _l(b.exports, 'BgAAsset', function() {
-        return _e;
-    }), _l(b.exports, 'BgBAsset', function() {
-        return _f;
-    }), _l(b.exports, 'RayAsset', function() {
+}), c.register('TkEMW', function(d, e) {
+    a(d.exports, 'BgAAsset', function() {
         return _g;
-    }), _l(b.exports, 'FrameAsset', function() {
+    }), a(d.exports, 'BgBAsset', function() {
         return _h;
-    }), _l(b.exports, 'LegAsset', function() {
+    }), a(d.exports, 'RayAsset', function() {
         return _i;
-    }), _l(b.exports, 'InfoAsset', function() {
+    }), a(d.exports, 'FrameAsset', function() {
         return _j;
-    }), _l(b.exports, 'IconAsset', function() {
+    }), a(d.exports, 'LegAsset', function() {
         return _k;
+    }), a(d.exports, 'InfoAsset', function() {
+        return _l;
+    }), a(d.exports, 'IconAsset', function() {
+        return _m;
     });
-    var d = a('2Xvuf');
-    const _e = {
+    var f = c('UaUBz0');
+    const _g = {
             imageId: 'vending_machine_bg_a',
-            imageUrl: (0, d.default)('devices/vending_machine/bg_a.png')
+            imageUrl: (0, f.default)('devices/vending_machine/bg_a.png')
         },
-        _f = {
-            imageId: 'vending_machine_bg_b',
-            imageUrl: (0, d.default)('devices/vending_machine/bg_b.png')
-        },
-        _g = ((0, d.default)('devices/vending_machine/rays.png'), {
-            imageId: 'vending_machine_ray',
-            imageUrl: (0, d.default)('devices/vending_machine/ray.png')
-        }),
         _h = {
-            imageId: 'vending_machine_frame',
-            imageUrl: (0, d.default)('devices/vending_machine/frame.png')
+            imageId: 'vending_machine_bg_b',
+            imageUrl: (0, f.default)('devices/vending_machine/bg_b.png')
         },
-        _i = {
-            imageId: 'vending_machine_leg',
-            imageUrl: (0, d.default)('devices/vending_machine/leg.png')
-        },
+        _i = ((0, f.default)('devices/vending_machine/rays.png'), {
+            imageId: 'vending_machine_ray',
+            imageUrl: (0, f.default)('devices/vending_machine/ray.png')
+        }),
         _j = {
-            imageId: 'vending_machine_info',
-            imageUrl: (0, d.default)('devices/vending_machine/info.png')
+            imageId: 'vending_machine_frame',
+            imageUrl: (0, f.default)('devices/vending_machine/frame.png')
         },
         _k = {
+            imageId: 'vending_machine_leg',
+            imageUrl: (0, f.default)('devices/vending_machine/leg.png')
+        },
+        _l = {
+            imageId: 'vending_machine_info',
+            imageUrl: (0, f.default)('devices/vending_machine/info.png')
+        },
+        _m = {
             imageId: 'vending_machine_icon',
-            imageUrl: (0, d.default)('devices/vending_machine/previewIcon.png')
+            imageUrl: (0, f.default)('devices/vending_machine/previewIcon.png')
         };
-    (0, d.default)('devices/item_granter/question-mark-2.png');
-}), a.register('BClWR', function(b, c) {
-    _l(b.exports, 'GetDepthChange', function() {
-        return _e;
+    (0, f.default)('devices/item_granter/question-mark-2.png');
+}), c.register('0EMo0', function(d, e) {
+    a(d.exports, 'GetDepthChange', function() {
+        return _g;
     });
-    var d = a('5CmLs');
-    const _e = (_l, b) => _l.options.height / 2 + (0, d.default)(b);
-}), a.register('evF5h', function(b, c) {
-    _l(b.exports, 'GetColors', function() {
-        return _m;
-    }), _l(b.exports, 'InitColors', function() {
-        return _n;
-    }), _l(b.exports, 'UpdateColors', function() {
+    var f = c('H4eGM');
+    const _g = (a, d) => a.options.height / 2 + (0, f.default)(d);
+}), c.register('pMcSb', function(d, e) {
+    a(d.exports, 'GetColors', function() {
         return _o;
+    }), a(d.exports, 'InitColors', function() {
+        return _p;
+    }), a(d.exports, 'UpdateColors', function() {
+        return _q;
     });
-    var d = a('SBJDo'),
-        e = a('kc9WN'),
-        f = a('h2EGG'),
-        g = a('exB2i'),
-        h = a('GT7Vh'),
-        i = a('8s38Y'),
-        j = a('tugRC');
-    const k = (_l, b) => {
-            const l = Phaser.Display.Color.HexStringToColor(_l);
+    var f = c('BYiVP'),
+        g = c('4eTy+'),
+        h = c('cNVx1'),
+        i = c('OsQuU'),
+        j = c('SAYZy'),
+        k = c('3Fknw'),
+        l = c('iH+cr');
+    const m = (a, d) => {
+            const n = Phaser.Display.Color.HexStringToColor(a);
             return {
-                grayscale: Phaser.Display.Color.HexStringToColor(b),
-                color: l
+                grayscale: Phaser.Display.Color.HexStringToColor(d),
+                color: n
             };
         },
-        l = (_l, b) => {
-            const m = {
-                red: Math.round(Phaser.Math.Linear(_l.color.red, _l.grayscale.red, b)),
-                green: Math.round(Phaser.Math.Linear(_l.color.green, _l.grayscale.green, b)),
-                blue: Math.round(Phaser.Math.Linear(_l.color.blue, _l.grayscale.blue, b))
+        n = (a, d) => {
+            const o = {
+                red: Math.round(Phaser.Math.Linear(a.color.red, a.grayscale.red, d)),
+                green: Math.round(Phaser.Math.Linear(a.color.green, a.grayscale.green, d)),
+                blue: Math.round(Phaser.Math.Linear(a.color.blue, a.grayscale.blue, d))
             };
-            return (0, f.GetNumberFromHexColor)((0, h.rgbToColorString)(m));
+            return (0, h.GetNumberFromHexColor)((0, j.rgbToColorString)(o));
         },
-        _m = _l => {
-            if (_l.options.grantAction === j.GrantAction.grantItem && _l.options.matchItemRarity) {
-                const n = (0, g.FetchItemOption)(_l.options.grantedItemId);
-                var o;
-                const p = null !== (o = null == n ? void 0 : n.rarity) && void 0 !== o ? o : e.InventoryItemRarity.common,
-                    q = d.InventoryRarityColorsHex[p];
+        _o = a => {
+            if (a.options.grantAction === l.GrantAction.grantItem && a.options.matchItemRarity) {
+                const p = (0, i.FetchItemOption)(a.options.grantedItemId);
+                var q;
+                const r = null !== (q = null == p ? void 0 : p.rarity) && void 0 !== q ? q : g.InventoryItemRarity.common,
+                    s = f.InventoryRarityColorsHex[r];
                 return {
-                    rays: q.a,
-                    bg1: q.b,
-                    bg2: q.a
+                    rays: s.a,
+                    bg1: s.b,
+                    bg2: s.a
                 };
             }
             return {
-                rays: _l.options.raysColor,
-                bg1: _l.options.backgroundColor1,
-                bg2: _l.options.backgroundColor2
+                rays: a.options.raysColor,
+                bg1: a.options.backgroundColor1,
+                bg2: a.options.backgroundColor2
             };
         },
-        _n = _l => {
-            const o = _m(_l);
-            _l.raysGrayscale = k(o.rays, i.GRAYSCALE_COLORS.ray), _l.bg1Grayscale = k(o.bg1, i.GRAYSCALE_COLORS.bg1), _l.bg2Grayscale = k(o.bg2, i.GRAYSCALE_COLORS.bg2);
+        _p = a => {
+            const q = _o(a);
+            a.raysGrayscale = m(q.rays, k.GRAYSCALE_COLORS.ray), a.bg1Grayscale = m(q.bg1, k.GRAYSCALE_COLORS.bg1), a.bg2Grayscale = m(q.bg2, k.GRAYSCALE_COLORS.bg2);
         },
-        _o = (_l, p = !1) => {
-            var q, r, s, t;
-            if (_l.lastGrayscaleFactorUpdate === _l.grayScaleFactor && !p)
+        _q = (a, r = !1) => {
+            var s, t, u, v;
+            if (a.lastGrayscaleFactorUpdate === a.grayScaleFactor && !r)
                 return;
-            _l.lastGrayscaleFactorUpdate = _l.grayScaleFactor, _l.raysGrayscale || _n(_l);
-            const u = l(_l.raysGrayscale, _l.grayScaleFactor),
-                v = l(_l.bg1Grayscale, _l.grayScaleFactor),
-                w = l(_l.bg2Grayscale, _l.grayScaleFactor);
-            _l.rays.forEach(_l => {
-                _l.view.tint = u;
-            }), null === (q = _l.bg1) || void 0 === q || null === (r = q.view) || void 0 === r || r.setTint(v), null === (s = _l.bg2) || void 0 === s || null === (t = s.view) || void 0 === t || t.setTint(w);
+            a.lastGrayscaleFactorUpdate = a.grayScaleFactor, a.raysGrayscale || _p(a);
+            const w = n(a.raysGrayscale, a.grayScaleFactor),
+                x = n(a.bg1Grayscale, a.grayScaleFactor),
+                y = n(a.bg2Grayscale, a.grayScaleFactor);
+            a.rays.forEach(a => {
+                a.view.tint = w;
+            }), null === (s = a.bg1) || void 0 === s || null === (t = s.view) || void 0 === t || t.setTint(x), null === (u = a.bg2) || void 0 === u || null === (v = u.view) || void 0 === v || v.setTint(y);
         };
-}), a.register('Oa9wC', function(b, c) {
-    _l(b.exports, 'AddPriceElement', function() {
-        return _j;
+}), c.register('colFa', function(d, e) {
+    a(d.exports, 'AddPriceElement', function() {
+        return _l;
     });
-    var d = a('8s38Y'),
-        e = a('82DGx'),
-        f = (d = a('8s38Y'), a('BClWR')),
-        g = a('H7lwa'),
-        h = a('sCbH9'),
-        i = a('dxggN');
-    const _j = _l => {
-        if (!_l.options.visibleInGame)
+    var f = c('3Fknw'),
+        g = c('TkEMW'),
+        h = (f = c('3Fknw'), c('0EMo0')),
+        i = c('QyPlq'),
+        j = c('bMaPZ2'),
+        k = c('UgeNz');
+    const _l = a => {
+        if (!a.options.visibleInGame)
             return;
-        const k = _l.options.height / 2 - 90;
-        _l.priceAreaInfoRectangle || (_l.priceAreaInfoRectangle = _l.parts.add.sprite({
-            ...e.InfoAsset,
-            y: k,
-            depthChange: (0, f.GetDepthChange)(_l, d.Depths.INFO_BG)
-        })), (0, h.default)({
-            familyName: d.REQUIRED_AMOUNT_TEXT_STYLE.fontFamily,
+        const m = a.options.height / 2 - 90;
+        a.priceAreaInfoRectangle || (a.priceAreaInfoRectangle = a.parts.add.sprite({
+            ...g.InfoAsset,
+            y: m,
+            depthChange: (0, h.GetDepthChange)(a, f.Depths.INFO_BG)
+        })), (0, j.default)({
+            familyName: f.REQUIRED_AMOUNT_TEXT_STYLE.fontFamily,
             onLoad: () => {
-                const l = (0, i.default)(_l);
-                if (_l.priceText)
-                    _l.priceText.view.setText(l);
+                const n = (0, k.default)(a);
+                if (a.priceText)
+                    a.priceText.view.setText(n);
                 else {
-                    const m = _l.parts.add.text({
-                        text: (0, i.default)(_l),
-                        y: k,
-                        depthChange: (0, f.GetDepthChange)(_l, d.Depths.INFO),
-                        textStyle: d.REQUIRED_AMOUNT_TEXT_STYLE
+                    const o = a.parts.add.text({
+                        text: (0, k.default)(a),
+                        y: m,
+                        depthChange: (0, h.GetDepthChange)(a, f.Depths.INFO),
+                        textStyle: f.REQUIRED_AMOUNT_TEXT_STYLE
                     });
-                    _l.priceText = m;
+                    a.priceText = o;
                 }
-                _l.updateFontSize();
-                const m = d.Consts.REQUIRED_ITEM_MAX_SIZE,
-                    n = l => {
-                        l.view.y = _l.y + k;
-                        const o = _l.priceText.getBounds().width,
-                            p = m + o + 7;
-                        l.view.x = -p / 2 + m / 2 + _l.x, _l.priceText.view.x = p / 2 - o / 2 + _l.x;
+                a.updateFontSize();
+                const o = f.Consts.REQUIRED_ITEM_MAX_SIZE,
+                    p = n => {
+                        n.view.y = a.y + m;
+                        const q = a.priceText.getBounds().width,
+                            r = o + q + 7;
+                        n.view.x = -r / 2 + o / 2 + a.x, a.priceText.view.x = r / 2 - q / 2 + a.x;
                     };
-                _l.requiredImage ? n(_l.requiredImage) : _l.requiredImage = (0, g.AddItemImage)(_l, _l.options.requiredItemId, m, 0.8 * d.Consts.PRICE_HEIGHT, d.Depths.INFO, _l => {
-                    n(_l);
+                a.requiredImage ? p(a.requiredImage) : a.requiredImage = (0, i.AddItemImage)(a, a.options.requiredItemId, o, 0.8 * f.Consts.PRICE_HEIGHT, f.Depths.INFO, a => {
+                    p(a);
                 });
             }
         });
     };
-}), a.register('H7lwa', function(b, c) {
-    _l(b.exports, 'AddItemImage', function() {
-        return _j;
-    });
-    var d = a('iWivW'),
-        e = a('1Chka'),
-        f = a('AVLqL'),
-        g = a('2M6xn'),
-        h = a('BClWR'),
-        i = a('H9OuP');
-    const _j = (_l, b, a, c, _j, _o) => {
-        const k = {
-            ...g.UnknownItemAsset
-        };
-        if (b) {
-            const _l = d.default.worldOptions.itemOptions.find(_l => _l.id === b);
-            _l && (k.imageId = _l.id, k.imageUrl = _l.previewImage);
-        }
-        const l = (0, e.default)(k.imageId),
-            m = (0, f.default)({
-                height: l.height,
-                width: l.width,
-                newWidth: c,
-                newHeight: a
-            });
-        return e.parts.add.sprite({
-            imageId: k.imageId,
-            imageUrl: k.imageUrl,
-            depthChange: (0, h.GetDepthChange)(e, _j),
-            displayWidth: m.width,
-            displayHeight: m.height,
-            onReady: b => {
-                e.grayScaleFactor > 0 && (0, i.AddGrayscalePipeline)(e, b), _o && _o(b);
-            }
-        });
-    };
-}), a.register('2M6xn', function(b, c) {
-    e(b.exports, 'BaseAsset', function() {
-        return _e;
-    }), e(b.exports, 'UnknownItemAsset', function() {
-        return _f;
-    });
-    var d = a('2Xvuf');
-    const _e = {
-            imageId: (0, d.default)('devices/item_granter/base.png'),
-            imageUrl: (0, d.default)('devices/item_granter/base.png')
-        },
-        _f = {
-            imageId: '__UNKNOWN_ITEM',
-            imageUrl: (0, d.default)('devices/item_granter/question-mark-2.png')
-        };
-}), a.register('H9OuP', function(b, c) {
-    e(b.exports, 'AddGrayscalePipeline', function() {
-        return _d;
-    }), e(b.exports, 'UpdateGrayscalePipelines', function() {
-        return _f;
-    });
-    const _d = (e, b) => {
-            e.grayScalePipelines.push(e.scene.plugins.get('rexGrayScalePipeline').add(b.view, {
-                intensity: e.grayScaleFactor
-            }));
-        },
-        e = (e, b) => {
-            e.scene.plugins.get('rexGrayScalePipeline').remove(b.view);
-        },
-        _f = e => {
-            e.grayScaleFactor > 0 ? ((e => {
-                var g, h;
-                e.grayScalePipelines.length > 0 || ((null === (g = e.requiredImage) || void 0 === g ? void 0 : g.view) && _d(e, e.requiredImage), (null === (h = e.grantedImage) || void 0 === h ? void 0 : h.view) && _d(e, e.grantedImage));
-            })(e), e.grayScalePipelines.forEach(b => {
-                b.intensity = e.grayScaleFactor;
-            })) : (e => {
-                var g, h;
-                0 !== e.grayScalePipelines.length && ((null === (g = e.requiredImage) || void 0 === g ? void 0 : g.view) && e(e, e.requiredImage), (null === (h = e.grantedImage) || void 0 === h ? void 0 : h.view) && e(e, e.grantedImage), e.grayScalePipelines = []);
-            })(e);
-        };
-}), a.register('sCbH9', function(b, c) {
-    e(b.exports, 'isGoogleFontLoaded', function() {
-        return _f;
-    }), e(b.exports, 'default', function() {
-        return _g;
-    });
-    var d = a('ARAVZ');
-    const e = [],
-        _f = e => e.includes(e);
-    var _g = e => {
-        const {
-            familyName: h,
-            onLoad: i
-        } = e;
-        e.includes(h) ? i && i() : _b(d).load({
-            google: {
-                families: [`${ h }:400,700`]
-            },
-            fontactive: e => {
-                e.includes(e) || e.push(e), h === e && i && i();
-            }
-        });
-    };
-}), a.register('dxggN', function(_b, c) {
-    e(_b.exports, 'default', function() {
-        return _f;
-    });
-    var d = a('PMl60'),
-        e = a('TAzUt');
-    var _f = e => {
-        let g = `${ (0, d.numberWithCommas)((0, e.GetCost)(e)) }`;
-        return e.options.allowFunding ? `${ (0, d.numberWithCommas)(e.state.fundedAmount || 0) } / ${ g }` : g;
-    };
-}), a.register('TAzUt', function(b, c) {
-    e(b.exports, 'GetCost', function() {
-        return _e;
-    });
-    var d = a('/pbxo');
-    const _e = e => {
-        return (0, d.InPreGamePhase)() ? e.options.amountOfRequiredItem : null !== (b = e.state.cost) && void 0 !== b ? b : e.options.amountOfRequiredItem;
-        var f;
-    };
-}), a.register('jL4lN', function(b, c) {
-    e(b.exports, 'AddMachineBody', function() {
-        return _j;
-    });
-    var d = a('h2EGG'),
-        e = a('82DGx'),
-        f = a('8s38Y'),
-        g = a('evF5h'),
-        h = a('BClWR'),
-        i = a('JEGzD');
-    const _j = e => {
-        const k = -f.Consts.LEGS_HEIGHT / 2,
-            l = {
-                displayWidth: e.options.width - 20,
-                displayHeight: e.options.height - 20 - f.Consts.LEGS_HEIGHT,
-                depthChange: (0, h.GetDepthChange)(e, f.Depths.BG),
-                y: k
-            };
-        e.options.showShadow && !(0, i.isPlatformer)() && e.shadows.add({
-            r1: e.options.width / 2 + 20,
-            r2: 60,
-            y: e.options.height / 2 - 20
-        });
-        const m = (0, g.GetColors)(e);
-        e.parts.add.sprite({
-            ...e.BgAAsset,
-            ...l,
-            onReady: k => {
-                e.bg1 = k, k.view.setTint((0, d.GetNumberFromHexColor)(m.bg1)), (0, g.UpdateColors)(e, !0);
-            }
-        }), e.parts.add.sprite({
-            ...e.BgBAsset,
-            ...l,
-            ignoreInput: !0,
-            onReady: k => {
-                e.bg2 = k, k.view.setTint((0, d.GetNumberFromHexColor)(m.bg2)), (0, g.UpdateColors)(e, !0);
-            }
-        });
-        const n = {
-                ...e.LegAsset,
-                y: e.options.height / 2 + k - 2,
-                depthChange: (0, h.GetDepthChange)(e, f.Depths.LEG)
-            },
-            _o = -e.options.width / 2 + 60;
-        e.parts.add.sprite({
-            ...n,
-            x: _o
-        }), e.parts.add.sprite({
-            ...n,
-            x: -_o,
-            flipX: !0
-        });
-        const p = f.Consts.FRAME_MARGINS_NINE_SLICE;
-        e.parts.add.ninePatch({
-            columns: [
-                p,
-                p
-            ],
-            rows: [
-                p,
-                p
-            ],
-            y: k,
-            scale: f.Consts.FRAME_SCALE,
-            height: e.options.height - f.Consts.LEGS_HEIGHT,
-            width: e.options.width,
-            depthChange: (0, h.GetDepthChange)(e, f.Depths.FRAME),
-            imageUrl: e.FrameAsset.imageUrl
-        });
-    };
-}), a.register('jCQEZ', function(b, c) {
-    e(b.exports, 'AddColliders', function() {
-        return _e;
-    });
-    var d = a('8s38Y');
-    const _e = e => {
-        e.colliders.add.box({
-            x: 0,
-            y: 5 - d.Consts.LEGS_HEIGHT + d.Consts.LEGS_HEIGHT / 2,
-            w: e.options.width,
-            h: e.options.height - d.Consts.LEGS_HEIGHT + 10
-        });
-    };
-}), a.register('plbfj', function(b, c) {
-    e(b.exports, 'AddImageFromUrl', function() {
-        return _j;
-    });
-    var d = a('1Chka'),
-        e = a('AVLqL'),
-        f = a('8s38Y'),
-        g = a('BClWR'),
-        h = a('H9OuP'),
-        i = a('kPDt8');
-    const _j = e => {
-        const k = (0, i.GetImageUrl)(e.options.grantedItemImageUrl);
-        return e.parts.add.sprite({
-            imageId: k,
-            imageUrl: k,
-            y: -f.Consts.LEGS_HEIGHT / 2,
-            depthChange: (0, g.GetDepthChange)(e, f.Depths.GRANTED_ITEM),
-            onReady: a => {
-                const l = (0, d.default)(k),
-                    m = (0, e.default)({
-                        height: l.height,
-                        width: l.width,
-                        newWidth: Math.min(f.Consts.ITEM_MAX_SIZE, 0.7 * e.options.width),
-                        newHeight: Math.min(f.Consts.ITEM_MAX_SIZE, 0.4 * e.options.height - f.Consts.PRICE_HEIGHT)
-                    });
-                a.view.setDisplaySize(m.width, m.height), e.grayScaleFactor > 0 && (0, h.AddGrayscalePipeline)(e, a);
-            }
-        });
-    };
-}), a.register('vfR2b', function(b, c) {
-    e(b.exports, 'TextPadding', function() {
-        return _d;
-    });
-    const _d = () => 4;
-}), a.register('A2dXl', function(b, c) {
-    e(b.exports, 'default', function() {
+}), c.register('QyPlq', function(d, e) {
+    a(d.exports, 'AddItemImage', function() {
         return _l;
     });
-    var d = a('7Ubfv'),
-        e = a('/fx4O'),
-        f = a('gWYGD'),
-        g = a('SjWsC'),
-        h = a('zot+n'),
-        i = a('N++y/'),
-        j = a('B/ThC'),
-        k = a('cSZ9W');
-    var _l = (e, b) => {
-        if ((0, j.default)(e))
-            return void e.interactiveZones.setForceDisabled(!0);
-        if (e.interactiveZones.setForceDisabled(!1), !(0, d.IsCurrentInteractive)(e.id) && !b)
-            return;
-        const m = (0, k.default)(e),
-            n = {
-                message: (0, i.default)(e),
-                action: (0, e.default)(e),
-                topHeader: null == m ? void 0 : m.text,
-                topHeaderColor: null == m ? void 0 : m.color,
-                bottomHeader: (0, g.default)(e),
-                duration: (0, h.default)(e),
-                allowedToInteract: (0, f.default)(e)
-            };
-        e.interactiveZones.setInfo(n);
+    var f = c('fI6of'),
+        g = c('+7143'),
+        h = c('bwSO3'),
+        i = c('T6zrb'),
+        j = c('0EMo0'),
+        k = c('QwL62');
+    const _l = (a, d, c, e, _l, _q) => {
+        const m = {
+            ...i.UnknownItemAsset
+        };
+        if (d) {
+            const n = f.default.worldOptions.itemOptions.find(n => n.id === d);
+            n && (m.imageId = n.id, m.imageUrl = n.previewImage);
+        }
+        const n = (0, g.default)(m.imageId),
+            o = (0, h.default)({
+                height: n.height,
+                width: n.width,
+                newWidth: e,
+                newHeight: c
+            });
+        return a.parts.add.sprite({
+            imageId: m.imageId,
+            imageUrl: m.imageUrl,
+            depthChange: (0, j.GetDepthChange)(a, _l),
+            displayWidth: o.width,
+            displayHeight: o.height,
+            onReady: d => {
+                a.grayScaleFactor > 0 && (0, k.AddGrayscalePipeline)(a, d), _q && _q(d);
+            }
+        });
     };
-}), a.register('7Ubfv', function(b, c) {
-    e(b.exports, 'IsCurrentInteractive', function() {
-        return _e;
-    });
-    var d = a('D5xLI');
-    const _e = e => {
-        var f;
-        return (null === (f = (0, d.default)().worldManager.devices.interactives.currentDevice) || void 0 === f ? void 0 : f.id) === e;
-    };
-}), a.register('/fx4O', function(b, c) {
-    e(b.exports, 'default', function() {
+}), c.register('T6zrb', function(d, e) {
+    a(d.exports, 'BaseAsset', function() {
         return _g;
-    });
-    var d = a('8s38Y'),
-        e = a('KCnBM'),
-        f = a('zU+QS');
-    var _g = e => {
-        const h = (0, e.VendingMachineDeviceAmountRequiredToPurchase)(e),
-            i = (0, e.VendingMachineDeviceAmountOfRequiredItemIHave)(e);
-        return (0, f.VendingMachineDeviceFundingIsEnabled)(e) && i < h ? d.InteractionMessages.fundingAction : d.InteractionMessages.purchaseAction;
-    };
-}), a.register('KCnBM', function(b, c) {
-    e(b.exports, 'VendingMachineDeviceAmountRequiredToPurchase', function() {
-        return _g;
-    }), e(b.exports, 'VendingMachineDeviceAmountOfRequiredItemIHave', function() {
+    }), a(d.exports, 'UnknownItemAsset', function() {
         return _h;
     });
-    var d = a('iWivW'),
-        e = a('TAzUt'),
-        f = a('zU+QS');
-    const _g = e => Math.max(0, (0, e.GetCost)(e) - ((0, f.VendingMachineDeviceFundingIsEnabled)(e) && e.state.fundedAmount || 0)),
-        _h = e => {
-            let i = 0;
-            const j = d.default.me.inventory.slots.get(e.options.requiredItemId);
-            return j && (i = j.amount), i;
+    var f = c('UaUBz0');
+    const _g = {
+            imageId: (0, f.default)('devices/item_granter/base.png'),
+            imageUrl: (0, f.default)('devices/item_granter/base.png')
+        },
+        _h = {
+            imageId: '__UNKNOWN_ITEM',
+            imageUrl: (0, f.default)('devices/item_granter/question-mark-2.png')
         };
-}), a.register('zU+QS', function(b, c) {
-    e(b.exports, 'VendingMachineDeviceFundingIsEnabled', function() {
-        return _d;
-    });
-    const _d = e => e.options.allowFunding;
-}), a.register('gWYGD', function(b, c) {
-    e(b.exports, 'default', function() {
+}), c.register('QwL62', function(d, e) {
+    a(d.exports, 'AddGrayscalePipeline', function() {
         return _f;
+    }), a(d.exports, 'UpdateGrayscalePipelines', function() {
+        return _h;
     });
-    var d = a('KCnBM'),
-        e = a('zU+QS');
-    var _f = e => {
-        if (!e.state.active)
-            return !1;
-        if (e.options.useLimitedStock && e.state.currentStock <= 0)
-            return !1;
-        const g = (0, d.VendingMachineDeviceAmountRequiredToPurchase)(e),
-            h = (0, d.VendingMachineDeviceAmountOfRequiredItemIHave)(e);
-        return (0, e.VendingMachineDeviceFundingIsEnabled)(e) ? !!h : !(h < g);
-    };
-}), a.register('SjWsC', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _d;
-    });
-    var _d = e => {
-        var e;
-        const f = null === (e = e.options.grantedItemDescription) || void 0 === e ? void 0 : e.trim();
-        if (null == f ? void 0 : f.length)
-            return f;
-    };
-}), a.register('zot+n', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _e;
-    });
-    var d = a('KCnBM');
-    var _e = e => {
-        const f = (0, d.VendingMachineDeviceAmountOfRequiredItemIHave)(e);
-        return (0, d.VendingMachineDeviceAmountOfRequiredItemIHave)(e) >= f ? e.options.interactionDuration : 1;
-    };
-}), a.register('N++y/', function(b, c) {
-    e(b.exports, 'default', function() {
+    const _f = (a, d) => {
+            a.grayScalePipelines.push(a.scene.plugins.get('rexGrayScalePipeline').add(d.view, {
+                intensity: a.grayScaleFactor
+            }));
+        },
+        g = (a, d) => {
+            a.scene.plugins.get('rexGrayScalePipeline').remove(d.view);
+        },
+        _h = a => {
+            a.grayScaleFactor > 0 ? ((a => {
+                var i, j;
+                a.grayScalePipelines.length > 0 || ((null === (i = a.requiredImage) || void 0 === i ? void 0 : i.view) && _f(a, a.requiredImage), (null === (j = a.grantedImage) || void 0 === j ? void 0 : j.view) && _f(a, a.grantedImage));
+            })(a), a.grayScalePipelines.forEach(d => {
+                d.intensity = a.grayScaleFactor;
+            })) : (a => {
+                var i, j;
+                0 !== a.grayScalePipelines.length && ((null === (i = a.requiredImage) || void 0 === i ? void 0 : i.view) && g(a, a.requiredImage), (null === (j = a.grantedImage) || void 0 === j ? void 0 : j.view) && g(a, a.grantedImage), a.grayScalePipelines = []);
+            })(a);
+        };
+}), c.register('bMaPZ2', function(d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function() {
+        return _h;
+    }), a(d.exports, 'default', function() {
         return _i;
     });
-    var d = a('PMl60'),
-        e = a('ZCz9W'),
-        f = a('8s38Y'),
-        g = a('tugRC'),
-        h = a('TAzUt');
-    var _i = e => {
-        var j;
-        let k = null === (j = e.options.grantedItemName) || void 0 === j ? void 0 : j.trim();
-        return k || e.options.grantAction !== g.GrantAction.grantItem || (k = (0, e.ItemName)(e.options.grantedItemId)), k || (k = f.InteractionMessages.defaultItemName), e.options.grantAction === g.GrantAction.grantItem && !e.options.visibleInGame && e.options.attachCostToNameWhenHidden && e.options.requiredItemId && (0, h.GetCost)(e) ? `${ k } - ${ (0, d.numberWithCommas)(e.options.amountOfRequiredItem) } ${ (0, e.ItemName)(e.options.requiredItemId) }` : k;
+    var f = c('TptDc');
+    const g = [],
+        _h = a => g.includes(a);
+    var _i = a => {
+        const {
+            familyName: j,
+            onLoad: k
+        } = a;
+        g.includes(j) ? k && k() : b(f).load({
+            google: {
+                families: [`${ j }:400,700`]
+            },
+            fontactive: a => {
+                g.includes(a) || g.push(a), j === a && k && k();
+            }
+        });
     };
-}), a.register('B/ThC', function(b, c) {
-    e(b.exports, 'default', function() {
+}), c.register('UgeNz', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
+    });
+    var f = c('quE27'),
+        g = c('D0Q5k');
+    var _h = a => {
+        let i = `${ (0, f.numberWithCommas)((0, g.GetCost)(a)) }`;
+        return a.options.allowFunding ? `${ (0, f.numberWithCommas)(a.state.fundedAmount || 0) } / ${ i }` : i;
+    };
+}), c.register('D0Q5k', function(d, e) {
+    a(d.exports, 'GetCost', function() {
+        return _g;
+    });
+    var f = c('UkCpC');
+    const _g = a => {
+        return (0, f.InPreGamePhase)() ? a.options.amountOfRequiredItem : null !== (d = a.state.cost) && void 0 !== d ? d : a.options.amountOfRequiredItem;
+        var h;
+    };
+}), c.register('X7kIM', function(d, e) {
+    a(d.exports, 'AddMachineBody', function() {
+        return _l;
+    });
+    var f = c('cNVx1'),
+        g = c('TkEMW'),
+        h = c('3Fknw'),
+        i = c('pMcSb'),
+        j = c('0EMo0'),
+        k = c('UCu0V');
+    const _l = a => {
+        const m = -h.Consts.LEGS_HEIGHT / 2,
+            n = {
+                displayWidth: a.options.width - 20,
+                displayHeight: a.options.height - 20 - h.Consts.LEGS_HEIGHT,
+                depthChange: (0, j.GetDepthChange)(a, h.Depths.BG),
+                y: m
+            };
+        a.options.showShadow && !(0, k.isPlatformer)() && a.shadows.add({
+            r1: a.options.width / 2 + 20,
+            r2: 60,
+            y: a.options.height / 2 - 20
+        });
+        const o = (0, i.GetColors)(a);
+        a.parts.add.sprite({
+            ...g.BgAAsset,
+            ...n,
+            onReady: m => {
+                a.bg1 = m, m.view.setTint((0, f.GetNumberFromHexColor)(o.bg1)), (0, i.UpdateColors)(a, !0);
+            }
+        }), a.parts.add.sprite({
+            ...g.BgBAsset,
+            ...n,
+            ignoreInput: !0,
+            onReady: m => {
+                a.bg2 = m, m.view.setTint((0, f.GetNumberFromHexColor)(o.bg2)), (0, i.UpdateColors)(a, !0);
+            }
+        });
+        const p = {
+                ...g.LegAsset,
+                y: a.options.height / 2 + m - 2,
+                depthChange: (0, j.GetDepthChange)(a, h.Depths.LEG)
+            },
+            _q = -a.options.width / 2 + 60;
+        a.parts.add.sprite({
+            ...p,
+            x: _q
+        }), a.parts.add.sprite({
+            ...p,
+            x: -_q,
+            flipX: !0
+        });
+        const r = h.Consts.FRAME_MARGINS_NINE_SLICE;
+        a.parts.add.ninePatch({
+            columns: [
+                r,
+                r
+            ],
+            rows: [
+                r,
+                r
+            ],
+            y: m,
+            scale: h.Consts.FRAME_SCALE,
+            height: a.options.height - h.Consts.LEGS_HEIGHT,
+            width: a.options.width,
+            depthChange: (0, j.GetDepthChange)(a, h.Depths.FRAME),
+            imageUrl: g.FrameAsset.imageUrl
+        });
+    };
+}), c.register('omrib', function(d, e) {
+    a(d.exports, 'AddColliders', function() {
+        return _g;
+    });
+    var f = c('3Fknw');
+    const _g = a => {
+        a.colliders.add.box({
+            x: 0,
+            y: 5 - f.Consts.LEGS_HEIGHT + f.Consts.LEGS_HEIGHT / 2,
+            w: a.options.width,
+            h: a.options.height - f.Consts.LEGS_HEIGHT + 10
+        });
+    };
+}), c.register('K2ru3', function(d, e) {
+    a(d.exports, 'AddImageFromUrl', function() {
+        return _l;
+    });
+    var f = c('+7143'),
+        g = c('bwSO3'),
+        h = c('3Fknw'),
+        i = c('0EMo0'),
+        j = c('QwL62'),
+        k = c('4pQyd');
+    const _l = a => {
+        const m = (0, k.GetImageUrl)(a.options.grantedItemImageUrl);
+        return a.parts.add.sprite({
+            imageId: m,
+            imageUrl: m,
+            y: -h.Consts.LEGS_HEIGHT / 2,
+            depthChange: (0, i.GetDepthChange)(a, h.Depths.GRANTED_ITEM),
+            onReady: c => {
+                const n = (0, f.default)(m),
+                    o = (0, g.default)({
+                        height: n.height,
+                        width: n.width,
+                        newWidth: Math.min(h.Consts.ITEM_MAX_SIZE, 0.7 * a.options.width),
+                        newHeight: Math.min(h.Consts.ITEM_MAX_SIZE, 0.4 * a.options.height - h.Consts.PRICE_HEIGHT)
+                    });
+                c.view.setDisplaySize(o.width, o.height), a.grayScaleFactor > 0 && (0, j.AddGrayscalePipeline)(a, c);
+            }
+        });
+    };
+}), c.register('lnsH90', function(d, e) {
+    a(d.exports, 'TextPadding', function() {
         return _f;
     });
-    var d = a('AeM98'),
-        e = a('k4WXU');
-    var _f = e => !e.options.visibleInGame && !e.state.active || !(!e.options.allowedPurchaseTeam || e.options.allowedPurchaseTeam === d.ANY_TEAM_DEVICE_OPTION || (0, e.default)() === e.options.allowedPurchaseTeam);
-}), a.register('cSZ9W', function(b, c) {
-    e(b.exports, 'default', function() {
+    const _f = () => 4;
+}), c.register('GpPqI', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _n;
+    });
+    var f = c('V7S+o'),
+        g = c('L2YJu'),
+        h = c('mBmBg'),
+        i = c('guo2p'),
+        j = c('QjxHN'),
+        k = c('12Pmw'),
+        l = c('e1v/m'),
+        m = c('3Cbxw');
+    var _n = (a, d) => {
+        if ((0, l.default)(a))
+            return void a.interactiveZones.setForceDisabled(!0);
+        if (a.interactiveZones.setForceDisabled(!1), !(0, f.IsCurrentInteractive)(a.id) && !d)
+            return;
+        const o = (0, m.default)(a),
+            p = {
+                message: (0, k.default)(a),
+                action: (0, g.default)(a),
+                topHeader: null == o ? void 0 : o.text,
+                topHeaderColor: null == o ? void 0 : o.color,
+                bottomHeader: (0, i.default)(a),
+                duration: (0, j.default)(a),
+                allowedToInteract: (0, h.default)(a)
+            };
+        a.interactiveZones.setInfo(p);
+    };
+}), c.register('V7S+o', function(d, e) {
+    a(d.exports, 'IsCurrentInteractive', function() {
+        return _g;
+    });
+    var f = c('heTaO');
+    const _g = a => {
+        var h;
+        return (null === (h = (0, f.default)().worldManager.devices.interactives.currentDevice) || void 0 === h ? void 0 : h.id) === a;
+    };
+}), c.register('L2YJu', function(d, e) {
+    a(d.exports, 'default', function() {
         return _i;
     });
-    var d = a('ZCz9W'),
-        e = a('8s38Y'),
-        f = a('TAzUt'),
-        g = a('KCnBM'),
-        h = a('zU+QS');
-    var _i = e => {
-        if (!e.state.active)
+    var f = c('3Fknw'),
+        g = c('f2D53'),
+        h = c('mUaLY');
+    var _i = a => {
+        const j = (0, g.VendingMachineDeviceAmountRequiredToPurchase)(a),
+            k = (0, g.VendingMachineDeviceAmountOfRequiredItemIHave)(a);
+        return (0, h.VendingMachineDeviceFundingIsEnabled)(a) && k < j ? f.InteractionMessages.fundingAction : f.InteractionMessages.purchaseAction;
+    };
+}), c.register('f2D53', function(d, e) {
+    a(d.exports, 'VendingMachineDeviceAmountRequiredToPurchase', function() {
+        return _i;
+    }), a(d.exports, 'VendingMachineDeviceAmountOfRequiredItemIHave', function() {
+        return _j;
+    });
+    var f = c('fI6of'),
+        g = c('D0Q5k'),
+        h = c('mUaLY');
+    const _i = a => Math.max(0, (0, g.GetCost)(a) - ((0, h.VendingMachineDeviceFundingIsEnabled)(a) && a.state.fundedAmount || 0)),
+        _j = a => {
+            let k = 0;
+            const l = f.default.me.inventory.slots.get(a.options.requiredItemId);
+            return l && (k = l.amount), k;
+        };
+}), c.register('mUaLY', function(d, e) {
+    a(d.exports, 'VendingMachineDeviceFundingIsEnabled', function() {
+        return _f;
+    });
+    const _f = a => a.options.allowFunding;
+}), c.register('mBmBg', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
+    });
+    var f = c('f2D53'),
+        g = c('mUaLY');
+    var _h = a => {
+        if (!a.state.active)
+            return !1;
+        if (a.options.useLimitedStock && a.state.currentStock <= 0)
+            return !1;
+        const i = (0, f.VendingMachineDeviceAmountRequiredToPurchase)(a),
+            j = (0, f.VendingMachineDeviceAmountOfRequiredItemIHave)(a);
+        return (0, g.VendingMachineDeviceFundingIsEnabled)(a) ? !!j : !(j < i);
+    };
+}), c.register('guo2p', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
+    });
+    var _f = a => {
+        var g;
+        const h = null === (g = a.options.grantedItemDescription) || void 0 === g ? void 0 : g.trim();
+        if (null == h ? void 0 : h.length)
+            return h;
+    };
+}), c.register('QjxHN', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _g;
+    });
+    var f = c('f2D53');
+    var _g = a => {
+        const h = (0, f.VendingMachineDeviceAmountOfRequiredItemIHave)(a);
+        return (0, f.VendingMachineDeviceAmountOfRequiredItemIHave)(a) >= h ? a.options.interactionDuration : 1;
+    };
+}), c.register('12Pmw', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
+    });
+    var f = c('quE27'),
+        g = c('G0Kso'),
+        h = c('3Fknw'),
+        i = c('iH+cr'),
+        j = c('D0Q5k');
+    var _k = a => {
+        var l;
+        let m = null === (l = a.options.grantedItemName) || void 0 === l ? void 0 : l.trim();
+        return m || a.options.grantAction !== i.GrantAction.grantItem || (m = (0, g.ItemName)(a.options.grantedItemId)), m || (m = h.InteractionMessages.defaultItemName), a.options.grantAction === i.GrantAction.grantItem && !a.options.visibleInGame && a.options.attachCostToNameWhenHidden && a.options.requiredItemId && (0, j.GetCost)(a) ? `${ m } - ${ (0, f.numberWithCommas)(a.options.amountOfRequiredItem) } ${ (0, g.ItemName)(a.options.requiredItemId) }` : m;
+    };
+}), c.register('e1v/m', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
+    });
+    var f = c('G2BYq'),
+        g = c('09Gub');
+    var _h = a => !a.options.visibleInGame && !a.state.active || !(!a.options.allowedPurchaseTeam || a.options.allowedPurchaseTeam === f.ANY_TEAM_DEVICE_OPTION || (0, g.default)() === a.options.allowedPurchaseTeam);
+}), c.register('3Cbxw', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
+    });
+    var f = c('G0Kso'),
+        g = c('3Fknw'),
+        h = c('D0Q5k'),
+        i = c('f2D53'),
+        j = c('mUaLY');
+    var _k = a => {
+        if (!a.state.active)
             return {
-                text: e.InteractionMessages.notAvailable.message,
-                color: e.InteractionMessages.notAvailable.color
+                text: g.InteractionMessages.notAvailable.message,
+                color: g.InteractionMessages.notAvailable.color
             };
-        if (e.options.useLimitedStock && e.state.currentStock <= 0)
+        if (a.options.useLimitedStock && a.state.currentStock <= 0)
             return {
-                text: e.InteractionMessages.outOfStock.message,
-                color: e.InteractionMessages.outOfStock.color
+                text: g.InteractionMessages.outOfStock.message,
+                color: g.InteractionMessages.outOfStock.color
             };
-        const j = (0, g.VendingMachineDeviceAmountRequiredToPurchase)(e),
-            k = (0, g.VendingMachineDeviceAmountOfRequiredItemIHave)(e),
-            l = (0, h.VendingMachineDeviceFundingIsEnabled)(e);
-        return k < j && !l ? {
-            text: e.InteractionMessages.notEnoughRequiredItem.message,
-            color: e.InteractionMessages.notEnoughRequiredItem.color
-        } : e.options.useLimitedStock ? {
-            text: e.InteractionMessages.inStock(e.state.currentStock).message,
-            color: e.InteractionMessages.inStock(e.state.currentStock).color
-        } : l ? {
-            text: e.InteractionMessages.fundingStatus.message(e.state.fundedAmount || 0, (0, f.GetCost)(e), (0, d.ItemName)(e.options.requiredItemId))
+        const l = (0, i.VendingMachineDeviceAmountRequiredToPurchase)(a),
+            m = (0, i.VendingMachineDeviceAmountOfRequiredItemIHave)(a),
+            n = (0, j.VendingMachineDeviceFundingIsEnabled)(a);
+        return m < l && !n ? {
+            text: g.InteractionMessages.notEnoughRequiredItem.message,
+            color: g.InteractionMessages.notEnoughRequiredItem.color
+        } : a.options.useLimitedStock ? {
+            text: g.InteractionMessages.inStock(a.state.currentStock).message,
+            color: g.InteractionMessages.inStock(a.state.currentStock).color
+        } : n ? {
+            text: g.InteractionMessages.fundingStatus.message(a.state.fundedAmount || 0, (0, h.GetCost)(a), (0, f.ItemName)(a.options.requiredItemId))
         } : {};
     };
-}), a.register('2KeuO', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _g;
+}), c.register('56Ofo', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('/pbxo'),
-        e = a('tugRC'),
-        f = a('A2dXl');
-    var _g = e => {
-        (0, d.InPreGamePhase)() || (e.options.visibleInGame ? e.interactiveZones.add.rect({
+    var f = c('UkCpC'),
+        g = c('iH+cr'),
+        h = c('GpPqI');
+    var _i = a => {
+        (0, f.InPreGamePhase)() || (a.options.visibleInGame ? a.interactiveZones.add.rect({
             y: 25,
-            width: e.options.width + 150,
-            height: e.options.height + 150
-        }) : e.interactiveZones.add.circle({
-            r: e.options.radius
-        }), e.interactiveZones.setCanInteractThroughColliders(!0), e.interactiveZones.onInteraction = () => {
-            e.sendToServerDevice(e.Messages.purchase);
-        }, e.interactiveZones.onInteractiveCb = () => {
-            (0, f.default)(e, !0);
+            width: a.options.width + 150,
+            height: a.options.height + 150
+        }) : a.interactiveZones.add.circle({
+            r: a.options.radius
+        }), a.interactiveZones.setCanInteractThroughColliders(!0), a.interactiveZones.onInteraction = () => {
+            a.sendToServerDevice(g.Messages.purchase);
+        }, a.interactiveZones.onInteractiveCb = () => {
+            (0, h.default)(a, !0);
         });
     };
-}), a.register('R2Ucl10', function(b, c) {
-    e(b.exports, 'FetchOptionSchemaProperty', function() {
-        return _d;
-    });
-    const _d = (e, b) => {
-        var e, f, g;
-        const h = e.deviceOption.optionSchema.options.find(e => e.key === b);
-        return {
-            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
-            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
-            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
-        };
-    };
-}), a.register('IFO6W13', function(b, c) {
-    e(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return _h;
-    });
-    var d = a('HqwPM'),
-        e = a('+oovY4'),
-        f = a('A17vD'),
-        g = a('HXXiu');
-    const _h = (e, b, a) => {
-        const i = (0, g.FetchVisualEditingPreview)(),
-            j = (0, f.FetchCurrentlyEditedDevice)();
-        if (!j || !i)
-            return;
-        const k = j.layers.isOnNaturalDepth() ? void 0 : b + j.layers.getDepthShift();
-        (0, e.default)({
-            deviceOption: i.deviceOption,
-            id: d.VisualEditingConstants.previewId,
-            x: e,
-            y: b,
-            depth: k,
-            layerId: j.layers.getLayer(),
-            name: i.name,
-            isPreview: !0,
-            options: {
-                ...i.options,
-                ...a
-            },
-            placedByClient: !0,
-            state: i.deviceOption.defaultState
-        });
-    };
-}), a.register('+oovY4', function(b, c) {
-    e(b.exports, 'default', function() {
+}), c.register('uc4mA17', function(d, e) {
+    a(d.exports, 'FetchOptionSchemaProperty', function() {
         return _f;
     });
-    var d = a('D5xLI'),
-        e = a('aIyMH');
-    var _f = e => {
-        (0, d.default)().worldManager.devices.getDeviceById(e.id) && (0, e.default)(e);
+    const _f = (a, d) => {
+        var g, h, i;
+        const j = a.deviceOption.optionSchema.options.find(a => a.key === d);
+        return {
+            min: null === (g = null == j ? void 0 : j.option.props) || void 0 === g ? void 0 : g.min,
+            max: null === (h = null == j ? void 0 : j.option.props) || void 0 === h ? void 0 : h.max,
+            step: null === (i = null == j ? void 0 : j.option.props) || void 0 === i ? void 0 : i.step
+        };
+    };
+}), c.register('u/WlI21', function(d, e) {
+    a(d.exports, 'ReplaceVisualEditingPreview', function() {
+        return _j;
+    });
+    var f = c('hemXM'),
+        g = c('sWmxu5'),
+        h = c('EzUqb'),
+        i = c('GQMbT');
+    const _j = (a, d, c) => {
+        const k = (0, i.FetchVisualEditingPreview)(),
+            l = (0, h.FetchCurrentlyEditedDevice)();
+        if (!l || !k)
+            return;
+        const m = l.layers.isOnNaturalDepth() ? void 0 : d + l.layers.getDepthShift();
+        (0, g.default)({
+            deviceOption: k.deviceOption,
+            id: f.VisualEditingConstants.previewId,
+            x: a,
+            y: d,
+            depth: m,
+            layerId: l.layers.getLayer(),
+            name: k.name,
+            isPreview: !0,
+            options: {
+                ...k.options,
+                ...c
+            },
+            placedByClient: !0,
+            state: k.deviceOption.defaultState
+        });
+    };
+}), c.register('sWmxu5', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
+    });
+    var f = c('heTaO'),
+        g = c('2LtPo');
+    var _h = a => {
+        (0, f.default)().worldManager.devices.getDeviceById(a.id) && (0, g.default)(a);
     };
 });

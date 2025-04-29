@@ -6,48 +6,48 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('APryM', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('JwcDL', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _o(b.exports, 'default', function() {
-        return _o;
+    }), a(c.exports, 'default', function() {
+        return _p;
     });
-    var e = a('1bFPu'),
-        f = a('LP9lx'),
-        g = a('/pbxo'),
-        h = a('I35Ay'),
-        i = a('9tz3H'),
-        j = a('dTXti'),
-        k = a('+uQv7'),
-        l = a('2Xvuf'),
-        m = a('iWivW');
-    class n extends h.default {
+    var f = b('s/YA9'),
+        g = b('bUxRS'),
+        h = b('UkCpC'),
+        i = b('ltxDW'),
+        j = b('hycyg'),
+        k = b('AHhkR'),
+        l = b('73Aki'),
+        m = b('UaUBz0'),
+        n = b('fI6of');
+    class o extends i.default {
         setStoredValue() {
-            this.options.valueType === f.PrimitiveType.boolean ? m.default.me.properties.set(this.options.propertyName, this.state.valueBoolean) : this.options.valueType === f.PrimitiveType.number ? m.default.me.properties.set(this.options.propertyName, this.state.valueNumber) : this.options.valueType === f.PrimitiveType.string && m.default.me.properties.set(this.options.propertyName, this.state.valueString);
+            this.options.valueType === g.PrimitiveType.boolean ? n.default.me.properties.set(this.options.propertyName, this.state.valueBoolean) : this.options.valueType === g.PrimitiveType.number ? n.default.me.properties.set(this.options.propertyName, this.state.valueNumber) : this.options.valueType === g.PrimitiveType.string && n.default.me.properties.set(this.options.propertyName, this.state.valueString);
         }
-        destroy(_o) {
-            super.destroy(_o), m.default.me.properties.delete(this.options.propertyName);
+        destroy(p) {
+            super.destroy(p), n.default.me.properties.delete(this.options.propertyName);
         }
-        constructor(o) {
-            if (super(o), (0, e.default)(this, 'onStateChange', o => {
-                    (this.options.valueType === f.PrimitiveType.boolean && 'valueBoolean' === o || this.options.valueType === f.PrimitiveType.number && 'valueNumber' === o || this.options.valueType === f.PrimitiveType.string && 'valueString' === o) && this.setStoredValue();
-                }), this.setStoredValue(), (0, g.InGamePhase)() || (0, i.isPublishedVersion)())
+        constructor(p) {
+            if (super(p), (0, f.default)(this, 'onStateChange', p => {
+                    (this.options.valueType === g.PrimitiveType.boolean && 'valueBoolean' === p || this.options.valueType === g.PrimitiveType.number && 'valueNumber' === p || this.options.valueType === g.PrimitiveType.string && 'valueString' === p) && this.setStoredValue();
+                }), this.setStoredValue(), (0, h.InGamePhase)() || (0, j.isPublishedVersion)())
                 return;
-            const p = j.default.Overlay;
-            new(0, k.default)({
+            const q = k.default.Overlay;
+            new(0, l.default)({
                 device: this,
-                baseColor: p.baseColor,
-                boxColor: p.boxColor,
+                baseColor: q.baseColor,
+                boxColor: q.boxColor,
                 content: {
                     text: {
                         text: '' === this.options.propertyName ? 'property' : this.options.propertyName,
                         shiftY: 15
                     },
                     icon: {
-                        image: (0, l.default)('devices/property/icon.png'),
+                        image: (0, m.default)('devices/property/icon.png'),
                         scale: 0.5,
                         shiftY: -15
                     }
@@ -55,11 +55,11 @@ a.register('APryM', function(b, c) {
             });
         }
     }
-    var _o = n;
-}), a.register('LP9lx', function(b, c) {
-    let d;
-    var e;
-    e(b.exports, 'PrimitiveType', function() {
-        return d;
-    }), (e = d || (d = {})).boolean = 'boolean', e.number = 'number', e.string = 'string';
+    var _p = o;
+}), b.register('bUxRS', function(c, d) {
+    let e;
+    var f;
+    a(c.exports, 'PrimitiveType', function() {
+        return e;
+    }), (f = e || (e = {})).boolean = 'boolean', f.number = 'number', f.string = 'string';
 });

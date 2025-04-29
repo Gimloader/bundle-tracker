@@ -6,45 +6,45 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('aMmq9', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('uUQAR', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _m(b.exports, 'default', function() {
-        return _m;
+    }), a(c.exports, 'default', function() {
+        return _n;
     });
-    var e = a('1bFPu'),
-        f = a('JEGzD'),
-        g = a('I35Ay'),
-        h = a('oYhMR'),
-        i = a('4mnY4'),
-        j = a('/pbxo'),
-        k = a('6yuPe');
-    class l extends g.default {
-        constructor(_m) {
-            super(_m), (0, e.default)(this, 'animateOpen', () => {
-                var n;
+    var f = b('s/YA9'),
+        g = b('UCu0V'),
+        h = b('ltxDW'),
+        i = b('JuzUO'),
+        j = b('IK+oA0'),
+        k = b('UkCpC'),
+        l = b('vCpPp');
+    class m extends h.default {
+        constructor(n) {
+            super(n), (0, f.default)(this, 'animateOpen', () => {
+                var o;
                 if (!this.state.active)
                     return;
-                if (1 === (null === (n = this.open.view) || void 0 === n ? void 0 : n.alpha))
+                if (1 === (null === (o = this.open.view) || void 0 === o ? void 0 : o.alpha))
                     return;
                 this.closed.view && (this.closed.view.alpha = 0), this.closedFlash.view && (this.closedFlash.view.alpha = 0);
-                const o = [];
-                this.open.view && (this.open.view.alpha = 1, o.push(this.open.view)), this.openFlash.view && (this.openFlash.view.alpha = 1, o.push(this.openFlash.view), this.tweens.add({
+                const p = [];
+                this.open.view && (this.open.view.alpha = 1, p.push(this.open.view)), this.openFlash.view && (this.openFlash.view.alpha = 1, p.push(this.openFlash.view), this.tweens.add({
                     targets: this.openFlash.view,
                     alpha: 0,
                     duration: 200
-                })), o.length && this.tweens.add({
-                    targets: o,
+                })), p.length && this.tweens.add({
+                    targets: p,
                     scaleX: 0.55,
                     scaleY: 0.55,
                     duration: 150,
                     ease: Phaser.Math.Easing.Sine.Out,
                     onComplete: () => {
                         this.tweens.add({
-                            targets: o,
+                            targets: p,
                             scaleX: 0.5,
                             scaleY: 0.5,
                             duration: 250,
@@ -52,27 +52,27 @@ a.register('aMmq9', function(b, c) {
                         });
                     }
                 });
-            }), (0, e.default)(this, 'animateClose', () => {
-                var n;
+            }), (0, f.default)(this, 'animateClose', () => {
+                var o;
                 if (!this.state.active)
                     return;
-                if (1 === (null === (n = this.closed.view) || void 0 === n ? void 0 : n.alpha))
+                if (1 === (null === (o = this.closed.view) || void 0 === o ? void 0 : o.alpha))
                     return;
                 this.open.view && (this.open.view.alpha = 0), this.openFlash.view && (this.openFlash.view.alpha = 0);
-                const o = [];
-                this.closed.view && (this.closed.view.alpha = 1, o.push(this.closed.view)), this.closedFlash.view && (this.closedFlash.view.alpha = 1, o.push(this.closedFlash.view), this.tweens.add({
+                const p = [];
+                this.closed.view && (this.closed.view.alpha = 1, p.push(this.closed.view)), this.closedFlash.view && (this.closedFlash.view.alpha = 1, p.push(this.closedFlash.view), this.tweens.add({
                     targets: this.closedFlash.view,
                     alpha: 0,
                     duration: 200
-                })), o.length && this.tweens.add({
-                    targets: o,
+                })), p.length && this.tweens.add({
+                    targets: p,
                     scaleX: 0.45,
                     scaleY: 0.45,
                     duration: 150,
                     ease: Phaser.Math.Easing.Sine.Out,
                     onComplete: () => {
                         this.tweens.add({
-                            targets: o,
+                            targets: p,
                             scaleX: 0.5,
                             scaleY: 0.5,
                             duration: 250,
@@ -80,7 +80,7 @@ a.register('aMmq9', function(b, c) {
                         });
                     }
                 });
-            }), (0, e.default)(this, 'activate', () => {
+            }), (0, f.default)(this, 'activate', () => {
                 this.open.view && (this.open.view.alpha = 0), this.closed.view && (this.closed.view.alpha = 0), this.openFlash.view && (this.openFlash.view.alpha = 0), this.closedFlash.view && (this.closedFlash.view.alpha = 0), this.state.open ? this.open.view && this.tweens.add({
                     targets: this.open.view,
                     alpha: 1,
@@ -92,85 +92,85 @@ a.register('aMmq9', function(b, c) {
                     duration: 250,
                     ease: Phaser.Math.Easing.Sine.InOut
                 });
-            }), (0, e.default)(this, 'deactivate', () => {
-                const n = [];
-                this.open.view && n.push(this.open.view), this.closed.view && n.push(this.closed.view), this.openFlash.view && n.push(this.openFlash.view), this.closedFlash.view && n.push(this.closedFlash.view), n.length && this.tweens.add({
-                    targets: n,
+            }), (0, f.default)(this, 'deactivate', () => {
+                const o = [];
+                this.open.view && o.push(this.open.view), this.closed.view && o.push(this.closed.view), this.openFlash.view && o.push(this.openFlash.view), this.closedFlash.view && o.push(this.closedFlash.view), o.length && this.tweens.add({
+                    targets: o,
                     alpha: 0,
                     duration: 250,
                     ease: Phaser.Math.Easing.Sine.InOut
                 });
-            }), (0, e.default)(this, 'updateInteractiveZones', () => {
-                const n = this.state.open || !this.state.active;
-                this.interactiveZones.setForceDisabled(n);
-            }), (0, e.default)(this, 'onStateChange', _m => {
-                'open' === _m && (this.state.open ? this.animateOpen() : this.animateClose()), 'active' === _m && (this.state.active ? this.activate() : this.deactivate()), this.updateInteractiveZones();
+            }), (0, f.default)(this, 'updateInteractiveZones', () => {
+                const o = this.state.open || !this.state.active;
+                this.interactiveZones.setForceDisabled(o);
+            }), (0, f.default)(this, 'onStateChange', n => {
+                'open' === n && (this.state.open ? this.animateOpen() : this.animateClose()), 'active' === n && (this.state.active ? this.activate() : this.deactivate()), this.updateInteractiveZones();
             }), this.open = this.parts.add.sprite({
-                ...h.OpenAsset,
-                onReady: _m => {
-                    _m.view.setScale(0.5), _m.view.alpha = this.state.active && this.state.open ? 1 : 0;
+                ...i.OpenAsset,
+                onReady: n => {
+                    n.view.setScale(0.5), n.view.alpha = this.state.active && this.state.open ? 1 : 0;
                 }
             }), this.openFlash = this.parts.add.sprite({
-                ...h.OpenAsset,
-                onReady: _m => {
-                    _m.view.setScale(0.5), _m.view.tint = 16777215, _m.view.tintFill = !0, _m.view.alpha = 0;
+                ...i.OpenAsset,
+                onReady: n => {
+                    n.view.setScale(0.5), n.view.tint = 16777215, n.view.tintFill = !0, n.view.alpha = 0;
                 }
             }), this.closed = this.parts.add.sprite({
-                ...h.ClosedAsset,
-                onReady: _m => {
-                    _m.view.setScale(0.5), _m.view.alpha = this.state.active && !this.state.open ? 1 : 0, this.isPreview && (0, j.InPreGamePhase)() && (_m.view.alpha = 1);
+                ...i.ClosedAsset,
+                onReady: n => {
+                    n.view.setScale(0.5), n.view.alpha = this.state.active && !this.state.open ? 1 : 0, this.isPreview && (0, k.InPreGamePhase)() && (n.view.alpha = 1);
                 }
             }), this.closedFlash = this.parts.add.sprite({
-                ...h.ClosedAsset,
-                onReady: _m => {
-                    _m.view.setScale(0.5), _m.view.tint = 16777215, _m.view.tintFill = !0, _m.view.alpha = 0;
+                ...i.ClosedAsset,
+                onReady: n => {
+                    n.view.setScale(0.5), n.view.tint = 16777215, n.view.tintFill = !0, n.view.alpha = 0;
                 }
-            }), (0, f.isPlatformer)() || (this.shadows.add({
+            }), (0, g.isPlatformer)() || (this.shadows.add({
                 x: 0,
                 y: 0,
                 r1: 60,
                 r2: 40
             }), this.colliders.add.box({
-                ...k.ChestConstants.topDownCollider
+                ...l.ChestConstants.topDownCollider
             })), this.interactiveZone = this.interactiveZones.add.circle({
-                r: k.ChestConstants.interactionRadius
+                r: l.ChestConstants.interactionRadius
             }), this.interactiveZones.setInfo({
                 message: 'Open chest',
                 allowedToInteract: !0,
                 duration: 1
             }), this.interactiveZones.onInteraction = () => {
-                this.sendToServerDevice(i.Messages.open);
+                this.sendToServerDevice(j.Messages.open);
             }, this.updateInteractiveZones();
         }
     }
-    var _m = l;
-}), a.register('oYhMR', function(b, c) {
-    e(b.exports, 'OpenAsset', function() {
-        return _e;
-    }), e(b.exports, 'ClosedAsset', function() {
+    var _n = m;
+}), b.register('JuzUO', function(c, d) {
+    a(c.exports, 'OpenAsset', function() {
         return _f;
+    }), a(c.exports, 'ClosedAsset', function() {
+        return _g;
     });
-    var d = a('2Xvuf');
-    const _e = {
-            imageId: (0, d.default)('devices/chest/open.png'),
-            imageUrl: (0, d.default)('devices/chest/open.png'),
+    var e = b('UaUBz0');
+    const _f = {
+            imageId: (0, e.default)('devices/chest/open.png'),
+            imageUrl: (0, e.default)('devices/chest/open.png'),
             originY: 0.8
         },
-        _f = {
-            imageId: (0, d.default)('devices/chest/closed.png'),
-            imageUrl: (0, d.default)('devices/chest/closed.png'),
+        _g = {
+            imageId: (0, e.default)('devices/chest/closed.png'),
+            imageUrl: (0, e.default)('devices/chest/closed.png'),
             originY: 0.8
         };
-}), a.register('4mnY4', function(b, c) {
-    let d;
-    e(b.exports, 'Messages', function() {
-        return d;
-    }), (d || (d = {})).open = 'open';
-}), a.register('6yuPe', function(b, c) {
-    e(b.exports, 'ChestConstants', function() {
-        return _d;
+}), b.register('IK+oA0', function(c, d) {
+    let e;
+    a(c.exports, 'Messages', function() {
+        return e;
+    }), (e || (e = {})).open = 'open';
+}), b.register('vCpPp', function(c, d) {
+    a(c.exports, 'ChestConstants', function() {
+        return _e;
     });
-    const _d = {
+    const _e = {
         interactionRadius: 200,
         topDownCollider: {
             x: 0,

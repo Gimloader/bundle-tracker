@@ -1,7 +1,7 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
 a.register('5GGbn', function(b, c) {
     var d, e, f, g, h;
-    b.exports, b.exports = (g = a('XRZOB'), h = a('LEQ5w'), d = {
+    b.exports, b.exports = (g = a('Pd7fd'), h = a('O0Kav'), d = {
         21: function(i, j, k) {
             var l = this && this.__createBinding || (Object.create ? function(m, n, o, p) {
                     void 0 === p && (p = o);
@@ -98,7 +98,7 @@ a.register('5GGbn', function(b, c) {
         };
         return d[i].call(k.exports, k, k.exports, a), k.exports;
     }(21), f);
-}), a.register('XRZOB', function(b, c) {
+}), a.register('Pd7fd', function(b, c) {
     b.exports, b.exports = (() => {
         var d = {
                 511: (d, c, _h) => {
@@ -159,27 +159,27 @@ a.register('5GGbn', function(b, c) {
                         return new(k || (k = Promise))(function(m, n) {
                             function o(p) {
                                 try {
-                                    _o(l.next(p));
+                                    _q(l.next(p));
                                 } catch (p) {
                                     n(p);
                                 }
                             }
 
-                            function o(p) {
+                            function p(q) {
                                 try {
-                                    _o(l.throw(p));
-                                } catch (p) {
-                                    n(p);
+                                    _q(l.throw(q));
+                                } catch (q) {
+                                    n(q);
                                 }
                             }
 
-                            function _o(p) {
-                                var q;
-                                p.done ? m(p.value) : (q = p.value, q instanceof k ? q : new k(function(r) {
-                                    r(q);
-                                })).then(_k, _l);
+                            function _q(r) {
+                                var s;
+                                r.done ? m(r.value) : (s = r.value, s instanceof k ? s : new k(function(t) {
+                                    t(s);
+                                })).then(o, p);
                             }
-                            _m((l = l.apply(i, j || [])).next());
+                            _q((l = l.apply(i, j || [])).next());
                         });
                     };
                     Object.defineProperty(f, '__esModule', {
@@ -252,13 +252,13 @@ a.register('5GGbn', function(b, c) {
                                 y: h,
                                 dx: i,
                                 dy: j,
-                                ctx: _k,
-                                hue: _l,
-                                speed: _m,
+                                ctx: k,
+                                hue: l,
+                                speed: m,
                                 traceLength: n,
                                 acceleration: o
                             } = f;
-                            for (this._coordinates = [], this._currentDistance = 0, this._x = g, this._y = h, this._sx = g, this._sy = h, this._dx = i, this._dy = j, this._ctx = _k, this._hue = _l, this._speed = _m, this._traceLength = n, this._acceleration = o, this._totalDistance = (0, e.getDistance)(g, h, i, j); this._traceLength--;)
+                            for (this._coordinates = [], this._currentDistance = 0, this._x = g, this._y = h, this._sx = g, this._sy = h, this._dx = i, this._dy = j, this._ctx = k, this._hue = l, this._speed = m, this._traceLength = n, this._acceleration = o, this._totalDistance = (0, e.getDistance)(g, h, i, j); this._traceLength--;)
                                 this._coordinates.push([
                                     g,
                                     h
@@ -279,17 +279,17 @@ a.register('5GGbn', function(b, c) {
             };
             return d[g].call(i.exports, i, i.exports, f), i.exports;
         }
-        var f = {};
+        var g = {};
         return (() => {
-            var g = f;
-            Object.defineProperty(g, '__esModule', {
+            var h = g;
+            Object.defineProperty(h, '__esModule', {
                 value: !0
-            }), g.Fireworks = void 0;
-            var h = _n(668),
-                i = _n(449),
-                j = _n(511),
-                k = _n(909);
-            g.Fireworks = class {
+            }), h.Fireworks = void 0;
+            var i = f(668),
+                j = f(449),
+                k = f(511),
+                l = f(909);
+            h.Fireworks = class {
                 get isRunning() {
                     return this._running;
                 }
@@ -311,128 +311,128 @@ a.register('5GGbn', function(b, c) {
                 clear() {
                     this._ctx && (this._traces = [], this._explosions = [], this._ctx.clearRect(0, 0, this._width, this._height));
                 }
-                setOptions(l) {
-                    for (var [m, _n] of Object.entries(l)) {
-                        var o = Object.prototype.hasOwnProperty.call(this, m);
-                        if ('function' == typeof this[m])
+                setOptions(m) {
+                    for (var [n, o] of Object.entries(m)) {
+                        var p = Object.prototype.hasOwnProperty.call(this, n);
+                        if ('function' == typeof this[n])
                             throw new Error('You cannot change the methods of the class!');
-                        o && ('object' == typeof this[m] ? Object.assign(this[m], _n) : this[m] = _n), 'sound' === m && Object.assign(this._sound.options, _n);
+                        p && ('object' == typeof this[n] ? Object.assign(this[n], o) : this[n] = o), 'sound' === n && Object.assign(this._sound.options, o);
                     }
                 }
                 setSize() {
                     var {
-                        width: l = this._container instanceof HTMLCanvasElement ? this._canvas.width : this._container.clientWidth,
-                        height: m = this._container instanceof HTMLCanvasElement ? this._canvas.height : this._container.clientHeight
+                        width: m = this._container instanceof HTMLCanvasElement ? this._canvas.width : this._container.clientWidth,
+                        height: n = this._container instanceof HTMLCanvasElement ? this._canvas.height : this._container.clientHeight
                     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    this._width = l, this._height = m, this._canvas.width = l, this._canvas.height = m, this.setBoundaries({
-                        width: l,
-                        height: m
+                    this._width = m, this._height = n, this._canvas.width = m, this._canvas.height = n, this.setBoundaries({
+                        width: m,
+                        height: n
                     });
                 }
-                setBoundaries(l) {
-                    this.boundaries = Object.assign(Object.assign({}, this.boundaries), l);
+                setBoundaries(m) {
+                    this.boundaries = Object.assign(Object.assign({}, this.boundaries), m);
                 }
-                useMouse(l, m) {
-                    (this.mouse.click || this.mouse.move) && (this._mx = l.pageX - this._canvas.offsetLeft, this._my = l.pageY - this._canvas.offsetTop, this._m = m);
+                useMouse(m, n) {
+                    (this.mouse.click || this.mouse.move) && (this._mx = m.pageX - this._canvas.offsetLeft, this._my = m.pageY - this._canvas.offsetTop, this._m = n);
                 }
                 windowResize() {
                     this.setSize();
                 }
-                mouseDown(l) {
-                    this.useMouse(l, this.mouse.click);
+                mouseDown(m) {
+                    this.useMouse(m, this.mouse.click);
                 }
-                mouseUp(l) {
-                    this.useMouse(l, !1);
+                mouseUp(m) {
+                    this.useMouse(m, !1);
                 }
-                mouseMove(l) {
-                    this.useMouse(l, this._m);
+                mouseMove(m) {
+                    this.useMouse(m, this._m);
                 }
                 render() {
-                    var l = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this._timestamp;
+                    var m = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this._timestamp;
                     if (this._ctx && this._running) {
-                        requestAnimationFrame(l => this.render(l)), this._ctx.globalCompositeOperation = 'destination-out', this._ctx.fillStyle = 'rgba(0, 0, 0, '.concat(this.opacity, ')'), this._ctx.fillRect(0, 0, this._width, this._height), this._ctx.globalCompositeOperation = 'lighter', this._ctx.lineCap = this.lineStyle, this._ctx.lineJoin = 'round', this.drawBoundaries(), this.initTrace(), this.drawTrace(), this.drawExplosion();
-                        var m = l - this._timestamp;
-                        this._timestamp = l, this._tick += m * (this.intensity * Math.PI) / 1000;
+                        requestAnimationFrame(m => this.render(m)), this._ctx.globalCompositeOperation = 'destination-out', this._ctx.fillStyle = 'rgba(0, 0, 0, '.concat(this.opacity, ')'), this._ctx.fillRect(0, 0, this._width, this._height), this._ctx.globalCompositeOperation = 'lighter', this._ctx.lineCap = this.lineStyle, this._ctx.lineJoin = 'round', this.drawBoundaries(), this.initTrace(), this.drawTrace(), this.drawExplosion();
+                        var n = m - this._timestamp;
+                        this._timestamp = m, this._tick += n * (this.intensity * Math.PI) / 1000;
                     }
                 }
                 drawBoundaries() {
                     this.boundaries.visible && (this._ctx.beginPath(), this._ctx.lineWidth = 1, this._ctx.strokeStyle = 'red', this._ctx.rect(this.boundaries.x, this.boundaries.y, this.boundaries.width - 2 * this.boundaries.x, 0.5 * this.boundaries.height), this._ctx.stroke());
                 }
                 initTrace() {
-                    this._ds = (0, k.randomInt)(this.delay.min, this.delay.max), (this._tick > this._ds || this._m && this.mouse.max > this._traces.length) && (this._traces.push(new h.Trace({
-                        x: this._width * (0, k.randomInt)(this.rocketsPoint.min, this.rocketsPoint.max) / 100,
+                    this._ds = (0, l.randomInt)(this.delay.min, this.delay.max), (this._tick > this._ds || this._m && this.mouse.max > this._traces.length) && (this._traces.push(new i.Trace({
+                        x: this._width * (0, l.randomInt)(this.rocketsPoint.min, this.rocketsPoint.max) / 100,
                         y: this._height,
-                        dx: this._mx && this.mouse.move || this._m ? this._mx : (0, k.randomInt)(this.boundaries.x, this.boundaries.width - 2 * this.boundaries.x),
-                        dy: this._my && this.mouse.move || this._m ? this._my : (0, k.randomInt)(this.boundaries.y, 0.5 * this.boundaries.height),
+                        dx: this._mx && this.mouse.move || this._m ? this._mx : (0, l.randomInt)(this.boundaries.x, this.boundaries.width - 2 * this.boundaries.x),
+                        dy: this._my && this.mouse.move || this._m ? this._my : (0, l.randomInt)(this.boundaries.y, 0.5 * this.boundaries.height),
                         ctx: this._ctx,
-                        hue: (0, k.randomInt)(this.hue.min, this.hue.max),
+                        hue: (0, l.randomInt)(this.hue.min, this.hue.max),
                         speed: this.traceSpeed,
                         acceleration: this.acceleration,
                         traceLength: this.trace
                     })), this._tick = 0);
                 }
                 drawTrace() {
-                    var l = this._traces.length;
-                    for (this._ctx.lineWidth = (0, k.randomFloat)(this.lineWidth.trace.min, this.lineWidth.trace.max); l--;)
-                        this._traces[l].draw(), this._traces[l].update((h, _n, f) => {
-                            this.initExplosion(h, _n, f), this._sound.play(), this._traces.splice(l, 1);
+                    var m = this._traces.length;
+                    for (this._ctx.lineWidth = (0, l.randomFloat)(this.lineWidth.trace.min, this.lineWidth.trace.max); m--;)
+                        this._traces[m].draw(), this._traces[m].update((i, f, g) => {
+                            this.initExplosion(i, f, g), this._sound.play(), this._traces.splice(m, 1);
                         });
                 }
-                initExplosion(l, m, _n) {
-                    for (var o = this.particles; o--;)
-                        this._explosions.push(new j.Explosion({
-                            x: l,
-                            y: m,
+                initExplosion(m, n, o) {
+                    for (var p = this.particles; p--;)
+                        this._explosions.push(new k.Explosion({
+                            x: m,
+                            y: n,
                             ctx: this._ctx,
-                            hue: _n,
+                            hue: o,
                             friction: this.friction,
                             gravity: this.gravity,
-                            flickering: (0, k.randomInt)(0, 100) <= this.flickering,
-                            lineWidth: (0, k.randomFloat)(this.lineWidth.explosion.min, this.lineWidth.explosion.max),
+                            flickering: (0, l.randomInt)(0, 100) <= this.flickering,
+                            lineWidth: (0, l.randomFloat)(this.lineWidth.explosion.min, this.lineWidth.explosion.max),
                             explosionLength: Math.round(this.explosion),
                             brightness: this.brightness
                         }));
                 }
                 drawExplosion() {
-                    for (var l = this._explosions.length; l--;)
-                        this._explosions[l].draw(), this._explosions[l].update(() => {
-                            this._explosions.splice(l, 1);
+                    for (var m = this._explosions.length; m--;)
+                        this._explosions[m].draw(), this._explosions[m].update(() => {
+                            this._explosions.splice(m, 1);
                         });
                 }
-                constructor(l) {
+                constructor(m) {
                     var {
-                        autoresize: m = !0,
-                        boundaries: n,
-                        brightness: o,
-                        delay: p,
-                        hue: q,
-                        mouse: r,
-                        sound: s,
-                        rocketsPoint: t,
-                        lineWidth: u,
-                        lineStyle: v = 'round',
-                        flickering: w = 50,
-                        trace: x = 3,
-                        traceSpeed: y = 10,
-                        intensity: z = 30,
-                        explosion: A = 5,
-                        gravity: B = 1.5,
-                        opacity: C = 0.5,
-                        particles: D = 50,
-                        friction: E = 0.95,
-                        acceleration: F = 1.05
+                        autoresize: n = !0,
+                        boundaries: o,
+                        brightness: p,
+                        delay: q,
+                        hue: r,
+                        mouse: s,
+                        sound: t,
+                        rocketsPoint: u,
+                        lineWidth: v,
+                        lineStyle: w = 'round',
+                        flickering: x = 50,
+                        trace: y = 3,
+                        traceSpeed: z = 10,
+                        intensity: A = 30,
+                        explosion: B = 5,
+                        gravity: C = 1.5,
+                        opacity: D = 0.5,
+                        particles: E = 50,
+                        friction: F = 0.95,
+                        acceleration: G = 1.05
                     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                    this._tick = 0, this._timestamp = performance.now(), this._version = '1.4.0', this._running = !1, this._m = !1, l instanceof HTMLCanvasElement ? (this._container = l, this._canvas = l) : (this._container = l, this._canvas = document.createElement('canvas'), this._container.appendChild(this._canvas)), this._ctx = this._canvas.getContext('2d'), this._sound = new i.Sound(s), this.setSize(), this.setBoundaries(Object.assign({
+                    this._tick = 0, this._timestamp = performance.now(), this._version = '1.4.0', this._running = !1, this._m = !1, m instanceof HTMLCanvasElement ? (this._container = m, this._canvas = m) : (this._container = m, this._canvas = document.createElement('canvas'), this._container.appendChild(this._canvas)), this._ctx = this._canvas.getContext('2d'), this._sound = new j.Sound(t), this.setSize(), this.setBoundaries(Object.assign({
                         visible: !1,
                         x: 50,
                         y: 50
-                    }, n)), this.autoresize = m, this.trace = x, this.explosion = A, this.gravity = B, this.opacity = C, this.particles = D, this.friction = E, this.acceleration = F, this.flickering = w, this.intensity = z, this.traceSpeed = y, this.lineStyle = v, this.hue = Object.assign({
+                    }, o)), this.autoresize = n, this.trace = y, this.explosion = B, this.gravity = C, this.opacity = D, this.particles = E, this.friction = F, this.acceleration = G, this.flickering = x, this.intensity = A, this.traceSpeed = z, this.lineStyle = w, this.hue = Object.assign({
                         min: 0,
                         max: 360
-                    }, q), this.rocketsPoint = Object.assign({
+                    }, r), this.rocketsPoint = Object.assign({
                         min: 50,
                         max: 50
-                    }, t), this.lineWidth = Object.assign({
+                    }, u), this.lineWidth = Object.assign({
                         explosion: {
                             min: 1,
                             max: 3
@@ -441,23 +441,23 @@ a.register('5GGbn', function(b, c) {
                             min: 1,
                             max: 2
                         }
-                    }, u), this.mouse = Object.assign({
+                    }, v), this.mouse = Object.assign({
                         click: !1,
                         move: !1,
                         max: 1
-                    }, r), this.delay = Object.assign({
+                    }, s), this.delay = Object.assign({
                         min: 15,
                         max: 30
-                    }, p), this.brightness = Object.assign({
+                    }, q), this.brightness = Object.assign({
                         min: 50,
                         max: 80,
                         decay: {
                             min: 0.015,
                             max: 0.03
                         }
-                    }, o), this.autoresize && window.addEventListener('resize', () => this.windowResize()), this._canvas.addEventListener('mousedown', l => this.mouseDown(l)), this._canvas.addEventListener('mouseup', l => this.mouseUp(l)), this._canvas.addEventListener('mousemove', l => this.mouseMove(l));
+                    }, p), this.autoresize && window.addEventListener('resize', () => this.windowResize()), this._canvas.addEventListener('mousedown', m => this.mouseDown(m)), this._canvas.addEventListener('mouseup', m => this.mouseUp(m)), this._canvas.addEventListener('mousemove', m => this.mouseMove(m));
                 }
             };
-        })(), f;
+        })(), g;
     })();
 });

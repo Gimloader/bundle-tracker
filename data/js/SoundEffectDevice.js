@@ -6,64 +6,64 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('6/JDK', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('uwddv', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _s(b.exports, 'default', function() {
-        return _s;
+    }), a(c.exports, 'default', function() {
+        return _t;
     });
-    var e = a('1bFPu'),
-        f = a('UJCwk'),
-        g = a('2Xvuf'),
-        h = a('i3kcr'),
-        i = a('Jfada'),
-        j = a('9tz3H'),
-        k = a('/pbxo'),
-        l = a('1f1YX'),
-        m = a('07pQo'),
-        n = a('I35Ay'),
-        o = a('+uQv7'),
-        p = a('dTXti'),
-        q = a('tWv3W');
-    class r extends n.default {
+    var f = b('s/YA9'),
+        g = b('oH3gV'),
+        h = b('UaUBz0'),
+        i = b('p7Hfe'),
+        j = b('5Fjxs'),
+        k = b('hycyg'),
+        l = b('UkCpC'),
+        m = b('CbU7r'),
+        n = b('3jaMj'),
+        o = b('ltxDW'),
+        p = b('73Aki'),
+        q = b('AHhkR'),
+        r = b('obrhM');
+    class s extends o.default {
         play() {
-            this.options.audioUrl && (this.options.characterType !== q.SoundEffectCharacterType.gameOwner || (0, h.AmIGameOwner)()) && (0, m.playSound)({
-                path: (0, f.GetSoundUrl)(this.options.audioUrl),
-                volume: (0, l.getVolume)({
+            this.options.audioUrl && (this.options.characterType !== r.SoundEffectCharacterType.gameOwner || (0, i.AmIGameOwner)()) && (0, n.playSound)({
+                path: (0, g.GetSoundUrl)(this.options.audioUrl),
+                volume: (0, m.getVolume)({
                     volume: this.options.volume / 100,
-                    type: l.SoundType.soundEffect
+                    type: m.SoundType.soundEffect
                 })
             });
         }
-        constructor(_s) {
-            if (super(_s), (0, e.default)(this, 'onMessage', _s => {
-                    _s.key === q.Messages.play && _s.data.characterId === (0, i.default)() && this.play();
-                }), (0, k.InPreGamePhase)() && (0, j.isSavedVersion)()) {
-                const t = p.default.Utility;
-                new(0, o.default)({
+        constructor(t) {
+            if (super(t), (0, f.default)(this, 'onMessage', t => {
+                    t.key === r.Messages.play && t.data.characterId === (0, j.default)() && this.play();
+                }), (0, l.InPreGamePhase)() && (0, k.isSavedVersion)()) {
+                const u = q.default.Utility;
+                new(0, p.default)({
                     device: this,
-                    baseColor: t.baseColor,
-                    boxColor: t.boxColor,
+                    baseColor: u.baseColor,
+                    boxColor: u.boxColor,
                     content: {
                         icon: {
-                            image: (0, g.default)('devices/sound_effect/icon.png')
+                            image: (0, h.default)('devices/sound_effect/icon.png')
                         }
                     }
                 });
             }
         }
     }
-    var _s = r;
-}), a.register('tWv3W', function(b, c) {
-    let d;
+    var _t = s;
+}), b.register('obrhM', function(c, d) {
     let e;
-    var f;
-    e(b.exports, 'Messages', function() {
-        return d;
-    }), e(b.exports, 'SoundEffectCharacterType', function() {
+    let f;
+    var g;
+    a(c.exports, 'Messages', function() {
         return e;
-    }), (d || (d = {})).play = 'play', (f = e || (e = {})).all = 'all', f.gameOwner = 'gameOwner';
+    }), a(c.exports, 'SoundEffectCharacterType', function() {
+        return f;
+    }), (e || (e = {})).play = 'play', (g = f || (f = {})).all = 'all', g.gameOwner = 'gameOwner';
 });

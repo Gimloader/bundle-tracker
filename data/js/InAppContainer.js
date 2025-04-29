@@ -7,90 +7,90 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('KuuVw', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('5GzjT', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _l(b.exports, 'default', function() {
-        return _k;
+    }), a(d.exports, 'default', function() {
+        return _m;
     });
-    var e = a('0hzx+'),
-        f = a('2x11J');
-    a('LEQ5w');
-    var g = a('11nl3'),
-        h = a('bHGrl'),
-        i = a('mQCZt'),
-        j = a('Cc8U1');
-    var _k = (0, f.observer)(() => {
+    var g = c('gRbUn'),
+        h = c('6jmvl');
+    c('O0Kav');
+    var i = c('SxihY'),
+        j = c('K/2xB'),
+        k = c('LihP5'),
+        l = c('Rdb4k');
+    var _m = (0, h.observer)(() => {
         const {
             hooks: {
-                hookJSON: _l
+                hookJSON: n
             }
-        } = (0, h.default)();
-        return (0, e.jsx)(j.default, {
-            stringifiedData: _l,
+        } = (0, j.default)();
+        return (0, g.jsx)(l.default, {
+            stringifiedData: n,
             onClose: () => {
-                (0, i.default)(g.default.none);
+                (0, k.default)(i.default.none);
             }
         });
     });
-}), a.register('Cc8U1', function(b, c) {
-    _v(b.exports, 'default', function() {
-        return _o;
+}), c.register('Rdb4k', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _q;
     });
-    var d = a('0hzx+'),
-        e = a('sgToH'),
-        f = a('2x11J'),
-        g = a('LEQ5w'),
-        h = a('PMl60'),
-        i = a('nEBHu'),
-        j = a('Gxfhq'),
-        k = a('le6+G'),
-        l = a('//Rup'),
-        m = a('31UsN'),
-        n = a('oKonb');
-    var _o = (0, f.observer)(_v => {
-        const [p, q] = g.useState(!1), [r, s, t] = (0, h.useBoolean)(!1), u = (0, j.default)();
-        g.useEffect(() => {
-            q(!0);
-            const _v = (0, k.AddInputBlockingUI)().dispose;
-            return () => _v();
-        }, []), g.useEffect(() => (window.addEventListener('TEST_VALUES_VISIBLE', s), window.addEventListener('TEST_VALUES_HIDDEN', t), () => {
-            window.removeEventListener('TEST_VALUES_VISIBLE', s), window.removeEventListener('TEST_VALUES_HIDDEN', t);
-        })), g.useEffect(() => {
-            n.default.data = JSON.parse(_l.stringifiedData);
-        }, [_l.stringifiedData]), g.useEffect(() => {
-            u || _v();
-        }, [u]);
-        const _v = () => {
-                q(!1);
+    var f = c('gRbUn'),
+        g = c('3t9ce'),
+        h = c('6jmvl'),
+        i = c('O0Kav'),
+        j = c('quE27'),
+        k = c('flG2L'),
+        l = c('9N6Bn'),
+        m = c('eLsOE'),
+        n = c('LpFts'),
+        o = c('VLnnS'),
+        p = c('T4qsB');
+    var _q = (0, h.observer)(a => {
+        const [r, s] = i.useState(!1), [t, u, v] = (0, j.useBoolean)(!1), w = (0, l.default)();
+        i.useEffect(() => {
+            s(!0);
+            const x = (0, m.AddInputBlockingUI)().dispose;
+            return () => x();
+        }, []), i.useEffect(() => (window.addEventListener('TEST_VALUES_VISIBLE', u), window.addEventListener('TEST_VALUES_HIDDEN', v), () => {
+            window.removeEventListener('TEST_VALUES_VISIBLE', u), window.removeEventListener('TEST_VALUES_HIDDEN', v);
+        })), i.useEffect(() => {
+            p.default.data = JSON.parse(a.stringifiedData);
+        }, [a.stringifiedData]), i.useEffect(() => {
+            w || _x();
+        }, [w]);
+        const _x = () => {
+                s(!1);
             },
-            w = (0, j.default)() && p;
-        return (0, d.jsx)(m.default.Provider, {
-            value: n.default,
-            children: (0, d.jsx)(e.default, {
-                open: w,
+            y = (0, l.default)() && r;
+        return (0, f.jsx)(o.default.Provider, {
+            value: p.default,
+            children: (0, f.jsx)(g.default, {
+                open: y,
                 afterOpenChange: () => {
-                    w || _l.onClose();
+                    y || a.onClose();
                 },
-                onClose: _v,
-                placement: i.default.drawer.placement,
+                onClose: _x,
+                placement: k.default.drawer.placement,
                 closable: !0,
-                width: r ? i.default.drawer.widths.testValues : i.default.drawer.widths.default,
-                children: (0, d.jsx)(l.default, {})
+                width: t ? k.default.drawer.widths.testValues : k.default.drawer.widths.default,
+                children: (0, f.jsx)(n.default, {})
             })
         });
     });
-}), a.register('nEBHu', function(b, c) {
-    _l(b.exports, 'default', function() {
-        return _d;
+}), c.register('flG2L', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         name: 'Hook',
         drawer: {
             placement: 'left',
@@ -100,79 +100,79 @@ a.register('KuuVw', function(b, c) {
             }
         }
     };
-}), a.register('//Rup', function(b, c) {
-    _l(b.exports, 'default', function() {
-        return _n;
+}), c.register('LpFts', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _p;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('b5kvC'),
-        g = a('nEBHu'),
-        h = a('aPprg'),
-        i = a('xhIul');
-    let j, k, l, m = _l => _l;
-    var _n = () => (0, d.jsx)(h.default, {
-        children: (0, d.jsxs)(_o, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('Eh2Wh'),
+        i = c('flG2L'),
+        j = c('lpNzY'),
+        k = c('K3Edl');
+    let l, m, n, o = a => a;
+    var _p = () => (0, f.jsx)(j.default, {
+        children: (0, f.jsxs)(_q, {
             children: [
-                (0, d.jsxs)(_p, {
+                (0, f.jsxs)(_r, {
                     children: [
-                        g.default.name,
+                        i.default.name,
                         's'
                     ]
                 }),
-                (0, d.jsxs)(_q, {
+                (0, f.jsxs)(_s, {
                     children: [
-                        g.default.name,
+                        i.default.name,
                         's are options that game hosts can customize before playing your map. Use ',
-                        g.default.name,
+                        i.default.name,
                         's to allow game hosts to modify options such as game difficulty, time limits, or the kit students practice.'
                     ]
                 }),
-                (0, d.jsx)(i.default, {})
+                (0, f.jsx)(k.default, {})
             ]
         })
     });
-    const _o = e.default.div.attrs({
+    const _q = g.default.div.attrs({
             className: 'flex-column flex-center maxWidth'
-        })(j || (j = m``)),
-        _p = e.default.div(k || (k = m`
+        })(l || (l = o``)),
+        _r = g.default.div(m || (m = o`
   font-size: 36px;
   font-weight: ${ 0 };
-`), f.FontWeights.Bold),
-        _q = e.default.div(l || (l = m`
+`), h.FontWeights.Bold),
+        _s = g.default.div(n || (n = o`
   font-size: 18px;
   margin-top: 4px;
 `));
-}), a.register('aPprg', function(b, c) {
-    _l(b.exports, 'default', function() {
-        return _h;
+}), c.register('lpNzY', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _j;
     });
-    var d = a('Axq+p'),
-        e = a('b5kvC'),
-        f = a('vShe/');
-    let g;
-    var _h = d.default.div(g || (g = (_l => _l)`
+    var f = c('u4s09'),
+        g = c('Eh2Wh'),
+        h = c('HOIhZ');
+    let i;
+    var _j = f.default.div(i || (i = (a => a)`
   color: ${ 0 };
   font-family: ${ 0 };
-`), f.default.Black, e.Fonts.ProductSans);
-}), a.register('xhIul', function(b, c) {
-    _l(b.exports, 'default', function() {
-        return _k;
+`), h.default.Black, g.Fonts.ProductSans);
+}), c.register('K3Edl', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _m;
     });
-    var d = a('0hzx+'),
-        e = a('CAKUf'),
-        f = a('2x11J');
-    a('LEQ5w');
-    var g = a('JNsYL'),
-        h = a('yotix'),
-        i = a('lcrzD'),
-        j = a('tA5HU');
-    var _k = (0, f.observer)(() => {
-        var _l;
-        const m = (0, h.default)(),
-            n = (0, g.useAmIGameOwner)();
-        return (null === (_l = m.hooks) || void 0 === _l ? void 0 : _l.length) && n ? (0, d.jsxs)(e.default, {
+    var f = c('gRbUn'),
+        g = c('Ll6/N'),
+        h = c('6jmvl');
+    c('O0Kav');
+    var i = c('rvVz6'),
+        j = c('TgUk7'),
+        k = c('G3E1Q'),
+        l = c('tbuJA');
+    var _m = (0, h.observer)(() => {
+        var n;
+        const o = (0, j.default)(),
+            p = (0, i.useAmIGameOwner)();
+        return (null === (n = o.hooks) || void 0 === n ? void 0 : n.length) && p ? (0, f.jsxs)(g.default, {
             type: 'card',
             style: {
                 width: '100%',
@@ -180,100 +180,100 @@ a.register('KuuVw', function(b, c) {
             },
             destroyInactiveTabPane: !0,
             children: [
-                (0, d.jsx)(e.default.TabPane, {
+                (0, f.jsx)(g.default.TabPane, {
                     tab: 'Hooks',
-                    children: (0, d.jsx)(i.default, {})
+                    children: (0, f.jsx)(k.default, {})
                 }, 'tab-hooks'),
-                (0, d.jsx)(e.default.TabPane, {
+                (0, f.jsx)(g.default.TabPane, {
                     tab: 'Test Values',
-                    children: (0, d.jsx)(j.default, {})
+                    children: (0, f.jsx)(l.default, {})
                 }, 'tab-test-values')
             ]
-        }) : (0, d.jsx)('div', {
+        }) : (0, f.jsx)('div', {
             style: {
                 marginTop: 15
             },
             className: 'maxWidth',
-            children: (0, d.jsx)(i.default, {})
+            children: (0, f.jsx)(k.default, {})
         });
     });
-}), a.register('yotix', function(b, c) {
-    _p(b.exports, 'default', function() {
-        return _e;
-    });
-    var d = a('oKonb');
-    var _e = () => d.default.data;
-}), a.register('oKonb', function(b, c) {
-    _p(b.exports, 'default', function() {
+}), c.register('TgUk7', function(d, e) {
+    a(d.exports, 'default', function() {
         return _g;
     });
-    var d = a('csYze'),
-        e = a('YuT/D');
-    class f {
+    var f = c('T4qsB');
+    var _g = () => f.default.data;
+}), c.register('T4qsB', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
+    });
+    var f = c('4F2ZN'),
+        g = c('JkQCT');
+    class h {
         constructor() {
             this.data = {
                 hooks: []
-            }, (0, e.makeObservable)(this);
+            }, (0, g.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], f.prototype, 'data', void 0);
-    var _g = new f();
-}), a.register('lcrzD', function(b, c) {
-    _p(b.exports, 'default', function() {
-        return _o;
+    (0, f.__decorate)([g.observable], h.prototype, 'data', void 0);
+    var _i = new h();
+}), c.register('G3E1Q', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _q;
     });
-    var d = a('0hzx+'),
-        e = a('2x11J');
-    a('LEQ5w');
-    var f = a('Axq+p'),
-        g = a('PMl60'),
-        h = a('nEBHu'),
-        i = a('2AWDu'),
-        j = a('LbvQU'),
-        k = a('yotix'),
-        l = a('kig3a'),
-        m = a('YzWnC');
-    let n;
-    var _o = (0, e.observer)(() => {
-        const _p = (0, k.default)(),
-            [q, r, s] = (0, g.useBoolean)(!1);
-        return (0, d.jsxs)(d.Fragment, {
+    var f = c('gRbUn'),
+        g = c('6jmvl');
+    c('O0Kav');
+    var h = c('u4s09'),
+        i = c('quE27'),
+        j = c('flG2L'),
+        k = c('z5AS7'),
+        l = c('CZb2U'),
+        m = c('TgUk7'),
+        n = c('7SttF'),
+        o = c('pwDJ7');
+    let p;
+    var _q = (0, g.observer)(() => {
+        const r = (0, m.default)(),
+            [s, t, u] = (0, i.useBoolean)(!1);
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, d.jsxs)(_p, {
+                (0, f.jsxs)(_r, {
                     children: [
-                        _p.hooks.length < i.default.maxHooks ? (0, d.jsxs)(j.HookNewCardButton, {
+                        r.hooks.length < k.default.maxHooks ? (0, f.jsxs)(l.HookNewCardButton, {
                             style: {
                                 marginBottom: 10
                             },
-                            onClick: r,
+                            onClick: t,
                             children: [
                                 'New ',
-                                h.default.name
+                                j.default.name
                             ]
                         }) : null,
-                        _p.hooks.map((q, r) => (0, d.jsx)(l.default, {
-                            id: q.key,
-                            type: q.type,
-                            index: r,
-                            totalHooks: _p.hooks.length
-                        }, q.key))
+                        r.hooks.map((s, t) => (0, f.jsx)(n.default, {
+                            id: s.key,
+                            type: s.type,
+                            index: t,
+                            totalHooks: r.hooks.length
+                        }, s.key))
                     ]
                 }),
-                (0, d.jsx)(m.default, {
-                    visible: q,
-                    close: s
+                (0, f.jsx)(o.default, {
+                    visible: s,
+                    close: u
                 })
             ]
         });
     });
-    const _p = f.default.div.attrs({
+    const _r = h.default.div.attrs({
         className: 'maxWidth'
-    })(n || (n = (_w => _w)``));
-}), a.register('2AWDu', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _d;
+    })(p || (p = (a => a)``));
+}), c.register('z5AS7', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         maxHooks: 12,
         maxKeyLength: 32,
         maxDisplayNameLength: 64,
@@ -287,28 +287,28 @@ a.register('KuuVw', function(b, c) {
             maxNameLength: 64
         }
     };
-}), a.register('LbvQU', function(b, c) {
-    _w(b.exports, 'HookNewCardButton', function() {
-        return _l;
-    }), _w(b.exports, 'HookCardButton', function() {
-        return _m;
+}), c.register('CZb2U', function(d, e) {
+    a(d.exports, 'HookNewCardButton', function() {
+        return _n;
+    }), a(d.exports, 'HookCardButton', function() {
+        return _o;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('oXQNI'),
-        f = a('Axq+p'),
-        g = a('vShe/'),
-        h = a('b5kvC');
-    let i, j, k = _w => _w;
-    const _l = _w => (0, d.jsx)(_n, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('QZ0Z+'),
+        h = c('u4s09'),
+        i = c('HOIhZ'),
+        j = c('Eh2Wh');
+    let k, l, m = a => a;
+    const _n = a => (0, f.jsx)(_p, {
             hoverable: !0,
-            onClick: _w.onClick,
-            style: _w.style,
-            children: (0, d.jsx)(_o, {
-                children: (0, d.jsxs)('div', {
+            onClick: a.onClick,
+            style: a.style,
+            children: (0, f.jsx)(_q, {
+                children: (0, f.jsxs)('div', {
                     className: 'flex vc',
                     children: [
-                        (0, d.jsx)('i', {
+                        (0, f.jsx)('i', {
                             style: {
                                 color: '#2e7d32',
                                 marginRight: 10,
@@ -316,512 +316,512 @@ a.register('KuuVw', function(b, c) {
                             },
                             className: 'fas fa-plus-circle'
                         }),
-                        (0, d.jsx)('div', {
-                            children: _w.children
+                        (0, f.jsx)('div', {
+                            children: a.children
                         })
                     ]
                 })
             })
         }),
-        _m = _w => (0, d.jsx)(_n, {
+        _o = a => (0, f.jsx)(_p, {
             hoverable: !0,
-            onClick: _w.onClick,
-            style: _w.style,
-            children: (0, d.jsx)(_o, {
-                children: _w.children
+            onClick: a.onClick,
+            style: a.style,
+            children: (0, f.jsx)(_q, {
+                children: a.children
             })
         }),
-        _n = (0, f.default)(e.default)(i || (i = k``)),
-        _o = f.default.div(j || (j = k`
+        _p = (0, h.default)(g.default)(k || (k = m``)),
+        _q = h.default.div(l || (l = m`
   color: ${ 0 };
   font-size: 18px;
   font-weight: ${ 0 };
-`), g.default.Black, h.FontWeights.Bold);
-}), a.register('kig3a', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _A;
+`), i.default.Black, j.FontWeights.Bold);
+}), c.register('7SttF', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _C;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('ulE4q'),
-        h = a('/rAT0'),
-        i = a('WfOD7'),
-        j = a('YRlpt'),
-        k = a('LHeQv'),
-        l = a('b5kvC'),
-        m = a('PMl60'),
-        n = a('CM/CB'),
-        o = a('sWOBO'),
-        p = a('LbvQU'),
-        q = a('fNsdX'),
-        r = a('exDBf'),
-        s = a('blUBm'),
-        t = a('nEBHu');
-    let u, v, w, x, y, z = _w => _w;
-    var _A = _w => {
-        const [B, C, D] = (0, m.useBoolean)(!1), E = e.useMemo(() => (0, o.default)(_w.type), [_w.type]), F = () => {
-            j.default.confirm({
-                title: `Are you sure you want to delete this ${ t.default.name.toLowerCase() }?`,
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('P1KtI'),
+        j = c('M3JwW'),
+        k = c('xAv1a'),
+        l = c('AE7vR'),
+        m = c('1ZCzi'),
+        n = c('Eh2Wh'),
+        o = c('quE27'),
+        p = c('l5bbb'),
+        q = c('zEuNa'),
+        r = c('CZb2U'),
+        s = c('E6YpH0'),
+        t = c('sxAsZ'),
+        u = c('TkKuW'),
+        v = c('flG2L');
+    let w, x, y, z, A, B = a => a;
+    var _C = a => {
+        const [D, E, F] = (0, o.useBoolean)(!1), G = g.useMemo(() => (0, q.default)(a.type), [a.type]), H = () => {
+            l.default.confirm({
+                title: `Are you sure you want to delete this ${ v.default.name.toLowerCase() }?`,
                 onOk: () => {
-                    (0, r.default)({
-                        action: s.default.removeHook,
+                    (0, t.default)({
+                        action: u.default.removeHook,
                         payload: {
-                            key: _w.id
+                            key: a.id
                         }
                     });
                 }
             });
-        }, G = B => {
-            (0, r.default)({
-                action: s.default.moveHook,
+        }, I = D => {
+            (0, t.default)({
+                action: u.default.moveHook,
                 payload: {
-                    key: _w.id,
-                    direction: B
+                    key: a.id,
+                    direction: D
                 }
             });
         };
-        return (0, d.jsxs)(d.Fragment, {
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, d.jsx)(p.HookCardButton, {
+                (0, f.jsx)(r.HookCardButton, {
                     style: {
                         marginBottom: 10
                     },
-                    onClick: C,
-                    children: (0, d.jsxs)(_B, {
+                    onClick: E,
+                    children: (0, f.jsxs)(_D, {
                         children: [
-                            (0, d.jsxs)(_C, {
+                            (0, f.jsxs)(_E, {
                                 children: [
-                                    (0, d.jsx)(_E, {
-                                        children: E
+                                    (0, f.jsx)(_G, {
+                                        children: G
                                     }),
-                                    (0, d.jsx)(_F, {
-                                        children: _w.id
+                                    (0, f.jsx)(_H, {
+                                        children: a.id
                                     })
                                 ]
                             }),
-                            (0, d.jsx)(_D, {
-                                children: (0, d.jsx)(h.default, {
-                                    overlay: () => (0, d.jsxs)(i.default, {
+                            (0, f.jsx)(_F, {
+                                children: (0, f.jsx)(j.default, {
+                                    overlay: () => (0, f.jsxs)(k.default, {
                                         children: [
-                                            (0, d.jsxs)(i.default.Item, {
-                                                onClick: (0, q.default)(F),
+                                            (0, f.jsxs)(k.default.Item, {
+                                                onClick: (0, s.default)(H),
                                                 children: [
                                                     'Delete ',
-                                                    t.default.name
+                                                    v.default.name
                                                 ]
                                             }),
-                                            _w.index > 0 && _w.totalHooks > 1 ? (0, d.jsx)(i.default.Item, {
-                                                onClick: (0, q.default)(() => G('up')),
+                                            a.index > 0 && a.totalHooks > 1 ? (0, f.jsx)(k.default.Item, {
+                                                onClick: (0, s.default)(() => I('up')),
                                                 children: 'Move Up'
                                             }) : null,
-                                            _w.index !== _w.totalHooks && _w.totalHooks > 1 ? (0, d.jsx)(i.default.Item, {
-                                                onClick: (0, q.default)(() => G('down')),
+                                            a.index !== a.totalHooks && a.totalHooks > 1 ? (0, f.jsx)(k.default.Item, {
+                                                onClick: (0, s.default)(() => I('down')),
                                                 children: 'Move Down'
                                             }) : null
                                         ]
                                     }),
-                                    children: (0, d.jsx)(g.default, {
+                                    children: (0, f.jsx)(i.default, {
                                         shape: 'circle',
                                         type: 'dashed',
-                                        icon: (0, d.jsx)(k.default, {})
+                                        icon: (0, f.jsx)(m.default, {})
                                     })
                                 })
                             })
                         ]
                     })
                 }),
-                (0, d.jsx)(n.default, {
-                    visible: B,
-                    close: D,
-                    hookKey: _w.id
+                (0, f.jsx)(p.default, {
+                    visible: D,
+                    close: F,
+                    hookKey: a.id
                 })
             ]
         });
     };
-    const _B = f.default.div.attrs({
+    const _D = h.default.div.attrs({
             className: 'flex vc between maxWidth'
-        })(u || (u = z``)),
-        _C = f.default.div(v || (v = z``)),
-        _D = f.default.div(w || (w = z``)),
-        _E = f.default.div(x || (x = z`
+        })(w || (w = B``)),
+        _E = h.default.div(x || (x = B``)),
+        _F = h.default.div(y || (y = B``)),
+        _G = h.default.div(z || (z = B`
   font-size: 12px;
   font-style: italic;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.65);
   font-weight: ${ 0 };
-`), l.FontWeights.Normal),
-        _F = f.default.div(y || (y = z``));
-}), a.register('CM/CB', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _l;
+`), n.FontWeights.Normal),
+        _H = h.default.div(A || (A = B``));
+}), c.register('l5bbb', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _n;
     });
-    var d = a('0hzx+'),
-        e = a('sgToH'),
-        f = a('2x11J');
-    a('LEQ5w');
-    var g = a('nEBHu'),
-        h = a('aPprg'),
-        i = a('gs/5D'),
-        j = a('2wIB0'),
-        k = a('I/rJl');
-    var _l = (0, f.observer)(_w => {
-        const m = (0, i.default)(_w.hookKey);
-        return m ? (0, d.jsxs)(e.default, {
-            open: _w.visible,
-            placement: g.default.drawer.placement,
-            width: g.default.drawer.widths.default,
-            onClose: _w.close,
+    var f = c('gRbUn'),
+        g = c('3t9ce'),
+        h = c('6jmvl');
+    c('O0Kav');
+    var i = c('flG2L'),
+        j = c('lpNzY'),
+        k = c('0gC58'),
+        l = c('haePJ'),
+        m = c('vrO9Z');
+    var _n = (0, h.observer)(a => {
+        const o = (0, k.default)(a.hookKey);
+        return o ? (0, f.jsxs)(g.default, {
+            open: a.visible,
+            placement: i.default.drawer.placement,
+            width: i.default.drawer.widths.default,
+            onClose: a.close,
             closable: !0,
             children: [
-                (0, d.jsx)(h.default, {
-                    children: (0, d.jsx)(j.default, {
-                        name: _w.hookKey,
-                        type: m.type
+                (0, f.jsx)(j.default, {
+                    children: (0, f.jsx)(l.default, {
+                        name: a.hookKey,
+                        type: o.type
                     })
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         height: 15
                     }
                 }),
-                (0, d.jsx)(k.default, {
-                    hookKey: _w.hookKey
+                (0, f.jsx)(m.default, {
+                    hookKey: a.hookKey
                 })
             ]
         }) : null;
     });
-}), a.register('gs/5D', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _e;
+}), c.register('0gC58', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _g;
     });
-    var d = a('oKonb');
-    var _e = _w => {
-        var f, g;
-        return null === (f = d.default.data) || void 0 === f || null === (g = f.hooks) || void 0 === g ? void 0 : g.find(f => f.key === _w);
+    var f = c('T4qsB');
+    var _g = a => {
+        var h, i;
+        return null === (h = f.default.data) || void 0 === h || null === (i = h.hooks) || void 0 === i ? void 0 : i.find(h => h.key === a);
     };
-}), a.register('2wIB0', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _m;
+}), c.register('haePJ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _o;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('sWOBO'),
-        g = a('nEBHu'),
-        h = a('b5kvC');
-    let i, j, k, l = _w => _w;
-    var _m = _w => (0, d.jsxs)(_n, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('zEuNa'),
+        i = c('flG2L'),
+        j = c('Eh2Wh');
+    let k, l, m, n = a => a;
+    var _o = a => (0, f.jsxs)(_p, {
         children: [
-            (0, d.jsxs)(_o, {
+            (0, f.jsxs)(_q, {
                 children: [
-                    g.default.name,
+                    i.default.name,
                     ' - ',
-                    (0, f.default)(_w.type)
+                    (0, h.default)(a.type)
                 ]
             }),
-            (0, d.jsx)(_p, {
-                children: _w.name
+            (0, f.jsx)(_r, {
+                children: a.name
             })
         ]
     });
-    const _n = e.default.div(i || (i = l``)),
-        _o = e.default.div(j || (j = l`
+    const _p = g.default.div(k || (k = n``)),
+        _q = g.default.div(l || (l = n`
   text-transform: uppercase;
   font-style: italic;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
 `)),
-        _p = e.default.div(k || (k = l`
+        _r = g.default.div(m || (m = n`
   font-size: 28px;
   font-weight: ${ 0 };
-`), h.FontWeights.Bold);
-}), a.register('sWOBO', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _e;
+`), j.FontWeights.Bold);
+}), c.register('zEuNa', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _g;
     });
-    var d = a('QdGLB');
-    var _e = _w => _w === d.HookType.selectBox ? 'Select Box' : _w === d.HookType.number ? 'Number' : _w === d.HookType.kit ? 'Kit' : 'Unknown Type';
-}), a.register('QdGLB', function(b, c) {
-    let d;
-    var e;
-    _w(b.exports, 'HookType', function() {
-        return d;
-    }), (e = d || (d = {})).selectBox = 'selectBox', e.kit = 'kit', e.number = 'number';
-}), a.register('I/rJl', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _o;
+    var f = c('RBtfx4');
+    var _g = a => a === f.HookType.selectBox ? 'Select Box' : a === f.HookType.number ? 'Number' : a === f.HookType.kit ? 'Kit' : 'Unknown Type';
+}), c.register('RBtfx4', function(d, e) {
+    let f;
+    var g;
+    a(d.exports, 'HookType', function() {
+        return f;
+    }), (g = f || (f = {})).selectBox = 'selectBox', g.kit = 'kit', g.number = 'number';
+}), c.register('vrO9Z', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _q;
     });
-    var d = a('0hzx+'),
-        e = a('CAKUf'),
-        f = a('7up2I'),
-        g = a('LEQ5w'),
-        h = a('QdGLB'),
-        i = a('aPprg'),
-        j = a('gs/5D'),
-        k = a('B9adZ'),
-        l = a('4rtw4'),
-        m = a('Mb8oX'),
-        n = a('pWC1H');
-    var _o = (0, f.observer)(_w => {
-        const p = (0, j.default)(_w.hookKey);
-        return (0, d.jsxs)(e.default, {
+    var f = c('gRbUn'),
+        g = c('Ll6/N'),
+        h = c('NU2gN'),
+        i = c('O0Kav'),
+        j = c('RBtfx4'),
+        k = c('lpNzY'),
+        l = c('0gC58'),
+        m = c('BbOZa'),
+        n = c('x36Or'),
+        o = c('z6hpQ'),
+        p = c('XvVbz');
+    var _q = (0, h.observer)(a => {
+        const r = (0, l.default)(a.hookKey);
+        return (0, f.jsxs)(g.default, {
             style: {
                 width: '100%'
             },
             type: 'card',
             children: [
-                p.type === h.HookType.selectBox ? (0, d.jsx)(e.default.TabPane, {
+                r.type === j.HookType.selectBox ? (0, f.jsx)(g.default.TabPane, {
                     tab: 'Options',
-                    children: (0, d.jsx)(i.default, {
-                        children: (0, d.jsx)(m.default, {
-                            hookKey: _w.hookKey
+                    children: (0, f.jsx)(k.default, {
+                        children: (0, f.jsx)(o.default, {
+                            hookKey: a.hookKey
                         })
                     })
                 }, 'tab-hook-select-options') : null,
-                p.type === h.HookType.selectBox || p.type === h.HookType.number ? (0, d.jsxs)(g.Fragment, {
+                r.type === j.HookType.selectBox || r.type === j.HookType.number ? (0, f.jsxs)(i.Fragment, {
                     children: [
-                        (0, d.jsx)(e.default.TabPane, {
+                        (0, f.jsx)(g.default.TabPane, {
                             tab: 'Settings',
-                            children: (0, d.jsx)(i.default, {
-                                children: (0, d.jsx)(n.default, {
-                                    hookKey: _w.hookKey
+                            children: (0, f.jsx)(k.default, {
+                                children: (0, f.jsx)(p.default, {
+                                    hookKey: a.hookKey
                                 })
                             })
                         }, 'tab-hook-settings'),
-                        (0, d.jsx)(e.default.TabPane, {
+                        (0, f.jsx)(g.default.TabPane, {
                             tab: 'Hidden',
-                            children: (0, d.jsx)(i.default, {
-                                children: (0, d.jsx)(l.default, {
-                                    hookKey: _w.hookKey
+                            children: (0, f.jsx)(k.default, {
+                                children: (0, f.jsx)(n.default, {
+                                    hookKey: a.hookKey
                                 })
                             })
                         }, 'tab-hook-hidden')
                     ]
                 }) : null,
-                (0, d.jsx)(e.default.TabPane, {
+                (0, f.jsx)(g.default.TabPane, {
                     tab: 'Devices',
-                    children: (0, d.jsx)(i.default, {
-                        children: (0, d.jsx)(k.default, {
-                            hookKey: _w.hookKey
+                    children: (0, f.jsx)(k.default, {
+                        children: (0, f.jsx)(m.default, {
+                            hookKey: a.hookKey
                         })
                     })
                 }, 'tab-hook-devices')
             ]
         });
     });
-}), a.register('B9adZ', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _r;
+}), c.register('BbOZa', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _t;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('bHGrl'),
-        g = a('Axq+p'),
-        h = a('nEBHu'),
-        i = a('LbvQU'),
-        j = a('b5kvC'),
-        k = a('mQCZt'),
-        l = a('11nl3');
-    let m, n, o, p, q = _w => _w;
-    var _r = _w => {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('K/2xB'),
+        i = c('u4s09'),
+        j = c('flG2L'),
+        k = c('CZb2U'),
+        l = c('Eh2Wh'),
+        m = c('LihP5'),
+        n = c('SxihY');
+    let o, p, q, r, s = a => a;
+    var _t = a => {
         const {
             world: {
                 devices: {
-                    devices: s
+                    devices: u
                 }
             },
             me: {
-                editing: t
+                editing: v
             }
-        } = (0, f.default)(), u = e.useMemo(() => {
-            const v = [];
-            return Array.from(s).map(_w => _w[1]).forEach(s => {
-                s.hooks && s.hooks.connections && s.hooks.connections.length && s.hooks.connections.forEach(u => {
-                    if (u.hook === _w.hookKey) {
-                        const _w = s.deviceOption.optionSchema.options.find(_w => _w.key === u.option).option.label;
-                        v.push({
-                            deviceId: s.id,
-                            deviceOptionId: s.deviceOption.id,
-                            deviceName: s.name || s.deviceOption.name,
-                            optionName: _w
+        } = (0, h.default)(), w = g.useMemo(() => {
+            const x = [];
+            return Array.from(u).map(a => a[1]).forEach(u => {
+                u.hooks && u.hooks.connections && u.hooks.connections.length && u.hooks.connections.forEach(w => {
+                    if (w.hook === a.hookKey) {
+                        const y = u.deviceOption.optionSchema.options.find(y => y.key === w.option).option.label;
+                        x.push({
+                            deviceId: u.id,
+                            deviceOptionId: u.deviceOption.id,
+                            deviceName: u.name || u.deviceOption.name,
+                            optionName: y
                         });
                     }
                 });
-            }), v;
+            }), x;
         }, []);
-        return (0, d.jsx)(_s, {
-            children: u.length ? (0, d.jsx)(d.Fragment, {
-                children: u.map(_n => (0, d.jsx)(i.HookCardButton, {
+        return (0, f.jsx)(_u, {
+            children: w.length ? (0, f.jsx)(f.Fragment, {
+                children: w.map(a => (0, f.jsx)(k.HookCardButton, {
                     style: {
                         marginBottom: 10
                     },
                     onClick: () => {
-                        t.device.currentlyEditedDevice = {
-                            id: _n.deviceId,
-                            deviceOptionId: _n.deviceOptionId
-                        }, (0, k.default)(l.default.editingDevice);
+                        v.device.currentlyEditedDevice = {
+                            id: a.deviceId,
+                            deviceOptionId: a.deviceOptionId
+                        }, (0, m.default)(n.default.editingDevice);
                     },
-                    children: (0, d.jsxs)('div', {
+                    children: (0, f.jsxs)('div', {
                         children: [
-                            (0, d.jsx)(_u, {
-                                children: _n.optionName
+                            (0, f.jsx)(_w, {
+                                children: a.optionName
                             }),
-                            (0, d.jsx)(_v, {
-                                children: _n.deviceName
+                            (0, f.jsx)(_x, {
+                                children: a.deviceName
                             })
                         ]
                     })
-                }, _n.deviceId + _n.optionName))
-            }) : (0, d.jsxs)(_t, {
+                }, a.deviceId + a.optionName))
+            }) : (0, f.jsxs)(_v, {
                 children: [
                     'No devices are using this ',
-                    h.default.name.toLowerCase(),
+                    j.default.name.toLowerCase(),
                     ' yet! Once you connect a device\'s option to this ',
-                    h.default.name.toLowerCase(),
+                    j.default.name.toLowerCase(),
                     ', that device will show up here.'
                 ]
             })
         });
     };
-    const _s = g.default.div(m || (m = q``)),
-        _t = g.default.div(n || (n = q`
+    const _u = i.default.div(o || (o = s``)),
+        _v = i.default.div(p || (p = s`
   font-size: 16px;
 `)),
-        _u = g.default.div(o || (o = q`
+        _w = i.default.div(q || (q = s`
   font-size: 12px;
   font-style: italic;
   color: rgba(0, 0, 0, 0.65);
   font-weight: ${ 0 };
-`), j.FontWeights.Normal),
-        _v = g.default.div(p || (p = q``));
-}), a.register('4rtw4', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _k;
+`), l.FontWeights.Normal),
+        _x = i.default.div(r || (r = s``));
+}), c.register('x36Or', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _m;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('nEBHu'),
-        g = a('lyZQx');
-    let h, i, j = _n => _n;
-    var _k = _n => (0, d.jsxs)(_l, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('flG2L'),
+        i = c('IN/d9');
+    let j, k, l = a => a;
+    var _m = a => (0, f.jsxs)(_n, {
         children: [
-            (0, d.jsxs)(_m, {
+            (0, f.jsxs)(_o, {
                 children: [
                     'Sometimes you don\'t want a ',
-                    f.default.name.toLowerCase(),
+                    h.default.name.toLowerCase(),
                     ' to show. Create scenarios to hide a hook under certain conditions. If any are the scenarios are true, the ',
-                    f.default.name.toLowerCase(),
+                    h.default.name.toLowerCase(),
                     ' will be hidden from the game host. ',
-                    (0, d.jsx)('br', {}),
+                    (0, f.jsx)('br', {}),
                     ' ',
-                    (0, d.jsx)('br', {}),
+                    (0, f.jsx)('br', {}),
                     ' When a ',
-                    f.default.name.toLowerCase(),
+                    h.default.name.toLowerCase(),
                     ' is hidden, any device option with a link to this',
                     ' ',
-                    f.default.name.toLowerCase(),
+                    h.default.name.toLowerCase(),
                     ' will use the device\'s set option.'
                 ]
             }),
-            (0, d.jsx)(g.default, {
-                hookKey: _n.hookKey
+            (0, f.jsx)(i.default, {
+                hookKey: a.hookKey
             })
         ]
     });
-    const _l = e.default.div(h || (h = j``)),
-        _m = e.default.div(i || (i = j`
+    const _n = g.default.div(j || (j = l``)),
+        _o = g.default.div(k || (k = l`
   margin-bottom: 15px;
 `));
-}), a.register('lyZQx', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _l;
+}), c.register('IN/d9', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _n;
     });
-    var d = a('0hzx+'),
-        e = a('2x11J');
-    a('LEQ5w');
-    var f = a('PMl60'),
-        g = a('2AWDu'),
-        h = a('LbvQU'),
-        i = a('gs/5D'),
-        j = a('xsZsm'),
-        k = a('kS4PY');
-    var _l = (0, e.observer)(_n => {
-        const m = (0, i.default)(_n.hookKey),
-            [n, o, p] = (0, f.useBoolean)(!1);
-        if (!m)
+    var f = c('gRbUn'),
+        g = c('6jmvl');
+    c('O0Kav');
+    var h = c('quE27'),
+        i = c('z5AS7'),
+        j = c('CZb2U'),
+        k = c('0gC58'),
+        l = c('/35EC'),
+        m = c('mD3+2');
+    var _n = (0, g.observer)(a => {
+        const o = (0, k.default)(a.hookKey),
+            [p, q, r] = (0, h.useBoolean)(!1);
+        if (!o)
             return null;
-        const q = m.hiddenScenarios || [];
-        return (0, d.jsxs)(d.Fragment, {
+        const s = o.hiddenScenarios || [];
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                q.length < g.default.hiddenScenario.maxAmount ? (0, d.jsx)(h.HookNewCardButton, {
-                    onClick: o,
+                s.length < i.default.hiddenScenario.maxAmount ? (0, f.jsx)(j.HookNewCardButton, {
+                    onClick: q,
                     style: {
                         marginBottom: 10
                     },
                     children: 'New Scenario'
                 }) : null,
-                (m.hiddenScenarios || []).map(m => (0, d.jsx)(k.default, {
-                    name: m.name,
-                    hookKey: _n.hookKey
-                }, `scenario-${ m.name }-${ _n.hookKey }`)),
-                (0, d.jsx)(j.default, {
-                    hookKey: _n.hookKey,
-                    visible: n,
-                    close: p
+                (o.hiddenScenarios || []).map(o => (0, f.jsx)(m.default, {
+                    name: o.name,
+                    hookKey: a.hookKey
+                }, `scenario-${ o.name }-${ a.hookKey }`)),
+                (0, f.jsx)(l.default, {
+                    hookKey: a.hookKey,
+                    visible: p,
+                    close: r
                 })
             ]
         });
     });
-}), a.register('xsZsm', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _o;
+}), c.register('/35EC', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _q;
     });
-    var d = a('0hzx+'),
-        e = a('ulE4q'),
-        f = a('sgToH'),
-        g = a('ewwAh'),
-        h = a('LEQ5w'),
-        i = a('nEBHu'),
-        j = a('2AWDu'),
-        k = a('blUBm'),
-        l = a('exDBf'),
-        m = a('aPprg'),
-        n = a('yYQqX');
-    var _o = _n => {
-        const [p, q] = h.useState(''), r = () => {
-            const s = p.trim();
-            s.length && ((0, l.default)({
-                action: k.default.newHiddenScenario,
+    var f = c('gRbUn'),
+        g = c('P1KtI'),
+        h = c('3t9ce'),
+        i = c('aevdF'),
+        j = c('O0Kav'),
+        k = c('flG2L'),
+        l = c('z5AS7'),
+        m = c('TkKuW'),
+        n = c('sxAsZ'),
+        o = c('lpNzY'),
+        p = c('AmTT/');
+    var _q = a => {
+        const [r, s] = j.useState(''), t = () => {
+            const u = r.trim();
+            u.length && ((0, n.default)({
+                action: m.default.newHiddenScenario,
                 payload: {
-                    key: _n.hookKey,
-                    name: s
+                    key: a.hookKey,
+                    name: u
                 }
-            }), q(''), _n.close());
+            }), s(''), a.close());
         };
-        return (0, d.jsx)(f.default, {
-            placement: i.default.drawer.placement,
-            width: i.default.drawer.widths.default,
-            open: _n.visible,
-            onClose: _n.close,
+        return (0, f.jsx)(h.default, {
+            placement: k.default.drawer.placement,
+            width: k.default.drawer.widths.default,
+            open: a.visible,
+            onClose: a.close,
             closable: !0,
-            children: (0, d.jsxs)(m.default, {
+            children: (0, f.jsxs)(o.default, {
                 children: [
-                    (0, d.jsx)(n.HookFormInputLabel, {
+                    (0, f.jsx)(p.HookFormInputLabel, {
                         children: 'Scenario Name'
                     }),
-                    (0, d.jsx)(g.default, {
+                    (0, f.jsx)(i.default, {
                         size: 'large',
                         placeholder: 'Name here...',
-                        value: p,
-                        onChange: _n => {
-                            q(_n.target.value);
+                        value: r,
+                        onChange: a => {
+                            s(a.target.value);
                         },
-                        onPressEnter: r,
-                        maxLength: j.default.hiddenScenario.maxNameLength
+                        onPressEnter: t,
+                        maxLength: l.default.hiddenScenario.maxNameLength
                     }),
-                    (0, d.jsx)(e.default, {
+                    (0, f.jsx)(g.default, {
                         size: 'large',
                         block: !0,
                         style: {
@@ -829,19 +829,19 @@ a.register('KuuVw', function(b, c) {
                             height: 50
                         },
                         type: 'primary',
-                        disabled: !p.trim().length,
-                        onClick: r,
+                        disabled: !r.trim().length,
+                        onClick: t,
                         children: 'Add Scenario'
                     })
                 ]
             })
         });
     };
-}), a.register('blUBm', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _d;
+}), c.register('TkKuW', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         newHook: 'NEW_HOOK',
         removeHook: 'REMOVE_HOOK',
         newOption: 'NEW_OPTION',
@@ -859,93 +859,93 @@ a.register('KuuVw', function(b, c) {
         moveHook: 'MOVE_HOOK',
         changeNumberOption: 'CHANGE_NUMBER_OPTION'
     };
-}), a.register('exDBf', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _e;
+}), c.register('sxAsZ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _g;
     });
-    var d = a('dv/zq');
-    var _e = _n => {
-        (0, d.default)(_n);
+    var f = c('bzxpD');
+    var _g = a => {
+        (0, f.default)(a);
     };
-}), a.register('dv/zq', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _f;
+}), c.register('bzxpD', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
     });
-    var d = a('x7BBh'),
-        e = a('Quxw3');
-    var _f = _n => {
-        (0, e.default)(d.default.hookAction, {
-            action: _n.action,
-            payload: _n.payload
+    var f = c('ywRRc'),
+        g = c('0v55W');
+    var _h = a => {
+        (0, g.default)(f.default.hookAction, {
+            action: a.action,
+            payload: a.payload
         });
     };
-}), a.register('yYQqX', function(b, c) {
-    _n(b.exports, 'HookFormInputLabel', function() {
-        return _i;
-    }), _n(b.exports, 'HookFormInputLabelDescription', function() {
-        return _j;
+}), c.register('AmTT/', function(d, e) {
+    a(d.exports, 'HookFormInputLabel', function() {
+        return _k;
+    }), a(d.exports, 'HookFormInputLabelDescription', function() {
+        return _l;
     });
-    var d = a('Axq+p'),
-        e = a('b5kvC');
-    let f, g, h = _n => _n;
-    const _i = d.default.div(f || (f = h`
+    var f = c('u4s09'),
+        g = c('Eh2Wh');
+    let h, i, j = a => a;
+    const _k = f.default.div(h || (h = j`
   font-size: 18px;
   font-weight: ${ 0 };
   margin-bottom: 4px;
-`), e.FontWeights.Bold),
-        _j = d.default.div(g || (g = h`
+`), g.FontWeights.Bold),
+        _l = f.default.div(i || (i = j`
   font-size: 14px;
   margin-bottom: 4px;
 `));
-}), a.register('kS4PY', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _q;
+}), c.register('mD3+2', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _s;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('LbvQU'),
-        f = a('Axq+p'),
-        g = a('ulE4q'),
-        h = a('/rAT0'),
-        i = a('WfOD7'),
-        j = a('LHeQv'),
-        k = a('PMl60'),
-        l = a('wWCmY'),
-        m = a('fNsdX'),
-        n = a('exDBf'),
-        o = a('blUBm');
-    let p;
-    var _q = _n => {
-        const [r, s, t] = (0, k.useBoolean)(!1), u = () => {
-            (0, n.default)({
-                action: o.default.removeHiddenScenario,
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('CZb2U'),
+        h = c('u4s09'),
+        i = c('P1KtI'),
+        j = c('M3JwW'),
+        k = c('xAv1a'),
+        l = c('1ZCzi'),
+        m = c('quE27'),
+        n = c('oC25n'),
+        o = c('E6YpH0'),
+        p = c('sxAsZ'),
+        q = c('TkKuW');
+    let r;
+    var _s = a => {
+        const [t, u, v] = (0, m.useBoolean)(!1), w = () => {
+            (0, p.default)({
+                action: q.default.removeHiddenScenario,
                 payload: {
-                    key: _n.hookKey,
-                    name: _n.name
+                    key: a.hookKey,
+                    name: a.name
                 }
             });
         };
-        return (0, d.jsxs)(d.Fragment, {
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, d.jsx)(e.HookCardButton, {
+                (0, f.jsx)(g.HookCardButton, {
                     style: {
                         marginBottom: 10
                     },
-                    onClick: s,
-                    children: (0, d.jsxs)(_r, {
+                    onClick: u,
+                    children: (0, f.jsxs)(_t, {
                         children: [
-                            (0, d.jsx)('div', {
-                                children: _n.name
+                            (0, f.jsx)('div', {
+                                children: a.name
                             }),
-                            (0, d.jsx)(h.default, {
-                                overlay: (0, d.jsx)(i.default, {
-                                    children: (0, d.jsx)(i.default.Item, {
-                                        onClick: (0, m.default)(u),
+                            (0, f.jsx)(j.default, {
+                                overlay: (0, f.jsx)(k.default, {
+                                    children: (0, f.jsx)(k.default.Item, {
+                                        onClick: (0, o.default)(w),
                                         children: 'Remove Scenario'
                                     })
                                 }),
-                                children: (0, d.jsx)(g.default, {
-                                    icon: (0, d.jsx)(j.default, {}),
+                                children: (0, f.jsx)(i.default, {
+                                    icon: (0, f.jsx)(l.default, {}),
                                     type: 'dashed',
                                     shape: 'circle'
                                 })
@@ -953,154 +953,154 @@ a.register('KuuVw', function(b, c) {
                         ]
                     })
                 }),
-                (0, d.jsx)(l.default, {
-                    visible: r,
-                    close: t,
-                    scenarioName: _n.name,
-                    hookKey: _n.hookKey
+                (0, f.jsx)(n.default, {
+                    visible: t,
+                    close: v,
+                    scenarioName: a.name,
+                    hookKey: a.hookKey
                 })
             ]
         });
     };
-    const _r = f.default.div.attrs({
+    const _t = h.default.div.attrs({
         className: 'maxWidth flex between vc'
-    })(p || (p = (_n => _n)``));
-}), a.register('wWCmY', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _n;
+    })(r || (r = (a => a)``));
+}), c.register('oC25n', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _p;
     });
-    var d = a('0hzx+'),
-        e = a('fmVdR'),
-        f = a('sgToH'),
-        g = a('2x11J');
-    a('LEQ5w');
-    var h = a('nEBHu'),
-        i = a('aPprg'),
-        j = a('w1AGN'),
-        k = a('gs/5D'),
-        l = a('wP6kf'),
-        m = a('UueDK');
-    var _n = (0, g.observer)(_n => {
-        const o = (0, k.default)(_n.hookKey);
-        if (!o)
+    var f = c('gRbUn'),
+        g = c('VNuyu'),
+        h = c('3t9ce'),
+        i = c('6jmvl');
+    c('O0Kav');
+    var j = c('flG2L'),
+        k = c('lpNzY'),
+        l = c('9UHpy'),
+        m = c('0gC58'),
+        n = c('Ov5kj'),
+        o = c('eeHMI');
+    var _p = (0, i.observer)(a => {
+        const q = (0, m.default)(a.hookKey);
+        if (!q)
             return null;
-        const p = (o.hiddenScenarios || []).find(o => o.name === _n.scenarioName);
-        return p ? (0, d.jsx)(f.default, {
-            open: _n.visible,
-            onClose: _n.close,
-            width: h.default.drawer.widths.default,
-            placement: h.default.drawer.placement,
+        const r = (q.hiddenScenarios || []).find(q => q.name === a.scenarioName);
+        return r ? (0, f.jsx)(h.default, {
+            open: a.visible,
+            onClose: a.close,
+            width: j.default.drawer.widths.default,
+            placement: j.default.drawer.placement,
             closable: !0,
-            children: (0, d.jsxs)(i.default, {
+            children: (0, f.jsxs)(k.default, {
                 children: [
-                    (0, d.jsx)(j.default, {
-                        title: _n.scenarioName,
+                    (0, f.jsx)(l.default, {
+                        title: a.scenarioName,
                         descriptor: 'Scenario'
                     }),
-                    (0, d.jsx)(e.default, {}),
-                    (0, d.jsx)(m.default, {
-                        hookKey: _n.hookKey,
-                        scenarioName: _n.scenarioName
+                    (0, f.jsx)(g.default, {}),
+                    (0, f.jsx)(o.default, {
+                        hookKey: a.hookKey,
+                        scenarioName: a.scenarioName
                     }),
-                    p.conditions.map(o => (0, d.jsx)(l.default, {
-                        hookKey: _n.hookKey,
-                        scenarioName: _n.scenarioName,
-                        condition: o
-                    }, `condition-${ o.id }`))
+                    r.conditions.map(q => (0, f.jsx)(n.default, {
+                        hookKey: a.hookKey,
+                        scenarioName: a.scenarioName,
+                        condition: q
+                    }, `condition-${ q.id }`))
                 ]
             })
         }) : null;
     });
-}), a.register('w1AGN', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _k;
+}), c.register('9UHpy', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _m;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('b5kvC');
-    let g, h, i, j = _n => _n;
-    var _k = _n => (0, d.jsxs)(_l, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('Eh2Wh');
+    let i, j, k, l = a => a;
+    var _m = a => (0, f.jsxs)(_n, {
         children: [
-            (0, d.jsx)(_m, {
-                children: _n.descriptor
+            (0, f.jsx)(_o, {
+                children: a.descriptor
             }),
-            (0, d.jsx)(_n, {
-                children: _n.title
+            (0, f.jsx)(_p, {
+                children: a.title
             })
         ]
     });
-    const _l = e.default.div(g || (g = j``)),
-        _m = e.default.div(h || (h = j`
+    const _n = g.default.div(i || (i = l``)),
+        _o = g.default.div(j || (j = l`
   text-transform: uppercase;
   font-style: italic;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
 `)),
-        _n = e.default.div(i || (i = j`
+        _p = g.default.div(k || (k = l`
   font-size: 28px;
   font-weight: ${ 0 };
-`), f.FontWeights.Bold);
-}), a.register('wP6kf', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _x;
+`), h.FontWeights.Bold);
+}), c.register('Ov5kj', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _z;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Rq6L+0'),
-        g = a('LbvQU'),
-        h = a('Axq+p'),
-        i = a('ulE4q'),
-        j = a('/rAT0'),
-        k = a('WfOD7'),
-        l = a('LHeQv'),
-        m = a('b5kvC'),
-        n = a('blUBm'),
-        o = a('exDBf'),
-        p = a('fNsdX'),
-        q = a('PMl60'),
-        r = a('+pC8s'),
-        s = a('nEBHu');
-    let t, u, v, w = _n => _n;
-    var _x = _n => {
-        const [y, z, A] = (0, q.useBoolean)(!1), B = e.useMemo(() => _n.condition.type === f.HiddenConditionType.hookValue ? `${ s.default.name } Value` : _n.condition.type === f.HiddenConditionType.modeType ? 'Mode' : 'Unknown', [_n.condition.type]), C = () => {
-            (0, o.default)({
-                action: n.default.removeHiddenCondition,
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('YIkl/'),
+        i = c('CZb2U'),
+        j = c('u4s09'),
+        k = c('P1KtI'),
+        l = c('M3JwW'),
+        m = c('xAv1a'),
+        n = c('1ZCzi'),
+        o = c('Eh2Wh'),
+        p = c('TkKuW'),
+        q = c('sxAsZ'),
+        r = c('E6YpH0'),
+        s = c('quE27'),
+        t = c('Ee7EX'),
+        u = c('flG2L');
+    let v, w, x, y = a => a;
+    var _z = a => {
+        const [A, B, C] = (0, s.useBoolean)(!1), D = g.useMemo(() => a.condition.type === h.HiddenConditionType.hookValue ? `${ u.default.name } Value` : a.condition.type === h.HiddenConditionType.modeType ? 'Mode' : 'Unknown', [a.condition.type]), E = () => {
+            (0, q.default)({
+                action: p.default.removeHiddenCondition,
                 payload: {
-                    key: _n.hookKey,
-                    scenario: _n.scenarioName,
-                    condition: _n.condition.id
+                    key: a.hookKey,
+                    scenario: a.scenarioName,
+                    condition: a.condition.id
                 }
             });
         };
-        return (0, d.jsxs)(d.Fragment, {
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, d.jsx)(g.HookCardButton, {
+                (0, f.jsx)(i.HookCardButton, {
                     style: {
                         marginBottom: 10
                     },
-                    onClick: z,
-                    children: (0, d.jsxs)(_y, {
+                    onClick: B,
+                    children: (0, f.jsxs)(_A, {
                         children: [
-                            (0, d.jsxs)('div', {
+                            (0, f.jsxs)('div', {
                                 children: [
-                                    (0, d.jsx)(_z, {
+                                    (0, f.jsx)(_B, {
                                         children: 'Condition'
                                     }),
-                                    (0, d.jsx)(_A, {
-                                        children: B
+                                    (0, f.jsx)(_C, {
+                                        children: D
                                     })
                                 ]
                             }),
-                            (0, d.jsx)(j.default, {
-                                overlay: (0, d.jsx)(k.default, {
-                                    children: (0, d.jsx)(k.default.Item, {
-                                        onClick: (0, p.default)(C),
+                            (0, f.jsx)(l.default, {
+                                overlay: (0, f.jsx)(m.default, {
+                                    children: (0, f.jsx)(m.default.Item, {
+                                        onClick: (0, r.default)(E),
                                         children: 'Remove Condition'
                                     })
                                 }),
-                                children: (0, d.jsx)(i.default, {
-                                    icon: (0, d.jsx)(l.default, {}),
+                                children: (0, f.jsx)(k.default, {
+                                    icon: (0, f.jsx)(n.default, {}),
                                     type: 'dashed',
                                     shape: 'circle'
                                 })
@@ -1108,223 +1108,223 @@ a.register('KuuVw', function(b, c) {
                         ]
                     })
                 }),
-                (0, d.jsx)(r.default, {
-                    visible: y,
-                    close: A,
-                    hookKey: _n.hookKey,
-                    scenarioName: _n.scenarioName,
-                    condition: _n.condition.id
+                (0, f.jsx)(t.default, {
+                    visible: A,
+                    close: C,
+                    hookKey: a.hookKey,
+                    scenarioName: a.scenarioName,
+                    condition: a.condition.id
                 })
             ]
         });
     };
-    const _y = h.default.div.attrs({
+    const _A = j.default.div.attrs({
             className: 'maxWidth flex between vc'
-        })(t || (t = w``)),
-        _z = h.default.div(u || (u = w`
+        })(v || (v = y``)),
+        _B = j.default.div(w || (w = y`
   font-size: 12px;
   font-style: italic;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.65);
   font-weight: ${ 0 };
-`), m.FontWeights.Normal),
-        _A = h.default.div(v || (v = w``));
-}), a.register('fNsdX', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _d;
+`), o.FontWeights.Normal),
+        _C = j.default.div(x || (x = y``));
+}), c.register('E6YpH0', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = _n => b => {
-        b.domEvent.stopPropagation(), _n && _n();
+    var _f = a => d => {
+        d.domEvent.stopPropagation(), a && a();
     };
-}), a.register('+pC8s', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _m;
+}), c.register('Ee7EX', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _o;
     });
-    var d = a('0hzx+'),
-        e = a('sgToH'),
-        f = a('2x11J');
-    a('LEQ5w');
-    var g = a('nEBHu'),
-        h = a('Rq6L+0'),
-        i = a('aPprg'),
-        j = a('gs/5D'),
-        k = a('GSEP+'),
-        l = a('Az7iW');
-    var _m = (0, f.observer)(_n => {
-        const n = (0, j.default)(_n.hookKey);
-        if (!n)
-            return null;
-        const o = (n.hiddenScenarios || []).find(n => n.name === _n.scenarioName);
-        if (!o)
-            return null;
-        const p = o.conditions.find(n => n.id === _n.condition);
+    var f = c('gRbUn'),
+        g = c('3t9ce'),
+        h = c('6jmvl');
+    c('O0Kav');
+    var i = c('flG2L'),
+        j = c('YIkl/'),
+        k = c('lpNzY'),
+        l = c('0gC58'),
+        m = c('wSwOw'),
+        n = c('prekA');
+    var _o = (0, h.observer)(a => {
+        const p = (0, l.default)(a.hookKey);
         if (!p)
             return null;
-        return (0, d.jsx)(e.default, {
-            placement: g.default.drawer.placement,
-            width: g.default.drawer.widths.default,
-            open: _n.visible,
-            onClose: _n.close,
+        const q = (p.hiddenScenarios || []).find(p => p.name === a.scenarioName);
+        if (!q)
+            return null;
+        const r = q.conditions.find(p => p.id === a.condition);
+        if (!r)
+            return null;
+        return (0, f.jsx)(g.default, {
+            placement: i.default.drawer.placement,
+            width: i.default.drawer.widths.default,
+            open: a.visible,
+            onClose: a.close,
             closable: !0,
-            children: (0, d.jsx)(i.default, {
-                children: p.type === h.HiddenConditionType.hookValue ? (0, d.jsx)(k.default, {
-                    condition: p,
-                    hookKey: _n.hookKey,
-                    scenarioName: _n.scenarioName,
-                    close: _n.close
-                }) : p.type === h.HiddenConditionType.modeType ? (0, d.jsx)(l.default, {
-                    condition: p,
-                    hookKey: _n.hookKey,
-                    scenarioName: _n.scenarioName,
-                    close: _n.close
+            children: (0, f.jsx)(k.default, {
+                children: r.type === j.HiddenConditionType.hookValue ? (0, f.jsx)(m.default, {
+                    condition: r,
+                    hookKey: a.hookKey,
+                    scenarioName: a.scenarioName,
+                    close: a.close
+                }) : r.type === j.HiddenConditionType.modeType ? (0, f.jsx)(n.default, {
+                    condition: r,
+                    hookKey: a.hookKey,
+                    scenarioName: a.scenarioName,
+                    close: a.close
                 }) : null
             })
         });
     });
-}), a.register('GSEP+', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _v;
+}), c.register('wSwOw', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _x;
     });
-    var d = a('0hzx+'),
-        e = a('NIZyA'),
-        f = a('OB7Pc'),
-        g = a('ulE4q'),
-        h = a('fmVdR'),
-        i = a('ewwAh'),
-        j = a('inwN3'),
-        k = a('2x11J'),
-        l = a('LEQ5w'),
-        m = a('Axq+p'),
-        n = a('nEBHu'),
-        o = a('blUBm'),
-        p = a('Rq6L+0'),
-        q = a('exDBf'),
-        r = a('w1AGN'),
-        s = a('yYQqX'),
-        t = a('yotix');
-    let u;
-    var _v = (0, k.observer)(_n => {
+    var f = c('gRbUn'),
+        g = c('qMSe6'),
+        h = c('/kLkG0'),
+        i = c('P1KtI'),
+        j = c('VNuyu'),
+        k = c('aevdF'),
+        l = c('u8Dt8'),
+        m = c('6jmvl'),
+        n = c('O0Kav'),
+        o = c('u4s09'),
+        p = c('flG2L'),
+        q = c('TkKuW'),
+        r = c('YIkl/'),
+        s = c('sxAsZ'),
+        t = c('9UHpy'),
+        u = c('AmTT/'),
+        v = c('TgUk7');
+    let w;
+    var _x = (0, m.observer)(a => {
         const {
-            options: w
-        } = _n.condition, x = (0, t.default)(), [y, z] = l.useState(null == w ? void 0 : w.key), [A, B] = l.useState(null == w ? void 0 : w.compare), [C, D] = l.useState(null == w ? void 0 : w.value);
-        if (l.useEffect(() => {
-                z(null == w ? void 0 : w.key);
-            }, [null == w ? void 0 : w.key]), l.useEffect(() => {
-                B(null == w ? void 0 : w.compare);
-            }, [null == w ? void 0 : w.compare]), l.useEffect(() => {
-                D(null == w ? void 0 : w.value);
-            }, [null == w ? void 0 : w.value]), !w)
+            options: y
+        } = a.condition, z = (0, v.default)(), [A, B] = n.useState(null == y ? void 0 : y.key), [C, D] = n.useState(null == y ? void 0 : y.compare), [E, F] = n.useState(null == y ? void 0 : y.value);
+        if (n.useEffect(() => {
+                B(null == y ? void 0 : y.key);
+            }, [null == y ? void 0 : y.key]), n.useEffect(() => {
+                D(null == y ? void 0 : y.compare);
+            }, [null == y ? void 0 : y.compare]), n.useEffect(() => {
+                F(null == y ? void 0 : y.value);
+            }, [null == y ? void 0 : y.value]), !y)
             return null;
-        const E = y.trim() === _n.hookKey,
-            F = x.hooks.filter(w => w.key !== _n.hookKey).map(_n => ({
-                value: _n.key
+        const G = A.trim() === a.hookKey,
+            H = z.hooks.filter(y => y.key !== a.hookKey).map(a => ({
+                value: a.key
             }));
-        return (0, d.jsxs)(_w, {
+        return (0, f.jsxs)(_y, {
             children: [
-                (0, d.jsx)(r.default, {
-                    title: `${ n.default.name } Value`,
+                (0, f.jsx)(t.default, {
+                    title: `${ p.default.name } Value`,
                     descriptor: 'Condition'
                 }),
-                (0, d.jsx)(h.default, {}),
-                (0, d.jsxs)(s.HookFormInputLabel, {
+                (0, f.jsx)(j.default, {}),
+                (0, f.jsxs)(u.HookFormInputLabel, {
                     children: [
-                        n.default.name,
+                        p.default.name,
                         ' Name'
                     ]
                 }),
-                (0, d.jsx)(f.default, {
-                    value: y,
-                    options: F,
-                    onChange: _n => {
-                        z(_n);
+                (0, f.jsx)(h.default, {
+                    value: A,
+                    options: H,
+                    onChange: a => {
+                        B(a);
                     },
                     style: {
                         width: '100%'
                     },
                     placeholder: 'Name here...',
-                    filterOption: (_n, w) => {
-                        var G;
-                        return -1 !== (null === (G = w.value) || void 0 === G ? void 0 : G.toUpperCase().indexOf(_n.toUpperCase()));
+                    filterOption: (a, y) => {
+                        var I;
+                        return -1 !== (null === (I = y.value) || void 0 === I ? void 0 : I.toUpperCase().indexOf(a.toUpperCase()));
                     }
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         height: 15
                     }
                 }),
-                (0, d.jsx)(s.HookFormInputLabel, {
+                (0, f.jsx)(u.HookFormInputLabel, {
                     children: 'Comparison'
                 }),
-                (0, d.jsxs)(j.default, {
+                (0, f.jsxs)(l.default, {
                     style: {
                         width: '100%'
                     },
                     size: 'large',
-                    onChange: _n => {
-                        B(_n);
+                    onChange: a => {
+                        D(a);
                     },
-                    value: A,
+                    value: C,
                     children: [
-                        (0, d.jsx)(j.default.Option, {
-                            value: p.HookValueHiddenConditionCompare.equal,
+                        (0, f.jsx)(l.default.Option, {
+                            value: r.HookValueHiddenConditionCompare.equal,
                             children: 'Equals'
                         }),
-                        (0, d.jsx)(j.default.Option, {
-                            value: p.HookValueHiddenConditionCompare.notEqual,
+                        (0, f.jsx)(l.default.Option, {
+                            value: r.HookValueHiddenConditionCompare.notEqual,
                             children: 'Does Not Equal'
                         })
                     ]
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         height: 15
                     }
                 }),
-                (0, d.jsx)(s.HookFormInputLabel, {
+                (0, f.jsx)(u.HookFormInputLabel, {
                     children: 'Value'
                 }),
-                (0, d.jsx)(i.default, {
-                    value: C,
-                    onChange: _n => {
-                        D(_n.target.value);
+                (0, f.jsx)(k.default, {
+                    value: E,
+                    onChange: a => {
+                        F(a.target.value);
                     },
                     size: 'large',
                     placeholder: 'Value here...'
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         height: 30
                     }
                 }),
-                (0, d.jsx)(g.default, {
+                (0, f.jsx)(i.default, {
                     size: 'large',
                     type: 'primary',
                     block: !0,
                     style: {
                         height: 50
                     },
-                    disabled: E,
+                    disabled: G,
                     onClick: () => {
-                        E || ((0, q.default)({
-                            action: o.default.saveHookValueHiddenConditionOptions,
+                        G || ((0, s.default)({
+                            action: q.default.saveHookValueHiddenConditionOptions,
                             payload: {
-                                key: _n.hookKey,
-                                scenario: _n.scenarioName,
-                                condition: _n.condition.id,
+                                key: a.hookKey,
+                                scenario: a.scenarioName,
+                                condition: a.condition.id,
                                 options: {
-                                    key: y,
-                                    compare: A,
-                                    value: C
+                                    key: A,
+                                    compare: C,
+                                    value: E
                                 }
                             }
-                        }), _n.close());
+                        }), a.close());
                     },
                     children: 'Save'
                 }),
-                E ? (0, d.jsx)(e.default, {
+                G ? (0, f.jsx)(g.default, {
                     type: 'error',
-                    message: `Invalid ${ n.default.name } Name`,
-                    description: `You cannot hide a ${ n.default.name.toLowerCase() } based off its own value.`,
+                    message: `Invalid ${ p.default.name } Name`,
+                    description: `You cannot hide a ${ p.default.name.toLowerCase() } based off its own value.`,
                     style: {
                         marginTop: 15
                     },
@@ -1333,174 +1333,174 @@ a.register('KuuVw', function(b, c) {
             ]
         });
     });
-    const _w = m.default.div(u || (u = (_n => _n)``));
-}), a.register('OB7Pc', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _t;
+    const _y = o.default.div(w || (w = (a => a)``));
+}), c.register('/kLkG0', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _w;
     });
-    var d = a('JrtKP'),
-        e = a('Ug51y0'),
-        f = a('sWKBM'),
-        g = a('LEQ5w'),
-        h = a('1P5ls'),
-        i = a('inwN3'),
-        j = a('kRwUk25'),
-        k = a('CMcLV');
+    var f = c('/U36/'),
+        g = c('6E2xk1'),
+        h = c('Kpy/B'),
+        i = c('O0Kav'),
+        j = c('R2nG3'),
+        k = c('u8Dt8'),
+        l = c('e5xHg25'),
+        m = c('WQymh');
     const {
-        Option: l
-    } = i.default;
+        Option: n
+    } = k.default;
 
-    function m(_n) {
-        return _n && _n.type && (_n.type.isSelectOption || _n.type.isSelectOptGroup);
+    function o(p) {
+        return p && p.type && (p.type.isSelectOption || p.type.isSelectOptGroup);
     }
-    const m = (_w, a) => {
+    const p = (a, c) => {
             const {
-                prefixCls: n,
-                className: o,
-                popupClassName: p,
-                dropdownClassName: q,
-                children: r,
-                dataSource: s
-            } = _w, _t = (0, e.default)(r);
-            let u;
-            1 === _t.length && (0, k.isValidElement)(_t[0]) && !_n(_t[0]) && ([v] = _t);
-            const w = v ? () => v : void 0;
+                prefixCls: q,
+                className: r,
+                popupClassName: s,
+                dropdownClassName: t,
+                children: u,
+                dataSource: v
+            } = a, _w = (0, g.default)(u);
             let x;
-            x = _t.length && _n(_t[0]) ? r : s ? s.map(_w => {
-                if ((0, k.isValidElement)(_w))
-                    return _w;
-                switch (typeof _w) {
+            1 === _w.length && (0, m.isValidElement)(_w[0]) && !o(_w[0]) && ([y] = _w);
+            const z = y ? () => y : void 0;
+            let A;
+            A = _w.length && o(_w[0]) ? u : v ? v.map(a => {
+                if ((0, m.isValidElement)(a))
+                    return a;
+                switch (typeof a) {
                     case 'string':
-                        return g.createElement(l, {
-                            key: _w,
-                            value: _w
-                        }, _w);
+                        return i.createElement(n, {
+                            key: a,
+                            value: a
+                        }, a);
                     case 'object': {
                         const {
-                            value: y
-                        } = _w;
-                        return g.createElement(l, {
-                            key: y,
-                            value: y
-                        }, _w.text);
+                            value: B
+                        } = a;
+                        return i.createElement(n, {
+                            key: B,
+                            value: B
+                        }, a.text);
                     }
                     default:
                         return;
                 }
             }) : [];
             const {
-                getPrefixCls: y
-            } = g.useContext(h.ConfigContext), z = y('select', n);
-            return g.createElement(i.default, Object.assign({
-                ref: a
-            }, (0, f.default)(_w, [
+                getPrefixCls: B
+            } = i.useContext(j.ConfigContext), C = B('select', q);
+            return i.createElement(k.default, Object.assign({
+                ref: c
+            }, (0, h.default)(a, [
                 'dataSource',
                 'dropdownClassName'
             ]), {
-                prefixCls: z,
-                popupClassName: p || q,
-                className: _b(d)(`${ z }-auto-complete`, o),
-                mode: i.default.SECRET_COMBOBOX_MODE_DO_NOT_USE
+                prefixCls: C,
+                popupClassName: s || t,
+                className: b(f)(`${ C }-auto-complete`, r),
+                mode: k.default.SECRET_COMBOBOX_MODE_DO_NOT_USE
             }, {
-                getInputElement: w
-            }), x);
+                getInputElement: z
+            }), A);
         },
-        n = g.forwardRef(m),
-        o = (0, j.default)(n);
-    n.Option = l, n._InternalPanelDoNotUseOrYouWillBeFired = o;
-    var p = n;
-}), a.register('Az7iW', function(_b, c) {
-    _w(_b.exports, 'default', function() {
-        return _r;
+        q = i.forwardRef(p),
+        r = (0, l.default)(q);
+    q.Option = n, q._InternalPanelDoNotUseOrYouWillBeFired = r;
+    var s = q;
+}), c.register('prekA', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _t;
     });
-    var d = a('0hzx+'),
-        e = a('ulE4q'),
-        f = a('fmVdR'),
-        g = a('inwN3'),
-        h = a('LEQ5w'),
-        i = a('Axq+p'),
-        j = a('nEBHu'),
-        k = a('blUBm'),
-        l = a('66RLp2'),
-        m = a('Rq6L+0'),
-        _n = a('exDBf'),
-        o = a('w1AGN'),
-        p = a('yYQqX');
-    let q;
-    var _r = _w => {
+    var f = c('gRbUn'),
+        g = c('P1KtI'),
+        h = c('VNuyu'),
+        i = c('u8Dt8'),
+        j = c('O0Kav'),
+        k = c('u4s09'),
+        l = c('flG2L'),
+        m = c('TkKuW'),
+        n = c('XVrof3'),
+        o = c('YIkl/'),
+        p = c('sxAsZ'),
+        q = c('9UHpy'),
+        r = c('AmTT/');
+    let s;
+    var _t = a => {
         const {
-            options: s
-        } = _w.condition, [t, u] = h.useState(null == s ? void 0 : s.mode), [v, w] = h.useState(null == s ? void 0 : s.compare);
-        if (h.useEffect(() => {
-                u(null == s ? void 0 : s.mode);
-            }, [null == s ? void 0 : s.mode]), h.useEffect(() => {
-                w(null == s ? void 0 : s.compare);
-            }, [null == s ? void 0 : s.compare]), !s)
+            options: u
+        } = a.condition, [v, w] = j.useState(null == u ? void 0 : u.mode), [x, y] = j.useState(null == u ? void 0 : u.compare);
+        if (j.useEffect(() => {
+                w(null == u ? void 0 : u.mode);
+            }, [null == u ? void 0 : u.mode]), j.useEffect(() => {
+                y(null == u ? void 0 : u.compare);
+            }, [null == u ? void 0 : u.compare]), !u)
             return null;
-        return (0, d.jsxs)(_s, {
+        return (0, f.jsxs)(_u, {
             children: [
-                (0, d.jsx)(o.default, {
-                    title: `${ j.default.name } Value`,
+                (0, f.jsx)(q.default, {
+                    title: `${ l.default.name } Value`,
                     descriptor: 'Condition'
                 }),
-                (0, d.jsx)(f.default, {}),
-                (0, d.jsx)(p.HookFormInputLabel, {
+                (0, f.jsx)(h.default, {}),
+                (0, f.jsx)(r.HookFormInputLabel, {
                     children: 'Hide if the mode...'
                 }),
-                (0, d.jsxs)(g.default, {
+                (0, f.jsxs)(i.default, {
                     style: {
                         width: '100%'
                     },
                     size: 'large',
-                    onChange: _w => {
-                        w(_w);
+                    onChange: a => {
+                        y(a);
                     },
-                    value: v,
+                    value: x,
                     children: [
-                        (0, d.jsx)(g.default.Option, {
-                            value: m.ModeTypeHiddenConditionCompare.equal,
+                        (0, f.jsx)(i.default.Option, {
+                            value: o.ModeTypeHiddenConditionCompare.equal,
                             children: 'Is'
                         }),
-                        (0, d.jsx)(g.default.Option, {
-                            value: m.ModeTypeHiddenConditionCompare.notEqual,
+                        (0, f.jsx)(i.default.Option, {
+                            value: o.ModeTypeHiddenConditionCompare.notEqual,
                             children: 'Is Not'
                         })
                     ]
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         height: 15
                     }
                 }),
-                (0, d.jsx)(p.HookFormInputLabel, {
-                    children: t === l.MapModeType.assignment ? 'an...' : 'a...'
+                (0, f.jsx)(r.HookFormInputLabel, {
+                    children: v === n.MapModeType.assignment ? 'an...' : 'a...'
                 }),
-                (0, d.jsxs)(g.default, {
+                (0, f.jsxs)(i.default, {
                     style: {
                         width: '100%'
                     },
                     size: 'large',
-                    onChange: _w => {
-                        u(_w);
+                    onChange: a => {
+                        w(a);
                     },
-                    value: t,
+                    value: v,
                     children: [
-                        (0, d.jsx)(g.default.Option, {
-                            value: l.MapModeType.liveGame,
+                        (0, f.jsx)(i.default.Option, {
+                            value: n.MapModeType.liveGame,
                             children: 'Live Game'
                         }),
-                        (0, d.jsx)(g.default.Option, {
-                            value: l.MapModeType.assignment,
+                        (0, f.jsx)(i.default.Option, {
+                            value: n.MapModeType.assignment,
                             children: 'Assignment'
                         })
                     ]
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         height: 30
                     }
                 }),
-                (0, d.jsx)(e.default, {
+                (0, f.jsx)(g.default, {
                     size: 'large',
                     type: 'primary',
                     block: !0,
@@ -1508,118 +1508,118 @@ a.register('KuuVw', function(b, c) {
                         height: 50
                     },
                     onClick: () => {
-                        (0, _n.default)({
-                            action: k.default.saveModeTypeHiddenConditionOptions,
+                        (0, p.default)({
+                            action: m.default.saveModeTypeHiddenConditionOptions,
                             payload: {
-                                key: _w.hookKey,
-                                scenario: _w.scenarioName,
-                                condition: _w.condition.id,
+                                key: a.hookKey,
+                                scenario: a.scenarioName,
+                                condition: a.condition.id,
                                 options: {
-                                    mode: t,
-                                    compare: v
+                                    mode: v,
+                                    compare: x
                                 }
                             }
-                        }), _w.close();
+                        }), a.close();
                     },
                     children: 'Save'
                 })
             ]
         });
     };
-    const _s = i.default.div(q || (q = (_w => _w)``));
-}), a.register('UueDK', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _h;
+    const _u = k.default.div(s || (s = (a => a)``));
+}), c.register('eeHMI', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _j;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('PMl60'),
-        f = a('LbvQU'),
-        g = a('HZZ9R');
-    var _h = _w => {
-        const [i, j, k] = (0, e.useBoolean)(!1);
-        return (0, d.jsxs)(d.Fragment, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('quE27'),
+        h = c('CZb2U'),
+        i = c('CJzqO');
+    var _j = a => {
+        const [k, l, m] = (0, g.useBoolean)(!1);
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, d.jsx)(f.HookNewCardButton, {
-                    onClick: j,
+                (0, f.jsx)(h.HookNewCardButton, {
+                    onClick: l,
                     style: {
                         marginBottom: 10
                     },
                     children: 'New Condition'
                 }),
-                (0, d.jsx)(g.default, {
-                    visible: i,
-                    close: k,
-                    hookKey: _w.hookKey,
-                    scenarioName: _w.scenarioName
+                (0, f.jsx)(i.default, {
+                    visible: k,
+                    close: m,
+                    hookKey: a.hookKey,
+                    scenarioName: a.scenarioName
                 })
             ]
         });
     };
-}), a.register('HZZ9R', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _t;
+}), c.register('CJzqO', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _v;
     });
-    var d = a('0hzx+'),
-        e = a('fmVdR'),
-        f = a('sgToH');
-    a('LEQ5w');
-    var g = a('nEBHu'),
-        h = a('aPprg'),
-        i = a('Axq+p'),
-        j = a('LbvQU'),
-        k = a('b5kvC'),
-        l = a('exDBf'),
-        m = a('blUBm'),
-        n = a('Rq6L+0');
-    let o, p, q, r, s = _w => _w;
-    var _t = _w => {
-        const u = u => {
-            (0, l.default)({
-                action: m.default.newHiddenCondition,
+    var f = c('gRbUn'),
+        g = c('VNuyu'),
+        h = c('3t9ce');
+    c('O0Kav');
+    var i = c('flG2L'),
+        j = c('lpNzY'),
+        k = c('u4s09'),
+        l = c('CZb2U'),
+        m = c('Eh2Wh'),
+        n = c('sxAsZ'),
+        o = c('TkKuW'),
+        p = c('YIkl/');
+    let q, r, s, t, u = a => a;
+    var _v = a => {
+        const w = w => {
+            (0, n.default)({
+                action: o.default.newHiddenCondition,
                 payload: {
-                    key: _w.hookKey,
-                    scenario: _w.scenarioName,
-                    conditionType: u
+                    key: a.hookKey,
+                    scenario: a.scenarioName,
+                    conditionType: w
                 }
-            }), _w.close();
+            }), a.close();
         };
-        return (0, d.jsx)(f.default, {
-            open: _w.visible,
-            onClose: _w.close,
-            width: g.default.drawer.widths.default,
-            placement: g.default.drawer.placement,
+        return (0, f.jsx)(h.default, {
+            open: a.visible,
+            onClose: a.close,
+            width: i.default.drawer.widths.default,
+            placement: i.default.drawer.placement,
             closable: !0,
-            children: (0, d.jsxs)(h.default, {
+            children: (0, f.jsxs)(j.default, {
                 children: [
-                    (0, d.jsx)(_u, {
+                    (0, f.jsx)(_w, {
                         children: 'New Condition'
                     }),
-                    (0, d.jsx)(_v, {
+                    (0, f.jsx)(_x, {
                         children: 'Select a condition type'
                     }),
-                    (0, d.jsx)(e.default, {}),
-                    (0, d.jsxs)(j.HookCardButton, {
-                        onClick: () => u(n.HiddenConditionType.hookValue),
+                    (0, f.jsx)(g.default, {}),
+                    (0, f.jsxs)(l.HookCardButton, {
+                        onClick: () => w(p.HiddenConditionType.hookValue),
                         children: [
-                            (0, d.jsx)(_w, {
+                            (0, f.jsx)(_y, {
                                 children: 'Hook Value'
                             }),
-                            (0, d.jsx)(_x, {
+                            (0, f.jsx)(_z, {
                                 children: 'Hide depending on the value of another hook'
                             })
                         ]
                     }),
-                    (0, d.jsxs)(j.HookCardButton, {
-                        onClick: () => u(n.HiddenConditionType.modeType),
+                    (0, f.jsxs)(l.HookCardButton, {
+                        onClick: () => w(p.HiddenConditionType.modeType),
                         style: {
                             marginTop: 10
                         },
                         children: [
-                            (0, d.jsx)(_w, {
+                            (0, f.jsx)(_y, {
                                 children: 'Mode'
                             }),
-                            (0, d.jsx)(_x, {
+                            (0, f.jsx)(_z, {
                                 children: 'Hide depending on the mode (live game or assignment)'
                             })
                         ]
@@ -1628,119 +1628,119 @@ a.register('KuuVw', function(b, c) {
             })
         });
     };
-    const _u = i.default.div(o || (o = s`
+    const _w = k.default.div(q || (q = u`
   font-size: 28px;
   font-weight: ${ 0 };
-`), k.FontWeights.Bold),
-        _v = i.default.div(p || (p = s`
+`), m.FontWeights.Bold),
+        _x = k.default.div(r || (r = u`
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
 `)),
-        _w = i.default.div(q || (q = s``)),
-        _x = i.default.div(r || (r = s`
+        _y = k.default.div(s || (s = u``)),
+        _z = k.default.div(t || (t = u`
   font-size: 15px;
   font-weight: ${ 0 };
   margin-top: 2px;
   color: rgba(0, 0, 0, 0.8);
-`), k.FontWeights.Normal);
-}), a.register('Mb8oX', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _n;
+`), m.FontWeights.Normal);
+}), c.register('z6hpQ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _p;
     });
-    var d = a('0hzx+'),
-        e = a('2x11J');
-    a('LEQ5w');
-    var f = a('Axq+p'),
-        g = a('PMl60'),
-        h = a('2AWDu'),
-        i = a('LbvQU'),
-        j = a('gs/5D'),
-        k = a('ZA/7N'),
-        l = a('lQwMP');
-    let m;
-    var _n = (0, e.observer)(_w => {
-        const o = (0, j.default)(_w.hookKey),
-            [p, q, r] = (0, g.useBoolean)(!1);
-        if (!o)
+    var f = c('gRbUn'),
+        g = c('6jmvl');
+    c('O0Kav');
+    var h = c('u4s09'),
+        i = c('quE27'),
+        j = c('z5AS7'),
+        k = c('CZb2U'),
+        l = c('0gC58'),
+        m = c('2QWnF'),
+        n = c('J3JRw');
+    let o;
+    var _p = (0, g.observer)(a => {
+        const q = (0, l.default)(a.hookKey),
+            [r, s, t] = (0, i.useBoolean)(!1);
+        if (!q)
             return null;
-        const s = o.options;
-        return (0, d.jsxs)(d.Fragment, {
+        const u = q.options;
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, d.jsx)(_o, {
-                    children: s.options.length <= h.default.selectBox.maxOptions ? (0, d.jsx)(i.HookNewCardButton, {
-                        onClick: q,
+                (0, f.jsx)(_q, {
+                    children: u.options.length <= j.default.selectBox.maxOptions ? (0, f.jsx)(k.HookNewCardButton, {
+                        onClick: s,
                         style: {
                             marginBottom: 10
                         },
                         children: 'New Option'
                     }) : null
                 }),
-                s.options.map((o, p) => (0, d.jsx)(l.default, {
-                    name: o,
-                    index: p,
-                    numberOfItems: s.options.length,
-                    hookKey: _w.hookKey,
-                    isDefaultOption: s.defaultOption === o
-                }, `hook-${ _w.hookKey }-${ o }`)),
-                (0, d.jsx)(k.default, {
-                    hookKey: _w.hookKey,
-                    visible: p,
-                    close: r
+                u.options.map((q, r) => (0, f.jsx)(n.default, {
+                    name: q,
+                    index: r,
+                    numberOfItems: u.options.length,
+                    hookKey: a.hookKey,
+                    isDefaultOption: u.defaultOption === q
+                }, `hook-${ a.hookKey }-${ q }`)),
+                (0, f.jsx)(m.default, {
+                    hookKey: a.hookKey,
+                    visible: r,
+                    close: t
                 })
             ]
         });
     });
-    const _o = f.default.div.attrs({
+    const _q = h.default.div.attrs({
         className: 'maxWidth'
-    })(m || (m = (_w => _w)``));
-}), a.register('ZA/7N', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _n;
+    })(o || (o = (a => a)``));
+}), c.register('2QWnF', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _p;
     });
-    var d = a('0hzx+'),
-        e = a('ulE4q'),
-        f = a('sgToH'),
-        g = a('ewwAh'),
-        h = a('LEQ5w'),
-        i = a('nEBHu'),
-        j = a('blUBm'),
-        k = a('exDBf'),
-        l = a('aPprg'),
-        m = a('yYQqX');
-    var _n = _w => {
-        const [o, p] = h.useState(''), q = () => {
-            o.trim().length && ((0, k.default)({
-                action: j.default.newOption,
+    var f = c('gRbUn'),
+        g = c('P1KtI'),
+        h = c('3t9ce'),
+        i = c('aevdF'),
+        j = c('O0Kav'),
+        k = c('flG2L'),
+        l = c('TkKuW'),
+        m = c('sxAsZ'),
+        n = c('lpNzY'),
+        o = c('AmTT/');
+    var _p = a => {
+        const [q, r] = j.useState(''), s = () => {
+            q.trim().length && ((0, m.default)({
+                action: l.default.newOption,
                 payload: {
-                    key: _w.hookKey,
-                    option: o.trim()
+                    key: a.hookKey,
+                    option: q.trim()
                 }
-            }), _w.close(), p(''));
+            }), a.close(), r(''));
         };
-        return (0, d.jsxs)(f.default, {
-            open: _w.visible,
-            onClose: _w.close,
-            placement: i.default.drawer.placement,
-            width: i.default.drawer.widths.default,
+        return (0, f.jsxs)(h.default, {
+            open: a.visible,
+            onClose: a.close,
+            placement: k.default.drawer.placement,
+            width: k.default.drawer.widths.default,
             closable: !0,
             children: [
-                (0, d.jsxs)(l.default, {
+                (0, f.jsxs)(n.default, {
                     children: [
-                        (0, d.jsx)(m.HookFormInputLabel, {
+                        (0, f.jsx)(o.HookFormInputLabel, {
                             children: 'Option Name'
                         }),
-                        (0, d.jsx)(g.default, {
-                            value: o,
-                            onChange: _w => {
-                                p(_w.target.value);
+                        (0, f.jsx)(i.default, {
+                            value: q,
+                            onChange: a => {
+                                r(a.target.value);
                             },
                             size: 'large',
                             placeholder: 'Option name here...',
-                            onPressEnter: q
+                            onPressEnter: s
                         })
                     ]
                 }),
-                (0, d.jsx)(e.default, {
+                (0, f.jsx)(g.default, {
                     size: 'large',
                     block: !0,
                     style: {
@@ -1748,332 +1748,332 @@ a.register('KuuVw', function(b, c) {
                         height: 50
                     },
                     type: 'primary',
-                    disabled: !o.trim().length,
-                    onClick: q,
+                    disabled: !q.trim().length,
+                    onClick: s,
                     children: 'Add Option'
                 })
             ]
         });
     };
-}), a.register('lQwMP', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _o;
+}), c.register('J3JRw', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _q;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('LbvQU'),
-        f = a('Axq+p'),
-        g = a('ulE4q'),
-        h = a('/rAT0'),
-        i = a('WfOD7'),
-        j = a('LHeQv'),
-        k = a('exDBf'),
-        l = a('blUBm'),
-        m = a('fNsdX');
-    let n;
-    var _o = _w => {
-        const p = p => {
-                (0, k.default)({
-                    action: l.default.moveOption,
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('CZb2U'),
+        h = c('u4s09'),
+        i = c('P1KtI'),
+        j = c('M3JwW'),
+        k = c('xAv1a'),
+        l = c('1ZCzi'),
+        m = c('sxAsZ'),
+        n = c('TkKuW'),
+        o = c('E6YpH0');
+    let p;
+    var _q = a => {
+        const r = r => {
+                (0, m.default)({
+                    action: n.default.moveOption,
                     payload: {
-                        key: _w.hookKey,
-                        option: _w.name,
-                        direction: p
-                    }
-                });
-            },
-            q = () => {
-                (0, k.default)({
-                    action: l.default.removeOption,
-                    payload: {
-                        key: _w.hookKey,
-                        option: _w.name
-                    }
-                });
-            },
-            r = () => {
-                (0, k.default)({
-                    action: l.default.makeOptionDefault,
-                    payload: {
-                        key: _w.hookKey,
-                        option: _w.name
+                        key: a.hookKey,
+                        option: a.name,
+                        direction: r
                     }
                 });
             },
             s = () => {
-                (0, k.default)({
-                    action: l.default.removeDefaultOption,
+                (0, m.default)({
+                    action: n.default.removeOption,
                     payload: {
-                        key: _w.hookKey,
-                        option: _w.name
+                        key: a.hookKey,
+                        option: a.name
+                    }
+                });
+            },
+            t = () => {
+                (0, m.default)({
+                    action: n.default.makeOptionDefault,
+                    payload: {
+                        key: a.hookKey,
+                        option: a.name
+                    }
+                });
+            },
+            u = () => {
+                (0, m.default)({
+                    action: n.default.removeDefaultOption,
+                    payload: {
+                        key: a.hookKey,
+                        option: a.name
                     }
                 });
             };
-        return (0, d.jsx)(e.HookCardButton, {
+        return (0, f.jsx)(g.HookCardButton, {
             onClick: () => !1,
             style: {
                 marginBottom: 10
             },
-            children: (0, d.jsxs)(_p, {
+            children: (0, f.jsxs)(_r, {
                 children: [
-                    (0, d.jsx)('div', {
-                        children: _w.name
+                    (0, f.jsx)('div', {
+                        children: a.name
                     }),
-                    (0, d.jsx)(h.default, {
-                        overlay: (0, d.jsxs)(i.default, {
+                    (0, f.jsx)(j.default, {
+                        overlay: (0, f.jsxs)(k.default, {
                             children: [
-                                _w.isDefaultOption ? (0, d.jsx)(i.default.Item, {
-                                    onClick: (0, m.default)(s),
+                                a.isDefaultOption ? (0, f.jsx)(k.default.Item, {
+                                    onClick: (0, o.default)(u),
                                     children: 'Remove As Default Option'
-                                }, 'remove-as-default-option') : (0, d.jsx)(i.default.Item, {
-                                    onClick: (0, m.default)(r),
+                                }, 'remove-as-default-option') : (0, f.jsx)(k.default.Item, {
+                                    onClick: (0, o.default)(t),
                                     children: 'Make Default Option'
                                 }, 'make-default-option'),
-                                0 !== _w.index ? (0, d.jsx)(i.default.Item, {
-                                    onClick: (0, m.default)(() => p('up')),
+                                0 !== a.index ? (0, f.jsx)(k.default.Item, {
+                                    onClick: (0, o.default)(() => r('up')),
                                     children: 'Move Up'
                                 }, 'move-up') : null,
-                                _w.index !== _w.numberOfItems - 1 ? (0, d.jsx)(i.default.Item, {
-                                    onClick: (0, m.default)(() => p('down')),
+                                a.index !== a.numberOfItems - 1 ? (0, f.jsx)(k.default.Item, {
+                                    onClick: (0, o.default)(() => r('down')),
                                     children: 'Move Down'
                                 }, 'move-down') : null,
-                                (0, d.jsx)(i.default.Item, {
-                                    onClick: (0, m.default)(q),
+                                (0, f.jsx)(k.default.Item, {
+                                    onClick: (0, o.default)(s),
                                     children: 'Remove Option'
                                 }, 'remove-option')
                             ]
                         }),
-                        children: (0, d.jsx)(g.default, {
+                        children: (0, f.jsx)(i.default, {
                             shape: 'circle',
                             type: 'dashed',
-                            icon: (0, d.jsx)(j.default, {})
+                            icon: (0, f.jsx)(l.default, {})
                         })
                     })
                 ]
             })
         });
     };
-    const _p = f.default.div.attrs({
+    const _r = h.default.div.attrs({
         className: 'maxWidth flex between vc'
-    })(n || (n = (_w => _w)``));
-}), a.register('pWC1H', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _s;
+    })(p || (p = (a => a)``));
+}), c.register('XvVbz', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _u;
     });
-    var d = a('0hzx+'),
-        e = a('2x11J'),
-        f = a('LEQ5w'),
-        g = a('nEBHu'),
-        h = a('yYQqX'),
-        i = a('Axq+p'),
-        j = a('ewwAh'),
-        k = a('gs/5D'),
-        l = a('exDBf'),
-        m = a('blUBm'),
-        n = a('2AWDu'),
-        o = a('QdGLB'),
-        p = a('KalhB');
-    let q;
-    const r = g.default.name.toLowerCase();
-    var _s = (0, e.observer)(_w => {
-        const t = (0, k.default)(_w.hookKey),
-            [u, v] = f.useState(null == t ? void 0 : t.displayName),
-            [w, x] = f.useState(null == t ? void 0 : t.displayDescription);
-        f.useEffect(() => {
-            v(null == t ? void 0 : t.displayName);
-        }, [null == t ? void 0 : t.displayName]), f.useEffect(() => {
-            x(null == t ? void 0 : t.displayDescription);
-        }, [null == t ? void 0 : t.displayDescription]);
-        return t ? (0, d.jsxs)(_t, {
+    var f = c('gRbUn'),
+        g = c('6jmvl'),
+        h = c('O0Kav'),
+        i = c('flG2L'),
+        j = c('AmTT/'),
+        k = c('u4s09'),
+        l = c('aevdF'),
+        m = c('0gC58'),
+        n = c('sxAsZ'),
+        o = c('TkKuW'),
+        p = c('z5AS7'),
+        q = c('RBtfx4'),
+        r = c('nqLCG');
+    let s;
+    const t = i.default.name.toLowerCase();
+    var _u = (0, g.observer)(a => {
+        const v = (0, m.default)(a.hookKey),
+            [w, x] = h.useState(null == v ? void 0 : v.displayName),
+            [y, z] = h.useState(null == v ? void 0 : v.displayDescription);
+        h.useEffect(() => {
+            x(null == v ? void 0 : v.displayName);
+        }, [null == v ? void 0 : v.displayName]), h.useEffect(() => {
+            z(null == v ? void 0 : v.displayDescription);
+        }, [null == v ? void 0 : v.displayDescription]);
+        return v ? (0, f.jsxs)(_v, {
             children: [
-                t.type === o.HookType.number ? (0, d.jsx)(p.default, {
-                    hookKey: _w.hookKey,
-                    options: t.options
+                v.type === q.HookType.number ? (0, f.jsx)(r.default, {
+                    hookKey: a.hookKey,
+                    options: v.options
                 }) : null,
-                (0, d.jsx)(h.HookFormInputLabel, {
+                (0, f.jsx)(j.HookFormInputLabel, {
                     children: 'Display Name'
                 }),
-                (0, d.jsxs)(h.HookFormInputLabelDescription, {
+                (0, f.jsxs)(j.HookFormInputLabelDescription, {
                     children: [
                         'This ',
-                        r,
+                        t,
                         ' corresponds to an option that the game host will set before loading into your map. Set a display name that will make sense to them based off that this ',
-                        r,
+                        t,
                         ' customizes. Or leave it blank to use the ',
-                        r,
+                        t,
                         '\'s name.'
                     ]
                 }),
-                (0, d.jsx)(j.default, {
+                (0, f.jsx)(l.default, {
                     size: 'large',
-                    placeholder: t.key,
-                    value: u,
-                    onChange: _w => {
-                        v(_w.target.value);
+                    placeholder: v.key,
+                    value: w,
+                    onChange: a => {
+                        x(a.target.value);
                     },
                     onBlur: () => {
-                        (0, l.default)({
-                            action: m.default.setNameOrDescription,
+                        (0, n.default)({
+                            action: o.default.setNameOrDescription,
                             payload: {
-                                key: _w.hookKey,
-                                value: u,
+                                key: a.hookKey,
+                                value: w,
                                 property: 'displayName'
                             }
                         });
                     },
-                    maxLength: n.default.maxDisplayNameLength
+                    maxLength: p.default.maxDisplayNameLength
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         height: 20
                     }
                 }),
-                (0, d.jsx)(h.HookFormInputLabel, {
+                (0, f.jsx)(j.HookFormInputLabel, {
                     children: 'Description'
                 }),
-                (0, d.jsx)(h.HookFormInputLabelDescription, {
+                (0, f.jsx)(j.HookFormInputLabelDescription, {
                     children: 'Optional description used to give the game host more info on what this hook customizes.'
                 }),
-                (0, d.jsx)(j.default, {
+                (0, f.jsx)(l.default, {
                     size: 'large',
                     placeholder: 'Description here...',
-                    value: w,
-                    onChange: _w => {
-                        x(_w.target.value);
+                    value: y,
+                    onChange: a => {
+                        z(a.target.value);
                     },
                     onBlur: () => {
-                        (0, l.default)({
-                            action: m.default.setNameOrDescription,
+                        (0, n.default)({
+                            action: o.default.setNameOrDescription,
                             payload: {
-                                key: _w.hookKey,
-                                value: w,
+                                key: a.hookKey,
+                                value: y,
                                 property: 'displayDescription'
                             }
                         });
                     },
-                    maxLength: n.default.maxDisplayDescriptionLength
+                    maxLength: p.default.maxDisplayDescriptionLength
                 })
             ]
         }) : null;
     });
-    const _t = i.default.div(q || (q = (_w => _w)``));
-}), a.register('KalhB', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _l;
+    const _v = k.default.div(s || (s = (a => a)``));
+}), c.register('nqLCG', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _n;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('yYQqX'),
-        g = a('exDBf'),
-        h = a('blUBm'),
-        i = a('fe6E3'),
-        j = a('rw8oD0');
-    const k = {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('AmTT/'),
+        i = c('sxAsZ'),
+        j = c('TkKuW'),
+        k = c('9zaF+'),
+        l = c('JcaZI');
+    const m = {
         width: '100%'
     };
-    var _l = _w => {
-        var m, n, o, p;
-        const [q, r] = e.useState({
-            defaultValue: _w.options.defaultValue,
-            min: _w.options.min,
-            max: _w.options.max,
-            step: _w.options.step
+    var _n = a => {
+        var o, p, q, r;
+        const [s, t] = g.useState({
+            defaultValue: a.options.defaultValue,
+            min: a.options.min,
+            max: a.options.max,
+            step: a.options.step
         });
-        e.useEffect(() => {
-            r({
-                defaultValue: _w.options.defaultValue,
-                min: _w.options.min,
-                max: _w.options.max,
-                step: _w.options.step
+        g.useEffect(() => {
+            t({
+                defaultValue: a.options.defaultValue,
+                min: a.options.min,
+                max: a.options.max,
+                step: a.options.step
             });
         }, [
-            null === (m = _w.options) || void 0 === m ? void 0 : m.defaultValue,
-            null === (n = _w.options) || void 0 === n ? void 0 : n.min,
-            null === (o = _w.options) || void 0 === o ? void 0 : o.max,
-            null === (p = _w.options) || void 0 === p ? void 0 : p.step
+            null === (o = a.options) || void 0 === o ? void 0 : o.defaultValue,
+            null === (p = a.options) || void 0 === p ? void 0 : p.min,
+            null === (q = a.options) || void 0 === q ? void 0 : q.max,
+            null === (r = a.options) || void 0 === r ? void 0 : r.step
         ]);
-        const s = m => n => {
-            ((m, n) => {
-                (0, g.default)({
-                    action: h.default.changeNumberOption,
+        const u = o => p => {
+            ((o, p) => {
+                (0, i.default)({
+                    action: j.default.changeNumberOption,
                     payload: {
-                        hookKey: _w.hookKey,
-                        key: m,
-                        value: n
+                        hookKey: a.hookKey,
+                        key: o,
+                        value: p
                     }
-                }), r({
-                    ...q,
-                    [m]: n
+                }), t({
+                    ...s,
+                    [o]: p
                 });
-            })(m, n);
+            })(o, p);
         };
-        return (0, d.jsxs)(d.Fragment, {
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, d.jsx)(f.HookFormInputLabel, {
+                (0, f.jsx)(h.HookFormInputLabel, {
                     children: 'Default Value'
                 }),
-                (0, d.jsx)(j.default, {
+                (0, f.jsx)(l.default, {
                     size: 'large',
-                    style: k,
+                    style: m,
                     placeholder: '0',
-                    onChange: s('defaultValue'),
-                    value: q.defaultValue,
-                    min: q.min,
-                    max: q.max,
-                    step: q.step
+                    onChange: u('defaultValue'),
+                    value: s.defaultValue,
+                    min: s.min,
+                    max: s.max,
+                    step: s.step
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         height: 20
                     }
                 }),
-                (0, d.jsx)(f.HookFormInputLabel, {
+                (0, f.jsx)(h.HookFormInputLabel, {
                     children: 'Minimum'
                 }),
-                (0, d.jsx)(j.default, {
+                (0, f.jsx)(l.default, {
                     size: 'large',
-                    style: k,
+                    style: m,
                     placeholder: 'Minimum here...',
-                    onChange: s('min'),
-                    value: q.min,
-                    max: (0, i.isNil)(q.defaultValue) ? void 0 : q.defaultValue
+                    onChange: u('min'),
+                    value: s.min,
+                    max: (0, k.isNil)(s.defaultValue) ? void 0 : s.defaultValue
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         height: 20
                     }
                 }),
-                (0, d.jsx)(f.HookFormInputLabel, {
+                (0, f.jsx)(h.HookFormInputLabel, {
                     children: 'Maximum'
                 }),
-                (0, d.jsx)(j.default, {
+                (0, f.jsx)(l.default, {
                     size: 'large',
-                    style: k,
+                    style: m,
                     placeholder: 'Maximum here...',
-                    onChange: s('max'),
-                    value: q.max,
-                    min: (0, i.isNil)(q.defaultValue) ? void 0 : q.defaultValue
+                    onChange: u('max'),
+                    value: s.max,
+                    min: (0, k.isNil)(s.defaultValue) ? void 0 : s.defaultValue
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         height: 20
                     }
                 }),
-                (0, d.jsx)(f.HookFormInputLabel, {
+                (0, f.jsx)(h.HookFormInputLabel, {
                     children: 'Step'
                 }),
-                (0, d.jsx)(f.HookFormInputLabelDescription, {
+                (0, f.jsx)(h.HookFormInputLabelDescription, {
                     children: 'Force the number to be of a certain factor. If you want only whole numbers, set a step of 1. If you want 50s (50, 100, 150, etc), set the step to 50.'
                 }),
-                (0, d.jsx)(j.default, {
+                (0, f.jsx)(l.default, {
                     size: 'large',
-                    style: k,
+                    style: m,
                     placeholder: 'Step here...',
-                    onChange: s('step'),
-                    value: q.step,
+                    onChange: u('step'),
+                    value: s.step,
                     min: 0.01
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         height: 20
                     }
@@ -2081,104 +2081,104 @@ a.register('KuuVw', function(b, c) {
             ]
         });
     };
-}), a.register('YzWnC', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _v;
+}), c.register('pwDJ7', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _x;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('ulE4q'),
-        g = a('fmVdR'),
-        h = a('sgToH'),
-        i = a('ewwAh'),
-        j = a('inwN3'),
-        k = a('nEBHu'),
-        l = a('aPprg'),
-        m = a('Axq+p'),
-        n = a('QdGLB'),
-        o = a('b5kvC'),
-        p = a('exDBf'),
-        q = a('blUBm'),
-        r = a('2AWDu'),
-        s = a('yYQqX');
-    let t;
-    const u = n.HookType.selectBox;
-    var _v = _w => {
-        const [w, x] = e.useState(''), [y, z] = e.useState(u);
-        return (0, d.jsx)(h.default, {
-            open: _w.visible,
-            onClose: _w.close,
-            placement: k.default.drawer.placement,
-            width: k.default.drawer.widths.default,
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('P1KtI'),
+        i = c('VNuyu'),
+        j = c('3t9ce'),
+        k = c('aevdF'),
+        l = c('u8Dt8'),
+        m = c('flG2L'),
+        n = c('lpNzY'),
+        o = c('u4s09'),
+        p = c('RBtfx4'),
+        q = c('Eh2Wh'),
+        r = c('sxAsZ'),
+        s = c('TkKuW'),
+        t = c('z5AS7'),
+        u = c('AmTT/');
+    let v;
+    const w = p.HookType.selectBox;
+    var _x = a => {
+        const [y, z] = g.useState(''), [A, B] = g.useState(w);
+        return (0, f.jsx)(j.default, {
+            open: a.visible,
+            onClose: a.close,
+            placement: m.default.drawer.placement,
+            width: m.default.drawer.widths.default,
             closable: !0,
-            children: (0, d.jsxs)(l.default, {
+            children: (0, f.jsxs)(n.default, {
                 children: [
-                    (0, d.jsxs)(_w, {
+                    (0, f.jsxs)(_y, {
                         children: [
                             'New ',
-                            k.default.name
+                            m.default.name
                         ]
                     }),
-                    (0, d.jsx)(g.default, {}),
-                    (0, d.jsxs)(s.HookFormInputLabel, {
+                    (0, f.jsx)(i.default, {}),
+                    (0, f.jsxs)(u.HookFormInputLabel, {
                         children: [
-                            k.default.name,
+                            m.default.name,
                             ' Name'
                         ]
                     }),
-                    (0, d.jsx)(i.default, {
+                    (0, f.jsx)(k.default, {
                         size: 'large',
                         style: {
                             width: '100%'
                         },
                         placeholder: 'Name here...',
-                        onChange: _w => {
-                            x(_w.target.value);
+                        onChange: a => {
+                            z(a.target.value);
                         },
-                        value: w,
-                        maxLength: r.default.maxKeyLength
+                        value: y,
+                        maxLength: t.default.maxKeyLength
                     }),
-                    (0, d.jsx)('div', {
+                    (0, f.jsx)('div', {
                         style: {
                             height: 20
                         }
                     }),
-                    (0, d.jsxs)(s.HookFormInputLabel, {
+                    (0, f.jsxs)(u.HookFormInputLabel, {
                         children: [
-                            k.default.name,
+                            m.default.name,
                             ' Type'
                         ]
                     }),
-                    (0, d.jsxs)(j.default, {
+                    (0, f.jsxs)(l.default, {
                         size: 'large',
                         style: {
                             width: '100%'
                         },
-                        value: y,
-                        onChange: _w => {
-                            z(_w);
+                        value: A,
+                        onChange: a => {
+                            B(a);
                         },
                         children: [
-                            (0, d.jsx)(j.default.Option, {
-                                value: n.HookType.selectBox,
+                            (0, f.jsx)(l.default.Option, {
+                                value: p.HookType.selectBox,
                                 children: 'Select Box'
                             }),
-                            (0, d.jsx)(j.default.Option, {
-                                value: n.HookType.number,
+                            (0, f.jsx)(l.default.Option, {
+                                value: p.HookType.number,
                                 children: 'Number'
                             }),
-                            (0, d.jsx)(j.default.Option, {
-                                value: n.HookType.kit,
+                            (0, f.jsx)(l.default.Option, {
+                                value: p.HookType.kit,
                                 children: 'Kit'
                             })
                         ]
                     }),
-                    (0, d.jsx)('div', {
+                    (0, f.jsx)('div', {
                         style: {
                             height: 30
                         }
                     }),
-                    (0, d.jsxs)(f.default, {
+                    (0, f.jsxs)(h.default, {
                         block: !0,
                         size: 'large',
                         type: 'primary',
@@ -2186,91 +2186,91 @@ a.register('KuuVw', function(b, c) {
                             height: 60
                         },
                         onClick: () => {
-                            w && y && ((0, p.default)({
-                                action: q.default.newHook,
+                            y && A && ((0, r.default)({
+                                action: s.default.newHook,
                                 payload: {
-                                    key: w,
-                                    type: y
+                                    key: y,
+                                    type: A
                                 }
-                            }), x(''), z(u), _w.close());
+                            }), z(''), B(w), a.close());
                         },
                         children: [
                             'Create ',
-                            k.default.name
+                            m.default.name
                         ]
                     })
                 ]
             })
         });
     };
-    const _w = m.default.div(t || (t = (_w => _w)`
+    const _y = o.default.div(v || (v = (a => a)`
   font-size: 28px;
   font-weight: ${ 0 };
-`), o.FontWeights.UltraBold);
-}), a.register('tA5HU', function(b, c) {
-    _w(b.exports, 'default', function() {
-        return _v;
+`), q.FontWeights.UltraBold);
+}), c.register('tbuJA', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _x;
     });
-    var d = a('0hzx+'),
-        e = a('ulE4q'),
-        f = a('2x11J'),
-        g = a('LEQ5w'),
-        h = a('Axq+p'),
-        i = a('bkqTR0'),
-        j = a('ED5Qu0'),
-        k = a('vShe/'),
-        l = a('nEBHu'),
-        m = a('x7BBh'),
-        n = a('iWivW'),
-        o = a('RxX2a'),
-        p = a('bHGrl'),
-        q = a('Quxw3'),
-        r = a('yotix'),
-        s = a('66RLp2'),
-        t = a('GqzrW');
-    let u;
-    var _v = (0, f.observer)(() => {
-        const _w = g.useRef(),
-            x = (0, r.default)(),
+    var f = c('gRbUn'),
+        g = c('P1KtI'),
+        h = c('6jmvl'),
+        i = c('O0Kav'),
+        j = c('u4s09'),
+        k = c('130cP'),
+        l = c('9kbT6'),
+        m = c('HOIhZ'),
+        n = c('flG2L'),
+        o = c('ywRRc'),
+        p = c('fI6of'),
+        q = c('mqV/r'),
+        r = c('K/2xB'),
+        s = c('0v55W'),
+        t = c('TgUk7'),
+        u = c('XVrof3'),
+        v = c('u8Fxu');
+    let w;
+    var _x = (0, h.observer)(() => {
+        const y = i.useRef(),
+            z = (0, t.default)(),
             {
                 me: {
-                    preferences: y
+                    preferences: A
                 }
-            } = (0, p.default)(),
-            z = _w => {
-                y.startGameWithMode = _w;
+            } = (0, r.default)(),
+            B = y => {
+                A.startGameWithMode = y;
             };
-        (0, t.useWillUnmount)(() => {
-            z(s.MapModeType.liveGame);
-        }), g.useEffect(() => (window.dispatchEvent(new CustomEvent('TEST_VALUES_VISIBLE')), () => {
+        (0, v.useWillUnmount)(() => {
+            B(u.MapModeType.liveGame);
+        }), i.useEffect(() => (window.dispatchEvent(new CustomEvent('TEST_VALUES_VISIBLE')), () => {
             window.dispatchEvent(new CustomEvent('TEST_VALUES_HIDDEN'));
         }), []);
-        const A = () => {
-            (0, q.default)(m.default.startGame, {
-                ownerAsSpectator: n.default.session.ownerRole === o.default.spectator,
-                hookFormState: _w.current,
-                modeType: n.default.me.preferences.startGameWithMode
+        const C = () => {
+            (0, s.default)(o.default.startGame, {
+                ownerAsSpectator: p.default.session.ownerRole === q.default.spectator,
+                hookFormState: y.current,
+                modeType: p.default.me.preferences.startGameWithMode
             });
         };
-        return (0, d.jsx)(_w, {
-            children: (0, d.jsx)(i.default, {
-                hooks: x,
-                modeType: y.startGameWithMode,
-                location: j.HookFormLocation.editor,
-                footer: _w => 0 === _w ? (0, d.jsxs)('div', {
+        return (0, f.jsx)(_y, {
+            children: (0, f.jsx)(k.default, {
+                hooks: z,
+                modeType: A.startGameWithMode,
+                location: l.HookFormLocation.editor,
+                footer: y => 0 === y ? (0, f.jsxs)('div', {
                     style: {
                         fontSize: 16
                     },
                     children: [
                         'No ',
-                        l.default.name.toLowerCase(),
+                        n.default.name.toLowerCase(),
                         's to configure here yet. For Select Box ',
-                        l.default.name,
+                        n.default.name,
                         's, make sure you create selectable options for it to show up here!'
                     ]
-                }) : (0, d.jsxs)(d.Fragment, {
+                }) : (0, f.jsxs)(f.Fragment, {
                     children: [
-                        (0, d.jsx)(e.default, {
+                        (0, f.jsx)(g.default, {
                             size: 'large',
                             type: 'primary',
                             block: !0,
@@ -2278,65 +2278,65 @@ a.register('KuuVw', function(b, c) {
                                 height: 60,
                                 marginTop: 15
                             },
-                            onClick: A,
+                            onClick: C,
                             children: 'Start Game With Test Values'
                         }),
-                        (0, d.jsx)(e.default, {
+                        (0, f.jsx)(g.default, {
                             block: !0,
                             style: {
                                 marginTop: 10
                             },
                             onClick: () => {
-                                y.startGameWithMode === s.MapModeType.liveGame ? z(s.MapModeType.assignment) : z(s.MapModeType.liveGame);
+                                A.startGameWithMode === u.MapModeType.liveGame ? B(u.MapModeType.assignment) : B(u.MapModeType.liveGame);
                             },
-                            children: y.startGameWithMode === s.MapModeType.liveGame ? 'Live Game' : 'Assignment'
+                            children: A.startGameWithMode === u.MapModeType.liveGame ? 'Live Game' : 'Assignment'
                         })
                     ]
                 }),
-                onStateChange: x => _w.current = x
+                onStateChange: z => y.current = z
             })
         });
     });
-    const _w = h.default.div(u || (u = (_i => _i)`
+    const _y = j.default.div(w || (w = (a => a)`
   padding: 2px 10px 40px 10px;
   color: ${ 0 };
-`), k.default.Black);
-}), a.register('31UsN', function(b, c) {
-    _i(b.exports, 'default', function() {
+`), m.default.Black);
+}), c.register('VLnnS', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
+    });
+    var f = c('O0Kav'),
+        g = c('T4qsB');
+    var _h = f.createContext(g.default);
+}), c.register('P11ai26', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
-    var d = a('LEQ5w'),
-        e = a('oKonb');
-    var _f = d.createContext(e.default);
-}), a.register('Kc6XZ23', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _d;
-    });
-    var _d = {
+    var _f = {
         sideMargin: 50,
         optionWidth: 200
     };
-}), a.register('pMmde1', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('OQRaD', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('+bIFH'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('tWyJZ'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'DownOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('+bIFH', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'DownOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('tWyJZ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -2353,12 +2353,12 @@ a.register('KuuVw', function(b, c) {
         name: 'down',
         theme: 'outlined'
     };
-}), a.register('y4x7Q', function(b, c) {
-    let d;
-    var e;
+}), c.register('Qjtm3', function(d, e) {
     let f;
     var g;
-    e(b.exports, 'LocalStorageNames', function() {
-        return f;
-    }), (e = d || (d = {})).time = 'time', e.target = 'target', e.race = 'race', e.allIn = 'allIn', (g = f || (f = {})).language = 'gimkit-3.0-game-language', g.currency = 'gimkit-game-currency', g.music = 'gimkit-music-track', g.allowGoogleTranslate = 'gimkit-google-translate-allowed', g.editorDefaultLanguage = 'gimkit-editor-v4-default-language', g.editorDefaultGradeLevel = 'gimkit-editor-v4-default-grade-level', g.editorDefaultSubject = 'gimkit-editor-v4-default-subject', g.cosmosBlockedInGame = 'gimkit-cosmos-blocked-in-game', g.hookSavedOptions = 'gimkit-hook-saved-options';
+    let h;
+    var i;
+    a(d.exports, 'LocalStorageNames', function() {
+        return h;
+    }), (g = f || (f = {})).time = 'time', g.target = 'target', g.race = 'race', g.allIn = 'allIn', (i = h || (h = {})).language = 'gimkit-3.0-game-language', i.currency = 'gimkit-game-currency', i.music = 'gimkit-music-track', i.allowGoogleTranslate = 'gimkit-google-translate-allowed', i.editorDefaultLanguage = 'gimkit-editor-v4-default-language', i.editorDefaultGradeLevel = 'gimkit-editor-v4-default-grade-level', i.editorDefaultSubject = 'gimkit-editor-v4-default-subject', i.cosmosBlockedInGame = 'gimkit-cosmos-blocked-in-game', i.hookSavedOptions = 'gimkit-hook-saved-options';
 });

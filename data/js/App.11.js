@@ -6,173 +6,173 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('+9cKB', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('QUa6m', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _x(b.exports, 'default', function() {
-        return _q;
+    }), a(c.exports, 'default', function() {
+        return _r;
     });
-    var e = a('0hzx+'),
-        f = a('fmVdR'),
-        g = a('sgToH');
-    a('LEQ5w');
-    var h = a('vks/+'),
-        i = a('uYuLz'),
-        j = a('2x11J'),
-        k = a('X4hF0'),
-        l = a('Uo2IS'),
-        m = a('QdGLB'),
-        n = a('W5/hF'),
-        o = a('nEBHu'),
-        p = a('aPprg');
-    var _q = (0, j.observer)(_x => {
-        var r, s;
-        const t = null === (r = _x.hooks) || void 0 === r || null === (s = r.connections) || void 0 === s ? void 0 : s.find(r => r.option === _x.option.key);
-        return (0, e.jsx)(g.default, {
-            open: _x.visible,
-            onClose: _x.close,
-            width: o.default.drawer.widths.default,
-            placement: o.default.drawer.placement,
+    var f = b('gRbUn'),
+        g = b('VNuyu'),
+        h = b('3t9ce');
+    b('O0Kav');
+    var i = b('qgfKW'),
+        j = b('IzuM3'),
+        k = b('6jmvl'),
+        l = b('nzR0T'),
+        m = b('O2yCs'),
+        n = b('RBtfx4'),
+        o = b('gEl/T'),
+        p = b('flG2L'),
+        q = b('lpNzY');
+    var _r = (0, k.observer)(a => {
+        var s, t;
+        const u = null === (s = a.hooks) || void 0 === s || null === (t = s.connections) || void 0 === t ? void 0 : t.find(s => s.option === a.option.key);
+        return (0, f.jsx)(h.default, {
+            open: a.visible,
+            onClose: a.close,
+            width: p.default.drawer.widths.default,
+            placement: p.default.drawer.placement,
             closable: !0,
-            children: (0, e.jsxs)(p.default, {
+            children: (0, f.jsxs)(q.default, {
                 children: [
-                    (0, e.jsx)(i.default, {
-                        optionName: _x.option.option.label,
-                        optionKey: _x.option.key,
-                        deviceId: _x.deviceId,
-                        connectionName: null == t ? void 0 : t.hook,
-                        close: _x.close
+                    (0, f.jsx)(j.default, {
+                        optionName: a.option.option.label,
+                        optionKey: a.option.key,
+                        deviceId: a.deviceId,
+                        connectionName: null == u ? void 0 : u.hook,
+                        close: a.close
                     }),
-                    (0, e.jsx)(f.default, {}),
+                    (0, f.jsx)(g.default, {}),
                     (() => {
-                        if (t) {
-                            if (t.hookType === m.HookType.selectBox)
-                                return (0, e.jsx)(n.default, {
-                                    option: _x.option,
-                                    connection: t,
-                                    deviceId: _x.deviceId
+                        if (u) {
+                            if (u.hookType === n.HookType.selectBox)
+                                return (0, f.jsx)(o.default, {
+                                    option: a.option,
+                                    connection: u,
+                                    deviceId: a.deviceId
                                 });
-                            if (t.hookType === m.HookType.kit)
-                                return (0, e.jsx)(k.default, {});
-                            if (t.hookType === m.HookType.number)
-                                return (0, e.jsx)(l.default, {
-                                    option: _x.option,
-                                    connection: t
+                            if (u.hookType === n.HookType.kit)
+                                return (0, f.jsx)(l.default, {});
+                            if (u.hookType === n.HookType.number)
+                                return (0, f.jsx)(m.default, {
+                                    option: a.option,
+                                    connection: u
                                 });
                         }
-                        return (0, e.jsx)(h.default, {
-                            option: _x.option,
-                            deviceId: _x.deviceId,
-                            deviceType: _x.deviceType
+                        return (0, f.jsx)(i.default, {
+                            option: a.option,
+                            deviceId: a.deviceId,
+                            deviceType: a.deviceType
                         });
                     })()
                 ]
             })
         });
     });
-}), a.register('vks/+', function(b, c) {
-    _x(b.exports, 'default', function() {
-        return _y;
+}), b.register('qgfKW', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _z;
     });
-    var d = a('0hzx+'),
-        e = a('2x11J');
-    a('LEQ5w');
-    var f = a('Axq+p'),
-        g = a('cPBfb'),
-        h = a('QdGLB'),
-        i = a('bHGrl'),
-        j = a('nEBHu'),
-        k = a('LbvQU'),
-        l = a('iiikG'),
-        m = a('KWq5G'),
-        n = a('sWOBO'),
-        o = a('vShe/'),
-        p = a('b5kvC'),
-        q = a('Y3EZX');
-    let r, s, t, u, v, w, x = _x => _x;
-    var _y = (0, e.observer)(_x => {
-        var z;
+    var e = b('gRbUn'),
+        f = b('6jmvl');
+    b('O0Kav');
+    var g = b('u4s09'),
+        h = b('OFuf70'),
+        i = b('RBtfx4'),
+        j = b('K/2xB'),
+        k = b('flG2L'),
+        l = b('CZb2U'),
+        m = b('rEKJy'),
+        n = b('jFZwj'),
+        o = b('zEuNa'),
+        p = b('HOIhZ'),
+        q = b('Eh2Wh'),
+        r = b('y3vGz');
+    let s, t, u, v, w, x, y = a => a;
+    var _z = (0, f.observer)(a => {
+        var A;
         const {
             hooks: {
-                hookJSON: A
+                hookJSON: B
             }
-        } = (0, i.default)(), B = JSON.parse(A);
-        return (null == B || null === (z = B.hooks) || void 0 === z ? void 0 : z.length) ? (0, d.jsxs)(_z, {
+        } = (0, j.default)(), C = JSON.parse(B);
+        return (null == C || null === (A = C.hooks) || void 0 === A ? void 0 : A.length) ? (0, e.jsxs)(_A, {
             children: [
-                (0, d.jsxs)(_B, {
+                (0, e.jsxs)(_C, {
                     children: [
                         'Choose a ',
-                        j.default.name.toLowerCase(),
+                        k.default.name.toLowerCase(),
                         ' to connect to...'
                     ]
                 }),
-                B.hooks.map(z => {
-                    const C = (B = _x.option, e = _x.deviceType, !((f = z.type) === h.HookType.kit ? 'kitId' === B.key && e === g.default.gimkitLiveQuestion : f !== h.HookType.number || B.option.type === q.default.numberInput));
-                    var D, E, F;
-                    return (0, d.jsx)(k.HookCardButton, {
+                C.hooks.map(A => {
+                    const D = (C = a.option, f = a.deviceType, !((g = A.type) === i.HookType.kit ? 'kitId' === C.key && f === h.default.gimkitLiveQuestion : g !== i.HookType.number || C.option.type === r.default.numberInput));
+                    var E, F, G;
+                    return (0, e.jsx)(l.HookCardButton, {
                         style: {
                             marginBottom: 10,
-                            cursor: C ? 'not-allowed' : 'pointer',
-                            background: C ? '#e0e0e0' : o.default.White
+                            cursor: D ? 'not-allowed' : 'pointer',
+                            background: D ? '#e0e0e0' : p.default.White
                         },
                         onClick: () => {
-                            C || (0, l.default)({
-                                action: m.default.connect,
+                            D || (0, m.default)({
+                                action: n.default.connect,
                                 payload: {
-                                    hook: z.key,
-                                    option: _x.option.key
+                                    hook: A.key,
+                                    option: a.option.key
                                 },
-                                device: _x.deviceId
+                                device: a.deviceId
                             });
                         },
-                        children: (0, d.jsxs)('div', {
+                        children: (0, e.jsxs)('div', {
                             className: 'flex-column',
                             style: {
                                 alignItems: 'flex-start'
                             },
                             children: [
-                                (0, d.jsx)(_C, {
-                                    children: (0, n.default)(z.type)
+                                (0, e.jsx)(_D, {
+                                    children: (0, o.default)(A.type)
                                 }),
-                                (0, d.jsx)(_D, {
-                                    children: z.key
+                                (0, e.jsx)(_E, {
+                                    children: A.key
                                 }),
-                                C && (0, d.jsxs)(_E, {
+                                D && (0, e.jsxs)(_F, {
                                     children: [
                                         'Cannot use ',
-                                        j.default.name.toLowerCase(),
+                                        k.default.name.toLowerCase(),
                                         ' for this option'
                                     ]
                                 })
                             ]
                         })
-                    }, `${ z.key }-option-connect`);
+                    }, `${ A.key }-option-connect`);
                 })
             ]
-        }) : (0, d.jsx)(_z, {
-            children: (0, d.jsxs)('div', {
+        }) : (0, e.jsx)(_A, {
+            children: (0, e.jsxs)('div', {
                 className: 'flex-column maxWidth flex-center',
                 children: [
-                    (0, d.jsx)('div', {
+                    (0, e.jsx)('div', {
                         style: {
                             fontSize: 42,
                             marginBottom: 10,
                             color: '#3949ab'
                         },
-                        children: (0, d.jsx)('i', {
+                        children: (0, e.jsx)('i', {
                             className: 'fad fa-plus-square'
                         })
                     }),
-                    (0, d.jsxs)(_A, {
+                    (0, e.jsxs)(_B, {
                         children: [
                             'You haven\'t created any ',
-                            j.default.name.toLowerCase(),
+                            k.default.name.toLowerCase(),
                             's yet. Create one first and then come back here to connect this option to that',
                             ' ',
-                            j.default.name.toLowerCase(),
+                            k.default.name.toLowerCase(),
                             '.'
                         ]
                     })
@@ -180,24 +180,24 @@ a.register('+9cKB', function(b, c) {
             })
         });
     });
-    const _z = f.default.div(r || (r = x``)),
-        _A = f.default.div(s || (s = x`
+    const _A = g.default.div(s || (s = y``)),
+        _B = g.default.div(t || (t = y`
   font-size: 18px;
 `)),
-        _B = f.default.div(t || (t = x`
+        _C = g.default.div(u || (u = y`
   font-style: italic;
   font-size: 16px;
   margin-bottom: 20px;
 `)),
-        _C = f.default.div(u || (u = x`
+        _D = g.default.div(v || (v = y`
   font-size: 12px;
   font-style: italic;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.65);
   font-weight: ${ 0 };
-`), p.FontWeights.Normal),
-        _D = f.default.div(v || (v = x``)),
-        _E = f.default.div(w || (w = x`
+`), q.FontWeights.Normal),
+        _E = g.default.div(w || (w = y``)),
+        _F = g.default.div(x || (x = y`
   background: #e53935;
   font-size: 14px;
   margin-top: 8px;
@@ -206,18 +206,18 @@ a.register('+9cKB', function(b, c) {
   padding: 10px 12px;
   border-radius: 8px;
   line-height: 1;
-`), p.FontWeights.Normal, o.default.White);
-}), a.register('QdGLB', function(b, c) {
-    let d;
-    var e;
-    _x(b.exports, 'HookType', function() {
-        return d;
-    }), (e = d || (d = {})).selectBox = 'selectBox', e.kit = 'kit', e.number = 'number';
-}), a.register('nEBHu', function(b, c) {
-    _x(b.exports, 'default', function() {
-        return _d;
+`), q.FontWeights.Normal, p.default.White);
+}), b.register('RBtfx4', function(c, d) {
+    let e;
+    var f;
+    a(c.exports, 'HookType', function() {
+        return e;
+    }), (f = e || (e = {})).selectBox = 'selectBox', f.kit = 'kit', f.number = 'number';
+}), b.register('flG2L', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _e;
     });
-    var _d = {
+    var _e = {
         name: 'Hook',
         drawer: {
             placement: 'left',
@@ -227,28 +227,28 @@ a.register('+9cKB', function(b, c) {
             }
         }
     };
-}), a.register('LbvQU', function(b, c) {
-    _x(b.exports, 'HookNewCardButton', function() {
-        return _l;
-    }), _x(b.exports, 'HookCardButton', function() {
+}), b.register('CZb2U', function(c, d) {
+    a(c.exports, 'HookNewCardButton', function() {
         return _m;
+    }), a(c.exports, 'HookCardButton', function() {
+        return _n;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('oXQNI'),
-        f = a('Axq+p'),
-        g = a('vShe/'),
-        h = a('b5kvC');
-    let i, j, k = _x => _x;
-    const _l = _x => (0, d.jsx)(_n, {
+    var e = b('gRbUn');
+    b('O0Kav');
+    var f = b('QZ0Z+'),
+        g = b('u4s09'),
+        h = b('HOIhZ'),
+        i = b('Eh2Wh');
+    let j, k, l = a => a;
+    const _m = a => (0, e.jsx)(_o, {
             hoverable: !0,
-            onClick: _x.onClick,
-            style: _x.style,
-            children: (0, d.jsx)(_o, {
-                children: (0, d.jsxs)('div', {
+            onClick: a.onClick,
+            style: a.style,
+            children: (0, e.jsx)(_p, {
+                children: (0, e.jsxs)('div', {
                     className: 'flex vc',
                     children: [
-                        (0, d.jsx)('i', {
+                        (0, e.jsx)('i', {
                             style: {
                                 color: '#2e7d32',
                                 marginRight: 10,
@@ -256,53 +256,53 @@ a.register('+9cKB', function(b, c) {
                             },
                             className: 'fas fa-plus-circle'
                         }),
-                        (0, d.jsx)('div', {
-                            children: _x.children
+                        (0, e.jsx)('div', {
+                            children: a.children
                         })
                     ]
                 })
             })
         }),
-        _m = _x => (0, d.jsx)(_n, {
+        _n = a => (0, e.jsx)(_o, {
             hoverable: !0,
-            onClick: _x.onClick,
-            style: _x.style,
-            children: (0, d.jsx)(_o, {
-                children: _x.children
+            onClick: a.onClick,
+            style: a.style,
+            children: (0, e.jsx)(_p, {
+                children: a.children
             })
         }),
-        _n = (0, f.default)(e.default)(i || (i = k``)),
-        _o = f.default.div(j || (j = k`
+        _o = (0, g.default)(f.default)(j || (j = l``)),
+        _p = g.default.div(k || (k = l`
   color: ${ 0 };
   font-size: 18px;
   font-weight: ${ 0 };
-`), g.default.Black, h.FontWeights.Bold);
-}), a.register('iiikG', function(b, c) {
-    _x(b.exports, 'default', function() {
-        return _e;
-    });
-    var d = a('MwTfp');
-    var _e = _x => {
-        (0, d.default)(_x);
-    };
-}), a.register('MwTfp', function(b, c) {
-    _x(b.exports, 'default', function() {
+`), h.default.Black, i.FontWeights.Bold);
+}), b.register('rEKJy', function(c, d) {
+    a(c.exports, 'default', function() {
         return _f;
     });
-    var d = a('x7BBh'),
-        e = a('Quxw3');
-    var _f = _x => {
-        (0, e.default)(d.default.hookOptionAction, {
-            device: _x.device,
-            action: _x.action,
-            payload: _x.payload
+    var e = b('gZv2S');
+    var _f = a => {
+        (0, e.default)(a);
+    };
+}), b.register('gZv2S', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
+    });
+    var e = b('ywRRc'),
+        f = b('0v55W');
+    var _g = a => {
+        (0, f.default)(e.default.hookOptionAction, {
+            device: a.device,
+            action: a.action,
+            payload: a.payload
         });
     };
-}), a.register('KWq5G', function(b, c) {
-    _x(b.exports, 'default', function() {
-        return _d;
+}), b.register('jFZwj', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _e;
     });
-    var _d = {
+    var _e = {
         connect: 'CONNECT',
         createLink: 'CREATE_LINK',
         changeLinkOption: 'CHANGE_LINK_OPTION',
@@ -310,68 +310,68 @@ a.register('+9cKB', function(b, c) {
         removeLink: 'REMOVE_LINK',
         disconnect: 'DISCONNECT'
     };
-}), a.register('sWOBO', function(b, c) {
-    _x(b.exports, 'default', function() {
-        return _e;
+}), b.register('zEuNa', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _f;
     });
-    var d = a('QdGLB');
-    var _e = _x => _x === d.HookType.selectBox ? 'Select Box' : _x === d.HookType.number ? 'Number' : _x === d.HookType.kit ? 'Kit' : 'Unknown Type';
-}), a.register('uYuLz', function(b, c) {
-    _x(b.exports, 'default', function() {
-        return _n;
+    var e = b('RBtfx4');
+    var _f = a => a === e.HookType.selectBox ? 'Select Box' : a === e.HookType.number ? 'Number' : a === e.HookType.kit ? 'Kit' : 'Unknown Type';
+}), b.register('IzuM3', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _o;
     });
-    var d = a('0hzx+'),
-        e = a('LHeQv'),
-        f = a('ulE4q'),
-        g = a('/rAT0'),
-        h = a('WfOD7'),
-        i = a('YRlpt');
-    a('LEQ5w');
-    var j = a('nEBHu'),
-        k = a('iiikG'),
-        l = a('KWq5G'),
-        m = a('w1AGN');
-    var _n = _x => {
-        const o = () => {
-            i.default.confirm({
-                title: `Are you sure you want to disconnect this option from this ${ j.default.name.toLowerCase() }?`,
+    var e = b('gRbUn'),
+        f = b('1ZCzi'),
+        g = b('P1KtI'),
+        h = b('M3JwW'),
+        i = b('xAv1a'),
+        j = b('AE7vR');
+    b('O0Kav');
+    var k = b('flG2L'),
+        l = b('rEKJy'),
+        m = b('jFZwj'),
+        n = b('9UHpy');
+    var _o = a => {
+        const p = () => {
+            j.default.confirm({
+                title: `Are you sure you want to disconnect this option from this ${ k.default.name.toLowerCase() }?`,
                 onOk: () => {
-                    (0, k.default)({
-                        action: l.default.disconnect,
-                        device: _x.deviceId,
+                    (0, l.default)({
+                        action: m.default.disconnect,
+                        device: a.deviceId,
                         payload: {
-                            option: _x.optionKey
+                            option: a.optionKey
                         }
-                    }), _x.close();
+                    }), a.close();
                 }
             });
         };
-        return (0, d.jsxs)('div', {
+        return (0, e.jsxs)('div', {
             className: 'flex between vc',
             children: [
-                (0, d.jsx)('div', {
-                    children: (0, d.jsx)(m.default, {
-                        title: _x.optionName,
-                        descriptor: _x.connectionName || `Connect ${ j.default.name }`
+                (0, e.jsx)('div', {
+                    children: (0, e.jsx)(n.default, {
+                        title: a.optionName,
+                        descriptor: a.connectionName || `Connect ${ k.default.name }`
                     })
                 }),
-                (0, d.jsx)('div', {
+                (0, e.jsx)('div', {
                     style: {
                         marginLeft: 10
                     },
-                    children: _x.connectionName ? (0, d.jsx)(g.default, {
-                        overlay: (0, d.jsx)(h.default, {
-                            children: (0, d.jsxs)(h.default.Item, {
-                                onClick: o,
+                    children: a.connectionName ? (0, e.jsx)(h.default, {
+                        overlay: (0, e.jsx)(i.default, {
+                            children: (0, e.jsxs)(i.default.Item, {
+                                onClick: p,
                                 children: [
                                     'Disconnect From ',
-                                    j.default.name
+                                    k.default.name
                                 ]
                             })
                         }),
-                        children: (0, d.jsx)(f.default, {
+                        children: (0, e.jsx)(g.default, {
                             shape: 'circle',
-                            icon: (0, d.jsx)(e.default, {}),
+                            icon: (0, e.jsx)(f.default, {}),
                             type: 'dashed'
                         })
                     }) : null
@@ -379,52 +379,52 @@ a.register('+9cKB', function(b, c) {
             ]
         });
     };
-}), a.register('w1AGN', function(b, c) {
-    _x(b.exports, 'default', function() {
-        return _k;
+}), b.register('9UHpy', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _l;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('b5kvC');
-    let g, h, i, j = _x => _x;
-    var _k = _x => (0, d.jsxs)(_l, {
+    var e = b('gRbUn');
+    b('O0Kav');
+    var f = b('u4s09'),
+        g = b('Eh2Wh');
+    let h, i, j, k = a => a;
+    var _l = a => (0, e.jsxs)(_m, {
         children: [
-            (0, d.jsx)(_m, {
-                children: _x.descriptor
+            (0, e.jsx)(_n, {
+                children: a.descriptor
             }),
-            (0, d.jsx)(_n, {
-                children: _x.title
+            (0, e.jsx)(_o, {
+                children: a.title
             })
         ]
     });
-    const _l = e.default.div(g || (g = j``)),
-        _m = e.default.div(h || (h = j`
+    const _m = f.default.div(h || (h = k``)),
+        _n = f.default.div(i || (i = k`
   text-transform: uppercase;
   font-style: italic;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
 `)),
-        _n = e.default.div(i || (i = j`
+        _o = f.default.div(j || (j = k`
   font-size: 28px;
   font-weight: ${ 0 };
-`), f.FontWeights.Bold);
-}), a.register('X4hF0', function(b, c) {
-    _x(b.exports, 'HookConnectedBase', function() {
-        return _l;
-    }), _x(b.exports, 'default', function() {
+`), g.FontWeights.Bold);
+}), b.register('nzR0T', function(c, d) {
+    a(c.exports, 'HookConnectedBase', function() {
         return _m;
+    }), a(c.exports, 'default', function() {
+        return _n;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('nEBHu'),
-        g = a('b5kvC');
-    let h, i, j, k = _x => _x;
-    const _l = _x => (0, d.jsxs)(_n, {
+    var e = b('gRbUn');
+    b('O0Kav');
+    var f = b('u4s09'),
+        g = b('flG2L'),
+        h = b('Eh2Wh');
+    let i, j, k, l = a => a;
+    const _m = a => (0, e.jsxs)(_o, {
         children: [
-            (0, d.jsx)('div', {
-                children: (0, d.jsx)('i', {
+            (0, e.jsx)('div', {
+                children: (0, e.jsx)('i', {
                     style: {
                         color: '#388e3c',
                         fontSize: 32
@@ -432,259 +432,259 @@ a.register('+9cKB', function(b, c) {
                     className: 'fas fa-check'
                 })
             }),
-            (0, d.jsxs)(_o, {
+            (0, e.jsxs)(_p, {
                 children: [
-                    f.default.name,
+                    g.default.name,
                     ' connected!'
                 ]
             }),
-            (0, d.jsxs)(_p, {
+            (0, e.jsxs)(_q, {
                 children: [
                     'The value of this ',
-                    f.default.name.toLowerCase(),
+                    g.default.name.toLowerCase(),
                     ' will be the value of this option.'
                 ]
             }),
-            _x.children
+            a.children
         ]
     });
-    var _m = () => (0, d.jsx)(_l, {});
-    const _n = e.default.div.attrs({
+    var _n = () => (0, e.jsx)(_m, {});
+    const _o = f.default.div.attrs({
             className: 'flex-column flex-center'
-        })(h || (h = k``)),
-        _o = e.default.div(i || (i = k`
+        })(i || (i = l``)),
+        _p = f.default.div(j || (j = l`
   font-weight: ${ 0 };
   font-size: 24px;
   margin-top: 10px;
-`), g.FontWeights.Bold),
-        _p = e.default.div(j || (j = k`
+`), h.FontWeights.Bold),
+        _q = f.default.div(k || (k = l`
   font-size: 16px;
   margin-top: 4px;
 `));
-}), a.register('Uo2IS', function(b, c) {
-    _x(b.exports, 'default', function() {
-        return _r;
+}), b.register('O2yCs', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _s;
     });
-    var d = a('0hzx+'),
-        e = a('NIZyA'),
-        f = a('fmVdR'),
-        g = a('fe6E3'),
-        h = a('7up2I');
-    a('LEQ5w');
-    var i = a('X4hF0'),
-        j = a('Axq+p'),
-        k = a('bHGrl'),
-        l = a('QdGLB'),
-        m = a('PMl60'),
-        n = a('nEBHu');
-    let o, p, q = _x => _x;
-    var _r = (0, h.observer)(_x => {
+    var e = b('gRbUn'),
+        f = b('qMSe6'),
+        g = b('VNuyu'),
+        h = b('9zaF+'),
+        i = b('NU2gN');
+    b('O0Kav');
+    var j = b('nzR0T'),
+        k = b('u4s09'),
+        l = b('K/2xB'),
+        m = b('RBtfx4'),
+        n = b('quE27'),
+        o = b('flG2L');
+    let p, q, r = a => a;
+    var _s = (0, i.observer)(a => {
         const {
             hooks: {
-                hookJSON: s
+                hookJSON: t
             }
-        } = (0, k.default)(), t = JSON.parse(s).hooks.find(s => s.key === _x.connection.hook);
-        if (!t || t.type !== l.HookType.number)
+        } = (0, l.default)(), u = JSON.parse(t).hooks.find(t => t.key === a.connection.hook);
+        if (!u || u.type !== m.HookType.number)
             return null;
-        const u = t.options || {},
-            v = _x.option.option.props || {},
-            w = () => {
-                const _x = [];
-                return (0, g.isNil)(v.min) || ((0, g.isNil)(u.min) ? _x.push({
+        const v = u.options || {},
+            w = a.option.option.props || {},
+            x = () => {
+                const y = [];
+                return (0, h.isNil)(w.min) || ((0, h.isNil)(v.min) ? y.push({
                     key: 'Minimum',
-                    device: v.min
-                }) : u.min < v.min && _x.push({
+                    device: w.min
+                }) : v.min < w.min && y.push({
                     key: 'Minimum',
-                    device: v.min,
-                    hook: u.min
-                })), (0, g.isNil)(v.max) || ((0, g.isNil)(u.max) && _x.push({
+                    device: w.min,
+                    hook: v.min
+                })), (0, h.isNil)(w.max) || ((0, h.isNil)(v.max) && y.push({
                     key: 'Maximum',
-                    device: v.max
-                }), u.max > v.max && _x.push({
+                    device: w.max
+                }), v.max > w.max && y.push({
                     key: 'Maximum',
-                    device: v.max,
-                    hook: u.max
-                })), (0, g.isNil)(v.step) || ((0, g.isNil)(u.step) ? _x.push({
+                    device: w.max,
+                    hook: v.max
+                })), (0, h.isNil)(w.step) || ((0, h.isNil)(v.step) ? y.push({
                     key: 'Step',
-                    device: v.step
-                }) : u.step !== v.step && _x.push({
+                    device: w.step
+                }) : v.step !== w.step && y.push({
                     key: 'Step',
-                    device: v.step,
-                    hook: u.step
-                })), _x;
+                    device: w.step,
+                    hook: v.step
+                })), y;
             },
-            x = w();
-        return (0, d.jsx)(i.HookConnectedBase, {
-            children: x.length ? (0, d.jsxs)(d.Fragment, {
+            y = x();
+        return (0, e.jsx)(j.HookConnectedBase, {
+            children: y.length ? (0, e.jsxs)(e.Fragment, {
                 children: [
-                    (0, d.jsx)(f.default, {}),
-                    (0, d.jsxs)(_t, {
+                    (0, e.jsx)(g.default, {}),
+                    (0, e.jsxs)(_u, {
                         children: [
-                            (0, d.jsxs)(_u, {
+                            (0, e.jsxs)(_v, {
                                 children: [
                                     'This ',
-                                    n.default.name.toLowerCase(),
+                                    o.default.name.toLowerCase(),
                                     '\'s settings are setup in a way that a user could enter a number not allowed for this device\'s option. ',
-                                    (0, d.jsx)('br', {}),
+                                    (0, e.jsx)('br', {}),
                                     ' ',
-                                    (0, d.jsx)('br', {}),
+                                    (0, e.jsx)('br', {}),
                                     ' If a number invalid for this device\'s option is used, the value set on the device itself will be used.'
                                 ]
                             }),
-                            w().map(e => (0, d.jsx)(_s, {
-                                name: e.key,
-                                deviceValue: e.device,
-                                hookValue: e.hook
-                            }, e.key))
+                            x().map(a => (0, e.jsx)(_t, {
+                                name: a.key,
+                                deviceValue: a.device,
+                                hookValue: a.hook
+                            }, a.key))
                         ]
                     })
                 ]
             }) : null
         });
     });
-    const _s = e => {
+    const _t = a => {
             const {
-                name: t,
-                deviceValue: u,
-                hookValue: v
-            } = e;
-            return (0, d.jsx)(e.default, {
+                name: u,
+                deviceValue: v,
+                hookValue: w
+            } = a;
+            return (0, e.jsx)(f.default, {
                 style: {
                     marginBottom: 10
                 },
                 type: 'warning',
-                message: (0, g.isNil)(v) ? (0, d.jsxs)(d.Fragment, {
+                message: (0, h.isNil)(w) ? (0, e.jsxs)(e.Fragment, {
                     children: [
                         'This device\'s option has a ',
-                        (0, d.jsx)('b', {
-                            children: t.toLowerCase()
+                        (0, e.jsx)('b', {
+                            children: u.toLowerCase()
                         }),
                         ' of',
                         ' ',
-                        (0, d.jsx)('b', {
-                            children: (0, m.numberWithCommas)(u)
+                        (0, e.jsx)('b', {
+                            children: (0, n.numberWithCommas)(v)
                         }),
                         ', but no ',
-                        t.toLowerCase(),
+                        u.toLowerCase(),
                         ' is set on the ',
-                        n.default.name.toLowerCase(),
+                        o.default.name.toLowerCase(),
                         '.'
                     ]
-                }) : (0, d.jsxs)(d.Fragment, {
+                }) : (0, e.jsxs)(e.Fragment, {
                     children: [
                         'This device\'s option has a ',
-                        (0, d.jsx)('b', {
-                            children: t.toLowerCase()
+                        (0, e.jsx)('b', {
+                            children: u.toLowerCase()
                         }),
                         ' of',
                         ' ',
-                        (0, d.jsx)('b', {
-                            children: (0, m.numberWithCommas)(u)
+                        (0, e.jsx)('b', {
+                            children: (0, n.numberWithCommas)(v)
                         }),
                         ', but the',
                         ' ',
-                        n.default.name.toLowerCase(),
+                        o.default.name.toLowerCase(),
                         ' value is set to',
                         ' ',
-                        (0, d.jsx)('b', {
-                            children: (0, m.numberWithCommas)(v)
+                        (0, e.jsx)('b', {
+                            children: (0, n.numberWithCommas)(w)
                         })
                     ]
                 })
             });
         },
-        _t = j.default.div(o || (o = q`
+        _u = k.default.div(p || (p = r`
   background: rgba(0, 0, 0, 0.04);
   padding: 20px;
   border-radius: 5px;
   border: 2px solid rgba(0, 0, 0, 0.3);
 `)),
-        _u = j.default.div(p || (p = q`
+        _v = k.default.div(q || (q = r`
   font-size: 16px;
   margin-bottom: 18px;
 `));
-}), a.register('W5/hF', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _y;
+}), b.register('gEl/T', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _z;
     });
-    var d = a('0hzx+'),
-        e = a('2x11J');
-    a('LEQ5w');
-    var f = a('bHGrl'),
-        g = a('iiikG'),
-        h = a('KWq5G'),
-        i = a('nEBHu'),
-        j = a('ulE4q'),
-        k = a('fmVdR'),
-        l = a('YRlpt'),
-        m = a('inwN3'),
-        n = a('yRDXH'),
-        o = a('yYQqX'),
-        p = a('2HvvA11'),
-        q = a('Axq+p'),
-        r = a('b5kvC');
-    let s, t, u = e => e;
-    const v = (0, e.observer)(e => {
+    var e = b('gRbUn'),
+        f = b('6jmvl');
+    b('O0Kav');
+    var g = b('K/2xB'),
+        h = b('rEKJy'),
+        i = b('jFZwj'),
+        j = b('flG2L'),
+        k = b('P1KtI'),
+        l = b('VNuyu'),
+        m = b('AE7vR'),
+        n = b('u8Dt8'),
+        o = b('ydj3C'),
+        p = b('AmTT/'),
+        q = b('FB7HT26'),
+        r = b('u4s09'),
+        s = b('Eh2Wh');
+    let t, u, v = a => a;
+    const w = (0, f.observer)(a => {
             const {
                 hooks: {
-                    hookJSON: w
+                    hookJSON: x
                 }
-            } = (0, f.default)(), x = () => {
-                (0, g.default)({
-                    action: h.default.createLink,
+            } = (0, g.default)(), y = () => {
+                (0, h.default)({
+                    action: i.default.createLink,
                     payload: {
-                        option: e.connection.option,
-                        hook: e.connection.hook
+                        option: a.connection.option,
+                        hook: a.connection.hook
                     },
-                    device: e.deviceId
+                    device: a.deviceId
                 });
-            }, y = e.connection.options, z = Object.keys(y.valueMap), A = JSON.parse(w).hooks.find(w => w.key === e.connection.hook);
-            if (!A)
+            }, z = a.connection.options, A = Object.keys(z.valueMap), B = JSON.parse(x).hooks.find(x => x.key === a.connection.hook);
+            if (!B)
                 return null;
-            const B = A.options;
-            if (!B.options.length)
-                return (0, d.jsxs)('div', {
+            const C = B.options;
+            if (!C.options.length)
+                return (0, e.jsxs)('div', {
                     style: {
                         fontSize: 16
                     },
                     children: [
                         'Before you can connect the ',
-                        i.default.name.toLowerCase(),
+                        j.default.name.toLowerCase(),
                         ' to this option, you need to add selectable options. Go modify your',
                         ' ',
-                        i.default.name.toLowerCase(),
+                        j.default.name.toLowerCase(),
                         ' to include options and then come back here!'
                     ]
                 });
-            if (!z.length)
-                return (0, d.jsx)(_x, {
-                    createLink: x
+            if (!A.length)
+                return (0, e.jsx)(_y, {
+                    createLink: y
                 });
-            const C = B.options.filter(e => !z.includes(e));
-            return (0, d.jsxs)(_z, {
+            const D = C.options.filter(a => !A.includes(a));
+            return (0, e.jsxs)(_A, {
                 children: [
-                    z.map(w => (0, d.jsx)(_w, {
-                        option: e.option,
-                        selectKey: w,
-                        selectValue: e.connection.options.valueMap[w],
+                    A.map(x => (0, e.jsx)(_x, {
+                        option: a.option,
+                        selectKey: x,
+                        selectValue: a.connection.options.valueMap[x],
                         selectOptions: [
-                            w,
-                            ...C
+                            x,
+                            ...D
                         ],
-                        deviceId: e.deviceId,
-                        hookId: e.connection.hook
-                    }, w + '-hook-option')),
-                    C.length ? (0, d.jsxs)(d.Fragment, {
+                        deviceId: a.deviceId,
+                        hookId: a.connection.hook
+                    }, x + '-hook-option')),
+                    D.length ? (0, e.jsxs)(e.Fragment, {
                         children: [
-                            (0, d.jsx)(k.default, {}),
-                            (0, d.jsx)(j.default, {
+                            (0, e.jsx)(l.default, {}),
+                            (0, e.jsx)(k.default, {
                                 size: 'large',
                                 type: 'primary',
                                 block: !0,
                                 style: {
                                     height: 60
                                 },
-                                onClick: x,
+                                onClick: y,
                                 children: 'Add Another Link'
                             })
                         ]
@@ -692,84 +692,84 @@ a.register('+9cKB', function(b, c) {
                 ]
             });
         }),
-        _w = e => (0, d.jsxs)(_A, {
+        _x = a => (0, e.jsxs)(_B, {
             children: [
-                (0, d.jsxs)(o.HookFormInputLabel, {
+                (0, e.jsxs)(p.HookFormInputLabel, {
                     children: [
-                        i.default.name,
+                        j.default.name,
                         ' Value'
                     ]
                 }),
-                (0, d.jsx)(m.default, {
+                (0, e.jsx)(n.default, {
                     style: {
                         width: '100%'
                     },
-                    value: e.selectKey,
+                    value: a.selectKey,
                     placeholder: 'Choose a value...',
-                    onChange: a => {
-                        (0, g.default)({
-                            action: h.default.changeLinkOption,
-                            device: e.deviceId,
+                    onChange: b => {
+                        (0, h.default)({
+                            action: i.default.changeLinkOption,
+                            device: a.deviceId,
                             payload: {
-                                option: e.option.key,
-                                hook: e.hookId,
-                                currentOption: e.selectKey,
-                                newOption: a
+                                option: a.option.key,
+                                hook: a.hookId,
+                                currentOption: a.selectKey,
+                                newOption: b
                             }
                         });
                     },
-                    children: e.selectOptions.map(a => (0, d.jsx)(m.default.Option, {
-                        value: a,
-                        children: a
-                    }, a + e.selectKey))
+                    children: a.selectOptions.map(b => (0, e.jsx)(n.default.Option, {
+                        value: b,
+                        children: b
+                    }, b + a.selectKey))
                 }),
-                (0, d.jsx)('div', {
+                (0, e.jsx)('div', {
                     style: {
                         height: 15
                     }
                 }),
-                (0, d.jsx)(o.HookFormInputLabel, {
+                (0, e.jsx)(p.HookFormInputLabel, {
                     children: 'Option Value'
                 }),
-                (0, d.jsx)(n.default, {
-                    option: e.option.option,
-                    value: e.selectValue,
-                    onChange: a => {
-                        (0, g.default)({
-                            action: h.default.changeLinkValue,
-                            device: e.deviceId,
+                (0, e.jsx)(o.default, {
+                    option: a.option.option,
+                    value: a.selectValue,
+                    onChange: b => {
+                        (0, h.default)({
+                            action: i.default.changeLinkValue,
+                            device: a.deviceId,
                             payload: {
-                                option: e.option.key,
-                                hook: e.hookId,
-                                key: e.selectKey,
-                                value: a
+                                option: a.option.key,
+                                hook: a.hookId,
+                                key: a.selectKey,
+                                value: b
                             }
                         });
                     },
                     readOnly: !1
                 }),
-                (0, d.jsx)('div', {
+                (0, e.jsx)('div', {
                     style: {
                         height: 15
                     }
                 }),
-                (0, d.jsx)('div', {
+                (0, e.jsx)('div', {
                     className: 'maxWidth flex',
                     style: {
                         justifyContent: 'flex-end'
                     },
-                    children: (0, d.jsx)(p.default, {
+                    children: (0, e.jsx)(q.default, {
                         onClick: () => {
-                            l.default.confirm({
+                            m.default.confirm({
                                 title: 'Are you sure you want to remove this link?',
                                 onOk: () => {
-                                    (0, g.default)({
-                                        action: h.default.removeLink,
-                                        device: e.deviceId,
+                                    (0, h.default)({
+                                        action: i.default.removeLink,
+                                        device: a.deviceId,
                                         payload: {
-                                            option: e.option.key,
-                                            hook: e.hookId,
-                                            key: e.selectKey
+                                            option: a.option.key,
+                                            hook: a.hookId,
+                                            key: a.selectKey
                                         }
                                     });
                                 }
@@ -780,7 +780,7 @@ a.register('+9cKB', function(b, c) {
                 })
             ]
         }),
-        _x = e => (0, d.jsxs)('div', {
+        _y = a => (0, e.jsxs)('div', {
             className: 'flex-column flex-center',
             style: {
                 background: '#eceff1',
@@ -789,63 +789,63 @@ a.register('+9cKB', function(b, c) {
                 border: '1px dashed rgba(0, 0, 0, 0.5)',
                 cursor: 'pointer'
             },
-            onClick: e.createLink,
+            onClick: a.createLink,
             children: [
-                (0, d.jsx)('div', {
+                (0, e.jsx)('div', {
                     style: {
-                        fontWeight: r.FontWeights.Bold,
+                        fontWeight: s.FontWeights.Bold,
                         fontSize: 18,
                         marginBottom: 6
                     },
                     children: 'Create new link'
                 }),
-                (0, d.jsxs)('div', {
+                (0, e.jsxs)('div', {
                     children: [
                         'Link the value of a ',
-                        i.default.name.toLowerCase(),
+                        j.default.name.toLowerCase(),
                         ' to the value of this option'
                     ]
                 })
             ]
         });
-    var _y = v;
-    const _z = q.default.div(s || (s = u``)),
-        _A = q.default.div.attrs({
+    var _z = w;
+    const _A = r.default.div(t || (t = v``)),
+        _B = r.default.div.attrs({
             className: 'light-shadow'
-        })(t || (t = u`
+        })(u || (u = v`
   background: #fafafa;
   padding: 30px;
   border-radius: 6px;
   margin-bottom: 20px;
 `));
-}), a.register('yYQqX', function(b, c) {
-    e(b.exports, 'HookFormInputLabel', function() {
-        return _i;
-    }), e(b.exports, 'HookFormInputLabelDescription', function() {
+}), b.register('AmTT/', function(c, d) {
+    a(c.exports, 'HookFormInputLabel', function() {
         return _j;
+    }), a(c.exports, 'HookFormInputLabelDescription', function() {
+        return _k;
     });
-    var d = a('Axq+p'),
-        e = a('b5kvC');
-    let f, g, h = e => e;
-    const _i = d.default.div(f || (f = h`
+    var e = b('u4s09'),
+        f = b('Eh2Wh');
+    let g, h, i = a => a;
+    const _j = e.default.div(g || (g = i`
   font-size: 18px;
   font-weight: ${ 0 };
   margin-bottom: 4px;
-`), e.FontWeights.Bold),
-        _j = d.default.div(g || (g = h`
+`), f.FontWeights.Bold),
+        _k = e.default.div(h || (h = i`
   font-size: 14px;
   margin-bottom: 4px;
 `));
-}), a.register('aPprg', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _h;
+}), b.register('lpNzY', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _i;
     });
-    var d = a('Axq+p'),
-        e = a('b5kvC'),
-        f = a('vShe/');
-    let g;
-    var _h = d.default.div(g || (g = (e => e)`
+    var e = b('u4s09'),
+        f = b('Eh2Wh'),
+        g = b('HOIhZ');
+    let h;
+    var _i = e.default.div(h || (h = (a => a)`
   color: ${ 0 };
   font-family: ${ 0 };
-`), f.default.Black, e.Fonts.ProductSans);
+`), g.default.Black, f.Fonts.ProductSans);
 });

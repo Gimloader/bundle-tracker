@@ -2,174 +2,174 @@ function a(b) {
     return b && b.__esModule ? b.default : b;
 }
 
-function a(b, c, d, e) {
-    Object.defineProperty(b, c, {
-        get: d,
-        set: e,
+function b(c, d, e, f) {
+    Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('Imhl6', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('Xc3cp', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _q(b.exports, 'default', function() {
-        return _q;
+    }), b(d.exports, 'default', function() {
+        return _s;
     });
-    var e = a('1bFPu'),
-        f = a('9tz3H'),
-        g = a('/pbxo'),
-        h = a('I35Ay'),
-        i = a('SiQeJ'),
-        j = a('IFO6W13'),
-        k = a('R2Ucl10'),
-        l = a('btxlR'),
-        m = a('2M6xn'),
-        n = a('qMN8v'),
-        o = a('8WvaZ');
-    class p extends h.default {
-        constructor(_q) {
-            super(_q), (0, e.default)(this, 'createVisuals', () => {
-                const r = {
-                        ...m.UnknownItemAsset
+    var g = c('s/YA9'),
+        h = c('hycyg'),
+        i = c('UkCpC'),
+        j = c('ltxDW'),
+        k = c('taNL3'),
+        l = c('u/WlI21'),
+        m = c('uc4mA17'),
+        n = c('256sH'),
+        o = c('T6zrb'),
+        p = c('vRyCf'),
+        q = c('ddhGF');
+    class r extends j.default {
+        constructor(s) {
+            super(s), (0, g.default)(this, 'createVisuals', () => {
+                const t = {
+                        ...o.UnknownItemAsset
                     },
-                    s = (0, l.default)(this.options.itemId);
-                s && (r.imageId = s.previewImage, r.imageUrl = s.previewImage), this.part = this.parts.add.sprite({
-                    ...r,
-                    onReady: r => {
-                        if (r.view.displayWidth = this.options.size, r.view.displayHeight = this.options.size, r.view.angle = this.options.angle, this.options.outline) {
-                            let t = this.options.outlineSize === i.OutlineSizeOption.custom ? this.options.customOutlineSize : this.options.size / 25;
-                            t > this.options.size / 10 && (t = this.options.size / 10), (0, n.AddOutline)({
-                                view: r.view,
+                    u = (0, n.default)(this.options.itemId);
+                u && (t.imageId = u.previewImage, t.imageUrl = u.previewImage), this.part = this.parts.add.sprite({
+                    ...t,
+                    onReady: t => {
+                        if (t.view.displayWidth = this.options.size, t.view.displayHeight = this.options.size, t.view.angle = this.options.angle, this.options.outline) {
+                            let v = this.options.outlineSize === k.OutlineSizeOption.custom ? this.options.customOutlineSize : this.options.size / 25;
+                            v > this.options.size / 10 && (v = this.options.size / 10), (0, p.AddOutline)({
+                                view: t.view,
                                 options: {
-                                    outlineColor: _r(o).Display.Color.HexStringToColor(this.options.outlineColor).color,
-                                    thickness: t
+                                    outlineColor: a(q).Display.Color.HexStringToColor(this.options.outlineColor).color,
+                                    thickness: v
                                 }
                             });
                         }
                     }
                 }), this.part.view.alpha = this.getAlpha();
-            }), (0, e.default)(this, 'getAlpha', () => (0, g.InPreGamePhase)() ? (0, f.isSavedVersion)() || this.options.visibleOnGameStart ? 1 : 0 : this.state.visible ? 1 : 0), (0, e.default)(this, 'setupVisualEditing', () => {
-                if (!(0, g.InPreGamePhase)() || !(0, f.isSavedVersion)())
+            }), (0, g.default)(this, 'getAlpha', () => (0, i.InPreGamePhase)() ? (0, h.isSavedVersion)() || this.options.visibleOnGameStart ? 1 : 0 : this.state.visible ? 1 : 0), (0, g.default)(this, 'setupVisualEditing', () => {
+                if (!(0, i.InPreGamePhase)() || !(0, h.isSavedVersion)())
                     return;
-                const _r = (0, k.FetchOptionSchemaProperty)(this, 'size');
+                const t = (0, m.FetchOptionSchemaProperty)(this, 'size');
                 this.visualEditing.add.box({
                     width: this.options.size,
                     height: this.options.size,
                     angle: this.options.angle,
-                    minWidth: _r.min,
-                    maxWidth: _r.max,
-                    minHeight: _r.min,
-                    maxHeight: _r.max,
+                    minWidth: t.min,
+                    maxWidth: t.max,
+                    minHeight: t.min,
+                    maxHeight: t.max,
                     rotable: !0,
                     keepRatio: !0,
-                    onChange: _r => {
-                        (0, j.ReplaceVisualEditingPreview)(_r.x, _r.y, {
-                            size: _r.width,
-                            angle: _r.angle
+                    onChange: t => {
+                        (0, l.ReplaceVisualEditingPreview)(t.x, t.y, {
+                            size: t.width,
+                            angle: t.angle
                         });
                     }
                 });
-            }), (0, e.default)(this, 'onStateChange', _b => {
-                'visible' === _b && (this.part.view.alpha = this.getAlpha());
+            }), (0, g.default)(this, 'onStateChange', a => {
+                'visible' === a && (this.part.view.alpha = this.getAlpha());
             }), this.setupVisualEditing(), this.createVisuals();
         }
     }
-    var _q = p;
-}), a.register('SiQeJ', function(_b, c) {
-    let d;
-    var e;
-    _f(_b.exports, 'OutlineSizeOption', function() {
-        return d;
-    }), (e = d || (d = {})).automatic = 'automatic', e.custom = 'custom';
-}), a.register('IFO6W13', function(b, c) {
-    _f(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return _h;
+    var _s = r;
+}), c.register('taNL3', function(d, e) {
+    let f;
+    var g;
+    b(d.exports, 'OutlineSizeOption', function() {
+        return f;
+    }), (g = f || (f = {})).automatic = 'automatic', g.custom = 'custom';
+}), c.register('u/WlI21', function(d, e) {
+    b(d.exports, 'ReplaceVisualEditingPreview', function() {
+        return _j;
     });
-    var d = a('HqwPM'),
-        e = a('+oovY4'),
-        f = a('A17vD'),
-        g = a('HXXiu');
-    const _h = (b, _f, a) => {
-        const i = (0, g.FetchVisualEditingPreview)(),
-            j = (0, f.FetchCurrentlyEditedDevice)();
-        if (!j || !i)
+    var f = c('hemXM'),
+        g = c('sWmxu5'),
+        h = c('EzUqb'),
+        i = c('GQMbT');
+    const _j = (d, b, c) => {
+        const k = (0, i.FetchVisualEditingPreview)(),
+            l = (0, h.FetchCurrentlyEditedDevice)();
+        if (!l || !k)
             return;
-        const k = j.layers.isOnNaturalDepth() ? void 0 : _f + j.layers.getDepthShift();
-        (0, e.default)({
-            deviceOption: i.deviceOption,
-            id: d.VisualEditingConstants.previewId,
-            x: b,
-            y: _f,
-            depth: k,
-            layerId: j.layers.getLayer(),
-            name: i.name,
+        const m = l.layers.isOnNaturalDepth() ? void 0 : b + l.layers.getDepthShift();
+        (0, g.default)({
+            deviceOption: k.deviceOption,
+            id: f.VisualEditingConstants.previewId,
+            x: d,
+            y: b,
+            depth: m,
+            layerId: l.layers.getLayer(),
+            name: k.name,
             isPreview: !0,
             options: {
-                ...i.options,
-                ...a
+                ...k.options,
+                ...c
             },
             placedByClient: !0,
-            state: i.deviceOption.defaultState
+            state: k.deviceOption.defaultState
         });
     };
-}), a.register('+oovY4', function(b, c) {
-    _f(b.exports, 'default', function() {
+}), c.register('sWmxu5', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _h;
+    });
+    var f = c('heTaO'),
+        g = c('2LtPo');
+    var _h = d => {
+        (0, f.default)().worldManager.devices.getDeviceById(d.id) && (0, g.default)(d);
+    };
+}), c.register('uc4mA17', function(d, e) {
+    b(d.exports, 'FetchOptionSchemaProperty', function() {
         return _f;
     });
-    var d = a('D5xLI'),
-        e = a('aIyMH');
-    var _f = b => {
-        (0, d.default)().worldManager.devices.getDeviceById(b.id) && (0, e.default)(b);
-    };
-}), a.register('R2Ucl10', function(b, c) {
-    _f(b.exports, 'FetchOptionSchemaProperty', function() {
-        return _d;
-    });
-    const _d = (b, _f) => {
-        var e, f, g;
-        const h = b.deviceOption.optionSchema.options.find(b => b.key === _f);
+    const _f = (d, b) => {
+        var g, h, i;
+        const j = d.deviceOption.optionSchema.options.find(d => d.key === b);
         return {
-            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
-            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
-            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
+            min: null === (g = null == j ? void 0 : j.option.props) || void 0 === g ? void 0 : g.min,
+            max: null === (h = null == j ? void 0 : j.option.props) || void 0 === h ? void 0 : h.max,
+            step: null === (i = null == j ? void 0 : j.option.props) || void 0 === i ? void 0 : i.step
         };
     };
-}), a.register('2M6xn', function(b, c) {
-    _f(b.exports, 'BaseAsset', function() {
-        return _e;
-    }), _f(b.exports, 'UnknownItemAsset', function() {
-        return _f;
+}), c.register('T6zrb', function(d, e) {
+    b(d.exports, 'BaseAsset', function() {
+        return _g;
+    }), b(d.exports, 'UnknownItemAsset', function() {
+        return _h;
     });
-    var d = a('2Xvuf');
-    const _e = {
-            imageId: (0, d.default)('devices/item_granter/base.png'),
-            imageUrl: (0, d.default)('devices/item_granter/base.png')
+    var f = c('UaUBz0');
+    const _g = {
+            imageId: (0, f.default)('devices/item_granter/base.png'),
+            imageUrl: (0, f.default)('devices/item_granter/base.png')
         },
-        _f = {
+        _h = {
             imageId: '__UNKNOWN_ITEM',
-            imageUrl: (0, d.default)('devices/item_granter/question-mark-2.png')
+            imageUrl: (0, f.default)('devices/item_granter/question-mark-2.png')
         };
-}), a.register('qMN8v', function(b, c) {
-    _f(b.exports, 'AddOutline', function() {
-        return _e;
+}), c.register('vRyCf', function(d, e) {
+    b(d.exports, 'AddOutline', function() {
+        return _g;
     });
-    var d = a('D5xLI');
-    const _e = b => {
-        if (!b.view || !b.view.active)
+    var f = c('heTaO');
+    const _g = d => {
+        if (!d.view || !d.view.active)
             return;
-        const _f = {
+        const h = {
                 thickness: 2
             },
-            g = b.options ? {
-                ..._f,
-                ...b.options
+            i = d.options ? {
+                ...h,
+                ...d.options
             } : {
-                ..._f
+                ...h
             };
-        (0, d.default)().plugins.get('rexOutlinePipeline').add(b.view, g);
+        (0, f.default)().plugins.get('rexOutlinePipeline').add(d.view, i);
     };
 });

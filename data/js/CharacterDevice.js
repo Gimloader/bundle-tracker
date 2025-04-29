@@ -6,63 +6,63 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('LxNE6', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('61m84', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _s(b.exports, 'default', function() {
-        return _s;
+    }), a(c.exports, 'default', function() {
+        return _t;
     });
-    var e = a('1bFPu'),
-        f = a('9tz3H'),
-        g = a('/pbxo'),
-        h = a('IFO6W13'),
-        i = a('R2Ucl10'),
-        j = a('I35Ay'),
-        k = a('KcL9V'),
-        l = a('2Xvuf'),
-        m = a('5CmLs'),
-        n = a('JEGzD'),
-        o = a('DWF4E'),
-        p = a('JqBF0'),
-        q = a('GzcmL');
-    class r extends j.default {
-        constructor(_s) {
-            super(_s), (0, e.default)(this, 'onStateChange', _s => {
-                (0, g.InPreGamePhase)() || 'active' === _s && (this.state.active ? (this.interactiveZones.setForceDisabled(!1), this.tweenAlpha(1)) : (this.interactiveZones.setForceDisabled(!0), this.tweenAlpha(0)));
-            }), (0, e.default)(this, 'createPreviewVisuals', () => {
-                const t = this.options.skinId.replace('character_', ''),
-                    u = (0, l.default)(`characters/spine/normalized_preview/${ t }.png`);
+    var f = b('s/YA9'),
+        g = b('hycyg'),
+        h = b('UkCpC'),
+        i = b('u/WlI21'),
+        j = b('uc4mA17'),
+        k = b('ltxDW'),
+        l = b('9tJOw0'),
+        m = b('UaUBz0'),
+        n = b('H4eGM'),
+        o = b('UCu0V'),
+        p = b('RZJBP'),
+        q = b('GIe9o'),
+        r = b('DKdsl');
+    class s extends k.default {
+        constructor(t) {
+            super(t), (0, f.default)(this, 'onStateChange', t => {
+                (0, h.InPreGamePhase)() || 'active' === t && (this.state.active ? (this.interactiveZones.setForceDisabled(!1), this.tweenAlpha(1)) : (this.interactiveZones.setForceDisabled(!0), this.tweenAlpha(0)));
+            }), (0, f.default)(this, 'createPreviewVisuals', () => {
+                const u = this.options.skinId.replace('character_', ''),
+                    v = (0, m.default)(`characters/spine/normalized_preview/${ u }.png`);
                 this.skin = this.parts.add.sprite({
                     y: 50,
-                    imageId: u,
-                    imageUrl: u,
+                    imageId: v,
+                    imageUrl: v,
                     flipX: this.options.flipX,
-                    manualDepth: this.options.useNaturalDepth ? (0, q.GetCharacterDepthFromYData)(this.y + 34, 1) : void 0,
-                    depthChange: (0, m.default)(2),
-                    onReady: t => {
-                        t.view.setScale(0.28), t.view.setOrigin(0.5, 1), t.view.alpha = this.state.active ? 1 : 0, !this.options.activeOnStart && (0, g.InPreGamePhase)() && (t.view.alpha = 0.5);
+                    manualDepth: this.options.useNaturalDepth ? (0, r.GetCharacterDepthFromYData)(this.y + 34, 1) : void 0,
+                    depthChange: (0, n.default)(2),
+                    onReady: u => {
+                        u.view.setScale(0.28), u.view.setOrigin(0.5, 1), u.view.alpha = this.state.active ? 1 : 0, !this.options.activeOnStart && (0, h.InPreGamePhase)() && (u.view.alpha = 0.5);
                     }
                 });
-            }), (0, e.default)(this, 'createSpineVisuals', () => {
+            }), (0, f.default)(this, 'createSpineVisuals', () => {
                 this.spine = this.parts.add.characterSpine({
                     y: 34,
                     skinId: this.options.skinId,
-                    manualDepth: this.options.useNaturalDepth ? (0, q.GetCharacterDepthFromYData)(this.y + 34, 1) : void 0,
+                    manualDepth: this.options.useNaturalDepth ? (0, r.GetCharacterDepthFromYData)(this.y + 34, 1) : void 0,
                     flipX: this.options.flipX
                 });
-            }), (0, e.default)(this, 'createShadow', () => {
-                (0, n.isPlatformer)() || (this.shadow = this.parts.add.sprite({
+            }), (0, f.default)(this, 'createShadow', () => {
+                (0, o.isPlatformer)() || (this.shadow = this.parts.add.sprite({
                     y: 45,
                     imageId: 'character-shadow',
-                    imageUrl: (0, l.default)('characters/shadow.png'),
-                    onReady: _s => {
-                        _s.view.setOrigin(0.5, 1), _s.view.setScale(o.SHADOW_SCALE), _s.view.alpha = this.state.active ? o.SHADOW_ALPHA : 0, !this.options.activeOnStart && (0, g.InPreGamePhase)() && (_s.view.alpha = 0.5 * o.SHADOW_ALPHA);
+                    imageUrl: (0, m.default)('characters/shadow.png'),
+                    onReady: t => {
+                        t.view.setOrigin(0.5, 1), t.view.setScale(p.SHADOW_SCALE), t.view.alpha = this.state.active ? p.SHADOW_ALPHA : 0, !this.options.activeOnStart && (0, h.InPreGamePhase)() && (t.view.alpha = 0.5 * p.SHADOW_ALPHA);
                     }
                 }));
-            }), (0, e.default)(this, 'setupInteractivity', () => {
+            }), (0, f.default)(this, 'setupInteractivity', () => {
                 this.options.interactionEnabled && (this.interactiveZone = this.interactiveZones.add.circle({
                     r: this.options.radius
                 }), this.interactiveZones.setForceDisabled(!this.state.active), this.interactiveZones.setInfo({
@@ -70,97 +70,97 @@ a.register('LxNE6', function(b, c) {
                     allowedToInteract: !0,
                     duration: this.options.interactionDuration
                 }), this.interactiveZones.setCanInteractThroughColliders(!1), this.interactiveZones.onInteraction = () => {
-                    this.sendToServerDevice(k.Messages.interacted);
+                    this.sendToServerDevice(l.Messages.interacted);
                 });
-            }), (0, e.default)(this, 'tweenAlpha', _s => {
-                var t, u;
-                (null === (t = this.spine) || void 0 === t ? void 0 : t.view) && this.tweens.add({
+            }), (0, f.default)(this, 'tweenAlpha', t => {
+                var u, v;
+                (null === (u = this.spine) || void 0 === u ? void 0 : u.view) && this.tweens.add({
                     targets: this.spine.view,
-                    alpha: _s,
+                    alpha: t,
                     duration: 100
-                }), (null === (u = this.shadow) || void 0 === u ? void 0 : u.view) && this.tweens.add({
+                }), (null === (v = this.shadow) || void 0 === v ? void 0 : v.view) && this.tweens.add({
                     targets: this.shadow.view,
-                    alpha: _s,
+                    alpha: t,
                     duration: 100
                 });
-            }), (0, e.default)(this, 'setupVisualEditing', () => {
-                if (!(0, g.InPreGamePhase)() || !(0, f.isSavedVersion)())
+            }), (0, f.default)(this, 'setupVisualEditing', () => {
+                if (!(0, h.InPreGamePhase)() || !(0, g.isSavedVersion)())
                     return;
                 if (!this.options.interactionEnabled)
                     return;
-                const t = (0, i.FetchOptionSchemaProperty)(this, 'radius');
+                const u = (0, j.FetchOptionSchemaProperty)(this, 'radius');
                 this.visualEditing.add.circle({
                     radius: this.options.radius,
-                    minRadius: t.min,
-                    maxRadius: t.max,
+                    minRadius: u.min,
+                    maxRadius: u.max,
                     rotable: !1,
-                    onChange: t => {
-                        (0, h.ReplaceVisualEditingPreview)(t.x, t.y, {
-                            radius: t.radius
+                    onChange: u => {
+                        (0, i.ReplaceVisualEditingPreview)(u.x, u.y, {
+                            radius: u.radius
                         });
                     }
                 });
-            }), this.layers.setDefaultLayer(p.default.DepthSortedCharactersAndDevices), (0, g.InPreGamePhase)() || this.isPreview ? this.createPreviewVisuals() : this.createSpineVisuals(), this.createShadow(), this.setupInteractivity(), this.setupVisualEditing();
+            }), this.layers.setDefaultLayer(q.default.DepthSortedCharactersAndDevices), (0, h.InPreGamePhase)() || this.isPreview ? this.createPreviewVisuals() : this.createSpineVisuals(), this.createShadow(), this.setupInteractivity(), this.setupVisualEditing();
         }
     }
-    var _s = r;
-}), a.register('IFO6W13', function(b, c) {
-    e(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return _h;
+    var _t = s;
+}), b.register('u/WlI21', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+        return _i;
     });
-    var d = a('HqwPM'),
-        e = a('+oovY4'),
-        f = a('A17vD'),
-        g = a('HXXiu');
-    const _h = (e, a, b) => {
-        const i = (0, g.FetchVisualEditingPreview)(),
-            j = (0, f.FetchCurrentlyEditedDevice)();
-        if (!j || !i)
+    var e = b('hemXM'),
+        f = b('sWmxu5'),
+        g = b('EzUqb'),
+        h = b('GQMbT');
+    const _i = (a, b, c) => {
+        const j = (0, h.FetchVisualEditingPreview)(),
+            k = (0, g.FetchCurrentlyEditedDevice)();
+        if (!k || !j)
             return;
-        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
-        (0, e.default)({
-            deviceOption: i.deviceOption,
-            id: d.VisualEditingConstants.previewId,
-            x: e,
-            y: a,
-            depth: k,
-            layerId: j.layers.getLayer(),
-            name: i.name,
+        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        (0, f.default)({
+            deviceOption: j.deviceOption,
+            id: e.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: l,
+            layerId: k.layers.getLayer(),
+            name: j.name,
             isPreview: !0,
             options: {
-                ...i.options,
-                ...b
+                ...j.options,
+                ...c
             },
             placedByClient: !0,
-            state: i.deviceOption.defaultState
+            state: j.deviceOption.defaultState
         });
     };
-}), a.register('+oovY4', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _f;
+}), b.register('sWmxu5', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('D5xLI'),
-        e = a('aIyMH');
-    var _f = e => {
-        (0, d.default)().worldManager.devices.getDeviceById(e.id) && (0, e.default)(e);
+    var e = b('heTaO'),
+        f = b('2LtPo');
+    var _g = a => {
+        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
     };
-}), a.register('R2Ucl10', function(b, c) {
-    e(b.exports, 'FetchOptionSchemaProperty', function() {
-        return _d;
+}), b.register('uc4mA17', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
+        return _e;
     });
-    const _d = (e, b) => {
-        var e, f, g;
-        const h = e.deviceOption.optionSchema.options.find(e => e.key === b);
+    const _e = (a, c) => {
+        var f, g, h;
+        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
         return {
-            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
-            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
-            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
+            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
+            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
+            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
         };
     };
-}), a.register('KcL9V', function(b, c) {
-    e(b.exports, 'Messages', function() {
-        return _d;
+}), b.register('9tJOw0', function(c, d) {
+    a(c.exports, 'Messages', function() {
+        return _e;
     });
-    let _d;
-    (_d || (_d = {})).interacted = 'interacted';
+    let _e;
+    (_e || (_e = {})).interacted = 'interacted';
 });

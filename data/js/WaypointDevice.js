@@ -7,99 +7,99 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('c03PH', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('A712S', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _x(b.exports, 'default', function() {
-        return _x;
+    }), a(d.exports, 'default', function() {
+        return _z;
     });
-    var e = a('1bFPu'),
-        f = a('I35Ay'),
-        g = a('5uoY9'),
-        h = a('/pbxo'),
-        i = a('WXyRn'),
-        j = a('PJIQl'),
-        k = a('MRGQ9'),
-        l = a('Ff48c'),
-        m = a('BAMFo'),
-        n = a('JqBF0'),
-        o = a('Z15KO'),
-        p = a('CqqzQ'),
-        q = a('9tz3H'),
-        r = a('+uQv7'),
-        s = a('2Xvuf'),
-        t = a('dTXti'),
-        u = a('lFuxp'),
-        v = a('gOeXU');
-    class w extends f.default {
-        constructor(_x) {
-            if (super(_x), (0, e.default)(this, 'onUpdate', _x => {
-                    if (!(0, p.UpdateVisibility)(this))
+    var g = c('s/YA9'),
+        h = c('ltxDW'),
+        i = c('5h8YL'),
+        j = c('UkCpC'),
+        k = c('9bPKW'),
+        l = c('O3yHy'),
+        m = c('6OLAn'),
+        n = c('XuuCF'),
+        o = c('pOINP'),
+        p = c('GIe9o'),
+        q = c('wpe/2'),
+        r = c('KzFw0'),
+        s = c('hycyg'),
+        t = c('73Aki'),
+        u = c('UaUBz0'),
+        v = c('AHhkR'),
+        w = c('k1XXZ'),
+        x = c('kN4Z6');
+    class y extends h.default {
+        constructor(z) {
+            if (super(z), (0, g.default)(this, 'onUpdate', z => {
+                    if (!(0, r.UpdateVisibility)(this))
                         return;
-                    const y = (0, j.GetTargetParams)(this);
-                    if (!y)
+                    const A = (0, l.GetTargetParams)(this);
+                    if (!A)
                         return;
-                    (0, k.IsTargetWithinSafeArea)(this, y) ? (0, l.UpdateWithTargetWithinView)(this, _x, y) : (0, m.UpdateWithTargetOutsideView)(this, _x, y), (0, u.default)(this, y);
-                }), (0, e.default)(this, 'onDestroy', _x => {
-                    (0, v.ReleasePointedFlagDevice)(this);
-                }), (0, h.InPreGamePhase)() && (0, q.isSavedVersion)()) {
-                const y = t.default.Overlay;
-                new(0, r.default)({
+                    (0, m.IsTargetWithinSafeArea)(this, A) ? (0, n.UpdateWithTargetWithinView)(this, z, A) : (0, o.UpdateWithTargetOutsideView)(this, z, A), (0, w.default)(this, A);
+                }), (0, g.default)(this, 'onDestroy', z => {
+                    (0, x.ReleasePointedFlagDevice)(this);
+                }), (0, j.InPreGamePhase)() && (0, s.isSavedVersion)()) {
+                const A = v.default.Overlay;
+                new(0, t.default)({
                     device: this,
-                    baseColor: y.baseColor,
-                    boxColor: y.boxColor,
+                    baseColor: A.baseColor,
+                    boxColor: A.boxColor,
                     content: {
                         icon: {
-                            image: (0, s.default)('devices/waypoint/icon.png'),
+                            image: (0, u.default)('devices/waypoint/icon.png'),
                             scale: 0.9
                         }
                     }
                 });
             }
-            if ((0, h.InGamePhase)()) {
+            if ((0, j.InGamePhase)()) {
                 this.cull.ignoreCulling();
-                const y = Phaser.Display.Color.HexStringToColor(this.options.color).color;
+                const A = Phaser.Display.Color.HexStringToColor(this.options.color).color;
                 this.pointer = this.parts.add.sprite({
-                    ...g.PointerAsset,
-                    layerId: n.default.InGameUIElements,
-                    onReady: b => {
-                        b.view.setTint(y), (0, p.UpdateVisibility)(this);
+                    ...i.PointerAsset,
+                    layerId: p.default.InGameUIElements,
+                    onReady: d => {
+                        d.view.setTint(A), (0, r.UpdateVisibility)(this);
                     }
                 }), this.nameText = this.parts.add.text({
                     text: this.options.name,
-                    layerId: n.default.InGameUIElements,
+                    layerId: p.default.InGameUIElements,
                     textStyle: {
-                        ...i.NAME_TEXT_STYLE,
+                        ...k.NAME_TEXT_STYLE,
                         color: this.options.color
                     }
-                }), this.nameText.view.setPadding(5 * (0, o.default)()), this.nameText.view.setShadow(0, 0, '#333333', i.Consts.ShadowBlur, !1, !0), this.nameText.view.setResolution((0, o.default)()), (0, p.UpdateVisibility)(this);
+                }), this.nameText.view.setPadding(5 * (0, q.default)()), this.nameText.view.setShadow(0, 0, '#333333', k.Consts.ShadowBlur, !1, !0), this.nameText.view.setResolution((0, q.default)()), (0, r.UpdateVisibility)(this);
             }
         }
     }
-    var _x = w;
-}), a.register('5uoY9', function(b, c) {
-    _f(b.exports, 'PointerAsset', function() {
-        return _d;
-    });
-    const _d = {
-        imageId: 'radar_arrow',
-        imageUrl: (0, a('2Xvuf').default)('devices/waypoint/arrow.png')
-    };
-}), a.register('WXyRn', function(b, c) {
-    _f(b.exports, 'Consts', function() {
+    var _z = y;
+}), c.register('5h8YL', function(d, e) {
+    a(d.exports, 'PointerAsset', function() {
         return _f;
-    }), _f(b.exports, 'NAME_TEXT_STYLE', function() {
-        return _g;
     });
-    var d = a('b5kvC'),
-        e = a('WWOt8');
     const _f = {
+        imageId: 'radar_arrow',
+        imageUrl: (0, c('UaUBz0').default)('devices/waypoint/arrow.png')
+    };
+}), c.register('9bPKW', function(d, e) {
+    a(d.exports, 'Consts', function() {
+        return _h;
+    }), a(d.exports, 'NAME_TEXT_STYLE', function() {
+        return _i;
+    });
+    var f = c('Eh2Wh'),
+        g = c('5cIEW');
+    const _h = {
             NameTextFontSize: 20,
             DistTextFontSize: 16,
             PointerBaseScale: 0.25,
@@ -115,325 +115,325 @@ a.register('c03PH', function(b, c) {
             CharacterShift: -25,
             SafeAreaTopMarginWithGUIDevices: 180,
             SafeAreaTopMarginWithoutGUIDevices: 110,
-            SafeAreaExtraTopMarginWithScorebar: a('kASlx').SCOREBAR_HEIGHT,
+            SafeAreaExtraTopMarginWithScorebar: c('FI1tM').SCOREBAR_HEIGHT,
             SafeAreaBottomMarginWithGUIDevices: 100,
             SafeAreaBottomMarginWithoutGUIDevices: 30,
             SafeAreaLeftRightMargin: 30,
             ShadowBlur: 5
         },
-        _g = {
-            fontFamily: d.Fonts.ProductSans,
-            fontSize: `${ e.default.fontWeight } ${ _f.NameTextFontSize }px`
+        _i = {
+            fontFamily: f.Fonts.ProductSans,
+            fontSize: `${ g.default.fontWeight } ${ _h.NameTextFontSize }px`
         };
-}), a.register('PJIQl', function(b, c) {
-    _f(b.exports, 'GetTargetParams', function() {
-        return _m;
+}), c.register('O3yHy', function(d, e) {
+    a(d.exports, 'GetTargetParams', function() {
+        return _o;
     });
-    var d = a('Jfada'),
-        e = a('akSSD'),
-        f = a('B7ZvS'),
-        g = a('s1zbr'),
-        h = a('WXyRn'),
-        i = a('pvAUg'),
-        j = a('k2p3V'),
-        k = a('tt0gv'),
-        l = a('8WvaZ');
-    const _m = _f => {
-        let n = _f.x,
-            o = _f.y;
-        const p = (0, e.FetchCameraData)();
-        if (_f.options.target === i.WaypointTarget.player) {
-            const q = (0, f.default)(_f.state.characterId);
-            if (!q)
+    var f = c('5Fjxs'),
+        g = c('SCxga'),
+        h = c('d7UqH'),
+        i = c('av19s'),
+        j = c('9bPKW'),
+        k = c('g1kXX'),
+        l = c('W2kIJ'),
+        m = c('7zgOC'),
+        n = c('ddhGF');
+    const _o = a => {
+        let p = a.x,
+            q = a.y;
+        const r = (0, g.FetchCameraData)();
+        if (a.options.target === k.WaypointTarget.player) {
+            const s = (0, h.default)(a.state.characterId);
+            if (!s)
                 return;
-            if (q.id === (0, d.default)())
+            if (s.id === (0, f.default)())
                 return;
-            n = q.body.x, o = q.body.y + h.Consts.CharacterShift;
-        } else if (_f.options.target === i.WaypointTarget.flag) {
-            const q = (0, j.FetchFlagOfColor)(_f);
-            if (!q)
+            p = s.body.x, q = s.body.y + j.Consts.CharacterShift;
+        } else if (a.options.target === k.WaypointTarget.flag) {
+            const s = (0, l.FetchFlagOfColor)(a);
+            if (!s)
                 return;
-            n = q.currentFlagX, o = q.currentFlagY + h.Consts.IdleFlagShift, q.state.currentState !== g.CurrentState.idle && (o = q.currentFlagY + h.Consts.CarriedFlagShift);
-        } else if (_f.options.target === i.WaypointTarget.ball) {
-            var q;
-            const r = (0, k.FetchBallOfId)(_f);
-            if (!r || !(null === (q = r.container) || void 0 === q ? void 0 : q.view))
+            p = s.currentFlagX, q = s.currentFlagY + j.Consts.IdleFlagShift, s.state.currentState !== i.CurrentState.idle && (q = s.currentFlagY + j.Consts.CarriedFlagShift);
+        } else if (a.options.target === k.WaypointTarget.ball) {
+            var s;
+            const t = (0, m.FetchBallOfId)(a);
+            if (!t || !(null === (s = t.container) || void 0 === s ? void 0 : s.view))
                 return;
-            const s = {
-                    x: r.container.view.x,
-                    y: r.container.view.y
+            const u = {
+                    x: t.container.view.x,
+                    y: t.container.view.y
                 },
-                t = {
-                    x: p.x,
-                    y: p.y
+                v = {
+                    x: r.x,
+                    y: r.y
                 },
-                u = _b(l).Math.Angle.BetweenPoints(s, t),
-                v = r.options.radius,
-                w = {
-                    x: s.x + v * Math.cos(u),
-                    y: s.y + v * Math.sin(u)
+                w = b(n).Math.Angle.BetweenPoints(u, v),
+                x = t.options.radius,
+                y = {
+                    x: u.x + x * Math.cos(w),
+                    y: u.y + x * Math.sin(w)
                 };
-            n = w.x, o = w.y;
+            p = y.x, q = y.y;
         }
         return {
-            x: n,
-            y: o,
-            camData: p,
-            angle: Math.atan2(o - p.y, n - p.x)
+            x: p,
+            y: q,
+            camData: r,
+            angle: Math.atan2(q - r.y, p - r.x)
         };
     };
-}), a.register('akSSD', function(_b, c) {
-    _f(_b.exports, 'FetchCameraData', function() {
-        return _e;
+}), c.register('SCxga', function(d, e) {
+    a(d.exports, 'FetchCameraData', function() {
+        return _g;
     });
-    var d = a('D5xLI');
-    const _e = () => {
-        const _f = (0, d.default)(),
-            g = _f.cameras.main.worldView.left,
-            h = _f.cameras.main.worldView.right,
-            i = _f.cameras.main.worldView.top,
-            j = _f.cameras.main.worldView.bottom;
+    var f = c('heTaO');
+    const _g = () => {
+        const h = (0, f.default)(),
+            i = h.cameras.main.worldView.left,
+            j = h.cameras.main.worldView.right,
+            k = h.cameras.main.worldView.top,
+            l = h.cameras.main.worldView.bottom;
         return {
-            left: g,
-            right: h,
-            top: i,
-            bottom: j,
-            x: g + (h - g) / 2,
-            y: i + (j - i) / 2,
-            width: h - g,
-            height: j - i
+            left: i,
+            right: j,
+            top: k,
+            bottom: l,
+            x: i + (j - i) / 2,
+            y: k + (l - k) / 2,
+            width: j - i,
+            height: l - k
         };
     };
-}), a.register('s1zbr', function(b, c) {
-    let d;
-    var e;
+}), c.register('av19s', function(d, e) {
     let f;
     var g;
-    _F(b.exports, 'CurrentState', function() {
+    let h;
+    var i;
+    a(d.exports, 'CurrentState', function() {
+        return h;
+    }), (g = f || (f = {})).black = 'black', g.blue = 'blue', g.green = 'green', g.orange = 'orange', g.purple = 'purple', g.red = 'red', g.white = 'white', (i = h || (h = {})).idle = 'idle', i.carried = 'carried', i.dropped = 'dropped';
+    h.idle;
+}), c.register('g1kXX', function(d, e) {
+    let f;
+    var g;
+    a(d.exports, 'WaypointTarget', function() {
         return f;
-    }), (e = d || (d = {})).black = 'black', e.blue = 'blue', e.green = 'green', e.orange = 'orange', e.purple = 'purple', e.red = 'red', e.white = 'white', (g = f || (f = {})).idle = 'idle', g.carried = 'carried', g.dropped = 'dropped';
-    f.idle;
-}), a.register('pvAUg', function(b, c) {
-    let d;
-    var e;
-    _F(b.exports, 'WaypointTarget', function() {
-        return d;
-    }), (e = d || (d = {})).deviceLocation = 'deviceLocation', e.player = 'player', e.flag = 'flag', e.ball = 'ball';
-}), a.register('k2p3V', function(b, c) {
-    _F(b.exports, 'FetchFlagOfColor', function() {
-        return _f;
-    });
-    var d = a('cPBfb'),
-        e = a('D5xLI');
-    const _f = _F => {
-        if (void 0 === _F.options.flagColor)
-            return;
-        const g = (0, e.default)().worldManager.devices.allDevices.find(g => g.deviceOption.id === d.default.flag && g.options.flagColor === _F.options.flagColor && (void 0 === g.pointedByWaypointDeviceID || g.pointedByWaypointDeviceID === _F.id));
-        return g && (g.pointedByWaypointDeviceID = _F.id), g;
-    };
-}), a.register('tt0gv', function(b, c) {
-    _F(b.exports, 'FetchBallOfId', function() {
-        return _g;
-    });
-    var d = a('cPBfb'),
-        e = a('D5xLI'),
-        f = a('BYRTX');
-    const _g = _F => {
-        if (void 0 === _F.options.ballId)
-            return;
-        if (_F.trackedBallDeviceId) {
-            const h = (0, f.FetchDeviceById)(_F.trackedBallDeviceId);
-            if (h)
-                return h;
-        }
-        const h = (0, e.default)().worldManager.devices.allDevices.find(h => h.deviceOption.id === d.default.ball && h.options.identifier === _F.options.ballId);
-        return h && (_F.trackedBallDeviceId = h.id), h;
-    };
-}), a.register('MRGQ9', function(b, c) {
-    _F(b.exports, 'IsTargetWithinSafeArea', function() {
-        return _e;
-    });
-    var d = a('gZftk');
-    const _e = (_F, b) => Phaser.Geom.Intersects.CircleToRectangle(new Phaser.Geom.Circle(b.x, b.y, 1), (0, d.GetSafeAreaRect)(_F, b));
-}), a.register('gZftk', function(b, c) {
-    _F(b.exports, 'GetSafeAreaRect', function() {
+    }), (g = f || (f = {})).deviceLocation = 'deviceLocation', g.player = 'player', g.flag = 'flag', g.ball = 'ball';
+}), c.register('W2kIJ', function(d, e) {
+    a(d.exports, 'FetchFlagOfColor', function() {
         return _h;
     });
-    var d = a('Z15KO'),
-        e = a('iWivW'),
-        f = a('AmERn'),
-        g = a('WXyRn');
-    const _h = (_F, b) => {
-        const i = _F.scene.cameras.main.zoom / (0, d.default)(),
-            j = e.default.gui.guiSlots.find(_F => _F.position === f.GUIPosition.topLeft || _F.position === f.GUIPosition.topRight),
-            k = e.default.gui.guiSlots.find(_F => _F.position === f.GUIPosition.bottomLeft || _F.position === f.GUIPosition.bottomRight);
-        let l = j ? g.Consts.SafeAreaTopMarginWithGUIDevices : g.Consts.SafeAreaTopMarginWithoutGUIDevices;
-        e.default.gui.scorebar && (l += g.Consts.SafeAreaExtraTopMarginWithScorebar), l /= i;
-        const m = (k ? g.Consts.SafeAreaBottomMarginWithGUIDevices : g.Consts.SafeAreaBottomMarginWithoutGUIDevices) / i,
-            n = g.Consts.SafeAreaLeftRightMargin / i;
-        return new Phaser.Geom.Rectangle(b.camData.left + n, b.camData.top + l, b.camData.width - 2 * n, b.camData.height - l - m);
+    var f = c('OFuf70'),
+        g = c('heTaO');
+    const _h = a => {
+        if (void 0 === a.options.flagColor)
+            return;
+        const i = (0, g.default)().worldManager.devices.allDevices.find(i => i.deviceOption.id === f.default.flag && i.options.flagColor === a.options.flagColor && (void 0 === i.pointedByWaypointDeviceID || i.pointedByWaypointDeviceID === a.id));
+        return i && (i.pointedByWaypointDeviceID = a.id), i;
     };
-}), a.register('Ff48c', function(b, c) {
-    _F(b.exports, 'UpdateWithTargetWithinView', function() {
+}), c.register('7zgOC', function(d, e) {
+    a(d.exports, 'FetchBallOfId', function() {
+        return _i;
+    });
+    var f = c('OFuf70'),
+        g = c('heTaO'),
+        h = c('K2TwF');
+    const _i = a => {
+        if (void 0 === a.options.ballId)
+            return;
+        if (a.trackedBallDeviceId) {
+            const j = (0, h.FetchDeviceById)(a.trackedBallDeviceId);
+            if (j)
+                return j;
+        }
+        const j = (0, g.default)().worldManager.devices.allDevices.find(j => j.deviceOption.id === f.default.ball && j.options.identifier === a.options.ballId);
+        return j && (a.trackedBallDeviceId = j.id), j;
+    };
+}), c.register('6OLAn', function(d, e) {
+    a(d.exports, 'IsTargetWithinSafeArea', function() {
         return _g;
     });
-    var d = a('Z15KO'),
-        e = a('WXyRn'),
-        f = a('pvAUg');
-    const _g = (_F, b, a) => {
-        var h, i, j, k;
-        let l = !(null === (h = _F.pointer) || void 0 === h ? void 0 : h.view) || !(null === (i = _F.nameText) || void 0 === i ? void 0 : i.view);
-        var m, n;
-        if (_F.options.target === f.WaypointTarget.ball && (l = !0), l)
-            return (null === (m = _F.pointer) || void 0 === m ? void 0 : m.view) && (_F.pointer.view.alpha = 0), void((null === (n = _F.nameText) || void 0 === n ? void 0 : n.view) && (_F.nameText.view.alpha = 0));
-        const o = _F.scene.cameras.main.zoom / (0, d.default)(),
-            p = _F.pointer.view.width * e.Consts.PointerBaseScale / o,
-            q = _F.nameText.view.width / o,
-            r = -10 / o;
-        a.x > a.camData.x ? (_F.pointer.view.x = a.x - p / 2 - 25, _F.pointer.view.y = a.y, _F.pointer.view.angle = 0, _F.nameText.view.x = a.x - p - q / 2 - 25 - r, _F.nameText.view.y = a.y) : (_F.pointer.view.x = a.x + p / 2 + 25, _F.pointer.view.y = a.y, _F.pointer.view.angle = 180, _F.nameText.view.x = a.x + p + q / 2 + 25 + r, _F.nameText.view.y = a.y), _F.pointer.view.setScale(e.Consts.PointerBaseScale / o * 0.65), _F.nameText.view.setText(`${ _F.options.name }`), null === (j = _F.icon) || void 0 === j || null === (k = j.view) || void 0 === k || k.setAlpha(0);
-    };
-}), a.register('BAMFo', function(b, c) {
-    _F(b.exports, 'UpdateWithTargetOutsideView', function() {
+    var f = c('izzMq');
+    const _g = (a, d) => Phaser.Geom.Intersects.CircleToRectangle(new Phaser.Geom.Circle(d.x, d.y, 1), (0, f.GetSafeAreaRect)(a, d));
+}), c.register('izzMq', function(d, e) {
+    a(d.exports, 'GetSafeAreaRect', function() {
         return _j;
     });
-    var d = a('Z15KO'),
-        e = a('iWivW'),
-        f = a('WXyRn'),
-        g = a('gZftk'),
-        h = a('pvAUg'),
-        i = a('5dl5L');
-    const _j = (_F, b, a) => {
-        var k, l;
-        const m = _F.scene.cameras.main.zoom / (0, d.default)(),
-            n = 999999999,
-            o = a.camData.x + Math.cos(a.angle) * n,
-            p = a.camData.y + Math.sin(a.angle) * n,
-            q = Phaser.Geom.Intersects.GetLineToRectangle(new Phaser.Geom.Line(a.camData.x, a.camData.y, o, p), (0, g.GetSafeAreaRect)(_F, a));
-        var r;
-        if (!q[0])
-            return void((null === (r = _F.pointer) || void 0 === r ? void 0 : r.view) && (_F.pointer.view.alpha = 0));
-        const s = q[0].x,
-            t = q[0].y;
-        if ((null === (k = _F.pointer) || void 0 === k ? void 0 : k.view) && (_F.pointer.view.x = s, _F.pointer.view.y = t, _F.pointer.view.alpha = 1, _F.pointer.view.rotation = a.angle, _F.pointer.view.setScale(f.Consts.PointerBaseScale / m)), !(null === (l = _F.nameText) || void 0 === l ? void 0 : l.view))
-            return;
-        const u = _F.options.target === h.WaypointTarget.player;
-        u && (0, i.UpdateCharacterPreview)(_F), _F.nameText.view.setScale(1 / m);
-        const v = _F.nameText.view.getBounds(),
-            w = v.width,
-            x = v.height,
-            y = u ? f.Consts.CharacterPreviewSize : w,
-            z = u ? f.Consts.CharacterPreviewSize : x,
-            A = f.Consts.PointerCircleRadius / m;
-        let B = Phaser.Math.Distance.Between(s, t, a.camData.x, a.camData.y) - A,
-            C = a.camData.x + Math.cos(a.angle) * B,
-            D = a.camData.y + Math.sin(a.angle) * B,
-            E = !0;
-        for (; E;) {
-            B -= 1 / m, C = a.camData.x + Math.cos(a.angle) * B, D = a.camData.y + Math.sin(a.angle) * B;
-            const _F = new Phaser.Geom.Circle(s, t, A),
-                G = new Phaser.Geom.Rectangle(C - y / 2, D - z / 2, y, z);
-            E = Phaser.Geom.Intersects.CircleToRectangle(_F, G);
-        }
-        if (e.nameText.view.x = C, e.nameText.view.y = D, u) {
-            var F;
-            (null === (F = e.icon) || void 0 === F ? void 0 : F.view) && (e.icon.view.setOrigin(f.Consts.CharacterPreviewOriginX, f.Consts.CharacterPreviewOriginY), e.icon.view.x = C, e.icon.view.y = D, e.icon.view.setScale(f.Consts.CharacterPreviewScale / m), e.icon.view.setAlpha(1));
-            const G = w / 2 + f.Consts.CharacterPreviewAndTextSpace;
-            e.nameText.view.x = C + G, a.camData.x < C && (e.nameText.view.x = C - G);
-        }
-        const F = e.default.phaser.mainCharacter;
-        if (!F)
-            return;
-        const G = Phaser.Math.Distance.Between(F.body.x, F.body.y, a.x, a.y),
-            H = f.Consts.PixelsPerMeter,
-            I = Math.round(G / H);
-        e.nameText.view.setText(`${ e.options.name } (${ I }m)`);
+    var f = c('wpe/2'),
+        g = c('fI6of'),
+        h = c('VPVJC'),
+        i = c('9bPKW');
+    const _j = (a, d) => {
+        const k = a.scene.cameras.main.zoom / (0, f.default)(),
+            l = g.default.gui.guiSlots.find(a => a.position === h.GUIPosition.topLeft || a.position === h.GUIPosition.topRight),
+            m = g.default.gui.guiSlots.find(a => a.position === h.GUIPosition.bottomLeft || a.position === h.GUIPosition.bottomRight);
+        let n = l ? i.Consts.SafeAreaTopMarginWithGUIDevices : i.Consts.SafeAreaTopMarginWithoutGUIDevices;
+        g.default.gui.scorebar && (n += i.Consts.SafeAreaExtraTopMarginWithScorebar), n /= k;
+        const o = (m ? i.Consts.SafeAreaBottomMarginWithGUIDevices : i.Consts.SafeAreaBottomMarginWithoutGUIDevices) / k,
+            p = i.Consts.SafeAreaLeftRightMargin / k;
+        return new Phaser.Geom.Rectangle(d.camData.left + p, d.camData.top + n, d.camData.width - 2 * p, d.camData.height - n - o);
     };
-}), a.register('5dl5L', function(b, c) {
-    e(b.exports, 'UpdateCharacterPreview', function() {
-        return _g;
+}), c.register('XuuCF', function(d, e) {
+    a(d.exports, 'UpdateWithTargetWithinView', function() {
+        return _i;
     });
-    var d = a('B7ZvS'),
-        e = a('2Xvuf'),
-        f = a('JqBF0');
-    const _g = e => {
-        var h;
-        const i = (0, d.default)(e.state.characterId);
-        var j;
-        if (!i)
-            return void(null === (j = e.icon) || void 0 === j || j.destroy());
-        const k = i.skin.skinId.replace('character_', '');
-        if (!k)
+    var f = c('wpe/2'),
+        g = c('9bPKW'),
+        h = c('g1kXX');
+    const _i = (a, d, c) => {
+        var j, k, l, m;
+        let n = !(null === (j = a.pointer) || void 0 === j ? void 0 : j.view) || !(null === (k = a.nameText) || void 0 === k ? void 0 : k.view);
+        var o, p;
+        if (a.options.target === h.WaypointTarget.ball && (n = !0), n)
+            return (null === (o = a.pointer) || void 0 === o ? void 0 : o.view) && (a.pointer.view.alpha = 0), void((null === (p = a.nameText) || void 0 === p ? void 0 : p.view) && (a.nameText.view.alpha = 0));
+        const q = a.scene.cameras.main.zoom / (0, f.default)(),
+            r = a.pointer.view.width * g.Consts.PointerBaseScale / q,
+            s = a.nameText.view.width / q,
+            t = -10 / q;
+        c.x > c.camData.x ? (a.pointer.view.x = c.x - r / 2 - 25, a.pointer.view.y = c.y, a.pointer.view.angle = 0, a.nameText.view.x = c.x - r - s / 2 - 25 - t, a.nameText.view.y = c.y) : (a.pointer.view.x = c.x + r / 2 + 25, a.pointer.view.y = c.y, a.pointer.view.angle = 180, a.nameText.view.x = c.x + r + s / 2 + 25 + t, a.nameText.view.y = c.y), a.pointer.view.setScale(g.Consts.PointerBaseScale / q * 0.65), a.nameText.view.setText(`${ a.options.name }`), null === (l = a.icon) || void 0 === l || null === (m = l.view) || void 0 === m || m.setAlpha(0);
+    };
+}), c.register('pOINP', function(d, e) {
+    a(d.exports, 'UpdateWithTargetOutsideView', function() {
+        return _l;
+    });
+    var f = c('wpe/2'),
+        g = c('fI6of'),
+        h = c('9bPKW'),
+        i = c('izzMq'),
+        j = c('g1kXX'),
+        k = c('z/6MV');
+    const _l = (a, d, c) => {
+        var m, n;
+        const o = a.scene.cameras.main.zoom / (0, f.default)(),
+            p = 999999999,
+            q = c.camData.x + Math.cos(c.angle) * p,
+            r = c.camData.y + Math.sin(c.angle) * p,
+            s = Phaser.Geom.Intersects.GetLineToRectangle(new Phaser.Geom.Line(c.camData.x, c.camData.y, q, r), (0, i.GetSafeAreaRect)(a, c));
+        var t;
+        if (!s[0])
+            return void((null === (t = a.pointer) || void 0 === t ? void 0 : t.view) && (a.pointer.view.alpha = 0));
+        const u = s[0].x,
+            v = s[0].y;
+        if ((null === (m = a.pointer) || void 0 === m ? void 0 : m.view) && (a.pointer.view.x = u, a.pointer.view.y = v, a.pointer.view.alpha = 1, a.pointer.view.rotation = c.angle, a.pointer.view.setScale(h.Consts.PointerBaseScale / o)), !(null === (n = a.nameText) || void 0 === n ? void 0 : n.view))
             return;
-        const l = (0, e.default)(`characters/spine/normalized_preview/${ k }.png`);
-        (null === (h = e.icon) || void 0 === h ? void 0 : h.options.imageUrl) !== l && e.parts.add.sprite({
-            imageId: l,
-            imageUrl: l,
-            layerId: f.default.InGameUIElements,
-            onReady: h => {
-                const m = (0, d.default)(e.state.characterId);
-                if (!m && m !== i)
+        const w = a.options.target === j.WaypointTarget.player;
+        w && (0, k.UpdateCharacterPreview)(a), a.nameText.view.setScale(1 / o);
+        const x = a.nameText.view.getBounds(),
+            y = x.width,
+            z = x.height,
+            A = w ? h.Consts.CharacterPreviewSize : y,
+            B = w ? h.Consts.CharacterPreviewSize : z,
+            C = h.Consts.PointerCircleRadius / o;
+        let D = Phaser.Math.Distance.Between(u, v, c.camData.x, c.camData.y) - C,
+            E = c.camData.x + Math.cos(c.angle) * D,
+            F = c.camData.y + Math.sin(c.angle) * D,
+            G = !0;
+        for (; G;) {
+            D -= 1 / o, E = c.camData.x + Math.cos(c.angle) * D, F = c.camData.y + Math.sin(c.angle) * D;
+            const H = new Phaser.Geom.Circle(u, v, C),
+                I = new Phaser.Geom.Rectangle(E - A / 2, F - B / 2, A, B);
+            G = Phaser.Geom.Intersects.CircleToRectangle(H, I);
+        }
+        if (a.nameText.view.x = E, a.nameText.view.y = F, w) {
+            var H;
+            (null === (H = a.icon) || void 0 === H ? void 0 : H.view) && (a.icon.view.setOrigin(h.Consts.CharacterPreviewOriginX, h.Consts.CharacterPreviewOriginY), a.icon.view.x = E, a.icon.view.y = F, a.icon.view.setScale(h.Consts.CharacterPreviewScale / o), a.icon.view.setAlpha(1));
+            const I = y / 2 + h.Consts.CharacterPreviewAndTextSpace;
+            a.nameText.view.x = E + I, c.camData.x < E && (a.nameText.view.x = E - I);
+        }
+        const H = g.default.phaser.mainCharacter;
+        if (!H)
+            return;
+        const I = Phaser.Math.Distance.Between(H.body.x, H.body.y, c.x, c.y),
+            J = h.Consts.PixelsPerMeter,
+            K = Math.round(I / J);
+        a.nameText.view.setText(`${ a.options.name } (${ K }m)`);
+    };
+}), c.register('z/6MV', function(d, e) {
+    a(d.exports, 'UpdateCharacterPreview', function() {
+        return _i;
+    });
+    var f = c('d7UqH'),
+        g = c('UaUBz0'),
+        h = c('GIe9o');
+    const _i = a => {
+        var j;
+        const k = (0, f.default)(a.state.characterId);
+        var l;
+        if (!k)
+            return void(null === (l = a.icon) || void 0 === l || l.destroy());
+        const m = k.skin.skinId.replace('character_', '');
+        if (!m)
+            return;
+        const n = (0, g.default)(`characters/spine/normalized_preview/${ m }.png`);
+        (null === (j = a.icon) || void 0 === j ? void 0 : j.options.imageUrl) !== n && a.parts.add.sprite({
+            imageId: n,
+            imageUrl: n,
+            layerId: h.default.InGameUIElements,
+            onReady: j => {
+                const o = (0, f.default)(a.state.characterId);
+                if (!o && o !== k)
                     return;
-                const n = m.skin.skinId.replace('character_', '');
-                (n || n === k) && (e.icon && e.icon.destroy(), e.icon = h);
+                const p = o.skin.skinId.replace('character_', '');
+                (p || p === m) && (a.icon && a.icon.destroy(), a.icon = j);
             }
         });
     };
-}), a.register('CqqzQ', function(b, c) {
-    e(b.exports, 'UpdateVisibility', function() {
-        return _i;
+}), c.register('KzFw0', function(d, e) {
+    a(d.exports, 'UpdateVisibility', function() {
+        return _k;
     });
-    var d = a('Jfada'),
-        e = a('/pbxo'),
-        f = a('pvAUg'),
-        g = a('k2p3V'),
-        h = a('tt0gv');
-    const _i = e => {
-        var j, k, l;
-        let m = 1;
-        if ((0, e.InPreGamePhase)() && (m = 0), e.state.active || (m = 0), e.options.target !== f.WaypointTarget.player || e.state.characterId || (m = 0), e.options.target === f.WaypointTarget.player && e.state.characterId === (0, d.default)() && (m = 0), e.options.target === f.WaypointTarget.flag) {
-            const n = (0, g.FetchFlagOfColor)(e);
-            n ? (n.state.characterId === (0, d.default)() || n.lastCharacterIdToHoldFlag === (0, d.default)() && n.goingBackToBase || e.options.hideWhenFlagIsInBase && n.isInBase()) && (m = 0) : m = 0;
-        } else if (e.options.target === f.WaypointTarget.ball) {
-            const n = (0, h.FetchBallOfId)(e);
-            n && n.state.active || (m = 0);
+    var f = c('5Fjxs'),
+        g = c('UkCpC'),
+        h = c('g1kXX'),
+        i = c('W2kIJ'),
+        j = c('7zgOC');
+    const _k = a => {
+        var l, m, n;
+        let o = 1;
+        if ((0, g.InPreGamePhase)() && (o = 0), a.state.active || (o = 0), a.options.target !== h.WaypointTarget.player || a.state.characterId || (o = 0), a.options.target === h.WaypointTarget.player && a.state.characterId === (0, f.default)() && (o = 0), a.options.target === h.WaypointTarget.flag) {
+            const p = (0, i.FetchFlagOfColor)(a);
+            p ? (p.state.characterId === (0, f.default)() || p.lastCharacterIdToHoldFlag === (0, f.default)() && p.goingBackToBase || a.options.hideWhenFlagIsInBase && p.isInBase()) && (o = 0) : o = 0;
+        } else if (a.options.target === h.WaypointTarget.ball) {
+            const p = (0, j.FetchBallOfId)(a);
+            p && p.state.active || (o = 0);
         }
-        return (null === (j = e.pointer) || void 0 === j ? void 0 : j.view) && (e.pointer.view.alpha = m), (null === (k = e.nameText) || void 0 === k ? void 0 : k.view) && (e.nameText.view.alpha = m), (null === (l = e.icon) || void 0 === l ? void 0 : l.view) && (e.icon.view.alpha = m), m;
+        return (null === (l = a.pointer) || void 0 === l ? void 0 : l.view) && (a.pointer.view.alpha = o), (null === (m = a.nameText) || void 0 === m ? void 0 : m.view) && (a.nameText.view.alpha = o), (null === (n = a.icon) || void 0 === n ? void 0 : n.view) && (a.icon.view.alpha = o), o;
     };
-}), a.register('lFuxp', function(b, c) {
-    e(b.exports, 'default', function() {
+}), c.register('k1XXZ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _j;
+    });
+    var f = c('fI6of'),
+        g = c('9bPKW'),
+        h = c('g1kXX'),
+        i = c('xteaO');
+    var _j = (a, d) => {
+        if (!a.options.useDeactivateWithinRange || a.options.target !== h.WaypointTarget.deviceLocation)
+            return;
+        if (!a.state.active)
+            return;
+        const k = f.default.phaser.mainCharacter;
+        if (!k)
+            return;
+        const l = Phaser.Math.Distance.Between(k.body.x, k.body.y, d.x, d.y),
+            m = g.Consts.PixelsPerMeter;
+        Math.round(l / m) < a.options.deactivateWithinRange && a.sendToServerDevice(i.Messages.deactivateWithinRange);
+    };
+}), c.register('xteaO', function(d, e) {
+    let f;
+    a(d.exports, 'Messages', function() {
+        return f;
+    }), (f || (f = {})).deactivateWithinRange = 'deactivateWithinRange';
+}), c.register('kN4Z6', function(d, e) {
+    a(d.exports, 'ReleasePointedFlagDevice', function() {
         return _h;
     });
-    var d = a('iWivW'),
-        e = a('WXyRn'),
-        f = a('pvAUg'),
-        g = a('1IHmT');
-    var _h = (e, b) => {
-        if (!e.options.useDeactivateWithinRange || e.options.target !== f.WaypointTarget.deviceLocation)
+    var f = c('heTaO'),
+        g = c('OFuf70');
+    const _h = a => {
+        if (void 0 === a.options.flagColor)
             return;
-        if (!e.state.active)
-            return;
-        const i = d.default.phaser.mainCharacter;
-        if (!i)
-            return;
-        const j = Phaser.Math.Distance.Between(i.body.x, i.body.y, b.x, b.y),
-            k = e.Consts.PixelsPerMeter;
-        Math.round(j / k) < e.options.deactivateWithinRange && e.sendToServerDevice(g.Messages.deactivateWithinRange);
-    };
-}), a.register('1IHmT', function(b, c) {
-    let d;
-    e(b.exports, 'Messages', function() {
-        return d;
-    }), (d || (d = {})).deactivateWithinRange = 'deactivateWithinRange';
-}), a.register('gOeXU', function(b, c) {
-    e(b.exports, 'ReleasePointedFlagDevice', function() {
-        return _f;
-    });
-    var d = a('D5xLI'),
-        e = a('cPBfb');
-    const _f = e => {
-        if (void 0 === e.options.flagColor)
-            return;
-        const g = (0, d.default)().worldManager.devices.allDevices.find(g => g.deviceOption.id === e.default.flag && g.options.flagColor === e.options.flagColor && g.pointedByWaypointDeviceID === e.id);
-        g && (g.pointedByWaypointDeviceID = void 0);
+        const i = (0, f.default)().worldManager.devices.allDevices.find(i => i.deviceOption.id === g.default.flag && i.options.flagColor === a.options.flagColor && i.pointedByWaypointDeviceID === a.id);
+        i && (i.pointedByWaypointDeviceID = void 0);
     };
 });

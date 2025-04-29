@@ -7,97 +7,97 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('Bx8X5', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('IZuHX', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), e(b.exports, 'default', function() {
-        return _k;
+    }), a(d.exports, 'default', function() {
+        return _m;
     });
-    var e = a('0hzx+');
-    a('LEQ5w');
-    var f = a('Yz2Bk'),
-        g = a('cvto726'),
-        h = a('CGys7'),
-        i = a('xG58X'),
-        j = a('wT7vQ');
-    var _k = e => {
+    var g = c('gRbUn');
+    c('O0Kav');
+    var h = c('Kt6UF'),
+        i = c('E2AMI26'),
+        j = c('+pgVJ'),
+        k = c('6IkLl'),
+        l = c('59eoT');
+    var _m = a => {
         const {
-            data: l
-        } = e;
-        return (0, e.jsxs)(g.default, {
+            data: n
+        } = a;
+        return (0, g.jsxs)(i.default, {
             className: 'maxWidth',
             direction: 'vertical',
             size: 20,
             children: [
-                (0, e.jsx)(f.default, {
-                    id: l._id
+                (0, g.jsx)(h.default, {
+                    id: n._id
                 }),
-                (0, e.jsx)(h.default, {
-                    lastPublish: l.lastPublish,
-                    refetch: e.refetch
+                (0, g.jsx)(j.default, {
+                    lastPublish: n.lastPublish,
+                    refetch: a.refetch
                 }),
-                (0, e.jsx)(i.default, {
-                    total: l.plays.total,
-                    last30: l.plays.last30,
-                    last7: l.plays.last7
+                (0, g.jsx)(k.default, {
+                    total: n.plays.total,
+                    last30: n.plays.last30,
+                    last7: n.plays.last7
                 }),
-                (0, e.jsx)(j.default, {
-                    id: l._id,
-                    close: e.close
+                (0, g.jsx)(l.default, {
+                    id: n._id,
+                    close: a.close
                 })
             ]
         });
     };
-}), a.register('Yz2Bk', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _l;
+}), c.register('Kt6UF', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _n;
     });
-    var d = a('0hzx+'),
-        e = a('ulE4q'),
-        f = a('ewwAh'),
-        g = a('MSsQO'),
-        h = a('j2ADs'),
-        i = a('PMl60'),
-        j = a('jlX4s16'),
-        k = a('kkK6w');
-    var _l = e => {
-        const m = `${ (0, i.getDomain)() }/creative/map/${ e.id }`;
-        return (0, d.jsxs)(k.Container, {
+    var f = c('gRbUn'),
+        g = c('P1KtI'),
+        h = c('aevdF'),
+        i = c('Bjl070'),
+        j = c('22RS1'),
+        k = c('quE27'),
+        l = c('gS4g327'),
+        m = c('bZ5Pf');
+    var _n = a => {
+        const o = `${ (0, k.getDomain)() }/creative/map/${ a.id }`;
+        return (0, f.jsxs)(m.Container, {
             children: [
-                (0, d.jsxs)('div', {
+                (0, f.jsxs)('div', {
                     children: [
-                        (0, d.jsx)(k.Title, {
+                        (0, f.jsx)(m.Title, {
                             children: 'Public Link'
                         }),
-                        (0, d.jsx)(h.default.Text, {
+                        (0, f.jsx)(j.default.Text, {
                             children: 'This is a direct link to play your map! The link never expires as long as your map remains published.'
                         })
                     ]
                 }),
-                (0, d.jsxs)('div', {
+                (0, f.jsxs)('div', {
                     className: 'flex vc',
                     style: {
                         marginTop: 10
                     },
                     children: [
-                        (0, d.jsx)(f.default, {
+                        (0, f.jsx)(h.default, {
                             style: {
                                 width: '100%'
                             },
                             type: 'text',
-                            value: m,
+                            value: o,
                             readOnly: !0
                         }),
-                        (0, d.jsx)(e.default, {
+                        (0, f.jsx)(g.default, {
                             type: 'primary',
                             onClick: () => {
-                                _b(j)(m), g.default.success('Link copied to clipboard!');
+                                b(l)(o), i.default.success('Link copied to clipboard!');
                             },
                             style: {
                                 marginLeft: 10
@@ -109,68 +109,68 @@ a.register('Bx8X5', function(b, c) {
             ]
         });
     };
-}), a.register('kkK6w', function(_b, c) {
-    e(_b.exports, 'Container', function() {
-        return _i;
-    }), e(_b.exports, 'Title', function() {
-        return _j;
+}), c.register('bZ5Pf', function(d, e) {
+    a(d.exports, 'Container', function() {
+        return _k;
+    }), a(d.exports, 'Title', function() {
+        return _l;
     });
-    var d = a('0hzx+'),
-        e = a('j2ADs'),
-        f = a('Axq+p'),
-        g = a('b5kvC');
-    let h;
-    const _i = f.default.div.attrs({
+    var f = c('gRbUn'),
+        g = c('22RS1'),
+        h = c('u4s09'),
+        i = c('Eh2Wh');
+    let j;
+    const _k = h.default.div.attrs({
             className: 'maxWidth'
-        })(h || (h = (e => e)`
+        })(j || (j = (a => a)`
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   border-radius: 8px;
 `)),
-        _j = e => (0, d.jsx)(e.default.Title, {
+        _l = a => (0, f.jsx)(g.default.Title, {
             style: {
-                fontFamily: g.Fonts.FugazOne,
+                fontFamily: i.Fonts.FugazOne,
                 textTransform: 'uppercase',
                 marginBottom: '0.2em'
             },
             level: 3,
-            children: e.children
+            children: a.children
         });
-}), a.register('CGys7', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _p;
+}), c.register('+pgVJ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _r;
     });
-    var d = a('0hzx+'),
-        e = a('ulE4q'),
-        f = a('YRlpt'),
-        g = a('j2ADs');
-    a('LEQ5w');
-    var h = a('ECzOP'),
-        i = a('2HvvA11'),
-        j = a('vShe/'),
-        k = a('kkK6w'),
-        l = a('PMl60'),
-        m = a('w0a3U'),
-        n = a('Quxw3'),
-        o = a('x7BBh');
-    var _p = e => {
-        const [q, r, s] = (0, l.useBoolean)(!1), t = _b(h).unix(e.lastPublish);
-        return (0, d.jsxs)(k.Container, {
+    var f = c('gRbUn'),
+        g = c('P1KtI'),
+        h = c('AE7vR'),
+        i = c('22RS1');
+    c('O0Kav');
+    var j = c('Tzf4u'),
+        k = c('FB7HT26'),
+        l = c('HOIhZ'),
+        m = c('bZ5Pf'),
+        n = c('quE27'),
+        o = c('sPeAY'),
+        p = c('0v55W'),
+        q = c('ywRRc');
+    var _r = a => {
+        const [s, t, u] = (0, n.useBoolean)(!1), v = b(j).unix(a.lastPublish);
+        return (0, f.jsxs)(m.Container, {
             children: [
-                (0, d.jsxs)('div', {
+                (0, f.jsxs)('div', {
                     children: [
-                        (0, d.jsx)(k.Title, {
+                        (0, f.jsx)(m.Title, {
                             children: 'Publish New Version'
                         }),
-                        (0, d.jsxs)(g.default.Text, {
+                        (0, f.jsxs)(i.default.Text, {
                             children: [
                                 'Your map was last published on',
                                 ' ',
-                                (0, d.jsxs)('b', {
+                                (0, f.jsxs)('b', {
                                     children: [
-                                        t.format('MMMM Do'),
+                                        v.format('MMMM Do'),
                                         ' at ',
-                                        t.format('h:mmA'),
+                                        v.format('h:mmA'),
                                         '.'
                                     ]
                                 }),
@@ -180,49 +180,49 @@ a.register('Bx8X5', function(b, c) {
                         })
                     ]
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         marginTop: 15
                     },
-                    children: (0, d.jsx)(e.default, {
+                    children: (0, f.jsx)(g.default, {
                         block: !0,
                         type: 'primary',
-                        loading: q,
+                        loading: s,
                         onClick: () => {
-                            q || (r(), window.addEventListener('MAP_SAVED', () => {
-                                (0, m.Request)({
+                            s || (t(), window.addEventListener('MAP_SAVED', () => {
+                                (0, o.Request)({
                                     url: '/api/created-map/listing/publish-new-version/' + window._mapId,
                                     success: () => {
-                                        f.default.success({
+                                        h.default.success({
                                             title: 'Changes published!',
                                             content: 'Players will now experience the latest version of your map!'
-                                        }), e.refetch();
+                                        }), a.refetch();
                                     },
-                                    error: e => {
-                                        (0, l.throwMessageError)({
-                                            e: e,
+                                    error: a => {
+                                        (0, n.throwMessageError)({
+                                            e: a,
                                             default: {
                                                 title: 'Error publishing changes',
                                                 content: 'Please try again.'
                                             }
                                         });
                                     },
-                                    both: s
+                                    both: u
                                 });
                             }, {
                                 once: !0
-                            }), (0, n.default)(o.default.save, {
+                            }), (0, p.default)(q.default.save, {
                                 ignoreNotification: !0
                             }));
                         },
                         children: 'Publish Changes (Free)'
                     })
                 }),
-                (0, d.jsx)('div', {
+                (0, f.jsx)('div', {
                     style: {
                         marginTop: 9
                     },
-                    children: (0, d.jsxs)('div', {
+                    children: (0, f.jsxs)('div', {
                         style: {
                             fontSize: 12,
                             lineHeight: 1.2,
@@ -232,12 +232,12 @@ a.register('Bx8X5', function(b, c) {
                         children: [
                             'Ensure everything in your map follows our',
                             ' ',
-                            (0, d.jsx)(i.default, {
+                            (0, f.jsx)(k.default, {
                                 to: 'https://docs.creative.gimkit.com/general/publishing/community-rules-for-publishing-with-gimkit-creative',
                                 external: !0,
                                 target: '_blank',
                                 style: {
-                                    color: j.default.Yellow,
+                                    color: l.default.Yellow,
                                     textDecoration: 'underline'
                                 },
                                 children: 'community guidelines.'
@@ -250,60 +250,60 @@ a.register('Bx8X5', function(b, c) {
             ]
         });
     };
-}), a.register('xG58X', function(_b, c) {
-    e(_b.exports, 'default', function() {
-        return _l;
+}), c.register('6IkLl', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _n;
     });
-    var d = a('0hzx+'),
-        e = a('cvto726'),
-        f = a('j2ADs');
-    a('LEQ5w');
-    var g = a('b5kvC'),
-        h = a('sHRDd'),
-        i = a('PMl60'),
-        j = a('kkK6w');
-    const k = e => (0, d.jsxs)('div', {
+    var f = c('gRbUn'),
+        g = c('E2AMI26'),
+        h = c('22RS1');
+    c('O0Kav');
+    var i = c('Eh2Wh'),
+        j = c('8KqQ+'),
+        k = c('quE27'),
+        l = c('bZ5Pf');
+    const m = a => (0, f.jsxs)('div', {
         className: 'maxWidth flex-column flex-center',
         style: {
             padding: 20,
             background: 'rgba(255,255,255,0.1)',
-            color: h.default.White,
+            color: j.default.White,
             borderRadius: 6,
             lineHeight: 1
         },
         children: [
-            (0, d.jsx)('div', {
+            (0, f.jsx)('div', {
                 style: {
-                    fontFamily: g.Fonts.FugazOne,
+                    fontFamily: i.Fonts.FugazOne,
                     textTransform: 'uppercase',
                     opacity: 0.8,
                     fontSize: 14,
                     marginBottom: 8
                 },
-                children: e.label
+                children: a.label
             }),
-            (0, d.jsx)('div', {
+            (0, f.jsx)('div', {
                 style: {
                     fontSize: 32,
-                    fontWeight: g.FontWeights.Black
+                    fontWeight: i.FontWeights.Black
                 },
-                children: (0, i.numberWithCommas)(e.value)
+                children: (0, k.numberWithCommas)(a.value)
             })
         ]
     });
-    var _l = e => (0, d.jsxs)(j.Container, {
+    var _n = a => (0, f.jsxs)(l.Container, {
         children: [
-            (0, d.jsxs)('div', {
+            (0, f.jsxs)('div', {
                 children: [
-                    (0, d.jsx)(j.Title, {
+                    (0, f.jsx)(l.Title, {
                         children: 'Analytics'
                     }),
-                    (0, d.jsx)(f.default.Text, {
+                    (0, f.jsx)(h.default.Text, {
                         children: 'See how many times your map has been played!'
                     })
                 ]
             }),
-            (0, d.jsxs)(e.default, {
+            (0, f.jsxs)(g.default, {
                 direction: 'vertical',
                 size: 12,
                 style: {
@@ -311,53 +311,53 @@ a.register('Bx8X5', function(b, c) {
                 },
                 className: 'maxWidth',
                 children: [
-                    (0, d.jsx)(k, {
+                    (0, f.jsx)(m, {
                         label: 'Total Plays',
-                        value: e.total
+                        value: a.total
                     }),
-                    (0, d.jsx)(k, {
+                    (0, f.jsx)(m, {
                         label: 'Last 30 Days',
-                        value: e.last30
+                        value: a.last30
                     }),
-                    (0, d.jsx)(k, {
+                    (0, f.jsx)(m, {
                         label: 'Last 7 Days',
-                        value: e.last7
+                        value: a.last7
                     })
                 ]
             })
         ]
     });
-}), a.register('wT7vQ', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _k;
+}), c.register('59eoT', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _m;
     });
-    var d = a('0hzx+'),
-        e = a('MSsQO'),
-        f = a('YRlpt'),
-        g = a('2HvvA11'),
-        h = a('vShe/'),
-        i = a('w0a3U'),
-        j = a('PMl60');
-    var _k = e => (0, d.jsx)('div', {
-        children: (0, d.jsx)(g.default, {
+    var f = c('gRbUn'),
+        g = c('Bjl070'),
+        h = c('AE7vR'),
+        i = c('FB7HT26'),
+        j = c('HOIhZ'),
+        k = c('sPeAY'),
+        l = c('quE27');
+    var _m = a => (0, f.jsx)('div', {
+        children: (0, f.jsx)(i.default, {
             style: {
-                color: h.default.Yellow,
+                color: j.default.Yellow,
                 textDecoration: 'underline'
             },
             onClick: () => {
-                f.default.confirm({
+                h.default.confirm({
                     title: 'Are you sure you want to unpublish?',
                     content: 'Unpublishing is permanent. If you republish in the future, the link to your map & play counts will reset.',
                     okText: 'Yes',
                     onOk: () => {
-                        (0, i.Request)({
-                            url: `/api/created-map/listing/remove/${ e.id }`,
+                        (0, k.Request)({
+                            url: `/api/created-map/listing/remove/${ a.id }`,
                             success: () => {
-                                e.default.success('Map unpublished!'), e.close();
+                                g.default.success('Map unpublished!'), a.close();
                             },
-                            error: e => {
-                                (0, j.throwMessageError)({
-                                    e: e,
+                            error: a => {
+                                (0, l.throwMessageError)({
+                                    e: a,
                                     default: {
                                         title: 'Error unpublishing map'
                                     }

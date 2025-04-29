@@ -7,59 +7,59 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('fkXMC', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('nj2x1', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _s(b.exports, 'default', function() {
-        return _s;
+    }), a(d.exports, 'default', function() {
+        return _u;
     });
-    var e = a('1bFPu'),
-        f = a('/pbxo'),
-        g = a('I35Ay'),
-        h = a('0G3r4'),
-        i = a('JGlqN'),
-        j = a('sCbH9'),
-        k = a('9tz3H'),
-        l = a('+uQv7'),
-        m = a('2Xvuf'),
-        n = a('dTXti'),
-        o = a('D5xLI'),
-        p = a('cPBfb'),
-        q = a('fe6E3');
-    class r extends g.default {
-        constructor(_s) {
-            if (super(_s), (0, e.default)(this, 'getPopupListItems', () => {
-                    const t = [],
-                        u = (0, o.default)().worldManager.devices.allDevices.filter(t => t.deviceOption.id === p.default.popupListItem).filter(t => t.options.group === this.options.group).filter(t => {
-                            var v, w, x, y;
-                            return !(!(null === (v = t.options) || void 0 === v || null === (w = v.title) || void 0 === w ? void 0 : w.length) && !(null === (x = t.options) || void 0 === x || null === (y = x.description) || void 0 === y ? void 0 : y.length));
-                        }).filter(t => !0 === t.state.active).sort((t, u) => t.y - u.y);
-                    return (0, q.take)(u, 25).forEach(u => {
-                        t.push({
-                            id: u.id,
-                            title: u.options.title,
-                            description: u.options.description,
-                            image: u.options.image
+    var g = c('s/YA9'),
+        h = c('UkCpC'),
+        i = c('ltxDW'),
+        j = c('l3REq'),
+        k = c('d5WQ6'),
+        l = c('bMaPZ2'),
+        m = c('hycyg'),
+        n = c('73Aki'),
+        o = c('UaUBz0'),
+        p = c('AHhkR'),
+        q = c('heTaO'),
+        r = c('OFuf70'),
+        s = c('9zaF+');
+    class t extends i.default {
+        constructor(u) {
+            if (super(u), (0, g.default)(this, 'getPopupListItems', () => {
+                    const v = [],
+                        w = (0, q.default)().worldManager.devices.allDevices.filter(v => v.deviceOption.id === r.default.popupListItem).filter(v => v.options.group === this.options.group).filter(v => {
+                            var x, y, z, A;
+                            return !(!(null === (x = v.options) || void 0 === x || null === (y = x.title) || void 0 === y ? void 0 : y.length) && !(null === (z = v.options) || void 0 === z || null === (A = z.description) || void 0 === A ? void 0 : A.length));
+                        }).filter(v => !0 === v.state.active).sort((v, w) => v.y - w.y);
+                    return (0, s.take)(w, 25).forEach(w => {
+                        v.push({
+                            id: w.id,
+                            title: w.options.title,
+                            description: w.options.description,
+                            image: w.options.image
                         });
-                    }), t;
-                }), (0, e.default)(this, 'onPopupListItemStateChange', () => {
+                    }), v;
+                }), (0, g.default)(this, 'onPopupListItemStateChange', () => {
                     this.deviceUI.update({
                         listItems: this.getPopupListItems()
                     });
-                }), (0, e.default)(this, 'openDeviceUI', () => {
-                    const t = this.options.callToActionStyle === h.TextExplainerCallToActionStyle.list;
+                }), (0, g.default)(this, 'openDeviceUI', () => {
+                    const v = this.options.callToActionStyle === j.TextExplainerCallToActionStyle.list;
                     this.deviceUI.open({
-                        style: t ? h.TextExplainerStyle.modal : this.options.style,
+                        style: v ? j.TextExplainerStyle.modal : this.options.style,
                         iconImage: this.options.iconImage,
                         header: this.state.header,
                         content: this.state.content,
-                        listItems: t ? this.getPopupListItems() : [],
+                        listItems: v ? this.getPopupListItems() : [],
                         callToActionLabel: this.options.callToActionLabel,
                         secondaryCallToActionLabel: this.options.secondaryCallToActionLabel,
                         fontFamily: this.options.fontFamily,
@@ -70,33 +70,33 @@ a.register('fkXMC', function(b, c) {
                         openSecondaryCallToAction: this.openSecondaryCallToAction,
                         onSelectListItem: this.onSelectListItem
                     });
-                }), (0, e.default)(this, 'onStateChange', _s => {
-                    'header' === _s && this.deviceUI.update({
+                }), (0, g.default)(this, 'onStateChange', u => {
+                    'header' === u && this.deviceUI.update({
                         header: this.state.header
-                    }), 'content' === _s && this.deviceUI.update({
+                    }), 'content' === u && this.deviceUI.update({
                         content: this.state.content
-                    }), 'textColor' === _s && this.deviceUI.update({
+                    }), 'textColor' === u && this.deviceUI.update({
                         textColor: this.state.textColor
                     });
-                }), (0, e.default)(this, 'openPrimaryCallToAction', () => {
-                    this.sendToServerDevice(i.Messages.primaryCallToAction);
-                }), (0, e.default)(this, 'openSecondaryCallToAction', () => {
-                    this.sendToServerDevice(i.Messages.secondaryCallToAction);
-                }), (0, e.default)(this, 'onSelectListItem', _s => {
-                    this.options.closableByUser && this.deviceUI.close(), this.sendToServerDevice(i.Messages.selectListItem, {
-                        id: _s
+                }), (0, g.default)(this, 'openPrimaryCallToAction', () => {
+                    this.sendToServerDevice(k.Messages.primaryCallToAction);
+                }), (0, g.default)(this, 'openSecondaryCallToAction', () => {
+                    this.sendToServerDevice(k.Messages.secondaryCallToAction);
+                }), (0, g.default)(this, 'onSelectListItem', u => {
+                    this.options.closableByUser && this.deviceUI.close(), this.sendToServerDevice(k.Messages.selectListItem, {
+                        id: u
                     });
-                }), (0, j.default)({
+                }), (0, l.default)({
                     familyName: this.options.fontFamily
-                }), (0, f.InPreGamePhase)() && (0, k.isSavedVersion)()) {
-                const t = n.default.Overlay;
-                new(0, l.default)({
+                }), (0, h.InPreGamePhase)() && (0, m.isSavedVersion)()) {
+                const v = p.default.Overlay;
+                new(0, n.default)({
                     device: this,
-                    baseColor: t.baseColor,
-                    boxColor: t.boxColor,
+                    baseColor: v.baseColor,
+                    boxColor: v.boxColor,
                     content: {
                         icon: {
-                            image: (0, m.default)('devices/text_explainer/icon.png'),
+                            image: (0, o.default)('devices/text_explainer/icon.png'),
                             scale: 0.92
                         }
                     }
@@ -104,33 +104,33 @@ a.register('fkXMC', function(b, c) {
             }
         }
     }
-    var _s = r;
-}), a.register('JGlqN', function(b, c) {
-    let d;
-    var e;
-    e(b.exports, 'Messages', function() {
-        return d;
-    }), (e = d || (d = {})).primaryCallToAction = 'primaryCallToAction', e.secondaryCallToAction = 'secondaryCallToAction', e.selectListItem = 'selectListItem';
-}), a.register('sCbH9', function(b, c) {
-    e(b.exports, 'isGoogleFontLoaded', function() {
-        return _f;
-    }), e(b.exports, 'default', function() {
-        return _g;
+    var _u = t;
+}), c.register('d5WQ6', function(d, e) {
+    let f;
+    var g;
+    a(d.exports, 'Messages', function() {
+        return f;
+    }), (g = f || (f = {})).primaryCallToAction = 'primaryCallToAction', g.secondaryCallToAction = 'secondaryCallToAction', g.selectListItem = 'selectListItem';
+}), c.register('bMaPZ2', function(d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function() {
+        return _h;
+    }), a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('ARAVZ');
-    const e = [],
-        _f = e => e.includes(e);
-    var _g = e => {
+    var f = c('TptDc');
+    const g = [],
+        _h = a => g.includes(a);
+    var _i = a => {
         const {
-            familyName: h,
-            onLoad: i
-        } = e;
-        e.includes(h) ? i && i() : t(d).load({
+            familyName: j,
+            onLoad: k
+        } = a;
+        g.includes(j) ? k && k() : b(f).load({
             google: {
-                families: [`${ h }:400,700`]
+                families: [`${ j }:400,700`]
             },
-            fontactive: e => {
-                e.includes(e) || e.push(e), h === e && i && i();
+            fontactive: a => {
+                g.includes(a) || g.push(a), j === a && k && k();
             }
         });
     };

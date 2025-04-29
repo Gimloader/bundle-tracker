@@ -12,13 +12,13 @@ a.register('KUfSh', function(b, c) {
         enumerable: !0,
         configurable: !0
     });
-    var i = a('1bFPu'),
-        j = a('JqBF0'),
-        k = a('2Xvuf'),
-        l = a('9tz3H'),
-        m = a('/pbxo'),
-        n = a('I35Ay'),
-        o = a('D5xLI');
+    var i = a('s/YA9'),
+        j = a('GIe9o'),
+        k = a('UaUBz0'),
+        l = a('hycyg'),
+        m = a('UkCpC'),
+        n = a('ltxDW'),
+        o = a('heTaO');
     const p = (0, k.default)('devices/camera_point/icon.png');
     class q extends n.default {
         destroy(r) {

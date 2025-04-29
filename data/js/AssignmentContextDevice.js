@@ -6,31 +6,31 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('tdXr0', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('vI8Cw', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _j(b.exports, 'default', function() {
-        return _j;
+    }), a(c.exports, 'default', function() {
+        return _k;
     });
-    var e = a('9tz3H'),
-        f = a('/pbxo'),
-        g = a('I35Ay'),
-        h = a('PG64O');
-    class i extends g.default {
-        constructor(_j) {
-            super(_j), (0, e.isPublishedVersion)() || (0, f.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(h.BaseAsset));
+    var f = b('hycyg'),
+        g = b('UkCpC'),
+        h = b('ltxDW'),
+        i = b('7Wt8E');
+    class j extends h.default {
+        constructor(k) {
+            super(k), (0, f.isPublishedVersion)() || (0, g.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(i.BaseAsset));
         }
     }
-    var _j = i;
-}), a.register('PG64O', function(b, c) {
-    e(b.exports, 'BaseAsset', function() {
-        return _d;
+    var _k = j;
+}), b.register('7Wt8E', function(c, d) {
+    a(c.exports, 'BaseAsset', function() {
+        return _e;
     });
-    const _d = {
+    const _e = {
         imageId: 'assignment_context_device',
-        imageUrl: (0, a('2Xvuf').default)('devices/assignment_context/search.png')
+        imageUrl: (0, b('UaUBz0').default)('devices/assignment_context/search.png')
     };
 });

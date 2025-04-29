@@ -7,215 +7,215 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('5drJf', function(b, c) {
-    _j(b.exports, 'EncryptData', function() {
-        return _h;
-    }), _j(b.exports, 'DecryptData', function() {
-        return _i;
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('yK0U7', function(d, e) {
+    a(d.exports, 'EncryptData', function() {
+        return _j;
+    }), a(d.exports, 'DecryptData', function() {
+        return _k;
     });
-    const d = new Map(),
-        e = new Map(),
-        f = new Map();
-    let g = 1;
-    const _h = (_j, b) => {
-            const i = (() => {
-                const _j = g.toString();
-                return g++, _j;
+    const f = new Map(),
+        g = new Map(),
+        h = new Map();
+    let i = 1;
+    const _j = (a, d) => {
+            const k = (() => {
+                const l = i.toString();
+                return i++, l;
             })();
-            if (b) {
-                const j = d.get(b);
-                j && (f.delete(j), e.set(j, i)), d.set(b, i);
+            if (d) {
+                const l = f.get(d);
+                l && (h.delete(l), g.set(l, k)), f.set(d, k);
             }
-            return f.set(i, _G), i;
+            return h.set(k, a), k;
         },
-        _i = _G => {
-            if (!_G)
+        _k = a => {
+            if (!a)
                 return;
-            const j = e.get(_G);
-            return j ? _i(j) : f.get(_G);
+            const l = g.get(a);
+            return l ? _k(l) : h.get(a);
         };
-}), a.register('9fFDn', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _z;
+}), c.register('6BXeU', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _B;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('2x11J'),
-        h = a('Lwb9P'),
-        i = a('XZe6/'),
-        j = a('TwXYL'),
-        k = a('gk6FN'),
-        l = a('VS/cl'),
-        m = a('t4/iW'),
-        n = a('kOSsb'),
-        o = a('dt9Wz'),
-        p = a('L1szR'),
-        q = a('B7Zhl'),
-        r = a('gwrMQ'),
-        s = a('4RTv9'),
-        t = a('5drJf');
-    let u, v, w, x = _G => _G;
-    var y;
-    (y = w || (w = {})).questions = 'questions', y.response = 'response';
-    var _z = (0, g.observer)(_G => {
-        const [A, B] = _T(e).useState(!1), [C, D] = _T(e).useState(w.questions), [E, F] = _T(e).useState(!1), [G, H] = _T(e).useState(_G.ecc), [I, J] = _T(e).useState(), K = (0, k.useMotionValue)('0%'), L = (0, k.useMotionValue)(1), M = (0, k.useMotionValue)(_G.disableFadeInOnMount ? 1 : 0);
-        _T(e).useEffect(() => {
-            J(_G.ecc);
-        }, [_G.ecc]), _T(e).useEffect(() => {
-            G || H(_G.ecc);
-        }, [_G.ecc]);
-        const N = _T(e).useMemo(() => {
-                if (G)
-                    return (0, t.DecryptData)(G);
-            }, [G]),
-            O = _T(e).useMemo(() => {
-                if (N)
-                    return (0, t.EncryptData)(N.answers, `${ N._id }-answers`);
-            }, [N]);
-        _T(e).useEffect(() => (_G.onMount && _G.onMount(), _G.disableFadeInOnMount || (0, h.animate)(M, 1, {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('6jmvl'),
+        j = c('I7f6M'),
+        k = c('TixUC'),
+        l = c('9aZ6t'),
+        m = c('P6MZO'),
+        n = c('vE576'),
+        o = c('vhKeC'),
+        p = c('svlca'),
+        q = c('eoj6K'),
+        r = c('nmUvl'),
+        s = c('LqE9u'),
+        t = c('wxy92'),
+        u = c('VJDaA'),
+        v = c('yK0U7');
+    let w, x, y, z = a => a;
+    var A;
+    (A = y || (y = {})).questions = 'questions', A.response = 'response';
+    var _B = (0, i.observer)(a => {
+        const [C, D] = b(g).useState(!1), [E, F] = b(g).useState(y.questions), [G, H] = b(g).useState(!1), [I, J] = b(g).useState(a.ecc), [K, L] = b(g).useState(), M = (0, m.useMotionValue)('0%'), N = (0, m.useMotionValue)(1), O = (0, m.useMotionValue)(a.disableFadeInOnMount ? 1 : 0);
+        b(g).useEffect(() => {
+            L(a.ecc);
+        }, [a.ecc]), b(g).useEffect(() => {
+            I || J(a.ecc);
+        }, [a.ecc]);
+        const P = b(g).useMemo(() => {
+                if (I)
+                    return (0, v.DecryptData)(I);
+            }, [I]),
+            Q = b(g).useMemo(() => {
+                if (P)
+                    return (0, v.EncryptData)(P.answers, `${ P._id }-answers`);
+            }, [P]);
+        b(g).useEffect(() => (a.onMount && a.onMount(), a.disableFadeInOnMount || (0, j.animate)(O, 1, {
             duration: 0.25,
             delay: 0.01,
             ease: 'easeOut'
         }), () => {
-            n.default.stop();
-        }), []), _T(e).useEffect(() => {
-            o.default.readToMe.enabled = _G.readToMeEnabled || !1, C === w.response ? n.default.stop() : C === w.questions && G && n.default.play(N);
+            p.default.stop();
+        }), []), b(g).useEffect(() => {
+            q.default.readToMe.enabled = a.readToMeEnabled || !1, E === y.response ? p.default.stop() : E === y.questions && I && p.default.play(P);
         }, [
-            _G.readToMeEnabled,
-            C
+            a.readToMeEnabled,
+            E
         ]);
-        const P = _T => {
-                if (!E) {
-                    _G.onActionSound && _G.onActionSound.play(), F(!0);
-                    const Q = _G.onQuestionAnswered(_T);
-                    (0, h.animate)(K, '100%', {
+        const R = b => {
+                if (!G) {
+                    a.onActionSound && a.onActionSound.play(), H(!0);
+                    const S = a.onQuestionAnswered(b);
+                    (0, j.animate)(M, '100%', {
                         ease: 'easeIn',
                         duration: 0.23,
                         onComplete: () => {
-                            F(!1), (_T => {
-                                var R, S;
-                                _T ? null === (R = _G.correctSound) || void 0 === R || R.play() : null === (S = _G.incorrectSound) || void 0 === S || S.play();
-                            })(Q), _G.nextQuestion && _G.nextQuestion(), _Q();
+                            H(!1), (b => {
+                                var T, U;
+                                b ? null === (T = a.correctSound) || void 0 === T || T.play() : null === (U = a.incorrectSound) || void 0 === U || U.play();
+                            })(S), a.nextQuestion && a.nextQuestion(), _S();
                         }
                     });
                 }
             },
-            _Q = () => {
-                n.default.stop(), L.set(0), _G.beforeOpenAnswerResponse && _G.beforeOpenAnswerResponse(), D(w.response), (0, h.animate)(L, 1, {
+            _S = () => {
+                p.default.stop(), N.set(0), a.beforeOpenAnswerResponse && a.beforeOpenAnswerResponse(), F(y.response), (0, j.animate)(N, 1, {
                     duration: 0.3,
-                    onUpdate: _G => {
-                        !A && _G >= 0.3 * 0.75 && B(!0);
+                    onUpdate: a => {
+                        !C && a >= 0.3 * 0.75 && D(!0);
                     }
                 });
             },
-            R = () => {
-                K.set('0%'), B(!1), n.default.stop(), _G.continueAction && _G.continueAction(), H(I), D(w.questions), M.set(0), (0, h.animate)(M, 1, {
+            T = () => {
+                M.set('0%'), D(!1), p.default.stop(), a.continueAction && a.continueAction(), J(K), F(y.questions), O.set(0), (0, j.animate)(O, 1, {
                     duration: 0.2
                 });
             },
-            S = () => {
-                var _T;
-                const U = {
-                    background: (null == _G || null === (_T = _G.continueButtonColor) || void 0 === _T ? void 0 : _T.background) || q.default.response.continue.background,
+            U = () => {
+                var V;
+                const W = {
+                    background: (null == a || null === (V = a.continueButtonColor) || void 0 === V ? void 0 : V.background) || s.default.response.continue.background,
                     text: 'Continue',
                     handleClick: () => {
-                        R();
+                        T();
                     }
                 };
-                return _G.responseActions ? [
-                    ..._G.responseActions,
-                    U
-                ] : [U];
+                return a.responseActions ? [
+                    ...a.responseActions,
+                    W
+                ] : [W];
             };
-        return (0, d.jsx)(i.AnimatePresence, {
+        return (0, f.jsx)(k.AnimatePresence, {
             mode: 'wait',
-            children: C === w.questions ? G ? (0, d.jsxs)(r.default, {
-                opacity: M,
-                yPosition: K,
-                defaultBackgroundColor: _G.defaultBackgroundColor || q.default.defaultBackground,
+            children: E === y.questions ? I ? (0, f.jsxs)(t.default, {
+                opacity: O,
+                yPosition: M,
+                defaultBackgroundColor: a.defaultBackgroundColor || s.default.defaultBackground,
                 children: [
-                    (0, d.jsx)(_A, {
-                        questionColor: _G.questionColor || q.default.question,
-                        children: (0, d.jsx)(l.default, {
-                            text: null == N ? void 0 : N.text,
-                            image: null == N ? void 0 : N.image,
-                            audio: null == N ? void 0 : N.audio,
-                            latex: null == N ? void 0 : N.latex,
-                            allowGoogleTranslate: _G.allowGoogleTranslate
+                    (0, f.jsx)(_C, {
+                        questionColor: a.questionColor || s.default.question,
+                        children: (0, f.jsx)(n.default, {
+                            text: null == P ? void 0 : P.text,
+                            image: null == P ? void 0 : P.image,
+                            audio: null == P ? void 0 : P.audio,
+                            latex: null == P ? void 0 : P.latex,
+                            allowGoogleTranslate: a.allowGoogleTranslate
                         })
                     }),
-                    (0, d.jsx)(m.default, {
-                        onQuestionAnswered: P,
-                        eas: O,
-                        type: (null == N ? void 0 : N.type) || s.QuestionType.multipleChoice,
-                        blockKeyboardEvent: _G.blockKeyboardEvents || !1,
-                        allowGoogleTranslate: _G.allowGoogleTranslate || !1,
-                        language: _G.language || 'en',
-                        translations: _G.translations || {},
-                        answerColors: _G.answerColors || q.default.palette,
-                        desktopBreakpoint: _G.desktopBreakpoint || q.default.desktopBreakpoint,
-                        defaultBackgroundColor: _G.defaultBackgroundColor || q.default.defaultBackground,
-                        textInputButtonColor: _G.textInputButtonColor || q.default.palette[2]
+                    (0, f.jsx)(o.default, {
+                        onQuestionAnswered: R,
+                        eas: Q,
+                        type: (null == P ? void 0 : P.type) || u.QuestionType.multipleChoice,
+                        blockKeyboardEvent: a.blockKeyboardEvents || !1,
+                        allowGoogleTranslate: a.allowGoogleTranslate || !1,
+                        language: a.language || 'en',
+                        translations: a.translations || {},
+                        answerColors: a.answerColors || s.default.palette,
+                        desktopBreakpoint: a.desktopBreakpoint || s.default.desktopBreakpoint,
+                        defaultBackgroundColor: a.defaultBackgroundColor || s.default.defaultBackground,
+                        textInputButtonColor: a.textInputButtonColor || s.default.palette[2]
                     })
                 ]
-            }) : _G.noQuestionContent || null : (0, d.jsx)(_B, {
+            }) : a.noQuestionContent || null : (0, f.jsx)(_D, {
                 style: {
-                    opacity: L
+                    opacity: N
                 },
-                children: (0, d.jsx)(p.default, {
-                    canAdvanceToQuestions: A,
-                    correctAnswer: _G.lastQuestionCorrectAnswer,
-                    continueToQuestions: R,
-                    blockKeyboardEvents: _G.blockKeyboardEvents,
-                    lastQuestionCorrect: _G.lastQuestionAnsweredCorrect || !1,
-                    actions: S(),
-                    lastQuestion: _G.lastQuestion,
-                    allowGoogleTranslate: _G.allowGoogleTranslate || !1,
-                    textShownWhenAnsweringCorrectly: _G.textShownWhenAnsweringCorrectly || 'Correct!',
-                    textShownWhenAnsweringIncorrectly: _G.textShownWhenAnsweringIncorrectly || 'Incorrect!',
-                    customCorrectTextAnimation: _G.customCorrectTextAnimation,
-                    language: _G.language || 'en',
-                    translations: _G.translations || {},
-                    desktopBreakpoint: _G.desktopBreakpoint || q.default.desktopBreakpoint,
-                    defaultBackgroundColor: _G.defaultBackgroundColor || q.default.defaultBackground,
-                    correctAnswerColor: _G.correctAnswerColor || q.default.response.correctAnswer,
-                    incorrectAnswerColor: _G.incorrectAnswerColor || q.default.response.incorrectAnswer,
-                    continueButtonColor: _G.continueButtonColor || q.default.response.continue,
-                    onActionSound: _G.onActionSound,
-                    onLockedChange: _G.onLockedChange
+                children: (0, f.jsx)(r.default, {
+                    canAdvanceToQuestions: C,
+                    correctAnswer: a.lastQuestionCorrectAnswer,
+                    continueToQuestions: T,
+                    blockKeyboardEvents: a.blockKeyboardEvents,
+                    lastQuestionCorrect: a.lastQuestionAnsweredCorrect || !1,
+                    actions: U(),
+                    lastQuestion: a.lastQuestion,
+                    allowGoogleTranslate: a.allowGoogleTranslate || !1,
+                    textShownWhenAnsweringCorrectly: a.textShownWhenAnsweringCorrectly || 'Correct!',
+                    textShownWhenAnsweringIncorrectly: a.textShownWhenAnsweringIncorrectly || 'Incorrect!',
+                    customCorrectTextAnimation: a.customCorrectTextAnimation,
+                    language: a.language || 'en',
+                    translations: a.translations || {},
+                    desktopBreakpoint: a.desktopBreakpoint || s.default.desktopBreakpoint,
+                    defaultBackgroundColor: a.defaultBackgroundColor || s.default.defaultBackground,
+                    correctAnswerColor: a.correctAnswerColor || s.default.response.correctAnswer,
+                    incorrectAnswerColor: a.incorrectAnswerColor || s.default.response.incorrectAnswer,
+                    continueButtonColor: a.continueButtonColor || s.default.response.continue,
+                    onActionSound: a.onActionSound,
+                    onLockedChange: a.onLockedChange
                 })
             })
         });
     });
-    const _A = f.default.div(u || (u = x`
+    const _C = h.default.div(w || (w = z`
   color: ${ 0 };
   height: 35%;
   background-color: ${ 0 };
-`), _G => _G.questionColor.text, _G => _G.questionColor.background),
-        _B = (0, f.default)(j.motion.div)(v || (v = x`
+`), a => a.questionColor.text, a => a.questionColor.background),
+        _D = (0, h.default)(l.motion.div)(x || (x = z`
   width: 100%;
   height: 100%;
   will-change: opacity;
 `));
-}), a.register('VS/cl', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _n;
+}), c.register('vE576', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _p;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('2x11J'),
-        h = a('w8Dki'),
-        i = a('VSAwN'),
-        j = a('T4lH8'),
-        k = a('Rh1i7');
-    let l;
-    const m = f.default.div(l || (l = (_G => _G)`
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('6jmvl'),
+        j = c('NevzH'),
+        k = c('LBV5W'),
+        l = c('YBABi'),
+        m = c('aqRRN');
+    let n;
+    const o = h.default.div(n || (n = (a => a)`
   height: 100%;
   width: 100%;
   display: flex;
@@ -223,112 +223,112 @@ a.register('5drJf', function(b, c) {
   align-items: center;
   text-align: left;
 `));
-    var _n = (0, g.observer)(_G => {
+    var _p = (0, i.observer)(a => {
         const {
-            readToMe: o
-        } = e.useContext(k.default), {
-            text: p,
-            image: q,
-            audio: r,
-            latex: s
-        } = _G;
-        return (0, d.jsx)(m, {
-            children: p ? q || r || s ? (0, d.jsx)(j.default, {
-                text: p,
-                image: q,
-                latex: s,
-                audio: r,
-                highlighted: o.currentlyPlayingQuestionText,
-                allowGoogleTranslate: _G.allowGoogleTranslate || !1
-            }) : (0, d.jsx)(i.default, {
-                text: p,
-                highlighted: o.currentlyPlayingQuestionText,
-                allowGoogleTranslate: _G.allowGoogleTranslate
-            }) : (0, d.jsx)(h.default, {
-                image: q,
-                latex: s,
-                audio: r
+            readToMe: q
+        } = g.useContext(m.default), {
+            text: r,
+            image: s,
+            audio: t,
+            latex: u
+        } = a;
+        return (0, f.jsx)(o, {
+            children: r ? s || t || u ? (0, f.jsx)(l.default, {
+                text: r,
+                image: s,
+                latex: u,
+                audio: t,
+                highlighted: q.currentlyPlayingQuestionText,
+                allowGoogleTranslate: a.allowGoogleTranslate || !1
+            }) : (0, f.jsx)(k.default, {
+                text: r,
+                highlighted: q.currentlyPlayingQuestionText,
+                allowGoogleTranslate: a.allowGoogleTranslate
+            }) : (0, f.jsx)(j.default, {
+                image: s,
+                latex: u,
+                audio: t
             })
         });
     });
-}), a.register('Rh1i7', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _f;
+}), c.register('aqRRN', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
     });
-    var d = a('LEQ5w'),
-        e = a('dt9Wz');
-    var _f = _j(d).createContext(e.default);
-}), a.register('t4/iW', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _s;
+    var f = c('O0Kav'),
+        g = c('eoj6K');
+    var _h = b(f).createContext(g.default);
+}), c.register('vhKeC', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _u;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('2x11J'),
-        h = a('zuCKH'),
-        i = a('48Ui0'),
-        j = a('XNA/m'),
-        k = a('dt9Wz'),
-        l = a('Rh1i7'),
-        m = a('BXKZi0'),
-        n = a('4RTv9'),
-        o = a('5drJf'),
-        p = a('fe6E3');
-    let q;
-    const r = [
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('6jmvl'),
+        j = c('L7wUt'),
+        k = c('FZat4'),
+        l = c('ug03q'),
+        m = c('eoj6K'),
+        n = c('aqRRN'),
+        o = c('bQWYI'),
+        p = c('VJDaA'),
+        q = c('yK0U7'),
+        r = c('9zaF+');
+    let s;
+    const t = [
         49,
         50,
         51,
         52
     ];
-    var _s = (0, g.observer)(_G => {
-        const [t, u] = _j(e).useState(!0), [v, w] = _j(e).useState(), {
-            readToMe: x
-        } = _j(e).useContext(l.default), y = _j(e).useRef(null), [z] = (0, m.default)(y), A = _j(e).useMemo(() => (0, p.take)((0, o.DecryptData)(_G.eas), 4), []);
-        if (_j(e).useEffect(() => {
-                v && _G.onQuestionAnswered(v);
-            }, [v]), _G.type === n.QuestionType.textInput)
-            return (0, d.jsx)(_t, {
-                defaultBackgroundColor: _G.defaultBackgroundColor,
-                children: (0, d.jsx)(i.default, {
-                    language: _G.language,
-                    translations: _G.translations,
-                    onQuestionAnswered: _G.onQuestionAnswered,
-                    buttonColor: _G.textInputButtonColor
+    var _u = (0, i.observer)(a => {
+        const [v, w] = b(g).useState(!0), [x, y] = b(g).useState(), {
+            readToMe: z
+        } = b(g).useContext(n.default), A = b(g).useRef(null), [B] = (0, o.default)(A), C = b(g).useMemo(() => (0, r.take)((0, q.DecryptData)(a.eas), 4), []);
+        if (b(g).useEffect(() => {
+                x && a.onQuestionAnswered(x);
+            }, [x]), a.type === p.QuestionType.textInput)
+            return (0, f.jsx)(_v, {
+                defaultBackgroundColor: a.defaultBackgroundColor,
+                children: (0, f.jsx)(k.default, {
+                    language: a.language,
+                    translations: a.translations,
+                    onQuestionAnswered: a.onQuestionAnswered,
+                    buttonColor: a.textInputButtonColor
                 })
             });
-        const B = A.some(_G => !(!_G || !_G.image)),
-            C = _G => {
-                u(!1), w(_G);
+        const D = C.some(a => !(!a || !a.image)),
+            E = a => {
+                w(!1), y(a);
             };
-        return (0, d.jsx)(_t, {
-            ref: y,
-            defaultBackgroundColor: _G.defaultBackgroundColor,
-            children: A.map((_j, u) => (0, d.jsx)(h.default, {
-                id: _j._id,
-                position: u,
-                canAnswer: t,
-                keyCode: r[u],
-                gridView: B,
-                onQuestionAnswered: C,
-                answer: _j._id,
-                blockKeyboardEvent: _G.blockKeyboardEvent,
-                answerColors: _G.answerColors,
-                containerWidth: z,
-                desktopBreakpoint: _G.desktopBreakpoint,
-                answerCount: A.length,
-                children: (0, d.jsx)(j.default, {
-                    allowGoogleTranslate: _G.allowGoogleTranslate,
-                    text: _j.text,
-                    image: _j.image,
-                    latex: _j.latex,
-                    highlighted: x.currentlyPlayingAnswerAudio && u === k.default.readToMe.answerIndex
+        return (0, f.jsx)(_v, {
+            ref: A,
+            defaultBackgroundColor: a.defaultBackgroundColor,
+            children: C.map((b, w) => (0, f.jsx)(j.default, {
+                id: b._id,
+                position: w,
+                canAnswer: v,
+                keyCode: t[w],
+                gridView: D,
+                onQuestionAnswered: E,
+                answer: b._id,
+                blockKeyboardEvent: a.blockKeyboardEvent,
+                answerColors: a.answerColors,
+                containerWidth: B,
+                desktopBreakpoint: a.desktopBreakpoint,
+                answerCount: C.length,
+                children: (0, f.jsx)(l.default, {
+                    allowGoogleTranslate: a.allowGoogleTranslate,
+                    text: b.text,
+                    image: b.image,
+                    latex: b.latex,
+                    highlighted: z.currentlyPlayingAnswerAudio && w === m.default.readToMe.answerIndex
                 })
-            }, u))
+            }, w))
         });
     });
-    const _t = f.default.div(q || (q = (_G => _G)`
+    const _v = h.default.div(s || (s = (a => a)`
   background: ${ 0 };
   height: 65%;
   width: 100%;
@@ -336,73 +336,73 @@ a.register('5drJf', function(b, c) {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-`), _G => _G.defaultBackgroundColor);
-}), a.register('zuCKH', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _l;
+`), a => a.defaultBackgroundColor);
+}), c.register('L7wUt', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _n;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('GT7Vh'),
-        h = a('G8w+m');
-    let i, j, k = _G => _G;
-    var _l = _G => {
-        _j(e).useEffect(() => (document.addEventListener('keydown', b), () => document.removeEventListener('keydown', b)), []);
-        const m = _j => {
-                if (!_G.canAnswer)
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('SAYZy'),
+        j = c('5oXbu');
+    let k, l, m = a => a;
+    var _n = a => {
+        b(g).useEffect(() => (document.addEventListener('keydown', d), () => document.removeEventListener('keydown', d)), []);
+        const o = b => {
+                if (!a.canAnswer)
                     return;
-                (0, h.clickHandler)(_j, () => {
-                    _G.onQuestionAnswered(_G.answer);
+                (0, j.clickHandler)(b, () => {
+                    a.onQuestionAnswered(a.answer);
                 });
             },
-            n = _j => {
-                if (_G.blockKeyboardEvent)
+            p = b => {
+                if (a.blockKeyboardEvent)
                     return;
                 const {
-                    keyCode: o
-                } = _j;
-                o === _G.keyCode && m(_j);
+                    keyCode: q
+                } = b;
+                q === a.keyCode && o(b);
             },
-            o = _G.containerWidth >= _G.desktopBreakpoint,
-            p = _j(e).useMemo(() => 4 === _G.answerCount ? _G.gridView || o ? {
+            q = a.containerWidth >= a.desktopBreakpoint,
+            r = b(g).useMemo(() => 4 === a.answerCount ? a.gridView || q ? {
                 height: 50,
                 width: 50
             } : {
                 height: 25,
                 width: 100
-            } : o ? {
-                width: 100 / _G.answerCount,
+            } : q ? {
+                width: 100 / a.answerCount,
                 height: 100
             } : {
                 width: 100,
-                height: 100 / _G.answerCount
+                height: 100 / a.answerCount
             }, [
-                _G.answerCount,
-                o,
-                _G.gridView
+                a.answerCount,
+                q,
+                a.gridView
             ]);
-        return (0, d.jsx)(_m, {
-            onClick: m,
-            gridView: _G.gridView,
-            isOnDesktop: o,
-            heightPercentage: p.height,
-            widthPercentage: p.width,
-            children: (0, d.jsx)(_n, {
-                position: _G.position,
-                answerColors: _G.answerColors,
-                isOnDesktop: o,
-                children: _G.children
+        return (0, f.jsx)(_o, {
+            onClick: o,
+            gridView: a.gridView,
+            isOnDesktop: q,
+            heightPercentage: r.height,
+            widthPercentage: r.width,
+            children: (0, f.jsx)(_p, {
+                position: a.position,
+                answerColors: a.answerColors,
+                isOnDesktop: q,
+                children: a.children
             })
         });
     };
-    const _m = f.default.div(i || (i = k`
+    const _o = h.default.div(k || (k = m`
   text-align: center;
   height: ${ 0 }%;
   width: ${ 0 }%;
   cursor: pointer;
-`), _G => _G.heightPercentage, _G => _G.widthPercentage),
-        _n = f.default.div(j || (j = k`
+`), a => a.heightPercentage, a => a.widthPercentage),
+        _p = h.default.div(l || (l = m`
   width: 100%;
   height: 100%;
   display: flex;
@@ -416,59 +416,59 @@ a.register('5drJf', function(b, c) {
   border-width: 6px;
   border-style: solid;
   ${ 0 }
-`), _G => _G.answerColors[_G.position].background, _G => _G.answerColors[_G.position].text, _G => _G.isOnDesktop && `\n    transition: background 0.18s ease-in-out;\n    &:hover {\n      background: ${ (0, g.lighten)(0.1, _G.answerColors[_G.position].background) };\n    }\n  `);
-}), a.register('48Ui0', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _p;
+`), a => a.answerColors[a.position].background, a => a.answerColors[a.position].text, a => a.isOnDesktop && `\n    transition: background 0.18s ease-in-out;\n    &:hover {\n      background: ${ (0, i.lighten)(0.1, a.answerColors[a.position].background) };\n    }\n  `);
+}), c.register('FZat4', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _r;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('GT7Vh'),
-        h = a('GOPeW'),
-        i = a('fCxtw'),
-        j = a('5PMl8');
-    let k, l, m, n, o = _G => _G;
-    var _p = _G => {
-        const [q, r] = _j(e).useState(''), [s, t] = _j(e).useState(!0), u = () => {
-            q && s && (t(!1), _G.onQuestionAnswered(q));
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('SAYZy'),
+        j = c('yN978'),
+        k = c('44iM224'),
+        l = c('nBT0U');
+    let m, n, o, p, q = a => a;
+    var _r = a => {
+        const [s, t] = b(g).useState(''), [u, v] = b(g).useState(!0), w = () => {
+            s && u && (v(!1), a.onQuestionAnswered(s));
         };
-        return (0, d.jsxs)(_q, {
+        return (0, f.jsxs)(_s, {
             children: [
-                (0, d.jsx)(_r, {
-                    onSubmit: _G => {
-                        _G.preventDefault(), u();
+                (0, f.jsx)(_t, {
+                    onSubmit: a => {
+                        a.preventDefault(), w();
                     },
-                    children: (0, d.jsx)(_s, {
+                    children: (0, f.jsx)(_u, {
                         autoFocus: !0,
-                        value: q,
-                        onChange: _G => {
-                            r(_G.target.value);
+                        value: s,
+                        onChange: a => {
+                            t(a.target.value);
                         },
                         placeholder: 'Enter answer here...'
                     })
                 }),
-                (0, d.jsx)(_t, {
-                    buttonColor: _G.buttonColor,
-                    onClick: u,
-                    children: (0, d.jsx)(h.default, {
-                        language: _G.language,
-                        translations: _G.translations,
+                (0, f.jsx)(_v, {
+                    buttonColor: a.buttonColor,
+                    onClick: w,
+                    children: (0, f.jsx)(j.default, {
+                        language: a.language,
+                        translations: a.translations,
                         text: 'Submit'
                     })
                 })
             ]
         });
     };
-    const _q = f.default.div(k || (k = o`
+    const _s = h.default.div(m || (m = q`
   height: 100%;
   width: 100%;
 `)),
-        _r = f.default.form(l || (l = o`
+        _t = h.default.form(n || (n = q`
   height: 55%;
   width: 100%;
 `)),
-        _s = f.default.input(m || (m = o`
+        _u = h.default.input(o || (o = q`
   padding-left: 15px;
   padding-right: 15px;
   font-size: 27px;
@@ -480,8 +480,8 @@ a.register('5drJf', function(b, c) {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-`), i.default.DisabledGray, i.default.Black, j.default.name),
-        _t = f.default.div(n || (n = o`
+`), k.default.DisabledGray, k.default.Black, l.default.name),
+        _v = h.default.div(p || (p = q`
   box-sizing: border-box;
   border-color: rgba(0, 0, 0, 0.3);
   border-width: 6px;
@@ -500,40 +500,40 @@ a.register('5drJf', function(b, c) {
   display: flex;
   justify-content: center;
   align-items: center;
-`), _G => _G.buttonColor.background, _G => _G.buttonColor.text, _G => (0, g.lighten)(0.1, _G.buttonColor.background));
-}), a.register('GOPeW', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _g;
+`), a => a.buttonColor.background, a => a.buttonColor.text, a => (0, i.lighten)(0.1, a.buttonColor.background));
+}), c.register('yN978', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('PMl60');
-    var _g = _G => {
-        const [h, i] = _j(e).useState(_G.text);
-        _j(e).useEffect(() => {
-            _G.text !== h && (i(_G.text), 'en' !== _G.language && (_G.disableIfContains && _G.text.includes(_G.disableIfContains) || (_G.translations && _G.translations[_G.text] ? i(_G.translations[_G.text]) : (0, f.request)({
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('quE27');
+    var _i = a => {
+        const [j, k] = b(g).useState(a.text);
+        b(g).useEffect(() => {
+            a.text !== j && (k(a.text), 'en' !== a.language && (a.disableIfContains && a.text.includes(a.disableIfContains) || (a.translations && a.translations[a.text] ? k(a.translations[a.text]) : (0, h.request)({
                 url: '',
                 data: {
-                    to: _G.language,
-                    text: _G.text
+                    to: a.language,
+                    text: a.text
                 },
-                success: _j => {
-                    i(_j), _G.translations[_G.text] = _j;
+                success: b => {
+                    k(b), a.translations[a.text] = b;
                 }
             }))));
-        }, [_G.text]);
-        return (0, d.jsx)(d.Fragment, {
+        }, [a.text]);
+        return (0, f.jsx)(f.Fragment, {
             children: (() => {
-                let _j = h;
-                return _G.suffix && (_j += _G.suffix), _j;
+                let l = j;
+                return a.suffix && (l += a.suffix), l;
             })()
         });
     };
-}), a.register('fCxtw', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _d;
+}), c.register('44iM224', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         White: 'white',
         Black: 'black',
         BackgroundGray: '#eeeeee',
@@ -543,265 +543,265 @@ a.register('5drJf', function(b, c) {
         LightSuccessGreen: '#6abf69',
         DarkSuccessGreen: '#2e7d32'
     };
-}), a.register('5PMl8', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _e;
+}), c.register('nBT0U', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _g;
     });
-    const d = '"Product Sans"';
-    var _e = {
-        mainFontName: d,
-        name: `${ d }, sans-serif`,
-        important: `${ d }, sans-serif !important`
+    const f = '"Product Sans"';
+    var _g = {
+        mainFontName: f,
+        name: `${ f }, sans-serif`,
+        important: `${ f }, sans-serif !important`
     };
-}), a.register('XNA/m', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _i;
+}), c.register('ug03q', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('x8CoD'),
-        f = a('JtnSG'),
-        g = a('X133d'),
-        h = a('G8w+m');
-    var _i = _G => (0, d.jsxs)(d.Fragment, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('HloXO'),
+        h = c('JuRCP'),
+        i = c('F3ltk'),
+        j = c('5oXbu');
+    var _k = a => (0, f.jsxs)(f.Fragment, {
         children: [
-            _G.text && (0, d.jsx)(g.default, {
+            a.text && (0, f.jsx)(i.default, {
                 mode: 'multi',
-                text: (0, h.parseText)(_G.allowGoogleTranslate, _G.text),
-                paddingVertical: _G.customTextHorizontalPadding || 7,
-                paddingHorizontal: _G.customTextHorizontalPadding,
-                max: _G.customMaxTextSize || 25,
-                highlighted: _G.highlighted
+                text: (0, j.parseText)(a.allowGoogleTranslate, a.text),
+                paddingVertical: a.customTextHorizontalPadding || 7,
+                paddingHorizontal: a.customTextHorizontalPadding,
+                max: a.customMaxTextSize || 25,
+                highlighted: a.highlighted
             }),
-            _G.image && (0, d.jsx)('img', {
-                src: (0, e.getCloudinaryUrl)(_G.image),
+            a.image && (0, f.jsx)('img', {
+                src: (0, g.getCloudinaryUrl)(a.image),
                 alt: 'Answer Choice',
                 style: {
-                    maxHeight: _G.customImageHeight || '90%',
-                    height: _G.customImageHeight || '90%',
-                    maxWidth: _G.customImageWidth || '90%',
+                    maxHeight: a.customImageHeight || '90%',
+                    height: a.customImageHeight || '90%',
+                    maxWidth: a.customImageWidth || '90%',
                     borderRadius: 4,
                     objectFit: 'contain'
                 }
             }),
-            _G.latex && (0, d.jsx)(g.default, {
-                text: (0, d.jsx)(f.default, {
-                    latex: _G.latex
+            a.latex && (0, f.jsx)(i.default, {
+                text: (0, f.jsx)(h.default, {
+                    latex: a.latex
                 }),
-                paddingVertical: _G.customTextHorizontalPadding || 7,
-                paddingHorizontal: _G.customTextHorizontalPadding,
-                max: _G.customMaxTextSize || 25,
+                paddingVertical: a.customTextHorizontalPadding || 7,
+                paddingHorizontal: a.customTextHorizontalPadding,
+                max: a.customMaxTextSize || 25,
                 noBold: !0
             })
         ]
     });
-}), a.register('L1szR', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _g;
+}), c.register('nmUvl', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('uZVWk'),
-        f = a('IZuTz');
-    var _g = _G => _G.lastQuestionCorrect ? (0, d.jsx)(e.default, {
-        textShownWhenAnsweringCorrectly: _G.textShownWhenAnsweringCorrectly,
-        customCorrectTextAnimation: _G.customCorrectTextAnimation,
-        onActionSound: _G.onActionSound,
-        language: _G.language,
-        translations: _G.translations,
-        allowGoogleTranslate: _G.allowGoogleTranslate,
-        continueToQuestions: _G.continueToQuestions,
-        actions: _G.actions,
-        desktopBreakpoint: _G.desktopBreakpoint,
-        defaultBackgroundColor: _G.defaultBackgroundColor,
-        correctAnswerColor: _G.correctAnswerColor,
-        blockKeyboardEvents: _G.blockKeyboardEvents,
-        canAdvanceToQuestions: _G.canAdvanceToQuestions
-    }) : (0, d.jsx)(f.default, {
-        textShownWhenAnsweringIncorrectly: _G.textShownWhenAnsweringIncorrectly,
-        lastQuestion: _G.lastQuestion,
-        onActionSound: _G.onActionSound,
-        language: _G.language,
-        translations: _G.translations,
-        allowGoogleTranslate: _G.allowGoogleTranslate,
-        desktopBreakpoint: _G.desktopBreakpoint,
-        canAdvanceToQuestions: _G.canAdvanceToQuestions,
-        blockKeyboardEvents: _G.blockKeyboardEvents,
-        continueToQuestions: _G.continueToQuestions,
-        incorrectAnswerColor: _G.incorrectAnswerColor,
-        continueButtonColor: _G.continueButtonColor,
-        onLockedChange: _G.onLockedChange
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('/LKaM'),
+        h = c('VXpkP');
+    var _i = a => a.lastQuestionCorrect ? (0, f.jsx)(g.default, {
+        textShownWhenAnsweringCorrectly: a.textShownWhenAnsweringCorrectly,
+        customCorrectTextAnimation: a.customCorrectTextAnimation,
+        onActionSound: a.onActionSound,
+        language: a.language,
+        translations: a.translations,
+        allowGoogleTranslate: a.allowGoogleTranslate,
+        continueToQuestions: a.continueToQuestions,
+        actions: a.actions,
+        desktopBreakpoint: a.desktopBreakpoint,
+        defaultBackgroundColor: a.defaultBackgroundColor,
+        correctAnswerColor: a.correctAnswerColor,
+        blockKeyboardEvents: a.blockKeyboardEvents,
+        canAdvanceToQuestions: a.canAdvanceToQuestions
+    }) : (0, f.jsx)(h.default, {
+        textShownWhenAnsweringIncorrectly: a.textShownWhenAnsweringIncorrectly,
+        lastQuestion: a.lastQuestion,
+        onActionSound: a.onActionSound,
+        language: a.language,
+        translations: a.translations,
+        allowGoogleTranslate: a.allowGoogleTranslate,
+        desktopBreakpoint: a.desktopBreakpoint,
+        canAdvanceToQuestions: a.canAdvanceToQuestions,
+        blockKeyboardEvents: a.blockKeyboardEvents,
+        continueToQuestions: a.continueToQuestions,
+        incorrectAnswerColor: a.incorrectAnswerColor,
+        continueButtonColor: a.continueButtonColor,
+        onLockedChange: a.onLockedChange
     });
-}), a.register('uZVWk', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _k;
+}), c.register('/LKaM', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _m;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('fCxtw'),
-        h = a('kV0aj'),
-        i = a('CRlOT');
-    let j;
-    var _k = _G => {
-        e.useEffect(() => (document.addEventListener('keydown', b), () => {
-            document.removeEventListener('keydown', b);
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('44iM224'),
+        j = c('zHshV'),
+        k = c('g4tw8');
+    let l;
+    var _m = a => {
+        g.useEffect(() => (document.addEventListener('keydown', d), () => {
+            document.removeEventListener('keydown', d);
         }), [
-            _G.canAdvanceToQuestions,
-            _G.blockKeyboardEvents
+            a.canAdvanceToQuestions,
+            a.blockKeyboardEvents
         ]);
-        const l = l => {
-            _G.blockKeyboardEvents || l.key && 'Enter' === l.key && _G.canAdvanceToQuestions && _G.continueToQuestions();
+        const n = n => {
+            a.blockKeyboardEvents || n.key && 'Enter' === n.key && a.canAdvanceToQuestions && a.continueToQuestions();
         };
-        return (0, d.jsxs)(_l, {
-            defaultBackgroundColor: _G.defaultBackgroundColor,
+        return (0, f.jsxs)(_n, {
+            defaultBackgroundColor: a.defaultBackgroundColor,
             children: [
-                (0, d.jsx)(h.default, {
-                    textShownWhenAnsweringCorrectly: _G.textShownWhenAnsweringCorrectly,
-                    customCorrectTextAnimation: _G.customCorrectTextAnimation,
-                    correctAnswerColor: _G.correctAnswerColor
+                (0, f.jsx)(j.default, {
+                    textShownWhenAnsweringCorrectly: a.textShownWhenAnsweringCorrectly,
+                    customCorrectTextAnimation: a.customCorrectTextAnimation,
+                    correctAnswerColor: a.correctAnswerColor
                 }),
-                (0, d.jsx)(i.default, {
-                    actions: _G.actions,
-                    language: _G.language,
-                    translations: _G.translations,
-                    desktopBreakpoint: _G.desktopBreakpoint,
-                    onActionSound: _G.onActionSound
+                (0, f.jsx)(k.default, {
+                    actions: a.actions,
+                    language: a.language,
+                    translations: a.translations,
+                    desktopBreakpoint: a.desktopBreakpoint,
+                    onActionSound: a.onActionSound
                 })
             ]
         });
     };
-    const _l = f.default.div.attrs({
+    const _n = h.default.div.attrs({
         className: 'flex-column maxAll'
-    })(j || (j = (_G => _G)`
+    })(l || (l = (a => a)`
   color: ${ 0 };
   background: ${ 0 };
-`), g.default.White, _G => _G.defaultBackgroundColor);
-}), a.register('kV0aj', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _h;
+`), i.default.White, a => a.defaultBackgroundColor);
+}), c.register('zHshV', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _j;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('JFnsU');
-    let g;
-    var _h = _G => (0, d.jsx)(_i, {
-        backgroundColor: _G.correctAnswerColor.background,
-        children: (0, d.jsx)(f.default, {
-            textShownWhenAnsweringCorrectly: _G.textShownWhenAnsweringCorrectly,
-            customCorrectTextAnimation: _G.customCorrectTextAnimation,
-            textColor: _G.correctAnswerColor.text
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('N6uNU');
+    let i;
+    var _j = a => (0, f.jsx)(_k, {
+        backgroundColor: a.correctAnswerColor.background,
+        children: (0, f.jsx)(h.default, {
+            textShownWhenAnsweringCorrectly: a.textShownWhenAnsweringCorrectly,
+            customCorrectTextAnimation: a.customCorrectTextAnimation,
+            textColor: a.correctAnswerColor.text
         })
     });
-    const _i = e.default.div.attrs({
+    const _k = g.default.div.attrs({
         className: 'maxWidth flex-center'
-    })(g || (g = (_G => _G)`
+    })(i || (i = (a => a)`
   height: 40%;
   background: ${ 0 };
-`), _G => _G.backgroundColor);
-}), a.register('JFnsU', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _i;
+`), a => a.backgroundColor);
+}), c.register('N6uNU', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('X133d');
-    let h;
-    var _i = _G => {
-        const j = _G.textColor,
-            k = _b(e).useMemo(() => _G.textShownWhenAnsweringCorrectly, []);
-        return (0, d.jsx)(_j, {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('F3ltk');
+    let j;
+    var _k = a => {
+        const l = a.textColor,
+            m = b(g).useMemo(() => a.textShownWhenAnsweringCorrectly, []);
+        return (0, f.jsx)(_l, {
             style: {
-                color: j,
-                animationDuration: `${ _G.customCorrectTextAnimation && _G.customCorrectTextAnimation.duration ? _G.customCorrectTextAnimation.duration : 1 }s`
+                color: l,
+                animationDuration: `${ a.customCorrectTextAnimation && a.customCorrectTextAnimation.duration ? a.customCorrectTextAnimation.duration : 1 }s`
             },
-            className: _G.customCorrectTextAnimation && _G.customCorrectTextAnimation.className ? _G.customCorrectTextAnimation.className : 'animated tada',
-            children: (0, d.jsx)(g.default, {
+            className: a.customCorrectTextAnimation && a.customCorrectTextAnimation.className ? a.customCorrectTextAnimation.className : 'animated tada',
+            children: (0, f.jsx)(i.default, {
                 max: 170,
                 mode: 'single',
-                text: k
+                text: m
             })
         });
     };
-    const _j = f.default.div.attrs({
+    const _l = h.default.div.attrs({
         className: 'maxAll flex-center'
-    })(h || (h = (_G => _G)``));
-}), a.register('CRlOT', function(_b, c) {
-    _G(_b.exports, 'default', function() {
-        return _h;
+    })(j || (j = (a => a)``));
+}), c.register('g4tw8', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _j;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('Tbo7T');
-    let g;
-    var _h = _G => {
-        const i = 1 / _G.actions.length * 100;
-        return (0, d.jsx)(_i, {
-            children: _G.actions.filter(_G => null !== _G).map(a => (0, d.jsx)(f.default, {
-                ...a,
-                heightPercentage: i,
-                language: _G.language,
-                translations: _G.translations,
-                desktopBreakpoint: _G.desktopBreakpoint,
-                onActionSound: _G.onActionSound
-            }, a.text))
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('o0yh2');
+    let i;
+    var _j = a => {
+        const k = 1 / a.actions.length * 100;
+        return (0, f.jsx)(_k, {
+            children: a.actions.filter(a => null !== a).map(c => (0, f.jsx)(h.default, {
+                ...c,
+                heightPercentage: k,
+                language: a.language,
+                translations: a.translations,
+                desktopBreakpoint: a.desktopBreakpoint,
+                onActionSound: a.onActionSound
+            }, c.text))
         });
     };
-    const _i = e.default.div.attrs({
+    const _k = g.default.div.attrs({
         className: 'maxWidth'
-    })(g || (g = (_G => _G)`
+    })(i || (i = (a => a)`
   height: 60%;
   text-align: center;
 `));
-}), a.register('Tbo7T', function(b, c) {
-    _G(b.exports, 'GimkitLiveActionItemContainer', function() {
-        return _p;
-    }), _G(b.exports, 'default', function() {
-        return _o;
+}), c.register('o0yh2', function(d, e) {
+    a(d.exports, 'GimkitLiveActionItemContainer', function() {
+        return _r;
+    }), a(d.exports, 'default', function() {
+        return _q;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('GT7Vh'),
-        h = a('5yDn4'),
-        i = a('GOPeW'),
-        j = a('X133d'),
-        k = a('fCxtw'),
-        l = a('G8w+m'),
-        m = a('BXKZi0');
-    let n;
-    var _o = _G => {
-        const p = _r(e).useRef(null),
-            [q] = (0, m.default)(p);
-        return (0, d.jsx)(h.default, {
-            onClick: _r => {
-                (0, l.clickHandler)(_r, () => {
-                    var _r;
-                    null === (_r = _G.onActionSound) || void 0 === _r || _r.play(), _G.handleClick && _G.handleClick();
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('SAYZy'),
+        j = c('03TT2'),
+        k = c('yN978'),
+        l = c('F3ltk'),
+        m = c('44iM224'),
+        n = c('5oXbu'),
+        o = c('bQWYI');
+    let p;
+    var _q = a => {
+        const r = b(g).useRef(null),
+            [s] = (0, o.default)(r);
+        return (0, f.jsx)(j.default, {
+            onClick: b => {
+                (0, n.clickHandler)(b, () => {
+                    var t;
+                    null === (t = a.onActionSound) || void 0 === t || t.play(), a.handleClick && a.handleClick();
                 });
             },
-            children: (0, d.jsx)(_p, {
-                ref: p,
-                background: _G.background,
-                heightPercentage: _G.heightPercentage,
-                isOnDesktop: q >= _G.desktopBreakpoint,
-                children: (0, d.jsx)(j.default, {
-                    text: (0, d.jsx)(i.default, {
-                        language: _G.language,
-                        translations: _G.translations,
-                        text: _G.text
+            children: (0, f.jsx)(_r, {
+                ref: r,
+                background: a.background,
+                heightPercentage: a.heightPercentage,
+                isOnDesktop: s >= a.desktopBreakpoint,
+                children: (0, f.jsx)(l.default, {
+                    text: (0, f.jsx)(k.default, {
+                        language: a.language,
+                        translations: a.translations,
+                        text: a.text
                     }),
                     max: 40
                 })
             })
         });
     };
-    const _p = f.default.div.attrs({
+    const _r = h.default.div.attrs({
         className: 'flex-center maxWidth'
-    })(n || (n = (_G => _G)`
+    })(p || (p = (a => a)`
   height: ${ 0 }%;
   background: ${ 0 };
   color: ${ 0 };
@@ -811,151 +811,151 @@ a.register('5drJf', function(b, c) {
   border-style: solid;
   cursor: pointer;
   ${ 0 }
-`), _G => _G.heightPercentage, _G => _G.background, k.default.White, _G => _G.isOnDesktop && `transition: background 0.15s;\n    &:hover {\n      background: ${ (0, g.lighten)(0.1, _G.background) };\n    }\n\n  `);
-}), a.register('5yDn4', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _e;
+`), a => a.heightPercentage, a => a.background, m.default.White, a => a.isOnDesktop && `transition: background 0.15s;\n    &:hover {\n      background: ${ (0, i.lighten)(0.1, a.background) };\n    }\n\n  `);
+}), c.register('03TT2', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _g;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var _e = _G => (0, d.jsx)('span', {
-        onClick: b => {
-            _G.onClick && _G.onClick(b);
+    var f = c('gRbUn');
+    c('O0Kav');
+    var _g = a => (0, f.jsx)('span', {
+        onClick: d => {
+            a.onClick && a.onClick(d);
         },
-        children: _G.children
+        children: a.children
     });
-}), a.register('IZuTz', function(b, c) {
-    _G(b.exports, 'default', function() {
-        return _q;
+}), c.register('VXpkP', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _s;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('XZe6/'),
-        g = a('6oezR'),
-        h = a('v8zOW'),
-        i = a('BXKZi0'),
-        j = a('kOROi'),
-        k = a('DNhpF'),
-        l = a('ASvPU'),
-        m = a('xE/yE'),
-        n = a('GT7Vh');
-    let o;
-    var p;
-    (p = o || (o = {})).message = 'message', p.answer = 'answer';
-    var _q = _G => {
-        const [r, s] = e.useState(o.message), t = e.useRef(null), [u, v] = (0, i.default)(t), w = e.useRef(null), [x, y] = (0, i.default)(w), z = e.useMemo(() => _G.secondsToWaitBeforeContinue ? _G.secondsToWaitBeforeContinue : 3, [_G.secondsToWaitBeforeContinue]), A = e.useMemo(() => _G.lastQuestion ? _G.lastQuestion.answers.find(_G => _G.correct) : null, [_G.lastQuestion]);
-        (0, j.useTimeoutWhen)(() => {
-            s(o.answer);
-        }, _G.showCorrectAnswerAfterMs || 800);
-        const B = e.useMemo(() => r === o.message ? _G.incorrectAnswerColor.background : (0, n.lighten)(0.2, _G.incorrectAnswerColor.background), [
-                r,
-                _G.incorrectAnswerColor.background
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('TixUC'),
+        i = c('+rvox'),
+        j = c('EnE5G'),
+        k = c('bQWYI'),
+        l = c('6TqRT'),
+        m = c('gH6oQ'),
+        n = c('FSqWA'),
+        o = c('506Y0'),
+        p = c('SAYZy');
+    let q;
+    var r;
+    (r = q || (q = {})).message = 'message', r.answer = 'answer';
+    var _s = a => {
+        const [t, u] = g.useState(q.message), v = g.useRef(null), [w, x] = (0, k.default)(v), y = g.useRef(null), [z, A] = (0, k.default)(y), B = g.useMemo(() => a.secondsToWaitBeforeContinue ? a.secondsToWaitBeforeContinue : 3, [a.secondsToWaitBeforeContinue]), C = g.useMemo(() => a.lastQuestion ? a.lastQuestion.answers.find(a => a.correct) : null, [a.lastQuestion]);
+        (0, l.useTimeoutWhen)(() => {
+            u(q.answer);
+        }, a.showCorrectAnswerAfterMs || 800);
+        const D = g.useMemo(() => t === q.message ? a.incorrectAnswerColor.background : (0, p.lighten)(0.2, a.incorrectAnswerColor.background), [
+                t,
+                a.incorrectAnswerColor.background
             ]),
-            C = e.useMemo(() => r === o.message, [r]),
-            D = e.useMemo(() => r === o.answer, [r]),
-            E = e.useMemo(() => v * h.default.marginPercentage, [v]),
-            F = e.useMemo(() => {
-                const _G = h.default.textHeightPercentage * v / y,
-                    H = u * h.default.maxTextWidthPercentage / x;
-                return Math.min(_G, H);
+            E = g.useMemo(() => t === q.message, [t]),
+            F = g.useMemo(() => t === q.answer, [t]),
+            G = g.useMemo(() => x * j.default.marginPercentage, [x]),
+            H = g.useMemo(() => {
+                const I = j.default.textHeightPercentage * x / A,
+                    J = w * j.default.maxTextWidthPercentage / z;
+                return Math.min(I, J);
             }, [
-                v,
-                y,
                 x,
-                u
+                A,
+                z,
+                w
             ]),
-            G = e.useMemo(() => {
-                if (C)
+            I = g.useMemo(() => {
+                if (E)
                     return 0;
-                let H = -v / 2;
-                return H += y * F / 2, H += E, H;
+                let J = -x / 2;
+                return J += A * H / 2, J += G, J;
             }, [
-                C,
-                v,
-                F,
-                y,
-                E
-            ]),
-            H = e.useMemo(() => v - y * F - v * h.default.marginPercentage * 2, [
-                v,
-                y,
-                F
-            ]),
-            I = e.useMemo(() => H - v * h.default.continueButtonHeightPercentage - E, [
+                E,
+                x,
                 H,
-                v,
-                E
+                A,
+                G
             ]),
-            J = e.useMemo(() => v * h.default.continueButtonHeightPercentage, [v]);
-        e.useEffect(() => (_m.onLockedChange && _m.onLockedChange(!0), () => {
-            _m.onLockedChange && _m.onLockedChange(!1);
-        }), [_m.onLockedChange]);
-        return (0, d.jsx)(f.AnimatePresence, {
+            J = g.useMemo(() => x - A * H - x * j.default.marginPercentage * 2, [
+                x,
+                A,
+                H
+            ]),
+            K = g.useMemo(() => J - x * j.default.continueButtonHeightPercentage - G, [
+                J,
+                x,
+                G
+            ]),
+            L = g.useMemo(() => x * j.default.continueButtonHeightPercentage, [x]);
+        g.useEffect(() => (a.onLockedChange && a.onLockedChange(!0), () => {
+            a.onLockedChange && a.onLockedChange(!1);
+        }), [a.onLockedChange]);
+        return (0, f.jsx)(h.AnimatePresence, {
             mode: 'wait',
-            children: (0, d.jsx)(g.Container, {
+            children: (0, f.jsx)(i.Container, {
                 animate: {
-                    background: B
+                    background: D
                 },
                 transition: {
                     duration: 0.3
                 },
-                ref: t,
-                children: (0, d.jsxs)(g.Content, {
+                ref: v,
+                children: (0, f.jsxs)(i.Content, {
                     style: {
-                        color: _m.incorrectAnswerColor.text
+                        color: a.incorrectAnswerColor.text
                     },
                     children: [
-                        (0, d.jsx)(g.TextContainer, {
+                        (0, f.jsx)(i.TextContainer, {
                             style: {
-                                marginTop: G
+                                marginTop: I
                             },
-                            children: (0, d.jsx)(g.AnimatedText, {
+                            children: (0, f.jsx)(i.AnimatedText, {
                                 layout: !0,
                                 animate: {
-                                    scale: C ? 1 : F,
-                                    opacity: C ? 1 : 0.8
+                                    scale: E ? 1 : H,
+                                    opacity: E ? 1 : 0.8
                                 },
-                                children: (0, d.jsx)(k.default, {
+                                children: (0, f.jsx)(m.default, {
                                     max: 170,
                                     mode: 'single',
-                                    text: (0, d.jsx)('div', {
-                                        ref: w,
-                                        children: _m.textShownWhenAnsweringIncorrectly
+                                    text: (0, f.jsx)('div', {
+                                        ref: y,
+                                        children: a.textShownWhenAnsweringIncorrectly
                                     })
                                 })
                             })
                         }),
-                        D ? (0, d.jsx)(g.BottomContainer, {
+                        F ? (0, f.jsx)(i.BottomContainer, {
                             style: {
-                                marginTop: G,
-                                height: H,
+                                marginTop: I,
+                                height: J,
                                 overflow: 'hidden'
                             },
-                            children: (0, d.jsxs)(g.AnimatedBottomContent, {
+                            children: (0, f.jsxs)(i.AnimatedBottomContent, {
                                 children: [
-                                    (0, d.jsx)(l.default, {
-                                        containerWidth: u,
-                                        containerHeight: v,
-                                        answerBoxHeight: I,
-                                        margin: E,
-                                        correctAnswer: A,
-                                        allowGoogleTranslate: _m.allowGoogleTranslate,
-                                        language: _m.language,
-                                        translations: _m.translations
+                                    (0, f.jsx)(n.default, {
+                                        containerWidth: w,
+                                        containerHeight: x,
+                                        answerBoxHeight: K,
+                                        margin: G,
+                                        correctAnswer: C,
+                                        allowGoogleTranslate: a.allowGoogleTranslate,
+                                        language: a.language,
+                                        translations: a.translations
                                     }),
-                                    (0, d.jsx)(m.default, {
-                                        continueButtonHeight: J,
-                                        containerWidth: u,
-                                        secondsToWait: z,
-                                        continueToQuestions: _m.continueToQuestions,
-                                        desktopBreakpoint: _m.desktopBreakpoint,
-                                        language: _m.language,
-                                        translations: _m.translations,
-                                        onActionSound: _m.onActionSound,
-                                        continueButtonColor: _m.continueButtonColor,
-                                        blockKeyboardEvents: _m.blockKeyboardEvents,
-                                        canAdvanceToQuestions: _m.canAdvanceToQuestions,
-                                        onLockedChange: _m.onLockedChange
+                                    (0, f.jsx)(o.default, {
+                                        continueButtonHeight: L,
+                                        containerWidth: w,
+                                        secondsToWait: B,
+                                        continueToQuestions: a.continueToQuestions,
+                                        desktopBreakpoint: a.desktopBreakpoint,
+                                        language: a.language,
+                                        translations: a.translations,
+                                        onActionSound: a.onActionSound,
+                                        continueButtonColor: a.continueButtonColor,
+                                        blockKeyboardEvents: a.blockKeyboardEvents,
+                                        canAdvanceToQuestions: a.canAdvanceToQuestions,
+                                        onLockedChange: a.onLockedChange
                                     })
                                 ]
                             })
@@ -965,65 +965,65 @@ a.register('5drJf', function(b, c) {
             })
         });
     };
-}), a.register('6oezR', function(b, c) {
-    _m(b.exports, 'Container', function() {
-        return _w;
-    }), _m(b.exports, 'Content', function() {
-        return _x;
-    }), _m(b.exports, 'TextContainer', function() {
+}), c.register('+rvox', function(d, e) {
+    a(d.exports, 'Container', function() {
         return _y;
-    }), _m(b.exports, 'AnimatedText', function() {
+    }), a(d.exports, 'Content', function() {
         return _z;
-    }), _m(b.exports, 'BottomContainer', function() {
+    }), a(d.exports, 'TextContainer', function() {
         return _A;
-    }), _m(b.exports, 'AnimatedBottomContent', function() {
+    }), a(d.exports, 'AnimatedText', function() {
         return _B;
-    }), _m(b.exports, 'AnswerBox', function() {
+    }), a(d.exports, 'BottomContainer', function() {
         return _C;
-    }), _m(b.exports, 'CorrectAnswerLabelContainer', function() {
+    }), a(d.exports, 'AnimatedBottomContent', function() {
         return _D;
-    }), _m(b.exports, 'CorrectAnswerLabel', function() {
+    }), a(d.exports, 'AnswerBox', function() {
         return _E;
-    }), _m(b.exports, 'AnswerContainer', function() {
+    }), a(d.exports, 'CorrectAnswerLabelContainer', function() {
         return _F;
-    }), _m(b.exports, 'AnswerButtonAreaContainer', function() {
+    }), a(d.exports, 'CorrectAnswerLabel', function() {
         return _G;
-    }), _m(b.exports, 'AnswerButtonProgressBar', function() {
+    }), a(d.exports, 'AnswerContainer', function() {
         return _H;
-    }), _m(b.exports, 'ActionButtonContainer', function() {
+    }), a(d.exports, 'AnswerButtonAreaContainer', function() {
         return _I;
-    }), _m(b.exports, 'ActionButtonContent', function() {
+    }), a(d.exports, 'AnswerButtonProgressBar', function() {
         return _J;
-    }), _m(b.exports, 'ActionButtonTextFitContent', function() {
+    }), a(d.exports, 'ActionButtonContainer', function() {
         return _K;
+    }), a(d.exports, 'ActionButtonContent', function() {
+        return _L;
+    }), a(d.exports, 'ActionButtonTextFitContent', function() {
+        return _M;
     });
-    var d = a('TwXYL'),
-        e = a('Axq+p'),
-        f = a('b5kvC');
-    let g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v = _m => _m;
-    const _w = (0, e.default)(d.motion.div).attrs({
+    var f = c('9aZ6t'),
+        g = c('u4s09'),
+        h = c('Eh2Wh');
+    let i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x = a => a;
+    const _y = (0, g.default)(f.motion.div).attrs({
             className: 'maxAll'
-        })(g || (g = v`
+        })(i || (i = x`
   overflow: hidden;
 `)),
-        _x = e.default.div.attrs({
+        _z = g.default.div.attrs({
             className: 'maxAll animated headShake'
-        })(h || (h = v``)),
-        _y = e.default.div.attrs({
+        })(j || (j = x``)),
+        _A = g.default.div.attrs({
             className: 'maxAll flex-center animated fadeIn'
-        })(i || (i = v``)),
-        _z = (0, e.default)(d.motion.div).attrs({
+        })(k || (k = x``)),
+        _B = (0, g.default)(f.motion.div).attrs({
             layout: !0
-        })(j || (j = v`
+        })(l || (l = x`
   width: 90%;
   height: 80%;
 `)),
-        _A = e.default.div.attrs({
+        _C = g.default.div.attrs({
             className: 'maxWidth'
-        })(k || (k = v`
+        })(m || (m = x`
   text-align: center;
 `)),
-        _B = (0, e.default)(d.motion.div).attrs({
+        _D = (0, g.default)(f.motion.div).attrs({
             className: 'maxWidth maxHeight',
             layout: !0,
             animate: {
@@ -1035,37 +1035,37 @@ a.register('5drJf', function(b, c) {
             initial: {
                 opacity: 0
             }
-        })(l || (l = v``)),
-        _C = e.default.div.attrs({
+        })(n || (n = x``)),
+        _E = g.default.div.attrs({
             className: 'maxAll flex flex-column'
-        })(m || (m = v`
+        })(o || (o = x`
   background: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
 `)),
-        _D = e.default.div.attrs({
+        _F = g.default.div.attrs({
             className: 'maxWidth'
-        })(n || (n = v`
+        })(p || (p = x`
   background: rgba(0, 0, 0, 0.2);
   padding: 16px;
 `)),
-        _E = e.default.div(o || (o = v`
+        _G = g.default.div(q || (q = x`
   font-size: 22px;
   opacity: 0.7;
   font-weight: ${ 0 };
   font-style: italic;
-`), f.FontWeights.Normal),
-        _F = e.default.div(p || (p = v`
+`), h.FontWeights.Normal),
+        _H = g.default.div(r || (r = x`
   flex: 1;
   overflow: hidden;
 `)),
-        _G = e.default.div.attrs({
+        _I = g.default.div.attrs({
             className: 'maxWidth'
-        })(q || (q = v`
+        })(s || (s = x`
   position: relative;
   background: gray;
 `)),
-        _H = (0, e.default)(d.motion.div).attrs({
+        _J = (0, g.default)(f.motion.div).attrs({
             animate: {
                 width: '100%'
             },
@@ -1073,134 +1073,134 @@ a.register('5drJf', function(b, c) {
                 width: '0%'
             },
             className: 'maxHeight'
-        })(r || (r = v`
+        })(t || (t = x`
   position: absolute;
   top: 0;
 `)),
-        _I = e.default.div.attrs({
+        _K = g.default.div.attrs({
             className: 'maxAll'
-        })(s || (s = v`
+        })(u || (u = x`
   position: absolute;
   top: 0;
 `)),
-        _J = e.default.div.attrs({
+        _L = g.default.div.attrs({
             className: 'maxAll'
-        })(t || (t = v``)),
-        _K = e.default.div.attrs({
+        })(v || (v = x``)),
+        _M = g.default.div.attrs({
             className: 'flex vc'
-        })(u || (u = v``));
-}), a.register('v8zOW', function(b, c) {
-    _m(b.exports, 'default', function() {
-        return _d;
+        })(w || (w = x``));
+}), c.register('EnE5G', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         textHeightPercentage: 0.08,
         maxTextWidthPercentage: 0.5,
         marginPercentage: 0.04,
         continueButtonHeightPercentage: 0.3
     };
-}), a.register('DNhpF', function(b, c) {
-    _m(b.exports, 'default', function() {
-        return _m;
+}), c.register('gH6oQ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _o;
     });
-    var d = a('1bFPu'),
-        e = a('0hzx+'),
-        f = a('LEQ5w'),
-        g = a('86aCL'),
-        h = a('Axq+p');
-    let i;
-    const j = {
+    var f = c('s/YA9'),
+        g = c('gRbUn'),
+        h = c('O0Kav'),
+        i = c('DbXyp'),
+        j = c('u4s09');
+    let k;
+    const l = {
             backgroundColor: 'rgba(255,255,31, 0.21)',
             boxShadow: '10px 0 0 rgba(255,255,31, 0.21), -10px 0 0 rgba(255,255,31, 0.21)',
             borderRadius: 9
         },
-        k = h.default.div(i || (i = (_m => _m)`
+        m = j.default.div(k || (k = (a => a)`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
 `));
-    class l extends _n(f).Component {
+    class n extends b(h).Component {
             render() {
                 const {
-                    paddingHorizontal: _m,
-                    paddingVertical: _n,
-                    ...o
+                    paddingHorizontal: o,
+                    paddingVertical: p,
+                    ...q
                 } = this.props;
-                return delete o.text, delete o.highlighted, (0, e.jsx)(k, {
+                return delete q.text, delete q.highlighted, (0, g.jsx)(m, {
                     className: this.props.customClass,
                     style: this.props.customStyle,
-                    children: (0, e.jsx)(g.Textfit, {
+                    children: (0, g.jsx)(i.Textfit, {
                         style: {
                             height: '100%',
                             width: '100%',
                             display: 'flex',
                             justifyContent: this.props.disableHorizontalCentering ? 'flex-start' : 'center',
                             alignItems: 'center',
-                            paddingTop: _n,
-                            paddingBottom: _n,
-                            paddingLeft: this.props.paddingLeft || _m,
-                            paddingRight: _m,
+                            paddingTop: p,
+                            paddingBottom: p,
+                            paddingLeft: this.props.paddingLeft || o,
+                            paddingRight: o,
                             boxSizing: 'border-box',
                             fontWeight: this.props.noBold ? 'normal' : 900
                         },
-                        ...o,
-                        children: (0, e.jsx)('div', {
-                            style: this.props.highlighted ? j : void 0,
+                        ...q,
+                        children: (0, g.jsx)('div', {
+                            style: this.props.highlighted ? l : void 0,
                             children: this.props.text
                         })
                     })
                 });
             }
         }
-        (0, d.default)(l, 'defaultProps', {
+        (0, f.default)(n, 'defaultProps', {
             paddingHorizontal: '6%',
             paddingVertical: 15,
             max: 50,
             mode: 'single',
             forceSingleModeWidth: !1
         });
-    var _m = l;
-}), a.register('ASvPU', function(b, c) {
-    _h(b.exports, 'default', function() {
-        return _h;
+    var _o = n;
+}), c.register('FSqWA', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _j;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('pNn9U'),
-        f = a('XNA/m'),
-        g = a('6oezR');
-    var _h = _h => (0, d.jsxs)(g.AnswerBox, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('pjbax'),
+        h = c('ug03q'),
+        i = c('+rvox');
+    var _j = a => (0, f.jsxs)(i.AnswerBox, {
         style: {
-            height: _h.answerBoxHeight,
-            marginBottom: _h.margin,
+            height: a.answerBoxHeight,
+            marginBottom: a.margin,
             borderRadius: 10,
-            marginLeft: _h.margin,
-            width: _h.containerWidth - 2 * _h.margin
+            marginLeft: a.margin,
+            width: a.containerWidth - 2 * a.margin
         },
         children: [
-            (0, d.jsx)(g.CorrectAnswerLabelContainer, {
-                children: (0, d.jsxs)(g.CorrectAnswerLabel, {
+            (0, f.jsx)(i.CorrectAnswerLabelContainer, {
+                children: (0, f.jsxs)(i.CorrectAnswerLabel, {
                     children: [
-                        (0, d.jsx)(e.default, {
+                        (0, f.jsx)(g.default, {
                             text: 'Correct Answer',
-                            language: _h.language,
-                            translations: _h.translations
+                            language: a.language,
+                            translations: a.translations
                         }),
                         ':'
                     ]
                 })
             }),
-            (0, d.jsx)(g.AnswerContainer, {
+            (0, f.jsx)(i.AnswerContainer, {
                 style: {
-                    padding: `${ Math.max(0.1 * _h.containerHeight, 30) }px ${ Math.max(0.1 * _h.containerWidth, 30) }px`
+                    padding: `${ Math.max(0.1 * a.containerHeight, 30) }px ${ Math.max(0.1 * a.containerWidth, 30) }px`
                 },
-                children: (0, d.jsx)(f.default, {
-                    allowGoogleTranslate: _h.allowGoogleTranslate,
-                    text: _h.correctAnswer ? _h.correctAnswer.text : 'No Correct Answer',
-                    image: _h.correctAnswer ? _h.correctAnswer.image : void 0,
-                    latex: _h.correctAnswer ? _h.correctAnswer.latex : void 0,
+                children: (0, f.jsx)(h.default, {
+                    allowGoogleTranslate: a.allowGoogleTranslate,
+                    text: a.correctAnswer ? a.correctAnswer.text : 'No Correct Answer',
+                    image: a.correctAnswer ? a.correctAnswer.image : void 0,
+                    latex: a.correctAnswer ? a.correctAnswer.latex : void 0,
                     customTextHorizontalPadding: '0px',
                     customTextVerticalPadding: '0px',
                     customImageHeight: '100%',
@@ -1210,16 +1210,16 @@ a.register('5drJf', function(b, c) {
             })
         ]
     });
-}), a.register('pNn9U', function(b, c) {
-    _h(b.exports, 'default', function() {
-        return _h;
+}), c.register('pjbax', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _j;
     });
-    var d = a('1bFPu'),
-        e = a('LEQ5w'),
-        f = a('bgvr8');
-    class g extends _b(e).Component {
-        componentDidUpdate(_h) {
-            _h.text !== this.props.text && (this.setState({
+    var f = c('s/YA9'),
+        g = c('O0Kav'),
+        h = c('qDc0h');
+    class i extends b(g).Component {
+        componentDidUpdate(j) {
+            j.text !== this.props.text && (this.setState({
                 text: this.props.text
             }), this.onTranslate());
         }
@@ -1230,132 +1230,132 @@ a.register('5drJf', function(b, c) {
             if ('en' !== this.props.language && !this.props.text.includes(this.props.disableIfContains))
                 return this.props.translations && this.props.translations[this.props.text] ? this.setState({
                     text: this.props.translations[this.props.text]
-                }) : void this.requestTranslation().then(_h => {
-                    this.props.translations[this.props.text] = _h, this.setState({
-                        text: _h
+                }) : void this.requestTranslation().then(a => {
+                    this.props.translations[this.props.text] = a, this.setState({
+                        text: a
                     });
                 }).catch();
         }
         render() {
             return this.buildString();
         }
-        constructor(..._h) {
-            super(..._h), (0, d.default)(this, 'state', {
+        constructor(...a) {
+            super(...a), (0, f.default)(this, 'state', {
                 text: this.props.text
-            }), (0, d.default)(this, 'buildString', () => {
-                let _h = this.state.text;
-                return this.props.suffix && (_h += this.props.suffix), _h;
-            }), (0, d.default)(this, 'requestTranslation', async () => {
+            }), (0, f.default)(this, 'buildString', () => {
+                let j = this.state.text;
+                return this.props.suffix && (j += this.props.suffix), j;
+            }), (0, f.default)(this, 'requestTranslation', async () => {
                 try {
-                    return (await f.default.post('/api/translate', {
+                    return (await h.default.post('/api/translate', {
                         to: this.props.language,
                         text: this.props.text
                     })).data;
-                } catch (_v) {
+                } catch (a) {
                     return this.props.text;
                 }
             });
         }
     }
-    var _h = g;
-}), a.register('xE/yE', function(_b, c) {
-    _v(_b.exports, 'default', function() {
-        return _l;
+    var _j = i;
+}), c.register('506Y0', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _n;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('DNhpF'),
-        g = a('Tbo7T'),
-        h = a('6oezR'),
-        i = a('TwXYL'),
-        j = a('PMl60'),
-        k = a('mLNYZ');
-    var _l = _v => {
-        const [m, n] = (0, j.useBoolean)(!1), [o, p] = e.useState(_v.secondsToWait), q = e.useMemo(() => _v.canAdvanceToQuestions && o > 0, [
-            o,
-            _v.canAdvanceToQuestions
-        ]);
-        e.useEffect(() => {
-            _v.onLockedChange && _v.onLockedChange(q);
-        }, [
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('gH6oQ'),
+        i = c('o0yh2'),
+        j = c('+rvox'),
+        k = c('9aZ6t'),
+        l = c('quE27'),
+        m = c('2wWWD');
+    var _n = a => {
+        const [o, p] = (0, l.useBoolean)(!1), [q, r] = g.useState(a.secondsToWait), s = g.useMemo(() => a.canAdvanceToQuestions && q > 0, [
             q,
-            _v.onLockedChange
+            a.canAdvanceToQuestions
         ]);
-        const r = (0, k.default)({
-                text: 'Continue',
-                language: _v.language,
-                translations: _v.translations
-            }),
-            s = e.useCallback(() => {
-                q || _v.continueToQuestions();
-            }, [
-                _v.continueToQuestions,
-                q
-            ]),
-            t = e.useCallback(m => {
-                _v.blockKeyboardEvents || m.key && 'Enter' === m.key && s();
-            }, [
-                _v.blockKeyboardEvents,
-                s
-            ]);
-        e.useEffect(() => (document.addEventListener('keydown', t), () => {
-            document.removeEventListener('keydown', t);
-        }), [t]);
-        const u = e.useCallback(() => {
-            var v;
-            q || (null === (v = _v.onActionSound) || void 0 === v || v.play(), s());
+        g.useEffect(() => {
+            a.onLockedChange && a.onLockedChange(s);
         }, [
-            q,
             s,
-            _v.onActionSound
+            a.onLockedChange
         ]);
-        return e.useEffect(() => {
-            if (m && o) {
-                const _v = setTimeout(() => {
-                    p(o - 1);
+        const t = (0, m.default)({
+                text: 'Continue',
+                language: a.language,
+                translations: a.translations
+            }),
+            u = g.useCallback(() => {
+                s || a.continueToQuestions();
+            }, [
+                a.continueToQuestions,
+                s
+            ]),
+            v = g.useCallback(o => {
+                a.blockKeyboardEvents || o.key && 'Enter' === o.key && u();
+            }, [
+                a.blockKeyboardEvents,
+                u
+            ]);
+        g.useEffect(() => (document.addEventListener('keydown', v), () => {
+            document.removeEventListener('keydown', v);
+        }), [v]);
+        const w = g.useCallback(() => {
+            var x;
+            s || (null === (x = a.onActionSound) || void 0 === x || x.play(), u());
+        }, [
+            s,
+            u,
+            a.onActionSound
+        ]);
+        return g.useEffect(() => {
+            if (o && q) {
+                const x = setTimeout(() => {
+                    r(q - 1);
                 }, 1000);
-                return () => clearTimeout(_v);
+                return () => clearTimeout(x);
             }
             return () => null;
         }, [
-            m,
-            o
-        ]), (0, d.jsxs)(h.AnswerButtonAreaContainer, {
+            o,
+            q
+        ]), (0, f.jsxs)(j.AnswerButtonAreaContainer, {
             style: {
-                height: e.continueButtonHeight
+                height: a.continueButtonHeight
             },
             children: [
-                (0, d.jsx)(h.AnswerButtonProgressBar, {
+                (0, f.jsx)(j.AnswerButtonProgressBar, {
                     style: {
-                        background: e.continueButtonColor.background
+                        background: a.continueButtonColor.background
                     },
                     transition: {
-                        duration: e.secondsToWait,
+                        duration: a.secondsToWait,
                         ease: 'linear'
                     },
-                    onAnimationStart: n
+                    onAnimationStart: p
                 }),
-                (0, d.jsx)(h.ActionButtonContainer, {
-                    children: (0, d.jsx)(g.GimkitLiveActionItemContainer, {
+                (0, f.jsx)(j.ActionButtonContainer, {
+                    children: (0, f.jsx)(i.GimkitLiveActionItemContainer, {
                         heightPercentage: 100,
-                        isOnDesktop: e.containerWidth >= e.desktopBreakpoint,
-                        background: o ? 'transparent' : e.continueButtonColor.background,
+                        isOnDesktop: a.containerWidth >= a.desktopBreakpoint,
+                        background: q ? 'transparent' : a.continueButtonColor.background,
                         style: {
-                            cursor: o ? 'not-allowed' : 'pointer',
-                            color: e.continueButtonColor.text
+                            cursor: q ? 'not-allowed' : 'pointer',
+                            color: a.continueButtonColor.text
                         },
-                        onClick: u,
-                        children: (0, d.jsx)(h.ActionButtonContent, {
-                            children: (0, d.jsx)(f.default, {
-                                text: (0, d.jsxs)(h.ActionButtonTextFitContent, {
+                        onClick: w,
+                        children: (0, f.jsx)(j.ActionButtonContent, {
+                            children: (0, f.jsx)(h.default, {
+                                text: (0, f.jsxs)(j.ActionButtonTextFitContent, {
                                     children: [
-                                        (0, d.jsx)('div', {
-                                            children: r
+                                        (0, f.jsx)('div', {
+                                            children: t
                                         }),
-                                        (0, d.jsxs)(i.motion.div, {
+                                        (0, f.jsxs)(k.motion.div, {
                                             animate: {
-                                                width: o > 0 ? 'auto' : 0,
-                                                opacity: o > 0 ? 1 : 0
+                                                width: q > 0 ? 'auto' : 0,
+                                                opacity: q > 0 ? 1 : 0
                                             },
                                             initial: {
                                                 width: 'auto',
@@ -1371,7 +1371,7 @@ a.register('5drJf', function(b, c) {
                                             },
                                             children: [
                                                 '\xA0(',
-                                                Math.max(1, o),
+                                                Math.max(1, q),
                                                 's)'
                                             ]
                                         })
@@ -1385,106 +1385,106 @@ a.register('5drJf', function(b, c) {
             ]
         });
     };
-}), a.register('mLNYZ', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _f;
+}), c.register('2wWWD', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
     });
-    var d = a('LEQ5w'),
-        e = a('PMl60');
-    var _f = e => {
-        const [g, h] = d.useState(e.text);
-        d.useEffect(() => {
-            e.text !== g && (h(e.text), 'en' !== e.language && (e.disableIfContains && e.text.includes(e.disableIfContains) || (e.translations && e.translations[e.text] ? h(e.translations[e.text]) : (0, e.request)({
+    var f = c('O0Kav'),
+        g = c('quE27');
+    var _h = a => {
+        const [i, j] = f.useState(a.text);
+        f.useEffect(() => {
+            a.text !== i && (j(a.text), 'en' !== a.language && (a.disableIfContains && a.text.includes(a.disableIfContains) || (a.translations && a.translations[a.text] ? j(a.translations[a.text]) : (0, g.request)({
                 url: '',
                 data: {
-                    to: e.language,
-                    text: e.text
+                    to: a.language,
+                    text: a.text
                 },
-                success: g => {
-                    h(g), e.translations[e.text] = g;
+                success: i => {
+                    j(i), a.translations[a.text] = i;
                 }
             }))));
-        }, [e.text]);
+        }, [a.text]);
         return (() => {
-            let i = g;
-            return e.suffix && (i += e.suffix), i;
+            let k = i;
+            return a.suffix && (k += a.suffix), k;
         })();
     };
-}), a.register('B7Zhl', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _e;
+}), c.register('LqE9u', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _g;
     });
-    var d = a('fCxtw');
-    var _e = {
+    var f = c('44iM224');
+    var _g = {
         defaultBackground: '#303f9f',
         question: {
             background: '#303f9f',
-            text: d.default.White
+            text: f.default.White
         },
         palette: [{
                 background: '#771322',
-                text: d.default.White
+                text: f.default.White
             },
             {
                 background: '#A85C15',
-                text: d.default.White
+                text: f.default.White
             },
             {
                 background: '#0D6B33',
-                text: d.default.White
+                text: f.default.White
             },
             {
                 background: '#076296',
-                text: d.default.White
+                text: f.default.White
             }
         ],
         response: {
             correctAnswer: {
                 background: '#388E3C',
-                text: d.default.White
+                text: f.default.White
             },
             incorrectAnswer: {
                 background: '#B71C1C',
-                text: d.default.White
+                text: f.default.White
             },
             shop: {
                 background: '#311B92',
-                text: d.default.White
+                text: f.default.White
             },
             continue: {
                 background: '#1A237E',
-                text: d.default.White
+                text: f.default.White
             }
         },
         desktopBreakpoint: 650
     };
-}), a.register('gwrMQ', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _m;
+}), c.register('wxy92', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _o;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('2x11J'),
-        h = a('TwXYL'),
-        i = a('B7Zhl'),
-        j = a('dt9Wz');
-    let k;
-    const l = (0, f.default)(h.motion.div)(k || (k = (e => e)`
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('6jmvl'),
+        j = c('9aZ6t'),
+        k = c('LqE9u'),
+        l = c('eoj6K');
+    let m;
+    const n = (0, h.default)(j.motion.div)(m || (m = (a => a)`
   background: ${ 0 };
   flex: 1 1 auto;
   height: 100%;
   width: 100%;
   will-change: transform;
-`), e => e.defaultBackgroundColor);
-    var _m = (0, g.observer)(e => (t(e).useEffect(() => (j.default.readToMe.canPlayAgain = !0, () => {
-        j.default.readToMe.canPlayAgain = !1;
-    }), []), (0, d.jsx)(l, {
+`), a => a.defaultBackgroundColor);
+    var _o = (0, i.observer)(a => (b(g).useEffect(() => (l.default.readToMe.canPlayAgain = !0, () => {
+        l.default.readToMe.canPlayAgain = !1;
+    }), []), (0, f.jsx)(n, {
         style: {
-            opacity: e.opacity,
-            y: e.yPosition
+            opacity: a.opacity,
+            y: a.yPosition
         },
-        defaultBackgroundColor: e.defaultBackgroundColor || i.default.defaultBackground,
-        children: e.children
+        defaultBackgroundColor: a.defaultBackgroundColor || k.default.defaultBackground,
+        children: a.children
     })));
 });

@@ -2,105 +2,105 @@ function a(b) {
     return b && b.__esModule ? b.default : b;
 }
 
-function a(b, c, d, e) {
-    Object.defineProperty(b, c, {
-        get: d,
-        set: e,
+function b(c, d, e, f) {
+    Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('PK2j1', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('+27Rl', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _E(b.exports, 'default', function() {
-        return _D;
+    }), b(d.exports, 'default', function() {
+        return _F;
     });
-    var e = a('0hzx+'),
-        f = a('fmVdR'),
-        g = a('j2ADs'),
-        h = a('2x11J'),
-        i = a('LEQ5w'),
-        j = a('Axq+p'),
-        k = a('vShe/'),
-        l = a('11nl3'),
-        m = a('WluX+'),
-        n = a('YMjEj'),
-        o = a('mQCZt'),
-        p = a('WIRQZ'),
-        q = a('8WvaZ'),
-        r = a('ryWAy'),
-        s = a('iWivW'),
-        t = a('rWzgW'),
-        u = a('ILZh4'),
-        v = a('e07Rt'),
-        w = a('6vkJ5'),
-        x = a('Ct4sg'),
-        y = a('b5kvC'),
-        z = a('0HHAH'),
-        A = a('Dv0SO'),
-        B = a('oqbdA');
-    let C;
-    var _D = (0, h.observer)(() => {
-        const _E = (0, m.default)(),
-            F = () => {
-                (0, o.default)(l.default.none);
+    var g = c('gRbUn'),
+        h = c('VNuyu'),
+        i = c('22RS1'),
+        j = c('6jmvl'),
+        k = c('O0Kav'),
+        l = c('u4s09'),
+        m = c('HOIhZ'),
+        n = c('SxihY'),
+        o = c('pctq0'),
+        p = c('OZKkM'),
+        q = c('LihP5'),
+        r = c('VSnBT'),
+        s = c('ddhGF'),
+        t = c('J8L14'),
+        u = c('fI6of'),
+        v = c('t0eqt'),
+        w = c('APtU4'),
+        x = c('OnssI'),
+        y = c('3ydbD'),
+        z = c('V/q8i'),
+        A = c('Eh2Wh'),
+        B = c('MgONH'),
+        C = c('ymkwu'),
+        D = c('y3At+');
+    let E;
+    var _F = (0, j.observer)(() => {
+        const G = (0, o.default)(),
+            H = () => {
+                (0, q.default)(n.default.none);
             };
-        i.useEffect(() => {
-            const G = (0, n.default)(p.default.Removing.SwitchToAddingMode(), () => {
-                s.default.me.adding.mode = t.AddingMode.terrain, (0, o.default)(l.default.adding);
+        k.useEffect(() => {
+            const I = (0, p.default)(r.default.Removing.SwitchToAddingMode(), () => {
+                u.default.me.adding.mode = v.AddingMode.terrain, (0, q.default)(n.default.adding);
             });
             return () => {
-                G();
+                I();
             };
         }, []);
-        const G = (0, u.default)();
-        return i.useEffect(() => {
-            G || F();
+        const I = (0, w.default)();
+        return k.useEffect(() => {
+            I || H();
         }, [
-            G,
-            F
-        ]), (0, r.default)(_b(q).Input.Keyboard.KeyCodes.ESC, F, [F]), (0, e.jsx)(w.Container, {
-            children: (0, e.jsxs)(w.Content, {
+            I,
+            H
+        ]), (0, t.default)(a(s).Input.Keyboard.KeyCodes.ESC, H, [H]), (0, g.jsx)(y.Container, {
+            children: (0, g.jsxs)(y.Content, {
                 style: {
                     paddingTop: 53
                 },
                 children: [
-                    (0, e.jsx)(x.default, {
-                        onClick: F,
+                    (0, g.jsx)(z.default, {
+                        onClick: H,
                         padding: 20,
                         fontSize: 20
                     }),
-                    (0, e.jsx)(g.default.Title, {
+                    (0, g.jsx)(i.default.Title, {
                         level: 2,
                         style: {
-                            fontFamily: y.Fonts.FugazOne,
+                            fontFamily: A.Fonts.FugazOne,
                             textTransform: 'uppercase',
-                            color: k.default.White
+                            color: m.default.White
                         },
                         children: 'Eraser'
                     }),
-                    (0, e.jsx)(_E, {
-                        children: _E ? (0, e.jsx)(B.default, {
-                            removalInfo: _E
-                        }) : (0, e.jsx)(A.default, {})
+                    (0, g.jsx)(_G, {
+                        children: G ? (0, g.jsx)(D.default, {
+                            removalInfo: G
+                        }) : (0, g.jsx)(C.default, {})
                     }),
-                    (0, e.jsx)(f.default, {
+                    (0, g.jsx)(h.default, {
                         style: {
                             borderTopColor: 'rgba(255,255,255,0.25)'
                         }
                     }),
-                    (0, e.jsx)(v.default, {})
+                    (0, g.jsx)(x.default, {})
                 ]
             })
         });
     });
-    const _E = (0, j.default)(z.Centered).attrs({
+    const _G = (0, l.default)(B.Centered).attrs({
         className: 'maxWidth'
-    })(C || (C = (_b => _b)`
+    })(E || (E = (a => a)`
   margin-top: 10px;
   padding: 20px;
   min-height: 190px;
@@ -108,205 +108,205 @@ a.register('PK2j1', function(b, c) {
   background: rgba(255, 255, 255, 0.07);
   border: 2px dashed rgba(255, 255, 255, 0.5);
 `));
-}), a.register('WluX+', function(_b, c) {
-    _m(_b.exports, 'default', function() {
-        return _k;
+}), c.register('pctq0', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _m;
     });
-    var d = a('LEQ5w'),
-        e = a('iWivW'),
-        f = a('PUGQx1'),
-        g = a('qVhMZ'),
-        h = a('bzU3s'),
-        i = a('cPBfb'),
-        j = a('47u/+');
-    var _k = () => {
-        const [l, _m] = d.useState(!1), [n, o] = d.useState(''), [p, q] = d.useState(''), [r, s] = d.useState('');
-        return d.useEffect(() => {
-            const t = (0, j.ReactionToMultipleProps)([
-                () => e.default.me.removing.tilesToRemove,
-                () => e.default.me.removing.deviceIdToRemove,
-                () => e.default.me.removing.wireIdToRemove
+    var f = c('O0Kav'),
+        g = c('fI6of'),
+        h = c('+FJvw1'),
+        i = c('Q6LQJ'),
+        j = c('gp8Qp0'),
+        k = c('OFuf70'),
+        l = c('AAbjw');
+    var _m = () => {
+        const [n, o] = f.useState(!1), [p, q] = f.useState(''), [r, s] = f.useState(''), [t, u] = f.useState('');
+        return f.useEffect(() => {
+            const v = (0, l.ReactionToMultipleProps)([
+                () => g.default.me.removing.tilesToRemove,
+                () => g.default.me.removing.deviceIdToRemove,
+                () => g.default.me.removing.wireIdToRemove
             ], () => {
-                const u = (() => {
+                const w = (() => {
                     const {
                         me: {
                             removing: {
-                                tilesToRemove: v,
-                                deviceIdToRemove: w,
-                                wireIdToRemove: x
+                                tilesToRemove: x,
+                                deviceIdToRemove: y,
+                                wireIdToRemove: z
                             }
                         }
-                    } = e.default;
-                    let y, z, A;
-                    if (v.length)
-                        if (y = (0, g.CapitalizeFirstLetter)(h.default.terrain.singular), z = `Unknown ${ y }`, 1 === v.length) {
-                            const B = e.default.world.terrain.tiles.get(v[0].id);
-                            if (B) {
-                                const C = e.default.worldOptions.terrainOptions.find(C => C.id === B.terrain);
-                                C && (z = C.name), A = B.collides ? 'Wall' : 'Floor';
+                    } = g.default;
+                    let A, B, C;
+                    if (x.length)
+                        if (A = (0, i.CapitalizeFirstLetter)(j.default.terrain.singular), B = `Unknown ${ A }`, 1 === x.length) {
+                            const D = g.default.world.terrain.tiles.get(x[0].id);
+                            if (D) {
+                                const E = g.default.worldOptions.terrainOptions.find(E => E.id === D.terrain);
+                                E && (B = E.name), C = D.collides ? 'Wall' : 'Floor';
                             }
                         } else
-                            z = `Multiple ${ (0, g.CapitalizeFirstLetter)(h.default.terrain.singular) } Pieces`;
-                    if (w) {
-                        y = (0, g.CapitalizeFirstLetter)(h.default.device.singular), z = `Unknown ${ y }`;
-                        const B = e.default.world.devices.devices.get(w);
-                        B && (B.deviceOption.id === i.default.prop && (y = (0, g.CapitalizeFirstLetter)(h.default.prop.singular), z = `Unknown ${ y }`), z = (0, f.FetchDeviceName)(w));
+                            B = `Multiple ${ (0, i.CapitalizeFirstLetter)(j.default.terrain.singular) } Pieces`;
+                    if (y) {
+                        A = (0, i.CapitalizeFirstLetter)(j.default.device.singular), B = `Unknown ${ A }`;
+                        const D = g.default.world.devices.devices.get(y);
+                        D && (D.deviceOption.id === k.default.prop && (A = (0, i.CapitalizeFirstLetter)(j.default.prop.singular), B = `Unknown ${ A }`), B = (0, h.FetchDeviceName)(y));
                     }
-                    return x && (y = (0, g.CapitalizeFirstLetter)(h.default.wire.singular), z = y), y && z ? {
-                        type: y,
-                        name: z,
-                        description: A
+                    return z && (A = (0, i.CapitalizeFirstLetter)(j.default.wire.singular), B = A), A && B ? {
+                        type: A,
+                        name: B,
+                        description: C
                     } : null;
                 })();
-                u ? (o(u.type), q(u.name), s(u.description || ''), _m(!0)) : _m(!1);
+                w ? (q(w.type), s(w.name), u(w.description || ''), o(!0)) : o(!1);
             }, {
                 fireImmediately: !0
             });
-            return () => t();
-        }, []), l ? {
-            type: n,
-            name: p,
-            description: r
+            return () => v();
+        }, []), n ? {
+            type: p,
+            name: r,
+            description: t
         } : null;
     };
-}), a.register('47u/+', function(b, c) {
-    _v(b.exports, 'ReactionToMultipleProps', function() {
-        return _e;
+}), c.register('AAbjw', function(d, e) {
+    b(d.exports, 'ReactionToMultipleProps', function() {
+        return _g;
     });
-    var d = a('YuT/D');
-    const _e = (b, _v, a) => {
-        const f = [];
-        return b.forEach(b => {
-            const g = (0, d.reaction)(b, _v, a);
-            f.push(g);
+    var f = c('JkQCT');
+    const _g = (d, b, c) => {
+        const h = [];
+        return d.forEach(d => {
+            const i = (0, f.reaction)(d, b, c);
+            h.push(i);
         }), () => {
-            f.forEach(b => {
-                b();
+            h.forEach(d => {
+                d();
             });
         };
     };
-}), a.register('e07Rt', function(b, c) {
-    _v(b.exports, 'default', function() {
-        return _t;
+}), c.register('OnssI', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _v;
     });
-    var d = a('0hzx+'),
-        e = a('inwN3'),
-        f = a('cvto726'),
-        g = a('j2ADs'),
-        h = a('2x11J'),
-        i = a('LEQ5w'),
-        j = a('Axq+p'),
-        k = a('vShe/'),
-        l = a('bHGrl'),
-        m = a('2GeW4'),
-        n = a('N/g4T'),
-        o = a('b5kvC'),
-        p = a('8Yhx/'),
-        q = a('qVhMZ'),
-        r = a('bzU3s');
-    let s;
-    var _t = (0, h.observer)(() => {
+    var f = c('gRbUn'),
+        g = c('u8Dt8'),
+        h = c('E2AMI26'),
+        i = c('22RS1'),
+        j = c('6jmvl'),
+        k = c('O0Kav'),
+        l = c('u4s09'),
+        m = c('HOIhZ'),
+        n = c('K/2xB'),
+        o = c('UkybP'),
+        p = c('4Jp0/'),
+        q = c('Eh2Wh'),
+        r = c('er8/l0'),
+        s = c('Q6LQJ'),
+        t = c('gp8Qp0');
+    let u;
+    var _v = (0, j.observer)(() => {
         const {
             me: {
-                removing: u
+                removing: w
             }
-        } = (0, l.default)(), _v = i.useRef(), w = i.useRef(), x = i.useRef(), y = () => {
-            var z, A, B, C, D, E;
-            null == _v || null === (z = _v.current) || void 0 === z || null === (A = z.blur) || void 0 === A || A.call(z), null == w || null === (B = w.current) || void 0 === B || null === (C = B.blur) || void 0 === C || C.call(B), null == x || null === (D = x.current) || void 0 === D || null === (E = D.blur) || void 0 === E || E.call(D);
-        }, z = u => {
-            const A = u === n.RemovingMode.propsAndDevices ? `${ (0, q.CapitalizeFirstLetter)(r.default.prop.plural) } & ${ (0, q.CapitalizeFirstLetter)(r.default.device.plural) }` : u === n.RemovingMode.tiles ? (0, q.CapitalizeFirstLetter)(r.default.terrain.singular) : u === n.RemovingMode.wires ? (0, q.CapitalizeFirstLetter)(r.default.wire.plural) : u;
-            return (0, d.jsx)(e.default.Option, {
-                value: u,
-                children: A
-            }, `remove-options-mode-${ u }`);
-        }, A = (u, _v) => {
-            if (u === n.RemovingTilesMode.allLayers)
-                return (0, d.jsx)(e.default.Option, {
-                    ref: w,
+        } = (0, n.default)(), x = k.useRef(), y = k.useRef(), z = k.useRef(), A = () => {
+            var B, C, D, E, F, G;
+            null == x || null === (B = x.current) || void 0 === B || null === (C = B.blur) || void 0 === C || C.call(B), null == y || null === (D = y.current) || void 0 === D || null === (E = D.blur) || void 0 === E || E.call(D), null == z || null === (F = z.current) || void 0 === F || null === (G = F.blur) || void 0 === G || G.call(F);
+        }, B = w => {
+            const C = w === p.RemovingMode.propsAndDevices ? `${ (0, s.CapitalizeFirstLetter)(t.default.prop.plural) } & ${ (0, s.CapitalizeFirstLetter)(t.default.device.plural) }` : w === p.RemovingMode.tiles ? (0, s.CapitalizeFirstLetter)(t.default.terrain.singular) : w === p.RemovingMode.wires ? (0, s.CapitalizeFirstLetter)(t.default.wire.plural) : w;
+            return (0, f.jsx)(g.default.Option, {
+                value: w,
+                children: C
+            }, `remove-options-mode-${ w }`);
+        }, C = (w, x) => {
+            if (w === p.RemovingTilesMode.allLayers)
+                return (0, f.jsx)(g.default.Option, {
+                    ref: y,
                     value: 99,
-                    children: u
-                }, `remove-tiles-mode-${ u }`);
-            if (u === n.RemovingTilesMode.topLayer)
-                return (0, d.jsx)(e.default.Option, {
+                    children: w
+                }, `remove-tiles-mode-${ w }`);
+            if (w === p.RemovingTilesMode.topLayer)
+                return (0, f.jsx)(g.default.Option, {
                     value: 100,
-                    children: u
-                }, `remove-tiles-mode-${ u }`);
-            const B = `${ u }-${ _v }`;
-            return (0, d.jsx)(e.default.Option, {
-                value: _v,
-                children: _v + ' - ' + p.TerrainLayerNames[_v - 1] || 'Layer'
-            }, `remove-tiles-mode-${ B }`);
+                    children: w
+                }, `remove-tiles-mode-${ w }`);
+            const D = `${ w }-${ x }`;
+            return (0, f.jsx)(g.default.Option, {
+                value: x,
+                children: x + ' - ' + r.TerrainLayerNames[x - 1] || 'Layer'
+            }, `remove-tiles-mode-${ D }`);
         };
-        return (0, d.jsx)(m.default, {
+        return (0, f.jsx)(o.default, {
             className: 'maxWidth',
-            children: (0, d.jsxs)(f.default, {
+            children: (0, f.jsxs)(h.default, {
                 className: 'maxWidth',
                 direction: 'vertical',
                 size: 13,
                 children: [
-                    (0, d.jsxs)(_u, {
+                    (0, f.jsxs)(_w, {
                         children: [
-                            (0, d.jsx)(_v, {
+                            (0, f.jsx)(_x, {
                                 children: 'Eraser Mode:'
                             }),
-                            (0, d.jsxs)(e.default, {
-                                ref: _v,
-                                style: {
-                                    width: 200
-                                },
-                                value: u.removingMode,
-                                onChange: _v => {
-                                    u.removingMode = _v, y();
-                                },
-                                children: [
-                                    z(n.RemovingMode.everything),
-                                    z(n.RemovingMode.tiles),
-                                    z(n.RemovingMode.propsAndDevices),
-                                    z(n.RemovingMode.wires)
-                                ]
-                            })
-                        ]
-                    }),
-                    u.removingMode === n.RemovingMode.tiles ? (0, d.jsxs)(_u, {
-                        children: [
-                            (0, d.jsx)(_v, {
-                                children: 'Layer:'
-                            }),
-                            (0, d.jsxs)(e.default, {
-                                ref: w,
-                                style: {
-                                    width: 200
-                                },
-                                value: u.removingTilesMode === n.RemovingTilesMode.allLayers ? 99 : u.removingTilesMode === n.RemovingTilesMode.topLayer ? 100 : u.removingTilesLayer,
-                                onChange: _v => {
-                                    99 === _v ? u.removingTilesMode = n.RemovingTilesMode.allLayers : 100 === _v ? u.removingTilesMode = n.RemovingTilesMode.topLayer : (u.removingTilesMode = n.RemovingTilesMode.layer, u.removingTilesLayer = _v), y();
-                                },
-                                children: [
-                                    A(n.RemovingTilesMode.topLayer),
-                                    A(n.RemovingTilesMode.allLayers),
-                                    Array.from(Array(5).keys()).map(u => A(n.RemovingTilesMode.layer, u + 1))
-                                ]
-                            })
-                        ]
-                    }) : null,
-                    u.removingMode === n.RemovingMode.tiles ? (0, d.jsxs)(_u, {
-                        children: [
-                            (0, d.jsx)(_v, {
-                                children: 'Eraser Size:'
-                            }),
-                            (0, d.jsx)(e.default, {
+                            (0, f.jsxs)(g.default, {
                                 ref: x,
                                 style: {
                                     width: 200
                                 },
-                                value: u.removingTilesEraserSize,
-                                onChange: _v => {
-                                    u.removingTilesEraserSize = _v, y();
+                                value: w.removingMode,
+                                onChange: x => {
+                                    w.removingMode = x, A();
                                 },
-                                children: Array.from(Array(3).keys()).map(u => (u => (0, d.jsx)(e.default.Option, {
-                                    value: u,
-                                    children: u
-                                }, `remove-tiles-eraser-size-${ u }`))(u + 1))
+                                children: [
+                                    B(p.RemovingMode.everything),
+                                    B(p.RemovingMode.tiles),
+                                    B(p.RemovingMode.propsAndDevices),
+                                    B(p.RemovingMode.wires)
+                                ]
+                            })
+                        ]
+                    }),
+                    w.removingMode === p.RemovingMode.tiles ? (0, f.jsxs)(_w, {
+                        children: [
+                            (0, f.jsx)(_x, {
+                                children: 'Layer:'
+                            }),
+                            (0, f.jsxs)(g.default, {
+                                ref: y,
+                                style: {
+                                    width: 200
+                                },
+                                value: w.removingTilesMode === p.RemovingTilesMode.allLayers ? 99 : w.removingTilesMode === p.RemovingTilesMode.topLayer ? 100 : w.removingTilesLayer,
+                                onChange: x => {
+                                    99 === x ? w.removingTilesMode = p.RemovingTilesMode.allLayers : 100 === x ? w.removingTilesMode = p.RemovingTilesMode.topLayer : (w.removingTilesMode = p.RemovingTilesMode.layer, w.removingTilesLayer = x), A();
+                                },
+                                children: [
+                                    C(p.RemovingTilesMode.topLayer),
+                                    C(p.RemovingTilesMode.allLayers),
+                                    Array.from(Array(5).keys()).map(w => C(p.RemovingTilesMode.layer, w + 1))
+                                ]
+                            })
+                        ]
+                    }) : null,
+                    w.removingMode === p.RemovingMode.tiles ? (0, f.jsxs)(_w, {
+                        children: [
+                            (0, f.jsx)(_x, {
+                                children: 'Eraser Size:'
+                            }),
+                            (0, f.jsx)(g.default, {
+                                ref: z,
+                                style: {
+                                    width: 200
+                                },
+                                value: w.removingTilesEraserSize,
+                                onChange: x => {
+                                    w.removingTilesEraserSize = x, A();
+                                },
+                                children: Array.from(Array(3).keys()).map(w => (w => (0, f.jsx)(g.default.Option, {
+                                    value: w,
+                                    children: w
+                                }, `remove-tiles-eraser-size-${ w }`))(w + 1))
                             })
                         ]
                     }) : null
@@ -314,136 +314,136 @@ a.register('PK2j1', function(b, c) {
             })
         });
     });
-    const _u = j.default.div.attrs({
+    const _w = l.default.div.attrs({
             className: 'maxWidth vc between flex'
-        })(s || (s = (b => b)``)),
-        _v = b => (0, d.jsx)(g.default.Text, {
+        })(u || (u = (d => d)``)),
+        _x = d => (0, f.jsx)(i.default.Text, {
             style: {
-                fontWeight: o.FontWeights.Bold,
-                color: k.default.White
+                fontWeight: q.FontWeights.Bold,
+                color: m.default.White
             },
-            children: b.children
+            children: d.children
         });
-}), a.register('8Yhx/', function(b, c) {
-    _m(b.exports, 'TerrainLayerNames', function() {
-        return _d;
+}), c.register('er8/l0', function(d, e) {
+    b(d.exports, 'TerrainLayerNames', function() {
+        return _f;
     });
-    const _d = [
+    const _f = [
         'Bottom',
         'Lower',
         'Middle',
         'Upper',
         'Top'
     ];
-}), a.register('Dv0SO', function(b, c) {
-    _m(b.exports, 'default', function() {
-        return _m;
+}), c.register('ymkwu', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _o;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('0HHAH'),
-        g = a('9R7cy'),
-        h = a('j2ADs'),
-        i = a('sHRDd');
-    let j, k, l = b => b;
-    var _m = () => (0, d.jsxs)(_n, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('MgONH'),
+        i = c('t52Ep'),
+        j = c('22RS1'),
+        k = c('8KqQ+');
+    let l, m, n = d => d;
+    var _o = () => (0, f.jsxs)(_p, {
         children: [
-            (0, d.jsx)(_o, {
-                children: (0, d.jsx)(g.default, {
+            (0, f.jsx)(_q, {
+                children: (0, f.jsx)(i.default, {
                     name: 'fas fa-eraser'
                 })
             }),
-            (0, d.jsx)('div', {
-                children: (0, d.jsx)(h.default.Text, {
+            (0, f.jsx)('div', {
+                children: (0, f.jsx)(j.default.Text, {
                     style: {
-                        color: i.default.White
+                        color: k.default.White
                     },
                     children: 'Hover over anything and click to erase it!'
                 })
             })
         ]
     });
-    const _n = (0, e.default)(f.CenteredColumn)(j || (j = l``)),
-        _o = e.default.div(k || (k = l`
+    const _p = (0, g.default)(h.CenteredColumn)(l || (l = n``)),
+        _q = g.default.div(m || (m = n`
   font-size: 24px;
   color: ${ 0 };
-`), i.default.White);
-}), a.register('oqbdA', function(b, c) {
-    _m(b.exports, 'default', function() {
-        return _l;
+`), k.default.White);
+}), c.register('y3At+', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _n;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('j2ADs'),
-        g = a('0HHAH'),
-        h = a('sHRDd');
-    let i, j, k = b => b;
-    var _l = b => {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('22RS1'),
+        i = c('MgONH'),
+        j = c('8KqQ+');
+    let k, l, m = d => d;
+    var _n = d => {
         const {
             removalInfo: {
-                type: _m,
-                name: n,
-                description: o
+                type: o,
+                name: p,
+                description: q
             }
-        } = b;
-        return (0, d.jsxs)(_m, {
+        } = d;
+        return (0, f.jsxs)(_o, {
             children: [
-                (0, d.jsx)(_n, {
-                    style: o ? {
+                (0, f.jsx)(_p, {
+                    style: q ? {
                         marginBottom: 10
                     } : void 0,
-                    children: (0, d.jsx)(f.default.Text, {
+                    children: (0, f.jsx)(h.default.Text, {
                         italic: !0,
-                        children: _m
+                        children: o
                     })
                 }),
-                (0, d.jsx)('div', {
-                    children: (0, d.jsx)(f.default.Title, {
+                (0, f.jsx)('div', {
+                    children: (0, f.jsx)(h.default.Title, {
                         style: {
-                            color: h.default.White
+                            color: j.default.White
                         },
                         level: 4,
-                        children: n
+                        children: p
                     })
                 }),
-                o ? (0, d.jsx)('div', {
-                    children: (0, d.jsx)(f.default.Text, {
+                q ? (0, f.jsx)('div', {
+                    children: (0, f.jsx)(h.default.Text, {
                         style: {
                             marginTop: 2
                         },
-                        children: o
+                        children: q
                     })
                 }) : null
             ]
         });
     };
-    const _m = (0, e.default)(g.CenteredColumn).attrs({
+    const _o = (0, g.default)(i.CenteredColumn).attrs({
             className: 'maxAll'
-        })(i || (i = k``)),
-        _n = e.default.div(j || (j = k``));
-}), a.register('pMmde1', function(b, c) {
-    _j(b.exports, 'default', function() {
-        return _i;
+        })(k || (k = m``)),
+        _p = g.default.div(l || (l = m``));
+}), c.register('OQRaD', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('+bIFH'),
-        g = a('sLVIW'),
-        h = function(i, _j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, i), {}, {
-                ref: _j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('tWyJZ'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'DownOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('+bIFH', function(b, c) {
-    t(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'DownOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('tWyJZ', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {

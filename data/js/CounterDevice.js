@@ -7,49 +7,49 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('Vbc2Q', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('N6Z+0', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _l(b.exports, 'default', function() {
-        return _l;
+    }), a(d.exports, 'default', function() {
+        return _n;
     });
-    var e = a('1bFPu'),
-        f = a('I35Ay'),
-        g = a('S95UR'),
-        h = a('sCbH9'),
-        i = a('/pbxo'),
-        j = a('9tz3H');
-    class k extends f.default {
-        constructor(_l) {
-            if (super(_l), (0, e.default)(this, 'textScale', 1), (0, e.default)(this, 'onStateChange', _l => {
-                    var m;
-                    'counter' === _l && (null === (m = this.text) || void 0 === m ? void 0 : m.view) && (this.text.view.setText(this.state.counter + ''), this.updateTextScale(), this.tweens.add({
+    var g = c('s/YA9'),
+        h = c('ltxDW'),
+        i = c('EcVAG'),
+        j = c('bMaPZ2'),
+        k = c('UkCpC'),
+        l = c('hycyg');
+    class m extends h.default {
+        constructor(n) {
+            if (super(n), (0, g.default)(this, 'textScale', 1), (0, g.default)(this, 'onStateChange', n => {
+                    var o;
+                    'counter' === n && (null === (o = this.text) || void 0 === o ? void 0 : o.view) && (this.text.view.setText(this.state.counter + ''), this.updateTextScale(), this.tweens.add({
                         targets: [this.text.view],
                         duration: 100,
                         scaleX: 0.8 * this.textScale,
                         scaleY: 0.8 * this.textScale,
                         yoyo: !0
                     }));
-                }), (0, e.default)(this, 'updateTextScale', () => {
+                }), (0, g.default)(this, 'updateTextScale', () => {
                     this.textScale = Math.min(3 / this.text.view.text.length, 1), this.text.view.setScale(this.textScale);
-                }), ((0, i.InGamePhase)() || (0, j.isPublishedVersion)()) && !this.options.visibleInGame)
+                }), ((0, k.InGamePhase)() || (0, l.isPublishedVersion)()) && !this.options.visibleInGame)
                 return;
-            var m, n;
-            this.bg = this.parts.add.sprite(g.BackgroundAsset), this.frame = this.parts.add.sprite(g.FrameAsset), this.bg.view.setScale(0.5), this.frame.view.setScale(0.5);
-            const o = (null !== (n = null !== (m = this.state.counter) && void 0 !== m ? m : this.options.startingValue) && void 0 !== n ? n : 0) + '';
+            var o, p;
+            this.bg = this.parts.add.sprite(i.BackgroundAsset), this.frame = this.parts.add.sprite(i.FrameAsset), this.bg.view.setScale(0.5), this.frame.view.setScale(0.5);
+            const q = (null !== (p = null !== (o = this.state.counter) && void 0 !== o ? o : this.options.startingValue) && void 0 !== p ? p : 0) + '';
             this.text = this.parts.add.text({
                 y: 2,
                 textStyle: {
                     fontFamily: 'Fugaz One'
                 },
-                text: o
-            }), this.text.view.alpha = 0, (0, h.default)({
+                text: q
+            }), this.text.view.alpha = 0, (0, j.default)({
                 familyName: 'Fugaz One',
                 onLoad: () => {
                     this.isDestroyed || (this.text.view.setFontFamily('\'Fugaz One\''), this.text.view.alpha = 1);
@@ -57,42 +57,42 @@ a.register('Vbc2Q', function(b, c) {
             }), this.updateTextScale();
         }
     }
-    var _l = k;
-}), a.register('S95UR', function(b, c) {
-    e(b.exports, 'FrameAsset', function() {
-        return _e;
-    }), e(b.exports, 'BackgroundAsset', function() {
-        return _f;
-    });
-    var d = a('2Xvuf');
-    const _e = {
-            imageId: (0, d.default)('devices/counter/frame.png'),
-            imageUrl: (0, d.default)('devices/counter/frame.png')
-        },
-        _f = {
-            imageId: (0, d.default)('devices/counter/background.png'),
-            imageUrl: (0, d.default)('devices/counter/background.png')
-        };
-}), a.register('sCbH9', function(b, c) {
-    e(b.exports, 'isGoogleFontLoaded', function() {
-        return _f;
-    }), e(b.exports, 'default', function() {
+    var _n = m;
+}), c.register('EcVAG', function(d, e) {
+    a(d.exports, 'FrameAsset', function() {
         return _g;
+    }), a(d.exports, 'BackgroundAsset', function() {
+        return _h;
     });
-    var d = a('ARAVZ');
-    const e = [],
-        _f = e => e.includes(e);
-    var _g = e => {
+    var f = c('UaUBz0');
+    const _g = {
+            imageId: (0, f.default)('devices/counter/frame.png'),
+            imageUrl: (0, f.default)('devices/counter/frame.png')
+        },
+        _h = {
+            imageId: (0, f.default)('devices/counter/background.png'),
+            imageUrl: (0, f.default)('devices/counter/background.png')
+        };
+}), c.register('bMaPZ2', function(d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function() {
+        return _h;
+    }), a(d.exports, 'default', function() {
+        return _i;
+    });
+    var f = c('TptDc');
+    const g = [],
+        _h = a => g.includes(a);
+    var _i = a => {
         const {
-            familyName: h,
-            onLoad: i
-        } = e;
-        e.includes(h) ? i && i() : t(d).load({
+            familyName: j,
+            onLoad: k
+        } = a;
+        g.includes(j) ? k && k() : b(f).load({
             google: {
-                families: [`${ h }:400,700`]
+                families: [`${ j }:400,700`]
             },
-            fontactive: e => {
-                e.includes(e) || e.push(e), h === e && i && i();
+            fontactive: a => {
+                g.includes(a) || g.push(a), j === a && k && k();
             }
         });
     };

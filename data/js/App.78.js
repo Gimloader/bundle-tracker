@@ -6,68 +6,68 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('AxLje', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('TuxlQ', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _t(b.exports, 'default', function() {
-        return _s;
+    }), a(c.exports, 'default', function() {
+        return _t;
     });
-    var e = a('0hzx+'),
-        f = a('LEQ5w'),
-        g = a('70AkF'),
-        h = a('PMl60'),
-        i = a('Axq+p'),
-        j = a('0HHAH'),
-        k = a('sHRDd'),
-        l = a('FpbFp'),
-        m = a('fmVdR'),
-        n = a('YRlpt'),
-        o = a('mbGc60'),
-        p = a('b5kvC'),
-        q = a('AQ78Z');
-    let r;
-    var _s = () => {
+    var f = b('gRbUn'),
+        g = b('O0Kav'),
+        h = b('zcfNM'),
+        i = b('quE27'),
+        j = b('u4s09'),
+        k = b('MgONH'),
+        l = b('8KqQ+'),
+        m = b('JNGrh0'),
+        n = b('VNuyu'),
+        o = b('AE7vR'),
+        p = b('LyDan'),
+        q = b('Eh2Wh'),
+        r = b('/bxmQ');
+    let s;
+    var _t = () => {
         const {
-            id: _t
-        } = (0, g.useParams)(), [u, v] = f.useState(''), [w, x, y] = (0, h.useBoolean)(!1), [z, A] = f.useState('');
-        f.useEffect(() => {
-            x(), A(''), (0, h.request)({
+            id: u
+        } = (0, h.useParams)(), [v, w] = g.useState(''), [x, y, z] = (0, i.useBoolean)(!1), [A, B] = g.useState('');
+        g.useEffect(() => {
+            y(), B(''), (0, i.request)({
                 url: '/api/matchmaker/intent/map/play/publish-link/create',
                 data: {
-                    id: _t
+                    id: u
                 },
-                success: _t => {
-                    v(_t);
+                success: u => {
+                    w(u);
                 },
-                error: _t => {
-                    var B;
-                    (null == _t || null === (B = _t.message) || void 0 === B ? void 0 : B.text) ? A(_t.message.text): A('There was an error. Please try again.');
+                error: u => {
+                    var C;
+                    (null == u || null === (C = u.message) || void 0 === C ? void 0 : C.text) ? B(u.message.text): B('There was an error. Please try again.');
                 },
-                both: y
+                both: z
             });
-        }, [_t]);
-        return (0, e.jsxs)(e.Fragment, {
+        }, [u]);
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, e.jsx)(h.Title, {
+                (0, f.jsx)(i.Title, {
                     title: 'Gimkit Creative Map'
                 }),
                 (() => {
-                    if (u)
-                        return (0, e.jsx)(q.default, {
+                    if (v)
+                        return (0, f.jsx)(r.default, {
                             createDetails: {
-                                intentId: u
+                                intentId: v
                             }
                         });
-                    return (0, e.jsx)(_t, {
-                        children: w ? (0, e.jsx)(l.default, {
+                    return (0, f.jsx)(_u, {
+                        children: x ? (0, f.jsx)(m.default, {
                             style: {
-                                color: k.default.White
+                                color: l.default.White
                             },
                             size: 42
-                        }) : z ? (0, e.jsx)(n.default, {
+                        }) : A ? (0, f.jsx)(o.default, {
                             open: !0,
                             closable: !1,
                             footer: null,
@@ -76,29 +76,29 @@ a.register('AxLje', function(b, c) {
                             bodyStyle: {
                                 padding: 40
                             },
-                            children: (0, e.jsxs)('div', {
+                            children: (0, f.jsxs)('div', {
                                 className: 'maxAll flex-column flex-center',
                                 style: {
-                                    color: k.default.Black,
+                                    color: l.default.Black,
                                     textAlign: 'center',
-                                    font: p.Fonts.SFPro
+                                    font: q.Fonts.SFPro
                                 },
                                 children: [
-                                    (0, e.jsx)(o.default, {
+                                    (0, f.jsx)(p.default, {
                                         style: {
                                             color: 'darkorange',
                                             fontSize: 51
                                         }
                                     }),
                                     ' ',
-                                    (0, e.jsx)(m.default, {}),
-                                    (0, e.jsx)('div', {
+                                    (0, f.jsx)(n.default, {}),
+                                    (0, f.jsx)('div', {
                                         style: {
                                             textAlign: 'center',
                                             fontSize: 23,
                                             fontWeight: 'bold'
                                         },
-                                        children: z
+                                        children: A
                                     })
                                 ]
                             })
@@ -108,32 +108,32 @@ a.register('AxLje', function(b, c) {
             ]
         });
     };
-    const _t = (0, i.default)(j.Centered)(r || (r = (_i => _i)`
+    const _u = (0, j.default)(k.Centered)(s || (s = (a => a)`
   flex: 1;
   padding: 20px;
   background: ${ 0 };
-`), k.default.BackgroundPurple);
-}), a.register('mbGc60', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+`), l.default.BackgroundPurple);
+}), b.register('LyDan', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _j;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('UkYu/'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var e = b('5cnOa'),
+        f = b('O0Kav'),
+        g = b('IBZ0u'),
+        h = b('VZTwv'),
+        i = function(j, k) {
+            return f.createElement(h.default, (0, e.default)((0, e.default)({}, j), {}, {
+                ref: k,
+                icon: g.default
             }));
         };
-    h.displayName = 'WarningOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('UkYu/', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _d;
+    i.displayName = 'WarningOutlined';
+    var _j = f.forwardRef(i);
+}), b.register('IBZ0u', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _e;
     });
-    var _d = {
+    var _e = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -150,59 +150,59 @@ a.register('AxLje', function(b, c) {
         name: 'warning',
         theme: 'outlined'
     };
-}), a.register('6XgQB1', function(b, c) {
-    let d;
-    var e;
-    let f;
-    var g;
-    let h;
-    var i;
-    let j;
+}), b.register('YSFE52', function(c, d) {
+    let e;
+    var f;
+    let g;
+    var h;
+    let i;
+    var j;
     let k;
-    var l;
-    e(b.exports, 'QuestionType', function() {
-        return d;
-    }), e(b.exports, 'Privacy', function() {
-        return f;
-    }), e(b.exports, 'GameStatus', function() {
-        return h;
-    }), e(b.exports, 'GameType', function() {
-        return j;
-    }), e(b.exports, 'GameGoal', function() {
+    let l;
+    var m;
+    a(c.exports, 'QuestionType', function() {
+        return e;
+    }), a(c.exports, 'Privacy', function() {
+        return g;
+    }), a(c.exports, 'GameStatus', function() {
+        return i;
+    }), a(c.exports, 'GameType', function() {
         return k;
-    }), e(b.exports, 'themes', function() {
-        return _q;
-    }), e(b.exports, 'ExperienceSource', function() {
+    }), a(c.exports, 'GameGoal', function() {
+        return l;
+    }), a(c.exports, 'themes', function() {
         return _r;
-    }), (e = d || (d = {})).multipleChoice = 'mc', e.textInput = 'text', (g = f || (f = {})).public = 'public', g.private = 'private', (i = h || (h = {})).setup = 'setup', i.join = 'join', i.teams = 'teams', i.gameplay = 'gameplay', i.results = 'results', (j || (j = {})).live = 'live', (l = k || (k = {})).time = 'time', l.race = 'race', l.allIn = 'allIn';
-    const m = '#ffffff',
-        n = '#000000';
-    let o;
-    var p;
-    (p = o || (o = {})).easy = 'easy', p.medium = 'medium', p.hard = 'hard', p.veryHard = 'veryHard', p.veryVeryHard = 'veryVeryHard';
-    const _q = [{
+    }), a(c.exports, 'ExperienceSource', function() {
+        return _s;
+    }), (f = e || (e = {})).multipleChoice = 'mc', f.textInput = 'text', (h = g || (g = {})).public = 'public', h.private = 'private', (j = i || (i = {})).setup = 'setup', j.join = 'join', j.teams = 'teams', j.gameplay = 'gameplay', j.results = 'results', (k || (k = {})).live = 'live', (m = l || (l = {})).time = 'time', m.race = 'race', m.allIn = 'allIn';
+    const n = '#ffffff',
+        o = '#000000';
+    let p;
+    var q;
+    (q = p || (p = {})).easy = 'easy', q.medium = 'medium', q.hard = 'hard', q.veryHard = 'veryHard', q.veryVeryHard = 'veryVeryHard';
+    const _r = [{
             cost: 0,
             name: 'Default',
             description: 'Works fine, that\'s all',
             question: {
                 background: '#303f9f',
-                text: m
+                text: n
             },
             palette: [{
                     background: '#771322',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#A85C15',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#0D6B33',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#076296',
-                    text: m
+                    text: n
                 }
             ],
             owned: !0,
@@ -214,23 +214,23 @@ a.register('AxLje', function(b, c) {
             description: 'The perfect theme to show your thanks',
             question: {
                 background: '#6C2F00',
-                text: m
+                text: n
             },
             palette: [{
                     background: '#9E682A',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#B54730',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#8A9748',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#F1B930',
-                    text: m
+                    text: n
                 }
             ],
             owned: !1,
@@ -242,23 +242,23 @@ a.register('AxLje', function(b, c) {
             description: 'A little easier on the eyes',
             question: {
                 background: '#000a12',
-                text: m
+                text: n
             },
             palette: [{
                     background: '#263238',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#37474f',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#455a64',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#546e7a',
-                    text: m
+                    text: n
                 }
             ],
             owned: !1,
@@ -270,23 +270,23 @@ a.register('AxLje', function(b, c) {
             description: 'Perfectly balanced, as all things should be',
             question: {
                 background: '#0D0019',
-                text: m
+                text: n
             },
             palette: [{
                     background: '#220044',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#330066',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#3E007C',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#4F1787',
-                    text: m
+                    text: n
                 }
             ],
             owned: !1,
@@ -298,23 +298,23 @@ a.register('AxLje', function(b, c) {
             description: 'Under the sea...',
             question: {
                 background: '#000063',
-                text: m
+                text: n
             },
             palette: [{
                     background: '#283593',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#076296',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#0277bd',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#1565c0',
-                    text: m
+                    text: n
                 }
             ],
             owned: !1,
@@ -326,23 +326,23 @@ a.register('AxLje', function(b, c) {
             description: 'A walk through the woods',
             question: {
                 background: '#4c3d33',
-                text: m
+                text: n
             },
             palette: [{
                     background: '#385645',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#425C49',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#415641',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#4C6349',
-                    text: m
+                    text: n
                 }
             ],
             owned: !1,
@@ -354,23 +354,23 @@ a.register('AxLje', function(b, c) {
             description: 'Take a breather',
             question: {
                 background: '#7F7496',
-                text: m
+                text: n
             },
             palette: [{
                     background: '#F46F5A',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#ED712D',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#7A596A',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#E8AB3C',
-                    text: m
+                    text: n
                 }
             ],
             owned: !1,
@@ -410,23 +410,23 @@ a.register('AxLje', function(b, c) {
             description: 'Old school...',
             question: {
                 background: '#9C0022',
-                text: m
+                text: n
             },
             palette: [{
                     background: '#001D3B',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#FFAE52',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#FE5963',
-                    text: m
+                    text: n
                 },
                 {
                     background: '#A71C94',
-                    text: m
+                    text: n
                 }
             ],
             owned: !1,
@@ -437,31 +437,31 @@ a.register('AxLje', function(b, c) {
             name: 'Pure Gold',
             description: 'Now you\'re just showing off',
             question: {
-                background: n,
+                background: o,
                 text: '#FFCD2B'
             },
             palette: [{
                     background: '#FFCD2B',
-                    text: n
+                    text: o
                 },
                 {
                     background: '#FFC721',
-                    text: n
+                    text: o
                 },
                 {
                     background: '#FFD147',
-                    text: n
+                    text: o
                 },
                 {
                     background: '#FFCD38',
-                    text: n
+                    text: o
                 }
             ],
             owned: !1,
             isActive: !1
         }
     ];
-    let _r;
-    var s;
-    (s = _r || (_r = {})).original = 'original', s.map = 'map';
+    let _s;
+    var t;
+    (t = _s || (_s = {})).original = 'original', t.map = 'map';
 });

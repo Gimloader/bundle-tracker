@@ -7,112 +7,112 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('lESQp', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('4fUtG', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _C(b.exports, 'default', function() {
-        return _B;
+    }), a(d.exports, 'default', function() {
+        return _D;
     });
-    var e = a('0hzx+'),
-        f = a('LEQ5w'),
-        g = a('Axq+p'),
-        h = a('mQCZt'),
-        i = a('11nl3'),
-        j = a('2GeW4'),
-        k = a('TwXYL'),
-        l = a('aUrj4'),
-        m = a('sHRDd'),
-        n = a('UyyDS'),
-        o = a('eeCUl'),
-        p = a('bI0IS'),
-        q = a('le6+G'),
-        r = a('2x11J'),
-        s = a('bHGrl'),
-        t = a('iG9EJ'),
-        u = a('rr5bz'),
-        v = a('YuT/D'),
-        w = a('VY8e2'),
-        x = a('N8S9w'),
-        y = a('L1523');
-    let z;
-    const A = f.lazy(() => a('pdAi8'));
-    var _B = (0, r.observer)(() => {
+    var g = c('gRbUn'),
+        h = c('O0Kav'),
+        i = c('u4s09'),
+        j = c('LihP5'),
+        k = c('SxihY'),
+        l = c('UkybP'),
+        m = c('9aZ6t'),
+        n = c('g1XUS'),
+        o = c('8KqQ+'),
+        p = c('Kiu7k'),
+        q = c('lIJIq'),
+        r = c('ZqaCP'),
+        s = c('eLsOE'),
+        t = c('6jmvl'),
+        u = c('K/2xB'),
+        v = c('uQzYS'),
+        w = c('jEuDs'),
+        x = c('JkQCT'),
+        y = c('DArvL'),
+        z = c('N5ueH'),
+        A = c('qIlyp');
+    let B;
+    const C = h.lazy(() => c('YjcsJ'));
+    var _D = (0, t.observer)(() => {
         const {
-            me: _C,
+            me: E,
             world: {
-                devices: D
+                devices: F
             }
-        } = (0, s.default)(), {
-            options: E,
-            hooks: F,
-            position: G
-        } = (0, o.default)(), {
-            device: H,
-            deviceOption: I
-        } = (0, p.default)(), J = (0, w.IsVisualEditingActive)();
-        f.useEffect(() => {
-            if (J)
+        } = (0, u.default)(), {
+            options: G,
+            hooks: H,
+            position: I
+        } = (0, q.default)(), {
+            device: J,
+            deviceOption: K
+        } = (0, r.default)(), L = (0, y.IsVisualEditingActive)();
+        h.useEffect(() => {
+            if (L)
                 return () => {};
-            return (0, q.AddInputBlockingUI)().dispose;
-        }, [J]);
+            return (0, s.AddInputBlockingUI)().dispose;
+        }, [L]);
         const {
-            start: K,
-            clear: L
-        } = (0, u.useTimeout)(() => {
-            D.devices.get(_C.editing.device.currentlyEditedDevice.id) || z();
+            start: M,
+            clear: N
+        } = (0, w.useTimeout)(() => {
+            F.devices.get(E.editing.device.currentlyEditedDevice.id) || B();
         }, 25);
-        if (f.useEffect(() => {
-                const M = (0, v.when)(() => !D.devices.get(_C.editing.device.currentlyEditedDevice.id), () => {
-                        K();
+        if (h.useEffect(() => {
+                const O = (0, x.when)(() => !F.devices.get(E.editing.device.currentlyEditedDevice.id), () => {
+                        M();
                     }),
-                    N = (0, v.when)(() => !!D.devices.get(_C.editing.device.currentlyEditedDevice.id), () => {
-                        L();
+                    P = (0, x.when)(() => !!F.devices.get(E.editing.device.currentlyEditedDevice.id), () => {
+                        N();
                     });
                 return () => {
-                    M(), N();
+                    O(), P();
                 };
-            }, [_C.editing.device.currentlyEditedDevice.id]), !H || !I)
+            }, [E.editing.device.currentlyEditedDevice.id]), !J || !K)
             return null;
-        const M = () => {
-            (0, h.default)(i.default.none), (0, y.EmitTutorialEvent)({
-                event: y.TutorialEventName.CLOSE_DEVICE_OPTIONS,
-                device: H
+        const O = () => {
+            (0, j.default)(k.default.none), (0, A.EmitTutorialEvent)({
+                event: A.TutorialEventName.CLOSE_DEVICE_OPTIONS,
+                device: J
             });
         };
-        return J ? (0, e.jsx)(x.default, {}) : (0, e.jsx)(j.default, {
+        return L ? (0, g.jsx)(z.default, {}) : (0, g.jsx)(l.default, {
             className: 'maxAll',
-            children: (0, e.jsx)(_C, {
-                onClick: M,
-                children: (0, e.jsx)(f.Suspense, {
+            children: (0, g.jsx)(_E, {
+                onClick: O,
+                children: (0, g.jsx)(h.Suspense, {
                     fallback: null,
-                    children: _C.editing.device.screen === t.EditingDeviceScreen.grid ? (0, e.jsx)(A, {
+                    children: E.editing.device.screen === v.EditingDeviceScreen.grid ? (0, g.jsx)(C, {
                         close: () => {
-                            _C.editing.device.screen = t.EditingDeviceScreen.home;
+                            E.editing.device.screen = v.EditingDeviceScreen.home;
                         },
-                        deviceId: H.id
-                    }) : (0, e.jsx)(n.default, {
-                        device: H,
-                        deviceOption: I,
-                        position: G,
-                        options: E,
-                        hooks: F,
-                        close: M
+                        deviceId: J.id
+                    }) : (0, g.jsx)(p.default, {
+                        device: J,
+                        deviceOption: K,
+                        position: I,
+                        options: G,
+                        hooks: H,
+                        close: O
                     })
                 })
             })
         });
     });
-    const _C = (0, g.default)(k.motion.div).attrs({
+    const _E = (0, i.default)(m.motion.div).attrs({
         className: 'maxAll',
         transition: {
-            duration: l.default.enterExit.duration,
-            ease: l.default.enterExit.ease
+            duration: n.default.enterExit.duration,
+            ease: n.default.enterExit.ease
         },
         initial: {
             background: 'rgba(0,0,0,0)'
@@ -123,110 +123,110 @@ a.register('lESQp', function(b, c) {
         exit: {
             background: 'rgba(0,0,0,0)'
         }
-    })(z || (z = (_g => _g)`
+    })(B || (B = (a => a)`
   color: ${ 0 };
-`), m.default.White);
-}), a.register('aUrj4', function(b, c) {
-    _g(b.exports, 'default', function() {
-        return _d;
+`), o.default.White);
+}), c.register('g1XUS', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         enterExit: {
             duration: 0.22,
             ease: 'easeInOut'
         }
     };
-}), a.register('UyyDS', function(b, c) {
-    _g(b.exports, 'DeviceEditingHomeTab', function() {
-        return _l;
-    }), _g(b.exports, 'default', function() {
+}), c.register('Kiu7k', function(d, e) {
+    a(d.exports, 'DeviceEditingHomeTab', function() {
         return _n;
+    }), a(d.exports, 'default', function() {
+        return _p;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('fjWOo'),
-        h = a('8lG8z'),
-        i = a('ryWAy'),
-        j = a('8WvaZ');
-    let k, _l;
-    var m;
-    (m = _l || (_l = {})).options = 'options', m.codeGrids = 'codeGrids', m.wires = 'wires';
-    var _n = _g => {
-        (0, i.default)(_b(j).Input.Keyboard.KeyCodes.ESC, _g.close, [_g.close]);
-        const [o, p] = e.useState(_l.options);
-        return (0, d.jsxs)(_o, {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('/Gkl6'),
+        j = c('S0D4d'),
+        k = c('J8L14'),
+        l = c('ddhGF');
+    let m, _n;
+    var o;
+    (o = _n || (_n = {})).options = 'options', o.codeGrids = 'codeGrids', o.wires = 'wires';
+    var _p = a => {
+        (0, k.default)(b(l).Input.Keyboard.KeyCodes.ESC, a.close, [a.close]);
+        const [q, r] = g.useState(_n.options);
+        return (0, f.jsxs)(_q, {
             children: [
-                (0, d.jsx)(g.default, {
-                    device: _g.device,
-                    deviceOption: _g.deviceOption,
-                    options: _g.options,
-                    tab: o,
-                    setTab: p
+                (0, f.jsx)(i.default, {
+                    device: a.device,
+                    deviceOption: a.deviceOption,
+                    options: a.options,
+                    tab: q,
+                    setTab: r
                 }),
-                (0, d.jsx)(h.default, {
-                    device: _g.device,
-                    options: _g.options,
-                    hooks: _g.hooks,
-                    position: _g.position,
-                    deviceOption: _g.deviceOption,
-                    tab: o
+                (0, f.jsx)(j.default, {
+                    device: a.device,
+                    options: a.options,
+                    hooks: a.hooks,
+                    position: a.position,
+                    deviceOption: a.deviceOption,
+                    tab: q
                 })
             ]
         });
     };
-    const _o = f.default.div.attrs({
+    const _q = h.default.div.attrs({
         className: 'maxAll flex between'
-    })(k || (k = (_g => _g)``));
-}), a.register('fjWOo', function(_b, c) {
-    _g(_b.exports, 'default', function() {
-        return _A;
+    })(m || (m = (a => a)``));
+}), c.register('/Gkl6', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _C;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('ulE4q'),
-        f = a('cvto726'),
-        g = a('spKsy'),
-        h = a('Axq+p'),
-        i = a('TwXYL'),
-        j = a('aUrj4'),
-        k = a('2x11J'),
-        l = a('k2Q4/'),
-        m = a('qVhMZ'),
-        n = a('QVC+I'),
-        o = a('UyyDS'),
-        p = a('U50Uf'),
-        q = a('vLowm'),
-        r = a('bzU3s'),
-        s = a('IL597'),
-        t = a('VY8e2'),
-        u = a('M5eI4'),
-        v = a('0PFEY'),
-        w = a('NQh+U'),
-        x = a('FK3Hv'),
-        y = a('Gxfhq');
-    let z;
-    var _A = (0, k.observer)(_g => {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('P1KtI'),
+        h = c('E2AMI26'),
+        i = c('D1Dez'),
+        j = c('u4s09'),
+        k = c('9aZ6t'),
+        l = c('g1XUS'),
+        m = c('6jmvl'),
+        n = c('okbm4'),
+        o = c('Q6LQJ'),
+        p = c('DXQir'),
+        q = c('Kiu7k'),
+        r = c('IlHF0'),
+        s = c('Ax/Fw'),
+        t = c('gp8Qp0'),
+        u = c('xuwpw'),
+        v = c('DArvL'),
+        w = c('VjCBm'),
+        x = c('u5JEh1'),
+        y = c('0ylKA'),
+        z = c('y1oBc'),
+        A = c('9N6Bn');
+    let B;
+    var _C = (0, m.observer)(a => {
         const {
-            device: B,
-            deviceOption: C,
-            options: D,
-            tab: E,
-            setTab: F
-        } = _g, G = (0, l.DoesDeviceTypeHaveAvailableCodeGrids)(C.id, D), H = (0, q.DeviceHasAWireAttached)(B.id);
-        return (0, d.jsxs)(_B, {
+            device: D,
+            deviceOption: E,
+            options: F,
+            tab: G,
+            setTab: H
+        } = a, I = (0, n.DoesDeviceTypeHaveAvailableCodeGrids)(E.id, F), J = (0, s.DeviceHasAWireAttached)(D.id);
+        return (0, f.jsxs)(_D, {
             children: [
-                (0, d.jsxs)('div', {
+                (0, f.jsxs)('div', {
                     className: 'maxWidth',
                     children: [
-                        (0, d.jsx)(w.default, {
-                            deviceId: B.id
+                        (0, f.jsx)(y.default, {
+                            deviceId: D.id
                         }),
-                        (0, d.jsx)(p.default, {
-                            deviceId: B.id,
-                            deviceOption: C
+                        (0, f.jsx)(r.default, {
+                            deviceId: D.id,
+                            deviceOption: E
                         }),
-                        (0, d.jsxs)(f.default, {
+                        (0, f.jsxs)(h.default, {
                             direction: 'vertical',
                             size: 4,
                             className: 'maxWidth',
@@ -234,40 +234,40 @@ a.register('lESQp', function(b, c) {
                                 marginTop: 16
                             },
                             children: [
-                                (0, d.jsx)(g.default, {
+                                (0, f.jsx)(i.default, {
                                     icon: 'fas fa-cog',
                                     name: 'Options',
-                                    selected: E === o.DeviceEditingHomeTab.options,
+                                    selected: G === q.DeviceEditingHomeTab.options,
                                     onSelect: () => {
-                                        F(o.DeviceEditingHomeTab.options);
+                                        H(q.DeviceEditingHomeTab.options);
                                     }
                                 }),
-                                G ? (0, d.jsx)(g.default, {
+                                I ? (0, f.jsx)(i.default, {
                                     icon: 'fas fa-cubes',
-                                    name: (0, m.CapitalizeFirstLetter)(n.default.grid.plural),
-                                    selected: E === o.DeviceEditingHomeTab.codeGrids,
+                                    name: (0, o.CapitalizeFirstLetter)(p.default.grid.plural),
+                                    selected: G === q.DeviceEditingHomeTab.codeGrids,
                                     onSelect: () => {
-                                        F(o.DeviceEditingHomeTab.codeGrids);
+                                        H(q.DeviceEditingHomeTab.codeGrids);
                                     }
                                 }) : null,
-                                H ? (0, d.jsx)(g.default, {
+                                J ? (0, f.jsx)(i.default, {
                                     icon: 'fas fa-plug',
-                                    name: (0, m.CapitalizeFirstLetter)(r.default.wire.plural),
-                                    selected: E === o.DeviceEditingHomeTab.wires,
+                                    name: (0, o.CapitalizeFirstLetter)(t.default.wire.plural),
+                                    selected: G === q.DeviceEditingHomeTab.wires,
                                     onSelect: () => {
-                                        F(o.DeviceEditingHomeTab.wires);
+                                        H(q.DeviceEditingHomeTab.wires);
                                     }
                                 }) : null
                             ]
                         })
                     ]
                 }),
-                (0, d.jsx)('div', {
-                    children: (0, s.DoesEditedDeviceSupportVisualEditing)() && !(0, t.IsVisualEditingActive)() && (0, y.default)() ? (0, d.jsx)(e.default, {
+                (0, f.jsx)('div', {
+                    children: (0, u.DoesEditedDeviceSupportVisualEditing)() && !(0, v.IsVisualEditingActive)() && (0, A.default)() ? (0, f.jsx)(g.default, {
                         size: 'large',
                         type: 'primary',
-                        onClick: _g => {
-                            (0, v.default)(_g), (0, x.playClickSound)(), (0, u.SetVisualEditingData)();
+                        onClick: a => {
+                            (0, x.default)(a), (0, z.playClickSound)(), (0, w.SetVisualEditingData)();
                         },
                         children: 'Change Size'
                     }) : null
@@ -275,11 +275,11 @@ a.register('lESQp', function(b, c) {
             ]
         });
     });
-    const _B = (0, h.default)(i.motion.div).attrs({
+    const _D = (0, j.default)(k.motion.div).attrs({
         className: 'flex-column between maxWidth',
         transition: {
-            duration: j.default.enterExit.duration,
-            ease: j.default.enterExit.ease
+            duration: l.default.enterExit.duration,
+            ease: l.default.enterExit.ease
         },
         initial: {
             opacity: 0
@@ -290,51 +290,51 @@ a.register('lESQp', function(b, c) {
         exit: {
             opacity: 0
         }
-    })(z || (z = (_g => _g)`
+    })(B || (B = (a => a)`
   padding: 25px;
 `));
-}), a.register('spKsy', function(b, c) {
-    _g(b.exports, 'default', function() {
-        return _p;
+}), c.register('D1Dez', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _r;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('0HHAH'),
-        g = a('vShe/'),
-        h = a('9R7cy'),
-        i = a('j2ADs'),
-        j = a('0PFEY'),
-        k = a('FK3Hv');
-    let l, m, n, o = _g => _g;
-    var _p = _g => {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('MgONH'),
+        i = c('HOIhZ'),
+        j = c('t52Ep'),
+        k = c('22RS1'),
+        l = c('u5JEh1'),
+        m = c('y1oBc');
+    let n, o, p, q = a => a;
+    var _r = a => {
         const {
-            selected: q,
-            name: r,
-            icon: s,
-            onSelect: t
-        } = _g;
-        return (0, d.jsxs)(_q, {
-            onClick: _g => {
-                (0, j.default)(_g), (0, k.playClickSound)(), t();
+            selected: s,
+            name: t,
+            icon: u,
+            onSelect: v
+        } = a;
+        return (0, f.jsxs)(_s, {
+            onClick: a => {
+                (0, l.default)(a), (0, m.playClickSound)(), v();
             },
             children: [
-                (0, d.jsx)(_r, {
-                    selected: q,
-                    children: (0, d.jsx)(h.default, {
-                        name: s
+                (0, f.jsx)(_t, {
+                    selected: s,
+                    children: (0, f.jsx)(j.default, {
+                        name: u
                     })
                 }),
-                (0, d.jsx)(_s, {
-                    children: (0, d.jsx)(i.default.Title, {
+                (0, f.jsx)(_u, {
+                    children: (0, f.jsx)(k.default.Title, {
                         level: 4,
-                        children: r
+                        children: t
                     })
                 })
             ]
         });
     };
-    const _q = (0, e.default)(f.VerticallyCentered)(l || (l = o`
+    const _s = (0, g.default)(h.VerticallyCentered)(n || (n = q`
   padding: 8px 15px;
   padding-left: 0px;
   border-radius: 6px;
@@ -346,161 +346,161 @@ a.register('lESQp', function(b, c) {
     background: rgba(255, 255, 255, 0.1);
   }
 `)),
-        _r = (0, e.default)(f.Centered)(m || (m = o`
+        _t = (0, g.default)(h.Centered)(o || (o = q`
   height: 36px;
   width: 36px;
   border: 2px solid ${ 0 };
   background: ${ 0 };
   border-radius: 50%;
   transition: background 0.2s ease;
-`), g.default.White, _g => _g.selected ? '#269900' : 'rgba(0,0,0,0.2)'),
-        _s = e.default.div(n || (n = o`
+`), i.default.White, a => a.selected ? '#269900' : 'rgba(0,0,0,0.2)'),
+        _u = g.default.div(p || (p = q`
   margin-left: 14px;
 `));
-}), a.register('0PFEY', function(b, c) {
-    _g(b.exports, 'default', function() {
-        return _d;
+}), c.register('u5JEh1', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = _g => {
-        null == _g || _g.stopPropagation();
+    var _f = a => {
+        null == a || a.stopPropagation();
     };
-}), a.register('k2Q4/', function(b, c) {
-    _g(b.exports, 'AvailableCodeGridsForDeviceType', function() {
-        return _j;
-    }), _g(b.exports, 'DoesDeviceTypeHaveAvailableCodeGrids', function() {
+}), c.register('okbm4', function(d, e) {
+    a(d.exports, 'AvailableCodeGridsForDeviceType', function() {
+        return _l;
+    }), a(d.exports, 'DoesDeviceTypeHaveAvailableCodeGrids', function() {
+        return _p;
+    });
+    var f = c('KjmWt'),
+        g = c('fI6of'),
+        h = c('/8pzB'),
+        i = c('2O753'),
+        j = c('fQ/Z/'),
+        k = c('PlfjJ');
+    const _l = (a, d) => {
+            var m, n;
+            const o = g.default.worldOptions.deviceOptions.find(d => d.id === a);
+            if (!o)
+                return [];
+            if (!(0, j.CanAddDeviceType)(a, d))
+                return [];
+            if (!(0, i.CanAddCodeGrids)())
+                return [];
+            let _p = [];
+            const {
+                codeGridSchema: q
+            } = o;
+            return q.allowChannelGrids && (0, k.IsRoleLevelBetween)(null == q || null === (m = q.channelGridsRoleLevel) || void 0 === m ? void 0 : m.min, null == q || null === (n = q.channelGridsRoleLevel) || void 0 === n ? void 0 : n.max) && _p.push({
+                type: f.default.broadcastMessage,
+                name: 'When receiving on channel...'
+            }), q.triggers.forEach(a => {
+                (0, h.CanAddCodeGrid)(o.id, a.type) && _p.push({
+                    type: a.type,
+                    name: a.name
+                });
+            }), _p;
+        },
+        m = (a, d) => !!_l(a, d).length;
+}), c.register('/8pzB', function(d, e) {
+    a(d.exports, 'CanAddCodeGrid', function() {
+        return _h;
+    });
+    var f = c('5P0VZ'),
+        g = c('PlfjJ');
+    const _h = (a, d) => {
+        const i = (0, f.FetchDeviceOptionById)(a);
+        if (!i)
+            return !1;
+        const j = i.codeGridSchema.triggers.find(a => a.type === d);
+        if (!j)
+            return !1;
+        const k = j.minimumRoleLevel,
+            l = j.maximumRoleLevel;
+        return (0, g.IsRoleLevelBetween)(k, l);
+    };
+}), c.register('2O753', function(d, e) {
+    a(d.exports, 'CanAddCodeGrids', function() {
+        return _h;
+    });
+    var f = c('biYoF'),
+        g = c('PlfjJ');
+    const _h = () => {
+        const i = f.RoleLevelPermissions.codeGrids.minimumRoleLevel,
+            j = f.RoleLevelPermissions.codeGrids.maximumRoleLevel;
+        return (0, g.IsRoleLevelBetween)(i, j);
+    };
+}), c.register('IlHF0', function(d, e) {
+    a(d.exports, 'default', function() {
         return _n;
     });
-    var d = a('J2kec'),
-        e = a('iWivW'),
-        f = a('t2tO1'),
-        g = a('z/xWG'),
-        h = a('FAXfY'),
-        i = a('O3NOb');
-    const _j = (_g, b) => {
-            var k, l;
-            const m = e.default.worldOptions.deviceOptions.find(b => b.id === _g);
-            if (!m)
-                return [];
-            if (!(0, h.CanAddDeviceType)(_g, b))
-                return [];
-            if (!(0, g.CanAddCodeGrids)())
-                return [];
-            let _n = [];
-            const {
-                codeGridSchema: o
-            } = m;
-            return o.allowChannelGrids && (0, i.IsRoleLevelBetween)(null == o || null === (k = o.channelGridsRoleLevel) || void 0 === k ? void 0 : k.min, null == o || null === (l = o.channelGridsRoleLevel) || void 0 === l ? void 0 : l.max) && _n.push({
-                type: d.default.broadcastMessage,
-                name: 'When receiving on channel...'
-            }), o.triggers.forEach(_g => {
-                (0, f.CanAddCodeGrid)(m.id, _g.type) && _n.push({
-                    type: _g.type,
-                    name: _g.name
-                });
-            }), _n;
-        },
-        k = (_g, b) => !!_j(_g, b).length;
-}), a.register('t2tO1', function(b, c) {
-    _g(b.exports, 'CanAddCodeGrid', function() {
-        return _f;
-    });
-    var d = a('KzfsH'),
-        e = a('O3NOb');
-    const _f = (_g, b) => {
-        const g = (0, d.FetchDeviceOptionById)(_g);
-        if (!g)
-            return !1;
-        const h = g.codeGridSchema.triggers.find(_g => _g.type === b);
-        if (!h)
-            return !1;
-        const i = h.minimumRoleLevel,
-            j = h.maximumRoleLevel;
-        return (0, e.IsRoleLevelBetween)(i, j);
-    };
-}), a.register('z/xWG', function(b, c) {
-    _g(b.exports, 'CanAddCodeGrids', function() {
-        return _f;
-    });
-    var d = a('jHBjp'),
-        e = a('O3NOb');
-    const _f = () => {
-        const _g = d.RoleLevelPermissions.codeGrids.minimumRoleLevel,
-            h = d.RoleLevelPermissions.codeGrids.maximumRoleLevel;
-        return (0, e.IsRoleLevelBetween)(_g, h);
-    };
-}), a.register('U50Uf', function(b, c) {
-    _q(b.exports, 'default', function() {
-        return _l;
-    });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('0Or0D'),
-        g = a('47u/+'),
-        h = a('iWivW'),
-        i = a('j2ADs'),
-        j = a('PMl60'),
-        k = a('AvtVx');
-    var _l = _q => {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('m5VND'),
+        i = c('AAbjw'),
+        j = c('fI6of'),
+        k = c('22RS1'),
+        l = c('quE27'),
+        m = c('wfPQ8');
+    var _n = a => {
         const {
-            deviceId: m,
-            deviceOption: n
-        } = _q, [o, p] = e.useState((0, f.GetRemovingDeviceTotalMemoryCost)({
-            deviceId: m
+            deviceId: o,
+            deviceOption: p
+        } = a, [q, r] = g.useState((0, h.GetRemovingDeviceTotalMemoryCost)({
+            deviceId: o
         }));
-        return e.useEffect(() => (0, g.ReactionToMultipleProps)([
+        return g.useEffect(() => (0, i.ReactionToMultipleProps)([
             () => {
-                var _q;
-                return null === (_q = h.default.world.devices.codeGrids.get(m)) || void 0 === _q ? void 0 : _q.items.size;
+                var s;
+                return null === (s = j.default.world.devices.codeGrids.get(o)) || void 0 === s ? void 0 : s.items.size;
             },
-            () => h.default.memorySystem.counters.devices.get(n.id)
+            () => j.default.memorySystem.counters.devices.get(p.id)
         ], () => {
-            p((0, f.GetRemovingDeviceTotalMemoryCost)({
-                deviceId: m
+            r((0, h.GetRemovingDeviceTotalMemoryCost)({
+                deviceId: o
             }));
         }, {
             fireImmediately: !0
-        }), [m]), (0, d.jsxs)(i.default.Text, {
+        }), [o]), (0, f.jsxs)(k.default.Text, {
             italic: !0,
             children: [
-                (0, j.numberWithCommas)(o),
+                (0, l.numberWithCommas)(q),
                 ' ',
-                k.MemoryName
+                m.MemoryName
             ]
         });
     };
-}), a.register('47u/+', function(b, c) {
-    _g(b.exports, 'ReactionToMultipleProps', function() {
-        return _e;
+}), c.register('AAbjw', function(d, e) {
+    a(d.exports, 'ReactionToMultipleProps', function() {
+        return _g;
     });
-    var d = a('YuT/D');
-    const _e = (_g, b, a) => {
-        const f = [];
-        return _g.forEach(_g => {
-            const g = (0, d.reaction)(_g, b, a);
-            f.push(g);
+    var f = c('JkQCT');
+    const _g = (a, d, c) => {
+        const h = [];
+        return a.forEach(a => {
+            const i = (0, f.reaction)(a, d, c);
+            h.push(i);
         }), () => {
-            f.forEach(_g => {
-                _g();
+            h.forEach(a => {
+                a();
             });
         };
     };
-}), a.register('vLowm', function(b, c) {
-    _g(b.exports, 'WiresStartingFromDevice', function() {
-        return _e;
-    }), _g(b.exports, 'WiresEndingAtDevice', function() {
-        return _f;
-    }), _g(b.exports, 'DeviceHasAWireAttached', function() {
+}), c.register('Ax/Fw', function(d, e) {
+    a(d.exports, 'WiresStartingFromDevice', function() {
         return _g;
+    }), a(d.exports, 'WiresEndingAtDevice', function() {
+        return _h;
+    }), a(d.exports, 'DeviceHasAWireAttached', function() {
+        return _i;
     });
-    var d = a('iWivW');
-    const _e = _g => Array.from(d.default.world.wires.wires.keys()).filter(b => b.startsWith(_g)).map(_g => d.default.world.wires.wires.get(_g)),
-        _f = _g => Array.from(d.default.world.wires.wires.keys()).filter(b => b.endsWith(_g)).map(_g => d.default.world.wires.wires.get(_g)),
-        _g = _g => !(!_e(_g).length && !_f(_g).length);
-}), a.register('bzU3s', function(b, c) {
-    _g(b.exports, 'default', function() {
-        return _d;
+    var f = c('fI6of');
+    const _g = a => Array.from(f.default.world.wires.wires.keys()).filter(d => d.startsWith(a)).map(a => f.default.world.wires.wires.get(a)),
+        _h = a => Array.from(f.default.world.wires.wires.keys()).filter(d => d.endsWith(a)).map(a => f.default.world.wires.wires.get(a)),
+        _i = a => !(!_g(a).length && !_h(a).length);
+}), c.register('gp8Qp0', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         terrain: {
             singular: 'terrain',
             plural: 'terrains'
@@ -518,138 +518,138 @@ a.register('lESQp', function(b, c) {
             plural: 'wires'
         }
     };
-}), a.register('IL597', function(b, c) {
-    _g(b.exports, 'DoesEditedDeviceSupportVisualEditing', function() {
-        return _f;
-    });
-    var d = a('iWivW'),
-        e = a('D5xLI');
-    const _f = () => {
-        var _g;
-        const h = (0, e.default)().worldManager.devices.getDeviceById(null !== (_g = d.default.me.editing.device.currentlyEditedDevice.id) && void 0 !== _g ? _g : '');
-        return !!h && h.visualEditing.uses();
-    };
-}), a.register('M5eI4', function(b, c) {
-    _i(b.exports, 'SetVisualEditingData', function() {
+}), c.register('xuwpw', function(d, e) {
+    a(d.exports, 'DoesEditedDeviceSupportVisualEditing', function() {
         return _h;
     });
-    var d = a('HqwPM'),
-        e = a('iWivW'),
-        f = a('aIyMH'),
-        g = a('A17vD');
+    var f = c('fI6of'),
+        g = c('heTaO');
     const _h = () => {
-        const _i = (0, g.FetchCurrentlyEditedDevice)();
-        if (!_i)
+        var i;
+        const j = (0, g.default)().worldManager.devices.getDeviceById(null !== (i = f.default.me.editing.device.currentlyEditedDevice.id) && void 0 !== i ? i : '');
+        return !!j && j.visualEditing.uses();
+    };
+}), c.register('VjCBm', function(d, e) {
+    a(d.exports, 'SetVisualEditingData', function() {
+        return _j;
+    });
+    var f = c('hemXM'),
+        g = c('fI6of'),
+        h = c('2LtPo'),
+        i = c('EzUqb');
+    const _j = () => {
+        const k = (0, i.FetchCurrentlyEditedDevice)();
+        if (!k)
             return;
-        _i.parts.forceHide(), _i.colliders.hideDebug(), _i.shadows.hide(), _i.onHide && _i.onHide(), e.default.me.editing.device.visualEditing = {
+        k.parts.forceHide(), k.colliders.hideDebug(), k.shadows.hide(), k.onHide && k.onHide(), g.default.me.editing.device.visualEditing = {
             active: !0,
             instruction: '',
             keyboardHelpers: [],
             cursor: 'default',
-            id: _i.id
+            id: k.id
         };
-        const j = _i.layers.isOnNaturalDepth() ? void 0 : _i.layers.getDepth();
-        (0, f.default)({
-            id: d.VisualEditingConstants.previewId,
-            deviceOption: _i.deviceOption,
+        const l = k.layers.isOnNaturalDepth() ? void 0 : k.layers.getDepth();
+        (0, h.default)({
+            id: f.VisualEditingConstants.previewId,
+            deviceOption: k.deviceOption,
             isPreview: !0,
             options: {
-                ..._i.options
+                ...k.options
             },
             placedByClient: !0,
             state: {
-                ..._i.deviceOption.defaultState
+                ...k.deviceOption.defaultState
             },
-            x: _i.x,
-            y: _i.y,
-            depth: j,
-            name: _i.name
+            x: k.x,
+            y: k.y,
+            depth: l,
+            name: k.name
         });
     };
-}), a.register('NQh+U', function(b, c) {
-    _z(b.exports, 'default', function() {
-        return _s;
+}), c.register('0ylKA', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _u;
     });
-    var d = a('0hzx+'),
-        e = a('ewwAh'),
-        f = a('YRlpt'),
-        g = a('ijg0s'),
-        h = a('j2ADs'),
-        i = a('LEQ5w'),
-        j = a('vShe/'),
-        k = a('PUGQx1'),
-        l = a('2GeW4'),
-        m = a('PMl60'),
-        n = a('0PFEY'),
-        o = a('Gxfhq'),
-        p = a('2x11J'),
-        q = a('D5xLI'),
-        r = a('uRAeN');
-    var _s = (0, p.observer)(_z => {
-        const [t, u, v] = (0, m.useBoolean)(!1), [w, x] = i.useState(''), y = i.useRef(null);
-        i.useEffect(() => {
-            var _z;
-            t && (x(''), null == y || null === (_z = y.current) || void 0 === _z || _z.focus());
-        }, [t]);
-        const z = () => {
-                const A = null == w ? void 0 : w.trim(),
-                    B = (0, q.default)().worldManager.devices.getDeviceById(_i.deviceId);
-                B && ((0, r.default)({
-                    depth: B.layers.getOptionsDepth(),
-                    layerId: B.layers.getOptionsLayer(),
-                    name: A,
-                    deviceOption: B.deviceOption,
-                    id: B.id,
+    var f = c('gRbUn'),
+        g = c('aevdF'),
+        h = c('AE7vR'),
+        i = c('Dn89R'),
+        j = c('22RS1'),
+        k = c('O0Kav'),
+        l = c('HOIhZ'),
+        m = c('+FJvw1'),
+        n = c('UkybP'),
+        o = c('quE27'),
+        p = c('u5JEh1'),
+        q = c('9N6Bn'),
+        r = c('6jmvl'),
+        s = c('heTaO'),
+        t = c('AhL/f0');
+    var _u = (0, r.observer)(a => {
+        const [v, w, x] = (0, o.useBoolean)(!1), [y, z] = k.useState(''), A = k.useRef(null);
+        k.useEffect(() => {
+            var B;
+            v && (z(''), null == A || null === (B = A.current) || void 0 === B || B.focus());
+        }, [v]);
+        const B = () => {
+                const C = null == y ? void 0 : y.trim(),
+                    D = (0, s.default)().worldManager.devices.getDeviceById(a.deviceId);
+                D && ((0, t.default)({
+                    depth: D.layers.getOptionsDepth(),
+                    layerId: D.layers.getOptionsLayer(),
+                    name: C,
+                    deviceOption: D.deviceOption,
+                    id: D.id,
                     isPreview: !1,
-                    options: B.options,
+                    options: D.options,
                     placedByClient: !1,
-                    state: B.deviceOption.defaultState,
-                    x: B.x,
-                    y: B.y
-                }), v());
+                    state: D.deviceOption.defaultState,
+                    x: D.x,
+                    y: D.y
+                }), x());
             },
-            A = (0, o.default)();
-        return (0, d.jsx)(l.default, {
+            C = (0, q.default)();
+        return (0, f.jsx)(n.default, {
             className: 'maxWidth',
-            children: (0, d.jsxs)('div', {
+            children: (0, f.jsxs)('div', {
                 className: 'flex',
-                onClick: n.default,
+                onClick: p.default,
                 children: [
-                    (0, d.jsx)(g.default, {
-                        title: A ? 'Rename' : void 0,
+                    (0, f.jsx)(i.default, {
+                        title: C ? 'Rename' : void 0,
                         placement: 'right',
-                        children: (0, d.jsx)(h.default.Title, {
+                        children: (0, f.jsx)(j.default.Title, {
                             level: 2,
                             style: {
-                                color: j.default.White,
+                                color: l.default.White,
                                 marginBottom: 2,
-                                cursor: A ? 'pointer' : 'auto'
+                                cursor: C ? 'pointer' : 'auto'
                             },
-                            onClick: A ? u : void 0,
-                            children: (0, k.FetchDeviceName)(_i.deviceId)
+                            onClick: C ? w : void 0,
+                            children: (0, m.FetchDeviceName)(a.deviceId)
                         })
                     }),
-                    (0, d.jsxs)(f.default, {
-                        open: t && A,
-                        onCancel: v,
-                        onOk: z,
+                    (0, f.jsxs)(h.default, {
+                        open: v && C,
+                        onCancel: x,
+                        onOk: B,
                         children: [
-                            (0, d.jsx)(h.default.Title, {
+                            (0, f.jsx)(j.default.Title, {
                                 level: 5,
                                 children: 'Change name'
                             }),
-                            (0, d.jsx)(e.default, {
-                                ref: y,
+                            (0, f.jsx)(g.default, {
+                                ref: A,
                                 maxLength: 64,
                                 style: {
                                     marginTop: 10
                                 },
                                 placeholder: 'New name...',
-                                value: w,
-                                onChange: _i => {
-                                    x(_i.target.value);
+                                value: y,
+                                onChange: a => {
+                                    z(a.target.value);
                                 },
-                                onPressEnter: z
+                                onPressEnter: B
                             })
                         ]
                     })
@@ -657,115 +657,115 @@ a.register('lESQp', function(b, c) {
             })
         });
     });
-}), a.register('PUGQx1', function(b, c) {
-    _i(b.exports, 'FetchDeviceName', function() {
-        return _g;
+}), c.register('+FJvw1', function(d, e) {
+    a(d.exports, 'FetchDeviceName', function() {
+        return _i;
     });
-    var d = a('cPBfb'),
-        e = a('bV9vv'),
-        f = a('iWivW');
-    const _g = _i => {
-        const h = f.default.world.devices.devices.get(_i);
-        if (!h)
+    var f = c('OFuf70'),
+        g = c('ZMrtj'),
+        h = c('fI6of');
+    const _i = a => {
+        const j = h.default.world.devices.devices.get(a);
+        if (!j)
             return '';
-        if (h.name)
-            return h.name;
-        if (h.deviceOption.id === d.default.prop) {
-            const _i = h.options;
-            if (_i.propId) {
-                var j;
-                const k = null === (j = (0, e.default)(_i.propId)) || void 0 === j ? void 0 : j.name;
-                if (k)
-                    return k;
+        if (j.name)
+            return j.name;
+        if (j.deviceOption.id === f.default.prop) {
+            const k = j.options;
+            if (k.propId) {
+                var l;
+                const m = null === (l = (0, g.default)(k.propId)) || void 0 === l ? void 0 : l.name;
+                if (m)
+                    return m;
             }
         }
-        return h.deviceOption.name;
+        return j.deviceOption.name;
     };
-}), a.register('uRAeN', function(b, c) {
-    _N(b.exports, 'default', function() {
-        return _h;
+}), c.register('AhL/f0', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _j;
     });
-    var d = a('D5xLI'),
-        e = a('aIyMH'),
-        f = a('fy44y'),
-        g = a('zZJfb');
-    var _h = _N => {
-        const i = (0, d.default)().worldManager.devices.getDeviceById(_N.id);
-        if (!i)
+    var f = c('heTaO'),
+        g = c('2LtPo'),
+        h = c('llkVK'),
+        i = c('5u9xs');
+    var _j = a => {
+        const k = (0, f.default)().worldManager.devices.getDeviceById(a.id);
+        if (!k)
             return;
-        const j = (0, g.default)(_N.id);
-        if (!j)
+        const l = (0, i.default)(a.id);
+        if (!l)
             return;
-        const k = _N.hooks || j.hooks;
-        (0, e.default)({
-            ..._N,
-            hooks: k,
+        const m = a.hooks || l.hooks;
+        (0, g.default)({
+            ...a,
+            hooks: m,
             placeInstantly: !0,
-            onPlace: j => {
-                j && (0, f.default)({
-                    id: i.id,
-                    deviceTypeId: i.deviceOption.id,
-                    options: JSON.stringify(_N.options),
-                    x: _N.x,
-                    y: _N.y,
-                    depth: j.layers.getOptionsDepth(),
-                    layerId: j.layers.getOptionsLayer(),
-                    name: _N.name,
-                    hooks: k
+            onPlace: l => {
+                l && (0, h.default)({
+                    id: k.id,
+                    deviceTypeId: k.deviceOption.id,
+                    options: JSON.stringify(a.options),
+                    x: a.x,
+                    y: a.y,
+                    depth: l.layers.getOptionsDepth(),
+                    layerId: l.layers.getOptionsLayer(),
+                    name: a.name,
+                    hooks: m
                 });
             }
         });
     };
-}), a.register('8lG8z', function(b, c) {
-    _N(b.exports, 'default', function() {
-        return _q;
+}), c.register('S0D4d', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _s;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('TwXYL'),
-        g = a('aUrj4'),
-        h = a('0PFEY'),
-        i = a('ZWpm0'),
-        j = a('UyyDS'),
-        k = a('vWJSQ'),
-        l = a('S6mEi'),
-        m = a('Ct4sg');
-    let n, o, p = _N => _N;
-    var _q = _N => (0, d.jsxs)(_r, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('9aZ6t'),
+        i = c('g1XUS'),
+        j = c('u5JEh1'),
+        k = c('k1jd6'),
+        l = c('Kiu7k'),
+        m = c('0Jn1k'),
+        n = c('31ack'),
+        o = c('V/q8i');
+    let p, q, r = a => a;
+    var _s = a => (0, f.jsxs)(_t, {
         children: [
-            (0, d.jsx)(_s, {
-                onClick: h.default,
-                children: _N.tab === j.DeviceEditingHomeTab.options ? (0, d.jsx)(i.default, {
-                    device: _N.device,
-                    deviceOption: _N.deviceOption,
-                    position: _N.position,
-                    options: _N.options,
-                    hooks: _N.hooks
-                }) : _N.tab === j.DeviceEditingHomeTab.codeGrids ? (0, d.jsx)(k.default, {
-                    device: _N.device,
-                    deviceOption: _N.deviceOption,
-                    options: _N.options
-                }) : (0, d.jsx)(l.default, {
-                    deviceId: _N.device.id
+            (0, f.jsx)(_u, {
+                onClick: j.default,
+                children: a.tab === l.DeviceEditingHomeTab.options ? (0, f.jsx)(k.default, {
+                    device: a.device,
+                    deviceOption: a.deviceOption,
+                    position: a.position,
+                    options: a.options,
+                    hooks: a.hooks
+                }) : a.tab === l.DeviceEditingHomeTab.codeGrids ? (0, f.jsx)(m.default, {
+                    device: a.device,
+                    deviceOption: a.deviceOption,
+                    options: a.options
+                }) : (0, f.jsx)(n.default, {
+                    deviceId: a.device.id
                 })
             }),
-            (0, d.jsx)(m.default, {
+            (0, f.jsx)(o.default, {
                 padding: 25
             })
         ]
     });
-    const _r = e.default.div.attrs({
+    const _t = g.default.div.attrs({
             className: 'maxAll flex'
-        })(n || (n = p`
+        })(p || (p = r`
   position: relative;
   justify-content: flex-end;
 `)),
-        _s = (0, e.default)(f.motion.div).attrs({
+        _u = (0, g.default)(h.motion.div).attrs({
             className: 'maxAll scroll-y medium-shadow',
             transition: {
-                duration: g.default.enterExit.duration,
-                ease: g.default.enterExit.ease
+                duration: i.default.enterExit.duration,
+                ease: i.default.enterExit.ease
             },
             initial: {
                 opacity: 0.25,
@@ -779,7 +779,7 @@ a.register('lESQp', function(b, c) {
                 opacity: 0.25,
                 x: '100%'
             }
-        })(o || (o = p`
+        })(q || (q = r`
   background: rgba(48, 28, 86, 0.85);
   backdrop-filter: blur(3px);
   width: 490px;
@@ -787,234 +787,234 @@ a.register('lESQp', function(b, c) {
   padding-top: 68px;
   position: relative;
 `));
-}), a.register('vWJSQ', function(b, c) {
-    _N(b.exports, 'default', function() {
-        return _p;
+}), c.register('0Jn1k', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _r;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('2x11J'),
-        g = a('bHGrl'),
-        h = a('k2Q4/'),
-        i = a('ifUNN'),
-        j = a('yoCUM'),
-        k = a('cvto726'),
-        l = a('aCmo+'),
-        m = a('khCBi'),
-        n = a('PMl60');
-    let o;
-    var _p = (0, f.observer)(_N => {
-        var q;
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('6jmvl'),
+        i = c('K/2xB'),
+        j = c('okbm4'),
+        k = c('dopR9'),
+        l = c('cDkCv'),
+        m = c('E2AMI26'),
+        n = c('fCC7B'),
+        o = c('MDDB0'),
+        p = c('quE27');
+    let q;
+    var _r = (0, h.observer)(a => {
+        var s;
         const {
             world: {
                 devices: {
-                    codeGrids: r
+                    codeGrids: t
                 }
             }
-        } = (0, g.default)(), s = _N.device.id, [t, u, v] = (0, n.useBoolean)(!1), w = null === (q = r.get(s)) || void 0 === q ? void 0 : q.items, x = (0, h.AvailableCodeGridsForDeviceType)(_N.deviceOption.id, _N.options), y = w && w.size >= 1, z = x.length >= 1, A = (0, l.default)();
-        return y || A ? (0, d.jsx)(_q, {
-            children: (0, d.jsxs)(k.default, {
+        } = (0, i.default)(), u = a.device.id, [v, w, x] = (0, p.useBoolean)(!1), y = null === (s = t.get(u)) || void 0 === s ? void 0 : s.items, z = (0, j.AvailableCodeGridsForDeviceType)(a.deviceOption.id, a.options), A = y && y.size >= 1, B = z.length >= 1, C = (0, n.default)();
+        return A || C ? (0, f.jsx)(_s, {
+            children: (0, f.jsxs)(m.default, {
                 direction: 'vertical',
                 size: 40,
                 className: 'maxWidth',
                 children: [
-                    y ? (0, d.jsx)(j.default, {
-                        deviceId: s,
-                        codeGrids: w,
-                        isCreatingNewGrid: t,
-                        setIsNotCreatingNewGrid: v
+                    A ? (0, f.jsx)(l.default, {
+                        deviceId: u,
+                        codeGrids: y,
+                        isCreatingNewGrid: v,
+                        setIsNotCreatingNewGrid: x
                     }) : null,
-                    z && A ? (0, d.jsx)(i.default, {
-                        codeGridOptions: x,
-                        deviceId: s,
-                        setIsCreatingNewGrid: u
+                    B && C ? (0, f.jsx)(k.default, {
+                        codeGridOptions: z,
+                        deviceId: u,
+                        setIsCreatingNewGrid: w
                     }) : null
                 ]
             })
-        }) : (0, d.jsx)(m.default, {});
+        }) : (0, f.jsx)(o.default, {});
     });
-    const _q = e.default.div(o || (o = (_N => _N)``));
-}), a.register('ifUNN', function(b, c) {
-    _N(b.exports, 'default', function() {
-        return _D;
+    const _s = g.default.div(q || (q = (a => a)``));
+}), c.register('dopR9', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _F;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('rHr0s'),
-        g = a('oAd0b'),
-        h = a('Axq+p'),
-        i = a('0HHAH'),
-        j = a('NIZyA'),
-        k = a('OB7Pc'),
-        l = a('YRlpt'),
-        m = a('j2ADs'),
-        n = a('QVC+I'),
-        o = a('vShe/'),
-        p = a('u3AQ4'),
-        q = a('bHGrl'),
-        r = a('PMl60'),
-        s = a('47u/+'),
-        t = a('iWivW'),
-        u = a('+Uyq7'),
-        v = a('cQ7LB'),
-        w = a('J2kec'),
-        x = a('m8UaK'),
-        y = a('iulrc'),
-        z = a('FK3Hv');
-    let A, B, C = _N => _N;
-    var _D = _N => {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('ekajQ'),
+        i = c('+F4Nk'),
+        j = c('u4s09'),
+        k = c('MgONH'),
+        l = c('qMSe6'),
+        m = c('/kLkG0'),
+        n = c('AE7vR'),
+        o = c('22RS1'),
+        p = c('DXQir'),
+        q = c('HOIhZ'),
+        r = c('Afwq2'),
+        s = c('K/2xB'),
+        t = c('quE27'),
+        u = c('AAbjw'),
+        v = c('fI6of'),
+        w = c('Iz/dA'),
+        x = c('dRyB/'),
+        y = c('KjmWt'),
+        z = c('+pvlo'),
+        A = c('YqIsD'),
+        B = c('y1oBc');
+    let C, D, E = a => a;
+    var _F = a => {
         const {
-            memorySystem: E
-        } = (0, q.default)(), [F, G] = e.useState((0, u.CanAddCodeGrid)(_N.deviceId)), [H, I, J] = (0, r.useBoolean)(!1), [K, L] = e.useState(''), M = e.useRef(null);
-        e.useEffect(() => (0, s.ReactionToMultipleProps)([
-            () => t.default.memorySystem.counters.codeGrids,
-            () => t.default.memorySystem.usedMemoryCost
+            memorySystem: G
+        } = (0, s.default)(), [H, I] = g.useState((0, w.CanAddCodeGrid)(a.deviceId)), [J, K, L] = (0, t.useBoolean)(!1), [M, N] = g.useState(''), O = g.useRef(null);
+        g.useEffect(() => (0, u.ReactionToMultipleProps)([
+            () => v.default.memorySystem.counters.codeGrids,
+            () => v.default.memorySystem.usedMemoryCost
         ], () => {
-            G((0, u.CanAddCodeGrid)(_N.deviceId));
+            I((0, w.CanAddCodeGrid)(a.deviceId));
         }, {
             fireImmediately: !0
-        }), [_N.deviceId]), e.useEffect(() => {
-            var _N;
-            null == M || null === (_N = M.current) || void 0 === _N || _N.focus();
-        }, [H]);
-        const N = e.useMemo(() => (0, x.default)(y.default.channel), []),
-            O = (0, v.GetCodeGridMessage)({
-                reason: F.reason
+        }), [a.deviceId]), g.useEffect(() => {
+            var P;
+            null == O || null === (P = O.current) || void 0 === P || P.focus();
+        }, [J]);
+        const P = g.useMemo(() => (0, z.default)(A.default.channel), []),
+            Q = (0, x.GetCodeGridMessage)({
+                reason: H.reason
             });
-        return (0, d.jsxs)(_E, {
+        return (0, f.jsxs)(_G, {
             children: [
-                (0, d.jsxs)(_F, {
+                (0, f.jsxs)(_H, {
                     children: [
-                        (0, d.jsxs)(m.default.Title, {
+                        (0, f.jsxs)(o.default.Title, {
                             level: 4,
                             style: {
-                                color: o.default.White
+                                color: q.default.White
                             },
                             children: [
                                 'Create a new ',
-                                n.default.grid.singular
+                                p.default.grid.singular
                             ]
                         }),
-                        (0, d.jsxs)(m.default.Text, {
+                        (0, f.jsxs)(o.default.Text, {
                             italic: !0,
                             children: [
                                 '+',
-                                (0, r.numberWithCommas)(E.costs.codeGrid),
+                                (0, t.numberWithCommas)(G.costs.codeGrid),
                                 ' memory'
                             ]
                         })
                     ]
                 }),
-                F.canAdd ? (0, d.jsx)(f.CodeGridList, {
+                H.canAdd ? (0, f.jsx)(h.CodeGridList, {
                     style: {
                         marginTop: 20
                     },
-                    children: _n.codeGridOptions.map(E => (0, d.jsx)(g.default, {
-                        label: E.name,
+                    children: a.codeGridOptions.map(G => (0, f.jsx)(i.default, {
+                        label: G.name,
                         onClick: () => {
-                            (0, z.playClickSound)(), E.type !== w.default.broadcastMessage ? (_n.setIsCreatingNewGrid(), (0, p.default)({
-                                deviceId: _n.deviceId,
-                                triggerType: E.type,
+                            (0, B.playClickSound)(), G.type !== y.default.broadcastMessage ? (a.setIsCreatingNewGrid(), (0, r.default)({
+                                deviceId: a.deviceId,
+                                triggerType: G.type,
                                 triggerValue: ''
-                            })) : I();
+                            })) : K();
                         }
-                    }, E.type + '-option'))
-                }) : (0, d.jsx)(j.default, {
+                    }, G.type + '-option'))
+                }) : (0, f.jsx)(l.default, {
                     type: 'error',
                     showIcon: !0,
-                    message: O,
+                    message: Q,
                     style: {
                         marginTop: 15
                     }
                 }),
-                (0, d.jsxs)(l.default, {
-                    open: H,
-                    onCancel: J,
+                (0, f.jsxs)(n.default, {
+                    open: J,
+                    onCancel: L,
                     onOk: () => {
-                        const P = null == K ? void 0 : K.trim();
-                        P && P.length && (_n.setIsCreatingNewGrid(), (0, p.default)({
-                            deviceId: _n.deviceId,
-                            triggerType: w.default.broadcastMessage,
-                            triggerValue: K
-                        }), J(), L(''));
+                        const R = null == M ? void 0 : M.trim();
+                        R && R.length && (a.setIsCreatingNewGrid(), (0, r.default)({
+                            deviceId: a.deviceId,
+                            triggerType: y.default.broadcastMessage,
+                            triggerValue: M
+                        }), L(), N(''));
                     },
                     children: [
-                        (0, d.jsx)(m.default.Title, {
+                        (0, f.jsx)(o.default.Title, {
                             level: 5,
                             children: 'Channel name'
                         }),
-                        (0, d.jsxs)(m.default.Text, {
+                        (0, f.jsxs)(o.default.Text, {
                             children: [
                                 'The ',
-                                n.default.grid.singular,
+                                p.default.grid.singular,
                                 ' will run when receiving a message from this channel'
                             ]
                         }),
-                        (0, d.jsx)(k.default, {
-                            ref: M,
-                            value: K,
+                        (0, f.jsx)(m.default, {
+                            ref: O,
+                            value: M,
                             className: 'maxWidth',
                             placeholder: 'Channel name...',
-                            onChange: L,
+                            onChange: N,
                             maxLength: 512,
                             style: {
                                 marginTop: 10,
                                 marginBottom: 3
                             },
                             autoFocus: !0,
-                            options: N.map(_n => ({
-                                value: _n
+                            options: P.map(a => ({
+                                value: a
                             })),
-                            filterOption: (_n, E) => -1 !== E.value.toUpperCase().indexOf(_n.toUpperCase())
+                            filterOption: (a, G) => -1 !== G.value.toUpperCase().indexOf(a.toUpperCase())
                         })
                     ]
                 })
             ]
         });
     };
-    const _E = h.default.div.attrs({
+    const _G = j.default.div.attrs({
             className: 'maxWidth'
-        })(A || (A = C``)),
-        _F = (0, h.default)(i.VerticallyCentered).attrs({
+        })(C || (C = E``)),
+        _H = (0, j.default)(k.VerticallyCentered).attrs({
             className: 'maxWidth between'
-        })(B || (B = C``));
-}), a.register('rHr0s', function(b, c) {
-    _n(b.exports, 'CodeGridList', function() {
-        return _e;
+        })(D || (D = E``));
+}), c.register('ekajQ', function(d, e) {
+    a(d.exports, 'CodeGridList', function() {
+        return _g;
     });
-    let d;
-    const _e = a('Axq+p').default.div.attrs({
+    let f;
+    const _g = c('u4s09').default.div.attrs({
         className: 'maxWidth'
-    })(d || (d = (_n => _n)`
+    })(f || (f = (a => a)`
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 `));
-}), a.register('oAd0b', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _i;
+}), c.register('+F4Nk', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('0hzx+'),
-        e = a('j2ADs');
-    a('LEQ5w');
-    var f = a('Axq+p'),
-        g = a('0HHAH');
-    let h;
-    var _i = _n => (0, d.jsxs)(_j, {
-        onClick: _n.onClick,
+    var f = c('gRbUn'),
+        g = c('22RS1');
+    c('O0Kav');
+    var h = c('u4s09'),
+        i = c('MgONH');
+    let j;
+    var _k = a => (0, f.jsxs)(_l, {
+        onClick: a.onClick,
         children: [
-            _n.children,
-            (0, d.jsx)(e.default.Text, {
-                children: _n.label
+            a.children,
+            (0, f.jsx)(g.default.Text, {
+                children: a.label
             })
         ]
     });
-    const _j = (0, f.default)(g.Centered).attrs({
+    const _l = (0, h.default)(i.Centered).attrs({
         className: 'maxWidth'
-    })(h || (h = (_n => _n)`
+    })(j || (j = (a => a)`
   padding: 30px 20px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
@@ -1027,212 +1027,212 @@ a.register('lESQp', function(b, c) {
     background: rgba(255, 255, 255, 0.2);
   }
 `));
-}), a.register('OB7Pc', function(b, c) {
-    _n(b.exports, 'default', function() {
-        return _t;
+}), c.register('/kLkG0', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _w;
     });
-    var d = a('JrtKP'),
-        e = a('Ug51y0'),
-        f = a('sWKBM'),
-        g = a('LEQ5w'),
-        h = a('1P5ls'),
-        i = a('inwN3'),
-        j = a('kRwUk25'),
-        k = a('CMcLV');
+    var f = c('/U36/'),
+        g = c('6E2xk1'),
+        h = c('Kpy/B'),
+        i = c('O0Kav'),
+        j = c('R2nG3'),
+        k = c('u8Dt8'),
+        l = c('e5xHg25'),
+        m = c('WQymh');
     const {
-        Option: l
-    } = i.default;
+        Option: n
+    } = k.default;
 
-    function m(_n) {
-        return _n && _n.type && (_n.type.isSelectOption || _n.type.isSelectOptGroup);
+    function o(p) {
+        return p && p.type && (p.type.isSelectOption || p.type.isSelectOptGroup);
     }
-    const m = (_i, a) => {
+    const p = (a, c) => {
             const {
-                prefixCls: n,
-                className: o,
-                popupClassName: p,
-                dropdownClassName: q,
-                children: r,
-                dataSource: s
-            } = _i, _t = (0, e.default)(r);
-            let u;
-            1 === _t.length && (0, k.isValidElement)(_t[0]) && !_n(_t[0]) && ([v] = _t);
-            const w = v ? () => v : void 0;
+                prefixCls: q,
+                className: r,
+                popupClassName: s,
+                dropdownClassName: t,
+                children: u,
+                dataSource: v
+            } = a, _w = (0, g.default)(u);
             let x;
-            x = _t.length && _n(_t[0]) ? r : s ? s.map(_i => {
-                if ((0, k.isValidElement)(_i))
-                    return _i;
-                switch (typeof _i) {
+            1 === _w.length && (0, m.isValidElement)(_w[0]) && !o(_w[0]) && ([y] = _w);
+            const z = y ? () => y : void 0;
+            let A;
+            A = _w.length && o(_w[0]) ? u : v ? v.map(a => {
+                if ((0, m.isValidElement)(a))
+                    return a;
+                switch (typeof a) {
                     case 'string':
-                        return g.createElement(l, {
-                            key: _i,
-                            value: _i
-                        }, _i);
+                        return i.createElement(n, {
+                            key: a,
+                            value: a
+                        }, a);
                     case 'object': {
                         const {
-                            value: y
-                        } = _i;
-                        return g.createElement(l, {
-                            key: y,
-                            value: y
-                        }, _i.text);
+                            value: B
+                        } = a;
+                        return i.createElement(n, {
+                            key: B,
+                            value: B
+                        }, a.text);
                     }
                     default:
                         return;
                 }
             }) : [];
             const {
-                getPrefixCls: y
-            } = g.useContext(h.ConfigContext), z = y('select', n);
-            return g.createElement(i.default, Object.assign({
-                ref: a
-            }, (0, f.default)(_i, [
+                getPrefixCls: B
+            } = i.useContext(j.ConfigContext), C = B('select', q);
+            return i.createElement(k.default, Object.assign({
+                ref: c
+            }, (0, h.default)(a, [
                 'dataSource',
                 'dropdownClassName'
             ]), {
-                prefixCls: z,
-                popupClassName: p || q,
-                className: _b(d)(`${ z }-auto-complete`, o),
-                mode: i.default.SECRET_COMBOBOX_MODE_DO_NOT_USE
+                prefixCls: C,
+                popupClassName: s || t,
+                className: b(f)(`${ C }-auto-complete`, r),
+                mode: k.default.SECRET_COMBOBOX_MODE_DO_NOT_USE
             }, {
-                getInputElement: w
-            }), x);
+                getInputElement: z
+            }), A);
         },
-        n = g.forwardRef(m),
-        o = (0, j.default)(n);
-    n.Option = l, n._InternalPanelDoNotUseOrYouWillBeFired = o;
-    var p = n;
-}), a.register('u3AQ4', function(_b, c) {
-    _i(_b.exports, 'default', function() {
-        return _f;
+        q = i.forwardRef(p),
+        r = (0, l.default)(q);
+    q.Option = n, q._InternalPanelDoNotUseOrYouWillBeFired = r;
+    var s = q;
+}), c.register('Afwq2', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
     });
-    var d = a('x7BBh'),
-        e = a('Quxw3');
-    var _f = _i => {
-        (0, e.default)(d.default.createCodeGrid, {
-            deviceId: _i.deviceId,
-            triggerType: _i.triggerType,
-            triggerValue: _i.triggerValue
+    var f = c('ywRRc'),
+        g = c('0v55W');
+    var _h = a => {
+        (0, g.default)(f.default.createCodeGrid, {
+            deviceId: a.deviceId,
+            triggerType: a.triggerType,
+            triggerValue: a.triggerValue
         });
     };
-}), a.register('+Uyq7', function(b, c) {
-    _i(b.exports, 'CanAddCodeGrid', function() {
-        return _g;
+}), c.register('Iz/dA', function(d, e) {
+    a(d.exports, 'CanAddCodeGrid', function() {
+        return _i;
     });
-    var d = a('iWivW'),
-        e = a('ttkWv'),
-        f = a('q4EFc');
-    const _g = _i => {
-        var h;
-        const i = d.default.memorySystem.costs.codeGrid;
-        if (!(0, f.CanUseMoreMemory)({
-                memory: i
+    var f = c('fI6of'),
+        g = c('CbTFk'),
+        h = c('YarRX');
+    const _i = a => {
+        var j;
+        const k = f.default.memorySystem.costs.codeGrid;
+        if (!(0, h.CanUseMoreMemory)({
+                memory: k
             }))
             return {
                 canAdd: !1,
-                reason: e.OutOfResourcesReason.noMemory
+                reason: g.OutOfResourcesReason.noMemory
             };
-        if (d.default.memorySystem.counters.codeGrids >= d.default.memorySystem.limits.codeGrids)
+        if (f.default.memorySystem.counters.codeGrids >= f.default.memorySystem.limits.codeGrids)
             return {
                 canAdd: !1,
-                reason: e.OutOfResourcesReason.limit
+                reason: g.OutOfResourcesReason.limit
             };
-        var j;
-        return (null !== (j = null === (h = d.default.world.devices.codeGrids.get(_i)) || void 0 === h ? void 0 : h.items.size) && void 0 !== j ? j : 0) >= d.default.memorySystem.limits.codeGridsPerDevice ? {
+        var l;
+        return (null !== (l = null === (j = f.default.world.devices.codeGrids.get(a)) || void 0 === j ? void 0 : j.items.size) && void 0 !== l ? l : 0) >= f.default.memorySystem.limits.codeGridsPerDevice ? {
             canAdd: !1,
-            reason: e.OutOfResourcesReason.codeGridPerDeviceLimit
+            reason: g.OutOfResourcesReason.codeGridPerDeviceLimit
         } : {
             canAdd: !0
         };
     };
-}), a.register('cQ7LB', function(b, c) {
-    _i(b.exports, 'GetCodeGridMessage', function() {
-        return _i;
+}), c.register('dRyB/', function(d, e) {
+    a(d.exports, 'GetCodeGridMessage', function() {
+        return _k;
     });
-    var d = a('iWivW'),
-        e = a('ttkWv'),
-        f = a('QVC+I'),
-        g = a('AvtVx'),
-        h = a('PMl60');
-    const _i = _i => {
-        if (_i.reason === e.OutOfResourcesReason.codeGridPerDeviceLimit)
-            return `Cannot create more ${ f.default.grid.plural }. Reached limit of ${ d.default.memorySystem.limits.codeGridsPerDevice } ${ f.default.grid.plural } per device.`;
-        if (_i.reason === e.OutOfResourcesReason.limit)
-            return `Cannot create more ${ f.default.grid.plural }. Reached limit of ${ d.default.memorySystem.limits.codeGrids } ${ f.default.grid.plural } on map.`;
-        const j = d.default.memorySystem.costs.codeGrid;
-        return _i.reason === e.OutOfResourcesReason.noMemory ? `Not enough ${ g.MemoryName } to create ${ f.default.grid.singular }. Requires ${ (0, h.numberWithCommas)(j) } available ${ g.MemoryName }.` : '';
+    var f = c('fI6of'),
+        g = c('CbTFk'),
+        h = c('DXQir'),
+        i = c('wfPQ8'),
+        j = c('quE27');
+    const _k = a => {
+        if (a.reason === g.OutOfResourcesReason.codeGridPerDeviceLimit)
+            return `Cannot create more ${ h.default.grid.plural }. Reached limit of ${ f.default.memorySystem.limits.codeGridsPerDevice } ${ h.default.grid.plural } per device.`;
+        if (a.reason === g.OutOfResourcesReason.limit)
+            return `Cannot create more ${ h.default.grid.plural }. Reached limit of ${ f.default.memorySystem.limits.codeGrids } ${ h.default.grid.plural } on map.`;
+        const l = f.default.memorySystem.costs.codeGrid;
+        return a.reason === g.OutOfResourcesReason.noMemory ? `Not enough ${ i.MemoryName } to create ${ h.default.grid.singular }. Requires ${ (0, j.numberWithCommas)(l) } available ${ i.MemoryName }.` : '';
     };
-}), a.register('yoCUM', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _D;
+}), c.register('cDkCv', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _F;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('ulE4q'),
-        h = a('/rAT0'),
-        i = a('YRlpt'),
-        j = a('j2ADs'),
-        k = a('aCmo+'),
-        l = a('QVC+I'),
-        m = a('rHr0s'),
-        _n = a('oAd0b'),
-        o = a('2x11J'),
-        p = a('JV94u'),
-        q = a('vShe/'),
-        r = a('iWivW'),
-        s = a('iG9EJ'),
-        t = a('ieNls8'),
-        u = a('LHeQv'),
-        v = a('0PFEY'),
-        w = a('fNsdX'),
-        x = a('Q6qwr'),
-        y = a('fe6E3'),
-        z = a('FK3Hv');
-    let A, B, C = _i => _i;
-    var _D = (0, o.observer)(_i => {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('P1KtI'),
+        j = c('M3JwW'),
+        k = c('AE7vR'),
+        l = c('22RS1'),
+        m = c('fCC7B'),
+        n = c('DXQir'),
+        o = c('ekajQ'),
+        p = c('+F4Nk'),
+        q = c('6jmvl'),
+        r = c('eAMDW'),
+        s = c('HOIhZ'),
+        t = c('fI6of'),
+        u = c('uQzYS'),
+        v = c('Y6i538'),
+        w = c('1ZCzi'),
+        x = c('u5JEh1'),
+        y = c('E6YpH0'),
+        z = c('oguo5'),
+        A = c('9zaF+'),
+        B = c('y1oBc');
+    let C, D, E = a => a;
+    var _F = (0, q.observer)(a => {
         const {
-            deviceId: E
-        } = _i, F = Array.from(_i.codeGrids), G = (0, k.default)();
-        return e.useEffect(() => {
-            _i.isCreatingNewGrid && (_i.setIsNotCreatingNewGrid(), F.length >= 1 && _E((0, y.last)(F)[0]));
-        }, [F.length]), (0, d.jsxs)(_F, {
+            deviceId: G
+        } = a, H = Array.from(a.codeGrids), I = (0, m.default)();
+        return g.useEffect(() => {
+            a.isCreatingNewGrid && (a.setIsNotCreatingNewGrid(), H.length >= 1 && _G((0, A.last)(H)[0]));
+        }, [H.length]), (0, f.jsxs)(_H, {
             children: [
-                (0, d.jsxs)(j.default.Title, {
+                (0, f.jsxs)(l.default.Title, {
                     style: {
-                        color: q.default.White
+                        color: s.default.White
                     },
                     level: 4,
                     children: [
-                        G ? 'Edit' : 'View',
+                        I ? 'Edit' : 'View',
                         ' an existing',
                         ' ',
-                        l.default.grid.singular
+                        n.default.grid.singular
                     ]
                 }),
-                (0, d.jsx)(m.CodeGridList, {
+                (0, f.jsx)(o.CodeGridList, {
                     style: {
                         marginTop: 20
                     },
-                    children: F.map(_i => (0, d.jsx)(_n.default, {
-                        label: (0, p.default)(E, _i[0]),
+                    children: H.map(a => (0, f.jsx)(p.default, {
+                        label: (0, r.default)(G, a[0]),
                         onClick: () => {
-                            (0, z.playClickSound)(), _E(_i[0]);
+                            (0, B.playClickSound)(), _G(a[0]);
                         },
-                        children: G ? (0, d.jsx)(_G, {
-                            children: (0, d.jsx)(h.default, {
+                        children: I ? (0, f.jsx)(_I, {
+                            children: (0, f.jsx)(j.default, {
                                 menu: {
                                     items: [{
-                                        key: `remove-grid-${ _i[0] }`,
-                                        label: `Delete ${ l.default.grid.singular }`,
-                                        icon: (0, d.jsx)(t.default, {}),
-                                        onClick: (0, w.default)(() => {
-                                            i.default.confirm({
-                                                title: `Are you sure you want to delete this ${ l.default.grid.singular }?`,
+                                        key: `remove-grid-${ a[0] }`,
+                                        label: `Delete ${ n.default.grid.singular }`,
+                                        icon: (0, f.jsx)(v.default, {}),
+                                        onClick: (0, y.default)(() => {
+                                            k.default.confirm({
+                                                title: `Are you sure you want to delete this ${ n.default.grid.singular }?`,
                                                 onOk: () => {
-                                                    (0, x.default)({
-                                                        deviceId: E,
-                                                        gridId: _i[0]
+                                                    (0, z.default)({
+                                                        deviceId: G,
+                                                        gridId: a[0]
                                                     });
                                                 },
                                                 okText: 'Yes',
@@ -1241,108 +1241,108 @@ a.register('lESQp', function(b, c) {
                                         })
                                     }]
                                 },
-                                children: (0, d.jsx)(g.default, {
+                                children: (0, f.jsx)(i.default, {
                                     type: 'text',
                                     size: 'small',
-                                    icon: (0, d.jsx)(u.default, {}),
-                                    onClick: v.default
+                                    icon: (0, f.jsx)(w.default, {}),
+                                    onClick: x.default
                                 })
                             })
                         }) : null
-                    }, _i[0] + '-grid'))
+                    }, a[0] + '-grid'))
                 })
             ]
         });
     });
-    const _E = _i => {
-            r.default.me.editing.device.currentlyEditedGridId = _i, r.default.me.editing.device.screen = s.EditingDeviceScreen.grid;
+    const _G = a => {
+            t.default.me.editing.device.currentlyEditedGridId = a, t.default.me.editing.device.screen = u.EditingDeviceScreen.grid;
         },
-        _F = f.default.div.attrs({
+        _H = h.default.div.attrs({
             className: 'maxWidth'
-        })(A || (A = C``)),
-        _G = f.default.div(B || (B = C`
+        })(C || (C = E``)),
+        _I = h.default.div(D || (D = E`
   position: absolute;
   top: 0;
   right: 0;
   padding: 2px 4px;
 `));
-}), a.register('aCmo+', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('fCC7B', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('iWivW'),
-        e = a('Jfada'),
-        f = a('k7cZc'),
-        g = a('9tz3H'),
-        h = a('/pbxo');
-    var _i = _i => {
-        var j, k;
-        if (!(0, g.isSavedVersion)())
+    var f = c('fI6of'),
+        g = c('5Fjxs'),
+        h = c('XwUPb'),
+        i = c('hycyg'),
+        j = c('UkCpC');
+    var _k = a => {
+        var l, m;
+        if (!(0, i.isSavedVersion)())
             return !1;
-        if ((0, f.isAssignment)())
+        if ((0, h.isAssignment)())
             return !1;
-        if (!(0, h.InPreGamePhase)())
+        if (!(0, j.InPreGamePhase)())
             return !1;
-        const l = _i || (0, e.default)();
-        return (null === (j = d.default.characters.characters.get(l)) || void 0 === j || null === (k = j.permissions) || void 0 === k ? void 0 : k.manageCodeGrids) || !1;
+        const n = a || (0, g.default)();
+        return (null === (l = f.default.characters.characters.get(n)) || void 0 === l || null === (m = l.permissions) || void 0 === m ? void 0 : m.manageCodeGrids) || !1;
     };
-}), a.register('JV94u', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('eAMDW', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('J2kec'),
-        f = a('iWivW'),
-        g = a('zZJfb'),
-        h = a('b5kvC');
-    var _i = (_i, b) => ((_i, b) => {
-        var j, k;
-        const l = (0, g.default)(_i);
-        if (!l)
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('KjmWt'),
+        h = c('fI6of'),
+        i = c('5u9xs'),
+        j = c('Eh2Wh');
+    var _k = (a, d) => ((a, d) => {
+        var l, m;
+        const n = (0, i.default)(a);
+        if (!n)
             return null;
-        const m = null === (j = f.default.world.devices.codeGrids.get(_i)) || void 0 === j || null === (k = j.items) || void 0 === k ? void 0 : k.get(b);
-        if (!m)
+        const o = null === (l = h.default.world.devices.codeGrids.get(a)) || void 0 === l || null === (m = l.items) || void 0 === m ? void 0 : m.get(d);
+        if (!o)
             return null;
-        const n = m.triggerType;
-        if (n === e.default.broadcastMessage)
-            return (0, d.jsxs)('span', {
+        const p = o.triggerType;
+        if (p === g.default.broadcastMessage)
+            return (0, f.jsxs)('span', {
                 children: [
                     'When receiving on channel',
                     ' ',
-                    (0, d.jsx)('span', {
+                    (0, f.jsx)('span', {
                         style: {
-                            fontWeight: h.FontWeights.Bold,
+                            fontWeight: j.FontWeights.Bold,
                             color: '#57f784'
                         },
-                        children: m.triggerValue || 'channel'
+                        children: o.triggerValue || 'channel'
                     })
                 ]
             });
-        const o = l.deviceOption.codeGridSchema.triggers.find(_i => _i.type === n);
-        return o ? o.name : null;
-    })(_i, b) || 'Block';
-}), a.register('ieNls8', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+        const q = n.deviceOption.codeGridSchema.triggers.find(a => a.type === p);
+        return q ? q.name : null;
+    })(a, d) || 'Block';
+}), c.register('Y6i538', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('8auc66'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('goKxN8'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'DeleteOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('8auc66', function(b, c) {
-    _N(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'DeleteOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('goKxN8', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -1359,234 +1359,234 @@ a.register('lESQp', function(b, c) {
         name: 'delete',
         theme: 'outlined'
     };
-}), a.register('fNsdX', function(b, c) {
-    _N(b.exports, 'default', function() {
-        return _d;
-    });
-    var _d = _N => b => {
-        b.domEvent.stopPropagation(), _N && _N();
-    };
-}), a.register('Q6qwr', function(b, c) {
-    _N(b.exports, 'default', function() {
+}), c.register('E6YpH0', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
-    var d = a('x7BBh'),
-        e = a('Quxw3');
-    var _f = _N => {
-        (0, e.default)(d.default.deleteCodeGrid, {
-            deviceId: _N.deviceId,
-            gridId: _N.gridId
+    var _f = a => d => {
+        d.domEvent.stopPropagation(), a && a();
+    };
+}), c.register('oguo5', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
+    });
+    var f = c('ywRRc'),
+        g = c('0v55W');
+    var _h = a => {
+        (0, g.default)(f.default.deleteCodeGrid, {
+            deviceId: a.deviceId,
+            gridId: a.gridId
         });
     };
-}), a.register('khCBi', function(b, c) {
-    _N(b.exports, 'default', function() {
-        return _j;
+}), c.register('MDDB0', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _l;
     });
-    var d = a('0hzx+'),
-        e = a('j2ADs');
-    a('LEQ5w');
-    var f = a('QVC+I'),
-        g = a('bzU3s'),
-        h = a('0HHAH'),
-        i = a('9R7cy');
-    var _j = () => (0, d.jsxs)(h.CenteredColumn, {
+    var f = c('gRbUn'),
+        g = c('22RS1');
+    c('O0Kav');
+    var h = c('DXQir'),
+        i = c('gp8Qp0'),
+        j = c('MgONH'),
+        k = c('t52Ep');
+    var _l = () => (0, f.jsxs)(j.CenteredColumn, {
         className: 'maxAll',
         children: [
-            (0, d.jsx)('div', {
+            (0, f.jsx)('div', {
                 style: {
                     fontSize: 54,
                     color: 'rgba(255,255,255,0.6)',
                     marginBottom: 5
                 },
-                children: (0, d.jsx)(i.default, {
+                children: (0, f.jsx)(k.default, {
                     name: 'fal fa-cubes'
                 })
             }),
-            (0, d.jsxs)(e.default.Text, {
+            (0, f.jsxs)(g.default.Text, {
                 children: [
                     'No ',
-                    f.default.grid.plural,
+                    h.default.grid.plural,
                     ' have been created for this',
                     ' ',
-                    g.default.device.singular,
+                    i.default.device.singular,
                     '.'
                 ]
             })
         ]
     });
-}), a.register('S6mEi', function(b, c) {
-    _N(b.exports, 'default', function() {
-        return _m;
+}), c.register('31ack', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _o;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('ntjk6'),
-        g = a('2x11J'),
-        h = a('vLowm'),
-        i = a('bzU3s'),
-        j = a('cvto726'),
-        k = a('j2ADs');
-    let l;
-    var _m = (0, g.observer)(_N => (0, h.DeviceHasAWireAttached)(_N.deviceId) ? (0, d.jsx)(_n, {
-        children: (0, d.jsxs)(j.default, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('o+m3g'),
+        i = c('6jmvl'),
+        j = c('Ax/Fw'),
+        k = c('gp8Qp0'),
+        l = c('E2AMI26'),
+        m = c('22RS1');
+    let n;
+    var _o = (0, i.observer)(a => (0, j.DeviceHasAWireAttached)(a.deviceId) ? (0, f.jsx)(_p, {
+        children: (0, f.jsxs)(l.default, {
             direction: 'vertical',
             size: 25,
             className: 'maxWidth',
             children: [
-                (0, d.jsx)(f.default, {
+                (0, f.jsx)(h.default, {
                     direction: 'in',
-                    deviceId: _N.deviceId
+                    deviceId: a.deviceId
                 }),
-                (0, d.jsx)(f.default, {
+                (0, f.jsx)(h.default, {
                     direction: 'out',
-                    deviceId: _N.deviceId
+                    deviceId: a.deviceId
                 })
             ]
         })
-    }) : (0, d.jsxs)(k.default.Text, {
+    }) : (0, f.jsxs)(m.default.Text, {
         children: [
             'No ',
-            i.default.wire.plural,
+            k.default.wire.plural,
             ' are connected to this',
             ' ',
-            i.default.device.singular,
+            k.default.device.singular,
             '.'
         ]
     }));
-    const _n = e.default.div(l || (l = (_N => _N)``));
-}), a.register('ntjk6', function(b, c) {
-    _N(b.exports, 'default', function() {
-        return _n;
+    const _p = g.default.div(n || (n = (a => a)``));
+}), c.register('o+m3g', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _p;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('bzU3s'),
-        g = a('qVhMZ'),
-        h = a('cvto726'),
-        i = a('j2ADs'),
-        j = a('vShe/'),
-        k = a('vLowm'),
-        l = a('YQ8QB');
-    let m;
-    var _n = (0, a('2x11J').observer)(_N => {
-        const o = 'in' === _N.direction ? (0, k.WiresEndingAtDevice)(_N.deviceId) : (0, k.WiresStartingFromDevice)(_N.deviceId);
-        return o.length ? (0, d.jsxs)(_o, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('gp8Qp0'),
+        i = c('Q6LQJ'),
+        j = c('E2AMI26'),
+        k = c('22RS1'),
+        l = c('HOIhZ'),
+        m = c('Ax/Fw'),
+        n = c('MfhoK');
+    let o;
+    var _p = (0, c('6jmvl').observer)(a => {
+        const q = 'in' === a.direction ? (0, m.WiresEndingAtDevice)(a.deviceId) : (0, m.WiresStartingFromDevice)(a.deviceId);
+        return q.length ? (0, f.jsxs)(_q, {
             children: [
-                (0, d.jsxs)(i.default.Title, {
+                (0, f.jsxs)(k.default.Title, {
                     level: 4,
                     style: {
-                        color: j.default.White
+                        color: l.default.White
                     },
                     children: [
-                        (0, g.CapitalizeFirstLetter)(f.default.wire.plural),
+                        (0, i.CapitalizeFirstLetter)(h.default.wire.plural),
                         ' ',
-                        _N.direction
+                        a.direction
                     ]
                 }),
-                (0, d.jsx)(h.default, {
+                (0, f.jsx)(j.default, {
                     direction: 'vertical',
                     size: 12,
                     style: {
                         marginTop: 15
                     },
                     className: 'maxWidth',
-                    children: o.map(o => (0, d.jsx)(l.default, {
-                        wire: o,
-                        deviceId: _N.deviceId
-                    }, o.id))
+                    children: q.map(q => (0, f.jsx)(n.default, {
+                        wire: q,
+                        deviceId: a.deviceId
+                    }, q.id))
                 })
             ]
         }) : null;
     });
-    const _o = e.default.div(m || (m = (_N => _N)``));
-}), a.register('YQ8QB', function(b, c) {
-    _N(b.exports, 'default', function() {
-        return _C;
+    const _q = g.default.div(o || (o = (a => a)``));
+}), c.register('MfhoK', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _E;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('0HHAH'),
-        h = a('9R7cy'),
-        i = a('j2ADs'),
-        j = a('b5kvC'),
-        k = a('PUGQx1'),
-        l = a('BYRTX'),
-        m = a('cPBfb'),
-        n = a('2x11J'),
-        o = a('bHGrl'),
-        p = a('mQCZt'),
-        q = a('11nl3');
-    let r, s, t, u, v, w, x, y, z, A, B = _N => _N;
-    var _C = (0, n.observer)(_N => {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('MgONH'),
+        j = c('t52Ep'),
+        k = c('22RS1'),
+        l = c('Eh2Wh'),
+        m = c('+FJvw1'),
+        n = c('K2TwF'),
+        o = c('OFuf70'),
+        p = c('6jmvl'),
+        q = c('K/2xB'),
+        r = c('LihP5'),
+        s = c('SxihY');
+    let t, u, v, w, x, y, z, A, B, C, D = a => a;
+    var _E = (0, p.observer)(a => {
         const {
-            wire: D,
-            deviceId: E
-        } = _N, {
+            wire: F,
+            deviceId: G
+        } = a, {
             me: {
-                editing: F
+                editing: H
             }
-        } = (0, o.default)(), G = D.startDevice === E, H = !G, I = (0, l.FetchDeviceById)(D.startDevice), J = (0, l.FetchDeviceById)(D.endDevice), K = (0, k.FetchDeviceName)(D.startDevice), L = (0, k.FetchDeviceName)(D.endDevice), M = e.useMemo(() => {
-            var _N, O, P, Q;
-            if ((null == I ? void 0 : I.deviceOption.id) === m.default.wireRepeater)
+        } = (0, q.default)(), I = F.startDevice === G, J = !I, K = (0, n.FetchDeviceById)(F.startDevice), L = (0, n.FetchDeviceById)(F.endDevice), M = (0, m.FetchDeviceName)(F.startDevice), N = (0, m.FetchDeviceName)(F.endDevice), O = g.useMemo(() => {
+            var P, Q, R, S;
+            if ((null == K ? void 0 : K.deviceOption.id) === o.default.wireRepeater)
                 return 'Pulse received';
-            const R = null == I || null === (_N = I.deviceOption) || void 0 === _N || null === (O = _N.wireConfig) || void 0 === O || null === (P = O.out) || void 0 === P || null === (Q = P.connections) || void 0 === Q ? void 0 : Q.find(_N => _N.id === D.startConnection);
-            return R ? R.name : 'No event';
-        }, [D.startConnection]), N = e.useMemo(() => {
-            var O, P, Q, R, S;
-            if ((null == J || null === (O = J.deviceOption) || void 0 === O ? void 0 : O.id) === m.default.wireRepeater)
+            const T = null == K || null === (P = K.deviceOption) || void 0 === P || null === (Q = P.wireConfig) || void 0 === Q || null === (R = Q.out) || void 0 === R || null === (S = R.connections) || void 0 === S ? void 0 : S.find(P => P.id === F.startConnection);
+            return T ? T.name : 'No event';
+        }, [F.startConnection]), P = g.useMemo(() => {
+            var Q, R, S, T, U;
+            if ((null == L || null === (Q = L.deviceOption) || void 0 === Q ? void 0 : Q.id) === o.default.wireRepeater)
                 return 'Relay pulse';
-            const T = null == J || null === (P = J.deviceOption) || void 0 === P || null === (Q = P.wireConfig) || void 0 === Q || null === (R = Q.in) || void 0 === R || null === (S = R.connections) || void 0 === S ? void 0 : S.find(O => O.id === D.endConnection);
-            return T ? T.name : 'No action';
-        }, [D.endConnection]);
-        return (0, d.jsxs)(_D, {
+            const V = null == L || null === (R = L.deviceOption) || void 0 === R || null === (S = R.wireConfig) || void 0 === S || null === (T = S.in) || void 0 === T || null === (U = T.connections) || void 0 === U ? void 0 : U.find(Q => Q.id === F.endConnection);
+            return V ? V.name : 'No action';
+        }, [F.endConnection]);
+        return (0, f.jsxs)(_F, {
             onClick: () => {
-                F.wire.currentlyEditedWireId = D.id, (0, p.default)(q.default.editingWire);
+                H.wire.currentlyEditedWireId = F.id, (0, r.default)(s.default.editingWire);
             },
             children: [
-                (0, d.jsxs)(_E, {
+                (0, f.jsxs)(_G, {
                     children: [
-                        (0, d.jsx)(_F, {
-                            selected: G
+                        (0, f.jsx)(_H, {
+                            selected: I
                         }),
-                        (0, d.jsxs)(_G, {
+                        (0, f.jsxs)(_I, {
                             children: [
-                                (0, d.jsx)(_H, {}),
-                                (0, d.jsx)(_I, {
-                                    children: (0, d.jsx)(h.default, {
+                                (0, f.jsx)(_J, {}),
+                                (0, f.jsx)(_K, {
+                                    children: (0, f.jsx)(j.default, {
                                         name: 'fas fa-caret-right'
                                     })
                                 })
                             ]
                         }),
-                        (0, d.jsx)(_F, {
-                            selected: H
+                        (0, f.jsx)(_H, {
+                            selected: J
                         })
                     ]
                 }),
-                (0, d.jsxs)(_J, {
+                (0, f.jsxs)(_L, {
                     children: [
-                        (0, d.jsxs)(_L, {
+                        (0, f.jsxs)(_N, {
                             children: [
-                                H ? (0, d.jsx)(_N, {
-                                    children: K
+                                J ? (0, f.jsx)(_P, {
+                                    children: M
                                 }) : null,
-                                (0, d.jsx)('div', {
-                                    children: (0, d.jsx)(i.default.Text, {
-                                        children: M
+                                (0, f.jsx)('div', {
+                                    children: (0, f.jsx)(k.default.Text, {
+                                        children: O
                                     })
                                 })
                             ]
                         }),
-                        (0, d.jsxs)(_M, {
+                        (0, f.jsxs)(_O, {
                             children: [
-                                G ? (0, d.jsx)(_N, {
-                                    children: L
-                                }) : null,
-                                (0, d.jsx)(i.default.Text, {
+                                I ? (0, f.jsx)(_P, {
                                     children: N
+                                }) : null,
+                                (0, f.jsx)(k.default.Text, {
+                                    children: P
                                 })
                             ]
                         })
@@ -1595,7 +1595,7 @@ a.register('lESQp', function(b, c) {
             ]
         });
     });
-    const _D = f.default.div(r || (r = B`
+    const _F = h.default.div(t || (t = D`
   padding: 20px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.07);
@@ -1605,236 +1605,236 @@ a.register('lESQp', function(b, c) {
     background: rgba(255, 255, 255, 0.14);
   }
 `)),
-        _E = (0, f.default)(g.VerticallyCentered).attrs({
+        _G = (0, h.default)(i.VerticallyCentered).attrs({
             className: 'maxWidth'
-        })(s || (s = B``)),
-        _F = f.default.div(t || (t = B`
+        })(u || (u = D``)),
+        _H = h.default.div(v || (v = D`
   height: 45px;
   width: 45px;
   border-radius: 50%;
   background: ${ 0 };
   border: 2px solid rgba(255, 255, 255, 0.75);
   flex-shrink: 0;
-`), _h => _h.selected ? '#269900' : 'rgba(255,255,255,0.14)'),
-        _G = (0, f.default)(g.VerticallyCentered)(u || (u = B`
+`), a => a.selected ? '#269900' : 'rgba(255,255,255,0.14)'),
+        _I = (0, h.default)(i.VerticallyCentered)(w || (w = D`
   flex: 1;
   padding: 0px 20px;
 `)),
-        _H = f.default.div(v || (v = B`
+        _J = h.default.div(x || (x = D`
   height: 2px;
   flex: 1;
   background: rgba(255, 255, 255, 0.75);
 `)),
-        _I = f.default.div(w || (w = B`
+        _K = h.default.div(y || (y = D`
   flex-shrink: 0;
   color: rgba(255, 255, 255, 0.75);
   font-size: 24px;
   line-height: 1;
 `)),
-        _J = f.default.div.attrs({
+        _L = h.default.div.attrs({
             className: 'maxWidth between flex'
-        })(x || (x = B`
+        })(z || (z = D`
   align-items: flex-start;
   margin-top: 10px;
 `)),
-        K = f.default.div(y || (y = B`
+        M = h.default.div(A || (A = D`
   max-width: 45%;
   line-height: 1;
 `)),
-        _L = (0, f.default)(K)(z || (z = B``)),
-        _M = (0, f.default)(K)(A || (A = B`
+        _N = (0, h.default)(M)(B || (B = D``)),
+        _O = (0, h.default)(M)(C || (C = D`
   text-align: right;
 `)),
-        _N = _h => (0, d.jsx)(i.default.Title, {
+        _P = a => (0, f.jsx)(k.default.Title, {
             level: 5,
             style: {
-                fontWeight: j.FontWeights.Bold
+                fontWeight: l.FontWeights.Bold
             },
-            children: _h.children
+            children: a.children
         });
-}), a.register('bI0IS', function(b, c) {
-    _h(b.exports, 'default', function() {
-        return _g;
+}), c.register('ZqaCP', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('LEQ5w'),
-        e = a('D5xLI'),
-        f = a('bHGrl');
-    var _g = () => {
+    var f = c('O0Kav'),
+        g = c('heTaO'),
+        h = c('K/2xB');
+    var _i = () => {
         const {
             me: {
                 editing: {
                     device: {
-                        currentlyEditedDevice: _h
+                        currentlyEditedDevice: j
                     }
                 }
             },
             worldOptions: {
-                deviceOptions: i
+                deviceOptions: k
             }
-        } = (0, f.default)();
+        } = (0, h.default)();
         return {
-            device: d.useMemo(() => (0, e.default)().worldManager.devices.getDeviceById(_h.id), [_h.id]),
-            deviceOption: i.find(i => i.id === _h.deviceOptionId)
+            device: f.useMemo(() => (0, g.default)().worldManager.devices.getDeviceById(j.id), [j.id]),
+            deviceOption: k.find(k => k.id === j.deviceOptionId)
         };
     };
-}), a.register('rr5bz', function(b, c) {
-    _g(b.exports, 'useTimeout', function() {
-        return _f;
+}), c.register('jEuDs', function(d, e) {
+    a(d.exports, 'useTimeout', function() {
+        return _h;
     });
-    var d = a('LEQ5w'),
-        e = a('Oym4R0');
+    var f = c('O0Kav'),
+        g = c('GUAYj');
 
-    function _f(_g, h) {
-        void 0 === h && (h = 0), (0, e.useWarningOnMountInDevelopment)('useTimeout is deprecated, it will be removed in rooks v7. Please use useTimeoutWhen instead.');
-        var i = (0, d.useState)(!1),
-            j = i[0],
-            k = i[1],
-            l = (0, d.useRef)();
+    function _h(i, j) {
+        void 0 === j && (j = 0), (0, g.useWarningOnMountInDevelopment)('useTimeout is deprecated, it will be removed in rooks v7. Please use useTimeoutWhen instead.');
+        var k = (0, f.useState)(!1),
+            l = k[0],
+            m = k[1],
+            n = (0, f.useRef)();
 
-        function m() {
-            l.current && l.current(), _m();
+        function o() {
+            n.current && n.current(), _p();
         }
-        (0, d.useEffect)(function() {
-            l.current = _g;
-        }, [_g]);
-        var _m = (0, d.useCallback)(function() {
-                k(!1);
+        (0, f.useEffect)(function() {
+            n.current = i;
+        }, [i]);
+        var _p = (0, f.useCallback)(function() {
+                m(!1);
             }, []),
-            n = (0, d.useCallback)(function() {
-                k(!0);
+            q = (0, f.useCallback)(function() {
+                m(!0);
             }, []);
-        return (0, d.useEffect)(function() {
-            if (j) {
+        return (0, f.useEffect)(function() {
+            if (l) {
                 if ('undefined' != typeof window) {
-                    var o = window.setTimeout(_g, h);
+                    var r = window.setTimeout(o, j);
                     return function() {
-                        window.clearTimeout(o);
+                        window.clearTimeout(r);
                     };
                 }
                 console.warn('useTimeout: window is undefined.');
             }
         }, [
-            j,
-            h
+            l,
+            j
         ]), {
-            clear: _m,
-            isActive: j,
-            start: n,
-            stop: _m
+            clear: _p,
+            isActive: l,
+            start: q,
+            stop: _p
         };
     }
-}), a.register('Oym4R0', function(b, c) {
-    _g(b.exports, 'useWarningOnMountInDevelopment', function() {
-        return _f;
+}), c.register('GUAYj', function(d, e) {
+    a(d.exports, 'useWarningOnMountInDevelopment', function() {
+        return _h;
     });
-    var d = a('+i8ep'),
-        e = a('nHK4Z');
+    var f = c('lKjHC'),
+        g = c('PsplJ');
 
-    function _f(_g) {
-        (0, d.useDidMount)(function() {
-            (0, e.warning)(!1, _g);
+    function _h(i) {
+        (0, f.useDidMount)(function() {
+            (0, g.warning)(!1, i);
         });
     }
-}), a.register('nHK4Z', function(b, c) {
-    _z(b.exports, 'warning', function() {
-        return _d;
+}), c.register('PsplJ', function(d, e) {
+    a(d.exports, 'warning', function() {
+        return _f;
     });
-    var _d = function() {};
-}), a.register('N8S9w', function(b, c) {
-    _z(b.exports, 'default', function() {
-        return _y;
+    var _f = function() {};
+}), c.register('N5ueH', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _A;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        _g = a('2x11J'),
-        h = a('2GeW4'),
-        i = a('bHGrl'),
-        j = a('YuT/D'),
-        k = a('iWivW'),
-        l = a('tKgSE'),
-        m = a('HaNMR'),
-        n = a('ryWAy'),
-        o = a('ulE4q'),
-        p = a('b5kvC'),
-        q = a('8WvaZ'),
-        r = a('JCAc0'),
-        s = a('GqzrW'),
-        t = a('FK3Hv');
-    let u, v, w, x = _z => _z;
-    var _y = (0, _g.observer)(() => {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('6jmvl'),
+        j = c('UkybP'),
+        k = c('K/2xB'),
+        l = c('JkQCT'),
+        m = c('fI6of'),
+        n = c('g5EZH'),
+        o = c('lN6Z0'),
+        p = c('J8L14'),
+        q = c('P1KtI'),
+        r = c('Eh2Wh'),
+        s = c('ddhGF'),
+        t = c('Otile'),
+        u = c('u8Fxu'),
+        v = c('y1oBc');
+    let w, x, y, z = a => a;
+    var _A = (0, i.observer)(() => {
         const {
             me: {
                 editing: {
                     device: {
                         visualEditing: {
-                            instruction: _z,
-                            keyboardHelpers: A
+                            instruction: B,
+                            keyboardHelpers: C
                         }
                     }
                 }
             }
-        } = (0, i.default)();
-        (0, n.default)(_F(q).Input.Keyboard.KeyCodes.ENTER, () => {
-            p();
+        } = (0, k.default)();
+        (0, p.default)(b(s).Input.Keyboard.KeyCodes.ENTER, () => {
+            r();
         });
-        (0, n.default)(_F(q).Input.Keyboard.KeyCodes.ESC, () => {
-            p();
-        }), (0, s.useWillUnmount)(() => {
-            (0, r.ClearVisualEditingData)();
+        (0, p.default)(b(s).Input.Keyboard.KeyCodes.ESC, () => {
+            r();
+        }), (0, u.useWillUnmount)(() => {
+            (0, t.ClearVisualEditingData)();
         });
-        const [B, C] = e.useState(_z), [D, E] = e.useState(JSON.stringify(A));
-        e.useEffect(() => {
-            const _F = (0, j.reaction)(() => _z, () => {
-                B !== k.default.me.editing.device.visualEditing.instruction && C(k.default.me.editing.device.visualEditing.instruction);
+        const [D, E] = g.useState(B), [F, G] = g.useState(JSON.stringify(C));
+        g.useEffect(() => {
+            const H = (0, l.reaction)(() => B, () => {
+                D !== m.default.me.editing.device.visualEditing.instruction && E(m.default.me.editing.device.visualEditing.instruction);
             }, {
                 fireImmediately: !0
             });
             return () => {
-                _F();
+                H();
             };
         }, [
-            _z,
-            B
-        ]), e.useEffect(() => {
-            const F = (0, j.reaction)(() => A, () => {
-                D !== JSON.stringify(k.default.me.editing.device.visualEditing.keyboardHelpers) && E(JSON.stringify(k.default.me.editing.device.visualEditing.keyboardHelpers));
+            B,
+            D
+        ]), g.useEffect(() => {
+            const H = (0, l.reaction)(() => C, () => {
+                F !== JSON.stringify(m.default.me.editing.device.visualEditing.keyboardHelpers) && G(JSON.stringify(m.default.me.editing.device.visualEditing.keyboardHelpers));
             }, {
                 fireImmediately: !0
             });
             return () => {
-                F();
+                H();
             };
         }, [
-            D,
-            A
+            F,
+            C
         ]);
-        const F = () => {
-            (0, l.ConfirmDoneVisualEditing)();
+        const H = () => {
+            (0, n.ConfirmDoneVisualEditing)();
         };
-        return (0, d.jsxs)(_z, {
+        return (0, f.jsxs)(_B, {
             children: [
-                (0, d.jsx)(m.default, {
-                    items: JSON.parse(D),
+                (0, f.jsx)(o.default, {
+                    items: JSON.parse(F),
                     visible: !0
                 }),
-                (0, d.jsxs)(_A, {
+                (0, f.jsxs)(_C, {
                     children: [
-                        (0, d.jsx)(h.default, {
-                            children: (0, d.jsx)('div', {
-                                children: (0, d.jsx)(o.default, {
+                        (0, f.jsx)(j.default, {
+                            children: (0, f.jsx)('div', {
+                                children: (0, f.jsx)(q.default, {
                                     type: 'primary',
                                     size: 'large',
                                     onClick: () => {
-                                        (0, t.playClickSound)(), F();
+                                        (0, v.playClickSound)(), H();
                                     },
                                     children: 'Done'
                                 })
                             })
                         }),
-                        (0, d.jsx)(_B, {
-                            children: (0, d.jsx)('div', {
-                                children: B
+                        (0, f.jsx)(_D, {
+                            children: (0, f.jsx)('div', {
+                                children: D
                             })
                         })
                     ]
@@ -1842,20 +1842,20 @@ a.register('lESQp', function(b, c) {
             ]
         });
     });
-    const _z = f.default.div.attrs({
+    const _B = h.default.div.attrs({
             className: 'maxAll flex'
-        })(u || (u = x`
+        })(w || (w = z`
   align-items: flex-end;
 `)),
-        _A = f.default.div.attrs({
+        _C = h.default.div.attrs({
             className: 'maxWidth flex'
-        })(v || (v = x`
+        })(x || (x = z`
   position: relative;
   padding: 25px;
 `)),
-        _B = f.default.div.attrs({
+        _D = h.default.div.attrs({
             className: 'maxAll flex-center'
-        })(w || (w = x`
+        })(y || (y = z`
   position: absolute;
   text-align: center;
   font-family: ${ 0 };
@@ -1864,60 +1864,60 @@ a.register('lESQp', function(b, c) {
   font-size: 22px;
   top: 0px;
   left: 0px;
-`), p.Fonts.FugazOne);
-}), a.register('tKgSE', function(b, c) {
-    _k(b.exports, 'ConfirmDoneVisualEditing', function() {
-        return _j;
+`), r.Fonts.FugazOne);
+}), c.register('g5EZH', function(d, e) {
+    a(d.exports, 'ConfirmDoneVisualEditing', function() {
+        return _l;
     });
-    var d = a('11nl3'),
-        e = a('mQCZt'),
-        f = a('uRAeN'),
-        g = a('A17vD'),
-        h = a('JCAc0'),
-        i = a('HXXiu');
-    const _j = () => {
-        (0, e.default)(d.default.editingDevice);
-        const _k = (0, i.FetchVisualEditingPreview)(),
-            l = (0, g.FetchCurrentlyEditedDevice)();
-        (0, h.ClearVisualEditingData)(), l && _k && (0, f.default)({
-            deviceOption: l.deviceOption,
-            id: l.id,
-            x: Math.round(_k.x),
-            y: Math.round(_k.y),
-            depth: _k.layers.getDepth(),
-            layerId: l.layers.getOptionsLayer(),
-            name: _k.name,
+    var f = c('SxihY'),
+        g = c('LihP5'),
+        h = c('AhL/f0'),
+        i = c('EzUqb'),
+        j = c('Otile'),
+        k = c('GQMbT');
+    const _l = () => {
+        (0, g.default)(f.default.editingDevice);
+        const m = (0, k.FetchVisualEditingPreview)(),
+            n = (0, i.FetchCurrentlyEditedDevice)();
+        (0, j.ClearVisualEditingData)(), n && m && (0, h.default)({
+            deviceOption: n.deviceOption,
+            id: n.id,
+            x: Math.round(m.x),
+            y: Math.round(m.y),
+            depth: m.layers.getDepth(),
+            layerId: n.layers.getOptionsLayer(),
+            name: m.name,
             isPreview: !1,
             options: {
-                ..._k.options
+                ...m.options
             },
             placedByClient: !0,
-            state: l.deviceOption.defaultState
+            state: n.deviceOption.defaultState
         });
     };
-}), a.register('pdAi8', function(b, c) {
-    b.exports = import('./' + a('HmN9A').resolve('cXcnp')).then(() => a('g9c1U'));
-}), a.register('pMmde1', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('YjcsJ', function(d, e) {
+    d.exports = import('./' + c('Dq3qN').resolve('cXcnp')).then(() => c('0MyQk'));
+}), c.register('OQRaD', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('+bIFH'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('tWyJZ'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'DownOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('+bIFH', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'DownOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('tWyJZ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -1934,53 +1934,53 @@ a.register('lESQp', function(b, c) {
         name: 'down',
         theme: 'outlined'
     };
-}), a.register('sCbH9', function(b, c) {
-    _i(b.exports, 'isGoogleFontLoaded', function() {
-        return _f;
-    }), _i(b.exports, 'default', function() {
-        return _g;
+}), c.register('bMaPZ2', function(d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function() {
+        return _h;
+    }), a(d.exports, 'default', function() {
+        return _i;
     });
-    var d = a('ARAVZ');
-    const e = [],
-        _f = _i => e.includes(_i);
-    var _g = _i => {
+    var f = c('TptDc');
+    const g = [],
+        _h = a => g.includes(a);
+    var _i = a => {
         const {
-            familyName: h,
-            onLoad: i
-        } = _i;
-        e.includes(h) ? i && i() : _b(d).load({
+            familyName: j,
+            onLoad: k
+        } = a;
+        g.includes(j) ? k && k() : b(f).load({
             google: {
-                families: [`${ h }:400,700`]
+                families: [`${ j }:400,700`]
             },
-            fontactive: _i => {
-                e.includes(_i) || e.push(_i), h === _i && i && i();
+            fontactive: a => {
+                g.includes(a) || g.push(a), j === a && k && k();
             }
         });
     };
-}), a.register('dHtbx0', function(_b, c) {
-    _i(_b.exports, 'CanAddTerrain', function() {
-        return _f;
+}), c.register('TCaC20', function(d, e) {
+    a(d.exports, 'CanAddTerrain', function() {
+        return _h;
     });
-    var d = a('iWivW'),
-        e = a('O3NOb');
-    const _f = _i => {
-        var g;
-        const h = d.default.worldOptions.terrainOptions.find(g => g.id === _i);
-        if (!h)
+    var f = c('fI6of'),
+        g = c('PlfjJ');
+    const _h = a => {
+        var i;
+        const j = f.default.worldOptions.terrainOptions.find(i => i.id === a);
+        if (!j)
             return !1;
-        if (null === (g = h.blockedMapStyles) || void 0 === g ? void 0 : g.length) {
-            const _i = d.default.session.mapStyle;
-            if (h.blockedMapStyles.includes(_i))
+        if (null === (i = j.blockedMapStyles) || void 0 === i ? void 0 : i.length) {
+            const k = f.default.session.mapStyle;
+            if (j.blockedMapStyles.includes(k))
                 return !1;
         }
-        const i = h.minimumRoleLevel,
-            j = h.maximumRoleLevel;
-        return (0, e.IsRoleLevelBetween)(i, j);
+        const k = j.minimumRoleLevel,
+            l = j.maximumRoleLevel;
+        return (0, g.IsRoleLevelBetween)(k, l);
     };
-}), a.register('bh+op', function(b, c) {
-    e(b.exports, 'GetCurrentMapStyle', function() {
-        return _e;
+}), c.register('dcTme', function(d, e) {
+    a(d.exports, 'GetCurrentMapStyle', function() {
+        return _g;
     });
-    var d = a('iWivW');
-    const _e = () => d.default.session.mapStyle;
+    var f = c('fI6of');
+    const _g = () => f.default.session.mapStyle;
 });

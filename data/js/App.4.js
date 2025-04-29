@@ -2,35 +2,35 @@ function a(b) {
     return b && b.__esModule ? b.default : b;
 }
 
-function a(b, c, d, e) {
-    Object.defineProperty(b, c, {
-        get: d,
-        set: e,
+function b(c, d, e, f) {
+    Object.defineProperty(c, d, {
+        get: e,
+        set: f,
         enumerable: !0,
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('vRW6w', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('Pg36L', function(d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), _t(b.exports, 'default', function() {
-        return _p;
+    }), b(d.exports, 'default', function() {
+        return _r;
     });
-    var e = a('0hzx+');
-    a('LEQ5w');
-    var f = a('Axq+p'),
-        g = a('2GeW4'),
-        h = a('4hxnr'),
-        i = a('8WvaZ'),
-        j = a('ryWAy'),
-        k = a('TwXYL'),
-        l = a('FytBL'),
-        m = a('Ct4sg');
-    let n;
-    const o = {
+    var g = c('gRbUn');
+    c('O0Kav');
+    var h = c('u4s09'),
+        i = c('UkybP'),
+        j = c('r00cs'),
+        k = c('ddhGF'),
+        l = c('J8L14'),
+        m = c('9aZ6t'),
+        n = c('hxGRM'),
+        o = c('V/q8i');
+    let p;
+    const q = {
         out: {
             background: 'rgba(0,0,0,0)'
         },
@@ -38,49 +38,49 @@ a.register('vRW6w', function(b, c) {
             background: 'rgba(0,0,0,0.6)'
         }
     };
-    var _p = _t => {
-        const q = (0, l.useIsPresent)(),
-            r = () => _t.setToHomeScreen();
-        return (0, j.default)(_b(i).Input.Keyboard.KeyCodes.ESC, r, [r]), (0, e.jsxs)(g.default, {
+    var _r = b => {
+        const s = (0, n.useIsPresent)(),
+            t = () => b.setToHomeScreen();
+        return (0, l.default)(a(k).Input.Keyboard.KeyCodes.ESC, t, [t]), (0, g.jsxs)(i.default, {
             children: [
-                (0, e.jsx)(_q, {
-                    onClick: r,
-                    initial: o.out,
-                    animate: o.in,
-                    exit: o.out,
+                (0, g.jsx)(_s, {
+                    onClick: t,
+                    initial: q.out,
+                    animate: q.in,
+                    exit: q.out,
                     transition: {
-                        duration: q ? 0.3 : 0.2,
+                        duration: s ? 0.3 : 0.2,
                         ease: 'easeOut'
                     },
-                    children: (0, e.jsx)(h.default, {})
+                    children: (0, g.jsx)(j.default, {})
                 }),
-                (0, e.jsx)(m.default, {
-                    onClick: r
+                (0, g.jsx)(o.default, {
+                    onClick: t
                 })
             ]
         });
     };
-    const _q = (0, f.default)(k.motion.div).attrs({
+    const _s = (0, h.default)(m.motion.div).attrs({
         className: 'maxAll flex-center flex-column'
-    })(n || (n = (_b => _b)`
+    })(p || (p = (a => a)`
   position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
 `));
-}), a.register('4hxnr', function(_b, c) {
-    _t(_b.exports, 'default', function() {
-        return _l;
+}), c.register('r00cs', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _n;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('TwXYL'),
-        g = a('FytBL'),
-        h = a('vShe/'),
-        i = a('5pOCJ');
-    let j;
-    const k = {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('9aZ6t'),
+        i = c('hxGRM'),
+        j = c('HOIhZ'),
+        k = c('/f/bh');
+    let l;
+    const m = {
         out: {
             y: '100%',
             opacity: 0
@@ -90,25 +90,25 @@ a.register('vRW6w', function(b, c) {
             opacity: 1
         }
     };
-    var _l = () => {
-        const m = (0, g.useIsPresent)();
-        return (0, d.jsx)(_m, {
-            onClick: m => {
-                m.stopPropagation();
+    var _n = () => {
+        const o = (0, i.useIsPresent)();
+        return (0, f.jsx)(_o, {
+            onClick: o => {
+                o.stopPropagation();
             },
-            initial: k.out,
-            animate: k.in,
-            exit: k.out,
+            initial: m.out,
+            animate: m.in,
+            exit: m.out,
             transition: {
-                duration: m ? 0.3 : 0.2,
+                duration: o ? 0.3 : 0.2,
                 ease: 'easeOut'
             },
-            children: (0, d.jsx)(i.default, {})
+            children: (0, f.jsx)(k.default, {})
         });
     };
-    const _m = (0, e.default)(f.motion.div).attrs({
+    const _o = (0, g.default)(h.motion.div).attrs({
         className: 'medium-shadow flex-column'
-    })(j || (j = (_b => _b)`
+    })(l || (l = (d => d)`
   padding: 40px;
   background: rgba(48, 28, 86, 0.97);
   color: ${ 0 };
@@ -118,95 +118,95 @@ a.register('vRW6w', function(b, c) {
   max-height: 400px;
   border-radius: 10px;
   overflow: hidden;
-`), h.default.White);
-}), a.register('5pOCJ', function(b, c) {
-    _t(b.exports, 'default', function() {
-        return _r;
+`), j.default.White);
+}), c.register('/f/bh', function(d, e) {
+    b(d.exports, 'default', function() {
+        return _t;
     });
-    var d = a('0hzx+'),
-        e = a('80XJ3'),
-        f = a('fe6E3'),
-        g = a('LEQ5w'),
-        h = a('Axq+p'),
-        i = a('b5kvC'),
-        j = a('103yb'),
-        k = a('cPBfb'),
-        l = a('i3kcr'),
-        m = a('D5xLI');
-    let n, o, p = b => b;
-    const q = b => `${ b }%`;
-    var _r = () => {
-        const [s, _t] = g.useState(1), [u, v] = g.useState(1);
-        g.useEffect(() => {
-            const w = localStorage.getItem(j.default.musicVolume);
-            if (w) {
-                let x = Number(w);
-                isNaN(x) && (x = 1), _t(x);
+    var f = c('gRbUn'),
+        g = c('+xIkQ'),
+        h = c('9zaF+'),
+        i = c('O0Kav'),
+        j = c('u4s09'),
+        k = c('Eh2Wh'),
+        l = c('pKVk/'),
+        m = c('OFuf70'),
+        n = c('p7Hfe'),
+        o = c('heTaO');
+    let p, q, r = d => d;
+    const s = d => `${ d }%`;
+    var _t = () => {
+        const [u, v] = i.useState(1), [w, x] = i.useState(1);
+        i.useEffect(() => {
+            const y = localStorage.getItem(l.default.musicVolume);
+            if (y) {
+                let z = Number(y);
+                isNaN(z) && (z = 1), v(z);
             }
-            const x = localStorage.getItem(j.default.soundEffectVolume);
-            if (x) {
-                let y = Number(x);
-                isNaN(y) && (y = 1), v(y);
+            const z = localStorage.getItem(l.default.soundEffectVolume);
+            if (z) {
+                let A = Number(z);
+                isNaN(A) && (A = 1), x(A);
             }
         }, []);
-        const w = g.useCallback((0, f.throttle)(() => {
-            (0, m.default)().worldManager.devices.allDevices.forEach(s => {
-                if (s.deviceOption.id === k.default.music) {
-                    s.onMasterVolumeChange();
+        const y = i.useCallback((0, h.throttle)(() => {
+            (0, o.default)().worldManager.devices.allDevices.forEach(u => {
+                if (u.deviceOption.id === m.default.music) {
+                    u.onMasterVolumeChange();
                 }
-                if (s.deviceOption.id === k.default.mapOptions) {
-                    s.onMasterVolumeChange();
+                if (u.deviceOption.id === m.default.mapOptions) {
+                    u.onMasterVolumeChange();
                 }
             });
         }, 200), []);
-        return (0, d.jsxs)(_s, {
+        return (0, f.jsxs)(_u, {
             children: [
-                (0, l.AmIGameOwner)() ? (0, d.jsxs)(d.Fragment, {
+                (0, n.AmIGameOwner)() ? (0, f.jsxs)(f.Fragment, {
                     children: [
-                        (0, d.jsx)(_t, {
+                        (0, f.jsx)(_v, {
                             children: 'Music Volume'
                         }),
-                        (0, d.jsx)(e.default, {
+                        (0, f.jsx)(g.default, {
                             min: 0,
                             max: 100,
                             step: 1,
-                            value: 100 * s,
-                            onChange: s => {
-                                _t(s / 100), localStorage.setItem(j.default.musicVolume, (s / 100).toString()), w();
+                            value: 100 * u,
+                            onChange: u => {
+                                v(u / 100), localStorage.setItem(l.default.musicVolume, (u / 100).toString()), y();
                             },
                             tooltip: {
-                                formatter: q
+                                formatter: s
                             }
                         }),
-                        (0, d.jsx)('div', {
+                        (0, f.jsx)('div', {
                             style: {
                                 height: 20
                             }
                         })
                     ]
                 }) : null,
-                (0, d.jsx)(_t, {
+                (0, f.jsx)(_v, {
                     children: 'Sound Effects Volume'
                 }),
-                (0, d.jsx)(e.default, {
+                (0, f.jsx)(g.default, {
                     min: 0,
                     max: 100,
                     step: 1,
-                    value: 100 * u,
-                    onChange: s => {
-                        v(s / 100), localStorage.setItem(j.default.soundEffectVolume, (s / 100).toString());
+                    value: 100 * w,
+                    onChange: u => {
+                        x(u / 100), localStorage.setItem(l.default.soundEffectVolume, (u / 100).toString());
                     },
                     tooltip: {
-                        formatter: q
+                        formatter: s
                     }
                 })
             ]
         });
     };
-    const _s = h.default.div(n || (n = p``)),
-        _t = h.default.div(o || (o = p`
+    const _u = j.default.div(p || (p = r``)),
+        _v = j.default.div(q || (q = r`
   font-size: 24px;
   font-weight: ${ 0 };
   margin-bottom: 15px;
-`), i.FontWeights.Bold);
+`), k.FontWeights.Bold);
 });

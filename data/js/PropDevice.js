@@ -6,95 +6,95 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('dH9pf', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('GfpF3', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _x(b.exports, 'default', function() {
-        return _x;
+    }), a(c.exports, 'default', function() {
+        return _y;
     });
-    var e = a('1bFPu'),
-        f = a('bV9vv'),
-        g = a('I35Ay'),
-        h = a('AA+mi'),
-        i = a('/pbxo'),
-        j = a('2Xvuf'),
-        k = a('JqBF0'),
-        l = a('YiQK+'),
-        m = a('9tz3H'),
-        n = a('1Chka'),
-        o = a('IFO6W13'),
-        p = a('5CmLs'),
-        q = a('D5xLI'),
-        r = a('R2Ucl10'),
-        s = a('NyV64'),
-        t = a('JEGzD');
-    const u = 100,
-        v = 200;
-    class w extends g.default {
+    var f = b('s/YA9'),
+        g = b('ZMrtj'),
+        h = b('ltxDW'),
+        i = b('5YVcp'),
+        j = b('UkCpC'),
+        k = b('UaUBz0'),
+        l = b('GIe9o'),
+        m = b('O4yrD'),
+        n = b('hycyg'),
+        o = b('+7143'),
+        p = b('u/WlI21'),
+        q = b('H4eGM'),
+        r = b('heTaO'),
+        s = b('uc4mA17'),
+        t = b('/YaFu1'),
+        u = b('UCu0V');
+    const v = 100,
+        w = 200;
+    class x extends h.default {
         createVisuals() {
-            var _x, y, z, A, B, C;
-            (this.addPart(this.propOption.imageUrl), this.options.UseColliders) && (null === (_x = this.propOption) || void 0 === _x || null === (y = _x.circleColliders) || void 0 === y || y.forEach(_x => {
-                this.addCircleCollider(_x);
-            }), null === (z = this.propOption) || void 0 === z || null === (A = z.rectColliders) || void 0 === A || A.forEach(_x => {
-                this.addRectCollider(_x);
-            }), null === (B = this.propOption) || void 0 === B || null === (C = B.ellipseColliders) || void 0 === C || C.forEach(_x => {
-                this.addEllipseCollider(_x);
+            var y, z, A, B, C, D;
+            (this.addPart(this.propOption.imageUrl), this.options.UseColliders) && (null === (y = this.propOption) || void 0 === y || null === (z = y.circleColliders) || void 0 === z || z.forEach(y => {
+                this.addCircleCollider(y);
+            }), null === (A = this.propOption) || void 0 === A || null === (B = A.rectColliders) || void 0 === B || B.forEach(y => {
+                this.addRectCollider(y);
+            }), null === (C = this.propOption) || void 0 === C || null === (D = C.ellipseColliders) || void 0 === D || D.forEach(y => {
+                this.addEllipseCollider(y);
             }));
-            this.options.shadowsEnabled && 0 === this.options.Angle && this.propOption.shadows.forEach(_x => {
-                this.addShadow(_x);
+            this.options.shadowsEnabled && 0 === this.options.Angle && this.propOption.shadows.forEach(y => {
+                this.addShadow(y);
             }), this.createHealthbar(), this.updateHealthbar(this.state.healthPercent), this.showing || this.hideInstantly();
         }
         hide() {
             this.showing = !1, this.sprite && this.sprite.view && this.tweens.add({
                 targets: this.sprite.view,
                 alpha: 0,
-                duration: u
+                duration: v
             }), this.healthbarContainer && this.healthbarContainer.view && this.tweens.add({
                 targets: this.healthbarContainer.view,
                 alpha: 0,
-                duration: u
-            }), this.shadows.forEach(_x => this.tweens.add({
-                targets: _x,
+                duration: v
+            }), this.shadows.forEach(a => this.tweens.add({
+                targets: a,
                 alphaMultip: 0,
-                duration: u
+                duration: v
             }));
         }
         hideInstantly() {
-            this.showing = !1, this.sprite && this.sprite.view && (this.sprite.view.alpha = 0), this.healthbarContainer && this.healthbarContainer.view && (this.healthbarContainer.view.alpha = 0), this.shadows.forEach(_x => {
-                _x.alphaMultip = 0;
+            this.showing = !1, this.sprite && this.sprite.view && (this.sprite.view.alpha = 0), this.healthbarContainer && this.healthbarContainer.view && (this.healthbarContainer.view.alpha = 0), this.shadows.forEach(a => {
+                a.alphaMultip = 0;
             });
         }
         show() {
             this.showing = !0, this.sprite && this.sprite.view && this.tweens.add({
                 targets: this.sprite.view,
                 alpha: this.visibleAlpha,
-                duration: u
+                duration: v
             }), this.healthbarContainer && this.healthbarContainer.view && this.tweens.add({
                 targets: this.healthbarContainer.view,
                 alpha: 1,
-                duration: u
-            }), this.shadows.forEach(_x => this.tweens.add({
-                targets: _x,
+                duration: v
+            }), this.shadows.forEach(a => this.tweens.add({
+                targets: a,
                 alphaMultip: this.getShadowVisibleAlpha(),
-                duration: u
+                duration: v
             }));
         }
-        constructor(_x) {
-            var y;
-            super(_x), (0, e.default)(this, 'showing', !0), (0, e.default)(this, 'healthbarShowTween', null), (0, e.default)(this, 'healthbarHideTween', null), (0, e.default)(this, 'createHealthbar', () => {
-                this.canBeDamaged() && this.options.healthbar !== h.HealthbarMode.off && (this.healthbarContainer = this.parts.add.container({}), this.healthbarContainer2 = this.parts.add.container({
+        constructor(y) {
+            var z;
+            super(y), (0, f.default)(this, 'showing', !0), (0, f.default)(this, 'healthbarShowTween', null), (0, f.default)(this, 'healthbarHideTween', null), (0, f.default)(this, 'createHealthbar', () => {
+                this.canBeDamaged() && this.options.healthbar !== i.HealthbarMode.off && (this.healthbarContainer = this.parts.add.container({}), this.healthbarContainer2 = this.parts.add.container({
                     parent: this.healthbarContainer.view
                 }), this.healthbarContainer.view.x = this.x, this.healthbarContainer.view.y = this.y + 30, this.healthbarContainer2.view.x = 0, this.healthbarContainer2.view.y = 0, this.healthbarBg = this.parts.add.rect({
-                    width: v,
+                    width: w,
                     height: 10,
                     color: 0,
                     alpha: 0.25,
                     parent: this.healthbarContainer2.view
                 }), this.healthbarContainer2.view.add(this.healthbarBg.view), this.healthbarBg.view.x = 0, this.healthbarBg.view.y = 0, this.healthbar = this.parts.add.rect({
-                    width: v,
+                    width: w,
                     height: 10,
                     color: 4567883,
                     alpha: 1,
@@ -105,115 +105,115 @@ a.register('dH9pf', function(b, c) {
                     color: 6800492,
                     alpha: 1,
                     parent: this.healthbarContainer2.view
-                }), this.healthbarContainer2.view.add(this.healthbarMark.view), this.healthbarMark.view.x = 99, this.healthbarMark.view.y = 0, this.options.healthbar === h.HealthbarMode.whenHit && (this.healthbarContainer2.view.alpha = 0), this.positionHealthbar());
-            }), (0, e.default)(this, 'positionHealthbar', () => {
+                }), this.healthbarContainer2.view.add(this.healthbarMark.view), this.healthbarMark.view.x = 99, this.healthbarMark.view.y = 0, this.options.healthbar === i.HealthbarMode.whenHit && (this.healthbarContainer2.view.alpha = 0), this.positionHealthbar());
+            }), (0, f.default)(this, 'positionHealthbar', () => {
                 if (!this.canBeDamaged())
                     return;
-                if (this.options.healthbar === h.HealthbarMode.off)
+                if (this.options.healthbar === i.HealthbarMode.off)
                     return;
                 if (!this.sprite.view || !this.healthbarContainer.view)
                     return;
-                const z = this.sprite.getBounds();
-                this.healthbarContainer.view.x = (z.left + z.right) / 2, this.healthbarContainer.view.y = z.bottom + 30;
-            }), (0, e.default)(this, 'tweenHealthbarOnHit', () => {
-                var z, A;
-                this.options.healthbar === h.HealthbarMode.whenHit && (null === (z = this.healthbarShowTween) || void 0 === z || z.stop(), this.healthbarShowTween = this.tweens.add({
+                const A = this.sprite.getBounds();
+                this.healthbarContainer.view.x = (A.left + A.right) / 2, this.healthbarContainer.view.y = A.bottom + 30;
+            }), (0, f.default)(this, 'tweenHealthbarOnHit', () => {
+                var A, B;
+                this.options.healthbar === i.HealthbarMode.whenHit && (null === (A = this.healthbarShowTween) || void 0 === A || A.stop(), this.healthbarShowTween = this.tweens.add({
                     targets: this.healthbarContainer2.view,
                     alpha: 1,
-                    duration: u,
+                    duration: v,
                     ease: Phaser.Math.Easing.Sine.InOut
-                }), null === (A = this.healthbarHideTween) || void 0 === A || A.stop(), this.healthbarHideTween = this.tweens.add({
+                }), null === (B = this.healthbarHideTween) || void 0 === B || B.stop(), this.healthbarHideTween = this.tweens.add({
                     targets: this.healthbarContainer2.view,
                     alpha: 0,
                     duration: 350,
                     delay: 1000,
                     ease: Phaser.Math.Easing.Sine.InOut
                 }));
-            }), (0, e.default)(this, 'updateHealthbar', _x => {
+            }), (0, f.default)(this, 'updateHealthbar', y => {
                 if (!this.canBeDamaged())
                     return;
-                if (this.options.healthbar === h.HealthbarMode.off)
+                if (this.options.healthbar === i.HealthbarMode.off)
                     return;
-                const z = null != _x ? _x : 1;
-                this.healthbar.view.scaleX = z, this.healthbar.view.x = -200 * (1 - z) / 2, this.healthbarBg.view.alpha = 0, this.healthbar.view.alpha = 0, this.healthbarMark.view.alpha = 0, z > 0 && (this.healthbar.view.alpha = 1, this.healthbarBg.view.alpha = 1, this.healthbarMark.view.alpha = this.healthbar.view.alpha, this.healthbarMark.view.x = v * z - 100 - 1);
-            }), (0, e.default)(this, 'onStateChange', _x => {
-                if ('visible' === _x && (this.state.visible ? ((0, s.default)(this), this.show()) : this.hide()), 'hitData' === _x) {
-                    const z = JSON.parse(this.state.hitData);
-                    void 0 !== z.alpha && void 0 !== z.damageToDeal && this.onHealthChange(z);
+                const A = null != y ? y : 1;
+                this.healthbar.view.scaleX = A, this.healthbar.view.x = -200 * (1 - A) / 2, this.healthbarBg.view.alpha = 0, this.healthbar.view.alpha = 0, this.healthbarMark.view.alpha = 0, A > 0 && (this.healthbar.view.alpha = 1, this.healthbarBg.view.alpha = 1, this.healthbarMark.view.alpha = this.healthbar.view.alpha, this.healthbarMark.view.x = w * A - 100 - 1);
+            }), (0, f.default)(this, 'onStateChange', y => {
+                if ('visible' === y && (this.state.visible ? ((0, t.default)(this), this.show()) : this.hide()), 'hitData' === y) {
+                    const A = JSON.parse(this.state.hitData);
+                    void 0 !== A.alpha && void 0 !== A.damageToDeal && this.onHealthChange(A);
                 }
-            }), (0, e.default)(this, 'onHealthChange', _x => {
-                if ((null == _x ? void 0 : _x.damageToDeal) > 0) {
-                    let z = null == _x ? void 0 : _x.x,
-                        A = null == _x ? void 0 : _x.y;
-                    if (!z || !A) {
-                        const B = this.boundingBox.getBoundingBox(),
-                            C = {
-                                x: B.x + B.width / 2,
-                                y: B.y + B.height / 2
+            }), (0, f.default)(this, 'onHealthChange', y => {
+                if ((null == y ? void 0 : y.damageToDeal) > 0) {
+                    let A = null == y ? void 0 : y.x,
+                        B = null == y ? void 0 : y.y;
+                    if (!A || !B) {
+                        const C = this.boundingBox.getBoundingBox(),
+                            D = {
+                                x: C.x + C.width / 2,
+                                y: C.y + C.height / 2
                             };
-                        z = C.x, A = C.y;
+                        A = D.x, B = D.y;
                     }
-                    const B = Phaser.Math.Snap.To(z, 20),
-                        C = Phaser.Math.Snap.To(A, 20);
-                    (0, q.default)().worldManager.projectiles.damageMarkers.basic.applyDamage({
+                    const C = Phaser.Math.Snap.To(A, 20),
+                        D = Phaser.Math.Snap.To(B, 20);
+                    (0, r.default)().worldManager.projectiles.damageMarkers.basic.applyDamage({
                         markerId: this.id,
-                        damage: _x.damageToDeal,
-                        x: B,
-                        y: C
+                        damage: y.damageToDeal,
+                        x: C,
+                        y: D
                     });
                 }
-                this.updateVisibleAlpha(_x.alpha), this.spriteFlashOverlay && this.spriteFlashOverlay.view && (this.spriteFlashOverlay.view.alpha = 1, this.tweens.add({
+                this.updateVisibleAlpha(y.alpha), this.spriteFlashOverlay && this.spriteFlashOverlay.view && (this.spriteFlashOverlay.view.alpha = 1, this.tweens.add({
                     targets: this.spriteFlashOverlay.view,
                     alpha: 0,
                     duration: 200
                 })), this.sprite && this.sprite.view && this.tweens.add({
                     targets: this.sprite.view,
                     alpha: this.visibleAlpha,
-                    duration: u
-                }), this.shadows.forEach(_x => this.tweens.add({
-                    targets: _x,
+                    duration: v
+                }), this.shadows.forEach(y => this.tweens.add({
+                    targets: y,
                     alphaMultip: this.getShadowVisibleAlpha(),
-                    duration: u
-                })), this.updateHealthbar(_x.alpha), this.tweenHealthbarOnHit();
-            }), (0, e.default)(this, 'addVisualEditing', () => {
-                const z = (0, n.default)((0, j.default)(this.propOption.imageUrl)),
-                    A = (0, r.FetchOptionSchemaProperty)(this, 'Scale'),
-                    B = z.width * this.propOption.scaleMultip,
-                    C = z.height * this.propOption.scaleMultip,
-                    D = {
-                        x: (0.5 - this.propOption.originX) * B,
-                        y: (0.5 - this.propOption.originY) * C
+                    duration: v
+                })), this.updateHealthbar(y.alpha), this.tweenHealthbarOnHit();
+            }), (0, f.default)(this, 'addVisualEditing', () => {
+                const A = (0, o.default)((0, k.default)(this.propOption.imageUrl)),
+                    B = (0, s.FetchOptionSchemaProperty)(this, 'Scale'),
+                    C = A.width * this.propOption.scaleMultip,
+                    D = A.height * this.propOption.scaleMultip,
+                    E = {
+                        x: (0.5 - this.propOption.originX) * C,
+                        y: (0.5 - this.propOption.originY) * D
                     },
-                    E = (0, l.GetPosAfterTransform)(D.x, D.y, this.options.Scale, this.options.Angle);
-                Math.max(0, 50 - B * Math.max(0.5, A.min)), Math.max(0, 50 - C * Math.max(0.5, A.min));
+                    F = (0, m.GetPosAfterTransform)(E.x, E.y, this.options.Scale, this.options.Angle);
+                Math.max(0, 50 - C * Math.max(0.5, B.min)), Math.max(0, 50 - D * Math.max(0.5, B.min));
                 this.visualEditing.add.box({
-                    x: E.x,
-                    y: E.y,
+                    x: F.x,
+                    y: F.y,
                     angle: this.options.Angle,
-                    width: B * this.options.Scale + 0,
-                    height: C * this.options.Scale + 0,
-                    minWidth: B * Math.max(0.1, A.min) + 0,
-                    maxWidth: B * A.max + 0,
-                    minHeight: C * Math.max(0.1, A.min) + 0,
-                    maxHeight: C * A.max + 0,
-                    onChange: z => {
-                        const F = (z.height - 0) / C,
-                            G = z.angle,
-                            H = {
-                                x: (0.5 - this.propOption.originX) * B,
-                                y: (0.5 - this.propOption.originY) * C
+                    width: C * this.options.Scale + 0,
+                    height: D * this.options.Scale + 0,
+                    minWidth: C * Math.max(0.1, B.min) + 0,
+                    maxWidth: C * B.max + 0,
+                    minHeight: D * Math.max(0.1, B.min) + 0,
+                    maxHeight: D * B.max + 0,
+                    onChange: A => {
+                        const G = (A.height - 0) / D,
+                            H = A.angle,
+                            I = {
+                                x: (0.5 - this.propOption.originX) * C,
+                                y: (0.5 - this.propOption.originY) * D
                             },
-                            I = (0, l.GetPosAfterTransform)(H.x, H.y, F, G);
-                        (0, o.ReplaceVisualEditingPreview)(z.x - I.x, z.y - I.y, {
-                            Angle: G,
-                            Scale: F
+                            J = (0, m.GetPosAfterTransform)(I.x, I.y, G, H);
+                        (0, p.ReplaceVisualEditingPreview)(A.x - J.x, A.y - J.y, {
+                            Angle: H,
+                            Scale: G
                         });
                     }
                 });
-            }), (0, e.default)(this, 'addPart', _x => {
+            }), (0, f.default)(this, 'addPart', y => {
                 this.sprite = this.parts.add.sprite({
-                    imageId: (0, j.default)(_x),
-                    imageUrl: (0, j.default)(_x),
+                    imageId: (0, k.default)(y),
+                    imageUrl: (0, k.default)(y),
                     originX: this.propOption.originX,
                     originY: this.propOption.originY,
                     onReady: () => {
@@ -222,180 +222,180 @@ a.register('dH9pf', function(b, c) {
                         }, 0);
                     }
                 }), this.sprite.view.scaleX = (this.options.Scale || 1) * this.propOption.scaleMultip, this.sprite.view.scaleY = (this.options.Scale || 1) * this.propOption.scaleMultip, this.sprite.view.angle = this.options.Angle, this.sprite.view.alpha = this.visibleAlpha, this.options.FlipX && (this.sprite.view.scaleX *= -1), this.options.Tint && (this.sprite.view.tint = Phaser.Display.Color.HexStringToColor(this.options.Tint).color), this.canBeDamaged() && (this.spriteFlashOverlay = this.parts.add.sprite({
-                    imageId: (0, j.default)(_x),
-                    imageUrl: (0, j.default)(_x),
+                    imageId: (0, k.default)(y),
+                    imageUrl: (0, k.default)(y),
                     originX: this.propOption.originX,
                     originY: this.propOption.originY,
                     flipX: this.options.FlipX,
                     depthChange: 10
                 }), this.spriteFlashOverlay.view.scaleX = (this.options.Scale || 1) * this.propOption.scaleMultip, this.spriteFlashOverlay.view.scaleY = (this.options.Scale || 1) * this.propOption.scaleMultip, this.spriteFlashOverlay.view.angle = this.options.Angle, this.spriteFlashOverlay.view.alpha = 0, this.spriteFlashOverlay.view.tint = 16777215, this.spriteFlashOverlay.view.tintFill = !0), this.boundingBox.clearCached(), this.updateWirePoint();
-            }), (0, e.default)(this, 'updateWirePoint', () => {
-                if (!(0, m.isSavedVersion)() || this.isPreview)
+            }), (0, f.default)(this, 'updateWirePoint', () => {
+                if (!(0, n.isSavedVersion)() || this.isPreview)
                     return;
-                const z = this.boundingBox.getBoundingBox();
-                this.wirePoints.setBoth(z.x + z.width / 2, z.y + z.height / 2);
-            }), (0, e.default)(this, 'addCircleCollider', _x => {
-                const z = this.options.FlipX ? -_x.x : _x.x,
-                    A = (0, l.GetPosAfterTransform)(z, _x.y, this.options.Scale, this.options.Angle);
+                const A = this.boundingBox.getBoundingBox();
+                this.wirePoints.setBoth(A.x + A.width / 2, A.y + A.height / 2);
+            }), (0, f.default)(this, 'addCircleCollider', y => {
+                const A = this.options.FlipX ? -y.x : y.x,
+                    B = (0, m.GetPosAfterTransform)(A, y.y, this.options.Scale, this.options.Angle);
                 this.colliders.add.circle({
-                    r: _x.r * this.options.Scale,
-                    x: A.x,
-                    y: A.y
-                });
-            }), (0, e.default)(this, 'addRectCollider', _x => {
-                const z = this.options.FlipX ? -_x.x : _x.x,
-                    A = this.options.FlipX ? -_x.angle : _x.angle,
-                    B = _x.w * this.options.Scale,
-                    C = _x.h * this.options.Scale,
-                    D = (0, l.GetPosAfterTransform)(z, _x.y, this.options.Scale, this.options.Angle);
-                this.colliders.add.box({
-                    x: D.x,
-                    y: D.y,
-                    w: B,
-                    h: C,
-                    angle: this.options.Angle + A
-                });
-            }), (0, e.default)(this, 'addEllipseCollider', _x => {
-                const z = this.options.FlipX ? -_x.x : _x.x,
-                    A = this.options.FlipX ? -_x.angle : _x.angle,
-                    B = (0, l.GetPosAfterTransform)(z, _x.y, this.options.Scale, this.options.Angle);
-                this.colliders.add.ellipse({
+                    r: y.r * this.options.Scale,
                     x: B.x,
-                    y: B.y,
-                    r1: _x.r1 * this.options.Scale,
-                    r2: _x.r2 * this.options.Scale,
-                    angle: this.options.Angle + A
+                    y: B.y
                 });
-            }), (0, e.default)(this, 'addShadow', _x => {
-                if ((0, t.isPlatformer)())
+            }), (0, f.default)(this, 'addRectCollider', y => {
+                const A = this.options.FlipX ? -y.x : y.x,
+                    B = this.options.FlipX ? -y.angle : y.angle,
+                    C = y.w * this.options.Scale,
+                    D = y.h * this.options.Scale,
+                    E = (0, m.GetPosAfterTransform)(A, y.y, this.options.Scale, this.options.Angle);
+                this.colliders.add.box({
+                    x: E.x,
+                    y: E.y,
+                    w: C,
+                    h: D,
+                    angle: this.options.Angle + B
+                });
+            }), (0, f.default)(this, 'addEllipseCollider', y => {
+                const A = this.options.FlipX ? -y.x : y.x,
+                    B = this.options.FlipX ? -y.angle : y.angle,
+                    C = (0, m.GetPosAfterTransform)(A, y.y, this.options.Scale, this.options.Angle);
+                this.colliders.add.ellipse({
+                    x: C.x,
+                    y: C.y,
+                    r1: y.r1 * this.options.Scale,
+                    r2: y.r2 * this.options.Scale,
+                    angle: this.options.Angle + B
+                });
+            }), (0, f.default)(this, 'addShadow', y => {
+                if ((0, u.isPlatformer)())
                     return;
-                const z = (0, l.GetPosAfterTransform)(_x.x, _x.y, this.options.Scale, 0);
+                const A = (0, m.GetPosAfterTransform)(y.x, y.y, this.options.Scale, 0);
                 this.shadows.add({
-                    x: this.options.FlipX ? -z.x : z.x,
-                    y: z.y,
-                    r1: _x.r1 * this.options.Scale,
-                    r2: _x.r2 * this.options.Scale,
+                    x: this.options.FlipX ? -A.x : A.x,
+                    y: A.y,
+                    r1: y.r1 * this.options.Scale,
+                    r2: y.r2 * this.options.Scale,
                     alphaMultip: this.getShadowVisibleAlpha(),
-                    depth: this.options.shadowsPlacement === h.ShadowsPlacement.beneathProp ? this.layers.getGlobalDepth() - (0, p.default)(1) : 0
+                    depth: this.options.shadowsPlacement === i.ShadowsPlacement.beneathProp ? this.layers.getGlobalDepth() - (0, q.default)(1) : 0
                 });
-            }), (0, e.default)(this, 'canBeDamaged', () => this.options.canBeDamaged), (0, e.default)(this, 'updateVisibleAlpha', _x => {
-                var z;
-                const A = 0 === _x ? 0 : 0.75 * (null !== (z = this.state.healthPercent) && void 0 !== z ? z : 1) + 0.25;
-                var B;
-                this.visibleAlpha = A * (null !== (B = this.options.Alpha) && void 0 !== B ? B : 1);
-            }), (0, e.default)(this, 'getShadowVisibleAlpha', () => {
-                return 0 === this.visibleAlpha ? 0 : null !== (_x = this.options.Alpha) && void 0 !== _x ? _x : 1;
-                var z;
-            }), (0, e.default)(this, 'checkIfCollidersEnabled', () => this.state.visible && this.state.healthPercent > 0), (0, e.default)(this, 'fixBoundingBox', () => {
+            }), (0, f.default)(this, 'canBeDamaged', () => this.options.canBeDamaged), (0, f.default)(this, 'updateVisibleAlpha', y => {
+                var A;
+                const B = 0 === y ? 0 : 0.75 * (null !== (A = this.state.healthPercent) && void 0 !== A ? A : 1) + 0.25;
+                var C;
+                this.visibleAlpha = B * (null !== (C = this.options.Alpha) && void 0 !== C ? C : 1);
+            }), (0, f.default)(this, 'getShadowVisibleAlpha', () => {
+                return 0 === this.visibleAlpha ? 0 : null !== (y = this.options.Alpha) && void 0 !== y ? y : 1;
+                var A;
+            }), (0, f.default)(this, 'checkIfCollidersEnabled', () => this.state.visible && this.state.healthPercent > 0), (0, f.default)(this, 'fixBoundingBox', () => {
                 if (!this.options.FlipX)
                     return;
                 if (this.boundingBox.isHardcoded())
                     return;
                 if (this.isPreview)
                     return;
-                const z = this.boundingBox.getBoundingBox(),
-                    A = z.x + z.width - this.x;
+                const A = this.boundingBox.getBoundingBox(),
+                    B = A.x + A.width - this.x;
                 this.boundingBox.setHardcoded({
-                    x: -A,
-                    y: z.y - this.y,
-                    width: z.width,
-                    height: z.height
+                    x: -B,
+                    y: A.y - this.y,
+                    width: A.width,
+                    height: A.height
                 });
-            }), this.updateVisibleAlpha(null !== (y = this.state.healthPercent) && void 0 !== y ? y : 1);
-            const z = (0, f.default)(this.options.propId);
-            var A;
-            z && (this.propOption = z, (0, i.InGamePhase)() && !this.state.visible && (this.showing = !1), this.layers.setDefaultLayer(null !== (A = z.defaultLayer) && void 0 !== A ? A : k.default.DepthSortedCharactersAndDevices), this.createVisuals());
+            }), this.updateVisibleAlpha(null !== (z = this.state.healthPercent) && void 0 !== z ? z : 1);
+            const A = (0, g.default)(this.options.propId);
+            var B;
+            A && (this.propOption = A, (0, j.InGamePhase)() && !this.state.visible && (this.showing = !1), this.layers.setDefaultLayer(null !== (B = A.defaultLayer) && void 0 !== B ? B : l.default.DepthSortedCharactersAndDevices), this.createVisuals());
         }
     }
-    var _x = w;
-}), a.register('AA+mi', function(b, c) {
-    let d;
-    var e;
-    let f;
-    var g;
-    t(b.exports, 'ShadowsPlacement', function() {
-        return d;
-    }), t(b.exports, 'HealthbarMode', function() {
-        return f;
-    }), (e = d || (d = {})).floor = 'Floor', e.beneathProp = 'Beneath Prop', (g = f || (f = {})).off = 'Off', g.on = 'On', g.whenHit = 'When Hit';
-}), a.register('YiQK+', function(b, c) {
-    t(b.exports, 'GetPosAfterTransform', function() {
-        return _d;
+    var _y = x;
+}), b.register('5YVcp', function(c, d) {
+    let e;
+    var f;
+    let g;
+    var h;
+    a(c.exports, 'ShadowsPlacement', function() {
+        return e;
+    }), a(c.exports, 'HealthbarMode', function() {
+        return g;
+    }), (f = e || (e = {})).floor = 'Floor', f.beneathProp = 'Beneath Prop', (h = g || (g = {})).off = 'Off', h.on = 'On', h.whenHit = 'When Hit';
+}), b.register('O4yrD', function(c, d) {
+    a(c.exports, 'GetPosAfterTransform', function() {
+        return _e;
     });
-    const _d = (t, b, c, _d) => {
-        const e = t * c,
-            f = b * c,
-            g = Phaser.Math.DegToRad(_d);
+    const _e = (a, c, d, _e) => {
+        const f = a * d,
+            g = c * d,
+            h = Phaser.Math.DegToRad(_e);
         return {
-            x: e * Math.cos(g) - f * Math.sin(g),
-            y: e * Math.sin(g) + f * Math.cos(g)
+            x: f * Math.cos(h) - g * Math.sin(h),
+            y: f * Math.sin(h) + g * Math.cos(h)
         };
     };
-}), a.register('IFO6W13', function(b, c) {
-    t(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return _h;
+}), b.register('u/WlI21', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+        return _i;
     });
-    var d = a('HqwPM'),
-        e = a('+oovY4'),
-        f = a('A17vD'),
-        g = a('HXXiu');
-    const _h = (t, a, b) => {
-        const i = (0, g.FetchVisualEditingPreview)(),
-            j = (0, f.FetchCurrentlyEditedDevice)();
-        if (!j || !i)
+    var e = b('hemXM'),
+        f = b('sWmxu5'),
+        g = b('EzUqb'),
+        h = b('GQMbT');
+    const _i = (a, b, c) => {
+        const j = (0, h.FetchVisualEditingPreview)(),
+            k = (0, g.FetchCurrentlyEditedDevice)();
+        if (!k || !j)
             return;
-        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
-        (0, e.default)({
-            deviceOption: i.deviceOption,
-            id: d.VisualEditingConstants.previewId,
-            x: t,
-            y: a,
-            depth: k,
-            layerId: j.layers.getLayer(),
-            name: i.name,
+        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        (0, f.default)({
+            deviceOption: j.deviceOption,
+            id: e.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: l,
+            layerId: k.layers.getLayer(),
+            name: j.name,
             isPreview: !0,
             options: {
-                ...i.options,
-                ...b
+                ...j.options,
+                ...c
             },
             placedByClient: !0,
-            state: i.deviceOption.defaultState
+            state: j.deviceOption.defaultState
         });
     };
-}), a.register('+oovY4', function(b, c) {
-    t(b.exports, 'default', function() {
-        return _f;
+}), b.register('sWmxu5', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('D5xLI'),
-        e = a('aIyMH');
-    var _f = t => {
-        (0, d.default)().worldManager.devices.getDeviceById(t.id) && (0, e.default)(t);
+    var e = b('heTaO'),
+        f = b('2LtPo');
+    var _g = a => {
+        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
     };
-}), a.register('R2Ucl10', function(b, c) {
-    t(b.exports, 'FetchOptionSchemaProperty', function() {
-        return _d;
+}), b.register('uc4mA17', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
+        return _e;
     });
-    const _d = (t, b) => {
-        var e, f, g;
-        const h = t.deviceOption.optionSchema.options.find(t => t.key === b);
+    const _e = (a, c) => {
+        var f, g, h;
+        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
         return {
-            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
-            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
-            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
+            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
+            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
+            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
         };
     };
-}), a.register('NyV64', function(b, c) {
-    t(b.exports, 'default', function() {
-        return _f;
+}), b.register('/YaFu1', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('Jfada'),
-        e = a('B7ZvS');
-    var _f = t => {
-        const g = (0, e.default)((0, d.default)());
-        t.colliders.forEach(t => {
-            var h, i, j;
-            const k = t.bodyId;
-            null === (h = null == g ? void 0 : g.physics.getBody()) || void 0 === h || null === (i = h.character) || void 0 === i || null === (j = i.ignoredStaticBodies) || void 0 === j || j.add(k);
+    var e = b('5Fjxs'),
+        f = b('d7UqH');
+    var _g = a => {
+        const h = (0, f.default)((0, e.default)());
+        a.colliders.forEach(a => {
+            var i, j, k;
+            const l = a.bodyId;
+            null === (i = null == h ? void 0 : h.physics.getBody()) || void 0 === i || null === (j = i.character) || void 0 === j || null === (k = j.ignoredStaticBodies) || void 0 === k || k.add(l);
         });
     };
 });

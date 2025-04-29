@@ -6,125 +6,125 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('rUwLW', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('CAZzV', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _t(b.exports, 'default', function() {
-        return _t;
+    }), a(c.exports, 'default', function() {
+        return _u;
     });
-    var e = a('1bFPu'),
-        f = a('iWivW'),
-        g = a('i3kcr'),
-        h = a('1f1YX'),
-        i = a('6yrsF'),
-        j = (a('2Xvuf'), a('VvINu')),
-        k = a('9tz3H'),
-        l = a('/pbxo'),
-        m = a('I35Ay'),
-        n = (a('+uQv7'), a('dTXti'), a('eIAtr')),
-        o = a('EVYxD'),
-        p = a('2QUhJ');
-    const q = new Map(),
-        r = new Map();
-    class s extends m.default {
+    var f = b('s/YA9'),
+        g = b('fI6of'),
+        h = b('p7Hfe'),
+        i = b('CbU7r'),
+        j = b('6yrsF'),
+        k = (b('UaUBz0'), b('TB4da')),
+        l = b('hycyg'),
+        m = b('UkCpC'),
+        n = b('ltxDW'),
+        o = (b('73Aki'), b('AHhkR'), b('a9TTj0')),
+        p = b('TUJO2'),
+        q = b('6m3uj');
+    const r = new Map(),
+        s = new Map();
+    class t extends n.default {
         get howl() {
-            return q.get(this.id);
+            return r.get(this.id);
         }
         get isPlaying() {
-            return r.get(this.id) || !1;
+            return s.get(this.id) || !1;
         }
-        set isPlaying(_t) {
-            r.set(this.id, _t);
+        set isPlaying(u) {
+            s.set(this.id, u);
         }
         play() {
-            this.howl && !this.isPlaying && (this.howl.volume(0), this.howl.play(), this.isPlaying = !0, this.howl.fade(0, (0, h.getVolume)({
-                volume: (0, p.getMusicVolume)(this) / 100,
-                type: h.SoundType.music
-            }), n.Consts.fadeInTime));
+            this.howl && !this.isPlaying && (this.howl.volume(0), this.howl.play(), this.isPlaying = !0, this.howl.fade(0, (0, i.getVolume)({
+                volume: (0, q.getMusicVolume)(this) / 100,
+                type: i.SoundType.music
+            }), o.Consts.fadeInTime));
         }
         stop() {
             this.howl && this.isPlaying && (this.howl.stop(), this.isPlaying = !1);
         }
         fadeOut() {
-            this.howl && this.isPlaying && (this.howl.fade(this.howl.volume(), 0, n.Consts.fadeOutTime), this.isPlaying = !1);
+            this.howl && this.isPlaying && (this.howl.fade(this.howl.volume(), 0, o.Consts.fadeOutTime), this.isPlaying = !1);
         }
-        constructor(t) {
-            if (super(t), (0, e.default)(this, 'onUpdate', () => {
+        constructor(u) {
+            if (super(u), (0, f.default)(this, 'onUpdate', () => {
                     if (!this.state.countdownActive && !this.state.countupActive)
                         return;
-                    const u = f.default.session.gameTime,
-                        v = this.state.countdownActive ? this.state.countdownEndTimestamp - u : u - this.state.countupStartTimestamp,
-                        w = Math.max(0, v / 1000);
-                    f.default.session.gameClockDuration = (0, j.SecondsToDuration)(w);
-                }), (0, e.default)(this, 'onMasterVolumeChange', () => {
-                    this.howl && this.howl.volume((0, h.getVolume)({
-                        volume: (0, p.getMusicVolume)(this) / 100,
-                        type: h.SoundType.music
+                    const v = g.default.session.gameTime,
+                        w = this.state.countdownActive ? this.state.countdownEndTimestamp - v : v - this.state.countupStartTimestamp,
+                        x = Math.max(0, w / 1000);
+                    g.default.session.gameClockDuration = (0, k.SecondsToDuration)(x);
+                }), (0, f.default)(this, 'onMasterVolumeChange', () => {
+                    this.howl && this.howl.volume((0, i.getVolume)({
+                        volume: (0, q.getMusicVolume)(this) / 100,
+                        type: i.SoundType.music
                     }));
-                }), (0, e.default)(this, 'onStateChange', t => {
-                    'gameMusicState' === t && (this.state.gameMusicState === o.GameMusicState.playing ? this.play() : this.state.gameMusicState === o.GameMusicState.stopped ? this.stop() : this.state.gameMusicState === o.GameMusicState.fadingOut && this.fadeOut()), 'allowedToAddTimeToEndCountdown' === t && (f.default.session.canAddGameTime = this.state.allowedToAddTimeToEndCountdown);
-                }), (0, e.default)(this, 'onDestroy', t => {
-                    var u;
-                    t.isBeingReplaced || (null === (u = q.get(this.id)) || void 0 === u || u.unload(), q.delete(this.id), r.delete(this.id));
-                }), (0, l.InPreGamePhase)() && (0, k.isSavedVersion)(), (0, l.InGamePhase)() && (0, g.AmIGameOwner)()) {
-                if (!q.get(this.id)) {
-                    const u = new(0, i.Howl)({
-                        src: [(0, p.getMusicUrl)(this)],
+                }), (0, f.default)(this, 'onStateChange', u => {
+                    'gameMusicState' === u && (this.state.gameMusicState === p.GameMusicState.playing ? this.play() : this.state.gameMusicState === p.GameMusicState.stopped ? this.stop() : this.state.gameMusicState === p.GameMusicState.fadingOut && this.fadeOut()), 'allowedToAddTimeToEndCountdown' === u && (g.default.session.canAddGameTime = this.state.allowedToAddTimeToEndCountdown);
+                }), (0, f.default)(this, 'onDestroy', u => {
+                    var v;
+                    u.isBeingReplaced || (null === (v = r.get(this.id)) || void 0 === v || v.unload(), r.delete(this.id), s.delete(this.id));
+                }), (0, m.InPreGamePhase)() && (0, l.isSavedVersion)(), (0, m.InGamePhase)() && (0, h.AmIGameOwner)()) {
+                if (!r.get(this.id)) {
+                    const v = new(0, j.Howl)({
+                        src: [(0, q.getMusicUrl)(this)],
                         preload: !0,
                         loop: !0
                     });
-                    q.set(this.id, u);
+                    r.set(this.id, v);
                 }
-                this.state.gameMusicState === o.GameMusicState.playing && this.play(), this.state.gameMusicState === o.GameMusicState.stopped && this.isPlaying && this.stop();
+                this.state.gameMusicState === p.GameMusicState.playing && this.play(), this.state.gameMusicState === p.GameMusicState.stopped && this.isPlaying && this.stop();
             }
-            (0, l.InPreGamePhase)() && q.delete(this.id), f.default.session.canAddGameTime = this.state.allowedToAddTimeToEndCountdown;
+            (0, m.InPreGamePhase)() && r.delete(this.id), g.default.session.canAddGameTime = this.state.allowedToAddTimeToEndCountdown;
         }
     }
-    var _t = s;
-}), a.register('VvINu', function(b, c) {
-    t(b.exports, 'SecondsToDuration', function() {
-        return _d;
+    var _u = t;
+}), b.register('TB4da', function(c, d) {
+    a(c.exports, 'SecondsToDuration', function() {
+        return _e;
     });
-    const _d = t => {
-            const e = Math.floor(t / 3600),
-                f = Math.floor(t % 3600 / 60),
-                g = Math.floor(t % 60);
-            return e > 0 ? `${ e }:${ _e(f) }:${ _e(g) }` : `${ f }:${ _e(g) }`;
+    const _e = a => {
+            const f = Math.floor(a / 3600),
+                g = Math.floor(a % 3600 / 60),
+                h = Math.floor(a % 60);
+            return f > 0 ? `${ f }:${ _f(g) }:${ _f(h) }` : `${ g }:${ _f(h) }`;
         },
-        _e = t => t < 10 ? `0${ t }` : `${ t }`;
-}), a.register('eIAtr', function(b, c) {
-    t(b.exports, 'Consts', function() {
-        return _d;
+        _f = a => a < 10 ? `0${ a }` : `${ a }`;
+}), b.register('a9TTj0', function(c, d) {
+    a(c.exports, 'Consts', function() {
+        return _e;
     });
-    const _d = {
+    const _e = {
         fadeInTime: 1000,
         fadeOutTime: 1000
     };
-}), a.register('EVYxD', function(b, c) {
-    let d;
-    var e;
-    t(b.exports, 'GameMusicState', function() {
-        return d;
-    }), (e = d || (d = {})).stopped = 'stopped', e.playing = 'playing', e.fadingOut = 'fadingOut';
-}), a.register('2QUhJ', function(b, c) {
-    t(b.exports, 'getMusicUrl', function() {
-        return _g;
-    }), t(b.exports, 'getMusicVolume', function() {
+}), b.register('TUJO2', function(c, d) {
+    let e;
+    var f;
+    a(c.exports, 'GameMusicState', function() {
+        return e;
+    }), (f = e || (e = {})).stopped = 'stopped', f.playing = 'playing', f.fadingOut = 'fadingOut';
+}), b.register('6m3uj', function(c, d) {
+    a(c.exports, 'getMusicUrl', function() {
         return _h;
+    }), a(c.exports, 'getMusicVolume', function() {
+        return _i;
     });
-    var d = a('UJCwk'),
-        e = a('Xc4Kz'),
-        f = a('2Xvuf');
-    const _g = t => {
-            if ((0, e.IsTutorial)())
+    var e = b('oH3gV'),
+        f = b('yhnQh'),
+        g = b('UaUBz0');
+    const _h = a => {
+            if ((0, f.IsTutorial)())
                 return '';
-            if (t.options.musicUrl)
-                return (0, d.GetSoundUrl)(t.options.musicUrl);
-            const h = t.options.presetMusicId;
-            return 'NONE' !== h ? (0, f.default)('music/presets/' + h + '.mp3') : null;
+            if (a.options.musicUrl)
+                return (0, e.GetSoundUrl)(a.options.musicUrl);
+            const i = a.options.presetMusicId;
+            return 'NONE' !== i ? (0, g.default)('music/presets/' + i + '.mp3') : null;
         },
-        _h = t => t.options.musicUrl ? t.options.musicVolume : 25;
+        _i = a => a.options.musicUrl ? a.options.musicVolume : 25;
 });

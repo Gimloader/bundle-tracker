@@ -6,45 +6,45 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('VifXL', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('Uu3gf', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _k(b.exports, 'default', function() {
-        return _k;
+    }), a(c.exports, 'default', function() {
+        return _l;
     });
-    var e = a('/pbxo'),
-        f = a('I35Ay'),
-        g = a('9tz3H'),
-        h = a('d+duS'),
-        i = a('JqBF0');
-    class j extends f.default {
-        constructor(_k) {
-            if (super(_k), !this.options.visibleInGame && ((0, e.InGamePhase)() || (0, g.isPublishedVersion)()))
+    var f = b('UkCpC'),
+        g = b('ltxDW'),
+        h = b('hycyg'),
+        i = b('U52hb'),
+        j = b('GIe9o');
+    class k extends g.default {
+        constructor(l) {
+            if (super(l), !this.options.visibleInGame && ((0, f.InGamePhase)() || (0, h.isPublishedVersion)()))
                 return;
-            const l = (0, e.InPreGamePhase)() ? h.BaseWithCharacterAsset : h.BaseWithoutCharacterAsset;
+            const m = (0, f.InPreGamePhase)() ? i.BaseWithCharacterAsset : i.BaseWithoutCharacterAsset;
             this.parts.add.sprite({
-                ...l,
+                ...m,
                 y: -18
-            }).view.setScale(0.5), this.layers.setDefaultLayer(i.default.DevicesUnderCharacters);
+            }).view.setScale(0.5), this.layers.setDefaultLayer(j.default.DevicesUnderCharacters);
         }
     }
-    var _k = j;
-}), a.register('d+duS', function(b, c) {
-    e(b.exports, 'BaseWithoutCharacterAsset', function() {
-        return _e;
-    }), e(b.exports, 'BaseWithCharacterAsset', function() {
+    var _l = k;
+}), b.register('U52hb', function(c, d) {
+    a(c.exports, 'BaseWithoutCharacterAsset', function() {
         return _f;
+    }), a(c.exports, 'BaseWithCharacterAsset', function() {
+        return _g;
     });
-    var d = a('2Xvuf');
-    const _e = {
-            imageId: (0, d.default)('devices/spawn_pad/base_without_character.png'),
-            imageUrl: (0, d.default)('devices/spawn_pad/base_without_character.png')
+    var e = b('UaUBz0');
+    const _f = {
+            imageId: (0, e.default)('devices/spawn_pad/base_without_character.png'),
+            imageUrl: (0, e.default)('devices/spawn_pad/base_without_character.png')
         },
-        _f = {
-            imageId: (0, d.default)('devices/spawn_pad/base_with_character.png'),
-            imageUrl: (0, d.default)('devices/spawn_pad/base_with_character.png')
+        _g = {
+            imageId: (0, e.default)('devices/spawn_pad/base_with_character.png'),
+            imageUrl: (0, e.default)('devices/spawn_pad/base_with_character.png')
         };
 });

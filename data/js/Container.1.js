@@ -7,77 +7,77 @@ function a(b, c, d, e) {
     });
 }
 
-function a(b) {
-    return b && b.__esModule ? b.default : b;
+function b(c) {
+    return c && c.__esModule ? c.default : c;
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('nNplT', function(b, c) {
-    _f(b.exports, 'default', function() {
-        return _s;
+var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+c.register('wSjT+', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _u;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('PMl60'),
-        g = a('+i8ep'),
-        h = a('L9I9e'),
-        i = a('ulE4q'),
-        j = a('1P5ls'),
-        k = a('fmVdR'),
-        l = a('YRlpt'),
-        m = a('cvto726'),
-        n = a('cH8qQ'),
-        o = a('aG/k7'),
-        p = a('Axq+p'),
-        q = a('YYeL3');
-    let r;
-    var _s = _f => {
-        const [t, u] = e.useState(!0), [v, w] = e.useState([]), [x, y] = (0, h.useLocalstorage)('last-viewed-news', 0), [z, A] = e.useState(!1), [B, C, D] = (0, f.useBoolean)(!0), E = e.useCallback(() => {
-            A(!0);
-        }, [A]), F = e.useCallback(() => {
-            A(!1), _f.onClose && _f.onClose();
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('quE27'),
+        i = c('lKjHC'),
+        j = c('WkHbI'),
+        k = c('P1KtI'),
+        l = c('R2nG3'),
+        m = c('VNuyu'),
+        n = c('AE7vR'),
+        o = c('E2AMI26'),
+        p = c('NmQt6'),
+        q = c('0Afdr'),
+        r = c('u4s09'),
+        s = c('4ymda');
+    let t;
+    var _u = a => {
+        const [v, w] = g.useState(!0), [x, y] = g.useState([]), [z, A] = (0, j.useLocalstorage)('last-viewed-news', 0), [B, C] = g.useState(!1), [D, E, F] = (0, h.useBoolean)(!0), G = g.useCallback(() => {
+            C(!0);
+        }, [C]), H = g.useCallback(() => {
+            C(!1), a.onClose && a.onClose();
         }, [
-            A,
-            _f.onClose
+            C,
+            a.onClose
         ]);
-        if ((0, g.useDidMount)(() => {
-                (0, f.request)({
+        if ((0, i.useDidMount)(() => {
+                (0, h.request)({
                     url: '/api/news/fetch',
                     data: {
-                        isStudent: (0, f.isStudent)()
+                        isStudent: (0, h.isStudent)()
                     },
-                    success: t => {
-                        w(t);
-                        const G = null != x ? x : 0,
-                            H = t[0];
-                        H && (H && H.publishDate > G && _f.allowAutoOpen && E(), y(H.publishDate));
+                    success: v => {
+                        y(v);
+                        const I = null != z ? z : 0,
+                            J = v[0];
+                        J && (J && J.publishDate > I && a.allowAutoOpen && G(), A(J.publishDate));
                     },
-                    error: t => {
-                        _f.open && (0, f.throwMessageError)({
-                            e: t,
+                    error: v => {
+                        a.open && (0, h.throwMessageError)({
+                            e: v,
                             default: {
                                 title: 'Error loading news'
                             }
                         });
                     },
                     both: () => {
-                        u(!1);
+                        w(!1);
                     }
                 });
-            }), e.useEffect(() => {
-                _f.open && E();
-            }, [_f.open]), t)
+            }), g.useEffect(() => {
+                a.open && G();
+            }, [a.open]), v)
             return null;
-        return (0, d.jsxs)(d.Fragment, {
+        return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, d.jsx)(_t, {}),
-                (0, d.jsx)(j.default, {
+                (0, f.jsx)(_v, {}),
+                (0, f.jsx)(l.default, {
                     theme: {
-                        algorithm: n.default.defaultAlgorithm
+                        algorithm: p.default.defaultAlgorithm
                     },
-                    children: (0, d.jsxs)(l.default, {
+                    children: (0, f.jsxs)(n.default, {
                         className: 'news-modal',
-                        open: z,
-                        onCancel: F,
+                        open: B,
+                        onCancel: H,
                         closable: !1,
                         footer: null,
                         width: 650,
@@ -90,50 +90,50 @@ a.register('nNplT', function(b, c) {
                             marginBottom: 100
                         },
                         children: [
-                            (0, d.jsx)(q.default, {
-                                close: F
+                            (0, f.jsx)(s.default, {
+                                close: H
                             }),
-                            v.length ? 1 !== v.length && B ? (0, d.jsxs)('div', {
+                            x.length ? 1 !== x.length && D ? (0, f.jsxs)('div', {
                                 style: {
                                     paddingBottom: 35
                                 },
                                 children: [
-                                    (0, d.jsx)(o.default, {
-                                        item: v[0],
+                                    (0, f.jsx)(q.default, {
+                                        item: x[0],
                                         isFirstItem: !0
                                     }),
-                                    (0, d.jsx)('div', {
+                                    (0, f.jsx)('div', {
                                         className: 'maxWidth flex-center',
                                         style: {
                                             marginTop: 30
                                         },
-                                        children: (0, d.jsx)(i.default, {
+                                        children: (0, f.jsx)(k.default, {
                                             shape: 'round',
-                                            onClick: D,
+                                            onClick: F,
                                             children: 'View more news...'
                                         })
                                     })
                                 ]
-                            }) : (0, d.jsx)(d.Fragment, {
-                                children: (0, d.jsx)(m.default, {
+                            }) : (0, f.jsx)(f.Fragment, {
+                                children: (0, f.jsx)(o.default, {
                                     className: 'maxWidth',
                                     size: 30,
                                     direction: 'vertical',
                                     style: {
                                         paddingBottom: 35
                                     },
-                                    split: (0, d.jsx)(k.default, {
+                                    split: (0, f.jsx)(m.default, {
                                         style: {
                                             margin: 0
                                         }
                                     }),
-                                    children: v.map((_f, t) => (0, d.jsx)(o.default, {
-                                        item: _f,
-                                        isFirstItem: 0 === t
-                                    }, _f._id))
+                                    children: x.map((a, v) => (0, f.jsx)(q.default, {
+                                        item: a,
+                                        isFirstItem: 0 === v
+                                    }, a._id))
                                 })
-                            }) : (0, d.jsx)(d.Fragment, {
-                                children: (0, d.jsx)('div', {
+                            }) : (0, f.jsx)(f.Fragment, {
+                                children: (0, f.jsx)('div', {
                                     className: 'maxWidth flex-center',
                                     style: {
                                         padding: 50,
@@ -149,85 +149,85 @@ a.register('nNplT', function(b, c) {
             ]
         });
     };
-    const _t = (0, p.createGlobalStyle)(r || (r = (_f => _f)`
+    const _v = (0, r.createGlobalStyle)(t || (t = (a => a)`
   .news-modal > .ant-modal-content {
     overflow: hidden;
     padding: 0px !important;
   }
 `));
-}), a.register('L9I9e', function(b, c) {
-    _f(b.exports, 'useLocalstorage', function() {
-        return _e;
+}), c.register('WkHbI', function(d, e) {
+    a(d.exports, 'useLocalstorage', function() {
+        return _g;
     });
-    var d = a('LEQ5w');
+    var f = c('O0Kav');
 
-    function _e(_f, g) {
-        void 0 === g && (g = null);
-        var h = (0, d.useState)(_k()),
-            i = h[0],
-            j = h[1];
+    function _g(h, i) {
+        void 0 === i && (i = null);
+        var j = (0, f.useState)(_m()),
+            k = j[0],
+            l = j[1];
 
-        function _k() {
+        function _m() {
             if ('undefined' == typeof localStorage)
                 return null;
-            var l = localStorage.getItem(_f) || 'null';
+            var n = localStorage.getItem(h) || 'null';
             try {
-                return JSON.parse(l);
-            } catch (_f) {
-                console.error(_f);
+                return JSON.parse(n);
+            } catch (h) {
+                console.error(h);
             }
-            return l;
+            return n;
         }
-        var k = (0, d.useCallback)(function(l) {
-                var m;
-                j(l), m = l, 'undefined' != typeof localStorage && localStorage.setItem(_f, JSON.stringify(m));
+        var n = (0, f.useCallback)(function(o) {
+                var p;
+                l(o), p = o, 'undefined' != typeof localStorage && localStorage.setItem(h, JSON.stringify(p));
             }, []),
-            l = (0, d.useCallback)(function(m) {
-                m.storageArea === localStorage && m.key === _f && j(m.newValue);
+            o = (0, f.useCallback)(function(p) {
+                p.storageArea === localStorage && p.key === h && l(p.newValue);
             }, []),
-            m = (0, d.useCallback)(function() {
-                if (k(null), 'undefined' == typeof localStorage)
+            p = (0, f.useCallback)(function() {
+                if (n(null), 'undefined' == typeof localStorage)
                     return !1;
-                localStorage.removeItem(_f);
-            }, [_f]);
-        return (0, d.useEffect)(function() {
-            var n;
-            null !== (n = _e()) && 'null' !== n || k(g);
-        }, []), (0, d.useEffect)(function() {
+                localStorage.removeItem(h);
+            }, [h]);
+        return (0, f.useEffect)(function() {
+            var q;
+            null !== (q = _m()) && 'null' !== q || n(i);
+        }, []), (0, f.useEffect)(function() {
             if ('undefined' != typeof window)
-                return window.addEventListener('storage', l),
+                return window.addEventListener('storage', o),
                     function() {
-                        window.removeEventListener('storage', l);
+                        window.removeEventListener('storage', o);
                     };
             console.warn('useLocalstorage: window is undefined.');
         }, []), Object.assign([
-            i,
             k,
-            m
+            n,
+            p
         ], {
-            value: i,
-            remove: m,
-            set: k
+            value: k,
+            remove: p,
+            set: n
         });
     }
-}), a.register('aG/k7', function(b, c) {
-    _E(b.exports, 'default', function() {
-        return _x;
+}), c.register('0Afdr', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _z;
     });
-    var d = a('0hzx+'),
-        _e = a('LEQ5w'),
-        f = a('w0a3U'),
-        g = a('oBBW6'),
-        h = a('7B+hJ16'),
-        i = a('+i8ep'),
-        j = a('Axq+p'),
-        k = a('PMl60'),
-        l = a('ECzOP'),
-        m = a('b5kvC'),
-        n = a('9R7cy');
-    let o, p, q, r, s, t, u = _E => _E;
-    const v = _F(h)(() => a('7cBN63')),
-        w = () => (0, d.jsx)(g.default, {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('sPeAY'),
+        i = c('ZKc1Q'),
+        j = c('AKtTq25'),
+        k = c('lKjHC'),
+        l = c('u4s09'),
+        m = c('quE27'),
+        n = c('Tzf4u'),
+        o = c('Eh2Wh'),
+        p = c('t52Ep');
+    let q, r, s, t, u, v, w = a => a;
+    const x = b(j)(() => c('p0EES4')),
+        y = () => (0, f.jsx)(i.default, {
             active: !0,
             title: !1,
             paragraph: {
@@ -237,81 +237,81 @@ a.register('nNplT', function(b, c) {
                 padding: 20
             }
         });
-    var _x = _E => {
-        const [y, z] = _e.useState(), {
+    var _z = a => {
+        const [A, B] = g.useState(), {
             item: {
-                notionPageId: A,
-                publishDate: B
+                notionPageId: C,
+                publishDate: D
             }
-        } = _E;
-        (0, i.useDidMount)(() => {
-            v.preload();
-        }), _e.useEffect(() => {
-            !y && A && (0, f.Request)({
-                url: `/api/content/${ A }`,
+        } = a;
+        (0, k.useDidMount)(() => {
+            x.preload();
+        }), g.useEffect(() => {
+            !A && C && (0, h.Request)({
+                url: `/api/content/${ C }`,
                 cacheKey: 'NOTION_CONTENT',
-                success: _E => z(_E)
+                success: a => B(a)
             });
         }, [
-            A,
-            y
+            C,
+            A
         ]);
-        return (0, d.jsx)(_y, {
+        return (0, f.jsx)(_A, {
             children: (() => {
-                if (!y)
-                    return (0, d.jsx)(w, {});
+                if (!A)
+                    return (0, f.jsx)(y, {});
                 const {
-                    title: C,
-                    coverImage: D
+                    title: E,
+                    coverImage: F
                 } = (() => {
-                    var _E, _F;
-                    const G = A.replace(/-/g, ''),
-                        H = Object.keys(y).find(_E => _E.replace(/-/g, '') === G);
-                    if (!H)
+                    var G, H;
+                    const I = C.replace(/-/g, ''),
+                        J = Object.keys(A).find(G => G.replace(/-/g, '') === I);
+                    if (!J)
                         return null;
-                    const I = y[H];
-                    var J;
-                    const K = null !== (J = null === (_E = I.value.properties) || void 0 === _E ? void 0 : _E.title[0][0]) && void 0 !== J ? J : 'News';
+                    const K = A[J];
                     var L;
-                    let M = null !== (L = null === (_F = I.value.format) || void 0 === _F ? void 0 : _F.page_cover) && void 0 !== L ? L : null;
-                    return M && M.startsWith('/') && (M = `https://notion.so${ M }`), {
-                        title: K,
-                        coverImage: M
+                    const M = null !== (L = null === (G = K.value.properties) || void 0 === G ? void 0 : G.title[0][0]) && void 0 !== L ? L : 'News';
+                    var N;
+                    let O = null !== (N = null === (H = K.value.format) || void 0 === H ? void 0 : H.page_cover) && void 0 !== N ? N : null;
+                    return O && O.startsWith('/') && (O = `https://notion.so${ O }`), {
+                        title: M,
+                        coverImage: O
                     };
                 })();
-                return (0, d.jsxs)(_e.Suspense, {
-                    fallback: (0, d.jsx)(w, {}),
+                return (0, f.jsxs)(g.Suspense, {
+                    fallback: (0, f.jsx)(y, {}),
                     children: [
-                        D ? (0, d.jsx)(_z, {
+                        F ? (0, f.jsx)(_B, {
                             draggable: !1,
-                            src: D
+                            src: F
                         }) : null,
-                        (0, d.jsxs)(_A, {
+                        (0, f.jsxs)(_C, {
                             children: [
-                                (0, d.jsxs)(_B, {
+                                (0, f.jsxs)(_D, {
                                     style: {
-                                        marginTop: _b.isFirstItem && !D ? 30 : 0
+                                        marginTop: a.isFirstItem && !F ? 30 : 0
                                     },
                                     children: [
-                                        (0, d.jsx)(_C, {
-                                            children: C
+                                        (0, f.jsx)(_E, {
+                                            children: E
                                         }),
-                                        (0, d.jsxs)(_D, {
+                                        (0, f.jsxs)(_F, {
                                             children: [
-                                                (0, d.jsx)(n.default, {
+                                                (0, f.jsx)(p.default, {
                                                     name: 'far fa-calendar-alt',
                                                     style: {
                                                         fontSize: '0.8em',
                                                         marginRight: 5
                                                     }
                                                 }),
-                                                (0, k.capitalizeFirstLetter)(_c(l).unix(B).fromNow())
+                                                (0, m.capitalizeFirstLetter)(b(n).unix(D).fromNow())
                                             ]
                                         })
                                     ]
                                 }),
-                                (0, d.jsx)(v, {
-                                    content: y
+                                (0, f.jsx)(x, {
+                                    content: A
                                 })
                             ]
                         })
@@ -320,285 +320,285 @@ a.register('nNplT', function(b, c) {
             })()
         });
     };
-    const _y = j.default.div.attrs({
+    const _A = l.default.div.attrs({
             className: 'maxWidth'
-        })(o || (o = u``)),
-        _z = j.default.img.attrs({
+        })(q || (q = w``)),
+        _B = l.default.img.attrs({
             className: 'maxWidth'
-        })(p || (p = u`
+        })(r || (r = w`
   margin-bottom: 25px;
 `)),
-        _A = j.default.div.attrs({
+        _C = l.default.div.attrs({
             className: 'maxWidth'
-        })(q || (q = u`
+        })(s || (s = w`
   padding: 0px 20px;
   font-family: ${ 0 };
-`), m.Fonts.SFPro),
-        _B = j.default.div.attrs({
+`), o.Fonts.SFPro),
+        _D = l.default.div.attrs({
             className: 'maxWidth flex between vc'
-        })(r || (r = u`
+        })(t || (t = w`
   line-height: 1;
   margin-bottom: 20px;
 `)),
-        _C = j.default.div(s || (s = u`
+        _E = l.default.div(u || (u = w`
   font-size: 28px;
   font-weight: ${ 0 };
-`), m.FontWeights.Bold),
-        _D = j.default.div.attrs({
+`), o.FontWeights.Bold),
+        _F = l.default.div.attrs({
             className: 'flex vc'
-        })(t || (t = u`
+        })(v || (v = w`
   color: rgba(0, 0, 0, 0.8);
   margin-left: 20px;
   font-size: 12px;
   flex-shrink: 0;
 `));
-}), a.register('7cBN63', function(_b, _c) {
-    _b.exports = Promise.all([
-        a('o60By')(new URL(a('HmN9A').resolve('2nG1U'), import.meta.url).toString()),
-        import('./' + a('HmN9A').resolve('6iUO5'))
-    ]).then(() => a('cg5Ud'));
-}), a.register('o60By', function(b, c) {
-    var d = a('0k2Qd');
-    b.exports = d(function(e) {
-        return new Promise(function(f, g) {
-            var h = document.getElementsByTagName('link');
-            if ([].concat(h).some(function(i) {
-                    return i.href === e && i.rel.indexOf('stylesheet') > -1;
+}), c.register('p0EES4', function(d, e) {
+    d.exports = Promise.all([
+        c('k9Uhg')(new URL(c('Dq3qN').resolve('2nG1U'), import.meta.url).toString()),
+        import('./' + c('Dq3qN').resolve('6iUO5'))
+    ]).then(() => c('62q3k'));
+}), c.register('k9Uhg', function(d, e) {
+    var f = c('uYchj');
+    d.exports = f(function(g) {
+        return new Promise(function(h, i) {
+            var j = document.getElementsByTagName('link');
+            if ([].concat(j).some(function(k) {
+                    return k.href === g && k.rel.indexOf('stylesheet') > -1;
                 }))
-                f();
+                h();
             else {
-                var i = document.createElement('link');
-                i.rel = 'stylesheet', i.href = e, i.onerror = function(j) {
-                    i.onerror = i.onload = null, i.remove(), g(j);
-                }, i.onload = function() {
-                    i.onerror = i.onload = null, f();
-                }, document.getElementsByTagName('head')[0].appendChild(i);
+                var k = document.createElement('link');
+                k.rel = 'stylesheet', k.href = g, k.onerror = function(l) {
+                    k.onerror = k.onload = null, k.remove(), i(l);
+                }, k.onload = function() {
+                    k.onerror = k.onload = null, h();
+                }, document.getElementsByTagName('head')[0].appendChild(k);
             }
         });
     });
-}), a.register('0k2Qd', function(b, c) {
-    var d = {},
-        e = {},
-        f = {};
+}), c.register('uYchj', function(d, e) {
+    var f = {},
+        g = {},
+        h = {};
 
-    function g(h) {
-        switch (h) {
+    function i(j) {
+        switch (j) {
             case 'preload':
-                return e;
+                return g;
             case 'prefetch':
-                return f;
+                return h;
             default:
-                return d;
+                return f;
         }
     }
-    b.exports = function(g, h) {
-        return function(i) {
-            var j = _f(h);
-            return j[i] ? j[i] : j[i] = g.apply(null, arguments).catch(function(k) {
-                throw delete j[i], k;
+    d.exports = function(j, k) {
+        return function(l) {
+            var m = i(k);
+            return m[l] ? m[l] : m[l] = j.apply(null, arguments).catch(function(n) {
+                throw delete m[l], n;
             });
         };
     };
-}), a.register('HmN9A', function(b, c) {
-    var d, e;
-    _f(b.exports, 'register', function() {
-        return d;
-    }, function(_f) {
-        return d = _f;
-    }), _f(b.exports, 'resolve', function() {
-        return e;
-    }, function(_f) {
-        return e = _f;
+}), c.register('Dq3qN', function(d, e) {
+    var f, g;
+    a(d.exports, 'register', function() {
+        return f;
+    }, function(h) {
+        return f = h;
+    }), a(d.exports, 'resolve', function() {
+        return g;
+    }, function(h) {
+        return g = h;
     });
-    var _f = {};
-    d = function(g) {
-        for (var h = Object.keys(g), i = 0; i < h.length; i++)
-            _f[h[i]] = g[h[i]];
-    }, e = function(g) {
-        var h = _f[g];
-        if (null == h)
-            throw new Error('Could not resolve bundle with id ' + g);
-        return h;
+    var h = {};
+    f = function(i) {
+        for (var j = Object.keys(i), k = 0; k < j.length; k++)
+            h[j[k]] = i[j[k]];
+    }, g = function(i) {
+        var j = h[i];
+        if (null == j)
+            throw new Error('Could not resolve bundle with id ' + i);
+        return j;
     };
-}), a.register('YYeL3', function(b, c) {
-    _r(b.exports, 'default', function() {
-        return _r;
+}), c.register('4ymda', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _t;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('ibLRf19'),
-        g = a('ulE4q'),
-        h = a('1P5ls'),
-        i = a('cH8qQ'),
-        j = a('QECub'),
-        k = a('b5kvC'),
-        l = a('hHkFq');
-    let m, n, o, p, q = _r => _r;
-    var _r = _r => (0, d.jsxs)(_s, {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('u4s09'),
+        h = c('44iM223'),
+        i = c('P1KtI'),
+        j = c('R2nG3'),
+        k = c('NmQt6'),
+        l = c('ReZvd'),
+        m = c('Eh2Wh'),
+        n = c('jw1ib');
+    let o, p, q, r, s = a => a;
+    var _t = a => (0, f.jsxs)(_u, {
         children: [
-            (0, d.jsxs)(_t, {
+            (0, f.jsxs)(_v, {
                 children: [
-                    (0, d.jsxs)(_u, {
+                    (0, f.jsxs)(_w, {
                         children: [
-                            l.COMPANY_NAME,
+                            n.COMPANY_NAME,
                             ' News'
                         ]
                     }),
-                    (0, d.jsxs)(_v, {
+                    (0, f.jsxs)(_x, {
                         children: [
                             'Your source for all things ',
-                            l.COMPANY_NAME,
+                            n.COMPANY_NAME,
                             '!'
                         ]
                     })
                 ]
             }),
-            (0, d.jsx)('div', {
-                children: (0, d.jsx)(h.default, {
+            (0, f.jsx)('div', {
+                children: (0, f.jsx)(j.default, {
                     theme: {
-                        algorithm: i.default.darkAlgorithm
+                        algorithm: k.default.darkAlgorithm
                     },
-                    children: (0, d.jsx)(g.default, {
-                        onClick: _r.close,
+                    children: (0, f.jsx)(i.default, {
+                        onClick: a.close,
                         type: 'text',
-                        icon: (0, d.jsx)(j.default, {})
+                        icon: (0, f.jsx)(l.default, {})
                     })
                 })
             })
         ]
     });
-    const _s = e.default.div.attrs({
+    const _u = g.default.div.attrs({
             className: 'maxWidth flex vc between'
-        })(m || (m = q`
+        })(o || (o = s`
   color: ${ 0 };
   padding: 20px;
   background: #730aad;
-`), f.default.White),
-        _t = e.default.div(n || (n = q``)),
-        _u = e.default.div(o || (o = q`
+`), h.default.White),
+        _v = g.default.div(p || (p = s``)),
+        _w = g.default.div(q || (q = s`
   font-size: 16px;
   font-weight: ${ 0 };
-`), k.FontWeights.Bold),
-        _v = e.default.div(p || (p = q`
+`), m.FontWeights.Bold),
+        _x = g.default.div(r || (r = s`
   font-size: 12px;
   font-style: italic;
   opacity: 0.9;
 `));
-}), a.register('RJjEi', function(b, c) {
-    _r(b.exports, 'default', function() {
-        return _f;
+}), c.register('tBC08', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('aHDfy');
-    var _f = _r => (0, d.jsx)(e.default, {
-        ..._r
+    var f = c('gRbUn');
+    c('O0Kav');
+    var g = c('kcevG');
+    var _h = a => (0, f.jsx)(g.default, {
+        ...a
     });
-}), a.register('aHDfy', function(b, c) {
-    _r(b.exports, 'default', function() {
-        return _z;
+}), c.register('kcevG', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _B;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('PMl60'),
-        g = a('R3x1N'),
-        h = a('78pxp'),
-        i = a('ptkti24'),
-        j = a('Genmk'),
-        k = a('Axq+p'),
-        l = a('voEoW'),
-        m = a('BtZXP'),
-        n = a('s+8hx17'),
-        o = a('bdn4O17'),
-        p = a('iIoYI'),
-        q = a('b5kvC'),
-        r = a('1P5ls'),
-        s = a('cH8qQ'),
-        t = a('Rzoyo'),
-        u = a('SjnO4');
-    let v, w, x, y = _r => _r;
-    var _z = _r => {
-        const [A, B] = e.useState(!1), {
-            navigation: C
-        } = e.useContext(j.default), {
-            ref: D,
-            height: E
-        } = (0, i.useComponentSize)();
-        e.useEffect(() => {
-            document.documentElement.style.setProperty('--header-height', `${ E }px`), C.headerHeight = E;
-        }, [E]);
-        const F = e.useMemo(() => {
-                var G;
-                return null !== (G = _r.theme) && void 0 !== G ? G : n.SiteHeaderTheme.light;
-            }, [_r.theme]),
-            G = e.useMemo(() => {
-                var H;
-                return null !== (H = _r.alpha) && void 0 !== H ? H : o.SiteHeaderAlpha.standard;
-            }, [_r.alpha]),
-            H = e.useMemo(() => G === o.SiteHeaderAlpha.none ? 1 : G === o.SiteHeaderAlpha.darker ? F === n.SiteHeaderTheme.light ? 0.9 : 0.75 : F === n.SiteHeaderTheme.light ? 0.85 : 0.45, [
-                G,
-                F
-            ]),
-            I = e.useMemo(() => F === n.SiteHeaderTheme.light ? `rgba(255, 255, 255, ${ H })` : `rgba(16,16,16, ${ H })`, [
-                F,
-                G
-            ]),
-            J = e.useMemo(() => F === n.SiteHeaderTheme.light ? 'rgb(235, 238, 241)' : 'rgb(143 143 143 / 60%)', [
-                F,
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('quE27'),
+        i = c('y5EHz'),
+        j = c('0tKaU'),
+        k = c('d/TAL25'),
+        l = c('bnViL'),
+        m = c('u4s09'),
+        n = c('dVU37'),
+        o = c('hecDa'),
+        p = c('W/XnX24'),
+        q = c('zOtFd24'),
+        r = c('tJvRE'),
+        s = c('Eh2Wh'),
+        t = c('R2nG3'),
+        u = c('NmQt6'),
+        v = c('A1fqY'),
+        w = c('6p0v5');
+    let x, y, z, A = a => a;
+    var _B = a => {
+        const [C, D] = g.useState(!1), {
+            navigation: E
+        } = g.useContext(l.default), {
+            ref: F,
+            height: G
+        } = (0, k.useComponentSize)();
+        g.useEffect(() => {
+            document.documentElement.style.setProperty('--header-height', `${ G }px`), E.headerHeight = G;
+        }, [G]);
+        const H = g.useMemo(() => {
+                var I;
+                return null !== (I = a.theme) && void 0 !== I ? I : p.SiteHeaderTheme.light;
+            }, [a.theme]),
+            I = g.useMemo(() => {
+                var J;
+                return null !== (J = a.alpha) && void 0 !== J ? J : q.SiteHeaderAlpha.standard;
+            }, [a.alpha]),
+            J = g.useMemo(() => I === q.SiteHeaderAlpha.none ? 1 : I === q.SiteHeaderAlpha.darker ? H === p.SiteHeaderTheme.light ? 0.9 : 0.75 : H === p.SiteHeaderTheme.light ? 0.85 : 0.45, [
+                I,
                 H
+            ]),
+            K = g.useMemo(() => H === p.SiteHeaderTheme.light ? `rgba(255, 255, 255, ${ J })` : `rgba(16,16,16, ${ J })`, [
+                H,
+                I
+            ]),
+            L = g.useMemo(() => H === p.SiteHeaderTheme.light ? 'rgb(235, 238, 241)' : 'rgb(143 143 143 / 60%)', [
+                H,
+                J
             ]);
-        return (0, d.jsx)(d.Fragment, {
-            children: (0, d.jsxs)(r.default, {
+        return (0, f.jsx)(f.Fragment, {
+            children: (0, f.jsxs)(t.default, {
                 theme: {
-                    algorithm: F === n.SiteHeaderTheme.light ? s.default.defaultAlgorithm : s.default.darkAlgorithm,
+                    algorithm: H === p.SiteHeaderTheme.light ? u.default.defaultAlgorithm : u.default.darkAlgorithm,
                     token: {
-                        fontFamily: q.Fonts.SFPro
+                        fontFamily: s.Fonts.SFPro
                     }
                 },
                 children: [
-                    (0, d.jsxs)(_A, {
-                        ref: D,
-                        style: _r.containerDivStyle,
+                    (0, f.jsxs)(_C, {
+                        ref: F,
+                        style: a.containerDivStyle,
                         children: [
-                            (0, d.jsx)(_B, {
-                                background: I,
-                                hideBorder: _r.hideBorder,
-                                borderColor: J,
-                                children: (0, d.jsx)(g.default.Provider, {
-                                    value: h.default,
-                                    children: (0, d.jsxs)(_C, {
+                            (0, f.jsx)(_D, {
+                                background: K,
+                                hideBorder: a.hideBorder,
+                                borderColor: L,
+                                children: (0, f.jsx)(i.default.Provider, {
+                                    value: j.default,
+                                    children: (0, f.jsxs)(_E, {
                                         children: [
-                                            (0, d.jsx)(u.default, {
-                                                theme: _r.theme
+                                            (0, f.jsx)(w.default, {
+                                                theme: a.theme
                                             }),
-                                            (0, f.isLoggedIn)() ? (0, d.jsx)(t.default, {
-                                                showUpgradeModal: () => B(!0),
-                                                theme: F
-                                            }) : (0, d.jsx)(l.default, {
-                                                theme: _r.theme
+                                            (0, h.isLoggedIn)() ? (0, f.jsx)(v.default, {
+                                                showUpgradeModal: () => D(!0),
+                                                theme: H
+                                            }) : (0, f.jsx)(n.default, {
+                                                theme: a.theme
                                             })
                                         ]
                                     })
                                 })
                             }),
-                            _r.children
+                            a.children
                         ]
                     }),
-                    A ? (0, d.jsx)(m.default, {
+                    C ? (0, f.jsx)(o.default, {
                         id: 'header',
-                        visible: A,
-                        close: () => B(!1),
+                        visible: C,
+                        close: () => D(!1),
                         showModes: !0
                     }) : null,
-                    _r.includeSpacer ? (0, d.jsx)(p.default, {}) : null
+                    a.includeSpacer ? (0, f.jsx)(r.default, {}) : null
                 ]
             })
         });
     };
-    const _A = k.default.div.attrs({
+    const _C = m.default.div.attrs({
             className: 'maxWidth'
-        })(v || (v = y`
+        })(x || (x = A`
   height: auto;
   position: fixed;
   top: 0;
@@ -606,7 +606,7 @@ a.register('nNplT', function(b, c) {
   right: 0;
   z-index: 9;
 `)),
-        _B = k.default.header(w || (w = y`
+        _D = m.default.header(y || (y = A`
   display: flex;
   height: auto;
   background: ${ 0 };
@@ -621,158 +621,158 @@ a.register('nNplT', function(b, c) {
   @media print {
     display: none;
   }
-`), _r => _r.background, _r => _r.hideBorder ? 'rgba(255,255,255,0)' : _r.borderColor),
-        _C = k.default.div.attrs({
+`), a => a.background, a => a.hideBorder ? 'rgba(255,255,255,0)' : a.borderColor),
+        _E = m.default.div.attrs({
             className: 'flex maxWidth between vc'
-        })(x || (x = y``));
-}), a.register('R3x1N', function(b, c) {
-    _r(b.exports, 'default', function() {
-        return _f;
+        })(z || (z = A``));
+}), c.register('y5EHz', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
     });
-    var d = a('LEQ5w'),
-        e = a('78pxp');
-    var _f = d.createContext(e.default);
-}), a.register('78pxp', function(b, c) {
-    _r(b.exports, 'default', function() {
-        return _f;
+    var f = c('O0Kav'),
+        g = c('0tKaU');
+    var _h = f.createContext(g.default);
+}), c.register('0tKaU', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
     });
-    var d = a('Ge19+'),
-        e = a('f2xFb');
-    var _f = {
-        navigation: new(0, d.default)(),
-        billing: new(0, e.default)()
+    var f = c('+Uz0o'),
+        g = c('QNG2I');
+    var _h = {
+        navigation: new(0, f.default)(),
+        billing: new(0, g.default)()
     };
-}), a.register('Ge19+', function(b, c) {
-    _r(b.exports, 'default', function() {
-        return _h;
+}), c.register('+Uz0o', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _j;
     });
-    var d = a('csYze'),
-        e = a('YuT/D'),
-        f = a('ahAbF');
-    class g {
+    var f = c('4F2ZN'),
+        g = c('JkQCT'),
+        h = c('JOJnL');
+    class i {
         constructor() {
-            this.currentTab = f.default.accountInformation, (0, e.makeObservable)(this);
+            this.currentTab = h.default.accountInformation, (0, g.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], g.prototype, 'currentTab', void 0);
-    var _h = g;
-}), a.register('ahAbF', function(b, c) {
-    let d;
-    var e;
-    _r(b.exports, 'default', function() {
-        return _f;
-    }), (e = d || (d = {})).accountInformation = 'accountInformation', e.gameSettings = 'gameSettings', e.billing = 'billing', e.support = 'support';
-    var _f = d;
-}), a.register('f2xFb', function(b, c) {
-    _r(b.exports, 'default', function() {
+    (0, f.__decorate)([g.observable], i.prototype, 'currentTab', void 0);
+    var _j = i;
+}), c.register('JOJnL', function(d, e) {
+    let f;
+    var g;
+    a(d.exports, 'default', function() {
         return _h;
+    }), (g = f || (f = {})).accountInformation = 'accountInformation', g.gameSettings = 'gameSettings', g.billing = 'billing', g.support = 'support';
+    var _h = f;
+}), c.register('QNG2I', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _j;
     });
-    var d = a('csYze'),
-        e = a('YuT/D');
-    const f = e.observable.array();
-    class g {
+    var f = c('4F2ZN'),
+        g = c('JkQCT');
+    const h = g.observable.array();
+    class i {
         constructor() {
-            this.planName = '', this.planDescription = '', this.billingInterval = '', this.hasNextCharge = false, this.nextChargeAmount = '', this.nextChargeDate = '', this.accountBalance = 0, this.charges = f, this.cardName = '', this.last4DigitsOfCard = '', this.stripePublicKey = '', this.canDowngrade = false, this.downgradeMessage = '', this.downgradeDateMessage = '', this.reset = () => {
+            this.planName = '', this.planDescription = '', this.billingInterval = '', this.hasNextCharge = false, this.nextChargeAmount = '', this.nextChargeDate = '', this.accountBalance = 0, this.charges = h, this.cardName = '', this.last4DigitsOfCard = '', this.stripePublicKey = '', this.canDowngrade = false, this.downgradeMessage = '', this.downgradeDateMessage = '', this.reset = () => {
                 this.planName = '', this.planDescription = '', this.billingInterval = '', this.hasNextCharge = false, this.nextChargeAmount = '', this.nextChargeDate = '', this.accountBalance = 0, this.charges.replace([]), this.cardName = '', this.last4DigitsOfCard = '', this.stripePublicKey = '', this.canDowngrade = false, this.downgradeMessage = '', this.downgradeDateMessage = '';
-            }, (0, e.makeObservable)(this);
+            }, (0, g.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], g.prototype, 'planName', void 0), (0, d.__decorate)([e.observable], g.prototype, 'planDescription', void 0), (0, d.__decorate)([e.observable], g.prototype, 'billingInterval', void 0), (0, d.__decorate)([e.observable], g.prototype, 'hasNextCharge', void 0), (0, d.__decorate)([e.observable], g.prototype, 'nextChargeAmount', void 0), (0, d.__decorate)([e.observable], g.prototype, 'nextChargeDate', void 0), (0, d.__decorate)([e.observable], g.prototype, 'accountBalance', void 0), (0, d.__decorate)([e.observable], g.prototype, 'charges', void 0), (0, d.__decorate)([e.observable], g.prototype, 'cardName', void 0), (0, d.__decorate)([e.observable], g.prototype, 'last4DigitsOfCard', void 0), (0, d.__decorate)([e.observable], g.prototype, 'stripePublicKey', void 0), (0, d.__decorate)([e.observable], g.prototype, 'canDowngrade', void 0), (0, d.__decorate)([e.observable], g.prototype, 'downgradeMessage', void 0), (0, d.__decorate)([e.observable], g.prototype, 'downgradeDateMessage', void 0), (0, d.__decorate)([e.action], g.prototype, 'reset', void 0);
-    var _h = g;
-}), a.register('voEoW', function(b, c) {
-    _r(b.exports, 'default', function() {
-        return _n;
+    (0, f.__decorate)([g.observable], i.prototype, 'planName', void 0), (0, f.__decorate)([g.observable], i.prototype, 'planDescription', void 0), (0, f.__decorate)([g.observable], i.prototype, 'billingInterval', void 0), (0, f.__decorate)([g.observable], i.prototype, 'hasNextCharge', void 0), (0, f.__decorate)([g.observable], i.prototype, 'nextChargeAmount', void 0), (0, f.__decorate)([g.observable], i.prototype, 'nextChargeDate', void 0), (0, f.__decorate)([g.observable], i.prototype, 'accountBalance', void 0), (0, f.__decorate)([g.observable], i.prototype, 'charges', void 0), (0, f.__decorate)([g.observable], i.prototype, 'cardName', void 0), (0, f.__decorate)([g.observable], i.prototype, 'last4DigitsOfCard', void 0), (0, f.__decorate)([g.observable], i.prototype, 'stripePublicKey', void 0), (0, f.__decorate)([g.observable], i.prototype, 'canDowngrade', void 0), (0, f.__decorate)([g.observable], i.prototype, 'downgradeMessage', void 0), (0, f.__decorate)([g.observable], i.prototype, 'downgradeDateMessage', void 0), (0, f.__decorate)([g.action], i.prototype, 'reset', void 0);
+    var _j = i;
+}), c.register('dVU37', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _p;
     });
-    var d = a('0hzx+'),
-        e = a('2x11J');
-    a('LEQ5w');
-    var f = a('HM87Y'),
-        g = a('ulE4q'),
-        h = a('2HvvA11'),
-        i = a('gs4MT'),
-        j = a('/2bBN24'),
-        k = a('76NCl'),
-        l = a('IWIj7'),
-        m = a('s+8hx17');
-    var _n = (0, e.observer)(_r => {
-        const o = (0, j.useMediaMatch)('(max-width: 600px)'),
-            p = (0, j.useMediaMatch)('(max-width: 750px)'),
-            q = [];
-        return q.push({
+    var f = c('gRbUn'),
+        g = c('6jmvl');
+    c('O0Kav');
+    var h = c('3KbkS'),
+        i = c('P1KtI'),
+        j = c('FB7HT26'),
+        k = c('nKuOQ'),
+        l = c('ZIYAX24'),
+        m = c('VM+jB'),
+        n = c('IDJbt'),
+        o = c('W/XnX24');
+    var _p = (0, g.observer)(a => {
+        const q = (0, l.useMediaMatch)('(max-width: 600px)'),
+            r = (0, l.useMediaMatch)('(max-width: 750px)'),
+            s = [];
+        return s.push({
             key: 'join',
-            item: (0, d.jsx)(l.default, {
+            item: (0, f.jsx)(n.default, {
                 onClick: () => {
                     window.open('/join', '_self');
                 },
-                icon: (0, d.jsx)('i', {
+                icon: (0, f.jsx)('i', {
                     className: 'far fa-gamepad'
                 }),
-                theme: m.SiteHeaderTheme.light,
+                theme: o.SiteHeaderTheme.light,
                 fontSize: 15,
                 children: 'Join Game'
             })
-        }), o || p || q.push({
+        }), q || r || s.push({
             key: 'pricing',
-            item: (0, d.jsx)(l.default, {
-                path: i.GROUP_PRICING,
-                icon: (0, d.jsx)('i', {
+            item: (0, f.jsx)(n.default, {
+                path: k.GROUP_PRICING,
+                icon: (0, f.jsx)('i', {
                     className: 'far fa-users'
                 }),
-                theme: m.SiteHeaderTheme.light,
+                theme: o.SiteHeaderTheme.light,
                 fontSize: 15,
                 children: '\xA0 Group Pricing'
             })
-        }), q.push({
+        }), s.push({
             key: 'signup',
-            item: (0, d.jsx)(l.default, {
-                path: i.REGISTER_BASE,
-                icon: (0, d.jsx)('i', {
+            item: (0, f.jsx)(n.default, {
+                path: k.REGISTER_BASE,
+                icon: (0, f.jsx)('i', {
                     className: 'far fa-user-plus'
                 }),
-                theme: m.SiteHeaderTheme.light,
+                theme: o.SiteHeaderTheme.light,
                 fontSize: 15,
                 children: 'Sign Up'
             })
-        }), q.push({
+        }), s.push({
             key: 'login',
-            item: (0, d.jsx)(h.default, {
+            item: (0, f.jsx)(j.default, {
                 to: (() => {
-                    let _r = '/login';
-                    return window && window.location && window.location.pathname && window.location.pathname.startsWith('/view') && (_r += `?location=${ encodeURIComponent(window.location.pathname) }`), _r;
+                    let t = '/login';
+                    return window && window.location && window.location.pathname && window.location.pathname.startsWith('/view') && (t += `?location=${ encodeURIComponent(window.location.pathname) }`), t;
                 })(),
                 className: 'maxAll',
-                children: (0, d.jsx)(g.default, {
+                children: (0, f.jsx)(i.default, {
                     type: 'primary',
                     size: 'large',
-                    icon: (0, d.jsx)(f.default, {}),
+                    icon: (0, f.jsx)(h.default, {}),
                     children: 'Login'
                 })
             })
-        }), (0, d.jsx)(k.default, {
-            items: q
+        }), (0, f.jsx)(m.default, {
+            items: s
         });
     });
-}), a.register('HM87Y', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('3KbkS', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('2dRy9'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('kIeJ4'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'LoginOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('2dRy9', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'LoginOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('kIeJ4', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -798,122 +798,122 @@ a.register('nNplT', function(b, c) {
         name: 'login',
         theme: 'outlined'
     };
-}), a.register('76NCl', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _r;
+}), c.register('VM+jB', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _t;
     });
-    var d = a('0hzx+'),
-        e = a('ulE4q'),
-        f = a('fmVdR'),
-        g = a('sgToH'),
-        h = a('cvto726'),
-        i = a('LEQ5w'),
-        j = a('Axq+p'),
-        k = a('HjqyT'),
-        l = a('BXKZi0'),
-        m = a('ptkti24'),
-        n = a('PMl60');
-    let o, p, q = _i => _i;
-    var _r = _i => {
+    var f = c('gRbUn'),
+        g = c('P1KtI'),
+        h = c('VNuyu'),
+        i = c('3t9ce'),
+        j = c('E2AMI26'),
+        k = c('O0Kav'),
+        l = c('u4s09'),
+        m = c('2zWqG'),
+        n = c('bQWYI'),
+        o = c('d/TAL25'),
+        p = c('quE27');
+    let q, r, s = a => a;
+    var _t = a => {
         const {
-            width: s
-        } = (0, m.useWindowSize)(), [t, u, v] = (0, n.useBoolean)(!1), [w, x] = i.useState(!1), [y, z] = i.useState(null), A = i.useRef(), [B] = (0, l.default)(A), C = i.useRef(), [D] = (0, l.default)(C);
-        return i.useEffect(() => {
-            !!s && !!B && !D && (!y || s > y) && z(s);
+            width: u
+        } = (0, o.useWindowSize)(), [v, w, x] = (0, p.useBoolean)(!1), [y, z] = k.useState(!1), [A, B] = k.useState(null), C = k.useRef(), [D] = (0, n.default)(C), E = k.useRef(), [F] = (0, n.default)(E);
+        return k.useEffect(() => {
+            !!u && !!D && !F && (!A || u > A) && B(u);
         }, [
-            s,
-            y,
-            B,
-            D
-        ]), i.useEffect(() => {
-            x(!!(y && s <= y));
+            u,
+            A,
+            D,
+            F
+        ]), k.useEffect(() => {
+            z(!!(A && u <= A));
         }, [
-            s,
-            y
-        ]), (0, d.jsxs)(_s, {
-            ref: A,
+            u,
+            A
+        ]), (0, f.jsxs)(_u, {
+            ref: C,
             children: [
-                (0, d.jsx)('div', {
-                    ref: C,
+                (0, f.jsx)('div', {
+                    ref: E,
                     style: {
                         flex: 1
                     }
                 }),
-                w ? (0, d.jsx)('div', {
+                y ? (0, f.jsx)('div', {
                     style: {
                         flexShrink: 0
                     },
-                    children: (0, d.jsx)(e.default, {
-                        onClick: u,
+                    children: (0, f.jsx)(g.default, {
+                        onClick: w,
                         type: 'text',
-                        icon: (0, d.jsx)(k.default, {})
+                        icon: (0, f.jsx)(m.default, {})
                     })
-                }) : (0, d.jsx)(_t, {
+                }) : (0, f.jsx)(_v, {
                     style: {
-                        opacity: D ? 1 : 0
+                        opacity: F ? 1 : 0
                     },
-                    children: (0, d.jsx)(h.default, {
+                    children: (0, f.jsx)(j.default, {
                         size: 10,
-                        split: (0, d.jsx)(f.default, {
+                        split: (0, f.jsx)(h.default, {
                             type: 'vertical'
                         }),
                         direction: 'horizontal',
-                        children: _i.items.map(_i => (0, d.jsx)(i.Fragment, {
-                            children: _i.item
-                        }, _i.key))
+                        children: a.items.map(a => (0, f.jsx)(k.Fragment, {
+                            children: a.item
+                        }, a.key))
                     })
                 }),
-                w ? (0, d.jsx)(g.default, {
+                y ? (0, f.jsx)(i.default, {
                     placement: 'right',
-                    open: t,
-                    onClose: v,
-                    children: (0, d.jsx)(h.default, {
+                    open: v,
+                    onClose: x,
+                    children: (0, f.jsx)(j.default, {
                         size: 2,
-                        split: (0, d.jsx)(f.default, {
+                        split: (0, f.jsx)(h.default, {
                             type: 'horizontal'
                         }),
                         direction: 'vertical',
                         className: 'maxWidth',
-                        children: _i.items.map(_i => (0, d.jsx)(i.Fragment, {
-                            children: (0, d.jsx)('div', {
+                        children: a.items.map(a => (0, f.jsx)(k.Fragment, {
+                            children: (0, f.jsx)('div', {
                                 className: 'maxAll flex-center',
-                                children: _i.item
+                                children: a.item
                             })
-                        }, _i.key))
+                        }, a.key))
                     })
                 }) : null
             ]
         });
     };
-    const _s = j.default.div(o || (o = q`
+    const _u = l.default.div(q || (q = s`
   flex: 1;
   overflow: hidden;
   display: flex;
 `)),
-        _t = j.default.div(p || (p = q`
+        _v = l.default.div(r || (r = s`
   flex-shrink: 0;
 `));
-}), a.register('HjqyT', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('2zWqG', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('A7k50'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('dH3uv'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'MenuOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('A7k50', function(b, c) {
-    _S(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'MenuOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('dH3uv', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -930,58 +930,58 @@ a.register('nNplT', function(b, c) {
         name: 'menu',
         theme: 'outlined'
     };
-}), a.register('IWIj7', function(b, c) {
-    _S(b.exports, 'default', function() {
-        return _l;
+}), c.register('IDJbt', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _n;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('s+8hx17'),
-        h = a('sHRDd'),
-        i = a('2HvvA11'),
-        j = a('b5kvC');
-    let k;
-    var _l = _S => {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('W/XnX24'),
+        j = c('8KqQ+'),
+        k = c('FB7HT26'),
+        l = c('Eh2Wh');
+    let m;
+    var _n = a => {
         const {
-            icon: m,
-            path: n,
-            theme: o
-        } = _S, p = e.useMemo(() => o === g.SiteHeaderTheme.light ? 'inherit' : h.default.White, [o]);
-        return (0, d.jsx)(i.default, {
+            icon: o,
+            path: p,
+            theme: q
+        } = a, r = g.useMemo(() => q === i.SiteHeaderTheme.light ? 'inherit' : j.default.White, [q]);
+        return (0, f.jsx)(k.default, {
             className: 'flex maxWidth',
-            to: n,
-            onClick: _S.onClick,
+            to: p,
+            onClick: a.onClick,
             style: {
                 cursor: 'pointer'
             },
-            children: (0, d.jsxs)(_m, {
-                color: p,
+            children: (0, f.jsxs)(_o, {
+                color: r,
                 style: {
-                    fontSize: _S.fontSize || 20
+                    fontSize: a.fontSize || 20
                 },
                 children: [
-                    m ? (0, d.jsx)('span', {
+                    o ? (0, f.jsx)('span', {
                         style: {
                             marginRight: '0.35em',
                             fontSize: '1em'
                         },
-                        children: m
+                        children: o
                     }) : null,
-                    (0, d.jsx)('span', {
+                    (0, f.jsx)('span', {
                         style: {
                             fontSize: '0.9em',
                             marginTop: '0.1em'
                         },
-                        children: _S.children
+                        children: a.children
                     })
                 ]
             })
         });
     };
-    const _m = f.default.div.attrs({
+    const _o = h.default.div.attrs({
         className: 'flex-center'
-    })(k || (k = (_S => _S)`
+    })(m || (m = (a => a)`
   line-height: 1;
   background: transparent;
   white-space: nowrap;
@@ -989,261 +989,261 @@ a.register('nNplT', function(b, c) {
   font-family: ${ 0 };
   cursor: pointer;
   font-weight: ${ 0 };
-`), _S => _S.color, j.Fonts.SFPro, j.FontWeights.Bold);
-}), a.register('iIoYI', function(b, c) {
-    _S(b.exports, 'default', function() {
-        return _e;
+`), a => a.color, l.Fonts.SFPro, l.FontWeights.Bold);
+}), c.register('tJvRE', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _g;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var _e = () => (0, d.jsx)('div', {
+    var f = c('gRbUn');
+    c('O0Kav');
+    var _g = () => (0, f.jsx)('div', {
         style: {
             height: 'var(--header-height)',
             flexShrink: 0,
             width: '100%'
         }
     });
-}), a.register('Rzoyo', function(b, c) {
-    _S(b.exports, 'default', function() {
-        return _J;
+}), c.register('A1fqY', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _L;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('ulE4q'),
-        g = a('1P5ls'),
-        h = a('/rAT0'),
-        i = a('WfOD7'),
-        j = a('cH8qQ'),
-        k = a('78pxp'),
-        l = a('gs4MT'),
-        m = a('ahAbF'),
-        n = a('PMl60'),
-        o = a('Axq+p'),
-        p = a('b5kvC'),
-        q = a('OI9Yf'),
-        r = a('XetsG'),
-        s = a('mBug4'),
-        t = a('+UyIc24'),
-        u = a('dBHoZ22'),
-        v = a('kXV54'),
-        w = a('LuMZa'),
-        x = a('gCqar24'),
-        y = a('jzxyj10'),
-        z = a('76NCl'),
-        A = a('IWIj7'),
-        B = a('PqMjn20'),
-        C = a('nNplT'),
-        D = a('THxMC');
-    let E, F, G, H = _S => _S;
-    const I = _S => (0, d.jsx)('img', {
-        src: _S.src,
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('P1KtI'),
+        i = c('R2nG3'),
+        j = c('M3JwW'),
+        k = c('xAv1a'),
+        l = c('NmQt6'),
+        m = c('0tKaU'),
+        n = c('nKuOQ'),
+        o = c('JOJnL'),
+        p = c('quE27'),
+        q = c('u4s09'),
+        r = c('Eh2Wh'),
+        s = c('M+ehn'),
+        t = c('envF1'),
+        u = c('vet5K'),
+        v = c('JTTlV24'),
+        w = c('hxyXq25'),
+        x = c('jH8Dk'),
+        y = c('pg1KJ'),
+        z = c('8sxYw24'),
+        A = c('KxkP827'),
+        B = c('VM+jB'),
+        C = c('IDJbt'),
+        D = c('vJWh924'),
+        E = c('wSjT+'),
+        F = c('SKBBo');
+    let G, H, I, J = a => a;
+    const K = a => (0, f.jsx)('img', {
+        src: a.src,
         style: {
             height: '1em',
             display: 'block'
         }
     });
-    var _J = _S => {
-        const [K, L, M] = (0, n.useBoolean)(!1), [N, O] = (0, n.useBoolean)(!1), P = (0, n.isUpgraded)(), Q = [], R = e.useMemo(() => () => {
-            const _S = [{
+    var _L = a => {
+        const [M, N, O] = (0, p.useBoolean)(!1), [P, Q] = (0, p.useBoolean)(!1), R = (0, p.isUpgraded)(), S = [], T = g.useMemo(() => () => {
+            const U = [{
                     name: 'Settings',
-                    icon: w.default,
-                    onClick: () => (0, y.NavigateTo)('/settings')
+                    icon: y.default,
+                    onClick: () => (0, A.NavigateTo)('/settings')
                 },
                 {
                     name: 'Billing',
-                    icon: r.default,
+                    icon: t.default,
                     onClick: () => {
-                        k.default.navigation.currentTab = m.default.billing, (0, y.NavigateTo)('/settings');
+                        m.default.navigation.currentTab = o.default.billing, (0, A.NavigateTo)('/settings');
                     },
-                    blockIf: [n.isStudent]
+                    blockIf: [p.isStudent]
                 },
                 {
                     name: 'News',
-                    icon: v.default,
+                    icon: x.default,
                     onClick: () => {
-                        L(), O();
+                        N(), Q();
                     }
                 },
                 {
                     name: 'Group Licenses',
-                    icon: x.default,
-                    onClick: () => (0, y.NavigateTo)(l.GROUP_DASHBOARD),
-                    blockIf: [n.isStudent]
+                    icon: z.default,
+                    onClick: () => (0, A.NavigateTo)(n.GROUP_DASHBOARD),
+                    blockIf: [p.isStudent]
                 },
                 {
                     name: 'GiveKit',
-                    icon: s.default,
-                    onClick: () => (0, y.NavigateTo)(l.GIVEKIT),
-                    blockIf: [n.isStudent]
+                    icon: u.default,
+                    onClick: () => (0, A.NavigateTo)(n.GIVEKIT),
+                    blockIf: [p.isStudent]
                 },
                 {
                     name: 'Support',
-                    icon: u.default,
+                    icon: w.default,
                     onClick: () => {
-                        k.default.navigation.currentTab = m.default.support, (0, y.NavigateTo)('/settings');
+                        m.default.navigation.currentTab = o.default.support, (0, A.NavigateTo)('/settings');
                     },
-                    blockIf: [n.isStudent]
+                    blockIf: [p.isStudent]
                 },
                 {
                     name: 'Logout',
-                    icon: t.default,
-                    onClick: () => (0, n.request)({
+                    icon: v.default,
+                    onClick: () => (0, p.request)({
                         url: '/logout',
                         success: () => {
-                            D.default.reset();
+                            F.default.reset();
                         },
                         both: () => window.open('/', '_self')
                     })
                 }
             ];
-            return (0, d.jsx)(d.Fragment, {
-                children: (0, d.jsxs)(i.default, {
+            return (0, f.jsx)(f.Fragment, {
+                children: (0, f.jsxs)(k.default, {
                     style: {
                         width: 250
                     },
                     children: [
-                        (0, n.isStudent)() ? null : (0, d.jsxs)(_K, {
+                        (0, p.isStudent)() ? null : (0, f.jsxs)(_M, {
                             children: [
-                                (0, d.jsx)(_L, {
-                                    children: (0, n.getFirstName)((0, n.getUser)())
+                                (0, f.jsx)(_N, {
+                                    children: (0, p.getFirstName)((0, p.getUser)())
                                 }),
-                                (0, d.jsx)(_M, {
-                                    children: (0, q.default)((0, n.getUser)().type)
+                                (0, f.jsx)(_O, {
+                                    children: (0, s.default)((0, p.getUser)().type)
                                 })
                             ]
                         }),
-                        _S.filter(_S => !_S.blockIf || !_S.blockIf.some(_S => _S())).map(_S => (0, d.jsx)(i.default.Item, {
-                            onClick: _S.onClick,
-                            children: (0, d.jsxs)('div', {
+                        U.filter(U => !U.blockIf || !U.blockIf.some(U => U())).map(U => (0, f.jsx)(k.default.Item, {
+                            onClick: U.onClick,
+                            children: (0, f.jsxs)('div', {
                                 className: 'flex vc',
                                 style: {
                                     textAlign: 'center'
                                 },
                                 children: [
-                                    (0, d.jsx)(_S.icon, {}),
-                                    (0, d.jsx)('div', {
+                                    (0, f.jsx)(U.icon, {}),
+                                    (0, f.jsx)('div', {
                                         style: {
                                             marginLeft: 7
                                         },
-                                        children: _S.name
+                                        children: U.name
                                     })
                                 ]
                             })
-                        }, _S.name))
+                        }, U.name))
                     ]
                 })
             });
-        }, [L]);
-        return Q.push({
+        }, [N]);
+        return S.push({
             key: 'creative',
-            item: (0, d.jsx)(A.default, {
-                path: l.CREATIVE_BASE,
-                icon: (0, d.jsx)(I, {
+            item: (0, f.jsx)(C.default, {
+                path: n.CREATIVE_BASE,
+                icon: (0, f.jsx)(K, {
                     src: '/client/img/header/creative.svg'
                 }),
-                theme: _i.theme,
+                theme: a.theme,
                 children: 'Creative'
             })
-        }), Q.push({
+        }), S.push({
             key: 'rewards',
-            item: (0, d.jsx)(A.default, {
-                path: l.COSMOS_BASE,
-                icon: (0, d.jsx)(I, {
-                    src: B.default.iconImage
+            item: (0, f.jsx)(C.default, {
+                path: n.COSMOS_BASE,
+                icon: (0, f.jsx)(K, {
+                    src: D.default.iconImage
                 }),
-                theme: _i.theme,
-                children: B.default.name
+                theme: a.theme,
+                children: D.default.name
             })
-        }), Q.push({
+        }), S.push({
             key: 'me',
-            item: (0, d.jsx)(g.default, {
+            item: (0, f.jsx)(i.default, {
                 theme: {
-                    algorithm: j.default.defaultAlgorithm
+                    algorithm: l.default.defaultAlgorithm
                 },
-                children: (0, d.jsx)(h.default, {
+                children: (0, f.jsx)(j.default, {
                     trigger: ['click'],
-                    overlay: R,
-                    children: (0, d.jsx)('div', {
+                    overlay: T,
+                    children: (0, f.jsx)('div', {
                         className: 'maxWidth',
-                        children: (0, d.jsx)(A.default, {
-                            icon: (0, d.jsx)(I, {
+                        children: (0, f.jsx)(C.default, {
+                            icon: (0, f.jsx)(K, {
                                 src: '/client/img/header/smile.svg'
                             }),
-                            theme: _i.theme,
+                            theme: a.theme,
                             children: 'Me'
                         })
                     })
                 })
             })
-        }), P || (0, n.isStudent)() || Q.push({
+        }), R || (0, p.isStudent)() || S.push({
             key: 'upgrade',
-            item: (0, d.jsx)('div', {
+            item: (0, f.jsx)('div', {
                 className: 'maxAll',
-                children: (0, d.jsx)(f.default, {
+                children: (0, f.jsx)(h.default, {
                     size: 'large',
                     type: 'primary',
-                    onClick: _i.showUpgradeModal,
+                    onClick: a.showUpgradeModal,
                     children: 'Upgrade'
                 })
             })
-        }), (0, d.jsxs)(d.Fragment, {
+        }), (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, d.jsx)(z.default, {
-                    items: Q
+                (0, f.jsx)(B.default, {
+                    items: S
                 }),
-                (0, d.jsx)(e.Suspense, {
+                (0, f.jsx)(g.Suspense, {
                     fallback: null,
-                    children: N ? (0, d.jsx)(C.default, {
-                        open: K,
-                        onClose: M
+                    children: P ? (0, f.jsx)(E.default, {
+                        open: M,
+                        onClose: O
                     }) : null
                 })
             ]
         });
     };
-    const _K = o.default.div(E || (E = H`
+    const _M = q.default.div(G || (G = J`
   background: rgb(232, 232, 232);
   margin: 6px 12px;
   padding: 14px;
   border-radius: 4px;
   font-family: ${ 0 };
   color: rgba(0, 0, 0, 0.8);
-`), p.Fonts.SFPro),
-        _L = o.default.div(F || (F = H`
+`), r.Fonts.SFPro),
+        _N = q.default.div(H || (H = J`
   font-size: 18px;
   font-weight: ${ 0 };
-`), p.FontWeights.Bold),
-        _M = o.default.div(G || (G = H`
+`), r.FontWeights.Bold),
+        _O = q.default.div(I || (I = J`
   font-size: 12px;
 `));
-}), a.register('OI9Yf', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _f;
+}), c.register('M+ehn', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _h;
     });
-    var d = a('hHkFq'),
-        e = a('nCi40');
-    var _f = _i => _i === e.PlanIds.pro ? `${ d.COMPANY_NAME } Pro` : _i === e.PlanIds.go ? `${ d.COMPANY_NAME } Go` : _i === e.PlanIds.proPass ? `${ d.COMPANY_NAME } Pro (Monthly)` : _i === e.PlanIds.basic ? `${ d.COMPANY_NAME } Basic` : `Unknown ${ d.COMPANY_NAME } Plan`;
-}), a.register('XetsG', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+    var f = c('jw1ib'),
+        g = c('X8He6');
+    var _h = a => a === g.PlanIds.pro ? `${ f.COMPANY_NAME } Pro` : a === g.PlanIds.go ? `${ f.COMPANY_NAME } Go` : a === g.PlanIds.proPass ? `${ f.COMPANY_NAME } Pro (Monthly)` : a === g.PlanIds.basic ? `${ f.COMPANY_NAME } Basic` : `Unknown ${ f.COMPANY_NAME } Plan`;
+}), c.register('envF1', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('Dh/f9'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('1MeJk'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'CreditCardOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('Dh/f9', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'CreditCardOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('1MeJk', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -1260,27 +1260,27 @@ a.register('nNplT', function(b, c) {
         name: 'credit-card',
         theme: 'outlined'
     };
-}), a.register('mBug4', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('vet5K', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('J4ZXu'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('JHATI'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'HeartOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('J4ZXu', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'HeartOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('JHATI', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -1297,27 +1297,27 @@ a.register('nNplT', function(b, c) {
         name: 'heart',
         theme: 'outlined'
     };
-}), a.register('LuMZa', function(b, c) {
-    _i(b.exports, 'default', function() {
-        return _i;
+}), c.register('pg1KJ', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _k;
     });
-    var d = a('fbkyQ'),
-        e = a('LEQ5w'),
-        f = a('MH0UT'),
-        g = a('sLVIW'),
-        h = function(_i, j) {
-            return e.createElement(g.default, (0, d.default)((0, d.default)({}, _i), {}, {
-                ref: j,
-                icon: f.default
+    var f = c('5cnOa'),
+        g = c('O0Kav'),
+        h = c('txsxD'),
+        i = c('VZTwv'),
+        j = function(k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
             }));
         };
-    h.displayName = 'SettingOutlined';
-    var _i = e.forwardRef(h);
-}), a.register('MH0UT', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _d;
+    j.displayName = 'SettingOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('txsxD', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _f;
     });
-    var _d = {
+    var _f = {
         icon: {
             tag: 'svg',
             attrs: {
@@ -1334,35 +1334,35 @@ a.register('nNplT', function(b, c) {
         name: 'setting',
         theme: 'outlined'
     };
-}), a.register('SjnO4', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _n;
+}), c.register('6p0v5', function(d, e) {
+    a(d.exports, 'default', function() {
+        return _p;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('Axq+p'),
-        g = a('wYGc3'),
-        h = a('2x11J'),
-        i = a('Genmk'),
-        j = a('s+8hx17');
-    let k, l, m = e => e;
-    var _n = (0, h.observer)(e => {
+    var f = c('gRbUn'),
+        g = c('O0Kav'),
+        h = c('u4s09'),
+        i = c('+cTfn'),
+        j = c('6jmvl'),
+        k = c('bnViL'),
+        l = c('W/XnX24');
+    let m, n, o = a => a;
+    var _p = (0, j.observer)(a => {
         const {
             navigation: {
-                homeUrl: o
+                homeUrl: q
             }
-        } = e.useContext(i.default), p = e.theme === j.SiteHeaderTheme.dark ? '/client/img/svgLogoWhite.svg' : '/client/img/svgLogo.svg';
-        return (0, d.jsx)(_o, {
-            to: o,
-            children: (0, d.jsx)(_p, {
-                src: p
-            }, p)
+        } = g.useContext(k.default), r = a.theme === l.SiteHeaderTheme.dark ? '/client/img/svgLogoWhite.svg' : '/client/img/svgLogo.svg';
+        return (0, f.jsx)(_q, {
+            to: q,
+            children: (0, f.jsx)(_r, {
+                src: r
+            }, r)
         });
     });
-    const _o = (0, f.default)(g.Link)(k || (k = m``)),
-        _p = f.default.img.attrs({
+    const _q = (0, h.default)(i.Link)(m || (m = o``)),
+        _r = h.default.img.attrs({
             alt: 'Gimkit Logo'
-        })(l || (l = m`
+        })(n || (n = o`
   height: 32px;
   margin-right: 90px;
 `));

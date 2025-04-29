@@ -6,98 +6,98 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('HNLh2', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('/BidE', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _r(b.exports, 'MusicDevice', function() {
-        return _q;
-    }), _r(b.exports, 'default', function() {
+    }), a(c.exports, 'MusicDevice', function() {
         return _r;
+    }), a(c.exports, 'default', function() {
+        return _s;
     });
-    var e = a('1bFPu'),
-        f = a('6yrsF'),
-        g = a('i3kcr'),
-        h = a('/pbxo'),
-        i = a('1f1YX'),
-        j = a('I35Ay'),
-        k = a('NZSfi'),
-        l = a('eIAtr'),
-        m = a('m3Lon'),
-        n = a('UJCwk');
-    const o = new Map(),
-        p = new Map();
-    class _q extends j.default {
+    var f = b('s/YA9'),
+        g = b('6yrsF'),
+        h = b('p7Hfe'),
+        i = b('UkCpC'),
+        j = b('CbU7r'),
+        k = b('ltxDW'),
+        l = b('8YK5D'),
+        m = b('a9TTj0'),
+        n = b('y+rTc'),
+        o = b('oH3gV');
+    const p = new Map(),
+        q = new Map();
+    class _r extends k.default {
         get howl() {
-            return o.get(this.id);
+            return p.get(this.id);
         }
         get isPlaying() {
-            return p.get(this.id) || !1;
+            return q.get(this.id) || !1;
         }
-        set isPlaying(_r) {
-            p.set(this.id, _r);
+        set isPlaying(s) {
+            q.set(this.id, s);
         }
         play() {
-            this.howl && !this.isPlaying && (this.howl.volume(0), this.howl.play(), this.isPlaying = !0, this.howl.fade(0, (0, i.getVolume)({
+            this.howl && !this.isPlaying && (this.howl.volume(0), this.howl.play(), this.isPlaying = !0, this.howl.fade(0, (0, j.getVolume)({
                 volume: this.options.volume / 100,
-                type: i.SoundType.music
-            }), l.Consts.fadeInTime));
+                type: j.SoundType.music
+            }), m.Consts.fadeInTime));
         }
         stop() {
             this.howl && this.isPlaying && (this.howl.stop(), this.isPlaying = !1);
         }
         fadeOut() {
-            this.howl && this.isPlaying && (this.howl.fade(this.howl.volume(), 0, l.Consts.fadeOutTime), this.isPlaying = !1);
+            this.howl && this.isPlaying && (this.howl.fade(this.howl.volume(), 0, m.Consts.fadeOutTime), this.isPlaying = !1);
         }
-        constructor(r) {
-            if (super(r), (0, e.default)(this, 'onMasterVolumeChange', () => {
-                    this.howl && this.howl.volume((0, i.getVolume)({
+        constructor(s) {
+            if (super(s), (0, f.default)(this, 'onMasterVolumeChange', () => {
+                    this.howl && this.howl.volume((0, j.getVolume)({
                         volume: this.options.volume / 100,
-                        type: i.SoundType.music
+                        type: j.SoundType.music
                     }));
-                }), (0, e.default)(this, 'onStateChange', r => {
-                    'currentState' === r && (this.state.currentState === m.MusicDeviceState.playing ? this.play() : this.state.currentState === m.MusicDeviceState.stopped ? this.stop() : this.state.currentState === m.MusicDeviceState.fadingOut && this.fadeOut());
-                }), (0, e.default)(this, 'onDestroy', r => {
-                    var s;
-                    r.isBeingReplaced || (null === (s = o.get(this.id)) || void 0 === s || s.unload(), o.delete(this.id), p.delete(this.id));
-                }), (0, h.InGamePhase)() && (0, g.AmIGameOwner)()) {
-                if (!o.get(this.id)) {
-                    const s = new(0, f.Howl)({
-                        src: [(0, n.GetSoundUrl)(this.options.audioUrl)],
+                }), (0, f.default)(this, 'onStateChange', s => {
+                    'currentState' === s && (this.state.currentState === n.MusicDeviceState.playing ? this.play() : this.state.currentState === n.MusicDeviceState.stopped ? this.stop() : this.state.currentState === n.MusicDeviceState.fadingOut && this.fadeOut());
+                }), (0, f.default)(this, 'onDestroy', s => {
+                    var t;
+                    s.isBeingReplaced || (null === (t = p.get(this.id)) || void 0 === t || t.unload(), p.delete(this.id), q.delete(this.id));
+                }), (0, i.InGamePhase)() && (0, h.AmIGameOwner)()) {
+                if (!p.get(this.id)) {
+                    const t = new(0, g.Howl)({
+                        src: [(0, o.GetSoundUrl)(this.options.audioUrl)],
                         volume: this.options.volume / 100,
                         preload: !0,
                         loop: !0
                     });
-                    o.set(this.id, s);
+                    p.set(this.id, t);
                 }
-                this.state.currentState === m.MusicDeviceState.playing && this.play(), this.state.currentState === m.MusicDeviceState.stopped && this.isPlaying && this.stop();
+                this.state.currentState === n.MusicDeviceState.playing && this.play(), this.state.currentState === n.MusicDeviceState.stopped && this.isPlaying && this.stop();
             }
-            (0, h.InPreGamePhase)() && (this.parts.add.sprite(k.BaseAsset), o.delete(this.id));
+            (0, i.InPreGamePhase)() && (this.parts.add.sprite(l.BaseAsset), p.delete(this.id));
         }
     }
-    var _r = _q;
-}), a.register('NZSfi', function(b, c) {
-    e(b.exports, 'BaseAsset', function() {
-        return _d;
+    var _s = _r;
+}), b.register('8YK5D', function(c, d) {
+    a(c.exports, 'BaseAsset', function() {
+        return _e;
     });
-    const _d = {
+    const _e = {
         imageId: 'music_device',
-        imageUrl: (0, a('2Xvuf').default)('devices/music/music-device.png')
+        imageUrl: (0, b('UaUBz0').default)('devices/music/music-device.png')
     };
-}), a.register('eIAtr', function(b, c) {
-    e(b.exports, 'Consts', function() {
-        return _d;
+}), b.register('a9TTj0', function(c, d) {
+    a(c.exports, 'Consts', function() {
+        return _e;
     });
-    const _d = {
+    const _e = {
         fadeInTime: 1000,
         fadeOutTime: 1000
     };
-}), a.register('m3Lon', function(b, c) {
-    let d;
-    var e;
-    e(b.exports, 'MusicDeviceState', function() {
-        return d;
-    }), (e = d || (d = {})).stopped = 'stopped', e.playing = 'playing', e.fadingOut = 'fadingOut';
+}), b.register('y+rTc', function(c, d) {
+    let e;
+    var f;
+    a(c.exports, 'MusicDeviceState', function() {
+        return e;
+    }), (f = e || (e = {})).stopped = 'stopped', f.playing = 'playing', f.fadingOut = 'fadingOut';
 });

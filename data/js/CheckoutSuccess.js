@@ -6,62 +6,62 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('Lb0bk', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('jQfiv', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _u(b.exports, 'default', function() {
-        return _t;
+    }), a(c.exports, 'default', function() {
+        return _u;
     });
-    var e = a('0hzx+'),
-        f = a('LEQ5w'),
-        g = a('Axq+p'),
-        h = a('YRlpt'),
-        i = a('6CIVV'),
-        j = a('2x11J'),
-        k = a('PMl60'),
-        l = a('b5kvC'),
-        m = a('sHRDd'),
-        n = a('jE4mH'),
-        o = a('gs4MT'),
-        p = a('jzxyj10');
-    let q, r, s = _u => _u;
-    var _t = (0, j.observer)(() => {
-        const _u = (0, k.getUrlVariable)('session_id');
-        f.useEffect(() => {
-            (0, k.isStudent)() ? (0, p.NavigateTo)(o.DASHBOARD) : _u && (0, n.default)(_u);
+    var f = b('gRbUn'),
+        g = b('O0Kav'),
+        h = b('u4s09'),
+        i = b('AE7vR'),
+        j = b('yruHD'),
+        k = b('6jmvl'),
+        l = b('quE27'),
+        m = b('Eh2Wh'),
+        n = b('8KqQ+'),
+        o = b('RJBHf'),
+        p = b('nKuOQ'),
+        q = b('KxkP827');
+    let r, s, t = a => a;
+    var _u = (0, k.observer)(() => {
+        const v = (0, l.getUrlVariable)('session_id');
+        g.useEffect(() => {
+            (0, l.isStudent)() ? (0, q.NavigateTo)(p.DASHBOARD) : v && (0, o.default)(v);
         }, []);
-        return (0, e.jsx)(_u, {
-            children: (0, e.jsx)(_v, {
-                children: _u ? (0, e.jsxs)('div', {
+        return (0, f.jsx)(_v, {
+            children: (0, f.jsx)(_w, {
+                children: v ? (0, f.jsxs)('div', {
                     className: 'maxWidth flex hc vc flex-column',
                     children: [
-                        (0, e.jsx)(i.default, {
+                        (0, f.jsx)(j.default, {
                             size: 'large'
                         }),
-                        (0, k.isLoggedIn)() && (0, e.jsx)('div', {
+                        (0, l.isLoggedIn)() && (0, f.jsx)('div', {
                             style: {
                                 fontSize: 23,
-                                fontWeight: l.FontWeights.UltraBold
+                                fontWeight: m.FontWeights.UltraBold
                             },
                             children: 'Upgrading your account...'
                         }),
-                        (0, e.jsx)('div', {
+                        (0, f.jsx)('div', {
                             style: {
                                 fontSize: 16
                             },
                             children: 'Please don\'t close this tab'
                         })
                     ]
-                }) : (h.default.error({
+                }) : (i.default.error({
                     title: 'An error ocurred during checkout. Please contact customer support'
                 }), null)
             })
         });
     });
-    const _u = g.default.div(q || (q = s`
+    const _v = h.default.div(r || (r = t`
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/client/img/signup/funky-lines.png') repeat 0 0;
   height: 100%;
@@ -70,9 +70,9 @@ a.register('Lb0bk', function(b, c) {
   justify-content: center;
   align-items: center;
 `)),
-        _v = g.default.div.attrs({
+        _w = h.default.div.attrs({
             className: 'scroll-y'
-        })(r || (r = s`
+        })(s || (s = t`
   background: ${ 0 };
   padding: 20px;
   border-radius: 5px;
@@ -82,54 +82,54 @@ a.register('Lb0bk', function(b, c) {
   max-height: 90%;
   font-family: ${ 0 };
   color: ${ 0 };
-`), m.default.White, l.Fonts.SFPro, m.default.Black);
-}), a.register('jE4mH', function(b, c) {
-    _l(b.exports, 'default', function() {
-        return _k;
+`), n.default.White, m.Fonts.SFPro, n.default.Black);
+}), b.register('RJBHf', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _l;
     });
-    var d = a('PMl60'),
-        e = a('x/Eg+0'),
-        f = a('gs4MT'),
-        g = a('Pkvp4'),
-        h = a('YRlpt'),
-        i = a('jzxyj10'),
-        j = a('Pq0g9');
-    var _k = _l => {
-        e.default.navigation.loadingTokenSubmit = !0;
-        (0, d.verifyStripe)({
-            sessionId: _l,
-            onSuccess: (0, d.isLoggedIn)() ? () => {
-                const _l = (0, d.isUpgraded)();
-                (0, g.default)({
+    var e = b('quE27'),
+        f = b('8yIOR0'),
+        g = b('nKuOQ'),
+        h = b('+/x68'),
+        i = b('AE7vR'),
+        j = b('KxkP827'),
+        k = b('IMf/b4');
+    var _l = a => {
+        f.default.navigation.loadingTokenSubmit = !0;
+        (0, e.verifyStripe)({
+            sessionId: a,
+            onSuccess: (0, e.isLoggedIn)() ? () => {
+                const m = (0, e.isUpgraded)();
+                (0, h.default)({
                     onSuccess: () => {
-                        var m;
-                        _l || (0, j.AnalyticsTrackEvent)({
+                        var n;
+                        m || (0, k.AnalyticsTrackEvent)({
                             event: 'upgrade',
                             properties: {
-                                plan: null === (m = (0, d.getUser)()) || void 0 === m ? void 0 : m.type,
+                                plan: null === (n = (0, e.getUser)()) || void 0 === n ? void 0 : n.type,
                                 source: 'individual'
                             },
                             forcePostHog: !0
-                        }), window.location.href = f.DASHBOARD + '?from=upgrade';
+                        }), window.location.href = g.DASHBOARD + '?from=upgrade';
                     },
-                    onError: () => h.default.success({
+                    onError: () => i.default.success({
                         title: 'Upgraded!',
                         content: 'You have upgraded but must log out and back in first.',
-                        onOk: () => (0, d.request)({
+                        onOk: () => (0, e.request)({
                             url: '/logout',
                             both: () => window.open('/login', '_self')
                         })
                     })
                 });
             } : () => {
-                h.default.success({
+                i.default.success({
                     title: 'The purchase has been completed',
-                    onOk: () => (0, i.NavigateTo)(f.HOMEPAGE)
+                    onOk: () => (0, j.NavigateTo)(g.HOMEPAGE)
                 });
             },
-            onError: _v => {
-                e.default.navigation.loadingTokenSubmit = !1, (0, d.throwMessageError)({
-                    e: _v,
+            onError: a => {
+                f.default.navigation.loadingTokenSubmit = !1, (0, e.throwMessageError)({
+                    e: a,
                     default: {
                         title: 'Error ocurred when upgrading account',
                         content: 'An error ocurred on our end while upgrading your account. Please contact support.'
@@ -138,50 +138,50 @@ a.register('Lb0bk', function(b, c) {
             }
         });
     };
-}), a.register('x/Eg+0', function(b, c) {
-    _v(b.exports, 'default', function() {
-        return _f;
+}), b.register('8yIOR0', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('xguoe0'),
-        e = a('QKunP');
-    var _f = {
-        navigation: new(0, d.default)(),
-        checkout: new(0, e.default)()
+    var e = b('7N+Pu0'),
+        f = b('McWWb0');
+    var _g = {
+        navigation: new(0, e.default)(),
+        checkout: new(0, f.default)()
     };
-}), a.register('xguoe0', function(b, c) {
-    _v(b.exports, 'Screen', function() {
-        return _f;
-    }), _v(b.exports, 'default', function() {
-        return _k;
+}), b.register('7N+Pu0', function(c, d) {
+    a(c.exports, 'Screen', function() {
+        return _g;
+    }), a(c.exports, 'default', function() {
+        return _l;
     });
-    var d = a('csYze'),
-        e = a('YuT/D');
-    let _f;
-    (_f || (_f = {})).checkout = 'checkout';
-    const g = {
-            screen: _f.checkout,
+    var e = b('4F2ZN'),
+        f = b('JkQCT');
+    let _g;
+    (_g || (_g = {})).checkout = 'checkout';
+    const h = {
+            screen: _g.checkout,
             loadingTokenSubmit: !1
         },
         {
-            screen: h,
-            loadingTokenSubmit: i
-        } = g;
-    class j {
+            screen: i,
+            loadingTokenSubmit: j
+        } = h;
+    class k {
         constructor() {
-            this.screen = h, this.loadingTokenSubmit = i, this.reset = () => {
-                Object.keys(g).forEach(_v => this[_v] = g[_v]);
-            }, (0, e.makeObservable)(this);
+            this.screen = i, this.loadingTokenSubmit = j, this.reset = () => {
+                Object.keys(h).forEach(a => this[a] = h[a]);
+            }, (0, f.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], j.prototype, 'screen', void 0), (0, d.__decorate)([e.observable], j.prototype, 'loadingTokenSubmit', void 0), (0, d.__decorate)([e.action], j.prototype, 'reset', void 0);
-    var _k = j;
-}), a.register('QKunP', function(b, c) {
-    _v(b.exports, 'default', function() {
-        return _v;
+    (0, e.__decorate)([f.observable], k.prototype, 'screen', void 0), (0, e.__decorate)([f.observable], k.prototype, 'loadingTokenSubmit', void 0), (0, e.__decorate)([f.action], k.prototype, 'reset', void 0);
+    var _l = k;
+}), b.register('McWWb0', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _w;
     });
-    var d = a('csYze'),
-        e = a('YuT/D');
-    const f = {
+    var e = b('4F2ZN'),
+        f = b('JkQCT');
+    const g = {
             planName: '',
             planId: '',
             couponId: '',
@@ -198,60 +198,60 @@ a.register('Lb0bk', function(b, c) {
             stripePublicKey: ''
         },
         {
-            planName: g,
-            planId: h,
-            couponId: i,
-            planCost: j,
-            planDescription: k,
-            accountCredit: l,
-            percentageOff: m,
-            amountOff: n,
-            couponDescription: o,
-            hasCoupon: p,
-            couponOneUseOnly: q,
-            couponIsOnlyForPlan: r,
-            existingPayingPlan: s,
-            stripePublicKey: t
-        } = f;
-    class u {
+            planName: h,
+            planId: i,
+            couponId: j,
+            planCost: k,
+            planDescription: l,
+            accountCredit: m,
+            percentageOff: n,
+            amountOff: o,
+            couponDescription: p,
+            hasCoupon: q,
+            couponOneUseOnly: r,
+            couponIsOnlyForPlan: s,
+            existingPayingPlan: t,
+            stripePublicKey: u
+        } = g;
+    class v {
         get totalCost() {
-            const _v = this.planCost * this.percentageOff - this.amountOff - this.accountCredit;
-            return _v < 0 ? 0 : _v;
+            const w = this.planCost * this.percentageOff - this.amountOff - this.accountCredit;
+            return w < 0 ? 0 : w;
         }
         constructor() {
-            this.planName = g, this.planId = h, this.couponId = i, this.planCost = j, this.planDescription = k, this.accountCredit = l, this.percentageOff = m, this.amountOff = n, this.couponDescription = o, this.hasCoupon = p, this.couponOneUseOnly = q, this.couponIsOnlyForPlan = r, this.existingPayingPlan = s, this.stripePublicKey = t, this.reset = () => {
-                Object.keys(f).forEach(e => {
-                    this[e] = f[e];
+            this.planName = h, this.planId = i, this.couponId = j, this.planCost = k, this.planDescription = l, this.accountCredit = m, this.percentageOff = n, this.amountOff = o, this.couponDescription = p, this.hasCoupon = q, this.couponOneUseOnly = r, this.couponIsOnlyForPlan = s, this.existingPayingPlan = t, this.stripePublicKey = u, this.reset = () => {
+                Object.keys(g).forEach(a => {
+                    this[a] = g[a];
                 });
-            }, (0, e.makeObservable)(this);
+            }, (0, f.makeObservable)(this);
         }
     }
-    (0, d.__decorate)([e.observable], u.prototype, 'planName', void 0), (0, d.__decorate)([e.observable], u.prototype, 'planId', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponId', void 0), (0, d.__decorate)([e.observable], u.prototype, 'planCost', void 0), (0, d.__decorate)([e.observable], u.prototype, 'planDescription', void 0), (0, d.__decorate)([e.observable], u.prototype, 'accountCredit', void 0), (0, d.__decorate)([e.observable], u.prototype, 'percentageOff', void 0), (0, d.__decorate)([e.observable], u.prototype, 'amountOff', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponDescription', void 0), (0, d.__decorate)([e.observable], u.prototype, 'hasCoupon', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponOneUseOnly', void 0), (0, d.__decorate)([e.observable], u.prototype, 'couponIsOnlyForPlan', void 0), (0, d.__decorate)([e.observable], u.prototype, 'existingPayingPlan', void 0), (0, d.__decorate)([e.observable], u.prototype, 'stripePublicKey', void 0), (0, d.__decorate)([e.computed], u.prototype, 'totalCost', null), (0, d.__decorate)([e.action], u.prototype, 'reset', void 0);
-    var _v = u;
-}), a.register('jzxyj10', function(b, c) {
-    e(b.exports, 'NavigateTo', function() {
-        return _e;
+    (0, e.__decorate)([f.observable], v.prototype, 'planName', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planCost', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'accountCredit', void 0), (0, e.__decorate)([f.observable], v.prototype, 'percentageOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'amountOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'hasCoupon', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponOneUseOnly', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponIsOnlyForPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'existingPayingPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'stripePublicKey', void 0), (0, e.__decorate)([f.computed], v.prototype, 'totalCost', null), (0, e.__decorate)([f.action], v.prototype, 'reset', void 0);
+    var _w = v;
+}), b.register('KxkP827', function(c, d) {
+    a(c.exports, 'NavigateTo', function() {
+        return _f;
     });
-    var d = a('oBJ9G');
-    const _e = e => {
-        d.history.push(e);
+    var e = b('qb3Ih');
+    const _f = a => {
+        e.history.push(a);
     };
-}), a.register('Pq0g9', function(b, c) {
-    e(b.exports, 'AnalyticsTrackEvent', function() {
-        return _h;
+}), b.register('IMf/b4', function(c, d) {
+    a(c.exports, 'AnalyticsTrackEvent', function() {
+        return _i;
     });
-    var d = a('e7pFf'),
-        e = a('PMl60'),
-        f = a('Td6aM'),
-        g = a('J3ZQI');
-    const _h = e => {
-        var i, j, k;
-        if ((window.gtag && !(null === (i = e.blockedSource) || void 0 === i ? void 0 : i.google) && window.gtag('event', e.event, e.properties), f.AnalyticsFlags.educatorOnly) && (null === (k = (0, e.getUser)()) || void 0 === k ? void 0 : k.accountType) !== d.default.educator)
+    var e = b('gK+6L'),
+        f = b('quE27'),
+        g = b('95m0H'),
+        h = b('50Ts4');
+    const _i = a => {
+        var j, k, l;
+        if ((window.gtag && !(null === (j = a.blockedSource) || void 0 === j ? void 0 : j.google) && window.gtag('event', a.event, a.properties), g.AnalyticsFlags.educatorOnly) && (null === (l = (0, f.getUser)()) || void 0 === l ? void 0 : l.accountType) !== e.default.educator)
             return;
-        (null === (j = e.blockedSource) || void 0 === j ? void 0 : j.posthog) || (0, g.TrackPostHogEvent)({
-            event: e.event,
-            properties: e.properties,
-            force: e.forcePostHog
+        (null === (k = a.blockedSource) || void 0 === k ? void 0 : k.posthog) || (0, h.TrackPostHogEvent)({
+            event: a.event,
+            properties: a.properties,
+            force: a.forcePostHog
         });
     };
 });

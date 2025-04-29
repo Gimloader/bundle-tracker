@@ -6,36 +6,36 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('h8+db', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('4SCOn', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _n(b.exports, 'default', function() {
-        return _n;
+    }), a(c.exports, 'default', function() {
+        return _o;
     });
-    var e = a('1bFPu'),
-        f = a('2Xvuf'),
-        g = a('9tz3H'),
-        h = a('/pbxo'),
-        i = a('I35Ay'),
-        j = a('+uQv7'),
-        k = a('dTXti'),
-        l = a('bu42I0');
-    class m extends i.default {
-        constructor(_n) {
-            if (super(_n), (0, e.default)(this, 'onMessage', _n => {
-                    'hit' === _n.key && (0, l.OnHit)(_n.data);
-                }), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) {
-                const o = k.default.Utility;
-                new(0, j.default)({
+    var f = b('s/YA9'),
+        g = b('UaUBz0'),
+        h = b('hycyg'),
+        i = b('UkCpC'),
+        j = b('ltxDW'),
+        k = b('73Aki'),
+        l = b('AHhkR'),
+        m = b('JCj1N0');
+    class n extends j.default {
+        constructor(o) {
+            if (super(o), (0, f.default)(this, 'onMessage', o => {
+                    'hit' === o.key && (0, m.OnHit)(o.data);
+                }), (0, i.InPreGamePhase)() && (0, h.isSavedVersion)()) {
+                const p = l.default.Utility;
+                new(0, k.default)({
                     device: this,
-                    baseColor: o.baseColor,
-                    boxColor: o.boxColor,
+                    baseColor: p.baseColor,
+                    boxColor: p.boxColor,
                     content: {
                         icon: {
-                            image: (0, f.default)('devices/damager/icon.png'),
+                            image: (0, g.default)('devices/damager/icon.png'),
                             scale: 0.85
                         }
                     }
@@ -43,30 +43,30 @@ a.register('h8+db', function(b, c) {
             }
         }
     }
-    var _n = m;
-}), a.register('bu42I0', function(b, c) {
-    _m(b.exports, 'OnHit', function() {
-        return _i;
+    var _o = n;
+}), b.register('JCj1N0', function(c, d) {
+    a(c.exports, 'OnHit', function() {
+        return _j;
     });
-    var d = a('Jfada'),
-        e = a('B9G/J'),
-        f = a('D5xLI'),
-        g = a('O4Fyc'),
-        h = a('vqFRL');
-    const _i = _m => {
+    var e = b('5Fjxs'),
+        f = b('OuzTs'),
+        g = b('heTaO'),
+        h = b('RsWIB'),
+        i = b('bg2iz');
+    const _j = a => {
         const {
-            characterId: j,
-            damage: k,
-            type: l
-        } = _m;
-        if (j && k && l) {
-            const _m = (0, g.AmISpectator)() ? (0, e.FetchSpectatedId)() : (0, d.default)();
-            (0, f.default)().worldManager.projectiles.damageMarkers.characters.applyDamage({
-                characterId: j,
-                damage: k,
-                type: l
-            }), j === _m && (0, h.default)({
-                type: l
+            characterId: k,
+            damage: l,
+            type: m
+        } = a;
+        if (k && l && m) {
+            const n = (0, h.AmISpectator)() ? (0, f.FetchSpectatedId)() : (0, e.default)();
+            (0, g.default)().worldManager.projectiles.damageMarkers.characters.applyDamage({
+                characterId: k,
+                damage: l,
+                type: m
+            }), k === n && (0, i.default)({
+                type: m
             });
         }
     };

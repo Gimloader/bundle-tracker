@@ -6,113 +6,113 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('H0TeK', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('G7Ovc', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _p(b.exports, 'default', function() {
-        return _p;
+    }), a(c.exports, 'default', function() {
+        return _q;
     });
-    var e = a('1bFPu'),
-        f = a('9tz3H'),
-        g = a('/pbxo'),
-        h = a('IFO6W13'),
-        i = a('R2Ucl10'),
-        j = a('I35Ay'),
-        k = a('2Xvuf'),
-        l = a('DWF4E'),
-        m = a('5CmLs'),
-        n = a('JEGzD');
-    class o extends j.default {
-        constructor(_p) {
-            if (super(_p), (0, e.default)(this, 'currentFallVelocity', 0), (0, g.InGamePhase)() || (0, f.isPublishedVersion)())
+    var f = b('s/YA9'),
+        g = b('hycyg'),
+        h = b('UkCpC'),
+        i = b('u/WlI21'),
+        j = b('uc4mA17'),
+        k = b('ltxDW'),
+        l = b('UaUBz0'),
+        m = b('RZJBP'),
+        n = b('H4eGM'),
+        o = b('UCu0V');
+    class p extends k.default {
+        constructor(q) {
+            if (super(q), (0, f.default)(this, 'currentFallVelocity', 0), (0, h.InGamePhase)() || (0, g.isPublishedVersion)())
                 return;
-            const q = (0, i.FetchOptionSchemaProperty)(this, 'rangeRadius');
+            const r = (0, j.FetchOptionSchemaProperty)(this, 'rangeRadius');
             this.visualEditing.add.circle({
                 radius: this.options.rangeRadius,
-                minRadius: q.min,
-                maxRadius: q.max,
+                minRadius: r.min,
+                maxRadius: r.max,
                 rotable: !1,
-                onChange: _p => {
-                    (0, h.ReplaceVisualEditingPreview)(_p.x, _p.y, {
-                        rangeRadius: Math.round(_p.radius)
+                onChange: q => {
+                    (0, i.ReplaceVisualEditingPreview)(q.x, q.y, {
+                        rangeRadius: Math.round(q.radius)
                     });
                 }
             });
-            const r = this.options.skinId.replace('character_', ''),
-                s = (0, k.default)(`characters/spine/normalized_preview/${ r }.png`);
+            const s = this.options.skinId.replace('character_', ''),
+                t = (0, l.default)(`characters/spine/normalized_preview/${ s }.png`);
             this.parts.add.sprite({
                 y: 30 - 50 * 0.28,
-                imageId: s,
-                imageUrl: s,
-                depthChange: (0, m.default)(2),
-                onReady: _p => {
-                    _p.view.setScale(0.28 * this.options.scale), _p.view.setOrigin(0.5, 550 / 600);
+                imageId: t,
+                imageUrl: t,
+                depthChange: (0, n.default)(2),
+                onReady: q => {
+                    q.view.setScale(0.28 * this.options.scale), q.view.setOrigin(0.5, 550 / 600);
                 }
-            }), (0, n.isPlatformer)() || this.parts.add.sprite({
+            }), (0, o.isPlatformer)() || this.parts.add.sprite({
                 y: 15 - 5 * this.options.scale,
                 imageId: 'character-shadow',
-                imageUrl: (0, k.default)('characters/shadow.png'),
-                onReady: _p => {
-                    _p.view.setOrigin(0.5, 0.5), _p.view.setScale(l.SHADOW_SCALE * this.options.scale), _p.view.setAlpha(l.SHADOW_ALPHA);
+                imageUrl: (0, l.default)('characters/shadow.png'),
+                onReady: q => {
+                    q.view.setOrigin(0.5, 0.5), q.view.setScale(m.SHADOW_SCALE * this.options.scale), q.view.setAlpha(m.SHADOW_ALPHA);
                 }
             });
         }
     }
-    var _p = o;
-}), a.register('IFO6W13', function(b, c) {
-    e(b.exports, 'ReplaceVisualEditingPreview', function() {
-        return _h;
+    var _q = p;
+}), b.register('u/WlI21', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+        return _i;
     });
-    var d = a('HqwPM'),
-        e = a('+oovY4'),
-        f = a('A17vD'),
-        g = a('HXXiu');
-    const _h = (e, a, b) => {
-        const i = (0, g.FetchVisualEditingPreview)(),
-            j = (0, f.FetchCurrentlyEditedDevice)();
-        if (!j || !i)
+    var e = b('hemXM'),
+        f = b('sWmxu5'),
+        g = b('EzUqb'),
+        h = b('GQMbT');
+    const _i = (a, b, c) => {
+        const j = (0, h.FetchVisualEditingPreview)(),
+            k = (0, g.FetchCurrentlyEditedDevice)();
+        if (!k || !j)
             return;
-        const k = j.layers.isOnNaturalDepth() ? void 0 : a + j.layers.getDepthShift();
-        (0, e.default)({
-            deviceOption: i.deviceOption,
-            id: d.VisualEditingConstants.previewId,
-            x: e,
-            y: a,
-            depth: k,
-            layerId: j.layers.getLayer(),
-            name: i.name,
+        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        (0, f.default)({
+            deviceOption: j.deviceOption,
+            id: e.VisualEditingConstants.previewId,
+            x: a,
+            y: b,
+            depth: l,
+            layerId: k.layers.getLayer(),
+            name: j.name,
             isPreview: !0,
             options: {
-                ...i.options,
-                ...b
+                ...j.options,
+                ...c
             },
             placedByClient: !0,
-            state: i.deviceOption.defaultState
+            state: j.deviceOption.defaultState
         });
     };
-}), a.register('+oovY4', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _f;
+}), b.register('sWmxu5', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('D5xLI'),
-        e = a('aIyMH');
-    var _f = e => {
-        (0, d.default)().worldManager.devices.getDeviceById(e.id) && (0, e.default)(e);
+    var e = b('heTaO'),
+        f = b('2LtPo');
+    var _g = a => {
+        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
     };
-}), a.register('R2Ucl10', function(b, c) {
-    e(b.exports, 'FetchOptionSchemaProperty', function() {
-        return _d;
+}), b.register('uc4mA17', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
+        return _e;
     });
-    const _d = (e, b) => {
-        var e, f, g;
-        const h = e.deviceOption.optionSchema.options.find(e => e.key === b);
+    const _e = (a, c) => {
+        var f, g, h;
+        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
         return {
-            min: null === (e = null == h ? void 0 : h.option.props) || void 0 === e ? void 0 : e.min,
-            max: null === (f = null == h ? void 0 : h.option.props) || void 0 === f ? void 0 : f.max,
-            step: null === (g = null == h ? void 0 : h.option.props) || void 0 === g ? void 0 : g.step
+            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
+            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
+            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
         };
     };
 });

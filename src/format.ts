@@ -79,8 +79,6 @@ export function formatJs(code: string) {
 			scopes.push({ node, nameIndex: 0, names: new Map() });
 		}
 
-		// console.log(node.name, scopes.length, scopes.map(s => s.node.type), ancestors.map(a => a.type));
-
 		let parent = ancestors[ancestors.length - 2];
 
 		if(
@@ -95,6 +93,9 @@ export function formatJs(code: string) {
 		}
 
 		let scope = scopes[scopes.length - 1];
+		if(parent.type === "FunctionDeclaration" && (parent as FunctionDeclaration).id === node) {
+			scope = scopes[scopes.length - 2];
+		}
 
 		if(declaration) {
 			// generate a new name to replace it with

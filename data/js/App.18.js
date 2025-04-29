@@ -6,36 +6,36 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('OUQCG', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('NPpF0', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _z(b.exports, 'ANIMATION_DURATION', function() {
-        return _r;
-    }), _z(b.exports, 'default', function() {
+    }), a(c.exports, 'ANIMATION_DURATION', function() {
         return _s;
+    }), a(c.exports, 'default', function() {
+        return _t;
     });
-    var e = a('0hzx+'),
-        f = a('LEQ5w'),
-        g = a('5BohJ'),
-        h = a('Axq+p'),
-        i = a('TwXYL'),
-        j = a('ryWAy'),
-        k = a('2GeW4'),
-        l = a('w3PQs'),
-        m = a('8eVLU'),
-        n = a('qr+8A');
-    let o, p, q = _z => _z;
-    const _r = 0.3;
-    var _s = (0, m.withDeviceUIWrapper)(_z => {
-        const t = f.useCallback(() => {
-            _z.closableByUser && _z.close();
-        }, [_z.closableByUser]);
-        (0, j.default)(Phaser.Input.Keyboard.KeyCodes.ESC, t, [t]);
-        return (0, e.jsx)(_t, {
-            children: (0, e.jsx)(_u, {
+    var f = b('gRbUn'),
+        g = b('O0Kav'),
+        h = b('wjTt6'),
+        i = b('u4s09'),
+        j = b('9aZ6t'),
+        k = b('J8L14'),
+        l = b('UkybP'),
+        m = b('WrYxt'),
+        n = b('BkBfo'),
+        o = b('NwGMQ');
+    let p, q, r = a => a;
+    const _s = 0.3;
+    var _t = (0, n.withDeviceUIWrapper)(a => {
+        const u = g.useCallback(() => {
+            a.closableByUser && a.close();
+        }, [a.closableByUser]);
+        (0, k.default)(Phaser.Input.Keyboard.KeyCodes.ESC, u, [u]);
+        return (0, f.jsx)(_u, {
+            children: (0, f.jsx)(_v, {
                 initial: {
                     background: 'rgba(0,0,0,0)'
                 },
@@ -46,92 +46,92 @@ a.register('OUQCG', function(b, c) {
                     background: 'rgba(0,0,0,0)'
                 },
                 transition: {
-                    duration: _r
+                    duration: _s
                 },
                 children: (() => {
-                    const u = {
-                        ..._z,
-                        isBanner: _z.style === l.CodeUIStyle.banner,
-                        close: t,
-                        code: _z.code
+                    const v = {
+                        ...a,
+                        isBanner: a.style === m.CodeUIStyle.banner,
+                        close: u,
+                        code: a.code
                     };
-                    return (0, e.jsx)(g.default, {
-                        ...u
+                    return (0, f.jsx)(h.default, {
+                        ...v
                     });
                 })()
             })
         });
     });
-    const _t = (0, h.default)(k.default).attrs({
+    const _u = (0, i.default)(l.default).attrs({
             className: 'maxAll'
-        })(o || (o = q`
+        })(p || (p = r`
   overflow: hidden;
   z-index: ${ 0 };
-`), n.default.primaryContent),
-        _u = (0, h.default)(i.motion.div).attrs({
+`), o.default.primaryContent),
+        _v = (0, i.default)(j.motion.div).attrs({
             className: 'maxAll'
-        })(p || (p = q``));
-}), a.register('5BohJ', function(b, c) {
-    _z(b.exports, 'default', function() {
-        return _s;
+        })(q || (q = r``));
+}), b.register('wjTt6', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _t;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('TwXYL'),
-        g = a('FytBL'),
-        h = a('Axq+p'),
-        i = a('OUQCG'),
-        j = a('EAnIn'),
-        k = a('Ct4sg'),
-        l = a('PMl60'),
-        m = a('HbVXj');
-    let n, o, p = _z => _z;
-    const q = {
+    var e = b('gRbUn'),
+        f = b('O0Kav'),
+        g = b('9aZ6t'),
+        h = b('hxGRM'),
+        i = b('u4s09'),
+        j = b('NPpF0'),
+        k = b('SvCqx'),
+        l = b('V/q8i'),
+        m = b('quE27'),
+        n = b('UYyWT');
+    let o, p, q = a => a;
+    const r = {
             y: ' 100%',
             opacity: 0
         },
-        r = {
+        s = {
             y: '0%',
             opacity: 1
         };
-    var _s = _z => {
-        const t = (0, g.useIsPresent)(),
-            [u, v] = (0, l.useBoolean)(!1),
-            w = (0, m.GetContrastColor)(_z.defaultBackgroundColor),
-            x = e.useMemo(() => {
-                let y = {
-                    background: _z.defaultBackgroundColor,
-                    color: w,
-                    fontFamily: _z.defaultFontFamily
+    var _t = a => {
+        const u = (0, h.useIsPresent)(),
+            [v, w] = (0, m.useBoolean)(!1),
+            x = (0, n.GetContrastColor)(a.defaultBackgroundColor),
+            y = f.useMemo(() => {
+                let z = {
+                    background: a.defaultBackgroundColor,
+                    color: x,
+                    fontFamily: a.defaultFontFamily
                 };
-                if (_z.isBanner) {
-                    const _z = {
+                if (a.isBanner) {
+                    const A = {
                         padding: '30px 40px',
                         width: '100%',
                         maxWidth: '100%',
                         borderRadius: 0
                     };
                     return {
-                        ...y,
-                        ..._z
+                        ...z,
+                        ...A
                     };
                 }
                 return {
-                    ...y,
+                    ...z,
                     padding: '40px 30px',
                     width: '90%',
                     maxWidth: 650,
                     borderRadius: 5
                 };
             }, [
-                e.defaultBackgroundColor,
-                e.isBanner
+                a.defaultBackgroundColor,
+                a.isBanner
             ]);
-        return (0, d.jsxs)(_t, {
+        return (0, e.jsxs)(_u, {
             onClick: () => {
-                t && u && e.close();
+                u && v && a.close();
             },
-            style: e.isBanner ? {
+            style: a.isBanner ? {
                 alignItems: 'flex-end',
                 justifyContent: 'center'
             } : {
@@ -139,106 +139,106 @@ a.register('OUQCG', function(b, c) {
                 alignItems: 'center'
             },
             children: [
-                (0, d.jsx)(_u, {
-                    initial: q,
-                    animate: r,
-                    exit: q,
+                (0, e.jsx)(_v, {
+                    initial: r,
+                    animate: s,
+                    exit: r,
                     transition: {
-                        duration: i.ANIMATION_DURATION,
+                        duration: j.ANIMATION_DURATION,
                         ease: 'easeOut'
                     },
-                    onClick: e => e.stopPropagation(),
-                    onAnimationComplete: v,
-                    style: x,
-                    children: (0, d.jsx)(j.default, {
-                        ...e
+                    onClick: a => a.stopPropagation(),
+                    onAnimationComplete: w,
+                    style: y,
+                    children: (0, e.jsx)(k.default, {
+                        ...a
                     })
                 }),
-                e.closableByUser ? (0, d.jsx)(k.default, {
-                    onClick: e.close
+                a.closableByUser ? (0, e.jsx)(l.default, {
+                    onClick: a.close
                 }) : null
             ]
         });
     };
-    const _t = h.default.div.attrs({
+    const _u = i.default.div.attrs({
             className: 'maxAll flex'
-        })(n || (n = p``)),
-        _u = (0, h.default)(f.motion.div).attrs({
+        })(o || (o = q``)),
+        _v = (0, i.default)(g.motion.div).attrs({
             className: 'medium-shadow flex-column vc scroll-y'
-        })(o || (o = p`
+        })(p || (p = q`
   max-height: 80%;
 `));
-}), a.register('EAnIn', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _p;
+}), b.register('SvCqx', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _q;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('pjaWs'),
-        g = a('C2gQA'),
-        h = a('led8j'),
-        i = a('U9mPz'),
-        j = a('utXDw'),
-        k = a('JWLDh');
-    let l, m, n, o = e => e;
-    var _p = e => {
-        const q = () => (0, d.jsx)(d.Fragment, {
-            children: (0, d.jsx)('div', {
-                style: e.isBanner ? void 0 : {
+    var e = b('gRbUn');
+    b('O0Kav');
+    var f = b('u4s09'),
+        g = b('P9wve'),
+        h = b('1Aepc'),
+        i = b('aPZ+w'),
+        j = b('GAMly'),
+        k = b('/SQrB'),
+        l = b('sZQJz');
+    let m, n, o, p = a => a;
+    var _q = a => {
+        const r = () => (0, e.jsx)(e.Fragment, {
+            children: (0, e.jsx)('div', {
+                style: a.isBanner ? void 0 : {
                     display: 'flex',
                     width: '100%',
                     alignItems: 'center',
                     flexDirection: 'column'
                 },
-                children: (0, d.jsx)(_s, {
-                    children: e.code ? (0, d.jsx)(g.LiveProvider, {
+                children: (0, e.jsx)(_t, {
+                    children: a.code ? (0, e.jsx)(h.LiveProvider, {
                         noInline: !0,
-                        code: e.code,
+                        code: a.code,
                         scope: {
-                            MapButton: h.default,
-                            CallAction: i.CallAction,
-                            usePropertyValue: j.usePropertyValue,
-                            useItemAmount: k.useItemAmount
+                            MapButton: i.default,
+                            CallAction: j.CallAction,
+                            usePropertyValue: k.usePropertyValue,
+                            useItemAmount: l.useItemAmount
                         },
-                        children: (0, d.jsx)(g.LivePreview, {})
-                    }) : f.default.emptyMessage
+                        children: (0, e.jsx)(h.LivePreview, {})
+                    }) : g.default.emptyMessage
                 })
             })
         });
-        return (0, d.jsx)(d.Fragment, {
-            children: e.isBanner ? (0, d.jsx)(_q, {
-                children: q()
-            }) : (0, d.jsx)(_r, {
-                children: q()
+        return (0, e.jsx)(e.Fragment, {
+            children: a.isBanner ? (0, e.jsx)(_r, {
+                children: r()
+            }) : (0, e.jsx)(_s, {
+                children: r()
             })
         });
     };
-    const _q = e.default.div.attrs({
+    const _r = f.default.div.attrs({
             className: 'maxWidth flex vc'
-        })(l || (l = o`
+        })(m || (m = p`
   width: 100%;
   display: flex;
   justify-content: space-between;
 `)),
-        _r = e.default.div.attrs({
+        _s = f.default.div.attrs({
             className: 'maxWidth flex-column vc'
-        })(m || (m = o``)),
-        _s = e.default.div(n || (n = o`
+        })(n || (n = p``)),
+        _t = f.default.div(o || (o = p`
   font-size: 24px;
   margin: 6px;
 `));
-}), a.register('pjaWs', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _d;
+}), b.register('P9wve', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _e;
     });
-    var _d = {
+    var _e = {
         emptyMessage: 'Nothing in here...yet! End the game and modify this device to include your content.'
     };
-}), a.register('w3PQs', function(b, c) {
-    let d;
-    var e;
-    e(b.exports, 'CodeUIStyle', function() {
-        return d;
-    }), (e = d || (d = {})).modal = 'modal', e.banner = 'banner';
+}), b.register('WrYxt', function(c, d) {
+    let e;
+    var f;
+    a(c.exports, 'CodeUIStyle', function() {
+        return e;
+    }), (f = e || (e = {})).modal = 'modal', f.banner = 'banner';
 });

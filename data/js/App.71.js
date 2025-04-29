@@ -6,39 +6,39 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('qi4Gg', function(b, c) {
-    var d;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('vjpJd', function(c, d) {
+    var e;
+    e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), _u(b.exports, 'default', function() {
-        return _t;
+    }), a(c.exports, 'default', function() {
+        return _u;
     });
-    var e = a('0hzx+'),
-        f = a('NIZyA'),
-        g = a('fmVdR'),
-        h = a('LEQ5w'),
-        i = a('Axq+p'),
-        j = a('sHRDd'),
-        k = a('b5kvC'),
-        l = a('Yjqqv'),
-        m = a('xgp7G'),
-        n = a('NkjRq'),
-        o = a('PMl60'),
-        p = a('7s5R80');
-    let q, r, s = _u => _u;
-    var _t = () => {
-        const [_u, v] = h.useState(0), w = () => v(_u => _u + 1);
-        return (0, e.jsxs)(_u, {
+    var f = b('gRbUn'),
+        g = b('qMSe6'),
+        h = b('VNuyu'),
+        i = b('O0Kav'),
+        j = b('u4s09'),
+        k = b('8KqQ+'),
+        l = b('Eh2Wh'),
+        m = b('BvBT4'),
+        n = b('Yf6eb'),
+        o = b('wxVhF'),
+        p = b('quE27'),
+        q = b('F0ESS9');
+    let r, s, t = a => a;
+    var _u = () => {
+        const [v, w] = i.useState(0), x = () => w(v => v + 1);
+        return (0, f.jsxs)(_v, {
             children: [
-                (0, e.jsx)(o.Title, {
+                (0, f.jsx)(p.Title, {
                     title: 'Compatibility Check'
                 }),
-                (0, e.jsxs)(_v, {
+                (0, f.jsxs)(_w, {
                     children: [
-                        (0, e.jsx)(l.default, {}),
-                        _u === n.default.length ? (0, e.jsx)(f.default, {
+                        (0, f.jsx)(m.default, {}),
+                        v === o.default.length ? (0, f.jsx)(g.default, {
                             type: 'success',
                             style: {
                                 marginTop: 15
@@ -47,48 +47,48 @@ a.register('qi4Gg', function(b, c) {
                             message: 'All Test Passed!',
                             description: 'You should be all set to access everything in Gimkit properly!'
                         }) : null,
-                        (0, e.jsx)(g.default, {}),
-                        n.default.map(_u => (0, e.jsx)(m.default, {
-                            test: _u,
-                            onPass: w
-                        }, _u.name))
+                        (0, f.jsx)(h.default, {}),
+                        o.default.map(v => (0, f.jsx)(n.default, {
+                            test: v,
+                            onPass: x
+                        }, v.name))
                     ]
                 })
             ]
         });
     };
-    const _u = i.default.div.attrs({
+    const _v = j.default.div.attrs({
             className: 'flex hc'
-        })(q || (q = s`
+        })(r || (r = t`
   flex: 1;
   background: ${ 0 };
   font-family: ${ 0 };
   color: ${ 0 };
-`), j.default.Snow, k.Fonts.SFPro, j.default.Black),
-        _v = (0, i.default)(p.default)(r || (r = s`
+`), k.default.Snow, l.Fonts.SFPro, k.default.Black),
+        _w = (0, j.default)(q.default)(s || (s = t`
   width: 90%;
   max-width: 750px;
   margin: 40px 0px;
   border-radius: 8px;
   padding: 40px;
 `));
-}), a.register('Yjqqv', function(b, c) {
-    _l(b.exports, 'default', function() {
-        return _f;
+}), b.register('BvBT4', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('b5kvC');
-    var _f = () => (0, d.jsxs)('div', {
+    var e = b('gRbUn');
+    b('O0Kav');
+    var f = b('Eh2Wh');
+    var _g = () => (0, e.jsxs)('div', {
         children: [
-            (0, d.jsx)('div', {
+            (0, e.jsx)('div', {
                 style: {
-                    fontWeight: e.FontWeights.Bold,
+                    fontWeight: f.FontWeights.Bold,
                     fontSize: 32
                 },
                 children: 'Gimkit Compatibility Check'
             }),
-            (0, d.jsx)('div', {
+            (0, e.jsx)('div', {
                 style: {
                     fontSize: 16,
                     marginTop: 3
@@ -97,83 +97,83 @@ a.register('qi4Gg', function(b, c) {
             })
         ]
     });
-}), a.register('xgp7G', function(b, c) {
-    _l(b.exports, 'default', function() {
-        return _u;
+}), b.register('Yf6eb', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _v;
     });
-    var d = a('0hzx+'),
-        e = a('LEQ5w'),
-        f = a('oXQNI'),
-        g = a('Axq+p'),
-        h = a('sHRDd'),
-        i = a('FpbFp'),
-        j = a('b5kvC'),
-        k = a('OVITM');
-    let l, m, n, o, p, q, r, s, t = _l => _l;
-    var _u = _l => {
+    var e = b('gRbUn'),
+        f = b('O0Kav'),
+        g = b('QZ0Z+'),
+        h = b('u4s09'),
+        i = b('8KqQ+'),
+        j = b('JNGrh0'),
+        k = b('Eh2Wh'),
+        l = b('4Gp1n');
+    let m, n, o, p, q, r, s, t, u = a => a;
+    var _v = a => {
         const {
-            loading: v,
-            passed: w
-        } = (0, k.useTest)(_l.test.test), x = e.useMemo(() => v ? '#4251af' : w ? '#388e3c' : '#f44336', [
-            v,
-            w
-        ]), y = e.useMemo(() => v ? 'Running Test' : w ? 'Test Passed' : 'Test Failed', [
-            v,
-            w
+            loading: w,
+            passed: x
+        } = (0, l.useTest)(a.test.test), y = f.useMemo(() => w ? '#4251af' : x ? '#388e3c' : '#f44336', [
+            w,
+            x
+        ]), z = f.useMemo(() => w ? 'Running Test' : x ? 'Test Passed' : 'Test Failed', [
+            w,
+            x
         ]);
-        e.useEffect(() => {
-            w && _l.onPass();
-        }, [w]);
-        const z = !v && !w;
-        return (0, d.jsx)(f.default, {
+        f.useEffect(() => {
+            x && a.onPass();
+        }, [x]);
+        const A = !w && !x;
+        return (0, e.jsx)(g.default, {
             hoverable: !0,
             style: {
                 marginBottom: 15
             },
-            children: (0, d.jsxs)(_v, {
+            children: (0, e.jsxs)(_w, {
                 children: [
-                    (0, d.jsxs)(_w, {
+                    (0, e.jsxs)(_x, {
                         children: [
-                            v ? (0, d.jsx)(i.default, {
+                            w ? (0, e.jsx)(j.default, {
                                 size: 14
                             }) : null,
-                            (0, d.jsx)('div', {
+                            (0, e.jsx)('div', {
                                 style: {
-                                    marginLeft: v ? 8 : 0,
-                                    color: x
+                                    marginLeft: w ? 8 : 0,
+                                    color: y
                                 },
-                                children: y
+                                children: z
                             })
                         ]
                     }),
-                    (0, d.jsx)(_x, {
+                    (0, e.jsx)(_y, {
                         style: {
-                            color: w || v ? h.default.Black : x
+                            color: x || w ? i.default.Black : y
                         },
-                        children: _l.test.name
+                        children: a.test.name
                     }),
-                    _l.test.description && v ? (0, d.jsx)(_y, {
-                        children: _l.test.description
+                    a.test.description && w ? (0, e.jsx)(_z, {
+                        children: a.test.description
                     }) : null,
-                    z ? (0, d.jsxs)(d.Fragment, {
+                    A ? (0, e.jsxs)(e.Fragment, {
                         children: [
-                            (0, d.jsxs)(_z, {
+                            (0, e.jsxs)(_A, {
                                 children: [
-                                    (0, d.jsx)(_A, {
+                                    (0, e.jsx)(_B, {
                                         children: 'What It Means'
                                     }),
-                                    (0, d.jsx)(_B, {
-                                        children: _l.test.whatItMeans
+                                    (0, e.jsx)(_C, {
+                                        children: a.test.whatItMeans
                                     })
                                 ]
                             }),
-                            (0, d.jsxs)(_C, {
+                            (0, e.jsxs)(_D, {
                                 children: [
-                                    (0, d.jsx)(_A, {
+                                    (0, e.jsx)(_B, {
                                         children: 'How To Fix'
                                     }),
-                                    (0, d.jsx)(_B, {
-                                        children: _l.test.howToFix
+                                    (0, e.jsx)(_C, {
+                                        children: a.test.howToFix
                                     })
                                 ]
                             })
@@ -183,85 +183,85 @@ a.register('qi4Gg', function(b, c) {
             })
         });
     };
-    const _v = g.default.div(l || (l = t`
+    const _w = h.default.div(m || (m = u`
   color: ${ 0 };
-`), h.default.Black),
-        _w = g.default.div.attrs({
+`), i.default.Black),
+        _x = h.default.div.attrs({
             className: 'flex vc'
-        })(m || (m = t`
+        })(n || (n = u`
   font-size: 16px;
 `)),
-        _x = g.default.div(n || (n = t`
+        _y = h.default.div(o || (o = u`
   margin-top: 1px;
   font-size: 21px;
   font-weight: ${ 0 };
-`), j.FontWeights.Bold),
-        _y = g.default.div(o || (o = t`
+`), k.FontWeights.Bold),
+        _z = h.default.div(p || (p = u`
   font-size: 16px;
   opacity: 0.8;
   margin-top: 2px;
 `)),
-        _z = g.default.div.attrs({
+        _A = h.default.div.attrs({
             className: 'maxWidth'
-        })(p || (p = t`
+        })(q || (q = u`
   background: #f5f5f5;
   border: 2px #78909c solid;
   padding: 20px;
   border-radius: 4px;
   margin-top: 10px;
 `)),
-        _A = g.default.div(q || (q = t`
+        _B = h.default.div(r || (r = u`
   font-style: italic;
   font-weight: ${ 0 };
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
-`), j.FontWeights.Bold),
-        _B = g.default.div(r || (r = t`
+`), k.FontWeights.Bold),
+        _C = h.default.div(s || (s = u`
   margin-top: 5px;
 `)),
-        _C = g.default.div.attrs({
+        _D = h.default.div.attrs({
             className: 'maxWidth'
-        })(s || (s = t`
+        })(t || (t = u`
   background: #f1f8e9;
   border: 2px #66bb6a solid;
   padding: 20px;
   border-radius: 4px;
   margin-top: 10px;
 `));
-}), a.register('FpbFp', function(b, c) {
-    _l(b.exports, 'default', function() {
-        return _r;
+}), b.register('JNGrh0', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _t;
     });
-    var d = a('r98tK1'),
-        e = a('GepBD'),
-        f = a('LEQ5w');
-    a('WPpLv');
-    var g = a('cO49c'),
-        h = a('QvROH'),
-        i = a('mmS5q'),
-        j = 44;
+    var e = b('+pD1R19'),
+        f = b('DFnC8'),
+        g = b('O0Kav');
+    b('HoW8Y');
+    var h = b('PEco5'),
+        i = b('T8OqN'),
+        j = b('KOz0K'),
+        k = 44;
 
-    function k(_l) {
-        var m, n, o;
-        return m = _l, n = 0, o = 1, _l = (Math.min(Math.max(n, m), o) - n) / (o - n), _l = (_l -= 1) * _l * _l + 1;
+    function l(m) {
+        var n, o, p;
+        return n = m, o = 0, p = 1, m = (Math.min(Math.max(o, n), p) - o) / (p - o), m = (m -= 1) * m * m + 1;
     }
-    var k = f.forwardRef(function(l, m) {
-            var n, o = l.classes,
-                p = l.className,
-                q = l.color,
-                _r = void 0 === q ? 'primary' : q,
-                s = l.disableShrink,
-                t = void 0 !== s && s,
-                u = l.size,
-                v = void 0 === u ? 40 : u,
-                w = l.style,
-                x = l.thickness,
-                y = void 0 === x ? 3.6 : x,
-                z = l.value,
-                A = void 0 === z ? 0 : z,
-                B = l.variant,
-                C = void 0 === B ? 'indeterminate' : B,
-                D = (0, e.default)(l, [
+    var m = g.forwardRef(function(n, o) {
+            var p, q = n.classes,
+                r = n.className,
+                s = n.color,
+                _t = void 0 === s ? 'primary' : s,
+                u = n.disableShrink,
+                v = void 0 !== u && u,
+                w = n.size,
+                x = void 0 === w ? 40 : w,
+                y = n.style,
+                z = n.thickness,
+                A = void 0 === z ? 3.6 : z,
+                B = n.value,
+                C = void 0 === B ? 0 : B,
+                D = n.variant,
+                E = void 0 === D ? 'indeterminate' : D,
+                F = (0, f.default)(n, [
                     'classes',
                     'className',
                     'color',
@@ -272,56 +272,56 @@ a.register('qi4Gg', function(b, c) {
                     'value',
                     'variant'
                 ]),
-                E = {},
-                F = {},
-                G = {};
-            if ('determinate' === C || 'static' === C) {
-                var H = 2 * Math.PI * ((j - y) / 2);
-                E.strokeDasharray = H.toFixed(3), G['aria-valuenow'] = Math.round(A), 'static' === C ? (E.strokeDashoffset = ''.concat(((100 - A) / 100 * H).toFixed(3), 'px'), F.transform = 'rotate(-90deg)') : (E.strokeDashoffset = ''.concat((n = (100 - A) / 100, n * n * H).toFixed(3), 'px'), F.transform = 'rotate('.concat((270 * _k(A / 70)).toFixed(3), 'deg)'));
+                G = {},
+                H = {},
+                I = {};
+            if ('determinate' === E || 'static' === E) {
+                var J = 2 * Math.PI * ((k - A) / 2);
+                G.strokeDasharray = J.toFixed(3), I['aria-valuenow'] = Math.round(C), 'static' === E ? (G.strokeDashoffset = ''.concat(((100 - C) / 100 * J).toFixed(3), 'px'), H.transform = 'rotate(-90deg)') : (G.strokeDashoffset = ''.concat((p = (100 - C) / 100, p * p * J).toFixed(3), 'px'), H.transform = 'rotate('.concat((270 * l(C / 70)).toFixed(3), 'deg)'));
             }
-            return f.createElement('div', (0, d.default)({
-                className: (0, g.default)(o.root, p, 'inherit' !== _r && o['color'.concat((0, i.default)(_r))], {
-                    indeterminate: o.indeterminate,
-                    static: o.static
-                } [C]),
-                style: (0, d.default)({
-                    width: v,
-                    height: v
-                }, F, w),
-                ref: m,
+            return g.createElement('div', (0, e.default)({
+                className: (0, h.default)(q.root, r, 'inherit' !== _t && q['color'.concat((0, j.default)(_t))], {
+                    indeterminate: q.indeterminate,
+                    static: q.static
+                } [E]),
+                style: (0, e.default)({
+                    width: x,
+                    height: x
+                }, H, y),
+                ref: o,
                 role: 'progressbar'
-            }, G, D), f.createElement('svg', {
-                className: o.svg,
-                viewBox: ''.concat(22, ' ').concat(22, ' ').concat(j, ' ').concat(j)
-            }, f.createElement('circle', {
-                className: (0, g.default)(o.circle, t && o.circleDisableShrink, {
-                    indeterminate: o.circleIndeterminate,
-                    static: o.circleStatic
-                } [C]),
-                style: E,
-                cx: j,
-                cy: j,
-                r: (j - y) / 2,
+            }, I, F), g.createElement('svg', {
+                className: q.svg,
+                viewBox: ''.concat(22, ' ').concat(22, ' ').concat(k, ' ').concat(k)
+            }, g.createElement('circle', {
+                className: (0, h.default)(q.circle, v && q.circleDisableShrink, {
+                    indeterminate: q.circleIndeterminate,
+                    static: q.circleStatic
+                } [E]),
+                style: G,
+                cx: k,
+                cy: k,
+                r: (k - A) / 2,
                 fill: 'none',
-                strokeWidth: y
+                strokeWidth: A
             })));
         }),
-        l = (0, h.default)(function(m) {
+        n = (0, i.default)(function(o) {
             return {
                 root: {
                     display: 'inline-block'
                 },
                 static: {
-                    transition: m.transitions.create('transform')
+                    transition: o.transitions.create('transform')
                 },
                 indeterminate: {
                     animation: '$circular-rotate 1.4s linear infinite'
                 },
                 colorPrimary: {
-                    color: m.palette.primary.main
+                    color: o.palette.primary.main
                 },
                 colorSecondary: {
-                    color: m.palette.secondary.main
+                    color: o.palette.secondary.main
                 },
                 svg: {
                     display: 'block'
@@ -330,7 +330,7 @@ a.register('qi4Gg', function(b, c) {
                     stroke: 'currentColor'
                 },
                 circleStatic: {
-                    transition: m.transitions.create('stroke-dashoffset')
+                    transition: o.transitions.create('stroke-dashoffset')
                 },
                 circleIndeterminate: {
                     animation: '$circular-dash 1.4s ease-in-out infinite',
@@ -366,37 +366,37 @@ a.register('qi4Gg', function(b, c) {
         }, {
             name: 'MuiCircularProgress',
             flip: !1
-        })(k);
-}), a.register('OVITM', function(b, c) {
-    _o(b.exports, 'useTest', function() {
-        return _f;
+        })(m);
+}), b.register('4Gp1n', function(c, d) {
+    a(c.exports, 'useTest', function() {
+        return _g;
     });
-    var d = a('LEQ5w'),
-        e = a('PMl60');
-    const _f = _o => {
-        const [g, , h] = (0, e.useBoolean)(!0), [i, j] = d.useState(!1), k = () => {
-            j(!0), h();
-        }, l = () => {
-            j(!1), h();
+    var e = b('O0Kav'),
+        f = b('quE27');
+    const _g = a => {
+        const [h, , i] = (0, f.useBoolean)(!0), [j, k] = e.useState(!1), l = () => {
+            k(!0), i();
+        }, m = () => {
+            k(!1), i();
         };
-        return d.useEffect(() => {
-            _o(k, l);
+        return e.useEffect(() => {
+            a(l, m);
         }, []), {
-            loading: g,
-            passed: i
+            loading: h,
+            passed: j
         };
     };
-}), a.register('NkjRq', function(b, c) {
-    _o(b.exports, 'default', function() {
-        return _n;
+}), b.register('wxVhF', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _o;
     });
-    var d = a('0hzx+'),
-        e = a('lJnts');
-    a('LEQ5w');
-    var f = a('2HvvA11'),
-        g = a('PMl60'),
-        h = a('x8CoD');
-    const i = _o => (0, d.jsx)('div', {
+    var e = b('gRbUn'),
+        f = b('lJnts');
+    b('O0Kav');
+    var g = b('FB7HT26'),
+        h = b('quE27'),
+        i = b('HloXO');
+    const j = a => (0, e.jsx)('div', {
             style: {
                 border: '2px solid',
                 fontFamily: 'monospace',
@@ -407,63 +407,63 @@ a.register('qi4Gg', function(b, c) {
                 borderRadius: 2,
                 margin: '2px 4px'
             },
-            children: _o.children
+            children: a.children
         }),
-        j = {
+        k = {
             name: 'Firewall check on *.gimkitconnect.com',
-            whatItMeans: (0, d.jsx)('span', {
+            whatItMeans: (0, e.jsx)('span', {
                 children: 'You won\'t be able to connect to our game servers. This will prevent you from hosting or participating in games.'
             }),
-            howToFix: (0, d.jsxs)('span', {
+            howToFix: (0, e.jsxs)('span', {
                 children: [
                     'Unblock ',
-                    (0, d.jsx)(i, {
+                    (0, e.jsx)(j, {
                         children: 'https://*.gimkitconnect.com'
                     }),
                     '. Please note this is a wildcard. Gimkit needs access to every subdomain on',
                     ' ',
-                    (0, d.jsx)(i, {
+                    (0, e.jsx)(j, {
                         children: 'gimkitconnect.com'
                     }),
                     '.'
                 ]
             }),
-            test: (_o, a) => {
-                (0, g.request)({
+            test: (a, b) => {
+                (0, h.request)({
                     url: '/api/matchmaker/find-server-to-host-game',
                     method: 'post',
                     data: {
                         source: 'original'
                     },
-                    success: b => {
-                        b && b.url ? (0, g.request)({
-                            url: b.url + '/hello',
-                            success: () => _o(),
-                            error: _o => a()
-                        }) : a();
+                    success: c => {
+                        c && c.url ? (0, h.request)({
+                            url: c.url + '/hello',
+                            success: () => a(),
+                            error: a => b()
+                        }) : b();
                     },
-                    error: _o => a()
+                    error: a => b()
                 });
             }
         },
-        _k = {
+        l = {
             name: 'WebSocket connection to *.gimkitconnect.com',
             description: 'This test takes 60 seconds to complete.',
-            whatItMeans: (0, d.jsx)('span', {
+            whatItMeans: (0, e.jsx)('span', {
                 children: 'You won\'t be able to connect to our game servers. This will prevent you from hosting & participating in all game modes.'
             }),
-            howToFix: (0, d.jsxs)('span', {
+            howToFix: (0, e.jsxs)('span', {
                 children: [
                     'Unblock both of the following domains:',
-                    (0, d.jsxs)('ul', {
+                    (0, e.jsxs)('ul', {
                         children: [
-                            (0, d.jsx)('li', {
-                                children: (0, d.jsx)(i, {
+                            (0, e.jsx)('li', {
+                                children: (0, e.jsx)(j, {
                                     children: 'https://*.gimkitconnect.com'
                                 })
                             }),
-                            (0, d.jsx)('li', {
-                                children: (0, d.jsx)(i, {
+                            (0, e.jsx)('li', {
+                                children: (0, e.jsx)(j, {
                                     children: 'wss://*.gimkitconnect.com'
                                 })
                             })
@@ -471,209 +471,209 @@ a.register('qi4Gg', function(b, c) {
                     }),
                     'Note that these are both wildcards. Gimkit needs access to every subdomain for both HTTP Requests & WebSockets on',
                     ' ',
-                    (0, d.jsx)(i, {
+                    (0, e.jsx)(j, {
                         children: 'gimkitconnect.com'
                     }),
                     ' to work properly.',
-                    (0, d.jsx)('br', {}),
+                    (0, e.jsx)('br', {}),
                     ' ',
-                    (0, d.jsx)('br', {}),
+                    (0, e.jsx)('br', {}),
                     'If the firewall check test below passed, this is most likely an issue with your school\'s proxy network. Gimkit requires secure Websockets, which can cause issues with some proxy servers. You may need to allow',
                     ' ',
-                    (0, d.jsx)(i, {
+                    (0, e.jsx)(j, {
                         children: '*.gimkitconnect.com'
                     }),
                     ' in your proxy\u2019s security settings. SSL is used to encrypt data between devices and servers. Networks that monitor SSL activity sometimes replace our certificates with those of the monitoring service. This can cause authentication errors.',
                     ' ',
-                    (0, d.jsx)(i, {
+                    (0, e.jsx)(j, {
                         children: '*.gimkitconnect.com'
                     }),
                     'may need to bypass network monitoring.'
                 ]
             }),
-            test: (_o, a) => {
-                (0, g.request)({
+            test: (a, b) => {
+                (0, h.request)({
                     url: '/api/matchmaker/find-server-to-host-game',
                     method: 'post',
                     data: {
                         source: 'map'
                     },
-                    success: b => {
-                        if (b && b.url) {
-                            new(0, e.Client)(b.url.replace('http', 'ws')).create('ConnectionTest').then(b => {
-                                let l = !1;
+                    success: c => {
+                        if (c && c.url) {
+                            new(0, f.Client)(c.url.replace('http', 'ws')).create('ConnectionTest').then(c => {
+                                let m = !1;
                                 setTimeout(() => {
-                                    l || (l = !0, _o());
-                                }, 55000), b.onLeave(() => {
-                                    l || (l = !0, a());
-                                }), b.onError(() => {
-                                    l || (l = !0, a());
+                                    m || (m = !0, a());
+                                }, 55000), c.onLeave(() => {
+                                    m || (m = !0, b());
+                                }), c.onError(() => {
+                                    m || (m = !0, b());
                                 });
-                            }).catch(_o => {
-                                a();
+                            }).catch(a => {
+                                b();
                             });
                         } else
-                            a();
+                            b();
                     },
-                    error: _o => a()
+                    error: a => b()
                 });
             }
         },
-        l = {
+        m = {
             name: 'Firewall check on media.gimkit.com',
-            whatItMeans: (0, d.jsx)('span', {
+            whatItMeans: (0, e.jsx)('span', {
                 children: 'You won\'t be able to view uploaded images & audio.'
             }),
-            howToFix: (0, d.jsxs)('span', {
+            howToFix: (0, e.jsxs)('span', {
                 children: [
                     'Unblock ',
-                    (0, d.jsx)(i, {
+                    (0, e.jsx)(j, {
                         children: 'media.gimkit.com'
                     }),
                     '.'
                 ]
             }),
-            test: (_o, a) => {
-                (0, g.request)({
-                    url: (0, h.getCloudinaryUrl)('https://res.cloudinary.com/gimkit-production/image/upload/v1574562821/btwjkzsjb3vvd5nroxi9.png'),
-                    success: _o,
-                    error: a
+            test: (a, b) => {
+                (0, h.request)({
+                    url: (0, i.getCloudinaryUrl)('https://res.cloudinary.com/gimkit-production/image/upload/v1574562821/btwjkzsjb3vvd5nroxi9.png'),
+                    success: a,
+                    error: b
                 });
             }
         },
-        m = {
+        n = {
             name: 'Firewall check on unsplash.com',
-            whatItMeans: (0, d.jsx)('span', {
+            whatItMeans: (0, e.jsx)('span', {
                 children: 'You won\'t be able to view cover photos for kits.'
             }),
-            howToFix: (0, d.jsxs)('span', {
+            howToFix: (0, e.jsxs)('span', {
                 children: [
                     'Unblock ',
-                    (0, d.jsx)(i, {
+                    (0, e.jsx)(j, {
                         children: 'unsplash.com'
                     }),
                     '.'
                 ]
             }),
-            test: (_o, a) => {
-                (0, g.request)({
+            test: (a, b) => {
+                (0, h.request)({
                     url: 'https://images.unsplash.com/photo-1574539299747-c0dcef95d2ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80',
-                    success: _o,
-                    error: a
+                    success: a,
+                    error: b
                 });
             }
         };
-    var _n = [
-        _k,
-        j,
+    var _o = [
         l,
+        k,
+        m,
         {
             name: 'WebGL support',
-            whatItMeans: (0, d.jsx)('span', {
+            whatItMeans: (0, e.jsx)('span', {
                 children: 'You will not be able to play/host 2D game modes'
             }),
-            howToFix: (0, d.jsxs)('span', {
+            howToFix: (0, e.jsxs)('span', {
                 children: [
                     '2D game modes utilize 2D graphics. To make this work, we use use a technology called WebGL.',
-                    (0, d.jsx)('br', {}),
+                    (0, e.jsx)('br', {}),
                     ' ',
-                    (0, d.jsx)('br', {}),
+                    (0, e.jsx)('br', {}),
                     'This test failing most likely means you have WebGL disabled for your browser. Follow the steps in this article to enable WebGL for your browser:',
                     ' ',
-                    (0, d.jsx)(f.default, {
+                    (0, e.jsx)(g.default, {
                         to: 'https://help.gimkit.com/en/article/how-to-enable-webgl-1wk7fgn',
                         external: !0,
                         children: 'https://help.gimkit.com/en/article/how-to-enable-webgl-1wk7fgn'
                     })
                 ]
             }),
-            test: (_o, a) => {
+            test: (a, b) => {
                 (() => {
                     try {
-                        const _o = document.createElement('canvas');
-                        return !(!window.WebGLRenderingContext || !_o.getContext('webgl') && !_o.getContext('experimental-webgl'));
-                    } catch (e) {
+                        const p = document.createElement('canvas');
+                        return !(!window.WebGLRenderingContext || !p.getContext('webgl') && !p.getContext('experimental-webgl'));
+                    } catch (a) {
                         return !1;
                     }
-                })() ? e(): a();
+                })() ? a(): b();
             }
         },
-        m
+        n
     ];
-}), a.register('2HvvA11', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _f;
+}), b.register('FB7HT26', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _g;
     });
-    var d = a('0hzx+'),
-        e = a('wYGc3');
-    a('LEQ5w');
-    var _f = e => e.external || !e.to ? (0, d.jsx)('a', {
-        href: e.to,
-        tabIndex: Number(e.tabIndex || '0'),
-        onClick: e.onClick,
-        onKeyPress: a => {
-            e.onClick && 'Enter' === a.key && (a.preventDefault(), e.onClick());
+    var e = b('gRbUn'),
+        f = b('+cTfn');
+    b('O0Kav');
+    var _g = a => a.external || !a.to ? (0, e.jsx)('a', {
+        href: a.to,
+        tabIndex: Number(a.tabIndex || '0'),
+        onClick: a.onClick,
+        onKeyPress: b => {
+            a.onClick && 'Enter' === b.key && (b.preventDefault(), a.onClick());
         },
-        className: e.className,
-        target: e.target,
-        style: e.style,
-        children: e.children
-    }) : (0, d.jsx)(e.Link, {
-        to: e.to,
-        tabIndex: Number(e.tabIndex || '0'),
-        onClick: e.onClick,
-        className: e.className,
-        target: e.target,
-        style: e.style,
-        children: e.children
+        className: a.className,
+        target: a.target,
+        style: a.style,
+        children: a.children
+    }) : (0, e.jsx)(f.Link, {
+        to: a.to,
+        tabIndex: Number(a.tabIndex || '0'),
+        onClick: a.onClick,
+        className: a.className,
+        target: a.target,
+        style: a.style,
+        children: a.children
     });
-}), a.register('x8CoD', function(b, c) {
-    e(b.exports, 'getCloudinaryUrl', function() {
-        return _d;
+}), b.register('HloXO', function(c, d) {
+    a(c.exports, 'getCloudinaryUrl', function() {
+        return _e;
     });
-    const _d = e => {
-            const e = _e(e);
-            return e ? e.includes('/video/upload') ? `https://${ _f }/video/upload/${ e }` : `https://${ _f }/image/upload/f_auto,fl_lossy,q_auto/${ e }` : e;
+    const _e = a => {
+            const f = _f(a);
+            return f ? a.includes('/video/upload') ? `https://${ _g }/video/upload/${ f }` : `https://${ _g }/image/upload/f_auto,fl_lossy,q_auto/${ f }` : a;
         },
-        _e = e => {
-            if (!_i.some(b => e.includes(b)))
+        _f = a => {
+            if (!_j.some(c => a.includes(c)))
                 return null;
-            if (e.includes(_g) && !e.includes(`/${ _h }/`))
+            if (a.includes(_h) && !a.includes(`/${ _i }/`))
                 return null;
-            const f = e.split('/');
-            if (!f || !f.length || f.length < 2)
+            const g = a.split('/');
+            if (!g || !g.length || g.length < 2)
                 return null;
-            const g = f[f.length - 2],
-                h = f[f.length - 1];
-            return g && h && g.startsWith('v') ? `${ g }/${ h }` : null;
+            const h = g[g.length - 2],
+                i = g[g.length - 1];
+            return h && i && h.startsWith('v') ? `${ h }/${ i }` : null;
         },
-        _f = 'media.gimkit.com',
-        _g = 'res.cloudinary.com',
-        _h = 'gimkit-production',
-        _i = [
-            _f,
-            _g
+        _g = 'media.gimkit.com',
+        _h = 'res.cloudinary.com',
+        _i = 'gimkit-production',
+        _j = [
+            _g,
+            _h
         ];
-}), a.register('7s5R80', function(b, c) {
-    e(b.exports, 'default', function() {
-        return _h;
+}), b.register('F0ESS9', function(c, d) {
+    a(c.exports, 'default', function() {
+        return _i;
     });
-    var d = a('0hzx+');
-    a('LEQ5w');
-    var e = a('Axq+p'),
-        f = a('sHRDd');
-    let g;
-    var _h = e => (0, d.jsx)(_i, {
-        onClick: e.onClick,
-        className: e.className,
-        style: e.style,
-        children: e.children
+    var e = b('gRbUn');
+    b('O0Kav');
+    var f = b('u4s09'),
+        g = b('8KqQ+');
+    let h;
+    var _i = a => (0, e.jsx)(_j, {
+        onClick: a.onClick,
+        className: a.className,
+        style: a.style,
+        children: a.children
     });
-    const _i = e.default.div(g || (g = (e => e)`
+    const _j = f.default.div(h || (h = (a => a)`
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1),
     0 10px 30px #f3ece8;
   border-radius: 0.2em 0.2em 0 0;
   background: ${ 0 };
   padding: 20px;
-`), f.default.White);
+`), g.default.White);
 });
