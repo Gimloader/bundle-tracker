@@ -4,7 +4,7 @@ import fs from 'fs';
 import { formatCss, formatJs, renameModules } from "./format";
 import cliProgress from "cli-progress";
 import { parseArgs } from "util";
-import { $ } from "bun";
+import { pushChanges } from "./push";
 
 const { values: { force, push }} = parseArgs({
     args: process.argv.slice(2),
@@ -148,38 +148,4 @@ multibar.remove(renameBar);
 multibar.stop();
 
 // push the changes if needed
-if(push) {
-    await $`git add data`;
-    await $`git commit -m "Update data"`;
-    await $`git push`;
-
-    const webhook = Bun.env.WEBHOOK_URL;
-    if(webhook) {
-        let hash = await $`git rev-parse HEAD`.text();
-        let stat = await $`git diff --shortstat`.text();
-
-        await fetch(webhook, {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                content: null,
-                embeds: [
-                    {
-                        title: "New updates to Gimkit's bundle",
-                        description: `**[View changes](https://github.com/Gimloader/source-tracker/commit/${hash})**\n${stat}`,
-                        url: `https://github.com/Gimloader/source-tracker/commit/${hash}`,
-                        color: 7220975,
-                        author: {
-                            name: "Gimloader Source Tracker",
-                            url: "https://github.com/Gimloader/source-tracker",
-                            icon_url: "https://gimloader.github.io/icon.png"
-                        }
-                    }
-                ],
-                attachments: []
-            })
-        });
-    }
-}
+if(push) await pushChanges();

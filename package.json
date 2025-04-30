@@ -3,7 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "getCode": "bun run src/getCode.ts"
+    "getCode": "bun run src/index.ts"
   },
   "private": true,
   "devDependencies": {
