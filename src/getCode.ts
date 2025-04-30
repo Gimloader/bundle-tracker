@@ -3,6 +3,16 @@ import { join } from "path";
 import fs from 'fs';
 import { formatCss, formatJs, renameModules } from "./format";
 import cliProgress from "cli-progress";
+import { parseArgs } from "util";
+import { $ } from "bun";
+
+const { values: { force, push }} = parseArgs({
+    args: process.argv.slice(2),
+    options: {
+        force: { type: "boolean", short: "f", default: false },
+        push: { type: "boolean", short: "p", default: false },
+    }
+});
 
 const multibar = new cliProgress.MultiBar({
     hideCursor: true,
@@ -39,7 +49,7 @@ if(await lastRunFile.exists()) {
     lastRun = await lastRunFile.json();
 }
 
-if(lastRun.lastIndex === indexUrl) {
+if(!force && lastRun.lastIndex === indexUrl) {
     multibar.stop();
     console.log("No changes since last run");
     process.exit();
@@ -136,3 +146,10 @@ lastRunFile.write(JSON.stringify(lastRun, null, 4));
 overall.increment();
 multibar.remove(renameBar);
 multibar.stop();
+
+// push the changes if needed
+if(push) {
+    await $`git add data`;
+    await $`git commit -m "Update data"`;
+    await $`git push`;
+}
