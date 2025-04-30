@@ -26,6 +26,27 @@ registryBar.increment(1, { active: "Fetching index" });
 
 // get the module registry
 const indexUrl = script.getAttribute("src");
+
+interface LastRun {
+    lastIndex: string;
+    urls: Record<string, string>;
+}
+
+// check that the url has changed
+const lastRunFile = Bun.file(join(data, "lastRun.json"));
+let lastRun: LastRun = { lastIndex: "", urls: {} };
+if(await lastRunFile.exists()) {
+    lastRun = await lastRunFile.json();
+}
+
+if(lastRun.lastIndex === indexUrl) {
+    multibar.stop();
+    console.log("No changes since last run");
+    process.exit();
+}
+
+lastRun.lastIndex = indexUrl;
+
 const indexRes = await fetch(base + indexUrl);
 const indexFile = await indexRes.text();
 
@@ -96,6 +117,7 @@ for(const group of groups) {
         if(group.ext === "js") text = formatJs(text);
         else text = formatCss(text);
 
+        lastRun.urls[`${group.ext}/${name}`] = url;
         await Bun.file(join(data, group.ext, name)).write(text);
     }
 }
@@ -108,6 +130,8 @@ const renameBar = multibar.create(numFiles, 0);
 await renameModules((file) => {
     renameBar.increment(1, { active: file });
 });
+
+lastRunFile.write(JSON.stringify(lastRun, null, 4));
 
 overall.increment();
 multibar.remove(renameBar);
