@@ -1,8 +1,8 @@
-# Gimkit Source Tracker
+# Gimkit Bundle Tracker
 
 This repository automatically tracks changes made to Gimkit's bundled code, which happens relatively infrequently. The bundled code is normalized as much as possible to make it easier to see what changed between versions. 
 
-All of the javascript/css is stored in the [data](/data) folder, and differences between versions can be viewed on the [commits](https://github.com/Gimloader/source-tracker/commits/main/data) page.
+All of the javascript/css is stored in the [data](/data) folder, and differences between versions can be viewed on the [commits](https://github.com/Gimloader/bundle-tracker/commits/main/data) page.
 
 ## Usage
 

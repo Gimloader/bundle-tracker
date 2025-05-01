@@ -21,13 +21,12 @@ export async function pushChanges() {
             embeds: [
                 {
                     title: "New updates to Gimkit's bundle",
-                    description: `**[View changes](https://github.com/Gimloader/source-tracker/commit/${hash})**\n${stat}`,
-                    url: `https://github.com/Gimloader/source-tracker/commit/${hash}`,
+                    description: `**[View changes](https://github.com/Gimloader/bundle-tracker/commit/${hash})**\n${stat}`,
+                    url: `https://github.com/Gimloader/bundle-tracker/commit/${hash}`,
                     color: 7220975,
                     author: {
-                        name: "Gimloader Source Tracker",
-                        url: "https://github.com/Gimloader/source-tracker",
-                        icon_url: "https://gimloader.github.io/icon.png"
+                        name: "Gimkit Bundle Tracker",
+                        url: "https://github.com/Gimloader/bundle-tracker"
                     }
                 }
             ],
