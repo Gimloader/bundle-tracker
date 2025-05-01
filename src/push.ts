@@ -1,6 +1,8 @@
 import { $ } from "bun";
 
 export async function pushChanges() {
+    let stat = await $`git diff --shortstat`.text();
+
     await $`git add data`;
     await $`git commit -m "Update data"`;
     await $`git push`;
@@ -9,7 +11,6 @@ export async function pushChanges() {
     if(!webhook) return;
 
     let hash = await $`git rev-parse HEAD`.text();
-    let stat = await $`git diff --shortstat`.text();
 
     await fetch(webhook, {
         method: "POST",
