@@ -6,45 +6,19 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('xgS1i', function(d, e) {
+c.register('.....', function (d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function() {
+    }), a(d.exports, 'default', function () {
         return _H;
     });
-    var g = c('s/YA9'),
-        h = c('ltxDW'),
-        i = c('iH+cr'),
-        j = c('UkCpC'),
-        k = c('3Fknw'),
-        l = c('ndxRd'),
-        m = c('colFa'),
-        n = c('0EMo0'),
-        o = c('X7kIM'),
-        p = c('omrib'),
-        q = c('K2ru3'),
-        r = c('QyPlq'),
-        s = c('TkEMW'),
-        t = c('pMcSb'),
-        u = c('QwL62'),
-        v = c('5Fjxs'),
-        w = c('UaUBz0'),
-        x = c('3jaMj'),
-        y = c('CbU7r'),
-        z = c('heTaO'),
-        A = c('lnsH90'),
-        B = c('GpPqI'),
-        C = c('56Ofo'),
-        D = c('hycyg'),
-        E = c('uc4mA17'),
-        F = c('u/WlI21');
+    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....'), w = c('.....'), x = c('.....'), y = c('.....'), z = c('.....'), A = c('.....'), B = c('.....'), C = c('.....'), D = c('.....'), E = c('.....'), F = c('.....');
     class G extends h.default {
         addFullLook() {
             this.boundingBox.setHardcoded({
@@ -58,35 +32,31 @@ c.register('xgS1i', function(d, e) {
         updateFontSize() {
             if (!this.priceText)
                 return;
-            const H = this.priceText.view.text.length,
-                I = 0.85 * this.options.width;
-            let J = k.Consts.PRICE_TEXT_SIZE,
-                K = H * J;
+            const H = this.priceText.view.text.length, I = 0.85 * this.options.width;
+            let J = k.Consts.PRICE_TEXT_SIZE, K = H * J;
             const L = () => {
                 K > I && (J -= 1, K = H * J, L());
             };
             L();
-            const M = (0, z.default)().cameraHelper.zoom,
-                N = J * M;
+            const M = (0, z.default)().cameraHelper.zoom, N = J * M;
             this.priceText.view.setFontSize(N), this.priceText.view.setScale(1 / M);
             const O = (0, A.TextPadding)();
             this.priceText.view.setPadding(O, O, O, O);
         }
         constructor(H) {
-            super(H), (0, g.default)(this, 'grayScalePipelines', []), (0, g.default)(this, 'grayScaleFactor', 0), (0, g.default)(this, 'animationSpeedFactor', 1), (0, g.default)(this, 'rays', []), (0, g.default)(this, 'cumulTime', 0), (0, g.default)(this, 'currentRaysAngle', 0), (0, g.default)(this, 'onUpdate', H => {
+            super(H), (0, g.default)(this, 'grayScalePipelines', []), (0, g.default)(this, 'grayScaleFactor', 0), (0, g.default)(this, 'animationSpeedFactor', 1), (0, g.default)(this, 'rays', []), (0, g.default)(this, 'cumulTime', 0), (0, g.default)(this, 'currentRaysAngle', 0), (0, g.default)(this, 'onUpdate', I => {
                 if (this.cull.isInsideView) {
-                    if (this.currentRaysAngle += H / 10000 * this.animationSpeedFactor, this.rays.forEach((H, d) => {
-                            (0, l.UpdateRay)(this, H, d);
+                    if (this.currentRaysAngle += I / 10000 * this.animationSpeedFactor, this.rays.forEach((J, K) => {
+                            (0, l.UpdateRay)(this, J, K);
                         }), this.grantedImage && this.grantedImage.view) {
-                        this.cumulTime += H;
-                        const I = this.y - k.Consts.LEGS_HEIGHT / 2,
-                            J = 5;
-                        this.grantedImage.view.y = I + this.animationSpeedFactor * Math.sin(this.cumulTime / 550) * J;
+                        this.cumulTime += I;
+                        const J = this.y - k.Consts.LEGS_HEIGHT / 2, K = 5;
+                        this.grantedImage.view.y = J + this.animationSpeedFactor * Math.sin(this.cumulTime / 550) * K;
                     }
                     (0, u.UpdateGrayscalePipelines)(this), (0, t.UpdateColors)(this), (0, B.default)(this);
                 }
-            }), (0, g.default)(this, 'onStateChange', H => {
-                'active' === H && (this.state.active ? this.tweens.add({
+            }), (0, g.default)(this, 'onStateChange', I => {
+                'active' === I && (this.state.active ? this.tweens.add({
                     targets: this,
                     grayScaleFactor: 0,
                     animationSpeedFactor: 1,
@@ -96,15 +66,15 @@ c.register('xgS1i', function(d, e) {
                     grayScaleFactor: k.Consts.INACTIVE_GRAY_SCALE_FACTOR,
                     animationSpeedFactor: k.Consts.INACTIVE_ANIMATION_SLOW_DOWN,
                     duration: 350
-                }))), 'fundedAmount' === H && (0, m.AddPriceElement)(this);
-            }), (0, g.default)(this, 'onMessage', H => {
-                H.key !== i.Messages.purchased && H.key !== i.Messages.funded || H && H.data && H.data.characterId && H.data.characterId === (0, v.default)() && (H.key === i.Messages.purchased && this.options.soundEnabled && (0, x.playSound)({
+                }))), 'fundedAmount' === I && (0, m.AddPriceElement)(this);
+            }), (0, g.default)(this, 'onMessage', I => {
+                I.key !== i.Messages.purchased && I.key !== i.Messages.funded || I && I.data && I.data.characterId && I.data.characterId === (0, v.default)() && (I.key === i.Messages.purchased && this.options.soundEnabled && (0, x.playSound)({
                     path: (0, w.default)('devices/vending_machine/purchase.mp3'),
                     volume: (0, y.getVolume)({
                         volume: 0.76,
                         type: y.SoundType.soundEffect
                     })
-                }), H.key === i.Messages.funded && this.options.soundEnabled && (0, x.playSound)({
+                }), I.key === i.Messages.funded && this.options.soundEnabled && (0, x.playSound)({
                     path: (0, w.default)('devices/vending_machine/fund.mp3'),
                     volume: (0, y.getVolume)({
                         volume: 0.8,
@@ -114,8 +84,7 @@ c.register('xgS1i', function(d, e) {
             }), (0, g.default)(this, 'setupVisualEditing', () => {
                 if (!(0, j.InPreGamePhase)() || !(0, D.isSavedVersion)())
                     return;
-                const I = (0, E.FetchOptionSchemaProperty)(this, 'width'),
-                    J = (0, E.FetchOptionSchemaProperty)(this, 'height');
+                const I = (0, E.FetchOptionSchemaProperty)(this, 'width'), J = (0, E.FetchOptionSchemaProperty)(this, 'height');
                 this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
@@ -126,10 +95,10 @@ c.register('xgS1i', function(d, e) {
                     maxHeight: J.max,
                     rotable: !1,
                     keepRatio: !1,
-                    onChange: I => {
-                        (0, F.ReplaceVisualEditingPreview)(I.x, I.y, {
-                            width: I.width,
-                            height: I.height
+                    onChange: K => {
+                        (0, F.ReplaceVisualEditingPreview)(K.x, K.y, {
+                            width: K.width,
+                            height: K.height
                         });
                     }
                 });
@@ -143,10 +112,8 @@ c.register('xgS1i', function(d, e) {
                     maxRadius: I.max,
                     rotable: !1,
                     resizable: !0,
-                    onChange: I => {
-                        (0, F.ReplaceVisualEditingPreview)(I.x, I.y, {
-                            radius: I.radius
-                        });
+                    onChange: J => {
+                        (0, F.ReplaceVisualEditingPreview)(J.x, J.y, { radius: J.radius });
                     }
                 });
             }), (0, j.InPreGamePhase)() && !this.options.activeOnStart && (this.animationSpeedFactor = k.Consts.INACTIVE_ANIMATION_SLOW_DOWN, this.grayScaleFactor = k.Consts.INACTIVE_GRAY_SCALE_FACTOR), (0, j.InGamePhase)() && !this.state.active && (this.animationSpeedFactor = k.Consts.INACTIVE_ANIMATION_SLOW_DOWN, this.grayScaleFactor = k.Consts.INACTIVE_GRAY_SCALE_FACTOR), this.options.visibleInGame ? this.setupVisualEditing() : this.setupVisualEditingInvisible(), (0, C.default)(this), this.options.visibleInGame ? this.options.visibleInGame && this.addFullLook() : (0, j.InPreGamePhase)() && (0, D.isSavedVersion)() ? this.addIconLook() : this.boundingBox.setHardcoded({
@@ -156,12 +123,12 @@ c.register('xgS1i', function(d, e) {
         }
     }
     var _H = G;
-}), c.register('iH+cr', function(d, e) {
+}), c.register('.....', function (d, e) {
     let f;
     var g;
-    a(d.exports, 'GrantAction', function() {
+    a(d.exports, 'GrantAction', function () {
         return f;
-    }), a(d.exports, 'Messages', function() {
+    }), a(d.exports, 'Messages', function () {
         return _h;
     }), (g = f || (f = {})).grantItem = 'Grant Item', g.broadcastOnChannel = 'Broadcast On Channel';
     const _h = {
@@ -169,19 +136,19 @@ c.register('xgS1i', function(d, e) {
         purchased: 'purchased',
         funded: 'funded'
     };
-}), c.register('3Fknw', function(d, e) {
-    a(d.exports, 'Consts', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'Consts', function () {
         return _g;
-    }), a(d.exports, 'Depths', function() {
+    }), a(d.exports, 'Depths', function () {
         return _h;
-    }), a(d.exports, 'REQUIRED_AMOUNT_TEXT_STYLE', function() {
+    }), a(d.exports, 'REQUIRED_AMOUNT_TEXT_STYLE', function () {
         return _i;
-    }), a(d.exports, 'InteractionMessages', function() {
+    }), a(d.exports, 'InteractionMessages', function () {
         return _j;
-    }), a(d.exports, 'GRAYSCALE_COLORS', function() {
+    }), a(d.exports, 'GRAYSCALE_COLORS', function () {
         return _k;
     });
-    var f = c('quE27');
+    var f = c('.....');
     const _g = {
             FRAME_SCALE: 0.4,
             FRAME_MARGINS_NINE_SLICE: 120,
@@ -194,8 +161,7 @@ c.register('xgS1i', function(d, e) {
             RAY_TEXTURE_WIDTH: 39,
             RAY_TEXTURE_HEIGHT: 380,
             PRICE_TEXT_SIZE: 24
-        },
-        _h = {
+        }, _h = {
             BG: 1,
             RAYS: 2,
             LEG: 3,
@@ -203,14 +169,12 @@ c.register('xgS1i', function(d, e) {
             INFO: 5,
             GRANTED_ITEM: 6,
             FRAME: 7
-        },
-        _i = {
+        }, _i = {
             fontSize: `${ _g.PRICE_TEXT_SIZE }px`,
             fontFamily: 'Fugaz One'
-        },
-        _j = {
-            inStock: a => ({
-                message: `In Stock (${ a })`,
+        }, _j = {
+            inStock: k => ({
+                message: `In Stock (${ k })`,
                 color: '#c8e6c9'
             }),
             notEnoughRequiredItem: {
@@ -225,682 +189,577 @@ c.register('xgS1i', function(d, e) {
                 message: 'Not Available',
                 color: '#ffcdd2'
             },
-            fundingStatus: {
-                message: (a, d, c) => `${ (0, f.numberWithCommas)(a) }/${ (0, f.numberWithCommas)(d) } ${ c }`
-            },
+            fundingStatus: { message: (k, l, m) => `${ (0, f.numberWithCommas)(k) }/${ (0, f.numberWithCommas)(l) } ${ m }` },
             defaultItemName: 'Item',
             purchaseAction: 'to purchase',
             fundingAction: 'to fund'
-        },
-        _k = {
+        }, _k = {
             ray: '#CECECE',
             bg1: '#6A6A6A',
             bg2: '#CECECE'
         };
-}), c.register('ndxRd', function(d, e) {
-    a(d.exports, 'AddRays', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'AddRays', function () {
         return _k;
-    }), a(d.exports, 'UpdateRay', function() {
+    }), a(d.exports, 'UpdateRay', function () {
         return _l;
     });
-    var f = c('cNVx1'),
-        g = c('3Fknw'),
-        h = c('TkEMW'),
-        i = (g = c('3Fknw'), c('0EMo0')),
-        j = c('pMcSb');
-    const _k = a => {
-            const l = (0, j.GetColors)(a);
-            for (let m = 0; m < a.options.numberOfRays; m++)
-                a.parts.add.sprite({
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = (g = c('.....'), c('.....')), j = c('.....');
+    const _k = l => {
+            const m = (0, j.GetColors)(l);
+            for (let n = 0; n < l.options.numberOfRays; n++)
+                l.parts.add.sprite({
                     imageId: h.RayAsset.imageId,
                     imageUrl: h.RayAsset.imageUrl,
                     y: -20,
                     originX: 0.5,
                     originY: 1,
                     ignoreInput: !0,
-                    depthChange: (0, i.GetDepthChange)(a, g.Depths.RAYS),
-                    onReady: e => {
-                        a.rays.push(e), _l(a, e, m), e.view.alpha = a.options.raysAlpha, e.view.blendMode = a.options.raysAdditive ? 1 : 0, e.view.tint = (0, f.GetNumberFromHexColor)(l.rays), m === a.options.numberOfRays - 1 && (0, j.UpdateColors)(a, !0);
+                    depthChange: (0, i.GetDepthChange)(l, g.Depths.RAYS),
+                    onReady: o => {
+                        l.rays.push(o), _l(l, o, n), o.view.alpha = l.options.raysAlpha, o.view.blendMode = l.options.raysAdditive ? 1 : 0, o.view.tint = (0, f.GetNumberFromHexColor)(m.rays), n === l.options.numberOfRays - 1 && (0, j.UpdateColors)(l, !0);
                     }
                 });
-        },
-        _l = (a, d, c) => {
-            const m = c * (2 * Math.PI / a.options.numberOfRays) + a.currentRaysAngle;
-            d.view.rotation = m;
-            const n = m,
-                o = Math.atan(19.5 * a.options.raysWidthFactor / 380),
-                p = a.options.width / 2,
-                q = (a.options.height - g.Consts.LEGS_HEIGHT) / 2;
-            const r = Math.min(Math.abs(q / Math.cos(n - o)), Math.abs(p / Math.cos(Math.PI / 2 - n - o)), Math.abs(q / Math.cos(n + o)), Math.abs(p / Math.cos(Math.PI / 2 - n + o))) / 380;
-            d.view.scaleY = r, d.view.scaleX = r * a.options.raysWidthFactor;
+        }, _l = (m, n, o) => {
+            const p = o * (2 * Math.PI / m.options.numberOfRays) + m.currentRaysAngle;
+            n.view.rotation = p;
+            const q = p, r = Math.atan(19.5 * m.options.raysWidthFactor / 380), s = m.options.width / 2, t = (m.options.height - g.Consts.LEGS_HEIGHT) / 2;
+            const u = Math.min(Math.abs(t / Math.cos(q - r)), Math.abs(s / Math.cos(Math.PI / 2 - q - r)), Math.abs(t / Math.cos(q + r)), Math.abs(s / Math.cos(Math.PI / 2 - q + r))) / 380;
+            n.view.scaleY = u, n.view.scaleX = u * m.options.raysWidthFactor;
         };
-}), c.register('TkEMW', function(d, e) {
-    a(d.exports, 'BgAAsset', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'BgAAsset', function () {
         return _g;
-    }), a(d.exports, 'BgBAsset', function() {
+    }), a(d.exports, 'BgBAsset', function () {
         return _h;
-    }), a(d.exports, 'RayAsset', function() {
+    }), a(d.exports, 'RayAsset', function () {
         return _i;
-    }), a(d.exports, 'FrameAsset', function() {
+    }), a(d.exports, 'FrameAsset', function () {
         return _j;
-    }), a(d.exports, 'LegAsset', function() {
+    }), a(d.exports, 'LegAsset', function () {
         return _k;
-    }), a(d.exports, 'InfoAsset', function() {
+    }), a(d.exports, 'InfoAsset', function () {
         return _l;
-    }), a(d.exports, 'IconAsset', function() {
+    }), a(d.exports, 'IconAsset', function () {
         return _m;
     });
-    var f = c('UaUBz0');
+    var f = c('.....');
     const _g = {
             imageId: 'vending_machine_bg_a',
             imageUrl: (0, f.default)('devices/vending_machine/bg_a.png')
-        },
-        _h = {
+        }, _h = {
             imageId: 'vending_machine_bg_b',
             imageUrl: (0, f.default)('devices/vending_machine/bg_b.png')
-        },
-        _i = ((0, f.default)('devices/vending_machine/rays.png'), {
+        }, _i = ((0, f.default)('devices/vending_machine/rays.png'), {
             imageId: 'vending_machine_ray',
             imageUrl: (0, f.default)('devices/vending_machine/ray.png')
-        }),
-        _j = {
+        }), _j = {
             imageId: 'vending_machine_frame',
             imageUrl: (0, f.default)('devices/vending_machine/frame.png')
-        },
-        _k = {
+        }, _k = {
             imageId: 'vending_machine_leg',
             imageUrl: (0, f.default)('devices/vending_machine/leg.png')
-        },
-        _l = {
+        }, _l = {
             imageId: 'vending_machine_info',
             imageUrl: (0, f.default)('devices/vending_machine/info.png')
-        },
-        _m = {
+        }, _m = {
             imageId: 'vending_machine_icon',
             imageUrl: (0, f.default)('devices/vending_machine/previewIcon.png')
         };
     (0, f.default)('devices/item_granter/question-mark-2.png');
-}), c.register('0EMo0', function(d, e) {
-    a(d.exports, 'GetDepthChange', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'GetDepthChange', function () {
         return _g;
     });
-    var f = c('H4eGM');
-    const _g = (a, d) => a.options.height / 2 + (0, f.default)(d);
-}), c.register('pMcSb', function(d, e) {
-    a(d.exports, 'GetColors', function() {
+    var f = c('.....');
+    const _g = (h, i) => h.options.height / 2 + (0, f.default)(i);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'GetColors', function () {
         return _o;
-    }), a(d.exports, 'InitColors', function() {
+    }), a(d.exports, 'InitColors', function () {
         return _p;
-    }), a(d.exports, 'UpdateColors', function() {
+    }), a(d.exports, 'UpdateColors', function () {
         return _q;
     });
-    var f = c('BYiVP'),
-        g = c('4eTy+'),
-        h = c('cNVx1'),
-        i = c('OsQuU'),
-        j = c('SAYZy'),
-        k = c('3Fknw'),
-        l = c('iH+cr');
-    const m = (a, d) => {
-            const n = Phaser.Display.Color.HexStringToColor(a);
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    const m = (n, o) => {
+            const p = Phaser.Display.Color.HexStringToColor(n);
             return {
-                grayscale: Phaser.Display.Color.HexStringToColor(d),
-                color: n
+                grayscale: Phaser.Display.Color.HexStringToColor(o),
+                color: p
             };
-        },
-        n = (a, d) => {
-            const o = {
-                red: Math.round(Phaser.Math.Linear(a.color.red, a.grayscale.red, d)),
-                green: Math.round(Phaser.Math.Linear(a.color.green, a.grayscale.green, d)),
-                blue: Math.round(Phaser.Math.Linear(a.color.blue, a.grayscale.blue, d))
+        }, n = (o, p) => {
+            const q = {
+                red: Math.round(Phaser.Math.Linear(o.color.red, o.grayscale.red, p)),
+                green: Math.round(Phaser.Math.Linear(o.color.green, o.grayscale.green, p)),
+                blue: Math.round(Phaser.Math.Linear(o.color.blue, o.grayscale.blue, p))
             };
-            return (0, h.GetNumberFromHexColor)((0, j.rgbToColorString)(o));
-        },
-        _o = a => {
-            if (a.options.grantAction === l.GrantAction.grantItem && a.options.matchItemRarity) {
-                const p = (0, i.FetchItemOption)(a.options.grantedItemId);
-                var q;
-                const r = null !== (q = null == p ? void 0 : p.rarity) && void 0 !== q ? q : g.InventoryItemRarity.common,
-                    s = f.InventoryRarityColorsHex[r];
+            return (0, h.GetNumberFromHexColor)((0, j.rgbToColorString)(q));
+        }, _o = p => {
+            if (p.options.grantAction === l.GrantAction.grantItem && p.options.matchItemRarity) {
+                const q = (0, i.FetchItemOption)(p.options.grantedItemId);
+                var r;
+                const s = null !== (r = null == q ? void 0 : q.rarity) && void 0 !== r ? r : g.InventoryItemRarity.common, t = f.InventoryRarityColorsHex[s];
                 return {
-                    rays: s.a,
-                    bg1: s.b,
-                    bg2: s.a
+                    rays: t.a,
+                    bg1: t.b,
+                    bg2: t.a
                 };
             }
             return {
-                rays: a.options.raysColor,
-                bg1: a.options.backgroundColor1,
-                bg2: a.options.backgroundColor2
+                rays: p.options.raysColor,
+                bg1: p.options.backgroundColor1,
+                bg2: p.options.backgroundColor2
             };
-        },
-        _p = a => {
-            const q = _o(a);
-            a.raysGrayscale = m(q.rays, k.GRAYSCALE_COLORS.ray), a.bg1Grayscale = m(q.bg1, k.GRAYSCALE_COLORS.bg1), a.bg2Grayscale = m(q.bg2, k.GRAYSCALE_COLORS.bg2);
-        },
-        _q = (a, r = !1) => {
-            var s, t, u, v;
-            if (a.lastGrayscaleFactorUpdate === a.grayScaleFactor && !r)
+        }, _p = q => {
+            const r = _o(q);
+            q.raysGrayscale = m(r.rays, k.GRAYSCALE_COLORS.ray), q.bg1Grayscale = m(r.bg1, k.GRAYSCALE_COLORS.bg1), q.bg2Grayscale = m(r.bg2, k.GRAYSCALE_COLORS.bg2);
+        }, _q = (r, s = !1) => {
+            var t, u, v, w;
+            if (r.lastGrayscaleFactorUpdate === r.grayScaleFactor && !s)
                 return;
-            a.lastGrayscaleFactorUpdate = a.grayScaleFactor, a.raysGrayscale || _p(a);
-            const w = n(a.raysGrayscale, a.grayScaleFactor),
-                x = n(a.bg1Grayscale, a.grayScaleFactor),
-                y = n(a.bg2Grayscale, a.grayScaleFactor);
-            a.rays.forEach(a => {
-                a.view.tint = w;
-            }), null === (s = a.bg1) || void 0 === s || null === (t = s.view) || void 0 === t || t.setTint(x), null === (u = a.bg2) || void 0 === u || null === (v = u.view) || void 0 === v || v.setTint(y);
+            r.lastGrayscaleFactorUpdate = r.grayScaleFactor, r.raysGrayscale || _p(r);
+            const x = n(r.raysGrayscale, r.grayScaleFactor), y = n(r.bg1Grayscale, r.grayScaleFactor), z = n(r.bg2Grayscale, r.grayScaleFactor);
+            r.rays.forEach(A => {
+                A.view.tint = x;
+            }), null === (t = r.bg1) || void 0 === t || null === (u = t.view) || void 0 === u || u.setTint(y), null === (v = r.bg2) || void 0 === v || null === (w = v.view) || void 0 === w || w.setTint(z);
         };
-}), c.register('colFa', function(d, e) {
-    a(d.exports, 'AddPriceElement', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'AddPriceElement', function () {
         return _l;
     });
-    var f = c('3Fknw'),
-        g = c('TkEMW'),
-        h = (f = c('3Fknw'), c('0EMo0')),
-        i = c('QyPlq'),
-        j = c('bMaPZ2'),
-        k = c('UgeNz');
-    const _l = a => {
-        if (!a.options.visibleInGame)
+    var f = c('.....'), g = c('.....'), h = (f = c('.....'), c('.....')), i = c('.....'), j = c('.....'), k = c('.....');
+    const _l = m => {
+        if (!m.options.visibleInGame)
             return;
-        const m = a.options.height / 2 - 90;
-        a.priceAreaInfoRectangle || (a.priceAreaInfoRectangle = a.parts.add.sprite({
+        const n = m.options.height / 2 - 90;
+        m.priceAreaInfoRectangle || (m.priceAreaInfoRectangle = m.parts.add.sprite({
             ...g.InfoAsset,
-            y: m,
-            depthChange: (0, h.GetDepthChange)(a, f.Depths.INFO_BG)
+            y: n,
+            depthChange: (0, h.GetDepthChange)(m, f.Depths.INFO_BG)
         })), (0, j.default)({
             familyName: f.REQUIRED_AMOUNT_TEXT_STYLE.fontFamily,
             onLoad: () => {
-                const n = (0, k.default)(a);
-                if (a.priceText)
-                    a.priceText.view.setText(n);
+                const o = (0, k.default)(m);
+                if (m.priceText)
+                    m.priceText.view.setText(o);
                 else {
-                    const o = a.parts.add.text({
-                        text: (0, k.default)(a),
-                        y: m,
-                        depthChange: (0, h.GetDepthChange)(a, f.Depths.INFO),
+                    const p = m.parts.add.text({
+                        text: (0, k.default)(m),
+                        y: n,
+                        depthChange: (0, h.GetDepthChange)(m, f.Depths.INFO),
                         textStyle: f.REQUIRED_AMOUNT_TEXT_STYLE
                     });
-                    a.priceText = o;
+                    m.priceText = p;
                 }
-                a.updateFontSize();
-                const o = f.Consts.REQUIRED_ITEM_MAX_SIZE,
-                    p = n => {
-                        n.view.y = a.y + m;
-                        const q = a.priceText.getBounds().width,
-                            r = o + q + 7;
-                        n.view.x = -r / 2 + o / 2 + a.x, a.priceText.view.x = r / 2 - q / 2 + a.x;
+                m.updateFontSize();
+                const q = f.Consts.REQUIRED_ITEM_MAX_SIZE, r = s => {
+                        s.view.y = m.y + n;
+                        const t = m.priceText.getBounds().width, u = q + t + 7;
+                        s.view.x = -u / 2 + q / 2 + m.x, m.priceText.view.x = u / 2 - t / 2 + m.x;
                     };
-                a.requiredImage ? p(a.requiredImage) : a.requiredImage = (0, i.AddItemImage)(a, a.options.requiredItemId, o, 0.8 * f.Consts.PRICE_HEIGHT, f.Depths.INFO, a => {
-                    p(a);
+                m.requiredImage ? r(m.requiredImage) : m.requiredImage = (0, i.AddItemImage)(m, m.options.requiredItemId, q, 0.8 * f.Consts.PRICE_HEIGHT, f.Depths.INFO, s => {
+                    r(s);
                 });
             }
         });
     };
-}), c.register('QyPlq', function(d, e) {
-    a(d.exports, 'AddItemImage', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'AddItemImage', function () {
         return _l;
     });
-    var f = c('fI6of'),
-        g = c('+7143'),
-        h = c('bwSO3'),
-        i = c('T6zrb'),
-        j = c('0EMo0'),
-        k = c('QwL62');
-    const _l = (a, d, c, e, _l, _q) => {
-        const m = {
-            ...i.UnknownItemAsset
-        };
-        if (d) {
-            const n = f.default.worldOptions.itemOptions.find(n => n.id === d);
-            n && (m.imageId = n.id, m.imageUrl = n.previewImage);
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    const _l = (m, n, o, p, q, r) => {
+        const s = { ...i.UnknownItemAsset };
+        if (n) {
+            const t = f.default.worldOptions.itemOptions.find(u => u.id === n);
+            t && (s.imageId = t.id, s.imageUrl = t.previewImage);
         }
-        const n = (0, g.default)(m.imageId),
-            o = (0, h.default)({
-                height: n.height,
-                width: n.width,
-                newWidth: e,
-                newHeight: c
+        const u = (0, g.default)(s.imageId), v = (0, h.default)({
+                height: u.height,
+                width: u.width,
+                newWidth: p,
+                newHeight: o
             });
-        return a.parts.add.sprite({
-            imageId: m.imageId,
-            imageUrl: m.imageUrl,
-            depthChange: (0, j.GetDepthChange)(a, _l),
-            displayWidth: o.width,
-            displayHeight: o.height,
-            onReady: d => {
-                a.grayScaleFactor > 0 && (0, k.AddGrayscalePipeline)(a, d), _q && _q(d);
+        return t.parts.add.sprite({
+            imageId: s.imageId,
+            imageUrl: s.imageUrl,
+            depthChange: (0, j.GetDepthChange)(t, q),
+            displayWidth: v.width,
+            displayHeight: v.height,
+            onReady: w => {
+                t.grayScaleFactor > 0 && (0, k.AddGrayscalePipeline)(t, w), r && r(w);
             }
         });
     };
-}), c.register('T6zrb', function(d, e) {
-    a(d.exports, 'BaseAsset', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'BaseAsset', function () {
         return _g;
-    }), a(d.exports, 'UnknownItemAsset', function() {
+    }), a(d.exports, 'UnknownItemAsset', function () {
         return _h;
     });
-    var f = c('UaUBz0');
+    var f = c('.....');
     const _g = {
             imageId: (0, f.default)('devices/item_granter/base.png'),
             imageUrl: (0, f.default)('devices/item_granter/base.png')
-        },
-        _h = {
+        }, _h = {
             imageId: '__UNKNOWN_ITEM',
             imageUrl: (0, f.default)('devices/item_granter/question-mark-2.png')
         };
-}), c.register('QwL62', function(d, e) {
-    a(d.exports, 'AddGrayscalePipeline', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'AddGrayscalePipeline', function () {
         return _f;
-    }), a(d.exports, 'UpdateGrayscalePipelines', function() {
+    }), a(d.exports, 'UpdateGrayscalePipelines', function () {
         return _h;
     });
-    const _f = (a, d) => {
-            a.grayScalePipelines.push(a.scene.plugins.get('rexGrayScalePipeline').add(d.view, {
-                intensity: a.grayScaleFactor
-            }));
-        },
-        g = (a, d) => {
-            a.scene.plugins.get('rexGrayScalePipeline').remove(d.view);
-        },
-        _h = a => {
-            a.grayScaleFactor > 0 ? ((a => {
-                var i, j;
-                a.grayScalePipelines.length > 0 || ((null === (i = a.requiredImage) || void 0 === i ? void 0 : i.view) && _f(a, a.requiredImage), (null === (j = a.grantedImage) || void 0 === j ? void 0 : j.view) && _f(a, a.grantedImage));
-            })(a), a.grayScalePipelines.forEach(d => {
-                d.intensity = a.grayScaleFactor;
-            })) : (a => {
-                var i, j;
-                0 !== a.grayScalePipelines.length && ((null === (i = a.requiredImage) || void 0 === i ? void 0 : i.view) && g(a, a.requiredImage), (null === (j = a.grantedImage) || void 0 === j ? void 0 : j.view) && g(a, a.grantedImage), a.grayScalePipelines = []);
-            })(a);
+    const _f = (g, h) => {
+            g.grayScalePipelines.push(g.scene.plugins.get('rexGrayScalePipeline').add(h.view, { intensity: g.grayScaleFactor }));
+        }, g = (h, i) => {
+            h.scene.plugins.get('rexGrayScalePipeline').remove(i.view);
+        }, _h = i => {
+            i.grayScaleFactor > 0 ? ((j => {
+                var k, l;
+                j.grayScalePipelines.length > 0 || ((null === (k = j.requiredImage) || void 0 === k ? void 0 : k.view) && _f(j, j.requiredImage), (null === (l = j.grantedImage) || void 0 === l ? void 0 : l.view) && _f(j, j.grantedImage));
+            })(i), i.grayScalePipelines.forEach(j => {
+                j.intensity = i.grayScaleFactor;
+            })) : (j => {
+                var k, l;
+                0 !== j.grayScalePipelines.length && ((null === (k = j.requiredImage) || void 0 === k ? void 0 : k.view) && g(j, j.requiredImage), (null === (l = j.grantedImage) || void 0 === l ? void 0 : l.view) && g(j, j.grantedImage), j.grayScalePipelines = []);
+            })(i);
         };
-}), c.register('bMaPZ2', function(d, e) {
-    a(d.exports, 'isGoogleFontLoaded', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function () {
         return _h;
-    }), a(d.exports, 'default', function() {
+    }), a(d.exports, 'default', function () {
         return _i;
     });
-    var f = c('TptDc');
-    const g = [],
-        _h = a => g.includes(a);
-    var _i = a => {
+    var f = c('.....');
+    const g = [], _h = i => g.includes(i);
+    var _i = j => {
         const {
-            familyName: j,
-            onLoad: k
-        } = a;
-        g.includes(j) ? k && k() : b(f).load({
-            google: {
-                families: [`${ j }:400,700`]
-            },
-            fontactive: a => {
-                g.includes(a) || g.push(a), j === a && k && k();
+            familyName: k,
+            onLoad: l
+        } = j;
+        g.includes(k) ? l && l() : b(f).load({
+            google: { families: [`${ k }:400,700`] },
+            fontactive: m => {
+                g.includes(m) || g.push(m), k === m && l && l();
             }
         });
     };
-}), c.register('UgeNz', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _h;
     });
-    var f = c('quE27'),
-        g = c('D0Q5k');
-    var _h = a => {
-        let i = `${ (0, f.numberWithCommas)((0, g.GetCost)(a)) }`;
-        return a.options.allowFunding ? `${ (0, f.numberWithCommas)(a.state.fundedAmount || 0) } / ${ i }` : i;
+    var f = c('.....'), g = c('.....');
+    var _h = i => {
+        let j = `${ (0, f.numberWithCommas)((0, g.GetCost)(i)) }`;
+        return i.options.allowFunding ? `${ (0, f.numberWithCommas)(i.state.fundedAmount || 0) } / ${ j }` : j;
     };
-}), c.register('D0Q5k', function(d, e) {
-    a(d.exports, 'GetCost', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'GetCost', function () {
         return _g;
     });
-    var f = c('UkCpC');
-    const _g = a => {
-        return (0, f.InPreGamePhase)() ? a.options.amountOfRequiredItem : null !== (d = a.state.cost) && void 0 !== d ? d : a.options.amountOfRequiredItem;
-        var h;
+    var f = c('.....');
+    const _g = h => {
+        return (0, f.InPreGamePhase)() ? h.options.amountOfRequiredItem : null !== (d = h.state.cost) && void 0 !== d ? d : h.options.amountOfRequiredItem;
+        var i;
     };
-}), c.register('X7kIM', function(d, e) {
-    a(d.exports, 'AddMachineBody', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'AddMachineBody', function () {
         return _l;
     });
-    var f = c('cNVx1'),
-        g = c('TkEMW'),
-        h = c('3Fknw'),
-        i = c('pMcSb'),
-        j = c('0EMo0'),
-        k = c('UCu0V');
-    const _l = a => {
-        const m = -h.Consts.LEGS_HEIGHT / 2,
-            n = {
-                displayWidth: a.options.width - 20,
-                displayHeight: a.options.height - 20 - h.Consts.LEGS_HEIGHT,
-                depthChange: (0, j.GetDepthChange)(a, h.Depths.BG),
-                y: m
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    const _l = m => {
+        const n = -h.Consts.LEGS_HEIGHT / 2, o = {
+                displayWidth: m.options.width - 20,
+                displayHeight: m.options.height - 20 - h.Consts.LEGS_HEIGHT,
+                depthChange: (0, j.GetDepthChange)(m, h.Depths.BG),
+                y: n
             };
-        a.options.showShadow && !(0, k.isPlatformer)() && a.shadows.add({
-            r1: a.options.width / 2 + 20,
+        m.options.showShadow && !(0, k.isPlatformer)() && m.shadows.add({
+            r1: m.options.width / 2 + 20,
             r2: 60,
-            y: a.options.height / 2 - 20
+            y: m.options.height / 2 - 20
         });
-        const o = (0, i.GetColors)(a);
-        a.parts.add.sprite({
+        const p = (0, i.GetColors)(m);
+        m.parts.add.sprite({
             ...g.BgAAsset,
-            ...n,
-            onReady: m => {
-                a.bg1 = m, m.view.setTint((0, f.GetNumberFromHexColor)(o.bg1)), (0, i.UpdateColors)(a, !0);
+            ...o,
+            onReady: q => {
+                m.bg1 = q, q.view.setTint((0, f.GetNumberFromHexColor)(p.bg1)), (0, i.UpdateColors)(m, !0);
             }
-        }), a.parts.add.sprite({
+        }), m.parts.add.sprite({
             ...g.BgBAsset,
-            ...n,
+            ...o,
             ignoreInput: !0,
-            onReady: m => {
-                a.bg2 = m, m.view.setTint((0, f.GetNumberFromHexColor)(o.bg2)), (0, i.UpdateColors)(a, !0);
+            onReady: q => {
+                m.bg2 = q, q.view.setTint((0, f.GetNumberFromHexColor)(p.bg2)), (0, i.UpdateColors)(m, !0);
             }
         });
-        const p = {
+        const q = {
                 ...g.LegAsset,
-                y: a.options.height / 2 + m - 2,
-                depthChange: (0, j.GetDepthChange)(a, h.Depths.LEG)
-            },
-            _q = -a.options.width / 2 + 60;
-        a.parts.add.sprite({
-            ...p,
-            x: _q
-        }), a.parts.add.sprite({
-            ...p,
-            x: -_q,
+                y: m.options.height / 2 + n - 2,
+                depthChange: (0, j.GetDepthChange)(m, h.Depths.LEG)
+            }, r = -m.options.width / 2 + 60;
+        m.parts.add.sprite({
+            ...q,
+            x: r
+        }), m.parts.add.sprite({
+            ...q,
+            x: -r,
             flipX: !0
         });
-        const r = h.Consts.FRAME_MARGINS_NINE_SLICE;
-        a.parts.add.ninePatch({
+        const s = h.Consts.FRAME_MARGINS_NINE_SLICE;
+        m.parts.add.ninePatch({
             columns: [
-                r,
-                r
+                s,
+                s
             ],
             rows: [
-                r,
-                r
+                s,
+                s
             ],
-            y: m,
+            y: n,
             scale: h.Consts.FRAME_SCALE,
-            height: a.options.height - h.Consts.LEGS_HEIGHT,
-            width: a.options.width,
-            depthChange: (0, j.GetDepthChange)(a, h.Depths.FRAME),
+            height: m.options.height - h.Consts.LEGS_HEIGHT,
+            width: m.options.width,
+            depthChange: (0, j.GetDepthChange)(m, h.Depths.FRAME),
             imageUrl: g.FrameAsset.imageUrl
         });
     };
-}), c.register('omrib', function(d, e) {
-    a(d.exports, 'AddColliders', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'AddColliders', function () {
         return _g;
     });
-    var f = c('3Fknw');
-    const _g = a => {
-        a.colliders.add.box({
+    var f = c('.....');
+    const _g = h => {
+        h.colliders.add.box({
             x: 0,
             y: 5 - f.Consts.LEGS_HEIGHT + f.Consts.LEGS_HEIGHT / 2,
-            w: a.options.width,
-            h: a.options.height - f.Consts.LEGS_HEIGHT + 10
+            w: h.options.width,
+            h: h.options.height - f.Consts.LEGS_HEIGHT + 10
         });
     };
-}), c.register('K2ru3', function(d, e) {
-    a(d.exports, 'AddImageFromUrl', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'AddImageFromUrl', function () {
         return _l;
     });
-    var f = c('+7143'),
-        g = c('bwSO3'),
-        h = c('3Fknw'),
-        i = c('0EMo0'),
-        j = c('QwL62'),
-        k = c('4pQyd');
-    const _l = a => {
-        const m = (0, k.GetImageUrl)(a.options.grantedItemImageUrl);
-        return a.parts.add.sprite({
-            imageId: m,
-            imageUrl: m,
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    const _l = m => {
+        const n = (0, k.GetImageUrl)(m.options.grantedItemImageUrl);
+        return m.parts.add.sprite({
+            imageId: n,
+            imageUrl: n,
             y: -h.Consts.LEGS_HEIGHT / 2,
-            depthChange: (0, i.GetDepthChange)(a, h.Depths.GRANTED_ITEM),
-            onReady: c => {
-                const n = (0, f.default)(m),
-                    o = (0, g.default)({
-                        height: n.height,
-                        width: n.width,
-                        newWidth: Math.min(h.Consts.ITEM_MAX_SIZE, 0.7 * a.options.width),
-                        newHeight: Math.min(h.Consts.ITEM_MAX_SIZE, 0.4 * a.options.height - h.Consts.PRICE_HEIGHT)
+            depthChange: (0, i.GetDepthChange)(m, h.Depths.GRANTED_ITEM),
+            onReady: o => {
+                const p = (0, f.default)(n), q = (0, g.default)({
+                        height: p.height,
+                        width: p.width,
+                        newWidth: Math.min(h.Consts.ITEM_MAX_SIZE, 0.7 * m.options.width),
+                        newHeight: Math.min(h.Consts.ITEM_MAX_SIZE, 0.4 * m.options.height - h.Consts.PRICE_HEIGHT)
                     });
-                c.view.setDisplaySize(o.width, o.height), a.grayScaleFactor > 0 && (0, j.AddGrayscalePipeline)(a, c);
+                o.view.setDisplaySize(q.width, q.height), m.grayScaleFactor > 0 && (0, j.AddGrayscalePipeline)(m, o);
             }
         });
     };
-}), c.register('lnsH90', function(d, e) {
-    a(d.exports, 'TextPadding', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'TextPadding', function () {
         return _f;
     });
     const _f = () => 4;
-}), c.register('GpPqI', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _n;
     });
-    var f = c('V7S+o'),
-        g = c('L2YJu'),
-        h = c('mBmBg'),
-        i = c('guo2p'),
-        j = c('QjxHN'),
-        k = c('12Pmw'),
-        l = c('e1v/m'),
-        m = c('3Cbxw');
-    var _n = (a, d) => {
-        if ((0, l.default)(a))
-            return void a.interactiveZones.setForceDisabled(!0);
-        if (a.interactiveZones.setForceDisabled(!1), !(0, f.IsCurrentInteractive)(a.id) && !d)
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....');
+    var _n = (o, p) => {
+        if ((0, l.default)(o))
+            return void o.interactiveZones.setForceDisabled(!0);
+        if (o.interactiveZones.setForceDisabled(!1), !(0, f.IsCurrentInteractive)(o.id) && !p)
             return;
-        const o = (0, m.default)(a),
-            p = {
-                message: (0, k.default)(a),
-                action: (0, g.default)(a),
-                topHeader: null == o ? void 0 : o.text,
-                topHeaderColor: null == o ? void 0 : o.color,
-                bottomHeader: (0, i.default)(a),
-                duration: (0, j.default)(a),
-                allowedToInteract: (0, h.default)(a)
+        const q = (0, m.default)(o), r = {
+                message: (0, k.default)(o),
+                action: (0, g.default)(o),
+                topHeader: null == q ? void 0 : q.text,
+                topHeaderColor: null == q ? void 0 : q.color,
+                bottomHeader: (0, i.default)(o),
+                duration: (0, j.default)(o),
+                allowedToInteract: (0, h.default)(o)
             };
-        a.interactiveZones.setInfo(p);
+        o.interactiveZones.setInfo(r);
     };
-}), c.register('V7S+o', function(d, e) {
-    a(d.exports, 'IsCurrentInteractive', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'IsCurrentInteractive', function () {
         return _g;
     });
-    var f = c('heTaO');
-    const _g = a => {
-        var h;
-        return (null === (h = (0, f.default)().worldManager.devices.interactives.currentDevice) || void 0 === h ? void 0 : h.id) === a;
+    var f = c('.....');
+    const _g = h => {
+        var i;
+        return (null === (i = (0, f.default)().worldManager.devices.interactives.currentDevice) || void 0 === i ? void 0 : i.id) === h;
     };
-}), c.register('L2YJu', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _i;
     });
-    var f = c('3Fknw'),
-        g = c('f2D53'),
-        h = c('mUaLY');
-    var _i = a => {
-        const j = (0, g.VendingMachineDeviceAmountRequiredToPurchase)(a),
-            k = (0, g.VendingMachineDeviceAmountOfRequiredItemIHave)(a);
-        return (0, h.VendingMachineDeviceFundingIsEnabled)(a) && k < j ? f.InteractionMessages.fundingAction : f.InteractionMessages.purchaseAction;
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    var _i = j => {
+        const k = (0, g.VendingMachineDeviceAmountRequiredToPurchase)(j), l = (0, g.VendingMachineDeviceAmountOfRequiredItemIHave)(j);
+        return (0, h.VendingMachineDeviceFundingIsEnabled)(j) && l < k ? f.InteractionMessages.fundingAction : f.InteractionMessages.purchaseAction;
     };
-}), c.register('f2D53', function(d, e) {
-    a(d.exports, 'VendingMachineDeviceAmountRequiredToPurchase', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'VendingMachineDeviceAmountRequiredToPurchase', function () {
         return _i;
-    }), a(d.exports, 'VendingMachineDeviceAmountOfRequiredItemIHave', function() {
+    }), a(d.exports, 'VendingMachineDeviceAmountOfRequiredItemIHave', function () {
         return _j;
     });
-    var f = c('fI6of'),
-        g = c('D0Q5k'),
-        h = c('mUaLY');
-    const _i = a => Math.max(0, (0, g.GetCost)(a) - ((0, h.VendingMachineDeviceFundingIsEnabled)(a) && a.state.fundedAmount || 0)),
-        _j = a => {
-            let k = 0;
-            const l = f.default.me.inventory.slots.get(a.options.requiredItemId);
-            return l && (k = l.amount), k;
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    const _i = j => Math.max(0, (0, g.GetCost)(j) - ((0, h.VendingMachineDeviceFundingIsEnabled)(j) && j.state.fundedAmount || 0)), _j = k => {
+            let l = 0;
+            const m = f.default.me.inventory.slots.get(k.options.requiredItemId);
+            return m && (l = m.amount), l;
         };
-}), c.register('mUaLY', function(d, e) {
-    a(d.exports, 'VendingMachineDeviceFundingIsEnabled', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'VendingMachineDeviceFundingIsEnabled', function () {
         return _f;
     });
-    const _f = a => a.options.allowFunding;
-}), c.register('mBmBg', function(d, e) {
-    a(d.exports, 'default', function() {
+    const _f = g => g.options.allowFunding;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _h;
     });
-    var f = c('f2D53'),
-        g = c('mUaLY');
-    var _h = a => {
-        if (!a.state.active)
+    var f = c('.....'), g = c('.....');
+    var _h = i => {
+        if (!i.state.active)
             return !1;
-        if (a.options.useLimitedStock && a.state.currentStock <= 0)
+        if (i.options.useLimitedStock && i.state.currentStock <= 0)
             return !1;
-        const i = (0, f.VendingMachineDeviceAmountRequiredToPurchase)(a),
-            j = (0, f.VendingMachineDeviceAmountOfRequiredItemIHave)(a);
-        return (0, g.VendingMachineDeviceFundingIsEnabled)(a) ? !!j : !(j < i);
+        const j = (0, f.VendingMachineDeviceAmountRequiredToPurchase)(i), k = (0, f.VendingMachineDeviceAmountOfRequiredItemIHave)(i);
+        return (0, g.VendingMachineDeviceFundingIsEnabled)(i) ? !!k : !(k < j);
     };
-}), c.register('guo2p', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _f;
     });
-    var _f = a => {
-        var g;
-        const h = null === (g = a.options.grantedItemDescription) || void 0 === g ? void 0 : g.trim();
-        if (null == h ? void 0 : h.length)
-            return h;
+    var _f = g => {
+        var h;
+        const i = null === (h = g.options.grantedItemDescription) || void 0 === h ? void 0 : h.trim();
+        if (null == i ? void 0 : i.length)
+            return i;
     };
-}), c.register('QjxHN', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _g;
     });
-    var f = c('f2D53');
-    var _g = a => {
-        const h = (0, f.VendingMachineDeviceAmountOfRequiredItemIHave)(a);
-        return (0, f.VendingMachineDeviceAmountOfRequiredItemIHave)(a) >= h ? a.options.interactionDuration : 1;
+    var f = c('.....');
+    var _g = h => {
+        const i = (0, f.VendingMachineDeviceAmountOfRequiredItemIHave)(h);
+        return (0, f.VendingMachineDeviceAmountOfRequiredItemIHave)(h) >= i ? h.options.interactionDuration : 1;
     };
-}), c.register('12Pmw', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _k;
     });
-    var f = c('quE27'),
-        g = c('G0Kso'),
-        h = c('3Fknw'),
-        i = c('iH+cr'),
-        j = c('D0Q5k');
-    var _k = a => {
-        var l;
-        let m = null === (l = a.options.grantedItemName) || void 0 === l ? void 0 : l.trim();
-        return m || a.options.grantAction !== i.GrantAction.grantItem || (m = (0, g.ItemName)(a.options.grantedItemId)), m || (m = h.InteractionMessages.defaultItemName), a.options.grantAction === i.GrantAction.grantItem && !a.options.visibleInGame && a.options.attachCostToNameWhenHidden && a.options.requiredItemId && (0, j.GetCost)(a) ? `${ m } - ${ (0, f.numberWithCommas)(a.options.amountOfRequiredItem) } ${ (0, g.ItemName)(a.options.requiredItemId) }` : m;
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var _k = l => {
+        var m;
+        let n = null === (m = l.options.grantedItemName) || void 0 === m ? void 0 : m.trim();
+        return n || l.options.grantAction !== i.GrantAction.grantItem || (n = (0, g.ItemName)(l.options.grantedItemId)), n || (n = h.InteractionMessages.defaultItemName), l.options.grantAction === i.GrantAction.grantItem && !l.options.visibleInGame && l.options.attachCostToNameWhenHidden && l.options.requiredItemId && (0, j.GetCost)(l) ? `${ n } - ${ (0, f.numberWithCommas)(l.options.amountOfRequiredItem) } ${ (0, g.ItemName)(l.options.requiredItemId) }` : n;
     };
-}), c.register('e1v/m', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _h;
     });
-    var f = c('G2BYq'),
-        g = c('09Gub');
-    var _h = a => !a.options.visibleInGame && !a.state.active || !(!a.options.allowedPurchaseTeam || a.options.allowedPurchaseTeam === f.ANY_TEAM_DEVICE_OPTION || (0, g.default)() === a.options.allowedPurchaseTeam);
-}), c.register('3Cbxw', function(d, e) {
-    a(d.exports, 'default', function() {
+    var f = c('.....'), g = c('.....');
+    var _h = i => !i.options.visibleInGame && !i.state.active || !(!i.options.allowedPurchaseTeam || i.options.allowedPurchaseTeam === f.ANY_TEAM_DEVICE_OPTION || (0, g.default)() === i.options.allowedPurchaseTeam);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _k;
     });
-    var f = c('G0Kso'),
-        g = c('3Fknw'),
-        h = c('D0Q5k'),
-        i = c('f2D53'),
-        j = c('mUaLY');
-    var _k = a => {
-        if (!a.state.active)
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var _k = l => {
+        if (!l.state.active)
             return {
                 text: g.InteractionMessages.notAvailable.message,
                 color: g.InteractionMessages.notAvailable.color
             };
-        if (a.options.useLimitedStock && a.state.currentStock <= 0)
+        if (l.options.useLimitedStock && l.state.currentStock <= 0)
             return {
                 text: g.InteractionMessages.outOfStock.message,
                 color: g.InteractionMessages.outOfStock.color
             };
-        const l = (0, i.VendingMachineDeviceAmountRequiredToPurchase)(a),
-            m = (0, i.VendingMachineDeviceAmountOfRequiredItemIHave)(a),
-            n = (0, j.VendingMachineDeviceFundingIsEnabled)(a);
-        return m < l && !n ? {
+        const m = (0, i.VendingMachineDeviceAmountRequiredToPurchase)(l), n = (0, i.VendingMachineDeviceAmountOfRequiredItemIHave)(l), o = (0, j.VendingMachineDeviceFundingIsEnabled)(l);
+        return n < m && !o ? {
             text: g.InteractionMessages.notEnoughRequiredItem.message,
             color: g.InteractionMessages.notEnoughRequiredItem.color
-        } : a.options.useLimitedStock ? {
-            text: g.InteractionMessages.inStock(a.state.currentStock).message,
-            color: g.InteractionMessages.inStock(a.state.currentStock).color
-        } : n ? {
-            text: g.InteractionMessages.fundingStatus.message(a.state.fundedAmount || 0, (0, h.GetCost)(a), (0, f.ItemName)(a.options.requiredItemId))
-        } : {};
+        } : l.options.useLimitedStock ? {
+            text: g.InteractionMessages.inStock(l.state.currentStock).message,
+            color: g.InteractionMessages.inStock(l.state.currentStock).color
+        } : o ? { text: g.InteractionMessages.fundingStatus.message(l.state.fundedAmount || 0, (0, h.GetCost)(l), (0, f.ItemName)(l.options.requiredItemId)) } : {};
     };
-}), c.register('56Ofo', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _i;
     });
-    var f = c('UkCpC'),
-        g = c('iH+cr'),
-        h = c('GpPqI');
-    var _i = a => {
-        (0, f.InPreGamePhase)() || (a.options.visibleInGame ? a.interactiveZones.add.rect({
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    var _i = j => {
+        (0, f.InPreGamePhase)() || (j.options.visibleInGame ? j.interactiveZones.add.rect({
             y: 25,
-            width: a.options.width + 150,
-            height: a.options.height + 150
-        }) : a.interactiveZones.add.circle({
-            r: a.options.radius
-        }), a.interactiveZones.setCanInteractThroughColliders(!0), a.interactiveZones.onInteraction = () => {
-            a.sendToServerDevice(g.Messages.purchase);
-        }, a.interactiveZones.onInteractiveCb = () => {
-            (0, h.default)(a, !0);
+            width: j.options.width + 150,
+            height: j.options.height + 150
+        }) : j.interactiveZones.add.circle({ r: j.options.radius }), j.interactiveZones.setCanInteractThroughColliders(!0), j.interactiveZones.onInteraction = () => {
+            j.sendToServerDevice(g.Messages.purchase);
+        }, j.interactiveZones.onInteractiveCb = () => {
+            (0, h.default)(j, !0);
         });
     };
-}), c.register('uc4mA17', function(d, e) {
-    a(d.exports, 'FetchOptionSchemaProperty', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'FetchOptionSchemaProperty', function () {
         return _f;
     });
-    const _f = (a, d) => {
-        var g, h, i;
-        const j = a.deviceOption.optionSchema.options.find(a => a.key === d);
+    const _f = (g, h) => {
+        var i, j, k;
+        const l = g.deviceOption.optionSchema.options.find(m => m.key === h);
         return {
-            min: null === (g = null == j ? void 0 : j.option.props) || void 0 === g ? void 0 : g.min,
-            max: null === (h = null == j ? void 0 : j.option.props) || void 0 === h ? void 0 : h.max,
-            step: null === (i = null == j ? void 0 : j.option.props) || void 0 === i ? void 0 : i.step
+            min: null === (i = null == l ? void 0 : l.option.props) || void 0 === i ? void 0 : i.min,
+            max: null === (j = null == l ? void 0 : l.option.props) || void 0 === j ? void 0 : j.max,
+            step: null === (k = null == l ? void 0 : l.option.props) || void 0 === k ? void 0 : k.step
         };
     };
-}), c.register('u/WlI21', function(d, e) {
-    a(d.exports, 'ReplaceVisualEditingPreview', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'ReplaceVisualEditingPreview', function () {
         return _j;
     });
-    var f = c('hemXM'),
-        g = c('sWmxu5'),
-        h = c('EzUqb'),
-        i = c('GQMbT');
-    const _j = (a, d, c) => {
-        const k = (0, i.FetchVisualEditingPreview)(),
-            l = (0, h.FetchCurrentlyEditedDevice)();
-        if (!l || !k)
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    const _j = (k, l, m) => {
+        const n = (0, i.FetchVisualEditingPreview)(), o = (0, h.FetchCurrentlyEditedDevice)();
+        if (!o || !n)
             return;
-        const m = l.layers.isOnNaturalDepth() ? void 0 : d + l.layers.getDepthShift();
+        const p = o.layers.isOnNaturalDepth() ? void 0 : l + o.layers.getDepthShift();
         (0, g.default)({
-            deviceOption: k.deviceOption,
+            deviceOption: n.deviceOption,
             id: f.VisualEditingConstants.previewId,
-            x: a,
-            y: d,
-            depth: m,
-            layerId: l.layers.getLayer(),
-            name: k.name,
+            x: k,
+            y: l,
+            depth: p,
+            layerId: o.layers.getLayer(),
+            name: n.name,
             isPreview: !0,
             options: {
-                ...k.options,
-                ...c
+                ...n.options,
+                ...m
             },
             placedByClient: !0,
-            state: k.deviceOption.defaultState
+            state: n.deviceOption.defaultState
         });
     };
-}), c.register('sWmxu5', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _h;
     });
-    var f = c('heTaO'),
-        g = c('2LtPo');
-    var _h = a => {
-        (0, f.default)().worldManager.devices.getDeviceById(a.id) && (0, g.default)(a);
+    var f = c('.....'), g = c('.....');
+    var _h = i => {
+        (0, f.default)().worldManager.devices.getDeviceById(i.id) && (0, g.default)(i);
     };
 });

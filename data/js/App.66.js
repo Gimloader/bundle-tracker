@@ -1,68 +1,44 @@
-function a(b, c, d, e) {
-    Object.defineProperty(b, c, {
-        get: d,
-        set: e,
+var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+a.register('.....', function (b, c) {
+    var d, e, f, g, h;
+    d = b.exports, Object.defineProperty(d, '__esModule', {
+        value: !0,
+        configurable: !0
+    }), e = b.exports, f = 'default', g = function () {
+        return _q;
+    }, Object.defineProperty(e, f, {
+        get: g,
+        set: h,
         enumerable: !0,
         configurable: !0
     });
-}
-var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('CoFIn', function(c, d) {
-    var e;
-    e = c.exports, Object.defineProperty(e, '__esModule', {
-        value: !0,
-        configurable: !0
-    }), a(c.exports, 'default', function() {
-        return _n;
-    });
-    var f = b('gRbUn'),
-        g = b('O0Kav'),
-        h = b('AE7vR'),
-        i = b('yruHD'),
-        j = b('quE27'),
-        k = b('nKuOQ'),
-        l = b('lptuh'),
-        m = b('KxkP827');
-    var _n = () => (g.useEffect(() => {
-        const o = (0, j.getUrlVariable)('token');
-        o ? h.default.confirm({
+    var i = a('.....'), j = a('.....'), k = a('.....'), l = a('.....'), m = a('.....'), n = a('.....'), o = a('.....'), p = a('.....');
+    var _q = () => (j.useEffect(() => {
+        const r = (0, m.getUrlVariable)('token');
+        r ? k.default.confirm({
             title: 'Are you sure you want to revoke your child\'s access to Gimkit?',
             onOk: () => {
-                (0, j.request)({
+                (0, m.request)({
                     url: '/api/users/revokeAccess',
                     method: 'post',
-                    data: {
-                        token: decodeURIComponent(o)
-                    },
+                    data: { token: decodeURIComponent(r) },
                     success: () => {
-                        h.default.success({
-                            content: 'Your student\'s access has been revoked'
-                        }), (0, m.NavigateTo)(k.HOMEPAGE);
+                        k.default.success({ content: 'Your student\'s access has been revoked' }), (0, p.NavigateTo)(n.HOMEPAGE);
                     },
-                    error: () => (0, l.throwError)({
+                    error: () => (0, o.throwError)({
                         title: 'Error revoking access',
                         content: 'The link might have expired. Please contact support for further assistance'
                     })
                 });
             },
             onCancel: () => {
-                (0, m.NavigateTo)('/');
+                (0, p.NavigateTo)('/');
             },
             okText: 'Yes',
             cancelText: 'No'
-        }) : (0, m.NavigateTo)('/');
-    }, []), (0, f.jsx)('div', {
+        }) : (0, p.NavigateTo)('/');
+    }, []), (0, i.jsx)('div', {
         className: 'maxWidth maxHeight hc vc flex',
-        children: (0, f.jsx)(i.default, {
-            size: 'large'
-        })
+        children: (0, i.jsx)(l.default, { size: 'large' })
     }));
-}), b.register('KxkP827', function(c, d) {
-    a(c.exports, 'NavigateTo', function() {
-        return _f;
-    });
-    var e = b('qb3Ih');
-    const _f = a => {
-        e.history.push(a);
-    };
 });

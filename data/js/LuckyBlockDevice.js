@@ -7,28 +7,15 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('o5HHG', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _w;
     });
-    var f = b('s/YA9'),
-        g = b('ltxDW'),
-        h = b('NYKK8'),
-        i = b('GIe9o'),
-        j = b('UkCpC'),
-        k = b('hycyg'),
-        l = b('uc4mA17'),
-        m = b('SOnqK'),
-        n = b('u/WlI21'),
-        o = b('3jaMj'),
-        p = b('UaUBz0'),
-        q = b('9zaF+'),
-        r = b('HNjVJ'),
-        s = b('CbU7r');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....');
     let t;
     var u;
     (u = t || (t = {})).idleActive = 'idle-active', u.idleInactive = 'idle-inactive', u.explode = 'explode-short', u.reactivate = 'reactivate';
@@ -48,16 +35,15 @@ b.register('o5HHG', function(c, d) {
                 this.state.charged && this.playAnimation(t.idleActive);
             }), (0, f.default)(this, 'deactivate', () => {
                 this.playAnimation(t.idleInactive);
-            }), (0, f.default)(this, 'playAnimation', w => {
+            }), (0, f.default)(this, 'playAnimation', x => {
                 if (!this.spine.view)
                     return;
-                const x = w === t.idleActive || w === t.idleInactive;
-                this.spine.view.animationState.setAnimation(0, w, x);
-            }), (0, f.default)(this, 'onStateChange', w => {
-                'active' === w && (this.state.active ? this.activate() : this.deactivate()), 'charged' === w && !1 === this.prevState.charged && !0 === this.state.charged && this.recharge(), 'useCounter' === w && this.state.useCounter > 0 && this.use();
+                const y = x === t.idleActive || x === t.idleInactive;
+                this.spine.view.animationState.setAnimation(0, x, y);
+            }), (0, f.default)(this, 'onStateChange', x => {
+                'active' === x && (this.state.active ? this.activate() : this.deactivate()), 'charged' === x && !1 === this.prevState.charged && !0 === this.state.charged && this.recharge(), 'useCounter' === x && this.state.useCounter > 0 && this.use();
             }), (0, f.default)(this, 'setupView', () => {
-                const x = m.LuckyBlockDeviceConsts.boundingBox.width,
-                    y = m.LuckyBlockDeviceConsts.boundingBox.height;
+                const x = m.LuckyBlockDeviceConsts.boundingBox.width, y = m.LuckyBlockDeviceConsts.boundingBox.height;
                 this.spine = this.parts.add.spine({
                     ...h.SpineAsset,
                     spineViewId: this.id,
@@ -69,11 +55,11 @@ b.register('o5HHG', function(c, d) {
                         top: (-y + m.LuckyBlockDeviceConsts.spine.yCorrection) * this.options.scale,
                         bottom: 2 * this.options.scale
                     },
-                    onAnimationComplete: x => {
-                        x === t.reactivate && this.playAnimation(t.idleActive), x === t.explode && this.state.active && 0 === this.options.rechargeAfterTime && this.playAnimation(t.reactivate);
+                    onAnimationComplete: z => {
+                        z === t.reactivate && this.playAnimation(t.idleActive), z === t.explode && this.state.active && 0 === this.options.rechargeAfterTime && this.playAnimation(t.reactivate);
                     },
-                    onReady: x => {
-                        x.view.setScale(m.LuckyBlockDeviceConsts.spine.baseScale * this.options.scale);
+                    onReady: z => {
+                        z.view.setScale(m.LuckyBlockDeviceConsts.spine.baseScale * this.options.scale);
                     }
                 });
             }), (0, f.default)(this, 'setupCollider', () => {
@@ -98,9 +84,7 @@ b.register('o5HHG', function(c, d) {
             }), (0, f.default)(this, 'setupVisualEditing', () => {
                 if ((0, j.InGamePhase)() || (0, k.isPublishedVersion)())
                     return;
-                const x = (0, l.FetchOptionSchemaProperty)(this, 'scale'),
-                    y = m.LuckyBlockDeviceConsts.boundingBox.width,
-                    z = m.LuckyBlockDeviceConsts.boundingBox.height;
+                const x = (0, l.FetchOptionSchemaProperty)(this, 'scale'), y = m.LuckyBlockDeviceConsts.boundingBox.width, z = m.LuckyBlockDeviceConsts.boundingBox.height;
                 this.visualEditing.add.box({
                     keepRatio: !0,
                     rotable: !1,
@@ -110,40 +94,38 @@ b.register('o5HHG', function(c, d) {
                     maxWidth: y * x.max,
                     minHeight: z * x.min,
                     maxHeight: z * x.max,
-                    onChange: x => {
-                        (0, n.ReplaceVisualEditingPreview)(x.x, x.y, {
-                            scale: x.width / y
-                        });
+                    onChange: A => {
+                        (0, n.ReplaceVisualEditingPreview)(A.x, A.y, { scale: A.width / y });
                     }
                 });
             }), this.layers.setDefaultLayer(i.default.DepthSortedCharactersAndDevices), this.setupView(), this.setupShadow(), this.setupCollider(), this.setupVisualEditing(), this.setupInViewCallbacks(), this.cull.setMargin(50);
         }
     }
     var _w = v;
-}), b.register('NYKK8', function(c, d) {
-    a(c.exports, 'SpineAsset', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'SpineAsset', function () {
         return _f;
     });
-    var e = b('UaUBz0');
+    var e = b('.....');
     const _f = {
         atlasUrl: (0, e.default)('devices/lucky_block/spine/luckyBlock.atlas'),
         jsonUrl: (0, e.default)('devices/lucky_block/spine/luckyBlock.json')
     };
-}), b.register('uc4mA17', function(c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function () {
         return _e;
     });
-    const _e = (a, c) => {
-        var f, g, h;
-        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
+    const _e = (f, g) => {
+        var h, i, j;
+        const k = f.deviceOption.optionSchema.options.find(l => l.key === g);
         return {
-            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
-            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
-            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
+            min: null === (h = null == k ? void 0 : k.option.props) || void 0 === h ? void 0 : h.min,
+            max: null === (i = null == k ? void 0 : k.option.props) || void 0 === i ? void 0 : i.max,
+            step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('SOnqK', function(c, d) {
-    a(c.exports, 'LuckyBlockDeviceConsts', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'LuckyBlockDeviceConsts', function () {
         return _e;
     });
     const _e = {
@@ -169,44 +151,39 @@ b.register('o5HHG', function(c, d) {
             r2: 50
         }
     };
-}), b.register('u/WlI21', function(c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function () {
         return _i;
     });
-    var e = b('hemXM'),
-        f = b('sWmxu5'),
-        g = b('EzUqb'),
-        h = b('GQMbT');
-    const _i = (a, b, c) => {
-        const j = (0, h.FetchVisualEditingPreview)(),
-            k = (0, g.FetchCurrentlyEditedDevice)();
-        if (!k || !j)
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    const _i = (j, k, l) => {
+        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        if (!n || !m)
             return;
-        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
         (0, f.default)({
-            deviceOption: j.deviceOption,
+            deviceOption: m.deviceOption,
             id: e.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: l,
-            layerId: k.layers.getLayer(),
-            name: j.name,
+            x: j,
+            y: k,
+            depth: o,
+            layerId: n.layers.getLayer(),
+            name: m.name,
             isPreview: !0,
             options: {
-                ...j.options,
-                ...c
+                ...m.options,
+                ...l
             },
             placedByClient: !0,
-            state: j.deviceOption.defaultState
+            state: m.deviceOption.defaultState
         });
     };
-}), b.register('sWmxu5', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _g;
     });
-    var e = b('heTaO'),
-        f = b('2LtPo');
-    var _g = a => {
-        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
+    var e = b('.....'), f = b('.....');
+    var _g = h => {
+        (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
 });

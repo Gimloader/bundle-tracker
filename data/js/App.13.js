@@ -1,7 +1,6 @@
 function a(b) {
     return b && b.__esModule ? b.default : b;
 }
-
 function b(c, d, e, f) {
     Object.defineProperty(c, d, {
         get: e,
@@ -11,39 +10,22 @@ function b(c, d, e, f) {
     });
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('G4fa0', function(d, e) {
+c.register('.....', function (d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(d.exports, 'default', function() {
+    }), b(d.exports, 'default', function () {
         return _z;
     });
-    var g = c('gRbUn'),
-        h = c('P1KtI'),
-        i = c('O0Kav'),
-        j = c('ddhGF'),
-        k = c('u4s09'),
-        l = c('8KqQ+'),
-        m = c('NwGMQ'),
-        n = c('J8L14'),
-        o = c('UkybP'),
-        p = c('bD9o6'),
-        q = c('/OBR8'),
-        r = c('Y1upt'),
-        s = c('1pcfG'),
-        t = c('hffJA'),
-        u = c('HK0ub'),
-        v = c('VbGHc');
-    let w, x, y = a => a;
+    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....');
+    let w, x, y = z => z;
     var _z = () => {
         const [A, B] = i.useState(!0);
-        return (0, n.default)(a(j).Input.Keyboard.KeyCodes.SPACE, () => B(a => !a)), A ? (0, g.jsx)(_A, {
+        return (0, n.default)(a(j).Input.Keyboard.KeyCodes.SPACE, () => B(C => !C)), A ? (0, g.jsx)(_A, {
             children: (0, g.jsxs)(_B, {
                 children: [
-                    (0, g.jsx)('h2', {
-                        children: 'Cinematic Mode'
-                    }),
+                    (0, g.jsx)('h2', { children: 'Cinematic Mode' }),
                     (0, g.jsxs)('div', {
                         className: 'flex-column',
                         children: [
@@ -86,9 +68,7 @@ c.register('G4fa0', function(d, e) {
             })
         }) : null;
     };
-    const _A = k.default.div.attrs({
-            className: 'maxAll flex'
-        })(w || (w = y`
+    const _A = k.default.div.attrs({ className: 'maxAll flex' })(w || (w = y`
   position: absolute;
   top: 0;
   left: 0;
@@ -97,95 +77,76 @@ c.register('G4fa0', function(d, e) {
   padding: 20px;
   padding-bottom: 75px;
   z-index: ${ 0 };
-`), m.default.overlayContent),
-        _B = (0, k.default)(o.default)(x || (x = y`
+`), m.default.overlayContent), _B = (0, k.default)(o.default)(x || (x = y`
   padding: 20px;
   background: ${ 0 };
   border: 4px solid ${ 0 };
   color: ${ 0 };
 `), l.default.White, l.default.Black, l.default.Black);
-}), c.register('bD9o6', function(d, e) {
-    b(d.exports, 'CinematicModeUtil_HideMainCharacter', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'CinematicModeUtil_HideMainCharacter', function () {
         return _i;
     });
-    var f = c('fI6of'),
-        g = c('5Fjxs'),
-        h = c('d7UqH');
+    var f = c('.....'), g = c('.....'), h = c('.....');
     const _i = () => {
         const j = (0, h.default)((0, g.default)());
         j && (j.alpha.cinematicModeAlpha = 0, f.default.me.cinematicMode.mainCharacterVisible = !1);
     };
-}), c.register('/OBR8', function(d, e) {
-    b(d.exports, 'CinematicModeUtil_ShowNametags', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'CinematicModeUtil_ShowNametags', function () {
         return _g;
-    }), b(d.exports, 'CinematicModeUtil_HideNametags', function() {
+    }), b(d.exports, 'CinematicModeUtil_HideNametags', function () {
         return _h;
     });
-    var f = c('fI6of');
+    var f = c('.....');
     const _g = () => {
             f.default.me.cinematicMode.nameTagsVisible = !0;
-        },
-        _h = () => {
+        }, _h = () => {
             f.default.me.cinematicMode.nameTagsVisible = !1;
         };
-}), c.register('Y1upt', function(d, e) {
-    b(d.exports, 'CinematicModeUtil_ShowMainCharacter', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'CinematicModeUtil_ShowMainCharacter', function () {
         return _i;
     });
-    var f = c('fI6of'),
-        g = c('5Fjxs'),
-        h = c('d7UqH');
+    var f = c('.....'), g = c('.....'), h = c('.....');
     const _i = () => {
         const j = (0, h.default)((0, g.default)());
         j && (j.alpha.cinematicModeAlpha = 1, f.default.me.cinematicMode.mainCharacterVisible = !0);
     };
-}), c.register('1pcfG', function(d, e) {
-    b(d.exports, 'CinematicModeUtil_StartFocusMainCharacter', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'CinematicModeUtil_StartFocusMainCharacter', function () {
         return _j;
     });
-    var f = c('fI6of'),
-        g = c('5Fjxs'),
-        h = c('heTaO'),
-        i = c('d7UqH');
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
     const _j = () => {
         const k = (0, i.default)((0, g.default)());
-        k && ((0, h.default)().cameraHelper.startFollowingObject({
-            object: k.body
-        }), f.default.me.cinematicMode.followingMainCharacter = !0);
+        k && ((0, h.default)().cameraHelper.startFollowingObject({ object: k.body }), f.default.me.cinematicMode.followingMainCharacter = !0);
     };
-}), c.register('hffJA', function(d, e) {
-    b(d.exports, 'CinematicModeUtil_StopFocusMainCharacter', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'CinematicModeUtil_StopFocusMainCharacter', function () {
         return _h;
     });
-    var f = c('fI6of'),
-        g = c('heTaO');
+    var f = c('.....'), g = c('.....');
     const _h = () => {
         (0, g.default)().cameraHelper.stopFollow(), f.default.me.cinematicMode.followingMainCharacter = !1;
     };
-}), c.register('HK0ub', function(d, e) {
-    b(d.exports, 'CinematicModeUtil_ShowGUI', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'CinematicModeUtil_ShowGUI', function () {
         return _g;
-    }), b(d.exports, 'CinematicModeUtil_HideGUI', function() {
+    }), b(d.exports, 'CinematicModeUtil_HideGUI', function () {
         return _h;
     });
-    var f = c('fI6of');
+    var f = c('.....');
     const _g = () => {
             f.default.me.cinematicMode.hidingGUI = !1;
-        },
-        _h = () => {
+        }, _h = () => {
             f.default.me.cinematicMode.hidingGUI = !0;
         };
-}), c.register('VbGHc', function(d, e) {
-    b(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
         return _m;
     });
-    var f = c('gRbUn'),
-        g = c('P1KtI'),
-        h = c('VNuyu'),
-        i = c('+xIkQ'),
-        j = c('O0Kav'),
-        k = c('0SfAS'),
-        l = c('cRCRV');
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
     var _m = () => {
         const [n, o] = j.useState(50);
         return (0, f.jsxs)('div', {
@@ -247,12 +208,10 @@ c.register('G4fa0', function(d, e) {
                     step: 1
                 }),
                 (0, f.jsx)(h.default, {}),
-                (0, f.jsx)('p', {
-                    children: 'Zoom'
-                }),
+                (0, f.jsx)('p', { children: 'Zoom' }),
                 (0, f.jsx)(i.default, {
-                    onChange: n => {
-                        (0, l.default)(n);
+                    onChange: p => {
+                        (0, l.default)(p);
                     },
                     min: 0.2,
                     max: 10,
@@ -261,23 +220,22 @@ c.register('G4fa0', function(d, e) {
             ]
         });
     };
-}), c.register('0SfAS', function(d, e) {
-    b(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
         return _g;
     });
-    var f = c('heTaO');
-    var _g = d => {
-        const h = (0, f.default)().cameras.main;
-        h.centerOn(h.worldView.centerX + d.x, h.worldView.centerY + d.y);
+    var f = c('.....');
+    var _g = h => {
+        const i = (0, f.default)().cameras.main;
+        i.centerOn(i.worldView.centerX + h.x, i.worldView.centerY + h.y);
     };
-}), c.register('cRCRV', function(d, e) {
-    b(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
         return _h;
     });
-    var f = c('fI6of'),
-        g = c('heTaO');
-    var _h = d => {
-        const i = (0, g.default)().cameras.main;
-        (0, g.default)().cameraHelper.setBounds(f.default.world.width, f.default.world.height), i.setZoom(d);
+    var f = c('.....'), g = c('.....');
+    var _h = i => {
+        const j = (0, g.default)().cameras.main;
+        (0, g.default)().cameraHelper.setBounds(f.default.world.width, f.default.world.height), j.setZoom(i);
     };
 });

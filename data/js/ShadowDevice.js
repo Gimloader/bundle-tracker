@@ -7,28 +7,21 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('fdoaT', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _n;
     });
-    var f = b('s/YA9'),
-        g = b('ltxDW'),
-        h = b('iWeih'),
-        i = b('UkCpC'),
-        j = b('hycyg'),
-        k = b('uc4mA17'),
-        l = b('u/WlI21');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
     class m extends g.default {
         constructor(n) {
             super(n), (0, f.default)(this, 'setupVisualEditing', () => {
                 if (!(0, i.InPreGamePhase)() || !(0, j.isSavedVersion)())
                     return;
-                const o = (0, k.FetchOptionSchemaProperty)(this, 'width'),
-                    p = (0, k.FetchOptionSchemaProperty)(this, 'height');
+                const o = (0, k.FetchOptionSchemaProperty)(this, 'width'), p = (0, k.FetchOptionSchemaProperty)(this, 'height');
                 this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
@@ -38,10 +31,10 @@ b.register('fdoaT', function(c, d) {
                     maxHeight: p.max,
                     rotable: !1,
                     keepRatio: !1,
-                    onChange: o => {
-                        (0, l.ReplaceVisualEditingPreview)(o.x, o.y, {
-                            width: o.width,
-                            height: o.height
+                    onChange: q => {
+                        (0, l.ReplaceVisualEditingPreview)(q.x, q.y, {
+                            width: q.width,
+                            height: q.height
                         });
                     }
                 });
@@ -53,65 +46,60 @@ b.register('fdoaT', function(c, d) {
         }
     }
     var _n = m;
-}), b.register('iWeih', function(c, d) {
-    a(c.exports, 'BaseAsset', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'BaseAsset', function () {
         return _e;
     });
     const _e = {
         imageId: 'shadow_device',
-        imageUrl: (0, b('UaUBz0').default)('devices/shadow/shadow_device.png')
+        imageUrl: (0, b('.....').default)('devices/shadow/shadow_device.png')
     };
-}), b.register('uc4mA17', function(c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function () {
         return _e;
     });
-    const _e = (a, c) => {
-        var f, g, h;
-        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
+    const _e = (f, g) => {
+        var h, i, j;
+        const k = f.deviceOption.optionSchema.options.find(l => l.key === g);
         return {
-            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
-            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
-            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
+            min: null === (h = null == k ? void 0 : k.option.props) || void 0 === h ? void 0 : h.min,
+            max: null === (i = null == k ? void 0 : k.option.props) || void 0 === i ? void 0 : i.max,
+            step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('u/WlI21', function(c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function () {
         return _i;
     });
-    var e = b('hemXM'),
-        f = b('sWmxu5'),
-        g = b('EzUqb'),
-        h = b('GQMbT');
-    const _i = (a, b, c) => {
-        const j = (0, h.FetchVisualEditingPreview)(),
-            k = (0, g.FetchCurrentlyEditedDevice)();
-        if (!k || !j)
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    const _i = (j, k, l) => {
+        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        if (!n || !m)
             return;
-        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
         (0, f.default)({
-            deviceOption: j.deviceOption,
+            deviceOption: m.deviceOption,
             id: e.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: l,
-            layerId: k.layers.getLayer(),
-            name: j.name,
+            x: j,
+            y: k,
+            depth: o,
+            layerId: n.layers.getLayer(),
+            name: m.name,
             isPreview: !0,
             options: {
-                ...j.options,
-                ...c
+                ...m.options,
+                ...l
             },
             placedByClient: !0,
-            state: j.deviceOption.defaultState
+            state: m.deviceOption.defaultState
         });
     };
-}), b.register('sWmxu5', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _g;
     });
-    var e = b('heTaO'),
-        f = b('2LtPo');
-    var _g = a => {
-        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
+    var e = b('.....'), f = b('.....');
+    var _g = h => {
+        (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
 });

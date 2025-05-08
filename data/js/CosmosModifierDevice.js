@@ -7,30 +7,27 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('XJa6J', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _k;
     });
-    var f = b('hycyg'),
-        g = b('UkCpC'),
-        h = b('ltxDW'),
-        i = b('4Q05O');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
     class j extends h.default {
         constructor(k) {
             super(k), (0, f.isPublishedVersion)() || (0, g.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(i.BaseAsset));
         }
     }
     var _k = j;
-}), b.register('4Q05O', function(c, d) {
-    a(c.exports, 'BaseAsset', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'BaseAsset', function () {
         return _e;
     });
     const _e = {
         imageId: 'cosmos_modifier',
-        imageUrl: (0, b('UaUBz0').default)('devices/cosmos_modifier/icon.png')
+        imageUrl: (0, b('.....').default)('devices/cosmos_modifier/icon.png')
     };
 });

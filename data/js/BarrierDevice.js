@@ -7,23 +7,15 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('oFGwV', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _p;
     });
-    var f = b('s/YA9'),
-        g = b('hycyg'),
-        h = b('UkCpC'),
-        i = b('ltxDW'),
-        j = b('vvFNE'),
-        k = b('UYyWT'),
-        l = b('u/WlI21'),
-        m = b('uc4mA17'),
-        n = b('/YaFu1');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....');
     class o extends i.default {
         get alpha() {
             return (0, h.InPreGamePhase)() && (0, g.isSavedVersion)() || this.options.visibleInGame && this.state.active ? 1 : 0;
@@ -79,8 +71,8 @@ b.register('oFGwV', function(c, d) {
                         h: this.options.height,
                         angle: this.options.angle
                     }));
-                }), (0, f.default)(this, 'onStateChange', p => {
-                    'active' === p && (this.state.active && (0, n.default)(this), this.part.view.setAlpha(this.alpha));
+                }), (0, f.default)(this, 'onStateChange', q => {
+                    'active' === q && (this.state.active && (0, n.default)(this), this.part.view.setAlpha(this.alpha));
                 }), (0, f.default)(this, 'checkIfCollidersEnabled', () => this.state.active), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)())
                 if (this.isCircle) {
                     const q = (0, m.FetchOptionSchemaProperty)(this, 'radius');
@@ -90,30 +82,27 @@ b.register('oFGwV', function(c, d) {
                         radius: this.options.radius,
                         minRadius: q.min,
                         maxRadius: q.max,
-                        onChange: q => {
-                            (0, l.ReplaceVisualEditingPreview)(q.x, q.y, {
-                                radius: q.radius
-                            });
+                        onChange: r => {
+                            (0, l.ReplaceVisualEditingPreview)(r.x, r.y, { radius: r.radius });
                         }
                     });
                 } else {
-                    const q = (0, m.FetchOptionSchemaProperty)(this, 'width'),
-                        r = (0, m.FetchOptionSchemaProperty)(this, 'height');
+                    const r = (0, m.FetchOptionSchemaProperty)(this, 'width'), s = (0, m.FetchOptionSchemaProperty)(this, 'height');
                     this.visualEditing.add.box({
                         angle: this.options.angle,
                         keepRatio: !1,
                         rotable: !0,
                         width: this.options.width,
                         height: this.options.height,
-                        minWidth: q.min,
-                        maxWidth: q.max,
-                        minHeight: r.min,
-                        maxHeight: r.max,
-                        onChange: q => {
-                            (0, l.ReplaceVisualEditingPreview)(q.x, q.y, {
-                                width: q.width,
-                                height: q.height,
-                                angle: q.angle
+                        minWidth: r.min,
+                        maxWidth: r.max,
+                        minHeight: s.min,
+                        maxHeight: s.max,
+                        onChange: t => {
+                            (0, l.ReplaceVisualEditingPreview)(t.x, t.y, {
+                                width: t.width,
+                                height: t.height,
+                                angle: t.angle
                             });
                         }
                     });
@@ -122,77 +111,71 @@ b.register('oFGwV', function(c, d) {
         }
     }
     var _p = o;
-}), b.register('vvFNE', function(c, d) {
+}), b.register('.....', function (c, d) {
     let e;
     var f;
-    a(c.exports, 'BarrierShape', function() {
+    a(c.exports, 'BarrierShape', function () {
         return e;
     }), (f = e || (e = {})).rectangle = 'rectangle', f.circle = 'circle';
-}), b.register('u/WlI21', function(c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function () {
         return _i;
     });
-    var e = b('hemXM'),
-        f = b('sWmxu5'),
-        g = b('EzUqb'),
-        h = b('GQMbT');
-    const _i = (a, b, c) => {
-        const j = (0, h.FetchVisualEditingPreview)(),
-            k = (0, g.FetchCurrentlyEditedDevice)();
-        if (!k || !j)
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    const _i = (j, k, l) => {
+        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        if (!n || !m)
             return;
-        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
         (0, f.default)({
-            deviceOption: j.deviceOption,
+            deviceOption: m.deviceOption,
             id: e.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: l,
-            layerId: k.layers.getLayer(),
-            name: j.name,
+            x: j,
+            y: k,
+            depth: o,
+            layerId: n.layers.getLayer(),
+            name: m.name,
             isPreview: !0,
             options: {
-                ...j.options,
-                ...c
+                ...m.options,
+                ...l
             },
             placedByClient: !0,
-            state: j.deviceOption.defaultState
+            state: m.deviceOption.defaultState
         });
     };
-}), b.register('sWmxu5', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _g;
     });
-    var e = b('heTaO'),
-        f = b('2LtPo');
-    var _g = a => {
-        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
+    var e = b('.....'), f = b('.....');
+    var _g = h => {
+        (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
-}), b.register('uc4mA17', function(c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function () {
         return _e;
     });
-    const _e = (a, c) => {
-        var f, g, h;
-        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
+    const _e = (f, g) => {
+        var h, i, j;
+        const k = f.deviceOption.optionSchema.options.find(l => l.key === g);
         return {
-            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
-            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
-            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
+            min: null === (h = null == k ? void 0 : k.option.props) || void 0 === h ? void 0 : h.min,
+            max: null === (i = null == k ? void 0 : k.option.props) || void 0 === i ? void 0 : i.max,
+            step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('/YaFu1', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _g;
     });
-    var e = b('5Fjxs'),
-        f = b('d7UqH');
-    var _g = a => {
-        const h = (0, f.default)((0, e.default)());
-        a.colliders.forEach(a => {
-            var i, j, k;
-            const l = a.bodyId;
-            null === (i = null == h ? void 0 : h.physics.getBody()) || void 0 === i || null === (j = i.character) || void 0 === j || null === (k = j.ignoredStaticBodies) || void 0 === k || k.add(l);
+    var e = b('.....'), f = b('.....');
+    var _g = h => {
+        const i = (0, f.default)((0, e.default)());
+        h.colliders.forEach(j => {
+            var k, l, m;
+            const n = j.bodyId;
+            null === (k = null == i ? void 0 : i.physics.getBody()) || void 0 === k || null === (l = k.character) || void 0 === l || null === (m = l.ignoredStaticBodies) || void 0 === m || m.add(n);
         });
     };
 });

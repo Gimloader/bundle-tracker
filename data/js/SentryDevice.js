@@ -7,24 +7,15 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('G7Ovc', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _q;
     });
-    var f = b('s/YA9'),
-        g = b('hycyg'),
-        h = b('UkCpC'),
-        i = b('u/WlI21'),
-        j = b('uc4mA17'),
-        k = b('ltxDW'),
-        l = b('UaUBz0'),
-        m = b('RZJBP'),
-        n = b('H4eGM'),
-        o = b('UCu0V');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
     class p extends k.default {
         constructor(q) {
             if (super(q), (0, f.default)(this, 'currentFallVelocity', 0), (0, h.InGamePhase)() || (0, g.isPublishedVersion)())
@@ -35,84 +26,76 @@ b.register('G7Ovc', function(c, d) {
                 minRadius: r.min,
                 maxRadius: r.max,
                 rotable: !1,
-                onChange: q => {
-                    (0, i.ReplaceVisualEditingPreview)(q.x, q.y, {
-                        rangeRadius: Math.round(q.radius)
-                    });
+                onChange: s => {
+                    (0, i.ReplaceVisualEditingPreview)(s.x, s.y, { rangeRadius: Math.round(s.radius) });
                 }
             });
-            const s = this.options.skinId.replace('character_', ''),
-                t = (0, l.default)(`characters/spine/normalized_preview/${ s }.png`);
+            const s = this.options.skinId.replace('character_', ''), t = (0, l.default)(`characters/spine/normalized_preview/${ s }.png`);
             this.parts.add.sprite({
                 y: 30 - 50 * 0.28,
                 imageId: t,
                 imageUrl: t,
                 depthChange: (0, n.default)(2),
-                onReady: q => {
-                    q.view.setScale(0.28 * this.options.scale), q.view.setOrigin(0.5, 550 / 600);
+                onReady: u => {
+                    u.view.setScale(0.28 * this.options.scale), u.view.setOrigin(0.5, 550 / 600);
                 }
             }), (0, o.isPlatformer)() || this.parts.add.sprite({
                 y: 15 - 5 * this.options.scale,
                 imageId: 'character-shadow',
                 imageUrl: (0, l.default)('characters/shadow.png'),
-                onReady: q => {
-                    q.view.setOrigin(0.5, 0.5), q.view.setScale(m.SHADOW_SCALE * this.options.scale), q.view.setAlpha(m.SHADOW_ALPHA);
+                onReady: u => {
+                    u.view.setOrigin(0.5, 0.5), u.view.setScale(m.SHADOW_SCALE * this.options.scale), u.view.setAlpha(m.SHADOW_ALPHA);
                 }
             });
         }
     }
     var _q = p;
-}), b.register('u/WlI21', function(c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function () {
         return _i;
     });
-    var e = b('hemXM'),
-        f = b('sWmxu5'),
-        g = b('EzUqb'),
-        h = b('GQMbT');
-    const _i = (a, b, c) => {
-        const j = (0, h.FetchVisualEditingPreview)(),
-            k = (0, g.FetchCurrentlyEditedDevice)();
-        if (!k || !j)
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    const _i = (j, k, l) => {
+        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        if (!n || !m)
             return;
-        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
         (0, f.default)({
-            deviceOption: j.deviceOption,
+            deviceOption: m.deviceOption,
             id: e.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: l,
-            layerId: k.layers.getLayer(),
-            name: j.name,
+            x: j,
+            y: k,
+            depth: o,
+            layerId: n.layers.getLayer(),
+            name: m.name,
             isPreview: !0,
             options: {
-                ...j.options,
-                ...c
+                ...m.options,
+                ...l
             },
             placedByClient: !0,
-            state: j.deviceOption.defaultState
+            state: m.deviceOption.defaultState
         });
     };
-}), b.register('sWmxu5', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _g;
     });
-    var e = b('heTaO'),
-        f = b('2LtPo');
-    var _g = a => {
-        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
+    var e = b('.....'), f = b('.....');
+    var _g = h => {
+        (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
-}), b.register('uc4mA17', function(c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function () {
         return _e;
     });
-    const _e = (a, c) => {
-        var f, g, h;
-        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
+    const _e = (f, g) => {
+        var h, i, j;
+        const k = f.deviceOption.optionSchema.options.find(l => l.key === g);
         return {
-            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
-            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
-            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
+            min: null === (h = null == k ? void 0 : k.option.props) || void 0 === h ? void 0 : h.min,
+            max: null === (i = null == k ? void 0 : k.option.props) || void 0 === i ? void 0 : i.max,
+            step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
 });

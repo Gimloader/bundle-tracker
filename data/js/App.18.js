@@ -7,131 +7,94 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('NPpF0', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'ANIMATION_DURATION', function() {
+    }), a(c.exports, 'ANIMATION_DURATION', function () {
         return _s;
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _t;
     });
-    var f = b('gRbUn'),
-        g = b('O0Kav'),
-        h = b('wjTt6'),
-        i = b('u4s09'),
-        j = b('9aZ6t'),
-        k = b('J8L14'),
-        l = b('UkybP'),
-        m = b('WrYxt'),
-        n = b('BkBfo'),
-        o = b('NwGMQ');
-    let p, q, r = a => a;
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
+    let p, q, r = s => s;
     const _s = 0.3;
-    var _t = (0, n.withDeviceUIWrapper)(a => {
-        const u = g.useCallback(() => {
-            a.closableByUser && a.close();
-        }, [a.closableByUser]);
-        (0, k.default)(Phaser.Input.Keyboard.KeyCodes.ESC, u, [u]);
+    var _t = (0, n.withDeviceUIWrapper)(u => {
+        const v = g.useCallback(() => {
+            u.closableByUser && u.close();
+        }, [u.closableByUser]);
+        (0, k.default)(Phaser.Input.Keyboard.KeyCodes.ESC, v, [v]);
         return (0, f.jsx)(_u, {
             children: (0, f.jsx)(_v, {
-                initial: {
-                    background: 'rgba(0,0,0,0)'
-                },
-                animate: {
-                    background: 'rgba(0,0,0,0.7)'
-                },
-                exit: {
-                    background: 'rgba(0,0,0,0)'
-                },
-                transition: {
-                    duration: _s
-                },
+                initial: { background: 'rgba(0,0,0,0)' },
+                animate: { background: 'rgba(0,0,0,0.7)' },
+                exit: { background: 'rgba(0,0,0,0)' },
+                transition: { duration: _s },
                 children: (() => {
-                    const v = {
-                        ...a,
-                        isBanner: a.style === m.CodeUIStyle.banner,
-                        close: u,
-                        code: a.code
+                    const w = {
+                        ...u,
+                        isBanner: u.style === m.CodeUIStyle.banner,
+                        close: v,
+                        code: u.code
                     };
-                    return (0, f.jsx)(h.default, {
-                        ...v
-                    });
+                    return (0, f.jsx)(h.default, { ...w });
                 })()
             })
         });
     });
-    const _u = (0, i.default)(l.default).attrs({
-            className: 'maxAll'
-        })(p || (p = r`
+    const _u = (0, i.default)(l.default).attrs({ className: 'maxAll' })(p || (p = r`
   overflow: hidden;
   z-index: ${ 0 };
-`), o.default.primaryContent),
-        _v = (0, i.default)(j.motion.div).attrs({
-            className: 'maxAll'
-        })(q || (q = r``));
-}), b.register('wjTt6', function(c, d) {
-    a(c.exports, 'default', function() {
+`), o.default.primaryContent), _v = (0, i.default)(j.motion.div).attrs({ className: 'maxAll' })(q || (q = r``));
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _t;
     });
-    var e = b('gRbUn'),
-        f = b('O0Kav'),
-        g = b('9aZ6t'),
-        h = b('hxGRM'),
-        i = b('u4s09'),
-        j = b('NPpF0'),
-        k = b('SvCqx'),
-        l = b('V/q8i'),
-        m = b('quE27'),
-        n = b('UYyWT');
-    let o, p, q = a => a;
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....');
+    let o, p, q = r => r;
     const r = {
             y: ' 100%',
             opacity: 0
-        },
-        s = {
+        }, s = {
             y: '0%',
             opacity: 1
         };
-    var _t = a => {
-        const u = (0, h.useIsPresent)(),
-            [v, w] = (0, m.useBoolean)(!1),
-            x = (0, n.GetContrastColor)(a.defaultBackgroundColor),
-            y = f.useMemo(() => {
-                let z = {
-                    background: a.defaultBackgroundColor,
-                    color: x,
-                    fontFamily: a.defaultFontFamily
+    var _t = u => {
+        const v = (0, h.useIsPresent)(), [w, x] = (0, m.useBoolean)(!1), y = (0, n.GetContrastColor)(u.defaultBackgroundColor), z = f.useMemo(() => {
+                let A = {
+                    background: u.defaultBackgroundColor,
+                    color: y,
+                    fontFamily: u.defaultFontFamily
                 };
-                if (a.isBanner) {
-                    const A = {
+                if (u.isBanner) {
+                    const B = {
                         padding: '30px 40px',
                         width: '100%',
                         maxWidth: '100%',
                         borderRadius: 0
                     };
                     return {
-                        ...z,
-                        ...A
+                        ...A,
+                        ...B
                     };
                 }
                 return {
-                    ...z,
+                    ...A,
                     padding: '40px 30px',
                     width: '90%',
                     maxWidth: 650,
                     borderRadius: 5
                 };
             }, [
-                a.defaultBackgroundColor,
-                a.isBanner
+                u.defaultBackgroundColor,
+                u.isBanner
             ]);
         return (0, e.jsxs)(_u, {
             onClick: () => {
-                u && v && a.close();
+                v && w && u.close();
             },
-            style: a.isBanner ? {
+            style: u.isBanner ? {
                 alignItems: 'flex-end',
                 justifyContent: 'center'
             } : {
@@ -147,54 +110,39 @@ b.register('NPpF0', function(c, d) {
                         duration: j.ANIMATION_DURATION,
                         ease: 'easeOut'
                     },
-                    onClick: a => a.stopPropagation(),
-                    onAnimationComplete: w,
-                    style: y,
-                    children: (0, e.jsx)(k.default, {
-                        ...a
-                    })
+                    onClick: A => A.stopPropagation(),
+                    onAnimationComplete: x,
+                    style: z,
+                    children: (0, e.jsx)(k.default, { ...u })
                 }),
-                a.closableByUser ? (0, e.jsx)(l.default, {
-                    onClick: a.close
-                }) : null
+                u.closableByUser ? (0, e.jsx)(l.default, { onClick: u.close }) : null
             ]
         });
     };
-    const _u = i.default.div.attrs({
-            className: 'maxAll flex'
-        })(o || (o = q``)),
-        _v = (0, i.default)(g.motion.div).attrs({
-            className: 'medium-shadow flex-column vc scroll-y'
-        })(p || (p = q`
+    const _u = i.default.div.attrs({ className: 'maxAll flex' })(o || (o = q``)), _v = (0, i.default)(g.motion.div).attrs({ className: 'medium-shadow flex-column vc scroll-y' })(p || (p = q`
   max-height: 80%;
 `));
-}), b.register('SvCqx', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _q;
     });
-    var e = b('gRbUn');
-    b('O0Kav');
-    var f = b('u4s09'),
-        g = b('P9wve'),
-        h = b('1Aepc'),
-        i = b('aPZ+w'),
-        j = b('GAMly'),
-        k = b('/SQrB'),
-        l = b('sZQJz');
-    let m, n, o, p = a => a;
-    var _q = a => {
-        const r = () => (0, e.jsx)(e.Fragment, {
+    var e = b('.....');
+    b('.....');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    let m, n, o, p = q => q;
+    var _q = r => {
+        const s = () => (0, e.jsx)(e.Fragment, {
             children: (0, e.jsx)('div', {
-                style: a.isBanner ? void 0 : {
+                style: r.isBanner ? void 0 : {
                     display: 'flex',
                     width: '100%',
                     alignItems: 'center',
                     flexDirection: 'column'
                 },
                 children: (0, e.jsx)(_t, {
-                    children: a.code ? (0, e.jsx)(h.LiveProvider, {
+                    children: r.code ? (0, e.jsx)(h.LiveProvider, {
                         noInline: !0,
-                        code: a.code,
+                        code: r.code,
                         scope: {
                             MapButton: i.default,
                             CallAction: j.CallAction,
@@ -206,39 +154,25 @@ b.register('NPpF0', function(c, d) {
                 })
             })
         });
-        return (0, e.jsx)(e.Fragment, {
-            children: a.isBanner ? (0, e.jsx)(_r, {
-                children: r()
-            }) : (0, e.jsx)(_s, {
-                children: r()
-            })
-        });
+        return (0, e.jsx)(e.Fragment, { children: r.isBanner ? (0, e.jsx)(_r, { children: s() }) : (0, e.jsx)(_s, { children: s() }) });
     };
-    const _r = f.default.div.attrs({
-            className: 'maxWidth flex vc'
-        })(m || (m = p`
+    const _r = f.default.div.attrs({ className: 'maxWidth flex vc' })(m || (m = p`
   width: 100%;
   display: flex;
   justify-content: space-between;
-`)),
-        _s = f.default.div.attrs({
-            className: 'maxWidth flex-column vc'
-        })(n || (n = p``)),
-        _t = f.default.div(o || (o = p`
+`)), _s = f.default.div.attrs({ className: 'maxWidth flex-column vc' })(n || (n = p``)), _t = f.default.div(o || (o = p`
   font-size: 24px;
   margin: 6px;
 `));
-}), b.register('P9wve', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _e;
     });
-    var _e = {
-        emptyMessage: 'Nothing in here...yet! End the game and modify this device to include your content.'
-    };
-}), b.register('WrYxt', function(c, d) {
+    var _e = { emptyMessage: 'Nothing in here...yet! End the game and modify this device to include your content.' };
+}), b.register('.....', function (c, d) {
     let e;
     var f;
-    a(c.exports, 'CodeUIStyle', function() {
+    a(c.exports, 'CodeUIStyle', function () {
         return e;
     }), (f = e || (e = {})).modal = 'modal', f.banner = 'banner';
 });

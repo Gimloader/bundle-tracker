@@ -1,10 +1,10 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('E8iF1', function(b, c) {
+a.register('.....', function (b, c) {
     var d, e, f, g, h;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), e = b.exports, f = 'default', g = function() {
+    }), e = b.exports, f = 'default', g = function () {
         return _v;
     }, Object.defineProperty(e, f, {
         get: g,
@@ -12,20 +12,10 @@ a.register('E8iF1', function(b, c) {
         enumerable: !0,
         configurable: !0
     });
-    var i = a('gRbUn'),
-        j = a('P1KtI'),
-        k = a('VNuyu'),
-        l = a('E2AMI26'),
-        m = a('22RS1');
-    a('O0Kav');
-    var n = a('Eh2Wh'),
-        o = a('jw1ib'),
-        p = a('hupyL1'),
-        q = a('LE3I425'),
-        r = a('FB7HT26'),
-        s = a('nKuOQ'),
-        t = a('HOIhZ');
-    const u = a => (0, i.jsxs)('div', {
+    var i = a('.....'), j = a('.....'), k = a('.....'), l = a('.....'), m = a('.....');
+    a('.....');
+    var n = a('.....'), o = a('.....'), p = a('.....'), q = a('.....'), r = a('.....'), s = a('.....'), t = a('.....');
+    const u = v => (0, i.jsxs)('div', {
         style: {
             padding: 25,
             background: 'rgba(255,255,255,0.1)',
@@ -33,23 +23,19 @@ a.register('E8iF1', function(b, c) {
         },
         children: [
             (0, i.jsx)('div', {
-                style: {
-                    marginBottom: 5
-                },
+                style: { marginBottom: 5 },
                 children: (0, i.jsx)(m.default.Text, {
-                    style: {
-                        fontWeight: n.FontWeights.Bold
-                    },
-                    children: a.title
+                    style: { fontWeight: n.FontWeights.Bold },
+                    children: v.title
                 })
             }),
             (0, i.jsx)(m.default.Text, {
                 italic: !0,
-                children: a.description
+                children: v.description
             })
         ]
     });
-    var _v = a => (0, i.jsxs)('div', {
+    var _v = w => (0, i.jsxs)('div', {
         className: 'maxWidth',
         children: [
             (0, i.jsx)(m.default.Title, {
@@ -92,9 +78,7 @@ a.register('E8iF1', function(b, c) {
                 className: 'maxWidth',
                 direction: 'vertical',
                 size: 14,
-                style: {
-                    marginTop: 10
-                },
+                style: { marginTop: 10 },
                 children: [
                     (0, i.jsx)(u, {
                         title: 'Career Level 50+',
@@ -107,7 +91,7 @@ a.register('E8iF1', function(b, c) {
                 ]
             }),
             (0, i.jsx)(k.default, {}),
-            a.publishRequirementError ? (0, i.jsx)('div', {
+            w.publishRequirementError ? (0, i.jsx)('div', {
                 style: {
                     background: 'rgba(255,0,0,0.1)',
                     padding: 25,
@@ -116,7 +100,7 @@ a.register('E8iF1', function(b, c) {
                 },
                 children: (0, i.jsxs)(m.default.Text, {
                     children: [
-                        a.publishRequirementError,
+                        w.publishRequirementError,
                         ' ',
                         (0, i.jsx)('br', {}),
                         (0, i.jsx)('br', {}),
@@ -143,10 +127,8 @@ a.register('E8iF1', function(b, c) {
                         size: 'large',
                         block: !0,
                         type: 'primary',
-                        style: {
-                            height: 55
-                        },
-                        onClick: a.next,
+                        style: { height: 55 },
+                        onClick: w.next,
                         children: 'Continue'
                     }),
                     (0, i.jsx)(m.default.Text, {

@@ -7,30 +7,15 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('FCtN4', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _w;
     });
-    var f = b('s/YA9'),
-        g = b('ltxDW'),
-        h = b('WR/AP'),
-        i = b('Qwvan'),
-        j = b('UkCpC'),
-        k = b('5oSX+'),
-        l = b('d7UqH'),
-        m = b('5Fjxs'),
-        n = b('TKraP'),
-        o = b('IHqK5'),
-        p = b('ktWA02'),
-        q = b('hycyg'),
-        r = b('3jaMj'),
-        s = b('UaUBz0'),
-        t = b('9zaF+'),
-        u = b('CbU7r');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....'), t = b('.....'), u = b('.....');
     class v extends g.default {
         destroy(w) {
             super.destroy(w), this.timeout && clearTimeout(this.timeout);
@@ -47,9 +32,7 @@ b.register('FCtN4', function(c, d) {
                         volume: 0.8,
                         type: u.SoundType.soundEffect
                     })
-                }), this.options.mode === i.JumpGranterMode.reset ? (x.physics.state.jump.jumpCounter = 0, x.physics.state.jump.jumpsLeft = (0, n.ClassDesignerUtils_GetJumpParams)({
-                    characterId: x.id
-                }).maxJumps) : this.options.mode === i.JumpGranterMode.grant && (x.physics.state.jump.jumpsLeft += this.options.jumpsNumber));
+                }), this.options.mode === i.JumpGranterMode.reset ? (x.physics.state.jump.jumpCounter = 0, x.physics.state.jump.jumpsLeft = (0, n.ClassDesignerUtils_GetJumpParams)({ characterId: x.id }).maxJumps) : this.options.mode === i.JumpGranterMode.grant && (x.physics.state.jump.jumpsLeft += this.options.jumpsNumber));
             }), (0, f.default)(this, 'isSensorActive', () => !this.isDisabled && !this.state.disabled && this.state.active), (0, f.default)(this, 'animateAlpha', () => {
                 var x;
                 const y = this.state.active ? 1 : 0;
@@ -58,8 +41,8 @@ b.register('FCtN4', function(c, d) {
                     alpha: y,
                     duration: 250
                 });
-            }), (0, f.default)(this, 'onStateChange', w => {
-                'disabled' === w && (!this.isDisabled && this.state.disabled && this.isAnimationReady ? this.anim.view.play(h.AnimNames.activate) : this.isDisabled || this.state.disabled || !this.isAnimationReady || this.startIdleAnimation()), 'active' === w && this.animateAlpha();
+            }), (0, f.default)(this, 'onStateChange', x => {
+                'disabled' === x && (!this.isDisabled && this.state.disabled && this.isAnimationReady ? this.anim.view.play(h.AnimNames.activate) : this.isDisabled || this.state.disabled || !this.isAnimationReady || this.startIdleAnimation()), 'active' === x && this.animateAlpha();
             }), (0, f.default)(this, 'startIdleAnimation', () => {
                 this.anim.view.play(h.AnimNames.idle), this.anim.view.setScale(0), this.tweens.add({
                     targets: this.anim.view,
@@ -70,21 +53,21 @@ b.register('FCtN4', function(c, d) {
                 });
             }), this.anim = this.parts.add.animatedSprite({
                 ...h.SpriteAnimAsset,
-                onReady: w => {
+                onReady: x => {
                     this.size = {
                         ...(0, p.default)({
-                            height: w.view.height,
-                            width: w.view.width,
+                            height: x.view.height,
+                            width: x.view.width,
                             newWidth: o.JumpGranterDeviceSize.width
                         })
-                    }, w.view.displayWidth = this.size.width, w.view.displayHeight = this.size.height, this.tweens.add({
-                        targets: w.view,
-                        y: w.view.y - 15,
+                    }, x.view.displayWidth = this.size.width, x.view.displayHeight = this.size.height, this.tweens.add({
+                        targets: x.view,
+                        y: x.view.y - 15,
                         duration: 1500,
                         yoyo: !0,
                         repeat: -1,
                         ease: Phaser.Math.Easing.Sine.InOut
-                    }), this.isAnimationReady = !0, !this.state.active && (0, j.InGamePhase)() && (w.view.alpha = 0), (this.isDisabled || this.state.disabled) && w.view.play(h.AnimNames.inactive);
+                    }), this.isAnimationReady = !0, !this.state.active && (0, j.InGamePhase)() && (x.view.alpha = 0), (this.isDisabled || this.state.disabled) && x.view.play(h.AnimNames.inactive);
                 }
             }), (0, q.isSavedVersion)() && (0, j.InPreGamePhase)() || this.sensors.add.circle({
                 r: o.JumpGranterDeviceSize.radius,
@@ -101,13 +84,13 @@ b.register('FCtN4', function(c, d) {
         }
     }
     var _w = v;
-}), b.register('WR/AP', function(c, d) {
-    a(c.exports, 'AnimNames', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'AnimNames', function () {
         return _f;
-    }), a(c.exports, 'SpriteAnimAsset', function() {
+    }), a(c.exports, 'SpriteAnimAsset', function () {
         return _h;
     });
-    var e = b('UaUBz0');
+    var e = b('.....');
     let _f;
     var g;
     (g = _f || (_f = {})).idle = 'idle', g.activate = 'activate', g.inactive = 'inactive';
@@ -116,7 +99,8 @@ b.register('FCtN4', function(c, d) {
         spritesheetUrl: (0, e.default)('devices/jump_granter/animation.png'),
         frameWidth: 391,
         frameHeight: 373,
-        animations: [{
+        animations: [
+            {
                 animName: _f.idle,
                 frameRate: 1,
                 repeat: -1,
@@ -145,29 +129,29 @@ b.register('FCtN4', function(c, d) {
             }
         ]
     };
-}), b.register('Qwvan', function(c, d) {
+}), b.register('.....', function (c, d) {
     let e;
     var f;
-    a(c.exports, 'JumpGranterMode', function() {
+    a(c.exports, 'JumpGranterMode', function () {
         return e;
     }), (f = e || (e = {})).reset = 'reset', f.grant = 'grant';
-}), b.register('IHqK5', function(c, d) {
-    a(c.exports, 'JumpGranterDeviceSize', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'JumpGranterDeviceSize', function () {
         return _e;
     });
     const _e = {
-        radius: (0, b('BAjCp').default)(125),
+        radius: (0, b('.....').default)(125),
         width: 125
     };
-}), b.register('ktWA02', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _e;
     });
-    var _e = a => {
-        const f = a.newWidth / a.width;
+    var _e = f => {
+        const g = f.newWidth / f.width;
         return {
-            height: a.height * f,
-            width: a.width * f
+            height: f.height * g,
+            width: f.width * g
         };
     };
 });

@@ -7,25 +7,15 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('2QQSe', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _s;
     });
-    var f = b('s/YA9'),
-        g = b('u/WlI21'),
-        h = b('uc4mA17'),
-        i = b('yK0U7'),
-        j = b('hycyg'),
-        k = b('UkCpC'),
-        l = b('ltxDW'),
-        m = b('vKzN6'),
-        n = b('u6HEq'),
-        o = b('dsz4G'),
-        p = b('fI6of');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....');
     const q = 276;
     class r extends l.default {
         constructor(s) {
@@ -48,10 +38,8 @@ b.register('2QQSe', function(c, d) {
                     customActionCallback: this.options.useCustomAction && this.options.channelToTriggerCustomAction ? () => {
                         this.sendToServerDevice(o.Messages.customAction);
                     } : void 0,
-                    onQuestionAnswered: s => {
-                        this.questionsAnswered = this.questionsAnswered + 1, this.sendToServerDevice(o.Messages.answered, {
-                            answer: s
-                        }), this.currentQuestionId = this.state.nextQuestionId || this.state.currentQuestionId || '', this.deviceUI.update({
+                    onQuestionAnswered: t => {
+                        this.questionsAnswered = this.questionsAnswered + 1, this.sendToServerDevice(o.Messages.answered, { answer: t }), this.currentQuestionId = this.state.nextQuestionId || this.state.currentQuestionId || '', this.deviceUI.update({
                             currentQuestionId: this.currentQuestionId,
                             questionsAnswered: this.questionsAnswered
                         });
@@ -90,21 +78,12 @@ b.register('2QQSe', function(c, d) {
                 this.interactiveZones.setForceDisabled(!1);
             }), (0, f.default)(this, 'onDisabled', () => {
                 this.deviceUI.close(), this.interactiveZones.setForceDisabled(!0);
-            }), (0, f.default)(this, 'getScale', () => this.options.size / 48), (0, f.default)(this, 'onStateChange', s => {
-                'enabled' === s && (this.animateEnabledChange(), this.state.enabled ? this.onEnabled() : this.onDisabled()), 'questions' === s && this.deviceUI.update({
-                    eqs: (0, i.EncryptData)(JSON.parse(this.state.questions || '[]'), this.id)
-                }), 'currentQuestionId' === s && (this.deviceUI.update({
-                    currentQuestionId: this.state.currentQuestionId
-                }), this.currentQuestionId = this.state.currentQuestionId), 'correctText' === s && this.deviceUI.update({
-                    textShownWhenAnsweringCorrectly: this.state.correctText
-                }), 'incorrectText' === s && this.deviceUI.update({
-                    textShownWhenAnsweringIncorrectly: this.state.incorrectText
-                });
+            }), (0, f.default)(this, 'getScale', () => this.options.size / 48), (0, f.default)(this, 'onStateChange', t => {
+                'enabled' === t && (this.animateEnabledChange(), this.state.enabled ? this.onEnabled() : this.onDisabled()), 'questions' === t && this.deviceUI.update({ eqs: (0, i.EncryptData)(JSON.parse(this.state.questions || '[]'), this.id) }), 'currentQuestionId' === t && (this.deviceUI.update({ currentQuestionId: this.state.currentQuestionId }), this.currentQuestionId = this.state.currentQuestionId), 'correctText' === t && this.deviceUI.update({ textShownWhenAnsweringCorrectly: this.state.correctText }), 'incorrectText' === t && this.deviceUI.update({ textShownWhenAnsweringIncorrectly: this.state.incorrectText });
             }), (0, f.default)(this, 'setupVisualEditing', () => {
                 if (!(0, k.InPreGamePhase)() || !(0, j.isSavedVersion)())
                     return;
-                const t = (0, h.FetchOptionSchemaProperty)(this, 'size'),
-                    u = 2.875;
+                const t = (0, h.FetchOptionSchemaProperty)(this, 'size'), u = 2.875;
                 this.visualEditing.add.box({
                     width: 2 * this.options.size * u,
                     height: 2 * this.options.size,
@@ -114,10 +93,8 @@ b.register('2QQSe', function(c, d) {
                     maxWidth: 2 * t.max * u,
                     keepRatio: !0,
                     rotable: !1,
-                    onChange: t => {
-                        (0, g.ReplaceVisualEditingPreview)(t.x, t.y, {
-                            size: t.height / 2
-                        });
+                    onChange: v => {
+                        (0, g.ReplaceVisualEditingPreview)(v.x, v.y, { size: v.height / 2 });
                     }
                 });
             }), this.setupVisualEditing(), this.createBases(), this.boundingBox.setHardcoded({
@@ -127,73 +104,68 @@ b.register('2QQSe', function(c, d) {
         }
     }
     var _s = r;
-}), b.register('u/WlI21', function(c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function () {
         return _i;
     });
-    var e = b('hemXM'),
-        f = b('sWmxu5'),
-        g = b('EzUqb'),
-        h = b('GQMbT');
-    const _i = (a, b, c) => {
-        const j = (0, h.FetchVisualEditingPreview)(),
-            k = (0, g.FetchCurrentlyEditedDevice)();
-        if (!k || !j)
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    const _i = (j, k, l) => {
+        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        if (!n || !m)
             return;
-        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
         (0, f.default)({
-            deviceOption: j.deviceOption,
+            deviceOption: m.deviceOption,
             id: e.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: l,
-            layerId: k.layers.getLayer(),
-            name: j.name,
+            x: j,
+            y: k,
+            depth: o,
+            layerId: n.layers.getLayer(),
+            name: m.name,
             isPreview: !0,
             options: {
-                ...j.options,
-                ...c
+                ...m.options,
+                ...l
             },
             placedByClient: !0,
-            state: j.deviceOption.defaultState
+            state: m.deviceOption.defaultState
         });
     };
-}), b.register('sWmxu5', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _g;
     });
-    var e = b('heTaO'),
-        f = b('2LtPo');
-    var _g = a => {
-        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
+    var e = b('.....'), f = b('.....');
+    var _g = h => {
+        (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
-}), b.register('uc4mA17', function(c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function () {
         return _e;
     });
-    const _e = (a, c) => {
-        var f, g, h;
-        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
+    const _e = (f, g) => {
+        var h, i, j;
+        const k = f.deviceOption.optionSchema.options.find(l => l.key === g);
         return {
-            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
-            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
-            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
+            min: null === (h = null == k ? void 0 : k.option.props) || void 0 === h ? void 0 : h.min,
+            max: null === (i = null == k ? void 0 : k.option.props) || void 0 === i ? void 0 : i.max,
+            step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('vKzN6', function(c, d) {
-    a(c.exports, 'BaseAsset', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'BaseAsset', function () {
         return _e;
     });
     const _e = {
         imageId: 'gimkit_live_question_device_base',
-        imageUrl: (0, b('UaUBz0').default)('devices/gimkit_live_question/on_2.png')
+        imageUrl: (0, b('.....').default)('devices/gimkit_live_question/on_2.png')
     };
-}), b.register('u6HEq', function(c, d) {
-    a(c.exports, 'DisabledBaseAsset', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'DisabledBaseAsset', function () {
         return _e;
     });
     const _e = {
         imageId: 'gimkit_live_question_device_base_disabled',
-        imageUrl: (0, b('UaUBz0').default)('devices/gimkit_live_question/off.png')
+        imageUrl: (0, b('.....').default)('devices/gimkit_live_question/off.png')
     };
 });

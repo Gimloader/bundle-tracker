@@ -7,22 +7,15 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('/3WqB', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _o;
     });
-    var f = b('256sH'),
-        g = b('UaUBz0'),
-        h = b('hycyg'),
-        i = b('UkCpC'),
-        j = b('ltxDW'),
-        k = b('73Aki'),
-        l = b('AHhkR'),
-        m = b('T6zrb');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....');
     class n extends j.default {
         constructor(o) {
             if (super(o), (0, i.InPreGamePhase)() && (0, h.isSavedVersion)()) {
@@ -30,7 +23,7 @@ b.register('/3WqB', function(c, d) {
                 const q = (0, f.default)(this.options.itemId);
                 q && (p = q.previewImage);
                 const r = l.default.Manager;
-                new(0, k.default)({
+                new (0, k.default)({
                     device: this,
                     baseColor: r.baseColor,
                     boxColor: r.boxColor,
@@ -49,18 +42,17 @@ b.register('/3WqB', function(c, d) {
         }
     }
     var _o = n;
-}), b.register('T6zrb', function(c, d) {
-    a(c.exports, 'BaseAsset', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'BaseAsset', function () {
         return _f;
-    }), a(c.exports, 'UnknownItemAsset', function() {
+    }), a(c.exports, 'UnknownItemAsset', function () {
         return _g;
     });
-    var e = b('UaUBz0');
+    var e = b('.....');
     const _f = {
             imageId: (0, e.default)('devices/item_granter/base.png'),
             imageUrl: (0, e.default)('devices/item_granter/base.png')
-        },
-        _g = {
+        }, _g = {
             imageId: '__UNKNOWN_ITEM',
             imageUrl: (0, e.default)('devices/item_granter/question-mark-2.png')
         };

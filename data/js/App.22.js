@@ -6,78 +6,71 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('en+bc', function(d, e) {
+c.register('.....', function (d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function() {
+    }), a(d.exports, 'default', function () {
         return _p;
     });
-    var g = c('gRbUn'),
-        h = c('O0Kav'),
-        i = c('N+hlj'),
-        j = c('lKjHC'),
-        k = c('iS3g4'),
-        l = c('ur54y'),
-        m = c('01s/9');
-    let n = null,
-        o = null;
-    var _p = a => {
-        const [q, r] = h.useState(!1), [s, t] = h.useState(0);
+    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....');
+    let n = null, o = null;
+    var _p = q => {
+        const [r, s] = h.useState(!1), [t, u] = h.useState(0);
         h.useEffect(() => {
-            if (!q)
-                return () => {};
-            if (s >= 3)
-                return () => {};
+            if (!r)
+                return () => {
+                };
+            if (t >= 3)
+                return () => {
+                };
             o || (o = document.createElement('div'), o.id = 'character-preview-div', o.className = 'maxWidth maxHeight');
-            const u = document.getElementById('character-preview-container');
-            return u && o && !u.contains(o) && u.appendChild(o), (0, l.FixSpinePlugin)(), (0, m.FixPhaserBootProcess)(), window.SPINE_GAME_OBJECT_TYPE = 'spinePreview', n || (n = new Phaser.Game({
+            const v = document.getElementById('character-preview-container');
+            return v && o && !v.contains(o) && v.appendChild(o), (0, l.FixSpinePlugin)(), (0, m.FixPhaserBootProcess)(), window.SPINE_GAME_OBJECT_TYPE = 'spinePreview', n || (n = new Phaser.Game({
                 ...i.CharacterPreviewPhaserConfig,
                 parent: o
             })), n.onError = () => {
-                t(a => a + 1), null == n || n.destroy(!0), n = null;
-            }, n.skin = a.id, n.editStyles = a.editStyles, null == n || n.scene.remove('CharacterScene'), null == n || n.scene.add('CharacterScene', k.CharacterScene, !0), () => {
-                s >= 3 && (null == n || n.destroy(!0), n = null, o = null), null == n || n.scene.remove('CharacterScene');
+                u(w => w + 1), null == n || n.destroy(!0), n = null;
+            }, n.skin = q.id, n.editStyles = q.editStyles, null == n || n.scene.remove('CharacterScene'), null == n || n.scene.add('CharacterScene', k.CharacterScene, !0), () => {
+                t >= 3 && (null == n || n.destroy(!0), n = null, o = null), null == n || n.scene.remove('CharacterScene');
             };
         }, [
-            q,
-            s,
-            a.id,
-            a.editStyles
+            r,
+            t,
+            q.id,
+            q.editStyles
         ]), (0, j.useDidMount)(() => {
-            r(!0);
+            s(!0);
         });
-        return s >= 3 ? a.fallback : (0, g.jsx)('div', {
+        return t >= 3 ? q.fallback : (0, g.jsx)('div', {
             id: 'character-preview-container',
             className: 'maxWidth maxHeight',
             onClick: () => {
-                var u, v, w, x;
-                null === (u = null == n || null === (v = n.scene) || void 0 === v ? void 0 : v.scenes[0]) || void 0 === u || null === (w = u.character) || void 0 === w || null === (x = w.animation) || void 0 === x || x.toggleAnimation();
+                var v, w, x, y;
+                null === (v = null == n || null === (w = n.scene) || void 0 === w ? void 0 : w.scenes[0]) || void 0 === v || null === (x = v.character) || void 0 === x || null === (y = x.animation) || void 0 === y || y.toggleAnimation();
             }
         });
     };
-}), c.register('N+hlj', function(d, e) {
-    a(d.exports, 'CharacterPreviewPhaserConfig', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'CharacterPreviewPhaserConfig', function () {
         return _h;
     });
-    var f = c('ddhGF'),
-        g = c('jwjRP');
+    var f = c('.....'), g = c('.....');
     const _h = {
         type: b(f).WEBGL,
         roundPixels: !1,
         transparent: !0,
         plugins: {
             scene: [{
-                key: 'spine.SpinePlugin',
-                plugin: g.SpinePlugin,
-                mapping: 'spine'
-            }]
+                    key: 'spine.SpinePlugin',
+                    plugin: g.SpinePlugin,
+                    mapping: 'spine'
+                }]
         },
         scale: {
             mode: b(f).Scale.NONE,
@@ -86,19 +79,13 @@ c.register('en+bc', function(d, e) {
         parent: 'character-preview-div',
         scene: [],
         banner: !1,
-        pipeline: {
-            skipPipelinesAtBoot: !0
-        }
+        pipeline: { skipPipelinesAtBoot: !0 }
     };
-}), c.register('iS3g4', function(d, e) {
-    a(d.exports, 'CharacterScene', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'CharacterScene', function () {
         return _k;
     });
-    var f = c('s/YA9'),
-        g = c('N4JO+'),
-        h = c('6OHGq'),
-        i = c('u4kIB'),
-        j = c('i2ykh');
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
     class _k extends Phaser.Scene {
         preload() {
             (0, g.CharacterScenePreload)(this);
@@ -110,170 +97,152 @@ c.register('en+bc', function(d, e) {
                 this.cache.json.add('data_' + this.skinId, m);
             }
             try {
-                this.character = new(0, j.CharacterSceneCharacter)(this);
+                this.character = new (0, j.CharacterSceneCharacter)(this);
             } catch (l) {
                 this.game.onError && this.game.onError();
             }
             (0, h.CharacterSceneHandleResize)(this), this.resizeListener = () => {
                 (0, h.CharacterSceneHandleResize)(this);
             }, window.addEventListener('resize', this.resizeListener), this.events.on('destroy', () => {
-                var m;
-                null === (m = this.character) || void 0 === m || m.destroy(), window.removeEventListener('resize', this.resizeListener), this.resizeListener = void 0;
+                var n;
+                null === (n = this.character) || void 0 === n || n.destroy(), window.removeEventListener('resize', this.resizeListener), this.resizeListener = void 0;
             });
         }
         constructor(...a) {
             super(...a), (0, f.default)(this, 'onError', null);
         }
     }
-}), c.register('N4JO+', function(d, e) {
-    a(d.exports, 'CharacterScenePreload', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'CharacterScenePreload', function () {
         return _g;
     });
-    var f = c('UaUBz0');
-    const _g = a => {
-        a.skinId = a.game.skin, a.editStyles = a.game.editStyles;
-        const h = Math.random().toString();
-        a.game.cache.json.exists('data_compressed_' + a.skinId) || (a.load.spineJson('data_compressed_' + a.skinId, (0, f.default)(`characters/spine/${ a.skinId }.json?cb=${ h }`)), a.load.spineAtlas('atlas_' + a.skinId, (0, f.default)(`characters/spine/${ a.skinId }.atlas?cb=${ h }`)));
+    var f = c('.....');
+    const _g = h => {
+        h.skinId = h.game.skin, h.editStyles = h.game.editStyles;
+        const i = Math.random().toString();
+        h.game.cache.json.exists('data_compressed_' + h.skinId) || (h.load.spineJson('data_compressed_' + h.skinId, (0, f.default)(`characters/spine/${ h.skinId }.json?cb=${ i }`)), h.load.spineAtlas('atlas_' + h.skinId, (0, f.default)(`characters/spine/${ h.skinId }.atlas?cb=${ i }`)));
     };
-}), c.register('6OHGq', function(d, e) {
-    a(d.exports, 'CharacterSceneHandleResize', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'CharacterSceneHandleResize', function () {
         return _g;
     });
-    var f = c('BbOuF');
-    const _g = a => {
-        const h = document.getElementById('character-preview-div');
-        if (!h)
+    var f = c('.....');
+    const _g = h => {
+        const i = document.getElementById('character-preview-div');
+        if (!i)
             return;
-        const i = h.clientWidth,
-            j = h.clientHeight,
-            k = window.devicePixelRatio,
-            l = k * i,
-            m = k * j,
-            n = Math.min(l / i, m / j);
-        a.scale.resize(n * i, n * j);
-        const o = 1 / n;
-        a.game.canvas.style.transform = 'scaleX(' + o + ') scaleY(' + o + ')', a.game.canvas.style.transformOrigin = '0 0', a.cameras.main.setZoom(0.4 * n), (0, f.CharacterSceneCenterCameraOnCharacter)(a), a.scale.refresh();
+        const j = i.clientWidth, k = i.clientHeight, l = window.devicePixelRatio, m = l * j, n = l * k, o = Math.min(m / j, n / k);
+        h.scale.resize(o * j, o * k);
+        const p = 1 / o;
+        h.game.canvas.style.transform = 'scaleX(' + p + ') scaleY(' + p + ')', h.game.canvas.style.transformOrigin = '0 0', h.cameras.main.setZoom(0.4 * o), (0, f.CharacterSceneCenterCameraOnCharacter)(h), h.scale.refresh();
     };
-}), c.register('BbOuF', function(d, e) {
-    a(d.exports, 'CharacterSceneCenterCameraOnCharacter', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'CharacterSceneCenterCameraOnCharacter', function () {
         return _f;
     });
-    const _f = a => {
-        if (!a.character)
+    const _f = g => {
+        if (!g.character)
             return;
-        const g = a.character.spine.displayWidth,
-            h = a.character.spine.displayHeight,
-            i = a.add.rectangle(0, 0, g, h, 16711680).setOrigin(a.character.spine.displayOriginX / g, a.character.spine.displayOriginY / h).setVisible(!1),
-            j = i.getBounds();
-        i.destroy(), a.cameras.main.centerOn(j.centerX, j.centerY);
+        const h = g.character.spine.displayWidth, i = g.character.spine.displayHeight, j = g.add.rectangle(0, 0, h, i, 16711680).setOrigin(g.character.spine.displayOriginX / h, g.character.spine.displayOriginY / i).setVisible(!1), k = j.getBounds();
+        j.destroy(), g.cameras.main.centerOn(k.centerX, k.centerY);
     };
-}), c.register('i2ykh', function(d, e) {
-    a(d.exports, 'CharacterSceneCharacter', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'CharacterSceneCharacter', function () {
         return _j;
     });
-    var f = c('jwjRP'),
-        g = c('xmKXm'),
-        h = c('BbOuF'),
-        i = c('UhoTt');
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
     class _j {
         destroy() {
             this.animation.destroy();
         }
         constructor(k) {
-            this.scene = k, this.skinId = k.skinId, this.editStyles = new(0, g.CharacterSceneCharacterEditStyles)(this), this.animation = new(0, i.CharacterSceneAnimation)(this), this.spine = k.add.spinePreview(0, 0, 'data_' + this.skinId, 'atlas_' + this.skinId, new(0, f.SkinsAndAnimationBoundsProvider)('idle', [this.skinId])), this.spine.skeleton.setSkinByName(this.skinId), this.editStyles.apply(), this.animation.onSkinChanged(), (0, h.CharacterSceneCenterCameraOnCharacter)(k);
+            this.scene = k, this.skinId = k.skinId, this.editStyles = new (0, g.CharacterSceneCharacterEditStyles)(this), this.animation = new (0, i.CharacterSceneAnimation)(this), this.spine = k.add.spinePreview(0, 0, 'data_' + this.skinId, 'atlas_' + this.skinId, new (0, f.SkinsAndAnimationBoundsProvider)('idle', [this.skinId])), this.spine.skeleton.setSkinByName(this.skinId), this.editStyles.apply(), this.animation.onSkinChanged(), (0, h.CharacterSceneCenterCameraOnCharacter)(k);
         }
     }
-}), c.register('xmKXm', function(d, e) {
-    a(d.exports, 'CharacterSceneCharacterEditStyles', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'CharacterSceneCharacterEditStyles', function () {
         return _h;
     });
-    var f = c('s/YA9'),
-        g = c('WrOhL');
+    var f = c('.....'), g = c('.....');
     class _h {
         constructor(i) {
             (0, f.default)(this, 'apply', () => {
                 var j;
-                const k = this.character.scene.cache.json.get('data_' + this.character.skinId),
-                    l = [];
-                null == k || null === (j = k.style) || void 0 === j || j.categories.forEach(j => {
-                    const m = this.character.scene.editStyles[j.name];
-                    if (j.type === g.CosmeticStyleCategoryType.color && j.color)
+                const k = this.character.scene.cache.json.get('data_' + this.character.skinId), l = [];
+                null == k || null === (j = k.style) || void 0 === j || j.categories.forEach(m => {
+                    const n = this.character.scene.editStyles[m.name];
+                    if (m.type === g.CosmeticStyleCategoryType.color && m.color)
                         l.push({
                             type: 'color',
-                            slotNames: j.color.slotNames,
-                            color: m || j.color.defaultColor
+                            slotNames: m.color.slotNames,
+                            color: n || m.color.defaultColor
                         });
-                    else if (j.options.length) {
-                        var n;
-                        const o = null !== (n = j.options.find(j => m === j.name)) && void 0 !== n ? n : j.options[0];
-                        l.push(...o.applications);
+                    else if (m.options.length) {
+                        var o;
+                        const p = null !== (o = m.options.find(q => n === q.name)) && void 0 !== o ? o : m.options[0];
+                        l.push(...p.applications);
                     }
-                }), l.forEach(j => {
-                    'color' === j.type && j.slotNames.forEach(k => {
-                        const m = this.character.spine.skeleton.slots.find(j => {
-                            var n;
-                            return (null == j ? void 0 : j.data.name) === k || (null == j || null === (n = j.attachment) || void 0 === n ? void 0 : n.name) === k;
+                }), l.forEach(m => {
+                    'color' === m.type && m.slotNames.forEach(n => {
+                        const o = this.character.spine.skeleton.slots.find(p => {
+                            var q;
+                            return (null == p ? void 0 : p.data.name) === n || (null == p || null === (q = p.attachment) || void 0 === q ? void 0 : q.name) === n;
                         });
-                        m && (null == m || m.color.setFromString(j.color));
+                        o && (null == o || o.color.setFromString(m.color));
                     });
                 });
             }), this.character = i;
         }
     }
-}), c.register('UhoTt', function(d, e) {
-    a(d.exports, 'CharacterSceneAnimation', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'CharacterSceneAnimation', function () {
         return _l;
     });
-    var f = c('s/YA9'),
-        g = c('wKCPn');
-    const h = 0,
-        i = 1,
-        j = 2,
-        k = 3;
+    var f = c('.....'), g = c('.....');
+    const h = 0, i = 1, j = 2, k = 3;
     class _l {
         constructor(m) {
             (0, f.default)(this, 'skinChanged', !1), (0, f.default)(this, 'availableAnimations', []), (0, f.default)(this, 'currentBodyAnimation', g.CharacterBodyAnimationState.rest), (0, f.default)(this, 'bodyAnimationLocked', !1), (0, f.default)(this, 'bodyAnimationStartedAt', 0), (0, f.default)(this, 'currentEyeAnimation', g.CharacterEyeAnimationState.idle), (0, f.default)(this, 'lastGroundedAnimationAt', 0), (0, f.default)(this, 'setupAnimations', () => {
                 const n = this.character.spine;
-                this.availableAnimations = n.skeleton.data.animations.map(n => n.name);
+                this.availableAnimations = n.skeleton.data.animations.map(o => o.name);
                 const o = Object.values(g.default.body.animationNames);
-                o.forEach(c => {
-                    o.forEach(o => {
-                        let p = g.default.body.transition.defaultDuration;
-                        c === g.CharacterBodyAnimationState.jumpMiddleIdle && o === g.CharacterBodyAnimationState.jumpDownIdle && (p = g.default.body.transition.jumpFallingDuration), n.animationStateData.setMix(c, o, p);
+                o.forEach(p => {
+                    o.forEach(q => {
+                        let r = g.default.body.transition.defaultDuration;
+                        p === g.CharacterBodyAnimationState.jumpMiddleIdle && q === g.CharacterBodyAnimationState.jumpDownIdle && (r = g.default.body.transition.jumpFallingDuration), n.animationStateData.setMix(p, q, r);
                     });
                 }), this.playBodyAnimation(this.currentBodyAnimation), this.playEyeAnimation(this.currentEyeAnimation), this.availableAnimations.includes(`skins-${ this.character.skinId }-common`) && this.character.spine.animationState.setAnimation(h, `skins-${ this.character.skinId }-common`, !0), this.character.spine.animationState.addListener({
-                    complete: n => {
-                        this.onAnimationComplete(n);
+                    complete: p => {
+                        this.onAnimationComplete(p);
                     }
                 });
-            }), (0, f.default)(this, 'playBodyAnimation', m => {
-                var n;
-                if (m === this.currentBodyAnimation && !this.skinChanged)
+            }), (0, f.default)(this, 'playBodyAnimation', n => {
+                var o;
+                if (n === this.currentBodyAnimation && !this.skinChanged)
                     return;
                 if (this.bodyAnimationLocked && !this.skinChanged) {
-                    var o, p, q;
-                    const r = null !== (q = null === (o = g.default.animationLocks) || void 0 === o || null === (p = o[this.currentBodyAnimation]) || void 0 === p ? void 0 : p[m]) && void 0 !== q ? q : 0;
-                    if (r) {
-                        if (Date.now() < this.bodyAnimationStartedAt + r)
+                    var p, q, r;
+                    const s = null !== (r = null === (p = g.default.animationLocks) || void 0 === p || null === (q = p[this.currentBodyAnimation]) || void 0 === q ? void 0 : q[n]) && void 0 !== r ? r : 0;
+                    if (s) {
+                        if (Date.now() < this.bodyAnimationStartedAt + s)
                             return;
                     }
                 }
-                const o = !!(null === (n = g.default.animationLocks) || void 0 === n ? void 0 : n[m]);
-                this.bodyAnimationLocked = o, this.bodyAnimationStartedAt = Date.now(), m === g.CharacterBodyAnimationState.rest ? this.startBlinkAnimation() : this.stopBlinkAnimation(), this.currentBodyAnimation = m, this.character.spine.animationState.setAnimation(k, g.default.body.animationNames[m], g.default.bodyLoopedAnimations.includes(m)), this.playBodySupplementalAnimation(m);
-            }), (0, f.default)(this, 'playEyeAnimation', m => {
-                (m !== this.currentEyeAnimation || this.skinChanged) && (this.currentEyeAnimation = m, this.character.spine.animationState.setAnimation(j, g.default.eyes.animationNames[m], !0));
-            }), (0, f.default)(this, 'playBodySupplementalAnimation', m => {
-                const n = g.default.body.animationNames[m],
-                    o = 'skins-' + this.character.skinId + '-' + n;
-                this.availableAnimations.includes(o) ? this.character.spine.animationState.setAnimation(i, o, !0) : this.character.spine.animationState.clearTrack(i);
+                const t = !!(null === (s = g.default.animationLocks) || void 0 === s ? void 0 : s[n]);
+                this.bodyAnimationLocked = t, this.bodyAnimationStartedAt = Date.now(), n === g.CharacterBodyAnimationState.rest ? this.startBlinkAnimation() : this.stopBlinkAnimation(), this.currentBodyAnimation = n, this.character.spine.animationState.setAnimation(k, g.default.body.animationNames[n], g.default.bodyLoopedAnimations.includes(n)), this.playBodySupplementalAnimation(n);
+            }), (0, f.default)(this, 'playEyeAnimation', n => {
+                (n !== this.currentEyeAnimation || this.skinChanged) && (this.currentEyeAnimation = n, this.character.spine.animationState.setAnimation(j, g.default.eyes.animationNames[n], !0));
+            }), (0, f.default)(this, 'playBodySupplementalAnimation', n => {
+                const o = g.default.body.animationNames[n], p = 'skins-' + this.character.skinId + '-' + o;
+                this.availableAnimations.includes(p) ? this.character.spine.animationState.setAnimation(i, p, !0) : this.character.spine.animationState.clearTrack(i);
             }), (0, f.default)(this, 'startBlinkAnimation', () => {
                 this.blinkTimer || (this.playEyeAnimation(g.CharacterEyeAnimationState.idle), this.blinkTimer = window.setTimeout(() => {
                     this.blinkTimer = null, this.playEyeAnimation(g.CharacterEyeAnimationState.blink);
                 }, g.default.eyes.blinkEvery));
             }), (0, f.default)(this, 'stopBlinkAnimation', () => {
                 this.playEyeAnimation(g.CharacterEyeAnimationState.idle), this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null);
-            }), (0, f.default)(this, 'onAnimationComplete', m => {
-                m.trackIndex === j && this.currentBodyAnimation === g.CharacterBodyAnimationState.rest && this.currentEyeAnimation === g.CharacterEyeAnimationState.blink && this.startBlinkAnimation();
+            }), (0, f.default)(this, 'onAnimationComplete', n => {
+                n.trackIndex === j && this.currentBodyAnimation === g.CharacterBodyAnimationState.rest && this.currentEyeAnimation === g.CharacterEyeAnimationState.blink && this.startBlinkAnimation();
             }), (0, f.default)(this, 'toggleAnimation', () => {
                 this.currentBodyAnimation === g.CharacterBodyAnimationState.rest ? this.playBodyAnimation(g.CharacterBodyAnimationState.run) : this.playBodyAnimation(g.CharacterBodyAnimationState.rest);
             }), (0, f.default)(this, 'onSkinChanged', () => {

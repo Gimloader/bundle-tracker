@@ -1,10 +1,10 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('vZVkZ', function(b, c) {
+a.register('.....', function (b, c) {
     var d, e, f, g, h;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), e = b.exports, f = 'default', g = function() {
+    }), e = b.exports, f = 'default', g = function () {
         return _q;
     }, Object.defineProperty(e, f, {
         get: g,
@@ -12,15 +12,12 @@ a.register('vZVkZ', function(b, c) {
         enumerable: !0,
         configurable: !0
     });
-    var i = a('gRbUn'),
-        j = a('O0Kav'),
-        k = a('YbZFB'),
-        l = a('u4s09');
-    let m, n, o = a => a;
-    const p = a => {
-        const q = j.useRef(null);
+    var i = a('.....'), j = a('.....'), k = a('.....'), l = a('.....');
+    let m, n, o = p => p;
+    const p = q => {
+        const r = j.useRef(null);
         return j.useEffect(() => {
-            (0, k.renderMathInElement)(q.current, {});
+            (0, k.renderMathInElement)(r.current, {});
         }, []), (0, i.jsxs)(i.Fragment, {
             children: [
                 (0, i.jsx)(_s, {}),
@@ -28,26 +25,23 @@ a.register('vZVkZ', function(b, c) {
                     children: (0, i.jsx)('math-field', {
                         className: 'latex',
                         tabIndex: '-1',
-                        ref: q,
+                        ref: r,
                         'read-only': !0,
                         style: {
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center'
                         },
-                        children: a.latex
+                        children: q.latex
                     })
                 })
             ]
         });
     };
-    var _q = a => (0, i.jsx)(p, {
-        ...a
-    }, a.latex);
+    var _q = r => (0, i.jsx)(p, { ...r }, r.latex);
     const _r = l.default.div(m || (m = o`
   pointer-events: none;
-`)),
-        _s = (0, l.createGlobalStyle)(n || (n = o`
+`)), _s = (0, l.createGlobalStyle)(n || (n = o`
   .latex {
     .ML__base {
       cursor: inherit !important;

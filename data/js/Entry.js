@@ -7,39 +7,30 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('XzTlG', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'Container', function() {
+    }), a(c.exports, 'Container', function () {
         return _p;
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _o;
     });
-    var f = b('gRbUn'),
-        g = b('O0Kav'),
-        h = b('u4s09'),
-        i = b('MgONH'),
-        j = b('yruHD'),
-        k = b('quE27'),
-        l = b('rJrGE'),
-        m = b('PWtL3');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....');
     let n;
     var _o = () => {
         const [p, q] = g.useState(null), [r, s] = (0, k.useBoolean)(!1);
         g.useEffect(() => {
             (0, k.request)({
                 url: '/api/matchmaker/intent/map/tutorial/create',
-                success: p => {
-                    q(p);
+                success: t => {
+                    q(t);
                 },
-                error: p => {
+                error: t => {
                     (0, k.throwMessageError)({
-                        e: p,
-                        default: {
-                            title: 'There was an error loading into the tutorial.'
-                        },
+                        e: t,
+                        default: { title: 'There was an error loading into the tutorial.' },
                         onOk: () => window.location.href = '/'
                     });
                 }
@@ -47,104 +38,71 @@ b.register('XzTlG', function(c, d) {
         }, []);
         return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, f.jsx)(k.Title, {
-                    title: 'Gimkit Creative Tutorial'
-                }),
+                (0, f.jsx)(k.Title, { title: 'Gimkit Creative Tutorial' }),
                 p ? r ? (0, f.jsx)(m.default, {}) : (0, f.jsx)(l.default, {
                     intentId: p,
                     onTutorialComplete: s
-                }) : (0, f.jsx)(_p, {
-                    children: (0, f.jsx)(j.default, {
-                        size: 'large'
-                    })
-                })
+                }) : (0, f.jsx)(_p, { children: (0, f.jsx)(j.default, { size: 'large' }) })
             ]
         });
     };
-    const _p = (0, h.default)(i.Centered).attrs({
-        className: 'maxAll'
-    })(n || (n = (a => a)``));
-}), b.register('MgONH', function(c, d) {
-    a(c.exports, 'Centered', function() {
+    const _p = (0, h.default)(i.Centered).attrs({ className: 'maxAll' })(n || (n = (q => q)``));
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'Centered', function () {
         return _k;
-    }), a(c.exports, 'VerticallyCentered', function() {
+    }), a(c.exports, 'VerticallyCentered', function () {
         return _l;
-    }), a(c.exports, 'CenteredColumn', function() {
+    }), a(c.exports, 'CenteredColumn', function () {
         return _m;
-    }), a(c.exports, 'VerticalCentered', function() {
+    }), a(c.exports, 'VerticalCentered', function () {
         return _n;
     });
-    var e = b('u4s09');
-    let f, g, h, i, j = a => a;
-    const _k = e.default.div.attrs({
-            className: 'flex-center'
-        })(f || (f = j``)),
-        _l = e.default.div.attrs({
-            className: 'flex vc'
-        })(g || (g = j``)),
-        _m = (0, e.default)(_k).attrs({
-            className: 'flex-column'
-        })(h || (h = j``)),
-        _n = e.default.div.attrs({
-            className: 'flex vc'
-        })(i || (i = j``));
-}), b.register('rJrGE', function(c, d) {
-    a(c.exports, 'default', function() {
+    var e = b('.....');
+    let f, g, h, i, j = k => k;
+    const _k = e.default.div.attrs({ className: 'flex-center' })(f || (f = j``)), _l = e.default.div.attrs({ className: 'flex vc' })(g || (g = j``)), _m = (0, e.default)(_k).attrs({ className: 'flex-column' })(h || (h = j``)), _n = e.default.div.attrs({ className: 'flex vc' })(i || (i = j``));
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _C;
     });
-    var e = b('gRbUn'),
-        f = b('8KqQ+'),
-        g = b('UaUBz0'),
-        h = b('O0Kav'),
-        i = b('u4s09'),
-        j = b('eyhCL'),
-        k = b('qIlyp'),
-        l = b('7JzeY'),
-        m = b('quE27'),
-        n = b('aPZ+w'),
-        o = b('Eh2Wh'),
-        p = b('MgONH'),
-        q = b('8j4mV');
-    let r, s, t, u, v, w, x, y, z, A, B = a => a;
-    var _C = a => {
-        const [D, E] = h.useState(0), F = h.useRef(null), G = l.TutorialData.steps[D].text, H = l.TutorialData.steps[D].cb, I = H === l.OnNextClicked, J = (a, D) => {
-            const K = l.TutorialData.steps[D];
-            K && K.cb !== l.OnNextClicked && (K.completed || K.cb(a) && (K.cb = l.OnNextClicked));
-        };
-        (0, k.SetTutorialEventListener)(a => {
-            for (let K = 1; K < 6; K++)
-                J(a, D + K);
-            H(a) && D < l.TutorialData.steps.length - 1 && (() => {
-                for (let L = 1; L < l.TutorialData.steps.length; L++) {
-                    const M = l.TutorialData.steps[D + L];
-                    if (M && !M.completed) {
-                        K(D + L);
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....');
+    let r, s, t, u, v, w, x, y, z, A, B = C => C;
+    var _C = D => {
+        const [E, F] = h.useState(0), G = h.useRef(null), H = l.TutorialData.steps[E].text, I = l.TutorialData.steps[E].cb, J = I === l.OnNextClicked, K = (L, M) => {
+                const N = l.TutorialData.steps[M];
+                N && N.cb !== l.OnNextClicked && (N.completed || N.cb(L) && (N.cb = l.OnNextClicked));
+            };
+        (0, k.SetTutorialEventListener)(L => {
+            for (let M = 1; M < 6; M++)
+                K(L, E + M);
+            I(L) && E < l.TutorialData.steps.length - 1 && (() => {
+                for (let N = 1; N < l.TutorialData.steps.length; N++) {
+                    const O = l.TutorialData.steps[E + N];
+                    if (O && !O.completed) {
+                        M(E + N);
                         break;
                     }
                 }
             })();
         });
-        const [K, L] = h.useState(!0);
+        const [L, M] = h.useState(!0);
         h.useEffect(() => {
-            L(!0);
-            const M = setTimeout(() => {
-                L(!1);
+            M(!0);
+            const N = setTimeout(() => {
+                M(!1);
             }, 1500);
             return () => {
-                clearTimeout(M);
+                clearTimeout(N);
             };
-        }, [D]), h.useEffect(() => {
-            const M = setInterval(() => {
-                var N;
-                null === (N = F.current) || void 0 === N || N.focus();
+        }, [E]), h.useEffect(() => {
+            const N = setInterval(() => {
+                var O;
+                null === (O = G.current) || void 0 === O || O.focus();
             }, 100);
             return () => {
-                clearInterval(M);
+                clearInterval(N);
             };
         }, []);
-        const M = `/host?id=${ a.intentId }`,
-            N = D === l.TutorialData.steps.length - 1,
-            O = N ? 'Claim Reward' : 'Next';
+        const N = `/host?id=${ D.intentId }`, O = E === l.TutorialData.steps.length - 1, P = O ? 'Claim Reward' : 'Next';
         return (0, e.jsxs)(_D, {
             children: [
                 (0, e.jsx)(m.Title, {
@@ -155,14 +113,12 @@ b.register('XzTlG', function(c, d) {
                     children: [
                         (0, e.jsx)(_F, {
                             children: (0, e.jsx)('iframe', {
-                                ref: F,
-                                style: {
-                                    border: 'none'
-                                },
+                                ref: G,
+                                style: { border: 'none' },
                                 className: 'maxAll',
                                 width: '100%',
                                 height: '100%',
-                                src: M,
+                                src: N,
                                 title: 'Creative Tutorial',
                                 allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                             })
@@ -171,12 +127,10 @@ b.register('XzTlG', function(c, d) {
                             children: (0, e.jsx)(q.default, {
                                 children: (0, e.jsxs)(_H, {
                                     children: [
-                                        (0, e.jsx)(_I, {
-                                            src: (0, g.default)('characters/spine/preview/construction.png')
-                                        }),
+                                        (0, e.jsx)(_I, { src: (0, g.default)('characters/spine/preview/construction.png') }),
                                         (0, e.jsx)(_J, {
                                             children: (0, e.jsx)(j.default, {
-                                                percent: N ? 99.99 : D / l.TutorialData.steps.length * 100,
+                                                percent: O ? 99.99 : E / l.TutorialData.steps.length * 100,
                                                 status: 'active',
                                                 style: {
                                                     width: '80%',
@@ -187,23 +141,17 @@ b.register('XzTlG', function(c, d) {
                                                 showInfo: !1
                                             })
                                         }),
-                                        (0, e.jsx)(_K, {
-                                            children: (0, e.jsx)(_L, {
-                                                children: G
-                                            })
-                                        }),
-                                        !I && !N || K ? (0, e.jsx)(_M, {}) : (0, e.jsx)(_M, {
+                                        (0, e.jsx)(_K, { children: (0, e.jsx)(_L, { children: H }) }),
+                                        !J && !O || L ? (0, e.jsx)(_M, {}) : (0, e.jsx)(_M, {
                                             className: 'animated fadeIn',
                                             children: (0, e.jsx)(n.default, {
                                                 type: 'success',
                                                 customFontWeight: o.FontWeights.Bold,
                                                 onClick: () => {
-                                                    N ? a.onTutorialComplete() : (0, k.EmitTutorialEvent)({
-                                                        event: k.TutorialEventName.NEXT
-                                                    });
+                                                    O ? D.onTutorialComplete() : (0, k.EmitTutorialEvent)({ event: k.TutorialEventName.NEXT });
                                                 },
-                                                ariaLabel: O,
-                                                children: O
+                                                ariaLabel: P,
+                                                children: P
                                             })
                                         })
                                     ]
@@ -215,123 +163,99 @@ b.register('XzTlG', function(c, d) {
             ]
         });
     };
-    const _D = i.default.div.attrs({
-            className: 'flex hc'
-        })(r || (r = B`
+    const _D = i.default.div.attrs({ className: 'flex hc' })(r || (r = B`
   flex: 1;
   background: ${ 0 };
-`), f.default.BackgroundPurple),
-        _E = (0, i.default)(p.CenteredColumn).attrs({
-            className: 'maxAll'
-        })(s || (s = B`
+`), f.default.BackgroundPurple), _E = (0, i.default)(p.CenteredColumn).attrs({ className: 'maxAll' })(s || (s = B`
   flex-direction: column;
-`)),
-        _F = i.default.div(t || (t = B`
+`)), _F = i.default.div(t || (t = B`
   flex: 1;
   width: 100%;
-`)),
-        _G = i.default.div.attrs({
-            className: 'maxWidth'
-        })(u || (u = B`
+`)), _G = i.default.div.attrs({ className: 'maxWidth' })(u || (u = B`
   min-height: ${ 0 }px;
   box-shadow: 0px 2px 14px 0px black;
   background: #182673;
   color: ${ 0 };
   overflow: hidden;
   flex-shrink: 0;
-`), 125, f.default.White),
-        _H = i.default.div.attrs({
-            className: 'maxAll flex vc between'
-        })(v || (v = B`
+`), 125, f.default.White), _H = i.default.div.attrs({ className: 'maxAll flex vc between' })(v || (v = B`
   position: relative;
   min-height: ${ 0 }px;
   padding: 25px 30px;
   padding-top: 40px;
-`), 125),
-        _I = i.default.img(w || (w = B`
+`), 125), _I = i.default.img(w || (w = B`
   height: 153px;
   position: absolute;
   bottom: -32px;
   left: -22px;
   opacity: 0.9;
   transform: rotate(356deg);
-`)),
-        _J = i.default.div.attrs({
-            className: 'maxWidth flex-center'
-        })(x || (x = B`
+`)), _J = i.default.div.attrs({ className: 'maxWidth flex-center' })(x || (x = B`
   position: absolute;
   top: 0px;
   left: 0px;
   height: 20px;
-`)),
-        _K = i.default.div(y || (y = B`
+`)), _K = i.default.div(y || (y = B`
   font-size: 19px;
   margin-left: 105px;
-`)),
-        _L = i.default.div(z || (z = B`
+`)), _L = i.default.div(z || (z = B`
   text-align: left;
   margin: auto auto auto 0;
-`)),
-        _M = i.default.div.attrs({
-            className: 'flex hc vc maxHeight'
-        })(A || (A = B`
+`)), _M = i.default.div.attrs({ className: 'flex hc vc maxHeight' })(A || (A = B`
   margin-left: 35px;
   flex-shrink: 0;
   min-width: 85px;
 `));
-}), b.register('UaUBz0', function(c, d) {
+}), b.register('.....', function (c, d) {
     let e;
-    a(c.exports, 'default', function() {
+    a(c.exports, 'default', function () {
         return _f;
     });
-    var _f = a => {
-        const g = (() => {
-            var h;
+    var _f = g => {
+        const h = (() => {
+            var i;
             if (e)
                 return e;
-            const i = null === (h = document.querySelector('meta[property="cdn-map-assets-url"]')) || void 0 === h ? void 0 : h.getAttribute('content');
-            return void 0 !== i && '$CDN_MAP_ASSETS_URL' !== i ? (e = i, e) : '';
+            const j = null === (i = document.querySelector('meta[property="cdn-map-assets-url"]')) || void 0 === i ? void 0 : i.getAttribute('content');
+            return void 0 !== j && '$CDN_MAP_ASSETS_URL' !== j ? (e = j, e) : '';
         })();
-        return a.startsWith('/assets/map') ? `${ g }${ a }` : `${ g }/assets/map/${ a }`;
+        return g.startsWith('/assets/map') ? `${ h }${ g }` : `${ h }/assets/map/${ g }`;
     };
-}), b.register('qIlyp', function(c, d) {
-    a(c.exports, 'TutorialEventName', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'TutorialEventName', function () {
         return _g;
-    }), a(c.exports, 'EmitTutorialEvent', function() {
+    }), a(c.exports, 'EmitTutorialEvent', function () {
         return _j;
-    }), a(c.exports, 'SetTutorialEventListener', function() {
+    }), a(c.exports, 'SetTutorialEventListener', function () {
         return _k;
     });
-    var e = b('yhnQh');
+    var e = b('.....');
     const f = 'tutorial_event';
     let _g;
     var h;
     let i;
-    (h = _g || (_g = {})).NEXT = 'next', h.OPEN_ADD_MENU = 'open_add_menu', h.OPEN_ADD_SUBMENU = 'open_add_submenu', h.SELECT_PROP_TO_ADD = 'select_prop_to_add', h.SELECT_TERRAIN_TO_ADD = 'select_terrain_to_add', h.SELECT_DEVICE_TO_ADD = 'select_device_to_add', h.START_COPY_DEVICE = 'start_copy_device', h.PLACE_DEVICE_DOWN = 'place_device_down', h.START_THE_GAME = 'start_the_game', h.ANSWER_A_QUESTION = 'answer_a_question', h.END_THE_GAME = 'end_the_game', h.END_THE_GAME_BY_DEVICE = 'end_the_game_by_device', h.RESTORE_THE_MAP = 'restore_the_map', h.OPEN_DEVICE_OPTIONS = 'open_device_options', h.CHANGE_DEVICE_OPTION = 'change_device_option', h.CLOSE_DEVICE_OPTIONS = 'close_device_options', h.START_ADDING_WIRE = 'start_adding_wire', h.START_WIRE_FROM_DEVICE = 'start_wire_from_device', h.END_WIRE_TO_DEVICE = 'end_wire_to_device', h.CONFIGURE_WIRE = 'configure_wire', h.GRANT_ITEM = 'grant_item', window.document.addEventListener(f, a => {
-        i && i(a.detail);
+    (h = _g || (_g = {})).NEXT = 'next', h.OPEN_ADD_MENU = 'open_add_menu', h.OPEN_ADD_SUBMENU = 'open_add_submenu', h.SELECT_PROP_TO_ADD = 'select_prop_to_add', h.SELECT_TERRAIN_TO_ADD = 'select_terrain_to_add', h.SELECT_DEVICE_TO_ADD = 'select_device_to_add', h.START_COPY_DEVICE = 'start_copy_device', h.PLACE_DEVICE_DOWN = 'place_device_down', h.START_THE_GAME = 'start_the_game', h.ANSWER_A_QUESTION = 'answer_a_question', h.END_THE_GAME = 'end_the_game', h.END_THE_GAME_BY_DEVICE = 'end_the_game_by_device', h.RESTORE_THE_MAP = 'restore_the_map', h.OPEN_DEVICE_OPTIONS = 'open_device_options', h.CHANGE_DEVICE_OPTION = 'change_device_option', h.CLOSE_DEVICE_OPTIONS = 'close_device_options', h.START_ADDING_WIRE = 'start_adding_wire', h.START_WIRE_FROM_DEVICE = 'start_wire_from_device', h.END_WIRE_TO_DEVICE = 'end_wire_to_device', h.CONFIGURE_WIRE = 'configure_wire', h.GRANT_ITEM = 'grant_item', window.document.addEventListener(f, j => {
+        i && i(j.detail);
     }, !1);
-    const _j = a => {
-            if (!(0, e.IsTutorial)() && a.event !== _g.NEXT)
+    const _j = k => {
+            if (!(0, e.IsTutorial)() && k.event !== _g.NEXT)
                 return;
-            const k = new CustomEvent(f, {
-                detail: a
-            });
-            window.top.document.dispatchEvent(k);
-        },
-        _k = a => {
-            i = a;
+            const l = new CustomEvent(f, { detail: k });
+            window.top.document.dispatchEvent(l);
+        }, _k = l => {
+            i = l;
         };
-}), b.register('yhnQh', function(c, d) {
-    a(c.exports, 'IsTutorial', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'IsTutorial', function () {
         return _f;
     });
-    var e = b('1xqJo0');
+    var e = b('.....');
     const _f = () => window._mapId === e.TutorialConsts.mapId;
-}), b.register('1xqJo0', function(c, d) {
-    a(c.exports, 'TutorialConsts', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'TutorialConsts', function () {
         return _f;
     });
-    var e = b('OFuf70');
+    var e = b('.....');
     const _f = {
         mapId: 'tutorial0001',
         topDevices: [
@@ -357,46 +281,33 @@ b.register('XzTlG', function(c, d) {
             'Snowy Grass'
         ]
     };
-}), b.register('OFuf70', function(c, d) {
+}), b.register('.....', function (c, d) {
     let e;
     var f;
-    a(c.exports, 'default', function() {
+    a(c.exports, 'default', function () {
         return _g;
     }), (f = e || (e = {})).scriptRunner = 'scriptRunner', f.rng = 'rng', f.editingAccessPoint = 'editingAccessPoint', f.luckyBlock = 'luckyBlock', f.chest = 'chest', f.jumpGranter = 'jumpGranter', f.teamColorTilesManager = 'teamColorTilesManager', f.changingBooth = 'changingBooth', f.popupListItem = 'popupListItem', f.gadgetModifier = 'gadgetModifier', f.zombieSpawnZone = 'zombieSpawnZone', f.zombieWaveDesigner = 'zombieWaveDesigner', f.zombieDesigner = 'zombieDesigner', f.zombieInvasion = 'zombieInvasion', f.codeUI = 'codeUI', f.damager = 'damager', f.cameraPoint = 'cameraPoint', f.blockingZone = 'blockingZone', f.character = 'character', f.classDesigner = 'classDesigner', f.backgroundTilesZone = 'backgroundTilesZone', f.proceduralTerrainZoneZoneInstruction = 'proceduralTerrainZoneZoneInstruction', f.proceduralTerrainZone = 'proceduralTerrainZone', f.dialogueAction = 'dialogueAction', f.dialogue = 'dialogue', f.voiceLine = 'voiceLine', f.scorebar = 'scorebar', f.outline = 'outline', f.ball = 'ball', f.damageBoost = 'damageBoost', f.checkpoint = 'checkpoint', f.playerPositionDetector = 'playerPositionDetector', f.itemImage = 'itemImage', f.mood = 'mood', f.playerAppearanceModifier = 'playerAppearanceModifier', f.waypoint = 'waypoint', f.flag = 'flag', f.checker = 'checker', f.trigger = 'trigger', f.counter = 'counter', f.teleporter = 'teleporter', f.itemGranter = 'itemGranter', f.characterSpawnPad = 'characterSpawnPad', f.textBillboard = 'textBillboard', f.prop = 'prop', f.barrier = 'barrier', f.button = 'button', f.droppedItem = 'droppedItem', f.property = 'property', f.mapOptions = 'mapOptions', f.teamSettings = 'teamSettings', f.imageBillboard = 'imageBillboard', f.gimkitLiveQuestion = 'gimkitLiveQuestion', f.ballZone = 'ballZone', f.zone = 'zone', f.captureFlagZone = 'captureFlagZone', f.textExplainer = 'textExplainer', f.relay = 'relay', f.cameraSize = 'cameraSize', f.music = 'music', f.speed = 'speed', f.soundEffect = 'soundEffect', f.inventoryItemManager = 'inventoryItemManager', f.guiDevice = 'guiDevice', f.lifecycle = 'lifecycle', f.endGame = 'endGame', f.countdown = 'countdown', f.shadow = 'shadow', f.characterProximity = 'characterProximity', f.repeater = 'repeater', f.vendingMachine = 'vendingMachine', f.teamSwitcher = 'teamSwitcher', f.notification = 'notification', f.endOfGameWidget = 'endOfGameWidget', f.respawn = 'respawn', f.xp = 'xp', f.assignmentCheckpoint = 'assignmentCheckpoint', f.assignmentContext = 'assignmentContext', f.placedSticker = 'placedSticker', f.wireRepeater = 'wireRepeater', f.movementMeter = 'movementMeter', f.craftingTable = 'craftingTable', f.craftingRecipe = 'craftingRecipe', f.startingInventory = 'startingInventory', f.healthGranter = 'healthGranter', f.sentry = 'sentry', f.knockoutManager = 'knockoutManager', f.laserBeam = 'laserBeam', f.laserBeamManager = 'laserBeamManager', f.cosmosModifier = 'cosmosModifier', f.passwordLock = 'passwordLock', f.itemSpawner = 'itemSpawner', f.tagZone = 'tagZone', f.achievement = 'achievement';
     var _g = e;
-}), b.register('7JzeY', function(c, d) {
-    a(c.exports, 'OnNextClicked', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'OnNextClicked', function () {
         return _m;
-    }), a(c.exports, 'TutorialData', function() {
+    }), a(c.exports, 'TutorialData', function () {
         return _p;
     });
-    var e = b('gRbUn'),
-        f = b('OFuf70'),
-        g = b('qIlyp'),
-        h = b('ksXL7'),
-        i = b('t52Ep'),
-        j = b('8KqQ+'),
-        k = b('aPZ+w'),
-        l = b('quE27');
-    const _m = a => a.event === g.TutorialEventName.NEXT,
-        n = a => (0, e.jsx)('span', {
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    const _m = n => n.event === g.TutorialEventName.NEXT, n = o => (0, e.jsx)('span', {
             style: {
                 fontWeight: 'bold',
                 color: '#ffff94'
             },
-            children: a.children
-        }),
-        o = () => (0, e.jsx)(e.Fragment, {
-            children: (0, e.jsx)('br', {})
-        }),
-        _p = {
-            steps: [{
+            children: o.children
+        }), o = () => (0, e.jsx)(e.Fragment, { children: (0, e.jsx)('br', {}) }), _p = {
+            steps: [
+                {
                     text: (0, e.jsxs)('div', {
                         children: [
                             'Hey there! Welcome to ',
-                            (0, e.jsx)(n, {
-                                children: 'Gimkit Creative'
-                            }),
+                            (0, e.jsx)(n, { children: 'Gimkit Creative' }),
                             ', a tool which you can use to build your own maps, game modes, and more!'
                         ]
                     }),
@@ -420,9 +331,7 @@ b.register('XzTlG', function(c, d) {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'In this game, there will be an ',
-                            (0, e.jsx)(n, {
-                                children: 'enemy you have to knockout'
-                            }),
+                            (0, e.jsx)(n, { children: 'enemy you have to knockout' }),
                             ' ',
                             'to win the game!'
                         ]
@@ -433,9 +342,7 @@ b.register('XzTlG', function(c, d) {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'However, you\'re going to start with ',
-                            (0, e.jsx)(n, {
-                                children: 'nothing'
-                            }),
+                            (0, e.jsx)(n, { children: 'nothing' }),
                             ' in your inventory! ',
                             (0, e.jsx)(o, {}),
                             'You\'ll have to answer a question correctly to earn a Snowball Launcher.'
@@ -448,9 +355,7 @@ b.register('XzTlG', function(c, d) {
                         children: [
                             'Once you have that Snowball Launcher, you can use it to',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'knockout the enemy!'
-                            })
+                            (0, e.jsx)(n, { children: 'knockout the enemy!' })
                         ]
                     }),
                     cb: _m
@@ -460,19 +365,11 @@ b.register('XzTlG', function(c, d) {
                         children: [
                             'To recap, in your game, you will...',
                             (0, e.jsxs)('ol', {
-                                style: {
-                                    marginTop: 10
-                                },
+                                style: { marginTop: 10 },
                                 children: [
-                                    (0, e.jsx)('li', {
-                                        children: 'Answer a question correctly'
-                                    }),
-                                    (0, e.jsx)('li', {
-                                        children: 'Earn a Snowball Launcher'
-                                    }),
-                                    (0, e.jsx)('li', {
-                                        children: 'Knockout the enemy with the Snowball Launcher'
-                                    })
+                                    (0, e.jsx)('li', { children: 'Answer a question correctly' }),
+                                    (0, e.jsx)('li', { children: 'Earn a Snowball Launcher' }),
+                                    (0, e.jsx)('li', { children: 'Knockout the enemy with the Snowball Launcher' })
                                 ]
                             })
                         ]
@@ -486,9 +383,7 @@ b.register('XzTlG', function(c, d) {
                 {
                     text: (0, e.jsxs)('div', {
                         children: [
-                            (0, e.jsx)(n, {
-                                children: 'To add anything to your map'
-                            }),
+                            (0, e.jsx)(n, { children: 'To add anything to your map' }),
                             ', click the',
                             ' ',
                             (0, e.jsx)('div', {
@@ -499,67 +394,53 @@ b.register('XzTlG', function(c, d) {
                                 children: (0, e.jsx)(h.default, {
                                     tooltip: '',
                                     onClick: () => !1,
-                                    children: (0, e.jsx)(i.default, {
-                                        name: 'fas fa-plus'
-                                    })
+                                    children: (0, e.jsx)(i.default, { name: 'fas fa-plus' })
                                 })
                             }),
                             ' ',
                             'button on the top right! Go ahead and click it now!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.OPEN_ADD_MENU
+                    cb: q => q.event === g.TutorialEventName.OPEN_ADD_MENU
                 },
                 {
                     text: (0, e.jsxs)('div', {
                         children: [
                             'Nice! This is the ',
-                            (0, e.jsx)(n, {
-                                children: 'Add Menu'
-                            }),
+                            (0, e.jsx)(n, { children: 'Add Menu' }),
                             ', which is where you\u2019ll go to add things to your map. ',
                             (0, e.jsx)(o, {}),
                             'Terrain, Props, Devices, and Wires are all things you can add to your map. Let\u2019s start by selecting ',
-                            (0, e.jsx)(n, {
-                                children: 'Terrain'
-                            }),
+                            (0, e.jsx)(n, { children: 'Terrain' }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.OPEN_ADD_SUBMENU && 'terrain' === a.menu
+                    cb: q => q.event === g.TutorialEventName.OPEN_ADD_SUBMENU && 'terrain' === q.menu
                 },
                 {
                     text: (0, e.jsxs)('div', {
                         children: [
-                            (0, e.jsx)(n, {
-                                children: 'Terrain are the floors and walls of your map.'
-                            }),
+                            (0, e.jsx)(n, { children: 'Terrain are the floors and walls of your map.' }),
                             ' As you can see, there are many different options to choose from! ',
                             (0, e.jsx)(o, {}),
                             ' Since this game will have the player using a Snowball Launcher, let\u2019s add some snow! Select the ',
-                            (0, e.jsx)(n, {
-                                children: 'Snow'
-                            }),
+                            (0, e.jsx)(n, { children: 'Snow' }),
                             ' terrain.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.SELECT_TERRAIN_TO_ADD && 'Snow' === a.terrainId
+                    cb: q => q.event === g.TutorialEventName.SELECT_TERRAIN_TO_ADD && 'Snow' === q.terrainId
                 },
                 {
                     text: (0, e.jsxs)('div', {
                         children: [
                             'Awesome! You have the Snow Terrain selected, and you can start',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'clicking to place it anywhere on the map!'
-                            }),
+                            (0, e.jsx)(n, { children: 'clicking to place it anywhere on the map!' }),
                             ' ',
                             (0, e.jsx)(o, {}),
                             ' Go ahead and place a bunch of snow on the map and',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'click the Next Button when you\u2019re done!'
-                            })
+                            (0, e.jsx)(n, { children: 'click the Next Button when you\u2019re done!' })
                         ]
                     }),
                     cb: _m
@@ -569,9 +450,7 @@ b.register('XzTlG', function(c, d) {
                         children: [
                             'Looking good! But\u2026our map is looking a little empty. That is where',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'props'
-                            }),
+                            (0, e.jsx)(n, { children: 'props' }),
                             ' come in!'
                         ]
                     }),
@@ -580,22 +459,16 @@ b.register('XzTlG', function(c, d) {
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
-                            (0, e.jsx)(n, {
-                                children: 'Props are objects you can place on your map for decoration.'
-                            }),
+                            (0, e.jsx)(n, { children: 'Props are objects you can place on your map for decoration.' }),
                             ' ',
                             'Things like trees, tables, and chairs.',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'Let\u2019s add some trees to liven things up!'
-                            }),
+                            (0, e.jsx)(n, { children: 'Let\u2019s add some trees to liven things up!' }),
                             (0, e.jsx)(o, {}),
                             ' ',
                             (0, e.jsx)(o, {}),
                             'If you haven\u2019t yet, close out of the terrain adding screen by clicking the ',
-                            (0, e.jsx)(n, {
-                                children: 'X'
-                            }),
+                            (0, e.jsx)(n, { children: 'X' }),
                             ' button.',
                             (0, e.jsx)(o, {}),
                             'From there, open up the add menu again by clicking',
@@ -608,45 +481,39 @@ b.register('XzTlG', function(c, d) {
                                 children: (0, e.jsx)(h.default, {
                                     tooltip: '',
                                     onClick: () => !1,
-                                    children: (0, e.jsx)(i.default, {
-                                        name: 'fas fa-plus'
-                                    })
+                                    children: (0, e.jsx)(i.default, { name: 'fas fa-plus' })
                                 })
                             }),
                             ' ',
                             'on the top right!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.OPEN_ADD_MENU
+                    cb: q => q.event === g.TutorialEventName.OPEN_ADD_MENU
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'And now, select ',
-                            (0, e.jsx)(n, {
-                                children: 'Props'
-                            }),
+                            (0, e.jsx)(n, { children: 'Props' }),
                             '!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.OPEN_ADD_SUBMENU && 'props' === a.menu
+                    cb: q => q.event === g.TutorialEventName.OPEN_ADD_SUBMENU && 'props' === q.menu
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Here you can find all the props available to use! ',
                             (0, e.jsx)(o, {}),
-                            (0, e.jsx)(n, {
-                                children: 'Select one of the trees'
-                            }),
+                            (0, e.jsx)(n, { children: 'Select one of the trees' }),
                             ' to begin adding it to the map!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.SELECT_PROP_TO_ADD && a.propId.toLocaleLowerCase().includes('tree')
+                    cb: q => q.event === g.TutorialEventName.SELECT_PROP_TO_ADD && q.propId.toLocaleLowerCase().includes('tree')
                 },
                 {
                     text: 'Just click to place the tree down on your map!',
-                    cb: a => a.event === g.TutorialEventName.PLACE_DEVICE_DOWN && a.device.deviceOption.id === f.default.prop && a.device.options.propId.toLocaleLowerCase().includes('tree')
+                    cb: q => q.event === g.TutorialEventName.PLACE_DEVICE_DOWN && q.device.deviceOption.id === f.default.prop && q.device.options.propId.toLocaleLowerCase().includes('tree')
                 },
                 {
                     text: (0, e.jsxs)('div', {
@@ -671,15 +538,13 @@ b.register('XzTlG', function(c, d) {
                             'on your keyboard (C for copy). Try that now!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.START_COPY_DEVICE && a.device.deviceOption.id === f.default.prop && a.device.options.propId.toLocaleLowerCase().includes('tree')
+                    cb: q => q.event === g.TutorialEventName.START_COPY_DEVICE && q.device.deviceOption.id === f.default.prop && q.device.options.propId.toLocaleLowerCase().includes('tree')
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Perfect! Now go place as many trees on your map as you would like, and then click the ',
-                            (0, e.jsx)(n, {
-                                children: 'Next Button'
-                            }),
+                            (0, e.jsx)(n, { children: 'Next Button' }),
                             ' when you\u2019re ready!'
                         ]
                     }),
@@ -692,9 +557,7 @@ b.register('XzTlG', function(c, d) {
                             (0, e.jsx)(o, {}),
                             'But, how do you actually make this map\u2026a game? That is where',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'Devices'
-                            }),
+                            (0, e.jsx)(n, { children: 'Devices' }),
                             ' come in!'
                         ]
                     }),
@@ -703,25 +566,19 @@ b.register('XzTlG', function(c, d) {
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
-                            (0, e.jsx)(n, {
-                                children: 'Devices are how game mechanics are built.'
-                            }),
+                            (0, e.jsx)(n, { children: 'Devices are how game mechanics are built.' }),
                             ' Each device is responsible for a small part of your gameplay.',
                             (0, e.jsx)(o, {}),
                             ' ',
                             (0, e.jsx)(o, {}),
                             'For example, the ',
-                            (0, e.jsx)(n, {
-                                children: 'Spawn Pad device'
-                            }),
+                            (0, e.jsx)(n, { children: 'Spawn Pad device' }),
                             ' is responsible for setting the location of players when your game begins. ',
                             (0, e.jsx)(o, {}),
                             ' ',
                             (0, e.jsx)(o, {}),
                             'The ',
-                            (0, e.jsx)(n, {
-                                children: 'Teleporter device'
-                            }),
+                            (0, e.jsx)(n, { children: 'Teleporter device' }),
                             ' is responsible for teleporting a player from one place to another!'
                         ]
                     }),
@@ -740,21 +597,17 @@ b.register('XzTlG', function(c, d) {
                                 children: (0, e.jsx)(h.default, {
                                     tooltip: '',
                                     onClick: () => !1,
-                                    children: (0, e.jsx)(i.default, {
-                                        name: 'fas fa-plus'
-                                    })
+                                    children: (0, e.jsx)(i.default, { name: 'fas fa-plus' })
                                 })
                             }),
                             ' ',
                             'button on the top right to open the add menu, and then select',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'Devices'
-                            }),
+                            (0, e.jsx)(n, { children: 'Devices' }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.OPEN_ADD_SUBMENU && 'devices' === a.menu
+                    cb: q => q.event === g.TutorialEventName.OPEN_ADD_SUBMENU && 'devices' === q.menu
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
@@ -762,24 +615,20 @@ b.register('XzTlG', function(c, d) {
                             'Here are all the devices you can place! It might look like a lot, but each device typically does just one small task. ',
                             (0, e.jsx)(o, {}),
                             'Select the ',
-                            (0, e.jsx)(n, {
-                                children: 'Spawn Pad'
-                            }),
+                            (0, e.jsx)(n, { children: 'Spawn Pad' }),
                             ' device.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.SELECT_DEVICE_TO_ADD && a.deviceTypeId === f.default.characterSpawnPad
+                    cb: q => q.event === g.TutorialEventName.SELECT_DEVICE_TO_ADD && q.deviceTypeId === f.default.characterSpawnPad
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
-                            (0, e.jsx)(n, {
-                                children: 'Click to place the Spawn Pad device anywhere'
-                            }),
+                            (0, e.jsx)(n, { children: 'Click to place the Spawn Pad device anywhere' }),
                             '. That is where you will spawn once the game begins!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.PLACE_DEVICE_DOWN && a.device.deviceOption.id === f.default.characterSpawnPad
+                    cb: q => q.event === g.TutorialEventName.PLACE_DEVICE_DOWN && q.device.deviceOption.id === f.default.characterSpawnPad
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
@@ -788,35 +637,27 @@ b.register('XzTlG', function(c, d) {
                             (0, e.jsx)(o, {}),
                             (0, e.jsx)(o, {}),
                             ' Open the ',
-                            (0, e.jsx)(n, {
-                                children: 'Add Menu'
-                            }),
+                            (0, e.jsx)(n, { children: 'Add Menu' }),
                             ', select ',
-                            (0, e.jsx)(n, {
-                                children: 'Devices'
-                            }),
+                            (0, e.jsx)(n, { children: 'Devices' }),
                             ', and then select the ',
-                            (0, e.jsx)(n, {
-                                children: 'Questioner'
-                            }),
+                            (0, e.jsx)(n, { children: 'Questioner' }),
                             ' device.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.SELECT_DEVICE_TO_ADD && a.deviceTypeId === f.default.gimkitLiveQuestion
+                    cb: q => q.event === g.TutorialEventName.SELECT_DEVICE_TO_ADD && q.deviceTypeId === f.default.gimkitLiveQuestion
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'With this device,',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'players will be able to walk up to it and start answering multiple choice questions!'
-                            }),
+                            (0, e.jsx)(n, { children: 'players will be able to walk up to it and start answering multiple choice questions!' }),
                             ' ',
                             'Place it next to the Spawn Pad so that players won\u2019t have to walk far to start answering.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.PLACE_DEVICE_DOWN && a.device.deviceOption.id === f.default.gimkitLiveQuestion
+                    cb: q => q.event === g.TutorialEventName.PLACE_DEVICE_DOWN && q.device.deviceOption.id === f.default.gimkitLiveQuestion
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
@@ -834,20 +675,16 @@ b.register('XzTlG', function(c, d) {
                                 children: (0, e.jsx)(h.default, {
                                     tooltip: '',
                                     onClick: () => !1,
-                                    children: (0, e.jsx)(i.default, {
-                                        name: 'fas fa-play'
-                                    })
+                                    children: (0, e.jsx)(i.default, { name: 'fas fa-play' })
                                 })
                             }),
                             ' ',
                             'button on the bottom right.',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'Click that button and start the game!'
-                            })
+                            (0, e.jsx)(n, { children: 'Click that button and start the game!' })
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.START_THE_GAME
+                    cb: q => q.event === g.TutorialEventName.START_THE_GAME
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
@@ -856,12 +693,10 @@ b.register('XzTlG', function(c, d) {
                             (0, e.jsx)(o, {}),
                             'Walk over to the Questioner Device you placed and',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'answer a question!'
-                            })
+                            (0, e.jsx)(n, { children: 'answer a question!' })
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.ANSWER_A_QUESTION
+                    cb: q => q.event === g.TutorialEventName.ANSWER_A_QUESTION
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
@@ -880,29 +715,25 @@ b.register('XzTlG', function(c, d) {
                                     onClick: () => !1,
                                     customHorizontalPadding: 18,
                                     ariaLabel: 'Stop',
-                                    children: (0, e.jsx)('i', {
-                                        className: 'far fa-stop-circle'
-                                    })
+                                    children: (0, e.jsx)('i', { className: 'far fa-stop-circle' })
                                 })
                             }),
                             ' ',
                             'on the top right.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.END_THE_GAME
+                    cb: q => q.event === g.TutorialEventName.END_THE_GAME
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'And now you can head back into editing mode by clicking',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'Restore Map'
-                            }),
+                            (0, e.jsx)(n, { children: 'Restore Map' }),
                             ' on the bottom right.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.RESTORE_THE_MAP
+                    cb: q => q.event === g.TutorialEventName.RESTORE_THE_MAP
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
@@ -910,9 +741,7 @@ b.register('XzTlG', function(c, d) {
                             'Let\u2019s think. What do we need to add next? ',
                             (0, e.jsx)(o, {}),
                             'Well, we\u2019re going to want to have a ',
-                            (0, e.jsx)(n, {
-                                children: 'Snowball Launcher.'
-                            }),
+                            (0, e.jsx)(n, { children: 'Snowball Launcher.' }),
                             ' ',
                             'This way you can fight back against the enemy (which you\u2019ll add later).'
                         ]
@@ -923,37 +752,31 @@ b.register('XzTlG', function(c, d) {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'To do this, you\u2019ll use the ',
-                            (0, e.jsx)(n, {
-                                children: 'Item Granter device.'
-                            }),
+                            (0, e.jsx)(n, { children: 'Item Granter device.' }),
                             ' This device allows you to grant players items in their inventory. ',
                             (0, e.jsx)(o, {}),
                             (0, e.jsx)(o, {}),
                             'Go add an Item Granter device to the map, and place it to the right of your Questioner!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.PLACE_DEVICE_DOWN && a.device.deviceOption.id === f.default.itemGranter
+                    cb: q => q.event === g.TutorialEventName.PLACE_DEVICE_DOWN && q.device.deviceOption.id === f.default.itemGranter
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Right now, the Item Granter doesn\u2019t know which item you want to grant, you have to edit it! ',
                             (0, e.jsx)(o, {}),
-                            (0, e.jsx)(n, {
-                                children: 'You can edit any device by clicking on it.'
-                            }),
+                            (0, e.jsx)(n, { children: 'You can edit any device by clicking on it.' }),
                             ' Go click on the Item Granter you just placed.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.OPEN_DEVICE_OPTIONS && a.device.deviceOption.id === f.default.itemGranter
+                    cb: q => q.event === g.TutorialEventName.OPEN_DEVICE_OPTIONS && q.device.deviceOption.id === f.default.itemGranter
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'You\u2019re now on the ',
-                            (0, e.jsx)(n, {
-                                children: 'editing screen'
-                            }),
+                            (0, e.jsx)(n, { children: 'editing screen' }),
                             ', where you can customize this device exactly how you want! ',
                             (0, e.jsx)(o, {}),
                             'You\u2019ll see on the right side that there are all sorts of options you can change, including the item to grant, and how many of that item to grant.'
@@ -965,18 +788,14 @@ b.register('XzTlG', function(c, d) {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Go change the ',
-                            (0, e.jsx)(n, {
-                                children: 'Item To Grant'
-                            }),
+                            (0, e.jsx)(n, { children: 'Item To Grant' }),
                             ' option and select any',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'Snowball Launcher'
-                            }),
+                            (0, e.jsx)(n, { children: 'Snowball Launcher' }),
                             '!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.CHANGE_DEVICE_OPTION && a.device.deviceOption.id === f.default.itemGranter && 'itemId' === a.option && a.value.toLocaleLowerCase().includes('snowball_launcher')
+                    cb: q => q.event === g.TutorialEventName.CHANGE_DEVICE_OPTION && q.device.deviceOption.id === f.default.itemGranter && 'itemId' === q.option && q.value.toLocaleLowerCase().includes('snowball_launcher')
                 },
                 {
                     text: 'Fantastic! Now this Item Granter will give the player a Snowball Launcher! ',
@@ -986,13 +805,11 @@ b.register('XzTlG', function(c, d) {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Close out of the editing screen by clicking the ',
-                            (0, e.jsx)(n, {
-                                children: 'X'
-                            }),
+                            (0, e.jsx)(n, { children: 'X' }),
                             ' on the top right!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.CLOSE_DEVICE_OPTIONS
+                    cb: q => q.event === g.TutorialEventName.CLOSE_DEVICE_OPTIONS
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
@@ -1011,9 +828,7 @@ b.register('XzTlG', function(c, d) {
                         children: [
                             'That is where the final piece of Gimkit Creative comes into play:',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'wires!'
-                            })
+                            (0, e.jsx)(n, { children: 'wires!' })
                         ]
                     }),
                     cb: _m
@@ -1021,9 +836,7 @@ b.register('XzTlG', function(c, d) {
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
-                            (0, e.jsx)(n, {
-                                children: 'Wires connect devices together'
-                            }),
+                            (0, e.jsx)(n, { children: 'Wires connect devices together' }),
                             ' \u2014 it\u2019s the way different devices can communicate with one another.'
                         ]
                     }),
@@ -1033,24 +846,18 @@ b.register('XzTlG', function(c, d) {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Open the ',
-                            (0, e.jsx)(n, {
-                                children: 'Add Menu'
-                            }),
+                            (0, e.jsx)(n, { children: 'Add Menu' }),
                             ' and then select ',
-                            (0, e.jsx)(n, {
-                                children: 'Wires'
-                            }),
+                            (0, e.jsx)(n, { children: 'Wires' }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.START_ADDING_WIRE
+                    cb: q => q.event === g.TutorialEventName.START_ADDING_WIRE
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
-                            (0, e.jsx)(n, {
-                                children: 'Now select where the wire will come from.'
-                            }),
+                            (0, e.jsx)(n, { children: 'Now select where the wire will come from.' }),
                             ' Since we\u2019re waiting on a player to answer a question, we want the wire to come from the Questioner device. ',
                             (0, e.jsx)(o, {}),
                             ' ',
@@ -1058,24 +865,20 @@ b.register('XzTlG', function(c, d) {
                             'Click the Questioner device to begin the wire!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.START_WIRE_FROM_DEVICE && a.device.deviceOption.id === f.default.gimkitLiveQuestion
+                    cb: q => q.event === g.TutorialEventName.START_WIRE_FROM_DEVICE && q.device.deviceOption.id === f.default.gimkitLiveQuestion
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
-                            (0, e.jsx)(n, {
-                                children: 'Now select where the wire will end.'
-                            }),
+                            (0, e.jsx)(n, { children: 'Now select where the wire will end.' }),
                             (0, e.jsx)(o, {}),
                             'We want the player to get the Snowball Launcher, and the Item Granter is responsible for doing that! So,',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'select the Item Granter'
-                            }),
+                            (0, e.jsx)(n, { children: 'select the Item Granter' }),
                             ' for the end of the wire.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.END_WIRE_TO_DEVICE && a.device.deviceOption.id === f.default.itemGranter
+                    cb: q => q.event === g.TutorialEventName.END_WIRE_TO_DEVICE && q.device.deviceOption.id === f.default.itemGranter
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
@@ -1084,9 +887,7 @@ b.register('XzTlG', function(c, d) {
                             (0, e.jsx)(o, {}),
                             'You connected the two devices together, but now you need to',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'tell it exactly what to do.'
-                            })
+                            (0, e.jsx)(n, { children: 'tell it exactly what to do.' })
                         ]
                     }),
                     cb: _m
@@ -1097,31 +898,23 @@ b.register('XzTlG', function(c, d) {
                             'We want to grant the Snowball Launcher when a player answers a question correctly. ',
                             (0, e.jsx)(o, {}),
                             'On the left side, select ',
-                            (0, e.jsx)(n, {
-                                children: 'Question answered correctly'
-                            }),
+                            (0, e.jsx)(n, { children: 'Question answered correctly' }),
                             '. On the right side, select ',
-                            (0, e.jsx)(n, {
-                                children: 'Grant item'
-                            }),
+                            (0, e.jsx)(n, { children: 'Grant item' }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.CONFIGURE_WIRE && 'questionCorrect' === a.wire.startConnection && 'grant' === a.wire.endConnection
+                    cb: q => q.event === g.TutorialEventName.CONFIGURE_WIRE && 'questionCorrect' === q.wire.startConnection && 'grant' === q.wire.endConnection
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Perfection! Just like that,',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'you\u2019ve connected these two devices together.'
-                            }),
+                            (0, e.jsx)(n, { children: 'you\u2019ve connected these two devices together.' }),
                             (0, e.jsx)(o, {}),
                             'Let\u2019s make sure everything works! Close out of this screen by clicking the ',
-                            (0, e.jsx)(n, {
-                                children: 'X'
-                            }),
+                            (0, e.jsx)(n, { children: 'X' }),
                             ' on the top right. Then, start the game by clicking',
                             ' ',
                             (0, e.jsx)('div', {
@@ -1132,38 +925,30 @@ b.register('XzTlG', function(c, d) {
                                 children: (0, e.jsx)(h.default, {
                                     tooltip: '',
                                     onClick: () => !1,
-                                    children: (0, e.jsx)(i.default, {
-                                        name: 'fas fa-play'
-                                    })
+                                    children: (0, e.jsx)(i.default, { name: 'fas fa-play' })
                                 })
                             }),
                             ' ',
                             'on the bottom right.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.START_THE_GAME
+                    cb: q => q.event === g.TutorialEventName.START_THE_GAME
                 },
                 {
-                    text: (0, e.jsx)(e.Fragment, {
-                        children: 'Go answer a question correctly, and let\u2019s see if you get a Snowball Launcher!'
-                    }),
-                    cb: a => a.event === g.TutorialEventName.GRANT_ITEM && a.itemId.toLocaleLowerCase().includes('snowball_launcher')
+                    text: (0, e.jsx)(e.Fragment, { children: 'Go answer a question correctly, and let\u2019s see if you get a Snowball Launcher!' }),
+                    cb: q => q.event === g.TutorialEventName.GRANT_ITEM && q.itemId.toLocaleLowerCase().includes('snowball_launcher')
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
-                            (0, e.jsx)(n, {
-                                children: 'You got the Snowball Launcher, woohoo!'
-                            }),
+                            (0, e.jsx)(n, { children: 'You got the Snowball Launcher, woohoo!' }),
                             ' ',
                             (0, e.jsx)(o, {}),
                             ' ',
                             (0, e.jsx)(o, {}),
                             ' In Gimkit Creative, this is exactly how you\u2019ll create your own game mechanics.',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'You\u2019ll place different devices together and connect them via wires!'
-                            })
+                            (0, e.jsx)(n, { children: 'You\u2019ll place different devices together and connect them via wires!' })
                         ]
                     }),
                     cb: _m
@@ -1172,9 +957,7 @@ b.register('XzTlG', function(c, d) {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'And just like that, you now know the four fundamentals of Gimkit Creative: ',
-                            (0, e.jsx)(n, {
-                                children: 'terrain, props, devices, and wires!'
-                            })
+                            (0, e.jsx)(n, { children: 'terrain, props, devices, and wires!' })
                         ]
                     }),
                     cb: _m
@@ -1183,53 +966,41 @@ b.register('XzTlG', function(c, d) {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'End the game and then click ',
-                            (0, e.jsx)(n, {
-                                children: 'Restore Map'
-                            }),
+                            (0, e.jsx)(n, { children: 'Restore Map' }),
                             ' to go back into Editing Mode.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.RESTORE_THE_MAP
+                    cb: q => q.event === g.TutorialEventName.RESTORE_THE_MAP
                 },
                 {
-                    text: (0, e.jsx)(e.Fragment, {
-                        children: 'Let\u2018s finish your game by adding an enemy. You\u2019ll have to defeat this enemy to win the game!'
-                    }),
+                    text: (0, e.jsx)(e.Fragment, { children: 'Let\u2018s finish your game by adding an enemy. You\u2019ll have to defeat this enemy to win the game!' }),
                     cb: _m
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Open the ',
-                            (0, e.jsx)(n, {
-                                children: 'Add Menu'
-                            }),
+                            (0, e.jsx)(n, { children: 'Add Menu' }),
                             ' and select ',
-                            (0, e.jsx)(n, {
-                                children: 'Devices'
-                            }),
+                            (0, e.jsx)(n, { children: 'Devices' }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.OPEN_ADD_SUBMENU && 'devices' === a.menu
+                    cb: q => q.event === g.TutorialEventName.OPEN_ADD_SUBMENU && 'devices' === q.menu
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Let\u2019s add a ',
-                            (0, e.jsx)(n, {
-                                children: 'Sentry Device'
-                            }),
+                            (0, e.jsx)(n, { children: 'Sentry Device' }),
                             '. ',
                             (0, e.jsx)(o, {}),
                             ' The Sentry Device spawns an enemy that will fire at you in-game.',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'Select the Sentry Device.'
-                            })
+                            (0, e.jsx)(n, { children: 'Select the Sentry Device.' })
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.SELECT_DEVICE_TO_ADD && a.deviceTypeId === f.default.sentry
+                    cb: q => q.event === g.TutorialEventName.SELECT_DEVICE_TO_ADD && q.deviceTypeId === f.default.sentry
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
@@ -1239,46 +1010,36 @@ b.register('XzTlG', function(c, d) {
                             'Make sure to place it in an open area so that you\u2019re able to fire at it!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.PLACE_DEVICE_DOWN && a.device.deviceOption.id === f.default.sentry
+                    cb: q => q.event === g.TutorialEventName.PLACE_DEVICE_DOWN && q.device.deviceOption.id === f.default.sentry
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'When you knockout the Sentry, we want the game to end. To end the game, we can use the ',
-                            (0, e.jsx)(n, {
-                                children: 'End Game Device!'
-                            }),
+                            (0, e.jsx)(n, { children: 'End Game Device!' }),
                             ' ',
                             (0, e.jsx)(o, {}),
                             ' Open the',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'Add Menu'
-                            }),
+                            (0, e.jsx)(n, { children: 'Add Menu' }),
                             ', select ',
-                            (0, e.jsx)(n, {
-                                children: 'Devices'
-                            }),
+                            (0, e.jsx)(n, { children: 'Devices' }),
                             ', and then select the ',
-                            (0, e.jsx)(n, {
-                                children: 'End Game Device'
-                            }),
+                            (0, e.jsx)(n, { children: 'End Game Device' }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.SELECT_DEVICE_TO_ADD && a.deviceTypeId === f.default.endGame
+                    cb: q => q.event === g.TutorialEventName.SELECT_DEVICE_TO_ADD && q.deviceTypeId === f.default.endGame
                 },
                 {
                     text: 'Place the End Game device just a little bit to the right of the Sentry!',
-                    cb: a => a.event === g.TutorialEventName.PLACE_DEVICE_DOWN && a.device.deviceOption.id === f.default.endGame
+                    cb: q => q.event === g.TutorialEventName.PLACE_DEVICE_DOWN && q.device.deviceOption.id === f.default.endGame
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Now\u2026we want to connect these two devices together. And you know how we can do that: ',
-                            (0, e.jsx)(n, {
-                                children: 'wires!'
-                            })
+                            (0, e.jsx)(n, { children: 'wires!' })
                         ]
                     }),
                     cb: _m
@@ -1287,25 +1048,17 @@ b.register('XzTlG', function(c, d) {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Open the ',
-                            (0, e.jsx)(n, {
-                                children: 'Add Menu'
-                            }),
+                            (0, e.jsx)(n, { children: 'Add Menu' }),
                             ', select ',
-                            (0, e.jsx)(n, {
-                                children: 'Wires'
-                            }),
+                            (0, e.jsx)(n, { children: 'Wires' }),
                             ', and then place a wire starting from the ',
-                            (0, e.jsx)(n, {
-                                children: 'Sentry Device'
-                            }),
+                            (0, e.jsx)(n, { children: 'Sentry Device' }),
                             ' and ending at the ',
-                            (0, e.jsx)(n, {
-                                children: 'End Game Device'
-                            }),
+                            (0, e.jsx)(n, { children: 'End Game Device' }),
                             '.'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.END_WIRE_TO_DEVICE && a.device.deviceOption.id === f.default.endGame
+                    cb: q => q.event === g.TutorialEventName.END_WIRE_TO_DEVICE && q.device.deviceOption.id === f.default.endGame
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
@@ -1315,32 +1068,28 @@ b.register('XzTlG', function(c, d) {
                             'Make it so once the Sentry gets knocked out, the game ends!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.CONFIGURE_WIRE && 'knockedOut' === a.wire.startConnection && 'endGame' === a.wire.endConnection
+                    cb: q => q.event === g.TutorialEventName.CONFIGURE_WIRE && 'knockedOut' === q.wire.startConnection && 'endGame' === q.wire.endConnection
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Way to go! With that, I think your game is ready! ',
                             (0, e.jsx)(o, {}),
-                            (0, e.jsx)(n, {
-                                children: 'Start the game'
-                            }),
+                            (0, e.jsx)(n, { children: 'Start the game' }),
                             ' and let\u2019s try it for real!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.START_THE_GAME
+                    cb: q => q.event === g.TutorialEventName.START_THE_GAME
                 },
                 {
                     text: (0, e.jsxs)(e.Fragment, {
                         children: [
-                            (0, e.jsx)(n, {
-                                children: 'The game has started!'
-                            }),
+                            (0, e.jsx)(n, { children: 'The game has started!' }),
                             (0, e.jsx)(o, {}),
                             'Go answer a question correctly, gain the snowball launcher, and knockout that enemy!'
                         ]
                     }),
-                    cb: a => a.event === g.TutorialEventName.END_THE_GAME_BY_DEVICE
+                    cb: q => q.event === g.TutorialEventName.END_THE_GAME_BY_DEVICE
                 },
                 {
                     text: (0, e.jsx)(e.Fragment, {
@@ -1372,9 +1121,7 @@ b.register('XzTlG', function(c, d) {
                             'Keep exploring Gimkit Creative!',
                             (0, e.jsx)(o, {}),
                             'As you explore and learn, you\'ll be able to build more & more types of maps & games! ',
-                            (0, e.jsx)(n, {
-                                children: 'The possibilities are endless!'
-                            })
+                            (0, e.jsx)(n, { children: 'The possibilities are endless!' })
                         ]
                     }),
                     cb: _m
@@ -1389,9 +1136,7 @@ b.register('XzTlG', function(c, d) {
                             (0, e.jsx)(o, {}),
                             ' Just like any other skill, you may not get it right away. But',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'the more you practice, the better you\u2019ll get.'
-                            }),
+                            (0, e.jsx)(n, { children: 'the more you practice, the better you\u2019ll get.' }),
                             ' You can do this!'
                         ]
                     }),
@@ -1402,223 +1147,53 @@ b.register('XzTlG', function(c, d) {
                         children: [
                             'And...that\'s the end of the tutorial.',
                             ' ',
-                            (0, e.jsx)(n, {
-                                children: 'Click the button to the right to claim your reward!'
-                            })
+                            (0, e.jsx)(n, { children: 'Click the button to the right to claim your reward!' })
                         ]
                     }),
                     cb: () => !1
                 }
             ]
         };
-}), b.register('ksXL7', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _j;
     });
-    var e = b('gRbUn'),
-        f = b('O0Kav'),
-        g = b('quE27'),
-        h = b('Dn89R'),
-        i = b('aPZ+w');
-    var _j = a => {
-        const [k, l, m] = (0, g.useBoolean)(!1), n = f.useRef(null);
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    var _j = k => {
+        const [l, m, n] = (0, g.useBoolean)(!1), o = f.useRef(null);
         return (0, e.jsx)('div', {
-            ref: n,
+            ref: o,
             children: (0, e.jsx)(h.default, {
-                title: a.tooltip,
+                title: k.tooltip,
                 placement: 'bottom',
-                open: k,
-                getPopupContainer: () => n.current,
+                open: l,
+                getPopupContainer: () => o.current,
                 children: (0, e.jsx)('div', {
-                    onMouseEnter: l,
-                    onMouseLeave: m,
+                    onMouseEnter: m,
+                    onMouseLeave: n,
                     children: (0, e.jsx)(i.default, {
                         type: 'default',
-                        onClick: a.onClick,
+                        onClick: k.onClick,
                         customHorizontalPadding: 18,
                         customColor: '#4A2C83',
-                        ariaLabel: a.tooltip,
-                        children: a.children
+                        ariaLabel: k.tooltip,
+                        children: k.children
                     })
                 })
             })
         });
     };
-}), b.register('aPZ+w', function(c, d) {
-    a(c.exports, 'default', function() {
-        return _l;
-    });
-    var e = b('gRbUn'),
-        f = b('SAYZy'),
-        g = b('O0Kav'),
-        h = b('u4s09'),
-        i = b('Eh2Wh'),
-        j = b('HOIhZ');
-    let k;
-    var _l = a => {
-        const m = a.size || 'default',
-            n = g.useMemo(() => a.customColor ? a.customColor : a.disabled ? '#546e7a' : 'success' === a.type ? '#2e7d32' : 'danger' === a.type ? '#c62828' : '#3f51b5', [
-                a.disabled,
-                a.type,
-                a.customColor
-            ]),
-            o = g.useMemo(() => (0, f.darken)(0.1, n), [n]),
-            p = g.useMemo(() => 'small' === m || 'default' === m ? 14 : 20, [m]),
-            q = g.useMemo(() => 'small' === m ? 6 : 'default' === m ? 8 : 12, [m]),
-            r = g.useMemo(() => {
-                const s = 'small' === m ? '8px' : '12px';
-                return a.customHorizontalPadding ? `${ s } ${ a.customHorizontalPadding }px` : 'small' === m ? `${ s } 24px` : 'default' === m ? `${ s } 28px` : `${ s } 42px`;
-            }, [
-                m,
-                a.customHorizontalPadding
-            ]),
-            s = g.useMemo(() => 'small' === m ? 41 : 49, [m]),
-            t = g.useMemo(() => a.customFontWeight ? a.customFontWeight : 'large' === m ? i.FontWeights.Bold : i.FontWeights.Normal, [
-                a.customFontWeight,
-                m
-            ]),
-            u = () => {
-                a.disabled || a.onClick && a.onClick();
-            };
-        return (0, e.jsx)(_m, {
-            style: Object.assign({
-                pointerEvents: 'all',
-                WebkitFlexShrink: 0,
-                flexShrink: 0,
-                height: s
-            }, a.style || {}),
-            children: (0, e.jsxs)('button', {
-                className: 'btn-pushable',
-                'aria-label': a.ariaLabel,
-                onClick: a.usePointerDownEvent ? void 0 : u,
-                onPointerDown: a.usePointerDownEvent ? u : void 0,
-                style: {
-                    cursor: a.disabled ? 'not-allowed' : 'pointer',
-                    width: a.block ? '100%' : 'auto'
-                },
-                children: [
-                    (0, e.jsx)('span', {
-                        className: 'btn-shadow',
-                        style: {
-                            borderRadius: q
-                        }
-                    }),
-                    (0, e.jsx)('span', {
-                        className: 'btn-edge',
-                        style: {
-                            background: o,
-                            borderRadius: q
-                        }
-                    }),
-                    (0, e.jsx)('span', {
-                        className: 'btn-front',
-                        style: {
-                            background: n,
-                            fontSize: p,
-                            borderRadius: q,
-                            padding: r,
-                            fontWeight: t
-                        },
-                        children: a.children
-                    })
-                ]
-            })
-        });
-    };
-    const _m = h.default.div.attrs({
-        className: 'flex'
-    })(k || (k = (a => a)`
-  align-items: flex-end;
-
-  .btn-pushable {
-    position: relative;
-    border: none;
-    background: transparent;
-    padding: 0;
-    outline: none;
-    transition: filter 250ms;
-  }
-  .btn-shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: hsl(0deg 0% 0% / 0.25);
-    will-change: transform;
-    transform: translateY(2px);
-    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-  }
-  .btn-edge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: background 0.25s;
-  }
-  .btn-front {
-    display: block;
-    position: relative;
-    color: ${ 0 };
-    will-change: transform;
-    transform: translateY(-4px);
-    transition: background 0.25s, transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-    user-select: none;
-  }
-  .btn-pushable:hover {
-    filter: brightness(110%);
-  }
-  .btn-pushable:hover .btn-front {
-    transform: translateY(-6px);
-    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-  }
-  .btn-pushable:active .btn-front {
-    transform: translateY(-2px);
-    transition: transform 34ms;
-  }
-  .btn-pushable:hover .btn-shadow {
-    transform: translateY(4px);
-    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-  }
-  .btn-pushable:active .btn-shadow {
-    transform: translateY(1px);
-    transition: transform 34ms;
-  }
-`), j.default.White);
-}), b.register('HOIhZ', function(c, d) {
-    a(c.exports, 'default', function() {
-        return _e;
-    });
-    var _e = {
-        White: '#FFFFFF',
-        Black: '#000000',
-        Yellow: '#FFFF00',
-        Purple: '#673ab7'
-    };
-}), b.register('t52Ep', function(c, d) {
-    a(c.exports, 'default', function() {
-        return _f;
-    });
-    var e = b('gRbUn');
-    b('O0Kav');
-    var _f = a => (0, e.jsx)('i', {
-        className: `${ a.name }${ a.className ? ` ${ a.className }` : '' }`,
-        style: a.style
-    });
-}), b.register('8j4mV', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _j;
     });
-    var e = b('gRbUn');
-    b('O0Kav');
-    var f = b('u4s09');
-    let g, h, i = a => a;
-    var _j = a => (0, e.jsxs)(_k, {
+    var e = b('.....');
+    b('.....');
+    var f = b('.....');
+    let g, h, i = j => j;
+    var _j = k => (0, e.jsxs)(_k, {
         children: [
-            (0, e.jsx)(_l, {
-                children: a.children
-            }),
+            (0, e.jsx)(_l, { children: k.children }),
             (0, e.jsx)('div', {
                 className: 'area',
                 children: (0, e.jsxs)('ul', {
@@ -1765,51 +1340,36 @@ b.register('XzTlG', function(c, d) {
       border-radius: 50%;
     }
   }
-`)),
-        _l = f.default.div(h || (h = i`
+`)), _l = f.default.div(h || (h = i`
   z-index: 1;
   /* background: rgba(0, 0, 0, 0.4); */
   flex: 1;
 `));
-}), b.register('PWtL3', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _v;
     });
-    var e = b('gRbUn'),
-        f = b('O0Kav'),
-        g = b('u4s09'),
-        h = b('MgONH'),
-        i = b('8KqQ+'),
-        j = b('Eh2Wh'),
-        k = b('quE27'),
-        l = b('aPZ+w'),
-        m = b('P1KtI'),
-        n = b('yruHD'),
-        o = b('UaUBz0');
-    let p, q, r, s, t, u = a => a;
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
+    let p, q, r, s, t, u = v => v;
     var _v = () => {
         const [w, x] = f.useState(!0), [y, z] = f.useState(!1), A = () => {
-            x(!0), (0, k.request)({
-                url: '/api/created-map/tutorial-reward',
-                method: 'POST',
-                success: () => {
-                    z(!1);
-                },
-                error: () => {
-                    z(!0);
-                },
-                both: () => {
-                    x(!1);
-                }
-            });
-        };
+                x(!0), (0, k.request)({
+                    url: '/api/created-map/tutorial-reward',
+                    method: 'POST',
+                    success: () => {
+                        z(!1);
+                    },
+                    error: () => {
+                        z(!0);
+                    },
+                    both: () => {
+                        x(!1);
+                    }
+                });
+            };
         return f.useEffect(() => {
             (0, k.loadFont)('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap'), A();
-        }, []), w ? (0, e.jsx)(_w, {
-            children: (0, e.jsx)(n.default, {
-                size: 'large'
-            })
-        }) : y ? (0, e.jsxs)(_w, {
+        }, []), w ? (0, e.jsx)(_w, { children: (0, e.jsx)(n.default, { size: 'large' }) }) : y ? (0, e.jsxs)(_w, {
             children: [
                 (0, e.jsx)('div', {
                     style: {
@@ -1829,17 +1389,11 @@ b.register('XzTlG', function(c, d) {
             children: (0, e.jsxs)(_w, {
                 className: 'animated fadeIn',
                 children: [
-                    (0, e.jsx)(_x, {
-                        children: 'Gimkit Creative'
-                    }),
-                    (0, e.jsx)(_y, {
-                        children: 'Tutorial Complete!'
-                    }),
+                    (0, e.jsx)(_x, { children: 'Gimkit Creative' }),
+                    (0, e.jsx)(_y, { children: 'Tutorial Complete!' }),
                     (0, e.jsx)('div', {
                         className: 'animated pulse infinite',
-                        style: {
-                            animationDuration: '3s'
-                        },
+                        style: { animationDuration: '3s' },
                         children: (0, e.jsx)(_z, {})
                     }),
                     (0, e.jsxs)(_A, {
@@ -1847,24 +1401,18 @@ b.register('XzTlG', function(c, d) {
                             'You unlocked the',
                             ' ',
                             (0, e.jsx)('span', {
-                                style: {
-                                    color: '#ffff94'
-                                },
+                                style: { color: '#ffff94' },
                                 children: 'Blueprint Gim!'
                             }),
                             ' You can find it in your Locker!'
                         ]
                     }),
                     (0, e.jsx)('div', {
-                        style: {
-                            marginTop: 30
-                        },
+                        style: { marginTop: 30 },
                         children: (0, e.jsx)(l.default, {
                             type: 'success',
                             customFontWeight: j.FontWeights.Bold,
-                            style: {
-                                fontFamily: j.Fonts.SFPro
-                            },
+                            style: { fontFamily: j.Fonts.SFPro },
                             size: 'large',
                             onClick: () => window.location.href = '/',
                             ariaLabel: 'Back To Dashboard',
@@ -1883,40 +1431,30 @@ b.register('XzTlG', function(c, d) {
   text-transform: uppercase;
   padding: 20px;
   text-align: center;
-`), i.default.White, j.Fonts.FugazOne),
-        _x = g.default.div(q || (q = u`
+`), i.default.White, j.Fonts.FugazOne), _x = g.default.div(q || (q = u`
   text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.75);
   font-size: 26px;
   opacity: 0.85;
-`)),
-        _y = g.default.div(r || (r = u`
+`)), _y = g.default.div(r || (r = u`
   text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.75);
   font-size: 48px;
   margin-top: -9px;
-`)),
-        _z = g.default.img.attrs({
-            src: (0, o.default)('characters/spine/preview/construction.png')
-        })(s || (s = u`
+`)), _z = g.default.img.attrs({ src: (0, o.default)('characters/spine/preview/construction.png') })(s || (s = u`
   height: 279px;
   transform: rotate(355deg);
   filter: drop-shadow(0px 0px 9px rgba(255, 255, 255, 0.9));
-`)),
-        _A = g.default.div(t || (t = u`
+`)), _A = g.default.div(t || (t = u`
   font-family: ${ 0 };
   text-transform: none;
   font-weight: ${ 0 };
   font-size: 21px;
   margin-top: 10px;
 `), j.Fonts.SFPro, j.FontWeights.Bold);
-}), b.register('BA14D', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _j;
     });
-    var e = b('5cnOa'),
-        f = b('O0Kav'),
-        g = b('+iTmi'),
-        h = b('VZTwv'),
-        i = function(j, k) {
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = function (j, k) {
             return f.createElement(h.default, (0, e.default)((0, e.default)({}, j), {}, {
                 ref: k,
                 icon: g.default
@@ -1924,8 +1462,8 @@ b.register('XzTlG', function(c, d) {
         };
     i.displayName = 'CheckOutlined';
     var _j = f.forwardRef(i);
-}), b.register('+iTmi', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _e;
     });
     var _e = {
@@ -1936,11 +1474,9 @@ b.register('XzTlG', function(c, d) {
                 focusable: 'false'
             },
             children: [{
-                tag: 'path',
-                attrs: {
-                    d: 'M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z'
-                }
-            }]
+                    tag: 'path',
+                    attrs: { d: 'M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z' }
+                }]
         },
         name: 'check',
         theme: 'outlined'

@@ -7,29 +7,15 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('iMWn1', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _v;
     });
-    var f = b('s/YA9'),
-        g = b('ltxDW'),
-        h = b('f7A2d'),
-        i = b('GIe9o'),
-        j = b('+7143'),
-        k = b('LARD6'),
-        l = b('UYyWT'),
-        m = b('cNVx1'),
-        n = b('Fp1Dk'),
-        o = b('UkCpC'),
-        p = b('bwSO3'),
-        q = b('hycyg'),
-        r = b('uc4mA17'),
-        s = b('u/WlI21'),
-        t = b('4pQyd');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....'), t = b('.....');
     class u extends g.default {
         createImage() {
             if (!this.matchesPhase)
@@ -40,18 +26,17 @@ b.register('iMWn1', function(c, d) {
             this.lastImageUrl = v, this.parts.add.sprite({
                 imageId: v,
                 imageUrl: v,
-                onReady: b => {
+                onReady: w => {
                     if (v !== this.lastImageUrl)
-                        return void this.parts.destroySpecificPart(b.id);
-                    this.image && this.parts.destroySpecificPart(this.image.id), this.image = b;
-                    const w = (0, j.default)(v),
-                        x = (0, p.default)({
-                            width: w.width,
-                            height: w.height,
+                        return void this.parts.destroySpecificPart(w.id);
+                    this.image && this.parts.destroySpecificPart(this.image.id), this.image = w;
+                    const x = (0, j.default)(v), y = (0, p.default)({
+                            width: x.width,
+                            height: x.height,
                             newWidth: 0.75 * Math.abs(this.options.width),
                             newHeight: 0.75 * Math.abs(this.options.height)
                         });
-                    b.view.displayWidth = x.width, b.view.displayHeight = x.height, this.boundingBox.clearHardcoded(), b.view.angle = this.options.rotation, (0, o.InGamePhase)() ? b.view.alpha = this.state.visible ? this.options.alpha : 0 : b.view.alpha = this.options.alpha;
+                    w.view.displayWidth = y.width, w.view.displayHeight = y.height, this.boundingBox.clearHardcoded(), w.view.angle = this.options.rotation, (0, o.InGamePhase)() ? w.view.alpha = this.state.visible ? this.options.alpha : 0 : w.view.alpha = this.options.alpha;
                 }
             });
         }
@@ -81,13 +66,12 @@ b.register('iMWn1', function(c, d) {
                     width: this.options.width,
                     rotation: (0, n.ConvertDegToRad)(this.options.rotation)
                 }));
-            }), (0, f.default)(this, 'onStateChange', v => {
-                'frameColor' === v && (this.createFrame(), this.createImage()), 'imageUrl' === v && this.createImage(), 'visible' === v && (0, o.InGamePhase)() && (this.state.visible ? (this.image && (this.image.view.alpha = 1), this.frame && (this.frame.view.alpha = 1)) : (this.image && (this.image.view.alpha = 0), this.frame && (this.frame.view.alpha = 0)));
+            }), (0, f.default)(this, 'onStateChange', w => {
+                'frameColor' === w && (this.createFrame(), this.createImage()), 'imageUrl' === w && this.createImage(), 'visible' === w && (0, o.InGamePhase)() && (this.state.visible ? (this.image && (this.image.view.alpha = 1), this.frame && (this.frame.view.alpha = 1)) : (this.image && (this.image.view.alpha = 0), this.frame && (this.frame.view.alpha = 0)));
             }), (0, f.default)(this, 'setupVisualEditing', () => {
                 if (!(0, o.InPreGamePhase)() || !(0, q.isSavedVersion)())
                     return;
-                const w = (0, r.FetchOptionSchemaProperty)(this, 'width'),
-                    x = (0, r.FetchOptionSchemaProperty)(this, 'height');
+                const w = (0, r.FetchOptionSchemaProperty)(this, 'width'), x = (0, r.FetchOptionSchemaProperty)(this, 'height');
                 this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
@@ -97,11 +81,11 @@ b.register('iMWn1', function(c, d) {
                     minHeight: x.min,
                     maxHeight: x.max,
                     keepRatio: !1,
-                    onChange: w => {
-                        (0, s.ReplaceVisualEditingPreview)(w.x, w.y, {
-                            width: w.width,
-                            height: w.height,
-                            rotation: w.angle
+                    onChange: y => {
+                        (0, s.ReplaceVisualEditingPreview)(y.x, y.y, {
+                            width: y.width,
+                            height: y.height,
+                            rotation: y.angle
                         });
                     }
                 });
@@ -111,27 +95,28 @@ b.register('iMWn1', function(c, d) {
         }
     }
     var _v = u;
-}), b.register('f7A2d', function(c, d) {
+}), b.register('.....', function (c, d) {
     let e;
     var f;
-    a(c.exports, 'VisiblePhases', function() {
+    a(c.exports, 'VisiblePhases', function () {
         return e;
     }), (f = e || (e = {})).all = 'all', f.game = 'game', f.preGame = 'preGame';
-}), b.register('LARD6', function(c, d) {
-    a(c.exports, 'GetBoundingBoxForRotatedBox', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'GetBoundingBoxForRotatedBox', function () {
         return _e;
     });
-    const _e = a => {
-        var f, g;
-        a.originX = null !== (f = a.originX) && void 0 !== f ? f : 0.5, a.originY = null !== (g = a.originY) && void 0 !== g ? g : 0.5;
+    const _e = f => {
+        var g, h;
+        f.originX = null !== (g = f.originX) && void 0 !== g ? g : 0.5, f.originY = null !== (h = f.originY) && void 0 !== h ? h : 0.5;
         const {
-            width: h,
-            height: i,
-            rotation: j,
-            originX: k,
-            originY: l
-        } = a, m = [], n = [];
-        [{
+                width: i,
+                height: j,
+                rotation: k,
+                originX: l,
+                originY: m
+            } = f, n = [], o = [];
+        [
+            {
                 originX: 1,
                 originY: 1
             },
@@ -147,71 +132,64 @@ b.register('iMWn1', function(c, d) {
                 originX: 0,
                 originY: 0
             }
-        ].forEach(a => {
-            const o = Phaser.Math.Angle.Between(0, 0, (a.originX - k) * h, (a.originY - l) * i),
-                p = Phaser.Math.Distance.Between(0, 0, (a.originX - k) * h, (a.originY - l) * i);
-            m.push(p * Math.cos(o + j)), n.push(p * Math.sin(o + j));
+        ].forEach(p => {
+            const q = Phaser.Math.Angle.Between(0, 0, (p.originX - l) * i, (p.originY - m) * j), r = Phaser.Math.Distance.Between(0, 0, (p.originX - l) * i, (p.originY - m) * j);
+            n.push(r * Math.cos(q + k)), o.push(r * Math.sin(q + k));
         });
-        const o = Math.max(...m) - Math.min(...m),
-            p = Math.max(...n) - Math.min(...n);
+        const p = Math.max(...n) - Math.min(...n), q = Math.max(...o) - Math.min(...o);
         return {
-            x: -k * o,
-            y: -l * p,
-            width: o,
-            height: p
+            x: -l * p,
+            y: -m * q,
+            width: p,
+            height: q
         };
     };
-}), b.register('uc4mA17', function(c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function () {
         return _e;
     });
-    const _e = (a, c) => {
-        var f, g, h;
-        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
+    const _e = (f, g) => {
+        var h, i, j;
+        const k = f.deviceOption.optionSchema.options.find(l => l.key === g);
         return {
-            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
-            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
-            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
+            min: null === (h = null == k ? void 0 : k.option.props) || void 0 === h ? void 0 : h.min,
+            max: null === (i = null == k ? void 0 : k.option.props) || void 0 === i ? void 0 : i.max,
+            step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('u/WlI21', function(c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function () {
         return _i;
     });
-    var e = b('hemXM'),
-        f = b('sWmxu5'),
-        g = b('EzUqb'),
-        h = b('GQMbT');
-    const _i = (a, b, c) => {
-        const j = (0, h.FetchVisualEditingPreview)(),
-            k = (0, g.FetchCurrentlyEditedDevice)();
-        if (!k || !j)
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    const _i = (j, k, l) => {
+        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        if (!n || !m)
             return;
-        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
         (0, f.default)({
-            deviceOption: j.deviceOption,
+            deviceOption: m.deviceOption,
             id: e.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: l,
-            layerId: k.layers.getLayer(),
-            name: j.name,
+            x: j,
+            y: k,
+            depth: o,
+            layerId: n.layers.getLayer(),
+            name: m.name,
             isPreview: !0,
             options: {
-                ...j.options,
-                ...c
+                ...m.options,
+                ...l
             },
             placedByClient: !0,
-            state: j.deviceOption.defaultState
+            state: m.deviceOption.defaultState
         });
     };
-}), b.register('sWmxu5', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _g;
     });
-    var e = b('heTaO'),
-        f = b('2LtPo');
-    var _g = a => {
-        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
+    var e = b('.....'), f = b('.....');
+    var _g = h => {
+        (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
 });

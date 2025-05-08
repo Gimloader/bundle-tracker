@@ -1,7 +1,7 @@
 import { parse } from "node-html-parser";
 import { join } from "path";
 import fs from 'fs';
-import { formatCss, formatJs, renameModules } from "./format";
+import { formatCss, formatJs } from "./format";
 import cliProgress from "cli-progress";
 import { parseArgs } from "util";
 import { pushChanges } from "./push";
@@ -14,25 +14,16 @@ const { values: { force, push }} = parseArgs({
     }
 });
 
-const multibar = new cliProgress.MultiBar({
-    hideCursor: true,
-    format: '{bar} | {active} | {value}/{total}',
-}, cliProgress.Presets.shades_grey);
-const overall = multibar.create(3, 0, { active: "Fetching registry" });
-
 const base = "https://www.gimkit.com";
 const data = join(__dirname, "../", "data");
 
 // get the index script
-const registryBar = multibar.create(2, 0, { active: "Fetching html" });
-
 const res = await fetch(base + '/join');
 const text = await res.text();
 const root = parse(text);
 
 const script = root.querySelector(`script[type="module"]`);
 if(!script) throw new Error("Failed to find index script");
-registryBar.increment(1, { active: "Fetching index" });
 
 // get the module registry
 const indexUrl = script.getAttribute("src");
@@ -50,7 +41,6 @@ if(await lastRunFile.exists()) {
 }
 
 if(!force && lastRun.lastIndex === indexUrl) {
-    multibar.stop();
     console.log("No changes since last run");
     process.exit();
 }
@@ -77,8 +67,6 @@ for(const ext of extensions) {
 }
 
 await Bun.file(join(data, "js", "index.js")).write(formatJs(indexFile));
-overall.increment(1, { active: "Downloading scripts" });
-multibar.remove(registryBar);
 
 let groups: { name: string, ext: string, urls: { index: number, url: string }[] }[] = [];
 let numFiles = 0;
@@ -103,7 +91,11 @@ for(const id in registry) {
     numFiles++;
 }
 
-const filesBar = multibar.create(numFiles, 0);
+const bar = new cliProgress.Bar({
+    hideCursor: true,
+    format: '{bar} | {active} | {value}/{total}',
+}, cliProgress.Presets.shades_grey);
+bar.start(numFiles, 0, { active: "Loading..."});
 
 // download and write the files
 for(const group of groups) {
@@ -112,7 +104,7 @@ for(const group of groups) {
     for(let i = 0; i < group.urls.length; i++) {
         const url = group.urls[i].url;
 
-        filesBar.increment(1, { active: url });
+        bar.increment(1, { active: url });
 
         const res = await fetch(base + "/" + url);
         let text = await res.text();
@@ -132,20 +124,8 @@ for(const group of groups) {
     }
 }
 
-overall.increment(1, { active: "Finalizing modules" });
-multibar.remove(filesBar);
-
-const renameBar = multibar.create(numFiles, 0);
-
-await renameModules((file) => {
-    renameBar.increment(1, { active: file });
-});
-
 lastRunFile.write(JSON.stringify(lastRun, null, 4));
-
-overall.increment();
-multibar.remove(renameBar);
-multibar.stop();
+bar.stop();
 
 // push the changes if needed
 if(push) await pushChanges();

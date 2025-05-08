@@ -7,46 +7,23 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('+2vm5', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _s;
     });
-    var f = b('s/YA9'),
-        g = b('ltxDW'),
-        h = b('gXVUl'),
-        i = b('cNVx1'),
-        j = b('UkCpC'),
-        k = b('hycyg'),
-        l = b('uc4mA17'),
-        m = b('u/WlI21'),
-        n = b('JCj1N0'),
-        o = b('ukDJm'),
-        p = b('GIe9o');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....');
     const q = 0.35;
     class r extends g.default {
         createPath() {
             if (!this.options.showPath)
                 return;
-            const s = Phaser.Math.DegToRad(this.options.angle),
-                t = 16 * Math.floor((this.options.distance - 55 - 24) / 16),
-                u = Math.cos(s) * t,
-                v = Math.sin(s) * t,
-                w = -u / 2,
-                x = -v / 2,
-                y = u / 2,
-                z = v / 2,
-                A = Math.floor(t / 16),
-                B = (y - w) / A,
-                C = (z - x) / A,
-                D = (0, j.InPreGamePhase)() ? q : (1 - this.activeFactor) * q,
-                E = (0, j.InPreGamePhase)() ? Phaser.BlendModes.NORMAL : Phaser.BlendModes.ADD;
+            const s = Phaser.Math.DegToRad(this.options.angle), t = 16 * Math.floor((this.options.distance - 55 - 24) / 16), u = Math.cos(s) * t, v = Math.sin(s) * t, w = -u / 2, x = -v / 2, y = u / 2, z = v / 2, A = Math.floor(t / 16), B = (y - w) / A, C = (z - x) / A, D = (0, j.InPreGamePhase)() ? q : (1 - this.activeFactor) * q, E = (0, j.InPreGamePhase)() ? Phaser.BlendModes.NORMAL : Phaser.BlendModes.ADD;
             for (let F = 0; F <= A; F++) {
-                const G = w + F * B,
-                    H = x + F * C;
+                const G = w + F * B, H = x + F * C;
                 this.parts.add.sprite({
                     ...h.DotAsset,
                     depthChange: Math.min(x, z) - H,
@@ -54,31 +31,31 @@ b.register('+2vm5', function(c, d) {
                     layerId: p.default.DevicesUnderCharacters,
                     x: G,
                     y: H,
-                    onReady: F => {
-                        F.view.tint = (0, i.GetNumberFromHexColor)(this.options.laserColor), F.view.alpha = D, F.view.blendMode = E, F.view.setScale(0.2), this.dots.push(F);
+                    onReady: I => {
+                        I.view.tint = (0, i.GetNumberFromHexColor)(this.options.laserColor), I.view.alpha = D, I.view.blendMode = E, I.view.setScale(0.2), this.dots.push(I);
                     }
                 });
             }
         }
         constructor(s) {
             super(s), (0, f.default)(this, 'activeFactor', 1), (0, f.default)(this, 'animationsReady', !1), (0, f.default)(this, 'dots', []), (0, f.default)(this, 'onUpdate', () => {
-                (0, j.InGamePhaseVisible)() && (this.laser.view.scaleY = (0.5 * Math.random() + 0.5) * this.activeFactor, this.origin.view.scale = 0.03 * Math.random() * this.activeFactor + this.base.baseScale, this.endPoint.view.scale = 0.03 * Math.random() * this.activeFactor + this.base.baseScale, this.options.showPath && this.dots.forEach(s => {
-                    s.view.alpha = (1 - this.activeFactor) * q;
+                (0, j.InGamePhaseVisible)() && (this.laser.view.scaleY = (0.5 * Math.random() + 0.5) * this.activeFactor, this.origin.view.scale = 0.03 * Math.random() * this.activeFactor + this.base.baseScale, this.endPoint.view.scale = 0.03 * Math.random() * this.activeFactor + this.base.baseScale, this.options.showPath && this.dots.forEach(t => {
+                    t.view.alpha = (1 - this.activeFactor) * q;
                 }));
-            }), (0, f.default)(this, 'onStateChange', s => {
-                if ('active' === s) {
-                    const t = this.state.active ? 1 : 0;
+            }), (0, f.default)(this, 'onStateChange', t => {
+                if ('active' === t) {
+                    const u = this.state.active ? 1 : 0;
                     if (this.tweens.add({
                             targets: this,
-                            activeFactor: t,
+                            activeFactor: u,
                             duration: 150,
-                            delay: 200 * t
+                            delay: 200 * u
                         }), !this.animationsReady)
                         return;
                     this.state.active && !this.prevState.active ? (this.origin.view.play((0, o.GetAnimName)(o.Anims.toActive, this.options.appearance)), this.endPoint.view.play((0, o.GetAnimName)(o.Anims.toActive, this.options.appearance))) : !this.state.active && this.prevState.active && (this.origin.view.play((0, o.GetAnimName)(o.Anims.toInactive, this.options.appearance)), this.endPoint.view.play((0, o.GetAnimName)(o.Anims.toInactive, this.options.appearance)));
                 }
-            }), (0, f.default)(this, 'onMessage', s => {
-                'hit' === s.key && (0, n.OnHit)(s.data);
+            }), (0, f.default)(this, 'onMessage', t => {
+                'hit' === t.key && (0, n.OnHit)(t.data);
             }), (0, f.default)(this, 'setupVisualEditing', () => {
                 if (!(0, j.InPreGamePhase)() || !(0, k.isSavedVersion)())
                     return;
@@ -88,17 +65,15 @@ b.register('+2vm5', function(c, d) {
                     angle: this.options.angle - 90,
                     minRadius: t.min,
                     maxRadius: t.max,
-                    onChange: t => {
-                        (0, m.ReplaceVisualEditingPreview)(t.x, t.y, {
-                            distance: 2 * (t.radius - 40),
-                            angle: t.angle + 90
+                    onChange: u => {
+                        (0, m.ReplaceVisualEditingPreview)(u.x, u.y, {
+                            distance: 2 * (u.radius - 40),
+                            angle: u.angle + 90
                         });
                     }
                 });
             }), this.base = h.bases[this.options.appearance], this.setupVisualEditing();
-            const t = Phaser.Math.DegToRad(this.options.angle),
-                u = Math.cos(t) * this.options.distance,
-                v = Math.sin(t) * this.options.distance;
+            const t = Phaser.Math.DegToRad(this.options.angle), u = Math.cos(t) * this.options.distance, v = Math.sin(t) * this.options.distance;
             this.createPath(), this.origin = this.parts.add.animatedSprite({
                 ...this.base,
                 x: -u / 2,
@@ -107,8 +82,8 @@ b.register('+2vm5', function(c, d) {
                 ...this.base,
                 x: u / 2,
                 y: v / 2,
-                onReady: s => {
-                    this.animationsReady = !0, this.state.active || (0, j.InPreGamePhase)() ? (this.origin.view.play((0, o.GetAnimName)(o.Anims.active, this.options.appearance)), s.view.play((0, o.GetAnimName)(o.Anims.active, this.options.appearance))) : (this.origin.view.play((0, o.GetAnimName)(o.Anims.inactive, this.options.appearance)), s.view.play((0, o.GetAnimName)(o.Anims.inactive, this.options.appearance)));
+                onReady: w => {
+                    this.animationsReady = !0, this.state.active || (0, j.InPreGamePhase)() ? (this.origin.view.play((0, o.GetAnimName)(o.Anims.active, this.options.appearance)), w.view.play((0, o.GetAnimName)(o.Anims.active, this.options.appearance))) : (this.origin.view.play((0, o.GetAnimName)(o.Anims.inactive, this.options.appearance)), w.view.play((0, o.GetAnimName)(o.Anims.inactive, this.options.appearance)));
                 }
             }), this.laser = this.parts.add.sprite({
                 ...h.LaserAsset,
@@ -117,35 +92,30 @@ b.register('+2vm5', function(c, d) {
         }
     }
     var _s = r;
-}), b.register('gXVUl', function(c, d) {
-    a(c.exports, 'LaserAsset', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'LaserAsset', function () {
         return _h;
-    }), a(c.exports, 'DotAsset', function() {
+    }), a(c.exports, 'DotAsset', function () {
         return _i;
-    }), a(c.exports, 'bases', function() {
+    }), a(c.exports, 'bases', function () {
         return _l;
     });
-    var e = b('UaUBz0'),
-        f = b('ukDJm'),
-        g = b('rE5Vv');
+    var e = b('.....'), f = b('.....'), g = b('.....');
     const _h = {
             imageId: (0, e.default)('devices/laser_beam/laser.png'),
             imageUrl: (0, e.default)('devices/laser_beam/laser.png')
-        },
-        _i = {
+        }, _i = {
             imageId: (0, e.default)('devices/laser_beam/dot.png'),
             imageUrl: (0, e.default)('devices/laser_beam/dot.png')
-        },
-        j = g.LaserBeamAppearance.standard,
-        k = g.LaserBeamAppearance.plant,
-        _l = {
+        }, j = g.LaserBeamAppearance.standard, k = g.LaserBeamAppearance.plant, _l = {
             [j]: {
                 baseScale: 0.36,
                 spritesheetId: (0, e.default)('devices/laser_beam/standard_base.png'),
                 spritesheetUrl: (0, e.default)('devices/laser_beam/standard_base.png'),
                 frameWidth: 215,
                 frameHeight: 130,
-                animations: [{
+                animations: [
+                    {
                         animName: (0, f.GetAnimName)(f.Anims.inactive, j),
                         frameRate: 1,
                         animFrames: {
@@ -187,7 +157,8 @@ b.register('+2vm5', function(c, d) {
                 spritesheetUrl: (0, e.default)('devices/laser_beam/plant_base.png'),
                 frameWidth: 127,
                 frameHeight: 122,
-                animations: [{
+                animations: [
+                    {
                         animName: (0, f.GetAnimName)(f.Anims.inactive, k),
                         frameRate: 12,
                         animFrames: {
@@ -224,98 +195,87 @@ b.register('+2vm5', function(c, d) {
                 ]
             }
         };
-}), b.register('ukDJm', function(c, d) {
+}), b.register('.....', function (c, d) {
     let e;
     var f;
-    a(c.exports, 'Anims', function() {
+    a(c.exports, 'Anims', function () {
         return e;
-    }), a(c.exports, 'GetAnimName', function() {
+    }), a(c.exports, 'GetAnimName', function () {
         return _g;
     }), (f = e || (e = {})).active = 'ACTIVE', f.inactive = 'INACTIVE', f.toActive = 'TO_ACTIVE', f.toInactive = 'TO_INACTIVE';
-    const _g = (a, c) => 'LASER_BEAM_DEVICE_ORIGIN_ANIM_' + c + a;
-}), b.register('rE5Vv', function(c, d) {
+    const _g = (h, i) => 'LASER_BEAM_DEVICE_ORIGIN_ANIM_' + i + h;
+}), b.register('.....', function (c, d) {
     let e;
     var f;
-    a(c.exports, 'LaserBeamAppearance', function() {
+    a(c.exports, 'LaserBeamAppearance', function () {
         return e;
     }), (f = e || (e = {})).standard = 'Standard', f.plant = 'Plant';
-}), b.register('uc4mA17', function(c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function () {
         return _e;
     });
-    const _e = (a, c) => {
-        var f, g, h;
-        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
+    const _e = (f, g) => {
+        var h, i, j;
+        const k = f.deviceOption.optionSchema.options.find(l => l.key === g);
         return {
-            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
-            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
-            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
+            min: null === (h = null == k ? void 0 : k.option.props) || void 0 === h ? void 0 : h.min,
+            max: null === (i = null == k ? void 0 : k.option.props) || void 0 === i ? void 0 : i.max,
+            step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('u/WlI21', function(c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function () {
         return _i;
     });
-    var e = b('hemXM'),
-        f = b('sWmxu5'),
-        g = b('EzUqb'),
-        h = b('GQMbT');
-    const _i = (a, b, c) => {
-        const j = (0, h.FetchVisualEditingPreview)(),
-            k = (0, g.FetchCurrentlyEditedDevice)();
-        if (!k || !j)
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    const _i = (j, k, l) => {
+        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        if (!n || !m)
             return;
-        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
         (0, f.default)({
-            deviceOption: j.deviceOption,
+            deviceOption: m.deviceOption,
             id: e.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: l,
-            layerId: k.layers.getLayer(),
-            name: j.name,
+            x: j,
+            y: k,
+            depth: o,
+            layerId: n.layers.getLayer(),
+            name: m.name,
             isPreview: !0,
             options: {
-                ...j.options,
-                ...c
+                ...m.options,
+                ...l
             },
             placedByClient: !0,
-            state: j.deviceOption.defaultState
+            state: m.deviceOption.defaultState
         });
     };
-}), b.register('sWmxu5', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _g;
     });
-    var e = b('heTaO'),
-        f = b('2LtPo');
-    var _g = a => {
-        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
+    var e = b('.....'), f = b('.....');
+    var _g = h => {
+        (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
-}), b.register('JCj1N0', function(c, d) {
-    a(c.exports, 'OnHit', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'OnHit', function () {
         return _j;
     });
-    var e = b('5Fjxs'),
-        f = b('OuzTs'),
-        g = b('heTaO'),
-        h = b('RsWIB'),
-        i = b('bg2iz');
-    const _j = a => {
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    const _j = k => {
         const {
-            characterId: k,
-            damage: l,
-            type: m
-        } = a;
-        if (k && l && m) {
-            const n = (0, h.AmISpectator)() ? (0, f.FetchSpectatedId)() : (0, e.default)();
+            characterId: l,
+            damage: m,
+            type: n
+        } = k;
+        if (l && m && n) {
+            const o = (0, h.AmISpectator)() ? (0, f.FetchSpectatedId)() : (0, e.default)();
             (0, g.default)().worldManager.projectiles.damageMarkers.characters.applyDamage({
-                characterId: k,
-                damage: l,
-                type: m
-            }), k === n && (0, i.default)({
-                type: m
-            });
+                characterId: l,
+                damage: m,
+                type: n
+            }), l === o && (0, i.default)({ type: n });
         }
     };
 });

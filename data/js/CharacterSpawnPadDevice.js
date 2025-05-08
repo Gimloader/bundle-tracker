@@ -7,19 +7,15 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('Uu3gf', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _l;
     });
-    var f = b('UkCpC'),
-        g = b('ltxDW'),
-        h = b('hycyg'),
-        i = b('U52hb'),
-        j = b('GIe9o');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....');
     class k extends g.default {
         constructor(l) {
             if (super(l), !this.options.visibleInGame && ((0, f.InGamePhase)() || (0, h.isPublishedVersion)()))
@@ -32,18 +28,17 @@ b.register('Uu3gf', function(c, d) {
         }
     }
     var _l = k;
-}), b.register('U52hb', function(c, d) {
-    a(c.exports, 'BaseWithoutCharacterAsset', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'BaseWithoutCharacterAsset', function () {
         return _f;
-    }), a(c.exports, 'BaseWithCharacterAsset', function() {
+    }), a(c.exports, 'BaseWithCharacterAsset', function () {
         return _g;
     });
-    var e = b('UaUBz0');
+    var e = b('.....');
     const _f = {
             imageId: (0, e.default)('devices/spawn_pad/base_without_character.png'),
             imageUrl: (0, e.default)('devices/spawn_pad/base_without_character.png')
-        },
-        _g = {
+        }, _g = {
             imageId: (0, e.default)('devices/spawn_pad/base_with_character.png'),
             imageUrl: (0, e.default)('devices/spawn_pad/base_with_character.png')
         };

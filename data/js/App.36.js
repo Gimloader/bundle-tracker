@@ -6,35 +6,187 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('0nKwk1', function(d, e) {
-    a(d.exports, 'default', function() {
-        return _i;
+c.register('.....', function (d, e) {
+    var f;
+    f = d.exports, Object.defineProperty(f, '__esModule', {
+        value: !0,
+        configurable: !0
+    }), a(d.exports, 'default', function () {
+        return _o;
     });
-    var f = c('4shVI1'),
-        g = c('q2qDo1');
-    const h = f.default;
-    h.Group = g.default, h.__ANT_CHECKBOX = !0;
-    var _i = h;
-}), c.register('4shVI1', function(d, e) {
-    a(d.exports, 'default', function() {
-        return _s;
-    }, function(f) {
-        return _s = f;
+    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....');
+    var _o = () => {
+        const {id: p} = (0, n.useParams)();
+        return h.useEffect(() => ((0, l.default)(p), () => {
+            i.default.navigation.reset();
+        }), [p]), (0, g.jsx)(m.default.Provider, {
+            value: i.default,
+            children: (0, g.jsx)(j.Provider, {
+                ...i.default,
+                children: (0, g.jsx)(g.Fragment, { children: (0, g.jsx)(k.default, { kitId: p }) })
+            })
+        });
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
     });
-    var f = c('/U36/'),
-        g = c('y095j9'),
-        h = c('O0Kav'),
-        i = c('R2nG3'),
-        j = c('LbJH1'),
-        k = c('q2qDo1'),
-        l = c('XDmwF'),
-        m = c('NgjTH0'),
-        n = function(o, p) {
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var _j = k => {
+        const {kit: l} = g.default;
+        l.errorFetchingKit = !1, l.fetchingKit = !0, (0, f.request)({
+            url: `/api/games/fetch/${ k }`,
+            method: 'get',
+            success: m => {
+                (0, f.isLoggedIn)() && (g.default.user.loggedIn = !0), l.id = m.kit._id, l.name = m.kit.title, l.coverPhoto = m.kit.gif, l.creatorName = m.creator.name, l.creatorId = m.creator._id, l.kitPrivacy = m.kit.privacy, l.questions.replace(m.kit.questions);
+            },
+            error: m => {
+                l.errorFetchingKit = !0, (0, i.NavigateTo)(h.HOMEPAGE);
+            },
+            both: () => l.fetchingKit = !1
+        });
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
+            }));
+        };
+    j.displayName = 'CopyOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        icon: {
+            tag: 'svg',
+            attrs: {
+                viewBox: '64 64 896 896',
+                focusable: 'false'
+            },
+            children: [{
+                    tag: 'path',
+                    attrs: { d: 'M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z' }
+                }]
+        },
+        name: 'copy',
+        theme: 'outlined'
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
+            }));
+        };
+    j.displayName = 'DeleteOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        icon: {
+            tag: 'svg',
+            attrs: {
+                viewBox: '64 64 896 896',
+                focusable: 'false'
+            },
+            children: [{
+                    tag: 'path',
+                    attrs: { d: 'M360 184h-8c4.4 0 8-3.6 8-8v8h304v-8c0 4.4 3.6 8 8 8h-8v72h72v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80h72v-72zm504 72H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM731.3 840H292.7l-24.2-512h487l-24.2 512z' }
+                }]
+        },
+        name: 'delete',
+        theme: 'outlined'
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
+            }));
+        };
+    j.displayName = 'EditOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        icon: {
+            tag: 'svg',
+            attrs: {
+                viewBox: '64 64 896 896',
+                focusable: 'false'
+            },
+            children: [{
+                    tag: 'path',
+                    attrs: { d: 'M257.7 752c2 0 4-.2 6-.5L431.9 722c2-.4 3.9-1.3 5.3-2.8l423.9-423.9a9.96 9.96 0 000-14.1L694.9 114.9c-1.9-1.9-4.4-2.9-7.1-2.9s-5.2 1-7.1 2.9L256.8 538.8c-1.5 1.5-2.4 3.3-2.8 5.3l-29.5 168.2a33.5 33.5 0 009.4 29.8c6.6 6.4 14.9 9.9 23.8 9.9zm67.4-174.4L687.8 215l73.3 73.3-362.7 362.6-88.9 15.7 15.6-89zM880 836H144c-17.7 0-32 14.3-32 32v36c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-36c0-17.7-14.3-32-32-32z' }
+                }]
+        },
+        name: 'edit',
+        theme: 'outlined'
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
+            }));
+        };
+    j.displayName = 'PlayCircleOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        icon: {
+            tag: 'svg',
+            attrs: {
+                viewBox: '64 64 896 896',
+                focusable: 'false'
+            },
+            children: [
+                {
+                    tag: 'path',
+                    attrs: { d: 'M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z' }
+                },
+                {
+                    tag: 'path',
+                    attrs: { d: 'M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z' }
+                }
+            ]
+        },
+        name: 'play-circle',
+        theme: 'outlined'
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _q;
+    }, function (f) {
+        return _q = f;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = function (o, p) {
             var q = {};
             for (var r in o)
                 Object.prototype.hasOwnProperty.call(o, r) && p.indexOf(r) < 0 && (q[r] = o[r]);
@@ -45,405 +197,1748 @@ c.register('0nKwk1', function(d, e) {
             }
             return q;
         };
-    const o = (a, c) => {
-        var p, {
-                prefixCls: q,
-                className: r,
-                rootClassName: _s,
-                children: t,
-                indeterminate: u = !1,
-                style: v,
-                onMouseEnter: w,
-                onMouseLeave: x,
-                skipGroup: y = !1,
-                disabled: z
-            } = a,
-            A = n(a, [
-                'prefixCls',
-                'className',
-                'rootClassName',
-                'children',
-                'indeterminate',
-                'style',
-                'onMouseEnter',
-                'onMouseLeave',
-                'skipGroup',
-                'disabled'
-            ]);
-        const {
-            getPrefixCls: B,
-            direction: C
-        } = h.useContext(i.ConfigContext), D = h.useContext(k.GroupContext), {
-            isFormItemInput: E
-        } = h.useContext(j.FormItemInputContext), F = h.useContext(l.default), G = null !== (p = (null == D ? void 0 : D.disabled) || z) && void 0 !== p ? p : F, H = h.useRef(A.value);
-        h.useEffect(() => {
-            null == D || D.registerValue(A.value);
-        }, []), h.useEffect(() => {
-            if (!y)
-                return A.value !== H.current && (null == D || D.cancelValue(H.current), null == D || D.registerValue(A.value), H.current = A.value), () => null == D ? void 0 : D.cancelValue(A.value);
-        }, [A.value]);
-        const I = B('checkbox', q),
-            [J, K] = (0, m.default)(I),
-            L = Object.assign({}, A);
-        D && !y && (L.onChange = function() {
-            A.onChange && A.onChange.apply(A, arguments), D.toggleOption && D.toggleOption({
-                label: t,
-                value: A.value
-            });
-        }, L.name = D.name, L.checked = D.value.includes(A.value));
-        const M = b(f)({
-                [`${ I }-wrapper`]: !0,
-                [`${ I }-rtl`]: 'rtl' === C,
-                [`${ I }-wrapper-checked`]: L.checked,
-                [`${ I }-wrapper-disabled`]: G,
-                [`${ I }-wrapper-in-form-item`]: E
-            }, r, _s, K),
-            N = b(f)({
-                [`${ I }-indeterminate`]: u
-            }, K),
-            O = u ? 'mixed' : void 0;
-        return J(h.createElement('label', {
-            className: M,
-            style: v,
-            onMouseEnter: w,
-            onMouseLeave: x
-        }, h.createElement(g.default, Object.assign({
-            'aria-checked': O
-        }, L, {
-            prefixCls: I,
-            className: N,
-            disabled: G,
-            ref: c
-        })), void 0 !== t && h.createElement('span', null, t)));
-    };
-    var p = h.forwardRef(o);
-}), c.register('q2qDo1', function(d, e) {
-    a(d.exports, 'GroupContext', function() {
-        return _n;
-    }, function(f) {
-        return _n = f;
-    }), a(d.exports, 'default', function() {
-        return _t;
-    }, function(f) {
-        return _t = f;
-    });
-    var f = c('g8lYc'),
-        g = c('/U36/'),
-        h = c('Kpy/B'),
-        i = c('O0Kav'),
-        j = c('R2nG3'),
-        k = c('4shVI1'),
-        l = c('NgjTH0'),
-        m = function(n, o) {
-            var p = {};
-            for (var q in n)
-                Object.prototype.hasOwnProperty.call(n, q) && o.indexOf(q) < 0 && (p[q] = n[q]);
-            if (null != n && 'function' == typeof Object.getOwnPropertySymbols) {
-                var r = 0;
-                for (q = Object.getOwnPropertySymbols(n); r < q.length; r++)
-                    o.indexOf(q[r]) < 0 && Object.prototype.propertyIsEnumerable.call(n, q[r]) && (p[q[r]] = n[q[r]]);
-            }
-            return p;
-        };
-    const _n = i.createContext(null),
-        o = (a, c) => {
+    const o = (p, q) => {
             var {
-                defaultValue: p,
-                children: q,
-                options: r = [],
-                prefixCls: s,
-                className: _t,
-                rootClassName: u,
-                style: v,
-                onChange: w
-            } = a, x = m(a, [
-                'defaultValue',
-                'children',
-                'options',
+                    prefixCls: r,
+                    className: s,
+                    rootClassName: t,
+                    style: u,
+                    children: v,
+                    icon: w,
+                    color: x,
+                    onClose: y,
+                    closeIcon: z,
+                    closable: A = !1
+                } = p, B = n(p, [
+                    'prefixCls',
+                    'className',
+                    'rootClassName',
+                    'style',
+                    'children',
+                    'icon',
+                    'color',
+                    'onClose',
+                    'closeIcon',
+                    'closable'
+                ]);
+            const {
+                    getPrefixCls: C,
+                    direction: D
+                } = h.useContext(i.ConfigContext), [E, F] = h.useState(!0);
+            h.useEffect(() => {
+                'visible' in B && F(B.visible);
+            }, [B.visible]);
+            const G = (0, j.isPresetColor)(x) || (0, j.isPresetStatusColor)(x), H = Object.assign({ backgroundColor: x && !G ? x : void 0 }, u), I = C('tag', r), [J, K] = (0, m.default)(I), L = b(g)(I, {
+                    [`${ I }-${ x }`]: G,
+                    [`${ I }-has-color`]: x && !G,
+                    [`${ I }-hidden`]: !E,
+                    [`${ I }-rtl`]: 'rtl' === D
+                }, s, t, K), M = N => {
+                    N.stopPropagation(), null == y || y(N), N.defaultPrevented || F(!1);
+                }, N = 'function' == typeof B.onClick || v && 'a' === v.type, O = w || null, P = O ? h.createElement(h.Fragment, null, O, h.createElement('span', null, v)) : v, Q = h.createElement('span', Object.assign({}, B, {
+                    ref: q,
+                    className: L,
+                    style: H
+                }), P, A ? z ? h.createElement('span', {
+                    className: `${ I }-close-icon`,
+                    onClick: M
+                }, z) : h.createElement(f.default, {
+                    className: `${ I }-close-icon`,
+                    onClick: M
+                }) : null);
+            return J(N ? h.createElement(k.default, null, Q) : Q);
+        }, p = h.forwardRef(o);
+    p.CheckableTag = l.default;
+    var _q = p;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _k;
+    }, function (f) {
+        return _k = f;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {
+            var m = {};
+            for (var n in k)
+                Object.prototype.hasOwnProperty.call(k, n) && l.indexOf(n) < 0 && (m[n] = k[n]);
+            if (null != k && 'function' == typeof Object.getOwnPropertySymbols) {
+                var o = 0;
+                for (n = Object.getOwnPropertySymbols(k); o < n.length; o++)
+                    l.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(k, n[o]) && (m[n[o]] = k[n[o]]);
+            }
+            return m;
+        };
+    var _k = l => {
+        var {
+                prefixCls: m,
+                className: n,
+                checked: o,
+                onChange: p,
+                onClick: q
+            } = l, r = j(l, [
                 'prefixCls',
                 'className',
-                'rootClassName',
-                'style',
-                'onChange'
+                'checked',
+                'onChange',
+                'onClick'
             ]);
-            const {
-                getPrefixCls: y,
-                direction: z
-            } = i.useContext(j.ConfigContext), [A, B] = i.useState(x.value || p || []), [C, D] = i.useState([]);
-            i.useEffect(() => {
-                'value' in x && B(x.value || []);
-            }, [x.value]);
-            const E = () => r.map(a => 'string' == typeof a || 'number' == typeof a ? {
-                    label: a,
-                    value: a
-                } : a),
-                F = y('checkbox', s),
-                G = `${ F }-group`,
-                [H, I] = (0, l.default)(F),
-                J = (0, h.default)(x, [
-                    'value',
-                    'disabled'
-                ]);
-            r && r.length > 0 && (q = E().map(a => i.createElement(k.default, {
-                prefixCls: F,
-                key: a.value.toString(),
-                disabled: 'disabled' in a ? a.disabled : x.disabled,
-                value: a.value,
-                checked: A.includes(a.value),
-                onChange: a.onChange,
-                className: `${ G }-item`,
-                style: a.style
-            }, a.label)));
-            const K = {
-                    toggleOption: a => {
-                        const L = A.indexOf(a.value),
-                            M = (0, f.default)(A); -
-                        1 === L ? M.push(a.value) : M.splice(L, 1), 'value' in x || B(M);
-                        const N = E();
-                        null == w || w(M.filter(a => C.includes(a)).sort((a, L) => N.findIndex(L => L.value === a) - N.findIndex(a => a.value === L)));
-                    },
-                    value: A,
-                    disabled: x.disabled,
-                    name: x.name,
-                    registerValue: a => {
-                        D(b => [].concat((0, f.default)(b), [a]));
-                    },
-                    cancelValue: a => {
-                        D(b => b.filter(b => b !== a));
-                    }
-                },
-                L = b(g)(G, {
-                    [`${ G }-rtl`]: 'rtl' === z
-                }, _t, u, I);
-            return H(i.createElement('div', Object.assign({
-                className: L,
-                style: v
-            }, J, {
-                ref: c
-            }), i.createElement(_n.Provider, {
-                value: K
-            }, q)));
-        },
-        p = i.forwardRef(o);
-    var q = i.memo(p);
-}), c.register('NgjTH0', function(d, e) {
-    a(d.exports, 'getStyle', function() {
-        return _l;
-    }), a(d.exports, 'default', function() {
-        return _m;
-    });
-    var f = c('ZyWBF'),
-        g = c('GhPPX'),
-        h = c('qJkLY'),
-        i = c('/zzpx');
-    const j = new(0, f.Keyframes)('antCheckboxEffect', {
-            '0%': {
-                transform: 'scale(1)',
-                opacity: 0.5
-            },
-            '100%': {
-                transform: 'scale(1.6)',
-                opacity: 0
+        const {getPrefixCls: s} = g.useContext(h.ConfigContext), t = s('tag', m), [u, v] = (0, i.default)(t), w = b(f)(t, {
+                [`${ t }-checkable`]: !0,
+                [`${ t }-checkable-checked`]: o
+            }, n, v);
+        return u(g.createElement('span', Object.assign({}, r, {
+            className: w,
+            onClick: x => {
+                null == p || p(!o), null == q || q(x);
             }
-        }),
-        k = a => {
-            const {
-                checkboxCls: l
-            } = a, m = `${ l }-wrapper`;
-            return [{
-                    [`${ l }-group`]: Object.assign(Object.assign({}, (0, i.resetComponent)(a)), {
-                        display: 'inline-flex'
-                    }),
-                    [m]: Object.assign(Object.assign({}, (0, i.resetComponent)(a)), {
-                        display: 'inline-flex',
-                        alignItems: 'baseline',
-                        cursor: 'pointer',
-                        '&:after': {
-                            display: 'inline-block',
-                            width: 0,
-                            overflow: 'hidden',
-                            content: '\'\\a0\''
-                        },
-                        [`& + ${ m }`]: {
-                            marginInlineStart: a.marginXS
-                        },
-                        [`&${ m }-in-form-item`]: {
-                            'input[type="checkbox"]': {
-                                width: 14,
-                                height: 14
-                            }
-                        }
-                    }),
-                    [l]: Object.assign(Object.assign({}, (0, i.resetComponent)(a)), {
-                        top: '0.2em',
-                        position: 'relative',
-                        whiteSpace: 'nowrap',
-                        lineHeight: 1,
-                        cursor: 'pointer',
-                        [`${ l }-input`]: {
-                            position: 'absolute',
-                            inset: 0,
-                            zIndex: 1,
-                            width: '100%',
-                            height: '100%',
-                            cursor: 'pointer',
-                            opacity: 0,
-                            [`&:focus-visible + ${ l }-inner`]: Object.assign({}, (0, i.genFocusOutline)(a))
-                        },
-                        [`${ l }-inner`]: {
-                            boxSizing: 'border-box',
-                            position: 'relative',
-                            top: 0,
-                            insetInlineStart: 0,
-                            display: 'block',
-                            width: a.checkboxSize,
-                            height: a.checkboxSize,
-                            direction: 'ltr',
-                            backgroundColor: a.colorBgContainer,
-                            border: `${ a.lineWidth }px ${ a.lineType } ${ a.colorBorder }`,
-                            borderRadius: a.borderRadiusSM,
-                            borderCollapse: 'separate',
-                            transition: `all ${ a.motionDurationSlow }`,
-                            '&:after': {
-                                boxSizing: 'border-box',
-                                position: 'absolute',
-                                top: '50%',
-                                insetInlineStart: '21.5%',
-                                display: 'table',
-                                width: a.checkboxSize / 14 * 5,
-                                height: a.checkboxSize / 14 * 8,
-                                border: `${ a.lineWidthBold }px solid ${ a.colorWhite }`,
-                                borderTop: 0,
-                                borderInlineStart: 0,
-                                transform: 'rotate(45deg) scale(0) translate(-50%,-50%)',
-                                opacity: 0,
-                                content: '""',
-                                transition: `all ${ a.motionDurationFast } ${ a.motionEaseInBack }, opacity ${ a.motionDurationFast }`
-                            }
-                        },
-                        '& + span': {
-                            paddingInlineStart: a.paddingXS,
-                            paddingInlineEnd: a.paddingXS
-                        }
-                    })
-                },
-                {
-                    [l]: {
-                        '&-indeterminate': {
-                            [`${ l }-inner`]: {
-                                '&:after': {
-                                    top: '50%',
-                                    insetInlineStart: '50%',
-                                    width: a.fontSizeLG / 2,
-                                    height: a.fontSizeLG / 2,
-                                    backgroundColor: a.colorPrimary,
-                                    border: 0,
-                                    transform: 'translate(-50%, -50%) scale(1)',
-                                    opacity: 1,
-                                    content: '""'
-                                }
-                            }
-                        }
-                    }
-                },
-                {
-                    [`${ m }:hover ${ l }:after`]: {
-                        visibility: 'visible'
-                    },
-                    [`\n        ${ m }:not(${ m }-disabled),\n        ${ l }:not(${ l }-disabled)\n      `]: {
-                        [`&:hover ${ l }-inner`]: {
-                            borderColor: a.colorPrimary
-                        }
-                    },
-                    [`${ m }:not(${ m }-disabled)`]: {
-                        [`&:hover ${ l }-checked:not(${ l }-disabled) ${ l }-inner`]: {
-                            backgroundColor: a.colorPrimaryHover,
-                            borderColor: 'transparent'
-                        },
-                        [`&:hover ${ l }-checked:not(${ l }-disabled):after`]: {
-                            borderColor: a.colorPrimaryHover
-                        }
-                    }
-                },
-                {
-                    [`${ l }-checked`]: {
-                        [`${ l }-inner`]: {
-                            backgroundColor: a.colorPrimary,
-                            borderColor: a.colorPrimary,
-                            '&:after': {
-                                opacity: 1,
-                                transform: 'rotate(45deg) scale(1) translate(-50%,-50%)',
-                                transition: `all ${ a.motionDurationMid } ${ a.motionEaseOutBack } ${ a.motionDurationFast }`
-                            }
-                        },
-                        '&:after': {
-                            position: 'absolute',
-                            top: 0,
-                            insetInlineStart: 0,
-                            width: '100%',
-                            height: '100%',
-                            borderRadius: a.borderRadiusSM,
-                            visibility: 'hidden',
-                            border: `${ a.lineWidthBold }px solid ${ a.colorPrimary }`,
-                            animationName: j,
-                            animationDuration: a.motionDurationSlow,
-                            animationTimingFunction: 'ease-in-out',
-                            animationFillMode: 'backwards',
-                            content: '""',
-                            transition: `all ${ a.motionDurationSlow }`
-                        }
-                    },
-                    [`\n        ${ m }-checked:not(${ m }-disabled),\n        ${ l }-checked:not(${ l }-disabled)\n      `]: {
-                        [`&:hover ${ l }-inner`]: {
-                            backgroundColor: a.colorPrimaryHover,
-                            borderColor: 'transparent'
-                        },
-                        [`&:hover ${ l }:after`]: {
-                            borderColor: a.colorPrimaryHover
-                        }
-                    }
-                },
-                {
-                    [`${ m }-disabled`]: {
-                        cursor: 'not-allowed'
-                    },
-                    [`${ l }-disabled`]: {
-                        [`&, ${ l }-input`]: {
-                            cursor: 'not-allowed',
-                            pointerEvents: 'none'
-                        },
-                        [`${ l }-inner`]: {
-                            background: a.colorBgContainerDisabled,
-                            borderColor: a.colorBorder,
-                            '&:after': {
-                                borderColor: a.colorTextDisabled
-                            }
-                        },
-                        '&:after': {
-                            display: 'none'
-                        },
-                        '& + span': {
-                            color: a.colorTextDisabled
-                        },
-                        [`&${ l }-indeterminate ${ l }-inner::after`]: {
-                            background: a.colorTextDisabled
-                        }
+        })));
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _n;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    const k = (l, m, n) => {
+            const o = (0, h.default)(n);
+            return {
+                [`${ l.componentCls }-${ m }`]: {
+                    color: l[`color${ n }`],
+                    background: l[`color${ o }Bg`],
+                    borderColor: l[`color${ o }Border`]
+                }
+            };
+        }, l = m => (0, i.genPresetColor)(m, (n, o) => {
+            let {
+                textColor: p,
+                lightBorderColor: q,
+                lightColor: r,
+                darkColor: s
+            } = o;
+            return {
+                [`${ m.componentCls }-${ n }`]: {
+                    color: p,
+                    background: r,
+                    borderColor: q,
+                    '&-inverse': {
+                        color: m.colorTextLightSolid,
+                        background: s,
+                        borderColor: s
                     }
                 }
-            ];
+            };
+        }), m = n => {
+            const {
+                    paddingXXS: o,
+                    lineWidth: p,
+                    tagPaddingHorizontal: q,
+                    componentCls: r
+                } = n, s = q - p, t = o - p;
+            return {
+                [r]: Object.assign(Object.assign({}, (0, j.resetComponent)(n)), {
+                    display: 'inline-block',
+                    height: 'auto',
+                    marginInlineEnd: n.marginXS,
+                    paddingInline: s,
+                    fontSize: n.tagFontSize,
+                    lineHeight: `${ n.tagLineHeight }px`,
+                    whiteSpace: 'nowrap',
+                    background: n.tagDefaultBg,
+                    border: `${ n.lineWidth }px ${ n.lineType } ${ n.colorBorder }`,
+                    borderRadius: n.borderRadiusSM,
+                    opacity: 1,
+                    transition: `all ${ n.motionDurationMid }`,
+                    textAlign: 'start',
+                    [`&${ r }-rtl`]: { direction: 'rtl' },
+                    '&, a, a:hover': { color: n.tagDefaultColor },
+                    [`${ r }-close-icon`]: {
+                        marginInlineStart: t,
+                        color: n.colorTextDescription,
+                        fontSize: n.tagIconSize,
+                        cursor: 'pointer',
+                        transition: `all ${ n.motionDurationMid }`,
+                        '&:hover': { color: n.colorTextHeading }
+                    },
+                    [`&${ r }-has-color`]: {
+                        borderColor: 'transparent',
+                        [`&, a, a:hover, ${ n.iconCls }-close, ${ n.iconCls }-close:hover`]: { color: n.colorTextLightSolid }
+                    },
+                    '&-checkable': {
+                        backgroundColor: 'transparent',
+                        borderColor: 'transparent',
+                        cursor: 'pointer',
+                        [`&:not(${ r }-checkable-checked):hover`]: {
+                            color: n.colorPrimary,
+                            backgroundColor: n.colorFillSecondary
+                        },
+                        '&:active, &-checked': { color: n.colorTextLightSolid },
+                        '&-checked': {
+                            backgroundColor: n.colorPrimary,
+                            '&:hover': { backgroundColor: n.colorPrimaryHover }
+                        },
+                        '&:active': { backgroundColor: n.colorPrimaryActive }
+                    },
+                    '&-hidden': { display: 'none' },
+                    [`> ${ n.iconCls } + span, > span + ${ n.iconCls }`]: { marginInlineStart: s }
+                })
+            };
         };
-
-    function _l(m, n) {
-        const o = (0, h.merge)(n, {
-            checkboxCls: `.${ m }`,
-            checkboxSize: n.controlInteractiveSize
-        });
-        return [k(o)];
-    }
-    var _m = (0, g.default)('Checkbox', (a, d) => {
-        let {
-            prefixCls: n
-        } = d;
-        return [_l(n, a)];
+    var _n = (0, f.default)('Tag', o => {
+        const {
+                fontSize: p,
+                lineHeight: q,
+                lineWidth: r,
+                fontSizeIcon: s
+            } = o, t = Math.round(p * q), u = o.fontSizeSM, v = t - 2 * r, w = o.colorFillAlter, x = o.colorText, y = (0, g.merge)(o, {
+                tagFontSize: u,
+                tagLineHeight: v,
+                tagDefaultBg: w,
+                tagDefaultColor: x,
+                tagIconSize: s - 2 * r,
+                tagPaddingHorizontal: 8
+            });
+        return [
+            m(y),
+            l(y),
+            k(y, 'success', 'Success'),
+            k(y, 'processing', 'Info'),
+            k(y, 'error', 'Error'),
+            k(y, 'warning', 'Warning')
+        ];
     });
+}), c.register('.....', function (d, e) {
+    function f(g) {
+        if ('string' != typeof g)
+            return g;
+        return g.charAt(0).toUpperCase() + g.slice(1);
+    }
+    a(d.exports, 'default', function () {
+        return f;
+    });
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _n;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    let l;
+    const m = h.default.img.attrs(n => ({ src: n.image }))(l || (l = (n => n)`
+  cursor: pointer;
+  height: ${ 0 }px;
+  width: ${ 0 }px;
+  margin-right: ${ 0 }px;
+  border-radius: 5px;
+  ${ 0 }
+  flex-shrink: 0;
+  object-fit: cover;
+`), n => n.size, n => n.size, n => n.customRightMargin ? n.customRightMargin : 0, n => n.showBorder && `border: solid ${ j.default.Black } 1px;`);
+    var _n = o => {
+        const [p, q] = g.useState(!1);
+        return (0, f.jsxs)(f.Fragment, {
+            children: [
+                (0, f.jsx)(m, {
+                    ...o,
+                    onClick: r => {
+                        r.stopPropagation(), o.onClick && o.onClick(), o.blockModalOpen || q(!0);
+                    }
+                }),
+                (0, f.jsx)(i.default, {
+                    open: p,
+                    onCancel: r => {
+                        r.stopPropagation(), q(!1);
+                    },
+                    footer: null,
+                    closable: !1,
+                    children: (0, f.jsx)('img', {
+                        src: (0, k.getCloudinaryUrl)(o.image),
+                        style: { width: '100%' }
+                    })
+                })
+            ]
+        });
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'getCloudinaryUrl', function () {
+        return _f;
+    });
+    const _f = g => {
+            const h = _g(g);
+            return h ? g.includes('/video/upload') ? `https://${ _h }/video/upload/${ h }` : `https://${ _h }/image/upload/f_auto,fl_lossy,q_auto/${ h }` : g;
+        }, _g = h => {
+            if (!_k.some(i => h.includes(i)))
+                return null;
+            if (h.includes(_i) && !h.includes(`/${ _j }/`))
+                return null;
+            const i = h.split('/');
+            if (!i || !i.length || i.length < 2)
+                return null;
+            const j = i[i.length - 2], k = i[i.length - 1];
+            return j && k && j.startsWith('v') ? `${ j }/${ k }` : null;
+        }, _h = 'media.gimkit.com', _i = 'res.cloudinary.com', _j = 'gimkit-production', _k = [
+            _h,
+            _i
+        ];
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    const i = h.lazy(() => c('.....'));
+    var _j = k => {
+        const l = k.hideSkeleton ? (0, f.jsx)('div', { className: 'maxWidth' }) : (0, f.jsx)('div', {
+            className: 'maxWidth',
+            children: (0, f.jsx)(g.default, {
+                active: !0,
+                title: !1,
+                paragraph: { rows: 9 }
+            })
+        });
+        return (0, f.jsx)(h.Suspense, {
+            fallback: l,
+            children: (0, f.jsx)(i, { ...k })
+        });
+    };
+}), c.register('.....', function (d, e) {
+    d.exports = Promise.all([
+        c('.....')(new URL(c('.....').resolve('2nG1U'), import.meta.url).toString()),
+        import('./' + c('.....').resolve('6iUO5'))
+    ]).then(() => c('.....'));
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
+            }));
+        };
+    j.displayName = 'ClockCircleOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        icon: {
+            tag: 'svg',
+            attrs: {
+                viewBox: '64 64 896 896',
+                focusable: 'false'
+            },
+            children: [
+                {
+                    tag: 'path',
+                    attrs: { d: 'M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z' }
+                },
+                {
+                    tag: 'path',
+                    attrs: { d: 'M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z' }
+                }
+            ]
+        },
+        name: 'clock-circle',
+        theme: 'outlined'
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
+            }));
+        };
+    j.displayName = 'TrophyOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        icon: {
+            tag: 'svg',
+            attrs: {
+                viewBox: '64 64 896 896',
+                focusable: 'false'
+            },
+            children: [{
+                    tag: 'path',
+                    attrs: { d: 'M868 160h-92v-40c0-4.4-3.6-8-8-8H256c-4.4 0-8 3.6-8 8v40h-92a44 44 0 00-44 44v148c0 81.7 60 149.6 138.2 162C265.7 630.2 359 721.7 476 734.5v105.2H280c-17.7 0-32 14.3-32 32V904c0 4.4 3.6 8 8 8h512c4.4 0 8-3.6 8-8v-32.3c0-17.7-14.3-32-32-32H548V734.5C665 721.7 758.3 630.2 773.8 514 852 501.6 912 433.7 912 352V204a44 44 0 00-44-44zM184 352V232h64v207.6a91.99 91.99 0 01-64-87.6zm520 128c0 49.1-19.1 95.4-53.9 130.1-34.8 34.8-81 53.9-130.1 53.9h-16c-49.1 0-95.4-19.1-130.1-53.9-34.8-34.8-53.9-81-53.9-130.1V184h384v296zm136-128c0 41-26.9 75.8-64 87.6V232h64v120z' }
+                }]
+        },
+        name: 'trophy',
+        theme: 'outlined'
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        normal: '\n  font-family: \'Product Sans\', sans-serif;\n  font-weight: 400;\n',
+        bold: '\n    font-family: \'Product Sans\', sans-serif;\n    font-weight: 800;\n  ',
+        black: '\n  font-family: \'Product Sans\', sans-serif;\n  font-weight: 900;\n',
+        fontFamilyName: 'Product Sans, sans-serif'
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
+            }));
+        };
+    j.displayName = 'CheckOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        icon: {
+            tag: 'svg',
+            attrs: {
+                viewBox: '64 64 896 896',
+                focusable: 'false'
+            },
+            children: [{
+                    tag: 'path',
+                    attrs: { d: 'M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z' }
+                }]
+        },
+        name: 'check',
+        theme: 'outlined'
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
+            }));
+        };
+    j.displayName = 'DownOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        icon: {
+            tag: 'svg',
+            attrs: {
+                viewBox: '64 64 896 896',
+                focusable: 'false'
+            },
+            children: [{
+                    tag: 'path',
+                    attrs: { d: 'M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z' }
+                }]
+        },
+        name: 'down',
+        theme: 'outlined'
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'CLASSIC', function () {
+        return _f;
+    }), a(d.exports, 'TEAMS', function () {
+        return _g;
+    }), a(d.exports, 'THANOS', function () {
+        return _h;
+    }), a(d.exports, 'BOSS_BATTLE', function () {
+        return _i;
+    }), a(d.exports, 'HUMAN_ZOMBIE_DEFENDING_HOMEBASE', function () {
+        return _j;
+    }), a(d.exports, 'LAVA', function () {
+        return _k;
+    }), a(d.exports, 'IMPOSTER', function () {
+        return _l;
+    }), a(d.exports, 'DRAW', function () {
+        return _m;
+    }), a(d.exports, 'PARDY', function () {
+        return _n;
+    });
+    const _f = 'CLASSIC', _g = 'TEAMS', _h = 'THANOS', _i = 'BOSS_BATTLE', _j = 'HUMAN_ZOMBIE_DEFENDING_HOMEBASE', _k = 'LAVA', _l = 'IMPOSTER', _m = 'DRAW', _n = 'PARDY';
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _q;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = function (q) {
+            (0, l.default)(d, q);
+            var r = (0, m.default)(d);
+            function s(t) {
+                var u;
+                (0, j.default)(this, s), (u = r.call(this, t)).handleChange = function (v) {
+                    var w = u.props, x = w.disabled, y = w.onChange;
+                    x || ('checked' in u.props || u.setState({ checked: v.target.checked }), y && y({
+                        target: (0, i.default)((0, i.default)({}, u.props), {}, { checked: v.target.checked }),
+                        stopPropagation: function () {
+                            v.stopPropagation();
+                        },
+                        preventDefault: function () {
+                            v.preventDefault();
+                        },
+                        nativeEvent: v.nativeEvent
+                    }));
+                }, u.saveInput = function (v) {
+                    u.input = v;
+                };
+                var v = 'checked' in t ? t.checked : t.defaultChecked;
+                return u.state = { checked: v }, u;
+            }
+            return (0, k.default)(s, [
+                {
+                    key: 'focus',
+                    value: function () {
+                        this.input.focus();
+                    }
+                },
+                {
+                    key: 'blur',
+                    value: function () {
+                        this.input.blur();
+                    }
+                },
+                {
+                    key: 'render',
+                    value: function () {
+                        var v, w = this.props, x = w.prefixCls, y = w.className, z = w.style, A = w.name, B = w.id, C = w.type, D = w.disabled, E = w.readOnly, F = w.tabIndex, G = w.onClick, H = w.onFocus, I = w.onBlur, J = w.onKeyDown, K = w.onKeyPress, L = w.onKeyUp, M = w.autoFocus, N = w.value, O = w.required, P = (0, h.default)(w, [
+                                'prefixCls',
+                                'className',
+                                'style',
+                                'name',
+                                'id',
+                                'type',
+                                'disabled',
+                                'readOnly',
+                                'tabIndex',
+                                'onClick',
+                                'onFocus',
+                                'onBlur',
+                                'onKeyDown',
+                                'onKeyPress',
+                                'onKeyUp',
+                                'autoFocus',
+                                'value',
+                                'required'
+                            ]), Q = Object.keys(P).reduce(function (R, S) {
+                                return 'aria-' !== S.substr(0, 5) && 'data-' !== S.substr(0, 5) && 'role' !== S || (R[S] = P[S]), R;
+                            }, {}), R = this.state.checked, S = u(o)(x, y, (v = {}, (0, g.default)(v, ''.concat(x, '-checked'), R), (0, g.default)(v, ''.concat(x, '-disabled'), D), v));
+                        return u(n).createElement('span', {
+                            className: S,
+                            style: z
+                        }, u(n).createElement('input', (0, f.default)({
+                            name: A,
+                            id: B,
+                            type: C,
+                            required: O,
+                            readOnly: E,
+                            disabled: D,
+                            tabIndex: F,
+                            className: ''.concat(x, '-input'),
+                            checked: !!R,
+                            onClick: G,
+                            onFocus: H,
+                            onBlur: I,
+                            onKeyUp: L,
+                            onKeyDown: J,
+                            onKeyPress: K,
+                            onChange: this.handleChange,
+                            autoFocus: M,
+                            ref: this.saveInput,
+                            value: N
+                        }, Q)), u(n).createElement('span', { className: ''.concat(x, '-inner') }));
+                    }
+                }
+            ], [{
+                    key: 'getDerivedStateFromProps',
+                    value: function (v, w) {
+                        return 'checked' in v ? (0, i.default)((0, i.default)({}, w), {}, { checked: v.checked }) : null;
+                    }
+                }]), s;
+        }(n.Component);
+    p.defaultProps = {
+        prefixCls: 'rc-checkbox',
+        className: '',
+        style: {},
+        type: 'checkbox',
+        defaultChecked: !1,
+        onFocus: function () {
+        },
+        onBlur: function () {
+        },
+        onChange: function () {
+        },
+        onKeyDown: function () {
+        },
+        onKeyPress: function () {
+        },
+        onKeyUp: function () {
+        }
+    };
+    var _q = p;
+}), c.register('.....', function (d, e) {
+    function f() {
+        return f = Object.assign || function (g) {
+            for (var h = 1; h < arguments.length; h++) {
+                var i = arguments[h];
+                for (var j in i)
+                    Object.prototype.hasOwnProperty.call(i, j) && (g[j] = i[j]);
+            }
+            return g;
+        }, f.apply(this, arguments);
+    }
+    a(d.exports, 'default', function () {
+        return f;
+    });
+}), c.register('.....', function (d, e) {
+    function f(g, h, i) {
+        return h in g ? Object.defineProperty(g, h, {
+            value: i,
+            enumerable: !0,
+            configurable: !0,
+            writable: !0
+        }) : g[h] = i, g;
+    }
+    a(d.exports, 'default', function () {
+        return f;
+    });
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _g;
+    });
+    var f = c('.....');
+    function _g(h, i) {
+        if (null == h)
+            return {};
+        var j, k, l = (0, f.default)(h, i);
+        if (Object.getOwnPropertySymbols) {
+            var m = Object.getOwnPropertySymbols(h);
+            for (k = 0; k < m.length; k++)
+                j = m[k], i.indexOf(j) >= 0 || Object.prototype.propertyIsEnumerable.call(h, j) && (_g[j] = h[j]);
+        }
+        return _g;
+    }
+}), c.register('.....', function (d, e) {
+    function f(g, h) {
+        if (null == g)
+            return {};
+        var i, j, k = {}, l = Object.keys(g);
+        for (f = 0; f < l.length; f++)
+            i = l[f], h.indexOf(i) >= 0 || (k[i] = g[i]);
+        return k;
+    }
+    a(d.exports, 'default', function () {
+        return f;
+    });
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....');
+    function g(h, i) {
+        var j = Object.keys(h);
+        if (Object.getOwnPropertySymbols) {
+            var k = Object.getOwnPropertySymbols(h);
+            i && (k = k.filter(function (l) {
+                return Object.getOwnPropertyDescriptor(h, l).enumerable;
+            })), j.push.apply(j, k);
+        }
+        return j;
+    }
+    function _j(k) {
+        for (var l = 1; l < arguments.length; l++) {
+            var m = null != arguments[l] ? arguments[l] : {};
+            l % 2 ? g(Object(m), !0).forEach(function (n) {
+                (0, f.default)(k, n, m[n]);
+            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(k, Object.getOwnPropertyDescriptors(m)) : g(Object(m)).forEach(function (n) {
+                Object.defineProperty(k, n, Object.getOwnPropertyDescriptor(m, n));
+            });
+        }
+        return k;
+    }
+}), c.register('.....', function (d, e) {
+    function f(g, h) {
+        if (!(g instanceof h))
+            throw new TypeError('Cannot call a class as a function');
+    }
+    a(d.exports, 'default', function () {
+        return f;
+    });
+}), c.register('.....', function (d, e) {
+    function f(g, h) {
+        for (var i = 0; i < h.length; i++) {
+            var j = h[i];
+            f.enumerable = f.enumerable || !1, f.configurable = !0, 'value' in f && (f.writable = !0), Object.defineProperty(g, f.key, f);
+        }
+    }
+    function i(j, k, l) {
+        return k && f(j.prototype, k), l && f(j, l), j;
+    }
+    a(d.exports, 'default', function () {
+        return i;
+    });
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _g;
+    });
+    var f = c('.....');
+    function _g(h, i) {
+        if ('function' != typeof i && null !== i)
+            throw new TypeError('Super expression must either be null or a function');
+        h.prototype = Object.create(i && i.prototype, {
+            constructor: {
+                value: h,
+                writable: !0,
+                configurable: !0
+            }
+        }), i && (0, f.default)(h, i);
+    }
+}), c.register('.....', function (d, e) {
+    function f(g, h) {
+        return f = Object.setPrototypeOf || function (i, j) {
+            return i.__proto__ = j, i;
+        }, f(g, h);
+    }
+    a(d.exports, 'default', function () {
+        return f;
+    });
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    function _i(j) {
+        var k = (0, g.default)();
+        return function () {
+            var l, m = (0, f.default)(j);
+            if (k) {
+                var n = (0, f.default)(this).constructor;
+                l = Reflect.construct(m, arguments, n);
+            } else
+                l = m.apply(this, arguments);
+            return (0, h.default)(this, l);
+        };
+    }
+}), c.register('.....', function (d, e) {
+    function f(g) {
+        return f = Object.setPrototypeOf ? Object.getPrototypeOf : function (h) {
+            return h.__proto__ || Object.getPrototypeOf(h);
+        }, f(g);
+    }
+    a(d.exports, 'default', function () {
+        return f;
+    });
+}), c.register('.....', function (d, e) {
+    function f() {
+        if ('undefined' == typeof Reflect || !Reflect.construct)
+            return !1;
+        if (Reflect.construct.sham)
+            return !1;
+        if ('function' == typeof Proxy)
+            return !0;
+        try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {
+            })), !0;
+        } catch (a) {
+            return !1;
+        }
+    }
+    a(d.exports, 'default', function () {
+        return f;
+    });
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _h;
+    });
+    var f = c('.....'), g = c('.....');
+    function _h(i, j) {
+        if (j && ('object' === b(f)(j) || 'function' == typeof j))
+            return j;
+        if (void 0 !== j)
+            throw new TypeError('Derived constructors may only return object or undefined');
+        return (0, g.default)(i);
+    }
+}), c.register('.....', function (d, e) {
+    function f(g) {
+        return 'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator ? (d.exports = f = function (h) {
+            return typeof h;
+        }, d.exports.default = d.exports, d.exports.__esModule = !0) : (d.exports = f = function (h) {
+            return h && 'function' == typeof Symbol && h.constructor === Symbol && h !== Symbol.prototype ? 'symbol' : typeof h;
+        }, d.exports.default = d.exports, d.exports.__esModule = !0), f(g);
+    }
+    d.exports = f, d.exports.default = d.exports, d.exports.__esModule = !0;
+}), c.register('.....', function (d, e) {
+    function f(g) {
+        if (void 0 === g)
+            throw new ReferenceError('this hasn\'t been initialised - super() hasn\'t been called');
+        return g;
+    }
+    a(d.exports, 'default', function () {
+        return f;
+    });
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    const h = g.lazy(() => c('.....'));
+    var _i = j => (0, f.jsx)(g.Suspense, {
+        fallback: j.fallback || null,
+        children: (0, f.jsx)(h, { latex: j.latex })
+    });
+}), c.register('.....', function (d, e) {
+    d.exports = Promise.all([
+        import('./' + c('.....').resolve('emcKB')),
+        import('./' + c('.....').resolve('5OCdz'))
+    ]).then(() => c('.....'));
+}), c.register('.....', function (d, e) {
+    let f;
+    var g;
+    a(d.exports, 'HookType', function () {
+        return f;
+    }), (g = f || (f = {})).selectBox = 'selectBox', g.kit = 'kit', g.number = 'number';
+}), c.register('.....', function (d, e) {
+    let f;
+    var g;
+    let h;
+    var i;
+    a(d.exports, 'LocalStorageNames', function () {
+        return h;
+    }), (g = f || (f = {})).time = 'time', g.target = 'target', g.race = 'race', g.allIn = 'allIn', (i = h || (h = {})).language = 'gimkit-3.0-game-language', i.currency = 'gimkit-game-currency', i.music = 'gimkit-music-track', i.allowGoogleTranslate = 'gimkit-google-translate-allowed', i.editorDefaultLanguage = 'gimkit-editor-v4-default-language', i.editorDefaultGradeLevel = 'gimkit-editor-v4-default-grade-level', i.editorDefaultSubject = 'gimkit-editor-v4-default-subject', i.cosmosBlockedInGame = 'gimkit-cosmos-blocked-in-game', i.hookSavedOptions = 'gimkit-hook-saved-options';
+}), c.register('.....', function (d, e) {
+    let f;
+    var g;
+    let h;
+    var i;
+    let j;
+    var k;
+    let l;
+    let m;
+    var n;
+    a(d.exports, 'QuestionType', function () {
+        return f;
+    }), a(d.exports, 'Privacy', function () {
+        return h;
+    }), a(d.exports, 'GameStatus', function () {
+        return j;
+    }), a(d.exports, 'GameType', function () {
+        return l;
+    }), a(d.exports, 'GameGoal', function () {
+        return m;
+    }), a(d.exports, 'themes', function () {
+        return _s;
+    }), a(d.exports, 'ExperienceSource', function () {
+        return _t;
+    }), (g = f || (f = {})).multipleChoice = 'mc', g.textInput = 'text', (i = h || (h = {})).public = 'public', i.private = 'private', (k = j || (j = {})).setup = 'setup', k.join = 'join', k.teams = 'teams', k.gameplay = 'gameplay', k.results = 'results', (l || (l = {})).live = 'live', (n = m || (m = {})).time = 'time', n.race = 'race', n.allIn = 'allIn';
+    const o = '#ffffff', p = '#000000';
+    let q;
+    var r;
+    (r = q || (q = {})).easy = 'easy', r.medium = 'medium', r.hard = 'hard', r.veryHard = 'veryHard', r.veryVeryHard = 'veryVeryHard';
+    const _s = [
+        {
+            cost: 0,
+            name: 'Default',
+            description: 'Works fine, that\'s all',
+            question: {
+                background: '#303f9f',
+                text: o
+            },
+            palette: [
+                {
+                    background: '#771322',
+                    text: o
+                },
+                {
+                    background: '#A85C15',
+                    text: o
+                },
+                {
+                    background: '#0D6B33',
+                    text: o
+                },
+                {
+                    background: '#076296',
+                    text: o
+                }
+            ],
+            owned: !0,
+            isActive: !0
+        },
+        {
+            cost: 5,
+            name: 'Thanksgiving',
+            description: 'The perfect theme to show your thanks',
+            question: {
+                background: '#6C2F00',
+                text: o
+            },
+            palette: [
+                {
+                    background: '#9E682A',
+                    text: o
+                },
+                {
+                    background: '#B54730',
+                    text: o
+                },
+                {
+                    background: '#8A9748',
+                    text: o
+                },
+                {
+                    background: '#F1B930',
+                    text: o
+                }
+            ],
+            owned: !1,
+            isActive: !1
+        },
+        {
+            cost: 10,
+            name: 'Night',
+            description: 'A little easier on the eyes',
+            question: {
+                background: '#000a12',
+                text: o
+            },
+            palette: [
+                {
+                    background: '#263238',
+                    text: o
+                },
+                {
+                    background: '#37474f',
+                    text: o
+                },
+                {
+                    background: '#455a64',
+                    text: o
+                },
+                {
+                    background: '#546e7a',
+                    text: o
+                }
+            ],
+            owned: !1,
+            isActive: !1
+        },
+        {
+            cost: 500000,
+            name: 'Thanos',
+            description: 'Perfectly balanced, as all things should be',
+            question: {
+                background: '#0D0019',
+                text: o
+            },
+            palette: [
+                {
+                    background: '#220044',
+                    text: o
+                },
+                {
+                    background: '#330066',
+                    text: o
+                },
+                {
+                    background: '#3E007C',
+                    text: o
+                },
+                {
+                    background: '#4F1787',
+                    text: o
+                }
+            ],
+            owned: !1,
+            isActive: !1
+        },
+        {
+            cost: 2000,
+            name: 'Ocean',
+            description: 'Under the sea...',
+            question: {
+                background: '#000063',
+                text: o
+            },
+            palette: [
+                {
+                    background: '#283593',
+                    text: o
+                },
+                {
+                    background: '#076296',
+                    text: o
+                },
+                {
+                    background: '#0277bd',
+                    text: o
+                },
+                {
+                    background: '#1565c0',
+                    text: o
+                }
+            ],
+            owned: !1,
+            isActive: !1
+        },
+        {
+            cost: 100000,
+            name: 'Forest',
+            description: 'A walk through the woods',
+            question: {
+                background: '#4c3d33',
+                text: o
+            },
+            palette: [
+                {
+                    background: '#385645',
+                    text: o
+                },
+                {
+                    background: '#425C49',
+                    text: o
+                },
+                {
+                    background: '#415641',
+                    text: o
+                },
+                {
+                    background: '#4C6349',
+                    text: o
+                }
+            ],
+            owned: !1,
+            isActive: !1
+        },
+        {
+            cost: 1250,
+            name: 'Sunset',
+            description: 'Take a breather',
+            question: {
+                background: '#7F7496',
+                text: o
+            },
+            palette: [
+                {
+                    background: '#F46F5A',
+                    text: o
+                },
+                {
+                    background: '#ED712D',
+                    text: o
+                },
+                {
+                    background: '#7A596A',
+                    text: o
+                },
+                {
+                    background: '#E8AB3C',
+                    text: o
+                }
+            ],
+            owned: !1,
+            isActive: !1
+        },
+        {
+            cost: 750,
+            name: 'Pastel',
+            description: 'Lighten the mood',
+            question: {
+                background: '#FFbfd1',
+                text: '#434343'
+            },
+            palette: [
+                {
+                    background: '#FFA69E',
+                    text: '#5b5b5b'
+                },
+                {
+                    background: '#FCF6BF',
+                    text: '#5b5b5b'
+                },
+                {
+                    background: '#D0F4DE',
+                    text: '#5b5b5b'
+                },
+                {
+                    background: '#93E1D8',
+                    text: '#5b5b5b'
+                }
+            ],
+            owned: !1,
+            isActive: !1
+        },
+        {
+            cost: 500,
+            name: 'Retro',
+            description: 'Old school...',
+            question: {
+                background: '#9C0022',
+                text: o
+            },
+            palette: [
+                {
+                    background: '#001D3B',
+                    text: o
+                },
+                {
+                    background: '#FFAE52',
+                    text: o
+                },
+                {
+                    background: '#FE5963',
+                    text: o
+                },
+                {
+                    background: '#A71C94',
+                    text: o
+                }
+            ],
+            owned: !1,
+            isActive: !1
+        },
+        {
+            cost: 100000000,
+            name: 'Pure Gold',
+            description: 'Now you\'re just showing off',
+            question: {
+                background: p,
+                text: '#FFCD2B'
+            },
+            palette: [
+                {
+                    background: '#FFCD2B',
+                    text: p
+                },
+                {
+                    background: '#FFC721',
+                    text: p
+                },
+                {
+                    background: '#FFD147',
+                    text: p
+                },
+                {
+                    background: '#FFCD38',
+                    text: p
+                }
+            ],
+            owned: !1,
+            isActive: !1
+        }
+    ];
+    let _t;
+    var u;
+    (u = _t || (_t = {})).original = 'original', u.map = 'map';
+}), c.register('.....', function (d, e) {
+    let f;
+    var g;
+    a(d.exports, 'MapModeType', function () {
+        return f;
+    }), (g = f || (f = {})).liveGame = 'liveGame', g.assignment = 'assignment';
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'AnalyticsTrackEvent', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    const _j = k => {
+        var l, m, n;
+        if ((window.gtag && !(null === (l = k.blockedSource) || void 0 === l ? void 0 : l.google) && window.gtag('event', k.event, k.properties), h.AnalyticsFlags.educatorOnly) && (null === (n = (0, g.getUser)()) || void 0 === n ? void 0 : n.accountType) !== f.default.educator)
+            return;
+        (null === (m = k.blockedSource) || void 0 === m ? void 0 : m.posthog) || (0, i.TrackPostHogEvent)({
+            event: k.event,
+            properties: k.properties,
+            force: k.forcePostHog
+        });
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _r;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    c('.....');
+    var i = c('.....'), j = c('.....'), k = c('.....'), l = 44;
+    function m(n) {
+        var o, p, q;
+        return o = n, p = 0, q = 1, n = (Math.min(Math.max(p, o), q) - p) / (q - p), n = (n -= 1) * n * n + 1;
+    }
+    var q = h.forwardRef(function (r, s) {
+            var t, u = r.classes, v = r.className, w = r.color, x = void 0 === w ? 'primary' : w, y = r.disableShrink, z = void 0 !== y && y, A = r.size, B = void 0 === A ? 40 : A, C = r.style, D = r.thickness, E = void 0 === D ? 3.6 : D, F = r.value, G = void 0 === F ? 0 : F, H = r.variant, I = void 0 === H ? 'indeterminate' : H, J = (0, g.default)(r, [
+                    'classes',
+                    'className',
+                    'color',
+                    'disableShrink',
+                    'size',
+                    'style',
+                    'thickness',
+                    'value',
+                    'variant'
+                ]), K = {}, L = {}, M = {};
+            if ('determinate' === I || 'static' === I) {
+                var N = 2 * Math.PI * ((l - E) / 2);
+                K.strokeDasharray = N.toFixed(3), M['aria-valuenow'] = Math.round(G), 'static' === I ? (K.strokeDashoffset = ''.concat(((100 - G) / 100 * N).toFixed(3), 'px'), L.transform = 'rotate(-90deg)') : (K.strokeDashoffset = ''.concat((t = (100 - G) / 100, t * t * N).toFixed(3), 'px'), L.transform = 'rotate('.concat((270 * m(G / 70)).toFixed(3), 'deg)'));
+            }
+            return h.createElement('div', (0, f.default)({
+                className: (0, i.default)(u.root, v, 'inherit' !== x && u['color'.concat((0, k.default)(x))], {
+                    indeterminate: u.indeterminate,
+                    static: u.static
+                }[I]),
+                style: (0, f.default)({
+                    width: B,
+                    height: B
+                }, L, C),
+                ref: s,
+                role: 'progressbar'
+            }, M, J), h.createElement('svg', {
+                className: u.svg,
+                viewBox: ''.concat(22, ' ').concat(22, ' ').concat(l, ' ').concat(l)
+            }, h.createElement('circle', {
+                className: (0, i.default)(u.circle, z && u.circleDisableShrink, {
+                    indeterminate: u.circleIndeterminate,
+                    static: u.circleStatic
+                }[I]),
+                style: K,
+                cx: l,
+                cy: l,
+                r: (l - E) / 2,
+                fill: 'none',
+                strokeWidth: E
+            })));
+        }), _r = (0, j.default)(function (s) {
+            return {
+                root: { display: 'inline-block' },
+                static: { transition: s.transitions.create('transform') },
+                indeterminate: { animation: '$circular-rotate 1.4s linear infinite' },
+                colorPrimary: { color: s.palette.primary.main },
+                colorSecondary: { color: s.palette.secondary.main },
+                svg: { display: 'block' },
+                circle: { stroke: 'currentColor' },
+                circleStatic: { transition: s.transitions.create('stroke-dashoffset') },
+                circleIndeterminate: {
+                    animation: '$circular-dash 1.4s ease-in-out infinite',
+                    strokeDasharray: '80px, 200px',
+                    strokeDashoffset: '0px'
+                },
+                '@keyframes circular-rotate': {
+                    '0%': { transformOrigin: '50% 50%' },
+                    '100%': { transform: 'rotate(360deg)' }
+                },
+                '@keyframes circular-dash': {
+                    '0%': {
+                        strokeDasharray: '1px, 200px',
+                        strokeDashoffset: '0px'
+                    },
+                    '50%': {
+                        strokeDasharray: '100px, 200px',
+                        strokeDashoffset: '-15px'
+                    },
+                    '100%': {
+                        strokeDasharray: '100px, 200px',
+                        strokeDashoffset: '-125px'
+                    }
+                },
+                circleDisableShrink: { animation: 'none' }
+            };
+        }, {
+            name: 'MuiCircularProgress',
+            flip: !1
+        })(q);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var _j = k => {
+        const [l, m] = g.useState([]), [n] = g.useState(k.limit), [o, p] = g.useState(k.defaultPage), [q, r] = g.useState(!0), [s, t] = g.useState([]), [u, v] = g.useState(!1), w = g.useMemo(() => (k.modifyItems ? k.modifyItems(s) : s).map((x, y) => k.toRender(x, y)), [
+                s.length,
+                k.toRender
+            ]), x = () => {
+                if (l.includes(o))
+                    return;
+                m(y => [
+                    ...y,
+                    o
+                ]);
+                const y = {
+                    page: o,
+                    limit: n
+                };
+                (0, i.request)({
+                    url: k.url,
+                    method: 'post',
+                    cacheKey: k.cacheKey,
+                    data: k.modifyBody ? k.modifyBody(y) : y,
+                    success: (z, A) => {
+                        k.onTotalItems && !u && (k.onTotalItems(z.totalItems), v(!0)), z.items.forEach(B => {
+                            k.onItemFetched && k.onItemFetched(B, A);
+                        }), t(B => [
+                            ...B,
+                            ...z.items
+                        ]), r(z.hasNextPage), p(z.nextPage);
+                    },
+                    error: () => {
+                        k.onTotalItems && !u && (k.onTotalItems(0), v(!0)), r(!1);
+                    },
+                    both: () => m(z => z.filter(A => A !== y.page))
+                });
+            };
+        return g.useEffect(x, []), !q && k.forceEmptyMessage || !q && 0 === s.length && k.emptyMessage ? k.emptyMessage(s) : (0, f.jsxs)(h.default, {
+            dataLength: s.length,
+            hasMore: q,
+            style: k.scrollStyle,
+            next: x,
+            loader: k.loader || (0, f.jsx)('div', {}),
+            scrollThreshold: k.scrollThreshold,
+            endMessage: k.endMessage ? k.endMessage(s) : null,
+            scrollableTarget: k.scrollableTarget,
+            children: [
+                k.prefix ? k.prefix() : null,
+                w
+            ]
+        });
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _n;
+    });
+    var f = c('.....'), g = function (h, i) {
+            return g = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function (j, k) {
+                j.__proto__ = k;
+            } || function (j, k) {
+                for (var l in k)
+                    k.hasOwnProperty(l) && (j[l] = k[l]);
+            }, g(h, i);
+        };
+    var h = function () {
+        return h = Object.assign || function (i) {
+            for (var j, k = 1, l = arguments.length; k < l; k++)
+                for (var m in j = arguments[k])
+                    Object.prototype.hasOwnProperty.call(j, m) && (i[m] = j[m]);
+            return i;
+        }, h.apply(this, arguments);
+    };
+    var i = 'Pixel', j = 'Percent', k = {
+            unit: j,
+            value: 0.8
+        };
+    function l(m) {
+        return 'number' == typeof m ? {
+            unit: j,
+            value: 100 * m
+        } : 'string' == typeof m ? m.match(/^(\d*(\.\d+)?)px$/) ? {
+            unit: i,
+            value: parseFloat(m)
+        } : m.match(/^(\d*(\.\d+)?)%$/) ? {
+            unit: j,
+            value: parseFloat(m)
+        } : (console.warn('scrollThreshold format is invalid. Valid formats: "120px", "50%"...'), k) : (console.warn('scrollThreshold should be string or number'), k);
+    }
+    var m = function (n) {
+            function o(p) {
+                var q = n.call(this, p) || this;
+                return o.lastScrollTop = 0, o.actionTriggered = !1, o.startY = 0, o.currentY = 0, o.dragging = !1, o.maxPullDownDistance = 0, o.getScrollableTarget = function () {
+                    return o.props.scrollableTarget instanceof HTMLElement ? o.props.scrollableTarget : 'string' == typeof o.props.scrollableTarget ? document.getElementById(o.props.scrollableTarget) : (null === o.props.scrollableTarget && console.warn('You are trying to pass scrollableTarget but it is null. This might\n        happen because the element may not have been added to DOM yet.\n        See https://github.com/ankeetmaini/react-infinite-scroll-component/issues/59 for more info.\n      '), null);
+                }, o.onStart = function (r) {
+                    o.lastScrollTop || (o.dragging = !0, r instanceof MouseEvent ? o.startY = r.pageY : r instanceof TouchEvent && (o.startY = r.touches[0].pageY), o.currentY = o.startY, o._infScroll && (o._infScroll.style.willChange = 'transform', o._infScroll.style.transition = 'transform 0.2s cubic-bezier(0,0,0.31,1)'));
+                }, o.onMove = function (r) {
+                    o.dragging && (r instanceof MouseEvent ? o.currentY = r.pageY : r instanceof TouchEvent && (o.currentY = r.touches[0].pageY), o.currentY < o.startY || (o.currentY - o.startY >= Number(o.props.pullDownToRefreshThreshold) && o.setState({ pullToRefreshThresholdBreached: !0 }), o.currentY - o.startY > 1.5 * o.maxPullDownDistance || o._infScroll && (o._infScroll.style.overflow = 'visible', o._infScroll.style.transform = 'translate3d(0px, ' + (o.currentY - o.startY) + 'px, 0px)')));
+                }, o.onEnd = function () {
+                    o.startY = 0, o.currentY = 0, o.dragging = !1, o.state.pullToRefreshThresholdBreached && (o.props.refreshFunction && o.props.refreshFunction(), o.setState({ pullToRefreshThresholdBreached: !1 })), requestAnimationFrame(function () {
+                        o._infScroll && (o._infScroll.style.overflow = 'auto', o._infScroll.style.transform = 'none', o._infScroll.style.willChange = 'none');
+                    });
+                }, o.onScrollListener = function (r) {
+                    'function' == typeof o.props.onScroll && setTimeout(function () {
+                        return o.props.onScroll && o.props.onScroll(r);
+                    }, 0);
+                    var s = o.props.height || o._scrollableNode ? r.target : document.documentElement.scrollTop ? document.documentElement : document.body;
+                    o.actionTriggered || ((o.props.inverse ? o.isElementAtTop(s, o.props.scrollThreshold) : o.isElementAtBottom(s, o.props.scrollThreshold)) && o.props.hasMore && (o.actionTriggered = !0, o.setState({ showLoader: !0 }), o.props.next && o.props.next()), o.lastScrollTop = s.scrollTop);
+                }, o.state = {
+                    showLoader: !1,
+                    pullToRefreshThresholdBreached: !1
+                }, o.throttledOnScrollListener = function (r, s, t, u) {
+                    var v, w = !1, x = 0;
+                    function y() {
+                        v && clearTimeout(v);
+                    }
+                    function z() {
+                        var A = this, B = Date.now() - x, C = arguments;
+                        function D() {
+                            x = Date.now(), t.apply(z, C);
+                        }
+                        function E() {
+                            v = void 0;
+                        }
+                        w || (u && !v && D(), y(), void 0 === u && B > r ? D() : !0 !== s && (v = setTimeout(u ? E : D, void 0 === u ? r - B : r)));
+                    }
+                    return 'boolean' != typeof s && (u = t, t = s, s = void 0), z.cancel = function () {
+                        y(), w = !0;
+                    }, z;
+                }(150, o.onScrollListener).bind(o), o.onStart = o.onStart.bind(o), o.onMove = o.onMove.bind(o), o.onEnd = o.onEnd.bind(o), o;
+            }
+            return function (q, r) {
+                function s() {
+                    this.constructor = q;
+                }
+                g(q, r), q.prototype = null === r ? Object.create(r) : (s.prototype = r.prototype, new s());
+            }(o, n), o.prototype.componentDidMount = function () {
+                if (void 0 === this.props.dataLength)
+                    throw new Error('mandatory prop "dataLength" is missing. The prop is needed when loading more content. Check README.md for usage');
+                if (this._scrollableNode = this.getScrollableTarget(), this.el = this.props.height ? this._infScroll : this._scrollableNode || window, this.el && this.el.addEventListener('scroll', this.throttledOnScrollListener), 'number' == typeof this.props.initialScrollY && this.el && this.el instanceof HTMLElement && this.el.scrollHeight > this.props.initialScrollY && this.el.scrollTo(0, this.props.initialScrollY), this.props.pullDownToRefresh && this.el && (this.el.addEventListener('touchstart', this.onStart), this.el.addEventListener('touchmove', this.onMove), this.el.addEventListener('touchend', this.onEnd), this.el.addEventListener('mousedown', this.onStart), this.el.addEventListener('mousemove', this.onMove), this.el.addEventListener('mouseup', this.onEnd), this.maxPullDownDistance = this._pullDown && this._pullDown.firstChild && this._pullDown.firstChild.getBoundingClientRect().height || 0, this.forceUpdate(), 'function' != typeof this.props.refreshFunction))
+                    throw new Error('Mandatory prop "refreshFunction" missing.\n          Pull Down To Refresh functionality will not work\n          as expected. Check README.md for usage\'');
+            }, o.prototype.componentWillUnmount = function () {
+                this.el && (this.el.removeEventListener('scroll', this.throttledOnScrollListener), this.props.pullDownToRefresh && (this.el.removeEventListener('touchstart', this.onStart), this.el.removeEventListener('touchmove', this.onMove), this.el.removeEventListener('touchend', this.onEnd), this.el.removeEventListener('mousedown', this.onStart), this.el.removeEventListener('mousemove', this.onMove), this.el.removeEventListener('mouseup', this.onEnd)));
+            }, o.prototype.UNSAFE_componentWillReceiveProps = function (q) {
+                this.props.dataLength !== q.dataLength && (this.actionTriggered = !1, this.setState({ showLoader: !1 }));
+            }, o.prototype.isElementAtTop = function (q, r) {
+                void 0 === r && (r = 0.8);
+                var s = q === document.body || q === document.documentElement ? window.screen.availHeight : q.clientHeight, t = l(r);
+                return t.unit === i ? q.scrollTop <= t.value + s - q.scrollHeight + 1 || 0 === q.scrollTop : q.scrollTop <= t.value / 100 + s - q.scrollHeight + 1 || 0 === q.scrollTop;
+            }, o.prototype.isElementAtBottom = function (q, r) {
+                void 0 === r && (r = 0.8);
+                var s = q === document.body || q === document.documentElement ? window.screen.availHeight : q.clientHeight, t = l(r);
+                return t.unit === i ? q.scrollTop + s >= q.scrollHeight - t.value : q.scrollTop + s >= t.value / 100 * q.scrollHeight;
+            }, o.prototype.render = function () {
+                var q = this, r = h({
+                        height: this.props.height || 'auto',
+                        overflow: 'auto',
+                        WebkitOverflowScrolling: 'touch'
+                    }, this.props.style), s = this.props.hasChildren || !!(this.props.children && this.props.children instanceof Array && this.props.children.length), t = this.props.pullDownToRefresh && this.props.height ? { overflow: 'auto' } : {};
+                return b(f).createElement('div', {
+                    style: t,
+                    className: 'infinite-scroll-component__outerdiv'
+                }, b(f).createElement('div', {
+                    className: 'infinite-scroll-component ' + (this.props.className || ''),
+                    ref: function (u) {
+                        return q._infScroll = u;
+                    },
+                    style: r
+                }, this.props.pullDownToRefresh && b(f).createElement('div', {
+                    style: { position: 'relative' },
+                    ref: function (u) {
+                        return q._pullDown = u;
+                    }
+                }, b(f).createElement('div', {
+                    style: {
+                        position: 'absolute',
+                        left: 0,
+                        right: 0,
+                        top: -1 * this.maxPullDownDistance
+                    }
+                }, this.state.pullToRefreshThresholdBreached ? this.props.releaseToRefreshContent : this.props.pullDownToRefreshContent)), this.props.children, !this.state.showLoader && !s && this.props.hasMore && this.props.loader, this.state.showLoader && this.props.hasMore && this.props.loader, !this.props.hasMore && this.props.endMessage));
+            }, o;
+        }(f.Component), _n = m;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....');
+    c('.....');
+    var g = c('.....'), h = c('.....');
+    let i;
+    var _j = k => (0, f.jsx)(_k, {
+        onClick: k.onClick,
+        className: k.className,
+        style: k.style,
+        children: k.children
+    });
+    const _k = g.default.div(i || (i = (l => l)`
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1),
+    0 10px 30px #f3ece8;
+  border-radius: 0.2em 0.2em 0 0;
+  background: ${ 0 };
+  padding: 20px;
+`), h.default.White);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'GetHomepagePath', function () {
+        return _j;
+    }), a(d.exports, 'RedirectToHomepage', function () {
+        return _k;
+    }), a(d.exports, 'ReplaceToHomePage', function () {
+        return _l;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    const _j = () => (0, h.isLoggedIn)() ? (0, h.isStudent)() ? f.HOME : f.KITS : '/', _k = () => {
+            (0, i.NavigateTo)(_j());
+        }, _l = () => {
+            g.history.replace(_j());
+        };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'UpgradeModal_CopyKit', function () {
+        return _h;
+    });
+    var f = c('.....');
+    c('.....');
+    var g = c('.....');
+    const _h = {
+        title: (0, f.jsx)(f.Fragment, { children: 'Copy kits with Pro' }),
+        description: (0, f.jsxs)(f.Fragment, {
+            children: [
+                'To copy kits and make them your own, upgrade to ',
+                g.COMPANY_NAME,
+                ' Pro.'
+            ]
+        })
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'responsiveArray', function () {
+        return _h;
+    }), a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    const _h = [
+        'xxl',
+        'xl',
+        'lg',
+        'md',
+        'sm',
+        'xs'
+    ];
+    function _i() {
+        const [, j] = (0, g.useToken)(), k = (l => ({
+                xs: `(max-width: ${ l.screenXSMax }px)`,
+                sm: `(min-width: ${ l.screenSM }px)`,
+                md: `(min-width: ${ l.screenMD }px)`,
+                lg: `(min-width: ${ l.screenLG }px)`,
+                xl: `(min-width: ${ l.screenXL }px)`,
+                xxl: `(min-width: ${ l.screenXXL }px)`
+            }))((l => {
+                const m = l, n = [].concat(_h).reverse();
+                return n.forEach((o, p) => {
+                    const q = o.toUpperCase(), r = `screen${ q }Min`, s = `screen${ q }`;
+                    if (!(m[r] <= m[s]))
+                        throw new Error(`${ r }<=${ s } fails : !(${ m[r] }<=${ m[s] })`);
+                    if (p < n.length - 1) {
+                        const t = `screen${ q }Max`;
+                        if (!(m[s] <= m[t]))
+                            throw new Error(`${ s }<=${ t } fails : !(${ m[s] }<=${ m[t] })`);
+                        const u = `screen${ n[p + 1].toUpperCase() }Min`;
+                        if (!(m[t] <= m[u]))
+                            throw new Error(`${ t }<=${ u } fails : !(${ m[t] }<=${ m[u] })`);
+                    }
+                }), l;
+            })(j));
+        return b(f).useMemo(() => {
+            const l = new Map();
+            let m = -1, n = {};
+            return {
+                matchHandlers: {},
+                dispatch: o => (n = o, l.forEach(p => p(n)), l.size >= 1),
+                subscribe(o) {
+                    return l.size || this.register(), m += 1, l.set(m, o), o(n), m;
+                },
+                unsubscribe(o) {
+                    l.delete(o), l.size || this.unregister();
+                },
+                unregister() {
+                    Object.keys(k).forEach(o => {
+                        const p = k[o], q = this.matchHandlers[p];
+                        null == q || q.mql.removeListener(null == q ? void 0 : q.listener);
+                    }), l.clear();
+                },
+                register() {
+                    Object.keys(k).forEach(o => {
+                        const p = k[o], q = r => {
+                                let {matches: s} = r;
+                                this.dispatch(Object.assign(Object.assign({}, n), { [o]: s }));
+                            }, r = window.matchMedia(p);
+                        r.addListener(q), this.matchHandlers[p] = {
+                            mql: r,
+                            listener: q
+                        }, q(r);
+                    });
+                },
+                responsiveMap: k
+            };
+        }, [j]);
+    }
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _t;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    let k, l, m, n = o => o;
+    const o = '#1890FF', p = h.default.div(k || (k = n`
+  width: 100%;
+  box-sizing: border-box;
+  font-family: ${ 0 };
+  margin-top: 4px;
+  margin-bottom: 4px;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  font-size: ${ 0 }px;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 16px;
+  background: ${ 0 };
+  color: ${ 0 };
+  ${ 0 }
+  transition: all 0.25s;
+  &:hover {
+    color: ${ 0 };
+  }
+`), j.Fonts.SFPro, 14, q => q.selected && !q.blockBackground ? '#E5F7FE' : i.default.White, q => q.selected ? o : 'rgba(0,0,0,.65)', q => q.selected && !q.blockStripe && 'border-right: 3px solid ' + o + ';', o), q = h.default.div.attrs({ className: 'flex vc maxWidth' })(l || (l = n``)), r = h.default.div(m || (m = n``));
+    class s extends g.Component {
+        render() {
+            const {
+                    title: t,
+                    onClick: u,
+                    selected: v,
+                    blockStripe: w,
+                    blockBackground: x
+                } = this.props, y = this.props.icon;
+            return (0, f.jsxs)(p, {
+                selected: v,
+                blockStripe: w,
+                blockBackground: x,
+                onClick: u,
+                className: this.props.className,
+                ...this.props.style,
+                children: [
+                    y ? (0, f.jsx)(y, {
+                        style: {
+                            fontSize: 14,
+                            marginRight: 10
+                        },
+                        theme: this.props.customIconColor ? 'twoTone' : 'outlined',
+                        twoToneColor: this.props.customIconColor || ''
+                    }) : null,
+                    (0, f.jsxs)(q, {
+                        children: [
+                            (0, f.jsx)(r, { children: t }),
+                            this.props.customRightComponent ? this.props.customRightComponent : null
+                        ]
+                    })
+                ]
+            });
+        }
+    }
+    var _t = s;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {
+            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
+                ref: l,
+                icon: h.default
+            }));
+        };
+    j.displayName = 'ShareAltOutlined';
+    var _k = g.forwardRef(j);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        icon: {
+            tag: 'svg',
+            attrs: {
+                viewBox: '64 64 896 896',
+                focusable: 'false'
+            },
+            children: [{
+                    tag: 'path',
+                    attrs: { d: 'M752 664c-28.5 0-54.8 10-75.4 26.7L469.4 540.8a160.68 160.68 0 000-57.6l207.2-149.9C697.2 350 723.5 360 752 360c66.2 0 120-53.8 120-120s-53.8-120-120-120-120 53.8-120 120c0 11.6 1.6 22.7 4.7 33.3L439.9 415.8C410.7 377.1 364.3 352 312 352c-88.4 0-160 71.6-160 160s71.6 160 160 160c52.3 0 98.7-25.1 127.9-63.8l196.8 142.5c-3.1 10.6-4.7 21.8-4.7 33.3 0 66.2 53.8 120 120 120s120-53.8 120-120-53.8-120-120-120zm0-476c28.7 0 52 23.3 52 52s-23.3 52-52 52-52-23.3-52-52 23.3-52 52-52zM312 600c-48.5 0-88-39.5-88-88s39.5-88 88-88 88 39.5 88 88-39.5 88-88 88zm440 236c-28.7 0-52-23.3-52-52s23.3-52 52-52 52 23.3 52 52-23.3 52-52 52z' }
+                }]
+        },
+        name: 'share-alt',
+        theme: 'outlined'
+    };
+}), c.register('.....', function (d, e) {
+    'function' == typeof Object.create ? d.exports = function (f, g) {
+        g && (f.super_ = g, f.prototype = Object.create(g.prototype, {
+            constructor: {
+                value: f,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }));
+    } : d.exports = function (f, g) {
+        if (g) {
+            f.super_ = g;
+            var h = function () {
+            };
+            h.prototype = g.prototype, f.prototype = new h(), f.prototype.constructor = f;
+        }
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _h;
+    });
+    var f = c('.....');
+    c('.....');
+    var g = c('.....');
+    var _h = i => {
+        const j = (0, g.use100vh)();
+        return (0, f.jsx)('div', {
+            style: {
+                height: j,
+                width: '100%'
+            },
+            className: i.className,
+            children: i.children
+        });
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'use100vh', function () {
+        return _k;
+    }, function (f) {
+        return _k = f;
+    });
+    var f = c('.....'), g = function () {
+            return g = Object.assign || function (h) {
+                for (var i, j = 1, k = arguments.length; j < k; j++)
+                    for (var l in i = arguments[j])
+                        Object.prototype.hasOwnProperty.call(i, l) && (h[l] = i[l]);
+                return h;
+            }, g.apply(this, arguments);
+        }, h = function (i, j) {
+            var k = {};
+            for (var l in i)
+                Object.prototype.hasOwnProperty.call(i, l) && j.indexOf(l) < 0 && (k[l] = i[l]);
+            if (null != i && 'function' == typeof Object.getOwnPropertySymbols) {
+                var m = 0;
+                for (l = Object.getOwnPropertySymbols(i); m < l.length; m++)
+                    j.indexOf(l[m]) < 0 && Object.prototype.propertyIsEnumerable.call(i, l[m]) && (k[l[m]] = i[l[m]]);
+            }
+            return k;
+        }, i = !1, j = (0, f.forwardRef)(function (k, l) {
+            var m = k.style, n = h(k, ['style']), o = _k();
+            !i && (null == m ? void 0 : m.height) && (i = !0, console.warn('<Div100vh /> overrides the height property of the style prop'));
+            var p = g(g({}, m), { height: o ? o + 'px' : '100vh' });
+            return b(f).createElement('div', g({
+                ref: l,
+                style: p
+            }, n));
+        });
+    j.displayName = 'Div100vh';
+    function _k() {
+        var l = (0, f.useState)(_p), m = l[0], n = l[1], o = function () {
+                var p = (0, f.useState)(!1), q = p[0], r = p[1];
+                return (0, f.useEffect)(function () {
+                    _q() && r(!0);
+                }, []), q;
+            }();
+        return (0, f.useEffect)(function () {
+            if (o)
+                return window.addEventListener('resize', l), function () {
+                    return window.removeEventListener('resize', l);
+                };
+            function p() {
+                var q = _p();
+                n(p);
+            }
+        }, [o]), o ? m : null;
+    }
+    function _p() {
+        return _q() ? window.innerHeight : null;
+    }
+    function _q() {
+        return 'undefined' != typeof window && 'undefined' != typeof document;
+    }
 });

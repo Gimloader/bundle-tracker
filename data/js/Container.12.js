@@ -6,599 +6,461 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-
-function b(c) {
-    return c && c.__esModule ? c.default : c;
-}
-var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('Bjl070', function(d, e) {
-    a(d.exports, 'default', function() {
-        return _u;
+var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
+b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _i;
     });
-    var f = c('g8lYc'),
-        g = c('YpFEA'),
-        h = c('O0Kav'),
-        i = c('R2nG3'),
-        j = c('TMn+i0'),
-        k = c('d3CSY0'),
-        l = c('68fTw');
-    let m = null,
-        n = a => a(),
-        o = [],
-        p = {};
-    const q = h.forwardRef((a, d) => {
-        const r = () => {
-                const {
-                    prefixCls: s,
-                    container: t,
-                    maxCount: u,
-                    duration: v,
-                    rtl: w,
-                    top: x
-                } = function() {
-                    const {
-                        prefixCls: y,
-                        getContainer: z,
-                        duration: A,
-                        rtl: B,
-                        maxCount: C,
-                        top: D
-                    } = p;
-                    return {
-                        prefixCls: null != y ? y : (0, i.globalConfig)().getPrefixCls('message'),
-                        container: (null == z ? void 0 : z()) || document.body,
-                        duration: A,
-                        rtl: B,
-                        maxCount: C,
-                        top: D
-                    };
-                }();
-                return {
-                    prefixCls: s,
-                    getContainer: () => t,
-                    maxCount: u,
-                    duration: v,
-                    rtl: w,
-                    top: x
-                };
-            },
-            [s, t] = h.useState(r),
-            [u, v] = (0, k.useInternalMessage)(s),
-            w = (0, i.globalConfig)(),
-            x = w.getRootPrefixCls(),
-            y = w.getIconPrefixCls(),
-            z = () => {
-                t(r);
-            };
-        return h.useEffect(z, []), h.useImperativeHandle(d, () => {
-            const A = Object.assign({}, u);
-            return Object.keys(A).forEach(d => {
-                A[d] = function() {
-                    return z(), u[d].apply(u, arguments);
-                };
-            }), {
-                instance: A,
-                sync: z
-            };
-        }), h.createElement(i.default, {
-            prefixCls: x,
-            iconPrefixCls: y
-        }, v);
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var _i = j => (0, e.jsx)(h.default, {
+        emoji: j.emoji,
+        title: j.title,
+        description: j.description,
+        children: (0, e.jsx)(f.default, {
+            value: j.value,
+            style: { width: j.customWidth || g.default.optionWidth },
+            size: 'large',
+            onChange: k => j.onValueChanged(k),
+            disabled: j.readOnly,
+            children: j.options.map(k => (0, e.jsx)(f.default.Option, {
+                value: k.value,
+                children: k.name
+            }, `${ j.title || 'no-title' }-${ k.value }`))
+        })
     });
-
-    function r() {
-        if (!m) {
-            const s = document.createDocumentFragment(),
-                t = {
-                    fragment: s
-                };
-            return m = t, void n(() => {
-                (0, g.render)(h.createElement(q, {
-                    ref: s => {
-                        const {
-                            instance: u,
-                            sync: v
-                        } = s || {};
-                        Promise.resolve().then(() => {
-                            !t.instance && u && (t.instance = u, t.sync = v, r());
-                        });
-                    }
-                }), s);
-            });
-        }
-        m.instance && (o.forEach(a => {
-            const {
-                type: s,
-                skipped: t
-            } = a;
-            if (!t)
-                switch (s) {
-                    case 'open':
-                        n(() => {
-                            const u = m.instance.open(Object.assign(Object.assign({}, p), a.config));
-                            null == u || u.then(a.resolve), a.setCloseFn(u);
-                        });
-                        break;
-                    case 'destroy':
-                        n(() => {
-                            null == m || m.instance.destroy(a.key);
-                        });
-                        break;
-                    default:
-                        n(() => {
-                            var u;
-                            const v = (u = m.instance)[s].apply(u, (0, f.default)(a.args));
-                            null == v || v.then(a.resolve), a.setCloseFn(v);
-                        });
-                }
-        }), o = []);
-    }
-
-    function s(t, u) {
-        const v = (0, l.wrapPromiseFn)(v => {
-            let w;
-            const x = {
-                type: t,
-                args: u,
-                resolve: v,
-                setCloseFn: t => {
-                    w = t;
-                }
-            };
-            return o.push(x), () => {
-                w ? n(() => {
-                    w();
-                }) : x.skipped = !0;
-            };
-        });
-        return r(), v;
-    }
-    const t = {
-        open: function(u) {
-            const v = (0, l.wrapPromiseFn)(v => {
-                let w;
-                const x = {
-                    type: 'open',
-                    config: u,
-                    resolve: v,
-                    setCloseFn: u => {
-                        w = u;
-                    }
-                };
-                return o.push(x), () => {
-                    w ? n(() => {
-                        w();
-                    }) : x.skipped = !0;
-                };
-            });
-            return r(), v;
-        },
-        destroy: function(u) {
-            o.push({
-                type: 'destroy',
-                key: u
-            }), r();
-        },
-        config: function(u) {
-            p = Object.assign(Object.assign({}, p), u), n(() => {
-                var v;
-                null === (v = null == m ? void 0 : m.sync) || void 0 === v || v.call(m);
-            });
-        },
-        useMessage: k.default,
-        _InternalPanelDoNotUseOrYouWillBeFired: j.default
-    };
-    [
-        'success',
-        'info',
-        'warning',
-        'error',
-        'loading'
-    ].forEach(a => {
-        t[a] = function() {
-            for (var u = arguments.length, v = new Array(u), w = 0; w < u; w++)
-                v[w] = arguments[w];
-            return s(a, v);
-        };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _g;
     });
-    var _u = t;
-}), c.register('TMn+i0', function(d, e) {
-    a(d.exports, 'TypeIcon', function() {
-        return _q;
-    }, function(f) {
-        return _q = f;
-    }), a(d.exports, 'PureContent', function() {
-        return _r;
-    }, function(f) {
-        return _r = f;
-    }), a(d.exports, 'default', function() {
-        return _s;
-    }, function(f) {
-        return _s = f;
-    });
-    var f = c('O0Kav'),
-        g = c('bR8Yv'),
-        h = c('ltJdn'),
-        i = c('7s2gi'),
-        j = c('DEY39'),
-        k = c('/VDzu'),
-        l = c('tGVyf'),
-        m = c('/U36/'),
-        n = c('Odcy10'),
-        o = c('R2nG3'),
-        p = function(q, r) {
-            var s = {};
-            for (var t in q)
-                Object.prototype.hasOwnProperty.call(q, t) && r.indexOf(t) < 0 && (s[t] = q[t]);
-            if (null != q && 'function' == typeof Object.getOwnPropertySymbols) {
-                var u = 0;
-                for (t = Object.getOwnPropertySymbols(q); u < t.length; u++)
-                    r.indexOf(t[u]) < 0 && Object.prototype.propertyIsEnumerable.call(q, t[u]) && (s[t[u]] = q[t[u]]);
-            }
-            return s;
-        };
-    const _q = {
-        info: f.createElement(k.default, null),
-        success: f.createElement(j.default, null),
-        error: f.createElement(i.default, null),
-        warning: f.createElement(h.default, null),
-        loading: f.createElement(g.default, null)
-    };
-
-    function _r(s) {
-        let {
-            prefixCls: t,
-            type: u,
-            icon: v,
-            children: w
-        } = s;
-        return f.createElement('div', {
-            className: b(m)(`${ t }-custom-content`, `${ t }-${ u }`)
-        }, v || _q[u], f.createElement('span', null, w));
-    }
-
-    function _s(t) {
-        const {
-            prefixCls: u,
-            className: v,
-            type: w,
-            icon: x,
-            content: y
-        } = t, z = p(t, [
-            'prefixCls',
-            'className',
-            'type',
-            'icon',
-            'content'
-        ]), {
-            getPrefixCls: A
-        } = f.useContext(o.ConfigContext), B = u || A('message'), [, C] = (0, n.default)(B);
-        return f.createElement(l.Notice, Object.assign({}, z, {
-            prefixCls: B,
-            className: b(m)(v, C, `${ B }-notice-pure-panel`),
-            eventKey: 'pure',
-            duration: null,
-            content: f.createElement(_r, {
-                prefixCls: B,
-                type: w,
-                icon: x
-            }, y)
-        }));
-    }
-}), c.register('Odcy10', function(d, e) {
-    a(d.exports, 'default', function() {
-        return _q;
-    });
-    var f = c('ZyWBF'),
-        g = c('GhPPX'),
-        h = c('qJkLY'),
-        i = c('/zzpx');
-    const j = a => {
-        const {
-            componentCls: k,
-            iconCls: l,
-            boxShadow: m,
-            colorBgElevated: n,
-            colorSuccess: o,
-            colorError: p,
-            colorWarning: _q,
-            colorInfo: r,
-            fontSizeLG: s,
-            motionEaseInOutCirc: t,
-            motionDurationSlow: u,
-            marginXS: v,
-            paddingXS: w,
-            borderRadiusLG: x,
-            zIndexPopup: y,
-            messageNoticeContentPadding: z
-        } = a, A = new(0, f.Keyframes)('MessageMoveIn', {
-            '0%': {
-                padding: 0,
-                transform: 'translateY(-100%)',
-                opacity: 0
-            },
-            '100%': {
-                padding: w,
-                transform: 'translateY(0)',
-                opacity: 1
-            }
-        }), B = new(0, f.Keyframes)('MessageMoveOut', {
-            '0%': {
-                maxHeight: a.height,
-                padding: w,
-                opacity: 1
-            },
-            '100%': {
-                maxHeight: 0,
-                padding: 0,
-                opacity: 0
-            }
-        });
-        return [{
-                [k]: Object.assign(Object.assign({}, (0, i.resetComponent)(a)), {
-                    position: 'fixed',
-                    top: v,
-                    width: '100%',
-                    pointerEvents: 'none',
-                    zIndex: y,
-                    [`${ k }-move-up`]: {
-                        animationFillMode: 'forwards'
-                    },
-                    [`\n        ${ k }-move-up-appear,\n        ${ k }-move-up-enter\n      `]: {
-                        animationName: A,
-                        animationDuration: u,
-                        animationPlayState: 'paused',
-                        animationTimingFunction: t
-                    },
-                    [`\n        ${ k }-move-up-appear${ k }-move-up-appear-active,\n        ${ k }-move-up-enter${ k }-move-up-enter-active\n      `]: {
-                        animationPlayState: 'running'
-                    },
-                    [`${ k }-move-up-leave`]: {
-                        animationName: B,
-                        animationDuration: u,
-                        animationPlayState: 'paused',
-                        animationTimingFunction: t
-                    },
-                    [`${ k }-move-up-leave${ k }-move-up-leave-active`]: {
-                        animationPlayState: 'running'
-                    },
-                    '&-rtl': {
-                        direction: 'rtl',
-                        span: {
-                            direction: 'rtl'
-                        }
-                    }
-                })
-            },
-            {
-                [`${ k }-notice`]: {
-                    padding: w,
-                    textAlign: 'center',
-                    [`${ k }-custom-content > ${ l }`]: {
-                        verticalAlign: 'text-bottom',
-                        marginInlineEnd: v,
-                        fontSize: s
-                    },
-                    [`${ k }-notice-content`]: {
-                        display: 'inline-block',
-                        padding: z,
-                        background: n,
-                        borderRadius: x,
-                        boxShadow: m,
-                        pointerEvents: 'all'
-                    },
-                    [`${ k }-success > ${ l }`]: {
-                        color: o
-                    },
-                    [`${ k }-error > ${ l }`]: {
-                        color: p
-                    },
-                    [`${ k }-warning > ${ l }`]: {
-                        color: _q
-                    },
-                    [`\n        ${ k }-info > ${ l },\n        ${ k }-loading > ${ l }`]: {
-                        color: r
-                    }
-                }
-            },
-            {
-                [`${ k }-notice-pure-panel`]: {
-                    padding: 0,
-                    textAlign: 'start'
-                }
-            }
-        ];
-    };
-    var k = (0, g.default)('Message', a => {
-        const l = (0, h.merge)(a, {
-            messageNoticeContentPadding: `${ (a.controlHeightLG - a.fontSize * a.lineHeight) / 2 }px ${ a.paddingSM }px`
-        });
-        return [j(l)];
-    }, a => ({
-        height: 150,
-        zIndexPopup: a.zIndexPopupBase + 10
-    }));
-}), c.register('d3CSY0', function(d, e) {
-    a(d.exports, 'useInternalMessage', function() {
-        return _x;
-    }, function(f) {
-        return _x = f;
-    }), a(d.exports, 'default', function() {
-        return _y;
-    }, function(f) {
-        return _y = f;
-    });
-    var f = c('O0Kav'),
-        g = c('tGVyf'),
-        h = c('/U36/'),
-        i = c('ReZvd'),
-        j = c('R2nG3'),
-        k = c('Odcy10'),
-        l = c('68fTw'),
-        m = c('TMn+i0'),
-        n = function(o, p) {
-            var q = {};
-            for (var r in o)
-                Object.prototype.hasOwnProperty.call(o, r) && p.indexOf(r) < 0 && (q[r] = o[r]);
-            if (null != o && 'function' == typeof Object.getOwnPropertySymbols) {
-                var s = 0;
-                for (r = Object.getOwnPropertySymbols(o); s < r.length; s++)
-                    p.indexOf(r[s]) < 0 && Object.prototype.propertyIsEnumerable.call(o, r[s]) && (q[r[s]] = o[r[s]]);
-            }
-            return q;
-        };
-    const o = 3,
-        p = f.forwardRef((a, c) => {
-            const {
-                top: q,
-                prefixCls: r,
-                getContainer: s,
-                maxCount: t,
-                duration: u = v,
-                rtl: w,
-                transitionName: _x,
-                onAllRemoved: _y
-            } = a, {
-                getPrefixCls: z,
-                getPopupContainer: A
-            } = f.useContext(j.ConfigContext), B = r || z('message'), [, C] = (0, k.default)(B), D = f.createElement('span', {
-                className: `${ B }-close-x`
-            }, f.createElement(i.default, {
-                className: `${ B }-close-icon`
-            })), [E, F] = (0, g.useNotification)({
-                prefixCls: B,
-                style: () => ({
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    top: null != q ? q : 8
-                }),
-                className: () => b(h)(C, w ? `${ B }-rtl` : ''),
-                motion: () => (0, l.getMotion)(B, _x),
-                closable: !1,
-                closeIcon: D,
-                duration: u,
-                getContainer: () => (null == s ? void 0 : s()) || (null == A ? void 0 : A()) || document.body,
-                maxCount: t,
-                onAllRemoved: _y
-            });
-            return f.useImperativeHandle(c, () => Object.assign(Object.assign({}, E), {
-                prefixCls: B,
-                hashId: C
-            })), F;
-        });
-    let q = 0;
-
-    function r(s) {
-        const t = f.useRef(null);
-        return [
-            f.useMemo(() => {
-                const u = u => {
-                        var v;
-                        null === (v = t.current) || void 0 === v || v.close(u);
-                    },
-                    v = v => {
-                        if (!t.current) {
-                            const w = () => {};
-                            return w.then = () => {}, w;
-                        }
-                        const {
-                            open: w,
-                            prefixCls: x,
-                            hashId: y
-                        } = t.current, z = `${ x }-notice`, {
-                            content: A,
-                            icon: B,
-                            type: C,
-                            key: D,
-                            className: E,
-                            onClose: F
-                        } = v, G = n(v, [
-                            'content',
-                            'icon',
-                            'type',
-                            'key',
-                            'className',
-                            'onClose'
-                        ]);
-                        let H = D;
-                        return null == H && (q += 1, H = `antd-message-${ q }`), (0, l.wrapPromiseFn)(t => (w(Object.assign(Object.assign({}, G), {
-                            key: H,
-                            content: f.createElement(m.PureContent, {
-                                prefixCls: x,
-                                type: C,
-                                icon: B
-                            }, A),
-                            placement: 'top',
-                            className: b(h)(C && `${ z }-${ C }`, y, E),
-                            onClose: () => {
-                                null == F || F(), t();
-                            }
-                        })), () => {
-                            u(H);
-                        }));
-                    },
-                    w = {
-                        open: v,
-                        destroy: b => {
-                            var x;
-                            void 0 !== b ? u(b) : null === (x = t.current) || void 0 === x || x.destroy();
-                        }
-                    };
-                return [
-                    'info',
-                    'success',
-                    'warning',
-                    'error',
-                    'loading'
-                ].forEach(u => {
-                    w[u] = (b, t, w) => {
-                        let x, y, z;
-                        x = b && 'object' == typeof b && 'content' in b ? b : {
-                            content: b
-                        }, 'function' == typeof t ? z = t : (y = t, z = w);
-                        const A = Object.assign(Object.assign({
-                            onClose: z,
-                            duration: y
-                        }, x), {
-                            type: u
-                        });
-                        return v(A);
-                    };
-                }), w;
-            }, []),
-            f.createElement(p, Object.assign({
-                key: 'message-holder'
-            }, s, {
-                ref: t
-            }))
-        ];
-    }
-
-    function s(t) {
-        return r(t);
-    }
-}), c.register('68fTw', function(d, e) {
-    function f(g, h) {
-        return {
-            motionName: null != h ? h : `${ g }-move-up`
-        };
-    }
-
-    function g(h) {
-        let i;
-        const j = new Promise(j => {
-                i = h(() => {
-                    j(!0);
-                });
+    var e = b('.....');
+    b('.....');
+    var f = b('.....');
+    var _g = h => (0, e.jsxs)(f.OptionContainer, {
+        children: [
+            (0, e.jsxs)(f.OptionInfoContainer, {
+                children: [
+                    h.emoji ? (0, e.jsx)(f.OptionEmoji, { children: h.emoji }) : null,
+                    (0, e.jsxs)('div', {
+                        children: [
+                            (0, e.jsx)(f.OptionTitle, { children: h.title }),
+                            h.description ? (0, e.jsx)(f.OptionDescription, { children: h.description }) : null
+                        ]
+                    })
+                ]
             }),
-            k = () => {
-                null == i || i();
-            };
-        return k.then = (h, i) => j.then(h, i), k.promise = j, k;
-    }
-    a(d.exports, 'getMotion', function() {
-        return f;
-    }), a(d.exports, 'wrapPromiseFn', function() {
-        return g;
+            (0, e.jsx)(f.OptionChangerContainer, { children: h.children })
+        ]
     });
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'OptionContainer', function () {
+        return _n;
+    }), a(c.exports, 'OptionInfoContainer', function () {
+        return _o;
+    }), a(c.exports, 'OptionEmoji', function () {
+        return _p;
+    }), a(c.exports, 'OptionTitle', function () {
+        return _q;
+    }), a(c.exports, 'OptionDescription', function () {
+        return _r;
+    }), a(c.exports, 'OptionChangerContainer', function () {
+        return _s;
+    });
+    var e = b('.....'), f = b('.....');
+    let g, h, i, j, k, l, m = n => n;
+    const _n = f.default.div.attrs({ className: 'maxWidth flex vc between' })(g || (g = m`
+  box-sizing: border-box;
+  padding: 13px 20px;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.12);
+  transition: transform 0.23s;
+  will-change: transform;
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.02);
+  }
+`)), _o = f.default.div.attrs({ className: 'flex vc' })(h || (h = m``)), _p = f.default.div(i || (i = m`
+  font-size: 23px;
+  margin-right: 10px;
+`)), _q = f.default.div(j || (j = m`
+  font-size: 23px;
+  font-weight: ${ 0 };
+`), e.FontWeights.Bold), _r = f.default.div(k || (k = m`
+  font-size: 15px;
+  margin-top: -2px;
+`)), _s = f.default.div(l || (l = m`
+  flex-shrink: 0;
+  margin-left: 25px;
+`));
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _l;
+    });
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....');
+    var _l = m => {
+        const n = f.useCallback(o => {
+            if ((0, j.isNil)(o) && m.allowEmpty)
+                return o;
+            let p = o ? m.step ? Math.round(o / m.step) * m.step : o : 0;
+            return !(0, j.isNil)(m.min) && p < m.min ? p = m.min : !(0, j.isNil)(m.max) && p > m.max && (p = m.max), p;
+        }, [
+            m.max,
+            m.min,
+            m.step
+        ]);
+        f.useEffect(() => {
+            (0, j.isNil)(m.value) || m.max && m.value > m.max && c(n(m.max));
+        }, [
+            m.value,
+            m.max
+        ]);
+        const o = p => {
+            m.onValueChanged(n(p));
+        };
+        return (0, e.jsx)(i.default, {
+            emoji: m.emoji,
+            title: m.title,
+            description: m.description,
+            children: (0, e.jsx)(k.default, {
+                size: 'large',
+                formatter: h.default,
+                value: m.value,
+                max: m.max,
+                min: m.min,
+                step: m.step,
+                style: { width: m.customWidth || g.default.optionWidth },
+                onChange: o,
+                disabled: m.readOnly
+            })
+        });
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _f;
+    });
+    var e = b('.....');
+    var _f = g => '' === g ? '' : isNaN(Number(g)) ? String(g) : (0, e.numberWithCommas)(Number(g));
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _i;
+    });
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var _i = j => {
+        const [k, l] = g.useState(j.value), [m, n] = g.useState(j.value), [o, p, q] = (0, h.useBoolean)(!1);
+        g.useEffect(() => {
+            n(j.value), l(j.value);
+        }, [j.value]);
+        return (0, e.jsx)(f.default, {
+            ...j,
+            value: o ? k : m,
+            onChange: r => {
+                l(r);
+            },
+            onFocus: p,
+            onBlur: () => {
+                k !== m && j.onChange(k), q(), l(j.value);
+            }
+        });
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _i;
+    });
+    var e = b('.....'), f = b('.....'), g = b('.....');
+    const h = (i, j) => {
+        var k;
+        return null === (k = JSON.parse(localStorage.getItem(g.LocalStorageNames.hookSavedOptions) || '{}')[j]) || void 0 === k ? void 0 : k[i];
+    };
+    var _i = j => {
+        var k;
+        const {
+                hookJSON: l,
+                experienceId: m,
+                kitId: n
+            } = j, o = {};
+        return null == l || null === (k = l.hooks) || void 0 === k || k.forEach(p => {
+            if (p.type === f.HookType.kit)
+                o[p.key] = n || '';
+            else if (p.type == f.HookType.selectBox) {
+                const q = p.options;
+                if (q.options.length) {
+                    let r = q.options.find(s => s === q.defaultOption) || q.options[0];
+                    if (m) {
+                        const s = h(p.key, m);
+                        if (s) {
+                            const t = q.options.find(u => u === s);
+                            t && (r = t);
+                        }
+                    }
+                    r && (o[t.key] = r);
+                }
+            } else if (t.type === f.HookType.number) {
+                const t = t.options;
+                let u = t.defaultValue;
+                if (m) {
+                    const v = h(t.key, m);
+                    if (!(0, s.isNil)(v) && 'number' == typeof v) {
+                        let w = !1;
+                        ((0, s.isNil)(t.min) || v > t.min) && ((0, s.isNil)(t.max) || v < t.max) && ((0, s.isNil)(t.step) || v % t.step == 0) && (w = !0), w && (u = v);
+                    }
+                }
+                o[t.key] = u;
+            }
+        }), o;
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _m;
+    });
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    var _m = (0, g.observer)(n => {
+        const [o] = h.useState(() => (0, f.observable)(n.defaultState || (0, l.default)({ hookJSON: n.hooks }))), p = (q, r) => {
+                o[q] = r;
+            }, q = (0, f.toJS)(o), r = JSON.stringify(q);
+        h.useEffect(() => {
+            n.onConnectedResourcesChange && n.onConnectedResourcesChange((0, j.default)(n, q)), n.readOnly || n.onStateChange && n.onStateChange(q);
+        }, [
+            r,
+            n.readOnly
+        ]);
+        const s = (0, k.default)(n, q);
+        return (0, e.jsxs)(e.Fragment, {
+            children: [
+                n.header ? n.header(s.length) : null,
+                s.map((t, u) => (0, e.jsxs)(h.Fragment, {
+                    children: [
+                        (0, e.jsx)(i.default, {
+                            hook: t,
+                            state: q,
+                            modifyState: p,
+                            location: n.location,
+                            readOnly: n.readOnly
+                        }),
+                        u !== s.length - 1 && (0, e.jsx)('div', { style: { height: 10 } })
+                    ]
+                }, `hook-form-${ t.key }`)),
+                n.footer ? n.footer(s.length) : null
+            ]
+        });
+    });
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _j;
+    });
+    var e = b('.....');
+    b('.....');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    var _j = k => {
+        const l = k.state[k.hook.key], m = n => {
+                k.modifyState(k.hook.key, n);
+            };
+        return k.hook.type === f.HookType.selectBox ? (0, e.jsx)(i.default, {
+            value: l,
+            onChange: m,
+            hook: k.hook,
+            readOnly: k.readOnly
+        }) : k.hook.type === f.HookType.kit ? (0, e.jsx)(g.default, {
+            value: l,
+            onChange: m,
+            hook: k.hook,
+            location: k.location,
+            readOnly: k.readOnly
+        }) : k.hook.type === f.HookType.number ? (0, e.jsx)(h.default, {
+            value: l,
+            onChange: m,
+            hook: k.hook,
+            readOnly: k.readOnly
+        }) : null;
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _i;
+    });
+    var e = b('.....');
+    b('.....');
+    var f = b('.....'), g = b('.....'), h = b('.....');
+    var _i = j => {
+        let {
+            title: k,
+            description: l
+        } = (0, h.default)(j.hook);
+        if (j.location === g.HookFormLocation.editor) {
+            const m = 'We\'re showing this hook for testing purposes, but this hook won\'t be visible when choosing this map from the Mode Picker.';
+            l ? l += ` - ${ m }` : l = m;
+        }
+        return (0, e.jsx)(f.default, {
+            title: k,
+            description: l,
+            value: m.value,
+            onValueChanged: m.onChange,
+            placeholder: 'Kit ID',
+            readOnly: m.readOnly
+        });
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _i;
+    });
+    var e = b('.....');
+    b('.....');
+    var f = b('.....'), g = b('.....'), h = b('.....');
+    var _i = j => (0, e.jsx)(h.default, {
+        emoji: j.emoji,
+        title: j.title,
+        description: j.description,
+        children: (0, e.jsx)(f.default, {
+            size: 'large',
+            value: j.value,
+            placeholder: j.placeholder,
+            style: { width: j.customWidth || g.default.optionWidth },
+            onChange: k => {
+                j.onValueChanged(k.target.value);
+            },
+            disabled: j.readOnly
+        })
+    });
+}), b.register('.....', function (c, d) {
+    let e;
+    var f;
+    let g;
+    a(c.exports, 'HookFormLocation', function () {
+        return e;
+    }), a(c.exports, 'IHookConnectedResourceType', function () {
+        return g;
+    }), (f = e || (e = {})).editor = 'editor', f.experiencePicker = 'experiencePicker', (g || (g = {})).kit = 'kit';
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _e;
+    });
+    var _e = f => {
+        let g, h;
+        return g = f.key, f.displayName && (g = f.displayName), f.displayDescription && (h = f.displayDescription), {
+            title: g,
+            description: h
+        };
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _i;
+    });
+    var e = b('.....'), f = b('.....');
+    b('.....');
+    var g = b('.....'), h = b('.....');
+    var _i = j => {
+        const {
+                title: k,
+                description: l
+            } = (0, h.default)(j.hook), m = j.hook.options;
+        return (0, e.jsx)(g.default, {
+            title: k,
+            description: l,
+            value: j.value,
+            onValueChanged: n => {
+                !(0, f.isNil)(n) || (0, f.isNil)(m.defaultValue) ? j.onChange(n) : j.onChange(m.defaultValue);
+            },
+            min: m.min,
+            max: m.max,
+            step: m.step,
+            allowEmpty: !0,
+            readOnly: j.readOnly
+        });
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _h;
+    });
+    var e = b('.....');
+    b('.....');
+    var f = b('.....'), g = b('.....');
+    var _h = i => {
+        const {
+                title: j,
+                description: k
+            } = (0, g.default)(i.hook), l = i.hook.options;
+        return (0, e.jsx)(f.default, {
+            title: j,
+            description: k,
+            value: i.value,
+            onValueChanged: i.onChange,
+            options: l.options.map(m => ({
+                value: m,
+                name: m
+            })),
+            readOnly: i.readOnly
+        });
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _i;
+    });
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var _i = (j, k) => {
+        const l = [];
+        return (0, h.default)({
+            ...j,
+            location: g.HookFormLocation.editor
+        }, k).forEach(m => {
+            m.type === f.HookType.kit && k[m.key] && l.push({
+                type: g.IHookConnectedResourceType.kit,
+                value: k[m.key]
+            });
+        }), (0, e.uniqBy)(l, 'value');
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _h;
+    });
+    var e = b('.....'), f = b('.....'), g = b('.....');
+    var _h = (i, j) => {
+        var k, l;
+        const m = [];
+        return null == i || null === (k = i.hooks) || void 0 === k || null === (l = k.hooks) || void 0 === l || l.forEach(n => {
+            var o;
+            if (n.type === f.HookType.kit) {
+                if (!!j[n.key] && i.location === g.HookFormLocation.experiencePicker)
+                    return;
+            }
+            if (n.type === f.HookType.selectBox) {
+                var p;
+                const q = n.options;
+                if (!(null == q || null === (p = q.options) || void 0 === p ? void 0 : p.length))
+                    return;
+            }
+            (null == n || null === (o = n.hiddenScenarios) || void 0 === o ? void 0 : o.find(r => {
+                var s, t;
+                if (!!!(null === (s = r.conditions) || void 0 === s ? void 0 : s.length))
+                    return !1;
+                return !!(null === (t = r.conditions) || void 0 === t ? void 0 : t.every(u => {
+                    if (u.type === e.HiddenConditionType.hookValue) {
+                        const v = u.options, w = v.value, x = j[v.key];
+                        if (v.compare === e.HookValueHiddenConditionCompare.equal) {
+                            if (w == x)
+                                return !0;
+                        } else if (v.compare === e.HookValueHiddenConditionCompare.notEqual && w != x)
+                            return !0;
+                    } else if (u.type === e.HiddenConditionType.modeType) {
+                        const y = v.modeType, z = u.options;
+                        return z.compare === e.ModeTypeHiddenConditionCompare.equal ? y === z.mode : y !== z.mode;
+                    }
+                    return !1;
+                }));
+            })) || m.push(n);
+        }), m;
+    };
+}), b.register('.....', function (c, d) {
+    let e;
+    var f;
+    let g;
+    var h;
+    let i;
+    var j;
+    a(c.exports, 'HiddenConditionType', function () {
+        return e;
+    }), a(c.exports, 'HookValueHiddenConditionCompare', function () {
+        return g;
+    }), a(c.exports, 'ModeTypeHiddenConditionCompare', function () {
+        return i;
+    }), (f = e || (e = {})).hookValue = 'hookValue', f.modeType = 'modeType', (h = g || (g = {})).equal = 'EQUAL', h.notEqual = 'NOT_EQUAL', (j = i || (i = {})).equal = 'EQUAL', j.notEqual = 'NOT_EQUAL';
 });

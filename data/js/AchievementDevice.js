@@ -7,42 +7,34 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('HMD//', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _p;
     });
-    var f = b('s/YA9'),
-        g = b('quE27'),
-        h = b('fI6of'),
-        i = b('5Fjxs'),
-        j = b('hycyg'),
-        k = b('UkCpC'),
-        l = b('ltxDW'),
-        m = b('xyr62'),
-        n = b('5twYG');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....');
     class o extends l.default {
         constructor(p) {
-            super(p), (0, f.default)(this, 'onMessage', p => {
-                p.key === n.Messages.show && (null == p ? void 0 : p.data) === (0, i.default)() && h.default.gui.achievement.update(this.id, (0, g.generateId)());
+            super(p), (0, f.default)(this, 'onMessage', q => {
+                q.key === n.Messages.show && (null == q ? void 0 : q.data) === (0, i.default)() && h.default.gui.achievement.update(this.id, (0, g.generateId)());
             }), (0, j.isPublishedVersion)() || (0, k.InGamePhase)() || (this.layers.forceDepthManually(0), this.parts.add.sprite(m.BaseAsset));
         }
     }
     var _p = o;
-}), b.register('xyr62', function(c, d) {
-    a(c.exports, 'BaseAsset', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'BaseAsset', function () {
         return _e;
     });
     const _e = {
         imageId: 'achievement_device',
-        imageUrl: (0, b('UaUBz0').default)('devices/achievement/icon.png')
+        imageUrl: (0, b('.....').default)('devices/achievement/icon.png')
     };
-}), b.register('5twYG', function(c, d) {
+}), b.register('.....', function (c, d) {
     let e;
-    a(c.exports, 'Messages', function() {
+    a(c.exports, 'Messages', function () {
         return e;
     }), (e || (e = {})).show = 'show';
 });

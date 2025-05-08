@@ -6,135 +6,96 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
-var c = 'undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {},
-    d = c.parcelRequire388b;
-d.register('8hEt+', function(e, f) {
+var c = 'undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}, d = c.parcelRequire388b;
+d.register('.....', function (e, f) {
     var g;
     g = e.exports, Object.defineProperty(g, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(e.exports, 'default', function() {
+    }), a(e.exports, 'default', function () {
         return _B;
     });
-    var h = d('gRbUn'),
-        i = d('O0Kav'),
-        j = d('u4s09'),
-        k = d('oMF5u'),
-        l = d('OrEI9'),
-        m = d('GxWik'),
-        n = d('6jmvl'),
-        o = d('K/2xB'),
-        p = d('mTbw/'),
-        q = d('C+9gN'),
-        r = d('4Bmhg'),
-        s = d('eLsOE'),
-        t = d('t0eqt'),
-        u = d('LihP5'),
-        v = d('SxihY'),
-        w = d('3t9ce'),
-        x = d('quE27'),
-        y = d('2d+QF'),
-        z = d('qIlyp');
+    var h = d('.....'), i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....'), o = d('.....'), p = d('.....'), q = d('.....'), r = d('.....'), s = d('.....'), t = d('.....'), u = d('.....'), v = d('.....'), w = d('.....'), x = d('.....'), y = d('.....'), z = d('.....');
     let A;
-    var _B = (0, n.observer)(a => {
+    var _B = (0, n.observer)(C => {
         const {
-            gui: {
-                none: {
-                    addMenu: {
-                        screen: C
+                gui: {
+                    none: {
+                        addMenu: {screen: D}
                     }
-                }
-            },
-            me: {
-                adding: D
-            }
-        } = (0, o.default)(), [E, F, G] = (0, x.useBoolean)(!0), [H, I] = i.useState(!0);
+                },
+                me: {adding: E}
+            } = (0, o.default)(), [F, G, H] = (0, x.useBoolean)(!0), [I, J] = i.useState(!0);
         (0, s.useInputBlockingUI)();
-        const J = i.useMemo(() => C === p.AddScreen.terrain, [C]),
-            K = i.useMemo(() => C === p.AddScreen.props, [C]),
-            L = i.useMemo(() => C === p.AddScreen.devices, [C]),
-            M = () => {
-                a.setToHomeScreen(), _P(p.AddScreen.home);
-            },
-            N = (0, y.default)();
+        const K = i.useMemo(() => D === p.AddScreen.terrain, [D]), L = i.useMemo(() => D === p.AddScreen.props, [D]), M = i.useMemo(() => D === p.AddScreen.devices, [D]), N = () => {
+                C.setToHomeScreen(), _Q(p.AddScreen.home);
+            }, O = (0, y.default)();
         i.useEffect(() => {
-            N || G();
-        }, [N]);
-        const O = i.useCallback(() => {
-                H ? M() : J || K || L || G();
+            O || H();
+        }, [O]);
+        const P = i.useCallback(() => {
+                I ? N() : K || L || M || H();
             }, [
-                G,
-                J,
+                H,
                 K,
                 L,
-                H,
-                M
-            ]),
-            _P = a => (0, r.default)(a),
-            Q = () => {
-                _P(p.AddScreen.home);
+                M,
+                I,
+                N
+            ]), _Q = R => (0, r.default)(R), R = () => {
+                _Q(p.AddScreen.home);
             };
         return (0, h.jsx)(w.default, {
-            open: E,
-            onClose: O,
-            afterOpenChange: a => {
-                a && I(!1), a || M();
+            open: F,
+            onClose: P,
+            afterOpenChange: S => {
+                S && J(!1), S || N();
             },
             width: 600,
             destroyOnClose: !0,
             children: (0, h.jsx)(_C, {
                 children: (0, h.jsxs)(k.default, {
-                    close: a.setToHomeScreen,
-                    setToTerrain: () => _P(p.AddScreen.terrain),
+                    close: C.setToHomeScreen,
+                    setToTerrain: () => _Q(p.AddScreen.terrain),
                     setToProps: () => {
-                        _P(p.AddScreen.props);
+                        _Q(p.AddScreen.props);
                     },
-                    setToDevices: () => _P(p.AddScreen.devices),
+                    setToDevices: () => _Q(p.AddScreen.devices),
                     setToWires: () => {
-                        D.mode = t.AddingMode.wire, (0, u.default)(v.default.adding), (0, z.EmitTutorialEvent)({
-                            event: z.TutorialEventName.START_ADDING_WIRE
-                        });
+                        E.mode = t.AddingMode.wire, (0, u.default)(v.default.adding), (0, z.EmitTutorialEvent)({ event: z.TutorialEventName.START_ADDING_WIRE });
                     },
                     children: [
                         (0, h.jsx)(l.default, {
-                            open: J,
-                            close: Q
+                            open: K,
+                            close: R
                         }),
                         (0, h.jsx)(m.default, {
-                            open: K,
-                            close: Q
+                            open: L,
+                            close: R
                         }),
                         (0, h.jsx)(q.default, {
-                            open: L,
-                            close: Q
+                            open: M,
+                            close: R
                         })
                     ]
                 })
             })
         });
     });
-    const _C = j.default.div.attrs({
-        className: 'maxWidth'
-    })(A || (A = (a => a)``));
-}), d.register('oMF5u', function(e, f) {
-    a(e.exports, 'default', function() {
+    const _C = j.default.div.attrs({ className: 'maxWidth' })(A || (A = (D => D)``));
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _r;
     });
-    var g = d('gRbUn'),
-        h = d('22RS1');
-    d('O0Kav');
-    var i = d('u4s09'),
-        j = d('Eh2Wh'),
-        k = d('gp8Qp0'),
-        l = d('idwWL'),
-        m = d('UaUBz0');
-    let n, o, p = a => a;
-    const q = a => (0, m.default)(`editor/icons/${ a }.png`);
-    var _r = a => (0, g.jsxs)(_s, {
+    var g = d('.....'), h = d('.....');
+    d('.....');
+    var i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....');
+    let n, o, p = q => q;
+    const q = r => (0, m.default)(`editor/icons/${ r }.png`);
+    var _r = s => (0, g.jsxs)(_s, {
         children: [
             (0, g.jsx)(h.default.Title, {
                 level: 1,
@@ -152,45 +113,40 @@ d.register('8hEt+', function(e, f) {
                         name: k.default.terrain.singular,
                         description: 'The floors and walls on the map',
                         icon: q('terrain'),
-                        onClick: a.setToTerrain
+                        onClick: s.setToTerrain
                     }),
                     (0, g.jsx)(l.default, {
                         name: k.default.prop.plural,
                         description: 'Objects and decorations',
                         icon: q('prop'),
-                        onClick: a.setToProps
+                        onClick: s.setToProps
                     }),
                     (0, g.jsx)(l.default, {
                         name: k.default.device.plural,
                         description: 'Create game mechanics!',
                         icon: q('device'),
-                        onClick: a.setToDevices
+                        onClick: s.setToDevices
                     }),
                     (0, g.jsx)(l.default, {
                         name: k.default.wire.plural,
                         description: 'Connect devices together',
                         icon: q('wire'),
-                        onClick: a.setToWires
+                        onClick: s.setToWires
                     })
                 ]
             }),
-            a.children
+            s.children
         ]
     });
-    const _s = i.default.div.attrs({
-            className: 'flex-column flex-center maxWidth'
-        })(n || (n = p``)),
-        _t = i.default.div.attrs({
-            className: 'maxWidth'
-        })(o || (o = p`
+    const _s = i.default.div.attrs({ className: 'flex-column flex-center maxWidth' })(n || (n = p``)), _t = i.default.div.attrs({ className: 'maxWidth' })(o || (o = p`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 `));
-}), d.register('gp8Qp0', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return d;
     });
     var g = {
@@ -211,46 +167,32 @@ d.register('8hEt+', function(e, f) {
             plural: 'wires'
         }
     };
-}), d.register('idwWL', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _t;
     });
-    var g = d('gRbUn'),
-        h = d('NmQt6'),
-        i = d('22RS1');
-    d('O0Kav');
-    var j = d('MgONH'),
-        k = d('Eh2Wh'),
-        l = d('u4s09'),
-        m = d('Q6LQJ'),
-        n = d('y1oBc');
-    let o, p, q, r = a => a;
-    const {
-        useToken: s
-    } = h.default;
-    var _t = a => {
+    var g = d('.....'), h = d('.....'), i = d('.....');
+    d('.....');
+    var j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....');
+    let o, p, q, r = s => s;
+    const {useToken: s} = h.default;
+    var _t = u => {
         const {
-            token: {
-                borderRadius: u
-            }
-        } = s(), {
-            name: v,
-            description: w,
-            icon: x
-        } = a;
+                token: {borderRadius: v}
+            } = s(), {
+                name: w,
+                description: x,
+                icon: y
+            } = u;
         return (0, g.jsx)(_u, {
             onClick: () => {
-                (0, n.playClickSound)(), a.onClick();
+                (0, n.playClickSound)(), u.onClick();
             },
-            borderRadius: u,
+            borderRadius: v,
             children: (0, g.jsxs)(j.CenteredColumn, {
                 className: 'maxAll',
                 children: [
-                    (0, g.jsx)(_v, {
-                        children: (0, g.jsx)(_w, {
-                            src: x
-                        })
-                    }),
+                    (0, g.jsx)(_v, { children: (0, g.jsx)(_w, { src: y }) }),
                     (0, g.jsx)(i.default.Title, {
                         level: 3,
                         style: {
@@ -258,18 +200,14 @@ d.register('8hEt+', function(e, f) {
                             fontFamily: k.Fonts.FugazOne,
                             textTransform: 'uppercase'
                         },
-                        children: (0, m.CapitalizeFirstLetter)(v)
+                        children: (0, m.CapitalizeFirstLetter)(w)
                     }),
-                    (0, g.jsx)(i.default.Text, {
-                        children: w
-                    })
+                    (0, g.jsx)(i.default.Text, { children: x })
                 ]
             })
         });
     };
-    const _u = l.default.div.attrs({
-            className: 'maxAll'
-        })(o || (o = r`
+    const _u = l.default.div.attrs({ className: 'maxAll' })(o || (o = r`
   cursor: pointer;
   border-radius: ${ 0 }px;
   background: rgba(255, 255, 255, 0.1);
@@ -279,39 +217,25 @@ d.register('8hEt+', function(e, f) {
   &:hover {
     background: rgba(255, 255, 255, 0.25);
   }
-`), a => a.borderRadius),
-        _v = l.default.div(p || (p = r`
+`), v => v.borderRadius), _v = l.default.div(p || (p = r`
   margin-bottom: 5px;
-`)),
-        _w = l.default.img(q || (q = r`
+`)), _w = l.default.img(q || (q = r`
   height: 70px;
 `));
-}), d.register('OrEI9', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _t;
     });
-    var g = d('gRbUn'),
-        h = d('VNuyu'),
-        i = d('3t9ce'),
-        j = d('aevdF'),
-        k = d('22RS1'),
-        l = d('O0Kav'),
-        m = d('MgONH'),
-        n = d('Eh2Wh'),
-        o = d('NNVFc'),
-        p = d('JCtAz'),
-        q = d('Q6LQJ'),
-        r = d('gp8Qp0'),
-        s = d('UCu0V');
-    var _t = a => {
-        const [u, v] = l.useState(''), w = l.useRef(null), x = (0, s.isPlatformer)();
+    var g = d('.....'), h = d('.....'), i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....'), o = d('.....'), p = d('.....'), q = d('.....'), r = d('.....'), s = d('.....');
+    var _t = u => {
+        const [v, w] = l.useState(''), x = l.useRef(null), y = (0, s.isPlatformer)();
         return (0, g.jsx)(i.default, {
-            open: a.open,
-            onClose: a.close,
+            open: u.open,
+            onClose: u.close,
             width: 500,
-            afterOpenChange: a => {
-                var y;
-                a ? null == w || null === (y = w.current) || void 0 === y || y.focus() : v('');
+            afterOpenChange: z => {
+                var A;
+                z ? null == x || null === (A = x.current) || void 0 === A || A.focus() : w('');
             },
             destroyOnClose: !0,
             children: (0, g.jsxs)(m.CenteredColumn, {
@@ -326,7 +250,7 @@ d.register('8hEt+', function(e, f) {
                         className: 'allCaps',
                         children: (0, q.CapitalizeFirstLetter)(r.default.terrain.singular)
                     }),
-                    x ? null : (0, g.jsxs)(g.Fragment, {
+                    y ? null : (0, g.jsxs)(g.Fragment, {
                         children: [
                             (0, g.jsx)(o.default, {}),
                             ' ',
@@ -336,51 +260,37 @@ d.register('8hEt+', function(e, f) {
                     (0, g.jsx)(j.default.Search, {
                         size: 'large',
                         placeholder: `Search for ${ r.default.terrain.plural }...`,
-                        style: {
-                            marginBottom: 23
+                        style: { marginBottom: 23 },
+                        value: v,
+                        onChange: z => {
+                            w(z.target.value);
                         },
-                        value: u,
-                        onChange: a => {
-                            v(a.target.value);
-                        },
-                        ref: w
+                        ref: x
                     }),
-                    (0, g.jsx)(p.default, {
-                        searchQuery: u
-                    })
+                    (0, g.jsx)(p.default, { searchQuery: v })
                 ]
             })
         });
     };
-}), d.register('NNVFc', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _o;
     });
-    var g = d('gRbUn'),
-        h = d('P1KtI'),
-        i = d('22RS1'),
-        j = d('NU2gN');
-    d('O0Kav');
-    var k = d('gp8Qp0'),
-        l = d('K/2xB'),
-        m = d('MgONH'),
-        n = d('UCu0V');
+    var g = d('.....'), h = d('.....'), i = d('.....'), j = d('.....');
+    d('.....');
+    var k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....');
     var _o = (0, j.observer)(() => {
         const {
-            me: {
-                adding: {
-                    terrain: p
+                me: {
+                    adding: {terrain: p}
                 }
-            }
-        } = (0, l.default)(), q = p.buildTerrainAsWall, r = q => {
-            (0, n.isPlatformer)() || (p.buildTerrainAsWall = q);
-        };
+            } = (0, l.default)(), q = p.buildTerrainAsWall, r = s => {
+                (0, n.isPlatformer)() || (p.buildTerrainAsWall = s);
+            };
         return (0, g.jsxs)(m.Centered, {
             children: [
                 (0, g.jsxs)(i.default.Text, {
-                    style: {
-                        marginRight: 10
-                    },
+                    style: { marginRight: 10 },
                     children: [
                         'Place down ',
                         k.default.terrain.singular,
@@ -404,299 +314,217 @@ d.register('8hEt+', function(e, f) {
             ]
         });
     });
-}), d.register('JCtAz', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _s;
     });
-    var g = d('gRbUn'),
-        h = d('E2AMI26'),
-        i = d('O0Kav'),
-        j = d('G1RoA0'),
-        k = d('J8L14'),
-        l = d('K/2xB'),
-        m = d('bsEfc'),
-        n = d('ddhGF'),
-        o = d('0D1Z11'),
-        p = d('TCaC20'),
-        q = d('yhnQh'),
-        r = d('1xqJo0');
-    var _s = a => {
+    var g = d('.....'), h = d('.....'), i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....'), o = d('.....'), p = d('.....'), q = d('.....'), r = d('.....');
+    var _s = t => {
         const {
-            worldOptions: {
-                terrainOptions: t
-            }
-        } = (0, l.default)(), [u, v] = i.useState(-1), [w] = (0, j.useDebouncedValue)(a.searchQuery, 150), x = i.useMemo(() => {
-            var y;
-            const z = null === (y = null == w ? void 0 : w.trim()) || void 0 === y ? void 0 : y.toLowerCase();
-            if (!z && !(0, q.IsTutorial)())
-                return t.filter(y => (0, p.CanAddTerrain)(y.id));
-            const A = t.filter(y => y.name.toLowerCase().includes(z) && (0, p.CanAddTerrain)(y.id));
-            return (0, q.IsTutorial)() ? A.sort((y, z) => {
-                const B = r.TutorialConsts.topTerrain.indexOf(y.id),
-                    C = r.TutorialConsts.topTerrain.indexOf(z.id);
-                return -1 === B && -1 === C ? 0 : -1 === B ? 1 : -1 === C ? -1 : B - C;
-            }) : A;
-        }, [
-            t.length,
-            w
-        ]);
+                worldOptions: {terrainOptions: u}
+            } = (0, l.default)(), [v, w] = i.useState(-1), [x] = (0, j.useDebouncedValue)(t.searchQuery, 150), y = i.useMemo(() => {
+                var z;
+                const A = null === (z = null == x ? void 0 : x.trim()) || void 0 === z ? void 0 : z.toLowerCase();
+                if (!A && !(0, q.IsTutorial)())
+                    return u.filter(B => (0, p.CanAddTerrain)(B.id));
+                const B = u.filter(C => C.name.toLowerCase().includes(A) && (0, p.CanAddTerrain)(C.id));
+                return (0, q.IsTutorial)() ? B.sort((C, D) => {
+                    const E = r.TutorialConsts.topTerrain.indexOf(C.id), F = r.TutorialConsts.topTerrain.indexOf(D.id);
+                    return -1 === E && -1 === F ? 0 : -1 === E ? 1 : -1 === F ? -1 : E - F;
+                }) : B;
+            }, [
+                u.length,
+                x
+            ]);
         return (0, k.default)(b(n).Input.Keyboard.KeyCodes.UP, () => {
-            v(Math.max(0, u - 1));
-        }, [u]), (0, k.default)(b(n).Input.Keyboard.KeyCodes.DOWN, () => {
-            const y = x.length - 1;
-            v(Math.min(y, u + 1));
+            w(Math.max(0, v - 1));
+        }, [v]), (0, k.default)(b(n).Input.Keyboard.KeyCodes.DOWN, () => {
+            const z = y.length - 1;
+            w(Math.min(z, v + 1));
         }, [
-            x.length,
-            u
+            y.length,
+            v
         ]), i.useEffect(() => {
-            v(w ? 0 : -1);
-        }, [w]), x.length ? (0, g.jsx)(h.default, {
+            w(x ? 0 : -1);
+        }, [x]), y.length ? (0, g.jsx)(h.default, {
             direction: 'vertical',
             size: 12,
             className: 'maxWidth',
-            children: x.map((a, b) => (0, g.jsx)(m.default, {
-                option: a,
-                focused: u === b
-            }, a.id))
+            children: y.map((z, A) => (0, g.jsx)(m.default, {
+                option: z,
+                focused: v === A
+            }, z.id))
         }) : (0, g.jsx)(o.default, {});
     };
-}), d.register('G1RoA0', function(e, f) {
-    a(e.exports, 'useDebouncedValue', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'useDebouncedValue', function () {
         return _l;
     });
-    var g = d('O0Kav'),
-        h = d('odbD70'),
-        i = d('lKjHC'),
-        j = d('kyZNW'),
-        k = {
-            initializeWithNull: !1
-        },
-        _l = function(m, n, o) {
+    var g = d('.....'), h = d('.....'), i = d('.....'), j = d('.....'), k = { initializeWithNull: !1 }, _l = function (m, n, o) {
             void 0 === o && (o = {});
-            var p = Object.assign({}, k, o).initializeWithNull,
-                q = (0, g.useState)(p ? null : m),
-                r = q[0],
-                s = q[1],
-                t = (0, h.useDebounce)(s, n);
-            return (0, i.useDidMount)(function() {
+            var p = Object.assign({}, k, o).initializeWithNull, q = (0, g.useState)(p ? null : m), r = q[0], s = q[1], t = (0, h.useDebounce)(s, n);
+            return (0, i.useDidMount)(function () {
                 p && t(m);
-            }), (0, j.useDidUpdate)(function() {
+            }), (0, j.useDidUpdate)(function () {
                 t(m);
             }, [m]), [
                 r,
                 s
             ];
         };
-}), d.register('odbD70', function(e, f) {
-    a(e.exports, 'useDebounce', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'useDebounce', function () {
         return _i;
     });
-    var g = d('/hvd+0'),
-        h = d('O0Kav');
-
+    var g = d('.....'), h = d('.....');
     function _i(j, k, l) {
-        var m = (0, h.useCallback)(function(n) {
+        var m = (0, h.useCallback)(function (n) {
                 return b(g)(n, k, l);
             }, [
                 k,
                 l
-            ]),
-            n = (0, h.useRef)(m(j));
-        return (0, h.useEffect)(function() {
-            n.current = m(j);
+            ]), n = (0, h.useRef)(m(j));
+        return (0, h.useEffect)(function () {
+            _i.current = m(j);
         }, [
             j,
             m
-        ]), n.current;
+        ]), _i.current;
     }
-}), d.register('/hvd+0', function(e, f) {
-    var g = /^\s+|\s+$/g,
-        h = /^[-+]0x[0-9a-f]+$/i,
-        i = /^0b[01]+$/i,
-        j = /^0o[0-7]+$/i,
-        k = parseInt,
-        l = 'object' == typeof c && c && c.Object === Object && c,
-        m = 'object' == typeof self && self && self.Object === Object && self,
-        n = l || m || Function('return this')(),
-        o = Object.prototype.toString,
-        p = Math.max,
-        q = Math.min,
-        r = function() {
+}), d.register('.....', function (e, f) {
+    var g = /^\s+|\s+$/g, h = /^[-+]0x[0-9a-f]+$/i, i = /^0b[01]+$/i, j = /^0o[0-7]+$/i, k = parseInt, l = 'object' == typeof c && c && c.Object === Object && c, m = 'object' == typeof self && self && self.Object === Object && self, n = l || m || Function('return this')(), o = Object.prototype.toString, p = Math.max, q = Math.min, r = function () {
             return n.Date.now();
         };
-
     function s(t) {
         var u = typeof t;
         return !!t && ('object' == u || 'function' == u);
     }
-
-    function t(u) {
-        if ('number' == typeof u)
-            return u;
-        if (function(v) {
-                return 'symbol' == typeof v || function(w) {
-                    return !!w && 'object' == typeof w;
-                }(v) && '[object Symbol]' == o.call(v);
-            }(u))
+    function u(v) {
+        if ('number' == typeof v)
+            return v;
+        if (function (w) {
+                return 'symbol' == typeof w || function (x) {
+                    return !!x && 'object' == typeof x;
+                }(w) && '[object Symbol]' == o.call(w);
+            }(v))
             return NaN;
-        if (s(u)) {
-            var v = 'function' == typeof u.valueOf ? u.valueOf() : u;
-            u = s(v) ? v + '' : v;
+        if (s(v)) {
+            var w = 'function' == typeof v.valueOf ? v.valueOf() : v;
+            v = s(w) ? w + '' : w;
         }
-        if ('string' != typeof u)
-            return 0 === u ? u : +u;
-        u = u.replace(g, '');
-        var v = i.test(u);
-        return v || j.test(u) ? k(u.slice(2), v ? 2 : 8) : h.test(u) ? NaN : +u;
+        if ('string' != typeof v)
+            return 0 === v ? v : +v;
+        v = v.replace(g, '');
+        var x = i.test(v);
+        return x || j.test(v) ? k(v.slice(2), x ? 2 : 8) : h.test(v) ? NaN : +v;
     }
-    e.exports = function(u, v, w) {
-        var x, y, z, A, B, C, D = 0,
-            E = !1,
-            F = !1,
-            G = !0;
-        if ('function' != typeof u)
+    e.exports = function (x, y, z) {
+        var A, B, C, D, E, F, G = 0, H = !1, I = !1, J = !0;
+        if ('function' != typeof x)
             throw new TypeError('Expected a function');
-
-        function H(I) {
-            var J = x,
-                K = y;
-            return x = y = void 0, D = I, A = u.apply(K, J);
+        function K(L) {
+            var M = A, N = B;
+            return A = B = void 0, G = L, D = x.apply(N, M);
         }
-
-        function I(J) {
-            return D = J, B = setTimeout(_K, v), E ? H(J) : A;
+        function N(O) {
+            return G = O, E = setTimeout(_Q, y), H ? K(O) : D;
         }
-
-        function J(K) {
-            var L = K - C;
-            return void 0 === C || L >= v || L < 0 || F && K - D >= z;
+        function O(P) {
+            var Q = P - F;
+            return void 0 === F || Q >= y || Q < 0 || I && P - G >= N;
         }
-
-        function _K() {
-            var L = r();
-            if (J(L))
-                return _L(L);
-            B = setTimeout(_K, function(M) {
-                var N = v - (M - C);
-                return F ? q(N, z - (M - D)) : N;
-            }(L));
+        function _Q() {
+            var R = r();
+            if (O(R))
+                return _S(R);
+            E = setTimeout(_Q, function (S) {
+                var T = y - (S - F);
+                return I ? q(T, N - (S - G)) : T;
+            }(R));
         }
-
-        function _L(M) {
-            return B = void 0, G && x ? H(M) : (x = y = void 0, A);
+        function _S(T) {
+            return E = void 0, J && A ? K(T) : (A = B = void 0, D);
         }
-
-        function M() {
-            var N = r(),
-                O = J(N);
-            if (x = arguments, y = this, C = N, O) {
-                if (void 0 === B)
-                    return I(C);
-                if (F)
-                    return B = setTimeout(_K, v), H(C);
+        function T() {
+            var U = r(), V = O(U);
+            if (A = arguments, B = this, F = U, V) {
+                if (void 0 === E)
+                    return N(F);
+                if (I)
+                    return E = setTimeout(_Q, y), K(F);
             }
-            return void 0 === B && (B = setTimeout(_K, v)), A;
+            return void 0 === E && (E = setTimeout(_Q, y)), D;
         }
-        return v = t(v) || 0, s(w) && (E = !!w.leading, z = (F = 'maxWait' in w) ? p(t(w.maxWait) || 0, v) : z, G = 'trailing' in w ? !!w.trailing : G), M.cancel = function() {
-            void 0 !== B && clearTimeout(B), D = 0, x = C = y = B = void 0;
-        }, M.flush = function() {
-            return void 0 === B ? A : _L(r());
-        }, M;
+        return y = u(y) || 0, s(V) && (H = !!V.leading, N = (I = 'maxWait' in V) ? p(u(V.maxWait) || 0, y) : N, J = 'trailing' in V ? !!V.trailing : J), T.cancel = function () {
+            void 0 !== E && clearTimeout(E), G = 0, A = F = B = E = void 0;
+        }, T.flush = function () {
+            return void 0 === E ? D : _S(r());
+        }, T;
     };
-}), d.register('kyZNW', function(e, f) {
-    a(e.exports, 'useDidUpdate', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'useDidUpdate', function () {
         return _h;
     });
-    var g = d('O0Kav');
-
+    var g = d('.....');
     function _h(i, j) {
         var k = (0, g.useRef)(!1);
-        void 0 === j || Array.isArray(j) ? Array.isArray(j) && 0 === j.length && console.warn('Using [] as the second argument makes useDidUpdate a noop. The second argument should either be `undefined` or an array of length greater than 0.') : j = [j], (0, g.useEffect)(function() {
+        void 0 === j || Array.isArray(j) ? Array.isArray(j) && 0 === j.length && console.warn('Using [] as the second argument makes useDidUpdate a noop. The second argument should either be `undefined` or an array of length greater than 0.') : j = [j], (0, g.useEffect)(function () {
             k.current ? i() : k.current = !0;
         }, j);
     }
-}), d.register('bsEfc', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _H;
     });
-    var g = d('gRbUn'),
-        h = d('O0Kav'),
-        i = d('u4s09'),
-        j = d('MgONH'),
-        k = d('NmQt6'),
-        l = d('22RS1'),
-        m = d('Eh2Wh'),
-        n = d('fI6of'),
-        o = d('t0eqt'),
-        p = d('LihP5'),
-        q = d('SxihY'),
-        r = d('J8L14'),
-        s = d('ddhGF'),
-        t = d('y1oBc'),
-        u = d('qIlyp'),
-        v = d('yhnQh'),
-        w = d('4Bmhg'),
-        x = d('mTbw/'),
-        y = d('B/GC10'),
-        z = d('yQDvE');
-    let A, B, C, D, E, F = a => a;
-    const {
-        useToken: G
-    } = k.default;
-    var _H = a => {
+    var g = d('.....'), h = d('.....'), i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....'), o = d('.....'), p = d('.....'), q = d('.....'), r = d('.....'), s = d('.....'), t = d('.....'), u = d('.....'), v = d('.....'), w = d('.....'), x = d('.....'), y = d('.....'), z = d('.....');
+    let A, B, C, D, E, F = G => G;
+    const {useToken: G} = k.default;
+    var _H = I => {
         const {
-            id: I,
-            name: J,
-            previewUrl: K,
-            seasonTicketRequired: L
-        } = a.option, M = h.useRef(null), {
-            token: {
-                borderRadius: N
-            }
-        } = G(), O = L && !(0, y.OwnsSeasonTicket)(), P = a => {
-            O || (n.default.me.adding.terrain.currentlySelectedTerrain = I, n.default.me.adding.mode = o.AddingMode.terrain, (0, p.default)(q.default.adding), (0, v.IsTutorial)() && (0, w.default)(x.AddScreen.home), (0, u.EmitTutorialEvent)({
-                event: u.TutorialEventName.SELECT_TERRAIN_TO_ADD,
-                terrainId: I
-            }), a && a());
-        };
+                id: J,
+                name: K,
+                previewUrl: L,
+                seasonTicketRequired: M
+            } = I.option, N = h.useRef(null), {
+                token: {borderRadius: O}
+            } = G(), P = M && !(0, y.OwnsSeasonTicket)(), Q = R => {
+                P || (n.default.me.adding.terrain.currentlySelectedTerrain = J, n.default.me.adding.mode = o.AddingMode.terrain, (0, p.default)(q.default.adding), (0, v.IsTutorial)() && (0, w.default)(x.AddScreen.home), (0, u.EmitTutorialEvent)({
+                    event: u.TutorialEventName.SELECT_TERRAIN_TO_ADD,
+                    terrainId: J
+                }), R && R());
+            };
         return (0, r.default)(b(s).Input.Keyboard.KeyCodes.ENTER, () => {
-            a.focused && P();
+            I.focused && Q();
         }, [
-            a.focused,
-            P
+            I.focused,
+            Q
         ]), h.useEffect(() => {
-            var Q;
-            a.focused && (null === (Q = M.current) || void 0 === Q || Q.scrollIntoView({
+            var R;
+            I.focused && (null === (R = N.current) || void 0 === R || R.scrollIntoView({
                 behavior: 'smooth',
                 block: 'center'
             }));
-        }, [a.focused]), (0, g.jsxs)(_I, {
-            borderRadius: N,
-            focused: a.focused,
+        }, [I.focused]), (0, g.jsxs)(_I, {
+            borderRadius: O,
+            focused: I.focused,
             onClick: () => {
-                P(() => {
+                Q(() => {
                     (0, t.playClickSound)();
                 });
             },
-            ref: M,
+            ref: N,
             children: [
-                (0, g.jsx)(_K, {
-                    src: K
-                }),
+                (0, g.jsx)(_K, { src: L }),
                 (0, g.jsxs)(_J, {
                     children: [
                         (0, g.jsx)(_L, {
                             level: 5,
                             className: 'allCaps',
-                            style: {
-                                fontFamily: m.Fonts.FugazOne
-                            },
-                            children: J
+                            style: { fontFamily: m.Fonts.FugazOne },
+                            children: K
                         }),
-                        L ? (0, g.jsx)('div', {
-                            style: {
-                                marginTop: 2
-                            },
+                        M ? (0, g.jsx)('div', {
+                            style: { marginTop: 2 },
                             children: (0, g.jsx)(z.SeasonTicketExclusive, {})
                         }) : null
                     ]
@@ -715,61 +543,52 @@ d.register('8hEt+', function(e, f) {
   &:hover {
     background: rgba(255, 255, 255, 0.25);
   }
-`), a => a.borderRadius, a => a.focused ? '#ffca28' : 'rgba(255, 255, 255, 0.1)'),
-        _J = (i.default.div(B || (B = F`
+`), J => J.borderRadius, J => J.focused ? '#ffca28' : 'rgba(255, 255, 255, 0.1)'), _J = (i.default.div(B || (B = F`
   display: flex;
   align-items: center;
 `)), i.default.div(C || (C = F`
   display: flex;
   flex-direction: column;
-`))),
-        _K = i.default.img(D || (D = F`
+`))), _K = i.default.img(D || (D = F`
   height: 54px;
   border-radius: 3px;
   border: 2px solid rgba(255, 255, 255, 0.25);
   margin-right: 15px;
-`)),
-        _L = (0, i.default)(l.default.Title)(E || (E = F`
+`)), _L = (0, i.default)(l.default.Title)(E || (E = F`
   margin-bottom: 0 !important;
 `));
-}), d.register('4Bmhg', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _j;
     });
-    var g = d('qIlyp'),
-        h = d('fI6of'),
-        i = d('mTbw/');
-    var _j = a => {
-        a !== i.AddScreen.home && (0, g.EmitTutorialEvent)({
+    var g = d('.....'), h = d('.....'), i = d('.....');
+    var _j = k => {
+        k !== i.AddScreen.home && (0, g.EmitTutorialEvent)({
             event: g.TutorialEventName.OPEN_ADD_SUBMENU,
-            menu: a
-        }), h.default.gui.none.addMenu.screen = a;
+            menu: k
+        }), h.default.gui.none.addMenu.screen = k;
     };
-}), d.register('B/GC10', function(e, f) {
-    a(e.exports, 'OwnsSeasonTicket', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'OwnsSeasonTicket', function () {
         return _h;
     });
-    var g = d('quE27');
+    var g = d('.....');
     const _h = () => {
         var i, j, k;
         return null !== (k = null === (i = (0, g.getUser)()) || void 0 === i || null === (j = i.seasonTicket) || void 0 === j ? void 0 : j.active) && void 0 !== k && k;
     };
-}), d.register('yQDvE', function(e, f) {
-    a(e.exports, 'SeasonTicketExclusive', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'SeasonTicketExclusive', function () {
         return _l;
     });
-    var g = d('gRbUn'),
-        h = d('u4s09'),
-        i = d('hupyL1'),
-        j = d('Eh2Wh');
+    var g = d('.....'), h = d('.....'), i = d('.....'), j = d('.....');
     let k;
     const _l = () => (0, g.jsxs)(_m, {
             children: [
                 i.SeasonTicketName.name,
                 ' Exclusive'
             ]
-        }),
-        _m = h.default.div(k || (k = (a => a)`
+        }), _m = h.default.div(k || (k = (n => n)`
   color: rgb(218, 165, 32);
   background: linear-gradient(
     45deg,
@@ -791,60 +610,48 @@ d.register('8hEt+', function(e, f) {
   font-size: 12px;
   line-height: 1;
 `), j.Fonts.FugazOne);
-}), d.register('0D1Z11', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _i;
     });
-    var g = d('gRbUn'),
-        h = d('22RS1');
-    d('O0Kav');
+    var g = d('.....'), h = d('.....');
+    d('.....');
     var _i = () => (0, g.jsx)(h.default.Text, {
         italic: !0,
         children: 'No results found. Try a different search.'
     });
-}), d.register('TCaC20', function(e, f) {
-    a(e.exports, 'CanAddTerrain', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'CanAddTerrain', function () {
         return _i;
     });
-    var g = d('fI6of'),
-        h = d('PlfjJ');
-    const _i = a => {
-        var j;
-        const k = g.default.worldOptions.terrainOptions.find(j => j.id === a);
-        if (!k)
+    var g = d('.....'), h = d('.....');
+    const _i = j => {
+        var k;
+        const l = g.default.worldOptions.terrainOptions.find(m => m.id === j);
+        if (!l)
             return !1;
-        if (null === (j = k.blockedMapStyles) || void 0 === j ? void 0 : j.length) {
-            const l = g.default.session.mapStyle;
-            if (k.blockedMapStyles.includes(l))
+        if (null === (k = l.blockedMapStyles) || void 0 === k ? void 0 : k.length) {
+            const m = g.default.session.mapStyle;
+            if (l.blockedMapStyles.includes(m))
                 return !1;
         }
-        const l = k.minimumRoleLevel,
-            m = k.maximumRoleLevel;
-        return (0, h.IsRoleLevelBetween)(l, m);
+        const n = l.minimumRoleLevel, o = l.maximumRoleLevel;
+        return (0, h.IsRoleLevelBetween)(n, o);
     };
-}), d.register('GxWik', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _q;
     });
-    var g = d('gRbUn'),
-        h = d('3t9ce'),
-        i = d('aevdF'),
-        j = d('22RS1'),
-        k = d('O0Kav'),
-        l = d('MgONH'),
-        m = d('Eh2Wh'),
-        n = d('fvztQ'),
-        o = d('Q6LQJ'),
-        p = d('gp8Qp0');
-    var _q = a => {
-        const [r, s] = k.useState(''), t = k.useRef(null);
+    var g = d('.....'), h = d('.....'), i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....'), o = d('.....'), p = d('.....');
+    var _q = r => {
+        const [s, t] = k.useState(''), u = k.useRef(null);
         return (0, g.jsx)(h.default, {
-            open: a.open,
-            onClose: a.close,
+            open: r.open,
+            onClose: r.close,
             width: 550,
-            afterOpenChange: a => {
-                var u;
-                a ? null == t || null === (u = t.current) || void 0 === u || u.focus() : s('');
+            afterOpenChange: v => {
+                var w;
+                v ? null == u || null === (w = u.current) || void 0 === w || w.focus() : t('');
             },
             destroyOnClose: !0,
             children: (0, g.jsxs)(l.CenteredColumn, {
@@ -862,178 +669,120 @@ d.register('8hEt+', function(e, f) {
                     (0, g.jsx)(i.default.Search, {
                         size: 'large',
                         placeholder: `Search for ${ p.default.prop.plural }...`,
-                        style: {
-                            marginBottom: 23
+                        style: { marginBottom: 23 },
+                        value: s,
+                        onChange: v => {
+                            t(v.target.value);
                         },
-                        value: r,
-                        onChange: a => {
-                            s(a.target.value);
-                        },
-                        ref: t
+                        ref: u
                     }),
-                    (0, g.jsx)(n.default, {
-                        searchQuery: r
-                    })
+                    (0, g.jsx)(n.default, { searchQuery: s })
                 ]
             })
         });
     };
-}), d.register('fvztQ', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _w;
     });
-    var g = d('gRbUn'),
-        h = d('6jmvl'),
-        i = d('O0Kav'),
-        j = d('G1RoA0'),
-        k = d('lKjHC'),
-        l = d('ywRRc'),
-        m = d('K/2xB'),
-        n = d('0v55W'),
-        o = d('sfdLF'),
-        p = d('u4s09'),
-        q = d('J8L14'),
-        r = d('0D1Z10'),
-        s = d('yhnQh'),
-        t = d('1xqJo0'),
-        u = d('PlfjJ');
+    var g = d('.....'), h = d('.....'), i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....'), o = d('.....'), p = d('.....'), q = d('.....'), r = d('.....'), s = d('.....'), t = d('.....'), u = d('.....');
     let v;
-    var _w = (0, h.observer)(a => {
-        const {
-            worldOptions: x
-        } = (0, m.default)(), [y, z] = i.useState(-1), [A] = (0, j.useDebouncedValue)(a.searchQuery, 200), B = i.useMemo(() => {
-            var C, D;
-            const E = x.propsOptions.filter(a => (0, u.IsRoleLevelBetween)(a.minimumRoleLevel)),
-                F = null === (C = null === (D = a.searchQuery) || void 0 === D ? void 0 : D.trim()) || void 0 === C ? void 0 : C.toLowerCase();
-            if (!F && !(0, s.IsTutorial)())
-                return E;
-            const G = E.filter(a => a.name.toLowerCase().includes(F));
-            return (0, s.IsTutorial)() ? G.sort((a, x) => {
-                const H = t.TutorialConsts.topProps.indexOf(a.id),
-                    I = t.TutorialConsts.topProps.indexOf(x.id);
-                return -1 === H && -1 === I ? 0 : -1 === H ? 1 : -1 === I ? -1 : H - I;
-            }) : G;
-        }, [
-            x.propsOptions.length,
-            A
-        ]);
+    var _w = (0, h.observer)(x => {
+        const {worldOptions: y} = (0, m.default)(), [z, A] = i.useState(-1), [B] = (0, j.useDebouncedValue)(x.searchQuery, 200), C = i.useMemo(() => {
+                var D, E;
+                const F = y.propsOptions.filter(G => (0, u.IsRoleLevelBetween)(G.minimumRoleLevel)), G = null === (D = null === (E = x.searchQuery) || void 0 === E ? void 0 : E.trim()) || void 0 === D ? void 0 : D.toLowerCase();
+                if (!G && !(0, s.IsTutorial)())
+                    return F;
+                const H = F.filter(I => I.name.toLowerCase().includes(G));
+                return (0, s.IsTutorial)() ? H.sort((I, J) => {
+                    const K = t.TutorialConsts.topProps.indexOf(I.id), L = t.TutorialConsts.topProps.indexOf(J.id);
+                    return -1 === K && -1 === L ? 0 : -1 === K ? 1 : -1 === L ? -1 : K - L;
+                }) : H;
+            }, [
+                y.propsOptions.length,
+                B
+            ]);
         (0, k.useDidMount)(() => {
-            x.requestedAllProps || (x.requestedAllProps = !0, (0, n.default)(l.default.requestAllProps));
+            y.requestedAllProps || (y.requestedAllProps = !0, (0, n.default)(l.default.requestAllProps));
         });
-        const C = i.useCallback(a => {
-            const D = Math.max(0, Math.min(B.length - 1, y + a));
-            z(D);
+        const D = i.useCallback(E => {
+            const F = Math.max(0, Math.min(C.length - 1, z + E));
+            A(F);
         }, [
-            B.length,
-            y
+            C.length,
+            z
         ]);
         return (0, q.default)(Phaser.Input.Keyboard.KeyCodes.UP, () => {
-            C(-2);
-        }, [C]), (0, q.default)(Phaser.Input.Keyboard.KeyCodes.DOWN, () => {
-            C(2);
-        }, [C]), (0, q.default)(Phaser.Input.Keyboard.KeyCodes.LEFT, () => {
-            C(-1);
-        }, [C]), (0, q.default)(Phaser.Input.Keyboard.KeyCodes.RIGHT, () => {
-            C(1);
-        }, [C]), i.useEffect(() => {
-            z(A ? 0 : -1);
-        }, [A]), x.hasAllProps ? B.length ? (0, g.jsx)(_x, {
-            children: B.map((a, x) => (0, g.jsx)(o.default, {
-                focused: x === y,
-                option: a
-            }, a.id + '-option'))
+            D(-2);
+        }, [D]), (0, q.default)(Phaser.Input.Keyboard.KeyCodes.DOWN, () => {
+            D(2);
+        }, [D]), (0, q.default)(Phaser.Input.Keyboard.KeyCodes.LEFT, () => {
+            D(-1);
+        }, [D]), (0, q.default)(Phaser.Input.Keyboard.KeyCodes.RIGHT, () => {
+            D(1);
+        }, [D]), i.useEffect(() => {
+            A(B ? 0 : -1);
+        }, [B]), y.hasAllProps ? C.length ? (0, g.jsx)(_x, {
+            children: C.map((E, F) => (0, g.jsx)(o.default, {
+                focused: F === z,
+                option: E
+            }, E.id + '-option'))
         }) : (0, g.jsx)(r.default, {}) : null;
     });
-    const _x = p.default.div.attrs({
-        className: 'maxWidth'
-    })(v || (v = (a => a)`
+    const _x = p.default.div.attrs({ className: 'maxWidth' })(v || (v = (y => y)`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 10px;
   overflow: hidden;
 `));
-}), d.register('sfdLF', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _J;
     });
-    var g = d('gRbUn'),
-        h = d('O0Kav'),
-        i = d('u4s09'),
-        j = d('MgONH'),
-        k = d('NmQt6'),
-        l = d('22RS1'),
-        m = d('Eh2Wh'),
-        n = d('UaUBz0'),
-        o = (k = d('NmQt6'), l = d('22RS1'), d('J8L14')),
-        p = d('ddhGF'),
-        q = d('2M24D'),
-        r = d('fI6of'),
-        s = d('OFuf70'),
-        t = d('LihP5'),
-        u = d('SxihY'),
-        v = d('t0eqt'),
-        w = d('y1oBc'),
-        x = d('qIlyp'),
-        y = d('yhnQh'),
-        z = d('4Bmhg'),
-        A = d('mTbw/'),
-        B = d('B/GC10'),
-        C = d('yQDvE');
-    let D, E, F, G, H = a => a;
-    const {
-        useToken: I
-    } = k.default;
-    var _J = a => {
+    var g = d('.....'), h = d('.....'), i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....'), o = (k = d('.....'), l = d('.....'), d('.....')), p = d('.....'), q = d('.....'), r = d('.....'), s = d('.....'), t = d('.....'), u = d('.....'), v = d('.....'), w = d('.....'), x = d('.....'), y = d('.....'), z = d('.....'), A = d('.....'), B = d('.....'), C = d('.....');
+    let D, E, F, G, H = I => I;
+    const {useToken: I} = k.default;
+    var _J = K => {
         const {
-            id: K,
-            name: L,
-            imageUrl: M,
-            seasonTicketRequired: N
-        } = a.option, O = h.useRef(null), P = b(q)(O), {
-            token: {
-                borderRadius: Q
-            }
-        } = I(), R = N && !(0, B.OwnsSeasonTicket)(), S = a => {
-            R || (r.default.me.adding.devices.selectedDeviceType = s.default.prop, r.default.me.adding.devices.currentlySelectedProp = K, r.default.me.adding.mode = v.AddingMode.device, (0, t.default)(u.default.adding), (0, y.IsTutorial)() && (0, z.default)(A.AddScreen.home), (0, x.EmitTutorialEvent)({
-                event: x.TutorialEventName.SELECT_PROP_TO_ADD,
-                propId: K
-            }), a && a());
-        };
+                id: L,
+                name: M,
+                imageUrl: N,
+                seasonTicketRequired: O
+            } = K.option, P = h.useRef(null), Q = b(q)(P), {
+                token: {borderRadius: R}
+            } = I(), S = O && !(0, B.OwnsSeasonTicket)(), T = U => {
+                S || (r.default.me.adding.devices.selectedDeviceType = s.default.prop, r.default.me.adding.devices.currentlySelectedProp = L, r.default.me.adding.mode = v.AddingMode.device, (0, t.default)(u.default.adding), (0, y.IsTutorial)() && (0, z.default)(A.AddScreen.home), (0, x.EmitTutorialEvent)({
+                    event: x.TutorialEventName.SELECT_PROP_TO_ADD,
+                    propId: L
+                }), U && U());
+            };
         return (0, o.default)(b(p).Input.Keyboard.KeyCodes.ENTER, () => {
-            a.focused && S();
+            K.focused && T();
         }, [
-            a.focused,
-            S
+            K.focused,
+            T
         ]), h.useEffect(() => {
-            var T;
-            a.focused && (null === (T = O.current) || void 0 === T || T.scrollIntoView({
-                block: 'center'
-            }));
-        }, [a.focused]), (0, g.jsx)(_K, {
-            ref: O,
+            var U;
+            K.focused && (null === (U = P.current) || void 0 === U || U.scrollIntoView({ block: 'center' }));
+        }, [K.focused]), (0, g.jsx)(_K, {
+            ref: P,
             onClick: () => {
-                S(() => {
+                T(() => {
                     (0, w.playClickSound)();
                 });
             },
-            focused: a.focused,
-            borderRadius: Q,
-            children: P ? (0, g.jsxs)(g.Fragment, {
+            focused: K.focused,
+            borderRadius: R,
+            children: Q ? (0, g.jsxs)(g.Fragment, {
                 children: [
-                    (0, g.jsx)(_L, {
-                        children: (0, g.jsx)(_M, {
-                            src: (0, n.default)(M)
-                        })
-                    }),
+                    (0, g.jsx)(_L, { children: (0, g.jsx)(_M, { src: (0, n.default)(N) }) }),
                     (0, g.jsx)(_N, {
                         level: 5,
                         className: 'allCaps',
-                        style: {
-                            fontFamily: m.Fonts.FugazOne
-                        },
-                        children: L
+                        style: { fontFamily: m.Fonts.FugazOne },
+                        children: M
                     }),
-                    N ? (0, g.jsx)(C.SeasonTicketExclusive, {}) : null
+                    O ? (0, g.jsx)(C.SeasonTicketExclusive, {}) : null
                 ]
             }) : null
         });
@@ -1052,85 +801,63 @@ d.register('8hEt+', function(e, f) {
   &:hover {
     background: rgba(255, 255, 255, 0.25);
   }
-`), a => a.borderRadius, a => a.focused ? '#ffca28' : 'rgba(255, 255, 255, 0.1)'),
-        _L = (0, i.default)(j.Centered)(E || (E = H`
+`), L => L.borderRadius, L => L.focused ? '#ffca28' : 'rgba(255, 255, 255, 0.1)'), _L = (0, i.default)(j.Centered)(E || (E = H`
   width: 120px;
   height: 120px;
   padding: 10px;
-`)),
-        _M = i.default.img.attrs({
-            draggable: !1
-        })(F || (F = H`
+`)), _M = i.default.img.attrs({ draggable: !1 })(F || (F = H`
   max-height: 100%;
   max-width: 100%;
-`)),
-        _N = (0, i.default)(l.default.Title).attrs({
-            className: 'maxWidth'
-        })(G || (G = H`
+`)), _N = (0, i.default)(l.default.Title).attrs({ className: 'maxWidth' })(G || (G = H`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
 `));
-}), d.register('2M24D', function(e, f) {
-    Object.defineProperty(e.exports, '__esModule', {
-        value: !0
-    });
-    var g = d('O0Kav');
-    e.exports.default = function(h) {
+}), d.register('.....', function (e, f) {
+    Object.defineProperty(e.exports, '__esModule', { value: !0 });
+    var g = d('.....');
+    e.exports.default = function (h) {
         const [i, j] = (0, g.useState)(!1), k = (0, g.useMemo)(() => new IntersectionObserver(([l]) => j(l.isIntersecting)), []);
-        return (0, g.useEffect)(() => (k.observe(l.current), () => {
+        return (0, g.useEffect)(() => (k.observe(h.current), () => {
             k.disconnect();
         }), []), (0, g.useEffect)(() => {
-            i && k.unobserve(l.current);
+            i && k.unobserve(h.current);
         }, [
             i,
             k,
-            l
+            h
         ]), i;
     };
-}), d.register('0D1Z10', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _i;
     });
-    var g = d('gRbUn'),
-        h = d('22RS1');
-    d('O0Kav');
+    var g = d('.....'), h = d('.....');
+    d('.....');
     var _i = () => (0, g.jsx)(h.default.Text, {
         italic: !0,
         children: 'No results found. Try a different search.'
     });
-}), d.register('C+9gN', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _t;
     });
-    var g = d('gRbUn'),
-        h = d('VNuyu'),
-        i = d('3t9ce'),
-        j = d('aevdF'),
-        k = d('22RS1'),
-        l = d('O0Kav'),
-        m = d('MgONH'),
-        n = d('Eh2Wh'),
-        o = d('gp8Qp0'),
-        p = d('Q6LQJ'),
-        q = d('ICMZt'),
-        r = d('nKFS+'),
-        s = d('yhnQh');
-    var _t = a => {
-        const [u, v] = l.useState(''), [w, x] = l.useState(null), y = l.useRef(null), z = l.useCallback(() => {
-            w || a.close();
-        }, [
-            w,
-            a.close
-        ]);
+    var g = d('.....'), h = d('.....'), i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....'), o = d('.....'), p = d('.....'), q = d('.....'), r = d('.....'), s = d('.....');
+    var _t = u => {
+        const [v, w] = l.useState(''), [x, y] = l.useState(null), z = l.useRef(null), A = l.useCallback(() => {
+                x || u.close();
+            }, [
+                x,
+                u.close
+            ]);
         return (0, g.jsxs)(i.default, {
-            open: a.open,
-            onClose: z,
+            open: u.open,
+            onClose: A,
             width: 680,
-            afterOpenChange: a => {
-                var A;
-                a ? null == y || null === (A = y.current) || void 0 === A || A.focus() : v('');
+            afterOpenChange: B => {
+                var C;
+                B ? null == z || null === (C = z.current) || void 0 === C || C.focus() : w('');
             },
             destroyOnClose: !0,
             children: [
@@ -1149,20 +876,18 @@ d.register('8hEt+', function(e, f) {
                         (0, g.jsx)(j.default.Search, {
                             size: 'large',
                             placeholder: `Search for ${ o.default.device.plural }...`,
-                            style: {
-                                marginBottom: 23
+                            style: { marginBottom: 23 },
+                            value: v,
+                            onChange: B => {
+                                w(B.target.value);
                             },
-                            value: u,
-                            onChange: a => {
-                                v(a.target.value);
-                            },
-                            ref: y
+                            ref: z
                         }),
-                        u || (0, s.IsTutorial)() ? null : (0, g.jsxs)(g.Fragment, {
+                        v || (0, s.IsTutorial)() ? null : (0, g.jsxs)(g.Fragment, {
                             children: [
                                 (0, g.jsx)(r.default, {
-                                    openCollectionName: w,
-                                    open: x
+                                    openCollectionName: x,
+                                    open: y
                                 }),
                                 (0, g.jsx)(h.default, {
                                     children: (0, g.jsxs)(k.default.Text, {
@@ -1178,210 +903,151 @@ d.register('8hEt+', function(e, f) {
                     ]
                 }),
                 (0, g.jsx)(q.default, {
-                    searchQuery: u,
-                    blockKeyboardNavigation: !!w
+                    searchQuery: v,
+                    blockKeyboardNavigation: !!x
                 })
             ]
         });
     };
-}), d.register('ICMZt', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _x;
     });
-    var g = d('gRbUn'),
-        h = d('E2AMI26'),
-        i = d('NU2gN'),
-        j = d('O0Kav'),
-        k = d('1wWco'),
-        l = d('OFuf70'),
-        m = d('J8L14'),
-        n = d('K/2xB'),
-        o = d('cNdSP'),
-        p = d('ddhGF'),
-        q = d('0D1Z1'),
-        r = d('G1RoA0'),
-        s = d('fQ/Z/'),
-        t = d('yhnQh'),
-        u = d('1xqJo0'),
-        v = d('cv4Ym');
+    var g = d('.....'), h = d('.....'), i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....'), o = d('.....'), p = d('.....'), q = d('.....'), r = d('.....'), s = d('.....'), t = d('.....'), u = d('.....'), v = d('.....');
     const w = [
         ...k.default,
         l.default.prop,
         l.default.mapOptions
     ];
-    var _x = (0, i.observer)(a => {
-        const [y, z] = j.useState(-1), {
-            worldOptions: {
-                deviceOptions: A
-            }
-        } = (0, n.default)(), [B] = (0, r.useDebouncedValue)(a.searchQuery, 150), C = j.useMemo(() => {
-            const D = null == B ? void 0 : B.toLowerCase(),
-                E = A.filter(a => !w.includes(a.id)).filter(a => (0, s.CanAddDeviceType)(a.id, void 0)).filter(a => (0, v.CanAddDeviceForCurrentMapStyle)({
-                    deviceTypeId: a.id
-                })).filter(D => !a.list || a.list.includes(D.id)).filter(a => {
-                    var F, G;
-                    return !D || (a.name.toLowerCase().includes(D) || (null === (F = null === (G = a.description) || void 0 === G ? void 0 : G.toLowerCase()) || void 0 === F ? void 0 : F.includes(D)));
-                }).sort((a, E) => {
-                    const F = a.name.toLowerCase().includes(D),
-                        G = E.name.toLowerCase().includes(D);
-                    return F && !G ? -1 : !F && G ? 1 : a.name.length < E.name.length ? -1 : a.name.length > E.name.length ? 1 : 0;
-                });
-            if ((0, t.IsTutorial)())
-                return E.sort((a, D) => {
-                    const F = u.TutorialConsts.topDevices.indexOf(a.id),
-                        G = u.TutorialConsts.topDevices.indexOf(D.id);
-                    return -1 === F && -1 === G ? 0 : -1 === F ? 1 : -1 === G ? -1 : F - G;
-                });
-            if (a.list) {
-                const F = [];
-                return a.list.forEach(a => {
-                    const G = E.find(F => F.id === a);
-                    G && F.push(G);
-                }), F;
-            }
-            return E;
-        }, [
-            A.length,
-            B,
-            a.list
-        ]);
+    var _x = (0, i.observer)(y => {
+        const [z, A] = j.useState(-1), {
+                worldOptions: {deviceOptions: B}
+            } = (0, n.default)(), [C] = (0, r.useDebouncedValue)(y.searchQuery, 150), D = j.useMemo(() => {
+                const E = null == C ? void 0 : C.toLowerCase(), F = B.filter(G => !w.includes(G.id)).filter(G => (0, s.CanAddDeviceType)(G.id, void 0)).filter(G => (0, v.CanAddDeviceForCurrentMapStyle)({ deviceTypeId: G.id })).filter(G => !y.list || y.list.includes(G.id)).filter(G => {
+                        var H, I;
+                        return !E || (G.name.toLowerCase().includes(E) || (null === (H = null === (I = G.description) || void 0 === I ? void 0 : I.toLowerCase()) || void 0 === H ? void 0 : H.includes(E)));
+                    }).sort((G, H) => {
+                        const I = G.name.toLowerCase().includes(E), J = H.name.toLowerCase().includes(E);
+                        return I && !J ? -1 : !I && J ? 1 : G.name.length < H.name.length ? -1 : G.name.length > H.name.length ? 1 : 0;
+                    });
+                if ((0, t.IsTutorial)())
+                    return F.sort((G, H) => {
+                        const I = u.TutorialConsts.topDevices.indexOf(G.id), J = u.TutorialConsts.topDevices.indexOf(H.id);
+                        return -1 === I && -1 === J ? 0 : -1 === I ? 1 : -1 === J ? -1 : I - J;
+                    });
+                if (y.list) {
+                    const G = [];
+                    return y.list.forEach(H => {
+                        const I = F.find(J => J.id === H);
+                        I && G.push(I);
+                    }), G;
+                }
+                return F;
+            }, [
+                B.length,
+                C,
+                y.list
+            ]);
         return (0, m.default)(b(p).Input.Keyboard.KeyCodes.UP, () => {
-            a.blockKeyboardNavigation || z(Math.max(0, y - 1));
+            y.blockKeyboardNavigation || A(Math.max(0, z - 1));
         }, [
-            y,
-            a.blockKeyboardNavigation
+            z,
+            y.blockKeyboardNavigation
         ]), (0, m.default)(b(p).Input.Keyboard.KeyCodes.DOWN, () => {
-            if (a.blockKeyboardNavigation)
+            if (y.blockKeyboardNavigation)
                 return;
-            const D = C.length - 1;
-            z(Math.min(D, y + 1));
+            const E = D.length - 1;
+            A(Math.min(E, z + 1));
         }, [
-            C.length,
-            y,
-            a.blockKeyboardNavigation
+            D.length,
+            z,
+            y.blockKeyboardNavigation
         ]), j.useEffect(() => {
-            !B || a.blockKeyboardNavigation ? z(-1) : z(0);
+            !C || y.blockKeyboardNavigation ? A(-1) : A(0);
         }, [
-            B,
-            a.blockKeyboardNavigation
-        ]), C.length ? (0, g.jsx)(h.default, {
+            C,
+            y.blockKeyboardNavigation
+        ]), D.length ? (0, g.jsx)(h.default, {
             direction: 'vertical',
             size: 12,
             className: 'maxWidth',
-            children: C.map((a, b) => (0, g.jsx)(o.default, {
-                option: a,
-                focused: b === y
-            }, a.id + '-option'))
+            children: D.map((E, F) => (0, g.jsx)(o.default, {
+                option: E,
+                focused: F === z
+            }, E.id + '-option'))
         }) : (0, g.jsx)(q.default, {});
     });
-}), d.register('1wWco', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _i;
     });
-    var g = d('OFuf70');
+    var g = d('.....');
     const h = [
         g.default.placedSticker,
         g.default.droppedItem
     ];
     var _i = h;
-}), d.register('cNdSP', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _I;
     });
-    var g = d('gRbUn'),
-        h = d('NmQt6'),
-        i = d('22RS1'),
-        j = d('O0Kav'),
-        k = d('u4s09'),
-        l = d('Eh2Wh'),
-        m = d('fI6of'),
-        n = d('t0eqt'),
-        o = d('SxihY'),
-        p = d('UaUBz0'),
-        q = d('J8L14'),
-        r = d('MgONH'),
-        s = d('ddhGF'),
-        t = d('y1oBc'),
-        u = d('qIlyp'),
-        v = d('yhnQh'),
-        w = d('4Bmhg'),
-        x = d('mTbw/'),
-        y = d('B/GC10'),
-        z = d('yQDvE');
-    let A, B, C, D, E, F, G = a => a;
-    const {
-        useToken: H
-    } = h.default;
-    var _I = a => {
+    var g = d('.....'), h = d('.....'), i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....'), o = d('.....'), p = d('.....'), q = d('.....'), r = d('.....'), s = d('.....'), t = d('.....'), u = d('.....'), v = d('.....'), w = d('.....'), x = d('.....'), y = d('.....'), z = d('.....');
+    let A, B, C, D, E, F, G = H => H;
+    const {useToken: H} = h.default;
+    var _I = J => {
         const {
-            option: {
-                id: J,
-                name: K,
-                description: L,
-                seasonTicketRequired: M
-            }
-        } = a, N = j.useRef(null), {
-            token: {
-                borderRadius: O
-            }
-        } = H(), P = M && !(0, y.OwnsSeasonTicket)(), Q = a => {
-            P || (m.default.me.adding.devices.selectedDeviceType = J, m.default.me.adding.mode = n.AddingMode.device, m.default.me.currentAction = o.default.adding, (0, v.IsTutorial)() && (0, w.default)(x.AddScreen.home), (0, u.EmitTutorialEvent)({
-                event: u.TutorialEventName.SELECT_DEVICE_TO_ADD,
-                deviceTypeId: J
-            }), a && a());
-        };
+                option: {
+                    id: K,
+                    name: L,
+                    description: M,
+                    seasonTicketRequired: N
+                }
+            } = J, O = j.useRef(null), {
+                token: {borderRadius: P}
+            } = H(), Q = N && !(0, y.OwnsSeasonTicket)(), R = S => {
+                Q || (m.default.me.adding.devices.selectedDeviceType = K, m.default.me.adding.mode = n.AddingMode.device, m.default.me.currentAction = o.default.adding, (0, v.IsTutorial)() && (0, w.default)(x.AddScreen.home), (0, u.EmitTutorialEvent)({
+                    event: u.TutorialEventName.SELECT_DEVICE_TO_ADD,
+                    deviceTypeId: K
+                }), S && S());
+            };
         return (0, q.default)(b(s).Input.Keyboard.KeyCodes.ENTER, () => {
-            a.focused && Q();
+            J.focused && R();
         }, [
-            a.focused,
-            Q
+            J.focused,
+            R
         ]), j.useEffect(() => {
-            var R;
-            a.focused && (null === (R = N.current) || void 0 === R || R.scrollIntoView({
-                block: 'center'
-            }));
-        }, [a.focused]), (0, g.jsxs)(_J, {
-            ref: N,
-            borderRadius: O,
-            focused: a.focused,
+            var S;
+            J.focused && (null === (S = O.current) || void 0 === S || S.scrollIntoView({ block: 'center' }));
+        }, [J.focused]), (0, g.jsxs)(_J, {
+            ref: O,
+            borderRadius: P,
+            focused: J.focused,
             onClick: () => {
-                Q(() => {
+                R(() => {
                     (0, t.playClickSound)();
                 });
             },
             children: [
-                (0, g.jsx)(_K, {
-                    children: (0, g.jsx)(_L, {
-                        src: (0, p.default)('editor/icons/device.png')
-                    })
-                }),
+                (0, g.jsx)(_K, { children: (0, g.jsx)(_L, { src: (0, p.default)('editor/icons/device.png') }) }),
                 (0, g.jsxs)(_M, {
                     children: [
-                        M ? (0, g.jsx)('div', {
-                            style: {
-                                marginBottom: 2
-                            },
+                        N ? (0, g.jsx)('div', {
+                            style: { marginBottom: 2 },
                             children: (0, g.jsx)(z.SeasonTicketExclusive, {})
                         }) : null,
                         (0, g.jsx)(_N, {
                             level: 5,
                             className: 'allCaps',
-                            style: {
-                                fontFamily: l.Fonts.FugazOne
-                            },
-                            children: K
-                        }),
-                        L ? (0, g.jsx)(_O, {
+                            style: { fontFamily: l.Fonts.FugazOne },
                             children: L
-                        }) : null
+                        }),
+                        M ? (0, g.jsx)(_O, { children: M }) : null
                     ]
                 })
             ]
         });
     };
-    const _J = k.default.div.attrs({
-            className: 'flex vc'
-        })(A || (A = G`
+    const _J = k.default.div.attrs({ className: 'flex vc' })(A || (A = G`
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   border-radius: ${ 0 }px;
@@ -1393,66 +1059,50 @@ d.register('8hEt+', function(e, f) {
   &:hover {
     background: rgba(255, 255, 255, 0.25);
   }
-`), a => a.borderRadius, a => a.focused ? '#ffca28' : 'rgba(255, 255, 255, 0.1)'),
-        _K = (0, k.default)(r.Centered)(B || (B = G`
+`), K => K.borderRadius, K => K.focused ? '#ffca28' : 'rgba(255, 255, 255, 0.1)'), _K = (0, k.default)(r.Centered)(B || (B = G`
   height: 50px;
   width: 50px;
   margin-right: 20px;
   flex-shrink: 0;
-`)),
-        _L = k.default.img(C || (C = G`
+`)), _L = k.default.img(C || (C = G`
   max-height: 100%;
   max-width: 100%;
-`)),
-        _M = k.default.div(D || (D = G``)),
-        _N = (0, k.default)(i.default.Title)(E || (E = G``)),
-        _O = (0, k.default)(i.default.Text)(F || (F = G``));
-}), d.register('0D1Z1', function(e, f) {
-    a(e.exports, 'default', function() {
+`)), _M = k.default.div(D || (D = G``)), _N = (0, k.default)(i.default.Title)(E || (E = G``)), _O = (0, k.default)(i.default.Text)(F || (F = G``));
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _i;
     });
-    var g = d('gRbUn'),
-        h = d('22RS1');
-    d('O0Kav');
+    var g = d('.....'), h = d('.....');
+    d('.....');
     var _i = () => (0, g.jsx)(h.default.Text, {
         italic: !0,
         children: 'No results found. Try a different search.'
     });
-}), d.register('cv4Ym', function(e, f) {
-    a(e.exports, 'CanAddDeviceForCurrentMapStyle', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'CanAddDeviceForCurrentMapStyle', function () {
         return _i;
     });
-    var g = d('5P0VZ'),
-        h = d('dcTme');
-    const _i = a => {
-        const {
-            deviceTypeId: j
-        } = a, k = (0, g.FetchDeviceOptionById)(j);
-        return !!k && (!k.supportedMapStyles || k.supportedMapStyles.includes((0, h.GetCurrentMapStyle)()));
+    var g = d('.....'), h = d('.....');
+    const _i = j => {
+        const {deviceTypeId: k} = j, l = (0, g.FetchDeviceOptionById)(k);
+        return !!l && (!l.supportedMapStyles || l.supportedMapStyles.includes((0, h.GetCurrentMapStyle)()));
     };
-}), d.register('dcTme', function(e, f) {
-    a(e.exports, 'GetCurrentMapStyle', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'GetCurrentMapStyle', function () {
         return _h;
     });
-    var g = d('fI6of');
+    var g = d('.....');
     const _h = () => g.default.session.mapStyle;
-}), d.register('nKFS+', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _s;
     });
-    var g = d('gRbUn');
-    d('O0Kav');
-    var h = d('u4s09'),
-        i = d('OFuf70'),
-        j = d('pqZEF'),
-        k = d('Q6LQJ'),
-        l = d('gp8Qp0'),
-        m = d('UaUBz0'),
-        n = d('jw1ib');
+    var g = d('.....');
+    d('.....');
+    var h = d('.....'), i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....');
     let o;
-    const p = `${ (0, k.CapitalizeFirstLetter)(l.default.device.plural) }`,
-        q = a => (0, m.default)(`editor/icons/device_collections/${ a }.svg`),
-        r = [{
+    const p = `${ (0, k.CapitalizeFirstLetter)(l.default.device.plural) }`, q = r => (0, m.default)(`editor/icons/device_collections/${ r }.svg`), r = [
+            {
                 icon: q('starting'),
                 name: `Starting ${ p }`,
                 description: `${ p } you might need for every map`,
@@ -1514,62 +1164,47 @@ d.register('8hEt+', function(e, f) {
                 ]
             }
         ];
-    var _s = a => (0, g.jsx)(_t, {
-        children: r.map(e => (0, g.jsx)(j.default, {
-            collection: e,
-            isOpen: e.name === a.openCollectionName,
-            open: () => a.open(e.name),
-            close: () => a.open('')
-        }, `device-collection-${ e.name }`))
+    var _s = t => (0, g.jsx)(_t, {
+        children: r.map(u => (0, g.jsx)(j.default, {
+            collection: u,
+            isOpen: u.name === t.openCollectionName,
+            open: () => t.open(u.name),
+            close: () => t.open('')
+        }, `device-collection-${ u.name }`))
     });
-    const _t = h.default.div.attrs({
-        className: 'maxWidth'
-    })(o || (o = (a => a)`
+    const _t = h.default.div.attrs({ className: 'maxWidth' })(o || (o = (u => u)`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px 12px;
   overflow: hidden;
 `));
-}), d.register('pqZEF', function(e, f) {
-    a(e.exports, 'default', function() {
+}), d.register('.....', function (e, f) {
+    a(e.exports, 'default', function () {
         return _t;
     });
-    var g = d('gRbUn');
-    d('O0Kav');
-    var h = d('u4s09'),
-        i = d('3t9ce'),
-        j = d('NmQt6'),
-        k = d('22RS1'),
-        l = d('MgONH'),
-        m = d('Eh2Wh'),
-        n = d('ICMZt'),
-        o = d('V704d');
-    let p, q, r = a => a;
-    const {
-        useToken: s
-    } = j.default;
-    var _t = a => {
+    var g = d('.....');
+    d('.....');
+    var h = d('.....'), i = d('.....'), j = d('.....'), k = d('.....'), l = d('.....'), m = d('.....'), n = d('.....'), o = d('.....');
+    let p, q, r = s => s;
+    const {useToken: s} = j.default;
+    var _t = u => {
         const {
-            token: {
-                borderRadius: u
-            }
-        } = s(), {
-            collection: {
-                icon: v,
-                name: w,
-                description: x,
-                devices: y
-            }
-        } = a;
+                token: {borderRadius: v}
+            } = s(), {
+                collection: {
+                    icon: w,
+                    name: x,
+                    description: y,
+                    devices: z
+                }
+            } = u;
         return (0, g.jsxs)(g.Fragment, {
             children: [
                 (0, g.jsxs)(_u, {
-                    borderRadius: u,
-                    onClick: a.open,
+                    borderRadius: v,
+                    onClick: u.open,
                     children: [
-                        (0, g.jsx)(_v, {
-                            src: v
-                        }),
+                        (0, g.jsx)(_v, { src: w }),
                         (0, g.jsx)(k.default.Title, {
                             level: 4,
                             style: {
@@ -1577,23 +1212,17 @@ d.register('8hEt+', function(e, f) {
                                 marginBottom: 2
                             },
                             className: 'allCaps',
-                            children: w
+                            children: x
                         }),
-                        (0, g.jsx)(k.default.Text, {
-                            children: (0, g.jsx)(o.default, {
-                                children: x
-                            })
-                        })
+                        (0, g.jsx)(k.default.Text, { children: (0, g.jsx)(o.default, { children: y }) })
                     ]
                 }),
                 (0, g.jsx)(i.default, {
-                    open: a.isOpen,
-                    onClose: a.close,
-                    title: w,
+                    open: u.isOpen,
+                    onClose: u.close,
+                    title: x,
                     width: 500,
-                    children: (0, g.jsx)(n.default, {
-                        list: y
-                    })
+                    children: (0, g.jsx)(n.default, { list: z })
                 })
             ]
         });
@@ -1611,8 +1240,7 @@ d.register('8hEt+', function(e, f) {
   &:hover {
     background: rgba(255, 255, 255, 0.25);
   }
-`), a => a.borderRadius),
-        _v = h.default.img(q || (q = r`
+`), v => v.borderRadius), _v = h.default.img(q || (q = r`
   height: 50px;
   margin-bottom: 15px;
   opacity: 0.85;

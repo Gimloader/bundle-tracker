@@ -6,52 +6,36 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('nj2x1', function(d, e) {
+c.register('.....', function (d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function() {
+    }), a(d.exports, 'default', function () {
         return _u;
     });
-    var g = c('s/YA9'),
-        h = c('UkCpC'),
-        i = c('ltxDW'),
-        j = c('l3REq'),
-        k = c('d5WQ6'),
-        l = c('bMaPZ2'),
-        m = c('hycyg'),
-        n = c('73Aki'),
-        o = c('UaUBz0'),
-        p = c('AHhkR'),
-        q = c('heTaO'),
-        r = c('OFuf70'),
-        s = c('9zaF+');
+    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....');
     class t extends i.default {
         constructor(u) {
             if (super(u), (0, g.default)(this, 'getPopupListItems', () => {
-                    const v = [],
-                        w = (0, q.default)().worldManager.devices.allDevices.filter(v => v.deviceOption.id === r.default.popupListItem).filter(v => v.options.group === this.options.group).filter(v => {
-                            var x, y, z, A;
-                            return !(!(null === (x = v.options) || void 0 === x || null === (y = x.title) || void 0 === y ? void 0 : y.length) && !(null === (z = v.options) || void 0 === z || null === (A = z.description) || void 0 === A ? void 0 : A.length));
-                        }).filter(v => !0 === v.state.active).sort((v, w) => v.y - w.y);
-                    return (0, s.take)(w, 25).forEach(w => {
+                    const v = [], w = (0, q.default)().worldManager.devices.allDevices.filter(x => x.deviceOption.id === r.default.popupListItem).filter(x => x.options.group === this.options.group).filter(x => {
+                            var y, z, A, B;
+                            return !(!(null === (y = x.options) || void 0 === y || null === (z = y.title) || void 0 === z ? void 0 : z.length) && !(null === (A = x.options) || void 0 === A || null === (B = A.description) || void 0 === B ? void 0 : B.length));
+                        }).filter(x => !0 === x.state.active).sort((x, y) => x.y - y.y);
+                    return (0, s.take)(w, 25).forEach(x => {
                         v.push({
-                            id: w.id,
-                            title: w.options.title,
-                            description: w.options.description,
-                            image: w.options.image
+                            id: x.id,
+                            title: x.options.title,
+                            description: x.options.description,
+                            image: x.options.image
                         });
                     }), v;
                 }), (0, g.default)(this, 'onPopupListItemStateChange', () => {
-                    this.deviceUI.update({
-                        listItems: this.getPopupListItems()
-                    });
+                    this.deviceUI.update({ listItems: this.getPopupListItems() });
                 }), (0, g.default)(this, 'openDeviceUI', () => {
                     const v = this.options.callToActionStyle === j.TextExplainerCallToActionStyle.list;
                     this.deviceUI.open({
@@ -70,27 +54,17 @@ c.register('nj2x1', function(d, e) {
                         openSecondaryCallToAction: this.openSecondaryCallToAction,
                         onSelectListItem: this.onSelectListItem
                     });
-                }), (0, g.default)(this, 'onStateChange', u => {
-                    'header' === u && this.deviceUI.update({
-                        header: this.state.header
-                    }), 'content' === u && this.deviceUI.update({
-                        content: this.state.content
-                    }), 'textColor' === u && this.deviceUI.update({
-                        textColor: this.state.textColor
-                    });
+                }), (0, g.default)(this, 'onStateChange', v => {
+                    'header' === v && this.deviceUI.update({ header: this.state.header }), 'content' === v && this.deviceUI.update({ content: this.state.content }), 'textColor' === v && this.deviceUI.update({ textColor: this.state.textColor });
                 }), (0, g.default)(this, 'openPrimaryCallToAction', () => {
                     this.sendToServerDevice(k.Messages.primaryCallToAction);
                 }), (0, g.default)(this, 'openSecondaryCallToAction', () => {
                     this.sendToServerDevice(k.Messages.secondaryCallToAction);
-                }), (0, g.default)(this, 'onSelectListItem', u => {
-                    this.options.closableByUser && this.deviceUI.close(), this.sendToServerDevice(k.Messages.selectListItem, {
-                        id: u
-                    });
-                }), (0, l.default)({
-                    familyName: this.options.fontFamily
-                }), (0, h.InPreGamePhase)() && (0, m.isSavedVersion)()) {
+                }), (0, g.default)(this, 'onSelectListItem', v => {
+                    this.options.closableByUser && this.deviceUI.close(), this.sendToServerDevice(k.Messages.selectListItem, { id: v });
+                }), (0, l.default)({ familyName: this.options.fontFamily }), (0, h.InPreGamePhase)() && (0, m.isSavedVersion)()) {
                 const v = p.default.Overlay;
-                new(0, n.default)({
+                new (0, n.default)({
                     device: this,
                     baseColor: v.baseColor,
                     boxColor: v.boxColor,
@@ -105,32 +79,29 @@ c.register('nj2x1', function(d, e) {
         }
     }
     var _u = t;
-}), c.register('d5WQ6', function(d, e) {
+}), c.register('.....', function (d, e) {
     let f;
     var g;
-    a(d.exports, 'Messages', function() {
+    a(d.exports, 'Messages', function () {
         return f;
     }), (g = f || (f = {})).primaryCallToAction = 'primaryCallToAction', g.secondaryCallToAction = 'secondaryCallToAction', g.selectListItem = 'selectListItem';
-}), c.register('bMaPZ2', function(d, e) {
-    a(d.exports, 'isGoogleFontLoaded', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function () {
         return _h;
-    }), a(d.exports, 'default', function() {
+    }), a(d.exports, 'default', function () {
         return _i;
     });
-    var f = c('TptDc');
-    const g = [],
-        _h = a => g.includes(a);
-    var _i = a => {
+    var f = c('.....');
+    const g = [], _h = i => g.includes(i);
+    var _i = j => {
         const {
-            familyName: j,
-            onLoad: k
-        } = a;
-        g.includes(j) ? k && k() : b(f).load({
-            google: {
-                families: [`${ j }:400,700`]
-            },
-            fontactive: a => {
-                g.includes(a) || g.push(a), j === a && k && k();
+            familyName: k,
+            onLoad: l
+        } = j;
+        g.includes(k) ? l && l() : b(f).load({
+            google: { families: [`${ k }:400,700`] },
+            fontactive: m => {
+                g.includes(m) || g.push(m), k === m && l && l();
             }
         });
     };

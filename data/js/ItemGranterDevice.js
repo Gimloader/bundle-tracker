@@ -7,24 +7,15 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('oMWyR', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _q;
     });
-    var f = b('s/YA9'),
-        g = b('GIe9o'),
-        h = b('fI6of'),
-        i = b('ktWA02'),
-        j = b('H4eGM'),
-        k = b('+7143'),
-        l = b('hycyg'),
-        m = b('UkCpC'),
-        n = b('ltxDW'),
-        o = b('T6zrb');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
     class p extends n.default {
         constructor(q) {
             super(q), (0, f.default)(this, 'addBase', () => {
@@ -42,27 +33,23 @@ b.register('oMWyR', function(c, d) {
             }), (0, f.default)(this, 'addItemPreview', () => {
                 if (!this.base)
                     return;
-                const r = (0, j.default)(2),
-                    s = {
-                        ...o.UnknownItemAsset
-                    };
+                const r = (0, j.default)(2), s = { ...o.UnknownItemAsset };
                 if (this.options.itemId) {
-                    const t = h.default.worldOptions.itemOptions.find(t => t.id === this.options.itemId);
+                    const t = h.default.worldOptions.itemOptions.find(u => u.id === this.options.itemId);
                     t && (s.imageId = t.id, s.imageUrl = t.previewImage);
                 }
-                const t = (0, k.default)(s.imageId),
-                    u = (0, i.default)({
-                        height: t.height,
-                        width: t.width,
+                const u = (0, k.default)(s.imageId), v = (0, i.default)({
+                        height: u.height,
+                        width: u.width,
                         newWidth: 60
                     });
                 this.itemPreview = this.parts.add.sprite({
                     imageId: s.imageId,
                     imageUrl: s.imageUrl,
-                    depthChange: r,
+                    depthChange: t,
                     y: -43,
-                    displayWidth: u.width,
-                    displayHeight: u.height
+                    displayWidth: v.width,
+                    displayHeight: v.height
                 }), this.itemPreview.view.alpha = 0.6, this.tweens.add({
                     targets: this.itemPreview.view,
                     y: this.itemPreview.view.y - 10,
@@ -82,29 +69,28 @@ b.register('oMWyR', function(c, d) {
         }
     }
     var _q = p;
-}), b.register('ktWA02', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _e;
     });
-    var _e = a => {
-        const f = a.newWidth / a.width;
+    var _e = f => {
+        const g = f.newWidth / f.width;
         return {
-            height: a.height * f,
-            width: a.width * f
+            height: f.height * g,
+            width: f.width * g
         };
     };
-}), b.register('T6zrb', function(c, d) {
-    a(c.exports, 'BaseAsset', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'BaseAsset', function () {
         return _f;
-    }), a(c.exports, 'UnknownItemAsset', function() {
+    }), a(c.exports, 'UnknownItemAsset', function () {
         return _g;
     });
-    var e = b('UaUBz0');
+    var e = b('.....');
     const _f = {
             imageId: (0, e.default)('devices/item_granter/base.png'),
             imageUrl: (0, e.default)('devices/item_granter/base.png')
-        },
-        _g = {
+        }, _g = {
             imageId: '__UNKNOWN_ITEM',
             imageUrl: (0, e.default)('devices/item_granter/question-mark-2.png')
         };

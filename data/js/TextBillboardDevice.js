@@ -6,37 +6,25 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('+88wj', function(d, e) {
+c.register('.....', function (d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function() {
+    }), a(d.exports, 'default', function () {
         return _r;
     });
-    var g = c('s/YA9'),
-        h = c('ltxDW'),
-        i = c('bMaPZ2'),
-        j = c('vDEcc'),
-        k = c('UkCpC'),
-        l = c('heTaO'),
-        m = c('lnsH90'),
-        n = c('hycyg'),
-        o = c('u/WlI21'),
-        p = c('uc4mA17');
+    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....');
     class q extends h.default {
         constructor(r) {
             super(r), (0, g.default)(this, 'createVisuals', () => {
                 if (this.isDestroyed)
                     return;
-                const s = (0, i.isGoogleFontLoaded)(this.options.googleFont),
-                    t = (0, l.default)().cameraHelper.zoom,
-                    u = 1 / t;
+                const s = (0, i.isGoogleFontLoaded)(this.options.googleFont), t = (0, l.default)().cameraHelper.zoom, u = 1 / t;
                 let v = {
                     fontSize: `${ this.options.fontSize * t }px`,
                     align: 'center',
@@ -62,17 +50,16 @@ c.register('+88wj', function(d, e) {
             }), (0, g.default)(this, 'setFontSize', () => {
                 const s = this.neededScale;
                 this.text.view.scale = s;
-                const t = this.options.fontSize * (0, l.default)().cameraHelper.zoom,
-                    u = (0, m.TextPadding)();
+                const t = this.options.fontSize * (0, l.default)().cameraHelper.zoom, u = (0, m.TextPadding)();
                 this.text.view.setPadding(u, u, u, u), this.text.view.setFontSize(t);
             }), (0, g.default)(this, 'setStroke', () => {
                 if (this.options.strokeThickness && this.options.strokeColor) {
                     const s = this.options.strokeThickness * (0, l.default)().cameraHelper.zoom;
                     this.text.view.setStroke(this.options.strokeColor, s);
                 }
-            }), (0, g.default)(this, 'getAlpha', () => (0, n.isSavedVersion)() && (0, k.InPreGamePhase)() ? this.options.alpha : (0, n.isPublishedVersion)() && (0, k.InPreGamePhase)() ? 'No' === this.options.visibleOnGameStart ? 0 : this.options.alpha : this.state.visible ? this.options.alpha : 0), (0, g.default)(this, 'onStateChange', r => {
+            }), (0, g.default)(this, 'getAlpha', () => (0, n.isSavedVersion)() && (0, k.InPreGamePhase)() ? this.options.alpha : (0, n.isPublishedVersion)() && (0, k.InPreGamePhase)() ? 'No' === this.options.visibleOnGameStart ? 0 : this.options.alpha : this.state.visible ? this.options.alpha : 0), (0, g.default)(this, 'onStateChange', s => {
                 if (this.text) {
-                    if ('visible' === r) {
+                    if ('visible' === s) {
                         if (!(0, k.InGamePhase)())
                             return;
                         this.tweens.add({
@@ -82,7 +69,7 @@ c.register('+88wj', function(d, e) {
                             ease: j.default.Animation.Visibility.Ease
                         });
                     } else
-                        'text' === r ? this.text.view.setText(this.state.text) : 'textColor' === r && this.text.view.setColor(this.state.textColor);
+                        'text' === s ? this.text.view.setText(this.state.text) : 'textColor' === s && this.text.view.setColor(this.state.textColor);
                     this.updateScale();
                 }
             }), (0, g.default)(this, 'setupVisualEditing', () => {
@@ -90,11 +77,7 @@ c.register('+88wj', function(d, e) {
                     return;
                 if (this.visualEditing.uses())
                     return;
-                const s = (0, p.FetchOptionSchemaProperty)(this, 'fontSize'),
-                    t = this.getWidth() * s.min / this.options.fontSize,
-                    u = this.getWidth() * s.max / this.options.fontSize,
-                    v = this.getHeight() * s.min / this.options.fontSize,
-                    w = this.getHeight() * s.max / this.options.fontSize;
+                const s = (0, p.FetchOptionSchemaProperty)(this, 'fontSize'), t = this.getWidth() * s.min / this.options.fontSize, u = this.getWidth() * s.max / this.options.fontSize, v = this.getHeight() * s.min / this.options.fontSize, w = this.getHeight() * s.max / this.options.fontSize;
                 this.visualEditing.add.box({
                     width: 2 * this.getWidth(),
                     height: this.getHeight(),
@@ -103,10 +86,10 @@ c.register('+88wj', function(d, e) {
                     maxWidth: u,
                     minHeight: v,
                     maxHeight: w,
-                    onChange: s => {
-                        (0, o.ReplaceVisualEditingPreview)(s.x, s.y, {
-                            rotation: s.angle,
-                            fontSize: s.height / this.getHeight() * this.options.fontSize
+                    onChange: x => {
+                        (0, o.ReplaceVisualEditingPreview)(x.x, x.y, {
+                            rotation: x.angle,
+                            fontSize: x.height / this.getHeight() * this.options.fontSize
                         });
                     }
                 });
@@ -114,31 +97,28 @@ c.register('+88wj', function(d, e) {
         }
     }
     var _r = q;
-}), c.register('bMaPZ2', function(d, e) {
-    a(d.exports, 'isGoogleFontLoaded', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function () {
         return _h;
-    }), a(d.exports, 'default', function() {
+    }), a(d.exports, 'default', function () {
         return _i;
     });
-    var f = c('TptDc');
-    const g = [],
-        _h = a => g.includes(a);
-    var _i = a => {
+    var f = c('.....');
+    const g = [], _h = i => g.includes(i);
+    var _i = j => {
         const {
-            familyName: j,
-            onLoad: k
-        } = a;
-        g.includes(j) ? k && k() : b(f).load({
-            google: {
-                families: [`${ j }:400,700`]
-            },
-            fontactive: a => {
-                g.includes(a) || g.push(a), j === a && k && k();
+            familyName: k,
+            onLoad: l
+        } = j;
+        g.includes(k) ? l && l() : b(f).load({
+            google: { families: [`${ k }:400,700`] },
+            fontactive: m => {
+                g.includes(m) || g.push(m), k === m && l && l();
             }
         });
     };
-}), c.register('vDEcc', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _f;
     });
     var _f = {
@@ -149,66 +129,61 @@ c.register('+88wj', function(d, e) {
         Animation: {
             Visibility: {
                 DurationMS: 400,
-                Ease: b(c('ddhGF')).Math.Easing.Linear
+                Ease: b(c('.....')).Math.Easing.Linear
             }
         }
     };
-}), c.register('lnsH90', function(d, e) {
-    a(d.exports, 'TextPadding', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'TextPadding', function () {
         return _f;
     });
     const _f = () => 4;
-}), c.register('u/WlI21', function(d, e) {
-    a(d.exports, 'ReplaceVisualEditingPreview', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'ReplaceVisualEditingPreview', function () {
         return _j;
     });
-    var f = c('hemXM'),
-        g = c('sWmxu5'),
-        h = c('EzUqb'),
-        i = c('GQMbT');
-    const _j = (a, d, c) => {
-        const k = (0, i.FetchVisualEditingPreview)(),
-            l = (0, h.FetchCurrentlyEditedDevice)();
-        if (!l || !k)
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    const _j = (k, l, m) => {
+        const n = (0, i.FetchVisualEditingPreview)(), o = (0, h.FetchCurrentlyEditedDevice)();
+        if (!o || !n)
             return;
-        const m = l.layers.isOnNaturalDepth() ? void 0 : d + l.layers.getDepthShift();
+        const p = o.layers.isOnNaturalDepth() ? void 0 : l + o.layers.getDepthShift();
         (0, g.default)({
-            deviceOption: k.deviceOption,
+            deviceOption: n.deviceOption,
             id: f.VisualEditingConstants.previewId,
-            x: a,
-            y: d,
-            depth: m,
-            layerId: l.layers.getLayer(),
-            name: k.name,
+            x: k,
+            y: l,
+            depth: p,
+            layerId: o.layers.getLayer(),
+            name: n.name,
             isPreview: !0,
             options: {
-                ...k.options,
-                ...c
+                ...n.options,
+                ...m
             },
             placedByClient: !0,
-            state: k.deviceOption.defaultState
+            state: n.deviceOption.defaultState
         });
     };
-}), c.register('sWmxu5', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _h;
     });
-    var f = c('heTaO'),
-        g = c('2LtPo');
-    var _h = a => {
-        (0, f.default)().worldManager.devices.getDeviceById(a.id) && (0, g.default)(a);
+    var f = c('.....'), g = c('.....');
+    var _h = i => {
+        (0, f.default)().worldManager.devices.getDeviceById(i.id) && (0, g.default)(i);
     };
-}), c.register('uc4mA17', function(d, e) {
-    a(d.exports, 'FetchOptionSchemaProperty', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'FetchOptionSchemaProperty', function () {
         return _f;
     });
-    const _f = (a, d) => {
-        var g, h, i;
-        const j = a.deviceOption.optionSchema.options.find(a => a.key === d);
+    const _f = (g, h) => {
+        var i, j, k;
+        const l = g.deviceOption.optionSchema.options.find(m => m.key === h);
         return {
-            min: null === (g = null == j ? void 0 : j.option.props) || void 0 === g ? void 0 : g.min,
-            max: null === (h = null == j ? void 0 : j.option.props) || void 0 === h ? void 0 : h.max,
-            step: null === (i = null == j ? void 0 : j.option.props) || void 0 === i ? void 0 : i.step
+            min: null === (i = null == l ? void 0 : l.option.props) || void 0 === i ? void 0 : i.min,
+            max: null === (j = null == l ? void 0 : l.option.props) || void 0 === j ? void 0 : j.max,
+            step: null === (k = null == l ? void 0 : l.option.props) || void 0 === k ? void 0 : k.step
         };
     };
 });

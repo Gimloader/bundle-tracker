@@ -7,35 +7,24 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('CvN5J', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _s;
     });
-    var f = b('s/YA9'),
-        g = b('ZmwqX0'),
-        h = b('cNVx1'),
-        i = b('hycyg'),
-        j = b('UkCpC'),
-        k = b('FWW2T6'),
-        l = b('ltxDW'),
-        m = b('7vFb6'),
-        n = b('9QzoS'),
-        o = b('H4eGM'),
-        p = b('uc4mA17'),
-        q = b('u/WlI21');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....');
     class r extends l.default {
         getAlpha() {
             return (0, j.InGamePhase)() ? this.state.active ? g.ZoneConstants.alpha : 0 : (0, i.isSavedVersion)() && k.default.shouldShowInnerZone(this) ? g.ZoneConstants.alpha : 0;
         }
         constructor(s) {
-            if (super(s), (0, f.default)(this, 'onStateChange', s => {
-                    if ('active' === s && this.zone && this.zone.view) {
-                        const t = this.getAlpha();
-                        this.zone.updateAlpha(t);
+            if (super(s), (0, f.default)(this, 'onStateChange', t => {
+                    if ('active' === t && this.zone && this.zone.view) {
+                        const u = this.getAlpha();
+                        this.zone.updateAlpha(u);
                     }
                 }), (0, f.default)(this, 'setupVisualEditing', () => {
                     if (!(0, j.InPreGamePhase)() || !(0, i.isSavedVersion)())
@@ -47,29 +36,26 @@ b.register('CvN5J', function(c, d) {
                             rotable: !1,
                             minRadius: t.min,
                             maxRadius: t.max,
-                            onChange: t => {
-                                (0, q.ReplaceVisualEditingPreview)(t.x, t.y, {
-                                    radius: t.radius
-                                });
+                            onChange: u => {
+                                (0, q.ReplaceVisualEditingPreview)(u.x, u.y, { radius: u.radius });
                             }
                         });
                     }
-                    const t = (0, p.FetchOptionSchemaProperty)(this, 'width'),
-                        u = (0, p.FetchOptionSchemaProperty)(this, 'height');
+                    const u = (0, p.FetchOptionSchemaProperty)(this, 'width'), v = (0, p.FetchOptionSchemaProperty)(this, 'height');
                     this.visualEditing.add.box({
                         width: this.options.width,
                         height: this.options.height,
                         angle: this.options.rotation,
-                        minWidth: t.min,
-                        maxWidth: t.max,
-                        minHeight: u.min,
-                        maxHeight: u.max,
+                        minWidth: u.min,
+                        maxWidth: u.max,
+                        minHeight: v.min,
+                        maxHeight: v.max,
                         keepRatio: !1,
-                        onChange: t => {
-                            (0, q.ReplaceVisualEditingPreview)(t.x, t.y, {
-                                rotation: t.angle,
-                                width: t.width,
-                                height: t.height
+                        onChange: w => {
+                            (0, q.ReplaceVisualEditingPreview)(w.x, w.y, {
+                                rotation: w.angle,
+                                width: w.width,
+                                height: w.height
                             });
                         }
                     });
@@ -82,25 +68,25 @@ b.register('CvN5J', function(c, d) {
             }
             if ((0, j.InGamePhase)() || (0, i.isPublishedVersion)() ? this.options.visibleInGame : k.default.shouldShow(this)) {
                 this.setupVisualEditing();
-                const t = (0, h.GetNumberFromHexColor)(this.options.color);
+                const u = (0, h.GetNumberFromHexColor)(this.options.color);
                 if (this.options.shape === m.ZoneShape.circle)
-                    return void(this.zone = this.parts.add.circle({
-                        color: t,
+                    return void (this.zone = this.parts.add.circle({
+                        color: u,
                         alpha: this.getAlpha(),
                         r: this.options.radius,
                         depthChange: (0, o.default)(1),
                         ignoreInput: !0,
-                        borderColor: t,
+                        borderColor: u,
                         borderAlpha: (0, j.InGamePhase)() ? 0 : 1,
                         borderWidth: 4
                     }));
                 this.zone = this.parts.add.rect({
-                    color: t,
+                    color: u,
                     alpha: this.getAlpha(),
                     width: Math.abs(this.options.width),
                     height: Math.abs(this.options.height),
                     angle: this.options.rotation,
-                    borderColor: t,
+                    borderColor: u,
                     borderAlpha: (0, j.InGamePhase)() ? 0 : 1,
                     borderWidth: 4,
                     depthChange: (0, o.default)(1),
@@ -110,21 +96,21 @@ b.register('CvN5J', function(c, d) {
         }
     }
     var _s = r;
-}), b.register('ZmwqX0', function(c, d) {
-    a(c.exports, 'ZoneConstants', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'ZoneConstants', function () {
         return _e;
     });
     const _e = {
         alpha: 0.5,
         activateDeactivateTime: 100
     };
-}), b.register('FWW2T6', function(c, d) {
-    a(c.exports, 'ZonedDeviceDisplayOptions', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'ZonedDeviceDisplayOptions', function () {
         return _f;
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _i;
     });
-    var e = b('OR/wR6');
+    var e = b('.....');
     let _f;
     var g;
     (g = _f || (_f = {})).visible = 'visible', g.bordersOnly = 'bordersOnly', g.fullyHidden = 'fullyHidden';
@@ -133,82 +119,75 @@ b.register('CvN5J', function(c, d) {
         return i || _f.bordersOnly;
     };
     var _i = {
-        shouldShow: a => h() !== _f.fullyHidden,
-        shouldShowInnerZone: a => h() !== _f.bordersOnly
+        shouldShow: j => h() !== _f.fullyHidden,
+        shouldShowInnerZone: j => h() !== _f.bordersOnly
     };
-}), b.register('OR/wR6', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _e;
     });
-    var _e = {
-        zonedDeviceViews: 'zoned-device-views'
-    };
-}), b.register('7vFb6', function(c, d) {
+    var _e = { zonedDeviceViews: 'zoned-device-views' };
+}), b.register('.....', function (c, d) {
     let e;
     var f;
-    a(c.exports, 'ZoneShape', function() {
+    a(c.exports, 'ZoneShape', function () {
         return e;
     }), (f = e || (e = {})).rectangle = 'rectangle', f.circle = 'circle';
-}), b.register('9QzoS', function(c, d) {
-    a(c.exports, 'BaseAsset', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'BaseAsset', function () {
         return _f;
     });
-    var e = b('UaUBz0');
+    var e = b('.....');
     const _f = {
         imageId: (0, e.default)('devices/zone/base.png'),
         imageUrl: (0, e.default)('devices/zone/base.png')
     };
-}), b.register('uc4mA17', function(c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function () {
         return _e;
     });
-    const _e = (a, c) => {
-        var f, g, h;
-        const i = a.deviceOption.optionSchema.options.find(a => a.key === c);
+    const _e = (f, g) => {
+        var h, i, j;
+        const k = f.deviceOption.optionSchema.options.find(l => l.key === g);
         return {
-            min: null === (f = null == i ? void 0 : i.option.props) || void 0 === f ? void 0 : f.min,
-            max: null === (g = null == i ? void 0 : i.option.props) || void 0 === g ? void 0 : g.max,
-            step: null === (h = null == i ? void 0 : i.option.props) || void 0 === h ? void 0 : h.step
+            min: null === (h = null == k ? void 0 : k.option.props) || void 0 === h ? void 0 : h.min,
+            max: null === (i = null == k ? void 0 : k.option.props) || void 0 === i ? void 0 : i.max,
+            step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('u/WlI21', function(c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function () {
         return _i;
     });
-    var e = b('hemXM'),
-        f = b('sWmxu5'),
-        g = b('EzUqb'),
-        h = b('GQMbT');
-    const _i = (a, b, c) => {
-        const j = (0, h.FetchVisualEditingPreview)(),
-            k = (0, g.FetchCurrentlyEditedDevice)();
-        if (!k || !j)
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    const _i = (j, k, l) => {
+        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        if (!n || !m)
             return;
-        const l = k.layers.isOnNaturalDepth() ? void 0 : b + k.layers.getDepthShift();
+        const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
         (0, f.default)({
-            deviceOption: j.deviceOption,
+            deviceOption: m.deviceOption,
             id: e.VisualEditingConstants.previewId,
-            x: a,
-            y: b,
-            depth: l,
-            layerId: k.layers.getLayer(),
-            name: j.name,
+            x: j,
+            y: k,
+            depth: o,
+            layerId: n.layers.getLayer(),
+            name: m.name,
             isPreview: !0,
             options: {
-                ...j.options,
-                ...c
+                ...m.options,
+                ...l
             },
             placedByClient: !0,
-            state: j.deviceOption.defaultState
+            state: m.deviceOption.defaultState
         });
     };
-}), b.register('sWmxu5', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _g;
     });
-    var e = b('heTaO'),
-        f = b('2LtPo');
-    var _g = a => {
-        (0, e.default)().worldManager.devices.getDeviceById(a.id) && (0, f.default)(a);
+    var e = b('.....'), f = b('.....');
+    var _g = h => {
+        (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
 });

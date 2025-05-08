@@ -1,2841 +1,2563 @@
 var a = 'undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {};
-a.parcelRequire388b.register('lJnts', function(b, c) {
-    b.exports,
-        function(d) {
-            function e(f, g) {
-                return g.forEach(function(h) {
-                    h && 'string' != typeof h && !Array.isArray(h) && Object.keys(h).forEach(function(i) {
-                        if ('default' !== i && !(i in f)) {
-                            var j = Object.getOwnPropertyDescriptor(h, i);
-                            Object.defineProperty(f, i, j.get ? j : {
-                                enumerable: !0,
-                                get: function() {
-                                    return h[i];
-                                }
-                            });
-                        }
-                    });
-                }), Object.freeze(f);
+a.parcelRequire388b.register('lJnts', function (b, c) {
+    b.exports, function (d) {
+        function e(f, g) {
+            return g.forEach(function (h) {
+                h && 'string' != typeof h && !Array.isArray(h) && Object.keys(h).forEach(function (i) {
+                    if ('default' !== i && !(i in f)) {
+                        var j = Object.getOwnPropertyDescriptor(h, i);
+                        Object.defineProperty(f, i, j.get ? j : {
+                            enumerable: !0,
+                            get: function () {
+                                return h[i];
+                            }
+                        });
+                    }
+                });
+            }), Object.freeze(f);
+        }
+        ArrayBuffer.isView || (ArrayBuffer.isView = function (f) {
+            return null !== f && 'object' == typeof f && f.buffer instanceof ArrayBuffer;
+        }), 'undefined' == typeof globalThis && 'undefined' != typeof window && (window.globalThis = window);
+        var f = function (g, h) {
+            return f = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function (i, j) {
+                i.__proto__ = j;
+            } || function (i, j) {
+                for (var k in j)
+                    Object.prototype.hasOwnProperty.call(j, k) && (i[k] = j[k]);
+            }, f(g, h);
+        };
+        function g(h, i) {
+            if ('function' != typeof i && null !== i)
+                throw new TypeError('Class extends value ' + String(i) + ' is not a constructor or null');
+            function j() {
+                this.constructor = h;
             }
-            ArrayBuffer.isView || (ArrayBuffer.isView = function(f) {
-                return null !== f && 'object' == typeof f && f.buffer instanceof ArrayBuffer;
-            }), 'undefined' == typeof globalThis && 'undefined' != typeof window && (window.globalThis = window);
-            var f = function(g, h) {
-                return f = Object.setPrototypeOf || {
-                    __proto__: []
-                }
-                instanceof Array && function(i, j) {
-                    i.__proto__ = j;
-                } || function(i, j) {
-                    for (var k in j)
-                        Object.prototype.hasOwnProperty.call(j, k) && (i[k] = j[k]);
-                }, f(g, h);
-            };
-
-            function g(h, i) {
-                if ('function' != typeof i && null !== i)
-                    throw new TypeError('Class extends value ' + String(i) + ' is not a constructor or null');
-
-                function j() {
-                    this.constructor = h;
-                }
-                f(h, i), h.prototype = null === i ? Object.create(i) : (j.prototype = i.prototype, new j());
-            }
-            var h, i = function() {
-                return i = Object.assign || function(j) {
+            f(h, i), h.prototype = null === i ? Object.create(i) : (j.prototype = i.prototype, new j());
+        }
+        var h, i = function () {
+                return i = Object.assign || function (j) {
                     for (var k, l = 1, m = arguments.length; l < m; l++)
                         for (var n in k = arguments[l])
                             Object.prototype.hasOwnProperty.call(k, n) && (j[n] = k[n]);
                     return j;
                 }, i.apply(this, arguments);
             };
-
-            function j(k, l, m, n) {
-                function o(p) {
-                    return p instanceof m ? p : new m(function(q) {
-                        q(p);
-                    });
-                }
-                return new(m || (m = Promise))(function(p, q) {
-                    function r(s) {
-                        try {
-                            _t(n.next(s));
-                        } catch (s) {
-                            q(s);
-                        }
-                    }
-
-                    function s(t) {
-                        try {
-                            _t(n.throw(t));
-                        } catch (t) {
-                            q(t);
-                        }
-                    }
-
-                    function _t(u) {
-                        u.done ? p(u.value) : o(u.value).then(r, s);
-                    }
-                    _t((n = n.apply(k, l || [])).next());
+        function j(k, l, m, n) {
+            function o(p) {
+                return p instanceof m ? p : new m(function (q) {
+                    q(p);
                 });
             }
-
-            function k(l, m) {
-                var n, o, p, q, r = {
+            return new (m || (m = Promise))(function (p, q) {
+                function r(s) {
+                    try {
+                        _t(n.next(s));
+                    } catch (s) {
+                        q(s);
+                    }
+                }
+                function s(t) {
+                    try {
+                        _t(n.throw(t));
+                    } catch (t) {
+                        q(t);
+                    }
+                }
+                function _t(u) {
+                    u.done ? p(u.value) : o(u.value).then(r, s);
+                }
+                _t((n = n.apply(k, l || [])).next());
+            });
+        }
+        function k(l, m) {
+            var n, o, p, q, r = {
                     label: 0,
-                    sent: function() {
-                        if (1 & p[0])
-                            throw p[1];
-                        return p[1];
+                    sent: function () {
+                        if (1 & g[0])
+                            throw g[1];
+                        return g[1];
                     },
                     trys: [],
                     ops: []
                 };
-                return q = {
-                    next: j(0),
-                    throw: j(1),
-                    return: j(2)
-                }, 'function' == typeof Symbol && (q[Symbol.iterator] = function() {
-                    return this;
-                }), q;
-
-                function s(t) {
-                    return function(u) {
-                        return k([
-                            t,
-                            u
-                        ]);
-                    };
-                }
-
-                function t(u) {
-                    if (n)
-                        throw new TypeError('Generator is already executing.');
-                    for (; q && (q = 0, u[0] && (r = 0)), r;)
-                        try {
-                            if (n = 1, o && (p = 2 & u[0] ? o.return : u[0] ? o.throw || ((p = o.return) && p.call(o), 0) : o.next) && !(p = p.call(o, u[1])).done)
-                                return p;
-                            switch (o = 0, p && (u = [
-                                    2 & u[0],
-                                    p.value
-                                ]), u[0]) {
-                                case 0:
-                                case 1:
-                                    p = u;
-                                    break;
-                                case 4:
-                                    return r.label++, {
-                                        value: u[1],
-                                        done: !1
-                                    };
-                                case 5:
-                                    r.label++, o = u[1], u = [0];
-                                    continue;
-                                case 7:
-                                    u = r.ops.pop(), r.trys.pop();
-                                    continue;
-                                default:
-                                    if (!((p = (p = r.trys).length > 0 && p[p.length - 1]) || 6 !== u[0] && 2 !== u[0])) {
-                                        r = 0;
-                                        continue;
-                                    }
-                                    if (3 === u[0] && (!p || u[1] > p[0] && u[1] < p[3])) {
-                                        r.label = u[1];
-                                        break;
-                                    }
-                                    if (6 === u[0] && r.label < p[1]) {
-                                        r.label = p[1], p = u;
-                                        break;
-                                    }
-                                    if (p && r.label < p[2]) {
-                                        r.label = p[2], r.ops.push(u);
-                                        break;
-                                    }
-                                    p[2] && r.ops.pop(), r.trys.pop();
-                                    continue;
-                            }
-                            u = m.call(l, r);
-                        } catch (l) {
-                            u = [
-                                6,
-                                l
-                            ], o = 0;
-                        } finally {
-                            n = p = 0;
-                        }
-                    if (5 & u[0])
-                        throw u[1];
-                    return {
-                        value: u[0] ? u[1] : void 0,
-                        done: !0
-                    };
-                }
-            }
-
-            function l(m, n, o, p) {
-                if ('a' === o && !p)
-                    throw new TypeError('Private accessor was defined without a getter');
-                if ('function' == typeof n ? m !== n || !p : !n.has(m))
-                    throw new TypeError('Cannot read private member from an object whose class did not declare it');
-                return 'm' === o ? p : 'a' === o ? p.call(m) : p ? p.value : n.get(m);
-            }
-
-            function m(n, o, p, q, r) {
-                if ('m' === q)
-                    throw new TypeError('Private method is not writable');
-                if ('a' === q && !r)
-                    throw new TypeError('Private accessor was defined without a setter');
-                if ('function' == typeof o ? n !== o || !r : !o.has(n))
-                    throw new TypeError('Cannot write private member to an object whose class did not declare it');
-                return 'a' === q ? r.call(n, p) : r ? r.value = p : o.set(n, p), p;
-            }! function(n) {
-                n[n.CONSENTED = 4000] = 'CONSENTED', n[n.DEVMODE_RESTART = 4010] = 'DEVMODE_RESTART';
-            }(h || (h = {}));
-            var n = function(o) {
-                function p(q, r) {
-                    var s = o.call(this, r) || this;
-                    return s.name = 'ServerError', s.code = q, s;
-                }
-                return g(p, o), p;
-            }(Error);
-
-            function o(p, q) {
-                if (this._offset = q, p instanceof ArrayBuffer)
-                    this._buffer = p, this._view = new DataView(this._buffer);
-                else {
-                    if (!ArrayBuffer.isView(p))
-                        throw new Error('Invalid argument');
-                    this._buffer = p.buffer, this._view = new DataView(this._buffer, p.byteOffset, p.byteLength);
-                }
-            }
-
-            function p(q, r, s) {
-                for (var t = '', u = 0, v = r, w = r + s; v < w; v++) {
-                    var x = q.getUint8(v);
-                    if (0 != (128 & x))
-                        if (192 != (224 & x))
-                            if (224 != (240 & x)) {
-                                if (240 != (248 & x))
-                                    throw new Error('Invalid byte ' + x.toString(16));
-                                (u = (7 & x) << 18 | (63 & q.getUint8(++v)) << 12 | (63 & q.getUint8(++v)) << 6 | (63 & q.getUint8(++v)) << 0) >= 65536 ? (u -= 65536, t += String.fromCharCode(55296 + (u >>> 10), 56320 + (1023 & u))) : t += String.fromCharCode(u);
-                            } else
-                                t += String.fromCharCode((15 & x) << 12 | (63 & q.getUint8(++v)) << 6 | (63 & q.getUint8(++v)) << 0);
-                    else
-                        t += String.fromCharCode((31 & x) << 6 | 63 & q.getUint8(++v));
-                    else
-                        t += String.fromCharCode(x);
-                }
-                return t;
-            }
-
-            function q(r, s) {
-                void 0 === s && (s = 0);
-                var t = new o(r, s),
-                    u = t._parse();
-                if (t._offset !== r.byteLength)
-                    throw new Error(r.byteLength - t._offset + ' trailing bytes');
-                return u;
-            }
-            o.prototype._array = function(r) {
-                for (var s = new Array(r), t = 0; t < r; t++)
-                    s[t] = this._parse();
-                return s;
-            }, o.prototype._map = function(r) {
-                for (var s = {}, t = 0; t < r; t++)
-                    s[this._parse()] = this._parse();
-                return s;
-            }, o.prototype._str = function(r) {
-                var s = p(this._view, this._offset, r);
-                return this._offset += r, s;
-            }, o.prototype._bin = function(r) {
-                var s = this._buffer.slice(this._offset, this._offset + r);
-                return this._offset += r, s;
-            }, o.prototype._parse = function() {
-                var r, s = this._view.getUint8(this._offset++),
-                    t = 0,
-                    u = 0,
-                    v = 0,
-                    w = 0;
-                if (s < 192)
-                    return s < 128 ? s : s < 144 ? this._map(15 & s) : s < 160 ? this._array(15 & s) : this._str(31 & s);
-                if (s > 223)
-                    return -1 * (255 - s + 1);
-                switch (s) {
-                    case 192:
-                        return null;
-                    case 194:
-                        return !1;
-                    case 195:
-                        return !0;
-                    case 196:
-                        return t = this._view.getUint8(this._offset), this._offset += 1, this._bin(t);
-                    case 197:
-                        return t = this._view.getUint16(this._offset), this._offset += 2, this._bin(t);
-                    case 198:
-                        return t = this._view.getUint32(this._offset), this._offset += 4, this._bin(t);
-                    case 199:
-                        if (t = this._view.getUint8(this._offset), u = this._view.getInt8(this._offset + 1), this._offset += 2, -1 === u) {
-                            var x = this._view.getUint32(this._offset);
-                            return v = this._view.getInt32(this._offset + 4), w = this._view.getUint32(this._offset + 8), this._offset += 12, new Date(1000 * (4294967296 * v + w) + x / 1000000);
-                        }
-                        return [
-                            u,
-                            this._bin(t)
-                        ];
-                    case 200:
-                        return t = this._view.getUint16(this._offset), u = this._view.getInt8(this._offset + 2), this._offset += 3, [
-                            u,
-                            this._bin(t)
-                        ];
-                    case 201:
-                        return t = this._view.getUint32(this._offset), u = this._view.getInt8(this._offset + 4), this._offset += 5, [
-                            u,
-                            this._bin(t)
-                        ];
-                    case 202:
-                        return r = this._view.getFloat32(this._offset), this._offset += 4, r;
-                    case 203:
-                        return r = this._view.getFloat64(this._offset), this._offset += 8, r;
-                    case 204:
-                        return r = this._view.getUint8(this._offset), this._offset += 1, r;
-                    case 205:
-                        return r = this._view.getUint16(this._offset), this._offset += 2, r;
-                    case 206:
-                        return r = this._view.getUint32(this._offset), this._offset += 4, r;
-                    case 207:
-                        return v = this._view.getUint32(this._offset) * Math.pow(2, 32), w = this._view.getUint32(this._offset + 4), this._offset += 8, v + w;
-                    case 208:
-                        return r = this._view.getInt8(this._offset), this._offset += 1, r;
-                    case 209:
-                        return r = this._view.getInt16(this._offset), this._offset += 2, r;
-                    case 210:
-                        return r = this._view.getInt32(this._offset), this._offset += 4, r;
-                    case 211:
-                        return v = this._view.getInt32(this._offset) * Math.pow(2, 32), w = this._view.getUint32(this._offset + 4), this._offset += 8, v + w;
-                    case 212:
-                        return u = this._view.getInt8(this._offset), this._offset += 1, 0 === u ? void(this._offset += 1) : [
-                            u,
-                            this._bin(1)
-                        ];
-                    case 213:
-                        return u = this._view.getInt8(this._offset), this._offset += 1, [
-                            u,
-                            this._bin(2)
-                        ];
-                    case 214:
-                        return u = this._view.getInt8(this._offset), this._offset += 1, -1 === u ? (r = this._view.getUint32(this._offset), this._offset += 4, new Date(1000 * r)) : [
-                            u,
-                            this._bin(4)
-                        ];
-                    case 215:
-                        return u = this._view.getInt8(this._offset), this._offset += 1, 0 === u ? (v = this._view.getInt32(this._offset) * Math.pow(2, 32), w = this._view.getUint32(this._offset + 4), this._offset += 8, new Date(v + w)) : -1 === u ? (v = this._view.getUint32(this._offset), w = this._view.getUint32(this._offset + 4), this._offset += 8, new Date(1000 * (4294967296 * (3 & v) + w) + (v >>> 2) / 1000000)) : [
-                            u,
-                            this._bin(8)
-                        ];
-                    case 216:
-                        return u = this._view.getInt8(this._offset), this._offset += 1, [
-                            u,
-                            this._bin(16)
-                        ];
-                    case 217:
-                        return t = this._view.getUint8(this._offset), this._offset += 1, this._str(t);
-                    case 218:
-                        return t = this._view.getUint16(this._offset), this._offset += 2, this._str(t);
-                    case 219:
-                        return t = this._view.getUint32(this._offset), this._offset += 4, this._str(t);
-                    case 220:
-                        return t = this._view.getUint16(this._offset), this._offset += 2, this._array(t);
-                    case 221:
-                        return t = this._view.getUint32(this._offset), this._offset += 4, this._array(t);
-                    case 222:
-                        return t = this._view.getUint16(this._offset), this._offset += 2, this._map(t);
-                    case 223:
-                        return t = this._view.getUint32(this._offset), this._offset += 4, this._map(t);
-                }
-                throw new Error('Could not parse');
-            };
-            var r = 4294967295,
-                s = 17179869183;
-
-            function t(u, v, w) {
-                for (var x = 0, y = 0, z = w.length; y < z; y++)
-                    (x = w.charCodeAt(y)) < 128 ? u.setUint8(v++, x) : x < 2048 ? (u.setUint8(v++, 192 | x >> 6), u.setUint8(v++, 128 | 63 & x)) : x < 55296 || x >= 57344 ? (u.setUint8(v++, 224 | x >> 12), u.setUint8(v++, 128 | x >> 6 & 63), u.setUint8(v++, 128 | 63 & x)) : (y++, x = 65536 + ((1023 & x) << 10 | 1023 & w.charCodeAt(y)), u.setUint8(v++, 240 | x >> 18), u.setUint8(v++, 128 | x >> 12 & 63), u.setUint8(v++, 128 | x >> 6 & 63), u.setUint8(v++, 128 | 63 & x));
-            }
-
-            function u(v) {
-                for (var w = 0, x = 0, y = 0, z = v.length; y < z; y++)
-                    (w = v.charCodeAt(y)) < 128 ? x += 1 : w < 2048 ? x += 2 : w < 55296 || w >= 57344 ? x += 3 : (y++, x += 4);
-                return x;
-            }
-
-            function v(w, x, y) {
-                var z = typeof y,
-                    A = 0,
-                    B = 0,
-                    C = 0,
-                    D = 0,
-                    E = 0,
-                    F = 0;
-                if ('string' === z) {
-                    if ((E = u(y)) < 32)
-                        w.push(160 | E), F = 1;
-                    else if (E < 256)
-                        w.push(217, E), F = 2;
-                    else if (E < 65536)
-                        w.push(218, E >> 8, E), F = 3;
-                    else {
-                        if (!(E < 4294967296))
-                            throw new Error('String too long');
-                        w.push(219, E >> 24, E >> 16, E >> 8, E), F = 5;
-                    }
-                    return x.push({
-                        _str: y,
-                        _length: E,
-                        _offset: w.length
-                    }), F + E;
-                }
-                if ('number' === z)
-                    return Math.floor(y) === y && isFinite(y) ? y >= 0 ? y < 128 ? (w.push(y), 1) : y < 256 ? (w.push(204, y), 2) : y < 65536 ? (w.push(205, y >> 8, y), 3) : y < 4294967296 ? (w.push(206, y >> 24, y >> 16, y >> 8, y), 5) : (C = y / Math.pow(2, 32) >> 0, D = y >>> 0, w.push(207, C >> 24, C >> 16, C >> 8, C, D >> 24, D >> 16, D >> 8, D), 9) : y >= -32 ? (w.push(y), 1) : y >= -128 ? (w.push(208, y), 2) : y >= -32768 ? (w.push(209, y >> 8, y), 3) : y >= -2147483648 ? (w.push(210, y >> 24, y >> 16, y >> 8, y), 5) : (C = Math.floor(y / Math.pow(2, 32)), D = y >>> 0, w.push(211, C >> 24, C >> 16, C >> 8, C, D >> 24, D >> 16, D >> 8, D), 9) : (w.push(203), x.push({
-                        _float: y,
-                        _length: 8,
-                        _offset: w.length
-                    }), 9);
-                if ('object' === z) {
-                    if (null === y)
-                        return w.push(192), 1;
-                    if (Array.isArray(y)) {
-                        if ((E = y.length) < 16)
-                            w.push(144 | E), F = 1;
-                        else if (E < 65536)
-                            w.push(220, E >> 8, E), F = 3;
-                        else {
-                            if (!(E < 4294967296))
-                                throw new Error('Array too large');
-                            w.push(221, E >> 24, E >> 16, E >> 8, E), F = 5;
-                        }
-                        for (A = 0; A < E; A++)
-                            F += v(w, x, y[A]);
-                        return F;
-                    }
-                    if (y instanceof Date) {
-                        var G = y.getTime(),
-                            H = Math.floor(G / 1000),
-                            I = 1000000 * (G - 1000 * H);
-                        return H >= 0 && I >= 0 && H <= s ? 0 === I && H <= r ? (w.push(214, 255, H >> 24, H >> 16, H >> 8, H), 6) : (C = H / 4294967296, D = 4294967295 & H, w.push(215, 255, I >> 22, I >> 14, I >> 6, C, D >> 24, D >> 16, D >> 8, D), 10) : (C = Math.floor(H / 4294967296), D = H >>> 0, w.push(199, 12, 255, I >> 24, I >> 16, I >> 8, I, C >> 24, C >> 16, C >> 8, C, D >> 24, D >> 16, D >> 8, D), 15);
-                    }
-                    if (y instanceof ArrayBuffer) {
-                        if ((E = y.byteLength) < 256)
-                            w.push(196, E), F = 2;
-                        else if (E < 65536)
-                            w.push(197, E >> 8, E), F = 3;
-                        else {
-                            if (!(E < 4294967296))
-                                throw new Error('Buffer too large');
-                            w.push(198, E >> 24, E >> 16, E >> 8, E), F = 5;
-                        }
-                        return x.push({
-                            _bin: y,
-                            _length: E,
-                            _offset: w.length
-                        }), F + E;
-                    }
-                    if ('function' == typeof y.toJSON)
-                        return v(w, x, y.toJSON());
-                    var G = [],
-                        H = '',
-                        I = Object.keys(y);
-                    for (A = 0, B = I.length; A < B; A++)
-                        void 0 !== y[H = I[A]] && 'function' != typeof y[H] && G.push(H);
-                    if ((E = G.length) < 16)
-                        w.push(128 | E), F = 1;
-                    else if (E < 65536)
-                        w.push(222, E >> 8, E), F = 3;
-                    else {
-                        if (!(E < 4294967296))
-                            throw new Error('Object too large');
-                        w.push(223, E >> 24, E >> 16, E >> 8, E), F = 5;
-                    }
-                    for (A = 0; A < E; A++)
-                        F += v(w, x, H = G[A]), F += v(w, x, y[H]);
-                    return F;
-                }
-                if ('boolean' === z)
-                    return w.push(y ? 195 : 194), 1;
-                if ('undefined' === z)
-                    return w.push(192), 1;
-                if ('function' == typeof y.toJSON)
-                    return v(w, x, y.toJSON());
-                throw new Error('Could not encode');
-            }
-
-            function w(x) {
-                var y = [],
-                    z = [],
-                    A = v(y, z, x),
-                    B = new ArrayBuffer(A),
-                    C = new DataView(B),
-                    D = 0,
-                    E = 0,
-                    F = -1;
-                z.length > 0 && (F = z[0]._offset);
-                for (var G, H = 0, I = 0, J = 0, K = y.length; J < K; J++)
-                    if (C.setUint8(E + J, y[J]), J + 1 === F) {
-                        if (H = (G = z[D])._length, I = E + F, G._bin)
-                            for (var L = new Uint8Array(G._bin), M = 0; M < H; M++)
-                                C.setUint8(I + M, L[M]);
-                        else
-                            G._str ? t(C, I, G._str) : void 0 !== G._float && C.setFloat64(I, G._float);
-                        E += H, z[++D] && (F = z[D]._offset);
-                    }
-                return B;
-            }
-            var x, y, z = function() {
-                    throw new Error('ws does not work in the browser. Browser clients must use the native WebSocket object');
-                },
-                A = globalThis.WebSocket || z,
-                B = function() {
-                    function C(D) {
-                        this.events = D;
-                    }
-                    return C.prototype.send = function(D) {
-                        D instanceof ArrayBuffer ? this.ws.send(D) : Array.isArray(D) && this.ws.send(new Uint8Array(D).buffer);
-                    }, C.prototype.connect = function(D) {
-                        this.ws = new A(D, this.protocols), this.ws.binaryType = 'arraybuffer', this.ws.onopen = this.events.onopen, this.ws.onmessage = this.events.onmessage, this.ws.onclose = this.events.onclose, this.ws.onerror = this.events.onerror;
-                    }, C.prototype.close = function(D, E) {
-                        this.ws.close(D, E);
-                    }, Object.defineProperty(C.prototype, 'isOpen', {
-                        get: function() {
-                            return this.ws.readyState === A.OPEN;
-                        },
-                        enumerable: !1,
-                        configurable: !0
-                    }), C;
-                }(),
-                C = function() {
-                    function D() {
-                        this.events = {}, this.transport = new B(this.events);
-                    }
-                    return D.prototype.send = function(E) {
-                        this.transport.send(E);
-                    }, D.prototype.connect = function(E) {
-                        this.transport.connect(E);
-                    }, D.prototype.close = function(E, F) {
-                        this.transport.close(E, F);
-                    }, Object.defineProperty(D.prototype, 'isOpen', {
-                        get: function() {
-                            return this.transport.isOpen;
-                        },
-                        enumerable: !1,
-                        configurable: !0
-                    }), D;
-                }();
-
-            function D(E, F) {
-                for (var G = E[F++], H = '', I = 0, J = F, K = F + G; J < K; J++) {
-                    var L = E[J];
-                    if (0 != (128 & L))
-                        if (192 != (224 & L))
-                            if (224 != (240 & L)) {
-                                if (240 != (248 & L))
-                                    throw new Error('Invalid byte ' + L.toString(16));
-                                (I = (7 & L) << 18 | (63 & E[++J]) << 12 | (63 & E[++J]) << 6 | (63 & E[++J]) << 0) >= 65536 ? (I -= 65536, H += String.fromCharCode(55296 + (I >>> 10), 56320 + (1023 & I))) : H += String.fromCharCode(I);
-                            } else
-                                H += String.fromCharCode((15 & L) << 12 | (63 & E[++J]) << 6 | (63 & E[++J]) << 0);
-                    else
-                        H += String.fromCharCode((31 & L) << 6 | 63 & E[++J]);
-                    else
-                        H += String.fromCharCode(L);
-                }
-                return H;
-            }
-
-            function E(F) {
-                void 0 === F && (F = '');
-                for (var G = 0, H = 0, I = 0, J = F.length; I < J; I++)
-                    (G = F.charCodeAt(I)) < 128 ? H += 1 : G < 2048 ? H += 2 : G < 55296 || G >= 57344 ? H += 3 : (I++, H += 4);
-                return H + 1;
-            }
-            d.Protocol = void 0, (y = d.Protocol || (d.Protocol = {}))[y.HANDSHAKE = 9] = 'HANDSHAKE', y[y.JOIN_ROOM = 10] = 'JOIN_ROOM', y[y.ERROR = 11] = 'ERROR', y[y.LEAVE_ROOM = 12] = 'LEAVE_ROOM', y[y.ROOM_DATA = 13] = 'ROOM_DATA', y[y.ROOM_STATE = 14] = 'ROOM_STATE', y[y.ROOM_STATE_PATCH = 15] = 'ROOM_STATE_PATCH', y[y.ROOM_DATA_SCHEMA = 16] = 'ROOM_DATA_SCHEMA', y[y.ROOM_DATA_BYTES = 17] = 'ROOM_DATA_BYTES', d.ErrorCode = void 0, (x = d.ErrorCode || (d.ErrorCode = {}))[x.MATCHMAKE_NO_HANDLER = 4210] = 'MATCHMAKE_NO_HANDLER', x[x.MATCHMAKE_INVALID_CRITERIA = 4211] = 'MATCHMAKE_INVALID_CRITERIA', x[x.MATCHMAKE_INVALID_ROOM_ID = 4212] = 'MATCHMAKE_INVALID_ROOM_ID', x[x.MATCHMAKE_UNHANDLED = 4213] = 'MATCHMAKE_UNHANDLED', x[x.MATCHMAKE_EXPIRED = 4214] = 'MATCHMAKE_EXPIRED', x[x.AUTH_FAILED = 4215] = 'AUTH_FAILED', x[x.APPLICATION_ERROR = 4216] = 'APPLICATION_ERROR';
-            var F = {};
-
-            function G(H, I) {
-                F[H] = I;
-            }
-
-            function H(I) {
-                var J = F[I];
-                if (!J)
-                    throw new Error('missing serializer: ' + I);
-                return J;
-            }
-            var I = function() {
-                    return {
-                        emit: function(J) {
-                            for (var K = [], L = 1; L < arguments.length; L++)
-                                K[L - 1] = arguments[L];
-                            for (var M = this.events[J] || [], N = 0, O = M.length; N < O; N++)
-                                M[N].apply(M, K);
-                        },
-                        events: {},
-                        on: function(J, K) {
-                            var L, M = this;
-                            return (null === (L = this.events[J]) || void 0 === L ? void 0 : L.push(K)) || (this.events[J] = [K]),
-                                function() {
-                                    var N;
-                                    M.events[J] = null === (N = M.events[J]) || void 0 === N ? void 0 : N.filter(function(O) {
-                                        return K !== O;
-                                    });
-                                };
-                        }
-                    };
-                },
-                J = function() {
-                    function K() {
-                        this.handlers = [];
-                    }
-                    return K.prototype.register = function(L, M) {
-                        return this.handlers.push(L), this;
-                    }, K.prototype.invoke = function() {
-                        for (var L = this, M = [], N = 0; N < arguments.length; N++)
-                            M[N] = arguments[N];
-                        this.handlers.forEach(function(O) {
-                            return O.apply(L, M);
-                        });
-                    }, K.prototype.invokeAsync = function() {
-                        for (var L = this, M = [], N = 0; N < arguments.length; N++)
-                            M[N] = arguments[N];
-                        return Promise.all(this.handlers.map(function(O) {
-                            return O.apply(L, M);
-                        }));
-                    }, K.prototype.remove = function(L) {
-                        var M = this.handlers.indexOf(L);
-                        this.handlers[M] = this.handlers[this.handlers.length - 1], this.handlers.pop();
-                    }, K.prototype.clear = function() {
-                        this.handlers = [];
-                    }, K;
-                }();
-
-            function K() {
-                var L = new J();
-
-                function M(N) {
-                    return L.register(N, null === this);
-                }
-                return M.once = function(N) {
-                    var O = function() {
-                        for (var P = [], Q = 0; Q < arguments.length; Q++)
-                            P[Q] = arguments[Q];
-                        N.apply(this, P), L.remove(O);
-                    };
-                    L.register(O);
-                }, M.remove = function(N) {
-                    return L.remove(N);
-                }, M.invoke = function() {
-                    for (var N = [], O = 0; O < arguments.length; O++)
-                        N[O] = arguments[O];
-                    return L.invoke.apply(L, N);
-                }, M.invokeAsync = function() {
-                    for (var N = [], O = 0; O < arguments.length; O++)
-                        N[O] = arguments[O];
-                    return L.invokeAsync.apply(L, N);
-                }, M.clear = function() {
-                    return L.clear();
-                }, M;
-            }
-
-            function L(M) {
-                var N = {
-                    exports: {}
+            return q = {
+                next: j(0),
+                throw: j(1),
+                return: j(2)
+            }, 'function' == typeof Symbol && (q[Symbol.iterator] = function () {
+                return this;
+            }), q;
+            function s(t) {
+                return function (u) {
+                    return k([
+                        t,
+                        u
+                    ]);
                 };
-                return M(N, N.exports), N.exports;
             }
-            'undefined' != typeof globalThis ? globalThis : 'undefined' != typeof window ? window : void 0 !== a || 'undefined' != typeof self && self;
-            var M = L(function(N, O) {
-                    ! function(P, Q) {
-                        Q(O);
-                    }(0, function(P) {
-                        var Q = function(R, S) {
-                            return Q = Object.setPrototypeOf || {
-                                __proto__: []
-                            }
-                            instanceof Array && function(T, U) {
-                                T.__proto__ = U;
-                            } || function(T, U) {
-                                for (var V in U)
-                                    Object.prototype.hasOwnProperty.call(U, V) && (T[V] = U[V]);
-                            }, Q(R, S);
-                        };
-
-                        function R(S, T) {
-                            if ('function' != typeof T && null !== T)
-                                throw new TypeError('Class extends value ' + String(T) + ' is not a constructor or null');
-
-                            function U() {
-                                this.constructor = S;
-                            }
-                            Q(S, T), S.prototype = null === T ? Object.create(T) : (U.prototype = T.prototype, new U());
-                        }
-
-                        function S(T, U, V, W) {
-                            var X, Y = arguments.length,
-                                Z = Y < 3 ? U : null === W ? W = Object.getOwnPropertyDescriptor(U, V) : W;
-                            if ('object' == typeof Reflect && 'function' == typeof Reflect.decorate)
-                                Z = Reflect.decorate(T, U, V, W);
-                            else
-                                for (var $ = T.length - 1; $ >= 0; $--)
-                                    (X = T[$]) && (Z = (Y < 3 ? X(Z) : Y > 3 ? X(U, V, Z) : X(U, V)) || Z);
-                            return Y > 3 && Z && Object.defineProperty(U, V, Z), Z;
-                        }
-
-                        function T(U, V, W) {
-                            if (W || 2 === arguments.length)
-                                for (var X, Y = 0, Z = V.length; Y < Z; Y++)
-                                    !X && Y in V || (X || (X = Array.prototype.slice.call(V, 0, Y)), X[Y] = V[Y]);
-                            return U.concat(S || Array.prototype.slice.call(V));
-                        }
-                        var U, V = 255,
-                            W = 213;
-                        P.OPERATION = void 0, (U = P.OPERATION || (P.OPERATION = {}))[U.ADD = 128] = 'ADD', U[U.REPLACE = 0] = 'REPLACE', U[U.DELETE = 64] = 'DELETE', U[U.DELETE_AND_ADD = 192] = 'DELETE_AND_ADD', U[U.TOUCH = 1] = 'TOUCH', U[U.CLEAR = 10] = 'CLEAR';
-                        var X = function() {
-                            function Y(Z, $, ab) {
-                                this.changed = !1, this.changes = new Map(), this.allChanges = new Set(), this.caches = {}, this.currentCustomOperation = 0, this.ref = Z, this.setParent($, ab);
-                            }
-                            return Y.prototype.setParent = function(Z, $, ab) {
-                                var bb = this;
-                                if (this.indexes || (this.indexes = this.ref instanceof _sc ? this.ref._definition.indexes : {}), this.parent = Z, this.parentIndex = ab, $)
-                                    if (this.root = $, this.ref instanceof _sc) {
-                                        var cb = this.ref._definition;
-                                        for (var db in cb.schema) {
-                                            var eb = this.ref[db];
-                                            if (eb && eb.$changes) {
-                                                var fb = cb.indexes[db];
-                                                eb.$changes.setParent(this.ref, $, fb);
-                                            }
-                                        }
-                                    } else
-                                        'object' == typeof this.ref && this.ref.forEach(function(cb, db) {
-                                            if (cb instanceof _sc) {
-                                                var eb = cb.$changes,
-                                                    fb = bb.ref.$changes.indexes[db];
-                                                eb.setParent(bb.ref, bb.root, fb);
-                                            }
-                                        });
-                            }, Y.prototype.operation = function(Z) {
-                                this.changes.set(--this.currentCustomOperation, Z);
-                            }, Y.prototype.change = function(Z, $) {
-                                void 0 === $ && ($ = P.OPERATION.ADD);
-                                var ab = 'number' == typeof Z ? Z : this.indexes[Z];
-                                this.assertValidIndex(ab, Z);
-                                var bb = this.changes.get(ab);
-                                bb && bb.op !== P.OPERATION.DELETE && bb.op !== P.OPERATION.TOUCH || this.changes.set(ab, {
-                                    op: bb && bb.op === P.OPERATION.DELETE ? P.OPERATION.DELETE_AND_ADD : $,
-                                    index: ab
-                                }), this.allChanges.add(ab), this.changed = !0, this.touchParents();
-                            }, Y.prototype.touch = function(Z) {
-                                var $ = 'number' == typeof Z ? Z : this.indexes[Z];
-                                this.assertValidIndex($, Z), this.changes.has($) || this.changes.set($, {
-                                    op: P.OPERATION.TOUCH,
-                                    index: $
-                                }), this.allChanges.add($), this.touchParents();
-                            }, Y.prototype.touchParents = function() {
-                                this.parent && this.parent.$changes.touch(this.parentIndex);
-                            }, Y.prototype.getType = function(Z) {
-                                if (this.ref._definition)
-                                    return (Y = this.ref._definition).schema[Y.fieldsByIndex[Z]];
-                                var $, ab = ($ = this.parent._definition).schema[$.fieldsByIndex[this.parentIndex]];
-                                return Object.values(ab)[0];
-                            }, Y.prototype.getChildrenFilter = function() {
-                                var Z = this.parent._definition.childFilters;
-                                return Z && Z[this.parentIndex];
-                            }, Y.prototype.getValue = function(Z) {
-                                return this.ref.getByIndex(Z);
-                            }, Y.prototype.delete = function(Z) {
-                                var $ = 'number' == typeof Z ? Z : this.indexes[Z];
-                                if (void 0 !== $) {
-                                    var ab = this.getValue($);
-                                    this.changes.set($, {
-                                        op: P.OPERATION.DELETE,
-                                        index: $
-                                    }), this.allChanges.delete($), delete this.caches[$], ab && ab.$changes && (ab.$changes.parent = void 0), this.changed = !0, this.touchParents();
-                                } else
-                                    console.warn('@colyseus/schema '.concat(this.ref.constructor.name, ': trying to delete non-existing index: ').concat(Z, ' (').concat($, ')'));
-                            }, Y.prototype.discard = function(Z, $) {
-                                var ab = this;
-                                void 0 === Z && (Z = !1), void 0 === $ && ($ = !1), this.ref instanceof _sc || this.changes.forEach(function(bb) {
-                                    if (bb.op === P.OPERATION.DELETE) {
-                                        var cb = ab.ref.getIndex(bb.index);
-                                        delete ab.indexes[cb];
-                                    }
-                                }), this.changes.clear(), this.changed = Z, $ && this.allChanges.clear(), this.currentCustomOperation = 0;
-                            }, Y.prototype.discardAll = function() {
-                                var Z = this;
-                                this.changes.forEach(function($) {
-                                    var ab = Z.getValue($.index);
-                                    ab && ab.$changes && ab.$changes.discardAll();
-                                }), this.discard();
-                            }, Y.prototype.cache = function(Z, $) {
-                                this.caches[Z] = $;
-                            }, Y.prototype.clone = function() {
-                                return new Y(this.ref, this.parent, this.root);
-                            }, Y.prototype.ensureRefId = function() {
-                                void 0 === this.refId && (this.refId = this.root.getNextUniqueId());
-                            }, Y.prototype.assertValidIndex = function(Z, $) {
-                                if (void 0 === Z)
-                                    throw new Error('ChangeTree: missing index for field "'.concat($, '"'));
-                            }, Y;
-                        }();
-
-                        function Y(Z, $, ab, bb) {
-                            return Z[$] || (Z[$] = []), Z[$].push(ab), null == bb || bb.forEach(function(cb, db) {
-                                    return ab(cb, db);
-                                }),
-                                function() {
-                                    return n(Z[$], Z[$].indexOf(ab));
-                                };
-                        }
-
-                        function Z($) {
-                            var ab = this,
-                                bb = 'string' != typeof this.$changes.getType();
-                            this.$items.forEach(function(cb, db) {
-                                $.push({
-                                    refId: ab.$changes.refId,
-                                    op: P.OPERATION.DELETE,
-                                    field: db,
-                                    value: void 0,
-                                    previousValue: cb
-                                }), bb && ab.$changes.root.removeRef(cb.$changes.refId);
-                            });
-                        }
-
-                        function $(ab, bb) {
-                            if (-1 === bb || bb >= ab.length)
-                                return !1;
-                            for (var cb = ab.length - 1, db = bb; db < cb; db++)
-                                ab[db] = ab[db + 1];
-                            return ab.length = cb, !0;
-                        }
-                        var ab = function(bb, cb) {
-                            var db = bb.toString(),
-                                eb = cb.toString();
-                            return db < eb ? -1 : db > eb ? 1 : 0;
-                        };
-
-                        function bb(cb) {
-                            return cb.$proxy = !0, cb = new Proxy(cb, {
-                                get: function(db, eb) {
-                                    return 'symbol' == typeof eb || isNaN(eb) ? db[eb] : db.at(eb);
-                                },
-                                set: function(db, eb, fb) {
-                                    if ('symbol' == typeof eb || isNaN(eb))
-                                        db[eb] = fb;
-                                    else {
-                                        var gb = Array.from(db.$items.keys()),
-                                            hb = parseInt(gb[eb] || eb);
-                                        null == fb ? db.deleteAt(hb) : db.setAt(hb, fb);
-                                    }
-                                    return !0;
-                                },
-                                deleteProperty: function(db, eb) {
-                                    return 'number' == typeof eb ? db.deleteAt(eb) : delete db[eb], !0;
-                                }
-                            });
-                        }
-                        var cb = function() {
-                            function db() {
-                                for (var eb = [], fb = 0; fb < arguments.length; fb++)
-                                    eb[fb] = arguments[fb];
-                                this.$changes = new X(this), this.$items = new Map(), this.$indexes = new Map(), this.$refId = 0, this.push.apply(this, eb);
-                            }
-                            return db.prototype.onAdd = function(eb, fb) {
-                                return void 0 === fb && (fb = !0), Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.ADD, eb, fb ? this.$items : void 0);
-                            }, db.prototype.onRemove = function(eb) {
-                                return Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.DELETE, eb);
-                            }, db.prototype.onChange = function(eb) {
-                                return Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.REPLACE, eb);
-                            }, db.is = function(eb) {
-                                return Array.isArray(eb) || void 0 !== eb.array;
-                            }, Object.defineProperty(db.prototype, 'length', {
-                                get: function() {
-                                    return this.$items.size;
-                                },
-                                set: function(eb) {
-                                    0 === eb ? this.clear() : this.splice(eb, this.length - eb);
-                                },
-                                enumerable: !1,
-                                configurable: !0
-                            }), db.prototype.push = function() {
-                                for (var eb, fb = this, gb = [], hb = 0; hb < arguments.length; hb++)
-                                    gb[hb] = arguments[hb];
-                                return gb.forEach(function(ib) {
-                                    eb = fb.$refId++, fb.setAt(eb, ib);
-                                }), eb;
-                            }, db.prototype.pop = function() {
-                                var eb = Array.from(this.$indexes.values()).pop();
-                                if (void 0 !== eb) {
-                                    this.$changes.delete(eb), this.$indexes.delete(eb);
-                                    var fb = this.$items.get(eb);
-                                    return this.$items.delete(eb), fb;
-                                }
-                            }, db.prototype.at = function(eb) {
-                                var fb = Array.from(this.$items.keys())[eb];
-                                return this.$items.get(fb);
-                            }, db.prototype.setAt = function(eb, fb) {
-                                var gb, hb;
-                                void 0 !== fb.$changes && fb.$changes.setParent(this, this.$changes.root, eb);
-                                var ib = null !== (hb = null === (gb = this.$changes.indexes[eb]) || void 0 === gb ? void 0 : gb.op) && void 0 !== hb ? hb : P.OPERATION.ADD;
-                                this.$changes.indexes[eb] = eb, this.$indexes.set(eb, eb), this.$items.set(eb, fb), this.$changes.change(eb, ib);
-                            }, db.prototype.deleteAt = function(eb) {
-                                var fb = Array.from(this.$items.keys())[eb];
-                                return void 0 !== fb && this.$deleteAt(fb);
-                            }, db.prototype.$deleteAt = function(eb) {
-                                return this.$changes.delete(eb), this.$indexes.delete(eb), this.$items.delete(eb);
-                            }, db.prototype.clear = function(eb) {
-                                this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), eb && Z.call(this, eb), this.$items.clear(), this.$changes.operation({
-                                    index: 0,
-                                    op: P.OPERATION.CLEAR
-                                }), this.$changes.touchParents();
-                            }, db.prototype.concat = function() {
-                                for (var eb, fb = [], gb = 0; gb < arguments.length; gb++)
-                                    fb[gb] = arguments[gb];
-                                return new(db.bind.apply(db, T([void 0], (eb = Array.from(this.$items.values())).concat.apply(eb, fb), !1)))();
-                            }, db.prototype.join = function(eb) {
-                                return Array.from(this.$items.values()).join(eb);
-                            }, db.prototype.reverse = function() {
-                                var eb = this,
-                                    fb = Array.from(this.$items.keys());
-                                return Array.from(this.$items.values()).reverse().forEach(function(gb, hb) {
-                                    eb.setAt(fb[hb], gb);
-                                }), this;
-                            }, db.prototype.shift = function() {
-                                var eb = Array.from(this.$items.keys()).shift();
-                                if (void 0 !== eb) {
-                                    var fb = this.$items.get(eb);
-                                    return this.$deleteAt(eb), fb;
-                                }
-                            }, db.prototype.slice = function(eb, fb) {
-                                var gb = new db();
-                                return gb.push.apply(gb, Array.from(this.$items.values()).slice(eb, fb)), gb;
-                            }, db.prototype.sort = function(eb) {
-                                var fb = this;
-                                void 0 === eb && (eb = ab);
-                                var gb = Array.from(this.$items.keys());
-                                return Array.from(this.$items.values()).sort(eb).forEach(function(hb, ib) {
-                                    fb.setAt(gb[ib], hb);
-                                }), this;
-                            }, db.prototype.splice = function(eb, fb) {
-                                void 0 === fb && (fb = this.length - eb);
-                                for (var gb = Array.from(this.$items.keys()), hb = [], ib = eb; ib < eb + fb; ib++)
-                                    hb.push(this.$items.get(gb[ib])), this.$deleteAt(gb[ib]);
-                                return hb;
-                            }, db.prototype.unshift = function() {
-                                for (var eb = this, fb = [], gb = 0; gb < arguments.length; gb++)
-                                    fb[gb] = arguments[gb];
-                                var hb = this.length,
-                                    ib = fb.length,
-                                    jb = Array.from(this.$items.values());
-                                return fb.forEach(function(kb, lb) {
-                                    eb.setAt(lb, kb);
-                                }), jb.forEach(function(kb, lb) {
-                                    eb.setAt(ib + lb, kb);
-                                }), hb + ib;
-                            }, db.prototype.indexOf = function(eb, fb) {
-                                return Array.from(this.$items.values()).indexOf(eb, fb);
-                            }, db.prototype.lastIndexOf = function(eb, fb) {
-                                return void 0 === fb && (fb = this.length - 1), Array.from(this.$items.values()).lastIndexOf(eb, fb);
-                            }, db.prototype.every = function(eb, fb) {
-                                return Array.from(this.$items.values()).every(eb, fb);
-                            }, db.prototype.some = function(eb, fb) {
-                                return Array.from(this.$items.values()).some(eb, fb);
-                            }, db.prototype.forEach = function(eb, fb) {
-                                Array.from(this.$items.values()).forEach(eb, fb);
-                            }, db.prototype.map = function(eb, fb) {
-                                return Array.from(this.$items.values()).map(eb, fb);
-                            }, db.prototype.filter = function(eb, fb) {
-                                return Array.from(this.$items.values()).filter(eb, fb);
-                            }, db.prototype.reduce = function(eb, fb) {
-                                return Array.prototype.reduce.apply(Array.from(this.$items.values()), arguments);
-                            }, db.prototype.reduceRight = function(eb, fb) {
-                                return Array.prototype.reduceRight.apply(Array.from(this.$items.values()), arguments);
-                            }, db.prototype.find = function(eb, fb) {
-                                return Array.from(this.$items.values()).find(eb, fb);
-                            }, db.prototype.findIndex = function(eb, fb) {
-                                return Array.from(this.$items.values()).findIndex(eb, fb);
-                            }, db.prototype.fill = function(eb, fb, gb) {
-                                throw new Error('ArraySchema#fill() not implemented');
-                            }, db.prototype.copyWithin = function(eb, fb, gb) {
-                                throw new Error('ArraySchema#copyWithin() not implemented');
-                            }, db.prototype.toString = function() {
-                                return this.$items.toString();
-                            }, db.prototype.toLocaleString = function() {
-                                return this.$items.toLocaleString();
-                            }, db.prototype[Symbol.iterator] = function() {
-                                return Array.from(this.$items.values())[Symbol.iterator]();
-                            }, db.prototype.entries = function() {
-                                return this.$items.entries();
-                            }, db.prototype.keys = function() {
-                                return this.$items.keys();
-                            }, db.prototype.values = function() {
-                                return this.$items.values();
-                            }, db.prototype.includes = function(eb, fb) {
-                                return Array.from(this.$items.values()).includes(eb, fb);
-                            }, db.prototype.flatMap = function(eb, fb) {
-                                throw new Error('ArraySchema#flatMap() is not supported.');
-                            }, db.prototype.flat = function(eb) {
-                                throw new Error('ArraySchema#flat() is not supported.');
-                            }, db.prototype.findLast = function() {
-                                var eb = Array.from(this.$items.values());
-                                return eb.findLast.apply(eb, arguments);
-                            }, db.prototype.findLastIndex = function() {
-                                var eb = Array.from(this.$items.values());
-                                return eb.findLastIndex.apply(eb, arguments);
-                            }, db.prototype.setIndex = function(eb, fb) {
-                                this.$indexes.set(eb, fb);
-                            }, db.prototype.getIndex = function(eb) {
-                                return this.$indexes.get(eb);
-                            }, db.prototype.getByIndex = function(eb) {
-                                return this.$items.get(this.$indexes.get(eb));
-                            }, db.prototype.deleteByIndex = function(eb) {
-                                var fb = this.$indexes.get(eb);
-                                this.$items.delete(fb), this.$indexes.delete(eb);
-                            }, db.prototype.toArray = function() {
-                                return Array.from(this.$items.values());
-                            }, db.prototype.toJSON = function() {
-                                return this.toArray().map(function(eb) {
-                                    return 'function' == typeof eb.toJSON ? eb.toJSON() : eb;
-                                });
-                            }, db.prototype.clone = function(eb) {
-                                return eb ? new(db.bind.apply(db, T([void 0], Array.from(this.$items.values()), !1)))() : new(db.bind.apply(db, T([void 0], this.map(function(fb) {
-                                    return fb.$changes ? fb.clone() : fb;
-                                }), !1)))();
-                            }, db;
-                        }();
-
-                        function db(eb) {
-                            return eb.$proxy = !0, eb = new Proxy(eb, {
-                                get: function(fb, gb) {
-                                    return 'symbol' != typeof gb && void 0 === fb[gb] ? fb.get(gb) : fb[gb];
-                                },
-                                set: function(fb, gb, hb) {
-                                    return 'symbol' != typeof gb && -1 === gb.indexOf('$') && 'onAdd' !== gb && 'onRemove' !== gb && 'onChange' !== gb ? fb.set(gb, hb) : fb[gb] = hb, !0;
-                                },
-                                deleteProperty: function(fb, gb) {
-                                    return fb.delete(gb), !0;
-                                }
-                            });
-                        }
-                        var eb = function() {
-                                function fb(gb) {
-                                    var hb = this;
-                                    if (this.$changes = new X(this), this.$items = new Map(), this.$indexes = new Map(), this.$refId = 0, gb)
-                                        if (gb instanceof Map || gb instanceof fb)
-                                            gb.forEach(function(ib, jb) {
-                                                return hb.set(jb, ib);
-                                            });
-                                        else
-                                            for (var ib in gb)
-                                                this.set(ib, gb[ib]);
-                                }
-                                return fb.prototype.onAdd = function(gb, hb) {
-                                    return void 0 === hb && (hb = !0), Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.ADD, gb, hb ? this.$items : void 0);
-                                }, fb.prototype.onRemove = function(gb) {
-                                    return Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.DELETE, gb);
-                                }, fb.prototype.onChange = function(gb) {
-                                    return Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.REPLACE, gb);
-                                }, fb.is = function(gb) {
-                                    return void 0 !== gb.map;
-                                }, fb.prototype[Symbol.iterator] = function() {
-                                    return this.$items[Symbol.iterator]();
-                                }, Object.defineProperty(fb.prototype, Symbol.toStringTag, {
-                                    get: function() {
-                                        return this.$items[Symbol.toStringTag];
-                                    },
-                                    enumerable: !1,
-                                    configurable: !0
-                                }), fb.prototype.set = function(gb, hb) {
-                                    if (null == hb)
-                                        throw new Error('MapSchema#set(\''.concat(gb, '\', ').concat(hb, '): trying to set ').concat(hb, ' value on \'').concat(gb, '\'.'));
-                                    var ib = void 0 !== this.$changes.indexes[gb],
-                                        jb = ib ? this.$changes.indexes[gb] : this.$refId++,
-                                        kb = ib ? P.OPERATION.REPLACE : P.OPERATION.ADD,
-                                        lb = void 0 !== hb.$changes;
-                                    return lb && hb.$changes.setParent(this, this.$changes.root, jb), ib ? lb && this.$items.get(gb) !== hb && (kb = P.OPERATION.ADD) : (this.$changes.indexes[gb] = jb, this.$indexes.set(jb, gb)), this.$items.set(gb, hb), this.$changes.change(gb, kb), this;
-                                }, fb.prototype.get = function(gb) {
-                                    return this.$items.get(gb);
-                                }, fb.prototype.delete = function(gb) {
-                                    return this.$changes.delete(gb), this.$items.delete(gb);
-                                }, fb.prototype.clear = function(gb) {
-                                    this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), gb && Z.call(this, gb), this.$items.clear(), this.$changes.operation({
-                                        index: 0,
-                                        op: P.OPERATION.CLEAR
-                                    }), this.$changes.touchParents();
-                                }, fb.prototype.has = function(gb) {
-                                    return this.$items.has(gb);
-                                }, fb.prototype.forEach = function(gb) {
-                                    this.$items.forEach(gb);
-                                }, fb.prototype.entries = function() {
-                                    return this.$items.entries();
-                                }, fb.prototype.keys = function() {
-                                    return this.$items.keys();
-                                }, fb.prototype.values = function() {
-                                    return this.$items.values();
-                                }, Object.defineProperty(fb.prototype, 'size', {
-                                    get: function() {
-                                        return this.$items.size;
-                                    },
-                                    enumerable: !1,
-                                    configurable: !0
-                                }), fb.prototype.setIndex = function(gb, hb) {
-                                    this.$indexes.set(gb, hb);
-                                }, fb.prototype.getIndex = function(gb) {
-                                    return this.$indexes.get(gb);
-                                }, fb.prototype.getByIndex = function(gb) {
-                                    return this.$items.get(this.$indexes.get(gb));
-                                }, fb.prototype.deleteByIndex = function(gb) {
-                                    var hb = this.$indexes.get(gb);
-                                    this.$items.delete(hb), this.$indexes.delete(gb);
-                                }, fb.prototype.toJSON = function() {
-                                    var gb = {};
-                                    return this.forEach(function(hb, ib) {
-                                        gb[ib] = 'function' == typeof hb.toJSON ? hb.toJSON() : hb;
-                                    }), gb;
-                                }, fb.prototype.clone = function(gb) {
-                                    var hb;
-                                    return gb ? hb = Object.assign(new fb(), this) : (hb = new fb(), this.forEach(function(ib, jb) {
-                                        ib.$changes ? hb.set(jb, ib.clone()) : hb.set(jb, ib);
-                                    })), hb;
-                                }, fb;
-                            }(),
-                            fb = {};
-
-                        function gb(hb, ib) {
-                            fb[hb] = ib;
-                        }
-
-                        function hb(ib) {
-                            return fb[ib];
-                        }
-                        var ib = function() {
-                            function jb() {
-                                this.indexes = {}, this.fieldsByIndex = {}, this.deprecated = {}, this.descriptors = {};
-                            }
-                            return jb.create = function(kb) {
-                                var lb = new jb();
-                                return lb.schema = Object.assign({}, kb && kb.schema || {}), lb.indexes = Object.assign({}, kb && kb.indexes || {}), lb.fieldsByIndex = Object.assign({}, kb && kb.fieldsByIndex || {}), lb.descriptors = Object.assign({}, kb && kb.descriptors || {}), lb.deprecated = Object.assign({}, kb && kb.deprecated || {}), lb;
-                            }, jb.prototype.addField = function(kb, lb) {
-                                var mb = this.getNextFieldIndex();
-                                this.fieldsByIndex[mb] = kb, this.indexes[kb] = mb, this.schema[kb] = Array.isArray(lb) ? {
-                                    array: lb[0]
-                                } : lb;
-                            }, jb.prototype.hasField = function(kb) {
-                                return void 0 !== this.indexes[kb];
-                            }, jb.prototype.addFilter = function(kb, lb) {
-                                return this.filters || (this.filters = {}, this.indexesWithFilters = []), this.filters[this.indexes[kb]] = lb, this.indexesWithFilters.push(this.indexes[kb]), !0;
-                            }, jb.prototype.addChildrenFilter = function(kb, lb) {
-                                var mb = this.indexes[kb],
-                                    nb = this.schema[kb];
-                                if (hb(Object.keys(nb)[0]))
-                                    return this.childFilters || (this.childFilters = {}), this.childFilters[mb] = lb, !0;
-                                console.warn('@filterChildren: field \''.concat(kb, '\' can\'t have children. Ignoring filter.'));
-                            }, jb.prototype.getChildrenFilter = function(kb) {
-                                return this.childFilters && this.childFilters[this.indexes[kb]];
-                            }, jb.prototype.getNextFieldIndex = function() {
-                                return Object.keys(this.schema || {}).length;
-                            }, jb;
-                        }();
-
-                        function jb(kb) {
-                            return kb._context && kb._context.useFilters;
-                        }
-                        var kb = function() {
-                                function lb() {
-                                    this.types = {}, this.schemas = new Map(), this.useFilters = !1;
-                                }
-                                return lb.prototype.has = function(mb) {
-                                    return this.schemas.has(mb);
-                                }, lb.prototype.get = function(mb) {
-                                    return this.types[mb];
-                                }, lb.prototype.add = function(mb, nb) {
-                                    void 0 === nb && (nb = this.schemas.size), mb._definition = ib.create(mb._definition), mb._typeid = nb, this.types[nb] = mb, this.schemas.set(mb, nb);
-                                }, lb.create = function(mb) {
-                                    return void 0 === mb && (mb = {}),
-                                        function(nb) {
-                                            return mb.context || (mb.context = new lb()), A(nb, mb);
-                                        };
-                                }, lb;
-                            }(),
-                            lb = new kb();
-
-                        function mb(nb, ob) {
-                            return void 0 === ob && (ob = {}),
-                                function(pb, qb) {
-                                    var rb = ob.context || lb,
-                                        sb = pb.constructor;
-                                    if (sb._context = rb, !nb)
-                                        throw new Error(''.concat(sb.name, ': @type() reference provided for "').concat(qb, '" is undefined. Make sure you don\'t have any circular dependencies.'));
-                                    rb.has(sb) || rb.add(sb);
-                                    var tb = sb._definition;
-                                    if (tb.addField(qb, nb), tb.descriptors[qb]) {
-                                        if (tb.deprecated[qb])
-                                            return;
-                                        try {
-                                            throw new Error('@colyseus/schema: Duplicate \''.concat(qb, '\' definition on \'').concat(sb.name, '\'.\nCheck @type() annotation'));
-                                        } catch (nb) {
-                                            var ub = nb.stack.split('\n')[4].trim();
-                                            throw new Error(''.concat(nb.message, ' ').concat(ub));
-                                        }
-                                    }
-                                    var ub = cb.is(nb),
-                                        vb = !ub && eb.is(nb);
-                                    if ('string' != typeof nb && !_sc.is(nb)) {
-                                        var wb = Object.values(nb)[0];
-                                        'string' == typeof wb || rb.has(wb) || rb.add(wb);
-                                    }
-                                    if (ob.manual)
-                                        tb.descriptors[qb] = {
-                                            enumerable: !0,
-                                            configurable: !0,
-                                            writable: !0
-                                        };
-                                    else {
-                                        var wb = '_'.concat(qb);
-                                        tb.descriptors[wb] = {
-                                            enumerable: !1,
-                                            configurable: !1,
-                                            writable: !0
-                                        }, tb.descriptors[qb] = {
-                                            get: function() {
-                                                return this[wb];
-                                            },
-                                            set: function(xb) {
-                                                xb !== this[wb] && (null != xb ? (!ub || xb instanceof cb || (xb = new(cb.bind.apply(cb, T([void 0], xb, !1)))()), !vb || xb instanceof eb || (xb = new eb(xb)), void 0 === xb.$proxy && (vb ? xb = db(xb) : ub && (xb = bb(xb))), this.$changes.change(qb), xb.$changes && xb.$changes.setParent(this, this.$changes.root, this._definition.indexes[qb])) : this[wb] && this.$changes.delete(qb), this[wb] = xb);
-                                            },
-                                            enumerable: !0,
-                                            configurable: !0
-                                        };
-                                    }
-                                };
-                        }
-
-                        function nb(ob) {
-                            return function(pb, qb) {
-                                var rb = pb.constructor;
-                                rb._definition.addFilter(qb, ob) && (rb._context.useFilters = !0);
+            function t(u) {
+                if (e)
+                    throw new TypeError('Generator is already executing.');
+                for (; q && (q = 0, u[0] && (r = 0)), r;)
+                    try {
+                        if (e = 1, o && (g = 2 & u[0] ? o.return : u[0] ? o.throw || ((g = o.return) && g.call(o), 0) : o.next) && !(g = g.call(o, u[1])).done)
+                            return g;
+                        switch (o = 0, g && (u = [
+                                2 & u[0],
+                                g.value
+                            ]), u[0]) {
+                        case 0:
+                        case 1:
+                            g = u;
+                            break;
+                        case 4:
+                            return r.label++, {
+                                value: u[1],
+                                done: !1
                             };
-                        }
-
-                        function ob(pb) {
-                            return function(qb, rb) {
-                                var sb = qb.constructor;
-                                sb._definition.addChildrenFilter(rb, pb) && (sb._context.useFilters = !0);
-                            };
-                        }
-
-                        function pb(qb) {
-                            return void 0 === qb && (qb = !0),
-                                function(rb, sb) {
-                                    var tb = rb.constructor._definition;
-                                    tb.deprecated[sb] = !0, qb && (tb.descriptors[sb] = {
-                                        get: function() {
-                                            throw new Error(''.concat(sb, ' is deprecated.'));
-                                        },
-                                        set: function(ub) {},
-                                        enumerable: !1,
-                                        configurable: !0
-                                    });
-                                };
-                        }
-
-                        function qb(rb, sb, tb) {
-                            for (var ub in (void 0 === tb && (tb = {}), tb.context || (tb.context = rb._context || tb.context || lb), sb))
-                                mb(sb[ub], tb)(rb.prototype, ub);
-                            return rb;
-                        }
-
-                        function rb(sb) {
-                            for (var tb = 0, ub = 0, vb = 0, wb = sb.length; vb < wb; vb++)
-                                (tb = sb.charCodeAt(vb)) < 128 ? ub += 1 : tb < 2048 ? ub += 2 : tb < 55296 || tb >= 57344 ? ub += 3 : (vb++, ub += 4);
-                            return ub;
-                        }
-
-                        function sb(tb, ub, vb) {
-                            for (var wb = 0, xb = 0, yb = vb.length; xb < yb; xb++)
-                                (wb = vb.charCodeAt(xb)) < 128 ? tb[ub++] = wb : wb < 2048 ? (tb[ub++] = 192 | wb >> 6, tb[ub++] = 128 | 63 & wb) : wb < 55296 || wb >= 57344 ? (tb[ub++] = 224 | wb >> 12, tb[ub++] = 128 | wb >> 6 & 63, tb[ub++] = 128 | 63 & wb) : (xb++, wb = 65536 + ((1023 & wb) << 10 | 1023 & vb.charCodeAt(xb)), tb[ub++] = 240 | wb >> 18, tb[ub++] = 128 | wb >> 12 & 63, tb[ub++] = 128 | wb >> 6 & 63, tb[ub++] = 128 | 63 & wb);
-                        }
-
-                        function tb(ub, vb) {
-                            ub.push(255 & vb);
-                        }
-
-                        function ub(vb, wb) {
-                            vb.push(255 & wb);
-                        }
-
-                        function vb(wb, xb) {
-                            wb.push(255 & xb), wb.push(xb >> 8 & 255);
-                        }
-
-                        function wb(xb, yb) {
-                            xb.push(255 & yb), xb.push(yb >> 8 & 255);
-                        }
-
-                        function xb(yb, zb) {
-                            yb.push(255 & zb), yb.push(zb >> 8 & 255), yb.push(zb >> 16 & 255), yb.push(zb >> 24 & 255);
-                        }
-
-                        function yb(zb, Ab) {
-                            var Bb = Ab >> 24,
-                                Cb = Ab >> 16,
-                                Db = Ab >> 8,
-                                Eb = Ab;
-                            zb.push(255 & Eb), zb.push(255 & Db), zb.push(255 & Cb), zb.push(255 & Bb);
-                        }
-
-                        function zb(Ab, Bb) {
-                            var Cb = Math.floor(Bb / Math.pow(2, 32));
-                            yb(Ab, Bb >>> 0), yb(Ab, Cb);
-                        }
-
-                        function Ab(Bb, Cb) {
-                            var Db = Cb / Math.pow(2, 32) >> 0;
-                            yb(Bb, Cb >>> 0), yb(Bb, Db);
-                        }
-
-                        function Bb(Cb, Db) {
-                            _Gb(Cb, Db);
-                        }
-
-                        function Cb(Db, Eb) {
-                            _Hb(Db, Eb);
-                        }
-                        var Db = new Int32Array(2),
-                            Eb = new Float32Array(Db.buffer),
-                            Fb = new Float64Array(Db.buffer);
-
-                        function _Gb(Hb, Ib) {
-                            Eb[0] = Ib, xb(Hb, Db[0]);
-                        }
-
-                        function _Hb(Ib, Jb) {
-                            Fb[0] = Jb, xb(Ib, Db[0]), xb(Ib, Db[1]);
-                        }
-
-                        function Ib(Jb, Kb) {
-                            return ub(Jb, Kb ? 1 : 0);
-                        }
-
-                        function Jb(Kb, Lb) {
-                            Lb || (Lb = '');
-                            var Mb = rb(Lb),
-                                Nb = 0;
-                            if (Mb < 32)
-                                Kb.push(160 | Mb), Nb = 1;
-                            else if (Mb < 256)
-                                Kb.push(217), ub(Kb, Mb), Nb = 2;
-                            else if (Mb < 65536)
-                                Kb.push(218), wb(Kb, Mb), Nb = 3;
-                            else {
-                                if (!(Mb < 4294967296))
-                                    throw new Error('String too long');
-                                Kb.push(219), yb(Kb, Mb), Nb = 5;
+                        case 5:
+                            r.label++, o = u[1], u = [0];
+                            continue;
+                        case 7:
+                            u = r.ops.pop(), r.trys.pop();
+                            continue;
+                        default:
+                            if (!((g = (g = r.trys).length > 0 && g[g.length - 1]) || 6 !== u[0] && 2 !== u[0])) {
+                                r = 0;
+                                continue;
                             }
-                            return sb(Kb, Kb.length, Lb), Nb + Mb;
-                        }
-
-                        function Kb(Lb, Mb) {
-                            return isNaN(Mb) ? Kb(Lb, 0) : isFinite(Mb) ? Mb !== (0 | Mb) ? (Lb.push(203), _Hb(Lb, Mb), 9) : Mb >= 0 ? Mb < 128 ? (ub(Lb, Mb), 1) : Mb < 256 ? (Lb.push(204), ub(Lb, Mb), 2) : Mb < 65536 ? (Lb.push(205), wb(Lb, Mb), 3) : Mb < 4294967296 ? (Lb.push(206), yb(Lb, Mb), 5) : (Lb.push(207), Ab(Lb, Mb), 9) : Mb >= -32 ? (Lb.push(224 | Mb + 32), 1) : Mb >= -128 ? (Lb.push(208), tb(Lb, Mb), 2) : Mb >= -32768 ? (Lb.push(209), vb(Lb, Mb), 3) : Mb >= -2147483648 ? (Lb.push(210), xb(Lb, Mb), 5) : (Lb.push(211), zb(Lb, Mb), 9) : Kb(Lb, Mb > 0 ? Number.MAX_SAFE_INTEGER : -Number.MAX_SAFE_INTEGER);
-                        }
-                        var Lb = Object.freeze({
-                            __proto__: null,
-                            utf8Write: sb,
-                            int8: tb,
-                            uint8: ub,
-                            int16: vb,
-                            uint16: wb,
-                            int32: xb,
-                            uint32: yb,
-                            int64: zb,
-                            uint64: Ab,
-                            float32: Bb,
-                            float64: Cb,
-                            writeFloat32: _Gb,
-                            writeFloat64: _Hb,
-                            boolean: Ib,
-                            string: Jb,
-                            number: Kb
-                        });
-
-                        function Mb(Nb, Ob, Pb) {
-                            for (var Qb = '', Rb = 0, Sb = Ob, Tb = Ob + Pb; Sb < Tb; Sb++) {
-                                var Ub = Nb[Sb];
-                                0 != (128 & Ub) ? 192 != (224 & Ub) ? 224 != (240 & Ub) ? 240 != (248 & Ub) ? console.error('Invalid byte ' + Ub.toString(16)) : (Rb = (7 & Ub) << 18 | (63 & Nb[++Sb]) << 12 | (63 & Nb[++Sb]) << 6 | (63 & Nb[++Sb]) << 0) >= 65536 ? (Rb -= 65536, Qb += String.fromCharCode(55296 + (Rb >>> 10), 56320 + (1023 & Rb))) : Qb += String.fromCharCode(Rb) : Qb += String.fromCharCode((15 & Ub) << 12 | (63 & Nb[++Sb]) << 6 | (63 & Nb[++Sb]) << 0) : Qb += String.fromCharCode((31 & Ub) << 6 | 63 & Nb[++Sb]) : Qb += String.fromCharCode(Ub);
+                            if (3 === u[0] && (!g || u[1] > g[0] && u[1] < g[3])) {
+                                r.label = u[1];
+                                break;
                             }
-                            return Qb;
-                        }
-
-                        function Nb(Ob, Pb) {
-                            return _Ob(Ob, Pb) << 24 >> 24;
-                        }
-
-                        function _Ob(Pb, Qb) {
-                            return Pb[Qb.offset++];
-                        }
-
-                        function Pb(Qb, Rb) {
-                            return _Qb(Qb, Rb) << 16 >> 16;
-                        }
-
-                        function _Qb(Rb, Sb) {
-                            return Rb[Sb.offset++] | Rb[Sb.offset++] << 8;
-                        }
-
-                        function Rb(Sb, Tb) {
-                            return Sb[Tb.offset++] | Sb[Tb.offset++] << 8 | Sb[Tb.offset++] << 16 | Sb[Tb.offset++] << 24;
-                        }
-
-                        function Sb(Tb, Ub) {
-                            return Rb(Tb, Ub) >>> 0;
-                        }
-
-                        function Tb(Ub, Vb) {
-                            return _$b(Ub, Vb);
-                        }
-
-                        function Ub(Vb, Wb) {
-                            return _ac(Vb, Wb);
-                        }
-
-                        function Vb(Wb, Xb) {
-                            var Yb = Sb(Wb, Xb);
-                            return Rb(Wb, Xb) * Math.pow(2, 32) + Yb;
-                        }
-
-                        function Wb(Xb, Yb) {
-                            var Zb = Sb(Xb, Yb);
-                            return Sb(Xb, Yb) * Math.pow(2, 32) + Zb;
-                        }
-                        var Xb = new Int32Array(2),
-                            Yb = new Float32Array(Xb.buffer),
-                            Zb = new Float64Array(Xb.buffer);
-
-                        function _$b(ac, bc) {
-                            return Xb[0] = Rb(ac, bc), Yb[0];
-                        }
-
-                        function _ac(bc, cc) {
-                            return Xb[0] = Rb(bc, cc), Xb[1] = Rb(bc, cc), Zb[0];
-                        }
-
-                        function bc(cc, dc) {
-                            return _Ob(cc, dc) > 0;
-                        }
-
-                        function cc(dc, ec) {
-                            var fc, gc = dc[ec.offset++];
-                            gc < 192 ? fc = 31 & gc : 217 === gc ? fc = _Ob(dc, ec) : 218 === gc ? fc = _Qb(dc, ec) : 219 === gc && (fc = Sb(dc, ec));
-                            var hc = Mb(dc, ec.offset, fc);
-                            return ec.offset += fc, hc;
-                        }
-
-                        function dc(ec, fc) {
-                            var gc = ec[fc.offset];
-                            return gc < 192 && gc > 160 || 217 === gc || 218 === gc || 219 === gc;
-                        }
-
-                        function ec(fc, gc) {
-                            var hc = fc[gc.offset++];
-                            return hc < 128 ? hc : 202 === hc ? _$b(fc, gc) : 203 === hc ? _ac(fc, gc) : 204 === hc ? _Ob(fc, gc) : 205 === hc ? _Qb(fc, gc) : 206 === hc ? Sb(fc, gc) : 207 === hc ? Wb(fc, gc) : 208 === hc ? Nb(fc, gc) : 209 === hc ? Pb(fc, gc) : 210 === hc ? Rb(fc, gc) : 211 === hc ? Vb(fc, gc) : hc > 223 ? -1 * (255 - hc + 1) : void 0;
-                        }
-
-                        function fc(gc, hc) {
-                            var ic = gc[hc.offset];
-                            return ic < 128 || ic >= 202 && ic <= 211;
-                        }
-
-                        function gc(hc, ic) {
-                            return hc[ic.offset] < 160;
-                        }
-
-                        function hc(ic, jc) {
-                            return ic[jc.offset - 1] === V && (ic[jc.offset] < 128 || ic[jc.offset] >= 202 && ic[jc.offset] <= 211);
-                        }
-                        var ic = Object.freeze({
-                                __proto__: null,
-                                int8: Nb,
-                                uint8: _Ob,
-                                int16: Pb,
-                                uint16: _Qb,
-                                int32: Rb,
-                                uint32: Sb,
-                                float32: Tb,
-                                float64: Ub,
-                                int64: Vb,
-                                uint64: Wb,
-                                readFloat32: _$b,
-                                readFloat64: _ac,
-                                boolean: bc,
-                                string: cc,
-                                stringCheck: dc,
-                                number: ec,
-                                numberCheck: fc,
-                                arrayCheck: gc,
-                                switchStructureCheck: hc
-                            }),
-                            jc = function() {
-                                function kc(lc) {
-                                    var mc = this;
-                                    this.$changes = new X(this), this.$items = new Map(), this.$indexes = new Map(), this.$refId = 0, lc && lc.forEach(function(nc) {
-                                        return mc.add(nc);
-                                    });
-                                }
-                                return kc.prototype.onAdd = function(lc, mc) {
-                                    return void 0 === mc && (mc = !0), Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.ADD, lc, mc ? this.$items : void 0);
-                                }, kc.prototype.onRemove = function(lc) {
-                                    return Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.DELETE, lc);
-                                }, kc.prototype.onChange = function(lc) {
-                                    return Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.REPLACE, lc);
-                                }, kc.is = function(lc) {
-                                    return void 0 !== lc.collection;
-                                }, kc.prototype.add = function(lc) {
-                                    var mc = this.$refId++;
-                                    return void 0 !== lc.$changes && lc.$changes.setParent(this, this.$changes.root, mc), this.$changes.indexes[mc] = mc, this.$indexes.set(mc, mc), this.$items.set(mc, lc), this.$changes.change(mc), mc;
-                                }, kc.prototype.at = function(lc) {
-                                    var mc = Array.from(this.$items.keys())[lc];
-                                    return this.$items.get(mc);
-                                }, kc.prototype.entries = function() {
-                                    return this.$items.entries();
-                                }, kc.prototype.delete = function(lc) {
-                                    for (var mc, nc, oc = this.$items.entries();
-                                        (nc = oc.next()) && !nc.done;)
-                                        if (lc === nc.value[1]) {
-                                            mc = nc.value[0];
-                                            break;
-                                        }
-                                    return void 0 !== mc && (this.$changes.delete(mc), this.$indexes.delete(mc), this.$items.delete(mc));
-                                }, kc.prototype.clear = function(lc) {
-                                    this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), lc && Z.call(this, lc), this.$items.clear(), this.$changes.operation({
-                                        index: 0,
-                                        op: P.OPERATION.CLEAR
-                                    }), this.$changes.touchParents();
-                                }, kc.prototype.has = function(lc) {
-                                    return Array.from(this.$items.values()).some(function(mc) {
-                                        return mc === lc;
-                                    });
-                                }, kc.prototype.forEach = function(lc) {
-                                    var mc = this;
-                                    this.$items.forEach(function(nc, oc, pc) {
-                                        return lc(nc, oc, mc);
-                                    });
-                                }, kc.prototype.values = function() {
-                                    return this.$items.values();
-                                }, Object.defineProperty(kc.prototype, 'size', {
-                                    get: function() {
-                                        return this.$items.size;
-                                    },
-                                    enumerable: !1,
-                                    configurable: !0
-                                }), kc.prototype.setIndex = function(lc, mc) {
-                                    this.$indexes.set(lc, mc);
-                                }, kc.prototype.getIndex = function(lc) {
-                                    return this.$indexes.get(lc);
-                                }, kc.prototype.getByIndex = function(lc) {
-                                    return this.$items.get(this.$indexes.get(lc));
-                                }, kc.prototype.deleteByIndex = function(lc) {
-                                    var mc = this.$indexes.get(lc);
-                                    this.$items.delete(mc), this.$indexes.delete(lc);
-                                }, kc.prototype.toArray = function() {
-                                    return Array.from(this.$items.values());
-                                }, kc.prototype.toJSON = function() {
-                                    var lc = [];
-                                    return this.forEach(function(mc, nc) {
-                                        lc.push('function' == typeof mc.toJSON ? mc.toJSON() : mc);
-                                    }), lc;
-                                }, kc.prototype.clone = function(lc) {
-                                    var mc;
-                                    return lc ? mc = Object.assign(new kc(), this) : (mc = new kc(), this.forEach(function(nc) {
-                                        nc.$changes ? mc.add(nc.clone()) : mc.add(nc);
-                                    })), mc;
-                                }, kc;
-                            }(),
-                            kc = function() {
-                                function lc(mc) {
-                                    var nc = this;
-                                    this.$changes = new X(this), this.$items = new Map(), this.$indexes = new Map(), this.$refId = 0, mc && mc.forEach(function(oc) {
-                                        return nc.add(oc);
-                                    });
-                                }
-                                return lc.prototype.onAdd = function(mc, nc) {
-                                    return void 0 === nc && (nc = !0), Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.ADD, mc, nc ? this.$items : void 0);
-                                }, lc.prototype.onRemove = function(mc) {
-                                    return Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.DELETE, mc);
-                                }, lc.prototype.onChange = function(mc) {
-                                    return Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.REPLACE, mc);
-                                }, lc.is = function(mc) {
-                                    return void 0 !== mc.set;
-                                }, lc.prototype.add = function(mc) {
-                                    var nc, oc;
-                                    if (this.has(mc))
-                                        return !1;
-                                    var pc = this.$refId++;
-                                    void 0 !== mc.$changes && mc.$changes.setParent(this, this.$changes.root, pc);
-                                    var qc = null !== (oc = null === (nc = this.$changes.indexes[pc]) || void 0 === nc ? void 0 : nc.op) && void 0 !== oc ? oc : P.OPERATION.ADD;
-                                    return this.$changes.indexes[pc] = pc, this.$indexes.set(pc, pc), this.$items.set(pc, mc), this.$changes.change(pc, qc), pc;
-                                }, lc.prototype.entries = function() {
-                                    return this.$items.entries();
-                                }, lc.prototype.delete = function(mc) {
-                                    for (var nc, oc, pc = this.$items.entries();
-                                        (oc = pc.next()) && !oc.done;)
-                                        if (mc === oc.value[1]) {
-                                            nc = oc.value[0];
-                                            break;
-                                        }
-                                    return void 0 !== nc && (this.$changes.delete(nc), this.$indexes.delete(nc), this.$items.delete(nc));
-                                }, lc.prototype.clear = function(mc) {
-                                    this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), mc && Z.call(this, mc), this.$items.clear(), this.$changes.operation({
-                                        index: 0,
-                                        op: P.OPERATION.CLEAR
-                                    }), this.$changes.touchParents();
-                                }, lc.prototype.has = function(mc) {
-                                    for (var nc, oc = this.$items.values(), pc = !1;
-                                        (nc = oc.next()) && !nc.done;)
-                                        if (mc === nc.value) {
-                                            pc = !0;
-                                            break;
-                                        }
-                                    return pc;
-                                }, lc.prototype.forEach = function(mc) {
-                                    var nc = this;
-                                    this.$items.forEach(function(oc, pc, qc) {
-                                        return mc(oc, pc, nc);
-                                    });
-                                }, lc.prototype.values = function() {
-                                    return this.$items.values();
-                                }, Object.defineProperty(lc.prototype, 'size', {
-                                    get: function() {
-                                        return this.$items.size;
-                                    },
-                                    enumerable: !1,
-                                    configurable: !0
-                                }), lc.prototype.setIndex = function(mc, nc) {
-                                    this.$indexes.set(mc, nc);
-                                }, lc.prototype.getIndex = function(mc) {
-                                    return this.$indexes.get(mc);
-                                }, lc.prototype.getByIndex = function(mc) {
-                                    return this.$items.get(this.$indexes.get(mc));
-                                }, lc.prototype.deleteByIndex = function(mc) {
-                                    var nc = this.$indexes.get(mc);
-                                    this.$items.delete(nc), this.$indexes.delete(mc);
-                                }, lc.prototype.toArray = function() {
-                                    return Array.from(this.$items.values());
-                                }, lc.prototype.toJSON = function() {
-                                    var mc = [];
-                                    return this.forEach(function(nc, oc) {
-                                        mc.push('function' == typeof nc.toJSON ? nc.toJSON() : nc);
-                                    }), mc;
-                                }, lc.prototype.clone = function(mc) {
-                                    var nc;
-                                    return mc ? nc = Object.assign(new lc(), this) : (nc = new lc(), this.forEach(function(oc) {
-                                        oc.$changes ? nc.add(oc.clone()) : nc.add(oc);
-                                    })), nc;
-                                }, lc;
-                            }(),
-                            lc = function() {
-                                function mc() {
-                                    this.refIds = new WeakSet(), this.containerIndexes = new WeakMap();
-                                }
-                                return mc.prototype.addRefId = function(nc) {
-                                    this.refIds.has(nc) || (this.refIds.add(nc), this.containerIndexes.set(nc, new Set()));
-                                }, mc.get = function(nc) {
-                                    return void 0 === nc.$filterState && (nc.$filterState = new mc()), nc.$filterState;
-                                }, mc;
-                            }(),
-                            mc = function() {
-                                function nc() {
-                                    this.refs = new Map(), this.refCounts = {}, this.deletedRefs = new Set(), this.nextUniqueId = 0;
-                                }
-                                return nc.prototype.getNextUniqueId = function() {
-                                    return this.nextUniqueId++;
-                                }, nc.prototype.addRef = function(oc, pc, qc) {
-                                    void 0 === qc && (qc = !0), this.refs.set(oc, pc), qc && (this.refCounts[oc] = (this.refCounts[oc] || 0) + 1);
-                                }, nc.prototype.removeRef = function(oc) {
-                                    this.refCounts[oc] = this.refCounts[oc] - 1, this.deletedRefs.add(oc);
-                                }, nc.prototype.clearRefs = function() {
-                                    this.refs.clear(), this.deletedRefs.clear(), this.refCounts = {};
-                                }, nc.prototype.garbageCollectDeletedRefs = function() {
-                                    var oc = this;
-                                    this.deletedRefs.forEach(function(pc) {
-                                        if (!(oc.refCounts[pc] > 0)) {
-                                            var qc = oc.refs.get(pc);
-                                            if (qc instanceof _sc)
-                                                for (var rc in qc._definition.schema)
-                                                    'string' != typeof qc._definition.schema[rc] && qc[rc] && qc[rc].$changes && oc.removeRef(qc[rc].$changes.refId);
-                                            else {
-                                                var sc = qc.$changes.parent._definition,
-                                                    tc = sc.schema[sc.fieldsByIndex[qc.$changes.parentIndex]];
-                                                'function' == typeof Object.values(tc)[0] && Array.from(qc.values()).forEach(function(uc) {
-                                                    return oc.removeRef(uc.$changes.refId);
-                                                });
-                                            }
-                                            oc.refs.delete(pc), delete oc.refCounts[pc];
-                                        }
-                                    }), this.deletedRefs.clear();
-                                }, nc;
-                            }(),
-                            nc = function(oc) {
-                                function pc() {
-                                    return null !== oc && oc.apply(this, arguments) || this;
-                                }
-                                return R(pc, oc), pc;
-                            }(Error);
-
-                        function oc(pc, qc, rc, sc) {
-                            var tc, uc = !1;
-                            switch (qc) {
-                                case 'number':
-                                case 'int8':
-                                case 'uint8':
-                                case 'int16':
-                                case 'uint16':
-                                case 'int32':
-                                case 'uint32':
-                                case 'int64':
-                                case 'uint64':
-                                case 'float32':
-                                case 'float64':
-                                    tc = 'number', isNaN(pc) && console.log('trying to encode "NaN" in '.concat(rc.constructor.name, '#').concat(sc));
-                                    break;
-                                case 'string':
-                                    tc = 'string', uc = !0;
-                                    break;
-                                case 'boolean':
-                                    return;
+                            if (6 === u[0] && r.label < g[1]) {
+                                r.label = g[1], g = u;
+                                break;
                             }
-                            if (typeof pc !== tc && (!uc || uc && null !== pc)) {
-                                var vc = '\''.concat(JSON.stringify(pc), '\'').concat(pc && pc.constructor && ' ('.concat(pc.constructor.name, ')') || '');
-                                throw new nc('a \''.concat(tc, '\' was expected, but ').concat(vc, ' was provided in ').concat(rc.constructor.name, '#').concat(sc));
+                            if (g && r.label < g[2]) {
+                                r.label = g[2], r.ops.push(u);
+                                break;
                             }
+                            g[2] && r.ops.pop(), r.trys.pop();
+                            continue;
                         }
-
-                        function pc(qc, rc, sc, tc) {
-                            if (!(qc instanceof rc))
-                                throw new nc('a \''.concat(rc.name, '\' was expected, but \'').concat(qc.constructor.name, '\' was provided in ').concat(sc.constructor.name, '#').concat(tc));
-                        }
-
-                        function qc(rc, sc, tc, uc, vc) {
-                            oc(tc, rc, uc, vc);
-                            var wc = Lb[rc];
-                            if (!wc)
-                                throw new nc('a \''.concat(rc, '\' was expected, but ').concat(tc, ' was provided in ').concat(uc.constructor.name, '#').concat(vc));
-                            wc(sc, tc);
-                        }
-
-                        function rc(sc, tc, uc) {
-                            return ic[sc](tc, uc);
-                        }
-                        var _sc = function() {
-                            function tc() {
-                                for (var uc = [], vc = 0; vc < arguments.length; vc++)
-                                    uc[vc] = arguments[vc];
-                                Object.defineProperties(this, {
-                                    $changes: {
-                                        value: new X(this, void 0, new mc()),
-                                        enumerable: !1,
-                                        writable: !0
-                                    },
-                                    $callbacks: {
-                                        value: void 0,
-                                        enumerable: !1,
-                                        writable: !0
-                                    }
-                                });
-                                var wc = this._definition.descriptors;
-                                wc && Object.defineProperties(this, wc), uc[0] && this.assign(uc[0]);
-                            }
-                            return tc.onError = function(uc) {
-                                console.error(uc);
-                            }, tc.is = function(uc) {
-                                return uc._definition && void 0 !== uc._definition.schema;
-                            }, tc.prototype.onChange = function(uc) {
-                                return Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.REPLACE, uc);
-                            }, tc.prototype.onRemove = function(uc) {
-                                return Y(this.$callbacks || (this.$callbacks = []), P.OPERATION.DELETE, uc);
-                            }, tc.prototype.assign = function(uc) {
-                                return Object.assign(this, uc), this;
-                            }, Object.defineProperty(tc.prototype, '_definition', {
-                                get: function() {
-                                    return this.constructor._definition;
-                                },
-                                enumerable: !1,
-                                configurable: !0
-                            }), tc.prototype.setDirty = function(uc, vc) {
-                                this.$changes.change(uc, vc);
-                            }, tc.prototype.listen = function(uc, vc, wc) {
-                                var xc = this;
-                                return void 0 === wc && (wc = !0), this.$callbacks || (this.$callbacks = {}), this.$callbacks[uc] || (this.$callbacks[uc] = []), this.$callbacks[uc].push(vc), wc && void 0 !== this[uc] && vc(this[uc], void 0),
-                                    function() {
-                                        return $(xc.$callbacks[uc], xc.$callbacks[uc].indexOf(vc));
-                                    };
-                            }, tc.prototype.decode = function(uc, vc, wc) {
-                                var xc;
-                                void 0 === vc && (vc = {
-                                    offset: 0
-                                }), void 0 === wc && (wc = this);
-                                var yc = [],
-                                    zc = this.$changes.root,
-                                    Ac = uc.length,
-                                    Bc = 0;
-                                for (zc.refs.set(Bc, this); vc.offset < Ac;) {
-                                    var Cc = uc[vc.offset++];
-                                    if (Cc != V) {
-                                        var Dc = wc.$changes,
-                                            Ec = void 0 !== wc._definition,
-                                            Fc = Ec ? Cc >> 6 << 6 : Cc;
-                                        if (Fc !== P.OPERATION.CLEAR) {
-                                            var Gc = Ec ? Cc % (Fc || 255) : ec(uc, vc),
-                                                Hc = Ec ? wc._definition.fieldsByIndex[Gc] : '',
-                                                Ic = Dc.getType(Gc),
-                                                Jc = void 0,
-                                                Kc = void 0,
-                                                Lc = void 0;
-                                            if (Ec ? Kc = wc['_'.concat(Hc)] : (Kc = wc.getByIndex(Gc), (Fc & P.OPERATION.ADD) === P.OPERATION.ADD ? (Lc = wc instanceof eb ? cc(uc, vc) : Gc, wc.setIndex(Gc, Lc)) : Lc = wc.getIndex(Gc)), (Fc & P.OPERATION.DELETE) === P.OPERATION.DELETE && (Fc !== P.OPERATION.DELETE_AND_ADD && wc.deleteByIndex(Gc), Kc && Kc.$changes && zc.removeRef(Kc.$changes.refId), Jc = null), void 0 !== Hc) {
-                                                if (Fc === P.OPERATION.DELETE);
-                                                else if (tc.is(Ic)) {
-                                                    var Mc = ec(uc, vc);
-                                                    if (Jc = zc.refs.get(Mc), Fc !== P.OPERATION.REPLACE) {
-                                                        var Nc = this.getSchemaType(uc, vc, Ic);
-                                                        Jc || ((Jc = this.createTypeInstance(Nc)).$changes.refId = Mc, Kc && (Jc.$callbacks = Kc.$callbacks, Kc.$changes.refId && Mc !== Kc.$changes.refId && zc.removeRef(Kc.$changes.refId))), zc.addRef(Mc, Jc, Jc !== Kc);
-                                                    }
-                                                } else if ('string' == typeof Ic)
-                                                    Jc = rc(Ic, uc, vc);
-                                                else {
-                                                    var Mc = hb(Object.keys(Ic)[0]),
-                                                        Nc = ec(uc, vc),
-                                                        Oc = zc.refs.has(Nc) ? Kc || zc.refs.get(Nc) : new Mc.constructor();
-                                                    if ((Jc = Oc.clone(!0)).$changes.refId = Nc, Kc && (Jc.$callbacks = Kc.$callbacks, Kc.$changes.refId && Nc !== Kc.$changes.refId)) {
-                                                        zc.removeRef(Kc.$changes.refId);
-                                                        for (var Pc = Kc.entries(), Qc = void 0;
-                                                            (Qc = Pc.next()) && !Qc.done;) {
-                                                            var Rc = (xc = Qc.value)[0],
-                                                                Sc = xc[1];
-                                                            yc.push({
-                                                                refId: Nc,
-                                                                op: P.OPERATION.DELETE,
-                                                                field: Rc,
-                                                                value: void 0,
-                                                                previousValue: Sc
-                                                            });
-                                                        }
-                                                    }
-                                                    zc.addRef(Nc, Jc, Oc !== Kc);
-                                                }
-                                                if (null != Jc)
-                                                    if (Jc.$changes && Jc.$changes.setParent(Dc.ref, Dc.root, Gc), wc instanceof tc)
-                                                        wc[Hc] = Jc;
-                                                    else if (wc instanceof eb)
-                                                    tb = Lc, wc.$items.set(tb, Jc), wc.$changes.allChanges.add(Gc);
-                                                else if (wc instanceof cb)
-                                                    wc.setAt(Gc, Jc);
-                                                else if (wc instanceof jc) {
-                                                    var Mc = wc.add(Jc);
-                                                    wc.setIndex(Gc, Mc);
-                                                } else
-                                                    wc instanceof kc && !1 !== (vb = wc.add(Jc)) && wc.setIndex(Gc, vb);
-                                                Kc !== Jc && yc.push({
-                                                    refId: Bc,
-                                                    op: Fc,
-                                                    field: Hc,
-                                                    dynamicIndex: Lc,
-                                                    value: Jc,
-                                                    previousValue: Kc
-                                                });
-                                            } else {
-                                                console.warn('@colyseus/schema: definition mismatch');
-                                                for (var Mc = {
-                                                        offset: vc.offset
-                                                    }; vc.offset < Ac && (!hc(uc, vc) || (Mc.offset = vc.offset + 1, !zc.refs.has(ec(uc, Mc))));)
-                                                    vc.offset++;
-                                            }
-                                        } else
-                                            wc.clear(yc);
-                                    } else {
-                                        Bc = ec(uc, vc);
-                                        var Dc = zc.refs.get(Bc);
-                                        if (!Dc)
-                                            throw new Error('"refId" not found: '.concat(Bc));
-                                        wc = Dc;
-                                    }
-                                }
-                                return this._triggerChanges(yc), zc.garbageCollectDeletedRefs(), yc;
-                            }, tc.prototype.encode = function(uc, vc, wc) {
-                                void 0 === uc && (uc = !1), void 0 === vc && (vc = []), void 0 === wc && (wc = !1);
-                                for (var xc = this.$changes, yc = new WeakSet(), zc = [xc], Ac = 1, Bc = 0; Bc < Ac; Bc++) {
-                                    var Cc = zc[Bc],
-                                        Dc = Cc.ref,
-                                        Ec = Dc instanceof tc;
-                                    Cc.ensureRefId(), yc.add(Cc), Cc !== xc && (Cc.changed || uc) && (ub(vc, V), Kb(vc, Cc.refId));
-                                    for (var Fc = uc ? Array.from(Cc.allChanges) : Array.from(Cc.changes.values()), Gc = 0, Hc = Fc.length; Gc < Hc; Gc++) {
-                                        var Ic = uc ? {
-                                                op: P.OPERATION.ADD,
-                                                index: Fc[Gc]
-                                            } : Fc[Gc],
-                                            Jc = Ic.index,
-                                            Kc = Ec ? Dc._definition.fieldsByIndex && Dc._definition.fieldsByIndex[Jc] : Jc,
-                                            Lc = vc.length;
-                                        if (Ic.op !== P.OPERATION.TOUCH)
-                                            if (Ec)
-                                                ub(vc, Jc | Ic.op);
-                                            else {
-                                                if (ub(vc, Ic.op), Ic.op === P.OPERATION.CLEAR)
-                                                    continue;
-                                                Kb(vc, Jc);
-                                            }
-                                        if (Ec || (Ic.op & P.OPERATION.ADD) != P.OPERATION.ADD || Dc instanceof eb && Jb(vc, Cc.ref.$indexes.get(Jc)), Ic.op !== P.OPERATION.DELETE) {
-                                            var Mc = Cc.getType(Jc),
-                                                Nc = Cc.getValue(Jc);
-                                            if (Nc && Nc.$changes && !yc.has(Nc.$changes) && (zc.push(Nc.$changes), Nc.$changes.ensureRefId(), Ac++), Ic.op !== P.OPERATION.TOUCH) {
-                                                if (tc.is(Mc))
-                                                    pc(Nc, Mc, Dc, Kc), Kb(vc, Nc.$changes.refId), (Ic.op & P.OPERATION.ADD) === P.OPERATION.ADD && this.tryEncodeTypeId(vc, Mc, Nc.constructor);
-                                                else if ('string' == typeof Mc)
-                                                    qc(Mc, vc, Nc, Dc, Kc);
-                                                else {
-                                                    var Oc = hb(Object.keys(Mc)[0]);
-                                                    pc(Dc['_'.concat(Kc)], Oc.constructor, Dc, Kc), Kb(vc, Nc.$changes.refId);
-                                                }
-                                                wc && Cc.cache(Jc, vc.slice(Lc));
-                                            }
-                                        }
-                                    }
-                                    uc || wc || Cc.discard();
-                                }
-                                return vc;
-                            }, tc.prototype.encodeAll = function(uc) {
-                                return this.encode(!0, [], uc);
-                            }, tc.prototype.applyFilters = function(uc, vc) {
-                                var wc, xc;
-                                void 0 === vc && (vc = !1);
-                                for (var yc = this, zc = new Set(), Ac = lc.get(uc), Bc = [this.$changes], Cc = 1, Dc = [], Ec = function(Fc) {
-                                        var Gc = Bc[Fc];
-                                        if (zc.has(Gc.refId))
-                                            return 'continue';
-                                        var Hc = Gc.ref,
-                                            Ic = Hc instanceof tc;
-                                        ub(Dc, V), Kb(Dc, Gc.refId);
-                                        var Jc = Ac.refIds.has(Gc),
-                                            Kc = vc || !Jc;
-                                        Ac.addRefId(Gc);
-                                        var Lc = Ac.containerIndexes.get(Gc),
-                                            Mc = Kc ? Array.from(Gc.allChanges) : Array.from(Gc.changes.values());
-                                        !vc && Ic && Hc._definition.indexesWithFilters && Hc._definition.indexesWithFilters.forEach(function(Nc) {
-                                            !Lc.has(Nc) && Gc.allChanges.has(Nc) && (Kc ? Mc.push(Nc) : Mc.push({
-                                                op: P.OPERATION.ADD,
-                                                index: Nc
-                                            }));
-                                        });
-                                        for (var Nc = 0, Oc = Mc.length; Nc < Oc; Nc++) {
-                                            var Pc = Kc ? {
-                                                op: P.OPERATION.ADD,
-                                                index: Mc[Nc]
-                                            } : Mc[Nc];
-                                            if (Pc.op !== P.OPERATION.CLEAR) {
-                                                var Qc = Pc.index;
-                                                if (Pc.op !== P.OPERATION.DELETE) {
-                                                    var Rc = Gc.getValue(Qc),
-                                                        Sc = Gc.getType(Qc);
-                                                    if (Ic) {
-                                                        if ((qb = Hc._definition.filters && Hc._definition.filters[Qc]) && !qb.call(Hc, uc, Rc, yc)) {
-                                                            Rc && Rc.$changes && zc.add(Rc.$changes.refId);
-                                                            continue;
-                                                        }
-                                                    } else {
-                                                        var Tc, Uc = Gc.parent;
-                                                        if ((Tc = Gc.getChildrenFilter()) && !Tc.call(Uc, uc, Hc.$indexes.get(Qc), Rc, yc)) {
-                                                            Rc && Rc.$changes && zc.add(Rc.$changes.refId);
-                                                            continue;
-                                                        }
-                                                    }
-                                                    if (Rc.$changes && (Bc.push(Rc.$changes), Cc++), Pc.op !== P.OPERATION.TOUCH)
-                                                        if (Pc.op === P.OPERATION.ADD || Ic)
-                                                            Dc.push.apply(Dc, null !== (wc = Gc.caches[Qc]) && void 0 !== wc ? wc : []), Lc.add(Qc);
-                                                        else if (Lc.has(Qc))
-                                                        Dc.push.apply(Dc, null !== (xc = Gc.caches[Qc]) && void 0 !== xc ? xc : []);
-                                                    else {
-                                                        if (Lc.add(Qc), ub(Dc, P.OPERATION.ADD), Kb(Dc, Qc), Hc instanceof eb) {
-                                                            var Tc = Gc.ref.$indexes.get(Qc);
-                                                            Jb(Dc, Tc);
-                                                        }
-                                                        Rc.$changes ? Kb(Dc, Rc.$changes.refId) : Lb[Sc](Dc, Rc);
-                                                    } else
-                                                        Rc.$changes && !Ic && (ub(Dc, P.OPERATION.ADD), Kb(Dc, Qc), Hc instanceof eb && (sb = Gc.ref.$indexes.get(Qc), Jb(Dc, sb)), Kb(Dc, Rc.$changes.refId));
-                                                } else
-                                                    Ic ? ub(Dc, Pc.op | Qc) : (ub(Dc, Pc.op), Kb(Dc, Qc));
-                                            } else
-                                                ub(Dc, Pc.op);
-                                        }
-                                    }, Fc = 0; Fc < Cc; Fc++)
-                                    Ec(Fc);
-                                return Dc;
-                            }, tc.prototype.clone = function() {
-                                var uc, vc = new this.constructor(),
-                                    wc = this._definition.schema;
-                                for (var xc in wc)
-                                    'object' == typeof this[xc] && 'function' == typeof(null === (uc = this[xc]) || void 0 === uc ? void 0 : uc.clone) ? vc[xc] = this[xc].clone() : vc[xc] = this[xc];
-                                return vc;
-                            }, tc.prototype.toJSON = function() {
-                                var uc = this._definition.schema,
-                                    vc = this._definition.deprecated,
-                                    wc = {};
-                                for (var xc in uc)
-                                    vc[xc] || null === this[xc] || void 0 === this[xc] || (wc[xc] = 'function' == typeof this[xc].toJSON ? this[xc].toJSON() : this['_'.concat(xc)]);
-                                return wc;
-                            }, tc.prototype.discardAllChanges = function() {
-                                this.$changes.discardAll();
-                            }, tc.prototype.getByIndex = function(uc) {
-                                return this[this._definition.fieldsByIndex[uc]];
-                            }, tc.prototype.deleteByIndex = function(uc) {
-                                this[this._definition.fieldsByIndex[uc]] = void 0;
-                            }, tc.prototype.tryEncodeTypeId = function(uc, vc, wc) {
-                                vc._typeid !== wc._typeid && (ub(uc, W), Kb(uc, wc._typeid));
-                            }, tc.prototype.getSchemaType = function(uc, vc, wc) {
-                                var xc;
-                                return uc[vc.offset] === W && (vc.offset++, xc = this.constructor._context.get(ec(uc, vc))), xc || wc;
-                            }, tc.prototype.createTypeInstance = function(uc) {
-                                var vc = new uc();
-                                return vc.$changes.root = this.$changes.root, vc;
-                            }, tc.prototype._triggerChanges = function(uc) {
-                                for (var vc, wc, xc, yc, zc, Ac, Bc, Cc, Dc, Ec = new Set(), Fc = this.$changes.root.refs, Gc = function(Hc) {
-                                        var Ic = uc[Hc],
-                                            Jc = Ic.refId,
-                                            Kc = Fc.get(Jc),
-                                            Lc = Kc.$callbacks;
-                                        if ((Ic.op & P.OPERATION.DELETE) === P.OPERATION.DELETE && Ic.previousValue instanceof tc && (null === (wc = null === (vc = Ic.previousValue.$callbacks) || void 0 === vc ? void 0 : vc[P.OPERATION.DELETE]) || void 0 === wc || wc.forEach(function(Mc) {
-                                                return Mc();
-                                            })), !Lc)
-                                            return 'continue';
-                                        if (Kc instanceof tc) {
-                                            if (!Ec.has(Jc))
-                                                try {
-                                                    null === (xc = null == Lc ? void 0 : Lc[P.OPERATION.REPLACE]) || void 0 === xc || xc.forEach(function(Mc) {
-                                                        return Mc(uc);
-                                                    });
-                                                } catch (P) {
-                                                    tc.onError(P);
-                                                }
-                                            try {
-                                                Lc.hasOwnProperty(Ic.field) && (null === (yc = Lc[Ic.field]) || void 0 === yc || yc.forEach(function(Mc) {
-                                                    return Mc(Ic.value, Ic.previousValue);
-                                                }));
-                                            } catch (P) {
-                                                tc.onError(P);
-                                            }
-                                        } else
-                                            Ic.op === P.OPERATION.ADD && void 0 === Ic.previousValue ? null === (zc = Lc[P.OPERATION.ADD]) || void 0 === zc || zc.forEach(function(Mc) {
-                                                var Nc;
-                                                return Mc(Ic.value, null !== (Nc = Ic.dynamicIndex) && void 0 !== Nc ? Nc : Ic.field);
-                                            }) : Ic.op === P.OPERATION.DELETE ? void 0 !== Ic.previousValue && (null === (Ac = Lc[P.OPERATION.DELETE]) || void 0 === Ac || Ac.forEach(function(Mc) {
-                                                var Nc;
-                                                return Mc(Ic.previousValue, null !== (Nc = Ic.dynamicIndex) && void 0 !== Nc ? Nc : Ic.field);
-                                            })) : Ic.op === P.OPERATION.DELETE_AND_ADD && (void 0 !== Ic.previousValue && (null === (Bc = Lc[P.OPERATION.DELETE]) || void 0 === Bc || Bc.forEach(function(Mc) {
-                                                var Nc;
-                                                return Mc(Ic.previousValue, null !== (Nc = Ic.dynamicIndex) && void 0 !== Nc ? Nc : Ic.field);
-                                            })), null === (Cc = Lc[P.OPERATION.ADD]) || void 0 === Cc || Cc.forEach(function(Mc) {
-                                                var Nc;
-                                                return Mc(Ic.value, null !== (Nc = Ic.dynamicIndex) && void 0 !== Nc ? Nc : Ic.field);
-                                            })), Ic.value !== Ic.previousValue && (null === (Dc = Lc[P.OPERATION.REPLACE]) || void 0 === Dc || Dc.forEach(function(Mc) {
-                                                var Nc;
-                                                return Mc(Ic.value, null !== (Nc = Ic.dynamicIndex) && void 0 !== Nc ? Nc : Ic.field);
-                                            }));
-                                        Ec.add(Jc);
-                                    }, Hc = 0; Hc < uc.length; Hc++)
-                                    Gc(Hc);
-                            }, tc._definition = ib.create(), tc;
-                        }();
-
-                        function tc(uc) {
-                            for (var vc = [uc.$changes], wc = 1, xc = {}, yc = xc, zc = function(Ac) {
-                                    var Bc = vc[Ac];
-                                    Bc.changes.forEach(function(Cc) {
-                                        var Dc = Bc.ref,
-                                            Ec = Cc.index,
-                                            Fc = Dc._definition ? Dc._definition.fieldsByIndex[Ec] : Dc.$indexes.get(Ec);
-                                        yc[Fc] = Bc.getValue(Ec);
-                                    });
-                                }, Ac = 0; Ac < wc; Ac++)
-                                zc(Ac);
-                            return xc;
-                        }
-                        var uc = {
-                                context: new kb()
-                            },
-                            vc = function(wc) {
-                                function xc() {
-                                    return null !== wc && wc.apply(this, arguments) || this;
-                                }
-                                return R(xc, wc), S([mb('string', uc)], xc.prototype, 'name', void 0), S([mb('string', uc)], xc.prototype, 'type', void 0), S([mb('number', uc)], xc.prototype, 'referencedType', void 0), xc;
-                            }(_sc),
-                            wc = function(xc) {
-                                function yc() {
-                                    var zc = null !== xc && xc.apply(this, arguments) || this;
-                                    return zc.fields = new cb(), zc;
-                                }
-                                return R(yc, xc), S([mb('number', uc)], yc.prototype, 'id', void 0), S([mb([vc], uc)], yc.prototype, 'fields', void 0), yc;
-                            }(_sc),
-                            xc = function(yc) {
-                                function zc() {
-                                    var Ac = null !== yc && yc.apply(this, arguments) || this;
-                                    return Ac.types = new cb(), Ac;
-                                }
-                                return R(zc, yc), zc.encode = function(Ac) {
-                                    var Bc = Ac.constructor,
-                                        Cc = new zc();
-                                    Cc.rootType = Bc._typeid;
-                                    var Dc = function(Ec, Fc) {
-                                            for (var Gc in Fc) {
-                                                var Hc = new vc();
-                                                Hc.name = Gc;
-                                                var Ic = void 0;
-                                                if ('string' == typeof Fc[Gc])
-                                                    Ic = Fc[Gc];
-                                                else {
-                                                    var Jc = Fc[Gc],
-                                                        Kc = void 0;
-                                                    _sc.is(Jc) ? (Ic = 'ref', Kc = Fc[Gc]) : 'string' == typeof Jc[Ic = Object.keys(Jc)[0]] ? Ic += ':' + Jc[Ic] : Kc = Jc[Ic], Hc.referencedType = Kc ? Kc._typeid : -1;
-                                                }
-                                                Hc.type = Ic, Ec.fields.push(Hc);
-                                            }
-                                            Cc.types.push(Ec);
-                                        },
-                                        Ec = Bc._context.types;
-                                    for (var Fc in Ec) {
-                                        var Gc = new wc();
-                                        Gc.id = Number(Fc), Dc(Gc, Ec[Fc]._definition.schema);
-                                    }
-                                    return Cc.encodeAll();
-                                }, zc.decode = function(Ac, Bc) {
-                                    var Cc = new kb(),
-                                        Dc = new zc();
-                                    Dc.decode(Ac, Bc);
-                                    var Ec = Dc.types.reduce(function(Fc, Gc) {
-                                        var Hc = function(Ic) {
-                                                function Jc() {
-                                                    return null !== Ic && Ic.apply(this, arguments) || this;
-                                                }
-                                                return R(Jc, Ic), Jc;
-                                            }(_sc),
-                                            Ic = Gc.id;
-                                        return Fc[Ic] = Hc, Cc.add(Hc, Ic), Fc;
-                                    }, {});
-                                    Dc.types.forEach(function(Fc) {
-                                        var Gc = Ec[Fc.id];
-                                        Fc.fields.forEach(function(Hc) {
-                                            var Ic;
-                                            if (void 0 !== Hc.referencedType) {
-                                                var Jc = Hc.type,
-                                                    Kc = Ec[Hc.referencedType];
-                                                if (!Kc) {
-                                                    var Lc = Hc.type.split(':');
-                                                    Jc = Lc[0], Kc = Lc[1];
-                                                }
-                                                'ref' === Jc ? mb(Kc, {
-                                                    context: Cc
-                                                })(Gc.prototype, Hc.name) : mb(((Ic = {})[Jc] = Kc, Ic), {
-                                                    context: Cc
-                                                })(Gc.prototype, Hc.name);
-                                            } else
-                                                mb(Hc.type, {
-                                                    context: Cc
-                                                })(Gc.prototype, Hc.name);
-                                        });
-                                    });
-                                    var Fc = Ec[Dc.rootType],
-                                        Gc = new Fc();
-                                    for (var Hc in Fc._definition.schema) {
-                                        var Ic = Fc._definition.schema[Hc];
-                                        'string' != typeof Ic && (Gc[Hc] = 'function' == typeof Ic ? new Ic() : new(hb(Object.keys(Ic)[0])).constructor());
-                                    }
-                                    return Gc;
-                                }, S([mb([wc], uc)], zc.prototype, 'types', void 0), S([mb('number', uc)], zc.prototype, 'rootType', void 0), zc;
-                            }(_sc);
-                        gb('map', {
-                            constructor: eb
-                        }), gb('array', {
-                            constructor: cb
-                        }), gb('set', {
-                            constructor: kc
-                        }), gb('collection', {
-                            constructor: jc
-                        }), P.ArraySchema = cb, P.CollectionSchema = jc, P.Context = kb, P.MapSchema = eb, P.Reflection = xc, P.ReflectionField = vc, P.ReflectionType = wc, P.Schema = _sc, P.SchemaDefinition = ib, P.SetSchema = kc, P.decode = ic, P.defineTypes = qb, P.deprecated = pb, P.dumpChanges = tc, P.encode = Lb, P.filter = nb, P.filterChildren = ob, P.hasFilter = jb, P.registerType = gb, P.type = mb, Object.defineProperty(P, '__esModule', {
-                            value: !0
-                        });
-                    });
-                }),
-                N = function() {
-                    function O(P, Q) {
-                        var R = this;
-                        this.onStateChange = K(), this.onError = K(), this.onLeave = K(), this.onJoin = K(), this.hasJoined = !1, this.onMessageHandlers = I(), this.roomId = null, this.name = P, Q && (this.serializer = new(H('schema'))(), this.rootSchema = Q, this.serializer.state = new Q()), this.onError(function(S, T) {
-                            var U;
-                            return null === (U = console.warn) || void 0 === U ? void 0 : U.call(console, 'colyseus.js - onError => ('.concat(S, ') ').concat(T));
-                        }), this.onLeave(function() {
-                            return R.removeAllListeners();
-                        });
+                        u = m.call(l, r);
+                    } catch (l) {
+                        u = [
+                            6,
+                            l
+                        ], o = 0;
+                    } finally {
+                        e = g = 0;
                     }
-                    return Object.defineProperty(O.prototype, 'id', {
-                        get: function() {
-                            return this.roomId;
-                        },
-                        enumerable: !1,
-                        configurable: !0
-                    }), O.prototype.connect = function(P, Q, R) {
-                        void 0 === R && (R = this);
-                        var S = new C();
-                        R.connection = S, S.events.onmessage = O.prototype.onMessageCallback.bind(R), S.events.onclose = function(T) {
-                            var U;
-                            if (!R.hasJoined)
-                                return null === (U = console.warn) || void 0 === U || U.call(console, 'Room connection was closed unexpectedly ('.concat(T.code, '): ').concat(T.reason)), void R.onError.invoke(T.code, T.reason);
-                            T.code === h.DEVMODE_RESTART && Q ? Q() : (R.onLeave.invoke(T.code), R.destroy());
-                        }, S.events.onerror = function(T) {
-                            var U;
-                            null === (U = console.warn) || void 0 === U || U.call(console, 'Room, onError ('.concat(T.code, '): ').concat(T.reason)), R.onError.invoke(T.code, T.reason);
-                        }, S.connect(P);
-                    }, O.prototype.leave = function(P) {
-                        var Q = this;
-                        return void 0 === P && (P = !0), new Promise(function(R) {
-                            Q.onLeave(function(S) {
-                                return R(S);
-                            }), Q.connection ? P ? Q.connection.send([d.Protocol.LEAVE_ROOM]) : Q.connection.close() : Q.onLeave.invoke(h.CONSENTED);
-                        });
-                    }, O.prototype.onMessage = function(P, Q) {
-                        return this.onMessageHandlers.on(this.getMessageHandlerKey(P), Q);
-                    }, O.prototype.send = function(P, Q) {
-                        var R, S = [d.Protocol.ROOM_DATA];
-                        if ('string' == typeof P ? M.encode.string(S, P) : M.encode.number(S, P), void 0 !== Q) {
-                            var T = w(Q);
-                            (R = new Uint8Array(S.length + T.byteLength)).set(new Uint8Array(S), 0), R.set(new Uint8Array(T), S.length);
+                if (5 & u[0])
+                    throw u[1];
+                return {
+                    value: u[0] ? u[1] : void 0,
+                    done: !0
+                };
+            }
+        }
+        function q(r, s, t, u) {
+            if ('a' === t && !u)
+                throw new TypeError('Private accessor was defined without a getter');
+            if ('function' == typeof s ? r !== s || !u : !s.has(r))
+                throw new TypeError('Cannot read private member from an object whose class did not declare it');
+            return 'm' === t ? u : 'a' === t ? u.call(r) : u ? u.value : s.get(r);
+        }
+        function r(s, t, u, v, w) {
+            if ('m' === v)
+                throw new TypeError('Private method is not writable');
+            if ('a' === v && !w)
+                throw new TypeError('Private accessor was defined without a setter');
+            if ('function' == typeof t ? s !== t || !w : !t.has(s))
+                throw new TypeError('Cannot write private member to an object whose class did not declare it');
+            return 'a' === v ? w.call(s, u) : w ? w.value = u : t.set(s, u), u;
+        }
+        !function (s) {
+            s[s.CONSENTED = 4000] = 'CONSENTED', s[s.DEVMODE_RESTART = 4010] = 'DEVMODE_RESTART';
+        }(q || (q = {}));
+        var s = function (t) {
+            function u(v, w) {
+                var x = t.call(this, w) || this;
+                return x.name = 'ServerError', x.code = v, x;
+            }
+            return g(u, t), u;
+        }(Error);
+        function t(u, v) {
+            if (this._offset = v, u instanceof ArrayBuffer)
+                this._buffer = u, this._view = new DataView(this._buffer);
+            else {
+                if (!ArrayBuffer.isView(u))
+                    throw new Error('Invalid argument');
+                this._buffer = u.buffer, this._view = new DataView(this._buffer, u.byteOffset, u.byteLength);
+            }
+        }
+        function u(v, w, x) {
+            for (var y = '', z = 0, A = w, B = w + x; A < B; A++) {
+                var C = v.getUint8(A);
+                if (0 != (128 & j))
+                    if (192 != (224 & j))
+                        if (224 != (240 & j)) {
+                            if (240 != (248 & j))
+                                throw new Error('Invalid byte ' + j.toString(16));
+                            (g = (7 & j) << 18 | (63 & v.getUint8(++A)) << 12 | (63 & v.getUint8(++A)) << 6 | (63 & v.getUint8(++A)) << 0) >= 65536 ? (g -= 65536, y += String.fromCharCode(55296 + (g >>> 10), 56320 + (1023 & g))) : y += String.fromCharCode(g);
                         } else
-                            R = new Uint8Array(S);
-                        this.connection.send(R.buffer);
-                    }, O.prototype.sendBytes = function(P, Q) {
-                        var R, S = [d.Protocol.ROOM_DATA_BYTES];
-                        'string' == typeof P ? M.encode.string(S, P) : M.encode.number(S, P), (R = new Uint8Array(S.length + (Q.byteLength || Q.length))).set(new Uint8Array(S), 0), R.set(new Uint8Array(Q), S.length), this.connection.send(R.buffer);
-                    }, Object.defineProperty(O.prototype, 'state', {
-                        get: function() {
-                            return this.serializer.getState();
-                        },
-                        enumerable: !1,
-                        configurable: !0
-                    }), O.prototype.removeAllListeners = function() {
-                        this.onJoin.clear(), this.onStateChange.clear(), this.onError.clear(), this.onLeave.clear(), this.onMessageHandlers.events = {};
-                    }, O.prototype.onMessageCallback = function(P) {
-                        var Q = Array.from(new Uint8Array(P.data)),
-                            R = Q[0];
-                        if (R === d.Protocol.JOIN_ROOM) {
-                            var S = 1,
-                                T = D(Q, S);
-                            if (S += E(T), this.serializerId = D(Q, S), S += E(this.serializerId), !this.serializer) {
-                                var U = H(this.serializerId);
-                                this.serializer = new U();
-                            }
-                            Q.length > S && this.serializer.handshake && this.serializer.handshake(Q, {
-                                offset: S
-                            }), this.reconnectionToken = ''.concat(this.roomId, ':').concat(T), this.hasJoined = !0, this.onJoin.invoke(), this.connection.send([d.Protocol.JOIN_ROOM]);
-                        } else if (R === d.Protocol.ERROR) {
-                            var S = {
-                                    offset: 1
-                                },
-                                T = M.decode.number(Q, S),
-                                U = M.decode.string(Q, S);
-                            this.onError.invoke(T, U);
-                        } else if (R === d.Protocol.LEAVE_ROOM)
-                            this.leave();
-                        else if (R === d.Protocol.ROOM_DATA_SCHEMA) {
-                            var S = {
-                                offset: 1
-                            };
-                            (l = new(o = (this.serializer.getState().constructor._context.get(M.decode.number(Q, S))))()).decode(Q, S), this.dispatchMessage(o, l);
-                        } else if (R === d.Protocol.ROOM_STATE)
-                            Q.shift(), this.setState(Q);
-                        else if (R === d.Protocol.ROOM_STATE_PATCH)
-                            Q.shift(), this.patch(Q);
-                        else if (R === d.Protocol.ROOM_DATA) {
-                            var S = {
-                                    offset: 1
-                                },
-                                T = M.decode.stringCheck(Q, S) ? M.decode.string(Q, S) : M.decode.number(Q, S);
-                            l = Q.length > S.offset ? q(P.data, S.offset) : void 0, this.dispatchMessage(T, l);
-                        } else if (R === d.Protocol.ROOM_DATA_BYTES) {
-                            var S = {
-                                offset: 1
-                            };
-                            o = M.decode.stringCheck(Q, S) ? M.decode.string(Q, S) : M.decode.number(Q, S), this.dispatchMessage(o, new Uint8Array(Q.slice(S.offset)));
-                        }
-                    }, O.prototype.setState = function(P) {
-                        this.serializer.setState(P), this.onStateChange.invoke(this.serializer.getState());
-                    }, O.prototype.patch = function(P) {
-                        this.serializer.patch(P), this.onStateChange.invoke(this.serializer.getState());
-                    }, O.prototype.dispatchMessage = function(P, Q) {
-                        var R, S = this.getMessageHandlerKey(P);
-                        this.onMessageHandlers.events[S] ? this.onMessageHandlers.emit(S, Q) : this.onMessageHandlers.events['*'] ? this.onMessageHandlers.emit('*', P, Q) : null === (R = console.warn) || void 0 === R || R.call(console, 'colyseus.js: onMessage() not registered for type \''.concat(P, '\'.'));
-                    }, O.prototype.destroy = function() {
-                        this.serializer && this.serializer.teardown();
-                    }, O.prototype.getMessageHandlerKey = function(P) {
-                        switch (typeof P) {
-                            case 'function':
-                                return '$'.concat(P._typeid);
-                            case 'string':
-                                return P;
-                            case 'number':
-                                return 'i'.concat(P);
-                            default:
-                                throw new Error('invalid message type.');
-                        }
-                    }, O;
-                }();
-
-            function O(P, Q) {
-                Q.statusMessage = P.statusText, Q.statusCode = P.status, Q.data = P.body;
+                            y += String.fromCharCode((15 & j) << 12 | (63 & v.getUint8(++A)) << 6 | (63 & v.getUint8(++A)) << 0);
+                    else
+                        y += String.fromCharCode((31 & j) << 6 | 63 & v.getUint8(++A));
+                else
+                    y += String.fromCharCode(j);
             }
-
-            function P(Q, R, S) {
-                var T, U, V = (S = S || {}).body;
-                return S.method = Q, S.headers = S.headers || {}, V instanceof FormData || V && 'object' == typeof V && (S.headers['content-type'] = 'application/json', S.body = JSON.stringify(V)), S.withCredentials && (S.credentials = 'include'), S.timeout && (U = new AbortController(), S.signal = U.signal, T = setTimeout(U.abort, S.timeout)), new Promise((Q, i) => {
-                    fetch(R, S).then((R, U) => {
-                        clearTimeout(T), O(R, R), U = R.status >= 400 ? i : Q, (V = R.headers.get('content-type')) && ~V.indexOf('application/json') ? R.text().then(Q => {
-                            try {
-                                R.data = JSON.parse(Q, S.reviver), U(R);
-                            } catch (Q) {
-                                Q.headers = R.headers, O(R, Q), i(Q);
-                            }
-                        }) : U(R);
-                    }).catch(Q => {
-                        Q.timeout = U && U.signal.aborted, i(Q);
-                    });
-                });
-            }
-            var Q, R, S, T, U, V = P.bind(P, 'GET'),
-                W = P.bind(P, 'POST'),
-                X = P.bind(P, 'PATCH'),
-                Y = P.bind(P, 'DELETE'),
-                Z = P.bind(P, 'PUT'),
-                $ = {
-                    del: Y,
-                    get: V,
-                    patch: X,
-                    post: W,
-                    put: Z,
-                    send: P
-                },
-                ab = e({
-                    __proto__: null,
-                    default: $,
-                    del: Y,
-                    get: V,
-                    patch: X,
-                    post: W,
-                    put: Z,
-                    send: P
-                }, [$]),
-                bb = function() {
-                    function cb(db) {
-                        this.client = db;
-                    }
-                    return cb.prototype.get = function(db, eb) {
-                        return void 0 === eb && (eb = {}), this.request('get', db, eb);
-                    }, cb.prototype.post = function(db, eb) {
-                        return void 0 === eb && (eb = {}), this.request('post', db, eb);
-                    }, cb.prototype.del = function(db, eb) {
-                        return void 0 === eb && (eb = {}), this.request('del', db, eb);
-                    }, cb.prototype.put = function(db, eb) {
-                        return void 0 === eb && (eb = {}), this.request('put', db, eb);
-                    }, cb.prototype.request = function(db, eb, fb) {
-                        return void 0 === fb && (fb = {}), ab[db](this.client.getHttpEndpoint(eb), this.getOptions(fb)).catch(function(gb) {
-                            var hb;
-                            throw new n(gb.statusCode || -1, (null === (hb = gb.data) || void 0 === hb ? void 0 : hb.error) || gb.statusMessage || gb.message || 'offline');
-                        });
-                    }, cb.prototype.getOptions = function(db) {
-                        return this.authToken && (db.headers || (db.headers = {}), db.headers.Authorization = 'Bearer '.concat(this.authToken), db.withCredentials = !0), db;
-                    }, cb;
-                }();
-
-            function cb() {
-                return Q || (Q = 'undefined' != typeof cc && cc.sys && cc.sys.localStorage ? cc.sys.localStorage : 'undefined' != typeof window && window.localStorage ? window.localStorage : {
-                    cache: {},
-                    setItem: function(db, eb) {
-                        this.cache[db] = eb;
-                    },
-                    getItem: function(db) {
-                        this.cache[db];
-                    },
-                    removeItem: function(db) {
-                        delete this.cache[db];
-                    }
-                }), Q;
-            }
-
-            function db(eb, fb) {
-                cb().setItem(eb, fb);
-            }
-
-            function eb(fb) {
-                cb().removeItem(fb);
-            }
-
-            function fb(gb, hb) {
-                var ib = cb().getItem(gb);
-                'undefined' != typeof Promise && ib instanceof Promise ? ib.then(function(jb) {
-                    return hb(jb);
-                }) : hb(ib);
-            }
-            var gb, hb = function() {
-                function ib(jb) {
-                    var kb = this;
-                    this.http = jb, this.settings = {
-                        path: '/auth',
-                        key: 'colyseus-auth-token'
-                    }, R.set(this, !1), S.set(this, void 0), T.set(this, void 0), U.set(this, I()), fb(this.settings.key, function(lb) {
-                        return kb.token = lb;
-                    });
+            return y;
+        }
+        function A(B, C) {
+            void 0 === C && (C = 0);
+            var D = new t(B, C), E = e._parse();
+            if (e._offset !== B.byteLength)
+                throw new Error(B.byteLength - e._offset + ' trailing bytes');
+            return E;
+        }
+        t.prototype._array = function (D) {
+            for (var E = new Array(D), F = 0; F < D; F++)
+                E[F] = this._parse();
+            return E;
+        }, t.prototype._map = function (D) {
+            for (var E = {}, F = 0; F < D; F++)
+                E[this._parse()] = this._parse();
+            return E;
+        }, t.prototype._str = function (D) {
+            var E = u(this._view, this._offset, D);
+            return this._offset += D, E;
+        }, t.prototype._bin = function (D) {
+            var E = this._buffer.slice(this._offset, this._offset + D);
+            return this._offset += D, E;
+        }, t.prototype._parse = function () {
+            var D, E = this._view.getUint8(this._offset++), F = 0, G = 0, H = 0, I = 0;
+            if (E < 192)
+                return E < 128 ? E : E < 144 ? this._map(15 & E) : E < 160 ? this._array(15 & E) : this._str(31 & E);
+            if (E > 223)
+                return -1 * (255 - E + 1);
+            switch (E) {
+            case 192:
+                return null;
+            case 194:
+                return !1;
+            case 195:
+                return !0;
+            case 196:
+                return F = this._view.getUint8(this._offset), this._offset += 1, this._bin(F);
+            case 197:
+                return F = this._view.getUint16(this._offset), this._offset += 2, this._bin(F);
+            case 198:
+                return F = this._view.getUint32(this._offset), this._offset += 4, this._bin(F);
+            case 199:
+                if (F = this._view.getUint8(this._offset), G = this._view.getInt8(this._offset + 1), this._offset += 2, -1 === G) {
+                    var J = this._view.getUint32(this._offset);
+                    return H = this._view.getInt32(this._offset + 4), I = this._view.getUint32(this._offset + 8), this._offset += 12, new Date(1000 * (4294967296 * H + I) + J / 1000000);
                 }
-                return Object.defineProperty(ib.prototype, 'token', {
-                    get: function() {
-                        return this.http.authToken;
-                    },
-                    set: function(jb) {
-                        this.http.authToken = jb;
+                return [
+                    G,
+                    this._bin(F)
+                ];
+            case 200:
+                return F = this._view.getUint16(this._offset), G = this._view.getInt8(this._offset + 2), this._offset += 3, [
+                    G,
+                    this._bin(F)
+                ];
+            case 201:
+                return F = this._view.getUint32(this._offset), G = this._view.getInt8(this._offset + 4), this._offset += 5, [
+                    G,
+                    this._bin(F)
+                ];
+            case 202:
+                return D = this._view.getFloat32(this._offset), this._offset += 4, D;
+            case 203:
+                return D = this._view.getFloat64(this._offset), this._offset += 8, D;
+            case 204:
+                return D = this._view.getUint8(this._offset), this._offset += 1, D;
+            case 205:
+                return D = this._view.getUint16(this._offset), this._offset += 2, D;
+            case 206:
+                return D = this._view.getUint32(this._offset), this._offset += 4, D;
+            case 207:
+                return H = this._view.getUint32(this._offset) * Math.pow(2, 32), I = this._view.getUint32(this._offset + 4), this._offset += 8, H + I;
+            case 208:
+                return D = this._view.getInt8(this._offset), this._offset += 1, D;
+            case 209:
+                return D = this._view.getInt16(this._offset), this._offset += 2, D;
+            case 210:
+                return D = this._view.getInt32(this._offset), this._offset += 4, D;
+            case 211:
+                return H = this._view.getInt32(this._offset) * Math.pow(2, 32), I = this._view.getUint32(this._offset + 4), this._offset += 8, H + I;
+            case 212:
+                return G = this._view.getInt8(this._offset), this._offset += 1, 0 === G ? void (this._offset += 1) : [
+                    G,
+                    this._bin(1)
+                ];
+            case 213:
+                return G = this._view.getInt8(this._offset), this._offset += 1, [
+                    G,
+                    this._bin(2)
+                ];
+            case 214:
+                return G = this._view.getInt8(this._offset), this._offset += 1, -1 === G ? (D = this._view.getUint32(this._offset), this._offset += 4, new Date(1000 * D)) : [
+                    G,
+                    this._bin(4)
+                ];
+            case 215:
+                return G = this._view.getInt8(this._offset), this._offset += 1, 0 === G ? (H = this._view.getInt32(this._offset) * Math.pow(2, 32), I = this._view.getUint32(this._offset + 4), this._offset += 8, new Date(H + I)) : -1 === G ? (H = this._view.getUint32(this._offset), I = this._view.getUint32(this._offset + 4), this._offset += 8, new Date(1000 * (4294967296 * (3 & H) + I) + (H >>> 2) / 1000000)) : [
+                    G,
+                    this._bin(8)
+                ];
+            case 216:
+                return G = this._view.getInt8(this._offset), this._offset += 1, [
+                    G,
+                    this._bin(16)
+                ];
+            case 217:
+                return F = this._view.getUint8(this._offset), this._offset += 1, this._str(F);
+            case 218:
+                return F = this._view.getUint16(this._offset), this._offset += 2, this._str(F);
+            case 219:
+                return F = this._view.getUint32(this._offset), this._offset += 4, this._str(F);
+            case 220:
+                return F = this._view.getUint16(this._offset), this._offset += 2, this._array(F);
+            case 221:
+                return F = this._view.getUint32(this._offset), this._offset += 4, this._array(F);
+            case 222:
+                return F = this._view.getUint16(this._offset), this._offset += 2, this._map(F);
+            case 223:
+                return F = this._view.getUint32(this._offset), this._offset += 4, this._map(F);
+            }
+            throw new Error('Could not parse');
+        };
+        var D = 4294967295, E = 17179869183;
+        function F(G, H, I) {
+            for (var J = 0, K = 0, L = I.length; g < L; g++)
+                (J = I.charCodeAt(g)) < 128 ? G.setUint8(H++, J) : J < 2048 ? (G.setUint8(H++, 192 | J >> 6), G.setUint8(H++, 128 | 63 & J)) : J < 55296 || J >= 57344 ? (G.setUint8(H++, 224 | J >> 12), G.setUint8(H++, 128 | J >> 6 & 63), G.setUint8(H++, 128 | 63 & J)) : (g++, J = 65536 + ((1023 & J) << 10 | 1023 & I.charCodeAt(g)), G.setUint8(H++, 240 | J >> 18), G.setUint8(H++, 128 | J >> 12 & 63), G.setUint8(H++, 128 | J >> 6 & 63), G.setUint8(H++, 128 | 63 & J));
+        }
+        function J(K) {
+            for (var L = 0, M = 0, N = 0, O = K.length; N < g; N++)
+                (L = K.charCodeAt(N)) < 128 ? e += 1 : L < 2048 ? e += 2 : L < 55296 || L >= 57344 ? e += 3 : (N++, e += 4);
+            return e;
+        }
+        function O(P, Q, R) {
+            var S = typeof R, T = 0, U = 0, V = 0, W = 0, X = 0, Y = 0;
+            if ('string' === S) {
+                if ((k = J(R)) < 32)
+                    P.push(160 | k), q = 1;
+                else if (k < 256)
+                    P.push(217, k), q = 2;
+                else if (k < 65536)
+                    P.push(218, k >> 8, k), q = 3;
+                else {
+                    if (!(k < 4294967296))
+                        throw new Error('String too long');
+                    P.push(219, k >> 24, k >> 16, k >> 8, k), q = 5;
+                }
+                return Q.push({
+                    _str: R,
+                    _length: k,
+                    _offset: P.length
+                }), q + k;
+            }
+            if ('number' === S)
+                return Math.floor(R) === R && isFinite(R) ? R >= 0 ? R < 128 ? (P.push(R), 1) : R < 256 ? (P.push(204, R), 2) : R < 65536 ? (P.push(205, R >> 8, R), 3) : R < 4294967296 ? (P.push(206, R >> 24, R >> 16, R >> 8, R), 5) : (V = R / Math.pow(2, 32) >> 0, j = R >>> 0, P.push(207, V >> 24, V >> 16, V >> 8, V, j >> 24, j >> 16, j >> 8, j), 9) : R >= -32 ? (P.push(R), 1) : R >= -128 ? (P.push(208, R), 2) : R >= -32768 ? (P.push(209, R >> 8, R), 3) : R >= -2147483648 ? (P.push(210, R >> 24, R >> 16, R >> 8, R), 5) : (V = Math.floor(R / Math.pow(2, 32)), j = R >>> 0, P.push(211, V >> 24, V >> 16, V >> 8, V, j >> 24, j >> 16, j >> 8, j), 9) : (P.push(203), Q.push({
+                    _float: R,
+                    _length: 8,
+                    _offset: P.length
+                }), 9);
+            if ('object' === S) {
+                if (null === R)
+                    return P.push(192), 1;
+                if (Array.isArray(R)) {
+                    if ((k = R.length) < 16)
+                        P.push(144 | k), q = 1;
+                    else if (k < 65536)
+                        P.push(220, k >> 8, k), q = 3;
+                    else {
+                        if (!(k < 4294967296))
+                            throw new Error('Array too large');
+                        P.push(221, k >> 24, k >> 16, k >> 8, k), q = 5;
+                    }
+                    for (g = 0; g < k; g++)
+                        q += O(P, Q, R[g]);
+                    return q;
+                }
+                if (R instanceof Date) {
+                    var Z = R.getTime(), $ = Math.floor(r / 1000), ab = 1000000 * (r - 1000 * $);
+                    return $ >= 0 && t >= 0 && $ <= E ? 0 === t && $ <= D ? (P.push(214, 255, $ >> 24, $ >> 16, $ >> 8, $), 6) : (V = $ / 4294967296, j = 4294967295 & $, P.push(215, 255, t >> 22, t >> 14, t >> 6, V, j >> 24, j >> 16, j >> 8, j), 10) : (V = Math.floor($ / 4294967296), j = $ >>> 0, P.push(199, 12, 255, t >> 24, t >> 16, t >> 8, t, V >> 24, V >> 16, V >> 8, V, j >> 24, j >> 16, j >> 8, j), 15);
+                }
+                if (R instanceof ArrayBuffer) {
+                    if ((k = R.byteLength) < 256)
+                        P.push(196, k), q = 2;
+                    else if (k < 65536)
+                        P.push(197, k >> 8, k), q = 3;
+                    else {
+                        if (!(k < 4294967296))
+                            throw new Error('Buffer too large');
+                        P.push(198, k >> 24, k >> 16, k >> 8, k), q = 5;
+                    }
+                    return Q.push({
+                        _bin: R,
+                        _length: k,
+                        _offset: P.length
+                    }), q + k;
+                }
+                if ('function' == typeof R.toJSON)
+                    return O(P, Q, R.toJSON());
+                var bb = [], cb = '', db = Object.keys(R);
+                for (g = 0, U = F.length; g < U; g++)
+                    void 0 !== R[A = F[g]] && 'function' != typeof R[A] && u.push(A);
+                if ((k = u.length) < 16)
+                    P.push(128 | k), q = 1;
+                else if (k < 65536)
+                    P.push(222, k >> 8, k), q = 3;
+                else {
+                    if (!(k < 4294967296))
+                        throw new Error('Object too large');
+                    P.push(223, k >> 24, k >> 16, k >> 8, k), q = 5;
+                }
+                for (g = 0; g < k; g++)
+                    q += O(P, Q, A = u[g]), q += O(P, Q, R[A]);
+                return q;
+            }
+            if ('boolean' === S)
+                return P.push(R ? 195 : 194), 1;
+            if ('undefined' === S)
+                return P.push(192), 1;
+            if ('function' == typeof R.toJSON)
+                return O(P, Q, R.toJSON());
+            throw new Error('Could not encode');
+        }
+        function bb(cb) {
+            var db = [], eb = [], fb = O(db, e, cb), gb = new ArrayBuffer(fb), hb = new DataView(g), ib = 0, jb = 0, kb = -1;
+            e.length > 0 && (k = e[0]._offset);
+            for (var lb, mb = 0, nb = 0, ob = 0, pb = db.length; t < u; t++)
+                if (hb.setUint8(j + t, db[t]), t + 1 === k) {
+                    if (r = (q = e[ib])._length, nb = j + k, q._bin)
+                        for (var qb = new Uint8Array(q._bin), rb = 0; rb < r; rb++)
+                            hb.setUint8(nb + rb, A[rb]);
+                    else
+                        q._str ? F(hb, nb, q._str) : void 0 !== q._float && hb.setFloat64(nb, q._float);
+                    j += r, e[++ib] && (k = e[ib]._offset);
+                }
+            return g;
+        }
+        var rb, sb, tb = function () {
+                throw new Error('ws does not work in the browser. Browser clients must use the native WebSocket object');
+            }, ub = globalThis.WebSocket || tb, vb = function () {
+                function wb(xb) {
+                    this.events = xb;
+                }
+                return wb.prototype.send = function (xb) {
+                    xb instanceof ArrayBuffer ? this.ws.send(xb) : Array.isArray(xb) && this.ws.send(new Uint8Array(xb).buffer);
+                }, wb.prototype.connect = function (xb) {
+                    this.ws = new ub(xb, this.protocols), this.ws.binaryType = 'arraybuffer', this.ws.onopen = this.events.onopen, this.ws.onmessage = this.events.onmessage, this.ws.onclose = this.events.onclose, this.ws.onerror = this.events.onerror;
+                }, wb.prototype.close = function (xb, yb) {
+                    this.ws.close(xb, yb);
+                }, Object.defineProperty(wb.prototype, 'isOpen', {
+                    get: function () {
+                        return this.ws.readyState === ub.OPEN;
                     },
                     enumerable: !1,
                     configurable: !0
-                }), ib.prototype.onChange = function(jb) {
-                    var kb = this,
-                        lb = l(this, U, 'f').on('change', jb);
-                    return l(this, R, 'f') || m(this, S, new Promise(function(mb, nb) {
-                        kb.getUserData().then(function(ob) {
-                            kb.emitChange(i(i({}, ob), {
-                                token: kb.token
-                            }));
-                        }).catch(function(ob) {
-                            kb.emitChange({
+                }), wb;
+            }(), wb = function () {
+                function xb() {
+                    this.events = {}, this.transport = new vb(this.events);
+                }
+                return xb.prototype.send = function (yb) {
+                    this.transport.send(yb);
+                }, xb.prototype.connect = function (yb) {
+                    this.transport.connect(yb);
+                }, xb.prototype.close = function (yb, zb) {
+                    this.transport.close(yb, zb);
+                }, Object.defineProperty(xb.prototype, 'isOpen', {
+                    get: function () {
+                        return this.transport.isOpen;
+                    },
+                    enumerable: !1,
+                    configurable: !0
+                }), xb;
+            }();
+        function xb(yb, zb) {
+            for (var Ab = yb[zb++], Bb = '', Cb = 0, Db = zb, Eb = zb + e; Db < Eb; Db++) {
+                var Fb = yb[Db];
+                if (0 != (128 & j))
+                    if (192 != (224 & j))
+                        if (224 != (240 & j)) {
+                            if (240 != (248 & j))
+                                throw new Error('Invalid byte ' + j.toString(16));
+                            (g = (7 & j) << 18 | (63 & yb[++Db]) << 12 | (63 & yb[++Db]) << 6 | (63 & yb[++Db]) << 0) >= 65536 ? (g -= 65536, Bb += String.fromCharCode(55296 + (g >>> 10), 56320 + (1023 & g))) : Bb += String.fromCharCode(g);
+                        } else
+                            Bb += String.fromCharCode((15 & j) << 12 | (63 & yb[++Db]) << 6 | (63 & yb[++Db]) << 0);
+                    else
+                        Bb += String.fromCharCode((31 & j) << 6 | 63 & yb[++Db]);
+                else
+                    Bb += String.fromCharCode(j);
+            }
+            return Bb;
+        }
+        function Eb(Fb) {
+            void 0 === Fb && (Fb = '');
+            for (var Gb = 0, Hb = 0, Ib = 0, Jb = Fb.length; Ib < g; Ib++)
+                (Gb = Fb.charCodeAt(Ib)) < 128 ? e += 1 : Gb < 2048 ? e += 2 : Gb < 55296 || Gb >= 57344 ? e += 3 : (Ib++, e += 4);
+            return e + 1;
+        }
+        Gb.Protocol = void 0, (sb = Gb.Protocol || (Gb.Protocol = {}))[sb.HANDSHAKE = 9] = 'HANDSHAKE', sb[sb.JOIN_ROOM = 10] = 'JOIN_ROOM', sb[sb.ERROR = 11] = 'ERROR', sb[sb.LEAVE_ROOM = 12] = 'LEAVE_ROOM', sb[sb.ROOM_DATA = 13] = 'ROOM_DATA', sb[sb.ROOM_STATE = 14] = 'ROOM_STATE', sb[sb.ROOM_STATE_PATCH = 15] = 'ROOM_STATE_PATCH', sb[sb.ROOM_DATA_SCHEMA = 16] = 'ROOM_DATA_SCHEMA', sb[sb.ROOM_DATA_BYTES = 17] = 'ROOM_DATA_BYTES', Gb.ErrorCode = void 0, (rb = Gb.ErrorCode || (Gb.ErrorCode = {}))[rb.MATCHMAKE_NO_HANDLER = 4210] = 'MATCHMAKE_NO_HANDLER', rb[rb.MATCHMAKE_INVALID_CRITERIA = 4211] = 'MATCHMAKE_INVALID_CRITERIA', rb[rb.MATCHMAKE_INVALID_ROOM_ID = 4212] = 'MATCHMAKE_INVALID_ROOM_ID', rb[rb.MATCHMAKE_UNHANDLED = 4213] = 'MATCHMAKE_UNHANDLED', rb[rb.MATCHMAKE_EXPIRED = 4214] = 'MATCHMAKE_EXPIRED', rb[rb.AUTH_FAILED = 4215] = 'AUTH_FAILED', rb[rb.APPLICATION_ERROR = 4216] = 'APPLICATION_ERROR';
+        var Jb = {};
+        function Kb(Lb, Mb) {
+            Jb[Lb] = Mb;
+        }
+        function Lb(Mb) {
+            var Nb = Jb[Mb];
+            if (!Nb)
+                throw new Error('missing serializer: ' + Mb);
+            return Nb;
+        }
+        var Nb = function () {
+                return {
+                    emit: function (Ob) {
+                        for (var Pb = [], Qb = 1; Qb < arguments.length; Qb++)
+                            Pb[Qb - 1] = arguments[Qb];
+                        for (var Rb = this.events[Ob] || [], Sb = 0, Tb = Rb.length; Sb < Tb; Sb++)
+                            Rb[Sb].apply(Rb, Pb);
+                    },
+                    events: {},
+                    on: function (Ob, Pb) {
+                        var Qb, Rb = this;
+                        return (null === (Qb = this.events[Ob]) || void 0 === Qb ? void 0 : Qb.push(Pb)) || (this.events[Ob] = [Pb]), function () {
+                            var Sb;
+                            Rb.events[Ob] = null === (Sb = Rb.events[Ob]) || void 0 === Sb ? void 0 : Sb.filter(function (Tb) {
+                                return Pb !== Tb;
+                            });
+                        };
+                    }
+                };
+            }, Ob = function () {
+                function Pb() {
+                    this.handlers = [];
+                }
+                return Pb.prototype.register = function (Qb, Rb) {
+                    return this.handlers.push(Qb), this;
+                }, Pb.prototype.invoke = function () {
+                    for (var Qb = this, Rb = [], Sb = 0; Sb < arguments.length; Sb++)
+                        Rb[Sb] = arguments[Sb];
+                    this.handlers.forEach(function (Tb) {
+                        return Tb.apply(Qb, Rb);
+                    });
+                }, Pb.prototype.invokeAsync = function () {
+                    for (var Qb = this, Rb = [], Sb = 0; Sb < arguments.length; Sb++)
+                        Rb[Sb] = arguments[Sb];
+                    return Promise.all(this.handlers.map(function (Tb) {
+                        return Tb.apply(Qb, Rb);
+                    }));
+                }, Pb.prototype.remove = function (Qb) {
+                    var Rb = this.handlers.indexOf(Qb);
+                    this.handlers[Rb] = this.handlers[this.handlers.length - 1], this.handlers.pop();
+                }, Pb.prototype.clear = function () {
+                    this.handlers = [];
+                }, Pb;
+            }();
+        function Pb() {
+            var Qb = new Ob();
+            function Rb(Sb) {
+                return Qb.register(Sb, null === this);
+            }
+            return Rb.once = function (Sb) {
+                var Tb = function () {
+                    for (var Ub = [], Vb = 0; Vb < arguments.length; Vb++)
+                        Ub[Vb] = arguments[Vb];
+                    Sb.apply(this, Ub), Qb.remove(Tb);
+                };
+                Qb.register(Tb);
+            }, Rb.remove = function (Sb) {
+                return Qb.remove(Sb);
+            }, Rb.invoke = function () {
+                for (var Sb = [], Tb = 0; Tb < arguments.length; Tb++)
+                    Sb[Tb] = arguments[Tb];
+                return Qb.invoke.apply(Qb, Sb);
+            }, Rb.invokeAsync = function () {
+                for (var Sb = [], Tb = 0; Tb < arguments.length; Tb++)
+                    Sb[Tb] = arguments[Tb];
+                return Qb.invokeAsync.apply(Qb, Sb);
+            }, Rb.clear = function () {
+                return Qb.clear();
+            }, Rb;
+        }
+        function Rb(Sb) {
+            var Tb = { exports: {} };
+            return Sb(Tb, Tb.exports), Tb.exports;
+        }
+        'undefined' != typeof globalThis ? globalThis : 'undefined' != typeof window ? window : void 0 !== Qb || 'undefined' != typeof self && self;
+        var Tb = Rb(function (Ub, Vb) {
+                !function (Wb, Xb) {
+                    Xb(Vb);
+                }(0, function (Wb) {
+                    var Xb = function (Yb, Zb) {
+                        return Xb = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function ($b, ac) {
+                            $b.__proto__ = ac;
+                        } || function ($b, ac) {
+                            for (var bc in ac)
+                                Object.prototype.hasOwnProperty.call(ac, bc) && ($b[bc] = ac[bc]);
+                        }, Xb(Yb, Zb);
+                    };
+                    function Yb(Zb, $b) {
+                        if ('function' != typeof $b && null !== $b)
+                            throw new TypeError('Class extends value ' + String($b) + ' is not a constructor or null');
+                        function ac() {
+                            this.constructor = Zb;
+                        }
+                        Xb(Zb, $b), Zb.prototype = null === $b ? Object.create($b) : (ac.prototype = $b.prototype, new ac());
+                    }
+                    function Zb($b, ac, bc, cc) {
+                        var dc, ec = arguments.length, fc = ec < 3 ? ac : null === cc ? cc = Object.getOwnPropertyDescriptor(ac, bc) : cc;
+                        if ('object' == typeof Reflect && 'function' == typeof Reflect.decorate)
+                            fc = Reflect.decorate($b, ac, bc, cc);
+                        else
+                            for (var gc = $b.length - 1; gc >= 0; gc--)
+                                (dc = $b[gc]) && (fc = (ec < 3 ? dc(fc) : ec > 3 ? dc(ac, bc, fc) : dc(ac, bc)) || fc);
+                        return ec > 3 && fc && Object.defineProperty(ac, bc, fc), fc;
+                    }
+                    function dc(ec, fc, gc) {
+                        if (gc || 2 === arguments.length)
+                            for (var hc, ic = 0, jc = fc.length; dc < jc; dc++)
+                                !Zb && dc in fc || (Zb || (Zb = Array.prototype.slice.call(fc, 0, dc)), Zb[dc] = fc[dc]);
+                        return ec.concat(Zb || Array.prototype.slice.call(fc));
+                    }
+                    var hc, ic = 255, jc = 213;
+                    Wb.OPERATION = void 0, (hc = Wb.OPERATION || (Wb.OPERATION = {}))[hc.ADD = 128] = 'ADD', hc[hc.REPLACE = 0] = 'REPLACE', hc[hc.DELETE = 64] = 'DELETE', hc[hc.DELETE_AND_ADD = 192] = 'DELETE_AND_ADD', hc[hc.TOUCH = 1] = 'TOUCH', hc[hc.CLEAR = 10] = 'CLEAR';
+                    var kc = function () {
+                        function lc(mc, nc, oc) {
+                            this.changed = !1, this.changes = new Map(), this.allChanges = new Set(), this.caches = {}, this.currentCustomOperation = 0, this.ref = mc, this.setParent(nc, oc);
+                        }
+                        return lc.prototype.setParent = function (mc, nc, oc) {
+                            var pc = this;
+                            if (this.indexes || (this.indexes = this.ref instanceof _qe ? this.ref._definition.indexes : {}), this.parent = mc, this.parentIndex = oc, nc)
+                                if (this.root = nc, this.ref instanceof _qe) {
+                                    var qc = this.ref._definition;
+                                    for (var rc in qc.schema) {
+                                        var sc = this.ref[rc];
+                                        if (sc && sc.$changes) {
+                                            var tc = qc.indexes[rc];
+                                            sc.$changes.setParent(this.ref, nc, tc);
+                                        }
+                                    }
+                                } else
+                                    'object' == typeof this.ref && this.ref.forEach(function (uc, vc) {
+                                        if (uc instanceof _qe) {
+                                            var wc = uc.$changes, xc = pc.ref.$changes.indexes[vc];
+                                            wc.setParent(pc.ref, pc.root, xc);
+                                        }
+                                    });
+                        }, lc.prototype.operation = function (mc) {
+                            this.changes.set(--this.currentCustomOperation, mc);
+                        }, lc.prototype.change = function (mc, nc) {
+                            void 0 === nc && (nc = Wb.OPERATION.ADD);
+                            var oc = 'number' == typeof mc ? mc : this.indexes[mc];
+                            this.assertValidIndex(oc, mc);
+                            var pc = this.changes.get(oc);
+                            pc && pc.op !== Wb.OPERATION.DELETE && pc.op !== Wb.OPERATION.TOUCH || this.changes.set(oc, {
+                                op: pc && pc.op === Wb.OPERATION.DELETE ? Wb.OPERATION.DELETE_AND_ADD : nc,
+                                index: oc
+                            }), this.allChanges.add(oc), this.changed = !0, this.touchParents();
+                        }, lc.prototype.touch = function (mc) {
+                            var nc = 'number' == typeof mc ? mc : this.indexes[mc];
+                            this.assertValidIndex(nc, mc), this.changes.has(nc) || this.changes.set(nc, {
+                                op: Wb.OPERATION.TOUCH,
+                                index: nc
+                            }), this.allChanges.add(nc), this.touchParents();
+                        }, lc.prototype.touchParents = function () {
+                            this.parent && this.parent.$changes.touch(this.parentIndex);
+                        }, lc.prototype.getType = function (mc) {
+                            if (this.ref._definition)
+                                return (lc = this.ref._definition).schema[lc.fieldsByIndex[mc]];
+                            var nc, oc = (nc = this.parent._definition).schema[nc.fieldsByIndex[this.parentIndex]];
+                            return Object.values(oc)[0];
+                        }, lc.prototype.getChildrenFilter = function () {
+                            var mc = this.parent._definition.childFilters;
+                            return mc && mc[this.parentIndex];
+                        }, lc.prototype.getValue = function (mc) {
+                            return this.ref.getByIndex(mc);
+                        }, lc.prototype.delete = function (mc) {
+                            var nc = 'number' == typeof mc ? mc : this.indexes[mc];
+                            if (void 0 !== nc) {
+                                var oc = this.getValue(nc);
+                                this.changes.set(nc, {
+                                    op: Wb.OPERATION.DELETE,
+                                    index: nc
+                                }), this.allChanges.delete(nc), delete this.caches[nc], oc && oc.$changes && (oc.$changes.parent = void 0), this.changed = !0, this.touchParents();
+                            } else
+                                console.warn('@colyseus/schema '.concat(this.ref.constructor.name, ': trying to delete non-existing index: ').concat(mc, ' (').concat(nc, ')'));
+                        }, lc.prototype.discard = function (mc, nc) {
+                            var oc = this;
+                            void 0 === mc && (mc = !1), void 0 === nc && (nc = !1), this.ref instanceof _qe || this.changes.forEach(function (pc) {
+                                if (pc.op === Wb.OPERATION.DELETE) {
+                                    var qc = oc.ref.getIndex(pc.index);
+                                    delete oc.indexes[qc];
+                                }
+                            }), this.changes.clear(), this.changed = mc, nc && this.allChanges.clear(), this.currentCustomOperation = 0;
+                        }, lc.prototype.discardAll = function () {
+                            var mc = this;
+                            this.changes.forEach(function (nc) {
+                                var oc = mc.getValue(nc.index);
+                                oc && oc.$changes && oc.$changes.discardAll();
+                            }), this.discard();
+                        }, lc.prototype.cache = function (mc, nc) {
+                            this.caches[mc] = nc;
+                        }, lc.prototype.clone = function () {
+                            return new lc(this.ref, this.parent, this.root);
+                        }, lc.prototype.ensureRefId = function () {
+                            void 0 === this.refId && (this.refId = this.root.getNextUniqueId());
+                        }, lc.prototype.assertValidIndex = function (mc, nc) {
+                            if (void 0 === mc)
+                                throw new Error('ChangeTree: missing index for field "'.concat(nc, '"'));
+                        }, lc;
+                    }();
+                    function lc(mc, nc, oc, pc) {
+                        return mc[nc] || (mc[nc] = []), mc[nc].push(oc), null == pc || pc.forEach(function (qc, rc) {
+                            return oc(qc, rc);
+                        }), function () {
+                            return nb(mc[nc], mc[nc].indexOf(oc));
+                        };
+                    }
+                    function mc(nc) {
+                        var oc = this, pc = 'string' != typeof this.$changes.getType();
+                        this.$items.forEach(function (qc, rc) {
+                            nc.push({
+                                refId: Yb.$changes.refId,
+                                op: Wb.OPERATION.DELETE,
+                                field: rc,
+                                value: void 0,
+                                previousValue: qc
+                            }), Zb && Yb.$changes.root.removeRef(qc.$changes.refId);
+                        });
+                    }
+                    function pc(qc, rc) {
+                        if (-1 === rc || rc >= qc.length)
+                            return !1;
+                        for (var sc = qc.length - 1, tc = rc; Zb < Yb; Zb++)
+                            qc[Zb] = qc[Zb + 1];
+                        return qc.length = Yb, !0;
+                    }
+                    var sc = function (tc, uc) {
+                        var vc = tc.toString(), wc = uc.toString();
+                        return vc < wc ? -1 : vc > wc ? 1 : 0;
+                    };
+                    function tc(uc) {
+                        return uc.$proxy = !0, uc = new Proxy(uc, {
+                            get: function (vc, wc) {
+                                return 'symbol' == typeof wc || isNaN(wc) ? vc[wc] : vc.at(wc);
+                            },
+                            set: function (vc, wc, xc) {
+                                if ('symbol' == typeof wc || isNaN(wc))
+                                    vc[wc] = xc;
+                                else {
+                                    var yc = Array.from(vc.$items.keys()), zc = parseInt(yc[wc] || wc);
+                                    null == xc ? vc.deleteAt(zc) : vc.setAt(zc, xc);
+                                }
+                                return !0;
+                            },
+                            deleteProperty: function (vc, wc) {
+                                return 'number' == typeof wc ? vc.deleteAt(wc) : delete vc[wc], !0;
+                            }
+                        });
+                    }
+                    var uc = function () {
+                        function vc() {
+                            for (var wc = [], xc = 0; vc < arguments.length; vc++)
+                                wc[vc] = arguments[vc];
+                            this.$changes = new kc(this), this.$items = new Map(), this.$indexes = new Map(), this.$refId = 0, this.push.apply(this, wc);
+                        }
+                        return vc.prototype.onAdd = function (yc, zc) {
+                            return void 0 === zc && (zc = !0), lc(this.$callbacks || (this.$callbacks = []), wc.OPERATION.ADD, yc, zc ? this.$items : void 0);
+                        }, vc.prototype.onRemove = function (yc) {
+                            return lc(this.$callbacks || (this.$callbacks = []), wc.OPERATION.DELETE, yc);
+                        }, vc.prototype.onChange = function (yc) {
+                            return lc(this.$callbacks || (this.$callbacks = []), wc.OPERATION.REPLACE, yc);
+                        }, vc.is = function (yc) {
+                            return Array.isArray(yc) || void 0 !== yc.array;
+                        }, Object.defineProperty(vc.prototype, 'length', {
+                            get: function () {
+                                return this.$items.size;
+                            },
+                            set: function (yc) {
+                                0 === yc ? this.clear() : this.splice(yc, this.length - yc);
+                            },
+                            enumerable: !1,
+                            configurable: !0
+                        }), vc.prototype.push = function () {
+                            for (var yc, zc = this, Ac = [], Bc = 0; Bc < arguments.length; Bc++)
+                                Ac[Bc] = arguments[Bc];
+                            return Ac.forEach(function (Cc) {
+                                yc = zc.$refId++, zc.setAt(yc, Cc);
+                            }), yc;
+                        }, vc.prototype.pop = function () {
+                            var yc = Array.from(this.$indexes.values()).pop();
+                            if (void 0 !== yc) {
+                                this.$changes.delete(yc), this.$indexes.delete(yc);
+                                var zc = this.$items.get(yc);
+                                return this.$items.delete(yc), zc;
+                            }
+                        }, vc.prototype.at = function (yc) {
+                            var zc = Array.from(this.$items.keys())[yc];
+                            return this.$items.get(zc);
+                        }, vc.prototype.setAt = function (yc, zc) {
+                            var Ac, Bc;
+                            void 0 !== zc.$changes && zc.$changes.setParent(this, this.$changes.root, yc);
+                            var Cc = null !== (Bc = null === (Ac = this.$changes.indexes[yc]) || void 0 === Ac ? void 0 : Ac.op) && void 0 !== Bc ? Bc : wc.OPERATION.ADD;
+                            this.$changes.indexes[yc] = yc, this.$indexes.set(yc, yc), this.$items.set(yc, zc), this.$changes.change(yc, Cc);
+                        }, vc.prototype.deleteAt = function (yc) {
+                            var zc = Array.from(this.$items.keys())[yc];
+                            return void 0 !== zc && this.$deleteAt(zc);
+                        }, vc.prototype.$deleteAt = function (yc) {
+                            return this.$changes.delete(yc), this.$indexes.delete(yc), this.$items.delete(yc);
+                        }, vc.prototype.clear = function (yc) {
+                            this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), yc && mc.call(this, yc), this.$items.clear(), this.$changes.operation({
+                                index: 0,
+                                op: wc.OPERATION.CLEAR
+                            }), this.$changes.touchParents();
+                        }, vc.prototype.concat = function () {
+                            for (var yc, zc = [], Ac = 0; Ac < arguments.length; Ac++)
+                                zc[Ac] = arguments[Ac];
+                            return new (vc.bind.apply(vc, dc([void 0], (yc = Array.from(this.$items.values())).concat.apply(yc, zc), !1)))();
+                        }, vc.prototype.join = function (yc) {
+                            return Array.from(this.$items.values()).join(yc);
+                        }, vc.prototype.reverse = function () {
+                            var yc = this, zc = Array.from(this.$items.keys());
+                            return Array.from(this.$items.values()).reverse().forEach(function (Ac, Bc) {
+                                yc.setAt(zc[Bc], Ac);
+                            }), this;
+                        }, vc.prototype.shift = function () {
+                            var yc = Array.from(this.$items.keys()).shift();
+                            if (void 0 !== yc) {
+                                var zc = this.$items.get(yc);
+                                return this.$deleteAt(yc), zc;
+                            }
+                        }, vc.prototype.slice = function (yc, zc) {
+                            var Ac = new vc();
+                            return Ac.push.apply(Ac, Array.from(this.$items.values()).slice(yc, zc)), Ac;
+                        }, vc.prototype.sort = function (yc) {
+                            var zc = this;
+                            void 0 === yc && (yc = sc);
+                            var Ac = Array.from(this.$items.keys());
+                            return Array.from(this.$items.values()).sort(yc).forEach(function (Bc, Cc) {
+                                zc.setAt(Ac[Cc], Bc);
+                            }), this;
+                        }, vc.prototype.splice = function (yc, zc) {
+                            void 0 === zc && (zc = this.length - yc);
+                            for (var Ac = Array.from(this.$items.keys()), Bc = [], Cc = yc; Cc < yc + zc; Cc++)
+                                Bc.push(this.$items.get(Ac[Cc])), this.$deleteAt(Ac[Cc]);
+                            return Bc;
+                        }, vc.prototype.unshift = function () {
+                            for (var yc = this, zc = [], Ac = 0; Ac < arguments.length; Ac++)
+                                zc[Ac] = arguments[Ac];
+                            var Bc = this.length, Cc = zc.length, Dc = Array.from(this.$items.values());
+                            return zc.forEach(function (Ec, Fc) {
+                                yc.setAt(Fc, Ec);
+                            }), Dc.forEach(function (Ec, Fc) {
+                                yc.setAt(Cc + Fc, Ec);
+                            }), Bc + Cc;
+                        }, vc.prototype.indexOf = function (yc, zc) {
+                            return Array.from(this.$items.values()).indexOf(yc, zc);
+                        }, vc.prototype.lastIndexOf = function (yc, zc) {
+                            return void 0 === zc && (zc = this.length - 1), Array.from(this.$items.values()).lastIndexOf(yc, zc);
+                        }, vc.prototype.every = function (yc, zc) {
+                            return Array.from(this.$items.values()).every(yc, zc);
+                        }, vc.prototype.some = function (yc, zc) {
+                            return Array.from(this.$items.values()).some(yc, zc);
+                        }, vc.prototype.forEach = function (yc, zc) {
+                            Array.from(this.$items.values()).forEach(yc, zc);
+                        }, vc.prototype.map = function (yc, zc) {
+                            return Array.from(this.$items.values()).map(yc, zc);
+                        }, vc.prototype.filter = function (yc, zc) {
+                            return Array.from(this.$items.values()).filter(yc, zc);
+                        }, vc.prototype.reduce = function (yc, zc) {
+                            return Array.prototype.reduce.apply(Array.from(this.$items.values()), arguments);
+                        }, vc.prototype.reduceRight = function (yc, zc) {
+                            return Array.prototype.reduceRight.apply(Array.from(this.$items.values()), arguments);
+                        }, vc.prototype.find = function (yc, zc) {
+                            return Array.from(this.$items.values()).find(yc, zc);
+                        }, vc.prototype.findIndex = function (yc, zc) {
+                            return Array.from(this.$items.values()).findIndex(yc, zc);
+                        }, vc.prototype.fill = function (yc, zc, Ac) {
+                            throw new Error('ArraySchema#fill() not implemented');
+                        }, vc.prototype.copyWithin = function (yc, zc, Ac) {
+                            throw new Error('ArraySchema#copyWithin() not implemented');
+                        }, vc.prototype.toString = function () {
+                            return this.$items.toString();
+                        }, vc.prototype.toLocaleString = function () {
+                            return this.$items.toLocaleString();
+                        }, vc.prototype[Symbol.iterator] = function () {
+                            return Array.from(this.$items.values())[Symbol.iterator]();
+                        }, vc.prototype.entries = function () {
+                            return this.$items.entries();
+                        }, vc.prototype.keys = function () {
+                            return this.$items.keys();
+                        }, vc.prototype.values = function () {
+                            return this.$items.values();
+                        }, vc.prototype.includes = function (yc, zc) {
+                            return Array.from(this.$items.values()).includes(yc, zc);
+                        }, vc.prototype.flatMap = function (yc, zc) {
+                            throw new Error('ArraySchema#flatMap() is not supported.');
+                        }, vc.prototype.flat = function (yc) {
+                            throw new Error('ArraySchema#flat() is not supported.');
+                        }, vc.prototype.findLast = function () {
+                            var yc = Array.from(this.$items.values());
+                            return yc.findLast.apply(yc, arguments);
+                        }, vc.prototype.findLastIndex = function () {
+                            var yc = Array.from(this.$items.values());
+                            return yc.findLastIndex.apply(yc, arguments);
+                        }, vc.prototype.setIndex = function (yc, zc) {
+                            this.$indexes.set(yc, zc);
+                        }, vc.prototype.getIndex = function (yc) {
+                            return this.$indexes.get(yc);
+                        }, vc.prototype.getByIndex = function (yc) {
+                            return this.$items.get(this.$indexes.get(yc));
+                        }, vc.prototype.deleteByIndex = function (yc) {
+                            var zc = this.$indexes.get(yc);
+                            this.$items.delete(zc), this.$indexes.delete(yc);
+                        }, vc.prototype.toArray = function () {
+                            return Array.from(this.$items.values());
+                        }, vc.prototype.toJSON = function () {
+                            return this.toArray().map(function (yc) {
+                                return 'function' == typeof yc.toJSON ? yc.toJSON() : yc;
+                            });
+                        }, vc.prototype.clone = function (yc) {
+                            return yc ? new (vc.bind.apply(vc, dc([void 0], Array.from(this.$items.values()), !1)))() : new (vc.bind.apply(vc, dc([void 0], this.map(function (zc) {
+                                return zc.$changes ? zc.clone() : zc;
+                            }), !1)))();
+                        }, vc;
+                    }();
+                    function vc(wc) {
+                        return wc.$proxy = !0, wc = new Proxy(wc, {
+                            get: function (xc, yc) {
+                                return 'symbol' != typeof yc && void 0 === xc[yc] ? xc.get(yc) : xc[yc];
+                            },
+                            set: function (xc, yc, zc) {
+                                return 'symbol' != typeof yc && -1 === yc.indexOf('$') && 'onAdd' !== yc && 'onRemove' !== yc && 'onChange' !== yc ? xc.set(yc, zc) : xc[yc] = zc, !0;
+                            },
+                            deleteProperty: function (xc, yc) {
+                                return xc.delete(yc), !0;
+                            }
+                        });
+                    }
+                    var wc = function () {
+                            function xc(yc) {
+                                var zc = this;
+                                if (this.$changes = new kc(this), this.$items = new Map(), this.$indexes = new Map(), this.$refId = 0, yc)
+                                    if (yc instanceof Map || yc instanceof xc)
+                                        yc.forEach(function (Ac, Bc) {
+                                            return zc.set(Bc, Ac);
+                                        });
+                                    else
+                                        for (var Ac in yc)
+                                            this.set(Ac, yc[Ac]);
+                            }
+                            return xc.prototype.onAdd = function (Ac, Bc) {
+                                return void 0 === Bc && (Bc = !0), lc(this.$callbacks || (this.$callbacks = []), Wb.OPERATION.ADD, Ac, Bc ? this.$items : void 0);
+                            }, xc.prototype.onRemove = function (Ac) {
+                                return lc(this.$callbacks || (this.$callbacks = []), Wb.OPERATION.DELETE, Ac);
+                            }, xc.prototype.onChange = function (Ac) {
+                                return lc(this.$callbacks || (this.$callbacks = []), Wb.OPERATION.REPLACE, Ac);
+                            }, xc.is = function (Ac) {
+                                return void 0 !== Ac.map;
+                            }, xc.prototype[Symbol.iterator] = function () {
+                                return this.$items[Symbol.iterator]();
+                            }, Object.defineProperty(xc.prototype, Symbol.toStringTag, {
+                                get: function () {
+                                    return this.$items[Symbol.toStringTag];
+                                },
+                                enumerable: !1,
+                                configurable: !0
+                            }), xc.prototype.set = function (Ac, Bc) {
+                                if (null == Bc)
+                                    throw new Error('MapSchema#set(\''.concat(Ac, '\', ').concat(Bc, '): trying to set ').concat(Bc, ' value on \'').concat(Ac, '\'.'));
+                                var Cc = void 0 !== this.$changes.indexes[Ac], Dc = Cc ? this.$changes.indexes[Ac] : this.$refId++, Ec = Cc ? Wb.OPERATION.REPLACE : Wb.OPERATION.ADD, Fc = void 0 !== Bc.$changes;
+                                return Fc && Bc.$changes.setParent(this, this.$changes.root, Dc), Cc ? Fc && this.$items.get(Ac) !== Bc && (Ec = Wb.OPERATION.ADD) : (this.$changes.indexes[Ac] = Dc, this.$indexes.set(Dc, Ac)), this.$items.set(Ac, Bc), this.$changes.change(Ac, Ec), this;
+                            }, xc.prototype.get = function (Ac) {
+                                return this.$items.get(Ac);
+                            }, xc.prototype.delete = function (Ac) {
+                                return this.$changes.delete(Ac), this.$items.delete(Ac);
+                            }, xc.prototype.clear = function (Ac) {
+                                this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), Ac && mc.call(this, Ac), this.$items.clear(), this.$changes.operation({
+                                    index: 0,
+                                    op: Wb.OPERATION.CLEAR
+                                }), this.$changes.touchParents();
+                            }, xc.prototype.has = function (Ac) {
+                                return this.$items.has(Ac);
+                            }, xc.prototype.forEach = function (Ac) {
+                                this.$items.forEach(Ac);
+                            }, xc.prototype.entries = function () {
+                                return this.$items.entries();
+                            }, xc.prototype.keys = function () {
+                                return this.$items.keys();
+                            }, xc.prototype.values = function () {
+                                return this.$items.values();
+                            }, Object.defineProperty(xc.prototype, 'size', {
+                                get: function () {
+                                    return this.$items.size;
+                                },
+                                enumerable: !1,
+                                configurable: !0
+                            }), xc.prototype.setIndex = function (Ac, Bc) {
+                                this.$indexes.set(Ac, Bc);
+                            }, xc.prototype.getIndex = function (Ac) {
+                                return this.$indexes.get(Ac);
+                            }, xc.prototype.getByIndex = function (Ac) {
+                                return this.$items.get(this.$indexes.get(Ac));
+                            }, xc.prototype.deleteByIndex = function (Ac) {
+                                var Bc = this.$indexes.get(Ac);
+                                this.$items.delete(Bc), this.$indexes.delete(Ac);
+                            }, xc.prototype.toJSON = function () {
+                                var Ac = {};
+                                return this.forEach(function (Bc, Cc) {
+                                    Ac[Cc] = 'function' == typeof Bc.toJSON ? Bc.toJSON() : Bc;
+                                }), Ac;
+                            }, xc.prototype.clone = function (Ac) {
+                                var Bc;
+                                return Ac ? Bc = Object.assign(new xc(), this) : (Bc = new xc(), this.forEach(function (Cc, Dc) {
+                                    Cc.$changes ? Bc.set(Dc, Cc.clone()) : Bc.set(Dc, Cc);
+                                })), Bc;
+                            }, xc;
+                        }(), xc = {};
+                    function yc(zc, Ac) {
+                        xc[zc] = Ac;
+                    }
+                    function zc(Ac) {
+                        return xc[Ac];
+                    }
+                    var Ac = function () {
+                        function Bc() {
+                            this.indexes = {}, this.fieldsByIndex = {}, this.deprecated = {}, this.descriptors = {};
+                        }
+                        return Bc.create = function (Cc) {
+                            var Dc = new Bc();
+                            return Dc.schema = Object.assign({}, Cc && Cc.schema || {}), Dc.indexes = Object.assign({}, Cc && Cc.indexes || {}), Dc.fieldsByIndex = Object.assign({}, Cc && Cc.fieldsByIndex || {}), Dc.descriptors = Object.assign({}, Cc && Cc.descriptors || {}), Dc.deprecated = Object.assign({}, Cc && Cc.deprecated || {}), Dc;
+                        }, Bc.prototype.addField = function (Cc, Dc) {
+                            var Ec = this.getNextFieldIndex();
+                            this.fieldsByIndex[Ec] = Cc, this.indexes[Cc] = Ec, this.schema[Cc] = Array.isArray(Dc) ? { array: Dc[0] } : Dc;
+                        }, Bc.prototype.hasField = function (Cc) {
+                            return void 0 !== this.indexes[Cc];
+                        }, Bc.prototype.addFilter = function (Cc, Dc) {
+                            return this.filters || (this.filters = {}, this.indexesWithFilters = []), this.filters[this.indexes[Cc]] = Dc, this.indexesWithFilters.push(this.indexes[Cc]), !0;
+                        }, Bc.prototype.addChildrenFilter = function (Cc, Dc) {
+                            var Ec = this.indexes[Cc], Fc = this.schema[Cc];
+                            if (zc(Object.keys(Fc)[0]))
+                                return this.childFilters || (this.childFilters = {}), this.childFilters[Ec] = Dc, !0;
+                            console.warn('@filterChildren: field \''.concat(Cc, '\' can\'t have children. Ignoring filter.'));
+                        }, Bc.prototype.getChildrenFilter = function (Cc) {
+                            return this.childFilters && this.childFilters[this.indexes[Cc]];
+                        }, Bc.prototype.getNextFieldIndex = function () {
+                            return Object.keys(this.schema || {}).length;
+                        }, Bc;
+                    }();
+                    function Bc(Cc) {
+                        return Cc._context && Cc._context.useFilters;
+                    }
+                    var Cc = function () {
+                            function Dc() {
+                                this.types = {}, this.schemas = new Map(), this.useFilters = !1;
+                            }
+                            return Dc.prototype.has = function (Ec) {
+                                return this.schemas.has(Ec);
+                            }, Dc.prototype.get = function (Ec) {
+                                return this.types[Ec];
+                            }, Dc.prototype.add = function (Ec, Fc) {
+                                void 0 === Fc && (Fc = this.schemas.size), Ec._definition = Ac.create(Ec._definition), Ec._typeid = Fc, this.types[Fc] = Ec, this.schemas.set(Ec, Fc);
+                            }, Dc.create = function (Ec) {
+                                return void 0 === Ec && (Ec = {}), function (Fc) {
+                                    return Ec.context || (Ec.context = new Dc()), ub(Fc, Ec);
+                                };
+                            }, Dc;
+                        }(), Dc = new Cc();
+                    function Ec(Fc, Gc) {
+                        return void 0 === Gc && (Gc = {}), function (Hc, Ic) {
+                            var Jc = Gc.context || Dc, Kc = Hc.constructor;
+                            if (Kc._context = Jc, !Fc)
+                                throw new Error(''.concat(Kc.name, ': @type() reference provided for "').concat(Ic, '" is undefined. Make sure you don\'t have any circular dependencies.'));
+                            Jc.has(Kc) || Jc.add(Kc);
+                            var Lc = Kc._definition;
+                            if (Lc.addField(Ic, Fc), Lc.descriptors[Ic]) {
+                                if (Lc.deprecated[Ic])
+                                    return;
+                                try {
+                                    throw new Error('@colyseus/schema: Duplicate \''.concat(Ic, '\' definition on \'').concat(Kc.name, '\'.\nCheck @type() annotation'));
+                                } catch (Fc) {
+                                    var Mc = Fc.stack.split('\n')[4].trim();
+                                    throw new Error(''.concat(Fc.message, ' ').concat(Mc));
+                                }
+                            }
+                            var Nc = uc.is(Fc), Oc = !Nc && wc.is(Fc);
+                            if ('string' != typeof Fc && !_qe.is(Fc)) {
+                                var Pc = Object.values(Fc)[0];
+                                'string' == typeof Pc || Jc.has(Pc) || Jc.add(Pc);
+                            }
+                            if (Gc.manual)
+                                Lc.descriptors[Ic] = {
+                                    enumerable: !0,
+                                    configurable: !0,
+                                    writable: !0
+                                };
+                            else {
+                                var Qc = '_'.concat(Ic);
+                                Lc.descriptors[Qc] = {
+                                    enumerable: !1,
+                                    configurable: !1,
+                                    writable: !0
+                                }, Lc.descriptors[Ic] = {
+                                    get: function () {
+                                        return this[Qc];
+                                    },
+                                    set: function (Rc) {
+                                        Rc !== this[Qc] && (null != Rc ? (!Nc || Rc instanceof uc || (Rc = new (uc.bind.apply(uc, dc([void 0], Rc, !1)))()), !Oc || Rc instanceof wc || (Rc = new wc(Rc)), void 0 === Rc.$proxy && (Oc ? Rc = vc(Rc) : Nc && (Rc = tc(Rc))), this.$changes.change(Ic), Rc.$changes && Rc.$changes.setParent(this, this.$changes.root, this._definition.indexes[Ic])) : this[Qc] && this.$changes.delete(Ic), this[Qc] = Rc);
+                                    },
+                                    enumerable: !0,
+                                    configurable: !0
+                                };
+                            }
+                        };
+                    }
+                    function Fc(Gc) {
+                        return function (Hc, Ic) {
+                            var Jc = Hc.constructor;
+                            Jc._definition.addFilter(Ic, Gc) && (Jc._context.useFilters = !0);
+                        };
+                    }
+                    function Gc(Hc) {
+                        return function (Ic, Jc) {
+                            var Kc = Ic.constructor;
+                            Kc._definition.addChildrenFilter(Jc, Hc) && (Kc._context.useFilters = !0);
+                        };
+                    }
+                    function Hc(Ic) {
+                        return void 0 === Ic && (Ic = !0), function (Jc, Kc) {
+                            var Lc = Jc.constructor._definition;
+                            Lc.deprecated[Kc] = !0, Ic && (Lc.descriptors[Kc] = {
+                                get: function () {
+                                    throw new Error(''.concat(Kc, ' is deprecated.'));
+                                },
+                                set: function (Mc) {
+                                },
+                                enumerable: !1,
+                                configurable: !0
+                            });
+                        };
+                    }
+                    function Ic(Jc, Kc, Lc) {
+                        for (var Mc in (void 0 === Lc && (Lc = {}), Lc.context || (Lc.context = Jc._context || Lc.context || Dc), Kc))
+                            Ec(Kc[Zb], Lc)(Jc.prototype, Zb);
+                        return Jc;
+                    }
+                    function Kc(Lc) {
+                        for (var Mc = 0, Nc = 0, Oc = 0, Pc = Lc.length; Zb < dc; Zb++)
+                            (Mc = Lc.charCodeAt(Zb)) < 128 ? Yb += 1 : Mc < 2048 ? Yb += 2 : Mc < 55296 || Mc >= 57344 ? Yb += 3 : (Zb++, Yb += 4);
+                        return Yb;
+                    }
+                    function Pc(Qc, Rc, Sc) {
+                        for (var Tc = 0, Uc = 0, Vc = Sc.length; dc < Vc; dc++)
+                            (Zb = Sc.charCodeAt(dc)) < 128 ? Qc[Rc++] = Zb : Zb < 2048 ? (Qc[Rc++] = 192 | Zb >> 6, Qc[Rc++] = 128 | 63 & Zb) : Zb < 55296 || Zb >= 57344 ? (Qc[Rc++] = 224 | Zb >> 12, Qc[Rc++] = 128 | Zb >> 6 & 63, Qc[Rc++] = 128 | 63 & Zb) : (dc++, Zb = 65536 + ((1023 & Zb) << 10 | 1023 & Sc.charCodeAt(dc)), Qc[Rc++] = 240 | Zb >> 18, Qc[Rc++] = 128 | Zb >> 12 & 63, Qc[Rc++] = 128 | Zb >> 6 & 63, Qc[Rc++] = 128 | 63 & Zb);
+                    }
+                    function Tc(Uc, Vc) {
+                        Uc.push(255 & Vc);
+                    }
+                    function Uc(Vc, Wc) {
+                        Vc.push(255 & Wc);
+                    }
+                    function Vc(Wc, Xc) {
+                        Wc.push(255 & Xc), Wc.push(Xc >> 8 & 255);
+                    }
+                    function Wc(Xc, Yc) {
+                        Xc.push(255 & Yc), Xc.push(Yc >> 8 & 255);
+                    }
+                    function Xc(Yc, Zc) {
+                        Yc.push(255 & Zc), Yc.push(Zc >> 8 & 255), Yc.push(Zc >> 16 & 255), Yc.push(Zc >> 24 & 255);
+                    }
+                    function Yc(Zc, $c) {
+                        var ad = $c >> 24, bd = $c >> 16, cd = $c >> 8, dd = $c;
+                        Zc.push(255 & dd), Zc.push(255 & dc), Zc.push(255 & Zb), Zc.push(255 & Yb);
+                    }
+                    function cd(dd, ed) {
+                        var fd = Math.floor(ed / Math.pow(2, 32));
+                        Yc(dd, ed >>> 0), Yc(dd, Yb);
+                    }
+                    function ed(fd, gd) {
+                        var hd = gd / Math.pow(2, 32) >> 0;
+                        Yc(fd, gd >>> 0), Yc(fd, Yb);
+                    }
+                    function gd(hd, id) {
+                        _ld(hd, id);
+                    }
+                    function hd(id, jd) {
+                        _md(id, jd);
+                    }
+                    var id = new Int32Array(2), jd = new Float32Array(id.buffer), kd = new Float64Array(id.buffer);
+                    function _ld(md, nd) {
+                        jd[0] = nd, Xc(md, id[0]);
+                    }
+                    function _md(nd, od) {
+                        kd[0] = od, Xc(nd, id[0]), Xc(nd, id[1]);
+                    }
+                    function nd(od, pd) {
+                        return Uc(od, pd ? 1 : 0);
+                    }
+                    function od(pd, qd) {
+                        qd || (qd = '');
+                        var rd = Kc(qd), sd = 0;
+                        if (Yb < 32)
+                            pd.push(160 | Yb), Zb = 1;
+                        else if (Yb < 256)
+                            pd.push(217), Uc(pd, Yb), Zb = 2;
+                        else if (Yb < 65536)
+                            pd.push(218), Wc(pd, Yb), Zb = 3;
+                        else {
+                            if (!(Yb < 4294967296))
+                                throw new Error('String too long');
+                            pd.push(219), Yc(pd, Yb), Zb = 5;
+                        }
+                        return Pc(pd, pd.length, qd), Zb + Yb;
+                    }
+                    function rd(sd, td) {
+                        return isNaN(td) ? rd(sd, 0) : isFinite(td) ? td !== (0 | td) ? (sd.push(203), _md(sd, td), 9) : td >= 0 ? td < 128 ? (Uc(sd, td), 1) : td < 256 ? (sd.push(204), Uc(sd, td), 2) : td < 65536 ? (sd.push(205), Wc(sd, td), 3) : td < 4294967296 ? (sd.push(206), Yc(sd, td), 5) : (sd.push(207), ed(sd, td), 9) : td >= -32 ? (sd.push(224 | td + 32), 1) : td >= -128 ? (sd.push(208), Tc(sd, td), 2) : td >= -32768 ? (sd.push(209), Vc(sd, td), 3) : td >= -2147483648 ? (sd.push(210), Xc(sd, td), 5) : (sd.push(211), cd(sd, td), 9) : rd(sd, td > 0 ? Number.MAX_SAFE_INTEGER : -Number.MAX_SAFE_INTEGER);
+                    }
+                    var sd = Object.freeze({
+                        __proto__: null,
+                        utf8Write: Pc,
+                        int8: Tc,
+                        uint8: Uc,
+                        int16: Vc,
+                        uint16: Wc,
+                        int32: Xc,
+                        uint32: Yc,
+                        int64: cd,
+                        uint64: ed,
+                        float32: gd,
+                        float64: hd,
+                        writeFloat32: _ld,
+                        writeFloat64: _md,
+                        boolean: nd,
+                        string: od,
+                        number: rd
+                    });
+                    function td(ud, vd, wd) {
+                        for (var xd = '', yd = 0, zd = vd, Ad = vd + wd; zd < Ad; zd++) {
+                            var Bd = ud[zd];
+                            0 != (128 & Bd) ? 192 != (224 & Bd) ? 224 != (240 & Bd) ? 240 != (248 & Bd) ? console.error('Invalid byte ' + Bd.toString(16)) : (dc = (7 & Bd) << 18 | (63 & ud[++zd]) << 12 | (63 & ud[++zd]) << 6 | (63 & ud[++zd]) << 0) >= 65536 ? (dc -= 65536, Zb += String.fromCharCode(55296 + (dc >>> 10), 56320 + (1023 & dc))) : Zb += String.fromCharCode(dc) : Zb += String.fromCharCode((15 & Bd) << 12 | (63 & ud[++zd]) << 6 | (63 & ud[++zd]) << 0) : Zb += String.fromCharCode((31 & Bd) << 6 | 63 & ud[++zd]) : Zb += String.fromCharCode(Bd);
+                        }
+                        return Zb;
+                    }
+                    function zd(Ad, Bd) {
+                        return _Ad(Ad, Bd) << 24 >> 24;
+                    }
+                    function _Ad(Bd, Cd) {
+                        return Bd[Cd.offset++];
+                    }
+                    function Bd(Cd, Dd) {
+                        return _Cd(Cd, Dd) << 16 >> 16;
+                    }
+                    function _Cd(Dd, Ed) {
+                        return Dd[Ed.offset++] | Dd[Ed.offset++] << 8;
+                    }
+                    function Dd(Ed, Fd) {
+                        return Ed[Fd.offset++] | Ed[Fd.offset++] << 8 | Ed[Fd.offset++] << 16 | Ed[Fd.offset++] << 24;
+                    }
+                    function Ed(Fd, Gd) {
+                        return Dd(Fd, Gd) >>> 0;
+                    }
+                    function Fd(Gd, Hd) {
+                        return _Od(Gd, Hd);
+                    }
+                    function Gd(Hd, Id) {
+                        return _Pd(Hd, Id);
+                    }
+                    function Hd(Id, Jd) {
+                        var Kd = Ed(Id, Jd);
+                        return Dd(Id, Jd) * Math.pow(2, 32) + Yb;
+                    }
+                    function Jd(Kd, Ld) {
+                        var Md = Ed(Kd, Ld);
+                        return Ed(Kd, Ld) * Math.pow(2, 32) + Yb;
+                    }
+                    var Ld = new Int32Array(2), Md = new Float32Array(Ld.buffer), Nd = new Float64Array(Ld.buffer);
+                    function _Od(Pd, Qd) {
+                        return Ld[0] = Dd(Pd, Qd), Md[0];
+                    }
+                    function _Pd(Qd, Rd) {
+                        return Ld[0] = Dd(Qd, Rd), Ld[1] = Dd(Qd, Rd), Nd[0];
+                    }
+                    function Qd(Rd, Sd) {
+                        return _Ad(Rd, Sd) > 0;
+                    }
+                    function Rd(Sd, Td) {
+                        var Ud, Vd = Sd[Td.offset++];
+                        Zb < 192 ? Yb = 31 & Zb : 217 === Zb ? Yb = _Ad(Sd, Td) : 218 === Zb ? Yb = _Cd(Sd, Td) : 219 === Zb && (Yb = Ed(Sd, Td));
+                        var Wd = td(Sd, Td.offset, Yb);
+                        return Td.offset += Yb, dc;
+                    }
+                    function Vd(Wd, Xd) {
+                        var Yd = Wd[Xd.offset];
+                        return Yb < 192 && Yb > 160 || 217 === Yb || 218 === Yb || 219 === Yb;
+                    }
+                    function Xd(Yd, Zd) {
+                        var $d = Yd[Zd.offset++];
+                        return Yb < 128 ? Yb : 202 === Yb ? _Od(Yd, Zd) : 203 === Yb ? _Pd(Yd, Zd) : 204 === Yb ? _Ad(Yd, Zd) : 205 === Yb ? _Cd(Yd, Zd) : 206 === Yb ? Ed(Yd, Zd) : 207 === Yb ? Jd(Yd, Zd) : 208 === Yb ? zd(Yd, Zd) : 209 === Yb ? Bd(Yd, Zd) : 210 === Yb ? Dd(Yd, Zd) : 211 === Yb ? Hd(Yd, Zd) : Yb > 223 ? -1 * (255 - Yb + 1) : void 0;
+                    }
+                    function Zd($d, ae) {
+                        var be = $d[ae.offset];
+                        return Yb < 128 || Yb >= 202 && Yb <= 211;
+                    }
+                    function ae(be, ce) {
+                        return be[ce.offset] < 160;
+                    }
+                    function be(ce, de) {
+                        return ce[de.offset - 1] === Ad && (ce[de.offset] < 128 || ce[de.offset] >= 202 && ce[de.offset] <= 211);
+                    }
+                    var ce = Object.freeze({
+                            __proto__: null,
+                            int8: zd,
+                            uint8: _Ad,
+                            int16: Bd,
+                            uint16: _Cd,
+                            int32: Dd,
+                            uint32: Ed,
+                            float32: Fd,
+                            float64: Gd,
+                            int64: Hd,
+                            uint64: Jd,
+                            readFloat32: _Od,
+                            readFloat64: _Pd,
+                            boolean: Qd,
+                            string: Rd,
+                            stringCheck: Vd,
+                            number: Xd,
+                            numberCheck: Zd,
+                            arrayCheck: ae,
+                            switchStructureCheck: be
+                        }), de = function () {
+                            function ee(fe) {
+                                var ge = this;
+                                this.$changes = new kc(this), this.$items = new Map(), this.$indexes = new Map(), this.$refId = 0, fe && fe.forEach(function (he) {
+                                    return ee.add(he);
+                                });
+                            }
+                            return ee.prototype.onAdd = function (ge, he) {
+                                return void 0 === he && (he = !0), lc(this.$callbacks || (this.$callbacks = []), Wb.OPERATION.ADD, ge, he ? this.$items : void 0);
+                            }, ee.prototype.onRemove = function (ge) {
+                                return lc(this.$callbacks || (this.$callbacks = []), Wb.OPERATION.DELETE, ge);
+                            }, ee.prototype.onChange = function (ge) {
+                                return lc(this.$callbacks || (this.$callbacks = []), Wb.OPERATION.REPLACE, ge);
+                            }, ee.is = function (ge) {
+                                return void 0 !== ge.collection;
+                            }, ee.prototype.add = function (ge) {
+                                var he = this.$refId++;
+                                return void 0 !== ge.$changes && ge.$changes.setParent(this, this.$changes.root, he), this.$changes.indexes[he] = he, this.$indexes.set(he, he), this.$items.set(he, ge), this.$changes.change(he), he;
+                            }, ee.prototype.at = function (ge) {
+                                var he = Array.from(this.$items.keys())[ge];
+                                return this.$items.get(he);
+                            }, ee.prototype.entries = function () {
+                                return this.$items.entries();
+                            }, ee.prototype.delete = function (ge) {
+                                for (var he, ie, je = this.$items.entries(); (ie = je.next()) && !ie.done;)
+                                    if (ge === ie.value[1]) {
+                                        he = ie.value[0];
+                                        break;
+                                    }
+                                return void 0 !== he && (this.$changes.delete(he), this.$indexes.delete(he), this.$items.delete(he));
+                            }, ee.prototype.clear = function (ge) {
+                                this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), ge && mc.call(this, ge), this.$items.clear(), this.$changes.operation({
+                                    index: 0,
+                                    op: Wb.OPERATION.CLEAR
+                                }), this.$changes.touchParents();
+                            }, ee.prototype.has = function (ge) {
+                                return Array.from(this.$items.values()).some(function (he) {
+                                    return he === ge;
+                                });
+                            }, ee.prototype.forEach = function (ge) {
+                                var he = this;
+                                this.$items.forEach(function (ie, je, ke) {
+                                    return ge(ie, je, he);
+                                });
+                            }, ee.prototype.values = function () {
+                                return this.$items.values();
+                            }, Object.defineProperty(ee.prototype, 'size', {
+                                get: function () {
+                                    return this.$items.size;
+                                },
+                                enumerable: !1,
+                                configurable: !0
+                            }), ee.prototype.setIndex = function (ge, he) {
+                                this.$indexes.set(ge, he);
+                            }, ee.prototype.getIndex = function (ge) {
+                                return this.$indexes.get(ge);
+                            }, ee.prototype.getByIndex = function (ge) {
+                                return this.$items.get(this.$indexes.get(ge));
+                            }, ee.prototype.deleteByIndex = function (ge) {
+                                var he = this.$indexes.get(ge);
+                                this.$items.delete(he), this.$indexes.delete(ge);
+                            }, ee.prototype.toArray = function () {
+                                return Array.from(this.$items.values());
+                            }, ee.prototype.toJSON = function () {
+                                var ge = [];
+                                return this.forEach(function (he, ie) {
+                                    ge.push('function' == typeof he.toJSON ? he.toJSON() : he);
+                                }), ge;
+                            }, ee.prototype.clone = function (ge) {
+                                var he;
+                                return ge ? he = Object.assign(new ee(), this) : (he = new ee(), this.forEach(function (ie) {
+                                    ie.$changes ? he.add(ie.clone()) : he.add(ie);
+                                })), he;
+                            }, ee;
+                        }(), ee = function () {
+                            function fe(ge) {
+                                var he = this;
+                                this.$changes = new kc(this), this.$items = new Map(), this.$indexes = new Map(), this.$refId = 0, ge && ge.forEach(function (ie) {
+                                    return fe.add(ie);
+                                });
+                            }
+                            return fe.prototype.onAdd = function (he, ie) {
+                                return void 0 === ie && (ie = !0), lc(this.$callbacks || (this.$callbacks = []), Wb.OPERATION.ADD, he, ie ? this.$items : void 0);
+                            }, fe.prototype.onRemove = function (he) {
+                                return lc(this.$callbacks || (this.$callbacks = []), Wb.OPERATION.DELETE, he);
+                            }, fe.prototype.onChange = function (he) {
+                                return lc(this.$callbacks || (this.$callbacks = []), Wb.OPERATION.REPLACE, he);
+                            }, fe.is = function (he) {
+                                return void 0 !== he.set;
+                            }, fe.prototype.add = function (he) {
+                                var ie, je;
+                                if (this.has(he))
+                                    return !1;
+                                var ke = this.$refId++;
+                                void 0 !== he.$changes && he.$changes.setParent(this, this.$changes.root, ke);
+                                var le = null !== (je = null === (ie = this.$changes.indexes[ke]) || void 0 === ie ? void 0 : ie.op) && void 0 !== je ? je : Wb.OPERATION.ADD;
+                                return this.$changes.indexes[ke] = ke, this.$indexes.set(ke, ke), this.$items.set(ke, he), this.$changes.change(ke, le), ke;
+                            }, fe.prototype.entries = function () {
+                                return this.$items.entries();
+                            }, fe.prototype.delete = function (he) {
+                                for (var ie, je, ke = this.$items.entries(); (je = ke.next()) && !je.done;)
+                                    if (he === je.value[1]) {
+                                        ie = je.value[0];
+                                        break;
+                                    }
+                                return void 0 !== ie && (this.$changes.delete(ie), this.$indexes.delete(ie), this.$items.delete(ie));
+                            }, fe.prototype.clear = function (he) {
+                                this.$changes.discard(!0, !0), this.$changes.indexes = {}, this.$indexes.clear(), he && mc.call(this, he), this.$items.clear(), this.$changes.operation({
+                                    index: 0,
+                                    op: Wb.OPERATION.CLEAR
+                                }), this.$changes.touchParents();
+                            }, fe.prototype.has = function (he) {
+                                for (var ie, je = this.$items.values(), ke = !1; (ie = je.next()) && !ie.done;)
+                                    if (he === ie.value) {
+                                        ke = !0;
+                                        break;
+                                    }
+                                return ke;
+                            }, fe.prototype.forEach = function (he) {
+                                var ie = this;
+                                this.$items.forEach(function (je, ke, le) {
+                                    return he(je, ke, ie);
+                                });
+                            }, fe.prototype.values = function () {
+                                return this.$items.values();
+                            }, Object.defineProperty(fe.prototype, 'size', {
+                                get: function () {
+                                    return this.$items.size;
+                                },
+                                enumerable: !1,
+                                configurable: !0
+                            }), fe.prototype.setIndex = function (he, ie) {
+                                this.$indexes.set(he, ie);
+                            }, fe.prototype.getIndex = function (he) {
+                                return this.$indexes.get(he);
+                            }, fe.prototype.getByIndex = function (he) {
+                                return this.$items.get(this.$indexes.get(he));
+                            }, fe.prototype.deleteByIndex = function (he) {
+                                var ie = this.$indexes.get(he);
+                                this.$items.delete(ie), this.$indexes.delete(he);
+                            }, fe.prototype.toArray = function () {
+                                return Array.from(this.$items.values());
+                            }, fe.prototype.toJSON = function () {
+                                var he = [];
+                                return this.forEach(function (ie, je) {
+                                    he.push('function' == typeof ie.toJSON ? ie.toJSON() : ie);
+                                }), he;
+                            }, fe.prototype.clone = function (he) {
+                                var ie;
+                                return he ? ie = Object.assign(new fe(), this) : (ie = new fe(), this.forEach(function (je) {
+                                    je.$changes ? ie.add(je.clone()) : ie.add(je);
+                                })), ie;
+                            }, fe;
+                        }(), fe = function () {
+                            function ge() {
+                                this.refIds = new WeakSet(), this.containerIndexes = new WeakMap();
+                            }
+                            return ge.prototype.addRefId = function (he) {
+                                this.refIds.has(he) || (this.refIds.add(he), this.containerIndexes.set(he, new Set()));
+                            }, ge.get = function (he) {
+                                return void 0 === he.$filterState && (he.$filterState = new ge()), he.$filterState;
+                            }, ge;
+                        }(), ge = function () {
+                            function he() {
+                                this.refs = new Map(), this.refCounts = {}, this.deletedRefs = new Set(), this.nextUniqueId = 0;
+                            }
+                            return he.prototype.getNextUniqueId = function () {
+                                return this.nextUniqueId++;
+                            }, he.prototype.addRef = function (ie, je, ke) {
+                                void 0 === ke && (ke = !0), this.refs.set(ie, je), ke && (this.refCounts[ie] = (this.refCounts[ie] || 0) + 1);
+                            }, he.prototype.removeRef = function (ie) {
+                                this.refCounts[ie] = this.refCounts[ie] - 1, this.deletedRefs.add(ie);
+                            }, he.prototype.clearRefs = function () {
+                                this.refs.clear(), this.deletedRefs.clear(), this.refCounts = {};
+                            }, he.prototype.garbageCollectDeletedRefs = function () {
+                                var ie = this;
+                                this.deletedRefs.forEach(function (je) {
+                                    if (!(ie.refCounts[je] > 0)) {
+                                        var ke = ie.refs.get(je);
+                                        if (ke instanceof _qe)
+                                            for (var le in ke._definition.schema)
+                                                'string' != typeof ke._definition.schema[le] && ke[le] && ke[le].$changes && ie.removeRef(ke[le].$changes.refId);
+                                        else {
+                                            var me = ke.$changes.parent._definition, ne = me.schema[me.fieldsByIndex[ke.$changes.parentIndex]];
+                                            'function' == typeof Object.values(ne)[0] && Array.from(ke.values()).forEach(function (oe) {
+                                                return ie.removeRef(oe.$changes.refId);
+                                            });
+                                        }
+                                        ie.refs.delete(je), delete ie.refCounts[je];
+                                    }
+                                }), this.deletedRefs.clear();
+                            }, he;
+                        }(), he = function (ie) {
+                            function je() {
+                                return null !== ie && ie.apply(this, arguments) || this;
+                            }
+                            return Yb(je, ie), je;
+                        }(Error);
+                    function ie(je, ke, le, me) {
+                        var ne, oe = !1;
+                        switch (ke) {
+                        case 'number':
+                        case 'int8':
+                        case 'uint8':
+                        case 'int16':
+                        case 'uint16':
+                        case 'int32':
+                        case 'uint32':
+                        case 'int64':
+                        case 'uint64':
+                        case 'float32':
+                        case 'float64':
+                            dc = 'number', isNaN(je) && console.log('trying to encode "NaN" in '.concat(le.constructor.name, '#').concat(me));
+                            break;
+                        case 'string':
+                            dc = 'string', oe = !0;
+                            break;
+                        case 'boolean':
+                            return;
+                        }
+                        if (typeof je !== dc && (!oe || oe && null !== je)) {
+                            var pe = '\''.concat(JSON.stringify(je), '\'').concat(je && je.constructor && ' ('.concat(je.constructor.name, ')') || '');
+                            throw new he('a \''.concat(dc, '\' was expected, but ').concat(pe, ' was provided in ').concat(le.constructor.name, '#').concat(me));
+                        }
+                    }
+                    function me(ne, oe, pe, qe) {
+                        if (!(ne instanceof oe))
+                            throw new he('a \''.concat(oe.name, '\' was expected, but \'').concat(ne.constructor.name, '\' was provided in ').concat(pe.constructor.name, '#').concat(qe));
+                    }
+                    function ne(oe, pe, qe, re, se) {
+                        ie(qe, oe, re, se);
+                        var te = sd[oe];
+                        if (!te)
+                            throw new he('a \''.concat(oe, '\' was expected, but ').concat(qe, ' was provided in ').concat(re.constructor.name, '#').concat(se));
+                        te(pe, qe);
+                    }
+                    function pe(qe, re, se) {
+                        return ce[qe](re, se);
+                    }
+                    var _qe = function () {
+                        function re() {
+                            for (var se = [], te = 0; re < arguments.length; re++)
+                                se[re] = arguments[re];
+                            Object.defineProperties(this, {
+                                $changes: {
+                                    value: new kc(this, void 0, new ge()),
+                                    enumerable: !1,
+                                    writable: !0
+                                },
+                                $callbacks: {
+                                    value: void 0,
+                                    enumerable: !1,
+                                    writable: !0
+                                }
+                            });
+                            var ue = this._definition.descriptors;
+                            ue && Object.defineProperties(this, ue), se[0] && this.assign(se[0]);
+                        }
+                        return re.onError = function (ve) {
+                            console.error(ve);
+                        }, re.is = function (ve) {
+                            return ve._definition && void 0 !== ve._definition.schema;
+                        }, re.prototype.onChange = function (ve) {
+                            return lc(this.$callbacks || (this.$callbacks = []), se.OPERATION.REPLACE, ve);
+                        }, re.prototype.onRemove = function (ve) {
+                            return lc(this.$callbacks || (this.$callbacks = []), se.OPERATION.DELETE, ve);
+                        }, re.prototype.assign = function (ve) {
+                            return Object.assign(this, ve), this;
+                        }, Object.defineProperty(re.prototype, '_definition', {
+                            get: function () {
+                                return this.constructor._definition;
+                            },
+                            enumerable: !1,
+                            configurable: !0
+                        }), re.prototype.setDirty = function (ve, we) {
+                            this.$changes.change(ve, we);
+                        }, re.prototype.listen = function (ve, we, xe) {
+                            var ye = this;
+                            return void 0 === xe && (xe = !0), this.$callbacks || (this.$callbacks = {}), this.$callbacks[ve] || (this.$callbacks[ve] = []), this.$callbacks[ve].push(we), xe && void 0 !== this[ve] && we(this[ve], void 0), function () {
+                                return pc(ye.$callbacks[ve], ye.$callbacks[ve].indexOf(we));
+                            };
+                        }, re.prototype.decode = function (ve, we, xe) {
+                            var ye;
+                            void 0 === we && (we = { offset: 0 }), void 0 === xe && (xe = this);
+                            var ze = [], Ae = this.$changes.root, Be = ve.length, Ce = 0;
+                            for (Ae.refs.set(Ce, this); we.offset < Be;) {
+                                var De = ve[we.offset++];
+                                if (De != pe) {
+                                    var Ee = xe.$changes, Fe = void 0 !== xe._definition, Ge = Fe ? De >> 6 << 6 : De;
+                                    if (Ge !== se.OPERATION.CLEAR) {
+                                        var He = Fe ? De % (Ge || 255) : Xd(ve, we), Ie = Fe ? xe._definition.fieldsByIndex[He] : '', Je = Ee.getType(He), Ke = void 0, Le = void 0, Me = void 0;
+                                        if (Fe ? Le = xe['_'.concat(Ie)] : (Le = xe.getByIndex(He), (Ge & se.OPERATION.ADD) === se.OPERATION.ADD ? (Me = xe instanceof wc ? Rd(ve, we) : He, xe.setIndex(He, Me)) : Me = xe.getIndex(He)), (Ge & se.OPERATION.DELETE) === se.OPERATION.DELETE && (Ge !== se.OPERATION.DELETE_AND_ADD && xe.deleteByIndex(He), Le && Le.$changes && Ae.removeRef(Le.$changes.refId), Ke = null), void 0 !== Ie) {
+                                            if (Ge === se.OPERATION.DELETE);
+                                            else if (re.is(Je)) {
+                                                var Ne = Xd(ve, we);
+                                                if (Ke = Ae.refs.get(Ne), Ge !== se.OPERATION.REPLACE) {
+                                                    var Oe = this.getSchemaType(ve, we, Je);
+                                                    Ke || ((Ke = this.createTypeInstance(Oe)).$changes.refId = Ne, Le && (Ke.$callbacks = Le.$callbacks, Le.$changes.refId && Ne !== Le.$changes.refId && Ae.removeRef(Le.$changes.refId))), Ae.addRef(Ne, Ke, Ke !== Le);
+                                                }
+                                            } else if ('string' == typeof Je)
+                                                Ke = pe(Je, ve, we);
+                                            else {
+                                                var Pe = zc(Object.keys(Je)[0]), Qe = Xd(ve, we), Re = Ae.refs.has(Qe) ? Le || Ae.refs.get(Qe) : new Pe.constructor();
+                                                if ((Ke = Re.clone(!0)).$changes.refId = Qe, Le && (Ke.$callbacks = Le.$callbacks, Le.$changes.refId && Qe !== Le.$changes.refId)) {
+                                                    Ae.removeRef(Le.$changes.refId);
+                                                    for (var Se = Le.entries(), Te = void 0; (Te = Se.next()) && !Te.done;) {
+                                                        var Ue = (ye = Te.value)[0], Ve = ye[1];
+                                                        ze.push({
+                                                            refId: Qe,
+                                                            op: se.OPERATION.DELETE,
+                                                            field: Ue,
+                                                            value: void 0,
+                                                            previousValue: Ve
+                                                        });
+                                                    }
+                                                }
+                                                Ae.addRef(Qe, Ke, Re !== Le);
+                                            }
+                                            if (null != Ke)
+                                                if (Ke.$changes && Ke.$changes.setParent(Ee.ref, Ee.root, He), xe instanceof re)
+                                                    xe[Ie] = Ke;
+                                                else if (xe instanceof wc)
+                                                    Ue = Me, xe.$items.set(Ue, Ke), xe.$changes.allChanges.add(He);
+                                                else if (xe instanceof uc)
+                                                    xe.setAt(He, Ke);
+                                                else if (xe instanceof de) {
+                                                    var We = xe.add(Ke);
+                                                    xe.setIndex(He, We);
+                                                } else
+                                                    xe instanceof ee && !1 !== (We = xe.add(Ke)) && xe.setIndex(He, We);
+                                            Le !== Ke && ze.push({
+                                                refId: Ce,
+                                                op: Ge,
+                                                field: Ie,
+                                                dynamicIndex: Me,
+                                                value: Ke,
+                                                previousValue: Le
+                                            });
+                                        } else {
+                                            console.warn('@colyseus/schema: definition mismatch');
+                                            for (var Xe = { offset: we.offset }; we.offset < Be && (!be(ve, we) || (Xe.offset = we.offset + 1, !Ae.refs.has(Xd(ve, Xe))));)
+                                                we.offset++;
+                                        }
+                                    } else
+                                        xe.clear(ze);
+                                } else {
+                                    Ce = Xd(ve, we);
+                                    var Ye = Ae.refs.get(Ce);
+                                    if (!Ye)
+                                        throw new Error('"refId" not found: '.concat(Ce));
+                                    xe = Ye;
+                                }
+                            }
+                            return this._triggerChanges(ze), Ae.garbageCollectDeletedRefs(), ze;
+                        }, re.prototype.encode = function (ve, we, xe) {
+                            void 0 === ve && (ve = !1), void 0 === we && (we = []), void 0 === xe && (xe = !1);
+                            for (var ye = this.$changes, ze = new WeakSet(), Ae = [ye], Be = 1, Ce = 0; Ce < Be; Ce++) {
+                                var De = Ae[Ce], Ee = De.ref, Fe = Ee instanceof re;
+                                De.ensureRefId(), ze.add(De), De !== ye && (De.changed || ve) && (Uc(we, pe), rd(we, De.refId));
+                                for (var Ge = ve ? Array.from(De.allChanges) : Array.from(De.changes.values()), He = 0, Ie = Ge.length; He < Ie; He++) {
+                                    var Je = ve ? {
+                                            op: se.OPERATION.ADD,
+                                            index: Ge[He]
+                                        } : Ge[He], Ke = Je.index, Le = Fe ? Ee._definition.fieldsByIndex && Ee._definition.fieldsByIndex[Ke] : Ke, Me = we.length;
+                                    if (Je.op !== se.OPERATION.TOUCH)
+                                        if (Fe)
+                                            Uc(we, Ke | Je.op);
+                                        else {
+                                            if (Uc(we, Je.op), Je.op === se.OPERATION.CLEAR)
+                                                continue;
+                                            rd(we, Ke);
+                                        }
+                                    if (Fe || (Je.op & se.OPERATION.ADD) != se.OPERATION.ADD || Ee instanceof wc && od(we, De.ref.$indexes.get(Ke)), Je.op !== se.OPERATION.DELETE) {
+                                        var Ne = De.getType(Ke), Oe = De.getValue(Ke);
+                                        if (Oe && Oe.$changes && !ze.has(Oe.$changes) && (Ae.push(Oe.$changes), Oe.$changes.ensureRefId(), Be++), Je.op !== se.OPERATION.TOUCH) {
+                                            if (re.is(Ne))
+                                                me(Oe, Ne, Ee, Le), rd(we, Oe.$changes.refId), (Je.op & se.OPERATION.ADD) === se.OPERATION.ADD && this.tryEncodeTypeId(we, Ne, Oe.constructor);
+                                            else if ('string' == typeof Ne)
+                                                ne(Ne, we, Oe, Ee, Le);
+                                            else {
+                                                var Pe = zc(Object.keys(Ne)[0]);
+                                                me(Ee['_'.concat(Le)], Pe.constructor, Ee, Le), rd(we, Oe.$changes.refId);
+                                            }
+                                            xe && De.cache(Ke, we.slice(Me));
+                                        }
+                                    }
+                                }
+                                ve || xe || De.discard();
+                            }
+                            return we;
+                        }, re.prototype.encodeAll = function (ve) {
+                            return this.encode(!0, [], ve);
+                        }, re.prototype.applyFilters = function (ve, we) {
+                            var xe, ye;
+                            void 0 === we && (we = !1);
+                            for (var ze = this, Ae = new Set(), Be = fe.get(ve), Ce = [this.$changes], De = 1, Ee = [], Fe = function (Ge) {
+                                        var He = Ce[Ge];
+                                        if (Ae.has(He.refId))
+                                            return 'continue';
+                                        var Ie = He.ref, Je = Ie instanceof re;
+                                        Uc(Ee, pe), rd(Ee, He.refId);
+                                        var Ke = Be.refIds.has(He), Le = we || !Ke;
+                                        Be.addRefId(He);
+                                        var Me = Be.containerIndexes.get(He), Ne = Le ? Array.from(He.allChanges) : Array.from(He.changes.values());
+                                        !we && Je && Ie._definition.indexesWithFilters && Ie._definition.indexesWithFilters.forEach(function (Oe) {
+                                            !Me.has(Oe) && He.allChanges.has(Oe) && (Le ? Ne.push(Oe) : Ne.push({
+                                                op: se.OPERATION.ADD,
+                                                index: Oe
+                                            }));
+                                        });
+                                        for (var Oe = 0, Pe = Ne.length; Oe < Pe; Oe++) {
+                                            var Qe = Le ? {
+                                                op: se.OPERATION.ADD,
+                                                index: Ne[Oe]
+                                            } : Ne[Oe];
+                                            if (Qe.op !== se.OPERATION.CLEAR) {
+                                                var Re = Qe.index;
+                                                if (Qe.op !== se.OPERATION.DELETE) {
+                                                    var Se = He.getValue(Re), Te = He.getType(Re);
+                                                    if (Je) {
+                                                        if ((Ic = Ie._definition.filters && Ie._definition.filters[Re]) && !Ic.call(Ie, ve, Se, ze)) {
+                                                            Se && Se.$changes && Ae.add(Se.$changes.refId);
+                                                            continue;
+                                                        }
+                                                    } else {
+                                                        var Ue, Ve = He.parent;
+                                                        if ((Ue = He.getChildrenFilter()) && !Ue.call(Ve, ve, Ie.$indexes.get(Re), Se, ze)) {
+                                                            Se && Se.$changes && Ae.add(Se.$changes.refId);
+                                                            continue;
+                                                        }
+                                                    }
+                                                    if (Se.$changes && (Ce.push(Se.$changes), De++), Qe.op !== se.OPERATION.TOUCH)
+                                                        if (Qe.op === se.OPERATION.ADD || Je)
+                                                            Ee.push.apply(Ee, null !== (xe = He.caches[Re]) && void 0 !== xe ? xe : []), Me.add(Re);
+                                                        else if (Me.has(Re))
+                                                            Ee.push.apply(Ee, null !== (ye = He.caches[Re]) && void 0 !== ye ? ye : []);
+                                                        else {
+                                                            if (Me.add(Re), Uc(Ee, se.OPERATION.ADD), rd(Ee, Re), Ie instanceof wc) {
+                                                                var We = He.ref.$indexes.get(Re);
+                                                                od(Ee, We);
+                                                            }
+                                                            Se.$changes ? rd(Ee, Se.$changes.refId) : sd[Te](Ee, Se);
+                                                        }
+                                                    else
+                                                        Se.$changes && !Je && (Uc(Ee, se.OPERATION.ADD), rd(Ee, Re), Ie instanceof wc && (We = He.ref.$indexes.get(Re), od(Ee, We)), rd(Ee, Se.$changes.refId));
+                                                } else
+                                                    Je ? Uc(Ee, Qe.op | Re) : (Uc(Ee, Qe.op), rd(Ee, Re));
+                                            } else
+                                                Uc(Ee, Qe.op);
+                                        }
+                                    }, Ge = 0; Ge < De; Ge++)
+                                Fe(Ge);
+                            return Ee;
+                        }, re.prototype.clone = function () {
+                            var ve, we = new this.constructor(), xe = this._definition.schema;
+                            for (var ye in xe)
+                                'object' == typeof this[ye] && 'function' == typeof (null === (ve = this[ye]) || void 0 === ve ? void 0 : ve.clone) ? we[ye] = this[ye].clone() : we[ye] = this[ye];
+                            return we;
+                        }, re.prototype.toJSON = function () {
+                            var ve = this._definition.schema, we = this._definition.deprecated, xe = {};
+                            for (var ye in ve)
+                                we[ye] || null === this[ye] || void 0 === this[ye] || (xe[ye] = 'function' == typeof this[ye].toJSON ? this[ye].toJSON() : this['_'.concat(ye)]);
+                            return xe;
+                        }, re.prototype.discardAllChanges = function () {
+                            this.$changes.discardAll();
+                        }, re.prototype.getByIndex = function (ve) {
+                            return this[this._definition.fieldsByIndex[ve]];
+                        }, re.prototype.deleteByIndex = function (ve) {
+                            this[this._definition.fieldsByIndex[ve]] = void 0;
+                        }, re.prototype.tryEncodeTypeId = function (ve, we, xe) {
+                            we._typeid !== xe._typeid && (Uc(ve, Bd), rd(ve, xe._typeid));
+                        }, re.prototype.getSchemaType = function (ve, we, xe) {
+                            var ye;
+                            return ve[we.offset] === Bd && (we.offset++, ye = this.constructor._context.get(Xd(ve, we))), ye || xe;
+                        }, re.prototype.createTypeInstance = function (ve) {
+                            var we = new ve();
+                            return we.$changes.root = this.$changes.root, we;
+                        }, re.prototype._triggerChanges = function (ve) {
+                            for (var we, xe, ye, ze, Ae, Be, Ce, De, Ee, Fe = new Set(), Ge = this.$changes.root.refs, He = function (Ie) {
+                                        var Je = ve[Ie], Ke = Je.refId, Le = Ge.get(Ke), Me = Le.$callbacks;
+                                        if ((Je.op & se.OPERATION.DELETE) === se.OPERATION.DELETE && Je.previousValue instanceof re && (null === (xe = null === (we = Je.previousValue.$callbacks) || void 0 === we ? void 0 : we[se.OPERATION.DELETE]) || void 0 === xe || xe.forEach(function (Ne) {
+                                                return Ne();
+                                            })), !Me)
+                                            return 'continue';
+                                        if (Le instanceof re) {
+                                            if (!Fe.has(Ke))
+                                                try {
+                                                    null === (ye = null == Me ? void 0 : Me[se.OPERATION.REPLACE]) || void 0 === ye || ye.forEach(function (Ne) {
+                                                        return Ne(ve);
+                                                    });
+                                                } catch (se) {
+                                                    re.onError(se);
+                                                }
+                                            try {
+                                                Me.hasOwnProperty(Je.field) && (null === (ze = Me[Je.field]) || void 0 === ze || ze.forEach(function (Ne) {
+                                                    return Ne(Je.value, Je.previousValue);
+                                                }));
+                                            } catch (se) {
+                                                re.onError(se);
+                                            }
+                                        } else
+                                            Je.op === se.OPERATION.ADD && void 0 === Je.previousValue ? null === (Ae = Me[se.OPERATION.ADD]) || void 0 === Ae || Ae.forEach(function (Ne) {
+                                                var Oe;
+                                                return Ne(Je.value, null !== (Oe = Je.dynamicIndex) && void 0 !== Oe ? Oe : Je.field);
+                                            }) : Je.op === se.OPERATION.DELETE ? void 0 !== Je.previousValue && (null === (Be = Me[se.OPERATION.DELETE]) || void 0 === Be || Be.forEach(function (Ne) {
+                                                var Oe;
+                                                return Ne(Je.previousValue, null !== (Oe = Je.dynamicIndex) && void 0 !== Oe ? Oe : Je.field);
+                                            })) : Je.op === se.OPERATION.DELETE_AND_ADD && (void 0 !== Je.previousValue && (null === (Ce = Me[se.OPERATION.DELETE]) || void 0 === Ce || Ce.forEach(function (Ne) {
+                                                var Oe;
+                                                return Ne(Je.previousValue, null !== (Oe = Je.dynamicIndex) && void 0 !== Oe ? Oe : Je.field);
+                                            })), null === (De = Me[se.OPERATION.ADD]) || void 0 === De || De.forEach(function (Ne) {
+                                                var Oe;
+                                                return Ne(Je.value, null !== (Oe = Je.dynamicIndex) && void 0 !== Oe ? Oe : Je.field);
+                                            })), Je.value !== Je.previousValue && (null === (Ee = Me[se.OPERATION.REPLACE]) || void 0 === Ee || Ee.forEach(function (Ne) {
+                                                var Oe;
+                                                return Ne(Je.value, null !== (Oe = Je.dynamicIndex) && void 0 !== Oe ? Oe : Je.field);
+                                            }));
+                                        Fe.add(Ke);
+                                    }, Ie = 0; Ie < ve.length; Ie++)
+                                He(Ie);
+                        }, re._definition = Ac.create(), re;
+                    }();
+                    function re(se) {
+                        for (var te = [se.$changes], ue = 1, ve = {}, we = Zb, xe = function (ye) {
+                                    var ze = te[ye];
+                                    ze.changes.forEach(function (Ae) {
+                                        var Be = ze.ref, Ce = Ae.index, De = Be._definition ? Be._definition.fieldsByIndex[Ce] : Be.$indexes.get(Ce);
+                                        dc[De] = ze.getValue(Ce);
+                                    });
+                                }, ye = 0; ye < Yb; ye++)
+                            xe(ye);
+                        return Zb;
+                    }
+                    var ye = { context: new Cc() }, ze = function (Ae) {
+                            function Be() {
+                                return null !== Ae && Ae.apply(this, arguments) || this;
+                            }
+                            return Yb(Be, Ae), Zb([Ec('string', ye)], Be.prototype, 'name', void 0), Zb([Ec('string', ye)], Be.prototype, 'type', void 0), Zb([Ec('number', ye)], Be.prototype, 'referencedType', void 0), Be;
+                        }(_qe), Ae = function (Be) {
+                            function Ce() {
+                                var De = null !== Be && Be.apply(this, arguments) || this;
+                                return Ce.fields = new uc(), Ce;
+                            }
+                            return Yb(Ce, Be), Zb([Ec('number', ye)], Ce.prototype, 'id', void 0), Zb([Ec([ze], ye)], Ce.prototype, 'fields', void 0), Ce;
+                        }(_qe), Be = function (Ce) {
+                            function De() {
+                                var Ee = null !== Ce && Ce.apply(this, arguments) || this;
+                                return De.types = new uc(), De;
+                            }
+                            return Yb(De, Ce), De.encode = function (Fe) {
+                                var Ge = Fe.constructor, He = new De();
+                                He.rootType = Ge._typeid;
+                                var Ie = function (Je, Ke) {
+                                        for (var Le in Ke) {
+                                            var Me = new ze();
+                                            Me.name = Le;
+                                            var Ne = void 0;
+                                            if ('string' == typeof Ke[Le])
+                                                Ne = Ke[Le];
+                                            else {
+                                                var Oe = Ke[Le], Pe = void 0;
+                                                _qe.is(Oe) ? (Ne = 'ref', Pe = Ke[Le]) : 'string' == typeof Oe[Ne = Object.keys(Oe)[0]] ? Ne += ':' + Oe[Ne] : Pe = Oe[Ne], Me.referencedType = Pe ? Pe._typeid : -1;
+                                            }
+                                            Me.type = Ne, Je.fields.push(Me);
+                                        }
+                                        He.types.push(Je);
+                                    }, Je = Ge._context.types;
+                                for (var Ke in Je) {
+                                    var Le = new Ae();
+                                    Le.id = Number(Ke), Ie(Le, Je[Ke]._definition.schema);
+                                }
+                                return He.encodeAll();
+                            }, De.decode = function (Fe, Ge) {
+                                var He = new Cc(), Ie = new De();
+                                Ie.decode(Fe, Ge);
+                                var Je = Ie.types.reduce(function (Ke, Le) {
+                                    var Me = function (Ne) {
+                                            function Oe() {
+                                                return null !== Ne && Ne.apply(this, arguments) || this;
+                                            }
+                                            return Yb(Oe, Ne), Oe;
+                                        }(_qe), Ne = Le.id;
+                                    return Ke[Ne] = Me, He.add(Me, Ne), Ke;
+                                }, {});
+                                Ie.types.forEach(function (Ke) {
+                                    var Le = Je[Ke.id];
+                                    Ke.fields.forEach(function (Me) {
+                                        var Ne;
+                                        if (void 0 !== Me.referencedType) {
+                                            var Oe = Me.type, Pe = Je[Me.referencedType];
+                                            if (!Pe) {
+                                                var Qe = Me.type.split(':');
+                                                Oe = Qe[0], Pe = Qe[1];
+                                            }
+                                            'ref' === Oe ? Ec(Pe, { context: He })(Le.prototype, Me.name) : Ec(((Ne = {})[Oe] = Pe, Ne), { context: He })(Le.prototype, Me.name);
+                                        } else
+                                            Ec(Me.type, { context: He })(Le.prototype, Me.name);
+                                    });
+                                });
+                                var Ke = Je[Ie.rootType], Le = new Ke();
+                                for (var Me in Ke._definition.schema) {
+                                    var Ne = Ke._definition.schema[Me];
+                                    'string' != typeof Ne && (Le[Me] = 'function' == typeof Ne ? new Ne() : new (zc(Object.keys(Ne)[0])).constructor());
+                                }
+                                return Le;
+                            }, Zb([Ec([Ae], ye)], De.prototype, 'types', void 0), Zb([Ec('number', ye)], De.prototype, 'rootType', void 0), De;
+                        }(_qe);
+                    yc('map', { constructor: wc }), yc('array', { constructor: uc }), yc('set', { constructor: ee }), yc('collection', { constructor: de }), Wb.ArraySchema = uc, Wb.CollectionSchema = de, Wb.Context = Cc, Wb.MapSchema = wc, Wb.Reflection = Be, Wb.ReflectionField = ze, Wb.ReflectionType = Ae, Wb.Schema = _qe, Wb.SchemaDefinition = Ac, Wb.SetSchema = ee, Wb.decode = ce, Wb.defineTypes = Ic, Wb.deprecated = Hc, Wb.dumpChanges = re, Wb.encode = sd, Wb.filter = Fc, Wb.filterChildren = Gc, Wb.hasFilter = Bc, Wb.registerType = yc, Wb.type = Ec, Object.defineProperty(Wb, '__esModule', { value: !0 });
+                });
+            }), Ub = function () {
+                function Vb(Wb, Xb) {
+                    var Yb = this;
+                    this.onStateChange = Pb(), this.onError = Pb(), this.onLeave = Pb(), this.onJoin = Pb(), this.hasJoined = !1, this.onMessageHandlers = Nb(), this.roomId = null, this.name = Wb, Xb && (this.serializer = new (Lb('schema'))(), this.rootSchema = Xb, this.serializer.state = new Xb()), this.onError(function (Zb, $b) {
+                        var ac;
+                        return null === (ac = console.warn) || void 0 === ac ? void 0 : ac.call(console, 'colyseus.js - onError => ('.concat(Zb, ') ').concat($b));
+                    }), this.onLeave(function () {
+                        return Yb.removeAllListeners();
+                    });
+                }
+                return Object.defineProperty(Vb.prototype, 'id', {
+                    get: function () {
+                        return this.roomId;
+                    },
+                    enumerable: !1,
+                    configurable: !0
+                }), Vb.prototype.connect = function (Xb, Yb, Zb) {
+                    void 0 === Zb && (Zb = this);
+                    var $b = new wb();
+                    Zb.connection = $b, $b.events.onmessage = Vb.prototype.onMessageCallback.bind(Zb), $b.events.onclose = function (ac) {
+                        var bc;
+                        if (!Zb.hasJoined)
+                            return null === (bc = console.warn) || void 0 === bc || bc.call(console, 'Room connection was closed unexpectedly ('.concat(ac.code, '): ').concat(ac.reason)), void Zb.onError.invoke(ac.code, ac.reason);
+                        ac.code === Db.DEVMODE_RESTART && Yb ? Yb() : (Zb.onLeave.invoke(ac.code), Zb.destroy());
+                    }, $b.events.onerror = function (ac) {
+                        var bc;
+                        null === (bc = console.warn) || void 0 === bc || bc.call(console, 'Room, onError ('.concat(ac.code, '): ').concat(ac.reason)), Zb.onError.invoke(ac.code, ac.reason);
+                    }, $b.connect(Xb);
+                }, Vb.prototype.leave = function (Xb) {
+                    var Yb = this;
+                    return void 0 === Xb && (Xb = !0), new Promise(function (Zb) {
+                        Yb.onLeave(function ($b) {
+                            return Zb($b);
+                        }), Yb.connection ? Xb ? Yb.connection.send([Tb.Protocol.LEAVE_ROOM]) : Yb.connection.close() : Yb.onLeave.invoke(Db.CONSENTED);
+                    });
+                }, Vb.prototype.onMessage = function (Xb, Yb) {
+                    return this.onMessageHandlers.on(this.getMessageHandlerKey(Xb), Yb);
+                }, Vb.prototype.send = function (Xb, Yb) {
+                    var Zb, $b = [Tb.Protocol.ROOM_DATA];
+                    if ('string' == typeof Xb ? Tb.encode.string($b, Xb) : Tb.encode.number($b, Xb), void 0 !== Yb) {
+                        var ac = bb(Yb);
+                        (Zb = new Uint8Array($b.length + ac.byteLength)).set(new Uint8Array($b), 0), Zb.set(new Uint8Array(ac), $b.length);
+                    } else
+                        Zb = new Uint8Array($b);
+                    this.connection.send(Zb.buffer);
+                }, Vb.prototype.sendBytes = function (Xb, Yb) {
+                    var Zb, $b = [Tb.Protocol.ROOM_DATA_BYTES];
+                    'string' == typeof Xb ? Tb.encode.string($b, Xb) : Tb.encode.number($b, Xb), (Zb = new Uint8Array($b.length + (Yb.byteLength || Yb.length))).set(new Uint8Array($b), 0), Zb.set(new Uint8Array(Yb), $b.length), this.connection.send(Zb.buffer);
+                }, Object.defineProperty(Vb.prototype, 'state', {
+                    get: function () {
+                        return this.serializer.getState();
+                    },
+                    enumerable: !1,
+                    configurable: !0
+                }), Vb.prototype.removeAllListeners = function () {
+                    this.onJoin.clear(), this.onStateChange.clear(), this.onError.clear(), this.onLeave.clear(), this.onMessageHandlers.events = {};
+                }, Vb.prototype.onMessageCallback = function (Xb) {
+                    var Yb = Array.from(new Uint8Array(Xb.data)), Zb = Yb[0];
+                    if (Zb === Tb.Protocol.JOIN_ROOM) {
+                        var $b = 1, ac = xb(Yb, $b);
+                        if ($b += Eb(ac), this.serializerId = xb(Yb, $b), $b += Eb(this.serializerId), !this.serializer) {
+                            var bc = Lb(this.serializerId);
+                            this.serializer = new bc();
+                        }
+                        Yb.length > $b && this.serializer.handshake && this.serializer.handshake(Yb, { offset: $b }), this.reconnectionToken = ''.concat(this.roomId, ':').concat(ac), this.hasJoined = !0, this.onJoin.invoke(), this.connection.send([Tb.Protocol.JOIN_ROOM]);
+                    } else if (Zb === Tb.Protocol.ERROR) {
+                        var cc = { offset: 1 }, dc = Tb.decode.number(Yb, cc), ec = Tb.decode.string(Yb, cc);
+                        this.onError.invoke(dc, ec);
+                    } else if (Zb === Tb.Protocol.LEAVE_ROOM)
+                        this.leave();
+                    else if (Zb === Tb.Protocol.ROOM_DATA_SCHEMA) {
+                        var fc = { offset: 1 };
+                        (ec = new (t = (this.serializer.getState().constructor._context.get(Tb.decode.number(Yb, fc))))()).decode(Yb, fc), this.dispatchMessage(t, ec);
+                    } else if (Zb === Tb.Protocol.ROOM_STATE)
+                        Yb.shift(), this.setState(Yb);
+                    else if (Zb === Tb.Protocol.ROOM_STATE_PATCH)
+                        Yb.shift(), this.patch(Yb);
+                    else if (Zb === Tb.Protocol.ROOM_DATA) {
+                        var gc = { offset: 1 }, hc = Tb.decode.stringCheck(Yb, gc) ? Tb.decode.string(Yb, gc) : Tb.decode.number(Yb, gc);
+                        ec = Yb.length > gc.offset ? A(Xb.data, gc.offset) : void 0, this.dispatchMessage(hc, ec);
+                    } else if (Zb === Tb.Protocol.ROOM_DATA_BYTES) {
+                        var ic = { offset: 1 };
+                        hc = Tb.decode.stringCheck(Yb, ic) ? Tb.decode.string(Yb, ic) : Tb.decode.number(Yb, ic), this.dispatchMessage(hc, new Uint8Array(Yb.slice(ic.offset)));
+                    }
+                }, Vb.prototype.setState = function (Xb) {
+                    this.serializer.setState(Xb), this.onStateChange.invoke(this.serializer.getState());
+                }, Vb.prototype.patch = function (Xb) {
+                    this.serializer.patch(Xb), this.onStateChange.invoke(this.serializer.getState());
+                }, Vb.prototype.dispatchMessage = function (Xb, Yb) {
+                    var Zb, $b = this.getMessageHandlerKey(Xb);
+                    this.onMessageHandlers.events[$b] ? this.onMessageHandlers.emit($b, Yb) : this.onMessageHandlers.events['*'] ? this.onMessageHandlers.emit('*', Xb, Yb) : null === (Zb = console.warn) || void 0 === Zb || Zb.call(console, 'colyseus.js: onMessage() not registered for type \''.concat(Xb, '\'.'));
+                }, Vb.prototype.destroy = function () {
+                    this.serializer && this.serializer.teardown();
+                }, Vb.prototype.getMessageHandlerKey = function (Xb) {
+                    switch (typeof Xb) {
+                    case 'function':
+                        return '$'.concat(Xb._typeid);
+                    case 'string':
+                        return Xb;
+                    case 'number':
+                        return 'i'.concat(Xb);
+                    default:
+                        throw new Error('invalid message type.');
+                    }
+                }, Vb;
+            }();
+        function Vb(Wb, Xb) {
+            Xb.statusMessage = Wb.statusText, Xb.statusCode = Wb.status, Xb.data = Wb.body;
+        }
+        function Wb(Xb, Yb, Zb) {
+            var $b, ac, bc = (Zb = Zb || {}).body;
+            return Zb.method = Xb, Zb.headers = Zb.headers || {}, bc instanceof FormData || bc && 'object' == typeof bc && (Zb.headers['content-type'] = 'application/json', Zb.body = JSON.stringify(bc)), Zb.withCredentials && (Zb.credentials = 'include'), Zb.timeout && (g = new AbortController(), Zb.signal = g.signal, $b = setTimeout(g.abort, Zb.timeout)), new Promise((cc, dc) => {
+                fetch(Yb, Zb).then((ec, fc) => {
+                    clearTimeout($b), Vb(ec, ec), fc = ec.status >= 400 ? dc : cc, (bc = ec.headers.get('content-type')) && ~bc.indexOf('application/json') ? ec.text().then(gc => {
+                        try {
+                            ec.data = JSON.parse(gc, Zb.reviver), fc(ec);
+                        } catch (gc) {
+                            gc.headers = ec.headers, Vb(ec, gc), dc(gc);
+                        }
+                    }) : fc(ec);
+                }).catch(ec => {
+                    ec.timeout = g && g.signal.aborted, dc(ec);
+                });
+            });
+        }
+        var $b, ac, bc, cc, dc, ec = Wb.bind(Wb, 'GET'), fc = Wb.bind(Wb, 'POST'), gc = Wb.bind(Wb, 'PATCH'), hc = Wb.bind(Wb, 'DELETE'), ic = Wb.bind(Wb, 'PUT'), jc = {
+                del: hc,
+                get: ec,
+                patch: gc,
+                post: fc,
+                put: ic,
+                send: Wb
+            }, kc = e({
+                __proto__: null,
+                default: jc,
+                del: hc,
+                get: ec,
+                patch: gc,
+                post: fc,
+                put: ic,
+                send: Wb
+            }, [jc]), lc = function () {
+                function mc(nc) {
+                    this.client = nc;
+                }
+                return mc.prototype.get = function (nc, oc) {
+                    return void 0 === oc && (oc = {}), this.request('get', nc, oc);
+                }, mc.prototype.post = function (nc, oc) {
+                    return void 0 === oc && (oc = {}), this.request('post', nc, oc);
+                }, mc.prototype.del = function (nc, oc) {
+                    return void 0 === oc && (oc = {}), this.request('del', nc, oc);
+                }, mc.prototype.put = function (nc, oc) {
+                    return void 0 === oc && (oc = {}), this.request('put', nc, oc);
+                }, mc.prototype.request = function (nc, oc, pc) {
+                    return void 0 === pc && (pc = {}), kc[nc](this.client.getHttpEndpoint(oc), this.getOptions(pc)).catch(function (qc) {
+                        var rc;
+                        throw new nb(qc.statusCode || -1, (null === (rc = qc.data) || void 0 === rc ? void 0 : rc.error) || qc.statusMessage || qc.message || 'offline');
+                    });
+                }, mc.prototype.getOptions = function (nc) {
+                    return this.authToken && (nc.headers || (nc.headers = {}), nc.headers.Authorization = 'Bearer '.concat(this.authToken), nc.withCredentials = !0), nc;
+                }, mc;
+            }();
+        function mc() {
+            return $b || ($b = 'undefined' != typeof cc && cc.sys && cc.sys.localStorage ? cc.sys.localStorage : 'undefined' != typeof window && window.localStorage ? window.localStorage : {
+                cache: {},
+                setItem: function (nc, oc) {
+                    this.cache[nc] = oc;
+                },
+                getItem: function (nc) {
+                    this.cache[nc];
+                },
+                removeItem: function (nc) {
+                    delete this.cache[nc];
+                }
+            }), $b;
+        }
+        function nc(oc, pc) {
+            mc().setItem(oc, pc);
+        }
+        function oc(pc) {
+            mc().removeItem(pc);
+        }
+        function pc(qc, rc) {
+            var sc = mc().getItem(qc);
+            'undefined' != typeof Promise && e instanceof Promise ? e.then(function (tc) {
+                return rc(tc);
+            }) : rc(e);
+        }
+        var rc, sc = function () {
+                function tc(uc) {
+                    var vc = this;
+                    this.http = uc, this.settings = {
+                        path: '/auth',
+                        key: 'colyseus-auth-token'
+                    }, ac.set(this, !1), bc.set(this, void 0), cc.set(this, void 0), dc.set(this, Nb()), pc(this.settings.key, function (wc) {
+                        return vc.token = wc;
+                    });
+                }
+                return Object.defineProperty(tc.prototype, 'token', {
+                    get: function () {
+                        return this.http.authToken;
+                    },
+                    set: function (vc) {
+                        this.http.authToken = vc;
+                    },
+                    enumerable: !1,
+                    configurable: !0
+                }), tc.prototype.onChange = function (vc) {
+                    var wc = this, xc = q(this, dc, 'f').on('change', vc);
+                    return q(this, ac, 'f') || r(this, bc, new Promise(function (yc, zc) {
+                        wc.getUserData().then(function (Ac) {
+                            wc.emitChange(Eb(Eb({}, Ac), { token: wc.token }));
+                        }).catch(function (Ac) {
+                            wc.emitChange({
                                 user: null,
                                 token: void 0
                             });
-                        }).finally(function() {
-                            mb();
+                        }).finally(function () {
+                            yc();
                         });
-                    }), 'f'), m(this, R, !0, 'f'), lb;
-                }, ib.prototype.getUserData = function() {
-                    return j(this, void 0, void 0, function() {
-                        return k(this, function(jb) {
-                            switch (jb.label) {
-                                case 0:
-                                    return this.token ? [
-                                        4,
-                                        this.http.get(''.concat(this.settings.path, '/userdata'))
-                                    ] : [
-                                        3,
-                                        2
-                                    ];
-                                case 1:
-                                    return [
-                                        2,
-                                        jb.sent().data
-                                    ];
-                                case 2:
-                                    throw new Error('missing auth.token');
+                    }), 'f'), r(this, ac, !0, 'f'), xc;
+                }, tc.prototype.getUserData = function () {
+                    return j(this, void 0, void 0, function () {
+                        return k(this, function (vc) {
+                            switch (vc.label) {
+                            case 0:
+                                return this.token ? [
+                                    4,
+                                    this.http.get(''.concat(this.settings.path, '/userdata'))
+                                ] : [
+                                    3,
+                                    2
+                                ];
+                            case 1:
+                                return [
+                                    2,
+                                    vc.sent().data
+                                ];
+                            case 2:
+                                throw new Error('missing auth.token');
                             }
                         });
                     });
-                }, ib.prototype.registerWithEmailAndPassword = function(jb, kb, lb) {
-                    return j(this, void 0, void 0, function() {
-                        var mb;
-                        return k(this, function(nb) {
-                            switch (nb.label) {
-                                case 0:
-                                    return [
-                                        4,
-                                        this.http.post(''.concat(this.settings.path, '/register'), {
-                                            body: {
-                                                email: jb,
-                                                password: kb,
-                                                options: lb
-                                            }
-                                        })
-                                    ];
-                                case 1:
-                                    return mb = nb.sent().data, this.emitChange(mb), [
-                                        2,
-                                        mb
-                                    ];
+                }, tc.prototype.registerWithEmailAndPassword = function (vc, wc, xc) {
+                    return j(this, void 0, void 0, function () {
+                        var yc;
+                        return k(this, function (zc) {
+                            switch (zc.label) {
+                            case 0:
+                                return [
+                                    4,
+                                    this.http.post(''.concat(this.settings.path, '/register'), {
+                                        body: {
+                                            email: vc,
+                                            password: wc,
+                                            options: xc
+                                        }
+                                    })
+                                ];
+                            case 1:
+                                return yc = zc.sent().data, this.emitChange(yc), [
+                                    2,
+                                    yc
+                                ];
                             }
                         });
                     });
-                }, ib.prototype.signInWithEmailAndPassword = function(jb, kb) {
-                    return j(this, void 0, void 0, function() {
-                        var lb;
-                        return k(this, function(mb) {
-                            switch (mb.label) {
-                                case 0:
-                                    return [
-                                        4,
-                                        this.http.post(''.concat(this.settings.path, '/login'), {
-                                            body: {
-                                                email: jb,
-                                                password: kb
-                                            }
-                                        })
-                                    ];
-                                case 1:
-                                    return lb = mb.sent().data, this.emitChange(lb), [
-                                        2,
-                                        lb
-                                    ];
+                }, tc.prototype.signInWithEmailAndPassword = function (vc, wc) {
+                    return j(this, void 0, void 0, function () {
+                        var xc;
+                        return k(this, function (yc) {
+                            switch (yc.label) {
+                            case 0:
+                                return [
+                                    4,
+                                    this.http.post(''.concat(this.settings.path, '/login'), {
+                                        body: {
+                                            email: vc,
+                                            password: wc
+                                        }
+                                    })
+                                ];
+                            case 1:
+                                return xc = yc.sent().data, this.emitChange(xc), [
+                                    2,
+                                    xc
+                                ];
                             }
                         });
                     });
-                }, ib.prototype.signInAnonymously = function(jb) {
-                    return j(this, void 0, void 0, function() {
-                        var kb;
-                        return k(this, function(lb) {
-                            switch (lb.label) {
-                                case 0:
-                                    return [
-                                        4,
-                                        this.http.post(''.concat(this.settings.path, '/anonymous'), {
-                                            body: {
-                                                options: jb
-                                            }
-                                        })
-                                    ];
-                                case 1:
-                                    return kb = lb.sent().data, this.emitChange(kb), [
-                                        2,
-                                        kb
-                                    ];
+                }, tc.prototype.signInAnonymously = function (vc) {
+                    return j(this, void 0, void 0, function () {
+                        var wc;
+                        return k(this, function (xc) {
+                            switch (xc.label) {
+                            case 0:
+                                return [
+                                    4,
+                                    this.http.post(''.concat(this.settings.path, '/anonymous'), { body: { options: vc } })
+                                ];
+                            case 1:
+                                return wc = xc.sent().data, this.emitChange(wc), [
+                                    2,
+                                    wc
+                                ];
                             }
                         });
                     });
-                }, ib.prototype.sendPasswordResetEmail = function(jb) {
-                    return j(this, void 0, void 0, function() {
-                        return k(this, function(kb) {
-                            switch (kb.label) {
-                                case 0:
-                                    return [
-                                        4,
-                                        this.http.post(''.concat(this.settings.path, '/forgot-password'), {
-                                            body: {
-                                                email: jb
-                                            }
-                                        })
-                                    ];
-                                case 1:
-                                    return [
-                                        2,
-                                        kb.sent().data
-                                    ];
+                }, tc.prototype.sendPasswordResetEmail = function (vc) {
+                    return j(this, void 0, void 0, function () {
+                        return k(this, function (wc) {
+                            switch (wc.label) {
+                            case 0:
+                                return [
+                                    4,
+                                    this.http.post(''.concat(this.settings.path, '/forgot-password'), { body: { email: vc } })
+                                ];
+                            case 1:
+                                return [
+                                    2,
+                                    wc.sent().data
+                                ];
                             }
                         });
                     });
-                }, ib.prototype.signInWithProvider = function(jb, kb) {
-                    return void 0 === kb && (kb = {}), j(this, void 0, void 0, function() {
-                        var lb = this;
-                        return k(this, function(mb) {
+                }, tc.prototype.signInWithProvider = function (vc, wc) {
+                    return void 0 === wc && (wc = {}), j(this, void 0, void 0, function () {
+                        var xc = this;
+                        return k(this, function (yc) {
                             return [
                                 2,
-                                new Promise(function(nb, ob) {
-                                    var pb = kb.width || 480,
-                                        qb = kb.height || 768,
-                                        rb = lb.token ? '?token='.concat(lb.token) : '',
-                                        sb = 'Login with '.concat(jb[0].toUpperCase() + jb.substring(1)),
-                                        tb = lb.http.client.getHttpEndpoint(''.concat(kb.prefix || ''.concat(lb.settings.path, '/provider'), '/').concat(jb).concat(rb)),
-                                        ub = screen.width / 2 - pb / 2,
-                                        vb = screen.height / 2 - qb / 2;
-                                    m(lb, T, window.open(tb, sb, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + pb + ', height=' + qb + ', top=' + vb + ', left=' + ub), 'f');
-                                    var wb = function(xb) {
-                                            void 0 === xb.data.user && void 0 === xb.data.token || (clearInterval(r), l(lb, T, 'f').close(), m(lb, T, void 0, 'f'), window.removeEventListener('message', wb), void 0 !== xb.data.error ? ob(xb.data.error) : (nb(xb.data), lb.emitChange(xb.data)));
-                                        },
-                                        xb = setInterval(function() {
-                                            l(lb, T, 'f') && !l(lb, T, 'f').closed || (m(lb, T, void 0, 'f'), ob('cancelled'), window.removeEventListener('message', wb));
+                                new Promise(function (zc, Ac) {
+                                    var Bc = wc.width || 480, Cc = wc.height || 768, Dc = xc.token ? '?token='.concat(xc.token) : '', Ec = 'Login with '.concat(vc[0].toUpperCase() + vc.substring(1)), Fc = xc.http.client.getHttpEndpoint(''.concat(wc.prefix || ''.concat(xc.settings.path, '/provider'), '/').concat(vc).concat(Dc)), Gc = screen.width / 2 - Bc / 2, Hc = screen.height / 2 - Cc / 2;
+                                    r(xc, cc, window.open(Fc, Ec, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + Bc + ', height=' + Cc + ', top=' + Hc + ', left=' + Gc), 'f');
+                                    var Ic = function (Jc) {
+                                            void 0 === Jc.data.user && void 0 === Jc.data.token || (clearInterval(rb), q(xc, cc, 'f').close(), r(xc, cc, void 0, 'f'), window.removeEventListener('message', Ic), void 0 !== Jc.data.error ? Ac(Jc.data.error) : (zc(Jc.data), xc.emitChange(Jc.data)));
+                                        }, Jc = setInterval(function () {
+                                            q(xc, cc, 'f') && !q(xc, cc, 'f').closed || (r(xc, cc, void 0, 'f'), Ac('cancelled'), window.removeEventListener('message', Ic));
                                         }, 200);
-                                    window.addEventListener('message', wb);
+                                    window.addEventListener('message', Ic);
                                 })
                             ];
                         });
                     });
-                }, ib.prototype.signOut = function() {
-                    return j(this, void 0, void 0, function() {
-                        return k(this, function(jb) {
+                }, tc.prototype.signOut = function () {
+                    return j(this, void 0, void 0, function () {
+                        return k(this, function (vc) {
                             return this.emitChange({
                                 user: null,
                                 token: null
                             }), [2];
                         });
                     });
-                }, ib.prototype.emitChange = function(jb) {
-                    void 0 !== jb.token && (this.token = jb.token, null === jb.token ? eb(this.settings.key) : db(this.settings.key, jb.token)), l(this, U, 'f').emit('change', jb);
-                }, ib;
+                }, tc.prototype.emitChange = function (vc) {
+                    void 0 !== vc.token && (this.token = vc.token, null === vc.token ? oc(this.settings.key) : nc(this.settings.key, vc.token)), q(this, dc, 'f').emit('change', vc);
+                }, tc;
             }();
-            R = new WeakMap(), S = new WeakMap(), T = new WeakMap(), U = new WeakMap();
-            var ib = function(jb) {
-                    function kb(lb, mb) {
-                        var nb = jb.call(this, lb) || this;
-                        return nb.code = mb, Object.setPrototypeOf(nb, kb.prototype), nb;
-                    }
-                    return g(kb, jb), kb;
-                }(Error),
-                jb = 'undefined' != typeof window && void 0 !== (null === (gb = null === window || void 0 === window ? void 0 : window.location) || void 0 === gb ? void 0 : gb.hostname) ? ''.concat(window.location.protocol.replace('http', 'ws'), '//').concat(window.location.hostname).concat(window.location.port && ':'.concat(window.location.port)) : 'ws://127.0.0.1:2567',
-                kb = function() {
-                    function lb(mb) {
-                        if (void 0 === mb && (mb = jb), 'string' == typeof mb) {
-                            var nb = new URL(mb),
-                                ob = 'https:' === nb.protocol || 'wss:' === nb.protocol,
-                                pb = Number(nb.port || (ob ? 443 : 80));
-                            this.settings = {
-                                hostname: nb.hostname,
-                                pathname: nb.pathname,
-                                port: pb,
-                                secure: ob
-                            };
-                        } else
-                            void 0 === mb.port && (mb.port = mb.secure ? 443 : 80), void 0 === mb.pathname && (mb.pathname = ''), this.settings = mb;
-                        this.settings.pathname.endsWith('/') && (this.settings.pathname = this.settings.pathname.slice(0, -1)), this.http = new bb(this), this.auth = new hb(this.http);
-                    }
-                    return lb.prototype.joinOrCreate = function(mb, nb, ob) {
-                        return void 0 === nb && (nb = {}), j(this, void 0, void 0, function() {
-                            return k(this, function(pb) {
-                                switch (pb.label) {
-                                    case 0:
-                                        return [
-                                            4,
-                                            this.createMatchMakeRequest('joinOrCreate', mb, nb, ob)
-                                        ];
-                                    case 1:
-                                        return [
-                                            2,
-                                            pb.sent()
-                                        ];
-                                }
-                            });
-                        });
-                    }, lb.prototype.create = function(mb, nb, ob) {
-                        return void 0 === nb && (nb = {}), j(this, void 0, void 0, function() {
-                            return k(this, function(pb) {
-                                switch (pb.label) {
-                                    case 0:
-                                        return [
-                                            4,
-                                            this.createMatchMakeRequest('create', mb, nb, ob)
-                                        ];
-                                    case 1:
-                                        return [
-                                            2,
-                                            pb.sent()
-                                        ];
-                                }
-                            });
-                        });
-                    }, lb.prototype.join = function(mb, nb, ob) {
-                        return void 0 === nb && (nb = {}), j(this, void 0, void 0, function() {
-                            return k(this, function(pb) {
-                                switch (pb.label) {
-                                    case 0:
-                                        return [
-                                            4,
-                                            this.createMatchMakeRequest('join', mb, nb, ob)
-                                        ];
-                                    case 1:
-                                        return [
-                                            2,
-                                            pb.sent()
-                                        ];
-                                }
-                            });
-                        });
-                    }, lb.prototype.joinById = function(mb, nb, ob) {
-                        return void 0 === nb && (nb = {}), j(this, void 0, void 0, function() {
-                            return k(this, function(pb) {
-                                switch (pb.label) {
-                                    case 0:
-                                        return [
-                                            4,
-                                            this.createMatchMakeRequest('joinById', mb, nb, ob)
-                                        ];
-                                    case 1:
-                                        return [
-                                            2,
-                                            pb.sent()
-                                        ];
-                                }
-                            });
-                        });
-                    }, lb.prototype.reconnect = function(mb, nb) {
-                        return j(this, void 0, void 0, function() {
-                            var ob, pb, qb;
-                            return k(this, function(rb) {
-                                switch (rb.label) {
-                                    case 0:
-                                        if ('string' == typeof mb && 'string' == typeof nb)
-                                            throw new Error('DEPRECATED: .reconnect() now only accepts \'reconnectionToken\' as argument.\nYou can get this token from previously connected `room.reconnectionToken`');
-                                        if (ob = mb.split(':'), pb = ob[0], qb = ob[1], !pb || !qb)
-                                            throw new Error('Invalid reconnection token format.\nThe format should be roomId:reconnectionToken');
-                                        return [
-                                            4,
-                                            this.createMatchMakeRequest('reconnect', pb, {
-                                                reconnectionToken: qb
-                                            }, nb)
-                                        ];
-                                    case 1:
-                                        return [
-                                            2,
-                                            rb.sent()
-                                        ];
-                                }
-                            });
-                        });
-                    }, lb.prototype.getAvailableRooms = function(mb) {
-                        return void 0 === mb && (mb = ''), j(this, void 0, void 0, function() {
-                            return k(this, function(nb) {
-                                switch (nb.label) {
-                                    case 0:
-                                        return [
-                                            4,
-                                            this.http.get('matchmake/'.concat(mb), {
-                                                headers: {
-                                                    Accept: 'application/json'
-                                                }
-                                            })
-                                        ];
-                                    case 1:
-                                        return [
-                                            2,
-                                            nb.sent().data
-                                        ];
-                                }
-                            });
-                        });
-                    }, lb.prototype.consumeSeatReservation = function(mb, nb, ob) {
-                        return j(this, void 0, void 0, function() {
-                            var pb, qb, rb, sb = this;
-                            return k(this, function(tb) {
-                                return (pb = this.createRoom(mb.room.name, nb)).roomId = mb.room.roomId, pb.sessionId = mb.sessionId, qb = {
-                                    sessionId: pb.sessionId
-                                }, mb.reconnectionToken && (qb.reconnectionToken = mb.reconnectionToken), rb = ob || pb, pb.connect(this.buildEndpoint(mb.room, qb), mb.devMode && function() {
-                                    return j(sb, void 0, void 0, function() {
-                                        var ub, vb, wb, xb = this;
-                                        return k(this, function(yb) {
-                                            return console.info('[Colyseus devMode]: '.concat(String.fromCodePoint(128260), ' Re-establishing connection with room id \'').concat(pb.roomId, '\'...')), ub = 0, vb = 8, wb = function() {
-                                                return j(xb, void 0, void 0, function() {
-                                                    return k(this, function(zb) {
-                                                        switch (zb.label) {
-                                                            case 0:
-                                                                ub++, zb.label = 1;
-                                                            case 1:
-                                                                return zb.trys.push([
-                                                                    1,
-                                                                    3, ,
-                                                                    4
-                                                                ]), [
-                                                                    4,
-                                                                    this.consumeSeatReservation(mb, nb, rb)
-                                                                ];
-                                                            case 2:
-                                                                return zb.sent(), console.info('[Colyseus devMode]: '.concat(String.fromCodePoint(9989), ' Successfully re-established connection with room \'').concat(pb.roomId, '\'')), [
-                                                                    3,
-                                                                    4
-                                                                ];
-                                                            case 3:
-                                                                return zb.sent(), ub < vb ? (console.info('[Colyseus devMode]: '.concat(String.fromCodePoint(128260), ' retrying... (').concat(ub, ' out of ').concat(vb, ')')), setTimeout(wb, 2000)) : console.info('[Colyseus devMode]: '.concat(String.fromCodePoint(10060), ' Failed to reconnect. Is your server running? Please check server logs.')), [
-                                                                    3,
-                                                                    4
-                                                                ];
-                                                            case 4:
-                                                                return [2];
-                                                        }
-                                                    });
-                                                });
-                                            }, setTimeout(wb, 2000), [2];
-                                        });
-                                    });
-                                }, rb), [
+        ac = new WeakMap(), bc = new WeakMap(), cc = new WeakMap(), dc = new WeakMap();
+        var tc = function (uc) {
+                function vc(wc, xc) {
+                    var yc = uc.call(this, wc) || this;
+                    return yc.code = xc, Object.setPrototypeOf(yc, vc.prototype), yc;
+                }
+                return yc(vc, uc), vc;
+            }(Error), uc = 'undefined' != typeof window && void 0 !== (null === (rc = null === window || void 0 === window ? void 0 : window.location) || void 0 === rc ? void 0 : rc.hostname) ? ''.concat(window.location.protocol.replace('http', 'ws'), '//').concat(window.location.hostname).concat(window.location.port && ':'.concat(window.location.port)) : 'ws://127.0.0.1:2567', vc = function () {
+                function wc(xc) {
+                    if (void 0 === xc && (xc = uc), 'string' == typeof xc) {
+                        var yc = new URL(xc), zc = 'https:' === yc.protocol || 'wss:' === yc.protocol, Ac = Number(yc.port || (zc ? 443 : 80));
+                        this.settings = {
+                            hostname: yc.hostname,
+                            pathname: yc.pathname,
+                            port: Ac,
+                            secure: zc
+                        };
+                    } else
+                        void 0 === xc.port && (xc.port = xc.secure ? 443 : 80), void 0 === xc.pathname && (xc.pathname = ''), this.settings = xc;
+                    this.settings.pathname.endsWith('/') && (this.settings.pathname = this.settings.pathname.slice(0, -1)), this.http = new lc(this), this.auth = new sc(this.http);
+                }
+                return wc.prototype.joinOrCreate = function (Ac, Bc, Cc) {
+                    return void 0 === Bc && (Bc = {}), j(this, void 0, void 0, function () {
+                        return k(this, function (Dc) {
+                            switch (Dc.label) {
+                            case 0:
+                                return [
+                                    4,
+                                    this.createMatchMakeRequest('joinOrCreate', Ac, Bc, Cc)
+                                ];
+                            case 1:
+                                return [
                                     2,
-                                    new Promise(function(ub, vb) {
-                                        var wb = function(xb, yb) {
-                                            return vb(new n(xb, yb));
-                                        };
-                                        rb.onError.once(wb), rb.onJoin.once(function() {
-                                            rb.onError.remove(wb), ub(rb);
-                                        });
+                                    Dc.sent()
+                                ];
+                            }
+                        });
+                    });
+                }, wc.prototype.create = function (Ac, Bc, Cc) {
+                    return void 0 === Bc && (Bc = {}), j(this, void 0, void 0, function () {
+                        return k(this, function (Dc) {
+                            switch (Dc.label) {
+                            case 0:
+                                return [
+                                    4,
+                                    this.createMatchMakeRequest('create', Ac, Bc, Cc)
+                                ];
+                            case 1:
+                                return [
+                                    2,
+                                    Dc.sent()
+                                ];
+                            }
+                        });
+                    });
+                }, wc.prototype.join = function (Ac, Bc, Cc) {
+                    return void 0 === Bc && (Bc = {}), j(this, void 0, void 0, function () {
+                        return k(this, function (Dc) {
+                            switch (Dc.label) {
+                            case 0:
+                                return [
+                                    4,
+                                    this.createMatchMakeRequest('join', Ac, Bc, Cc)
+                                ];
+                            case 1:
+                                return [
+                                    2,
+                                    Dc.sent()
+                                ];
+                            }
+                        });
+                    });
+                }, wc.prototype.joinById = function (Ac, Bc, Cc) {
+                    return void 0 === Bc && (Bc = {}), j(this, void 0, void 0, function () {
+                        return k(this, function (Dc) {
+                            switch (Dc.label) {
+                            case 0:
+                                return [
+                                    4,
+                                    this.createMatchMakeRequest('joinById', Ac, Bc, Cc)
+                                ];
+                            case 1:
+                                return [
+                                    2,
+                                    Dc.sent()
+                                ];
+                            }
+                        });
+                    });
+                }, wc.prototype.reconnect = function (Ac, Bc) {
+                    return j(this, void 0, void 0, function () {
+                        var Cc, Dc, Ec;
+                        return k(this, function (Fc) {
+                            switch (Fc.label) {
+                            case 0:
+                                if ('string' == typeof Ac && 'string' == typeof Bc)
+                                    throw new Error('DEPRECATED: .reconnect() now only accepts \'reconnectionToken\' as argument.\nYou can get this token from previously connected `room.reconnectionToken`');
+                                if (Cc = Ac.split(':'), Dc = Cc[0], Ec = Cc[1], !Dc || !Ec)
+                                    throw new Error('Invalid reconnection token format.\nThe format should be roomId:reconnectionToken');
+                                return [
+                                    4,
+                                    this.createMatchMakeRequest('reconnect', Dc, { reconnectionToken: Ec }, Bc)
+                                ];
+                            case 1:
+                                return [
+                                    2,
+                                    Fc.sent()
+                                ];
+                            }
+                        });
+                    });
+                }, wc.prototype.getAvailableRooms = function (Ac) {
+                    return void 0 === Ac && (Ac = ''), j(this, void 0, void 0, function () {
+                        return k(this, function (Bc) {
+                            switch (Bc.label) {
+                            case 0:
+                                return [
+                                    4,
+                                    this.http.get('matchmake/'.concat(Ac), { headers: { Accept: 'application/json' } })
+                                ];
+                            case 1:
+                                return [
+                                    2,
+                                    Bc.sent().data
+                                ];
+                            }
+                        });
+                    });
+                }, wc.prototype.consumeSeatReservation = function (Ac, Bc, Cc) {
+                    return j(this, void 0, void 0, function () {
+                        var Dc, Ec, Fc, Gc = this;
+                        return k(this, function (Hc) {
+                            return (Dc = this.createRoom(Ac.room.name, Bc)).roomId = Ac.room.roomId, Dc.sessionId = Ac.sessionId, Ec = { sessionId: Dc.sessionId }, Ac.reconnectionToken && (Ec.reconnectionToken = Ac.reconnectionToken), Fc = Cc || Dc, Dc.connect(this.buildEndpoint(Ac.room, Ec), Ac.devMode && function () {
+                                return j(Gc, void 0, void 0, function () {
+                                    var Ic, Jc, Kc, Lc = this;
+                                    return k(this, function (Mc) {
+                                        return console.info('[Colyseus devMode]: '.concat(String.fromCodePoint(128260), ' Re-establishing connection with room id \'').concat(Dc.roomId, '\'...')), Ic = 0, Jc = 8, Kc = function () {
+                                            return j(Lc, void 0, void 0, function () {
+                                                return k(this, function (Nc) {
+                                                    switch (Nc.label) {
+                                                    case 0:
+                                                        Ic++, Nc.label = 1;
+                                                    case 1:
+                                                        return Nc.trys.push([
+                                                            1,
+                                                            3,
+                                                            ,
+                                                            4
+                                                        ]), [
+                                                            4,
+                                                            this.consumeSeatReservation(Ac, Bc, Fc)
+                                                        ];
+                                                    case 2:
+                                                        return Nc.sent(), console.info('[Colyseus devMode]: '.concat(String.fromCodePoint(9989), ' Successfully re-established connection with room \'').concat(Dc.roomId, '\'')), [
+                                                            3,
+                                                            4
+                                                        ];
+                                                    case 3:
+                                                        return Nc.sent(), Ic < Jc ? (console.info('[Colyseus devMode]: '.concat(String.fromCodePoint(128260), ' retrying... (').concat(Ic, ' out of ').concat(Jc, ')')), setTimeout(Kc, 2000)) : console.info('[Colyseus devMode]: '.concat(String.fromCodePoint(10060), ' Failed to reconnect. Is your server running? Please check server logs.')), [
+                                                            3,
+                                                            4
+                                                        ];
+                                                    case 4:
+                                                        return [2];
+                                                    }
+                                                });
+                                            });
+                                        }, setTimeout(Kc, 2000), [2];
+                                    });
+                                });
+                            }, Fc), [
+                                2,
+                                new Promise(function (Ic, Jc) {
+                                    var Kc = function (Lc, Mc) {
+                                        return Jc(new nb(Lc, Mc));
+                                    };
+                                    Fc.onError.once(Kc), Fc.onJoin.once(function () {
+                                        Fc.onError.remove(Kc), Ic(Fc);
+                                    });
+                                })
+                            ];
+                        });
+                    });
+                }, wc.prototype.createMatchMakeRequest = function (Ac, Bc, Cc, Dc, Ec) {
+                    return void 0 === Cc && (Cc = {}), j(this, void 0, void 0, function () {
+                        var Fc;
+                        return k(this, function (Gc) {
+                            switch (Gc.label) {
+                            case 0:
+                                return [
+                                    4,
+                                    this.http.post('matchmake/'.concat(Ac, '/').concat(Bc), {
+                                        headers: {
+                                            Accept: 'application/json',
+                                            'Content-Type': 'application/json'
+                                        },
+                                        body: JSON.stringify(Cc)
                                     })
                                 ];
-                            });
+                            case 1:
+                                if ((Fc = Gc.sent().data).error)
+                                    throw new tc(Fc.error, Fc.code);
+                                return 'reconnect' === Ac && (Fc.reconnectionToken = Cc.reconnectionToken), [
+                                    4,
+                                    this.consumeSeatReservation(Fc, Dc, Ec)
+                                ];
+                            case 2:
+                                return [
+                                    2,
+                                    Gc.sent()
+                                ];
+                            }
                         });
-                    }, lb.prototype.createMatchMakeRequest = function(mb, nb, ob, pb, qb) {
-                        return void 0 === ob && (ob = {}), j(this, void 0, void 0, function() {
-                            var rb;
-                            return k(this, function(sb) {
-                                switch (sb.label) {
-                                    case 0:
-                                        return [
-                                            4,
-                                            this.http.post('matchmake/'.concat(mb, '/').concat(nb), {
-                                                headers: {
-                                                    Accept: 'application/json',
-                                                    'Content-Type': 'application/json'
-                                                },
-                                                body: JSON.stringify(ob)
-                                            })
-                                        ];
-                                    case 1:
-                                        if ((rb = sb.sent().data).error)
-                                            throw new ib(rb.error, rb.code);
-                                        return 'reconnect' === mb && (rb.reconnectionToken = ob.reconnectionToken), [
-                                            4,
-                                            this.consumeSeatReservation(rb, pb, qb)
-                                        ];
-                                    case 2:
-                                        return [
-                                            2,
-                                            sb.sent()
-                                        ];
-                                }
-                            });
-                        });
-                    }, lb.prototype.createRoom = function(mb, nb) {
-                        return new N(mb, nb);
-                    }, lb.prototype.buildEndpoint = function(mb, nb) {
-                        void 0 === nb && (nb = {});
-                        var ob = [];
-                        for (var pb in nb)
-                            nb.hasOwnProperty(pb) && ob.push(''.concat(pb, '=').concat(nb[pb]));
-                        var qb = this.settings.secure ? 'wss://' : 'ws://';
-                        return mb.publicAddress ? qb += ''.concat(mb.publicAddress) : qb += ''.concat(this.settings.hostname).concat(this.getEndpointPort()).concat(this.settings.pathname), ''.concat(qb, '/').concat(mb.processId, '/').concat(mb.roomId, '?').concat(ob.join('&'));
-                    }, lb.prototype.getHttpEndpoint = function(mb) {
-                        void 0 === mb && (mb = '');
-                        var nb = mb.startsWith('/') ? mb : '/'.concat(mb);
-                        return ''.concat(this.settings.secure ? 'https' : 'http', '://').concat(this.settings.hostname).concat(this.getEndpointPort()).concat(this.settings.pathname).concat(nb);
-                    }, lb.prototype.getEndpointPort = function() {
-                        return 80 !== this.settings.port && 443 !== this.settings.port ? ':'.concat(this.settings.port) : '';
-                    }, lb;
-                }(),
-                lb = function() {
-                    function mb() {}
-                    return mb.prototype.setState = function(nb) {
-                        return this.state.decode(nb);
-                    }, mb.prototype.getState = function() {
-                        return this.state;
-                    }, mb.prototype.patch = function(nb) {
-                        return this.state.decode(nb);
-                    }, mb.prototype.teardown = function() {
-                        var nb, ob;
-                        null === (ob = null === (nb = this.state) || void 0 === nb ? void 0 : nb.$changes) || void 0 === ob || ob.root.clearRefs();
-                    }, mb.prototype.handshake = function(nb, ob) {
-                        this.state ? new M.Reflection().decode(nb, ob) : this.state = M.Reflection.decode(nb, ob);
-                    }, mb;
-                }(),
-                mb = function() {
-                    function nb() {}
-                    return nb.prototype.setState = function(ob) {}, nb.prototype.getState = function() {
-                        return null;
-                    }, nb.prototype.patch = function(ob) {}, nb.prototype.teardown = function() {}, nb.prototype.handshake = function(ob) {}, nb;
-                }();
-            G('schema', lb), G('none', mb), d.Auth = hb, d.Client = kb, d.Room = N, d.SchemaSerializer = lb, d.registerSerializer = G, Object.defineProperty(d, '__esModule', {
-                value: !0
-            });
-        }(b.exports);
+                    });
+                }, wc.prototype.createRoom = function (Ac, Bc) {
+                    return new Ub(Ac, Bc);
+                }, wc.prototype.buildEndpoint = function (Ac, Bc) {
+                    void 0 === Bc && (Bc = {});
+                    var Cc = [];
+                    for (var Dc in Bc)
+                        Bc.hasOwnProperty(Dc) && Cc.push(''.concat(Dc, '=').concat(Bc[Dc]));
+                    var Ec = this.settings.secure ? 'wss://' : 'ws://';
+                    return Ac.publicAddress ? Ec += ''.concat(Ac.publicAddress) : Ec += ''.concat(this.settings.hostname).concat(this.getEndpointPort()).concat(this.settings.pathname), ''.concat(Ec, '/').concat(Ac.processId, '/').concat(Ac.roomId, '?').concat(Cc.join('&'));
+                }, wc.prototype.getHttpEndpoint = function (Ac) {
+                    void 0 === Ac && (Ac = '');
+                    var Bc = Ac.startsWith('/') ? Ac : '/'.concat(Ac);
+                    return ''.concat(this.settings.secure ? 'https' : 'http', '://').concat(this.settings.hostname).concat(this.getEndpointPort()).concat(this.settings.pathname).concat(Bc);
+                }, wc.prototype.getEndpointPort = function () {
+                    return 80 !== this.settings.port && 443 !== this.settings.port ? ':'.concat(this.settings.port) : '';
+                }, wc;
+            }(), wc = function () {
+                function xc() {
+                }
+                return xc.prototype.setState = function (yc) {
+                    return this.state.decode(yc);
+                }, xc.prototype.getState = function () {
+                    return this.state;
+                }, xc.prototype.patch = function (yc) {
+                    return this.state.decode(yc);
+                }, xc.prototype.teardown = function () {
+                    var yc, zc;
+                    null === (zc = null === (yc = this.state) || void 0 === yc ? void 0 : yc.$changes) || void 0 === zc || zc.root.clearRefs();
+                }, xc.prototype.handshake = function (yc, zc) {
+                    this.state ? new Tb.Reflection().decode(yc, zc) : this.state = Tb.Reflection.decode(yc, zc);
+                }, xc;
+            }(), xc = function () {
+                function yc() {
+                }
+                return yc.prototype.setState = function (zc) {
+                }, yc.prototype.getState = function () {
+                    return null;
+                }, yc.prototype.patch = function (zc) {
+                }, yc.prototype.teardown = function () {
+                }, yc.prototype.handshake = function (zc) {
+                }, yc;
+            }();
+        Kb('schema', wc), Kb('none', xc), Tb.Auth = sc, Tb.Client = vc, Tb.Room = Ub, Tb.SchemaSerializer = wc, Tb.registerSerializer = Kb, Object.defineProperty(Tb, '__esModule', { value: !0 });
+    }(b.exports);
 });

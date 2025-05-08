@@ -6,170 +6,131 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('q/kb5', function(d, e) {
+c.register('.....', function (d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function() {
+    }), a(d.exports, 'default', function () {
         return _t;
     });
-    var g = c('gRbUn'),
-        h = c('O0Kav'),
-        i = c('u4s09'),
-        j = c('8KqQ+'),
-        k = c('Eh2Wh'),
-        l = c('P9ORi0'),
-        m = c('fa1mb'),
-        n = c('g+A0Z'),
-        o = c('dqGfi'),
-        p = c('3RzrV');
+    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....');
     let q, r;
     var s;
     (s = r || (r = {})).recipeSelection = 'recipeSelection', s.itemPreview = 'itemPreview';
-    var _t = a => {
-        const [u, v] = h.useState(r.recipeSelection), [w, x] = h.useState(null), y = a => {
-            x(a), v(r.itemPreview);
-        }, z = () => {
-            v(r.recipeSelection);
-        };
+    var _t = u => {
+        const [v, w] = h.useState(r.recipeSelection), [x, y] = h.useState(null), z = A => {
+                y(A), w(r.itemPreview);
+            }, A = () => {
+                w(r.recipeSelection);
+            };
         h.useEffect(() => {
-            a.status === l.CraftingTableStatus.availableForCollection && z();
-        }, [a.status]);
+            u.status === l.CraftingTableStatus.availableForCollection && A();
+        }, [u.status]);
         return (0, g.jsx)(_u, {
-            style: {
-                background: (0, p.CraftingTableDeviceUIBackgroundColor)(a.style)
-            },
+            style: { background: (0, p.CraftingTableDeviceUIBackgroundColor)(u.style) },
             children: (() => {
-                if (a.status === l.CraftingTableStatus.idle)
-                    switch (u) {
-                        case r.recipeSelection:
-                            return (0, g.jsx)(o.default, {
-                                setToRecipePreviewScreen: y,
-                                style: a.style,
-                                group: a.tableGroup
-                            }, 'recipe-selection-screen');
-                        case r.itemPreview:
-                            return (0, g.jsx)(n.default, {
-                                craft: a.craft,
-                                selectedRecipeId: w,
-                                style: a.style,
-                                backToRecipeSelectionScreen: z
-                            }, 'recipe-preview-screen');
-                        default:
-                            return null;
+                if (u.status === l.CraftingTableStatus.idle)
+                    switch (v) {
+                    case r.recipeSelection:
+                        return (0, g.jsx)(o.default, {
+                            setToRecipePreviewScreen: z,
+                            style: u.style,
+                            group: u.tableGroup
+                        }, 'recipe-selection-screen');
+                    case r.itemPreview:
+                        return (0, g.jsx)(n.default, {
+                            craft: u.craft,
+                            selectedRecipeId: x,
+                            style: u.style,
+                            backToRecipeSelectionScreen: A
+                        }, 'recipe-preview-screen');
+                    default:
+                        return null;
                     }
                 return (0, g.jsx)(m.default, {
-                    item: a.item,
-                    itemAmount: a.itemAmount,
-                    status: a.status,
-                    style: a.style,
-                    craftingDurationMs: a.craftingDurationMs,
-                    itemFinishesCraftingAt: a.itemFinishesCraftingAt,
-                    itemDisposalMs: a.itemDisposalMs,
-                    itemDisposedAt: a.itemDisposedAt,
-                    itemCrafterCharacterId: a.itemCrafterCharacterId,
-                    useCrafterCollectionAdvantage: a.useCrafterCollectionAdvantage,
-                    collect: a.collect,
-                    close: a.close
+                    item: u.item,
+                    itemAmount: u.itemAmount,
+                    status: u.status,
+                    style: u.style,
+                    craftingDurationMs: u.craftingDurationMs,
+                    itemFinishesCraftingAt: u.itemFinishesCraftingAt,
+                    itemDisposalMs: u.itemDisposalMs,
+                    itemDisposedAt: u.itemDisposedAt,
+                    itemCrafterCharacterId: u.itemCrafterCharacterId,
+                    useCrafterCollectionAdvantage: u.useCrafterCollectionAdvantage,
+                    collect: u.collect,
+                    close: u.close
                 }, 'crafting-status-screen');
             })()
         });
     };
-    const _u = i.default.div.attrs({
-        className: 'maxAll flex-column vc scroll-y'
-    })(q || (q = (a => a)`
+    const _u = i.default.div.attrs({ className: 'maxAll flex-column vc scroll-y' })(q || (q = (v => v)`
   backdrop-filter: blur(5px);
   color: ${ 0 };
   padding: 25px;
   font-family: ${ 0 };
   text-transform: uppercase;
 `), j.default.White, k.Fonts.FugazOne);
-}), c.register('P9ORi0', function(d, e) {
+}), c.register('.....', function (d, e) {
     let f;
     var g;
-    a(d.exports, 'CraftingTableStatus', function() {
+    a(d.exports, 'CraftingTableStatus', function () {
         return f;
     }), (g = f || (f = {})).idle = 'idle', g.crafting = 'crafting', g.availableForCollection = 'availableForCollection';
-}), c.register('fa1mb', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _A;
     });
-    var f = c('gRbUn'),
-        g = c('TixUC'),
-        h = c('9aZ6t'),
-        i = c('6jmvl'),
-        j = c('O0Kav'),
-        k = c('u4s09'),
-        l = c('quE27'),
-        m = c('K/2xB'),
-        n = c('5Fjxs'),
-        o = c('256sH'),
-        p = c('DhD8i0'),
-        q = c('P9ORi0'),
-        r = c('OB2Ky0'),
-        s = c('Vh5lq'),
-        t = c('Ds56g'),
-        u = c('45kGo0');
-    let v, w, x, y, z = a => a;
-    var _A = (0, i.observer)(a => {
-        const B = j.useMemo(() => (0, o.default)(a.item), [a.item]),
-            {
-                session: {
-                    gameTime: C
-                }
-            } = (0, m.default)(),
-            D = j.useMemo(() => {
-                if (a.status === q.CraftingTableStatus.crafting)
-                    return `Currently ${ u.default.preparing(a.style) }...`;
-                if (a.useCrafterCollectionAdvantage && a.itemCrafterCharacterId !== (0, n.default)()) {
-                    const E = a.itemFinishesCraftingAt + 1000 * p.default.secondsAdvantage - C;
-                    if (E > 0) {
-                        const F = Math.ceil(E / 1000);
-                        return `Collect in ${ F } ${ (0, l.plural)('second', F) }`;
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....');
+    let v, w, x, y, z = A => A;
+    var _A = (0, i.observer)(B => {
+        const C = j.useMemo(() => (0, o.default)(B.item), [B.item]), {
+                session: {gameTime: D}
+            } = (0, m.default)(), E = j.useMemo(() => {
+                if (B.status === q.CraftingTableStatus.crafting)
+                    return `Currently ${ u.default.preparing(B.style) }...`;
+                if (B.useCrafterCollectionAdvantage && B.itemCrafterCharacterId !== (0, n.default)()) {
+                    const F = B.itemFinishesCraftingAt + 1000 * p.default.secondsAdvantage - D;
+                    if (F > 0) {
+                        const G = Math.ceil(F / 1000);
+                        return `Collect in ${ G } ${ (0, l.plural)('second', G) }`;
                     }
                 }
                 return 'Ready to collect';
             }, [
-                a.status,
-                C,
-                a.useCrafterCollectionAdvantage,
-                a.itemFinishesCraftingAt,
-                a.itemCrafterCharacterId
+                B.status,
+                D,
+                B.useCrafterCollectionAdvantage,
+                B.itemFinishesCraftingAt,
+                B.itemCrafterCharacterId
             ]);
-        return B ? (0, f.jsxs)(f.Fragment, {
+        return C ? (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, f.jsx)(_C, {
-                    src: B.previewImage
-                }),
-                (0, f.jsx)(_D, {
-                    children: (0, r.default)(B.id, a.itemAmount)
-                }),
+                (0, f.jsx)(_C, { src: C.previewImage }),
+                (0, f.jsx)(_D, { children: (0, r.default)(C.id, B.itemAmount) }),
                 (0, f.jsxs)(_B, {
                     children: [
-                        (0, f.jsx)(_E, {
-                            children: D
-                        }),
+                        (0, f.jsx)(_E, { children: E }),
                         (0, f.jsxs)(g.AnimatePresence, {
                             mode: 'wait',
                             children: [
-                                a.status === q.CraftingTableStatus.crafting ? (0, f.jsx)(t.default, {
-                                    itemFinishesCraftingAt: a.itemFinishesCraftingAt,
-                                    craftingDurationMs: a.craftingDurationMs
+                                B.status === q.CraftingTableStatus.crafting ? (0, f.jsx)(t.default, {
+                                    itemFinishesCraftingAt: B.itemFinishesCraftingAt,
+                                    craftingDurationMs: B.craftingDurationMs
                                 }, 'craft-countdown') : null,
-                                a.status === q.CraftingTableStatus.availableForCollection ? (0, f.jsx)(s.default, {
-                                    itemFinishesCraftingAt: a.itemFinishesCraftingAt,
-                                    itemDisposalMs: a.itemDisposalMs,
-                                    itemDisposalAt: a.itemDisposedAt,
-                                    collect: a.collect,
-                                    itemCrafterCharacterId: a.itemCrafterCharacterId,
-                                    useCrafterCollectionAdvantage: a.useCrafterCollectionAdvantage,
-                                    close: a.close
+                                B.status === q.CraftingTableStatus.availableForCollection ? (0, f.jsx)(s.default, {
+                                    itemFinishesCraftingAt: B.itemFinishesCraftingAt,
+                                    itemDisposalMs: B.itemDisposalMs,
+                                    itemDisposalAt: B.itemDisposedAt,
+                                    collect: B.collect,
+                                    itemCrafterCharacterId: B.itemCrafterCharacterId,
+                                    useCrafterCollectionAdvantage: B.useCrafterCollectionAdvantage,
+                                    close: B.close
                                 }, 'craft-collection') : null
                             ]
                         })
@@ -180,121 +141,90 @@ c.register('q/kb5', function(d, e) {
     });
     const _B = (0, k.default)(h.motion.div).attrs({
             className: 'maxWidth flex-column flex-center',
-            initial: {
-                opacity: 0
-            },
-            animate: {
-                opacity: 1
-            }
-        })(v || (v = z``)),
-        _C = k.default.img(w || (w = z`
+            initial: { opacity: 0 },
+            animate: { opacity: 1 }
+        })(v || (v = z``)), _C = k.default.img(w || (w = z`
   height: 82px;
-`)),
-        _D = k.default.div(x || (x = z`
+`)), _D = k.default.div(x || (x = z`
   text-transform: uppercase;
   font-size: 26px;
   line-height: 1;
   margin-top: 10px;
-`)),
-        _E = k.default.div(y || (y = z`
+`)), _E = k.default.div(y || (y = z`
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
   margin-top: 8px;
 `));
-}), c.register('DhD8i0', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _f;
     });
-    var _f = {
-        secondsAdvantage: 5
-    };
-}), c.register('OB2Ky0', function(d, e) {
-    a(d.exports, 'default', function() {
+    var _f = { secondsAdvantage: 5 };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _h;
     });
-    var f = c('quE27'),
-        g = c('G0Kso');
-    var _h = (a, d) => {
-        let i = (0, g.ItemName)(a) || 'Item';
-        return d > 1 && (i += ` (${ (0, f.numberWithCommas)(d) })`), i;
+    var f = c('.....'), g = c('.....');
+    var _h = (i, j) => {
+        let k = (0, g.ItemName)(i) || 'Item';
+        return j > 1 && (k += ` (${ (0, f.numberWithCommas)(j) })`), k;
     };
-}), c.register('Vh5lq', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _w;
     });
-    var f = c('gRbUn'),
-        g = c('O0Kav'),
-        h = c('aPZ+w'),
-        i = c('u4s09'),
-        j = c('Eh2Wh'),
-        k = c('/4RRY'),
-        l = c('quE27'),
-        m = c('9rEO42'),
-        n = c('9aZ6t'),
-        o = c('w+fxX'),
-        p = c('6jmvl'),
-        q = c('K/2xB'),
-        r = c('5Fjxs'),
-        s = c('DhD8i0');
-    let t, u, v = a => a;
-    var _w = (0, p.observer)(a => {
-        const [, x] = g.useReducer(a => a + 1, 0), [y, z] = g.useState(!1), {
-            session: {
-                gameTime: A
-            }
-        } = (0, q.default)();
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....');
+    let t, u, v = w => w;
+    var _w = (0, p.observer)(x => {
+        const [, y] = g.useReducer(z => z + 1, 0), [z, A] = g.useState(!1), {
+                session: {gameTime: B}
+            } = (0, q.default)();
         g.useEffect(() => {
-            z(!0);
-        }, []), (0, k.useIntervalWhen)(x, 33, !!a.itemDisposalMs);
-        const B = g.useMemo(() => {
-                if (!a.useCrafterCollectionAdvantage)
+            A(!0);
+        }, []), (0, k.useIntervalWhen)(y, 33, !!x.itemDisposalMs);
+        const C = g.useMemo(() => {
+                if (!x.useCrafterCollectionAdvantage)
                     return !1;
-                if (a.itemCrafterCharacterId !== (0, r.default)()) {
-                    const C = a.itemFinishesCraftingAt + 1000 * s.default.secondsAdvantage;
-                    return A < C;
+                if (x.itemCrafterCharacterId !== (0, r.default)()) {
+                    const D = x.itemFinishesCraftingAt + 1000 * s.default.secondsAdvantage;
+                    return B < D;
                 }
                 return !1;
             }, [
-                a.useCrafterCollectionAdvantage,
-                A,
-                a.itemFinishesCraftingAt,
-                a.itemCrafterCharacterId
-            ]),
-            C = Math.max(1, (() => {
-                const D = Math.max(a.itemDisposalAt - (0, o.GetServerGameTimeWithCompensation)(), 0),
-                    E = Math.ceil(D / 1000);
-                return isNaN(E) ? 0 : E;
+                x.useCrafterCollectionAdvantage,
+                B,
+                x.itemFinishesCraftingAt,
+                x.itemCrafterCharacterId
+            ]), D = Math.max(1, (() => {
+                const E = Math.max(x.itemDisposalAt - (0, o.GetServerGameTimeWithCompensation)(), 0), F = Math.ceil(E / 1000);
+                return isNaN(F) ? 0 : F;
             })());
         return (0, f.jsxs)(_x, {
             children: [
                 (0, f.jsx)(b(m), {
                     config: _z,
-                    active: y
+                    active: z
                 }),
                 (0, f.jsx)(h.default, {
                     block: !0,
                     type: 'success',
-                    disabled: B,
-                    style: {
-                        width: '80%'
-                    },
+                    disabled: C,
+                    style: { width: '80%' },
                     onClick: () => {
-                        a.collect(), a.close();
+                        x.collect(), x.close();
                     },
                     ariaLabel: 'Collect',
                     children: (0, f.jsx)('span', {
-                        style: {
-                            textTransform: 'uppercase'
-                        },
+                        style: { textTransform: 'uppercase' },
                         children: 'Collect'
                     })
                 }),
-                a.itemDisposalMs ? (0, f.jsxs)(_y, {
+                x.itemDisposalMs ? (0, f.jsxs)(_y, {
                     children: [
                         'Goes bad in ',
-                        C,
+                        D,
                         ' ',
-                        (0, l.plural)('second', C)
+                        (0, l.plural)('second', D)
                     ]
                 }) : null
             ]
@@ -302,98 +232,79 @@ c.register('q/kb5', function(d, e) {
     });
     const _x = (0, i.default)(n.motion.div).attrs({
             className: 'maxWidth flex-center flex-column',
-            initial: {
-                opacity: 0
-            },
-            animate: {
-                opacity: 1
-            },
-            exit: {
-                opacity: 0
-            },
-            transition: {
-                duration: 0.25
-            }
+            initial: { opacity: 0 },
+            animate: { opacity: 1 },
+            exit: { opacity: 0 },
+            transition: { duration: 0.25 }
         })(t || (t = v`
   margin-top: 25px;
-`)),
-        _y = i.default.div(u || (u = v`
+`)), _y = i.default.div(u || (u = v`
   margin-top: 10px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   font-family: ${ 0 };
   font-weight: ${ 0 };
   text-transform: none;
-`), j.Fonts.ProductSans, j.FontWeights.Bold),
-        _z = {
+`), j.Fonts.ProductSans, j.FontWeights.Bold), _z = {
             angle: 90,
             spread: 55,
             elementCount: 50,
             startVelocity: 30,
             decay: 0.95
         };
-}), c.register('9rEO42', function(d, e) {
-    Object.defineProperty(d.exports, '__esModule', {
-        value: !0
-    });
-    var f, g = function() {
+}), c.register('.....', function (d, e) {
+    Object.defineProperty(d.exports, '__esModule', { value: !0 });
+    var f, g = function () {
             function h(i, j) {
                 for (var k = 0; k < j.length; k++) {
                     var l = j[k];
                     l.enumerable = l.enumerable || !1, l.configurable = !0, 'value' in l && (l.writable = !0), Object.defineProperty(i, l.key, l);
                 }
             }
-            return function(i, j, k) {
-                return j && h(i.prototype, j), k && h(i, k), i;
+            return function (k, l, m) {
+                return l && h(k.prototype, l), m && h(k, m), k;
             };
-        }(),
-        h = c('O0Kav'),
-        i = (f = h) && f.__esModule ? f : {
-            default: f
-        },
-        j = c('izSQB0');
-    var k = {
-            position: 'relative'
-        },
-        l = function(m) {
+        }(), h = c('.....'), i = (f = h) && f.__esModule ? f : { default: f }, j = c('.....');
+    var k = { position: 'relative' }, l = function (m) {
             function n(o) {
-                ! function(p, q) {
+                !function (p, q) {
                     if (!(p instanceof q))
                         throw new TypeError('Cannot call a class as a function');
                 }(this, n);
-                var p = function(q, r) {
+                var p = function (q, r) {
                     if (!q)
                         throw new ReferenceError('this hasn\'t been initialised - super() hasn\'t been called');
                     return !r || 'object' != typeof r && 'function' != typeof r ? q : r;
                 }(this, (n.__proto__ || Object.getPrototypeOf(n)).call(this, o));
                 return p.setRef = p.setRef.bind(p), p;
             }
-            return function(o, p) {
-                if ('function' != typeof p && null !== p)
-                    throw new TypeError('Super expression must either be null or a function, not ' + typeof p);
-                o.prototype = Object.create(p && p.prototype, {
+            return function (p, q) {
+                if ('function' != typeof q && null !== q)
+                    throw new TypeError('Super expression must either be null or a function, not ' + typeof q);
+                p.prototype = Object.create(q && q.prototype, {
                     constructor: {
-                        value: o,
+                        value: p,
                         enumerable: !1,
                         writable: !0,
                         configurable: !0
                     }
-                }), p && (Object.setPrototypeOf ? Object.setPrototypeOf(o, p) : o.__proto__ = p);
-            }(n, m), g(n, [{
+                }), q && (Object.setPrototypeOf ? Object.setPrototypeOf(p, q) : p.__proto__ = q);
+            }(n, m), g(n, [
+                {
                     key: 'componentWillReceiveProps',
-                    value: function(o) {
-                        o.active && !this.props.active && (0, j.confetti)(this.container, o.config);
+                    value: function (p) {
+                        p.active && !this.props.active && (0, j.confetti)(this.container, p.config);
                     }
                 },
                 {
                     key: 'setRef',
-                    value: function(o) {
-                        this.container = o;
+                    value: function (p) {
+                        this.container = p;
                     }
                 },
                 {
                     key: 'render',
-                    value: function() {
+                    value: function () {
                         return i.default.createElement('div', {
                             className: this.props.className,
                             style: k,
@@ -404,83 +315,56 @@ c.register('q/kb5', function(d, e) {
             ]), n;
         }(h.Component);
     d.exports.default = l;
-}), c.register('izSQB0', function(d, e) {
-    Object.defineProperty(d.exports, '__esModule', {
-        value: !0
-    }), d.exports.confetti = function(f) {
-        var g = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-            h = Object.assign({}, _m, g),
-            i = h.elementCount,
-            j = h.colors,
-            k = h.width,
-            l = h.height,
-            m = h.angle,
-            n = h.spread,
-            o = h.startVelocity,
-            p = h.decay,
-            q = h.duration,
-            r = h.random,
-            s = c(f, i, j, k, l),
-            t = s.map(function(u) {
+}), c.register('.....', function (d, e) {
+    Object.defineProperty(d.exports, '__esModule', { value: !0 }), d.exports.confetti = function (f) {
+        var g = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, h = Object.assign({}, _m, g), i = h.elementCount, j = h.colors, k = h.width, l = h.height, m = h.angle, n = h.spread, o = h.startVelocity, p = h.decay, q = h.duration, r = h.random, s = c(f, i, j, k, l), t = s.map(function (u) {
                 return {
                     element: u,
-                    physics: _j(m, n, o, r)
+                    physics: _g(m, n, o, r)
                 };
             });
-        return _k(f, t, p, q);
+        return _l(f, t, p, q);
     };
-
-    function f(g, h, i, _j, _k) {
-        return Array.from({
-            length: h
-        }).map(function(l, _m) {
-            var n = document.createElement('div'),
-                o = i[_m % i.length];
-            return n.style['background-color'] = o, n.style.width = _j, n.style.height = _k, n.style.position = 'absolute', n.style.willChange = 'transform, opacity', g.appendChild(n), n;
+    function f(g, h, i, j, k) {
+        return Array.from({ length: h }).map(function (l, m) {
+            var n = document.createElement('div'), o = i[m % i.length];
+            return n.style['background-color'] = o, n.style.width = j, n.style.height = k, n.style.position = 'absolute', n.style.willChange = 'transform, opacity', g.appendChild(n), n;
         });
     }
-
-    function g(h, i, j, k) {
-        var l = h * (Math.PI / 180),
-            m = i * (Math.PI / 180);
+    function _g(h, i, j, k) {
+        var _l = h * (Math.PI / 180), _m = i * (Math.PI / 180);
         return {
             x: 0,
             y: 0,
             wobble: 10 * k(),
             wobbleSpeed: 0.1 + 0.1 * k(),
             velocity: 0.5 * j + k() * j,
-            angle2D: -l + (0.5 * m - k() * m),
+            angle2D: -_l + (0.5 * _m - k() * _m),
             angle3D: -Math.PI / 4 + k() * (Math.PI / 2),
             tiltAngle: k() * Math.PI,
             tiltAngleSpeed: 0.1 + 0.3 * k()
         };
     }
-
-    function h(i, j, k, l) {
-        var m = void 0;
-        return new Promise(function(n) {
-            requestAnimationFrame(function _x(o) {
-                m || (m = o);
-                var p = m === o ? 0 : (o - m) / l;
-                j.forEach(function(q) {
-                    return function(r, s, t) {
-                        r.physics.x += Math.cos(r.physics.angle2D) * r.physics.velocity, r.physics.y += Math.sin(r.physics.angle2D) * r.physics.velocity, r.physics.z += Math.sin(r.physics.angle3D) * r.physics.velocity, r.physics.wobble += r.physics.wobbleSpeed, r.physics.velocity *= t, r.physics.y += 3, r.physics.tiltAngle += r.physics.tiltAngleSpeed;
-                        var u = r.physics,
-                            v = u.x,
-                            w = u.y,
-                            _x = u.tiltAngle,
-                            y = u.wobble,
-                            z = 'translate3d(' + (v + 10 * Math.cos(y)) + 'px, ' + (w + 10 * Math.sin(y)) + 'px, 0) rotate3d(1, 1, 1, ' + _x + 'rad)';
-                        r.element.style.transform = z, r.element.style.opacity = 1 - s;
-                    }(q, p, k);
-                }), o - m < l ? requestAnimationFrame(_h) : (j.forEach(function(q) {
-                    if (q.element.parentNode === i)
-                        return i.removeChild(q.element);
-                }), n());
+    function j(k, l, m, n) {
+        var o = void 0;
+        return new Promise(function (p) {
+            requestAnimationFrame(function s(q) {
+                j || (j = q);
+                var r = j === q ? 0 : (q - j) / n;
+                l.forEach(function (s) {
+                    return function (t, u, v) {
+                        t.physics.x += Math.cos(t.physics.angle2D) * t.physics.velocity, t.physics.y += Math.sin(t.physics.angle2D) * t.physics.velocity, t.physics.z += Math.sin(t.physics.angle3D) * t.physics.velocity, t.physics.wobble += t.physics.wobbleSpeed, t.physics.velocity *= v, t.physics.y += 3, t.physics.tiltAngle += t.physics.tiltAngleSpeed;
+                        var w = t.physics, x = w.x, y = w.y, z = w.tiltAngle, A = w.wobble, B = 'translate3d(' + (x + 10 * Math.cos(A)) + 'px, ' + (y + 10 * Math.sin(A)) + 'px, 0) rotate3d(1, 1, 1, ' + z + 'rad)';
+                        t.element.style.transform = B, t.element.style.opacity = 1 - u;
+                    }(s, r, m);
+                }), q - j < n ? requestAnimationFrame(s) : (l.forEach(function (s) {
+                    if (s.element.parentNode === k)
+                        return k.removeChild(s.element);
+                }), p());
             });
         });
     }
-    var i = {
+    var l = {
         angle: 90,
         decay: 0.9,
         spread: 45,
@@ -498,55 +382,36 @@ c.register('q/kb5', function(d, e) {
         duration: 3000,
         random: Math.random
     };
-}), c.register('Ds56g', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _q;
     });
-    var f = c('gRbUn'),
-        g = c('eyhCL'),
-        _h = c('9aZ6t'),
-        i = c('O0Kav'),
-        j = c('/4RRY'),
-        k = c('u4s09'),
-        l = c('quE27'),
-        m = c('w+fxX');
-    let n, o, p = a => a;
-    var _q = a => {
-        const [, r] = i.useReducer(a => a + 1, 0);
-        (0, j.useIntervalWhen)(r, 33);
-        const s = Math.max(a.itemFinishesCraftingAt - (0, m.GetServerGameTimeWithCompensation)(), 0),
-            t = Math.max(100 - s / a.craftingDurationMs * 100, 0);
-        if (isNaN(s))
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....');
+    let n, o, p = q => q;
+    var _q = r => {
+        const [, s] = i.useReducer(t => t + 1, 0);
+        (0, j.useIntervalWhen)(s, 33);
+        const t = Math.max(r.itemFinishesCraftingAt - (0, m.GetServerGameTimeWithCompensation)(), 0), u = Math.max(100 - t / r.craftingDurationMs * 100, 0);
+        if (isNaN(t))
             return null;
-        const u = Math.max(1, Math.ceil(s / 1000)),
-            v = `Ready in ${ u } ${ (0, l.plural)('second', u) }`;
-        return isNaN(t) ? null : (0, f.jsxs)(_r, {
+        const v = Math.max(1, Math.ceil(t / 1000)), w = `Ready in ${ v } ${ (0, l.plural)('second', v) }`;
+        return isNaN(u) ? null : (0, f.jsxs)(_r, {
             children: [
                 (0, f.jsx)(g.default, {
-                    percent: t,
+                    percent: u,
                     showInfo: !1,
                     status: 'active'
                 }),
-                (0, f.jsx)(_s, {
-                    children: v
-                })
+                (0, f.jsx)(_s, { children: w })
             ]
         });
     };
-    const _r = (0, k.default)(_h.motion.div).attrs({
+    const _r = (0, k.default)(h.motion.div).attrs({
             className: 'maxWidth',
-            initial: {
-                opacity: 0
-            },
-            animate: {
-                opacity: 1
-            },
-            exit: {
-                opacity: 0
-            },
-            transition: {
-                duration: 0.15
-            }
+            initial: { opacity: 0 },
+            animate: { opacity: 1 },
+            exit: { opacity: 0 },
+            transition: { duration: 0.15 }
         })(n || (n = p`
   background: rgba(255, 255, 255, 0.1);
   padding: 40px 30px;
@@ -557,74 +422,63 @@ c.register('q/kb5', function(d, e) {
     height: 22px !important;
     transition: all 0.05s cubic-bezier(0.78, 0.14, 0.15, 0.86) !important;
   }
-`)),
-        _s = k.default.div(o || (o = p`
+`)), _s = k.default.div(o || (o = p`
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   line-height: 1;
 `));
-}), c.register('45kGo0', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _i;
     });
-    var f = c('Q6LQJ'),
-        g = c('FqwHz0');
-    const h = a => a === g.CraftingTableStyle.plant ? 'plant' : a === g.CraftingTableStyle.craft ? 'craft' : 'purchase';
+    var f = c('.....'), g = c('.....');
+    const h = i => i === g.CraftingTableStyle.plant ? 'plant' : i === g.CraftingTableStyle.craft ? 'craft' : 'purchase';
     var _i = {
-        noItems: a => `No items currently available to ${ h(a) }.`,
-        selectItem: a => `Select an item to ${ h(a) }...`,
-        availableToCraft: a => `Available To ${ (0, f.CapitalizeFirstLetter)(h(a)) }`,
-        instantNote: a => a === g.CraftingTableStyle.store ? 'Available immediately' : a === g.CraftingTableStyle.plant ? 'Grows instantly' : 'Crafts instantly',
-        durationNote: a => d => d === g.CraftingTableStyle.store ? `Takes ${ a } to prepare` : d === g.CraftingTableStyle.plant ? `Takes ${ a } to grow` : `Takes ${ a } to craft`,
-        expireVerb: a => a === g.CraftingTableStyle.plant ? 'goes bad' : 'expires',
-        resource: a => a === g.CraftingTableStyle.store ? 'resource' : 'ingredient',
-        preparing: a => a === g.CraftingTableStyle.store ? 'preparing' : a === g.CraftingTableStyle.plant ? 'growing' : 'crafting',
+        noItems: j => `No items currently available to ${ h(j) }.`,
+        selectItem: j => `Select an item to ${ h(j) }...`,
+        availableToCraft: j => `Available To ${ (0, f.CapitalizeFirstLetter)(h(j)) }`,
+        instantNote: j => j === g.CraftingTableStyle.store ? 'Available immediately' : j === g.CraftingTableStyle.plant ? 'Grows instantly' : 'Crafts instantly',
+        durationNote: j => k => k === g.CraftingTableStyle.store ? `Takes ${ j } to prepare` : k === g.CraftingTableStyle.plant ? `Takes ${ j } to grow` : `Takes ${ j } to craft`,
+        expireVerb: j => j === g.CraftingTableStyle.plant ? 'goes bad' : 'expires',
+        resource: j => j === g.CraftingTableStyle.store ? 'resource' : 'ingredient',
+        preparing: j => j === g.CraftingTableStyle.store ? 'preparing' : j === g.CraftingTableStyle.plant ? 'growing' : 'crafting',
         baseVerb: h
     };
-}), c.register('FqwHz0', function(d, e) {
+}), c.register('.....', function (d, e) {
     let f;
     var g;
-    a(d.exports, 'CraftingTableStyle', function() {
+    a(d.exports, 'CraftingTableStyle', function () {
         return f;
     }), (g = f || (f = {})).plant = 'plant', g.craft = 'craft', g.store = 'store';
-}), c.register('g+A0Z', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _p;
     });
-    var f = c('gRbUn'),
-        g = c('NU2gN');
-    c('O0Kav');
-    var h = c('cgeyf0'),
-        i = c('13vzf'),
-        j = c('Hjbso'),
-        k = c('l695x'),
-        l = c('c5aSn'),
-        m = c('9aZ6t'),
-        n = c('u4s09');
+    var f = c('.....'), g = c('.....');
+    c('.....');
+    var h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....');
     let o;
-    var _p = (0, g.observer)(a => {
-        const q = (0, h.default)(a.selectedRecipeId);
-        return q ? (0, f.jsxs)(f.Fragment, {
+    var _p = (0, g.observer)(q => {
+        const r = (0, h.default)(q.selectedRecipeId);
+        return r ? (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, f.jsx)(l.default, {
-                    recipe: q
-                }),
+                (0, f.jsx)(l.default, { recipe: r }),
                 (0, f.jsxs)(_q, {
                     children: [
                         (0, f.jsx)(i.default, {
-                            craft: a.craft,
-                            recipe: q,
-                            goBack: a.backToRecipeSelectionScreen,
-                            style: a.style
+                            craft: q.craft,
+                            recipe: r,
+                            goBack: q.backToRecipeSelectionScreen,
+                            style: q.style
                         }),
                         (0, f.jsx)(j.default, {
-                            recipe: q,
-                            style: a.style
+                            recipe: r,
+                            style: q.style
                         }),
                         (0, f.jsx)(k.default, {
-                            recipe: q,
-                            style: a.style
+                            recipe: r,
+                            style: q.style
                         })
                     ]
                 })
@@ -633,89 +487,69 @@ c.register('q/kb5', function(d, e) {
     });
     const _q = (0, n.default)(m.motion.div).attrs({
         className: 'maxWidth flex-column flex-center',
-        initial: {
-            opacity: 0
-        },
-        animate: {
-            opacity: 1
-        }
-    })(o || (o = (a => a)``));
-}), c.register('cgeyf0', function(d, e) {
-    a(d.exports, 'default', function() {
+        initial: { opacity: 0 },
+        animate: { opacity: 1 }
+    })(o || (o = (r => r)``));
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _g;
     });
-    var f = c('fI6of');
-    var _g = a => {
-        const h = f.default.world.devices.devices.get(a);
-        if (!h)
+    var f = c('.....');
+    var _g = h => {
+        const i = f.default.world.devices.devices.get(h);
+        if (!i)
             return null;
-        const i = h.options,
-            j = new Map(),
-            k = a => i.numberOfIngredients >= a,
-            l = (a, h) => {
-                const m = j.get(a);
-                m ? m.amount += h : j.set(a, {
-                    item: a,
-                    amount: h
+        const j = i.options, k = new Map(), l = m => j.numberOfIngredients >= m, m = (n, o) => {
+                const p = k.get(n);
+                p ? p.amount += o : k.set(n, {
+                    item: n,
+                    amount: o
                 });
             };
-        k(1) && l(i.ingredient1Item, i.ingredient1Amount), k(2) && l(i.ingredient2Item, i.ingredient2Amount), k(3) && l(i.ingredient3Item, i.ingredient3Amount), k(4) && l(i.ingredient4Item, i.ingredient4Amount), k(5) && l(i.ingredient5Item, i.ingredient5Amount);
+        l(1) && m(j.ingredient1Item, j.ingredient1Amount), l(2) && m(j.ingredient2Item, j.ingredient2Amount), l(3) && m(j.ingredient3Item, j.ingredient3Amount), l(4) && m(j.ingredient4Item, j.ingredient4Amount), l(5) && m(j.ingredient5Item, j.ingredient5Amount);
         return {
-            id: a,
-            itemId: i.item,
-            itemAmount: i.itemAmount,
-            ingredients: Array.from(j.values()),
-            timeToCraftMs: i.timeToCraftMs,
-            timeToDisposeMs: i.itemDisposes ? i.disposeItemAfterMs : 0
+            id: h,
+            itemId: j.item,
+            itemAmount: j.itemAmount,
+            ingredients: Array.from(k.values()),
+            timeToCraftMs: j.timeToCraftMs,
+            timeToDisposeMs: j.itemDisposes ? j.disposeItemAfterMs : 0
         };
     };
-}), c.register('13vzf', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _q;
     });
-    var f = c('gRbUn'),
-        g = c('6jmvl');
-    c('O0Kav');
-    var h = c('u4s09'),
-        i = c('Eh2Wh'),
-        j = c('aPZ+w'),
-        k = c('917Ra'),
-        l = c('Q6LQJ'),
-        m = c('45kGo0');
-    let n, o, p = a => a;
-    var _q = (0, g.observer)(a => (0, f.jsxs)(_r, {
+    var f = c('.....'), g = c('.....');
+    c('.....');
+    var h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....');
+    let n, o, p = q => q;
+    var _q = (0, g.observer)(r => (0, f.jsxs)(_r, {
         children: [
             (0, f.jsx)(j.default, {
                 type: 'success',
                 size: 'small',
-                style: {
-                    width: '75%'
-                },
+                style: { width: '75%' },
                 block: !0,
-                disabled: !(0, k.default)(a.recipe),
+                disabled: !(0, k.default)(r.recipe),
                 onClick: () => {
-                    a.craft(a.recipe.id);
+                    r.craft(r.recipe.id);
                 },
-                ariaLabel: (0, l.CapitalizeFirstLetter)(m.default.baseVerb(a.style)),
+                ariaLabel: (0, l.CapitalizeFirstLetter)(m.default.baseVerb(r.style)),
                 children: (0, f.jsx)('span', {
-                    style: {
-                        textTransform: 'uppercase'
-                    },
-                    children: (0, l.CapitalizeFirstLetter)(m.default.baseVerb(a.style))
+                    style: { textTransform: 'uppercase' },
+                    children: (0, l.CapitalizeFirstLetter)(m.default.baseVerb(r.style))
                 })
             }),
             (0, f.jsx)(_s, {
-                onClick: a.goBack,
+                onClick: r.goBack,
                 children: '...or go back'
             })
         ]
     }));
-    const _r = h.default.div.attrs({
-            className: 'maxWidth flex-center flex-column'
-        })(n || (n = p`
+    const _r = h.default.div.attrs({ className: 'maxWidth flex-center flex-column' })(n || (n = p`
   margin-top: 15px;
-`)),
-        _s = h.default.div(o || (o = p`
+`)), _s = h.default.div(o || (o = p`
   font-size: 13px;
   color: rgba(255, 255, 255, 0.8);
   margin-top: 6px;
@@ -729,35 +563,31 @@ c.register('q/kb5', function(d, e) {
     color: rgba(255, 255, 255, 1);
   }
 `), i.FontWeights.Bold, i.Fonts.ProductSans);
-}), c.register('917Ra', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _g;
     });
-    var f = c('fI6of');
-    var _g = a => !a.ingredients.find(a => {
-        if (!a.item)
+    var f = c('.....');
+    var _g = h => !h.ingredients.find(i => {
+        if (!i.item)
             return !1;
-        const h = f.default.me.inventory.slots.get(a.item);
-        return !h || h.amount < a.amount;
+        const j = f.default.me.inventory.slots.get(i.item);
+        return !j || j.amount < i.amount;
     });
-}), c.register('Hjbso', function(d, e) {
-    a(d.exports, 'Container', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'Container', function () {
         return _p;
-    }), a(d.exports, 'Label', function() {
+    }), a(d.exports, 'Label', function () {
         return _q;
-    }), a(d.exports, 'default', function() {
+    }), a(d.exports, 'default', function () {
         return _o;
     });
-    var f = c('gRbUn');
-    c('O0Kav');
-    var g = c('u4s09'),
-        h = c('BbSze'),
-        i = c('Q6LQJ'),
-        j = c('45kGo0'),
-        k = c('quE27');
-    let l, m, n = a => a;
-    var _o = a => {
-        const p = a.recipe.ingredients.filter(a => a.item && a.amount);
+    var f = c('.....');
+    c('.....');
+    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    let l, m, n = o => o;
+    var _o = p => {
+        const q = p.recipe.ingredients.filter(r => r.item && r.amount);
         return (0, f.jsx)(f.Fragment, {
             children: (0, f.jsxs)(_p, {
                 children: [
@@ -765,73 +595,55 @@ c.register('q/kb5', function(d, e) {
                         children: [
                             'Required',
                             ' ',
-                            (0, k.plural)((0, i.CapitalizeFirstLetter)(j.default.resource(a.style)), p.length)
+                            (0, k.plural)((0, i.CapitalizeFirstLetter)(j.default.resource(p.style)), q.length)
                         ]
                     }),
-                    p.map((a, p) => (0, f.jsx)(h.default, {
-                        itemId: a.item,
-                        requiredAmount: a.amount
-                    }, `ingredient-${ a.item }-${ p }`))
+                    q.map((r, s) => (0, f.jsx)(h.default, {
+                        itemId: r.item,
+                        requiredAmount: r.amount
+                    }, `ingredient-${ r.item }-${ s }`))
                 ]
             })
         });
     };
-    const _p = g.default.div.attrs({
-            className: 'maxWidth'
-        })(l || (l = n`
+    const _p = g.default.div.attrs({ className: 'maxWidth' })(l || (l = n`
   margin-top: 30px;
-`)),
-        _q = g.default.div(m || (m = n`
+`)), _q = g.default.div(m || (m = n`
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   margin-bottom: 8px;
 `));
-}), c.register('BbSze', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _p;
     });
-    var f = c('gRbUn'),
-        g = c('6jmvl');
-    c('O0Kav');
-    var h = c('u4s09'),
-        i = c('quE27'),
-        j = c('G0Kso'),
-        k = c('K/2xB'),
-        l = c('256sH');
-    let m, n, o = a => a;
-    var _p = (0, g.observer)(a => {
-        var q, r;
+    var f = c('.....'), g = c('.....');
+    c('.....');
+    var h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    let m, n, o = p => p;
+    var _p = (0, g.observer)(q => {
+        var r, s;
         const {
-            me: {
-                inventory: s
-            }
-        } = (0, k.default)(), {
-            itemId: t,
-            requiredAmount: u
-        } = a;
-        let v = !0;
-        const w = (null === (q = s.slots.get(t)) || void 0 === q ? void 0 : q.amount) || 0;
-        let x = (0, j.ItemName)(t);
-        return w >= u ? x += ` (${ (0, i.numberWithCommas)(u) })` : (v = !1, x += ` (${ (0, i.numberWithCommas)(w) }/${ (0, i.numberWithCommas)(u) })`), (0, f.jsxs)(_q, {
-            style: {
-                background: v ? 'rgba(255,255,255, 0.1)' : 'rgba(198, 40, 40, 0.5)'
-            },
+                me: {inventory: t}
+            } = (0, k.default)(), {
+                itemId: u,
+                requiredAmount: v
+            } = q;
+        let w = !0;
+        const x = (null === (r = t.slots.get(u)) || void 0 === r ? void 0 : r.amount) || 0;
+        let y = (0, j.ItemName)(u);
+        return x >= v ? y += ` (${ (0, i.numberWithCommas)(v) })` : (w = !1, y += ` (${ (0, i.numberWithCommas)(x) }/${ (0, i.numberWithCommas)(v) })`), (0, f.jsxs)(_q, {
+            style: { background: w ? 'rgba(255,255,255, 0.1)' : 'rgba(198, 40, 40, 0.5)' },
             children: [
                 (0, f.jsx)('img', {
-                    src: null === (r = (0, l.default)(t)) || void 0 === r ? void 0 : r.previewImage,
-                    style: {
-                        height: 35
-                    }
+                    src: null === (s = (0, l.default)(u)) || void 0 === s ? void 0 : s.previewImage,
+                    style: { height: 35 }
                 }),
-                (0, f.jsx)(_r, {
-                    children: x
-                })
+                (0, f.jsx)(_r, { children: y })
             ]
         });
     });
-    const _q = h.default.div.attrs({
-            className: 'flex vc'
-        })(m || (m = o`
+    const _q = h.default.div.attrs({ className: 'flex vc' })(m || (m = o`
   margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.1);
   padding: 10px;
@@ -839,64 +651,46 @@ c.register('q/kb5', function(d, e) {
   &:last-of-type {
     margin-bottom: 0px;
   }
-`)),
-        _r = h.default.div(n || (n = o`
+`)), _r = h.default.div(n || (n = o`
   line-height: 1;
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
 `));
-}), c.register('l695x', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _p;
     });
-    var f = c('gRbUn'),
-        g = c('O0Kav'),
-        h = c('u4s09'),
-        i = c('quE27'),
-        j = c('Hjbso'),
-        k = c('45kGo0'),
-        l = c('Q6LQJ');
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
     let m;
-    const n = a => {
-            const o = a / 60;
-            return o >= 1 && a % 60 == 0 ? `${ o } ${ (0, i.plural)('minute', o) }` : `${ a } ${ (0, i.plural)('second', a) }`;
-        },
-        o = a => (0, f.jsx)(_q, {
-            children: a.children
-        });
-    var _p = a => {
+    const n = o => {
+            const p = o / 60;
+            return p >= 1 && o % 60 == 0 ? `${ p } ${ (0, i.plural)('minute', p) }` : `${ o } ${ (0, i.plural)('second', o) }`;
+        }, o = p => (0, f.jsx)(_q, { children: p.children });
+    var _p = q => {
         const {
-            recipe: q,
-            style: r
-        } = a, s = g.useMemo(() => {
-            if (0 === q.timeToCraftMs)
-                return k.default.instantNote(r);
-            const t = Math.floor(q.timeToCraftMs / 1000);
-            return k.default.durationNote(n(t))(r);
-        }, [q.timeToCraftMs]), t = g.useMemo(() => {
-            if (0 === q.timeToDisposeMs)
-                return `Never ${ k.default.expireVerb(r) }`;
-            const u = Math.floor(q.timeToDisposeMs / 1000);
-            return `${ (0, l.CapitalizeFirstLetter)(k.default.expireVerb(r)) } after ${ n(u) }`;
-        }, [q.timeToDisposeMs]);
+                recipe: r,
+                style: s
+            } = q, t = g.useMemo(() => {
+                if (0 === r.timeToCraftMs)
+                    return k.default.instantNote(s);
+                const u = Math.floor(r.timeToCraftMs / 1000);
+                return k.default.durationNote(n(u))(s);
+            }, [r.timeToCraftMs]), u = g.useMemo(() => {
+                if (0 === r.timeToDisposeMs)
+                    return `Never ${ k.default.expireVerb(s) }`;
+                const v = Math.floor(r.timeToDisposeMs / 1000);
+                return `${ (0, l.CapitalizeFirstLetter)(k.default.expireVerb(s)) } after ${ n(v) }`;
+            }, [r.timeToDisposeMs]);
         return (0, f.jsxs)(j.Container, {
             children: [
-                (0, f.jsx)(j.Label, {
-                    children: 'Notes'
-                }),
-                (0, f.jsx)(o, {
-                    children: s
-                }),
-                (0, f.jsx)(o, {
-                    children: t
-                })
+                (0, f.jsx)(j.Label, { children: 'Notes' }),
+                (0, f.jsx)(o, { children: t }),
+                (0, f.jsx)(o, { children: u })
             ]
         });
     };
-    const _q = h.default.div.attrs({
-        className: 'flex vc'
-    })(m || (m = (a => a)`
+    const _q = h.default.div.attrs({ className: 'flex vc' })(m || (m = (r => r)`
   margin-bottom: 8px;
   background: rgba(255, 255, 255, 0.1);
   padding: 15px;
@@ -908,162 +702,117 @@ c.register('q/kb5', function(d, e) {
     margin-bottom: 0px;
   }
 `));
-}), c.register('c5aSn', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _m;
     });
-    var f = c('gRbUn');
-    c('O0Kav');
-    var g = c('u4s09'),
-        h = c('256sH'),
-        i = c('OB2Ky0');
-    let j, k, l = a => a;
-    var _m = a => {
-        const {
-            recipe: n
-        } = a;
+    var f = c('.....');
+    c('.....');
+    var g = c('.....'), h = c('.....'), i = c('.....');
+    let j, k, l = m => m;
+    var _m = n => {
+        const {recipe: o} = n;
         return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, f.jsx)(_n, {
-                    src: (0, h.default)(n.itemId).previewImage
-                }),
-                (0, f.jsx)(_o, {
-                    children: (0, i.default)(a.recipe.itemId, a.recipe.itemAmount)
-                })
+                (0, f.jsx)(_n, { src: (0, h.default)(o.itemId).previewImage }),
+                (0, f.jsx)(_o, { children: (0, i.default)(n.recipe.itemId, n.recipe.itemAmount) })
             ]
         });
     };
     const _n = g.default.img(j || (j = l`
   height: 82px;
-`)),
-        _o = g.default.div(k || (k = l`
+`)), _o = g.default.div(k || (k = l`
   text-transform: uppercase;
   font-size: 26px;
   line-height: 1;
   margin-top: 10px;
 `));
-}), c.register('dqGfi', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _q;
     });
-    var f = c('gRbUn'),
-        g = c('6jmvl');
-    c('O0Kav');
-    var h = c('u4s09'),
-        i = c('Eh2Wh'),
-        j = c('xRoGr'),
-        k = c('RhdCO'),
-        l = c('9aZ6t'),
-        m = c('45kGo0');
-    let n, o, p = a => a;
-    var _q = (0, g.observer)(a => {
-        const r = (0, j.default)(a.group);
-        return r.length ? (0, f.jsxs)(_r, {
+    var f = c('.....'), g = c('.....');
+    c('.....');
+    var h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....');
+    let n, o, p = q => q;
+    var _q = (0, g.observer)(r => {
+        const s = (0, j.default)(r.group);
+        return s.length ? (0, f.jsxs)(_r, {
             children: [
-                (0, f.jsx)(_s, {
-                    children: m.default.selectItem(a.style)
-                }),
-                r.map(r => (0, f.jsx)(k.default, {
-                    recipeId: r,
-                    style: a.style,
-                    onSelect: () => a.setToRecipePreviewScreen(r)
-                }, `recipe-${ r }`))
+                (0, f.jsx)(_s, { children: m.default.selectItem(r.style) }),
+                s.map(t => (0, f.jsx)(k.default, {
+                    recipeId: t,
+                    style: r.style,
+                    onSelect: () => r.setToRecipePreviewScreen(t)
+                }, `recipe-${ t }`))
             ]
         }) : (0, f.jsx)('div', {
             className: 'maxAll flex-center',
-            style: {
-                textAlign: 'center'
-            },
-            children: (0, f.jsx)(_s, {
-                children: m.default.noItems(a.style)
-            })
+            style: { textAlign: 'center' },
+            children: (0, f.jsx)(_s, { children: m.default.noItems(r.style) })
         });
     });
     const _r = (0, h.default)(l.motion.div).attrs({
             className: 'maxWidth flex-column flex-center',
-            initial: {
-                opacity: 0
-            },
-            animate: {
-                opacity: 1
-            }
-        })(n || (n = p``)),
-        _s = h.default.div(o || (o = p`
+            initial: { opacity: 0 },
+            animate: { opacity: 1 }
+        })(n || (n = p``)), _s = h.default.div(o || (o = p`
   font-family: ${ 0 };
   font-weight: ${ 0 };
   text-transform: none;
   margin-bottom: 15px;
   font-size: 22px;
 `), i.Fonts.ProductSans, i.FontWeights.Bold);
-}), c.register('xRoGr', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _h;
     });
-    var f = c('OFuf70'),
-        g = c('heTaO');
+    var f = c('.....'), g = c('.....');
     var _h = (i = '') => {
         const j = [];
-        return (0, g.default)().worldManager.devices.allDevices.filter(i => i.deviceOption.id === f.default.craftingRecipe).forEach(c => {
-            const k = c.options;
-            c.state.active && k.group === i && (i => {
-                if (!i.item || !i.itemAmount)
+        return (0, g.default)().worldManager.devices.allDevices.filter(k => k.deviceOption.id === f.default.craftingRecipe).forEach(k => {
+            const l = k.options;
+            k.state.active && l.group === i && (m => {
+                if (!m.item || !m.itemAmount)
                     return !1;
-                let l = !1;
-                for (let m = 1; m <= i.numberOfIngredients; m++)
-                    if (i[`ingredient${ m }Item`] && i[`ingredient${ m }Amount`]) {
-                        l = !0;
+                let n = !1;
+                for (let o = 1; o <= m.numberOfIngredients; o++)
+                    if (m[`ingredient${ o }Item`] && m[`ingredient${ o }Amount`]) {
+                        n = !0;
                         break;
                     }
-                return !!l;
-            })(c.options) && j.push({
-                id: c.id,
-                y: c.y
+                return !!n;
+            })(k.options) && j.push({
+                id: k.id,
+                y: k.y
             });
-        }), j.sort((i, j) => i.y - j.y).map(i => i.id);
+        }), j.sort((k, l) => k.y - l.y).map(k => k.id);
     };
-}), c.register('RhdCO', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _u;
     });
-    var f = c('gRbUn'),
-        g = c('9aZ6t'),
-        h = c('O0Kav'),
-        i = c('u4s09'),
-        j = c('256sH'),
-        k = c('917Ra'),
-        l = c('cgeyf0'),
-        m = c('OB2Ky0'),
-        n = c('45kGo0');
-    let o, p, q, r, s, t = a => a;
-    var _u = a => {
-        const v = (0, l.default)(a.recipeId),
-            w = h.useMemo(() => (0, j.default)(v.itemId).previewImage, [v.itemId]),
-            x = (0, k.default)(v);
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....');
+    let o, p, q, r, s, t = u => u;
+    var _u = v => {
+        const w = (0, l.default)(v.recipeId), x = h.useMemo(() => (0, j.default)(w.itemId).previewImage, [w.itemId]), y = (0, k.default)(w);
         return (0, f.jsxs)(_v, {
-            onClick: a.onSelect,
+            onClick: v.onSelect,
             children: [
-                (0, f.jsx)(_w, {
-                    src: w
-                }),
+                (0, f.jsx)(_w, { src: x }),
                 (0, f.jsxs)(_x, {
                     children: [
-                        (0, f.jsx)(_y, {
-                            children: (0, m.default)(v.itemId, v.itemAmount)
-                        }),
+                        (0, f.jsx)(_y, { children: (0, m.default)(w.itemId, w.itemAmount) }),
                         (0, f.jsx)(_z, {
-                            style: {
-                                color: x ? '#a5d6a7' : '#ef9a9a'
-                            },
-                            children: x ? n.default.availableToCraft(a.style) : 'Insufficient Resources'
+                            style: { color: y ? '#a5d6a7' : '#ef9a9a' },
+                            children: y ? n.default.availableToCraft(v.style) : 'Insufficient Resources'
                         })
                     ]
                 })
             ]
         });
     };
-    const _v = i.default.div.attrs({
-            className: 'maxWidth flex vc'
-        })(o || (o = t`
+    const _v = i.default.div.attrs({ className: 'maxWidth flex vc' })(o || (o = t`
   background: rgba(255, 255, 255, 0.1);
   padding: 25px 20px;
   border-radius: 6px;
@@ -1077,29 +826,23 @@ c.register('q/kb5', function(d, e) {
   &:hover {
     background: rgba(255, 255, 255, 0.15);
   }
-`)),
-        _w = i.default.img(p || (p = t`
+`)), _w = i.default.img(p || (p = t`
   height: 55px;
-`)),
-        _x = (0, i.default)(g.motion.div).attrs({
-            className: 'flex-column'
-        })(q || (q = t`
+`)), _x = (0, i.default)(g.motion.div).attrs({ className: 'flex-column' })(q || (q = t`
   margin-left: 15px;
   line-height: 1;
-`)),
-        _y = i.default.div(r || (r = t`
+`)), _y = i.default.div(r || (r = t`
   font-size: 20px;
-`)),
-        _z = i.default.div(s || (s = t`
+`)), _z = i.default.div(s || (s = t`
   color: #a5d6a7;
   font-size: 12px;
   margin-top: 6px;
   opacity: 0.8;
 `));
-}), c.register('3RzrV', function(d, e) {
-    a(d.exports, 'CraftingTableDeviceUIBackgroundColor', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'CraftingTableDeviceUIBackgroundColor', function () {
         return _g;
     });
-    var f = c('FqwHz0');
-    const _g = a => a === f.CraftingTableStyle.plant ? 'rgba(0,51,0,0.93)' : 'rgba(38,50,56,0.93)';
+    var f = c('.....');
+    const _g = h => h === f.CraftingTableStyle.plant ? 'rgba(0,51,0,0.93)' : 'rgba(38,50,56,0.93)';
 });

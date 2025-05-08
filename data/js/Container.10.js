@@ -1,7 +1,6 @@
 function a(b) {
     return b && b.__esModule ? b.default : b;
 }
-
 function b(c, d, e, f) {
     Object.defineProperty(c, d, {
         get: e,
@@ -11,582 +10,238 @@ function b(c, d, e, f) {
     });
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('lhOnW', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _y;
-    }, function(f) {
-        return _y = f;
+c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
+        return _q;
+    }, function (f) {
+        return _q = f;
     });
-    var f = c('OQRaD'),
-        g = c('SSYDU'),
-        h = c('/U36/'),
-        i = c('4BJF6'),
-        j = c('O0Kav'),
-        k = c('R2nG3'),
-        l = c('XDmwF'),
-        m = c('GCcXd'),
-        n = c('LbJH1'),
-        o = c('yRLYd'),
-        p = c('WQymh'),
-        q = c('IMlyw'),
-        r = c('f4E8p'),
-        s = function(t, u) {
-            var v = {};
-            for (var w in t)
-                Object.prototype.hasOwnProperty.call(t, w) && u.indexOf(w) < 0 && (v[w] = t[w]);
-            if (null != t && 'function' == typeof Object.getOwnPropertySymbols) {
-                var x = 0;
-                for (w = Object.getOwnPropertySymbols(t); x < w.length; x++)
-                    u.indexOf(w[x]) < 0 && Object.prototype.propertyIsEnumerable.call(t, w[x]) && (v[w[x]] = t[w[x]]);
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = function (p, q) {
+            var r = {};
+            for (var s in p)
+                Object.prototype.hasOwnProperty.call(p, s) && q.indexOf(s) < 0 && (r[s] = p[s]);
+            if (null != p && 'function' == typeof Object.getOwnPropertySymbols) {
+                var t = 0;
+                for (s = Object.getOwnPropertySymbols(p); t < s.length; t++)
+                    q.indexOf(s[t]) < 0 && Object.prototype.propertyIsEnumerable.call(p, s[t]) && (r[s[t]] = p[s[t]]);
             }
-            return v;
+            return r;
         };
-    const t = j.forwardRef((b, c) => {
-            const {
-                getPrefixCls: u,
-                direction: v
-            } = j.useContext(k.ConfigContext), w = j.useContext(m.default), [x, _y] = j.useState(!1), z = j.useRef(null);
-            j.useImperativeHandle(c, () => z.current);
-            const {
-                className: A,
-                rootClassName: B,
-                size: C,
-                disabled: D,
-                prefixCls: E,
-                addonBefore: F,
-                addonAfter: G,
-                prefix: H,
-                bordered: I = !0,
-                readOnly: J,
-                status: K,
-                controls: L
-            } = b, M = s(b, [
-                'className',
-                'rootClassName',
+    const p = i.forwardRef((q, r) => {
+        var {
+                prefixCls: s,
+                size: t,
+                disabled: u,
+                loading: v,
+                className: w,
+                rootClassName: x
+            } = q, y = o(q, [
+                'prefixCls',
                 'size',
                 'disabled',
-                'prefixCls',
-                'addonBefore',
-                'addonAfter',
-                'prefix',
-                'bordered',
-                'readOnly',
-                'status',
-                'controls'
-            ]), N = u('input-number', E), [O, P] = (0, r.default)(N), {
-                compactSize: Q,
-                compactItemClassnames: R
-            } = (0, o.useCompactItemContext)(N, v);
-            let S = j.createElement(g.default, {
-                    className: `${ N }-handler-up-inner`
-                }),
-                T = j.createElement(f.default, {
-                    className: `${ N }-handler-down-inner`
-                });
-            const U = 'boolean' == typeof L ? L : void 0;
-            'object' == typeof L && (S = void 0 === L.upIcon ? S : j.createElement('span', {
-                className: `${ N }-handler-up-inner`
-            }, L.upIcon), T = void 0 === L.downIcon ? T : j.createElement('span', {
-                className: `${ N }-handler-down-inner`
-            }, L.downIcon));
-            const {
-                hasFeedback: V,
-                status: W,
-                isFormItemInput: X,
-                feedbackIcon: Y
-            } = j.useContext(n.FormItemInputContext), Z = (0, q.getMergedStatus)(W, K), $ = Q || C || w, ab = null != H || V, bb = !(!F && !G), cb = j.useContext(l.default), db = null != D ? D : cb, eb = a(h)({
-                [`${ N }-lg`]: 'large' === $,
-                [`${ N }-sm`]: 'small' === $,
-                [`${ N }-rtl`]: 'rtl' === v,
-                [`${ N }-borderless`]: !I,
-                [`${ N }-in-form-item`]: X
-            }, (0, q.getStatusClassNames)(N, Z), R, P, A, !ab && !bb && B);
-            let fb = j.createElement(i.default, Object.assign({
-                ref: z,
-                disabled: db,
-                className: eb,
-                upHandler: S,
-                downHandler: T,
-                prefixCls: N,
-                readOnly: J,
-                controls: U
-            }, M));
-            if (ab) {
-                const gb = a(h)(`${ N }-affix-wrapper`, (0, q.getStatusClassNames)(`${ N }-affix-wrapper`, Z, V), {
-                    [`${ N }-affix-wrapper-focused`]: x,
-                    [`${ N }-affix-wrapper-disabled`]: b.disabled,
-                    [`${ N }-affix-wrapper-sm`]: 'small' === $,
-                    [`${ N }-affix-wrapper-lg`]: 'large' === $,
-                    [`${ N }-affix-wrapper-rtl`]: 'rtl' === v,
-                    [`${ N }-affix-wrapper-readonly`]: J,
-                    [`${ N }-affix-wrapper-borderless`]: !I
-                }, !bb && A, !bb && B, P);
-                fb = j.createElement('div', {
-                    className: gb,
-                    style: b.style,
-                    onMouseUp: () => z.current.focus()
-                }, H && j.createElement('span', {
-                    className: `${ N }-prefix`
-                }, H), (0, p.cloneElement)(fb, {
-                    style: null,
-                    value: b.value,
-                    onFocus: a => {
-                        var hb;
-                        _y(!0), null === (hb = b.onFocus) || void 0 === hb || hb.call(b, a);
-                    },
-                    onBlur: a => {
-                        var hb;
-                        _y(!1), null === (hb = b.onBlur) || void 0 === hb || hb.call(b, a);
-                    }
-                }), V && j.createElement('span', {
-                    className: `${ N }-suffix`
-                }, Y));
-            }
-            if (bb) {
-                const gb = `${ N }-group`,
-                    hb = `${ gb }-addon`,
-                    ib = F ? j.createElement('div', {
-                        className: hb
-                    }, F) : null,
-                    jb = G ? j.createElement('div', {
-                        className: hb
-                    }, G) : null,
-                    kb = a(h)(`${ N }-wrapper`, gb, P, {
-                        [`${ gb }-rtl`]: 'rtl' === v
-                    }),
-                    lb = a(h)(`${ N }-group-wrapper`, {
-                        [`${ N }-group-wrapper-sm`]: 'small' === $,
-                        [`${ N }-group-wrapper-lg`]: 'large' === $,
-                        [`${ N }-group-wrapper-rtl`]: 'rtl' === v
-                    }, (0, q.getStatusClassNames)(`${ N }-group-wrapper`, Z, V), P, A, B);
-                fb = j.createElement('div', {
-                    className: lb,
-                    style: b.style
-                }, j.createElement('div', {
-                    className: kb
-                }, ib && j.createElement(o.NoCompactStyle, null, j.createElement(n.NoFormStyle, {
-                    status: !0,
-                    override: !0
-                }, ib)), (0, p.cloneElement)(fb, {
-                    style: null,
-                    disabled: db
-                }), jb && j.createElement(o.NoCompactStyle, null, j.createElement(n.NoFormStyle, {
-                    status: !0,
-                    override: !0
-                }, jb))));
-            }
-            return O(fb);
-        }),
-        u = t;
-    u._InternalPanelDoNotUseOrYouWillBeFired = a => j.createElement(k.default, {
-        theme: {
-            components: {
-                InputNumber: {
-                    handleVisible: !0
-                }
-            }
-        }
-    }, j.createElement(t, Object.assign({}, a)));
-    var v = u;
-}), c.register('SSYDU', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _k;
+                'loading',
+                'className',
+                'rootClassName'
+            ]);
+        const {
+                getPrefixCls: z,
+                direction: A
+            } = i.useContext(j.ConfigContext), B = i.useContext(l.default), C = i.useContext(k.default), D = (null != u ? u : C) || v, E = z('switch', s), F = i.createElement('div', { className: `${ E }-handle` }, v && i.createElement(f.default, { className: `${ E }-loading-icon` })), [G, H] = (0, n.default)(E), I = a(g)({
+                [`${ E }-small`]: 'small' === (t || B),
+                [`${ E }-loading`]: v,
+                [`${ E }-rtl`]: 'rtl' === A
+            }, w, x, H);
+        return G(i.createElement(m.default, null, i.createElement(h.default, Object.assign({}, y, {
+            prefixCls: E,
+            className: I,
+            disabled: D,
+            ref: r,
+            loadingIcon: F
+        }))));
     });
-    var f = c('5cnOa'),
-        g = c('O0Kav'),
-        h = c('1Q6E4'),
-        i = c('VZTwv'),
-        j = function(k, l) {
-            return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
-                ref: l,
-                icon: h.default
-            }));
-        };
-    j.displayName = 'UpOutlined';
-    var _k = g.forwardRef(j);
-}), c.register('1Q6E4', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _f;
+    p.__ANT_SWITCH = !0;
+    var _q = p;
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
+        return _p;
     });
-    var _f = {
-        icon: {
-            tag: 'svg',
-            attrs: {
-                viewBox: '64 64 896 896',
-                focusable: 'false'
-            },
-            children: [{
-                tag: 'path',
-                attrs: {
-                    d: 'M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 00140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z'
-                }
-            }]
-        },
-        name: 'up',
-        theme: 'outlined'
-    };
-}), c.register('4BJF6', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _f;
-    });
-    var _f = c('v9EcG').default;
-}), c.register('v9EcG', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _F;
-    });
-    var f = c('fN7sR0'),
-        g = c('Dyrc50'),
-        h = c('6EHpb1'),
-        i = c('yUbBL'),
-        j = c('7WDbK'),
-        k = c('O0Kav'),
-        l = c('/U36/'),
-        m = c('yWsyD0'),
-        n = c('I3pjj'),
-        o = c('bvyc2'),
-        p = c('R3XS4'),
-        q = c('BrENq'),
-        r = c('6Gpbw'),
-        s = c('ET22c'),
-        t = c('AGWHR'),
-        u = c('gjHaZ'),
-        v = c('bctUF'),
-        w = [
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = [
             'prefixCls',
             'className',
-            'style',
-            'min',
-            'max',
-            'step',
-            'defaultValue',
-            'value',
+            'checked',
+            'defaultChecked',
             'disabled',
-            'readOnly',
-            'upHandler',
-            'downHandler',
-            'keyboard',
-            'controls',
-            'stringMode',
-            'parser',
-            'formatter',
-            'precision',
-            'decimalSeparator',
+            'loadingIcon',
+            'checkedChildren',
+            'unCheckedChildren',
+            'onClick',
             'onChange',
-            'onInput',
-            'onPressEnter',
-            'onStep'
-        ],
-        x = function(y, z) {
-            return y || z.isEmpty() ? z.toString() : z.toNumber();
-        },
-        y = function(z) {
-            var A = (0, p.default)(z);
-            return A.isInvalidate() ? null : A;
-        },
-        z = k.forwardRef(function(A, B) {
-            var C, D = A.prefixCls,
-                E = void 0 === D ? 'rc-input-number' : D,
-                _F = A.className,
-                G = A.style,
-                H = A.min,
-                I = A.max,
-                J = A.step,
-                K = void 0 === J ? 1 : J,
-                L = A.defaultValue,
-                M = A.value,
-                N = A.disabled,
-                O = A.readOnly,
-                P = A.upHandler,
-                Q = A.downHandler,
-                R = A.keyboard,
-                S = A.controls,
-                T = void 0 === S || S,
-                U = A.stringMode,
-                V = A.parser,
-                W = A.formatter,
-                X = A.precision,
-                Y = A.decimalSeparator,
-                Z = A.onChange,
-                $ = A.onInput,
-                ab = A.onPressEnter,
-                bb = A.onStep,
-                cb = (0, j.default)(A, w),
-                db = ''.concat(E, '-input'),
-                eb = k.useRef(null),
-                fb = k.useState(!1),
-                gb = (0, i.default)(fb, 2),
-                hb = gb[0],
-                ib = gb[1],
-                jb = k.useRef(!1),
-                kb = k.useRef(!1),
-                lb = k.useRef(!1),
-                mb = k.useState(function() {
-                    return (0, p.default)(null != M ? M : L);
-                }),
-                nb = (0, i.default)(mb, 2),
-                ob = nb[0],
-                pb = nb[1];
-            var qb = k.useCallback(function(rb, sb) {
-                    if (!sb)
-                        return X >= 0 ? X : Math.max((0, q.getNumberPrecision)(rb), (0, q.getNumberPrecision)(K));
-                }, [
-                    X,
-                    K
-                ]),
-                rb = k.useCallback(function(sb) {
-                    var tb = String(sb);
-                    if (V)
-                        return V(tb);
-                    var ub = tb;
-                    return Y && (ub = ub.replace(Y, '.')), ub.replace(/[^\w.-]+/g, '');
-                }, [
-                    V,
-                    Y
-                ]),
-                sb = k.useRef(''),
-                tb = k.useCallback(function(ub, vb) {
-                    if (W)
-                        return W(ub, {
-                            userTyping: vb,
-                            input: String(sb.current)
-                        });
-                    var wb = 'number' == typeof ub ? (0, q.num2str)(ub) : ub;
-                    if (!vb) {
-                        var xb = qb(wb, vb);
-                        if ((0, q.validateNumber)(wb) && (Y || xb >= 0)) {
-                            var yb = Y || '.';
-                            wb = (0, r.toFixed)(wb, yb, xb);
-                        }
-                    }
-                    return wb;
-                }, [
-                    W,
-                    qb,
-                    Y
-                ]),
-                ub = k.useState(function() {
-                    var vb = null != L ? L : M;
-                    return ob.isInvalidate() && [
-                        'string',
-                        'number'
-                    ].includes((0, h.default)(vb)) ? Number.isNaN(vb) ? '' : vb : tb(ob.toString(), !1);
-                }),
-                vb = (0, i.default)(ub, 2),
-                wb = vb[0],
-                xb = vb[1];
-
-            function yb(zb, Ab) {
-                xb(tb(zb.isInvalidate() ? zb.toString(!1) : zb.toString(!Ab), Ab));
+            'onKeyDown'
+        ], o = j.forwardRef(function (p, q) {
+            var r, s = p.prefixCls, t = void 0 === s ? 'rc-switch' : s, u = p.className, v = p.checked, w = p.defaultChecked, x = p.disabled, y = p.loadingIcon, z = p.checkedChildren, A = p.unCheckedChildren, B = p.onClick, C = p.onChange, D = p.onKeyDown, E = a(i)(p, n), F = (0, l.default)(!1, {
+                    value: v,
+                    defaultValue: w
+                }), G = a(h)(F, 2), H = G[0], I = G[1];
+            function J(K, L) {
+                var M = H;
+                return x || (I(M = K), null == C || C(M, L)), M;
             }
-            sb.current = wb;
-            var zb = k.useMemo(function() {
-                    return y(I);
-                }, [
-                    I,
-                    X
-                ]),
-                Ab = k.useMemo(function() {
-                    return y(H);
-                }, [
-                    H,
-                    X
-                ]),
-                Bb = k.useMemo(function() {
-                    return !(!zb || !ob || ob.isInvalidate()) && zb.lessEquals(ob);
-                }, [
-                    zb,
-                    ob
-                ]),
-                Cb = k.useMemo(function() {
-                    return !(!Ab || !ob || ob.isInvalidate()) && ob.lessEquals(Ab);
-                }, [
-                    Ab,
-                    ob
-                ]),
-                Db = (0, u.default)(eb.current, hb),
-                Eb = (0, i.default)(Db, 2),
-                Fb = Eb[0],
-                Gb = Eb[1],
-                Hb = function(Ib) {
-                    return zb && !Ib.lessEquals(zb) ? zb : Ab && !Ab.lessEquals(Ib) ? Ab : null;
+            var L = a(k)(t, u, (r = {}, a(g)(r, ''.concat(t, '-checked'), H), a(g)(r, ''.concat(t, '-disabled'), x), r));
+            return j.createElement('button', a(f)({}, E, {
+                type: 'button',
+                role: 'switch',
+                'aria-checked': H,
+                disabled: x,
+                className: L,
+                ref: M,
+                onKeyDown: function (M) {
+                    M.which === m.default.LEFT ? J(!1, M) : M.which === m.default.RIGHT && J(!0, M), null == D || D(M);
                 },
-                Ib = function(Jb) {
-                    return !Hb(Jb);
-                },
-                Jb = function(Kb, Lb) {
-                    var Mb, Nb = Kb,
-                        Ob = Ib(Nb) || Nb.isEmpty();
-                    if (Nb.isEmpty() || Lb || (Nb = Hb(Nb) || Nb, Ob = !0), !O && !N && Ob) {
-                        var Pb = Nb.toString(),
-                            Qb = qb(Pb, Lb);
-                        return Qb >= 0 && (Nb = (0, p.default)((0, r.toFixed)(Pb, '.', Qb)), Ib(Nb) || (Nb = (0, p.default)((0, r.toFixed)(Pb, '.', Qb, !0)))), Nb.equals(ob) || (Mb = Nb, void 0 === M && pb(Mb), null == Z || Z(Nb.isEmpty() ? null : x(U, Nb)), void 0 === M && yb(Nb, Lb)), Nb;
-                    }
-                    return ob;
-                },
-                Kb = (0, v.default)(),
-                Lb = function a(Mb) {
-                    if (Fb(), xb(Mb), !kb.current) {
-                        var Nb = rb(Mb),
-                            Ob = (0, p.default)(Nb);
-                        Ob.isNaN() || Jb(Ob, !0);
-                    }
-                    null == $ || $(Mb), Kb(function() {
-                        var Nb = Mb;
-                        V || (Nb = Mb.replace(/。/g, '.')), Nb !== Mb && a(Nb);
-                    });
-                },
-                Mb = function(Nb) {
-                    var Ob;
-                    if (!(Nb && Bb || !Nb && Cb)) {
-                        jb.current = !1;
-                        var Pb = (0, p.default)(lb.current ? (0, t.getDecupleSteps)(K) : K);
-                        Nb || (Pb = Pb.negate());
-                        var Qb = (ob || (0, p.default)(0)).add(Pb.toString()),
-                            Rb = Jb(Qb, !1);
-                        null == bb || bb(x(U, Rb), {
-                            offset: lb.current ? (0, t.getDecupleSteps)(K) : K,
-                            type: Nb ? 'up' : 'down'
-                        }), null === (Ob = eb.current) || void 0 === Ob || Ob.focus();
-                    }
-                },
-                Nb = function(Ob) {
-                    var Pb = (0, p.default)(rb(wb)),
-                        Qb = Pb;
-                    Qb = Pb.isNaN() ? ob : Jb(Pb, Ob), void 0 !== M ? yb(ob, !1) : Qb.isNaN() || yb(Qb, !1);
-                };
-            return (0, n.useLayoutUpdateEffect)(function() {
-                ob.isInvalidate() || yb(ob, !1);
-            }, [X]), (0, n.useLayoutUpdateEffect)(function() {
-                var Ob = (0, p.default)(M);
-                pb(Ob);
-                var Pb = (0, p.default)(rb(wb));
-                Ob.equals(Pb) && jb.current && !W || yb(Ob, jb.current);
-            }, [M]), (0, n.useLayoutUpdateEffect)(function() {
-                W && Gb();
-            }, [wb]), k.createElement('div', {
-                className: a(l)(E, _F, (C = {}, (0, g.default)(C, ''.concat(E, '-focused'), hb), (0, g.default)(C, ''.concat(E, '-disabled'), N), (0, g.default)(C, ''.concat(E, '-readonly'), O), (0, g.default)(C, ''.concat(E, '-not-a-number'), ob.isNaN()), (0, g.default)(C, ''.concat(E, '-out-of-range'), !ob.isInvalidate() && !Ib(ob)), C)),
-                style: G,
-                onFocus: function() {
-                    ib(!0);
-                },
-                onBlur: function() {
-                    Nb(!1), ib(!1), jb.current = !1;
-                },
-                onKeyDown: function(Ob) {
-                    var Pb = Ob.which,
-                        Qb = Ob.shiftKey;
-                    jb.current = !0, lb.current = !!Qb, Pb === m.default.ENTER && (kb.current || (jb.current = !1), Nb(!1), null == ab || ab(Ob)), !1 !== R && !kb.current && [
-                        m.default.UP,
-                        m.default.DOWN
-                    ].includes(Pb) && (Mb(m.default.UP === Pb), Ob.preventDefault());
-                },
-                onKeyUp: function() {
-                    jb.current = !1, lb.current = !1;
-                },
-                onCompositionStart: function() {
-                    kb.current = !0;
-                },
-                onCompositionEnd: function() {
-                    kb.current = !1, Lb(eb.current.value);
-                },
-                onBeforeInput: function() {
-                    jb.current = !0;
+                onClick: function (M) {
+                    var N = J(!H, M);
+                    null == B || B(N, M);
                 }
-            }, T && k.createElement(s.default, {
-                prefixCls: E,
-                upNode: P,
-                downNode: Q,
-                upDisabled: Bb,
-                downDisabled: Cb,
-                onStep: Mb
-            }), k.createElement('div', {
-                className: ''.concat(db, '-wrap')
-            }, k.createElement('input', (0, f.default)({
-                autoComplete: 'off',
-                role: 'spinbutton',
-                'aria-valuemin': H,
-                'aria-valuemax': I,
-                'aria-valuenow': ob.isInvalidate() ? null : ob.toString(),
-                step: K
-            }, cb, {
-                ref: (0, o.composeRef)(eb, B),
-                className: db,
-                value: wb,
-                onChange: function(Ob) {
-                    Lb(Ob.target.value);
-                },
-                disabled: N,
-                readOnly: O
-            }))));
+            }), y, j.createElement('span', { className: ''.concat(t, '-inner') }, j.createElement('span', { className: ''.concat(t, '-inner-checked') }, z), j.createElement('span', { className: ''.concat(t, '-inner-unchecked') }, A)));
         });
-    z.displayName = 'InputNumber';
-    var A = z;
-}), c.register('fN7sR0', function(d, e) {
+    o.displayName = 'Switch';
+    var _p = o;
+}), c.register('.....', function (d, e) {
     function f() {
-        return f = Object.assign || function(g) {
+        return d.exports = f = Object.assign || function (g) {
             for (var h = 1; h < arguments.length; h++) {
                 var i = arguments[h];
                 for (var j in i)
                     Object.prototype.hasOwnProperty.call(i, j) && (g[j] = i[j]);
             }
             return g;
-        }, f.apply(this, arguments);
+        }, d.exports.default = d.exports, d.exports.__esModule = !0, f.apply(this, arguments);
     }
-    b(d.exports, 'default', function() {
-        return f;
-    });
-}), c.register('Dyrc50', function(d, e) {
-    function f(g, h, i) {
-        return h in g ? Object.defineProperty(g, h, {
-            value: i,
+    d.exports = f, d.exports.default = d.exports, d.exports.__esModule = !0;
+}), c.register('.....', function (d, e) {
+    d.exports = function (f, g, h) {
+        return g in f ? Object.defineProperty(f, g, {
+            value: h,
             enumerable: !0,
             configurable: !0,
             writable: !0
-        }) : g[h] = i, g;
-    }
-    b(d.exports, 'default', function() {
-        return f;
+        }) : f[g] = h, f;
+    }, d.exports.default = d.exports, d.exports.__esModule = !0;
+}), c.register('.....', function (d, e) {
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    d.exports = function (j, k) {
+        return f(j) || g(j, k) || h(j, k) || i();
+    }, d.exports.default = d.exports, d.exports.__esModule = !0;
+}), c.register('.....', function (d, e) {
+    d.exports = function (f) {
+        if (Array.isArray(f))
+            return f;
+    }, d.exports.default = d.exports, d.exports.__esModule = !0;
+}), c.register('.....', function (d, e) {
+    d.exports = function (f, g) {
+        var h = null == f ? null : 'undefined' != typeof Symbol && f[Symbol.iterator] || f['@@iterator'];
+        if (null != h) {
+            var i, j, k = [], l = !0, m = !1;
+            try {
+                for (h = h.call(f); !(l = (i = h.next()).done) && (k.push(i.value), !g || k.length !== g); l = !0);
+            } catch (f) {
+                m = !0, j = f;
+            } finally {
+                try {
+                    l || null == h.return || h.return();
+                } finally {
+                    if (m)
+                        throw j;
+                }
+            }
+            return k;
+        }
+    }, d.exports.default = d.exports, d.exports.__esModule = !0;
+}), c.register('.....', function (d, e) {
+    var f = c('.....');
+    d.exports = function (g, h) {
+        if (g) {
+            if ('string' == typeof g)
+                return f(g, h);
+            var i = Object.prototype.toString.call(g).slice(8, -1);
+            return 'Object' === i && g.constructor && (i = g.constructor.name), 'Map' === i || 'Set' === i ? Array.from(g) : 'Arguments' === i || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(i) ? f(g, h) : void 0;
+        }
+    }, d.exports.default = d.exports, d.exports.__esModule = !0;
+}), c.register('.....', function (d, e) {
+    d.exports = function (f, g) {
+        (null == g || g > f.length) && (g = f.length);
+        for (var h = 0, i = new Array(g); h < g; h++)
+            i[h] = f[h];
+        return i;
+    }, d.exports.default = d.exports, d.exports.__esModule = !0;
+}), c.register('.....', function (d, e) {
+    d.exports = function () {
+        throw new TypeError('Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.');
+    }, d.exports.default = d.exports, d.exports.__esModule = !0;
+}), c.register('.....', function (d, e) {
+    var f = c('.....');
+    d.exports = function (g, h) {
+        if (null == g)
+            return {};
+        var i, j, k = f(g, h);
+        if (Object.getOwnPropertySymbols) {
+            var l = Object.getOwnPropertySymbols(g);
+            for (j = 0; j < l.length; j++)
+                i = l[j], h.indexOf(i) >= 0 || Object.prototype.propertyIsEnumerable.call(g, i) && (k[i] = g[i]);
+        }
+        return k;
+    }, d.exports.default = d.exports, d.exports.__esModule = !0;
+}), c.register('.....', function (d, e) {
+    d.exports = function (f, g) {
+        if (null == f)
+            return {};
+        var h, i, j = {}, k = Object.keys(f);
+        for (i = 0; i < k.length; i++)
+            h = k[i], g.indexOf(h) >= 0 || (j[h] = f[h]);
+        return j;
+    }, d.exports.default = d.exports, d.exports.__esModule = !0;
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
+        return _h;
     });
-}), c.register('6EHpb1', function(d, e) {
-    function f(g) {
-        return f = 'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator ? function(h) {
-            return typeof h;
-        } : function(h) {
-            return h && 'function' == typeof Symbol && h.constructor === Symbol && h !== Symbol.prototype ? 'symbol' : typeof h;
-        }, f(g);
+    var f = c('.....'), g = c('.....');
+    function _h(i, j) {
+        var k = j || {}, l = k.defaultValue, m = k.value, n = k.onChange, o = k.postState, p = g.useState(function () {
+                return void 0 !== _h ? _h : void 0 !== l ? 'function' == typeof l ? l() : l : 'function' == typeof i ? i() : i;
+            }), q = (0, f.default)(p, 2), r = q[0], s = q[1], t = void 0 !== _h ? _h : r;
+        o && (t = o(t));
+        var u = g.useRef(!0);
+        return g.useEffect(function () {
+            u.current ? u.current = !1 : void 0 === _h && s(_h);
+        }, [_h]), [
+            t,
+            function (v) {
+                s(v), t !== v && n && n(v, t);
+            }
+        ];
     }
-    b(d.exports, 'default', function() {
-        return f;
-    });
-}), c.register('yUbBL', function(d, e) {
-    b(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
         return _j;
     });
-    var f = c('agApH0'),
-        g = c('dhwiU0'),
-        h = c('4TXpS'),
-        i = c('BoOTw0');
-
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
     function _j(k, l) {
         return (0, f.default)(k) || (0, g.default)(k, l) || (0, h.default)(k, l) || (0, i.default)();
     }
-}), c.register('agApH0', function(d, e) {
+}), c.register('.....', function (d, e) {
     function f(g) {
         if (Array.isArray(g))
             return g;
     }
-    b(d.exports, 'default', function() {
+    b(d.exports, 'default', function () {
         return f;
     });
-}), c.register('dhwiU0', function(d, e) {
+}), c.register('.....', function (d, e) {
     function f(g, h) {
         var i = null == g ? null : 'undefined' != typeof Symbol && g[Symbol.iterator] || g['@@iterator'];
         if (null != i) {
-            var j, k, l = [],
-                m = !0,
-                n = !1;
+            var j, k, l = [], m = !0, n = !1;
             try {
-                for (i = i.call(g); !(m = (j = i.next()).done) && (l.push(j.value), !h || l.length !== h); m = !0);
+                for (i = i.call(g); !(m = (f = i.next()).done) && (l.push(f.value), !h || l.length !== h); m = !0);
             } catch (g) {
                 n = !0, k = g;
             } finally {
@@ -600,15 +255,14 @@ c.register('lhOnW', function(d, e) {
             return l;
         }
     }
-    b(d.exports, 'default', function() {
+    b(d.exports, 'default', function () {
         return f;
     });
-}), c.register('4TXpS', function(d, e) {
-    b(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
         return _g;
     });
-    var f = c('eNcAE0');
-
+    var f = c('.....');
     function _g(h, i) {
         if (h) {
             if ('string' == typeof h)
@@ -617,885 +271,435 @@ c.register('lhOnW', function(d, e) {
             return 'Object' === j && h.constructor && (j = h.constructor.name), 'Map' === j || 'Set' === j ? Array.from(h) : 'Arguments' === j || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(j) ? (0, f.default)(h, i) : void 0;
         }
     }
-}), c.register('eNcAE0', function(d, e) {
+}), c.register('.....', function (d, e) {
     function f(g, h) {
         (null == h || h > g.length) && (h = g.length);
         for (var i = 0, j = new Array(h); i < h; i++)
-            j[i] = g[i];
-        return j;
+            f[i] = g[i];
+        return f;
     }
-    b(d.exports, 'default', function() {
+    b(d.exports, 'default', function () {
         return f;
     });
-}), c.register('BoOTw0', function(d, e) {
+}), c.register('.....', function (d, e) {
     function f() {
         throw new TypeError('Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.');
     }
-    b(d.exports, 'default', function() {
+    b(d.exports, 'default', function () {
         return f;
     });
-}), c.register('7WDbK', function(d, e) {
-    b(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
         return _g;
     });
-    var f = c('LaCLl0');
-
-    function _g(h, i) {
-        if (null == h)
-            return {};
-        var j, k, l = (0, f.default)(h, i);
-        if (Object.getOwnPropertySymbols) {
-            var m = Object.getOwnPropertySymbols(h);
-            for (k = 0; k < m.length; k++)
-                j = m[k], i.indexOf(j) >= 0 || Object.prototype.propertyIsEnumerable.call(h, j) && (l[j] = h[j]);
-        }
-        return l;
-    }
-}), c.register('LaCLl0', function(d, e) {
-    function f(g, h) {
-        if (null == g)
-            return {};
-        var i, j, k = {},
-            l = Object.keys(g);
-        for (j = 0; j < l.length; j++)
-            i = l[j], h.indexOf(i) >= 0 || (k[i] = g[i]);
-        return k;
-    }
-    b(d.exports, 'default', function() {
-        return f;
-    });
-}), c.register('R3XS4', function(d, e) {
-    b(d.exports, 'toFixed', function() {
-        return c('6Gpbw').toFixed;
-    }), b(d.exports, 'default', function() {
-        return _g;
-    }), b(d.exports, 'trimNumber', function() {
-        return c('BrENq').trimNumber;
-    }), b(d.exports, 'getNumberPrecision', function() {
-        return c('BrENq').getNumberPrecision;
-    }), b(d.exports, 'num2str', function() {
-        return c('BrENq').num2str;
-    }), b(d.exports, 'validateNumber', function() {
-        return c('BrENq').validateNumber;
-    });
-    var f = c('6Gpbw'),
-        _g = (f = c('6Gpbw'), c('BrENq'), f.default);
-}), c.register('6Gpbw', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _n;
-    }), b(d.exports, 'toFixed', function() {
+    var f = {
+            MAC_ENTER: 3,
+            BACKSPACE: 8,
+            TAB: 9,
+            NUM_CENTER: 12,
+            ENTER: 13,
+            SHIFT: 16,
+            CTRL: 17,
+            ALT: 18,
+            PAUSE: 19,
+            CAPS_LOCK: 20,
+            ESC: 27,
+            SPACE: 32,
+            PAGE_UP: 33,
+            PAGE_DOWN: 34,
+            END: 35,
+            HOME: 36,
+            LEFT: 37,
+            UP: 38,
+            RIGHT: 39,
+            DOWN: 40,
+            PRINT_SCREEN: 44,
+            INSERT: 45,
+            DELETE: 46,
+            ZERO: 48,
+            ONE: 49,
+            TWO: 50,
+            THREE: 51,
+            FOUR: 52,
+            FIVE: 53,
+            SIX: 54,
+            SEVEN: 55,
+            EIGHT: 56,
+            NINE: 57,
+            QUESTION_MARK: 63,
+            A: 65,
+            B: 66,
+            C: 67,
+            D: 68,
+            E: 69,
+            F: 70,
+            G: 71,
+            H: 72,
+            I: 73,
+            J: 74,
+            K: 75,
+            L: 76,
+            M: 77,
+            N: 78,
+            O: 79,
+            P: 80,
+            Q: 81,
+            R: 82,
+            S: 83,
+            T: 84,
+            U: 85,
+            V: 86,
+            W: 87,
+            X: 88,
+            Y: 89,
+            Z: 90,
+            META: 91,
+            WIN_KEY_RIGHT: 92,
+            CONTEXT_MENU: 93,
+            NUM_ZERO: 96,
+            NUM_ONE: 97,
+            NUM_TWO: 98,
+            NUM_THREE: 99,
+            NUM_FOUR: 100,
+            NUM_FIVE: 101,
+            NUM_SIX: 102,
+            NUM_SEVEN: 103,
+            NUM_EIGHT: 104,
+            NUM_NINE: 105,
+            NUM_MULTIPLY: 106,
+            NUM_PLUS: 107,
+            NUM_MINUS: 109,
+            NUM_PERIOD: 110,
+            NUM_DIVISION: 111,
+            F1: 112,
+            F2: 113,
+            F3: 114,
+            F4: 115,
+            F5: 116,
+            F6: 117,
+            F7: 118,
+            F8: 119,
+            F9: 120,
+            F10: 121,
+            F11: 122,
+            F12: 123,
+            NUMLOCK: 144,
+            SEMICOLON: 186,
+            DASH: 189,
+            EQUALS: 187,
+            COMMA: 188,
+            PERIOD: 190,
+            SLASH: 191,
+            APOSTROPHE: 192,
+            SINGLE_QUOTE: 222,
+            OPEN_SQUARE_BRACKET: 219,
+            BACKSLASH: 220,
+            CLOSE_SQUARE_BRACKET: 221,
+            WIN_KEY: 224,
+            MAC_FF_META: 224,
+            WIN_IME: 229,
+            isTextModifyingKeyEvent: function (g) {
+                var h = g.keyCode;
+                if (g.altKey && !g.ctrlKey || g.metaKey || h >= f.F1 && h <= f.F12)
+                    return !1;
+                switch (h) {
+                case f.ALT:
+                case f.CAPS_LOCK:
+                case f.CONTEXT_MENU:
+                case f.CTRL:
+                case f.DOWN:
+                case f.END:
+                case f.ESC:
+                case f.HOME:
+                case f.INSERT:
+                case f.LEFT:
+                case f.MAC_FF_META:
+                case f.META:
+                case f.NUMLOCK:
+                case f.NUM_CENTER:
+                case f.PAGE_DOWN:
+                case f.PAGE_UP:
+                case f.PAUSE:
+                case f.PRINT_SCREEN:
+                case f.RIGHT:
+                case f.SHIFT:
+                case f.UP:
+                case f.WIN_KEY:
+                case f.WIN_KEY_RIGHT:
+                    return !1;
+                default:
+                    return !0;
+                }
+            },
+            isCharacterKey: function (g) {
+                if (g >= f.ZERO && g <= f.NINE)
+                    return !0;
+                if (g >= f.NUM_ZERO && g <= f.NUM_MULTIPLY)
+                    return !0;
+                if (g >= f.A && g <= f.Z)
+                    return !0;
+                if (-1 !== window.navigator.userAgent.indexOf('WebKit') && 0 === g)
+                    return !0;
+                switch (g) {
+                case f.SPACE:
+                case f.QUESTION_MARK:
+                case f.NUM_PLUS:
+                case f.NUM_MINUS:
+                case f.NUM_PERIOD:
+                case f.NUM_DIVISION:
+                case f.SEMICOLON:
+                case f.DASH:
+                case f.EQUALS:
+                case f.COMMA:
+                case f.PERIOD:
+                case f.SLASH:
+                case f.APOSTROPHE:
+                case f.SINGLE_QUOTE:
+                case f.OPEN_SQUARE_BRACKET:
+                case f.BACKSLASH:
+                case f.CLOSE_SQUARE_BRACKET:
+                    return !0;
+                default:
+                    return !1;
+                }
+            }
+        }, _g = f;
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
         return _o;
     });
-    var f = c('hJlMW'),
-        g = c('VWmxq'),
-        h = c('8yrgn'),
-        i = c('BrENq'),
-        j = c('Pr/Hi');
-
-    function k(l) {
-        return !l && 0 !== l && !Number.isNaN(l) || !String(l).trim();
-    }
-    var l = function() {
-            function m(n) {
-                (0, f.default)(this, m), (0, h.default)(this, 'origin', ''), (0, h.default)(this, 'number', void 0), (0, h.default)(this, 'empty', void 0), k(n) ? this.empty = !0 : (this.origin = String(n), this.number = Number(n));
-            }
-            return (0, g.default)(m, [{
-                    key: 'negate',
-                    value: function() {
-                        return new m(-this.toNumber());
-                    }
-                },
-                {
-                    key: 'add',
-                    value: function(n) {
-                        if (this.isInvalidate())
-                            return new m(n);
-                        var o = Number(n);
-                        if (Number.isNaN(o))
-                            return this;
-                        var p = this.number + o;
-                        if (p > Number.MAX_SAFE_INTEGER)
-                            return new m(Number.MAX_SAFE_INTEGER);
-                        if (p < Number.MIN_SAFE_INTEGER)
-                            return new m(Number.MIN_SAFE_INTEGER);
-                        var q = Math.max((0, i.getNumberPrecision)(this.number), (0, i.getNumberPrecision)(o));
-                        return new m(p.toFixed(q));
-                    }
-                },
-                {
-                    key: 'isEmpty',
-                    value: function() {
-                        return this.empty;
-                    }
-                },
-                {
-                    key: 'isNaN',
-                    value: function() {
-                        return Number.isNaN(this.number);
-                    }
-                },
-                {
-                    key: 'isInvalidate',
-                    value: function() {
-                        return this.isEmpty() || this.isNaN();
-                    }
-                },
-                {
-                    key: 'equals',
-                    value: function(n) {
-                        return this.toNumber() === (null == n ? void 0 : n.toNumber());
-                    }
-                },
-                {
-                    key: 'lessEquals',
-                    value: function(n) {
-                        return this.add(n.negate().toString()).toNumber() <= 0;
-                    }
-                },
-                {
-                    key: 'toNumber',
-                    value: function() {
-                        return this.number;
-                    }
-                },
-                {
-                    key: 'toString',
-                    value: function() {
-                        var n = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
-                        return n ? this.isInvalidate() ? '' : (0, i.num2str)(this.number) : this.origin;
-                    }
-                }
-            ]), m;
-        }(),
-        m = function() {
-            function n(o) {
-                if ((0, f.default)(this, n), (0, h.default)(this, 'origin', ''), (0, h.default)(this, 'negative', void 0), (0, h.default)(this, 'integer', void 0), (0, h.default)(this, 'decimal', void 0), (0, h.default)(this, 'decimalLen', void 0), (0, h.default)(this, 'empty', void 0), (0, h.default)(this, 'nan', void 0), k(o))
-                    this.empty = !0;
-                else if (this.origin = String(o), '-' === o || Number.isNaN(o))
-                    this.nan = !0;
-                else {
-                    var p = o;
-                    if ((0, i.isE)(p) && (p = Number(p)), p = 'string' == typeof p ? p : (0, i.num2str)(p), (0, i.validateNumber)(p)) {
-                        var q = (0, i.trimNumber)(p);
-                        this.negative = q.negative;
-                        var r = q.trimStr.split('.');
-                        this.integer = BigInt(r[0]);
-                        var s = r[1] || '0';
-                        this.decimal = BigInt(s), this.decimalLen = s.length;
-                    } else
-                        this.nan = !0;
-                }
-            }
-            return (0, g.default)(n, [{
-                    key: 'getMark',
-                    value: function() {
-                        return this.negative ? '-' : '';
-                    }
-                },
-                {
-                    key: 'getIntegerStr',
-                    value: function() {
-                        return this.integer.toString();
-                    }
-                },
-                {
-                    key: 'getDecimalStr',
-                    value: function() {
-                        return this.decimal.toString().padStart(this.decimalLen, '0');
-                    }
-                },
-                {
-                    key: 'alignDecimal',
-                    value: function(o) {
-                        var p = ''.concat(this.getMark()).concat(this.getIntegerStr()).concat(this.getDecimalStr().padEnd(o, '0'));
-                        return BigInt(p);
-                    }
-                },
-                {
-                    key: 'negate',
-                    value: function() {
-                        var o = new n(this.toString());
-                        return o.negative = !o.negative, o;
-                    }
-                },
-                {
-                    key: 'add',
-                    value: function(o) {
-                        if (this.isInvalidate())
-                            return new n(o);
-                        var p = new n(o);
-                        if (p.isInvalidate())
-                            return this;
-                        var q = Math.max(this.getDecimalStr().length, p.getDecimalStr().length),
-                            r = (this.alignDecimal(q) + p.alignDecimal(q)).toString(),
-                            s = (0, i.trimNumber)(r),
-                            t = s.negativeStr,
-                            u = s.trimStr,
-                            v = ''.concat(t).concat(u.padStart(q + 1, '0'));
-                        return new n(''.concat(v.slice(0, -q), '.').concat(v.slice(-q)));
-                    }
-                },
-                {
-                    key: 'isEmpty',
-                    value: function() {
-                        return this.empty;
-                    }
-                },
-                {
-                    key: 'isNaN',
-                    value: function() {
-                        return this.nan;
-                    }
-                },
-                {
-                    key: 'isInvalidate',
-                    value: function() {
-                        return this.isEmpty() || this.isNaN();
-                    }
-                },
-                {
-                    key: 'equals',
-                    value: function(o) {
-                        return this.toString() === (null == o ? void 0 : o.toString());
-                    }
-                },
-                {
-                    key: 'lessEquals',
-                    value: function(o) {
-                        return this.add(o.negate().toString()).toNumber() <= 0;
-                    }
-                },
-                {
-                    key: 'toNumber',
-                    value: function() {
-                        return this.isNaN() ? NaN : Number(this.toString());
-                    }
-                },
-                {
-                    key: 'toString',
-                    value: function() {
-                        var o = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
-                        return o ? this.isInvalidate() ? '' : (0, i.trimNumber)(''.concat(this.getMark()).concat(this.getIntegerStr(), '.').concat(this.getDecimalStr())).fullStr : this.origin;
-                    }
-                }
-            ]), n;
-        }();
-
-    function _n(o) {
-        return (0, j.supportBigInt)() ? new m(o) : new l(o);
-    }
-
-    function _o(p, q, r) {
-        var s = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-        if ('' === p)
-            return '';
-        var t = (0, i.trimNumber)(p),
-            u = t.negativeStr,
-            v = t.integerStr,
-            w = t.decimalStr,
-            x = ''.concat(q).concat(w),
-            y = ''.concat(u).concat(v);
-        if (r >= 0) {
-            var z = Number(w[r]);
-            if (z >= 5 && !s) {
-                var A = _n(p).add(''.concat(u, '0.').concat('0'.repeat(r)).concat(10 - z));
-                return _o(A.toString(), q, r, s);
-            }
-            return 0 === r ? y : ''.concat(y).concat(q).concat(w.padEnd(r, '0').slice(0, r));
-        }
-        return '.0' === x ? y : ''.concat(y).concat(x);
-    }
-}), c.register('hJlMW', function(d, e) {
-    function f(g, h) {
-        if (!(g instanceof h))
-            throw new TypeError('Cannot call a class as a function');
-    }
-    b(d.exports, 'default', function() {
-        return f;
-    });
-}), c.register('VWmxq', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _h;
-    });
-    var f = c('CklYq');
-
-    function g(h, i) {
-        for (var j = 0; j < i.length; j++) {
-            var k = i[j];
-            k.enumerable = k.enumerable || !1, k.configurable = !0, 'value' in k && (k.writable = !0), Object.defineProperty(h, (0, f.default)(k.key), k);
-        }
-    }
-
-    function _h(i, j, k) {
-        return j && g(i.prototype, j), k && g(i, k), Object.defineProperty(i, 'prototype', {
-            writable: !1
-        }), i;
-    }
-}), c.register('CklYq', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _h;
-    });
-    var f = c('6EHpb0'),
-        g = c('H0XXx');
-
-    function _h(i) {
-        var j = (0, g.default)(i, 'string');
-        return 'symbol' === (0, f.default)(j) ? j : String(j);
-    }
-}), c.register('6EHpb0', function(d, e) {
-    function f(g) {
-        return f = 'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator ? function(h) {
-            return typeof h;
-        } : function(h) {
-            return h && 'function' == typeof Symbol && h.constructor === Symbol && h !== Symbol.prototype ? 'symbol' : typeof h;
-        }, f(g);
-    }
-    b(d.exports, 'default', function() {
-        return f;
-    });
-}), c.register('H0XXx', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _g;
-    });
-    var f = c('6EHpb0');
-
-    function _g(h, i) {
-        if ('object' !== (0, f.default)(h) || null === h)
-            return h;
-        var j = h[Symbol.toPrimitive];
-        if (void 0 !== j) {
-            var k = j.call(h, i || 'default');
-            if ('object' !== (0, f.default)(k))
-                return k;
-            throw new TypeError('@@toPrimitive must return a primitive value.');
-        }
-        return ('string' === i ? String : Number)(h);
-    }
-}), c.register('8yrgn', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _g;
-    });
-    var f = c('CklYq');
-
-    function _g(h, i, j) {
-        return (i = (0, f.default)(i)) in h ? Object.defineProperty(h, i, {
-            value: j,
-            enumerable: !0,
-            configurable: !0,
-            writable: !0
-        }) : h[i] = j, h;
-    }
-}), c.register('BrENq', function(d, e) {
-    b(d.exports, 'trimNumber', function() {
-        return _g;
-    }), b(d.exports, 'isE', function() {
-        return _n;
-    }), b(d.exports, 'getNumberPrecision', function() {
-        return _o;
-    }), b(d.exports, 'validateNumber', function() {
-        return _k;
-    }), b(d.exports, 'num2str', function() {
-        return _j;
-    });
-    var f = c('Pr/Hi');
-
-    function _g(h) {
-        var i = h.trim(),
-            j = i.startsWith('-');
-        j && (i = i.slice(1)), (i = i.replace(/(\.\d*[^0])0*$/, '$1').replace(/\.0*$/, '').replace(/^0+/, '')).startsWith('.') && (i = '0'.concat(i));
-        var k = i || '0',
-            l = k.split('.'),
-            m = l[0] || '0',
-            _n = l[1] || '0';
-        '0' === m && '0' === _n && (j = !1);
-        var _o = j ? '-' : '';
-        return {
-            negative: j,
-            negativeStr: _o,
-            trimStr: k,
-            integerStr: m,
-            decimalStr: _n,
-            fullStr: ''.concat(_o).concat(k)
-        };
-    }
-
-    function h(i) {
-        var j = String(i);
-        return !Number.isNaN(Number(j)) && j.includes('e');
-    }
-
-    function i(j) {
-        var k = String(j);
-        if (h(j)) {
-            var l = Number(k.slice(k.indexOf('e-') + 2)),
-                m = k.match(/\.(\d+)/);
-            return null != m && m[1] && (l += m[1].length), l;
-        }
-        return k.includes('.') && _k(k) ? k.length - k.indexOf('.') - 1 : 0;
-    }
-
-    function _j(k) {
-        var l = String(k);
-        if (h(k)) {
-            if (k > Number.MAX_SAFE_INTEGER)
-                return String((0, f.supportBigInt)() ? BigInt(k).toString() : Number.MAX_SAFE_INTEGER);
-            if (k < Number.MIN_SAFE_INTEGER)
-                return String((0, f.supportBigInt)() ? BigInt(k).toString() : Number.MIN_SAFE_INTEGER);
-            l = k.toFixed(i(l));
-        }
-        return _g(l).fullStr;
-    }
-
-    function _k(l) {
-        return 'number' == typeof l ? !Number.isNaN(l) : !!l && (/^\s*-?\d+(\.\d+)?\s*$/.test(l) || /^\s*-?\d+\.\s*$/.test(l) || /^\s*-?\.\d+\s*$/.test(l));
-    }
-}), c.register('Pr/Hi', function(d, e) {
-    function f() {
-        return 'function' == typeof BigInt;
-    }
-    b(d.exports, 'supportBigInt', function() {
-        return f;
-    });
-}), c.register('ET22c', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _k;
-    });
-    var f = c('fN7sR0'),
-        g = c('Dyrc50'),
-        h = c('O0Kav'),
-        i = c('/U36/'),
-        j = c('gG9qf');
-
-    function _k(l) {
-        var m = l.prefixCls,
-            n = l.upNode,
-            o = l.downNode,
-            p = l.upDisabled,
-            q = l.downDisabled,
-            r = l.onStep,
-            s = h.useRef(),
-            t = h.useRef();
-        t.current = r;
-        var u = function(v, w) {
-                v.preventDefault(), t.current(w), s.current = setTimeout(function v() {
-                    t.current(w), s.current = setTimeout(v, 200);
-                }, 600);
-            },
-            v = function() {
-                clearTimeout(s.current);
-            };
-        if (h.useEffect(function() {
-                return v;
-            }, []), (0, j.default)())
-            return null;
-        var w = ''.concat(m, '-handler'),
-            x = a(i)(w, ''.concat(w, '-up'), (0, g.default)({}, ''.concat(w, '-up-disabled'), p)),
-            y = a(i)(w, ''.concat(w, '-down'), (0, g.default)({}, ''.concat(w, '-down-disabled'), q)),
-            z = {
-                unselectable: 'on',
-                role: 'button',
-                onMouseUp: v,
-                onMouseLeave: v
-            };
-        return h.createElement('div', {
-            className: ''.concat(w, '-wrap')
-        }, h.createElement('span', (0, f.default)({}, z, {
-            onMouseDown: function(A) {
-                u(A, !0);
-            },
-            'aria-label': 'Increase Value',
-            'aria-disabled': p,
-            className: x
-        }), n || h.createElement('span', {
-            unselectable: 'on',
-            className: ''.concat(m, '-handler-up-inner')
-        })), h.createElement('span', (0, f.default)({}, z, {
-            onMouseDown: function(A) {
-                u(A, !1);
-            },
-            'aria-label': 'Decrease Value',
-            'aria-disabled': q,
-            className: y
-        }), o || h.createElement('span', {
-            unselectable: 'on',
-            className: ''.concat(m, '-handler-down-inner')
-        })));
-    }
-}), c.register('AGWHR', function(d, e) {
-    b(d.exports, 'getDecupleSteps', function() {
-        return _g;
-    }), c('R3XS4');
-    var f = c('BrENq');
-
-    function _g(h) {
-        var i = 'number' == typeof h ? (0, f.num2str)(h) : (0, f.trimNumber)(h).fullStr;
-        return i.includes('.') ? (0, f.trimNumber)(i.replace(/(\d)\.(\d)/g, '$1$2.')).fullStr : h + '0';
-    }
-}), c.register('gjHaZ', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _h;
-    });
-    var f = c('O0Kav'),
-        g = c('Ip0tz');
-
-    function _h(i, j) {
-        var k = (0, f.useRef)(null);
-        return [
-            function() {
-                try {
-                    var l = i.selectionStart,
-                        m = i.selectionEnd,
-                        n = i.value,
-                        o = n.substring(0, l),
-                        p = n.substring(m);
-                    k.current = {
-                        start: l,
-                        end: m,
-                        value: n,
-                        beforeTxt: o,
-                        afterTxt: p
-                    };
-                } catch (i) {}
-            },
-            function() {
-                if (i && k.current && j)
-                    try {
-                        var l = i.value,
-                            m = k.current,
-                            n = m.beforeTxt,
-                            o = m.afterTxt,
-                            p = m.start,
-                            q = l.length;
-                        if (l.endsWith(o))
-                            q = l.length - k.current.afterTxt.length;
-                        else if (l.startsWith(n))
-                            q = n.length;
-                        else {
-                            var r = n[p - 1],
-                                s = l.indexOf(r, p - 1); -
-                            1 !== s && (q = s + 1);
-                        }
-                        i.setSelectionRange(q, q);
-                    } catch (i) {
-                        (0, g.default)(!1, 'Something warning of cursor restore. Please fire issue about this: '.concat(i.message));
-                    }
-            }
-        ];
-    }
-}), c.register('bctUF', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _h;
-    });
-    var f = c('O0Kav'),
-        g = c('dH7gy'),
-        _h = function() {
-            var i = (0, f.useRef)(0),
-                j = function() {
-                    g.default.cancel(i.current);
-                };
-            return (0, f.useEffect)(function() {
-                    return j;
-                }, []),
-                function(k) {
-                    j(), i.current = (0, g.default)(function() {
-                        k();
-                    });
-                };
-        };
-}), c.register('f4E8p', function(d, e) {
-    b(d.exports, 'default', function() {
-        return _r;
-    });
-    var f = c('Xi+E+'),
-        g = c('GhPPX'),
-        h = c('/zzpx'),
-        i = c('T4EsO');
-    const j = d => {
-            const {
-                componentCls: k,
-                lineWidth: l,
-                lineType: m,
-                colorBorder: n,
-                borderRadius: o,
-                fontSizeLG: p,
-                controlHeightLG: q,
-                controlHeightSM: _r,
-                colorError: s,
-                inputPaddingHorizontalSM: t,
-                colorTextDescription: u,
-                motionDurationMid: v,
-                colorPrimary: w,
-                controlHeight: x,
-                inputPaddingHorizontal: y,
-                colorBgContainer: z,
-                colorTextDisabled: A,
-                borderRadiusSM: B,
-                borderRadiusLG: C,
-                controlWidth: D,
-                handleVisible: E
-            } = d;
-            return [{
-                    [k]: Object.assign(Object.assign(Object.assign(Object.assign({}, (0, h.resetComponent)(d)), (0, f.genBasicInputStyle)(d)), (0, f.genStatusStyle)(d, k)), {
-                        display: 'inline-block',
-                        width: D,
-                        margin: 0,
-                        padding: 0,
-                        border: `${ l }px ${ m } ${ n }`,
-                        borderRadius: o,
-                        '&-rtl': {
-                            direction: 'rtl',
-                            [`${ k }-input`]: {
-                                direction: 'rtl'
-                            }
-                        },
-                        '&-lg': {
-                            padding: 0,
-                            fontSize: p,
-                            borderRadius: C,
-                            [`input${ k }-input`]: {
-                                height: q - 2 * l
-                            }
-                        },
-                        '&-sm': {
-                            padding: 0,
-                            borderRadius: B,
-                            [`input${ k }-input`]: {
-                                height: _r - 2 * l,
-                                padding: `0 ${ t }px`
-                            }
-                        },
-                        '&:hover': Object.assign({}, (0, f.genHoverStyle)(d)),
-                        '&-focused': Object.assign({}, (0, f.genActiveStyle)(d)),
-                        '&-disabled': Object.assign(Object.assign({}, (0, f.genDisabledStyle)(d)), {
-                            [`${ k }-input`]: {
-                                cursor: 'not-allowed'
-                            }
-                        }),
-                        '&-out-of-range': {
-                            input: {
-                                color: s
-                            }
-                        },
-                        '&-group': Object.assign(Object.assign(Object.assign({}, (0, h.resetComponent)(d)), (0, f.genInputGroupStyle)(d)), {
-                            '&-wrapper': {
-                                display: 'inline-block',
-                                textAlign: 'start',
-                                verticalAlign: 'top',
-                                [`${ k }-affix-wrapper`]: {
-                                    width: '100%'
-                                },
-                                '&-lg': {
-                                    [`${ k }-group-addon`]: {
-                                        borderRadius: C
-                                    }
-                                },
-                                '&-sm': {
-                                    [`${ k }-group-addon`]: {
-                                        borderRadius: B
-                                    }
-                                }
-                            }
-                        }),
-                        [k]: {
-                            '&-input': Object.assign(Object.assign({
-                                width: '100%',
-                                height: x - 2 * l,
-                                padding: `0 ${ y }px`,
-                                textAlign: 'start',
-                                backgroundColor: 'transparent',
-                                border: 0,
-                                borderRadius: o,
-                                outline: 0,
-                                transition: `all ${ v } linear`,
-                                appearance: 'textfield',
-                                color: d.colorText,
-                                fontSize: 'inherit',
-                                verticalAlign: 'top'
-                            }, (0, f.genPlaceholderStyle)(d.colorTextPlaceholder)), {
-                                '&[type="number"]::-webkit-inner-spin-button, &[type="number"]::-webkit-outer-spin-button': {
-                                    margin: 0,
-                                    webkitAppearance: 'none',
-                                    appearance: 'none'
-                                }
-                            })
-                        }
-                    })
-                },
-                {
-                    [k]: {
-                        [`&:hover ${ k }-handler-wrap, &-focused ${ k }-handler-wrap`]: {
-                            opacity: 1
-                        },
-                        [`${ k }-handler-wrap`]: {
-                            position: 'absolute',
-                            insetBlockStart: 0,
-                            insetInlineEnd: 0,
-                            width: d.handleWidth,
-                            height: '100%',
-                            background: z,
-                            borderStartStartRadius: 0,
-                            borderStartEndRadius: o,
-                            borderEndEndRadius: o,
-                            borderEndStartRadius: 0,
-                            opacity: !0 === E ? 1 : 0,
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'stretch',
-                            transition: `opacity ${ v } linear ${ v }`,
-                            [`${ k }-handler`]: {
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                flex: 'auto',
-                                height: '40%',
-                                [`\n              ${ k }-handler-up-inner,\n              ${ k }-handler-down-inner\n            `]: {
-                                    marginInlineEnd: 0,
-                                    fontSize: d.handleFontSize
-                                }
-                            }
-                        },
-                        [`${ k }-handler`]: {
-                            height: '50%',
-                            overflow: 'hidden',
-                            color: u,
-                            fontWeight: 'bold',
-                            lineHeight: 0,
-                            textAlign: 'center',
-                            cursor: 'pointer',
-                            borderInlineStart: `${ l }px ${ m } ${ n }`,
-                            transition: `all ${ v } linear`,
-                            '&:active': {
-                                background: d.colorFillAlter
-                            },
-                            '&:hover': {
-                                height: '60%',
-                                [`\n              ${ k }-handler-up-inner,\n              ${ k }-handler-down-inner\n            `]: {
-                                    color: w
-                                }
-                            },
-                            '&-up-inner, &-down-inner': Object.assign(Object.assign({}, (0, h.resetIcon)()), {
-                                color: u,
-                                transition: `all ${ v } linear`,
-                                userSelect: 'none'
-                            })
-                        },
-                        [`${ k }-handler-up`]: {
-                            borderStartEndRadius: o
-                        },
-                        [`${ k }-handler-down`]: {
-                            borderBlockStart: `${ l }px ${ m } ${ n }`,
-                            borderEndEndRadius: o
-                        },
-                        '&-disabled, &-readonly': {
-                            [`${ k }-handler-wrap`]: {
-                                display: 'none'
-                            }
-                        },
-                        [`\n          ${ k }-handler-up-disabled,\n          ${ k }-handler-down-disabled\n        `]: {
-                            cursor: 'not-allowed'
-                        },
-                        [`\n          ${ k }-handler-up-disabled:hover &-handler-up-inner,\n          ${ k }-handler-down-disabled:hover &-handler-down-inner\n        `]: {
-                            color: A
-                        }
-                    }
-                },
-                {
-                    [`${ k }-borderless`]: {
-                        borderColor: 'transparent',
-                        boxShadow: 'none',
-                        [`${ k }-handler-down`]: {
-                            borderBlockStartWidth: 0
-                        }
-                    }
-                }
-            ];
-        },
-        k = d => {
-            const {
-                componentCls: l,
-                inputPaddingHorizontal: m,
-                inputAffixPadding: n,
-                controlWidth: o,
-                borderRadiusLG: p,
-                borderRadiusSM: q
-            } = d;
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    const j = k => {
+            const {componentCls: l} = k, m = `${ l }-inner`;
             return {
-                [`${ l }-affix-wrapper`]: Object.assign(Object.assign(Object.assign({}, (0, f.genBasicInputStyle)(d)), (0, f.genStatusStyle)(d, `${ l }-affix-wrapper`)), {
-                    position: 'relative',
-                    display: 'inline-flex',
-                    width: o,
-                    padding: 0,
-                    paddingInlineStart: m,
-                    '&-lg': {
-                        borderRadius: p
+                [l]: {
+                    [`&${ l }-small`]: {
+                        minWidth: k.switchMinWidthSM,
+                        height: k.switchHeightSM,
+                        lineHeight: `${ k.switchHeightSM }px`,
+                        [`${ l }-inner`]: {
+                            paddingInlineStart: k.switchInnerMarginMaxSM,
+                            paddingInlineEnd: k.switchInnerMarginMinSM,
+                            [`${ m }-checked`]: {
+                                marginInlineStart: `calc(-100% + ${ k.switchPinSizeSM + 2 * k.switchPadding }px - ${ 2 * k.switchInnerMarginMaxSM }px)`,
+                                marginInlineEnd: `calc(100% - ${ k.switchPinSizeSM + 2 * k.switchPadding }px + ${ 2 * k.switchInnerMarginMaxSM }px)`
+                            },
+                            [`${ m }-unchecked`]: {
+                                marginTop: -k.switchHeightSM,
+                                marginInlineStart: 0,
+                                marginInlineEnd: 0
+                            }
+                        },
+                        [`${ l }-handle`]: {
+                            width: k.switchPinSizeSM,
+                            height: k.switchPinSizeSM
+                        },
+                        [`${ l }-loading-icon`]: {
+                            top: (k.switchPinSizeSM - k.switchLoadingIconSize) / 2,
+                            fontSize: k.switchLoadingIconSize
+                        },
+                        [`&${ l }-checked`]: {
+                            [`${ l }-inner`]: {
+                                paddingInlineStart: k.switchInnerMarginMinSM,
+                                paddingInlineEnd: k.switchInnerMarginMaxSM,
+                                [`${ m }-checked`]: {
+                                    marginInlineStart: 0,
+                                    marginInlineEnd: 0
+                                },
+                                [`${ m }-unchecked`]: {
+                                    marginInlineStart: `calc(100% - ${ k.switchPinSizeSM + 2 * k.switchPadding }px + ${ 2 * k.switchInnerMarginMaxSM }px)`,
+                                    marginInlineEnd: `calc(-100% + ${ k.switchPinSizeSM + 2 * k.switchPadding }px - ${ 2 * k.switchInnerMarginMaxSM }px)`
+                                }
+                            },
+                            [`${ l }-handle`]: { insetInlineStart: `calc(100% - ${ k.switchPinSizeSM + k.switchPadding }px)` }
+                        },
+                        [`&:not(${ l }-disabled):active`]: {
+                            [`&:not(${ l }-checked) ${ m }`]: {
+                                [`${ m }-unchecked`]: {
+                                    marginInlineStart: k.marginXXS / 2,
+                                    marginInlineEnd: -k.marginXXS / 2
+                                }
+                            },
+                            [`&${ l }-checked ${ m }`]: {
+                                [`${ m }-checked`]: {
+                                    marginInlineStart: -k.marginXXS / 2,
+                                    marginInlineEnd: k.marginXXS / 2
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+        }, k = l => {
+            const {componentCls: m} = l;
+            return {
+                [m]: {
+                    [`${ m }-loading-icon${ l.iconCls }`]: {
+                        position: 'relative',
+                        top: (l.switchPinSize - l.fontSize) / 2,
+                        color: l.switchLoadingIconColor,
+                        verticalAlign: 'top'
                     },
-                    '&-sm': {
-                        borderRadius: q
-                    },
-                    [`&:not(${ l }-affix-wrapper-disabled):hover`]: Object.assign(Object.assign({}, (0, f.genHoverStyle)(d)), {
-                        zIndex: 1
-                    }),
-                    '&-focused, &:focus': {
-                        zIndex: 1
-                    },
-                    '&-disabled': {
-                        [`${ l }[disabled]`]: {
-                            background: 'transparent'
+                    [`&${ m }-checked ${ m }-loading-icon`]: { color: l.switchColor }
+                }
+            };
+        }, l = m => {
+            const {componentCls: n} = m, o = `${ n }-handle`;
+            return {
+                [n]: {
+                    [o]: {
+                        position: 'absolute',
+                        top: m.switchPadding,
+                        insetInlineStart: m.switchPadding,
+                        width: m.switchPinSize,
+                        height: m.switchPinSize,
+                        transition: `all ${ m.switchDuration } ease-in-out`,
+                        '&::before': {
+                            position: 'absolute',
+                            top: 0,
+                            insetInlineEnd: 0,
+                            bottom: 0,
+                            insetInlineStart: 0,
+                            backgroundColor: m.colorWhite,
+                            borderRadius: m.switchPinSize / 2,
+                            boxShadow: m.switchHandleShadow,
+                            transition: `all ${ m.switchDuration } ease-in-out`,
+                            content: '""'
                         }
                     },
-                    [`> div${ l }`]: {
-                        width: '100%',
-                        border: 'none',
-                        outline: 'none',
-                        [`&${ l }-focused`]: {
-                            boxShadow: 'none !important'
+                    [`&${ n }-checked ${ o }`]: { insetInlineStart: `calc(100% - ${ m.switchPinSize + m.switchPadding }px)` },
+                    [`&:not(${ n }-disabled):active`]: {
+                        [`${ o }::before`]: {
+                            insetInlineEnd: m.switchHandleActiveInset,
+                            insetInlineStart: 0
+                        },
+                        [`&${ n }-checked ${ o }::before`]: {
+                            insetInlineEnd: 0,
+                            insetInlineStart: m.switchHandleActiveInset
                         }
-                    },
-                    [`input${ l }-input`]: {
-                        padding: 0
-                    },
-                    '&::before': {
-                        width: 0,
-                        visibility: 'hidden',
-                        content: '"\\a0"'
-                    },
-                    [`${ l }-handler-wrap`]: {
-                        zIndex: 2
-                    },
-                    [l]: {
-                        '&-prefix, &-suffix': {
-                            display: 'flex',
-                            flex: 'none',
-                            alignItems: 'center',
+                    }
+                }
+            };
+        }, m = n => {
+            const {componentCls: o} = n, p = `${ o }-inner`;
+            return {
+                [o]: {
+                    [p]: {
+                        display: 'block',
+                        overflow: 'hidden',
+                        borderRadius: 100,
+                        height: '100%',
+                        paddingInlineStart: n.switchInnerMarginMax,
+                        paddingInlineEnd: n.switchInnerMarginMin,
+                        transition: `padding-inline-start ${ n.switchDuration } ease-in-out, padding-inline-end ${ n.switchDuration } ease-in-out`,
+                        [`${ p }-checked, ${ p }-unchecked`]: {
+                            display: 'block',
+                            color: n.colorTextLightSolid,
+                            fontSize: n.fontSizeSM,
+                            transition: `margin-inline-start ${ n.switchDuration } ease-in-out, margin-inline-end ${ n.switchDuration } ease-in-out`,
                             pointerEvents: 'none'
                         },
-                        '&-prefix': {
-                            marginInlineEnd: n
+                        [`${ p }-checked`]: {
+                            marginInlineStart: `calc(-100% + ${ n.switchPinSize + 2 * n.switchPadding }px - ${ 2 * n.switchInnerMarginMax }px)`,
+                            marginInlineEnd: `calc(100% - ${ n.switchPinSize + 2 * n.switchPadding }px + ${ 2 * n.switchInnerMarginMax }px)`
                         },
-                        '&-suffix': {
-                            position: 'absolute',
-                            insetBlockStart: 0,
-                            insetInlineEnd: 0,
-                            zIndex: 1,
-                            height: '100%',
-                            marginInlineEnd: m,
-                            marginInlineStart: n
+                        [`${ p }-unchecked`]: {
+                            marginTop: -n.switchHeight,
+                            marginInlineStart: 0,
+                            marginInlineEnd: 0
+                        }
+                    },
+                    [`&${ o }-checked ${ p }`]: {
+                        paddingInlineStart: n.switchInnerMarginMin,
+                        paddingInlineEnd: n.switchInnerMarginMax,
+                        [`${ p }-checked`]: {
+                            marginInlineStart: 0,
+                            marginInlineEnd: 0
+                        },
+                        [`${ p }-unchecked`]: {
+                            marginInlineStart: `calc(100% - ${ n.switchPinSize + 2 * n.switchPadding }px + ${ 2 * n.switchInnerMarginMax }px)`,
+                            marginInlineEnd: `calc(-100% + ${ n.switchPinSize + 2 * n.switchPadding }px - ${ 2 * n.switchInnerMarginMax }px)`
+                        }
+                    },
+                    [`&:not(${ o }-disabled):active`]: {
+                        [`&:not(${ o }-checked) ${ p }`]: {
+                            [`${ p }-unchecked`]: {
+                                marginInlineStart: 2 * n.switchPadding,
+                                marginInlineEnd: 2 * -n.switchPadding
+                            }
+                        },
+                        [`&${ o }-checked ${ p }`]: {
+                            [`${ p }-checked`]: {
+                                marginInlineStart: 2 * -n.switchPadding,
+                                marginInlineEnd: 2 * n.switchPadding
+                            }
                         }
                     }
+                }
+            };
+        }, n = o => {
+            const {componentCls: p} = o;
+            return {
+                [p]: Object.assign(Object.assign(Object.assign(Object.assign({}, (0, i.resetComponent)(o)), {
+                    position: 'relative',
+                    display: 'inline-block',
+                    boxSizing: 'border-box',
+                    minWidth: o.switchMinWidth,
+                    height: o.switchHeight,
+                    lineHeight: `${ o.switchHeight }px`,
+                    verticalAlign: 'middle',
+                    background: o.colorTextQuaternary,
+                    border: '0',
+                    borderRadius: 100,
+                    cursor: 'pointer',
+                    transition: `all ${ o.motionDurationMid }`,
+                    userSelect: 'none',
+                    [`&:hover:not(${ p }-disabled)`]: { background: o.colorTextTertiary }
+                }), (0, i.genFocusStyle)(o)), {
+                    [`&${ p }-checked`]: {
+                        background: o.switchColor,
+                        [`&:hover:not(${ p }-disabled)`]: { background: o.colorPrimaryHover }
+                    },
+                    [`&${ p }-loading, &${ p }-disabled`]: {
+                        cursor: 'not-allowed',
+                        opacity: o.switchDisabledOpacity,
+                        '*': {
+                            boxShadow: 'none',
+                            cursor: 'not-allowed'
+                        }
+                    },
+                    [`&${ p }-rtl`]: { direction: 'rtl' }
                 })
             };
         };
-    var l = (0, g.default)('InputNumber', d => {
-        const m = (0, f.initInputToken)(d);
+    var _o = (0, g.default)('Switch', p => {
+        const q = p.fontSize * p.lineHeight, r = p.controlHeight / 2, s = q - 4, t = r - 4, u = (0, h.merge)(p, {
+                switchMinWidth: 2 * s + 8,
+                switchHeight: q,
+                switchDuration: p.motionDurationMid,
+                switchColor: p.colorPrimary,
+                switchDisabledOpacity: p.opacityLoading,
+                switchInnerMarginMin: s / 2,
+                switchInnerMarginMax: s + 2 + 4,
+                switchPadding: 2,
+                switchPinSize: s,
+                switchBg: p.colorBgContainer,
+                switchMinWidthSM: 2 * t + 4,
+                switchHeightSM: r,
+                switchInnerMarginMinSM: t / 2,
+                switchInnerMarginMaxSM: t + 2 + 4,
+                switchPinSizeSM: t,
+                switchHandleShadow: `0 2px 4px 0 ${ new (0, f.TinyColor)('#00230b').setAlpha(0.2).toRgbString() }`,
+                switchLoadingIconSize: 0.75 * p.fontSizeIcon,
+                switchLoadingIconColor: `rgba(0, 0, 0, ${ p.opacityLoading })`,
+                switchHandleActiveInset: '-30%'
+            });
         return [
-            j(m),
-            k(m),
-            (0, i.genCompactItemStyle)(m)
+            n(u),
+            m(u),
+            l(u),
+            k(u),
+            j(u)
         ];
-    }, d => ({
-        controlWidth: 90,
-        handleWidth: d.controlHeightSM - 2 * d.lineWidth,
-        handleFontSize: d.fontSize / 2,
-        handleVisible: 'auto'
-    }));
+    });
 });

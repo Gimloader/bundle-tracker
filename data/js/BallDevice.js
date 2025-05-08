@@ -6,43 +6,29 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('JaOuz', function(d, e) {
+c.register('.....', function (d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'BallDevice', function() {
+    }), a(d.exports, 'BallDevice', function () {
         return _u;
-    }), a(d.exports, 'default', function() {
+    }), a(d.exports, 'default', function () {
         return _v;
     });
-    var g = c('s/YA9'),
-        h = c('ltxDW'),
-        i = c('gOsQ0'),
-        j = c('8cAL6'),
-        k = c('WsVR5'),
-        l = c('2V/oD'),
-        m = c('WSTcp'),
-        n = c('dy5+h'),
-        o = c('UkCpC'),
-        p = c('hycyg'),
-        q = c('uc4mA17'),
-        r = c('u/WlI21'),
-        s = c('qtqgb'),
-        t = c('mNtet');
+    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....');
     class _u extends h.default {
         constructor(v) {
-            if (super(v), (0, g.default)(this, 'onUpdate', v => {
-                    this.movement.update(v), this.animations.update(v), this.rotation.update(), (0, s.UpdateShadow)(this), (0, n.UpdateDepth)(this);
-                }), (0, g.default)(this, 'onStateChange', v => {
-                    'x' === v && this.movement.setTargetX(this.state.x), 'y' === v && this.movement.setTargetY(this.state.y), 'active' === v && this.updateActive();
+            if (super(v), (0, g.default)(this, 'onUpdate', w => {
+                    this.movement.update(w), this.animations.update(w), this.rotation.update(), (0, s.UpdateShadow)(this), (0, n.UpdateDepth)(this);
+                }), (0, g.default)(this, 'onStateChange', w => {
+                    'x' === w && this.movement.setTargetX(this.state.x), 'y' === w && this.movement.setTargetY(this.state.y), 'active' === w && this.updateActive();
                 }), (0, g.default)(this, 'updateActive', () => {
-                    (0, o.InPreGamePhase)() && (0, p.isPublishedVersion)() ? this.container.view.alpha = 1: (0, o.InPreGamePhase)() ? this.container.view.alpha = this.options.activeOnStart ? 1 : 0.5 : this.container.view.alpha = this.state.active ? 1 : 0;
+                    (0, o.InPreGamePhase)() && (0, p.isPublishedVersion)() ? this.container.view.alpha = 1 : (0, o.InPreGamePhase)() ? this.container.view.alpha = this.options.activeOnStart ? 1 : 0.5 : this.container.view.alpha = this.state.active ? 1 : 0;
                 }), (0, g.default)(this, 'hide', () => {
                     this.tweens.add({
                         targets: this.container2.view,
@@ -68,17 +54,17 @@ c.register('JaOuz', function(d, e) {
                         alpha: 1,
                         duration: 100
                     });
-                }), (0, g.default)(this, 'fakeProjectileExplosionCallback', v => {
+                }), (0, g.default)(this, 'fakeProjectileExplosionCallback', w => {
                     const {
-                        x: w,
-                        y: x
-                    } = v, y = Phaser.Math.Angle.Between(w, x, this.container.view.x, this.container.view.y);
-                    this.animations.hit(y);
-                }), (0, g.default)(this, 'onMessage', v => {
-                    'goal' === v.key && (this.hide(), setTimeout(() => {
+                            x: x,
+                            y: y
+                        } = w, z = Phaser.Math.Angle.Between(x, y, this.container.view.x, this.container.view.y);
+                    this.animations.hit(z);
+                }), (0, g.default)(this, 'onMessage', w => {
+                    'goal' === w.key && (this.hide(), setTimeout(() => {
                         this.isDestroyed || this.particles.burst(this.container.view.x, this.container.view.y, this.container.view.depth);
-                    }, 250)), 'reset' === v.key && (this.movement.onReset(), this.show());
-                }), (0, m.CreateVisuals)(this), (0, t.SetupProjectiles)(this), this.movement = new(0, i.BallMovement)(this), this.animations = new(0, j.BallAnimations)(this), this.rotation = new(0, k.BallRotation)(this), this.particles = new(0, l.BallDeviceParticles)(this), this.updateActive(), (0, o.InPreGamePhase)() && (0, p.isSavedVersion)()) {
+                    }, 250)), 'reset' === w.key && (this.movement.onReset(), this.show());
+                }), (0, m.CreateVisuals)(this), (0, t.SetupProjectiles)(this), this.movement = new (0, i.BallMovement)(this), this.animations = new (0, j.BallAnimations)(this), this.rotation = new (0, k.BallRotation)(this), this.particles = new (0, l.BallDeviceParticles)(this), this.updateActive(), (0, o.InPreGamePhase)() && (0, p.isSavedVersion)()) {
                 const w = (0, q.FetchOptionSchemaProperty)(this, 'radius');
                 this.visualEditing.add.circle({
                     angle: 0,
@@ -86,22 +72,20 @@ c.register('JaOuz', function(d, e) {
                     radius: this.options.radius,
                     minRadius: w.min,
                     maxRadius: w.max,
-                    onChange: w => {
-                        (0, r.ReplaceVisualEditingPreview)(w.x, w.y, {
-                            radius: w.radius
-                        });
+                    onChange: x => {
+                        (0, r.ReplaceVisualEditingPreview)(x.x, x.y, { radius: x.radius });
                     }
                 });
             }
         }
     }
     var _v = _u;
-}), c.register('gOsQ0', function(d, e) {
-    a(d.exports, 'BallMovement', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'BallMovement', function () {
         return _h;
     });
-    var f = c('s/YA9');
-    const g = 1000 / c('C+MU+').PhysicsConstants.tickRate;
+    var f = c('.....');
+    const g = 1000 / c('.....').PhysicsConstants.tickRate;
     class _h {
         constructor(i) {
             (0, f.default)(this, 'targetX', 0), (0, f.default)(this, 'targetY', 0), (0, f.default)(this, 'targetIsDirty', !1), (0, f.default)(this, 'pointMap', []), (0, f.default)(this, 'currentPoint', null), (0, f.default)(this, 'currentTime', 0), (0, f.default)(this, 'moveToTargetPosition', () => {
@@ -114,9 +98,7 @@ c.register('JaOuz', function(d, e) {
                         return this.pointMap.shift(), this.ball.container.view.x = j.endX, this.ball.container.view.y = j.endY, void this.moveToTargetPosition();
                     if (j.startTime <= k) {
                         this.currentPoint = j;
-                        const l = Phaser.Math.Percent(k, j.startTime, j.endTime),
-                            m = Phaser.Math.Linear(j.startX, j.endX, l),
-                            n = Phaser.Math.Linear(j.startY, j.endY, l);
+                        const l = Phaser.Math.Percent(k, j.startTime, j.endTime), m = Phaser.Math.Linear(j.startX, j.endX, l), n = Phaser.Math.Linear(j.startY, j.endY, l);
                         this.ball.container.view.x = m, this.ball.container.view.y = n;
                     }
                 }
@@ -130,44 +112,42 @@ c.register('JaOuz', function(d, e) {
                         end: j + g
                     };
                 }
-                const j = this.pointMap[this.pointMap.length - 1];
+                const k = this.pointMap[this.pointMap.length - 1];
                 return {
-                    x: j.endX,
-                    y: j.endY,
-                    start: j.endTime,
-                    end: j.endTime + g
+                    x: k.endX,
+                    y: k.endY,
+                    start: k.endTime,
+                    end: k.endTime + g
                 };
-            }), (0, f.default)(this, 'update', i => {
-                if (this.currentTime += i, this.targetIsDirty) {
+            }), (0, f.default)(this, 'update', j => {
+                if (this.currentTime += j, this.targetIsDirty) {
                     this.targetIsDirty = !1;
-                    const j = this.getCurrentEndInfo();
+                    const k = this.getCurrentEndInfo();
                     this.pointMap.push({
-                        startX: j.x,
-                        startY: j.y,
+                        startX: k.x,
+                        startY: k.y,
                         endX: this.targetX,
                         endY: this.targetY,
-                        startTime: j.start,
-                        endTime: j.end
+                        startTime: k.start,
+                        endTime: k.end
                     });
                 }
                 this.moveToTargetPosition();
             }), (0, f.default)(this, 'onReset', () => {
                 this.pointMap = [], this.ball.container.view.x = this.ball.x, this.ball.container.view.y = this.ball.y, this.targetX = this.ball.x, this.targetY = this.ball.y;
-            }), (0, f.default)(this, 'setTargetX', i => {
-                this.targetX !== i && (this.targetX = i, this.targetIsDirty = !0);
-            }), (0, f.default)(this, 'setTargetY', i => {
-                this.targetY !== i && (this.targetY = i, this.targetIsDirty = !0);
+            }), (0, f.default)(this, 'setTargetX', j => {
+                this.targetX !== j && (this.targetX = j, this.targetIsDirty = !0);
+            }), (0, f.default)(this, 'setTargetY', j => {
+                this.targetY !== j && (this.targetY = j, this.targetIsDirty = !0);
             }), this.ball = i, this.targetX = i.x, this.targetY = i.y;
         }
     }
-}), c.register('8cAL6', function(d, e) {
-    a(d.exports, 'BallAnimations', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'BallAnimations', function () {
         return _j;
     });
-    var f = c('s/YA9'),
-        g = c('n6eIK');
-    const h = 175,
-        i = 100;
+    var f = c('.....'), g = c('.....');
+    const h = 175, i = 100;
     class _j {
         constructor(k) {
             (0, f.default)(this, 'ballHeight', 0), (0, f.default)(this, 'squeezeScale', 1), (0, f.default)(this, 'cumulTime', 0), (0, f.default)(this, 'hitTimeHeight', 0), (0, f.default)(this, 'hitTimeScale', 0), (0, f.default)(this, 'updateScale', () => {
@@ -180,15 +160,15 @@ c.register('JaOuz', function(d, e) {
                     return;
                 const l = this.cumulTime - this.hitTimeHeight;
                 this.ballHeight = l < h ? g.BallConsts.animation.maxHeight * Math.sin(l * Math.PI / 2 / h) : g.BallConsts.animation.maxHeight - Phaser.Math.Easing.Bounce.Out(Math.min(1, (l - h) / 1000)) * g.BallConsts.animation.maxHeight, this.ball.ball.view.y = -this.ballHeight, this.ball.frame.view.y = -this.ballHeight;
-            }), (0, f.default)(this, 'update', k => {
-                this.cumulTime += k * g.BallConsts.animation.timeScale, this.updateScale(), this.updateHeight();
-            }), (0, f.default)(this, 'hit', k => {
-                this.hitTimeHeight = this.cumulTime - 350 * Math.asin(this.ballHeight / g.BallConsts.animation.maxHeight) / Math.PI, this.hitTimeScale = this.cumulTime - 200 * Math.asin((1 - this.squeezeScale) / (1 - g.BallConsts.animation.hitScale)) / Math.PI, this.ball.container.view.rotation = k, this.ball.container2.view.rotation = -k;
+            }), (0, f.default)(this, 'update', l => {
+                this.cumulTime += l * g.BallConsts.animation.timeScale, this.updateScale(), this.updateHeight();
+            }), (0, f.default)(this, 'hit', l => {
+                this.hitTimeHeight = this.cumulTime - 350 * Math.asin(this.ballHeight / g.BallConsts.animation.maxHeight) / Math.PI, this.hitTimeScale = this.cumulTime - 200 * Math.asin((1 - this.squeezeScale) / (1 - g.BallConsts.animation.hitScale)) / Math.PI, this.ball.container.view.rotation = l, this.ball.container2.view.rotation = -l;
             }), this.ball = k;
         }
     }
-}), c.register('n6eIK', function(d, e) {
-    a(d.exports, 'BallConsts', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'BallConsts', function () {
         return _f;
     });
     const _f = {
@@ -199,36 +179,29 @@ c.register('JaOuz', function(d, e) {
             animateShadow: !0
         }
     };
-}), c.register('WsVR5', function(d, e) {
-    a(d.exports, 'BallRotation', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'BallRotation', function () {
         return _g;
     });
-    var f = c('s/YA9');
+    var f = c('.....');
     class _g {
         constructor(h) {
             (0, f.default)(this, 'prevX', 0), (0, f.default)(this, 'prevY', 0), (0, f.default)(this, 'cumulX', 0), (0, f.default)(this, 'cumulY', 0), (0, f.default)(this, 'update', () => {
-                let i = this.prevX - this.ball.container.view.x,
-                    j = this.prevY - this.ball.container.view.y;
-                const k = this.ball.ball.view.rotation - 2 * i / this.ball.options.radius,
-                    l = 520 / this.ball.options.radius * 0.00075;
+                let i = this.prevX - this.ball.container.view.x, j = this.prevY - this.ball.container.view.y;
+                const k = this.ball.ball.view.rotation - 2 * i / this.ball.options.radius, l = 520 / this.ball.options.radius * 0.00075;
                 this.cumulX += j * l * Math.sin(k), this.cumulY += j * l * Math.cos(k), this.ball.ball.view.setData('uAlpha', this.ball.container2.view.alpha), this.ball.ball.view.setData('uShiftX', this.cumulX), this.ball.ball.view.setData('uShiftY', this.cumulY), this.ball.ball.view.rotation = k, this.prevX = this.ball.container.view.x, this.prevY = this.ball.container.view.y;
             }), this.ball = h, this.prevX = h.x, this.prevY = h.y;
         }
     }
-}), c.register('2V/oD', function(d, e) {
-    a(d.exports, 'BallDeviceParticles', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'BallDeviceParticles', function () {
         return _l;
     });
-    var f = c('s/YA9'),
-        g = c('ddhGF'),
-        h = c('UkCpC'),
-        i = c('UaUBz0'),
-        j = c('k/JOU'),
-        k = c('hycyg');
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
     class _l {
         constructor(m) {
-            (0, f.default)(this, 'burst', (m, b, c) => {
-                this.emitter && (this.emitter.setPosition(m, b), this.emitter.setDepth(c), this.emitter.explode(250));
+            (0, f.default)(this, 'burst', (n, o, p) => {
+                this.emitter && (this.emitter.setPosition(n, o), this.emitter.setDepth(p), this.emitter.explode(250));
             }), (0, f.default)(this, 'destroy', () => {
                 this.emitter && this.emitter.destroy(!0);
             }), (0, f.default)(this, 'load', () => {
@@ -257,149 +230,137 @@ c.register('JaOuz', function(d, e) {
             }), this.device = m, this.load();
         }
     }
-}), c.register('WSTcp', function(d, e) {
-    a(d.exports, 'CreateVisuals', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'CreateVisuals', function () {
         return _j;
     });
-    var f = c('fUuS9'),
-        g = c('heTaO'),
-        h = c('dy5+h'),
-        i = c('UaUBz0');
-    const _j = a => {
-        a.container = a.parts.add.container({}), a.container2 = a.parts.add.container({
-            parent: a.container.view
-        }), a.container.view.x = a.x, a.container.view.y = a.y;
-        const k = (0, i.default)(`devices/ball/${ a.options.appearance }.png`);
-        a.ball = a.parts.add.sprite({
-            imageId: k,
-            imageUrl: k,
-            parent: a.container2.view,
-            onReady: k => {
-                k.view.x = 0, k.view.y = 0;
-                const l = (0, g.default)().renderer.pipelines.get('Ball');
-                k.view.setData('uAlpha', a.isPreview ? 0.6 : 1), k.view.setData('uShiftX', 0), k.view.setData('uShiftY', 0), k.view.setPipeline(l);
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    const _j = k => {
+        k.container = k.parts.add.container({}), k.container2 = k.parts.add.container({ parent: k.container.view }), k.container.view.x = k.x, k.container.view.y = k.y;
+        const l = (0, i.default)(`devices/ball/${ k.options.appearance }.png`);
+        k.ball = k.parts.add.sprite({
+            imageId: l,
+            imageUrl: l,
+            parent: k.container2.view,
+            onReady: m => {
+                m.view.x = 0, m.view.y = 0;
+                const n = (0, g.default)().renderer.pipelines.get('Ball');
+                m.view.setData('uAlpha', k.isPreview ? 0.6 : 1), m.view.setData('uShiftX', 0), m.view.setData('uShiftY', 0), m.view.setPipeline(n);
             }
-        }), a.frame = a.parts.add.sprite({
+        }), k.frame = k.parts.add.sprite({
             ...f.BlastBallAssets.frame,
-            parent: a.container2.view,
-            onReady: a => {
-                a.view.x = 0, a.view.y = 0;
+            parent: k.container2.view,
+            onReady: m => {
+                m.view.x = 0, m.view.y = 0;
             }
-        }), a.ball.view.setScale(a.options.radius / 1700), a.frame.view.setScale(a.options.radius / 250), a.cull.ignoreCulling(), (0, h.UpdateDepth)(a), a.shadow = a.shadows.add({
+        }), k.ball.view.setScale(k.options.radius / 1700), k.frame.view.setScale(k.options.radius / 250), k.cull.ignoreCulling(), (0, h.UpdateDepth)(k), k.shadow = k.shadows.add({
             r1: 85,
             r2: 30,
             x: 0,
             y: 75
         });
     };
-}), c.register('fUuS9', function(d, e) {
-    a(d.exports, 'BlastBallAssets', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'BlastBallAssets', function () {
         return _g;
     });
-    var f = c('UaUBz0');
+    var f = c('.....');
     const _g = {
         frame: {
             imageId: (0, f.default)('devices/ball/ball_circle.png'),
             imageUrl: (0, f.default)('devices/ball/ball_circle.png')
         }
     };
-}), c.register('dy5+h', function(d, e) {
-    a(d.exports, 'UpdateDepth', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'UpdateDepth', function () {
         return _h;
     });
-    var f = c('mSv2o'),
-        g = c('GIe9o');
-    const _h = a => {
-        a.container.view.setDepth((0, f.GetGlobalDepth)(a.container.view.y + 0.75 * a.options.radius, g.default.DepthSortedCharactersAndDevices));
+    var f = c('.....'), g = c('.....');
+    const _h = i => {
+        i.container.view.setDepth((0, f.GetGlobalDepth)(i.container.view.y + 0.75 * i.options.radius, g.default.DepthSortedCharactersAndDevices));
     };
-}), c.register('uc4mA17', function(d, e) {
-    a(d.exports, 'FetchOptionSchemaProperty', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'FetchOptionSchemaProperty', function () {
         return _f;
     });
-    const _f = (a, d) => {
-        var g, h, i;
-        const j = a.deviceOption.optionSchema.options.find(a => a.key === d);
+    const _f = (g, h) => {
+        var i, j, k;
+        const l = g.deviceOption.optionSchema.options.find(m => m.key === h);
         return {
-            min: null === (g = null == j ? void 0 : j.option.props) || void 0 === g ? void 0 : g.min,
-            max: null === (h = null == j ? void 0 : j.option.props) || void 0 === h ? void 0 : h.max,
-            step: null === (i = null == j ? void 0 : j.option.props) || void 0 === i ? void 0 : i.step
+            min: null === (i = null == l ? void 0 : l.option.props) || void 0 === i ? void 0 : i.min,
+            max: null === (j = null == l ? void 0 : l.option.props) || void 0 === j ? void 0 : j.max,
+            step: null === (k = null == l ? void 0 : l.option.props) || void 0 === k ? void 0 : k.step
         };
     };
-}), c.register('u/WlI21', function(d, e) {
-    a(d.exports, 'ReplaceVisualEditingPreview', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'ReplaceVisualEditingPreview', function () {
         return _j;
     });
-    var f = c('hemXM'),
-        g = c('sWmxu5'),
-        h = c('EzUqb'),
-        i = c('GQMbT');
-    const _j = (a, d, c) => {
-        const k = (0, i.FetchVisualEditingPreview)(),
-            l = (0, h.FetchCurrentlyEditedDevice)();
-        if (!l || !k)
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    const _j = (k, l, m) => {
+        const n = (0, i.FetchVisualEditingPreview)(), o = (0, h.FetchCurrentlyEditedDevice)();
+        if (!o || !n)
             return;
-        const m = l.layers.isOnNaturalDepth() ? void 0 : d + l.layers.getDepthShift();
+        const p = o.layers.isOnNaturalDepth() ? void 0 : l + o.layers.getDepthShift();
         (0, g.default)({
-            deviceOption: k.deviceOption,
+            deviceOption: n.deviceOption,
             id: f.VisualEditingConstants.previewId,
-            x: a,
-            y: d,
-            depth: m,
-            layerId: l.layers.getLayer(),
-            name: k.name,
+            x: k,
+            y: l,
+            depth: p,
+            layerId: o.layers.getLayer(),
+            name: n.name,
             isPreview: !0,
             options: {
-                ...k.options,
-                ...c
+                ...n.options,
+                ...m
             },
             placedByClient: !0,
-            state: k.deviceOption.defaultState
+            state: n.deviceOption.defaultState
         });
     };
-}), c.register('sWmxu5', function(d, e) {
-    a(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _h;
     });
-    var f = c('heTaO'),
-        g = c('2LtPo');
-    var _h = a => {
-        (0, f.default)().worldManager.devices.getDeviceById(a.id) && (0, g.default)(a);
+    var f = c('.....'), g = c('.....');
+    var _h = i => {
+        (0, f.default)().worldManager.devices.getDeviceById(i.id) && (0, g.default)(i);
     };
-}), c.register('qtqgb', function(d, e) {
-    a(d.exports, 'UpdateShadow', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'UpdateShadow', function () {
         return _g;
     });
-    var f = c('n6eIK');
-    const _g = a => {
-        if (!a.shadow)
+    var f = c('.....');
+    const _g = h => {
+        if (!h.shadow)
             return;
-        if (a.shadow.x = a.container.view.x, a.shadow.y = a.container.view.y + 0.9 * a.options.radius, !1 === f.BallConsts.animation.animateShadow)
+        if (h.shadow.x = h.container.view.x, h.shadow.y = h.container.view.y + 0.9 * h.options.radius, !1 === f.BallConsts.animation.animateShadow)
             return;
-        const h = 1 - 0.2 * a.animations.ballHeight / f.BallConsts.animation.maxHeight;
-        a.shadow.r1 = 1 * h * a.container2.view.scaleX * a.options.radius, a.shadow.r2 = 0.4 * h * a.container2.view.scaleY * a.options.radius, a.shadow.alphaMultip = a.container2.view.alpha * a.container.view.alpha;
+        const i = 1 - 0.2 * h.animations.ballHeight / f.BallConsts.animation.maxHeight;
+        h.shadow.r1 = 1 * i * h.container2.view.scaleX * h.options.radius, h.shadow.r2 = 0.4 * i * h.container2.view.scaleY * h.options.radius, h.shadow.alphaMultip = h.container2.view.alpha * h.container.view.alpha;
     };
-}), c.register('mNtet', function(d, e) {
-    a(d.exports, 'SetupProjectiles', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'SetupProjectiles', function () {
         return _h;
     });
-    var f = c('UkCpC'),
-        g = c('hycyg');
-    const _h = a => {
-        (0, f.InPreGamePhase)() && !(0, g.isPublishedVersion)() || (a.projectiles.setDynamic(!0), a.projectiles.collidesWithProjectile = d => {
+    var f = c('.....'), g = c('.....');
+    const _h = i => {
+        (0, f.InPreGamePhase)() && !(0, g.isPublishedVersion)() || (i.projectiles.setDynamic(!0), i.projectiles.collidesWithProjectile = j => {
             const {
-                x: i,
-                y: j,
-                radius: k
-            } = d;
-            if (a.container2.view.alpha < 0.5 || !a.state.active)
+                x: k,
+                y: l,
+                radius: m
+            } = j;
+            if (i.container2.view.alpha < 0.5 || !i.state.active)
                 return !1;
-            return Phaser.Math.Distance.Between(i, j, a.container.view.x, a.container.view.y) < a.options.radius + k;
-        }, a.projectiles.onClientPredictedHit = d => {
+            return Phaser.Math.Distance.Between(k, l, i.container.view.x, i.container.view.y) < i.options.radius + m;
+        }, i.projectiles.onClientPredictedHit = j => {
             const {
-                x: i,
-                y: j
-            } = d, k = Phaser.Math.Angle.Between(i, j, a.container.view.x, a.container.view.y);
-            a.animations.hit(k);
+                    x: k,
+                    y: l
+                } = j, m = Phaser.Math.Angle.Between(k, l, i.container.view.x, i.container.view.y);
+            i.animations.hit(m);
         });
     };
 });

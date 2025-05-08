@@ -7,27 +7,16 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('jQfiv', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _u;
     });
-    var f = b('gRbUn'),
-        g = b('O0Kav'),
-        h = b('u4s09'),
-        i = b('AE7vR'),
-        j = b('yruHD'),
-        k = b('6jmvl'),
-        l = b('quE27'),
-        m = b('Eh2Wh'),
-        n = b('8KqQ+'),
-        o = b('RJBHf'),
-        p = b('nKuOQ'),
-        q = b('KxkP827');
-    let r, s, t = a => a;
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....');
+    let r, s, t = u => u;
     var _u = (0, k.observer)(() => {
         const v = (0, l.getUrlVariable)('session_id');
         g.useEffect(() => {
@@ -38,9 +27,7 @@ b.register('jQfiv', function(c, d) {
                 children: v ? (0, f.jsxs)('div', {
                     className: 'maxWidth flex hc vc flex-column',
                     children: [
-                        (0, f.jsx)(j.default, {
-                            size: 'large'
-                        }),
+                        (0, f.jsx)(j.default, { size: 'large' }),
                         (0, l.isLoggedIn)() && (0, f.jsx)('div', {
                             style: {
                                 fontSize: 23,
@@ -49,15 +36,11 @@ b.register('jQfiv', function(c, d) {
                             children: 'Upgrading your account...'
                         }),
                         (0, f.jsx)('div', {
-                            style: {
-                                fontSize: 16
-                            },
+                            style: { fontSize: 16 },
                             children: 'Please don\'t close this tab'
                         })
                     ]
-                }) : (i.default.error({
-                    title: 'An error ocurred during checkout. Please contact customer support'
-                }), null)
+                }) : (i.default.error({ title: 'An error ocurred during checkout. Please contact customer support' }), null)
             })
         });
     });
@@ -69,10 +52,7 @@ b.register('jQfiv', function(c, d) {
   display: flex;
   justify-content: center;
   align-items: center;
-`)),
-        _w = h.default.div.attrs({
-            className: 'scroll-y'
-        })(s || (s = t`
+`)), _w = h.default.div.attrs({ className: 'scroll-y' })(s || (s = t`
   background: ${ 0 };
   padding: 20px;
   border-radius: 5px;
@@ -83,30 +63,24 @@ b.register('jQfiv', function(c, d) {
   font-family: ${ 0 };
   color: ${ 0 };
 `), n.default.White, m.Fonts.SFPro, n.default.Black);
-}), b.register('RJBHf', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _l;
     });
-    var e = b('quE27'),
-        f = b('8yIOR0'),
-        g = b('nKuOQ'),
-        h = b('+/x68'),
-        i = b('AE7vR'),
-        j = b('KxkP827'),
-        k = b('IMf/b4');
-    var _l = a => {
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....');
+    var _l = m => {
         f.default.navigation.loadingTokenSubmit = !0;
         (0, e.verifyStripe)({
-            sessionId: a,
+            sessionId: m,
             onSuccess: (0, e.isLoggedIn)() ? () => {
-                const m = (0, e.isUpgraded)();
+                const n = (0, e.isUpgraded)();
                 (0, h.default)({
                     onSuccess: () => {
-                        var n;
-                        m || (0, k.AnalyticsTrackEvent)({
+                        var o;
+                        n || (0, k.AnalyticsTrackEvent)({
                             event: 'upgrade',
                             properties: {
-                                plan: null === (n = (0, e.getUser)()) || void 0 === n ? void 0 : n.type,
+                                plan: null === (o = (0, e.getUser)()) || void 0 === o ? void 0 : o.type,
                                 source: 'individual'
                             },
                             forcePostHog: !0
@@ -127,9 +101,9 @@ b.register('jQfiv', function(c, d) {
                     onOk: () => (0, j.NavigateTo)(g.HOMEPAGE)
                 });
             },
-            onError: a => {
+            onError: n => {
                 f.default.navigation.loadingTokenSubmit = !1, (0, e.throwMessageError)({
-                    e: a,
+                    e: n,
                     default: {
                         title: 'Error ocurred when upgrading account',
                         content: 'An error ocurred on our end while upgrading your account. Please contact support.'
@@ -138,49 +112,45 @@ b.register('jQfiv', function(c, d) {
             }
         });
     };
-}), b.register('8yIOR0', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _g;
     });
-    var e = b('7N+Pu0'),
-        f = b('McWWb0');
+    var e = b('.....'), f = b('.....');
     var _g = {
-        navigation: new(0, e.default)(),
-        checkout: new(0, f.default)()
+        navigation: new (0, e.default)(),
+        checkout: new (0, f.default)()
     };
-}), b.register('7N+Pu0', function(c, d) {
-    a(c.exports, 'Screen', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'Screen', function () {
         return _g;
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _l;
     });
-    var e = b('4F2ZN'),
-        f = b('JkQCT');
+    var e = b('.....'), f = b('.....');
     let _g;
     (_g || (_g = {})).checkout = 'checkout';
     const h = {
             screen: _g.checkout,
             loadingTokenSubmit: !1
-        },
-        {
+        }, {
             screen: i,
             loadingTokenSubmit: j
         } = h;
     class k {
         constructor() {
             this.screen = i, this.loadingTokenSubmit = j, this.reset = () => {
-                Object.keys(h).forEach(a => this[a] = h[a]);
+                Object.keys(h).forEach(l => this[l] = h[l]);
             }, (0, f.makeObservable)(this);
         }
     }
     (0, e.__decorate)([f.observable], k.prototype, 'screen', void 0), (0, e.__decorate)([f.observable], k.prototype, 'loadingTokenSubmit', void 0), (0, e.__decorate)([f.action], k.prototype, 'reset', void 0);
     var _l = k;
-}), b.register('McWWb0', function(c, d) {
-    a(c.exports, 'default', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
         return _w;
     });
-    var e = b('4F2ZN'),
-        f = b('JkQCT');
+    var e = b('.....'), f = b('.....');
     const g = {
             planName: '',
             planId: '',
@@ -196,8 +166,7 @@ b.register('jQfiv', function(c, d) {
             couponIsOnlyForPlan: '',
             existingPayingPlan: '',
             stripePublicKey: ''
-        },
-        {
+        }, {
             planName: h,
             planId: i,
             couponId: j,
@@ -220,38 +189,27 @@ b.register('jQfiv', function(c, d) {
         }
         constructor() {
             this.planName = h, this.planId = i, this.couponId = j, this.planCost = k, this.planDescription = l, this.accountCredit = m, this.percentageOff = n, this.amountOff = o, this.couponDescription = p, this.hasCoupon = q, this.couponOneUseOnly = r, this.couponIsOnlyForPlan = s, this.existingPayingPlan = t, this.stripePublicKey = u, this.reset = () => {
-                Object.keys(g).forEach(a => {
-                    this[a] = g[a];
+                Object.keys(g).forEach(w => {
+                    this[w] = g[w];
                 });
             }, (0, f.makeObservable)(this);
         }
     }
     (0, e.__decorate)([f.observable], v.prototype, 'planName', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planCost', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'accountCredit', void 0), (0, e.__decorate)([f.observable], v.prototype, 'percentageOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'amountOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'hasCoupon', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponOneUseOnly', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponIsOnlyForPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'existingPayingPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'stripePublicKey', void 0), (0, e.__decorate)([f.computed], v.prototype, 'totalCost', null), (0, e.__decorate)([f.action], v.prototype, 'reset', void 0);
     var _w = v;
-}), b.register('KxkP827', function(c, d) {
-    a(c.exports, 'NavigateTo', function() {
-        return _f;
-    });
-    var e = b('qb3Ih');
-    const _f = a => {
-        e.history.push(a);
-    };
-}), b.register('IMf/b4', function(c, d) {
-    a(c.exports, 'AnalyticsTrackEvent', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'AnalyticsTrackEvent', function () {
         return _i;
     });
-    var e = b('gK+6L'),
-        f = b('quE27'),
-        g = b('95m0H'),
-        h = b('50Ts4');
-    const _i = a => {
-        var j, k, l;
-        if ((window.gtag && !(null === (j = a.blockedSource) || void 0 === j ? void 0 : j.google) && window.gtag('event', a.event, a.properties), g.AnalyticsFlags.educatorOnly) && (null === (l = (0, f.getUser)()) || void 0 === l ? void 0 : l.accountType) !== e.default.educator)
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    const _i = j => {
+        var k, l, m;
+        if ((window.gtag && !(null === (k = j.blockedSource) || void 0 === k ? void 0 : k.google) && window.gtag('event', j.event, j.properties), g.AnalyticsFlags.educatorOnly) && (null === (m = (0, f.getUser)()) || void 0 === m ? void 0 : m.accountType) !== e.default.educator)
             return;
-        (null === (k = a.blockedSource) || void 0 === k ? void 0 : k.posthog) || (0, h.TrackPostHogEvent)({
-            event: a.event,
-            properties: a.properties,
-            force: a.forcePostHog
+        (null === (l = j.blockedSource) || void 0 === l ? void 0 : l.posthog) || (0, h.TrackPostHogEvent)({
+            event: j.event,
+            properties: j.properties,
+            force: j.forcePostHog
         });
     };
 });

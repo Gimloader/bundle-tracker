@@ -6,28 +6,19 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
-
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('JIwzI', function(d, e) {
+c.register('.....', function (d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function() {
+    }), a(d.exports, 'default', function () {
         return _q;
     });
-    var g = c('s/YA9'),
-        h = c('UkCpC'),
-        i = c('ltxDW'),
-        j = c('gl6Wg'),
-        k = c('bMaPZ2'),
-        l = c('hycyg'),
-        m = c('73Aki'),
-        n = c('UaUBz0'),
-        o = c('AHhkR');
+    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....');
     class p extends i.default {
         constructor(q) {
             if (super(q), (0, g.default)(this, 'openDeviceUI', () => {
@@ -38,15 +29,11 @@ c.register('JIwzI', function(d, e) {
                         closableByUser: this.options.closableByUser,
                         code: this.options.code
                     });
-                }), (0, g.default)(this, 'callAction', q => {
-                    this.sendToServerDevice(j.Messages.callAction, {
-                        calledActionName: q
-                    });
-                }), (0, k.default)({
-                    familyName: this.options.defaultFontFamily
-                }), (0, h.InPreGamePhase)() && (0, l.isSavedVersion)()) {
+                }), (0, g.default)(this, 'callAction', r => {
+                    this.sendToServerDevice(j.Messages.callAction, { calledActionName: r });
+                }), (0, k.default)({ familyName: this.options.defaultFontFamily }), (0, h.InPreGamePhase)() && (0, l.isSavedVersion)()) {
                 const r = o.default.Overlay;
-                new(0, m.default)({
+                new (0, m.default)({
                     device: this,
                     baseColor: r.baseColor,
                     boxColor: r.boxColor,
@@ -61,31 +48,28 @@ c.register('JIwzI', function(d, e) {
         }
     }
     var _q = p;
-}), c.register('gl6Wg', function(d, e) {
+}), c.register('.....', function (d, e) {
     let f;
-    a(d.exports, 'Messages', function() {
+    a(d.exports, 'Messages', function () {
         return f;
     }), (f || (f = {})).callAction = 'callAction';
-}), c.register('bMaPZ2', function(d, e) {
-    a(d.exports, 'isGoogleFontLoaded', function() {
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function () {
         return _h;
-    }), a(d.exports, 'default', function() {
+    }), a(d.exports, 'default', function () {
         return _i;
     });
-    var f = c('TptDc');
-    const g = [],
-        _h = a => g.includes(a);
-    var _i = a => {
+    var f = c('.....');
+    const g = [], _h = i => g.includes(i);
+    var _i = j => {
         const {
-            familyName: j,
-            onLoad: k
-        } = a;
-        g.includes(j) ? k && k() : b(f).load({
-            google: {
-                families: [`${ j }:400,700`]
-            },
-            fontactive: a => {
-                g.includes(a) || g.push(a), j === a && k && k();
+            familyName: k,
+            onLoad: l
+        } = j;
+        g.includes(k) ? l && l() : b(f).load({
+            google: { families: [`${ k }:400,700`] },
+            fontactive: m => {
+                g.includes(m) || g.push(m), k === m && l && l();
             }
         });
     };

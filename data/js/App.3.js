@@ -1,7 +1,6 @@
 function a(b) {
     return b && b.__esModule ? b.default : b;
 }
-
 function b(c, d, e, f) {
     Object.defineProperty(c, d, {
         get: e,
@@ -11,76 +10,53 @@ function b(c, d, e, f) {
     });
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('3ydbD', function(d, e) {
+c.register('.....', function (d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(d.exports, 'Container', function() {
+    }), b(d.exports, 'Container', function () {
         return _E;
-    }), b(d.exports, 'Content', function() {
+    }), b(d.exports, 'Content', function () {
         return _F;
-    }), b(d.exports, 'default', function() {
+    }), b(d.exports, 'default', function () {
         return _D;
     });
-    var g = c('gRbUn'),
-        h = c('E2AMI26'),
-        i = c('6jmvl');
-    c('O0Kav');
-    var j = c('u4s09'),
-        k = c('HOIhZ'),
-        l = c('UkybP'),
-        m = c('ddhGF'),
-        n = c('J8L14'),
-        o = c('mQ0kR'),
-        p = c('fI6of'),
-        q = c('GIe9o'),
-        r = c('YhkI2'),
-        s = c('+FJvw1'),
-        t = c('MgONH'),
-        u = c('9aZ6t'),
-        v = c('OezES'),
-        w = c('V/q8i'),
-        x = c('UCu0V'),
-        y = c('gp8Qp0');
-    let z, A, B, C = a => a;
-    var _D = (0, i.observer)(b => {
-        const E = () => {
-            b.setToHomeScreen();
+    var g = c('.....'), h = c('.....'), i = c('.....');
+    c('.....');
+    var j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....'), w = c('.....'), x = c('.....'), y = c('.....');
+    let z, A, B, C = D => D;
+    var _D = (0, i.observer)(E => {
+        const F = () => {
+            E.setToHomeScreen();
         };
-        (0, n.default)(a(m).Input.Keyboard.KeyCodes.ESC, E, [E]);
-        const F = p.default.me.editing.device.sortingState,
-            G = a => {
-                (0, r.MoveDeviceUp)(a, F);
-            },
-            H = a => {
-                (0, r.MoveDeviceDown)(a, F);
-            },
-            I = a => {
-                const J = F.filter(J => J.layer === a);
-                return J.map((E, F) => (0, g.jsx)(o.SortableDevice, {
-                    onUp: 0 === F && a === q.default.DevicesAboveCharacters ? void 0 : G,
-                    onDown: F === J.length - 1 && a === q.default.DevicesUnderCharacters ? void 0 : H,
-                    deviceId: E.deviceId,
-                    deviceName: (0, s.FetchDeviceName)(E.deviceId),
-                    layer: E.layer,
-                    y: E.y,
-                    depth: E.depth,
-                    globalDepth: E.globalDepth
-                }, E.deviceId));
-            },
-            J = I(q.default.DevicesAboveCharacters),
-            K = I(q.default.DepthSortedCharactersAndDevices),
-            L = I(q.default.DevicesUnderCharacters);
+        (0, n.default)(a(m).Input.Keyboard.KeyCodes.ESC, F, [F]);
+        const G = p.default.me.editing.device.sortingState, H = I => {
+                (0, r.MoveDeviceUp)(I, G);
+            }, I = J => {
+                (0, r.MoveDeviceDown)(J, G);
+            }, J = K => {
+                const L = G.filter(M => M.layer === K);
+                return L.map((M, N) => (0, g.jsx)(o.SortableDevice, {
+                    onUp: 0 === N && K === q.default.DevicesAboveCharacters ? void 0 : H,
+                    onDown: N === L.length - 1 && K === q.default.DevicesUnderCharacters ? void 0 : I,
+                    deviceId: M.deviceId,
+                    deviceName: (0, s.FetchDeviceName)(M.deviceId),
+                    layer: M.layer,
+                    y: M.y,
+                    depth: M.depth,
+                    globalDepth: M.globalDepth
+                }, M.deviceId));
+            }, K = J(q.default.DevicesAboveCharacters), L = J(q.default.DepthSortedCharactersAndDevices), M = J(q.default.DevicesUnderCharacters);
         return (0, g.jsx)(l.default, {
             className: 'maxAll',
             children: (0, g.jsx)(_E, {
-                onClick: E,
+                onClick: F,
                 children: (0, g.jsxs)(_F, {
-                    onClick: a => a.stopPropagation(),
+                    onClick: N => N.stopPropagation(),
                     children: [
                         (0, g.jsx)(w.default, {
-                            onClick: E,
+                            onClick: F,
                             padding: 20,
                             fontSize: 20
                         }),
@@ -89,11 +65,9 @@ c.register('3ydbD', function(d, e) {
                                 (0, g.jsx)(v.default, {
                                     layerName: (0, x.isPlatformer)() ? 'In Front' : 'Above',
                                     layerDescription: (0, x.isPlatformer)() ? `In front of players and ${ y.default.terrain.singular }` : 'Above players',
-                                    devicesInLayer: J.length
+                                    devicesInLayer: K.length
                                 }),
-                                J.length ? (0, g.jsx)(_H, {
-                                    children: J
-                                }) : null
+                                K.length ? (0, g.jsx)(_H, { children: K }) : null
                             ]
                         }),
                         (0, g.jsx)(_I, {}),
@@ -102,11 +76,9 @@ c.register('3ydbD', function(d, e) {
                                 (0, g.jsx)(v.default, {
                                     layerName: (0, x.isPlatformer)() ? 'Between' : 'Primary',
                                     layerDescription: (0, x.isPlatformer)() ? `In front of players, but behind ${ y.default.terrain.singular }` : 'Above or below players depending on their position',
-                                    devicesInLayer: K.length
+                                    devicesInLayer: L.length
                                 }),
-                                K.length ? (0, g.jsx)(_H, {
-                                    children: K
-                                }) : null
+                                L.length ? (0, g.jsx)(_H, { children: L }) : null
                             ]
                         }),
                         (0, g.jsx)(_I, {}),
@@ -115,11 +87,9 @@ c.register('3ydbD', function(d, e) {
                                 (0, g.jsx)(v.default, {
                                     layerName: (0, x.isPlatformer)() ? 'Behind' : 'Below',
                                     layerDescription: (0, x.isPlatformer)() ? `Behind players and ${ y.default.terrain.singular }` : 'Under players',
-                                    devicesInLayer: L.length
+                                    devicesInLayer: M.length
                                 }),
-                                L.length ? (0, g.jsx)(_H, {
-                                    children: L
-                                }) : null
+                                M.length ? (0, g.jsx)(_H, { children: M }) : null
                             ]
                         })
                     ]
@@ -127,10 +97,7 @@ c.register('3ydbD', function(d, e) {
             })
         });
     });
-    const _E = (0, j.default)(t.VerticallyCentered).attrs({
-            className: 'maxAll'
-        })(z || (z = C``)),
-        _F = (0, j.default)(u.motion.div).attrs({
+    const _E = (0, j.default)(t.VerticallyCentered).attrs({ className: 'maxAll' })(z || (z = C``)), _F = (0, j.default)(u.motion.div).attrs({
             className: 'maxHeight scroll-y medium-shadow',
             initial: {
                 x: '-100%',
@@ -154,76 +121,48 @@ c.register('3ydbD', function(d, e) {
   color: ${ 0 };
   padding: 20px;
   width: 410px;
-`), k.default.White),
-        _G = j.default.div.attrs({
-            className: 'maxWidth'
-        })(B || (B = C``)),
-        _H = a => (0, g.jsx)(h.default, {
+`), k.default.White), _G = j.default.div.attrs({ className: 'maxWidth' })(B || (B = C``)), _H = I => (0, g.jsx)(h.default, {
             size: 10,
             direction: 'vertical',
             className: 'maxWidth',
-            children: a.children
-        }),
-        _I = () => (0, g.jsx)('div', {
-            style: {
-                height: 30
-            }
-        });
-}), c.register('mQ0kR', function(d, e) {
-    b(d.exports, 'SortableDevice', function() {
+            children: I.children
+        }), _I = () => (0, g.jsx)('div', { style: { height: 30 } });
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'SortableDevice', function () {
         return _F;
     });
-    var f = c('gRbUn'),
-        g = c('P1KtI'),
-        h = c('M3JwW'),
-        i = c('NmQt6'),
-        j = c('22RS1');
-    c('O0Kav');
-    var k = c('u4s09'),
-        l = c('fI6of'),
-        m = c('SxihY'),
-        n = c('LihP5'),
-        o = c('heTaO'),
-        p = c('MgONH'),
-        q = c('t52Ep'),
-        r = c('j1hKz'),
-        s = c('9N6Bn'),
-        t = c('6jmvl'),
-        u = c('9aZ6t'),
-        v = c('qIlyp');
-    let w, x, y, z, A, B, C, D, E = d => d;
-    const _F = (0, t.observer)(d => {
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    c('.....');
+    var k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....');
+    let w, x, y, z, A, B, C, D, E = F => F;
+    const _F = (0, t.observer)(G => {
             const {
-                token: {
-                    borderRadius: G
-                }
+                token: {borderRadius: H}
             } = i.default.useToken();
             return (0, f.jsxs)(_G, {
                 onMouseEnter: () => {
-                    l.default.me.editing.device.currentlySortedDeviceId = d.deviceId;
+                    l.default.me.editing.device.currentlySortedDeviceId = G.deviceId;
                 },
                 onMouseLeave: () => {
-                    l.default.me.editing.device.currentlySortedDeviceId === d.deviceId && (l.default.me.editing.device.currentlySortedDeviceId = '');
+                    l.default.me.editing.device.currentlySortedDeviceId === G.deviceId && (l.default.me.editing.device.currentlySortedDeviceId = '');
                 },
                 onClick: () => {
                     if (l.default.me.editing.device.currentlySortedDeviceId = '', l.default.me.currentAction === m.default.none) {
-                        const H = (0, o.default)().worldManager.devices.getDeviceById(d.deviceId);
-                        H && (l.default.me.editing.device.currentlyEditedDevice = {
-                            id: H.id,
-                            deviceOptionId: H.deviceOption.id
+                        const I = (0, o.default)().worldManager.devices.getDeviceById(G.deviceId);
+                        I && (l.default.me.editing.device.currentlyEditedDevice = {
+                            id: I.id,
+                            deviceOptionId: I.deviceOption.id
                         }, (0, n.default)(m.default.editingDevice), (0, v.EmitTutorialEvent)({
                             event: v.TutorialEventName.OPEN_DEVICE_OPTIONS,
-                            device: H
+                            device: I
                         }));
                     }
                 },
                 layout: !0,
-                layoutId: `sort-${ d.deviceId }`,
+                layoutId: `sort-${ G.deviceId }`,
                 children: [
                     (0, f.jsxs)(_H, {
-                        style: {
-                            borderRadius: G
-                        },
+                        style: { borderRadius: H },
                         children: [
                             (0, f.jsx)(j.default.Text, {
                                 style: {
@@ -231,25 +170,17 @@ c.register('3ydbD', function(d, e) {
                                     textOverflow: 'ellipsis',
                                     overflow: 'hidden'
                                 },
-                                children: d.deviceName
+                                children: G.deviceName
                             }),
                             (0, s.default)() ? (0, f.jsx)('div', {
-                                style: {
-                                    flexShrink: 0
-                                },
+                                style: { flexShrink: 0 },
                                 children: (0, f.jsx)(h.default, {
-                                    menu: {
-                                        items: (0, r.default)({
-                                            props: d
-                                        })
-                                    },
+                                    menu: { items: (0, r.default)({ props: G }) },
                                     children: (0, f.jsx)(g.default, {
-                                        icon: (0, f.jsx)(q.default, {
-                                            name: 'far fa-ellipsis-h'
-                                        }),
+                                        icon: (0, f.jsx)(q.default, { name: 'far fa-ellipsis-h' }),
                                         type: 'text',
-                                        onClick: d => {
-                                            d.stopPropagation();
+                                        onClick: I => {
+                                            I.stopPropagation();
                                         }
                                     })
                                 })
@@ -257,39 +188,29 @@ c.register('3ydbD', function(d, e) {
                         ]
                     }),
                     (0, s.default)() ? (0, f.jsxs)(_I, {
-                        onClick: d => d.stopPropagation(),
+                        onClick: I => I.stopPropagation(),
                         children: [
                             (0, f.jsx)(g.default, {
-                                icon: (0, f.jsx)(q.default, {
-                                    name: 'fas fa-arrow-up'
-                                }),
-                                disabled: !d.onUp,
-                                onClick: G => {
-                                    G.stopPropagation(), null == d || d.onUp(d.deviceId);
+                                icon: (0, f.jsx)(q.default, { name: 'fas fa-arrow-up' }),
+                                disabled: !G.onUp,
+                                onClick: I => {
+                                    I.stopPropagation(), null == G || G.onUp(G.deviceId);
                                 },
                                 type: 'text'
                             }),
                             (0, f.jsx)(g.default, {
-                                icon: (0, f.jsx)(q.default, {
-                                    name: 'fas fa-arrow-down'
-                                }),
+                                icon: (0, f.jsx)(q.default, { name: 'fas fa-arrow-down' }),
                                 type: 'text',
-                                disabled: !d.onDown,
-                                onClick: G => {
-                                    G.stopPropagation(), null == d || d.onDown(d.deviceId);
+                                disabled: !G.onDown,
+                                onClick: I => {
+                                    I.stopPropagation(), null == G || G.onDown(G.deviceId);
                                 }
                             })
                         ]
                     }) : null
                 ]
             });
-        }),
-        _G = (0, k.default)(u.motion.div).attrs({
-            className: 'maxWidth flex vc'
-        })(w || (w = E``)),
-        _H = (0, k.default)(p.VerticallyCentered).attrs({
-            className: 'between'
-        })(x || (x = E`
+        }), _G = (0, k.default)(u.motion.div).attrs({ className: 'maxWidth flex vc' })(w || (w = E``)), _H = (0, k.default)(p.VerticallyCentered).attrs({ className: 'between' })(x || (x = E`
   background: rgba(255, 255, 255, 0.1);
   padding: 10px 12px 10px 18px;
   flex: 1;
@@ -299,8 +220,7 @@ c.register('3ydbD', function(d, e) {
   &:hover {
     background: rgba(255, 255, 255, 0.2);
   }
-`)),
-        _I = (0, k.default)(p.VerticallyCentered)(y || (y = E`
+`)), _I = (0, k.default)(p.VerticallyCentered)(y || (y = E`
   margin-left: 5px;
   flex-shrink: 0;
 `));
@@ -325,355 +245,291 @@ c.register('3ydbD', function(d, e) {
   display: flex;
   flex-direction: column;
 `));
-}), c.register('j1hKz', function(d, e) {
-    b(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
         return _l;
     });
-    var f = c('gRbUn'),
-        g = c('t52Ep'),
-        h = c('XEF+7'),
-        i = c('GIe9o'),
-        j = c('E6YpH0'),
-        k = c('ryXdX');
-    var _l = d => {
-        const {
-            props: m
-        } = d, n = [];
-        return m.depth !== m.y && n.push({
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var _l = m => {
+        const {props: n} = m, o = [];
+        return n.depth !== n.y && o.push({
             key: 'reset-natural',
             label: 'Reset To Natural Depth',
-            icon: (0, f.jsx)(g.default, {
-                name: 'fas fa-bring-forward'
-            }),
-            onClick: (0, j.default)(() => (0, k.ResetDeviceDepth)(m.deviceId))
-        }), (0, h.IsDeviceOnLayer)(m.deviceId, i.default.DevicesAboveCharacters) || n.push({
+            icon: (0, f.jsx)(g.default, { name: 'fas fa-bring-forward' }),
+            onClick: (0, j.default)(() => (0, k.ResetDeviceDepth)(n.deviceId))
+        }), (0, h.IsDeviceOnLayer)(n.deviceId, i.default.DevicesAboveCharacters) || o.push({
             key: 'above-layer',
             label: 'Move To Above Layer',
-            icon: (0, f.jsx)(g.default, {
-                name: 'fas fa-level-up'
-            }),
-            onClick: (0, j.default)(() => (0, h.MoveDeviceToLayer)(m.deviceId, i.default.DevicesAboveCharacters))
-        }), (0, h.IsDeviceOnLayer)(m.deviceId, i.default.DepthSortedCharactersAndDevices) || n.push({
+            icon: (0, f.jsx)(g.default, { name: 'fas fa-level-up' }),
+            onClick: (0, j.default)(() => (0, h.MoveDeviceToLayer)(n.deviceId, i.default.DevicesAboveCharacters))
+        }), (0, h.IsDeviceOnLayer)(n.deviceId, i.default.DepthSortedCharactersAndDevices) || o.push({
             key: 'primary-layer',
             label: 'Move To Primary Layer',
-            icon: (0, f.jsx)(g.default, {
-                name: 'fas fa-dot-circle'
-            }),
-            onClick: (0, j.default)(() => (0, h.MoveDeviceToLayer)(m.deviceId, i.default.DepthSortedCharactersAndDevices))
-        }), (0, h.IsDeviceOnLayer)(m.deviceId, i.default.DevicesUnderCharacters) || n.push({
+            icon: (0, f.jsx)(g.default, { name: 'fas fa-dot-circle' }),
+            onClick: (0, j.default)(() => (0, h.MoveDeviceToLayer)(n.deviceId, i.default.DepthSortedCharactersAndDevices))
+        }), (0, h.IsDeviceOnLayer)(n.deviceId, i.default.DevicesUnderCharacters) || o.push({
             key: 'below-layer',
             label: 'Move To Below Layer',
-            icon: (0, f.jsx)(g.default, {
-                name: 'fas fa-level-down'
-            }),
-            onClick: (0, j.default)(() => (0, h.MoveDeviceToLayer)(m.deviceId, i.default.DevicesUnderCharacters))
-        }), n;
+            icon: (0, f.jsx)(g.default, { name: 'fas fa-level-down' }),
+            onClick: (0, j.default)(() => (0, h.MoveDeviceToLayer)(n.deviceId, i.default.DevicesUnderCharacters))
+        }), o;
     };
-}), c.register('XEF+7', function(d, e) {
-    b(d.exports, 'MoveDeviceToLayer', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'MoveDeviceToLayer', function () {
         return _h;
-    }), b(d.exports, 'IsDeviceOnLayer', function() {
+    }), b(d.exports, 'IsDeviceOnLayer', function () {
         return _i;
     });
-    var f = c('AhL/f0'),
-        g = c('heTaO');
-    const _h = (d, b) => {
-            const i = (0, g.default)().worldManager.devices.getDeviceById(d);
-            i && i.layers.getLayer() !== b && (0, f.default)({
-                depth: i.layers.getOptionsDepth(),
-                layerId: b,
-                name: i.name,
-                deviceOption: i.deviceOption,
-                id: i.id,
+    var f = c('.....'), g = c('.....');
+    const _h = (i, j) => {
+            const k = (0, g.default)().worldManager.devices.getDeviceById(i);
+            k && k.layers.getLayer() !== j && (0, f.default)({
+                depth: k.layers.getOptionsDepth(),
+                layerId: j,
+                name: k.name,
+                deviceOption: k.deviceOption,
+                id: k.id,
                 isPreview: !1,
-                options: i.options,
+                options: k.options,
                 placedByClient: !1,
-                state: i.deviceOption.defaultState,
-                x: i.x,
-                y: i.y
+                state: k.deviceOption.defaultState,
+                x: k.x,
+                y: k.y
             });
-        },
-        _i = (d, b) => {
-            const j = (0, g.default)().worldManager.devices.getDeviceById(d);
-            return !!j && j.layers.getLayer() === b;
+        }, _i = (j, k) => {
+            const l = (0, g.default)().worldManager.devices.getDeviceById(j);
+            return !!l && l.layers.getLayer() === k;
         };
-}), c.register('AhL/f0', function(d, e) {
-    b(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
         return _j;
     });
-    var f = c('heTaO'),
-        g = c('2LtPo'),
-        h = c('llkVK'),
-        i = c('5u9xs');
-    var _j = d => {
-        const k = (0, f.default)().worldManager.devices.getDeviceById(d.id);
-        if (!k)
-            return;
-        const l = (0, i.default)(d.id);
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var _j = k => {
+        const l = (0, f.default)().worldManager.devices.getDeviceById(k.id);
         if (!l)
             return;
-        const m = d.hooks || l.hooks;
+        const m = (0, i.default)(k.id);
+        if (!m)
+            return;
+        const n = k.hooks || m.hooks;
         (0, g.default)({
-            ...d,
-            hooks: m,
+            ...k,
+            hooks: n,
             placeInstantly: !0,
-            onPlace: l => {
-                l && (0, h.default)({
-                    id: k.id,
-                    deviceTypeId: k.deviceOption.id,
-                    options: JSON.stringify(d.options),
-                    x: d.x,
-                    y: d.y,
-                    depth: l.layers.getOptionsDepth(),
-                    layerId: l.layers.getOptionsLayer(),
-                    name: d.name,
-                    hooks: m
+            onPlace: o => {
+                o && (0, h.default)({
+                    id: l.id,
+                    deviceTypeId: l.deviceOption.id,
+                    options: JSON.stringify(k.options),
+                    x: k.x,
+                    y: k.y,
+                    depth: o.layers.getOptionsDepth(),
+                    layerId: o.layers.getOptionsLayer(),
+                    name: k.name,
+                    hooks: n
                 });
             }
         });
     };
-}), c.register('E6YpH0', function(d, e) {
-    b(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
         return _f;
     });
-    var _f = d => b => {
-        b.domEvent.stopPropagation(), d && d();
+    var _f = g => h => {
+        h.domEvent.stopPropagation(), g && g();
     };
-}), c.register('ryXdX', function(d, e) {
-    b(d.exports, 'ResetDeviceDepth', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'ResetDeviceDepth', function () {
         return _h;
     });
-    var f = c('AhL/f0'),
-        g = c('heTaO');
-    const _h = d => {
-        const i = (0, g.default)().worldManager.devices.getDeviceById(d);
-        i && (0, f.default)({
+    var f = c('.....'), g = c('.....');
+    const _h = i => {
+        const j = (0, g.default)().worldManager.devices.getDeviceById(i);
+        j && (0, f.default)({
             depth: void 0,
-            layerId: i.layers.getOptionsLayer(),
-            name: i.name,
-            deviceOption: i.deviceOption,
-            id: i.id,
+            layerId: j.layers.getOptionsLayer(),
+            name: j.name,
+            deviceOption: j.deviceOption,
+            id: j.id,
             isPreview: !1,
-            options: i.options,
+            options: j.options,
             placedByClient: !1,
-            state: i.deviceOption.defaultState,
-            x: i.x,
-            y: i.y
+            state: j.deviceOption.defaultState,
+            x: j.x,
+            y: j.y
         });
     };
-}), c.register('YhkI2', function(d, e) {
-    b(d.exports, 'MoveDeviceUp', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'MoveDeviceUp', function () {
         return _l;
-    }), b(d.exports, 'MoveDeviceDown', function() {
+    }), b(d.exports, 'MoveDeviceDown', function () {
         return _m;
     });
-    var f = c('AhL/f0'),
-        g = c('heTaO'),
-        h = c('cD2Sb'),
-        i = c('mSv2o'),
-        j = c('ryXdX'),
-        k = c('fI6of');
-    const _l = (d, b) => {
-            const m = b.findIndex(b => b.deviceId === d);
-            if (b[m] && b[m - 1] && b[m].globalDepth === b[m - 1].globalDepth)
-                return void _o(b, m, m - 1);
-            const n = (0, h.GetDepthAfterMoveUp)(b[m], b[m - 2], b[m - 1]),
-                o = (0, g.default)().worldManager.devices.getDeviceById(d);
-            if (!o)
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    const _l = (m, n) => {
+            const o = n.findIndex(p => p.deviceId === m);
+            if (n[o] && n[o - 1] && n[o].globalDepth === n[o - 1].globalDepth)
+                return void _o(n, o, o - 1);
+            const p = (0, h.GetDepthAfterMoveUp)(n[o], n[o - 2], n[o - 1]), q = (0, g.default)().worldManager.devices.getDeviceById(m);
+            if (!q)
                 return;
             const {
-                depthOnLayer: p,
-                layer: q
-            } = (0, i.GetLayerAndLocalDepth)(n);
-            b[m].layer = q, b[m].depth = p, b[m].globalDepth = n, (0, f.default)({
-                depth: p,
-                layerId: q,
-                name: o.name,
-                deviceOption: o.deviceOption,
-                id: o.id,
+                depthOnLayer: r,
+                layer: s
+            } = (0, i.GetLayerAndLocalDepth)(p);
+            n[o].layer = s, n[o].depth = r, n[o].globalDepth = p, (0, f.default)({
+                depth: r,
+                layerId: s,
+                name: q.name,
+                deviceOption: q.deviceOption,
+                id: q.id,
                 isPreview: !1,
-                options: o.options,
+                options: q.options,
                 placedByClient: !1,
-                state: o.deviceOption.defaultState,
-                x: o.x,
-                y: o.y
-            }), _n(b);
-        },
-        _m = (d, b) => {
-            const n = b.findIndex(b => b.deviceId === d);
-            if (b[n] && b[n + 1] && b[n].globalDepth === b[n + 1].globalDepth)
-                return void _o(b, n, n + 1);
-            const o = (0, h.GetDepthAfterMoveDown)(b[n], b[n + 1], b[n + 2]),
-                p = (0, g.default)().worldManager.devices.getDeviceById(d);
-            if (!p)
+                state: q.deviceOption.defaultState,
+                x: q.x,
+                y: q.y
+            }), _n(n);
+        }, _m = (n, o) => {
+            const p = o.findIndex(q => q.deviceId === n);
+            if (o[p] && o[p + 1] && o[p].globalDepth === o[p + 1].globalDepth)
+                return void _o(o, p, p + 1);
+            const q = (0, h.GetDepthAfterMoveDown)(o[p], o[p + 1], o[p + 2]), r = (0, g.default)().worldManager.devices.getDeviceById(n);
+            if (!r)
                 return;
             const {
-                depthOnLayer: q,
-                layer: r
-            } = (0, i.GetLayerAndLocalDepth)(o);
-            b[n].layer = r, b[n].depth = q, b[n].globalDepth = o, (0, f.default)({
-                depth: q,
-                layerId: r,
-                name: p.name,
-                deviceOption: p.deviceOption,
-                id: p.id,
+                depthOnLayer: s,
+                layer: t
+            } = (0, i.GetLayerAndLocalDepth)(q);
+            o[p].layer = t, o[p].depth = s, o[p].globalDepth = q, (0, f.default)({
+                depth: s,
+                layerId: t,
+                name: r.name,
+                deviceOption: r.deviceOption,
+                id: r.id,
                 isPreview: !1,
-                options: p.options,
+                options: r.options,
                 placedByClient: !1,
-                state: p.deviceOption.defaultState,
-                x: p.x,
-                y: p.y
-            }), _n(b);
-        },
-        _n = d => {
-            d = d.sort((d, b) => b.globalDepth - d.globalDepth);
-            const o = [];
-            let p = !0;
-            for (; p && !k.default.me.editing.device.usingMultiselect;) {
-                p = !1;
-                for (let q = 0; q < d.length; q++) {
-                    const r = d[q],
-                        s = (0, i.GetGlobalDepth)(r.y, r.layer);
-                    if (!(s === r.globalDepth)) {
-                        const t = 0 === q || d[q - 1].globalDepth > s,
-                            u = q === d.length - 1 || d[q + 1].globalDepth < s;
-                        t && u && (r.globalDepth = s, r.depth = (0, i.GetLayerAndLocalDepth)(s).depthOnLayer, o.push(r), p = !0);
+                state: r.deviceOption.defaultState,
+                x: r.x,
+                y: r.y
+            }), _n(o);
+        }, _n = o => {
+            o = o.sort((p, q) => q.globalDepth - p.globalDepth);
+            const p = [];
+            let q = !0;
+            for (; q && !k.default.me.editing.device.usingMultiselect;) {
+                q = !1;
+                for (let r = 0; r < o.length; r++) {
+                    const s = o[r], t = (0, i.GetGlobalDepth)(s.y, s.layer);
+                    if (!(t === s.globalDepth)) {
+                        const u = 0 === r || o[r - 1].globalDepth > t, v = r === o.length - 1 || o[r + 1].globalDepth < t;
+                        u && v && (s.globalDepth = t, s.depth = (0, i.GetLayerAndLocalDepth)(t).depthOnLayer, p.push(s), q = !0);
                     }
                 }
-                o.forEach(d => {
-                    (0, j.ResetDeviceDepth)(d.deviceId);
+                p.forEach(w => {
+                    (0, v.ResetDeviceDepth)(w.deviceId);
                 });
             }
-        },
-        _o = (d, b, c) => {
-            const p = d[b];
-            d[b] = d[c], d[c] = p;
-            const q = (0, g.default)().worldManager.devices.allDevices.findIndex(b => b.id === d[c].deviceId),
-                r = (0, g.default)().worldManager.devices.allDevices.findIndex(c => c.id === d[b].deviceId),
-                s = (0, g.default)().worldManager.devices.allDevices[q];
-            (0, g.default)().worldManager.devices.allDevices[q] = (0, g.default)().worldManager.devices.allDevices[r], (0, g.default)().worldManager.devices.allDevices[r] = s;
+        }, _o = (p, q, r) => {
+            const s = p[q];
+            p[q] = p[r], p[r] = s;
+            const t = (0, g.default)().worldManager.devices.allDevices.findIndex(u => u.id === p[r].deviceId), u = (0, g.default)().worldManager.devices.allDevices.findIndex(v => v.id === p[q].deviceId), v = (0, g.default)().worldManager.devices.allDevices[t];
+            (0, g.default)().worldManager.devices.allDevices[t] = (0, g.default)().worldManager.devices.allDevices[u], (0, g.default)().worldManager.devices.allDevices[u] = v;
         };
-}), c.register('cD2Sb', function(d, e) {
-    b(d.exports, 'GetDepthAfterMoveUp', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'GetDepthAfterMoveUp', function () {
         return _k;
-    }), b(d.exports, 'GetDepthAfterMoveDown', function() {
+    }), b(d.exports, 'GetDepthAfterMoveDown', function () {
         return _l;
     });
-    var f = c('GIe9o'),
-        g = c('mSv2o');
-    const h = (d, b) => {
-            const i = d.layer === b.layer,
-                j = _m(d.layer) === b.layer;
-            if (i) {
-                return Math.max(b.globalDepth + 1, (0, g.GetGlobalDepth)(d.y, d.layer));
-            }
-            if (j) {
-                return Math.min(b.globalDepth - 1, (0, g.GetGlobalDepth)(d.y, b.layer));
-            }
-            return (0, g.GetGlobalDepth)(d.y, f.default.DepthSortedCharactersAndDevices);
-        },
-        i = (d, b) => {
-            const j = d.layer === b.layer,
-                k = _n(d.layer) === b.layer;
-            if (j) {
-                return Math.min(b.globalDepth - 1, (0, g.GetGlobalDepth)(d.y, d.layer));
-            }
+    var f = c('.....'), g = c('.....');
+    const h = (i, j) => {
+            const k = i.layer === j.layer, l = _m(i.layer) === j.layer;
             if (k) {
-                return Math.max(b.globalDepth + 1, (0, g.GetGlobalDepth)(d.y, b.layer));
+                return Math.max(j.globalDepth + 1, (0, g.GetGlobalDepth)(i.y, i.layer));
             }
-            return (0, g.GetGlobalDepth)(d.y, f.default.DepthSortedCharactersAndDevices);
-        },
-        j = (d, b, c) => {
-            const k = (0, g.GetLayerAndLocalDepth)(c.globalDepth).layer,
-                l = (0, g.GetGlobalDepth)(d.y, k);
-            return l > c.globalDepth && l < b.globalDepth ? l : (b.globalDepth + c.globalDepth) / 2;
-        },
-        _k = (d, b, c) => {
-            if (!c) {
-                const l = _m(d.layer);
-                if (!l)
-                    return d.globalDepth;
-                return (0, g.GetGlobalDepth)(d.y, l);
+            if (l) {
+                return Math.min(j.globalDepth - 1, (0, g.GetGlobalDepth)(i.y, j.layer));
             }
-            return b ? c.layer !== b.layer || d.layer !== c.layer ? h(d, c) : j(d, b, c) : h(d, c);
-        },
-        _l = (d, b, c) => {
-            if (!b) {
-                const m = _n(d.layer);
-                if (!m)
-                    return d.globalDepth;
-                return (0, g.GetGlobalDepth)(d.y, m);
+            return (0, g.GetGlobalDepth)(i.y, f.default.DepthSortedCharactersAndDevices);
+        }, i = (j, k) => {
+            const l = j.layer === k.layer, m = _n(j.layer) === k.layer;
+            if (l) {
+                return Math.min(k.globalDepth - 1, (0, g.GetGlobalDepth)(j.y, j.layer));
             }
-            return c ? c.layer !== b.layer || d.layer !== b.layer ? i(d, b) : j(d, b, c) : i(d, b);
-        },
-        _m = d => d === f.default.DepthSortedCharactersAndDevices ? f.default.DevicesAboveCharacters : d === f.default.DevicesUnderCharacters ? f.default.DepthSortedCharactersAndDevices : null,
-        _n = d => d === f.default.DepthSortedCharactersAndDevices ? f.default.DevicesUnderCharacters : d === f.default.DevicesAboveCharacters ? f.default.DepthSortedCharactersAndDevices : null;
-}), c.register('+FJvw1', function(d, e) {
-    b(d.exports, 'FetchDeviceName', function() {
+            if (m) {
+                return Math.max(k.globalDepth + 1, (0, g.GetGlobalDepth)(j.y, k.layer));
+            }
+            return (0, g.GetGlobalDepth)(j.y, f.default.DepthSortedCharactersAndDevices);
+        }, j = (k, l, m) => {
+            const n = (0, g.GetLayerAndLocalDepth)(m.globalDepth).layer, o = (0, g.GetGlobalDepth)(k.y, n);
+            return o > m.globalDepth && o < l.globalDepth ? o : (l.globalDepth + m.globalDepth) / 2;
+        }, _k = (l, m, n) => {
+            if (!n) {
+                const o = _m(l.layer);
+                if (!o)
+                    return l.globalDepth;
+                return (0, g.GetGlobalDepth)(l.y, o);
+            }
+            return o ? n.layer !== o.layer || l.layer !== n.layer ? h(l, n) : j(l, o, n) : h(l, n);
+        }, _l = (m, n, o) => {
+            if (!n) {
+                const p = _n(m.layer);
+                if (!p)
+                    return m.globalDepth;
+                return (0, g.GetGlobalDepth)(m.y, p);
+            }
+            return o ? o.layer !== p.layer || m.layer !== p.layer ? i(m, p) : j(m, p, o) : i(m, p);
+        }, _m = n => n === f.default.DepthSortedCharactersAndDevices ? f.default.DevicesAboveCharacters : n === f.default.DevicesUnderCharacters ? f.default.DepthSortedCharactersAndDevices : null, _n = o => o === f.default.DepthSortedCharactersAndDevices ? f.default.DevicesUnderCharacters : o === f.default.DevicesAboveCharacters ? f.default.DepthSortedCharactersAndDevices : null;
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'FetchDeviceName', function () {
         return _i;
     });
-    var f = c('OFuf70'),
-        g = c('ZMrtj'),
-        h = c('fI6of');
-    const _i = d => {
-        const j = h.default.world.devices.devices.get(d);
-        if (!j)
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    const _i = j => {
+        const k = h.default.world.devices.devices.get(j);
+        if (!k)
             return '';
-        if (j.name)
-            return j.name;
-        if (j.deviceOption.id === f.default.prop) {
-            const k = j.options;
-            if (k.propId) {
-                var l;
-                const m = null === (l = (0, g.default)(k.propId)) || void 0 === l ? void 0 : l.name;
-                if (m)
-                    return m;
+        if (k.name)
+            return k.name;
+        if (k.deviceOption.id === f.default.prop) {
+            const l = k.options;
+            if (l.propId) {
+                var m;
+                const n = null === (m = (0, g.default)(l.propId)) || void 0 === m ? void 0 : m.name;
+                if (n)
+                    return n;
             }
         }
-        return j.deviceOption.name;
+        return n.deviceOption.name;
     };
-}), c.register('OezES', function(d, e) {
-    b(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
         return _q;
     });
-    var f = c('gRbUn');
-    c('O0Kav');
-    var g = c('u4s09'),
-        h = c('Eh2Wh'),
-        i = c('NmQt6'),
-        j = c('22RS1'),
-        k = c('gp8Qp0'),
-        l = c('MgONH');
-    i = c('NmQt6'), j = c('22RS1');
-    let m, n, o, p = d => d;
-    var _q = d => {
+    var f = c('.....');
+    c('.....');
+    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    i = c('.....'), j = c('.....');
+    let m, n, o, p = q => q;
+    var _q = r => {
         const {
-            token: {
-                borderRadius: r
-            }
+            token: {borderRadius: s}
         } = i.default.useToken();
         return (0, f.jsxs)(_r, {
             children: [
                 (0, f.jsx)(_s, {
                     children: (0, f.jsx)(j.default.Title, {
                         level: 4,
-                        style: {
-                            fontFamily: h.Fonts.FugazOne
-                        },
-                        children: d.layerName
+                        style: { fontFamily: h.Fonts.FugazOne },
+                        children: r.layerName
                     })
                 }),
-                (0, f.jsx)(j.default.Text, {
-                    children: d.layerDescription
-                }),
-                d.devicesInLayer ? (0, f.jsx)('div', {
-                    style: {
-                        height: 10
-                    }
-                }) : (0, f.jsx)(_t, {
-                    style: {
-                        borderRadius: r
-                    },
+                (0, f.jsx)(j.default.Text, { children: r.layerDescription }),
+                r.devicesInLayer ? (0, f.jsx)('div', { style: { height: 10 } }) : (0, f.jsx)(_t, {
+                    style: { borderRadius: s },
                     children: (0, f.jsxs)(j.default.Text, {
                         children: [
                             'No ',
@@ -688,21 +544,17 @@ c.register('3ydbD', function(d, e) {
             ]
         });
     };
-    const _r = g.default.div.attrs({
-            className: 'maxWidth'
-        })(m || (m = p``)),
-        _s = g.default.div(n || (n = p`
+    const _r = g.default.div.attrs({ className: 'maxWidth' })(m || (m = p``)), _s = g.default.div(n || (n = p`
   text-transform: uppercase;
-`)),
-        _t = (0, g.default)(l.Centered)(o || (o = p`
+`)), _t = (0, g.default)(l.Centered)(o || (o = p`
   padding: 30px 20px;
   text-align: center;
   background: rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.25);
   margin-top: 10px;
 `));
-}), c.register('gp8Qp0', function(d, e) {
-    b(d.exports, 'default', function() {
+}), c.register('.....', function (d, e) {
+    b(d.exports, 'default', function () {
         return _f;
     });
     var _f = {

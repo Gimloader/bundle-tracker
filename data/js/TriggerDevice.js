@@ -7,45 +7,36 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('r1JJT', function(c, d) {
+b.register('.....', function (c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function() {
+    }), a(c.exports, 'default', function () {
         return _p;
     });
-    var f = b('s/YA9'),
-        g = b('UkCpC'),
-        h = b('ltxDW'),
-        i = b('mFON1'),
-        j = b('mxWTX'),
-        k = b('hycyg'),
-        l = b('heTaO');
-    const m = a => {
-            (0, l.default)().plugins.get('rexGrayScalePipeline').add(a, {
-                intensity: 1
-            });
-        },
-        n = a => {
-            (0, l.default)().plugins.get('rexGrayScalePipeline').remove(a);
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    const m = n => {
+            (0, l.default)().plugins.get('rexGrayScalePipeline').add(n, { intensity: 1 });
+        }, n = o => {
+            (0, l.default)().plugins.get('rexGrayScalePipeline').remove(o);
         };
     class o extends h.default {
         constructor(p) {
-            super(p), (0, f.default)(this, 'stepOnCounter', 0), (0, f.default)(this, 'onMessage', p => {
-                if (p.key === j.Messages.steppedOn) {
+            super(p), (0, f.default)(this, 'stepOnCounter', 0), (0, f.default)(this, 'onMessage', q => {
+                if (q.key === j.Messages.steppedOn) {
                     if (!this.up || !this.down)
                         return;
                     this.stepOnCounter += 1;
-                    const q = this.stepOnCounter;
+                    const r = this.stepOnCounter;
                     this.down.view.setAlpha(1), this.up.view.setAlpha(0), this.downTimeout = window.setTimeout(() => {
-                        q === this.stepOnCounter && (this.down.view.setAlpha(0), this.up.view.setAlpha(1));
+                        r === this.stepOnCounter && (this.down.view.setAlpha(0), this.up.view.setAlpha(1));
                     }, 350);
                 }
             }), (0, f.default)(this, 'onDestroy', () => {
                 this.downTimeout && window.clearTimeout(this.downTimeout);
-            }), (0, f.default)(this, 'onStateChange', p => {
-                'active' === p && this.updateGrayscale();
+            }), (0, f.default)(this, 'onStateChange', q => {
+                'active' === q && this.updateGrayscale();
             }), (0, f.default)(this, 'updateGrayscale', () => {
                 if (this.up && this.down) {
                     let q = this.state.active;
@@ -55,24 +46,23 @@ b.register('r1JJT', function(c, d) {
         }
     }
     var _p = o;
-}), b.register('mFON1', function(c, d) {
-    a(c.exports, 'UpAsset', function() {
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'UpAsset', function () {
         return _f;
-    }), a(c.exports, 'DownAsset', function() {
+    }), a(c.exports, 'DownAsset', function () {
         return _g;
     });
-    var e = b('UaUBz0');
+    var e = b('.....');
     const _f = {
             imageId: (0, e.default)('devices/trigger/trigger_up.png'),
             imageUrl: (0, e.default)('devices/trigger/trigger_up.png')
-        },
-        _g = {
+        }, _g = {
             imageId: (0, e.default)('devices/trigger/trigger_down.png'),
             imageUrl: (0, e.default)('devices/trigger/trigger_down.png')
         };
-}), b.register('mxWTX', function(c, d) {
+}), b.register('.....', function (c, d) {
     let e;
-    a(c.exports, 'Messages', function() {
+    a(c.exports, 'Messages', function () {
         return e;
     }), (e || (e = {})).steppedOn = 'steppedOn';
 });
