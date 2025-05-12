@@ -64,6 +64,14 @@ b.register('.....', function (c, d) {
         });
     };
 }), b.register('.....', function (c, d) {
+    a(c.exports, 'NavigateTo', function () {
+        return _f;
+    });
+    var e = b('.....');
+    const _f = g => {
+        e.history.push(g);
+    };
+}), b.register('.....', function (c, d) {
     a(c.exports, 'AnalyticsTrackEvent', function () {
         return _i;
     });
@@ -77,5 +85,12 @@ b.register('.....', function (c, d) {
             properties: j.properties,
             force: j.forcePostHog
         });
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'TrackPostHogEvent', function () {
+        return _e;
+    });
+    b('.....');
+    const _e = f => {
     };
 });

@@ -68,7 +68,7 @@ a.register('.....', function (b, c) {
     b.exports = Promise.all([
         import('./' + a('.....').resolve('2bgip')),
         import('./' + a('.....').resolve('gf3XU')),
-        import('./' + a('.....').resolve('9oTou')),
+        import('./' + a('.....').resolve('jWcbj')),
         import('./' + a('.....').resolve('lkHb8'))
     ]).then(() => a('.....'));
 });

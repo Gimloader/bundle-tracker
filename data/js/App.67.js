@@ -396,6 +396,14 @@ c.register('.....', function (d, e) {
         });
     };
 }), c.register('.....', function (d, e) {
+    b(d.exports, 'NavigateTo', function () {
+        return _g;
+    });
+    var f = c('.....');
+    const _g = h => {
+        f.history.push(h);
+    };
+}), c.register('.....', function (d, e) {
     b(d.exports, 'Container', function () {
         return _r;
     }), b(d.exports, 'Content', function () {

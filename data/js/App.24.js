@@ -486,6 +486,13 @@ b.register('.....', function (c, d) {
         });
     };
 }), b.register('.....', function (c, d) {
+    a(c.exports, 'TrackPostHogEvent', function () {
+        return _e;
+    });
+    b('.....');
+    const _e = f => {
+    };
+}), b.register('.....', function (c, d) {
     a(c.exports, 'useWillUnmount', function () {
         return _f;
     });

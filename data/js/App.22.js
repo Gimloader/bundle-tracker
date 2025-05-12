@@ -196,60 +196,80 @@ c.register('.....', function (d, e) {
     }
 }), c.register('.....', function (d, e) {
     a(d.exports, 'CharacterSceneAnimation', function () {
-        return _l;
+        return _i;
     });
-    var f = c('.....'), g = c('.....');
-    const h = 0, i = 1, j = 2, k = 3;
-    class _l {
-        constructor(m) {
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class _i {
+        constructor(j) {
             (0, f.default)(this, 'skinChanged', !1), (0, f.default)(this, 'availableAnimations', []), (0, f.default)(this, 'currentBodyAnimation', g.CharacterBodyAnimationState.rest), (0, f.default)(this, 'bodyAnimationLocked', !1), (0, f.default)(this, 'bodyAnimationStartedAt', 0), (0, f.default)(this, 'currentEyeAnimation', g.CharacterEyeAnimationState.idle), (0, f.default)(this, 'lastGroundedAnimationAt', 0), (0, f.default)(this, 'setupAnimations', () => {
-                const n = this.character.spine;
-                this.availableAnimations = n.skeleton.data.animations.map(o => o.name);
-                const o = Object.values(g.default.body.animationNames);
-                o.forEach(p => {
-                    o.forEach(q => {
-                        let r = g.default.body.transition.defaultDuration;
-                        p === g.CharacterBodyAnimationState.jumpMiddleIdle && q === g.CharacterBodyAnimationState.jumpDownIdle && (r = g.default.body.transition.jumpFallingDuration), n.animationStateData.setMix(p, q, r);
-                    });
-                }), this.playBodyAnimation(this.currentBodyAnimation), this.playEyeAnimation(this.currentEyeAnimation), this.availableAnimations.includes(`skins-${ this.character.skinId }-common`) && this.character.spine.animationState.setAnimation(h, `skins-${ this.character.skinId }-common`, !0), this.character.spine.animationState.addListener({
-                    complete: p => {
-                        this.onAnimationComplete(p);
+                const k = this.character.spine;
+                this.availableAnimations = k.skeleton.data.animations.map(l => l.name), k.animationStateData.defaultMix = g.default.body.transition.defaultDuration, k.animationStateData.setMix(g.default.body.animationNames.jumpMiddleIdle, g.default.body.animationNames.jumpDownIdle, g.default.body.transition.jumpFallingDuration), this.playBodyAnimation(this.currentBodyAnimation), this.playEyeAnimation(this.currentEyeAnimation), this.availableAnimations.includes(`skins-${ this.character.skinId }-common`) && this.character.spine.animationState.setAnimation(h.ANIMATION_TRACKS.COMMON, `skins-${ this.character.skinId }-common`, !0), this.character.spine.animationState.addListener({
+                    complete: l => {
+                        this.onAnimationComplete(l);
                     }
                 });
-            }), (0, f.default)(this, 'playBodyAnimation', n => {
-                var o;
-                if (n === this.currentBodyAnimation && !this.skinChanged)
+            }), (0, f.default)(this, 'playBodyAnimation', k => {
+                var l;
+                if (k === this.currentBodyAnimation && !this.skinChanged)
                     return;
                 if (this.bodyAnimationLocked && !this.skinChanged) {
-                    var p, q, r;
-                    const s = null !== (r = null === (p = g.default.animationLocks) || void 0 === p || null === (q = p[this.currentBodyAnimation]) || void 0 === q ? void 0 : q[n]) && void 0 !== r ? r : 0;
-                    if (s) {
-                        if (Date.now() < this.bodyAnimationStartedAt + s)
+                    var m, n, o;
+                    const p = null !== (o = null === (m = g.default.animationLocks) || void 0 === m || null === (n = m[this.currentBodyAnimation]) || void 0 === n ? void 0 : n[k]) && void 0 !== o ? o : 0;
+                    if (p) {
+                        if (Date.now() < this.bodyAnimationStartedAt + p)
                             return;
                     }
                 }
-                const t = !!(null === (s = g.default.animationLocks) || void 0 === s ? void 0 : s[n]);
-                this.bodyAnimationLocked = t, this.bodyAnimationStartedAt = Date.now(), n === g.CharacterBodyAnimationState.rest ? this.startBlinkAnimation() : this.stopBlinkAnimation(), this.currentBodyAnimation = n, this.character.spine.animationState.setAnimation(k, g.default.body.animationNames[n], g.default.bodyLoopedAnimations.includes(n)), this.playBodySupplementalAnimation(n);
-            }), (0, f.default)(this, 'playEyeAnimation', n => {
-                (n !== this.currentEyeAnimation || this.skinChanged) && (this.currentEyeAnimation = n, this.character.spine.animationState.setAnimation(j, g.default.eyes.animationNames[n], !0));
-            }), (0, f.default)(this, 'playBodySupplementalAnimation', n => {
-                const o = g.default.body.animationNames[n], p = 'skins-' + this.character.skinId + '-' + o;
-                this.availableAnimations.includes(p) ? this.character.spine.animationState.setAnimation(i, p, !0) : this.character.spine.animationState.clearTrack(i);
+                const q = !!(null === (p = g.default.animationLocks) || void 0 === p ? void 0 : p[k]);
+                this.bodyAnimationLocked = q, this.bodyAnimationStartedAt = Date.now(), k === g.CharacterBodyAnimationState.rest ? this.startBlinkAnimation() : this.stopBlinkAnimation(), this.currentBodyAnimation = k, this.character.spine.animationState.setAnimation(h.ANIMATION_TRACKS.BODY, g.default.body.animationNames[k], g.default.bodyLoopedAnimations.includes(k)), this.playBodySupplementalAnimation(k);
+            }), (0, f.default)(this, 'playEyeAnimation', k => {
+                (k !== this.currentEyeAnimation || this.skinChanged) && (this.currentEyeAnimation = k, this.character.spine.animationStateData.defaultMix = 0.2, this.character.spine.animationState.setAnimation(h.ANIMATION_TRACKS.EYES, g.default.eyes.animationNames[k], !0));
+            }), (0, f.default)(this, 'playAnimationOrClearTrack', (k, l) => {
+                let m = !1;
+                for (const n of k)
+                    if (this.availableAnimations.includes(n)) {
+                        this.character.spine.animationState.setAnimation(l, n, !0), m = !0;
+                        break;
+                    }
+                m || this.character.spine.animationState.clearTrack(l);
+            }), (0, f.default)(this, 'playBodySupplementalAnimation', k => {
+                this.playAnimationOrClearTrack([
+                    `skins-${ this.character.skinId }-${ g.default.body.animationNames[k] }`,
+                    `skins-${ this.character.skinId }-pose`
+                ], h.ANIMATION_TRACKS.BODY_SUPPLEMENTAL), this.playMovementSupplementalAnimation(k), this.playJumpSupplementalAnimation(k);
+            }), (0, f.default)(this, 'playMovementSupplementalAnimation', k => {
+                this.playAnimationOrClearTrack([`skins-${ this.character.skinId }-movement=${ k === g.CharacterBodyAnimationState.rest ? 'false' : 'true' }`], h.ANIMATION_TRACKS.MOVEMENT_SUPPLEMENTAL);
+            }), (0, f.default)(this, 'playJumpSupplementalAnimation', k => {
+                const l = g.default.jumpAnimations.includes(k);
+                this.playAnimationOrClearTrack([`skins-${ this.character.skinId }-jumping=${ l ? 'true' : 'false' }`], h.ANIMATION_TRACKS.JUMP_SUPPLEMENTAL);
             }), (0, f.default)(this, 'startBlinkAnimation', () => {
                 this.blinkTimer || (this.playEyeAnimation(g.CharacterEyeAnimationState.idle), this.blinkTimer = window.setTimeout(() => {
                     this.blinkTimer = null, this.playEyeAnimation(g.CharacterEyeAnimationState.blink);
                 }, g.default.eyes.blinkEvery));
             }), (0, f.default)(this, 'stopBlinkAnimation', () => {
                 this.playEyeAnimation(g.CharacterEyeAnimationState.idle), this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null);
-            }), (0, f.default)(this, 'onAnimationComplete', n => {
-                n.trackIndex === j && this.currentBodyAnimation === g.CharacterBodyAnimationState.rest && this.currentEyeAnimation === g.CharacterEyeAnimationState.blink && this.startBlinkAnimation();
+            }), (0, f.default)(this, 'onAnimationComplete', k => {
+                k.trackIndex === h.ANIMATION_TRACKS.EYES && this.currentBodyAnimation === g.CharacterBodyAnimationState.rest && this.currentEyeAnimation === g.CharacterEyeAnimationState.blink && this.startBlinkAnimation();
             }), (0, f.default)(this, 'toggleAnimation', () => {
                 this.currentBodyAnimation === g.CharacterBodyAnimationState.rest ? this.playBodyAnimation(g.CharacterBodyAnimationState.run) : this.playBodyAnimation(g.CharacterBodyAnimationState.rest);
             }), (0, f.default)(this, 'onSkinChanged', () => {
                 this.skinChanged = !0, this.setupAnimations(), this.skinChanged = !1;
             }), (0, f.default)(this, 'destroy', () => {
                 this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null);
-            }), this.character = m;
+            }), this.character = j;
         }
     }
+}), c.register('.....', function (d, e) {
+    let f;
+    var g;
+    a(d.exports, 'MapModeType', function () {
+        return f;
+    }), (g = f || (f = {})).liveGame = 'liveGame', g.assignment = 'assignment';
+}), c.register('.....', function (d, e) {
+    let f;
+    var g;
+    a(d.exports, 'default', function () {
+        return _h;
+    }), (g = f || (f = {})).topDown = 'topDown', g.platformer = 'platformer';
+    var _h = f;
 });

@@ -1778,6 +1778,14 @@ c.register('.....', function (d, e) {
     var _h = f.createContext(g.default);
 }), c.register('.....', function (d, e) {
     a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        sideMargin: 50,
+        optionWidth: 200
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
         return _k;
     });
     var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {

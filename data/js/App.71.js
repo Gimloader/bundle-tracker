@@ -456,6 +456,32 @@ b.register('.....', function (c, d) {
         n
     ];
 }), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _g;
+    });
+    var e = b('.....'), f = b('.....');
+    b('.....');
+    var _g = h => h.external || !h.to ? (0, e.jsx)('a', {
+        href: h.to,
+        tabIndex: Number(h.tabIndex || '0'),
+        onClick: h.onClick,
+        onKeyPress: i => {
+            h.onClick && 'Enter' === i.key && (i.preventDefault(), h.onClick());
+        },
+        className: h.className,
+        target: h.target,
+        style: h.style,
+        children: h.children
+    }) : (0, e.jsx)(f.Link, {
+        to: h.to,
+        tabIndex: Number(h.tabIndex || '0'),
+        onClick: h.onClick,
+        className: h.className,
+        target: h.target,
+        style: h.style,
+        children: h.children
+    });
+}), b.register('.....', function (c, d) {
     a(c.exports, 'getCloudinaryUrl', function () {
         return _e;
     });

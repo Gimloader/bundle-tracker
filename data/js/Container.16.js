@@ -8,601 +8,459 @@ function a(b, c, d, e) {
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
 b.register('.....', function (c, d) {
-    var e;
-    e = c.exports, Object.defineProperty(e, '__esModule', {
-        value: !0,
-        configurable: !0
-    }), a(c.exports, 'default', function () {
-        return _k;
+    a(c.exports, 'default', function () {
+        return _i;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....');
-    var _k = () => (g.useEffect(() => () => {
-        j.default.checkout.reset(), j.default.navigation.reset();
-    }, []), (0, f.jsx)(i.default.Provider, {
-        value: j.default,
-        children: (0, f.jsx)(h.default, {})
-    }));
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var _i = j => (0, e.jsx)(h.default, {
+        emoji: j.emoji,
+        title: j.title,
+        description: j.description,
+        children: (0, e.jsx)(f.default, {
+            value: j.value,
+            style: { width: j.customWidth || g.default.optionWidth },
+            size: 'large',
+            onChange: k => j.onValueChanged(k),
+            disabled: j.readOnly,
+            children: j.options.map(k => (0, e.jsx)(f.default.Option, {
+                value: k.value,
+                children: k.name
+            }, `${ j.title || 'no-title' }-${ k.value }`))
+        })
+    });
 }), b.register('.....', function (c, d) {
     a(c.exports, 'default', function () {
-        return _w;
+        return _g;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....');
-    let t, u, v = w => w;
-    var _w = (0, i.observer)(() => {
-        const {navigation: x} = f.useContext(j.default);
-        f.useEffect(() => {
-            if ((0, r.isStudent)())
-                return void (0, s.NavigateTo)(l.DASHBOARD);
-            (0, r.isLoggedIn)() && (0, o.default)(), (0, q.default)();
-            const y = (0, r.getUrlVariable)('coupon');
-            y && (0, p.default)(y);
-        }, []);
-        return (0, e.jsxs)(e.Fragment, {
-            children: [
-                (0, e.jsx)(_x, {
-                    children: (0, e.jsx)(_y, {
-                        children: (() => {
-                            const {screen: y} = x;
-                            return y === k.Screen.checkout ? (0, e.jsx)(m.default, {}) : null;
-                        })()
+    var e = b('.....');
+    b('.....');
+    var f = b('.....');
+    var _g = h => (0, e.jsxs)(f.OptionContainer, {
+        children: [
+            (0, e.jsxs)(f.OptionInfoContainer, {
+                children: [
+                    h.emoji ? (0, e.jsx)(f.OptionEmoji, { children: h.emoji }) : null,
+                    (0, e.jsxs)('div', {
+                        children: [
+                            (0, e.jsx)(f.OptionTitle, { children: h.title }),
+                            h.description ? (0, e.jsx)(f.OptionDescription, { children: h.description }) : null
+                        ]
                     })
-                }),
-                (0, e.jsx)(r.Title, { title: 'Checkout' })
-            ]
-        });
+                ]
+            }),
+            (0, e.jsx)(f.OptionChangerContainer, { children: h.children })
+        ]
     });
-    const _x = g.default.div(t || (t = v`
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/client/img/signup/funky-lines.png') repeat 0 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`)), _y = g.default.div.attrs({ className: 'scroll-y' })(u || (u = v`
-  background: ${ 0 };
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 4px 33px -6px rgba(0, 0, 0, 0.46);
-  width: 640px;
-  max-width: 90%;
-  max-height: 90%;
-  font-family: ${ 0 };
-  color: ${ 0 };
-`), h.default.White, n.Fonts.SFPro, h.default.Black);
 }), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
-        return _g;
+    a(c.exports, 'OptionContainer', function () {
+        return _n;
+    }), a(c.exports, 'OptionInfoContainer', function () {
+        return _o;
+    }), a(c.exports, 'OptionEmoji', function () {
+        return _p;
+    }), a(c.exports, 'OptionTitle', function () {
+        return _q;
+    }), a(c.exports, 'OptionDescription', function () {
+        return _r;
+    }), a(c.exports, 'OptionChangerContainer', function () {
+        return _s;
     });
     var e = b('.....'), f = b('.....');
-    var _g = e.createContext(f.default);
+    let g, h, i, j, k, l, m = n => n;
+    const _n = f.default.div.attrs({ className: 'maxWidth flex vc between' })(g || (g = m`
+  box-sizing: border-box;
+  padding: 13px 20px;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.12);
+  transition: transform 0.23s;
+  will-change: transform;
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.02);
+  }
+`)), _o = f.default.div.attrs({ className: 'flex vc' })(h || (h = m``)), _p = f.default.div(i || (i = m`
+  font-size: 23px;
+  margin-right: 10px;
+`)), _q = f.default.div(j || (j = m`
+  font-size: 23px;
+  font-weight: ${ 0 };
+`), e.FontWeights.Bold), _r = f.default.div(k || (k = m`
+  font-size: 15px;
+  margin-top: -2px;
+`)), _s = f.default.div(l || (l = m`
+  flex-shrink: 0;
+  margin-left: 25px;
+`));
 }), b.register('.....', function (c, d) {
     a(c.exports, 'default', function () {
-        return _g;
-    });
-    var e = b('.....'), f = b('.....');
-    var _g = {
-        navigation: new (0, e.default)(),
-        checkout: new (0, f.default)()
-    };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'Screen', function () {
-        return _g;
-    }), a(c.exports, 'default', function () {
         return _l;
     });
-    var e = b('.....'), f = b('.....');
-    let _g;
-    (_g || (_g = {})).checkout = 'checkout';
-    const h = {
-            screen: _g.checkout,
-            loadingTokenSubmit: !1
-        }, {
-            screen: i,
-            loadingTokenSubmit: j
-        } = h;
-    class k {
-        constructor() {
-            this.screen = i, this.loadingTokenSubmit = j, this.reset = () => {
-                Object.keys(h).forEach(l => this[l] = h[l]);
-            }, (0, f.makeObservable)(this);
-        }
-    }
-    (0, e.__decorate)([f.observable], k.prototype, 'screen', void 0), (0, e.__decorate)([f.observable], k.prototype, 'loadingTokenSubmit', void 0), (0, e.__decorate)([f.action], k.prototype, 'reset', void 0);
-    var _l = k;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
-        return _w;
-    });
-    var e = b('.....'), f = b('.....');
-    const g = {
-            planName: '',
-            planId: '',
-            couponId: '',
-            planCost: 0,
-            planDescription: '',
-            accountCredit: 0,
-            percentageOff: 1,
-            amountOff: 0,
-            couponDescription: '',
-            hasCoupon: !1,
-            couponOneUseOnly: !0,
-            couponIsOnlyForPlan: '',
-            existingPayingPlan: '',
-            stripePublicKey: ''
-        }, {
-            planName: h,
-            planId: i,
-            couponId: j,
-            planCost: k,
-            planDescription: l,
-            accountCredit: m,
-            percentageOff: n,
-            amountOff: o,
-            couponDescription: p,
-            hasCoupon: q,
-            couponOneUseOnly: r,
-            couponIsOnlyForPlan: s,
-            existingPayingPlan: t,
-            stripePublicKey: u
-        } = g;
-    class v {
-        get totalCost() {
-            const w = this.planCost * this.percentageOff - this.amountOff - this.accountCredit;
-            return w < 0 ? 0 : w;
-        }
-        constructor() {
-            this.planName = h, this.planId = i, this.couponId = j, this.planCost = k, this.planDescription = l, this.accountCredit = m, this.percentageOff = n, this.amountOff = o, this.couponDescription = p, this.hasCoupon = q, this.couponOneUseOnly = r, this.couponIsOnlyForPlan = s, this.existingPayingPlan = t, this.stripePublicKey = u, this.reset = () => {
-                Object.keys(g).forEach(w => {
-                    this[w] = g[w];
-                });
-            }, (0, f.makeObservable)(this);
-        }
-    }
-    (0, e.__decorate)([f.observable], v.prototype, 'planName', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planCost', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'accountCredit', void 0), (0, e.__decorate)([f.observable], v.prototype, 'percentageOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'amountOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'hasCoupon', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponOneUseOnly', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponIsOnlyForPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'existingPayingPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'stripePublicKey', void 0), (0, e.__decorate)([f.computed], v.prototype, 'totalCost', null), (0, e.__decorate)([f.action], v.prototype, 'reset', void 0);
-    var _w = v;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
-        return _w;
-    });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....'), t = b('.....'), u = b('.....');
-    let v;
-    var _w = (0, n.observer)(() => {
-        const {checkout: x} = f.useContext(o.default);
-        f.useEffect(() => {
-            var y;
-            (0, p.default)(q.PlanIds.pro);
-            const z = (0, s.getUser)();
-            if (!(null === (y = z.freeTrial) || void 0 === y ? void 0 : y.currentlyOnFreeTrial) && (0, s.isUpgraded)()) {
-                if (z.type === q.PlanIds.pro) {
-                    if ((0, t.onlyOfferAnnualUpgrade)())
-                        return void (0, u.NavigateTo)(k.DASHBOARD);
-                    (0, p.default)(q.PlanIds.proPass);
-                }
-                x.existingPayingPlan = z.type;
-            }
-        }, []);
-        const y = (0, s.getUser)().type === q.PlanIds.proPass || (0, t.onlyOfferAnnualUpgrade)();
-        return !x.stripePublicKey || y ? (0, e.jsxs)('div', {
-            className: 'maxWidth flex hc',
-            style: { padding: 40 },
-            children: [
-                (0, e.jsx)(i.default, { size: 'large' }),
-                y ? (0, e.jsx)(m.default, {}) : null
-            ]
-        }) : (0, e.jsxs)(_x, {
-            children: [
-                (0, e.jsx)(j.Link, {
-                    to: k.DASHBOARD,
-                    children: (0, e.jsx)('img', {
-                        src: '/client/img/svgLogo.svg',
-                        style: {
-                            width: 158,
-                            marginTop: 6
-                        }
-                    })
-                }),
-                (0, e.jsx)(h.default, {}),
-                (0, t.onlyOfferAnnualUpgrade)() ? null : (0, e.jsxs)(e.Fragment, {
-                    children: [
-                        (0, e.jsxs)('div', {
-                            className: 'flex maxWidth',
-                            style: {
-                                justifyContent: 'space-between',
-                                marginTop: 10
-                            },
-                            children: [
-                                (0, e.jsx)(r.default, {
-                                    title: 'Annually',
-                                    description: (0, e.jsxs)('span', {
-                                        children: [
-                                            '$59.88 a year',
-                                            (0, e.jsx)('br', {}),
-                                            'That works out to $4.99 a month'
-                                        ]
-                                    }),
-                                    selected: x.planId === q.PlanIds.pro,
-                                    disabled: x.existingPayingPlan && x.existingPayingPlan === q.PlanIds.pro || x.couponIsOnlyForPlan && x.couponIsOnlyForPlan !== q.PlanIds.pro,
-                                    onClick: () => (0, p.default)(q.PlanIds.pro),
-                                    showSaveTag: !0
-                                }),
-                                (0, e.jsx)(r.default, {
-                                    title: 'Monthly',
-                                    description: (0, e.jsx)('span', { children: '$14.99 a month' }),
-                                    selected: x.planId === q.PlanIds.proPass,
-                                    disabled: x.existingPayingPlan && x.existingPayingPlan === q.PlanIds.proPass || x.couponIsOnlyForPlan && x.couponIsOnlyForPlan !== q.PlanIds.proPass,
-                                    onClick: () => (0, p.default)(q.PlanIds.proPass)
-                                })
-                            ]
-                        }),
-                        (0, e.jsx)('div', { style: { height: 20 } })
-                    ]
-                }),
-                (0, e.jsx)(l.default, {}),
-                (0, e.jsx)('div', { style: { height: 10 } }),
-                (0, e.jsx)(m.default, {})
-            ]
-        });
-    });
-    const _x = g.default.div(v || (v = (y => y)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-`));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
-        return _p;
-    });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
-    let m, n, o = p => p;
-    var _p = (0, g.observer)(() => {
-        const {checkout: q} = f.useContext(i.default);
-        return (0, e.jsxs)('div', {
-            className: 'maxWidth',
-            children: [
-                (0, e.jsxs)(_q, {
-                    children: [
-                        (0, e.jsxs)('div', {
-                            children: [
-                                (0, e.jsx)('div', {
-                                    style: {
-                                        fontWeight: j.FontWeights.UltraBold,
-                                        fontSize: 23,
-                                        marginBottom: -7
-                                    },
-                                    children: q.planName
-                                }),
-                                (0, e.jsx)('div', {
-                                    style: {
-                                        fontSize: 13,
-                                        opacity: 0.8
-                                    },
-                                    children: q.planDescription
-                                })
-                            ]
-                        }),
-                        (0, e.jsx)(_r, { children: (0, k.centsToFormatedMoney)(q.planCost) })
-                    ]
-                }),
-                q.hasCoupon ? (0, e.jsxs)(_q, {
-                    children: [
-                        (0, e.jsx)('div', {
-                            style: { fontSize: 15 },
-                            children: q.couponDescription || 'Coupon'
-                        }),
-                        (0, e.jsx)('div', {
-                            children: (0, e.jsxs)(_r, {
-                                style: { color: 'green' },
-                                children: [
-                                    '-',
-                                    (0, k.centsToFormatedMoney)(q.amountOff ? q.amountOff : q.percentageOff ? q.planCost * (1 - q.percentageOff) : 0)
-                                ]
-                            })
-                        })
-                    ]
-                }) : null,
-                q.accountCredit ? (0, e.jsxs)(_q, {
-                    children: [
-                        (0, e.jsx)('div', {
-                            style: { fontSize: 15 },
-                            children: 'Account Credit'
-                        }),
-                        (0, e.jsxs)(_r, {
-                            style: { color: 'green' },
-                            children: [
-                                '-',
-                                (0, k.centsToFormatedMoney)(q.accountCredit)
-                            ]
-                        })
-                    ]
-                }) : null,
-                q.totalCost !== q.planCost ? (0, e.jsxs)(e.Fragment, {
-                    children: [
-                        (0, e.jsx)(l.default, {}),
-                        (0, e.jsxs)(_q, {
-                            children: [
-                                (0, e.jsx)('div', {}),
-                                (0, e.jsx)(_r, {
-                                    style: { fontWeight: j.FontWeights.UltraBold },
-                                    children: (0, k.centsToFormatedMoney)(q.totalCost)
-                                })
-                            ]
-                        })
-                    ]
-                }) : null
-            ]
-        });
-    });
-    const _q = h.default.div(m || (m = o`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-`)), _r = h.default.div(n || (n = o`
-  font-size: 18px;
-`));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'centsToFormatedMoney', function () {
-        return _e;
-    });
-    const _e = f => (f / 100).toLocaleString('en-US', {
-        style: 'currency',
-        currency: 'USD'
-    });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
-        return _p;
-    });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....');
-    let o;
-    var _p = (0, g.observer)(() => {
-        const [q, r] = f.useState(!1), {checkout: s} = f.useContext(h.default);
-        f.useEffect(() => {
-            s.planId && s.stripePublicKey && ((0, m.onlyOfferAnnualUpgrade)() || (0, k.getUser)().type === n.PlanIds.proPass) && s.existingPayingPlan !== s.planId && d().then().catch(t => !1);
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....');
+    var _l = m => {
+        const n = f.useCallback(o => {
+            if ((0, j.isNil)(o) && m.allowEmpty)
+                return o;
+            let p = o ? m.step ? Math.round(o / m.step) * m.step : o : 0;
+            return !(0, j.isNil)(m.min) && p < m.min ? p = m.min : !(0, j.isNil)(m.max) && p > m.max && (p = m.max), p;
         }, [
-            s.existingPayingPlan,
-            s.stripePublicKey,
-            s.planId
+            m.max,
+            m.min,
+            m.step
         ]);
-        const t = async () => {
-            if (s.stripePublicKey) {
-                if (q)
-                    return;
-                let u;
-                r(!0);
-                try {
-                    u = await (0, j.loadStripe)(s.stripePublicKey);
-                } catch (q) {
-                    r(!1), (0, k.throwMessageError)({
-                        default: {
-                            title: 'Connection Error',
-                            content: 'An error ocurred while connecting to our payments provider. Please try again later'
-                        }
-                    });
-                }
-                u && (0, k.request)({
-                    url: '/api/billing/create-upgrade-session',
-                    method: 'POST',
-                    data: { plan: s.planId },
-                    success: async v => {
-                        const w = v;
-                        let x;
-                        try {
-                            if (x = await u.redirectToCheckout({ sessionId: w.id }), x && x.error)
-                                throw x.error;
-                        } catch (v) {
-                            r(!1), (0, k.throwMessageError)({
-                                e: v,
-                                default: {
-                                    title: 'Connection Error',
-                                    content: 'An error ocurred. Please try again later'
-                                }
-                            });
-                        }
-                    },
-                    error: v => {
-                        r(!1), (0, k.throwMessageError)({
-                            e: v,
-                            default: {
-                                title: 'Connection Error',
-                                content: 'An error ocurred while connecting to our payments provider. Please try again later'
-                            }
-                        });
-                    }
-                });
-            }
+        f.useEffect(() => {
+            (0, j.isNil)(m.value) || m.max && m.value > m.max && c(n(m.max));
+        }, [
+            m.value,
+            m.max
+        ]);
+        const o = p => {
+            m.onValueChanged(n(p));
         };
-        return (0, k.getUser)().type === n.PlanIds.proPass || (0, m.onlyOfferAnnualUpgrade)() ? null : (0, e.jsx)('div', {
-            className: 'flex flex-column hc vc maxWidth',
-            children: (0, e.jsx)(_q, {
-                children: (0, e.jsx)(l.default, {
-                    id: 'checkout-button',
-                    onClick: () => {
-                        t().then().catch(u => !1);
-                    },
-                    loading: q,
-                    type: 'primary',
-                    style: { width: '100%' },
-                    size: 'large',
-                    disabled: q,
-                    children: `Subscribe to ${ s.planName }`
-                })
+        return (0, e.jsx)(i.default, {
+            emoji: m.emoji,
+            title: m.title,
+            description: m.description,
+            children: (0, e.jsx)(k.default, {
+                size: 'large',
+                formatter: h.default,
+                value: m.value,
+                max: m.max,
+                min: m.min,
+                step: m.step,
+                style: { width: m.customWidth || g.default.optionWidth },
+                onChange: o,
+                disabled: m.readOnly
             })
         });
-    });
-    const _q = i.default.div(o || (o = (r => r)`
-  width: 100%;
-  div {
-    width: 100%;
-  }
-`));
+    };
 }), b.register('.....', function (c, d) {
-    a(c.exports, 'loadStripe', function () {
-        return _m;
+    a(c.exports, 'default', function () {
+        return _f;
     });
-    var e = 'https://js.stripe.com/v3', f = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/, g = 'loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used', h = null, i = function (j) {
-            return null !== h || (h = new Promise(function (k, l) {
-                if ('undefined' != typeof window)
-                    if (window.Stripe && j && console.warn(g), window.Stripe)
-                        k(window.Stripe);
-                    else
-                        try {
-                            var m = function () {
-                                for (var n = document.querySelectorAll('script[src^="'.concat(e, '"]')), o = 0; o < n.length; o++) {
-                                    var p = n[o];
-                                    if (f.test(p.src))
-                                        return p;
-                                }
-                                return null;
-                            }();
-                            m && j ? console.warn(g) : m || (m = function (n) {
-                                var o = n && !n.advancedFraudSignals ? '?advancedFraudSignals=false' : '', p = document.createElement('script');
-                                p.src = ''.concat(e).concat(o);
-                                var q = document.head || document.body;
-                                if (!q)
-                                    throw new Error('Expected document.body not to be null. Stripe.js requires a <body> element.');
-                                return q.appendChild(p), p;
-                            }(j)), m.addEventListener('load', function () {
-                                window.Stripe ? k(window.Stripe) : l(new Error('Stripe.js not available'));
-                            }), m.addEventListener('error', function () {
-                                l(new Error('Failed to load Stripe.js'));
-                            });
-                        } catch (j) {
-                            return void l(j);
-                        }
-                else
-                    k(null);
-            })), h;
-        }, j = function (k, l, m) {
-            if (null === k)
-                return null;
-            var n = k.apply(void 0, l);
-            return function (o, p) {
-                o && o._registerWrapper && o._registerWrapper({
-                    name: 'stripe-js',
-                    version: '1.9.0',
-                    startTime: p
-                });
-            }(n, m), n;
-        }, k = Promise.resolve().then(function () {
-            return i(null);
-        }), l = !1;
-    k.catch(function (m) {
-        l || console.warn(m);
+    var e = b('.....');
+    var _f = g => '' === g ? '' : isNaN(Number(g)) ? String(g) : (0, e.numberWithCommas)(Number(g));
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _i;
     });
-    var _m = function () {
-        for (var n = arguments.length, o = new Array(n), p = 0; p < n; p++)
-            o[p] = arguments[p];
-        l = !0;
-        var q = Date.now();
-        return k.then(function (r) {
-            return j(r, o, q);
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var _i = j => {
+        const [k, l] = g.useState(j.value), [m, n] = g.useState(j.value), [o, p, q] = (0, h.useBoolean)(!1);
+        g.useEffect(() => {
+            n(j.value), l(j.value);
+        }, [j.value]);
+        return (0, e.jsx)(f.default, {
+            ...j,
+            value: o ? k : m,
+            onChange: r => {
+                l(r);
+            },
+            onFocus: p,
+            onBlur: () => {
+                k !== m && j.onChange(k), q(), l(j.value);
+            }
         });
     };
 }), b.register('.....', function (c, d) {
     a(c.exports, 'default', function () {
-        return _g;
+        return _i;
     });
-    var e = b('.....'), f = b('.....');
-    var _g = h => {
-        f.default.checkout.planName = 'Gimkit Pro', f.default.checkout.planId = h, f.default.checkout.planDescription = ((i, j) => i === e.PlanIds.pro ? 'Billed annually' : i === e.PlanIds.proPass ? 'Billed monthly' : '')(h), f.default.checkout.planCost = (i => i === e.PlanIds.pro ? 5988 : i === e.PlanIds.proPass ? 1499 : 0)(h);
+    var e = b('.....'), f = b('.....'), g = b('.....');
+    const h = (i, j) => {
+        var k;
+        return null === (k = JSON.parse(localStorage.getItem(g.LocalStorageNames.hookSavedOptions) || '{}')[j]) || void 0 === k ? void 0 : k[i];
+    };
+    var _i = j => {
+        var k;
+        const {
+                hookJSON: l,
+                experienceId: m,
+                kitId: n
+            } = j, o = {};
+        return null == l || null === (k = l.hooks) || void 0 === k || k.forEach(p => {
+            if (p.type === f.HookType.kit)
+                o[p.key] = n || '';
+            else if (p.type == f.HookType.selectBox) {
+                const q = p.options;
+                if (q.options.length) {
+                    let r = q.options.find(s => s === q.defaultOption) || q.options[0];
+                    if (m) {
+                        const s = h(p.key, m);
+                        if (s) {
+                            const t = q.options.find(u => u === s);
+                            t && (r = t);
+                        }
+                    }
+                    r && (o[t.key] = r);
+                }
+            } else if (t.type === f.HookType.number) {
+                const t = t.options;
+                let u = t.defaultValue;
+                if (m) {
+                    const v = h(t.key, m);
+                    if (!(0, s.isNil)(v) && 'number' == typeof v) {
+                        let w = !1;
+                        ((0, s.isNil)(t.min) || v > t.min) && ((0, s.isNil)(t.max) || v < t.max) && ((0, s.isNil)(t.step) || v % t.step == 0) && (w = !0), w && (u = v);
+                    }
+                }
+                o[t.key] = u;
+            }
+        }), o;
     };
 }), b.register('.....', function (c, d) {
     a(c.exports, 'default', function () {
-        return _o;
+        return _m;
+    });
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    var _m = (0, g.observer)(n => {
+        const [o] = h.useState(() => (0, f.observable)(n.defaultState || (0, l.default)({ hookJSON: n.hooks }))), p = (q, r) => {
+                o[q] = r;
+            }, q = (0, f.toJS)(o), r = JSON.stringify(q);
+        h.useEffect(() => {
+            n.onConnectedResourcesChange && n.onConnectedResourcesChange((0, j.default)(n, q)), n.readOnly || n.onStateChange && n.onStateChange(q);
+        }, [
+            r,
+            n.readOnly
+        ]);
+        const s = (0, k.default)(n, q);
+        return (0, e.jsxs)(e.Fragment, {
+            children: [
+                n.header ? n.header(s.length) : null,
+                s.map((t, u) => (0, e.jsxs)(h.Fragment, {
+                    children: [
+                        (0, e.jsx)(i.default, {
+                            hook: t,
+                            state: q,
+                            modifyState: p,
+                            location: n.location,
+                            readOnly: n.readOnly
+                        }),
+                        u !== s.length - 1 && (0, e.jsx)('div', { style: { height: 10 } })
+                    ]
+                }, `hook-form-${ t.key }`)),
+                n.footer ? n.footer(s.length) : null
+            ]
+        });
+    });
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _j;
+    });
+    var e = b('.....');
+    b('.....');
+    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    var _j = k => {
+        const l = k.state[k.hook.key], m = n => {
+                k.modifyState(k.hook.key, n);
+            };
+        return k.hook.type === f.HookType.selectBox ? (0, e.jsx)(i.default, {
+            value: l,
+            onChange: m,
+            hook: k.hook,
+            readOnly: k.readOnly
+        }) : k.hook.type === f.HookType.kit ? (0, e.jsx)(g.default, {
+            value: l,
+            onChange: m,
+            hook: k.hook,
+            location: k.location,
+            readOnly: k.readOnly
+        }) : k.hook.type === f.HookType.number ? (0, e.jsx)(h.default, {
+            value: l,
+            onChange: m,
+            hook: k.hook,
+            readOnly: k.readOnly
+        }) : null;
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _i;
     });
     var e = b('.....');
     b('.....');
     var f = b('.....'), g = b('.....'), h = b('.....');
-    let i, j, k, l, m = n => n;
-    const n = '#F0FFF6';
-    var _o = p => (0, e.jsxs)(_p, {
-        selected: p.selected,
-        onClick: p.onClick,
-        disabled: p.disabled,
-        children: [
-            (0, e.jsx)(_q, { children: p.title }),
-            (0, e.jsx)(_r, { children: p.description }),
-            p.showSaveTag ? (0, e.jsx)(_s, { children: 'Save 65%' }) : null
-        ]
-    });
-    const _p = f.default.div(i || (i = m`
-  border-style: solid;
-  border-width: 2px;
-  width: 284px;
-  padding: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  ${ 0 }
-  border-color: ${ 0 };
-  background: ${ 0 };
-  transition: all 0.35s;
-  &:hover {
-    background: ${ 0 };
-  }
-`), q => q.disabled ? '\n  pointer-events: none;\n  opacity: 0.2;\n  ' : null, q => q.selected ? '#a5d6a7' : g.default.BorderGray, q => q.selected ? n : g.default.White, n), _q = f.default.h3(j || (j = m`
-  font-weight: ${ 0 };
-  font-size: 18px;
-  margin-bottom: 0px;
-  color: ${ 0 };
-`), h.FontWeights.UltraBold, g.default.Black), _r = f.default.p(k || (k = m`
-  font-size: 14px;
-  margin-top: 2px;
-  margin-bottom: 0px;
-`)), _s = f.default.div.attrs({ className: 'flex hc vc' })(l || (l = m`
-  height: 35px;
-  width: 95px;
-  background: #1a237e;
-  margin-top: -109px;
-  margin-left: 174px;
-  position: absolute;
-  color: ${ 0 };
-  font-size: 14px;
-  border-radius: 22px;
-`), g.default.White);
+    var _i = j => {
+        let {
+            title: k,
+            description: l
+        } = (0, h.default)(j.hook);
+        if (j.location === g.HookFormLocation.editor) {
+            const m = 'We\'re showing this hook for testing purposes, but this hook won\'t be visible when choosing this map from the Mode Picker.';
+            l ? l += ` - ${ m }` : l = m;
+        }
+        return (0, e.jsx)(f.default, {
+            title: k,
+            description: l,
+            value: m.value,
+            onValueChanged: m.onChange,
+            placeholder: 'Kit ID',
+            readOnly: m.readOnly
+        });
+    };
 }), b.register('.....', function (c, d) {
     a(c.exports, 'default', function () {
-        return _g;
+        return _i;
+    });
+    var e = b('.....');
+    b('.....');
+    var f = b('.....'), g = b('.....'), h = b('.....');
+    var _i = j => (0, e.jsx)(h.default, {
+        emoji: j.emoji,
+        title: j.title,
+        description: j.description,
+        children: (0, e.jsx)(f.default, {
+            size: 'large',
+            value: j.value,
+            placeholder: j.placeholder,
+            style: { width: j.customWidth || g.default.optionWidth },
+            onChange: k => {
+                j.onValueChanged(k.target.value);
+            },
+            disabled: j.readOnly
+        })
+    });
+}), b.register('.....', function (c, d) {
+    let e;
+    var f;
+    let g;
+    a(c.exports, 'HookFormLocation', function () {
+        return e;
+    }), a(c.exports, 'IHookConnectedResourceType', function () {
+        return g;
+    }), (f = e || (e = {})).editor = 'editor', f.experiencePicker = 'experiencePicker', (g || (g = {})).kit = 'kit';
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _e;
+    });
+    var _e = f => {
+        let g, h;
+        return g = f.key, f.displayName && (g = f.displayName), f.displayDescription && (h = f.displayDescription), {
+            title: g,
+            description: h
+        };
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _i;
     });
     var e = b('.....'), f = b('.....');
-    var _g = () => {
-        (0, e.request)({
-            url: '/api/billing/account-balance',
-            success: h => {
-                h.balance && h.balance > 0 && (f.default.checkout.accountCredit = h.balance);
-            }
+    b('.....');
+    var g = b('.....'), h = b('.....');
+    var _i = j => {
+        const {
+                title: k,
+                description: l
+            } = (0, h.default)(j.hook), m = j.hook.options;
+        return (0, e.jsx)(g.default, {
+            title: k,
+            description: l,
+            value: j.value,
+            onValueChanged: n => {
+                !(0, f.isNil)(n) || (0, f.isNil)(m.defaultValue) ? j.onChange(n) : j.onChange(m.defaultValue);
+            },
+            min: m.min,
+            max: m.max,
+            step: m.step,
+            allowEmpty: !0,
+            readOnly: j.readOnly
         });
     };
 }), b.register('.....', function (c, d) {
     a(c.exports, 'default', function () {
         return _h;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....');
+    var e = b('.....');
+    b('.....');
+    var f = b('.....'), g = b('.....');
     var _h = i => {
-        (0, e.request)({
-            url: `/api/stripe/coupons/${ i }`,
-            success: j => {
-                j.metadata && j.metadata.onlyForPlan && ((0, g.default)(j.metadata.onlyForPlan), f.default.checkout.couponIsOnlyForPlan = f.default.checkout.planId), j.metadata && j.metadata.customDesc && (f.default.checkout.couponDescription = j.metadata.customDesc), f.default.checkout.amountOff = j.amountOff, f.default.checkout.percentageOff = 1 - 0.01 * j.percentageOff, f.default.checkout.couponOneUseOnly = j.oneUseOnly, f.default.checkout.couponId = i, f.default.checkout.hasCoupon = !0;
-            }
+        const {
+                title: j,
+                description: k
+            } = (0, g.default)(i.hook), l = i.hook.options;
+        return (0, e.jsx)(f.default, {
+            title: j,
+            description: k,
+            value: i.value,
+            onValueChanged: i.onChange,
+            options: l.options.map(m => ({
+                value: m,
+                name: m
+            })),
+            readOnly: i.readOnly
         });
     };
 }), b.register('.....', function (c, d) {
     a(c.exports, 'default', function () {
-        return _j;
+        return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
-    var _j = () => {
-        (0, e.request)({
-            url: '/api/billing/stripe-key',
-            success: k => f.default.checkout.stripePublicKey = k.key,
-            error: () => (0, g.throwError)({
-                title: 'Our payments provider is currently down',
-                content: 'Please try again later',
-                onOk: () => (0, i.NavigateTo)(h.DASHBOARD)
-            })
-        });
+    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var _i = (j, k) => {
+        const l = [];
+        return (0, h.default)({
+            ...j,
+            location: g.HookFormLocation.editor
+        }, k).forEach(m => {
+            m.type === f.HookType.kit && k[m.key] && l.push({
+                type: g.IHookConnectedResourceType.kit,
+                value: k[m.key]
+            });
+        }), (0, e.uniqBy)(l, 'value');
     };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'default', function () {
+        return _h;
+    });
+    var e = b('.....'), f = b('.....'), g = b('.....');
+    var _h = (i, j) => {
+        var k, l;
+        const m = [];
+        return null == i || null === (k = i.hooks) || void 0 === k || null === (l = k.hooks) || void 0 === l || l.forEach(n => {
+            var o;
+            if (n.type === f.HookType.kit) {
+                if (!!j[n.key] && i.location === g.HookFormLocation.experiencePicker)
+                    return;
+            }
+            if (n.type === f.HookType.selectBox) {
+                var p;
+                const q = n.options;
+                if (!(null == q || null === (p = q.options) || void 0 === p ? void 0 : p.length))
+                    return;
+            }
+            (null == n || null === (o = n.hiddenScenarios) || void 0 === o ? void 0 : o.find(r => {
+                var s, t;
+                if (!!!(null === (s = r.conditions) || void 0 === s ? void 0 : s.length))
+                    return !1;
+                return !!(null === (t = r.conditions) || void 0 === t ? void 0 : t.every(u => {
+                    if (u.type === e.HiddenConditionType.hookValue) {
+                        const v = u.options, w = v.value, x = j[v.key];
+                        if (v.compare === e.HookValueHiddenConditionCompare.equal) {
+                            if (w == x)
+                                return !0;
+                        } else if (v.compare === e.HookValueHiddenConditionCompare.notEqual && w != x)
+                            return !0;
+                    } else if (u.type === e.HiddenConditionType.modeType) {
+                        const y = v.modeType, z = u.options;
+                        return z.compare === e.ModeTypeHiddenConditionCompare.equal ? y === z.mode : y !== z.mode;
+                    }
+                    return !1;
+                }));
+            })) || m.push(n);
+        }), m;
+    };
+}), b.register('.....', function (c, d) {
+    let e;
+    var f;
+    let g;
+    var h;
+    let i;
+    var j;
+    a(c.exports, 'HiddenConditionType', function () {
+        return e;
+    }), a(c.exports, 'HookValueHiddenConditionCompare', function () {
+        return g;
+    }), a(c.exports, 'ModeTypeHiddenConditionCompare', function () {
+        return i;
+    }), (f = e || (e = {})).hookValue = 'hookValue', f.modeType = 'modeType', (h = g || (g = {})).equal = 'EQUAL', h.notEqual = 'NOT_EQUAL', (j = i || (i = {})).equal = 'EQUAL', j.notEqual = 'NOT_EQUAL';
 });

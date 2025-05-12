@@ -11,6 +11,909 @@ function b(c) {
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
 c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _x;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....'), w = c('.....');
+    (0, f.configure)({ enforceActions: 'never' });
+    var _x = {
+        network: new (0, h.default)(),
+        scene: new (0, g.default)(),
+        loading: new (0, i.default)(),
+        phaser: new (0, j.default)(),
+        memorySystem: new (0, w.MemorySystem)(),
+        me: new (0, k.default)(),
+        worldOptions: new (0, m.default)(),
+        world: new (0, l.default)(),
+        characters: new (0, q.default)(),
+        teams: new (0, r.default)(),
+        session: new (0, p.default)(),
+        gui: new (0, n.default)(),
+        matchmaker: new (0, s.default)(),
+        activityFeed: new (0, o.default)(),
+        editing: new (0, t.default)(),
+        hooks: new (0, u.default)(),
+        assignment: new (0, v.default)()
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    class j {
+        constructor() {
+            (0, f.default)(this, 'gpuTier', 0), this.currentScene = i.default.preload, this.isCursorOverCanvas = !1, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], j.prototype, 'currentScene', void 0), (0, g.__decorate)([h.observable], j.prototype, 'isCursorOverCanvas', void 0);
+    var _k = j;
+}), c.register('.....', function (d, e) {
+    let f;
+    var g;
+    a(d.exports, 'default', function () {
+        return _h;
+    }), (g = f || (f = {})).preload = 'preload', g.game = 'game';
+    var _h = f;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class i {
+        constructor() {
+            (0, f.default)(this, 'client', null), (0, f.default)(this, 'clientConnectionString', ''), this.authId = '', this.findingServerForGame = !1, this.errorFindingServerForGame = !1, this.attemptingToConnect = !0, this.attemptingToReconnect = !1, this.failedToReconnect = !1, this.hasJoinedRoom = !1, this.joinedRoom = !1, this.errorJoiningRoom = !1, this.error = null, this.isOffline = !1, this.isUpToDateWithPingPong = !0, this.syncingAfterReconnection = !1, this.phaseBeforeReconnect = null, this.roomIntentErrorMessage = '', this.ping = 0, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], i.prototype, 'authId', void 0), (0, g.__decorate)([h.observable], i.prototype, 'findingServerForGame', void 0), (0, g.__decorate)([h.observable], i.prototype, 'errorFindingServerForGame', void 0), (0, g.__decorate)([h.observable], i.prototype, 'attemptingToConnect', void 0), (0, g.__decorate)([h.observable], i.prototype, 'attemptingToReconnect', void 0), (0, g.__decorate)([h.observable], i.prototype, 'failedToReconnect', void 0), (0, g.__decorate)([h.observable], i.prototype, 'hasJoinedRoom', void 0), (0, g.__decorate)([h.observable], i.prototype, 'joinedRoom', void 0), (0, g.__decorate)([h.observable], i.prototype, 'errorJoiningRoom', void 0), (0, g.__decorate)([h.observable], i.prototype, 'error', void 0), (0, g.__decorate)([h.observable], i.prototype, 'isOffline', void 0), (0, g.__decorate)([h.observable], i.prototype, 'isUpToDateWithPingPong', void 0), (0, g.__decorate)([h.observable], i.prototype, 'syncingAfterReconnection', void 0), (0, g.__decorate)([h.observable], i.prototype, 'phaseBeforeReconnect', void 0), (0, g.__decorate)([h.observable], i.prototype, 'roomIntentErrorMessage', void 0), (0, g.__decorate)([h.observable], i.prototype, 'ping', void 0);
+    var _j = i;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.percentageAssetsLoaded = 0, this.completedInitialLoad = !1, this.loadedInitialTerrain = !1, this.loadedInitialDevices = !1, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'percentageAssetsLoaded', void 0), (0, f.__decorate)([g.observable], h.prototype, 'completedInitialLoad', void 0), (0, f.__decorate)([g.observable], h.prototype, 'loadedInitialTerrain', void 0), (0, f.__decorate)([g.observable], h.prototype, 'loadedInitialDevices', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _g;
+    });
+    var f = c('.....');
+    var _g = class {
+        constructor() {
+            (0, f.default)(this, 'mainCharacterTeleported', !1);
+        }
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _C;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....'), w = c('.....'), x = c('.....'), y = c('.....'), z = c('.....'), A = c('.....');
+    class B {
+        constructor() {
+            (0, f.default)(this, 'roleLevel', 0), (0, f.default)(this, 'myTeam', ''), (0, f.default)(this, 'spawnPosition', {
+                x: 0,
+                y: 0
+            }), (0, f.default)(this, 'teleportCount', 0), (0, f.default)(this, 'classDesigner', new (0, A.default)()), (0, f.default)(this, 'adding', new (0, j.default)()), (0, f.default)(this, 'removing', new (0, p.default)()), (0, f.default)(this, 'editing', new (0, m.default)()), (0, f.default)(this, 'inventory', new (0, o.default)()), (0, f.default)(this, 'context', new (0, k.default)()), (0, f.default)(this, 'interactives', new (0, n.default)()), (0, f.default)(this, 'deviceUI', new (0, l.default)()), (0, f.default)(this, 'nonDismissMessage', new (0, q.default)()), (0, f.default)(this, 'spectating', new (0, r.default)()), (0, f.default)(this, 'xp', new (0, s.default)()), (0, f.default)(this, 'preferences', new (0, t.default)()), (0, f.default)(this, 'cinematicMode', new (0, u.default)()), (0, f.default)(this, 'health', new (0, v.default)()), (0, f.default)(this, 'zoneDropOverrides', new (0, w.default)()), (0, f.default)(this, 'mood', new (0, x.default)()), (0, f.default)(this, 'mobileControls', new (0, z.default)()), (0, f.default)(this, 'gotKicked', !1), this.currentAction = i.default.none, this.phase = !1, this.movementSpeed = y.default.normal, this.completedInitialPlacement = !1, this.isRespawning = !1, this.unredeemedXP = 0, this.properties = h.observable.map(), (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], B.prototype, 'currentAction', void 0), (0, g.__decorate)([h.observable], B.prototype, 'phase', void 0), (0, g.__decorate)([h.observable], B.prototype, 'movementSpeed', void 0), (0, g.__decorate)([h.observable], B.prototype, 'completedInitialPlacement', void 0), (0, g.__decorate)([h.observable], B.prototype, 'isRespawning', void 0), (0, g.__decorate)([h.observable], B.prototype, 'unredeemedXP', void 0), (0, g.__decorate)([h.observable], B.prototype, 'properties', void 0);
+    var _C = B;
+}), c.register('.....', function (d, e) {
+    let f;
+    var g;
+    a(d.exports, 'default', function () {
+        return _h;
+    }), (g = f || (f = {})).none = 'none', g.adding = 'adding', g.removing = 'removing', g.editingDevice = 'editingDevice', g.editingWire = 'editingWire', g.hooks = 'hooks', g.deviceUI = 'deviceUI';
+    var _h = f;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'AddingMode', function () {
+        return _l;
+    }), a(d.exports, 'default', function () {
+        return _o;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    let _l;
+    var m;
+    (m = _l || (_l = {})).none = 'none', m.device = 'device', m.terrain = 'terrain', m.wire = 'wire';
+    class n {
+        constructor() {
+            (0, f.default)(this, 'terrain', new (0, i.default)()), (0, f.default)(this, 'devices', new (0, h.default)()), (0, f.default)(this, 'wires', new (0, k.default)()), this.mode = _l.none, (0, j.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([j.observable], n.prototype, 'mode', void 0);
+    var _o = n;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'ExistingDeviceAddingAction', function () {
+        return _h;
+    }), a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....');
+    let _h;
+    var i;
+    (i = _h || (_h = {})).cut = 'cut', i.copy = 'copy';
+    class j {
+        constructor() {
+            this.selectedDeviceType = '', this.existingDevice = {
+                use: !1,
+                id: '',
+                action: _h.copy,
+                shiftX: 0,
+                shiftY: 0
+            }, this.currentlySelectedProp = '', (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], j.prototype, 'selectedDeviceType', void 0), (0, f.__decorate)([g.observable], j.prototype, 'existingDevice', void 0), (0, f.__decorate)([g.observable], j.prototype, 'currentlySelectedProp', void 0);
+    var _k = j;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class i {
+        constructor() {
+            this.currentlySelectedTerrain = '', this.currentlySelectedTerrainDepth = Math.floor((h.default.maxDepth + h.default.minDepth) / 2), this.buildTerrainAsWall = !1, this.brushSize = 1, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], i.prototype, 'currentlySelectedTerrain', void 0), (0, f.__decorate)([g.observable], i.prototype, 'currentlySelectedTerrainDepth', void 0), (0, f.__decorate)([g.observable], i.prototype, 'buildTerrainAsWall', void 0), (0, f.__decorate)([g.observable], i.prototype, 'brushSize', void 0);
+    var _j = i;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        minDepth: 1,
+        maxDepth: 5,
+        playerBuiltTerrain: 6,
+        previewDepth: 999
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.startDeviceSelected = !1, this.hoveringOverSupportedDevice = !1, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'startDeviceSelected', void 0), (0, f.__decorate)([g.observable], h.prototype, 'hoveringOverSupportedDevice', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class i {
+        get cursorIsOverDevice() {
+            return !!this.__devicesUnderCursor.length;
+        }
+        get cursorIsOverWire() {
+            return !!this.__wiresUnderCursor.size;
+        }
+        constructor() {
+            (0, f.default)(this, '__devicesUnderCursor', h.observable.array()), (0, f.default)(this, '__wiresUnderCursor', h.observable.set()), this.cursorIsOverCharacterId = '', (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.computed], i.prototype, 'cursorIsOverDevice', null), (0, g.__decorate)([h.computed], i.prototype, 'cursorIsOverWire', null), (0, g.__decorate)([h.observable], i.prototype, 'cursorIsOverCharacterId', void 0);
+    var _j = i;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class i {
+        constructor() {
+            (0, f.default)(this, 'desiredOpenDeviceId', ''), this.current = {
+                deviceId: '',
+                props: {}
+            }, this.serverVersionOpenDeviceId = '', (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], i.prototype, 'current', void 0), (0, g.__decorate)([h.observable], i.prototype, 'serverVersionOpenDeviceId', void 0);
+    var _j = i;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var _j = class {
+        constructor() {
+            (0, f.default)(this, 'device', new (0, g.default)()), (0, f.default)(this, 'wire', new (0, h.default)()), (0, f.default)(this, 'preferences', new (0, i.default)());
+        }
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'EditingDeviceScreen', function () {
+        return _h;
+    }), a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....');
+    let _h;
+    var i;
+    (i = _h || (_h = {})).home = 'home', i.grid = 'grid';
+    class j {
+        constructor() {
+            this.currentlyEditedDevice = {}, this.visualEditing = {}, this.screen = _h.home, this.currentlyEditedGridId = '', this.sortingState = g.observable.array(), this.currentlySortedDeviceId = '', this.usingMultiselect = !1, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], j.prototype, 'currentlyEditedDevice', void 0), (0, f.__decorate)([g.observable], j.prototype, 'visualEditing', void 0), (0, f.__decorate)([g.observable], j.prototype, 'screen', void 0), (0, f.__decorate)([g.observable], j.prototype, 'currentlyEditedGridId', void 0), (0, f.__decorate)([g.observable], j.prototype, 'sortingState', void 0), (0, f.__decorate)([g.observable], j.prototype, 'currentlySortedDeviceId', void 0), (0, f.__decorate)([g.observable], j.prototype, 'usingMultiselect', void 0);
+    var _k = j;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.currentlyEditedWireId = '', (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'currentlyEditedWireId', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.phase = null, this.movementSpeed = null, this.showGrid = null, this.cameraZoom = 1, this.topDownControlsActive = !1, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'phase', void 0), (0, f.__decorate)([g.observable], h.prototype, 'movementSpeed', void 0), (0, f.__decorate)([g.observable], h.prototype, 'showGrid', void 0), (0, f.__decorate)([g.observable], h.prototype, 'cameraZoom', void 0), (0, f.__decorate)([g.observable], h.prototype, 'topDownControlsActive', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.deviceId = '', this.info = null, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'deviceId', void 0), (0, f.__decorate)([g.observable], h.prototype, 'info', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'InventorySlot', function () {
+        return _i;
+    }), a(d.exports, 'default', function () {
+        return _l;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class _i {
+        constructor(j) {
+            (0, f.default)(this, 'existsBeforeReconnect', !1), this.amount = 0, this.amount = j, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], _i.prototype, 'amount', void 0);
+    class j {
+        constructor() {
+            this.itemId = '', this.waiting = !1, this.waitingStartTime = 0, this.waitingEndTime = 0, this.currentClip = 0, this.clipSize = 0, this.durability = -1, this.count = 0, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], j.prototype, 'itemId', void 0), (0, g.__decorate)([h.observable], j.prototype, 'waiting', void 0), (0, g.__decorate)([h.observable], j.prototype, 'waitingStartTime', void 0), (0, g.__decorate)([h.observable], j.prototype, 'waitingEndTime', void 0), (0, g.__decorate)([h.observable], j.prototype, 'currentClip', void 0), (0, g.__decorate)([h.observable], j.prototype, 'clipSize', void 0), (0, g.__decorate)([h.observable], j.prototype, 'durability', void 0), (0, g.__decorate)([h.observable], j.prototype, 'count', void 0);
+    class k {
+        constructor() {
+            (0, f.default)(this, 'interactiveSlotErrorMessageTimeouts', new Map()), (0, f.default)(this, 'isCurrentWaitingSoundForItem', !1), (0, f.default)(this, 'currentWaitingEndTime', 0), (0, f.default)(this, 'lastShotsTimestamps', new Map()), this.slots = h.observable.map(), this.maxSlots = 999, this.alertFeed = void 0, this.alertsFeed = [], this.activeInteractiveSlot = 0, this.interactiveSlots = h.observable.map(), this.interactiveSlotsOrder = h.observable.array([
+                1,
+                2,
+                3,
+                4,
+                5
+            ]), this.interactiveSlotErrorMessages = h.observable.map(), this.infiniteAmmo = !1, (0, h.makeObservable)(this), this.interactiveSlots.set('1', new j()), this.interactiveSlots.set('2', new j()), this.interactiveSlots.set('3', new j()), this.interactiveSlots.set('4', new j()), this.interactiveSlots.set('5', new j());
+        }
+    }
+    (0, g.__decorate)([h.observable], k.prototype, 'slots', void 0), (0, g.__decorate)([h.observable], k.prototype, 'maxSlots', void 0), (0, g.__decorate)([h.observable], k.prototype, 'alertFeed', void 0), (0, g.__decorate)([h.observable], k.prototype, 'alertsFeed', void 0), (0, g.__decorate)([h.observable], k.prototype, 'activeInteractiveSlot', void 0), (0, g.__decorate)([h.observable], k.prototype, 'interactiveSlots', void 0), (0, g.__decorate)([h.observable], k.prototype, 'interactiveSlotsOrder', void 0), (0, g.__decorate)([h.observable], k.prototype, 'interactiveSlotErrorMessages', void 0), (0, g.__decorate)([h.observable], k.prototype, 'infiniteAmmo', void 0);
+    var _l = k;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'RemovingMode', function () {
+        return _j;
+    }), a(d.exports, 'RemovingTilesMode', function () {
+        return _l;
+    }), a(d.exports, 'default', function () {
+        return _o;
+    });
+    var f = c('.....'), g = c('.....');
+    let h;
+    var i;
+    let _j;
+    var k;
+    let _l;
+    var m;
+    (i = h || (h = {})).terrain = 'terrain', i.prop = 'prop', i.device = 'device', (k = _j || (_j = {})).everything = 'Everything', k.propsAndDevices = 'Props & Devices', k.tiles = 'Tiles', k.wires = 'Wires', (m = _l || (_l = {})).allLayers = 'All Layers', m.topLayer = 'Top Layer', m.layer = 'Layer';
+    class n {
+        constructor() {
+            this.deviceIdToRemove = null, this.wireIdToRemove = null, this.tilesToRemove = [], this.removingMode = _j.everything, this.removingTilesMode = _l.topLayer, this.removingTilesLayer = 3, this.removingTilesEraserSize = 1, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], n.prototype, 'deviceIdToRemove', void 0), (0, f.__decorate)([g.observable], n.prototype, 'wireIdToRemove', void 0), (0, f.__decorate)([g.observable], n.prototype, 'tilesToRemove', void 0), (0, f.__decorate)([g.observable], n.prototype, 'removingMode', void 0), (0, f.__decorate)([g.observable], n.prototype, 'removingTilesMode', void 0), (0, f.__decorate)([g.observable], n.prototype, 'removingTilesLayer', void 0), (0, f.__decorate)([g.observable], n.prototype, 'removingTilesEraserSize', void 0);
+    var _o = n;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.title = '', this.description = '', (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'title', void 0), (0, f.__decorate)([g.observable], h.prototype, 'description', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.id = '', this.name = '', this.shuffle = !1, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'id', void 0), (0, f.__decorate)([g.observable], h.prototype, 'name', void 0), (0, f.__decorate)([g.observable], h.prototype, 'shuffle', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class i {
+        constructor() {
+            (0, f.default)(this, 'additionTimeouts', new Map()), this.additions = h.observable.array(), this.showingLevelUp = !1, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], i.prototype, 'additions', void 0), (0, g.__decorate)([h.observable], i.prototype, 'showingLevelUp', void 0);
+    var _j = i;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class i {
+        constructor() {
+            this.startGameWithMode = h.MapModeType.liveGame, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], i.prototype, 'startGameWithMode', void 0);
+    var _j = i;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.enabled = !!localStorage.getItem('cinematicMode'), this.mainCharacterVisible = !0, this.charactersVisible = !0, this.nameTagsVisible = !0, this.followingMainCharacter = !0, this.hidingGUI = !1, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'enabled', void 0), (0, f.__decorate)([g.observable], h.prototype, 'mainCharacterVisible', void 0), (0, f.__decorate)([g.observable], h.prototype, 'charactersVisible', void 0), (0, f.__decorate)([g.observable], h.prototype, 'nameTagsVisible', void 0), (0, f.__decorate)([g.observable], h.prototype, 'followingMainCharacter', void 0), (0, f.__decorate)([g.observable], h.prototype, 'hidingGUI', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.lives = -1, this.health = 0, this.shield = 0, this.fragility = 0, this.maxHealth = 0, this.maxShield = 0, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'lives', void 0), (0, f.__decorate)([g.observable], h.prototype, 'health', void 0), (0, f.__decorate)([g.observable], h.prototype, 'shield', void 0), (0, f.__decorate)([g.observable], h.prototype, 'fragility', void 0), (0, f.__decorate)([g.observable], h.prototype, 'maxHealth', void 0), (0, f.__decorate)([g.observable], h.prototype, 'maxShield', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.allowWeaponDrop = !0, this.allowItemDrop = !0, this.allowResourceDrop = !0, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'allowWeaponDrop', void 0), (0, f.__decorate)([g.observable], h.prototype, 'allowItemDrop', void 0), (0, f.__decorate)([g.observable], h.prototype, 'allowResourceDrop', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class i {
+        constructor() {
+            (0, f.default)(this, 'activeDeviceId', ''), this.vignetteActive = !0, this.vignetteStrength = 0, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], i.prototype, 'vignetteActive', void 0), (0, g.__decorate)([h.observable], i.prototype, 'vignetteStrength', void 0);
+    var _j = i;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = { normal: 310 };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _g;
+    });
+    var f = c('.....');
+    var _g = class {
+        constructor() {
+            (0, f.default)(this, 'left', !1), (0, f.default)(this, 'right', !1), (0, f.default)(this, 'up', !1);
+        }
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class i {
+        constructor() {
+            (0, f.default)(this, 'lastActivatedClassDeviceId', ''), (0, f.default)(this, 'lastClassDeviceActivationId', -1), this.activeClassDeviceId = '', (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], i.prototype, 'activeClassDeviceId', void 0);
+    var _j = i;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _n;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    class m {
+        constructor() {
+            (0, f.default)(this, 'width', i.default.width), (0, f.default)(this, 'height', i.default.height), (0, f.default)(this, 'terrain', new (0, k.default)()), (0, f.default)(this, 'devices', new (0, j.default)()), (0, f.default)(this, 'wires', new (0, l.default)()), this.mapOptionsJSON = '', (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], m.prototype, 'mapOptionsJSON', void 0);
+    var _n = m;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        width: 1000,
+        height: 1000
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class i {
+        constructor() {
+            (0, f.default)(this, 'states', new Map()), this.devices = h.observable.map(), this.codeGrids = h.observable.map(), (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], i.prototype, 'devices', void 0), (0, g.__decorate)([h.observable], i.prototype, 'codeGrids', void 0);
+    var _j = i;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _g;
+    });
+    var f = c('.....');
+    var _g = class {
+        constructor() {
+            (0, f.default)(this, 'tiles', new Map()), (0, f.default)(this, 'modifiedHealth', new Map()), (0, f.default)(this, 'teamColorTiles', new Map()), (0, f.default)(this, 'currentTerrainUpdateId', 0), (0, f.default)(this, 'queuedTiles', new Map());
+        }
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.wires = g.observable.map(), (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'wires', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class i {
+        constructor() {
+            (0, f.default)(this, 'terrainOptions', []), (0, f.default)(this, 'propsOptions', []), (0, f.default)(this, 'deviceOptions', []), (0, f.default)(this, 'itemOptions', []), (0, f.default)(this, 'skinOptions', []), (0, f.default)(this, 'requestedAllProps', !1), this.hasAllProps = !1, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], i.prototype, 'hasAllProps', void 0);
+    var _j = i;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _o;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    class m {
+        constructor() {
+            (0, f.default)(this, 'none', new (0, i.default)()), (0, f.default)(this, 'modals', new (0, j.default)()), (0, f.default)(this, 'damageIndicator', new (0, k.default)()), (0, f.default)(this, 'bottomInGamePrimaryContent', new (0, l.default)()), (0, f.default)(this, 'achievement', new _n()), this.scale = 1, this.showingGrid = !1, this.guiSlots = h.observable.array(), this.guiSlotsChangeCounter = 0, this.openInputBlockingUI = h.observable.array(), this.knockoutAlerts = h.observable.array(), this.playersManagerUpdateCounter = 0, this.selectedPlayerId = '', this.scorebar = void 0, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], m.prototype, 'scale', void 0), (0, g.__decorate)([h.observable], m.prototype, 'showingGrid', void 0), (0, g.__decorate)([h.observable], m.prototype, 'guiSlots', void 0), (0, g.__decorate)([h.observable], m.prototype, 'guiSlotsChangeCounter', void 0), (0, g.__decorate)([h.observable], m.prototype, 'openInputBlockingUI', void 0), (0, g.__decorate)([h.observable], m.prototype, 'knockoutAlerts', void 0), (0, g.__decorate)([h.observable], m.prototype, 'playersManagerUpdateCounter', void 0), (0, g.__decorate)([h.observable], m.prototype, 'selectedPlayerId', void 0), (0, g.__decorate)([h.observable], m.prototype, 'scorebar', void 0);
+    class _n {
+        constructor() {
+            this.id = '', this.key = '', this.update = (o, p) => {
+                this.id = o, this.key = p;
+            }, this.reset = () => {
+                this.id = '', this.key = '';
+            }, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], _n.prototype, 'id', void 0), (0, g.__decorate)([h.observable], _n.prototype, 'key', void 0), (0, g.__decorate)([h.action], _n.prototype, 'update', void 0), (0, g.__decorate)([h.action], _n.prototype, 'reset', void 0);
+    var _o = m;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'NoneScreen', function () {
+        return _k;
+    }), a(d.exports, 'default', function () {
+        return _n;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    let _k;
+    var l;
+    (l = _k || (_k = {})).home = 'home', l.add = 'add', l.inventory = 'inventory', l.scoreboard = 'scoreboard', l.sorting = 'sorting', l.startScreen = 'startScreen', l.playerManager = 'playerManager', l.soundOptions = 'soundOptions', l.assignmentInfo = 'assignmentInfo', l.options = 'options', l.teamCustomization = 'teamCustomization';
+    class m {
+        constructor() {
+            (0, f.default)(this, 'addMenu', new (0, i.default)()), (0, f.default)(this, 'optionsMenu', new (0, j.default)()), this.screen = _k.home, this.duringGameScreenVisible = !1, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], m.prototype, 'screen', void 0), (0, g.__decorate)([h.observable], m.prototype, 'duringGameScreenVisible', void 0);
+    var _n = m;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'AddScreen', function () {
+        return _h;
+    }), a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....');
+    let _h;
+    var i;
+    (i = _h || (_h = {})).home = 'home', i.terrain = 'terrain', i.props = 'props', i.devices = 'devices';
+    class j {
+        constructor() {
+            this.screen = _h.home, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], j.prototype, 'screen', void 0);
+    var _k = j;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'OptionsMenuScreen', function () {
+        return _h;
+    }), a(d.exports, 'default', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....');
+    let _h;
+    var i;
+    (i = _h || (_h = {})).home = 'home', i.mapOptions = 'mapOptions', i.editing = 'editing', i.permissions = 'permissions', i.saving = 'saving', i.help = 'help', i.publishing = 'publishing';
+    class j {
+        constructor() {
+            this.screen = _h.home, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], j.prototype, 'screen', void 0);
+    var _k = j;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.cosmosModalOpen = !1, this.switchToRegisterScreenWhenCosmosModalOpens = !1, this.closeAllModals = () => {
+                this.cosmosModalOpen = !1, this.switchToRegisterScreenWhenCosmosModalOpens = !1;
+            }, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'cosmosModalOpen', void 0), (0, f.__decorate)([g.observable], h.prototype, 'switchToRegisterScreenWhenCosmosModalOpens', void 0), (0, f.__decorate)([g.action], h.prototype, 'closeAllModals', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class i {
+        constructor() {
+            this.type = g.CharacterDamageMarkerType.shield, this.show = !1, (0, h.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([h.observable], i.prototype, 'type', void 0), (0, f.__decorate)([h.observable], i.prototype, 'show', void 0);
+    var _j = i;
+}), c.register('.....', function (d, e) {
+    let f;
+    var g;
+    a(d.exports, 'CharacterDamageMarkerType', function () {
+        return f;
+    }), (g = f || (f = {})).brokenShield = 'b', g.shield = 's', g.health = 'h', g.fragility = 'f';
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.interactionWantsToBeVisible = !1, this.prioritizeInteraction = !0, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'interactionWantsToBeVisible', void 0), (0, f.__decorate)([g.observable], h.prototype, 'prioritizeInteraction', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.feedItems = g.observable.array(), (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'feedItems', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _q;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....');
+    class p {
+        constructor() {
+            (0, f.default)(this, 'phaseChangedAt', Date.now()), (0, f.default)(this, 'mapCreatorRoleLevel', 0), (0, f.default)(this, 'gameSession', new (0, l.default)()), (0, f.default)(this, 'globalPermissions', new (0, m.default)()), (0, f.default)(this, 'customTeams', new (0, o.default)()), this.amIGameOwner = !1, this.ownerRole = k.default.player, this.gameOwnerId = '', this.mapStyle = n.default.topDown, this.version = i.default.published, this.modeType = j.MapModeType.liveGame, this.gameTime = 0, this.gameTimeLastUpdateAt = 0, this.loadingPhase = !1, this.phase = null, this.duringTransition = !1, this.gameClockDuration = '', this.canAddGameTime = !1, this.cosmosBlocked = !1, this.allowGoogleTranslate = !1, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], p.prototype, 'amIGameOwner', void 0), (0, g.__decorate)([h.observable], p.prototype, 'ownerRole', void 0), (0, g.__decorate)([h.observable], p.prototype, 'gameOwnerId', void 0), (0, g.__decorate)([h.observable], p.prototype, 'mapStyle', void 0), (0, g.__decorate)([h.observable], p.prototype, 'version', void 0), (0, g.__decorate)([h.observable], p.prototype, 'modeType', void 0), (0, g.__decorate)([h.observable], p.prototype, 'gameTime', void 0), (0, g.__decorate)([h.observable], p.prototype, 'gameTimeLastUpdateAt', void 0), (0, g.__decorate)([h.observable], p.prototype, 'loadingPhase', void 0), (0, g.__decorate)([h.observable], p.prototype, 'phase', void 0), (0, g.__decorate)([h.observable], p.prototype, 'duringTransition', void 0), (0, g.__decorate)([h.observable], p.prototype, 'gameClockDuration', void 0), (0, g.__decorate)([h.observable], p.prototype, 'canAddGameTime', void 0), (0, g.__decorate)([h.observable], p.prototype, 'cosmosBlocked', void 0), (0, g.__decorate)([h.observable], p.prototype, 'allowGoogleTranslate', void 0);
+    var _q = p;
+}), c.register('.....', function (d, e) {
+    let f;
+    var g;
+    a(d.exports, 'default', function () {
+        return _h;
+    }), (g = f || (f = {})).saved = 'saved', g.published = 'published';
+    var _h = f;
+}), c.register('.....', function (d, e) {
+    let f;
+    var g;
+    a(d.exports, 'default', function () {
+        return _h;
+    }), (g = f || (f = {})).player = 'player', g.spectator = 'spectator';
+    var _h = f;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _m;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    class l {
+        constructor() {
+            (0, f.default)(this, 'callToAction', new (0, j.default)()), (0, f.default)(this, 'widgets', new (0, k.default)()), this.phase = i.GamePhase.countdown, this.countdownEnd = 0, this.resultsEnd = 0, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], l.prototype, 'phase', void 0), (0, g.__decorate)([h.observable], l.prototype, 'countdownEnd', void 0), (0, g.__decorate)([h.observable], l.prototype, 'resultsEnd', void 0);
+    var _m = l;
+}), c.register('.....', function (d, e) {
+    let f;
+    var g;
+    let h;
+    var i;
+    a(d.exports, 'Phase', function () {
+        return f;
+    }), a(d.exports, 'GamePhase', function () {
+        return h;
+    }), (g = f || (f = {})).preGame = 'preGame', g.game = 'game', (i = h || (h = {})).countdown = 'countdown', i.game = 'game', i.results = 'results';
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.categories = g.observable.array(), this.items = g.observable.array(), (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'categories', void 0), (0, f.__decorate)([g.observable], h.prototype, 'items', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.widgets = g.observable.array(), (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'widgets', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.adding = !0, this.removing = !0, this.editing = !0, this.manageCodeGrids = !0, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'adding', void 0), (0, f.__decorate)([g.observable], h.prototype, 'removing', void 0), (0, f.__decorate)([g.observable], h.prototype, 'editing', void 0), (0, f.__decorate)([g.observable], h.prototype, 'manageCodeGrids', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.characterToTeamMap = g.observable.map(), (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'characterToTeamMap', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.characters = g.observable.map(), (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'characters', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.teams = g.observable.map(), this.updateCounter = 0, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'teams', void 0), (0, f.__decorate)([g.observable], h.prototype, 'updateCounter', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.gameCode = '', (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'gameCode', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.gridSnap = 0, this.showMemoryBarAtAllTimes = !1, this.accessPoints = g.observable.map(), (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'gridSnap', void 0), (0, f.__decorate)([g.observable], h.prototype, 'showMemoryBarAtAllTimes', void 0), (0, f.__decorate)([g.observable], h.prototype, 'accessPoints', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.hookJSON = JSON.stringify({ hooks: [] }), (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'hookJSON', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    class h {
+        constructor() {
+            this.objective = '', this.percentageComplete = 0, this.hasSavedProgress = !1, (0, g.makeObservable)(this);
+        }
+    }
+    (0, f.__decorate)([g.observable], h.prototype, 'objective', void 0), (0, f.__decorate)([g.observable], h.prototype, 'percentageComplete', void 0), (0, f.__decorate)([g.observable], h.prototype, 'hasSavedProgress', void 0);
+    var _i = h;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'MemorySystem', function () {
+        return _l;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    class i {
+        constructor() {
+            (0, f.default)(this, 'deviceMaxOnMapDefault', 0), (0, f.default)(this, 'collidingTiles', 0), (0, f.default)(this, 'nonCollidingTiles', 0), (0, f.default)(this, 'wires', 0), (0, f.default)(this, 'codeGrids', 0), (0, f.default)(this, 'blocksPerCodeGrid', 0), (0, f.default)(this, 'codeGridsPerDevice', 0);
+        }
+    }
+    class j {
+        constructor() {
+            (0, f.default)(this, 'deviceInitialDefault', 999999999999), (0, f.default)(this, 'deviceSubsequentDefault', 999999999999), (0, f.default)(this, 'nonCollidingTile', 999999999999), (0, f.default)(this, 'collidingTile', 999999999999), (0, f.default)(this, 'wire', 999999999999), (0, f.default)(this, 'codeGrid', 999999999999);
+        }
+    }
+    class k {
+        constructor() {
+            this.devices = h.observable.map(), this.collidingTiles = 0, this.nonCollidingTiles = 0, this.wires = 0, this.codeGrids = 0, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], k.prototype, 'devices', void 0), (0, g.__decorate)([h.observable], k.prototype, 'collidingTiles', void 0), (0, g.__decorate)([h.observable], k.prototype, 'nonCollidingTiles', void 0), (0, g.__decorate)([h.observable], k.prototype, 'wires', void 0), (0, g.__decorate)([h.observable], k.prototype, 'codeGrids', void 0);
+    class _l {
+        constructor() {
+            (0, f.default)(this, 'counters', new k()), (0, f.default)(this, 'limits', new i()), (0, f.default)(this, 'costs', new j()), this.usedMemoryCost = 0, this.maxUsedMemory = 0, (0, h.makeObservable)(this);
+        }
+    }
+    (0, g.__decorate)([h.observable], _l.prototype, 'usedMemoryCost', void 0), (0, g.__decorate)([h.observable], _l.prototype, 'maxUsedMemory', void 0);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _g;
+    });
+    var f = c('.....');
+    var _g = h => (0, f.default)().characterManager.characters.get(h);
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _g;
+    });
+    var f = c('.....');
+    var _g = () => f.default.phaser.scene;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'isSavedVersion', function () {
+        return _h;
+    }), a(d.exports, 'isPublishedVersion', function () {
+        return _i;
+    });
+    var f = c('.....'), g = c('.....');
+    const _h = () => f.default.session.version === g.default.saved, _i = () => f.default.session.version === g.default.published;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'InGamePhase', function () {
+        return _h;
+    }), a(d.exports, 'InPreGamePhase', function () {
+        return _i;
+    }), a(d.exports, 'InGamePhaseVisible', function () {
+        return _j;
+    }), a(d.exports, 'InPreGamePhaseVisible', function () {
+        return _k;
+    });
+    var f = c('.....'), g = c('.....');
+    const _h = () => f.default.session.phase === g.Phase.game, _i = () => f.default.session.phase === g.Phase.preGame, _j = () => _h() && !f.default.session.duringTransition || _i() && f.default.session.duringTransition && !f.default.me.isRespawning, _k = () => _i() && !f.default.session.duringTransition || _h() && f.default.session.duringTransition && !f.default.me.isRespawning;
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'SoundType', function () {
+        return _h;
+    }), a(d.exports, 'getVolume', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....');
+    let _h;
+    var i;
+    (i = _h || (_h = {})).music = 'music', i.soundEffect = 'soundEffect';
+    const _j = k => {
+        const l = k.type === _h.music ? g.default.musicVolume : g.default.soundEffectVolume, m = localStorage.getItem(l) || '1';
+        let n = (0, f.clamp)(Number(m), 0, 1);
+        return isNaN(n) && (n = 1), k.volume * n;
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _f;
+    });
+    var _f = {
+        musicVolume: 'map-music-volume',
+        soundEffectVolume: 'map-sound-effect-volume'
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'isPlatformer', function () {
+        return _j;
+    }), a(d.exports, 'isEditingPlatformerAndPreferTopDownControls', function () {
+        return _k;
+    }), a(d.exports, 'isTopDown', function () {
+        return _l;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    const _j = () => f.default.session.mapStyle === g.default.platformer, _k = () => _j() && !(0, h.isPublishedVersion)() && (0, i.InPreGamePhaseVisible)() && f.default.me.editing.preferences.topDownControlsActive, _l = () => f.default.session.mapStyle === g.default.topDown;
+}), c.register('.....', function (d, e) {
     var f, g = c('.....');
     d.exports, f = () => (() => {
         var h = {
@@ -41685,8 +42588,272 @@ c.register('.....', function (d, e) {
         bodyLoopedAnimations: [
             f.rest,
             f.run
+        ],
+        jumpAnimations: [
+            f.jumpStart,
+            f.jumpMiddleIdle,
+            f.jumpDownIdle,
+            f.jumpLand
         ]
     };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'ANIMATION_TRACKS', function () {
+        return _i;
+    }), a(d.exports, 'default', function () {
+        return _j;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....');
+    const _i = {
+        COMMON: 0,
+        BODY_SUPPLEMENTAL: 1,
+        MOVEMENT_SUPPLEMENTAL: 2,
+        JUMP_SUPPLEMENTAL: 3,
+        EYES: 4,
+        BODY: 5
+    };
+    var _j = class {
+        constructor(k) {
+            (0, f.default)(this, 'skinChanged', !1), (0, f.default)(this, 'availableAnimations', []), (0, f.default)(this, 'currentBodyAnimation', g.CharacterBodyAnimationState.rest), (0, f.default)(this, 'bodyAnimationLocked', !1), (0, f.default)(this, 'bodyAnimationStartedAt', 0), (0, f.default)(this, 'currentEyeAnimation', g.CharacterEyeAnimationState.idle), (0, f.default)(this, 'nonMainCharacterState', { grounded: !0 }), (0, f.default)(this, 'prevNonMainCharacterState', { ...this.nonMainCharacterState }), (0, f.default)(this, 'lastGroundedAnimationAt', 0), (0, f.default)(this, 'update', l => {
+                this.character.isMain || (this.nonMainCharacterState.grounded = this.character.movement.nonMainCharacterGrounded);
+                const m = (0, h.default)(this.character, l);
+                this.playBodyAnimation(m), m !== g.CharacterBodyAnimationState.rest && m !== g.CharacterBodyAnimationState.run || (this.lastGroundedAnimationAt = Date.now()), this.character.isMain || (this.prevNonMainCharacterState = { ...this.nonMainCharacterState });
+            }), (0, f.default)(this, 'setupAnimations', () => {
+                const l = this.character.spine;
+                this.availableAnimations = l.skeleton.data.animations.map(m => m.name), l.animationStateData.defaultMix = g.default.body.transition.defaultDuration, l.animationStateData.setMix(g.default.body.animationNames.jumpMiddleIdle, g.default.body.animationNames.jumpDownIdle, g.default.body.transition.jumpFallingDuration), this.playBodyAnimation(this.currentBodyAnimation), this.playEyeAnimation(this.currentEyeAnimation), this.availableAnimations.includes(`skins-${ this.character.skin.skinId }-common`) && this.character.spine.animationState.setAnimation(_i.COMMON, `skins-${ this.character.skin.skinId }-common`, !0), this.character.spine.animationState.addListener({
+                    complete: m => {
+                        this.onAnimationComplete(m);
+                    }
+                });
+            }), (0, f.default)(this, 'playBodyAnimation', l => {
+                var m;
+                if (l === this.currentBodyAnimation && !this.skinChanged)
+                    return;
+                if (this.bodyAnimationLocked && !this.skinChanged) {
+                    var n, o, p;
+                    const q = null !== (p = null === (n = g.default.animationLocks) || void 0 === n || null === (o = n[this.currentBodyAnimation]) || void 0 === o ? void 0 : o[l]) && void 0 !== p ? p : 0;
+                    if (q) {
+                        if (Date.now() < this.bodyAnimationStartedAt + q)
+                            return;
+                    }
+                }
+                const r = !!(null === (q = g.default.animationLocks) || void 0 === q ? void 0 : q[l]);
+                this.bodyAnimationLocked = r, this.bodyAnimationStartedAt = Date.now(), l === g.CharacterBodyAnimationState.rest ? this.startBlinkAnimation() : this.stopBlinkAnimation(), this.currentBodyAnimation = l, this.character.spine.animationState.setAnimation(_i.BODY, g.default.body.animationNames[l], g.default.bodyLoopedAnimations.includes(l)), this.character.dimensions.onPotentialDimensionsChange(), this.playBodySupplementalAnimation(l);
+            }), (0, f.default)(this, 'playEyeAnimation', l => {
+                (l !== this.currentEyeAnimation || this.skinChanged) && (this.currentEyeAnimation = l, this.character.spine.animationState.setAnimation(_i.EYES, g.default.eyes.animationNames[l], !0));
+            }), (0, f.default)(this, 'playAnimationOrClearTrack', (l, m) => {
+                let n = !1;
+                for (const o of l)
+                    if (this.availableAnimations.includes(o)) {
+                        this.character.spine.animationState.setAnimation(m, o, !0), n = !0;
+                        break;
+                    }
+                n || this.character.spine.animationState.clearTrack(m);
+            }), (0, f.default)(this, 'playBodySupplementalAnimation', l => {
+                this.playAnimationOrClearTrack([
+                    `skins-${ this.character.skin.skinId }-${ g.default.body.animationNames[l] }`,
+                    `skins-${ this.character.skin.skinId }-pose`
+                ], _i.BODY_SUPPLEMENTAL), this.playMovementSupplementalAnimation(l), this.playJumpSupplementalAnimation(l);
+            }), (0, f.default)(this, 'playMovementSupplementalAnimation', l => {
+                this.playAnimationOrClearTrack([`skins-${ this.character.skin.skinId }-movement=${ l === g.CharacterBodyAnimationState.rest ? 'false' : 'true' }`], _i.MOVEMENT_SUPPLEMENTAL);
+            }), (0, f.default)(this, 'playJumpSupplementalAnimation', l => {
+                const m = g.default.jumpAnimations.includes(l);
+                this.playAnimationOrClearTrack([`skins-${ this.character.skin.skinId }-jumping=${ m ? 'true' : 'false' }`], _i.JUMP_SUPPLEMENTAL);
+            }), (0, f.default)(this, 'startBlinkAnimation', () => {
+                this.blinkTimer || (this.playEyeAnimation(g.CharacterEyeAnimationState.idle), this.blinkTimer = window.setTimeout(() => {
+                    this.blinkTimer = null, this.playEyeAnimation(g.CharacterEyeAnimationState.blink);
+                }, g.default.eyes.blinkEvery));
+            }), (0, f.default)(this, 'stopBlinkAnimation', () => {
+                this.playEyeAnimation(g.CharacterEyeAnimationState.idle), this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null);
+            }), (0, f.default)(this, 'onAnimationComplete', l => {
+                l.trackIndex === _i.EYES && this.currentBodyAnimation === g.CharacterBodyAnimationState.rest && this.currentEyeAnimation === g.CharacterEyeAnimationState.blink && this.startBlinkAnimation();
+            }), (0, f.default)(this, 'onSkinChanged', () => {
+                this.skinChanged = !0, this.setupAnimations(), this.skinChanged = !1;
+            }), (0, f.default)(this, 'destroy', () => {
+                this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null);
+            }), this.character = k.character;
+        }
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'default', function () {
+        return _o;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....');
+    var _o = (p, q) => {
+        const r = p.body, s = p.prevBody, t = b(l).Math.Distance.Between(r.x, r.y, s.x, s.y), u = Math.abs(r.x - s.x);
+        if ((0, n.isTopDown)() || (0, n.isEditingPlatformerAndPreferTopDownControls)())
+            return t > f.default.movementPixels.running(q) ? f.CharacterBodyAnimationState.run : f.CharacterBodyAnimationState.rest;
+        const v = (0, k.IsCharacterOnGround)({ characterId: p.id });
+        if ((0, h.DidCharacterJustJump)({ characterId: p.id }) && t > f.default.movementPixels.rising(q)) {
+            const w = p.isMain ? p.physics.prevState.grounded : p.animation.prevNonMainCharacterState.grounded;
+            return !v && w && p.impactAnimation.play(g.ImpactAnimationType.jump), f.CharacterBodyAnimationState.jumpStart;
+        }
+        if (v) {
+            if ((0, i.DidCharacterJustLand)({ characterId: p.id }) && (t > f.default.movementPixels.falling(q) || !p.isMain)) {
+                if (p.animation.currentBodyAnimation !== f.CharacterBodyAnimationState.jumpLand) {
+                    Date.now() - p.animation.lastGroundedAnimationAt > g.default.land.minimumAirTime && (p.impactAnimation.play(g.ImpactAnimationType.land), p.isMain && (0, m.playLandSound)());
+                }
+                return f.CharacterBodyAnimationState.jumpLand;
+            }
+            if (u > f.default.movementPixels.running(q))
+                return f.CharacterBodyAnimationState.run;
+        } else {
+            if (r.y < s.y && t > f.default.movementPixels.rising(q))
+                return f.CharacterBodyAnimationState.jumpMiddleIdle;
+            if (t > f.default.movementPixels.falling(q))
+                return f.CharacterBodyAnimationState.jumpDownIdle;
+        }
+        return (0, j.IsCharacterJumping)({ characterId: p.id }) ? p.animation.currentBodyAnimation : f.CharacterBodyAnimationState.rest;
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'ImpactAnimationType', function () {
+        return _g;
+    }), a(d.exports, 'ImpactAnimationList', function () {
+        return _k;
+    }), a(d.exports, 'default', function () {
+        return _l;
+    });
+    var f = c('.....');
+    let _g;
+    var h;
+    (h = _g || (_g = {})).jump = 'jump', h.land = 'land';
+    const i = {
+            url: (0, f.default)('characters/particles/jump.png'),
+            frameHeight: 88,
+            frameWidth: 495,
+            animation: {
+                frameRate: 24,
+                frames: {
+                    frames: [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11
+                    ]
+                }
+            },
+            offset: { y: -8 },
+            scale: 0.33
+        }, j = {
+            url: (0, f.default)('characters/particles/land.png'),
+            frameHeight: 121,
+            frameWidth: 588,
+            animation: {
+                frameRate: 24,
+                frames: {
+                    frames: [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                }
+            },
+            offset: { y: -5 },
+            scale: 0.18
+        }, _k = {
+            [_g.jump]: i,
+            [_g.land]: j
+        };
+    var _l = { land: { minimumAirTime: 240 } };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'DidCharacterJustJump', function () {
+        return _h;
+    });
+    var f = c('.....'), g = c('.....');
+    const _h = i => {
+        const j = (0, f.default)(i.characterId);
+        if (!j)
+            return !1;
+        if (!(0, g.isPlatformer)())
+            return !1;
+        if (j.isMain) {
+            if (j.physics.state.jump.isJumping && j.physics.state.jump.jumpCounter !== j.physics.prevState.jump.jumpCounter)
+                return !0;
+        } else {
+            const k = j.body, l = j.prevBody;
+            if (k.y < l.y) {
+                if (!j.animation.nonMainCharacterState.grounded && j.animation.prevNonMainCharacterState.grounded)
+                    return !0;
+                if (!j.animation.nonMainCharacterState.grounded && j.animation.nonMainCharacterState.currentPoint !== j.animation.prevNonMainCharacterState.currentPoint && j.animation.nonMainCharacterState.pointYChange > j.animation.prevNonMainCharacterState.pointYChange)
+                    return !0;
+            }
+        }
+        return !1;
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'DidCharacterJustLand', function () {
+        return _h;
+    });
+    var f = c('.....'), g = c('.....');
+    const _h = i => {
+        const j = (0, f.default)(i.characterId);
+        return !!j && (!!(0, g.isPlatformer)() && (j.isMain ? j.physics.state.grounded && !j.physics.prevState.grounded : j.animation.nonMainCharacterState.grounded && !j.animation.prevNonMainCharacterState.grounded));
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'IsCharacterJumping', function () {
+        return _h;
+    });
+    var f = c('.....'), g = c('.....');
+    const _h = i => {
+        const j = (0, f.default)(i.characterId);
+        return !!j && (!!(0, g.isPlatformer)() && (j.isMain ? (0, g.isPlatformer)() && j.physics.state.jump.isJumping : !j.animation.nonMainCharacterState.grounded));
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'IsCharacterOnGround', function () {
+        return _h;
+    });
+    var f = c('.....'), g = c('.....');
+    const _h = i => {
+        if (!(0, g.isPlatformer)())
+            return !0;
+        if ((0, g.isEditingPlatformerAndPreferTopDownControls)())
+            return !0;
+        const j = (0, f.default)(i.characterId);
+        return !!j && (j.isMain ? j.physics.state.grounded : j.animation.nonMainCharacterState.grounded);
+    };
+}), c.register('.....', function (d, e) {
+    a(d.exports, 'playJumpSound', function () {
+        return _m;
+    }), a(d.exports, 'playLandSound', function () {
+        return _n;
+    });
+    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    class j {
+        constructor(k) {
+            (0, f.default)(this, 'size', 1), (0, f.default)(this, 'currentCount', 1), (0, f.default)(this, 'next', () => (this.currentCount++, this.currentCount > this.size && (this.currentCount = 1), this.currentCount)), this.size = k;
+        }
+    }
+    const k = new j(3), l = new j(3), _m = () => {
+            (0, i.playSound)({
+                path: (0, g.default)(`sounds/core/platforming/jump/${ k.next() }.mp3`),
+                volume: (0, h.getVolume)({
+                    volume: 0.37,
+                    type: h.SoundType.soundEffect
+                }),
+                forceCreateNewSound: !0
+            });
+        }, _n = () => {
+            (0, i.playSound)({
+                path: (0, g.default)(`sounds/core/platforming/land/${ l.next() }.mp3`),
+                volume: (0, h.getVolume)({
+                    volume: 0.24,
+                    type: h.SoundType.soundEffect
+                }),
+                forceCreateNewSound: !0
+            });
+        };
 }), c.register('.....', function (d, e) {
     a(d.exports, 'SpinePlugin', function () {
         return c('.....').SpinePlugin;

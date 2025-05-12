@@ -198,6 +198,14 @@ b.register('.....', function (c, d) {
     (0, e.__decorate)([f.observable], v.prototype, 'planName', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planCost', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'accountCredit', void 0), (0, e.__decorate)([f.observable], v.prototype, 'percentageOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'amountOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'hasCoupon', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponOneUseOnly', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponIsOnlyForPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'existingPayingPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'stripePublicKey', void 0), (0, e.__decorate)([f.computed], v.prototype, 'totalCost', null), (0, e.__decorate)([f.action], v.prototype, 'reset', void 0);
     var _w = v;
 }), b.register('.....', function (c, d) {
+    a(c.exports, 'NavigateTo', function () {
+        return _f;
+    });
+    var e = b('.....');
+    const _f = g => {
+        e.history.push(g);
+    };
+}), b.register('.....', function (c, d) {
     a(c.exports, 'AnalyticsTrackEvent', function () {
         return _i;
     });
@@ -211,5 +219,12 @@ b.register('.....', function (c, d) {
             properties: j.properties,
             force: j.forcePostHog
         });
+    };
+}), b.register('.....', function (c, d) {
+    a(c.exports, 'TrackPostHogEvent', function () {
+        return _e;
+    });
+    b('.....');
+    const _e = f => {
     };
 });
