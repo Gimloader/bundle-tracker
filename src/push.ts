@@ -3,8 +3,11 @@ import { $ } from "bun";
 export async function pushChanges() {
     let stat = await $`git diff --shortstat`.text();
 
+    let date = new Date();
+    let dateStr = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
+
     await $`git add data`;
-    await $`git commit -m "Update data"`;
+    await $`git commit -m "Update data (${dateStr})"`;
     await $`git push`;
 
     const webhook = Bun.env.WEBHOOK_URL;
