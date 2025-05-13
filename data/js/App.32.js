@@ -7,23 +7,33 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _p;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....');
     let o;
     var _p = () => {
         var q;
-        const {id: r} = (0, g.useParams)(), {
-                data: s,
-                isLoading: t,
-                error: u
-            } = (0, h.default)(r);
+        const {
+            id: r
+        } = (0, g.useParams)(), {
+            data: s,
+            isLoading: t,
+            error: u
+        } = (0, h.default)(r);
         return t ? (0, f.jsx)(_q, {
             children: (0, f.jsx)(k.default, {
                 style: {
@@ -54,21 +64,30 @@ b.register('.....', function (c, d) {
                         })
                     }),
                     (0, f.jsx)('div', {
-                        style: { fontSize: 16 },
+                        style: {
+                            fontSize: 16
+                        },
                         children: (null == u || null === (q = u.message) || void 0 === q ? void 0 : q.text) || 'There was an error. Please refresh and try again.'
                     })
                 ]
             })
-        }) : (0, f.jsx)(_q, { children: s ? (0, f.jsx)(j.default, { response: s }) : null });
+        }) : (0, f.jsx)(_q, {
+            children: s ? (0, f.jsx)(j.default, {
+                response: s
+            }) : null
+        });
     };
-    const _q = i.default.div.attrs({ className: 'maxWidth flex-center' })(o || (o = (r => r)`
+    const _q = i.default.div.attrs({
+        className: 'maxWidth flex-center'
+    })(o || (o = (r => r)`
   padding: 35px 0px;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _h;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     const g = ['creative-map-listing'];
     var _h = i => (0, e.useQuery)({
         queryKey: [
@@ -76,16 +95,32 @@ b.register('.....', function (c, d) {
             i
         ],
         retry: !1,
-        queryFn: () => (0, f.requestAsPromise)({ url: `/api/created-map/listing/info/${ i }` })
+        queryFn: () => (0, f.requestAsPromise)({
+            url: `/api/created-map/listing/info/${ i }`
+        })
     });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _u;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....');
     let q, r, s, t = u => u;
     var _u = v => {
-        const w = f.useRef(null), [x] = (0, h.default)(w), y = Math.min(500, 0.9 * x), z = y * (9 / 16);
+        const w = f.useRef(null),
+            [x] = (0, h.default)(w),
+            y = Math.min(500, 0.9 * x),
+            z = y * (9 / 16);
         return (0, e.jsxs)(_v, {
             ref: w,
             children: [
@@ -106,37 +141,54 @@ b.register('.....', function (c, d) {
                             title: `${ v.response.title } | ${ o.COMPANY_NAME } Creative`,
                             override: !0
                         }),
-                        (0, e.jsx)(i.default, { ...v.response }),
+                        (0, e.jsx)(i.default, {
+                            ...v.response
+                        }),
                         (0, e.jsx)(j.default, {
-                            theme: { algorithm: l.default.darkAlgorithm },
+                            theme: {
+                                algorithm: l.default.darkAlgorithm
+                            },
                             children: (0, e.jsx)(k.default, {})
                         }),
-                        (0, e.jsx)(m.default, { response: v.response })
+                        (0, e.jsx)(m.default, {
+                            response: v.response
+                        })
                     ]
                 })
             ]
         });
     };
-    const _v = g.default.div.attrs({ className: 'flex-column flex-center' })(q || (q = t`
+    const _v = g.default.div.attrs({
+            className: 'flex-column flex-center'
+        })(q || (q = t`
   width: 80%;
   max-width: 900px;
-`)), _w = g.default.div.attrs({ className: 'medium-shadow' })(r || (r = t`
+`)),
+        _w = g.default.div.attrs({
+            className: 'medium-shadow'
+        })(r || (r = t`
   border-radius: 8px;
   background-size: cover;
   z-index: 2;
-`)), _x = g.default.div.attrs({ className: 'maxWidth light-shadow' })(s || (s = t`
+`)),
+        _x = g.default.div.attrs({
+            className: 'maxWidth light-shadow'
+        })(s || (s = t`
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(3px);
   padding: 35px;
   border-radius: 12px;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _o;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....');
     let j, k, l, m, n = o => o;
     var _o = p => (0, e.jsxs)(_p, {
         children: [
@@ -144,23 +196,35 @@ b.register('.....', function (c, d) {
                 wrap: !0,
                 direction: 'horizontal',
                 size: 10,
-                style: { marginBottom: 6 },
-                children: p.tags.map((q, r) => (0, e.jsx)(_r, { children: q }, q + r))
+                style: {
+                    marginBottom: 6
+                },
+                children: p.tags.map((q, r) => (0, e.jsx)(_r, {
+                    children: q
+                }, q + r))
             }) : null,
-            (0, e.jsx)(_q, { children: p.title }),
-            (0, e.jsx)(_s, { children: p.description })
+            (0, e.jsx)(_q, {
+                children: p.title
+            }),
+            (0, e.jsx)(_s, {
+                children: p.description
+            })
         ]
     });
-    const _p = (0, f.default)(g.CenteredColumn).attrs({ className: 'maxWidth' })(j || (j = n`
+    const _p = (0, f.default)(g.CenteredColumn).attrs({
+            className: 'maxWidth'
+        })(j || (j = n`
   font-family: ${ 0 };
   font-size: 42px;
   margin-bottom: 6px;
   text-transform: uppercase;
   text-align: center;
-`), h.Fonts.FugazOne), _q = f.default.div(k || (k = n`
+`), h.Fonts.FugazOne),
+        _q = f.default.div(k || (k = n`
   margin-bottom: 2px;
   font-size: 42px;
-`)), _r = f.default.div(l || (l = n`
+`)),
+        _r = f.default.div(l || (l = n`
   font-family: ${ 0 };
   background: rgba(255, 255, 255, 0.1);
   line-height: 1;
@@ -172,34 +236,57 @@ b.register('.....', function (c, d) {
   &:hover {
     background: rgba(255, 255, 255, 0.17);
   }
-`), h.Fonts.FugazOne), _s = f.default.div(m || (m = n`
+`), h.Fonts.FugazOne),
+        _s = f.default.div(m || (m = n`
   font-family: ${ 0 };
   text-transform: none;
   font-size: 16px;
   font-style: italic;
   color: rgba(255, 255, 255, 0.9);
 `), h.Fonts.SFPro);
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     var _i = j => {
         const [k, l] = f.useState();
         return !k && j.response.kits ? (0, e.jsx)(h.default, {
             kits: j.response.kits,
             selectKit: l
-        }) : (0, e.jsx)(g.default, { kitId: k });
+        }) : (0, e.jsx)(g.default, {
+            kitId: k
+        });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _z;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....'), t = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....'),
+        r = b('.....'),
+        s = b('.....'),
+        t = b('.....');
     let u, v, w, x = y => y;
     const y = 'https://docs.creative.gimkit.com/general/publishing/community-rules-for-publishing-with-gimkit-creative';
     var _z = A => {
-        const [B, C, D] = (0, r.useBoolean)(!1), [E, F, G] = (0, r.useBoolean)(!1), [H, I] = (0, r.useBoolean)(!1), [J, K] = f.useState(''), [L, M, N] = (0, r.useBoolean)(!1), {id: O} = (0, s.useParams)();
+        const [B, C, D] = (0, r.useBoolean)(!1), [E, F, G] = (0, r.useBoolean)(!1), [H, I] = (0, r.useBoolean)(!1), [J, K] = f.useState(''), [L, M, N] = (0, r.useBoolean)(!1), {
+            id: O
+        } = (0, s.useParams)();
         return (0, e.jsxs)(_A, {
             children: [
                 (0, r.isUpgraded)() || (0, r.isStudent)() ? null : (0, e.jsxs)(_B, {
@@ -230,10 +317,14 @@ b.register('.....', function (c, d) {
                         if (B)
                             return;
                         C();
-                        const P = { listing: O };
+                        const P = {
+                            listing: O
+                        };
                         A.kitId && (P.kit = A.kitId), (0, t.AnalyticsTrackEvent)({
                             event: 'creative_discovery_hosted',
-                            properties: { id: O }
+                            properties: {
+                                id: O
+                            }
                         }), (0, r.request)({
                             url: '/api/matchmaker/intent/map/play/listing/create',
                             data: P,
@@ -243,7 +334,9 @@ b.register('.....', function (c, d) {
                             error: Q => {
                                 (0, r.throwMessageError)({
                                     e: Q,
-                                    default: { title: 'There was an error loading you in.' }
+                                    default: {
+                                        title: 'There was an error loading you in.'
+                                    }
                                 });
                             },
                             both: D
@@ -257,7 +350,9 @@ b.register('.....', function (c, d) {
                         lineHeight: 1
                     },
                     children: (0, e.jsx)('span', {
-                        style: { textTransform: 'uppercase' },
+                        style: {
+                            textTransform: 'uppercase'
+                        },
                         children: 'Play Live'
                     })
                 }),
@@ -311,7 +406,9 @@ b.register('.....', function (c, d) {
                             onClick: () => {
                                 E || (F(), (0, r.request)({
                                     url: `/api/created-map/listing/report/${ O }`,
-                                    data: { comment: J },
+                                    data: {
+                                        comment: J
+                                    },
                                     success: () => {
                                         I();
                                     },
@@ -323,7 +420,9 @@ b.register('.....', function (c, d) {
                             children: 'Report Map'
                         }, 'reporting-submit')
                     ],
-                    children: H ? (0, e.jsx)(e.Fragment, { children: 'Your report was sent to our team. Thanks for keeping Gimkit safe!' }) : (0, e.jsxs)(e.Fragment, {
+                    children: H ? (0, e.jsx)(e.Fragment, {
+                        children: 'Your report was sent to our team. Thanks for keeping Gimkit safe!'
+                    }) : (0, e.jsxs)(e.Fragment, {
                         children: [
                             'Found a map that breaks our',
                             ' ',
@@ -331,13 +430,17 @@ b.register('.....', function (c, d) {
                                 to: y,
                                 external: !0,
                                 target: '_blank',
-                                style: { textDecoration: 'underline' },
+                                style: {
+                                    textDecoration: 'underline'
+                                },
                                 children: 'Community Guidelines'
                             }),
                             '? Report it here and our team will take a look. Thanks for keeping Gimkit safe!',
                             (0, e.jsx)(p.default.TextArea, {
                                 placeholder: 'Optional comment...',
-                                style: { marginTop: 10 },
+                                style: {
+                                    marginTop: 10
+                                },
                                 maxLength: 1000,
                                 onChange: P => K(P.target.value)
                             })
@@ -347,27 +450,38 @@ b.register('.....', function (c, d) {
             ]
         });
     };
-    const _A = (0, h.default)(i.CenteredColumn).attrs({ className: 'maxWidth' })(u || (u = x`
+    const _A = (0, h.default)(i.CenteredColumn).attrs({
+            className: 'maxWidth'
+        })(u || (u = x`
   padding-top: 10px;
-`)), _B = h.default.div(v || (v = x`
+`)),
+        _B = h.default.div(v || (v = x`
   font-size: 14px;
   font-style: italic;
   margin-bottom: 25px;
   background: rgba(255, 255, 255, 0.15);
   padding: 14px 22px;
   border-radius: 6px;
-`)), _C = h.default.div(w || (w = x`
+`)),
+        _C = h.default.div(w || (w = x`
   font-size: 12px;
   font-style: italic;
   margin-top: 20px;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _u;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....');
     let n, o, p, q, r, s = t => t;
     const t = u => (0, e.jsx)(_x, {
         onClick: u.onSelect,
@@ -377,8 +491,14 @@ b.register('.....', function (c, d) {
             wrap: !0,
             align: 'center',
             children: [
-                (0, e.jsx)(_y, { style: { backgroundImage: `url(${ (0, m.getCloudinaryUrl)(u.gif) })` } }),
-                (0, e.jsx)(_z, { children: u.title })
+                (0, e.jsx)(_y, {
+                    style: {
+                        backgroundImage: `url(${ (0, m.getCloudinaryUrl)(u.gif) })`
+                    }
+                }),
+                (0, e.jsx)(_z, {
+                    children: u.title
+                })
             ]
         })
     });
@@ -395,7 +515,9 @@ b.register('.....', function (c, d) {
                 direction: 'vertical',
                 size: 15,
                 className: 'maxWidth',
-                style: { marginTop: 25 },
+                style: {
+                    marginTop: 25
+                },
                 children: v.kits.map(w => (0, e.jsx)(t, {
                     onSelect: () => v.selectKit(w._id),
                     title: w.title,
@@ -408,7 +530,9 @@ b.register('.....', function (c, d) {
             children: [
                 'This map has players answer questions from a kit, but you',
                 ' ',
-                (0, e.jsx)('b', { children: 'do not currently have any kits with questions.' }),
+                (0, e.jsx)('b', {
+                    children: 'do not currently have any kits with questions.'
+                }),
                 (0, e.jsx)('br', {}),
                 (0, e.jsx)('br', {}),
                 (0, e.jsx)(k.default, {
@@ -424,9 +548,15 @@ b.register('.....', function (c, d) {
             ]
         })
     });
-    const _v = (0, f.default)(g.CenteredColumn).attrs({ className: 'maxWidth' })(n || (n = s``)), _w = f.default.div(o || (o = s`
+    const _v = (0, f.default)(g.CenteredColumn).attrs({
+            className: 'maxWidth'
+        })(n || (n = s``)),
+        _w = f.default.div(o || (o = s`
   text-align: center;
-`)), _x = f.default.div.attrs({ className: 'maxWidth flex vc' })(p || (p = s`
+`)),
+        _x = f.default.div.attrs({
+            className: 'maxWidth flex vc'
+        })(p || (p = s`
   cursor: pointer;
 
   border-radius: 6px;
@@ -440,23 +570,28 @@ b.register('.....', function (c, d) {
     background: rgba(255, 255, 255, 0.17);
     border-color: ${ 0 };
   }
-`), h.default.Yellow), _y = f.default.div.attrs({ className: 'light-shadow' })(q || (q = s`
+`), h.default.Yellow),
+        _y = f.default.div.attrs({
+            className: 'light-shadow'
+        })(q || (q = s`
   height: 65px;
   width: 65px;
   border-radius: 5px;
   background-size: cover;
-`)), _z = f.default.div(r || (r = s`
+`)),
+        _z = f.default.div(r || (r = s`
   font-weight: ${ 0 };
   font-size: 16px;
 `), j.FontWeights.Bold);
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'getCloudinaryUrl', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'getCloudinaryUrl', function() {
         return _e;
     });
     const _e = f => {
             const g = _f(f);
             return g ? f.includes('/video/upload') ? `https://${ _g }/video/upload/${ g }` : `https://${ _g }/image/upload/f_auto,fl_lossy,q_auto/${ g }` : f;
-        }, _f = g => {
+        },
+        _f = g => {
             if (!_j.some(h => g.includes(h)))
                 return null;
             if (g.includes(_h) && !g.includes(`/${ _i }/`))
@@ -464,9 +599,14 @@ b.register('.....', function (c, d) {
             const h = g.split('/');
             if (!h || !h.length || h.length < 2)
                 return null;
-            const i = h[h.length - 2], j = h[h.length - 1];
+            const i = h[h.length - 2],
+                j = h[h.length - 1];
             return i && j && i.startsWith('v') ? `${ i }/${ j }` : null;
-        }, _g = 'media.gimkit.com', _h = 'res.cloudinary.com', _i = 'gimkit-production', _j = [
+        },
+        _g = 'media.gimkit.com',
+        _h = 'res.cloudinary.com',
+        _i = 'gimkit-production',
+        _j = [
             _g,
             _h
         ];

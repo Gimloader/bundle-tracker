@@ -1,6 +1,7 @@
 function a(b) {
     return b && b.__esModule ? b.default : b;
 }
+
 function b(c, d, e, f) {
     Object.defineProperty(c, d, {
         get: e,
@@ -10,84 +11,114 @@ function b(c, d, e, f) {
     });
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _q;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....');
-    const {useToken: p} = o.default;
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....');
+    const {
+        useToken: p
+    } = o.default;
     var _q = r => {
         const {
+            value: s,
+            icon: t = '',
+            size: u = 160,
+            iconSize: v = 40,
+            color: w = '#000',
+            errorLevel: x = 'M',
+            status: y = 'active',
+            bordered: z = !0,
+            onRefresh: A,
+            style: B,
+            className: C,
+            rootClassName: D,
+            prefixCls: E
+        } = r, {
+            getPrefixCls: F
+        } = (0, f.useContext)(j.ConfigContext), G = F('qrcode', E), [H, I] = (0, l.default)(G), {
+            token: J
+        } = p(), K = (0, f.useMemo)(() => {
+            const L = {
+                src: t,
+                x: void 0,
+                y: void 0,
+                height: v,
+                width: v,
+                excavate: !0
+            };
+            return {
                 value: s,
-                icon: t = '',
-                size: u = 160,
-                iconSize: v = 40,
-                color: w = '#000',
-                errorLevel: x = 'M',
-                status: y = 'active',
-                bordered: z = !0,
-                onRefresh: A,
-                style: B,
-                className: C,
-                rootClassName: D,
-                prefixCls: E
-            } = r, {getPrefixCls: F} = (0, f.useContext)(j.ConfigContext), G = F('qrcode', E), [H, I] = (0, l.default)(G), {token: J} = p(), K = (0, f.useMemo)(() => {
-                const L = {
-                    src: t,
-                    x: void 0,
-                    y: void 0,
-                    height: v,
-                    width: v,
-                    excavate: !0
-                };
-                return {
-                    value: s,
-                    size: u - 2 * (J.paddingSM + J.lineWidth),
-                    level: x,
-                    bgColor: 'transparent',
-                    fgColor: w,
-                    imageSettings: t ? L : void 0
-                };
-            }, [
-                x,
-                w,
-                t,
-                v,
-                u,
-                s
-            ]);
+                size: u - 2 * (J.paddingSM + J.lineWidth),
+                level: x,
+                bgColor: 'transparent',
+                fgColor: w,
+                imageSettings: t ? L : void 0
+            };
+        }, [
+            x,
+            w,
+            t,
+            v,
+            u,
+            s
+        ]);
         if (!s)
             return null;
-        const L = a(h)(G, C, D, I, { [`${ G }-borderless`]: !z });
-        return H(a(f).createElement(k.default, { componentName: 'QRCode' }, M => a(f).createElement('div', {
+        const L = a(h)(G, C, D, I, {
+            [`${ G }-borderless`]: !z
+        });
+        return H(a(f).createElement(k.default, {
+            componentName: 'QRCode'
+        }, M => a(f).createElement('div', {
             style: Object.assign(Object.assign({}, B), {
                 width: u,
                 height: u
             }),
             className: L
-        }, 'active' !== y && a(f).createElement('div', { className: `${ G }-mask` }, 'loading' === y && a(f).createElement(m.default, null), 'expired' === y && a(f).createElement(a(f).Fragment, null, a(f).createElement('p', { className: `${ G }-expired` }, M.expired), 'function' == typeof A && a(f).createElement(n.default, {
+        }, 'active' !== y && a(f).createElement('div', {
+            className: `${ G }-mask`
+        }, 'loading' === y && a(f).createElement(m.default, null), 'expired' === y && a(f).createElement(a(f).Fragment, null, a(f).createElement('p', {
+            className: `${ G }-expired`
+        }, M.expired), 'function' == typeof A && a(f).createElement(n.default, {
             type: 'link',
             icon: a(f).createElement(i.default, null),
             onClick: A
         }, M.refresh))), a(f).createElement(g.QRCodeCanvas, Object.assign({}, K)))));
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'QRCodeCanvas', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'QRCodeCanvas', function() {
         return _I;
     });
-    var f, g = c('.....'), h = Object.defineProperty, i = Object.getOwnPropertySymbols, j = Object.prototype.hasOwnProperty, k = Object.prototype.propertyIsEnumerable, l = (m, n, o) => n in m ? h(m, n, {
+    var f, g = c('.....'),
+        h = Object.defineProperty,
+        i = Object.getOwnPropertySymbols,
+        j = Object.prototype.hasOwnProperty,
+        k = Object.prototype.propertyIsEnumerable,
+        l = (m, n, o) => n in m ? h(m, n, {
             enumerable: !0,
             configurable: !0,
             writable: !0,
             value: o
-        }) : m[n] = o, m = (n, o) => {
+        }) : m[n] = o,
+        m = (n, o) => {
             for (var p in o || (o = {}))
                 j.call(o, p) && l(n, p, o[p]);
             if (i)
                 for (var q of i(o))
                     k.call(o, q) && l(n, q, o[q]);
             return n;
-        }, n = (o, p) => {
+        },
+        n = (o, p) => {
             var q = {};
             for (var r in o)
                 j.call(o, r) && p.indexOf(r) < 0 && (q[r] = o[r]);
@@ -111,7 +142,8 @@ c.register('.....', function (d, e) {
                     throw new RangeError('Invalid value');
                 let w, x;
                 for (w = s;; w++) {
-                    const y = 8 * p.getNumDataCodewords(w, r), z = h.getTotalBits(q, w);
+                    const y = 8 * p.getNumDataCodewords(w, r),
+                        z = h.getTotalBits(q, w);
                     if (z <= y) {
                         x = z;
                         break;
@@ -151,7 +183,8 @@ c.register('.....', function (d, e) {
                 for (let q = 0; q < this.size; q++)
                     this.setFunctionModule(6, q, q % 2 == 0), this.setFunctionModule(q, 6, q % 2 == 0);
                 this.drawFinderPattern(3, 3), this.drawFinderPattern(this.size - 4, 3), this.drawFinderPattern(3, this.size - 4);
-                const r = this.getAlignmentPatternPositions(), s = q.length;
+                const r = this.getAlignmentPatternPositions(),
+                    s = q.length;
                 for (let t = 0; t < s; t++)
                     for (let u = 0; u < s; u++)
                         0 == t && 0 == u || 0 == t && u == s - 1 || t == s - 1 && 0 == u || this.drawAlignmentPattern(q[t], q[u]);
@@ -184,14 +217,18 @@ c.register('.....', function (d, e) {
                 const s = this.version << 12 | q;
                 f(r >>> 18 == 0);
                 for (let t = 0; t < 18; t++) {
-                    const u = e(r, t), v = this.size - 11 + t % 3, w = Math.floor(t / 3);
+                    const u = e(r, t),
+                        v = this.size - 11 + t % 3,
+                        w = Math.floor(t / 3);
                     this.setFunctionModule(v, w, u), this.setFunctionModule(w, v, u);
                 }
             }
             drawFinderPattern(q, r) {
                 for (let s = -4; s <= 4; s++)
                     for (let t = -4; t <= 4; t++) {
-                        const u = Math.max(Math.abs(t), Math.abs(s)), v = q + t, w = r + s;
+                        const u = Math.max(Math.abs(t), Math.abs(s)),
+                            v = q + t,
+                            w = r + s;
                         0 <= v && v < this.size && 0 <= w && w < this.size && this.setFunctionModule(v, w, 2 != u && 4 != u);
                     }
             }
@@ -204,10 +241,15 @@ c.register('.....', function (d, e) {
                 this.modules[r][q] = s, this.isFunction[r][q] = !0;
             }
             addEccAndInterleave(q) {
-                const r = this.version, s = this.errorCorrectionLevel;
+                const r = this.version,
+                    s = this.errorCorrectionLevel;
                 if (q.length != p.getNumDataCodewords(r, s))
                     throw new RangeError('Invalid argument');
-                const t = p.NUM_ERROR_CORRECTION_BLOCKS[s.ordinal][r], u = p.ECC_CODEWORDS_PER_BLOCK[s.ordinal][r], v = Math.floor(p.getNumRawDataModules(r) / 8), w = t - v % t, x = Math.floor(v / t);
+                const t = p.NUM_ERROR_CORRECTION_BLOCKS[s.ordinal][r],
+                    u = p.ECC_CODEWORDS_PER_BLOCK[s.ordinal][r],
+                    v = Math.floor(p.getNumRawDataModules(r) / 8),
+                    w = t - v % t,
+                    x = Math.floor(v / t);
                 let y = [];
                 const z = p.reedSolomonComputeDivisor(u);
                 for (let A = 0, B = 0; A < t; A++) {
@@ -231,7 +273,8 @@ c.register('.....', function (d, e) {
                     6 == s && (s = 5);
                     for (let t = 0; t < this.size; t++)
                         for (let u = 0; u < 2; u++) {
-                            const v = s - u, w = 0 == (s + 1 & 2) ? this.size - 1 - t : t;
+                            const v = s - u,
+                                w = 0 == (s + 1 & 2) ? this.size - 1 - t : t;
                             !this.isFunction[w][v] && r < 8 * q.length && (this.modules[w][v] = e(q[r >>> 3], 7 - (7 & r)), r++);
                         }
                 }
@@ -244,40 +287,41 @@ c.register('.....', function (d, e) {
                     for (let s = 0; s < this.size; s++) {
                         let t;
                         switch (q) {
-                        case 0:
-                            t = (s + r) % 2 == 0;
-                            break;
-                        case 1:
-                            t = r % 2 == 0;
-                            break;
-                        case 2:
-                            t = s % 3 == 0;
-                            break;
-                        case 3:
-                            t = (s + r) % 3 == 0;
-                            break;
-                        case 4:
-                            t = (Math.floor(s / 3) + Math.floor(r / 2)) % 2 == 0;
-                            break;
-                        case 5:
-                            t = s * r % 2 + s * r % 3 == 0;
-                            break;
-                        case 6:
-                            t = (s * r % 2 + s * r % 3) % 2 == 0;
-                            break;
-                        case 7:
-                            t = ((s + r) % 2 + s * r % 3) % 2 == 0;
-                            break;
-                        default:
-                            throw new Error('Unreachable');
-                        }
-                        !this.isFunction[r][s] && t && (this.modules[r][s] = !this.modules[r][s]);
+                            case 0:
+                                t = (s + r) % 2 == 0;
+                                break;
+                            case 1:
+                                t = r % 2 == 0;
+                                break;
+                            case 2:
+                                t = s % 3 == 0;
+                                break;
+                            case 3:
+                                t = (s + r) % 3 == 0;
+                                break;
+                            case 4:
+                                t = (Math.floor(s / 3) + Math.floor(r / 2)) % 2 == 0;
+                                break;
+                            case 5:
+                                t = s * r % 2 + s * r % 3 == 0;
+                                break;
+                            case 6:
+                                t = (s * r % 2 + s * r % 3) % 2 == 0;
+                                break;
+                            case 7:
+                                t = ((s + r) % 2 + s * r % 3) % 2 == 0;
+                                break;
+                            default:
+                                throw new Error('Unreachable');
+                        }!this.isFunction[r][s] && t && (this.modules[r][s] = !this.modules[r][s]);
                     }
             }
             getPenaltyScore() {
                 let q = 0;
                 for (let r = 0; r < this.size; r++) {
-                    let s = !1, t = 0, u = [
+                    let s = !1,
+                        t = 0,
+                        u = [
                             0,
                             0,
                             0,
@@ -291,7 +335,9 @@ c.register('.....', function (d, e) {
                     q += this.finderPenaltyTerminateAndCount(s, t, u) * p.PENALTY_N3;
                 }
                 for (let s = 0; s < this.size; s++) {
-                    let t = !1, u = 0, v = [
+                    let t = !1,
+                        u = 0,
+                        v = [
                             0,
                             0,
                             0,
@@ -312,14 +358,16 @@ c.register('.....', function (d, e) {
                 let w = 0;
                 for (const x of this.modules)
                     w = q.reduce((y, z) => y + (z ? 1 : 0), w);
-                const y = this.size * this.size, z = Math.ceil(Math.abs(20 * w - 10 * u) / u) - 1;
+                const y = this.size * this.size,
+                    z = Math.ceil(Math.abs(20 * w - 10 * u) / u) - 1;
                 return f(0 <= z && z <= 9), q += z * p.PENALTY_N4, f(0 <= q && q <= 2568888), q;
             }
             getAlignmentPatternPositions() {
                 if (1 == this.version)
                     return [];
                 {
-                    const q = Math.floor(this.version / 7) + 2, r = 32 == this.version ? 26 : 2 * Math.ceil((4 * this.version + 4) / (2 * q - 2));
+                    const q = Math.floor(this.version / 7) + 2,
+                        r = 32 == this.version ? 26 : 2 * Math.ceil((4 * this.version + 4) / (2 * q - 2));
                     let s = [6];
                     for (let t = this.size - 7; s.length < q; t -= r)
                         s.splice(1, 0, t);
@@ -407,15 +455,18 @@ c.register('.....', function (d, e) {
             }
         };
         let q = p;
+
         function r(s, t, u) {
             if (t < 0 || t > 31 || s >>> t != 0)
                 throw new RangeError('Value out of range');
             for (let v = t - 1; v >= 0; v--)
                 u.push(s >>> v & 1);
         }
+
         function s(t, u) {
             return 0 != (t >>> u & 1);
         }
+
         function t(u) {
             if (!u)
                 throw new Error('Assertion error');
@@ -892,19 +943,26 @@ c.register('.....', function (d, e) {
             ]), q.Mode = s;
         })(p = o.QrSegment || (o.QrSegment = {}));
     })(f || (f = {}));
-    var o = f, p = {
+    var o = f,
+        p = {
             L: o.QrCode.Ecc.LOW,
             M: o.QrCode.Ecc.MEDIUM,
             Q: o.QrCode.Ecc.QUARTILE,
             H: o.QrCode.Ecc.HIGH
-        }, q = 128, r = 'L', s = '#FFFFFF', t = '#000000', u = !1;
+        },
+        q = 128,
+        r = 'L',
+        s = '#FFFFFF',
+        t = '#000000',
+        u = !1;
+
     function v(w, x = 0) {
         const y = [];
-        return w.forEach(function (z, A) {
+        return w.forEach(function(z, A) {
             let B = null;
-            z.forEach(function (C, D) {
+            z.forEach(function(C, D) {
                 if (!C && null !== B)
-                    return y.push(`M${ B + x } ${ A + x }h${ D - B }v1H${ B + x }z`), void (B = null);
+                    return y.push(`M${ B + x } ${ A + x }h${ D - B }v1H${ B + x }z`), void(B = null);
                 if (D !== z.length - 1)
                     C && null === B && (B = D);
                 else {
@@ -915,16 +973,26 @@ c.register('.....', function (d, e) {
             });
         }), y.join('');
     }
+
     function x(y, z) {
         return y.slice().map((A, B) => B < z.y || B >= z.y + z.h ? A : A.map((C, D) => (D < z.x || D >= z.x + z.w) && C));
     }
+
     function y(z, A, B, C) {
         if (null == C)
             return null;
-        const D = B ? 4 : 0, E = z.length + 2 * D, F = Math.floor(0.1 * A), G = E / A, H = (C.width || F) * G, I = (C.height || F) * G, J = null == C.x ? z.length / 2 - H / 2 : C.x * G, K = null == C.y ? z.length / 2 - I / 2 : C.y * G;
+        const D = B ? 4 : 0,
+            E = z.length + 2 * D,
+            F = Math.floor(0.1 * A),
+            G = E / A,
+            H = (C.width || F) * G,
+            I = (C.height || F) * G,
+            J = null == C.x ? z.length / 2 - H / 2 : C.x * G,
+            K = null == C.y ? z.length / 2 - I / 2 : C.y * G;
         let L = null;
         if (C.excavate) {
-            let M = Math.floor(J), N = Math.floor(K);
+            let M = Math.floor(J),
+                N = Math.floor(K);
             L = {
                 x: M,
                 y: N,
@@ -940,7 +1008,7 @@ c.register('.....', function (d, e) {
             excavation: L
         };
     }
-    var H = function () {
+    var H = function() {
         try {
             new Path2D().addPath(new Path2D());
         } catch (a) {
@@ -948,8 +1016,10 @@ c.register('.....', function (d, e) {
         }
         return !0;
     }();
+
     function _I(J) {
-        const K = J, {
+        const K = J,
+            {
                 value: L,
                 size: M = N,
                 level: O = P,
@@ -958,7 +1028,8 @@ c.register('.....', function (d, e) {
                 includeMargin: U = V,
                 style: W,
                 imageSettings: X
-            } = K, Y = n(K, [
+            } = K,
+            Y = n(K, [
                 'value',
                 'size',
                 'level',
@@ -967,20 +1038,29 @@ c.register('.....', function (d, e) {
                 'includeMargin',
                 'style',
                 'imageSettings'
-            ]), Z = null == X ? void 0 : X.src, $ = (0, F.useRef)(null), ab = (0, F.useRef)(null), [bb, cb] = (0, F.useState)(!1);
+            ]),
+            Z = null == X ? void 0 : X.src,
+            $ = (0, F.useRef)(null),
+            ab = (0, F.useRef)(null),
+            [bb, cb] = (0, F.useState)(!1);
         (0, F.useEffect)(() => {
             if (null != $.current) {
-                const db = $.current, eb = db.getContext('2d');
+                const db = $.current,
+                    eb = db.getContext('2d');
                 if (!eb)
                     return;
                 let fb = o.QrCode.encodeText(L, p[O]).getModules();
-                const gb = U ? 4 : 0, hb = fb.length + 2 * gb, ib = y(fb, M, U, X), jb = ab.current, kb = null != ib && null !== jb && jb.complete && 0 !== jb.naturalHeight && 0 !== jb.naturalWidth;
+                const gb = U ? 4 : 0,
+                    hb = fb.length + 2 * gb,
+                    ib = y(fb, M, U, X),
+                    jb = ab.current,
+                    kb = null != ib && null !== jb && jb.complete && 0 !== jb.naturalHeight && 0 !== jb.naturalWidth;
                 kb && null != ib.excavation && (fb = x(fb, ib.excavation));
                 const lb = window.devicePixelRatio || 1;
                 db.height = db.width = M * lb;
                 const mb = M / hb * lb;
-                eb.scale(mb, mb), eb.fillStyle = Q, eb.fillRect(0, 0, hb, hb), eb.fillStyle = S, H ? eb.fill(new Path2D(v(fb, gb))) : fb.forEach(function (nb, ob) {
-                    nb.forEach(function (pb, qb) {
+                eb.scale(mb, mb), eb.fillStyle = Q, eb.fillRect(0, 0, hb, hb), eb.fillStyle = S, H ? eb.fill(new Path2D(v(fb, gb))) : fb.forEach(function(nb, ob) {
+                    nb.forEach(function(pb, qb) {
                         pb && eb.fillRect(qb + gb, ob + gb, 1, 1);
                     });
                 }), kb && eb.drawImage(jb, ib.x + gb, ib.y + gb, ib.w, ib.h);
@@ -996,7 +1076,9 @@ c.register('.....', function (d, e) {
         return null != Z && (eb = a(F).createElement('img', {
             src: Z,
             key: Z,
-            style: { display: 'none' },
+            style: {
+                display: 'none'
+            },
             onLoad: () => {
                 cb(!0);
             },
@@ -1008,11 +1090,15 @@ c.register('.....', function (d, e) {
             ref: $
         }, _I)), eb);
     }
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _k;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = function(k, l) {
             return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
                 ref: l,
                 icon: h.default
@@ -1020,8 +1106,8 @@ c.register('.....', function (d, e) {
         };
     j.displayName = 'ReloadOutlined';
     var _k = g.forwardRef(j);
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _f;
     });
     var _f = {
@@ -1032,20 +1118,26 @@ c.register('.....', function (d, e) {
                 focusable: 'false'
             },
             children: [{
-                    tag: 'path',
-                    attrs: { d: 'M909.1 209.3l-56.4 44.1C775.8 155.1 656.2 92 521.9 92 290 92 102.3 279.5 102 511.5 101.7 743.7 289.8 932 521.9 932c181.3 0 335.8-115 394.6-276.1 1.5-4.2-.7-8.9-4.9-10.3l-56.7-19.5a8 8 0 00-10.1 4.8c-1.8 5-3.8 10-5.9 14.9-17.3 41-42.1 77.8-73.7 109.4A344.77 344.77 0 01655.9 829c-42.3 17.9-87.4 27-133.8 27-46.5 0-91.5-9.1-133.8-27A341.5 341.5 0 01279 755.2a342.16 342.16 0 01-73.7-109.4c-17.9-42.4-27-87.4-27-133.9s9.1-91.5 27-133.9c17.3-41 42.1-77.8 73.7-109.4 31.6-31.6 68.4-56.4 109.3-73.8 42.3-17.9 87.4-27 133.8-27 46.5 0 91.5 9.1 133.8 27a341.5 341.5 0 01109.3 73.8c9.9 9.9 19.2 20.4 27.8 31.4l-60.2 47a8 8 0 003 14.1l175.6 43c5 1.2 9.9-2.6 9.9-7.7l.8-180.9c-.1-6.6-7.8-10.3-13-6.2z' }
-                }]
+                tag: 'path',
+                attrs: {
+                    d: 'M909.1 209.3l-56.4 44.1C775.8 155.1 656.2 92 521.9 92 290 92 102.3 279.5 102 511.5 101.7 743.7 289.8 932 521.9 932c181.3 0 335.8-115 394.6-276.1 1.5-4.2-.7-8.9-4.9-10.3l-56.7-19.5a8 8 0 00-10.1 4.8c-1.8 5-3.8 10-5.9 14.9-17.3 41-42.1 77.8-73.7 109.4A344.77 344.77 0 01655.9 829c-42.3 17.9-87.4 27-133.8 27-46.5 0-91.5-9.1-133.8-27A341.5 341.5 0 01279 755.2a342.16 342.16 0 01-73.7-109.4c-17.9-42.4-27-87.4-27-133.9s9.1-91.5 27-133.9c17.3-41 42.1-77.8 73.7-109.4 31.6-31.6 68.4-56.4 109.3-73.8 42.3-17.9 87.4-27 133.8-27 46.5 0 91.5 9.1 133.8 27a341.5 341.5 0 01109.3 73.8c9.9 9.9 19.2 20.4 27.8 31.4l-60.2 47a8 8 0 003 14.1l175.6 43c5 1.2 9.9-2.6 9.9-7.7l.8-180.9c-.1-6.6-7.8-10.3-13-6.2z'
+                }
+            }]
         },
         name: 'reload',
         theme: 'outlined'
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     var _i = (0, f.default)('QRCode', j => (k => {
-        const {componentCls: l} = k;
+        const {
+            componentCls: l
+        } = k;
         return {
             [l]: Object.assign(Object.assign({}, (0, h.resetComponent)(k)), {
                 display: 'flex',
@@ -1074,14 +1166,18 @@ c.register('.....', function (d, e) {
                     lineHeight: k.lineHeight,
                     background: k.QRCodeMaskBackgroundColor,
                     textAlign: 'center',
-                    [`& > ${ l }-expired`]: { color: k.QRCodeExpiredTextColor }
+                    [`& > ${ l }-expired`]: {
+                        color: k.QRCodeExpiredTextColor
+                    }
                 },
                 '&-icon': {
                     marginBlockEnd: k.marginXS,
                     fontSize: k.controlHeight
                 }
             }),
-            [`${ l }-borderless`]: { borderColor: 'transparent' }
+            [`${ l }-borderless`]: {
+                borderColor: 'transparent'
+            }
         };
     })((0, g.merge)(j, {
         QRCodeExpiredTextColor: 'rgba(0, 0, 0, 0.88)',

@@ -7,8 +7,8 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _e;
     });
     var _e = {
@@ -16,36 +16,48 @@ b.register('.....', function (c, d) {
         Green: '#388e3c',
         Blue: '#303f9f'
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _A;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....');
     let n, o, p, q, r, s, t = u => u;
     const u = f.default.div(n || (n = t`
   display: flex;
   flex-direction: column;
   min-height: max-content;
-`)), v = f.default.div(o || (o = t`
+`)),
+        v = f.default.div(o || (o = t`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-`)), w = f.default.div(p || (p = t`
+`)),
+        w = f.default.div(p || (p = t`
   display: flex;
   flex-direction: column;
-`)), x = f.default.h2(q || (q = t`
+`)),
+        x = f.default.h2(q || (q = t`
   font-size: 46px;
   line-height: 46px;
   font-weight: ${ 0 };
   margin-bottom: 0px;
   margin-top: 3px;
-`), i.FontWeights.UltraBold), y = f.default.p(r || (r = t`
+`), i.FontWeights.UltraBold),
+        y = f.default.p(r || (r = t`
   margin-bottom: 0px;
   font-size: 20px;
-`)), z = (0, f.default)(g.default)(s || (s = t`
+`)),
+        z = (0, f.default)(g.default)(s || (s = t`
   @media print {
     display: none;
   }
@@ -60,16 +72,22 @@ b.register('.....', function (c, d) {
                             children: [
                                 (0, e.jsxs)(w, {
                                     children: [
-                                        (0, e.jsx)(x, { children: B.title }),
-                                        B.description && (0, e.jsx)(y, { children: B.description })
+                                        (0, e.jsx)(x, {
+                                            children: B.title
+                                        }),
+                                        B.description && (0, e.jsx)(y, {
+                                            children: B.description
+                                        })
                                     ]
                                 }),
                                 B.download ? (0, e.jsx)(z, {
-                                    style: { marginLeft: 30 },
+                                    style: {
+                                        marginLeft: 30
+                                    },
                                     size: 'large',
                                     icon: (0, e.jsx)(j.default, {}),
                                     onClick: () => {
-                                        (0, k.isUpgraded)() ? null == B || B.download() : D();
+                                        (0, k.isUpgraded)() ? null == B || B.download(): D();
                                     },
                                     children: 'Export'
                                 }) : null
@@ -102,20 +120,25 @@ b.register('.....', function (c, d) {
             ]
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _q;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....');
     let j, k, l, m = n => n;
     const n = (0, f.default)(g.default)(j || (j = m`
   margin-bottom: 10px !important;
-`)), o = f.default.h2(k || (k = m`
+`)),
+        o = f.default.h2(k || (k = m`
   margin-bottom: -9px;
   font-weight: ${ 0 };
-`), h.FontWeights.Bold), p = f.default.span(l || (l = m`
+`), h.FontWeights.Bold),
+        p = f.default.span(l || (l = m`
   font-size: 40px;
   font-weight: ${ 0 };
   color: ${ 0 };
@@ -123,15 +146,17 @@ b.register('.....', function (c, d) {
     var _q = r => (0, e.jsxs)(n, {
         className: r.className,
         children: [
-            null !== r.header && (0, e.jsx)(o, { children: r.header }),
+            null !== r.header && (0, e.jsx)(o, {
+                children: r.header
+            }),
             null !== r.content && (0, e.jsx)(p, {
                 color: r.contentColor,
                 children: r.content
             })
         ]
     });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _f;
     });
     let e;
@@ -150,24 +175,31 @@ b.register('.....', function (c, d) {
     }
   }
 `), g => g.preventScroll ? 'hidden' : 'auto');
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _n;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     let i, j, k = l => l;
     const l = f.default.div(i || (i = k`
   display: flex;
   width: 100%;
   justify-content: space-between;
-`)), m = f.default.div(j || (j = k`
+`)),
+        m = f.default.div(j || (j = k`
   width: 100%;
 `));
     var _n = o => (0, e.jsxs)(l, {
         children: [
-            (0, e.jsx)(m, { children: (0, e.jsx)(g.default, { question: o.question }) }),
+            (0, e.jsx)(m, {
+                children: (0, e.jsx)(g.default, {
+                    question: o.question
+                })
+            }),
             (0, e.jsx)(h.default, {
                 correct: o.correct,
                 incorrect: o.incorrect,
@@ -175,13 +207,17 @@ b.register('.....', function (c, d) {
             })
         ]
     });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _v;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....');
     let k, l, m, n, o, p = q => q;
     const q = f.default.div(k || (k = p`
   display: flex;
@@ -193,7 +229,8 @@ b.register('.....', function (c, d) {
   @media print {
     break-inside: avoid;
   }
-`)), r = (0, f.default)(g.default).attrs({
+`)),
+        r = (0, f.default)(g.default).attrs({
             bodyStyle: {
                 textAlign: 'center',
                 padding: 0
@@ -205,13 +242,16 @@ b.register('.....', function (c, d) {
   color: ${ 0 };
   cursor: default;
   width: 100px !important;
-`), i.default.Black), s = (0, f.default)(r)(m || (m = p`
+`), i.default.Black),
+        s = (0, f.default)(r)(m || (m = p`
   color: ${ 0 } !important;
   margin-left: 20px !important;
-`), j.default.Green), t = (0, f.default)(r)(n || (n = p`
+`), j.default.Green),
+        t = (0, f.default)(r)(n || (n = p`
   color: ${ 0 } !important;
   margin-left: 10px !important;
-`), j.default.Red), u = (0, f.default)(r)(o || (o = p`
+`), j.default.Red),
+        u = (0, f.default)(r)(o || (o = p`
   color: ${ 0 } !important;
   margin-left: 10px !important;
 `), j.default.Blue);
@@ -219,29 +259,46 @@ b.register('.....', function (c, d) {
         children: [
             (0, e.jsx)(h.default, {
                 title: 'Correct',
-                children: (0, e.jsx)(s, { children: w.correct })
+                children: (0, e.jsx)(s, {
+                    children: w.correct
+                })
             }),
             (0, e.jsx)(h.default, {
                 title: 'Incorrect',
-                children: (0, e.jsx)(t, { children: w.incorrect })
+                children: (0, e.jsx)(t, {
+                    children: w.incorrect
+                })
             }),
             (0, e.jsx)(h.default, {
                 title: 'Accuracy',
-                children: (0, e.jsx)(u, { children: `${ w.accuracy }%` })
+                children: (0, e.jsx)(u, {
+                    children: `${ w.accuracy }%`
+                })
             })
         ]
     });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _u;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....');
     let p, q, r = s => s;
     const s = g.default.div(p || (p = r`
   display: flex;
   justify-content: space-around;
   min-height: max-content;
-`)), t = (0, g.default)(n.default)(q || (q = r`
+`)),
+        t = (0, g.default)(n.default)(q || (q = r`
   flex-basis: 33%;
   margin-bottom: 10px;
   text-align: center;
@@ -251,47 +308,50 @@ b.register('.....', function (c, d) {
 `));
     var _u = v => {
         const {
-                player: w,
-                questions: x
-            } = v, y = f.useMemo(() => {
-                const z = new Set();
-                w.correctQuestionIds.forEach(A => {
-                    z.add(A);
-                }), w.incorrectQuestionIds.forEach(A => {
-                    z.add(A);
-                });
-                const A = [];
-                return z.forEach(B => {
-                    const C = x.find(D => D._id === B);
-                    C && A.push(C);
-                }), A;
-            }, [
-                x.length,
-                w.correctQuestionIds.length,
-                w.incorrectQuestionIds.length
-            ]), z = f.useMemo(() => y.map(A => {
-                let B = 0, C = 0;
-                return w.correctQuestionIds.forEach(D => {
-                    D === A._id && B++;
-                }), w.incorrectQuestionIds.forEach(D => {
-                    D === A._id && C++;
-                }), {
-                    question: A,
-                    resultData: {
-                        correct: B,
-                        incorrect: C,
-                        accuracy: (0, i.calculateAccuracy)(B, C)
-                    }
-                };
-            }), [
-                y.length,
-                w.correctQuestionIds.length,
-                w.incorrectQuestionIds.length
-            ]);
+            player: w,
+            questions: x
+        } = v, y = f.useMemo(() => {
+            const z = new Set();
+            w.correctQuestionIds.forEach(A => {
+                z.add(A);
+            }), w.incorrectQuestionIds.forEach(A => {
+                z.add(A);
+            });
+            const A = [];
+            return z.forEach(B => {
+                const C = x.find(D => D._id === B);
+                C && A.push(C);
+            }), A;
+        }, [
+            x.length,
+            w.correctQuestionIds.length,
+            w.incorrectQuestionIds.length
+        ]), z = f.useMemo(() => y.map(A => {
+            let B = 0,
+                C = 0;
+            return w.correctQuestionIds.forEach(D => {
+                D === A._id && B++;
+            }), w.incorrectQuestionIds.forEach(D => {
+                D === A._id && C++;
+            }), {
+                question: A,
+                resultData: {
+                    correct: B,
+                    incorrect: C,
+                    accuracy: (0, i.calculateAccuracy)(B, C)
+                }
+            };
+        }), [
+            y.length,
+            w.correctQuestionIds.length,
+            w.incorrectQuestionIds.length
+        ]);
         return (0, e.jsxs)(o.default, {
             preventScroll: v.preventScroll,
             children: [
-                (0, e.jsx)(m.default, { title: w.name }),
+                (0, e.jsx)(m.default, {
+                    title: w.name
+                }),
                 (0, e.jsxs)(s, {
                     children: [
                         (0, e.jsx)(t, {
@@ -318,7 +378,9 @@ b.register('.....', function (c, d) {
                             fontSize: 20,
                             fontWeight: k.FontWeights.UltraBold
                         },
-                        children: (0, e.jsx)('div', { children: 'Questions' })
+                        children: (0, e.jsx)('div', {
+                            children: 'Questions'
+                        })
                     })
                 }),
                 (0, e.jsx)('div', {

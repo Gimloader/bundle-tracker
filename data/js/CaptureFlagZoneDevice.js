@@ -7,15 +7,25 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _r;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....');
     class q extends l.default {
         getAlpha() {
             return (0, j.InGamePhase)() ? this.state.active ? g.ZoneConstants.alpha : 0 : (0, i.isSavedVersion)() && k.default.shouldShowInnerZone(this) ? g.ZoneConstants.alpha : 0;
@@ -35,7 +45,8 @@ b.register('.....', function (c, d) {
                 }), (0, f.default)(this, 'setupVisualEditing', () => {
                     if (!(0, j.InPreGamePhase)() || !(0, i.isSavedVersion)())
                         return;
-                    const s = (0, o.FetchOptionSchemaProperty)(this, 'width'), t = (0, o.FetchOptionSchemaProperty)(this, 'height');
+                    const s = (0, o.FetchOptionSchemaProperty)(this, 'width'),
+                        t = (0, o.FetchOptionSchemaProperty)(this, 'height');
                     this.visualEditing.add.box({
                         width: this.options.width,
                         height: this.options.height,
@@ -82,18 +93,18 @@ b.register('.....', function (c, d) {
         }
     }
     var _r = q;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ZoneConstants', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ZoneConstants', function() {
         return _e;
     });
     const _e = {
         alpha: 0.5,
         activateDeactivateTime: 100
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ZonedDeviceDisplayOptions', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ZonedDeviceDisplayOptions', function() {
         return _f;
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _i;
     });
     var e = b('.....');
@@ -108,27 +119,30 @@ b.register('.....', function (c, d) {
         shouldShow: j => h() !== _f.fullyHidden,
         shouldShowInnerZone: j => h() !== _f.bordersOnly
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _e;
     });
-    var _e = { zonedDeviceViews: 'zoned-device-views' };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'BaseAsset', function () {
+    var _e = {
+        zonedDeviceViews: 'zoned-device-views'
+    };
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'BaseAsset', function() {
         return _f;
-    }), a(c.exports, 'Icon', function () {
+    }), a(c.exports, 'Icon', function() {
         return _g;
     });
     var e = b('.....');
     const _f = {
             imageId: (0, e.default)('devices/capture_flag_zone/base.png'),
             imageUrl: (0, e.default)('devices/capture_flag_zone/base.png')
-        }, _g = {
+        },
+        _g = {
             imageId: (0, e.default)('devices/capture_flag_zone/icon.png'),
             imageUrl: (0, e.default)('devices/capture_flag_zone/icon.png')
         };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
     const _e = (f, g) => {
@@ -140,13 +154,17 @@ b.register('.....', function (c, d) {
             step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = (j, k, l) => {
-        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        const m = (0, h.FetchVisualEditingPreview)(),
+            n = (0, g.FetchCurrentlyEditedDevice)();
         if (!n || !m)
             return;
         const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
@@ -167,11 +185,12 @@ b.register('.....', function (c, d) {
             state: m.deviceOption.defaultState
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };

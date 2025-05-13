@@ -6,29 +6,38 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _m;
     });
     var g = c('.....');
     c('.....');
-    var h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     var _m = n => {
-        const {data: o} = n;
+        const {
+            data: o
+        } = n;
         return (0, g.jsxs)(i.default, {
             className: 'maxWidth',
             direction: 'vertical',
             size: 20,
             children: [
-                (0, g.jsx)(h.default, { id: o._id }),
+                (0, g.jsx)(h.default, {
+                    id: o._id
+                }),
                 (0, g.jsx)(j.default, {
                     lastPublish: o.lastPublish,
                     refetch: n.refetch
@@ -45,27 +54,42 @@ c.register('.....', function (d, e) {
             ]
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _n;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....');
     var _n = o => {
         const p = `${ (0, k.getDomain)() }/creative/map/${ o.id }`;
         return (0, f.jsxs)(m.Container, {
             children: [
                 (0, f.jsxs)('div', {
                     children: [
-                        (0, f.jsx)(m.Title, { children: 'Public Link' }),
-                        (0, f.jsx)(j.default.Text, { children: 'This is a direct link to play your map! The link never expires as long as your map remains published.' })
+                        (0, f.jsx)(m.Title, {
+                            children: 'Public Link'
+                        }),
+                        (0, f.jsx)(j.default.Text, {
+                            children: 'This is a direct link to play your map! The link never expires as long as your map remains published.'
+                        })
                     ]
                 }),
                 (0, f.jsxs)('div', {
                     className: 'flex vc',
-                    style: { marginTop: 10 },
+                    style: {
+                        marginTop: 10
+                    },
                     children: [
                         (0, f.jsx)(h.default, {
-                            style: { width: '100%' },
+                            style: {
+                                width: '100%'
+                            },
                             type: 'text',
                             value: p,
                             readOnly: !0
@@ -75,7 +99,9 @@ c.register('.....', function (d, e) {
                             onClick: () => {
                                 b(l)(p), i.default.success('Link copied to clipboard!');
                             },
-                            style: { marginLeft: 10 },
+                            style: {
+                                marginLeft: 10
+                            },
                             children: 'Copy Link'
                         })
                     ]
@@ -83,19 +109,25 @@ c.register('.....', function (d, e) {
             ]
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'Container', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'Container', function() {
         return _k;
-    }), a(d.exports, 'Title', function () {
+    }), a(d.exports, 'Title', function() {
         return _l;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     let j;
-    const _k = h.default.div.attrs({ className: 'maxWidth' })(j || (j = (l => l)`
+    const _k = h.default.div.attrs({
+            className: 'maxWidth'
+        })(j || (j = (l => l)`
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   border-radius: 8px;
-`)), _l = m => (0, f.jsx)(g.default.Title, {
+`)),
+        _l = m => (0, f.jsx)(g.default.Title, {
             style: {
                 fontFamily: i.Fonts.FugazOne,
                 textTransform: 'uppercase',
@@ -104,20 +136,32 @@ c.register('.....', function (d, e) {
             level: 3,
             children: m.children
         });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _r;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     c('.....');
-    var j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....');
+    var j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....');
     var _r = s => {
         const [t, u, v] = (0, n.useBoolean)(!1), w = b(j).unix(s.lastPublish);
         return (0, f.jsxs)(m.Container, {
             children: [
                 (0, f.jsxs)('div', {
                     children: [
-                        (0, f.jsx)(m.Title, { children: 'Publish New Version' }),
+                        (0, f.jsx)(m.Title, {
+                            children: 'Publish New Version'
+                        }),
                         (0, f.jsxs)(i.default.Text, {
                             children: [
                                 'Your map was last published on',
@@ -137,7 +181,9 @@ c.register('.....', function (d, e) {
                     ]
                 }),
                 (0, f.jsx)('div', {
-                    style: { marginTop: 15 },
+                    style: {
+                        marginTop: 15
+                    },
                     children: (0, f.jsx)(g.default, {
                         block: !0,
                         type: 'primary',
@@ -163,13 +209,19 @@ c.register('.....', function (d, e) {
                                     },
                                     both: v
                                 });
-                            }, { once: !0 }), (0, p.default)(q.default.save, { ignoreNotification: !0 }));
+                            }, {
+                                once: !0
+                            }), (0, p.default)(q.default.save, {
+                                ignoreNotification: !0
+                            }));
                         },
                         children: 'Publish Changes (Free)'
                     })
                 }),
                 (0, f.jsx)('div', {
-                    style: { marginTop: 9 },
+                    style: {
+                        marginTop: 9
+                    },
                     children: (0, f.jsxs)('div', {
                         style: {
                             fontSize: 12,
@@ -198,13 +250,18 @@ c.register('.....', function (d, e) {
             ]
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _n;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     c('.....');
-    var i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     const m = n => (0, f.jsxs)('div', {
         className: 'maxWidth flex-column flex-center',
         style: {
@@ -238,14 +295,20 @@ c.register('.....', function (d, e) {
         children: [
             (0, f.jsxs)('div', {
                 children: [
-                    (0, f.jsx)(l.Title, { children: 'Analytics' }),
-                    (0, f.jsx)(h.default.Text, { children: 'See how many times your map has been played!' })
+                    (0, f.jsx)(l.Title, {
+                        children: 'Analytics'
+                    }),
+                    (0, f.jsx)(h.default.Text, {
+                        children: 'See how many times your map has been played!'
+                    })
                 ]
             }),
             (0, f.jsxs)(g.default, {
                 direction: 'vertical',
                 size: 12,
-                style: { marginTop: 15 },
+                style: {
+                    marginTop: 15
+                },
                 className: 'maxWidth',
                 children: [
                     (0, f.jsx)(m, {
@@ -264,11 +327,17 @@ c.register('.....', function (d, e) {
             })
         ]
     });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _m;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     var _m = n => (0, f.jsx)('div', {
         children: (0, f.jsx)(i.default, {
             style: {
@@ -289,7 +358,9 @@ c.register('.....', function (d, e) {
                             error: o => {
                                 (0, l.throwMessageError)({
                                     e: o,
-                                    default: { title: 'Error unpublishing map' }
+                                    default: {
+                                        title: 'Error unpublishing map'
+                                    }
                                 });
                             }
                         });

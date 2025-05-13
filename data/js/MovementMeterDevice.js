@@ -7,15 +7,27 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _t;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....'),
+        r = b('.....');
     class s extends j.default {
         constructor(t) {
             if (super(t), (0, f.default)(this, 'onMessage', u => {
@@ -36,25 +48,25 @@ b.register('.....', function (c, d) {
                                 placement: q.NotificationPlacement.topRight
                             });
                         else if (u.key === n.Messages.outOfItem) {
-                            var y, z;
-                            (0, o.playSound)({
-                                path: (0, g.default)('sounds/power-down.mp3'),
-                                volume: (0, p.getVolume)({
-                                    type: p.SoundType.soundEffect,
-                                    volume: 0.32
-                                })
-                            }), ((null === (y = this.options.outOfItemAlertTitle) || void 0 === y ? void 0 : y.length) || (null === (z = this.options.outOfItemAlertTitle) || void 0 === z ? void 0 : z.length)) && (0, q.ShowNotification)({
-                                id: (0, r.generateId)(),
-                                title: this.options.outOfItemAlertTitle,
-                                description: this.options.outOfItemAlertContent,
-                                type: q.NotificationType.error,
-                                placement: q.NotificationPlacement.topRight
-                            });
-                        }
+                        var y, z;
+                        (0, o.playSound)({
+                            path: (0, g.default)('sounds/power-down.mp3'),
+                            volume: (0, p.getVolume)({
+                                type: p.SoundType.soundEffect,
+                                volume: 0.32
+                            })
+                        }), ((null === (y = this.options.outOfItemAlertTitle) || void 0 === y ? void 0 : y.length) || (null === (z = this.options.outOfItemAlertTitle) || void 0 === z ? void 0 : z.length)) && (0, q.ShowNotification)({
+                            id: (0, r.generateId)(),
+                            title: this.options.outOfItemAlertTitle,
+                            description: this.options.outOfItemAlertContent,
+                            type: q.NotificationType.error,
+                            placement: q.NotificationPlacement.topRight
+                        });
+                    }
                 }), (0, i.InGamePhase)() || (0, h.isPublishedVersion)())
                 return;
             const u = l.default.Manager;
-            new (0, k.default)({
+            new(0, k.default)({
                 device: this,
                 baseColor: u.baseColor,
                 boxColor: u.boxColor,
@@ -68,10 +80,10 @@ b.register('.....', function (c, d) {
         }
     }
     var _t = s;
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
-    a(c.exports, 'Messages', function () {
+    a(c.exports, 'Messages', function() {
         return e;
     }), (f = e || (e = {})).warning = 'warning', f.outOfItem = 'outOfItem';
 });

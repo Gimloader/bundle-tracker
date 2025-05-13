@@ -1,10 +1,10 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('.....', function (b, c) {
+a.register('.....', function(b, c) {
     var d, e, f, g, h;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), e = b.exports, f = 'default', g = function () {
+    }), e = b.exports, f = 'default', g = function() {
         return _r;
     }, Object.defineProperty(e, f, {
         get: g,
@@ -12,8 +12,13 @@ a.register('.....', function (b, c) {
         enumerable: !0,
         configurable: !0
     });
-    var i = a('.....'), j = a('.....'), k = a('.....'), l = a('.....');
-    const m = j.lazy(() => a('.....')), n = j.lazy(() => a('.....')), o = j.lazy(() => a('.....'));
+    var i = a('.....'),
+        j = a('.....'),
+        k = a('.....'),
+        l = a('.....');
+    const m = j.lazy(() => a('.....')),
+        n = j.lazy(() => a('.....')),
+        o = j.lazy(() => a('.....'));
     let p;
     var q;
     (q = p || (p = {})).overview = 'overview', q.requirements = 'requirements', q.form = 'form';
@@ -23,7 +28,9 @@ a.register('.....', function (b, c) {
             fallback: null,
             children: (() => {
                 if (t === p.overview)
-                    return (0, i.jsx)(m, { next: () => u(p.requirements) });
+                    return (0, i.jsx)(m, {
+                        next: () => u(p.requirements)
+                    });
                 if (t === p.requirements)
                     return (0, i.jsx)(n, {
                         publishRequirementError: s.publishRequirementError,
@@ -54,17 +61,19 @@ a.register('.....', function (b, c) {
                             }
                         });
                     });
-                    return (0, i.jsx)(o, { handleSubmit: v });
+                    return (0, i.jsx)(o, {
+                        handleSubmit: v
+                    });
                 }
                 return null;
             })()
         });
     };
-}), a.register('.....', function (b, c) {
+}), a.register('.....', function(b, c) {
     b.exports = import('./' + a('.....').resolve('23FEm')).then(() => a('.....'));
-}), a.register('.....', function (b, c) {
+}), a.register('.....', function(b, c) {
     b.exports = import('./' + a('.....').resolve('75Mvs')).then(() => a('.....'));
-}), a.register('.....', function (b, c) {
+}), a.register('.....', function(b, c) {
     b.exports = Promise.all([
         import('./' + a('.....').resolve('2bgip')),
         import('./' + a('.....').resolve('gf3XU')),

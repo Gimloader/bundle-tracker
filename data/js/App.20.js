@@ -7,41 +7,64 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _n;
     });
     var f = b('.....');
     b('.....');
-    var g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....');
+    var g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....');
     var _n = o => (0, f.jsx)(m.LimitedWidth, {
         children: (0, f.jsxs)(j.default, {
             direction: 'vertical',
             size: 30,
             className: 'maxWidth',
             children: [
-                (0, f.jsx)(g.default, { pageMode: o.pageMode }),
+                (0, f.jsx)(g.default, {
+                    pageMode: o.pageMode
+                }),
                 (0, f.jsx)(h.default, {
                     title: 'Benefits',
                     description: 'Access these exclusive benefits all season long',
-                    children: (0, f.jsx)(i.default, { forSelf: !0 })
+                    children: (0, f.jsx)(i.default, {
+                        forSelf: !0
+                    })
                 }),
                 (0, f.jsx)(k.default, {}),
-                (0, f.jsx)(l.default, { pageMode: o.pageMode })
+                (0, f.jsx)(l.default, {
+                    pageMode: o.pageMode
+                })
             ]
         })
     });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _y;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....');
     let r, s, t, u, v, w, x = y => y;
     var _y = z => (0, e.jsxs)(_z, {
         children: [
@@ -53,7 +76,9 @@ b.register('.....', function (c, d) {
                     n.SeasonTicketSeason.seasonNumber
                 ]
             }),
-            (0, e.jsx)(_C, { children: n.SeasonTicketName.name }),
+            (0, e.jsx)(_C, {
+                children: n.SeasonTicketName.name
+            }),
             (0, p.OwnsSeasonTicket)() ? (0, e.jsxs)(_D, {
                 children: [
                     'You already own this ',
@@ -62,7 +87,9 @@ b.register('.....', function (c, d) {
                 ]
             }) : (0, e.jsx)(l.default, {
                 to: m.SEASON_TICKET_BASE,
-                style: { textDecoration: 'none' },
+                style: {
+                    textDecoration: 'none'
+                },
                 target: z.pageMode ? void 0 : '_blank',
                 children: (0, e.jsxs)(i.default, {
                     style: {
@@ -75,7 +102,9 @@ b.register('.....', function (c, d) {
                     children: [
                         (0, e.jsx)(j.default, {
                             name: 'fal fa-sparkles',
-                            style: { marginRight: 10 }
+                            style: {
+                                marginRight: 10
+                            }
                         }),
                         'Purchase ',
                         n.SeasonTicketName.name
@@ -91,7 +120,9 @@ b.register('.....', function (c, d) {
             })
         ]
     });
-    const _z = (0, f.default)(g.CenteredColumn).attrs({ className: 'maxWidth medium-shadow' })(r || (r = x`
+    const _z = (0, f.default)(g.CenteredColumn).attrs({
+            className: 'maxWidth medium-shadow'
+        })(r || (r = x`
   font-family: ${ 0 };
   text-transform: uppercase;
   padding: 60px 30px;
@@ -105,18 +136,23 @@ b.register('.....', function (c, d) {
   @media (max-width: 820px) {
     text-align: center;
   }
-`), h.Fonts.FugazOne, k.default.White), _A = f.default.img.attrs({ src: o.SEASON_TICKET_TICKET_IMAGE })(s || (s = x`
+`), h.Fonts.FugazOne, k.default.White),
+        _A = f.default.img.attrs({
+            src: o.SEASON_TICKET_TICKET_IMAGE
+        })(s || (s = x`
   height: 97px;
   margin-bottom: 35px;
   filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.5));
   transform: rotate(354deg);
-`)), _B = f.default.div(t || (t = x`
+`)),
+        _B = f.default.div(t || (t = x`
   font-size: 21px;
   color: rgba(255, 255, 255, 0.9);
   @media (max-width: 820px) {
     font-size: 18px;
   }
-`)), _C = f.default.div(u || (u = x`
+`)),
+        _C = f.default.div(u || (u = x`
   font-size: 48px;
   margin-top: -10px;
   text-shadow: 1px 1px 21px rgba(0, 0, 0, 0.4);
@@ -124,7 +160,8 @@ b.register('.....', function (c, d) {
     font-size: 40px;
     margin-top: -8px;
   }
-`)), _D = f.default.div(v || (v = x`
+`)),
+        _D = f.default.div(v || (v = x`
   text-transform: none;
   font-family: ${ 0 };
   background: rgba(0, 0, 0, 0.15);
@@ -133,58 +170,69 @@ b.register('.....', function (c, d) {
   padding: 15px 30px;
   font-size: 16px;
   border-radius: 6px;
-`), h.Fonts.SFPro), _E = f.default.div(w || (w = x`
+`), h.Fonts.SFPro),
+        _E = f.default.div(w || (w = x`
   text-transform: none;
   font-family: ${ 0 };
   color: rgba(255, 255, 255, 0.9);
   font-size: 12px;
   margin-top: 10px;
 `), h.Fonts.SFPro);
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'SEASON_TICKET_TICKET_IMAGE', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'SEASON_TICKET_TICKET_IMAGE', function() {
         return _e;
     });
     const _e = (0, b('.....').default)('stickers/season_3_2025.png');
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'SEASON_TICKET_END_DATE', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'SEASON_TICKET_END_DATE', function() {
         return _e;
     });
     const _e = 'August 20th';
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _l;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....');
+    var f = b('.....'),
+        g = b('.....');
     let h, i, j, k = l => l;
     var _l = m => (0, e.jsxs)(_m, {
         children: [
-            (0, e.jsx)(_n, { children: m.title }),
-            (0, e.jsx)(_o, { children: m.description }),
+            (0, e.jsx)(_n, {
+                children: m.title
+            }),
+            (0, e.jsx)(_o, {
+                children: m.description
+            }),
             m.children
         ]
     });
-    const _m = f.default.div(h || (h = k``)), _n = f.default.div(i || (i = k`
+    const _m = f.default.div(h || (h = k``)),
+        _n = f.default.div(i || (i = k`
   font-family: ${ 0 };
   text-transform: uppercase;
   font-size: 32px;
-`), g.Fonts.FugazOne), _o = f.default.div(j || (j = k`
+`), g.Fonts.FugazOne),
+        _o = f.default.div(j || (j = k`
   font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
   font-style: italic;
   margin-top: -6px;
   margin-bottom: 20px;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _l;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     b('.....');
-    var g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....');
-    const k = [
-        {
+    var g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....');
+    const k = [{
             icon: 'vip',
             title: 'Exclusive Cosmetics',
             description: `Instantly earn over 15 exclusive cosmetics, only available by purchasing this season's ${ h.SeasonTicketName.singularName }. Cosmetics stay in your Locker after the season ends.`
@@ -220,29 +268,46 @@ b.register('.....', function (c, d) {
         direction: 'vertical',
         size: 20,
         className: 'maxWidth',
-        children: k.filter(n => !n.show || n.show(m.forSelf)).map((n, o) => (0, e.jsx)(g.default, { ...n }, 'benefit' + o))
+        children: k.filter(n => !n.show || n.show(m.forSelf)).map((n, o) => (0, e.jsx)(g.default, {
+            ...n
+        }, 'benefit' + o))
     });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _r;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....');
     let j, k, l, m, n, o, p, q = r => r;
     var _r = s => (0, e.jsxs)(_s, {
         children: [
-            (0, e.jsx)(_t, { children: (0, e.jsx)(_u, { src: (0, i.default)(`seasonTicket/${ s.icon }.svg`) }) }),
+            (0, e.jsx)(_t, {
+                children: (0, e.jsx)(_u, {
+                    src: (0, i.default)(`seasonTicket/${ s.icon }.svg`)
+                })
+            }),
             (0, e.jsxs)(_v, {
                 children: [
-                    s.tag ? (0, e.jsx)(_w, { children: s.tag }) : null,
-                    (0, e.jsx)(_x, { children: s.title }),
-                    (0, e.jsx)(_y, { children: s.description })
+                    s.tag ? (0, e.jsx)(_w, {
+                        children: s.tag
+                    }) : null,
+                    (0, e.jsx)(_x, {
+                        children: s.title
+                    }),
+                    (0, e.jsx)(_y, {
+                        children: s.description
+                    })
                 ]
             })
         ]
     });
-    const _s = (0, f.default)(g.VerticalCentered).attrs({ className: 'maxWidth light-shadow' })(j || (j = q`
+    const _s = (0, f.default)(g.VerticalCentered).attrs({
+            className: 'maxWidth light-shadow'
+        })(j || (j = q`
   padding: 28px 32px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
@@ -252,13 +317,19 @@ b.register('.....', function (c, d) {
   &:hover {
     background: rgba(255, 255, 255, 0.17);
   }
-`)), _t = f.default.div(k || (k = q`
+`)),
+        _t = f.default.div(k || (k = q`
   margin-right: 32px;
-`)), _u = f.default.img(l || (l = q`
+`)),
+        _u = f.default.img(l || (l = q`
   width: 40px;
-`)), _v = f.default.div.attrs({ className: 'flex-column' })(m || (m = q`
+`)),
+        _v = f.default.div.attrs({
+            className: 'flex-column'
+        })(m || (m = q`
   align-items: flex-start;
-`)), _w = f.default.div(n || (n = q`
+`)),
+        _w = f.default.div(n || (n = q`
   font-family: ${ 0 };
   background: rgba(255, 255, 255, 0.1);
   line-height: 1;
@@ -272,44 +343,67 @@ b.register('.....', function (c, d) {
   &:hover {
     background: rgba(255, 255, 255, 0.17);
   }
-`), h.Fonts.FugazOne), _x = f.default.div(o || (o = q`
+`), h.Fonts.FugazOne),
+        _x = f.default.div(o || (o = q`
   font-family: ${ 0 };
   text-transform: uppercase;
   font-size: 22px;
-`), h.Fonts.FugazOne), _y = f.default.div(p || (p = q`
+`), h.Fonts.FugazOne),
+        _y = f.default.div(p || (p = q`
   font-size: 16px;
   color: rgba(255, 255, 255, 0.94);
   margin-top: -1px;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _i;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     var _i = () => {
-        const {data: j} = (0, g.default)();
+        const {
+            data: j
+        } = (0, g.default)();
         return j && j.length ? (0, e.jsx)(f.default, {
             title: 'Cosmetics',
             description: 'Instantly earn these exclusive cosmetics',
-            children: j.map(k => (0, e.jsx)(h.default, { cosmetic: k }, k.id + '-item'))
+            children: j.map(k => (0, e.jsx)(h.default, {
+                cosmetic: k
+            }, k.id + '-item'))
         }) : null;
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _h;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     const g = ['season-ticket-cosmetics'];
-    var _h = () => (0, e.useQuery)(g, () => (0, f.requestAsPromise)({ url: '/api/cosmos/season-ticket' }));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+    var _h = () => (0, e.useQuery)(g, () => (0, f.requestAsPromise)({
+        url: '/api/cosmos/season-ticket'
+    }));
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _p;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....');
     var _p = q => {
-        const {cosmetic: r} = q, [s, t, u] = (0, j.useBoolean)(!1), [v, w, x] = (0, j.useBoolean)(!1), y = f.useMemo(() => r.type === g.CosmeticType.sticker ? 30 : 10, [r.type]);
+        const {
+            cosmetic: r
+        } = q, [s, t, u] = (0, j.useBoolean)(!1), [v, w, x] = (0, j.useBoolean)(!1), y = f.useMemo(() => r.type === g.CosmeticType.sticker ? 30 : 10, [r.type]);
         return (0, e.jsxs)(e.Fragment, {
             children: [
                 (0, e.jsxs)(h.Container, {
@@ -319,7 +413,9 @@ b.register('.....', function (c, d) {
                     children: [
                         (0, e.jsx)(h.PreviewArea, {
                             children: (0, e.jsx)(h.PreviewContent, {
-                                style: { transform: `scale(${ v ? 1.1 : 1 })` },
+                                style: {
+                                    transform: `scale(${ v ? 1.1 : 1 })`
+                                },
                                 children: (0, e.jsx)(k.default, {
                                     image: (0, l.default)({
                                         id: r.id,
@@ -331,14 +427,20 @@ b.register('.....', function (c, d) {
                             })
                         }),
                         (0, e.jsx)(i.Container, {
-                            style: { background: (0, m.rarityToBackground)(r.rarity) },
+                            style: {
+                                background: (0, m.rarityToBackground)(r.rarity)
+                            },
                             children: (0, e.jsx)(i.Content, {
                                 className: 'flex-center',
                                 children: (0, e.jsxs)('div', {
                                     className: 'flex-column flex-center',
                                     children: [
-                                        (0, e.jsx)(i.Title, { children: r.name }),
-                                        (0, e.jsx)(i.Description, { children: (0, n.cosmeticTypeName)(r.type) })
+                                        (0, e.jsx)(i.Title, {
+                                            children: r.name
+                                        }),
+                                        (0, e.jsx)(i.Description, {
+                                            children: (0, n.cosmeticTypeName)(r.type)
+                                        })
                                     ]
                                 })
                             })
@@ -354,25 +456,34 @@ b.register('.....', function (c, d) {
                         id: r.id,
                         type: r.type
                     }),
-                    callToAction: () => {
-                    }
+                    callToAction: () => {}
                 })
             ]
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'BORDER_RADIUS', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'BORDER_RADIUS', function() {
         return _t;
-    }), a(c.exports, 'Container', function () {
+    }), a(c.exports, 'Container', function() {
         return _v;
-    }), a(c.exports, 'PreviewArea', function () {
+    }), a(c.exports, 'PreviewArea', function() {
         return _w;
-    }), a(c.exports, 'PreviewContent', function () {
+    }), a(c.exports, 'PreviewContent', function() {
         return _x;
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _u;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....');
     let p, q, r, s = t => t;
     const _t = 6;
     var _u = v => {
@@ -388,7 +499,9 @@ b.register('.....', function (c, d) {
                     children: [
                         (0, e.jsx)(_w, {
                             children: (0, e.jsx)(_x, {
-                                style: { transform: `scale(${ z ? 1.1 : 1 })` },
+                                style: {
+                                    transform: `scale(${ z ? 1.1 : 1 })`
+                                },
                                 children: (0, e.jsx)(l.default, {
                                     image: v.image,
                                     background: (0, m.rarityToBackground)(v.rarity),
@@ -414,7 +527,9 @@ b.register('.....', function (c, d) {
             ]
         });
     };
-    const _v = g.default.div.attrs({ className: 'maxWidth medium-shadow' })(p || (p = s`
+    const _v = g.default.div.attrs({
+            className: 'maxWidth medium-shadow'
+        })(p || (p = s`
   border-radius: ${ 0 }px;
   overflow: hidden;
   cursor: pointer;
@@ -424,42 +539,67 @@ b.register('.....', function (c, d) {
   &:last-child {
     margin-bottom: 0px;
   }
-`), _t, n.Fonts.FugazOne), _w = g.default.div.attrs({ className: 'maxWidth' })(q || (q = s`
+`), _t, n.Fonts.FugazOne),
+        _w = g.default.div.attrs({
+            className: 'maxWidth'
+        })(q || (q = s`
   height: 140px;
   overflow: hidden;
-`)), _x = g.default.div.attrs({ className: 'maxAll' })(r || (r = s`
+`)),
+        _x = g.default.div.attrs({
+            className: 'maxAll'
+        })(r || (r = s`
   transition: transform 0.25s;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'Container', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'Container', function() {
         return _t;
-    }), a(c.exports, 'Content', function () {
+    }), a(c.exports, 'Content', function() {
         return _u;
-    }), a(c.exports, 'Title', function () {
+    }), a(c.exports, 'Title', function() {
         return _v;
-    }), a(c.exports, 'Description', function () {
+    }), a(c.exports, 'Description', function() {
         return _w;
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _s;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....');
     let l, m, n, o, p, q, r = s => s;
     var _s = t => (0, e.jsx)(_t, {
-        style: { background: (0, h.rarityToBackground)(t.rarity) },
+        style: {
+            background: (0, h.rarityToBackground)(t.rarity)
+        },
         children: (0, e.jsxs)(_u, {
             children: [
                 (0, e.jsxs)('div', {
                     className: 'flex-column',
-                    style: { alignItems: 'flex-start' },
+                    style: {
+                        alignItems: 'flex-start'
+                    },
                     children: [
-                        t.tag ? (0, e.jsx)(_y, { children: t.tag }) : null,
-                        (0, e.jsx)(_v, { children: t.name }),
-                        (0, e.jsx)(_w, { children: t.owned ? 'Owned' : (0, i.cosmeticTypeName)(t.type) })
+                        t.tag ? (0, e.jsx)(_y, {
+                            children: t.tag
+                        }) : null,
+                        (0, e.jsx)(_v, {
+                            children: t.name
+                        }),
+                        (0, e.jsx)(_w, {
+                            children: t.owned ? 'Owned' : (0, i.cosmeticTypeName)(t.type)
+                        })
                     ]
                 }),
-                (0, e.jsx)(_x, { children: t.owned ? null : (0, e.jsx)(j.default, { amount: t.cost }) })
+                (0, e.jsx)(_x, {
+                    children: t.owned ? null : (0, e.jsx)(j.default, {
+                        amount: t.cost
+                    })
+                })
             ]
         })
     });
@@ -472,19 +612,26 @@ b.register('.....', function (c, d) {
   border-bottom-right-radius: ${ 0 }px;
   overflow: hidden;
   line-height: 1;
-`), k.default.White, () => g.BORDER_RADIUS, () => g.BORDER_RADIUS), _u = f.default.div.attrs({ className: 'maxWidth flex vc between' })(m || (m = r`
+`), k.default.White, () => g.BORDER_RADIUS, () => g.BORDER_RADIUS),
+        _u = f.default.div.attrs({
+            className: 'maxWidth flex vc between'
+        })(m || (m = r`
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
   padding: 25px;
-`)), _v = f.default.div(n || (n = r`
+`)),
+        _v = f.default.div(n || (n = r`
   font-size: 24px;
-`)), _w = f.default.div(o || (o = r`
+`)),
+        _w = f.default.div(o || (o = r`
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
   margin-top: 6px;
-`)), _x = f.default.div(p || (p = r`
+`)),
+        _x = f.default.div(p || (p = r`
   margin-left: 10px;
-`)), _y = f.default.div(q || (q = r`
+`)),
+        _y = f.default.div(q || (q = r`
   background: #00897b;
   padding: 11px;
   border-radius: 7px;
@@ -493,13 +640,14 @@ b.register('.....', function (c, d) {
   font-size: 13px;
   text-transform: uppercase;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _k;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....');
+    var f = b('.....'),
+        g = b('.....');
     let h, i, j = k => k;
     var _k = l => {
         const [m, n] = (0, g.useInViewRef)();
@@ -515,18 +663,22 @@ b.register('.....', function (c, d) {
             }) : null
         });
     };
-    const _l = f.default.div.attrs({ className: 'maxAll flex-center' })(h || (h = j`
+    const _l = f.default.div.attrs({
+            className: 'maxAll flex-center'
+        })(h || (h = j`
   background: rgb(255, 255, 255);
   overflow: hidden;
-`)), _m = f.default.img(i || (i = j`
+`)),
+        _m = f.default.img(i || (i = j`
   max-width: 100%;
   max-height: 100%;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'useInViewRef', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'useInViewRef', function() {
         return _g;
     });
-    var e = b('.....'), f = {
+    var e = b('.....'),
+        f = {
             root: null,
             rootMargin: '0px 0px 0px 0px',
             threshold: [
@@ -534,21 +686,31 @@ b.register('.....', function (c, d) {
                 1
             ]
         };
+
     function _g(h, i) {
-        void 0 === h && (h = function () {
-        }), void 0 === i && (i = f);
-        var j = i.root, k = void 0 === j ? null : j, l = i.rootMargin, m = i.threshold, n = (0, e.useState)(null), o = n[0], p = n[1], q = (0, e.useState)(!1), r = q[0], s = q[1];
-        (0, e.useEffect)(function () {
+        void 0 === h && (h = function() {}), void 0 === i && (i = f);
+        var j = i.root,
+            k = void 0 === j ? null : j,
+            l = i.rootMargin,
+            m = i.threshold,
+            n = (0, e.useState)(null),
+            o = n[0],
+            p = n[1],
+            q = (0, e.useState)(!1),
+            r = q[0],
+            s = q[1];
+        (0, e.useEffect)(function() {
             if (o) {
-                var t = new IntersectionObserver(function (u, v) {
-                    u.forEach(function (w) {
+                var t = new IntersectionObserver(function(u, v) {
+                    u.forEach(function(w) {
                         var x = w.isIntersecting;
                         return s(x);
                     }), h(u, v);
                 }, i);
-                return t.observe(o), function () {
-                    t.disconnect();
-                };
+                return t.observe(o),
+                    function() {
+                        t.disconnect();
+                    };
             }
         }, [
             o,
@@ -557,7 +719,7 @@ b.register('.....', function (c, d) {
             _g,
             m
         ]);
-        var t = (0, e.useCallback)(function (u) {
+        var t = (0, e.useCallback)(function(u) {
             p(u);
         }, []);
         return [
@@ -565,47 +727,59 @@ b.register('.....', function (c, d) {
             r
         ];
     }
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _p;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....');
     var _p = q => {
         const [r, s] = f.useState(!1), [t, u] = f.useState(!1), {
-                id: v,
-                name: w,
-                rarity: x,
-                type: y,
-                description: z,
-                style: A
-            } = q, B = q.owned || q.currentCurrency < q.cost, C = () => {
-                B || r || (s(!0), (0, j.request)({
-                    url: '/api/cosmos/purchase-item',
-                    data: { cosmeticId: q.id },
-                    success: () => {
-                        (0, o.AnalyticsTrackEvent)({
-                            event: 'cosmetic_purchased',
-                            properties: {
-                                id: v,
-                                name: w,
-                                type: y
-                            }
-                        }), (0, k.playSound)({
-                            path: (0, l.default)('cosmos/cosmeticPurchased.mp3'),
-                            volume: 0.6
-                        }), (0, n.invalidateCosmosBasics)(), (0, m.refetchCosmosItemShop)(), u(!0);
-                    },
-                    error: D => {
-                        (0, j.throwMessageError)({
-                            e: D,
-                            default: {
-                                title: 'Error purchasing item.',
-                                content: 'Please try again later.'
-                            }
-                        }), q.close();
-                    }
-                }));
-            };
+            id: v,
+            name: w,
+            rarity: x,
+            type: y,
+            description: z,
+            style: A
+        } = q, B = q.owned || q.currentCurrency < q.cost, C = () => {
+            B || r || (s(!0), (0, j.request)({
+                url: '/api/cosmos/purchase-item',
+                data: {
+                    cosmeticId: q.id
+                },
+                success: () => {
+                    (0, o.AnalyticsTrackEvent)({
+                        event: 'cosmetic_purchased',
+                        properties: {
+                            id: v,
+                            name: w,
+                            type: y
+                        }
+                    }), (0, k.playSound)({
+                        path: (0, l.default)('cosmos/cosmeticPurchased.mp3'),
+                        volume: 0.6
+                    }), (0, n.invalidateCosmosBasics)(), (0, m.refetchCosmosItemShop)(), u(!0);
+                },
+                error: D => {
+                    (0, j.throwMessageError)({
+                        e: D,
+                        default: {
+                            title: 'Error purchasing item.',
+                            content: 'Please try again later.'
+                        }
+                    }), q.close();
+                }
+            }));
+        };
         return (0, e.jsx)(g.default, {
             open: q.open,
             close: q.close,
@@ -629,11 +803,15 @@ b.register('.....', function (c, d) {
                     },
                     children: [
                         (0, e.jsx)('div', {
-                            style: { marginTop: 2 },
+                            style: {
+                                marginTop: 2
+                            },
                             children: 'Purchase'
                         }),
                         (0, e.jsx)('div', {
-                            style: { margin: '0px 7px' },
+                            style: {
+                                margin: '0px 7px'
+                            },
                             children: '-'
                         }),
                         (0, e.jsx)(i.default, {
@@ -651,18 +829,22 @@ b.register('.....', function (c, d) {
             onCosmeticSelectionChanged: q.onCosmeticSelectionChanged
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'playSound', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'playSound', function() {
         return _g;
-    }), a(c.exports, 'preloadSound', function () {
+    }), a(c.exports, 'preloadSound', function() {
         return _i;
     });
     var e = b('.....');
-    const f = new Map(), _g = h => {
+    const f = new Map(),
+        _g = h => {
             const i = Date.now();
             if (!h.path)
                 return null;
-            const j = h.forceCreateNewSound ? void 0 : f.get(h.path), k = j || new (0, e.Howl)({ src: h.path });
+            const j = h.forceCreateNewSound ? void 0 : f.get(h.path),
+                k = j || new(0, e.Howl)({
+                    src: h.path
+                });
             if (k.volume(h.volume), j)
                 h.delay ? setTimeout(() => {
                     k.play();
@@ -670,7 +852,8 @@ b.register('.....', function (c, d) {
             else {
                 const l = () => {
                     if (f.get(h.path) || h.forceCreateNewSound || f.set(h.path, k), h.delay) {
-                        const m = i + h.delay, n = Date.now();
+                        const m = i + h.delay,
+                            n = Date.now();
                         n > m ? k.play() : setTimeout(() => {
                             k.play();
                         }, m - n);
@@ -680,36 +863,51 @@ b.register('.....', function (c, d) {
                 'loaded' === k.state() ? l() : k.once('load', l);
             }
             return k;
-        }, h = new Set(), _i = j => {
-            const {path: k} = j;
+        },
+        h = new Set(),
+        _i = j => {
+            const {
+                path: k
+            } = j;
             if (f.get(k))
                 return;
             if (h.has(k))
                 return;
             h.add(k);
-            const l = new (0, e.Howl)({ src: k });
+            const l = new(0, e.Howl)({
+                src: k
+            });
             l.once('load', () => {
                 h.delete(k), f.set(k, l);
             });
         };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'removeCosmosItemShop', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'removeCosmosItemShop', function() {
         return _i;
-    }), a(c.exports, 'refetchCosmosItemShop', function () {
+    }), a(c.exports, 'refetchCosmosItemShop', function() {
         return _j;
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _k;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....');
-    const h = ['cosmos-item-shop'], _i = () => {
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....');
+    const h = ['cosmos-item-shop'],
+        _i = () => {
             f.default.removeQueries(h);
-        }, _j = () => f.default.refetchQueries(h);
-    var _k = () => (0, e.useQuery)(h, () => (0, g.requestAsPromise)({ url: '/api/cosmos/shop' }));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'AnalyticsTrackEvent', function () {
+        },
+        _j = () => f.default.refetchQueries(h);
+    var _k = () => (0, e.useQuery)(h, () => (0, g.requestAsPromise)({
+        url: '/api/cosmos/shop'
+    }));
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'AnalyticsTrackEvent', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = j => {
         var k, l, m;
         if ((window.gtag && !(null === (k = j.blockedSource) || void 0 === k ? void 0 : k.google) && window.gtag('event', j.event, j.properties), g.AnalyticsFlags.educatorOnly) && (null === (m = (0, f.getUser)()) || void 0 === m ? void 0 : m.accountType) !== e.default.educator)
@@ -720,26 +918,36 @@ b.register('.....', function (c, d) {
             force: j.forcePostHog
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'TrackPostHogEvent', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'TrackPostHogEvent', function() {
         return _e;
     });
     b('.....');
-    const _e = f => {
-    };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+    const _e = f => {};
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _s;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....');
     let p, q, r = s => s;
     var _s = t => (0, n.OwnsSeasonTicket)() ? null : (0, e.jsxs)(_t, {
         children: [
             (0, e.jsx)(k.default, {
                 to: l.SEASON_TICKET_BASE,
-                style: { textDecoration: 'none' },
+                style: {
+                    textDecoration: 'none'
+                },
                 target: t.pageMode ? void 0 : '_blank',
                 children: (0, e.jsxs)(i.default, {
                     style: {
@@ -753,7 +961,9 @@ b.register('.....', function (c, d) {
                     children: [
                         (0, e.jsx)(j.default, {
                             name: 'fal fa-sparkles',
-                            style: { marginRight: 10 }
+                            style: {
+                                marginRight: 10
+                            }
                         }),
                         'Purchase ',
                         m.SeasonTicketName.name
@@ -769,42 +979,55 @@ b.register('.....', function (c, d) {
             })
         ]
     });
-    const _t = (0, f.default)(g.CenteredColumn).attrs({ className: 'maxWidth' })(p || (p = r`
+    const _t = (0, f.default)(g.CenteredColumn).attrs({
+            className: 'maxWidth'
+        })(p || (p = r`
   padding: 6px 0px;
-`)), _u = f.default.div(q || (q = r`
+`)),
+        _u = f.default.div(q || (q = r`
   text-transform: none;
   font-family: ${ 0 };
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   margin-top: 10px;
 `), h.Fonts.SFPro);
-}), b.register('.....', function (c, d) {
-    Object.defineProperty(c.exports, '__esModule', { value: !0 });
-    var e, f = function () {
+}), b.register('.....', function(c, d) {
+    Object.defineProperty(c.exports, '__esModule', {
+        value: !0
+    });
+    var e, f = function() {
             function g(h, i) {
                 for (var j = 0; j < i.length; j++) {
                     var k = i[j];
                     k.enumerable = k.enumerable || !1, k.configurable = !0, 'value' in k && (k.writable = !0), Object.defineProperty(h, k.key, k);
                 }
             }
-            return function (j, k, l) {
+            return function(j, k, l) {
                 return k && g(j.prototype, k), l && g(j, l), j;
             };
-        }(), g = b('.....'), h = (e = g) && e.__esModule ? e : { default: e }, i = b('.....');
-    var j = { position: 'relative' }, k = function (l) {
+        }(),
+        g = b('.....'),
+        h = (e = g) && e.__esModule ? e : {
+            default: e
+        },
+        i = b('.....');
+    var j = {
+            position: 'relative'
+        },
+        k = function(l) {
             function m(n) {
-                !function (o, p) {
+                ! function(o, p) {
                     if (!(o instanceof p))
                         throw new TypeError('Cannot call a class as a function');
                 }(this, m);
-                var o = function (p, q) {
+                var o = function(p, q) {
                     if (!p)
                         throw new ReferenceError('this hasn\'t been initialised - super() hasn\'t been called');
                     return !q || 'object' != typeof q && 'function' != typeof q ? p : q;
                 }(this, (m.__proto__ || Object.getPrototypeOf(m)).call(this, n));
                 return o.setRef = o.setRef.bind(o), o;
             }
-            return function (o, p) {
+            return function(o, p) {
                 if ('function' != typeof p && null !== p)
                     throw new TypeError('Super expression must either be null or a function, not ' + typeof p);
                 o.prototype = Object.create(p && p.prototype, {
@@ -815,22 +1038,21 @@ b.register('.....', function (c, d) {
                         configurable: !0
                     }
                 }), p && (Object.setPrototypeOf ? Object.setPrototypeOf(o, p) : o.__proto__ = p);
-            }(m, l), f(m, [
-                {
+            }(m, l), f(m, [{
                     key: 'componentWillReceiveProps',
-                    value: function (o) {
+                    value: function(o) {
                         o.active && !this.props.active && (0, i.confetti)(this.container, o.config);
                     }
                 },
                 {
                     key: 'setRef',
-                    value: function (o) {
+                    value: function(o) {
                         this.container = o;
                     }
                 },
                 {
                     key: 'render',
-                    value: function () {
+                    value: function() {
                         return h.default.createElement('div', {
                             className: this.props.className,
                             style: j,
@@ -841,9 +1063,24 @@ b.register('.....', function (c, d) {
             ]), m;
         }(g.Component);
     c.exports.default = k;
-}), b.register('.....', function (c, d) {
-    Object.defineProperty(c.exports, '__esModule', { value: !0 }), c.exports.confetti = function (e) {
-        var f = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, g = Object.assign({}, _l, f), h = g.elementCount, i = g.colors, j = g.width, k = g.height, l = g.angle, m = g.spread, n = g.startVelocity, o = g.decay, p = g.duration, q = g.random, r = _e(e, h, i, j, k), s = r.map(function (t) {
+}), b.register('.....', function(c, d) {
+    Object.defineProperty(c.exports, '__esModule', {
+        value: !0
+    }), c.exports.confetti = function(e) {
+        var f = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+            g = Object.assign({}, _l, f),
+            h = g.elementCount,
+            i = g.colors,
+            j = g.width,
+            k = g.height,
+            l = g.angle,
+            m = g.spread,
+            n = g.startVelocity,
+            o = g.decay,
+            p = g.duration,
+            q = g.random,
+            r = _e(e, h, i, j, k),
+            s = r.map(function(t) {
                 return {
                     element: t,
                     physics: _f(l, m, n, q)
@@ -851,14 +1088,20 @@ b.register('.....', function (c, d) {
             });
         return _k(e, s, o, p);
     };
+
     function _e(f, g, h, i, j) {
-        return Array.from({ length: g }).map(function (k, l) {
-            var m = document.createElement('div'), n = h[l % h.length];
+        return Array.from({
+            length: g
+        }).map(function(k, l) {
+            var m = document.createElement('div'),
+                n = h[l % h.length];
             return m.style['background-color'] = n, m.style.width = i, m.style.height = j, m.style.position = 'absolute', m.style.willChange = 'transform, opacity', f.appendChild(m), m;
         });
     }
+
     function _f(g, h, i, j) {
-        var _k = g * (Math.PI / 180), _l = h * (Math.PI / 180);
+        var _k = g * (Math.PI / 180),
+            _l = h * (Math.PI / 180);
         return {
             x: 0,
             y: 0,
@@ -871,19 +1114,25 @@ b.register('.....', function (c, d) {
             tiltAngleSpeed: 0.1 + 0.3 * j()
         };
     }
+
     function i(j, k, l, m) {
         var n = void 0;
-        return new Promise(function (o) {
+        return new Promise(function(o) {
             requestAnimationFrame(function i(p) {
                 i || (i = p);
                 var q = i === p ? 0 : (p - i) / m;
-                k.forEach(function (r) {
-                    return function (s, t, u) {
+                k.forEach(function(r) {
+                    return function(s, t, u) {
                         s.physics.x += Math.cos(s.physics.angle2D) * s.physics.velocity, s.physics.y += Math.sin(s.physics.angle2D) * s.physics.velocity, s.physics.z += Math.sin(s.physics.angle3D) * s.physics.velocity, s.physics.wobble += s.physics.wobbleSpeed, s.physics.velocity *= u, s.physics.y += 3, s.physics.tiltAngle += s.physics.tiltAngleSpeed;
-                        var v = s.physics, w = v.x, x = v.y, y = v.tiltAngle, z = v.wobble, A = 'translate3d(' + (w + 10 * Math.cos(z)) + 'px, ' + (x + 10 * Math.sin(z)) + 'px, 0) rotate3d(1, 1, 1, ' + y + 'rad)';
+                        var v = s.physics,
+                            w = v.x,
+                            x = v.y,
+                            y = v.tiltAngle,
+                            z = v.wobble,
+                            A = 'translate3d(' + (w + 10 * Math.cos(z)) + 'px, ' + (x + 10 * Math.sin(z)) + 'px, 0) rotate3d(1, 1, 1, ' + y + 'rad)';
                         s.element.style.transform = A, s.element.style.opacity = 1 - t;
                     }(r, q, l);
-                }), p - i < m ? requestAnimationFrame(i) : (k.forEach(function (r) {
+                }), p - i < m ? requestAnimationFrame(i) : (k.forEach(function(r) {
                     if (r.element.parentNode === j)
                         return j.removeChild(r.element);
                 }), o());

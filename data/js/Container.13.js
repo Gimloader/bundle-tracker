@@ -1,6 +1,7 @@
 function a(b) {
     return b && b.__esModule ? b.default : b;
 }
+
 function b(c, d, e, f) {
     Object.defineProperty(c, d, {
         get: e,
@@ -10,13 +11,22 @@ function b(c, d, e, f) {
     });
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _q;
-    }, function (f) {
+    }, function(f) {
         return _q = f;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = function (p, q) {
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = function(p, q) {
             var r = {};
             for (var s in p)
                 Object.prototype.hasOwnProperty.call(p, s) && q.indexOf(s) < 0 && (r[s] = p[s]);
@@ -29,28 +39,32 @@ c.register('.....', function (d, e) {
         };
     const p = i.forwardRef((q, r) => {
         var {
-                prefixCls: s,
-                size: t,
-                disabled: u,
-                loading: v,
-                className: w,
-                rootClassName: x
-            } = q, y = o(q, [
-                'prefixCls',
-                'size',
-                'disabled',
-                'loading',
-                'className',
-                'rootClassName'
-            ]);
+            prefixCls: s,
+            size: t,
+            disabled: u,
+            loading: v,
+            className: w,
+            rootClassName: x
+        } = q, y = o(q, [
+            'prefixCls',
+            'size',
+            'disabled',
+            'loading',
+            'className',
+            'rootClassName'
+        ]);
         const {
-                getPrefixCls: z,
-                direction: A
-            } = i.useContext(j.ConfigContext), B = i.useContext(l.default), C = i.useContext(k.default), D = (null != u ? u : C) || v, E = z('switch', s), F = i.createElement('div', { className: `${ E }-handle` }, v && i.createElement(f.default, { className: `${ E }-loading-icon` })), [G, H] = (0, n.default)(E), I = a(g)({
-                [`${ E }-small`]: 'small' === (t || B),
-                [`${ E }-loading`]: v,
-                [`${ E }-rtl`]: 'rtl' === A
-            }, w, x, H);
+            getPrefixCls: z,
+            direction: A
+        } = i.useContext(j.ConfigContext), B = i.useContext(l.default), C = i.useContext(k.default), D = (null != u ? u : C) || v, E = z('switch', s), F = i.createElement('div', {
+            className: `${ E }-handle`
+        }, v && i.createElement(f.default, {
+            className: `${ E }-loading-icon`
+        })), [G, H] = (0, n.default)(E), I = a(g)({
+            [`${ E }-small`]: 'small' === (t || B),
+            [`${ E }-loading`]: v,
+            [`${ E }-rtl`]: 'rtl' === A
+        }, w, x, H);
         return G(i.createElement(m.default, null, i.createElement(h.default, Object.assign({}, y, {
             prefixCls: E,
             className: I,
@@ -61,11 +75,19 @@ c.register('.....', function (d, e) {
     });
     p.__ANT_SWITCH = !0;
     var _q = p;
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _p;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = [
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = [
             'prefixCls',
             'className',
             'checked',
@@ -77,11 +99,29 @@ c.register('.....', function (d, e) {
             'onClick',
             'onChange',
             'onKeyDown'
-        ], o = j.forwardRef(function (p, q) {
-            var r, s = p.prefixCls, t = void 0 === s ? 'rc-switch' : s, u = p.className, v = p.checked, w = p.defaultChecked, x = p.disabled, y = p.loadingIcon, z = p.checkedChildren, A = p.unCheckedChildren, B = p.onClick, C = p.onChange, D = p.onKeyDown, E = a(i)(p, n), F = (0, l.default)(!1, {
+        ],
+        o = j.forwardRef(function(p, q) {
+            var r, s = p.prefixCls,
+                t = void 0 === s ? 'rc-switch' : s,
+                u = p.className,
+                v = p.checked,
+                w = p.defaultChecked,
+                x = p.disabled,
+                y = p.loadingIcon,
+                z = p.checkedChildren,
+                A = p.unCheckedChildren,
+                B = p.onClick,
+                C = p.onChange,
+                D = p.onKeyDown,
+                E = a(i)(p, n),
+                F = (0, l.default)(!1, {
                     value: v,
                     defaultValue: w
-                }), G = a(h)(F, 2), H = G[0], I = G[1];
+                }),
+                G = a(h)(F, 2),
+                H = G[0],
+                I = G[1];
+
             function J(K, L) {
                 var M = H;
                 return x || (I(M = K), null == C || C(M, L)), M;
@@ -94,20 +134,26 @@ c.register('.....', function (d, e) {
                 disabled: x,
                 className: L,
                 ref: M,
-                onKeyDown: function (M) {
+                onKeyDown: function(M) {
                     M.which === m.default.LEFT ? J(!1, M) : M.which === m.default.RIGHT && J(!0, M), null == D || D(M);
                 },
-                onClick: function (M) {
+                onClick: function(M) {
                     var N = J(!H, M);
                     null == B || B(N, M);
                 }
-            }), y, j.createElement('span', { className: ''.concat(t, '-inner') }, j.createElement('span', { className: ''.concat(t, '-inner-checked') }, z), j.createElement('span', { className: ''.concat(t, '-inner-unchecked') }, A)));
+            }), y, j.createElement('span', {
+                className: ''.concat(t, '-inner')
+            }, j.createElement('span', {
+                className: ''.concat(t, '-inner-checked')
+            }, z), j.createElement('span', {
+                className: ''.concat(t, '-inner-unchecked')
+            }, A)));
         });
     o.displayName = 'Switch';
     var _p = o;
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     function f() {
-        return d.exports = f = Object.assign || function (g) {
+        return d.exports = f = Object.assign || function(g) {
             for (var h = 1; h < arguments.length; h++) {
                 var i = arguments[h];
                 for (var j in i)
@@ -117,8 +163,8 @@ c.register('.....', function (d, e) {
         }, d.exports.default = d.exports, d.exports.__esModule = !0, f.apply(this, arguments);
     }
     d.exports = f, d.exports.default = d.exports, d.exports.__esModule = !0;
-}), c.register('.....', function (d, e) {
-    d.exports = function (f, g, h) {
+}), c.register('.....', function(d, e) {
+    d.exports = function(f, g, h) {
         return g in f ? Object.defineProperty(f, g, {
             value: h,
             enumerable: !0,
@@ -126,21 +172,26 @@ c.register('.....', function (d, e) {
             writable: !0
         }) : f[g] = h, f;
     }, d.exports.default = d.exports, d.exports.__esModule = !0;
-}), c.register('.....', function (d, e) {
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
-    d.exports = function (j, k) {
+}), c.register('.....', function(d, e) {
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
+    d.exports = function(j, k) {
         return f(j) || g(j, k) || h(j, k) || i();
     }, d.exports.default = d.exports, d.exports.__esModule = !0;
-}), c.register('.....', function (d, e) {
-    d.exports = function (f) {
+}), c.register('.....', function(d, e) {
+    d.exports = function(f) {
         if (Array.isArray(f))
             return f;
     }, d.exports.default = d.exports, d.exports.__esModule = !0;
-}), c.register('.....', function (d, e) {
-    d.exports = function (f, g) {
+}), c.register('.....', function(d, e) {
+    d.exports = function(f, g) {
         var h = null == f ? null : 'undefined' != typeof Symbol && f[Symbol.iterator] || f['@@iterator'];
         if (null != h) {
-            var i, j, k = [], l = !0, m = !1;
+            var i, j, k = [],
+                l = !0,
+                m = !1;
             try {
                 for (h = h.call(f); !(l = (i = h.next()).done) && (k.push(i.value), !g || k.length !== g); l = !0);
             } catch (f) {
@@ -156,9 +207,9 @@ c.register('.....', function (d, e) {
             return k;
         }
     }, d.exports.default = d.exports, d.exports.__esModule = !0;
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     var f = c('.....');
-    d.exports = function (g, h) {
+    d.exports = function(g, h) {
         if (g) {
             if ('string' == typeof g)
                 return f(g, h);
@@ -166,20 +217,20 @@ c.register('.....', function (d, e) {
             return 'Object' === i && g.constructor && (i = g.constructor.name), 'Map' === i || 'Set' === i ? Array.from(g) : 'Arguments' === i || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(i) ? f(g, h) : void 0;
         }
     }, d.exports.default = d.exports, d.exports.__esModule = !0;
-}), c.register('.....', function (d, e) {
-    d.exports = function (f, g) {
+}), c.register('.....', function(d, e) {
+    d.exports = function(f, g) {
         (null == g || g > f.length) && (g = f.length);
         for (var h = 0, i = new Array(g); h < g; h++)
             i[h] = f[h];
         return i;
     }, d.exports.default = d.exports, d.exports.__esModule = !0;
-}), c.register('.....', function (d, e) {
-    d.exports = function () {
+}), c.register('.....', function(d, e) {
+    d.exports = function() {
         throw new TypeError('Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.');
     }, d.exports.default = d.exports, d.exports.__esModule = !0;
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     var f = c('.....');
-    d.exports = function (g, h) {
+    d.exports = function(g, h) {
         if (null == g)
             return {};
         var i, j, k = f(g, h);
@@ -190,56 +241,74 @@ c.register('.....', function (d, e) {
         }
         return k;
     }, d.exports.default = d.exports, d.exports.__esModule = !0;
-}), c.register('.....', function (d, e) {
-    d.exports = function (f, g) {
+}), c.register('.....', function(d, e) {
+    d.exports = function(f, g) {
         if (null == f)
             return {};
-        var h, i, j = {}, k = Object.keys(f);
+        var h, i, j = {},
+            k = Object.keys(f);
         for (i = 0; i < k.length; i++)
             h = k[i], g.indexOf(h) >= 0 || (j[h] = f[h]);
         return j;
     }, d.exports.default = d.exports, d.exports.__esModule = !0;
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
+
     function _h(i, j) {
-        var k = j || {}, l = k.defaultValue, m = k.value, n = k.onChange, o = k.postState, p = g.useState(function () {
+        var k = j || {},
+            l = k.defaultValue,
+            m = k.value,
+            n = k.onChange,
+            o = k.postState,
+            p = g.useState(function() {
                 return void 0 !== _h ? _h : void 0 !== l ? 'function' == typeof l ? l() : l : 'function' == typeof i ? i() : i;
-            }), q = (0, f.default)(p, 2), r = q[0], s = q[1], t = void 0 !== _h ? _h : r;
+            }),
+            q = (0, f.default)(p, 2),
+            r = q[0],
+            s = q[1],
+            t = void 0 !== _h ? _h : r;
         o && (t = o(t));
         var u = g.useRef(!0);
-        return g.useEffect(function () {
+        return g.useEffect(function() {
             u.current ? u.current = !1 : void 0 === _h && s(_h);
         }, [_h]), [
             t,
-            function (v) {
+            function(v) {
                 s(v), t !== v && n && n(v, t);
             }
         ];
     }
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
+
     function _j(k, l) {
         return (0, f.default)(k) || (0, g.default)(k, l) || (0, h.default)(k, l) || (0, i.default)();
     }
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     function f(g) {
         if (Array.isArray(g))
             return g;
     }
-    b(d.exports, 'default', function () {
+    b(d.exports, 'default', function() {
         return f;
     });
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     function f(g, h) {
         var i = null == g ? null : 'undefined' != typeof Symbol && g[Symbol.iterator] || g['@@iterator'];
         if (null != i) {
-            var j, k, l = [], m = !0, n = !1;
+            var j, k, l = [],
+                m = !0,
+                n = !1;
             try {
                 for (i = i.call(g); !(m = (f = i.next()).done) && (l.push(f.value), !h || l.length !== h); m = !0);
             } catch (g) {
@@ -255,14 +324,15 @@ c.register('.....', function (d, e) {
             return l;
         }
     }
-    b(d.exports, 'default', function () {
+    b(d.exports, 'default', function() {
         return f;
     });
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _g;
     });
     var f = c('.....');
+
     function _g(h, i) {
         if (h) {
             if ('string' == typeof h)
@@ -271,25 +341,25 @@ c.register('.....', function (d, e) {
             return 'Object' === j && h.constructor && (j = h.constructor.name), 'Map' === j || 'Set' === j ? Array.from(h) : 'Arguments' === j || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(j) ? (0, f.default)(h, i) : void 0;
         }
     }
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     function f(g, h) {
         (null == h || h > g.length) && (h = g.length);
         for (var i = 0, j = new Array(h); i < h; i++)
             f[i] = g[i];
         return f;
     }
-    b(d.exports, 'default', function () {
+    b(d.exports, 'default', function() {
         return f;
     });
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     function f() {
         throw new TypeError('Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.');
     }
-    b(d.exports, 'default', function () {
+    b(d.exports, 'default', function() {
         return f;
     });
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _g;
     });
     var f = {
@@ -398,40 +468,40 @@ c.register('.....', function (d, e) {
             WIN_KEY: 224,
             MAC_FF_META: 224,
             WIN_IME: 229,
-            isTextModifyingKeyEvent: function (g) {
+            isTextModifyingKeyEvent: function(g) {
                 var h = g.keyCode;
                 if (g.altKey && !g.ctrlKey || g.metaKey || h >= f.F1 && h <= f.F12)
                     return !1;
                 switch (h) {
-                case f.ALT:
-                case f.CAPS_LOCK:
-                case f.CONTEXT_MENU:
-                case f.CTRL:
-                case f.DOWN:
-                case f.END:
-                case f.ESC:
-                case f.HOME:
-                case f.INSERT:
-                case f.LEFT:
-                case f.MAC_FF_META:
-                case f.META:
-                case f.NUMLOCK:
-                case f.NUM_CENTER:
-                case f.PAGE_DOWN:
-                case f.PAGE_UP:
-                case f.PAUSE:
-                case f.PRINT_SCREEN:
-                case f.RIGHT:
-                case f.SHIFT:
-                case f.UP:
-                case f.WIN_KEY:
-                case f.WIN_KEY_RIGHT:
-                    return !1;
-                default:
-                    return !0;
+                    case f.ALT:
+                    case f.CAPS_LOCK:
+                    case f.CONTEXT_MENU:
+                    case f.CTRL:
+                    case f.DOWN:
+                    case f.END:
+                    case f.ESC:
+                    case f.HOME:
+                    case f.INSERT:
+                    case f.LEFT:
+                    case f.MAC_FF_META:
+                    case f.META:
+                    case f.NUMLOCK:
+                    case f.NUM_CENTER:
+                    case f.PAGE_DOWN:
+                    case f.PAGE_UP:
+                    case f.PAUSE:
+                    case f.PRINT_SCREEN:
+                    case f.RIGHT:
+                    case f.SHIFT:
+                    case f.UP:
+                    case f.WIN_KEY:
+                    case f.WIN_KEY_RIGHT:
+                        return !1;
+                    default:
+                        return !0;
                 }
             },
-            isCharacterKey: function (g) {
+            isCharacterKey: function(g) {
                 if (g >= f.ZERO && g <= f.NINE)
                     return !0;
                 if (g >= f.NUM_ZERO && g <= f.NUM_MULTIPLY)
@@ -441,36 +511,42 @@ c.register('.....', function (d, e) {
                 if (-1 !== window.navigator.userAgent.indexOf('WebKit') && 0 === g)
                     return !0;
                 switch (g) {
-                case f.SPACE:
-                case f.QUESTION_MARK:
-                case f.NUM_PLUS:
-                case f.NUM_MINUS:
-                case f.NUM_PERIOD:
-                case f.NUM_DIVISION:
-                case f.SEMICOLON:
-                case f.DASH:
-                case f.EQUALS:
-                case f.COMMA:
-                case f.PERIOD:
-                case f.SLASH:
-                case f.APOSTROPHE:
-                case f.SINGLE_QUOTE:
-                case f.OPEN_SQUARE_BRACKET:
-                case f.BACKSLASH:
-                case f.CLOSE_SQUARE_BRACKET:
-                    return !0;
-                default:
-                    return !1;
+                    case f.SPACE:
+                    case f.QUESTION_MARK:
+                    case f.NUM_PLUS:
+                    case f.NUM_MINUS:
+                    case f.NUM_PERIOD:
+                    case f.NUM_DIVISION:
+                    case f.SEMICOLON:
+                    case f.DASH:
+                    case f.EQUALS:
+                    case f.COMMA:
+                    case f.PERIOD:
+                    case f.SLASH:
+                    case f.APOSTROPHE:
+                    case f.SINGLE_QUOTE:
+                    case f.OPEN_SQUARE_BRACKET:
+                    case f.BACKSLASH:
+                    case f.CLOSE_SQUARE_BRACKET:
+                        return !0;
+                    default:
+                        return !1;
                 }
             }
-        }, _g = f;
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+        },
+        _g = f;
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _o;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     const j = k => {
-            const {componentCls: l} = k, m = `${ l }-inner`;
+            const {
+                componentCls: l
+            } = k, m = `${ l }-inner`;
             return {
                 [l]: {
                     [`&${ l }-small`]: {
@@ -511,7 +587,9 @@ c.register('.....', function (d, e) {
                                     marginInlineEnd: `calc(-100% + ${ k.switchPinSizeSM + 2 * k.switchPadding }px - ${ 2 * k.switchInnerMarginMaxSM }px)`
                                 }
                             },
-                            [`${ l }-handle`]: { insetInlineStart: `calc(100% - ${ k.switchPinSizeSM + k.switchPadding }px)` }
+                            [`${ l }-handle`]: {
+                                insetInlineStart: `calc(100% - ${ k.switchPinSizeSM + k.switchPadding }px)`
+                            }
                         },
                         [`&:not(${ l }-disabled):active`]: {
                             [`&:not(${ l }-checked) ${ m }`]: {
@@ -530,8 +608,11 @@ c.register('.....', function (d, e) {
                     }
                 }
             };
-        }, k = l => {
-            const {componentCls: m} = l;
+        },
+        k = l => {
+            const {
+                componentCls: m
+            } = l;
             return {
                 [m]: {
                     [`${ m }-loading-icon${ l.iconCls }`]: {
@@ -540,11 +621,16 @@ c.register('.....', function (d, e) {
                         color: l.switchLoadingIconColor,
                         verticalAlign: 'top'
                     },
-                    [`&${ m }-checked ${ m }-loading-icon`]: { color: l.switchColor }
+                    [`&${ m }-checked ${ m }-loading-icon`]: {
+                        color: l.switchColor
+                    }
                 }
             };
-        }, l = m => {
-            const {componentCls: n} = m, o = `${ n }-handle`;
+        },
+        l = m => {
+            const {
+                componentCls: n
+            } = m, o = `${ n }-handle`;
             return {
                 [n]: {
                     [o]: {
@@ -567,7 +653,9 @@ c.register('.....', function (d, e) {
                             content: '""'
                         }
                     },
-                    [`&${ n }-checked ${ o }`]: { insetInlineStart: `calc(100% - ${ m.switchPinSize + m.switchPadding }px)` },
+                    [`&${ n }-checked ${ o }`]: {
+                        insetInlineStart: `calc(100% - ${ m.switchPinSize + m.switchPadding }px)`
+                    },
                     [`&:not(${ n }-disabled):active`]: {
                         [`${ o }::before`]: {
                             insetInlineEnd: m.switchHandleActiveInset,
@@ -580,8 +668,11 @@ c.register('.....', function (d, e) {
                     }
                 }
             };
-        }, m = n => {
-            const {componentCls: o} = n, p = `${ o }-inner`;
+        },
+        m = n => {
+            const {
+                componentCls: o
+            } = n, p = `${ o }-inner`;
             return {
                 [o]: {
                     [p]: {
@@ -637,8 +728,11 @@ c.register('.....', function (d, e) {
                     }
                 }
             };
-        }, n = o => {
-            const {componentCls: p} = o;
+        },
+        n = o => {
+            const {
+                componentCls: p
+            } = o;
             return {
                 [p]: Object.assign(Object.assign(Object.assign(Object.assign({}, (0, i.resetComponent)(o)), {
                     position: 'relative',
@@ -654,11 +748,15 @@ c.register('.....', function (d, e) {
                     cursor: 'pointer',
                     transition: `all ${ o.motionDurationMid }`,
                     userSelect: 'none',
-                    [`&:hover:not(${ p }-disabled)`]: { background: o.colorTextTertiary }
+                    [`&:hover:not(${ p }-disabled)`]: {
+                        background: o.colorTextTertiary
+                    }
                 }), (0, i.genFocusStyle)(o)), {
                     [`&${ p }-checked`]: {
                         background: o.switchColor,
-                        [`&:hover:not(${ p }-disabled)`]: { background: o.colorPrimaryHover }
+                        [`&:hover:not(${ p }-disabled)`]: {
+                            background: o.colorPrimaryHover
+                        }
                     },
                     [`&${ p }-loading, &${ p }-disabled`]: {
                         cursor: 'not-allowed',
@@ -668,12 +766,18 @@ c.register('.....', function (d, e) {
                             cursor: 'not-allowed'
                         }
                     },
-                    [`&${ p }-rtl`]: { direction: 'rtl' }
+                    [`&${ p }-rtl`]: {
+                        direction: 'rtl'
+                    }
                 })
             };
         };
     var _o = (0, g.default)('Switch', p => {
-        const q = p.fontSize * p.lineHeight, r = p.controlHeight / 2, s = q - 4, t = r - 4, u = (0, h.merge)(p, {
+        const q = p.fontSize * p.lineHeight,
+            r = p.controlHeight / 2,
+            s = q - 4,
+            t = r - 4,
+            u = (0, h.merge)(p, {
                 switchMinWidth: 2 * s + 8,
                 switchHeight: q,
                 switchDuration: p.motionDurationMid,

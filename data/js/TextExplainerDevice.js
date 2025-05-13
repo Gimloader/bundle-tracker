@@ -6,23 +6,37 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _u;
     });
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....'),
+        s = c('.....');
     class t extends i.default {
         constructor(u) {
             if (super(u), (0, g.default)(this, 'getPopupListItems', () => {
-                    const v = [], w = (0, q.default)().worldManager.devices.allDevices.filter(x => x.deviceOption.id === r.default.popupListItem).filter(x => x.options.group === this.options.group).filter(x => {
+                    const v = [],
+                        w = (0, q.default)().worldManager.devices.allDevices.filter(x => x.deviceOption.id === r.default.popupListItem).filter(x => x.options.group === this.options.group).filter(x => {
                             var y, z, A, B;
                             return !(!(null === (y = x.options) || void 0 === y || null === (z = y.title) || void 0 === z ? void 0 : z.length) && !(null === (A = x.options) || void 0 === A || null === (B = A.description) || void 0 === B ? void 0 : B.length));
                         }).filter(x => !0 === x.state.active).sort((x, y) => x.y - y.y);
@@ -35,7 +49,9 @@ c.register('.....', function (d, e) {
                         });
                     }), v;
                 }), (0, g.default)(this, 'onPopupListItemStateChange', () => {
-                    this.deviceUI.update({ listItems: this.getPopupListItems() });
+                    this.deviceUI.update({
+                        listItems: this.getPopupListItems()
+                    });
                 }), (0, g.default)(this, 'openDeviceUI', () => {
                     const v = this.options.callToActionStyle === j.TextExplainerCallToActionStyle.list;
                     this.deviceUI.open({
@@ -55,16 +71,26 @@ c.register('.....', function (d, e) {
                         onSelectListItem: this.onSelectListItem
                     });
                 }), (0, g.default)(this, 'onStateChange', v => {
-                    'header' === v && this.deviceUI.update({ header: this.state.header }), 'content' === v && this.deviceUI.update({ content: this.state.content }), 'textColor' === v && this.deviceUI.update({ textColor: this.state.textColor });
+                    'header' === v && this.deviceUI.update({
+                        header: this.state.header
+                    }), 'content' === v && this.deviceUI.update({
+                        content: this.state.content
+                    }), 'textColor' === v && this.deviceUI.update({
+                        textColor: this.state.textColor
+                    });
                 }), (0, g.default)(this, 'openPrimaryCallToAction', () => {
                     this.sendToServerDevice(k.Messages.primaryCallToAction);
                 }), (0, g.default)(this, 'openSecondaryCallToAction', () => {
                     this.sendToServerDevice(k.Messages.secondaryCallToAction);
                 }), (0, g.default)(this, 'onSelectListItem', v => {
-                    this.options.closableByUser && this.deviceUI.close(), this.sendToServerDevice(k.Messages.selectListItem, { id: v });
-                }), (0, l.default)({ familyName: this.options.fontFamily }), (0, h.InPreGamePhase)() && (0, m.isSavedVersion)()) {
+                    this.options.closableByUser && this.deviceUI.close(), this.sendToServerDevice(k.Messages.selectListItem, {
+                        id: v
+                    });
+                }), (0, l.default)({
+                    familyName: this.options.fontFamily
+                }), (0, h.InPreGamePhase)() && (0, m.isSavedVersion)()) {
                 const v = p.default.Overlay;
-                new (0, n.default)({
+                new(0, n.default)({
                     device: this,
                     baseColor: v.baseColor,
                     boxColor: v.boxColor,
@@ -79,27 +105,30 @@ c.register('.....', function (d, e) {
         }
     }
     var _u = t;
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     let f;
     var g;
-    a(d.exports, 'Messages', function () {
+    a(d.exports, 'Messages', function() {
         return f;
     }), (g = f || (f = {})).primaryCallToAction = 'primaryCallToAction', g.secondaryCallToAction = 'secondaryCallToAction', g.selectListItem = 'selectListItem';
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'isGoogleFontLoaded', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function() {
         return _h;
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _i;
     });
     var f = c('.....');
-    const g = [], _h = i => g.includes(i);
+    const g = [],
+        _h = i => g.includes(i);
     var _i = j => {
         const {
             familyName: k,
             onLoad: l
         } = j;
         g.includes(k) ? l && l() : b(f).load({
-            google: { families: [`${ k }:400,700`] },
+            google: {
+                families: [`${ k }:400,700`]
+            },
             fontactive: m => {
                 g.includes(m) || g.push(m), k === m && l && l();
             }

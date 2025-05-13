@@ -7,41 +7,65 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _t;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....'),
+        r = b('.....');
     let s;
     var _t = () => {
-        const {id: u} = (0, h.useParams)(), [v, w] = g.useState(''), [x, y, z] = (0, i.useBoolean)(!1), [A, B] = g.useState('');
+        const {
+            id: u
+        } = (0, h.useParams)(), [v, w] = g.useState(''), [x, y, z] = (0, i.useBoolean)(!1), [A, B] = g.useState('');
         g.useEffect(() => {
             y(), B(''), (0, i.request)({
                 url: '/api/matchmaker/intent/map/play/publish-link/create',
-                data: { id: u },
+                data: {
+                    id: u
+                },
                 success: C => {
                     w(C);
                 },
                 error: C => {
                     var D;
-                    (null == C || null === (D = C.message) || void 0 === D ? void 0 : D.text) ? B(C.message.text) : B('There was an error. Please try again.');
+                    (null == C || null === (D = C.message) || void 0 === D ? void 0 : D.text) ? B(C.message.text): B('There was an error. Please try again.');
                 },
                 both: z
             });
         }, [u]);
         return (0, f.jsxs)(f.Fragment, {
             children: [
-                (0, f.jsx)(i.Title, { title: 'Gimkit Creative Map' }),
+                (0, f.jsx)(i.Title, {
+                    title: 'Gimkit Creative Map'
+                }),
                 (() => {
                     if (v)
-                        return (0, f.jsx)(r.default, { createDetails: { intentId: v } });
+                        return (0, f.jsx)(r.default, {
+                            createDetails: {
+                                intentId: v
+                            }
+                        });
                     return (0, f.jsx)(_u, {
                         children: x ? (0, f.jsx)(m.default, {
-                            style: { color: l.default.White },
+                            style: {
+                                color: l.default.White
+                            },
                             size: 42
                         }) : A ? (0, f.jsx)(o.default, {
                             open: !0,
@@ -49,7 +73,9 @@ b.register('.....', function (c, d) {
                             footer: null,
                             width: 700,
                             centered: !0,
-                            bodyStyle: { padding: 40 },
+                            bodyStyle: {
+                                padding: 40
+                            },
                             children: (0, f.jsxs)('div', {
                                 className: 'maxAll flex-column flex-center',
                                 style: {
@@ -87,11 +113,15 @@ b.register('.....', function (c, d) {
   padding: 20px;
   background: ${ 0 };
 `), l.default.BackgroundPurple);
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _j;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = function (j, k) {
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = function(j, k) {
             return f.createElement(h.default, (0, e.default)((0, e.default)({}, j), {}, {
                 ref: k,
                 icon: g.default
@@ -99,8 +129,8 @@ b.register('.....', function (c, d) {
         };
     i.displayName = 'WarningOutlined';
     var _j = f.forwardRef(i);
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _e;
     });
     var _e = {
@@ -111,14 +141,16 @@ b.register('.....', function (c, d) {
                 focusable: 'false'
             },
             children: [{
-                    tag: 'path',
-                    attrs: { d: 'M464 720a48 48 0 1096 0 48 48 0 10-96 0zm16-304v184c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V416c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8zm475.7 440l-416-720c-6.2-10.7-16.9-16-27.7-16s-21.6 5.3-27.7 16l-416 720C56 877.4 71.4 904 96 904h832c24.6 0 40-26.6 27.7-48zm-783.5-27.9L512 239.9l339.8 588.2H172.2z' }
-                }]
+                tag: 'path',
+                attrs: {
+                    d: 'M464 720a48 48 0 1096 0 48 48 0 10-96 0zm16-304v184c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V416c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8zm475.7 440l-416-720c-6.2-10.7-16.9-16-27.7-16s-21.6 5.3-27.7 16l-416 720C56 877.4 71.4 904 96 904h832c24.6 0 40-26.6 27.7-48zm-783.5-27.9L512 239.9l339.8 588.2H172.2z'
+                }
+            }]
         },
         name: 'warning',
         theme: 'outlined'
     };
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
     let g;
@@ -128,27 +160,27 @@ b.register('.....', function (c, d) {
     let k;
     let l;
     var m;
-    a(c.exports, 'QuestionType', function () {
+    a(c.exports, 'QuestionType', function() {
         return e;
-    }), a(c.exports, 'Privacy', function () {
+    }), a(c.exports, 'Privacy', function() {
         return g;
-    }), a(c.exports, 'GameStatus', function () {
+    }), a(c.exports, 'GameStatus', function() {
         return i;
-    }), a(c.exports, 'GameType', function () {
+    }), a(c.exports, 'GameType', function() {
         return k;
-    }), a(c.exports, 'GameGoal', function () {
+    }), a(c.exports, 'GameGoal', function() {
         return l;
-    }), a(c.exports, 'themes', function () {
+    }), a(c.exports, 'themes', function() {
         return _r;
-    }), a(c.exports, 'ExperienceSource', function () {
+    }), a(c.exports, 'ExperienceSource', function() {
         return _s;
     }), (f = e || (e = {})).multipleChoice = 'mc', f.textInput = 'text', (h = g || (g = {})).public = 'public', h.private = 'private', (j = i || (i = {})).setup = 'setup', j.join = 'join', j.teams = 'teams', j.gameplay = 'gameplay', j.results = 'results', (k || (k = {})).live = 'live', (m = l || (l = {})).time = 'time', m.race = 'race', m.allIn = 'allIn';
-    const n = '#ffffff', o = '#000000';
+    const n = '#ffffff',
+        o = '#000000';
     let p;
     var q;
     (q = p || (p = {})).easy = 'easy', q.medium = 'medium', q.hard = 'hard', q.veryHard = 'veryHard', q.veryVeryHard = 'veryVeryHard';
-    const _r = [
-        {
+    const _r = [{
             cost: 0,
             name: 'Default',
             description: 'Works fine, that\'s all',
@@ -156,8 +188,7 @@ b.register('.....', function (c, d) {
                 background: '#303f9f',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#771322',
                     text: n
                 },
@@ -185,8 +216,7 @@ b.register('.....', function (c, d) {
                 background: '#6C2F00',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#9E682A',
                     text: n
                 },
@@ -214,8 +244,7 @@ b.register('.....', function (c, d) {
                 background: '#000a12',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#263238',
                     text: n
                 },
@@ -243,8 +272,7 @@ b.register('.....', function (c, d) {
                 background: '#0D0019',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#220044',
                     text: n
                 },
@@ -272,8 +300,7 @@ b.register('.....', function (c, d) {
                 background: '#000063',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#283593',
                     text: n
                 },
@@ -301,8 +328,7 @@ b.register('.....', function (c, d) {
                 background: '#4c3d33',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#385645',
                     text: n
                 },
@@ -330,8 +356,7 @@ b.register('.....', function (c, d) {
                 background: '#7F7496',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#F46F5A',
                     text: n
                 },
@@ -359,8 +384,7 @@ b.register('.....', function (c, d) {
                 background: '#FFbfd1',
                 text: '#434343'
             },
-            palette: [
-                {
+            palette: [{
                     background: '#FFA69E',
                     text: '#5b5b5b'
                 },
@@ -388,8 +412,7 @@ b.register('.....', function (c, d) {
                 background: '#9C0022',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#001D3B',
                     text: n
                 },
@@ -417,8 +440,7 @@ b.register('.....', function (c, d) {
                 background: o,
                 text: '#FFCD2B'
             },
-            palette: [
-                {
+            palette: [{
                     background: '#FFCD2B',
                     text: o
                 },

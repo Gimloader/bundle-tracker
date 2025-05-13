@@ -6,21 +6,32 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _p;
     });
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....');
     var _p = () => {
-        const [q, r] = (0, m.useBoolean)(!1), [s, t] = i.useState(null), [u, v] = i.useState(''), {id: w} = (0, j.useParams)();
+        const [q, r] = (0, m.useBoolean)(!1), [s, t] = i.useState(null), [u, v] = i.useState(''), {
+            id: w
+        } = (0, j.useParams)();
         return i.useEffect(() => {
             (0, m.request)({
                 url: `/api/games/fetch/${ w }`,
@@ -29,7 +40,9 @@ c.register('.....', function (d, e) {
                 },
                 error: () => (0, l.NavigateTo)(k.HOMEPAGE)
             });
-        }, []), s ? q ? (0, g.jsx)(o.default, { questions: s.questions }) : (0, g.jsx)(n.default, {
+        }, []), s ? q ? (0, g.jsx)(o.default, {
+            questions: s.questions
+        }) : (0, g.jsx)(n.default, {
             title: s.title,
             image: s.gif,
             creator: u,
@@ -37,25 +50,37 @@ c.register('.....', function (d, e) {
             setToPreview: r
         }) : (0, g.jsx)('div', {
             className: 'maxAll flex-center',
-            style: { background: '#303f9f' },
-            children: (0, g.jsx)(h.default, { size: 'large' })
+            style: {
+                background: '#303f9f'
+            },
+            children: (0, g.jsx)(h.default, {
+                size: 'large'
+            })
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'NavigateTo', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'NavigateTo', function() {
         return _g;
     });
     var f = c('.....');
     const _g = h => {
         f.history.push(h);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _v;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     c('.....');
-    var h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....');
+    var h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....');
     let p, q, r, s, t, u = v => v;
     var _v = w => (0, f.jsx)(_w, {
         children: (0, f.jsxs)(_x, {
@@ -64,13 +89,21 @@ c.register('.....', function (d, e) {
                     size: 92,
                     blockModalOpen: !0,
                     image: w.image,
-                    style: { cursor: 'default' }
+                    style: {
+                        cursor: 'default'
+                    }
                 }),
-                (0, f.jsx)(_y, { children: w.title }),
-                (0, f.jsx)(_z, { children: w.creator }),
+                (0, f.jsx)(_y, {
+                    children: w.title
+                }),
+                (0, f.jsx)(_z, {
+                    children: w.creator
+                }),
                 (0, f.jsx)(g.default, {}),
                 0 === w.numberOfQuestions ? (0, f.jsx)('div', {
-                    style: { fontSize: 18 },
+                    style: {
+                        fontSize: 18
+                    },
                     children: 'This kit cannot be practiced as it does not contain any questions.'
                 }) : (0, f.jsxs)(f.Fragment, {
                     children: [
@@ -92,11 +125,15 @@ c.register('.....', function (d, e) {
                                     ]
                                 }),
                                 (0, f.jsx)('div', {
-                                    style: { margin: '0px 12px' },
+                                    style: {
+                                        margin: '0px 12px'
+                                    },
                                     className: 'flex',
                                     children: (0, f.jsx)('i', {
                                         className: 'fas fa-circle',
-                                        style: { fontSize: 10 }
+                                        style: {
+                                            fontSize: 10
+                                        }
                                     })
                                 }),
                                 (0, f.jsxs)('div', {
@@ -112,11 +149,16 @@ c.register('.....', function (d, e) {
             ]
         })
     });
-    const _w = h.default.div.attrs({ className: 'flex-center scroll-y maxAll' })(p || (p = u`
+    const _w = h.default.div.attrs({
+            className: 'flex-center scroll-y maxAll'
+        })(p || (p = u`
   background: #303f9f;
   color: ${ 0 };
   font-family: ${ 0 };
-`), j.default.Black, k.Fonts.SFPro), _x = (0, h.default)(m.default).attrs({ className: 'flex-center flex-column animated fadeIn' })(q || (q = u`
+`), j.default.Black, k.Fonts.SFPro),
+        _x = (0, h.default)(m.default).attrs({
+            className: 'flex-center flex-column animated fadeIn'
+        })(q || (q = u`
   width: 90%;
   max-width: 700px;
   border-radius: 8px;
@@ -124,41 +166,59 @@ c.register('.....', function (d, e) {
   margin: 40px 0px;
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1),
     0 10px 50px rgba(0, 0, 0, 0.4);
-`)), _y = h.default.div(r || (r = u`
+`)),
+        _y = h.default.div(r || (r = u`
   margin-top: 14px;
   font-size: 48px;
   font-weight: ${ 0 };
   text-align: center;
-`), k.FontWeights.UltraBold), _z = h.default.div(s || (s = u`
+`), k.FontWeights.UltraBold),
+        _z = h.default.div(s || (s = u`
   font-size: 24px;
   margin-top: -4px;
-`)), _A = h.default.div.attrs({ className: 'flex vc' })(t || (t = u`
+`)),
+        _A = h.default.div.attrs({
+            className: 'flex vc'
+        })(t || (t = u`
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 20px;
   line-height: 1;
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _m;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....');
     let l;
     var _m = n => {
-        const o = n.size || 'default', p = h.useMemo(() => n.customColor ? n.customColor : n.disabled ? '#546e7a' : 'success' === n.type ? '#2e7d32' : 'danger' === n.type ? '#c62828' : '#3f51b5', [
+        const o = n.size || 'default',
+            p = h.useMemo(() => n.customColor ? n.customColor : n.disabled ? '#546e7a' : 'success' === n.type ? '#2e7d32' : 'danger' === n.type ? '#c62828' : '#3f51b5', [
                 n.disabled,
                 n.type,
                 n.customColor
-            ]), q = h.useMemo(() => (0, g.darken)(0.1, p), [p]), r = h.useMemo(() => 'small' === o || 'default' === o ? 14 : 20, [o]), s = h.useMemo(() => 'small' === o ? 6 : 'default' === o ? 8 : 12, [o]), t = h.useMemo(() => {
+            ]),
+            q = h.useMemo(() => (0, g.darken)(0.1, p), [p]),
+            r = h.useMemo(() => 'small' === o || 'default' === o ? 14 : 20, [o]),
+            s = h.useMemo(() => 'small' === o ? 6 : 'default' === o ? 8 : 12, [o]),
+            t = h.useMemo(() => {
                 const u = 'small' === o ? '8px' : '12px';
                 return n.customHorizontalPadding ? `${ u } ${ n.customHorizontalPadding }px` : 'small' === o ? `${ u } 24px` : 'default' === o ? `${ u } 28px` : `${ u } 42px`;
             }, [
                 o,
                 n.customHorizontalPadding
-            ]), u = h.useMemo(() => 'small' === o ? 41 : 49, [o]), v = h.useMemo(() => n.customFontWeight ? n.customFontWeight : 'large' === o ? j.FontWeights.Bold : j.FontWeights.Normal, [
+            ]),
+            u = h.useMemo(() => 'small' === o ? 41 : 49, [o]),
+            v = h.useMemo(() => n.customFontWeight ? n.customFontWeight : 'large' === o ? j.FontWeights.Bold : j.FontWeights.Normal, [
                 n.customFontWeight,
                 o
-            ]), w = () => {
+            ]),
+            w = () => {
                 n.disabled || n.onClick && n.onClick();
             };
         return (0, f.jsx)(_n, {
@@ -180,7 +240,9 @@ c.register('.....', function (d, e) {
                 children: [
                     (0, f.jsx)('span', {
                         className: 'btn-shadow',
-                        style: { borderRadius: s }
+                        style: {
+                            borderRadius: s
+                        }
                     }),
                     (0, f.jsx)('span', {
                         className: 'btn-edge',
@@ -204,7 +266,9 @@ c.register('.....', function (d, e) {
             })
         });
     };
-    const _n = i.default.div.attrs({ className: 'flex' })(l || (l = (o => o)`
+    const _n = i.default.div.attrs({
+        className: 'flex'
+    })(l || (l = (o => o)`
   align-items: flex-end;
 
   .btn-pushable {
@@ -263,8 +327,8 @@ c.register('.....', function (d, e) {
     transition: transform 34ms;
   }
 `), k.default.White);
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = {
@@ -273,13 +337,14 @@ c.register('.....', function (d, e) {
         Yellow: '#FFFF00',
         Purple: '#673ab7'
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _j;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....');
+    var g = c('.....'),
+        h = c('.....');
     let i;
     var _j = k => (0, f.jsx)(_k, {
         onClick: k.onClick,
@@ -294,13 +359,20 @@ c.register('.....', function (d, e) {
   background: ${ 0 };
   padding: 20px;
 `), h.default.White);
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _n;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....');
     let l;
-    const m = h.default.img.attrs(n => ({ src: n.image }))(l || (l = (n => n)`
+    const m = h.default.img.attrs(n => ({
+        src: n.image
+    }))(l || (l = (n => n)`
   cursor: pointer;
   height: ${ 0 }px;
   width: ${ 0 }px;
@@ -329,20 +401,23 @@ c.register('.....', function (d, e) {
                     closable: !1,
                     children: (0, f.jsx)('img', {
                         src: (0, k.getCloudinaryUrl)(o.image),
-                        style: { width: '100%' }
+                        style: {
+                            width: '100%'
+                        }
                     })
                 })
             ]
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'getCloudinaryUrl', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'getCloudinaryUrl', function() {
         return _f;
     });
     const _f = g => {
             const h = _g(g);
             return h ? g.includes('/video/upload') ? `https://${ _h }/video/upload/${ h }` : `https://${ _h }/image/upload/f_auto,fl_lossy,q_auto/${ h }` : g;
-        }, _g = h => {
+        },
+        _g = h => {
             if (!_k.some(i => h.includes(i)))
                 return null;
             if (h.includes(_i) && !h.includes(`/${ _j }/`))
@@ -350,32 +425,42 @@ c.register('.....', function (d, e) {
             const i = h.split('/');
             if (!i || !i.length || i.length < 2)
                 return null;
-            const j = i[i.length - 2], k = i[i.length - 1];
+            const j = i[i.length - 2],
+                k = i[i.length - 1];
             return j && k && j.startsWith('v') ? `${ j }/${ k }` : null;
-        }, _h = 'media.gimkit.com', _i = 'res.cloudinary.com', _j = 'gimkit-production', _k = [
+        },
+        _h = 'media.gimkit.com',
+        _i = 'res.cloudinary.com',
+        _j = 'gimkit-production',
+        _k = [
             _h,
             _i
         ];
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const h = g.lazy(() => c('.....'));
     var _i = j => (0, f.jsx)(g.Suspense, {
         fallback: j.fallback || null,
-        children: (0, f.jsx)(h, { latex: j.latex })
+        children: (0, f.jsx)(h, {
+            latex: j.latex
+        })
     });
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     d.exports = Promise.all([
         import('./' + c('.....').resolve('emcKB')),
         import('./' + c('.....').resolve('5OCdz'))
     ]).then(() => c('.....'));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     var _i = (j, k) => {
         const [l, m] = f.useState(() => {
             var n, o;
@@ -402,14 +487,18 @@ c.register('.....', function (d, e) {
             ]);
         }), l;
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _l;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     let j;
-    const k = () => j || (j = function () {
-        const l = new Map(), m = new (0, f.default)((0, i.default)((n, o) => {
+    const k = () => j || (j = function() {
+        const l = new Map(),
+            m = new(0, f.default)((0, i.default)((n, o) => {
                 var p;
                 if (1 === n.length)
                     null === (p = l.get(n[0].target)) || void 0 === p || p(n[0], o);
@@ -429,8 +518,9 @@ c.register('.....', function (d, e) {
             }
         };
     }());
-    var _l = function (m, n) {
-        const o = k(), p = (0, h.default)(n);
+    var _l = function(m, n) {
+        const o = k(),
+            p = (0, h.default)(n);
         return (0, g.default)(() => {
             let q = !1;
             const r = m && 'current' in m ? m.current : m;
@@ -446,13 +536,13 @@ c.register('.....', function (d, e) {
             p
         ]), o.observer;
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = b(c('.....'))['undefined' != typeof document && void 0 !== document.createElement ? 'useLayoutEffect' : 'useEffect'];
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _g;
     });
     var f = c('.....');
@@ -462,19 +552,21 @@ c.register('.....', function (d, e) {
             i.current = h;
         }), i;
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
-    var _f = function (g) {
-        var h = [], i = null, j = function () {
+    var _f = function(g) {
+        var h = [],
+            i = null,
+            j = function() {
                 for (var k = arguments.length, l = new Array(k), m = 0; m < k; m++)
                     l[m] = arguments[m];
-                h = l, i || (i = requestAnimationFrame(function () {
+                h = l, i || (i = requestAnimationFrame(function() {
                     i = null, g.apply(void 0, h);
                 }));
             };
-        return j.cancel = function () {
+        return j.cancel = function() {
             i && (cancelAnimationFrame(i), i = null);
         }, j;
     };

@@ -7,15 +7,24 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _q;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....');
     class p extends g.default {
         constructor(q) {
             super(q), (0, f.default)(this, 'activityAlpha', 1), (0, f.default)(this, 'createView', () => {
@@ -72,7 +81,10 @@ b.register('.....', function (c, d) {
                     y: 70,
                     r: 60
                 });
-                const r = !k.default.session.cosmosBlocked && (0, j.isLoggedIn)(), s = r ? l.ChangingBoothConsts.interactiveInfo.normal : k.default.session.cosmosBlocked ? l.ChangingBoothConsts.interactiveInfo.cosmosBlocked : l.ChangingBoothConsts.interactiveInfo.notLoggedIn, t = r ? void 0 : l.ChangingBoothConsts.interactiveInfo.notAvailableHeader, u = r ? void 0 : l.ChangingBoothConsts.interactiveInfo.notAvailableColor;
+                const r = !k.default.session.cosmosBlocked && (0, j.isLoggedIn)(),
+                    s = r ? l.ChangingBoothConsts.interactiveInfo.normal : k.default.session.cosmosBlocked ? l.ChangingBoothConsts.interactiveInfo.cosmosBlocked : l.ChangingBoothConsts.interactiveInfo.notLoggedIn,
+                    t = r ? void 0 : l.ChangingBoothConsts.interactiveInfo.notAvailableHeader,
+                    u = r ? void 0 : l.ChangingBoothConsts.interactiveInfo.notAvailableColor;
                 this.interactiveZones.setInfo({
                     message: s,
                     allowedToInteract: r,
@@ -101,32 +113,34 @@ b.register('.....', function (c, d) {
         }
     }
     var _q = p;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'BackAsset', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'BackAsset', function() {
         return _f;
-    }), a(c.exports, 'FrontAsset', function () {
+    }), a(c.exports, 'FrontAsset', function() {
         return _g;
-    }), a(c.exports, 'Front2Asset', function () {
+    }), a(c.exports, 'Front2Asset', function() {
         return _h;
     });
     var e = b('.....');
     const _f = {
             imageId: (0, e.default)('devices/changing_booth/back.png'),
             imageUrl: (0, e.default)('devices/changing_booth/back.png')
-        }, _g = {
+        },
+        _g = {
             imageId: (0, e.default)('devices/changing_booth/front.png'),
             imageUrl: (0, e.default)('devices/changing_booth/front.png')
-        }, _h = {
+        },
+        _h = {
             imageId: (0, e.default)('devices/changing_booth/front_2.png'),
             imageUrl: (0, e.default)('devices/changing_booth/front_2.png')
         };
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
-    a(c.exports, 'Messages', function () {
+    a(c.exports, 'Messages', function() {
         return e;
     }), (e || (e = {})).open = 'open';
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ChangingBoothConsts', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ChangingBoothConsts', function() {
         return _e;
     });
     const _e = {

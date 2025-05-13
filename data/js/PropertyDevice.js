@@ -7,15 +7,23 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _p;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....');
     class o extends i.default {
         setStoredValue() {
             this.options.valueType === g.PrimitiveType.boolean ? n.default.me.properties.set(this.options.propertyName, this.state.valueBoolean) : this.options.valueType === g.PrimitiveType.number ? n.default.me.properties.set(this.options.propertyName, this.state.valueNumber) : this.options.valueType === g.PrimitiveType.string && n.default.me.properties.set(this.options.propertyName, this.state.valueString);
@@ -29,7 +37,7 @@ b.register('.....', function (c, d) {
                 }), this.setStoredValue(), (0, h.InGamePhase)() || (0, j.isPublishedVersion)())
                 return;
             const q = k.default.Overlay;
-            new (0, l.default)({
+            new(0, l.default)({
                 device: this,
                 baseColor: q.baseColor,
                 boxColor: q.boxColor,
@@ -48,10 +56,10 @@ b.register('.....', function (c, d) {
         }
     }
     var _p = o;
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
-    a(c.exports, 'PrimitiveType', function () {
+    a(c.exports, 'PrimitiveType', function() {
         return e;
     }), (f = e || (e = {})).boolean = 'boolean', f.number = 'number', f.string = 'string';
 });

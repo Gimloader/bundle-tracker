@@ -7,15 +7,21 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _n;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....');
     class m extends j.default {
         constructor(n) {
             super(n), (0, f.default)(this, 'addTeleporterAnim', () => {
@@ -38,8 +44,8 @@ b.register('.....', function (c, d) {
         }
     }
     var _n = m;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _e;
     });
     var _e = f => {
@@ -49,11 +55,12 @@ b.register('.....', function (c, d) {
             width: f.width * g
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'SpritesheetAsset', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'SpritesheetAsset', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     (0, e.default)('devices/teleporter/base.png');
     const _g = {
         spritesheetUrl: (0, e.default)('devices/teleporter/anim.png'),
@@ -61,17 +68,17 @@ b.register('.....', function (c, d) {
         frameWidth: f.Consts.FRAME_WIDTH,
         frameHeight: f.Consts.FRAME_HEIGHT,
         animations: [{
-                animName: 'TELEPORTER_ANIM',
-                animFrames: {
-                    start: 0,
-                    end: 17
-                },
-                yoyo: !0,
-                frameRate: 12
-            }]
+            animName: 'TELEPORTER_ANIM',
+            animFrames: {
+                start: 0,
+                end: 17
+            },
+            yoyo: !0,
+            frameRate: 12
+        }]
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'Consts', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'Consts', function() {
         return _e;
     });
     const _e = {

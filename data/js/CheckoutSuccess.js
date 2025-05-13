@@ -7,15 +7,26 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _u;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....');
     let r, s, t = u => u;
     var _u = (0, k.observer)(() => {
         const v = (0, l.getUrlVariable)('session_id');
@@ -27,7 +38,9 @@ b.register('.....', function (c, d) {
                 children: v ? (0, f.jsxs)('div', {
                     className: 'maxWidth flex hc vc flex-column',
                     children: [
-                        (0, f.jsx)(j.default, { size: 'large' }),
+                        (0, f.jsx)(j.default, {
+                            size: 'large'
+                        }),
                         (0, l.isLoggedIn)() && (0, f.jsx)('div', {
                             style: {
                                 fontSize: 23,
@@ -36,11 +49,15 @@ b.register('.....', function (c, d) {
                             children: 'Upgrading your account...'
                         }),
                         (0, f.jsx)('div', {
-                            style: { fontSize: 16 },
+                            style: {
+                                fontSize: 16
+                            },
                             children: 'Please don\'t close this tab'
                         })
                     ]
-                }) : (i.default.error({ title: 'An error ocurred during checkout. Please contact customer support' }), null)
+                }) : (i.default.error({
+                    title: 'An error ocurred during checkout. Please contact customer support'
+                }), null)
             })
         });
     });
@@ -52,7 +69,10 @@ b.register('.....', function (c, d) {
   display: flex;
   justify-content: center;
   align-items: center;
-`)), _w = h.default.div.attrs({ className: 'scroll-y' })(s || (s = t`
+`)),
+        _w = h.default.div.attrs({
+            className: 'scroll-y'
+        })(s || (s = t`
   background: ${ 0 };
   padding: 20px;
   border-radius: 5px;
@@ -63,11 +83,17 @@ b.register('.....', function (c, d) {
   font-family: ${ 0 };
   color: ${ 0 };
 `), n.default.White, m.Fonts.SFPro, n.default.Black);
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _l;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....');
     var _l = m => {
         f.default.navigation.loadingTokenSubmit = !0;
         (0, e.verifyStripe)({
@@ -112,28 +138,31 @@ b.register('.....', function (c, d) {
             }
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = {
-        navigation: new (0, e.default)(),
-        checkout: new (0, f.default)()
+        navigation: new(0, e.default)(),
+        checkout: new(0, f.default)()
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'Screen', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'Screen', function() {
         return _g;
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _l;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     let _g;
     (_g || (_g = {})).checkout = 'checkout';
     const h = {
             screen: _g.checkout,
             loadingTokenSubmit: !1
-        }, {
+        },
+        {
             screen: i,
             loadingTokenSubmit: j
         } = h;
@@ -146,11 +175,12 @@ b.register('.....', function (c, d) {
     }
     (0, e.__decorate)([f.observable], k.prototype, 'screen', void 0), (0, e.__decorate)([f.observable], k.prototype, 'loadingTokenSubmit', void 0), (0, e.__decorate)([f.action], k.prototype, 'reset', void 0);
     var _l = k;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _w;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     const g = {
             planName: '',
             planId: '',
@@ -166,7 +196,8 @@ b.register('.....', function (c, d) {
             couponIsOnlyForPlan: '',
             existingPayingPlan: '',
             stripePublicKey: ''
-        }, {
+        },
+        {
             planName: h,
             planId: i,
             couponId: j,
@@ -197,19 +228,22 @@ b.register('.....', function (c, d) {
     }
     (0, e.__decorate)([f.observable], v.prototype, 'planName', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planCost', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'accountCredit', void 0), (0, e.__decorate)([f.observable], v.prototype, 'percentageOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'amountOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'hasCoupon', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponOneUseOnly', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponIsOnlyForPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'existingPayingPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'stripePublicKey', void 0), (0, e.__decorate)([f.computed], v.prototype, 'totalCost', null), (0, e.__decorate)([f.action], v.prototype, 'reset', void 0);
     var _w = v;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'NavigateTo', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'NavigateTo', function() {
         return _f;
     });
     var e = b('.....');
     const _f = g => {
         e.history.push(g);
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'AnalyticsTrackEvent', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'AnalyticsTrackEvent', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = j => {
         var k, l, m;
         if ((window.gtag && !(null === (k = j.blockedSource) || void 0 === k ? void 0 : k.google) && window.gtag('event', j.event, j.properties), g.AnalyticsFlags.educatorOnly) && (null === (m = (0, f.getUser)()) || void 0 === m ? void 0 : m.accountType) !== e.default.educator)
@@ -220,11 +254,10 @@ b.register('.....', function (c, d) {
             force: j.forcePostHog
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'TrackPostHogEvent', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'TrackPostHogEvent', function() {
         return _e;
     });
     b('.....');
-    const _e = f => {
-    };
+    const _e = f => {};
 });

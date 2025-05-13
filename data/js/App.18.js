@@ -7,17 +7,26 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'ANIMATION_DURATION', function () {
+    }), a(c.exports, 'ANIMATION_DURATION', function() {
         return _s;
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _t;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....');
     let p, q, r = s => s;
     const _s = 0.3;
     var _t = (0, n.withDeviceUIWrapper)(u => {
@@ -27,10 +36,18 @@ b.register('.....', function (c, d) {
         (0, k.default)(Phaser.Input.Keyboard.KeyCodes.ESC, v, [v]);
         return (0, f.jsx)(_u, {
             children: (0, f.jsx)(_v, {
-                initial: { background: 'rgba(0,0,0,0)' },
-                animate: { background: 'rgba(0,0,0,0.7)' },
-                exit: { background: 'rgba(0,0,0,0)' },
-                transition: { duration: _s },
+                initial: {
+                    background: 'rgba(0,0,0,0)'
+                },
+                animate: {
+                    background: 'rgba(0,0,0,0.7)'
+                },
+                exit: {
+                    background: 'rgba(0,0,0,0)'
+                },
+                transition: {
+                    duration: _s
+                },
                 children: (() => {
                     const w = {
                         ...u,
@@ -38,30 +55,50 @@ b.register('.....', function (c, d) {
                         close: v,
                         code: u.code
                     };
-                    return (0, f.jsx)(h.default, { ...w });
+                    return (0, f.jsx)(h.default, {
+                        ...w
+                    });
                 })()
             })
         });
     });
-    const _u = (0, i.default)(l.default).attrs({ className: 'maxAll' })(p || (p = r`
+    const _u = (0, i.default)(l.default).attrs({
+            className: 'maxAll'
+        })(p || (p = r`
   overflow: hidden;
   z-index: ${ 0 };
-`), o.default.primaryContent), _v = (0, i.default)(j.motion.div).attrs({ className: 'maxAll' })(q || (q = r``));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+`), o.default.primaryContent),
+        _v = (0, i.default)(j.motion.div).attrs({
+            className: 'maxAll'
+        })(q || (q = r``));
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _t;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....');
     let o, p, q = r => r;
     const r = {
             y: ' 100%',
             opacity: 0
-        }, s = {
+        },
+        s = {
             y: '0%',
             opacity: 1
         };
     var _t = u => {
-        const v = (0, h.useIsPresent)(), [w, x] = (0, m.useBoolean)(!1), y = (0, n.GetContrastColor)(u.defaultBackgroundColor), z = f.useMemo(() => {
+        const v = (0, h.useIsPresent)(),
+            [w, x] = (0, m.useBoolean)(!1),
+            y = (0, n.GetContrastColor)(u.defaultBackgroundColor),
+            z = f.useMemo(() => {
                 let A = {
                     background: u.defaultBackgroundColor,
                     color: y,
@@ -113,22 +150,37 @@ b.register('.....', function (c, d) {
                     onClick: A => A.stopPropagation(),
                     onAnimationComplete: x,
                     style: z,
-                    children: (0, e.jsx)(k.default, { ...u })
+                    children: (0, e.jsx)(k.default, {
+                        ...u
+                    })
                 }),
-                u.closableByUser ? (0, e.jsx)(l.default, { onClick: u.close }) : null
+                u.closableByUser ? (0, e.jsx)(l.default, {
+                    onClick: u.close
+                }) : null
             ]
         });
     };
-    const _u = i.default.div.attrs({ className: 'maxAll flex' })(o || (o = q``)), _v = (0, i.default)(g.motion.div).attrs({ className: 'medium-shadow flex-column vc scroll-y' })(p || (p = q`
+    const _u = i.default.div.attrs({
+            className: 'maxAll flex'
+        })(o || (o = q``)),
+        _v = (0, i.default)(g.motion.div).attrs({
+            className: 'medium-shadow flex-column vc scroll-y'
+        })(p || (p = q`
   max-height: 80%;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _q;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....');
     let m, n, o, p = q => q;
     var _q = r => {
         const s = () => (0, e.jsx)(e.Fragment, {
@@ -154,25 +206,39 @@ b.register('.....', function (c, d) {
                 })
             })
         });
-        return (0, e.jsx)(e.Fragment, { children: r.isBanner ? (0, e.jsx)(_r, { children: s() }) : (0, e.jsx)(_s, { children: s() }) });
+        return (0, e.jsx)(e.Fragment, {
+            children: r.isBanner ? (0, e.jsx)(_r, {
+                children: s()
+            }) : (0, e.jsx)(_s, {
+                children: s()
+            })
+        });
     };
-    const _r = f.default.div.attrs({ className: 'maxWidth flex vc' })(m || (m = p`
+    const _r = f.default.div.attrs({
+            className: 'maxWidth flex vc'
+        })(m || (m = p`
   width: 100%;
   display: flex;
   justify-content: space-between;
-`)), _s = f.default.div.attrs({ className: 'maxWidth flex-column vc' })(n || (n = p``)), _t = f.default.div(o || (o = p`
+`)),
+        _s = f.default.div.attrs({
+            className: 'maxWidth flex-column vc'
+        })(n || (n = p``)),
+        _t = f.default.div(o || (o = p`
   font-size: 24px;
   margin: 6px;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _e;
     });
-    var _e = { emptyMessage: 'Nothing in here...yet! End the game and modify this device to include your content.' };
-}), b.register('.....', function (c, d) {
+    var _e = {
+        emptyMessage: 'Nothing in here...yet! End the game and modify this device to include your content.'
+    };
+}), b.register('.....', function(c, d) {
     let e;
     var f;
-    a(c.exports, 'CodeUIStyle', function () {
+    a(c.exports, 'CodeUIStyle', function() {
         return e;
     }), (f = e || (e = {})).modal = 'modal', f.banner = 'banner';
 });

@@ -6,22 +6,37 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _s;
     });
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....');
     class r extends h.default {
         constructor(s) {
-            super(s), (0, g.default)(this, 'pieces', { progressBar: {} }), (0, g.default)(this, 'interactivity', { withinBounds: !1 }), (0, g.default)(this, 'itemIsOutlined', !1), (0, g.default)(this, 'openDeviceUI', () => {
+            super(s), (0, g.default)(this, 'pieces', {
+                progressBar: {}
+            }), (0, g.default)(this, 'interactivity', {
+                withinBounds: !1
+            }), (0, g.default)(this, 'itemIsOutlined', !1), (0, g.default)(this, 'openDeviceUI', () => {
                 (0, m.default)(this);
             }), (0, g.default)(this, 'onStateChange', t => {
                 (0, o.default)(t, this);
@@ -29,7 +44,7 @@ c.register('.....', function (d, e) {
                 (0, q.default)(this);
             }), (0, g.default)(this, 'onDestroy', () => {
                 this.particles.destroy(), this.refetchInteractionTimeout && window.clearTimeout(this.refetchInteractionTimeout);
-            }), this.createdAt = Date.now(), (0, k.CraftingTableCreateCollider)(this), this.callbackHelper = new (0, i.default)(this), this.particles = new (0, j.default)(this), (0, n.CraftingTableDeviceSetupInteractionRadius)(this), (0, l.default)(this), (0, p.default)(this), this.interactiveZones.onInteractiveCb = () => {
+            }), this.createdAt = Date.now(), (0, k.CraftingTableCreateCollider)(this), this.callbackHelper = new(0, i.default)(this), this.particles = new(0, j.default)(this), (0, n.CraftingTableDeviceSetupInteractionRadius)(this), (0, l.default)(this), (0, p.default)(this), this.interactiveZones.onInteractiveCb = () => {
                 this.interactivity.withinBounds = !0;
             }, this.interactiveZones.onNonInteractive = () => {
                 this.interactivity.withinBounds = !1;
@@ -37,15 +52,22 @@ c.register('.....', function (d, e) {
         }
     }
     var _s = r;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _l;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....');
     var _l = class {
         constructor(m) {
             (0, f.default)(this, 'craft', n => {
-                this.device.sendToServerDevice(g.Messages.craft, { recipe: n });
+                this.device.sendToServerDevice(g.Messages.craft, {
+                    recipe: n
+                });
                 const o = (0, k.default)(n);
                 o && o.timeToCraftMs > 0 && (0, h.playSound)({
                     path: (0, i.default)('devices/crafting_table/appear.mp3'),
@@ -65,14 +87,14 @@ c.register('.....', function (d, e) {
             }), this.device = m;
         }
     };
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     let f;
     var g;
-    a(d.exports, 'Messages', function () {
+    a(d.exports, 'Messages', function() {
         return f;
     }), (g = f || (f = {})).craft = 'craft', g.collect = 'collect';
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _g;
     });
     var f = c('.....');
@@ -80,7 +102,10 @@ c.register('.....', function (d, e) {
         const i = f.default.world.devices.devices.get(h);
         if (!i)
             return null;
-        const j = i.options, k = new Map(), l = m => j.numberOfIngredients >= m, m = (n, o) => {
+        const j = i.options,
+            k = new Map(),
+            l = m => j.numberOfIngredients >= m,
+            m = (n, o) => {
                 const p = k.get(n);
                 p ? p.amount += o : k.set(n, {
                     item: n,
@@ -97,11 +122,15 @@ c.register('.....', function (d, e) {
             timeToDisposeMs: j.itemDisposes ? j.disposeItemAfterMs : 0
         };
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _k;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....');
     var _k = class {
         constructor(l) {
             (0, f.default)(this, 'burst', () => {
@@ -139,11 +168,12 @@ c.register('.....', function (d, e) {
             }), this.device = l;
         }
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CraftingTableCreateCollider', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CraftingTableCreateCollider', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const _h = i => {
         i.options.style === g.CraftingTableStyle.craft && ((0, f.isTopDown)() ? i.colliders.add.box({
             x: 0,
@@ -167,17 +197,25 @@ c.register('.....', function (d, e) {
             h: 24
         })));
     };
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     let f;
     var g;
-    a(d.exports, 'CraftingTableStyle', function () {
+    a(d.exports, 'CraftingTableStyle', function() {
         return f;
     }), (g = f || (f = {})).plant = 'plant', g.craft = 'craft', g.store = 'store';
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _o;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....');
     var _o = p => {
         const {
             key: q,
@@ -217,8 +255,8 @@ c.register('.....', function (d, e) {
             y: 52
         }), p.state.status !== k.CraftingTableStatus.idle && ((0, l.default)(p), p.state.status === k.CraftingTableStatus.availableForCollection && (0, m.default)(p)), p.particles.load();
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = g => {
@@ -228,17 +266,23 @@ c.register('.....', function (d, e) {
             width: g.width * h
         };
     };
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     let f;
     var g;
-    a(d.exports, 'CraftingTableStatus', function () {
+    a(d.exports, 'CraftingTableStatus', function() {
         return f;
     }), (g = f || (f = {})).idle = 'idle', g.crafting = 'crafting', g.availableForCollection = 'availableForCollection';
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _m;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     var _m = n => {
         if (!n.state.itemId)
             return;
@@ -274,13 +318,13 @@ c.register('.....', function (d, e) {
             });
         }
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = g => g.newWidth / g.width;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _g;
     });
     var f = c('.....');
@@ -320,22 +364,32 @@ c.register('.....', function (d, e) {
             }
         }
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
-    var _f = { width: 60 };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'GetCraftingTableDeviceLayer', function () {
+    var _f = {
+        width: 60
+    };
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'GetCraftingTableDeviceLayer', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     const _i = j => (0, g.isPlatformer)() ? j.layers.getLayer() : j.options.style == h.CraftingTableStyle.plant ? f.default.DevicesUnderCharacters : f.default.DepthSortedCharactersAndDevices;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _m;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     var _m = n => {
         const o = n.state.itemId;
         if (!o)
@@ -355,8 +409,8 @@ c.register('.....', function (d, e) {
             }
         }));
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = g => {
@@ -376,36 +430,62 @@ c.register('.....', function (d, e) {
             useCrafterCollectionAdvantage: g.options.useCrafterCollectionAdvantage
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CraftingTableDeviceSetupInteractionRadius', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CraftingTableDeviceSetupInteractionRadius', function() {
         return _g;
     });
     var f = c('.....');
     const _g = h => {
-        const {style: i} = h.options;
+        const {
+            style: i
+        } = h.options;
         i !== f.CraftingTableStyle.plant ? h.interactiveZones.add.circle({
             r: 120,
             y: 10
-        }) : h.interactiveZones.add.circle({ r: 100 });
+        }) : h.interactiveZones.add.circle({
+            r: 100
+        });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     var _h = (i, j) => {
-        'status' === i && (0, g.default)(j), 'itemId' === i && (j.deviceUI.update({ item: j.state.itemId }), (0, f.default)(j)), 'craftingDurationMs' === i && j.deviceUI.update({ craftingDurationMs: j.state.craftingDurationMs }), 'itemFinishesCraftingAt' === i && j.deviceUI.update({ itemFinishesCraftingAt: j.state.itemFinishesCraftingAt }), 'itemAmount' === i && j.deviceUI.update({ itemAmount: j.state.itemAmount }), 'itemDisposedAt' === i && j.deviceUI.update({ itemDisposedAt: j.state.itemDisposedAt }), 'itemDisposalMs' === i && j.deviceUI.update({ itemDisposalMs: j.state.itemDisposalMs }), 'itemCrafterCharacterId' === i && j.deviceUI.update({ itemCrafterCharacterId: j.state.itemCrafterCharacterId });
+        'status' === i && (0, g.default)(j), 'itemId' === i && (j.deviceUI.update({
+            item: j.state.itemId
+        }), (0, f.default)(j)), 'craftingDurationMs' === i && j.deviceUI.update({
+            craftingDurationMs: j.state.craftingDurationMs
+        }), 'itemFinishesCraftingAt' === i && j.deviceUI.update({
+            itemFinishesCraftingAt: j.state.itemFinishesCraftingAt
+        }), 'itemAmount' === i && j.deviceUI.update({
+            itemAmount: j.state.itemAmount
+        }), 'itemDisposedAt' === i && j.deviceUI.update({
+            itemDisposedAt: j.state.itemDisposedAt
+        }), 'itemDisposalMs' === i && j.deviceUI.update({
+            itemDisposalMs: j.state.itemDisposalMs
+        }), 'itemCrafterCharacterId' === i && j.deviceUI.update({
+            itemCrafterCharacterId: j.state.itemCrafterCharacterId
+        });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _n;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     const m = n => {
         if (n.state.status === k.CraftingTableStatus.availableForCollection) {
             let o = 1;
             if (!(n.state.itemCrafterCharacterId === (0, h.default)()) && n.options.useCrafterCollectionAdvantage) {
-                const p = n.state.itemFinishesCraftingAt + 1000 * j.default.secondsAdvantage, q = Math.ceil((p - g.default.session.gameTime) / 1000);
+                const p = n.state.itemFinishesCraftingAt + 1000 * j.default.secondsAdvantage,
+                    q = Math.ceil((p - g.default.session.gameTime) / 1000);
                 q < 1 ? o = 1 : (n.refetchInteractionTimeout = window.setTimeout(() => {
                     m(n);
                 }, 250), o = q);
@@ -430,11 +510,12 @@ c.register('.....', function (d, e) {
             };
     };
     var _n = m;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const h = i => i === g.CraftingTableStyle.plant ? 'plant' : i === g.CraftingTableStyle.craft ? 'craft' : 'purchase';
     var _i = {
         noItems: j => `No items currently available to ${ h(j) }.`,
@@ -447,25 +528,38 @@ c.register('.....', function (d, e) {
         preparing: j => j === g.CraftingTableStyle.store ? 'preparing' : j === g.CraftingTableStyle.plant ? 'growing' : 'crafting',
         baseVerb: h
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
-    var _f = { secondsAdvantage: 5 };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+    var _f = {
+        secondsAdvantage: 5
+    };
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     var _h = (i, j) => {
         let k = (0, g.ItemName)(i) || 'Item';
         return j > 1 && (k += ` (${ (0, f.numberWithCommas)(j) })`), k;
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _q;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....');
     var _q = r => {
         const s = r.state.status;
         if (s === k.CraftingTableStatus.idle && ((0, n.default)(r), (0, o.default)(r)), s !== k.CraftingTableStatus.crafting && s !== k.CraftingTableStatus.availableForCollection || (0, l.default)(r), s === k.CraftingTableStatus.availableForCollection && (r.pieces.item && j.default.itemReady.applyItemAnimation(r, r.pieces.item.view), (0, m.default)(r), r.state.itemDisposedAt || (0, o.default)(r), r.cull.isInsideView && !f.default.session.loadingPhase)) {
@@ -477,10 +571,12 @@ c.register('.....', function (d, e) {
                 })
             }), r.particles.burst());
         }
-        r.deviceUI.update({ status: r.state.status }), (0, p.default)(r);
+        r.deviceUI.update({
+            status: r.state.status
+        }), (0, p.default)(r);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _g;
     });
     var f = c('.....');
@@ -512,23 +608,30 @@ c.register('.....', function (d, e) {
             });
         }
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = g => {
         g.pieces.progressBar.background && g.pieces.progressBar.bar && (g.pieces.progressBar.background.view.destroy(), g.pieces.progressBar.bar.view.destroy(), g.pieces.progressBar.background = void 0, g.pieces.progressBar.bar = void 0);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _m;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     var _m = n => {
         if (n.cull.isInsideView) {
             if (n.state.status === k.CraftingTableStatus.crafting) {
                 var o, p, q;
-                const r = n.state.itemFinishesCraftingAt - n.state.craftingDurationMs, s = ((0, g.GetServerGameTimeWithCompensation)() - r) / n.state.craftingDurationMs;
+                const r = n.state.itemFinishesCraftingAt - n.state.craftingDurationMs,
+                    s = ((0, g.GetServerGameTimeWithCompensation)() - r) / n.state.craftingDurationMs;
                 (0, l.default)({
                     device: n,
                     completion: s,
@@ -540,7 +643,8 @@ c.register('.....', function (d, e) {
             var u, v, w, x, y;
             if (n.state.status === t.CraftingTableStatus.availableForCollection)
                 if (null === (u = n.pieces) || void 0 === u || null === (v = u.item) || void 0 === v || null === (w = v.view) || void 0 === w || w.setAlpha(1), n.state.itemDisposedAt) {
-                    const z = n.state.itemDisposedAt - n.state.itemDisposalMs, A = 1 - ((0, g.GetServerGameTimeWithCompensation)() - z) / n.state.itemDisposalMs;
+                    const z = n.state.itemDisposedAt - n.state.itemDisposalMs,
+                        A = 1 - ((0, g.GetServerGameTimeWithCompensation)() - z) / n.state.itemDisposalMs;
                     (0, l.default)({
                         device: n,
                         completion: A,
@@ -549,38 +653,48 @@ c.register('.....', function (d, e) {
                 }
             if (n.itemIsOutlined)
                 if (!n.interactivity.withinBounds || n.state.status !== t.CraftingTableStatus.availableForCollection)
-                    n.itemIsOutlined = !1, (null === (x = n.pieces) || void 0 === x ? void 0 : x.item) && (0, s.RemoveOutline)({ view: n.pieces.item.view });
+                    n.itemIsOutlined = !1, (null === (x = n.pieces) || void 0 === x ? void 0 : x.item) && (0, s.RemoveOutline)({
+                        view: n.pieces.item.view
+                    });
             if (n.interactivity.withinBounds)
-                n.state.status === t.CraftingTableStatus.availableForCollection && !n.itemIsOutlined && (null === (y = n.pieces.item) || void 0 === y ? void 0 : y.view) && (n.itemIsOutlined = !0, (0, r.AddOutline)({ view: n.pieces.item.view }));
+                n.state.status === t.CraftingTableStatus.availableForCollection && !n.itemIsOutlined && (null === (y = n.pieces.item) || void 0 === y ? void 0 : y.view) && (n.itemIsOutlined = !0, (0, r.AddOutline)({
+                    view: n.pieces.item.view
+                }));
         }
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'AddOutline', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'AddOutline', function() {
         return _g;
     });
     var f = c('.....');
     const _g = h => {
         if (!h.view || !h.view.active)
             return;
-        const i = { thickness: 2 }, j = h.options ? {
+        const i = {
+                thickness: 2
+            },
+            j = h.options ? {
                 ...i,
                 ...h.options
-            } : { ...i };
+            } : {
+                ...i
+            };
         (0, f.default)().plugins.get('rexOutlinePipeline').add(h.view, j);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'RemoveOutline', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'RemoveOutline', function() {
         return _g;
     });
     var f = c('.....');
     const _g = h => {
         h.view && (0, f.default)().plugins.get('rexOutlinePipeline').remove(h.view);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     var _h = {
         width: 55,
         height: 12,
@@ -591,11 +705,12 @@ c.register('.....', function (d, e) {
         expirationColor: 15092249,
         yOffset: i => i.options.style === g.CraftingTableStyle.plant ? 70 : (0, f.isPlatformer)() ? -75 : 85
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     var _h = i => {
         const {
             device: j,
@@ -609,11 +724,13 @@ c.register('.....', function (d, e) {
             width: f.default.width * k
         }), j.pieces.progressBar.bar.view.setX(j.x - (f.default.width - f.default.width * k) / 2);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     var _i = j => {
         j.pieces.progressBar.background && j.pieces.progressBar.background.destroy(), j.pieces.progressBar.bar && j.pieces.progressBar.bar.destroy(), j.pieces.progressBar.background = j.parts.add.rect({
             width: g.default.width,

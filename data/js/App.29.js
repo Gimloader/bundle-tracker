@@ -1,6 +1,7 @@
 function a(b) {
     return b && b.__esModule ? b.default : b;
 }
+
 function b(c, d, e, f) {
     Object.defineProperty(c, d, {
         get: e,
@@ -10,31 +11,54 @@ function b(c, d, e, f) {
     });
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(d.exports, 'default', function () {
+    }), b(d.exports, 'default', function() {
         return _y;
     });
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....'), w = c('.....'), x = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....'),
+        s = c('.....'),
+        t = c('.....'),
+        u = c('.....'),
+        v = c('.....'),
+        w = c('.....'),
+        x = c('.....');
     var _y = (0, k.observer)(z => {
         const {
-                me: {
-                    editing: {device: A}
-                },
-                world: {
-                    devices: {codeGrids: B}
-                },
-                memorySystem: {limits: C}
-            } = (0, l.default)(), [D, E, F] = (0, r.useBoolean)(!1), [G, H, I] = (0, r.useBoolean)(!1), [J, K] = h.useState(void 0), [L, M] = h.useState(0), [N, O] = h.useState(void 0), [P, Q] = h.useState(void 0), R = h.useRef(), {
-                start: S,
-                clear: T
-            } = (0, q.useTimeout)(() => {
-                var U;
-                (null === (U = B.get(z.deviceId)) || void 0 === U ? void 0 : U.items.has(A.currentlyEditedGridId)) || (w.default.error(`This ${ x.default.grid.singular } was deleted!`), z.close());
-            }, 25), U = A.currentlyEditedGridId;
+            me: {
+                editing: {
+                    device: A
+                }
+            },
+            world: {
+                devices: {
+                    codeGrids: B
+                }
+            },
+            memorySystem: {
+                limits: C
+            }
+        } = (0, l.default)(), [D, E, F] = (0, r.useBoolean)(!1), [G, H, I] = (0, r.useBoolean)(!1), [J, K] = h.useState(void 0), [L, M] = h.useState(0), [N, O] = h.useState(void 0), [P, Q] = h.useState(void 0), R = h.useRef(), {
+            start: S,
+            clear: T
+        } = (0, q.useTimeout)(() => {
+            var U;
+            (null === (U = B.get(z.deviceId)) || void 0 === U ? void 0 : U.items.has(A.currentlyEditedGridId)) || (w.default.error(`This ${ x.default.grid.singular } was deleted!`), z.close());
+        }, 25), U = A.currentlyEditedGridId;
         h.useEffect(() => ((0, o.default)({
             deviceId: z.deviceId,
             gridId: U
@@ -49,22 +73,33 @@ c.register('.....', function (d, e) {
                     return null === (W = B.get(z.deviceId)) || void 0 === W ? void 0 : W.items.has(U);
                 }, W => {
                     W || (T(), S());
-                }, { fireImmediately: !0 }), W = (0, p.reaction)(() => {
+                }, {
+                    fireImmediately: !0
+                }),
+                W = (0, p.reaction)(() => {
                     var X, Y, Z;
                     return null === (X = null === (Y = B.get(z.deviceId)) || void 0 === Y || null === (Z = Y.items) || void 0 === Z ? void 0 : Z.get(U)) || void 0 === X ? void 0 : X.visitors;
                 }, X => {
                     X && O(X);
-                }, { fireImmediately: !0 }), X = (0, p.reaction)(() => {
+                }, {
+                    fireImmediately: !0
+                }),
+                X = (0, p.reaction)(() => {
                     var Y, Z, $;
                     return null === (Y = null === (Z = B.get(z.deviceId)) || void 0 === Z || null === ($ = Z.items) || void 0 === $ ? void 0 : $.get(U)) || void 0 === Y ? void 0 : Y.json;
                 }, Y => {
                     void 0 !== Y && K(Y);
-                }, { fireImmediately: !0 }), Y = (0, p.reaction)(() => {
+                }, {
+                    fireImmediately: !0
+                }),
+                Y = (0, p.reaction)(() => {
                     var Z, $, ab;
                     return null === (Z = null === ($ = B.get(z.deviceId)) || void 0 === $ || null === (ab = $.items) || void 0 === ab ? void 0 : ab.get(U)) || void 0 === Z ? void 0 : Z.owner;
                 }, Z => {
                     void 0 !== Z && Q(Z);
-                }, { fireImmediately: !0 });
+                }, {
+                    fireImmediately: !0
+                });
             return () => {
                 T(), V(), W(), X(), Y();
             };
@@ -117,27 +152,35 @@ c.register('.....', function (d, e) {
             ]
         });
     });
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _p;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = (l = c('.....'), c('.....')), n = c('.....'), o = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = (l = c('.....'), c('.....')),
+        n = c('.....'),
+        o = c('.....');
     var _p = q => {
         const {
-                deviceId: r,
-                gridId: s,
-                gridOwner: t,
-                gridVisitors: u,
-                gridJSON: v,
-                switchToHomeScreen: w,
-                openChannelBrowser: x,
-                channelBrowserOpen: y,
-                openPropertyBrowser: z,
-                propertyBrowserOpen: A,
-                editorRef: B
-            } = q, C = ((0, i.default)() === t || !u.length || !t) && (0, h.default)();
+            deviceId: r,
+            gridId: s,
+            gridOwner: t,
+            gridVisitors: u,
+            gridJSON: v,
+            switchToHomeScreen: w,
+            openChannelBrowser: x,
+            channelBrowserOpen: y,
+            openPropertyBrowser: z,
+            propertyBrowserOpen: A,
+            editorRef: B
+        } = q, C = ((0, i.default)() === t || !u.length || !t) && (0, h.default)();
         return (0, f.jsx)(l.ContentContainer, {
             onClick: D => {
                 (0, m.default)(D), w();
@@ -184,8 +227,8 @@ c.register('.....', function (d, e) {
             })
         });
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _f;
     });
     var _f = {
@@ -226,36 +269,51 @@ c.register('.....', function (d, e) {
             }
         }
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _u;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     c('.....');
-    var h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....');
-    a(i).FieldTextInput.prototype.doClassValidation_ = function (u) {
+    var h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....'),
+        s = c('.....'),
+        t = c('.....');
+    a(i).FieldTextInput.prototype.doClassValidation_ = function(u) {
         return u.substring(0, 512);
     };
     var _u = (0, l.observer)(g.forwardRef((v, w) => {
-        const {memorySystem: x} = (0, t.default)(), [y, z] = g.useState(v.gridJSON), A = g.useRef(), B = g.useRef(), [C] = (0, m.default)((0, n.default)([
-                p.default.messageBroadcaster,
-                p.default.playerProximityMessageBroadcaster
-            ]), D => {
-                v.isOwner && (D.x && D.y && (A.current = {
-                    x: D.x,
-                    y: D.y
-                }), v.openChannelBrowser());
-            }), [D] = (0, m.default)((0, n.default)([
-                p.default.getProperty,
-                p.default.setProperty,
-                p.default.playerProximityGetProperty,
-                p.default.playerProximitySetProperty
-            ]), E => {
-                v.isOwner && (E.x && E.y && (A.current = {
-                    x: E.x,
-                    y: E.y
-                }), v.openPropertyBrowser());
-            });
+        const {
+            memorySystem: x
+        } = (0, t.default)(), [y, z] = g.useState(v.gridJSON), A = g.useRef(), B = g.useRef(), [C] = (0, m.default)((0, n.default)([
+            p.default.messageBroadcaster,
+            p.default.playerProximityMessageBroadcaster
+        ]), D => {
+            v.isOwner && (D.x && D.y && (A.current = {
+                x: D.x,
+                y: D.y
+            }), v.openChannelBrowser());
+        }), [D] = (0, m.default)((0, n.default)([
+            p.default.getProperty,
+            p.default.setProperty,
+            p.default.playerProximityGetProperty,
+            p.default.playerProximitySetProperty
+        ]), E => {
+            v.isOwner && (E.x && E.y && (A.current = {
+                x: E.x,
+                y: E.y
+            }), v.openPropertyBrowser());
+        });
         g.useEffect(() => {
             _E(v.gridJSON);
         }, [v.gridJSON]), g.useEffect(() => () => {
@@ -264,21 +322,26 @@ c.register('.....', function (d, e) {
         const _E = F => {
                 var G;
                 v.isOwner || F !== y && (z(F), null == B || null === (G = B.current) || void 0 === G || G.clear(), a(i).serialization.workspaces.load(JSON.parse(F), B.current));
-            }, F = (0, k.useDebounceCallback)(G => {
+            },
+            F = (0, k.useDebounceCallback)(G => {
                 v.isOwner && G !== y && ((0, s.default)({
                     json: G,
                     deviceId: v.deviceId,
                     gridId: v.gridId
                 }), z(G));
-            }, r.default.debouncedSaveDurationMs), G = g.useMemo(() => (0, j.default)(v.deviceId, v.gridId), []);
-        g.useImperativeHandle(w, () => ({ addTextBlock: _H }));
+            }, r.default.debouncedSaveDurationMs),
+            G = g.useMemo(() => (0, j.default)(v.deviceId, v.gridId), []);
+        g.useImperativeHandle(w, () => ({
+            addTextBlock: _H
+        }));
         const _H = I => {
                 v.isOwner && (0, o.default)({
                     text: I,
                     location: A.current,
                     workspace: B.current
                 });
-            }, I = '' === y ? {} : JSON.parse(y);
+            },
+            I = '' === y ? {} : JSON.parse(y);
         return (0, f.jsx)(h.default, {
             toolboxConfiguration: v.isOwner ? G : void 0,
             initialJson: I,
@@ -287,7 +350,8 @@ c.register('.....', function (d, e) {
                 var K;
                 B.current = J, null === (K = B.current) || void 0 === K || K.addChangeListener(L => {
                     v.isOwner && (C(L), D(L), (() => {
-                        const M = a(i).serialization.workspaces.save(B.current), N = B.current.getAllBlocks(!1).length;
+                        const M = a(i).serialization.workspaces.save(B.current),
+                            N = B.current.getAllBlocks(!1).length;
                         v.onBlockCountChange(N), F(JSON.stringify(M));
                     })());
                 });
@@ -298,7 +362,9 @@ c.register('.....', function (d, e) {
                 disable: !1,
                 collapse: !1,
                 maxBlocks: x.limits.blocksPerCodeGrid,
-                move: { drag: !1 },
+                move: {
+                    drag: !1
+                },
                 grid: {
                     spacing: 20,
                     length: 2,
@@ -308,16 +374,18 @@ c.register('.....', function (d, e) {
             }
         });
     }));
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'BlocklyWorkspace', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'BlocklyWorkspace', function() {
         return c('.....').default;
     });
     c('.....'), c('.....'), c('.....');
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     var _i = ({
         ref: j,
         initialXml: k,
@@ -342,7 +410,8 @@ c.register('.....', function (d, e) {
             m,
             t
         ]);
-        const F = a(f).useRef(r), G = a(f).useRef(s);
+        const F = a(f).useRef(r),
+            G = a(f).useRef(s);
         a(f).useEffect(() => {
             F.current = r;
         }, [r]), a(f).useEffect(() => {
@@ -399,7 +468,7 @@ c.register('.....', function (d, e) {
             v
         ]), a(f).useEffect(() => {
             if (v && t && !z) {
-                const I = function (J, K, L) {
+                const I = function(J, K, L) {
                     try {
                         if (K.getAllBlocks(!1).length > 0)
                             return;
@@ -410,7 +479,7 @@ c.register('.....', function (d, e) {
                 }(v, t, q);
                 I || w(null), A(!0);
             } else if (x && t && !z) {
-                const J = function (K, L, M) {
+                const J = function(K, L, M) {
                     try {
                         return a(g).serialization.workspaces.load(K, L), !0;
                     } catch (a) {
@@ -433,9 +502,10 @@ c.register('.....', function (d, e) {
             json: x
         };
     };
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     function f(g, h) {
-        let i = null, j = null;
+        let i = null,
+            j = null;
         return [
             (...n) => {
                 j = () => {
@@ -447,14 +517,17 @@ c.register('.....', function (d, e) {
             }
         ];
     }
-    b(d.exports, 'default', function () {
+    b(d.exports, 'default', function() {
         return f;
     });
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _q;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     const j = {
         initialXml: a(h).string,
         initialJson: a(h).object,
@@ -469,6 +542,7 @@ c.register('.....', function (d, e) {
         onInject: a(h).func,
         onDispose: a(h).func
     };
+
     function k({
         initialXml: l,
         initialJson: m,
@@ -483,7 +557,8 @@ c.register('.....', function (d, e) {
         onInject: v,
         onDispose: w
     }) {
-        const x = a(g).useRef(null), {
+        const x = a(g).useRef(null),
+            {
                 xml: y,
                 json: z
             } = (0, i.default)({
@@ -497,7 +572,8 @@ c.register('.....', function (d, e) {
                 onImportError: u,
                 onInject: v,
                 onDispose: w
-            }), A = a(g).useRef(r);
+            }),
+            A = a(g).useRef(r);
         a(g).useEffect(() => {
             A.current = r;
         }, [r]);
@@ -529,11 +605,14 @@ c.register('.....', function (d, e) {
         onDispose: null
     };
     var _q = k;
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _k;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     const j = (k, l) => {
         let m = k.deviceOption.codeGridSchema.customBlocks || [];
         const n = (null == l ? void 0 : l.customBlocks) || [];
@@ -547,7 +626,8 @@ c.register('.....', function (d, e) {
     };
     var _k = (l, m) => {
         var n, o;
-        let p, q = [], r = [];
+        let p, q = [],
+            r = [];
         const s = (0, i.default)(l);
         if (s) {
             var t, u;
@@ -564,11 +644,15 @@ c.register('.....', function (d, e) {
         p && p.triggerSpecificBlocks.length && q.push({
             name: f.default.triggerOnly.name,
             color: f.default.triggerOnly.color,
-            blocks: p.triggerSpecificBlocks.map(y => ({ type: y })).filter(y => (0, h.CanAddCustomBlock)(y.type))
+            blocks: p.triggerSpecificBlocks.map(y => ({
+                type: y
+            })).filter(y => (0, h.CanAddCustomBlock)(y.type))
         }), (null == p ? void 0 : p.deviceSpecificBlocks.length) && q.push({
             name: f.default.deviceOnly.name,
             color: f.default.triggerOnly.color,
-            blocks: p.deviceSpecificBlocks.map(y => ({ type: y })).filter(y => (0, h.CanAddCustomBlock)(y.type))
+            blocks: p.deviceSpecificBlocks.map(y => ({
+                type: y
+            })).filter(y => (0, h.CanAddCustomBlock)(y.type))
         });
         let y = JSON.parse((null === (v = g.default.worldOptions) || void 0 === v || null === (o = v.codeGrids) || void 0 === o ? void 0 : o.blockCategories) || '[]');
         r.length && (y = y.map(z => ({
@@ -581,7 +665,9 @@ c.register('.....', function (d, e) {
         return {
             kind: 'categoryToolbox',
             contents: q.map(z => {
-                const A = z.custom ? { custom: z.custom } : {};
+                const A = z.custom ? {
+                    custom: z.custom
+                } : {};
                 return {
                     kind: 'category',
                     name: z.name,
@@ -597,8 +683,8 @@ c.register('.....', function (d, e) {
             })
         };
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _f;
     });
     var _f = {
@@ -611,25 +697,30 @@ c.register('.....', function (d, e) {
             color: '#FFBF00'
         }
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'CanAddCustomBlock', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'CanAddCustomBlock', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const _h = i => {
         const j = f.default.worldOptions.codeGrids.customBlocksParsed.find(k => k.type === i);
         if (!j)
             return !0;
-        const k = j.minimumRoleLevel, l = j.maximumRoleLevel;
+        const k = j.minimumRoleLevel,
+            l = j.maximumRoleLevel;
         return (0, g.IsRoleLevelBetween)(k, l);
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _g;
     });
     var f = c('.....');
     var _g = (h, i) => {
-        const j = f.useRef(0), k = f.useRef(), l = m => k.current = m, m = n => {
+        const j = f.useRef(0),
+            k = f.useRef(),
+            l = m => k.current = m,
+            m = n => {
                 const o = h[j.current];
                 if (!o)
                     return j.current = 0, void m(n);
@@ -642,11 +733,11 @@ c.register('.....', function (d, e) {
                 }
             };
         return [n => {
-                m(n);
-            }];
+            m(n);
+        }];
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _g;
     });
     var f = c('.....');
@@ -678,8 +769,8 @@ c.register('.....', function (d, e) {
             return !1;
         }
     ];
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _g;
     });
     var f = c('.....');
@@ -689,7 +780,8 @@ c.register('.....', function (d, e) {
             location: j,
             workspace: k
         } = h;
-        let l = 0, m = 0;
+        let l = 0,
+            m = 0;
         if (j)
             l = j.x, m = j.y;
         else {
@@ -701,23 +793,30 @@ c.register('.....', function (d, e) {
         }
         l += 40, m += 40, l = Math.round(l), m = Math.round(m);
         const p = n(f).serialization.workspaces.save(k);
-        p.blocks || (p.blocks = { blocks: [] }), p.blocks.blocks.push({
+        p.blocks || (p.blocks = {
+            blocks: []
+        }), p.blocks.blocks.push({
             type: 'text',
             x: l,
             y: m,
-            fields: { TEXT: i }
+            fields: {
+                TEXT: i
+            }
         }), n(f).serialization.workspaces.load(p, k);
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _f;
     });
-    var _f = { debouncedSaveDurationMs: 150 };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+    var _f = {
+        debouncedSaveDurationMs: 150
+    };
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     var _h = i => {
         (0, g.default)(f.default.setCodeGridJSON, {
             json: i.json,
@@ -725,13 +824,18 @@ c.register('.....', function (d, e) {
             gridId: i.gridId
         });
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _p;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     let m, n, o = p => p;
     var _p = q => (0, f.jsx)(_q, {
         children: (0, f.jsxs)(_r, {
@@ -744,24 +848,34 @@ c.register('.....', function (d, e) {
                     blockCount: q.blockCount,
                     openChannelBrowser: q.openChannelBrowser,
                     openPropertyBrowser: q.openPropertyBrowser
-                }) : (0, f.jsx)(l.default, { gridOwner: q.gridOwner })
+                }) : (0, f.jsx)(l.default, {
+                    gridOwner: q.gridOwner
+                })
             ]
         })
     });
-    const _q = (0, g.default)(h.Centered).attrs({ className: 'maxAll' })(m || (m = o`
+    const _q = (0, g.default)(h.Centered).attrs({
+            className: 'maxAll'
+        })(m || (m = o`
   flex-shrink: 0;
   color: ${ 0 };
   width: 360px;
   padding: 25px;
   padding-right: 0px;
-`), i.default.White), _r = g.default.div(n || (n = o``));
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+`), i.default.White),
+        _r = g.default.div(n || (n = o``));
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _m;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     c('.....');
-    var h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     var _m = n => (0, f.jsxs)(f.Fragment, {
         children: [
             (0, f.jsx)(g.default.Text, {
@@ -783,21 +897,30 @@ c.register('.....', function (d, e) {
             })
         ]
     });
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _m;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     c('.....');
-    var j = c('.....'), k = c('.....'), l = c('.....');
+    var j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     var _m = n => {
-        const {memorySystem: o} = (0, k.default)();
+        const {
+            memorySystem: o
+        } = (0, k.default)();
         return (0, f.jsxs)(f.Fragment, {
             children: [
                 (0, f.jsxs)(h.default, {
                     direction: 'horizontal',
                     size: 10,
-                    style: { marginTop: 30 },
+                    style: {
+                        marginTop: 30
+                    },
                     children: [
                         (0, f.jsx)(g.default, {
                             onClick: n.openChannelBrowser,
@@ -812,9 +935,13 @@ c.register('.....', function (d, e) {
                     ]
                 }),
                 (0, f.jsx)('div', {
-                    style: { marginTop: 6 },
+                    style: {
+                        marginTop: 6
+                    },
                     children: (0, f.jsxs)(i.default.Text, {
-                        style: { color: 'rgba(255,255,255,0.6)' },
+                        style: {
+                            color: 'rgba(255,255,255,0.6)'
+                        },
                         children: [
                             (0, j.numberWithCommas)(n.blockCount),
                             '/',
@@ -828,21 +955,30 @@ c.register('.....', function (d, e) {
             ]
         });
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _k;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     c('.....');
-    var i = c('.....'), j = c('.....');
+    var i = c('.....'),
+        j = c('.....');
     var _k = l => l.gridOwner ? (0, f.jsxs)(f.Fragment, {
         children: [
-            (0, f.jsx)(g.default, { style: { background: '#8b8b8b' } }),
+            (0, f.jsx)(g.default, {
+                style: {
+                    background: '#8b8b8b'
+                }
+            }),
             (0, f.jsx)('div', {
                 children: (0, f.jsxs)(h.default.Text, {
                     children: [
                         (0, f.jsx)('span', {
-                            style: { fontWeight: i.FontWeights.Bold },
+                            style: {
+                                fontWeight: i.FontWeights.Bold
+                            },
                             children: (0, j.default)(l.gridOwner)
                         }),
                         ' ',
@@ -852,8 +988,8 @@ c.register('.....', function (d, e) {
             })
         ]
     }) : null;
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _g;
     });
     var f = c('.....');
@@ -861,15 +997,18 @@ c.register('.....', function (d, e) {
         const i = f.default.characters.characters.get(h);
         return i ? i.name : 'Player';
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'Modal', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'Modal', function() {
         return _o;
-    }), b(d.exports, 'ContentContainer', function () {
+    }), b(d.exports, 'ContentContainer', function() {
         return _p;
-    }), b(d.exports, 'CodeGridEditor', function () {
+    }), b(d.exports, 'CodeGridEditor', function() {
         return _q;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     let j, k, l, m, n = o => o;
     g.default.div(j || (j = n`
   height: 100%;
@@ -879,7 +1018,9 @@ c.register('.....', function (d, e) {
   align-items: center;
   background: rgba(0, 0, 0, 0.6);
 `));
-    const _o = (0, g.default)(f.motion.div).attrs({ className: 'flex medium-shadow' })(k || (k = n`
+    const _o = (0, g.default)(f.motion.div).attrs({
+            className: 'flex medium-shadow'
+        })(k || (k = n`
   position: relative;
   background: rgba(48, 28, 86, 0.85);
   backdrop-filter: blur(3px);
@@ -888,7 +1029,13 @@ c.register('.....', function (d, e) {
   border-radius: 7px;
   width: 90%;
   height: 90%;
-`), h.default.Black), _p = (0, g.default)(i.Centered).attrs({ className: 'maxAll' })(l || (l = n``)), _q = g.default.div.attrs({ className: 'maxAll' })(m || (m = n`
+`), h.default.Black),
+        _p = (0, g.default)(i.Centered).attrs({
+            className: 'maxAll'
+        })(l || (l = n``)),
+        _q = g.default.div.attrs({
+            className: 'maxAll'
+        })(m || (m = n`
   .fill-height {
     height: 100%;
     width: 100%;
@@ -908,33 +1055,45 @@ c.register('.....', function (d, e) {
     filter: brightness(2);
   }
 `));
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     var _h = i => {
         (0, g.default)(f.default.leaveCodeGrid, {
             deviceId: i.deviceId,
             gridId: i.gridId
         });
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     var _h = i => {
         (0, g.default)(f.default.joinCodeGrid, {
             deviceId: i.deviceId,
             gridId: i.gridId
         });
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _q;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....');
     var _q = r => {
         const [s, t] = g.useState(-1), [u, v] = g.useState(''), w = g.useRef(), x = (0, n.default)(r.category), y = g.useMemo(() => (0, l.orderBy)(u ? x.filter(z => z.toLowerCase().includes(u.toLowerCase())) : x, [z => z.toLowerCase()], ['asc']), [u]);
         (0, m.default)(Phaser.Input.Keyboard.KeyCodes.DOWN, () => {
@@ -975,7 +1134,9 @@ c.register('.....', function (d, e) {
                         size: 'large',
                         className: 'maxWidth',
                         placeholder: r.searchPlaceholder,
-                        style: { marginBottom: 20 },
+                        style: {
+                            marginBottom: 20
+                        },
                         allowClear: !0,
                         value: u,
                         onChange: A => {
@@ -1001,28 +1162,38 @@ c.register('.....', function (d, e) {
                             focused: s === B,
                             onSelect: () => z(A)
                         }, A))
-                    }) : (0, f.jsx)(k.default.Text, { children: r.noResultsFilteredText }) : (0, f.jsx)(k.default.Text, { children: r.noResultsText })
+                    }) : (0, f.jsx)(k.default.Text, {
+                        children: r.noResultsFilteredText
+                    }) : (0, f.jsx)(k.default.Text, {
+                        children: r.noResultsText
+                    })
                 ]
             })
         });
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _k;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     let j;
     var _k = l => {
         const {
-            token: {borderRadius: m}
+            token: {
+                borderRadius: m
+            }
         } = h.default.useToken();
         return (0, f.jsx)(_l, {
             borderRadius: m,
             focused: l.focused,
             onClick: l.onSelect,
-            children: (0, f.jsx)(i.default.Text, { children: l.name })
+            children: (0, f.jsx)(i.default.Text, {
+                children: l.name
+            })
         });
     };
     const _l = g.default.div(j || (j = (m => m)`

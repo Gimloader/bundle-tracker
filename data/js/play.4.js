@@ -1,27 +1,29 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('.....', function (b, c) {
+a.register('.....', function(b, c) {
     var d, e, f, g, h;
     b.exports, b.exports = (g = a('.....'), h = a('.....'), d = {
-        21: function (i, j, k) {
-            var l = this && this.__createBinding || (Object.create ? function (m, n, o, p) {
+        21: function(i, j, k) {
+            var l = this && this.__createBinding || (Object.create ? function(m, n, o, p) {
                     void 0 === p && (p = o);
                     var q = Object.getOwnPropertyDescriptor(n, o);
                     q && !('get' in q ? !n.__esModule : q.writable || q.configurable) || (q = {
                         enumerable: !0,
-                        get: function () {
+                        get: function() {
                             return n[o];
                         }
                     }), Object.defineProperty(m, p, q);
-                } : function (m, n, o, p) {
+                } : function(m, n, o, p) {
                     void 0 === p && (p = o), m[p] = n[o];
-                }), m = this && this.__setModuleDefault || (Object.create ? function (n, o) {
+                }),
+                m = this && this.__setModuleDefault || (Object.create ? function(n, o) {
                     Object.defineProperty(n, 'default', {
                         enumerable: !0,
                         value: o
                     });
-                } : function (n, o) {
+                } : function(n, o) {
                     n.default = o;
-                }), n = this && this.__importStar || function (o) {
+                }),
+                n = this && this.__importStar || function(o) {
                     if (o && o.__esModule)
                         return o;
                     var p = {};
@@ -30,13 +32,16 @@ a.register('.....', function (b, c) {
                             'default' !== q && Object.prototype.hasOwnProperty.call(o, q) && l(p, o, q);
                     return m(p, o), p;
                 };
-            Object.defineProperty(j, '__esModule', { value: !0 }), j.Fireworks = j.useFireworks = void 0;
-            var o = n(k(156)), p = k(522);
+            Object.defineProperty(j, '__esModule', {
+                value: !0
+            }), j.Fireworks = j.useFireworks = void 0;
+            var o = n(k(156)),
+                p = k(522);
             j.useFireworks = q => {
                 var {
-                        initialStart: r = !0,
-                        initialOptions: s = {}
-                    } = q, [t, u] = (0, o.useState)(r), [v, w] = (0, o.useState)(s);
+                    initialStart: r = !0,
+                    initialOptions: s = {}
+                } = q, [t, u] = (0, o.useState)(r), [v, w] = (0, o.useState)(s);
                 return {
                     enabled: t,
                     options: v,
@@ -74,7 +79,9 @@ a.register('.....', function (b, c) {
                     super(...arguments), this._fw = null, this._ref = null;
                 }
             }
-            j.Fireworks = q, q.defaultProps = { enabled: !0 };
+            j.Fireworks = q, q.defaultProps = {
+                enabled: !0
+            };
         },
         522: i => {
             i.exports = g;
@@ -86,14 +93,18 @@ a.register('.....', function (b, c) {
         var j = e[i];
         if (void 0 !== j)
             return j.exports;
-        var k = e[i] = { exports: {} };
+        var k = e[i] = {
+            exports: {}
+        };
         return d[i].call(k.exports, k, k.exports, a), k.exports;
     }(21), f);
-}), a.register('.....', function (b, c) {
+}), a.register('.....', function(b, c) {
     b.exports, b.exports = (() => {
         var d = {
                 511: (e, f, g) => {
-                    Object.defineProperty(f, '__esModule', { value: !0 }), f.Explosion = void 0;
+                    Object.defineProperty(f, '__esModule', {
+                        value: !0
+                    }), f.Explosion = void 0;
                     var h = g(909);
                     f.Explosion = class {
                         update(i) {
@@ -129,21 +140,23 @@ a.register('.....', function (b, c) {
                     };
                 },
                 909: (e, f) => {
-                    Object.defineProperty(f, '__esModule', { value: !0 }), f.hsla = f.getDistance = f.randomInt = f.randomFloat = void 0, f.randomFloat = function (g, h) {
+                    Object.defineProperty(f, '__esModule', {
+                        value: !0
+                    }), f.hsla = f.getDistance = f.randomInt = f.randomFloat = void 0, f.randomFloat = function(g, h) {
                         return Math.random() * (h - g) + g;
-                    }, f.randomInt = function (g, h) {
+                    }, f.randomInt = function(g, h) {
                         return Math.floor(g + Math.random() * (h + 1 - g));
-                    }, f.getDistance = function (g, h, i, j) {
+                    }, f.getDistance = function(g, h, i, j) {
                         var k = Math.pow;
                         return Math.sqrt(k(g - i, 2) + k(h - j, 2));
-                    }, f.hsla = function (g, h) {
+                    }, f.hsla = function(g, h) {
                         var i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
                         return 'hsla('.concat(g, ', 100%, ').concat(h, '%, ').concat(i, ')');
                     };
                 },
-                449: function (e, f, g) {
-                    var h = this && this.__awaiter || function (i, j, k, l) {
-                        return new (k || (k = Promise))(function (m, n) {
+                449: function(e, f, g) {
+                    var h = this && this.__awaiter || function(i, j, k, l) {
+                        return new(k || (k = Promise))(function(m, n) {
                             function o(p) {
                                 try {
                                     _q(l.next(p));
@@ -151,6 +164,7 @@ a.register('.....', function (b, c) {
                                     n(p);
                                 }
                             }
+
                             function p(q) {
                                 try {
                                     _q(l.throw(q));
@@ -158,25 +172,28 @@ a.register('.....', function (b, c) {
                                     n(q);
                                 }
                             }
+
                             function _q(r) {
                                 var s;
-                                r.done ? m(r.value) : (s = r.value, s instanceof k ? s : new k(function (t) {
+                                r.done ? m(r.value) : (s = r.value, s instanceof k ? s : new k(function(t) {
                                     t(s);
                                 })).then(o, p);
                             }
                             _q((l = l.apply(i, s || [])).next());
                         });
                     };
-                    Object.defineProperty(f, '__esModule', { value: !0 }), f.Sound = void 0;
+                    Object.defineProperty(f, '__esModule', {
+                        value: !0
+                    }), f.Sound = void 0;
                     var i = g(909);
                     f.Sound = class {
                         init() {
-                            this.onInit && this.options.enabled && (this.onInit = !1, this._audioContext = new (window.AudioContext || window.webkitAudioContext)(), this.load());
+                            this.onInit && this.options.enabled && (this.onInit = !1, this._audioContext = new(window.AudioContext || window.webkitAudioContext)(), this.load());
                         }
                         load() {
-                            return h(this, void 0, void 0, function* () {
+                            return h(this, void 0, void 0, function*() {
                                 for (var j of this.options.files) {
-                                    var k = yield (yield fetch(j)).arrayBuffer();
+                                    var k = yield(yield fetch(j)).arrayBuffer();
                                     this._audioContext.decodeAudioData(k).then(l => {
                                         this._buffer.push(l);
                                     }).catch(l => {
@@ -187,7 +204,9 @@ a.register('.....', function (b, c) {
                         }
                         play() {
                             if (this.options.enabled && this._buffer.length) {
-                                var j = this._audioContext.createBufferSource(), k = this._buffer[(0, i.randomInt)(0, this._buffer.length - 1)], l = this._audioContext.createGain();
+                                var j = this._audioContext.createBufferSource(),
+                                    k = this._buffer[(0, i.randomInt)(0, this._buffer.length - 1)],
+                                    l = this._audioContext.createGain();
                                 j.buffer = k, l.gain.value = (0, i.randomFloat)(this.options.volume.min / 100, this.options.volume.max / 100), l.connect(this._audioContext.destination), j.connect(l), j.start(0);
                             } else
                                 this.init();
@@ -209,7 +228,9 @@ a.register('.....', function (b, c) {
                     };
                 },
                 668: (e, f, g) => {
-                    Object.defineProperty(f, '__esModule', { value: !0 }), f.Trace = void 0;
+                    Object.defineProperty(f, '__esModule', {
+                        value: !0
+                    }), f.Trace = void 0;
                     var h = g(909);
                     f.Trace = class {
                         update(i) {
@@ -217,7 +238,8 @@ a.register('.....', function (b, c) {
                                 this._x,
                                 this._y
                             ]), this._speed *= this._acceleration;
-                            var j = Math.cos(this._angle) * this._speed, k = Math.sin(this._angle) * this._speed;
+                            var j = Math.cos(this._angle) * this._speed,
+                                k = Math.sin(this._angle) * this._speed;
                             this._currentDistance = (0, h.getDistance)(this._sx, this._sy, this._x + j, this._y + k), this._currentDistance >= this._totalDistance ? i(this._dx, this._dy, this._hue) : (this._x += j, this._y += k);
                         }
                         draw() {
@@ -245,19 +267,28 @@ a.register('.....', function (b, c) {
                         }
                     };
                 }
-            }, e = {};
+            },
+            e = {};
+
         function f(g) {
             var h = e[g];
             if (void 0 !== h)
                 return h.exports;
-            var i = e[g] = { exports: {} };
+            var i = e[g] = {
+                exports: {}
+            };
             return d[g].call(i.exports, i, i.exports, f), i.exports;
         }
         var i = {};
         return (() => {
             var j = i;
-            Object.defineProperty(j, '__esModule', { value: !0 }), j.Fireworks = void 0;
-            var k = f(668), l = f(449), m = f(511), n = f(909);
+            Object.defineProperty(j, '__esModule', {
+                value: !0
+            }), j.Fireworks = void 0;
+            var k = f(668),
+                l = f(449),
+                m = f(511),
+                n = f(909);
             j.Fireworks = class {
                 get isRunning() {
                     return this._running;

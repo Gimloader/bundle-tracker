@@ -1,10 +1,10 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('.....', function (b, c) {
+a.register('.....', function(b, c) {
     var d, e, f, g, h;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), e = b.exports, f = 'default', g = function () {
+    }), e = b.exports, f = 'default', g = function() {
         return _v;
     }, Object.defineProperty(e, f, {
         get: g,
@@ -12,9 +12,19 @@ a.register('.....', function (b, c) {
         enumerable: !0,
         configurable: !0
     });
-    var i = a('.....'), j = a('.....'), k = a('.....'), l = a('.....'), m = a('.....');
+    var i = a('.....'),
+        j = a('.....'),
+        k = a('.....'),
+        l = a('.....'),
+        m = a('.....');
     a('.....');
-    var n = a('.....'), o = a('.....'), p = a('.....'), q = a('.....'), r = a('.....'), s = a('.....'), t = a('.....');
+    var n = a('.....'),
+        o = a('.....'),
+        p = a('.....'),
+        q = a('.....'),
+        r = a('.....'),
+        s = a('.....'),
+        t = a('.....');
     const u = v => (0, i.jsxs)('div', {
         style: {
             padding: 25,
@@ -23,9 +33,13 @@ a.register('.....', function (b, c) {
         },
         children: [
             (0, i.jsx)('div', {
-                style: { marginBottom: 5 },
+                style: {
+                    marginBottom: 5
+                },
                 children: (0, i.jsx)(m.default.Text, {
-                    style: { fontWeight: n.FontWeights.Bold },
+                    style: {
+                        fontWeight: n.FontWeights.Bold
+                    },
                     children: v.title
                 })
             }),
@@ -78,7 +92,9 @@ a.register('.....', function (b, c) {
                 className: 'maxWidth',
                 direction: 'vertical',
                 size: 14,
-                style: { marginTop: 10 },
+                style: {
+                    marginTop: 10
+                },
                 children: [
                     (0, i.jsx)(u, {
                         title: 'Career Level 50+',
@@ -127,7 +143,9 @@ a.register('.....', function (b, c) {
                         size: 'large',
                         block: !0,
                         type: 'primary',
-                        style: { height: 55 },
+                        style: {
+                            height: 55
+                        },
                         onClick: w.next,
                         children: 'Continue'
                     }),

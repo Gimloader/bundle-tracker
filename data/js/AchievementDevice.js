@@ -7,15 +7,23 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _p;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....');
     class o extends l.default {
         constructor(p) {
             super(p), (0, f.default)(this, 'onMessage', q => {
@@ -24,17 +32,17 @@ b.register('.....', function (c, d) {
         }
     }
     var _p = o;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'BaseAsset', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'BaseAsset', function() {
         return _e;
     });
     const _e = {
         imageId: 'achievement_device',
         imageUrl: (0, b('.....').default)('devices/achievement/icon.png')
     };
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
-    a(c.exports, 'Messages', function () {
+    a(c.exports, 'Messages', function() {
         return e;
     }), (e || (e = {})).show = 'show';
 });

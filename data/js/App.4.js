@@ -1,6 +1,7 @@
 function a(b) {
     return b && b.__esModule ? b.default : b;
 }
+
 function b(c, d, e, f) {
     Object.defineProperty(c, d, {
         get: e,
@@ -10,24 +11,36 @@ function b(c, d, e, f) {
     });
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(d.exports, 'default', function () {
+    }), b(d.exports, 'default', function() {
         return _r;
     });
     var g = c('.....');
     c('.....');
-    var h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....');
+    var h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....');
     let p;
     const q = {
-        out: { background: 'rgba(0,0,0,0)' },
-        in: { background: 'rgba(0,0,0,0.6)' }
+        out: {
+            background: 'rgba(0,0,0,0)'
+        },
+        in: {
+            background: 'rgba(0,0,0,0.6)'
+        }
     };
     var _r = s => {
-        const t = (0, n.useIsPresent)(), u = () => s.setToHomeScreen();
+        const t = (0, n.useIsPresent)(),
+            u = () => s.setToHomeScreen();
         return (0, l.default)(a(k).Input.Keyboard.KeyCodes.ESC, u, [u]), (0, g.jsxs)(i.default, {
             children: [
                 (0, g.jsx)(_s, {
@@ -41,23 +54,31 @@ c.register('.....', function (d, e) {
                     },
                     children: (0, g.jsx)(j.default, {})
                 }),
-                (0, g.jsx)(o.default, { onClick: u })
+                (0, g.jsx)(o.default, {
+                    onClick: u
+                })
             ]
         });
     };
-    const _s = (0, h.default)(m.motion.div).attrs({ className: 'maxAll flex-center flex-column' })(p || (p = (t => t)`
+    const _s = (0, h.default)(m.motion.div).attrs({
+        className: 'maxAll flex-center flex-column'
+    })(p || (p = (t => t)`
   position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
 `));
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _n;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....');
     let l;
     const m = {
         out: {
@@ -85,7 +106,9 @@ c.register('.....', function (d, e) {
             children: (0, f.jsx)(k.default, {})
         });
     };
-    const _o = (0, g.default)(h.motion.div).attrs({ className: 'medium-shadow flex-column' })(l || (l = (p => p)`
+    const _o = (0, g.default)(h.motion.div).attrs({
+        className: 'medium-shadow flex-column'
+    })(l || (l = (p => p)`
   padding: 40px;
   background: rgba(48, 28, 86, 0.97);
   color: ${ 0 };
@@ -96,11 +119,20 @@ c.register('.....', function (d, e) {
   border-radius: 10px;
   overflow: hidden;
 `), j.default.White);
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _t;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....');
     let p, q, r = s => s;
     const s = t => `${ t }%`;
     var _t = () => {
@@ -131,7 +163,9 @@ c.register('.....', function (d, e) {
             children: [
                 (0, n.AmIGameOwner)() ? (0, f.jsxs)(f.Fragment, {
                     children: [
-                        (0, f.jsx)(_v, { children: 'Music Volume' }),
+                        (0, f.jsx)(_v, {
+                            children: 'Music Volume'
+                        }),
                         (0, f.jsx)(g.default, {
                             min: 0,
                             max: 100,
@@ -140,12 +174,20 @@ c.register('.....', function (d, e) {
                             onChange: z => {
                                 v(z / 100), localStorage.setItem(l.default.musicVolume, (z / 100).toString()), y();
                             },
-                            tooltip: { formatter: s }
+                            tooltip: {
+                                formatter: s
+                            }
                         }),
-                        (0, f.jsx)('div', { style: { height: 20 } })
+                        (0, f.jsx)('div', {
+                            style: {
+                                height: 20
+                            }
+                        })
                     ]
                 }) : null,
-                (0, f.jsx)(_v, { children: 'Sound Effects Volume' }),
+                (0, f.jsx)(_v, {
+                    children: 'Sound Effects Volume'
+                }),
                 (0, f.jsx)(g.default, {
                     min: 0,
                     max: 100,
@@ -154,12 +196,15 @@ c.register('.....', function (d, e) {
                     onChange: z => {
                         x(z / 100), localStorage.setItem(l.default.soundEffectVolume, (z / 100).toString());
                     },
-                    tooltip: { formatter: s }
+                    tooltip: {
+                        formatter: s
+                    }
                 })
             ]
         });
     };
-    const _u = j.default.div(p || (p = r``)), _v = j.default.div(q || (q = r`
+    const _u = j.default.div(p || (p = r``)),
+        _v = j.default.div(q || (q = r`
   font-size: 24px;
   font-weight: ${ 0 };
   margin-bottom: 15px;

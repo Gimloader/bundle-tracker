@@ -6,12 +6,13 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = {
@@ -24,23 +25,29 @@ c.register('.....', function (d, e) {
             plural: 'pieces'
         }
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     var _i = () => {
         const {
-                me: j,
-                world: {devices: k}
-            } = (0, h.default)(), [l, m] = g.useState('{}'), [n, o] = g.useState('{}'), [p, q] = g.useState('{}');
+            me: j,
+            world: {
+                devices: k
+            }
+        } = (0, h.default)(), [l, m] = g.useState('{}'), [n, o] = g.useState('{}'), [p, q] = g.useState('{}');
         g.useEffect(() => {
             const r = (0, f.reaction)(() => k.devices.get(j.editing.device.currentlyEditedDevice.id), s => {
                 s && (m(JSON.stringify(s.options)), o(JSON.stringify({
                     x: s.x,
                     y: s.y
                 })), s.hooks ? q(JSON.stringify(s.hooks)) : q('{}'));
-            }, { fireImmediately: !0 });
+            }, {
+                fireImmediately: !0
+            });
             return () => {
                 r();
             };
@@ -51,61 +58,74 @@ c.register('.....', function (d, e) {
             hooks: JSON.parse(p)
         };
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _v;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....');
-    const s = 'All Options', t = (0, o.observer)(u => {
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....');
+    const s = 'All Options',
+        t = (0, o.observer)(u => {
             var v, w, x, y;
             const {
+                device: z,
+                deviceOption: A,
+                position: B,
+                options: C
+            } = u, [D, E] = g.useState(_u(A.optionSchema)), F = !(0, h.default)(), G = (H, I) => {
+                F || ((0, p.EmitTutorialEvent)({
+                    event: p.TutorialEventName.CHANGE_DEVICE_OPTION,
+                    device: z,
+                    option: H,
+                    value: I
+                }), (0, i.default)({
+                    deviceOption: A,
+                    id: z.id,
+                    x: B.x,
+                    y: B.y,
+                    depth: z.layers.getOptionsDepth(),
+                    layerId: z.layers.getOptionsLayer(),
+                    name: z.name,
+                    isPreview: !1,
+                    options: {
+                        ...C,
+                        [H]: I
+                    },
+                    placedByClient: !0,
+                    state: A.defaultState
+                }));
+            }, H = (0, f.jsx)(l.default, {
+                size: 12,
+                direction: 'vertical',
+                className: 'maxWidth',
+                children: (0, f.jsx)(j.default, {
                     device: z,
                     deviceOption: A,
-                    position: B,
+                    options: C,
+                    hooks: u.hooks,
+                    readOnly: F,
+                    handleOptionChange: G,
+                    category: D === s ? void 0 : D,
+                    setCategory: E
+                })
+            }), I = ((null === (v = A.optionSchema) || void 0 === v || null === (w = v.categories) || void 0 === w ? void 0 : w.categories) || []).filter(J => void 0 === J.supportedMapStyles || J.supportedMapStyles.includes((0, r.GetCurrentMapStyle)())).filter(J => {
+                var K;
+                return !(null === (K = J.hideIf) || void 0 === K ? void 0 : K.length) || !(0, q.ShouldHideFromHideIf)({
+                    hideIf: J.hideIf,
                     options: C
-                } = u, [D, E] = g.useState(_u(A.optionSchema)), F = !(0, h.default)(), G = (H, I) => {
-                    F || ((0, p.EmitTutorialEvent)({
-                        event: p.TutorialEventName.CHANGE_DEVICE_OPTION,
-                        device: z,
-                        option: H,
-                        value: I
-                    }), (0, i.default)({
-                        deviceOption: A,
-                        id: z.id,
-                        x: B.x,
-                        y: B.y,
-                        depth: z.layers.getOptionsDepth(),
-                        layerId: z.layers.getOptionsLayer(),
-                        name: z.name,
-                        isPreview: !1,
-                        options: {
-                            ...C,
-                            [H]: I
-                        },
-                        placedByClient: !0,
-                        state: A.defaultState
-                    }));
-                }, H = (0, f.jsx)(l.default, {
-                    size: 12,
-                    direction: 'vertical',
-                    className: 'maxWidth',
-                    children: (0, f.jsx)(j.default, {
-                        device: z,
-                        deviceOption: A,
-                        options: C,
-                        hooks: u.hooks,
-                        readOnly: F,
-                        handleOptionChange: G,
-                        category: D === s ? void 0 : D,
-                        setCategory: E
-                    })
-                }), I = ((null === (v = A.optionSchema) || void 0 === v || null === (w = v.categories) || void 0 === w ? void 0 : w.categories) || []).filter(J => void 0 === J.supportedMapStyles || J.supportedMapStyles.includes((0, r.GetCurrentMapStyle)())).filter(J => {
-                    var K;
-                    return !(null === (K = J.hideIf) || void 0 === K ? void 0 : K.length) || !(0, q.ShouldHideFromHideIf)({
-                        hideIf: J.hideIf,
-                        options: C
-                    });
                 });
+            });
             if (g.useEffect(() => {
                     D && D !== s && !I.some(J => J.id === D) && E(_u(A.optionSchema));
                 }, [
@@ -127,14 +147,22 @@ c.register('.....', function (d, e) {
                 id: s,
                 name: s
             }), (0, f.jsx)(k.default, {
-                theme: { components: { Tabs: { colorPrimary: 'yellow' } } },
+                theme: {
+                    components: {
+                        Tabs: {
+                            colorPrimary: 'yellow'
+                        }
+                    }
+                },
                 children: (0, f.jsx)(m.default, {
                     activeKey: D,
                     onChange: K => {
                         (0, n.playClickSound)(), E(K);
                     },
                     className: 'maxWidth',
-                    style: { marginTop: -18 },
+                    style: {
+                        marginTop: -18
+                    },
                     size: 'large',
                     items: J.map(K => ({
                         label: K.name,
@@ -143,7 +171,8 @@ c.register('.....', function (d, e) {
                     }))
                 })
             });
-        }), _u = v => {
+        }),
+        _u = v => {
             if (v.categories) {
                 if ('start' === v.categories.showAllOptionsAt)
                     return s;
@@ -153,30 +182,43 @@ c.register('.....', function (d, e) {
             return s;
         };
     var _v = t;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _s;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....');
     var _s = (0, p.observer)(t => {
         const {
+            device: u,
+            deviceOption: v,
+            options: w,
+            category: x,
+            setCategory: y
+        } = t, {
+            me: {
+                roleLevel: z
+            }
+        } = (0, q.default)(), A = z >= r.RoleLevelConsts.admin, B = (() => {
+            let C = (0, g.CreateOptionsFromOptionSchema)({
                 device: u,
-                deviceOption: v,
                 options: w,
-                category: x,
-                setCategory: y
-            } = t, {
-                me: {roleLevel: z}
-            } = (0, q.default)(), A = z >= r.RoleLevelConsts.admin, B = (() => {
-                let C = (0, g.CreateOptionsFromOptionSchema)({
-                    device: u,
-                    options: w,
-                    optionSchema: v.optionSchema
-                }).filter(D => !x || !(!D.categories || !D.categories.includes(x))).filter(D => (0, h.CanModifyDeviceOption)(v.id, D.key));
-                return (0, i.CanAddDeviceType)(v.id, w) || (C = [], x && y(void 0)), C;
-            })();
+                optionSchema: v.optionSchema
+            }).filter(D => !x || !(!D.categories || !D.categories.includes(x))).filter(D => (0, h.CanModifyDeviceOption)(v.id, D.key));
+            return (0, i.CanAddDeviceType)(v.id, w) || (C = [], x && y(void 0)), C;
+        })();
         return B.length ? (0, f.jsx)(j.default, {
             size: 14,
             direction: 'vertical',
@@ -199,10 +241,14 @@ c.register('.....', function (d, e) {
                         fontSize: 36,
                         color: 'rgba(255,255,255,0.85)'
                     },
-                    children: (0, f.jsx)(n.default, { name: 'fas fa-cogs' })
+                    children: (0, f.jsx)(n.default, {
+                        name: 'fas fa-cogs'
+                    })
                 }),
                 (0, f.jsx)('div', {
-                    style: { marginTop: 3 },
+                    style: {
+                        marginTop: 3
+                    },
                     children: (0, f.jsxs)(k.default.Text, {
                         children: [
                             'No options to configure for this',
@@ -215,8 +261,8 @@ c.register('.....', function (d, e) {
             ]
         });
     });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CreateOptionsFromOptionSchema', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CreateOptionsFromOptionSchema', function() {
         return _g;
     });
     var f = c('.....');
@@ -225,24 +271,27 @@ c.register('.....', function (d, e) {
         options: h.options,
         optionSchema: h.optionSchema
     });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'ShouldHideFromHideIf', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'ShouldHideFromHideIf', function() {
         return _j;
-    }), a(d.exports, 'FilterOutHiddenOptions', function () {
+    }), a(d.exports, 'FilterOutHiddenOptions', function() {
         return _k;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const h = [
             'shadowsEnabled',
             'shadowsPlacement'
-        ], i = [
+        ],
+        i = [
             'canBeDamaged',
             'health',
             'useAdaptiveHealth',
             'adaptiveHealthPerPlayer',
             'onDestroyedChannel',
             'UseColliders'
-        ], _j = k => {
+        ],
+        _j = k => {
             var l;
             let m = !1;
             return (null === (l = k.hideIf) || void 0 === l ? void 0 : l.length) && k.hideIf.forEach(n => {
@@ -263,7 +312,8 @@ c.register('.....', function (d, e) {
                     return !1;
                 }) && (m = !0);
             }), m;
-        }, _k = l => {
+        },
+        _k = l => {
             let m = l.optionSchema.options.filter(n => !n.option.hidden).filter(n => {
                 var o;
                 let p = !1;
@@ -274,7 +324,8 @@ c.register('.....', function (d, e) {
             });
             if (l.device.deviceOption.id === f.default.prop) {
                 var n, o, p, q;
-                const r = l.device.options, s = (0, g.default)(r.propId);
+                const r = l.device.options,
+                    s = (0, g.default)(r.propId);
                 if (!s)
                     return m;
                 var t, u, v;
@@ -285,11 +336,14 @@ c.register('.....', function (d, e) {
             }
             return m;
         };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CanModifyDeviceOption', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CanModifyDeviceOption', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     const _j = (k, l) => {
         const m = (0, h.FetchDeviceOptionById)(k);
         if (!m)
@@ -306,37 +360,45 @@ c.register('.....', function (d, e) {
         const r = null !== (q = null == n ? void 0 : n.maximumRoleLevel) && void 0 !== q ? q : f.RoleLevelConsts.max;
         return (0, i.IsRoleLevelBetween)(p, r);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CanModifyDeviceOptionForCurrentMapStyle', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CanModifyDeviceOptionForCurrentMapStyle', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const _h = i => {
         const {
-                deviceTypeId: j,
-                optionName: k
-            } = i, l = (0, f.FetchDeviceOptionById)(j);
+            deviceTypeId: j,
+            optionName: k
+        } = i, l = (0, f.FetchDeviceOptionById)(j);
         if (!l)
             return !1;
         const m = l.optionSchema.options.find(n => n.key === k);
         return !!m && (!m.supportedMapStyles || m.supportedMapStyles.includes((0, g.GetCurrentMapStyle)()));
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _q;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....');
     let n, o, p = q => q;
     var _q = r => {
         const {
-                option: s,
-                value: t,
-                onChange: u,
-                readOnly: v
-            } = r, {
-                label: w,
-                description: x
-            } = s.option, [y, z, A] = (0, m.useBoolean)(!1);
+            option: s,
+            value: t,
+            onChange: u,
+            readOnly: v
+        } = r, {
+            label: w,
+            description: x
+        } = s.option, [y, z, A] = (0, m.useBoolean)(!1);
         return (0, f.jsxs)(_r, {
             children: [
                 (0, f.jsxs)('div', {
@@ -345,7 +407,9 @@ c.register('.....', function (d, e) {
                         (0, f.jsx)('div', {
                             children: (0, f.jsx)(h.default.Title, {
                                 level: 5,
-                                style: { fontWeight: j.FontWeights.Bold },
+                                style: {
+                                    fontWeight: j.FontWeights.Bold
+                                },
                                 children: w
                             })
                         }),
@@ -353,7 +417,9 @@ c.register('.....', function (d, e) {
                             size: 'small',
                             shape: 'circle',
                             type: 'link',
-                            icon: (0, f.jsx)('i', { className: 'far fa-cog' }),
+                            icon: (0, f.jsx)('i', {
+                                className: 'far fa-cog'
+                            }),
                             onClick: z
                         }) : null
                     ]
@@ -365,7 +431,9 @@ c.register('.....', function (d, e) {
                     })
                 }) : null,
                 (0, f.jsx)(_s, {
-                    style: { marginTop: 5 },
+                    style: {
+                        marginTop: 5
+                    },
                     children: (0, f.jsx)(k.default, {
                         value: t,
                         option: s.option,
@@ -381,18 +449,31 @@ c.register('.....', function (d, e) {
             ]
         });
     };
-    const _r = i.default.div.attrs({ className: 'maxWidth' })(n || (n = p`
+    const _r = i.default.div.attrs({
+            className: 'maxWidth'
+        })(n || (n = p`
   padding: 20px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.07);
-`)), _s = i.default.div.attrs({ className: 'maxWidth' })(o || (o = p``));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+`)),
+        _s = i.default.div.attrs({
+            className: 'maxWidth'
+        })(o || (o = p``));
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _p;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....');
     var _p = q => {
         const {
             option: r,
@@ -440,16 +521,19 @@ c.register('.....', function (d, e) {
             readOnly: q.readOnly
         }) : null;
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     var _j = k => {
         const {
-                value: l,
-                optionProps: m
-            } = k, [n, o] = i.useState(l);
+            value: l,
+            optionProps: m
+        } = k, [n, o] = i.useState(l);
         i.useEffect(() => {
             o(l);
         }, [l]);
@@ -479,25 +563,37 @@ c.register('.....', function (d, e) {
             min: m.min,
             max: m.max,
             step: m.step,
-            style: { width: '100%' },
+            style: {
+                width: '100%'
+            },
             disabled: k.readOnly,
             placeholder: 'Enter a value...'
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _m;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     var _m = n => {
         var o;
-        const {optionProps: p} = n, q = i.useMemo(() => {
-                if ('' !== n.value)
-                    return n.value;
-            }, [n.value]), r = i.useMemo(() => p.options.some(s => 'Fugaz One' === s.value), [null == p ? void 0 : p.options]);
+        const {
+            optionProps: p
+        } = n, q = i.useMemo(() => {
+            if ('' !== n.value)
+                return n.value;
+        }, [n.value]), r = i.useMemo(() => p.options.some(s => 'Fugaz One' === s.value), [null == p ? void 0 : p.options]);
         i.useEffect(() => {
             r && p.options.forEach(s => {
-                (0, k.default)({ familyName: s.name });
+                (0, k.default)({
+                    familyName: s.name
+                });
             });
         }, [r]);
         const s = null == p || null === (o = p.options) || void 0 === o ? void 0 : o.filter(t => !((null == t ? void 0 : t.supportedMapStyles) && !(null == t ? void 0 : t.supportedMapStyles.includes((0, l.GetCurrentMapStyle)()))) && (void 0 === (null == t ? void 0 : t.minimumRoleLevel) && void 0 === (null == t ? void 0 : t.maximumRoleLevel) || (0, j.IsRoleLevelBetween)(null == t ? void 0 : t.minimumRoleLevel, null == t ? void 0 : t.maximumRoleLevel)));
@@ -515,11 +611,15 @@ c.register('.....', function (d, e) {
             filterOption: (u, v) => !!(v && v.name && v.name.toString().toUpperCase && u && u.toUpperCase) && -1 !== v.name.toString().toUpperCase().indexOf(u.toUpperCase()),
             showSearch: !0,
             disabled: n.readOnly,
-            style: { width: '100%' },
+            style: {
+                width: '100%'
+            },
             children: s.map(u => (0, f.jsx)(g.default.Option, {
                 value: u.value,
                 name: u.name,
-                style: r ? { fontFamily: u.value } : void 0,
+                style: r ? {
+                    fontFamily: u.value
+                } : void 0,
                 children: u.image ? (0, f.jsxs)(h.default, {
                     direction: 'horizontal',
                     size: 6,
@@ -531,30 +631,47 @@ c.register('.....', function (d, e) {
                                 maxWidth: 30
                             }
                         }),
-                        (0, f.jsx)('div', { children: u.name })
+                        (0, f.jsx)('div', {
+                            children: u.name
+                        })
                     ]
                 }) : u.name
             }, `option-${ u.value }`))
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _s;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....');
     var _s = t => {
         const {
-                value: u,
-                optionProps: v
-            } = t, [w, x] = i.useState(t.value);
+            value: u,
+            optionProps: v
+        } = t, [w, x] = i.useState(t.value);
         i.useEffect(() => {
             x(u);
         }, [u]);
         const y = i.useMemo(() => {
                 if (null == v ? void 0 : v.category) {
-                    const z = (0, j.default)(v.category).map(A => ({ option: A }));
+                    const z = (0, j.default)(v.category).map(A => ({
+                        option: A
+                    }));
                     if (v.category === l.default.property) {
-                        const A = (0, k.GetPropertiesWithoutMatchingPropertyDevice)(), B = z.filter(C => !A.includes(C.option));
+                        const A = (0, k.GetPropertiesWithoutMatchingPropertyDevice)(),
+                            B = z.filter(C => !A.includes(C.option));
                         return [
                             ...A.map(C => ({
                                 option: C,
@@ -566,7 +683,8 @@ c.register('.....', function (d, e) {
                     return z;
                 }
                 return [];
-            }, []), z = () => {
+            }, []),
+            z = () => {
                 t.onChange(null == w ? void 0 : w.trim());
             };
         if (v.codeEditor)
@@ -597,13 +715,16 @@ c.register('.....', function (d, e) {
                 onChange: A => x(A.target.value),
                 onBlur: z,
                 placeholder: v.placeholder,
-                style: { width: '100%' }
+                style: {
+                    width: '100%'
+                }
             });
         const A = (() => {
             if ((null == v ? void 0 : v.category) === l.default.property && y.length) {
                 let B = [];
                 if (y.some(C => C.noMatchingDevice)) {
-                    const C = y.filter(D => D.noMatchingDevice), D = y.filter(E => !E.noMatchingDevice);
+                    const C = y.filter(D => D.noMatchingDevice),
+                        D = y.filter(E => !E.noMatchingDevice);
                     if (B.push({
                             label: (0, f.jsxs)(f.Fragment, {
                                 children: [
@@ -612,15 +733,23 @@ c.register('.....', function (d, e) {
                                     m.default.device.singular
                                 ]
                             }),
-                            options: C.map(E => ({ value: E.option }))
+                            options: C.map(E => ({
+                                value: E.option
+                            }))
                         }), D.length)
                         return B.push({
-                            label: (0, f.jsx)(f.Fragment, { children: 'All other properties' }),
-                            options: D.map(E => ({ value: E.option }))
+                            label: (0, f.jsx)(f.Fragment, {
+                                children: 'All other properties'
+                            }),
+                            options: D.map(E => ({
+                                value: E.option
+                            }))
                         }), B;
                 }
             }
-            return y.map(D => ({ value: D.option }));
+            return y.map(D => ({
+                value: D.option
+            }));
         })();
         return (0, f.jsx)(g.default, {
             value: w,
@@ -629,7 +758,9 @@ c.register('.....', function (d, e) {
                 x(B);
             },
             onBlur: z,
-            style: { width: '100%' },
+            style: {
+                width: '100%'
+            },
             placeholder: v.placeholder || 'Enter a value...',
             filterOption: (B, C) => {
                 var D;
@@ -639,11 +770,16 @@ c.register('.....', function (d, e) {
             disabled: t.readOnly
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _l;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....');
     var _l = (m, n) => {
         if (!m)
             return [];
@@ -660,7 +796,8 @@ c.register('.....', function (d, e) {
                 }
             });
         });
-        const p = [], q = r => {
+        const p = [],
+            q = r => {
                 if ((r = r.trim()).length)
                     if (m === i.default.channel && r.includes(',')) {
                         r.split(',').forEach(q);
@@ -675,7 +812,7 @@ c.register('.....', function (d, e) {
             var s, t;
             null === (s = j.default.world.devices.codeGrids.get(r.id)) || void 0 === s || null === (t = s.items) || void 0 === t || t.forEach(u => {
                 if (u.triggerType === h.default.broadcastMessage && u.triggerValue && q(u.triggerValue), u.json) {
-                    const v = new (b(f)).Workspace();
+                    const v = new(b(f)).Workspace();
                     b(f).serialization.workspaces.load(JSON.parse(u.json), v);
                     v.getAllBlocks(!0).forEach(w => {
                         if ((w.type === g.default.messageBroadcaster || w.type === g.default.playerProximityMessageBroadcaster) && w.getChildren(!0).length) {
@@ -692,7 +829,7 @@ c.register('.....', function (d, e) {
             var s, t;
             null === (s = j.default.world.devices.codeGrids.get(r.id)) || void 0 === s || null === (t = s.items) || void 0 === t || t.forEach(u => {
                 if (u.json) {
-                    const v = new (b(f)).Workspace();
+                    const v = new(b(f)).Workspace();
                     b(f).serialization.workspaces.load(JSON.parse(u.json), v);
                     v.getAllBlocks(!0).forEach(w => {
                         if ((w.type === g.default.setProperty || w.type === g.default.getProperty || w.type === g.default.playerProximityGetProperty || w.type === g.default.playerProximitySetProperty) && w.getChildren(!0).length) {
@@ -707,8 +844,8 @@ c.register('.....', function (d, e) {
             });
         })), p;
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = {
@@ -719,31 +856,36 @@ c.register('.....', function (d, e) {
         playerProximitySetProperty: 'other_character_set_property',
         playerProximityGetProperty: 'other_character_get_property'
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
-    var _f = { broadcastMessage: 'channel_radio' };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+    var _f = {
+        broadcastMessage: 'channel_radio'
+    };
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = {
         channel: 'channel',
         property: 'property'
     };
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     let f;
     var g;
-    a(d.exports, 'default', function () {
+    a(d.exports, 'default', function() {
         return _h;
     }), (g = f || (f = {})).textInput = 'textInput', g.numberInput = 'numberInput', g.select = 'select', g.color = 'color', g.itemId = 'itemId', g.terrainId = 'terrainId', g.skinId = 'skinId', g.itemsList = 'itemsList';
     var _h = f;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'GetPropertiesWithoutMatchingPropertyDevice', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'GetPropertiesWithoutMatchingPropertyDevice', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     const _j = () => {
         const k = [];
         f.default.world.devices.devices.forEach(l => {
@@ -754,11 +896,13 @@ c.register('.....', function (d, e) {
         });
         return (0, h.default)(i.default.property).filter(l => !k.includes(l));
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _l;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     let i, j, k = l => l;
     var _l = m => {
         const n = (0, g.useDebounceCallback)(o => {
@@ -781,21 +925,26 @@ c.register('.....', function (d, e) {
     const _m = h.default.div(i || (i = k`
   width: 100%;
   ${ 0 }
-`), n => n.readOnly && 'cursor: not-allowed;'), _n = h.default.div(j || (j = k`
+`), n => n.readOnly && 'cursor: not-allowed;'),
+        _n = h.default.div(j || (j = k`
   width: 100%;
   ${ 0 }
 `), o => o.readOnly && 'pointer-events: none; opacity: 0.6');
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _m;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....');
     const k = l => l.filter(m => {
             const n = (0, i.FetchItemOption)(m);
             return !!n && !!(0, j.IsRoleLevelBetween)(n.minimumRoleLevel, n.maximumRoleLevel);
-        }), l = m => {
+        }),
+        l = m => {
             const n = [];
             return h.default.worldOptions.itemOptions.forEach(o => {
                 var p;
@@ -803,10 +952,12 @@ c.register('.....', function (d, e) {
             }), n;
         };
     var _m = n => {
-        const o = l(n.optionProps), p = k(o).map(q => ({
+        const o = l(n.optionProps),
+            p = k(o).map(q => ({
                 value: q,
                 name: (0, i.FetchItemOption)(q).editorName
-            })), q = {
+            })),
+            q = {
                 placeholder: 'Select an item',
                 allowEmpty: !0,
                 options: p
@@ -818,18 +969,21 @@ c.register('.....', function (d, e) {
             optionProps: q
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _j;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     var _j = k => {
         const l = h.default.worldOptions.terrainOptions.filter(m => (0, i.CanAddTerrain)(m.id)).map(m => ({
                 value: m.id,
                 name: m.name
-            })), m = {
+            })),
+            m = {
                 placeholder: 'Select a terrain',
                 allowEmpty: k.optionProps.allowEmpty,
                 options: l
@@ -841,13 +995,16 @@ c.register('.....', function (d, e) {
             optionProps: m
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _k;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....');
     var _k = l => {
         var m;
         const n = h.default.worldOptions.skinOptions.filter(o => (0, i.IsRoleLevelBetween)(o.minimumRoleLevel, o.maximumRoleLevel)).map(o => ({
@@ -868,11 +1025,16 @@ c.register('.....', function (d, e) {
             optionProps: p
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _w;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....');
     let l, m, n, o, p, q, r, s, t, u, v = w => w;
     var _w = x => {
         var y, z;
@@ -902,7 +1064,9 @@ c.register('.....', function (d, e) {
                                             type: 'danger',
                                             ariaLabel: 'Remove Item',
                                             size: 'small',
-                                            children: (0, f.jsx)(k.default, { name: 'fas fa-trash' })
+                                            children: (0, f.jsx)(k.default, {
+                                                name: 'fas fa-trash'
+                                            })
                                         })
                                     ]
                                 }),
@@ -910,7 +1074,9 @@ c.register('.....', function (d, e) {
                                     children: [
                                         (0, f.jsxs)(_C, {
                                             children: [
-                                                (0, f.jsx)(_D, { children: 'Item' }),
+                                                (0, f.jsx)(_D, {
+                                                    children: 'Item'
+                                                }),
                                                 (0, f.jsx)(_E, {
                                                     children: (0, f.jsx)(i.default, {
                                                         value: A.itemId,
@@ -1008,42 +1174,52 @@ c.register('.....', function (d, e) {
     const _x = h.default.div(l || (l = v`
   width: 100%;
   ${ 0 }
-`), y => y.readOnly && 'cursor: not-allowed;'), _y = h.default.div(m || (m = v`
+`), y => y.readOnly && 'cursor: not-allowed;'),
+        _y = h.default.div(m || (m = v`
   width: 100%;
   ${ 0 }
-`), z => z.readOnly && 'pointer-events: none; opacity: 0.6'), _z = h.default.div(n || (n = v`
+`), z => z.readOnly && 'pointer-events: none; opacity: 0.6'),
+        _z = h.default.div(n || (n = v`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
-`)), _A = h.default.div(o || (o = v`
+`)),
+        _A = h.default.div(o || (o = v`
   font-weight: bold;
   font-size: 1.1em;
-`)), _B = h.default.div(p || (p = v`
+`)),
+        _B = h.default.div(p || (p = v`
   margin-left: 16px;
   margin-bottom: 24px;
-`)), _C = h.default.div(q || (q = v`
+`)),
+        _C = h.default.div(q || (q = v`
   display: flex;
   align-items: center;
   margin-bottom: 12px;
   gap: 16px;
-`)), _D = h.default.div(r || (r = v`
+`)),
+        _D = h.default.div(r || (r = v`
   width: 120px;
   font-weight: 500;
-`)), _E = h.default.div(s || (s = v`
+`)),
+        _E = h.default.div(s || (s = v`
   flex: 1;
   overflow: hidden;
-`)), _F = h.default.div(t || (t = v`
+`)),
+        _F = h.default.div(t || (t = v`
   flex: 1;
   overflow: hidden;
-`)), _G = h.default.div(u || (u = v`
+`)),
+        _G = h.default.div(u || (u = v`
   margin-top: 8px;
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const h = b(g).lazy(() => c('.....'));
     var _i = j => {
         const [k, l] = b(g).useState(!1);
@@ -1051,27 +1227,29 @@ c.register('.....', function (d, e) {
             j.visible && l(!0);
         }, [j.visible]), k ? (0, f.jsx)(b(g).Suspense, {
             fallback: null,
-            children: (0, f.jsx)(h, { ...j })
+            children: (0, f.jsx)(h, {
+                ...j
+            })
         }) : null;
     };
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     d.exports = import('./' + c('.....').resolve('h0LK7')).then(() => c('.....'));
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     var f, g;
-    a(d.exports, 'register', function () {
+    a(d.exports, 'register', function() {
         return f;
-    }, function (h) {
+    }, function(h) {
         return f = h;
-    }), a(d.exports, 'resolve', function () {
+    }), a(d.exports, 'resolve', function() {
         return g;
-    }, function (h) {
+    }, function(h) {
         return g = h;
     });
     var h = {};
-    f = function (i) {
+    f = function(i) {
         for (var j = Object.keys(i), k = 0; k < j.length; k++)
             h[j[k]] = i[j[k]];
-    }, g = function (i) {
+    }, g = function(i) {
         var j = h[i];
         if (null == j)
             throw new Error('Could not resolve bundle with id ' + i);

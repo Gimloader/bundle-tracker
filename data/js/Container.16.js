@@ -7,18 +7,23 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     var _i = j => (0, e.jsx)(h.default, {
         emoji: j.emoji,
         title: j.title,
         description: j.description,
         children: (0, e.jsx)(f.default, {
             value: j.value,
-            style: { width: j.customWidth || g.default.optionWidth },
+            style: {
+                width: j.customWidth || g.default.optionWidth
+            },
             size: 'large',
             onChange: k => j.onValueChanged(k),
             disabled: j.readOnly,
@@ -28,8 +33,8 @@ b.register('.....', function (c, d) {
             }, `${ j.title || 'no-title' }-${ k.value }`))
         })
     });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
     var e = b('.....');
@@ -39,35 +44,46 @@ b.register('.....', function (c, d) {
         children: [
             (0, e.jsxs)(f.OptionInfoContainer, {
                 children: [
-                    h.emoji ? (0, e.jsx)(f.OptionEmoji, { children: h.emoji }) : null,
+                    h.emoji ? (0, e.jsx)(f.OptionEmoji, {
+                        children: h.emoji
+                    }) : null,
                     (0, e.jsxs)('div', {
                         children: [
-                            (0, e.jsx)(f.OptionTitle, { children: h.title }),
-                            h.description ? (0, e.jsx)(f.OptionDescription, { children: h.description }) : null
+                            (0, e.jsx)(f.OptionTitle, {
+                                children: h.title
+                            }),
+                            h.description ? (0, e.jsx)(f.OptionDescription, {
+                                children: h.description
+                            }) : null
                         ]
                     })
                 ]
             }),
-            (0, e.jsx)(f.OptionChangerContainer, { children: h.children })
+            (0, e.jsx)(f.OptionChangerContainer, {
+                children: h.children
+            })
         ]
     });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'OptionContainer', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'OptionContainer', function() {
         return _n;
-    }), a(c.exports, 'OptionInfoContainer', function () {
+    }), a(c.exports, 'OptionInfoContainer', function() {
         return _o;
-    }), a(c.exports, 'OptionEmoji', function () {
+    }), a(c.exports, 'OptionEmoji', function() {
         return _p;
-    }), a(c.exports, 'OptionTitle', function () {
+    }), a(c.exports, 'OptionTitle', function() {
         return _q;
-    }), a(c.exports, 'OptionDescription', function () {
+    }), a(c.exports, 'OptionDescription', function() {
         return _r;
-    }), a(c.exports, 'OptionChangerContainer', function () {
+    }), a(c.exports, 'OptionChangerContainer', function() {
         return _s;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     let g, h, i, j, k, l, m = n => n;
-    const _n = f.default.div.attrs({ className: 'maxWidth flex vc between' })(g || (g = m`
+    const _n = f.default.div.attrs({
+            className: 'maxWidth flex vc between'
+        })(g || (g = m`
   box-sizing: border-box;
   padding: 13px 20px;
   border-style: solid;
@@ -81,24 +97,37 @@ b.register('.....', function (c, d) {
   &:hover {
     transform: scale(1.02);
   }
-`)), _o = f.default.div.attrs({ className: 'flex vc' })(h || (h = m``)), _p = f.default.div(i || (i = m`
+`)),
+        _o = f.default.div.attrs({
+            className: 'flex vc'
+        })(h || (h = m``)),
+        _p = f.default.div(i || (i = m`
   font-size: 23px;
   margin-right: 10px;
-`)), _q = f.default.div(j || (j = m`
+`)),
+        _q = f.default.div(j || (j = m`
   font-size: 23px;
   font-weight: ${ 0 };
-`), e.FontWeights.Bold), _r = f.default.div(k || (k = m`
+`), e.FontWeights.Bold),
+        _r = f.default.div(k || (k = m`
   font-size: 15px;
   margin-top: -2px;
-`)), _s = f.default.div(l || (l = m`
+`)),
+        _s = f.default.div(l || (l = m`
   flex-shrink: 0;
   margin-left: 25px;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _l;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....');
     var _l = m => {
         const n = f.useCallback(o => {
             if ((0, j.isNil)(o) && m.allowEmpty)
@@ -130,23 +159,28 @@ b.register('.....', function (c, d) {
                 max: m.max,
                 min: m.min,
                 step: m.step,
-                style: { width: m.customWidth || g.default.optionWidth },
+                style: {
+                    width: m.customWidth || g.default.optionWidth
+                },
                 onChange: o,
                 disabled: m.readOnly
             })
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _f;
     });
     var e = b('.....');
     var _f = g => '' === g ? '' : isNaN(Number(g)) ? String(g) : (0, e.numberWithCommas)(Number(g));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     var _i = j => {
         const [k, l] = g.useState(j.value), [m, n] = g.useState(j.value), [o, p, q] = (0, h.useBoolean)(!1);
         g.useEffect(() => {
@@ -164,11 +198,13 @@ b.register('.....', function (c, d) {
             }
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....');
     const h = (i, j) => {
         var k;
         return null === (k = JSON.parse(localStorage.getItem(g.LocalStorageNames.hookSavedOptions) || '{}')[j]) || void 0 === k ? void 0 : k[i];
@@ -176,10 +212,10 @@ b.register('.....', function (c, d) {
     var _i = j => {
         var k;
         const {
-                hookJSON: l,
-                experienceId: m,
-                kitId: n
-            } = j, o = {};
+            hookJSON: l,
+            experienceId: m,
+            kitId: n
+        } = j, o = {};
         return null == l || null === (k = l.hooks) || void 0 === k || k.forEach(p => {
             if (p.type === f.HookType.kit)
                 o[p.key] = n || '';
@@ -210,15 +246,24 @@ b.register('.....', function (c, d) {
             }
         }), o;
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _m;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....');
     var _m = (0, g.observer)(n => {
-        const [o] = h.useState(() => (0, f.observable)(n.defaultState || (0, l.default)({ hookJSON: n.hooks }))), p = (q, r) => {
-                o[q] = r;
-            }, q = (0, f.toJS)(o), r = JSON.stringify(q);
+        const [o] = h.useState(() => (0, f.observable)(n.defaultState || (0, l.default)({
+            hookJSON: n.hooks
+        }))), p = (q, r) => {
+            o[q] = r;
+        }, q = (0, f.toJS)(o), r = JSON.stringify(q);
         h.useEffect(() => {
             n.onConnectedResourcesChange && n.onConnectedResourcesChange((0, j.default)(n, q)), n.readOnly || n.onStateChange && n.onStateChange(q);
         }, [
@@ -238,22 +283,30 @@ b.register('.....', function (c, d) {
                             location: n.location,
                             readOnly: n.readOnly
                         }),
-                        u !== s.length - 1 && (0, e.jsx)('div', { style: { height: 10 } })
+                        u !== s.length - 1 && (0, e.jsx)('div', {
+                            style: {
+                                height: 10
+                            }
+                        })
                     ]
                 }, `hook-form-${ t.key }`)),
                 n.footer ? n.footer(s.length) : null
             ]
         });
     });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _j;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....');
     var _j = k => {
-        const l = k.state[k.hook.key], m = n => {
+        const l = k.state[k.hook.key],
+            m = n => {
                 k.modifyState(k.hook.key, n);
             };
         return k.hook.type === f.HookType.selectBox ? (0, e.jsx)(i.default, {
@@ -274,13 +327,15 @@ b.register('.....', function (c, d) {
             readOnly: k.readOnly
         }) : null;
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _i;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     var _i = j => {
         let {
             title: k,
@@ -299,13 +354,15 @@ b.register('.....', function (c, d) {
             readOnly: m.readOnly
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _i;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     var _i = j => (0, e.jsx)(h.default, {
         emoji: j.emoji,
         title: j.title,
@@ -314,24 +371,26 @@ b.register('.....', function (c, d) {
             size: 'large',
             value: j.value,
             placeholder: j.placeholder,
-            style: { width: j.customWidth || g.default.optionWidth },
+            style: {
+                width: j.customWidth || g.default.optionWidth
+            },
             onChange: k => {
                 j.onValueChanged(k.target.value);
             },
             disabled: j.readOnly
         })
     });
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
     let g;
-    a(c.exports, 'HookFormLocation', function () {
+    a(c.exports, 'HookFormLocation', function() {
         return e;
-    }), a(c.exports, 'IHookConnectedResourceType', function () {
+    }), a(c.exports, 'IHookConnectedResourceType', function() {
         return g;
     }), (f = e || (e = {})).editor = 'editor', f.experiencePicker = 'experiencePicker', (g || (g = {})).kit = 'kit';
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _e;
     });
     var _e = f => {
@@ -341,24 +400,26 @@ b.register('.....', function (c, d) {
             description: h
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     b('.....');
-    var g = b('.....'), h = b('.....');
+    var g = b('.....'),
+        h = b('.....');
     var _i = j => {
         const {
-                title: k,
-                description: l
-            } = (0, h.default)(j.hook), m = j.hook.options;
+            title: k,
+            description: l
+        } = (0, h.default)(j.hook), m = j.hook.options;
         return (0, e.jsx)(g.default, {
             title: k,
             description: l,
             value: j.value,
             onValueChanged: n => {
-                !(0, f.isNil)(n) || (0, f.isNil)(m.defaultValue) ? j.onChange(n) : j.onChange(m.defaultValue);
+                !(0, f.isNil)(n) || (0, f.isNil)(m.defaultValue) ? j.onChange(n): j.onChange(m.defaultValue);
             },
             min: m.min,
             max: m.max,
@@ -367,18 +428,19 @@ b.register('.....', function (c, d) {
             readOnly: j.readOnly
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _h;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....');
+    var f = b('.....'),
+        g = b('.....');
     var _h = i => {
         const {
-                title: j,
-                description: k
-            } = (0, g.default)(i.hook), l = i.hook.options;
+            title: j,
+            description: k
+        } = (0, g.default)(i.hook), l = i.hook.options;
         return (0, e.jsx)(f.default, {
             title: j,
             description: k,
@@ -391,11 +453,14 @@ b.register('.....', function (c, d) {
             readOnly: i.readOnly
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     var _i = (j, k) => {
         const l = [];
         return (0, h.default)({
@@ -408,11 +473,13 @@ b.register('.....', function (c, d) {
             });
         }), (0, e.uniqBy)(l, 'value');
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _h;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....');
     var _h = (i, j) => {
         var k, l;
         const m = [];
@@ -434,14 +501,17 @@ b.register('.....', function (c, d) {
                     return !1;
                 return !!(null === (t = r.conditions) || void 0 === t ? void 0 : t.every(u => {
                     if (u.type === e.HiddenConditionType.hookValue) {
-                        const v = u.options, w = v.value, x = j[v.key];
+                        const v = u.options,
+                            w = v.value,
+                            x = j[v.key];
                         if (v.compare === e.HookValueHiddenConditionCompare.equal) {
                             if (w == x)
                                 return !0;
                         } else if (v.compare === e.HookValueHiddenConditionCompare.notEqual && w != x)
                             return !0;
                     } else if (u.type === e.HiddenConditionType.modeType) {
-                        const y = v.modeType, z = u.options;
+                        const y = v.modeType,
+                            z = u.options;
                         return z.compare === e.ModeTypeHiddenConditionCompare.equal ? y === z.mode : y !== z.mode;
                     }
                     return !1;
@@ -449,18 +519,18 @@ b.register('.....', function (c, d) {
             })) || m.push(n);
         }), m;
     };
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
     let g;
     var h;
     let i;
     var j;
-    a(c.exports, 'HiddenConditionType', function () {
+    a(c.exports, 'HiddenConditionType', function() {
         return e;
-    }), a(c.exports, 'HookValueHiddenConditionCompare', function () {
+    }), a(c.exports, 'HookValueHiddenConditionCompare', function() {
         return g;
-    }), a(c.exports, 'ModeTypeHiddenConditionCompare', function () {
+    }), a(c.exports, 'ModeTypeHiddenConditionCompare', function() {
         return i;
     }), (f = e || (e = {})).hookValue = 'hookValue', f.modeType = 'modeType', (h = g || (g = {})).equal = 'EQUAL', h.notEqual = 'NOT_EQUAL', (j = i || (i = {})).equal = 'EQUAL', j.notEqual = 'NOT_EQUAL';
 });

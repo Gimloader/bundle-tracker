@@ -6,20 +6,24 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
-    a(d.exports, 'rarityToColor', function () {
+c.register('.....', function(d, e) {
+    a(d.exports, 'rarityToColor', function() {
         return _i;
-    }), a(d.exports, 'rarityToBackground', function () {
+    }), a(d.exports, 'rarityToBackground', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
-    const _i = j => j === h.CosmeticRarity.common ? g.default.rarities.common : j === h.CosmeticRarity.uncommon ? g.default.rarities.uncommon : j === h.CosmeticRarity.rare ? g.default.rarities.rare : j === h.CosmeticRarity.epic ? g.default.rarities.epic : j === h.CosmeticRarity.legendary ? g.default.rarities.legendary : j === h.CosmeticRarity.mythic ? g.default.rarities.mythic : f.default.White, _j = k => `radial-gradient(circle, rgba(255,255,255,1) 0%, ${ _i(k) } 100%)`;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
+    const _i = j => j === h.CosmeticRarity.common ? g.default.rarities.common : j === h.CosmeticRarity.uncommon ? g.default.rarities.uncommon : j === h.CosmeticRarity.rare ? g.default.rarities.rare : j === h.CosmeticRarity.epic ? g.default.rarities.epic : j === h.CosmeticRarity.legendary ? g.default.rarities.legendary : j === h.CosmeticRarity.mythic ? g.default.rarities.mythic : f.default.White,
+        _j = k => `radial-gradient(circle, rgba(255,255,255,1) 0%, ${ _i(k) } 100%)`;
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = {
@@ -32,40 +36,46 @@ c.register('.....', function (d, e) {
             mythic: '#cba638'
         }
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'cosmeticTypeName', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'cosmeticTypeName', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const _h = i => i === g.CosmeticType.character ? f.default.character : i === g.CosmeticType.sticker ? f.default.sticker : i === g.CosmeticType.trail ? f.default.trail : 'Cosmetic';
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'playClickSound', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'playClickSound', function() {
         return _i;
-    }), a(d.exports, 'playPackClickSound', function () {
+    }), a(d.exports, 'playPackClickSound', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     const _i = () => {
             (0, h.playSound)({
                 path: (0, g.default)('cosmos/pop.mp3'),
                 volume: 0.4
             });
-        }, _j = () => {
+        },
+        _j = () => {
             (0, h.playSound)({
                 path: (0, g.default)(`cosmos/packButton${ (0, f.random)(1, 2) }.mp3`),
                 volume: 0.4
             });
         };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     var _i = j => {
         const [k, l] = g.useState(!0), {
-                open: m,
-                close: n
-            } = j;
+            open: m,
+            close: n
+        } = j;
         g.useEffect(() => {
             j.open && l(!1);
         }, [m]);
@@ -78,11 +88,20 @@ c.register('.....', function (d, e) {
             }
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _q;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....');
     let p;
     var _q = r => {
         const [s, t] = g.useState(0);
@@ -105,7 +124,9 @@ c.register('.....', function (d, e) {
                     children: s ? (0, f.jsx)(o.SoldScreen, {
                         ...r,
                         soldAmount: s
-                    }) : r.purchased ? (0, f.jsx)(n.default, { ...r }) : (0, f.jsx)(l.default, {
+                    }) : r.purchased ? (0, f.jsx)(n.default, {
+                        ...r
+                    }) : (0, f.jsx)(l.default, {
                         ...r,
                         setSoldAmount: t
                     })
@@ -120,22 +141,30 @@ c.register('.....', function (d, e) {
     padding: 0px !important;
   }
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'Bottom', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'Bottom', function() {
         return _q;
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _p;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....');
     let o;
     var _p = q => {
         var r;
         const [s, t] = g.useState(null !== (r = q.editStyles) && void 0 !== r ? r : {}), [u, v] = g.useState(!1), w = (x, y) => {
-                t({
-                    ...s,
-                    [x]: y
-                });
-            };
+            t({
+                ...s,
+                [x]: y
+            });
+        };
         return (0, f.jsxs)('div', {
             className: 'maxWidth',
             children: [
@@ -145,7 +174,9 @@ c.register('.....', function (d, e) {
                 }),
                 (0, f.jsxs)(_q, {
                     children: [
-                        (0, f.jsx)(i.default, { ...q }),
+                        (0, f.jsx)(i.default, {
+                            ...q
+                        }),
                         u ? (0, f.jsx)(m.SellSelector, {
                             ...q,
                             setSoldAmount: q.setSoldAmount,
@@ -154,7 +185,9 @@ c.register('.....', function (d, e) {
                             }
                         }) : (0, f.jsxs)(f.Fragment, {
                             children: [
-                                q.description || q.pack ? (0, f.jsx)(n.default, { ...q }) : null,
+                                q.description || q.pack ? (0, f.jsx)(n.default, {
+                                    ...q
+                                }) : null,
                                 q.style ? (0, f.jsx)(l.EditStyles, {
                                     style: q.style,
                                     currentStyles: s,
@@ -177,17 +210,26 @@ c.register('.....', function (d, e) {
     const _q = j.default.div(o || (o = (r => r)`
   padding: 20px 20px 25px 20px;
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _s;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....');
     let n, o, p, q = r => r;
     const r = g.lazy(() => c('.....'));
     var _s = t => {
         const u = (0, j.rarityToBackground)(t.rarity);
         return (0, f.jsxs)(_t, {
-            style: { background: u },
+            style: {
+                background: u
+            },
             children: [
                 t.count > 1 ? (0, f.jsx)(l.CountBadge, {
                     style: {
@@ -202,7 +244,9 @@ c.register('.....', function (d, e) {
                     children: [
                         (() => {
                             const v = (0, f.jsx)(_u, {
-                                style: { padding: t.type === k.CosmeticType.sticker ? 24 : 8 },
+                                style: {
+                                    padding: t.type === k.CosmeticType.sticker ? 24 : 8
+                                },
                                 children: (0, f.jsx)(_v, {
                                     draggable: !1,
                                     src: t.image
@@ -220,25 +264,36 @@ c.register('.....', function (d, e) {
             ]
         });
     };
-    const _t = h.default.div.attrs({ className: 'maxWidth' })(n || (n = q`
+    const _t = h.default.div.attrs({
+            className: 'maxWidth'
+        })(n || (n = q`
   height: 150px;
   overflow: hidden;
   position: relative;
-`)), _u = (0, h.default)(i.Centered).attrs({ className: 'maxAll' })(o || (o = q``)), _v = h.default.img(p || (p = q`
+`)),
+        _u = (0, h.default)(i.Centered).attrs({
+            className: 'maxAll'
+        })(o || (o = q``)),
+        _v = h.default.img(p || (p = q`
   max-height: 100%;
   max-width: 100%;
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'GridViewItem', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'GridViewItem', function() {
         return _s;
-    }), a(d.exports, 'CountBadge', function () {
+    }), a(d.exports, 'CountBadge', function() {
         return _y;
-    }), a(d.exports, 'EmptyGridViewItem', function () {
+    }), a(d.exports, 'EmptyGridViewItem', function() {
         return _t;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     let m, n, o, p, q, r = s => s;
     const _s = t => {
             var u;
@@ -251,13 +306,18 @@ c.register('.....', function (d, e) {
                                 background: t.background,
                                 padding: null !== (u = t.imagePadding) && void 0 !== u ? u : 10
                             },
-                            children: (0, f.jsx)(_x, { src: t.image })
+                            children: (0, f.jsx)(_x, {
+                                src: t.image
+                            })
                         })
                     }),
-                    t.count > 1 ? (0, f.jsx)(_y, { children: (0, l.numberWithCommas)(t.count) }) : null
+                    t.count > 1 ? (0, f.jsx)(_y, {
+                        children: (0, l.numberWithCommas)(t.count)
+                    }) : null
                 ]
             });
-        }, _t = u => (0, f.jsx)(_u, {
+        },
+        _t = u => (0, f.jsx)(_u, {
             selected: u.selected,
             style: {
                 width: u.width,
@@ -271,26 +331,41 @@ c.register('.....', function (d, e) {
                         fontSize: 42,
                         color: 'rgba(255,255,255,0.5)'
                     },
-                    children: (0, f.jsx)(j.default, { name: 'fal fa-times' })
+                    children: (0, f.jsx)(j.default, {
+                        name: 'fal fa-times'
+                    })
                 })
             })
-        }), _u = g.default.div.attrs({ className: 'maxWidth' })(m || (m = r`
+        }),
+        _u = g.default.div.attrs({
+            className: 'maxWidth'
+        })(m || (m = r`
   height: 140px;
   border: 4px solid;
   border-color: ${ 0 };
   border-radius: 4px;
   overflow: hidden;
   position: relative;
-`), v => v.selected ? '#fdd835' : h.default.White), _v = g.default.div.attrs({ className: 'maxAll' })(n || (n = r`
+`), v => v.selected ? '#fdd835' : h.default.White),
+        _v = g.default.div.attrs({
+            className: 'maxAll'
+        })(n || (n = r`
   transition: transform 0.2s ease-in-out;
   &:hover {
     transform: scale(1.1);
   }
-`)), _w = (0, g.default)(i.Centered).attrs({ className: 'maxAll' })(o || (o = r``)), _x = g.default.img(p || (p = r`
+`)),
+        _w = (0, g.default)(i.Centered).attrs({
+            className: 'maxAll'
+        })(o || (o = r``)),
+        _x = g.default.img(p || (p = r`
   max-height: 100%;
   max-width: 100%;
   user-drag: none;
-`)), _y = g.default.div.attrs({ className: 'flex-center' })(q || (q = r`
+`)),
+        _y = g.default.div.attrs({
+            className: 'flex-center'
+        })(q || (q = r`
   position: absolute;
   top: 7px;
   left: 7px;
@@ -302,67 +377,81 @@ c.register('.....', function (d, e) {
   font-weight: ${ 0 };
   font-size: 10px;
 `), h.default.White, k.FontWeights.Bold);
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     d.exports = Promise.all([
         import('./' + c('.....').resolve('bgF9Q')),
         import('./' + c('.....').resolve('fKT9H'))
     ]).then(() => c('.....'));
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     var f, g;
-    a(d.exports, 'register', function () {
+    a(d.exports, 'register', function() {
         return f;
-    }, function (h) {
+    }, function(h) {
         return f = h;
-    }), a(d.exports, 'resolve', function () {
+    }), a(d.exports, 'resolve', function() {
         return g;
-    }, function (h) {
+    }, function(h) {
         return g = h;
     });
     var h = {};
-    f = function (i) {
+    f = function(i) {
         for (var j = Object.keys(i), k = 0; k < j.length; k++)
             h[j[k]] = i[j[k]];
-    }, g = function (i) {
+    }, g = function(i) {
         var j = h[i];
         if (null == j)
             throw new Error('Could not resolve bundle with id ' + i);
         return j;
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _p;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....');
     let l, m, n, o = p => p;
     var _p = q => {
         const {
-                name: r,
-                type: s,
-                rarity: t
-            } = q, u = [];
+            name: r,
+            type: s,
+            rarity: t
+        } = q, u = [];
         return u.push((0, k.cosmeticTypeName)(s)), u.push(t), (0, f.jsxs)(_q, {
             children: [
-                (0, f.jsx)(_r, { children: r }),
+                (0, f.jsx)(_r, {
+                    children: r
+                }),
                 u.length ? (0, f.jsx)(i.default, {
                     direction: 'horizontal',
                     size: 10,
                     wrap: !0,
-                    style: { marginTop: 4 },
-                    children: u.map(v => (0, f.jsx)(_s, { children: v }, q.id + v))
+                    style: {
+                        marginTop: 4
+                    },
+                    children: u.map(v => (0, f.jsx)(_s, {
+                        children: v
+                    }, q.id + v))
                 }) : null
             ]
         });
     };
-    const _q = (0, g.default)(h.CenteredColumn).attrs({ className: 'maxWidth' })(l || (l = o`
+    const _q = (0, g.default)(h.CenteredColumn).attrs({
+            className: 'maxWidth'
+        })(l || (l = o`
   font-family: ${ 0 };
   text-transform: uppercase;
-`), j.Fonts.FugazOne), _r = g.default.div(m || (m = o`
+`), j.Fonts.FugazOne),
+        _r = g.default.div(m || (m = o`
   font-size: 36px;
   font-weight: ${ 0 };
   text-align: center;
-`), j.FontWeights.Bold), _s = g.default.div(n || (n = o`
+`), j.FontWeights.Bold),
+        _s = g.default.div(n || (n = o`
   font-family: ${ 0 };
   background: rgba(255, 255, 255, 0.1);
   line-height: 1;
@@ -375,21 +464,31 @@ c.register('.....', function (d, e) {
     background: rgba(255, 255, 255, 0.17);
   }
 `), j.Fonts.FugazOne);
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'SellButton', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'SellButton', function() {
         return _o;
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _n;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     let m;
     var _n = o => {
-        const p = o.callToAction({ editStyles: o.editStyles }), q = !!(o.count > 1 && o.sellCost && o.setToSellScreen);
+        const p = o.callToAction({
+                editStyles: o.editStyles
+            }),
+            q = !!(o.count > 1 && o.sellCost && o.setToSellScreen);
         return p ? (0, f.jsxs)(i.CenteredColumn, {
             className: 'maxAll',
-            style: { marginTop: 20 },
+            style: {
+                marginTop: 20
+            },
             children: [
                 (0, f.jsx)(g.default, {
                     type: 'success',
@@ -429,16 +528,19 @@ c.register('.....', function (d, e) {
     color: #ffff99;
   }
 `), k.default.Yellow);
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'EditStyles', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'EditStyles', function() {
         return _i;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....');
+    var g = c('.....'),
+        h = c('.....');
     const _i = j => (0, f.jsx)('div', {
         className: 'maxWidth',
-        style: { marginTop: 17 },
+        style: {
+            marginTop: 17
+        },
         children: (0, f.jsx)(h.default, {
             className: 'maxWidth',
             direction: 'vertical',
@@ -452,32 +554,43 @@ c.register('.....', function (d, e) {
             }, k.name + '-category'))
         })
     });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'EditStyle', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'EditStyle', function() {
         return _u;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....');
     let p, q, r, s, t = u => u;
     const _u = v => {
-            const {category: w} = v, [x, y] = g.useState(!0), z = g.useMemo(() => {
-                    var A;
-                    if (!(null === (A = w.options) || void 0 === A ? void 0 : A.length))
-                        return;
-                    const B = w.options.find(C => C.name === v.value);
-                    return B || w.options[0];
-                }, [
-                    w,
-                    v.value
-                ]), A = g.useMemo(() => {
-                    if (w.color)
-                        return w.color.defaultColor;
-                }, [w.color]), B = g.useMemo(() => {
-                    let C = w.name;
-                    return z ? `${ C } - ${ z.name }` : C;
-                }, [
-                    w,
-                    z
-                ]);
+            const {
+                category: w
+            } = v, [x, y] = g.useState(!0), z = g.useMemo(() => {
+                var A;
+                if (!(null === (A = w.options) || void 0 === A ? void 0 : A.length))
+                    return;
+                const B = w.options.find(C => C.name === v.value);
+                return B || w.options[0];
+            }, [
+                w,
+                v.value
+            ]), A = g.useMemo(() => {
+                if (w.color)
+                    return w.color.defaultColor;
+            }, [w.color]), B = g.useMemo(() => {
+                let C = w.name;
+                return z ? `${ C } - ${ z.name }` : C;
+            }, [
+                w,
+                z
+            ]);
             return (0, f.jsxs)(_v, {
                 children: [
                     (0, f.jsxs)(_w, {
@@ -485,8 +598,14 @@ c.register('.....', function (d, e) {
                             y(C => !C);
                         },
                         children: [
-                            (0, f.jsx)(_x, { children: B }),
-                            (0, f.jsx)(_y, { children: (0, f.jsx)(o.default, { name: 'fas fa-caret-' + (x ? 'up' : 'down') }) })
+                            (0, f.jsx)(_x, {
+                                children: B
+                            }),
+                            (0, f.jsx)(_y, {
+                                children: (0, f.jsx)(o.default, {
+                                    name: 'fas fa-caret-' + (x ? 'up' : 'down')
+                                })
+                            })
                         ]
                     }),
                     x ? v.category.type === h.CosmeticStyleCategoryType.color ? (0, f.jsx)(n.EditStyleColor, {
@@ -507,35 +626,53 @@ c.register('.....', function (d, e) {
                 ]
             });
             var C;
-        }, _v = i.default.div.attrs({ className: 'maxWidth' })(p || (p = t``)), _w = i.default.div.attrs({ className: 'maxWidth flex vc between' })(q || (q = t`
+        },
+        _v = i.default.div.attrs({
+            className: 'maxWidth'
+        })(p || (p = t``)),
+        _w = i.default.div.attrs({
+            className: 'maxWidth flex vc between'
+        })(q || (q = t`
   gap: 10px;
   cursor: pointer;
   margin-bottom: 4px;
-`)), _x = i.default.div(r || (r = t`
+`)),
+        _x = i.default.div(r || (r = t`
   font-family: ${ 0 };
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
   font-size: 15px;
-`), l.Fonts.FugazOne), _y = i.default.div(s || (s = t`
+`), l.Fonts.FugazOne),
+        _y = i.default.div(s || (s = t`
   font-size: 16px;
   opacity: 0.9;
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'EditStyleOption', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'EditStyleOption', function() {
         return _l;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....');
+    var g = c('.....'),
+        h = c('.....');
     let i, j, k = l => l;
     const _l = m => {
-            const {option: n} = m;
+            const {
+                option: n
+            } = m;
             return (0, f.jsx)(_m, {
                 selected: m.selected,
                 onClick: m.selected ? void 0 : m.select,
-                children: 'color' === n.preview.type ? (0, f.jsx)(_n, { style: { background: `radial-gradient(circle at 13px 13px, ${ n.preview.color }, #000)` } }) : null
+                children: 'color' === n.preview.type ? (0, f.jsx)(_n, {
+                    style: {
+                        background: `radial-gradient(circle at 13px 13px, ${ n.preview.color }, #000)`
+                    }
+                }) : null
             });
-        }, _m = g.default.div.attrs({ className: 'flex-center' })(i || (i = k`
+        },
+        _m = g.default.div.attrs({
+            className: 'flex-center'
+        })(i || (i = k`
   width: 65px;
   height: 65px;
   background: rgba(255, 255, 255, ${ 0 });
@@ -554,39 +691,47 @@ c.register('.....', function (d, e) {
       ${ 0 }
     );
   }
-`), n => n.selected ? 0.24 : 0.1, n => n.selected ? '#fdd835' : h.default.White, n => n.selected ? 0.24 : 0.17), _n = g.default.div(j || (j = k`
+`), n => n.selected ? 0.24 : 0.1, n => n.selected ? '#fdd835' : h.default.White, n => n.selected ? 0.24 : 0.17),
+        _n = g.default.div(j || (j = k`
   border-radius: 50%;
   height: 40px;
   width: 40px;
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'EditStyleColor', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'EditStyleColor', function() {
         return _j;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....');
+    var g = c('.....'),
+        h = c('.....');
     let i;
     const _j = k => (0, f.jsx)(_k, {
             children: (0, f.jsx)(g.HexColorPicker, {
-                style: { width: '100%' },
+                style: {
+                    width: '100%'
+                },
                 color: k.value,
                 onChange: l => {
                     k.onChange(l);
                 }
             })
-        }), _k = h.default.div.attrs({ className: 'maxWidth' })(i || (i = (l => l)`
+        }),
+        _k = h.default.div.attrs({
+            className: 'maxWidth'
+        })(i || (i = (l => l)`
   padding: 25px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.07);
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'HexColorPicker', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'HexColorPicker', function() {
         return _Y;
     });
     var f = c('.....');
+
     function g() {
-        return (g = Object.assign || function (h) {
+        return (g = Object.assign || function(h) {
             for (var i = 1; i < arguments.length; i++) {
                 var j = arguments[i];
                 for (var k in j)
@@ -595,28 +740,36 @@ c.register('.....', function (d, e) {
             return h;
         }).apply(this, arguments);
     }
+
     function h(i, j) {
         if (null == i)
             return {};
-        var k, l, m = {}, n = Object.keys(i);
+        var k, l, m = {},
+            n = Object.keys(i);
         for (l = 0; l < n.length; l++)
             j.indexOf(k = n[l]) >= 0 || (m[k] = i[k]);
         return m;
     }
+
     function m(n) {
-        var o = (0, n.useRef)(n), p = (0, n.useRef)(function (q) {
+        var o = (0, n.useRef)(n),
+            p = (0, n.useRef)(function(q) {
                 o.current && o.current(q);
             });
         return o.current = n, p.current;
     }
-    var p = function (q, r, s) {
+    var p = function(q, r, s) {
             return void 0 === r && (r = 0), void 0 === s && (s = 1), q > s ? s : q < r ? r : q;
-        }, q = function (r) {
+        },
+        q = function(r) {
             return 'touches' in r;
-        }, r = function (s) {
+        },
+        r = function(s) {
             return s && s.ownerDocument.defaultView || self;
-        }, s = function (t, u, v) {
-            var w = t.getBoundingClientRect(), x = q(u) ? function (y, z) {
+        },
+        s = function(t, u, v) {
+            var w = t.getBoundingClientRect(),
+                x = q(u) ? function(y, z) {
                     for (var A = 0; A < y.length; A++)
                         if (y[A].identifier === z)
                             return y[A];
@@ -626,26 +779,41 @@ c.register('.....', function (d, e) {
                 left: p((x.pageX - (w.left + r(t).pageXOffset)) / w.width),
                 top: p((x.pageY - (w.top + r(t).pageYOffset)) / w.height)
             };
-        }, t = function (u) {
+        },
+        t = function(u) {
             !q(u) && u.preventDefault();
-        }, u = o(n).memo(function (v) {
-            var w = v.onMove, x = v.onKey, y = h(v, [
+        },
+        u = o(n).memo(function(v) {
+            var w = v.onMove,
+                x = v.onKey,
+                y = h(v, [
                     'onMove',
                     'onKey'
-                ]), z = (0, n.useRef)(null), A = m(w), B = m(x), C = (0, n.useRef)(null), D = (0, n.useRef)(!1), E = (0, n.useMemo)(function () {
-                    var F = function (G) {
+                ]),
+                z = (0, n.useRef)(null),
+                A = m(w),
+                B = m(x),
+                C = (0, n.useRef)(null),
+                D = (0, n.useRef)(!1),
+                E = (0, n.useMemo)(function() {
+                    var F = function(G) {
                             t(G), (q(G) ? G.touches.length > 0 : G.buttons > 0) && z.current ? A(s(z.current, G, C.current)) : w(!1);
-                        }, G = function () {
+                        },
+                        G = function() {
                             return w(!1);
                         };
+
                     function H(I) {
-                        var J = D.current, K = r(z.current), L = I ? K.addEventListener : K.removeEventListener;
+                        var J = D.current,
+                            K = r(z.current),
+                            L = I ? K.addEventListener : K.removeEventListener;
                         L(J ? 'touchmove' : 'mousemove', F), L(J ? 'touchend' : 'mouseup', G);
                     }
                     return [
-                        function (L) {
-                            var M = L.nativeEvent, N = z.current;
-                            if (N && (t(M), !function (O, P) {
+                        function(L) {
+                            var M = L.nativeEvent,
+                                N = z.current;
+                            if (N && (t(M), ! function(O, P) {
                                     return P && !q(O);
                                 }(M, D.current) && N)) {
                                 if (q(M)) {
@@ -656,7 +824,7 @@ c.register('.....', function (d, e) {
                                 N.focus(), A(s(N, M, C.current)), H(!0);
                             }
                         },
-                        function (L) {
+                        function(L) {
                             var M = L.which || L.keyCode;
                             M < 37 || M > 40 || (L.preventDefault(), B({
                                 left: 39 === M ? 0.05 : 37 === M ? -0.05 : 0,
@@ -668,8 +836,11 @@ c.register('.....', function (d, e) {
                 }, [
                     B,
                     A
-                ]), F = E[0], G = E[1], H = E[2];
-            return (0, n.useEffect)(function () {
+                ]),
+                F = E[0],
+                G = E[1],
+                H = E[2];
+            return (0, n.useEffect)(function() {
                 return H;
             }, [H]), o(n).createElement('div', g({}, y, {
                 onTouchStart: F,
@@ -680,10 +851,16 @@ c.register('.....', function (d, e) {
                 tabIndex: 0,
                 role: 'slider'
             }));
-        }), v = function (w) {
+        }),
+        v = function(w) {
             return w.filter(Boolean).join(' ');
-        }, w = function (x) {
-            var y = x.color, z = x.left, A = x.top, B = void 0 === A ? 0.5 : A, C = v([
+        },
+        w = function(x) {
+            var y = x.color,
+                z = x.left,
+                A = x.top,
+                B = void 0 === A ? 0.5 : A,
+                C = v([
                     'react-colorful__pointer',
                     x.className
                 ]);
@@ -695,13 +872,18 @@ c.register('.....', function (d, e) {
                 }
             }, o(n).createElement('div', {
                 className: 'react-colorful__pointer-fill',
-                style: { backgroundColor: y }
+                style: {
+                    backgroundColor: y
+                }
             }));
-        }, x = function (y, z, A) {
+        },
+        x = function(y, z, A) {
             return void 0 === z && (z = 0), void 0 === A && (A = Math.pow(10, z)), Math.round(A * y) / A;
-        }, y = (Math.PI, function (z) {
+        },
+        y = (Math.PI, function(z) {
             return _G(_z(z));
-        }), _z = function (A) {
+        }),
+        _z = function(A) {
             return '#' === A[0] && (A = A.substring(1)), A.length < 6 ? {
                 r: parseInt(A[0] + A[0], 16),
                 g: parseInt(A[1] + A[1], 16),
@@ -713,23 +895,37 @@ c.register('.....', function (d, e) {
                 b: parseInt(A.substring(4, 6), 16),
                 a: 8 === A.length ? x(parseInt(A.substring(6, 8), 16) / 255, 2) : 1
             };
-        }, A = function (B) {
+        },
+        A = function(B) {
             return _F(_D(B));
-        }, B = function (C) {
-            var D = C.s, E = C.v, F = C.a, G = (200 - D) * E / 100;
+        },
+        B = function(C) {
+            var D = C.s,
+                E = C.v,
+                F = C.a,
+                G = (200 - D) * E / 100;
             return {
                 h: x(C.h),
                 s: x(G > 0 && G < 200 ? D * E / 100 / (G <= 100 ? G : 200 - G) * 100 : 0),
                 l: x(G / 2),
                 a: x(F, 2)
             };
-        }, C = function (D) {
+        },
+        C = function(D) {
             var E = B(D);
             return 'hsl(' + E.h + ', ' + E.s + '%, ' + E.l + '%)';
-        }, _D = function (E) {
-            var F = E.h, G = E.s, H = E.v, I = E.a;
+        },
+        _D = function(E) {
+            var F = E.h,
+                G = E.s,
+                H = E.v,
+                I = E.a;
             F = F / 360 * 6, G /= 100, H /= 100;
-            var J = Math.floor(F), K = H * (1 - G), L = H * (1 - (F - J) * G), M = H * (1 - (1 - F + J) * G), N = J % 6;
+            var J = Math.floor(F),
+                K = H * (1 - G),
+                L = H * (1 - (F - J) * G),
+                M = H * (1 - (1 - F + J) * G),
+                N = J % 6;
             return {
                 r: x(255 * [
                     H,
@@ -757,31 +953,53 @@ c.register('.....', function (d, e) {
                 ][N]),
                 a: x(I, 2)
             };
-        }, E = function (F) {
+        },
+        E = function(F) {
             var G = F.toString(16);
             return G.length < 2 ? '0' + G : G;
-        }, _F = function (G) {
-            var H = G.r, I = G.g, J = G.b, K = G.a, L = K < 1 ? E(x(255 * K)) : '';
+        },
+        _F = function(G) {
+            var H = G.r,
+                I = G.g,
+                J = G.b,
+                K = G.a,
+                L = K < 1 ? E(x(255 * K)) : '';
             return '#' + E(H) + E(I) + E(J) + L;
-        }, _G = function (H) {
-            var I = H.r, J = H.g, K = H.b, L = H.a, M = Math.max(I, J, K), N = M - Math.min(I, J, K), O = N ? M === I ? (J - K) / N : M === J ? 2 + (K - I) / N : 4 + (I - J) / N : 0;
+        },
+        _G = function(H) {
+            var I = H.r,
+                J = H.g,
+                K = H.b,
+                L = H.a,
+                M = Math.max(I, J, K),
+                N = M - Math.min(I, J, K),
+                O = N ? M === I ? (J - K) / N : M === J ? 2 + (K - I) / N : 4 + (I - J) / N : 0;
             return {
                 h: x(60 * (O < 0 ? O + 6 : O)),
                 s: x(M ? N / M * 100 : 0),
                 v: x(M / 255 * 100),
                 a: L
             };
-        }, H = o(n).memo(function (I) {
-            var J = I.hue, K = I.onChange, L = v([
+        },
+        H = o(n).memo(function(I) {
+            var J = I.hue,
+                K = I.onChange,
+                L = v([
                     'react-colorful__hue',
                     I.className
                 ]);
-            return o(n).createElement('div', { className: L }, o(n).createElement(u, {
-                onMove: function (M) {
-                    K({ h: 360 * M.left });
+            return o(n).createElement('div', {
+                className: L
+            }, o(n).createElement(u, {
+                onMove: function(M) {
+                    K({
+                        h: 360 * M.left
+                    });
                 },
-                onKey: function (M) {
-                    K({ h: p(J + 360 * M.left, 0, 360) });
+                onKey: function(M) {
+                    K({
+                        h: p(J + 360 * M.left, 0, 360)
+                    });
                 },
                 'aria-label': 'Hue',
                 'aria-valuenow': x(J),
@@ -797,8 +1015,11 @@ c.register('.....', function (d, e) {
                     a: 1
                 })
             })));
-        }), I = o(n).memo(function (J) {
-            var K = J.hsva, L = J.onChange, M = {
+        }),
+        I = o(n).memo(function(J) {
+            var K = J.hsva,
+                L = J.onChange,
+                M = {
                     backgroundColor: C({
                         h: K.h,
                         s: 100,
@@ -810,13 +1031,13 @@ c.register('.....', function (d, e) {
                 className: 'react-colorful__saturation',
                 style: M
             }, o(n).createElement(u, {
-                onMove: function (N) {
+                onMove: function(N) {
                     L({
                         s: 100 * N.left,
                         v: 100 - 100 * N.top
                     });
                 },
-                onKey: function (N) {
+                onKey: function(N) {
                     L({
                         s: p(K.s + 100 * N.left, 0, 100),
                         v: p(K.v - 100 * N.top, 0, 100)
@@ -830,24 +1051,31 @@ c.register('.....', function (d, e) {
                 left: K.s / 100,
                 color: C(K)
             })));
-        }), J = function (K, L) {
+        }),
+        J = function(K, L) {
             if (K === L)
                 return !0;
             for (var M in K)
                 if (K[M] !== L[M])
                     return !1;
             return !0;
-        }, K = function (L, M) {
+        },
+        K = function(L, M) {
             return L.toLowerCase() === M.toLowerCase() || J(_z(L), _z(M));
         };
+
     function L(M, N, O) {
-        var P = m(O), Q = (0, n.useState)(function () {
+        var P = m(O),
+            Q = (0, n.useState)(function() {
                 return M.toHsva(N);
-            }), R = Q[0], S = Q[1], T = (0, n.useRef)({
+            }),
+            R = Q[0],
+            S = Q[1],
+            T = (0, n.useRef)({
                 color: N,
                 hsva: g
             });
-        (0, n.useEffect)(function () {
+        (0, n.useEffect)(function() {
             if (!M.equal(N, T.current.color)) {
                 var U = M.toHsva(N);
                 T.current = {
@@ -858,7 +1086,7 @@ c.register('.....', function (d, e) {
         }, [
             N,
             M
-        ]), (0, n.useEffect)(function () {
+        ]), (0, n.useEffect)(function() {
             var U;
             J(g, T.current.hsva) || M.equal(U = M.fromHsva(g), T.current.color) || (T.current = {
                 hsva: g,
@@ -869,8 +1097,8 @@ c.register('.....', function (d, e) {
             M,
             P
         ]);
-        var U = (0, n.useCallback)(function (V) {
-            h(function (W) {
+        var U = (0, n.useCallback)(function(V) {
+            h(function(W) {
                 return Object.assign({}, W, V);
             });
         }, []);
@@ -879,8 +1107,10 @@ c.register('.....', function (d, e) {
             U
         ];
     }
-    var S, T = 'undefined' != typeof window ? n.useLayoutEffect : n.useEffect, U = new Map(), V = function (W) {
-            T(function () {
+    var S, T = 'undefined' != typeof window ? n.useLayoutEffect : n.useEffect,
+        U = new Map(),
+        V = function(W) {
+            T(function() {
                 var X = W.current ? W.current.ownerDocument : document;
                 if (void 0 !== X && !U.has(X)) {
                     var Y = X.createElement('style');
@@ -889,15 +1119,25 @@ c.register('.....', function (d, e) {
                     Z && Y.setAttribute('nonce', Z), X.head.appendChild(Y);
                 }
             }, []);
-        }, W = function (X) {
-            var Y = X.className, Z = X.colorModel, $ = X.color, ab = void 0 === $ ? Z.defaultColor : $, bb = X.onChange, cb = h(X, [
+        },
+        W = function(X) {
+            var Y = X.className,
+                Z = X.colorModel,
+                $ = X.color,
+                ab = void 0 === $ ? Z.defaultColor : $,
+                bb = X.onChange,
+                cb = h(X, [
                     'className',
                     'colorModel',
                     'color',
                     'onChange'
-                ]), db = (0, n.useRef)(null);
+                ]),
+                db = (0, n.useRef)(null);
             V(db);
-            var eb = L(Z, ab, bb), fb = eb[0], gb = eb[1], hb = v([
+            var eb = L(Z, ab, bb),
+                fb = eb[0],
+                gb = eb[1],
+                hb = v([
                     'react-colorful',
                     Y
                 ]);
@@ -912,10 +1152,11 @@ c.register('.....', function (d, e) {
                 onChange: gb,
                 className: 'react-colorful__last-control'
             }));
-        }, X = {
+        },
+        X = {
             defaultColor: '000',
             toHsva: y,
-            fromHsva: function (Y) {
+            fromHsva: function(Y) {
                 return A({
                     h: Y.h,
                     s: Y.s,
@@ -924,27 +1165,50 @@ c.register('.....', function (d, e) {
                 });
             },
             equal: K
-        }, _Y = function (Z) {
-            return o(n).createElement(W, g({}, Z, { colorModel: X }));
+        },
+        _Y = function(Z) {
+            return o(n).createElement(W, g({}, Z, {
+                colorModel: X
+            }));
         };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'SellSelector', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'SellSelector', function() {
         return _B;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....'),
+        s = c('.....'),
+        t = c('.....'),
+        u = c('.....'),
+        v = c('.....');
     let w, x, y, z, A = B => B;
     const _B = C => {
-            const [D, E] = g.useState(!1), [F, G] = g.useState(C.count - 1), {closeSellScreen: H} = C, I = C.count - 1, J = K => {
-                    const L = Math.max(1, Math.min(I, K));
-                    G(L), (0, s.playPackClickSound)();
-                };
+            const [D, E] = g.useState(!1), [F, G] = g.useState(C.count - 1), {
+                closeSellScreen: H
+            } = C, I = C.count - 1, J = K => {
+                const L = Math.max(1, Math.min(I, K));
+                G(L), (0, s.playPackClickSound)();
+            };
             return (0, f.jsxs)(_C, {
                 children: [
                     (0, f.jsxs)(_D, {
                         children: [
                             (0, f.jsxs)(i.Centered, {
                                 className: 'maxWidth',
-                                style: { gap: 6 },
+                                style: {
+                                    gap: 6
+                                },
                                 children: [
                                     (0, f.jsx)(l.Button, {
                                         disabled: 1 === F,
@@ -960,7 +1224,9 @@ c.register('.....', function (d, e) {
                                         },
                                         children: '-1'
                                     }),
-                                    (0, f.jsx)(_E, { children: (0, k.numberWithCommas)(F) }),
+                                    (0, f.jsx)(_E, {
+                                        children: (0, k.numberWithCommas)(F)
+                                    }),
                                     (0, f.jsx)(l.Button, {
                                         disabled: F === I,
                                         onClick: () => {
@@ -1034,7 +1300,9 @@ c.register('.....', function (d, e) {
                                 }
                             }));
                         },
-                        style: { marginTop: 20 },
+                        style: {
+                            marginTop: 20
+                        },
                         children: (0, f.jsx)('div', {
                             style: {
                                 fontFamily: j.Fonts.FugazOne,
@@ -1052,12 +1320,19 @@ c.register('.....', function (d, e) {
                     })
                 ]
             });
-        }, _C = (0, h.default)(i.CenteredColumn).attrs({ className: 'maxWidth' })(w || (w = A``)), _D = (0, h.default)(i.CenteredColumn).attrs({ className: 'maxWidth' })(x || (x = A`
+        },
+        _C = (0, h.default)(i.CenteredColumn).attrs({
+            className: 'maxWidth'
+        })(w || (w = A``)),
+        _D = (0, h.default)(i.CenteredColumn).attrs({
+            className: 'maxWidth'
+        })(x || (x = A`
   padding: 25px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   margin-top: 19px;
-`)), _E = h.default.div(y || (y = A`
+`)),
+        _E = h.default.div(y || (y = A`
   font-size: 24px;
   font-family: ${ 0 };
   line-height: 1;
@@ -1067,22 +1342,27 @@ c.register('.....', function (d, e) {
   padding-top: 13px;
   margin: 0px 10px;
   background: rgba(255, 255, 255, 0.05);
-`), j.Fonts.FugazOne, o.default.Yellow), _F = h.default.div.attrs({ className: 'flex wrap' })(z || (z = A`
+`), j.Fonts.FugazOne, o.default.Yellow),
+        _F = h.default.div.attrs({
+            className: 'flex wrap'
+        })(z || (z = A`
   font-size: 12px;
   font-style: italic;
   color: rgba(255, 255, 255, 0.9);
   margin-top: 14px;
   gap: 6px;
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CountSelector', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CountSelector', function() {
         return _k;
-    }), a(d.exports, 'Button', function () {
+    }), a(d.exports, 'Button', function() {
         return _l;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     c('.....');
-    var h = c('.....'), i = c('.....');
+    var h = c('.....'),
+        i = c('.....');
     let j;
     const _k = l => {
             const m = n => {
@@ -1091,7 +1371,9 @@ c.register('.....', function (d, e) {
             };
             return (0, f.jsxs)(h.default, {
                 size: 6,
-                style: { marginTop: 10 },
+                style: {
+                    marginTop: 10
+                },
                 children: [
                     (0, f.jsx)(_l, {
                         disabled: 1 === l.count,
@@ -1116,7 +1398,8 @@ c.register('.....', function (d, e) {
                     })
                 ]
             });
-        }, _l = g.default.div(j || (j = (m => m)`
+        },
+        _l = g.default.div(j || (j = (m => m)`
   background: rgba(255, 255, 255, 0.1);
   opacity: ${ 0 };
   padding: 6px 12px;
@@ -1129,28 +1412,37 @@ c.register('.....', function (d, e) {
   cursor: ${ 0 };
   ${ 0 }
 `), m => m.disabled ? 0.5 : 1, m => m.disabled ? 'not-allowed' : 'pointer', m => !m.disabled && '&:hover {\n    transform: scale(1.05);\n    background: rgba(255, 255, 255, 0.15);\n  }');
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'invalidateOwnedCosmetics', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'invalidateOwnedCosmetics', function() {
         return _j;
-    }), a(d.exports, 'refetchOwnedCosmetics', function () {
+    }), a(d.exports, 'refetchOwnedCosmetics', function() {
         return _k;
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _l;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
-    const i = ['cosmos-owned-cosmetics'], _j = () => {
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
+    const i = ['cosmos-owned-cosmetics'],
+        _j = () => {
             g.default.invalidateQueries(i);
-        }, _k = () => {
+        },
+        _k = () => {
             g.default.refetchQueries(i);
         };
-    var _l = () => (0, f.useQuery)(i, () => (0, h.requestAsPromise)({ url: '/api/cosmos/owned-cosmetics' }));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+    var _l = () => (0, f.useQuery)(i, () => (0, h.requestAsPromise)({
+        url: '/api/cosmos/owned-cosmetics'
+    }));
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _p;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....');
     let k, l, m, n = o => o;
     const o = p => (0, f.jsxs)(_r, {
         style: p.style,
@@ -1160,9 +1452,13 @@ c.register('.....', function (d, e) {
                     marginRight: 15,
                     flexShrink: 0
                 },
-                children: (0, f.jsx)(j.default, { name: p.icon })
+                children: (0, f.jsx)(j.default, {
+                    name: p.icon
+                })
             }),
-            (0, f.jsx)('div', { children: p.children })
+            (0, f.jsx)('div', {
+                children: p.children
+            })
         ]
     });
     var _p = q => (0, f.jsx)(f.Fragment, {
@@ -1174,7 +1470,9 @@ c.register('.....', function (d, e) {
                 }) : null,
                 q.pack ? (0, f.jsxs)(o, {
                     icon: 'fad fa-box',
-                    style: { marginTop: q.description ? 10 : 0 },
+                    style: {
+                        marginTop: q.description ? 10 : 0
+                    },
                     children: [
                         'Part of the',
                         ' ',
@@ -1192,7 +1490,8 @@ c.register('.....', function (d, e) {
     });
     const _q = g.default.div(k || (k = n`
   margin-top: 19px;
-`)), _r = (0, g.default)(i.VerticallyCentered)(l || (l = n`
+`)),
+        _r = (0, g.default)(i.VerticallyCentered)(l || (l = n`
   background: rgba(255, 255, 255, 0.1);
   padding: 12px 16px;
   border-radius: 6px;
@@ -1205,15 +1504,20 @@ c.register('.....', function (d, e) {
   }
 `));
     g.default.div(m || (m = n``));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _j;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....');
+    var g = c('.....'),
+        h = c('.....');
     let i;
-    var _j = () => (0, f.jsx)(_k, { children: (0, f.jsx)(h.default, { name: 'fas fa-times' }) });
+    var _j = () => (0, f.jsx)(_k, {
+        children: (0, f.jsx)(h.default, {
+            name: 'fas fa-times'
+        })
+    });
     const _k = g.default.div(i || (i = (l => l)`
   color: rgba(255, 255, 255, 0.6);
   transition: color 0.17s;
@@ -1221,13 +1525,20 @@ c.register('.....', function (d, e) {
     color: rgba(255, 255, 255, 1);
   }
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _p;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....');
     let o;
     var _p = q => {
         const r = q.type !== m.CosmeticType.sticker;
@@ -1241,7 +1552,9 @@ c.register('.....', function (d, e) {
                 (0, f.jsxs)(g.Bottom, {
                     className: 'flex-center flex-column',
                     children: [
-                        (0, f.jsx)(j.default, { ...q }),
+                        (0, f.jsx)(j.default, {
+                            ...q
+                        }),
                         (0, f.jsx)(i.default, {
                             ...q,
                             callToAction: () => {
@@ -1281,19 +1594,23 @@ c.register('.....', function (d, e) {
     color: #e3f2fd;
   }
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'Container', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'Container', function() {
         return _r;
-    }), a(d.exports, 'Name', function () {
+    }), a(d.exports, 'Name', function() {
         return _s;
-    }), a(d.exports, 'Purchased', function () {
+    }), a(d.exports, 'Purchased', function() {
         return _t;
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _q;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....');
     let l, m, n, o = p => p;
     const p = {
         angle: 90,
@@ -1306,32 +1623,41 @@ c.register('.....', function (d, e) {
         const [s, t] = (0, j.useBoolean)(!1);
         return (0, k.useDidMount)(t), (0, f.jsxs)(_r, {
             children: [
-                (0, f.jsx)(_s, { children: r.name }),
+                (0, f.jsx)(_s, {
+                    children: r.name
+                }),
                 (0, f.jsx)(b(i), {
                     active: s,
                     config: p
                 }),
-                (0, f.jsx)(_t, { children: 'Purchased!' })
+                (0, f.jsx)(_t, {
+                    children: 'Purchased!'
+                })
             ]
         });
     };
-    const _r = g.default.div.attrs({ className: 'flex-center flex-column animated bounceIn' })(l || (l = o`
+    const _r = g.default.div.attrs({
+            className: 'flex-center flex-column animated bounceIn'
+        })(l || (l = o`
   text-align: center;
   font-family: ${ 0 };
   text-transform: uppercase;
   animation-duration: 0.6s;
-`), h.Fonts.FugazOne), _s = g.default.div(m || (m = o`
+`), h.Fonts.FugazOne),
+        _s = g.default.div(m || (m = o`
   font-size: 26px;
   color: rgba(255, 255, 255, 0.9);
-`)), _t = g.default.div(n || (n = o`
+`)),
+        _t = g.default.div(n || (n = o`
   font-size: 48px;
   line-height: 1;
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'selectCosmetic', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'selectCosmetic', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const _h = ({
         cosmeticId: i,
         cosmeticType: j,
@@ -1350,13 +1676,20 @@ c.register('.....', function (d, e) {
             }
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'SoldScreen', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'SoldScreen', function() {
         return _r;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....');
     let o, p, q = r => r;
     const _r = s => (0, f.jsxs)('div', {
             className: 'maxWidth',
@@ -1370,8 +1703,12 @@ c.register('.....', function (d, e) {
                     children: [
                         (0, f.jsxs)(i.Container, {
                             children: [
-                                (0, f.jsx)(i.Name, { children: s.name }),
-                                (0, f.jsx)(i.Purchased, { children: 'Sold!' })
+                                (0, f.jsx)(i.Name, {
+                                    children: s.name
+                                }),
+                                (0, f.jsx)(i.Purchased, {
+                                    children: 'Sold!'
+                                })
                             ]
                         }),
                         (0, f.jsx)(_s, {
@@ -1407,7 +1744,10 @@ c.register('.....', function (d, e) {
                     ]
                 })
             ]
-        }), _s = l.default.div.attrs({ className: 'maxWidth flex-center' })(o || (o = q`
+        }),
+        _s = l.default.div.attrs({
+            className: 'maxWidth flex-center'
+        })(o || (o = q`
   padding: 25px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
@@ -1416,5 +1756,8 @@ c.register('.....', function (d, e) {
   font-family: ${ 0 };
   text-transform: uppercase;
   margin-top: 12px;
-`), n.Fonts.FugazOne), _t = l.default.div.attrs({ className: 'flex' })(p || (p = q``));
+`), n.Fonts.FugazOne),
+        _t = l.default.div.attrs({
+            className: 'flex'
+        })(p || (p = q``));
 });

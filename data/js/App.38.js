@@ -6,24 +6,48 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
-    a(d.exports, 'validateEmail', function () {
+c.register('.....', function(d, e) {
+    a(d.exports, 'validateEmail', function() {
         return _F;
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _G;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....'), w = c('.....'), x = c('.....'), y = c('.....'), z = c('.....'), A = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....'),
+        s = c('.....'),
+        t = c('.....'),
+        u = c('.....'),
+        v = c('.....'),
+        w = c('.....'),
+        x = c('.....'),
+        y = c('.....'),
+        z = c('.....'),
+        A = c('.....');
     let B, C, D, E = F => F;
     const _F = G => /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(G).toLowerCase());
     var _G = (0, i.observer)(() => {
         const [H, I] = g.useState(!1), [J, K] = g.useState(!1), [L, M] = g.useState(''), [N, O] = g.useState(!1), [P, Q] = g.useState(null), [R, S] = g.useState(!1), {
-                login: T,
-                navigation: U
-            } = g.useContext(q.default), {emailSignInBlocked: V} = U;
+            login: T,
+            navigation: U
+        } = g.useContext(q.default), {
+            emailSignInBlocked: V
+        } = U;
         g.useEffect(() => {
             (0, s.request)({
                 url: '/api/users/google-token',
@@ -37,22 +61,27 @@ c.register('.....', function (d, e) {
                     return;
                 const Y = X.target.value || '';
                 T.email = Y, I(_F(Y));
-            }, X = () => {
+            },
+            X = () => {
                 H && _Z();
-            }, Y = () => {
+            },
+            Y = () => {
                 T.informationNeeded.replace(T.informationNeeded.filter(Z => Z !== t.informationTypes.email));
-            }, _Z = () => {
+            },
+            _Z = () => {
                 J || (Q(null), K(!0), S(!1), (0, s.request)({
                     url: '/api/users/register/email-info',
                     method: 'post',
-                    data: { email: T.email },
+                    data: {
+                        email: T.email
+                    },
                     success: $ => {
                         if (K(!1), window.location.pathname.includes('login') && !$.accountExists)
                             return T.googleToken = '', void S(!0);
                         if ($.accountExists) {
                             if (T.userExists = !0, !T.googleToken) {
                                 if ($.noPassword)
-                                    return void (U.emailSignInBlocked = !0);
+                                    return void(U.emailSignInBlocked = !0);
                                 T.informationNeeded.replace([
                                     ...T.informationNeeded,
                                     t.informationTypes.password
@@ -75,9 +104,11 @@ c.register('.....', function (d, e) {
                         K(!1), Q($);
                     }
                 }));
-            }, $ = () => {
+            },
+            $ = () => {
                 n.default.error('Error with Google Authentication. Please try again.');
-            }, ab = bb => {
+            },
+            ab = bb => {
                 (0, A.default)(bb).then(cb => {
                     (db => {
                         const {
@@ -118,7 +149,9 @@ c.register('.....', function (d, e) {
                                 onToken: ab,
                                 onError: $
                             })
-                        }) : (0, f.jsx)(y.default, { text: bb }),
+                        }) : (0, f.jsx)(y.default, {
+                            text: bb
+                        }),
                         V ? (0, f.jsxs)(f.Fragment, {
                             children: [
                                 (0, f.jsx)(l.default, {}),
@@ -135,7 +168,9 @@ c.register('.....', function (d, e) {
                         }) : null,
                         V ? null : (0, f.jsx)('div', {
                             className: 'maxWidth',
-                            children: (0, f.jsx)(l.default, { children: 'or' })
+                            children: (0, f.jsx)(l.default, {
+                                children: 'or'
+                            })
                         }),
                         !V && (0, f.jsx)(f.Fragment, {
                             children: (0, f.jsxs)(_I, {
@@ -155,7 +190,9 @@ c.register('.....', function (d, e) {
                                     }),
                                     (0, f.jsx)(p.default, {
                                         disabled: !H,
-                                        style: { marginTop: 5 },
+                                        style: {
+                                            marginTop: 5
+                                        },
                                         onClick: X,
                                         loading: J,
                                         children: 'Continue'
@@ -165,7 +202,9 @@ c.register('.....', function (d, e) {
                         }),
                         !P && R ? (0, f.jsx)(k.default, {
                             type: 'warning',
-                            style: { marginTop: 10 },
+                            style: {
+                                marginTop: 10
+                            },
                             message: (0, f.jsxs)('div', {
                                 children: [
                                     'No account found.',
@@ -184,11 +223,15 @@ c.register('.....', function (d, e) {
                         }) : null,
                         (0, f.jsx)(r.default, {
                             error: P,
-                            style: { marginTop: 10 }
+                            style: {
+                                marginTop: 10
+                            }
                         }),
                         (0, f.jsx)(v.default, {}),
                         U.classJoiningName ? (0, f.jsxs)('div', {
-                            style: { marginTop: 25 },
+                            style: {
+                                marginTop: 25
+                            },
                             children: [
                                 'By joining, you agree to our',
                                 ' ',
@@ -218,32 +261,35 @@ c.register('.....', function (d, e) {
   align-items: center;
   flex-direction: column;
   width: 100%;
-`)), _I = h.default.div(C || (C = E`
+`)),
+        _I = h.default.div(C || (C = E`
   width: 100%;
   color: ${ 0 };
-`), o.default.Black), _J = h.default.div(D || (D = E`
+`), o.default.Black),
+        _J = h.default.div(D || (D = E`
   font-size: 18px;
   font-weight: ${ 0 };
 `), j.FontWeights.Bold);
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'GoogleOAuthProvider', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'GoogleOAuthProvider', function() {
         return _h;
-    }), a(d.exports, 'useGoogleLogin', function () {
+    }), a(d.exports, 'useGoogleLogin', function() {
         return _m;
     });
     var f = c('.....');
     const g = (0, f.createContext)(null);
+
     function _h({
         clientId: i,
         onScriptLoadSuccess: j,
         onScriptLoadError: k,
         children: l
     }) {
-        const m = function (n = {}) {
+        const m = function(n = {}) {
                 const {
-                        onScriptLoadSuccess: o,
-                        onScriptLoadError: p
-                    } = n, [q, r] = (0, f.useState)(!1), s = (0, f.useRef)(o);
+                    onScriptLoadSuccess: o,
+                    onScriptLoadError: p
+                } = n, [q, r] = (0, f.useState)(!1), s = (0, f.useRef)(o);
                 s.current = o;
                 const t = (0, f.useRef)(p);
                 return t.current = p, (0, f.useEffect)(() => {
@@ -261,21 +307,26 @@ c.register('.....', function (d, e) {
             }({
                 onScriptLoadSuccess: j,
                 onScriptLoadError: k
-            }), n = (0, f.useMemo)(() => ({
+            }),
+            n = (0, f.useMemo)(() => ({
                 clientId: i,
                 scriptLoadedSuccessfully: _h
             }), [
                 i,
                 _h
             ]);
-        return b(f).createElement(g.Provider, { value: n }, l);
+        return b(f).createElement(g.Provider, {
+            value: n
+        }, l);
     }
+
     function k() {
         const l = (0, f.useContext)(g);
         if (!l)
             throw new Error('Google OAuth components must be used within GoogleOAuthProvider');
         return l;
     }
+
     function _m({
         flow: n = 'implicit',
         scope: o = '',
@@ -284,16 +335,17 @@ c.register('.....', function (d, e) {
         ...r
     }) {
         const {
-                clientId: s,
-                scriptLoadedSuccessfully: t
-            } = k(), u = (0, f.useRef)(), v = (0, f.useRef)(p);
+            clientId: s,
+            scriptLoadedSuccessfully: t
+        } = k(), u = (0, f.useRef)(), v = (0, f.useRef)(p);
         v.current = p;
         const w = (0, f.useRef)(q);
         w.current = q, (0, f.useEffect)(() => {
             var x;
             if (!_h)
                 return;
-            const y = 'implicit' === n ? 'initTokenClient' : 'initCodeClient', z = null === (x = window.google) || void 0 === x ? void 0 : x.accounts.oauth2[y]({
+            const y = 'implicit' === n ? 'initTokenClient' : 'initCodeClient',
+                z = null === (x = window.google) || void 0 === x ? void 0 : x.accounts.oauth2[y]({
                     client_id: s,
                     scope: `openid profile email ${ o }`,
                     callback: A => {
@@ -311,32 +363,54 @@ c.register('.....', function (d, e) {
             n,
             o
         ]);
-        const x = (0, f.useCallback)(y => _m.current.requestAccessToken(y), []), y = (0, f.useCallback)(() => _m.current.requestCode(), []);
+        const x = (0, f.useCallback)(y => _m.current.requestAccessToken(y), []),
+            y = (0, f.useCallback)(() => _m.current.requestCode(), []);
         return 'implicit' === n ? x : y;
     }
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _k;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....');
     var _k = (0, i.observer)(() => {
-        const {navigation: l} = g.useContext(j.default);
+        const {
+            navigation: l
+        } = g.useContext(j.default);
         return l.loginError ? (0, f.jsx)(h.default, {
-            style: { marginTop: 5 },
+            style: {
+                marginTop: 5
+            },
             message: l.loginError && l.loginError.message && l.loginError.message.text ? l.loginError.message.text : 'Error logging in. Please try again.',
             type: 'error',
             showIcon: !0
         }) : null;
     });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _q;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....');
     const p = () => (0, f.jsx)('div', {
-        style: { height: 150 },
+        style: {
+            height: 150
+        },
         className: 'maxWidth flex hc vc',
-        children: (0, f.jsx)(l.default, { size: 'large' })
+        children: (0, f.jsx)(l.default, {
+            size: 'large'
+        })
     });
     var _q = r => {
         const [s, t] = g.useState([]), [u, v] = g.useState(!1), [w, x] = g.useState(!1), [y, z] = g.useState(!1), [A, B] = g.useState(!1), [C, D] = g.useState('');
@@ -344,14 +418,18 @@ c.register('.....', function (d, e) {
             r.open ? (x(!0), (0, o.request)({
                 url: '/api/users/password-reset-options',
                 method: 'post',
-                data: { email: r.defaultEmail },
+                data: {
+                    email: r.defaultEmail
+                },
                 success: E => {
                     E.passwordless && v(E.passwordless), E.others && E.others.length ? t(E.others) : _F();
                 },
                 error: E => {
                     (0, o.throwMessageError)({
                         e: E,
-                        default: { title: 'We ran into an error...' },
+                        default: {
+                            title: 'We ran into an error...'
+                        },
                         onOk: () => window.location.reload()
                     });
                 },
@@ -374,21 +452,24 @@ c.register('.....', function (d, e) {
                     error: H => {
                         (0, o.throwMessageError)({
                             e: H,
-                            default: { title: 'Error sending reset link' },
+                            default: {
+                                title: 'Error sending reset link'
+                            },
                             onOk: () => window.location.reload()
                         });
                     }
                 }));
-            }, _F = () => E();
+            },
+            _F = () => E();
         return (0, f.jsx)(k.default, {
             style: {
                 fontFamily: m.Fonts.SFPro,
                 color: n.default.Black
             },
             footer: [(0, f.jsx)(h.default, {
-                    onClick: r.close,
-                    children: 'Close'
-                }, 1)],
+                onClick: r.close,
+                children: 'Close'
+            }, 1)],
             closable: !1,
             width: 700,
             open: r.open,
@@ -463,13 +544,14 @@ c.register('.....', function (d, e) {
             }) : null
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _i;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....');
+    var g = c('.....'),
+        h = c('.....');
     var _i = j => (0, f.jsx)(h.default, {
         style: {
             padding: '10px 20px',
@@ -501,11 +583,12 @@ c.register('.....', function (d, e) {
             ]
         })
     });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     c('.....');
     var h = c('.....');
     var _i = j => {
@@ -525,15 +608,17 @@ c.register('.....', function (d, e) {
             })
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _g;
     });
     var f = c('.....');
     var _g = h => new Promise((i, j) => {
         (0, f.request)({
             url: '/api/users/google-auth-details',
-            data: { jwt: h },
+            data: {
+                jwt: h
+            },
             success: k => {
                 i(k);
             },

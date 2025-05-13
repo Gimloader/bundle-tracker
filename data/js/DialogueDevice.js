@@ -7,15 +7,22 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _o;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....');
     class n extends j.default {
         constructor(o) {
             if (super(o), (0, f.default)(this, 'openDeviceUI', () => {
@@ -31,10 +38,12 @@ b.register('.....', function (c, d) {
                         darkenBackground: this.options.darkenBackground
                     });
                 }), (0, f.default)(this, 'onDialogueActionChange', () => {
-                    this.deviceUI.update({ actions: (0, m.DialogueDevice_GetDialogueActions)(this) });
+                    this.deviceUI.update({
+                        actions: (0, m.DialogueDevice_GetDialogueActions)(this)
+                    });
                 }), (0, i.InPreGamePhase)() && (0, h.isSavedVersion)()) {
                 const p = l.default.Overlay;
-                new (0, k.default)({
+                new(0, k.default)({
                     device: this,
                     baseColor: p.baseColor,
                     boxColor: p.boxColor,
@@ -49,13 +58,17 @@ b.register('.....', function (c, d) {
         }
     }
     var _o = n;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'DialogueDevice_GetDialogueActions', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'DialogueDevice_GetDialogueActions', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     const _g = h => {
-        const i = [], {options: j} = h;
+        const i = [],
+            {
+                options: j
+            } = h;
         for (let k = 1; k <= 4; k++) {
             const l = j[`action${ k }Text`];
             l && i.push({

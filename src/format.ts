@@ -48,7 +48,7 @@ export function formatJs(code: string) {
 
 	normalizeAst(ast);
 
-	return generate(ast);
+	return beautify.js(generate(ast));
 }
 
 export function formatCss(code: string) {

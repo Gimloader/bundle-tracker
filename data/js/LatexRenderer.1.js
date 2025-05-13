@@ -1,10 +1,10 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('.....', function (b, c) {
+a.register('.....', function(b, c) {
     var d, e, f, g, h;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), e = b.exports, f = 'default', g = function () {
+    }), e = b.exports, f = 'default', g = function() {
         return _q;
     }, Object.defineProperty(e, f, {
         get: g,
@@ -12,7 +12,10 @@ a.register('.....', function (b, c) {
         enumerable: !0,
         configurable: !0
     });
-    var i = a('.....'), j = a('.....'), k = a('.....'), l = a('.....');
+    var i = a('.....'),
+        j = a('.....'),
+        k = a('.....'),
+        l = a('.....');
     let m, n, o = p => p;
     const p = q => {
         const r = j.useRef(null);
@@ -38,10 +41,13 @@ a.register('.....', function (b, c) {
             ]
         });
     };
-    var _q = r => (0, i.jsx)(p, { ...r }, r.latex);
+    var _q = r => (0, i.jsx)(p, {
+        ...r
+    }, r.latex);
     const _r = l.default.div(m || (m = o`
   pointer-events: none;
-`)), _s = (0, l.createGlobalStyle)(n || (n = o`
+`)),
+        _s = (0, l.createGlobalStyle)(n || (n = o`
   .latex {
     .ML__base {
       cursor: inherit !important;

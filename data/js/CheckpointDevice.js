@@ -7,16 +7,26 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _s;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
-    const p = 'checkpoint-idle', q = 'checkpoint-pop';
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....');
+    const p = 'checkpoint-idle',
+        q = 'checkpoint-pop';
     class r extends o.default {
         constructor(s) {
             if (super(s), (0, f.default)(this, 'bubbleIsReady', !1), (0, f.default)(this, 'createdAt', Date.now()), (0, f.default)(this, 'onBubbleActiveChange', () => {
@@ -41,8 +51,7 @@ b.register('.....', function (c, d) {
                 spritesheetUrl: (0, g.default)('devices/checkpoint/bubble.png'),
                 frameWidth: 500,
                 frameHeight: 492,
-                animations: [
-                    {
+                animations: [{
                         animName: p,
                         frameRate: 1,
                         animFrames: {
@@ -67,7 +76,9 @@ b.register('.....', function (c, d) {
                         newWidth: this.options.width
                     });
                     u.view.displayWidth = v.width, u.view.displayHeight = v.height;
-                    const w = v.height / u.view.height, x = t.min * w, y = t.max * w;
+                    const w = v.height / u.view.height,
+                        x = t.min * w,
+                        y = t.max * w;
                     this.visualEditing.add.box({
                         angle: 0,
                         rotable: !1,
@@ -78,7 +89,9 @@ b.register('.....', function (c, d) {
                         minHeight: x,
                         maxHeight: y,
                         onChange: z => {
-                            (0, m.ReplaceVisualEditingPreview)(z.x, z.y, { width: z.width });
+                            (0, m.ReplaceVisualEditingPreview)(z.x, z.y, {
+                                width: z.width
+                            });
                         }
                     }), this.tweens.add({
                         targets: u.view,
@@ -93,8 +106,8 @@ b.register('.....', function (c, d) {
         }
     }
     var _s = r;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _e;
     });
     var _e = f => {
@@ -104,13 +117,17 @@ b.register('.....', function (c, d) {
             width: f.width * g
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = (j, k, l) => {
-        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        const m = (0, h.FetchVisualEditingPreview)(),
+            n = (0, g.FetchCurrentlyEditedDevice)();
         if (!n || !m)
             return;
         const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
@@ -131,16 +148,17 @@ b.register('.....', function (c, d) {
             state: m.deviceOption.defaultState
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
     const _e = (f, g) => {

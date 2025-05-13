@@ -7,19 +7,26 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _n;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....');
     class m extends i.default {
         constructor(n) {
             if (super(n), (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) {
-                const o = k.default.Zombies, p = (0, f.FetchOptionSchemaProperty)(this, 'targetRadius');
+                const o = k.default.Zombies,
+                    p = (0, f.FetchOptionSchemaProperty)(this, 'targetRadius');
                 this.visualEditing.add.circle({
                     angle: 0,
                     rotable: !1,
@@ -27,20 +34,26 @@ b.register('.....', function (c, d) {
                     minRadius: p.min,
                     maxRadius: p.max,
                     onChange: q => {
-                        (0, l.ReplaceVisualEditingPreview)(q.x, q.y, { targetRadius: q.radius });
+                        (0, l.ReplaceVisualEditingPreview)(q.x, q.y, {
+                            targetRadius: q.radius
+                        });
                     }
-                }), new (0, j.default)({
+                }), new(0, j.default)({
                     device: this,
                     baseColor: o.baseColor,
                     boxColor: o.boxColor,
-                    content: { text: { text: 'Zombie\nInvasion' } }
+                    content: {
+                        text: {
+                            text: 'Zombie\nInvasion'
+                        }
+                    }
                 });
             }
         }
     }
     var _n = m;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
     const _e = (f, g) => {
@@ -52,13 +65,17 @@ b.register('.....', function (c, d) {
             step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = (j, k, l) => {
-        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        const m = (0, h.FetchVisualEditingPreview)(),
+            n = (0, g.FetchCurrentlyEditedDevice)();
         if (!n || !m)
             return;
         const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
@@ -79,11 +96,12 @@ b.register('.....', function (c, d) {
             state: m.deviceOption.defaultState
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };

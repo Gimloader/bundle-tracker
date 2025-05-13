@@ -6,19 +6,37 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _z;
     });
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....'), w = c('.....'), x = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....'),
+        s = c('.....'),
+        t = c('.....'),
+        u = c('.....'),
+        v = c('.....'),
+        w = c('.....'),
+        x = c('.....');
     class y extends h.default {
         constructor(z) {
             if (super(z), (0, g.default)(this, 'onUpdate', A => {
@@ -32,7 +50,7 @@ c.register('.....', function (d, e) {
                     (0, x.ReleasePointedFlagDevice)(this);
                 }), (0, j.InPreGamePhase)() && (0, s.isSavedVersion)()) {
                 const A = v.default.Overlay;
-                new (0, t.default)({
+                new(0, t.default)({
                     device: this,
                     baseColor: A.baseColor,
                     boxColor: A.boxColor,
@@ -65,21 +83,22 @@ c.register('.....', function (d, e) {
         }
     }
     var _z = y;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'PointerAsset', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'PointerAsset', function() {
         return _f;
     });
     const _f = {
         imageId: 'radar_arrow',
         imageUrl: (0, c('.....').default)('devices/waypoint/arrow.png')
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'Consts', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'Consts', function() {
         return _h;
-    }), a(d.exports, 'NAME_TEXT_STYLE', function () {
+    }), a(d.exports, 'NAME_TEXT_STYLE', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const _h = {
             NameTextFontSize: 20,
             DistTextFontSize: 16,
@@ -101,17 +120,27 @@ c.register('.....', function (d, e) {
             SafeAreaBottomMarginWithoutGUIDevices: 30,
             SafeAreaLeftRightMargin: 30,
             ShadowBlur: 5
-        }, _i = {
+        },
+        _i = {
             fontFamily: f.Fonts.ProductSans,
             fontSize: `${ g.default.fontWeight } ${ _h.NameTextFontSize }px`
         };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'GetTargetParams', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'GetTargetParams', function() {
         return _o;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....');
     const _o = p => {
-        let q = p.x, r = p.y;
+        let q = p.x,
+            r = p.y;
         const s = (0, g.FetchCameraData)();
         if (p.options.target === k.WaypointTarget.player) {
             const t = (0, h.default)(p.state.characterId);
@@ -133,10 +162,14 @@ c.register('.....', function (d, e) {
             const x = {
                     x: w.container.view.x,
                     y: w.container.view.y
-                }, y = {
+                },
+                y = {
                     x: s.x,
                     y: s.y
-                }, z = u(n).Math.Angle.BetweenPoints(x, y), A = w.options.radius, B = {
+                },
+                z = u(n).Math.Angle.BetweenPoints(x, y),
+                A = w.options.radius,
+                B = {
                     x: x.x + A * Math.cos(z),
                     y: x.y + A * Math.sin(z)
                 };
@@ -149,13 +182,17 @@ c.register('.....', function (d, e) {
             angle: Math.atan2(r - s.y, q - s.x)
         };
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'FetchCameraData', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'FetchCameraData', function() {
         return _g;
     });
     var f = c('.....');
     const _g = () => {
-        const h = (0, f.default)(), i = h.cameras.main.worldView.left, j = h.cameras.main.worldView.right, k = h.cameras.main.worldView.top, l = h.cameras.main.worldView.bottom;
+        const h = (0, f.default)(),
+            i = h.cameras.main.worldView.left,
+            j = h.cameras.main.worldView.right,
+            k = h.cameras.main.worldView.top,
+            l = h.cameras.main.worldView.bottom;
         return {
             left: i,
             right: j,
@@ -167,37 +204,40 @@ c.register('.....', function (d, e) {
             height: l - k
         };
     };
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     let f;
     var g;
     let h;
     var i;
-    a(d.exports, 'CurrentState', function () {
+    a(d.exports, 'CurrentState', function() {
         return h;
     }), (g = f || (f = {})).black = 'black', g.blue = 'blue', g.green = 'green', g.orange = 'orange', g.purple = 'purple', g.red = 'red', g.white = 'white', (i = h || (h = {})).idle = 'idle', i.carried = 'carried', i.dropped = 'dropped';
     h.idle;
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     let f;
     var g;
-    a(d.exports, 'WaypointTarget', function () {
+    a(d.exports, 'WaypointTarget', function() {
         return f;
     }), (g = f || (f = {})).deviceLocation = 'deviceLocation', g.player = 'player', g.flag = 'flag', g.ball = 'ball';
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'FetchFlagOfColor', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'FetchFlagOfColor', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const _h = i => {
         if (void 0 === i.options.flagColor)
             return;
         const j = (0, g.default)().worldManager.devices.allDevices.find(k => k.deviceOption.id === f.default.flag && k.options.flagColor === i.options.flagColor && (void 0 === k.pointedByWaypointDeviceID || k.pointedByWaypointDeviceID === i.id));
         return j && (j.pointedByWaypointDeviceID = i.id), j;
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'FetchBallOfId', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'FetchBallOfId', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     const _i = j => {
         if (void 0 === j.options.ballId)
             return;
@@ -209,59 +249,89 @@ c.register('.....', function (d, e) {
         const l = (0, g.default)().worldManager.devices.allDevices.find(m => m.deviceOption.id === f.default.ball && m.options.identifier === j.options.ballId);
         return l && (j.trackedBallDeviceId = l.id), l;
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'IsTargetWithinSafeArea', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'IsTargetWithinSafeArea', function() {
         return _g;
     });
     var f = c('.....');
     const _g = (h, i) => Phaser.Geom.Intersects.CircleToRectangle(new Phaser.Geom.Circle(i.x, i.y, 1), (0, f.GetSafeAreaRect)(h, i));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'GetSafeAreaRect', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'GetSafeAreaRect', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     const _j = (k, l) => {
-        const m = k.scene.cameras.main.zoom / (0, f.default)(), n = g.default.gui.guiSlots.find(o => o.position === h.GUIPosition.topLeft || o.position === h.GUIPosition.topRight), o = g.default.gui.guiSlots.find(p => p.position === h.GUIPosition.bottomLeft || p.position === h.GUIPosition.bottomRight);
+        const m = k.scene.cameras.main.zoom / (0, f.default)(),
+            n = g.default.gui.guiSlots.find(o => o.position === h.GUIPosition.topLeft || o.position === h.GUIPosition.topRight),
+            o = g.default.gui.guiSlots.find(p => p.position === h.GUIPosition.bottomLeft || p.position === h.GUIPosition.bottomRight);
         let p = n ? i.Consts.SafeAreaTopMarginWithGUIDevices : i.Consts.SafeAreaTopMarginWithoutGUIDevices;
         g.default.gui.scorebar && (p += i.Consts.SafeAreaExtraTopMarginWithScorebar), p /= m;
-        const q = (o ? i.Consts.SafeAreaBottomMarginWithGUIDevices : i.Consts.SafeAreaBottomMarginWithoutGUIDevices) / m, r = i.Consts.SafeAreaLeftRightMargin / m;
+        const q = (o ? i.Consts.SafeAreaBottomMarginWithGUIDevices : i.Consts.SafeAreaBottomMarginWithoutGUIDevices) / m,
+            r = i.Consts.SafeAreaLeftRightMargin / m;
         return new Phaser.Geom.Rectangle(l.camData.left + r, l.camData.top + p, l.camData.width - 2 * r, l.camData.height - p - q);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'UpdateWithTargetWithinView', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'UpdateWithTargetWithinView', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     const _i = (j, k, l) => {
         var m, n, o, p;
         let q = !(null === (m = j.pointer) || void 0 === m ? void 0 : m.view) || !(null === (n = j.nameText) || void 0 === n ? void 0 : n.view);
         var r, s;
         if (j.options.target === h.WaypointTarget.ball && (q = !0), q)
-            return (null === (r = j.pointer) || void 0 === r ? void 0 : r.view) && (j.pointer.view.alpha = 0), void ((null === (s = j.nameText) || void 0 === s ? void 0 : s.view) && (j.nameText.view.alpha = 0));
-        const t = j.scene.cameras.main.zoom / (0, f.default)(), u = j.pointer.view.width * g.Consts.PointerBaseScale / t, v = j.nameText.view.width / t, w = -10 / t;
+            return (null === (r = j.pointer) || void 0 === r ? void 0 : r.view) && (j.pointer.view.alpha = 0), void((null === (s = j.nameText) || void 0 === s ? void 0 : s.view) && (j.nameText.view.alpha = 0));
+        const t = j.scene.cameras.main.zoom / (0, f.default)(),
+            u = j.pointer.view.width * g.Consts.PointerBaseScale / t,
+            v = j.nameText.view.width / t,
+            w = -10 / t;
         l.x > l.camData.x ? (j.pointer.view.x = l.x - u / 2 - 25, j.pointer.view.y = l.y, j.pointer.view.angle = 0, j.nameText.view.x = l.x - u - v / 2 - 25 - w, j.nameText.view.y = l.y) : (j.pointer.view.x = l.x + u / 2 + 25, j.pointer.view.y = l.y, j.pointer.view.angle = 180, j.nameText.view.x = l.x + u + v / 2 + 25 + w, j.nameText.view.y = l.y), j.pointer.view.setScale(g.Consts.PointerBaseScale / t * 0.65), j.nameText.view.setText(`${ j.options.name }`), null === (o = j.icon) || void 0 === o || null === (p = o.view) || void 0 === p || p.setAlpha(0);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'UpdateWithTargetOutsideView', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'UpdateWithTargetOutsideView', function() {
         return _l;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....');
     const _l = (m, n, o) => {
         var p, q;
-        const r = m.scene.cameras.main.zoom / (0, f.default)(), s = 999999999, t = o.camData.x + Math.cos(o.angle) * s, u = o.camData.y + Math.sin(o.angle) * s, v = Phaser.Geom.Intersects.GetLineToRectangle(new Phaser.Geom.Line(o.camData.x, o.camData.y, t, u), (0, i.GetSafeAreaRect)(m, o));
+        const r = m.scene.cameras.main.zoom / (0, f.default)(),
+            s = 999999999,
+            t = o.camData.x + Math.cos(o.angle) * s,
+            u = o.camData.y + Math.sin(o.angle) * s,
+            v = Phaser.Geom.Intersects.GetLineToRectangle(new Phaser.Geom.Line(o.camData.x, o.camData.y, t, u), (0, i.GetSafeAreaRect)(m, o));
         var w;
         if (!v[0])
-            return void ((null === (w = m.pointer) || void 0 === w ? void 0 : w.view) && (m.pointer.view.alpha = 0));
-        const x = v[0].x, y = v[0].y;
+            return void((null === (w = m.pointer) || void 0 === w ? void 0 : w.view) && (m.pointer.view.alpha = 0));
+        const x = v[0].x,
+            y = v[0].y;
         if ((null === (p = m.pointer) || void 0 === p ? void 0 : p.view) && (m.pointer.view.x = x, m.pointer.view.y = y, m.pointer.view.alpha = 1, m.pointer.view.rotation = o.angle, m.pointer.view.setScale(h.Consts.PointerBaseScale / r)), !(null === (q = m.nameText) || void 0 === q ? void 0 : q.view))
             return;
         const z = m.options.target === j.WaypointTarget.player;
         z && (0, k.UpdateCharacterPreview)(m), m.nameText.view.setScale(1 / r);
-        const A = m.nameText.view.getBounds(), B = A.width, C = A.height, D = z ? h.Consts.CharacterPreviewSize : B, E = z ? h.Consts.CharacterPreviewSize : C, F = h.Consts.PointerCircleRadius / r;
-        let G = Phaser.Math.Distance.Between(x, y, o.camData.x, o.camData.y) - F, H = o.camData.x + Math.cos(o.angle) * G, I = o.camData.y + Math.sin(o.angle) * G, J = !0;
+        const A = m.nameText.view.getBounds(),
+            B = A.width,
+            C = A.height,
+            D = z ? h.Consts.CharacterPreviewSize : B,
+            E = z ? h.Consts.CharacterPreviewSize : C,
+            F = h.Consts.PointerCircleRadius / r;
+        let G = Phaser.Math.Distance.Between(x, y, o.camData.x, o.camData.y) - F,
+            H = o.camData.x + Math.cos(o.angle) * G,
+            I = o.camData.y + Math.sin(o.angle) * G,
+            J = !0;
         for (; J;) {
             G -= 1 / r, H = o.camData.x + Math.cos(o.angle) * G, I = o.camData.y + Math.sin(o.angle) * G;
-            const K = new Phaser.Geom.Circle(x, y, F), L = new Phaser.Geom.Rectangle(H - D / 2, I - E / 2, D, E);
+            const K = new Phaser.Geom.Circle(x, y, F),
+                L = new Phaser.Geom.Rectangle(H - D / 2, I - E / 2, D, E);
             J = Phaser.Geom.Intersects.CircleToRectangle(K, L);
         }
         if (K.nameText.view.x = H, K.nameText.view.y = I, z) {
@@ -273,20 +343,24 @@ c.register('.....', function (d, e) {
         const O = g.default.phaser.mainCharacter;
         if (!O)
             return;
-        const P = Phaser.Math.Distance.Between(O.body.x, O.body.y, o.x, o.y), Q = h.Consts.PixelsPerMeter, R = Math.round(P / Q);
+        const P = Phaser.Math.Distance.Between(O.body.x, O.body.y, o.x, o.y),
+            Q = h.Consts.PixelsPerMeter,
+            R = Math.round(P / Q);
         K.nameText.view.setText(`${ K.options.name } (${ R }m)`);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'UpdateCharacterPreview', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'UpdateCharacterPreview', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     const _i = j => {
         var k;
         const l = (0, f.default)(j.state.characterId);
         var m;
         if (!l)
-            return void (null === (m = j.icon) || void 0 === m || m.destroy());
+            return void(null === (m = j.icon) || void 0 === m || m.destroy());
         const n = l.skin.skinId.replace('character_', '');
         if (!n)
             return;
@@ -304,11 +378,15 @@ c.register('.....', function (d, e) {
             }
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'UpdateVisibility', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'UpdateVisibility', function() {
         return _k;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....');
     const _k = l => {
         var m, n, o;
         let p = 1;
@@ -321,11 +399,14 @@ c.register('.....', function (d, e) {
         }
         return (null === (r = l.pointer) || void 0 === r ? void 0 : r.view) && (l.pointer.view.alpha = p), (null === (n = l.nameText) || void 0 === n ? void 0 : n.view) && (l.nameText.view.alpha = p), (null === (o = l.icon) || void 0 === o ? void 0 : o.view) && (l.icon.view.alpha = p), p;
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     var _j = (k, l) => {
         if (!k.options.useDeactivateWithinRange || k.options.target !== h.WaypointTarget.deviceLocation)
             return;
@@ -334,19 +415,21 @@ c.register('.....', function (d, e) {
         const m = f.default.phaser.mainCharacter;
         if (!m)
             return;
-        const n = Phaser.Math.Distance.Between(m.body.x, m.body.y, l.x, l.y), o = g.Consts.PixelsPerMeter;
+        const n = Phaser.Math.Distance.Between(m.body.x, m.body.y, l.x, l.y),
+            o = g.Consts.PixelsPerMeter;
         Math.round(n / o) < k.options.deactivateWithinRange && k.sendToServerDevice(i.Messages.deactivateWithinRange);
     };
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     let f;
-    a(d.exports, 'Messages', function () {
+    a(d.exports, 'Messages', function() {
         return f;
     }), (f || (f = {})).deactivateWithinRange = 'deactivateWithinRange';
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'ReleasePointedFlagDevice', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'ReleasePointedFlagDevice', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const _h = i => {
         if (void 0 === i.options.flagColor)
             return;

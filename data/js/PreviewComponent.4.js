@@ -6,17 +6,20 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
-    a(d.exports, 'EncryptData', function () {
+c.register('.....', function(d, e) {
+    a(d.exports, 'EncryptData', function() {
         return _j;
-    }), a(d.exports, 'DecryptData', function () {
+    }), a(d.exports, 'DecryptData', function() {
         return _k;
     });
-    const f = new Map(), g = new Map(), h = new Map();
+    const f = new Map(),
+        g = new Map(),
+        h = new Map();
     let i = 1;
     const _j = (k, l) => {
             const m = (() => {
@@ -28,17 +31,34 @@ c.register('.....', function (d, e) {
                 n && (h.delete(n), g.set(n, m)), f.set(l, m);
             }
             return h.set(m, n), m;
-        }, _k = l => {
+        },
+        _k = l => {
             if (!l)
                 return;
             const m = g.get(l);
             return m ? _k(m) : h.get(l);
         };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _B;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....'),
+        s = c('.....'),
+        t = c('.....'),
+        u = c('.....'),
+        v = c('.....');
     let w, x, y, z = A => A;
     var A;
     (A = y || (y = {})).questions = 'questions', A.response = 'response';
@@ -52,7 +72,8 @@ c.register('.....', function (d, e) {
         const Q = b(g).useMemo(() => {
                 if (J)
                     return (0, v.DecryptData)(J);
-            }, [J]), R = b(g).useMemo(() => {
+            }, [J]),
+            R = b(g).useMemo(() => {
                 if (Q)
                     return (0, v.EncryptData)(Q.answers, `${ Q._id }-answers`);
             }, [Q]);
@@ -83,16 +104,21 @@ c.register('.....', function (d, e) {
                         }
                     });
                 }
-            }, _T = () => {
+            },
+            _T = () => {
                 p.default.stop(), O.set(0), C.beforeOpenAnswerResponse && C.beforeOpenAnswerResponse(), G(y.response), (0, j.animate)(O, 1, {
                     duration: 0.3,
                     onUpdate: U => {
                         !D && U >= 0.3 * 0.75 && E(!0);
                     }
                 });
-            }, U = () => {
-                N.set('0%'), E(!1), p.default.stop(), C.continueAction && C.continueAction(), K(L), G(y.questions), P.set(0), (0, j.animate)(P, 1, { duration: 0.2 });
-            }, V = () => {
+            },
+            U = () => {
+                N.set('0%'), E(!1), p.default.stop(), C.continueAction && C.continueAction(), K(L), G(y.questions), P.set(0), (0, j.animate)(P, 1, {
+                    duration: 0.2
+                });
+            },
+            V = () => {
                 var W;
                 const X = {
                     background: (null == C || null === (W = C.continueButtonColor) || void 0 === W ? void 0 : W.background) || s.default.response.continue.background,
@@ -138,7 +164,9 @@ c.register('.....', function (d, e) {
                     })
                 ]
             }) : C.noQuestionContent || null : (0, f.jsx)(_D, {
-                style: { opacity: O },
+                style: {
+                    opacity: O
+                },
                 children: (0, f.jsx)(r.default, {
                     canAdvanceToQuestions: D,
                     correctAnswer: C.lastQuestionCorrectAnswer,
@@ -168,16 +196,24 @@ c.register('.....', function (d, e) {
   color: ${ 0 };
   height: 35%;
   background-color: ${ 0 };
-`), D => D.questionColor.text, D => D.questionColor.background), _D = (0, h.default)(l.motion.div)(x || (x = z`
+`), D => D.questionColor.text, D => D.questionColor.background),
+        _D = (0, h.default)(l.motion.div)(x || (x = z`
   width: 100%;
   height: 100%;
   will-change: opacity;
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _p;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....');
     let n;
     const o = h.default.div(n || (n = (p => p)`
   height: 100%;
@@ -188,12 +224,14 @@ c.register('.....', function (d, e) {
   text-align: left;
 `));
     var _p = (0, i.observer)(q => {
-        const {readToMe: r} = g.useContext(m.default), {
-                text: s,
-                image: t,
-                audio: u,
-                latex: v
-            } = q;
+        const {
+            readToMe: r
+        } = g.useContext(m.default), {
+            text: s,
+            image: t,
+            audio: u,
+            latex: v
+        } = q;
         return (0, f.jsx)(o, {
             children: s ? t || u || v ? (0, f.jsx)(l.default, {
                 text: s,
@@ -213,17 +251,30 @@ c.register('.....', function (d, e) {
             })
         });
     });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     var _h = b(f).createContext(g.default);
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _u;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....');
     let s;
     const t = [
         49,
@@ -232,7 +283,9 @@ c.register('.....', function (d, e) {
         52
     ];
     var _u = (0, i.observer)(v => {
-        const [w, x] = b(g).useState(!0), [y, z] = b(g).useState(), {readToMe: A} = b(g).useContext(n.default), B = b(g).useRef(null), [C] = (0, o.default)(B), D = b(g).useMemo(() => (0, r.take)((0, q.DecryptData)(v.eas), 4), []);
+        const [w, x] = b(g).useState(!0), [y, z] = b(g).useState(), {
+            readToMe: A
+        } = b(g).useContext(n.default), B = b(g).useRef(null), [C] = (0, o.default)(B), D = b(g).useMemo(() => (0, r.take)((0, q.DecryptData)(v.eas), 4), []);
         if (b(g).useEffect(() => {
                 y && v.onQuestionAnswered(y);
             }, [y]), v.type === p.QuestionType.textInput)
@@ -245,7 +298,8 @@ c.register('.....', function (d, e) {
                     buttonColor: v.textInputButtonColor
                 })
             });
-        const E = D.some(F => !(!F || !F.image)), F = G => {
+        const E = D.some(F => !(!F || !F.image)),
+            F = G => {
                 x(!1), z(G);
             };
         return (0, f.jsx)(_v, {
@@ -283,11 +337,15 @@ c.register('.....', function (d, e) {
   align-items: center;
   flex-wrap: wrap;
 `), w => w.defaultBackgroundColor);
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _n;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....');
     let k, l, m = n => n;
     var _n = o => {
         b(g).useEffect(() => (document.addEventListener('keydown', d), () => document.removeEventListener('keydown', d)), []);
@@ -297,12 +355,17 @@ c.register('.....', function (d, e) {
                 (0, j.clickHandler)(q, () => {
                     o.onQuestionAnswered(o.answer);
                 });
-            }, q = r => {
+            },
+            q = r => {
                 if (o.blockKeyboardEvent)
                     return;
-                const {keyCode: s} = r;
+                const {
+                    keyCode: s
+                } = r;
                 s === o.keyCode && p(r);
-            }, r = o.containerWidth >= o.desktopBreakpoint, s = b(g).useMemo(() => 4 === o.answerCount ? o.gridView || r ? {
+            },
+            r = o.containerWidth >= o.desktopBreakpoint,
+            s = b(g).useMemo(() => 4 === o.answerCount ? o.gridView || r ? {
                 height: 50,
                 width: 50
             } : {
@@ -338,7 +401,8 @@ c.register('.....', function (d, e) {
   height: ${ 0 }%;
   width: ${ 0 }%;
   cursor: pointer;
-`), p => p.heightPercentage, p => p.widthPercentage), _p = h.default.div(l || (l = m`
+`), p => p.heightPercentage, p => p.widthPercentage),
+        _p = h.default.div(l || (l = m`
   width: 100%;
   height: 100%;
   display: flex;
@@ -353,16 +417,22 @@ c.register('.....', function (d, e) {
   border-style: solid;
   ${ 0 }
 `), q => q.answerColors[q.position].background, q => q.answerColors[q.position].text, q => q.isOnDesktop && `\n    transition: background 0.18s ease-in-out;\n    &:hover {\n      background: ${ (0, i.lighten)(0.1, q.answerColors[q.position].background) };\n    }\n  `);
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _r;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     let m, n, o, p, q = r => r;
     var _r = s => {
         const [t, u] = b(g).useState(''), [v, w] = b(g).useState(!0), x = () => {
-                t && v && (w(!1), s.onQuestionAnswered(t));
-            };
+            t && v && (w(!1), s.onQuestionAnswered(t));
+        };
         return (0, f.jsxs)(_s, {
             children: [
                 (0, f.jsx)(_t, {
@@ -393,10 +463,12 @@ c.register('.....', function (d, e) {
     const _s = h.default.div(m || (m = q`
   height: 100%;
   width: 100%;
-`)), _t = h.default.form(n || (n = q`
+`)),
+        _t = h.default.form(n || (n = q`
   height: 55%;
   width: 100%;
-`)), _u = h.default.input(o || (o = q`
+`)),
+        _u = h.default.input(o || (o = q`
   padding-left: 15px;
   padding-right: 15px;
   font-size: 27px;
@@ -408,7 +480,8 @@ c.register('.....', function (d, e) {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-`), k.default.DisabledGray, k.default.Black, l.default.name), _v = h.default.div(p || (p = q`
+`), k.default.DisabledGray, k.default.Black, l.default.name),
+        _v = h.default.div(p || (p = q`
   box-sizing: border-box;
   border-color: rgba(0, 0, 0, 0.3);
   border-width: 6px;
@@ -428,11 +501,13 @@ c.register('.....', function (d, e) {
   justify-content: center;
   align-items: center;
 `), w => w.buttonColor.background, w => w.buttonColor.text, w => (0, i.lighten)(0.1, w.buttonColor.background));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     var _i = j => {
         const [k, l] = b(g).useState(j.text);
         b(g).useEffect(() => {
@@ -454,8 +529,8 @@ c.register('.....', function (d, e) {
             })()
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = {
@@ -468,8 +543,8 @@ c.register('.....', function (d, e) {
         LightSuccessGreen: '#6abf69',
         DarkSuccessGreen: '#2e7d32'
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _g;
     });
     const f = '"Product Sans"';
@@ -478,13 +553,16 @@ c.register('.....', function (d, e) {
         name: `${ f }, sans-serif`,
         important: `${ f }, sans-serif !important`
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _k;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....');
     var _k = l => (0, f.jsxs)(f.Fragment, {
         children: [
             l.text && (0, f.jsx)(i.default, {
@@ -507,7 +585,9 @@ c.register('.....', function (d, e) {
                 }
             }),
             l.latex && (0, f.jsx)(i.default, {
-                text: (0, f.jsx)(h.default, { latex: l.latex }),
+                text: (0, f.jsx)(h.default, {
+                    latex: l.latex
+                }),
                 paddingVertical: l.customTextHorizontalPadding || 7,
                 paddingHorizontal: l.customTextHorizontalPadding,
                 max: l.customMaxTextSize || 25,
@@ -515,13 +595,14 @@ c.register('.....', function (d, e) {
             })
         ]
     });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _i;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....');
+    var g = c('.....'),
+        h = c('.....');
     var _i = j => j.lastQuestionCorrect ? (0, f.jsx)(g.default, {
         textShownWhenAnsweringCorrectly: j.textShownWhenAnsweringCorrectly,
         customCorrectTextAnimation: j.customCorrectTextAnimation,
@@ -551,11 +632,16 @@ c.register('.....', function (d, e) {
         continueButtonColor: j.continueButtonColor,
         onLockedChange: j.onLockedChange
     });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _m;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....');
     let l;
     var _m = n => {
         g.useEffect(() => (document.addEventListener('keydown', d), () => {
@@ -585,17 +671,20 @@ c.register('.....', function (d, e) {
             ]
         });
     };
-    const _n = h.default.div.attrs({ className: 'flex-column maxAll' })(l || (l = (o => o)`
+    const _n = h.default.div.attrs({
+        className: 'flex-column maxAll'
+    })(l || (l = (o => o)`
   color: ${ 0 };
   background: ${ 0 };
 `), i.default.White, o => o.defaultBackgroundColor);
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _j;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....');
+    var g = c('.....'),
+        h = c('.....');
     let i;
     var _j = k => (0, f.jsx)(_k, {
         backgroundColor: k.correctAnswerColor.background,
@@ -605,18 +694,24 @@ c.register('.....', function (d, e) {
             textColor: k.correctAnswerColor.text
         })
     });
-    const _k = g.default.div.attrs({ className: 'maxWidth flex-center' })(i || (i = (l => l)`
+    const _k = g.default.div.attrs({
+        className: 'maxWidth flex-center'
+    })(i || (i = (l => l)`
   height: 40%;
   background: ${ 0 };
 `), l => l.backgroundColor);
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _k;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     let j;
     var _k = l => {
-        const m = l.textColor, n = b(g).useMemo(() => l.textShownWhenAnsweringCorrectly, []);
+        const m = l.textColor,
+            n = b(g).useMemo(() => l.textShownWhenAnsweringCorrectly, []);
         return (0, f.jsx)(_l, {
             style: {
                 color: m,
@@ -630,14 +725,17 @@ c.register('.....', function (d, e) {
             })
         });
     };
-    const _l = h.default.div.attrs({ className: 'maxAll flex-center' })(j || (j = (m => m)``));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+    const _l = h.default.div.attrs({
+        className: 'maxAll flex-center'
+    })(j || (j = (m => m)``));
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _j;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....');
+    var g = c('.....'),
+        h = c('.....');
     let i;
     var _j = k => {
         const l = 1 / k.actions.length * 100;
@@ -652,20 +750,32 @@ c.register('.....', function (d, e) {
             }, m.text))
         });
     };
-    const _k = g.default.div.attrs({ className: 'maxWidth' })(i || (i = (l => l)`
+    const _k = g.default.div.attrs({
+        className: 'maxWidth'
+    })(i || (i = (l => l)`
   height: 60%;
   text-align: center;
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'GimkitLiveActionItemContainer', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'GimkitLiveActionItemContainer', function() {
         return _r;
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _q;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....');
     let p;
     var _q = r => {
-        const s = b(g).useRef(null), [t] = (0, o.default)(s);
+        const s = b(g).useRef(null),
+            [t] = (0, o.default)(s);
         return (0, f.jsx)(j.default, {
             onClick: u => {
                 (0, n.clickHandler)(u, () => {
@@ -689,7 +799,9 @@ c.register('.....', function (d, e) {
             })
         });
     };
-    const _r = h.default.div.attrs({ className: 'flex-center maxWidth' })(p || (p = (s => s)`
+    const _r = h.default.div.attrs({
+        className: 'flex-center maxWidth'
+    })(p || (p = (s => s)`
   height: ${ 0 }%;
   background: ${ 0 };
   color: ${ 0 };
@@ -700,8 +812,8 @@ c.register('.....', function (d, e) {
   cursor: pointer;
   ${ 0 }
 `), s => s.heightPercentage, s => s.background, m.default.White, s => s.isOnDesktop && `transition: background 0.15s;\n    &:hover {\n      background: ${ (0, i.lighten)(0.1, s.background) };\n    }\n\n  `);
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _g;
     });
     var f = c('.....');
@@ -712,11 +824,21 @@ c.register('.....', function (d, e) {
         },
         children: h.children
     });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _s;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....');
     let q;
     var r;
     (r = q || (q = {})).message = 'message', r.answer = 'answer';
@@ -728,15 +850,21 @@ c.register('.....', function (d, e) {
         const E = g.useMemo(() => u === q.message ? t.incorrectAnswerColor.background : (0, p.lighten)(0.2, t.incorrectAnswerColor.background), [
                 u,
                 t.incorrectAnswerColor.background
-            ]), F = g.useMemo(() => u === q.message, [u]), G = g.useMemo(() => u === q.answer, [u]), H = g.useMemo(() => y * j.default.marginPercentage, [y]), I = g.useMemo(() => {
-                const J = j.default.textHeightPercentage * y / B, K = x * j.default.maxTextWidthPercentage / A;
+            ]),
+            F = g.useMemo(() => u === q.message, [u]),
+            G = g.useMemo(() => u === q.answer, [u]),
+            H = g.useMemo(() => y * j.default.marginPercentage, [y]),
+            I = g.useMemo(() => {
+                const J = j.default.textHeightPercentage * y / B,
+                    K = x * j.default.maxTextWidthPercentage / A;
                 return Math.min(J, K);
             }, [
                 y,
                 B,
                 A,
                 x
-            ]), J = g.useMemo(() => {
+            ]),
+            J = g.useMemo(() => {
                 if (F)
                     return 0;
                 let K = -y / 2;
@@ -747,29 +875,40 @@ c.register('.....', function (d, e) {
                 I,
                 B,
                 H
-            ]), K = g.useMemo(() => y - B * I - y * j.default.marginPercentage * 2, [
+            ]),
+            K = g.useMemo(() => y - B * I - y * j.default.marginPercentage * 2, [
                 y,
                 B,
                 I
-            ]), L = g.useMemo(() => K - y * j.default.continueButtonHeightPercentage - H, [
+            ]),
+            L = g.useMemo(() => K - y * j.default.continueButtonHeightPercentage - H, [
                 K,
                 y,
                 H
-            ]), M = g.useMemo(() => y * j.default.continueButtonHeightPercentage, [y]);
+            ]),
+            M = g.useMemo(() => y * j.default.continueButtonHeightPercentage, [y]);
         g.useEffect(() => (t.onLockedChange && t.onLockedChange(!0), () => {
             t.onLockedChange && t.onLockedChange(!1);
         }), [t.onLockedChange]);
         return (0, f.jsx)(h.AnimatePresence, {
             mode: 'wait',
             children: (0, f.jsx)(i.Container, {
-                animate: { background: E },
-                transition: { duration: 0.3 },
+                animate: {
+                    background: E
+                },
+                transition: {
+                    duration: 0.3
+                },
                 ref: w,
                 children: (0, f.jsxs)(i.Content, {
-                    style: { color: t.incorrectAnswerColor.text },
+                    style: {
+                        color: t.incorrectAnswerColor.text
+                    },
                     children: [
                         (0, f.jsx)(i.TextContainer, {
-                            style: { marginTop: J },
+                            style: {
+                                marginTop: J
+                            },
                             children: (0, f.jsx)(i.AnimatedText, {
                                 layout: !0,
                                 animate: {
@@ -826,84 +965,132 @@ c.register('.....', function (d, e) {
             })
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'Container', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'Container', function() {
         return _y;
-    }), a(d.exports, 'Content', function () {
+    }), a(d.exports, 'Content', function() {
         return _z;
-    }), a(d.exports, 'TextContainer', function () {
+    }), a(d.exports, 'TextContainer', function() {
         return _A;
-    }), a(d.exports, 'AnimatedText', function () {
+    }), a(d.exports, 'AnimatedText', function() {
         return _B;
-    }), a(d.exports, 'BottomContainer', function () {
+    }), a(d.exports, 'BottomContainer', function() {
         return _C;
-    }), a(d.exports, 'AnimatedBottomContent', function () {
+    }), a(d.exports, 'AnimatedBottomContent', function() {
         return _D;
-    }), a(d.exports, 'AnswerBox', function () {
+    }), a(d.exports, 'AnswerBox', function() {
         return _E;
-    }), a(d.exports, 'CorrectAnswerLabelContainer', function () {
+    }), a(d.exports, 'CorrectAnswerLabelContainer', function() {
         return _F;
-    }), a(d.exports, 'CorrectAnswerLabel', function () {
+    }), a(d.exports, 'CorrectAnswerLabel', function() {
         return _G;
-    }), a(d.exports, 'AnswerContainer', function () {
+    }), a(d.exports, 'AnswerContainer', function() {
         return _H;
-    }), a(d.exports, 'AnswerButtonAreaContainer', function () {
+    }), a(d.exports, 'AnswerButtonAreaContainer', function() {
         return _I;
-    }), a(d.exports, 'AnswerButtonProgressBar', function () {
+    }), a(d.exports, 'AnswerButtonProgressBar', function() {
         return _J;
-    }), a(d.exports, 'ActionButtonContainer', function () {
+    }), a(d.exports, 'ActionButtonContainer', function() {
         return _K;
-    }), a(d.exports, 'ActionButtonContent', function () {
+    }), a(d.exports, 'ActionButtonContent', function() {
         return _L;
-    }), a(d.exports, 'ActionButtonTextFitContent', function () {
+    }), a(d.exports, 'ActionButtonTextFitContent', function() {
         return _M;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     let i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x = y => y;
-    const _y = (0, g.default)(f.motion.div).attrs({ className: 'maxAll' })(i || (i = x`
+    const _y = (0, g.default)(f.motion.div).attrs({
+            className: 'maxAll'
+        })(i || (i = x`
   overflow: hidden;
-`)), _z = g.default.div.attrs({ className: 'maxAll animated headShake' })(j || (j = x``)), _A = g.default.div.attrs({ className: 'maxAll flex-center animated fadeIn' })(k || (k = x``)), _B = (0, g.default)(f.motion.div).attrs({ layout: !0 })(l || (l = x`
+`)),
+        _z = g.default.div.attrs({
+            className: 'maxAll animated headShake'
+        })(j || (j = x``)),
+        _A = g.default.div.attrs({
+            className: 'maxAll flex-center animated fadeIn'
+        })(k || (k = x``)),
+        _B = (0, g.default)(f.motion.div).attrs({
+            layout: !0
+        })(l || (l = x`
   width: 90%;
   height: 80%;
-`)), _C = g.default.div.attrs({ className: 'maxWidth' })(m || (m = x`
+`)),
+        _C = g.default.div.attrs({
+            className: 'maxWidth'
+        })(m || (m = x`
   text-align: center;
-`)), _D = (0, g.default)(f.motion.div).attrs({
+`)),
+        _D = (0, g.default)(f.motion.div).attrs({
             className: 'maxWidth maxHeight',
             layout: !0,
-            animate: { opacity: 1 },
-            transition: { delay: 0.15 },
-            initial: { opacity: 0 }
-        })(n || (n = x``)), _E = g.default.div.attrs({ className: 'maxAll flex flex-column' })(o || (o = x`
+            animate: {
+                opacity: 1
+            },
+            transition: {
+                delay: 0.15
+            },
+            initial: {
+                opacity: 0
+            }
+        })(n || (n = x``)),
+        _E = g.default.div.attrs({
+            className: 'maxAll flex flex-column'
+        })(o || (o = x`
   background: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
-`)), _F = g.default.div.attrs({ className: 'maxWidth' })(p || (p = x`
+`)),
+        _F = g.default.div.attrs({
+            className: 'maxWidth'
+        })(p || (p = x`
   background: rgba(0, 0, 0, 0.2);
   padding: 16px;
-`)), _G = g.default.div(q || (q = x`
+`)),
+        _G = g.default.div(q || (q = x`
   font-size: 22px;
   opacity: 0.7;
   font-weight: ${ 0 };
   font-style: italic;
-`), h.FontWeights.Normal), _H = g.default.div(r || (r = x`
+`), h.FontWeights.Normal),
+        _H = g.default.div(r || (r = x`
   flex: 1;
   overflow: hidden;
-`)), _I = g.default.div.attrs({ className: 'maxWidth' })(s || (s = x`
+`)),
+        _I = g.default.div.attrs({
+            className: 'maxWidth'
+        })(s || (s = x`
   position: relative;
   background: gray;
-`)), _J = (0, g.default)(f.motion.div).attrs({
-            animate: { width: '100%' },
-            initial: { width: '0%' },
+`)),
+        _J = (0, g.default)(f.motion.div).attrs({
+            animate: {
+                width: '100%'
+            },
+            initial: {
+                width: '0%'
+            },
             className: 'maxHeight'
         })(t || (t = x`
   position: absolute;
   top: 0;
-`)), _K = g.default.div.attrs({ className: 'maxAll' })(u || (u = x`
+`)),
+        _K = g.default.div.attrs({
+            className: 'maxAll'
+        })(u || (u = x`
   position: absolute;
   top: 0;
-`)), _L = g.default.div.attrs({ className: 'maxAll' })(v || (v = x``)), _M = g.default.div.attrs({ className: 'flex vc' })(w || (w = x``));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+`)),
+        _L = g.default.div.attrs({
+            className: 'maxAll'
+        })(v || (v = x``)),
+        _M = g.default.div.attrs({
+            className: 'flex vc'
+        })(w || (w = x``));
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = {
@@ -912,17 +1099,22 @@ c.register('.....', function (d, e) {
         marginPercentage: 0.04,
         continueButtonHeightPercentage: 0.3
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _o;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....');
     let k;
     const l = {
             backgroundColor: 'rgba(255,255,31, 0.21)',
             boxShadow: '10px 0 0 rgba(255,255,31, 0.21), -10px 0 0 rgba(255,255,31, 0.21)',
             borderRadius: 9
-        }, m = j.default.div(k || (k = (n => n)`
+        },
+        m = j.default.div(k || (k = (n => n)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -930,53 +1122,55 @@ c.register('.....', function (d, e) {
   width: 100%;
 `));
     class n extends b(h).Component {
-        render() {
-            const {
-                paddingHorizontal: o,
-                paddingVertical: p,
-                ...q
-            } = this.props;
-            return delete q.text, delete q.highlighted, (0, g.jsx)(m, {
-                className: this.props.customClass,
-                style: this.props.customStyle,
-                children: (0, g.jsx)(i.Textfit, {
-                    style: {
-                        height: '100%',
-                        width: '100%',
-                        display: 'flex',
-                        justifyContent: this.props.disableHorizontalCentering ? 'flex-start' : 'center',
-                        alignItems: 'center',
-                        paddingTop: p,
-                        paddingBottom: p,
-                        paddingLeft: this.props.paddingLeft || o,
-                        paddingRight: o,
-                        boxSizing: 'border-box',
-                        fontWeight: this.props.noBold ? 'normal' : 900
-                    },
-                    ...q,
-                    children: (0, g.jsx)('div', {
-                        style: this.props.highlighted ? l : void 0,
-                        children: this.props.text
+            render() {
+                const {
+                    paddingHorizontal: o,
+                    paddingVertical: p,
+                    ...q
+                } = this.props;
+                return delete q.text, delete q.highlighted, (0, g.jsx)(m, {
+                    className: this.props.customClass,
+                    style: this.props.customStyle,
+                    children: (0, g.jsx)(i.Textfit, {
+                        style: {
+                            height: '100%',
+                            width: '100%',
+                            display: 'flex',
+                            justifyContent: this.props.disableHorizontalCentering ? 'flex-start' : 'center',
+                            alignItems: 'center',
+                            paddingTop: p,
+                            paddingBottom: p,
+                            paddingLeft: this.props.paddingLeft || o,
+                            paddingRight: o,
+                            boxSizing: 'border-box',
+                            fontWeight: this.props.noBold ? 'normal' : 900
+                        },
+                        ...q,
+                        children: (0, g.jsx)('div', {
+                            style: this.props.highlighted ? l : void 0,
+                            children: this.props.text
+                        })
                     })
-                })
-            });
+                });
+            }
         }
-    }
-    (0, f.default)(n, 'defaultProps', {
-        paddingHorizontal: '6%',
-        paddingVertical: 15,
-        max: 50,
-        mode: 'single',
-        forceSingleModeWidth: !1
-    });
+        (0, f.default)(n, 'defaultProps', {
+            paddingHorizontal: '6%',
+            paddingVertical: 15,
+            max: 50,
+            mode: 'single',
+            forceSingleModeWidth: !1
+        });
     var _o = n;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _j;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     var _j = k => (0, f.jsxs)(i.AnswerBox, {
         style: {
             height: k.answerBoxHeight,
@@ -999,7 +1193,9 @@ c.register('.....', function (d, e) {
                 })
             }),
             (0, f.jsx)(i.AnswerContainer, {
-                style: { padding: `${ Math.max(0.1 * k.containerHeight, 30) }px ${ Math.max(0.1 * k.containerWidth, 30) }px` },
+                style: {
+                    padding: `${ Math.max(0.1 * k.containerHeight, 30) }px ${ Math.max(0.1 * k.containerWidth, 30) }px`
+                },
                 children: (0, f.jsx)(h.default, {
                     allowGoogleTranslate: k.allowGoogleTranslate,
                     text: k.correctAnswer ? k.correctAnswer.text : 'No Correct Answer',
@@ -1014,29 +1210,39 @@ c.register('.....', function (d, e) {
             })
         ]
     });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     class i extends b(g).Component {
         componentDidUpdate(j) {
-            j.text !== this.props.text && (this.setState({ text: this.props.text }), this.onTranslate());
+            j.text !== this.props.text && (this.setState({
+                text: this.props.text
+            }), this.onTranslate());
         }
         componentDidMount() {
             this.onTranslate();
         }
         onTranslate() {
             if ('en' !== this.props.language && !this.props.text.includes(this.props.disableIfContains))
-                return this.props.translations && this.props.translations[this.props.text] ? this.setState({ text: this.props.translations[this.props.text] }) : void this.requestTranslation().then(j => {
-                    this.props.translations[this.props.text] = j, this.setState({ text: j });
+                return this.props.translations && this.props.translations[this.props.text] ? this.setState({
+                    text: this.props.translations[this.props.text]
+                }) : void this.requestTranslation().then(j => {
+                    this.props.translations[this.props.text] = j, this.setState({
+                        text: j
+                    });
                 }).catch();
         }
         render() {
             return this.buildString();
         }
         constructor(...a) {
-            super(...a), (0, f.default)(this, 'state', { text: this.props.text }), (0, f.default)(this, 'buildString', () => {
+            super(...a), (0, f.default)(this, 'state', {
+                text: this.props.text
+            }), (0, f.default)(this, 'buildString', () => {
                 let j = this.state.text;
                 return this.props.suffix && (j += this.props.suffix), j;
             }), (0, f.default)(this, 'requestTranslation', async () => {
@@ -1052,16 +1258,23 @@ c.register('.....', function (d, e) {
         }
     }
     var _j = i;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _n;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....');
     var _n = o => {
         const [p, q] = (0, l.useBoolean)(!1), [r, s] = g.useState(o.secondsToWait), t = g.useMemo(() => o.canAdvanceToQuestions && r > 0, [
-                r,
-                o.canAdvanceToQuestions
-            ]);
+            r,
+            o.canAdvanceToQuestions
+        ]);
         g.useEffect(() => {
             o.onLockedChange && o.onLockedChange(t);
         }, [
@@ -1072,12 +1285,14 @@ c.register('.....', function (d, e) {
                 text: 'Continue',
                 language: o.language,
                 translations: o.translations
-            }), v = g.useCallback(() => {
+            }),
+            v = g.useCallback(() => {
                 t || o.continueToQuestions();
             }, [
                 o.continueToQuestions,
                 t
-            ]), w = g.useCallback(x => {
+            ]),
+            w = g.useCallback(x => {
                 o.blockKeyboardEvents || x.key && 'Enter' === x.key && v();
             }, [
                 o.blockKeyboardEvents,
@@ -1106,10 +1321,14 @@ c.register('.....', function (d, e) {
             p,
             r
         ]), (0, f.jsxs)(j.AnswerButtonAreaContainer, {
-            style: { height: o.continueButtonHeight },
+            style: {
+                height: o.continueButtonHeight
+            },
             children: [
                 (0, f.jsx)(j.AnswerButtonProgressBar, {
-                    style: { background: o.continueButtonColor.background },
+                    style: {
+                        background: o.continueButtonColor.background
+                    },
                     transition: {
                         duration: o.secondsToWait,
                         ease: 'linear'
@@ -1130,7 +1349,9 @@ c.register('.....', function (d, e) {
                             children: (0, f.jsx)(h.default, {
                                 text: (0, f.jsxs)(j.ActionButtonTextFitContent, {
                                     children: [
-                                        (0, f.jsx)('div', { children: u }),
+                                        (0, f.jsx)('div', {
+                                            children: u
+                                        }),
                                         (0, f.jsxs)(k.motion.div, {
                                             animate: {
                                                 width: r > 0 ? 'auto' : 0,
@@ -1141,8 +1362,12 @@ c.register('.....', function (d, e) {
                                                 opacity: 1
                                             },
                                             transition: {
-                                                width: { duration: 0.3 },
-                                                opacity: { duration: 0 }
+                                                width: {
+                                                    duration: 0.3
+                                                },
+                                                opacity: {
+                                                    duration: 0
+                                                }
                                             },
                                             children: [
                                                 '\xA0(',
@@ -1160,11 +1385,12 @@ c.register('.....', function (d, e) {
             ]
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     var _h = i => {
         const [j, k] = f.useState(i.text);
         f.useEffect(() => {
@@ -1184,8 +1410,8 @@ c.register('.....', function (d, e) {
             return i.suffix && (l += i.suffix), l;
         })();
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _g;
     });
     var f = c('.....');
@@ -1195,8 +1421,7 @@ c.register('.....', function (d, e) {
             background: '#303f9f',
             text: f.default.White
         },
-        palette: [
-            {
+        palette: [{
                 background: '#771322',
                 text: f.default.White
             },
@@ -1233,11 +1458,17 @@ c.register('.....', function (d, e) {
         },
         desktopBreakpoint: 650
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _o;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     let m;
     const n = (0, h.default)(j.motion.div)(m || (m = (o => o)`
   background: ${ 0 };

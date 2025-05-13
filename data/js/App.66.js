@@ -7,15 +7,22 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _n;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....');
     var _n = () => (g.useEffect(() => {
         const o = (0, j.getUrlVariable)('token');
         o ? h.default.confirm({
@@ -24,9 +31,13 @@ b.register('.....', function (c, d) {
                 (0, j.request)({
                     url: '/api/users/revokeAccess',
                     method: 'post',
-                    data: { token: decodeURIComponent(o) },
+                    data: {
+                        token: decodeURIComponent(o)
+                    },
                     success: () => {
-                        h.default.success({ content: 'Your student\'s access has been revoked' }), (0, m.NavigateTo)(k.HOMEPAGE);
+                        h.default.success({
+                            content: 'Your student\'s access has been revoked'
+                        }), (0, m.NavigateTo)(k.HOMEPAGE);
                     },
                     error: () => (0, l.throwError)({
                         title: 'Error revoking access',
@@ -42,10 +53,12 @@ b.register('.....', function (c, d) {
         }) : (0, m.NavigateTo)('/');
     }, []), (0, f.jsx)('div', {
         className: 'maxWidth maxHeight hc vc flex',
-        children: (0, f.jsx)(i.default, { size: 'large' })
+        children: (0, f.jsx)(i.default, {
+            size: 'large'
+        })
     }));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'NavigateTo', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'NavigateTo', function() {
         return _f;
     });
     var e = b('.....');

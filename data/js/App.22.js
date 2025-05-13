@@ -6,29 +6,35 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _p;
     });
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....');
-    let n = null, o = null;
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....');
+    let n = null,
+        o = null;
     var _p = q => {
         const [r, s] = h.useState(!1), [t, u] = h.useState(0);
         h.useEffect(() => {
             if (!r)
-                return () => {
-                };
+                return () => {};
             if (t >= 3)
-                return () => {
-                };
+                return () => {};
             o || (o = document.createElement('div'), o.id = 'character-preview-div', o.className = 'maxWidth maxHeight');
             const v = document.getElementById('character-preview-container');
             return v && o && !v.contains(o) && v.appendChild(o), (0, l.FixSpinePlugin)(), (0, m.FixPhaserBootProcess)(), window.SPINE_GAME_OBJECT_TYPE = 'spinePreview', n || (n = new Phaser.Game({
@@ -56,21 +62,22 @@ c.register('.....', function (d, e) {
             }
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CharacterPreviewPhaserConfig', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CharacterPreviewPhaserConfig', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const _h = {
         type: b(f).WEBGL,
         roundPixels: !1,
         transparent: !0,
         plugins: {
             scene: [{
-                    key: 'spine.SpinePlugin',
-                    plugin: g.SpinePlugin,
-                    mapping: 'spine'
-                }]
+                key: 'spine.SpinePlugin',
+                plugin: g.SpinePlugin,
+                mapping: 'spine'
+            }]
         },
         scale: {
             mode: b(f).Scale.NONE,
@@ -79,13 +86,19 @@ c.register('.....', function (d, e) {
         parent: 'character-preview-div',
         scene: [],
         banner: !1,
-        pipeline: { skipPipelinesAtBoot: !0 }
+        pipeline: {
+            skipPipelinesAtBoot: !0
+        }
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CharacterScene', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CharacterScene', function() {
         return _k;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....');
     class _k extends Phaser.Scene {
         preload() {
             (0, g.CharacterScenePreload)(this);
@@ -97,7 +110,7 @@ c.register('.....', function (d, e) {
                 this.cache.json.add('data_' + this.skinId, m);
             }
             try {
-                this.character = new (0, j.CharacterSceneCharacter)(this);
+                this.character = new(0, j.CharacterSceneCharacter)(this);
             } catch (l) {
                 this.game.onError && this.game.onError();
             }
@@ -112,8 +125,8 @@ c.register('.....', function (d, e) {
             super(...a), (0, f.default)(this, 'onError', null);
         }
     }
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CharacterScenePreload', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CharacterScenePreload', function() {
         return _g;
     });
     var f = c('.....');
@@ -122,8 +135,8 @@ c.register('.....', function (d, e) {
         const i = Math.random().toString();
         h.game.cache.json.exists('data_compressed_' + h.skinId) || (h.load.spineJson('data_compressed_' + h.skinId, (0, f.default)(`characters/spine/${ h.skinId }.json?cb=${ i }`)), h.load.spineAtlas('atlas_' + h.skinId, (0, f.default)(`characters/spine/${ h.skinId }.atlas?cb=${ i }`)));
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CharacterSceneHandleResize', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CharacterSceneHandleResize', function() {
         return _g;
     });
     var f = c('.....');
@@ -131,44 +144,57 @@ c.register('.....', function (d, e) {
         const i = document.getElementById('character-preview-div');
         if (!i)
             return;
-        const j = i.clientWidth, k = i.clientHeight, l = window.devicePixelRatio, m = l * j, n = l * k, o = Math.min(m / j, n / k);
+        const j = i.clientWidth,
+            k = i.clientHeight,
+            l = window.devicePixelRatio,
+            m = l * j,
+            n = l * k,
+            o = Math.min(m / j, n / k);
         h.scale.resize(o * j, o * k);
         const p = 1 / o;
         h.game.canvas.style.transform = 'scaleX(' + p + ') scaleY(' + p + ')', h.game.canvas.style.transformOrigin = '0 0', h.cameras.main.setZoom(0.4 * o), (0, f.CharacterSceneCenterCameraOnCharacter)(h), h.scale.refresh();
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CharacterSceneCenterCameraOnCharacter', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CharacterSceneCenterCameraOnCharacter', function() {
         return _f;
     });
     const _f = g => {
         if (!g.character)
             return;
-        const h = g.character.spine.displayWidth, i = g.character.spine.displayHeight, j = g.add.rectangle(0, 0, h, i, 16711680).setOrigin(g.character.spine.displayOriginX / h, g.character.spine.displayOriginY / i).setVisible(!1), k = j.getBounds();
+        const h = g.character.spine.displayWidth,
+            i = g.character.spine.displayHeight,
+            j = g.add.rectangle(0, 0, h, i, 16711680).setOrigin(g.character.spine.displayOriginX / h, g.character.spine.displayOriginY / i).setVisible(!1),
+            k = j.getBounds();
         j.destroy(), g.cameras.main.centerOn(k.centerX, k.centerY);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CharacterSceneCharacter', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CharacterSceneCharacter', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     class _j {
         destroy() {
             this.animation.destroy();
         }
         constructor(k) {
-            this.scene = k, this.skinId = k.skinId, this.editStyles = new (0, g.CharacterSceneCharacterEditStyles)(this), this.animation = new (0, i.CharacterSceneAnimation)(this), this.spine = k.add.spinePreview(0, 0, 'data_' + this.skinId, 'atlas_' + this.skinId, new (0, f.SkinsAndAnimationBoundsProvider)('idle', [this.skinId])), this.spine.skeleton.setSkinByName(this.skinId), this.editStyles.apply(), this.animation.onSkinChanged(), (0, h.CharacterSceneCenterCameraOnCharacter)(k);
+            this.scene = k, this.skinId = k.skinId, this.editStyles = new(0, g.CharacterSceneCharacterEditStyles)(this), this.animation = new(0, i.CharacterSceneAnimation)(this), this.spine = k.add.spinePreview(0, 0, 'data_' + this.skinId, 'atlas_' + this.skinId, new(0, f.SkinsAndAnimationBoundsProvider)('idle', [this.skinId])), this.spine.skeleton.setSkinByName(this.skinId), this.editStyles.apply(), this.animation.onSkinChanged(), (0, h.CharacterSceneCenterCameraOnCharacter)(k);
         }
     }
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CharacterSceneCharacterEditStyles', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CharacterSceneCharacterEditStyles', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     class _h {
         constructor(i) {
             (0, f.default)(this, 'apply', () => {
                 var j;
-                const k = this.character.scene.cache.json.get('data_' + this.character.skinId), l = [];
+                const k = this.character.scene.cache.json.get('data_' + this.character.skinId),
+                    l = [];
                 null == k || null === (j = k.style) || void 0 === j || j.categories.forEach(m => {
                     const n = this.character.scene.editStyles[m.name];
                     if (m.type === g.CosmeticStyleCategoryType.color && m.color)
@@ -194,11 +220,13 @@ c.register('.....', function (d, e) {
             }), this.character = i;
         }
     }
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CharacterSceneAnimation', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CharacterSceneAnimation', function() {
         return _i;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     class _i {
         constructor(j) {
             (0, f.default)(this, 'skinChanged', !1), (0, f.default)(this, 'availableAnimations', []), (0, f.default)(this, 'currentBodyAnimation', g.CharacterBodyAnimationState.rest), (0, f.default)(this, 'bodyAnimationLocked', !1), (0, f.default)(this, 'bodyAnimationStartedAt', 0), (0, f.default)(this, 'currentEyeAnimation', g.CharacterEyeAnimationState.idle), (0, f.default)(this, 'lastGroundedAnimationAt', 0), (0, f.default)(this, 'setupAnimations', () => {
@@ -259,16 +287,16 @@ c.register('.....', function (d, e) {
             }), this.character = j;
         }
     }
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     let f;
     var g;
-    a(d.exports, 'MapModeType', function () {
+    a(d.exports, 'MapModeType', function() {
         return f;
     }), (g = f || (f = {})).liveGame = 'liveGame', g.assignment = 'assignment';
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     let f;
     var g;
-    a(d.exports, 'default', function () {
+    a(d.exports, 'default', function() {
         return _h;
     }), (g = f || (f = {})).topDown = 'topDown', g.platformer = 'platformer';
     var _h = f;

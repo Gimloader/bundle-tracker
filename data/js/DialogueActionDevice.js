@@ -1,10 +1,10 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('.....', function (b, c) {
+a.register('.....', function(b, c) {
     var d, e, f, g, h;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), e = b.exports, f = 'default', g = function () {
+    }), e = b.exports, f = 'default', g = function() {
         return _t;
     }, Object.defineProperty(e, f, {
         get: g,
@@ -12,7 +12,16 @@ a.register('.....', function (b, c) {
         enumerable: !0,
         configurable: !0
     });
-    var i = a('.....'), j = a('.....'), k = a('.....'), l = a('.....'), m = a('.....'), n = a('.....'), o = a('.....'), p = a('.....'), q = a('.....'), r = a('.....');
+    var i = a('.....'),
+        j = a('.....'),
+        k = a('.....'),
+        l = a('.....'),
+        m = a('.....'),
+        n = a('.....'),
+        o = a('.....'),
+        p = a('.....'),
+        q = a('.....'),
+        r = a('.....');
     class s extends p.default {
         constructor(t) {
             if (super(t), (0, i.default)(this, 'onStateChange', u => {
@@ -28,7 +37,7 @@ a.register('.....', function (b, c) {
                     }
                 }), (0, n.InPreGamePhase)() && (0, m.isSavedVersion)()) {
                 const u = r.default.Overlay;
-                new (0, q.default)({
+                new(0, q.default)({
                     device: this,
                     baseColor: u.baseColor,
                     boxColor: u.boxColor,

@@ -7,23 +7,46 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _s;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....');
     const q = 0.35;
     class r extends g.default {
         createPath() {
             if (!this.options.showPath)
                 return;
-            const s = Phaser.Math.DegToRad(this.options.angle), t = 16 * Math.floor((this.options.distance - 55 - 24) / 16), u = Math.cos(s) * t, v = Math.sin(s) * t, w = -u / 2, x = -v / 2, y = u / 2, z = v / 2, A = Math.floor(t / 16), B = (y - w) / A, C = (z - x) / A, D = (0, j.InPreGamePhase)() ? q : (1 - this.activeFactor) * q, E = (0, j.InPreGamePhase)() ? Phaser.BlendModes.NORMAL : Phaser.BlendModes.ADD;
+            const s = Phaser.Math.DegToRad(this.options.angle),
+                t = 16 * Math.floor((this.options.distance - 55 - 24) / 16),
+                u = Math.cos(s) * t,
+                v = Math.sin(s) * t,
+                w = -u / 2,
+                x = -v / 2,
+                y = u / 2,
+                z = v / 2,
+                A = Math.floor(t / 16),
+                B = (y - w) / A,
+                C = (z - x) / A,
+                D = (0, j.InPreGamePhase)() ? q : (1 - this.activeFactor) * q,
+                E = (0, j.InPreGamePhase)() ? Phaser.BlendModes.NORMAL : Phaser.BlendModes.ADD;
             for (let F = 0; F <= A; F++) {
-                const G = w + F * B, H = x + F * C;
+                const G = w + F * B,
+                    H = x + F * C;
                 this.parts.add.sprite({
                     ...h.DotAsset,
                     depthChange: Math.min(x, z) - H,
@@ -73,7 +96,9 @@ b.register('.....', function (c, d) {
                     }
                 });
             }), this.base = h.bases[this.options.appearance], this.setupVisualEditing();
-            const t = Phaser.Math.DegToRad(this.options.angle), u = Math.cos(t) * this.options.distance, v = Math.sin(t) * this.options.distance;
+            const t = Phaser.Math.DegToRad(this.options.angle),
+                u = Math.cos(t) * this.options.distance,
+                v = Math.sin(t) * this.options.distance;
             this.createPath(), this.origin = this.parts.add.animatedSprite({
                 ...this.base,
                 x: -u / 2,
@@ -92,30 +117,35 @@ b.register('.....', function (c, d) {
         }
     }
     var _s = r;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'LaserAsset', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'LaserAsset', function() {
         return _h;
-    }), a(c.exports, 'DotAsset', function () {
+    }), a(c.exports, 'DotAsset', function() {
         return _i;
-    }), a(c.exports, 'bases', function () {
+    }), a(c.exports, 'bases', function() {
         return _l;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....');
     const _h = {
             imageId: (0, e.default)('devices/laser_beam/laser.png'),
             imageUrl: (0, e.default)('devices/laser_beam/laser.png')
-        }, _i = {
+        },
+        _i = {
             imageId: (0, e.default)('devices/laser_beam/dot.png'),
             imageUrl: (0, e.default)('devices/laser_beam/dot.png')
-        }, j = g.LaserBeamAppearance.standard, k = g.LaserBeamAppearance.plant, _l = {
+        },
+        j = g.LaserBeamAppearance.standard,
+        k = g.LaserBeamAppearance.plant,
+        _l = {
             [j]: {
                 baseScale: 0.36,
                 spritesheetId: (0, e.default)('devices/laser_beam/standard_base.png'),
                 spritesheetUrl: (0, e.default)('devices/laser_beam/standard_base.png'),
                 frameWidth: 215,
                 frameHeight: 130,
-                animations: [
-                    {
+                animations: [{
                         animName: (0, f.GetAnimName)(f.Anims.inactive, j),
                         frameRate: 1,
                         animFrames: {
@@ -157,8 +187,7 @@ b.register('.....', function (c, d) {
                 spritesheetUrl: (0, e.default)('devices/laser_beam/plant_base.png'),
                 frameWidth: 127,
                 frameHeight: 122,
-                animations: [
-                    {
+                animations: [{
                         animName: (0, f.GetAnimName)(f.Anims.inactive, k),
                         frameRate: 12,
                         animFrames: {
@@ -195,23 +224,23 @@ b.register('.....', function (c, d) {
                 ]
             }
         };
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
-    a(c.exports, 'Anims', function () {
+    a(c.exports, 'Anims', function() {
         return e;
-    }), a(c.exports, 'GetAnimName', function () {
+    }), a(c.exports, 'GetAnimName', function() {
         return _g;
     }), (f = e || (e = {})).active = 'ACTIVE', f.inactive = 'INACTIVE', f.toActive = 'TO_ACTIVE', f.toInactive = 'TO_INACTIVE';
     const _g = (h, i) => 'LASER_BEAM_DEVICE_ORIGIN_ANIM_' + i + h;
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
-    a(c.exports, 'LaserBeamAppearance', function () {
+    a(c.exports, 'LaserBeamAppearance', function() {
         return e;
     }), (f = e || (e = {})).standard = 'Standard', f.plant = 'Plant';
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
     const _e = (f, g) => {
@@ -223,13 +252,17 @@ b.register('.....', function (c, d) {
             step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = (j, k, l) => {
-        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        const m = (0, h.FetchVisualEditingPreview)(),
+            n = (0, g.FetchCurrentlyEditedDevice)();
         if (!n || !m)
             return;
         const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
@@ -250,19 +283,24 @@ b.register('.....', function (c, d) {
             state: m.deviceOption.defaultState
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'OnHit', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'OnHit', function() {
         return _j;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....');
     const _j = k => {
         const {
             characterId: l,
@@ -275,7 +313,9 @@ b.register('.....', function (c, d) {
                 characterId: l,
                 damage: m,
                 type: n
-            }), l === o && (0, i.default)({ type: n });
+            }), l === o && (0, i.default)({
+                type: n
+            });
         }
     };
 });

@@ -7,15 +7,24 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _q;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....');
     class p extends k.default {
         constructor(q) {
             if (super(q), (0, f.default)(this, 'currentFallVelocity', 0), (0, h.InGamePhase)() || (0, g.isPublishedVersion)())
@@ -27,10 +36,13 @@ b.register('.....', function (c, d) {
                 maxRadius: r.max,
                 rotable: !1,
                 onChange: s => {
-                    (0, i.ReplaceVisualEditingPreview)(s.x, s.y, { rangeRadius: Math.round(s.radius) });
+                    (0, i.ReplaceVisualEditingPreview)(s.x, s.y, {
+                        rangeRadius: Math.round(s.radius)
+                    });
                 }
             });
-            const s = this.options.skinId.replace('character_', ''), t = (0, l.default)(`characters/spine/normalized_preview/${ s }.png`);
+            const s = this.options.skinId.replace('character_', ''),
+                t = (0, l.default)(`characters/spine/normalized_preview/${ s }.png`);
             this.parts.add.sprite({
                 y: 30 - 50 * 0.28,
                 imageId: t,
@@ -50,13 +62,17 @@ b.register('.....', function (c, d) {
         }
     }
     var _q = p;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = (j, k, l) => {
-        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        const m = (0, h.FetchVisualEditingPreview)(),
+            n = (0, g.FetchCurrentlyEditedDevice)();
         if (!n || !m)
             return;
         const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
@@ -77,16 +93,17 @@ b.register('.....', function (c, d) {
             state: m.deviceOption.defaultState
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
     const _e = (f, g) => {

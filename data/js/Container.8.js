@@ -7,20 +7,27 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
-    a(c.exports, 'useQuery', function () {
+b.register('.....', function(c, d) {
+    a(c.exports, 'useQuery', function() {
         return _h;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....');
+
     function _h(i, j, k) {
         const l = (0, e.parseQueryArgs)(i, j, k);
         return (0, g.useBaseQuery)(l, f.QueryObserver);
     }
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'QueryObserver', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'QueryObserver', function() {
         return _j;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....');
     class _j extends h.Subscribable {
         bindMethods() {
             this.remove = this.remove.bind(this), this.refetch = this.refetch.bind(this);
@@ -41,7 +48,8 @@ b.register('.....', function (c, d) {
             this.listeners = [], this.clearStaleTimeout(), this.clearRefetchInterval(), this.currentQuery.removeObserver(this);
         }
         setOptions(k, l) {
-            const m = this.options, n = this.currentQuery;
+            const m = this.options,
+                n = this.currentQuery;
             if (this.options = this.client.defaultQueryOptions(k), (0, e.shallowEqualObjects)(m, this.options) || this.client.getQueryCache().notify({
                     type: 'observerOptionsUpdated',
                     query: this.currentQuery,
@@ -83,11 +91,14 @@ b.register('.....', function (c, d) {
         } = {}) {
             return this.fetch({
                 ...l,
-                meta: { refetchPage: k }
+                meta: {
+                    refetchPage: k
+                }
             });
         }
         fetchOptimistic(k) {
-            const l = this.client.defaultQueryOptions(k), m = this.client.getQueryCache().build(this.client, l);
+            const l = this.client.defaultQueryOptions(k),
+                m = this.client.getQueryCache().build(this.client, l);
             return m.isFetchingOptimistic = !0, m.fetch().then(() => this.createResult(m, l));
         }
         fetch(k) {
@@ -129,16 +140,30 @@ b.register('.....', function (c, d) {
             this.refetchIntervalId && (clearInterval(this.refetchIntervalId), this.refetchIntervalId = void 0);
         }
         createResult(k, l) {
-            const m = this.currentQuery, n = this.options, o = this.currentResult, p = this.currentResultState, q = this.currentResultOptions, r = k !== m, s = r ? k.state : this.currentQueryInitialState, t = r ? this.currentResult : this.previousQueryResult, {state: u} = k;
+            const m = this.currentQuery,
+                n = this.options,
+                o = this.currentResult,
+                p = this.currentResultState,
+                q = this.currentResultOptions,
+                r = k !== m,
+                s = r ? k.state : this.currentQueryInitialState,
+                t = r ? this.currentResult : this.previousQueryResult,
+                {
+                    state: u
+                } = k;
             let v, {
                     dataUpdatedAt: w,
                     error: x,
                     errorUpdatedAt: y,
                     fetchStatus: z,
                     status: A
-                } = u, B = !1, C = !1;
+                } = u,
+                B = !1,
+                C = !1;
             if (l._optimisticResults) {
-                const D = this.hasListeners(), E = !D && _k(k, l), F = D && _n(k, m, l, n);
+                const D = this.hasListeners(),
+                    E = !D && _k(k, l),
+                    F = D && _n(k, m, l, n);
                 (E || F) && (z = (0, i.canFetch)(k.options.networkMode) ? 'fetching' : 'paused', w || (A = 'loading')), 'isRestoring' === l._optimisticResults && (z = 'idle');
             }
             if (l.keepPreviousData && !u.dataUpdatedAt && null != t && t.isSuccess && 'error' !== A)
@@ -167,7 +192,9 @@ b.register('.....', function (c, d) {
                 void 0 !== G && (A = 'success', v = (0, D.replaceData)(null == E ? void 0 : E.data, G, l), C = !0);
             }
             this.selectError && (x = this.selectError, v = this.selectResult, y = Date.now(), A = 'error');
-            const G = 'fetching' === z, H = 'loading' === A, I = 'error' === A;
+            const G = 'fetching' === z,
+                H = 'loading' === A,
+                I = 'error' === A;
             return {
                 status: A,
                 fetchStatus: z,
@@ -197,15 +224,20 @@ b.register('.....', function (c, d) {
             };
         }
         updateResult(k) {
-            const l = this.currentResult, m = this.createResult(this.currentQuery, this.options);
+            const l = this.currentResult,
+                m = this.createResult(this.currentQuery, this.options);
             if (this.currentResultState = this.currentQuery.state, this.currentResultOptions = this.options, (0, e.shallowEqualObjects)(m, l))
                 return;
             this.currentResult = m;
-            const n = { cache: !0 };
+            const n = {
+                cache: !0
+            };
             !1 !== (null == k ? void 0 : k.listeners) && (() => {
                 if (!l)
                     return !0;
-                const {notifyOnChangeProps: o} = this.options;
+                const {
+                    notifyOnChangeProps: o
+                } = this.options;
                 if ('all' === o || !o && !this.trackedProps.size)
                     return !0;
                 const p = new Set(null != o ? o : this.trackedProps);
@@ -250,11 +282,13 @@ b.register('.....', function (c, d) {
             super(), this.client = k, this.options = l, this.trackedProps = new Set(), this.selectError = null, this.bindMethods(), this.setOptions(l);
         }
     }
+
     function _k(l, m) {
-        return function (n, o) {
+        return function(n, o) {
             return !(!1 === o.enabled || n.state.dataUpdatedAt || 'error' === n.state.status && !1 === o.retryOnMount);
         }(l, m) || l.state.dataUpdatedAt > 0 && _l(l, m, m.refetchOnMount);
     }
+
     function _l(m, n, o) {
         if (!1 !== n.enabled) {
             const p = 'function' == typeof o ? o(m) : o;
@@ -262,27 +296,43 @@ b.register('.....', function (c, d) {
         }
         return !1;
     }
+
     function _n(o, p, q, r) {
         return !1 !== q.enabled && (o !== p || !1 === r.enabled) && (!q.suspense || 'error' !== o.state.status) && _o(o, q);
     }
+
     function _o(p, q) {
         return p.isStaleByTime(q.staleTime);
     }
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'useBaseQuery', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'useBaseQuery', function() {
         return _m;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....');
+
     function _m(n, o) {
-        const p = (0, i.useQueryClient)({ context: n.context }), q = (0, j.useIsRestoring)(), r = (0, h.useQueryErrorResetBoundary)(), s = p.defaultQueryOptions(n);
+        const p = (0, i.useQueryClient)({
+                context: n.context
+            }),
+            q = (0, j.useIsRestoring)(),
+            r = (0, h.useQueryErrorResetBoundary)(),
+            s = p.defaultQueryOptions(n);
         s._optimisticResults = q ? 'isRestoring' : 'optimistic', s.onError && (s.onError = g.notifyManager.batchCalls(s.onError)), s.onSuccess && (s.onSuccess = g.notifyManager.batchCalls(s.onSuccess)), s.onSettled && (s.onSettled = g.notifyManager.batchCalls(s.onSettled)), (0, l.ensureStaleTime)(s), (0, k.ensurePreventErrorBoundaryRetry)(s, _m), (0, k.useClearResetErrorBoundary)(_m);
         const [t] = e.useState(() => new o(p, s)), u = t.getOptimisticResult(s);
-        if ((0, f.useSyncExternalStore)(e.useCallback(v => q ? () => {
-            } : t.subscribe(g.notifyManager.batchCalls(v)), [
+        if ((0, f.useSyncExternalStore)(e.useCallback(v => q ? () => {} : t.subscribe(g.notifyManager.batchCalls(v)), [
                 t,
                 q
             ]), () => t.getCurrentResult(), () => t.getCurrentResult()), e.useEffect(() => {
-                t.setOptions(s, { listeners: !1 });
+                t.setOptions(s, {
+                    listeners: !1
+                });
             }, [
                 s,
                 t
@@ -297,24 +347,29 @@ b.register('.....', function (c, d) {
             throw u.error;
         return s.notifyOnChangeProps ? u : t.trackResult(u);
     }
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'useSyncExternalStore', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'useSyncExternalStore', function() {
         return _e;
     });
     const _e = b('.....').useSyncExternalStore;
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     c.exports = b('.....');
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     var e;
-    a(c.exports, 'useSyncExternalStore', function () {
+    a(c.exports, 'useSyncExternalStore', function() {
         return e;
-    }, function (f) {
+    }, function(f) {
         return e = f;
     });
     var f = b('.....');
-    var g = 'function' == typeof Object.is ? Object.is : function (h, i) {
+    var g = 'function' == typeof Object.is ? Object.is : function(h, i) {
             return h === i && (0 !== h || 1 / h == 1 / i) || h != h && i != i;
-        }, h = f.useState, i = f.useEffect, j = f.useLayoutEffect, k = f.useDebugValue;
+        },
+        h = f.useState,
+        i = f.useEffect,
+        j = f.useLayoutEffect,
+        k = f.useDebugValue;
+
     function l(m) {
         var n = m.getSnapshot;
         m = m.value;
@@ -325,33 +380,43 @@ b.register('.....', function (c, d) {
             return !0;
         }
     }
-    var o = 'undefined' == typeof window || void 0 === window.document || void 0 === window.document.createElement ? function (p, q) {
+    var o = 'undefined' == typeof window || void 0 === window.document || void 0 === window.document.createElement ? function(p, q) {
         return q();
-    } : function (p, q) {
-        var r = q(), s = h({
+    } : function(p, q) {
+        var r = q(),
+            s = h({
                 inst: {
                     value: r,
                     getSnapshot: q
                 }
-            }), t = s[0].inst, u = s[1];
-        return j(function () {
-            t.value = r, t.getSnapshot = q, l(t) && u({ inst: t });
+            }),
+            t = s[0].inst,
+            u = s[1];
+        return j(function() {
+            t.value = r, t.getSnapshot = q, l(t) && u({
+                inst: t
+            });
         }, [
             p,
             r,
             q
-        ]), i(function () {
-            return l(t) && u({ inst: t }), p(function () {
-                l(t) && u({ inst: t });
+        ]), i(function() {
+            return l(t) && u({
+                inst: t
+            }), p(function() {
+                l(t) && u({
+                    inst: t
+                });
             });
         }, [p]), k(r), r;
     };
     e = void 0 !== f.useSyncExternalStore ? f.useSyncExternalStore : o;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'useQueryErrorResetBoundary', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'useQueryErrorResetBoundary', function() {
         return _h;
     });
     var e = b('.....');
+
     function f() {
         let g = !1;
         return {
@@ -364,30 +429,35 @@ b.register('.....', function (c, d) {
             isReset: () => g
         };
     }
-    const g = e.createContext(f()), _h = () => e.useContext(g);
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'useIsRestoring', function () {
+    const g = e.createContext(f()),
+        _h = () => e.useContext(g);
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'useIsRestoring', function() {
         return _g;
     });
     var e = b('.....');
-    const f = e.createContext(!1), _g = () => e.useContext(f);
+    const f = e.createContext(!1),
+        _g = () => e.useContext(f);
     f.Provider;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ensurePreventErrorBoundaryRetry', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ensurePreventErrorBoundaryRetry', function() {
         return _g;
-    }), a(c.exports, 'useClearResetErrorBoundary', function () {
+    }), a(c.exports, 'useClearResetErrorBoundary', function() {
         return _h;
-    }), a(c.exports, 'getHasError', function () {
+    }), a(c.exports, 'getHasError', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     const _g = (h, i) => {
             (h.suspense || h.useErrorBoundary) && (i.isReset() || (h.retryOnMount = !1));
-        }, _h = i => {
+        },
+        _h = i => {
             e.useEffect(() => {
                 i.clearReset();
             }, [i]);
-        }, _i = ({
+        },
+        _i = ({
             result: j,
             errorResetBoundary: k,
             useErrorBoundary: l,
@@ -396,24 +466,28 @@ b.register('.....', function (c, d) {
             j.error,
             m
         ]);
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     function e(f, g) {
         return 'function' == typeof f ? f(...g) : !!f;
     }
-    a(c.exports, 'shouldThrowError', function () {
+    a(c.exports, 'shouldThrowError', function() {
         return e;
     });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ensureStaleTime', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ensureStaleTime', function() {
         return _e;
-    }), a(c.exports, 'shouldSuspend', function () {
+    }), a(c.exports, 'shouldSuspend', function() {
         return _f;
-    }), a(c.exports, 'fetchOptimistic', function () {
+    }), a(c.exports, 'fetchOptimistic', function() {
         return _g;
     });
     const _e = f => {
             f.suspense && 'number' != typeof f.staleTime && (f.staleTime = 1000);
-        }, _f = (g, h, i) => (null == g ? void 0 : g.suspense) && ((j, k) => j.isLoading && j.isFetching && !k)(h, i), _g = (h, i, j) => i.fetchOptimistic(h).then(({data: k}) => {
+        },
+        _f = (g, h, i) => (null == g ? void 0 : g.suspense) && ((j, k) => j.isLoading && j.isFetching && !k)(h, i),
+        _g = (h, i, j) => i.fetchOptimistic(h).then(({
+            data: k
+        }) => {
             null == h.onSuccess || h.onSuccess(k), null == h.onSettled || h.onSettled(k, null);
         }).catch(k => {
             j.clearReset(), null == h.onError || h.onError(k), null == h.onSettled || h.onSettled(void 0, k);

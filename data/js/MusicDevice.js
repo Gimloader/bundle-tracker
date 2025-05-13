@@ -7,18 +7,28 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'MusicDevice', function () {
+    }), a(c.exports, 'MusicDevice', function() {
         return _r;
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _s;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....');
-    const p = new Map(), q = new Map();
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....');
+    const p = new Map(),
+        q = new Map();
     class _r extends k.default {
         get howl() {
             return p.get(this.id);
@@ -54,7 +64,7 @@ b.register('.....', function (c, d) {
                     t.isBeingReplaced || (null === (u = p.get(this.id)) || void 0 === u || u.unload(), p.delete(this.id), q.delete(this.id));
                 }), (0, i.InGamePhase)() && (0, h.AmIGameOwner)()) {
                 if (!p.get(this.id)) {
-                    const t = new (0, g.Howl)({
+                    const t = new(0, g.Howl)({
                         src: [(0, o.GetSoundUrl)(this.options.audioUrl)],
                         volume: this.options.volume / 100,
                         preload: !0,
@@ -68,26 +78,26 @@ b.register('.....', function (c, d) {
         }
     }
     var _s = _r;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'BaseAsset', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'BaseAsset', function() {
         return _e;
     });
     const _e = {
         imageId: 'music_device',
         imageUrl: (0, b('.....').default)('devices/music/music-device.png')
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'Consts', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'Consts', function() {
         return _e;
     });
     const _e = {
         fadeInTime: 1000,
         fadeOutTime: 1000
     };
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
-    a(c.exports, 'MusicDeviceState', function () {
+    a(c.exports, 'MusicDeviceState', function() {
         return e;
     }), (f = e || (e = {})).stopped = 'stopped', f.playing = 'playing', f.fadingOut = 'fadingOut';
 });

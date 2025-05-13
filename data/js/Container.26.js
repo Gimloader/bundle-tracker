@@ -7,32 +7,52 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _k;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....');
     var _k = () => (g.useEffect(() => () => {
         j.default.checkout.reset(), j.default.navigation.reset();
     }, []), (0, f.jsx)(i.default.Provider, {
         value: j.default,
         children: (0, f.jsx)(h.default, {})
     }));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _w;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....'),
+        r = b('.....'),
+        s = b('.....');
     let t, u, v = w => w;
     var _w = (0, i.observer)(() => {
-        const {navigation: x} = f.useContext(j.default);
+        const {
+            navigation: x
+        } = f.useContext(j.default);
         f.useEffect(() => {
             if ((0, r.isStudent)())
-                return void (0, s.NavigateTo)(l.DASHBOARD);
+                return void(0, s.NavigateTo)(l.DASHBOARD);
             (0, r.isLoggedIn)() && (0, o.default)(), (0, q.default)();
             const y = (0, r.getUrlVariable)('coupon');
             y && (0, p.default)(y);
@@ -42,12 +62,16 @@ b.register('.....', function (c, d) {
                 (0, e.jsx)(_x, {
                     children: (0, e.jsx)(_y, {
                         children: (() => {
-                            const {screen: y} = x;
+                            const {
+                                screen: y
+                            } = x;
                             return y === k.Screen.checkout ? (0, e.jsx)(m.default, {}) : null;
                         })()
                     })
                 }),
-                (0, e.jsx)(r.Title, { title: 'Checkout' })
+                (0, e.jsx)(r.Title, {
+                    title: 'Checkout'
+                })
             ]
         });
     });
@@ -59,7 +83,10 @@ b.register('.....', function (c, d) {
   display: flex;
   justify-content: center;
   align-items: center;
-`)), _y = g.default.div.attrs({ className: 'scroll-y' })(u || (u = v`
+`)),
+        _y = g.default.div.attrs({
+            className: 'scroll-y'
+        })(u || (u = v`
   background: ${ 0 };
   padding: 20px;
   border-radius: 5px;
@@ -70,34 +97,38 @@ b.register('.....', function (c, d) {
   font-family: ${ 0 };
   color: ${ 0 };
 `), h.default.White, n.Fonts.SFPro, h.default.Black);
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = e.createContext(f.default);
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = {
-        navigation: new (0, e.default)(),
-        checkout: new (0, f.default)()
+        navigation: new(0, e.default)(),
+        checkout: new(0, f.default)()
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'Screen', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'Screen', function() {
         return _g;
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _l;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     let _g;
     (_g || (_g = {})).checkout = 'checkout';
     const h = {
             screen: _g.checkout,
             loadingTokenSubmit: !1
-        }, {
+        },
+        {
             screen: i,
             loadingTokenSubmit: j
         } = h;
@@ -110,11 +141,12 @@ b.register('.....', function (c, d) {
     }
     (0, e.__decorate)([f.observable], k.prototype, 'screen', void 0), (0, e.__decorate)([f.observable], k.prototype, 'loadingTokenSubmit', void 0), (0, e.__decorate)([f.action], k.prototype, 'reset', void 0);
     var _l = k;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _w;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     const g = {
             planName: '',
             planId: '',
@@ -130,7 +162,8 @@ b.register('.....', function (c, d) {
             couponIsOnlyForPlan: '',
             existingPayingPlan: '',
             stripePublicKey: ''
-        }, {
+        },
+        {
             planName: h,
             planId: i,
             couponId: j,
@@ -161,14 +194,32 @@ b.register('.....', function (c, d) {
     }
     (0, e.__decorate)([f.observable], v.prototype, 'planName', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponId', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planCost', void 0), (0, e.__decorate)([f.observable], v.prototype, 'planDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'accountCredit', void 0), (0, e.__decorate)([f.observable], v.prototype, 'percentageOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'amountOff', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponDescription', void 0), (0, e.__decorate)([f.observable], v.prototype, 'hasCoupon', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponOneUseOnly', void 0), (0, e.__decorate)([f.observable], v.prototype, 'couponIsOnlyForPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'existingPayingPlan', void 0), (0, e.__decorate)([f.observable], v.prototype, 'stripePublicKey', void 0), (0, e.__decorate)([f.computed], v.prototype, 'totalCost', null), (0, e.__decorate)([f.action], v.prototype, 'reset', void 0);
     var _w = v;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _w;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....'), t = b('.....'), u = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....'),
+        r = b('.....'),
+        s = b('.....'),
+        t = b('.....'),
+        u = b('.....');
     let v;
     var _w = (0, n.observer)(() => {
-        const {checkout: x} = f.useContext(o.default);
+        const {
+            checkout: x
+        } = f.useContext(o.default);
         f.useEffect(() => {
             var y;
             (0, p.default)(q.PlanIds.pro);
@@ -176,7 +227,7 @@ b.register('.....', function (c, d) {
             if (!(null === (y = z.freeTrial) || void 0 === y ? void 0 : y.currentlyOnFreeTrial) && (0, s.isUpgraded)()) {
                 if (z.type === q.PlanIds.pro) {
                     if ((0, t.onlyOfferAnnualUpgrade)())
-                        return void (0, u.NavigateTo)(k.DASHBOARD);
+                        return void(0, u.NavigateTo)(k.DASHBOARD);
                     (0, p.default)(q.PlanIds.proPass);
                 }
                 x.existingPayingPlan = z.type;
@@ -185,9 +236,13 @@ b.register('.....', function (c, d) {
         const y = (0, s.getUser)().type === q.PlanIds.proPass || (0, t.onlyOfferAnnualUpgrade)();
         return !x.stripePublicKey || y ? (0, e.jsxs)('div', {
             className: 'maxWidth flex hc',
-            style: { padding: 40 },
+            style: {
+                padding: 40
+            },
             children: [
-                (0, e.jsx)(i.default, { size: 'large' }),
+                (0, e.jsx)(i.default, {
+                    size: 'large'
+                }),
                 y ? (0, e.jsx)(m.default, {}) : null
             ]
         }) : (0, e.jsxs)(_x, {
@@ -228,18 +283,28 @@ b.register('.....', function (c, d) {
                                 }),
                                 (0, e.jsx)(r.default, {
                                     title: 'Monthly',
-                                    description: (0, e.jsx)('span', { children: '$14.99 a month' }),
+                                    description: (0, e.jsx)('span', {
+                                        children: '$14.99 a month'
+                                    }),
                                     selected: x.planId === q.PlanIds.proPass,
                                     disabled: x.existingPayingPlan && x.existingPayingPlan === q.PlanIds.proPass || x.couponIsOnlyForPlan && x.couponIsOnlyForPlan !== q.PlanIds.proPass,
                                     onClick: () => (0, p.default)(q.PlanIds.proPass)
                                 })
                             ]
                         }),
-                        (0, e.jsx)('div', { style: { height: 20 } })
+                        (0, e.jsx)('div', {
+                            style: {
+                                height: 20
+                            }
+                        })
                     ]
                 }),
                 (0, e.jsx)(l.default, {}),
-                (0, e.jsx)('div', { style: { height: 10 } }),
+                (0, e.jsx)('div', {
+                    style: {
+                        height: 10
+                    }
+                }),
                 (0, e.jsx)(m.default, {})
             ]
         });
@@ -251,14 +316,23 @@ b.register('.....', function (c, d) {
   align-items: center;
   width: 100%;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _p;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....');
     let m, n, o = p => p;
     var _p = (0, g.observer)(() => {
-        const {checkout: q} = f.useContext(i.default);
+        const {
+            checkout: q
+        } = f.useContext(i.default);
         return (0, e.jsxs)('div', {
             className: 'maxWidth',
             children: [
@@ -283,18 +357,24 @@ b.register('.....', function (c, d) {
                                 })
                             ]
                         }),
-                        (0, e.jsx)(_r, { children: (0, k.centsToFormatedMoney)(q.planCost) })
+                        (0, e.jsx)(_r, {
+                            children: (0, k.centsToFormatedMoney)(q.planCost)
+                        })
                     ]
                 }),
                 q.hasCoupon ? (0, e.jsxs)(_q, {
                     children: [
                         (0, e.jsx)('div', {
-                            style: { fontSize: 15 },
+                            style: {
+                                fontSize: 15
+                            },
                             children: q.couponDescription || 'Coupon'
                         }),
                         (0, e.jsx)('div', {
                             children: (0, e.jsxs)(_r, {
-                                style: { color: 'green' },
+                                style: {
+                                    color: 'green'
+                                },
                                 children: [
                                     '-',
                                     (0, k.centsToFormatedMoney)(q.amountOff ? q.amountOff : q.percentageOff ? q.planCost * (1 - q.percentageOff) : 0)
@@ -306,11 +386,15 @@ b.register('.....', function (c, d) {
                 q.accountCredit ? (0, e.jsxs)(_q, {
                     children: [
                         (0, e.jsx)('div', {
-                            style: { fontSize: 15 },
+                            style: {
+                                fontSize: 15
+                            },
                             children: 'Account Credit'
                         }),
                         (0, e.jsxs)(_r, {
-                            style: { color: 'green' },
+                            style: {
+                                color: 'green'
+                            },
                             children: [
                                 '-',
                                 (0, k.centsToFormatedMoney)(q.accountCredit)
@@ -325,7 +409,9 @@ b.register('.....', function (c, d) {
                             children: [
                                 (0, e.jsx)('div', {}),
                                 (0, e.jsx)(_r, {
-                                    style: { fontWeight: j.FontWeights.UltraBold },
+                                    style: {
+                                        fontWeight: j.FontWeights.UltraBold
+                                    },
                                     children: (0, k.centsToFormatedMoney)(q.totalCost)
                                 })
                             ]
@@ -341,25 +427,37 @@ b.register('.....', function (c, d) {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-`)), _r = h.default.div(n || (n = o`
+`)),
+        _r = h.default.div(n || (n = o`
   font-size: 18px;
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'centsToFormatedMoney', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'centsToFormatedMoney', function() {
         return _e;
     });
     const _e = f => (f / 100).toLocaleString('en-US', {
         style: 'currency',
         currency: 'USD'
     });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _p;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....');
     let o;
     var _p = (0, g.observer)(() => {
-        const [q, r] = f.useState(!1), {checkout: s} = f.useContext(h.default);
+        const [q, r] = f.useState(!1), {
+            checkout: s
+        } = f.useContext(h.default);
         f.useEffect(() => {
             s.planId && s.stripePublicKey && ((0, m.onlyOfferAnnualUpgrade)() || (0, k.getUser)().type === n.PlanIds.proPass) && s.existingPayingPlan !== s.planId && d().then().catch(t => !1);
         }, [
@@ -386,12 +484,16 @@ b.register('.....', function (c, d) {
                 u && (0, k.request)({
                     url: '/api/billing/create-upgrade-session',
                     method: 'POST',
-                    data: { plan: s.planId },
+                    data: {
+                        plan: s.planId
+                    },
                     success: async v => {
                         const w = v;
                         let x;
                         try {
-                            if (x = await u.redirectToCheckout({ sessionId: w.id }), x && x.error)
+                            if (x = await u.redirectToCheckout({
+                                    sessionId: w.id
+                                }), x && x.error)
                                 throw x.error;
                         } catch (v) {
                             r(!1), (0, k.throwMessageError)({
@@ -425,7 +527,9 @@ b.register('.....', function (c, d) {
                     },
                     loading: q,
                     type: 'primary',
-                    style: { width: '100%' },
+                    style: {
+                        width: '100%'
+                    },
                     size: 'large',
                     disabled: q,
                     children: `Subscribe to ${ s.planName }`
@@ -439,18 +543,22 @@ b.register('.....', function (c, d) {
     width: 100%;
   }
 `));
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'loadStripe', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'loadStripe', function() {
         return _m;
     });
-    var e = 'https://js.stripe.com/v3', f = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/, g = 'loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used', h = null, i = function (j) {
-            return null !== h || (h = new Promise(function (k, l) {
+    var e = 'https://js.stripe.com/v3',
+        f = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
+        g = 'loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used',
+        h = null,
+        i = function(j) {
+            return null !== h || (h = new Promise(function(k, l) {
                 if ('undefined' != typeof window)
                     if (window.Stripe && j && console.warn(g), window.Stripe)
                         k(window.Stripe);
                     else
                         try {
-                            var m = function () {
+                            var m = function() {
                                 for (var n = document.querySelectorAll('script[src^="'.concat(e, '"]')), o = 0; o < n.length; o++) {
                                     var p = n[o];
                                     if (f.test(p.src))
@@ -458,16 +566,17 @@ b.register('.....', function (c, d) {
                                 }
                                 return null;
                             }();
-                            m && j ? console.warn(g) : m || (m = function (n) {
-                                var o = n && !n.advancedFraudSignals ? '?advancedFraudSignals=false' : '', p = document.createElement('script');
+                            m && j ? console.warn(g) : m || (m = function(n) {
+                                var o = n && !n.advancedFraudSignals ? '?advancedFraudSignals=false' : '',
+                                    p = document.createElement('script');
                                 p.src = ''.concat(e).concat(o);
                                 var q = document.head || document.body;
                                 if (!q)
                                     throw new Error('Expected document.body not to be null. Stripe.js requires a <body> element.');
                                 return q.appendChild(p), p;
-                            }(j)), m.addEventListener('load', function () {
+                            }(j)), m.addEventListener('load', function() {
                                 window.Stripe ? k(window.Stripe) : l(new Error('Stripe.js not available'));
-                            }), m.addEventListener('error', function () {
+                            }), m.addEventListener('error', function() {
                                 l(new Error('Failed to load Stripe.js'));
                             });
                         } catch (j) {
@@ -476,52 +585,58 @@ b.register('.....', function (c, d) {
                 else
                     k(null);
             })), h;
-        }, j = function (k, l, m) {
+        },
+        j = function(k, l, m) {
             if (null === k)
                 return null;
             var n = k.apply(void 0, l);
-            return function (o, p) {
+            return function(o, p) {
                 o && o._registerWrapper && o._registerWrapper({
                     name: 'stripe-js',
                     version: '1.9.0',
                     startTime: p
                 });
             }(n, m), n;
-        }, k = Promise.resolve().then(function () {
+        },
+        k = Promise.resolve().then(function() {
             return i(null);
-        }), l = !1;
-    k.catch(function (m) {
+        }),
+        l = !1;
+    k.catch(function(m) {
         l || console.warn(m);
     });
-    var _m = function () {
+    var _m = function() {
         for (var n = arguments.length, o = new Array(n), p = 0; p < n; p++)
             o[p] = arguments[p];
         l = !0;
         var q = Date.now();
-        return k.then(function (r) {
+        return k.then(function(r) {
             return j(r, o, q);
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'onlyOfferAnnualUpgrade', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'onlyOfferAnnualUpgrade', function() {
         return _e;
     });
     const _e = () => !1;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         f.default.checkout.planName = 'Gimkit Pro', f.default.checkout.planId = h, f.default.checkout.planDescription = ((i, j) => i === e.PlanIds.pro ? 'Billed annually' : i === e.PlanIds.proPass ? 'Billed monthly' : '')(h), f.default.checkout.planCost = (i => i === e.PlanIds.pro ? 5988 : i === e.PlanIds.proPass ? 1499 : 0)(h);
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _o;
     });
     var e = b('.....');
     b('.....');
-    var f = b('.....'), g = b('.....'), h = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     let i, j, k, l, m = n => n;
     const n = '#F0FFF6';
     var _o = p => (0, e.jsxs)(_p, {
@@ -529,9 +644,15 @@ b.register('.....', function (c, d) {
         onClick: p.onClick,
         disabled: p.disabled,
         children: [
-            (0, e.jsx)(_q, { children: p.title }),
-            (0, e.jsx)(_r, { children: p.description }),
-            p.showSaveTag ? (0, e.jsx)(_s, { children: 'Save 65%' }) : null
+            (0, e.jsx)(_q, {
+                children: p.title
+            }),
+            (0, e.jsx)(_r, {
+                children: p.description
+            }),
+            p.showSaveTag ? (0, e.jsx)(_s, {
+                children: 'Save 65%'
+            }) : null
         ]
     });
     const _p = f.default.div(i || (i = m`
@@ -548,16 +669,21 @@ b.register('.....', function (c, d) {
   &:hover {
     background: ${ 0 };
   }
-`), q => q.disabled ? '\n  pointer-events: none;\n  opacity: 0.2;\n  ' : null, q => q.selected ? '#a5d6a7' : g.default.BorderGray, q => q.selected ? n : g.default.White, n), _q = f.default.h3(j || (j = m`
+`), q => q.disabled ? '\n  pointer-events: none;\n  opacity: 0.2;\n  ' : null, q => q.selected ? '#a5d6a7' : g.default.BorderGray, q => q.selected ? n : g.default.White, n),
+        _q = f.default.h3(j || (j = m`
   font-weight: ${ 0 };
   font-size: 18px;
   margin-bottom: 0px;
   color: ${ 0 };
-`), h.FontWeights.UltraBold, g.default.Black), _r = f.default.p(k || (k = m`
+`), h.FontWeights.UltraBold, g.default.Black),
+        _r = f.default.p(k || (k = m`
   font-size: 14px;
   margin-top: 2px;
   margin-bottom: 0px;
-`)), _s = f.default.div.attrs({ className: 'flex hc vc' })(l || (l = m`
+`)),
+        _s = f.default.div.attrs({
+            className: 'flex hc vc'
+        })(l || (l = m`
   height: 35px;
   width: 95px;
   background: #1a237e;
@@ -568,19 +694,20 @@ b.register('.....', function (c, d) {
   font-size: 14px;
   border-radius: 22px;
 `), g.default.White);
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'NavigateTo', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'NavigateTo', function() {
         return _f;
     });
     var e = b('.....');
     const _f = g => {
         e.history.push(g);
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = () => {
         (0, e.request)({
             url: '/api/billing/account-balance',
@@ -589,11 +716,13 @@ b.register('.....', function (c, d) {
             }
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _h;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....');
     var _h = i => {
         (0, e.request)({
             url: `/api/stripe/coupons/${ i }`,
@@ -602,11 +731,15 @@ b.register('.....', function (c, d) {
             }
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _j;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....');
     var _j = () => {
         (0, e.request)({
             url: '/api/billing/stripe-key',

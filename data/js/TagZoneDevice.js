@@ -7,21 +7,33 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _s;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....');
     class r extends l.default {
         constructor(s) {
             if (super(s), (0, f.default)(this, 'setupVisualEditing', () => {
                     if (!(0, j.InPreGamePhase)() || !(0, g.isSavedVersion)())
                         return;
-                    const t = (0, i.FetchOptionSchemaProperty)(this, 'width'), u = (0, i.FetchOptionSchemaProperty)(this, 'height');
+                    const t = (0, i.FetchOptionSchemaProperty)(this, 'width'),
+                        u = (0, i.FetchOptionSchemaProperty)(this, 'height');
                     this.visualEditing.add.box({
                         width: this.options.width,
                         height: this.options.height,
@@ -55,7 +67,7 @@ b.register('.....', function (c, d) {
                     }
                 } else {
                     const t = p.default.Manager;
-                    new (0, o.default)({
+                    new(0, o.default)({
                         device: this,
                         baseColor: t.baseColor,
                         boxColor: t.boxColor,
@@ -70,13 +82,17 @@ b.register('.....', function (c, d) {
         }
     }
     var _s = r;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = (j, k, l) => {
-        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        const m = (0, h.FetchVisualEditingPreview)(),
+            n = (0, g.FetchCurrentlyEditedDevice)();
         if (!n || !m)
             return;
         const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
@@ -97,16 +113,17 @@ b.register('.....', function (c, d) {
             state: m.deviceOption.defaultState
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
     const _e = (f, g) => {
@@ -118,10 +135,10 @@ b.register('.....', function (c, d) {
             step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ZonedDeviceDisplayOptions', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ZonedDeviceDisplayOptions', function() {
         return _f;
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _i;
     });
     var e = b('.....');
@@ -136,23 +153,26 @@ b.register('.....', function (c, d) {
         shouldShow: j => h() !== _f.fullyHidden,
         shouldShowInnerZone: j => h() !== _f.bordersOnly
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _e;
     });
-    var _e = { zonedDeviceViews: 'zoned-device-views' };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ZoneIcon', function () {
+    var _e = {
+        zonedDeviceViews: 'zoned-device-views'
+    };
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ZoneIcon', function() {
         return _f;
     });
-    const e = (0, b('.....').default)('devices/tag_zone/zone_icon.png'), _f = {
+    const e = (0, b('.....').default)('devices/tag_zone/zone_icon.png'),
+        _f = {
             imageId: e,
             imageUrl: e
         };
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
-    a(c.exports, 'DetectionArea', function () {
+    a(c.exports, 'DetectionArea', function() {
         return e;
     }), (f = e || (e = {})).everywhere = 'everywhere', f.zone = 'zone';
 });

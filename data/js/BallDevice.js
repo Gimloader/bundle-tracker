@@ -6,21 +6,35 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'BallDevice', function () {
+    }), a(d.exports, 'BallDevice', function() {
         return _u;
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _v;
     });
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....'),
+        s = c('.....'),
+        t = c('.....');
     class _u extends h.default {
         constructor(v) {
             if (super(v), (0, g.default)(this, 'onUpdate', w => {
@@ -28,7 +42,7 @@ c.register('.....', function (d, e) {
                 }), (0, g.default)(this, 'onStateChange', w => {
                     'x' === w && this.movement.setTargetX(this.state.x), 'y' === w && this.movement.setTargetY(this.state.y), 'active' === w && this.updateActive();
                 }), (0, g.default)(this, 'updateActive', () => {
-                    (0, o.InPreGamePhase)() && (0, p.isPublishedVersion)() ? this.container.view.alpha = 1 : (0, o.InPreGamePhase)() ? this.container.view.alpha = this.options.activeOnStart ? 1 : 0.5 : this.container.view.alpha = this.state.active ? 1 : 0;
+                    (0, o.InPreGamePhase)() && (0, p.isPublishedVersion)() ? this.container.view.alpha = 1: (0, o.InPreGamePhase)() ? this.container.view.alpha = this.options.activeOnStart ? 1 : 0.5 : this.container.view.alpha = this.state.active ? 1 : 0;
                 }), (0, g.default)(this, 'hide', () => {
                     this.tweens.add({
                         targets: this.container2.view,
@@ -56,15 +70,15 @@ c.register('.....', function (d, e) {
                     });
                 }), (0, g.default)(this, 'fakeProjectileExplosionCallback', w => {
                     const {
-                            x: x,
-                            y: y
-                        } = w, z = Phaser.Math.Angle.Between(x, y, this.container.view.x, this.container.view.y);
+                        x: x,
+                        y: y
+                    } = w, z = Phaser.Math.Angle.Between(x, y, this.container.view.x, this.container.view.y);
                     this.animations.hit(z);
                 }), (0, g.default)(this, 'onMessage', w => {
                     'goal' === w.key && (this.hide(), setTimeout(() => {
                         this.isDestroyed || this.particles.burst(this.container.view.x, this.container.view.y, this.container.view.depth);
                     }, 250)), 'reset' === w.key && (this.movement.onReset(), this.show());
-                }), (0, m.CreateVisuals)(this), (0, t.SetupProjectiles)(this), this.movement = new (0, i.BallMovement)(this), this.animations = new (0, j.BallAnimations)(this), this.rotation = new (0, k.BallRotation)(this), this.particles = new (0, l.BallDeviceParticles)(this), this.updateActive(), (0, o.InPreGamePhase)() && (0, p.isSavedVersion)()) {
+                }), (0, m.CreateVisuals)(this), (0, t.SetupProjectiles)(this), this.movement = new(0, i.BallMovement)(this), this.animations = new(0, j.BallAnimations)(this), this.rotation = new(0, k.BallRotation)(this), this.particles = new(0, l.BallDeviceParticles)(this), this.updateActive(), (0, o.InPreGamePhase)() && (0, p.isSavedVersion)()) {
                 const w = (0, q.FetchOptionSchemaProperty)(this, 'radius');
                 this.visualEditing.add.circle({
                     angle: 0,
@@ -73,15 +87,17 @@ c.register('.....', function (d, e) {
                     minRadius: w.min,
                     maxRadius: w.max,
                     onChange: x => {
-                        (0, r.ReplaceVisualEditingPreview)(x.x, x.y, { radius: x.radius });
+                        (0, r.ReplaceVisualEditingPreview)(x.x, x.y, {
+                            radius: x.radius
+                        });
                     }
                 });
             }
         }
     }
     var _v = _u;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'BallMovement', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'BallMovement', function() {
         return _h;
     });
     var f = c('.....');
@@ -98,7 +114,9 @@ c.register('.....', function (d, e) {
                         return this.pointMap.shift(), this.ball.container.view.x = j.endX, this.ball.container.view.y = j.endY, void this.moveToTargetPosition();
                     if (j.startTime <= k) {
                         this.currentPoint = j;
-                        const l = Phaser.Math.Percent(k, j.startTime, j.endTime), m = Phaser.Math.Linear(j.startX, j.endX, l), n = Phaser.Math.Linear(j.startY, j.endY, l);
+                        const l = Phaser.Math.Percent(k, j.startTime, j.endTime),
+                            m = Phaser.Math.Linear(j.startX, j.endX, l),
+                            n = Phaser.Math.Linear(j.startY, j.endY, l);
                         this.ball.container.view.x = m, this.ball.container.view.y = n;
                     }
                 }
@@ -142,12 +160,14 @@ c.register('.....', function (d, e) {
             }), this.ball = i, this.targetX = i.x, this.targetY = i.y;
         }
     }
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'BallAnimations', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'BallAnimations', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....');
-    const h = 175, i = 100;
+    var f = c('.....'),
+        g = c('.....');
+    const h = 175,
+        i = 100;
     class _j {
         constructor(k) {
             (0, f.default)(this, 'ballHeight', 0), (0, f.default)(this, 'squeezeScale', 1), (0, f.default)(this, 'cumulTime', 0), (0, f.default)(this, 'hitTimeHeight', 0), (0, f.default)(this, 'hitTimeScale', 0), (0, f.default)(this, 'updateScale', () => {
@@ -167,8 +187,8 @@ c.register('.....', function (d, e) {
             }), this.ball = k;
         }
     }
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'BallConsts', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'BallConsts', function() {
         return _f;
     });
     const _f = {
@@ -179,25 +199,32 @@ c.register('.....', function (d, e) {
             animateShadow: !0
         }
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'BallRotation', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'BallRotation', function() {
         return _g;
     });
     var f = c('.....');
     class _g {
         constructor(h) {
             (0, f.default)(this, 'prevX', 0), (0, f.default)(this, 'prevY', 0), (0, f.default)(this, 'cumulX', 0), (0, f.default)(this, 'cumulY', 0), (0, f.default)(this, 'update', () => {
-                let i = this.prevX - this.ball.container.view.x, j = this.prevY - this.ball.container.view.y;
-                const k = this.ball.ball.view.rotation - 2 * i / this.ball.options.radius, l = 520 / this.ball.options.radius * 0.00075;
+                let i = this.prevX - this.ball.container.view.x,
+                    j = this.prevY - this.ball.container.view.y;
+                const k = this.ball.ball.view.rotation - 2 * i / this.ball.options.radius,
+                    l = 520 / this.ball.options.radius * 0.00075;
                 this.cumulX += j * l * Math.sin(k), this.cumulY += j * l * Math.cos(k), this.ball.ball.view.setData('uAlpha', this.ball.container2.view.alpha), this.ball.ball.view.setData('uShiftX', this.cumulX), this.ball.ball.view.setData('uShiftY', this.cumulY), this.ball.ball.view.rotation = k, this.prevX = this.ball.container.view.x, this.prevY = this.ball.container.view.y;
             }), this.ball = h, this.prevX = h.x, this.prevY = h.y;
         }
     }
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'BallDeviceParticles', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'BallDeviceParticles', function() {
         return _l;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....');
     class _l {
         constructor(m) {
             (0, f.default)(this, 'burst', (n, o, p) => {
@@ -230,13 +257,18 @@ c.register('.....', function (d, e) {
             }), this.device = m, this.load();
         }
     }
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'CreateVisuals', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'CreateVisuals', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     const _j = k => {
-        k.container = k.parts.add.container({}), k.container2 = k.parts.add.container({ parent: k.container.view }), k.container.view.x = k.x, k.container.view.y = k.y;
+        k.container = k.parts.add.container({}), k.container2 = k.parts.add.container({
+            parent: k.container.view
+        }), k.container.view.x = k.x, k.container.view.y = k.y;
         const l = (0, i.default)(`devices/ball/${ k.options.appearance }.png`);
         k.ball = k.parts.add.sprite({
             imageId: l,
@@ -260,8 +292,8 @@ c.register('.....', function (d, e) {
             y: 75
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'BlastBallAssets', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'BlastBallAssets', function() {
         return _g;
     });
     var f = c('.....');
@@ -271,16 +303,17 @@ c.register('.....', function (d, e) {
             imageUrl: (0, f.default)('devices/ball/ball_circle.png')
         }
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'UpdateDepth', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'UpdateDepth', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const _h = i => {
         i.container.view.setDepth((0, f.GetGlobalDepth)(i.container.view.y + 0.75 * i.options.radius, g.default.DepthSortedCharactersAndDevices));
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'FetchOptionSchemaProperty', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'FetchOptionSchemaProperty', function() {
         return _f;
     });
     const _f = (g, h) => {
@@ -292,13 +325,17 @@ c.register('.....', function (d, e) {
             step: null === (k = null == l ? void 0 : l.option.props) || void 0 === k ? void 0 : k.step
         };
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'ReplaceVisualEditingPreview', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'ReplaceVisualEditingPreview', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     const _j = (k, l, m) => {
-        const n = (0, i.FetchVisualEditingPreview)(), o = (0, h.FetchCurrentlyEditedDevice)();
+        const n = (0, i.FetchVisualEditingPreview)(),
+            o = (0, h.FetchCurrentlyEditedDevice)();
         if (!o || !n)
             return;
         const p = o.layers.isOnNaturalDepth() ? void 0 : l + o.layers.getDepthShift();
@@ -319,16 +356,17 @@ c.register('.....', function (d, e) {
             state: n.deviceOption.defaultState
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     var _h = i => {
         (0, f.default)().worldManager.devices.getDeviceById(i.id) && (0, g.default)(i);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'UpdateShadow', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'UpdateShadow', function() {
         return _g;
     });
     var f = c('.....');
@@ -340,11 +378,12 @@ c.register('.....', function (d, e) {
         const i = 1 - 0.2 * h.animations.ballHeight / f.BallConsts.animation.maxHeight;
         h.shadow.r1 = 1 * i * h.container2.view.scaleX * h.options.radius, h.shadow.r2 = 0.4 * i * h.container2.view.scaleY * h.options.radius, h.shadow.alphaMultip = h.container2.view.alpha * h.container.view.alpha;
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'SetupProjectiles', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'SetupProjectiles', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const _h = i => {
         (0, f.InPreGamePhase)() && !(0, g.isPublishedVersion)() || (i.projectiles.setDynamic(!0), i.projectiles.collidesWithProjectile = j => {
             const {
@@ -357,9 +396,9 @@ c.register('.....', function (d, e) {
             return Phaser.Math.Distance.Between(k, l, i.container.view.x, i.container.view.y) < i.options.radius + m;
         }, i.projectiles.onClientPredictedHit = j => {
             const {
-                    x: k,
-                    y: l
-                } = j, m = Phaser.Math.Angle.Between(k, l, i.container.view.x, i.container.view.y);
+                x: k,
+                y: l
+            } = j, m = Phaser.Math.Angle.Between(k, l, i.container.view.x, i.container.view.y);
             i.animations.hit(m);
         });
     };

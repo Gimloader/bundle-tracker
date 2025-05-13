@@ -7,17 +7,33 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'ZONE_UNSET_POSITION', function () {
+    }), a(c.exports, 'ZONE_UNSET_POSITION', function() {
         return _w;
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _y;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....'), t = b('.....'), u = b('.....'), v = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....'),
+        r = b('.....'),
+        s = b('.....'),
+        t = b('.....'),
+        u = b('.....'),
+        v = b('.....');
     const _w = -999999999;
     class x extends k.default {
         constructor(y) {
@@ -26,28 +42,32 @@ b.register('.....', function (c, d) {
                     if (!z)
                         return;
                     const {
-                            minX: A,
-                            minY: B,
-                            maxX: C,
-                            maxY: D
-                        } = (0, s.BackgroundTilesZoneUtil_GetTileCoordinatesBounds)(this), E = (0, u.BackgroundTilesZoneUtil_GetLayerDepth)(this), F = (0, l.default)().tileManager.layerManager.backgroundLayersManager.createLayer({
-                            layerId: this.id,
-                            depth: E
-                        }), G = {
-                            priority: this.layers.getGlobalDepth(),
-                            x: A,
-                            y: B,
-                            width: C - A,
-                            height: D - B,
-                            terrainOption: z
-                        };
+                        minX: A,
+                        minY: B,
+                        maxX: C,
+                        maxY: D
+                    } = (0, s.BackgroundTilesZoneUtil_GetTileCoordinatesBounds)(this), E = (0, u.BackgroundTilesZoneUtil_GetLayerDepth)(this), F = (0, l.default)().tileManager.layerManager.backgroundLayersManager.createLayer({
+                        layerId: this.id,
+                        depth: E
+                    }), G = {
+                        priority: this.layers.getGlobalDepth(),
+                        x: A,
+                        y: B,
+                        width: C - A,
+                        height: D - B,
+                        terrainOption: z
+                    };
                     F.addFillZone(G), F.setScrollData({
                         scrollFactor: this.options.scrollFactor,
                         speedX: this.options.overrideScrollingSpeed ? this.options.scrollingSpeedX : void 0,
                         speedY: this.options.overrideScrollingSpeed ? this.options.scrollingSpeedY : void 0
-                    }), F.addTintModifier({ tint: (0, r.GetNumberFromHexColor)(this.options.tint) });
+                    }), F.addTintModifier({
+                        tint: (0, r.GetNumberFromHexColor)(this.options.tint)
+                    });
                 }), (0, f.default)(this, 'removeLayer', () => {
-                    (0, l.default)().tileManager.layerManager.backgroundLayersManager.removeLayer({ layerId: this.id });
+                    (0, l.default)().tileManager.layerManager.backgroundLayersManager.removeLayer({
+                        layerId: this.id
+                    });
                 }), (0, f.default)(this, 'onShow', () => {
                     this.addLayer();
                 }), (0, f.default)(this, 'onHide', () => {
@@ -55,7 +75,9 @@ b.register('.....', function (c, d) {
                 }), (0, f.default)(this, 'addConnectionLine', () => {
                     if (this.options.useFullMapSize)
                         return;
-                    const z = (0, t.BackgroundTilesZoneUtil_FindClosestPointOnRect)(this), A = Phaser.Math.Distance.Between(this.x, this.y, z.x, z.y), B = Phaser.Math.Angle.Between(this.x, this.y, z.x, z.y);
+                    const z = (0, t.BackgroundTilesZoneUtil_FindClosestPointOnRect)(this),
+                        A = Phaser.Math.Distance.Between(this.x, this.y, z.x, z.y),
+                        B = Phaser.Math.Angle.Between(this.x, this.y, z.x, z.y);
                     this.parts.add.rect({
                         x: (z.x - this.x) / 2,
                         y: (z.y - this.y) / 2,
@@ -67,11 +89,11 @@ b.register('.....', function (c, d) {
                     });
                 }), (0, f.default)(this, 'addBoundsBox', () => {
                     const {
-                            minX: z,
-                            minY: A,
-                            maxX: B,
-                            maxY: C
-                        } = (0, s.BackgroundTilesZoneUtil_GetWorldCoordinatesBounds)(this), D = z + (B - z) / 2 - this.x, E = A + (C - A) / 2 - this.y;
+                        minX: z,
+                        minY: A,
+                        maxX: B,
+                        maxY: C
+                    } = (0, s.BackgroundTilesZoneUtil_GetWorldCoordinatesBounds)(this), D = z + (B - z) / 2 - this.x, E = A + (C - A) / 2 - this.y;
                     this.parts.add.rect({
                         x: D,
                         y: E,
@@ -89,7 +111,8 @@ b.register('.....', function (c, d) {
                         return;
                     if (this.options.useFullMapSize)
                         return;
-                    const z = (0, j.FetchOptionSchemaProperty)(this, 'width'), A = (0, j.FetchOptionSchemaProperty)(this, 'height');
+                    const z = (0, j.FetchOptionSchemaProperty)(this, 'width'),
+                        A = (0, j.FetchOptionSchemaProperty)(this, 'height');
                     this.visualEditing.add.box({
                         keepRatio: !1,
                         rotable: !1,
@@ -115,7 +138,7 @@ b.register('.....', function (c, d) {
                 }), this.addLayer(), (0, h.InGamePhase)() || (0, g.isPublishedVersion)())
                 return;
             const z = n.default.Setting;
-            new (0, o.default)({
+            new(0, o.default)({
                 device: this,
                 baseColor: z.baseColor,
                 boxColor: z.boxColor,
@@ -134,13 +157,17 @@ b.register('.....', function (c, d) {
         }
     }
     var _y = x;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = (j, k, l) => {
-        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        const m = (0, h.FetchVisualEditingPreview)(),
+            n = (0, g.FetchCurrentlyEditedDevice)();
         if (!n || !m)
             return;
         const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
@@ -161,16 +188,17 @@ b.register('.....', function (c, d) {
             state: m.deviceOption.defaultState
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
     const _e = (f, g) => {
@@ -182,19 +210,21 @@ b.register('.....', function (c, d) {
             step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'BackgroundTilesZoneUtil_GetTileCoordinatesBounds', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'BackgroundTilesZoneUtil_GetTileCoordinatesBounds', function() {
         return _g;
-    }), a(c.exports, 'BackgroundTilesZoneUtil_GetWorldCoordinatesBounds', function () {
+    }), a(c.exports, 'BackgroundTilesZoneUtil_GetWorldCoordinatesBounds', function() {
         return _h;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     const _g = h => ({
             minX: h.options.useFullMapSize ? 0 : _i(h.options.zoneX - h.options.width / 2) + 1,
             minY: h.options.useFullMapSize ? 0 : _i(h.options.zoneY - h.options.height / 2) + 1,
             maxX: h.options.useFullMapSize ? f.default.world.width : _i(h.options.zoneX + h.options.width / 2),
             maxY: h.options.useFullMapSize ? f.default.world.height : _i(h.options.zoneY + h.options.height / 2)
-        }), _h = i => {
+        }),
+        _h = i => {
             const j = _g(i);
             return {
                 minX: j.minX * e.default.width,
@@ -202,9 +232,10 @@ b.register('.....', function (c, d) {
                 maxX: j.maxX * e.default.width,
                 maxY: j.maxY * e.default.height
             };
-        }, _i = j => Math.floor(j / e.default.width);
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'BackgroundTilesZoneUtil_FindClosestPointOnRect', function () {
+        },
+        _i = j => Math.floor(j / e.default.width);
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'BackgroundTilesZoneUtil_FindClosestPointOnRect', function() {
         return _f;
     });
     var e = b('.....');
@@ -212,19 +243,27 @@ b.register('.....', function (c, d) {
         const h = {
                 x: g.x,
                 y: g.y
-            }, {
+            },
+            {
                 minX: i,
                 minY: j,
                 maxX: k,
                 maxY: l
-            } = (0, e.BackgroundTilesZoneUtil_GetWorldCoordinatesBounds)(g), m = {
+            } = (0, e.BackgroundTilesZoneUtil_GetWorldCoordinatesBounds)(g),
+            m = {
                 x: i,
                 y: j,
                 width: k - i,
                 height: l - j
-            }, n = Math.max(m.x, Math.min(h.x, m.x + m.width)), o = Math.max(m.y, Math.min(h.y, m.y + m.height));
+            },
+            n = Math.max(m.x, Math.min(h.x, m.x + m.width)),
+            o = Math.max(m.y, Math.min(h.y, m.y + m.height));
         if (h.x >= m.x && h.x <= m.x + m.width && h.y >= m.y && h.y <= m.y + m.height) {
-            const p = h.x - m.x, q = m.x + m.width - h.x, r = h.y - m.y, s = m.y + m.height - h.y, t = Math.min(p, q, r, s);
+            const p = h.x - m.x,
+                q = m.x + m.width - h.x,
+                r = h.y - m.y,
+                s = m.y + m.height - h.y,
+                t = Math.min(p, q, r, s);
             return t === p ? {
                 x: m.x,
                 y: h.y
@@ -244,14 +283,15 @@ b.register('.....', function (c, d) {
             y: o
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'BackgroundTilesZoneUtil_GetLayerDepth', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'BackgroundTilesZoneUtil_GetLayerDepth', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     const _g = h => e.default.Fill3 + 0.1 + 0.1 * (1000 - h.options.order + (0, f.default)(h.y) / 1000);
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'BackgroundTilesZoneConsts', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'BackgroundTilesZoneConsts', function() {
         return _e;
     });
     const _e = {

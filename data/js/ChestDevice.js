@@ -7,15 +7,21 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _n;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....');
     class m extends h.default {
         constructor(n) {
             super(n), (0, f.default)(this, 'animateOpen', () => {
@@ -124,7 +130,11 @@ b.register('.....', function (c, d) {
                 y: 0,
                 r1: 60,
                 r2: 40
-            }), this.colliders.add.box({ ...l.ChestConstants.topDownCollider })), this.interactiveZone = this.interactiveZones.add.circle({ r: l.ChestConstants.interactionRadius }), this.interactiveZones.setInfo({
+            }), this.colliders.add.box({
+                ...l.ChestConstants.topDownCollider
+            })), this.interactiveZone = this.interactiveZones.add.circle({
+                r: l.ChestConstants.interactionRadius
+            }), this.interactiveZones.setInfo({
                 message: 'Open chest',
                 allowedToInteract: !0,
                 duration: 1
@@ -134,10 +144,10 @@ b.register('.....', function (c, d) {
         }
     }
     var _n = m;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'OpenAsset', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'OpenAsset', function() {
         return _f;
-    }), a(c.exports, 'ClosedAsset', function () {
+    }), a(c.exports, 'ClosedAsset', function() {
         return _g;
     });
     var e = b('.....');
@@ -145,18 +155,19 @@ b.register('.....', function (c, d) {
             imageId: (0, e.default)('devices/chest/open.png'),
             imageUrl: (0, e.default)('devices/chest/open.png'),
             originY: 0.8
-        }, _g = {
+        },
+        _g = {
             imageId: (0, e.default)('devices/chest/closed.png'),
             imageUrl: (0, e.default)('devices/chest/closed.png'),
             originY: 0.8
         };
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
-    a(c.exports, 'Messages', function () {
+    a(c.exports, 'Messages', function() {
         return e;
     }), (e || (e = {})).open = 'open';
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ChestConstants', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ChestConstants', function() {
         return _e;
     });
     const _e = {

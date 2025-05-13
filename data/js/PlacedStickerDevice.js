@@ -1,10 +1,10 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('.....', function (b, c) {
+a.register('.....', function(b, c) {
     var d, e, f, g, h;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), e = b.exports, f = 'default', g = function () {
+    }), e = b.exports, f = 'default', g = function() {
         return _r;
     }, Object.defineProperty(e, f, {
         get: g,
@@ -12,7 +12,14 @@ a.register('.....', function (b, c) {
         enumerable: !0,
         configurable: !0
     });
-    var i = a('.....'), j = a('.....'), k = a('.....'), l = a('.....'), m = a('.....'), n = a('.....'), o = a('.....'), p = a('.....');
+    var i = a('.....'),
+        j = a('.....'),
+        k = a('.....'),
+        l = a('.....'),
+        m = a('.....'),
+        n = a('.....'),
+        o = a('.....'),
+        p = a('.....');
     class q extends p.default {
         constructor(r) {
             if (super(r), (0, i.default)(this, 'onStateChange', s => {
@@ -27,7 +34,8 @@ a.register('.....', function (b, c) {
                 return;
             if (!this.options.stickerId)
                 return;
-            const s = this.options.stickerId.replace('sticker_', ''), t = (0, l.default)(`stickers/${ s }.png`);
+            const s = this.options.stickerId.replace('sticker_', ''),
+                t = (0, l.default)(`stickers/${ s }.png`);
             this.parts.add.sprite({
                 imageId: t,
                 imageUrl: t,

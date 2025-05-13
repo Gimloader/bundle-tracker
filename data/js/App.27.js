@@ -1,6 +1,7 @@
 function a(b) {
     return b && b.__esModule ? b.default : b;
 }
+
 function b(c, d, e, f) {
     Object.defineProperty(c, d, {
         get: e,
@@ -10,18 +11,42 @@ function b(c, d, e, f) {
     });
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(d.exports, 'default', function () {
+    }), b(d.exports, 'default', function() {
         return _F;
     });
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....'), w = c('.....'), x = c('.....'), y = c('.....'), z = c('.....'), A = c('.....'), B = c('.....'), C = c('.....'), D = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....'),
+        s = c('.....'),
+        t = c('.....'),
+        u = c('.....'),
+        v = c('.....'),
+        w = c('.....'),
+        x = c('.....'),
+        y = c('.....'),
+        z = c('.....'),
+        A = c('.....'),
+        B = c('.....'),
+        C = c('.....'),
+        D = c('.....');
     let E;
     var _F = (0, j.observer)(() => {
-        const G = (0, o.default)(), H = () => {
+        const G = (0, o.default)(),
+            H = () => {
                 (0, q.default)(n.default.none);
             };
         k.useEffect(() => {
@@ -40,7 +65,9 @@ c.register('.....', function (d, e) {
             H
         ]), (0, t.default)(a(s).Input.Keyboard.KeyCodes.ESC, H, [H]), (0, g.jsx)(y.Container, {
             children: (0, g.jsxs)(y.Content, {
-                style: { paddingTop: 53 },
+                style: {
+                    paddingTop: 53
+                },
                 children: [
                     (0, g.jsx)(z.default, {
                         onClick: H,
@@ -56,14 +83,24 @@ c.register('.....', function (d, e) {
                         },
                         children: 'Eraser'
                     }),
-                    (0, g.jsx)(_G, { children: G ? (0, g.jsx)(D.default, { removalInfo: G }) : (0, g.jsx)(C.default, {}) }),
-                    (0, g.jsx)(h.default, { style: { borderTopColor: 'rgba(255,255,255,0.25)' } }),
+                    (0, g.jsx)(_G, {
+                        children: G ? (0, g.jsx)(D.default, {
+                            removalInfo: G
+                        }) : (0, g.jsx)(C.default, {})
+                    }),
+                    (0, g.jsx)(h.default, {
+                        style: {
+                            borderTopColor: 'rgba(255,255,255,0.25)'
+                        }
+                    }),
                     (0, g.jsx)(x.default, {})
                 ]
             })
         });
     });
-    const _G = (0, l.default)(B.Centered).attrs({ className: 'maxWidth' })(E || (E = (H => H)`
+    const _G = (0, l.default)(B.Centered).attrs({
+        className: 'maxWidth'
+    })(E || (E = (H => H)`
   margin-top: 10px;
   padding: 20px;
   min-height: 190px;
@@ -71,11 +108,17 @@ c.register('.....', function (d, e) {
   background: rgba(255, 255, 255, 0.07);
   border: 2px dashed rgba(255, 255, 255, 0.5);
 `));
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _m;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     var _m = () => {
         const [n, o] = f.useState(!1), [p, q] = f.useState(''), [r, s] = f.useState(''), [t, u] = f.useState('');
         return f.useEffect(() => {
@@ -116,7 +159,9 @@ c.register('.....', function (d, e) {
                     } : null;
                 })();
                 w ? (q(w.type), s(w.name), u(w.description || ''), o(!0)) : o(!1);
-            }, { fireImmediately: !0 });
+            }, {
+                fireImmediately: !0
+            });
             return () => v();
         }, []), n ? {
             type: p,
@@ -124,8 +169,8 @@ c.register('.....', function (d, e) {
             description: t
         } : null;
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'ReactionToMultipleProps', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'ReactionToMultipleProps', function() {
         return _g;
     });
     var f = c('.....');
@@ -140,42 +185,58 @@ c.register('.....', function (d, e) {
             });
         };
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _v;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....'),
+        s = c('.....'),
+        t = c('.....');
     let u;
     var _v = (0, j.observer)(() => {
         const {
-                me: {removing: w}
-            } = (0, n.default)(), x = k.useRef(), y = k.useRef(), z = k.useRef(), A = () => {
-                var B, C, D, E, F, G;
-                null == x || null === (B = x.current) || void 0 === B || null === (C = B.blur) || void 0 === C || C.call(B), null == y || null === (D = y.current) || void 0 === D || null === (E = D.blur) || void 0 === E || E.call(D), null == z || null === (F = z.current) || void 0 === F || null === (G = F.blur) || void 0 === G || G.call(F);
-            }, B = C => {
-                const D = C === p.RemovingMode.propsAndDevices ? `${ (0, s.CapitalizeFirstLetter)(t.default.prop.plural) } & ${ (0, s.CapitalizeFirstLetter)(t.default.device.plural) }` : C === p.RemovingMode.tiles ? (0, s.CapitalizeFirstLetter)(t.default.terrain.singular) : C === p.RemovingMode.wires ? (0, s.CapitalizeFirstLetter)(t.default.wire.plural) : C;
+            me: {
+                removing: w
+            }
+        } = (0, n.default)(), x = k.useRef(), y = k.useRef(), z = k.useRef(), A = () => {
+            var B, C, D, E, F, G;
+            null == x || null === (B = x.current) || void 0 === B || null === (C = B.blur) || void 0 === C || C.call(B), null == y || null === (D = y.current) || void 0 === D || null === (E = D.blur) || void 0 === E || E.call(D), null == z || null === (F = z.current) || void 0 === F || null === (G = F.blur) || void 0 === G || G.call(F);
+        }, B = C => {
+            const D = C === p.RemovingMode.propsAndDevices ? `${ (0, s.CapitalizeFirstLetter)(t.default.prop.plural) } & ${ (0, s.CapitalizeFirstLetter)(t.default.device.plural) }` : C === p.RemovingMode.tiles ? (0, s.CapitalizeFirstLetter)(t.default.terrain.singular) : C === p.RemovingMode.wires ? (0, s.CapitalizeFirstLetter)(t.default.wire.plural) : C;
+            return (0, f.jsx)(g.default.Option, {
+                value: C,
+                children: D
+            }, `remove-options-mode-${ C }`);
+        }, C = (D, E) => {
+            if (D === p.RemovingTilesMode.allLayers)
                 return (0, f.jsx)(g.default.Option, {
-                    value: C,
+                    ref: y,
+                    value: 99,
                     children: D
-                }, `remove-options-mode-${ C }`);
-            }, C = (D, E) => {
-                if (D === p.RemovingTilesMode.allLayers)
-                    return (0, f.jsx)(g.default.Option, {
-                        ref: y,
-                        value: 99,
-                        children: D
-                    }, `remove-tiles-mode-${ D }`);
-                if (D === p.RemovingTilesMode.topLayer)
-                    return (0, f.jsx)(g.default.Option, {
-                        value: 100,
-                        children: D
-                    }, `remove-tiles-mode-${ D }`);
-                const F = `${ D }-${ E }`;
+                }, `remove-tiles-mode-${ D }`);
+            if (D === p.RemovingTilesMode.topLayer)
                 return (0, f.jsx)(g.default.Option, {
-                    value: E,
-                    children: E + ' - ' + r.TerrainLayerNames[E - 1] || 'Layer'
-                }, `remove-tiles-mode-${ F }`);
-            };
+                    value: 100,
+                    children: D
+                }, `remove-tiles-mode-${ D }`);
+            const F = `${ D }-${ E }`;
+            return (0, f.jsx)(g.default.Option, {
+                value: E,
+                children: E + ' - ' + r.TerrainLayerNames[E - 1] || 'Layer'
+            }, `remove-tiles-mode-${ F }`);
+        };
         return (0, f.jsx)(o.default, {
             className: 'maxWidth',
             children: (0, f.jsxs)(h.default, {
@@ -185,10 +246,14 @@ c.register('.....', function (d, e) {
                 children: [
                     (0, f.jsxs)(_w, {
                         children: [
-                            (0, f.jsx)(_x, { children: 'Eraser Mode:' }),
+                            (0, f.jsx)(_x, {
+                                children: 'Eraser Mode:'
+                            }),
                             (0, f.jsxs)(g.default, {
                                 ref: x,
-                                style: { width: 200 },
+                                style: {
+                                    width: 200
+                                },
                                 value: w.removingMode,
                                 onChange: D => {
                                     w.removingMode = D, A();
@@ -204,10 +269,14 @@ c.register('.....', function (d, e) {
                     }),
                     w.removingMode === p.RemovingMode.tiles ? (0, f.jsxs)(_w, {
                         children: [
-                            (0, f.jsx)(_x, { children: 'Layer:' }),
+                            (0, f.jsx)(_x, {
+                                children: 'Layer:'
+                            }),
                             (0, f.jsxs)(g.default, {
                                 ref: y,
-                                style: { width: 200 },
+                                style: {
+                                    width: 200
+                                },
                                 value: w.removingTilesMode === p.RemovingTilesMode.allLayers ? 99 : w.removingTilesMode === p.RemovingTilesMode.topLayer ? 100 : w.removingTilesLayer,
                                 onChange: D => {
                                     99 === D ? w.removingTilesMode = p.RemovingTilesMode.allLayers : 100 === D ? w.removingTilesMode = p.RemovingTilesMode.topLayer : (w.removingTilesMode = p.RemovingTilesMode.layer, w.removingTilesLayer = D), A();
@@ -222,10 +291,14 @@ c.register('.....', function (d, e) {
                     }) : null,
                     w.removingMode === p.RemovingMode.tiles ? (0, f.jsxs)(_w, {
                         children: [
-                            (0, f.jsx)(_x, { children: 'Eraser Size:' }),
+                            (0, f.jsx)(_x, {
+                                children: 'Eraser Size:'
+                            }),
                             (0, f.jsx)(g.default, {
                                 ref: z,
-                                style: { width: 200 },
+                                style: {
+                                    width: 200
+                                },
                                 value: w.removingTilesEraserSize,
                                 onChange: D => {
                                     w.removingTilesEraserSize = D, A();
@@ -241,15 +314,18 @@ c.register('.....', function (d, e) {
             })
         });
     });
-    const _w = l.default.div.attrs({ className: 'maxWidth vc between flex' })(u || (u = (x => x)``)), _x = y => (0, f.jsx)(i.default.Text, {
+    const _w = l.default.div.attrs({
+            className: 'maxWidth vc between flex'
+        })(u || (u = (x => x)``)),
+        _x = y => (0, f.jsx)(i.default.Text, {
             style: {
                 fontWeight: q.FontWeights.Bold,
                 color: m.default.White
             },
             children: y.children
         });
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'TerrainLayerNames', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'TerrainLayerNames', function() {
         return _f;
     });
     const _f = [
@@ -259,36 +335,50 @@ c.register('.....', function (d, e) {
         'Upper',
         'Top'
     ];
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _o;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....');
     let l, m, n = o => o;
     var _o = () => (0, f.jsxs)(_p, {
         children: [
-            (0, f.jsx)(_q, { children: (0, f.jsx)(i.default, { name: 'fas fa-eraser' }) }),
+            (0, f.jsx)(_q, {
+                children: (0, f.jsx)(i.default, {
+                    name: 'fas fa-eraser'
+                })
+            }),
             (0, f.jsx)('div', {
                 children: (0, f.jsx)(j.default.Text, {
-                    style: { color: k.default.White },
+                    style: {
+                        color: k.default.White
+                    },
                     children: 'Hover over anything and click to erase it!'
                 })
             })
         ]
     });
-    const _p = (0, g.default)(h.CenteredColumn)(l || (l = n``)), _q = g.default.div(m || (m = n`
+    const _p = (0, g.default)(h.CenteredColumn)(l || (l = n``)),
+        _q = g.default.div(m || (m = n`
   font-size: 24px;
   color: ${ 0 };
 `), k.default.White);
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _n;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....');
     let k, l, m = n => n;
     var _n = o => {
         const {
@@ -301,7 +391,9 @@ c.register('.....', function (d, e) {
         return (0, f.jsxs)(_o, {
             children: [
                 (0, f.jsx)(_p, {
-                    style: r ? { marginBottom: 10 } : void 0,
+                    style: r ? {
+                        marginBottom: 10
+                    } : void 0,
                     children: (0, f.jsx)(h.default.Text, {
                         italic: !0,
                         children: p
@@ -309,26 +401,37 @@ c.register('.....', function (d, e) {
                 }),
                 (0, f.jsx)('div', {
                     children: (0, f.jsx)(h.default.Title, {
-                        style: { color: j.default.White },
+                        style: {
+                            color: j.default.White
+                        },
                         level: 4,
                         children: q
                     })
                 }),
                 r ? (0, f.jsx)('div', {
                     children: (0, f.jsx)(h.default.Text, {
-                        style: { marginTop: 2 },
+                        style: {
+                            marginTop: 2
+                        },
                         children: r
                     })
                 }) : null
             ]
         });
     };
-    const _o = (0, g.default)(i.CenteredColumn).attrs({ className: 'maxAll' })(k || (k = m``)), _p = g.default.div(l || (l = m``));
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+    const _o = (0, g.default)(i.CenteredColumn).attrs({
+            className: 'maxAll'
+        })(k || (k = m``)),
+        _p = g.default.div(l || (l = m``));
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _k;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = function (k, l) {
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = function(k, l) {
             return g.createElement(i.default, (0, f.default)((0, f.default)({}, k), {}, {
                 ref: l,
                 icon: h.default
@@ -336,8 +439,8 @@ c.register('.....', function (d, e) {
         };
     j.displayName = 'DownOutlined';
     var _k = g.forwardRef(j);
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _f;
     });
     var _f = {
@@ -348,9 +451,11 @@ c.register('.....', function (d, e) {
                 focusable: 'false'
             },
             children: [{
-                    tag: 'path',
-                    attrs: { d: 'M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z' }
-                }]
+                tag: 'path',
+                attrs: {
+                    d: 'M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z'
+                }
+            }]
         },
         name: 'down',
         theme: 'outlined'

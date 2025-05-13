@@ -6,32 +6,55 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _x;
     });
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....'), r = c('.....'), s = c('.....'), t = c('.....'), u = c('.....'), v = c('.....'), w = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....'),
+        r = c('.....'),
+        s = c('.....'),
+        t = c('.....'),
+        u = c('.....'),
+        v = c('.....'),
+        w = c('.....');
     var _x = () => {
-        const {id: y} = (0, h.useParams)(), [z, A] = (0, i.useSearchParams)();
+        const {
+            id: y
+        } = (0, h.useParams)(), [z, A] = (0, i.useSearchParams)();
         var B;
-        const C = Math.max(1, null !== (B = Number(z.get('page'))) && void 0 !== B ? B : 1), {
+        const C = Math.max(1, null !== (B = Number(z.get('page'))) && void 0 !== B ? B : 1),
+            {
                 isLoading: D,
                 error: E,
                 data: F
-            } = (0, l.default)(y), {
+            } = (0, l.default)(y),
+            {
                 isLoading: G,
                 error: H,
                 data: I,
                 isFetching: J
-            } = (0, o.useClassReports)(C, y), [K, L] = q.useState(0), M = q.useRef(null);
+            } = (0, o.useClassReports)(C, y),
+            [K, L] = q.useState(0),
+            M = q.useRef(null);
         (0, t.default)(M, N => {
             var O, P;
             L(null !== (P = null === (O = N.target) || void 0 === O ? void 0 : O.offsetTop) && void 0 !== P ? P : 0);
@@ -49,11 +72,16 @@ c.register('.....', function (d, e) {
                 total: I.totalItems,
                 current: C,
                 onPageChange: P => {
-                    A({ page: P });
+                    A({
+                        page: P
+                    });
                 }
-            }) : null, P = (0, s.isUpgraded)();
+            }) : null,
+            P = (0, s.isUpgraded)();
         return (0, g.jsxs)(j.Container, {
-            style: P ? void 0 : { filter: 'blur(4px)' },
+            style: P ? void 0 : {
+                filter: 'blur(4px)'
+            },
             children: [
                 (0, g.jsx)(u.default, {
                     id: 'class progress',
@@ -66,26 +94,42 @@ c.register('.....', function (d, e) {
                         (0, v.NavigateTo)(`/class/${ y }`);
                     }
                 }),
-                (0, g.jsx)(s.Title, { title: (null == F ? void 0 : F.name) ? `${ null == F ? void 0 : F.name } | Reports` : 'Class Reports' }),
-                (0, g.jsx)(k.GroupViewTopNavigationHeader, { id: y }),
+                (0, g.jsx)(s.Title, {
+                    title: (null == F ? void 0 : F.name) ? `${ null == F ? void 0 : F.name } | Reports` : 'Class Reports'
+                }),
+                (0, g.jsx)(k.GroupViewTopNavigationHeader, {
+                    id: y
+                }),
                 (0, g.jsxs)(j.ContentContainer, {
                     ref: M,
                     children: [
-                        N ? (0, g.jsx)('div', { style: { height: 35 } }) : (0, g.jsx)(n.GroupViewHeader, {
+                        N ? (0, g.jsx)('div', {
+                            style: {
+                                height: 35
+                            }
+                        }) : (0, g.jsx)(n.GroupViewHeader, {
                             data: F,
                             customRightComponent: O
                         }),
                         (0, g.jsx)(j.Content, {
                             className: 'flex',
-                            style: { padding: 0 },
+                            style: {
+                                padding: 0
+                            },
                             children: D || G ? (0, g.jsx)(m.default, {
-                                paragraph: { rows: 4 },
+                                paragraph: {
+                                    rows: 4
+                                },
                                 title: !1,
                                 active: !0,
                                 className: 'maxWidth',
-                                style: { padding: 35 }
+                                style: {
+                                    padding: 35
+                                }
                             }) : N ? (0, g.jsx)('div', {
-                                style: { padding: 35 },
+                                style: {
+                                    padding: 35
+                                },
                                 children: (null == N || null === (_Q = N.message) || void 0 === _Q ? void 0 : _Q.text) || 'There was an error fetching this class. Please try again.'
                             }) : (0, g.jsx)(p.GroupViewReportsTable, {
                                 data: null !== (_R = null == I ? void 0 : I.items) && void 0 !== _R ? _R : [],
@@ -101,16 +145,19 @@ c.register('.....', function (d, e) {
         });
         var _Q, _R, _S;
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'useClassReports', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'useClassReports', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     const _h = (i, j) => (0, f.useQuery)({
         queryKey: [
             'group-reports',
             j,
-            { page: i }
+            {
+                page: i
+            }
         ],
         keepPreviousData: !0,
         staleTime: 60000,
@@ -123,17 +170,27 @@ c.register('.....', function (d, e) {
             }
         })
     });
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'GroupViewReportsTable', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'GroupViewReportsTable', function() {
         return _m;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     const _m = n => n.totalItems ? (0, f.jsxs)('div', {
             id: 'group-reports-container',
             className: 'maxWidth',
             children: [
                 (0, f.jsx)(g.default, {
-                    theme: { token: { padding: 35 } },
+                    theme: {
+                        token: {
+                            padding: 35
+                        }
+                    },
                     children: (0, f.jsx)(h.default, {
                         className: 'maxWidth',
                         dataSource: n.data.map(o => ({
@@ -149,7 +206,9 @@ c.register('.....', function (d, e) {
                             onClick: () => {
                                 (0, i.NavigateTo)(`/report/${ o._id }`);
                             },
-                            style: { cursor: 'pointer' }
+                            style: {
+                                cursor: 'pointer'
+                            }
                         }),
                         loading: {
                             spinning: n.isFetching,
@@ -163,7 +222,9 @@ c.register('.....', function (d, e) {
                 }),
                 n.pagination ? (0, f.jsx)('div', {
                     className: 'maxWidth flex-center',
-                    style: { padding: '35px 0px' },
+                    style: {
+                        padding: '35px 0px'
+                    },
                     children: n.pagination
                 }) : null
             ]
@@ -176,7 +237,9 @@ c.register('.....', function (d, e) {
             children: [
                 (0, f.jsx)('img', {
                     src: '/client/img/dashboard/report.svg',
-                    style: { height: 80 }
+                    style: {
+                        height: 80
+                    }
                 }),
                 (0, f.jsxs)('div', {
                     style: {
@@ -191,8 +254,8 @@ c.register('.....', function (d, e) {
                     ]
                 })
             ]
-        }), _n = [
-            {
+        }),
+        _n = [{
                 title: 'Kit',
                 dataIndex: 'kit',
                 key: 'report-kit',
@@ -206,7 +269,9 @@ c.register('.....', function (d, e) {
                 title: 'Accuracy',
                 dataIndex: 'accuracy',
                 key: 'report-accuracy',
-                render: o => (0, f.jsx)(k.ReportProgressAccuracyMeter, { percent: o })
+                render: o => (0, f.jsx)(k.ReportProgressAccuracyMeter, {
+                    percent: o
+                })
             },
             {
                 title: 'Participants',
@@ -219,13 +284,20 @@ c.register('.....', function (d, e) {
                 })
             }
         ];
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'ReportKit', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'ReportKit', function() {
         return _s;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....');
     let o, p, q, r = s => s;
     const _s = t => {
             const u = b(i)((0, j.dateFromObjectId)(t.dateId)).format('MMMM Do [at] LT');
@@ -245,10 +317,16 @@ c.register('.....', function (d, e) {
                     }),
                     (0, f.jsxs)('div', {
                         children: [
-                            (0, f.jsx)(_u, { children: t.kit.title }),
-                            (0, f.jsx)(_v, { children: u }),
+                            (0, f.jsx)(_u, {
+                                children: t.kit.title
+                            }),
+                            (0, f.jsx)(_v, {
+                                children: u
+                            }),
                             t.assignmentId ? (0, f.jsx)('div', {
-                                style: { marginTop: '0.25em' },
+                                style: {
+                                    marginTop: '0.25em'
+                                },
                                 children: (0, f.jsx)(l.ReportLinkTag, {
                                     to: `/assignment/${ t.assignmentId }`,
                                     children: 'Assignment'
@@ -258,45 +336,51 @@ c.register('.....', function (d, e) {
                     })
                 ]
             });
-        }, _t = g.default.img(o || (o = r`
+        },
+        _t = g.default.img(o || (o = r`
   border-radius: 5px;
   border: solid ${ 0 } 1px;
   flex-shrink: 0;
   object-fit: cover;
-`), m.default.Black), _u = g.default.div(p || (p = r`
+`), m.default.Black),
+        _u = g.default.div(p || (p = r`
   font-size: 1.1em;
   font-weight: ${ 0 };
-`), k.FontWeights.Bold), _v = g.default.div(q || (q = r`
+`), k.FontWeights.Bold),
+        _v = g.default.div(q || (q = r`
   font-size: 0.9em;
   font-style: italic;
   margin-top: 0.05em;
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'ReportLinkTag', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'ReportLinkTag', function() {
         return _j;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....');
+    var g = c('.....'),
+        h = c('.....');
     let i;
     const _j = k => (0, f.jsx)(_k, {
             onClick: l => null == l ? void 0 : l.stopPropagation(),
             to: k.to,
             children: k.children
-        }), _k = (0, h.default)(g.default)(i || (i = (l => l)`
+        }),
+        _k = (0, h.default)(g.default)(i || (i = (l => l)`
   background-color: rgba(0, 0, 0, 0.05) !important;
   padding: 0.2em 0.73em;
   font-size: 0.9em;
   border-radius: 50px;
 `));
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'getCloudinaryUrl', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'getCloudinaryUrl', function() {
         return _f;
     });
     const _f = g => {
             const h = _g(g);
             return h ? g.includes('/video/upload') ? `https://${ _h }/video/upload/${ h }` : `https://${ _h }/image/upload/f_auto,fl_lossy,q_auto/${ h }` : g;
-        }, _g = h => {
+        },
+        _g = h => {
             if (!_k.some(i => h.includes(i)))
                 return null;
             if (h.includes(_i) && !h.includes(`/${ _j }/`))
@@ -304,23 +388,36 @@ c.register('.....', function (d, e) {
             const i = h.split('/');
             if (!i || !i.length || i.length < 2)
                 return null;
-            const j = i[i.length - 2], k = i[i.length - 1];
+            const j = i[i.length - 2],
+                k = i[i.length - 1];
             return j && k && j.startsWith('v') ? `${ j }/${ k }` : null;
-        }, _h = 'media.gimkit.com', _i = 'res.cloudinary.com', _j = 'gimkit-production', _k = [
+        },
+        _h = 'media.gimkit.com',
+        _i = 'res.cloudinary.com',
+        _j = 'gimkit-production',
+        _k = [
             _h,
             _i
         ];
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'ReportProgressAccuracyMeter', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'ReportProgressAccuracyMeter', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....');
     c('.....');
     var i = c('.....');
     const _j = k => {
         const l = k.percent < 60 ? '#F44336' : k.percent < 80 ? '#FFC107' : '#66BB6A';
         return (0, f.jsx)(g.default, {
-            theme: { components: { Progress: { colorText: (0, i.darken)(0.2, l) } } },
+            theme: {
+                components: {
+                    Progress: {
+                        colorText: (0, i.darken)(0.2, l)
+                    }
+                }
+            },
             children: (0, f.jsx)(h.default, {
                 type: 'dashboard',
                 percent: k.percent,
@@ -330,19 +427,23 @@ c.register('.....', function (d, e) {
             })
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'ReportParticipantsAndGroups', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'ReportParticipantsAndGroups', function() {
         return _j;
     });
     var f = c('.....');
     c('.....');
-    var g = c('.....'), h = c('.....'), i = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     const _j = k => {
         var l;
         return (0, f.jsxs)('div', {
             children: [
                 (0, f.jsxs)('div', {
-                    style: { fontStyle: 'italic' },
+                    style: {
+                        fontStyle: 'italic'
+                    },
                     children: [
                         k.participants,
                         ' ',
@@ -353,7 +454,9 @@ c.register('.....', function (d, e) {
                     direction: 'horizontal',
                     wrap: !0,
                     size: 'small',
-                    style: { marginTop: '0.3em' },
+                    style: {
+                        marginTop: '0.3em'
+                    },
                     children: k.groups.map(m => (0, f.jsx)(i.ReportLinkTag, {
                         to: `/class/${ m._id }`,
                         children: m.name
@@ -362,11 +465,12 @@ c.register('.....', function (d, e) {
             ]
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'ReportPagination', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'ReportPagination', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     c('.....');
     const _h = i => {
         const {
@@ -382,18 +486,21 @@ c.register('.....', function (d, e) {
             onChange: l
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _k;
     });
-    var f = c('.....'), g = c('.....');
-    function h() {
-    }
+    var f = c('.....'),
+        g = c('.....');
+
+    function h() {}
     let i;
-    const j = k => i || (i = function (l) {
-        let m = !1, n = [];
-        const o = new Map(), p = new (l || window.ResizeObserver)((q, r) => {
-                n = n.concat(q), m || window.requestAnimationFrame(function () {
+    const j = k => i || (i = function(l) {
+        let m = !1,
+            n = [];
+        const o = new Map(),
+            p = new(l || window.ResizeObserver)((q, r) => {
+                n = n.concat(q), m || window.requestAnimationFrame(function() {
                     const s = new Set();
                     for (let t = 0; t < n.length; t++) {
                         if (s.has(n[t].target))
@@ -418,18 +525,20 @@ c.register('.....', function (d, e) {
                 const t = null !== (s = o.get(q)) && void 0 !== s ? s : [];
                 if (1 === t.length)
                     return p.unobserve(q), void o.delete(q);
-                const u = t.indexOf(r);
-                -1 !== u && t.splice(u, 1), o.set(q, t);
+                const u = t.indexOf(r); -
+                1 !== u && t.splice(u, 1), o.set(q, t);
             }
         };
     }(k));
-    var _k = function (l, m, n = {}) {
-        const o = j(n.polyfill), p = (0, g.default)(m);
+    var _k = function(l, m, n = {}) {
+        const o = j(n.polyfill),
+            p = (0, g.default)(m);
         return (0, f.default)(() => {
             let q = !1;
             const r = l && 'current' in l ? l.current : l;
             if (!r)
                 return h;
+
             function s(t, u) {
                 q || p.current(t, u);
             }

@@ -7,22 +7,30 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _q;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....');
     let n;
-    const o = g.lazy(() => b('.....')), p = g.lazy(() => b('.....'));
+    const o = g.lazy(() => b('.....')),
+        p = g.lazy(() => b('.....'));
     var _q = () => {
         const [r, s] = g.useState(!0), [t, u] = g.useState(), v = (0, k.getUrlVariable)('id');
         if (g.useEffect(() => {
                 if (v)
-                    return v === l.TutorialConsts.mapId ? (u(i.ExperienceSource.map), void s(!1)) : void (0, k.request)({
+                    return v === l.TutorialConsts.mapId ? (u(i.ExperienceSource.map), void s(!1)) : void(0, k.request)({
                         url: `/api/matchmaker/intent/fetch-source/${ v }`,
                         success: w => {
                             u(w), s(!1);
@@ -41,16 +49,24 @@ b.register('.....', function (c, d) {
             if (t === i.ExperienceSource.map)
                 return (0, f.jsx)(g.Suspense, {
                     fallback: (0, f.jsx)(_r, {}),
-                    children: (0, f.jsx)(p, { createDetails: { intentId: v } })
+                    children: (0, f.jsx)(p, {
+                        createDetails: {
+                            intentId: v
+                        }
+                    })
                 });
         }
-        return (0, f.jsx)(_r, { children: (0, f.jsx)(k.Title, { title: 'Host' }) });
+        return (0, f.jsx)(_r, {
+            children: (0, f.jsx)(k.Title, {
+                title: 'Host'
+            })
+        });
     };
     const _r = h.default.div(n || (n = (s => s)`
   flex: 1;
   background: ${ 0 };
 `), m.default.background);
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
     let g;
@@ -60,27 +76,27 @@ b.register('.....', function (c, d) {
     let k;
     let l;
     var m;
-    a(c.exports, 'QuestionType', function () {
+    a(c.exports, 'QuestionType', function() {
         return e;
-    }), a(c.exports, 'Privacy', function () {
+    }), a(c.exports, 'Privacy', function() {
         return g;
-    }), a(c.exports, 'GameStatus', function () {
+    }), a(c.exports, 'GameStatus', function() {
         return i;
-    }), a(c.exports, 'GameType', function () {
+    }), a(c.exports, 'GameType', function() {
         return k;
-    }), a(c.exports, 'GameGoal', function () {
+    }), a(c.exports, 'GameGoal', function() {
         return l;
-    }), a(c.exports, 'themes', function () {
+    }), a(c.exports, 'themes', function() {
         return _r;
-    }), a(c.exports, 'ExperienceSource', function () {
+    }), a(c.exports, 'ExperienceSource', function() {
         return _s;
     }), (f = e || (e = {})).multipleChoice = 'mc', f.textInput = 'text', (h = g || (g = {})).public = 'public', h.private = 'private', (j = i || (i = {})).setup = 'setup', j.join = 'join', j.teams = 'teams', j.gameplay = 'gameplay', j.results = 'results', (k || (k = {})).live = 'live', (m = l || (l = {})).time = 'time', m.race = 'race', m.allIn = 'allIn';
-    const n = '#ffffff', o = '#000000';
+    const n = '#ffffff',
+        o = '#000000';
     let p;
     var q;
     (q = p || (p = {})).easy = 'easy', q.medium = 'medium', q.hard = 'hard', q.veryHard = 'veryHard', q.veryVeryHard = 'veryVeryHard';
-    const _r = [
-        {
+    const _r = [{
             cost: 0,
             name: 'Default',
             description: 'Works fine, that\'s all',
@@ -88,8 +104,7 @@ b.register('.....', function (c, d) {
                 background: '#303f9f',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#771322',
                     text: n
                 },
@@ -117,8 +132,7 @@ b.register('.....', function (c, d) {
                 background: '#6C2F00',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#9E682A',
                     text: n
                 },
@@ -146,8 +160,7 @@ b.register('.....', function (c, d) {
                 background: '#000a12',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#263238',
                     text: n
                 },
@@ -175,8 +188,7 @@ b.register('.....', function (c, d) {
                 background: '#0D0019',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#220044',
                     text: n
                 },
@@ -204,8 +216,7 @@ b.register('.....', function (c, d) {
                 background: '#000063',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#283593',
                     text: n
                 },
@@ -233,8 +244,7 @@ b.register('.....', function (c, d) {
                 background: '#4c3d33',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#385645',
                     text: n
                 },
@@ -262,8 +272,7 @@ b.register('.....', function (c, d) {
                 background: '#7F7496',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#F46F5A',
                     text: n
                 },
@@ -291,8 +300,7 @@ b.register('.....', function (c, d) {
                 background: '#FFbfd1',
                 text: '#434343'
             },
-            palette: [
-                {
+            palette: [{
                     background: '#FFA69E',
                     text: '#5b5b5b'
                 },
@@ -320,8 +328,7 @@ b.register('.....', function (c, d) {
                 background: '#9C0022',
                 text: n
             },
-            palette: [
-                {
+            palette: [{
                     background: '#001D3B',
                     text: n
                 },
@@ -349,8 +356,7 @@ b.register('.....', function (c, d) {
                 background: o,
                 text: '#FFCD2B'
             },
-            palette: [
-                {
+            palette: [{
                     background: '#FFCD2B',
                     text: o
                 },
@@ -374,8 +380,8 @@ b.register('.....', function (c, d) {
     let _s;
     var t;
     (t = _s || (_s = {})).original = 'original', t.map = 'map';
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'TutorialConsts', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'TutorialConsts', function() {
         return _f;
     });
     var e = b('.....');
@@ -404,19 +410,21 @@ b.register('.....', function (c, d) {
             'Snowy Grass'
         ]
     };
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
-    a(c.exports, 'default', function () {
+    a(c.exports, 'default', function() {
         return _g;
     }), (f = e || (e = {})).scriptRunner = 'scriptRunner', f.rng = 'rng', f.editingAccessPoint = 'editingAccessPoint', f.luckyBlock = 'luckyBlock', f.chest = 'chest', f.jumpGranter = 'jumpGranter', f.teamColorTilesManager = 'teamColorTilesManager', f.changingBooth = 'changingBooth', f.popupListItem = 'popupListItem', f.gadgetModifier = 'gadgetModifier', f.zombieSpawnZone = 'zombieSpawnZone', f.zombieWaveDesigner = 'zombieWaveDesigner', f.zombieDesigner = 'zombieDesigner', f.zombieInvasion = 'zombieInvasion', f.codeUI = 'codeUI', f.damager = 'damager', f.cameraPoint = 'cameraPoint', f.blockingZone = 'blockingZone', f.character = 'character', f.classDesigner = 'classDesigner', f.backgroundTilesZone = 'backgroundTilesZone', f.proceduralTerrainZoneZoneInstruction = 'proceduralTerrainZoneZoneInstruction', f.proceduralTerrainZone = 'proceduralTerrainZone', f.dialogueAction = 'dialogueAction', f.dialogue = 'dialogue', f.voiceLine = 'voiceLine', f.scorebar = 'scorebar', f.outline = 'outline', f.ball = 'ball', f.damageBoost = 'damageBoost', f.checkpoint = 'checkpoint', f.playerPositionDetector = 'playerPositionDetector', f.itemImage = 'itemImage', f.mood = 'mood', f.playerAppearanceModifier = 'playerAppearanceModifier', f.waypoint = 'waypoint', f.flag = 'flag', f.checker = 'checker', f.trigger = 'trigger', f.counter = 'counter', f.teleporter = 'teleporter', f.itemGranter = 'itemGranter', f.characterSpawnPad = 'characterSpawnPad', f.textBillboard = 'textBillboard', f.prop = 'prop', f.barrier = 'barrier', f.button = 'button', f.droppedItem = 'droppedItem', f.property = 'property', f.mapOptions = 'mapOptions', f.teamSettings = 'teamSettings', f.imageBillboard = 'imageBillboard', f.gimkitLiveQuestion = 'gimkitLiveQuestion', f.ballZone = 'ballZone', f.zone = 'zone', f.captureFlagZone = 'captureFlagZone', f.textExplainer = 'textExplainer', f.relay = 'relay', f.cameraSize = 'cameraSize', f.music = 'music', f.speed = 'speed', f.soundEffect = 'soundEffect', f.inventoryItemManager = 'inventoryItemManager', f.guiDevice = 'guiDevice', f.lifecycle = 'lifecycle', f.endGame = 'endGame', f.countdown = 'countdown', f.shadow = 'shadow', f.characterProximity = 'characterProximity', f.repeater = 'repeater', f.vendingMachine = 'vendingMachine', f.teamSwitcher = 'teamSwitcher', f.notification = 'notification', f.endOfGameWidget = 'endOfGameWidget', f.respawn = 'respawn', f.xp = 'xp', f.assignmentCheckpoint = 'assignmentCheckpoint', f.assignmentContext = 'assignmentContext', f.placedSticker = 'placedSticker', f.wireRepeater = 'wireRepeater', f.movementMeter = 'movementMeter', f.craftingTable = 'craftingTable', f.craftingRecipe = 'craftingRecipe', f.startingInventory = 'startingInventory', f.healthGranter = 'healthGranter', f.sentry = 'sentry', f.knockoutManager = 'knockoutManager', f.laserBeam = 'laserBeam', f.laserBeamManager = 'laserBeamManager', f.cosmosModifier = 'cosmosModifier', f.passwordLock = 'passwordLock', f.itemSpawner = 'itemSpawner', f.tagZone = 'tagZone', f.achievement = 'achievement';
     var _g = e;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _e;
     });
-    var _e = { background: '#673ab7' };
-}), b.register('.....', function (c, d) {
+    var _e = {
+        background: '#673ab7'
+    };
+}), b.register('.....', function(c, d) {
     c.exports = Promise.all([
         import('./' + b('.....').resolve('b7Bno')),
         import('./' + b('.....').resolve('GSLeG')),
@@ -437,7 +445,7 @@ b.register('.....', function (c, d) {
         import('./' + b('.....').resolve('ehnD9')),
         import('./' + b('.....').resolve('6AbL8'))
     ]).then(() => b('.....'));
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     c.exports = Promise.all([
         import('./' + b('.....').resolve('b7Bno')),
         import('./' + b('.....').resolve('1gjsp')),

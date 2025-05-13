@@ -1,10 +1,10 @@
 var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('.....', function (b, c) {
+a.register('.....', function(b, c) {
     var d, e, f, g, h;
     d = b.exports, Object.defineProperty(d, '__esModule', {
         value: !0,
         configurable: !0
-    }), e = b.exports, f = 'default', g = function () {
+    }), e = b.exports, f = 'default', g = function() {
         return _n;
     }, Object.defineProperty(e, f, {
         get: g,
@@ -36,7 +36,9 @@ a.register('.....', function (b, c) {
                     ]
                 })
             }),
-            (0, i.jsx)(_p, { children: o.children })
+            (0, i.jsx)(_p, {
+                children: o.children
+            })
         ]
     });
     const _o = j.default.div(k || (k = m`
@@ -162,7 +164,10 @@ a.register('.....', function (b, c) {
       border-radius: 50%;
     }
   }
-`)), _p = j.default.div.attrs({ className: 'maxAll' })(l || (l = m`
+`)),
+        _p = j.default.div.attrs({
+            className: 'maxAll'
+        })(l || (l = m`
   position: absolute;
   top: 0;
   left: 0;

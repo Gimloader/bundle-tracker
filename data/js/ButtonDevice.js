@@ -7,15 +7,26 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _s;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....');
     class r extends n.default {
         constructor(s) {
             super(s), (0, f.default)(this, 'onStateChange', t => {
@@ -32,7 +43,8 @@ b.register('.....', function (c, d) {
             }), (0, f.default)(this, 'setupVisualEditing', () => {
                 if (!(0, h.InPreGamePhase)() || !(0, g.isSavedVersion)())
                     return;
-                const t = (0, j.FetchOptionSchemaProperty)(this, 'radius'), u = (0, j.FetchOptionSchemaProperty)(this, 'size');
+                const t = (0, j.FetchOptionSchemaProperty)(this, 'radius'),
+                    u = (0, j.FetchOptionSchemaProperty)(this, 'size');
                 this.visualEditing.add.circle({
                     radius: this.options.size,
                     angle: -90,
@@ -41,7 +53,9 @@ b.register('.....', function (c, d) {
                     rotable: !1,
                     movable: !1,
                     onChange: v => {
-                        (0, i.ReplaceVisualEditingPreview)(v.x, v.y, { size: v.radius });
+                        (0, i.ReplaceVisualEditingPreview)(v.x, v.y, {
+                            size: v.radius
+                        });
                     }
                 }), this.visualEditing.add.circle({
                     radius: this.options.radius,
@@ -49,7 +63,9 @@ b.register('.....', function (c, d) {
                     maxRadius: t.max,
                     rotable: !1,
                     onChange: v => {
-                        (0, i.ReplaceVisualEditingPreview)(v.x, v.y, { radius: v.radius });
+                        (0, i.ReplaceVisualEditingPreview)(v.x, v.y, {
+                            radius: v.radius
+                        });
                     }
                 });
             }), this.setupVisualEditing(), (!0 === this.options.visibleInGame || (0, h.InPreGamePhase)() && (0, g.isSavedVersion)()) && (this.colliders.add.circle({
@@ -81,7 +97,9 @@ b.register('.....', function (c, d) {
             this.boundingBox.setHardcoded({
                 width: t,
                 height: t
-            }), this.interactiveZone = this.interactiveZones.add.circle({ r: this.options.radius }), this.interactiveZones.setForceDisabled(!this.state.active), this.interactiveZones.setInfo({
+            }), this.interactiveZone = this.interactiveZones.add.circle({
+                r: this.options.radius
+            }), this.interactiveZones.setForceDisabled(!this.state.active), this.interactiveZones.setInfo({
                 message: this.options.guiMessage,
                 allowedToInteract: !0,
                 duration: this.options.interactionDuration
@@ -93,13 +111,17 @@ b.register('.....', function (c, d) {
         }
     }
     var _s = r;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = (j, k, l) => {
-        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        const m = (0, h.FetchVisualEditingPreview)(),
+            n = (0, g.FetchCurrentlyEditedDevice)();
         if (!n || !m)
             return;
         const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
@@ -120,16 +142,17 @@ b.register('.....', function (c, d) {
             state: m.deviceOption.defaultState
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
     const _e = (f, g) => {
@@ -141,33 +164,35 @@ b.register('.....', function (c, d) {
             step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'Green1', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'Green1', function() {
         return _f;
-    }), a(c.exports, 'Green2', function () {
+    }), a(c.exports, 'Green2', function() {
         return _g;
-    }), a(c.exports, 'Orange', function () {
+    }), a(c.exports, 'Orange', function() {
         return _h;
     });
     var e = b('.....');
     const _f = {
             imageId: 'button_device_green_1',
             imageUrl: (0, e.default)('devices/button/button-device-green-1.png')
-        }, _g = {
+        },
+        _g = {
             imageId: 'button_device_green_2',
             imageUrl: (0, e.default)('devices/button/button-device-green-2.png')
-        }, _h = {
+        },
+        _h = {
             imageId: 'button_device_orange',
             imageUrl: (0, e.default)('devices/button/button-device-orange.png')
         };
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
-    a(c.exports, 'ButtonState', function () {
+    a(c.exports, 'ButtonState', function() {
         return e;
     }), (f = e || (e = {})).active = 'active', f.pressed = 'pressed', f.inactive = 'inactive';
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'Messages', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'Messages', function() {
         return _e;
     });
     let _e;

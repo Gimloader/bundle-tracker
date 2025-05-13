@@ -7,16 +7,32 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _y;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....'), t = b('.....'), u = b('.....');
-    const v = 100, w = 200;
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....'),
+        r = b('.....'),
+        s = b('.....'),
+        t = b('.....'),
+        u = b('.....');
+    const v = 100,
+        w = 200;
     class x extends h.default {
         createVisuals() {
             var y, z, A, B, C, D;
@@ -69,7 +85,9 @@ b.register('.....', function (c, d) {
         constructor(y) {
             var z;
             super(y), (0, f.default)(this, 'showing', !0), (0, f.default)(this, 'healthbarShowTween', null), (0, f.default)(this, 'healthbarHideTween', null), (0, f.default)(this, 'createHealthbar', () => {
-                this.canBeDamaged() && this.options.healthbar !== i.HealthbarMode.off && (this.healthbarContainer = this.parts.add.container({}), this.healthbarContainer2 = this.parts.add.container({ parent: this.healthbarContainer.view }), this.healthbarContainer.view.x = this.x, this.healthbarContainer.view.y = this.y + 30, this.healthbarContainer2.view.x = 0, this.healthbarContainer2.view.y = 0, this.healthbarBg = this.parts.add.rect({
+                this.canBeDamaged() && this.options.healthbar !== i.HealthbarMode.off && (this.healthbarContainer = this.parts.add.container({}), this.healthbarContainer2 = this.parts.add.container({
+                    parent: this.healthbarContainer.view
+                }), this.healthbarContainer.view.x = this.x, this.healthbarContainer.view.y = this.y + 30, this.healthbarContainer2.view.x = 0, this.healthbarContainer2.view.y = 0, this.healthbarBg = this.parts.add.rect({
                     width: w,
                     height: 10,
                     color: 0,
@@ -125,15 +143,18 @@ b.register('.....', function (c, d) {
                 }
             }), (0, f.default)(this, 'onHealthChange', A => {
                 if ((null == A ? void 0 : A.damageToDeal) > 0) {
-                    let B = null == A ? void 0 : A.x, C = null == A ? void 0 : A.y;
+                    let B = null == A ? void 0 : A.x,
+                        C = null == A ? void 0 : A.y;
                     if (!B || !C) {
-                        const D = this.boundingBox.getBoundingBox(), E = {
+                        const D = this.boundingBox.getBoundingBox(),
+                            E = {
                                 x: D.x + D.width / 2,
                                 y: D.y + D.height / 2
                             };
                         B = E.x, C = E.y;
                     }
-                    const F = Phaser.Math.Snap.To(B, 20), G = Phaser.Math.Snap.To(C, 20);
+                    const F = Phaser.Math.Snap.To(B, 20),
+                        G = Phaser.Math.Snap.To(C, 20);
                     (0, r.default)().worldManager.projectiles.damageMarkers.basic.applyDamage({
                         markerId: this.id,
                         damage: D.damageToDeal,
@@ -155,10 +176,15 @@ b.register('.....', function (c, d) {
                     duration: v
                 })), this.updateHealthbar(D.alpha), this.tweenHealthbarOnHit();
             }), (0, f.default)(this, 'addVisualEditing', () => {
-                const A = (0, o.default)((0, k.default)(this.propOption.imageUrl)), B = (0, s.FetchOptionSchemaProperty)(this, 'Scale'), C = A.width * this.propOption.scaleMultip, D = A.height * this.propOption.scaleMultip, E = {
+                const A = (0, o.default)((0, k.default)(this.propOption.imageUrl)),
+                    B = (0, s.FetchOptionSchemaProperty)(this, 'Scale'),
+                    C = A.width * this.propOption.scaleMultip,
+                    D = A.height * this.propOption.scaleMultip,
+                    E = {
                         x: (0.5 - this.propOption.originX) * C,
                         y: (0.5 - this.propOption.originY) * D
-                    }, F = (0, m.GetPosAfterTransform)(E.x, E.y, this.options.Scale, this.options.Angle);
+                    },
+                    F = (0, m.GetPosAfterTransform)(E.x, E.y, this.options.Scale, this.options.Angle);
                 Math.max(0, 50 - C * Math.max(0.5, B.min)), Math.max(0, 50 - D * Math.max(0.5, B.min));
                 this.visualEditing.add.box({
                     x: F.x,
@@ -171,10 +197,13 @@ b.register('.....', function (c, d) {
                     minHeight: D * Math.max(0.1, B.min) + 0,
                     maxHeight: D * B.max + 0,
                     onChange: G => {
-                        const H = (G.height - 0) / D, I = G.angle, J = {
+                        const H = (G.height - 0) / D,
+                            I = G.angle,
+                            J = {
                                 x: (0.5 - this.propOption.originX) * C,
                                 y: (0.5 - this.propOption.originY) * D
-                            }, K = (0, m.GetPosAfterTransform)(J.x, J.y, H, I);
+                            },
+                            K = (0, m.GetPosAfterTransform)(J.x, J.y, H, I);
                         (0, p.ReplaceVisualEditingPreview)(G.x - K.x, G.y - K.y, {
                             Angle: I,
                             Scale: H
@@ -206,14 +235,19 @@ b.register('.....', function (c, d) {
                 const A = this.boundingBox.getBoundingBox();
                 this.wirePoints.setBoth(A.x + A.width / 2, A.y + A.height / 2);
             }), (0, f.default)(this, 'addCircleCollider', A => {
-                const B = this.options.FlipX ? -A.x : A.x, C = (0, m.GetPosAfterTransform)(B, A.y, this.options.Scale, this.options.Angle);
+                const B = this.options.FlipX ? -A.x : A.x,
+                    C = (0, m.GetPosAfterTransform)(B, A.y, this.options.Scale, this.options.Angle);
                 this.colliders.add.circle({
                     r: A.r * this.options.Scale,
                     x: C.x,
                     y: C.y
                 });
             }), (0, f.default)(this, 'addRectCollider', A => {
-                const B = this.options.FlipX ? -A.x : A.x, C = this.options.FlipX ? -A.angle : A.angle, D = A.w * this.options.Scale, E = A.h * this.options.Scale, F = (0, m.GetPosAfterTransform)(B, A.y, this.options.Scale, this.options.Angle);
+                const B = this.options.FlipX ? -A.x : A.x,
+                    C = this.options.FlipX ? -A.angle : A.angle,
+                    D = A.w * this.options.Scale,
+                    E = A.h * this.options.Scale,
+                    F = (0, m.GetPosAfterTransform)(B, A.y, this.options.Scale, this.options.Angle);
                 this.colliders.add.box({
                     x: F.x,
                     y: F.y,
@@ -222,7 +256,9 @@ b.register('.....', function (c, d) {
                     angle: this.options.Angle + C
                 });
             }), (0, f.default)(this, 'addEllipseCollider', A => {
-                const B = this.options.FlipX ? -A.x : A.x, C = this.options.FlipX ? -A.angle : A.angle, D = (0, m.GetPosAfterTransform)(B, A.y, this.options.Scale, this.options.Angle);
+                const B = this.options.FlipX ? -A.x : A.x,
+                    C = this.options.FlipX ? -A.angle : A.angle,
+                    D = (0, m.GetPosAfterTransform)(B, A.y, this.options.Scale, this.options.Angle);
                 this.colliders.add.ellipse({
                     x: D.x,
                     y: D.y,
@@ -257,7 +293,8 @@ b.register('.....', function (c, d) {
                     return;
                 if (this.isPreview)
                     return;
-                const A = this.boundingBox.getBoundingBox(), B = A.x + A.width - this.x;
+                const A = this.boundingBox.getBoundingBox(),
+                    B = A.x + A.width - this.x;
                 this.boundingBox.setHardcoded({
                     x: -B,
                     y: A.y - this.y,
@@ -271,34 +308,40 @@ b.register('.....', function (c, d) {
         }
     }
     var _y = x;
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
     let g;
     var h;
-    a(c.exports, 'ShadowsPlacement', function () {
+    a(c.exports, 'ShadowsPlacement', function() {
         return e;
-    }), a(c.exports, 'HealthbarMode', function () {
+    }), a(c.exports, 'HealthbarMode', function() {
         return g;
     }), (f = e || (e = {})).floor = 'Floor', f.beneathProp = 'Beneath Prop', (h = g || (g = {})).off = 'Off', h.on = 'On', h.whenHit = 'When Hit';
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'GetPosAfterTransform', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'GetPosAfterTransform', function() {
         return _e;
     });
     const _e = (f, g, h, i) => {
-        const j = f * h, k = g * h, l = Phaser.Math.DegToRad(i);
+        const j = f * h,
+            k = g * h,
+            l = Phaser.Math.DegToRad(i);
         return {
             x: j * Math.cos(l) - k * Math.sin(l),
             y: j * Math.sin(l) + k * Math.cos(l)
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = (j, k, l) => {
-        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        const m = (0, h.FetchVisualEditingPreview)(),
+            n = (0, g.FetchCurrentlyEditedDevice)();
         if (!n || !m)
             return;
         const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
@@ -319,16 +362,17 @@ b.register('.....', function (c, d) {
             state: m.deviceOption.defaultState
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
     const _e = (f, g) => {
@@ -340,11 +384,12 @@ b.register('.....', function (c, d) {
             step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         const i = (0, f.default)((0, e.default)());
         h.colliders.forEach(j => {

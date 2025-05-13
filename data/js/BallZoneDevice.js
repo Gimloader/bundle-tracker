@@ -7,17 +7,30 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'BallZoneDevice', function () {
+    }), a(c.exports, 'BallZoneDevice', function() {
         return _t;
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _u;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....'),
+        r = b('.....'),
+        s = b('.....');
     class _t extends k.default {
         getAlpha() {
             return (0, i.InGamePhase)() ? this.state.active ? this.options.backgroundAlpha : 0 : (0, h.isPublishedVersion)() || (0, h.isSavedVersion)() && j.default.shouldShowInnerZone(this) ? this.options.backgroundAlpha : 0;
@@ -36,7 +49,8 @@ b.register('.....', function (c, d) {
                 }), (0, f.default)(this, 'checkIfCollidersEnabled', () => this.state.active), (0, f.default)(this, 'setupVisualEditing', () => {
                     if (!(0, i.InPreGamePhase)() || !(0, h.isSavedVersion)())
                         return;
-                    const v = (0, o.FetchOptionSchemaProperty)(this, 'width'), w = (0, o.FetchOptionSchemaProperty)(this, 'height');
+                    const v = (0, o.FetchOptionSchemaProperty)(this, 'width'),
+                        w = (0, o.FetchOptionSchemaProperty)(this, 'height');
                     this.visualEditing.add.box({
                         width: this.options.width,
                         height: this.options.height,
@@ -79,10 +93,10 @@ b.register('.....', function (c, d) {
         }
     }
     var _u = _t;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ZonedDeviceDisplayOptions', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ZonedDeviceDisplayOptions', function() {
         return _f;
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _i;
     });
     var e = b('.....');
@@ -97,32 +111,35 @@ b.register('.....', function (c, d) {
         shouldShow: j => h() !== _f.fullyHidden,
         shouldShowInnerZone: j => h() !== _f.bordersOnly
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _e;
     });
-    var _e = { zonedDeviceViews: 'zoned-device-views' };
-}), b.register('.....', function (c, d) {
+    var _e = {
+        zonedDeviceViews: 'zoned-device-views'
+    };
+}), b.register('.....', function(c, d) {
     let e;
     var f;
     let g;
     var h;
-    a(c.exports, 'Style', function () {
+    a(c.exports, 'Style', function() {
         return e;
-    }), a(c.exports, 'Side', function () {
+    }), a(c.exports, 'Side', function() {
         return g;
     }), (f = e || (e = {})).none = 'None', f.blastball = 'Blastball', (h = g || (g = {})).left = 'Left', h.right = 'Right';
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'IconAsset', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'IconAsset', function() {
         return _f;
-    }), a(c.exports, 'BlastBallAssets', function () {
+    }), a(c.exports, 'BlastBallAssets', function() {
         return _g;
     });
     var e = b('.....');
     const _f = {
             imageId: (0, e.default)('devices/ball_zone/icon.png'),
             imageUrl: (0, e.default)('devices/ball_zone/icon.png')
-        }, _g = {
+        },
+        _g = {
             side_bottom: {
                 imageId: (0, e.default)('devices/ball_zone/blastball_side_bottom.png'),
                 imageUrl: (0, e.default)('devices/ball_zone/blastball_side_bottom.png')
@@ -140,8 +157,8 @@ b.register('.....', function (c, d) {
                 imageUrl: (0, e.default)('devices/ball_zone/blastball_dot.png')
             }
         };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
     const _e = (f, g) => {
@@ -153,13 +170,17 @@ b.register('.....', function (c, d) {
             step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = (j, k, l) => {
-        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        const m = (0, h.FetchVisualEditingPreview)(),
+            n = (0, g.FetchCurrentlyEditedDevice)();
         if (!n || !m)
             return;
         const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
@@ -180,21 +201,26 @@ b.register('.....', function (c, d) {
             state: m.deviceOption.defaultState
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'CreateBlastBallStyle', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'CreateBlastBallStyle', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = j => {
-        const k = 0.15, l = m => j.options.side === g.Side.left ? m : -m;
+        const k = 0.15,
+            l = m => j.options.side === g.Side.left ? m : -m;
         j.parts.add.ninePatch({
             ...e.BlastBallAssets.crossbar,
             layerId: f.default.DevicesUnderCharacters,
@@ -287,11 +313,12 @@ b.register('.....', function (c, d) {
             }
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         const i = (0, f.default)((0, e.default)());
         h.colliders.forEach(j => {

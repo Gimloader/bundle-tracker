@@ -6,25 +6,37 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _r;
     });
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....');
     class q extends h.default {
         constructor(r) {
             super(r), (0, g.default)(this, 'createVisuals', () => {
                 if (this.isDestroyed)
                     return;
-                const s = (0, i.isGoogleFontLoaded)(this.options.googleFont), t = (0, l.default)().cameraHelper.zoom, u = 1 / t;
+                const s = (0, i.isGoogleFontLoaded)(this.options.googleFont),
+                    t = (0, l.default)().cameraHelper.zoom,
+                    u = 1 / t;
                 let v = {
                     fontSize: `${ this.options.fontSize * t }px`,
                     align: 'center',
@@ -50,7 +62,8 @@ c.register('.....', function (d, e) {
             }), (0, g.default)(this, 'setFontSize', () => {
                 const s = this.neededScale;
                 this.text.view.scale = s;
-                const t = this.options.fontSize * (0, l.default)().cameraHelper.zoom, u = (0, m.TextPadding)();
+                const t = this.options.fontSize * (0, l.default)().cameraHelper.zoom,
+                    u = (0, m.TextPadding)();
                 this.text.view.setPadding(u, u, u, u), this.text.view.setFontSize(t);
             }), (0, g.default)(this, 'setStroke', () => {
                 if (this.options.strokeThickness && this.options.strokeColor) {
@@ -77,7 +90,11 @@ c.register('.....', function (d, e) {
                     return;
                 if (this.visualEditing.uses())
                     return;
-                const s = (0, p.FetchOptionSchemaProperty)(this, 'fontSize'), t = this.getWidth() * s.min / this.options.fontSize, u = this.getWidth() * s.max / this.options.fontSize, v = this.getHeight() * s.min / this.options.fontSize, w = this.getHeight() * s.max / this.options.fontSize;
+                const s = (0, p.FetchOptionSchemaProperty)(this, 'fontSize'),
+                    t = this.getWidth() * s.min / this.options.fontSize,
+                    u = this.getWidth() * s.max / this.options.fontSize,
+                    v = this.getHeight() * s.min / this.options.fontSize,
+                    w = this.getHeight() * s.max / this.options.fontSize;
                 this.visualEditing.add.box({
                     width: 2 * this.getWidth(),
                     height: this.getHeight(),
@@ -97,28 +114,31 @@ c.register('.....', function (d, e) {
         }
     }
     var _r = q;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'isGoogleFontLoaded', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function() {
         return _h;
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _i;
     });
     var f = c('.....');
-    const g = [], _h = i => g.includes(i);
+    const g = [],
+        _h = i => g.includes(i);
     var _i = j => {
         const {
             familyName: k,
             onLoad: l
         } = j;
         g.includes(k) ? l && l() : b(f).load({
-            google: { families: [`${ k }:400,700`] },
+            google: {
+                families: [`${ k }:400,700`]
+            },
             fontactive: m => {
                 g.includes(m) || g.push(m), k === m && l && l();
             }
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _f;
     });
     var _f = {
@@ -133,18 +153,22 @@ c.register('.....', function (d, e) {
             }
         }
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'TextPadding', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'TextPadding', function() {
         return _f;
     });
     const _f = () => 4;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'ReplaceVisualEditingPreview', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'ReplaceVisualEditingPreview', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     const _j = (k, l, m) => {
-        const n = (0, i.FetchVisualEditingPreview)(), o = (0, h.FetchCurrentlyEditedDevice)();
+        const n = (0, i.FetchVisualEditingPreview)(),
+            o = (0, h.FetchCurrentlyEditedDevice)();
         if (!o || !n)
             return;
         const p = o.layers.isOnNaturalDepth() ? void 0 : l + o.layers.getDepthShift();
@@ -165,16 +189,17 @@ c.register('.....', function (d, e) {
             state: n.deviceOption.defaultState
         });
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     var _h = i => {
         (0, f.default)().worldManager.devices.getDeviceById(i.id) && (0, g.default)(i);
     };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'FetchOptionSchemaProperty', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'FetchOptionSchemaProperty', function() {
         return _f;
     });
     const _f = (g, h) => {

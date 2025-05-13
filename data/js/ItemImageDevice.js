@@ -1,6 +1,7 @@
 function a(b) {
     return b && b.__esModule ? b.default : b;
 }
+
 function b(c, d, e, f) {
     Object.defineProperty(c, d, {
         get: e,
@@ -10,19 +11,32 @@ function b(c, d, e, f) {
     });
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), b(d.exports, 'default', function () {
+    }), b(d.exports, 'default', function() {
         return _s;
     });
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....'), m = c('.....'), n = c('.....'), o = c('.....'), p = c('.....'), q = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....'),
+        m = c('.....'),
+        n = c('.....'),
+        o = c('.....'),
+        p = c('.....'),
+        q = c('.....');
     class r extends j.default {
         constructor(s) {
             super(s), (0, g.default)(this, 'createVisuals', () => {
-                const t = { ...o.UnknownItemAsset }, u = (0, n.default)(this.options.itemId);
+                const t = {
+                        ...o.UnknownItemAsset
+                    },
+                    u = (0, n.default)(this.options.itemId);
                 u && (t.imageId = u.previewImage, t.imageUrl = u.previewImage), this.part = this.parts.add.sprite({
                     ...t,
                     onReady: v => {
@@ -65,19 +79,23 @@ c.register('.....', function (d, e) {
         }
     }
     var _s = r;
-}), c.register('.....', function (d, e) {
+}), c.register('.....', function(d, e) {
     let f;
     var g;
-    b(d.exports, 'OutlineSizeOption', function () {
+    b(d.exports, 'OutlineSizeOption', function() {
         return f;
     }), (g = f || (f = {})).automatic = 'automatic', g.custom = 'custom';
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'ReplaceVisualEditingPreview', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'ReplaceVisualEditingPreview', function() {
         return _j;
     });
-    var f = c('.....'), g = c('.....'), h = c('.....'), i = c('.....');
+    var f = c('.....'),
+        g = c('.....'),
+        h = c('.....'),
+        i = c('.....');
     const _j = (k, l, m) => {
-        const n = (0, i.FetchVisualEditingPreview)(), o = (0, h.FetchCurrentlyEditedDevice)();
+        const n = (0, i.FetchVisualEditingPreview)(),
+            o = (0, h.FetchCurrentlyEditedDevice)();
         if (!o || !n)
             return;
         const p = o.layers.isOnNaturalDepth() ? void 0 : l + o.layers.getDepthShift();
@@ -98,16 +116,17 @@ c.register('.....', function (d, e) {
             state: n.deviceOption.defaultState
         });
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'default', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'default', function() {
         return _h;
     });
-    var f = c('.....'), g = c('.....');
+    var f = c('.....'),
+        g = c('.....');
     var _h = i => {
         (0, f.default)().worldManager.devices.getDeviceById(i.id) && (0, g.default)(i);
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'FetchOptionSchemaProperty', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'FetchOptionSchemaProperty', function() {
         return _f;
     });
     const _f = (g, h) => {
@@ -119,32 +138,38 @@ c.register('.....', function (d, e) {
             step: null === (k = null == l ? void 0 : l.option.props) || void 0 === k ? void 0 : k.step
         };
     };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'BaseAsset', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'BaseAsset', function() {
         return _g;
-    }), b(d.exports, 'UnknownItemAsset', function () {
+    }), b(d.exports, 'UnknownItemAsset', function() {
         return _h;
     });
     var f = c('.....');
     const _g = {
             imageId: (0, f.default)('devices/item_granter/base.png'),
             imageUrl: (0, f.default)('devices/item_granter/base.png')
-        }, _h = {
+        },
+        _h = {
             imageId: '__UNKNOWN_ITEM',
             imageUrl: (0, f.default)('devices/item_granter/question-mark-2.png')
         };
-}), c.register('.....', function (d, e) {
-    b(d.exports, 'AddOutline', function () {
+}), c.register('.....', function(d, e) {
+    b(d.exports, 'AddOutline', function() {
         return _g;
     });
     var f = c('.....');
     const _g = h => {
         if (!h.view || !h.view.active)
             return;
-        const i = { thickness: 2 }, j = h.options ? {
+        const i = {
+                thickness: 2
+            },
+            j = h.options ? {
                 ...i,
                 ...h.options
-            } : { ...i };
+            } : {
+                ...i
+            };
         (0, f.default)().plugins.get('rexOutlinePipeline').add(h.view, j);
     };
 });

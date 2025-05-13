@@ -7,18 +7,27 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _p;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....');
     const m = n => {
-            (0, l.default)().plugins.get('rexGrayScalePipeline').add(n, { intensity: 1 });
-        }, n = o => {
+            (0, l.default)().plugins.get('rexGrayScalePipeline').add(n, {
+                intensity: 1
+            });
+        },
+        n = o => {
             (0, l.default)().plugins.get('rexGrayScalePipeline').remove(o);
         };
     class o extends h.default {
@@ -46,23 +55,24 @@ b.register('.....', function (c, d) {
         }
     }
     var _p = o;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'UpAsset', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'UpAsset', function() {
         return _f;
-    }), a(c.exports, 'DownAsset', function () {
+    }), a(c.exports, 'DownAsset', function() {
         return _g;
     });
     var e = b('.....');
     const _f = {
             imageId: (0, e.default)('devices/trigger/trigger_up.png'),
             imageUrl: (0, e.default)('devices/trigger/trigger_up.png')
-        }, _g = {
+        },
+        _g = {
             imageId: (0, e.default)('devices/trigger/trigger_down.png'),
             imageUrl: (0, e.default)('devices/trigger/trigger_down.png')
         };
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
-    a(c.exports, 'Messages', function () {
+    a(c.exports, 'Messages', function() {
         return e;
     }), (e || (e = {})).steppedOn = 'steppedOn';
 });

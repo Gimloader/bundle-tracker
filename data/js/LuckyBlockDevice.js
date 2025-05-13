@@ -7,15 +7,28 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _w;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....'),
+        r = b('.....'),
+        s = b('.....');
     let t;
     var u;
     (u = t || (t = {})).idleActive = 'idle-active', u.idleInactive = 'idle-inactive', u.explode = 'explode-short', u.reactivate = 'reactivate';
@@ -43,7 +56,8 @@ b.register('.....', function (c, d) {
             }), (0, f.default)(this, 'onStateChange', x => {
                 'active' === x && (this.state.active ? this.activate() : this.deactivate()), 'charged' === x && !1 === this.prevState.charged && !0 === this.state.charged && this.recharge(), 'useCounter' === x && this.state.useCounter > 0 && this.use();
             }), (0, f.default)(this, 'setupView', () => {
-                const x = m.LuckyBlockDeviceConsts.boundingBox.width, y = m.LuckyBlockDeviceConsts.boundingBox.height;
+                const x = m.LuckyBlockDeviceConsts.boundingBox.width,
+                    y = m.LuckyBlockDeviceConsts.boundingBox.height;
                 this.spine = this.parts.add.spine({
                     ...h.SpineAsset,
                     spineViewId: this.id,
@@ -84,7 +98,9 @@ b.register('.....', function (c, d) {
             }), (0, f.default)(this, 'setupVisualEditing', () => {
                 if ((0, j.InGamePhase)() || (0, k.isPublishedVersion)())
                     return;
-                const x = (0, l.FetchOptionSchemaProperty)(this, 'scale'), y = m.LuckyBlockDeviceConsts.boundingBox.width, z = m.LuckyBlockDeviceConsts.boundingBox.height;
+                const x = (0, l.FetchOptionSchemaProperty)(this, 'scale'),
+                    y = m.LuckyBlockDeviceConsts.boundingBox.width,
+                    z = m.LuckyBlockDeviceConsts.boundingBox.height;
                 this.visualEditing.add.box({
                     keepRatio: !0,
                     rotable: !1,
@@ -95,15 +111,17 @@ b.register('.....', function (c, d) {
                     minHeight: z * x.min,
                     maxHeight: z * x.max,
                     onChange: A => {
-                        (0, n.ReplaceVisualEditingPreview)(A.x, A.y, { scale: A.width / y });
+                        (0, n.ReplaceVisualEditingPreview)(A.x, A.y, {
+                            scale: A.width / y
+                        });
                     }
                 });
             }), this.layers.setDefaultLayer(i.default.DepthSortedCharactersAndDevices), this.setupView(), this.setupShadow(), this.setupCollider(), this.setupVisualEditing(), this.setupInViewCallbacks(), this.cull.setMargin(50);
         }
     }
     var _w = v;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'SpineAsset', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'SpineAsset', function() {
         return _f;
     });
     var e = b('.....');
@@ -111,8 +129,8 @@ b.register('.....', function (c, d) {
         atlasUrl: (0, e.default)('devices/lucky_block/spine/luckyBlock.atlas'),
         jsonUrl: (0, e.default)('devices/lucky_block/spine/luckyBlock.json')
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
     const _e = (f, g) => {
@@ -124,8 +142,8 @@ b.register('.....', function (c, d) {
             step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'LuckyBlockDeviceConsts', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'LuckyBlockDeviceConsts', function() {
         return _e;
     });
     const _e = {
@@ -151,13 +169,17 @@ b.register('.....', function (c, d) {
             r2: 50
         }
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = (j, k, l) => {
-        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        const m = (0, h.FetchVisualEditingPreview)(),
+            n = (0, g.FetchCurrentlyEditedDevice)();
         if (!n || !m)
             return;
         const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
@@ -178,11 +200,12 @@ b.register('.....', function (c, d) {
             state: m.deviceOption.defaultState
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };

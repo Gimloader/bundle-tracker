@@ -7,15 +7,33 @@ function a(b, c, d, e) {
     });
 }
 var b = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-b.register('.....', function (c, d) {
+b.register('.....', function(c, d) {
     var e;
     e = c.exports, Object.defineProperty(e, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(c.exports, 'default', function () {
+    }), a(c.exports, 'default', function() {
         return _z;
     });
-    var f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....'), k = b('.....'), l = b('.....'), m = b('.....'), n = b('.....'), o = b('.....'), p = b('.....'), q = b('.....'), r = b('.....'), s = b('.....'), t = b('.....'), u = b('.....'), v = b('.....'), w = b('.....'), x = b('.....');
+    var f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....'),
+        k = b('.....'),
+        l = b('.....'),
+        m = b('.....'),
+        n = b('.....'),
+        o = b('.....'),
+        p = b('.....'),
+        q = b('.....'),
+        r = b('.....'),
+        s = b('.....'),
+        t = b('.....'),
+        u = b('.....'),
+        v = b('.....'),
+        w = b('.....'),
+        x = b('.....');
     class y extends g.default {
         constructor(z) {
             if (super(z), (0, f.default)(this, 'goingBackToBase', !1), (0, f.default)(this, 'idleRotation', 0), (0, f.default)(this, 'currentFlagX', 0), (0, f.default)(this, 'currentFlagY', 0), (0, f.default)(this, 'pickupShiftX', 0), (0, f.default)(this, 'pickupShiftY', 0), (0, f.default)(this, 'dropShiftY', 0), (0, f.default)(this, 'backScale', 1), (0, f.default)(this, 'backAlpha', 1), (0, f.default)(this, 'shadowAlpha', 0), (0, f.default)(this, 'shadowScale', 0), (0, f.default)(this, 'flipScale', 1), (0, f.default)(this, 'cumulTime', 1000 * Math.random()), (0, f.default)(this, 'onUpdate', A => {
@@ -34,7 +52,9 @@ b.register('.....', function (c, d) {
                         maxRadius: A.max,
                         rotable: !1,
                         onChange: B => {
-                            (0, x.ReplaceVisualEditingPreview)(B.x, B.y, { radius: B.radius });
+                            (0, x.ReplaceVisualEditingPreview)(B.x, B.y, {
+                                radius: B.radius
+                            });
                         }
                     });
                 }), (0, f.default)(this, 'isInBase', () => this.state.currentState === h.CurrentState.idle), this.cull.ignoreCulling(), this.flag = this.parts.add.sprite({
@@ -59,7 +79,9 @@ b.register('.....', function (c, d) {
                     onReady: A => {
                         A.view.setScale(0);
                     }
-                }), this.currentFlagX = this.x, this.currentFlagY = this.y, (0, j.InGamePhase)() && (this.zone = this.interactiveZones.add.circle({ r: m.Consts.InteractivityRadius }), this.interactiveZones.onInteraction = () => {
+                }), this.currentFlagX = this.x, this.currentFlagY = this.y, (0, j.InGamePhase)() && (this.zone = this.interactiveZones.add.circle({
+                    r: m.Consts.InteractivityRadius
+                }), this.interactiveZones.onInteraction = () => {
                     this.sendToServerDevice('interact');
                 }, (0, n.UpdateInteractiveInfo)(this), (0, o.UpdateZone)(this), this.state.currentState === h.CurrentState.carried ? (0, p.SetCarriedState)(this) : this.state.currentState === h.CurrentState.dropped && (0, q.SetDroppedState)(this)), this.options.useSafeZone) {
                 this.setupVisualEditing();
@@ -84,36 +106,38 @@ b.register('.....', function (c, d) {
         }
     }
     var _z = y;
-}), b.register('.....', function (c, d) {
+}), b.register('.....', function(c, d) {
     let e;
     var f;
     let g;
     var h;
-    a(c.exports, 'CurrentState', function () {
+    a(c.exports, 'CurrentState', function() {
         return g;
     }), (f = e || (e = {})).black = 'black', f.blue = 'blue', f.green = 'green', f.orange = 'orange', f.purple = 'purple', f.red = 'red', f.white = 'white', (h = g || (g = {})).idle = 'idle', h.carried = 'carried', h.dropped = 'dropped';
     g.idle;
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FlagPlatform', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FlagPlatform', function() {
         return _f;
-    }), a(c.exports, 'FlagShadow', function () {
+    }), a(c.exports, 'FlagShadow', function() {
         return _g;
-    }), a(c.exports, 'GetFlagAsset', function () {
+    }), a(c.exports, 'GetFlagAsset', function() {
         return _h;
     });
     var e = b('.....');
     const _f = {
             imageId: 'flag_platform',
             imageUrl: (0, e.default)('devices/flag/flag_platform.png')
-        }, _g = {
+        },
+        _g = {
             imageId: 'flag_shadow',
             imageUrl: (0, e.default)('devices/shadow/shadow_device.png')
-        }, _h = i => ({
+        },
+        _h = i => ({
             imageId: `flag_${ i }`,
             imageUrl: (0, e.default)(`devices/flag/flag_${ i }.png`)
         });
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'Consts', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'Consts', function() {
         return _e;
     });
     const _e = {
@@ -147,11 +171,15 @@ b.register('.....', function (c, d) {
             }
         }
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'UpdateInteractiveInfo', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'UpdateInteractiveInfo', function() {
         return _j;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....');
     const _j = k => {
         if ((0, f.InPreGamePhase)())
             return;
@@ -163,7 +191,9 @@ b.register('.....', function (c, d) {
                 topHeader: g.Consts.NoInteractiveSlotsHeader,
                 duration: 1
             });
-        const l = k.options.owningTeamId === (0, e.default)(), m = k.state.currentState === h.CurrentState.dropped, n = k.state.currentState === h.CurrentState.idle;
+        const l = k.options.owningTeamId === (0, e.default)(),
+            m = k.state.currentState === h.CurrentState.dropped,
+            n = k.state.currentState === h.CurrentState.idle;
         return l && m ? (k.interactiveZones.setForceDisabled(!1), void k.interactiveZones.setInfo({
             message: g.Consts.BackToBaseText,
             allowedToInteract: !0,
@@ -174,8 +204,8 @@ b.register('.....', function (c, d) {
             duration: 1
         }));
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'UpdateZone', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'UpdateZone', function() {
         return _f;
     });
     var e = b('.....');
@@ -187,18 +217,25 @@ b.register('.....', function (c, d) {
             y: g.y
         };
         g.state.currentState === e.CurrentState.dropped && (h.x = g.state.x, h.y = g.state.y);
-        const i = h.x - g.x, j = h.y - g.y;
+        const i = h.x - g.x,
+            j = h.y - g.y;
         g.zone.x = i, g.zone.y = j;
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'OnPickup', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'OnPickup', function() {
         return _k;
-    }), a(c.exports, 'SetCarriedState', function () {
+    }), a(c.exports, 'SetCarriedState', function() {
         return _l;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....'), j = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....'),
+        j = b('.....');
     const _k = l => {
-            const m = (0, e.default)(l.state.characterId), n = (0, g.default)();
+            const m = (0, e.default)(l.state.characterId),
+                n = (0, g.default)();
             l.state.characterId === n && (0, i.playSound)({
                 path: (0, f.default)('sounds/core/collectItem.mp3'),
                 volume: (0, h.getVolume)({
@@ -217,16 +254,21 @@ b.register('.....', function (c, d) {
                 shadowScale: 0,
                 duration: 100
             }));
-        }, _l = m => {
+        },
+        _l = m => {
             m.pickupShiftX = 0, m.pickupShiftY = j.Consts.FlagDockedShift;
         };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'OnDrop', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'OnDrop', function() {
         return _j;
-    }), a(c.exports, 'SetDroppedState', function () {
+    }), a(c.exports, 'SetDroppedState', function() {
         return _k;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....'), i = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....'),
+        i = b('.....');
     const _j = k => {
             k.lastCharacterIdToHoldFlag === (0, f.default)() && (0, h.playSound)({
                 path: (0, e.default)('sounds/core/dropItem.mp3'),
@@ -259,11 +301,12 @@ b.register('.....', function (c, d) {
                     });
                 }
             });
-        }, _k = l => {
+        },
+        _k = l => {
             l.flagShadow.view.x = l.state.x, l.flagShadow.view.y = l.state.y + i.Consts.FlagDropShift, l.pickupShiftY = i.Consts.FlagDockedShift, l.currentFlagX = l.state.x, l.currentFlagY = l.state.y, l.shadowAlpha = 0.5, l.shadowScale = 0.25, l.dropShiftY = 0;
         };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'OnBackToBase', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'OnBackToBase', function() {
         return _e;
     });
     const _e = f => {
@@ -297,19 +340,20 @@ b.register('.....', function (c, d) {
             }
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'UpdateCarriedFlag', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'UpdateCarriedFlag', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     const _g = h => {
         if (h.state.currentState !== f.CurrentState.carried)
             return;
         const i = (0, e.default)(h.state.characterId);
         i && (h.currentFlagX = i.body.x, h.currentFlagY = i.body.y, h.flipScale = i.flip.isFlipped ? -1 : 1);
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'FetchOptionSchemaProperty', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'FetchOptionSchemaProperty', function() {
         return _e;
     });
     const _e = (f, g) => {
@@ -321,13 +365,17 @@ b.register('.....', function (c, d) {
             step: null === (j = null == k ? void 0 : k.option.props) || void 0 === j ? void 0 : j.step
         };
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'ReplaceVisualEditingPreview', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'ReplaceVisualEditingPreview', function() {
         return _i;
     });
-    var e = b('.....'), f = b('.....'), g = b('.....'), h = b('.....');
+    var e = b('.....'),
+        f = b('.....'),
+        g = b('.....'),
+        h = b('.....');
     const _i = (j, k, l) => {
-        const m = (0, h.FetchVisualEditingPreview)(), n = (0, g.FetchCurrentlyEditedDevice)();
+        const m = (0, h.FetchVisualEditingPreview)(),
+            n = (0, g.FetchCurrentlyEditedDevice)();
         if (!n || !m)
             return;
         const o = n.layers.isOnNaturalDepth() ? void 0 : k + n.layers.getDepthShift();
@@ -348,11 +396,12 @@ b.register('.....', function (c, d) {
             state: m.deviceOption.defaultState
         });
     };
-}), b.register('.....', function (c, d) {
-    a(c.exports, 'default', function () {
+}), b.register('.....', function(c, d) {
+    a(c.exports, 'default', function() {
         return _g;
     });
-    var e = b('.....'), f = b('.....');
+    var e = b('.....'),
+        f = b('.....');
     var _g = h => {
         (0, e.default)().worldManager.devices.getDeviceById(h.id) && (0, f.default)(h);
     };

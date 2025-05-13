@@ -6,19 +6,25 @@ function a(b, c, d, e) {
         configurable: !0
     });
 }
+
 function b(c) {
     return c && c.__esModule ? c.default : c;
 }
 var c = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-c.register('.....', function (d, e) {
+c.register('.....', function(d, e) {
     var f;
     f = d.exports, Object.defineProperty(f, '__esModule', {
         value: !0,
         configurable: !0
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _n;
     });
-    var g = c('.....'), h = c('.....'), i = c('.....'), j = c('.....'), k = c('.....'), l = c('.....');
+    var g = c('.....'),
+        h = c('.....'),
+        i = c('.....'),
+        j = c('.....'),
+        k = c('.....'),
+        l = c('.....');
     class m extends h.default {
         constructor(n) {
             if (super(n), (0, g.default)(this, 'textScale', 1), (0, g.default)(this, 'onStateChange', o => {
@@ -39,7 +45,9 @@ c.register('.....', function (d, e) {
             const q = (null !== (p = null !== (o = this.state.counter) && void 0 !== o ? o : this.options.startingValue) && void 0 !== p ? p : 0) + '';
             this.text = this.parts.add.text({
                 y: 2,
-                textStyle: { fontFamily: 'Fugaz One' },
+                textStyle: {
+                    fontFamily: 'Fugaz One'
+                },
                 text: q
             }), this.text.view.alpha = 0, (0, j.default)({
                 familyName: 'Fugaz One',
@@ -50,35 +58,39 @@ c.register('.....', function (d, e) {
         }
     }
     var _n = m;
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'FrameAsset', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'FrameAsset', function() {
         return _g;
-    }), a(d.exports, 'BackgroundAsset', function () {
+    }), a(d.exports, 'BackgroundAsset', function() {
         return _h;
     });
     var f = c('.....');
     const _g = {
             imageId: (0, f.default)('devices/counter/frame.png'),
             imageUrl: (0, f.default)('devices/counter/frame.png')
-        }, _h = {
+        },
+        _h = {
             imageId: (0, f.default)('devices/counter/background.png'),
             imageUrl: (0, f.default)('devices/counter/background.png')
         };
-}), c.register('.....', function (d, e) {
-    a(d.exports, 'isGoogleFontLoaded', function () {
+}), c.register('.....', function(d, e) {
+    a(d.exports, 'isGoogleFontLoaded', function() {
         return _h;
-    }), a(d.exports, 'default', function () {
+    }), a(d.exports, 'default', function() {
         return _i;
     });
     var f = c('.....');
-    const g = [], _h = i => g.includes(i);
+    const g = [],
+        _h = i => g.includes(i);
     var _i = j => {
         const {
             familyName: k,
             onLoad: l
         } = j;
         g.includes(k) ? l && l() : b(f).load({
-            google: { families: [`${ k }:400,700`] },
+            google: {
+                families: [`${ k }:400,700`]
+            },
             fontactive: m => {
                 g.includes(m) || g.push(m), k === m && l && l();
             }
