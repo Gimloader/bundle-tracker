@@ -203,7 +203,7 @@ c.register('.....', function (d, e) {
         constructor(j) {
             (0, f.default)(this, 'skinChanged', !1), (0, f.default)(this, 'availableAnimations', []), (0, f.default)(this, 'currentBodyAnimation', g.CharacterBodyAnimationState.rest), (0, f.default)(this, 'bodyAnimationLocked', !1), (0, f.default)(this, 'bodyAnimationStartedAt', 0), (0, f.default)(this, 'currentEyeAnimation', g.CharacterEyeAnimationState.idle), (0, f.default)(this, 'lastGroundedAnimationAt', 0), (0, f.default)(this, 'setupAnimations', () => {
                 const k = this.character.spine;
-                this.availableAnimations = k.skeleton.data.animations.map(l => l.name), k.animationStateData.defaultMix = g.default.body.transition.defaultDuration, k.animationStateData.setMix(g.default.body.animationNames.jumpMiddleIdle, g.default.body.animationNames.jumpDownIdle, g.default.body.transition.jumpFallingDuration), this.playBodyAnimation(this.currentBodyAnimation), this.playEyeAnimation(this.currentEyeAnimation), this.availableAnimations.includes(`skins-${ this.character.skinId }-common`) && this.character.spine.animationState.setAnimation(h.ANIMATION_TRACKS.COMMON, `skins-${ this.character.skinId }-common`, !0), this.character.spine.animationState.addListener({
+                this.availableAnimations = k.skeleton.data.animations.map(l => l.name), k.animationStateData.defaultMix = g.default.body.transition.defaultDuration, k.animationStateData.setMix(g.default.body.animationNames.jumpMiddleIdle, g.default.body.animationNames.jumpDownIdle, g.default.body.transition.jumpFallingDuration), k.animationStateData.setMix(g.default.eyes.animationNames.blink, g.default.eyes.animationNames.idle, 0), k.animationStateData.setMix(g.default.eyes.animationNames.idle, g.default.eyes.animationNames.blink, 0), this.playBodyAnimation(this.currentBodyAnimation), this.playEyeAnimation(this.currentEyeAnimation), this.availableAnimations.includes(`skins-${ this.character.skinId }-common`) && this.character.spine.animationState.setAnimation(h.ANIMATION_TRACKS.COMMON, `skins-${ this.character.skinId }-common`, !0), this.character.spine.animationState.addListener({
                     complete: l => {
                         this.onAnimationComplete(l);
                     }
@@ -223,7 +223,7 @@ c.register('.....', function (d, e) {
                 const q = !!(null === (p = g.default.animationLocks) || void 0 === p ? void 0 : p[k]);
                 this.bodyAnimationLocked = q, this.bodyAnimationStartedAt = Date.now(), k === g.CharacterBodyAnimationState.rest ? this.startBlinkAnimation() : this.stopBlinkAnimation(), this.currentBodyAnimation = k, this.character.spine.animationState.setAnimation(h.ANIMATION_TRACKS.BODY, g.default.body.animationNames[k], g.default.bodyLoopedAnimations.includes(k)), this.playBodySupplementalAnimation(k);
             }), (0, f.default)(this, 'playEyeAnimation', k => {
-                (k !== this.currentEyeAnimation || this.skinChanged) && (this.currentEyeAnimation = k, this.character.spine.animationStateData.defaultMix = 0.2, this.character.spine.animationState.setAnimation(h.ANIMATION_TRACKS.EYES, g.default.eyes.animationNames[k], !0));
+                (k !== this.currentEyeAnimation || this.skinChanged) && (this.currentEyeAnimation = k, this.character.spine.animationState.setAnimation(h.ANIMATION_TRACKS.EYES, g.default.eyes.animationNames[k], !0));
             }), (0, f.default)(this, 'playAnimationOrClearTrack', (k, l) => {
                 let m = !1;
                 for (const n of k)

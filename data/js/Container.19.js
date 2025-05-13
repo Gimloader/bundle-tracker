@@ -779,10 +779,10 @@ c.register('.....', function (d, e) {
                     const s = [];
                     q.forEach(t => {
                         t.items.forEach(u => {
-                            s.includes(u._id) || (r.push({
+                            u.isPremiumExperience && (s.includes(u._id) || (r.push({
                                 ...u,
                                 isPremiumExperience: !0
-                            }), s.push(u._id));
+                            }), s.push(u._id)));
                         });
                     }), Object.keys(m).forEach(t => {
                         const u = m[t], v = r.find(w => w.name === t);
