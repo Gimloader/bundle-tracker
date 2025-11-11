@@ -1,9 +1,9 @@
 import { parse } from "node-html-parser";
 import { join } from "path";
-import fs from 'fs';
-import { formatCss, formatJs } from "./format";
+import fsp from 'node:fs/promises';
 import cliProgress from "cli-progress";
 import { parseArgs } from "util";
+import beautify from "js-beautify";
 import { pushChanges } from "./push";
 
 const { values: { force, push }} = parseArgs({
@@ -15,9 +15,16 @@ const { values: { force, push }} = parseArgs({
 });
 
 const base = "https://www.gimkit.com";
+const assets = base + "/assets/";
 const data = join(__dirname, "../", "data");
 
+const bar = new cliProgress.SingleBar({
+    format: '{bar} | {status}',
+}, cliProgress.Presets.shades_classic);
+
 // get the index script
+bar.start(0, 0, { status: "Fetching html" });
+
 const res = await fetch(base + '/join');
 const text = await res.text();
 const root = parse(text);
@@ -26,106 +33,83 @@ const script = root.querySelector(`script[type="module"]`);
 if(!script) throw new Error("Failed to find index script");
 
 // get the module registry
-const indexUrl = script.getAttribute("src");
-
-interface LastRun {
-    lastIndex: string;
-    urls: Record<string, string>;
-}
+const indexPath = script.getAttribute("src");
+const indexUrl = indexPath.split("/").pop();
 
 // check that the url has changed
 const lastRunFile = Bun.file(join(data, "lastRun.json"));
-let lastRun: LastRun = { lastIndex: "", urls: {} };
+let lastIndex = "";
 if(await lastRunFile.exists()) {
-    lastRun = await lastRunFile.json();
+    let lastRun = await lastRunFile.json();
+    lastIndex = lastRun.lastIndex;
 }
 
-if(!force && lastRun.lastIndex === indexUrl) {
+if(!force && lastIndex === indexUrl) {
+    bar.stop();
     console.log("No changes since last run");
     process.exit();
 }
 
-lastRun.lastIndex = indexUrl;
+lastIndex = indexUrl;
 
-const indexRes = await fetch(base + indexUrl);
-const indexFile = await indexRes.text();
+// Clear the js directory
+bar.update(0, { status: "Clearing directory" });
 
-const registryRegex = /register\(JSON.parse\('(.*?)'/g;
-const registryJson = registryRegex.exec(indexFile)?.[1];
-if(!registryJson) throw new Error("Failed to get module registry");
+const jsPath = join(data, "js");
+await fsp.rm(jsPath, { recursive: true, force: true });
+await fsp.mkdir(jsPath, { recursive: true });
 
-const registry = JSON.parse(registryJson);
+// Fetch the index file and get the urls of all the assets
+bar.update(0, { status: "Fetching index file" });
 
-// remove the existing files
-const extensions = ["js", "css"]; 
+const indexRes = await fetch(assets + indexUrl);
+const index = await indexRes.text();
+await fsp.writeFile(join(jsPath, "_index.js"), format(index));
 
-for(const ext of extensions) {
-    const folder = join(data, ext);
+const start = index.indexOf("=[") + 1;
+const end = index.indexOf("]", start) + 1;
+const urls: string[] = JSON.parse(index.slice(start, end));
 
-    if(fs.existsSync(folder)) fs.rmSync(folder, { recursive: true });
-    fs.mkdirSync(folder);
+const nameCount: Record<string, number> = {};
+for(let url of urls) {
+    const name = url.split("-").shift();
+
+    nameCount[name] ??= 0;
+    nameCount[name]++;
 }
 
-await Bun.file(join(data, "js", "index.js")).write(formatJs(indexFile));
+// Download all the assets
+bar.start(urls.length, 0, { status: "Downloading assets" });
+const nameCountup: Record<string, number> = {};
 
-let groups: { name: string, ext: string, urls: { index: number, url: string }[] }[] = [];
-let numFiles = 0;
+let urlMap: Record<string, string> = {};
+for(let i = 0; i < urls.length; i++) {
+    const url = urls[i].split("/").pop();
+    let name = url.split("-").shift();
 
-// group the files
-for(const id in registry) {
-    const parts = registry[id].split(".");
+    if(nameCount[name] > 1) {
+        nameCountup[name] ??= 0;
+        nameCountup[name]++;
 
-    // skip the index, we already have that
-    if(parts[0] === "index" && parts[2] === "js") continue;
-    if(!extensions.includes(parts[2])) continue;
-
-    let group = groups.find(g => g.name === parts[0] && g.ext === parts[2]);
-    if(!group) {
-        group = { name: parts[0], ext: parts[2], urls: [] };
-        groups.push(group);
+        name = `${name}-${nameCountup[name]}`;
     }
+
+    name += ".js";
+    urlMap[name] = url;
     
-    // This hopefully won't move, although there's no way to know except to wait and see
-    const index = indexFile.indexOf(`resolve("${id}")`);
-    group.urls.push({ index, url: registry[id] });
-    numFiles++;
+    bar.increment(1, { status: url });
+
+    const res = await fetch(assets + url);
+    const text = await res.text();
+
+    await fsp.writeFile(join(jsPath, name), format(text));
 }
 
-const bar = new cliProgress.Bar({
-    hideCursor: true,
-    format: '{bar} | {active} | {value}/{total}',
-}, cliProgress.Presets.shades_grey);
-bar.start(numFiles, 0, { active: "Loading..."});
-
-// download and write the files
-for(const group of groups) {
-    group.urls.sort((a, b) => a.index - b.index);
-
-    for(let i = 0; i < group.urls.length; i++) {
-        const url = group.urls[i].url;
-
-        bar.increment(1, { active: url });
-
-        const res = await fetch(base + "/" + url);
-        let text = await res.text();
-
-        let name: string;
-        if(group.urls.length === 1) {
-            name = `${group.name}.${group.ext}`;
-        } else {
-            name = `${group.name}.${i + 1}.${group.ext}`;
-        }
-
-        if(group.ext === "js") text = formatJs(text);
-        else text = formatCss(text);
-
-        lastRun.urls[`${group.ext}/${name}`] = url;
-        await Bun.file(join(data, group.ext, name)).write(text);
-    }
-}
-
-lastRunFile.write(JSON.stringify(lastRun, null, 4));
 bar.stop();
+lastRunFile.write(JSON.stringify({ lastIndex, urls: urlMap }, null, 4));
 
-// push the changes if needed
-if(push) await pushChanges();
+if(push) pushChanges();
+
+function format(js: string) {
+    return beautify.js(js);
+}

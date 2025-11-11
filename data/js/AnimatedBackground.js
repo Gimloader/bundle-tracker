@@ -1,47 +1,19 @@
-var a = ('undefined' != typeof globalThis ? globalThis : 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : 'undefined' != typeof global ? global : {}).parcelRequire388b;
-a.register('.....', function(b, c) {
-    var d, e, f, g, h;
-    d = b.exports, Object.defineProperty(d, '__esModule', {
-        value: !0,
-        configurable: !0
-    }), e = b.exports, f = 'default', g = function() {
-        return _n;
-    }, Object.defineProperty(e, f, {
-        get: g,
-        set: h,
-        enumerable: !0,
-        configurable: !0
-    });
-    var i = a('.....');
-    a('.....');
-    var j = a('.....');
-    let k, l, m = n => n;
-    var _n = o => (0, i.jsxs)(_o, {
-        children: [
-            (0, i.jsx)('div', {
-                className: 'area',
-                children: (0, i.jsxs)('ul', {
-                    className: 'circles',
-                    children: [
-                        (0, i.jsx)('li', {}),
-                        (0, i.jsx)('li', {}),
-                        (0, i.jsx)('li', {}),
-                        (0, i.jsx)('li', {}),
-                        (0, i.jsx)('li', {}),
-                        (0, i.jsx)('li', {}),
-                        (0, i.jsx)('li', {}),
-                        (0, i.jsx)('li', {}),
-                        (0, i.jsx)('li', {}),
-                        (0, i.jsx)('li', {})
-                    ]
-                })
-            }),
-            (0, i.jsx)(_p, {
-                children: o.children
+import {
+    j as i,
+    d as t
+} from "./index-ku7LFjMf.js";
+const s = e => i.jsxs(a, {
+        children: [i.jsx(l, {
+            children: e.children
+        }), i.jsx("div", {
+            className: "area",
+            children: i.jsxs("ul", {
+                className: "circles",
+                children: [i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {})]
             })
-        ]
-    });
-    const _o = j.default.div(k || (k = m`
+        })]
+    }),
+    a = t.div`
   flex: 1;
   height: 100%;
   width: 100%;
@@ -50,10 +22,13 @@ a.register('.....', function(b, c) {
   position: relative;
 
   .area {
-    background: #3d109b;
-    background: linear-gradient(304deg, #a98cff, #3d109b);
+    background: #4527a0;
+    background: linear-gradient(304deg, #4527a0, #2d1a68);
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .circles {
@@ -63,6 +38,7 @@ a.register('.....', function(b, c) {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    transform: rotate(180deg); // Make the circles go the other way
   }
 
   .circles li {
@@ -164,12 +140,13 @@ a.register('.....', function(b, c) {
       border-radius: 50%;
     }
   }
-`)),
-        _p = j.default.div.attrs({
-            className: 'maxAll'
-        })(l || (l = m`
-  position: absolute;
-  top: 0;
-  left: 0;
-`));
-});
+`,
+    l = t.div.attrs({
+        className: "flex-column"
+    })`
+  z-index: 1;
+  flex: 1;
+`;
+export {
+    s as A
+};
