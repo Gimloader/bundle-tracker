@@ -73,7 +73,7 @@ const urls: string[] = JSON.parse(index.slice(start, end))
 
 const nameCount: Record<string, number> = {};
 for(let url of urls) {
-    const name = url.split("-").shift();
+    const name = getName(url);
 
     nameCount[name] ??= 0;
     nameCount[name]++;
@@ -86,7 +86,7 @@ const nameCountup: Record<string, number> = {};
 let urlMap: Record<string, string> = {};
 for(let i = 0; i < urls.length; i++) {
     const url = urls[i];
-    let name = url.split("-").shift()
+    let name = getName(url);
 
     if(nameCount[name] > 1) {
         nameCountup[name] ??= 0;
@@ -113,4 +113,9 @@ if(push) pushChanges();
 
 function format(js: string) {
     return beautify.js(js);
+}
+
+function getName(url: string) {
+    url = url.slice(0, -12); // Remove hash
+    return url;
 }
