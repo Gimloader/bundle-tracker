@@ -10,20 +10,20 @@ import {
     e as y,
     c as w,
     r as p,
-    aY as g
-} from "./index-ku7LFjMf.js";
+    aZ as g
+} from "./index-JueF_e_O.js";
 import {
     Q as B
-} from "./Question-D2jJQJf4.js";
+} from "./Question-DFBLELga.js";
 import {
     T as h
-} from "./index-mg0IShzL.js";
+} from "./index-DwJM4HGs.js";
 import {
     U as $
-} from "./App-rSwKrHRH.js";
+} from "./App-BKUv5aDr.js";
 import {
     R as D
-} from "./DownloadOutlined-DOz1NTxb.js";
+} from "./DownloadOutlined-BSnMj16b.js";
 const a = {
         Red: "#d32f2f",
         Green: "#388e3c",
@@ -197,11 +197,11 @@ const a = {
   width: 100%;
   justify-content: space-between;
 `,
-    Y = n.div`
+    L = n.div`
   width: 100%;
 `,
-    L = e => t.jsxs(O, {
-        children: [t.jsx(Y, {
+    Y = e => t.jsxs(O, {
+        children: [t.jsx(L, {
             children: t.jsx(B, {
                 question: e.question
             })
@@ -211,7 +211,7 @@ const a = {
             accuracy: e.accuracy
         })]
     }),
-    J = n.div`
+    Z = n.div`
   display: flex;
   justify-content: space-around;
   min-height: max-content;
@@ -260,7 +260,7 @@ const a = {
             preventScroll: e.preventScroll,
             children: [t.jsx(R, {
                 title: o.name
-            }), t.jsxs(J, {
+            }), t.jsxs(Z, {
                 children: [t.jsx(m, {
                     header: "Correct",
                     content: o.correctQuestionIds.length,
@@ -286,7 +286,7 @@ const a = {
                     })
                 })
             }), t.jsx("div", {
-                children: u.sort((r, i) => r.resultData.accuracy > i.resultData.accuracy ? 1 : -1).map(r => t.jsx(L, {
+                children: u.sort((r, i) => r.resultData.accuracy > i.resultData.accuracy ? 1 : -1).map(r => t.jsx(Y, {
                     question: r.question,
                     correct: r.resultData.correct,
                     incorrect: r.resultData.incorrect,
@@ -296,5 +296,5 @@ const a = {
         })
     };
 export {
-    L as B, W as C, R as H, T as I, et as P, H as Q, a
+    Y as B, W as C, R as H, T as I, et as P, H as Q, a
 };

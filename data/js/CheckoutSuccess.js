@@ -1,13 +1,13 @@
 import {
-    ac as f,
-    a3 as c,
+    ae as f,
+    a6 as c,
     f as h,
     W as m,
     M as s,
     a as x,
     l as b,
-    $ as d,
-    a2 as v,
+    a2 as d,
+    a5 as v,
     t as S,
     V as k,
     r as w,
@@ -18,20 +18,20 @@ import {
     d as l,
     e as a,
     U
-} from "./index-ku7LFjMf.js";
+} from "./index-JueF_e_O.js";
 import {
     o as A
-} from "./mobxreact.esm-DMnKt9Bd.js";
+} from "./mobxreact.esm-Ws-CV3HT.js";
 import {
     s as i
-} from "./stores-Cs7iEaKV.js";
+} from "./stores-DAvb2mRE.js";
 import {
     N as u
-} from "./NavigateTo-DZfG1e6D.js";
+} from "./NavigateTo-B9Fkdix9.js";
 import {
     A as T
-} from "./TrackEvent-BWlLGH4d.js";
-import "./TrackPostHogEvent-VjbQag8Y.js";
+} from "./TrackEvent-C_GWthE7.js";
+import "./TrackPostHogEvent-BOHwnqir.js";
 const P = "An error ocurred on our end while upgrading your account. Please contact support.",
     C = t => {
         i.navigation.loadingTokenSubmit = !0;
@@ -80,7 +80,7 @@ const P = "An error ocurred on our end while upgrading your account. Please cont
             onError: p
         })
     },
-    H = A(() => {
+    I = A(() => {
         const t = k("session_id");
         w.useEffect(() => {
             if (y()) {
@@ -137,6 +137,6 @@ const P = "An error ocurred on our end while upgrading your account. Please cont
   color: ${a.Black};
 `;
 export {
-    H as
+    I as
     default
 };

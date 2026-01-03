@@ -1,13 +1,13 @@
 import {
     r as i,
-    aB as w,
+    aD as w,
     _ as x
-} from "./index-ku7LFjMf.js";
+} from "./index-JueF_e_O.js";
 import {
     w as C,
     c as D,
     a as N
-} from "./capitalize-DCcLEP2l.js";
+} from "./capitalize-DYAFKEJ7.js";
 var a = 44,
     z = function(e) {
         return {
@@ -126,10 +126,10 @@ var a = 44,
             strokeWidth: s
         })))
     });
-const B = C(z, {
+const F = C(z, {
     name: "MuiCircularProgress",
     flip: !1
 })(E);
 export {
-    B as C
+    F as C
 };

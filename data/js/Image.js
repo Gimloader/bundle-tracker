@@ -2,11 +2,11 @@ import {
     j as t,
     d as i,
     U as r,
-    i as a
-} from "./index-ku7LFjMf.js";
+    i as o
+} from "./index-JueF_e_O.js";
 import {
     b as c
-} from "./Centered-9EvZzm56.js";
+} from "./Centered-Cf2wQqVp.js";
 import {
     G as n
 } from "./GetAssetPath-D1U8ycN4.js";
@@ -17,9 +17,9 @@ import {
     C as l
 } from "./Names-DfDh6qGd.js";
 import {
-    S as m
-} from "./index-BxZP8ZJO.js";
-const u = e => t.jsxs(p, {
+    S as u
+} from "./index-Dx05C7sF.js";
+const m = e => t.jsxs(p, {
         children: [t.jsx(g, {
             children: t.jsx(x, {
                 src: n(`seasonTicket/${e.icon}.svg`)
@@ -107,17 +107,17 @@ const u = e => t.jsxs(p, {
         icon: "dog",
         title: "Play With Friends",
         description: "Host live games with up to 15 players!",
-        show: e => e ? a() : !0
+        show: e => e ? o() : !0
     }],
-    w = e => t.jsx(m, {
+    w = e => t.jsx(u, {
         direction: "vertical",
         size: 20,
         className: "maxWidth",
-        children: y.filter(s => s.show ? s.show(e.forSelf) : !0).map((s, o) => t.jsx(u, {
+        children: y.filter(s => s.show ? s.show(e.forSelf) : !0).map((s, a) => t.jsx(m, {
             ...s
-        }, "benefit" + o))
+        }, "benefit" + a))
     }),
-    N = "December 3rd",
+    N = "January 14th",
     I = n("stickers/season_1_2026.png");
 export {
     w as B, N as S, I as a

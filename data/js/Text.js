@@ -1,38 +1,38 @@
 import {
     r as f,
-    aB as $e,
+    aD as $e,
     _ as re,
     x as p,
-    bx as fn,
-    dg as St,
-    aK as dn,
-    bg as pn,
-    bI as Et,
-    bJ as hn,
+    by as fn,
+    dh as St,
+    aM as dn,
+    bh as pn,
+    bJ as Et,
+    bK as hn,
     j as M,
     d as _e,
-    ax as mn,
-    aw as gn,
+    az as mn,
+    ay as gn,
     m as vn,
-    aZ as yn,
+    a_ as yn,
     o as Q,
-    dM as bn,
-    b4 as X
-} from "./index-ku7LFjMf.js";
+    dN as bn,
+    b5 as X
+} from "./index-JueF_e_O.js";
 import {
     g as be
 } from "./getCloudinaryUrl-Drn97BLG.js";
 import {
     L as Ot
-} from "./LazyLatexRenderer--TRl8H8V.js";
+} from "./LazyLatexRenderer-QF7uKX2E.js";
 import {
     o as _n
-} from "./mobxreact.esm-DMnKt9Bd.js";
+} from "./mobxreact.esm-Ws-CV3HT.js";
 import {
     w as je,
     c as se,
     a as Ce
-} from "./capitalize-DCcLEP2l.js";
+} from "./capitalize-DYAFKEJ7.js";
 import {
     c as wn,
     s as xn,
@@ -42,13 +42,13 @@ import {
     d as Pt,
     e as ot,
     T as Mn
-} from "./Tooltip-CKIPjInD.js";
+} from "./Tooltip-vn9HqO7T.js";
 import {
     h as Ct
-} from "./howler-C3GU_6-T.js";
+} from "./howler-UOSvF1UN.js";
 import {
     _ as zt
-} from "./inheritsLoose-CctCxOfY.js";
+} from "./inheritsLoose-CU-hyjUj.js";
 var Sn = function(e) {
         return {
             root: {
@@ -89,7 +89,7 @@ var Sn = function(e) {
             }
         }
     },
-    It = f.forwardRef(function(e, r) {
+    Dt = f.forwardRef(function(e, r) {
         var n = e.children,
             o = e.classes,
             i = e.className,
@@ -101,8 +101,8 @@ var Sn = function(e) {
             h = u === void 0 ? "medium" : u,
             d = e.htmlColor,
             g = e.titleAccess,
-            I = e.viewBox,
-            S = I === void 0 ? "0 0 24 24" : I,
+            D = e.viewBox,
+            S = D === void 0 ? "0 0 24 24" : D,
             P = $e(e, ["children", "classes", "className", "color", "component", "fontSize", "htmlColor", "titleAccess", "viewBox"]);
         return f.createElement(c, re({
             className: se(o.root, i, a !== "inherit" && o["color".concat(Ce(a))], h !== "default" && h !== "medium" && o["fontSize".concat(Ce(h))]),
@@ -114,10 +114,10 @@ var Sn = function(e) {
             ref: r
         }, P), n, g ? f.createElement("title", null, g) : null)
     });
-It.muiName = "SvgIcon";
+Dt.muiName = "SvgIcon";
 const it = je(Sn, {
     name: "MuiSvgIcon"
-})(It);
+})(Dt);
 
 function En(t, e) {
     var r = function(o, i) {
@@ -155,22 +155,22 @@ function Cn(t, e) {
     return f.isValidElement(t) && e.indexOf(t.type.muiName) !== -1
 }
 
-function Dt(t) {
+function It(t) {
     return t && t.ownerDocument || document
 }
 
 function zn(t) {
-    var e = Dt(t);
+    var e = It(t);
     return e.defaultView || window
 }
 
-function In(t) {
+function Dn(t) {
     return function() {
         return null
     }
 }
 
-function Dn(t, e, r, n, o) {
+function In(t, e, r, n, o) {
     return null
 }
 var kn = typeof window < "u" ? f.useLayoutEffect : f.useEffect;
@@ -191,12 +191,12 @@ const $n = Object.freeze(Object.defineProperty({
     debounce: On,
     deprecatedPropType: Pn,
     isMuiElement: Cn,
-    ownerDocument: Dt,
+    ownerDocument: It,
     ownerWindow: zn,
-    requirePropFactory: In,
+    requirePropFactory: Dn,
     setRef: xn,
     unstable_useId: Rn,
-    unsupportedProp: Dn,
+    unsupportedProp: In,
     useControlled: Tn,
     useEventCallback: ce,
     useForkRef: Ee,
@@ -364,7 +364,7 @@ function qn(t) {
         h = f.useState(!1),
         d = h[0],
         g = h[1],
-        I = se(e.ripple, e.rippleVisible, n && e.ripplePulsate),
+        D = se(e.ripple, e.rippleVisible, n && e.ripplePulsate),
         S = {
             width: l,
             height: l,
@@ -382,7 +382,7 @@ function qn(t) {
             }
         }
     }, [T, a, u]), f.createElement("span", {
-        className: I,
+        className: D,
         style: S
     }, f.createElement("span", {
         className: P
@@ -479,12 +479,12 @@ var Be = 550,
             d.current && (d.current(), d.current = null)
         }, [c]);
         var g = f.useRef(!1),
-            I = f.useRef(null),
+            D = f.useRef(null),
             S = f.useRef(null),
             P = f.useRef(null);
         f.useEffect(function() {
             return function() {
-                clearTimeout(I.current)
+                clearTimeout(D.current)
             }
         }, []);
         var T = f.useCallback(function(R) {
@@ -521,21 +521,21 @@ var Be = 550,
                 }
                 R.type === "touchstart" && (g.current = !0);
                 var x = v ? null : P.current,
-                    D = x ? x.getBoundingClientRect() : {
+                    I = x ? x.getBoundingClientRect() : {
                         width: 0,
                         height: 0,
                         left: 0,
                         top: 0
                     },
                     j, N, W;
-                if (m || R.clientX === 0 && R.clientY === 0 || !R.clientX && !R.touches) j = Math.round(D.width / 2), N = Math.round(D.height / 2);
+                if (m || R.clientX === 0 && R.clientY === 0 || !R.clientX && !R.touches) j = Math.round(I.width / 2), N = Math.round(I.height / 2);
                 else {
                     var oe = R.touches ? R.touches[0] : R,
                         J = oe.clientX,
                         K = oe.clientY;
-                    j = Math.round(J - D.left), N = Math.round(K - D.top)
+                    j = Math.round(J - I.left), N = Math.round(K - I.top)
                 }
-                if (m) W = Math.sqrt((2 * Math.pow(D.width, 2) + Math.pow(D.height, 2)) / 3), W % 2 === 0 && (W += 1);
+                if (m) W = Math.sqrt((2 * Math.pow(I.width, 2) + Math.pow(I.height, 2)) / 3), W % 2 === 0 && (W += 1);
                 else {
                     var Y = Math.max(Math.abs((x ? x.clientWidth : 0) - j), j) * 2 + 2,
                         H = Math.max(Math.abs((x ? x.clientHeight : 0) - N), N) * 2 + 2;
@@ -549,7 +549,7 @@ var Be = 550,
                         rippleSize: W,
                         cb: V
                     })
-                }, I.current = setTimeout(function() {
+                }, D.current = setTimeout(function() {
                     S.current && (S.current(), S.current = null)
                 }, Fn)) : T({
                     pulsate: Z,
@@ -565,8 +565,8 @@ var Be = 550,
                 })
             }, [z]),
             _ = f.useCallback(function(R, C) {
-                if (clearTimeout(I.current), R.type === "touchend" && S.current) {
-                    R.persist(), S.current(), S.current = null, I.current = setTimeout(function() {
+                if (clearTimeout(D.current), R.type === "touchend" && S.current) {
+                    R.persist(), S.current(), S.current = null, D.current = setTimeout(function() {
                         _(R, C)
                     });
                     return
@@ -639,8 +639,8 @@ var Qn = {
             h = u === void 0 ? "button" : u,
             d = e.disabled,
             g = d === void 0 ? !1 : d,
-            I = e.disableRipple,
-            S = I === void 0 ? !1 : I,
+            D = e.disableRipple,
+            S = D === void 0 ? !1 : D,
             P = e.disableTouchRipple,
             T = P === void 0 ? !1 : P,
             z = e.focusRipple,
@@ -656,7 +656,7 @@ var Qn = {
             E = e.onMouseLeave,
             v = e.onMouseUp,
             x = e.onTouchEnd,
-            D = e.onTouchMove,
+            I = e.onTouchMove,
             j = e.onTouchStart,
             N = e.onDragLeave,
             W = e.tabIndex,
@@ -705,7 +705,7 @@ var Qn = {
             }),
             Kt = ie("start", j),
             Yt = ie("stop", x),
-            Xt = ie("stop", D),
+            Xt = ie("stop", I),
             Gt = ie("stop", function(b) {
                 O && (te(b), L(!1)), R && R(b)
             }, !1),
@@ -878,7 +878,7 @@ var Yn = function(e) {
             h = u === void 0 ? !1 : u,
             d = e.disableFocusRipple,
             g = d === void 0 ? !1 : d,
-            I = e.focusVisibleClassName,
+            D = e.focusVisibleClassName,
             S = e.size,
             P = S === void 0 ? "large" : S,
             T = e.variant,
@@ -893,7 +893,7 @@ var Yn = function(e) {
             component: c,
             disabled: h,
             focusRipple: !g,
-            focusVisibleClassName: se(o.focusVisible, I),
+            focusVisibleClassName: se(o.focusVisible, D),
             ref: r
         }, $), f.createElement("span", {
             className: o.label
@@ -1278,10 +1278,10 @@ function Ke(t, e) {
 function Rr(t) {
     var e = Mr();
     return function() {
-        var n = Ie(t),
+        var n = De(t),
             o;
         if (e) {
-            var i = Ie(this).constructor;
+            var i = De(this).constructor;
             o = Reflect.construct(n, arguments, i)
         } else o = n.apply(this, arguments);
         return Tr(this, o)
@@ -1309,10 +1309,10 @@ function Mr() {
     }
 }
 
-function Ie(t) {
-    return Ie = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(r) {
+function De(t) {
+    return De = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(r) {
         return r.__proto__ || Object.getPrototypeOf(r)
-    }, Ie(t)
+    }, De(t)
 }
 
 function Ae(t, e, r) {
@@ -1409,12 +1409,12 @@ function Xe(t, e) {
 }
 
 function Cr(t) {
-    var e = Ir();
+    var e = Dr();
     return function() {
-        var n = De(t),
+        var n = Ie(t),
             o;
         if (e) {
-            var i = De(this).constructor;
+            var i = Ie(this).constructor;
             o = Reflect.construct(n, arguments, i)
         } else o = n.apply(this, arguments);
         return zr(this, o)
@@ -1432,7 +1432,7 @@ function ne(t) {
     return t
 }
 
-function Ir() {
+function Dr() {
     if (typeof Reflect > "u" || !Reflect.construct || Reflect.construct.sham) return !1;
     if (typeof Proxy == "function") return !0;
     try {
@@ -1442,10 +1442,10 @@ function Ir() {
     }
 }
 
-function De(t) {
-    return De = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(r) {
+function Ie(t) {
+    return Ie = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(r) {
         return r.__proto__ || Object.getPrototypeOf(r)
-    }, De(t)
+    }, Ie(t)
 }
 
 function ae(t, e, r) {
@@ -1562,7 +1562,7 @@ var kt = function(t) {
                     h = i.hideZoom,
                     d = i.showRotate,
                     g = i.imageBackgroundColor,
-                    I = g === void 0 ? "black" : g,
+                    D = g === void 0 ? "black" : g,
                     S = this.state,
                     P = S.move,
                     T = S.zoomed,
@@ -1570,7 +1570,7 @@ var kt = function(t) {
                 return p.createElement("div", null, p.createElement(sr, {
                     name: "__react_modal_image__lightbox",
                     css: ur({
-                        imageBackgroundColor: I
+                        imageBackgroundColor: D
                     })
                 }), p.createElement("div", {
                     className: "__react_modal_image__modal_container"
@@ -1625,7 +1625,7 @@ var kt = function(t) {
     xe = {},
     lt;
 
-function Dr() {
+function Ir() {
     if (lt) return xe;
     lt = 1, Object.defineProperty(xe, "__esModule", {
         value: !0
@@ -1716,13 +1716,13 @@ function kr() {
             h = !1,
             d, g = -1;
 
-        function I() {
+        function D() {
             !h || !d || (h = !1, d.length ? u = d.concat(u) : g = -1, u.length && S())
         }
 
         function S() {
             if (!h) {
-                var _ = s(I);
+                var _ = s(D);
                 h = !0;
                 for (var R = u.length; R;) {
                     for (d = u, u = []; ++g < R;) d && d[g].run();
@@ -1907,7 +1907,7 @@ function Wr() {
         n = T(r),
         o = hn(),
         i = T(o),
-        l = Dr(),
+        l = Ir(),
         a = T(l),
         s = $r(),
         c = T(s),
@@ -1915,8 +1915,8 @@ function Wr() {
         h = T(u),
         d = Vr(),
         g = T(d),
-        I = Nr(),
-        S = T(I),
+        D = Nr(),
+        S = T(D),
         P = Ar();
 
     function T(w) {
@@ -1997,7 +1997,7 @@ function Wr() {
             value: function() {
                 var v = this,
                     x = this.props,
-                    D = x.min,
+                    I = x.min,
                     j = x.max,
                     N = x.mode,
                     W = x.forceSingleModeWidth,
@@ -2030,7 +2030,7 @@ function Wr() {
                         return V(K, H)
                     },
                     O = void 0,
-                    L = D,
+                    L = I,
                     U = j;
                 this.setState({
                     ready: !1
@@ -2046,7 +2046,7 @@ function Wr() {
                         })
                     }, q)
                 }, function(q) {
-                    return N === "single" && W || de() ? q() : (L = D, U = O, (0, h.default)(function() {
+                    return N === "single" && W || de() ? q() : (L = I, U = O, (0, h.default)(function() {
                         return L < U
                     }, function(te) {
                         if (ee()) return te(!0);
@@ -2057,7 +2057,7 @@ function Wr() {
                         })
                     }, q))
                 }, function(q) {
-                    if (O = Math.min(L, U), O = Math.max(O, D), O = Math.min(O, j), O = Math.max(O, 0), ee()) return q(!0);
+                    if (O = Math.min(L, U), O = Math.max(O, I), O = Math.min(O, j), O = Math.max(O, 0), ee()) return q(!0);
                     v.setState({
                         fontSize: O
                     }, q)
@@ -2074,7 +2074,7 @@ function Wr() {
             value: function() {
                 var v = this,
                     x = this.props,
-                    D = x.children,
+                    I = x.children,
                     j = x.text,
                     N = x.style;
                 x.min, x.max;
@@ -2100,7 +2100,7 @@ function Wr() {
                         return v._child = k
                     },
                     style: B
-                }, j && typeof D == "function" ? Y ? D(j) : j : D))
+                }, j && typeof I == "function" ? Y ? I(j) : j : I))
             }
         }]), m
     }(n.default.Component);
@@ -2736,5 +2736,5 @@ const qt = (t, e) => M.jsx("span", {
         noBold: t.noBold
     });
 export {
-    Kn as B, Po as I, ke as Q, lo as R, Co as T, Oo as a, fe as b, So as c, En as d, zn as e, On as f, Cn as g, Qr as h, Eo as i, Kr as j, qr as l, Dt as o, qt as p, Br as r, y as s, ce as u
+    Kn as B, Po as I, ke as Q, lo as R, Co as T, Oo as a, fe as b, So as c, En as d, zn as e, On as f, Cn as g, Qr as h, Eo as i, Kr as j, qr as l, It as o, qt as p, Br as r, y as s, ce as u
 };

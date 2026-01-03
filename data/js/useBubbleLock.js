@@ -1,17 +1,17 @@
 import {
     r as n,
-    aB as $,
-    aG as w,
-    az as D,
-    am as M,
-    aA as g,
+    aD as $,
+    aI as w,
+    aB as D,
+    ao as M,
+    aC as g,
     _ as j,
-    aD as m,
-    x as A,
-    b8 as _
-} from "./index-ku7LFjMf.js";
-var B = ["prefixCls", "className", "style", "checked", "disabled", "defaultChecked", "type", "title", "onChange"],
-    z = n.forwardRef(function(e, a) {
+    aF as _,
+    x as B,
+    b9 as m
+} from "./index-JueF_e_O.js";
+var I = ["prefixCls", "className", "style", "checked", "disabled", "defaultChecked", "type", "title", "onChange"],
+    A = n.forwardRef(function(e, a) {
         var r = e.prefixCls,
             c = r === void 0 ? "rc-checkbox" : r,
             d = e.className,
@@ -24,14 +24,14 @@ var B = ["prefixCls", "className", "style", "checked", "disabled", "defaultCheck
             h = v === void 0 ? "checkbox" : v,
             R = e.title,
             i = e.onChange,
-            E = $(e, B),
+            E = $(e, I),
             s = n.useRef(null),
             p = n.useRef(null),
             P = w(y, {
                 value: x
             }),
             k = D(P, 2),
-            b = k[0],
+            C = k[0],
             N = k[1];
         n.useImperativeHandle(a, function() {
             return {
@@ -47,10 +47,10 @@ var B = ["prefixCls", "className", "style", "checked", "disabled", "defaultCheck
                 nativeElement: p.current
             }
         });
-        var L = M(c, d, g(g({}, "".concat(c, "-checked"), b), "".concat(c, "-disabled"), o)),
+        var L = M(c, d, g(g({}, "".concat(c, "-checked"), C), "".concat(c, "-disabled"), o)),
             S = function(t) {
                 o || ("checked" in e || N(t.target.checked), i == null || i({
-                    target: m(m({}, e), {}, {
+                    target: _(_({}, e), {}, {
                         type: h,
                         checked: t.target.checked
                     }),
@@ -73,20 +73,20 @@ var B = ["prefixCls", "className", "style", "checked", "disabled", "defaultCheck
             ref: s,
             onChange: S,
             disabled: o,
-            checked: !!b,
+            checked: !!C,
             type: h
         })), n.createElement("span", {
             className: "".concat(c, "-inner")
         }))
     });
 
-function G(e) {
-    const a = A.useRef(null),
+function F(e) {
+    const a = B.useRef(null),
         r = () => {
-            _.cancel(a.current), a.current = null
+            m.cancel(a.current), a.current = null
         };
     return [() => {
-        r(), a.current = _(() => {
+        r(), a.current = m(() => {
             a.current = null
         })
     }, u => {
@@ -94,5 +94,5 @@ function G(e) {
     }]
 }
 export {
-    z as C, G as u
+    A as C, F as u
 };

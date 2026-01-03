@@ -2,8 +2,8 @@ import {
     r as e,
     I as r,
     _ as l,
-    ax as c
-} from "./index-ku7LFjMf.js";
+    az as c
+} from "./index-JueF_e_O.js";
 var o = {
         icon: {
             tag: "svg",

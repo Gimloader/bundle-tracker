@@ -1,6 +1,6 @@
 import {
-    bp as o
-} from "./index-ku7LFjMf.js";
+    bq as o
+} from "./index-JueF_e_O.js";
 var u = function(r) {
         if (o() && window.document.documentElement) {
             var e = Array.isArray(r) ? r : [r],
@@ -11,7 +11,7 @@ var u = function(r) {
         }
         return !1
     },
-    p = function(r, e) {
+    a = function(r, e) {
         if (!u(r)) return !1;
         var t = document.createElement("div"),
             i = t.style[r];
@@ -19,7 +19,7 @@ var u = function(r) {
     };
 
 function c(n, r) {
-    return !Array.isArray(n) && r !== void 0 ? p(n, r) : u(n)
+    return !Array.isArray(n) && r !== void 0 ? a(n, r) : u(n)
 }
 export {
     c as i

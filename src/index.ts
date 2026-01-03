@@ -10,7 +10,7 @@ const { values: { force, push }} = parseArgs({
     args: process.argv.slice(2),
     options: {
         force: { type: "boolean", short: "f", default: false },
-        push: { type: "boolean", short: "p", default: false },
+        push: { type: "boolean", short: "p", default: false }
     }
 });
 
@@ -68,7 +68,8 @@ await fsp.writeFile(join(jsPath, "_index.js"), format(index));
 
 const start = index.indexOf("=[") + 1;
 const end = index.indexOf("]", start) + 1;
-const urls: string[] = JSON.parse(index.slice(start, end));
+const urls: string[] = JSON.parse(index.slice(start, end))
+    .map((url: string) => url.split("/").pop());
 
 const nameCount: Record<string, number> = {};
 for(let url of urls) {
@@ -84,8 +85,8 @@ const nameCountup: Record<string, number> = {};
 
 let urlMap: Record<string, string> = {};
 for(let i = 0; i < urls.length; i++) {
-    const url = urls[i].split("/").pop();
-    let name = url.split("-").shift();
+    const url = urls[i];
+    let name = url.split("-").shift()
 
     if(nameCount[name] > 1) {
         nameCountup[name] ??= 0;

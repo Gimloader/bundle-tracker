@@ -1,0 +1,888 @@
+import {
+    U as b,
+    r as c,
+    u as Q,
+    i as Y,
+    f as w,
+    j as e,
+    e as d,
+    d as s,
+    D as $,
+    F as A,
+    x as y,
+    a as B,
+    t as X,
+    M as O,
+    S as V,
+    C as F,
+    B as D,
+    ac as Z,
+    Z as J,
+    ah as ee,
+    aj as te,
+    l as ie,
+    E as se,
+    cn as ne
+} from "./index-JueF_e_O.js";
+import {
+    E as j
+} from "./Sizes-BhgpZp_e.js";
+import {
+    A as _
+} from "./AccessibleAnchor-C5KFFiup.js";
+import {
+    m as g
+} from "./motion-C-xmDj6Z.js";
+import {
+    b as oe
+} from "./index-DWUaWm5X.js";
+import {
+    e as L
+} from "./price-1Xs9YDh1.js";
+import {
+    T as ae
+} from "./TrackPostHogEvent-BOHwnqir.js";
+import {
+    c as re
+} from "./index-Dx05C7sF.js";
+import {
+    I as le
+} from "./index-CrBw-JUo.js";
+import {
+    s as ce
+} from "./index-C3nE64hA.js";
+import {
+    R as de
+} from "./StarOutlined-BGGlbh6F.js";
+const E = {
+    titleFont: b.FugazOne
+};
+var ue = "Invariant failed";
+
+function C(t, i) {
+    throw new Error(ue)
+}
+var T = new Map([
+        ["Win", "Meta"],
+        ["Scroll", "ScrollLock"],
+        ["Spacebar", " "],
+        ["Down", "ArrowDown"],
+        ["Left", "ArrowLeft"],
+        ["Right", "ArrowRight"],
+        ["Up", "ArrowUp"],
+        ["Del", "Delete"],
+        ["Crsel", "CrSel"],
+        ["Exsel", "ExSel"],
+        ["Apps", "ContextMenu"],
+        ["Esc", "Escape"],
+        ["Decimal", "."],
+        ["Multiply", "*"],
+        ["Add", "+"],
+        ["Subtract", "-"],
+        ["Divide", "/"]
+    ]),
+    he = function(i) {
+        if (T.has(i.key)) {
+            var a = T.get(i.key);
+            Object.defineProperty(i, "key", {
+                configurable: !0,
+                enumerable: !0,
+                get: function() {
+                    return a
+                }
+            })
+        }
+    },
+    me = function(i, a) {
+        Array.isArray(i) || typeof i == "string" || C(), Array.isArray(i) && i.forEach(function(n, r) {
+            typeof n != "string" && C()
+        }), typeof a == "function" || a == null || C();
+        var o = c.useRef();
+        c.useEffect(function() {
+            o.current = function(n) {
+                he(n), (Array.isArray(i) ? i.includes(n.key) : i === n.key) && (a == null || a(n))
+            }
+        }, [i, a]), c.useEffect(function() {
+            var n = function(h) {
+                o.current(h)
+            };
+            return window.addEventListener("keydown", n),
+                function() {
+                    window.removeEventListener("keydown", n)
+                }
+        }, [])
+    },
+    m = (t => (t.limitedModes = "limitedModes", t.limitedGames = "limitedGames", t))(m || {});
+const p = () => "limitedModes",
+    xe = () => 5,
+    S = 350,
+    H = 10,
+    W = S + H,
+    v = .2,
+    fe = t => {
+        const [i, a, o] = Q(!1), n = p(), r = c.useMemo(() => t.isProExperience && !Y() && n === m.limitedModes && !w(), [t.isProExperience, n]);
+        return e.jsxs(ge, {
+            onMouseEnter: a,
+            onMouseLeave: o,
+            style: {
+                backgroundImage: `url('${t.image}')`,
+                borderColor: t.currentlySelected ? "#fdd835" : d.White
+            },
+            onClick: t.onSelect,
+            className: t.noShadowOnContainer ? "" : "light-shadow",
+            children: [t.forcePremiumBadge || r ? e.jsx(pe, {
+                animate: {
+                    opacity: i ? 0 : 1
+                },
+                initial: {
+                    opacity: 1
+                },
+                transition: {
+                    duration: v
+                },
+                children: e.jsx(ye, {})
+            }) : e.jsx("div", {}), e.jsxs(ve, {
+                children: [r ? e.jsx(je, {
+                    animate: {
+                        opacity: i ? 0 : 1
+                    },
+                    initial: {
+                        opacity: 1
+                    },
+                    transition: {
+                        duration: v
+                    },
+                    children: "Gimkit Pro Exclusive"
+                }) : null, !r && t.tag ? e.jsx(we, {
+                    animate: {
+                        opacity: i ? 0 : 1
+                    },
+                    initial: {
+                        opacity: 1
+                    },
+                    transition: {
+                        duration: v
+                    },
+                    children: t.tag
+                }) : null, e.jsx(be, {
+                    children: t.name
+                }), e.jsx(Ee, {
+                    animate: {
+                        height: i ? "auto" : 0
+                    },
+                    initial: {
+                        height: 0
+                    },
+                    transition: {
+                        duration: v
+                    },
+                    children: t.tagline
+                })]
+            })]
+        })
+    },
+    ge = s.div.attrs({
+        className: "flex flex-column between"
+    })`
+  border-width: 4px;
+  border-style: solid;
+  width: ${S}px;
+  height: 180px;
+  border-radius: 4px;
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  align-items: flex-end;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: border-color 0.3s;
+`,
+    pe = s(g.div).attrs({
+        className: "maxWidth"
+    })`
+  padding: 10px 15px;
+`,
+    ye = s.img.attrs({
+        src: "/client/img/pro/star.svg"
+    })`
+  height: 20px;
+`,
+    ve = s.div.attrs({
+        className: "maxWidth flex-column"
+    })`
+  padding: 10px 15px;
+  background: linear-gradient(
+    to top,
+    hsla(0, 0%, 0%, 0.69) 0%,
+    hsla(0, 0%, 0%, 0.681) 8.1%,
+    hsla(0, 0%, 0%, 0.656) 15.5%,
+    hsla(0, 0%, 0%, 0.618) 22.4%,
+    hsla(0, 0%, 0%, 0.569) 28.9%,
+    hsla(0, 0%, 0%, 0.511) 35%,
+    hsla(0, 0%, 0%, 0.447) 41%,
+    hsla(0, 0%, 0%, 0.379) 46.7%,
+    hsla(0, 0%, 0%, 0.311) 52.5%,
+    hsla(0, 0%, 0%, 0.243) 58.3%,
+    hsla(0, 0%, 0%, 0.179) 64.3%,
+    hsla(0, 0%, 0%, 0.121) 70.5%,
+    hsla(0, 0%, 0%, 0.072) 77.1%,
+    hsla(0, 0%, 0%, 0.034) 84.2%,
+    hsla(0, 0%, 0%, 0.009) 91.8%,
+    hsla(0, 0%, 0%, 0) 100%
+  );
+  overflow: hidden;
+  align-items: flex-start;
+`,
+    je = s(g.div)`
+  font-family: ${E.titleFont};
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: -2px;
+  text-shadow: 1px 1px 1px ${d.Black};
+  color: ${d.White};
+`,
+    we = s(g.div)`
+  font-family: ${E.titleFont};
+  text-transform: uppercase;
+  background: rgba(255, 87, 34, 0.8);
+  padding: 7px 10px;
+  font-size: 11px;
+  line-height: 1;
+  border-radius: 10px;
+  margin-bottom: 4px;
+`,
+    be = s.div`
+  font-family: ${E.titleFont};
+  text-transform: uppercase;
+  font-size: 22px;
+  text-shadow: 2px 2px 2px ${d.Black};
+  color: ${d.White};
+`,
+    Ee = s(g.div)`
+  font-size: 14px;
+  text-shadow: 1px 1px 1px ${d.Black};
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 1px;
+  overflow: hidden;
+  font-family: ${b.ProductSans};
+`,
+    ke = t => {
+        const [i, a] = c.useState(0), o = c.useRef(!1), n = c.useRef(null), [r] = oe(n), h = c.useMemo(() => t.verticalList ? 0 : i * W * -1 + j.sideMargin, [i, t.verticalList]), l = c.useMemo(() => !(i <= 0), [i]), x = () => {
+            o.current = !0
+        }, f = () => {
+            o.current = !1
+        };
+        me(["ArrowLeft", "ArrowRight"], u => {
+            o.current && (u.key === "ArrowLeft" && N(), u.key === "ArrowRight" && I())
+        });
+        const M = c.useMemo(() => {
+                if (i + 1 === t.list.items.length) return !1;
+                const u = (r - j.sideMargin) / W;
+                return !(i >= t.list.items.length - u)
+            }, [r, i, t.list.items.length]),
+            N = () => {
+                l && a(Math.max(0, i - 1))
+            },
+            I = () => {
+                M && a(i + 1)
+            };
+        return e.jsxs(Me, {
+            onMouseEnter: x,
+            onMouseLeave: f,
+            children: [t.hideListName ? null : e.jsx(Ce, {
+                children: t.list.name
+            }), e.jsxs(Pe, {
+                children: [e.jsx($e, {
+                    animate: {
+                        x: h
+                    },
+                    initial: {
+                        x: t.verticalList ? 0 : j.sideMargin
+                    },
+                    transition: {
+                        duration: .3,
+                        ease: "easeOut"
+                    },
+                    style: t.verticalList ? {
+                        display: "grid",
+                        gridTemplateColumns: `repeat(auto-fill, ${S}px)`,
+                        justifyContent: "center",
+                        gap: 20,
+                        margin: "0px 25px"
+                    } : {
+                        gap: H
+                    },
+                    ref: n,
+                    children: t.list.items.map(u => e.jsx(fe, {
+                        name: u.name,
+                        tagline: u.tagline,
+                        image: u.imageUrl,
+                        currentlySelected: t.forceAllSelected ? !0 : t.currentlySelectedExperienceId === u._id,
+                        onSelect: t.onExperienceSelected ? () => t.onExperienceSelected(u._id) : null,
+                        isProExperience: u.isPremiumExperience,
+                        noShadowOnContainer: t.noShadowOnItems,
+                        forcePremiumBadge: t.forcePremiumBadge,
+                        tag: u.tag
+                    }, `list-${t.list._id}-${u._id}`))
+                }), t.verticalList ? null : e.jsxs(Ae, {
+                    children: [e.jsx(Se, {
+                        animate: {
+                            opacity: l ? 1 : 0
+                        },
+                        initial: {
+                            opacity: 0
+                        },
+                        onClick: N,
+                        children: e.jsx(z, {
+                            style: {
+                                cursor: l ? "pointer" : "auto"
+                            },
+                            children: e.jsx("i", {
+                                className: "fas fa-chevron-left"
+                            })
+                        })
+                    }), e.jsx(Ne, {
+                        animate: {
+                            opacity: M ? 1 : 0
+                        },
+                        initial: {
+                            opacity: 0
+                        },
+                        onClick: I,
+                        children: e.jsx(z, {
+                            style: {
+                                cursor: M ? "pointer" : "auto"
+                            },
+                            children: e.jsx("i", {
+                                className: "fas fa-chevron-right"
+                            })
+                        })
+                    })]
+                })]
+            })]
+        })
+    },
+    Me = s.div.attrs({
+        className: "maxWidth"
+    })``,
+    Ce = s.div`
+  font-family: ${E.titleFont};
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.9);
+`,
+    Pe = s.div.attrs({
+        className: "maxWidth"
+    })`
+  position: relative;
+  overflow: hidden;
+`,
+    $e = s(g.div).attrs({
+        className: "flex"
+    })``,
+    Ae = s.div.attrs({
+        className: "maxAll flex vc between"
+    })`
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+`,
+    q = s(g.div).attrs({
+        className: "flex-center maxHeight"
+    })`
+  width: 60px;
+  line-height: 1;
+  color: ${d.White};
+`,
+    Se = s(q)`
+  background: linear-gradient(
+    to right,
+    hsla(0, 0%, 0%, 0.61) 0%,
+    hsla(0, 0%, 0%, 0.603) 8.3%,
+    hsla(0, 0%, 0%, 0.583) 16.2%,
+    hsla(0, 0%, 0%, 0.551) 23.9%,
+    hsla(0, 0%, 0%, 0.511) 31.4%,
+    hsla(0, 0%, 0%, 0.463) 38.6%,
+    hsla(0, 0%, 0%, 0.409) 45.6%,
+    hsla(0, 0%, 0%, 0.352) 52.3%,
+    hsla(0, 0%, 0%, 0.294) 58.9%,
+    hsla(0, 0%, 0%, 0.236) 65.2%,
+    hsla(0, 0%, 0%, 0.18) 71.4%,
+    hsla(0, 0%, 0%, 0.128) 77.4%,
+    hsla(0, 0%, 0%, 0.082) 83.3%,
+    hsla(0, 0%, 0%, 0.044) 89%,
+    hsla(0, 0%, 0%, 0.016) 94.5%,
+    hsla(0, 0%, 0%, 0) 100%
+  );
+`,
+    Ne = s(q)`
+  background: linear-gradient(
+    to left,
+    hsla(0, 0%, 0%, 0.61) 0%,
+    hsla(0, 0%, 0%, 0.603) 8.3%,
+    hsla(0, 0%, 0%, 0.583) 16.2%,
+    hsla(0, 0%, 0%, 0.551) 23.9%,
+    hsla(0, 0%, 0%, 0.511) 31.4%,
+    hsla(0, 0%, 0%, 0.463) 38.6%,
+    hsla(0, 0%, 0%, 0.409) 45.6%,
+    hsla(0, 0%, 0%, 0.352) 52.3%,
+    hsla(0, 0%, 0%, 0.294) 58.9%,
+    hsla(0, 0%, 0%, 0.236) 65.2%,
+    hsla(0, 0%, 0%, 0.18) 71.4%,
+    hsla(0, 0%, 0%, 0.128) 77.4%,
+    hsla(0, 0%, 0%, 0.082) 83.3%,
+    hsla(0, 0%, 0%, 0.044) 89%,
+    hsla(0, 0%, 0%, 0.016) 94.5%,
+    hsla(0, 0%, 0%, 0) 100%
+  );
+`,
+    z = s.div.attrs({
+        className: "flex-center"
+    })`
+  font-size: 32px;
+  pointer-events: all;
+  will-change: transform;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.1);
+  }
+`,
+    Ie = [{
+        question: "What happens if I pay now and my school pays later?",
+        answer: e.jsxs("span", {
+            children: ["If your school purchases a group license and you've already purchased Gimkit Pro, you’ll get refunded for your unused time.", " ", e.jsx("b", {
+                children: "So if you purchase a year of Gimkit Pro today and your school upgrades next month, we’d refund you $54.89."
+            }), " ", "That refund happens automatically. No need to contact support!"]
+        })
+    }, {
+        question: "What's included with Gimkit Pro?",
+        answer: e.jsxs("span", {
+            children: [p() === m.limitedModes ? "Unrestricted access to all modes, including Gimkit Pro Exclusives." : "No game limits, host as many games as you'd like!", " ", "You'll also be able to create assignments (play Gimkit asynchronously) and upload audio + images to your questions."]
+        })
+    }, {
+        question: "What's your refund policy?",
+        answer: e.jsxs("span", {
+            children: ["Bad refund policies are infuriating. You feel like the company is just trying to rip you off. We never want our customers to feel that way, so our refund policy is simple: If you’re ever unhappy with your subscription for any reason, just contact us and we’ll take care of you.", " ", e.jsx("a", {
+                href: "https://www.notion.so/gimkit/A-fair-refund-policy-a1688f61330b49a495a48bd0fd08697b",
+                target: "_blank",
+                children: "Check out our full refund policy here."
+            })]
+        })
+    }],
+    Fe = () => e.jsxs(e.Fragment, {
+        children: [e.jsx($, {
+            style: {
+                margin: "26px 0px"
+            }
+        }), e.jsx(Le, {
+            children: Ie.map(t => e.jsxs(Te, {
+                children: [e.jsx(We, {
+                    children: t.question
+                }), e.jsx(ze, {
+                    children: t.answer
+                })]
+            }, t.question))
+        })]
+    }),
+    Le = s.div.attrs({
+        className: "maxWidth"
+    })`
+  padding: 0px ${()=>k}px;
+`,
+    Te = s.div`
+  margin-bottom: 15px;
+  background: ${d.White};
+  padding: 30px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: ${d.BorderGray};
+  border-width: 2px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+`,
+    We = s.div`
+  font-size: 21px;
+  font-weight: ${A.Bold};
+`,
+    ze = s.div`
+  font-size: 16px;
+  margin-top: 5px;
+`,
+    Re = t => {
+        const [i, a] = y.useState(!0), [o, n] = y.useState(null), [r, h] = y.useState(null), l = () => `${Z()}/pay-for-me/${r}`, x = () => {
+            re(l()), ce.success("Pay For Me link copied to clipboard!")
+        };
+        return y.useEffect(() => {
+            B({
+                method: "GET",
+                url: "/api/billing/pay-for-me-link",
+                success: f => {
+                    h(f)
+                },
+                error: f => {
+                    n(f), X({
+                        e: f,
+                        default: {
+                            title: "Error connecting to our server",
+                            content: "An error ocurred while connecting to our server. Please try again later."
+                        }
+                    })
+                },
+                both: () => a(!1)
+            })
+        }, []), e.jsx(O, {
+            open: t.showPayForMeModal,
+            onCancel: t.onCancel,
+            footer: null,
+            closable: !1,
+            width: 690,
+            bodyStyle: {
+                padding: 0
+            },
+            children: i ? e.jsx("div", {
+                style: {
+                    height: 361
+                },
+                className: "flex maxWidth maxHeight hc vc",
+                children: e.jsx(V, {
+                    size: "large"
+                })
+            }) : e.jsxs(Ge, {
+                children: [e.jsx(Oe, {
+                    onClick: t.onCancel
+                }), e.jsxs(Ue, {
+                    children: [e.jsx("span", {
+                        style: {
+                            fontWeight: A.UltraBold
+                        },
+                        children: "Pay For Me"
+                    }), " ", "link"]
+                }), e.jsxs(Be, {
+                    children: ["Send this link to someone to allow them to pay for your", " ", F, " Pro subscription. Once they pay, you'll get one full year of ", F, " Pro and we'll make sure autorenew is off so they aren't charged again.", e.jsx("br", {}), " ", e.jsx("br", {}), "One more thing: once they pay for your subscription, we'll send you an email letting you know!"]
+                }), e.jsx($, {}), !o && e.jsxs("div", {
+                    className: "flex",
+                    children: [e.jsx(le, {
+                        value: l(),
+                        size: "large",
+                        readOnly: !0
+                    }), e.jsx(D, {
+                        size: "large",
+                        type: "primary",
+                        style: {
+                            marginLeft: 10
+                        },
+                        onClick: x,
+                        children: "Copy Link"
+                    })]
+                })]
+            })
+        })
+    },
+    Ge = s.div.attrs({
+        className: "maxWidth"
+    })`
+  color: ${d.Black};
+  font-family: ${b.SFPro};
+  padding: 30px;
+`,
+    Ue = s.div`
+  font-size: 32px;
+`,
+    Be = s.div`
+  font-size: 17px;
+  margin-top: 14px;
+`,
+    Oe = s.i.attrs({
+        className: "fal fa-times"
+    })`
+  position: absolute;
+  font-size: 24px;
+  top: 30px;
+  right: 30px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+`,
+    De = t => {
+        const [i, a] = c.useState(!1), [o, n] = c.useState(!1), r = () => a(!0);
+        return e.jsxs("div", {
+            className: "flex flex-column vc",
+            style: {
+                marginTop: t.showingModes ? 25 : 20,
+                paddingBottom: 30
+            },
+            children: [e.jsx(_, {
+                to: J,
+                children: e.jsx(D, {
+                    type: "primary",
+                    size: "large",
+                    icon: e.jsx(de, {}),
+                    style: {
+                        width: 380,
+                        height: 70
+                    },
+                    children: w() ? "Upgrade to Gimkit Pro early" : "Upgrade to Gimkit Pro"
+                })
+            }), null, e.jsx($, {
+                style: {
+                    margin: "26px 0px"
+                }
+            }), e.jsxs("div", {
+                className: "flex vc",
+                children: [e.jsx(P, {
+                    to: ee,
+                    children: "Group license pricing"
+                }), e.jsx(R, {}), e.jsx(P, {
+                    onClick: () => n(!0),
+                    children: "Pay For Me Link"
+                }), !i && e.jsxs(e.Fragment, {
+                    children: [e.jsx(R, {}), e.jsx(P, {
+                        onClick: r,
+                        children: "FAQ"
+                    })]
+                })]
+            }), i && e.jsx(Fe, {}), e.jsx(Re, {
+                showPayForMeModal: o,
+                onCancel: () => n(!1)
+            })]
+        })
+    };
+s.div`
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 12px;
+`;
+const P = s(_)`
+  font-size: 16px;
+  display: block;
+  color: ${d.Black};
+  text-decoration: underline;
+`,
+    R = s.i.attrs({
+        className: "fas fa-circle"
+    })`
+  margin: 0px 12px;
+  font-size: 10px;
+`,
+    K = 180,
+    _e = t => {
+        const {
+            copy: i
+        } = t, a = () => i && i.title ? i.title : w() ? e.jsx(e.Fragment, {
+            children: "Your trial ends soon."
+        }) : p() === m.limitedGames ? e.jsx(e.Fragment, {
+            children: "Upgrade to host unlimited games"
+        }) : e.jsxs("div", {
+            style: {
+                fontSize: 40,
+                marginTop: 30
+            },
+            children: ["Get all game modes for ", L({
+                simple: !0
+            }), " a month."]
+        }), o = () => {
+            if (i && i.description) return i.description;
+            const n = p(),
+                r = n === m.limitedModes ? "a few game modes that rotate every few weeks" : `host ${xe()} games per month`;
+            return e.jsxs("div", {
+                className: "maxWidth",
+                style: {
+                    textAlign: "left"
+                },
+                children: [w() ? `After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${r}.` : `You're on the free version of Gimkit, which limits you to ${r}.`, e.jsx("br", {}), " ", e.jsx("br", {}), n === m.limitedModes ? "Want access to every single mode?" : "Want to host unlimited games?", " ", "Upgrade to Gimkit Pro! It’s just", " ", L({
+                    simple: !0
+                }), " a month and you’ll be helping support us, an independent small business.", n === m.limitedModes ? e.jsxs(e.Fragment, {
+                    children: [e.jsx("br", {}), " ", e.jsx("br", {}), "Upgrade to get access to these game modes and more:"]
+                }) : null]
+            })
+        };
+        return e.jsxs(He, {
+            background: t.showingModes ? "#0A2540" : "transparent",
+            color: t.showingModes ? d.White : d.Black,
+            bottomPadding: t.showingModes ? K : 0,
+            maskImage: !!t.showingModes,
+            children: [e.jsx(qe, {
+                onClick: t.close
+            }), e.jsxs(Ke, {
+                children: [e.jsx(Qe, {
+                    children: a()
+                }), e.jsx(Ye, {
+                    style: {
+                        marginTop: t.showingModes ? 10 : 5
+                    },
+                    children: o()
+                })]
+            })]
+        })
+    },
+    He = s.div.attrs({
+        className: "maxWidth flex flex-column vc"
+    })`
+  padding: ${()=>k}px 0px;
+  padding-top: 30px;
+  background: ${t=>t.background};
+  color: ${t=>t.color};
+  text-align: center;
+  padding-bottom: ${t=>t.bottomPadding}px;
+  ${t=>t.maskImage?`mask-image: linear-gradient(
+    to bottom,
+    ${t.background} 50%,
+    transparent 100%);`:""}
+`,
+    qe = s.i.attrs({
+        className: "fal fa-times"
+    })`
+  position: absolute;
+  font-size: 24px;
+  top: 25px;
+  right: ${()=>k}px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+`,
+    Ke = s.div.attrs({
+        className: "maxWidth"
+    })`
+  padding: 0px ${()=>k}px;
+`,
+    Qe = s.div`
+  font-size: 42px;
+  font-weight: ${A.UltraBold};
+`,
+    Ye = s.div`
+  font-size: 20px;
+`,
+    G = {
+        Classic: 1
+    },
+    Xe = () => {
+        const [t, i] = c.useState([]);
+        return c.useEffect(() => {
+            B({
+                url: "/api/experiences",
+                data: {
+                    mode: "liveGame"
+                },
+                cacheKey: "EXPERIENCES",
+                success: a => {
+                    let o = [];
+                    const n = [];
+                    a.forEach(r => {
+                        const h = r.items.every(l => !l.isPremiumExperience);
+                        r.items.forEach(l => {
+                            (l.isPremiumExperience || h) && (n.includes(l._id) || (o.push({
+                                ...l,
+                                isPremiumExperience: !0
+                            }), n.push(l._id)))
+                        })
+                    }), Object.keys(G).forEach(r => {
+                        const h = G[r],
+                            l = o.find(x => x.name === r);
+                        l && (o = o.filter(x => x.name !== r), o.splice(h, 0, l))
+                    }), i(o)
+                }
+            })
+        }, []), t.length ? e.jsx(U, {
+            children: e.jsx(ke, {
+                list: {
+                    _id: "_",
+                    name: "_",
+                    items: t
+                },
+                hideListName: !0,
+                noShadowOnItems: !0,
+                forceAllSelected: !0,
+                forcePremiumBadge: !0
+            })
+        }) : e.jsx(U, {
+            children: e.jsx("div", {
+                style: {
+                    height: 180
+                }
+            })
+        })
+    },
+    U = s.div.attrs({
+        className: "maxWidth"
+    })`
+  margin-top: ${()=>-K+25}px;
+`,
+    k = j.sideMargin,
+    ct = t => {
+        c.useEffect(() => {
+            t.visible && t.showModes && te("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap")
+        }, [t.visible, t.showModes]), c.useEffect(() => {
+            t.visible && ae({
+                properties: {
+                    reason: t.id
+                }
+            })
+        }, [t.visible, t.id]);
+        const i = ie();
+        if (!i) return null;
+        const a = p(),
+            o = t.showModes && a === m.limitedModes;
+        return e.jsx(se, {
+            theme: {
+                algorithm: ne.defaultAlgorithm
+            },
+            children: e.jsx(O, {
+                footer: null,
+                width: 850,
+                style: {
+                    top: 30
+                },
+                styles: {
+                    content: {
+                        padding: 0,
+                        borderRadius: 10,
+                        overflow: "hidden"
+                    },
+                    body: {
+                        padding: 0,
+                        color: d.Snow
+                    }
+                },
+                open: t.visible,
+                onCancel: t.close,
+                closable: !1,
+                children: e.jsxs(Ve, {
+                    children: [e.jsx(_e, {
+                        user: i,
+                        close: t.close,
+                        copy: t.copy,
+                        showingModes: o
+                    }), o ? e.jsx(Xe, {}) : null, e.jsx(De, {
+                        showingModes: o
+                    })]
+                })
+            })
+        })
+    },
+    Ve = s.div.attrs({
+        className: "maxWidth"
+    })`
+  color: ${d.Black};
+  font-family: ${b.SFPro};
+`;
+export {
+    E,
+    m as F,
+    _e as T,
+    ct as U,
+    xe as a,
+    ke as b,
+    p as g,
+    C as i,
+    me as u
+};
