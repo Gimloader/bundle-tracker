@@ -18,20 +18,20 @@ import {
     d as l,
     e as a,
     U
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     o as A
-} from "./mobxreact.esm-Ws-CV3HT.js";
+} from "./mobxreact.esm.js";
 import {
     s as i
-} from "./stores-DAvb2mRE.js";
+} from "./stores.js";
 import {
     N as u
-} from "./NavigateTo-B9Fkdix9.js";
+} from "./NavigateTo.js";
 import {
     A as T
-} from "./TrackEvent-C_GWthE7.js";
-import "./TrackPostHogEvent-BOHwnqir.js";
+} from "./TrackEvent.js";
+import "./TrackPostHogEvent.js";
 const P = "An error ocurred on our end while upgrading your account. Please contact support.",
     C = t => {
         i.navigation.loadingTokenSubmit = !0;

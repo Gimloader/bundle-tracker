@@ -5,10 +5,10 @@ import {
     r as I,
     j as E,
     B as N
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     o as T
-} from "./mobxreact.esm-Ws-CV3HT.js";
+} from "./mobxreact.esm.js";
 var A = Object.defineProperty,
     i = (e, r, l, y) => {
         for (var s = void 0, c = e.length - 1, p; c >= 0; c--)(p = e[c]) && (s = p(r, l, s) || s);

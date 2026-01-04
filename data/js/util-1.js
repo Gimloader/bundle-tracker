@@ -1,7 +1,7 @@
 import {
     av as At,
     aw as X
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 var gr = {},
     vr = {},
     hr, me;

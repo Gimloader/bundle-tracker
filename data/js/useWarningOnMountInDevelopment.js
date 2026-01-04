@@ -1,6 +1,6 @@
 import {
     s as n
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 
 function s(e) {
     n(function() {})

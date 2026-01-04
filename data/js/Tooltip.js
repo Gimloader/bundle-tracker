@@ -9,7 +9,7 @@ import {
     aB as yt,
     dJ as nr,
     aC as Pe
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     u as wt,
     d as or,
@@ -18,10 +18,10 @@ import {
     c as ke,
     e as ar,
     a as sr
-} from "./capitalize-DYAFKEJ7.js";
+} from "./capitalize.js";
 import {
     _ as ur
-} from "./inheritsLoose-CU-hyjUj.js";
+} from "./inheritsLoose.js";
 
 function xt() {
     var e = wt() || or;

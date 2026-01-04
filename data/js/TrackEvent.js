@@ -1,10 +1,10 @@
 import {
     l as r,
     ad as n
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     T as p
-} from "./TrackPostHogEvent-BOHwnqir.js";
+} from "./TrackPostHogEvent.js";
 const s = e => {
     var o, t, c;
     window.gtag && !((o = e.blockedSource) != null && o.google) && window.gtag("event", e.event, e.properties), ((t = r()) == null ? void 0 : t.accountType) === n.educator && ((c = e.blockedSource) != null && c.posthog || p({

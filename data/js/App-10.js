@@ -60,7 +60,7 @@ import {
     C as Ct,
     Z as St,
     T as wt
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     b as _,
     a as Le,
@@ -68,118 +68,118 @@ import {
     s as P,
     G as ue,
     S as kt
-} from "./App-CVsQbxzN.js";
+} from "./App-4.js";
 import {
     o as U
-} from "./mobxreact.esm-Ws-CV3HT.js";
+} from "./mobxreact.esm.js";
 import {
     A as te
-} from "./AccessibleAnchor-C5KFFiup.js";
+} from "./AccessibleAnchor.js";
 import {
     M as le
-} from "./MenuItem-DD2t2rp-.js";
+} from "./MenuItem.js";
 import {
     R as It
-} from "./PlayCircleOutlined-CxebZFp5.js";
+} from "./PlayCircleOutlined.js";
 import {
     R as Nt
-} from "./QuestionCircleOutlined-BQK1Tego.js";
+} from "./QuestionCircleOutlined.js";
 import {
     i as Pe
-} from "./ContinueButton-CoGA3WWh.js";
+} from "./ContinueButton.js";
 import {
     M as $t,
     a as Pt
-} from "./NameAndPasswordStage-0xPQ51fN.js";
+} from "./NameAndPasswordStage.js";
 import {
     I as J,
     R as Bt
-} from "./index-CrBw-JUo.js";
+} from "./index-3.js";
 import {
     v as Et,
     F as Tt
-} from "./EmailStage-DqJq-WlQ.js";
+} from "./EmailStage.js";
 import {
     E as At
-} from "./ErrorMessage-BmZBzmwA.js";
+} from "./ErrorMessage.js";
 import {
     g as Mt,
     R as zt
-} from "./index-D2z5EOhv.js";
+} from "./index-10.js";
 import {
     LIBRARY_CACHE_KEY as Rt
-} from "./SchoolLibrary-BVRhW2oh.js";
+} from "./SchoolLibrary.js";
 import {
     S as Ft
-} from "./School-CJDiV7fi.js";
+} from "./School.js";
 import {
     D as Ot
-} from "./index-txCQgMuj.js";
+} from "./index-6.js";
 import {
     L as Y
-} from "./AppTypes-CyYfgWns.js";
+} from "./AppTypes.js";
 import {
     S as he
-} from "./index-7_9qGeDt.js";
+} from "./index-8.js";
 import {
     g as Dt,
     a as Lt,
     b as Gt
-} from "./Language-BH3GJlTJ.js";
+} from "./Language.js";
 import {
     S as Se
-} from "./index-B9GXaOh9.js";
+} from "./index-9.js";
 import {
     s as Ge
-} from "./index-C3nE64hA.js";
+} from "./index-4.js";
 import {
     u as Wt
-} from "./useQuery-Bxz3ggSG.js";
+} from "./useQuery.js";
 import {
     T as We
-} from "./index-CgktaOfj.js";
+} from "./index-12.js";
 import {
     S as _t
-} from "./index-Dx05C7sF.js";
+} from "./index-2.js";
 import {
     c as fe
-} from "./Money-D0tDDSr3.js";
+} from "./Money.js";
 import {
     l as Ut
-} from "./stripe.esm-Vr-Q6Y1S.js";
+} from "./stripe.esm.js";
 import {
     R as Be
-} from "./index-BHb_x4P0.js";
+} from "./index-13.js";
 import {
     R as Ht
-} from "./StarOutlined-BGGlbh6F.js";
+} from "./StarOutlined.js";
 import {
     F as Kt
-} from "./FillRemainingSpace-Bjf2gprg.js";
-import "./Shortcut-CMqBR2Ku.js";
-import "./Names-DfDh6qGd.js";
-import "./index-DWUaWm5X.js";
-import "./FontAwesomeIcon-CiZylb_V.js";
-import "./App-BKUv5aDr.js";
-import "./Sizes-BhgpZp_e.js";
-import "./motion-C-xmDj6Z.js";
-import "./price-1Xs9YDh1.js";
-import "./TrackPostHogEvent-BOHwnqir.js";
-import "./NavigateTo-B9Fkdix9.js";
-import "./index-WAenXna7.js";
-import "./colors-DeP7YnlJ.js";
-import "./useWarningOnMountInDevelopment-VsZQFfAu.js";
-import "./index-DwJM4HGs.js";
-import "./move-BQfrK9lH.js";
-import "./KitPreview-CYll-wnr.js";
-import "./ImagePreview-D1w737eq.js";
-import "./getCloudinaryUrl-Drn97BLG.js";
-import "./index.es-C7rPLWlk.js";
-import "./CheckOutlined-BVeheXUJ.js";
-import "./DownOutlined-2rilSz_X.js";
-import "./context-CjY8B7F1.js";
-import "./useBubbleLock-iAvgPw8B.js";
-import "./useForm-BgB5oypL.js";
+} from "./FillRemainingSpace.js";
+import "./Shortcut.js";
+import "./Names.js";
+import "./index-1.js";
+import "./FontAwesomeIcon.js";
+import "./App-2.js";
+import "./Sizes.js";
+import "./motion.js";
+import "./price.js";
+import "./TrackPostHogEvent.js";
+import "./NavigateTo.js";
+import "./index-15.js";
+import "./colors.js";
+import "./useWarningOnMountInDevelopment.js";
+import "./index-5.js";
+import "./move.js";
+import "./KitPreview.js";
+import "./ImagePreview.js";
+import "./getCloudinaryUrl.js";
+import "./index.es.js";
+import "./CheckOutlined.js";
+import "./DownOutlined.js";
+import "./context.js";
+import "./useBubbleLock.js";
+import "./useForm.js";
 var _e = I.forwardRef(function(t, n) {
     var a = t.prefixCls,
         s = t.forceRender,

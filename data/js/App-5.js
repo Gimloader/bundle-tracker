@@ -5,17 +5,17 @@ import {
     e as g,
     j as r,
     d as l
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     a,
     S as f
-} from "./Shortcut-CMqBR2Ku.js";
+} from "./Shortcut.js";
 import {
     A as v
-} from "./AccessibleAnchor-C5KFFiup.js";
+} from "./AccessibleAnchor.js";
 import {
     S as j
-} from "./index-Dx05C7sF.js";
+} from "./index-2.js";
 const S = e => {
         const {
             theme: t,

@@ -1,7 +1,7 @@
 import {
     bJ as p,
     ay as y
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 var e = {},
     d;
 

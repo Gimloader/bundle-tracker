@@ -1,4 +1,4 @@
-import "./index-JueF_e_O.js";
+import "./_index.js";
 const s = o => {};
 export {
     s as T

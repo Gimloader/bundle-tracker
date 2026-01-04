@@ -9,10 +9,10 @@ import {
     aM as qt,
     x as j,
     ay as Gt
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     _ as vt
-} from "./inheritsLoose-CU-hyjUj.js";
+} from "./inheritsLoose.js";
 var ee = {
         black: "#000",
         white: "#fff"

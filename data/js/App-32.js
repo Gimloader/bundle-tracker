@@ -7,10 +7,10 @@ import {
     S as n,
     h as i,
     a5 as u
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     N as e
-} from "./NavigateTo-B9Fkdix9.js";
+} from "./NavigateTo.js";
 const d = () => (o.useEffect(() => {
     const s = a("token");
     if (!s) {

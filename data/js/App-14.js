@@ -25,70 +25,70 @@ import {
     u as Le,
     R as Es,
     q as xs
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     o as pt
-} from "./mobxreact.esm-Ws-CV3HT.js";
+} from "./mobxreact.esm.js";
 import {
     b as te,
     c as Vt,
     T as Rt
-} from "./Question-DFBLELga.js";
+} from "./Question.js";
 import {
     I as tn,
     R as As
-} from "./index-CrBw-JUo.js";
+} from "./index-3.js";
 import {
     T as Ts
-} from "./index-DwJM4HGs.js";
+} from "./index-5.js";
 import {
     s as Ft
-} from "./index-C3nE64hA.js";
+} from "./index-4.js";
 import {
     U as Ms
-} from "./index-DxCRByv8.js";
+} from "./index-19.js";
 import {
     U as cr
-} from "./App-BKUv5aDr.js";
+} from "./App-2.js";
 import {
     A as wn
-} from "./AccessibleAnchor-C5KFFiup.js";
+} from "./AccessibleAnchor.js";
 import {
     g as lr
-} from "./getCloudinaryUrl-Drn97BLG.js";
+} from "./getCloudinaryUrl.js";
 import {
     D as ur
-} from "./index-txCQgMuj.js";
+} from "./index-6.js";
 import {
     I as dr
-} from "./ImagePreview-D1w737eq.js";
+} from "./ImagePreview.js";
 import {
     R as Ss
-} from "./SaveOutlined-BRYoELXo.js";
+} from "./SaveOutlined.js";
 import {
     R as Rs
-} from "./PlayCircleOutlined-CxebZFp5.js";
+} from "./PlayCircleOutlined.js";
 import {
     R as fr
-} from "./DeleteOutlined-pTRLjAw2.js";
+} from "./DeleteOutlined.js";
 import {
     v as ks
-} from "./mathlive.min-r4T0zT1q.js";
+} from "./mathlive.min.js";
 import {
     L as hr
-} from "./LazyLatexRenderer-QF7uKX2E.js";
+} from "./LazyLatexRenderer.js";
 import {
     S as kt
-} from "./index-7_9qGeDt.js";
+} from "./index-8.js";
 import {
     D as Is
-} from "./index-D2z5EOhv.js";
+} from "./index-10.js";
 import {
     T as Ns
-} from "./Tooltip-vn9HqO7T.js";
+} from "./Tooltip.js";
 import {
     R as It
-} from "./index-BHb_x4P0.js";
+} from "./index-13.js";
 var Os = {
         icon: {
             tag: "svg",

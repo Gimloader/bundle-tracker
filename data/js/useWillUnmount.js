@@ -1,6 +1,6 @@
 import {
     r
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 
 function o(t) {
     r.useEffect(function() {

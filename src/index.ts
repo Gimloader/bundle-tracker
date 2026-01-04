@@ -64,44 +64,50 @@ bar.update(0, { status: "Fetching index file" });
 
 const indexRes = await fetch(assets + indexUrl);
 const index = await indexRes.text();
-await fsp.writeFile(join(jsPath, "_index.js"), format(index));
 
 const start = index.indexOf("=[") + 1;
 const end = index.indexOf("]", start) + 1;
 const urls: string[] = JSON.parse(index.slice(start, end))
     .map((url: string) => url.split("/").pop());
+const names = urls.map((url) => url.slice(0, -12));
 
+// Add a count to duplicate names
 const nameCount: Record<string, number> = {};
-for(let url of urls) {
-    const name = getName(url);
-
+for(const name of names) {
     nameCount[name] ??= 0;
     nameCount[name]++;
 }
 
+const nameCountup: Record<string, number> = {};
+for(let i = 0; i < names.length; i++) {
+    let name = names[i];
+
+    if(nameCount[name] === 1) {
+        names[i] = `${name}.js`;
+    } else {
+        nameCountup[name] ??= 0;
+        nameCountup[name]++;
+    
+        names[i] = `${name}-${nameCountup[name]}.js`;
+    }
+}
+
+// Write the index file
+await fsp.writeFile(join(jsPath, "_index.js"), format(index));
+
 // Download all the assets
 bar.start(urls.length, 0, { status: "Downloading assets" });
-const nameCountup: Record<string, number> = {};
 
 let urlMap: Record<string, string> = {};
 for(let i = 0; i < urls.length; i++) {
     const url = urls[i];
-    let name = getName(url);
-
-    if(nameCount[name] > 1) {
-        nameCountup[name] ??= 0;
-        nameCountup[name]++;
-
-        name = `${name}-${nameCountup[name]}`;
-    }
-
-    name += ".js";
+    const name = names[i];
     urlMap[name] = url;
-    
+
     bar.increment(1, { status: url });
 
     const res = await fetch(assets + url);
-    const text = await res.text();
+    let text = await res.text();
 
     await fsp.writeFile(join(jsPath, name), format(text));
 }
@@ -112,10 +118,13 @@ lastRunFile.write(JSON.stringify({ lastIndex, urls: urlMap }, null, 4));
 if(push) pushChanges();
 
 function format(js: string) {
-    return beautify.js(js);
-}
+    js = beautify.js(js);
 
-function getName(url: string) {
-    url = url.slice(0, -12); // Remove hash
-    return url;
+    // Replace the names in the file with the local names
+    js = js.replaceAll(indexUrl, "_index.js");
+    for(let j = 0; j < urls.length; j++) {
+        js = js.replaceAll(urls[j], names[j]);
+    }
+
+    return js;
 }

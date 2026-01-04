@@ -1,6 +1,6 @@
 import {
     d as e
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 const t = e.div.attrs({
         className: "flex-center"
     })``,

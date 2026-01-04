@@ -1,6 +1,6 @@
 import {
     r as t
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 
 function c() {
     const [, e] = t.useReducer(r => r + 1, 0);

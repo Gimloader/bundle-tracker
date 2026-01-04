@@ -9,14 +9,14 @@ import {
     f as j,
     l as n,
     W as h
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     N as c
-} from "./NavigateTo-B9Fkdix9.js";
+} from "./NavigateTo.js";
 import {
     A as p
-} from "./TrackEvent-C_GWthE7.js";
-import "./TrackPostHogEvent-BOHwnqir.js";
+} from "./TrackEvent.js";
+import "./TrackPostHogEvent.js";
 const k = () => {
     const {
         id: u

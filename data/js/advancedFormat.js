@@ -1,6 +1,6 @@
 import {
     ay as g
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 var t = {
         exports: {}
     },

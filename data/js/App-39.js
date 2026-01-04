@@ -13,37 +13,37 @@ import {
     a as v,
     S as b,
     a5 as P
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     N as w
-} from "./NavigateTo-B9Fkdix9.js";
+} from "./NavigateTo.js";
 import {
     M as N
-} from "./Button-CBuBagqn.js";
+} from "./Button.js";
 import {
     P as y
-} from "./Paper-Cctx9C_2.js";
+} from "./Paper.js";
 import {
     I as S
-} from "./ImagePreview-D1w737eq.js";
-import C from "./PreviewComponent-B5A_8x7B.js";
-import "./polished.esm-BFSwQt3g.js";
-import "./inheritsLoose-CU-hyjUj.js";
-import "./getCloudinaryUrl-Drn97BLG.js";
-import "./GimkitLiveQuestion-BILd1qX5.js";
-import "./mobxreact.esm-Ws-CV3HT.js";
-import "./Text-BG42uZ1H.js";
-import "./LazyLatexRenderer-QF7uKX2E.js";
-import "./capitalize-DYAFKEJ7.js";
-import "./Tooltip-vn9HqO7T.js";
-import "./howler-UOSvF1UN.js";
-import "./index-DWUaWm5X.js";
-import "./motion-C-xmDj6Z.js";
-import "./index-DL0cV8G6.js";
-import "./use-force-update-CUG7AAkp.js";
-import "./use-motion-value-nqeTFb0U.js";
-import "./sounds-93SWFkZP.js";
-import "./GetAssetPath-D1U8ycN4.js";
+} from "./ImagePreview.js";
+import C from "./PreviewComponent.js";
+import "./polished.esm.js";
+import "./inheritsLoose.js";
+import "./getCloudinaryUrl.js";
+import "./GimkitLiveQuestion.js";
+import "./mobxreact.esm.js";
+import "./Text.js";
+import "./LazyLatexRenderer.js";
+import "./capitalize.js";
+import "./Tooltip.js";
+import "./howler.js";
+import "./index-1.js";
+import "./motion.js";
+import "./index-17.js";
+import "./use-force-update.js";
+import "./use-motion-value.js";
+import "./sounds.js";
+import "./GetAssetPath.js";
 const z = t => e.jsx(k, {
         children: e.jsxs(q, {
             children: [e.jsx(S, {

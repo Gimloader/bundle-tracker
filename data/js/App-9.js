@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/index-B1tmqTQC.js", "assets/index-JueF_e_O.js", "assets/index-BdOndhxL.css", "assets/mobxreact.esm-Ws-CV3HT.js", "assets/QuizTypes-SHiKhVER.js", "assets/colors-DeP7YnlJ.js", "assets/howler-UOSvF1UN.js", "assets/Codes-PICm55I_.js", "assets/GimkitLiveQuestion-BILd1qX5.js", "assets/Text-BG42uZ1H.js", "assets/getCloudinaryUrl-Drn97BLG.js", "assets/LazyLatexRenderer-QF7uKX2E.js", "assets/capitalize-DYAFKEJ7.js", "assets/inheritsLoose-CU-hyjUj.js", "assets/Tooltip-vn9HqO7T.js", "assets/polished.esm-BFSwQt3g.js", "assets/index-DWUaWm5X.js", "assets/motion-C-xmDj6Z.js", "assets/index-DL0cV8G6.js", "assets/use-force-update-CUG7AAkp.js", "assets/use-motion-value-nqeTFb0U.js", "assets/index-B_0sYKOr.js", "assets/___vite-browser-external_commonjs-proxy-DeUptP8y.js", "assets/index-B9GXaOh9.js", "assets/index-CrBw-JUo.js", "assets/index-txCQgMuj.js", "assets/confetti-DksIvCVY.js", "assets/CircularProgress-Cjtfl07m.js", "assets/index-SU-vsWE_.js", "assets/react-DC_dH8yc.js", "assets/index-B0XdKQV8.js", "assets/DownOutlined-2rilSz_X.js", "assets/FontAwesomeIcon-CiZylb_V.js", "assets/FillRemainingSpace-Bjf2gprg.js", "assets/index-WAenXna7.js", "assets/index-DwJM4HGs.js", "assets/util-nmJ0flFl.js", "assets/util-D-n1b5ES.js", "assets/index-C6DGnVdy.js", "assets/context-CjY8B7F1.js", "assets/AccessibleAnchor-C5KFFiup.js", "assets/index-C-9G_OzQ.css", "assets/App-B0dDw-d0.js", "assets/Button-CBuBagqn.js", "assets/FixSpinePlugin-E56Jvrv3.js", "assets/GetAssetPath-D1U8ycN4.js", "assets/MapModeType-BXMqp17U.js", "assets/MapStyle-TMfqPjvX.js", "assets/playSound-CvicM7PA.js", "assets/index-CUTNmZIZ.js", "assets/TutorialConsts-Cbgfa92X.js", "assets/ActionButton-sk7r6RJ5.js", "assets/Centered-Cf2wQqVp.js", "assets/CapitalizeFirstLetter-BbjzObVf.js", "assets/index-C3nE64hA.js", "assets/index-Dx05C7sF.js", "assets/index-D1cRRXef.js", "assets/EditOutlined-B6aDouN2.js", "assets/styleChecker-C-hCCLqu.js", "assets/CheckOutlined-BVeheXUJ.js", "assets/CopyOutlined-D8Tnfq0_.js", "assets/SixteenByNineScaler-BZNeH1GC.js", "assets/index-Glo9ShIH.js", "assets/index-CIVQhjGU.js", "assets/progress-9Vcji5fP.js", "assets/ElementIds-BgK3Rezn.js", "assets/SeasonTicketName-BN_q1-rH.js", "assets/useQuery-Bxz3ggSG.js", "assets/Shortcut-CMqBR2Ku.js", "assets/Names-DfDh6qGd.js", "assets/useWillUnmount-CP6Tyjal.js", "assets/use-transform-C2uDmKx-.js", "assets/useIntervalWhen-Cb69gNsp.js", "assets/index-D2z5EOhv.js", "assets/move-BQfrK9lH.js", "assets/react-flip-move.es-DZwKnzDW.js", "assets/sounds-93SWFkZP.js", "assets/App-Cn07I0ls.js", "assets/AnimatedBackground-CStbvNAZ.js", "assets/useDebouncedValue-CPtF_pfw.js", "assets/index-YKp-XwVu.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/index-B1tmqTQC.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/mobxreact.esm.js", "assets/QuizTypes.js", "assets/colors.js", "assets/howler.js", "assets/Codes.js", "assets/GimkitLiveQuestion.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/capitalize.js", "assets/inheritsLoose.js", "assets/Tooltip.js", "assets/polished.esm.js", "assets/index-1.js", "assets/motion.js", "assets/index-17.js", "assets/use-force-update.js", "assets/use-motion-value.js", "assets/index-B_0sYKOr.js", "assets/___vite-browser-external_commonjs-proxy.js", "assets/index-9.js", "assets/index-3.js", "assets/index-6.js", "assets/confetti-DksIvCVY.js", "assets/CircularProgress.js", "assets/index-23.js", "assets/react.js", "assets/index-7.js", "assets/DownOutlined.js", "assets/FontAwesomeIcon.js", "assets/FillRemainingSpace.js", "assets/index-15.js", "assets/index-5.js", "assets/util-2.js", "assets/util-1.js", "assets/index-18.js", "assets/context.js", "assets/AccessibleAnchor.js", "assets/index-C-9G_OzQ.css", "assets/App-41.js", "assets/Button.js", "assets/FixSpinePlugin.js", "assets/GetAssetPath.js", "assets/MapModeType.js", "assets/MapStyle.js", "assets/playSound.js", "assets/index-21.js", "assets/TutorialConsts.js", "assets/ActionButton.js", "assets/Centered.js", "assets/CapitalizeFirstLetter.js", "assets/index-4.js", "assets/index-2.js", "assets/index-14.js", "assets/EditOutlined.js", "assets/styleChecker.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/SixteenByNineScaler.js", "assets/index-20.js", "assets/index-22.js", "assets/progress.js", "assets/ElementIds.js", "assets/SeasonTicketName.js", "assets/useQuery.js", "assets/Shortcut.js", "assets/Names.js", "assets/useWillUnmount.js", "assets/use-transform.js", "assets/useIntervalWhen.js", "assets/index-10.js", "assets/move.js", "assets/react-flip-move.es.js", "assets/sounds.js", "assets/App-5.js", "assets/AnimatedBackground-2.js", "assets/useDebouncedValue.js", "assets/index-24.js"]))) => i.map(i => d[i]);
 import {
     j as jsxRuntimeExports,
     e as Colors,
@@ -26,31 +26,31 @@ import {
     aA as ft,
     n as useParams,
     p as __vitePreload
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     l as libExports
-} from "./index-WAenXna7.js";
+} from "./index-15.js";
 import {
     E as ExperienceSource
-} from "./QuizTypes-SHiKhVER.js";
+} from "./QuizTypes.js";
 import {
     F as FillRemainingSpace
-} from "./FillRemainingSpace-Bjf2gprg.js";
+} from "./FillRemainingSpace.js";
 import {
     c as curriedLighten$1
-} from "./polished.esm-BFSwQt3g.js";
+} from "./polished.esm.js";
 import {
     C as Colors$1
-} from "./colors-DeP7YnlJ.js";
+} from "./colors.js";
 import {
     C as CircularProgress
-} from "./CircularProgress-Cjtfl07m.js";
+} from "./CircularProgress.js";
 import {
     m as motion
-} from "./motion-C-xmDj6Z.js";
+} from "./motion.js";
 import {
     T as Tooltip
-} from "./index-DwJM4HGs.js";
+} from "./index-5.js";
 import {
     r as requireSafeBuffer$1,
     a as require_stream_readable$1,
@@ -67,24 +67,24 @@ import {
     l as requireProcessNextickArgs,
     m as requireUtil$2,
     n as requireBrowser$c
-} from "./util-nmJ0flFl.js";
+} from "./util-2.js";
 import {
     r as requireInherits_browser,
     a as requireCallBound,
     b as requireIsTypedArray,
     c as requireType,
     d as requireUtil$1
-} from "./util-D-n1b5ES.js";
+} from "./util-1.js";
 import {
     A as AnimatePresence,
     u as useTimeoutWhen
-} from "./index-DL0cV8G6.js";
+} from "./index-17.js";
 import {
     s as staticMethods
-} from "./index-C6DGnVdy.js";
+} from "./index-18.js";
 import {
     A as AccessibleAnchor
-} from "./AccessibleAnchor-C5KFFiup.js";
+} from "./AccessibleAnchor.js";
 const JoinBackgroundContainer = s => jsxRuntimeExports.jsx(FillRemainingSpace, {
         children: jsxRuntimeExports.jsx(Container$5, {
             children: s.children
@@ -15647,7 +15647,7 @@ const StegCloak = getDefaultExportFromCjs(stegcloakExports),
         })
     },
     Play = libExports.lazyWithPreload(() => __vitePreload(() => import("./index-B1tmqTQC.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]))),
-    MapApp = libExports.lazyWithPreload(() => __vitePreload(() => import("./App-B0dDw-d0.js").then(s => s.bb), __vite__mapDeps([42, 1, 2, 43, 15, 13, 44, 45, 46, 47, 48, 6, 3, 49, 4, 50, 51, 35, 38, 39, 32, 52, 53, 54, 17, 55, 56, 57, 58, 24, 59, 60, 61, 62, 63, 16, 64, 65, 66, 67, 22, 37, 36, 68, 69, 70, 20, 71, 25, 40, 27, 12, 18, 19, 8, 9, 10, 11, 14, 23, 28, 72, 73, 74, 75, 76, 77, 78, 79, 33, 80]))),
+    MapApp = libExports.lazyWithPreload(() => __vitePreload(() => import("./App-41.js").then(s => s.bb), __vite__mapDeps([42, 1, 2, 43, 15, 13, 44, 45, 46, 47, 48, 6, 3, 49, 4, 50, 51, 35, 38, 39, 32, 52, 53, 54, 17, 55, 56, 57, 58, 24, 59, 60, 61, 62, 63, 16, 64, 65, 66, 67, 22, 37, 36, 68, 69, 70, 20, 71, 25, 40, 27, 12, 18, 19, 8, 9, 10, 11, 14, 23, 28, 72, 73, 74, 75, 76, 77, 78, 79, 33, 80]))),
     Join = () => {
         const [s, r] = useBoolean(!1), [n, i] = useBoolean(!1), [f, e] = reactExports.useState(), [d, l] = reactExports.useState(""), [v, a] = reactExports.useState(""), [u, h] = reactExports.useState(""), {
             assignmentId: p

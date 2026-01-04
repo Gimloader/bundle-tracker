@@ -4,10 +4,10 @@ import {
     M as n,
     e as l,
     d as c
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     g
-} from "./getCloudinaryUrl-Drn97BLG.js";
+} from "./getCloudinaryUrl.js";
 const d = c.img.attrs(i => ({
         src: i.image
     }))`

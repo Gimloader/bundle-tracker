@@ -2,12 +2,12 @@ import {
     r as i,
     aD as w,
     _ as x
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     w as C,
     c as D,
     a as N
-} from "./capitalize-DYAFKEJ7.js";
+} from "./capitalize.js";
 var a = 44,
     z = function(e) {
         return {

@@ -13,39 +13,39 @@ import {
     a as I,
     u as V,
     t as U
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     a as N,
     C as Y
-} from "./Centered-Cf2wQqVp.js";
+} from "./Centered.js";
 import {
     G as A
-} from "./GetAssetPath-D1U8ycN4.js";
+} from "./GetAssetPath.js";
 import {
     T as r,
     A as y,
     E as q,
     S as z
-} from "./ActionButton-sk7r6RJ5.js";
+} from "./ActionButton.js";
 import {
     D as s
-} from "./TutorialConsts-Cbgfa92X.js";
+} from "./TutorialConsts.js";
 import {
     F as w
-} from "./FontAwesomeIcon-CiZylb_V.js";
+} from "./FontAwesomeIcon.js";
 import {
     M as T
-} from "./Button-CBuBagqn.js";
+} from "./Button.js";
 import {
     A as Q
-} from "./AnimatedBackground-Dkunp09y.js";
+} from "./AnimatedBackground-1.js";
 import {
     P as $
-} from "./progress-9Vcji5fP.js";
-import "./index-DwJM4HGs.js";
-import "./polished.esm-BFSwQt3g.js";
-import "./inheritsLoose-CU-hyjUj.js";
-import "./CheckOutlined-BVeheXUJ.js";
+} from "./progress.js";
+import "./index-5.js";
+import "./polished.esm.js";
+import "./inheritsLoose.js";
+import "./CheckOutlined.js";
 const o = t => t.event === r.NEXT,
     n = t => e.jsx("span", {
         style: {

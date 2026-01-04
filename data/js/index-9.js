@@ -18,7 +18,7 @@ import {
     aR as Q,
     d4 as J,
     bB as U
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loadingIcon", "checkedChildren", "unCheckedChildren", "onClick", "onChange", "onKeyDown"],
     O = g.forwardRef(function(e, n) {
         var c, a = e.prefixCls,

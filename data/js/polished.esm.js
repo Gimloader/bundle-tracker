@@ -2,10 +2,10 @@ import {
     by as D,
     cX as P,
     _ as o
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     _ as E
-} from "./inheritsLoose-CU-hyjUj.js";
+} from "./inheritsLoose.js";
 var h = function(r) {
     E(e, r);
 

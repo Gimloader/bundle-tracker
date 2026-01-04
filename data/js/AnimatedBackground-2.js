@@ -1,7 +1,7 @@
 import {
     j as i,
     d as t
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 const s = e => i.jsxs(a, {
         children: [i.jsx(l, {
             children: e.children

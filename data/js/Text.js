@@ -18,21 +18,21 @@ import {
     o as Q,
     dN as bn,
     b5 as X
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     g as be
-} from "./getCloudinaryUrl-Drn97BLG.js";
+} from "./getCloudinaryUrl.js";
 import {
     L as Ot
-} from "./LazyLatexRenderer-QF7uKX2E.js";
+} from "./LazyLatexRenderer.js";
 import {
     o as _n
-} from "./mobxreact.esm-Ws-CV3HT.js";
+} from "./mobxreact.esm.js";
 import {
     w as je,
     c as se,
     a as Ce
-} from "./capitalize-DYAFKEJ7.js";
+} from "./capitalize.js";
 import {
     c as wn,
     s as xn,
@@ -42,13 +42,13 @@ import {
     d as Pt,
     e as ot,
     T as Mn
-} from "./Tooltip-vn9HqO7T.js";
+} from "./Tooltip.js";
 import {
     h as Ct
-} from "./howler-UOSvF1UN.js";
+} from "./howler.js";
 import {
     _ as zt
-} from "./inheritsLoose-CU-hyjUj.js";
+} from "./inheritsLoose.js";
 var Sn = function(e) {
         return {
             root: {

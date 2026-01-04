@@ -60,21 +60,21 @@ import {
     bZ as Or,
     d8 as Mr,
     b$ as Dr
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     R as Pr,
     m as Tr,
     n as Nr
-} from "./index-CrBw-JUo.js";
+} from "./index-3.js";
 import {
     i as dn
-} from "./move-BQfrK9lH.js";
+} from "./move.js";
 import {
     R as Br
-} from "./CheckOutlined-BVeheXUJ.js";
+} from "./CheckOutlined.js";
 import {
     R as Hr
-} from "./DownOutlined-2rilSz_X.js";
+} from "./DownOutlined.js";
 var Lt = function(t) {
         var n = t.className,
             o = t.customizeIcon,

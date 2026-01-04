@@ -1,10 +1,10 @@
 import {
     a as n,
     s as u
-} from "./motion-C-xmDj6Z.js";
+} from "./motion.js";
 import {
     r
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 
 function c() {
     const e = r.useRef(!1);

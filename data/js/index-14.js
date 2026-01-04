@@ -21,28 +21,28 @@ import {
     aU as _e,
     aI as xe,
     bn as ct
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     R as ut
-} from "./EditOutlined-B6aDouN2.js";
+} from "./EditOutlined.js";
 import {
     i as Se
-} from "./styleChecker-C-hCCLqu.js";
+} from "./styleChecker.js";
 import {
     T as pe
-} from "./index-DwJM4HGs.js";
+} from "./index-5.js";
 import {
     T as dt
-} from "./index-CrBw-JUo.js";
+} from "./index-3.js";
 import {
     c as pt
-} from "./index-Dx05C7sF.js";
+} from "./index-2.js";
 import {
     R as ft
-} from "./CheckOutlined-BVeheXUJ.js";
+} from "./CheckOutlined.js";
 import {
     R as mt
-} from "./CopyOutlined-D8Tnfq0_.js";
+} from "./CopyOutlined.js";
 const gt = (e, n = !1) => n && e == null ? [] : Array.isArray(e) ? e : [e];
 var bt = {
         icon: {

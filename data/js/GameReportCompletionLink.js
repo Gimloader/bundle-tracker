@@ -5,13 +5,13 @@ import {
     j as t,
     M as d,
     A as m
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     P as p
-} from "./Player-CRqvL7cm.js";
+} from "./Player.js";
 import {
     R as u
-} from "./BarChartOutlined-72EGKwIP.js";
+} from "./BarChartOutlined.js";
 const h = {
         icon: u,
         label: "View Report",

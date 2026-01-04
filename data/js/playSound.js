@@ -1,6 +1,6 @@
 import {
     h as c
-} from "./howler-UOSvF1UN.js";
+} from "./howler.js";
 const n = new Map,
     w = e => {
         const t = Date.now();

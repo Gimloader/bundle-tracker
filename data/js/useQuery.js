@@ -14,7 +14,7 @@ import {
     r as S,
     cH as J,
     cI as X
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 class Y extends V {
     constructor(e, t) {
         super(), this.client = e, this.options = t, this.trackedProps = new Set, this.selectError = null, this.bindMethods(), this.setOptions(t)

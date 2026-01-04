@@ -1,9 +1,9 @@
 import {
     h as e
-} from "./howler-UOSvF1UN.js";
+} from "./howler.js";
 import {
     G as s
-} from "./GetAssetPath-D1U8ycN4.js";
+} from "./GetAssetPath.js";
 const c = {
     correct: new e.Howl({
         src: [s("devices/gimkit_live_question/sounds/correct.mp3")],

@@ -3,7 +3,7 @@ import {
     ay as Y,
     r as l,
     s as Z
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 var R, _;
 
 function w() {

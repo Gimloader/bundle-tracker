@@ -8,7 +8,7 @@ var La = (V, T, E) => T in V ? wa(V, T, {
 var z = (V, T, E) => La(V, typeof T != "symbol" ? T + "" : T, E);
 import {
     G as ds
-} from "./GetAssetPath-D1U8ycN4.js";
+} from "./GetAssetPath.js";
 import {
     m as Ot,
     o as j,
@@ -18,16 +18,16 @@ import {
     at as Ia,
     aw as gi,
     ay as Da
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     M as Qn
-} from "./MapModeType-BXMqp17U.js";
+} from "./MapModeType.js";
 import {
     M as Ws
-} from "./MapStyle-TMfqPjvX.js";
+} from "./MapStyle.js";
 import {
     p as $n
-} from "./playSound-CvicM7PA.js";
+} from "./playSound.js";
 var jn = (V => (V.preload = "preload", V.game = "game", V))(jn || {}),
     Ba = Object.defineProperty,
     kn = (V, T, E, M) => {

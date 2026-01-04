@@ -1,6 +1,6 @@
 import {
     j as e
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 const t = s => e.jsx("i", {
     className: `${s.name}${s.className?` ${s.className}`:""}`,
     style: s.style

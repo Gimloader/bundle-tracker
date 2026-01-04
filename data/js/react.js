@@ -1,6 +1,6 @@
 import {
     bJ as z
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 var k = {
         exports: {}
     },

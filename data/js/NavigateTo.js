@@ -1,6 +1,6 @@
 import {
     ct as t
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 const a = o => {
     t.push(o)
 };

@@ -22,66 +22,66 @@ import {
     n as K,
     T as X,
     A as Z
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     P as ee
-} from "./Paper-Cctx9C_2.js";
+} from "./Paper.js";
 import {
     u as te
-} from "./useQuery-Bxz3ggSG.js";
+} from "./useQuery.js";
 import {
     c as ae,
     S as v
-} from "./index-Dx05C7sF.js";
+} from "./index-2.js";
 import {
     I as A
-} from "./index-CrBw-JUo.js";
+} from "./index-3.js";
 import {
     s as k
-} from "./index-C3nE64hA.js";
+} from "./index-4.js";
 import {
     N as E
-} from "./NavigateTo-B9Fkdix9.js";
+} from "./NavigateTo.js";
 import {
     i as se,
     F as re
-} from "./useClasses-BLMDwT0Q.js";
+} from "./useClasses.js";
 import {
     F as C
-} from "./index-Cb9CjGY0.js";
+} from "./index-16.js";
 import {
     F as I
-} from "./FontAwesomeIcon-CiZylb_V.js";
+} from "./FontAwesomeIcon.js";
 import {
     T as ne
-} from "./index-DwJM4HGs.js";
+} from "./index-5.js";
 import {
     R as ie
-} from "./CheckOutlined-BVeheXUJ.js";
+} from "./CheckOutlined.js";
 import {
     D as $
-} from "./index-D2z5EOhv.js";
+} from "./index-10.js";
 import {
     R as M
-} from "./EditOutlined-B6aDouN2.js";
+} from "./EditOutlined.js";
 import {
     R as oe
-} from "./UsergroupAddOutlined-DHD6lQOl.js";
+} from "./UsergroupAddOutlined.js";
 import {
     R as W
-} from "./DeleteOutlined-pTRLjAw2.js";
+} from "./DeleteOutlined.js";
 import {
     S
-} from "./StopPropagation-jekF225_.js";
+} from "./StopPropagation.js";
 import {
     U as le
-} from "./App-BKUv5aDr.js";
+} from "./App-2.js";
 import {
     S as ce
-} from "./App-Cn07I0ls.js";
+} from "./App-5.js";
 import {
     S as de
-} from "./App-CVsQbxzN.js";
+} from "./App-4.js";
 const z = ["group"],
     me = t => te({
         queryKey: [z, t],

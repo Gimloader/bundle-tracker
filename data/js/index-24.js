@@ -1,6 +1,6 @@
 import {
     x as r
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 var d = "__wrap_b",
     f = "__wrap_o",
     h = typeof window > "u",

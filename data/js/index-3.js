@@ -36,7 +36,7 @@ import {
     B as Pt,
     bg as rt,
     bn as Nt
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 
 function Ve(e, t, r) {
     return T({

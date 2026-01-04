@@ -4,10 +4,10 @@ import {
     P as o,
     k as s,
     ct as r
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     N as i
-} from "./NavigateTo-B9Fkdix9.js";
+} from "./NavigateTo.js";
 const e = () => a() ? t() ? o : s : "/",
     m = () => {
         i(e())

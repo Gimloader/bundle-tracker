@@ -22,91 +22,91 @@ import {
     T as H,
     n as ae,
     a2 as le
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     T as K
-} from "./index-DwJM4HGs.js";
+} from "./index-5.js";
 import {
     I as U
-} from "./index-CrBw-JUo.js";
+} from "./index-3.js";
 import {
     P as ce
-} from "./Paper-Cctx9C_2.js";
+} from "./Paper.js";
 import {
     c as de,
     S as w
-} from "./index-Dx05C7sF.js";
+} from "./index-2.js";
 import {
     s as me
-} from "./index-C3nE64hA.js";
+} from "./index-4.js";
 import {
     a as he
-} from "./advancedFormat-Cxo7fGHE.js";
+} from "./advancedFormat.js";
 import {
     a as xe
-} from "./GameReportCompletionLink-DFWNVURB.js";
+} from "./GameReportCompletionLink.js";
 import {
     M as B,
     D as ge
-} from "./index-D2z5EOhv.js";
+} from "./index-10.js";
 import {
     R as x
-} from "./index-BHb_x4P0.js";
+} from "./index-13.js";
 import {
     I as ue,
     f as pe,
     g as fe
-} from "./App-Bm_VwUT0.js";
+} from "./App-3.js";
 import {
     A as Y
-} from "./AccessibleAnchor-C5KFFiup.js";
+} from "./AccessibleAnchor.js";
 import {
     I as je
-} from "./ImagePreview-D1w737eq.js";
+} from "./ImagePreview.js";
 import {
     M as ve
-} from "./MapModeType-BXMqp17U.js";
+} from "./MapModeType.js";
 import {
     N as ye
-} from "./NavigateTo-B9Fkdix9.js";
+} from "./NavigateTo.js";
 import {
     S as Ce
-} from "./App-CVsQbxzN.js";
-import "./context-CjY8B7F1.js";
-import "./Player-CRqvL7cm.js";
-import "./Question-DFBLELga.js";
-import "./LazyLatexRenderer-QF7uKX2E.js";
-import "./getCloudinaryUrl-Drn97BLG.js";
-import "./FontAwesomeIcon-CiZylb_V.js";
-import "./index-QLK40o1i.js";
-import "./useBubbleLock-iAvgPw8B.js";
-import "./index-CgktaOfj.js";
-import "./CopyOutlined-D8Tnfq0_.js";
-import "./EditOutlined-B6aDouN2.js";
-import "./App-BKUv5aDr.js";
-import "./Sizes-BhgpZp_e.js";
-import "./motion-C-xmDj6Z.js";
-import "./index-DWUaWm5X.js";
-import "./price-1Xs9YDh1.js";
-import "./TrackPostHogEvent-BOHwnqir.js";
-import "./StarOutlined-BGGlbh6F.js";
-import "./DownloadOutlined-BSnMj16b.js";
-import "./BarChartOutlined-72EGKwIP.js";
-import "./move-BQfrK9lH.js";
-import "./useForm-BgB5oypL.js";
-import "./mobxreact.esm-Ws-CV3HT.js";
-import "./Hook-gQ03nro0.js";
-import "./index-B0XdKQV8.js";
-import "./DownOutlined-2rilSz_X.js";
-import "./index-7_9qGeDt.js";
-import "./CheckOutlined-BVeheXUJ.js";
-import "./AppTypes-CyYfgWns.js";
-import "./Shortcut-CMqBR2Ku.js";
-import "./Names-DfDh6qGd.js";
-import "./index-txCQgMuj.js";
-import "./index-WAenXna7.js";
-import "./colors-DeP7YnlJ.js";
-import "./useWarningOnMountInDevelopment-VsZQFfAu.js";
+} from "./App-4.js";
+import "./context.js";
+import "./Player.js";
+import "./Question.js";
+import "./LazyLatexRenderer.js";
+import "./getCloudinaryUrl.js";
+import "./FontAwesomeIcon.js";
+import "./index-11.js";
+import "./useBubbleLock.js";
+import "./index-12.js";
+import "./CopyOutlined.js";
+import "./EditOutlined.js";
+import "./App-2.js";
+import "./Sizes.js";
+import "./motion.js";
+import "./index-1.js";
+import "./price.js";
+import "./TrackPostHogEvent.js";
+import "./StarOutlined.js";
+import "./DownloadOutlined.js";
+import "./BarChartOutlined.js";
+import "./move.js";
+import "./useForm.js";
+import "./mobxreact.esm.js";
+import "./Hook.js";
+import "./index-7.js";
+import "./DownOutlined.js";
+import "./index-8.js";
+import "./CheckOutlined.js";
+import "./AppTypes.js";
+import "./Shortcut.js";
+import "./Names.js";
+import "./index-6.js";
+import "./index-15.js";
+import "./colors.js";
+import "./useWarningOnMountInDevelopment.js";
 const be = t => {
         const [s, r, o] = j(!1), [n, l] = d.useState(t.title), [m, a] = d.useState(""), [c, $, Z] = j(!1), ee = T => a(T.target.value), _ = () => {
             c || ($(), y({

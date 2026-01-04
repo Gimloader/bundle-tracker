@@ -1,7 +1,7 @@
 import {
     j as n,
     a7 as l
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 const i = e => {
     const a = t => {
         e.onClick && t.key === "Enter" && (t.preventDefault(), e.onClick())

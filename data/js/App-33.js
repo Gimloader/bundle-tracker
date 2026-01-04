@@ -15,16 +15,16 @@ import {
     t as l,
     C as n,
     B as j
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 import {
     l as _
-} from "./stripe.esm-Vr-Q6Y1S.js";
+} from "./stripe.esm.js";
 import {
     S as B,
     F as H
-} from "./FetchStripeToken-Ch9BKS8b.js";
-import "./stores-DAvb2mRE.js";
-import "./NavigateTo-B9Fkdix9.js";
+} from "./FetchStripeToken.js";
+import "./stores.js";
+import "./NavigateTo.js";
 const V = s.div.attrs({
         className: "maxWidth maxHeight flex hc vc"
     })`

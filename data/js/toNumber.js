@@ -1,6 +1,6 @@
 import {
     av as G
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 var k, xe;
 
 function bt() {

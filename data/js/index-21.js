@@ -1,6 +1,6 @@
 import {
     az as un
-} from "./index-JueF_e_O.js";
+} from "./_index.js";
 var qe = {},
     ft = {},
     ht;
