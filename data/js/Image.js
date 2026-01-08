@@ -2,7 +2,7 @@ import {
     j as t,
     d as i,
     U as r,
-    i as o
+    i as a
 } from "./_index.js";
 import {
     b as c
@@ -107,17 +107,17 @@ const m = e => t.jsxs(p, {
         icon: "dog",
         title: "Play With Friends",
         description: "Host live games with up to 15 players!",
-        show: e => e ? o() : !0
+        show: e => e ? a() : !0
     }],
     w = e => t.jsx(u, {
         direction: "vertical",
         size: 20,
         className: "maxWidth",
-        children: y.filter(s => s.show ? s.show(e.forSelf) : !0).map((s, a) => t.jsx(m, {
+        children: y.filter(s => s.show ? s.show(e.forSelf) : !0).map((s, o) => t.jsx(m, {
             ...s
-        }, "benefit" + a))
+        }, "benefit" + o))
     }),
-    N = "January 14th",
+    N = "February 18th",
     I = n("stickers/season_1_2026.png");
 export {
     w as B, N as S, I as a
