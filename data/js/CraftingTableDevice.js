@@ -38,7 +38,7 @@ import {
 } from "./CapitalizeFirstLetter.js";
 import {
     at as Q
-} from "./index-25.js";
+} from "./_index.js";
 import {
     A as X
 } from "./AddOutline.js";

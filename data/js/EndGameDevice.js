@@ -15,7 +15,7 @@ import {
     an as n
 } from "./App-41.js";
 import "./TutorialConsts.js";
-import "./index-25.js";
+import "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";
 import "./inheritsLoose.js";

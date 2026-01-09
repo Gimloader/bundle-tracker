@@ -7,7 +7,7 @@ import {
     s as A,
     aj as M,
     F as y
-} from "./index-25.js";
+} from "./_index.js";
 import {
     ANIMATION_DURATION as b
 } from "./App-57.js";

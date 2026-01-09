@@ -10,7 +10,7 @@ import {
     am as e,
     an as s
 } from "./App-41.js";
-import "./index-25.js";
+import "./_index.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
 import "./playSound.js";

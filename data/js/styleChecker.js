@@ -1,6 +1,6 @@
 import {
     bq as o
-} from "./index-25.js";
+} from "./_index.js";
 var u = function(r) {
         if (o() && window.document.documentElement) {
             var e = Array.isArray(r) ? r : [r],

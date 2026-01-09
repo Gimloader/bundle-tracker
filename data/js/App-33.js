@@ -15,7 +15,7 @@ import {
     t as l,
     C as n,
     B as j
-} from "./index-25.js";
+} from "./_index.js";
 import {
     l as _
 } from "./stripe.esm.js";

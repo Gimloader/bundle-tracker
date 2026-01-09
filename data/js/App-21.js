@@ -4,7 +4,7 @@ import {
     F as o,
     D as s,
     T as a
-} from "./index-25.js";
+} from "./_index.js";
 import {
     L as c,
     a as l

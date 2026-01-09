@@ -1,6 +1,6 @@
 import {
     c0 as m
-} from "./index-25.js";
+} from "./_index.js";
 import {
     s as p,
     e,

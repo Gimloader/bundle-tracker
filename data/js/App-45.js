@@ -20,7 +20,7 @@ import {
     T as W,
     aj as _,
     ae as D
-} from "./index-25.js";
+} from "./_index.js";
 import {
     S as H,
     B as G,

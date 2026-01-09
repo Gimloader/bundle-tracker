@@ -14,7 +14,7 @@ import {
     at as b,
     a7 as w,
     T as R
-} from "./index-25.js";
+} from "./_index.js";
 import {
     a as C
 } from "./ContentContainer.js";

@@ -3,7 +3,7 @@ import {
     x as f,
     r as v,
     bg as h
-} from "./index-25.js";
+} from "./_index.js";
 import {
     u as x
 } from "./useForceUpdate.js";

@@ -20,7 +20,7 @@ import {
     E as U,
     cn as G,
     D as H
-} from "./index-25.js";
+} from "./_index.js";
 import {
     u as Q
 } from "./useQuery.js";

@@ -9,7 +9,7 @@ import {
     C as N,
     T as A,
     A as E
-} from "./index-25.js";
+} from "./_index.js";
 import {
     u as G,
     C as F,

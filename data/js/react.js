@@ -1,6 +1,6 @@
 import {
     bJ as z
-} from "./index-25.js";
+} from "./_index.js";
 var k = {
         exports: {}
     },

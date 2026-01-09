@@ -77,7 +77,7 @@ while(queue.length > 0) {
     // Add on any new assets
     const newUrls = getUrls(text);
     for(const newUrl of newUrls) {
-        if(seenUrls.has(newUrl) || url === indexUrl) continue;
+        if(seenUrls.has(newUrl) || newUrl === indexUrl) continue;
 
         seenUrls.add(newUrl);
         queue.push(newUrl);

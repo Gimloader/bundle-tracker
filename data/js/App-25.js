@@ -19,7 +19,7 @@ import {
     n as te,
     a0 as re,
     a5 as ae
-} from "./index-25.js";
+} from "./_index.js";
 import {
     v as se
 } from "./EmailStage.js";

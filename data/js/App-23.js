@@ -14,7 +14,7 @@ import {
     B as j,
     c3 as b,
     e as y
-} from "./index-25.js";
+} from "./_index.js";
 import {
     c as w
 } from "./index-2.js";

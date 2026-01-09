@@ -60,7 +60,7 @@ import {
     bZ as Or,
     d8 as Mr,
     b$ as Dr
-} from "./index-25.js";
+} from "./_index.js";
 import {
     R as Pr,
     m as Tr,

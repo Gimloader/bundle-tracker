@@ -10,7 +10,7 @@ import {
     M as C,
     U as k,
     D as y
-} from "./index-25.js";
+} from "./_index.js";
 import {
     C as b
 } from "./Centered.js";

@@ -4,7 +4,7 @@ import {
     B as I,
     d as s,
     U as _
-} from "./index-25.js";
+} from "./_index.js";
 import {
     o as B
 } from "./mobxreact.esm.js";

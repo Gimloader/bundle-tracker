@@ -24,7 +24,7 @@ import {
 } from "./playSound.js";
 import {
     at as A
-} from "./index-25.js";
+} from "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";
 import "./inheritsLoose.js";

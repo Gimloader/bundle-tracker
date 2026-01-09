@@ -2,7 +2,7 @@ import {
     aJ as y,
     al as L
 } from "./App-41.js";
-import "./index-25.js";
+import "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";
 import "./inheritsLoose.js";

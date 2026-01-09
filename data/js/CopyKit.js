@@ -1,7 +1,7 @@
 import {
     j as o,
     C as t
-} from "./index-25.js";
+} from "./_index.js";
 const e = {
     title: o.jsx(o.Fragment, {
         children: "Copy kits with Pro"

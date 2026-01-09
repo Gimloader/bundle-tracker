@@ -36,7 +36,7 @@ import {
     B as Pt,
     bg as rt,
     bn as Nt
-} from "./index-25.js";
+} from "./_index.js";
 
 function Ve(e, t, r) {
     return T({

@@ -7,7 +7,7 @@ import {
     d as l,
     as as _,
     w as se
-} from "./index-25.js";
+} from "./_index.js";
 import {
     o as O
 } from "./mobxreact.esm.js";

@@ -35,7 +35,7 @@ import {
 import {
     R as M
 } from "./RemoveOutline.js";
-import "./index-25.js";
+import "./_index.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
 import "./Button.js";

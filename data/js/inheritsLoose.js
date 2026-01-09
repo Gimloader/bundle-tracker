@@ -1,6 +1,6 @@
 import {
     d9 as e
-} from "./index-25.js";
+} from "./_index.js";
 
 function p(o, t) {
     o.prototype = Object.create(t.prototype), o.prototype.constructor = o, e(o, t)

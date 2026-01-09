@@ -40,7 +40,7 @@ import {
     be as Ct,
     bH as Et,
     bh as qe
-} from "./index-25.js";
+} from "./_index.js";
 import {
     g as Ft
 } from "./index-10.js";

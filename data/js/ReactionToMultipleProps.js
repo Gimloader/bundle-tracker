@@ -1,6 +1,6 @@
 import {
     dP as n
-} from "./index-25.js";
+} from "./_index.js";
 const p = (r, t, a) => {
     const c = [];
     return r.forEach(o => {

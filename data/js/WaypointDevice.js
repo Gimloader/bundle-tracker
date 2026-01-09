@@ -24,7 +24,7 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     U as ot
-} from "./index-25.js";
+} from "./_index.js";
 import {
     C as at
 } from "./Interfaces.js";

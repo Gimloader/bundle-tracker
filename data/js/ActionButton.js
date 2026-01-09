@@ -5,7 +5,7 @@ import {
     u as c,
     r,
     j as e
-} from "./index-25.js";
+} from "./_index.js";
 import {
     M as p
 } from "./Button.js";

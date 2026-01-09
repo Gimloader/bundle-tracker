@@ -1,6 +1,6 @@
 import {
     r as t
-} from "./index-25.js";
+} from "./_index.js";
 import {
     u as a,
     M as u,

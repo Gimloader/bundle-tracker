@@ -3,7 +3,7 @@ import {
     d as r,
     u as f,
     r as m
-} from "./index-25.js";
+} from "./_index.js";
 import {
     ai as y,
     q as C,

@@ -4,7 +4,7 @@ import {
     P as o,
     k as s,
     ct as r
-} from "./index-25.js";
+} from "./_index.js";
 import {
     N as i
 } from "./NavigateTo.js";

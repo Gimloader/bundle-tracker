@@ -86,7 +86,7 @@ import {
     aj as wi,
     E as Mi,
     ac as Pi
-} from "./index-25.js";
+} from "./_index.js";
 import {
     E as Oi
 } from "./Sizes.js";

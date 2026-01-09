@@ -20,7 +20,7 @@ import {
     T as fe,
     f as ge,
     A as be
-} from "./index-25.js";
+} from "./_index.js";
 import {
     u as ye,
     C as he,

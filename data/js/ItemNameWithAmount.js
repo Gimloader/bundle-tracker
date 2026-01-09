@@ -6,7 +6,7 @@ import {
 } from "./CapitalizeFirstLetter.js";
 import {
     b6 as l
-} from "./index-25.js";
+} from "./_index.js";
 import {
     aS as p
 } from "./App-41.js";

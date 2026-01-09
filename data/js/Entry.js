@@ -13,7 +13,7 @@ import {
     a as I,
     u as V,
     t as U
-} from "./index-25.js";
+} from "./_index.js";
 import {
     a as N,
     C as Y

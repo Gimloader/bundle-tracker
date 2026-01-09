@@ -9,7 +9,7 @@ import {
     aM as qt,
     x as j,
     ay as Gt
-} from "./index-25.js";
+} from "./_index.js";
 import {
     _ as vt
 } from "./inheritsLoose.js";

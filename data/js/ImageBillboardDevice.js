@@ -18,7 +18,7 @@ import {
     F as b,
     R as Y
 } from "./ReplaceVisualEditingPreview.js";
-import "./index-25.js";
+import "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";
 import "./inheritsLoose.js";

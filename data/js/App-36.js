@@ -11,7 +11,7 @@ import {
     a0 as k,
     D as j,
     U as y
-} from "./index-25.js";
+} from "./_index.js";
 import {
     C as v
 } from "./CircularProgress.js";

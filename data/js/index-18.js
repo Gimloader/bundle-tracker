@@ -22,7 +22,7 @@ import {
     c$ as st,
     E as lt,
     d0 as dt
-} from "./index-25.js";
+} from "./_index.js";
 import {
     N as ft,
     u as pt,

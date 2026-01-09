@@ -3,7 +3,7 @@ import {
     o as e,
     a_ as O,
     dE as d
-} from "./index-25.js";
+} from "./_index.js";
 var P = Object.defineProperty,
     f = (p, o, a, c) => {
         for (var s = void 0, r = p.length - 1, i; r >= 0; r--)(i = p[r]) && (s = i(o, a, s) || s);

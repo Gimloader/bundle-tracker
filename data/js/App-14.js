@@ -25,7 +25,7 @@ import {
     u as Le,
     R as Es,
     q as xs
-} from "./index-25.js";
+} from "./_index.js";
 import {
     o as pt
 } from "./mobxreact.esm.js";

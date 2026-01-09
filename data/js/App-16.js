@@ -22,7 +22,7 @@ import {
     n as K,
     T as X,
     A as Z
-} from "./index-25.js";
+} from "./_index.js";
 import {
     P as ee
 } from "./Paper.js";

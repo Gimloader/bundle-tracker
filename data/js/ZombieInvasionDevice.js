@@ -12,7 +12,7 @@ import {
     an as d
 } from "./App-41.js";
 import "./GetAssetPath.js";
-import "./index-25.js";
+import "./_index.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
 import "./playSound.js";

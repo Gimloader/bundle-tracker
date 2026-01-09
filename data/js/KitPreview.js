@@ -9,7 +9,7 @@ import {
     U as a,
     F as f,
     c as h
-} from "./index-25.js";
+} from "./_index.js";
 import {
     I as u
 } from "./ImagePreview.js";

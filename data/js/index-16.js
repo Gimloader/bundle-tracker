@@ -52,7 +52,7 @@ import {
     aS as Et,
     dC as It,
     dD as jt
-} from "./index-25.js";
+} from "./_index.js";
 import {
     g as Ft
 } from "./index-10.js";

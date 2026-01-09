@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/SchoolLibrary.js", "assets/index-25.js", "assets/index-BdOndhxL.css", "assets/KitPreview.js", "assets/ImagePreview.js", "assets/getCloudinaryUrl.js", "assets/AccessibleAnchor.js", "assets/NavigateTo.js", "assets/index.es.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/SchoolLibrary.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/KitPreview.js", "assets/ImagePreview.js", "assets/getCloudinaryUrl.js", "assets/AccessibleAnchor.js", "assets/NavigateTo.js", "assets/index.es.js"]))) => i.map(i => d[i]);
 import {
     r as l,
     I as ht,
@@ -59,7 +59,7 @@ import {
     a2 as je,
     a3 as At,
     a4 as _t
-} from "./index-25.js";
+} from "./_index.js";
 import {
     o as he,
     i as Dt,

@@ -1,7 +1,7 @@
 import {
     j as i,
     q as s
-} from "./index-25.js";
+} from "./_index.js";
 import {
     c as e
 } from "./ReportAccuracyMeter.js";

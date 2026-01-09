@@ -9,7 +9,7 @@ import {
     U as l,
     T as f,
     D as c
-} from "./index-25.js";
+} from "./_index.js";
 import {
     A as j
 } from "./AccessibleAnchor.js";

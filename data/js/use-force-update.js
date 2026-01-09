@@ -4,7 +4,7 @@ import {
 } from "./motion.js";
 import {
     r
-} from "./index-25.js";
+} from "./_index.js";
 
 function c() {
     const e = r.useRef(!1);

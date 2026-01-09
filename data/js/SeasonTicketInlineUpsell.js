@@ -5,7 +5,7 @@ import {
     a0 as n,
     F as r,
     X as i
-} from "./index-25.js";
+} from "./_index.js";
 import {
     A as a
 } from "./AccessibleAnchor.js";

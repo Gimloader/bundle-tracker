@@ -14,7 +14,7 @@ import {
     A as d
 } from "./AddIgnoredStaticBodiesWhenCollisionsEnabled.js";
 import "./GetAssetPath.js";
-import "./index-25.js";
+import "./_index.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
 import "./playSound.js";

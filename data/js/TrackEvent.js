@@ -1,7 +1,7 @@
 import {
     l as r,
     ad as n
-} from "./index-25.js";
+} from "./_index.js";
 import {
     T as p
 } from "./TrackPostHogEvent.js";

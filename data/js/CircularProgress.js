@@ -2,7 +2,7 @@ import {
     r as i,
     aD as w,
     _ as x
-} from "./index-25.js";
+} from "./_index.js";
 import {
     w as C,
     c as D,

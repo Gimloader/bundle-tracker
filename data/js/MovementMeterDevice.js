@@ -21,7 +21,7 @@ import {
 } from "./playSound.js";
 import {
     c0 as d
-} from "./index-25.js";
+} from "./_index.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
 import "./Button.js";

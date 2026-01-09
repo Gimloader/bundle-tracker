@@ -6,7 +6,7 @@ import {
     X as u,
     B as d,
     F as p
-} from "./index-25.js";
+} from "./_index.js";
 import {
     S as r
 } from "./SeasonTicketName.js";

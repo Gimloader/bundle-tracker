@@ -8,7 +8,7 @@ import {
     at as d,
     o as D,
     ab as L
-} from "./index-25.js";
+} from "./_index.js";
 import {
     o as M
 } from "./mobxreact.esm.js";

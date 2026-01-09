@@ -14,7 +14,7 @@ import {
 import {
     U as l
 } from "./Assets.js";
-import "./index-25.js";
+import "./_index.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
 import "./playSound.js";

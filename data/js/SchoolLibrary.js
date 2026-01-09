@@ -10,7 +10,7 @@ import {
     d as a,
     F as E,
     e as K
-} from "./index-25.js";
+} from "./_index.js";
 import {
     K as k
 } from "./KitPreview.js";

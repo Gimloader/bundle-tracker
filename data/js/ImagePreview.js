@@ -4,7 +4,7 @@ import {
     M as n,
     e as l,
     d as c
-} from "./index-25.js";
+} from "./_index.js";
 import {
     g
 } from "./getCloudinaryUrl.js";

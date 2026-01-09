@@ -22,7 +22,7 @@ import {
     S as U,
     h as C,
     t as F
-} from "./index-25.js";
+} from "./_index.js";
 import {
     S as G
 } from "./App-4.js";

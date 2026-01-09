@@ -3,7 +3,7 @@ import {
     d as i,
     U as r,
     i as a
-} from "./index-25.js";
+} from "./_index.js";
 import {
     b as c
 } from "./Centered.js";

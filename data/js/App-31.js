@@ -16,7 +16,7 @@ import {
     W as I,
     t as N,
     a2 as $
-} from "./index-25.js";
+} from "./_index.js";
 import {
     N as A
 } from "./NavigateTo.js";

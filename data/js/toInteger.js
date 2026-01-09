@@ -1,6 +1,6 @@
 import {
     ay as x
-} from "./index-25.js";
+} from "./_index.js";
 import {
     e as C,
     b as T,

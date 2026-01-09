@@ -24,7 +24,7 @@ import {
     d8 as Zt,
     aS as Ut,
     cU as Qt
-} from "./index-25.js";
+} from "./_index.js";
 
 function Gt(e, o) {
     return Q.reduce((r, t) => {

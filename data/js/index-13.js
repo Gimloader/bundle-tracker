@@ -17,7 +17,7 @@ import {
     aI as de,
     aR as se,
     aK as ce
-} from "./index-25.js";
+} from "./_index.js";
 import {
     u as ue,
     C as be

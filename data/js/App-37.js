@@ -14,7 +14,7 @@ import {
     F as v,
     d as C,
     l as E
-} from "./index-25.js";
+} from "./_index.js";
 import {
     P as T
 } from "./Paper.js";

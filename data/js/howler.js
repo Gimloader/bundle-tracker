@@ -1,6 +1,6 @@
 import {
     av as x
-} from "./index-25.js";
+} from "./_index.js";
 var I = {};
 /*!
  *  howler.js v2.2.4

@@ -27,7 +27,7 @@ import {
     cU as Fe,
     d8 as he,
     an as Ue
-} from "./index-25.js";
+} from "./_index.js";
 var be = n.createContext(null),
     we = n.createContext({}),
     Ve = ["prefixCls", "className", "containerRef"],

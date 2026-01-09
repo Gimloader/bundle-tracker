@@ -1,7 +1,7 @@
 import {
     j as i,
     d as t
-} from "./index-25.js";
+} from "./_index.js";
 const s = a => i.jsxs(e, {
         children: [i.jsx("div", {
             className: "area",

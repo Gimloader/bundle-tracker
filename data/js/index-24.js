@@ -1,6 +1,6 @@
 import {
     x as r
-} from "./index-25.js";
+} from "./_index.js";
 var d = "__wrap_b",
     f = "__wrap_o",
     h = typeof window > "u",

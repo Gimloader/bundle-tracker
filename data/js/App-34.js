@@ -10,7 +10,7 @@ import {
     b as h,
     R as g,
     aj as f
-} from "./index-25.js";
+} from "./_index.js";
 import {
     I as u
 } from "./InfiniteScroller.js";

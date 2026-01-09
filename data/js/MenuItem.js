@@ -4,7 +4,7 @@ import {
     U as m,
     e as r,
     d as e
-} from "./index-25.js";
+} from "./_index.js";
 const x = "#ebe5fe",
     s = r.BackgroundPurple,
     g = "rgba(0,0,0,.65)",

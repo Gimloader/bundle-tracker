@@ -2,7 +2,7 @@ import {
     e as o,
     d as t,
     F as a
-} from "./index-25.js";
+} from "./_index.js";
 const s = t.div.attrs({
         className: "flex-column vc"
     })`

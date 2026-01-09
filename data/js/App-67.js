@@ -8,7 +8,7 @@ import {
     y as F,
     u as n,
     r as $
-} from "./index-25.js";
+} from "./_index.js";
 import {
     a as p
 } from "./Centered.js";

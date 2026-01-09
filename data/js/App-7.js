@@ -25,7 +25,7 @@ import {
     ad as z,
     a6 as le,
     T as ue
-} from "./index-25.js";
+} from "./_index.js";
 import {
     s as u,
     i as r,

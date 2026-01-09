@@ -3,7 +3,7 @@ import {
     a as o,
     h as s,
     a2 as a
-} from "./index-25.js";
+} from "./_index.js";
 import {
     s as r
 } from "./stores.js";

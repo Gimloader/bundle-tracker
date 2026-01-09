@@ -13,7 +13,7 @@ import {
     d2 as oe,
     d3 as H,
     d4 as re
-} from "./index-25.js";
+} from "./_index.js";
 import {
     e as te,
     i as le,

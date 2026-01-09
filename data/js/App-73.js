@@ -12,7 +12,7 @@ import {
     e as C,
     b6 as L,
     F as S
-} from "./index-25.js";
+} from "./_index.js";
 import {
     c as M,
     S as h

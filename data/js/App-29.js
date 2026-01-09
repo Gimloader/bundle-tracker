@@ -19,7 +19,7 @@ import {
     S as B,
     U as W,
     t as E
-} from "./index-25.js";
+} from "./_index.js";
 import {
     N as x
 } from "./NavigateTo.js";

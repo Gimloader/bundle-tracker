@@ -17,7 +17,7 @@ import {
     n as R,
     S as _,
     T as H
-} from "./index-25.js";
+} from "./_index.js";
 import {
     e as Y
 } from "./react-flip-move.es.js";

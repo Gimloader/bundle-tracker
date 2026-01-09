@@ -1,7 +1,7 @@
 import {
     r as p,
     bJ as S
-} from "./index-25.js";
+} from "./_index.js";
 import {
     C as j
 } from "./Names.js";

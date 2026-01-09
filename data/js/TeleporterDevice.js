@@ -11,7 +11,7 @@ import {
 import {
     G as r
 } from "./GetAssetPath.js";
-import "./index-25.js";
+import "./_index.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
 import "./playSound.js";

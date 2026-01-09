@@ -3,7 +3,7 @@ import {
     r,
     aA as s,
     d as a
-} from "./index-25.js";
+} from "./_index.js";
 import {
     q as o
 } from "./mathlive.min.js";

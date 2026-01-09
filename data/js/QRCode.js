@@ -1,6 +1,6 @@
 import {
     j as e
-} from "./index-25.js";
+} from "./_index.js";
 import {
     Q as r
 } from "./index-22.js";

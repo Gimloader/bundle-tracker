@@ -21,7 +21,7 @@ import {
     aU as _e,
     aI as xe,
     bn as ct
-} from "./index-25.js";
+} from "./_index.js";
 import {
     R as ut
 } from "./EditOutlined.js";

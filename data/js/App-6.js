@@ -5,7 +5,7 @@ import {
     n as s,
     r as c,
     j as o
-} from "./index-25.js";
+} from "./_index.js";
 import {
     s as m,
     S as n,

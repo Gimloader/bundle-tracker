@@ -13,7 +13,7 @@ import {
     i as N,
     T as D,
     C as k
-} from "./index-25.js";
+} from "./_index.js";
 import {
     u as j
 } from "./useQuery.js";

@@ -1,7 +1,7 @@
 import {
     j as o,
     d as p
-} from "./index-25.js";
+} from "./_index.js";
 import {
     S as s
 } from "./SixteenByNineScaler.js";

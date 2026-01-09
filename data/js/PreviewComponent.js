@@ -3,7 +3,7 @@ import {
     at as m,
     j as l,
     U as y
-} from "./index-25.js";
+} from "./_index.js";
 import {
     G as _,
     E

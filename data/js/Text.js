@@ -18,7 +18,7 @@ import {
     o as Q,
     dN as bn,
     b5 as X
-} from "./index-25.js";
+} from "./_index.js";
 import {
     g as be
 } from "./getCloudinaryUrl.js";

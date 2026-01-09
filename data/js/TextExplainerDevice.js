@@ -21,7 +21,7 @@ import {
 } from "./TutorialConsts.js";
 import {
     at as A
-} from "./index-25.js";
+} from "./_index.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
 import "./playSound.js";

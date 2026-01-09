@@ -7,7 +7,7 @@ import {
     F as I,
     b6 as y,
     e as B
-} from "./index-25.js";
+} from "./_index.js";
 import {
     b as N,
     a as h,

@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/QRCode.js", "assets/index-25.js", "assets/index-BdOndhxL.css", "assets/index-22.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/QRCode.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/index-22.js"]))) => i.map(i => d[i]);
 import {
     r as l,
     I as ee,
@@ -45,7 +45,7 @@ import {
     C as Jt,
     b3 as Yt,
     b4 as We
-} from "./index-25.js";
+} from "./_index.js";
 import {
     i as O,
     o as v,

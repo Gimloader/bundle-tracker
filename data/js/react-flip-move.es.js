@@ -3,7 +3,7 @@ import {
     r as g,
     ba as W,
     bh as I
-} from "./index-25.js";
+} from "./_index.js";
 
 function x(l) {
     var e = !1;

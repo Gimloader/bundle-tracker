@@ -25,7 +25,7 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     b6 as f
-} from "./index-25.js";
+} from "./_index.js";
 import {
     G as l
 } from "./GetAssetPath.js";

@@ -5,7 +5,7 @@ import {
     D as s,
     B as n,
     d as e
-} from "./index-25.js";
+} from "./_index.js";
 import {
     a as p
 } from "./Centered.js";

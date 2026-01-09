@@ -12,7 +12,7 @@ import {
     d8 as J,
     aS as ee,
     aE as te
-} from "./index-25.js";
+} from "./_index.js";
 import {
     b as oe,
     g as ne,

@@ -1,7 +1,7 @@
 import {
     av as At,
     aw as X
-} from "./index-25.js";
+} from "./_index.js";
 var gr = {},
     vr = {},
     hr, me;
