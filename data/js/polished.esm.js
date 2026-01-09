@@ -2,7 +2,7 @@ import {
     by as D,
     cX as P,
     _ as o
-} from "./_index.js";
+} from "./index-25.js";
 import {
     _ as E
 } from "./inheritsLoose.js";

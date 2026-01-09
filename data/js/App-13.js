@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/QRCode-BbvXqJxq.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/index-22.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/QRCode.js", "assets/index-25.js", "assets/index-BdOndhxL.css", "assets/index-22.js"]))) => i.map(i => d[i]);
 import {
     r as l,
     I as ee,
@@ -45,7 +45,7 @@ import {
     C as Jt,
     b3 as Yt,
     b4 as We
-} from "./_index.js";
+} from "./index-25.js";
 import {
     i as O,
     o as v,
@@ -2538,7 +2538,7 @@ const En = () => {
             close: s
         })
     },
-    $n = l.lazy(() => Ht(() => import("./QRCode-BbvXqJxq.js"), __vite__mapDeps([0, 1, 2, 3]))),
+    $n = l.lazy(() => Ht(() => import("./QRCode.js"), __vite__mapDeps([0, 1, 2, 3]))),
     Pn = t => e.jsx(T, {
         open: t.visible,
         onCancel: t.close,

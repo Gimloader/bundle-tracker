@@ -2,7 +2,7 @@ import {
     j as a,
     e as s,
     d as r
-} from "./_index.js";
+} from "./index-25.js";
 const t = e => a.jsx(n, {
         onClick: e.onClick,
         className: e.className,

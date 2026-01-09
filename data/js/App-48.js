@@ -8,7 +8,7 @@ import {
     T as v,
     aj as y,
     aY as b
-} from "./_index.js";
+} from "./index-25.js";
 import {
     S
 } from "./App-4.js";

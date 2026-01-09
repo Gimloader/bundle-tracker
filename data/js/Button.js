@@ -3,7 +3,7 @@ import {
     F as l,
     j as r,
     d as f
-} from "./_index.js";
+} from "./index-25.js";
 import {
     a as h
 } from "./polished.esm.js";

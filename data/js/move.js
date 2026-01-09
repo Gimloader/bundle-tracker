@@ -1,7 +1,7 @@
 import {
     bA as t,
     di as s
-} from "./_index.js";
+} from "./index-25.js";
 const m = new t("antMoveDownIn", {
         "0%": {
             transform: "translate3d(0, 100%, 0)",

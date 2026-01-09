@@ -4,7 +4,7 @@ import {
     e as s,
     U as i,
     F as n
-} from "./_index.js";
+} from "./index-25.js";
 const r = o => e.jsx(t, {
     hoverable: !0,
     style: {

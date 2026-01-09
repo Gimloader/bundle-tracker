@@ -9,7 +9,7 @@ import {
     aB as yt,
     dJ as nr,
     aC as Pe
-} from "./_index.js";
+} from "./index-25.js";
 import {
     u as wt,
     d as or,

@@ -1,6 +1,6 @@
 import {
     az as un
-} from "./_index.js";
+} from "./index-25.js";
 var qe = {},
     ft = {},
     ht;

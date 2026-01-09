@@ -7,7 +7,7 @@ import {
     y as f,
     U as d,
     e as h
-} from "./_index.js";
+} from "./index-25.js";
 import {
     S as g
 } from "./SeasonTicketName.js";

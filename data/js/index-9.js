@@ -18,7 +18,7 @@ import {
     aR as Q,
     d4 as J,
     bB as U
-} from "./_index.js";
+} from "./index-25.js";
 var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loadingIcon", "checkedChildren", "unCheckedChildren", "onClick", "onChange", "onKeyDown"],
     O = g.forwardRef(function(e, n) {
         var c, a = e.prefixCls,

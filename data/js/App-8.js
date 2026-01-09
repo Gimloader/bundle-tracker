@@ -18,7 +18,7 @@ import {
     T as I,
     E as N,
     aj as T
-} from "./_index.js";
+} from "./index-25.js";
 import {
     A as o
 } from "./AccessibleAnchor.js";

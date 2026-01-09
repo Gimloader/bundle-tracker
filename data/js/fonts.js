@@ -2,7 +2,7 @@ import {
     r as t,
     I as c,
     _ as n
-} from "./_index.js";
+} from "./index-25.js";
 var o = {
         icon: {
             tag: "svg",

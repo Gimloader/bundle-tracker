@@ -9,7 +9,7 @@ import {
     B as d,
     D as S,
     c as k
-} from "./_index.js";
+} from "./index-25.js";
 import {
     I as z
 } from "./ImagePreview.js";

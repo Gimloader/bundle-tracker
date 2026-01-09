@@ -23,7 +23,7 @@ import {
     l as ie,
     E as se,
     cn as ne
-} from "./_index.js";
+} from "./index-25.js";
 import {
     E as j
 } from "./Sizes.js";

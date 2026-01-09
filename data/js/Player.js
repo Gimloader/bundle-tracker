@@ -11,7 +11,7 @@ import {
     c as w,
     r as p,
     aZ as g
-} from "./_index.js";
+} from "./index-25.js";
 import {
     Q as B
 } from "./Question.js";

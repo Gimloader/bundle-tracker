@@ -23,7 +23,7 @@ import {
     aU as Le,
     be as Be,
     ao as Fe
-} from "./_index.js";
+} from "./index-25.js";
 
 function H(a, o) {
     var e = typeof Symbol < "u" && a[Symbol.iterator] || a["@@iterator"];

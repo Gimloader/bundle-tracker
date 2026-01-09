@@ -9,7 +9,7 @@ import {
     aF as _,
     x as B,
     b9 as m
-} from "./_index.js";
+} from "./index-25.js";
 var I = ["prefixCls", "className", "style", "checked", "disabled", "defaultChecked", "type", "title", "onChange"],
     A = n.forwardRef(function(e, a) {
         var r = e.prefixCls,

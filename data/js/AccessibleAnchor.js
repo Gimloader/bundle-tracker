@@ -1,7 +1,7 @@
 import {
     j as n,
     a7 as l
-} from "./_index.js";
+} from "./index-25.js";
 const i = e => {
     const a = t => {
         e.onClick && t.key === "Enter" && (t.preventDefault(), e.onClick())

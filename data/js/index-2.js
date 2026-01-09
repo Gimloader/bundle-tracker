@@ -7,7 +7,7 @@ import {
     ao as k,
     cv as oe,
     ay as ne
-} from "./_index.js";
+} from "./index-25.js";
 
 function j(e) {
     return ["small", "middle", "large"].includes(e)

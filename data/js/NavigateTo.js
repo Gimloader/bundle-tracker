@@ -1,6 +1,6 @@
 import {
     ct as t
-} from "./_index.js";
+} from "./index-25.js";
 const a = o => {
     t.push(o)
 };

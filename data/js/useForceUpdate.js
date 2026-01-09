@@ -1,6 +1,6 @@
 import {
     r as t
-} from "./_index.js";
+} from "./index-25.js";
 
 function c() {
     const [, e] = t.useReducer(r => r + 1, 0);

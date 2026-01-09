@@ -12,7 +12,7 @@ import {
     cl as J,
     cm as Q,
     o as ee
-} from "./_index.js";
+} from "./index-25.js";
 if (!s.useState) throw new Error("mobx-react-lite requires React with Hooks support");
 if (!Y) throw new Error("mobx-react-lite@3 requires mobx at least version 6 to be available");
 

@@ -14,7 +14,7 @@ import {
     a7 as H,
     a5 as I,
     B as N
-} from "./_index.js";
+} from "./index-25.js";
 import {
     S as y
 } from "./App-4.js";

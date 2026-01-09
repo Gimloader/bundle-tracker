@@ -5,7 +5,7 @@ import {
     j as t,
     M as d,
     A as m
-} from "./_index.js";
+} from "./index-25.js";
 import {
     P as p
 } from "./Player.js";

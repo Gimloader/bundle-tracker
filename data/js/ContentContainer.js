@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/PreviewComponent.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/GimkitLiveQuestion.js", "assets/mobxreact.esm.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/capitalize.js", "assets/inheritsLoose.js", "assets/Tooltip.js", "assets/howler.js", "assets/polished.esm.js", "assets/index-1.js", "assets/motion.js", "assets/index-17.js", "assets/use-force-update.js", "assets/use-motion-value.js", "assets/sounds.js", "assets/GetAssetPath.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/PreviewComponent.js", "assets/index-25.js", "assets/index-BdOndhxL.css", "assets/GimkitLiveQuestion.js", "assets/mobxreact.esm.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/capitalize.js", "assets/inheritsLoose.js", "assets/Tooltip.js", "assets/howler.js", "assets/polished.esm.js", "assets/index-1.js", "assets/motion.js", "assets/index-17.js", "assets/use-force-update.js", "assets/use-motion-value.js", "assets/sounds.js", "assets/GetAssetPath.js"]))) => i.map(i => d[i]);
 import {
     r as ce,
     I as ia,
@@ -35,7 +35,7 @@ import {
     M as Xa,
     a0 as Za,
     T as es
-} from "./_index.js";
+} from "./index-25.js";
 import {
     i as Re,
     o as xe

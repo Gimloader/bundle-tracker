@@ -22,7 +22,7 @@ import {
     S as W,
     h as V,
     a2 as q
-} from "./_index.js";
+} from "./index-25.js";
 import {
     o as g
 } from "./mobxreact.esm.js";

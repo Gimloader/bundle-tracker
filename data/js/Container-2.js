@@ -19,7 +19,7 @@ import {
     V as M,
     T as L,
     U as R
-} from "./_index.js";
+} from "./index-25.js";
 import {
     o as P
 } from "./mobxreact.esm.js";

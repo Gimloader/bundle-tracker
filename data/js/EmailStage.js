@@ -18,7 +18,7 @@ import {
     a8 as Q,
     a9 as X,
     d as b
-} from "./_index.js";
+} from "./index-25.js";
 import {
     o as W
 } from "./mobxreact.esm.js";

@@ -1,6 +1,6 @@
 import {
     av as G
-} from "./_index.js";
+} from "./index-25.js";
 var k, xe;
 
 function bt() {

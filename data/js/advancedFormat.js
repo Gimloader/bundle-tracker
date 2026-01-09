@@ -1,6 +1,6 @@
 import {
     ay as g
-} from "./_index.js";
+} from "./index-25.js";
 var t = {
         exports: {}
     },

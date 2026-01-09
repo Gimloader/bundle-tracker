@@ -18,7 +18,7 @@ import {
     at as Ia,
     aw as gi,
     ay as Da
-} from "./_index.js";
+} from "./index-25.js";
 import {
     M as Qn
 } from "./MapModeType.js";

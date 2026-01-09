@@ -1,7 +1,7 @@
 import {
     j as e,
     a0 as t
-} from "./_index.js";
+} from "./index-25.js";
 const o = r => r.error ? e.jsx(t, {
     message: "Error",
     style: r.style,

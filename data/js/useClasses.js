@@ -67,7 +67,7 @@ import {
     S as Ra,
     b7 as ka,
     y as Ia
-} from "./_index.js";
+} from "./index-25.js";
 import {
     i as Ka
 } from "./styleChecker.js";

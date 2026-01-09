@@ -1,6 +1,6 @@
 import {
     j as e
-} from "./_index.js";
+} from "./index-25.js";
 const t = s => e.jsx("i", {
     className: `${s.name}${s.className?` ${s.className}`:""}`,
     style: s.style

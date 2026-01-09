@@ -1,6 +1,6 @@
 import {
     s as n
-} from "./_index.js";
+} from "./index-25.js";
 
 function s(e) {
     n(function() {})

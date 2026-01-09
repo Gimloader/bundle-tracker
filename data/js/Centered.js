@@ -1,6 +1,6 @@
 import {
     d as e
-} from "./_index.js";
+} from "./index-25.js";
 const t = e.div.attrs({
         className: "flex-center"
     })``,

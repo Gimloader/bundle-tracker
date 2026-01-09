@@ -1,7 +1,6 @@
 import { parse } from "node-html-parser";
 import { join } from "path";
-import fsp from 'node:fs/promises';
-import cliProgress from "cli-progress";
+import fsp from "node:fs/promises";
 import { parseArgs } from "util";
 import beautify from "js-beautify";
 import { pushChanges } from "./push";
@@ -18,12 +17,8 @@ const base = "https://www.gimkit.com";
 const assets = base + "/assets/";
 const data = join(__dirname, "../", "data");
 
-const bar = new cliProgress.SingleBar({
-    format: '{bar} | {status}',
-}, cliProgress.Presets.shades_classic);
-
 // get the index script
-bar.start(0, 0, { status: "Fetching html" });
+console.log("Fetching html...");
 
 const res = await fetch(base + '/join');
 const text = await res.text();
@@ -45,85 +40,115 @@ if(await lastRunFile.exists()) {
 }
 
 if(!force && lastIndex === indexUrl) {
-    bar.stop();
     console.log("No changes since last run");
     process.exit();
 }
 
 lastIndex = indexUrl;
 
+// Clear the temp directory
+console.log("Clearing temp directory...");
+
+const tmpPath = join(data, "tmp");
+await fsp.rm(tmpPath, { recursive: true, force: true });
+await fsp.mkdir(tmpPath, { recursive: true });
+
+// Fetch the index file and get the urls of all the assets
+console.log("Fetching index file...");
+
+const indexRes = await fetch(assets + indexUrl);
+const index = await indexRes.text();
+
+// Write the index file
+await fsp.writeFile(join(tmpPath, indexUrl), index);
+
+const queue = getUrls(index);
+const seenUrls = new Set<string>(queue);
+
+// Fetch all assets
+let processed = 0;
+while(queue.length > 0) {
+    const url = queue.shift()!;
+    process.stdout.write(`\x1b[2K\rDownloading assets (${processed + 1} ${url})`);
+
+    const res = await fetch(assets + url);
+    const text = await res.text();
+
+    // Add on any new assets
+    const newUrls = getUrls(text);
+    for(const newUrl of newUrls) {
+        if(seenUrls.has(newUrl) || url === indexUrl) continue;
+
+        seenUrls.add(newUrl);
+        queue.push(newUrl);
+    }
+
+    await fsp.writeFile(join(tmpPath, url), text);
+    processed++;
+}
+
+// Map the random names to fixed ones
+const urlMap: Record<string, string> = { [indexUrl]: "_index.js" };
+const urls = Array.from(seenUrls);
+const names = urls.map((url) => url.slice(0, -12));
+const nameCounts: Record<string, number> = {};
+
+for(const name of names) {
+    nameCounts[name] ??= 0;
+    nameCounts[name]++;
+}
+
+const nameCountup = {};
+for(let i = 0; i < names.length; i++) {
+    if(nameCounts[names[i]] === 1) {
+        urlMap[urls[i]] = names[i] + ".js";
+    } else {
+        nameCountup[names[i]] ??= 0;
+        nameCountup[names[i]]++;
+        urlMap[urls[i]] = `${names[i]}-${nameCountup[names[i]]}.js`;
+    }
+}
+
 // Clear the js directory
-bar.update(0, { status: "Clearing directory" });
+console.log("\nFormatting files...");
 
 const jsPath = join(data, "js");
 await fsp.rm(jsPath, { recursive: true, force: true });
 await fsp.mkdir(jsPath, { recursive: true });
 
-// Fetch the index file and get the urls of all the assets
-bar.update(0, { status: "Fetching index file" });
+// Update the files to have consistent names and formatted code
+for(const url in urlMap) {
+    const filePath = join(tmpPath, url);
+    const js = await fsp.readFile(filePath, "utf-8");
 
-const indexRes = await fetch(assets + indexUrl);
-const index = await indexRes.text();
-
-const start = index.indexOf("=[") + 1;
-const end = index.indexOf("]", start) + 1;
-const urls: string[] = JSON.parse(index.slice(start, end))
-    .map((url: string) => url.split("/").pop());
-const names = urls.map((url) => url.slice(0, -12));
-
-// Add a count to duplicate names
-const nameCount: Record<string, number> = {};
-for(const name of names) {
-    nameCount[name] ??= 0;
-    nameCount[name]++;
+    await fsp.writeFile(join(jsPath, urlMap[url]), format(js));
 }
 
-const nameCountup: Record<string, number> = {};
-for(let i = 0; i < names.length; i++) {
-    let name = names[i];
-
-    if(nameCount[name] === 1) {
-        names[i] = `${name}.js`;
-    } else {
-        nameCountup[name] ??= 0;
-        nameCountup[name]++;
-    
-        names[i] = `${name}-${nameCountup[name]}.js`;
-    }
-}
-
-// Write the index file
-await fsp.writeFile(join(jsPath, "_index.js"), format(index));
-
-// Download all the assets
-bar.start(urls.length, 0, { status: "Downloading assets" });
-
-let urlMap: Record<string, string> = {};
-for(let i = 0; i < urls.length; i++) {
-    const url = urls[i];
-    const name = names[i];
-    urlMap[name] = url;
-
-    bar.increment(1, { status: url });
-
-    const res = await fetch(assets + url);
-    let text = await res.text();
-
-    await fsp.writeFile(join(jsPath, name), format(text));
-}
-
-bar.stop();
+// Delete the temp directory
+console.log("Cleaning up...");
+await fsp.rm(tmpPath, { recursive: true, force: true });
 lastRunFile.write(JSON.stringify({ lastIndex, urls: urlMap }, null, 4));
 
 if(push) pushChanges();
+
+function getUrls(code: string) {
+    if(!code.startsWith("const __vite__mapDeps")) return [];
+
+    const start = code.indexOf("=[") + 1;
+    const end = code.indexOf("]", start) + 1;
+    const urls: string[] = JSON.parse(code.slice(start, end))
+        .map((url: string) => url.split("/").pop())
+        .filter((url: string) => url.endsWith(".js"));
+
+    return urls;
+}
 
 function format(js: string) {
     js = beautify.js(js);
 
     // Replace the names in the file with the local names
-    js = js.replaceAll(indexUrl, "_index.js");
-    for(let j = 0; j < urls.length; j++) {
-        js = js.replaceAll(urls[j], names[j]);
+    for(const url in urlMap) {
+        js = js.replaceAll(url, urlMap[url]);
     }
 
     return js;

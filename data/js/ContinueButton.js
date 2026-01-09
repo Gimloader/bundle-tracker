@@ -5,7 +5,7 @@ import {
     r as I,
     j as E,
     B as N
-} from "./_index.js";
+} from "./index-25.js";
 import {
     o as T
 } from "./mobxreact.esm.js";

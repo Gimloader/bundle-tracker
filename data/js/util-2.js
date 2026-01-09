@@ -5,7 +5,7 @@ import {
 import {
     aw as $,
     av as xe
-} from "./_index.js";
+} from "./index-25.js";
 var Ce = {
         exports: {}
     },
