@@ -1,13 +1,13 @@
 import {
-    ae as f,
-    a6 as c,
+    ac as f,
+    a3 as c,
     f as h,
     W as m,
     M as s,
     a as x,
     l as b,
-    a2 as d,
-    a5 as v,
+    $ as d,
+    a2 as v,
     t as S,
     V as k,
     r as w,
@@ -80,7 +80,7 @@ const P = "An error ocurred on our end while upgrading your account. Please cont
             onError: p
         })
     },
-    I = A(() => {
+    H = A(() => {
         const t = k("session_id");
         w.useEffect(() => {
             if (y()) {
@@ -137,6 +137,6 @@ const P = "An error ocurred on our end while upgrading your account. Please cont
   color: ${a.Black};
 `;
 export {
-    I as
+    H as
     default
 };

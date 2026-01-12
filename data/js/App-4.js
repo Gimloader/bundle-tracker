@@ -4,18 +4,18 @@ import {
     I as ie,
     _ as le,
     s as ce,
-    aY as ve,
+    aW as ve,
     j as e,
     p as je,
     d as m,
-    as as we,
+    aq as we,
     b as be,
     A as Ce,
     U as R,
     F as z,
     C as k,
     E as A,
-    cn as N,
+    cm as N,
     B as M,
     w as ye,
     u as L,
@@ -26,21 +26,21 @@ import {
     D as Ne,
     m as he,
     o as x,
-    a_ as Ie,
-    ah as Ae,
-    af as Me,
-    a4 as D,
+    aZ as Ie,
+    af as Ae,
+    ad as Me,
+    a1 as D,
     f as Oe,
-    co as De,
+    cn as De,
     l as T,
-    cp as W,
-    aV as Le,
-    cq as $e,
-    cr as _e,
-    cs as Ee,
-    cc as ue,
-    a7 as Pe,
-    a6 as Be
+    co as W,
+    aT as Le,
+    cp as $e,
+    cq as _e,
+    cr as Ee,
+    cb as ue,
+    a5 as Pe,
+    a3 as Be
 } from "./_index.js";
 import {
     d as me,
@@ -113,14 +113,14 @@ var Ke = {
         name: "login",
         theme: "outlined"
     },
-    qe = function(s, a) {
-        return n.createElement(ie, le({}, s, {
-            ref: a,
+    qe = function(a, s) {
+        return n.createElement(ie, le({}, a, {
+            ref: s,
             icon: Ke
         }))
     },
-    Ye = n.forwardRef(qe),
-    Je = {
+    Je = n.forwardRef(qe),
+    Ye = {
         icon: {
             tag: "svg",
             attrs: {
@@ -137,23 +137,23 @@ var Ke = {
         name: "menu",
         theme: "outlined"
     },
-    Qe = function(s, a) {
-        return n.createElement(ie, le({}, s, {
-            ref: a,
-            icon: Je
+    Ze = function(a, s) {
+        return n.createElement(ie, le({}, a, {
+            ref: s,
+            icon: Ye
         }))
     },
-    Xe = n.forwardRef(Qe);
+    Qe = n.forwardRef(Ze);
 
-function Ze(t, s) {
-    var a = n.useState(g()),
-        r = a[0],
-        l = a[1];
+function Xe(t, a) {
+    var s = n.useState(g()),
+        r = s[0],
+        l = s[1];
     He();
 
     function h() {
         var c = g();
-        (c === null || c === "null") && o(s)
+        (c === null || c === "null") && o(a)
     }
 
     function g() {
@@ -206,7 +206,7 @@ const H = We(() => je(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
         }
     }),
     K = t => {
-        const [s, a] = n.useState(), {
+        const [a, s] = n.useState(), {
             item: {
                 notionPageId: r,
                 publishDate: l
@@ -215,18 +215,18 @@ const H = We(() => je(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
         ce(() => {
             H.preload()
         }), n.useEffect(() => {
-            !s && r && ve({
+            !a && r && ve({
                 url: `/api/content/${r}`,
                 cacheKey: "NOTION_CONTENT",
-                success: d => a(d)
+                success: d => s(d)
             })
-        }, [r, s]);
+        }, [r, a]);
         const h = () => {
                 var c, w;
                 const d = r.replace(/-/g, ""),
-                    o = Object.keys(s).find(E => E.replace(/-/g, "") === d);
+                    o = Object.keys(a).find(E => E.replace(/-/g, "") === d);
                 if (!o) return null;
-                const i = s[o],
+                const i = a[o],
                     u = ((c = i.value.properties) == null ? void 0 : c.title[0][0]) ?? "News";
                 let f = ((w = i.value.format) == null ? void 0 : w.page_cover) ?? null;
                 return f && f.startsWith("/") && (f = `https://notion.so${f}`), {
@@ -235,7 +235,7 @@ const H = We(() => je(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
                 }
             },
             g = () => {
-                if (!s) return e.jsx(V, {});
+                if (!a) return e.jsx(V, {});
                 const {
                     title: d,
                     coverImage: o
@@ -246,11 +246,11 @@ const H = We(() => je(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
                         draggable: !1,
                         src: o
                     }) : null, e.jsxs(nt, {
-                        children: [e.jsxs(st, {
+                        children: [e.jsxs(at, {
                             style: {
                                 marginTop: t.isFirstItem && !o ? 30 : 0
                             },
-                            children: [e.jsx(at, {
+                            children: [e.jsx(st, {
                                 children: d
                             }), e.jsxs(rt, {
                                 children: [e.jsx(p, {
@@ -262,7 +262,7 @@ const H = We(() => je(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
                                 }), we(be.unix(l).fromNow())]
                             })]
                         }), e.jsx(H, {
-                            content: s
+                            content: a
                         })]
                     })]
                 })
@@ -285,13 +285,13 @@ const H = We(() => je(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
   padding: 0px 20px;
   font-family: ${R.SFPro};
 `,
-    st = m.div.attrs({
+    at = m.div.attrs({
         className: "maxWidth flex between vc"
     })`
   line-height: 1;
   margin-bottom: 20px;
 `,
-    at = m.div`
+    st = m.div`
   font-size: 28px;
   font-weight: ${z.Bold};
 `,
@@ -341,7 +341,7 @@ const H = We(() => je(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
   opacity: 0.9;
 `,
     ht = t => {
-        const [s, a] = n.useState(!0), [r, l] = n.useState([]), [h, g] = Ze("last-viewed-news", 0), [d, o] = n.useState(!1), [i, u, f] = L(!0), c = n.useCallback(() => {
+        const [a, s] = n.useState(!0), [r, l] = n.useState([]), [h, g] = Xe("last-viewed-news", 0), [d, o] = n.useState(!1), [i, u, f] = L(!0), c = n.useCallback(() => {
             o(!0)
         }, [o]), w = n.useCallback(() => {
             o(!1), t.onClose && t.onClose()
@@ -367,12 +367,12 @@ const H = We(() => je(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
                         })
                     },
                     both: () => {
-                        a(!1)
+                        s(!1)
                     }
                 })
             }), n.useEffect(() => {
                 t.open && c()
-            }, [t.open]), s) return null;
+            }, [t.open]), a) return null;
         const E = () => r.length ? r.length !== 1 && i ? e.jsxs("div", {
             style: {
                 paddingBottom: 35
@@ -453,9 +453,9 @@ const H = We(() => je(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
     };
 var $ = (t => (t.accountInformation = "accountInformation", t.gameSettings = "game-settings", t.billing = "billing", t.support = "support", t))($ || {}),
     ut = Object.defineProperty,
-    mt = (t, s, a, r) => {
-        for (var l = void 0, h = t.length - 1, g; h >= 0; h--)(g = t[h]) && (l = g(s, a, l) || l);
-        return l && ut(s, a, l), l
+    mt = (t, a, s, r) => {
+        for (var l = void 0, h = t.length - 1, g; h >= 0; h--)(g = t[h]) && (l = g(a, s, l) || l);
+        return l && ut(a, s, l), l
     };
 class pe {
     constructor() {
@@ -464,28 +464,28 @@ class pe {
 }
 mt([x], pe.prototype, "currentTab");
 var gt = Object.defineProperty,
-    j = (t, s, a, r) => {
-        for (var l = void 0, h = t.length - 1, g; h >= 0; h--)(g = t[h]) && (l = g(s, a, l) || l);
-        return l && gt(s, a, l), l
+    j = (t, a, s, r) => {
+        for (var l = void 0, h = t.length - 1, g; h >= 0; h--)(g = t[h]) && (l = g(a, s, l) || l);
+        return l && gt(a, s, l), l
     };
 const q = "",
-    Y = "",
     J = "",
-    Q = !1,
+    Y = "",
+    Z = !1,
+    Q = "",
     X = "",
-    Z = "",
     ee = 0,
     ft = x.array(),
     te = "",
     ne = "",
-    se = "",
-    ae = !1,
+    ae = "",
+    se = !1,
     re = "",
     oe = "";
 class v {
     constructor() {
-        this.planName = q, this.planDescription = Y, this.billingInterval = J, this.hasNextCharge = Q, this.nextChargeAmount = X, this.nextChargeDate = Z, this.accountBalance = ee, this.charges = ft, this.cardName = te, this.last4DigitsOfCard = ne, this.stripePublicKey = se, this.canDowngrade = ae, this.downgradeMessage = re, this.downgradeDateMessage = oe, this.reset = () => {
-            this.planName = q, this.planDescription = Y, this.billingInterval = J, this.hasNextCharge = Q, this.nextChargeAmount = X, this.nextChargeDate = Z, this.accountBalance = ee, this.charges.replace([]), this.cardName = te, this.last4DigitsOfCard = ne, this.stripePublicKey = se, this.canDowngrade = ae, this.downgradeMessage = re, this.downgradeDateMessage = oe
+        this.planName = q, this.planDescription = J, this.billingInterval = Y, this.hasNextCharge = Z, this.nextChargeAmount = Q, this.nextChargeDate = X, this.accountBalance = ee, this.charges = ft, this.cardName = te, this.last4DigitsOfCard = ne, this.stripePublicKey = ae, this.canDowngrade = se, this.downgradeMessage = re, this.downgradeDateMessage = oe, this.reset = () => {
+            this.planName = q, this.planDescription = J, this.billingInterval = Y, this.hasNextCharge = Z, this.nextChargeAmount = Q, this.nextChargeDate = X, this.accountBalance = ee, this.charges.replace([]), this.cardName = te, this.last4DigitsOfCard = ne, this.stripePublicKey = ae, this.canDowngrade = se, this.downgradeMessage = re, this.downgradeDateMessage = oe
         }, he(this)
     }
 }
@@ -511,17 +511,17 @@ const _ = {
     pt = n.createContext(_),
     xe = t => {
         const {
-            width: s
-        } = me.useWindowSize(), [a, r, l] = L(!1), [h, g] = n.useState(!1), [d, o] = n.useState(null), i = n.useRef(), [u] = U(i), f = n.useRef(), [c] = U(f);
+            width: a
+        } = me.useWindowSize(), [s, r, l] = L(!1), [h, g] = n.useState(!1), [d, o] = n.useState(null), i = n.useRef(), [u] = U(i), f = n.useRef(), [c] = U(f);
         return n.useEffect(() => {
-            (!s || !u ? !1 : !c) && (!d || s > d) && o(s)
-        }, [s, d, u, c]), n.useEffect(() => {
-            if (d && s <= d) {
+            (!a || !u ? !1 : !c) && (!d || a > d) && o(a)
+        }, [a, d, u, c]), n.useEffect(() => {
+            if (d && a <= d) {
                 g(!0);
                 return
             }
             g(!1)
-        }, [s, d]), e.jsx(A, {
+        }, [a, d]), e.jsx(A, {
             theme: {
                 token: {
                     borderRadius: 50
@@ -541,7 +541,7 @@ const _ = {
                     children: e.jsx(M, {
                         onClick: r,
                         type: "text",
-                        icon: e.jsx(Xe, {})
+                        icon: e.jsx(Qe, {})
                     })
                 }) : e.jsx(vt, {
                     style: {
@@ -556,7 +556,7 @@ const _ = {
                     })
                 }), h ? e.jsx(ze, {
                     placement: "right",
-                    open: a,
+                    open: s,
                     onClose: l,
                     children: e.jsx(F, {
                         size: 12,
@@ -597,9 +597,9 @@ const _ = {
                 let r = "/login";
                 return window && window.location && window.location.pathname && window.location.pathname.startsWith("/view") && (r += `?location=${encodeURIComponent(window.location.pathname)}`), r
             },
-            s = Fe("(max-width: 850px)"),
-            a = [];
-        return a.push({
+            a = Fe("(max-width: 850px)"),
+            s = [];
+        return s.push({
             key: "join",
             item: r => e.jsx(S, {
                 onClick: () => {
@@ -611,7 +611,7 @@ const _ = {
                 block: r,
                 children: "Join Game"
             })
-        }), s || a.push({
+        }), a || s.push({
             key: "pricing",
             item: r => e.jsx(S, {
                 path: Ae,
@@ -621,7 +621,7 @@ const _ = {
                 block: r,
                 children: "Group Pricing"
             })
-        }), a.push({
+        }), s.push({
             key: "signup",
             item: r => e.jsx(S, {
                 path: Me,
@@ -631,7 +631,7 @@ const _ = {
                 block: r,
                 children: "Sign Up"
             })
-        }), a.push({
+        }), s.push({
             key: "login",
             item: r => e.jsx(fe, {
                 to: t(),
@@ -639,13 +639,13 @@ const _ = {
                 children: e.jsx(M, {
                     type: "primary",
                     size: "large",
-                    icon: e.jsx(Ye, {}),
+                    icon: e.jsx(Je, {}),
                     block: r,
                     children: "Login"
                 })
             })
         }), e.jsx(xe, {
-            items: a
+            items: s
         })
     }),
     wt = () => e.jsx("div", {
@@ -657,7 +657,7 @@ const _ = {
     }),
     bt = t => t === D.pro ? `${k} Pro` : t === D.go ? `${k} Go` : t === D.proPass ? `${k} Pro (Monthly)` : t === D.basic ? `${k} Basic` : `Unknown ${k} Plan`,
     Ct = t => {
-        const [s, a, r] = L(!1), [l, h] = L(!1), g = Oe(), d = [], o = n.useMemo(() => () => {
+        const [a, s, r] = L(!1), [l, h] = L(!1), g = Oe(), d = [], o = n.useMemo(() => () => {
             const i = [{
                 name: "Settings",
                 icon: () => e.jsx(p, {
@@ -686,7 +686,7 @@ const _ = {
                     name: "far fa-newspaper"
                 }),
                 onClick: () => {
-                    a(), h()
+                    s(), h()
                 }
             }, {
                 name: "Group Licenses",
@@ -750,7 +750,7 @@ const _ = {
                     }, u.name))]
                 })
             })
-        }, [a]);
+        }, [s]);
         return d.push({
             key: "gallery",
             item: i => e.jsx(S, {
@@ -825,7 +825,7 @@ const _ = {
             }), e.jsx(n.Suspense, {
                 fallback: null,
                 children: l ? e.jsx(ht, {
-                    open: s,
+                    open: a,
                     onClose: r
                 }) : null
             })]
@@ -851,14 +851,14 @@ const _ = {
     At = ge(t => {
         const {
             navigation: {
-                homeUrl: s
+                homeUrl: a
             }
-        } = n.useContext(ue), a = t.theme === y.dark ? It : Nt;
+        } = n.useContext(ue), s = t.theme === y.dark ? It : Nt;
         return e.jsx(Mt, {
-            to: s,
+            to: a,
             children: e.jsx(Ot, {
-                src: a
-            }, a)
+                src: s
+            }, s)
         })
     }),
     Mt = m(Pe)``,
@@ -869,7 +869,7 @@ const _ = {
   margin-right: 90px;
 `,
     Dt = t => {
-        const [s, a] = n.useState(!1), {
+        const [a, s] = n.useState(!1), {
             navigation: r
         } = n.useContext(ue), {
             ref: l,
@@ -878,8 +878,8 @@ const _ = {
         n.useEffect(() => {
             document.documentElement.style.setProperty("--header-height", `${h}px`), r.headerHeight = h
         }, [h]);
-        const g = () => a(!0),
-            d = () => a(!1),
+        const g = () => s(!0),
+            d = () => s(!1),
             o = n.useMemo(() => t.theme ?? y.light, [t.theme]),
             i = n.useMemo(() => t.alpha ?? B.standard, [t.alpha]),
             u = n.useMemo(() => i === B.none ? 1 : i === B.darker ? o === y.light ? .9 : .75 : o === y.light ? .85 : .45, [i, o]),
@@ -914,9 +914,9 @@ const _ = {
                             })
                         })
                     }), t.children]
-                }), s ? e.jsx(Te, {
+                }), a ? e.jsx(Te, {
                     id: "header",
-                    visible: s,
+                    visible: a,
                     close: d,
                     showModes: !0
                 }) : null, t.includeSpacer ? e.jsx(wt, {}) : null]
@@ -952,9 +952,9 @@ const _ = {
     _t = m.div.attrs({
         className: "flex maxWidth between vc"
     })``,
-    Jt = t => e.jsx(Dt, {
+    Yt = t => e.jsx(Dt, {
         ...t
     });
 export {
-    bt as G, ht as N, Ye as R, Jt as S, $ as T, wt as a, pt as b, _ as s
+    bt as G, ht as N, Je as R, Yt as S, $ as T, wt as a, pt as b, _ as s
 };

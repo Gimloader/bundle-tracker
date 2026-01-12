@@ -1,25 +1,25 @@
 import {
-    ak as G,
-    al as z,
-    bA as M,
-    aN as B,
-    cZ as L,
+    ai as k,
+    aj as z,
+    bz as M,
+    aL as L,
+    cY as B,
     r as i,
-    an as R,
-    bI as T,
-    ao as j,
-    bB as U,
-    ap as V,
-    aq as W,
-    ar as X,
-    c_ as K,
-    bu as Y,
-    w as q,
-    c$ as Q,
+    al as R,
+    bH as T,
+    am as j,
+    bA as U,
+    an as V,
+    ao as W,
+    ap as K,
+    cZ as X,
+    bt as Y,
+    w as Q,
+    c_ as Z,
     x as b,
-    E as Z,
-    d0 as J,
-    aM as ee
+    E as q,
+    c$ as J,
+    aK as ee
 } from "./_index.js";
 import {
     N as ne,
@@ -102,7 +102,7 @@ const ae = e => {
             }
         };
         return [{
-            [n]: Object.assign(Object.assign({}, B(e)), {
+            [n]: Object.assign(Object.assign({}, L(e)), {
                 color: o,
                 position: "fixed",
                 top: y,
@@ -155,11 +155,11 @@ const ae = e => {
         }]
     },
     re = e => ({
-        zIndexPopup: e.zIndexPopupBase + L + 10,
+        zIndexPopup: e.zIndexPopupBase + B + 10,
         contentBg: e.colorBgElevated,
         contentPadding: `${(e.controlHeightLG-e.fontSize*e.lineHeight)/2}px ${e.paddingSM}px`
     }),
-    H = G("Message", e => {
+    H = k("Message", e => {
         const n = z(e, {
             height: 150
         });
@@ -173,13 +173,13 @@ var ce = function(e, n) {
     return s
 };
 const ie = {
-        info: i.createElement(K, null),
-        success: i.createElement(X, null),
+        info: i.createElement(X, null),
+        success: i.createElement(K, null),
         error: i.createElement(W, null),
         warning: i.createElement(V, null),
         loading: i.createElement(U, null)
     },
-    k = ({
+    D = ({
         prefixCls: e,
         type: n,
         icon: s,
@@ -202,7 +202,7 @@ const ie = {
             className: j(s, l, `${c}-notice-pure-panel`, y, r),
             eventKey: "pure",
             duration: null,
-            content: i.createElement(k, {
+            content: i.createElement(D, {
                 prefixCls: c,
                 type: t,
                 icon: o
@@ -279,7 +279,7 @@ const pe = 8,
             [`${g}-rtl`]: p ?? f === "rtl"
         }), P = () => ue(g, c), h = i.createElement("span", {
             className: `${g}-close-x`
-        }, i.createElement(q, {
+        }, i.createElement(Q, {
             className: `${g}-close-icon`
         })), [x, E] = te({
             prefixCls: g,
@@ -301,7 +301,7 @@ const pe = 8,
     });
 let _ = 0;
 
-function D(e) {
+function G(e) {
     const n = i.useRef(null);
     return Y(), [i.useMemo(() => {
         const t = c => {
@@ -329,7 +329,7 @@ function D(e) {
                 let C = O;
                 return C == null && (_ += 1, C = `antd-message-${_}`), F(w => (r(Object.assign(Object.assign({}, E), {
                     key: C,
-                    content: i.createElement(k, {
+                    content: i.createElement(D, {
                         prefixCls: u,
                         type: v,
                         icon: g
@@ -377,7 +377,7 @@ function D(e) {
 }
 
 function ye(e) {
-    return D(e)
+    return G(e)
 }
 let m = null,
     $ = e => e(),
@@ -406,7 +406,7 @@ const Ce = b.forwardRef((e, n) => {
             sync: t
         } = e, {
             getPrefixCls: o
-        } = i.useContext(R), a = S.prefixCls || o("message"), d = i.useContext(se), [p, c] = D(Object.assign(Object.assign(Object.assign({}, s), {
+        } = i.useContext(R), a = S.prefixCls || o("message"), d = i.useContext(se), [p, c] = G(Object.assign(Object.assign(Object.assign({}, s), {
             prefixCls: a
         }), d.message));
         return b.useImperativeHandle(n, () => {
@@ -433,7 +433,7 @@ const Ce = b.forwardRef((e, n) => {
                 sync: o,
                 messageConfig: s
             });
-        return b.createElement(Z, {
+        return b.createElement(q, {
             prefixCls: d,
             iconPrefixCls: p,
             theme: c
@@ -447,7 +447,7 @@ function N() {
                 fragment: e
             };
         m = n, $(() => {
-            Q()(b.createElement(be, {
+            Z()(b.createElement(be, {
                 ref: t => {
                     const {
                         instance: o,

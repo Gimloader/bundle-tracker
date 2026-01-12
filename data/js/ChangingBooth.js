@@ -6,7 +6,7 @@ import {
     G as o
 } from "./GetAssetPath.js";
 import {
-    a6 as g
+    a3 as g
 } from "./_index.js";
 import {
     s as c,

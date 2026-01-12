@@ -1,21 +1,21 @@
 import {
-    ak as J,
-    al as Q,
-    aN as M,
-    am as T,
-    bb as Y,
+    ai as Q,
+    aj as U,
+    aL as M,
+    ak as T,
+    ba as Y,
     x as Z,
     r as n,
-    an as L,
-    bX as ee,
-    bW as re,
-    cW as ae,
-    bI as W,
-    ao as j,
-    da as oe,
-    d4 as te,
-    aU as le,
-    aM as k
+    al as L,
+    bW as ee,
+    bV as re,
+    cV as ae,
+    bH as H,
+    am as j,
+    d9 as oe,
+    d3 as te,
+    aS as le,
+    aK as k
 } from "./_index.js";
 import {
     u as ne,
@@ -198,13 +198,13 @@ const ie = e => {
 };
 
 function ce(e, r) {
-    const o = Q(r, {
+    const o = U(r, {
         checkboxCls: `.${e}`,
         checkboxSize: r.controlInteractiveSize
     });
     return [ie(o)]
 }
-const q = J("Checkbox", (e, {
+const q = Q("Checkbox", (e, {
         prefixCls: r
     }) => [ce(r, e)]),
     F = Z.createContext(null);
@@ -220,10 +220,10 @@ const ue = (e, r) => {
         const {
             prefixCls: t,
             className: s,
-            rootClassName: N,
+            rootClassName: V,
             children: v,
             indeterminate: x = !1,
-            style: V,
+            style: N,
             onMouseEnter: $,
             onMouseLeave: c,
             skipGroup: y = !1,
@@ -234,7 +234,7 @@ const ue = (e, r) => {
             checkbox: u
         } = n.useContext(L), l = n.useContext(F), {
             isFormItemInput: O
-        } = n.useContext(ee), w = n.useContext(re), h = (o = (l == null ? void 0 : l.disabled) || z) !== null && o !== void 0 ? o : w, p = n.useRef(i.value), g = n.useRef(null), I = ae(r, g);
+        } = n.useContext(ee), w = n.useContext(re), h = (o = (l == null ? void 0 : l.disabled) || z) !== null && o !== void 0 ? o : w, p = n.useRef(i.value), g = n.useRef(null), P = ae(r, g);
         n.useEffect(() => {
             l == null || l.registerValue(i.value)
         }, []), n.useEffect(() => {
@@ -244,8 +244,8 @@ const ue = (e, r) => {
             !((b = g.current) === null || b === void 0) && b.input && (g.current.input.indeterminate = x)
         }, [x]);
         const d = S("checkbox", t),
-            P = W(d),
-            [B, E, _] = q(d, P),
+            I = H(d),
+            [B, E, _] = q(d, I),
             f = Object.assign({}, i);
         l && !y && (f.onChange = (...b) => {
             i.onChange && i.onChange.apply(i, b), l.toggleOption && l.toggleOption({
@@ -258,7 +258,7 @@ const ue = (e, r) => {
                 [`${d}-wrapper-checked`]: f.checked,
                 [`${d}-wrapper-disabled`]: h,
                 [`${d}-wrapper-in-form-item`]: O
-            }, u == null ? void 0 : u.className, s, N, _, P, E),
+            }, u == null ? void 0 : u.className, s, V, _, I, E),
             a = j({
                 [`${d}-indeterminate`]: x
             }, oe, E),
@@ -268,7 +268,7 @@ const ue = (e, r) => {
             disabled: h
         }, n.createElement("label", {
             className: D,
-            style: Object.assign(Object.assign({}, u == null ? void 0 : u.style), V),
+            style: Object.assign(Object.assign({}, u == null ? void 0 : u.style), N),
             onMouseEnter: $,
             onMouseLeave: c,
             onClick: m
@@ -277,12 +277,12 @@ const ue = (e, r) => {
             prefixCls: d,
             className: a,
             disabled: h,
-            ref: I
+            ref: P
         })), v != null && n.createElement("span", {
             className: `${d}-label`
         }, v))))
     },
-    H = n.forwardRef(ue);
+    W = n.forwardRef(ue);
 var be = function(e, r) {
     var o = {};
     for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && r.indexOf(t) < 0 && (o[t] = e[t]);
@@ -295,10 +295,10 @@ const pe = n.forwardRef((e, r) => {
             defaultValue: o,
             children: t,
             options: s = [],
-            prefixCls: N,
+            prefixCls: V,
             className: v,
             rootClassName: x,
-            style: V,
+            style: N,
             onChange: $
         } = e, c = be(e, ["defaultValue", "children", "options", "prefixCls", "className", "rootClassName", "style", "onChange"]), {
             getPrefixCls: y,
@@ -320,18 +320,18 @@ const pe = n.forwardRef((e, r) => {
             h = a => {
                 const m = i.indexOf(a.value),
                     C = k(i);
-                m === -1 ? C.push(a.value) : C.splice(m, 1), "value" in c || S(C), $ == null || $(C.filter(b => R.includes(b)).sort((b, A) => {
+                m === -1 ? C.push(a.value) : C.splice(m, 1), "value" in c || S(C), $ == null || $(C.filter(b => R.includes(b)).sort((b, X) => {
                     const K = l.findIndex(G => G.value === b),
-                        U = l.findIndex(G => G.value === A);
-                    return K - U
+                        J = l.findIndex(G => G.value === X);
+                    return K - J
                 }))
             },
-            p = y("checkbox", N),
+            p = y("checkbox", V),
             g = `${p}-group`,
-            I = W(p),
-            [d, P, B] = q(p, I),
+            P = H(p),
+            [d, I, B] = q(p, P),
             E = le(c, ["value", "disabled"]),
-            _ = s.length ? l.map(a => n.createElement(H, {
+            _ = s.length ? l.map(a => n.createElement(W, {
                 prefixCls: p,
                 key: a.value.toString(),
                 disabled: "disabled" in a ? a.disabled : c.disabled,
@@ -354,19 +354,19 @@ const pe = n.forwardRef((e, r) => {
             }), [h, i, c.disabled, c.name, w, O]),
             D = j(g, {
                 [`${g}-rtl`]: z === "rtl"
-            }, v, x, B, I, P);
+            }, v, x, B, P, I);
         return d(n.createElement("div", Object.assign({
             className: D,
-            style: V
+            style: N
         }, E, {
             ref: r
         }), n.createElement(F.Provider, {
             value: f
         }, _)))
     }),
-    X = H;
-X.Group = pe;
-X.__ANT_CHECKBOX = !0;
+    A = W;
+A.Group = pe;
+A.__ANT_CHECKBOX = !0;
 export {
-    X as C, ce as g
+    A as C, ce as g
 };

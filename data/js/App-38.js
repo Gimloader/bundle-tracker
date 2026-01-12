@@ -10,18 +10,18 @@ import {
     e as h,
     U as k,
     a as y,
-    ac as ne,
+    aa as ne,
     A as se,
     R as re,
     c as C,
-    a0 as O,
+    a4 as O,
     D as G,
-    at as ie,
+    ar as ie,
     S as W,
-    $ as oe,
+    aX as oe,
     T as H,
     n as ae,
-    a2 as le
+    $ as le
 } from "./_index.js";
 import {
     T as K
@@ -297,7 +297,7 @@ const be = t => {
 u.extend(he);
 const q = t => `${u(t).format("MMMM Do")} at ${u(t).format("h:mma")}`;
 var E = (t => (t.gameReport = "gameReport", t))(E || {});
-const J = t => {
+const X = t => {
         var a;
         const [s, r] = d.useState(), {
             links: o
@@ -361,7 +361,7 @@ const J = t => {
                 children: [e.jsxs(ze, {
                     children: ["Completed ", q(r.completedAt)]
                 }), e.jsx(Oe, {
-                    children: e.jsx(J, {
+                    children: e.jsx(X, {
                         links: r.links || [],
                         playerName: s
                     })
@@ -389,13 +389,13 @@ const J = t => {
             children: e.jsxs(We, {
                 children: [e.jsxs(He, {
                     children: [e.jsxs(Ke, {
-                        children: [e.jsx(Q, {
+                        children: [e.jsx(J, {
                             children: s
-                        }), e.jsx(V, {
+                        }), e.jsx(Q, {
                             children: n()
                         })]
                     }), e.jsx(Ue, {
-                        children: o ? null : e.jsx(J, {
+                        children: o ? null : e.jsx(X, {
                             links: r[0].links || [],
                             playerName: s
                         })
@@ -426,12 +426,12 @@ const J = t => {
         className: "flex between vc"
     })``,
     Ke = i.div``,
-    Q = i.div`
+    J = i.div`
   font-size: 18px;
   font-weight: ${f.Bold};
   color: rgba(0, 0, 0, 0.9);
 `,
-    V = i.div`
+    Q = i.div`
   font-size: 15px;
   margin-top: 2px;
 `,
@@ -497,7 +497,7 @@ const J = t => {
             o = n => {
                 t.onSortChange(n.target.value)
             };
-        return e.jsxs(Je, {
+        return e.jsxs(Xe, {
             children: [t.groups && t.groups.length ? e.jsxs(e.Fragment, {
                 children: [e.jsx(R, {
                     children: "Class"
@@ -572,7 +572,7 @@ const J = t => {
             })]
         })
     },
-    Je = i.div`
+    Xe = i.div`
   width: 220px;
   flex-shrink: 0;
   min-height: calc(100vh - 305px); // height of the top section
@@ -581,32 +581,32 @@ const J = t => {
 `,
     R = ({
         children: t
-    }) => e.jsx(Qe, {
-        children: e.jsx(Ve, {
+    }) => e.jsx(Je, {
+        children: e.jsx(Qe, {
             children: t
         })
     }),
-    Qe = i.div.attrs({
+    Je = i.div.attrs({
         className: "flex vc"
     })`
   margin-bottom: 15px;
 `,
-    Ve = i.div`
+    Qe = i.div`
   font-size: 18px;
   font-weight: ${f.Bold};
   line-height: 1;
 `,
-    X = t => e.jsxs(C, {
+    V = t => e.jsxs(C, {
         style: {
             color: h.Black
         },
-        children: [e.jsx(Q, {
+        children: [e.jsx(J, {
             children: t.name
-        }), ie.isNil(t.percentageComplete) ? null : e.jsxs(V, {
+        }), ie.isNil(t.percentageComplete) ? null : e.jsxs(Q, {
             children: [t.percentageComplete, "% complete"]
         })]
     }),
-    Xe = t => {
+    Ve = t => {
         const [s, r] = d.useState([]), [o, n, l] = j(!0);
         if (d.useEffect(() => {
                 n(), y({
@@ -627,7 +627,7 @@ const J = t => {
         return e.jsx("div", {
             className: "maxWidth",
             children: m.map((a, c) => e.jsxs(d.Fragment, {
-                children: [e.jsx(X, {
+                children: [e.jsx(V, {
                     name: a.name,
                     percentageComplete: a.percentageComplete
                 }), c !== s.length - 1 && e.jsx("div", {
@@ -659,7 +659,7 @@ const J = t => {
         return e.jsx("div", {
             className: "maxWidth",
             children: m.map((a, c) => e.jsxs(d.Fragment, {
-                children: [e.jsx(X, {
+                children: [e.jsx(V, {
                     name: a.name
                 }), c !== s.length - 1 && e.jsx("div", {
                     style: {
@@ -676,7 +676,7 @@ const et = t => {
             id: t.id,
             group: o,
             sort: l
-        }) : s === "in-progress" ? e.jsx(Xe, {
+        }) : s === "in-progress" ? e.jsx(Ve, {
             id: t.id,
             group: o,
             sort: l

@@ -3,7 +3,7 @@ import {
     j as t,
     e as S,
     d as s,
-    b7 as C,
+    b6 as C,
     y as M,
     a as A,
     t as E,
@@ -20,7 +20,7 @@ import {
     c as O,
     P as z,
     p as B
-} from "./App-68.js";
+} from "./App-67.js";
 import {
     n as D
 } from "./motion.js";

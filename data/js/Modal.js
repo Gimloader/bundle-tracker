@@ -5,23 +5,23 @@ import {
     j as e,
     d as i,
     s as A,
-    aj as M,
+    ah as M,
     F as y
 } from "./_index.js";
 import {
     ANIMATION_DURATION as b
-} from "./App-57.js";
+} from "./App-56.js";
 import {
     q as w
 } from "./App-41.js";
 import {
-    M as j
+    M as C
 } from "./Button.js";
 import {
-    a as C
+    a as N
 } from "./useDebouncedValue.js";
 import {
-    g as N,
+    g as j,
     m as I
 } from "./motion.js";
 import "./SixteenByNineScaler.js";
@@ -98,7 +98,7 @@ const k = t => {
             const o = s.trim();
             o.length && t.guess(o)
         };
-        C(() => {
+        N(() => {
             a(), r("")
         }, [t.incorrectCounter]), l.useEffect(() => {
             t.useMaxAttempts && t.attempts >= t.maxAttempts && r("")
@@ -137,7 +137,7 @@ const k = t => {
                 style: d ? {} : {
                     cursor: "not-allowed"
                 }
-            }), e.jsx(j, {
+            }), e.jsx(C, {
                 size: "small",
                 type: "success",
                 onClick: c,
@@ -178,7 +178,7 @@ const k = t => {
         opacity: 1
     },
     Yt = t => {
-        const s = N(),
+        const s = j(),
             [r, m] = x(!1);
         A(() => {
             M("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap")

@@ -1,7 +1,7 @@
 import {
     r as o,
     l as E,
-    a6 as P,
+    a3 as P,
     n as k,
     a as u,
     j as t,

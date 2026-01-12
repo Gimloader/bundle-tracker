@@ -2,7 +2,7 @@ import {
     r as e,
     I as r,
     _ as l,
-    az as c
+    ax as c
 } from "./_index.js";
 var o = {
         icon: {

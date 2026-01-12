@@ -6,22 +6,22 @@ import {
     o as D,
     j as e,
     b as u,
-    $,
+    aX as $,
     T as z,
     q as A,
     e as p,
-    a0 as _,
+    a4 as _,
     D as I,
     d,
     F as M,
-    aZ as x,
+    aY as x,
     c as N,
     n as F,
     a as H,
     U as L,
     S as W,
     h as V,
-    a2 as q
+    $ as q
 } from "./_index.js";
 import {
     o as g
@@ -40,22 +40,22 @@ import {
     S as U
 } from "./App-4.js";
 import {
-    R as Z
+    R as X
 } from "./QuestionCircleOutlined.js";
 import {
     C as j,
     H as b,
     I as w,
     a as y,
-    B as J,
-    Q as K,
-    P as X
+    B as Y,
+    Q as J,
+    P as K
 } from "./Player.js";
 import {
     p as T
 } from "./papaparse.min.js";
 import {
-    F as Y
+    F as Z
 } from "./FillRemainingSpace.js";
 import {
     N as ee
@@ -248,7 +248,7 @@ const ce = {
                 }
             }), e.jsxs("div", {
                 children: [e.jsx(h, {
-                    icon: Z,
+                    icon: X,
                     onClick: () => r.currentTab = c.breakdown,
                     title: "Question Breakdown",
                     selected: r.currentTab === c.breakdown
@@ -345,7 +345,7 @@ const ce = {
                     })
                 }
             }), e.jsx("div", {
-                children: o.map(s => e.jsx(J, {
+                children: o.map(s => e.jsx(Y, {
                     question: s.question,
                     correct: s.resultData.correct,
                     incorrect: s.resultData.incorrect,
@@ -404,7 +404,7 @@ const ce = {
                             children: e.jsx("div", {
                                 children: a.name
                             })
-                        }), e.jsx(K, {
+                        }), e.jsx(J, {
                             correct: a.correctQuestionIds.length,
                             incorrect: a.incorrectQuestionIds.length,
                             accuracy: s
@@ -428,7 +428,7 @@ const ce = {
             gameReport: r
         }) : a === c.breakdown ? e.jsx(ge, {
             gameReport: r
-        }) : a === c.player && r.players[o] ? e.jsx(X, {
+        }) : a === c.player && r.players[o] ? e.jsx(K, {
             player: r.players[o],
             questions: r.questions
         }) : null;
@@ -493,7 +493,7 @@ const ce = {
             })
         })
     },
-    Ce = d(Y)`
+    Ce = d(Z)`
   @media print {
     height: auto !important;
     ::-webkit-scrollbar {

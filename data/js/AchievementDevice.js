@@ -1,5 +1,5 @@
 import {
-    c0 as m
+    b$ as m
 } from "./_index.js";
 import {
     s as p,
@@ -8,10 +8,10 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     al as a,
-    T as c
+    T as h
 } from "./App-41.js";
 import {
-    G as h
+    G as n
 } from "./GetAssetPath.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
@@ -79,16 +79,16 @@ import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const n = {
+const c = {
     imageId: "achievement_device",
-    imageUrl: h("devices/achievement/icon.png")
+    imageUrl: n("devices/achievement/icon.png")
 };
 var r = (t => (t.show = "show", t))(r || {});
 class ki extends a {
     constructor(o) {
         super(o), this.onMessage = i => {
-            i.key === r.show && (i == null ? void 0 : i.data) === c() && p.gui.achievement.update(this.id, m())
-        }, !(e() || s()) && (this.layers.forceDepthManually(0), this.parts.add.sprite(n))
+            i.key === r.show && (i == null ? void 0 : i.data) === h() && p.gui.achievement.update(this.id, m())
+        }, !(e() || s()) && (this.layers.forceDepthManually(0), this.parts.add.sprite(c))
     }
 }
 export {

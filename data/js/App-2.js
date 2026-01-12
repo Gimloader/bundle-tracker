@@ -1,14 +1,14 @@
 import {
     U as b,
-    r as c,
+    r as l,
     u as Q,
     i as Y,
-    f as w,
+    f as j,
     j as e,
     e as d,
     d as s,
     D as $,
-    F as A,
+    F as S,
     x as y,
     a as B,
     t as X,
@@ -16,16 +16,16 @@ import {
     S as V,
     C as F,
     B as D,
-    ac as Z,
+    aa as Z,
     Z as J,
-    ah as ee,
-    aj as te,
+    af as ee,
+    ah as te,
     l as ie,
     E as se,
-    cn as ne
+    cm as ne
 } from "./_index.js";
 import {
-    E as j
+    E as w
 } from "./Sizes.js";
 import {
     A as _
@@ -97,14 +97,14 @@ var T = new Map([
         Array.isArray(i) || typeof i == "string" || C(), Array.isArray(i) && i.forEach(function(n, r) {
             typeof n != "string" && C()
         }), typeof a == "function" || a == null || C();
-        var o = c.useRef();
-        c.useEffect(function() {
+        var o = l.useRef();
+        l.useEffect(function() {
             o.current = function(n) {
                 he(n), (Array.isArray(i) ? i.includes(n.key) : i === n.key) && (a == null || a(n))
             }
-        }, [i, a]), c.useEffect(function() {
-            var n = function(h) {
-                o.current(h)
+        }, [i, a]), l.useEffect(function() {
+            var n = function(u) {
+                o.current(u)
             };
             return window.addEventListener("keydown", n),
                 function() {
@@ -112,15 +112,15 @@ var T = new Map([
                 }
         }, [])
     },
-    m = (t => (t.limitedModes = "limitedModes", t.limitedGames = "limitedGames", t))(m || {});
+    x = (t => (t.limitedModes = "limitedModes", t.limitedGames = "limitedGames", t))(x || {});
 const p = () => "limitedModes",
     xe = () => 5,
-    S = 350,
+    A = 350,
     H = 10,
-    W = S + H,
+    W = A + H,
     v = .2,
     fe = t => {
-        const [i, a, o] = Q(!1), n = p(), r = c.useMemo(() => t.isProExperience && !Y() && n === m.limitedModes && !w(), [t.isProExperience, n]);
+        const [i, a, o] = Q(!1), n = p(), r = l.useMemo(() => t.isProExperience && !Y() && n === x.limitedModes && !j(), [t.isProExperience, n]);
         return e.jsxs(ge, {
             onMouseEnter: a,
             onMouseLeave: o,
@@ -142,7 +142,7 @@ const p = () => "limitedModes",
                 },
                 children: e.jsx(ye, {})
             }) : e.jsx("div", {}), e.jsxs(ve, {
-                children: [r ? e.jsx(je, {
+                children: [r ? e.jsx(we, {
                     animate: {
                         opacity: i ? 0 : 1
                     },
@@ -153,7 +153,7 @@ const p = () => "limitedModes",
                         duration: v
                     },
                     children: "Gimkit Pro Exclusive"
-                }) : null, !r && t.tag ? e.jsx(we, {
+                }) : null, !r && t.tag ? e.jsx(je, {
                     animate: {
                         opacity: i ? 0 : 1
                     },
@@ -186,7 +186,7 @@ const p = () => "limitedModes",
     })`
   border-width: 4px;
   border-style: solid;
-  width: ${S}px;
+  width: ${A}px;
   height: 180px;
   border-radius: 4px;
   background-image: url('');
@@ -233,7 +233,7 @@ const p = () => "limitedModes",
   overflow: hidden;
   align-items: flex-start;
 `,
-    je = s(g.div)`
+    we = s(g.div)`
   font-family: ${E.titleFont};
   text-transform: uppercase;
   font-size: 12px;
@@ -241,7 +241,7 @@ const p = () => "limitedModes",
   text-shadow: 1px 1px 1px ${d.Black};
   color: ${d.White};
 `,
-    we = s(g.div)`
+    je = s(g.div)`
   font-family: ${E.titleFont};
   text-transform: uppercase;
   background: rgba(255, 87, 34, 0.8);
@@ -267,37 +267,37 @@ const p = () => "limitedModes",
   font-family: ${b.ProductSans};
 `,
     ke = t => {
-        const [i, a] = c.useState(0), o = c.useRef(!1), n = c.useRef(null), [r] = oe(n), h = c.useMemo(() => t.verticalList ? 0 : i * W * -1 + j.sideMargin, [i, t.verticalList]), l = c.useMemo(() => !(i <= 0), [i]), x = () => {
+        const [i, a] = l.useState(0), o = l.useRef(!1), n = l.useRef(null), [r] = oe(n), u = l.useMemo(() => t.verticalList ? 0 : i * W * -1 + w.sideMargin, [i, t.verticalList]), c = l.useMemo(() => !(i <= 0), [i]), f = () => {
             o.current = !0
-        }, f = () => {
+        }, m = () => {
             o.current = !1
         };
-        me(["ArrowLeft", "ArrowRight"], u => {
-            o.current && (u.key === "ArrowLeft" && N(), u.key === "ArrowRight" && I())
+        me(["ArrowLeft", "ArrowRight"], h => {
+            o.current && (h.key === "ArrowLeft" && N(), h.key === "ArrowRight" && I())
         });
-        const M = c.useMemo(() => {
+        const M = l.useMemo(() => {
                 if (i + 1 === t.list.items.length) return !1;
-                const u = (r - j.sideMargin) / W;
-                return !(i >= t.list.items.length - u)
+                const h = (r - w.sideMargin) / W;
+                return !(i >= t.list.items.length - h)
             }, [r, i, t.list.items.length]),
             N = () => {
-                l && a(Math.max(0, i - 1))
+                c && a(Math.max(0, i - 1))
             },
             I = () => {
                 M && a(i + 1)
             };
         return e.jsxs(Me, {
-            onMouseEnter: x,
-            onMouseLeave: f,
+            onMouseEnter: f,
+            onMouseLeave: m,
             children: [t.hideListName ? null : e.jsx(Ce, {
                 children: t.list.name
             }), e.jsxs(Pe, {
                 children: [e.jsx($e, {
                     animate: {
-                        x: h
+                        x: u
                     },
                     initial: {
-                        x: t.verticalList ? 0 : j.sideMargin
+                        x: t.verticalList ? 0 : w.sideMargin
                     },
                     transition: {
                         duration: .3,
@@ -305,7 +305,7 @@ const p = () => "limitedModes",
                     },
                     style: t.verticalList ? {
                         display: "grid",
-                        gridTemplateColumns: `repeat(auto-fill, ${S}px)`,
+                        gridTemplateColumns: `repeat(auto-fill, ${A}px)`,
                         justifyContent: "center",
                         gap: 20,
                         margin: "0px 25px"
@@ -313,21 +313,21 @@ const p = () => "limitedModes",
                         gap: H
                     },
                     ref: n,
-                    children: t.list.items.map(u => e.jsx(fe, {
-                        name: u.name,
-                        tagline: u.tagline,
-                        image: u.imageUrl,
-                        currentlySelected: t.forceAllSelected ? !0 : t.currentlySelectedExperienceId === u._id,
-                        onSelect: t.onExperienceSelected ? () => t.onExperienceSelected(u._id) : null,
-                        isProExperience: u.isPremiumExperience,
+                    children: t.list.items.map(h => e.jsx(fe, {
+                        name: h.name,
+                        tagline: h.tagline,
+                        image: h.imageUrl,
+                        currentlySelected: t.forceAllSelected ? !0 : t.currentlySelectedExperienceId === h._id,
+                        onSelect: t.onExperienceSelected ? () => t.onExperienceSelected(h._id) : null,
+                        isProExperience: h.isPremiumExperience,
                         noShadowOnContainer: t.noShadowOnItems,
                         forcePremiumBadge: t.forcePremiumBadge,
-                        tag: u.tag
-                    }, `list-${t.list._id}-${u._id}`))
-                }), t.verticalList ? null : e.jsxs(Ae, {
-                    children: [e.jsx(Se, {
+                        tag: h.tag
+                    }, `list-${t.list._id}-${h._id}`))
+                }), t.verticalList ? null : e.jsxs(Se, {
+                    children: [e.jsx(Ae, {
                         animate: {
-                            opacity: l ? 1 : 0
+                            opacity: c ? 1 : 0
                         },
                         initial: {
                             opacity: 0
@@ -335,7 +335,7 @@ const p = () => "limitedModes",
                         onClick: N,
                         children: e.jsx(z, {
                             style: {
-                                cursor: l ? "pointer" : "auto"
+                                cursor: c ? "pointer" : "auto"
                             },
                             children: e.jsx("i", {
                                 className: "fas fa-chevron-left"
@@ -382,7 +382,7 @@ const p = () => "limitedModes",
     $e = s(g.div).attrs({
         className: "flex"
     })``,
-    Ae = s.div.attrs({
+    Se = s.div.attrs({
         className: "maxAll flex vc between"
     })`
   position: absolute;
@@ -397,7 +397,7 @@ const p = () => "limitedModes",
   line-height: 1;
   color: ${d.White};
 `,
-    Se = s(q)`
+    Ae = s(q)`
   background: linear-gradient(
     to right,
     hsla(0, 0%, 0%, 0.61) 0%,
@@ -460,7 +460,7 @@ const p = () => "limitedModes",
     }, {
         question: "What's included with Gimkit Pro?",
         answer: e.jsxs("span", {
-            children: [p() === m.limitedModes ? "Unrestricted access to all modes, including Gimkit Pro Exclusives." : "No game limits, host as many games as you'd like!", " ", "You'll also be able to create assignments (play Gimkit asynchronously) and upload audio + images to your questions."]
+            children: [p() === x.limitedModes ? "Unrestricted access to all modes, including Gimkit Pro Exclusives." : "No game limits, host as many games as you'd like!", " ", "You'll also be able to create assignments (play Gimkit asynchronously) and upload audio + images to your questions."]
         })
     }, {
         question: "What's your refund policy?",
@@ -506,26 +506,26 @@ const p = () => "limitedModes",
 `,
     We = s.div`
   font-size: 21px;
-  font-weight: ${A.Bold};
+  font-weight: ${S.Bold};
 `,
     ze = s.div`
   font-size: 16px;
   margin-top: 5px;
 `,
     Re = t => {
-        const [i, a] = y.useState(!0), [o, n] = y.useState(null), [r, h] = y.useState(null), l = () => `${Z()}/pay-for-me/${r}`, x = () => {
-            re(l()), ce.success("Pay For Me link copied to clipboard!")
+        const [i, a] = y.useState(!0), [o, n] = y.useState(null), [r, u] = y.useState(null), c = () => `${Z()}/pay-for-me/${r}`, f = () => {
+            re(c()), ce.success("Pay For Me link copied to clipboard!")
         };
         return y.useEffect(() => {
             B({
                 method: "GET",
                 url: "/api/billing/pay-for-me-link",
-                success: f => {
-                    h(f)
+                success: m => {
+                    u(m)
                 },
-                error: f => {
-                    n(f), X({
-                        e: f,
+                error: m => {
+                    n(m), X({
+                        e: m,
                         default: {
                             title: "Error connecting to our server",
                             content: "An error ocurred while connecting to our server. Please try again later."
@@ -557,7 +557,7 @@ const p = () => "limitedModes",
                 }), e.jsxs(Ue, {
                     children: [e.jsx("span", {
                         style: {
-                            fontWeight: A.UltraBold
+                            fontWeight: S.UltraBold
                         },
                         children: "Pay For Me"
                     }), " ", "link"]
@@ -566,7 +566,7 @@ const p = () => "limitedModes",
                 }), e.jsx($, {}), !o && e.jsxs("div", {
                     className: "flex",
                     children: [e.jsx(le, {
-                        value: l(),
+                        value: c(),
                         size: "large",
                         readOnly: !0
                     }), e.jsx(D, {
@@ -575,7 +575,7 @@ const p = () => "limitedModes",
                         style: {
                             marginLeft: 10
                         },
-                        onClick: x,
+                        onClick: f,
                         children: "Copy Link"
                     })]
                 })]
@@ -611,7 +611,7 @@ const p = () => "limitedModes",
   }
 `,
     De = t => {
-        const [i, a] = c.useState(!1), [o, n] = c.useState(!1), r = () => a(!0);
+        const [i, a] = l.useState(!1), [o, n] = l.useState(!1), r = () => a(!0);
         return e.jsxs("div", {
             className: "flex flex-column vc",
             style: {
@@ -628,7 +628,7 @@ const p = () => "limitedModes",
                         width: 380,
                         height: 70
                     },
-                    children: w() ? "Upgrade to Gimkit Pro early" : "Upgrade to Gimkit Pro"
+                    children: j() ? "Upgrade to Gimkit Pro early" : "Upgrade to Gimkit Pro"
                 })
             }), null, e.jsx($, {
                 style: {
@@ -675,9 +675,9 @@ const P = s(_)`
     _e = t => {
         const {
             copy: i
-        } = t, a = () => i && i.title ? i.title : w() ? e.jsx(e.Fragment, {
+        } = t, a = () => i && i.title ? i.title : j() ? e.jsx(e.Fragment, {
             children: "Your trial ends soon."
-        }) : p() === m.limitedGames ? e.jsx(e.Fragment, {
+        }) : p() === x.limitedGames ? e.jsx(e.Fragment, {
             children: "Upgrade to host unlimited games"
         }) : e.jsxs("div", {
             style: {
@@ -690,15 +690,15 @@ const P = s(_)`
         }), o = () => {
             if (i && i.description) return i.description;
             const n = p(),
-                r = n === m.limitedModes ? "a few game modes that rotate every few weeks" : `host ${xe()} games per month`;
+                r = n === x.limitedModes ? "a few game modes that rotate every few weeks" : `host ${xe()} games per month`;
             return e.jsxs("div", {
                 className: "maxWidth",
                 style: {
                     textAlign: "left"
                 },
-                children: [w() ? `After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${r}.` : `You're on the free version of Gimkit, which limits you to ${r}.`, e.jsx("br", {}), " ", e.jsx("br", {}), n === m.limitedModes ? "Want access to every single mode?" : "Want to host unlimited games?", " ", "Upgrade to Gimkit Pro! It’s just", " ", L({
+                children: [j() ? `After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${r}.` : `You're on the free version of Gimkit, which limits you to ${r}.`, e.jsx("br", {}), " ", e.jsx("br", {}), n === x.limitedModes ? "Want access to every single mode?" : "Want to host unlimited games?", " ", "Upgrade to Gimkit Pro! It’s just", " ", L({
                     simple: !0
-                }), " a month and you’ll be helping support us, an independent small business.", n === m.limitedModes ? e.jsxs(e.Fragment, {
+                }), " a month and you’ll be helping support us, an independent small business.", n === x.limitedModes ? e.jsxs(e.Fragment, {
                     children: [e.jsx("br", {}), " ", e.jsx("br", {}), "Upgrade to get access to these game modes and more:"]
                 }) : null]
             })
@@ -757,7 +757,7 @@ const P = s(_)`
 `,
     Qe = s.div`
   font-size: 42px;
-  font-weight: ${A.UltraBold};
+  font-weight: ${S.UltraBold};
 `,
     Ye = s.div`
   font-size: 20px;
@@ -766,8 +766,8 @@ const P = s(_)`
         Classic: 1
     },
     Xe = () => {
-        const [t, i] = c.useState([]);
-        return c.useEffect(() => {
+        const [t, i] = l.useState([]);
+        return l.useEffect(() => {
             B({
                 url: "/api/experiences",
                 data: {
@@ -776,19 +776,19 @@ const P = s(_)`
                 cacheKey: "EXPERIENCES",
                 success: a => {
                     let o = [];
-                    const n = [];
-                    a.forEach(r => {
-                        const h = r.items.every(l => !l.isPremiumExperience);
-                        r.items.forEach(l => {
-                            (l.isPremiumExperience || h) && (n.includes(l._id) || (o.push({
-                                ...l,
+                    const n = [],
+                        r = a.every(u => u.items.every(c => !c.isPremiumExperience));
+                    a.forEach(u => {
+                        u.items.forEach(c => {
+                            (c.isPremiumExperience || r) && (n.includes(c._id) || (o.push({
+                                ...c,
                                 isPremiumExperience: !0
-                            }), n.push(l._id)))
+                            }), n.push(c._id)))
                         })
-                    }), Object.keys(G).forEach(r => {
-                        const h = G[r],
-                            l = o.find(x => x.name === r);
-                        l && (o = o.filter(x => x.name !== r), o.splice(h, 0, l))
+                    }), Object.keys(G).forEach(u => {
+                        const c = G[u],
+                            f = o.find(m => m.name === u);
+                        f && (o = o.filter(m => m.name !== u), o.splice(c, 0, f))
                     }), i(o)
                 }
             })
@@ -817,11 +817,11 @@ const P = s(_)`
     })`
   margin-top: ${()=>-K+25}px;
 `,
-    k = j.sideMargin,
+    k = w.sideMargin,
     ct = t => {
-        c.useEffect(() => {
+        l.useEffect(() => {
             t.visible && t.showModes && te("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap")
-        }, [t.visible, t.showModes]), c.useEffect(() => {
+        }, [t.visible, t.showModes]), l.useEffect(() => {
             t.visible && ae({
                 properties: {
                     reason: t.id
@@ -831,7 +831,7 @@ const P = s(_)`
         const i = ie();
         if (!i) return null;
         const a = p(),
-            o = t.showModes && a === m.limitedModes;
+            o = t.showModes && a === x.limitedModes;
         return e.jsx(se, {
             theme: {
                 algorithm: ne.defaultAlgorithm
@@ -877,7 +877,7 @@ const P = s(_)`
 `;
 export {
     E,
-    m as F,
+    x as F,
     _e as T,
     ct as U,
     xe as a,

@@ -1,7 +1,7 @@
 import {
     j as t,
-    e as n,
-    as as d,
+    e as s,
+    aq as d,
     D as c,
     q as x,
     b as m,
@@ -29,9 +29,9 @@ const o = 178,
   text-decoration: none;
 `,
     C = i(h)`
-  background-color: ${n.White};
+  background-color: ${s.White};
   border-radius: 7px;
-  border: 2px solid ${n.BorderGray};
+  border: 2px solid ${s.BorderGray};
   font-family: ${a.SFPro};
 `,
     w = i.div.attrs({
@@ -81,7 +81,7 @@ const o = 178,
         className: "fad fa-calendar-alt"
     })``,
     Q = e => {
-        const s = e.size === "normal",
+        const n = e.size === "normal",
             r = () => e.blockRedirect ? null : g(`/view/${e.id}`);
         return t.jsx(j, {
             to: e.blockRedirect ? void 0 : `/view/${e.id}`,
@@ -93,26 +93,26 @@ const o = 178,
                 },
                 hoverable: !e.blockHoverable,
                 style: {
-                    backgroundColor: e.selected ? "#eeeeee" : n.White
+                    backgroundColor: e.selected ? "#eeeeee" : s.White
                 },
                 children: t.jsxs("div", {
                     className: "flex maxWidth",
                     children: [t.jsx("div", {
                         children: t.jsx(u, {
                             image: e.gif,
-                            size: s ? o : b,
+                            size: n ? o : b,
                             onClick: e.redirectOnImageClick && r
                         })
                     }), t.jsx(w, {
                         children: t.jsxs(y, {
                             children: [t.jsx(I, {
                                 style: {
-                                    fontSize: s ? 32 : 23
+                                    fontSize: n ? 32 : 23
                                 },
                                 children: e.title
                             }), e.creator && t.jsx(N, {
                                 style: {
-                                    fontSize: s ? 18 : 16
+                                    fontSize: n ? 18 : 16
                                 },
                                 children: d(e.creator)
                             }), t.jsx(c, {
@@ -123,7 +123,7 @@ const o = 178,
                                 children: [t.jsx(S, {}), t.jsxs("span", {
                                     children: [e.numberOfQuestions ? e.numberOfQuestions : "", " ", e.numberOfQuestions ? x("question", e.numberOfQuestions) : ""]
                                 })]
-                            }), e.dateCreated && s && t.jsxs(k, {
+                            }), e.dateCreated && n && t.jsxs(k, {
                                 children: [t.jsx(W, {}), t.jsxs("span", {
                                     children: ["Created ", m(e.dateCreated).fromNow()]
                                 })]

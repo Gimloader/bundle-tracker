@@ -10,7 +10,7 @@ import {
     e as y,
     c as w,
     r as p,
-    aZ as g
+    aY as g
 } from "./_index.js";
 import {
     Q as B
@@ -197,11 +197,11 @@ const a = {
   width: 100%;
   justify-content: space-between;
 `,
-    L = n.div`
+    Y = n.div`
   width: 100%;
 `,
-    Y = e => t.jsxs(O, {
-        children: [t.jsx(L, {
+    L = e => t.jsxs(O, {
+        children: [t.jsx(Y, {
             children: t.jsx(B, {
                 question: e.question
             })
@@ -211,7 +211,7 @@ const a = {
             accuracy: e.accuracy
         })]
     }),
-    Z = n.div`
+    J = n.div`
   display: flex;
   justify-content: space-around;
   min-height: max-content;
@@ -260,7 +260,7 @@ const a = {
             preventScroll: e.preventScroll,
             children: [t.jsx(R, {
                 title: o.name
-            }), t.jsxs(Z, {
+            }), t.jsxs(J, {
                 children: [t.jsx(m, {
                     header: "Correct",
                     content: o.correctQuestionIds.length,
@@ -286,7 +286,7 @@ const a = {
                     })
                 })
             }), t.jsx("div", {
-                children: u.sort((r, i) => r.resultData.accuracy > i.resultData.accuracy ? 1 : -1).map(r => t.jsx(Y, {
+                children: u.sort((r, i) => r.resultData.accuracy > i.resultData.accuracy ? 1 : -1).map(r => t.jsx(L, {
                     question: r.question,
                     correct: r.resultData.correct,
                     incorrect: r.resultData.incorrect,
@@ -296,5 +296,5 @@ const a = {
         })
     };
 export {
-    Y as B, W as C, R as H, T as I, et as P, H as Q, a
+    L as B, W as C, R as H, T as I, et as P, H as Q, a
 };

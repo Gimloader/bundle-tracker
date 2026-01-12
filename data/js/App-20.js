@@ -2,7 +2,7 @@ const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/ind
 import {
     r as t,
     V as f,
-    a2 as d,
+    $ as d,
     a as p,
     j as e,
     T as m,

@@ -1,5 +1,5 @@
 import {
-    bJ as z
+    bI as z
 } from "./_index.js";
 var k = {
         exports: {}
@@ -207,8 +207,8 @@ function B() {
                                 trace: w = 3,
                                 traceSpeed: j = 10,
                                 intensity: L = 30,
-                                explosion: F = 5,
-                                gravity: I = 1.5,
+                                explosion: I = 5,
+                                gravity: F = 1.5,
                                 opacity: D = .5,
                                 particles: C = 50,
                                 friction: T = .95,
@@ -218,7 +218,7 @@ function B() {
                                 visible: !1,
                                 x: 50,
                                 y: 50
-                            }, n)), this.autoresize = i, this.trace = w, this.explosion = F, this.gravity = I, this.opacity = D, this.particles = C, this.friction = T, this.acceleration = W, this.flickering = y, this.intensity = L, this.traceSpeed = j, this.lineStyle = p, this.hue = Object.assign({
+                            }, n)), this.autoresize = i, this.trace = w, this.explosion = I, this.gravity = F, this.opacity = D, this.particles = C, this.friction = T, this.acceleration = W, this.flickering = y, this.intensity = L, this.traceSpeed = j, this.lineStyle = p, this.hue = Object.assign({
                                 min: 0,
                                 max: 360
                             }, a), this.rocketsPoint = Object.assign({

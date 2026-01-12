@@ -3,21 +3,21 @@ import {
     I as v,
     _ as b,
     j as e,
-    af as f,
+    ad as f,
     B as r,
     D as l,
-    ag as y,
-    ah as $,
+    ae as $,
+    af as y,
     d as t,
     e as n,
     F as c,
-    a6 as k,
+    a3 as k,
     s as C,
-    ai as S,
-    a2 as z,
+    ag as S,
+    $ as z,
     T as I,
     E as N,
-    aj as T
+    ah as T
 } from "./_index.js";
 import {
     A as o
@@ -72,7 +72,7 @@ var B = {
             icon: B
         }))
     },
-    j = g.forwardRef(G);
+    u = g.forwardRef(G);
 const m = 890,
     W = () => e.jsxs(E, {
         children: [e.jsx(h, {
@@ -100,7 +100,7 @@ const m = 890,
                         height: 61
                     },
                     size: "large",
-                    icon: e.jsx(j, {}),
+                    icon: e.jsx(u, {}),
                     type: "primary",
                     children: "Sign Up For Free"
                 })
@@ -121,7 +121,7 @@ const m = 890,
                 }), e.jsx(l, {
                     type: "vertical"
                 }), e.jsx(o, {
-                    to: y,
+                    to: $,
                     children: e.jsxs(r, {
                         type: "link",
                         children: [e.jsx(R, {}), "Login"]
@@ -130,7 +130,7 @@ const m = 890,
                     children: [e.jsx(l, {
                         type: "vertical"
                     }), e.jsx(o, {
-                        to: $,
+                        to: y,
                         children: e.jsxs(r, {
                             type: "link",
                             children: [e.jsx("i", {
@@ -239,14 +239,14 @@ const m = 890,
     display: none;
   }
 `,
-    u = t.div`
+    j = t.div`
   width: 90%;
   max-width: 900px;
 `,
     d = 670,
     x = i => {
         const s = i.imageSide === "right";
-        return e.jsx(u, {
+        return e.jsx(j, {
             children: e.jsxs(q, {
                 row: s,
                 children: [e.jsxs(P, {
@@ -352,7 +352,7 @@ const m = 890,
 `,
     p = i => {
         const s = i.imageSide === "left";
-        return e.jsx(u, {
+        return e.jsx(j, {
             children: e.jsxs(Z, {
                 flexDirection: s ? "row-reverse" : "row",
                 children: [e.jsxs(ee, {
@@ -421,7 +421,7 @@ const m = 890,
         }), e.jsx(o, {
             to: f,
             children: e.jsx(r, {
-                icon: e.jsx(j, {}),
+                icon: e.jsx(u, {}),
                 type: "primary",
                 size: "large",
                 style: {

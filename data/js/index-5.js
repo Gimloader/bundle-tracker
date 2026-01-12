@@ -1,33 +1,33 @@
 import {
-    df as Q,
+    de as G,
     r as c,
-    ao as j,
-    aD as It,
-    db as kt,
-    aF as T,
-    bL as Et,
+    am as j,
+    aB as It,
+    da as kt,
+    aD as T,
+    bK as Et,
     _ as Vt,
-    am as V,
-    ak as zt,
-    al as pt,
-    cO as Lt,
-    aN as Bt,
-    aM as ct,
-    an as Mt,
-    bd as Dt,
-    aQ as Ht,
-    bu as Xt,
-    aI as Wt,
-    b_ as Yt,
-    dg as qt,
-    bZ as Ft,
-    d8 as Zt,
-    aS as Ut,
-    cU as Qt
+    ak as V,
+    ai as zt,
+    aj as pt,
+    cN as Lt,
+    aL as Bt,
+    aK as ct,
+    al as Mt,
+    bc as Dt,
+    aO as Ht,
+    bt as Xt,
+    aG as Wt,
+    bZ as Yt,
+    df as qt,
+    bY as Ft,
+    d7 as Zt,
+    aQ as Ut,
+    cT as Gt
 } from "./_index.js";
 
-function Gt(e, o) {
-    return Q.reduce((r, t) => {
+function Qt(e, o) {
+    return G.reduce((r, t) => {
         const a = e[`${t}1`],
             s = e[`${t}3`],
             n = e[`${t}6`],
@@ -163,7 +163,7 @@ var I = {
             N = o.placement,
             z = N === void 0 ? "right" : N,
             L = o.align,
-            G = L === void 0 ? {} : L,
+            Q = L === void 0 ? {} : L,
             B = o.destroyTooltipOnHide,
             J = B === void 0 ? !1 : B,
             K = o.defaultVisible,
@@ -209,7 +209,7 @@ var I = {
             builtinPlacements: Jt,
             popupPlacement: z,
             ref: X,
-            popupAlign: G,
+            popupAlign: Q,
             getPopupContainer: tt,
             onPopupVisibleChange: h,
             afterPopupVisibleChange: g,
@@ -647,7 +647,7 @@ const ce = e => {
                 [`${r}-content`]: {
                     position: "relative"
                 }
-            }), Gt(e, (O, {
+            }), Qt(e, (O, {
                 darkColor: $
             }) => ({
                 [`&${r}-${O}`]: {
@@ -695,11 +695,11 @@ const ce = e => {
         resetStyle: !1,
         injectStyle: o
     })(e),
-    pe = Q.map(e => `${e}-inverse`),
+    pe = G.map(e => `${e}-inverse`),
     de = ["success", "processing", "error", "default", "warning"];
 
 function ue(e, o = !0) {
-    return o ? [].concat(ct(pe), ct(Q)).includes(e) : Q.includes(e)
+    return o ? [].concat(ct(pe), ct(G)).includes(e) : G.includes(e)
 }
 
 function we(e) {
@@ -769,7 +769,7 @@ const be = c.forwardRef((e, o) => {
             autoAdjustOverflow: N = !0,
             motion: z,
             getPopupContainer: L,
-            placement: G = "top",
+            placement: Q = "top",
             mouseEnterDelay: B = .1,
             mouseLeaveDelay: J = .1,
             overlayStyle: K,
@@ -836,7 +836,7 @@ const be = c.forwardRef((e, o) => {
             Rt = c.createElement(ee, Object.assign({}, E, {
                 zIndex: Nt,
                 showArrow: M,
-                placement: G,
+                placement: Q,
                 mouseEnterDelay: B,
                 mouseLeaveDelay: J,
                 prefixCls: A,
@@ -866,12 +866,12 @@ const be = c.forwardRef((e, o) => {
             }), st ? Ut(it, {
                 className: $t
             }) : it);
-        return xt(c.createElement(Qt.Provider, {
+        return xt(c.createElement(Gt.Provider, {
             value: At
         }, Rt))
     }),
     he = be;
 he._InternalPanelDoNotUseOrYouWillBeFired = me;
 export {
-    dt as P, he as T, re as a, ae as b, mt as c, le as d, Gt as e, we as f, oe as g, ue as i
+    dt as P, he as T, re as a, ae as b, mt as c, le as d, Qt as e, we as f, oe as g, ue as i
 };

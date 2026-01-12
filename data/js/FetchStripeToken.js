@@ -2,7 +2,7 @@ import {
     r as e,
     a as o,
     h as s,
-    a2 as a
+    $ as a
 } from "./_index.js";
 import {
     s as r

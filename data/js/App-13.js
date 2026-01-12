@@ -7,11 +7,11 @@ import {
     d as c,
     m as qe,
     o as b,
-    a_ as Le,
+    aZ as Le,
     l as He,
     j as e,
-    a7 as Mt,
-    a2 as me,
+    a5 as Mt,
+    $ as me,
     D as B,
     B as y,
     a as I,
@@ -20,31 +20,31 @@ import {
     c as le,
     F as D,
     K as zt,
-    G as E,
-    a$ as xe,
+    G as $,
+    a_ as xe,
     i as K,
-    a0 as Fe,
-    ab as Me,
+    a4 as Fe,
+    a9 as Me,
     h as wt,
     q as Nt,
-    b0 as It,
+    a$ as It,
     u as q,
-    at as ze,
-    b1 as St,
+    ar as ze,
+    b0 as St,
     n as Rt,
     s as Bt,
     S as Ne,
     f as Kt,
     p as Ht,
-    ac as Wt,
+    aa as Wt,
     N as Ut,
     t as ce,
     x as _,
-    aY as Vt,
-    b2 as Gt,
+    aW as Vt,
+    b1 as Gt,
     C as Jt,
-    b3 as Yt,
-    b4 as We
+    b2 as Yt,
+    b3 as We
 } from "./_index.js";
 import {
     i as O,
@@ -254,8 +254,8 @@ var Ts = {
             icon: Ts
         }))
     },
-    Es = l.forwardRef(_s),
-    $s = {
+    $s = l.forwardRef(_s),
+    Es = {
         icon: {
             tag: "svg",
             attrs: {
@@ -275,7 +275,7 @@ var Ts = {
     Ps = function(s, i) {
         return l.createElement(ee, te({}, s, {
             ref: i,
-            icon: $s
+            icon: Es
         }))
     },
     qs = l.forwardRef(Ps),
@@ -955,7 +955,7 @@ const mi = t => zt + "/" + t,
         name: "far fa-sparkles"
     }),
     wi = v(() => {
-        const t = E(),
+        const t = $(),
             {
                 editor: s,
                 kitCollab: i
@@ -997,7 +997,7 @@ const mi = t => zt + "/" + t,
                     onClick: d,
                     blockBackground: !0
                 }), K() ? null : e.jsx(W, {
-                    icon: Es,
+                    icon: $s,
                     title: `Collaborate with KitCollab${i.waitingQuestions?` (${i.waitingQuestions})`:""}`,
                     onClick: o,
                     blockBackground: !0
@@ -1081,15 +1081,15 @@ const Qi = c.div.attrs({
   position: relative;
   overflow: visible;
 `,
-    Ei = c.div.attrs({
+    $i = c.div.attrs({
         className: "maxWidth scroll-y"
     })`
   flex: 1;
 `;
-class $i extends l.Component {
+class Ei extends l.Component {
     render() {
         return e.jsxs(_i, {
-            children: [e.jsx(Ie, {}), e.jsxs(Ei, {
+            children: [e.jsx(Ie, {}), e.jsxs($i, {
                 children: [e.jsx(Se, {}), e.jsx(wi, {})]
             }), e.jsx(Oe, {})]
         })
@@ -1475,7 +1475,7 @@ const sn = c.div`
             kitDetails: {
                 id: s
             }
-        } = l.useContext(A), i = E(), [o, n, r] = q(!1), a = l.useRef(), d = l.useMemo(() => t.currentlyEditingQuestionId ? !1 : t.questions.length >= Z, [t.questions.length, t.currentlyEditingQuestionId]), h = l.useMemo(() => i.pathname.endsWith("question"), [i.pathname.length]), x = l.useMemo(() => {
+        } = l.useContext(A), i = $(), [o, n, r] = q(!1), a = l.useRef(), d = l.useMemo(() => t.currentlyEditingQuestionId ? !1 : t.questions.length >= Z, [t.questions.length, t.currentlyEditingQuestionId]), h = l.useMemo(() => i.pathname.endsWith("question"), [i.pathname.length]), x = l.useMemo(() => {
             if (t.currentlyEditingQuestionId) return t.questions.find(j => j._id === t.currentlyEditingQuestionId)
         }, [t.currentlyEditingQuestionId]), p = () => {
             a.current && a.current.clear(), m()
@@ -1577,7 +1577,7 @@ const sn = c.div`
             })
         }), s
     },
-    Et = t => {
+    $t = t => {
         const s = t.questions.map((i, o) => ({
             _id: "quizlet-question-" + o,
             text: i.text,
@@ -1731,7 +1731,7 @@ let _e = class extends l.Component {
                         },
                         children: "Flip Term/Definition"
                     })]
-                }), e.jsx(Et, {
+                }), e.jsx($t, {
                     visible: this.state.overlayOpen,
                     questions: t,
                     close: this.toggleOverlay
@@ -1800,7 +1800,7 @@ const un = c.div`
   }
 `,
     pn = () => {
-        const t = E(),
+        const t = $(),
             s = () => w(k),
             i = t.pathname.endsWith("flashcard-import");
         return e.jsx(_e, {
@@ -1809,7 +1809,7 @@ const un = c.div`
         })
     },
     gn = () => {
-        const t = E(),
+        const t = $(),
             s = () => w(k),
             i = t.pathname.endsWith("question-bank");
         return e.jsx(Te, {
@@ -1991,7 +1991,7 @@ const un = c.div`
 `,
     yn = () => {
         const t = St(),
-            s = E(),
+            s = $(),
             i = () => t(-1),
             o = s.pathname.endsWith("spreadsheet");
         return e.jsx(mn, {
@@ -2037,27 +2037,27 @@ const un = c.div`
         })
     },
     yt = t => {
-        const s = $ => {
-                t.onTextChange($)
+        const s = E => {
+                t.onTextChange(E)
             },
             [i, o] = l.useState(!1),
-            n = $ => {
-                t.onImageChange($)
+            n = E => {
+                t.onImageChange(E)
             },
             [r, a] = l.useState(!1),
-            d = $ => {
-                t.onAudioChange && t.onAudioChange($)
+            d = E => {
+                t.onAudioChange && t.onAudioChange(E)
             },
             [h, x] = l.useState(!1),
             p = () => x(!1),
             [m, f, g] = q(!1),
-            j = $ => {
-                t.onLatexChange && t.onLatexChange($)
+            j = E => {
+                t.onLatexChange && t.onLatexChange(E)
             },
             S = () => o(!0),
             G = () => o(!1),
-            re = $ => {
-                d($), Ke()
+            re = E => {
+                d(E), Ke()
             },
             Ft = () => {
                 Kt() ? a(!0) : x(!0)
@@ -2299,7 +2299,7 @@ var An = Object.getOwnPropertyDescriptor,
         return n
     };
 const ae = "flashcard-entry-editor",
-    $t = t => {
+    Et = t => {
         let s = !1;
         return (t.text || t.audio || t.image || t.latex) && (s = !0), s
     },
@@ -2307,7 +2307,7 @@ const ae = "flashcard-entry-editor",
         let s = 0;
         return t.text && s++, t.image && s++, t.latex && s++, s === 1
     },
-    je = t => $t(t.question) && Pt(t.answer),
+    je = t => Et(t.question) && Pt(t.answer),
     Y = () => ({
         question: {
             text: "",
@@ -2322,7 +2322,7 @@ const ae = "flashcard-entry-editor",
         }
     }),
     jt = () => [Y(), Y(), Y(), Y()];
-let Ee = class extends l.Component {
+let $e = class extends l.Component {
     constructor() {
         super(...arguments), this.state = {
             questions: jt(),
@@ -2332,7 +2332,7 @@ let Ee = class extends l.Component {
             overlayVisible: !this.state.overlayVisible
         }), this.handleQuestionChange = (t, s) => {
             let i = this.state.questions;
-            s + 1 === this.state.questions.length && !this.state.questions[s + 1] && je(t) && i.length < 200 && i.push(Y()), i = i.map((o, n) => n !== s ? o : t), i = i.filter((o, n) => !(n > 3 && n + 1 !== i.length && !$t(o.question) && !Pt(o.answer))), localStorage.setItem(ae, JSON.stringify(i)), this.setState({
+            s + 1 === this.state.questions.length && !this.state.questions[s + 1] && je(t) && i.length < 200 && i.push(Y()), i = i.map((o, n) => n !== s ? o : t), i = i.filter((o, n) => !(n > 3 && n + 1 !== i.length && !Et(o.question) && !Pt(o.answer))), localStorage.setItem(ae, JSON.stringify(i)), this.setState({
                 questions: i
             })
         }, this.makeQuestions = () => pe(this.state.questions.filter(t => je(t))), this.addQuestions = () => {
@@ -2427,7 +2427,7 @@ let Ee = class extends l.Component {
                         onChange: i
                     }, "flashcard-create-" + s)
                 }), e.jsx(ge, {})]
-            }), e.jsx(Et, {
+            }), e.jsx($t, {
                 questions: this.state.overlayVisible ? this.makeQuestions() : [],
                 visible: this.state.overlayVisible,
                 close: this.toggleOverlay
@@ -2435,12 +2435,12 @@ let Ee = class extends l.Component {
         })
     }
 };
-Ee = Dn([O("kitDetails"), v], Ee);
+$e = Dn([O("kitDetails"), v], $e);
 const Qn = () => {
-    const t = E(),
+    const t = $(),
         s = () => w(k),
         i = t.pathname.endsWith("flashcard-create");
-    return e.jsx(Ee, {
+    return e.jsx($e, {
         visible: i,
         close: s
     })
@@ -2450,7 +2450,7 @@ var Tn = Object.getOwnPropertyDescriptor,
         for (var n = o > 1 ? void 0 : o ? Tn(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
-let $e = class extends l.Component {
+let Ee = class extends l.Component {
     constructor() {
         super(...arguments), this.createFlashcards = () => X(vi(this.props.kitDetails.id)), this.importFlashcards = () => X(xi(this.props.kitDetails.id))
     }
@@ -2528,17 +2528,17 @@ let $e = class extends l.Component {
         })
     }
 };
-$e = _n([O("kitDetails"), v], $e);
-const En = () => {
-        const t = E(),
+Ee = _n([O("kitDetails"), v], Ee);
+const $n = () => {
+        const t = $(),
             s = () => w(k),
             i = t.pathname.endsWith("flashcard-home");
-        return e.jsx($e, {
+        return e.jsx(Ee, {
             visible: i,
             close: s
         })
     },
-    $n = l.lazy(() => Ht(() => import("./QRCode.js"), __vite__mapDeps([0, 1, 2, 3]))),
+    En = l.lazy(() => Ht(() => import("./QRCode.js"), __vite__mapDeps([0, 1, 2, 3]))),
     Pn = t => e.jsx(T, {
         open: t.visible,
         onCancel: t.close,
@@ -2548,7 +2548,7 @@ const En = () => {
             className: "maxAll flex-center",
             children: e.jsx(l.Suspense, {
                 fallback: null,
-                children: e.jsx($n, {
+                children: e.jsx(En, {
                     link: t.link
                 })
             })
@@ -3019,7 +3019,7 @@ const En = () => {
     uo = v(() => {
         const {
             kitCollab: t
-        } = l.useContext(A), s = E(), i = l.useMemo(() => s.pathname.endsWith("kit-collab"), [s.pathname]);
+        } = l.useContext(A), s = $(), i = l.useMemo(() => s.pathname.endsWith("kit-collab"), [s.pathname]);
         l.useEffect(() => {
             i ? t.panelOpen = !0 : t.panelOpen = !1
         }, [i]);
@@ -3331,7 +3331,7 @@ const En = () => {
     },
     jo = () => {
         const t = St(),
-            s = E(),
+            s = $(),
             i = () => t(-1),
             o = s.pathname.endsWith("ai");
         return e.jsx(yo, {
@@ -3346,15 +3346,15 @@ const En = () => {
   align-items: center;
 `,
     bo = Xt(() => {
-        const t = E(),
+        const t = $(),
             {
                 kitDetails: s,
                 editor: i
             } = l.useContext(A),
             o = () => e.jsxs(e.Fragment, {
                 children: [e.jsxs(Co, {
-                    children: [e.jsx($i, {}), e.jsx(nn, {})]
-                }), e.jsx(on, {}), e.jsx(pn, {}), e.jsx(gn, {}), e.jsx(yn, {}), e.jsx(Qn, {}), e.jsx(En, {}), e.jsx(jo, {}), e.jsx(uo, {}), t.pathname.endsWith("editor") && i.questions.length === 0 && e.jsx(ko, {})]
+                    children: [e.jsx(Ei, {}), e.jsx(nn, {})]
+                }), e.jsx(on, {}), e.jsx(pn, {}), e.jsx(gn, {}), e.jsx(yn, {}), e.jsx(Qn, {}), e.jsx($n, {}), e.jsx(jo, {}), e.jsx(uo, {}), t.pathname.endsWith("editor") && i.questions.length === 0 && e.jsx(ko, {})]
             });
         return s.id ? o() : e.jsx(bn, {})
     }),

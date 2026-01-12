@@ -6,7 +6,7 @@ import {
     j as c,
     d as u,
     b as v,
-    $ as x,
+    aX as x,
     e as p,
     F as j,
     E as k
@@ -104,12 +104,12 @@ const F = e => m || (m = A(e)),
             onChange: r
         })
     },
-    $ = e => c.jsx(E, {
+    E = e => c.jsx(I, {
         onClick: t => t == null ? void 0 : t.stopPropagation(),
         to: e.to,
         children: e.children
     }),
-    E = u(w)`
+    I = u(w)`
   background-color: rgba(0, 0, 0, 0.05) !important;
   padding: 0.2em 0.73em;
   font-size: 0.9em;
@@ -122,7 +122,7 @@ const F = e => m || (m = A(e)),
             size: 14,
             align: "center",
             children: [c.jsx("div", {
-                children: c.jsx(I, {
+                children: c.jsx(M, {
                     src: C(e.kit.gif),
                     style: {
                         width: 55,
@@ -130,7 +130,7 @@ const F = e => m || (m = A(e)),
                     }
                 })
             }), c.jsxs("div", {
-                children: [c.jsx(M, {
+                children: [c.jsx($, {
                     children: e.kit.title
                 }), c.jsx(_, {
                     children: t
@@ -138,7 +138,7 @@ const F = e => m || (m = A(e)),
                     style: {
                         marginTop: "0.25em"
                     },
-                    children: c.jsx($, {
+                    children: c.jsx(E, {
                         to: `/assignment/${e.assignmentId}`,
                         children: "Assignment"
                     })
@@ -146,13 +146,13 @@ const F = e => m || (m = A(e)),
             })]
         })
     },
-    I = u.img`
+    M = u.img`
   border-radius: 5px;
   border: solid ${p.Black} 1px;
   flex-shrink: 0;
   object-fit: cover;
 `,
-    M = u.div`
+    $ = u.div`
   font-size: 1.1em;
   font-weight: ${j.Bold};
 `,
@@ -161,7 +161,7 @@ const F = e => m || (m = A(e)),
   font-style: italic;
   margin-top: 0.05em;
 `,
-    G = e => {
+    X = e => {
         const t = e.percent < 60 ? "#F44336" : e.percent < 80 ? "#FFC107" : "#66BB6A";
         return c.jsx(k, {
             theme: {
@@ -181,5 +181,5 @@ const F = e => m || (m = A(e)),
         })
     };
 export {
-    N as R, W as a, G as b, $ as c, H as u
+    N as R, W as a, X as b, E as c, H as u
 };

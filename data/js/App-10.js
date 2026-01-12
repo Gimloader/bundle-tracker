@@ -1,62 +1,62 @@
 import {
     x as I,
-    aB as ze,
-    ao as Q,
-    aC as V,
-    aD as Re,
-    aE as ke,
+    az as ze,
+    am as Q,
+    aA as V,
+    aB as Re,
+    aC as ke,
     _ as X,
-    aF as Xe,
-    aG as Ze,
-    aH as Fe,
-    aI as Qe,
-    aJ as Je,
-    aK as et,
-    aL as tt,
-    aM as nt,
+    aD as Xe,
+    aE as Ze,
+    aF as Fe,
+    aG as Qe,
+    aH as Je,
+    aI as et,
+    aJ as tt,
+    aK as nt,
     r as i,
-    an as at,
-    ak as st,
-    al as ot,
-    am as G,
-    aN as it,
-    aO as rt,
-    aP as lt,
-    aQ as ct,
-    aR as dt,
-    aS as Ie,
-    aT as ut,
-    aU as Ne,
+    al as at,
+    ai as st,
+    aj as ot,
+    ak as G,
+    aL as it,
+    aM as rt,
+    aN as lt,
+    aO as ct,
+    aP as dt,
+    aQ as Ie,
+    aR as ut,
+    aS as Ne,
     I as Oe,
     i as q,
     j as e,
-    ac as mt,
+    aa as mt,
     F as y,
-    aV as gt,
+    aT as gt,
     e as k,
     d as W,
     a as $,
     W as ge,
     l as D,
     M as ee,
-    U as A,
+    U as T,
     B as K,
     D as Z,
-    aW as ht,
-    ad as re,
-    a0 as ft,
+    aU as ht,
+    ab as re,
+    a4 as ft,
     h as me,
     t as ae,
-    aX as xt,
+    aV as xt,
     c as L,
     s as pt,
-    aY as $e,
+    aW as $e,
     y as yt,
     f as Ce,
     b as vt,
     V as De,
-    ae as bt,
-    at as jt,
+    ac as bt,
+    ar as jt,
     C as Ct,
     Z as St,
     T as wt
@@ -64,7 +64,7 @@ import {
 import {
     b as _,
     a as Le,
-    T,
+    T as A,
     s as P,
     G as ue,
     S as kt
@@ -97,10 +97,10 @@ import {
 } from "./index-3.js";
 import {
     v as Et,
-    F as Tt
+    F as At
 } from "./EmailStage.js";
 import {
-    E as At
+    E as Tt
 } from "./ErrorMessage.js";
 import {
     g as Mt,
@@ -837,23 +837,23 @@ const hn = U(() => {
             children: [e.jsx(Le, {}), e.jsx(le, {
                 title: q() ? "General Settings" : "Account Information",
                 icon: gn,
-                onClick: () => a(T.accountInformation),
-                selected: n(T.accountInformation)
+                onClick: () => a(A.accountInformation),
+                selected: n(A.accountInformation)
             }), !q() && e.jsx(le, {
                 title: "Game Settings",
                 icon: It,
-                onClick: () => a(T.gameSettings),
-                selected: n(T.gameSettings)
+                onClick: () => a(A.gameSettings),
+                selected: n(A.gameSettings)
             }), s && e.jsx(le, {
                 title: "Plan & Billing",
                 icon: He,
-                selected: n(T.billing),
-                onClick: () => a(T.billing)
+                selected: n(A.billing),
+                onClick: () => a(A.billing)
             }), !q() && e.jsx(le, {
                 title: "Help & Support",
                 icon: Nt,
-                selected: n(T.support),
-                onClick: () => a(T.support)
+                selected: n(A.support),
+                onClick: () => a(A.support)
             }), q() ? null : e.jsxs(xn, {
                 children: ["Looking to manage a group license?", e.jsx("br", {}), e.jsx("br", {}), "We moved license management to a dedicated page:", e.jsx("br", {}), e.jsx("br", {}), e.jsxs(te, {
                     to: gt,
@@ -914,7 +914,7 @@ const hn = U(() => {
             })
         }, m = q() && D().lastName.length < 2 ? "Last Initial" : "Last Name", c = q() && D().lastName.length < 2 ? 1 : $t;
         return e.jsxs(e.Fragment, {
-            children: [e.jsxs(Te, {
+            children: [e.jsxs(Ae, {
                 children: [e.jsx(je, {
                     children: "First Name"
                 }), e.jsx(J, {
@@ -923,7 +923,7 @@ const hn = U(() => {
                     value: t,
                     maxLength: Pt
                 })]
-            }), e.jsxs(Te, {
+            }), e.jsxs(Ae, {
                 children: [e.jsx(je, {
                     children: m
                 }), e.jsx(J, {
@@ -935,7 +935,7 @@ const hn = U(() => {
             })]
         })
     },
-    Te = W.div`
+    Ae = W.div`
   margin-bottom: 8px;
 `,
     je = W.div`
@@ -1045,14 +1045,14 @@ const hn = U(() => {
         }) : null;
         return e.jsxs(ee, {
             style: {
-                fontFamily: A.SFPro,
+                fontFamily: T.SFPro,
                 color: k.Black
             },
             footer: null,
             open: !0,
             onCancel: t.close,
             closable: !0,
-            children: [B(), e.jsx(At, {
+            children: [B(), e.jsx(Tt, {
                 error: f,
                 style: {
                     marginTop: 10
@@ -1090,7 +1090,7 @@ const hn = U(() => {
             }), a && e.jsx(yn, {
                 onEmailChange: c,
                 close: m
-            }), e.jsx(Tt, {
+            }), e.jsx(At, {
                 open: o,
                 close: l,
                 defaultEmail: D().email
@@ -1342,7 +1342,7 @@ const hn = U(() => {
     }),
     ce = t => e.jsx(L, {
         style: {
-            fontFamily: A.SFPro,
+            fontFamily: T.SFPro,
             color: k.Black,
             marginBottom: 20
         },
@@ -1404,7 +1404,7 @@ const hn = U(() => {
         Option: Bn
     } = he,
     En = Lt(),
-    Tn = () => {
+    An = () => {
         const [t, n] = i.useState(Dt(localStorage.getItem(Y.language)) || "English"), a = s => {
             const o = Gt(s);
             localStorage.setItem(Y.language, o), n(s)
@@ -1425,7 +1425,7 @@ const hn = U(() => {
             })
         })
     },
-    An = () => {
+    Tn = () => {
         const [t, n] = i.useState(!!localStorage.getItem(Y.allowGoogleTranslate)), a = s => {
             s ? localStorage.setItem(Y.allowGoogleTranslate, "allow") : localStorage.removeItem(Y.allowGoogleTranslate), n(s)
         };
@@ -1525,19 +1525,19 @@ const hn = U(() => {
             url: "/api/user/preferences"
         })
     }),
-    Ae = "six-seven-mode",
+    Te = "six-seven-mode",
     On = () => {
         const [t, n] = i.useState(!1), {
             data: a
         } = Fn();
         i.useEffect(() => {
-            n((a == null ? void 0 : a[Ae]) === !0)
+            n((a == null ? void 0 : a[Te]) === !0)
         }, [a]);
         const s = o => {
             n(o), $({
                 url: "/api/user/preferences",
                 data: {
-                    key: Ae,
+                    key: Te,
                     value: o
                 }
             })
@@ -1562,7 +1562,7 @@ const hn = U(() => {
     },
     se = t => e.jsx(L, {
         style: {
-            fontFamily: A.SFPro,
+            fontFamily: T.SFPro,
             color: k.Black
         },
         children: e.jsxs("div", {
@@ -1586,7 +1586,7 @@ const hn = U(() => {
             direction: "vertical",
             size: 10,
             className: "maxWidth",
-            children: [e.jsx(On, {}), e.jsx(Mn, {}), e.jsx(zn, {}), e.jsx(Pn, {}), e.jsx(Tn, {}), e.jsx(An, {})]
+            children: [e.jsx(On, {}), e.jsx(Mn, {}), e.jsx(zn, {}), e.jsx(Pn, {}), e.jsx(An, {}), e.jsx(Tn, {})]
         })
     }),
     Ln = W.div`
@@ -1602,7 +1602,7 @@ const hn = U(() => {
         } = i.useContext(_);
         return e.jsx(L, {
             style: {
-                fontFamily: A.SFPro,
+                fontFamily: T.SFPro,
                 color: k.Black
             },
             children: e.jsxs("div", {
@@ -1643,7 +1643,7 @@ const hn = U(() => {
             children: e.jsx(L, {
                 style: {
                     color: k.Black,
-                    fontFamily: A.SFPro,
+                    fontFamily: T.SFPro,
                     marginBottom: 5
                 },
                 hoverable: !0,
@@ -1683,7 +1683,7 @@ const hn = U(() => {
         return t.charges.length ? e.jsxs(L, {
             style: {
                 color: k.Black,
-                fontFamily: A.SFPro,
+                fontFamily: T.SFPro,
                 marginTop: 10
             },
             children: [e.jsx("div", {
@@ -1747,7 +1747,7 @@ const hn = U(() => {
         return t.accountBalance ? e.jsxs(L, {
             style: {
                 color: k.Black,
-                fontFamily: A.SFPro,
+                fontFamily: T.SFPro,
                 marginTop: 10
             },
             children: [e.jsx("div", {
@@ -1849,7 +1849,7 @@ const hn = U(() => {
         return e.jsxs(L, {
             style: {
                 color: k.Black,
-                fontFamily: A.SFPro,
+                fontFamily: T.SFPro,
                 marginTop: 10
             },
             children: [e.jsx("div", {
@@ -1864,7 +1864,7 @@ const hn = U(() => {
                     className: "flex vc",
                     style: {
                         color: k.Black,
-                        fontFamily: A.SFPro
+                        fontFamily: T.SFPro
                     },
                     children: [e.jsx(He, {
                         style: {
@@ -2093,7 +2093,7 @@ const hn = U(() => {
             open: t.visible,
             onCancel: t.close,
             style: {
-                fontFamily: A.SFPro,
+                fontFamily: T.SFPro,
                 color: k.Black
             },
             footer: null,
@@ -2144,7 +2144,7 @@ const hn = U(() => {
                 const o = t.downgradeMessage.split("end on ")[1];
                 return o ? e.jsxs(L, {
                     style: {
-                        fontFamily: A.SFPro,
+                        fontFamily: T.SFPro,
                         color: k.Black,
                         marginTop: 10
                     },
@@ -2158,7 +2158,7 @@ const hn = U(() => {
         return e.jsxs(e.Fragment, {
             children: [e.jsx(L, {
                 style: {
-                    fontFamily: A.SFPro,
+                    fontFamily: T.SFPro,
                     color: k.Black,
                     marginTop: 10
                 },
@@ -2182,7 +2182,7 @@ const hn = U(() => {
     }),
     aa = t => e.jsx(L, {
         style: {
-            fontFamily: A.SFPro,
+            fontFamily: T.SFPro,
             color: k.White,
             marginTop: 10,
             overflow: "hidden"
@@ -2278,7 +2278,7 @@ const hn = U(() => {
             children: e.jsxs("div", {
                 style: {
                     color: k.Black,
-                    fontFamily: A.SFPro,
+                    fontFamily: T.SFPro,
                     maxWidth: 700,
                     width: "100%"
                 },
@@ -2416,7 +2416,7 @@ const hn = U(() => {
             const {
                 currentTab: a
             } = t;
-            return a === T.accountInformation ? e.jsx(In, {}) : a === T.gameSettings ? e.jsx(Dn, {}) : a === T.billing ? e.jsx(oa, {}) : a === T.support ? e.jsx(ia, {}) : null
+            return a === A.accountInformation ? e.jsx(In, {}) : a === A.gameSettings ? e.jsx(Dn, {}) : a === A.billing ? e.jsx(oa, {}) : a === A.support ? e.jsx(ia, {}) : null
         };
         return e.jsxs(ca, {
             children: [e.jsx(Le, {}), n()]
@@ -2429,12 +2429,12 @@ const hn = U(() => {
   height: 100%;
   box-sizing: border-box;
   padding: 20px;
-  font-family: ${A.SFPro};
+  font-family: ${T.SFPro};
   color: ${k.Black};
 `,
     ds = () => (i.useEffect(() => {
         const t = De("tab");
-        t && t === T.billing ? P.navigation.currentTab = T.billing : t && t === T.gameSettings && (P.navigation.currentTab = T.gameSettings)
+        t && t === A.billing ? P.navigation.currentTab = A.billing : t && t === A.gameSettings && (P.navigation.currentTab = A.gameSettings)
     }, []), e.jsxs(e.Fragment, {
         children: [e.jsx(_.Provider, {
             value: P,

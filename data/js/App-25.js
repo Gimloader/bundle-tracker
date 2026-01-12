@@ -2,7 +2,7 @@ import {
     r,
     j as e,
     B as q,
-    a$ as W,
+    a_ as W,
     M as Z,
     U as Q,
     e as I,
@@ -15,10 +15,10 @@ import {
     S as H,
     t as k,
     b as L,
-    c9 as ee,
+    c8 as ee,
     n as te,
-    a0 as re,
-    a5 as ae
+    a4 as re,
+    a2 as ae
 } from "./_index.js";
 import {
     v as se
@@ -280,8 +280,8 @@ const U = t => {
                 onChange: z
             }), e.jsx(E, {}), e.jsxs("div", {
                 className: "flex",
-                children: [e.jsxs($, {
-                    children: [e.jsx(M, {
+                children: [e.jsxs(M, {
+                    children: [e.jsx($, {
                         children: "Send a copy of the invoice to..."
                     }), e.jsx(U, {
                         type: "invoiceCopy",
@@ -293,8 +293,8 @@ const U = t => {
                     style: {
                         width: 12
                     }
-                }), e.jsxs($, {
-                    children: [e.jsx(M, {
+                }), e.jsxs(M, {
+                    children: [e.jsx($, {
                         children: "Group license managers..."
                     }), e.jsx(U, {
                         type: "manager",
@@ -368,10 +368,10 @@ const U = t => {
   font-size: 19px;
   margin-bottom: 2px;
 `,
-    $ = c.div`
+    M = c.div`
   width: calc(50% - 6px);
 `,
-    M = c.div`
+    $ = c.div`
   font-weight: ${B.Bold};
   font-size: 19px;
   margin-bottom: 6px;
@@ -497,8 +497,8 @@ const U = t => {
                 autoComplete: "chrome-off"
             }), e.jsx(E, {}), e.jsxs("div", {
                 className: "flex",
-                children: [e.jsxs($, {
-                    children: [e.jsx(M, {
+                children: [e.jsxs(M, {
+                    children: [e.jsx($, {
                         children: "Send a copy of the receipt to..."
                     }), e.jsx(U, {
                         type: "receiptCopy",
@@ -510,8 +510,8 @@ const U = t => {
                     style: {
                         width: 12
                     }
-                }), e.jsxs($, {
-                    children: [e.jsx(M, {
+                }), e.jsxs(M, {
+                    children: [e.jsx($, {
                         children: "Group license managers..."
                     }), e.jsx(U, {
                         type: "manager",

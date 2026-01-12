@@ -5,17 +5,17 @@ import {
     D as w,
     d as i,
     l as y,
-    a4 as r,
+    a1 as r,
     t as j,
     a as C,
     B,
     e as l,
     f as D,
     S as N,
-    a7 as z,
-    a2 as F,
+    a5 as z,
+    $ as F,
     i as U,
-    a6 as W,
+    a3 as W,
     V as M,
     T as L,
     U as R
@@ -153,15 +153,15 @@ const E = () => !1,
                         customPriceId: s.planId === r.pro ? V() : q()
                     },
                     success: async h => {
-                        const A = h;
+                        const $ = h;
                         let x;
                         try {
                             if (x = await d.redirectToCheckout({
-                                    sessionId: A.id
+                                    sessionId: $.id
                                 }), x && x.error) throw x.error
-                        } catch ($) {
+                        } catch (A) {
                             n(!1), j({
-                                e: $,
+                                e: A,
                                 default: {
                                     title: "Connection Error",
                                     content: "An error ocurred. Please try again later"

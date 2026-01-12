@@ -5,21 +5,21 @@ import {
     U as k,
     B as I,
     d as t,
-    aY as f,
+    aW as f,
     t as u,
-    ac as A,
+    aa as A,
     e as v,
     r as g,
-    a6 as j,
+    a3 as j,
     l as L,
     W as B,
     F as R,
-    cs as O,
+    cr as O,
     V as M,
     s as w,
     T as W,
-    aj as _,
-    ae as D
+    ah as _,
+    ac as D
 } from "./_index.js";
 import {
     S as H,
@@ -35,10 +35,10 @@ import {
 } from "./SeasonTicketName.js";
 import {
     S as N,
-    c as Y
+    c as V
 } from "./index-2.js";
 import {
-    R as V
+    R as Y
 } from "./StarOutlined.js";
 import {
     I as q
@@ -143,7 +143,7 @@ const ie = s => {
                 },
                 size: "large",
                 block: !0,
-                icon: e.jsx(V, {}),
+                icon: e.jsx(Y, {}),
                 type: "primary",
                 loading: i,
                 onClick: r,
@@ -156,7 +156,7 @@ const ie = s => {
     oe = s => {
         const i = `${A()}/season-ticket/${s.info.linkId}`,
             n = () => {
-                Y(i), X.success("Link copied to clipboard!")
+                V(i), X.success("Link copied to clipboard!")
             };
         return e.jsxs(ae, {
             children: [e.jsxs("div", {

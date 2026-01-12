@@ -1,5 +1,5 @@
 import {
-    bq as o
+    bp as o
 } from "./_index.js";
 var u = function(r) {
         if (o() && window.document.documentElement) {
@@ -11,7 +11,7 @@ var u = function(r) {
         }
         return !1
     },
-    a = function(r, e) {
+    p = function(r, e) {
         if (!u(r)) return !1;
         var t = document.createElement("div"),
             i = t.style[r];
@@ -19,7 +19,7 @@ var u = function(r) {
     };
 
 function c(n, r) {
-    return !Array.isArray(n) && r !== void 0 ? a(n, r) : u(n)
+    return !Array.isArray(n) && r !== void 0 ? p(n, r) : u(n)
 }
 export {
     c as i

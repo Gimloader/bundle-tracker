@@ -1,21 +1,21 @@
 import {
     j as e,
     e as c,
-    F as R,
+    F as T,
     d as s,
-    c4 as l,
-    c5 as a,
-    c6 as p,
+    c3 as l,
+    c4 as a,
+    c5 as p,
     B as u,
-    c7 as I,
-    c8 as E,
+    c6 as I,
+    c7 as E,
     D as h,
     C as M,
-    aV as B,
+    aT as B,
     r,
     W as D,
     V as v,
-    ae as O,
+    ac as O,
     a as b,
     T as _,
     U as N,
@@ -65,7 +65,7 @@ const L = t => e.jsxs("div", {
     }),
     Y = s.h1`
   color: ${c.Black};
-  font-weight: ${R.UltraBold};
+  font-weight: ${T.UltraBold};
   font-size: 50px;
 `,
     z = s.p`
@@ -133,7 +133,7 @@ const L = t => e.jsxs("div", {
             })]
         })
     }),
-    V = t => {
+    q = t => {
         const {
             isRenewal: o
         } = t;
@@ -153,7 +153,7 @@ const L = t => e.jsxs("div", {
             })]
         })
     },
-    q = [{
+    V = [{
         text: "Group license help center",
         link: "https://help.gimkit.com/en/category/group-subscriptions-3m7198/"
     }, {
@@ -166,7 +166,7 @@ const L = t => e.jsxs("div", {
             children: "📚 Resources"
         }), e.jsx(S, {
             children: "Take a look at the resources below to help you use your group license!"
-        }), q.map(t => e.jsx("div", {
+        }), V.map(t => e.jsx("div", {
             style: {
                 fontSize: 16,
                 marginBottom: 5
@@ -194,7 +194,7 @@ const L = t => e.jsxs("div", {
 `,
     w = s.h2`
   font-size: 32px;
-  font-weight: ${R.UltraBold};
+  font-weight: ${T.UltraBold};
   color: ${c.Black};
 `,
     S = s.p`
@@ -203,7 +203,7 @@ const L = t => e.jsxs("div", {
 `,
     d = "Error fetching subscription info. Try refreshing the page. If you continue to see this error, please contact support.",
     Se = () => {
-        const [t, o] = r.useState(!0), [m, x] = r.useState(""), [T, g] = r.useState(""), [P, j] = r.useState(""), [f, y] = r.useState(!1);
+        const [t, o] = r.useState(!0), [m, x] = r.useState(""), [R, g] = r.useState(""), [P, j] = r.useState(""), [f, y] = r.useState(!1);
         r.useEffect(() => {
             D({})
         }, []), r.useEffect(() => {
@@ -246,14 +246,14 @@ const L = t => e.jsxs("div", {
                 children: [e.jsx(L, {
                     isRenewal: f
                 }), e.jsx(h, {}), m === "creditCard" && e.jsx(H, {
-                    receiptLink: T
+                    receiptLink: R
                 }), m === "purchaseOrder" && e.jsx(W, {
                     invoiceLink: P
                 }), e.jsx("div", {
                     style: {
                         height: 10
                     }
-                }), e.jsx(V, {
+                }), e.jsx(q, {
                     isRenewal: f
                 }), e.jsx(h, {}), e.jsx(J, {})]
             }),

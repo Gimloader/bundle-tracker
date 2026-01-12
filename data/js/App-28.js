@@ -4,7 +4,7 @@ import {
     a as f,
     j as a,
     S as x,
-    a2 as i,
+    $ as i,
     M as t,
     f as j,
     l as n,
