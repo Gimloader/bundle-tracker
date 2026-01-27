@@ -18,7 +18,7 @@ import {
     d as l,
     dL as Ai,
     p as Ni,
-    e as Me,
+    e as Ne,
     s as Mi,
     ah as qe,
     x as Rt,
@@ -396,7 +396,7 @@ se([v], te.prototype, "modeOptions", 2);
 se([Di.bound], te.prototype, "setGameOptionsFromStorage", 2);
 se([en], te.prototype, "formattedGameOptions", 1);
 var Uo = Object.defineProperty,
-    ke = (e, n, r, i) => {
+    _e = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
         return s && Uo(n, r, s), s
     };
@@ -405,17 +405,17 @@ class Se {
         this.currentRoute = V.setup, this.gameCode = "", this.clapCount = 0, this.reportId = "", this.activityItems = v.array(), this.availableThemes = v.array(), this.thanosValues = null, this.bossId = null, this.showBossBattleModal = !1, this.gameEndDate = 0, this.defendingHomebaseResults = null, this.roomIntentErrorMessage = "", ge(this)
     }
 }
-ke([v], Se.prototype, "currentRoute");
-ke([v], Se.prototype, "gameCode");
-ke([v], Se.prototype, "clapCount");
-ke([v], Se.prototype, "reportId");
-ke([v], Se.prototype, "activityItems");
-ke([v], Se.prototype, "thanosValues");
-ke([v], Se.prototype, "bossId");
-ke([v], Se.prototype, "showBossBattleModal");
-ke([v], Se.prototype, "gameEndDate");
-ke([v], Se.prototype, "defendingHomebaseResults");
-ke([v], Se.prototype, "roomIntentErrorMessage");
+_e([v], Se.prototype, "currentRoute");
+_e([v], Se.prototype, "gameCode");
+_e([v], Se.prototype, "clapCount");
+_e([v], Se.prototype, "reportId");
+_e([v], Se.prototype, "activityItems");
+_e([v], Se.prototype, "thanosValues");
+_e([v], Se.prototype, "bossId");
+_e([v], Se.prototype, "showBossBattleModal");
+_e([v], Se.prototype, "gameEndDate");
+_e([v], Se.prototype, "defendingHomebaseResults");
+_e([v], Se.prototype, "roomIntentErrorMessage");
 class qo {
     constructor() {
         this.questions = []
@@ -532,7 +532,7 @@ var ia = Object.defineProperty,
         return s && ia(n, r, s), s
     },
     et = (e => (e.pickDrawer = "pickDrawer", e.termSelection = "termSelection", e.drawing = "drawing", e.results = "results", e))(et || {});
-class Ie {
+class ke {
     constructor() {
         this.status = "pickDrawer", this.round = {
             term: "",
@@ -546,42 +546,42 @@ class Ie {
         }, this.latestLine = null, this.latestFeedItem = null, this.personCount = null, this.everybodyGotLastRoundCorrect = !1, this.showingFeed = !0, this.pointAdditions = v.array(), this.drawingHistory = v.array(), this.drawingsModalOpen = !1, ge(this)
     }
 }
-Le([v], Ie.prototype, "status");
-Le([v], Ie.prototype, "round");
-Le([v], Ie.prototype, "latestLine");
-Le([v], Ie.prototype, "latestFeedItem");
-Le([v], Ie.prototype, "personCount");
-Le([v], Ie.prototype, "everybodyGotLastRoundCorrect");
-Le([v], Ie.prototype, "showingFeed");
-Le([v], Ie.prototype, "pointAdditions");
-Le([v], Ie.prototype, "drawingHistory");
-Le([v], Ie.prototype, "drawingsModalOpen");
+Le([v], ke.prototype, "status");
+Le([v], ke.prototype, "round");
+Le([v], ke.prototype, "latestLine");
+Le([v], ke.prototype, "latestFeedItem");
+Le([v], ke.prototype, "personCount");
+Le([v], ke.prototype, "everybodyGotLastRoundCorrect");
+Le([v], ke.prototype, "showingFeed");
+Le([v], ke.prototype, "pointAdditions");
+Le([v], ke.prototype, "drawingHistory");
+Le([v], ke.prototype, "drawingsModalOpen");
 var oa = Object.defineProperty,
     ve = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
         return s && oa(n, r, s), s
     },
     we = (e => (e.home = "home", e.question = "question", e.answer = "answer", e))(we || {}),
-    me = (e => (e.preview = "preview", e.finale = "finale", e.question = "question", e))(me || {}),
+    he = (e => (e.preview = "preview", e.finale = "finale", e.question = "question", e))(he || {}),
     je = (e => (e.preview = "preview", e.ask = "ask", e.timesUp = "timesUp", e))(je || {});
-class pe {
+class ue {
     constructor() {
         this.screen = "home", this.questionScreen = "preview", this.questionStatus = "preview", this.currentRound = null, this.disabledSections = v.array(), this.board = null, this.powers = v.array(), this.playerCount = 0, this.betsPlaced = 0, this.playersAnswered = 0, this.playersAnsweredCorrectly = 0, this.nameOfFirstPlayerToAnswerCorrectly = "", ge(this)
     }
 }
-ve([v], pe.prototype, "screen");
-ve([v], pe.prototype, "questionScreen");
-ve([v], pe.prototype, "questionStatus");
-ve([v], pe.prototype, "currentRound");
-ve([v], pe.prototype, "disabledSections");
-ve([v], pe.prototype, "board");
-ve([v], pe.prototype, "powers");
-ve([v], pe.prototype, "finaleQuestionId");
-ve([v], pe.prototype, "playerCount");
-ve([v], pe.prototype, "betsPlaced");
-ve([v], pe.prototype, "playersAnswered");
-ve([v], pe.prototype, "playersAnsweredCorrectly");
-ve([v], pe.prototype, "nameOfFirstPlayerToAnswerCorrectly");
+ve([v], ue.prototype, "screen");
+ve([v], ue.prototype, "questionScreen");
+ve([v], ue.prototype, "questionStatus");
+ve([v], ue.prototype, "currentRound");
+ve([v], ue.prototype, "disabledSections");
+ve([v], ue.prototype, "board");
+ve([v], ue.prototype, "powers");
+ve([v], ue.prototype, "finaleQuestionId");
+ve([v], ue.prototype, "playerCount");
+ve([v], ue.prototype, "betsPlaced");
+ve([v], ue.prototype, "playersAnswered");
+ve([v], ue.prototype, "playersAnsweredCorrectly");
+ve([v], ue.prototype, "nameOfFirstPlayerToAnswerCorrectly");
 var aa = Object.defineProperty,
     kr = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
@@ -607,8 +607,8 @@ const u = {
     entities: new bs,
     events: new zo,
     imposter: new Ke,
-    draw: new Ie,
-    pardy: new pe,
+    draw: new ke,
+    pardy: new ue,
     metadata: new ws
 };
 var la = Object.getOwnPropertyDescriptor,
@@ -704,6 +704,12 @@ const gt = .45,
         preload: N
     }),
     g = {
+        realityShow: new A.Howl({
+            src: [_("reality-show.mp3")],
+            loop: !0,
+            volume: gt,
+            preload: N
+        }),
         thanos: {
             thanos: new A.Howl({
                 src: [_("thanos.mp3")],
@@ -720,12 +726,6 @@ const gt = .45,
                 preload: N
             })
         },
-        gingerbread: new A.Howl({
-            src: _("gingerbread.mp3"),
-            loop: !0,
-            volume: gt,
-            preload: N
-        }),
         winner: new A.Howl({
             src: [_("winner.mp3")],
             preload: N
@@ -1039,13 +1039,13 @@ const kt = function() {
         return n !== -1 ? u.players.teams[n].color.background : C.White
     },
     Oe = e => {
-        if ((ae() || ce()) && !e) return;
+        if ((le() || de()) && !e) return;
         const n = yt();
-        ue() || n.fade(gt, 0, 1e3), setTimeout(() => {
+        me() || n.fade(gt, 0, 1e3), setTimeout(() => {
             st() ? u.engine.game.send(G.requestTeamLeaderboard, "final") : u.engine.game.send(G.requestPlayerLeaderboard, "final"), u.gameValues.currentRoute = V.results
         }, 500)
     },
-    yt = () => ae() ? g.thanos.thanos : ce() ? g.halloween : _e() ? g.lava.panther : ue() ? g.imposter.mysteriousCase : X() ? g.draw.background : g.gingerbread,
+    yt = () => le() ? g.thanos.thanos : de() ? g.halloween : Be() ? g.lava.panther : me() ? g.imposter.mysteriousCase : X() ? g.draw.background : g.realityShow,
     $a = (e, n) => {
         const r = u.gameOptions.music,
             i = yt();
@@ -1089,22 +1089,22 @@ const kt = function() {
     Ta = (e, n, r = 1e3) => {
         e.stop()
     },
-    Ne = (e, n) => {
+    Ae = (e, n) => {
         const r = u.engine.game;
         r && r.send(e, n)
     },
     sn = e => Ca() ? t.jsx(t.Fragment, {
         children: e.children
     }) : t.jsx("div", {}),
-    Be = () => u.gameOptions.music === !0,
-    ae = () => u.gameOptions.specialGameType.includes(ma),
+    Me = () => u.gameOptions.music === !0,
+    le = () => u.gameOptions.specialGameType.includes(ma),
     _n = () => u.gameOptions.specialGameType.includes(fa),
     Ee = () => u.gameOptions.specialGameType.includes(Ir),
-    ce = () => u.gameOptions.specialGameType.includes(Rr),
-    _e = () => u.gameOptions.specialGameType.includes(ga),
-    ue = () => u.gameOptions.specialGameType.includes(xa),
+    de = () => u.gameOptions.specialGameType.includes(Rr),
+    Be = () => u.gameOptions.specialGameType.includes(ga),
+    me = () => u.gameOptions.specialGameType.includes(xa),
     X = () => u.gameOptions.specialGameType.includes(va),
-    oe = () => u.gameOptions.specialGameType.includes(ya);
+    ae = () => u.gameOptions.specialGameType.includes(ya);
 
 function ht() {
     return !0
@@ -1457,8 +1457,8 @@ let Jt = class extends c.Component {
                 }) : null]
             }), t.jsx(dn, {
                 customWidth: 50,
-                children: !ce() && t.jsx(Ra, {
-                    children: ae() ? "Collect All 6 Infinity Stones" : n === "TIME" ? this.timeRender() : n
+                children: !de() && t.jsx(Ra, {
+                    children: le() ? "Collect All 6 Infinity Stones" : n === "TIME" ? this.timeRender() : n
                 })
             }), t.jsx(dn, {
                 customCSS: `
@@ -1473,7 +1473,7 @@ let Jt = class extends c.Component {
                         onClick: this.toggleMusic,
                         icon: t.jsx(fr, {}),
                         tooltipMessage: "Toggle Music"
-                    }), !ae() && !ce() && t.jsx(Ps, {
+                    }), !le() && !de() && t.jsx(Ps, {
                         onClick: this.endGame,
                         icon: t.jsx(Cr, {}),
                         tooltipMessage: "End Game"
@@ -1554,17 +1554,17 @@ class Fa extends c.Component {
         super(...arguments), this.kickPlayer = () => {
             Pr(this.props.playerId), this.props.close()
         }, this.increaseBalance = () => {
-            Ne(G.leaderboardChangeBalance, {
+            Ae(G.leaderboardChangeBalance, {
                 balancePercentageChange: .1,
                 playerId: this.props.playerId
             }), this.props.close()
         }, this.decreaseBalance = () => {
-            Ne(G.leaderboardChangeBalance, {
+            Ae(G.leaderboardChangeBalance, {
                 balancePercentageChange: -.1,
                 playerId: this.props.playerId
             }), this.props.close()
         }, this.freezePlayer = () => {
-            Ne(G.leaderboardFreezePlayer, {
+            Ae(G.leaderboardFreezePlayer, {
                 playerId: this.props.playerId
             }), this.props.close()
         }
@@ -1853,7 +1853,7 @@ var Ya = Object.getOwnPropertyDescriptor,
         return s
     };
 const Vt = e => {
-        const n = ae() ? "stones" : "balance";
+        const n = le() ? "stones" : "balance";
         return e.slice().sort((r, i) => r[n] === i[n] ? 0 : r[n] > i[n] ? -1 : 1)
     },
     Ja = l.div`
@@ -2112,8 +2112,8 @@ function il() {
             try {
                 if (W = (h = h.call(b)).next, x !== 0)
                     for (; !(Z = (p = W.call(h)).done) && (H.push(p.value), H.length !== x); Z = !0);
-            } catch (le) {
-                re = !0, w = le
+            } catch (oe) {
+                re = !0, w = oe
             } finally {
                 try {
                     if (!Z && h.return != null && (P = h.return(), Object(P) !== P)) return
@@ -2249,31 +2249,31 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 H = h.end,
                 Z = h.formattingFn,
                 re = h.numerals,
-                le = h.prefix,
-                Re = h.separator,
-                de = h.start,
+                oe = h.prefix,
+                Ie = h.separator,
+                ce = h.start,
                 ct = h.suffix,
                 dt = h.useEasing,
                 Ve = h.useGrouping,
-                De = h.useIndianSeparators,
+                Re = h.useIndianSeparators,
                 ut = h.enableScrollSpy,
                 $e = h.scrollSpyDelay,
                 pt = h.scrollSpyOnce,
                 ze = h.plugin;
             return new n.CountUp(x, H, {
-                startVal: de,
+                startVal: ce,
                 duration: W,
                 decimal: p,
                 decimalPlaces: w,
                 easingFn: P,
                 formattingFn: Z,
                 numerals: re,
-                separator: Re,
-                prefix: le,
+                separator: Ie,
+                prefix: oe,
                 suffix: ct,
                 plugin: ze,
                 useEasing: dt,
-                useIndianSeparators: De,
+                useIndianSeparators: Re,
                 useGrouping: Ve,
                 enableScrollSpy: ut,
                 scrollSpyDelay: $e,
@@ -2297,8 +2297,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             useIndianSeparators: !1
         },
         K = function(x) {
-            var h = Object.fromEntries(Object.entries(x).filter(function(Pe) {
-                    var _t = E(Pe, 2),
+            var h = Object.fromEntries(Object.entries(x).filter(function(De) {
+                    var _t = E(De, 2),
                         Ht = _t[1];
                     return Ht !== void 0
                 })),
@@ -2311,24 +2311,24 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 H = p.delay,
                 Z = p.onEnd,
                 re = p.onStart,
-                le = p.onPauseResume,
-                Re = p.onReset,
-                de = p.onUpdate,
+                oe = p.onPauseResume,
+                Ie = p.onReset,
+                ce = p.onUpdate,
                 ct = $(p, L),
                 dt = e.useRef(),
                 Ve = e.useRef(),
-                De = e.useRef(!1),
+                Re = e.useRef(!1),
                 ut = y(function() {
                     return R(typeof w == "string" ? w : w.current, ct)
                 }),
-                $e = y(function(Pe) {
+                $e = y(function(De) {
                     var _t = dt.current;
-                    if (_t && !Pe) return _t;
+                    if (_t && !De) return _t;
                     var Ht = ut();
                     return dt.current = Ht, Ht
                 }),
                 pt = y(function() {
-                    var Pe = function() {
+                    var De = function() {
                         return $e(!0).start(function() {
                             Z == null || Z({
                                 pauseResume: ze,
@@ -2338,28 +2338,28 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             })
                         })
                     };
-                    H && H > 0 ? Ve.current = setTimeout(Pe, H * 1e3) : Pe(), re == null || re({
+                    H && H > 0 ? Ve.current = setTimeout(De, H * 1e3) : De(), re == null || re({
                         pauseResume: ze,
                         reset: He,
                         update: Et
                     })
                 }),
                 ze = y(function() {
-                    $e().pauseResume(), le == null || le({
+                    $e().pauseResume(), oe == null || oe({
                         reset: He,
                         start: Ot,
                         update: Et
                     })
                 }),
                 He = y(function() {
-                    $e().el && (Ve.current && clearTimeout(Ve.current), $e().reset(), Re == null || Re({
+                    $e().el && (Ve.current && clearTimeout(Ve.current), $e().reset(), Ie == null || Ie({
                         pauseResume: ze,
                         start: Ot,
                         update: Et
                     }))
                 }),
-                Et = y(function(Pe) {
-                    $e().update(Pe), de == null || de({
+                Et = y(function(De) {
+                    $e().update(De), ce == null || ce({
                         pauseResume: ze,
                         reset: He,
                         start: Ot
@@ -2368,12 +2368,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 Ot = y(function() {
                     He(), pt()
                 }),
-                an = y(function(Pe) {
-                    W && (Pe && He(), pt())
+                an = y(function(De) {
+                    W && (De && He(), pt())
                 });
             return e.useEffect(function() {
-                De.current ? P && an(!0) : (De.current = !0, an())
-            }, [P, De, an, H, x.start, x.suffix, x.prefix, x.duration, x.separator, x.decimals, x.decimal, x.formattingFn]), e.useEffect(function() {
+                Re.current ? P && an(!0) : (Re.current = !0, an())
+            }, [P, Re, an, H, x.start, x.suffix, x.prefix, x.duration, x.separator, x.decimals, x.decimal, x.formattingFn]), e.useEffect(function() {
                 return function() {
                     He()
                 }
@@ -2395,21 +2395,21 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 H = $(x, q),
                 Z = e.useRef(null),
                 re = e.useRef(!1),
-                le = K(s(s({}, H), {}, {
+                oe = K(s(s({}, H), {}, {
                     ref: Z,
                     startOnMount: typeof W != "function" || x.delay === 0,
                     enableReinitialize: !1
                 })),
-                Re = le.start,
-                de = le.reset,
-                ct = le.update,
-                dt = le.pauseResume,
-                Ve = le.getCountUp,
-                De = y(function() {
-                    Re()
+                Ie = oe.start,
+                ce = oe.reset,
+                ct = oe.update,
+                dt = oe.pauseResume,
+                Ve = oe.getCountUp,
+                Re = y(function() {
+                    Ie()
                 }),
                 ut = y(function(ze) {
-                    x.preserveValue || de(), ct(ze)
+                    x.preserveValue || ce(), ct(ze)
                 }),
                 $e = y(function() {
                     if (typeof x.children == "function" && !(Z.current instanceof Element)) {
@@ -2425,15 +2425,15 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             }, [x.end, ut]);
             var pt = p && x;
             return e.useEffect(function() {
-                p && re.current && De()
-            }, [De, p, pt]), e.useEffect(function() {
-                !p && re.current && De()
-            }, [De, p, x.start, x.suffix, x.prefix, x.duration, x.separator, x.decimals, x.decimal, x.className, x.formattingFn]), e.useEffect(function() {
+                p && re.current && Re()
+            }, [Re, p, pt]), e.useEffect(function() {
+                !p && re.current && Re()
+            }, [Re, p, x.start, x.suffix, x.prefix, x.duration, x.separator, x.decimals, x.decimal, x.className, x.formattingFn]), e.useEffect(function() {
                 re.current = !0
             }, []), typeof W == "function" ? W({
                 countUpRef: Z,
-                start: Re,
-                reset: de,
+                start: Ie,
+                reset: ce,
                 update: ct,
                 pauseResume: dt,
                 getCountUp: Ve
@@ -2492,7 +2492,7 @@ let In = class extends c.Component {
         this.props.gameOptions.goal.type === ye.allIn && this.state.currentBalance >= this.props.gameOptions.goal.value && Oe()
     }
     render() {
-        const e = ae() ? Vs : Ws,
+        const e = le() ? Vs : Ws,
             n = ul(this.props.width, this.props.height, e(this.state.currentBalance).length);
         return t.jsx(cl, {
             children: t.jsx(dl, {
@@ -2500,7 +2500,7 @@ let In = class extends c.Component {
                 children: t.jsx(Nr, {
                     start: this.state.lastBalance,
                     end: this.state.currentBalance,
-                    formattingFn: ae() ? Vs : Ws,
+                    formattingFn: le() ? Vs : Ws,
                     duration: .6
                 })
             })
@@ -2540,7 +2540,7 @@ const D = c.createContext(u),
             innerHeight: n
         } = ro(), {
             players: r
-        } = c.useContext(D), i = ae() ? r.totalStones : r.totalBalance;
+        } = c.useContext(D), i = le() ? r.totalStones : r.totalBalance;
         return t.jsxs(ml, {
             id: hl,
             children: [t.jsx(sn, {
@@ -2583,7 +2583,7 @@ let yl = class extends c.Component {
     render() {
         return t.jsxs(vl, {
             children: [t.jsx(Kt, {
-                forceShowBalance: ae()
+                forceShowBalance: le()
             }), t.jsx(xl, {})]
         })
     }
@@ -2625,7 +2625,7 @@ class bl extends c.Component {
                     zoom: 2.7,
                     marginTop: -9
                 },
-                trailColor: Me.White,
+                trailColor: Ne.White,
                 strokeColor: "#66bb6a"
             }), t.jsxs("div", {
                 style: {
@@ -3344,7 +3344,7 @@ const Ll = {
 `,
     pc = e => {
         const n = () => {
-            Ne(G.hostIncreaseLavaHeight, {
+            Ae(G.hostIncreaseLavaHeight, {
                 amount: .1
             }), co.success({
                 message: "Lava height increased by 10%!",
@@ -3540,7 +3540,7 @@ const vc = l.div`
     }
   }
 `,
-    Ae = {
+    Pe = {
         goal: "Locate the impostors and vote them off the spaceship!",
         discussionHeader: "Discussion Time",
         discussionDescription: "Who is the impostor?",
@@ -3569,7 +3569,7 @@ let An = class extends c.Component {
             } = this.props.gameOptions;
             return !!(e && e.allowPublicInvestigations)
         }, this.endGameEarly = () => {
-            Ne(G.imposter.imposterWin)
+            Ae(G.imposter.imposterWin)
         }
     }
     render() {
@@ -3578,7 +3578,7 @@ let An = class extends c.Component {
             children: [t.jsxs(jc, {
                 children: [this.canShowClearList() ? t.jsx(Sc, {
                     children: t.jsx(B, {
-                        text: Ae.clearList
+                        text: Pe.clearList
                     })
                 }) : null, e.map(n => t.jsx($c, {
                     children: n.name
@@ -3675,7 +3675,7 @@ class Ec extends c.Component {
         return t.jsxs(Oc, {
             children: [t.jsx(_c, {
                 children: t.jsx(B, {
-                    text: Ae.investigationLog
+                    text: Pe.investigationLog
                 })
             }), t.jsx(kc, {
                 children: t.jsx(rn, {
@@ -3883,15 +3883,15 @@ let Bn = class extends c.Component {
                     src: _("discussion.svg")
                 }), t.jsx(Gr, {
                     children: t.jsx(B, {
-                        text: Ae.discussionHeader
+                        text: Pe.discussionHeader
                     })
                 }), t.jsx(Ur, {
                     children: t.jsx(B, {
-                        text: Ae.discussionDescription
+                        text: Pe.discussionDescription
                     })
                 }), t.jsx(qr, {}), t.jsx(Yr, {
                     children: t.jsx(B, {
-                        text: Ae.discussionActionWaiting
+                        text: Pe.discussionActionWaiting
                     })
                 }), t.jsx(Q, {
                     onClick: this.startVoting,
@@ -3901,7 +3901,7 @@ let Bn = class extends c.Component {
                     block: !0,
                     type: "primary",
                     size: "large",
-                    children: Ae.startVoting
+                    children: Pe.startVoting
                 })]
             })
         })
@@ -3975,11 +3975,11 @@ let Fn = class extends c.Component {
                     src: _("vote.svg")
                 }), t.jsx(Gr, {
                     children: t.jsx(B, {
-                        text: Ae.voteHeader
+                        text: Pe.voteHeader
                     })
                 }), t.jsx(Ur, {
                     children: t.jsx(B, {
-                        text: Ae.voteDescription
+                        text: Pe.voteDescription
                     })
                 }), t.jsx(qr, {}), t.jsx(Yr, {
                     children: `${this.props.imposter.votes}/${e} ${ie("vote",e)} in`
@@ -3991,7 +3991,7 @@ let Fn = class extends c.Component {
                     block: !0,
                     type: "primary",
                     size: "large",
-                    children: Ae.endVotingEarly
+                    children: Pe.endVotingEarly
                 })]
             })
         })
@@ -4131,14 +4131,14 @@ function Ss(e) {
     ]
 }
 
-function he() {
-    return he = Object.assign || function(e) {
+function pe() {
+    return pe = Object.assign || function(e) {
         for (var n = 1; n < arguments.length; n++) {
             var r = arguments[n];
             for (var i in r) Object.prototype.hasOwnProperty.call(r, i) && (e[i] = r[i])
         }
         return e
-    }, he.apply(this, arguments)
+    }, pe.apply(this, arguments)
 }
 
 function Yc(e, n) {
@@ -4221,7 +4221,7 @@ function ed(e, n) {
         case "replace":
             return ni(n.windup);
         case "next":
-            return he({}, e, {
+            return pe({}, e, {
                 windup: Ss(e.windup)
             });
         case "rewind":
@@ -4229,11 +4229,11 @@ function ed(e, n) {
                 windup: Kr(e.windup), didFinishOnce: !1
             };
         case "fast-forward":
-            return he({}, e, {
+            return pe({}, e, {
                 windup: Jr(e.windup)
             });
         case "finish":
-            return he({}, e, {
+            return pe({}, e, {
                 didFinishOnce: !0
             });
         default:
@@ -4394,7 +4394,7 @@ function ri(e, n) {
         d = n.key ? {
             key: n.key
         } : {};
-    if (rd(n)) return [].concat(e, [Ut(" ", he({
+    if (rd(n)) return [].concat(e, [Ut(" ", pe({
         element: c.Fragment
     }, d, {
         props: {
@@ -4404,19 +4404,19 @@ function ri(e, n) {
             return n.props.ms
         }
     }))]);
-    if (i === void 0) return [].concat(e, [Ut(" ", he({
+    if (i === void 0) return [].concat(e, [Ut(" ", pe({
         element: n.type,
-        props: he({}, s, {
+        props: pe({}, s, {
             children: void 0
         })
     }, d, o, a))]);
-    if (typeof i == "string") return [].concat(e, [Ut(i, he({
+    if (typeof i == "string") return [].concat(e, [Ut(i, pe({
         element: n.type,
         props: s
     }, d, o, a))]);
-    if (i instanceof Function) return [].concat(e, [Ut(" ", he({
+    if (i instanceof Function) return [].concat(e, [Ut(" ", pe({
         element: n.type,
-        props: he({
+        props: pe({
             children: i
         }, s)
     }, d, o, a))]);
@@ -4426,11 +4426,11 @@ function ri(e, n) {
                 var E = $[0],
                     k = $[1],
                     M = $[2];
-                return [E, k, he({}, o, a, M)]
+                return [E, k, pe({}, o, a, M)]
             }
             return $
         });
-    return [].concat(e, [Qr(f, he({
+    return [].concat(e, [Qr(f, pe({
         element: n.type,
         props: s
     }, d, o, a))])
@@ -4684,12 +4684,12 @@ function pd() {
                         if (M(Z, P), k.hasOwnProperty(P)) k[P](h, H);
                         else {
                             var re = $.hasOwnProperty(P),
-                                le = typeof H == "function",
-                                Re = le && !re && !Z && p.autobind !== !1;
-                            if (Re) W.push(P, H), w[P] = H;
+                                oe = typeof H == "function",
+                                Ie = oe && !re && !Z && p.autobind !== !1;
+                            if (Ie) W.push(P, H), w[P] = H;
                             else if (Z) {
-                                var de = $[P];
-                                r(re && (de === "DEFINE_MANY_MERGED" || de === "DEFINE_MANY"), "ReactClass: Unexpected spec policy %s for key %s when mixing in component specs.", de, P), de === "DEFINE_MANY_MERGED" ? w[P] = y(w[P], H) : de === "DEFINE_MANY" && (w[P] = R(w[P], H))
+                                var ce = $[P];
+                                r(re && (ce === "DEFINE_MANY_MERGED" || ce === "DEFINE_MANY"), "ReactClass: Unexpected spec policy %s for key %s when mixing in component specs.", ce, P), ce === "DEFINE_MANY_MERGED" ? w[P] = y(w[P], H) : ce === "DEFINE_MANY" && (w[P] = R(w[P], H))
                             } else w[P] = H
                         }
                     }
@@ -5276,7 +5276,7 @@ class xn extends c.Component {
         this.props.position === 1 && setTimeout(() => {
             this.setState({
                 showConfetti: !0
-            }), !ae() && !ce() && z(g.celebrate, {})
+            }), !le() && !de() && z(g.celebrate, {})
         }, (this.getAnimationDelay() + 2.3) * 1e3)
     }
     render() {
@@ -5452,7 +5452,7 @@ const Pd = {
   margin-left: 6px;
 `,
     Gn = () => {
-        Ne(G.draw.endRound)
+        Ae(G.draw.endRound)
     },
     ui = .7,
     $t = .4,
@@ -5465,7 +5465,7 @@ const Pd = {
         c.useEffect(() => {
             if (n.round.secondsLeft === 0) {
                 let s;
-                Be() && (s = setTimeout(() => {
+                Me() && (s = setTimeout(() => {
                     g.draw.background.fade(g.draw.background.volume(), $t, 6e3)
                 }, 3500));
                 const o = setTimeout(() => e.fadeOut(), Js - 1500),
@@ -5477,7 +5477,7 @@ const Pd = {
                 }
             }
         }, [n.round.secondsLeft]), c.useEffect(() => {
-            if (g.draw.roundStart.play(), Be()) {
+            if (g.draw.roundStart.play(), Me()) {
                 g.draw.background.fade(g.draw.background.volume(), 0, 400);
                 const s = g.draw.funk,
                     o = 1.3,
@@ -5493,7 +5493,7 @@ const Pd = {
             }
         }, []);
         const r = () => {
-                Ne(G.draw.clear)
+                Ae(G.draw.clear)
             },
             i = () => {
                 n.showingFeed = !n.showingFeed
@@ -5855,7 +5855,7 @@ const eu = l(lt).attrs({
   box-shadow: 0px 4px 16px rgb(0 0 0 / 50%);
 `,
     xu = () => (c.useEffect(() => {
-        Be() && g.draw.background.fade(g.draw.background.volume(), $t, 2e3)
+        Me() && g.draw.background.fade(g.draw.background.volume(), $t, 2e3)
     }, []), t.jsxs(vu, {
         children: [t.jsxs(yu, {
             children: [t.jsx(iu, {}), t.jsx(uu, {})]
@@ -5891,7 +5891,7 @@ const eu = l(lt).attrs({
                 players: e
             }
         } = c.useContext(D), n = i => {
-            Ne(G.draw.createRound, i)
+            Ae(G.draw.createRound, i)
         }, r = () => {
             if (!e.length) return;
             const i = Ue.sample(e);
@@ -6219,7 +6219,7 @@ background-position: center;
                     category: e.category.name,
                     id: i
                 }
-            }, n.questionScreen = me.preview, n.questionStatus = je.preview, n.screen = we.question
+            }, n.questionScreen = he.preview, n.questionStatus = je.preview, n.screen = we.question
         };
         return t.jsxs(Xu, {
             width: e.width,
@@ -6314,7 +6314,7 @@ background-position: center;
     },
     ip = l.div`
   border-radius: 5px;
-  border: 2px solid ${Me.White};
+  border: 2px solid ${Ne.White};
   font-family: ${F.fontFamilyName};
   font-weight: ${Fe.Bold};
   max-width: 100%;
@@ -6326,7 +6326,7 @@ background-position: center;
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
   font-size: 22px;
-  border-bottom: 2px solid ${Me.White};
+  border-bottom: 2px solid ${Ne.White};
 `,
     ap = l.div.attrs({
         className: "flex hc vc maxWidth"
@@ -6342,7 +6342,7 @@ background-position: center;
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
   font-size: 22px;
-  border-top: 2px solid ${Me.White};
+  border-top: 2px solid ${Ne.White};
 `,
     vi = j(() => {
         const {
@@ -6486,7 +6486,7 @@ const pp = () => {
         u.pardy.currentRound = {
             type: "Finale",
             value: void 0
-        }, u.pardy.questionScreen = me.finale, u.pardy.questionStatus = je.preview, u.pardy.screen = we.question
+        }, u.pardy.questionScreen = he.finale, u.pardy.questionStatus = je.preview, u.pardy.screen = we.question
     },
     Mt = 50,
     bi = 125,
@@ -6507,12 +6507,12 @@ const pp = () => {
         }, []), m = () => {
             const $ = !o.music;
             if (o.music = $, $)
-                if (n === we.question && r === me.question && i === je.ask) g.pardy.countdown.volume(Ge.countdownVolume);
+                if (n === we.question && r === he.question && i === je.ask) g.pardy.countdown.volume(Ge.countdownVolume);
                 else {
                     const E = n === we.home,
                         k = n === we.answer,
                         M = s && s.type === "Finale",
-                        T = r === me.question && i === je.timesUp;
+                        T = r === he.question && i === je.timesUp;
                     (E || k || M || T) && (M ? g.pardy.finaleMusic.volume(Ge.finaleMusicVolume) : g.pardy.music.volume(Ge.musicVolume))
                 }
             else g.pardy.music.volume(0), g.pardy.countdown.volume(0), g.pardy.finaleMusic.volume(0)
@@ -6543,7 +6543,7 @@ const pp = () => {
     gp = j(() => {
         const {
             pardy: e
-        } = c.useContext(D), n = () => e.screen === we.home || e.questionScreen === me.finale || e.questionScreen === me.preview, i = (() => {
+        } = c.useContext(D), n = () => e.screen === we.home || e.questionScreen === he.finale || e.questionScreen === he.preview, i = (() => {
             const {
                 currentRound: o
             } = e;
@@ -6663,7 +6663,7 @@ const pp = () => {
                 f = .6,
                 E = a.duration() - m - d - f;
             a.volume(0), a.seek(E), setTimeout(() => {
-                a.play(), a.fade(0, Be() ? Ge.countdownVolume : 0, 2700)
+                a.play(), a.fade(0, Me() ? Ge.countdownVolume : 0, 2700)
             }, f * 1e3)
         }, []);
         const o = c.useMemo(() => s.questionDuration, []);
@@ -6725,7 +6725,7 @@ const pp = () => {
         const [n, r] = c.useState(!1);
         return c.useEffect(() => {
             r(!0), setTimeout(() => {
-                if (Be()) {
+                if (Me()) {
                     const i = e.inFinale ? g.pardy.finaleMusic : g.pardy.music;
                     i.fade(i.volume(), e.inFinale ? Ge.finaleMusicVolume : Ge.musicVolume, 1e3)
                 }
@@ -6994,7 +6994,7 @@ const pp = () => {
             pardy: e
         } = c.useContext(D), [n, r] = c.useState(0), [i, s] = c.useState(!1), o = c.useMemo(() => !Nt().categoryItemId, []);
         c.useEffect(() => {
-            e.questionScreen = me.question;
+            e.questionScreen = he.question;
             const k = Nt();
             k.categoryItemId && e.disabledSections.push(k.categoryItemId)
         }, []);
@@ -7074,7 +7074,7 @@ const pp = () => {
             pardy: n
         } = c.useContext(D), [r, i] = c.useState(!1), [s, o] = c.useState(!1), a = c.useMemo(Nt, []);
         c.useEffect(() => {
-            n.questionScreen = me.preview
+            n.questionScreen = he.preview
         }, []);
         const d = () => {
                 i(!0), o(!0), setTimeout(() => {
@@ -7148,7 +7148,7 @@ const pp = () => {
         className: "flex flex-column hc vc maxWidth maxHeight"
     })``,
     Ti = l(U.div)`
-  text-shadow: 0px 5px 5px ${Me.Black};
+  text-shadow: 0px 5px 5px ${Ne.Black};
 `,
     eh = l(Ti)`
   font-size: 42px;
@@ -7297,10 +7297,10 @@ const pp = () => {
             pardy: n
         } = c.useContext(D), [r, i] = c.useState(!1);
         c.useEffect(() => {
-            n.questionScreen = me.finale
+            n.questionScreen = he.finale
         }, []), c.useEffect(() => (g.pardy.music.fade(g.pardy.music.volume(), 0, 1e3), setTimeout(() => {
             z(g.pardy.finaleMusic, {
-                volume: Be() ? Ge.finaleMusicVolume : 0,
+                volume: Me() ? Ge.finaleMusicVolume : 0,
                 fadeInDuration: 3e3
             })
         }, 600), () => {
@@ -7385,11 +7385,11 @@ const pp = () => {
         const {
             pardy: n
         } = c.useContext(D), r = () => {
-            n.questionScreen = me.question
+            n.questionScreen = he.question
         };
-        return n.questionScreen === me.preview ? t.jsx(Jp, {
+        return n.questionScreen === he.preview ? t.jsx(Jp, {
             setToQuestionScreen: r
-        }) : n.questionScreen === me.finale ? t.jsx(dh, {
+        }) : n.questionScreen === he.finale ? t.jsx(dh, {
             setToQuestionScreen: r
         }) : t.jsx(qp, {})
     }),
@@ -7802,12 +7802,12 @@ let Yn = class extends c.Component {
             customTextColor: C.LightSuccessGreen
         });
         const e = yt();
-        this.props.gameOptions.music && !e.playing() && !X() && !oe() && e.play(), Te(() => this.props.gameOptions.music, n => {
-            n ? !e.playing() && !X() && !oe() && e.play() : oe() || e.pause()
+        this.props.gameOptions.music && !e.playing() && !X() && !ae() && e.play(), Te(() => this.props.gameOptions.music, n => {
+            n ? !e.playing() && !X() && !ae() && e.play() : ae() || e.pause()
         })
     }
     render() {
-        return ce() ? t.jsx(El, {}) : _e() ? t.jsx(Pn, {}) : ue() ? t.jsx(Hn, {}) : X() ? t.jsx(Hu, {}) : oe() ? t.jsx(Ph, {}) : t.jsxs(Fh, {
+        return de() ? t.jsx(El, {}) : Be() ? t.jsx(Pn, {}) : me() ? t.jsx(Hn, {}) : X() ? t.jsx(Hu, {}) : ae() ? t.jsx(Ph, {}) : t.jsxs(Fh, {
             children: [t.jsx(Jt, {}), t.jsx(yl, {})]
         })
     }
@@ -7948,7 +7948,7 @@ let Kn = class extends c.Component {
                     type: n,
                     value: r
                 } = e;
-            return ae() ? "Be the first to acquire all 6 Infinity Stones!" : ce() ? "Be the last team to survive!" : _e() ? "Work together to stay above the lava as long as you can!" : ue() ? Ae.goal : X() ? "Guess student drawings to earn the most points!" : oe() ? "Answer questions correctly & choose the right power to come out on top!" : n === ye.time ? `Try to make as much money as you can in ${Qe(r)} ${ie("minute",r)}!` : n === ye.race ? `The first ${this.getNoun()} to earn ${ne(r)} wins!` : n === ye.allIn ? `The game ends once the combined balance of all ${this.getNoun(!0)} reaches ${ne(r)}!` : ""
+            return le() ? "Be the first to acquire all 6 Infinity Stones!" : de() ? "Be the last team to survive!" : Be() ? "Work together to stay above the lava as long as you can!" : me() ? Pe.goal : X() ? "Guess student drawings to earn the most points!" : ae() ? "Answer questions correctly & choose the right power to come out on top!" : n === ye.time ? `Try to make as much money as you can in ${Qe(r)} ${ie("minute",r)}!` : n === ye.race ? `The first ${this.getNoun()} to earn ${ne(r)} wins!` : n === ye.allIn ? `The game ends once the combined balance of all ${this.getNoun(!0)} reaches ${ne(r)}!` : ""
         }
     }
     render() {
@@ -7958,7 +7958,7 @@ let Kn = class extends c.Component {
                     type: r
                 }
             } = this.props.gameOptions;
-            return ae() || ce() || _e() ? _s : ue() ? yo : X() ? jr : oe() ? $n : r === ye.time ? so : r === ye.race ? $n : r === ye.allIn ? bo : _s
+            return le() || de() || Be() ? _s : me() ? yo : X() ? jr : ae() ? $n : r === ye.time ? so : r === ye.race ? $n : r === ye.allIn ? bo : _s
         })();
         return t.jsxs(Kh, {
             background: this.getContainerBackground(),
@@ -8053,11 +8053,11 @@ let Xt = class extends c.Component {
                 this.props.ui.showingBossPreScreen = !0;
                 return
             }
-            if (ce()) {
+            if (de()) {
                 this.props.ui.showingHumansVsZombiesPreScreen = !0;
                 return
             }
-            if (_e()) {
+            if (Be()) {
                 this.props.ui.showingLavaPreScreen = !0;
                 return
             }
@@ -8068,7 +8068,7 @@ let Xt = class extends c.Component {
             const e = this.playerCount(),
                 n = this.props.gameOptions;
             let r = "player";
-            if (oe() && (r = "contestant"), Ee() || ce()) {
+            if (ae() && (r = "contestant"), Ee() || de()) {
                 const s = (Ee() ? 3 : 2) - e;
                 return s > 0 && ht() ? {
                     disabled: !0,
@@ -8081,7 +8081,7 @@ let Xt = class extends c.Component {
                     text: "Next"
                 }
             }
-            if (ue()) {
+            if (me()) {
                 const i = Math.max(3, n.modeOptions.numberOfImposters * 2) - e;
                 if (i > 0 && ht()) return {
                     disabled: !0,
@@ -8095,7 +8095,7 @@ let Xt = class extends c.Component {
                     text: `${i} more ${ie(r,i)} needed`
                 }
             }
-            if (ae()) {
+            if (le()) {
                 const i = 2 - e;
                 if (i > 0 && ht()) return {
                     disabled: !0,
@@ -8145,7 +8145,7 @@ const om = l.div`
     lm = e => {
         const {
             amountOfPlayers: n
-        } = e, r = c.useMemo(() => oe() ? "contestant" : "player", []);
+        } = e, r = c.useMemo(() => ae() ? "contestant" : "player", []);
         return t.jsxs(om, {
             children: [t.jsx(am, {
                 children: `${n} ${ie(r,n)}`
@@ -8310,17 +8310,17 @@ const xm = l.div`
             ui: e
         } = c.useContext(D);
         c.useEffect(() => {
-            if (Be() && X() && z(g.draw.background, {
+            if (Me() && X() && z(g.draw.background, {
                     volume: $t
-                }), oe()) {
+                }), ae()) {
                 const r = g.pardy.music;
                 z(r, {
-                    volume: Be() ? Ge.musicVolume : 0
+                    volume: Me() ? Ge.musicVolume : 0
                 })
             }
-            _e() && (e.backgroundColor = "#ac1900"), ue() && (e.backgroundColor = "#000a12"), X() && (e.backgroundColor = "#f1f2f3")
+            Be() && (e.backgroundColor = "#ac1900"), me() && (e.backgroundColor = "#000a12"), X() && (e.backgroundColor = "#f1f2f3")
         }, []);
-        const n = c.useMemo(() => oe() ? uo : c.Fragment, []);
+        const n = c.useMemo(() => ae() ? uo : c.Fragment, []);
         return e.showingLavaPreScreen ? t.jsx(es, {}) : t.jsx(n, {
             children: t.jsxs(bm, {
                 children: [t.jsxs(wm, {
@@ -8686,7 +8686,7 @@ let Je = class extends c.Component {
         }, this.playAgain = () => {
             this.state.loadingPlayAgain || (this.setState({
                 loadingPlayAgain: !0
-            }), Ne(G.playAgain), setTimeout(() => {
+            }), Ae(G.playAgain), setTimeout(() => {
                 this.setState({
                     loadingPlayAgain: !1
                 })
@@ -8699,10 +8699,10 @@ let Je = class extends c.Component {
                 style: {
                     textAlign: "left"
                 },
-                children: this.props.gameOptions.clapping && !ue() ? t.jsxs(Bm, {
+                children: this.props.gameOptions.clapping && !me() ? t.jsxs(Bm, {
                     children: [Pm(), " ", Qe(this.props.gameValues.clapCount)]
                 }) : t.jsx("div", {})
-            }), this.props.hideLogo ? t.jsx("div", {}) : oe() ? t.jsx("img", {
+            }), this.props.hideLogo ? t.jsx("div", {}) : ae() ? t.jsx("img", {
                 src: _("pardyLogo.png"),
                 style: {
                     height: 45
@@ -9101,7 +9101,7 @@ let ls = class extends c.Component {
         super(...arguments), this.impostersWon = () => this.props.imposter.impostersLeft >= 1, this.imposterNames = () => Wt(this.props.imposter.people.filter(e => e.role === En.imposter).map(e => e.name))
     }
     componentDidMount() {
-        Ne(G.imposter.requestPeople), this.impostersWon() ? z(g.imposter.imposterWin, {
+        Ae(G.imposter.requestPeople), this.impostersWon() ? z(g.imposter.imposterWin, {
             volume: .8
         }) : z(g.imposter.crewmateWin, {
             volume: .6
@@ -9497,7 +9497,7 @@ const bf = l.div.attrs({
                 r(!0), setTimeout(() => {
                     s(!0)
                 }, 600), setTimeout(() => {
-                    a(!0), Be() && setTimeout(() => {
+                    a(!0), Me() && setTimeout(() => {
                         g.draw.background.fade(0, $t, 1500)
                     }, 2e3)
                 }, 2e3)
@@ -9623,7 +9623,7 @@ const bf = l.div.attrs({
         }, []);
         const o = () => {
                 z(g.celebrate, {}), setTimeout(() => {
-                    Be() && g.pardy.music.fade(g.pardy.music.volume(), Ge.musicVolume, 1e3)
+                    Me() && g.pardy.music.fade(g.pardy.music.volume(), Ge.musicVolume, 1e3)
                 }, 1e3), i(!0), setTimeout(() => {
                     z(g.pardy.swoosh, {})
                 }, 2e3)
@@ -9734,7 +9734,7 @@ const bf = l.div.attrs({
         className: "flex"
     })`
   flex: 1;
-  background: ${Me.Black};
+  background: ${Ne.Black};
   font-family: 'Londrina Solid', cursive;
   font-weight: ${Fe.Light};
   overflow: hidden;
@@ -9778,7 +9778,7 @@ let cs = class extends c.Component {
             children: t.jsx(ss, {
                 contentWhenComplete: this.getContent(!0)
             })
-        }) : ce() ? t.jsx(rs, {}) : ue() ? t.jsx(yf, {}) : X() ? t.jsx(Qf, {}) : oe() ? t.jsx(lg, {}) : t.jsxs(t.Fragment, {
+        }) : de() ? t.jsx(rs, {}) : me() ? t.jsx(yf, {}) : X() ? t.jsx(Qf, {}) : ae() ? t.jsx(lg, {}) : t.jsxs(t.Fragment, {
             children: [t.jsx(Je, {}), t.jsx(is, {})]
         })
     }
@@ -9786,11 +9786,11 @@ let cs = class extends c.Component {
         Gi(() => !!this.props.players.finalResults, () => {
             this.setState({
                 show: !0
-            }), !ae() && !Ee() && !ce() && !_e() && !ue() && !X() && !oe() && g.winner.play()
+            }), !le() && !Ee() && !de() && !Be() && !me() && !X() && !ae() && g.winner.play()
         })
     }
     render() {
-        return this.state.show ? _e() ? t.jsx(as, {}) : t.jsx(lr, {
+        return this.state.show ? Be() ? t.jsx(as, {}) : t.jsx(lr, {
             children: this.getContent()
         }) : t.jsx(lr, {})
     }
@@ -9887,8 +9887,8 @@ const mg = () => new Promise((e, n) => {
             e.send(G.requestTeamLeaderboard), setTimeout(() => Pt(e), 4700);
             return
         } else if (n === V.gameplay) {
-            if (_e()) return;
-            ue() ? e.send(G.imposter.requestPeople) : ce() ? e.send(G.requestDefendingHomebase) : st() ? e.send(G.requestTeamLeaderboard) : e.send(G.requestPlayerLeaderboard), setTimeout(() => Pt(e), 2500);
+            if (Be()) return;
+            me() ? e.send(G.imposter.requestPeople) : de() ? e.send(G.requestDefendingHomebase) : st() ? e.send(G.requestTeamLeaderboard) : e.send(G.requestPlayerLeaderboard), setTimeout(() => Pt(e), 2500);
             return
         } else {
             if (n === V.results) return;
@@ -9924,8 +9924,8 @@ const mg = () => new Promise((e, n) => {
         }
     }, jg = [vg, yg, wg], Cg = e => {
         Te(() => u.gameValues.currentRoute, n => {
-            n === V.gameplay && !ue() && !ae() && !_e() && !ce() && !X() && !oe() && (u.ui.snowing = !0, u.ui.backgroundColor = "#b1ddd9"), e.send(G.newGameStatus, n)
-        }), ue() && Te(() => u.imposter.status, n => e.send(G.imposter.status, n)), oe() && (Te(() => u.pardy.currentRound, n => {
+            V.gameplay, e.send(G.newGameStatus, n)
+        }), me() && Te(() => u.imposter.status, n => e.send(G.imposter.status, n)), ae() && (Te(() => u.pardy.currentRound, n => {
             e.send(G.pardy.setNewRoundDetails, n)
         }), Te(() => u.pardy.screen, n => {
             e.send(G.pardy.setScreen, n)
@@ -9973,7 +9973,7 @@ const mg = () => new Promise((e, n) => {
                 if (u.metadata.hasReceivedHostStaticState) return;
                 Object.keys(i.options || {}).forEach(o => {
                     u.gameOptions[o] = i.options[o]
-                }), u.gameValues.availableThemes.replace(i.themes), u.gameValues.gameCode = i.gameCode, Sg(), ue() && $g(), ae() && Tg(), _e() && Eg(), Ee() && Og(), X() && (_g(), qe("https://fonts.googleapis.com/css2?family=Pangolin&display=swap")), oe() && (qe("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"), kg()), Cg(e), u.metadata.hasReceivedHostStaticState = !0;
+                }), u.gameValues.availableThemes.replace(i.themes), u.gameValues.gameCode = i.gameCode, Sg(), me() && $g(), le() && Tg(), Be() && Eg(), Ee() && Og(), X() && (_g(), qe("https://fonts.googleapis.com/css2?family=Pangolin&display=swap")), ae() && (qe("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"), kg()), Cg(e), u.metadata.hasReceivedHostStaticState = !0;
                 return
             }
             if (s.action === Y.newActivityItem) {
@@ -10163,7 +10163,7 @@ const mg = () => new Promise((e, n) => {
         }, [s, e.joinedRoom, r.hasReceivedHostStaticState]), t.jsx(Mg, {
             children: t.jsx(wo, {
                 style: {
-                    color: Me.White
+                    color: Ne.White
                 },
                 size: 84
             }, "setup-loader")
@@ -10171,7 +10171,7 @@ const mg = () => new Promise((e, n) => {
     }), Mg = l.div.attrs({
         className: "maxAll flex-center flex-column"
     })`
-  color: ${Me.White};
+  color: ${Ne.White};
 `;
 var Bg = Object.getOwnPropertyDescriptor,
     Fg = (e, n, r, i) => {
@@ -10453,7 +10453,7 @@ class Zg extends c.Component {
     render() {
         return t.jsxs(Qg, {
             children: [t.jsx(Jg, {
-                children: !ce() && "Teams"
+                children: !de() && "Teams"
             }), t.jsxs(Kg, {
                 children: [this.props.reshuffle && t.jsx(Q, {
                     type: "primary",
@@ -10811,9 +10811,9 @@ const fx = e => {
   position: absolute;
   right: 20px;
   width: 350px;
-  background: ${Me.White};
+  background: ${Ne.White};
   border-radius: 6px;
-  color: ${Me.Black};
+  color: ${Ne.Black};
   overflow: hidden;
   font-family: ${Qi.SFPro};
   z-index: 99999999;
