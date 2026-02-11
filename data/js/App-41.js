@@ -7488,7 +7488,7 @@ const a_ = g => {
     }, R_ = g => {
         g.onMessage(Nt.physicsState, t => {
             const e = EA().characterManager.characters.get(ee());
-            console.log(`[MOVEMENT] - ${Date.now()}`), e && e.physics.setServerPosition({
+            e && e.physics.setServerPosition({
                 packet: t.packetId,
                 x: t.x,
                 y: t.y,
