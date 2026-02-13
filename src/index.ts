@@ -62,7 +62,8 @@ const index = await indexRes.text();
 // Write the index file
 await fsp.writeFile(join(tmpPath, indexUrl), index);
 
-const queue = getUrls(index);
+const importRegex = /import\("\.\/([^"]+\.js)"\)/g;
+const queue = Array.from(getUrls(index));
 const seenUrls = new Set<string>(queue);
 
 // Fetch all assets
@@ -139,8 +140,15 @@ function getUrls(code: string) {
     const urls: string[] = JSON.parse(code.slice(start, end))
         .map((url: string) => url.split("/").pop())
         .filter((url: string) => url.endsWith(".js"));
+    const urlSet = new Set(urls);
 
-    return urls;
+    const matches = code.matchAll(importRegex);
+    for(const match of matches) {
+        const url = match[1].split("/").pop();
+        if(url.endsWith(".js")) urlSet.add(url);
+    }
+
+    return urlSet;
 }
 
 function format(js: string) {
