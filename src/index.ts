@@ -4,6 +4,7 @@ import fsp from "node:fs/promises";
 import { parseArgs } from "util";
 import beautify from "js-beautify";
 import { pushChanges } from "./push";
+import { sendEmbed } from "./webhook";
 
 const { values: { force, push }} = parseArgs({
     args: process.argv.slice(2),
@@ -68,11 +69,53 @@ const seenUrls = new Set<string>(queue);
 
 // Fetch all assets
 let processed = 0;
+let clearLine = false;
+let fails = 0;
+let failedUrls = new Set<string>(["hithere.js"]);
+
 while(queue.length > 0) {
     const url = queue.shift()!;
-    process.stdout.write(`\x1b[2K\rDownloading assets (${processed + 1} ${url})`);
+    
+    // Log progress
+    if(clearLine) process.stdout.write("\x1b[2K\r");
+    process.stdout.write(`Downloading assets (${processed + 1} ${url})`);
+    clearLine = true;
 
     const res = await fetch(assets + url);
+    
+    // Make sure the response is good
+    const contentType = res.headers.get("content-type");
+    if(!res.ok || !contentType.includes("application/javascript")) {
+        clearLine = false;
+        console.log("Failed to fetch asset:", url);
+
+        failedUrls.add(url);
+        queue.push(url);
+        fails++;
+        
+        if(fails <= 5) {
+            // Wait 5 seconds and try again
+            await new Promise((resolve) => setTimeout(resolve, 5000));
+            continue;
+        }
+        
+        // Abort after 5 failed attempts
+        console.error("Failed to fetch assets 5 times, aborting");
+        const failedList = Array.from(failedUrls).map((url) => `* ${url}`).join("\n");
+
+        await sendEmbed({
+            title: "Failed to fetch Gimkit's bundle after five tries",
+            description: `The following assets could not be fetched:\n${failedList}`,
+            color: 14948890,
+            author: {
+                name: "Gimkit Bundle Tracker",
+                url: "https://github.com/Gimloader/bundle-tracker"
+            }
+        });
+        process.exit(1);
+
+    }
+
     const text = await res.text();
 
     // Add on any new assets
