@@ -116,8 +116,8 @@ const q = t => e.jsxs(G, {
   border: 4px solid ${P.White};
   background-image: linear-gradient(
     179deg,
-    rgb(248 159 87) 9.2%,
-    rgb(166 14 13) 103.9%
+    rgb(222 193 139) 9.2%,
+    rgb(143 82 35) 103.9%
   );
   @media (max-width: 820px) {
     text-align: center;
