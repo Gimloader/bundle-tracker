@@ -87,7 +87,7 @@ import "./mathlive.min.js";
 import "./index-8.js";
 import "./DownOutlined.js";
 import "./Tooltip.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./inheritsLoose.js";
 import "./index-13.js";
 import "./useForm.js";

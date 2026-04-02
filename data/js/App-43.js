@@ -39,7 +39,7 @@ import "./AccessibleAnchor.js";
 import "./OwnsSeasonTicket.js";
 import "./index-2.js";
 import "./CircularProgress.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./inheritsLoose.js";
 import "./useQuery.js";
 import "./mobxreact.esm.js";

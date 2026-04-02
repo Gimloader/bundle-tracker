@@ -97,7 +97,7 @@ import {
     v as Mt,
     x as Ot,
     S as se
-} from "./capitalize.js";
+} from "./clsx.m.js";
 import {
     f as At,
     G as Et,

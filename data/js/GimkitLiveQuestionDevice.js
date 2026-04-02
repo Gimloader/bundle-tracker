@@ -22,7 +22,7 @@ import "./mobxreact.esm.js";
 import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./inheritsLoose.js";
 import "./Tooltip.js";
 import "./howler.js";

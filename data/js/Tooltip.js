@@ -18,7 +18,7 @@ import {
     c as ke,
     e as ar,
     a as sr
-} from "./capitalize.js";
+} from "./clsx.m.js";
 import {
     _ as ur
 } from "./inheritsLoose.js";

@@ -94,7 +94,7 @@ import "./useWillUnmount.js";
 import "./use-motion-value.js";
 import "./use-transform.js";
 import "./CircularProgress.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./inheritsLoose.js";
 import "./index-17.js";
 import "./use-force-update.js";
@@ -121,6 +121,7 @@ import "./index-7.js";
 import "./DownOutlined.js";
 import "./LoadGoogleFontAfterSceneStart.js";
 import "./useItemAmount.js";
+import "./clsx.js";
 import "./index-29.js";
 import "./move.js";
 const R = o => {
@@ -550,7 +551,7 @@ const R = o => {
   border-radius: 6px;
   margin-bottom: 20px;
 `,
-    Fo = y(o => {
+    Wo = y(o => {
         var s, t;
         const i = (t = (s = o.hooks) == null ? void 0 : s.connections) == null ? void 0 : t.find(l => l.option === o.option.key),
             n = () => {
@@ -590,6 +591,6 @@ const R = o => {
         })
     });
 export {
-    Fo as
+    Wo as
     default
 };

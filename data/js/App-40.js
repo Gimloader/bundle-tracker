@@ -75,7 +75,7 @@ import "./GimkitLiveQuestion.js";
 import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./Tooltip.js";
 import "./index-9.js";
 import "./index-23.js";

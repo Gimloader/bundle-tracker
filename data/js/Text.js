@@ -32,7 +32,7 @@ import {
     w as je,
     c as se,
     a as Ce
-} from "./capitalize.js";
+} from "./clsx.m.js";
 import {
     c as wn,
     s as xn,

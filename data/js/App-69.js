@@ -56,7 +56,7 @@ import "./inheritsLoose.js";
 import "./FontAwesomeIcon.js";
 import "./Button.js";
 import "./confetti.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 const l = (s, i) => {
         const o = s % i;
         return [Math.floor(s / i), o]

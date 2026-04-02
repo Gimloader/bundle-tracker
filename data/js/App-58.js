@@ -68,7 +68,7 @@ import "./use-transform.js";
 import "./index-6.js";
 import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./inheritsLoose.js";
 import "./index-17.js";
 import "./use-force-update.js";
@@ -93,6 +93,7 @@ import "./FillRemainingSpace.js";
 import "./index-24.js";
 import "./index-20.js";
 import "./index-22.js";
+import "./clsx.js";
 const M = {
         emptyMessage: "Nothing in here...yet! End the game and modify this device to include your content."
     },
@@ -253,7 +254,7 @@ const d = .3,
             })
         })
     },
-    ae = h(R),
+    se = h(R),
     T = r(v).attrs({
         className: "maxAll"
     })`
@@ -264,6 +265,6 @@ const d = .3,
         className: "maxAll"
     })``;
 export {
-    d as ANIMATION_DURATION, ae as
+    d as ANIMATION_DURATION, se as
     default
 };

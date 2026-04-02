@@ -69,7 +69,7 @@ import "./TrackEvent.js";
 import "./InfiniteScroller.js";
 import "./index.es.js";
 import "./CircularProgress.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./inheritsLoose.js";
 import "./Paper.js";
 import "./RedirectToHomepage.js";

@@ -71,7 +71,7 @@ import "./index-5.js";
 import "./move.js";
 import "./polished.esm.js";
 import "./inheritsLoose.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 
 function Ce(e) {
     var r;

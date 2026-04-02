@@ -7,7 +7,7 @@ import {
     w as C,
     c as D,
     a as N
-} from "./capitalize.js";
+} from "./clsx.m.js";
 var a = 44,
     z = function(e) {
         return {

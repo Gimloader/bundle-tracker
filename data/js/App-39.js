@@ -34,7 +34,7 @@ import "./GimkitLiveQuestion.js";
 import "./mobxreact.esm.js";
 import "./Text.js";
 import "./LazyLatexRenderer.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./Tooltip.js";
 import "./howler.js";
 import "./index-1.js";

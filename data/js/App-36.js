@@ -27,7 +27,7 @@ import {
 import {
     P as W
 } from "./Paper.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./inheritsLoose.js";
 const S = () => e.jsxs("div", {
         children: [e.jsx("div", {

@@ -72,7 +72,7 @@ import "./TrackEvent.js";
 import "./TrackPostHogEvent.js";
 import "./SeasonTicketInlineUpsell.js";
 import "./CircularProgress.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./confetti.js";
 const q = t => e.jsxs(G, {
         children: [e.jsx(Q, {}), e.jsxs(U, {

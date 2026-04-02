@@ -50,7 +50,7 @@ import "./colors.js";
 import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./Tooltip.js";
 import "./index-10.js";
 import "./move.js";

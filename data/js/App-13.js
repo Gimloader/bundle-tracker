@@ -179,7 +179,7 @@ import "./LazyLatexRenderer.js";
 import "./index-10.js";
 import "./move.js";
 import "./Tooltip.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./inheritsLoose.js";
 import "./ContinueButton.js";
 import "./DownOutlined.js";

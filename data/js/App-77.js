@@ -111,7 +111,7 @@ import "./use-motion-value.js";
 import "./use-transform.js";
 import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./inheritsLoose.js";
 import "./index-17.js";
 import "./use-force-update.js";
@@ -145,6 +145,7 @@ import "./index-28.js";
 import "./index-7.js";
 import "./LoadGoogleFontAfterSceneStart.js";
 import "./useItemAmount.js";
+import "./clsx.js";
 import "./EditOutlined.js";
 import "./styleChecker.js";
 import "./CopyOutlined.js";
@@ -888,7 +889,7 @@ const Qe = R(je.div).attrs({
             })
         })
     },
-    Jr = le(e => {
+    Wr = le(e => {
         const {
             me: {
                 editing: {
@@ -1005,6 +1006,6 @@ const Qe = R(je.div).attrs({
         })
     });
 export {
-    Jr as
+    Wr as
     default
 };

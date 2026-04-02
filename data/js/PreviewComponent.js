@@ -24,7 +24,7 @@ import "./motion.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./use-motion-value.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./Tooltip.js";
 import "./howler.js";
 import "./GetAssetPath.js";

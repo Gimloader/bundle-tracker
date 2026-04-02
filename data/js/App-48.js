@@ -121,7 +121,7 @@ import "./use-motion-value.js";
 import "./use-transform.js";
 import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";

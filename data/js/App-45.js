@@ -75,7 +75,7 @@ import "./context.js";
 import "./NavigateTo.js";
 import "./polished.esm.js";
 import "./inheritsLoose.js";
-import "./capitalize.js";
+import "./clsx.m.js";
 const ie = s => {
         const [i, n, m] = $(!1), {
             info: c
