@@ -2,7 +2,7 @@ import {
     j as t,
     c1 as l,
     U as c,
-    b as d,
+    d,
     F as a,
     c as g,
     D as x,
@@ -12,8 +12,8 @@ import {
     S as C,
     bA as G,
     B as j,
-    e as b,
-    c2 as y
+    c2 as b,
+    e as y
 } from "./_index.js";
 import {
     c as w
@@ -199,7 +199,7 @@ const $ = d(g)`
     }),
     E = d.div`
   min-height: 100%;
-  background-color: ${b.Snow};
+  background-color: ${y.Snow};
 `,
     L = d.div`
   display: flex;
@@ -256,7 +256,7 @@ class je extends u.Component {
                 success: i => {
                     n.success({
                         title: "Success!",
-                        content: `Gift card redeemed! ${y(i.value/100)} has been added to your account balance.`
+                        content: `Gift card redeemed! ${b(i.value/100)} has been added to your account balance.`
                     }), this.hideRedemptionModal(), this.fetchPurchasedAndRedeemedGiftCards(), this.setState({
                         cardCode: ""
                     })

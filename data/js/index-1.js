@@ -27,13 +27,13 @@ var f = [],
 var d = function(e) {
         return Object.freeze(e)
     },
-    fe = (function() {
+    fe = function() {
         function e(t, r) {
             this.inlineSize = t, this.blockSize = r, d(this)
         }
         return e
-    })(),
-    G = (function() {
+    }(),
+    G = function() {
         function e(t, r, n, i) {
             return this.x = t, this.y = r, this.width = n, this.height = i, this.top = this.y, this.left = this.x, this.bottom = this.top + this.height, this.right = this.left + this.width, d(this)
         }
@@ -60,7 +60,7 @@ var d = function(e) {
         }, e.fromRect = function(t) {
             return new e(t.x, t.y, t.width, t.height)
         }, e
-    })(),
+    }(),
     D = function(e) {
         return e instanceof SVGElement && "getBBox" in e
     },
@@ -165,13 +165,13 @@ var d = function(e) {
                 return s
         }
     },
-    be = (function() {
+    be = function() {
         function e(t) {
             var r = J(t);
             this.target = t, this.contentRect = r.contentRect, this.borderBoxSize = d([r.borderBoxSize]), this.contentBoxSize = d([r.contentBoxSize]), this.devicePixelContentBoxSize = d([r.devicePixelContentBoxSize])
         }
         return e
-    })(),
+    }(),
     K = function(e) {
         if (U(e)) return 1 / 0;
         for (var t = 0, r = e.parentNode; r;) t += 1, r = r.parentNode;
@@ -252,7 +252,7 @@ var d = function(e) {
         return e === void 0 && (e = 0), Date.now() + e
     },
     B = !1,
-    me = (function() {
+    me = function() {
         function e() {
             var t = this;
             this.stopped = !0, this.listener = function() {
@@ -293,7 +293,7 @@ var d = function(e) {
                 return p.removeEventListener(r, t.listener, !0)
             }), this.stopped = !0)
         }, e
-    })(),
+    }(),
     k = new me,
     q = function(e) {
         !R && e > 0 && k.start(), R += e, !R && k.stop()
@@ -301,7 +301,7 @@ var d = function(e) {
     ye = function(e) {
         return !D(e) && !de(e) && getComputedStyle(e).display === "inline"
     },
-    Te = (function() {
+    Te = function() {
         function e(t, r) {
             this.target = t, this.observedBox = r || g.CONTENT_BOX, this.lastReportedSize = {
                 inlineSize: 0,
@@ -312,20 +312,20 @@ var d = function(e) {
             var t = Y(this.target, this.observedBox, !0);
             return ye(this.target) && (this.lastReportedSize = t), this.lastReportedSize.inlineSize !== t.inlineSize || this.lastReportedSize.blockSize !== t.blockSize
         }, e
-    })(),
-    Be = (function() {
+    }(),
+    Be = function() {
         function e(t, r) {
             this.activeTargets = [], this.skippedTargets = [], this.observationTargets = [], this.observer = t, this.callback = r
         }
         return e
-    })(),
+    }(),
     w = new WeakMap,
     $ = function(e, t) {
         for (var r = 0; r < e.length; r += 1)
             if (e[r].target === t) return r;
         return -1
     },
-    O = (function() {
+    O = function() {
         function e() {}
         return e.connect = function(t, r) {
             var n = new Be(t, r);
@@ -346,8 +346,8 @@ var d = function(e) {
                 return r.unobserve(t, i.target)
             }), n.activeTargets.splice(0, n.activeTargets.length)
         }, e
-    })(),
-    Se = (function() {
+    }(),
+    Se = function() {
         function e(t) {
             if (arguments.length === 0) throw new TypeError("Failed to construct 'ResizeObserver': 1 argument required, but only 0 present.");
             if (typeof t != "function") throw new TypeError("Failed to construct 'ResizeObserver': The callback provided as parameter 1 is not a function.");
@@ -366,7 +366,7 @@ var d = function(e) {
         }, e.toString = function() {
             return "function ResizeObserver () { [polyfill code] }"
         }, e
-    })();
+    }();
 const Z = ae[typeof document < "u" && document.createElement !== void 0 ? "useLayoutEffect" : "useEffect"],
     Ce = e => {
         const t = C.useRef(e);

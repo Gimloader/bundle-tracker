@@ -4,9 +4,9 @@ import {
     _ as f,
     j as e,
     e as a,
-    b as l,
+    d as l,
     U as C,
-    B as h,
+    B as d,
     D as S,
     c as k
 } from "./_index.js";
@@ -29,7 +29,7 @@ import {
     T as r
 } from "./index-5.js";
 import {
-    T as d
+    T as h
 } from "./index-12.js";
 import {
     R as P
@@ -205,7 +205,7 @@ class ot extends n.Component {
                             checked: j
                         }), s.source === "ai" && e.jsx(r, {
                             title: "This question was generated with AI",
-                            children: e.jsx(d, {
+                            children: e.jsx(h, {
                                 color: "magenta",
                                 style: {
                                     marginRight: 10,
@@ -224,7 +224,7 @@ class ot extends n.Component {
                             customImageSize: 72
                         }), s.audio && e.jsx(r, {
                             title: "Play Audio",
-                            children: e.jsx(h, {
+                            children: e.jsx(d, {
                                 style: {
                                     marginLeft: m ? 0 : 10,
                                     marginRight: m ? 10 : 0
@@ -237,7 +237,7 @@ class ot extends n.Component {
                         }), m && e.jsx(u, {
                             text: "Audio Only Question",
                             customTextColor: "#bdbdbd"
-                        }), s.type === v.textInput && e.jsx(d, {
+                        }), s.type === v.textInput && e.jsx(h, {
                             color: "magenta",
                             style: {
                                 marginLeft: 10,
@@ -253,7 +253,7 @@ class ot extends n.Component {
                         children: [e.jsx(r, {
                             title: "Copy",
                             placement: "bottom",
-                            children: e.jsx(h, {
+                            children: e.jsx(d, {
                                 shape: "circle",
                                 icon: e.jsx(P, {}),
                                 onClick: this.props.onCopyClicked,
@@ -265,7 +265,7 @@ class ot extends n.Component {
                         }), e.jsx(r, {
                             title: "Edit",
                             placement: "bottom",
-                            children: e.jsx(h, {
+                            children: e.jsx(d, {
                                 shape: "circle",
                                 icon: e.jsx($, {}),
                                 size: "small",
@@ -302,7 +302,7 @@ class ot extends n.Component {
                                 customFontSize: 18 * x,
                                 customFontWeight: 400,
                                 blockOutsideClicks: !0
-                            }), o.image || o.latex ? e.jsx(d, {
+                            }), o.image || o.latex ? e.jsx(h, {
                                 color: o.correct ? "green" : "red",
                                 style: {
                                     marginLeft: o.image ? 2 : 12

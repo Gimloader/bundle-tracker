@@ -1,6 +1,6 @@
 import {
     e as o,
-    b as t,
+    d as t,
     F as a
 } from "./_index.js";
 const s = t.div.attrs({
