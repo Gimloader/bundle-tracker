@@ -5,7 +5,7 @@ import {
     r as l,
     c as b,
     e as h,
-    d as a,
+    b as a,
     a as d,
     T as w,
     a4 as k,
@@ -16,8 +16,8 @@ import {
     C as v
 } from "./CircularProgress.js";
 import {
-    l as T
-} from "./index-21.js";
+    C as T
+} from "./index-22.js";
 import {
     A as C
 } from "./AccessibleAnchor.js";
@@ -91,15 +91,15 @@ const S = () => e.jsxs("div", {
                     children: o.test.description
                 }) : null, r ? e.jsxs(e.Fragment, {
                     children: [e.jsxs(B, {
-                        children: [e.jsx(p, {
+                        children: [e.jsx(u, {
                             children: "What It Means"
-                        }), e.jsx(u, {
+                        }), e.jsx(p, {
                             children: o.test.whatItMeans
                         })]
                     }), e.jsxs($, {
-                        children: [e.jsx(p, {
+                        children: [e.jsx(u, {
                             children: "How To Fix"
-                        }), e.jsx(u, {
+                        }), e.jsx(p, {
                             children: o.test.howToFix
                         })]
                     })]
@@ -134,13 +134,13 @@ const S = () => e.jsxs("div", {
   border-radius: 4px;
   margin-top: 10px;
 `,
-    p = a.div`
+    u = a.div`
   font-style: italic;
   font-weight: ${m.Bold};
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
 `,
-    u = a.div`
+    p = a.div`
   margin-top: 5px;
 `,
     $ = a.div.attrs({
@@ -165,7 +165,7 @@ const S = () => e.jsxs("div", {
         },
         children: o.children
     }),
-    E = {
+    N = {
         name: "Firewall check on *.gimkitconnect.com",
         whatItMeans: e.jsx("span", {
             children: "You won't be able to connect to our game servers. This will prevent you from hosting or participating in games."
@@ -195,7 +195,7 @@ const S = () => e.jsxs("div", {
             })
         }
     },
-    N = {
+    Y = {
         name: "WebSocket connection to *.gimkitconnect.com",
         description: "This test takes 60 seconds to complete.",
         whatItMeans: e.jsx("span", {
@@ -228,7 +228,7 @@ const S = () => e.jsxs("div", {
                     source: "map"
                 },
                 success: s => {
-                    s && s.url ? new T.Client(s.url.replace("http", "ws")).create("ConnectionTest").then(i => {
+                    s && s.url ? new T(s.url.replace("http", "ws")).create("ConnectionTest").then(i => {
                         let r = !1;
                         setTimeout(() => {
                             r || (r = !0, o())
@@ -245,7 +245,7 @@ const S = () => e.jsxs("div", {
             })
         }
     },
-    Y = {
+    D = {
         name: "Firewall check on media.gimkit.com",
         whatItMeans: e.jsx("span", {
             children: "You won't be able to view uploaded images & audio."
@@ -263,7 +263,7 @@ const S = () => e.jsxs("div", {
             })
         }
     },
-    D = {
+    E = {
         name: "Firewall check on images.pexels.com",
         whatItMeans: e.jsx("span", {
             children: "You won't be able to view cover photos for kits."
@@ -304,7 +304,7 @@ const S = () => e.jsxs("div", {
             })() ? o(): t()
         }
     },
-    x = [N, E, Y, H, D],
+    x = [Y, N, D, H, E],
     Z = () => {
         const [o, t] = l.useState(0), s = () => t(n => n + 1);
         return e.jsxs(U, {

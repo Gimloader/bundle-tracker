@@ -1,9 +1,9 @@
 import {
-    u as v,
+    u as b,
     j as t,
     D as j,
-    C as b,
-    d as n,
+    C as v,
+    b as n,
     F as x,
     f as I,
     B as Q,
@@ -61,7 +61,7 @@ const a = {
   }
 `,
     R = e => {
-        const [o, l, d] = v(!1), u = () => {
+        const [o, l, d] = b(!1), u = () => {
             if (!I()) {
                 l();
                 return
@@ -93,7 +93,7 @@ const a = {
                     title: "Export reports with Pro",
                     description: t.jsxs(t.Fragment, {
                         children: ["To export a game report to a spreadsheet file,", " ", t.jsxs("b", {
-                            children: ["upgrade to ", b, " Pro."]
+                            children: ["upgrade to ", v, " Pro."]
                         })]
                     })
                 },

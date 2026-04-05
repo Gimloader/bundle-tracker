@@ -30,11 +30,11 @@ import {
     I as Oe,
     i as q,
     j as e,
-    aa as mt,
     F as y,
-    aT as gt,
+    aT as mt,
+    aa as gt,
     e as k,
-    d as W,
+    b as W,
     a as $,
     W as ge,
     l as D,
@@ -53,7 +53,7 @@ import {
     aW as $e,
     y as yt,
     f as Ce,
-    b as vt,
+    d as vt,
     V as De,
     ac as bt,
     ar as jt,
@@ -551,6 +551,9 @@ const en = i.forwardRef((t, n) => {
                         [`${n}-header-text`]: {
                             flex: "none",
                             cursor: "pointer"
+                        },
+                        [`${n}-expand-icon`]: {
+                            cursor: "pointer"
                         }
                     },
                     [`${n}-collapsible-icon`]: {
@@ -856,11 +859,11 @@ const hn = U(() => {
                 onClick: () => a(A.support)
             }), q() ? null : e.jsxs(xn, {
                 children: ["Looking to manage a group license?", e.jsx("br", {}), e.jsx("br", {}), "We moved license management to a dedicated page:", e.jsx("br", {}), e.jsx("br", {}), e.jsxs(te, {
-                    to: gt,
+                    to: mt,
                     style: {
                         fontWeight: y.Bold
                     },
-                    children: [mt(), "/groups"]
+                    children: [gt(), "/groups"]
                 })]
             })]
         })
@@ -1403,10 +1406,10 @@ const hn = U(() => {
     {
         Option: Bn
     } = he,
-    En = Lt(),
+    En = Gt(),
     An = () => {
         const [t, n] = i.useState(Dt(localStorage.getItem(Y.language)) || "English"), a = s => {
-            const o = Gt(s);
+            const o = Lt(s);
             localStorage.setItem(Y.language, o), n(s)
         };
         return e.jsx(se, {

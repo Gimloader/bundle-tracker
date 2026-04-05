@@ -1,6 +1,6 @@
 import {
     j as t,
-    d as i,
+    b as i,
     U as r,
     i as a
 } from "./_index.js";
@@ -11,10 +11,10 @@ import {
     G as n
 } from "./GetAssetPath.js";
 import {
-    S as d
+    S as l
 } from "./SeasonTicketName.js";
 import {
-    C as l
+    C as d
 } from "./Names.js";
 import {
     S as u
@@ -86,7 +86,7 @@ const m = e => t.jsxs(p, {
     y = [{
         icon: "vip",
         title: "Exclusive Cosmetics",
-        description: `Instantly earn over 20 exclusive cosmetics, only available by purchasing this season's ${d.singularName}. Cosmetics stay in your Locker after the season ends.`
+        description: `Instantly earn over 20 exclusive cosmetics, only available by purchasing this season's ${l.singularName}. Cosmetics stay in your Locker after the season ends.`
     }, {
         icon: "rise",
         title: "Increased XP Limit",
@@ -98,7 +98,7 @@ const m = e => t.jsxs(p, {
     }, {
         icon: "megaphone",
         title: "Free Creative Publishing",
-        description: `Publish your maps to the world without paying 1,000 ${l.currency}!`
+        description: `Publish your maps to the world without paying 1,000 ${d.currency}!`
     }, {
         icon: "idea",
         title: "Creative Slots",

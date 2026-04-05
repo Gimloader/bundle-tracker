@@ -96,7 +96,7 @@ function v(r) {
         value: parseFloat(r)
     } : (console.warn('scrollThreshold format is invalid. Valid formats: "120px", "50%"...'), m) : (console.warn("scrollThreshold should be string or number"), m)
 }
-var D = function(r) {
+var D = (function(r) {
     S(n, r);
 
     function n(t) {
@@ -191,7 +191,7 @@ var D = function(r) {
             }
         }, this.state.pullToRefreshThresholdBreached ? this.props.releaseToRefreshContent : this.props.pullDownToRefreshContent)), this.props.children, !this.state.showLoader && !o && this.props.hasMore && this.props.loader, this.state.showLoader && this.props.hasMore && this.props.loader, !this.props.hasMore && this.props.endMessage))
     }, n
-}(y.Component);
+})(y.Component);
 export {
     D as I
 };

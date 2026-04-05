@@ -3,7 +3,7 @@ import {
     j as t,
     F as b,
     D as w,
-    d as i,
+    b as i,
     l as y,
     a1 as r,
     t as j,

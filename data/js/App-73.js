@@ -1,17 +1,17 @@
 import {
+    b as v,
     j as t,
-    d as v,
     U as m,
     aa as k,
     B as c,
     u as w,
-    b as T,
+    d as T,
     aW as p,
     t as d,
     M as u,
     e as C,
-    b5 as L,
-    F as S
+    F as L,
+    b5 as S
 } from "./_index.js";
 import {
     c as M,
@@ -51,26 +51,26 @@ import "./MapStyle.js";
 import "./playSound.js";
 import "./howler.js";
 import "./mobxreact.esm.js";
-import "./index-21.js";
+import "./index-22.js";
 import "./QuizTypes.js";
 import "./TutorialConsts.js";
 import "./ActionButton.js";
-import "./index-18.js";
+import "./index-19.js";
 import "./FontAwesomeIcon.js";
 import "./Centered.js";
 import "./CapitalizeFirstLetter.js";
 import "./motion.js";
 import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
+import "./index-21.js";
+import "./index-23.js";
 import "./index-1.js";
 import "./progress.js";
 import "./ElementIds.js";
 import "./SeasonTicketName.js";
 import "./useQuery.js";
 import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
+import "./util.js";
+import "./index-17.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
@@ -79,7 +79,7 @@ import "./use-transform.js";
 import "./index-6.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
-import "./index-17.js";
+import "./index-18.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
 import "./Text.js";
@@ -87,7 +87,7 @@ import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
 import "./index-9.js";
-import "./index-23.js";
+import "./index-24.js";
 import "./useIntervalWhen.js";
 import "./index-10.js";
 import "./move.js";
@@ -97,7 +97,7 @@ import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
-import "./index-24.js";
+import "./index-25.js";
 const a = v.div.attrs({
         className: "maxWidth"
     })`
@@ -270,9 +270,9 @@ const a = v.div.attrs({
         }), t.jsx("div", {
             style: {
                 fontSize: 32,
-                fontWeight: S.Black
+                fontWeight: L.Black
             },
-            children: L(i.value)
+            children: S(i.value)
         })]
     }),
     I = i => {

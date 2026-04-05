@@ -7,7 +7,7 @@ import {
     U as F,
     e as j,
     B as w,
-    d as c,
+    b as c,
     b7 as D,
     r as h,
     M as b,
