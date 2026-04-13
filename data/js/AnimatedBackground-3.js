@@ -1,6 +1,6 @@
 import {
     j as i,
-    d as t
+    b as t
 } from "./_index.js";
 const s = a => i.jsxs(e, {
         children: [i.jsx("div", {

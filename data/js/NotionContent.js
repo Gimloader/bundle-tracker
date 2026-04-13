@@ -4,10 +4,10 @@ import {
     dg as gn,
     x as M,
     j as n,
-    dZ as Vt,
-    dI as Ue,
+    d_ as Vt,
+    dJ as Ue,
     a as yn,
-    d as xn,
+    b as xn,
     A as bn
 } from "./_index.js";
 
@@ -657,17 +657,17 @@ function oo() {
             u = l === void 0 ? "tag" : l,
             c = {},
             p = function(h) {
-                c[h] = function(C) {
+                c[h] = (function(C) {
                     var y, d;
                     return C === void 0 && (C = {}), s ? (y = {}, y[u] = h, y[s] = C, y) : e({}, C, (d = {}, d[u] = h, d))
-                }
+                })
             };
         for (var v in o) p(v);
         var m = {},
             b = function(h) {
-                m[h] = function(C) {
+                m[h] = (function(C) {
                     return C[u] === h
-                }
+                })
             };
         for (var v in o) b(v);
 
@@ -710,7 +710,7 @@ function oo() {
     return je.unionize = t, je.ofType = function() {}, je.default = t, je
 }
 var Me = oo(),
-    Qt = function(e) {
+    Qt = (function(e) {
         var t = e.decode,
             o = t === void 0 ? !0 : t,
             i = e.crossOrigin,
@@ -723,7 +723,7 @@ var Me = oo(),
                 }, u.onerror = l, u.src = a
             })
         }
-    };
+    });
 
 function Ot(e, t) {
     var o = Object.keys(e);

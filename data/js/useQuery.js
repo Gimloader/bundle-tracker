@@ -1,19 +1,19 @@
 import {
-    cv as V,
-    cw as x,
-    cx as K,
-    cy as D,
-    cz as P,
-    cA as z,
-    cB as G,
-    cC as H,
-    cD as k,
-    cE as N,
-    cF as b,
-    bI as W,
-    r as S,
-    cG as J,
-    cH as X
+    cu as V,
+    cv as O,
+    cw as K,
+    cx as D,
+    cy as P,
+    cz as z,
+    cA as G,
+    cB as N,
+    cC as k,
+    cD as W,
+    cE as b,
+    bJ as H,
+    r as m,
+    cF as J,
+    cG as X
 } from "./_index.js";
 class Y extends V {
     constructor(e, t) {
@@ -29,10 +29,10 @@ class Y extends V {
         this.hasListeners() || this.destroy()
     }
     shouldFetchOnReconnect() {
-        return F(this.currentQuery, this.options, this.options.refetchOnReconnect)
+        return T(this.currentQuery, this.options, this.options.refetchOnReconnect)
     }
     shouldFetchOnWindowFocus() {
-        return F(this.currentQuery, this.options, this.options.refetchOnWindowFocus)
+        return T(this.currentQuery, this.options, this.options.refetchOnWindowFocus)
     }
     destroy() {
         this.listeners = new Set, this.clearStaleTimeout(), this.clearRefetchInterval(), this.currentQuery.removeObserver(this)
@@ -40,7 +40,7 @@ class Y extends V {
     setOptions(e, t) {
         const s = this.options,
             c = this.currentQuery;
-        if (this.options = this.client.defaultQueryOptions(e), x(s, this.options) || this.client.getQueryCache().notify({
+        if (this.options = this.client.defaultQueryOptions(e), O(s, this.options) || this.client.getQueryCache().notify({
                 type: "observerOptionsUpdated",
                 query: this.currentQuery,
                 observer: this
@@ -143,7 +143,7 @@ class Y extends V {
         let {
             dataUpdatedAt: o,
             error: R,
-            errorUpdatedAt: m,
+            errorUpdatedAt: S,
             fetchStatus: h,
             status: d
         } = i, U = !1, w = !1, v;
@@ -151,7 +151,7 @@ class Y extends V {
             const p = this.hasListeners(),
                 C = !p && A(e, t),
                 q = p && L(e, s, t, c);
-            (C || q) && (h = H(e.options.networkMode) ? "fetching" : "paused", o || (d = "loading")), t._optimisticResults === "isRestoring" && (h = "idle")
+            (C || q) && (h = N(e.options.networkMode) ? "fetching" : "paused", o || (d = "loading")), t._optimisticResults === "isRestoring" && (h = "idle")
         }
         if (t.keepPreviousData && !i.dataUpdatedAt && f != null && f.isSuccess && d !== "error") v = f.data, o = f.dataUpdatedAt, d = f.status, U = !0;
         else if (t.select && typeof i.data < "u")
@@ -171,7 +171,7 @@ class Y extends V {
             }
             typeof p < "u" && (d = "success", v = k(n == null ? void 0 : n.data, p, t), w = !0)
         }
-        this.selectError && (R = this.selectError, v = this.selectResult, m = Date.now(), d = "error");
+        this.selectError && (R = this.selectError, v = this.selectResult, S = Date.now(), d = "error");
         const E = h === "fetching",
             Q = d === "loading",
             g = d === "error";
@@ -185,7 +185,7 @@ class Y extends V {
             data: v,
             dataUpdatedAt: o,
             error: R,
-            errorUpdatedAt: m,
+            errorUpdatedAt: S,
             failureCount: i.fetchFailureCount,
             failureReason: i.fetchFailureReason,
             errorUpdateCount: i.errorUpdateCount,
@@ -198,7 +198,7 @@ class Y extends V {
             isPlaceholderData: w,
             isPreviousData: U,
             isRefetchError: g && i.dataUpdatedAt !== 0,
-            isStale: T(e, t),
+            isStale: F(e, t),
             refetch: this.refetch,
             remove: this.remove
         }
@@ -206,7 +206,7 @@ class Y extends V {
     updateResult(e) {
         const t = this.currentResult,
             s = this.createResult(this.currentQuery, this.options);
-        if (this.currentResultState = this.currentQuery.state, this.currentResultOptions = this.options, x(s, t)) return;
+        if (this.currentResultState = this.currentQuery.state, this.currentResultOptions = this.options, O(s, t)) return;
         this.currentResult = s;
         const c = {
                 cache: !0
@@ -236,7 +236,7 @@ class Y extends V {
     }
     onQueryUpdate(e) {
         const t = {};
-        e.type === "success" ? t.onSuccess = !e.manual : e.type === "error" && !N(e.error) && (t.onError = !0), this.updateResult(t), this.hasListeners() && this.updateTimers()
+        e.type === "success" ? t.onSuccess = !e.manual : e.type === "error" && !W(e.error) && (t.onError = !0), this.updateResult(t), this.hasListeners() && this.updateTimers()
     }
     notify(e) {
         b.batch(() => {
@@ -264,32 +264,32 @@ function Z(r, e) {
 }
 
 function A(r, e) {
-    return Z(r, e) || r.state.dataUpdatedAt > 0 && F(r, e, e.refetchOnMount)
+    return Z(r, e) || r.state.dataUpdatedAt > 0 && T(r, e, e.refetchOnMount)
 }
 
-function F(r, e, t) {
+function T(r, e, t) {
     if (e.enabled !== !1) {
         const s = typeof t == "function" ? t(r) : t;
-        return s === "always" || s !== !1 && T(r, e)
+        return s === "always" || s !== !1 && F(r, e)
     }
     return !1
 }
 
 function L(r, e, t, s) {
-    return t.enabled !== !1 && (r !== e || s.enabled === !1) && (!t.suspense || r.state.status !== "error") && T(r, t)
+    return t.enabled !== !1 && (r !== e || s.enabled === !1) && (!t.suspense || r.state.status !== "error") && F(r, t)
 }
 
-function T(r, e) {
+function F(r, e) {
     return r.isStaleByTime(e.staleTime)
 }
 
 function _(r, e, t) {
-    return t.keepPreviousData ? !1 : t.placeholderData !== void 0 ? e.isPlaceholderData : !x(r.getCurrentResult(), e)
+    return t.keepPreviousData ? !1 : t.placeholderData !== void 0 ? e.isPlaceholderData : !O(r.getCurrentResult(), e)
 }
 var I = {
         exports: {}
     },
-    O = {};
+    x = {};
 /**
  * @license React
  * use-sync-external-store-shim.production.js
@@ -302,9 +302,9 @@ var I = {
 var M;
 
 function $() {
-    if (M) return O;
+    if (M) return x;
     M = 1;
-    var r = W();
+    var r = H();
 
     function e(i, o) {
         return i === o && (i !== 0 || 1 / i === 1 / o) || i !== i && o !== o
@@ -317,14 +317,14 @@ function $() {
 
     function a(i, o) {
         var R = o(),
-            m = s({
+            S = s({
                 inst: {
                     value: R,
                     getSnapshot: o
                 }
             }),
-            h = m[0].inst,
-            d = m[1];
+            h = S[0].inst,
+            d = S[1];
         return n(function() {
             h.value = R, h.getSnapshot = o, l(h) && d({
                 inst: h
@@ -355,7 +355,7 @@ function $() {
         return o()
     }
     var f = typeof window > "u" || typeof window.document > "u" || typeof window.document.createElement > "u" ? y : a;
-    return O.useSyncExternalStore = r.useSyncExternalStore !== void 0 ? r.useSyncExternalStore : f, O
+    return x.useSyncExternalStore = r.useSyncExternalStore !== void 0 ? r.useSyncExternalStore : f, x
 }
 var B;
 
@@ -364,8 +364,8 @@ function ee() {
 }
 var te = ee();
 const re = te.useSyncExternalStore,
-    j = S.createContext(!1),
-    se = () => S.useContext(j);
+    j = m.createContext(!1),
+    se = () => m.useContext(j);
 j.Provider;
 
 function ne() {
@@ -380,8 +380,8 @@ function ne() {
         isReset: () => r
     }
 }
-const ie = S.createContext(ne()),
-    ue = () => S.useContext(ie);
+const ie = m.createContext(ne()),
+    ue = () => m.useContext(ie);
 
 function ce(r, e) {
     return typeof r == "function" ? r(...e) : !!r
@@ -390,7 +390,7 @@ const ae = (r, e) => {
         (r.suspense || r.useErrorBoundary) && (e.isReset() || (r.retryOnMount = !1))
     },
     oe = r => {
-        S.useEffect(() => {
+        m.useEffect(() => {
             r.clearReset()
         }, [r])
     },
@@ -401,7 +401,7 @@ const ae = (r, e) => {
         query: s
     }) => r.isError && !e.isReset() && !r.isFetching && ce(t, [r.error, s]),
     he = r => {
-        r.suspense && typeof r.staleTime != "number" && (r.staleTime = 1e3)
+        r.suspense && (typeof r.staleTime != "number" && (r.staleTime = 1e3), typeof r.cacheTime == "number" && (r.cacheTime = Math.max(r.cacheTime, 1e3)))
     },
     de = (r, e) => r.isLoading && r.isFetching && !e,
     fe = (r, e, t) => (r == null ? void 0 : r.suspense) && de(e, t),
@@ -421,11 +421,11 @@ function ye(r, e) {
         c = ue(),
         n = t.defaultQueryOptions(r);
     n._optimisticResults = s ? "isRestoring" : "optimistic", n.onError && (n.onError = b.batchCalls(n.onError)), n.onSuccess && (n.onSuccess = b.batchCalls(n.onSuccess)), n.onSettled && (n.onSettled = b.batchCalls(n.onSettled)), he(n), ae(n, c), oe(c);
-    const [u] = S.useState(() => new e(t, n)), a = u.getOptimisticResult(n);
-    if (re(S.useCallback(l => {
+    const [u] = m.useState(() => new e(t, n)), a = u.getOptimisticResult(n);
+    if (re(m.useCallback(l => {
             const y = s ? () => {} : u.subscribe(b.batchCalls(l));
             return u.updateResult(), y
-        }, [u, s]), () => u.getCurrentResult(), () => u.getCurrentResult()), S.useEffect(() => {
+        }, [u, s]), () => u.getCurrentResult(), () => u.getCurrentResult()), m.useEffect(() => {
             u.setOptions(n, {
                 listeners: !1
             })
@@ -439,10 +439,10 @@ function ye(r, e) {
     return n.notifyOnChangeProps ? a : u.trackResult(a)
 }
 
-function Se(r, e, t) {
+function me(r, e, t) {
     const s = X(r, e, t);
     return ye(s, Y)
 }
 export {
-    Y as Q, ye as a, Se as u
+    Y as Q, ye as a, me as u
 };

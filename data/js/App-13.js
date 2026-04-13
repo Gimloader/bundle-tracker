@@ -1,56 +1,56 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/QRCode.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/index-22.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/QRCode.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/index-23.js"]))) => i.map(i => d[i]);
 import {
     r as l,
     I as ee,
     _ as te,
-    U as Q,
-    d as c,
+    U as A,
+    b as c,
     m as qe,
     o as b,
     aZ as Le,
     l as He,
     j as e,
-    a5 as Mt,
-    $ as me,
+    a5 as zt,
+    $ as ge,
     D as B,
     B as y,
     a as I,
-    M as T,
+    M as D,
     e as C,
     c as le,
-    F as D,
-    K as zt,
-    G as $,
-    a_ as xe,
+    F as Q,
+    K as Nt,
+    G as _,
+    a_ as me,
     i as K,
-    a4 as Fe,
-    a9 as Me,
+    a4 as Me,
+    a9 as Fe,
     h as wt,
-    q as Nt,
+    q as Rt,
     a$ as It,
     u as q,
     ar as ze,
     b0 as St,
-    n as Rt,
-    s as Bt,
+    n as Bt,
+    s as Kt,
     S as Ne,
-    f as Kt,
-    p as Ht,
-    aa as Wt,
-    N as Ut,
+    f as Ht,
+    p as Wt,
+    aa as Ut,
+    N as Vt,
     t as ce,
-    x as _,
-    aW as Vt,
-    b1 as Gt,
-    C as Jt,
-    b2 as Yt,
+    x as T,
+    aW as Gt,
+    b1 as Jt,
+    C as Yt,
+    b2 as Xt,
     b3 as We
 } from "./_index.js";
 import {
-    i as O,
     o as v,
-    a as Xt,
-    P as Zt
+    i as O,
+    a as Zt,
+    P as es
 } from "./mobxreact.esm.js";
 import {
     P as de
@@ -60,25 +60,25 @@ import {
 } from "./ImagePreview.js";
 import {
     T as N,
-    I as At,
-    Q as es,
-    a as ts,
-    R as ss,
-    b as is,
-    c as ns,
-    A as os,
-    M as rs,
-    d as as,
-    e as ls
+    I as $t,
+    Q as ts,
+    a as ss,
+    R as is,
+    b as ns,
+    c as os,
+    A as rs,
+    M as as,
+    d as ls,
+    e as cs
 } from "./App-14.js";
 import {
-    b as cs,
     a as ds,
-    g as hs,
-    c as us
+    b as hs,
+    g as us,
+    c as ps
 } from "./Language.js";
 import {
-    o as ps
+    o as gs
 } from "./EducatorSpecificInfoStage.js";
 import {
     L as J
@@ -93,10 +93,10 @@ import {
     F as ie
 } from "./FontAwesomeIcon.js";
 import {
-    R as ve
+    R as fe
 } from "./index-13.js";
 import {
-    R as gs
+    R as ms
 } from "./NameAndPasswordStage.js";
 import {
     T as R
@@ -108,68 +108,68 @@ import {
     M as W
 } from "./MenuItem.js";
 import {
-    T as ms
+    T as xs
 } from "./index-12.js";
 import {
-    R as xs
+    R as fs
 } from "./RocketOutlined.js";
 import {
-    R as fs
+    R as vs
 } from "./DeleteOutlined.js";
 import {
     A as U
 } from "./AccessibleAnchor.js";
 import {
-    R as vs
+    R as ys
 } from "./CheckOutlined.js";
 import {
     Q as ne,
     b as oe,
-    c as ys,
-    R as js
+    c as js,
+    R as Cs
 } from "./Question.js";
 import {
-    S as Cs
+    S as bs
 } from "./App-15.js";
 import {
     e as Re
 } from "./react-flip-move.es.js";
 import {
-    D as fe
+    D as xe
 } from "./index-6.js";
 import {
-    p as bs
+    p as ks
 } from "./papaparse.min.js";
 import {
-    U as ks
-} from "./index-19.js";
+    U as ws
+} from "./index-20.js";
 import {
-    R as ws
+    R as Is
 } from "./UploadOutlined.js";
 import {
-    U as Is
+    U as Ss
 } from "./App-2.js";
 import {
-    R as Ss
+    R as Os
 } from "./App-1.js";
 import {
-    c as Os,
+    c as $s,
     S as Ue
 } from "./index-2.js";
 import {
     s as Be
 } from "./index-4.js";
 import {
-    S as As
+    S as Qs
 } from "./index-9.js";
 import {
     u as Ve
 } from "./useIntervalWhen.js";
 import {
-    A as Ds
+    A as As
 } from "./TrackEvent.js";
 import {
-    u as Qs
+    u as Ds
 } from "./useWillUnmount.js";
 import "./getCloudinaryUrl.js";
 import "./SaveOutlined.js";
@@ -200,7 +200,7 @@ import "./index-15.js";
 import "./colors.js";
 import "./motion.js";
 import "./useWarningOnMountInDevelopment.js";
-import "./util-1.js";
+import "./util.js";
 import "./index-16.js";
 import "./useBreakpoint.js";
 import "./useForceUpdate.js";
@@ -208,7 +208,7 @@ import "./FillRemainingSpace.js";
 import "./KitPreview.js";
 import "./index.es.js";
 import "./FilterOutlined.js";
-import "./index-20.js";
+import "./index-21.js";
 import "./PaperClipOutlined.js";
 import "./DownloadOutlined.js";
 import "./progress.js";
@@ -254,8 +254,8 @@ var Ts = {
             icon: Ts
         }))
     },
-    $s = l.forwardRef(_s),
-    Es = {
+    Es = l.forwardRef(_s),
+    Ps = {
         icon: {
             tag: "svg",
             attrs: {
@@ -272,14 +272,14 @@ var Ts = {
         name: "funnel-plot",
         theme: "outlined"
     },
-    Ps = function(s, i) {
+    qs = function(s, i) {
         return l.createElement(ee, te({}, s, {
             ref: i,
-            icon: Es
+            icon: Ps
         }))
     },
-    qs = l.forwardRef(Ps),
-    Ls = {
+    Ls = l.forwardRef(qs),
+    Ms = {
         icon: {
             tag: "svg",
             attrs: {
@@ -299,11 +299,11 @@ var Ts = {
     Fs = function(s, i) {
         return l.createElement(ee, te({}, s, {
             ref: i,
-            icon: Ls
+            icon: Ms
         }))
     },
-    Ms = l.forwardRef(Fs),
-    zs = {
+    zs = l.forwardRef(Fs),
+    Ns = {
         icon: {
             tag: "svg",
             attrs: {
@@ -320,14 +320,14 @@ var Ts = {
         name: "table",
         theme: "outlined"
     },
-    Ns = function(s, i) {
+    Rs = function(s, i) {
         return l.createElement(ee, te({}, s, {
             ref: i,
-            icon: zs
+            icon: Ns
         }))
     },
-    Rs = l.forwardRef(Ns),
-    Bs = {
+    Bs = l.forwardRef(Rs),
+    Ks = {
         icon: {
             tag: "svg",
             attrs: {
@@ -344,26 +344,26 @@ var Ts = {
         name: "unlock",
         theme: "outlined"
     },
-    Ks = function(s, i) {
+    Hs = function(s, i) {
         return l.createElement(ee, te({}, s, {
             ref: i,
-            icon: Bs
+            icon: Ks
         }))
     },
-    Hs = l.forwardRef(Ks);
-const Ws = c.div`
+    Ws = l.forwardRef(Hs);
+const Us = c.div`
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: ${Q.SFPro} !important;
+  font-family: ${A.SFPro} !important;
 `;
-var Us = Object.defineProperty,
-    M = (t, s, i, o) => {
+var Vs = Object.defineProperty,
+    F = (t, s, i, o) => {
         for (var n = void 0, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(s, i, n) || n);
-        return n && Us(s, i, n), n
+        return n && Vs(s, i, n), n
     };
 const Ge = "",
     Je = "",
@@ -379,18 +379,18 @@ class L {
         }, qe(this)
     }
 }
-M([b], L.prototype, "id");
-M([b], L.prototype, "title");
-M([b], L.prototype, "image");
-M([b], L.prototype, "language");
-M([b], L.prototype, "subject");
-M([b], L.prototype, "gradeLevel");
-M([b], L.prototype, "privacy");
-M([Le], L.prototype, "reset");
-var Vs = Object.defineProperty,
+F([b], L.prototype, "id");
+F([b], L.prototype, "title");
+F([b], L.prototype, "image");
+F([b], L.prototype, "language");
+F([b], L.prototype, "subject");
+F([b], L.prototype, "gradeLevel");
+F([b], L.prototype, "privacy");
+F([Le], L.prototype, "reset");
+var Gs = Object.defineProperty,
     V = (t, s, i, o) => {
         for (var n = void 0, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(s, i, n) || n);
-        return n && Vs(s, i, n), n
+        return n && Gs(s, i, n), n
     };
 const st = () => !1,
     ue = () => ({
@@ -409,10 +409,10 @@ V([b], H.prototype, "currentlyEditingQuestionId");
 V([b], H.prototype, "editSessionCounted");
 V([b], H.prototype, "error");
 V([Le], H.prototype, "reset");
-var Gs = Object.defineProperty,
+var Js = Object.defineProperty,
     z = (t, s, i, o) => {
         for (var n = void 0, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(s, i, n) || n);
-        return n && Gs(s, i, n), n
+        return n && Js(s, i, n), n
     };
 const it = !1,
     nt = !1,
@@ -420,46 +420,46 @@ const it = !1,
     rt = "",
     at = !0,
     lt = !1;
-let F = class {
+let M = class {
     constructor() {
         this.panelOpen = it, this.enabled = nt, this.waitingQuestions = ot, this.sessionId = rt, this.isPublic = at, this.hasFetchedFirstBatchOfQuestions = lt, this.questions = b.array(), this.reset = () => {
             this.panelOpen = it, this.enabled = nt, this.waitingQuestions = ot, this.sessionId = rt, this.isPublic = at, this.hasFetchedFirstBatchOfQuestions = lt, this.questions.replace([])
         }, qe(this)
     }
 };
-z([b], F.prototype, "panelOpen");
-z([b], F.prototype, "enabled");
-z([b], F.prototype, "waitingQuestions");
-z([b], F.prototype, "sessionId");
-z([b], F.prototype, "isPublic");
-z([b], F.prototype, "hasFetchedFirstBatchOfQuestions");
-z([b], F.prototype, "questions");
-z([Le], F.prototype, "reset");
+z([b], M.prototype, "panelOpen");
+z([b], M.prototype, "enabled");
+z([b], M.prototype, "waitingQuestions");
+z([b], M.prototype, "sessionId");
+z([b], M.prototype, "isPublic");
+z([b], M.prototype, "hasFetchedFirstBatchOfQuestions");
+z([b], M.prototype, "questions");
+z([Le], M.prototype, "reset");
 const u = {
         kitDetails: new L,
         editor: new H,
-        kitCollab: new F
+        kitCollab: new M
     },
-    Js = "New Kit",
-    Ys = "Let's get started!";
-var Xs = Object.getOwnPropertyDescriptor,
-    Zs = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? Xs(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+    Ys = "New Kit",
+    Xs = "Let's get started!";
+var Zs = Object.getOwnPropertyDescriptor,
+    ei = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? Zs(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
-const Dt = 30,
+const Qt = 30,
     ct = he.Option,
-    ye = t => e.jsx(N, {
+    ve = t => e.jsx(N, {
         style: {
             fontWeight: "bold",
             fontSize: 25
         },
         children: t
     });
-let Ce = class extends l.Component {
+let je = class extends l.Component {
     constructor() {
         super(...arguments), this.onKitTitleNameChange = t => this.props.kitDetails.title = t.target.value, this.onLanguageSelected = t => {
-            const s = cs(t);
+            const s = ds(t);
             localStorage.setItem(J.editorDefaultLanguage, s), this.props.kitDetails.language = s
         }, this.onSubjectSelected = t => {
             localStorage.setItem(J.editorDefaultSubject, t), this.props.kitDetails.subject = t
@@ -482,13 +482,13 @@ let Ce = class extends l.Component {
             o && this.props.onNext()
         };
         return e.jsxs(e.Fragment, {
-            children: [e.jsxs(Mt, {
+            children: [e.jsxs(zt, {
                 style: {
                     fontSize: 14,
                     marginBottom: -5,
-                    fontFamily: Q.SFPro
+                    fontFamily: A.SFPro
                 },
-                to: me,
+                to: ge,
                 children: [e.jsx("i", {
                     className: "fas fa-arrow-alt-left",
                     style: {
@@ -509,13 +509,13 @@ let Ce = class extends l.Component {
                             fontWeight: 900,
                             fontSize: 42
                         },
-                        children: Js
+                        children: Ys
                     }), e.jsx(N, {
                         style: {
                             fontSize: 20,
                             marginTop: -15
                         },
-                        children: Ys
+                        children: Xs
                     })]
                 }), e.jsx("img", {
                     src: "/client/img/editor/think.svg",
@@ -523,28 +523,28 @@ let Ce = class extends l.Component {
                         height: 80
                     }
                 })]
-            }), e.jsx(B, {}), ye("Name"), e.jsx(se, {
+            }), e.jsx(B, {}), ve("Name"), e.jsx(se, {
                 size: "large",
                 onChange: this.onKitTitleNameChange,
                 placeholder: "Kit name",
-                maxLength: Dt,
+                maxLength: Qt,
                 onPressEnter: n
             }), e.jsx("div", {
                 style: {
                     height: 10
                 }
-            }), ye("Language"), e.jsx(he, {
+            }), ve("Language"), e.jsx(he, {
                 style: {
                     width: "100%"
                 },
                 size: "large",
-                value: s ? hs(s) : void 0,
+                value: s ? us(s) : void 0,
                 placeholder: "No language selected",
                 showSearch: !0,
                 onChange: this.onLanguageSelected,
                 optionFilterProp: "children",
                 filterOption: (r, a) => a.props.children.toLowerCase().indexOf(r.toLowerCase()) >= 0,
-                children: ds().map(r => e.jsx(ct, {
+                children: hs().map(r => e.jsx(ct, {
                     value: r,
                     children: r
                 }, r))
@@ -552,7 +552,7 @@ let Ce = class extends l.Component {
                 style: {
                     height: 10
                 }
-            }), ye("Subject"), e.jsx(he, {
+            }), ve("Subject"), e.jsx(he, {
                 style: {
                     width: "100%"
                 },
@@ -563,7 +563,7 @@ let Ce = class extends l.Component {
                 optionFilterProp: "children",
                 filterOption: (r, a) => a.props.children.toLowerCase().indexOf(r.toLowerCase()) >= 0,
                 onChange: this.onSubjectSelected,
-                children: ps.map(r => e.jsx(ct, {
+                children: gs.map(r => e.jsx(ct, {
                     value: r,
                     children: r
                 }, r))
@@ -587,8 +587,8 @@ let Ce = class extends l.Component {
         })
     }
 };
-Ce = Zs([O("kitDetails"), v], Ce);
-const ei = t => {
+je = ei([O("kitDetails"), v], je);
+const ti = t => {
     I({
         url: "/api/v1/editor/rename",
         method: "post",
@@ -602,17 +602,17 @@ const ei = t => {
         error: () => !1
     })
 };
-var ti = Object.getOwnPropertyDescriptor,
-    si = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? ti(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+var si = Object.getOwnPropertyDescriptor,
+    ii = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? si(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
-let be = class extends l.Component {
+let Ce = class extends l.Component {
     constructor() {
         super(...arguments), this.state = {
             newTitle: ""
         }, this.canRename = () => !!this.state.newTitle.trim(), this.onRename = () => {
-            this.canRename() && (ei(this.state.newTitle), this.props.closeModal())
+            this.canRename() && (ti(this.state.newTitle), this.props.closeModal())
         }, this.handleChange = t => {
             this.setState({
                 newTitle: t.target.value
@@ -620,7 +620,7 @@ let be = class extends l.Component {
         }
     }
     render() {
-        return e.jsx(T, {
+        return e.jsx(D, {
             open: this.props.visible,
             title: `Rename "${this.props.kitDetails.title}"`,
             onCancel: this.props.closeModal,
@@ -639,40 +639,41 @@ let be = class extends l.Component {
             children: e.jsx(se, {
                 placeholder: "New name...",
                 onChange: this.handleChange,
-                maxLength: Dt,
+                maxLength: Qt,
                 onPressEnter: this.onRename
             })
         })
     }
 };
-be = si([O("kitDetails"), v], be);
-const ii = t => {
-    I({
-        url: "/api/v1/editor/changePhoto",
-        method: "post",
-        data: {
-            kitId: u.kitDetails.id,
-            photo: t
-        },
-        success: () => {
-            u.kitDetails.image = t
-        },
-        error: () => !1
-    })
-};
-var ni = Object.getOwnPropertyDescriptor,
-    oi = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? ni(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+Ce = ii([O("kitDetails"), v], Ce);
+const ni = Ce,
+    oi = t => {
+        I({
+            url: "/api/v1/editor/changePhoto",
+            method: "post",
+            data: {
+                kitId: u.kitDetails.id,
+                photo: t
+            },
+            success: () => {
+                u.kitDetails.image = t
+            },
+            error: () => !1
+        })
+    };
+var ri = Object.getOwnPropertyDescriptor,
+    ai = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? ri(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
-let ke = class extends l.Component {
+let be = class extends l.Component {
     constructor() {
         super(...arguments), this.onImagePicked = t => {
-            ii(t), this.props.closeModal()
+            oi(t), this.props.closeModal()
         }
     }
     render() {
-        return e.jsx(T, {
+        return e.jsx(D, {
             open: this.props.visible,
             onCancel: this.props.closeModal,
             style: {
@@ -689,7 +690,7 @@ let ke = class extends l.Component {
                     maxHeight: "55vh"
                 },
                 className: "scroll disable-scrollbars",
-                children: e.jsx(At, {
+                children: e.jsx($t, {
                     defaultSearchTerm: this.props.kitDetails.title,
                     onImagePicked: this.onImagePicked
                 })
@@ -697,29 +698,30 @@ let ke = class extends l.Component {
         })
     }
 };
-ke = oi([O("kitDetails"), v], ke);
-const ri = t => {
-    I({
-        url: "/api/games/privacy",
-        method: "post",
-        data: {
-            id: u.kitDetails.id,
-            privacy: t
-        },
-        success: () => {
-            u.kitDetails.privacy = t
-        },
-        error: () => !1
-    })
-};
-var ai = Object.getOwnPropertyDescriptor,
-    li = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? ai(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+be = ai([O("kitDetails"), v], be);
+const li = be,
+    ci = t => {
+        I({
+            url: "/api/games/privacy",
+            method: "post",
+            data: {
+                id: u.kitDetails.id,
+                privacy: t
+            },
+            success: () => {
+                u.kitDetails.privacy = t
+            },
+            error: () => !1
+        })
+    };
+var di = Object.getOwnPropertyDescriptor,
+    hi = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? di(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
 const dt = {
         color: C.Black,
-        fontFamily: Q.SFPro,
+        fontFamily: A.SFPro,
         marginBottom: 6
     },
     ht = t => e.jsx(le, {
@@ -731,7 +733,7 @@ const dt = {
                 display: "flex",
                 alignItems: "center",
                 color: C.Black,
-                fontFamily: Q.SFPro
+                fontFamily: A.SFPro
             },
             children: [e.jsx("div", {
                 style: {
@@ -742,7 +744,7 @@ const dt = {
             }), e.jsxs("div", {
                 children: [e.jsx("div", {
                     style: {
-                        fontWeight: D.UltraBold
+                        fontWeight: Q.UltraBold
                     },
                     children: t.name
                 }), e.jsx("div", {
@@ -751,18 +753,18 @@ const dt = {
             })]
         })
     });
-let we = class extends l.Component {
+let ke = class extends l.Component {
     constructor() {
         super(...arguments), this.state = {
             newTitle: ""
         }, this.onChange = t => {
             const s = t.target.value;
-            ri(s)
+            ci(s)
         }
     }
     render() {
         const t = this.props.kitDetails.privacy;
-        return e.jsx(T, {
+        return e.jsx(D, {
             open: this.props.visible,
             title: "Change Privacy",
             onCancel: this.props.closeModal,
@@ -775,7 +777,7 @@ let we = class extends l.Component {
             },
             closable: !0,
             children: e.jsxs(e.Fragment, {
-                children: [e.jsxs(ve.Group, {
+                children: [e.jsxs(fe.Group, {
                     value: t,
                     style: {
                         display: "flex",
@@ -783,11 +785,11 @@ let we = class extends l.Component {
                         marginTop: 15
                     },
                     onChange: this.onChange,
-                    children: [e.jsx(ve, {
+                    children: [e.jsx(fe, {
                         value: de.public,
                         style: dt,
                         children: "Public"
-                    }), e.jsx(ve, {
+                    }), e.jsx(fe, {
                         value: de.private,
                         style: dt,
                         children: "Private"
@@ -799,24 +801,25 @@ let we = class extends l.Component {
                 }), e.jsx(ht, {
                     name: "Public",
                     description: "Visible in search results and accessible via direct link.",
-                    icon: e.jsx(Hs, {})
+                    icon: e.jsx(Ws, {})
                 }), e.jsx(ht, {
                     name: "Private",
                     description: "Hidden from search results and only visible to you.",
-                    icon: e.jsx(gs, {})
+                    icon: e.jsx(ms, {})
                 })]
             })
         })
     }
 };
-we = li([O("kitDetails"), v], we);
-var ci = Object.getOwnPropertyDescriptor,
-    di = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? ci(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+ke = hi([O("kitDetails"), v], ke);
+const ui = ke;
+var pi = Object.getOwnPropertyDescriptor,
+    gi = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? pi(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
-const hi = c.div`
-  height: ${()=>Tt}px;
+const mi = c.div`
+  height: ${()=>Dt}px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -829,19 +832,19 @@ const hi = c.div`
     overflow: hidden;
   }
 `,
-    ui = c.div`
+    xi = c.div`
   display: flex;
   align-items: center;
 `,
-    pi = c.div`
+    fi = c.div`
   font-size: 23px;
-  font-weight: ${D.UltraBold};
+  font-weight: ${Q.UltraBold};
   margin-bottom: -6px;
   cursor: pointer;
   white-space: nowrap;
   text-overflow: ellipsis;
 `,
-    gi = c.div.attrs({
+    vi = c.div.attrs({
         className: "flex vc"
     })`
   font-size: 10px;
@@ -853,7 +856,7 @@ const hi = c.div`
   margin-top: 6px;
   cursor: pointer;
 `;
-let Ie = class extends l.Component {
+let we = class extends l.Component {
     constructor() {
         super(...arguments), this.state = {
             isEditingTitle: !1,
@@ -873,8 +876,8 @@ let Ie = class extends l.Component {
     }
     render() {
         const t = this.props.kitDetails.privacy === de.public;
-        return e.jsxs(hi, {
-            children: [e.jsxs(ui, {
+        return e.jsxs(mi, {
+            children: [e.jsxs(xi, {
                 children: [e.jsx(R, {
                     placement: "right",
                     title: "Change Cover Image",
@@ -895,7 +898,7 @@ let Ie = class extends l.Component {
                     children: [e.jsx(R, {
                         placement: "right",
                         title: "Rename",
-                        children: e.jsx(pi, {
+                        children: e.jsx(fi, {
                             onClick: this.toggleEditingTitleModal,
                             children: this.props.kitDetails.title.trim() || "Untitled Kit"
                         })
@@ -904,7 +907,7 @@ let Ie = class extends l.Component {
                         children: e.jsx(R, {
                             placement: "right",
                             title: "Change Privacy",
-                            children: e.jsxs(gi, {
+                            children: e.jsxs(vi, {
                                 onClick: this.togglePrivacyModal,
                                 children: [e.jsx(ie, {
                                     name: t ? "fas fa-unlock" : "fas fa-lock",
@@ -919,54 +922,55 @@ let Ie = class extends l.Component {
                         })
                     })]
                 })]
-            }), e.jsx(be, {
+            }), e.jsx(ni, {
                 closeModal: this.toggleEditingTitleModal,
                 visible: this.state.isEditingTitle
-            }), e.jsx(ke, {
+            }), e.jsx(li, {
                 closeModal: this.toggleEditingImageModal,
                 visible: this.state.isEditingImage
-            }), e.jsx(we, {
+            }), e.jsx(ui, {
                 closeModal: this.togglePrivacyModal,
                 visible: this.state.isEditingPrivacy
             })]
         })
     }
 };
-Ie = di([O("kitDetails"), v], Ie);
-const mi = t => zt + "/" + t,
-    k = t => mi(t) + "/editor",
-    Qt = t => k(t) + "/question",
-    xi = t => k(t) + "/flashcard-import",
-    fi = t => k(t) + "/spreadsheet",
-    vi = t => k(t) + "/flashcard-create",
-    yi = t => k(t) + "/flashcard-home",
-    ji = t => k(t) + "/question-bank",
-    Ci = t => k(t) + "/kit-collab",
-    bi = t => k(t) + "/ai",
+we = gi([O("kitDetails"), v], we);
+const yi = we,
+    ji = t => Nt + "/" + t,
+    k = t => ji(t) + "/editor",
+    At = t => k(t) + "/question",
+    Ci = t => k(t) + "/flashcard-import",
+    bi = t => k(t) + "/spreadsheet",
+    ki = t => k(t) + "/flashcard-create",
+    wi = t => k(t) + "/flashcard-home",
+    Ii = t => k(t) + "/question-bank",
+    Si = t => k(t) + "/kit-collab",
+    Oi = t => k(t) + "/ai",
     w = t => {
         const s = u.kitDetails.id || "kitId";
         return X(t(s))
     },
-    A = l.createContext(u),
-    ki = () => e.jsx(ie, {
+    $ = l.createContext(u),
+    $i = () => e.jsx(ie, {
         style: {
             marginRight: 11
         },
         name: "far fa-sparkles"
     }),
-    wi = v(() => {
-        const t = $(),
+    Qi = v(() => {
+        const t = _(),
             {
                 editor: s,
                 kitCollab: i
-            } = l.useContext(A),
-            o = () => w(Ci),
-            n = () => w(Qt),
-            r = () => w(ji),
-            a = () => w(fi),
-            d = () => w(yi),
-            h = () => w(bi);
-        return e.jsx(Ii, {
+            } = l.useContext($),
+            o = () => w(Si),
+            n = () => w(At),
+            r = () => w(Ii),
+            a = () => w(bi),
+            d = () => w(wi),
+            h = () => w(Oi);
+        return e.jsx(Ai, {
             overlayVisible: s.questions.length === 0 && t.pathname.endsWith("editor"),
             children: e.jsxs("div", {
                 style: {
@@ -974,16 +978,16 @@ const mi = t => zt + "/" + t,
                     flexDirection: "column"
                 },
                 children: [e.jsx(W, {
-                    icon: xe,
+                    icon: me,
                     title: "Add Question",
                     onClick: n,
                     blockBackground: !0
                 }), K() ? null : e.jsx(W, {
-                    icon: ki,
+                    icon: $i,
                     title: "Generate with AI",
                     onClick: h,
                     blockBackground: !0,
-                    customRightComponent: e.jsx(ms, {
+                    customRightComponent: e.jsx(xs, {
                         color: "green",
                         style: {
                             marginLeft: 10,
@@ -992,22 +996,22 @@ const mi = t => zt + "/" + t,
                         children: "New!"
                     })
                 }), e.jsx(W, {
-                    icon: xs,
+                    icon: fs,
                     title: "Create with Flashcards",
                     onClick: d,
                     blockBackground: !0
                 }), K() ? null : e.jsx(W, {
-                    icon: $s,
+                    icon: Es,
                     title: `Collaborate with KitCollab${i.waitingQuestions?` (${i.waitingQuestions})`:""}`,
                     onClick: o,
                     blockBackground: !0
                 }), e.jsx(W, {
-                    icon: qs,
+                    icon: Ls,
                     title: "Add from Question Bank",
                     onClick: r,
                     blockBackground: !0
                 }), e.jsx(W, {
-                    icon: Rs,
+                    icon: Bs,
                     title: "Import from Spreadsheet",
                     onClick: a,
                     blockBackground: !0
@@ -1015,7 +1019,7 @@ const mi = t => zt + "/" + t,
             })
         })
     }),
-    Ii = c.div`
+    Ai = c.div`
   background: ${C.White};
   display: flex;
   align-items: center;
@@ -1023,15 +1027,15 @@ const mi = t => zt + "/" + t,
   position: ${t=>t.overlayVisible?"relative":"static"};
   width: 100%;
 `;
-var Si = Object.getOwnPropertyDescriptor,
-    Oi = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? Si(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+var Di = Object.getOwnPropertyDescriptor,
+    Ti = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? Di(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
 const Z = 400;
-let Se = class extends l.Component {
+let Ie = class extends l.Component {
     render() {
-        return this.props.editor.questions.length < Z ? null : e.jsx(Fe, {
+        return this.props.editor.questions.length < Z ? null : e.jsx(Me, {
             message: "Question Limit Reached",
             description: `Kits cannot contain more than ${Z} questions.`,
             type: "error",
@@ -1041,15 +1045,16 @@ let Se = class extends l.Component {
         })
     }
 };
-Se = Oi([O("editor"), v], Se);
-var Ai = Object.getOwnPropertyDescriptor,
-    Di = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? Ai(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+Ie = Ti([O("editor"), v], Ie);
+const _i = Ie;
+var Ei = Object.getOwnPropertyDescriptor,
+    Pi = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? Ei(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
-let Oe = class extends l.Component {
+let Se = class extends l.Component {
     render() {
-        return this.props.editor.questions.length ? e.jsxs(Qi, {
+        return this.props.editor.questions.length ? e.jsxs(Li, {
             children: [e.jsx(ie, {
                 name: "fad fa-check-circle",
                 style: {
@@ -1060,8 +1065,9 @@ let Oe = class extends l.Component {
         }) : null
     }
 };
-Oe = Di([O("editor"), v], Oe);
-const Qi = c.div.attrs({
+Se = Pi([O("editor"), v], Se);
+const qi = Se,
+    Li = c.div.attrs({
         className: "flex hc vc"
     })`
   font-size: 14px;
@@ -1069,34 +1075,34 @@ const Qi = c.div.attrs({
   padding: 15px;
   line-height: 1;
 `,
-    Tt = 90,
-    Ti = 323,
-    _i = c.div.attrs({
+    Dt = 90,
+    Mi = 323,
+    Fi = c.div.attrs({
         className: "flex flex-column"
     })`
   border-right: 1px solid ${C.BorderGray};
   height: 100%;
-  width: ${Ti}px;
+  width: ${Mi}px;
   box-sizing: border-box;
   position: relative;
   overflow: visible;
 `,
-    $i = c.div.attrs({
+    zi = c.div.attrs({
         className: "maxWidth scroll-y"
     })`
   flex: 1;
 `;
-class Ei extends l.Component {
+class Ni extends l.Component {
     render() {
-        return e.jsxs(_i, {
-            children: [e.jsx(Ie, {}), e.jsxs($i, {
-                children: [e.jsx(Se, {}), e.jsx(wi, {})]
-            }), e.jsx(Oe, {})]
+        return e.jsxs(Fi, {
+            children: [e.jsx(yi, {}), e.jsxs(zi, {
+                children: [e.jsx(_i, {}), e.jsx(Qi, {})]
+            }), e.jsx(qi, {})]
         })
     }
 }
-const Pi = t => {
-        const s = Me(t);
+const Ri = t => {
+        const s = Fe(t);
         I({
             url: "/api/v1/editor/questions/remove",
             method: "post",
@@ -1114,8 +1120,8 @@ const Pi = t => {
             })
         })
     },
-    qi = t => {
-        const s = Me(t);
+    Bi = t => {
+        const s = Fe(t);
         I({
             url: "/api/v1/editor/questions/convert-text-input",
             method: "post",
@@ -1135,28 +1141,28 @@ const Pi = t => {
             })
         })
     };
-var Li = Object.getOwnPropertyDescriptor,
-    Fi = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? Li(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+var Ki = Object.getOwnPropertyDescriptor,
+    Hi = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? Ki(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
-let Ae = class extends l.Component {
+let Oe = class extends l.Component {
     constructor() {
         super(...arguments), this.onSelectQuestionCount = () => {
             this.props.editor.questionsChecked.length === this.props.editor.questions.length ? this.props.editor.questionsChecked.replace([]) : this.props.editor.questionsChecked.replace(this.props.editor.questions.map(t => t._id))
         }, this.deleteSelectedQuestions = () => {
-            Pi(this.props.editor.questionsChecked)
+            Ri(this.props.editor.questionsChecked)
         }, this.convertSelectedQuestions = () => {
-            qi(this.props.editor.questionsChecked)
+            Bi(this.props.editor.questionsChecked)
         }
     }
     render() {
         const t = this.props.editor.questionsChecked.length;
-        return e.jsxs(Mi, {
-            children: [e.jsx(zi, {
+        return e.jsxs(Ui, {
+            children: [e.jsx(Vi, {
                 onClick: this.onSelectQuestionCount,
-                children: `${t} ${Nt("question",t)} selected`
-            }), e.jsxs(Ni, {
+                children: `${t} ${Rt("question",t)} selected`
+            }), e.jsxs(Gi, {
                 children: [e.jsx(y, {
                     size: "large",
                     onClick: this.convertSelectedQuestions,
@@ -1167,7 +1173,7 @@ let Ae = class extends l.Component {
                         marginLeft: 5
                     },
                     type: "primary",
-                    icon: e.jsx(fs, {}),
+                    icon: e.jsx(vs, {}),
                     size: "large",
                     children: "Delete"
                 })]
@@ -1175,67 +1181,69 @@ let Ae = class extends l.Component {
         })
     }
 };
-Ae = Fi([O("editor"), v], Ae);
-const Mi = c.div`
+Oe = Hi([O("editor"), v], Oe);
+const Wi = Oe,
+    Ui = c.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: ${()=>_t}px;
+  padding: ${()=>Tt}px;
 `,
-    zi = c.div`
-  font-weight: ${D.Bold};
+    Vi = c.div`
+  font-weight: ${Q.Bold};
   font-size: 20px;
   cursor: pointer;
 `,
-    Ni = c.div`
+    Gi = c.div`
   display: flex;
   align-items: center;
 `,
-    Ri = () => e.jsx(Bi, {
+    Ji = () => e.jsx(Yi, {
         children: e.jsx(U, {
-            to: me,
+            to: ge,
             children: e.jsx(y, {
                 size: "large",
-                icon: e.jsx(vs, {}),
+                icon: e.jsx(ys, {}),
                 type: "primary",
                 children: "All Done"
             })
         })
     }),
-    Bi = c.div`
+    Yi = c.div`
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: ${()=>_t}px;
+  padding: ${()=>Tt}px;
 `;
-var Ki = Object.getOwnPropertyDescriptor,
-    Hi = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? Ki(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+var Xi = Object.getOwnPropertyDescriptor,
+    Zi = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? Xi(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
-const _t = 20;
-let De = class extends l.Component {
+const Tt = 20;
+let $e = class extends l.Component {
     constructor() {
-        super(...arguments), this.getContent = () => this.props.editor.questionsChecked.length ? e.jsx(Ae, {}) : e.jsx(Ri, {})
+        super(...arguments), this.getContent = () => this.props.editor.questionsChecked.length ? e.jsx(Wi, {}) : e.jsx(Ji, {})
     }
     render() {
-        return e.jsx(Wi, {
+        return e.jsx(en, {
             children: this.getContent()
         })
     }
 };
-De = Hi([O("editor"), v], De);
-const Wi = c.div`
+$e = Zi([O("editor"), v], $e);
+const en = c.div`
   background: ${C.White};
-  height: ${Tt}px;
+  height: ${Dt}px;
   width: 100%;
   box-sizing: border-box;
   border-bottom: 1px solid ${C.BorderGray};
 `,
-    Ui = () => {
+    tn = $e,
+    sn = () => {
         u.editor.editSessionCounted || I({
             url: "/api/v1/editor/edit-session",
             method: "post",
@@ -1257,8 +1265,8 @@ const Wi = c.div`
                 questions: r
             },
             success: a => {
-                Ui();
-                let d = Me(u.editor.questions);
+                sn();
+                let d = Fe(u.editor.questions);
                 a.filter(p => !p.replaced).forEach(p => d[i && i.pushToBottom ? "push" : "unshift"](p.question)), a.filter(p => p.replaced !== null).forEach(p => {
                     d = d.map(m => m._id !== p.replaced ? m : p.question)
                 }), u.editor.questions.replace(d), i && i.stay || w(k)
@@ -1271,9 +1279,9 @@ const Wi = c.div`
             }
         })
     };
-var Vi = Object.getOwnPropertyDescriptor,
-    Gi = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? Vi(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+var nn = Object.getOwnPropertyDescriptor,
+    on = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? nn(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
 const {
@@ -1293,13 +1301,13 @@ const {
         textType: i.textType
     })),
     kitId: s
-}), Ji = {
+}), rn = {
     selectedTab: "search",
     addedQuestionIds: []
 };
-let Te = class extends l.Component {
+let Ae = class extends l.Component {
     constructor() {
-        super(...arguments), this.state = Ji, this.handleTabChange = t => {
+        super(...arguments), this.state = rn, this.handleTabChange = t => {
             this.setState({
                 selectedTab: t
             })
@@ -1325,7 +1333,7 @@ let Te = class extends l.Component {
                     children: [e.jsx("div", {}), e.jsx(y, {
                         onClick: i,
                         type: "primary",
-                        icon: e.jsx(xe, {}),
+                        icon: e.jsx(me, {}),
                         children: "Add All Questions"
                     })]
                 }), e.jsx(Re, {
@@ -1344,7 +1352,7 @@ let Te = class extends l.Component {
                     })
                 })]
             })
-        }, this.getSearch = () => e.jsx(Cs, {
+        }, this.getSearch = () => e.jsx(bs, {
             questionRenderer: this.renderQuestions,
             showMyKits: this.state.selectedTab === "myKits",
             questionFetchLimit: Z,
@@ -1362,7 +1370,7 @@ let Te = class extends l.Component {
             visible: t,
             close: s
         } = this.props;
-        return e.jsxs(fe, {
+        return e.jsxs(xe, {
             destroyOnClose: !0,
             open: t,
             width: "100%",
@@ -1386,20 +1394,21 @@ let Te = class extends l.Component {
         })
     }
 };
-Te = Gi([O("kitDetails"), v], Te);
-const Yi = v(t => {
+Ae = on([O("kitDetails"), v], Ae);
+const an = Ae,
+    ln = v(t => {
         const {
             editor: s,
             kitDetails: i
-        } = l.useContext(A);
-        return e.jsx(Zi, {
+        } = l.useContext($);
+        return e.jsx(dn, {
             children: s.questions.map(o => {
                 const n = d => {
                         const h = d.target.checked;
                         h && s.questionsChecked.push(o._id), h || s.questionsChecked.replace(s.questionsChecked.filter(x => x !== o._id))
                     },
                     r = d => {
-                        d.stopPropagation(), s.currentlyEditingQuestionId = o._id, w(Qt)
+                        d.stopPropagation(), s.currentlyEditingQuestionId = o._id, w(At)
                     },
                     a = d => {
                         d.stopPropagation();
@@ -1425,11 +1434,11 @@ const Yi = v(t => {
             })
         })
     }),
-    Xi = 10,
-    Zi = c.div`
-  padding: ${Xi}px;
+    cn = 10,
+    dn = c.div`
+  padding: ${cn}px;
 `,
-    en = c.div.attrs({
+    hn = c.div.attrs({
         className: "scroll"
     })`
   height: 100%;
@@ -1439,7 +1448,7 @@ const Yi = v(t => {
     box-sizing: border-box;
   }
 `;
-class tn extends l.Component {
+class un extends l.Component {
     constructor() {
         super(...arguments), this.containerRef = l.createRef(), this.scrollToTop = () => {
             this.containerRef.current && this.containerRef.current.scrollTo({
@@ -1449,15 +1458,15 @@ class tn extends l.Component {
         }
     }
     render() {
-        return e.jsx(en, {
+        return e.jsx(hn, {
             ref: this.containerRef,
-            children: e.jsx(Yi, {
+            children: e.jsx(ln, {
                 scrollToTop: this.scrollToTop
             })
         })
     }
 }
-const sn = c.div`
+const pn = c.div`
   flex: 1;
   width: 100%;
   height: 100%;
@@ -1466,16 +1475,16 @@ const sn = c.div`
   display: flex;
   flex-direction: column;
 `,
-    nn = () => e.jsxs(sn, {
-        children: [e.jsx(De, {}), e.jsx(tn, {})]
+    gn = () => e.jsxs(pn, {
+        children: [e.jsx(tn, {}), e.jsx(un, {})]
     }),
-    on = v(() => {
+    mn = v(() => {
         const {
             editor: t,
             kitDetails: {
                 id: s
             }
-        } = l.useContext(A), i = $(), [o, n, r] = q(!1), a = l.useRef(), d = l.useMemo(() => t.currentlyEditingQuestionId ? !1 : t.questions.length >= Z, [t.questions.length, t.currentlyEditingQuestionId]), h = l.useMemo(() => i.pathname.endsWith("question"), [i.pathname.length]), x = l.useMemo(() => {
+        } = l.useContext($), i = _(), [o, n, r] = q(!1), a = l.useRef(), d = l.useMemo(() => t.currentlyEditingQuestionId ? !1 : t.questions.length >= Z, [t.questions.length, t.currentlyEditingQuestionId]), h = l.useMemo(() => i.pathname.endsWith("question"), [i.pathname.length]), x = l.useMemo(() => {
             if (t.currentlyEditingQuestionId) return t.questions.find(j => j._id === t.currentlyEditingQuestionId)
         }, [t.currentlyEditingQuestionId]), p = () => {
             a.current && a.current.clear(), m()
@@ -1500,7 +1509,7 @@ const sn = c.div`
                 r()
             })
         };
-        return e.jsx(es, {
+        return e.jsx(ts, {
             ref: a,
             visible: h,
             close: f,
@@ -1566,7 +1575,7 @@ const sn = c.div`
         });
         return i && i.length ? i : []
     },
-    rn = t => {
+    xn = t => {
         let s = "";
         const i = t.split(`
 `).map(o => o.split("	").reverse());
@@ -1577,7 +1586,7 @@ const sn = c.div`
             })
         }), s
     },
-    $t = t => {
+    _t = t => {
         const s = t.questions.map((i, o) => ({
             _id: "quizlet-question-" + o,
             text: i.text,
@@ -1593,7 +1602,7 @@ const sn = c.div`
                 correct: n.correct
             }))
         }));
-        return e.jsx(fe, {
+        return e.jsx(xe, {
             open: t.visible,
             placement: "right",
             closable: !0,
@@ -1606,14 +1615,14 @@ const sn = c.div`
             }, i._id))
         })
     };
-var an = Object.getOwnPropertyDescriptor,
-    ln = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? an(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+var fn = Object.getOwnPropertyDescriptor,
+    vn = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? fn(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
-let ge = class extends l.Component {
+let De = class extends l.Component {
     render() {
-        return this.props.editor.error.message ? e.jsx(Fe, {
+        return this.props.editor.error.message ? e.jsx(Me, {
             message: "Error",
             description: this.props.editor.error.message,
             type: "error",
@@ -1621,28 +1630,29 @@ let ge = class extends l.Component {
         }) : null
     }
 };
-ge = ln([O("editor"), v], ge);
-var cn = Object.getOwnPropertyDescriptor,
-    dn = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? cn(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+De = vn([O("editor"), v], De);
+const Et = De;
+var yn = Object.getOwnPropertyDescriptor,
+    jn = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? yn(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
 const {
-    TextArea: hn
+    TextArea: Cn
 } = se, xt = {
     screen: "Find",
     textAreaInput: "",
     overlayOpen: !1,
     loading: !1
 };
-let _e = class extends l.Component {
+let Te = class extends l.Component {
     constructor() {
         super(...arguments), this.state = xt, this.skipToLastStep = () => this.setState({
             screen: "Paste"
         }), this.toggleOverlay = () => this.setState({
             overlayOpen: !this.state.overlayOpen
         }), this.flip = () => this.setState({
-            textAreaInput: rn(this.state.textAreaInput)
+            textAreaInput: xn(this.state.textAreaInput)
         }), this.getContent = () => {
             const t = pe(mt(this.state.textAreaInput));
             return e.jsxs(e.Fragment, {
@@ -1654,7 +1664,7 @@ let _e = class extends l.Component {
                     children: [e.jsxs("div", {
                         children: [e.jsx(N, {
                             style: {
-                                fontWeight: D.UltraBold,
+                                fontWeight: Q.UltraBold,
                                 fontSize: 35
                             },
                             children: "Import a Set"
@@ -1674,7 +1684,7 @@ let _e = class extends l.Component {
                             href: "https://help.gimkit.com/en/article/importing-a-flashcard-set-ti90sw/?1570044230345",
                             target: "_blank",
                             size: "large",
-                            icon: e.jsx(Ms, {}),
+                            icon: e.jsx(zs, {}),
                             style: {
                                 display: "flex",
                                 justifyContent: "center",
@@ -1688,7 +1698,7 @@ let _e = class extends l.Component {
                     style: {
                         height: 10
                     }
-                }), e.jsx(hn, {
+                }), e.jsx(Cn, {
                     style: {
                         height: 200,
                         fontSize: 16
@@ -1731,7 +1741,7 @@ let _e = class extends l.Component {
                         },
                         children: "Flip Term/Definition"
                     })]
-                }), e.jsx($t, {
+                }), e.jsx(_t, {
                     visible: this.state.overlayOpen,
                     questions: t,
                     close: this.toggleOverlay
@@ -1773,7 +1783,7 @@ let _e = class extends l.Component {
             close: s
         } = this.props;
         return e.jsx(e.Fragment, {
-            children: e.jsx(T, {
+            children: e.jsx(D, {
                 destroyOnClose: !0,
                 open: t,
                 width: 670,
@@ -1783,15 +1793,16 @@ let _e = class extends l.Component {
                 footer: null,
                 onCancel: s,
                 closable: !1,
-                children: e.jsxs(un, {
-                    children: [this.getContent(), e.jsx(ge, {})]
+                children: e.jsxs(kn, {
+                    children: [this.getContent(), e.jsx(Et, {})]
                 })
             })
         })
     }
 };
-_e = dn([O("kitDetails", "editor"), v], _e);
-const un = c.div`
+Te = jn([O("kitDetails", "editor"), v], Te);
+const bn = Te,
+    kn = c.div`
   .ant-steps-icon {
     display: flex;
     justify-content: center;
@@ -1799,20 +1810,20 @@ const un = c.div`
     height: 100%;
   }
 `,
-    pn = () => {
-        const t = $(),
+    wn = () => {
+        const t = _(),
             s = () => w(k),
             i = t.pathname.endsWith("flashcard-import");
-        return e.jsx(_e, {
+        return e.jsx(bn, {
             visible: i,
             close: s
         })
     },
-    gn = () => {
-        const t = $(),
+    In = () => {
+        const t = _(),
             s = () => w(k),
             i = t.pathname.endsWith("question-bank");
-        return e.jsx(Te, {
+        return e.jsx(an, {
             visible: i,
             close: s
         })
@@ -1825,14 +1836,14 @@ const un = c.div`
         },
         children: e.jsxs(le, {
             style: {
-                fontFamily: Q.SFPro,
+                fontFamily: A.SFPro,
                 color: C.Black
             },
             hoverable: !0,
             children: [e.jsx("div", {
                 style: {
                     fontSize: 23,
-                    fontWeight: D.UltraBold
+                    fontWeight: Q.UltraBold
                 },
                 children: t.title
             }), e.jsx("div", {
@@ -1844,15 +1855,15 @@ const un = c.div`
         })
     }),
     vt = t => t.filter(s => s && s.length > 0),
-    mn = v(t => {
+    Sn = v(t => {
         const {
             kitDetails: s
-        } = l.useContext(A), [i, o] = l.useState(!1), [n, r] = l.useState(""), a = ({
+        } = l.useContext($), [i, o] = l.useState(!1), [n, r] = l.useState(""), a = ({
             file: h
         }) => {
             r("");
             const x = [];
-            bs.parse(h, {
+            ks.parse(h, {
                 complete: p => {
                     if (p && p.data && p.data.length && p.data[0][0] && p.data[0][0].endsWith("Template 2")) {
                         const m = [];
@@ -1898,11 +1909,11 @@ const un = c.div`
                     })), () => o(!1)))
                 }
             })
-        }, d = () => e.jsxs(xn, {
+        }, d = () => e.jsxs(On, {
             className: "flex maxWidth flex-column",
-            children: [e.jsx(fn, {
+            children: [e.jsx($n, {
                 children: "Import from Spreadsheet"
-            }), e.jsx(vn, {
+            }), e.jsx(Qn, {
                 children: "Want to add questions super quickly? Add them in a spreadsheet and import them here! To get started, choose a template below. Fill out the spreadsheet with your questions & answers and download it as a CSV file."
             }), e.jsx("div", {
                 style: {
@@ -1934,14 +1945,14 @@ const un = c.div`
                     border: "solid 1px",
                     borderRadius: 6
                 }
-            }), e.jsxs(ks, {
+            }), e.jsxs(ws, {
                 style: {
                     width: "100%"
                 },
                 customRequest: a,
                 accept: ".csv",
                 showUploadList: !1,
-                children: [n ? e.jsx(Fe, {
+                children: [n ? e.jsx(Me, {
                     type: "error",
                     message: n,
                     style: {
@@ -1949,7 +1960,7 @@ const un = c.div`
                     }
                 }) : null, e.jsx(y, {
                     type: "primary",
-                    icon: e.jsx(ws, {}),
+                    icon: e.jsx(Is, {}),
                     style: {
                         width: "100%",
                         marginTop: 10
@@ -1959,7 +1970,7 @@ const un = c.div`
                 })]
             })]
         });
-        return e.jsx(T, {
+        return e.jsx(D, {
             open: t.visible,
             onCancel: t.close,
             footer: !1,
@@ -1971,35 +1982,35 @@ const un = c.div`
             children: d()
         })
     }),
-    xn = c.div`
+    On = c.div`
   .ant-upload.ant-upload-select {
     width: 100%;
   }
 `,
-    fn = c.div`
+    $n = c.div`
   font-size: 27px;
-  font-weight: ${D.UltraBold};
+  font-weight: ${Q.UltraBold};
   color: ${C.Black};
-  font-family: ${Q.SFPro};
+  font-family: ${A.SFPro};
 `,
-    vn = c.div`
+    Qn = c.div`
   font-size: 16px;
   margin-top: -4px;
   line-height: 21px;
   color: ${C.Black};
-  font-family: ${Q.SFPro};
+  font-family: ${A.SFPro};
 `,
-    yn = () => {
+    An = () => {
         const t = St(),
-            s = $(),
+            s = _(),
             i = () => t(-1),
             o = s.pathname.endsWith("spreadsheet");
-        return e.jsx(mn, {
+        return e.jsx(Sn, {
             visible: o,
             close: i
         })
     },
-    jn = t => {
+    Dn = t => {
         I({
             url: `/api/games/fetch/${t}`,
             method: "get",
@@ -2013,24 +2024,24 @@ const un = c.div`
                 i.id = n._id, i.title = n.title, i.image = n.gif, i.privacy = n.privacy, i.language = n.lang, o.questions.replace(n.questions)
             },
             error: s => {
-                X(me)
+                X(ge)
             }
         })
     },
-    Cn = c.div`
+    Tn = c.div`
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 `,
-    bn = () => {
+    _n = () => {
         const {
             kitId: t
-        } = Rt();
-        return Bt(() => {
-            jn(t)
-        }), e.jsx(Cn, {
+        } = Bt();
+        return Kt(() => {
+            Dn(t)
+        }), e.jsx(Tn, {
             children: e.jsx(Ne, {
                 size: "large"
             })
@@ -2060,12 +2071,12 @@ const un = c.div`
                 d(E), Ke()
             },
             Ft = () => {
-                Kt() ? a(!0) : x(!0)
+                Ht() ? a(!0) : x(!0)
             },
             Ke = () => a(!1);
         return e.jsxs(e.Fragment, {
-            children: [e.jsxs(kn, {
-                children: [e.jsx(ts, {
+            children: [e.jsxs(En, {
+                children: [e.jsx(ss, {
                     value: t.text,
                     onTextChange: s,
                     disabled: !t.textAllowed,
@@ -2080,7 +2091,7 @@ const un = c.div`
                                 marginLeft: 4,
                                 flexShrink: 0
                             },
-                            icon: e.jsx(ss, {}),
+                            icon: e.jsx(is, {}),
                             size: "large",
                             tabIndex: "-1"
                         })
@@ -2101,7 +2112,7 @@ const un = c.div`
                                 marginLeft: 4,
                                 flexShrink: 0
                             },
-                            icon: e.jsx(ys, {}),
+                            icon: e.jsx(js, {}),
                             size: "large",
                             tabIndex: "-1"
                         })
@@ -2113,7 +2124,7 @@ const un = c.div`
                                 marginLeft: 4,
                                 flexShrink: 0
                             },
-                            icon: e.jsx(is, {
+                            icon: e.jsx(ns, {
                                 style: {
                                     color: t.latex ? "green" : "inherit"
                                 }
@@ -2123,39 +2134,39 @@ const un = c.div`
                         })
                     })]
                 })]
-            }), e.jsx(ns, {
+            }), e.jsx(os, {
                 visible: i,
                 close: G,
                 currentImage: t.image,
                 onImageChange: n
-            }), e.jsx(os, {
+            }), e.jsx(rs, {
                 visible: r,
                 audio: t.audio,
                 close: Ke,
                 onAudioChanged: re
-            }), e.jsx(rs, {
+            }), e.jsx(as, {
                 visible: m,
                 close: g,
                 onChange: j,
                 latex: t.latex
-            }), e.jsx(Is, {
+            }), e.jsx(Ss, {
                 id: "add audio",
                 visible: h,
                 close: p,
                 copy: {
-                    title: ls,
-                    description: as
+                    title: cs,
+                    description: ls
                 }
             })]
         })
     },
-    kn = c.div`
+    En = c.div`
   display: flex;
   width: 100%;
   align-items: center;
   font-size: 28px;
 `,
-    wn = t => {
+    Pn = t => {
         const s = f => {
                 const g = h();
                 t.onChange({
@@ -2245,8 +2256,8 @@ const un = c.div`
                 question: p,
                 answer: m
             } = x;
-        return e.jsxs(In, {
-            children: [e.jsx(Sn, {
+        return e.jsxs(qn, {
+            children: [e.jsx(Ln, {
                 children: e.jsx(yt, {
                     text: p.text,
                     image: p.image,
@@ -2262,7 +2273,7 @@ const un = c.div`
                     onAudioChange: o,
                     placeholder: "Question..."
                 })
-            }), e.jsx(On, {
+            }), e.jsx(Mn, {
                 children: e.jsx(yt, {
                     text: m.text,
                     image: m.image,
@@ -2280,34 +2291,34 @@ const un = c.div`
             })]
         })
     },
-    In = c.div`
+    qn = c.div`
   width: 100%;
   display: flex;
   margin-bottom: 6px;
   align-items: center;
 `,
-    Sn = c.div`
+    Ln = c.div`
   width: calc(50% - 10px);
   margin-right: 10px;
 `,
-    On = c.div`
+    Mn = c.div`
   width: calc(50% - 10px);
 `;
-var An = Object.getOwnPropertyDescriptor,
-    Dn = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? An(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+var Fn = Object.getOwnPropertyDescriptor,
+    zn = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? Fn(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
 const ae = "flashcard-entry-editor",
-    Et = t => {
+    Pt = t => {
         let s = !1;
         return (t.text || t.audio || t.image || t.latex) && (s = !0), s
     },
-    Pt = t => {
+    qt = t => {
         let s = 0;
         return t.text && s++, t.image && s++, t.latex && s++, s === 1
     },
-    je = t => Et(t.question) && Pt(t.answer),
+    ye = t => Pt(t.question) && qt(t.answer),
     Y = () => ({
         question: {
             text: "",
@@ -2322,7 +2333,7 @@ const ae = "flashcard-entry-editor",
         }
     }),
     jt = () => [Y(), Y(), Y(), Y()];
-let $e = class extends l.Component {
+let _e = class extends l.Component {
     constructor() {
         super(...arguments), this.state = {
             questions: jt(),
@@ -2332,10 +2343,10 @@ let $e = class extends l.Component {
             overlayVisible: !this.state.overlayVisible
         }), this.handleQuestionChange = (t, s) => {
             let i = this.state.questions;
-            s + 1 === this.state.questions.length && !this.state.questions[s + 1] && je(t) && i.length < 200 && i.push(Y()), i = i.map((o, n) => n !== s ? o : t), i = i.filter((o, n) => !(n > 3 && n + 1 !== i.length && !Et(o.question) && !Pt(o.answer))), localStorage.setItem(ae, JSON.stringify(i)), this.setState({
+            s + 1 === this.state.questions.length && !this.state.questions[s + 1] && ye(t) && i.length < 200 && i.push(Y()), i = i.map((o, n) => n !== s ? o : t), i = i.filter((o, n) => !(n > 3 && n + 1 !== i.length && !Pt(o.question) && !qt(o.answer))), localStorage.setItem(ae, JSON.stringify(i)), this.setState({
                 questions: i
             })
-        }, this.makeQuestions = () => pe(this.state.questions.filter(t => je(t))), this.addQuestions = () => {
+        }, this.makeQuestions = () => pe(this.state.questions.filter(t => ye(t))), this.addQuestions = () => {
             const t = this.makeQuestions();
             if (!t.length) return;
             this.setState({
@@ -2364,7 +2375,7 @@ let $e = class extends l.Component {
         }, this.canSubmit = () => {
             let t = !0;
             return this.state.questions.forEach((s, i) => {
-                i < 4 && (je(s) || (t = !1))
+                i < 4 && (ye(s) || (t = !1))
             }), t
         }
     }
@@ -2378,7 +2389,7 @@ let $e = class extends l.Component {
     }
     render() {
         return e.jsxs(e.Fragment, {
-            children: [e.jsxs(T, {
+            children: [e.jsxs(D, {
                 open: this.props.visible,
                 onCancel: this.props.close,
                 width: 890,
@@ -2386,7 +2397,7 @@ let $e = class extends l.Component {
                 style: {
                     top: 20,
                     color: C.Black,
-                    fontFamily: Q.SFPro
+                    fontFamily: A.SFPro
                 },
                 footer: e.jsxs("div", {
                     className: "flex maxWidth vc",
@@ -2407,7 +2418,7 @@ let $e = class extends l.Component {
                 children: [e.jsx("div", {
                     style: {
                         fontSize: 34,
-                        fontWeight: D.UltraBold,
+                        fontWeight: Q.UltraBold,
                         cursor: "pointer"
                     },
                     onDoubleClick: this.deleteAllQuestions,
@@ -2422,12 +2433,12 @@ let $e = class extends l.Component {
                     children: "Save some time by entering a question and answer. We'll generate the incorrect answers for you!"
                 }), e.jsx(B, {}), this.state.questions.map((t, s) => {
                     const i = o => this.handleQuestionChange(o, s);
-                    return e.jsx(wn, {
+                    return e.jsx(Pn, {
                         value: t,
                         onChange: i
                     }, "flashcard-create-" + s)
-                }), e.jsx(ge, {})]
-            }), e.jsx($t, {
+                }), e.jsx(Et, {})]
+            }), e.jsx(_t, {
                 questions: this.state.overlayVisible ? this.makeQuestions() : [],
                 visible: this.state.overlayVisible,
                 close: this.toggleOverlay
@@ -2435,34 +2446,35 @@ let $e = class extends l.Component {
         })
     }
 };
-$e = Dn([O("kitDetails"), v], $e);
-const Qn = () => {
-    const t = $(),
-        s = () => w(k),
-        i = t.pathname.endsWith("flashcard-create");
-    return e.jsx($e, {
-        visible: i,
-        close: s
-    })
-};
-var Tn = Object.getOwnPropertyDescriptor,
-    _n = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? Tn(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+_e = zn([O("kitDetails"), v], _e);
+const Nn = _e,
+    Rn = () => {
+        const t = _(),
+            s = () => w(k),
+            i = t.pathname.endsWith("flashcard-create");
+        return e.jsx(Nn, {
+            visible: i,
+            close: s
+        })
+    };
+var Bn = Object.getOwnPropertyDescriptor,
+    Kn = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? Bn(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
 let Ee = class extends l.Component {
     constructor() {
-        super(...arguments), this.createFlashcards = () => X(vi(this.props.kitDetails.id)), this.importFlashcards = () => X(xi(this.props.kitDetails.id))
+        super(...arguments), this.createFlashcards = () => X(ki(this.props.kitDetails.id)), this.importFlashcards = () => X(Ci(this.props.kitDetails.id))
     }
     render() {
-        return e.jsxs(T, {
+        return e.jsxs(D, {
             open: this.props.visible,
             onCancel: this.props.close,
             width: 500,
             style: {
                 top: 20,
                 color: C.Black,
-                fontFamily: Q.SFPro
+                fontFamily: A.SFPro
             },
             footer: null,
             closable: !1,
@@ -2470,7 +2482,7 @@ let Ee = class extends l.Component {
                 hoverable: !0,
                 style: {
                     color: C.Black,
-                    fontFamily: Q.SFPro,
+                    fontFamily: A.SFPro,
                     height: 210
                 },
                 onClick: this.createFlashcards,
@@ -2481,13 +2493,13 @@ let Ee = class extends l.Component {
                     flexDirection: "column",
                     height: "100%"
                 },
-                children: [e.jsx(js, {
+                children: [e.jsx(Cs, {
                     style: {
                         fontSize: 35
                     }
                 }), e.jsx("div", {
                     style: {
-                        fontWeight: D.UltraBold,
+                        fontWeight: Q.UltraBold,
                         fontSize: 25
                     },
                     className: "flex vc",
@@ -2504,18 +2516,18 @@ let Ee = class extends l.Component {
                 hoverable: !0,
                 style: {
                     color: C.Black,
-                    fontFamily: Q.SFPro
+                    fontFamily: A.SFPro
                 },
                 onClick: this.importFlashcards,
                 children: e.jsxs("div", {
                     className: "flex flex-column hc vc maxWidth",
-                    children: [e.jsx(Ss, {
+                    children: [e.jsx(Os, {
                         style: {
                             fontSize: 25
                         }
                     }), e.jsx("div", {
                         style: {
-                            fontWeight: D.UltraBold,
+                            fontWeight: Q.UltraBold,
                             fontSize: 22
                         },
                         className: "flex vc",
@@ -2528,18 +2540,19 @@ let Ee = class extends l.Component {
         })
     }
 };
-Ee = _n([O("kitDetails"), v], Ee);
-const $n = () => {
-        const t = $(),
+Ee = Kn([O("kitDetails"), v], Ee);
+const Hn = Ee,
+    Wn = () => {
+        const t = _(),
             s = () => w(k),
             i = t.pathname.endsWith("flashcard-home");
-        return e.jsx(Ee, {
+        return e.jsx(Hn, {
             visible: i,
             close: s
         })
     },
-    En = l.lazy(() => Ht(() => import("./QRCode.js"), __vite__mapDeps([0, 1, 2, 3]))),
-    Pn = t => e.jsx(T, {
+    Un = l.lazy(() => Wt(() => import("./QRCode.js"), __vite__mapDeps([0, 1, 2, 3]))),
+    Vn = t => e.jsx(D, {
         open: t.visible,
         onCancel: t.close,
         footer: null,
@@ -2548,23 +2561,23 @@ const $n = () => {
             className: "maxAll flex-center",
             children: e.jsx(l.Suspense, {
                 fallback: null,
-                children: e.jsx(En, {
+                children: e.jsx(Un, {
                     link: t.link
                 })
             })
         })
     }),
-    qn = v(() => {
+    Gn = v(() => {
         const [t, s, i] = q(!1), {
             kitCollab: o
-        } = l.useContext(A), n = `${Wt()}/kit-collab/${o.sessionId}`, r = l.useCallback(() => {
-            Os(n), Be.success("KitCollab link copied!")
+        } = l.useContext($), n = `${Ut()}/kit-collab/${o.sessionId}`, r = l.useCallback(() => {
+            $s(n), Be.success("KitCollab link copied!")
         }, [n]);
         return e.jsxs(e.Fragment, {
-            children: [e.jsxs(Ln, {
-                children: [e.jsx(Fn, {
+            children: [e.jsxs(Jn, {
+                children: [e.jsx(Yn, {
                     children: "Share the KitCollab link with anybody you want to contribute questions. Once they submit their questions, you'll see them pop up here for you to approve or reject."
-                }), e.jsxs(Mn, {
+                }), e.jsxs(Xn, {
                     children: [e.jsx("div", {
                         className: "maxWidth",
                         children: e.jsx(se, {
@@ -2575,7 +2588,7 @@ const $n = () => {
                             },
                             value: n
                         })
-                    }), e.jsxs(zn, {
+                    }), e.jsxs(Zn, {
                         children: [e.jsx(y, {
                             size: "large",
                             style: {
@@ -2599,35 +2612,35 @@ const $n = () => {
                         })]
                     })]
                 })]
-            }), e.jsx(Pn, {
+            }), e.jsx(Vn, {
                 link: n,
                 visible: t,
                 close: i
             })]
         })
     }),
-    Ln = c.div.attrs({
+    Jn = c.div.attrs({
         className: "maxWidth"
     })`
   margin-top: 15px;
 `,
-    Fn = c.div`
+    Yn = c.div`
   font-size: 18px;
 `,
-    Mn = c.div.attrs({
+    Xn = c.div.attrs({
         className: "flex-column"
     })`
   margin-top: 20px;
 `,
-    zn = c.div.attrs({
+    Zn = c.div.attrs({
         className: "maxWidth flex vc"
     })`
   margin-top: 10px;
 `,
-    Nn = t => e.jsxs(Rn, {
-        children: [e.jsx(Bn, {
+    eo = t => e.jsxs(to, {
+        children: [e.jsx(so, {
             children: "KitCollab"
-        }), e.jsx(Kn, {
+        }), e.jsx(io, {
             onClick: t.openSettings,
             children: e.jsx(ie, {
                 name: "fas fa-cog",
@@ -2637,26 +2650,26 @@ const $n = () => {
             })
         })]
     }),
-    Rn = c.div.attrs({
+    to = c.div.attrs({
         className: "flex maxWidth between"
     })`
   line-height: 1;
   margin-top: 10px;
   align-items: flex-start;
 `,
-    Bn = c.div`
+    so = c.div`
   font-size: 42px;
-  font-weight: ${D.UltraBold};
+  font-weight: ${Q.UltraBold};
 `,
-    Kn = c(U)`
+    io = c(U)`
   font-size: 24px;
 `,
-    Hn = v(t => {
+    no = v(t => {
         const {
             id: s
         } = t, {
             kitCollab: i
-        } = l.useContext(A), [o, n, r] = q(!1), a = {
+        } = l.useContext($), [o, n, r] = q(!1), a = {
             _id: `q-${s}`,
             text: t.question.text,
             type: t.question.type,
@@ -2702,14 +2715,14 @@ const $n = () => {
             customStyle: {
                 marginBottom: 20
             },
-            customBottomComponent: e.jsxs(Wn, {
+            customBottomComponent: e.jsxs(oo, {
                 children: [e.jsxs("div", {
                     className: "flex",
                     children: [e.jsx(y, {
                         type: "primary",
                         onClick: h,
                         loading: o,
-                        icon: e.jsx(xe, {}),
+                        icon: e.jsx(me, {}),
                         children: "Add To Kit"
                     }), e.jsx(y, {
                         danger: !0,
@@ -2720,10 +2733,10 @@ const $n = () => {
                         },
                         children: "Reject"
                     })]
-                }), e.jsxs(Un, {
+                }), e.jsxs(ro, {
                     children: ["Submitted by", " ", e.jsx("span", {
                         style: {
-                            fontWeight: D.Bold
+                            fontWeight: Q.Bold
                         },
                         children: t.creatorName
                     })]
@@ -2731,7 +2744,7 @@ const $n = () => {
             })
         })
     }),
-    Wn = c.div.attrs({
+    oo = c.div.attrs({
         className: "maxWidth"
     })`
   margin-top: 16px;
@@ -2740,17 +2753,17 @@ const $n = () => {
   border-radius: 8px;
   line-height: 1;
 `,
-    Un = c.div`
+    ro = c.div`
   margin-top: 10px;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.8);
 `,
-    Vn = () => e.jsxs(Gn, {
-        children: [e.jsx(Jn, {}), e.jsx(Yn, {
+    ao = () => e.jsxs(lo, {
+        children: [e.jsx(co, {}), e.jsx(ho, {
             children: "No questions to review. Once new questions are submitted, you'll find them here."
         })]
     }),
-    Gn = c.div.attrs({
+    lo = c.div.attrs({
         className: "flex-center flex-column maxWidth"
     })`
   border-style: dashed;
@@ -2759,25 +2772,25 @@ const $n = () => {
   padding: 50px;
   border-width: 3px;
 `,
-    Jn = c.img.attrs({
+    co = c.img.attrs({
         src: "/client/img/editor/empty.svg"
     })`
   height: 50px;
 `,
-    Yn = c.div`
+    ho = c.div`
   font-size: 16px;
   margin-top: 15px;
   text-align: center;
   color: #263238;
 `,
-    Xn = v(t => {
+    uo = v(t => {
         const {
             kitCollab: s
-        } = l.useContext(A), [i, o, n] = q(!1), r = () => {
+        } = l.useContext($), [i, o, n] = q(!1), r = () => {
             I({
                 url: `/api/kitcollab/session/reset-link/${s.sessionId}`,
                 success: h => {
-                    s.sessionId = h, T.success({
+                    s.sessionId = h, D.success({
                         title: "KitCollab link regenerated!",
                         content: "The old link will no longer work for contributing questions. Please send students the updated link."
                     }), t.close()
@@ -2790,7 +2803,7 @@ const $n = () => {
                 })
             })
         }, a = () => {
-            T.confirm({
+            D.confirm({
                 title: "Are you sure?",
                 content: "Disabling KitCollab will also delete any questions waiting to be accepted.",
                 okText: "Yes",
@@ -2823,24 +2836,24 @@ const $n = () => {
                 both: () => n()
             }))
         };
-        return e.jsx(fe, {
+        return e.jsx(xe, {
             open: t.open,
             onClose: t.close,
             width: 500,
             closable: !0,
-            children: e.jsxs(Zn, {
-                children: [e.jsxs(eo, {
-                    children: [e.jsxs(to, {
-                        children: [e.jsx(so, {
+            children: e.jsxs(po, {
+                children: [e.jsxs(go, {
+                    children: [e.jsxs(mo, {
+                        children: [e.jsx(xo, {
                             children: "Private KitCollab"
-                        }), e.jsxs(io, {
+                        }), e.jsxs(fo, {
                             children: ["Only allow students in your classes to contribute questions. If you haven't already created a class, you can do so", " ", e.jsx(U, {
-                                to: Ut,
+                                to: Vt,
                                 target: "_blank",
                                 children: "here."
                             })]
                         })]
-                    }), e.jsx(As, {
+                    }), e.jsx(Qs, {
                         loading: i,
                         checked: !s.isPublic,
                         onChange: d
@@ -2861,24 +2874,24 @@ const $n = () => {
             })
         })
     }),
-    Zn = c.div`
+    po = c.div`
   color: ${C.Black};
-  font-family: ${Q.SFPro};
+  font-family: ${A.SFPro};
   font-size: 18px;
   padding-top: 35px;
 `,
-    eo = c.div.attrs({
+    go = c.div.attrs({
         className: "flex vc"
     })``,
-    to = c.div`
+    mo = c.div`
   margin-right: 40px;
 `,
-    so = c.div`
+    xo = c.div`
   font-size: 24px;
-  font-weight: ${D.Bold};
+  font-weight: ${Q.Bold};
 `,
-    io = c.div``,
-    qt = () => {
+    fo = c.div``,
+    Lt = () => {
         u.kitCollab.sessionId && I({
             url: `/api/kitcollab/questions/${u.kitCollab.sessionId}`,
             success: t => {
@@ -2889,18 +2902,18 @@ const $n = () => {
             }
         })
     },
-    no = v(() => {
+    vo = v(() => {
         const {
             kitCollab: t,
             kitDetails: s
-        } = l.useContext(A), [i, o, n] = q(!1);
+        } = l.useContext($), [i, o, n] = q(!1);
         return l.useEffect(() => {
-            qt()
+            Lt()
         }, []), e.jsxs(e.Fragment, {
             children: [e.jsxs("div", {
-                children: [e.jsx(Nn, {
+                children: [e.jsx(eo, {
                     openSettings: o
-                }), e.jsx(qn, {}), e.jsx(B, {
+                }), e.jsx(Gn, {}), e.jsx(B, {
                     style: {
                         margin: "40px 0px"
                     }
@@ -2908,7 +2921,7 @@ const $n = () => {
                     children: e.jsx(Re, {
                         children: t.questions.map(r => e.jsx("div", {
                             className: "maxWidth",
-                            children: e.jsx(Hn, {
+                            children: e.jsx(no, {
                                 id: r._id,
                                 question: r.question,
                                 creatorName: r.creatorName,
@@ -2917,25 +2930,25 @@ const $n = () => {
                             })
                         }, r._id))
                     })
-                }) : e.jsx(Vn, {}) : e.jsx("div", {
+                }) : e.jsx(ao, {}) : e.jsx("div", {
                     className: "maxWidth flex-center",
                     children: e.jsx(Ne, {
                         size: "large"
                     })
                 })]
-            }), e.jsx(Xn, {
+            }), e.jsx(uo, {
                 open: i,
                 close: n
             })]
         })
     }),
-    oo = v(() => {
+    yo = v(() => {
         const {
             kitDetails: {
                 id: t
             },
             kitCollab: s
-        } = l.useContext(A), [i, o, n] = q(!1), r = () => {
+        } = l.useContext($), [i, o, n] = q(!1), r = () => {
             o(), I({
                 url: "/api/kitcollab/session/create",
                 data: {
@@ -2955,10 +2968,10 @@ const $n = () => {
                 both: () => n
             })
         };
-        return e.jsxs(ro, {
-            children: [e.jsx(ao, {}), e.jsx(lo, {
+        return e.jsxs(jo, {
+            children: [e.jsx(Co, {}), e.jsx(bo, {
                 children: "KitCollab"
-            }), e.jsx(co, {
+            }), e.jsx(ko, {
                 children: "KitCollab allows anybody, including students, to contribute questions to your kit! Build a kit together in real-time, or asynchronously!"
             }), e.jsx(B, {}), e.jsx(y, {
                 style: {
@@ -2973,20 +2986,20 @@ const $n = () => {
             })]
         })
     }),
-    ro = c.div.attrs({
+    jo = c.div.attrs({
         className: "flex-center flex-column maxAll"
     })``,
-    ao = c.img.attrs({
+    Co = c.img.attrs({
         src: "/client/img/editor/kitcollab.svg"
     })`
   height: 140px;
 `,
-    lo = c.div`
+    bo = c.div`
   font-size: 48px;
   margin-top: 10px;
-  font-weight: ${D.UltraBold};
+  font-weight: ${Q.UltraBold};
 `,
-    co = c.div`
+    ko = c.div`
   font-size: 18px;
   margin-top: 2px;
 `,
@@ -3001,34 +3014,34 @@ const $n = () => {
             }
         })
     },
-    ho = v(() => {
+    wo = v(() => {
         const {
             kitCollab: t
-        } = l.useContext(A);
+        } = l.useContext($);
         l.useEffect(() => {
             Ct()
         }, []);
         const s = () => {
-                t.panelOpen && t.enabled && t.sessionId && qt()
+                t.panelOpen && t.enabled && t.sessionId && Lt()
             },
             i = () => {
                 t.panelOpen || !t.sessionId || Ct()
             };
         return Ve(s, 5e3), Ve(i, 1e4), null
     }),
-    uo = v(() => {
+    Io = v(() => {
         const {
             kitCollab: t
-        } = l.useContext(A), s = $(), i = l.useMemo(() => s.pathname.endsWith("kit-collab"), [s.pathname]);
+        } = l.useContext($), s = _(), i = l.useMemo(() => s.pathname.endsWith("kit-collab"), [s.pathname]);
         l.useEffect(() => {
             i ? t.panelOpen = !0 : t.panelOpen = !1
         }, [i]);
         const o = l.useCallback(() => {
                 w(k)
             }, []),
-            n = () => K() ? null : t.enabled ? e.jsx(no, {}) : e.jsx(oo, {});
+            n = () => K() ? null : t.enabled ? e.jsx(vo, {}) : e.jsx(yo, {});
         return e.jsxs(e.Fragment, {
-            children: [e.jsx(fe, {
+            children: [e.jsx(xe, {
                 open: i,
                 closable: !0,
                 onClose: o,
@@ -3038,36 +3051,36 @@ const $n = () => {
                     padding: 40,
                     paddingTop: 30
                 },
-                children: e.jsx(po, {
+                children: e.jsx(So, {
                     children: n()
                 })
-            }), e.jsx(ho, {})]
+            }), e.jsx(wo, {})]
         })
     }),
-    po = c.div.attrs({
+    So = c.div.attrs({
         className: "maxWidth"
     })`
   color: ${C.Black};
-  font-family: ${Q.SFPro};
+  font-family: ${A.SFPro};
 `,
     bt = ["Any grade level", "Pre-K", "Kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade", "University"],
-    go = v(t => {
+    Oo = v(t => {
         const {
             kitDetails: s
-        } = _.useContext(A), [i, o, n] = q(!1), [r, a] = _.useState(""), [d, h] = _.useState(-1), [x, p] = _.useState(bt[0]), m = () => !(r.length < 3), f = () => {
+        } = T.useContext($), [i, o, n] = q(!1), [r, a] = T.useState(""), [d, h] = T.useState(-1), [x, p] = T.useState(bt[0]), m = () => !(r.length < 3), f = () => {
             var j;
             if (!i) {
                 if (!m()) {
                     Be.error("Please provide details about the questions you'd like to generate");
                     return
                 }
-                o(), Vt({
+                o(), Gt({
                     url: "/api/questions/generate",
                     data: {
                         topic: r,
                         numberOfQuestions: d,
                         gradeLevel: x,
-                        language: (j = us().find(S => S.key === s.language)) == null ? void 0 : j.value
+                        language: (j = ps().find(S => S.key === s.language)) == null ? void 0 : j.value
                     },
                     success: t.setQuestions,
                     error: S => {
@@ -3083,7 +3096,7 @@ const $n = () => {
                 })
             }
         };
-        _.useEffect(() => (i ? t.lock() : t.unlock(), () => {
+        T.useEffect(() => (i ? t.lock() : t.unlock(), () => {
             t.unlock()
         }), [i]);
         const g = j => d === j ? "primary" : "default";
@@ -3109,7 +3122,7 @@ const $n = () => {
                 style: {
                     marginBottom: 14
                 },
-                children: [e.jsx(mo, {}), e.jsx(Lt, {
+                children: [e.jsx($o, {}), e.jsx(Mt, {
                     children: "Generate questions with AI"
                 })]
             }), e.jsx(se.TextArea, {
@@ -3180,7 +3193,7 @@ const $n = () => {
             })]
         })
     }),
-    mo = () => e.jsx("img", {
+    $o = () => e.jsx("img", {
         src: "/client/img/editor/sparkles.svg",
         style: {
             height: 32,
@@ -3188,9 +3201,9 @@ const $n = () => {
         },
         alt: "sparkles"
     }),
-    Lt = c.div`
+    Mt = c.div`
   font-size: 24px;
-  font-weight: ${D.Bold};
+  font-weight: ${Q.Bold};
   line-height: 1;
 `,
     kt = c.div`
@@ -3198,7 +3211,7 @@ const $n = () => {
   font-style: italic;
   margin-bottom: 3px;
 `,
-    xo = t => ({
+    Qo = t => ({
         _id: t.text,
         text: t.text,
         type: oe.multipleChoice,
@@ -3208,12 +3221,12 @@ const $n = () => {
             correct: s.correct || !1
         }))
     }),
-    fo = v(t => {
+    Ao = v(t => {
         const {
             kitDetails: {
                 id: s
             }
-        } = _.useContext(A), [i, o] = _.useState([]), n = _.useMemo(() => t.questions.map(d => xo(d)), [t.questions]), r = _.useMemo(() => n.filter(d => !i.includes(d._id)), [n, i]), a = d => {
+        } = T.useContext($), [i, o] = T.useState([]), n = T.useMemo(() => t.questions.map(d => Qo(d)), [t.questions]), r = T.useMemo(() => n.filter(d => !i.includes(d._id)), [n, i]), a = d => {
             const h = d.map(x => ({
                 questionText: x.text,
                 type: x.type,
@@ -3227,7 +3240,7 @@ const $n = () => {
                 stay: !0
             })
         };
-        return _.useEffect(() => {
+        return T.useEffect(() => {
             r.length || (t.close(), t.reset())
         }, [r.length]), e.jsxs("div", {
             className: "maxWidth",
@@ -3239,21 +3252,21 @@ const $n = () => {
                     marginBottom: 20
                 },
                 children: [e.jsxs("div", {
-                    children: [e.jsx(Lt, {
+                    children: [e.jsx(Mt, {
                         style: {
                             lineHeight: "normal",
                             marginBottom: 2,
                             color: "#2E7D32"
                         },
                         children: "Generated questions"
-                    }), e.jsx(vo, {
+                    }), e.jsx(Do, {
                         children: "Check for errors. Questions can be edited later."
                     })]
                 }), e.jsxs("div", {
                     className: "flex-column flex-center",
                     children: [e.jsx(y, {
                         type: "primary",
-                        icon: e.jsx(xe, {}),
+                        icon: e.jsx(me, {}),
                         style: {
                             marginBottom: 3
                         },
@@ -3291,28 +3304,28 @@ const $n = () => {
             })]
         })
     }),
-    vo = c.div`
+    Do = c.div`
   font-size: 14px;
   font-style: italic;
   color: rgba(0, 0, 0, 0.84);
 `,
-    yo = t => {
-        const [s, i, o] = q(!0), [n, r] = _.useState([]), a = () => {
+    To = t => {
+        const [s, i, o] = q(!0), [n, r] = T.useState([]), a = () => {
             s && t.close()
         }, d = () => {
             r([])
         }, h = () => K() ? e.jsx("div", {
             children: "Not available for students."
-        }) : n.length ? e.jsx(fo, {
+        }) : n.length ? e.jsx(Ao, {
             questions: n,
             reset: d,
             close: a
-        }) : e.jsx(go, {
+        }) : e.jsx(Oo, {
             lock: o,
             unlock: i,
             setQuestions: r
         });
-        return e.jsx(T, {
+        return e.jsx(D, {
             open: t.visible,
             onCancel: a,
             footer: !1,
@@ -3329,36 +3342,36 @@ const $n = () => {
             children: h()
         })
     },
-    jo = () => {
+    _o = () => {
         const t = St(),
-            s = $(),
+            s = _(),
             i = () => t(-1),
             o = s.pathname.endsWith("ai");
-        return e.jsx(yo, {
+        return e.jsx(To, {
             visible: o,
             close: i
         })
     },
-    Co = c.div`
+    Eo = c.div`
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
 `,
-    bo = Xt(() => {
-        const t = $(),
+    Po = Zt(() => {
+        const t = _(),
             {
                 kitDetails: s,
                 editor: i
-            } = l.useContext(A),
+            } = l.useContext($),
             o = () => e.jsxs(e.Fragment, {
-                children: [e.jsxs(Co, {
-                    children: [e.jsx(Ei, {}), e.jsx(nn, {})]
-                }), e.jsx(on, {}), e.jsx(pn, {}), e.jsx(gn, {}), e.jsx(yn, {}), e.jsx(Qn, {}), e.jsx($n, {}), e.jsx(jo, {}), e.jsx(uo, {}), t.pathname.endsWith("editor") && i.questions.length === 0 && e.jsx(ko, {})]
+                children: [e.jsxs(Eo, {
+                    children: [e.jsx(Ni, {}), e.jsx(gn, {})]
+                }), e.jsx(mn, {}), e.jsx(wn, {}), e.jsx(In, {}), e.jsx(An, {}), e.jsx(Rn, {}), e.jsx(Wn, {}), e.jsx(_o, {}), e.jsx(Io, {}), t.pathname.endsWith("editor") && i.questions.length === 0 && e.jsx(qo, {})]
             });
-        return s.id ? o() : e.jsx(bn, {})
+        return s.id ? o() : e.jsx(_n, {})
     }),
-    ko = c.div`
+    qo = c.div`
   position: absolute;
   left: 0;
   top: 0;
@@ -3368,12 +3381,12 @@ const $n = () => {
   opacity: 0.7;
   z-index: 9;
 `;
-var wo = Object.getOwnPropertyDescriptor,
-    Io = (t, s, i, o) => {
-        for (var n = o > 1 ? void 0 : o ? wo(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
+var Lo = Object.getOwnPropertyDescriptor,
+    Mo = (t, s, i, o) => {
+        for (var n = o > 1 ? void 0 : o ? Lo(s, i) : s, r = t.length - 1, a; r >= 0; r--)(a = t[r]) && (n = a(n) || n);
         return n
     };
-const So = 510;
+const Fo = 510;
 let Pe = class extends l.Component {
     constructor() {
         super(...arguments), this.state = {
@@ -3397,7 +3410,7 @@ let Pe = class extends l.Component {
                     isPrivate: K()
                 },
                 success: s => {
-                    Ds({
+                    As({
                         event: "kit_created"
                     }), this.setState({
                         createdKit: !0
@@ -3408,7 +3421,7 @@ let Pe = class extends l.Component {
                     } = u;
                     o.editSessionCounted = !0, i.id = s._id, i.title = s.title, i.image = s.image, i.language = s.lang, i.gradeLevel = s.gradeLevel, i.privacy = s.privacy, w(k)
                 },
-                error: s => T.error({
+                error: s => D.error({
                     title: "Error Creating Kit",
                     content: s && s.message && s.message.text ? s.message.text : "Please try again"
                 }),
@@ -3423,11 +3436,11 @@ let Pe = class extends l.Component {
         })
     }
     componentDidMount() {
-        this.props.kitDetails.id && X(me)
+        this.props.kitDetails.id && X(ge)
     }
     render() {
         return e.jsx("div", {
-            children: e.jsx(T, {
+            children: e.jsx(D, {
                 open: !0,
                 style: {
                     top: 20
@@ -3436,12 +3449,12 @@ let Pe = class extends l.Component {
                 closable: !1,
                 children: e.jsxs("div", {
                     style: {
-                        height: So
+                        height: Fo
                     },
                     className: "disable-scrollbars scroll",
-                    children: [this.state.stage === "details" && e.jsx(Ce, {
+                    children: [this.state.stage === "details" && e.jsx(je, {
                         onNext: this.onKitDetails
-                    }), this.state.stage === "image" && e.jsx(At, {
+                    }), this.state.stage === "image" && e.jsx($t, {
                         title: "Choose a cover photo",
                         defaultSearchTerm: this.props.kitDetails.title,
                         onImagePicked: this.onImagePicked
@@ -3451,22 +3464,22 @@ let Pe = class extends l.Component {
         })
     }
 };
-Pe = Io([O("kitDetails"), v], Pe);
-const fa = () => (Qs(() => {
+Pe = Mo([O("kitDetails"), v], Pe);
+const Aa = () => (Ds(() => {
     u.editor.reset(), u.kitDetails.reset(), u.kitCollab.reset()
-}), e.jsxs(Ws, {
-    children: [e.jsx(Gt, {
+}), e.jsxs(Us, {
+    children: [e.jsx(Jt, {
         children: e.jsxs("title", {
-            children: [Jt, " | Kit Creator"]
+            children: [Yt, " | Kit Creator"]
         })
-    }), e.jsx(A.Provider, {
+    }), e.jsx($.Provider, {
         value: u,
-        children: e.jsx(Zt, {
+        children: e.jsx(es, {
             ...u,
-            children: e.jsxs(Yt, {
+            children: e.jsxs(Xt, {
                 children: [e.jsx(We, {
                     path: ":kitId/*",
-                    element: e.jsx(bo, {})
+                    element: e.jsx(Po, {})
                 }), e.jsx(We, {
                     path: "/",
                     element: e.jsx(Pe, {})
@@ -3476,6 +3489,6 @@ const fa = () => (Qs(() => {
     })]
 }));
 export {
-    fa as
+    Aa as
     default
 };

@@ -1,7 +1,7 @@
 import {
     v as jr,
+    u as g,
     n as re,
-    t as g,
     a as ee,
     w as _e,
     q as de,
@@ -537,12 +537,12 @@ function $e() {
     if (Zr) return ur;
     Zr = 1;
     var n = me(),
-        t = function() {
+        t = (function() {
             try {
                 var e = n(Object, "defineProperty");
                 return e({}, "", {}), e
             } catch {}
-        }();
+        })();
     return ur = t, ur
 }
 var sr, Jr;

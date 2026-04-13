@@ -714,10 +714,10 @@ function Z(n, t, r) {
 }
 var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
     tt = typeof CSS < "u" && CSS.escape,
-    Ge = function(n) {
+    Ge = (function(n) {
         return tt ? tt(n) : n.replace(dr, "\\$1")
-    },
-    xt = function() {
+    }),
+    xt = (function() {
         function n(r, e, i) {
             this.type = "style", this.isProcessed = !1;
             var a = i.sheet,
@@ -739,8 +739,8 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
             var h = this.options.sheet;
             return h && h.attached, this
         }, n
-    }(),
-    $e = function(n) {
+    })(),
+    $e = (function(n) {
         vt(t, n);
 
         function t(e, i, a) {
@@ -791,7 +791,7 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
                 return this.selectorText
             }
         }]), t
-    }(xt),
+    })(xt),
     hr = {
         onCreateRule: function(t, r, e) {
             return t[0] === "@" || e.parent && e.parent.type === "keyframes" ? null : new $e(t, r, e)
@@ -802,7 +802,7 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
         children: !0
     },
     pr = /@([\w-]+)/,
-    gr = function() {
+    gr = (function() {
         function n(r, e, i) {
             this.type = "conditional", this.isProcessed = !1, this.key = r;
             var a = r.match(pr);
@@ -831,7 +831,7 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
             var s = this.rules.toString(e);
             return s ? this.query + " {" + a + s + a + "}" : ""
         }, n
-    }(),
+    })(),
     vr = /@container|@media|@supports\s+/,
     mr = {
         onCreateRule: function(t, r, e) {
@@ -843,7 +843,7 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
         children: !0
     },
     yr = /@keyframes\s+([\w-]+)/,
-    Ae = function() {
+    Ae = (function() {
         function n(r, e, i) {
             this.type = "keyframes", this.at = "@keyframes", this.isProcessed = !1;
             var a = r.match(yr);
@@ -868,7 +868,7 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
             var s = this.rules.toString(e);
             return s && (s = "" + a + s + a), this.at + " " + this.id + " {" + s + "}"
         }, n
-    }(),
+    })(),
     br = /@keyframes\s+/,
     Sr = /\$([\w-]+)/g,
     Me = function(t, r) {
@@ -901,7 +901,7 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
             }
         }
     },
-    Rr = function(n) {
+    Rr = (function(n) {
         vt(t, n);
 
         function t() {
@@ -916,13 +916,13 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
                 }) : i;
             return Z(this.key, this.style, o)
         }, t
-    }(xt),
+    })(xt),
     wr = {
         onCreateRule: function(t, r, e) {
             return e.parent && e.parent.type === "keyframes" ? new Rr(t, r, e) : null
         }
     },
-    Pr = function() {
+    Pr = (function() {
         function n(r, e, i) {
             this.type = "font-face", this.at = "@font-face", this.isProcessed = !1, this.key = r, this.style = e, this.options = i
         }
@@ -936,14 +936,14 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
             }
             return Z(this.at, this.style, e)
         }, n
-    }(),
+    })(),
     Cr = /@font-face/,
     kr = {
         onCreateRule: function(t, r, e) {
             return Cr.test(t) ? new Pr(t, r, e) : null
         }
     },
-    Or = function() {
+    Or = (function() {
         function n(r, e, i) {
             this.type = "viewport", this.at = "@viewport", this.isProcessed = !1, this.key = r, this.style = e, this.options = i
         }
@@ -951,13 +951,13 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
         return t.toString = function(e) {
             return Z(this.key, this.style, e)
         }, n
-    }(),
+    })(),
     jr = {
         onCreateRule: function(t, r, e) {
             return t === "@viewport" || t === "@-ms-viewport" ? new Or(t, r, e) : null
         }
     },
-    Tr = function() {
+    Tr = (function() {
         function n(r, e, i) {
             this.type = "simple", this.isProcessed = !1, this.key = r, this.value = e, this.options = i
         }
@@ -970,7 +970,7 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
             }
             return this.key + " " + this.value + ";"
         }, n
-    }(),
+    })(),
     $r = {
         "@charset": !0,
         "@import": !0,
@@ -989,7 +989,7 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
         force: !0,
         process: !0
     },
-    ie = function() {
+    ie = (function() {
         function n(r) {
             this.map = {}, this.raw = {}, this.index = [], this.counter = 0, this.options = r, this.classes = r.classes, this.keyframes = r.keyframes
         }
@@ -1078,8 +1078,8 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
             }
             return i
         }, n
-    }(),
-    Rt = function() {
+    })(),
+    Rt = (function() {
         function n(r, e) {
             this.attached = !1, this.deployed = !1, this.classes = {}, this.keyframes = {}, this.options = b({}, e, {
                 sheet: this,
@@ -1131,8 +1131,8 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
         }, t.toString = function(e) {
             return this.rules.toString(e)
         }, n
-    }(),
-    _r = function() {
+    })(),
+    _r = (function() {
         function n() {
             this.plugins = {
                 internal: [],
@@ -1177,8 +1177,8 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
                 onUpdate: []
             }))
         }, n
-    }(),
-    Ir = function() {
+    })(),
+    Ir = (function() {
         function n() {
             this.registry = []
         }
@@ -1214,7 +1214,7 @@ var dr = /([[\].#*$><+~=|^:(),"'`\s])/g,
                 return this.registry.length === 0 ? 0 : this.registry[this.registry.length - 1].options.index
             }
         }]), n
-    }(),
+    })(),
     J = new Ir,
     _e = typeof globalThis < "u" ? globalThis : typeof window < "u" && window.Math === Math ? window : typeof self < "u" && self.Math === Math ? self : Function("return this")(),
     Ie = "2f1acc6c3a606b082e5eef5e54414ffb";
@@ -1354,7 +1354,7 @@ var Ur = wt(function() {
         return t.textContent = `
 `, t
     },
-    Kr = function() {
+    Kr = (function() {
         function n(r) {
             this.getPropertyValue = Er, this.setProperty = Nr, this.removeProperty = Wr, this.setSelector = zr, this.hasInsertedRules = !1, this.cssRules = [], r && J.add(r), this.sheet = r;
             var e = this.sheet ? this.sheet.options : {},
@@ -1423,9 +1423,9 @@ var Ur = wt(function() {
         }, t.getRules = function() {
             return this.element.sheet.cssRules
         }, n
-    }(),
+    })(),
     Br = 0,
-    Hr = function() {
+    Hr = (function() {
         function n(r) {
             this.id = Br++, this.version = "10.10.0", this.plugins = new _r, this.options = {
                 id: {
@@ -1476,11 +1476,11 @@ var Ur = wt(function() {
                 e.plugins.use(o)
             }), this
         }, n
-    }(),
+    })(),
     Ct = function(t) {
         return new Hr(t)
     },
-    yi = function() {
+    yi = (function() {
         function n() {
             this.length = 0, this.sheets = new WeakMap
         }
@@ -1505,7 +1505,7 @@ var Ur = wt(function() {
                 return this.length
             }
         }]), n
-    }(),
+    })(),
     Le = typeof CSS == "object" && CSS != null && "number" in CSS;
 
 function kt(n) {
@@ -1560,7 +1560,7 @@ var Ot = Date.now(),
     },
     M = "@global",
     Ee = "@global ",
-    Yr = function() {
+    Yr = (function() {
         function n(r, e, i) {
             this.type = "global", this.at = M, this.isProcessed = !1, this.key = r, this.options = i, this.rules = new ie(b({}, i, {
                 parent: this
@@ -1582,8 +1582,8 @@ var Ot = Date.now(),
         }, t.toString = function(e) {
             return this.rules.toString(e)
         }, n
-    }(),
-    Zr = function() {
+    })(),
+    Zr = (function() {
         function n(r, e, i) {
             this.type = "global", this.at = M, this.isProcessed = !1, this.key = r, this.options = i;
             var a = r.substr(Ee.length);
@@ -1595,7 +1595,7 @@ var Ot = Date.now(),
         return t.toString = function(e) {
             return this.rule ? this.rule.toString(e) : ""
         }, n
-    }(),
+    })(),
     Qr = /\s*,\s*/g;
 
 function jt(n, t) {

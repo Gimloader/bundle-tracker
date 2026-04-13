@@ -4,7 +4,7 @@ import {
     j as e,
     U as k,
     B as I,
-    d as t,
+    b as t,
     aW as f,
     t as u,
     aa as A,
@@ -31,7 +31,7 @@ import {
 } from "./stripe.esm.js";
 import {
     S as o,
-    a as T
+    a as b
 } from "./SeasonTicketName.js";
 import {
     S as N,
@@ -51,7 +51,7 @@ import {
 } from "./AccessibleAnchor.js";
 import {
     G as J,
-    a as b,
+    a as T,
     R as Q
 } from "./RedirectToHomepage.js";
 import {
@@ -221,7 +221,7 @@ const ie = s => {
 `,
     de = () => e.jsxs(le, {
         children: [e.jsxs(xe, {
-            children: [T.seasonName, " ", T.seasonNumber]
+            children: [b.seasonName, " ", b.seasonNumber]
         }), e.jsx(me, {
             children: o.name
         })]
@@ -347,8 +347,8 @@ const ie = s => {
         var i, n;
         s.boughtForSelf && j() && !((n = (i = L()) == null ? void 0 : i.seasonTicket) != null && n.viewed) && B({})
     }, [s.boughtForSelf]), e.jsxs(we, {
-        children: [e.jsx(Te, {
-            children: e.jsxs(be, {
+        children: [e.jsx(be, {
+            children: e.jsxs(Te, {
                 children: [e.jsx(Ce, {
                     children: e.jsx(Fe, {
                         src: U
@@ -403,14 +403,14 @@ const ie = s => {
     padding: 40px 20px;
   }
 `,
-    Te = t.div.attrs({
+    be = t.div.attrs({
         className: "animated bounceIn"
     })`
   width: 100%;
   max-width: 900px;
   z-index: 1;
 `,
-    be = t(y)`
+    Te = t(y)`
   gap: 50px;
   @media (max-width: 820px) {
     flex-direction: column;
@@ -462,7 +462,7 @@ const ie = s => {
                         title: "Error loading season ticket info",
                         content: "Please refresh and try again."
                     },
-                    onOk: b
+                    onOk: T
                 })
             }) : Q()
         };
@@ -479,7 +479,7 @@ const ie = s => {
                             title: "Error completion purchase",
                             content: "Refresh and try again. If the issue persists, please contact support."
                         },
-                        onOk: b
+                        onOk: T
                     })
                 }
             }) : x()
