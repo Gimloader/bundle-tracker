@@ -1,64 +1,62 @@
 import {
-    dd as G,
-    de as ct,
-    r as f,
+    de as G,
+    r as c,
     am as j,
-    aB as kt,
-    d9 as Et,
+    aB as It,
+    da as kt,
     aD as T,
-    bL as Lt,
+    bK as Et,
     _ as Vt,
-    ak as L,
+    ak as V,
     ai as zt,
-    aj as dt,
-    cM as Bt,
-    aL as Mt,
-    aK as ft,
-    al as Dt,
-    bc as Ht,
-    aO as Xt,
+    aj as pt,
+    cN as Lt,
+    aL as Bt,
+    aK as ct,
+    al as Mt,
+    bc as Dt,
+    aO as Ht,
+    bt as Xt,
     aG as Wt,
     bZ as Yt,
     df as qt,
     bY as Ft,
-    d6 as Zt,
+    d7 as Zt,
     aQ as Ut,
-    cS as Gt,
-    bt as Qt
+    cT as Gt
 } from "./_index.js";
 
-function Jt(e, o) {
-    return G.reduce((a, t) => {
-        const r = e[`${t}1`],
+function Qt(e, o) {
+    return G.reduce((r, t) => {
+        const a = e[`${t}1`],
             s = e[`${t}3`],
             n = e[`${t}6`],
             i = e[`${t}7`];
-        return Object.assign(Object.assign({}, a), o(t, {
-            lightColor: r,
+        return Object.assign(Object.assign({}, r), o(t, {
+            lightColor: a,
             lightBorderColor: s,
             darkColor: n,
             textColor: i
         }))
     }, {})
 }
-const Kt = e => e instanceof ct ? e : new ct(e);
 
-function ut(e) {
+function dt(e) {
     var o = e.children,
-        a = e.prefixCls,
+        r = e.prefixCls,
         t = e.id,
-        r = e.overlayInnerStyle,
+        a = e.overlayInnerStyle,
         s = e.bodyClassName,
         n = e.className,
         i = e.style;
-    return f.createElement("div", {
-        className: j("".concat(a, "-content"), n),
+    return c.createElement("div", {
+        className: j("".concat(r, "-content"), n),
         style: i
-    }, f.createElement("div", {
-        className: j("".concat(a, "-inner"), s),
+    }, c.createElement("div", {
+        className: j("".concat(r, "-inner"), s),
         id: t,
         role: "tooltip",
-        style: r
+        style: a
     }, typeof o == "function" ? o() : o))
 }
 var I = {
@@ -70,7 +68,7 @@ var I = {
         shiftY: !0
     },
     v = [0, 0],
-    te = {
+    Jt = {
         left: {
             points: ["cr", "cl"],
             overflow: k,
@@ -144,28 +142,28 @@ var I = {
             targetOffset: v
         }
     },
-    ee = ["overlayClassName", "trigger", "mouseEnterDelay", "mouseLeaveDelay", "overlayStyle", "prefixCls", "children", "onVisibleChange", "afterVisibleChange", "transitionName", "animation", "motion", "placement", "align", "destroyTooltipOnHide", "defaultVisible", "getTooltipContainer", "overlayInnerStyle", "arrowContent", "overlay", "id", "showArrow", "classNames", "styles"],
-    oe = function(o, a) {
+    Kt = ["overlayClassName", "trigger", "mouseEnterDelay", "mouseLeaveDelay", "overlayStyle", "prefixCls", "children", "onVisibleChange", "afterVisibleChange", "transitionName", "animation", "motion", "placement", "align", "destroyTooltipOnHide", "defaultVisible", "getTooltipContainer", "overlayInnerStyle", "arrowContent", "overlay", "id", "showArrow", "classNames", "styles"],
+    te = function(o, r) {
         var t = o.overlayClassName,
-            r = o.trigger,
-            s = r === void 0 ? ["hover"] : r,
+            a = o.trigger,
+            s = a === void 0 ? ["hover"] : a,
             n = o.mouseEnterDelay,
             i = n === void 0 ? 0 : n,
             l = o.mouseLeaveDelay,
-            d = l === void 0 ? .1 : l,
-            p = o.overlayStyle,
-            h = o.prefixCls,
-            c = h === void 0 ? "rc-tooltip" : h,
-            g = o.children,
-            b = o.onVisibleChange,
-            m = o.afterVisibleChange,
+            p = l === void 0 ? .1 : l,
+            u = o.overlayStyle,
+            f = o.prefixCls,
+            d = f === void 0 ? "rc-tooltip" : f,
+            b = o.children,
+            h = o.onVisibleChange,
+            g = o.afterVisibleChange,
             O = o.transitionName,
             $ = o.animation,
             C = o.motion,
             N = o.placement,
-            V = N === void 0 ? "right" : N,
-            z = o.align,
-            Q = z === void 0 ? {} : z,
+            z = N === void 0 ? "right" : N,
+            L = o.align,
+            Q = L === void 0 ? {} : L,
             B = o.destroyTooltipOnHide,
             J = B === void 0 ? !1 : B,
             K = o.defaultVisible,
@@ -178,72 +176,72 @@ var I = {
             M = E === void 0 ? !0 : E,
             w = o.classNames,
             _ = o.styles,
-            D = kt(o, ee),
-            H = Et(P),
-            X = f.useRef(null);
-        f.useImperativeHandle(a, function() {
+            D = It(o, Kt),
+            H = kt(P),
+            X = c.useRef(null);
+        c.useImperativeHandle(r, function() {
             return X.current
         });
         var W = T({}, D);
         "visible" in o && (W.popupVisible = o.visible);
         var Y = function() {
-                return f.createElement(ut, {
+                return c.createElement(dt, {
                     key: "content",
-                    prefixCls: c,
+                    prefixCls: d,
                     id: H,
                     bodyClassName: w == null ? void 0 : w.body,
                     overlayInnerStyle: T(T({}, et), _ == null ? void 0 : _.body)
                 }, x)
             },
             q = function() {
-                var S = f.Children.only(g),
+                var S = c.Children.only(b),
                     F = (S == null ? void 0 : S.props) || {},
                     rt = T(T({}, F), {}, {
                         "aria-describedby": x ? H : null
                     });
-                return f.cloneElement(g, rt)
+                return c.cloneElement(b, rt)
             };
-        return f.createElement(Lt, Vt({
+        return c.createElement(Et, Vt({
             popupClassName: j(t, w == null ? void 0 : w.root),
-            prefixCls: c,
+            prefixCls: d,
             popup: Y,
             action: s,
-            builtinPlacements: te,
-            popupPlacement: V,
+            builtinPlacements: Jt,
+            popupPlacement: z,
             ref: X,
             popupAlign: Q,
             getPopupContainer: tt,
-            onPopupVisibleChange: b,
-            afterPopupVisibleChange: m,
+            onPopupVisibleChange: h,
+            afterPopupVisibleChange: g,
             popupTransitionName: O,
             popupAnimation: $,
             popupMotion: C,
             defaultPopupVisible: K,
             autoDestroy: J,
-            mouseLeaveDelay: d,
-            popupStyle: T(T({}, p), _ == null ? void 0 : _.root),
+            mouseLeaveDelay: p,
+            popupStyle: T(T({}, u), _ == null ? void 0 : _.root),
             mouseEnterDelay: i,
             arrow: M
         }, W), q())
     };
-const re = f.forwardRef(oe);
+const ee = c.forwardRef(te);
 
-function ae(e) {
+function oe(e) {
     const {
         sizePopupArrow: o,
-        borderRadiusXS: a,
+        borderRadiusXS: r,
         borderRadiusOuter: t
-    } = e, r = o / 2, s = 0, n = r, i = t * 1 / Math.sqrt(2), l = r - t * (1 - 1 / Math.sqrt(2)), d = r - a * (1 / Math.sqrt(2)), p = t * (Math.sqrt(2) - 1) + a * (1 / Math.sqrt(2)), h = 2 * r - d, c = p, g = 2 * r - i, b = l, m = 2 * r - s, O = n, $ = r * Math.sqrt(2) + t * (Math.sqrt(2) - 2), C = t * (Math.sqrt(2) - 1), N = `polygon(${C}px 100%, 50% ${C}px, ${2*r-C}px 100%, ${C}px 100%)`, V = `path('M ${s} ${n} A ${t} ${t} 0 0 0 ${i} ${l} L ${d} ${p} A ${a} ${a} 0 0 1 ${h} ${c} L ${g} ${b} A ${t} ${t} 0 0 0 ${m} ${O} Z')`;
+    } = e, a = o / 2, s = 0, n = a, i = t * 1 / Math.sqrt(2), l = a - t * (1 - 1 / Math.sqrt(2)), p = a - r * (1 / Math.sqrt(2)), u = t * (Math.sqrt(2) - 1) + r * (1 / Math.sqrt(2)), f = 2 * a - p, d = u, b = 2 * a - i, h = l, g = 2 * a - s, O = n, $ = a * Math.sqrt(2) + t * (Math.sqrt(2) - 2), C = t * (Math.sqrt(2) - 1), N = `polygon(${C}px 100%, 50% ${C}px, ${2*a-C}px 100%, ${C}px 100%)`, z = `path('M ${s} ${n} A ${t} ${t} 0 0 0 ${i} ${l} L ${p} ${u} A ${r} ${r} 0 0 1 ${f} ${d} L ${b} ${h} A ${t} ${t} 0 0 0 ${g} ${O} Z')`;
     return {
         arrowShadowWidth: $,
-        arrowPath: V,
+        arrowPath: z,
         arrowPolygon: N
     }
 }
-const ne = (e, o, a) => {
+const re = (e, o, r) => {
         const {
             sizePopupArrow: t,
-            arrowPolygon: r,
+            arrowPolygon: a,
             arrowPath: s,
             arrowShadowWidth: n,
             borderRadiusXS: i,
@@ -263,7 +261,7 @@ const ne = (e, o, a) => {
                 background: o,
                 clipPath: {
                     _multi_value_: !0,
-                    value: [r, s]
+                    value: [a, s]
                 },
                 content: '""'
             },
@@ -277,25 +275,25 @@ const ne = (e, o, a) => {
                 margin: "auto",
                 borderRadius: {
                     _skip_check_: !0,
-                    value: `0 0 ${L(i)} 0`
+                    value: `0 0 ${V(i)} 0`
                 },
                 transform: "translateY(50%) rotate(-135deg)",
-                boxShadow: a,
+                boxShadow: r,
                 zIndex: 0,
                 background: "transparent"
             }
         }
     },
-    mt = 8;
+    ut = 8;
 
-function gt(e) {
+function mt(e) {
     const {
         contentRadius: o,
-        limitVerticalRadius: a
+        limitVerticalRadius: r
     } = e, t = o > 12 ? o + 2 : 12;
     return {
         arrowOffsetHorizontal: t,
-        arrowOffsetVertical: a ? mt : t
+        arrowOffsetVertical: r ? ut : t
     }
 }
 
@@ -303,10 +301,10 @@ function U(e, o) {
     return e ? o : {}
 }
 
-function se(e, o, a) {
+function ae(e, o, r) {
     const {
         componentCls: t,
-        boxShadowPopoverArrow: r,
+        boxShadowPopoverArrow: a,
         arrowOffsetVertical: s,
         arrowOffsetHorizontal: n
     } = e, {
@@ -317,14 +315,14 @@ function se(e, o, a) {
             top: !0,
             bottom: !0
         }
-    } = a || {};
+    } = r || {};
     return {
         [t]: Object.assign(Object.assign(Object.assign(Object.assign({
             [`${t}-arrow`]: [Object.assign(Object.assign({
                 position: "absolute",
                 zIndex: 1,
                 display: "block"
-            }, ne(e, o, r)), {
+            }, re(e, o, a)), {
                 "&:before": {
                     background: o
                 }
@@ -353,7 +351,7 @@ function se(e, o, a) {
                 }
             },
             "&-placement-topRight": {
-                "--arrow-offset-horizontal": `calc(100% - ${L(n)})`,
+                "--arrow-offset-horizontal": `calc(100% - ${V(n)})`,
                 [`> ${t}-arrow`]: {
                     right: {
                         _skip_check_: !0,
@@ -385,7 +383,7 @@ function se(e, o, a) {
                 }
             },
             "&-placement-bottomRight": {
-                "--arrow-offset-horizontal": `calc(100% - ${L(n)})`,
+                "--arrow-offset-horizontal": `calc(100% - ${V(n)})`,
                 [`> ${t}-arrow`]: {
                     right: {
                         _skip_check_: !0,
@@ -443,27 +441,27 @@ function se(e, o, a) {
     }
 }
 
-function ie(e, o, a, t) {
+function ne(e, o, r, t) {
     if (t === !1) return {
         adjustX: !1,
         adjustY: !1
     };
-    const r = t && typeof t == "object" ? t : {},
+    const a = t && typeof t == "object" ? t : {},
         s = {};
     switch (e) {
         case "top":
         case "bottom":
-            s.shiftX = o.arrowOffsetHorizontal * 2 + a, s.shiftY = !0, s.adjustY = !0;
+            s.shiftX = o.arrowOffsetHorizontal * 2 + r, s.shiftY = !0, s.adjustY = !0;
             break;
         case "left":
         case "right":
-            s.shiftY = o.arrowOffsetVertical * 2 + a, s.shiftX = !0, s.adjustX = !0;
+            s.shiftY = o.arrowOffsetVertical * 2 + r, s.shiftX = !0, s.adjustX = !0;
             break
     }
-    const n = Object.assign(Object.assign({}, s), r);
+    const n = Object.assign(Object.assign({}, s), a);
     return n.shiftX || (n.adjustX = !0), n.shiftY || (n.adjustY = !0), n
 }
-const pt = {
+const ft = {
         left: {
             points: ["cr", "cl"]
         },
@@ -501,7 +499,7 @@ const pt = {
             points: ["br", "bl"]
         }
     },
-    le = {
+    se = {
         topLeft: {
             points: ["bl", "tc"]
         },
@@ -527,87 +525,88 @@ const pt = {
             points: ["br", "cl"]
         }
     },
-    ce = new Set(["topLeft", "topRight", "bottomLeft", "bottomRight", "leftTop", "leftBottom", "rightTop", "rightBottom"]);
+    ie = new Set(["topLeft", "topRight", "bottomLeft", "bottomRight", "leftTop", "leftBottom", "rightTop", "rightBottom"]);
 
-function fe(e) {
+function le(e) {
     const {
         arrowWidth: o,
-        autoAdjustOverflow: a,
+        autoAdjustOverflow: r,
         arrowPointAtCenter: t,
-        offset: r,
+        offset: a,
         borderRadius: s,
         visibleFirst: n
-    } = e, i = o / 2, l = {}, d = gt({
-        contentRadius: s,
-        limitVerticalRadius: !0
-    });
-    return Object.keys(pt).forEach(p => {
-        const h = t && le[p] || pt[p],
-            c = Object.assign(Object.assign({}, h), {
+    } = e, i = o / 2, l = {};
+    return Object.keys(ft).forEach(p => {
+        const u = t && se[p] || ft[p],
+            f = Object.assign(Object.assign({}, u), {
                 offset: [0, 0],
                 dynamicInset: !0
             });
-        switch (l[p] = c, ce.has(p) && (c.autoArrow = !1), p) {
+        switch (l[p] = f, ie.has(p) && (f.autoArrow = !1), p) {
             case "top":
             case "topLeft":
             case "topRight":
-                c.offset[1] = -i - r;
+                f.offset[1] = -i - a;
                 break;
             case "bottom":
             case "bottomLeft":
             case "bottomRight":
-                c.offset[1] = i + r;
+                f.offset[1] = i + a;
                 break;
             case "left":
             case "leftTop":
             case "leftBottom":
-                c.offset[0] = -i - r;
+                f.offset[0] = -i - a;
                 break;
             case "right":
             case "rightTop":
             case "rightBottom":
-                c.offset[0] = i + r;
+                f.offset[0] = i + a;
                 break
         }
+        const d = mt({
+            contentRadius: s,
+            limitVerticalRadius: !0
+        });
         if (t) switch (p) {
             case "topLeft":
             case "bottomLeft":
-                c.offset[0] = -d.arrowOffsetHorizontal - i;
+                f.offset[0] = -d.arrowOffsetHorizontal - i;
                 break;
             case "topRight":
             case "bottomRight":
-                c.offset[0] = d.arrowOffsetHorizontal + i;
+                f.offset[0] = d.arrowOffsetHorizontal + i;
                 break;
             case "leftTop":
             case "rightTop":
-                c.offset[1] = -d.arrowOffsetHorizontal * 2 + i;
+                f.offset[1] = -d.arrowOffsetHorizontal * 2 + i;
                 break;
             case "leftBottom":
             case "rightBottom":
-                c.offset[1] = d.arrowOffsetHorizontal * 2 - i;
+                f.offset[1] = d.arrowOffsetHorizontal * 2 - i;
                 break
         }
-        c.overflow = ie(p, d, o, a), n && (c.htmlRegion = "visibleFirst")
+        f.overflow = ne(p, d, o, r), n && (f.htmlRegion = "visibleFirst")
     }), l
 }
-const pe = e => {
+const ce = e => {
         const {
             calc: o,
-            componentCls: a,
+            componentCls: r,
             tooltipMaxWidth: t,
-            tooltipColor: r,
+            tooltipColor: a,
             tooltipBg: s,
             tooltipBorderRadius: n,
             zIndexPopup: i,
             controlHeight: l,
-            boxShadowSecondary: d,
-            paddingSM: p,
-            paddingXS: h,
-            arrowOffsetHorizontal: c,
-            sizePopupArrow: g
-        } = e, b = o(n).add(g).add(c).equal(), m = o(n).mul(2).add(g).equal();
+            boxShadowSecondary: p,
+            paddingSM: u,
+            paddingXS: f,
+            arrowOffsetHorizontal: d,
+            sizePopupArrow: b
+        } = e, h = o(n).add(b).add(d).equal(), g = o(n).mul(2).add(b).equal();
         return [{
-            [a]: Object.assign(Object.assign(Object.assign(Object.assign({}, Mt(e)), {
+            [r]: Object.assign(Object.assign(Object.assign(Object.assign({}, Bt(e)), {
                 position: "absolute",
                 zIndex: i,
                 display: "block",
@@ -620,42 +619,42 @@ const pe = e => {
                     display: "none"
                 },
                 "--antd-arrow-background-color": s,
-                [`${a}-inner`]: {
-                    minWidth: m,
+                [`${r}-inner`]: {
+                    minWidth: g,
                     minHeight: l,
-                    padding: `${L(e.calc(p).div(2).equal())} ${L(h)}`,
-                    color: `var(--ant-tooltip-color, ${r})`,
+                    padding: `${V(e.calc(u).div(2).equal())} ${V(f)}`,
+                    color: a,
                     textAlign: "start",
                     textDecoration: "none",
                     wordWrap: "break-word",
                     backgroundColor: s,
                     borderRadius: n,
-                    boxShadow: d,
+                    boxShadow: p,
                     boxSizing: "border-box"
                 },
                 [
                     ["&-placement-topLeft", "&-placement-topRight", "&-placement-bottomLeft", "&-placement-bottomRight"].join(",")
                 ]: {
-                    minWidth: b
+                    minWidth: h
                 },
                 [
                     ["&-placement-left", "&-placement-leftTop", "&-placement-leftBottom", "&-placement-right", "&-placement-rightTop", "&-placement-rightBottom"].join(",")
                 ]: {
-                    [`${a}-inner`]: {
-                        borderRadius: e.min(n, mt)
+                    [`${r}-inner`]: {
+                        borderRadius: e.min(n, ut)
                     }
                 },
-                [`${a}-content`]: {
+                [`${r}-content`]: {
                     position: "relative"
                 }
-            }), Jt(e, (O, {
+            }), Qt(e, (O, {
                 darkColor: $
             }) => ({
-                [`&${a}-${O}`]: {
-                    [`${a}-inner`]: {
+                [`&${r}-${O}`]: {
+                    [`${r}-inner`]: {
                         backgroundColor: $
                     },
-                    [`${a}-arrow`]: {
+                    [`${r}-arrow`]: {
                         "--antd-arrow-background-color": $
                     }
                 }
@@ -664,114 +663,112 @@ const pe = e => {
                     direction: "rtl"
                 }
             })
-        }, se(e, "var(--antd-arrow-background-color)"), {
-            [`${a}-pure`]: {
+        }, ae(e, "var(--antd-arrow-background-color)"), {
+            [`${r}-pure`]: {
                 position: "relative",
                 maxWidth: "none",
                 margin: e.sizePopupArrow
             }
         }]
     },
-    de = e => Object.assign(Object.assign({
+    fe = e => Object.assign(Object.assign({
         zIndexPopup: e.zIndexPopupBase + 70
-    }, gt({
+    }, mt({
         contentRadius: e.borderRadius,
         limitVerticalRadius: !0
-    })), ae(dt(e, {
+    })), oe(pt(e, {
         borderRadiusOuter: Math.min(e.borderRadiusOuter, 4)
     }))),
-    bt = (e, o = !0) => zt("Tooltip", t => {
+    gt = (e, o = !0) => zt("Tooltip", t => {
         const {
-            borderRadius: r,
+            borderRadius: a,
             colorTextLightSolid: s,
             colorBgSpotlight: n
-        } = t, i = dt(t, {
+        } = t, i = pt(t, {
             tooltipMaxWidth: 250,
             tooltipColor: s,
-            tooltipBorderRadius: r,
+            tooltipBorderRadius: a,
             tooltipBg: n
         });
-        return [pe(i), Bt(t, "zoom-big-fast")]
-    }, de, {
+        return [ce(i), Lt(t, "zoom-big-fast")]
+    }, fe, {
         resetStyle: !1,
         injectStyle: o
     })(e),
-    ue = G.map(e => `${e}-inverse`),
-    me = ["success", "processing", "error", "default", "warning"];
+    pe = G.map(e => `${e}-inverse`),
+    de = ["success", "processing", "error", "default", "warning"];
 
-function ge(e, o = !0) {
-    return o ? [].concat(ft(ue), ft(G)).includes(e) : G.includes(e)
+function ue(e, o = !0) {
+    return o ? [].concat(ct(pe), ct(G)).includes(e) : G.includes(e)
 }
 
-function Ce(e) {
-    return me.includes(e)
+function we(e) {
+    return de.includes(e)
 }
 
-function ht(e, o) {
-    const a = ge(o),
+function bt(e, o) {
+    const r = ue(o),
         t = j({
-            [`${e}-${o}`]: o && a
+            [`${e}-${o}`]: o && r
         }),
-        r = {},
-        s = {},
-        n = Kt(o).toRgb(),
-        l = (.299 * n.r + .587 * n.g + .114 * n.b) / 255 < .5 ? "#FFF" : "#000";
-    return o && !a && (r.background = o, r["--ant-tooltip-color"] = l, s["--antd-arrow-background-color"] = o), {
+        a = {},
+        s = {};
+    return o && !r && (a.background = o, s["--antd-arrow-background-color"] = o), {
         className: t,
-        overlayStyle: r,
+        overlayStyle: a,
         arrowStyle: s
     }
 }
-const be = e => {
+const me = e => {
     const {
         prefixCls: o,
-        className: a,
+        className: r,
         placement: t = "top",
-        title: r,
+        title: a,
         color: s,
         overlayInnerStyle: n
     } = e, {
         getPrefixCls: i
-    } = f.useContext(Dt), l = i("tooltip", o), [d, p, h] = bt(l), c = ht(l, s), g = c.arrowStyle, b = Object.assign(Object.assign({}, n), c.overlayStyle), m = j(p, h, l, `${l}-pure`, `${l}-placement-${t}`, a, c.className);
-    return d(f.createElement("div", {
-        className: m,
-        style: g
-    }, f.createElement("div", {
+    } = c.useContext(Mt), l = i("tooltip", o), [p, u, f] = gt(l), d = bt(l, s), b = d.arrowStyle, h = Object.assign(Object.assign({}, n), d.overlayStyle), g = j(u, f, l, `${l}-pure`, `${l}-placement-${t}`, r, d.className);
+    return p(c.createElement("div", {
+        className: g,
+        style: b
+    }, c.createElement("div", {
         className: `${l}-arrow`
-    }), f.createElement(ut, Object.assign({}, e, {
-        className: p,
+    }), c.createElement(dt, Object.assign({}, e, {
+        className: u,
         prefixCls: l,
-        overlayInnerStyle: b
-    }), r)))
+        overlayInnerStyle: h
+    }), a)))
 };
-var he = function(e, o) {
-    var a = {};
-    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && o.indexOf(t) < 0 && (a[t] = e[t]);
+var ge = function(e, o) {
+    var r = {};
+    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && o.indexOf(t) < 0 && (r[t] = e[t]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var r = 0, t = Object.getOwnPropertySymbols(e); r < t.length; r++) o.indexOf(t[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[r]) && (a[t[r]] = e[t[r]]);
-    return a
+        for (var a = 0, t = Object.getOwnPropertySymbols(e); a < t.length; a++) o.indexOf(t[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[a]) && (r[t[a]] = e[t[a]]);
+    return r
 };
-const ve = f.forwardRef((e, o) => {
-        var a, t;
+const be = c.forwardRef((e, o) => {
+        var r, t;
         const {
-            prefixCls: r,
+            prefixCls: a,
             openClassName: s,
             getTooltipContainer: n,
             color: i,
             overlayInnerStyle: l,
-            children: d,
-            afterOpenChange: p,
-            afterVisibleChange: h,
-            destroyTooltipOnHide: c,
-            destroyOnHidden: g,
-            arrow: b = !0,
-            title: m,
+            children: p,
+            afterOpenChange: u,
+            afterVisibleChange: f,
+            destroyTooltipOnHide: d,
+            destroyOnHidden: b,
+            arrow: h = !0,
+            title: g,
             overlay: O,
             builtinPlacements: $,
             arrowPointAtCenter: C = !1,
             autoAdjustOverflow: N = !0,
-            motion: V,
-            getPopupContainer: z,
+            motion: z,
+            getPopupContainer: L,
             placement: Q = "top",
             mouseEnterDelay: B = .1,
             mouseLeaveDelay: J = .1,
@@ -780,7 +777,7 @@ const ve = f.forwardRef((e, o) => {
             overlayClassName: et,
             styles: x,
             classNames: P
-        } = e, E = he(e, ["prefixCls", "openClassName", "getTooltipContainer", "color", "overlayInnerStyle", "children", "afterOpenChange", "afterVisibleChange", "destroyTooltipOnHide", "destroyOnHidden", "arrow", "title", "overlay", "builtinPlacements", "arrowPointAtCenter", "autoAdjustOverflow", "motion", "getPopupContainer", "placement", "mouseEnterDelay", "mouseLeaveDelay", "overlayStyle", "rootClassName", "overlayClassName", "styles", "classNames"]), M = !!b, [, w] = Ht(), {
+        } = e, E = ge(e, ["prefixCls", "openClassName", "getTooltipContainer", "color", "overlayInnerStyle", "children", "afterOpenChange", "afterVisibleChange", "destroyTooltipOnHide", "destroyOnHidden", "arrow", "title", "overlay", "builtinPlacements", "arrowPointAtCenter", "autoAdjustOverflow", "motion", "getPopupContainer", "placement", "mouseEnterDelay", "mouseLeaveDelay", "overlayStyle", "rootClassName", "overlayClassName", "styles", "classNames"]), M = !!h, [, w] = Dt(), {
             getPopupContainer: _,
             getPrefixCls: D,
             direction: H,
@@ -788,31 +785,31 @@ const ve = f.forwardRef((e, o) => {
             style: W,
             classNames: Y,
             styles: q
-        } = Xt("tooltip"), ot = Qt(), S = f.useRef(null), F = () => {
-            var u;
-            (u = S.current) === null || u === void 0 || u.forceAlign()
+        } = Ht("tooltip"), ot = Xt(), S = c.useRef(null), F = () => {
+            var m;
+            (m = S.current) === null || m === void 0 || m.forceAlign()
         };
-        f.useImperativeHandle(o, () => {
-            var u, y;
+        c.useImperativeHandle(o, () => {
+            var m, y;
             return {
                 forceAlign: F,
                 forcePopupAlign: () => {
                     ot.deprecated(!1, "forcePopupAlign", "forceAlign"), F()
                 },
-                nativeElement: (u = S.current) === null || u === void 0 ? void 0 : u.nativeElement,
+                nativeElement: (m = S.current) === null || m === void 0 ? void 0 : m.nativeElement,
                 popupElement: (y = S.current) === null || y === void 0 ? void 0 : y.popupElement
             }
         });
-        const [rt, vt] = Wt(!1, {
-            value: (a = e.open) !== null && a !== void 0 ? a : e.visible,
+        const [rt, ht] = Wt(!1, {
+            value: (r = e.open) !== null && r !== void 0 ? r : e.visible,
             defaultValue: (t = e.defaultOpen) !== null && t !== void 0 ? t : e.defaultVisible
-        }), at = !m && !O && m !== 0, wt = u => {
+        }), at = !g && !O && g !== 0, vt = m => {
             var y, R;
-            vt(at ? !1 : u), at || ((y = e.onOpenChange) === null || y === void 0 || y.call(e, u), (R = e.onVisibleChange) === null || R === void 0 || R.call(e, u))
-        }, yt = f.useMemo(() => {
-            var u, y;
+            ht(at ? !1 : m), at || ((y = e.onOpenChange) === null || y === void 0 || y.call(e, m), (R = e.onVisibleChange) === null || R === void 0 || R.call(e, m))
+        }, wt = c.useMemo(() => {
+            var m, y;
             let R = C;
-            return typeof b == "object" && (R = (y = (u = b.pointAtCenter) !== null && u !== void 0 ? u : b.arrowPointAtCenter) !== null && y !== void 0 ? y : C), $ || fe({
+            return typeof h == "object" && (R = (y = (m = h.pointAtCenter) !== null && m !== void 0 ? m : h.arrowPointAtCenter) !== null && y !== void 0 ? y : C), $ || le({
                 arrowPointAtCenter: R,
                 autoAdjustOverflow: N,
                 arrowWidth: M ? w.sizePopupArrow : 0,
@@ -820,61 +817,61 @@ const ve = f.forwardRef((e, o) => {
                 offset: w.marginXXS,
                 visibleFirst: !0
             })
-        }, [C, b, $, w]), nt = f.useMemo(() => m === 0 ? m : O || m || "", [O, m]), Ct = f.createElement(Yt, {
+        }, [C, h, $, w]), nt = c.useMemo(() => g === 0 ? g : O || g || "", [O, g]), yt = c.createElement(Yt, {
             space: !0
-        }, typeof nt == "function" ? nt() : nt), A = D("tooltip", r), Ot = D(), $t = e["data-popover-inject"];
+        }, typeof nt == "function" ? nt() : nt), A = D("tooltip", a), Ct = D(), Ot = e["data-popover-inject"];
         let st = rt;
         !("open" in e) && !("visible" in e) && at && (st = !1);
-        const it = f.isValidElement(d) && !qt(d) ? d : f.createElement("span", null, d),
+        const it = c.isValidElement(p) && !qt(p) ? p : c.createElement("span", null, p),
             Z = it.props,
-            xt = !Z.className || typeof Z.className == "string" ? j(Z.className, s || `${A}-open`) : Z.className,
-            [Pt, _t, St] = bt(A, !$t),
-            lt = ht(A, i),
-            jt = lt.arrowStyle,
-            Tt = j(et, {
+            $t = !Z.className || typeof Z.className == "string" ? j(Z.className, s || `${A}-open`) : Z.className,
+            [xt, Pt, _t] = gt(A, !Ot),
+            lt = bt(A, i),
+            St = lt.arrowStyle,
+            jt = j(et, {
                 [`${A}-rtl`]: H === "rtl"
-            }, lt.className, tt, _t, St, X, Y.root, P == null ? void 0 : P.root),
-            Nt = j(Y.body, P == null ? void 0 : P.body),
-            [At, Rt] = Ft("Tooltip", E.zIndex),
-            It = f.createElement(re, Object.assign({}, E, {
-                zIndex: At,
+            }, lt.className, tt, Pt, _t, X, Y.root, P == null ? void 0 : P.root),
+            Tt = j(Y.body, P == null ? void 0 : P.body),
+            [Nt, At] = Ft("Tooltip", E.zIndex),
+            Rt = c.createElement(ee, Object.assign({}, E, {
+                zIndex: Nt,
                 showArrow: M,
                 placement: Q,
                 mouseEnterDelay: B,
                 mouseLeaveDelay: J,
                 prefixCls: A,
                 classNames: {
-                    root: Tt,
-                    body: Nt
+                    root: jt,
+                    body: Tt
                 },
                 styles: {
-                    root: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, jt), q.root), W), K), x == null ? void 0 : x.root),
+                    root: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, St), q.root), W), K), x == null ? void 0 : x.root),
                     body: Object.assign(Object.assign(Object.assign(Object.assign({}, q.body), l), x == null ? void 0 : x.body), lt.overlayStyle)
                 },
-                getTooltipContainer: z || n || _,
+                getTooltipContainer: L || n || _,
                 ref: S,
-                builtinPlacements: yt,
-                overlay: Ct,
+                builtinPlacements: wt,
+                overlay: yt,
                 visible: st,
-                onVisibleChange: wt,
-                afterVisibleChange: p ?? h,
-                arrowContent: f.createElement("span", {
+                onVisibleChange: vt,
+                afterVisibleChange: u ?? f,
+                arrowContent: c.createElement("span", {
                     className: `${A}-arrow-content`
                 }),
                 motion: {
-                    motionName: Zt(Ot, "zoom-big-fast", e.transitionName),
+                    motionName: Zt(Ct, "zoom-big-fast", e.transitionName),
                     motionDeadline: 1e3
                 },
-                destroyTooltipOnHide: g ?? !!c
+                destroyTooltipOnHide: b ?? !!d
             }), st ? Ut(it, {
-                className: xt
+                className: $t
             }) : it);
-        return Pt(f.createElement(Gt.Provider, {
-            value: Rt
-        }, It))
+        return xt(c.createElement(Gt.Provider, {
+            value: At
+        }, Rt))
     }),
-    we = ve;
-we._InternalPanelDoNotUseOrYouWillBeFired = be;
+    he = be;
+he._InternalPanelDoNotUseOrYouWillBeFired = me;
 export {
-    ut as P, we as T, ne as a, se as b, gt as c, fe as d, Jt as e, Ce as f, ae as g, ge as i
+    dt as P, he as T, re as a, ae as b, mt as c, le as d, Qt as e, we as f, oe as g, ue as i
 };

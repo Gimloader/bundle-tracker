@@ -2,7 +2,7 @@ import {
     bc as u,
     x as f,
     r as v,
-    bg as h
+    bf as h
 } from "./_index.js";
 import {
     u as x
@@ -79,12 +79,12 @@ const l = (e, s) => {
                     }), t.clear()
                 }
             }
-        }, [s])
+        }, [e])
     };
 
 function m(e = !0, s = {}) {
     const t = v.useRef(s),
-        [, a] = x(),
+        a = x(),
         i = L();
     return h(() => {
         const r = i.subscribe(n => {

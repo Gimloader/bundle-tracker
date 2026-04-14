@@ -3,7 +3,7 @@ import {
     j as t,
     U as m,
     e as r,
-    b as e
+    d as e
 } from "./_index.js";
 const x = "#ebe5fe",
     s = r.BackgroundPurple,
@@ -30,10 +30,10 @@ const x = "#ebe5fe",
     color: ${s};
   }
 `,
-    b = e.div.attrs({
+    C = e.div.attrs({
         className: "flex vc maxWidth"
     })``,
-    C = e.div``;
+    b = e.div``;
 class k extends h.Component {
     render() {
         const {
@@ -57,8 +57,8 @@ class k extends h.Component {
                 },
                 theme: this.props.customIconColor ? "twoTone" : "outlined",
                 twoToneColor: this.props.customIconColor || ""
-            }) : null, t.jsxs(b, {
-                children: [t.jsx(C, {
+            }) : null, t.jsxs(C, {
+                children: [t.jsx(b, {
                     children: c
                 }), this.props.customRightComponent ? this.props.customRightComponent : null]
             })]

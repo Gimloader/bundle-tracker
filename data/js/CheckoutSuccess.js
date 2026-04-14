@@ -15,7 +15,7 @@ import {
     j as e,
     S as E,
     F as j,
-    b as u,
+    d as l,
     e as a,
     U
 } from "./_index.js";
@@ -26,7 +26,7 @@ import {
     s as i
 } from "./stores.js";
 import {
-    N as l
+    N as u
 } from "./NavigateTo.js";
 import {
     A as T
@@ -62,7 +62,7 @@ const P = "An error ocurred on our end while upgrading your account. Please cont
             g = () => {
                 s.success({
                     title: "The purchase has been completed",
-                    onOk: () => l(v)
+                    onOk: () => u(v)
                 })
             },
             p = r => {
@@ -84,7 +84,7 @@ const P = "An error ocurred on our end while upgrading your account. Please cont
         const t = k("session_id");
         w.useEffect(() => {
             if (y()) {
-                l(d);
+                u(d);
                 return
             }
             t && C(t)
@@ -114,7 +114,7 @@ const P = "An error ocurred on our end while upgrading your account. Please cont
             })
         })
     }),
-    O = u.div`
+    O = l.div`
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/client/img/signup/funky-lines.png') repeat 0 0;
   height: 100%;
@@ -123,7 +123,7 @@ const P = "An error ocurred on our end while upgrading your account. Please cont
   justify-content: center;
   align-items: center;
 `,
-    W = u.div.attrs({
+    W = l.div.attrs({
         className: "scroll-y"
     })`
   background: ${a.White};
