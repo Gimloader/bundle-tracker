@@ -3,18 +3,18 @@ import {
     c as a,
     e as o,
     F as s,
-    b as r,
+    d as r,
     a3 as x,
     Z as g,
     U as l,
-    T as u,
+    T as f,
     D as c
 } from "./_index.js";
 import {
-    A as f
+    A as j
 } from "./AccessibleAnchor.js";
 import {
-    S as j
+    S as u
 } from "./App-4.js";
 import "./Shortcut.js";
 import "./Names.js";
@@ -122,7 +122,7 @@ const y = ["Simple and transparent pricing.", "No quote forms asking a million t
                     })]
                 })
             });
-        return e.jsx(f, {
+        return e.jsx(j, {
             to: m,
             className: "maxWidth",
             onClick: t.onClick,
@@ -201,14 +201,14 @@ const y = ["Simple and transparent pricing.", "No quote forms asking a million t
             children: t.text
         })]
     }),
-    b = t => e.jsx(C, {
+    C = t => e.jsx(b, {
         className: "flex maxWidth wrap vc hc",
         children: t.features.map(i => e.jsx(N, {
             good: i.good,
             text: i.text
         }, `feat-${i.good}-${i.text}`))
     }),
-    C = r.div`
+    b = r.div`
   text-align: left;
   font-size: 17px;
 `,
@@ -245,10 +245,10 @@ const y = ["Simple and transparent pricing.", "No quote forms asking a million t
     },
     $ = ["Payment with purchase order", "Payment with credit/debit card", "Group admin panel", "Discounted pricing"],
     re = () => e.jsxs(e.Fragment, {
-        children: [e.jsx(u, {
+        children: [e.jsx(f, {
             title: "Group Pricing"
         }), e.jsxs(A, {
-            children: [e.jsx(j, {
+            children: [e.jsx(u, {
                 includeSpacer: !0
             }), e.jsxs(T, {
                 style: {
@@ -258,7 +258,7 @@ const y = ["Simple and transparent pricing.", "No quote forms asking a million t
                     style: {
                         height: 20
                     }
-                }), e.jsx(b, {
+                }), e.jsx(C, {
                     features: $.map(t => ({
                         good: !0,
                         text: t

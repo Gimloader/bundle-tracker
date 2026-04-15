@@ -2,7 +2,7 @@ import {
     j as e,
     r,
     ay as s,
-    b as a
+    d as a
 } from "./_index.js";
 import {
     q as o
@@ -28,7 +28,7 @@ const l = t => {
             })]
         })
     },
-    d = t => e.jsx(l, {
+    f = t => e.jsx(l, {
         ...t
     }, t.latex),
     x = a.div`
@@ -42,6 +42,6 @@ const l = t => {
   }
 `;
 export {
-    d as
+    f as
     default
 };

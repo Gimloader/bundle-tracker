@@ -3107,7 +3107,7 @@ class Ma {
             o = r.addEventListener("measure", i);
         r && !r.layout && ((e = r.root) === null || e === void 0 || e.updateScroll(), r.updateLayout()), i();
         const a = Xt(window, "resize", () => this.scalePositionWithinConstraints()),
-            l = r.addEventListener("didUpdate", (({
+            l = r.addEventListener("didUpdate", ({
                 delta: c,
                 hasLayoutChanged: u
             }) => {
@@ -3115,7 +3115,7 @@ class Ma {
                     const f = this.getAxisMotionValue(h);
                     f && (this.originPoint[h] += c[h].translate, f.set(f.get() + c[h].translate))
                 }), this.visualElement.render())
-            }));
+            });
         return () => {
             a(), s(), o(), l == null || l()
         }

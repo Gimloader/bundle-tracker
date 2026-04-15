@@ -1,8 +1,8 @@
 import {
     h as i,
     a as f,
-    j as m,
-    s as p,
+    s as m,
+    j as p,
     u as l
 } from "./motion.js";
 import {
@@ -29,10 +29,10 @@ function V(t, e) {
     const n = y(e()),
         s = () => n.set(e());
     return s(), f(() => {
-        const o = () => p.update(s, !1, !0),
+        const o = () => m.update(s, !1, !0),
             u = t.map(r => r.on("change", o));
         return () => {
-            u.forEach(r => r()), m.update(s)
+            u.forEach(r => r()), p.update(s)
         }
     }), n
 }

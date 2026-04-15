@@ -1,8 +1,8 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/App-72.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/index-4.js", "assets/context.js", "assets/App-73.js", "assets/index-2.js", "assets/index-14.js", "assets/EditOutlined.js", "assets/styleChecker.js", "assets/index-5.js", "assets/index-3.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/AccessibleAnchor.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/App-41.js", "assets/FixSpinePlugin.js", "assets/GetAssetPath.js", "assets/MapModeType.js", "assets/MapStyle.js", "assets/playSound.js", "assets/howler.js", "assets/mobxreact.esm.js", "assets/index-22.js", "assets/QuizTypes.js", "assets/TutorialConsts.js", "assets/ActionButton.js", "assets/index-19.js", "assets/FontAwesomeIcon.js", "assets/Centered.js", "assets/CapitalizeFirstLetter.js", "assets/motion.js", "assets/SixteenByNineScaler.js", "assets/index-21.js", "assets/index-23.js", "assets/index-1.js", "assets/progress.js", "assets/ElementIds.js", "assets/SeasonTicketName.js", "assets/useQuery.js", "assets/___vite-browser-external_commonjs-proxy.js", "assets/util.js", "assets/index-17.js", "assets/Shortcut.js", "assets/Names.js", "assets/useWillUnmount.js", "assets/use-motion-value.js", "assets/use-transform.js", "assets/index-6.js", "assets/CircularProgress.js", "assets/clsx.m.js", "assets/index-18.js", "assets/use-force-update.js", "assets/GimkitLiveQuestion.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/Tooltip.js", "assets/index-9.js", "assets/index-24.js", "assets/useIntervalWhen.js", "assets/index-10.js", "assets/move.js", "assets/react-flip-move.es.js", "assets/sounds.js", "assets/App-5.js", "assets/AnimatedBackground-2.js", "assets/useDebouncedValue.js", "assets/FillRemainingSpace.js", "assets/index-25.js", "assets/App-74.js", "assets/Form.js", "assets/index-20.js", "assets/PaperClipOutlined.js", "assets/DeleteOutlined.js", "assets/DownloadOutlined.js", "assets/useForceUpdate.js", "assets/index-29.js", "assets/OwnsSeasonTicket.js", "assets/TrackEvent.js", "assets/TrackPostHogEvent.js", "assets/index-16.js", "assets/useForm.js", "assets/useBreakpoint.js", "assets/QuestionCircleOutlined.js", "assets/index-8.js", "assets/DownOutlined.js", "assets/index-11.js", "assets/useBubbleLock.js", "assets/StarOutlined.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/App-72.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/index-4.js", "assets/context.js", "assets/App-73.js", "assets/index-2.js", "assets/index-14.js", "assets/EditOutlined.js", "assets/styleChecker.js", "assets/index-5.js", "assets/index-3.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/AccessibleAnchor.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/App-41.js", "assets/FixSpinePlugin.js", "assets/GetAssetPath.js", "assets/MapModeType.js", "assets/MapStyle.js", "assets/playSound.js", "assets/howler.js", "assets/mobxreact.esm.js", "assets/index-21.js", "assets/QuizTypes.js", "assets/TutorialConsts.js", "assets/ActionButton.js", "assets/index-18.js", "assets/FontAwesomeIcon.js", "assets/Centered.js", "assets/CapitalizeFirstLetter.js", "assets/motion.js", "assets/SixteenByNineScaler.js", "assets/index-20.js", "assets/index-22.js", "assets/index-1.js", "assets/progress.js", "assets/ElementIds.js", "assets/SeasonTicketName.js", "assets/useQuery.js", "assets/___vite-browser-external_commonjs-proxy.js", "assets/util-1.js", "assets/util-2.js", "assets/Shortcut.js", "assets/Names.js", "assets/useWillUnmount.js", "assets/use-motion-value.js", "assets/use-transform.js", "assets/index-6.js", "assets/CircularProgress.js", "assets/clsx.m.js", "assets/index-17.js", "assets/use-force-update.js", "assets/GimkitLiveQuestion.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/Tooltip.js", "assets/index-9.js", "assets/index-23.js", "assets/useIntervalWhen.js", "assets/index-10.js", "assets/move.js", "assets/react-flip-move.es.js", "assets/sounds.js", "assets/App-5.js", "assets/AnimatedBackground-2.js", "assets/useDebouncedValue.js", "assets/FillRemainingSpace.js", "assets/index-24.js", "assets/App-74.js", "assets/Form.js", "assets/index-19.js", "assets/PaperClipOutlined.js", "assets/useForceUpdate.js", "assets/DeleteOutlined.js", "assets/DownloadOutlined.js", "assets/index-28.js", "assets/OwnsSeasonTicket.js", "assets/TrackEvent.js", "assets/TrackPostHogEvent.js", "assets/index-16.js", "assets/useForm.js", "assets/useBreakpoint.js", "assets/QuestionCircleOutlined.js", "assets/index-8.js", "assets/DownOutlined.js", "assets/index-11.js", "assets/useBubbleLock.js", "assets/StarOutlined.js"]))) => i.map(i => d[i]);
 import {
     j as e,
     F as X,
-    b as k,
+    d as k,
     r as a,
     u as H,
     e as _,
@@ -86,7 +86,7 @@ import {
 } from "./ZonedDeviceDisplay.js";
 import {
     S as Ee
-} from "./index-29.js";
+} from "./index-28.js";
 import {
     S as r
 } from "./index-8.js";
@@ -108,19 +108,19 @@ import {
 import {
     I as $e
 } from "./ActionButton.js";
-import "./index-22.js";
+import "./index-21.js";
 import "./QuizTypes.js";
 import "./MapModeType.js";
 import "./GetAssetPath.js";
 import "./playSound.js";
 import "./howler.js";
-import "./index-19.js";
+import "./index-18.js";
 import "./context.js";
 import "./motion.js";
 import "./index-5.js";
 import "./SixteenByNineScaler.js";
-import "./index-21.js";
-import "./index-23.js";
+import "./index-20.js";
+import "./index-22.js";
 import "./index-1.js";
 import "./progress.js";
 import "./CheckOutlined.js";
@@ -128,8 +128,8 @@ import "./ElementIds.js";
 import "./SeasonTicketName.js";
 import "./useQuery.js";
 import "./___vite-browser-external_commonjs-proxy.js";
-import "./util.js";
-import "./index-17.js";
+import "./util-1.js";
+import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
@@ -139,7 +139,7 @@ import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
 import "./inheritsLoose.js";
-import "./index-18.js";
+import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
 import "./Text.js";
@@ -147,7 +147,7 @@ import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
 import "./polished.esm.js";
-import "./index-24.js";
+import "./index-23.js";
 import "./useIntervalWhen.js";
 import "./index-10.js";
 import "./move.js";
@@ -158,7 +158,7 @@ import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
-import "./index-25.js";
+import "./index-24.js";
 import "./EditOutlined.js";
 import "./styleChecker.js";
 import "./CopyOutlined.js";
@@ -169,7 +169,7 @@ import "./DownOutlined.js";
 import "./LoadGoogleFontAfterSceneStart.js";
 import "./useItemAmount.js";
 import "./clsx.js";
-import "./index-30.js";
+import "./index-29.js";
 const v = i => {
         const {
             title: n,
@@ -721,7 +721,7 @@ const v = i => {
 `,
     Qe = a.lazy(() => q(() => import("./App-72.js"), __vite__mapDeps([0, 1, 2, 3, 4]))),
     Xe = a.lazy(() => q(() => import("./App-73.js"), __vite__mapDeps([5, 1, 2, 6, 7, 8, 9, 10, 11, 12, 13, 3, 4, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72]))),
-    ei = a.lazy(() => q(() => import("./App-74.js"), __vite__mapDeps([73, 1, 2, 74, 75, 64, 10, 65, 6, 76, 77, 78, 11, 39, 12, 79, 80, 15, 16, 17, 3, 4, 47, 14, 41, 81, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 7, 8, 9, 13, 35, 36, 37, 38, 40, 42, 43, 44, 45, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 66, 67, 68, 69, 70, 71, 72, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92]))),
+    ei = a.lazy(() => q(() => import("./App-74.js"), __vite__mapDeps([73, 1, 2, 74, 75, 64, 10, 65, 6, 76, 77, 78, 79, 11, 39, 12, 80, 15, 16, 17, 3, 4, 47, 14, 41, 81, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 7, 8, 9, 13, 35, 36, 37, 38, 40, 42, 43, 44, 45, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 66, 67, 68, 69, 70, 71, 72, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92]))),
     ii = i => {
         const [n, o, t] = H(!0), [h, c] = a.useState(!1), [d, u] = a.useState(), [s, y] = a.useState(), x = () => {
             o(), u(void 0), y(void 0), c(!1), pe({
