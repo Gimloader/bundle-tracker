@@ -1,6 +1,6 @@
 import {
-    ai as Q,
-    aj as U,
+    ai as J,
+    aj as Q,
     aL as M,
     ak as T,
     ba as Y,
@@ -8,13 +8,13 @@ import {
     r as n,
     al as L,
     bW as ee,
-    bV as re,
-    cV as ae,
-    bH as H,
+    bB as re,
+    cU as ae,
+    bI as q,
     am as j,
-    d9 as oe,
-    d3 as te,
-    aS as le,
+    d8 as oe,
+    d2 as le,
+    aS as te,
     aK as k
 } from "./_index.js";
 import {
@@ -68,7 +68,7 @@ const ie = e => {
                 cursor: "pointer",
                 opacity: 0,
                 margin: 0,
-                [`&:focus-visible + ${r}-inner`]: Object.assign({}, Y(e))
+                [`&:focus-visible + ${r}-inner`]: Y(e)
             },
             [`${r}-inner`]: {
                 boxSizing: "border-box",
@@ -198,27 +198,27 @@ const ie = e => {
 };
 
 function ce(e, r) {
-    const o = U(r, {
+    const o = Q(r, {
         checkboxCls: `.${e}`,
         checkboxSize: r.controlInteractiveSize
     });
-    return [ie(o)]
+    return ie(o)
 }
-const q = Q("Checkbox", (e, {
+const F = J("Checkbox", (e, {
         prefixCls: r
     }) => [ce(r, e)]),
-    F = Z.createContext(null);
+    H = Z.createContext(null);
 var de = function(e, r) {
     var o = {};
-    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && r.indexOf(t) < 0 && (o[t] = e[t]);
+    for (var l in e) Object.prototype.hasOwnProperty.call(e, l) && r.indexOf(l) < 0 && (o[l] = e[l]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var s = 0, t = Object.getOwnPropertySymbols(e); s < t.length; s++) r.indexOf(t[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[s]) && (o[t[s]] = e[t[s]]);
+        for (var s = 0, l = Object.getOwnPropertySymbols(e); s < l.length; s++) r.indexOf(l[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, l[s]) && (o[l[s]] = e[l[s]]);
     return o
 };
 const ue = (e, r) => {
         var o;
         const {
-            prefixCls: t,
+            prefixCls: l,
             className: s,
             rootClassName: V,
             children: v,
@@ -230,40 +230,40 @@ const ue = (e, r) => {
             disabled: z
         } = e, i = de(e, ["prefixCls", "className", "rootClassName", "children", "indeterminate", "style", "onMouseEnter", "onMouseLeave", "skipGroup", "disabled"]), {
             getPrefixCls: S,
-            direction: R,
+            direction: B,
             checkbox: u
-        } = n.useContext(L), l = n.useContext(F), {
+        } = n.useContext(L), t = n.useContext(H), {
             isFormItemInput: O
-        } = n.useContext(ee), w = n.useContext(re), h = (o = (l == null ? void 0 : l.disabled) || z) !== null && o !== void 0 ? o : w, p = n.useRef(i.value), g = n.useRef(null), P = ae(r, g);
+        } = n.useContext(ee), w = n.useContext(re), h = (o = (t == null ? void 0 : t.disabled) || z) !== null && o !== void 0 ? o : w, p = n.useRef(i.value), g = n.useRef(null), I = ae(r, g);
         n.useEffect(() => {
-            l == null || l.registerValue(i.value)
+            t == null || t.registerValue(i.value)
         }, []), n.useEffect(() => {
-            if (!y) return i.value !== p.current && (l == null || l.cancelValue(p.current), l == null || l.registerValue(i.value), p.current = i.value), () => l == null ? void 0 : l.cancelValue(i.value)
+            if (!y) return i.value !== p.current && (t == null || t.cancelValue(p.current), t == null || t.registerValue(i.value), p.current = i.value), () => t == null ? void 0 : t.cancelValue(i.value)
         }, [i.value]), n.useEffect(() => {
             var b;
             !((b = g.current) === null || b === void 0) && b.input && (g.current.input.indeterminate = x)
         }, [x]);
-        const d = S("checkbox", t),
-            I = H(d),
-            [B, E, _] = q(d, I),
+        const d = S("checkbox", l),
+            P = q(d),
+            [R, E, _] = F(d, P),
             f = Object.assign({}, i);
-        l && !y && (f.onChange = (...b) => {
-            i.onChange && i.onChange.apply(i, b), l.toggleOption && l.toggleOption({
+        t && !y && (f.onChange = (...b) => {
+            i.onChange && i.onChange.apply(i, b), t.toggleOption && t.toggleOption({
                 label: v,
                 value: i.value
             })
-        }, f.name = l.name, f.checked = l.value.includes(i.value));
+        }, f.name = t.name, f.checked = t.value.includes(i.value));
         const D = j(`${d}-wrapper`, {
-                [`${d}-rtl`]: R === "rtl",
+                [`${d}-rtl`]: B === "rtl",
                 [`${d}-wrapper-checked`]: f.checked,
                 [`${d}-wrapper-disabled`]: h,
                 [`${d}-wrapper-in-form-item`]: O
-            }, u == null ? void 0 : u.className, s, V, _, I, E),
+            }, u == null ? void 0 : u.className, s, V, _, P, E),
             a = j({
                 [`${d}-indeterminate`]: x
             }, oe, E),
             [m, C] = ne(f.onClick);
-        return B(n.createElement(te, {
+        return R(n.createElement(le, {
             component: "Checkbox",
             disabled: h
         }, n.createElement("label", {
@@ -277,7 +277,7 @@ const ue = (e, r) => {
             prefixCls: d,
             className: a,
             disabled: h,
-            ref: P
+            ref: I
         })), v != null && n.createElement("span", {
             className: `${d}-label`
         }, v))))
@@ -285,15 +285,15 @@ const ue = (e, r) => {
     W = n.forwardRef(ue);
 var be = function(e, r) {
     var o = {};
-    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && r.indexOf(t) < 0 && (o[t] = e[t]);
+    for (var l in e) Object.prototype.hasOwnProperty.call(e, l) && r.indexOf(l) < 0 && (o[l] = e[l]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var s = 0, t = Object.getOwnPropertySymbols(e); s < t.length; s++) r.indexOf(t[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[s]) && (o[t[s]] = e[t[s]]);
+        for (var s = 0, l = Object.getOwnPropertySymbols(e); s < l.length; s++) r.indexOf(l[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, l[s]) && (o[l[s]] = e[l[s]]);
     return o
 };
 const pe = n.forwardRef((e, r) => {
         const {
             defaultValue: o,
-            children: t,
+            children: l,
             options: s = [],
             prefixCls: V,
             className: v,
@@ -303,11 +303,11 @@ const pe = n.forwardRef((e, r) => {
         } = e, c = be(e, ["defaultValue", "children", "options", "prefixCls", "className", "rootClassName", "style", "onChange"]), {
             getPrefixCls: y,
             direction: z
-        } = n.useContext(L), [i, S] = n.useState(c.value || o || []), [R, u] = n.useState([]);
+        } = n.useContext(L), [i, S] = n.useState(c.value || o || []), [B, u] = n.useState([]);
         n.useEffect(() => {
             "value" in c && S(c.value || [])
         }, [c.value]);
-        const l = n.useMemo(() => s.map(a => typeof a == "string" || typeof a == "number" ? {
+        const t = n.useMemo(() => s.map(a => typeof a == "string" || typeof a == "number" ? {
                 label: a,
                 value: a
             } : a), [s]),
@@ -320,18 +320,18 @@ const pe = n.forwardRef((e, r) => {
             h = a => {
                 const m = i.indexOf(a.value),
                     C = k(i);
-                m === -1 ? C.push(a.value) : C.splice(m, 1), "value" in c || S(C), $ == null || $(C.filter(b => R.includes(b)).sort((b, X) => {
-                    const K = l.findIndex(G => G.value === b),
-                        J = l.findIndex(G => G.value === X);
-                    return K - J
+                m === -1 ? C.push(a.value) : C.splice(m, 1), "value" in c || S(C), $ == null || $(C.filter(b => B.includes(b)).sort((b, X) => {
+                    const K = t.findIndex(G => G.value === b),
+                        U = t.findIndex(G => G.value === X);
+                    return K - U
                 }))
             },
             p = y("checkbox", V),
             g = `${p}-group`,
-            P = H(p),
-            [d, I, B] = q(p, P),
-            E = le(c, ["value", "disabled"]),
-            _ = s.length ? l.map(a => n.createElement(W, {
+            I = q(p),
+            [d, P, R] = F(p, I),
+            E = te(c, ["value", "disabled"]),
+            _ = s.length ? t.map(a => n.createElement(W, {
                 prefixCls: p,
                 key: a.value.toString(),
                 disabled: "disabled" in a ? a.disabled : c.disabled,
@@ -343,7 +343,7 @@ const pe = n.forwardRef((e, r) => {
                 title: a.title,
                 id: a.id,
                 required: a.required
-            }, a.label)) : t,
+            }, a.label)) : l,
             f = n.useMemo(() => ({
                 toggleOption: h,
                 value: i,
@@ -354,13 +354,13 @@ const pe = n.forwardRef((e, r) => {
             }), [h, i, c.disabled, c.name, w, O]),
             D = j(g, {
                 [`${g}-rtl`]: z === "rtl"
-            }, v, x, B, P, I);
+            }, v, x, R, I, P);
         return d(n.createElement("div", Object.assign({
             className: D,
             style: N
         }, E, {
             ref: r
-        }), n.createElement(F.Provider, {
+        }), n.createElement(H.Provider, {
             value: f
         }, _)))
     }),

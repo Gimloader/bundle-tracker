@@ -3,7 +3,7 @@ import {
     j as i,
     D as d,
     B as e,
-    d as C,
+    b as C,
     e as s
 } from "./_index.js";
 import {
@@ -22,7 +22,7 @@ import {
 } from "./SixteenByNineScaler.js";
 import {
     S as h
-} from "./index-28.js";
+} from "./index-29.js";
 import "./GetAssetPath.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
@@ -32,12 +32,12 @@ import "./Button.js";
 import "./polished.esm.js";
 import "./inheritsLoose.js";
 import "./mobxreact.esm.js";
-import "./index-21.js";
+import "./index-22.js";
 import "./QuizTypes.js";
 import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
-import "./index-18.js";
+import "./index-19.js";
 import "./context.js";
 import "./FontAwesomeIcon.js";
 import "./Centered.js";
@@ -56,8 +56,8 @@ import "./ElementIds.js";
 import "./SeasonTicketName.js";
 import "./useQuery.js";
 import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
+import "./util.js";
+import "./index-17.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
@@ -67,7 +67,7 @@ import "./index-6.js";
 import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
-import "./index-17.js";
+import "./index-18.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
 import "./Text.js";
@@ -76,7 +76,7 @@ import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
 import "./index-1.js";
 import "./index-9.js";
-import "./index-23.js";
+import "./index-24.js";
 import "./useIntervalWhen.js";
 import "./index-10.js";
 import "./move.js";
@@ -86,14 +86,14 @@ import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
-import "./index-24.js";
-import "./index-20.js";
-import "./index-22.js";
-const k = () => {
+import "./index-25.js";
+import "./index-21.js";
+import "./index-23.js";
+const b = () => {
         const t = l(p());
         t && (t.alpha.cinematicModeAlpha = 0, o.me.cinematicMode.mainCharacterVisible = !1)
     },
-    b = () => {
+    k = () => {
         o.me.cinematicMode.nameTagsVisible = !0
     },
     y = () => {
@@ -207,10 +207,10 @@ const k = () => {
                         onClick: v,
                         children: "Show Main Character"
                     }), i.jsx(e, {
-                        onClick: k,
+                        onClick: b,
                         children: "Hide Main Character"
                     }), i.jsx(e, {
-                        onClick: b,
+                        onClick: k,
                         children: "Show Nametags"
                     }), i.jsx(e, {
                         onClick: y,

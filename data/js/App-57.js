@@ -1,9 +1,9 @@
 import {
-    bI as At,
-    au as J,
+    bJ as At,
+    au as K,
     aw as Ct,
     j as M,
-    d as W,
+    b as W,
     F as st,
     u as Nt,
     r as Pt
@@ -40,12 +40,12 @@ import "./MapStyle.js";
 import "./playSound.js";
 import "./howler.js";
 import "./mobxreact.esm.js";
-import "./index-21.js";
+import "./index-22.js";
 import "./QuizTypes.js";
 import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
-import "./index-18.js";
+import "./index-19.js";
 import "./context.js";
 import "./FontAwesomeIcon.js";
 import "./Centered.js";
@@ -63,8 +63,8 @@ import "./ElementIds.js";
 import "./SeasonTicketName.js";
 import "./useQuery.js";
 import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
+import "./util.js";
+import "./index-17.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
@@ -75,7 +75,7 @@ import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
 import "./inheritsLoose.js";
-import "./index-17.js";
+import "./index-18.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
 import "./Text.js";
@@ -85,7 +85,7 @@ import "./Tooltip.js";
 import "./polished.esm.js";
 import "./index-1.js";
 import "./index-9.js";
-import "./index-23.js";
+import "./index-24.js";
 import "./useIntervalWhen.js";
 import "./index-10.js";
 import "./move.js";
@@ -95,20 +95,20 @@ import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
-import "./index-24.js";
-import "./index-20.js";
-import "./index-22.js";
+import "./index-25.js";
+import "./index-21.js";
+import "./index-23.js";
 var et = {
         exports: {}
     },
-    Qt = et.exports,
+    $t = et.exports,
     vt;
 
-function $t() {
-    return vt || (vt = 1, function(E, Q) {
-        (function($, U) {
+function Qt() {
+    return vt || (vt = 1, (function(E, $) {
+        (function(Q, U) {
             E.exports = U(At())
-        })(typeof self < "u" ? self : Qt, $ => (() => {
+        })(typeof self < "u" ? self : $t, (Q => (() => {
             var U = {
                     2: (e, o, t) => {
                         var r = t(2199),
@@ -166,9 +166,9 @@ function $t() {
                         e.exports = function(o) {
                             var t = -1,
                                 r = Array(o.size);
-                            return o.forEach(function(i, a) {
+                            return o.forEach((function(i, a) {
                                 r[++t] = [a, i]
-                            }), r
+                            })), r
                         }
                     },
                     346: e => {
@@ -406,9 +406,9 @@ function $t() {
                             a = Object.prototype,
                             n = a.hasOwnProperty,
                             u = a.propertyIsEnumerable,
-                            c = r(function() {
+                            c = r((function() {
                                 return arguments
-                            }()) ? r : function(p) {
+                            })()) ? r : function(p) {
                                 return i(p) && n.call(p, "callee") && !u.call(p, "callee")
                             };
                         e.exports = c
@@ -472,18 +472,18 @@ function $t() {
                                 if (v.length === 0) {
                                     var l = r(),
                                         _ = Math.max(0, C - (l - f));
-                                    f = _ + l, setTimeout(function() {
+                                    f = _ + l, setTimeout((function() {
                                         var x = v.slice(0);
                                         v.length = 0;
                                         for (var j = 0; j < x.length; j++)
                                             if (!x[j].cancelled) try {
                                                 x[j].callback(f)
                                             } catch (b) {
-                                                setTimeout(function() {
+                                                setTimeout((function() {
                                                     throw b
-                                                }, 0)
+                                                }), 0)
                                             }
-                                    }, Math.round(_))
+                                    }), Math.round(_))
                                 }
                                 return v.push({
                                     handle: ++d,
@@ -512,12 +512,12 @@ function $t() {
                             var o, t, r, i, a, n;
                             typeof performance < "u" && performance !== null && performance.now ? e.exports = function() {
                                 return performance.now()
-                            } : typeof J < "u" && J !== null && J.hrtime ? (e.exports = function() {
+                            } : typeof K < "u" && K !== null && K.hrtime ? (e.exports = function() {
                                 return (o() - a) / 1e6
-                            }, t = J.hrtime, i = (o = function() {
+                            }, t = K.hrtime, i = (o = function() {
                                 var u;
                                 return 1e9 * (u = t())[0] + u[1]
-                            })(), n = 1e9 * J.uptime(), a = i - n) : Date.now ? (e.exports = function() {
+                            })(), n = 1e9 * K.uptime(), a = i - n) : Date.now ? (e.exports = function() {
                                 return Date.now() - r
                             }, r = Date.now()) : (e.exports = function() {
                                 return new Date().getTime() - r
@@ -587,9 +587,9 @@ function $t() {
                         e.exports = function(o) {
                             var t = -1,
                                 r = Array(o.size);
-                            return o.forEach(function(i) {
+                            return o.forEach((function(i) {
                                 r[++t] = i
-                            }), r
+                            })), r
                         }
                     },
                     4248: e => {
@@ -624,9 +624,9 @@ function $t() {
                             a = Object.prototype.propertyIsEnumerable,
                             n = Object.getOwnPropertySymbols,
                             u = n ? function(c) {
-                                return c == null ? [] : (c = Object(c), r(n(c), function(p) {
+                                return c == null ? [] : (c = Object(c), r(n(c), (function(p) {
                                     return a.call(c, p)
-                                }))
+                                })))
                             } : i;
                         e.exports = u
                     },
@@ -763,9 +763,9 @@ function $t() {
                                     break
                                 }
                                 if (b) {
-                                    if (!i(u, function(k, L) {
+                                    if (!i(u, (function(k, L) {
                                             if (!a(b, L) && (m === k || f(m, k, c, p, d))) return b.push(L)
-                                        })) {
+                                        }))) {
                                         j = !1;
                                         break
                                     }
@@ -791,11 +791,11 @@ function $t() {
                             i = o && !o.nodeType && o,
                             a = i && e && !e.nodeType && e,
                             n = a && a.exports === i && r.process,
-                            u = function() {
+                            u = (function() {
                                 try {
                                     return a && a.require && a.require("util").types || n && n.binding && n.binding("util")
                                 } catch {}
-                            }();
+                            })();
                         e.exports = u
                     },
                     6025: (e, o, t) => {
@@ -984,7 +984,7 @@ function $t() {
                         }
                     },
                     9155: e => {
-                        e.exports = $
+                        e.exports = Q
                     },
                     9219: e => {
                         e.exports = function(o, t) {
@@ -1054,9 +1054,9 @@ function $t() {
                             var A = Object.keys(T);
                             if (Object.getOwnPropertySymbols) {
                                 var w = Object.getOwnPropertySymbols(T);
-                                h && (w = w.filter(function(B) {
+                                h && (w = w.filter((function(B) {
                                     return Object.getOwnPropertyDescriptor(T, B).enumerable
-                                })), A.push.apply(A, w)
+                                }))), A.push.apply(A, w)
                             }
                             return A
                         }
@@ -1064,30 +1064,30 @@ function $t() {
                         function S(T) {
                             for (var h = 1; h < arguments.length; h++) {
                                 var A = arguments[h] != null ? arguments[h] : {};
-                                h % 2 ? m(Object(A), !0).forEach(function(w) {
+                                h % 2 ? m(Object(A), !0).forEach((function(w) {
                                     O(T, w, A[w])
-                                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(T, Object.getOwnPropertyDescriptors(A)) : m(Object(A)).forEach(function(w) {
+                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(T, Object.getOwnPropertyDescriptors(A)) : m(Object(A)).forEach((function(w) {
                                     Object.defineProperty(T, w, Object.getOwnPropertyDescriptor(A, w))
-                                })
+                                }))
                             }
                             return T
                         }
 
                         function P(T) {
-                            return function(h) {
+                            return (function(h) {
                                 if (Array.isArray(h)) return k(h)
-                            }(T) || function(h) {
+                            })(T) || (function(h) {
                                 if (typeof Symbol < "u" && h[Symbol.iterator] != null || h["@@iterator"] != null) return Array.from(h)
-                            }(T) || function(h, A) {
+                            })(T) || (function(h, A) {
                                 if (h) {
                                     if (typeof h == "string") return k(h, A);
                                     var w = {}.toString.call(h).slice(8, -1);
                                     return w === "Object" && h.constructor && (w = h.constructor.name), w === "Map" || w === "Set" ? Array.from(h) : w === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(w) ? k(h, A) : void 0
                                 }
-                            }(T) || function() {
+                            })(T) || (function() {
                                 throw new TypeError(`Invalid attempt to spread non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)
-                            }()
+                            })()
                         }
 
                         function k(T, h) {
@@ -1113,7 +1113,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                         }
 
                         function G(T) {
-                            var h = function(A) {
+                            var h = (function(A) {
                                 if (b(A) != "object" || !A) return A;
                                 var w = A[Symbol.toPrimitive];
                                 if (w !== void 0) {
@@ -1122,15 +1122,15 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                     throw new TypeError("@@toPrimitive must return a primitive value.")
                                 }
                                 return String(A)
-                            }(T);
+                            })(T);
                             return b(h) == "symbol" ? h : h + ""
                         }
-                        const H = function() {
+                        const H = (function() {
                             function T(w, B) {
                                 var s = this;
-                                if (function(g, N) {
+                                if ((function(g, N) {
                                         if (!(g instanceof N)) throw new TypeError("Cannot call a class as a function")
-                                    }(this, T), O(this, "state", {
+                                    })(this, T), O(this, "state", {
                                         cursorAnimation: null,
                                         lastFrameTime: null,
                                         pauseUntil: null,
@@ -1161,23 +1161,23 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                         stringSplitter: null,
                                         onCreateTextNode: null,
                                         onRemoveNode: null
-                                    }), O(this, "setupWrapperElement", function() {
+                                    }), O(this, "setupWrapperElement", (function() {
                                         s.state.elements.container && (s.state.elements.wrapper.className = s.options.wrapperClassName, s.state.elements.cursor.className = s.options.cursorClassName, s.state.elements.cursor.innerHTML = s.options.cursor, s.state.elements.container.innerHTML = "", s.state.elements.container.appendChild(s.state.elements.wrapper), s.state.elements.container.appendChild(s.state.elements.cursor))
-                                    }), O(this, "start", function() {
+                                    })), O(this, "start", (function() {
                                         return s.state.eventLoopPaused = !1, s.runEventLoop(), s
-                                    }), O(this, "pause", function() {
+                                    })), O(this, "pause", (function() {
                                         return s.state.eventLoopPaused = !0, s
-                                    }), O(this, "stop", function() {
+                                    })), O(this, "stop", (function() {
                                         return s.state.eventLoop && ((0, r.cancel)(s.state.eventLoop), s.state.eventLoop = null), s
-                                    }), O(this, "pauseFor", function(g) {
+                                    })), O(this, "pauseFor", (function(g) {
                                         return s.addEventToQueue(d, {
                                             ms: g
                                         }), s
-                                    }), O(this, "typeOutAllStrings", function() {
-                                        return typeof s.options.strings == "string" ? (s.typeString(s.options.strings).pauseFor(s.options.pauseFor), s) : (s.options.strings.forEach(function(g) {
+                                    })), O(this, "typeOutAllStrings", (function() {
+                                        return typeof s.options.strings == "string" ? (s.typeString(s.options.strings).pauseFor(s.options.pauseFor), s) : (s.options.strings.forEach((function(g) {
                                             s.typeString(g).pauseFor(s.options.pauseFor).deleteAll(s.options.deleteSpeed)
-                                        }), s)
-                                    }), O(this, "typeString", function(g) {
+                                        })), s)
+                                    })), O(this, "typeString", (function(g) {
                                         var N = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : null;
                                         if (a(g)) return s.typeOutHTMLString(g, N);
                                         if (g) {
@@ -1186,19 +1186,19 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                             s.typeCharacters(F, N)
                                         }
                                         return s
-                                    }), O(this, "pasteString", function(g) {
+                                    })), O(this, "pasteString", (function(g) {
                                         var N = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : null;
                                         return a(g) ? s.typeOutHTMLString(g, N, !0) : (g && s.addEventToQueue(x, {
                                             character: g,
                                             node: N
                                         }), s)
-                                    }), O(this, "typeOutHTMLString", function(g) {
+                                    })), O(this, "typeOutHTMLString", (function(g) {
                                         var N = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : null,
                                             R = arguments.length > 2 ? arguments[2] : void 0,
-                                            F = function(V) {
+                                            F = (function(V) {
                                                 var Y = document.createElement("div");
                                                 return Y.innerHTML = V, Y.childNodes
-                                            }(g);
+                                            })(g);
                                         if (F.length > 0)
                                             for (var D = 0; D < F.length; D++) {
                                                 var I = F[D],
@@ -1209,57 +1209,57 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                                 }), R ? s.pasteString(q, I) : s.typeString(q, I)) : I.textContent && (R ? s.pasteString(I.textContent, N) : s.typeString(I.textContent, N))
                                             }
                                         return s
-                                    }), O(this, "deleteAll", function() {
+                                    })), O(this, "deleteAll", (function() {
                                         var g = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : "natural";
                                         return s.addEventToQueue(p, {
                                             speed: g
                                         }), s
-                                    }), O(this, "changeDeleteSpeed", function(g) {
+                                    })), O(this, "changeDeleteSpeed", (function(g) {
                                         if (!g) throw new Error("Must provide new delete speed");
                                         return s.addEventToQueue(y, {
                                             speed: g
                                         }), s
-                                    }), O(this, "changeDelay", function(g) {
+                                    })), O(this, "changeDelay", (function(g) {
                                         if (!g) throw new Error("Must provide new delay");
                                         return s.addEventToQueue(l, {
                                             delay: g
                                         }), s
-                                    }), O(this, "changeCursor", function(g) {
+                                    })), O(this, "changeCursor", (function(g) {
                                         if (!g) throw new Error("Must provide new cursor");
                                         return s.addEventToQueue(_, {
                                             cursor: g
                                         }), s
-                                    }), O(this, "deleteChars", function(g) {
+                                    })), O(this, "deleteChars", (function(g) {
                                         if (!g) throw new Error("Must provide amount of characters to delete");
                                         for (var N = 0; N < g; N++) s.addEventToQueue(c);
                                         return s
-                                    }), O(this, "callFunction", function(g, N) {
+                                    })), O(this, "callFunction", (function(g, N) {
                                         if (!g || typeof g != "function") throw new Error("Callback must be a function");
                                         return s.addEventToQueue(v, {
                                             cb: g,
                                             thisArg: N
                                         }), s
-                                    }), O(this, "typeCharacters", function(g) {
+                                    })), O(this, "typeCharacters", (function(g) {
                                         var N = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : null;
                                         if (!g || !Array.isArray(g)) throw new Error("Characters must be an array");
-                                        return g.forEach(function(R) {
+                                        return g.forEach((function(R) {
                                             s.addEventToQueue(u, {
                                                 character: R,
                                                 node: N
                                             })
-                                        }), s
-                                    }), O(this, "removeCharacters", function(g) {
+                                        })), s
+                                    })), O(this, "removeCharacters", (function(g) {
                                         if (!g || !Array.isArray(g)) throw new Error("Characters must be an array");
-                                        return g.forEach(function() {
+                                        return g.forEach((function() {
                                             s.addEventToQueue(c)
-                                        }), s
-                                    }), O(this, "addEventToQueue", function(g, N) {
+                                        })), s
+                                    })), O(this, "addEventToQueue", (function(g, N) {
                                         var R = arguments.length > 2 && arguments[2] !== void 0 && arguments[2];
                                         return s.addEventToStateProperty(g, N, R, "eventQueue")
-                                    }), O(this, "addReverseCalledEvent", function(g, N) {
+                                    })), O(this, "addReverseCalledEvent", (function(g, N) {
                                         var R = arguments.length > 2 && arguments[2] !== void 0 && arguments[2];
                                         return s.options.loop ? s.addEventToStateProperty(g, N, R, "reverseCalledEvents") : s
-                                    }), O(this, "addEventToStateProperty", function(g, N) {
+                                    })), O(this, "addEventToStateProperty", (function(g, N) {
                                         var R = arguments.length > 2 && arguments[2] !== void 0 && arguments[2],
                                             F = arguments.length > 3 ? arguments[3] : void 0,
                                             D = {
@@ -1267,7 +1267,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                                 eventArgs: N || {}
                                             };
                                         return s.state[F] = R ? [D].concat(P(s.state[F])) : [].concat(P(s.state[F]), [D]), s
-                                    }), O(this, "runEventLoop", function() {
+                                    })), O(this, "runEventLoop", (function() {
                                         s.state.lastFrameTime || (s.state.lastFrameTime = Date.now());
                                         var g = Date.now(),
                                             N = g - s.state.lastFrameTime;
@@ -1295,11 +1295,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                                         var V = q.character,
                                                             Y = q.node,
                                                             pt = document.createTextNode(V),
-                                                            K = pt;
-                                                        s.options.onCreateTextNode && typeof s.options.onCreateTextNode == "function" && (K = s.options.onCreateTextNode(V, pt)), K && (Y ? Y.appendChild(K) : s.state.elements.wrapper.appendChild(K)), s.state.visibleNodes = [].concat(P(s.state.visibleNodes), [{
+                                                            J = pt;
+                                                        s.options.onCreateTextNode && typeof s.options.onCreateTextNode == "function" && (J = s.options.onCreateTextNode(V, pt)), J && (Y ? Y.appendChild(J) : s.state.elements.wrapper.appendChild(J)), s.state.visibleNodes = [].concat(P(s.state.visibleNodes), [{
                                                             type: "TEXT_NODE",
                                                             character: V,
-                                                            node: K
+                                                            node: J
                                                         }]);
                                                         break;
                                                     case c:
@@ -1385,7 +1385,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                                 s.options.loop && (D.eventName === f || D.eventArgs && D.eventArgs.temp || (s.state.calledEvents = [].concat(P(s.state.calledEvents), [D]))), s.state.eventQueue = F, s.state.lastFrameTime = g
                                             }
                                         }
-                                    }), w)
+                                    })), w)
                                     if (typeof w == "string") {
                                         var ct = document.querySelector(w);
                                         if (!ct) throw new Error("Could not find container element");
@@ -1410,7 +1410,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             }]) && L(h.prototype, A), Object.defineProperty(h, "prototype", {
                                 writable: !1
                             }), T
-                        }()
+                        })()
                     },
                     9935: e => {
                         e.exports = function() {
@@ -1440,14 +1440,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                     enumerable: !0,
                     get: o[t]
                 })
-            }, z.g = function() {
+            }, z.g = (function() {
                 if (typeof globalThis == "object") return globalThis;
                 try {
                     return this || new Function("return this")()
                 } catch {
                     if (typeof window == "object") return window
                 }
-            }(), z.o = (e, o) => Object.prototype.hasOwnProperty.call(e, o), z.nmd = e => (e.paths = [], e.children || (e.children = []), e);
+            })(), z.o = (e, o) => Object.prototype.hasOwnProperty.call(e, o), z.nmd = e => (e.paths = [], e.children || (e.children = []), e);
             var ut = {};
             return (() => {
                 z.d(ut, {
@@ -1487,7 +1487,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
                 function p() {
                     try {
-                        var y = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {}))
+                        var y = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], (function() {})))
                     } catch {}
                     return (p = function() {
                         return !!y
@@ -1501,7 +1501,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 }
 
                 function d(y) {
-                    var l = function(_) {
+                    var l = (function(_) {
                         if (a(_) != "object" || !_) return _;
                         var x = _[Symbol.toPrimitive];
                         if (x !== void 0) {
@@ -1510,10 +1510,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             throw new TypeError("@@toPrimitive must return a primitive value.")
                         }
                         return String(_)
-                    }(y);
+                    })(y);
                     return a(l) == "symbol" ? l : l + ""
                 }
-                var v = function(y) {
+                var v = (function(y) {
                     (function(b, m) {
                         if (typeof m != "function" && m !== null) throw new TypeError("Super expression must either be null or a function");
                         b.prototype = Object.create(m && m.prototype, {
@@ -1526,7 +1526,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             writable: !1
                         }), m && u(b, m)
                     })(j, y);
-                    var l, _, x = function(b) {
+                    var l, _, x = (function(b) {
                         var m = p();
                         return function() {
                             var S, P = f(b);
@@ -1534,13 +1534,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                 var k = f(this).constructor;
                                 S = Reflect.construct(P, arguments, k)
                             } else S = P.apply(this, arguments);
-                            return function(L, O) {
+                            return (function(L, O) {
                                 if (O && (a(O) == "object" || typeof O == "function")) return O;
                                 if (O !== void 0) throw new TypeError("Derived constructors may only return object or undefined");
                                 return c(L)
-                            }(this, S)
+                            })(this, S)
                         }
-                    }(j);
+                    })(j);
 
                     function j() {
                         var b, m, S, P;
@@ -1564,10 +1564,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                 m = new t.default(this.typewriter, this.props.options);
                             this.setState({
                                 instance: m
-                            }, function() {
+                            }, (function() {
                                 var S = b.props.onInit;
                                 S && S(m)
-                            })
+                            }))
                         }
                     }, {
                         key: "componentDidUpdate",
@@ -1597,26 +1597,26 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                     }]) && n(l.prototype, _), Object.defineProperty(l, "prototype", {
                         writable: !1
                     }), j
-                }(e.Component);
+                })(e.Component);
                 v.defaultProps = {
                     component: "div"
                 };
                 const C = v
             })(), ut.default
-        })())
-    }(et)), et.exports
+        })()))
+    })(et)), et.exports
 }
-var Bt = $t();
+var Bt = Qt();
 const Ut = Ct(Bt),
     Ht = E => {
-        const Q = () => {
+        const $ = () => {
             if (E.typewriter) {
-                const $ = kt({
+                const Q = kt({
                     inputText: E.message
                 });
                 return M.jsx("div", {
                     style: {
-                        fontWeight: $.includes("<b>") ? st.Normal : st.Bold
+                        fontWeight: Q.includes("<b>") ? st.Normal : st.Bold
                     },
                     children: M.jsx(Ut, {
                         options: {
@@ -1624,7 +1624,7 @@ const Ut = Ct(Bt),
                             cursor: ""
                         },
                         onInit: U => {
-                            U.typeString($).callFunction(() => {
+                            U.typeString(Q).callFunction(() => {
                                 E.onTypewriterComplete()
                             }).start()
                         }
@@ -1645,7 +1645,7 @@ const Ut = Ct(Bt),
                 style: {
                     paddingLeft: E.character ? 85 : 0
                 },
-                children: Q()
+                children: $()
             })]
         })
     },
@@ -1678,12 +1678,12 @@ const qt = {
     },
     Vt = E => {
         const {
-            action: Q,
-            send: $
+            action: $,
+            send: Q
         } = E, U = X => {
-            gt(X), $(bt.action, {
-                index: Q.index,
-                action: Q.action
+            gt(X), Q(bt.action, {
+                index: $.index,
+                action: $.action
             }), E.close()
         };
         return M.jsx(rt.div, {
@@ -1696,7 +1696,7 @@ const qt = {
                 onClick: U,
                 children: M.jsx("div", {
                     children: M.jsx(mt, {
-                        inputText: Q.text,
+                        inputText: $.text,
                         boldByDefault: !0
                     })
                 })
@@ -1721,7 +1721,7 @@ const qt = {
     transform: scale(1.05);
   }
 `,
-    Kt = {
+    Jt = {
         hidden: {
             opacity: 1
         },
@@ -1733,15 +1733,15 @@ const qt = {
             }
         }
     },
-    Jt = E => E.actions.length ? M.jsx(Xt, {
-        variants: Kt,
+    Kt = E => E.actions.length ? M.jsx(Xt, {
+        variants: Jt,
         initial: "hidden",
         animate: E.canShow ? "show" : "hidden",
-        children: E.actions.map((Q, $) => M.jsx(Vt, {
-            action: Q,
+        children: E.actions.map(($, Q) => M.jsx(Vt, {
+            action: $,
             send: E.send,
             close: E.close
-        }, Q.text + $))
+        }, $.text + Q))
     }) : null,
     Xt = W(rt.div).attrs({
         className: "maxWidth"
@@ -1753,7 +1753,7 @@ const qt = {
   align-items: center;
 `,
     Zt = E => {
-        const [Q, $] = Nt(!1);
+        const [$, Q] = Nt(!1);
         return M.jsxs("div", {
             className: "maxWidth",
             style: {
@@ -1763,12 +1763,12 @@ const qt = {
                 message: E.message,
                 typewriter: E.typewriter,
                 character: E.character,
-                onTypewriterComplete: $
-            }), M.jsx(Jt, {
+                onTypewriterComplete: Q
+            }), M.jsx(Kt, {
                 actions: E.actions,
                 send: E.send,
                 close: E.close,
-                canShow: E.typewriter ? Q : !0
+                canShow: E.typewriter ? $ : !0
             })]
         })
     },

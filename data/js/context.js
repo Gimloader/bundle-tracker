@@ -8,12 +8,12 @@ import {
     aA as ue,
     aC as Ae,
     x as U,
-    db as pe,
+    da as pe,
     aB as Ne,
-    aD as $,
-    aK as V,
-    bg as be,
-    bh as _e
+    aK as $,
+    aD as V,
+    bi as _e,
+    bf as be
 } from "./_index.js";
 var Le = o.forwardRef(function(e, r) {
         var d = e.prefixCls,
@@ -41,45 +41,45 @@ var Le = o.forwardRef(function(e, r) {
             a = o.useState(0),
             t = w(a, 2),
             n = t[0],
-            s = t[1],
+            i = t[1],
             R = o.useState(0),
-            b = w(R, 2),
-            k = b[0],
-            q = b[1],
+            _ = w(R, 2),
+            k = _[0],
+            q = _[1],
             v = E || u,
-            _ = C > 0 && A,
+            b = C > 0 && A,
             T = function() {
                 K(F)
             },
-            z = function(i) {
-                (i.key === "Enter" || i.code === "Enter" || i.keyCode === Ae.ENTER) && T()
+            z = function(s) {
+                (s.key === "Enter" || s.code === "Enter" || s.keyCode === Ae.ENTER) && T()
             };
         o.useEffect(function() {
             if (!v && C > 0) {
                 var M = Date.now() - k,
-                    i = setTimeout(function() {
+                    s = setTimeout(function() {
                         T()
                     }, C * 1e3 - k);
                 return function() {
-                    p && clearTimeout(i), q(Date.now() - M)
+                    p && clearTimeout(s), q(Date.now() - M)
                 }
             }
         }, [C, v, H]), o.useEffect(function() {
-            if (!v && _ && (p || k === 0)) {
+            if (!v && b && (p || k === 0)) {
                 var M = performance.now(),
-                    i, h = function ne() {
-                        cancelAnimationFrame(i), i = requestAnimationFrame(function(oe) {
+                    s, h = function ne() {
+                        cancelAnimationFrame(s), s = requestAnimationFrame(function(oe) {
                             var G = oe + k - M,
                                 j = Math.min(G / (C * 1e3), 1);
-                            s(j * 100), j < 1 && ne()
+                            i(j * 100), j < 1 && ne()
                         })
                     };
                 return h(),
                     function() {
-                        p && cancelAnimationFrame(i)
+                        p && cancelAnimationFrame(s)
                     }
             }
-        }, [C, k, v, _, H]);
+        }, [C, k, v, b, H]);
         var X = o.useMemo(function() {
                 return ge(m) === "object" && m !== null ? m : m ? {
                     closeIcon: P
@@ -92,13 +92,13 @@ var Le = o.forwardRef(function(e, r) {
             ref: r,
             className: Q(I, l, ue({}, "".concat(I, "-closable"), m)),
             style: c,
-            onMouseEnter: function(i) {
+            onMouseEnter: function(s) {
                 var h;
-                O(!0), y == null || (h = y.onMouseEnter) === null || h === void 0 || h.call(y, i)
+                O(!0), y == null || (h = y.onMouseEnter) === null || h === void 0 || h.call(y, s)
             },
-            onMouseLeave: function(i) {
+            onMouseLeave: function(s) {
                 var h;
-                O(!1), y == null || (h = y.onMouseLeave) === null || h === void 0 || h.call(y, i)
+                O(!1), y == null || (h = y.onMouseLeave) === null || h === void 0 || h.call(y, s)
             },
             onClick: f
         }), o.createElement("div", {
@@ -109,10 +109,10 @@ var Le = o.forwardRef(function(e, r) {
             onKeyDown: z,
             "aria-label": "Close"
         }, te, {
-            onClick: function(i) {
-                i.preventDefault(), i.stopPropagation(), T()
+            onClick: function(s) {
+                s.preventDefault(), s.stopPropagation(), T()
             }
-        }), X.closeIcon), _ && o.createElement("progress", {
+        }), X.closeIcon), b && o.createElement("progress", {
             className: "".concat(I, "-progress"),
             max: "100",
             value: B
@@ -175,25 +175,25 @@ var Le = o.forwardRef(function(e, r) {
             a = w(O, 2),
             t = a[0],
             n = a[1],
-            s = n.offset,
+            i = n.offset,
             R = n.threshold,
-            b = n.gap,
+            _ = n.gap,
             k = t && (S.length > 0 || u.length <= R),
             q = typeof A == "function" ? A(c) : A;
         return o.useEffect(function() {
             t && S.length > 1 && x(function(v) {
-                return v.filter(function(_) {
+                return v.filter(function(b) {
                     return u.some(function(T) {
                         var z = T.key;
-                        return _ === z
+                        return b === z
                     })
                 })
             })
         }, [S, u, t]), o.useEffect(function() {
             var v;
             if (t && g.current[(v = u[u.length - 1]) === null || v === void 0 ? void 0 : v.key]) {
-                var _;
-                K(g.current[(_ = u[u.length - 1]) === null || _ === void 0 ? void 0 : _.key])
+                var b;
+                K(g.current[(b = u[u.length - 1]) === null || b === void 0 ? void 0 : b.key])
             }
         }, [u, t]), U.createElement(pe, ee({
             key: c,
@@ -205,7 +205,7 @@ var Le = o.forwardRef(function(e, r) {
             onAllRemoved: function() {
                 L(c)
             }
-        }), function(v, _) {
+        }), function(v, b) {
             var T = v.config,
                 z = v.className,
                 X = v.style,
@@ -213,7 +213,7 @@ var Le = o.forwardRef(function(e, r) {
                 B = T,
                 I = B.key,
                 M = B.times,
-                i = String(I),
+                s = String(I),
                 h = T,
                 ne = h.className,
                 oe = h.style,
@@ -221,43 +221,43 @@ var Le = o.forwardRef(function(e, r) {
                 j = h.styles,
                 Se = Ne(h, Me),
                 ae = u.findIndex(function(Z) {
-                    return Z.key === i
+                    return Z.key === s
                 }),
                 Y = {};
             if (t) {
                 var J = u.length - 1 - (ae > -1 ? ae : te - 1),
                     fe = c === "top" || c === "bottom" ? "-50%" : "0";
                 if (J > 0) {
-                    var re, se, ie;
-                    Y.height = k ? (re = g.current[i]) === null || re === void 0 ? void 0 : re.offsetHeight : f == null ? void 0 : f.offsetHeight;
+                    var re, ie, se;
+                    Y.height = k ? (re = g.current[s]) === null || re === void 0 ? void 0 : re.offsetHeight : f == null ? void 0 : f.offsetHeight;
                     for (var ve = 0, ce = 0; ce < J; ce++) {
                         var le;
-                        ve += ((le = g.current[u[u.length - 1 - ce].key]) === null || le === void 0 ? void 0 : le.offsetHeight) + b
+                        ve += ((le = g.current[u[u.length - 1 - ce].key]) === null || le === void 0 ? void 0 : le.offsetHeight) + _
                     }
-                    var ke = (k ? ve : J * s) * (c.startsWith("top") ? 1 : -1),
-                        Ee = !k && f !== null && f !== void 0 && f.offsetWidth && (se = g.current[i]) !== null && se !== void 0 && se.offsetWidth ? ((f == null ? void 0 : f.offsetWidth) - s * 2 * (J < 3 ? J : 3)) / ((ie = g.current[i]) === null || ie === void 0 ? void 0 : ie.offsetWidth) : 1;
+                    var ke = (k ? ve : J * i) * (c.startsWith("top") ? 1 : -1),
+                        Ee = !k && f !== null && f !== void 0 && f.offsetWidth && (ie = g.current[s]) !== null && ie !== void 0 && ie.offsetWidth ? ((f == null ? void 0 : f.offsetWidth) - i * 2 * (J < 3 ? J : 3)) / ((se = g.current[s]) === null || se === void 0 ? void 0 : se.offsetWidth) : 1;
                     Y.transform = "translate3d(".concat(fe, ", ").concat(ke, "px, 0) scaleX(").concat(Ee, ")")
                 } else Y.transform = "translate3d(".concat(fe, ", 0, 0)")
             }
             return U.createElement("div", {
-                ref: _,
+                ref: b,
                 className: Q("".concat(l, "-notice-wrapper"), z, G == null ? void 0 : G.wrapper),
-                style: $($($({}, X), Y), j == null ? void 0 : j.wrapper),
+                style: V(V(V({}, X), Y), j == null ? void 0 : j.wrapper),
                 onMouseEnter: function() {
                     return x(function(W) {
-                        return W.includes(i) ? W : [].concat(V(W), [i])
+                        return W.includes(s) ? W : [].concat($(W), [s])
                     })
                 },
                 onMouseLeave: function() {
                     return x(function(W) {
                         return W.filter(function(xe) {
-                            return xe !== i
+                            return xe !== s
                         })
                     })
                 }
             }, U.createElement(Le, ee({}, Se, {
                 ref: function(W) {
-                    ae > -1 ? g.current[i] = W : delete g.current[i]
+                    ae > -1 ? g.current[s] = W : delete g.current[s]
                 },
                 prefixCls: l,
                 classNames: G,
@@ -288,12 +288,12 @@ var Le = o.forwardRef(function(e, r) {
             P = g[0],
             y = g[1],
             f = function(t) {
-                var n, s = P.find(function(R) {
+                var n, i = P.find(function(R) {
                     return R.key === t
                 });
-                s == null || (n = s.onClose) === null || n === void 0 || n.call(s), y(function(R) {
-                    return R.filter(function(b) {
-                        return b.key !== t
+                i == null || (n = i.onClose) === null || n === void 0 || n.call(i), y(function(R) {
+                    return R.filter(function(_) {
+                        return _.key !== t
                     })
                 })
             };
@@ -301,16 +301,16 @@ var Le = o.forwardRef(function(e, r) {
             return {
                 open: function(t) {
                     y(function(n) {
-                        var s = V(n),
-                            R = s.findIndex(function(q) {
+                        var i = $(n),
+                            R = i.findIndex(function(q) {
                                 return q.key === t.key
                             }),
-                            b = $({}, t);
+                            _ = V({}, t);
                         if (R >= 0) {
                             var k;
-                            b.times = (((k = n[R]) === null || k === void 0 ? void 0 : k.times) || 0) + 1, s[R] = b
-                        } else b.times = 0, s.push(b);
-                        return C > 0 && s.length > C && (s = s.slice(-C)), s
+                            _.times = (((k = n[R]) === null || k === void 0 ? void 0 : k.times) || 0) + 1, i[R] = _
+                        } else _.times = 0, i.push(_);
+                        return C > 0 && i.length > C && (i = i.slice(-C)), i
                     })
                 },
                 close: function(t) {
@@ -329,17 +329,17 @@ var Le = o.forwardRef(function(e, r) {
             var a = {};
             P.forEach(function(t) {
                 var n = t.placement,
-                    s = n === void 0 ? "topRight" : n;
-                s && (a[s] = a[s] || [], a[s].push(t))
+                    i = n === void 0 ? "topRight" : n;
+                i && (a[i] = a[i] || [], a[i].push(t))
             }), Object.keys(E).forEach(function(t) {
                 a[t] = a[t] || []
             }), S(a)
         }, [P]);
         var x = function(t) {
                 S(function(n) {
-                    var s = $({}, n),
-                        R = s[t] || [];
-                    return R.length || delete s[t], s
+                    var i = V({}, n),
+                        R = i[t] || [];
+                    return R.length || delete i[t], i
                 })
             },
             u = o.useRef(!1);
@@ -347,7 +347,7 @@ var Le = o.forwardRef(function(e, r) {
                 Object.keys(E).length > 0 ? u.current = !0 : u.current && (p == null || p(), u.current = !1)
             }, [E]), !l) return null;
         var O = Object.keys(E);
-        return be.createPortal(o.createElement(o.Fragment, null, O.map(function(a) {
+        return _e.createPortal(o.createElement(o.Fragment, null, O.map(function(a) {
             var t = E[a],
                 n = o.createElement(we, {
                     key: a,
@@ -417,10 +417,10 @@ function Ke() {
         E = w(H, 2),
         S = E[0],
         x = E[1],
-        u = _e(function(a) {
+        u = be(function(a) {
             var t = Oe(D, a);
             (t.key === null || t.key === void 0) && (t.key = "rc-notification-".concat(Ce), Ce += 1), x(function(n) {
-                return [].concat(V(n), [{
+                return [].concat($(n), [{
                     type: "open",
                     config: t
                 }])
@@ -431,7 +431,7 @@ function Ke() {
                 open: u,
                 close: function(t) {
                     x(function(n) {
-                        return [].concat(V(n), [{
+                        return [].concat($(n), [{
                             type: "close",
                             key: t
                         }])
@@ -439,7 +439,7 @@ function Ke() {
                 },
                 destroy: function() {
                     x(function(t) {
-                        return [].concat(V(t), [{
+                        return [].concat($(t), [{
                             type: "destroy"
                         }])
                     })
@@ -465,8 +465,8 @@ function Ke() {
             });
             var a, t;
             x(function(n) {
-                return (a !== n || !t) && (a = n, t = n.filter(function(s) {
-                    return !S.includes(s)
+                return (a !== n || !t) && (a = n, t = n.filter(function(i) {
+                    return !S.includes(i)
                 })), t
             })
         }
