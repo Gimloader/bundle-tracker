@@ -1,31 +1,31 @@
 import {
     bx as D,
-    cW as P,
+    cV as P,
     _ as o
 } from "./_index.js";
 import {
-    _ as W
+    _ as E
 } from "./inheritsLoose.js";
-var h = function(r) {
-    W(e, r);
+var h = (function(r) {
+    E(e, r);
 
     function e(a) {
         var t;
         return t = r.call(this, "An error occurred. See https://github.com/styled-components/polished/blob/main/src/internalHelpers/errors.md#" + a + " for more information.") || this, D(t)
     }
     return e
-}(P(Error));
+})(P(Error));
 
 function T(r) {
     return Math.round(r * 255)
 }
 
-function E(r, e, a) {
+function N(r, e, a) {
     return T(r) + "," + T(e) + "," + T(a)
 }
 
 function F(r, e, a, t) {
-    if (t === void 0 && (t = E), e === 0) return t(a, a, a);
+    if (t === void 0 && (t = N), e === 0) return t(a, a, a);
     var n = (r % 360 + 360) % 360 / 60,
         f = (1 - Math.abs(2 * a - 1)) * e,
         i = f * (1 - Math.abs(n % 2 - 1)),
@@ -190,7 +190,7 @@ var q = {
     yellowgreen: "9acd32"
 };
 
-function N(r) {
+function W(r) {
     if (typeof r != "string") return r;
     var e = r.toLowerCase();
     return q[e] ? "#" + q[e] : r
@@ -206,7 +206,7 @@ var _ = /^#[a-fA-F0-9]{6}$/,
 
 function y(r) {
     if (typeof r != "string") throw new h(3);
-    var e = N(r);
+    var e = W(r);
     if (e.match(_)) return {
         red: parseInt("" + e[1] + e[2], 16),
         green: parseInt("" + e[3] + e[4], 16),

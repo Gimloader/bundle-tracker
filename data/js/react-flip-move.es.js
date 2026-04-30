@@ -2,7 +2,7 @@ import {
     x as j,
     r as g,
     b9 as W,
-    bg as I
+    bi as I
 } from "./_index.js";
 
 function x(l) {
@@ -187,7 +187,7 @@ var G = Z(function(l) {
 
 function Q(l) {
     var e, r;
-    return r = e = function(t) {
+    return r = e = (function(t) {
         w(i, t);
 
         function i() {
@@ -243,7 +243,7 @@ function Q(l) {
         }, i.prototype.render = function() {
             return j.createElement(l, this.convertProps(this.props))
         }, i
-    }(g.Component), e.defaultProps = {
+    })(g.Component), e.defaultProps = {
         easing: "ease-in-out",
         duration: 350,
         delay: 0,
@@ -398,7 +398,7 @@ function u(l) {
 function A(l) {
     return g.Children.toArray(l)
 }
-var st = function(l) {
+var st = (function(l) {
         w(e, l);
 
         function e() {
@@ -716,7 +716,7 @@ var st = function(l) {
             });
             return g.createElement(s, p)
         }, e
-    }(g.Component),
+    })(g.Component),
     dt = Q(st);
 export {
     dt as e

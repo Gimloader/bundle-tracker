@@ -6,13 +6,13 @@ import {
     j as t,
     T as h,
     e,
-    d as j,
+    b as j,
     M as C,
-    U as k,
-    D as y
+    U as b,
+    D as k
 } from "./_index.js";
 import {
-    C as b
+    C as y
 } from "./Centered.js";
 import {
     A as P
@@ -33,12 +33,12 @@ import "./MapStyle.js";
 import "./playSound.js";
 import "./howler.js";
 import "./mobxreact.esm.js";
-import "./index-21.js";
+import "./index-22.js";
 import "./QuizTypes.js";
 import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
-import "./index-18.js";
+import "./index-19.js";
 import "./context.js";
 import "./FontAwesomeIcon.js";
 import "./CapitalizeFirstLetter.js";
@@ -52,16 +52,16 @@ import "./index-3.js";
 import "./CheckOutlined.js";
 import "./CopyOutlined.js";
 import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
+import "./index-21.js";
+import "./index-23.js";
 import "./index-1.js";
 import "./progress.js";
 import "./ElementIds.js";
 import "./SeasonTicketName.js";
 import "./useQuery.js";
 import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
+import "./util.js";
+import "./index-17.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
@@ -69,7 +69,7 @@ import "./use-motion-value.js";
 import "./use-transform.js";
 import "./index-6.js";
 import "./AccessibleAnchor.js";
-import "./index-17.js";
+import "./index-18.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
 import "./Text.js";
@@ -78,7 +78,7 @@ import "./LazyLatexRenderer.js";
 import "./clsx.m.js";
 import "./Tooltip.js";
 import "./index-9.js";
-import "./index-23.js";
+import "./index-24.js";
 import "./useIntervalWhen.js";
 import "./index-10.js";
 import "./move.js";
@@ -88,7 +88,7 @@ import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
-import "./index-24.js";
+import "./index-25.js";
 const Ht = () => {
         const {
             id: m
@@ -134,14 +134,14 @@ const Ht = () => {
                     style: {
                         color: e.Black,
                         textAlign: "center",
-                        font: k.SFPro
+                        font: b.SFPro
                     },
                     children: [t.jsx(v, {
                         style: {
                             color: "darkorange",
                             fontSize: 51
                         }
-                    }), " ", t.jsx(y, {}), t.jsx("div", {
+                    }), " ", t.jsx(k, {}), t.jsx("div", {
                         style: {
                             textAlign: "center",
                             fontSize: 23,
@@ -161,7 +161,7 @@ const Ht = () => {
             }), u()]
         })
     },
-    A = j(b)`
+    A = j(y)`
   flex: 1;
   padding: 20px;
   background: ${e.BackgroundPurple};

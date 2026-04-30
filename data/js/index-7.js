@@ -1,56 +1,56 @@
 import {
     r as i,
-    I as ot,
+    I as lt,
     _ as ae,
-    by as Le,
-    bw as He,
-    aA as y,
-    aH as st,
-    az as re,
-    bf as ut,
-    d6 as lt,
+    az as U,
+    by as Te,
+    bw as Pe,
+    aA as $,
+    aH as ut,
+    bg as ct,
+    d5 as dt,
     b8 as ce,
     am as W,
-    aB as Pe,
-    aJ as ct,
-    bL as Ie,
-    cV as dt,
-    bF as ft,
-    ai as mt,
-    aj as gt,
-    bN as pt,
+    aB as Ge,
+    aJ as ft,
+    bM as $e,
+    cU as mt,
+    bG as gt,
+    ai as pt,
+    aj as vt,
+    bO as ht,
     aL as ye,
-    ak as C,
-    aN as vt,
-    al as ht,
-    bH as bt,
-    bT as St,
-    bW as Nt,
-    aP as It,
-    bV as yt,
-    bU as $t,
+    ak as O,
+    aN as bt,
+    al as St,
+    bI as Nt,
+    bU as It,
+    bW as $t,
+    aP as yt,
+    bB as wt,
+    bV as Et,
     bZ as Ve,
-    E as Et
+    E as xt
 } from "./_index.js";
 import {
-    R as wt
+    R as Rt
 } from "./DownOutlined.js";
 import {
-    B as xt,
-    t as Rt,
-    a as Ct,
-    i as Ot,
-    g as Ge,
-    f as Dt,
+    B as Ct,
+    t as Ot,
+    a as Dt,
+    i as Mt,
+    g as He,
+    f as _t,
     j as Bt,
-    h as _t,
-    k as Mt,
-    l as At,
-    o as Vt,
-    p as Ft,
-    q as kt,
+    h as At,
+    k as Vt,
+    l as Ft,
+    o as kt,
+    p as jt,
+    q as Lt,
     m as Fe,
-    n as jt
+    n as Wt
 } from "./index-3.js";
 var Tt = {
         icon: {
@@ -69,15 +69,15 @@ var Tt = {
         name: "up",
         theme: "outlined"
     },
-    Wt = function(t, n) {
-        return i.createElement(ot, ae({}, t, {
+    Pt = function(t, n) {
+        return i.createElement(lt, ae({}, t, {
             ref: n,
             icon: Tt
         }))
     },
-    Lt = i.forwardRef(Wt);
+    Gt = i.forwardRef(Pt);
 
-function $e() {
+function we() {
     return typeof BigInt == "function"
 }
 
@@ -85,57 +85,97 @@ function ze(e) {
     return !e && e !== 0 && !Number.isNaN(e) || !String(e).trim()
 }
 
-function U(e) {
+function q(e) {
     var t = e.trim(),
         n = t.startsWith("-");
     n && (t = t.slice(1)), t = t.replace(/(\.\d*[^0])0*$/, "$1").replace(/\.0*$/, "").replace(/^0+/, ""), t.startsWith(".") && (t = "0".concat(t));
     var r = t || "0",
         a = r.split("."),
         o = a[0] || "0",
-        v = a[1] || "0";
-    o === "0" && v === "0" && (n = !1);
-    var f = n ? "-" : "";
+        p = a[1] || "0";
+    o === "0" && p === "0" && (n = !1);
+    var d = n ? "-" : "";
     return {
         negative: n,
-        negativeStr: f,
+        negativeStr: d,
         trimStr: r,
         integerStr: o,
-        decimalStr: v,
-        fullStr: "".concat(f).concat(r)
+        decimalStr: p,
+        fullStr: "".concat(d).concat(r)
     }
-}
-
-function Ee(e) {
-    var t = String(e);
-    return !Number.isNaN(Number(t)) && t.includes("e")
-}
-
-function z(e) {
-    var t = String(e);
-    if (Ee(e)) {
-        var n = Number(t.slice(t.indexOf("e-") + 2)),
-            r = t.match(/\.(\d+)/);
-        return r != null && r[1] && (n += r[1].length), n
-    }
-    return t.includes(".") && we(t) ? t.length - t.indexOf(".") - 1 : 0
 }
 
 function de(e) {
     var t = String(e);
-    if (Ee(e)) {
-        if (e > Number.MAX_SAFE_INTEGER) return String($e() ? BigInt(e).toString() : Number.MAX_SAFE_INTEGER);
-        if (e < Number.MIN_SAFE_INTEGER) return String($e() ? BigInt(e).toString() : Number.MIN_SAFE_INTEGER);
-        t = e.toFixed(z(t))
-    }
-    return U(t).fullStr
+    return !Number.isNaN(Number(t)) && t.includes("e")
 }
 
-function we(e) {
+function Ue(e) {
+    var t = e.toLowerCase().split("e"),
+        n = U(t, 2),
+        r = n[0],
+        a = n[1],
+        o = a === void 0 ? "0" : a,
+        p = r.startsWith("-"),
+        d = p ? r.slice(1) : r,
+        g = d.split("."),
+        u = U(g, 2),
+        l = u[0],
+        h = l === void 0 ? "0" : l,
+        b = u[1],
+        N = b === void 0 ? "" : b,
+        R = "".concat(h).concat(N).replace(/^0+/, "") || "0";
+    return {
+        decimal: N,
+        digits: R,
+        exponent: Number(o),
+        integer: h,
+        negative: p
+    }
+}
+
+function Ht(e) {
+    var t = e.decimal,
+        n = e.digits,
+        r = e.exponent,
+        a = e.integer,
+        o = e.negative;
+    if (n === "0") return "0";
+    var p = a.replace(/^0+/, "").length,
+        d = (t.match(/^0*/) || [""])[0].length,
+        g = p || -d,
+        u = g + r,
+        l = "";
+    return u <= 0 ? l = "0.".concat("0".repeat(-u)).concat(n) : u >= n.length ? l = "".concat(n).concat("0".repeat(u - n.length)) : l = "".concat(n.slice(0, u), ".").concat(n.slice(u)), "".concat(o ? "-" : "").concat(l)
+}
+
+function qe(e) {
+    return e.exponent >= 0 ? Math.max(0, e.decimal.length - e.exponent) : Math.abs(e.exponent) + e.decimal.length
+}
+
+function z(e) {
+    var t = String(e);
+    return de(e) ? qe(Ue(t)) : t.includes(".") && Ee(t) ? t.length - t.indexOf(".") - 1 : 0
+}
+
+function fe(e) {
+    var t = String(e);
+    if (de(e)) {
+        if (e > Number.MAX_SAFE_INTEGER) return String(we() ? BigInt(e).toString() : Number.MAX_SAFE_INTEGER);
+        if (e < Number.MIN_SAFE_INTEGER) return String(we() ? BigInt(e).toString() : Number.MIN_SAFE_INTEGER);
+        var n = Ue(t),
+            r = qe(n);
+        t = r > 100 ? Ht(n) : e.toFixed(r)
+    }
+    return q(t).fullStr
+}
+
+function Ee(e) {
     return typeof e == "number" ? !Number.isNaN(e) : e ? /^\s*-?\d+(\.\d+)?\s*$/.test(e) || /^\s*-?\d+\.\s*$/.test(e) || /^\s*-?\.\d+\s*$/.test(e) : !1
 }
-var Ht = function() {
+var zt = (function() {
         function e(t) {
-            if (He(this, e), y(this, "origin", ""), y(this, "negative", void 0), y(this, "integer", void 0), y(this, "decimal", void 0), y(this, "decimalLen", void 0), y(this, "empty", void 0), y(this, "nan", void 0), ze(t)) {
+            if (Pe(this, e), $(this, "origin", ""), $(this, "negative", void 0), $(this, "integer", void 0), $(this, "decimal", void 0), $(this, "decimalLen", void 0), $(this, "empty", void 0), $(this, "nan", void 0), ze(t)) {
                 this.empty = !0;
                 return
             }
@@ -144,8 +184,8 @@ var Ht = function() {
                 return
             }
             var n = t;
-            if (Ee(n) && (n = Number(n)), n = typeof n == "string" ? n : de(n), we(n)) {
-                var r = U(n);
+            if (de(n) && (n = Number(n)), n = typeof n == "string" ? n : fe(n), Ee(n)) {
+                var r = q(n);
                 this.negative = r.negative;
                 var a = r.trimStr.split(".");
                 this.integer = BigInt(a[0]);
@@ -153,7 +193,7 @@ var Ht = function() {
                 this.decimal = BigInt(o), this.decimalLen = o.length
             } else this.nan = !0
         }
-        return Le(e, [{
+        return Te(e, [{
             key: "getMark",
             value: function() {
                 return this.negative ? "-" : ""
@@ -184,15 +224,15 @@ var Ht = function() {
             key: "cal",
             value: function(n, r, a) {
                 var o = Math.max(this.getDecimalStr().length, n.getDecimalStr().length),
-                    v = this.alignDecimal(o),
-                    f = n.alignDecimal(o),
-                    g = r(v, f).toString(),
-                    m = a(o),
-                    c = U(g),
-                    b = c.negativeStr,
-                    S = c.trimStr,
-                    N = "".concat(b).concat(S.padStart(m + 1, "0"));
-                return new e("".concat(N.slice(0, -m), ".").concat(N.slice(-m)))
+                    p = this.alignDecimal(o),
+                    d = n.alignDecimal(o),
+                    g = r(p, d).toString(),
+                    u = a(o),
+                    l = q(g),
+                    h = l.negativeStr,
+                    b = l.trimStr,
+                    N = "".concat(h).concat(b.padStart(u + 1, "0"));
+                return new e("".concat(N.slice(0, -u), ".").concat(N.slice(-u)))
             }
         }, {
             key: "add",
@@ -249,19 +289,19 @@ var Ht = function() {
             key: "toString",
             value: function() {
                 var n = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : !0;
-                return n ? this.isInvalidate() ? "" : U("".concat(this.getMark()).concat(this.getIntegerStr(), ".").concat(this.getDecimalStr())).fullStr : this.origin
+                return n ? this.isInvalidate() ? "" : q("".concat(this.getMark()).concat(this.getIntegerStr(), ".").concat(this.getDecimalStr())).fullStr : this.origin
             }
         }]), e
-    }(),
-    Pt = function() {
+    })(),
+    Ut = (function() {
         function e(t) {
-            if (He(this, e), y(this, "origin", ""), y(this, "number", void 0), y(this, "empty", void 0), ze(t)) {
+            if (Pe(this, e), $(this, "origin", ""), $(this, "number", void 0), $(this, "empty", void 0), ze(t)) {
                 this.empty = !0;
                 return
             }
             this.origin = String(t), this.number = Number(t)
         }
-        return Le(e, [{
+        return Te(e, [{
             key: "negate",
             value: function() {
                 return new e(-this.toNumber())
@@ -323,36 +363,36 @@ var Ht = function() {
             key: "toString",
             value: function() {
                 var n = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : !0;
-                return n ? this.isInvalidate() ? "" : de(this.number) : this.origin
+                return n ? this.isInvalidate() ? "" : de(this.number) && z(this.number) > 100 ? String(this.number) : fe(this.number) : this.origin
             }
         }]), e
-    }();
+    })();
 
-function M(e) {
-    return $e() ? new Ht(e) : new Pt(e)
+function B(e) {
+    return we() ? new zt(e) : new Ut(e)
 }
 
-function le(e, t, n) {
+function ue(e, t, n) {
     var r = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : !1;
     if (e === "") return "";
-    var a = U(e),
+    var a = q(e),
         o = a.negativeStr,
-        v = a.integerStr,
-        f = a.decimalStr,
-        g = "".concat(t).concat(f),
-        m = "".concat(o).concat(v);
+        p = a.integerStr,
+        d = a.decimalStr,
+        g = "".concat(t).concat(d),
+        u = "".concat(o).concat(p);
     if (n >= 0) {
-        var c = Number(f[n]);
-        if (c >= 5 && !r) {
-            var b = M(e).add("".concat(o, "0.").concat("0".repeat(n)).concat(10 - c));
-            return le(b.toString(), t, n, r)
+        var l = Number(d[n]);
+        if (l >= 5 && !r) {
+            var h = B(e).add("".concat(o, "0.").concat("0".repeat(n)).concat(10 - l));
+            return ue(h.toString(), t, n, r)
         }
-        return n === 0 ? m : "".concat(m).concat(t).concat(f.padEnd(n, "0").slice(0, n))
+        return n === 0 ? u : "".concat(u).concat(t).concat(d.padEnd(n, "0").slice(0, n))
     }
-    return g === ".0" ? m : "".concat(m).concat(g)
+    return g === ".0" ? u : "".concat(u).concat(g)
 }
 
-function Gt(e, t) {
+function qt(e, t) {
     return typeof Proxy < "u" && e ? new Proxy(e, {
         get: function(r, a) {
             if (t[a]) return t[a];
@@ -362,22 +402,22 @@ function Gt(e, t) {
     }) : e
 }
 
-function zt(e, t) {
+function Kt(e, t) {
     var n = i.useRef(null);
 
     function r() {
         try {
             var o = e.selectionStart,
-                v = e.selectionEnd,
-                f = e.value,
-                g = f.substring(0, o),
-                m = f.substring(v);
+                p = e.selectionEnd,
+                d = e.value,
+                g = d.substring(0, o),
+                u = d.substring(p);
             n.current = {
                 start: o,
-                end: v,
-                value: f,
+                end: p,
+                value: d,
                 beforeTxt: g,
-                afterTxt: m
+                afterTxt: u
             }
         } catch {}
     }
@@ -385,99 +425,99 @@ function zt(e, t) {
     function a() {
         if (e && n.current && t) try {
             var o = e.value,
-                v = n.current,
-                f = v.beforeTxt,
-                g = v.afterTxt,
-                m = v.start,
-                c = o.length;
-            if (o.startsWith(f)) c = f.length;
-            else if (o.endsWith(g)) c = o.length - n.current.afterTxt.length;
+                p = n.current,
+                d = p.beforeTxt,
+                g = p.afterTxt,
+                u = p.start,
+                l = o.length;
+            if (o.startsWith(d)) l = d.length;
+            else if (o.endsWith(g)) l = o.length - n.current.afterTxt.length;
             else {
-                var b = f[m - 1],
-                    S = o.indexOf(b, m - 1);
-                S !== -1 && (c = S + 1)
+                var h = d[u - 1],
+                    b = o.indexOf(h, u - 1);
+                b !== -1 && (l = b + 1)
             }
-            e.setSelectionRange(c, c)
+            e.setSelectionRange(l, l)
         } catch (N) {
-            st(!1, "Something warning of cursor restore. Please fire issue about this: ".concat(N.message))
+            ut(!1, "Something warning of cursor restore. Please fire issue about this: ".concat(N.message))
         }
     }
     return [r, a]
 }
-var Ut = function() {
+var Xt = function() {
         var t = i.useState(!1),
-            n = re(t, 2),
+            n = U(t, 2),
             r = n[0],
             a = n[1];
-        return ut(function() {
-            a(lt())
+        return ct(function() {
+            a(dt())
         }, []), r
     },
-    qt = 200,
-    Kt = 600;
+    Yt = 200,
+    Zt = 600;
 
-function Xt(e) {
+function Jt(e) {
     var t = e.prefixCls,
         n = e.upNode,
         r = e.downNode,
         a = e.upDisabled,
         o = e.downDisabled,
-        v = e.onStep,
-        f = i.useRef(),
+        p = e.onStep,
+        d = i.useRef(),
         g = i.useRef([]),
-        m = i.useRef();
-    m.current = v;
-    var c = function() {
-            clearTimeout(f.current)
+        u = i.useRef();
+    u.current = p;
+    var l = function() {
+            clearTimeout(d.current)
         },
-        b = function(R, d) {
-            R.preventDefault(), c(), m.current(d);
+        h = function(C, m) {
+            C.preventDefault(), l(), u.current(m);
 
-            function O() {
-                m.current(d), f.current = setTimeout(O, qt)
+            function D() {
+                u.current(m), d.current = setTimeout(D, Yt)
             }
-            f.current = setTimeout(O, Kt)
+            d.current = setTimeout(D, Zt)
         };
     i.useEffect(function() {
         return function() {
-            c(), g.current.forEach(function(E) {
+            l(), g.current.forEach(function(E) {
                 return ce.cancel(E)
             })
         }
     }, []);
-    var S = Ut();
-    if (S) return null;
+    var b = Xt();
+    if (b) return null;
     var N = "".concat(t, "-handler"),
-        D = W(N, "".concat(N, "-up"), y({}, "".concat(N, "-up-disabled"), a)),
-        x = W(N, "".concat(N, "-down"), y({}, "".concat(N, "-down-disabled"), o)),
-        $ = function() {
-            return g.current.push(ce(c))
+        R = W(N, "".concat(N, "-up"), $({}, "".concat(N, "-up-disabled"), a)),
+        y = W(N, "".concat(N, "-down"), $({}, "".concat(N, "-down-disabled"), o)),
+        w = function() {
+            return g.current.push(ce(l))
         },
         I = {
             unselectable: "on",
             role: "button",
-            onMouseUp: $,
-            onMouseLeave: $
+            onMouseUp: w,
+            onMouseLeave: w
         };
     return i.createElement("div", {
         className: "".concat(N, "-wrap")
     }, i.createElement("span", ae({}, I, {
-        onMouseDown: function(R) {
-            b(R, !0)
+        onMouseDown: function(C) {
+            h(C, !0)
         },
         "aria-label": "Increase Value",
         "aria-disabled": a,
-        className: D
+        className: R
     }), n || i.createElement("span", {
         unselectable: "on",
         className: "".concat(t, "-handler-up-inner")
     })), i.createElement("span", ae({}, I, {
-        onMouseDown: function(R) {
-            b(R, !1)
+        onMouseDown: function(C) {
+            h(C, !1)
         },
         "aria-label": "Decrease Value",
         "aria-disabled": o,
-        className: x
+        className: y
     }), r || i.createElement("span", {
         unselectable: "on",
         className: "".concat(t, "-handler-down-inner")
@@ -485,11 +525,11 @@ function Xt(e) {
 }
 
 function ke(e) {
-    var t = typeof e == "number" ? de(e) : U(e).fullStr,
+    var t = typeof e == "number" ? fe(e) : q(e).fullStr,
         n = t.includes(".");
-    return n ? U(t.replace(/(\d)\.(\d)/g, "$1$2.")).fullStr : e + "0"
+    return n ? q(t.replace(/(\d)\.(\d)/g, "$1$2.")).fullStr : e + "0"
 }
-const Yt = function() {
+const Qt = (function() {
     var e = i.useRef(0),
         t = function() {
             ce.cancel(e.current)
@@ -502,315 +542,315 @@ const Yt = function() {
                 n()
             })
         }
-};
-var Jt = ["prefixCls", "className", "style", "min", "max", "step", "defaultValue", "value", "disabled", "readOnly", "upHandler", "downHandler", "keyboard", "changeOnWheel", "controls", "classNames", "stringMode", "parser", "formatter", "precision", "decimalSeparator", "onChange", "onInput", "onPressEnter", "onStep", "changeOnBlur", "domRef"],
-    Zt = ["disabled", "style", "prefixCls", "value", "prefix", "suffix", "addonBefore", "addonAfter", "className", "classNames"],
+});
+var en = ["prefixCls", "className", "style", "min", "max", "step", "defaultValue", "value", "disabled", "readOnly", "upHandler", "downHandler", "keyboard", "changeOnWheel", "controls", "classNames", "stringMode", "parser", "formatter", "precision", "decimalSeparator", "onChange", "onInput", "onPressEnter", "onStep", "changeOnBlur", "domRef"],
+    tn = ["disabled", "style", "prefixCls", "value", "prefix", "suffix", "addonBefore", "addonAfter", "className", "classNames"],
     je = function(t, n) {
         return t || n.isEmpty() ? n.toString() : n.toNumber()
     },
-    Te = function(t) {
-        var n = M(t);
+    Le = function(t) {
+        var n = B(t);
         return n.isInvalidate() ? null : n
     },
-    Qt = i.forwardRef(function(e, t) {
+    nn = i.forwardRef(function(e, t) {
         var n = e.prefixCls,
             r = e.className,
             a = e.style,
             o = e.min,
-            v = e.max,
-            f = e.step,
-            g = f === void 0 ? 1 : f,
-            m = e.defaultValue,
-            c = e.value,
-            b = e.disabled,
-            S = e.readOnly,
+            p = e.max,
+            d = e.step,
+            g = d === void 0 ? 1 : d,
+            u = e.defaultValue,
+            l = e.value,
+            h = e.disabled,
+            b = e.readOnly,
             N = e.upHandler,
-            D = e.downHandler,
-            x = e.keyboard,
-            $ = e.changeOnWheel,
-            I = $ === void 0 ? !1 : $,
+            R = e.downHandler,
+            y = e.keyboard,
+            w = e.changeOnWheel,
+            I = w === void 0 ? !1 : w,
             E = e.controls,
-            R = E === void 0 ? !0 : E;
+            C = E === void 0 ? !0 : E;
         e.classNames;
-        var d = e.stringMode,
-            O = e.parser,
+        var m = e.stringMode,
+            D = e.parser,
             A = e.formatter,
-            w = e.precision,
-            B = e.decimalSeparator,
-            P = e.onChange,
+            x = e.precision,
+            M = e.decimalSeparator,
+            G = e.onChange,
             V = e.onInput,
             k = e.onPressEnter,
             j = e.onStep,
-            T = e.changeOnBlur,
-            Z = T === void 0 ? !0 : T,
-            fe = e.domRef,
-            me = Pe(e, Jt),
+            L = e.changeOnBlur,
+            Q = L === void 0 ? !0 : L,
+            me = e.domRef,
+            ge = Ge(e, en),
             ie = "".concat(n, "-input"),
-            L = i.useRef(null),
-            H = i.useState(!1),
-            oe = re(H, 2),
-            q = oe[0],
-            Q = oe[1],
+            T = i.useRef(null),
+            P = i.useState(!1),
+            oe = U(P, 2),
+            K = oe[0],
+            ee = oe[1],
             _ = i.useRef(!1),
-            G = i.useRef(!1),
-            K = i.useRef(!1),
-            ge = i.useState(function() {
-                return M(c ?? m)
+            H = i.useRef(!1),
+            X = i.useRef(!1),
+            pe = i.useState(function() {
+                return B(l ?? u)
             }),
-            se = re(ge, 2),
-            h = se[0],
-            X = se[1];
+            se = U(pe, 2),
+            S = se[0],
+            Y = se[1];
 
-        function qe(u) {
-            c === void 0 && X(u)
+        function Xe(c) {
+            l === void 0 && Y(c)
         }
-        var pe = i.useCallback(function(u, s) {
-                if (!s) return w >= 0 ? w : Math.max(z(u), z(g))
-            }, [w, g]),
-            ve = i.useCallback(function(u) {
-                var s = String(u);
-                if (O) return O(s);
-                var p = s;
-                return B && (p = p.replace(B, ".")), p.replace(/[^\w.-]+/g, "")
-            }, [O, B]),
-            he = i.useRef(""),
-            xe = i.useCallback(function(u, s) {
-                if (A) return A(u, {
+        var ve = i.useCallback(function(c, s) {
+                if (!s) return x >= 0 ? x : Math.max(z(c), z(g))
+            }, [x, g]),
+            he = i.useCallback(function(c) {
+                var s = String(c);
+                if (D) return D(s);
+                var v = s;
+                return M && (v = v.replace(M, ".")), v.replace(/[^\w.-]+/g, "")
+            }, [D, M]),
+            be = i.useRef(""),
+            xe = i.useCallback(function(c, s) {
+                if (A) return A(c, {
                     userTyping: s,
-                    input: String(he.current)
+                    input: String(be.current)
                 });
-                var p = typeof u == "number" ? de(u) : u;
+                var v = typeof c == "number" ? fe(c) : c;
                 if (!s) {
-                    var l = pe(p, s);
-                    if (we(p) && (B || l >= 0)) {
-                        var F = B || ".";
-                        p = le(p, F, l)
+                    var f = ve(v, s);
+                    if (Ee(v) && (M || f >= 0)) {
+                        var F = M || ".";
+                        v = ue(v, F, f)
                     }
                 }
-                return p
-            }, [A, pe, B]),
-            Ke = i.useState(function() {
-                var u = m ?? c;
-                return h.isInvalidate() && ["string", "number"].includes(ct(u)) ? Number.isNaN(u) ? "" : u : xe(h.toString(), !1)
+                return v
+            }, [A, ve, M]),
+            Ye = i.useState(function() {
+                var c = u ?? l;
+                return S.isInvalidate() && ["string", "number"].includes(ft(c)) ? Number.isNaN(c) ? "" : c : xe(S.toString(), !1)
             }),
-            Re = re(Ke, 2),
-            ee = Re[0],
+            Re = U(Ye, 2),
+            te = Re[0],
             Ce = Re[1];
-        he.current = ee;
+        be.current = te;
 
-        function te(u, s) {
-            Ce(xe(u.isInvalidate() ? u.toString(!1) : u.toString(!s), s))
+        function ne(c, s) {
+            Ce(xe(c.isInvalidate() ? c.toString(!1) : c.toString(!s), s))
         }
-        var Y = i.useMemo(function() {
-                return Te(v)
-            }, [v, w]),
+        var Z = i.useMemo(function() {
+                return Le(p)
+            }, [p, x]),
             J = i.useMemo(function() {
-                return Te(o)
-            }, [o, w]),
+                return Le(o)
+            }, [o, x]),
             Oe = i.useMemo(function() {
-                return !Y || !h || h.isInvalidate() ? !1 : Y.lessEquals(h)
-            }, [Y, h]),
+                return !Z || !S || S.isInvalidate() ? !1 : Z.lessEquals(S)
+            }, [Z, S]),
             De = i.useMemo(function() {
-                return !J || !h || h.isInvalidate() ? !1 : h.lessEquals(J)
-            }, [J, h]),
-            Xe = zt(L.current, q),
-            Be = re(Xe, 2),
-            Ye = Be[0],
-            Je = Be[1],
+                return !J || !S || S.isInvalidate() ? !1 : S.lessEquals(J)
+            }, [J, S]),
+            Ze = Kt(T.current, K),
+            Me = U(Ze, 2),
+            Je = Me[0],
+            Qe = Me[1],
             _e = function(s) {
-                return Y && !s.lessEquals(Y) ? Y : J && !J.lessEquals(s) ? J : null
-            },
-            be = function(s) {
-                return !_e(s)
-            },
-            ue = function(s, p) {
-                var l = s,
-                    F = be(l) || l.isEmpty();
-                if (!l.isEmpty() && !p && (l = _e(l) || l, F = !0), !S && !b && F) {
-                    var ne = l.toString(),
-                        Ne = pe(ne, p);
-                    return Ne >= 0 && (l = M(le(ne, ".", Ne)), be(l) || (l = M(le(ne, ".", Ne, !0)))), l.equals(h) || (qe(l), P == null || P(l.isEmpty() ? null : je(d, l)), c === void 0 && te(l, p)), l
-                }
-                return h
-            },
-            Ze = Yt(),
-            Me = function u(s) {
-                if (Ye(), he.current = s, Ce(s), !G.current) {
-                    var p = ve(s),
-                        l = M(p);
-                    l.isNaN() || ue(l, !0)
-                }
-                V == null || V(s), Ze(function() {
-                    var F = s;
-                    O || (F = s.replace(/。/g, ".")), F !== s && u(F)
-                })
-            },
-            Qe = function() {
-                G.current = !0
-            },
-            et = function() {
-                G.current = !1, Me(L.current.value)
-            },
-            tt = function(s) {
-                Me(s.target.value)
+                return Z && !s.lessEquals(Z) ? Z : J && !J.lessEquals(s) ? J : null
             },
             Se = function(s) {
-                var p;
+                return !_e(s)
+            },
+            le = function(s, v) {
+                var f = s,
+                    F = Se(f) || f.isEmpty();
+                if (!f.isEmpty() && !v && (f = _e(f) || f, F = !0), !b && !h && F) {
+                    var re = f.toString(),
+                        Ie = ve(re, v);
+                    return Ie >= 0 && (f = B(ue(re, ".", Ie)), Se(f) || (f = B(ue(re, ".", Ie, !0)))), f.equals(S) || (Xe(f), G == null || G(f.isEmpty() ? null : je(m, f)), l === void 0 && ne(f, v)), f
+                }
+                return S
+            },
+            et = Qt(),
+            Be = function c(s) {
+                if (Je(), be.current = s, Ce(s), !H.current) {
+                    var v = he(s),
+                        f = B(v);
+                    f.isNaN() || le(f, !0)
+                }
+                V == null || V(s), et(function() {
+                    var F = s;
+                    D || (F = s.replace(/。/g, ".")), F !== s && c(F)
+                })
+            },
+            tt = function() {
+                H.current = !0
+            },
+            nt = function() {
+                H.current = !1, Be(T.current.value)
+            },
+            rt = function(s) {
+                Be(s.target.value)
+            },
+            Ne = function(s) {
+                var v;
                 if (!(s && Oe || !s && De)) {
                     _.current = !1;
-                    var l = M(K.current ? ke(g) : g);
-                    s || (l = l.negate());
-                    var F = (h || M(0)).add(l.toString()),
-                        ne = ue(F, !1);
-                    j == null || j(je(d, ne), {
-                        offset: K.current ? ke(g) : g,
+                    var f = B(X.current ? ke(g) : g);
+                    s || (f = f.negate());
+                    var F = (S || B(0)).add(f.toString()),
+                        re = le(F, !1);
+                    j == null || j(je(m, re), {
+                        offset: X.current ? ke(g) : g,
                         type: s ? "up" : "down"
-                    }), (p = L.current) === null || p === void 0 || p.focus()
+                    }), (v = T.current) === null || v === void 0 || v.focus()
                 }
             },
             Ae = function(s) {
-                var p = M(ve(ee)),
-                    l;
-                p.isNaN() ? l = ue(h, s) : l = ue(p, s), c !== void 0 ? te(h, !1) : l.isNaN() || te(l, !1)
-            },
-            nt = function() {
-                _.current = !0
-            },
-            rt = function(s) {
-                var p = s.key,
-                    l = s.shiftKey;
-                _.current = !0, K.current = l, p === "Enter" && (G.current || (_.current = !1), Ae(!1), k == null || k(s)), x !== !1 && !G.current && ["Up", "ArrowUp", "Down", "ArrowDown"].includes(p) && (Se(p === "Up" || p === "ArrowUp"), s.preventDefault())
+                var v = B(he(te)),
+                    f;
+                v.isNaN() ? f = le(S, s) : f = le(v, s), l !== void 0 ? ne(S, !1) : f.isNaN() || ne(f, !1)
             },
             at = function() {
-                _.current = !1, K.current = !1
+                _.current = !0
+            },
+            it = function(s) {
+                var v = s.key,
+                    f = s.shiftKey;
+                _.current = !0, X.current = f, v === "Enter" && (H.current || (_.current = !1), Ae(!1), k == null || k(s)), y !== !1 && !H.current && ["Up", "ArrowUp", "Down", "ArrowDown"].includes(v) && (Ne(v === "Up" || v === "ArrowUp"), s.preventDefault())
+            },
+            ot = function() {
+                _.current = !1, X.current = !1
             };
         i.useEffect(function() {
-            if (I && q) {
-                var u = function(l) {
-                        Se(l.deltaY < 0), l.preventDefault()
+            if (I && K) {
+                var c = function(f) {
+                        Ne(f.deltaY < 0), f.preventDefault()
                     },
-                    s = L.current;
-                if (s) return s.addEventListener("wheel", u, {
+                    s = T.current;
+                if (s) return s.addEventListener("wheel", c, {
                         passive: !1
                     }),
                     function() {
-                        return s.removeEventListener("wheel", u)
+                        return s.removeEventListener("wheel", c)
                     }
             }
         });
-        var it = function() {
-            Z && Ae(!1), Q(!1), _.current = !1
+        var st = function() {
+            Q && Ae(!1), ee(!1), _.current = !1
         };
-        return Ie(function() {
-            h.isInvalidate() || te(h, !1)
-        }, [w, A]), Ie(function() {
-            var u = M(c);
-            X(u);
-            var s = M(ve(ee));
-            (!u.equals(s) || !_.current || A) && te(u, _.current)
-        }, [c]), Ie(function() {
-            A && Je()
-        }, [ee]), i.createElement("div", {
-            ref: fe,
-            className: W(n, r, y(y(y(y(y({}, "".concat(n, "-focused"), q), "".concat(n, "-disabled"), b), "".concat(n, "-readonly"), S), "".concat(n, "-not-a-number"), h.isNaN()), "".concat(n, "-out-of-range"), !h.isInvalidate() && !be(h))),
+        return $e(function() {
+            S.isInvalidate() || ne(S, !1)
+        }, [x, A]), $e(function() {
+            var c = B(l);
+            Y(c);
+            var s = B(he(te));
+            (!c.equals(s) || !_.current || A) && ne(c, _.current)
+        }, [l]), $e(function() {
+            A && Qe()
+        }, [te]), i.createElement("div", {
+            ref: me,
+            className: W(n, r, $($($($($({}, "".concat(n, "-focused"), K), "".concat(n, "-disabled"), h), "".concat(n, "-readonly"), b), "".concat(n, "-not-a-number"), S.isNaN()), "".concat(n, "-out-of-range"), !S.isInvalidate() && !Se(S))),
             style: a,
             onFocus: function() {
-                Q(!0)
+                ee(!0)
             },
-            onBlur: it,
-            onKeyDown: rt,
-            onKeyUp: at,
-            onCompositionStart: Qe,
-            onCompositionEnd: et,
-            onBeforeInput: nt
-        }, R && i.createElement(Xt, {
+            onBlur: st,
+            onKeyDown: it,
+            onKeyUp: ot,
+            onCompositionStart: tt,
+            onCompositionEnd: nt,
+            onBeforeInput: at
+        }, C && i.createElement(Jt, {
             prefixCls: n,
             upNode: N,
-            downNode: D,
+            downNode: R,
             upDisabled: Oe,
             downDisabled: De,
-            onStep: Se
+            onStep: Ne
         }), i.createElement("div", {
             className: "".concat(ie, "-wrap")
         }, i.createElement("input", ae({
             autoComplete: "off",
             role: "spinbutton",
             "aria-valuemin": o,
-            "aria-valuemax": v,
-            "aria-valuenow": h.isInvalidate() ? null : h.toString(),
+            "aria-valuemax": p,
+            "aria-valuenow": S.isInvalidate() ? null : S.toString(),
             step: g
-        }, me, {
-            ref: dt(L, t),
+        }, ge, {
+            ref: mt(T, t),
             className: ie,
-            value: ee,
-            onChange: tt,
-            disabled: b,
-            readOnly: S
+            value: te,
+            onChange: rt,
+            disabled: h,
+            readOnly: b
         }))))
     }),
-    en = i.forwardRef(function(e, t) {
+    rn = i.forwardRef(function(e, t) {
         var n = e.disabled,
             r = e.style,
             a = e.prefixCls,
             o = a === void 0 ? "rc-input-number" : a,
-            v = e.value,
-            f = e.prefix,
+            p = e.value,
+            d = e.prefix,
             g = e.suffix,
-            m = e.addonBefore,
-            c = e.addonAfter,
-            b = e.className,
-            S = e.classNames,
-            N = Pe(e, Zt),
-            D = i.useRef(null),
-            x = i.useRef(null),
-            $ = i.useRef(null),
-            I = function(R) {
-                $.current && Rt($.current, R)
+            u = e.addonBefore,
+            l = e.addonAfter,
+            h = e.className,
+            b = e.classNames,
+            N = Ge(e, tn),
+            R = i.useRef(null),
+            y = i.useRef(null),
+            w = i.useRef(null),
+            I = function(C) {
+                w.current && Ot(w.current, C)
             };
         return i.useImperativeHandle(t, function() {
-            return Gt($.current, {
+            return qt(w.current, {
                 focus: I,
-                nativeElement: D.current.nativeElement || x.current
+                nativeElement: R.current.nativeElement || y.current
             })
-        }), i.createElement(xt, {
-            className: b,
+        }), i.createElement(Ct, {
+            className: h,
             triggerFocus: I,
             prefixCls: o,
-            value: v,
+            value: p,
             disabled: n,
             style: r,
-            prefix: f,
+            prefix: d,
             suffix: g,
-            addonAfter: c,
-            addonBefore: m,
-            classNames: S,
+            addonAfter: l,
+            addonBefore: u,
+            classNames: b,
             components: {
                 affixWrapper: "div",
                 groupWrapper: "div",
                 wrapper: "div",
                 groupAddon: "div"
             },
-            ref: D
-        }, i.createElement(Qt, ae({
+            ref: R
+        }, i.createElement(nn, ae({
             prefixCls: o,
             disabled: n,
-            ref: $,
-            domRef: x,
-            className: S == null ? void 0 : S.input
+            ref: w,
+            domRef: y,
+            className: b == null ? void 0 : b.input
         }, N)))
     });
-const tn = e => {
+const an = e => {
         var t;
         const n = (t = e.handleVisible) !== null && t !== void 0 ? t : "auto",
             r = e.controlHeightSM - e.lineWidth * 2;
-        return Object.assign(Object.assign({}, Ct(e)), {
+        return Object.assign(Object.assign({}, Dt(e)), {
             controlWidth: 90,
             handleWidth: r,
             handleFontSize: e.fontSize / 2,
             handleVisible: n,
             handleActiveBg: e.colorFillAlter,
             handleBg: e.colorBgContainer,
-            filledHandleBg: new ft(e.colorFillSecondary).onBackground(e.colorBgContainer).toHexString(),
+            filledHandleBg: new gt(e.colorFillSecondary).onBackground(e.colorBgContainer).toHexString(),
             handleHoverColor: e.colorPrimary,
             handleBorderColor: e.colorBorder,
             handleOpacity: n === !0 ? 1 : 0,
@@ -838,72 +878,72 @@ const tn = e => {
             }
         }
     },
-    nn = e => {
+    on = e => {
         const {
             componentCls: t,
             lineWidth: n,
             lineType: r,
             borderRadius: a,
             inputFontSizeSM: o,
-            inputFontSizeLG: v,
-            controlHeightLG: f,
+            inputFontSizeLG: p,
+            controlHeightLG: d,
             controlHeightSM: g,
-            colorError: m,
-            paddingInlineSM: c,
-            paddingBlockSM: b,
-            paddingBlockLG: S,
+            colorError: u,
+            paddingInlineSM: l,
+            paddingBlockSM: h,
+            paddingBlockLG: b,
             paddingInlineLG: N,
-            colorIcon: D,
-            motionDurationMid: x,
-            handleHoverColor: $,
+            colorIcon: R,
+            motionDurationMid: y,
+            handleHoverColor: w,
             handleOpacity: I,
             paddingInline: E,
-            paddingBlock: R,
-            handleBg: d,
-            handleActiveBg: O,
+            paddingBlock: C,
+            handleBg: m,
+            handleActiveBg: D,
             colorTextDisabled: A,
-            borderRadiusSM: w,
-            borderRadiusLG: B,
-            controlWidth: P,
+            borderRadiusSM: x,
+            borderRadiusLG: M,
+            controlWidth: G,
             handleBorderColor: V,
             filledHandleBg: k,
             lineHeightLG: j,
-            calc: T
+            calc: L
         } = e;
         return [{
-            [t]: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, ye(e)), Ge(e)), {
+            [t]: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, ye(e)), He(e)), {
                 display: "inline-block",
-                width: P,
+                width: G,
                 margin: 0,
                 padding: 0,
                 borderRadius: a
-            }), Dt(e, {
+            }), _t(e, {
                 [`${t}-handler-wrap`]: {
-                    background: d,
+                    background: m,
                     [`${t}-handler-down`]: {
-                        borderBlockStart: `${C(n)} ${r} ${V}`
+                        borderBlockStart: `${O(n)} ${r} ${V}`
                     }
                 }
             })), Bt(e, {
                 [`${t}-handler-wrap`]: {
                     background: k,
                     [`${t}-handler-down`]: {
-                        borderBlockStart: `${C(n)} ${r} ${V}`
+                        borderBlockStart: `${O(n)} ${r} ${V}`
                     }
                 },
                 "&:focus-within": {
                     [`${t}-handler-wrap`]: {
-                        background: d
+                        background: m
                     }
                 }
-            })), _t(e, {
+            })), At(e, {
                 [`${t}-handler-wrap`]: {
-                    background: d,
+                    background: m,
                     [`${t}-handler-down`]: {
-                        borderBlockStart: `${C(n)} ${r} ${V}`
+                        borderBlockStart: `${O(n)} ${r} ${V}`
                     }
                 }
-            })), Mt(e)), {
+            })), Vt(e)), {
                 "&-rtl": {
                     direction: "rtl",
                     [`${t}-input`]: {
@@ -912,31 +952,31 @@ const tn = e => {
                 },
                 "&-lg": {
                     padding: 0,
-                    fontSize: v,
+                    fontSize: p,
                     lineHeight: j,
-                    borderRadius: B,
+                    borderRadius: M,
                     [`input${t}-input`]: {
-                        height: T(f).sub(T(n).mul(2)).equal(),
-                        padding: `${C(S)} ${C(N)}`
+                        height: L(d).sub(L(n).mul(2)).equal(),
+                        padding: `${O(b)} ${O(N)}`
                     }
                 },
                 "&-sm": {
                     padding: 0,
                     fontSize: o,
-                    borderRadius: w,
+                    borderRadius: x,
                     [`input${t}-input`]: {
-                        height: T(g).sub(T(n).mul(2)).equal(),
-                        padding: `${C(b)} ${C(c)}`
+                        height: L(g).sub(L(n).mul(2)).equal(),
+                        padding: `${O(h)} ${O(l)}`
                     }
                 },
                 "&-out-of-range": {
                     [`${t}-input-wrap`]: {
                         input: {
-                            color: m
+                            color: u
                         }
                     }
                 },
-                "&-group": Object.assign(Object.assign(Object.assign({}, ye(e)), Vt(e)), {
+                "&-group": Object.assign(Object.assign(Object.assign({}, ye(e)), kt(e)), {
                     "&-wrapper": Object.assign(Object.assign(Object.assign({
                         display: "inline-block",
                         textAlign: "start",
@@ -946,16 +986,16 @@ const tn = e => {
                         },
                         "&-lg": {
                             [`${t}-group-addon`]: {
-                                borderRadius: B,
+                                borderRadius: M,
                                 fontSize: e.fontSizeLG
                             }
                         },
                         "&-sm": {
                             [`${t}-group-addon`]: {
-                                borderRadius: w
+                                borderRadius: x
                             }
                         }
-                    }, Ft(e)), kt(e)), {
+                    }, jt(e)), Lt(e)), {
                         [`&:not(${t}-compact-first-item):not(${t}-compact-last-item)${t}-compact-item`]: {
                             [`${t}, ${t}-group-addon`]: {
                                 borderRadius: 0
@@ -981,16 +1021,16 @@ const tn = e => {
                 [t]: {
                     "&-input": Object.assign(Object.assign(Object.assign(Object.assign({}, ye(e)), {
                         width: "100%",
-                        padding: `${C(R)} ${C(E)}`,
+                        padding: `${O(C)} ${O(E)}`,
                         textAlign: "start",
                         backgroundColor: "transparent",
                         border: 0,
                         borderRadius: a,
                         outline: 0,
-                        transition: `all ${x} linear`,
+                        transition: `all ${y} linear`,
                         appearance: "textfield",
                         fontSize: "inherit"
-                    }), At(e.colorTextPlaceholder)), {
+                    }), Ft(e.colorTextPlaceholder)), {
                         '&[type="number"]::-webkit-inner-spin-button, &[type="number"]::-webkit-outer-spin-button': {
                             margin: 0,
                             appearance: "none"
@@ -1018,7 +1058,7 @@ const tn = e => {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "stretch",
-                    transition: `all ${x}`,
+                    transition: `all ${y}`,
                     overflow: "hidden",
                     [`${t}-handler`]: {
                         display: "flex",
@@ -1038,15 +1078,15 @@ const tn = e => {
                 [`${t}-handler`]: {
                     height: "50%",
                     overflow: "hidden",
-                    color: D,
+                    color: R,
                     fontWeight: "bold",
                     lineHeight: 0,
                     textAlign: "center",
                     cursor: "pointer",
-                    borderInlineStart: `${C(n)} ${r} ${V}`,
-                    transition: `all ${x} linear`,
+                    borderInlineStart: `${O(n)} ${r} ${V}`,
+                    transition: `all ${y} linear`,
                     "&:active": {
-                        background: O
+                        background: D
                     },
                     "&:hover": {
                         height: "60%",
@@ -1054,12 +1094,12 @@ const tn = e => {
               ${t}-handler-up-inner,
               ${t}-handler-down-inner
             `]: {
-                            color: $
+                            color: w
                         }
                     },
-                    "&-up-inner, &-down-inner": Object.assign(Object.assign({}, vt()), {
-                        color: D,
-                        transition: `all ${x} linear`,
+                    "&-up-inner, &-down-inner": Object.assign(Object.assign({}, bt()), {
+                        color: R,
+                        transition: `all ${y} linear`,
                         userSelect: "none"
                     })
                 },
@@ -1093,27 +1133,27 @@ const tn = e => {
             })
         }]
     },
-    rn = e => {
+    sn = e => {
         const {
             componentCls: t,
             paddingBlock: n,
             paddingInline: r,
             inputAffixPadding: a,
             controlWidth: o,
-            borderRadiusLG: v,
-            borderRadiusSM: f,
+            borderRadiusLG: p,
+            borderRadiusSM: d,
             paddingInlineLG: g,
-            paddingInlineSM: m,
-            paddingBlockLG: c,
-            paddingBlockSM: b,
-            motionDurationMid: S
+            paddingInlineSM: u,
+            paddingBlockLG: l,
+            paddingBlockSM: h,
+            motionDurationMid: b
         } = e;
         return {
             [`${t}-affix-wrapper`]: Object.assign(Object.assign({
                 [`input${t}-input`]: {
-                    padding: `${C(n)} 0`
+                    padding: `${O(n)} 0`
                 }
-            }, Ge(e)), {
+            }, He(e)), {
                 position: "relative",
                 display: "inline-flex",
                 alignItems: "center",
@@ -1121,17 +1161,17 @@ const tn = e => {
                 padding: 0,
                 paddingInlineStart: r,
                 "&-lg": {
-                    borderRadius: v,
+                    borderRadius: p,
                     paddingInlineStart: g,
                     [`input${t}-input`]: {
-                        padding: `${C(c)} 0`
+                        padding: `${O(l)} 0`
                     }
                 },
                 "&-sm": {
-                    borderRadius: f,
-                    paddingInlineStart: m,
+                    borderRadius: d,
+                    paddingInlineStart: u,
                     [`input${t}-input`]: {
-                        padding: `${C(b)} 0`
+                        padding: `${O(h)} 0`
                     }
                 },
                 [`&:not(${t}-disabled):hover`]: {
@@ -1178,7 +1218,7 @@ const tn = e => {
                         height: "100%",
                         marginInlineEnd: r,
                         marginInlineStart: a,
-                        transition: `margin ${S}`
+                        transition: `margin ${b}`
                     }
                 },
                 [`&:hover ${t}-handler-wrap, &-focused ${t}-handler-wrap`]: {
@@ -1194,117 +1234,117 @@ const tn = e => {
             }
         }
     },
-    an = mt("InputNumber", e => {
-        const t = gt(e, Ot(e));
-        return [nn(t), rn(t), pt(t)]
-    }, tn, {
+    ln = pt("InputNumber", e => {
+        const t = vt(e, Mt(e));
+        return [on(t), sn(t), ht(t)]
+    }, an, {
         unitless: {
             handleOpacity: !0
         },
         resetFont: !1
     });
-var on = function(e, t) {
+var un = function(e, t) {
     var n = {};
     for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
         for (var a = 0, r = Object.getOwnPropertySymbols(e); a < r.length; a++) t.indexOf(r[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[a]) && (n[r[a]] = e[r[a]]);
     return n
 };
-const Ue = i.forwardRef((e, t) => {
+const Ke = i.forwardRef((e, t) => {
         const {
             getPrefixCls: n,
             direction: r
-        } = i.useContext(ht), a = i.useRef(null);
+        } = i.useContext(St), a = i.useRef(null);
         i.useImperativeHandle(t, () => a.current);
         const {
             className: o,
-            rootClassName: v,
-            size: f,
+            rootClassName: p,
+            size: d,
             disabled: g,
-            prefixCls: m,
-            addonBefore: c,
-            addonAfter: b,
-            prefix: S,
+            prefixCls: u,
+            addonBefore: l,
+            addonAfter: h,
+            prefix: b,
             suffix: N,
-            bordered: D,
-            readOnly: x,
-            status: $,
+            bordered: R,
+            readOnly: y,
+            status: w,
             controls: I,
             variant: E
-        } = e, R = on(e, ["className", "rootClassName", "size", "disabled", "prefixCls", "addonBefore", "addonAfter", "prefix", "suffix", "bordered", "readOnly", "status", "controls", "variant"]), d = n("input-number", m), O = bt(d), [A, w, B] = an(d, O), {
-            compactSize: P,
+        } = e, C = un(e, ["className", "rootClassName", "size", "disabled", "prefixCls", "addonBefore", "addonAfter", "prefix", "suffix", "bordered", "readOnly", "status", "controls", "variant"]), m = n("input-number", u), D = Nt(m), [A, x, M] = ln(m, D), {
+            compactSize: G,
             compactItemClassnames: V
-        } = St(d, r);
-        let k = i.createElement(Lt, {
-                className: `${d}-handler-up-inner`
+        } = It(m, r);
+        let k = i.createElement(Gt, {
+                className: `${m}-handler-up-inner`
             }),
-            j = i.createElement(wt, {
-                className: `${d}-handler-down-inner`
+            j = i.createElement(Rt, {
+                className: `${m}-handler-down-inner`
             });
-        const T = typeof I == "boolean" ? I : void 0;
+        const L = typeof I == "boolean" ? I : void 0;
         typeof I == "object" && (k = typeof I.upIcon > "u" ? k : i.createElement("span", {
-            className: `${d}-handler-up-inner`
+            className: `${m}-handler-up-inner`
         }, I.upIcon), j = typeof I.downIcon > "u" ? j : i.createElement("span", {
-            className: `${d}-handler-down-inner`
+            className: `${m}-handler-down-inner`
         }, I.downIcon));
         const {
-            hasFeedback: Z,
-            status: fe,
-            isFormItemInput: me,
+            hasFeedback: Q,
+            status: me,
+            isFormItemInput: ge,
             feedbackIcon: ie
-        } = i.useContext(Nt), L = jt(fe, $), H = It(h => {
-            var X;
-            return (X = f ?? P) !== null && X !== void 0 ? X : h
-        }), oe = i.useContext(yt), q = g ?? oe, [Q, _] = $t("inputNumber", E, D), G = Z && i.createElement(i.Fragment, null, ie), K = W({
-            [`${d}-lg`]: H === "large",
-            [`${d}-sm`]: H === "small",
-            [`${d}-rtl`]: r === "rtl",
-            [`${d}-in-form-item`]: me
-        }, w), ge = `${d}-group`, se = i.createElement(en, Object.assign({
+        } = i.useContext($t), T = Wt(me, w), P = yt(S => {
+            var Y;
+            return (Y = d ?? G) !== null && Y !== void 0 ? Y : S
+        }), oe = i.useContext(wt), K = g ?? oe, [ee, _] = Et("inputNumber", E, R), H = Q && i.createElement(i.Fragment, null, ie), X = W({
+            [`${m}-lg`]: P === "large",
+            [`${m}-sm`]: P === "small",
+            [`${m}-rtl`]: r === "rtl",
+            [`${m}-in-form-item`]: ge
+        }, x), pe = `${m}-group`, se = i.createElement(rn, Object.assign({
             ref: a,
-            disabled: q,
-            className: W(B, O, o, v, V),
+            disabled: K,
+            className: W(M, D, o, p, V),
             upHandler: k,
             downHandler: j,
-            prefixCls: d,
-            readOnly: x,
-            controls: T,
-            prefix: S,
-            suffix: G || N,
-            addonBefore: c && i.createElement(Ve, {
+            prefixCls: m,
+            readOnly: y,
+            controls: L,
+            prefix: b,
+            suffix: H || N,
+            addonBefore: l && i.createElement(Ve, {
                 form: !0,
                 space: !0
-            }, c),
-            addonAfter: b && i.createElement(Ve, {
+            }, l),
+            addonAfter: h && i.createElement(Ve, {
                 form: !0,
                 space: !0
-            }, b),
+            }, h),
             classNames: {
-                input: K,
+                input: X,
                 variant: W({
-                    [`${d}-${Q}`]: _
-                }, Fe(d, L, Z)),
+                    [`${m}-${ee}`]: _
+                }, Fe(m, T, Q)),
                 affixWrapper: W({
-                    [`${d}-affix-wrapper-sm`]: H === "small",
-                    [`${d}-affix-wrapper-lg`]: H === "large",
-                    [`${d}-affix-wrapper-rtl`]: r === "rtl",
-                    [`${d}-affix-wrapper-without-controls`]: I === !1 || q
-                }, w),
+                    [`${m}-affix-wrapper-sm`]: P === "small",
+                    [`${m}-affix-wrapper-lg`]: P === "large",
+                    [`${m}-affix-wrapper-rtl`]: r === "rtl",
+                    [`${m}-affix-wrapper-without-controls`]: I === !1 || K || y
+                }, x),
                 wrapper: W({
-                    [`${ge}-rtl`]: r === "rtl"
-                }, w),
+                    [`${pe}-rtl`]: r === "rtl"
+                }, x),
                 groupWrapper: W({
-                    [`${d}-group-wrapper-sm`]: H === "small",
-                    [`${d}-group-wrapper-lg`]: H === "large",
-                    [`${d}-group-wrapper-rtl`]: r === "rtl",
-                    [`${d}-group-wrapper-${Q}`]: _
-                }, Fe(`${d}-group-wrapper`, L, Z), w)
+                    [`${m}-group-wrapper-sm`]: P === "small",
+                    [`${m}-group-wrapper-lg`]: P === "large",
+                    [`${m}-group-wrapper-rtl`]: r === "rtl",
+                    [`${m}-group-wrapper-${ee}`]: _
+                }, Fe(`${m}-group-wrapper`, T, Q), x)
             }
-        }, R));
+        }, C));
         return A(se)
     }),
-    sn = Ue,
-    un = e => i.createElement(Et, {
+    cn = Ke,
+    dn = e => i.createElement(xt, {
         theme: {
             components: {
                 InputNumber: {
@@ -1312,8 +1352,8 @@ const Ue = i.forwardRef((e, t) => {
                 }
             }
         }
-    }, i.createElement(Ue, Object.assign({}, e)));
-sn._InternalPanelDoNotUseOrYouWillBeFired = un;
+    }, i.createElement(Ke, Object.assign({}, e)));
+cn._InternalPanelDoNotUseOrYouWillBeFired = dn;
 export {
-    sn as T
+    cn as T
 };

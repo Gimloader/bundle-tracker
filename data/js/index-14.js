@@ -1,29 +1,28 @@
 import {
-    r as o,
+    r,
     I as Ye,
     _ as Ze,
-    cU as et,
-    bD as je,
-    ak as tt,
-    ai as nt,
+    cT as et,
+    bE as je,
+    ai as tt,
     am as Y,
-    aQ as ot,
+    aQ as nt,
     aC as he,
-    bh as st,
+    bf as ot,
     aO as rt,
-    cV as Te,
-    bA as it,
+    cU as Te,
+    bA as st,
     aF as Ie,
-    bf as U,
-    aK as $e,
-    al as lt,
-    bd as at,
-    aS as _e,
+    bg as U,
+    aK as _e,
+    al as it,
+    bd as lt,
+    aS as $e,
     aG as xe,
-    bm as ct
+    bm as at
 } from "./_index.js";
 import {
-    R as ut
+    R as ct
 } from "./EditOutlined.js";
 import {
     i as Se
@@ -32,19 +31,19 @@ import {
     T as pe
 } from "./index-5.js";
 import {
-    T as dt
+    T as ut
 } from "./index-3.js";
 import {
-    c as pt
+    c as dt
 } from "./index-2.js";
 import {
-    R as ft
+    R as pt
 } from "./CheckOutlined.js";
 import {
-    R as mt
+    R as ft
 } from "./CopyOutlined.js";
-const gt = (e, n = !1) => n && e == null ? [] : Array.isArray(e) ? e : [e];
-var bt = {
+const mt = (e, n = !1) => n && e == null ? [] : Array.isArray(e) ? e : [e];
+var gt = {
         icon: {
             tag: "svg",
             attrs: {
@@ -61,39 +60,39 @@ var bt = {
         name: "enter",
         theme: "outlined"
     },
-    yt = function(n, s) {
-        return o.createElement(Ye, Ze({}, n, {
-            ref: s,
-            icon: bt
+    bt = function(n, o) {
+        return r.createElement(Ye, Ze({}, n, {
+            ref: o,
+            icon: gt
         }))
     },
-    vt = o.forwardRef(yt);
-const Et = (e, n, s, t) => {
+    yt = r.forwardRef(bt);
+const vt = (e, n, o, t) => {
         const {
-            titleMarginBottom: r,
+            titleMarginBottom: s,
             fontWeightStrong: l
         } = t;
         return {
-            marginBottom: r,
-            color: s,
+            marginBottom: s,
+            color: o,
             fontWeight: l,
             fontSize: e,
             lineHeight: n
         }
     },
-    ht = e => {
+    Et = e => {
         const n = [1, 2, 3, 4, 5],
-            s = {};
+            o = {};
         return n.forEach(t => {
-            s[`
+            o[`
       h${t}&,
       div&-h${t},
       div&-h${t} > textarea,
       h${t}
-    `] = Et(e[`fontSizeHeading${t}`], e[`lineHeightHeading${t}`], e.colorTextHeading, e)
-        }), s
+    `] = vt(e[`fontSizeHeading${t}`], e[`lineHeightHeading${t}`], e.colorTextHeading, e)
+        }), o
     },
-    xt = e => {
+    ht = e => {
         const {
             componentCls: n
         } = e;
@@ -113,7 +112,7 @@ const Et = (e, n, s, t) => {
             })
         }
     },
-    St = e => ({
+    xt = e => ({
         code: {
             margin: "0 0.2em",
             paddingInline: "0.4em",
@@ -197,18 +196,18 @@ const Et = (e, n, s, t) => {
             opacity: .85
         }
     }),
-    Ot = e => {
+    St = e => {
         const {
             componentCls: n,
-            paddingSM: s
-        } = e, t = s;
+            paddingSM: o
+        } = e, t = o;
         return {
             "&-edit-content": {
                 position: "relative",
                 "div&": {
                     insetInlineStart: e.calc(e.paddingSM).mul(-1).equal(),
-                    marginTop: e.calc(t).mul(-1).equal(),
-                    marginBottom: `calc(1em - ${tt(t)})`
+                    insetBlockStart: e.calc(t).div(-2).add(1).equal(),
+                    marginBottom: e.calc(t).div(2).sub(2).equal()
                 },
                 [`${n}-edit-content-confirm`]: {
                     position: "absolute",
@@ -228,7 +227,7 @@ const Et = (e, n, s, t) => {
             }
         }
     },
-    Ct = e => ({
+    Ot = e => ({
         [`${e.componentCls}-copy-success`]: {
             "\n    &,\n    &:hover,\n    &:focus": {
                 color: e.colorSuccess
@@ -238,7 +237,7 @@ const Et = (e, n, s, t) => {
             marginInlineStart: 0
         }
     }),
-    wt = () => ({
+    Ct = () => ({
         "\n  a&-ellipsis,\n  span&-ellipsis\n  ": {
             display: "inline-block",
             maxWidth: "100%"
@@ -267,10 +266,10 @@ const Et = (e, n, s, t) => {
             WebkitBoxOrient: "vertical"
         }
     }),
-    Rt = e => {
+    wt = e => {
         const {
             componentCls: n,
-            titleMarginTop: s
+            titleMarginTop: o
         } = e;
         return {
             [n]: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({
@@ -303,7 +302,7 @@ const Et = (e, n, s, t) => {
                 "\n        div&,\n        p\n      ": {
                     marginBottom: "1em"
                 }
-            }, ht(e)), {
+            }, Et(e)), {
                 [`
       & + h1${n},
       & + h2${n},
@@ -311,14 +310,14 @@ const Et = (e, n, s, t) => {
       & + h4${n},
       & + h5${n}
       `]: {
-                    marginTop: s
+                    marginTop: o
                 },
                 "\n      div,\n      ul,\n      li,\n      p,\n      h1,\n      h2,\n      h3,\n      h4,\n      h5": {
                     "\n        + h1,\n        + h2,\n        + h3,\n        + h4,\n        + h5\n        ": {
-                        marginTop: s
+                        marginTop: o
                     }
                 }
-            }), St(e)), xt(e)), {
+            }), xt(e)), ht(e)), {
                 [`
         ${n}-expand,
         ${n}-collapse,
@@ -327,37 +326,37 @@ const Et = (e, n, s, t) => {
       `]: Object.assign(Object.assign({}, je(e)), {
                     marginInlineStart: e.marginXXS
                 })
-            }), Ot(e)), Ct(e)), wt()), {
+            }), St(e)), Ot(e)), Ct()), {
                 "&-rtl": {
                     direction: "rtl"
                 }
             })
         }
     },
-    jt = () => ({
+    Rt = () => ({
         titleMarginTop: "1.2em",
         titleMarginBottom: "0.5em"
     }),
-    Le = nt("Typography", e => [Rt(e)], jt),
-    Tt = e => {
+    Pe = tt("Typography", wt, Rt),
+    jt = e => {
         const {
             prefixCls: n,
-            "aria-label": s,
+            "aria-label": o,
             className: t,
-            style: r,
+            style: s,
             direction: l,
-            maxLength: m,
+            maxLength: p,
             autoSize: v = !0,
             value: a,
             onSave: c,
             onCancel: d,
             onEnd: b,
-            component: p,
-            enterIcon: C = o.createElement(vt, null)
-        } = e, w = o.useRef(null), R = o.useRef(!1), $ = o.useRef(null), [f, _] = o.useState(a);
-        o.useEffect(() => {
-            _(a)
-        }, [a]), o.useEffect(() => {
+            component: f,
+            enterIcon: C = r.createElement(yt, null)
+        } = e, w = r.useRef(null), R = r.useRef(!1), _ = r.useRef(null), [m, $] = r.useState(a);
+        r.useEffect(() => {
+            $(a)
+        }, [a]), r.useEffect(() => {
             var g;
             if (!((g = w.current) === null || g === void 0) && g.resizableTextArea) {
                 const {
@@ -370,10 +369,10 @@ const Et = (e, n, s, t) => {
                 h.setSelectionRange(E, E)
             }
         }, []);
-        const H = ({
+        const k = ({
                 target: g
             }) => {
-                _(g.value.replace(/[\n\r]/g, ""))
+                $(g.value.replace(/[\n\r]/g, ""))
             },
             x = () => {
                 R.current = !0
@@ -384,10 +383,10 @@ const Et = (e, n, s, t) => {
             T = ({
                 keyCode: g
             }) => {
-                R.current || ($.current = g)
+                R.current || (_.current = g)
             },
             y = () => {
-                c(f.trim())
+                c(m.trim())
             },
             B = ({
                 keyCode: g,
@@ -396,48 +395,48 @@ const Et = (e, n, s, t) => {
                 metaKey: A,
                 shiftKey: j
             }) => {
-                $.current !== g || R.current || h || E || A || j || (g === he.ENTER ? (y(), b == null || b()) : g === he.ESC && d())
+                _.current !== g || R.current || h || E || A || j || (g === he.ENTER ? (y(), b == null || b()) : g === he.ESC && d())
             },
             F = () => {
                 y()
             },
-            [z, M, V] = Le(n),
+            [D, M, V] = Pe(n),
             N = Y(n, `${n}-edit-content`, {
                 [`${n}-rtl`]: l === "rtl",
-                [`${n}-${p}`]: !!p
+                [`${n}-${f}`]: !!f
             }, t, M, V);
-        return z(o.createElement("div", {
+        return D(r.createElement("div", {
             className: N,
-            style: r
-        }, o.createElement(dt, {
+            style: s
+        }, r.createElement(ut, {
             ref: w,
-            maxLength: m,
-            value: f,
-            onChange: H,
+            maxLength: p,
+            value: m,
+            onChange: k,
             onKeyDown: T,
             onKeyUp: B,
             onCompositionStart: x,
             onCompositionEnd: S,
             onBlur: F,
-            "aria-label": s,
+            "aria-label": o,
             rows: 1,
             autoSize: v
-        }), C !== null ? ot(C, {
+        }), C !== null ? nt(C, {
             className: `${n}-edit-content-confirm`
         }) : null))
     };
-var It = function(e, n, s, t) {
-    function r(l) {
-        return l instanceof s ? l : new s(function(m) {
-            m(l)
+var Tt = function(e, n, o, t) {
+    function s(l) {
+        return l instanceof o ? l : new o(function(p) {
+            p(l)
         })
     }
-    return new(s || (s = Promise))(function(l, m) {
+    return new(o || (o = Promise))(function(l, p) {
         function v(d) {
             try {
                 c(t.next(d))
             } catch (b) {
-                m(b)
+                p(b)
             }
         }
 
@@ -445,93 +444,93 @@ var It = function(e, n, s, t) {
             try {
                 c(t.throw(d))
             } catch (b) {
-                m(b)
+                p(b)
             }
         }
 
         function c(d) {
-            d.done ? l(d.value) : r(d.value).then(v, a)
+            d.done ? l(d.value) : s(d.value).then(v, a)
         }
         c((t = t.apply(e, n || [])).next())
     })
 };
-const $t = ({
+const It = ({
     copyConfig: e,
     children: n
 }) => {
-    const [s, t] = o.useState(!1), [r, l] = o.useState(!1), m = o.useRef(null), v = () => {
-        m.current && clearTimeout(m.current)
+    const [o, t] = r.useState(!1), [s, l] = r.useState(!1), p = r.useRef(null), v = () => {
+        p.current && clearTimeout(p.current)
     }, a = {};
-    e.format && (a.format = e.format), o.useEffect(() => v, []);
-    const c = st(d => It(void 0, void 0, void 0, function*() {
+    e.format && (a.format = e.format), r.useEffect(() => v, []);
+    const c = ot(d => Tt(void 0, void 0, void 0, function*() {
         var b;
         d == null || d.preventDefault(), d == null || d.stopPropagation(), l(!0);
         try {
-            const p = typeof e.text == "function" ? yield e.text(): e.text;
-            pt(p || gt(n, !0).join("") || "", a), l(!1), t(!0), v(), m.current = setTimeout(() => {
+            const f = typeof e.text == "function" ? yield e.text(): e.text;
+            dt(f || mt(n, !0).join("") || "", a), l(!1), t(!0), v(), p.current = setTimeout(() => {
                 t(!1)
             }, 3e3), (b = e.onCopy) === null || b === void 0 || b.call(e, d)
-        } catch (p) {
-            throw l(!1), p
+        } catch (f) {
+            throw l(!1), f
         }
     }));
     return {
-        copied: s,
-        copyLoading: r,
+        copied: o,
+        copyLoading: s,
         onClick: c
     }
 };
 
 function ie(e, n) {
-    return o.useMemo(() => {
-        const s = !!e;
-        return [s, Object.assign(Object.assign({}, n), s && typeof e == "object" ? e : null)]
+    return r.useMemo(() => {
+        const o = !!e;
+        return [o, Object.assign(Object.assign({}, n), o && typeof e == "object" ? e : null)]
     }, [e])
 }
 const _t = e => {
-        const n = o.useRef(void 0);
-        return o.useEffect(() => {
+        const n = r.useRef(void 0);
+        return r.useEffect(() => {
             n.current = e
         }), n.current
     },
-    Lt = (e, n, s) => o.useMemo(() => e === !0 ? {
-        title: n ?? s
-    } : o.isValidElement(e) ? {
+    $t = (e, n, o) => r.useMemo(() => e === !0 ? {
+        title: n ?? o
+    } : r.isValidElement(e) ? {
         title: e
     } : typeof e == "object" ? Object.assign({
-        title: n ?? s
+        title: n ?? o
     }, e) : {
         title: e
-    }, [e, n, s]);
+    }, [e, n, o]);
 var Pt = function(e, n) {
-    var s = {};
-    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (s[t] = e[t]);
+    var o = {};
+    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (o[t] = e[t]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var r = 0, t = Object.getOwnPropertySymbols(e); r < t.length; r++) n.indexOf(t[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[r]) && (s[t[r]] = e[t[r]]);
-    return s
+        for (var s = 0, t = Object.getOwnPropertySymbols(e); s < t.length; s++) n.indexOf(t[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[s]) && (o[t[s]] = e[t[s]]);
+    return o
 };
-const Pe = o.forwardRef((e, n) => {
+const Le = r.forwardRef((e, n) => {
     const {
-        prefixCls: s,
+        prefixCls: o,
         component: t = "article",
-        className: r,
+        className: s,
         rootClassName: l,
-        setContentRef: m,
+        setContentRef: p,
         children: v,
         direction: a,
         style: c
     } = e, d = Pt(e, ["prefixCls", "component", "className", "rootClassName", "setContentRef", "children", "direction", "style"]), {
         getPrefixCls: b,
-        direction: p,
+        direction: f,
         className: C,
         style: w
-    } = rt("typography"), R = a ?? p, $ = m ? Te(n, m) : n, f = b("typography", s), [_, H, x] = Le(f), S = Y(f, C, {
-        [`${f}-rtl`]: R === "rtl"
-    }, r, l, H, x), T = Object.assign(Object.assign({}, w), c);
-    return _(o.createElement(t, Object.assign({
+    } = rt("typography"), R = a ?? f, _ = p ? Te(n, p) : n, m = b("typography", o), [$, k, x] = Pe(m), S = Y(m, C, {
+        [`${m}-rtl`]: R === "rtl"
+    }, s, l, k, x), T = Object.assign(Object.assign({}, w), c);
+    return $(r.createElement(t, Object.assign({
         className: S,
         style: T,
-        ref: $
+        ref: _
     }, d), v))
 });
 
@@ -539,41 +538,41 @@ function Oe(e) {
     return e === !1 ? [!1, !1] : Array.isArray(e) ? e : [e]
 }
 
-function le(e, n, s) {
-    return e === !0 || e === void 0 ? n : e || s && n
+function le(e, n, o) {
+    return e === !0 || e === void 0 ? n : e || o && n
 }
 
-function Mt(e) {
+function Lt(e) {
     const n = document.createElement("em");
     e.appendChild(n);
-    const s = e.getBoundingClientRect(),
+    const o = e.getBoundingClientRect(),
         t = n.getBoundingClientRect();
-    return e.removeChild(n), s.left > t.left || t.right > s.right || s.top > t.top || t.bottom > s.bottom
+    return e.removeChild(n), o.left > t.left || t.right > o.right || o.top > t.top || t.bottom > o.bottom
 }
 const fe = e => ["string", "number"].includes(typeof e),
-    Nt = ({
+    Mt = ({
         prefixCls: e,
         copied: n,
-        locale: s,
+        locale: o,
         iconOnly: t,
-        tooltips: r,
+        tooltips: s,
         icon: l,
-        tabIndex: m,
+        tabIndex: p,
         onCopy: v,
         loading: a
     }) => {
-        const c = Oe(r),
+        const c = Oe(s),
             d = Oe(l),
             {
                 copied: b,
-                copy: p
-            } = s ?? {},
-            C = n ? b : p,
+                copy: f
+            } = o ?? {},
+            C = n ? b : f,
             w = le(c[n ? 1 : 0], C),
             R = typeof w == "string" ? w : C;
-        return o.createElement(pe, {
+        return r.createElement(pe, {
             title: w
-        }, o.createElement("button", {
+        }, r.createElement("button", {
             type: "button",
             className: Y(`${e}-copy`, {
                 [`${e}-copy-success`]: n,
@@ -581,21 +580,21 @@ const fe = e => ["string", "number"].includes(typeof e),
             }),
             onClick: v,
             "aria-label": R,
-            tabIndex: m
-        }, n ? le(d[1], o.createElement(ft, null), !0) : le(d[0], a ? o.createElement(it, null) : o.createElement(mt, null), !0)))
+            tabIndex: p
+        }, n ? le(d[1], r.createElement(pt, null), !0) : le(d[0], a ? r.createElement(st, null) : r.createElement(ft, null), !0)))
     },
-    G = o.forwardRef(({
+    G = r.forwardRef(({
         style: e,
         children: n
-    }, s) => {
-        const t = o.useRef(null);
-        return o.useImperativeHandle(s, () => ({
+    }, o) => {
+        const t = r.useRef(null);
+        return r.useImperativeHandle(o, () => ({
             isExceed: () => {
-                const r = t.current;
-                return r.scrollHeight > r.clientHeight
+                const s = t.current;
+                return s.scrollHeight > s.clientHeight
             },
             getHeight: () => t.current.clientHeight
-        })), o.createElement("span", {
+        })), r.createElement("span", {
             "aria-hidden": !0,
             ref: t,
             style: Object.assign({
@@ -608,21 +607,21 @@ const fe = e => ["string", "number"].includes(typeof e),
             }, e)
         }, n)
     }),
-    At = e => e.reduce((n, s) => n + (fe(s) ? String(s).length : 1), 0);
+    Nt = e => e.reduce((n, o) => n + (fe(o) ? String(o).length : 1), 0);
 
 function Ce(e, n) {
-    let s = 0;
+    let o = 0;
     const t = [];
-    for (let r = 0; r < e.length; r += 1) {
-        if (s === n) return t;
-        const l = e[r],
+    for (let s = 0; s < e.length; s += 1) {
+        if (o === n) return t;
+        const l = e[s],
             v = fe(l) ? String(l).length : 1,
-            a = s + v;
+            a = o + v;
         if (a > n) {
-            const c = n - s;
+            const c = n - o;
             return t.push(String(l).slice(0, c)), t
         }
-        t.push(l), s = a
+        t.push(l), o = a
     }
     return e
 }
@@ -637,84 +636,84 @@ const ae = 0,
         WebkitBoxOrient: "vertical"
     };
 
-function kt(e) {
+function At(e) {
     const {
         enableMeasure: n,
-        width: s,
+        width: o,
         text: t,
-        children: r,
+        children: s,
         rows: l,
-        expanded: m,
+        expanded: p,
         miscDeps: v,
         onEllipsis: a
-    } = e, c = o.useMemo(() => Ie(t), [t]), d = o.useMemo(() => At(c), [t]), b = o.useMemo(() => r(c, !1), [t]), [p, C] = o.useState(null), w = o.useRef(null), R = o.useRef(null), $ = o.useRef(null), f = o.useRef(null), _ = o.useRef(null), [H, x] = o.useState(!1), [S, T] = o.useState(ae), [y, B] = o.useState(0), [F, z] = o.useState(null);
+    } = e, c = r.useMemo(() => Ie(t), [t]), d = r.useMemo(() => Nt(c), [t]), b = r.useMemo(() => s(c, !1), [t]), [f, C] = r.useState(null), w = r.useRef(null), R = r.useRef(null), _ = r.useRef(null), m = r.useRef(null), $ = r.useRef(null), [k, x] = r.useState(!1), [S, T] = r.useState(ae), [y, B] = r.useState(0), [F, D] = r.useState(null);
     U(() => {
-        T(n && s && d ? ce : ae)
-    }, [s, t, l, n, c]), U(() => {
+        T(n && o && d ? ce : ae)
+    }, [o, t, l, n, c]), U(() => {
         var g, h, E, A;
         if (S === ce) {
             T(ue);
             const j = R.current && getComputedStyle(R.current).whiteSpace;
-            z(j)
+            D(j)
         } else if (S === ue) {
-            const j = !!(!((g = $.current) === null || g === void 0) && g.isExceed());
+            const j = !!(!((g = _.current) === null || g === void 0) && g.isExceed());
             T(j ? de : we), C(j ? [0, d] : null), x(j);
-            const W = ((h = $.current) === null || h === void 0 ? void 0 : h.getHeight()) || 0,
-                te = l === 1 ? 0 : ((E = f.current) === null || E === void 0 ? void 0 : E.getHeight()) || 0,
-                q = ((A = _.current) === null || A === void 0 ? void 0 : A.getHeight()) || 0,
+            const W = ((h = _.current) === null || h === void 0 ? void 0 : h.getHeight()) || 0,
+                te = l === 1 ? 0 : ((E = m.current) === null || E === void 0 ? void 0 : E.getHeight()) || 0,
+                q = ((A = $.current) === null || A === void 0 ? void 0 : A.getHeight()) || 0,
                 ne = Math.max(W, te + q);
             B(ne + 1), a(j)
         }
     }, [S]);
-    const M = p ? Math.ceil((p[0] + p[1]) / 2) : 0;
+    const M = f ? Math.ceil((f[0] + f[1]) / 2) : 0;
     U(() => {
         var g;
-        const [h, E] = p || [0, 0];
+        const [h, E] = f || [0, 0];
         if (h !== E) {
             const j = (((g = w.current) === null || g === void 0 ? void 0 : g.getHeight()) || 0) > y;
             let W = M;
             E - h === 1 && (W = j ? h : E), C(j ? [h, W] : [W, E])
         }
-    }, [p, M]);
-    const V = o.useMemo(() => {
-            if (!n) return r(c, !1);
-            if (S !== de || !p || p[0] !== p[1]) {
-                const g = r(c, !1);
-                return [we, ae].includes(S) ? g : o.createElement("span", {
+    }, [f, M]);
+    const V = r.useMemo(() => {
+            if (!n) return s(c, !1);
+            if (S !== de || !f || f[0] !== f[1]) {
+                const g = s(c, !1);
+                return [we, ae].includes(S) ? g : r.createElement("span", {
                     style: Object.assign(Object.assign({}, Q), {
                         WebkitLineClamp: l
                     })
                 }, g)
             }
-            return r(m ? c : Ce(c, p[0]), H)
-        }, [m, S, p, c].concat($e(v))),
+            return s(p ? c : Ce(c, f[0]), k)
+        }, [p, S, f, c].concat(_e(v))),
         N = {
-            width: s,
+            width: o,
             margin: 0,
             padding: 0,
             whiteSpace: F === "nowrap" ? "normal" : "inherit"
         };
-    return o.createElement(o.Fragment, null, V, S === ue && o.createElement(o.Fragment, null, o.createElement(G, {
+    return r.createElement(r.Fragment, null, V, S === ue && r.createElement(r.Fragment, null, r.createElement(G, {
         style: Object.assign(Object.assign(Object.assign({}, N), Q), {
             WebkitLineClamp: l
         }),
-        ref: $
-    }, b), o.createElement(G, {
+        ref: _
+    }, b), r.createElement(G, {
         style: Object.assign(Object.assign(Object.assign({}, N), Q), {
             WebkitLineClamp: l - 1
         }),
-        ref: f
-    }, b), o.createElement(G, {
+        ref: m
+    }, b), r.createElement(G, {
         style: Object.assign(Object.assign(Object.assign({}, N), Q), {
             WebkitLineClamp: 1
         }),
-        ref: _
-    }, r([], !0))), S === de && p && p[0] !== p[1] && o.createElement(G, {
+        ref: $
+    }, s([], !0))), S === de && f && f[0] !== f[1] && r.createElement(G, {
         style: Object.assign(Object.assign({}, N), {
             top: 400
         }),
         ref: w
-    }, r(Ce(c, M), !0)), S === ce && o.createElement("span", {
+    }, s(Ce(c, M), !0)), S === ce && r.createElement("span", {
         style: {
             whiteSpace: "inherit"
         },
@@ -724,65 +723,65 @@ function kt(e) {
 const Ht = ({
     enableEllipsis: e,
     isEllipsis: n,
-    children: s,
+    children: o,
     tooltipProps: t
-}) => !(t != null && t.title) || !e ? s : o.createElement(pe, Object.assign({
+}) => !(t != null && t.title) || !e ? o : r.createElement(pe, Object.assign({
     open: n ? void 0 : !1
-}, t), s);
-var Bt = function(e, n) {
-    var s = {};
-    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (s[t] = e[t]);
+}, t), o);
+var kt = function(e, n) {
+    var o = {};
+    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (o[t] = e[t]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var r = 0, t = Object.getOwnPropertySymbols(e); r < t.length; r++) n.indexOf(t[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[r]) && (s[t[r]] = e[t[r]]);
-    return s
+        for (var s = 0, t = Object.getOwnPropertySymbols(e); s < t.length; s++) n.indexOf(t[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[s]) && (o[t[s]] = e[t[s]]);
+    return o
 };
 
-function Wt({
+function Bt({
     mark: e,
     code: n,
-    underline: s,
+    underline: o,
     delete: t,
-    strong: r,
+    strong: s,
     keyboard: l,
-    italic: m
+    italic: p
 }, v) {
     let a = v;
 
     function c(d, b) {
-        b && (a = o.createElement(d, {}, a))
+        b && (a = r.createElement(d, {}, a))
     }
-    return c("strong", r), c("u", s), c("del", t), c("code", n), c("mark", e), c("kbd", l), c("i", m), a
+    return c("strong", s), c("u", o), c("del", t), c("code", n), c("mark", e), c("kbd", l), c("i", p), a
 }
-const Dt = "...",
+const Wt = "...",
     Re = ["delete", "mark", "code", "underline", "strong", "keyboard", "italic"],
-    Z = o.forwardRef((e, n) => {
-        var s;
+    Z = r.forwardRef((e, n) => {
+        var o;
         const {
             prefixCls: t,
-            className: r,
+            className: s,
             style: l,
-            type: m,
+            type: p,
             disabled: v,
             children: a,
             ellipsis: c,
             editable: d,
             copyable: b,
-            component: p,
+            component: f,
             title: C
-        } = e, w = Bt(e, ["prefixCls", "className", "style", "type", "disabled", "children", "ellipsis", "editable", "copyable", "component", "title"]), {
+        } = e, w = kt(e, ["prefixCls", "className", "style", "type", "disabled", "children", "ellipsis", "editable", "copyable", "component", "title"]), {
             getPrefixCls: R,
-            direction: $
-        } = o.useContext(lt), [f] = at("Text"), _ = o.useRef(null), H = o.useRef(null), x = R("typography", t), S = _e(w, Re), [T, y] = ie(d), [B, F] = xe(!1, {
+            direction: _
+        } = r.useContext(it), [m] = lt("Text"), $ = r.useRef(null), k = r.useRef(null), x = R("typography", t), S = $e(w, Re), [T, y] = ie(d), [B, F] = xe(!1, {
             value: y.editing
         }), {
-            triggerType: z = ["icon"]
+            triggerType: D = ["icon"]
         } = y, M = i => {
             var u;
             i && ((u = y.onStart) === null || u === void 0 || u.call(y)), F(i)
         }, V = _t(B);
         U(() => {
             var i;
-            !B && V && ((i = H.current) === null || i === void 0 || i.focus())
+            !B && V && ((i = k.current) === null || i === void 0 || i.focus())
         }, [B]);
         const N = i => {
                 i == null || i.preventDefault(), M(!0)
@@ -800,42 +799,42 @@ const Dt = "...",
                 copied: j,
                 copyLoading: W,
                 onClick: te
-            } = $t({
+            } = It({
                 copyConfig: A,
                 children: a
             }),
-            [q, ne] = o.useState(!1),
-            [me, Me] = o.useState(!1),
-            [ge, Ne] = o.useState(!1),
-            [be, Ae] = o.useState(!1),
-            [ke, He] = o.useState(!0),
-            [D, O] = ie(c, {
+            [q, ne] = r.useState(!1),
+            [me, Me] = r.useState(!1),
+            [ge, Ne] = r.useState(!1),
+            [be, Ae] = r.useState(!1),
+            [He, ke] = r.useState(!0),
+            [z, O] = ie(c, {
                 expandable: !1,
-                symbol: i => i ? f == null ? void 0 : f.collapse : f == null ? void 0 : f.expand
+                symbol: i => i ? m == null ? void 0 : m.collapse : m == null ? void 0 : m.expand
             }),
-            [k, Be] = xe(O.defaultExpanded || !1, {
+            [H, Be] = xe(O.defaultExpanded || !1, {
                 value: O.expanded
             }),
-            I = D && (!k || O.expandable === "collapsible"),
+            I = z && (!H || O.expandable === "collapsible"),
             {
                 rows: K = 1
             } = O,
-            X = o.useMemo(() => I && (O.suffix !== void 0 || O.onEllipsis || O.expandable || T || E), [I, O, T, E]);
+            X = r.useMemo(() => I && (O.suffix !== void 0 || O.onEllipsis || O.expandable || T || E), [I, O, T, E]);
         U(() => {
-            D && !X && (ne(Se("webkitLineClamp")), Me(Se("textOverflow")))
-        }, [X, D]);
-        const [L, We] = o.useState(I), ye = o.useMemo(() => X ? !1 : K === 1 ? me : q, [X, me, q]);
+            z && !X && (ne(Se("webkitLineClamp")), Me(Se("textOverflow")))
+        }, [X, z]);
+        const [P, We] = r.useState(I), ye = r.useMemo(() => X ? !1 : K === 1 ? me : q, [X, me, q]);
         U(() => {
             We(ye && I)
         }, [ye, I]);
-        const ve = I && (L ? be : ge),
-            De = I && K === 1 && L,
-            oe = I && K > 1 && L,
-            ze = (i, u) => {
-                var P;
-                Be(u.expanded), (P = O.onExpand) === null || P === void 0 || P.call(O, i, u)
+        const ve = I && (P ? be : ge),
+            ze = I && K === 1 && P,
+            oe = I && K > 1 && P,
+            De = (i, u) => {
+                var L;
+                Be(u.expanded), (L = O.onExpand) === null || L === void 0 || L.call(O, i, u)
             },
-            [Ee, Ue] = o.useState(0),
+            [Ee, Ue] = r.useState(0),
             Fe = ({
                 offsetWidth: i
             }) => {
@@ -845,36 +844,36 @@ const Dt = "...",
                 var u;
                 Ne(i), ge !== i && ((u = O.onEllipsis) === null || u === void 0 || u.call(O, i))
             };
-        o.useEffect(() => {
-            const i = _.current;
-            if (D && L && i) {
-                const u = Mt(i);
+        r.useEffect(() => {
+            const i = $.current;
+            if (z && P && i) {
+                const u = Lt(i);
                 be !== u && Ae(u)
             }
-        }, [D, L, a, oe, ke, Ee]), o.useEffect(() => {
-            const i = _.current;
-            if (typeof IntersectionObserver > "u" || !i || !L || !I) return;
+        }, [z, P, a, oe, He, Ee]), r.useEffect(() => {
+            const i = $.current;
+            if (typeof IntersectionObserver > "u" || !i || !P || !I) return;
             const u = new IntersectionObserver(() => {
-                He(!!i.offsetParent)
+                ke(!!i.offsetParent)
             });
             return u.observe(i), () => {
                 u.disconnect()
             }
-        }, [L, I]);
-        const se = Lt(O.tooltip, y.text, a),
-            J = o.useMemo(() => {
-                if (!(!D || L)) return [y.text, a, C, se.title].find(fe)
-            }, [D, L, C, se.title, ve]);
-        if (B) return o.createElement(Tt, {
-            value: (s = y.text) !== null && s !== void 0 ? s : typeof a == "string" ? a : "",
+        }, [P, I]);
+        const re = $t(O.tooltip, y.text, a),
+            J = r.useMemo(() => {
+                if (!(!z || P)) return [y.text, a, C, re.title].find(fe)
+            }, [z, P, C, re.title, ve]);
+        if (B) return r.createElement(jt, {
+            value: (o = y.text) !== null && o !== void 0 ? o : typeof a == "string" ? a : "",
             onSave: g,
             onCancel: h,
             onEnd: y.onEnd,
             prefixCls: x,
-            className: r,
+            className: s,
             style: l,
-            direction: $,
-            component: p,
+            direction: _,
+            component: f,
             maxLength: y.maxLength,
             autoSize: y.autoSize,
             enterIcon: y.enterIcon
@@ -884,157 +883,171 @@ const Dt = "...",
                     expandable: i,
                     symbol: u
                 } = O;
-                return i ? o.createElement("button", {
+                return i ? r.createElement("button", {
                     type: "button",
                     key: "expand",
-                    className: `${x}-${k?"collapse":"expand"}`,
-                    onClick: P => ze(P, {
-                        expanded: !k
+                    className: `${x}-${H?"collapse":"expand"}`,
+                    onClick: L => De(L, {
+                        expanded: !H
                     }),
-                    "aria-label": k ? f.collapse : f == null ? void 0 : f.expand
-                }, typeof u == "function" ? u(k) : u) : null
+                    "aria-label": H ? m.collapse : m == null ? void 0 : m.expand
+                }, typeof u == "function" ? u(H) : u) : null
             },
             qe = () => {
                 if (!T) return;
                 const {
                     icon: i,
                     tooltip: u,
-                    tabIndex: P
-                } = y, re = Ie(u)[0] || (f == null ? void 0 : f.edit), Qe = typeof re == "string" ? re : "";
-                return z.includes("icon") ? o.createElement(pe, {
+                    tabIndex: L
+                } = y, se = Ie(u)[0] || (m == null ? void 0 : m.edit), Qe = typeof se == "string" ? se : "";
+                return D.includes("icon") ? r.createElement(pe, {
                     key: "edit",
-                    title: u === !1 ? "" : re
-                }, o.createElement("button", {
+                    title: u === !1 ? "" : se
+                }, r.createElement("button", {
                     type: "button",
-                    ref: H,
+                    ref: k,
                     className: `${x}-edit`,
                     onClick: N,
                     "aria-label": Qe,
-                    tabIndex: P
-                }, i || o.createElement(ut, {
+                    tabIndex: L
+                }, i || r.createElement(ct, {
                     role: "button"
                 }))) : null
             },
-            Xe = () => E ? o.createElement(Nt, Object.assign({
+            Xe = () => E ? r.createElement(Mt, Object.assign({
                 key: "copy"
             }, A, {
                 prefixCls: x,
                 copied: j,
-                locale: f,
+                locale: m,
                 onCopy: te,
                 loading: W,
                 iconOnly: a == null
             })) : null,
             Je = i => [i && Ke(), qe(), Xe()],
-            Ge = i => [i && !k && o.createElement("span", {
+            Ge = i => [i && !H && r.createElement("span", {
                 "aria-hidden": !0,
                 key: "ellipsis"
-            }, Dt), O.suffix, Je(i)];
-        return o.createElement(ct, {
+            }, Wt), O.suffix, Je(i)];
+        return r.createElement(at, {
             onResize: Fe,
             disabled: !I
-        }, i => o.createElement(Ht, {
-            tooltipProps: se,
+        }, i => r.createElement(Ht, {
+            tooltipProps: re,
             enableEllipsis: I,
             isEllipsis: ve
-        }, o.createElement(Pe, Object.assign({
+        }, r.createElement(Le, Object.assign({
             className: Y({
-                [`${x}-${m}`]: m,
+                [`${x}-${p}`]: p,
                 [`${x}-disabled`]: v,
-                [`${x}-ellipsis`]: D,
-                [`${x}-ellipsis-single-line`]: De,
+                [`${x}-ellipsis`]: z,
+                [`${x}-ellipsis-single-line`]: ze,
                 [`${x}-ellipsis-multiple-line`]: oe
-            }, r),
+            }, s),
             prefixCls: t,
             style: Object.assign(Object.assign({}, l), {
                 WebkitLineClamp: oe ? K : void 0
             }),
-            component: p,
-            ref: Te(i, _, n),
-            direction: $,
-            onClick: z.includes("text") ? N : void 0,
+            component: f,
+            ref: Te(i, $, n),
+            direction: _,
+            onClick: D.includes("text") ? N : void 0,
             "aria-label": J == null ? void 0 : J.toString(),
             title: C
-        }, S), o.createElement(kt, {
-            enableMeasure: I && !L,
+        }, S), r.createElement(At, {
+            enableMeasure: I && !P,
             text: a,
             rows: K,
             width: Ee,
             onEllipsis: Ve,
-            expanded: k,
-            miscDeps: [j, k, W, T, E, f].concat($e(Re.map(u => e[u])))
-        }, (u, P) => Wt(e, o.createElement(o.Fragment, null, u.length > 0 && P && !k && J ? o.createElement("span", {
+            expanded: H,
+            miscDeps: [j, H, W, T, E, m].concat(_e(Re.map(u => e[u])))
+        }, (u, L) => Bt(e, r.createElement(r.Fragment, null, u.length > 0 && L && !H && J ? r.createElement("span", {
             key: "show-content",
             "aria-hidden": !0
-        }, u) : u, Ge(P)))))))
+        }, u) : u, Ge(L)))))))
     });
 var zt = function(e, n) {
-    var s = {};
-    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (s[t] = e[t]);
+    var o = {};
+    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (o[t] = e[t]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var r = 0, t = Object.getOwnPropertySymbols(e); r < t.length; r++) n.indexOf(t[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[r]) && (s[t[r]] = e[t[r]]);
-    return s
+        for (var s = 0, t = Object.getOwnPropertySymbols(e); s < t.length; s++) n.indexOf(t[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[s]) && (o[t[s]] = e[t[s]]);
+    return o
 };
-const Ut = o.forwardRef((e, n) => {
-        var {
-            ellipsis: s,
-            rel: t
-        } = e, r = zt(e, ["ellipsis", "rel"]);
-        const l = Object.assign(Object.assign({}, r), {
-            rel: t === void 0 && r.target === "_blank" ? "noopener noreferrer" : t
-        });
-        return delete l.navigate, o.createElement(Z, Object.assign({}, l, {
-            ref: n,
-            ellipsis: !!s,
-            component: "a"
-        }))
-    }),
-    Ft = o.forwardRef((e, n) => o.createElement(Z, Object.assign({
-        ref: n
-    }, e, {
-        component: "div"
-    })));
-var Vt = function(e, n) {
-    var s = {};
-    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (s[t] = e[t]);
+const Dt = r.forwardRef((e, n) => {
+    const {
+        ellipsis: o,
+        rel: t,
+        children: s,
+        navigate: l
+    } = e, p = zt(e, ["ellipsis", "rel", "children", "navigate"]), v = Object.assign(Object.assign({}, p), {
+        rel: t === void 0 && p.target === "_blank" ? "noopener noreferrer" : t
+    });
+    return r.createElement(Z, Object.assign({}, v, {
+        ref: n,
+        ellipsis: !!o,
+        component: "a"
+    }), s)
+});
+var Ut = function(e, n) {
+    var o = {};
+    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (o[t] = e[t]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var r = 0, t = Object.getOwnPropertySymbols(e); r < t.length; r++) n.indexOf(t[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[r]) && (s[t[r]] = e[t[r]]);
-    return s
+        for (var s = 0, t = Object.getOwnPropertySymbols(e); s < t.length; s++) n.indexOf(t[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[s]) && (o[t[s]] = e[t[s]]);
+    return o
+};
+const Ft = r.forwardRef((e, n) => {
+    const {
+        children: o
+    } = e, t = Ut(e, ["children"]);
+    return r.createElement(Z, Object.assign({
+        ref: n
+    }, t, {
+        component: "div"
+    }), o)
+});
+var Vt = function(e, n) {
+    var o = {};
+    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (o[t] = e[t]);
+    if (e != null && typeof Object.getOwnPropertySymbols == "function")
+        for (var s = 0, t = Object.getOwnPropertySymbols(e); s < t.length; s++) n.indexOf(t[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[s]) && (o[t[s]] = e[t[s]]);
+    return o
 };
 const Kt = (e, n) => {
-        var {
-            ellipsis: s
-        } = e, t = Vt(e, ["ellipsis"]);
-        const r = o.useMemo(() => s && typeof s == "object" ? _e(s, ["expandable", "rows"]) : s, [s]);
-        return o.createElement(Z, Object.assign({
+        const {
+            ellipsis: o,
+            children: t
+        } = e, s = Vt(e, ["ellipsis", "children"]), l = r.useMemo(() => o && typeof o == "object" ? $e(o, ["expandable", "rows"]) : o, [o]);
+        return r.createElement(Z, Object.assign({
             ref: n
-        }, t, {
-            ellipsis: r,
+        }, s, {
+            ellipsis: l,
             component: "span"
-        }))
+        }), t)
     },
-    qt = o.forwardRef(Kt);
+    qt = r.forwardRef(Kt);
 var Xt = function(e, n) {
-    var s = {};
-    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (s[t] = e[t]);
+    var o = {};
+    for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (o[t] = e[t]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var r = 0, t = Object.getOwnPropertySymbols(e); r < t.length; r++) n.indexOf(t[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[r]) && (s[t[r]] = e[t[r]]);
-    return s
+        for (var s = 0, t = Object.getOwnPropertySymbols(e); s < t.length; s++) n.indexOf(t[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[s]) && (o[t[s]] = e[t[s]]);
+    return o
 };
 const Jt = [1, 2, 3, 4, 5],
-    Gt = o.forwardRef((e, n) => {
+    Gt = r.forwardRef((e, n) => {
         const {
-            level: s = 1
-        } = e, t = Xt(e, ["level"]), r = Jt.includes(s) ? `h${s}` : "h1";
-        return o.createElement(Z, Object.assign({
+            level: o = 1,
+            children: t
+        } = e, s = Xt(e, ["level", "children"]), l = Jt.includes(o) ? `h${o}` : "h1";
+        return r.createElement(Z, Object.assign({
             ref: n
-        }, t, {
-            component: r
-        }))
+        }, s, {
+            component: l
+        }), t)
     }),
-    ee = Pe;
+    ee = Le;
 ee.Text = qt;
-ee.Link = Ut;
+ee.Link = Dt;
 ee.Title = Gt;
 ee.Paragraph = Ft;
 export {

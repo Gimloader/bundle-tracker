@@ -3,136 +3,125 @@ import {
     r as l,
     u as Q,
     i as Y,
-    f as j,
+    f as w,
     j as e,
     e as d,
-    d as s,
-    D as $,
-    F as S,
+    b as i,
+    D as P,
+    F as $,
     x as y,
-    a as B,
+    a as R,
     t as X,
-    M as O,
-    S as V,
-    C as F,
-    B as D,
-    aa as Z,
-    Z as J,
-    af as ee,
-    ah as te,
-    l as ie,
+    M as U,
+    S as K,
+    C as I,
+    B,
+    aa as V,
+    Z,
+    af as J,
+    ah as ee,
+    l as te,
     E as se,
-    cm as ne
+    cm as ie
 } from "./_index.js";
 import {
-    E as w
+    E as j
 } from "./Sizes.js";
 import {
-    A as _
+    A as D
 } from "./AccessibleAnchor.js";
 import {
     m as g
 } from "./motion.js";
 import {
-    b as oe
+    b as ne
 } from "./index-1.js";
 import {
-    e as L
+    e as F
 } from "./price.js";
 import {
-    T as ae
+    T as oe
 } from "./TrackPostHogEvent.js";
 import {
-    c as re
+    c as ae
 } from "./index-2.js";
 import {
-    I as le
+    I as re
 } from "./index-3.js";
 import {
-    s as ce
+    s as le
 } from "./index-4.js";
 import {
-    R as de
+    R as ce
 } from "./StarOutlined.js";
-const E = {
-    titleFont: b.FugazOne
-};
-var ue = "Invariant failed";
-
-function C(t, i) {
-    throw new Error(ue)
-}
-var T = new Map([
-        ["Win", "Meta"],
-        ["Scroll", "ScrollLock"],
-        ["Spacebar", " "],
-        ["Down", "ArrowDown"],
-        ["Left", "ArrowLeft"],
-        ["Right", "ArrowRight"],
-        ["Up", "ArrowUp"],
-        ["Del", "Delete"],
-        ["Crsel", "CrSel"],
-        ["Exsel", "ExSel"],
-        ["Apps", "ContextMenu"],
-        ["Esc", "Escape"],
-        ["Decimal", "."],
-        ["Multiply", "*"],
-        ["Add", "+"],
-        ["Subtract", "-"],
-        ["Divide", "/"]
-    ]),
-    he = function(i) {
-        if (T.has(i.key)) {
-            var a = T.get(i.key);
-            Object.defineProperty(i, "key", {
+const k = {
+        titleFont: b.FugazOne
+    },
+    T = {
+        Win: "Meta",
+        Scroll: "ScrollLock",
+        Spacebar: " ",
+        Down: "ArrowDown",
+        Left: "ArrowLeft",
+        Right: "ArrowRight",
+        Up: "ArrowUp",
+        Del: "Delete",
+        Crsel: "CrSel",
+        Exsel: "ExSel",
+        Apps: "ContextMenu",
+        Esc: "Escape",
+        Decimal: ".",
+        Multiply: "*",
+        Add: "+",
+        Subtract: "-",
+        Divide: "/"
+    },
+    de = t => {
+        const s = t.key;
+        if (Object.hasOwn(T, s)) {
+            const o = T[s];
+            Object.defineProperty(t, "key", {
                 configurable: !0,
                 enumerable: !0,
-                get: function() {
-                    return a
-                }
+                get: () => o
             })
         }
     },
-    me = function(i, a) {
-        Array.isArray(i) || typeof i == "string" || C(), Array.isArray(i) && i.forEach(function(n, r) {
-            typeof n != "string" && C()
-        }), typeof a == "function" || a == null || C();
-        var o = l.useRef();
-        l.useEffect(function() {
-            o.current = function(n) {
-                he(n), (Array.isArray(i) ? i.includes(n.key) : i === n.key) && (a == null || a(n))
+    he = (t, s) => {
+        const o = l.useRef();
+        l.useEffect(() => {
+            o.current = n => {
+                de(n), (Array.isArray(t) ? t.includes(n.key) : t === n.key) && (s == null || s(n))
             }
-        }, [i, a]), l.useEffect(function() {
-            var n = function(u) {
-                o.current(u)
+        }, [t, s]), l.useEffect(() => {
+            const n = a => {
+                var r;
+                return (r = o.current) == null ? void 0 : r.call(o, a)
             };
-            return window.addEventListener("keydown", n),
-                function() {
-                    window.removeEventListener("keydown", n)
-                }
+            return window.addEventListener("keydown", n), () => window.removeEventListener("keydown", n)
         }, [])
-    },
-    x = (t => (t.limitedModes = "limitedModes", t.limitedGames = "limitedGames", t))(x || {});
+    };
+var x = (t => (t.limitedModes = "limitedModes", t.limitedGames = "limitedGames", t))(x || {});
 const p = () => "limitedModes",
-    xe = () => 5,
-    A = 350,
-    H = 10,
-    W = A + H,
+    ue = () => 5,
+    S = 350,
+    _ = 10,
+    L = S + _,
     v = .2,
-    fe = t => {
-        const [i, a, o] = Q(!1), n = p(), r = l.useMemo(() => t.isProExperience && !Y() && n === x.limitedModes && !j(), [t.isProExperience, n]);
-        return e.jsxs(ge, {
-            onMouseEnter: a,
-            onMouseLeave: o,
+    me = t => {
+        const [s, o, n] = Q(!1), a = p(), r = l.useMemo(() => t.isProExperience && !Y() && a === x.limitedModes && !w(), [t.isProExperience, a]);
+        return e.jsxs(xe, {
+            onMouseEnter: o,
+            onMouseLeave: n,
             style: {
                 backgroundImage: `url('${t.image}')`,
                 borderColor: t.currentlySelected ? "#fdd835" : d.White
             },
             onClick: t.onSelect,
             className: t.noShadowOnContainer ? "" : "light-shadow",
-            children: [t.forcePremiumBadge || r ? e.jsx(pe, {
+            children: [t.forcePremiumBadge || r ? e.jsx(fe, {
                 animate: {
-                    opacity: i ? 0 : 1
+                    opacity: s ? 0 : 1
                 },
                 initial: {
                     opacity: 1
@@ -140,11 +129,11 @@ const p = () => "limitedModes",
                 transition: {
                     duration: v
                 },
-                children: e.jsx(ye, {})
-            }) : e.jsx("div", {}), e.jsxs(ve, {
-                children: [r ? e.jsx(we, {
+                children: e.jsx(ge, {})
+            }) : e.jsx("div", {}), e.jsxs(pe, {
+                children: [r ? e.jsx(ye, {
                     animate: {
-                        opacity: i ? 0 : 1
+                        opacity: s ? 0 : 1
                     },
                     initial: {
                         opacity: 1
@@ -153,9 +142,9 @@ const p = () => "limitedModes",
                         duration: v
                     },
                     children: "Gimkit Pro Exclusive"
-                }) : null, !r && t.tag ? e.jsx(je, {
+                }) : null, !r && t.tag ? e.jsx(ve, {
                     animate: {
-                        opacity: i ? 0 : 1
+                        opacity: s ? 0 : 1
                     },
                     initial: {
                         opacity: 1
@@ -164,11 +153,11 @@ const p = () => "limitedModes",
                         duration: v
                     },
                     children: t.tag
-                }) : null, e.jsx(be, {
+                }) : null, e.jsx(je, {
                     children: t.name
-                }), e.jsx(Ee, {
+                }), e.jsx(we, {
                     animate: {
-                        height: i ? "auto" : 0
+                        height: s ? "auto" : 0
                     },
                     initial: {
                         height: 0
@@ -181,12 +170,12 @@ const p = () => "limitedModes",
             })]
         })
     },
-    ge = s.div.attrs({
+    xe = i.div.attrs({
         className: "flex flex-column between"
     })`
   border-width: 4px;
   border-style: solid;
-  width: ${A}px;
+  width: ${S}px;
   height: 180px;
   border-radius: 4px;
   background-image: url('');
@@ -197,17 +186,17 @@ const p = () => "limitedModes",
   cursor: pointer;
   transition: border-color 0.3s;
 `,
-    pe = s(g.div).attrs({
+    fe = i(g.div).attrs({
         className: "maxWidth"
     })`
   padding: 10px 15px;
 `,
-    ye = s.img.attrs({
+    ge = i.img.attrs({
         src: "/client/img/pro/star.svg"
     })`
   height: 20px;
 `,
-    ve = s.div.attrs({
+    pe = i.div.attrs({
         className: "maxWidth flex-column"
     })`
   padding: 10px 15px;
@@ -233,16 +222,16 @@ const p = () => "limitedModes",
   overflow: hidden;
   align-items: flex-start;
 `,
-    we = s(g.div)`
-  font-family: ${E.titleFont};
+    ye = i(g.div)`
+  font-family: ${k.titleFont};
   text-transform: uppercase;
   font-size: 12px;
   margin-bottom: -2px;
   text-shadow: 1px 1px 1px ${d.Black};
   color: ${d.White};
 `,
-    je = s(g.div)`
-  font-family: ${E.titleFont};
+    ve = i(g.div)`
+  font-family: ${k.titleFont};
   text-transform: uppercase;
   background: rgba(255, 87, 34, 0.8);
   padding: 7px 10px;
@@ -251,14 +240,14 @@ const p = () => "limitedModes",
   border-radius: 10px;
   margin-bottom: 4px;
 `,
-    be = s.div`
-  font-family: ${E.titleFont};
+    je = i.div`
+  font-family: ${k.titleFont};
   text-transform: uppercase;
   font-size: 22px;
   text-shadow: 2px 2px 2px ${d.Black};
   color: ${d.White};
 `,
-    Ee = s(g.div)`
+    we = i(g.div)`
   font-size: 14px;
   text-shadow: 1px 1px 1px ${d.Black};
   color: rgba(255, 255, 255, 0.95);
@@ -266,38 +255,38 @@ const p = () => "limitedModes",
   overflow: hidden;
   font-family: ${b.ProductSans};
 `,
-    ke = t => {
-        const [i, a] = l.useState(0), o = l.useRef(!1), n = l.useRef(null), [r] = oe(n), u = l.useMemo(() => t.verticalList ? 0 : i * W * -1 + w.sideMargin, [i, t.verticalList]), c = l.useMemo(() => !(i <= 0), [i]), f = () => {
-            o.current = !0
+    be = t => {
+        const [s, o] = l.useState(0), n = l.useRef(!1), a = l.useRef(null), [r] = ne(a), u = l.useMemo(() => t.verticalList ? 0 : s * L * -1 + j.sideMargin, [s, t.verticalList]), c = l.useMemo(() => !(s <= 0), [s]), f = () => {
+            n.current = !0
         }, m = () => {
-            o.current = !1
+            n.current = !1
         };
-        me(["ArrowLeft", "ArrowRight"], h => {
-            o.current && (h.key === "ArrowLeft" && N(), h.key === "ArrowRight" && I())
+        he(["ArrowLeft", "ArrowRight"], h => {
+            n.current && (h.key === "ArrowLeft" && N(), h.key === "ArrowRight" && A())
         });
         const M = l.useMemo(() => {
-                if (i + 1 === t.list.items.length) return !1;
-                const h = (r - w.sideMargin) / W;
-                return !(i >= t.list.items.length - h)
-            }, [r, i, t.list.items.length]),
+                if (s + 1 === t.list.items.length) return !1;
+                const h = (r - j.sideMargin) / L;
+                return !(s >= t.list.items.length - h)
+            }, [r, s, t.list.items.length]),
             N = () => {
-                c && a(Math.max(0, i - 1))
+                c && o(Math.max(0, s - 1))
             },
-            I = () => {
-                M && a(i + 1)
+            A = () => {
+                M && o(s + 1)
             };
-        return e.jsxs(Me, {
+        return e.jsxs(ke, {
             onMouseEnter: f,
             onMouseLeave: m,
-            children: [t.hideListName ? null : e.jsx(Ce, {
+            children: [t.hideListName ? null : e.jsx(Ee, {
                 children: t.list.name
-            }), e.jsxs(Pe, {
-                children: [e.jsx($e, {
+            }), e.jsxs(Me, {
+                children: [e.jsx(Ce, {
                     animate: {
                         x: u
                     },
                     initial: {
-                        x: t.verticalList ? 0 : w.sideMargin
+                        x: t.verticalList ? 0 : j.sideMargin
                     },
                     transition: {
                         duration: .3,
@@ -305,15 +294,15 @@ const p = () => "limitedModes",
                     },
                     style: t.verticalList ? {
                         display: "grid",
-                        gridTemplateColumns: `repeat(auto-fill, ${A}px)`,
+                        gridTemplateColumns: `repeat(auto-fill, ${S}px)`,
                         justifyContent: "center",
                         gap: 20,
                         margin: "0px 25px"
                     } : {
-                        gap: H
+                        gap: _
                     },
-                    ref: n,
-                    children: t.list.items.map(h => e.jsx(fe, {
+                    ref: a,
+                    children: t.list.items.map(h => e.jsx(me, {
                         name: h.name,
                         tagline: h.tagline,
                         image: h.imageUrl,
@@ -324,8 +313,8 @@ const p = () => "limitedModes",
                         forcePremiumBadge: t.forcePremiumBadge,
                         tag: h.tag
                     }, `list-${t.list._id}-${h._id}`))
-                }), t.verticalList ? null : e.jsxs(Se, {
-                    children: [e.jsx(Ae, {
+                }), t.verticalList ? null : e.jsxs(Pe, {
+                    children: [e.jsx($e, {
                         animate: {
                             opacity: c ? 1 : 0
                         },
@@ -333,7 +322,7 @@ const p = () => "limitedModes",
                             opacity: 0
                         },
                         onClick: N,
-                        children: e.jsx(z, {
+                        children: e.jsx(W, {
                             style: {
                                 cursor: c ? "pointer" : "auto"
                             },
@@ -341,15 +330,15 @@ const p = () => "limitedModes",
                                 className: "fas fa-chevron-left"
                             })
                         })
-                    }), e.jsx(Ne, {
+                    }), e.jsx(Se, {
                         animate: {
                             opacity: M ? 1 : 0
                         },
                         initial: {
                             opacity: 0
                         },
-                        onClick: I,
-                        children: e.jsx(z, {
+                        onClick: A,
+                        children: e.jsx(W, {
                             style: {
                                 cursor: M ? "pointer" : "auto"
                             },
@@ -362,27 +351,27 @@ const p = () => "limitedModes",
             })]
         })
     },
-    Me = s.div.attrs({
+    ke = i.div.attrs({
         className: "maxWidth"
     })``,
-    Ce = s.div`
-  font-family: ${E.titleFont};
+    Ee = i.div`
+  font-family: ${k.titleFont};
   text-align: center;
   margin-bottom: 15px;
   text-transform: uppercase;
   font-size: 26px;
   color: rgba(255, 255, 255, 0.9);
 `,
-    Pe = s.div.attrs({
+    Me = i.div.attrs({
         className: "maxWidth"
     })`
   position: relative;
   overflow: hidden;
 `,
-    $e = s(g.div).attrs({
+    Ce = i(g.div).attrs({
         className: "flex"
     })``,
-    Se = s.div.attrs({
+    Pe = i.div.attrs({
         className: "maxAll flex vc between"
     })`
   position: absolute;
@@ -390,14 +379,14 @@ const p = () => "limitedModes",
   left: 0;
   pointer-events: none;
 `,
-    q = s(g.div).attrs({
+    H = i(g.div).attrs({
         className: "flex-center maxHeight"
     })`
   width: 60px;
   line-height: 1;
   color: ${d.White};
 `,
-    Ae = s(q)`
+    $e = i(H)`
   background: linear-gradient(
     to right,
     hsla(0, 0%, 0%, 0.61) 0%,
@@ -418,7 +407,7 @@ const p = () => "limitedModes",
     hsla(0, 0%, 0%, 0) 100%
   );
 `,
-    Ne = s(q)`
+    Se = i(H)`
   background: linear-gradient(
     to left,
     hsla(0, 0%, 0%, 0.61) 0%,
@@ -439,7 +428,7 @@ const p = () => "limitedModes",
     hsla(0, 0%, 0%, 0) 100%
   );
 `,
-    z = s.div.attrs({
+    W = i.div.attrs({
         className: "flex-center"
     })`
   font-size: 32px;
@@ -450,7 +439,7 @@ const p = () => "limitedModes",
     transform: scale(1.1);
   }
 `,
-    Ie = [{
+    Ne = [{
         question: "What happens if I pay now and my school pays later?",
         answer: e.jsxs("span", {
             children: ["If your school purchases a group license and you've already purchased Gimkit Pro, you’ll get refunded for your unused time.", " ", e.jsx("b", {
@@ -472,27 +461,27 @@ const p = () => "limitedModes",
             })]
         })
     }],
-    Fe = () => e.jsxs(e.Fragment, {
-        children: [e.jsx($, {
+    Ae = () => e.jsxs(e.Fragment, {
+        children: [e.jsx(P, {
             style: {
                 margin: "26px 0px"
             }
-        }), e.jsx(Le, {
-            children: Ie.map(t => e.jsxs(Te, {
-                children: [e.jsx(We, {
+        }), e.jsx(Ie, {
+            children: Ne.map(t => e.jsxs(Fe, {
+                children: [e.jsx(Te, {
                     children: t.question
-                }), e.jsx(ze, {
+                }), e.jsx(Le, {
                     children: t.answer
                 })]
             }, t.question))
         })]
     }),
-    Le = s.div.attrs({
+    Ie = i.div.attrs({
         className: "maxWidth"
     })`
-  padding: 0px ${()=>k}px;
+  padding: 0px ${()=>E}px;
 `,
-    Te = s.div`
+    Fe = i.div`
   margin-bottom: 15px;
   background: ${d.White};
   padding: 30px;
@@ -504,27 +493,27 @@ const p = () => "limitedModes",
     margin-bottom: 0px;
   }
 `,
-    We = s.div`
+    Te = i.div`
   font-size: 21px;
-  font-weight: ${S.Bold};
+  font-weight: ${$.Bold};
 `,
-    ze = s.div`
+    Le = i.div`
   font-size: 16px;
   margin-top: 5px;
 `,
-    Re = t => {
-        const [i, a] = y.useState(!0), [o, n] = y.useState(null), [r, u] = y.useState(null), c = () => `${Z()}/pay-for-me/${r}`, f = () => {
-            re(c()), ce.success("Pay For Me link copied to clipboard!")
+    We = t => {
+        const [s, o] = y.useState(!0), [n, a] = y.useState(null), [r, u] = y.useState(null), c = () => `${V()}/pay-for-me/${r}`, f = () => {
+            ae(c()), le.success("Pay For Me link copied to clipboard!")
         };
         return y.useEffect(() => {
-            B({
+            R({
                 method: "GET",
                 url: "/api/billing/pay-for-me-link",
                 success: m => {
                     u(m)
                 },
                 error: m => {
-                    n(m), X({
+                    a(m), X({
                         e: m,
                         default: {
                             title: "Error connecting to our server",
@@ -532,9 +521,9 @@ const p = () => "limitedModes",
                         }
                     })
                 },
-                both: () => a(!1)
+                both: () => o(!1)
             })
-        }, []), e.jsx(O, {
+        }, []), e.jsx(U, {
             open: t.showPayForMeModal,
             onCancel: t.onCancel,
             footer: null,
@@ -543,33 +532,33 @@ const p = () => "limitedModes",
             bodyStyle: {
                 padding: 0
             },
-            children: i ? e.jsx("div", {
+            children: s ? e.jsx("div", {
                 style: {
                     height: 361
                 },
                 className: "flex maxWidth maxHeight hc vc",
-                children: e.jsx(V, {
+                children: e.jsx(K, {
                     size: "large"
                 })
-            }) : e.jsxs(Ge, {
-                children: [e.jsx(Oe, {
+            }) : e.jsxs(ze, {
+                children: [e.jsx(Re, {
                     onClick: t.onCancel
-                }), e.jsxs(Ue, {
+                }), e.jsxs(Ge, {
                     children: [e.jsx("span", {
                         style: {
-                            fontWeight: S.UltraBold
+                            fontWeight: $.UltraBold
                         },
                         children: "Pay For Me"
                     }), " ", "link"]
-                }), e.jsxs(Be, {
-                    children: ["Send this link to someone to allow them to pay for your", " ", F, " Pro subscription. Once they pay, you'll get one full year of ", F, " Pro and we'll make sure autorenew is off so they aren't charged again.", e.jsx("br", {}), " ", e.jsx("br", {}), "One more thing: once they pay for your subscription, we'll send you an email letting you know!"]
-                }), e.jsx($, {}), !o && e.jsxs("div", {
+                }), e.jsxs(Oe, {
+                    children: ["Send this link to someone to allow them to pay for your", " ", I, " Pro subscription. Once they pay, you'll get one full year of ", I, " Pro and we'll make sure autorenew is off so they aren't charged again.", e.jsx("br", {}), " ", e.jsx("br", {}), "One more thing: once they pay for your subscription, we'll send you an email letting you know!"]
+                }), e.jsx(P, {}), !n && e.jsxs("div", {
                     className: "flex",
-                    children: [e.jsx(le, {
+                    children: [e.jsx(re, {
                         value: c(),
                         size: "large",
                         readOnly: !0
-                    }), e.jsx(D, {
+                    }), e.jsx(B, {
                         size: "large",
                         type: "primary",
                         style: {
@@ -582,21 +571,21 @@ const p = () => "limitedModes",
             })
         })
     },
-    Ge = s.div.attrs({
+    ze = i.div.attrs({
         className: "maxWidth"
     })`
   color: ${d.Black};
   font-family: ${b.SFPro};
   padding: 30px;
 `,
-    Ue = s.div`
+    Ge = i.div`
   font-size: 32px;
 `,
-    Be = s.div`
+    Oe = i.div`
   font-size: 17px;
   margin-top: 14px;
 `,
-    Oe = s.i.attrs({
+    Re = i.i.attrs({
         className: "fal fa-times"
     })`
   position: absolute;
@@ -610,72 +599,72 @@ const p = () => "limitedModes",
     opacity: 1;
   }
 `,
-    De = t => {
-        const [i, a] = l.useState(!1), [o, n] = l.useState(!1), r = () => a(!0);
+    Ue = t => {
+        const [s, o] = l.useState(!1), [n, a] = l.useState(!1), r = () => o(!0);
         return e.jsxs("div", {
             className: "flex flex-column vc",
             style: {
                 marginTop: t.showingModes ? 25 : 20,
                 paddingBottom: 30
             },
-            children: [e.jsx(_, {
-                to: J,
-                children: e.jsx(D, {
+            children: [e.jsx(D, {
+                to: Z,
+                children: e.jsx(B, {
                     type: "primary",
                     size: "large",
-                    icon: e.jsx(de, {}),
+                    icon: e.jsx(ce, {}),
                     style: {
                         width: 380,
                         height: 70
                     },
-                    children: j() ? "Upgrade to Gimkit Pro early" : "Upgrade to Gimkit Pro"
+                    children: w() ? "Upgrade to Gimkit Pro early" : "Upgrade to Gimkit Pro"
                 })
-            }), null, e.jsx($, {
+            }), null, e.jsx(P, {
                 style: {
                     margin: "26px 0px"
                 }
             }), e.jsxs("div", {
                 className: "flex vc",
-                children: [e.jsx(P, {
-                    to: ee,
+                children: [e.jsx(C, {
+                    to: J,
                     children: "Group license pricing"
-                }), e.jsx(R, {}), e.jsx(P, {
-                    onClick: () => n(!0),
+                }), e.jsx(z, {}), e.jsx(C, {
+                    onClick: () => a(!0),
                     children: "Pay For Me Link"
-                }), !i && e.jsxs(e.Fragment, {
-                    children: [e.jsx(R, {}), e.jsx(P, {
+                }), !s && e.jsxs(e.Fragment, {
+                    children: [e.jsx(z, {}), e.jsx(C, {
                         onClick: r,
                         children: "FAQ"
                     })]
                 })]
-            }), i && e.jsx(Fe, {}), e.jsx(Re, {
-                showPayForMeModal: o,
-                onCancel: () => n(!1)
+            }), s && e.jsx(Ae, {}), e.jsx(We, {
+                showPayForMeModal: n,
+                onCancel: () => a(!1)
             })]
         })
     };
-s.div`
+i.div`
   font-size: 14px;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 12px;
 `;
-const P = s(_)`
+const C = i(D)`
   font-size: 16px;
   display: block;
   color: ${d.Black};
   text-decoration: underline;
 `,
-    R = s.i.attrs({
+    z = i.i.attrs({
         className: "fas fa-circle"
     })`
   margin: 0px 12px;
   font-size: 10px;
 `,
-    K = 180,
-    _e = t => {
+    q = 180,
+    Be = t => {
         const {
-            copy: i
-        } = t, a = () => i && i.title ? i.title : j() ? e.jsx(e.Fragment, {
+            copy: s
+        } = t, o = () => s && s.title ? s.title : w() ? e.jsx(e.Fragment, {
             children: "Your trial ends soon."
         }) : p() === x.limitedGames ? e.jsx(e.Fragment, {
             children: "Upgrade to host unlimited games"
@@ -684,48 +673,48 @@ const P = s(_)`
                 fontSize: 40,
                 marginTop: 30
             },
-            children: ["Get all game modes for ", L({
+            children: ["Get all game modes for ", F({
                 simple: !0
             }), " a month."]
-        }), o = () => {
-            if (i && i.description) return i.description;
-            const n = p(),
-                r = n === x.limitedModes ? "a few game modes that rotate every few weeks" : `host ${xe()} games per month`;
+        }), n = () => {
+            if (s && s.description) return s.description;
+            const a = p(),
+                r = a === x.limitedModes ? "a few game modes that rotate every few weeks" : `host ${ue()} games per month`;
             return e.jsxs("div", {
                 className: "maxWidth",
                 style: {
                     textAlign: "left"
                 },
-                children: [j() ? `After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${r}.` : `You're on the free version of Gimkit, which limits you to ${r}.`, e.jsx("br", {}), " ", e.jsx("br", {}), n === x.limitedModes ? "Want access to every single mode?" : "Want to host unlimited games?", " ", "Upgrade to Gimkit Pro! It’s just", " ", L({
+                children: [w() ? `After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${r}.` : `You're on the free version of Gimkit, which limits you to ${r}.`, e.jsx("br", {}), " ", e.jsx("br", {}), a === x.limitedModes ? "Want access to every single mode?" : "Want to host unlimited games?", " ", "Upgrade to Gimkit Pro! It’s just", " ", F({
                     simple: !0
-                }), " a month and you’ll be helping support us, an independent small business.", n === x.limitedModes ? e.jsxs(e.Fragment, {
+                }), " a month and you’ll be helping support us, an independent small business.", a === x.limitedModes ? e.jsxs(e.Fragment, {
                     children: [e.jsx("br", {}), " ", e.jsx("br", {}), "Upgrade to get access to these game modes and more:"]
                 }) : null]
             })
         };
-        return e.jsxs(He, {
+        return e.jsxs(De, {
             background: t.showingModes ? "#0A2540" : "transparent",
             color: t.showingModes ? d.White : d.Black,
-            bottomPadding: t.showingModes ? K : 0,
+            bottomPadding: t.showingModes ? q : 0,
             maskImage: !!t.showingModes,
-            children: [e.jsx(qe, {
+            children: [e.jsx(_e, {
                 onClick: t.close
-            }), e.jsxs(Ke, {
-                children: [e.jsx(Qe, {
-                    children: a()
-                }), e.jsx(Ye, {
+            }), e.jsxs(He, {
+                children: [e.jsx(qe, {
+                    children: o()
+                }), e.jsx(Qe, {
                     style: {
                         marginTop: t.showingModes ? 10 : 5
                     },
-                    children: o()
+                    children: n()
                 })]
             })]
         })
     },
-    He = s.div.attrs({
+    De = i.div.attrs({
         className: "maxWidth flex flex-column vc"
     })`
-  padding: ${()=>k}px 0px;
+  padding: ${()=>E}px 0px;
   padding-top: 30px;
   background: ${t=>t.background};
   color: ${t=>t.color};
@@ -736,13 +725,13 @@ const P = s(_)`
     ${t.background} 50%,
     transparent 100%);`:""}
 `,
-    qe = s.i.attrs({
+    _e = i.i.attrs({
         className: "fal fa-times"
     })`
   position: absolute;
   font-size: 24px;
   top: 25px;
-  right: ${()=>k}px;
+  right: ${()=>E}px;
   opacity: 0.8;
   transition: opacity 0.3s;
   cursor: pointer;
@@ -750,50 +739,50 @@ const P = s(_)`
     opacity: 1;
   }
 `,
-    Ke = s.div.attrs({
+    He = i.div.attrs({
         className: "maxWidth"
     })`
-  padding: 0px ${()=>k}px;
+  padding: 0px ${()=>E}px;
 `,
-    Qe = s.div`
+    qe = i.div`
   font-size: 42px;
-  font-weight: ${S.UltraBold};
+  font-weight: ${$.UltraBold};
 `,
-    Ye = s.div`
+    Qe = i.div`
   font-size: 20px;
 `,
     G = {
         Classic: 1
     },
-    Xe = () => {
-        const [t, i] = l.useState([]);
+    Ye = () => {
+        const [t, s] = l.useState([]);
         return l.useEffect(() => {
-            B({
+            R({
                 url: "/api/experiences",
                 data: {
                     mode: "liveGame"
                 },
                 cacheKey: "EXPERIENCES",
-                success: a => {
-                    let o = [];
-                    const n = [],
-                        r = a.every(u => u.items.every(c => !c.isPremiumExperience));
-                    a.forEach(u => {
+                success: o => {
+                    let n = [];
+                    const a = [],
+                        r = o.every(u => u.items.every(c => !c.isPremiumExperience));
+                    o.forEach(u => {
                         u.items.forEach(c => {
-                            (c.isPremiumExperience || r) && (n.includes(c._id) || (o.push({
+                            (c.isPremiumExperience || r) && (a.includes(c._id) || (n.push({
                                 ...c,
                                 isPremiumExperience: !0
-                            }), n.push(c._id)))
+                            }), a.push(c._id)))
                         })
                     }), Object.keys(G).forEach(u => {
                         const c = G[u],
-                            f = o.find(m => m.name === u);
-                        f && (o = o.filter(m => m.name !== u), o.splice(c, 0, f))
-                    }), i(o)
+                            f = n.find(m => m.name === u);
+                        f && (n = n.filter(m => m.name !== u), n.splice(c, 0, f))
+                    }), s(n)
                 }
             })
-        }, []), t.length ? e.jsx(U, {
-            children: e.jsx(ke, {
+        }, []), t.length ? e.jsx(O, {
+            children: e.jsx(be, {
                 list: {
                     _id: "_",
                     name: "_",
@@ -804,7 +793,7 @@ const P = s(_)`
                 forceAllSelected: !0,
                 forcePremiumBadge: !0
             })
-        }) : e.jsx(U, {
+        }) : e.jsx(O, {
             children: e.jsx("div", {
                 style: {
                     height: 180
@@ -812,31 +801,31 @@ const P = s(_)`
             })
         })
     },
-    U = s.div.attrs({
+    O = i.div.attrs({
         className: "maxWidth"
     })`
-  margin-top: ${()=>-K+25}px;
+  margin-top: ${()=>-q+25}px;
 `,
-    k = w.sideMargin,
-    ct = t => {
+    E = j.sideMargin,
+    rt = t => {
         l.useEffect(() => {
-            t.visible && t.showModes && te("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap")
+            t.visible && t.showModes && ee("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap")
         }, [t.visible, t.showModes]), l.useEffect(() => {
-            t.visible && ae({
+            t.visible && oe({
                 properties: {
                     reason: t.id
                 }
             })
         }, [t.visible, t.id]);
-        const i = ie();
-        if (!i) return null;
-        const a = p(),
-            o = t.showModes && a === x.limitedModes;
+        const s = te();
+        if (!s) return null;
+        const o = p(),
+            n = t.showModes && o === x.limitedModes;
         return e.jsx(se, {
             theme: {
-                algorithm: ne.defaultAlgorithm
+                algorithm: ie.defaultAlgorithm
             },
-            children: e.jsx(O, {
+            children: e.jsx(U, {
                 footer: null,
                 width: 850,
                 style: {
@@ -856,33 +845,25 @@ const P = s(_)`
                 open: t.visible,
                 onCancel: t.close,
                 closable: !1,
-                children: e.jsxs(Ve, {
-                    children: [e.jsx(_e, {
-                        user: i,
+                children: e.jsxs(Xe, {
+                    children: [e.jsx(Be, {
+                        user: s,
                         close: t.close,
                         copy: t.copy,
-                        showingModes: o
-                    }), o ? e.jsx(Xe, {}) : null, e.jsx(De, {
-                        showingModes: o
+                        showingModes: n
+                    }), n ? e.jsx(Ye, {}) : null, e.jsx(Ue, {
+                        showingModes: n
                     })]
                 })
             })
         })
     },
-    Ve = s.div.attrs({
+    Xe = i.div.attrs({
         className: "maxWidth"
     })`
   color: ${d.Black};
   font-family: ${b.SFPro};
 `;
 export {
-    E,
-    x as F,
-    _e as T,
-    ct as U,
-    xe as a,
-    ke as b,
-    p as g,
-    C as i,
-    me as u
+    k as E, x as F, Be as T, rt as U, ue as a, be as b, p as g, he as u
 };

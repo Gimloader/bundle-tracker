@@ -1,14 +1,14 @@
 import {
     r as p,
     j as r,
-    d as j,
+    b as j,
     F as I,
     e as A,
     U as W,
     D as N
 } from "./_index.js";
 import {
-    o as b
+    o as $
 } from "./mobxreact.esm.js";
 import {
     C as O
@@ -35,7 +35,7 @@ import {
     a as _,
     o as Y,
     q as B,
-    s as $
+    s as b
 } from "./App-41.js";
 import {
     D as q
@@ -76,11 +76,11 @@ import "./MapModeType.js";
 import "./MapStyle.js";
 import "./playSound.js";
 import "./howler.js";
-import "./index-21.js";
+import "./index-22.js";
 import "./QuizTypes.js";
 import "./ActionButton.js";
 import "./index-5.js";
-import "./index-18.js";
+import "./index-19.js";
 import "./context.js";
 import "./index-4.js";
 import "./motion.js";
@@ -90,8 +90,8 @@ import "./ElementIds.js";
 import "./SeasonTicketName.js";
 import "./useQuery.js";
 import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
+import "./util.js";
+import "./index-17.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
@@ -101,7 +101,7 @@ import "./index-6.js";
 import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
-import "./index-17.js";
+import "./index-18.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
 import "./Text.js";
@@ -110,7 +110,7 @@ import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
 import "./index-1.js";
 import "./index-9.js";
-import "./index-23.js";
+import "./index-24.js";
 import "./useIntervalWhen.js";
 import "./index-10.js";
 import "./move.js";
@@ -121,9 +121,9 @@ import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./index-3.js";
 import "./FillRemainingSpace.js";
-import "./index-24.js";
-import "./index-20.js";
-import "./index-22.js";
+import "./index-25.js";
+import "./index-21.js";
+import "./index-23.js";
 import "./DownOutlined.js";
 import "./EditOutlined.js";
 import "./styleChecker.js";
@@ -177,7 +177,7 @@ const re = () => {
     },
     C = 99,
     R = 100,
-    oe = b(() => {
+    oe = $(() => {
         const {
             me: {
                 removing: t
@@ -330,14 +330,14 @@ const re = () => {
         className: "maxAll"
     })``,
     le = j.div``,
-    Ir = b(() => {
+    Ir = $(() => {
         const t = te(),
             i = () => {
-                $(E.none)
+                b(E.none)
             };
         p.useEffect(() => {
             const o = U(K.Removing.SwitchToAddingMode(), () => {
-                h.me.adding.mode = D.terrain, $(E.adding)
+                h.me.adding.mode = D.terrain, b(E.adding)
             });
             return () => {
                 o()

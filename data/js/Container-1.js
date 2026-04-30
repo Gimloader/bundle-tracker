@@ -1,10 +1,10 @@
 const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/SchoolLibrary.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/KitPreview.js", "assets/ImagePreview.js", "assets/getCloudinaryUrl.js", "assets/AccessibleAnchor.js", "assets/NavigateTo.js", "assets/index.es.js"]))) => i.map(i => d[i]);
 import {
+    m as ke,
+    o as Se,
     r as l,
     I as dt,
     _ as ut,
-    m as ke,
-    o as Se,
     u as k,
     j as e,
     S as le,
@@ -12,10 +12,10 @@ import {
     D as Ce,
     a as v,
     t as _,
-    d as a,
+    b as a,
     C as ce,
     F as T,
-    b as p,
+    d as p,
     c as K,
     e as h,
     i as w,
@@ -232,7 +232,33 @@ import "./index-15.js";
 import "./colors.js";
 import "./useWarningOnMountInDevelopment.js";
 import "./Names.js";
-var ms = {
+var ms = Object.defineProperty,
+    fs = (t, s, r, o) => {
+        for (var n = void 0, i = t.length - 1, c; i >= 0; i--)(c = t[i]) && (n = c(s, r, n) || n);
+        return n && ms(s, r, n), n
+    };
+class Oe {
+    constructor() {
+        this.archiveModalShow = !1, ke(this)
+    }
+}
+fs([Se], Oe.prototype, "archiveModalShow");
+var xs = Object.defineProperty,
+    gs = (t, s, r, o) => {
+        for (var n = void 0, i = t.length - 1, c; i >= 0; i--)(c = t[i]) && (n = c(s, r, n) || n);
+        return n && xs(s, r, n), n
+    };
+let Be = class {
+    constructor() {
+        this.kitAttemptedAction = "open", ke(this)
+    }
+};
+gs([Se], Be.prototype, "kitAttemptedAction");
+const se = {
+    navigation: new Oe,
+    kits: new Be
+};
+var ps = {
         icon: {
             tag: "svg",
             attrs: {
@@ -249,40 +275,14 @@ var ms = {
         name: "fullscreen",
         theme: "outlined"
     },
-    fs = function(s, r) {
+    js = function(s, r) {
         return l.createElement(dt, ut({}, s, {
             ref: r,
-            icon: ms
+            icon: ps
         }))
     },
-    xs = l.forwardRef(fs),
-    gs = Object.defineProperty,
-    ps = (t, s, r, o) => {
-        for (var n = void 0, i = t.length - 1, c; i >= 0; i--)(c = t[i]) && (n = c(s, r, n) || n);
-        return n && gs(s, r, n), n
-    };
-class Oe {
-    constructor() {
-        this.archiveModalShow = !1, ke(this)
-    }
-}
-ps([Se], Oe.prototype, "archiveModalShow");
-var js = Object.defineProperty,
-    ys = (t, s, r, o) => {
-        for (var n = void 0, i = t.length - 1, c; i >= 0; i--)(c = t[i]) && (n = c(s, r, n) || n);
-        return n && js(s, r, n), n
-    };
-let Be = class {
-    constructor() {
-        this.kitAttemptedAction = "open", ke(this)
-    }
-};
-ys([Se], Be.prototype, "kitAttemptedAction");
-const se = {
-        navigation: new Oe,
-        kits: new Be
-    },
-    Ue = l.createContext(se),
+    ys = l.forwardRef(js);
+const Ue = l.createContext(se),
     bs = t => {
         const {
             data: {
@@ -606,7 +606,7 @@ const se = {
             return e.jsxs(N, {
                 children: [e.jsxs(N.Item, {
                     onClick: V,
-                    children: [e.jsx(xs, {
+                    children: [e.jsx(ys, {
                         style: {
                             marginRight: A
                         }

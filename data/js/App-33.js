@@ -1,5 +1,5 @@
 import {
-    d as s,
+    b as s,
     e as y,
     U as A,
     F as L,
@@ -12,9 +12,9 @@ import {
     T as I,
     D as R,
     S as D,
-    t as l,
     C as n,
-    B as j
+    B as j,
+    t as l
 } from "./_index.js";
 import {
     l as _
@@ -73,7 +73,7 @@ const V = s.div.attrs({
         const {
             checkout: p
         } = r.useContext(B);
-        let [g, v] = r.useState(!1), [f, a] = r.useState(!0), [i, S] = r.useState(""), [T, b] = r.useState(""), [C, F] = r.useState(!1), [h, k] = r.useState(null);
+        let [g, v] = r.useState(!1), [f, a] = r.useState(!0), [i, S] = r.useState(""), [b, T] = r.useState(""), [C, F] = r.useState(!1), [h, k] = r.useState(null);
         const {
             id: m
         } = W();
@@ -101,7 +101,7 @@ const V = s.div.attrs({
                     url: `/api/billing/pay-for-me-info/${m}`,
                     method: "GET",
                     success: t => {
-                        v(t.isUpgraded), S(t.firstName), b(t.lastName), k(t.receiptUrl)
+                        v(t.isUpgraded), S(t.firstName), T(t.lastName), k(t.receiptUrl)
                     },
                     error: t => l({
                         e: t,
@@ -197,7 +197,7 @@ const V = s.div.attrs({
                     children: [e.jsxs(o.TopHeader, {
                         children: ["Purchase ", n, " Pro for"]
                     }), e.jsxs(o.Title, {
-                        children: [i, " ", T]
+                        children: [i, " ", b]
                     }), e.jsxs(o.Description, {
                         children: ["Make a one-time $59.88 payment for ", i, " to receive one year of ", n, " Pro. Auto-renew is off, which means you will only be charged once."]
                     }), e.jsx("div", {

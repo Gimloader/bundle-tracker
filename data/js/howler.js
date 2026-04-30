@@ -14,7 +14,7 @@ var I = {};
 var F;
 
 function G() {
-    return F || (F = 1, function(O) {
+    return F || (F = 1, (function(O) {
         (function() {
             var g = function() {
                 this.init()
@@ -814,7 +814,7 @@ function G() {
                 if (_ = typeof _ != "number" ? s[1] : _, i = typeof i != "number" ? s[2] : i, c = typeof c != "number" ? s[3] : c, d = typeof d != "number" ? s[4] : d, h = typeof h != "number" ? s[5] : h, typeof r == "number") p._orientation = [r, _, i, c, d, h], typeof p.ctx.listener.forwardX < "u" ? (p.ctx.listener.forwardX.setTargetAtTime(r, Howler.ctx.currentTime, .1), p.ctx.listener.forwardY.setTargetAtTime(_, Howler.ctx.currentTime, .1), p.ctx.listener.forwardZ.setTargetAtTime(i, Howler.ctx.currentTime, .1), p.ctx.listener.upX.setTargetAtTime(c, Howler.ctx.currentTime, .1), p.ctx.listener.upY.setTargetAtTime(d, Howler.ctx.currentTime, .1), p.ctx.listener.upZ.setTargetAtTime(h, Howler.ctx.currentTime, .1)) : p.ctx.listener.setOrientation(r, _, i, c, d, h);
                 else return s;
                 return p
-            }, Howl.prototype.init = function(r) {
+            }, Howl.prototype.init = (function(r) {
                 return function(_) {
                     var i = this;
                     return i._orientation = _.orientation || [1, 0, 0], i._stereo = _.stereo || null, i._pos = _.pos || null, i._pannerAttr = {
@@ -834,7 +834,7 @@ function G() {
                         fn: _.onorientation
                     }] : [], r.call(this, _)
                 }
-            }(Howl.prototype.init), Howl.prototype.stereo = function(r, _) {
+            })(Howl.prototype.init), Howl.prototype.stereo = function(r, _) {
                 var i = this;
                 if (!i._webAudio) return i;
                 if (i._state !== "loaded") return i._queue.push({
@@ -936,24 +936,24 @@ function G() {
                         var A = d._panner;
                         A || (d._pos || (d._pos = r._pos || [0, 0, -.5]), g(d, "spatial"), A = d._panner), A.coneInnerAngle = s.coneInnerAngle, A.coneOuterAngle = s.coneOuterAngle, A.coneOuterGain = s.coneOuterGain, A.distanceModel = s.distanceModel, A.maxDistance = s.maxDistance, A.refDistance = s.refDistance, A.rolloffFactor = s.rolloffFactor, A.panningModel = s.panningModel
                     } return r
-            }, Sound.prototype.init = function(r) {
+            }, Sound.prototype.init = (function(r) {
                 return function() {
                     var _ = this,
                         i = _._parent;
                     _._orientation = i._orientation, _._stereo = i._stereo, _._pos = i._pos, _._pannerAttr = i._pannerAttr, r.call(this), _._stereo ? i.stereo(_._stereo) : _._pos && i.pos(_._pos[0], _._pos[1], _._pos[2], _._id)
                 }
-            }(Sound.prototype.init), Sound.prototype.reset = function(r) {
+            })(Sound.prototype.init), Sound.prototype.reset = (function(r) {
                 return function() {
                     var _ = this,
                         i = _._parent;
                     return _._orientation = i._orientation, _._stereo = i._stereo, _._pos = i._pos, _._pannerAttr = i._pannerAttr, _._stereo ? i.stereo(_._stereo) : _._pos ? i.pos(_._pos[0], _._pos[1], _._pos[2], _._id) : _._panner && (_._panner.disconnect(0), _._panner = void 0, i._refreshBuffer(_)), r.call(this)
                 }
-            }(Sound.prototype.reset);
+            })(Sound.prototype.reset);
             var g = function(r, _) {
                 _ = _ || "spatial", _ === "spatial" ? (r._panner = Howler.ctx.createPanner(), r._panner.coneInnerAngle = r._pannerAttr.coneInnerAngle, r._panner.coneOuterAngle = r._pannerAttr.coneOuterAngle, r._panner.coneOuterGain = r._pannerAttr.coneOuterGain, r._panner.distanceModel = r._pannerAttr.distanceModel, r._panner.maxDistance = r._pannerAttr.maxDistance, r._panner.refDistance = r._pannerAttr.refDistance, r._panner.rolloffFactor = r._pannerAttr.rolloffFactor, r._panner.panningModel = r._pannerAttr.panningModel, typeof r._panner.positionX < "u" ? (r._panner.positionX.setValueAtTime(r._pos[0], Howler.ctx.currentTime), r._panner.positionY.setValueAtTime(r._pos[1], Howler.ctx.currentTime), r._panner.positionZ.setValueAtTime(r._pos[2], Howler.ctx.currentTime)) : r._panner.setPosition(r._pos[0], r._pos[1], r._pos[2]), typeof r._panner.orientationX < "u" ? (r._panner.orientationX.setValueAtTime(r._orientation[0], Howler.ctx.currentTime), r._panner.orientationY.setValueAtTime(r._orientation[1], Howler.ctx.currentTime), r._panner.orientationZ.setValueAtTime(r._orientation[2], Howler.ctx.currentTime)) : r._panner.setOrientation(r._orientation[0], r._orientation[1], r._orientation[2])) : (r._panner = Howler.ctx.createStereoPanner(), r._panner.pan.setValueAtTime(r._stereo, Howler.ctx.currentTime)), r._panner.connect(r._node), r._paused || r._parent.pause(r._id, !0).play(r._id, !0)
             }
         })()
-    }(I)), I
+    })(I)), I
 }
 var E = G();
 export {

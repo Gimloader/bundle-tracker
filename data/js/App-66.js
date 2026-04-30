@@ -4,7 +4,7 @@ import {
     F as d,
     U as r,
     e as P,
-    d as o,
+    b as o,
     y as F,
     u as n,
     r as $
