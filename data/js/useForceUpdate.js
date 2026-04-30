@@ -1,7 +1,11 @@
 import {
-    x as r
+    r as t
 } from "./_index.js";
-const o = () => r.useReducer(e => e + 1, 0);
+
+function c() {
+    const [, e] = t.useReducer(r => r + 1, 0);
+    return e
+}
 export {
-    o as u
+    c as u
 };

@@ -1,51 +1,51 @@
 import {
     r as l,
-    I as Ce,
-    _ as Se,
+    I as Ie,
+    _ as Ce,
     al as Q,
     am as j,
-    cH as Ne,
+    cI as Ne,
     aF as Ae,
-    cI as Le,
+    cJ as Le,
     aS as J,
     aQ as K,
-    cJ as _e,
-    cK as We,
-    cL as Xe,
+    cK as _e,
+    cL as We,
+    cM as Xe,
     bZ as ke,
     ak as g,
     ba as Ve,
-    bD as qe,
-    ai as ye,
+    bC as qe,
+    ai as Se,
     aj as se,
-    bT as Y,
-    cM as xe,
+    bO as Y,
+    cN as ye,
+    bE as ce,
+    aL as xe,
     bF as me,
-    aL as we,
-    bG as ue,
-    aN as Ge,
-    cN as Fe,
-    bY as Be,
-    cO as Ye,
-    bf as de,
-    bI as Oe,
-    cP as Ue,
+    aN as Fe,
+    cO as Ge,
+    bY as we,
+    cP as Ye,
+    bh as Be,
+    bH as Oe,
+    cQ as Ue,
     R as Pe,
     aR as Ze,
-    cQ as Qe,
+    cR as Qe,
     bQ as Je,
     bP as Ke,
     bS as et,
     bR as tt,
-    aM as pe,
+    aM as ue,
     bc as ot,
     aG as nt,
-    cR as it,
-    cS as rt,
+    cS as it,
+    cT as rt,
     bt as lt,
     b_ as at,
-    bU as st,
-    B as ge
+    bT as st,
+    B as pe
 } from "./_index.js";
 import {
     T as dt,
@@ -55,7 +55,7 @@ import {
     d as pt
 } from "./index-5.js";
 import {
-    i as be
+    i as ge
 } from "./move.js";
 import {
     S as gt
@@ -77,26 +77,26 @@ var bt = {
         name: "right",
         theme: "outlined"
     },
-    $t = function(o, t) {
-        return l.createElement(Ce, Se({}, o, {
-            ref: t,
+    $t = function(o, e) {
+        return l.createElement(Ie, Ce({}, o, {
+            ref: e,
             icon: bt
         }))
     },
     vt = l.forwardRef($t);
-const ft = e => ({
-    [e.componentCls]: {
-        [`${e.antCls}-motion-collapse-legacy`]: {
+const ft = t => ({
+    [t.componentCls]: {
+        [`${t.antCls}-motion-collapse-legacy`]: {
             overflow: "hidden",
             "&-active": {
-                transition: `height ${e.motionDurationMid} ${e.motionEaseInOut},
-        opacity ${e.motionDurationMid} ${e.motionEaseInOut} !important`
+                transition: `height ${t.motionDurationMid} ${t.motionEaseInOut},
+        opacity ${t.motionDurationMid} ${t.motionEaseInOut} !important`
             }
         },
-        [`${e.antCls}-motion-collapse`]: {
+        [`${t.antCls}-motion-collapse`]: {
             overflow: "hidden",
-            transition: `height ${e.motionDurationMid} ${e.motionEaseInOut},
-        opacity ${e.motionDurationMid} ${e.motionEaseInOut} !important`
+            transition: `height ${t.motionDurationMid} ${t.motionEaseInOut},
+        opacity ${t.motionDurationMid} ${t.motionEaseInOut} !important`
         }
     }
 });
@@ -117,51 +117,51 @@ var ht = {
         name: "left",
         theme: "outlined"
     },
-    It = function(o, t) {
-        return l.createElement(Ce, Se({}, o, {
-            ref: t,
+    It = function(o, e) {
+        return l.createElement(Ie, Ce({}, o, {
+            ref: e,
             icon: ht
         }))
     },
     Ct = l.forwardRef(It);
-const St = e => typeof e != "object" && typeof e != "function" || e === null,
+const St = t => typeof t != "object" && typeof t != "function" || t === null,
     Ee = l.createContext({}),
     U = l.createContext({
         prefixCls: "",
         firstLevel: !0,
         inlineCollapsed: !1
     });
-var yt = function(e, o) {
-    var t = {};
-    for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && o.indexOf(i) < 0 && (t[i] = e[i]);
-    if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var n = 0, i = Object.getOwnPropertySymbols(e); n < i.length; n++) o.indexOf(i[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, i[n]) && (t[i[n]] = e[i[n]]);
-    return t
+var yt = function(t, o) {
+    var e = {};
+    for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && o.indexOf(i) < 0 && (e[i] = t[i]);
+    if (t != null && typeof Object.getOwnPropertySymbols == "function")
+        for (var n = 0, i = Object.getOwnPropertySymbols(t); n < i.length; n++) o.indexOf(i[n]) < 0 && Object.prototype.propertyIsEnumerable.call(t, i[n]) && (e[i[n]] = t[i[n]]);
+    return e
 };
-const ze = e => {
+const ze = t => {
         const {
             prefixCls: o,
-            className: t,
+            className: e,
             dashed: i
-        } = e, n = yt(e, ["prefixCls", "className", "dashed"]), {
+        } = t, n = yt(t, ["prefixCls", "className", "dashed"]), {
             getPrefixCls: a
         } = l.useContext(Q), r = a("menu", o), d = j({
             [`${r}-item-divider-dashed`]: !!i
-        }, t);
+        }, e);
         return l.createElement(Ne, Object.assign({
             className: d
         }, n))
     },
-    Te = e => {
+    Te = t => {
         var o;
         const {
-            className: t,
+            className: e,
             children: i,
             icon: n,
             title: a,
             danger: r,
             extra: d
-        } = e, {
+        } = t, {
             prefixCls: s,
             firstLevel: b,
             direction: $,
@@ -187,11 +187,11 @@ const ze = e => {
         };
         !m && !p && (I.title = null, I.open = !1);
         const v = Ae(i).length;
-        let x = l.createElement(Le, Object.assign({}, J(e, ["title", "icon", "danger"]), {
+        let x = l.createElement(Le, Object.assign({}, J(t, ["title", "icon", "danger"]), {
             className: j({
                 [`${s}-item-danger`]: r,
                 [`${s}-item-only-child`]: (n ? v + 1 : v) === 1
-            }, t),
+            }, e),
             title: typeof a == "string" ? a : void 0
         }), K(n, {
             className: j(l.isValidElement(n) ? (o = n.props) === null || o === void 0 ? void 0 : o.className : void 0, `${s}-item-icon`)
@@ -203,36 +203,36 @@ const ze = e => {
             }
         }), x)), x
     };
-var xt = function(e, o) {
-    var t = {};
-    for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && o.indexOf(i) < 0 && (t[i] = e[i]);
-    if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var n = 0, i = Object.getOwnPropertySymbols(e); n < i.length; n++) o.indexOf(i[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, i[n]) && (t[i[n]] = e[i[n]]);
-    return t
+var xt = function(t, o) {
+    var e = {};
+    for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && o.indexOf(i) < 0 && (e[i] = t[i]);
+    if (t != null && typeof Object.getOwnPropertySymbols == "function")
+        for (var n = 0, i = Object.getOwnPropertySymbols(t); n < i.length; n++) o.indexOf(i[n]) < 0 && Object.prototype.propertyIsEnumerable.call(t, i[n]) && (e[i[n]] = t[i[n]]);
+    return e
 };
 const Z = l.createContext(null),
-    wt = l.forwardRef((e, o) => {
+    wt = l.forwardRef((t, o) => {
         const {
-            children: t
-        } = e, i = xt(e, ["children"]), n = l.useContext(Z), a = l.useMemo(() => Object.assign(Object.assign({}, n), i), [n, i.prefixCls, i.mode, i.selectable, i.rootClassName]), r = _e(t), d = We(o, r ? Xe(t) : null);
+            children: e
+        } = t, i = xt(t, ["children"]), n = l.useContext(Z), a = l.useMemo(() => Object.assign(Object.assign({}, n), i), [n, i.prefixCls, i.mode, i.selectable, i.rootClassName]), r = _e(e), d = We(o, r ? Xe(e) : null);
         return l.createElement(Z.Provider, {
             value: a
         }, l.createElement(ke, {
             space: !0
-        }, r ? l.cloneElement(t, {
+        }, r ? l.cloneElement(e, {
             ref: d
-        }) : t))
+        }) : e))
     }),
-    Bt = e => {
+    Bt = t => {
         const {
             componentCls: o,
-            motionDurationSlow: t,
+            motionDurationSlow: e,
             horizontalLineHeight: i,
             colorSplit: n,
             lineWidth: a,
             lineType: r,
             itemPaddingInline: d
-        } = e;
+        } = t;
         return {
             [`${o}-horizontal`]: {
                 lineHeight: i,
@@ -257,7 +257,7 @@ const Z = l.createContext(null),
                     backgroundColor: "transparent"
                 },
                 [`${o}-item, ${o}-submenu-title`]: {
-                    transition: [`border-color ${t}`, `background ${t}`].join(",")
+                    transition: [`border-color ${e}`, `background ${e}`].join(",")
                 },
                 [`${o}-submenu-arrow`]: {
                     display: "none"
@@ -266,21 +266,21 @@ const Z = l.createContext(null),
         }
     },
     Ot = ({
-        componentCls: e,
+        componentCls: t,
         menuArrowOffset: o,
-        calc: t
+        calc: e
     }) => ({
-        [`${e}-rtl`]: {
+        [`${t}-rtl`]: {
             direction: "rtl"
         },
-        [`${e}-submenu-rtl`]: {
+        [`${t}-submenu-rtl`]: {
             transformOrigin: "100% 0"
         },
-        [`${e}-rtl${e}-vertical,
-    ${e}-submenu-rtl ${e}-vertical`]: {
-            [`${e}-submenu-arrow`]: {
+        [`${t}-rtl${t}-vertical,
+    ${t}-submenu-rtl ${t}-vertical`]: {
+            [`${t}-submenu-arrow`]: {
                 "&::before": {
-                    transform: `rotate(-45deg) translateY(${g(t(o).mul(-1).equal())})`
+                    transform: `rotate(-45deg) translateY(${g(e(o).mul(-1).equal())})`
                 },
                 "&::after": {
                     transform: `rotate(45deg) translateY(${g(o)})`
@@ -288,10 +288,10 @@ const Z = l.createContext(null),
             }
         }
     }),
-    $e = e => Ve(e),
-    ve = (e, o) => {
+    be = t => Object.assign({}, Ve(t)),
+    $e = (t, o) => {
         const {
-            componentCls: t,
+            componentCls: e,
             itemColor: i,
             itemSelectedColor: n,
             subMenuItemSelectedColor: a,
@@ -324,34 +324,34 @@ const Z = l.createContext(null),
             horizontalItemSelectedBg: _,
             horizontalItemBorderRadius: E,
             horizontalItemHoverBg: L
-        } = e;
+        } = t;
         return {
-            [`${t}-${o}, ${t}-${o} > ${t}`]: {
+            [`${e}-${o}, ${e}-${o} > ${e}`]: {
                 color: i,
                 background: d,
-                [`&${t}-root:focus-visible`]: Object.assign({}, $e(e)),
-                [`${t}-item`]: {
+                [`&${e}-root:focus-visible`]: Object.assign({}, be(t)),
+                [`${e}-item`]: {
                     "&-group-title, &-extra": {
                         color: r
                     }
                 },
-                [`${t}-submenu-selected > ${t}-submenu-title`]: {
+                [`${e}-submenu-selected > ${e}-submenu-title`]: {
                     color: a
                 },
-                [`${t}-item, ${t}-submenu-title`]: {
+                [`${e}-item, ${e}-submenu-title`]: {
                     color: i,
-                    [`&:not(${t}-item-disabled):focus-visible`]: Object.assign({}, $e(e))
+                    [`&:not(${e}-item-disabled):focus-visible`]: Object.assign({}, be(t))
                 },
-                [`${t}-item-disabled, ${t}-submenu-disabled`]: {
+                [`${e}-item-disabled, ${e}-submenu-disabled`]: {
                     color: `${C} !important`
                 },
-                [`${t}-item:not(${t}-item-selected):not(${t}-submenu-selected)`]: {
-                    [`&:hover, > ${t}-submenu-title:hover`]: {
+                [`${e}-item:not(${e}-item-selected):not(${e}-submenu-selected)`]: {
+                    [`&:hover, > ${e}-submenu-title:hover`]: {
                         color: x
                     }
                 },
-                [`&:not(${t}-horizontal)`]: {
-                    [`${t}-item:not(${t}-item-selected)`]: {
+                [`&:not(${e}-horizontal)`]: {
+                    [`${e}-item:not(${e}-item-selected)`]: {
                         "&:hover": {
                             backgroundColor: w
                         },
@@ -359,7 +359,7 @@ const Z = l.createContext(null),
                             backgroundColor: P
                         }
                     },
-                    [`${t}-submenu-title`]: {
+                    [`${e}-submenu-title`]: {
                         "&:hover": {
                             backgroundColor: w
                         },
@@ -368,52 +368,52 @@ const Z = l.createContext(null),
                         }
                     }
                 },
-                [`${t}-item-danger`]: {
+                [`${e}-item-danger`]: {
                     color: z,
-                    [`&${t}-item:hover`]: {
-                        [`&:not(${t}-item-selected):not(${t}-submenu-selected)`]: {
+                    [`&${e}-item:hover`]: {
+                        [`&:not(${e}-item-selected):not(${e}-submenu-selected)`]: {
                             color: M
                         }
                     },
-                    [`&${t}-item:active`]: {
+                    [`&${e}-item:active`]: {
                         background: h
                     }
                 },
-                [`${t}-item a`]: {
+                [`${e}-item a`]: {
                     "&, &:hover": {
                         color: "inherit"
                     }
                 },
-                [`${t}-item-selected`]: {
+                [`${e}-item-selected`]: {
                     color: n,
-                    [`&${t}-item-danger`]: {
+                    [`&${e}-item-danger`]: {
                         color: T
                     },
                     "a, a:hover": {
                         color: "inherit"
                     }
                 },
-                [`& ${t}-item-selected`]: {
+                [`& ${e}-item-selected`]: {
                     backgroundColor: b,
-                    [`&${t}-item-danger`]: {
+                    [`&${e}-item-danger`]: {
                         backgroundColor: D
                     }
                 },
-                [`&${t}-submenu > ${t}`]: {
+                [`&${e}-submenu > ${e}`]: {
                     backgroundColor: S
                 },
-                [`&${t}-popup > ${t}`]: {
+                [`&${e}-popup > ${e}`]: {
                     backgroundColor: R
                 },
-                [`&${t}-submenu-popup > ${t}`]: {
+                [`&${e}-submenu-popup > ${e}`]: {
                     backgroundColor: R
                 },
-                [`&${t}-horizontal`]: Object.assign(Object.assign({}, o === "dark" ? {
+                [`&${e}-horizontal`]: Object.assign(Object.assign({}, o === "dark" ? {
                     borderBottom: 0
                 } : {}), {
-                    [`> ${t}-item, > ${t}-submenu`]: {
+                    [`> ${e}-item, > ${e}-submenu`]: {
                         top: p,
-                        marginTop: e.calc(p).mul(-1).equal(),
+                        marginTop: t.calc(p).mul(-1).equal(),
                         marginBottom: 0,
                         borderRadius: E,
                         "&::after": {
@@ -444,16 +444,16 @@ const Z = l.createContext(null),
                         }
                     }
                 }),
-                [`&${t}-root`]: {
-                    [`&${t}-inline, &${t}-vertical`]: {
+                [`&${e}-root`]: {
+                    [`&${e}-inline, &${e}-vertical`]: {
                         borderInlineEnd: `${g(p)} ${H} ${O}`
                     }
                 },
-                [`&${t}-inline`]: {
-                    [`${t}-sub${t}-inline`]: {
+                [`&${e}-inline`]: {
+                    [`${e}-sub${e}-inline`]: {
                         background: s
                     },
-                    [`${t}-item`]: {
+                    [`${e}-item`]: {
                         position: "relative",
                         "&::after": {
                             position: "absolute",
@@ -465,13 +465,13 @@ const Z = l.createContext(null),
                             transition: [`transform ${v} ${c}`, `opacity ${v} ${c}`].join(","),
                             content: '""'
                         },
-                        [`&${t}-item-danger`]: {
+                        [`&${e}-item-danger`]: {
                             "&::after": {
                                 borderInlineEndColor: T
                             }
                         }
                     },
-                    [`${t}-selected, ${t}-item-selected`]: {
+                    [`${e}-selected, ${e}-item-selected`]: {
                         "&::after": {
                             transform: "scaleY(1)",
                             opacity: 1,
@@ -482,10 +482,10 @@ const Z = l.createContext(null),
             }
         }
     },
-    fe = e => {
+    ve = t => {
         const {
             componentCls: o,
-            itemHeight: t,
+            itemHeight: e,
             itemMarginInline: i,
             padding: n,
             menuArrowSize: a,
@@ -493,15 +493,15 @@ const Z = l.createContext(null),
             itemMarginBlock: d,
             itemWidth: s,
             itemPaddingInline: b
-        } = e, $ = e.calc(a).add(n).add(r).equal();
+        } = t, $ = t.calc(a).add(n).add(r).equal();
         return {
             [`${o}-item`]: {
                 position: "relative",
                 overflow: "hidden"
             },
             [`${o}-item, ${o}-submenu-title`]: {
-                height: t,
-                lineHeight: g(t),
+                height: e,
+                lineHeight: g(e),
                 paddingInline: b,
                 overflow: "hidden",
                 textOverflow: "ellipsis",
@@ -511,8 +511,8 @@ const Z = l.createContext(null),
             },
             [`> ${o}-item,
             > ${o}-submenu > ${o}-submenu-title`]: {
-                height: t,
-                lineHeight: g(t)
+                height: e,
+                lineHeight: g(e)
             },
             [`${o}-item-group-list ${o}-submenu-title,
             ${o}-submenu-title`]: {
@@ -520,10 +520,10 @@ const Z = l.createContext(null),
             }
         }
     },
-    Pt = e => {
+    Pt = t => {
         const {
             componentCls: o,
-            iconCls: t,
+            iconCls: e,
             itemHeight: i,
             colorTextLightSolid: n,
             dropdownWidth: a,
@@ -538,7 +538,7 @@ const Z = l.createContext(null),
             boxShadowSecondary: m,
             collapsedWidth: c,
             collapsedIconSize: I
-        } = e, v = {
+        } = t, v = {
             height: i,
             lineHeight: g(i),
             listStylePosition: "inside",
@@ -550,17 +550,17 @@ const Z = l.createContext(null),
                     [`&${o}-root`]: {
                         boxShadow: "none"
                     }
-                }, fe(e))
+                }, ve(t))
             },
             [`${o}-submenu-popup`]: {
-                [`${o}-vertical`]: Object.assign(Object.assign({}, fe(e)), {
+                [`${o}-vertical`]: Object.assign(Object.assign({}, ve(t)), {
                     boxShadow: m
                 })
             }
         }, {
             [`${o}-submenu-popup ${o}-vertical${o}-sub`]: {
                 minWidth: a,
-                maxHeight: `calc(100vh - ${g(e.calc(r).mul(2.5).equal())})`,
+                maxHeight: `calc(100vh - ${g(t.calc(r).mul(2.5).equal())})`,
                 padding: "0",
                 overflow: "hidden",
                 borderInlineEnd: 0,
@@ -616,7 +616,7 @@ const Z = l.createContext(null),
           > ${o}-item-group > ${o}-item-group-list > ${o}-submenu > ${o}-submenu-title,
           > ${o}-submenu > ${o}-submenu-title`]: {
                     insetInlineStart: 0,
-                    paddingInline: `calc(50% - ${g(e.calc(I).div(2).equal())} - ${g(b)})`,
+                    paddingInline: `calc(50% - ${g(t.calc(I).div(2).equal())} - ${g(b)})`,
                     textOverflow: "clip",
                     [`
             ${o}-submenu-arrow,
@@ -624,7 +624,7 @@ const Z = l.createContext(null),
           `]: {
                         opacity: 0
                     },
-                    [`${o}-item-icon, ${t}`]: {
+                    [`${o}-item-icon, ${e}`]: {
                         margin: 0,
                         fontSize: I,
                         lineHeight: g(i),
@@ -634,12 +634,12 @@ const Z = l.createContext(null),
                         }
                     }
                 },
-                [`${o}-item-icon, ${t}`]: {
+                [`${o}-item-icon, ${e}`]: {
                     display: "inline-block"
                 },
                 "&-tooltip": {
                     pointerEvents: "none",
-                    [`${o}-item-icon, ${t}`]: {
+                    [`${o}-item-icon, ${e}`]: {
                         display: "none"
                     },
                     "a, a:hover": {
@@ -652,17 +652,17 @@ const Z = l.createContext(null),
             }
         }]
     },
-    he = e => {
+    fe = t => {
         const {
             componentCls: o,
-            motionDurationSlow: t,
+            motionDurationSlow: e,
             motionDurationMid: i,
             motionEaseInOut: n,
             motionEaseOut: a,
             iconCls: r,
             iconSize: d,
             iconMarginInlineEnd: s
-        } = e;
+        } = t;
         return {
             [`${o}-item, ${o}-submenu-title`]: {
                 position: "relative",
@@ -670,18 +670,18 @@ const Z = l.createContext(null),
                 margin: 0,
                 whiteSpace: "nowrap",
                 cursor: "pointer",
-                transition: [`border-color ${t}`, `background ${t}`, `padding calc(${t} + 0.1s) ${n}`].join(","),
+                transition: [`border-color ${e}`, `background ${e}`, `padding calc(${e} + 0.1s) ${n}`].join(","),
                 [`${o}-item-icon, ${r}`]: {
                     minWidth: d,
                     fontSize: d,
-                    transition: [`font-size ${i} ${a}`, `margin ${t} ${n}`, `color ${t}`].join(","),
+                    transition: [`font-size ${i} ${a}`, `margin ${e} ${n}`, `color ${e}`].join(","),
                     "+ span": {
                         marginInlineStart: s,
                         opacity: 1,
-                        transition: [`opacity ${t} ${n}`, `margin ${t}`, `color ${t}`].join(",")
+                        transition: [`opacity ${e} ${n}`, `margin ${e}`, `color ${e}`].join(",")
                     }
                 },
-                [`${o}-item-icon`]: Object.assign({}, Ge()),
+                [`${o}-item-icon`]: Object.assign({}, Fe()),
                 [`&${o}-item-only-child`]: {
                     [`> ${r}, > ${o}-item-icon`]: {
                         marginInlineEnd: 0
@@ -706,38 +706,38 @@ const Z = l.createContext(null),
             }
         }
     },
-    Ie = e => {
+    he = t => {
         const {
             componentCls: o,
-            motionDurationSlow: t,
+            motionDurationSlow: e,
             motionEaseInOut: i,
             borderRadius: n,
             menuArrowSize: a,
             menuArrowOffset: r
-        } = e;
+        } = t;
         return {
             [`${o}-submenu`]: {
                 "&-expand-icon, &-arrow": {
                     position: "absolute",
                     top: "50%",
-                    insetInlineEnd: e.margin,
+                    insetInlineEnd: t.margin,
                     width: a,
                     color: "currentcolor",
                     transform: "translateY(-50%)",
-                    transition: `transform ${t} ${i}, opacity ${t}`
+                    transition: `transform ${e} ${i}, opacity ${e}`
                 },
                 "&-arrow": {
                     "&::before, &::after": {
                         position: "absolute",
-                        width: e.calc(a).mul(.6).equal(),
-                        height: e.calc(a).mul(.15).equal(),
+                        width: t.calc(a).mul(.6).equal(),
+                        height: t.calc(a).mul(.15).equal(),
                         backgroundColor: "currentcolor",
                         borderRadius: n,
-                        transition: [`background ${t} ${i}`, `transform ${t} ${i}`, `top ${t} ${i}`, `color ${t} ${i}`].join(","),
+                        transition: [`background ${e} ${i}`, `transform ${e} ${i}`, `top ${e} ${i}`, `color ${e} ${i}`].join(","),
                         content: '""'
                     },
                     "&::before": {
-                        transform: `rotate(45deg) translateY(${g(e.calc(r).mul(-1).equal())})`
+                        transform: `rotate(45deg) translateY(${g(t.calc(r).mul(-1).equal())})`
                     },
                     "&::after": {
                         transform: `rotate(-45deg) translateY(${g(r)})`
@@ -746,10 +746,10 @@ const Z = l.createContext(null),
             }
         }
     },
-    Et = e => {
+    Et = t => {
         const {
             antCls: o,
-            componentCls: t,
+            componentCls: e,
             fontSize: i,
             motionDurationSlow: n,
             motionDurationMid: a,
@@ -766,20 +766,20 @@ const Z = l.createContext(null),
             lineType: I,
             groupTitleLineHeight: v,
             groupTitleFontSize: x
-        } = e;
+        } = t;
         return [{
             "": {
-                [t]: Object.assign(Object.assign({}, me()), {
+                [e]: Object.assign(Object.assign({}, ce()), {
                     "&-hidden": {
                         display: "none"
                     }
                 })
             },
-            [`${t}-submenu-hidden`]: {
+            [`${e}-submenu-hidden`]: {
                 display: "none"
             }
         }, {
-            [t]: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, we(e)), me()), {
+            [e]: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, xe(t)), ce()), {
                 marginBottom: 0,
                 paddingInlineStart: 0,
                 fontSize: i,
@@ -794,30 +794,30 @@ const Z = l.createContext(null),
                 },
                 "&-overflow": {
                     display: "flex",
-                    [`${t}-item`]: {
+                    [`${e}-item`]: {
                         flex: "none"
                     }
                 },
-                [`${t}-item, ${t}-submenu, ${t}-submenu-title`]: {
-                    borderRadius: e.itemBorderRadius
+                [`${e}-item, ${e}-submenu, ${e}-submenu-title`]: {
+                    borderRadius: t.itemBorderRadius
                 },
-                [`${t}-item-group-title`]: {
+                [`${e}-item-group-title`]: {
                     padding: `${g(d)} ${g(s)}`,
                     fontSize: x,
                     lineHeight: v,
                     transition: `all ${n}`
                 },
-                [`&-horizontal ${t}-submenu`]: {
+                [`&-horizontal ${e}-submenu`]: {
                     transition: [`border-color ${n} ${r}`, `background ${n} ${r}`].join(",")
                 },
-                [`${t}-submenu, ${t}-submenu-inline`]: {
+                [`${e}-submenu, ${e}-submenu-inline`]: {
                     transition: [`border-color ${n} ${r}`, `background ${n} ${r}`, `padding ${a} ${r}`].join(",")
                 },
-                [`${t}-submenu ${t}-sub`]: {
+                [`${e}-submenu ${e}-sub`]: {
                     cursor: "initial",
                     transition: [`background ${n} ${r}`, `padding ${n} ${r}`].join(",")
                 },
-                [`${t}-title-content`]: {
+                [`${e}-title-content`]: {
                     transition: `color ${n}`,
                     "&-with-extra": {
                         display: "inline-flex",
@@ -828,12 +828,12 @@ const Z = l.createContext(null),
                         display: "inline",
                         verticalAlign: "unset"
                     },
-                    [`${t}-item-extra`]: {
+                    [`${e}-item-extra`]: {
                         marginInlineStart: "auto",
-                        paddingInlineStart: e.padding
+                        paddingInlineStart: t.padding
                     }
                 },
-                [`${t}-item a`]: {
+                [`${e}-item a`]: {
                     "&::before": {
                         position: "absolute",
                         inset: 0,
@@ -841,7 +841,7 @@ const Z = l.createContext(null),
                         content: '""'
                     }
                 },
-                [`${t}-item-divider`]: {
+                [`${e}-item-divider`]: {
                     overflow: "hidden",
                     lineHeight: 0,
                     borderColor: b,
@@ -854,13 +854,13 @@ const Z = l.createContext(null),
                         borderStyle: "dashed"
                     }
                 }
-            }), he(e)), {
-                [`${t}-item-group`]: {
-                    [`${t}-item-group-list`]: {
+            }), fe(t)), {
+                [`${e}-item-group`]: {
+                    [`${e}-item-group-list`]: {
                         margin: 0,
                         padding: 0,
-                        [`${t}-item, ${t}-submenu-title`]: {
-                            paddingInline: `${g(e.calc(i).mul(2).equal())} ${g(s)}`
+                        [`${e}-item, ${e}-submenu-title`]: {
+                            paddingInline: `${g(t.calc(i).mul(2).equal())} ${g(s)}`
                         }
                     }
                 },
@@ -871,7 +871,7 @@ const Z = l.createContext(null),
                         borderRadius: p,
                         boxShadow: "none",
                         transformOrigin: "0 0",
-                        [`&${t}-submenu`]: {
+                        [`&${e}-submenu`]: {
                             background: "transparent"
                         },
                         "&::before": {
@@ -883,13 +883,13 @@ const Z = l.createContext(null),
                             opacity: 0,
                             content: '""'
                         },
-                        [`> ${t}`]: Object.assign(Object.assign(Object.assign({
+                        [`> ${e}`]: Object.assign(Object.assign(Object.assign({
                             borderRadius: p
-                        }, he(e)), Ie(e)), {
-                            [`${t}-item, ${t}-submenu > ${t}-submenu-title`]: {
+                        }, fe(t)), he(t)), {
+                            [`${e}-item, ${e}-submenu > ${e}-submenu-title`]: {
                                 borderRadius: u
                             },
-                            [`${t}-submenu-title::after`]: {
+                            [`${e}-submenu-title::after`]: {
                                 transition: `transform ${n} ${r}`
                             }
                         })
@@ -907,32 +907,32 @@ const Z = l.createContext(null),
                         transformOrigin: "0 0"
                     },
                     "\n          &-placement-leftTop,\n          &-placement-leftBottom\n          ": {
-                        paddingInlineEnd: e.paddingXS
+                        paddingInlineEnd: t.paddingXS
                     },
                     "\n          &-placement-rightTop,\n          &-placement-rightBottom\n          ": {
-                        paddingInlineStart: e.paddingXS
+                        paddingInlineStart: t.paddingXS
                     },
                     "\n          &-placement-topRight,\n          &-placement-topLeft\n          ": {
-                        paddingBottom: e.paddingXS
+                        paddingBottom: t.paddingXS
                     },
                     "\n          &-placement-bottomRight,\n          &-placement-bottomLeft\n          ": {
-                        paddingTop: e.paddingXS
+                        paddingTop: t.paddingXS
                     }
                 }
-            }), Ie(e)), {
-                [`&-inline-collapsed ${t}-submenu-arrow,
-        &-inline ${t}-submenu-arrow`]: {
+            }), he(t)), {
+                [`&-inline-collapsed ${e}-submenu-arrow,
+        &-inline ${e}-submenu-arrow`]: {
                     "&::before": {
                         transform: `rotate(-45deg) translateX(${g(c)})`
                     },
                     "&::after": {
-                        transform: `rotate(45deg) translateX(${g(e.calc(c).mul(-1).equal())})`
+                        transform: `rotate(45deg) translateX(${g(t.calc(c).mul(-1).equal())})`
                     }
                 },
-                [`${t}-submenu-open${t}-submenu-inline > ${t}-submenu-title > ${t}-submenu-arrow`]: {
-                    transform: `translateY(${g(e.calc(m).mul(.2).mul(-1).equal())})`,
+                [`${e}-submenu-open${e}-submenu-inline > ${e}-submenu-title > ${e}-submenu-arrow`]: {
+                    transform: `translateY(${g(t.calc(m).mul(.2).mul(-1).equal())})`,
                     "&::after": {
-                        transform: `rotate(-45deg) translateX(${g(e.calc(c).mul(-1).equal())})`
+                        transform: `rotate(-45deg) translateX(${g(t.calc(c).mul(-1).equal())})`
                     },
                     "&::before": {
                         transform: `rotate(45deg) translateX(${g(c)})`
@@ -941,14 +941,14 @@ const Z = l.createContext(null),
             })
         }, {
             [`${o}-layout-header`]: {
-                [t]: {
+                [e]: {
                     lineHeight: "inherit"
                 }
             }
         }]
     },
-    zt = e => {
-        var o, t, i;
+    zt = t => {
+        var o, e, i;
         const {
             colorPrimary: n,
             colorError: a,
@@ -973,14 +973,14 @@ const Z = l.createContext(null),
             fontSizeLG: T,
             colorTextLightSolid: h,
             colorErrorHover: D
-        } = e, R = (o = e.activeBarWidth) !== null && o !== void 0 ? o : 0, w = (t = e.activeBarBorderWidth) !== null && t !== void 0 ? t : u, P = (i = e.itemMarginInline) !== null && i !== void 0 ? i : e.marginXXS, S = new ue(h).setA(.65).toRgbString();
+        } = t, R = (o = t.activeBarWidth) !== null && o !== void 0 ? o : 0, w = (e = t.activeBarBorderWidth) !== null && e !== void 0 ? e : u, P = (i = t.itemMarginInline) !== null && i !== void 0 ? i : t.marginXXS, S = new me(h).setA(.65).toRgbString();
         return {
             dropdownWidth: 160,
-            zIndexPopup: e.zIndexPopupBase + 50,
-            radiusItem: e.borderRadiusLG,
-            itemBorderRadius: e.borderRadiusLG,
-            radiusSubMenuItem: e.borderRadiusSM,
-            subMenuItemBorderRadius: e.borderRadiusSM,
+            zIndexPopup: t.zIndexPopupBase + 50,
+            radiusItem: t.borderRadiusLG,
+            itemBorderRadius: t.borderRadiusLG,
+            radiusSubMenuItem: t.borderRadiusSM,
+            subMenuItemBorderRadius: t.borderRadiusSM,
             colorItemText: s,
             itemColor: s,
             colorItemTextHover: s,
@@ -1038,7 +1038,7 @@ const Z = l.createContext(null),
             iconMarginInlineEnd: M - z,
             collapsedIconSize: T,
             groupTitleFontSize: z,
-            darkItemDisabledColor: new ue(h).setA(.25).toRgbString(),
+            darkItemDisabledColor: new me(h).setA(.25).toRgbString(),
             darkItemColor: S,
             darkDangerItemColor: a,
             darkItemBg: "#001529",
@@ -1056,7 +1056,7 @@ const Z = l.createContext(null),
             itemWidth: R ? `calc(100% + ${w}px)` : `calc(100% - ${P*2}px)`
         }
     },
-    Tt = (e, o = e, t = !0) => ye("Menu", n => {
+    Tt = (t, o = t, e = !0) => Se("Menu", n => {
         const {
             colorBgElevated: a,
             controlHeightLG: r,
@@ -1108,7 +1108,7 @@ const Z = l.createContext(null),
             horizontalItemSelectedColor: p,
             horizontalItemSelectedBg: u
         });
-        return [Et(h), Bt(h), Pt(h), ve(h, "light"), ve(D, "dark"), Ot(h), ft(h), Y(h, "slide-up"), Y(h, "slide-down"), xe(h, "zoom-big")]
+        return [Et(h), Bt(h), Pt(h), $e(h, "light"), $e(D, "dark"), Ot(h), ft(h), Y(h, "slide-up"), Y(h, "slide-down"), ye(h, "zoom-big")]
     }, zt, {
         deprecatedTokens: [
             ["colorGroupTitle", "groupTitleColor"],
@@ -1135,23 +1135,23 @@ const Z = l.createContext(null),
             ["colorActiveBarBorderSize", "activeBarBorderWidth"],
             ["colorItemBgSelected", "itemSelectedBg"]
         ],
-        injectStyle: t,
+        injectStyle: e,
         unitless: {
             groupTitleLineHeight: !0
         }
-    })(e, o),
-    He = e => {
+    })(t, o),
+    He = t => {
         var o;
         const {
-            popupClassName: t,
+            popupClassName: e,
             icon: i,
             title: n,
             theme: a
-        } = e, r = l.useContext(U), {
+        } = t, r = l.useContext(U), {
             prefixCls: d,
             inlineCollapsed: s,
             theme: b
-        } = r, $ = Fe();
+        } = r, $ = Ge();
         let f;
         if (!i) f = s && !$.length && n && typeof n == "string" ? l.createElement("div", {
             className: `${d}-inline-collapsed-noicon`
@@ -1169,35 +1169,35 @@ const Z = l.createContext(null),
         const p = l.useMemo(() => Object.assign(Object.assign({}, r), {
                 firstLevel: !1
             }), [r]),
-            [u] = Be("Menu");
+            [u] = we("Menu");
         return l.createElement(U.Provider, {
             value: p
-        }, l.createElement(Ye, Object.assign({}, J(e, ["icon"]), {
+        }, l.createElement(Ye, Object.assign({}, J(t, ["icon"]), {
             title: f,
-            popupClassName: j(d, t, `${d}-${a||b}`),
+            popupClassName: j(d, e, `${d}-${a||b}`),
             popupStyle: Object.assign({
                 zIndex: u
-            }, e.popupStyle)
+            }, t.popupStyle)
         })))
     };
-var Ht = function(e, o) {
-    var t = {};
-    for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && o.indexOf(i) < 0 && (t[i] = e[i]);
-    if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var n = 0, i = Object.getOwnPropertySymbols(e); n < i.length; n++) o.indexOf(i[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, i[n]) && (t[i[n]] = e[i[n]]);
-    return t
+var Ht = function(t, o) {
+    var e = {};
+    for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && o.indexOf(i) < 0 && (e[i] = t[i]);
+    if (t != null && typeof Object.getOwnPropertySymbols == "function")
+        for (var n = 0, i = Object.getOwnPropertySymbols(t); n < i.length; n++) o.indexOf(i[n]) < 0 && Object.prototype.propertyIsEnumerable.call(t, i[n]) && (e[i[n]] = t[i[n]]);
+    return e
 };
 
-function ae(e) {
-    return e === null || e === !1
+function ae(t) {
+    return t === null || t === !1
 }
 const jt = {
         item: Te,
         submenu: He,
         divider: ze
     },
-    Mt = l.forwardRef((e, o) => {
-        var t;
+    Mt = l.forwardRef((t, o) => {
+        var e;
         const i = l.useContext(Z),
             n = i || {},
             {
@@ -1221,13 +1221,13 @@ const jt = {
                 selectable: O,
                 onClick: C,
                 overflowedIndicatorPopupClassName: z
-            } = e,
-            M = Ht(e, ["prefixCls", "className", "style", "theme", "expandIcon", "_internalDisableMenuItemTitleTooltip", "inlineCollapsed", "siderCollapsed", "rootClassName", "mode", "selectable", "onClick", "overflowedIndicatorPopupClassName"]),
+            } = t,
+            M = Ht(t, ["prefixCls", "className", "style", "theme", "expandIcon", "_internalDisableMenuItemTitleTooltip", "inlineCollapsed", "siderCollapsed", "rootClassName", "mode", "selectable", "onClick", "overflowedIndicatorPopupClassName"]),
             T = J(M, ["collapsedWidth"]);
-        (t = n.validator) === null || t === void 0 || t.call(n, {
+        (e = n.validator) === null || e === void 0 || e.call(n, {
             mode: H
         });
-        const h = de((...A) => {
+        const h = Be((...A) => {
                 var y;
                 C == null || C.apply(void 0, A), (y = n.onClick) === null || y === void 0 || y.call(n)
             }),
@@ -1290,33 +1290,33 @@ const jt = {
             _internalComponents: jt
         })))))
     }),
-    G = l.forwardRef((e, o) => {
-        const t = l.useRef(null),
+    F = l.forwardRef((t, o) => {
+        const e = l.useRef(null),
             i = l.useContext(Ee);
         return l.useImperativeHandle(o, () => ({
-            menu: t.current,
+            menu: e.current,
             focus: n => {
                 var a;
-                (a = t.current) === null || a === void 0 || a.focus(n)
+                (a = e.current) === null || a === void 0 || a.focus(n)
             }
         })), l.createElement(Mt, Object.assign({
-            ref: t
-        }, e, i))
+            ref: e
+        }, t, i))
     });
-G.Item = Te;
-G.SubMenu = He;
-G.Divider = ze;
-G.ItemGroup = Qe;
-const Rt = e => {
+F.Item = Te;
+F.SubMenu = He;
+F.Divider = ze;
+F.ItemGroup = Qe;
+const Rt = t => {
         const {
             componentCls: o,
-            menuCls: t,
+            menuCls: e,
             colorError: i,
             colorTextLightSolid: n
-        } = e, a = `${t}-item`;
+        } = t, a = `${e}-item`;
         return {
             [`${o}, ${o}-menu-submenu`]: {
-                [`${t} ${a}`]: {
+                [`${e} ${a}`]: {
                     [`&${a}-danger:not(${a}-disabled)`]: {
                         color: i,
                         "&:hover": {
@@ -1328,10 +1328,10 @@ const Rt = e => {
             }
         }
     },
-    Dt = e => {
+    Dt = t => {
         const {
             componentCls: o,
-            menuCls: t,
+            menuCls: e,
             zIndexPopup: i,
             dropdownArrowDistance: n,
             sizePopupArrow: a,
@@ -1345,7 +1345,7 @@ const Rt = e => {
             fontSizeIcon: u,
             controlPaddingHorizontal: m,
             colorBgElevated: c
-        } = e;
+        } = t;
         return [{
                 [o]: {
                     position: "absolute",
@@ -1358,7 +1358,7 @@ const Rt = e => {
                     display: "block",
                     "&::before": {
                         position: "absolute",
-                        insetBlock: e.calc(a).div(2).sub(n).equal(),
+                        insetBlock: t.calc(a).div(2).sub(n).equal(),
                         zIndex: -9999,
                         opacity: 1e-4,
                         content: '""'
@@ -1416,17 +1416,17 @@ const Rt = e => {
                         animationName: Je
                     }
                 }
-            }, ct(e, c, {
+            }, ct(t, c, {
                 arrowPlacement: {
                     top: !0,
                     bottom: !0
                 }
             }), {
-                [`${o} ${t}`]: {
+                [`${o} ${e}`]: {
                     position: "relative",
                     margin: 0
                 },
-                [`${t}-submenu-popup`]: {
+                [`${e}-submenu-popup`]: {
                     position: "absolute",
                     zIndex: i,
                     background: "transparent",
@@ -1437,36 +1437,36 @@ const Rt = e => {
                         margin: 0
                     }
                 },
-                [`${o}, ${o}-menu-submenu`]: Object.assign(Object.assign({}, we(e)), {
-                    [t]: Object.assign(Object.assign({
+                [`${o}, ${o}-menu-submenu`]: Object.assign(Object.assign({}, xe(t)), {
+                    [e]: Object.assign(Object.assign({
                         padding: f,
                         listStyleType: "none",
                         backgroundColor: c,
                         backgroundClip: "padding-box",
-                        borderRadius: e.borderRadiusLG,
+                        borderRadius: t.borderRadiusLG,
                         outline: "none",
-                        boxShadow: e.boxShadowSecondary
-                    }, pe(e)), {
+                        boxShadow: t.boxShadowSecondary
+                    }, ue(t)), {
                         "&:empty": {
                             padding: 0,
                             boxShadow: "none"
                         },
-                        [`${t}-item-group-title`]: {
+                        [`${e}-item-group-title`]: {
                             padding: `${g(b)} ${g(m)}`,
-                            color: e.colorTextDescription,
+                            color: t.colorTextDescription,
                             transition: `all ${s}`
                         },
-                        [`${t}-item`]: {
+                        [`${e}-item`]: {
                             position: "relative",
                             display: "flex",
                             alignItems: "center"
                         },
-                        [`${t}-item-icon`]: {
+                        [`${e}-item-icon`]: {
                             minWidth: $,
-                            marginInlineEnd: e.marginXS,
-                            fontSize: e.fontSizeSM
+                            marginInlineEnd: t.marginXS,
+                            fontSize: t.fontSizeSM
                         },
-                        [`${t}-title-content`]: {
+                        [`${e}-title-content`]: {
                             flex: "auto",
                             "&-with-extra": {
                                 display: "inline-flex",
@@ -1485,33 +1485,33 @@ const Rt = e => {
                                     content: '""'
                                 }
                             },
-                            [`${t}-item-extra`]: {
-                                paddingInlineStart: e.padding,
+                            [`${e}-item-extra`]: {
+                                paddingInlineStart: t.padding,
                                 marginInlineStart: "auto",
-                                fontSize: e.fontSizeSM,
-                                color: e.colorTextDescription
+                                fontSize: t.fontSizeSM,
+                                color: t.colorTextDescription
                             }
                         },
-                        [`${t}-item, ${t}-submenu-title`]: Object.assign(Object.assign({
+                        [`${e}-item, ${e}-submenu-title`]: Object.assign(Object.assign({
                             display: "flex",
                             margin: 0,
                             padding: `${g(b)} ${g(m)}`,
-                            color: e.colorText,
+                            color: t.colorText,
                             fontWeight: "normal",
                             fontSize: $,
-                            lineHeight: e.lineHeight,
+                            lineHeight: t.lineHeight,
                             cursor: "pointer",
                             transition: `all ${s}`,
-                            borderRadius: e.borderRadiusSM,
+                            borderRadius: t.borderRadiusSM,
                             "&:hover, &-active": {
-                                backgroundColor: e.controlItemBgHover
+                                backgroundColor: t.controlItemBgHover
                             }
-                        }, pe(e)), {
+                        }, ue(t)), {
                             "&-selected": {
-                                color: e.colorPrimary,
-                                backgroundColor: e.controlItemBgActive,
+                                color: t.colorPrimary,
+                                backgroundColor: t.controlItemBgActive,
                                 "&:hover, &-active": {
-                                    backgroundColor: e.controlItemBgActiveHover
+                                    backgroundColor: t.controlItemBgActiveHover
                                 }
                             },
                             "&-disabled": {
@@ -1528,75 +1528,75 @@ const Rt = e => {
                             },
                             "&-divider": {
                                 height: 1,
-                                margin: `${g(e.marginXXS)} 0`,
+                                margin: `${g(t.marginXXS)} 0`,
                                 overflow: "hidden",
                                 lineHeight: 0,
-                                backgroundColor: e.colorSplit
+                                backgroundColor: t.colorSplit
                             },
                             [`${o}-menu-submenu-expand-icon`]: {
                                 position: "absolute",
-                                insetInlineEnd: e.paddingXS,
+                                insetInlineEnd: t.paddingXS,
                                 [`${o}-menu-submenu-arrow-icon`]: {
                                     marginInlineEnd: "0 !important",
-                                    color: e.colorIcon,
+                                    color: t.colorIcon,
                                     fontSize: u,
                                     fontStyle: "normal"
                                 }
                             }
                         }),
-                        [`${t}-item-group-list`]: {
-                            margin: `0 ${g(e.marginXS)}`,
+                        [`${e}-item-group-list`]: {
+                            margin: `0 ${g(t.marginXS)}`,
                             padding: 0,
                             listStyle: "none"
                         },
-                        [`${t}-submenu-title`]: {
-                            paddingInlineEnd: e.calc(m).add(e.fontSizeSM).equal()
+                        [`${e}-submenu-title`]: {
+                            paddingInlineEnd: t.calc(m).add(t.fontSizeSM).equal()
                         },
-                        [`${t}-submenu-vertical`]: {
+                        [`${e}-submenu-vertical`]: {
                             position: "relative"
                         },
-                        [`${t}-submenu${t}-submenu-disabled ${o}-menu-submenu-title`]: {
+                        [`${e}-submenu${e}-submenu-disabled ${o}-menu-submenu-title`]: {
                             [`&, ${o}-menu-submenu-arrow-icon`]: {
                                 color: p,
                                 backgroundColor: c,
                                 cursor: "not-allowed"
                             }
                         },
-                        [`${t}-submenu-selected ${o}-menu-submenu-title`]: {
-                            color: e.colorPrimary
+                        [`${e}-submenu-selected ${o}-menu-submenu-title`]: {
+                            color: t.colorPrimary
                         }
                     })
                 })
             },
-            [Y(e, "slide-up"), Y(e, "slide-down"), be(e, "move-up"), be(e, "move-down"), xe(e, "zoom-big")]
+            [Y(t, "slide-up"), Y(t, "slide-down"), ge(t, "move-up"), ge(t, "move-down"), ye(t, "zoom-big")]
         ]
     },
-    Nt = e => Object.assign(Object.assign({
-        zIndexPopup: e.zIndexPopupBase + 50,
-        paddingBlock: (e.controlHeight - e.fontSize * e.lineHeight) / 2
+    Nt = t => Object.assign(Object.assign({
+        zIndexPopup: t.zIndexPopupBase + 50,
+        paddingBlock: (t.controlHeight - t.fontSize * t.lineHeight) / 2
     }, mt({
-        contentRadius: e.borderRadiusLG,
+        contentRadius: t.borderRadiusLG,
         limitVerticalRadius: !0
-    })), ut(e)),
-    At = ye("Dropdown", e => {
+    })), ut(t)),
+    At = Se("Dropdown", t => {
         const {
             marginXXS: o,
-            sizePopupArrow: t,
+            sizePopupArrow: e,
             paddingXXS: i,
             componentCls: n
-        } = e, a = se(e, {
+        } = t, a = se(t, {
             menuCls: `${n}-menu`,
-            dropdownArrowDistance: e.calc(t).div(2).add(o).equal(),
+            dropdownArrowDistance: t.calc(e).div(2).add(o).equal(),
             dropdownEdgeChildPadding: i
         });
         return [Dt(a), Rt(a)]
     }, Nt, {
         resetStyle: !1
     }),
-    ee = e => {
+    ee = t => {
         var o;
         const {
-            menu: t,
+            menu: e,
             arrow: i,
             prefixCls: n,
             children: a,
@@ -1620,7 +1620,7 @@ const Rt = e => {
             transitionName: M,
             destroyOnHidden: T,
             destroyPopupOnHide: h
-        } = e, {
+        } = t, {
             getPopupContainer: D,
             getPrefixCls: R,
             direction: w,
@@ -1645,13 +1645,13 @@ const Rt = e => {
             }),
             V = d ? [] : r,
             te = !!(V != null && V.includes("contextMenu")),
-            [oe, F] = nt(!1, {
+            [oe, G] = nt(!1, {
                 value: m ?? I
             }),
-            ne = de(B => {
+            ne = Be(B => {
                 c == null || c(B, {
                     source: "trigger"
-                }), v == null || v(B), F(B)
+                }), v == null || v(B), G(B)
             }),
             ie = j(f, p, X, k, L, P == null ? void 0 : P.className, {
                 [`${E}-rtl`]: w === "rtl"
@@ -1663,14 +1663,14 @@ const Rt = e => {
                 arrowWidth: i ? A.sizePopupArrow : 0,
                 borderRadius: A.borderRadius
             }),
-            Me = de(() => {
-                t != null && t.selectable && (t != null && t.multiple) || (c == null || c(!1, {
+            Me = l.useCallback(() => {
+                e != null && e.selectable && (e != null && e.multiple) || (c == null || c(!1, {
                     source: "menu"
-                }), F(!1))
-            }),
+                }), G(!1))
+            }, [e == null ? void 0 : e.selectable, e == null ? void 0 : e.multiple]),
             Re = () => {
                 let B;
-                return t != null && t.items ? B = l.createElement(G, Object.assign({}, t)) : typeof z == "function" ? B = z() : B = z, S && (B = S(B)), B = l.Children.only(typeof B == "string" ? l.createElement("span", null, B) : B), l.createElement(wt, {
+                return e != null && e.items ? B = l.createElement(F, Object.assign({}, e)) : typeof z == "function" ? B = z() : B = z, S && (B = S(B)), B = l.Children.only(typeof B == "string" ? l.createElement("span", null, B) : B), l.createElement(wt, {
                     prefixCls: `${E}-menu`,
                     rootClassName: j(k, L),
                     expandIcon: l.createElement("span", {
@@ -1688,10 +1688,10 @@ const Rt = e => {
                     }) => {}
                 }, B)
             },
-            [ce, De] = Be("Dropdown", u == null ? void 0 : u.zIndex);
+            [de, De] = we("Dropdown", u == null ? void 0 : u.zIndex);
         let le = l.createElement(it, Object.assign({
             alignPoint: te
-        }, J(e, ["rootClassName"]), {
+        }, J(t, ["rootClassName"]), {
             mouseEnterDelay: x,
             mouseLeaveDelay: H,
             visible: oe,
@@ -1706,28 +1706,28 @@ const Rt = e => {
             placement: _,
             onVisibleChange: ne,
             overlayStyle: Object.assign(Object.assign(Object.assign({}, P == null ? void 0 : P.style), u), {
-                zIndex: ce
+                zIndex: de
             }),
             autoDestroy: T ?? h
         }), W);
-        return ce && (le = l.createElement(rt.Provider, {
+        return de && (le = l.createElement(rt.Provider, {
             value: De
         }, le)), q(le)
     },
-    Lt = at(ee, "align", void 0, "dropdown", e => e),
-    _t = e => l.createElement(Lt, Object.assign({}, e), l.createElement("span", null));
+    Lt = at(ee, "align", void 0, "dropdown", t => t),
+    _t = t => l.createElement(Lt, Object.assign({}, t), l.createElement("span", null));
 ee._InternalPanelDoNotUseOrYouWillBeFired = _t;
-var Wt = function(e, o) {
-    var t = {};
-    for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && o.indexOf(i) < 0 && (t[i] = e[i]);
-    if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var n = 0, i = Object.getOwnPropertySymbols(e); n < i.length; n++) o.indexOf(i[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, i[n]) && (t[i[n]] = e[i[n]]);
-    return t
+var Wt = function(t, o) {
+    var e = {};
+    for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && o.indexOf(i) < 0 && (e[i] = t[i]);
+    if (t != null && typeof Object.getOwnPropertySymbols == "function")
+        for (var n = 0, i = Object.getOwnPropertySymbols(t); n < i.length; n++) o.indexOf(i[n]) < 0 && Object.prototype.propertyIsEnumerable.call(t, i[n]) && (e[i[n]] = t[i[n]]);
+    return e
 };
-const je = e => {
+const je = t => {
     const {
         getPopupContainer: o,
-        getPrefixCls: t,
+        getPrefixCls: e,
         direction: i
     } = l.useContext(Q), {
         prefixCls: n,
@@ -1761,7 +1761,7 @@ const je = e => {
         destroyPopupOnHide: _,
         dropdownRender: E,
         popupRender: L
-    } = e, q = Wt(e, ["prefixCls", "type", "danger", "disabled", "loading", "onClick", "htmlType", "children", "className", "menu", "arrow", "autoFocus", "overlay", "trigger", "align", "open", "onOpenChange", "placement", "getPopupContainer", "href", "icon", "title", "buttonsRender", "mouseEnterDelay", "mouseLeaveDelay", "overlayClassName", "overlayStyle", "destroyOnHidden", "destroyPopupOnHide", "dropdownRender", "popupRender"]), X = t("dropdown", n), k = `${X}-button`, y = {
+    } = t, q = Wt(t, ["prefixCls", "type", "danger", "disabled", "loading", "onClick", "htmlType", "children", "className", "menu", "arrow", "autoFocus", "overlay", "trigger", "align", "open", "onOpenChange", "placement", "getPopupContainer", "href", "icon", "title", "buttonsRender", "mouseEnterDelay", "mouseLeaveDelay", "overlayClassName", "overlayStyle", "destroyOnHidden", "destroyPopupOnHide", "dropdownRender", "popupRender"]), X = e("dropdown", n), k = `${X}-button`, y = {
         menu: u,
         arrow: m,
         autoFocus: c,
@@ -1780,8 +1780,8 @@ const je = e => {
         compactSize: W,
         compactItemClassnames: V
     } = st(X, i), te = j(k, V, p);
-    "destroyPopupOnHide" in e && (y.destroyPopupOnHide = _), "overlay" in e && (y.overlay = I), "open" in e && (y.open = H), "placement" in e ? y.placement = C : y.placement = i === "rtl" ? "bottomLeft" : "bottomRight";
-    const oe = l.createElement(ge, {
+    "destroyPopupOnHide" in t && (y.destroyPopupOnHide = _), "overlay" in t && (y.overlay = I), "open" in t && (y.open = H), "placement" in t ? y.placement = C : y.placement = i === "rtl" ? "bottomLeft" : "bottomRight";
+    const oe = l.createElement(pe, {
             type: a,
             danger: r,
             disabled: d,
@@ -1791,12 +1791,12 @@ const je = e => {
             href: M,
             title: h
         }, f),
-        F = l.createElement(ge, {
+        G = l.createElement(pe, {
             type: a,
             danger: r,
             icon: T
         }),
-        [ne, ie] = D([oe, F]);
+        [ne, ie] = D([oe, G]);
     return l.createElement(gt.Compact, Object.assign({
         className: te,
         size: W,
@@ -1807,5 +1807,5 @@ je.__ANT_BUTTON = !0;
 const Xt = ee;
 Xt.Button = je;
 export {
-    Xt as D, G as M, wt as O, vt as R, ee as a, Ct as b, ft as g
+    Xt as D, F as M, wt as O, vt as R, ee as a, Ct as b, ft as g
 };

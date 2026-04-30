@@ -2,14 +2,14 @@ import {
     y as g,
     j as r,
     e as f,
-    b as s,
+    d as s,
     U as m,
     F as S,
     z as T,
     r as y,
     E as $,
     cm as W,
-    d as z,
+    b as z,
     i as N,
     T as D,
     C as k
@@ -68,7 +68,7 @@ import "./index-10.js";
 import "./index-5.js";
 import "./move.js";
 import "./App-5.js";
-import "./index-25.js";
+import "./index-24.js";
 import "./GetAssetPath.js";
 import "./index-14.js";
 import "./EditOutlined.js";

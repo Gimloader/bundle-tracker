@@ -1,6 +1,6 @@
 import {
     U as a,
-    b as o,
+    d as o,
     j as e,
     F as s,
     c
@@ -65,11 +65,11 @@ const k = {
   font-weight: ${s.Bold};
   margin-bottom: 4px;
 `,
-    b = o.div`
+    g = o.div`
   font-size: 14px;
   margin-bottom: 4px;
 `,
-    g = t => e.jsxs(d, {
+    b = t => e.jsxs(d, {
         children: [e.jsx(f, {
             children: t.descriptor
         }), e.jsx(x, {
@@ -88,5 +88,5 @@ const k = {
   font-weight: ${s.Bold};
 `;
 export {
-    k as H, j as a, C as b, v as c, g as d, H as e, b as f, p as g
+    k as H, j as a, C as b, v as c, b as d, H as e, g as f, p as g
 };

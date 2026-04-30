@@ -1,50 +1,48 @@
 import {
     r as n,
-    aB as Re,
-    cK as je,
-    _ as le,
-    am as w,
+    aB as Ie,
+    cL as Re,
+    _ as re,
+    am as x,
     aI as ce,
     aH as Me,
     az as de,
     aE as me,
-    aD as I,
+    aD as P,
     aA as fe,
     aC as ie,
-    bg as ve,
-    db as _e,
+    bf as ve,
+    dc as _e,
     aO as Ce,
-    c$ as ze,
-    d1 as ge,
+    d0 as ze,
+    d2 as ge,
     A as He,
     ai as Le,
     aj as Ke,
-    ak as Q,
-    aM as We,
-    d9 as Te,
-    dc as Ae,
-    cU as Be,
-    bY as Fe,
-    bZ as Ue,
-    cS as Ve,
-    d6 as be,
-    al as Xe
+    ak as J,
+    aM as Te,
+    dd as We,
+    bY as Ae,
+    bZ as Be,
+    cT as Fe,
+    d7 as he,
+    al as Ve
 } from "./_index.js";
-var he = n.createContext(null),
+var be = n.createContext(null),
     we = n.createContext({}),
-    Ye = ["prefixCls", "className", "containerRef"],
-    Ge = function(t) {
-        var a = t.prefixCls,
-            o = t.className,
+    Ue = ["prefixCls", "className", "containerRef"],
+    Xe = function(t) {
+        var o = t.prefixCls,
+            a = t.className,
             r = t.containerRef,
-            l = Re(t, Ye),
-            c = n.useContext(we),
-            s = c.panel,
-            d = je(s, r);
-        return n.createElement("div", le({
-            className: w("".concat(a, "-content"), o),
+            l = Ie(t, Ue),
+            i = n.useContext(we),
+            c = i.panel,
+            v = Re(c, r);
+        return n.createElement("div", re({
+            className: x("".concat(o, "-content"), a),
             role: "dialog",
-            ref: d
+            ref: v
         }, ce(t, {
             aria: !0
         }), {
@@ -63,61 +61,61 @@ var pe = {
     position: "absolute"
 };
 
-function Ze(e, t) {
-    var a, o, r, l = e.prefixCls,
-        c = e.open,
-        s = e.placement,
-        d = e.inline,
-        x = e.push,
+function Ye(e, t) {
+    var o, a, r, l = e.prefixCls,
+        i = e.open,
+        c = e.placement,
+        v = e.inline,
+        p = e.push,
         S = e.forceRender,
-        p = e.autoFocus,
-        E = e.keyboard,
-        v = e.classNames,
-        D = e.rootClassName,
-        u = e.rootStyle,
-        f = e.zIndex,
-        C = e.className,
-        b = e.id,
-        R = e.style,
-        k = e.motion,
-        j = e.width,
-        P = e.height,
-        N = e.children,
-        h = e.mask,
-        y = e.maskClosable,
-        O = e.maskMotion,
-        ee = e.maskClassName,
-        Y = e.maskStyle,
-        W = e.afterOpenChange,
-        L = e.onClose,
-        z = e.onMouseEnter,
-        T = e.onMouseOver,
-        M = e.onMouseLeave,
-        G = e.onClick,
+        h = e.autoFocus,
+        O = e.keyboard,
+        s = e.classNames,
+        m = e.rootClassName,
+        b = e.rootStyle,
+        N = e.zIndex,
+        $ = e.className,
+        E = e.id,
+        j = e.style,
+        C = e.motion,
+        u = e.width,
+        y = e.height,
+        R = e.children,
+        H = e.mask,
+        M = e.maskClosable,
+        D = e.maskMotion,
+        L = e.maskClassName,
+        _ = e.maskStyle,
+        k = e.afterOpenChange,
+        z = e.onClose,
+        K = e.onMouseEnter,
+        Q = e.onMouseOver,
+        ee = e.onMouseLeave,
+        X = e.onClick,
         te = e.onKeyDown,
         ne = e.onKeyUp,
         g = e.styles,
-        A = e.drawerRender,
-        _ = n.useRef(),
-        B = n.useRef(),
-        F = n.useRef();
+        T = e.drawerRender,
+        I = n.useRef(),
+        W = n.useRef(),
+        A = n.useRef();
     n.useImperativeHandle(t, function() {
-        return _.current
+        return I.current
     });
-    var ae = function($) {
-        var Z = $.keyCode,
-            q = $.shiftKey;
-        switch (Z) {
+    var B = function(w) {
+        var G = w.keyCode,
+            Z = w.shiftKey;
+        switch (G) {
             case ie.TAB: {
-                if (Z === ie.TAB) {
-                    if (!q && document.activeElement === F.current) {
-                        var J;
-                        (J = B.current) === null || J === void 0 || J.focus({
+                if (G === ie.TAB) {
+                    if (!Z && document.activeElement === A.current) {
+                        var q;
+                        (q = W.current) === null || q === void 0 || q.focus({
                             preventScroll: !0
                         })
-                    } else if (q && document.activeElement === B.current) {
-                        var se;
-                        (se = F.current) === null || se === void 0 || se.focus({
+                    } else if (Z && document.activeElement === W.current) {
+                        var le;
+                        (le = A.current) === null || le === void 0 || le.focus({
                             preventScroll: !0
                         })
                     }
@@ -125,305 +123,294 @@ function Ze(e, t) {
                 break
             }
             case ie.ESC: {
-                L && E && ($.stopPropagation(), L($));
+                z && O && (w.stopPropagation(), z(w));
                 break
             }
         }
     };
     n.useEffect(function() {
-        if (c && p) {
-            var m;
-            (m = _.current) === null || m === void 0 || m.focus({
+        if (i && h) {
+            var d;
+            (d = I.current) === null || d === void 0 || d.focus({
                 preventScroll: !0
             })
         }
-    }, [c]);
-    var oe = n.useState(!1),
-        re = de(oe, 2),
-        U = re[0],
-        K = re[1],
-        i = n.useContext(he),
-        V;
-    typeof x == "boolean" ? V = x ? {} : {
+    }, [i]);
+    var F = n.useState(!1),
+        ae = de(F, 2),
+        oe = ae[0],
+        Y = ae[1],
+        f = n.useContext(be),
+        se;
+    typeof p == "boolean" ? se = p ? {} : {
         distance: 0
-    } : V = x || {};
-    var H = (a = (o = (r = V) === null || r === void 0 ? void 0 : r.distance) !== null && o !== void 0 ? o : i == null ? void 0 : i.pushDistance) !== null && a !== void 0 ? a : 180,
-        Ne = n.useMemo(function() {
+    } : se = p || {};
+    var V = (o = (a = (r = se) === null || r === void 0 ? void 0 : r.distance) !== null && a !== void 0 ? a : f == null ? void 0 : f.pushDistance) !== null && o !== void 0 ? o : 180,
+        $e = n.useMemo(function() {
             return {
-                pushDistance: H,
+                pushDistance: V,
                 push: function() {
-                    K(!0)
+                    Y(!0)
                 },
                 pull: function() {
-                    K(!1)
+                    Y(!1)
                 }
             }
-        }, [H]);
+        }, [V]);
     n.useEffect(function() {
-        if (c) {
-            var m;
-            i == null || (m = i.push) === null || m === void 0 || m.call(i)
+        if (i) {
+            var d;
+            f == null || (d = f.push) === null || d === void 0 || d.call(f)
         } else {
-            var $;
-            i == null || ($ = i.pull) === null || $ === void 0 || $.call(i)
+            var w;
+            f == null || (w = f.pull) === null || w === void 0 || w.call(f)
         }
-    }, [c]), n.useEffect(function() {
+    }, [i]), n.useEffect(function() {
         return function() {
-            var m;
-            i == null || (m = i.pull) === null || m === void 0 || m.call(i)
+            var d;
+            f == null || (d = f.pull) === null || d === void 0 || d.call(f)
         }
     }, []);
-    var Ee = n.createElement(me, le({
+    var Ee = n.createElement(me, re({
             key: "mask"
-        }, O, {
-            visible: h && c
-        }), function(m, $) {
-            var Z = m.className,
-                q = m.style;
+        }, D, {
+            visible: H && i
+        }), function(d, w) {
+            var G = d.className,
+                Z = d.style;
             return n.createElement("div", {
-                className: w("".concat(l, "-mask"), Z, v == null ? void 0 : v.mask, ee),
-                style: I(I(I({}, q), Y), g == null ? void 0 : g.mask),
-                onClick: y && c ? L : void 0,
-                ref: $
+                className: x("".concat(l, "-mask"), G, s == null ? void 0 : s.mask, L),
+                style: P(P(P({}, Z), _), g == null ? void 0 : g.mask),
+                onClick: M && i ? z : void 0,
+                ref: w
             })
         }),
-        De = typeof k == "function" ? k(s) : k,
-        X = {};
-    if (U && H) switch (s) {
+        De = typeof C == "function" ? C(c) : C,
+        U = {};
+    if (oe && V) switch (c) {
         case "top":
-            X.transform = "translateY(".concat(H, "px)");
+            U.transform = "translateY(".concat(V, "px)");
             break;
         case "bottom":
-            X.transform = "translateY(".concat(-H, "px)");
+            U.transform = "translateY(".concat(-V, "px)");
             break;
         case "left":
-            X.transform = "translateX(".concat(H, "px)");
+            U.transform = "translateX(".concat(V, "px)");
             break;
         default:
-            X.transform = "translateX(".concat(-H, "px)");
+            U.transform = "translateX(".concat(-V, "px)");
             break
     }
-    s === "left" || s === "right" ? X.width = ye(j) : X.height = ye(P);
+    c === "left" || c === "right" ? U.width = ye(u) : U.height = ye(y);
     var Pe = {
-            onMouseEnter: z,
-            onMouseOver: T,
-            onMouseLeave: M,
-            onClick: G,
+            onMouseEnter: K,
+            onMouseOver: Q,
+            onMouseLeave: ee,
+            onClick: X,
             onKeyDown: te,
             onKeyUp: ne
         },
-        Ie = n.createElement(me, le({
+        je = n.createElement(me, re({
             key: "panel"
         }, De, {
-            visible: c,
+            visible: i,
             forceRender: S,
-            onVisibleChanged: function($) {
-                W == null || W($)
+            onVisibleChanged: function(w) {
+                k == null || k(w)
             },
             removeOnLeave: !1,
             leavedClassName: "".concat(l, "-content-wrapper-hidden")
-        }), function(m, $) {
-            var Z = m.className,
-                q = m.style,
-                J = n.createElement(Ge, le({
-                    id: b,
-                    containerRef: $,
+        }), function(d, w) {
+            var G = d.className,
+                Z = d.style,
+                q = n.createElement(Xe, re({
+                    id: E,
+                    containerRef: w,
                     prefixCls: l,
-                    className: w(C, v == null ? void 0 : v.content),
-                    style: I(I({}, R), g == null ? void 0 : g.content)
+                    className: x($, s == null ? void 0 : s.content),
+                    style: P(P({}, j), g == null ? void 0 : g.content)
                 }, ce(e, {
                     aria: !0
-                }), Pe), N);
-            return n.createElement("div", le({
-                className: w("".concat(l, "-content-wrapper"), v == null ? void 0 : v.wrapper, Z),
-                style: I(I(I({}, X), q), g == null ? void 0 : g.wrapper)
+                }), Pe), R);
+            return n.createElement("div", re({
+                className: x("".concat(l, "-content-wrapper"), s == null ? void 0 : s.wrapper, G),
+                style: P(P(P({}, U), Z), g == null ? void 0 : g.wrapper)
             }, ce(e, {
                 data: !0
-            })), A ? A(J) : J)
+            })), T ? T(q) : q)
         }),
-        ue = I({}, u);
-    return f && (ue.zIndex = f), n.createElement(he.Provider, {
-        value: Ne
+        ue = P({}, b);
+    return N && (ue.zIndex = N), n.createElement(be.Provider, {
+        value: $e
     }, n.createElement("div", {
-        className: w(l, "".concat(l, "-").concat(s), D, fe(fe({}, "".concat(l, "-open"), c), "".concat(l, "-inline"), d)),
+        className: x(l, "".concat(l, "-").concat(c), m, fe(fe({}, "".concat(l, "-open"), i), "".concat(l, "-inline"), v)),
         style: ue,
         tabIndex: -1,
-        ref: _,
-        onKeyDown: ae
+        ref: I,
+        onKeyDown: B
     }, Ee, n.createElement("div", {
         tabIndex: 0,
-        ref: B,
+        ref: W,
         style: pe,
         "aria-hidden": "true",
         "data-sentinel": "start"
-    }), Ie, n.createElement("div", {
+    }), je, n.createElement("div", {
         tabIndex: 0,
-        ref: F,
+        ref: A,
         style: pe,
         "aria-hidden": "true",
         "data-sentinel": "end"
     })))
 }
-var qe = n.forwardRef(Ze),
-    Je = function(t) {
-        var a = t.open,
-            o = a === void 0 ? !1 : a,
+var Ge = n.forwardRef(Ye),
+    Ze = function(t) {
+        var o = t.open,
+            a = o === void 0 ? !1 : o,
             r = t.prefixCls,
             l = r === void 0 ? "rc-drawer" : r,
-            c = t.placement,
-            s = c === void 0 ? "right" : c,
-            d = t.autoFocus,
-            x = d === void 0 ? !0 : d,
+            i = t.placement,
+            c = i === void 0 ? "right" : i,
+            v = t.autoFocus,
+            p = v === void 0 ? !0 : v,
             S = t.keyboard,
-            p = S === void 0 ? !0 : S,
-            E = t.width,
-            v = E === void 0 ? 378 : E,
-            D = t.mask,
-            u = D === void 0 ? !0 : D,
-            f = t.maskClosable,
-            C = f === void 0 ? !0 : f,
-            b = t.getContainer,
-            R = t.forceRender,
-            k = t.afterOpenChange,
-            j = t.destroyOnClose,
-            P = t.onMouseEnter,
-            N = t.onMouseOver,
-            h = t.onMouseLeave,
-            y = t.onClick,
-            O = t.onKeyDown,
-            ee = t.onKeyUp,
-            Y = t.panelRef,
-            W = n.useState(!1),
-            L = de(W, 2),
-            z = L[0],
-            T = L[1],
-            M = n.useState(!1),
-            G = de(M, 2),
-            te = G[0],
-            ne = G[1];
+            h = S === void 0 ? !0 : S,
+            O = t.width,
+            s = O === void 0 ? 378 : O,
+            m = t.mask,
+            b = m === void 0 ? !0 : m,
+            N = t.maskClosable,
+            $ = N === void 0 ? !0 : N,
+            E = t.getContainer,
+            j = t.forceRender,
+            C = t.afterOpenChange,
+            u = t.destroyOnClose,
+            y = t.onMouseEnter,
+            R = t.onMouseOver,
+            H = t.onMouseLeave,
+            M = t.onClick,
+            D = t.onKeyDown,
+            L = t.onKeyUp,
+            _ = t.panelRef,
+            k = n.useState(!1),
+            z = de(k, 2),
+            K = z[0],
+            Q = z[1],
+            ee = n.useState(!1),
+            X = de(ee, 2),
+            te = X[0],
+            ne = X[1];
         ve(function() {
             ne(!0)
         }, []);
-        var g = te ? o : !1,
-            A = n.useRef(),
-            _ = n.useRef();
+        var g = te ? a : !1,
+            T = n.useRef(),
+            I = n.useRef();
         ve(function() {
-            g && (_.current = document.activeElement)
+            g && (I.current = document.activeElement)
         }, [g]);
-        var B = function(U) {
-                var K;
-                if (T(U), k == null || k(U), !U && _.current && !((K = A.current) !== null && K !== void 0 && K.contains(_.current))) {
-                    var i;
-                    (i = _.current) === null || i === void 0 || i.focus({
+        var W = function(oe) {
+                var Y;
+                if (Q(oe), C == null || C(oe), !oe && I.current && !((Y = T.current) !== null && Y !== void 0 && Y.contains(I.current))) {
+                    var f;
+                    (f = I.current) === null || f === void 0 || f.focus({
                         preventScroll: !0
                     })
                 }
             },
-            F = n.useMemo(function() {
+            A = n.useMemo(function() {
                 return {
-                    panel: Y
+                    panel: _
                 }
-            }, [Y]);
-        if (!R && !z && !g && j) return null;
-        var ae = {
-                onMouseEnter: P,
-                onMouseOver: N,
-                onMouseLeave: h,
-                onClick: y,
-                onKeyDown: O,
-                onKeyUp: ee
+            }, [_]);
+        if (!j && !K && !g && u) return null;
+        var B = {
+                onMouseEnter: y,
+                onMouseOver: R,
+                onMouseLeave: H,
+                onClick: M,
+                onKeyDown: D,
+                onKeyUp: L
             },
-            oe = I(I({}, t), {}, {
+            F = P(P({}, t), {}, {
                 open: g,
                 prefixCls: l,
-                placement: s,
-                autoFocus: x,
-                keyboard: p,
-                width: v,
-                mask: u,
-                maskClosable: C,
-                inline: b === !1,
-                afterOpenChange: B,
-                ref: A
-            }, ae);
+                placement: c,
+                autoFocus: p,
+                keyboard: h,
+                width: s,
+                mask: b,
+                maskClosable: $,
+                inline: E === !1,
+                afterOpenChange: W,
+                ref: T
+            }, B);
         return n.createElement(we.Provider, {
-            value: F
+            value: A
         }, n.createElement(_e, {
-            open: g || R || z,
+            open: g || j || K,
             autoDestroy: !1,
-            getContainer: b,
-            autoLock: u && (g || z)
-        }, n.createElement(qe, oe)))
+            getContainer: E,
+            autoLock: b && (g || K)
+        }, n.createElement(Ge, F)))
     };
 const xe = e => {
-        var t, a;
+        var t, o;
         const {
-            prefixCls: o,
-            ariaId: r,
-            title: l,
-            footer: c,
-            extra: s,
-            closable: d,
-            loading: x,
-            onClose: S,
+            prefixCls: a,
+            title: r,
+            footer: l,
+            extra: i,
+            loading: c,
+            onClose: v,
             headerStyle: p,
-            bodyStyle: E,
-            footerStyle: v,
-            children: D,
-            classNames: u,
-            styles: f
-        } = e, C = Ce("drawer");
-        let b;
-        d === !1 ? b = void 0 : d === void 0 || d === !0 ? b = "start" : b = (d == null ? void 0 : d.placement) === "end" ? "end" : "start";
-        const R = n.useCallback(h => n.createElement("button", {
-                type: "button",
-                onClick: S,
-                className: w(`${o}-close`, {
-                    [`${o}-close-${b}`]: b === "end"
-                })
-            }, h), [S, o, b]),
-            [k, j] = ze(ge(e), ge(C), {
-                closable: !0,
-                closeIconRender: R
-            }),
-            P = () => {
-                var h, y;
-                return !l && !k ? null : n.createElement("div", {
-                    style: Object.assign(Object.assign(Object.assign({}, (h = C.styles) === null || h === void 0 ? void 0 : h.header), p), f == null ? void 0 : f.header),
-                    className: w(`${o}-header`, {
-                        [`${o}-header-close-only`]: k && !l && !s
-                    }, (y = C.classNames) === null || y === void 0 ? void 0 : y.header, u == null ? void 0 : u.header)
-                }, n.createElement("div", {
-                    className: `${o}-header-title`
-                }, b === "start" && j, l && n.createElement("div", {
-                    className: `${o}-title`,
-                    id: r
-                }, l)), s && n.createElement("div", {
-                    className: `${o}-extra`
-                }, s), b === "end" && j)
-            },
-            N = () => {
-                var h, y;
-                if (!c) return null;
-                const O = `${o}-footer`;
-                return n.createElement("div", {
-                    className: w(O, (h = C.classNames) === null || h === void 0 ? void 0 : h.footer, u == null ? void 0 : u.footer),
-                    style: Object.assign(Object.assign(Object.assign({}, (y = C.styles) === null || y === void 0 ? void 0 : y.footer), v), f == null ? void 0 : f.footer)
-                }, c)
-            };
-        return n.createElement(n.Fragment, null, P(), n.createElement("div", {
-            className: w(`${o}-body`, u == null ? void 0 : u.body, (t = C.classNames) === null || t === void 0 ? void 0 : t.body),
-            style: Object.assign(Object.assign(Object.assign({}, (a = C.styles) === null || a === void 0 ? void 0 : a.body), E), f == null ? void 0 : f.body)
-        }, x ? n.createElement(He, {
+            bodyStyle: S,
+            footerStyle: h,
+            children: O,
+            classNames: s,
+            styles: m
+        } = e, b = Ce("drawer"), N = n.useCallback(u => n.createElement("button", {
+            type: "button",
+            onClick: v,
+            className: `${a}-close`
+        }, u), [v]), [$, E] = ze(ge(e), ge(b), {
+            closable: !0,
+            closeIconRender: N
+        }), j = n.useMemo(() => {
+            var u, y;
+            return !r && !$ ? null : n.createElement("div", {
+                style: Object.assign(Object.assign(Object.assign({}, (u = b.styles) === null || u === void 0 ? void 0 : u.header), p), m == null ? void 0 : m.header),
+                className: x(`${a}-header`, {
+                    [`${a}-header-close-only`]: $ && !r && !i
+                }, (y = b.classNames) === null || y === void 0 ? void 0 : y.header, s == null ? void 0 : s.header)
+            }, n.createElement("div", {
+                className: `${a}-header-title`
+            }, E, r && n.createElement("div", {
+                className: `${a}-title`
+            }, r)), i && n.createElement("div", {
+                className: `${a}-extra`
+            }, i))
+        }, [$, E, i, p, a, r]), C = n.useMemo(() => {
+            var u, y;
+            if (!l) return null;
+            const R = `${a}-footer`;
+            return n.createElement("div", {
+                className: x(R, (u = b.classNames) === null || u === void 0 ? void 0 : u.footer, s == null ? void 0 : s.footer),
+                style: Object.assign(Object.assign(Object.assign({}, (y = b.styles) === null || y === void 0 ? void 0 : y.footer), h), m == null ? void 0 : m.footer)
+            }, l)
+        }, [l, h, a]);
+        return n.createElement(n.Fragment, null, j, n.createElement("div", {
+            className: x(`${a}-body`, s == null ? void 0 : s.body, (t = b.classNames) === null || t === void 0 ? void 0 : t.body),
+            style: Object.assign(Object.assign(Object.assign({}, (o = b.styles) === null || o === void 0 ? void 0 : o.body), S), m == null ? void 0 : m.body)
+        }, c ? n.createElement(He, {
             active: !0,
             title: !1,
             paragraph: {
                 rows: 5
             },
-            className: `${o}-body-skeleton`
-        }) : D), N())
+            className: `${a}-body-skeleton`
+        }) : O), C)
     },
-    Qe = e => {
+    qe = e => {
         const t = "100%";
         return {
             left: `translateX(-${t})`,
@@ -454,98 +441,98 @@ const xe = e => {
     }, {
         opacity: 1
     })),
-    et = (e, t) => [ke(.7, t), Se({
-        transform: Qe(e)
+    Je = (e, t) => [ke(.7, t), Se({
+        transform: qe(e)
     }, {
         transform: "none"
     })],
-    tt = e => {
+    Qe = e => {
         const {
             componentCls: t,
-            motionDurationSlow: a
+            motionDurationSlow: o
         } = e;
         return {
             [t]: {
-                [`${t}-mask-motion`]: ke(0, a),
-                [`${t}-panel-motion`]: ["left", "right", "top", "bottom"].reduce((o, r) => Object.assign(Object.assign({}, o), {
-                    [`&-${r}`]: et(r, a)
+                [`${t}-mask-motion`]: ke(0, o),
+                [`${t}-panel-motion`]: ["left", "right", "top", "bottom"].reduce((a, r) => Object.assign(Object.assign({}, a), {
+                    [`&-${r}`]: Je(r, o)
                 }), {})
             }
         }
     },
-    nt = e => {
+    et = e => {
         const {
             borderRadiusSM: t,
-            componentCls: a,
-            zIndexPopup: o,
+            componentCls: o,
+            zIndexPopup: a,
             colorBgMask: r,
             colorBgElevated: l,
-            motionDurationSlow: c,
-            motionDurationMid: s,
-            paddingXS: d,
-            padding: x,
+            motionDurationSlow: i,
+            motionDurationMid: c,
+            paddingXS: v,
+            padding: p,
             paddingLG: S,
-            fontSizeLG: p,
-            lineHeightLG: E,
-            lineWidth: v,
-            lineType: D,
-            colorSplit: u,
-            marginXS: f,
-            colorIcon: C,
-            colorIconHover: b,
-            colorBgTextHover: R,
-            colorBgTextActive: k,
-            colorText: j,
-            fontWeightStrong: P,
-            footerPaddingBlock: N,
-            footerPaddingInline: h,
-            calc: y
-        } = e, O = `${a}-content-wrapper`;
+            fontSizeLG: h,
+            lineHeightLG: O,
+            lineWidth: s,
+            lineType: m,
+            colorSplit: b,
+            marginXS: N,
+            colorIcon: $,
+            colorIconHover: E,
+            colorBgTextHover: j,
+            colorBgTextActive: C,
+            colorText: u,
+            fontWeightStrong: y,
+            footerPaddingBlock: R,
+            footerPaddingInline: H,
+            calc: M
+        } = e, D = `${o}-content-wrapper`;
         return {
-            [a]: {
+            [o]: {
                 position: "fixed",
                 inset: 0,
-                zIndex: o,
+                zIndex: a,
                 pointerEvents: "none",
-                color: j,
+                color: u,
                 "&-pure": {
                     position: "relative",
                     background: l,
                     display: "flex",
                     flexDirection: "column",
-                    [`&${a}-left`]: {
+                    [`&${o}-left`]: {
                         boxShadow: e.boxShadowDrawerLeft
                     },
-                    [`&${a}-right`]: {
+                    [`&${o}-right`]: {
                         boxShadow: e.boxShadowDrawerRight
                     },
-                    [`&${a}-top`]: {
+                    [`&${o}-top`]: {
                         boxShadow: e.boxShadowDrawerUp
                     },
-                    [`&${a}-bottom`]: {
+                    [`&${o}-bottom`]: {
                         boxShadow: e.boxShadowDrawerDown
                     }
                 },
                 "&-inline": {
                     position: "absolute"
                 },
-                [`${a}-mask`]: {
+                [`${o}-mask`]: {
                     position: "absolute",
                     inset: 0,
-                    zIndex: o,
+                    zIndex: a,
                     background: r,
                     pointerEvents: "auto"
                 },
-                [O]: {
+                [D]: {
                     position: "absolute",
-                    zIndex: o,
+                    zIndex: a,
                     maxWidth: "100vw",
-                    transition: `all ${c}`,
+                    transition: `all ${i}`,
                     "&-hidden": {
                         display: "none"
                     }
                 },
-                [`&-left > ${O}`]: {
+                [`&-left > ${D}`]: {
                     top: 0,
                     bottom: 0,
                     left: {
@@ -554,7 +541,7 @@ const xe = e => {
                     },
                     boxShadow: e.boxShadowDrawerLeft
                 },
-                [`&-right > ${O}`]: {
+                [`&-right > ${D}`]: {
                     top: 0,
                     right: {
                         _skip_check_: !0,
@@ -563,17 +550,17 @@ const xe = e => {
                     bottom: 0,
                     boxShadow: e.boxShadowDrawerRight
                 },
-                [`&-top > ${O}`]: {
+                [`&-top > ${D}`]: {
                     top: 0,
                     insetInline: 0,
                     boxShadow: e.boxShadowDrawerUp
                 },
-                [`&-bottom > ${O}`]: {
+                [`&-bottom > ${D}`]: {
                     bottom: 0,
                     insetInline: 0,
                     boxShadow: e.boxShadowDrawerDown
                 },
-                [`${a}-content`]: {
+                [`${o}-content`]: {
                     display: "flex",
                     flexDirection: "column",
                     width: "100%",
@@ -582,14 +569,14 @@ const xe = e => {
                     background: l,
                     pointerEvents: "auto"
                 },
-                [`${a}-header`]: {
+                [`${o}-header`]: {
                     display: "flex",
                     flex: 0,
                     alignItems: "center",
-                    padding: `${Q(x)} ${Q(S)}`,
-                    fontSize: p,
-                    lineHeight: E,
-                    borderBottom: `${Q(v)} ${D} ${u}`,
+                    padding: `${J(p)} ${J(S)}`,
+                    fontSize: h,
+                    lineHeight: O,
+                    borderBottom: `${J(s)} ${m} ${b}`,
                     "&-title": {
                         display: "flex",
                         flex: 1,
@@ -598,19 +585,20 @@ const xe = e => {
                         minHeight: 0
                     }
                 },
-                [`${a}-extra`]: {
+                [`${o}-extra`]: {
                     flex: "none"
                 },
-                [`${a}-close`]: Object.assign({
+                [`${o}-close`]: Object.assign({
                     display: "inline-flex",
-                    width: y(p).add(d).equal(),
-                    height: y(p).add(d).equal(),
+                    width: M(h).add(v).equal(),
+                    height: M(h).add(v).equal(),
                     borderRadius: t,
                     justifyContent: "center",
                     alignItems: "center",
-                    color: C,
-                    fontWeight: P,
-                    fontSize: p,
+                    marginInlineEnd: N,
+                    color: $,
+                    fontWeight: y,
+                    fontSize: h,
                     fontStyle: "normal",
                     lineHeight: 1,
                     textAlign: "center",
@@ -619,47 +607,41 @@ const xe = e => {
                     background: "transparent",
                     border: 0,
                     cursor: "pointer",
-                    transition: `all ${s}`,
+                    transition: `all ${c}`,
                     textRendering: "auto",
-                    [`&${a}-close-end`]: {
-                        marginInlineStart: f
-                    },
-                    [`&:not(${a}-close-end)`]: {
-                        marginInlineEnd: f
-                    },
                     "&:hover": {
-                        color: b,
-                        backgroundColor: R,
+                        color: E,
+                        backgroundColor: j,
                         textDecoration: "none"
                     },
                     "&:active": {
-                        backgroundColor: k
+                        backgroundColor: C
                     }
-                }, We(e)),
-                [`${a}-title`]: {
+                }, Te(e)),
+                [`${o}-title`]: {
                     flex: 1,
                     margin: 0,
                     fontWeight: e.fontWeightStrong,
-                    fontSize: p,
-                    lineHeight: E
+                    fontSize: h,
+                    lineHeight: O
                 },
-                [`${a}-body`]: {
+                [`${o}-body`]: {
                     flex: 1,
                     minWidth: 0,
                     minHeight: 0,
                     padding: S,
                     overflow: "auto",
-                    [`${a}-body-skeleton`]: {
+                    [`${o}-body-skeleton`]: {
                         width: "100%",
                         height: "100%",
                         display: "flex",
                         justifyContent: "center"
                     }
                 },
-                [`${a}-footer`]: {
+                [`${o}-footer`]: {
                     flexShrink: 0,
-                    padding: `${Q(N)} ${Q(h)}`,
-                    borderTop: `${Q(v)} ${D} ${u}`
+                    padding: `${J(R)} ${J(H)}`,
+                    borderTop: `${J(s)} ${m} ${b}`
                 },
                 "&-rtl": {
                     direction: "rtl"
@@ -667,135 +649,131 @@ const xe = e => {
             }
         }
     },
-    at = e => ({
+    tt = e => ({
         zIndexPopup: e.zIndexPopupBase,
         footerPaddingBlock: e.paddingXS,
         footerPaddingInline: e.padding
     }),
     Oe = Le("Drawer", e => {
         const t = Ke(e, {});
-        return [nt(t), tt(t)]
-    }, at);
-var $e = function(e, t) {
-    var a = {};
-    for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (a[o] = e[o]);
+        return [et(t), Qe(t)]
+    }, tt);
+var Ne = function(e, t) {
+    var o = {};
+    for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (o[a] = e[a]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var r = 0, o = Object.getOwnPropertySymbols(e); r < o.length; r++) t.indexOf(o[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, o[r]) && (a[o[r]] = e[o[r]]);
-    return a
+        for (var r = 0, a = Object.getOwnPropertySymbols(e); r < a.length; r++) t.indexOf(a[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[r]) && (o[a[r]] = e[a[r]]);
+    return o
 };
-const ot = {
+const nt = {
         distance: 180
     },
-    rt = e => {
+    at = e => {
         const {
             rootClassName: t,
-            width: a,
-            height: o,
+            width: o,
+            height: a,
             size: r = "default",
             mask: l = !0,
-            push: c = ot,
-            open: s,
-            afterOpenChange: d,
-            onClose: x,
+            push: i = nt,
+            open: c,
+            afterOpenChange: v,
+            onClose: p,
             prefixCls: S,
-            getContainer: p,
-            panelRef: E = null,
-            style: v,
-            className: D,
-            "aria-labelledby": u,
-            visible: f,
-            afterVisibleChange: C,
-            maskStyle: b,
-            drawerStyle: R,
-            contentWrapperStyle: k,
+            getContainer: h,
+            style: O,
+            className: s,
+            visible: m,
+            afterVisibleChange: b,
+            maskStyle: N,
+            drawerStyle: $,
+            contentWrapperStyle: E,
             destroyOnClose: j,
-            destroyOnHidden: P
-        } = e, N = $e(e, ["rootClassName", "width", "height", "size", "mask", "push", "open", "afterOpenChange", "onClose", "prefixCls", "getContainer", "panelRef", "style", "className", "aria-labelledby", "visible", "afterVisibleChange", "maskStyle", "drawerStyle", "contentWrapperStyle", "destroyOnClose", "destroyOnHidden"]), h = Te(), y = N.title ? h : void 0, {
-            getPopupContainer: O,
-            getPrefixCls: ee,
-            direction: Y,
-            className: W,
-            style: L,
-            classNames: z,
-            styles: T
-        } = Ce("drawer"), M = ee("drawer", S), [G, te, ne] = Oe(M), g = p === void 0 && O ? () => O(document.body) : p, A = w({
+            destroyOnHidden: C
+        } = e, u = Ne(e, ["rootClassName", "width", "height", "size", "mask", "push", "open", "afterOpenChange", "onClose", "prefixCls", "getContainer", "style", "className", "visible", "afterVisibleChange", "maskStyle", "drawerStyle", "contentWrapperStyle", "destroyOnClose", "destroyOnHidden"]), {
+            getPopupContainer: y,
+            getPrefixCls: R,
+            direction: H,
+            className: M,
+            style: D,
+            classNames: L,
+            styles: _
+        } = Ce("drawer"), k = R("drawer", S), [z, K, Q] = Oe(k), ee = h === void 0 && y ? () => y(document.body) : h, X = x({
             "no-mask": !l,
-            [`${M}-rtl`]: Y === "rtl"
-        }, t, te, ne), _ = n.useMemo(() => a ?? (r === "large" ? 736 : 378), [a, r]), B = n.useMemo(() => o ?? (r === "large" ? 736 : 378), [o, r]), F = {
-            motionName: be(M, "mask-motion"),
+            [`${k}-rtl`]: H === "rtl"
+        }, t, K, Q), te = n.useMemo(() => o ?? (r === "large" ? 736 : 378), [o, r]), ne = n.useMemo(() => a ?? (r === "large" ? 736 : 378), [a, r]), g = {
+            motionName: he(k, "mask-motion"),
             motionAppear: !0,
             motionEnter: !0,
             motionLeave: !0,
             motionDeadline: 500
-        }, ae = H => ({
-            motionName: be(M, `panel-motion-${H}`),
+        }, T = ae => ({
+            motionName: he(k, `panel-motion-${ae}`),
             motionAppear: !0,
             motionEnter: !0,
             motionLeave: !0,
             motionDeadline: 500
-        }), oe = Ae(), re = Be(E, oe), [U, K] = Fe("Drawer", N.zIndex), {
-            classNames: i = {},
-            styles: V = {}
-        } = N;
-        return G(n.createElement(Ue, {
+        }), I = We(), [W, A] = Ae("Drawer", u.zIndex), {
+            classNames: B = {},
+            styles: F = {}
+        } = u;
+        return z(n.createElement(Be, {
             form: !0,
             space: !0
-        }, n.createElement(Ve.Provider, {
-            value: K
-        }, n.createElement(Je, Object.assign({
-            prefixCls: M,
-            onClose: x,
-            maskMotion: F,
-            motion: ae
-        }, N, {
+        }, n.createElement(Fe.Provider, {
+            value: A
+        }, n.createElement(Ze, Object.assign({
+            prefixCls: k,
+            onClose: p,
+            maskMotion: g,
+            motion: T
+        }, u, {
             classNames: {
-                mask: w(i.mask, z.mask),
-                content: w(i.content, z.content),
-                wrapper: w(i.wrapper, z.wrapper)
+                mask: x(B.mask, L.mask),
+                content: x(B.content, L.content),
+                wrapper: x(B.wrapper, L.wrapper)
             },
             styles: {
-                mask: Object.assign(Object.assign(Object.assign({}, V.mask), b), T.mask),
-                content: Object.assign(Object.assign(Object.assign({}, V.content), R), T.content),
-                wrapper: Object.assign(Object.assign(Object.assign({}, V.wrapper), k), T.wrapper)
+                mask: Object.assign(Object.assign(Object.assign({}, F.mask), N), _.mask),
+                content: Object.assign(Object.assign(Object.assign({}, F.content), $), _.content),
+                wrapper: Object.assign(Object.assign(Object.assign({}, F.wrapper), E), _.wrapper)
             },
-            open: s ?? f,
+            open: c ?? m,
             mask: l,
-            push: c,
-            width: _,
-            height: B,
-            style: Object.assign(Object.assign({}, L), v),
-            className: w(W, D),
-            rootClassName: A,
-            getContainer: g,
-            afterOpenChange: d ?? C,
-            panelRef: re,
-            zIndex: U,
-            "aria-labelledby": u ?? y,
-            destroyOnClose: P ?? j
+            push: i,
+            width: te,
+            height: ne,
+            style: Object.assign(Object.assign({}, D), O),
+            className: x(M, s),
+            rootClassName: X,
+            getContainer: ee,
+            afterOpenChange: v ?? b,
+            panelRef: I,
+            zIndex: W,
+            destroyOnClose: C ?? j
         }), n.createElement(xe, Object.assign({
-            prefixCls: M
-        }, N, {
-            ariaId: y,
-            onClose: x
+            prefixCls: k
+        }, u, {
+            onClose: p
         }))))))
     },
-    lt = e => {
+    ot = e => {
         const {
             prefixCls: t,
-            style: a,
-            className: o,
+            style: o,
+            className: a,
             placement: r = "right"
-        } = e, l = $e(e, ["prefixCls", "style", "className", "placement"]), {
-            getPrefixCls: c
-        } = n.useContext(Xe), s = c("drawer", t), [d, x, S] = Oe(s), p = w(s, `${s}-pure`, `${s}-${r}`, x, S, o);
-        return d(n.createElement("div", {
-            className: p,
-            style: a
+        } = e, l = Ne(e, ["prefixCls", "style", "className", "placement"]), {
+            getPrefixCls: i
+        } = n.useContext(Ve), c = i("drawer", t), [v, p, S] = Oe(c), h = x(c, `${c}-pure`, `${c}-${r}`, p, S, a);
+        return v(n.createElement("div", {
+            className: h,
+            style: o
         }, n.createElement(xe, Object.assign({
-            prefixCls: s
+            prefixCls: c
         }, l))))
     };
-rt._InternalPanelDoNotUseOrYouWillBeFired = lt;
+at._InternalPanelDoNotUseOrYouWillBeFired = ot;
 export {
-    rt as D
+    at as D
 };

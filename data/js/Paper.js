@@ -1,7 +1,7 @@
 import {
     j as a,
     e as s,
-    b as r
+    d as r
 } from "./_index.js";
 const t = e => a.jsx(n, {
         onClick: e.onClick,

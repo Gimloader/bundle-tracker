@@ -8,15 +8,15 @@ import {
     _ as R,
     aC as q,
     ai as X,
-    aj as K,
-    aL as V,
+    aj as V,
+    aL as K,
     ak as $,
-    aM as B,
-    bG as _,
-    al as F,
-    bB as G,
+    aM as F,
+    bF as _,
+    al as B,
+    bV as G,
     aP as Q,
-    d2 as J,
+    d3 as J,
     bA as U
 } from "./_index.js";
 var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loadingIcon", "checkedChildren", "unCheckedChildren", "onClick", "onChange", "onKeyDown"],
@@ -33,12 +33,12 @@ var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loa
             I = e.onClick,
             C = e.onChange,
             w = e.onKeyDown,
-            M = W(e, Y),
-            x = P(!1, {
+            y = W(e, Y),
+            M = P(!1, {
                 value: d,
                 defaultValue: t
             }),
-            f = A(x, 2),
+            f = A(M, 2),
             p = f[0],
             S = f[1];
 
@@ -47,7 +47,7 @@ var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loa
             return i || (b = h, S(b), C == null || C(b, k)), b
         }
 
-        function y(h) {
+        function x(h) {
             h.which === q.LEFT ? v(!1, h) : h.which === q.RIGHT && v(!0, h), w == null || w(h)
         }
 
@@ -56,14 +56,14 @@ var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loa
             I == null || I(k, h)
         }
         var E = D(l, o, (c = {}, H(c, "".concat(l, "-checked"), p), H(c, "".concat(l, "-disabled"), i), c));
-        return g.createElement("button", R({}, M, {
+        return g.createElement("button", R({}, y, {
             type: "button",
             role: "switch",
             "aria-checked": p,
             disabled: i,
             className: E,
             ref: n,
-            onKeyDown: y,
+            onKeyDown: x,
             onClick: m
         }), r, g.createElement("span", {
             className: "".concat(l, "-inner")
@@ -291,7 +291,7 @@ const Z = e => {
             trackMinWidth: a
         } = e;
         return {
-            [n]: Object.assign(Object.assign(Object.assign(Object.assign({}, V(e)), {
+            [n]: Object.assign(Object.assign(Object.assign(Object.assign({}, K(e)), {
                 position: "relative",
                 display: "inline-block",
                 boxSizing: "border-box",
@@ -308,7 +308,7 @@ const Z = e => {
                 [`&:hover:not(${n}-disabled)`]: {
                     background: e.colorTextTertiary
                 }
-            }), B(e)), {
+            }), F(e)), {
                 [`&${n}-checked`]: {
                     background: e.switchColor,
                     [`&:hover:not(${n}-disabled)`]: {
@@ -353,7 +353,7 @@ const Z = e => {
         }
     },
     ce = X("Switch", e => {
-        const n = K(e, {
+        const n = V(e, {
             switchDuration: e.motionDurationMid,
             switchColor: e.colorPrimary,
             switchDisabledOpacity: e.opacityLoading,
@@ -384,14 +384,14 @@ const re = g.forwardRef((e, n) => {
             defaultChecked: u,
             defaultValue: I,
             onChange: C
-        } = e, w = le(e, ["prefixCls", "size", "disabled", "loading", "className", "rootClassName", "style", "checked", "value", "defaultChecked", "defaultValue", "onChange"]), [M, x] = P(!1, {
+        } = e, w = le(e, ["prefixCls", "size", "disabled", "loading", "className", "rootClassName", "style", "checked", "value", "defaultChecked", "defaultValue", "onChange"]), [y, M] = P(!1, {
             value: r ?? s,
             defaultValue: u ?? I
         }), {
             getPrefixCls: f,
             direction: p,
             switch: S
-        } = g.useContext(F), v = g.useContext(G), y = (l ?? v) || o, m = f("switch", c), E = g.createElement("div", {
+        } = g.useContext(B), v = g.useContext(G), x = (l ?? v) || o, m = f("switch", c), E = g.createElement("div", {
             className: `${m}-handle`
         }, o && g.createElement(U, {
             className: `${m}-loading-icon`
@@ -400,18 +400,17 @@ const re = g.forwardRef((e, n) => {
             [`${m}-loading`]: o,
             [`${m}-rtl`]: p === "rtl"
         }, d, t, k, b), j = Object.assign(Object.assign({}, S == null ? void 0 : S.style), i), L = (...z) => {
-            x(z[0]), C == null || C.apply(void 0, z)
+            M(z[0]), C == null || C.apply(void 0, z)
         };
         return h(g.createElement(J, {
-            component: "Switch",
-            disabled: y
+            component: "Switch"
         }, g.createElement(N, Object.assign({}, w, {
-            checked: M,
+            checked: y,
             onChange: L,
             prefixCls: m,
             className: T,
             style: j,
-            disabled: y,
+            disabled: x,
             ref: n,
             loadingIcon: E
         }))))

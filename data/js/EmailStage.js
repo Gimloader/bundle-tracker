@@ -17,7 +17,7 @@ import {
     ad as K,
     a6 as Q,
     a7 as X,
-    b
+    d as b
 } from "./_index.js";
 import {
     o as W
@@ -40,11 +40,11 @@ import {
 function se(t = {}) {
     const {
         onScriptLoadSuccess: a,
-        onScriptLoadError: r
+        onScriptLoadError: i
     } = t, [l, u] = n.useState(!1), g = n.useRef(a);
     g.current = a;
-    const m = n.useRef(r);
-    return m.current = r, n.useEffect(() => {
+    const m = n.useRef(i);
+    return m.current = i, n.useEffect(() => {
         const d = document.createElement("script");
         return d.src = "https://accounts.google.com/gsi/client", d.async = !0, d.defer = !0, d.onload = () => {
             var c;
@@ -59,15 +59,15 @@ function se(t = {}) {
 }
 const z = n.createContext(null);
 
-function re({
+function ie({
     clientId: t,
     onScriptLoadSuccess: a,
-    onScriptLoadError: r,
+    onScriptLoadError: i,
     children: l
 }) {
     const u = se({
             onScriptLoadSuccess: a,
-            onScriptLoadError: r
+            onScriptLoadError: i
         }),
         g = n.useMemo(() => ({
             clientId: t,
@@ -78,7 +78,7 @@ function re({
     }, l)
 }
 
-function ie() {
+function re() {
     const t = n.useContext(z);
     if (!t) throw new Error("Google OAuth components must be used within GoogleOAuthProvider");
     return t
@@ -87,15 +87,15 @@ function ie() {
 function ae({
     flow: t = "implicit",
     scope: a = "",
-    onSuccess: r,
+    onSuccess: i,
     onError: l,
     ...u
 }) {
     const {
         clientId: g,
         scriptLoadedSuccessfully: m
-    } = ie(), d = n.useRef(), c = n.useRef(r);
-    c.current = r;
+    } = re(), d = n.useRef(), c = n.useRef(i);
+    c.current = i;
     const h = n.useRef(l);
     h.current = l, n.useEffect(() => {
         var o;
@@ -140,7 +140,7 @@ const le = W(() => {
         })
     }),
     de = t => {
-        const [a, r] = n.useState([]), [l, u] = n.useState(!1), [g, m] = n.useState(!1), [d, c] = n.useState(!1), [h, E] = n.useState(!1), [S, o] = n.useState("");
+        const [a, i] = n.useState([]), [l, u] = n.useState(!1), [g, m] = n.useState(!1), [d, c] = n.useState(!1), [h, E] = n.useState(!1), [S, o] = n.useState("");
         n.useEffect(() => {
             t.open ? (m(!0), w({
                 url: "/api/users/password-reset-options",
@@ -149,7 +149,7 @@ const le = W(() => {
                     email: t.defaultEmail
                 },
                 success: s => {
-                    s.passwordless && u(s.passwordless), s.others && s.others.length ? r(s.others) : x()
+                    s.passwordless && u(s.passwordless), s.others && s.others.length ? i(s.others) : x()
                 },
                 error: s => {
                     A({
@@ -163,7 +163,7 @@ const le = W(() => {
                 both: () => {
                     m(!1)
                 }
-            })) : (r([]), u(!1), m(!1), c(!1), E(!1), o(""))
+            })) : (i([]), u(!1), m(!1), c(!1), E(!1), o(""))
         }, [t.open]);
         const f = (s, p) => {
                 d || (c(!0), w({
@@ -285,11 +285,11 @@ const le = W(() => {
     }),
     ue = t => {
         const a = ae({
-            onSuccess: r => {
-                t.onToken(r.code)
+            onSuccess: i => {
+                t.onToken(i.code)
             },
-            onError: r => {
-                t.onError(r)
+            onError: i => {
+                t.onError(i)
             },
             flow: "auth-code"
         });
@@ -300,7 +300,7 @@ const le = W(() => {
             })
         })
     },
-    ge = t => new Promise((a, r) => {
+    ge = t => new Promise((a, i) => {
         w({
             url: "/api/users/google-auth-details",
             data: {
@@ -310,7 +310,7 @@ const le = W(() => {
                 a(l)
             },
             error: l => {
-                r(l)
+                i(l)
             }
         })
     }),
@@ -319,7 +319,7 @@ const le = W(() => {
         return a.test(String(t).toLowerCase())
     },
     ye = W(() => {
-        const [t, a] = n.useState(!1), [r, l] = n.useState(!1), [u, g] = n.useState(""), [m, d] = n.useState(!1), [c, h] = n.useState(null), [E, S] = n.useState(!1), {
+        const [t, a] = n.useState(!1), [i, l] = n.useState(!1), [u, g] = n.useState(""), [m, d] = n.useState(!1), [c, h] = n.useState(null), [E, S] = n.useState(!1), {
             login: o,
             navigation: f
         } = n.useContext(_), {
@@ -328,40 +328,40 @@ const le = W(() => {
         n.useEffect(() => {
             w({
                 url: "/api/users/google-token",
-                success: i => {
-                    i && i.token && g(i.token)
+                success: r => {
+                    r && r.token && g(r.token)
                 }
             })
         }, []);
-        const k = i => {
-                if (h(null), r) return;
-                const j = i.target.value || "";
+        const k = r => {
+                if (h(null), i) return;
+                const j = r.target.value || "";
                 o.email = j, a(me(j))
             },
             s = () => {
                 t && B()
             },
             p = () => {
-                o.informationNeeded.replace(o.informationNeeded.filter(i => i !== v.email))
+                o.informationNeeded.replace(o.informationNeeded.filter(r => r !== v.email))
             },
             N = () => {
                 o.informationNeeded.replace([...o.informationNeeded, v.accountType]), o.firstName || o.informationNeeded.replace([...o.informationNeeded, v.firstName]), o.lastName || o.informationNeeded.replace([...o.informationNeeded, v.lastName]), p()
             },
             B = () => {
-                r || (h(null), l(!0), S(!1), w({
+                i || (h(null), l(!0), S(!1), w({
                     url: "/api/users/register/email-info",
                     method: "post",
                     data: {
                         email: o.email
                     },
-                    success: i => {
-                        if (l(!1), window.location.pathname.includes("login") && !i.accountExists) {
+                    success: r => {
+                        if (l(!1), window.location.pathname.includes("login") && !r.accountExists) {
                             o.googleToken = "", S(!0);
                             return
                         }
-                        if (i.accountExists) {
+                        if (r.accountExists) {
                             if (o.userExists = !0, !o.googleToken) {
-                                if (i.noPassword) {
+                                if (r.noPassword) {
                                     f.emailSignInBlocked = !0;
                                     return
                                 }
@@ -370,33 +370,33 @@ const le = W(() => {
                             p()
                         } else p(), N()
                     },
-                    error: i => {
-                        l(!1), h(i)
+                    error: r => {
+                        l(!1), h(r)
                     }
                 }))
             },
-            V = i => {
+            V = r => {
                 const {
                     firstName: j,
                     lastName: q,
                     email: P,
                     emailVerified: U,
                     userToken: R
-                } = i;
+                } = r;
                 P && (U && R && (o.googleToken = R), o.email = P, o.firstName = j, o.lastName = q, B())
             },
             F = () => {
                 ne.error("Error with Google Authentication. Please try again.")
             },
-            $ = i => {
-                ge(i).then(j => {
+            $ = r => {
+                ge(r).then(j => {
                     V(j)
                 }).catch(j => {
                     F()
                 })
             },
             J = () => {
-                const i = f.classJoiningName ? "Join" : "Continue";
+                const r = f.classJoiningName ? "Join" : "Continue";
                 return e.jsxs(e.Fragment, {
                     children: [x && e.jsxs("div", {
                         style: {
@@ -406,20 +406,17 @@ const le = W(() => {
                             marginBottom: 11
                         },
                         children: ["Authenticate with Google to", " ", f.classJoiningName ? "join" : "login"]
-                    }), u ? e.jsx(re, {
+                    }), u ? e.jsx(ie, {
                         clientId: u,
                         children: e.jsx(ue, {
-                            text: i,
+                            text: r,
                             onToken: $,
                             onError: F
                         })
                     }) : e.jsx(M, {
-                        text: i
+                        text: r
                     }), x ? e.jsxs(e.Fragment, {
                         children: [e.jsx(L, {}), e.jsx("a", {
-                            style: {
-                                cursor: "pointer"
-                            },
                             onClick: () => d(!0),
                             children: "or add a password..."
                         }), e.jsx(de, {
@@ -448,7 +445,7 @@ const le = W(() => {
                                     marginTop: 5
                                 },
                                 onClick: s,
-                                loading: r,
+                                loading: i,
                                 children: "Continue"
                             })]
                         })

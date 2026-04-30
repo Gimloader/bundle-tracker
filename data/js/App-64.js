@@ -2,13 +2,13 @@ import {
     y as L,
     j as e,
     U as p,
-    b as s,
-    u as d,
-    r as y,
+    d as s,
+    u as c,
+    r as b,
     n as M,
     f as P,
     i as E,
-    C as b,
+    C as y,
     Z as q,
     M as D,
     B as g,
@@ -118,23 +118,23 @@ const re = ["creative-map-listing"],
   color: rgba(255, 255, 255, 0.9);
 `,
     w = "https://docs.creative.gimkit.com/general/publishing/community-rules-for-publishing-with-gimkit-creative",
-    ce = t => {
-        const [r, i, a] = d(!1), [o, R, S] = d(!1), [k, $] = d(!1), [I, N] = y.useState(""), [F, W, u] = d(!1), {
+    de = t => {
+        const [r, i, a] = c(!1), [o, R, S] = c(!1), [k, $] = c(!1), [I, N] = b.useState(""), [F, W, u] = c(!1), {
             id: x
         } = M(), A = () => {
             if (r) return;
             i();
-            const c = {
+            const d = {
                 listing: x
             };
-            t.kitId && (c.kit = t.kitId), V({
+            t.kitId && (d.kit = t.kitId), V({
                 event: "creative_discovery_hosted",
                 properties: {
                     id: x
                 }
             }), v({
                 url: "/api/matchmaker/intent/map/play/listing/create",
-                data: c,
+                data: d,
                 success: h => {
                     window.location.href = `/host?id=${h}`
                 },
@@ -162,7 +162,7 @@ const re = ["creative-map-listing"],
                 }
             }))
         };
-        return e.jsxs(de, {
+        return e.jsxs(ce, {
             children: [!P() && !E() ? e.jsxs(pe, {
                 children: ["This map is limited to 5 players.", " ", e.jsxs(l, {
                     to: q,
@@ -170,7 +170,7 @@ const re = ["creative-map-listing"],
                         color: n.Yellow,
                         textDecoration: "underline"
                     },
-                    children: ["Upgrade to ", b, " Pro"]
+                    children: ["Upgrade to ", y, " Pro"]
                 }), " ", "to remove this limit."]
             }) : null, e.jsx(J, {
                 size: "large",
@@ -191,7 +191,7 @@ const re = ["creative-map-listing"],
                     children: "Play Live"
                 })
             }), e.jsxs(me, {
-                children: ["This map was not created by ", b, ". If anything in this map breaks our", " ", e.jsx(l, {
+                children: ["This map was not created by ", y, ". If anything in this map breaks our", " ", e.jsx(l, {
                     to: w,
                     external: !0,
                     target: "_blank",
@@ -243,13 +243,13 @@ const re = ["creative-map-listing"],
                             marginTop: 10
                         },
                         maxLength: 1e3,
-                        onChange: c => N(c.target.value)
+                        onChange: d => N(d.target.value)
                     })]
                 })
             })]
         })
     },
-    de = s(m).attrs({
+    ce = s(m).attrs({
         className: "maxWidth"
     })`
   padding-top: 10px;
@@ -348,17 +348,17 @@ const re = ["creative-map-listing"],
   font-weight: ${_.Bold};
   font-size: 16px;
 `,
-    be = t => {
-        const [r, i] = y.useState();
+    ye = t => {
+        const [r, i] = b.useState();
         return !r && t.response.kits ? e.jsx(ue, {
             kits: t.response.kits,
             selectKit: i
-        }) : e.jsx(ce, {
+        }) : e.jsx(de, {
             kitId: r
         })
     },
-    ye = t => {
-        const r = y.useRef(null),
+    be = t => {
+        const r = b.useRef(null),
             [i] = Z(r),
             a = Math.min(500, i * .9),
             o = a * (9 / 16);
@@ -376,7 +376,7 @@ const re = ["creative-map-listing"],
                     paddingTop: o / 2 + 35
                 },
                 children: [e.jsx(B, {
-                    title: `${t.response.title} | ${b} Creative`,
+                    title: `${t.response.title} | ${y} Creative`,
                     override: !0
                 }), e.jsx(ie, {
                     ...t.response
@@ -385,7 +385,7 @@ const re = ["creative-map-listing"],
                         algorithm: G.darkAlgorithm
                     },
                     children: e.jsx(H, {})
-                }), e.jsx(be, {
+                }), e.jsx(ye, {
                     response: t.response
                 })]
             })]
@@ -456,7 +456,7 @@ const re = ["creative-map-listing"],
                 })]
             })
         }) : e.jsx(f, {
-            children: r ? e.jsx(ye, {
+            children: r ? e.jsx(be, {
                 response: r
             }) : null
         })

@@ -2,7 +2,7 @@ import {
     r as m,
     j as t,
     U as f,
-    b as d,
+    d,
     e as x
 } from "./_index.js";
 import {
@@ -31,10 +31,10 @@ import {
     u as N
 } from "./useIntervalWhen.js";
 import {
-    u as b
+    u as L
 } from "./useWillUnmount.js";
 import {
-    C as L
+    C as b
 } from "./CircularProgress.js";
 import {
     S as k
@@ -101,11 +101,11 @@ const l = (s, i) => {
             isLoading: n,
             error: c
         } = v();
-        return b(() => {
+        return L(() => {
             C()
         }), i || n ? t.jsx(h, {
             className: "maxAll",
-            children: t.jsx(L, {
+            children: t.jsx(b, {
                 style: {
                     color: x.White
                 }

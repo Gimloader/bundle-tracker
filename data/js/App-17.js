@@ -42,8 +42,8 @@ import {
 } from "./useQuery.js";
 import {
     a as Pe,
-    b as Ne,
-    u as Re,
+    b as Re,
+    u as Ne,
     R as we
 } from "./ReportAccuracyMeter.js";
 import {
@@ -116,7 +116,7 @@ const E = ({
     }, e === "" ? e : e || "/")
 };
 E.__ANT_BREADCRUMB_SEPARATOR = !0;
-var $e = function(e, t) {
+var _e = function(e, t) {
     var n = {};
     for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
@@ -124,7 +124,7 @@ var $e = function(e, t) {
     return n
 };
 
-function _e(e, t) {
+function $e(e, t) {
     if (e.title === void 0 || e.title === null) return null;
     const n = Object.keys(t).join("|");
     return typeof e.title == "object" ? e.title : String(e.title).replace(new RegExp(`:(${n})`, "g"), (r, o) => t[o] || r)
@@ -135,7 +135,7 @@ function W(e, t, n, r) {
     const {
         className: o,
         onClick: l
-    } = t, c = $e(t, ["className", "onClick"]), d = Object.assign(Object.assign({}, q(c, {
+    } = t, c = _e(t, ["className", "onClick"]), d = Object.assign(Object.assign({}, q(c, {
         data: !0,
         aria: !0
     })), {
@@ -152,7 +152,7 @@ function W(e, t, n, r) {
 function Ae(e, t) {
     return (r, o, l, c, d) => {
         if (t) return t(r, o, l, c);
-        const y = _e(r, o);
+        const y = $e(r, o);
         return W(e, r, y, d)
     }
 }
@@ -207,9 +207,7 @@ const V = e => {
             }
             return p
         })(r);
-        return b != null ? i.createElement(i.Fragment, null, i.createElement("li", {
-            className: `${t}-item`
-        }, b), n && i.createElement(E, null, n)) : null
+        return b != null ? i.createElement(i.Fragment, null, i.createElement("li", null, b), n && i.createElement(E, null, n)) : null
     },
     K = e => {
         const {
@@ -244,7 +242,7 @@ const Be = e => {
                     padding: 0,
                     listStyle: "none"
                 },
-                [`${t}-item a`]: Object.assign({
+                a: Object.assign({
                     color: e.linkColor,
                     transition: `color ${e.motionDurationMid}`,
                     padding: `0 ${H(e.paddingXXS)}`,
@@ -257,7 +255,7 @@ const Be = e => {
                         backgroundColor: e.colorBgTextHover
                     }
                 }, ie(e)),
-                [`${t}-item:last-child`]: {
+                "li:last-child": {
                     color: e.lastItemColor
                 },
                 [`${t}-separator`]: {
@@ -358,7 +356,7 @@ const De = (e, t) => {
             n = n.replace(`:${r}`, e[r])
         }), n
     },
-    R = e => {
+    N = e => {
         const {
             prefixCls: t,
             separator: n = "/",
@@ -382,7 +380,7 @@ const De = (e, t) => {
             v = Ae(m, b);
         if (s && s.length > 0) {
             const S = [],
-                N = d || c;
+                R = d || c;
             f = s.map((C, w) => {
                 const {
                     path: Q,
@@ -394,21 +392,21 @@ const De = (e, t) => {
                     className: Z,
                     separator: ee,
                     dropdownProps: re
-                } = C, $ = De(p, Q);
-                $ !== void 0 && S.push($);
+                } = C, _ = De(p, Q);
+                _ !== void 0 && S.push(_);
                 const D = T ?? w;
                 if (J === "separator") return i.createElement(E, {
                     key: D
                 }, ee);
-                const _ = {},
+                const $ = {},
                     te = w === s.length - 1;
-                M ? _.menu = M : X && (_.overlay = X);
+                M ? $.menu = M : X && ($.overlay = X);
                 let {
                     href: A
                 } = C;
-                return S.length && $ !== void 0 && (A = `#/${S.join("/")}`), i.createElement(V, Object.assign({
+                return S.length && _ !== void 0 && (A = `#/${S.join("/")}`), i.createElement(V, Object.assign({
                     key: D
-                }, _, q(C, {
+                }, $, q(C, {
                     data: !0,
                     aria: !0
                 }), {
@@ -418,14 +416,14 @@ const De = (e, t) => {
                     separator: te ? "" : n,
                     onClick: Y,
                     prefixCls: m
-                }), v(C, p, N, S, A))
+                }), v(C, p, R, S, A))
             })
         } else if (y) {
             const S = L(y).length;
-            f = L(y).map((N, C) => {
-                if (!N) return N;
+            f = L(y).map((R, C) => {
+                if (!R) return R;
                 const w = C === S - 1;
-                return se(N, {
+                return se(R, {
                     separator: w ? "" : n,
                     key: C
                 })
@@ -440,8 +438,8 @@ const De = (e, t) => {
             style: U
         }, O), i.createElement("ol", null, f)))
     };
-R.Item = K;
-R.Separator = E;
+N.Item = K;
+N.Separator = E;
 const He = e => {
         const {
             student: t,
@@ -457,13 +455,13 @@ const He = e => {
                 padding: "40px 0px"
             },
             children: [a.jsxs("div", {
-                children: [a.jsxs(R, {
-                    children: [a.jsx(R.Item, {
+                children: [a.jsxs(N, {
+                    children: [a.jsx(N.Item, {
                         children: a.jsx(Oe, {
                             to: `/class/${n._id}`,
                             children: n.name
                         })
-                    }), a.jsx(R.Item, {
+                    }), a.jsx(N.Item, {
                         children: "Student Progress"
                     })]
                 }), a.jsx("div", {
@@ -588,7 +586,7 @@ const He = e => {
         title: "Individual Accuracy",
         dataIndex: "accuracy",
         key: "report-accuracy",
-        render: e => a.jsx(Ne, {
+        render: e => a.jsx(Re, {
             percent: e
         })
     }, {
@@ -603,7 +601,7 @@ const He = e => {
             id: e,
             studentId: t
         } = pe(), [n, r] = ue(), o = Math.max(1, Number(n.get("page")) ?? 1), [l, c] = i.useState(0), d = i.useRef(null);
-        Re(d, s => {
+        Ne(d, s => {
             var v;
             c(((v = s.target) == null ? void 0 : v.offsetTop) ?? 0)
         });

@@ -3,7 +3,7 @@ import {
     r as c,
     j as r,
     e as d,
-    b as o,
+    d as o,
     U as g
 } from "./_index.js";
 import {
@@ -22,10 +22,10 @@ const h = e => u("cosmos/packs/" + e + ".png"),
     p = 280,
     H = e => {
         const [t, a, n] = i(!1), s = c.useMemo(() => `radial-gradient(circle, ${m(.25,e.color)} 0%, ${e.color} 100%)`, [e.color, t]);
-        return r.jsx(b, {
+        return r.jsx(f, {
             to: e.redirect ? `/rewards/pack/${e.id}` : void 0,
             onClick: e.handleClick,
-            children: r.jsx(f, {
+            children: r.jsx(b, {
                 onMouseEnter: a,
                 onMouseLeave: n,
                 background: s,
@@ -44,11 +44,11 @@ const h = e => u("cosmos/packs/" + e + ".png"),
             })
         })
     },
-    b = o(x)`
+    f = o(x)`
   text-decoration: none;
   color: ${d.White} !important;
 `,
-    f = o.div.attrs({
+    b = o.div.attrs({
         className: "medium-shadow"
     })`
   background: ${e=>e.background};

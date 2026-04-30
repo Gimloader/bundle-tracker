@@ -12,7 +12,7 @@ import {
 import {
     m as Ot,
     o as j,
-    dE as Qn,
+    dD as Jn,
     aZ as zs,
     ce as Oa,
     ar as Ia,
@@ -20,52 +20,53 @@ import {
     aw as Da
 } from "./_index.js";
 import {
-    M as $n
+    M as Qn
 } from "./MapModeType.js";
 import {
     M as Ws
 } from "./MapStyle.js";
 import {
-    p as jn
+    p as $n
 } from "./playSound.js";
-var kn = (V => (V.preload = "preload", V.game = "game", V))(kn || {}),
+var jn = (V => (V.preload = "preload", V.game = "game", V))(jn || {}),
     Ba = Object.defineProperty,
-    qn = (V, T, E, M) => {
+    kn = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Ba(T, E, A), A
     };
 class Hs {
     constructor() {
-        this.currentScene = kn.preload, this.isCursorOverCanvas = !1, this.gpuTier = 0, Ot(this)
+        this.currentScene = jn.preload, this.isCursorOverCanvas = !1, this.gpuTier = 0, Ot(this)
     }
 }
-qn([j], Hs.prototype, "currentScene");
-qn([j], Hs.prototype, "isCursorOverCanvas");
+kn([j], Hs.prototype, "currentScene");
+kn([j], Hs.prototype, "isCursorOverCanvas");
 var Ga = Object.defineProperty,
-    fe = (V, T, E, M) => {
+    oe = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Ga(T, E, A), A
     };
-class ae {
+class ee {
     constructor() {
-        this.client = null, this.clientConnectionString = "", this.authId = "", this.findingServerForGame = !1, this.errorFindingServerForGame = !1, this.attemptingToConnect = !0, this.attemptingToReconnect = !1, this.failedToReconnect = !1, this.hasJoinedRoom = !1, this.joinedRoom = !1, this.errorJoiningRoom = !1, this.error = null, this.isUpToDateWithPingPong = !0, this.syncingAfterReconnection = !1, this.phaseBeforeReconnect = null, this.roomIntentErrorMessage = "", this.ping = 0, Ot(this)
+        this.client = null, this.clientConnectionString = "", this.authId = "", this.findingServerForGame = !1, this.errorFindingServerForGame = !1, this.attemptingToConnect = !0, this.attemptingToReconnect = !1, this.failedToReconnect = !1, this.hasJoinedRoom = !1, this.joinedRoom = !1, this.errorJoiningRoom = !1, this.error = null, this.isOffline = !1, this.isUpToDateWithPingPong = !0, this.syncingAfterReconnection = !1, this.phaseBeforeReconnect = null, this.roomIntentErrorMessage = "", this.ping = 0, Ot(this)
     }
 }
-fe([j], ae.prototype, "authId");
-fe([j], ae.prototype, "findingServerForGame");
-fe([j], ae.prototype, "errorFindingServerForGame");
-fe([j], ae.prototype, "attemptingToConnect");
-fe([j], ae.prototype, "attemptingToReconnect");
-fe([j], ae.prototype, "failedToReconnect");
-fe([j], ae.prototype, "hasJoinedRoom");
-fe([j], ae.prototype, "joinedRoom");
-fe([j], ae.prototype, "errorJoiningRoom");
-fe([j], ae.prototype, "error");
-fe([j], ae.prototype, "isUpToDateWithPingPong");
-fe([j], ae.prototype, "syncingAfterReconnection");
-fe([j], ae.prototype, "phaseBeforeReconnect");
-fe([j], ae.prototype, "roomIntentErrorMessage");
-fe([j], ae.prototype, "ping");
+oe([j], ee.prototype, "authId");
+oe([j], ee.prototype, "findingServerForGame");
+oe([j], ee.prototype, "errorFindingServerForGame");
+oe([j], ee.prototype, "attemptingToConnect");
+oe([j], ee.prototype, "attemptingToReconnect");
+oe([j], ee.prototype, "failedToReconnect");
+oe([j], ee.prototype, "hasJoinedRoom");
+oe([j], ee.prototype, "joinedRoom");
+oe([j], ee.prototype, "errorJoiningRoom");
+oe([j], ee.prototype, "error");
+oe([j], ee.prototype, "isOffline");
+oe([j], ee.prototype, "isUpToDateWithPingPong");
+oe([j], ee.prototype, "syncingAfterReconnection");
+oe([j], ee.prototype, "phaseBeforeReconnect");
+oe([j], ee.prototype, "roomIntentErrorMessage");
+oe([j], ee.prototype, "ping");
 var ba = Object.defineProperty,
     vs = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -85,7 +86,7 @@ let Na = class {
         this.mainCharacterTeleported = !1
     }
 };
-var _n = (V => (V.none = "none", V.adding = "adding", V.removing = "removing", V.editingDevice = "editingDevice", V.editingWire = "editingWire", V.hooks = "hooks", V.deviceUI = "deviceUI", V))(_n || {}),
+var qn = (V => (V.none = "none", V.adding = "adding", V.removing = "removing", V.editingDevice = "editingDevice", V.editingWire = "editingWire", V.hooks = "hooks", V.deviceUI = "deviceUI", V))(qn || {}),
     Xa = Object.defineProperty,
     Ks = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -106,7 +107,7 @@ class cs {
 Ks([j], cs.prototype, "selectedDeviceType");
 Ks([j], cs.prototype, "existingDevice");
 Ks([j], cs.prototype, "currentlySelectedProp");
-const Tn = {
+const yn = {
     minDepth: 1,
     maxDepth: 5,
     playerBuiltTerrain: 6,
@@ -119,7 +120,7 @@ var Ua = Object.defineProperty,
     };
 class Wi {
     constructor() {
-        this.currentlySelectedTerrain = "", this.currentlySelectedTerrainDepth = Math.floor((Tn.maxDepth + Tn.minDepth) / 2), this.buildTerrainAsWall = !1, this.brushSize = 1, Ot(this)
+        this.currentlySelectedTerrain = "", this.currentlySelectedTerrainDepth = Math.floor((yn.maxDepth + yn.minDepth) / 2), this.buildTerrainAsWall = !1, this.brushSize = 1, Ot(this)
     }
 }
 ps([j], Wi.prototype, "currentlySelectedTerrain");
@@ -145,12 +146,12 @@ var za = Object.defineProperty,
         return A && za(T, E, A), A
     },
     Ha = (V => (V.none = "none", V.device = "device", V.terrain = "terrain", V.wire = "wire", V))(Ha || {});
-class tr {
+class _n {
     constructor() {
         this.terrain = new Wi, this.devices = new cs, this.wires = new ms, this.mode = "none", Ot(this)
     }
 }
-Wa([j], tr.prototype, "mode");
+Wa([j], _n.prototype, "mode");
 var Ka = Object.defineProperty,
     Za = Object.getOwnPropertyDescriptor,
     Js = (V, T, E, M) => {
@@ -168,11 +169,11 @@ class gs {
         return !!this.__wiresUnderCursor.size
     }
 }
-Js([Qn], gs.prototype, "cursorIsOverDevice", 1);
-Js([Qn], gs.prototype, "cursorIsOverWire", 1);
+Js([Jn], gs.prototype, "cursorIsOverDevice", 1);
+Js([Jn], gs.prototype, "cursorIsOverWire", 1);
 Js([j], gs.prototype, "cursorIsOverCharacterId", 2);
 var Ja = Object.defineProperty,
-    er = (V, T, E, M) => {
+    tr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Ja(T, E, A), A
     };
@@ -184,8 +185,8 @@ class Qs {
         }, this.desiredOpenDeviceId = "", this.serverVersionOpenDeviceId = "", Ot(this)
     }
 }
-er([j], Qs.prototype, "current");
-er([j], Qs.prototype, "serverVersionOpenDeviceId");
+tr([j], Qs.prototype, "current");
+tr([j], Qs.prototype, "serverVersionOpenDeviceId");
 var Qa = Object.defineProperty,
     ui = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -209,12 +210,12 @@ var ja = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && ja(T, E, A), A
     };
-class ir {
+class er {
     constructor() {
         this.currentlyEditedWireId = "", Ot(this)
     }
 }
-ka([j], ir.prototype, "currentlyEditedWireId");
+ka([j], er.prototype, "currentlyEditedWireId");
 var qa = Object.defineProperty,
     Hi = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -232,11 +233,11 @@ Hi([j], Di.prototype, "cameraZoom");
 Hi([j], Di.prototype, "topDownControlsActive");
 let _a = class {
     constructor() {
-        this.device = new Ze, this.wire = new ir, this.preferences = new Di
+        this.device = new Ze, this.wire = new er, this.preferences = new Di
     }
 };
 var to = Object.defineProperty,
-    sr = (V, T, E, M) => {
+    ir = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && to(T, E, A), A
     };
@@ -245,8 +246,8 @@ class $s {
         this.deviceId = "", this.info = null, Ot(this)
     }
 }
-sr([j], $s.prototype, "deviceId");
-sr([j], $s.prototype, "info");
+ir([j], $s.prototype, "deviceId");
+ir([j], $s.prototype, "info");
 var eo = Object.defineProperty,
     _t = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -305,7 +306,7 @@ fi([j], Je.prototype, "removingTilesMode");
 fi([j], Je.prototype, "removingTilesLayer");
 fi([j], Je.prototype, "removingTilesEraserSize");
 var ao = Object.defineProperty,
-    nr = (V, T, E, M) => {
+    sr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && ao(T, E, A), A
     };
@@ -314,8 +315,8 @@ class js {
         this.title = "", this.description = "", Ot(this)
     }
 }
-nr([j], js.prototype, "title");
-nr([j], js.prototype, "description");
+sr([j], js.prototype, "title");
+sr([j], js.prototype, "description");
 var oo = Object.defineProperty,
     ks = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -330,7 +331,7 @@ ks([j], xs.prototype, "id");
 ks([j], xs.prototype, "name");
 ks([j], xs.prototype, "shuffle");
 var ho = Object.defineProperty,
-    rr = (V, T, E, M) => {
+    nr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && ho(T, E, A), A
     };
@@ -339,19 +340,19 @@ class qs {
         this.additions = j.array(), this.additionTimeouts = new Map, this.showingLevelUp = !1, Ot(this)
     }
 }
-rr([j], qs.prototype, "additions");
-rr([j], qs.prototype, "showingLevelUp");
+nr([j], qs.prototype, "additions");
+nr([j], qs.prototype, "showingLevelUp");
 var lo = Object.defineProperty,
     uo = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && lo(T, E, A), A
     };
-class ar {
+class rr {
     constructor() {
-        this.startGameWithMode = $n.liveGame, Ot(this)
+        this.startGameWithMode = Qn.liveGame, Ot(this)
     }
 }
-uo([j], ar.prototype, "startGameWithMode");
+uo([j], rr.prototype, "startGameWithMode");
 var fo = Object.defineProperty,
     Bi = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -398,7 +399,7 @@ _s([j], ys.prototype, "allowWeaponDrop");
 _s([j], ys.prototype, "allowItemDrop");
 _s([j], ys.prototype, "allowResourceDrop");
 var po = Object.defineProperty,
-    or = (V, T, E, M) => {
+    ar = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && po(T, E, A), A
     };
@@ -407,8 +408,8 @@ class tn {
         this.activeDeviceId = "", this.vignetteActive = !0, this.vignetteStrength = 0, Ot(this)
     }
 }
-or([j], tn.prototype, "vignetteActive");
-or([j], tn.prototype, "vignetteStrength");
+ar([j], tn.prototype, "vignetteActive");
+ar([j], tn.prototype, "vignetteStrength");
 const mo = {
     normal: 310
 };
@@ -422,12 +423,12 @@ var xo = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && xo(T, E, A), A
     };
-class hr {
+class or {
     constructor() {
         this.activeClassDeviceId = "", this.lastActivatedClassDeviceId = "", this.lastClassDeviceActivationId = -1, Ot(this)
     }
 }
-yo([j], hr.prototype, "activeClassDeviceId");
+yo([j], or.prototype, "activeClassDeviceId");
 var To = Object.defineProperty,
     Ve = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -454,10 +455,10 @@ var So = Object.defineProperty,
     };
 class Qe {
     constructor() {
-        this.currentAction = _n.none, this.phase = !1, this.movementSpeed = mo.normal, this.roleLevel = 0, this.completedInitialPlacement = !1, this.isRespawning = !1, this.unredeemedXP = 0, this.properties = j.map(), this.myTeam = "", this.spawnPosition = {
+        this.currentAction = qn.none, this.phase = !1, this.movementSpeed = mo.normal, this.roleLevel = 0, this.completedInitialPlacement = !1, this.isRespawning = !1, this.unredeemedXP = 0, this.properties = j.map(), this.myTeam = "", this.spawnPosition = {
             x: 0,
             y: 0
-        }, this.teleportCount = 0, this.classDesigner = new hr, this.adding = new tr, this.removing = new Je, this.editing = new _a, this.inventory = new Ie, this.context = new gs, this.interactives = new $s, this.deviceUI = new Qs, this.nonDismissMessage = new js, this.spectating = new xs, this.xp = new qs, this.preferences = new ar, this.cinematicMode = new di, this.health = new vi, this.zoneDropOverrides = new ys, this.mood = new tn, this.mobileControls = new go, this.customAssets = new De, this.gotKicked = !1, Ot(this)
+        }, this.teleportCount = 0, this.classDesigner = new or, this.adding = new _n, this.removing = new Je, this.editing = new _a, this.inventory = new Ie, this.context = new gs, this.interactives = new $s, this.deviceUI = new Qs, this.nonDismissMessage = new js, this.spectating = new xs, this.xp = new qs, this.preferences = new rr, this.cinematicMode = new di, this.health = new vi, this.zoneDropOverrides = new ys, this.mood = new tn, this.mobileControls = new go, this.customAssets = new De, this.gotKicked = !1, Ot(this)
     }
 }
 ci([j], Qe.prototype, "currentAction");
@@ -467,12 +468,12 @@ ci([j], Qe.prototype, "completedInitialPlacement");
 ci([j], Qe.prototype, "isRespawning");
 ci([j], Qe.prototype, "unredeemedXP");
 ci([j], Qe.prototype, "properties");
-const Sn = {
+const Tn = {
     width: 1e3,
     height: 1e3
 };
 var Co = Object.defineProperty,
-    lr = (V, T, E, M) => {
+    hr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Co(T, E, A), A
     };
@@ -481,8 +482,8 @@ class en {
         this.devices = j.map(), this.codeGrids = j.map(), this.states = new Map, Ot(this)
     }
 }
-lr([j], en.prototype, "devices");
-lr([j], en.prototype, "codeGrids");
+hr([j], en.prototype, "devices");
+hr([j], en.prototype, "codeGrids");
 class Eo {
     constructor() {
         this.tiles = new Map, this.modifiedHealth = new Map, this.teamColorTiles = new Map, this.currentTerrainUpdateId = 0, this.queuedTiles = new Map
@@ -493,12 +494,12 @@ var Ao = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Ao(T, E, A), A
     };
-class ur {
+class lr {
     constructor() {
         this.wires = j.map(), Ot(this)
     }
 }
-Po([j], ur.prototype, "wires");
+Po([j], lr.prototype, "wires");
 var Mo = Object.defineProperty,
     bi = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -525,60 +526,60 @@ var Ro = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Ro(T, E, A), A
     };
-class fr {
+class ur {
     constructor() {
-        this.width = Sn.width, this.height = Sn.height, this.terrain = new Eo, this.customAssets = new Ts, this.devices = new en, this.wires = new ur, this.mapOptionsJSON = "", Ot(this)
+        this.width = Tn.width, this.height = Tn.height, this.terrain = new Eo, this.customAssets = new Ts, this.devices = new en, this.wires = new lr, this.mapOptionsJSON = "", Ot(this)
     }
 }
-Fo([j], fr.prototype, "mapOptionsJSON");
+Fo([j], ur.prototype, "mapOptionsJSON");
 var wo = Object.defineProperty,
     Lo = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && wo(T, E, A), A
     };
-class dr {
+class fr {
     constructor() {
         this.terrainOptions = [], this.propsOptions = [], this.deviceOptions = [], this.customAssetsOptions = [], this.itemOptions = [], this.skinOptions = [], this.requestedAllProps = !1, this.hasAllProps = !1, Ot(this)
     }
 }
-Lo([j], dr.prototype, "hasAllProps");
+Lo([j], fr.prototype, "hasAllProps");
 var Oo = Object.defineProperty,
     Io = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Oo(T, E, A), A
     },
     Do = (V => (V.home = "home", V.terrain = "terrain", V.props = "props", V.devices = "devices", V))(Do || {});
-class vr {
+class dr {
     constructor() {
         this.screen = "home", Ot(this)
     }
 }
-Io([j], vr.prototype, "screen");
+Io([j], dr.prototype, "screen");
 var Bo = Object.defineProperty,
     Go = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Bo(T, E, A), A
     },
     bo = (V => (V.home = "home", V.mapOptions = "mapOptions", V.editing = "editing", V.permissions = "permissions", V.saving = "saving", V.help = "help", V.publishing = "publishing", V))(bo || {});
-class cr {
+class vr {
     constructor() {
         this.screen = "home", Ot(this)
     }
 }
-Go([j], cr.prototype, "screen");
+Go([j], vr.prototype, "screen");
 var No = Object.defineProperty,
-    pr = (V, T, E, M) => {
+    cr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && No(T, E, A), A
     },
     Xo = (V => (V.home = "home", V.add = "add", V.inventory = "inventory", V.scoreboard = "scoreboard", V.sorting = "sorting", V.startScreen = "startScreen", V.playerManager = "playerManager", V.soundOptions = "soundOptions", V.assignmentInfo = "assignmentInfo", V.options = "options", V.teamCustomization = "teamCustomization", V))(Xo || {});
 class nn {
     constructor() {
-        this.screen = "home", this.duringGameScreenVisible = !1, this.addMenu = new vr, this.optionsMenu = new cr, Ot(this)
+        this.screen = "home", this.duringGameScreenVisible = !1, this.addMenu = new dr, this.optionsMenu = new vr, Ot(this)
     }
 }
-pr([j], nn.prototype, "screen");
-pr([j], nn.prototype, "duringGameScreenVisible");
+cr([j], nn.prototype, "screen");
+cr([j], nn.prototype, "duringGameScreenVisible");
 var Yo = Object.defineProperty,
     rn = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -594,21 +595,21 @@ class Ss {
 rn([j], Ss.prototype, "cosmosModalOpen");
 rn([j], Ss.prototype, "switchToRegisterScreenWhenCosmosModalOpens");
 rn([zs], Ss.prototype, "closeAllModals");
-var mr = (V => (V.brokenShield = "b", V.shield = "s", V.health = "h", V.fragility = "f", V))(mr || {}),
+var pr = (V => (V.brokenShield = "b", V.shield = "s", V.health = "h", V.fragility = "f", V))(pr || {}),
     Uo = Object.defineProperty,
-    gr = (V, T, E, M) => {
+    mr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Uo(T, E, A), A
     };
 class an {
     constructor() {
-        this.type = mr.shield, this.show = !1, Ot(this)
+        this.type = pr.shield, this.show = !1, Ot(this)
     }
 }
-gr([j], an.prototype, "type");
-gr([j], an.prototype, "show");
+mr([j], an.prototype, "type");
+mr([j], an.prototype, "show");
 var Vo = Object.defineProperty,
-    xr = (V, T, E, M) => {
+    gr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Vo(T, E, A), A
     };
@@ -617,8 +618,8 @@ class on {
         this.interactionWantsToBeVisible = !1, this.prioritizeInteraction = !0, Ot(this)
     }
 }
-xr([j], on.prototype, "interactionWantsToBeVisible");
-xr([j], on.prototype, "prioritizeInteraction");
+gr([j], on.prototype, "interactionWantsToBeVisible");
+gr([j], on.prototype, "prioritizeInteraction");
 var zo = Object.defineProperty,
     Se = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -656,18 +657,18 @@ var Wo = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Wo(T, E, A), A
     };
-class yr {
+class xr {
     constructor() {
         this.feedItems = j.array(), Ot(this)
     }
 }
-Ho([j], yr.prototype, "feedItems");
+Ho([j], xr.prototype, "feedItems");
 var Cs = (V => (V.saved = "saved", V.published = "published", V))(Cs || {}),
-    Tr = (V => (V.player = "player", V.spectator = "spectator", V))(Tr || {}),
+    yr = (V => (V.player = "player", V.spectator = "spectator", V))(yr || {}),
     hn = (V => (V.preGame = "preGame", V.game = "game", V))(hn || {}),
-    Sr = (V => (V.countdown = "countdown", V.game = "game", V.results = "results", V))(Sr || {}),
+    Tr = (V => (V.countdown = "countdown", V.game = "game", V.results = "results", V))(Tr || {}),
     Ko = Object.defineProperty,
-    Cr = (V, T, E, M) => {
+    Sr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Ko(T, E, A), A
     };
@@ -676,19 +677,19 @@ class ln {
         this.categories = j.array(), this.items = j.array(), Ot(this)
     }
 }
-Cr([j], ln.prototype, "categories");
-Cr([j], ln.prototype, "items");
+Sr([j], ln.prototype, "categories");
+Sr([j], ln.prototype, "items");
 var Zo = Object.defineProperty,
     Jo = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Zo(T, E, A), A
     };
-class Er {
+class Cr {
     constructor() {
         this.widgets = j.array(), Ot(this)
     }
 }
-Jo([j], Er.prototype, "widgets");
+Jo([j], Cr.prototype, "widgets");
 var Qo = Object.defineProperty,
     un = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -696,7 +697,7 @@ var Qo = Object.defineProperty,
     };
 class Es {
     constructor() {
-        this.phase = Sr.countdown, this.callToAction = new ln, this.widgets = new Er, this.countdownEnd = 0, this.resultsEnd = 0, Ot(this)
+        this.phase = Tr.countdown, this.callToAction = new ln, this.widgets = new Cr, this.countdownEnd = 0, this.resultsEnd = 0, Ot(this)
     }
 }
 un([j], Es.prototype, "phase");
@@ -721,50 +722,50 @@ var jo = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && jo(T, E, A), A
     };
-class Ar {
+class Er {
     constructor() {
         this.characterToTeamMap = j.map(), Ot(this)
     }
 }
-ko([j], Ar.prototype, "characterToTeamMap");
+ko([j], Er.prototype, "characterToTeamMap");
 var qo = Object.defineProperty,
     de = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && qo(T, E, A), A
     };
-class oe {
+class he {
     constructor() {
-        this.amIGameOwner = !1, this.ownerRole = Tr.player, this.gameOwnerId = "", this.mapStyle = Ws.topDown, this.version = Cs.published, this.modeType = $n.liveGame, this.gameTime = 0, this.gameTimeLastUpdateAt = 0, this.loadingPhase = !1, this.phaseChangedAt = Date.now(), this.phase = null, this.duringTransition = !1, this.gameClockDuration = "", this.canAddGameTime = !1, this.cosmosBlocked = !1, this.allowGoogleTranslate = !1, this.mapCreatorRoleLevel = 0, this.gameSession = new Es, this.globalPermissions = new Zi, this.customTeams = new Ar, Ot(this)
+        this.amIGameOwner = !1, this.ownerRole = yr.player, this.gameOwnerId = "", this.mapStyle = Ws.topDown, this.version = Cs.published, this.modeType = Qn.liveGame, this.gameTime = 0, this.gameTimeLastUpdateAt = 0, this.loadingPhase = !1, this.phaseChangedAt = Date.now(), this.phase = null, this.duringTransition = !1, this.gameClockDuration = "", this.canAddGameTime = !1, this.cosmosBlocked = !1, this.allowGoogleTranslate = !1, this.mapCreatorRoleLevel = 0, this.gameSession = new Es, this.globalPermissions = new Zi, this.customTeams = new Er, Ot(this)
     }
 }
-de([j], oe.prototype, "amIGameOwner");
-de([j], oe.prototype, "ownerRole");
-de([j], oe.prototype, "gameOwnerId");
-de([j], oe.prototype, "mapStyle");
-de([j], oe.prototype, "version");
-de([j], oe.prototype, "modeType");
-de([j], oe.prototype, "gameTime");
-de([j], oe.prototype, "gameTimeLastUpdateAt");
-de([j], oe.prototype, "loadingPhase");
-de([j], oe.prototype, "phase");
-de([j], oe.prototype, "duringTransition");
-de([j], oe.prototype, "gameClockDuration");
-de([j], oe.prototype, "canAddGameTime");
-de([j], oe.prototype, "cosmosBlocked");
-de([j], oe.prototype, "allowGoogleTranslate");
+de([j], he.prototype, "amIGameOwner");
+de([j], he.prototype, "ownerRole");
+de([j], he.prototype, "gameOwnerId");
+de([j], he.prototype, "mapStyle");
+de([j], he.prototype, "version");
+de([j], he.prototype, "modeType");
+de([j], he.prototype, "gameTime");
+de([j], he.prototype, "gameTimeLastUpdateAt");
+de([j], he.prototype, "loadingPhase");
+de([j], he.prototype, "phase");
+de([j], he.prototype, "duringTransition");
+de([j], he.prototype, "gameClockDuration");
+de([j], he.prototype, "canAddGameTime");
+de([j], he.prototype, "cosmosBlocked");
+de([j], he.prototype, "allowGoogleTranslate");
 var _o = Object.defineProperty,
     th = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && _o(T, E, A), A
     };
-class Pr {
+class Ar {
     constructor() {
         this.characters = j.map(), Ot(this)
     }
 }
-th([j], Pr.prototype, "characters");
+th([j], Ar.prototype, "characters");
 var eh = Object.defineProperty,
-    Mr = (V, T, E, M) => {
+    Pr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && eh(T, E, A), A
     };
@@ -773,19 +774,19 @@ class fn {
         this.teams = j.map(), this.updateCounter = 0, Ot(this)
     }
 }
-Mr([j], fn.prototype, "teams");
-Mr([j], fn.prototype, "updateCounter");
+Pr([j], fn.prototype, "teams");
+Pr([j], fn.prototype, "updateCounter");
 var ih = Object.defineProperty,
     sh = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && ih(T, E, A), A
     };
-class Rr {
+class Mr {
     constructor() {
         this.gameCode = "", Ot(this)
     }
 }
-sh([j], Rr.prototype, "gameCode");
+sh([j], Mr.prototype, "gameCode");
 var nh = Object.defineProperty,
     dn = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -804,14 +805,14 @@ var rh = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && rh(T, E, A), A
     };
-class Fr {
+class Rr {
     constructor() {
         this.hookJSON = JSON.stringify({
             hooks: []
         }), Ot(this)
     }
 }
-ah([j], Fr.prototype, "hookJSON");
+ah([j], Rr.prototype, "hookJSON");
 var oh = Object.defineProperty,
     vn = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -862,59 +863,59 @@ Oa({
     enforceActions: "never"
 });
 const pe = {
-        network: new ae,
+        network: new ee,
         scene: new Hs,
         loading: new zi,
         phaser: new Na,
         memorySystem: new cn,
         me: new Qe,
-        worldOptions: new dr,
-        world: new fr,
-        characters: new Pr,
+        worldOptions: new fr,
+        world: new ur,
+        characters: new Ar,
         teams: new fn,
-        session: new oe,
+        session: new he,
         gui: new Be,
-        matchmaker: new Rr,
-        activityFeed: new yr,
+        matchmaker: new Mr,
+        activityFeed: new xr,
         editing: new Ps,
-        hooks: new Fr,
+        hooks: new Rr,
         assignment: new Ms
     },
     fh = () => pe.phaser.scene,
     Rs = V => fh().characterManager.characters.get(V),
     pu = () => pe.session.version === Cs.saved,
     dh = () => pe.session.version === Cs.published,
-    wr = () => pe.session.phase === hn.game,
-    Lr = () => pe.session.phase === hn.preGame,
-    mu = () => wr() && !pe.session.duringTransition || Lr() && pe.session.duringTransition && !pe.me.isRespawning,
-    vh = () => Lr() && !pe.session.duringTransition || wr() && pe.session.duringTransition && !pe.me.isRespawning,
-    Cn = {
+    Fr = () => pe.session.phase === hn.game,
+    wr = () => pe.session.phase === hn.preGame,
+    mu = () => Fr() && !pe.session.duringTransition || wr() && pe.session.duringTransition && !pe.me.isRespawning,
+    vh = () => wr() && !pe.session.duringTransition || Fr() && pe.session.duringTransition && !pe.me.isRespawning,
+    Sn = {
         musicVolume: "map-music-volume",
         soundEffectVolume: "map-sound-effect-volume"
     };
 var pn = (V => (V.music = "music", V.soundEffect = "soundEffect", V))(pn || {});
-const Or = V => {
-        const T = V.type === "music" ? Cn.musicVolume : Cn.soundEffectVolume,
+const Lr = V => {
+        const T = V.type === "music" ? Sn.musicVolume : Sn.soundEffectVolume,
             E = localStorage.getItem(T) || "1";
         let M = Ia.clamp(Number(E), 0, 1);
         return isNaN(M) && (M = 1), V.volume * M
     },
     Fi = () => pe.session.mapStyle === Ws.platformer,
-    Ir = () => Fi() && !dh() && vh() && pe.me.editing.preferences.topDownControlsActive,
+    Or = () => Fi() && !dh() && vh() && pe.me.editing.preferences.topDownControlsActive,
     ch = () => pe.session.mapStyle === Ws.topDown;
 var $i = {
         exports: {}
     },
     ph = $i.exports,
-    En;
+    Cn;
 
 function mh() {
-    return En || (En = 1, (function(V, T) {
+    return Cn || (Cn = 1, function(V, T) {
         (function(M, A) {
             V.exports = A()
         })(ph, () => (() => {
             var E = {
-                    50792: (c => {
+                    50792: c => {
                         var g = Object.prototype.hasOwnProperty,
                             t = "~";
 
@@ -1021,8 +1022,8 @@ function mh() {
                             var h;
                             return s ? (h = t ? t + s : s, this._events[h] && r(this, h)) : (this._events = new o, this._eventsCount = 0), this
                         }, i.prototype.off = i.prototype.removeListener, i.prototype.addListener = i.prototype.on, i.prefixed = t, i.EventEmitter = i, c.exports = i
-                    }),
-                    11517: ((c, g, t) => {
+                    },
+                    11517: (c, g, t) => {
                         /**
                          * @author       samme
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1037,8 +1038,8 @@ function mh() {
                                 return a
                             };
                         c.exports = v
-                    }),
-                    80318: ((c, g, t) => {
+                    },
+                    80318: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1049,8 +1050,8 @@ function mh() {
                                 return o(a, "angle", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    60757: (c => {
+                    },
+                    60757: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1064,8 +1065,8 @@ function mh() {
                             return t
                         };
                         c.exports = g
-                    }),
-                    69927: (c => {
+                    },
+                    69927: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1082,8 +1083,8 @@ function mh() {
                             return null
                         };
                         c.exports = g
-                    }),
-                    32265: (c => {
+                    },
+                    32265: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1100,8 +1101,8 @@ function mh() {
                             return null
                         };
                         c.exports = g
-                    }),
-                    94420: ((c, g, t) => {
+                    },
+                    94420: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1145,8 +1146,8 @@ function mh() {
                                 return h
                             };
                         c.exports = s
-                    }),
-                    41721: ((c, g, t) => {
+                    },
+                    41721: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1157,8 +1158,8 @@ function mh() {
                                 return o(a, "alpha", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    67285: ((c, g, t) => {
+                    },
+                    67285: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1169,8 +1170,8 @@ function mh() {
                                 return o(a, "x", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    9074: ((c, g, t) => {
+                    },
+                    9074: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1181,8 +1182,8 @@ function mh() {
                                 return i == null && (i = r), o(a, "x", r, e, h, n), o(a, "y", i, s, h, n)
                             };
                         c.exports = v
-                    }),
-                    75222: ((c, g, t) => {
+                    },
+                    75222: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1193,8 +1194,8 @@ function mh() {
                                 return o(a, "y", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    22983: (c => {
+                    },
+                    22983: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1206,8 +1207,8 @@ function mh() {
                             return t
                         };
                         c.exports = g
-                    }),
-                    95253: (c => {
+                    },
+                    95253: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1219,8 +1220,8 @@ function mh() {
                             return t
                         };
                         c.exports = g
-                    }),
-                    88505: ((c, g, t) => {
+                    },
+                    88505: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1239,8 +1240,8 @@ function mh() {
                                 return r
                             };
                         c.exports = a
-                    }),
-                    41346: ((c, g, t) => {
+                    },
+                    41346: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1257,8 +1258,8 @@ function mh() {
                                 return i
                             };
                         c.exports = r
-                    }),
-                    11575: ((c, g, t) => {
+                    },
+                    11575: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1293,8 +1294,8 @@ function mh() {
                                 return a
                             };
                         c.exports = v
-                    }),
-                    29953: (c => {
+                    },
+                    29953: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1308,8 +1309,8 @@ function mh() {
                             return t
                         };
                         c.exports = g
-                    }),
-                    66979: (c => {
+                    },
+                    66979: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1326,8 +1327,8 @@ function mh() {
                             return t
                         };
                         c.exports = g
-                    }),
-                    43967: (c => {
+                    },
+                    43967: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1344,8 +1345,8 @@ function mh() {
                             return t
                         };
                         c.exports = g
-                    }),
-                    88926: ((c, g, t) => {
+                    },
+                    88926: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1357,8 +1358,8 @@ function mh() {
                                 return a
                             };
                         c.exports = v
-                    }),
-                    33286: ((c, g, t) => {
+                    },
+                    33286: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1370,8 +1371,8 @@ function mh() {
                                 return a
                             };
                         c.exports = v
-                    }),
-                    96e3: ((c, g, t) => {
+                    },
+                    96e3: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1383,8 +1384,8 @@ function mh() {
                                 return a
                             };
                         c.exports = v
-                    }),
-                    28789: ((c, g, t) => {
+                    },
+                    28789: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1396,8 +1397,8 @@ function mh() {
                                 return a
                             };
                         c.exports = v
-                    }),
-                    97154: ((c, g, t) => {
+                    },
+                    97154: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1409,8 +1410,8 @@ function mh() {
                                 return a
                             };
                         c.exports = v
-                    }),
-                    20510: ((c, g, t) => {
+                    },
+                    20510: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1421,8 +1422,8 @@ function mh() {
                                 return o(a, "rotation", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    91051: ((c, g, t) => {
+                    },
+                    91051: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1438,8 +1439,8 @@ function mh() {
                                 return r
                             };
                         c.exports = a
-                    }),
-                    76332: ((c, g, t) => {
+                    },
+                    76332: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1454,8 +1455,8 @@ function mh() {
                                 return a
                             };
                         c.exports = v
-                    }),
-                    61619: ((c, g, t) => {
+                    },
+                    61619: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1466,8 +1467,8 @@ function mh() {
                                 return o(a, "scaleX", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    94868: ((c, g, t) => {
+                    },
+                    94868: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1478,8 +1479,8 @@ function mh() {
                                 return i == null && (i = r), o(a, "scaleX", r, e, h, n), o(a, "scaleY", i, s, h, n)
                             };
                         c.exports = v
-                    }),
-                    95532: ((c, g, t) => {
+                    },
+                    95532: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1490,8 +1491,8 @@ function mh() {
                                 return o(a, "scaleY", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    8689: ((c, g, t) => {
+                    },
+                    8689: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1502,8 +1503,8 @@ function mh() {
                                 return o(a, "alpha", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    2645: ((c, g, t) => {
+                    },
+                    2645: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1514,8 +1515,8 @@ function mh() {
                                 return o(a, "blendMode", r, 0, i, e)
                             };
                         c.exports = v
-                    }),
-                    32372: ((c, g, t) => {
+                    },
+                    32372: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1526,8 +1527,8 @@ function mh() {
                                 return o(a, "depth", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    85373: (c => {
+                    },
+                    85373: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1538,8 +1539,8 @@ function mh() {
                             return t
                         };
                         c.exports = g
-                    }),
-                    81583: ((c, g, t) => {
+                    },
+                    81583: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1552,8 +1553,8 @@ function mh() {
                                 }), a
                             };
                         c.exports = v
-                    }),
-                    79939: ((c, g, t) => {
+                    },
+                    79939: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1564,8 +1565,8 @@ function mh() {
                                 return o(a, "rotation", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    2699: ((c, g, t) => {
+                    },
+                    2699: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1576,8 +1577,8 @@ function mh() {
                                 return i == null && (i = r), o(a, "scaleX", r, e, h, n), o(a, "scaleY", i, s, h, n)
                             };
                         c.exports = v
-                    }),
-                    98739: ((c, g, t) => {
+                    },
+                    98739: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1588,8 +1589,8 @@ function mh() {
                                 return o(a, "scaleX", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    98476: ((c, g, t) => {
+                    },
+                    98476: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1600,8 +1601,8 @@ function mh() {
                                 return o(a, "scaleY", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    6207: ((c, g, t) => {
+                    },
+                    6207: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1612,8 +1613,8 @@ function mh() {
                                 return i == null && (i = r), o(a, "scrollFactorX", r, e, h, n), o(a, "scrollFactorY", i, s, h, n)
                             };
                         c.exports = v
-                    }),
-                    6607: ((c, g, t) => {
+                    },
+                    6607: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1624,8 +1625,8 @@ function mh() {
                                 return o(a, "scrollFactorX", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    72248: ((c, g, t) => {
+                    },
+                    72248: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1636,8 +1637,8 @@ function mh() {
                                 return o(a, "scrollFactorY", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    14036: (c => {
+                    },
+                    14036: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1648,8 +1649,8 @@ function mh() {
                             return t
                         };
                         c.exports = g
-                    }),
-                    50159: ((c, g, t) => {
+                    },
+                    50159: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1660,8 +1661,8 @@ function mh() {
                                 return o(a, "visible", r, 0, i, e)
                             };
                         c.exports = v
-                    }),
-                    77597: ((c, g, t) => {
+                    },
+                    77597: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1672,8 +1673,8 @@ function mh() {
                                 return o(a, "x", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    83194: ((c, g, t) => {
+                    },
+                    83194: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1684,8 +1685,8 @@ function mh() {
                                 return i == null && (i = r), o(a, "x", r, e, h, n), o(a, "y", i, s, h, n)
                             };
                         c.exports = v
-                    }),
-                    67678: ((c, g, t) => {
+                    },
+                    67678: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1696,8 +1697,8 @@ function mh() {
                                 return o(a, "y", r, i, e, s)
                             };
                         c.exports = v
-                    }),
-                    35850: ((c, g, t) => {
+                    },
+                    35850: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1723,8 +1724,8 @@ function mh() {
                                 return s.x = h, s.y = n, s
                             };
                         c.exports = v
-                    }),
-                    8628: ((c, g, t) => {
+                    },
+                    8628: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1735,8 +1736,8 @@ function mh() {
                                 return o(a)
                             };
                         c.exports = v
-                    }),
-                    21837: ((c, g, t) => {
+                    },
+                    21837: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1754,8 +1755,8 @@ function mh() {
                                 return a
                             };
                         c.exports = v
-                    }),
-                    21910: ((c, g, t) => {
+                    },
+                    21910: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1773,8 +1774,8 @@ function mh() {
                                 return a
                             };
                         c.exports = v
-                    }),
-                    62054: (c => {
+                    },
+                    62054: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1792,8 +1793,8 @@ function mh() {
                             return t
                         };
                         c.exports = g
-                    }),
-                    79815: (c => {
+                    },
+                    79815: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1804,8 +1805,8 @@ function mh() {
                             return t
                         };
                         c.exports = g
-                    }),
-                    39665: ((c, g, t) => {
+                    },
+                    39665: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       samme <samme.npm@gmail.com>
@@ -1822,8 +1823,8 @@ function mh() {
                                 return a
                             };
                         c.exports = v
-                    }),
-                    61061: ((c, g, t) => {
+                    },
+                    61061: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -1884,8 +1885,8 @@ function mh() {
                             ToggleVisible: t(79815),
                             WrapInRectangle: t(39665)
                         }
-                    }),
-                    42099: ((c, g, t) => {
+                    },
+                    42099: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -2056,8 +2057,8 @@ function mh() {
                                 }
                             });
                         c.exports = h
-                    }),
-                    41138: ((c, g, t) => {
+                    },
+                    41138: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -2081,8 +2082,8 @@ function mh() {
                                 }
                             });
                         c.exports = v
-                    }),
-                    60848: ((c, g, t) => {
+                    },
+                    60848: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -2296,8 +2297,8 @@ function mh() {
                                 }
                             });
                         c.exports = f
-                    }),
-                    9674: ((c, g, t) => {
+                    },
+                    9674: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -2521,96 +2522,96 @@ function mh() {
                                 }
                             });
                         c.exports = s
-                    }),
-                    57090: (c => {
+                    },
+                    57090: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "add"
-                    }),
-                    25312: (c => {
+                    },
+                    25312: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "animationcomplete"
-                    }),
-                    89580: (c => {
+                    },
+                    89580: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "animationcomplete-"
-                    }),
-                    52860: (c => {
+                    },
+                    52860: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "animationrepeat"
-                    }),
-                    63850: (c => {
+                    },
+                    63850: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "animationrestart"
-                    }),
-                    99085: (c => {
+                    },
+                    99085: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "animationstart"
-                    }),
-                    28087: (c => {
+                    },
+                    28087: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "animationstop"
-                    }),
-                    1794: (c => {
+                    },
+                    1794: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "animationupdate"
-                    }),
-                    52562: (c => {
+                    },
+                    52562: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pauseall"
-                    }),
-                    57953: (c => {
+                    },
+                    57953: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "remove"
-                    }),
-                    68339: (c => {
+                    },
+                    68339: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "resumeall"
-                    }),
-                    74943: ((c, g, t) => {
+                    },
+                    74943: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -2629,8 +2630,8 @@ function mh() {
                             REMOVE_ANIMATION: t(57953),
                             RESUME_ALL: t(68339)
                         }
-                    }),
-                    60421: ((c, g, t) => {
+                    },
+                    60421: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -2643,8 +2644,8 @@ function mh() {
                             AnimationState: t(9674),
                             Events: t(74943)
                         }
-                    }),
-                    2161: ((c, g, t) => {
+                    },
+                    2161: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -2682,8 +2683,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    24047: ((c, g, t) => {
+                    },
+                    24047: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -2706,24 +2707,24 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    51464: (c => {
+                    },
+                    51464: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "add"
-                    }),
-                    59261: (c => {
+                    },
+                    59261: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "remove"
-                    }),
-                    24736: ((c, g, t) => {
+                    },
+                    24736: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -2733,8 +2734,8 @@ function mh() {
                             ADD: t(51464),
                             REMOVE: t(59261)
                         }
-                    }),
-                    83388: ((c, g, t) => {
+                    },
+                    83388: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -2745,8 +2746,8 @@ function mh() {
                             CacheManager: t(24047),
                             Events: t(24736)
                         }
-                    }),
-                    71911: ((c, g, t) => {
+                    },
+                    71911: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3082,8 +3083,8 @@ function mh() {
                                 }
                             });
                         c.exports = l
-                    }),
-                    38058: ((c, g, t) => {
+                    },
+                    38058: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3208,8 +3209,8 @@ function mh() {
                                 }
                             });
                         c.exports = u
-                    }),
-                    32743: ((c, g, t) => {
+                    },
+                    32743: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3356,8 +3357,8 @@ function mh() {
                                 }
                             });
                         r.register("CameraManager", h, "cameras"), c.exports = h
-                    }),
-                    5020: ((c, g, t) => {
+                    },
+                    5020: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3405,8 +3406,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    10662: ((c, g, t) => {
+                    },
+                    10662: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3449,8 +3450,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    20359: ((c, g, t) => {
+                    },
+                    20359: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3496,8 +3497,8 @@ function mh() {
                                 }
                             });
                         c.exports = e
-                    }),
-                    34208: ((c, g, t) => {
+                    },
+                    34208: (c, g, t) => {
                         /**
                          * @author       Jason Nicholls <nicholls.jason@gmail.com>
                          * @copyright    2018 Photon Storm Ltd.
@@ -3556,8 +3557,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    30330: ((c, g, t) => {
+                    },
+                    30330: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3598,8 +3599,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    45641: ((c, g, t) => {
+                    },
+                    45641: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3632,8 +3633,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    20052: ((c, g, t) => {
+                    },
+                    20052: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3647,152 +3648,152 @@ function mh() {
                             RotateTo: t(34208),
                             Zoom: t(45641)
                         }
-                    }),
-                    16438: (c => {
+                    },
+                    16438: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "cameradestroy"
-                    }),
-                    32726: (c => {
+                    },
+                    32726: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "camerafadeincomplete"
-                    }),
-                    87807: (c => {
+                    },
+                    87807: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "camerafadeinstart"
-                    }),
-                    45917: (c => {
+                    },
+                    45917: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "camerafadeoutcomplete"
-                    }),
-                    95666: (c => {
+                    },
+                    95666: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "camerafadeoutstart"
-                    }),
-                    47056: (c => {
+                    },
+                    47056: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "cameraflashcomplete"
-                    }),
-                    91261: (c => {
+                    },
+                    91261: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "cameraflashstart"
-                    }),
-                    45047: (c => {
+                    },
+                    45047: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "followupdate"
-                    }),
-                    81927: (c => {
+                    },
+                    81927: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "camerapancomplete"
-                    }),
-                    74264: (c => {
+                    },
+                    74264: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "camerapanstart"
-                    }),
-                    54419: (c => {
+                    },
+                    54419: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "postrender"
-                    }),
-                    79330: (c => {
+                    },
+                    79330: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "prerender"
-                    }),
-                    93183: (c => {
+                    },
+                    93183: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "camerarotatecomplete"
-                    }),
-                    80112: (c => {
+                    },
+                    80112: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "camerarotatestart"
-                    }),
-                    62252: (c => {
+                    },
+                    62252: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "camerashakecomplete"
-                    }),
-                    86017: (c => {
+                    },
+                    86017: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "camerashakestart"
-                    }),
-                    539: (c => {
+                    },
+                    539: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "camerazoomcomplete"
-                    }),
-                    51892: (c => {
+                    },
+                    51892: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "camerazoomstart"
-                    }),
-                    19715: ((c, g, t) => {
+                    },
+                    19715: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3818,8 +3819,8 @@ function mh() {
                             ZOOM_COMPLETE: t(539),
                             ZOOM_START: t(51892)
                         }
-                    }),
-                    87969: ((c, g, t) => {
+                    },
+                    87969: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3832,8 +3833,8 @@ function mh() {
                             Effects: t(20052),
                             Events: t(19715)
                         }
-                    }),
-                    63091: ((c, g, t) => {
+                    },
+                    63091: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3868,8 +3869,8 @@ function mh() {
                                 }
                             });
                         c.exports = a
-                    }),
-                    58818: ((c, g, t) => {
+                    },
+                    58818: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3908,8 +3909,8 @@ function mh() {
                                 }
                             });
                         c.exports = a
-                    }),
-                    38865: ((c, g, t) => {
+                    },
+                    38865: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3919,8 +3920,8 @@ function mh() {
                             FixedKeyControl: t(63091),
                             SmoothedKeyControl: t(58818)
                         }
-                    }),
-                    26638: ((c, g, t) => {
+                    },
+                    26638: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3930,8 +3931,8 @@ function mh() {
                             Controls: t(38865),
                             Scene2D: t(87969)
                         }
-                    }),
-                    8054: ((c, g, t) => {
+                    },
+                    8054: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3954,8 +3955,8 @@ function mh() {
                             RIGHT: 8
                         };
                         c.exports = o
-                    }),
-                    69547: ((c, g, t) => {
+                    },
+                    69547: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -3991,8 +3992,8 @@ function mh() {
                                 }
                             });
                         c.exports = f
-                    }),
-                    86054: ((c, g, t) => {
+                    },
+                    86054: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4021,8 +4022,8 @@ function mh() {
                                 }
                             };
                         c.exports = i
-                    }),
-                    96391: ((c, g, t) => {
+                    },
+                    96391: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4054,8 +4055,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    50127: ((c, g, t) => {
+                    },
+                    50127: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4154,8 +4155,8 @@ function mh() {
                                 }
                             });
                         c.exports = O
-                    }),
-                    65898: ((c, g, t) => {
+                    },
+                    65898: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4246,8 +4247,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    51085: ((c, g, t) => {
+                    },
+                    51085: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4275,136 +4276,136 @@ function mh() {
                                 }, window.focus && a.config.autoFocus && window.focus()
                             };
                         c.exports = v
-                    }),
-                    97217: (c => {
+                    },
+                    97217: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "blur"
-                    }),
-                    47548: (c => {
+                    },
+                    47548: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "boot"
-                    }),
-                    19814: (c => {
+                    },
+                    19814: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "contextlost"
-                    }),
-                    68446: (c => {
+                    },
+                    68446: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "destroy"
-                    }),
-                    41700: (c => {
+                    },
+                    41700: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "focus"
-                    }),
-                    25432: (c => {
+                    },
+                    25432: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "hidden"
-                    }),
-                    65942: (c => {
+                    },
+                    65942: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pause"
-                    }),
-                    59211: (c => {
+                    },
+                    59211: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "postrender"
-                    }),
-                    47789: (c => {
+                    },
+                    47789: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "poststep"
-                    }),
-                    39066: (c => {
+                    },
+                    39066: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "prerender"
-                    }),
-                    460: (c => {
+                    },
+                    460: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "prestep"
-                    }),
-                    16175: (c => {
+                    },
+                    16175: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "ready"
-                    }),
-                    42331: (c => {
+                    },
+                    42331: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "resume"
-                    }),
-                    11966: (c => {
+                    },
+                    11966: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "step"
-                    }),
-                    32969: (c => {
+                    },
+                    32969: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "systemready"
-                    }),
-                    94830: (c => {
+                    },
+                    94830: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "visible"
-                    }),
-                    8443: ((c, g, t) => {
+                    },
+                    8443: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4428,8 +4429,8 @@ function mh() {
                             SYSTEM_READY: t(32969),
                             VISIBLE: t(94830)
                         }
-                    }),
-                    42857: ((c, g, t) => {
+                    },
+                    42857: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4443,8 +4444,8 @@ function mh() {
                             TimeStep: t(65898),
                             VisibilityHandler: t(51085)
                         }
-                    }),
-                    99584: ((c, g, t) => {
+                    },
+                    99584: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4478,8 +4479,8 @@ function mh() {
                                 return p && p(s, x), s
                             };
                         c.exports = r
-                    }),
-                    15822: ((c, g, t) => {
+                    },
+                    15822: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4489,8 +4490,8 @@ function mh() {
                             GenerateTexture: t(99584),
                             Palettes: t(57763)
                         }
-                    }),
-                    5290: (c => {
+                    },
+                    5290: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4514,8 +4515,8 @@ function mh() {
                             E: "#31A2F2",
                             F: "#B2DCEF"
                         }
-                    }),
-                    23816: (c => {
+                    },
+                    23816: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4539,8 +4540,8 @@ function mh() {
                             E: "#7b73de",
                             F: "#acacac"
                         }
-                    }),
-                    9866: (c => {
+                    },
+                    9866: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4564,8 +4565,8 @@ function mh() {
                             E: "#ffd93f",
                             F: "#fff"
                         }
-                    }),
-                    77552: (c => {
+                    },
+                    77552: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4589,8 +4590,8 @@ function mh() {
                             E: "#afaab9",
                             F: "#f5f4eb"
                         }
-                    }),
-                    92259: (c => {
+                    },
+                    92259: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4614,8 +4615,8 @@ function mh() {
                             E: "#afaab9",
                             F: "#fff"
                         }
-                    }),
-                    57763: ((c, g, t) => {
+                    },
+                    57763: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4628,8 +4629,8 @@ function mh() {
                             JMP: t(77552),
                             MSX: t(92259)
                         }
-                    }),
-                    46728: ((c, g, t) => {
+                    },
+                    46728: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4680,8 +4681,8 @@ function mh() {
                                 u = new r(s[6], s[7]);
                             return new i(h, n, l, u)
                         }, c.exports = i
-                    }),
-                    80021: ((c, g, t) => {
+                    },
+                    80021: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4789,8 +4790,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    73825: ((c, g, t) => {
+                    },
+                    73825: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -4947,8 +4948,8 @@ function mh() {
                         s.fromJSON = function(h) {
                             return new s(h)
                         }, c.exports = s
-                    }),
-                    33951: ((c, g, t) => {
+                    },
+                    33951: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5008,8 +5009,8 @@ function mh() {
                                 l = new i(h[2], h[3]);
                             return new e(n, l)
                         }, c.exports = e
-                    }),
-                    14744: ((c, g, t) => {
+                    },
+                    14744: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5058,8 +5059,8 @@ function mh() {
                                 l = new r(s[4], s[5]);
                             return new i(h, n, l)
                         }, c.exports = i
-                    }),
-                    42534: ((c, g, t) => {
+                    },
+                    42534: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5114,8 +5115,8 @@ function mh() {
                         i.fromJSON = function(e) {
                             return new i(e.points)
                         }, c.exports = i
-                    }),
-                    25410: ((c, g, t) => {
+                    },
+                    25410: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5131,8 +5132,8 @@ function mh() {
                             QuadraticBezier: t(14744),
                             Spline: t(42534)
                         }
-                    }),
-                    68618: ((c, g, t) => {
+                    },
+                    68618: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5164,8 +5165,8 @@ function mh() {
                                 }
                             });
                         c.exports = a
-                    }),
-                    46669: ((c, g, t) => {
+                    },
+                    46669: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5353,8 +5354,8 @@ function mh() {
                         r.register("path", function(d, p) {
                             return new f(d, p)
                         }), c.exports = f
-                    }),
-                    45893: ((c, g, t) => {
+                    },
+                    45893: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5480,8 +5481,8 @@ function mh() {
                                 }
                             });
                         c.exports = a
-                    }),
-                    63646: ((c, g, t) => {
+                    },
+                    63646: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5510,48 +5511,48 @@ function mh() {
                                 }
                             });
                         a.register("DataManagerPlugin", i, "data"), c.exports = i
-                    }),
-                    10700: (c => {
+                    },
+                    10700: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "changedata"
-                    }),
-                    93608: (c => {
+                    },
+                    93608: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "changedata-"
-                    }),
-                    60883: (c => {
+                    },
+                    60883: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "destroy"
-                    }),
-                    69780: (c => {
+                    },
+                    69780: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "removedata"
-                    }),
-                    22166: (c => {
+                    },
+                    22166: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "setdata"
-                    }),
-                    24882: ((c, g, t) => {
+                    },
+                    24882: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5564,8 +5565,8 @@ function mh() {
                             REMOVE_DATA: t(69780),
                             SET_DATA: t(22166)
                         }
-                    }),
-                    44965: ((c, g, t) => {
+                    },
+                    44965: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5576,8 +5577,8 @@ function mh() {
                             DataManagerPlugin: t(63646),
                             Events: t(24882)
                         }
-                    }),
-                    7098: ((c, g, t) => {
+                    },
+                    7098: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5622,8 +5623,8 @@ function mh() {
                             return v
                         }
                         c.exports = a()
-                    }),
-                    84148: ((c, g, t) => {
+                    },
+                    84148: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5653,8 +5654,8 @@ function mh() {
                             return /Edg\/\d+/.test(r) ? (v.edge = !0, v.es2019 = !0) : /OPR/.test(r) ? (v.opera = !0, v.es2019 = !0) : /Chrome\/(\d+)/.test(r) && !o.windowsPhone ? (v.chrome = !0, v.chromeVersion = parseInt(RegExp.$1, 10), v.es2019 = v.chromeVersion > 69) : /Firefox\D+(\d+)/.test(r) ? (v.firefox = !0, v.firefoxVersion = parseInt(RegExp.$1, 10), v.es2019 = v.firefoxVersion > 10) : /AppleWebKit\/(?!.*CriOS)/.test(r) && o.iOS ? (v.mobileSafari = !0, v.es2019 = !0) : /MSIE (\d+\.\d+);/.test(r) ? (v.ie = !0, v.ieVersion = parseInt(RegExp.$1, 10)) : /Version\/(\d+\.\d+(\.\d+)?) Safari/.test(r) && !o.windowsPhone ? (v.safari = !0, v.safariVersion = parseInt(RegExp.$1, 10), v.es2019 = v.safariVersion > 10) : /Trident\/(\d+\.\d+)(.*)rv:(\d+\.\d+)/.test(r) && (v.ie = !0, v.trident = !0, v.tridentVersion = parseInt(RegExp.$1, 10), v.ieVersion = parseInt(RegExp.$3, 10)), /Silk/.test(r) && (v.silk = !0), v
                         }
                         c.exports = a()
-                    }),
-                    89289: ((c, g, t) => {
+                    },
+                    89289: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5702,8 +5703,8 @@ function mh() {
                             return typeof importScripts != "function" && document !== void 0 && (v.supportNewBlendModes = a(), v.supportInverseAlpha = r()), v
                         }
                         c.exports = i()
-                    }),
-                    89357: ((c, g, t) => {
+                    },
+                    89357: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5763,8 +5764,8 @@ function mh() {
                             return r.webGL = h(), r.worker = !!window.Worker, r.pointerLock = "pointerLockElement" in document || "mozPointerLockElement" in document || "webkitPointerLockElement" in document, navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia, window.URL = window.URL || window.webkitURL || window.mozURL || window.msURL, r.getUserMedia = r.getUserMedia && !!navigator.getUserMedia && !!window.URL, v.firefox && v.firefoxVersion < 21 && (r.getUserMedia = !1), !o.iOS && (v.ie || v.firefox || v.chrome) && (r.canvasBitBltShift = !0), (v.safari || v.mobileSafari) && (r.canvasBitBltShift = !1), navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate, navigator.vibrate && (r.vibration = !0), typeof ArrayBuffer < "u" && typeof Uint8Array < "u" && typeof Uint32Array < "u" && (r.littleEndian = i()), r.support32bit = typeof ArrayBuffer < "u" && typeof Uint8ClampedArray < "u" && typeof Int32Array < "u" && r.littleEndian !== null && s, r
                         }
                         c.exports = e()
-                    }),
-                    91639: (c => {
+                    },
+                    91639: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5801,8 +5802,8 @@ function mh() {
                             }), g
                         }
                         c.exports = t()
-                    }),
-                    31784: ((c, g, t) => {
+                    },
+                    31784: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5820,8 +5821,8 @@ function mh() {
                             return typeof importScripts == "function" || (("ontouchstart" in document.documentElement || navigator.maxTouchPoints && navigator.maxTouchPoints >= 1) && (v.touch = !0), (navigator.msPointerEnabled || navigator.pointerEnabled) && (v.mspointer = !0), navigator.getGamepads && (v.gamepads = !0), "onwheel" in window || o.ie && "WheelEvent" in window ? v.wheelEvent = "wheel" : "onmousewheel" in window ? v.wheelEvent = "mousewheel" : o.firefox && "MouseScrollEvent" in window && (v.wheelEvent = "DOMMouseScroll")), v
                         }
                         c.exports = a()
-                    }),
-                    25892: (c => {
+                    },
+                    25892: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5858,8 +5859,8 @@ function mh() {
                             return (g.windows || g.macOS || g.linux && !v || g.chromeOS) && (g.desktop = !0), (g.windowsPhone || /Windows NT/i.test(o) && /Touch/i.test(o)) && (g.desktop = !1), navigator.standalone && (g.webApp = !0), typeof importScripts != "function" && (window.cordova !== void 0 && (g.cordova = !0), window.ejecta !== void 0 && (g.ejecta = !0)), typeof gi < "u" && gi.versions && gi.versions.node && (g.node = !0), g.node && typeof gi.versions == "object" && (g.nodeWebkit = !!gi.versions["node-webkit"], g.electron = !!gi.versions.electron), /Crosswalk/.test(o) && (g.crosswalk = !0), g.pixelRatio = window.devicePixelRatio || 1, g
                         }
                         c.exports = t()
-                    }),
-                    43267: ((c, g, t) => {
+                    },
+                    43267: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5903,8 +5904,8 @@ function mh() {
                             }, v
                         }
                         c.exports = a()
-                    }),
-                    82264: ((c, g, t) => {
+                    },
+                    82264: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -5920,8 +5921,8 @@ function mh() {
                             fullscreen: t(91639),
                             canvasFeatures: t(89289)
                         }
-                    }),
-                    89422: ((c, g, t) => {
+                    },
+                    89422: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6020,8 +6021,8 @@ function mh() {
                                 }
                             });
                         a.BLACK_WHITE = [.3, .6, .1, 0, 0, .3, .6, .1, 0, 0, .3, .6, .1, 0, 0, 0, 0, 0, 1, 0], a.NEGATIVE = [-1, 0, 0, 1, 0, 0, -1, 0, 1, 0, 0, 0, -1, 1, 0, 0, 0, 0, 1, 0], a.DESATURATE_LUMINANCE = [.2764723, .929708, .0938197, 0, -37.1, .2764723, .929708, .0938197, 0, -37.1, .2764723, .929708, .0938197, 0, -37.1, 0, 0, 0, 1, 0], a.SEPIA = [.393, .7689999, .18899999, 0, 0, .349, .6859999, .16799999, 0, 0, .272, .5339999, .13099999, 0, 0, 0, 0, 0, 1, 0], a.LSD = [2, -.4, .5, 0, 0, -.5, 2, -.4, 0, 0, -.4, -.5, 3, 0, 0, 0, 0, 0, 1, 0], a.BROWN = [.5997023498159715, .34553243048391263, -.2708298674538042, 0, 47.43192855600873, -.037703249837783157, .8609577587992641, .15059552388459913, 0, -36.96841498319127, .24113635128153335, -.07441037908422492, .44972182064877153, 0, -7.562075277591283, 0, 0, 0, 1, 0], a.VINTAGE = [.6279345635605994, .3202183420819367, -.03965408211312453, 0, 9.651285835294123, .02578397704808868, .6441188644374771, .03259127616149294, 0, 7.462829176470591, .0466055556782719, -.0851232987247891, .5241648018700465, 0, 5.159190588235296, 0, 0, 0, 1, 0], a.KODACHROME = [1.1285582396593525, -.3967382283601348, -.03992559172921793, 0, 63.72958762196502, -.16404339962244616, 1.0835251566291304, -.05498805115633132, 0, 24.732407896706203, -.16786010706155763, -.5603416277695248, 1.6014850761964943, 0, 35.62982807460946, 0, 0, 0, 1, 0], a.TECHNICOLOR = [1.9125277891456083, -.8545344976951645, -.09155508482755585, 0, 11.793603434377337, -.3087833385928097, 1.7658908555458428, -.10601743074722245, 0, -70.35205161461398, -.231103377548616, -.7501899197440212, 1.847597816108189, 0, 30.950940869491138, 0, 0, 0, 1, 0], a.POLAROID = [1.438, -.062, -.062, 0, 0, -.122, 1.378, -.122, 0, 0, -.016, -.016, 1.483, 0, 0, 0, 0, 0, 1, 0], a.SHIFT_BGR = [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0], c.exports = a
-                    }),
-                    51767: ((c, g, t) => {
+                    },
+                    51767: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6074,8 +6075,8 @@ function mh() {
                                 }
                             });
                         c.exports = a
-                    }),
-                    60461: (c => {
+                    },
+                    60461: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6097,8 +6098,8 @@ function mh() {
                             BOTTOM_RIGHT: 12
                         };
                         c.exports = g
-                    }),
-                    54312: ((c, g, t) => {
+                    },
+                    54312: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6112,8 +6113,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), r(e, v(s) + h), a(e, o(s) + n), e
                             };
                         c.exports = i
-                    }),
-                    46768: ((c, g, t) => {
+                    },
+                    46768: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6127,8 +6128,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), r(e, v(s) - h), a(e, o(s) + n), e
                             };
                         c.exports = i
-                    }),
-                    35827: ((c, g, t) => {
+                    },
+                    35827: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6142,8 +6143,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), r(e, v(s) + h), a(e, o(s) + n), e
                             };
                         c.exports = i
-                    }),
-                    46871: ((c, g, t) => {
+                    },
+                    46871: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6156,8 +6157,8 @@ function mh() {
                                 return s === void 0 && (s = 0), h === void 0 && (h = 0), o(i, v(e) + s, a(e) + h), i
                             };
                         c.exports = r
-                    }),
-                    5198: ((c, g, t) => {
+                    },
+                    5198: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6171,8 +6172,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), r(e, v(s) - h), a(e, o(s) + n), e
                             };
                         c.exports = i
-                    }),
-                    11879: ((c, g, t) => {
+                    },
+                    11879: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6185,8 +6186,8 @@ function mh() {
                             return v[e](r, i, s, h)
                         };
                         c.exports = a
-                    }),
-                    80503: ((c, g, t) => {
+                    },
+                    80503: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6200,8 +6201,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), r(e, v(s) + h), a(e, o(s) + n), e
                             };
                         c.exports = i
-                    }),
-                    89698: ((c, g, t) => {
+                    },
+                    89698: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6215,8 +6216,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), a(e, o(s) + h), r(e, v(s) - n), e
                             };
                         c.exports = i
-                    }),
-                    922: ((c, g, t) => {
+                    },
+                    922: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6230,8 +6231,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), a(e, o(s) - h), r(e, v(s) - n), e
                             };
                         c.exports = i
-                    }),
-                    21373: ((c, g, t) => {
+                    },
+                    21373: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6245,8 +6246,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), a(e, o(s) + h), r(e, v(s) - n), e
                             };
                         c.exports = i
-                    }),
-                    91660: ((c, g, t) => {
+                    },
+                    91660: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6264,8 +6265,8 @@ function mh() {
                             TopLeft: t(922),
                             TopRight: t(21373)
                         }
-                    }),
-                    71926: ((c, g, t) => {
+                    },
+                    71926: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6278,8 +6279,8 @@ function mh() {
                                 To: t(16694)
                             };
                         a = v(!1, a, o), c.exports = a
-                    }),
-                    21578: ((c, g, t) => {
+                    },
+                    21578: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6293,8 +6294,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), a(e, v(s) + h), r(e, o(s) + n), e
                             };
                         c.exports = i
-                    }),
-                    10210: ((c, g, t) => {
+                    },
+                    10210: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6308,8 +6309,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), a(e, v(s) - h), r(e, o(s) + n), e
                             };
                         c.exports = i
-                    }),
-                    82341: ((c, g, t) => {
+                    },
+                    82341: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6323,8 +6324,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), a(e, v(s) + h), r(e, o(s) + n), e
                             };
                         c.exports = i
-                    }),
-                    87958: ((c, g, t) => {
+                    },
+                    87958: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6338,8 +6339,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), r(e, v(s) - h), a(e, o(s) + n), e
                             };
                         c.exports = i
-                    }),
-                    40080: ((c, g, t) => {
+                    },
+                    40080: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6353,8 +6354,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), r(e, v(s) - h), a(e, o(s) + n), e
                             };
                         c.exports = i
-                    }),
-                    88466: ((c, g, t) => {
+                    },
+                    88466: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6368,8 +6369,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), a(e, o(s) - h), r(e, v(s) - n), e
                             };
                         c.exports = i
-                    }),
-                    38829: ((c, g, t) => {
+                    },
+                    38829: (c, g, t) => {
                         /**
                          * @author       samme
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6382,8 +6383,8 @@ function mh() {
                             return v[e](r, i, s, h)
                         };
                         c.exports = a
-                    }),
-                    19211: ((c, g, t) => {
+                    },
+                    19211: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6397,8 +6398,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), r(e, v(s) + h), a(e, o(s) + n), e
                             };
                         c.exports = i
-                    }),
-                    34609: ((c, g, t) => {
+                    },
+                    34609: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6412,8 +6413,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), r(e, v(s) + h), a(e, o(s) + n), e
                             };
                         c.exports = i
-                    }),
-                    48741: ((c, g, t) => {
+                    },
+                    48741: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6427,8 +6428,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), a(e, o(s) + h), r(e, v(s) - n), e
                             };
                         c.exports = i
-                    }),
-                    49440: ((c, g, t) => {
+                    },
+                    49440: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6442,8 +6443,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), r(e, o(s) + h), a(e, v(s) - n), e
                             };
                         c.exports = i
-                    }),
-                    81288: ((c, g, t) => {
+                    },
+                    81288: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6457,8 +6458,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), r(e, o(s) - h), a(e, v(s) - n), e
                             };
                         c.exports = i
-                    }),
-                    61323: ((c, g, t) => {
+                    },
+                    61323: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6472,8 +6473,8 @@ function mh() {
                                 return h === void 0 && (h = 0), n === void 0 && (n = 0), r(e, o(s) + h), a(e, v(s) - n), e
                             };
                         c.exports = i
-                    }),
-                    16694: ((c, g, t) => {
+                    },
+                    16694: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6494,8 +6495,8 @@ function mh() {
                             TopLeft: t(81288),
                             TopRight: t(61323)
                         }
-                    }),
-                    66786: ((c, g, t) => {
+                    },
+                    66786: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6507,8 +6508,8 @@ function mh() {
                                 return o(r, i), v(r, e)
                             };
                         c.exports = a
-                    }),
-                    62235: (c => {
+                    },
+                    62235: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6518,8 +6519,8 @@ function mh() {
                             return t.y + t.height - t.height * t.originY
                         };
                         c.exports = g
-                    }),
-                    72873: ((c, g, t) => {
+                    },
+                    72873: (c, g, t) => {
                         /**
                          * @author       samme
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6537,8 +6538,8 @@ function mh() {
                                 return h.x = n, h.y = l, h.width = a(s) - n, h.height = o(s) - l, h
                             };
                         c.exports = e
-                    }),
-                    35893: (c => {
+                    },
+                    35893: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6548,8 +6549,8 @@ function mh() {
                             return t.x - t.width * t.originX + t.width * .5
                         };
                         c.exports = g
-                    }),
-                    7702: (c => {
+                    },
+                    7702: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6559,8 +6560,8 @@ function mh() {
                             return t.y - t.height * t.originY + t.height * .5
                         };
                         c.exports = g
-                    }),
-                    26541: (c => {
+                    },
+                    26541: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6570,8 +6571,8 @@ function mh() {
                             return t.x - t.width * t.originX
                         };
                         c.exports = g
-                    }),
-                    87431: (c => {
+                    },
+                    87431: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6581,8 +6582,8 @@ function mh() {
                             return t.width * t.originX
                         };
                         c.exports = g
-                    }),
-                    46928: (c => {
+                    },
+                    46928: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6592,8 +6593,8 @@ function mh() {
                             return t.height * t.originY
                         };
                         c.exports = g
-                    }),
-                    54380: (c => {
+                    },
+                    54380: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6603,8 +6604,8 @@ function mh() {
                             return t.x + t.width - t.width * t.originX
                         };
                         c.exports = g
-                    }),
-                    17717: (c => {
+                    },
+                    17717: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6614,8 +6615,8 @@ function mh() {
                             return t.y - t.height * t.originY
                         };
                         c.exports = g
-                    }),
-                    86327: (c => {
+                    },
+                    86327: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6625,8 +6626,8 @@ function mh() {
                             return t.y = o - t.height + t.height * t.originY, t
                         };
                         c.exports = g
-                    }),
-                    88417: (c => {
+                    },
+                    88417: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6637,8 +6638,8 @@ function mh() {
                             return t.x = o + v - t.width * .5, t
                         };
                         c.exports = g
-                    }),
-                    20786: (c => {
+                    },
+                    20786: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6649,8 +6650,8 @@ function mh() {
                             return t.y = o + v - t.height * .5, t
                         };
                         c.exports = g
-                    }),
-                    385: (c => {
+                    },
+                    385: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6660,8 +6661,8 @@ function mh() {
                             return t.x = o + t.width * t.originX, t
                         };
                         c.exports = g
-                    }),
-                    40136: (c => {
+                    },
+                    40136: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6671,8 +6672,8 @@ function mh() {
                             return t.x = o - t.width + t.width * t.originX, t
                         };
                         c.exports = g
-                    }),
-                    66737: (c => {
+                    },
+                    66737: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6682,8 +6683,8 @@ function mh() {
                             return t.y = o + t.height * t.originY, t
                         };
                         c.exports = g
-                    }),
-                    58724: ((c, g, t) => {
+                    },
+                    58724: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6707,8 +6708,8 @@ function mh() {
                             SetRight: t(40136),
                             SetTop: t(66737)
                         }
-                    }),
-                    20623: (c => {
+                    },
+                    20623: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6726,8 +6727,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    27919: ((c, g, t) => {
+                    },
+                    27919: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6798,8 +6799,8 @@ function mh() {
                                 }
                             };
                         c.exports = i()
-                    }),
-                    68703: (c => {
+                    },
+                    68703: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6831,8 +6832,8 @@ function mh() {
                                 }
                             };
                         c.exports = t()
-                    }),
-                    65208: (c => {
+                    },
+                    65208: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6842,8 +6843,8 @@ function mh() {
                             return o === void 0 && (o = "none"), t.style.msTouchAction = o, t.style["ms-touch-action"] = o, t.style["touch-action"] = o, t
                         };
                         c.exports = g
-                    }),
-                    91610: (c => {
+                    },
+                    91610: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6857,8 +6858,8 @@ function mh() {
                             }), t.style["-webkit-touch-callout"] = o, t.style["-webkit-tap-highlight-color"] = "rgba(0, 0, 0, 0)", t
                         };
                         c.exports = g
-                    }),
-                    26253: ((c, g, t) => {
+                    },
+                    26253: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -6871,8 +6872,8 @@ function mh() {
                             TouchAction: t(65208),
                             UserSelect: t(91610)
                         }
-                    }),
-                    40987: ((c, g, t) => {
+                    },
+                    40987: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7057,8 +7058,8 @@ function mh() {
                                 }
                             });
                         c.exports = e
-                    }),
-                    92728: ((c, g, t) => {
+                    },
+                    92728: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7104,8 +7105,8 @@ function mh() {
                                 return l
                             };
                         c.exports = v
-                    }),
-                    91588: (c => {
+                    },
+                    91588: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7121,8 +7122,8 @@ function mh() {
                             return t > 16777215 && (o.a = t >>> 24), o
                         };
                         c.exports = g
-                    }),
-                    62957: (c => {
+                    },
+                    62957: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7133,8 +7134,8 @@ function mh() {
                             return o.length === 1 ? "0" + o : o
                         };
                         c.exports = g
-                    }),
-                    37589: (c => {
+                    },
+                    37589: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7144,8 +7145,8 @@ function mh() {
                             return t << 16 | o << 8 | v
                         };
                         c.exports = g
-                    }),
-                    1e3: (c => {
+                    },
+                    1e3: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7155,8 +7156,8 @@ function mh() {
                             return a << 24 | t << 16 | o << 8 | v
                         };
                         c.exports = g
-                    }),
-                    62183: ((c, g, t) => {
+                    },
+                    62183: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7177,8 +7178,8 @@ function mh() {
                                 return f.setGLTo(s, h, n, 1)
                             };
                         c.exports = a
-                    }),
-                    27939: ((c, g, t) => {
+                    },
+                    27939: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7191,8 +7192,8 @@ function mh() {
                                 return i
                             };
                         c.exports = v
-                    }),
-                    7537: ((c, g, t) => {
+                    },
+                    7537: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7218,8 +7219,8 @@ function mh() {
                             }
                         };
                         c.exports = a
-                    }),
-                    70238: ((c, g, t) => {
+                    },
+                    70238: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7241,8 +7242,8 @@ function mh() {
                                 return r
                             };
                         c.exports = v
-                    }),
-                    89528: (c => {
+                    },
+                    89528: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7252,8 +7253,8 @@ function mh() {
                             return v < 0 && (v += 1), v > 1 && (v -= 1), v < .16666666666666666 ? t + (o - t) * 6 * v : v < .5 ? o : v < .6666666666666666 ? t + (o - t) * (.6666666666666666 - v) * 6 : t
                         };
                         c.exports = g
-                    }),
-                    30100: ((c, g, t) => {
+                    },
+                    30100: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7266,8 +7267,8 @@ function mh() {
                                 return new o(i.r, i.g, i.b, i.a)
                             };
                         c.exports = a
-                    }),
-                    90664: (c => {
+                    },
+                    90664: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7287,8 +7288,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    13699: ((c, g, t) => {
+                    },
+                    13699: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7321,8 +7322,8 @@ function mh() {
                             ColorWithRGB: i,
                             ColorWithColor: r
                         }
-                    }),
-                    68957: ((c, g, t) => {
+                    },
+                    68957: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7333,8 +7334,8 @@ function mh() {
                                 return new o(a.r, a.g, a.b, a.a)
                             };
                         c.exports = v
-                    }),
-                    87388: ((c, g, t) => {
+                    },
+                    87388: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7354,8 +7355,8 @@ function mh() {
                                 return r
                             };
                         c.exports = v
-                    }),
-                    87837: (c => {
+                    },
+                    87837: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7376,8 +7377,8 @@ function mh() {
                             return i !== r && (i === t ? s = (o - v) / e + (o < v ? 6 : 0) : i === o ? s = (v - t) / e + 2 : i === v && (s = (t - o) / e + 4), s /= 6), a.hasOwnProperty("_h") ? (a._h = s, a._s = h, a._v = n) : (a.h = s, a.s = h, a.v = n), a
                         };
                         c.exports = g
-                    }),
-                    75723: ((c, g, t) => {
+                    },
+                    75723: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7388,8 +7389,8 @@ function mh() {
                                 return e === void 0 && (e = 255), s === void 0 && (s = "#"), s === "#" ? "#" + ((1 << 24) + (a << 16) + (r << 8) + i).toString(16).slice(1, 7) : "0x" + o(e) + o(a) + o(r) + o(i)
                             };
                         c.exports = v
-                    }),
-                    85386: ((c, g, t) => {
+                    },
+                    85386: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7401,8 +7402,8 @@ function mh() {
                                 return r === void 0 && (r = 0), i === void 0 && (i = 255), new v(o(r, i), o(r, i), o(r, i))
                             };
                         c.exports = a
-                    }),
-                    80333: ((c, g, t) => {
+                    },
+                    80333: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7424,8 +7425,8 @@ function mh() {
                                 }
                             };
                         c.exports = i
-                    }),
-                    3956: ((c, g, t) => {
+                    },
+                    3956: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7433,8 +7434,8 @@ function mh() {
                          */
                         var o = t(40987);
                         o.ColorSpectrum = t(92728), o.ColorToRGBA = t(91588), o.ComponentToHex = t(62957), o.GetColor = t(37589), o.GetColor32 = t(1e3), o.HexStringToColor = t(70238), o.HSLToColor = t(62183), o.HSVColorWheel = t(27939), o.HSVToRGB = t(7537), o.HueToComponent = t(89528), o.IntegerToColor = t(30100), o.IntegerToRGB = t(90664), o.Interpolate = t(13699), o.ObjectToColor = t(68957), o.RandomRGB = t(85386), o.RGBStringToColor = t(87388), o.RGBToHSV = t(87837), o.RGBToString = t(75723), o.ValueToColor = t(80333), c.exports = o
-                    }),
-                    27460: ((c, g, t) => {
+                    },
+                    27460: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7450,8 +7451,8 @@ function mh() {
                             Masks: t(69781),
                             RGB: t(51767)
                         }
-                    }),
-                    6858: ((c, g, t) => {
+                    },
+                    6858: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7487,8 +7488,8 @@ function mh() {
                         v.register("bitmapMask", function(r, i, e, s, h) {
                             return new a(this.scene, r, i, e, s, h)
                         }), c.exports = a
-                    }),
-                    80661: ((c, g, t) => {
+                    },
+                    80661: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7541,8 +7542,8 @@ function mh() {
                                 }
                             });
                         c.exports = v
-                    }),
-                    69781: ((c, g, t) => {
+                    },
+                    69781: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7552,8 +7553,8 @@ function mh() {
                             BitmapMask: t(6858),
                             GeometryMask: t(80661)
                         }
-                    }),
-                    73894: ((c, g, t) => {
+                    },
+                    73894: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7568,8 +7569,8 @@ function mh() {
                                 }
                             });
                         c.exports = v
-                    }),
-                    40366: (c => {
+                    },
+                    40366: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7582,8 +7583,8 @@ function mh() {
                             return v || (v = document.body), v.appendChild(t), t
                         };
                         c.exports = g
-                    }),
-                    83719: ((c, g, t) => {
+                    },
+                    83719: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7598,8 +7599,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    57264: ((c, g, t) => {
+                    },
+                    57264: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7617,8 +7618,8 @@ function mh() {
                                 document.body ? o.cordova ? document.addEventListener("deviceready", r, !1) : (document.addEventListener("DOMContentLoaded", r, !0), window.addEventListener("load", r, !0)) : window.setTimeout(r, 20)
                             };
                         c.exports = v
-                    }),
-                    57811: (c => {
+                    },
+                    57811: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7635,8 +7636,8 @@ function mh() {
                             return a.setAttribute("style", "position: fixed; height: 100vh; width: 0; top: 0"), document.documentElement.appendChild(a), v.w = o === 90 ? a.offsetHeight : window.innerWidth, v.h = o === 90 ? window.innerWidth : a.offsetHeight, document.documentElement.removeChild(a), a = null, Math.abs(window.orientation) !== 90 ? v.h : v.w
                         };
                         c.exports = g
-                    }),
-                    45818: ((c, g, t) => {
+                    },
+                    45818: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7655,8 +7656,8 @@ function mh() {
                                 } else return r > a ? o.ORIENTATION.PORTRAIT : o.ORIENTATION.LANDSCAPE
                             };
                         c.exports = v
-                    }),
-                    74403: (c => {
+                    },
+                    74403: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7667,8 +7668,8 @@ function mh() {
                             return t !== "" && (typeof t == "string" ? o = document.getElementById(t) : t && t.nodeType === 1 && (o = t)), o || (o = document.body), o
                         };
                         c.exports = g
-                    }),
-                    56836: (c => {
+                    },
+                    56836: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7687,8 +7688,8 @@ function mh() {
                             return !o || !o.documentElement || o.getElementsByTagName("parsererror").length ? null : o
                         };
                         c.exports = g
-                    }),
-                    35846: (c => {
+                    },
+                    35846: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7698,8 +7699,8 @@ function mh() {
                             t.parentNode && t.parentNode.removeChild(t)
                         };
                         c.exports = g
-                    }),
-                    43092: ((c, g, t) => {
+                    },
+                    43092: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7728,8 +7729,8 @@ function mh() {
                                 }
                             });
                         c.exports = a
-                    }),
-                    84902: ((c, g, t) => {
+                    },
+                    84902: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7746,8 +7747,8 @@ function mh() {
                             RequestAnimationFrame: t(43092)
                         };
                         c.exports = o
-                    }),
-                    47565: ((c, g, t) => {
+                    },
+                    47565: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7769,8 +7770,8 @@ function mh() {
                                 }
                             });
                         a.register("EventEmitter", r, "events"), c.exports = r
-                    }),
-                    93055: ((c, g, t) => {
+                    },
+                    93055: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7779,8 +7780,8 @@ function mh() {
                         c.exports = {
                             EventEmitter: t(47565)
                         }
-                    }),
-                    20122: ((c, g, t) => {
+                    },
+                    20122: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7796,8 +7797,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    32251: ((c, g, t) => {
+                    },
+                    32251: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7823,8 +7824,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    9047: ((c, g, t) => {
+                    },
+                    9047: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7850,8 +7851,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    27885: ((c, g, t) => {
+                    },
+                    27885: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7867,8 +7868,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    12578: ((c, g, t) => {
+                    },
+                    12578: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7912,8 +7913,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    15802: ((c, g, t) => {
+                    },
+                    15802: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7932,8 +7933,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    72898: ((c, g, t) => {
+                    },
+                    72898: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7952,8 +7953,8 @@ function mh() {
                                 }
                             });
                         c.exports = v
-                    }),
-                    44553: ((c, g, t) => {
+                    },
+                    44553: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -7973,8 +7974,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    68531: ((c, g, t) => {
+                    },
+                    68531: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8000,8 +8001,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    37102: ((c, g, t) => {
+                    },
+                    37102: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8037,8 +8038,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    86886: ((c, g, t) => {
+                    },
+                    86886: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8054,8 +8055,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    92322: ((c, g, t) => {
+                    },
+                    92322: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8081,8 +8082,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    39563: ((c, g, t) => {
+                    },
+                    39563: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8098,8 +8099,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    56448: ((c, g, t) => {
+                    },
+                    56448: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8115,8 +8116,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    38433: ((c, g, t) => {
+                    },
+                    38433: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8132,8 +8133,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    14811: (c => {
+                    },
+                    14811: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8156,8 +8157,8 @@ function mh() {
                             BOKEH: 19
                         };
                         c.exports = g
-                    }),
-                    66064: ((c, g, t) => {
+                    },
+                    66064: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8183,8 +8184,8 @@ function mh() {
                                 Wipe: t(38433)
                             };
                         a = o(!1, a, v), c.exports = a
-                    }),
-                    25305: ((c, g, t) => {
+                    },
+                    25305: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8212,8 +8213,8 @@ function mh() {
                                 return d && r.sys.displayList.add(i), i.preUpdate && r.sys.updateList.add(i), i
                             };
                         c.exports = a
-                    }),
-                    13059: ((c, g, t) => {
+                    },
+                    13059: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8249,8 +8250,8 @@ function mh() {
                                 return a
                             };
                         c.exports = v
-                    }),
-                    8050: ((c, g, t) => {
+                    },
+                    8050: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8300,8 +8301,8 @@ function mh() {
                                 }
                             });
                         a.register("DisplayList", s, "displayList"), c.exports = s
-                    }),
-                    95643: ((c, g, t) => {
+                    },
+                    95643: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8387,8 +8388,8 @@ function mh() {
                                 }
                             });
                         s.RENDER_MASK = 15, c.exports = s
-                    }),
-                    44603: ((c, g, t) => {
+                    },
+                    44603: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8419,8 +8420,8 @@ function mh() {
                         }, r.remove = function(i) {
                             r.prototype.hasOwnProperty(i) && delete r.prototype[i]
                         }, v.register("GameObjectCreator", r, "make"), c.exports = r
-                    }),
-                    39429: ((c, g, t) => {
+                    },
+                    39429: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8454,8 +8455,8 @@ function mh() {
                         }, r.remove = function(i) {
                             r.prototype.hasOwnProperty(i) && delete r.prototype[i]
                         }, v.register("GameObjectFactory", r, "add"), c.exports = r
-                    }),
-                    91296: ((c, g, t) => {
+                    },
+                    91296: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8477,8 +8478,8 @@ function mh() {
                                 return u.applyITRS(s.x, s.y, s.rotation, s.scaleX, s.scaleY), l.copyFrom(h.matrix), n ? (l.multiplyWithOffset(n, -h.scrollX * s.scrollFactorX, -h.scrollY * s.scrollFactorY), u.e = s.x, u.f = s.y) : (u.e -= h.scrollX * s.scrollFactorX, u.f -= h.scrollY * s.scrollFactorY), l.multiply(u, f), i
                             };
                         c.exports = e
-                    }),
-                    45027: ((c, g, t) => {
+                    },
+                    45027: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8519,8 +8520,8 @@ function mh() {
                                 }
                             });
                         a.register("UpdateList", i, "updateList"), c.exports = i
-                    }),
-                    3217: (c => {
+                    },
+                    3217: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8548,8 +8549,8 @@ function mh() {
                             s && (O = Math.round(O), D = Math.round(D), N = Math.round(N), Y = Math.round(Y), H = Math.round(H), W = Math.round(W), G = Math.round(G), X = Math.round(X)), t.batchQuad(o, O, D, N, Y, H, W, G, X, a.u0, a.v0, a.u1, a.v1, h, n, l, u, f, d, p)
                         };
                         c.exports = g
-                    }),
-                    53048: (c => {
+                    },
+                    53048: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8616,8 +8617,8 @@ function mh() {
                                 Q = function(Kt, jt) {
                                     for (var zt = 0, Zt = 0; Zt < Kt.length; Zt++) {
                                         var Qt = Kt.charCodeAt(Zt),
-                                            ee = jt.chars[Qt];
-                                        ee && (zt += ee.xAdvance)
+                                            ie = jt.chars[Qt];
+                                        ie && (zt += ie.xAdvance)
                                     }
                                     return zt * w
                                 };
@@ -8720,8 +8721,8 @@ function mh() {
                             return b = a.lines, Bt.x = h * F, Bt.y = n * F, Bt.width = l * F, Bt.height = u * F, Gt.x = t.x - t._displayOriginX + h * w, Gt.y = t.y - t._displayOriginY + n * O, Gt.width = l * w, Gt.height = u * O, b.shortest = H, b.longest = W, b.lengths = Y, o && (Bt.x = Math.ceil(Bt.x), Bt.y = Math.ceil(Bt.y), Bt.width = Math.ceil(Bt.width), Bt.height = Math.ceil(Bt.height), Gt.x = Math.ceil(Gt.x), Gt.y = Math.ceil(Gt.y), Gt.width = Math.ceil(Gt.width), Gt.height = Math.ceil(Gt.height), b.shortest = Math.ceil(H), b.longest = Math.ceil(W)), v && (t._displayOriginX = t.originX * Bt.width, t._displayOriginY = t.originY * Bt.height, Gt.x = t.x - t._displayOriginX * t.scaleX, Gt.y = t.y - t._displayOriginY * t.scaleY, o && (Gt.x = Math.ceil(Gt.x), Gt.y = Math.ceil(Gt.y))), a.words = K, a.characters = Z, a.lines.height = d, a.scale = F, a.scaleX = t.scaleX, a.scaleY = t.scaleY, a
                         };
                         c.exports = g
-                    }),
-                    61327: ((c, g, t) => {
+                    },
+                    61327: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8743,8 +8744,8 @@ function mh() {
                                 } else return !1
                             };
                         c.exports = v
-                    }),
-                    6925: ((c, g, t) => {
+                    },
+                    6925: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8810,8 +8811,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    21859: (c => {
+                    },
+                    21859: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8880,8 +8881,8 @@ function mh() {
                             return u
                         };
                         c.exports = t
-                    }),
-                    196: ((c, g, t) => {
+                    },
+                    196: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8893,8 +8894,8 @@ function mh() {
                                 Parse: t(6925)
                             };
                         a = v(!1, a, o), c.exports = a
-                    }),
-                    87662: (c => {
+                    },
+                    87662: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8914,8 +8915,8 @@ function mh() {
                             TEXT_SET11: `ABCDEFGHIJKLMNOPQRSTUVWXYZ.,"-+!?()':;0123456789`
                         };
                         c.exports = g
-                    }),
-                    2638: ((c, g, t) => {
+                    },
+                    2638: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -8960,8 +8961,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    86741: ((c, g, t) => {
+                    },
+                    86741: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9028,8 +9029,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    11164: ((c, g, t) => {
+                    },
+                    11164: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9047,8 +9048,8 @@ function mh() {
                                 l = new o(this.scene, 0, 0, s, h, n);
                             return e !== void 0 && (i.add = e), v(this.scene, l, i), l
                         })
-                    }),
-                    72566: ((c, g, t) => {
+                    },
+                    72566: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9059,8 +9060,8 @@ function mh() {
                         v.register("dynamicBitmapText", function(a, r, i, e, s) {
                             return this.displayList.add(new o(this.scene, a, r, i, e, s))
                         })
-                    }),
-                    12310: ((c, g, t) => {
+                    },
+                    12310: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9073,8 +9074,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    73482: ((c, g, t) => {
+                    },
+                    73482: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9154,13 +9155,13 @@ function mh() {
                                                     zt = B,
                                                     Zt = p.e,
                                                     Qt = p.f,
-                                                    ee = zt * p.c + p.e,
+                                                    ie = zt * p.c + p.e,
                                                     qe = zt * p.d + p.f,
                                                     _e = jt * p.a + zt * p.c + p.e,
                                                     ti = jt * p.b + zt * p.d + p.f,
                                                     ei = jt * p.a + p.e,
                                                     ii = jt * p.b + p.f;
-                                                ft && (Zt = Math.round(Zt), Qt = Math.round(Qt), ee = Math.round(ee), qe = Math.round(qe), _e = Math.round(_e), ti = Math.round(ti), ei = Math.round(ei), ii = Math.round(ii)), f.shouldFlush(6) && (f.flush(), O = f.setGameObject(s)), f.batchQuad(s, Zt, Qt, ee, qe, _e, ti, ei, ii, Wt, Bt, Gt, Kt, R, L, F, w, P, C, O)
+                                                ft && (Zt = Math.round(Zt), Qt = Math.round(Qt), ie = Math.round(ie), qe = Math.round(qe), _e = Math.round(_e), ti = Math.round(ti), ei = Math.round(ei), ii = Math.round(ii)), f.shouldFlush(6) && (f.flush(), O = f.setGameObject(s)), f.batchQuad(s, Zt, Qt, ie, qe, _e, ti, ei, ii, Wt, Bt, Gt, Kt, R, L, F, w, P, C, O)
                                             }
                                         }
                                     }
@@ -9168,8 +9169,8 @@ function mh() {
                                 }
                             };
                         c.exports = i
-                    }),
-                    22186: ((c, g, t) => {
+                    },
+                    22186: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9369,8 +9370,8 @@ function mh() {
                                 }
                             });
                         l.ALIGN_LEFT = 0, l.ALIGN_CENTER = 1, l.ALIGN_RIGHT = 2, l.ParseFromAtlas = e, l.ParseXMLBitmapFont = s, c.exports = l
-                    }),
-                    37289: ((c, g, t) => {
+                    },
+                    37289: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9428,8 +9429,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    57336: ((c, g, t) => {
+                    },
+                    57336: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9449,8 +9450,8 @@ function mh() {
                                 f = new o(this.scene, 0, 0, h, n, l, u);
                             return s !== void 0 && (e.add = s), v(this.scene, f, e), f
                         })
-                    }),
-                    34914: ((c, g, t) => {
+                    },
+                    34914: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9461,8 +9462,8 @@ function mh() {
                         v.register("bitmapText", function(a, r, i, e, s, h) {
                             return this.displayList.add(new o(this.scene, a, r, i, e, s, h))
                         })
-                    }),
-                    18658: ((c, g, t) => {
+                    },
+                    18658: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9475,8 +9476,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    33590: ((c, g, t) => {
+                    },
+                    33590: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9533,8 +9534,8 @@ function mh() {
                                 }
                             };
                         c.exports = r
-                    }),
-                    6107: ((c, g, t) => {
+                    },
+                    6107: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9587,8 +9588,8 @@ function mh() {
                                 }
                             });
                         c.exports = h
-                    }),
-                    72396: (c => {
+                    },
+                    72396: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9621,8 +9622,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    9403: ((c, g, t) => {
+                    },
+                    9403: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9639,8 +9640,8 @@ function mh() {
                                 n = new o(this.scene, 0, 0, s, h);
                             return e !== void 0 && (i.add = e), v(this.scene, n, i), n
                         })
-                    }),
-                    12709: ((c, g, t) => {
+                    },
+                    12709: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9651,8 +9652,8 @@ function mh() {
                         v.register("blitter", function(a, r, i, e) {
                             return this.displayList.add(new o(this.scene, a, r, i, e))
                         })
-                    }),
-                    48011: ((c, g, t) => {
+                    },
+                    48011: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9665,8 +9666,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    99485: ((c, g, t) => {
+                    },
+                    99485: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9714,8 +9715,8 @@ function mh() {
                                 }
                             };
                         c.exports = r
-                    }),
-                    46590: ((c, g, t) => {
+                    },
+                    46590: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9778,8 +9779,8 @@ function mh() {
                                 }
                             });
                         c.exports = a
-                    }),
-                    16005: ((c, g, t) => {
+                    },
+                    16005: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9846,8 +9847,8 @@ function mh() {
                                 }
                             };
                         c.exports = a
-                    }),
-                    88509: ((c, g, t) => {
+                    },
+                    88509: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9874,8 +9875,8 @@ function mh() {
                                 }
                             };
                         c.exports = a
-                    }),
-                    90065: ((c, g, t) => {
+                    },
+                    90065: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9897,8 +9898,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    94215: (c => {
+                    },
+                    94215: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9931,8 +9932,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    61683: (c => {
+                    },
+                    61683: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -9974,8 +9975,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    89272: ((c, g, t) => {
+                    },
+                    89272: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10013,8 +10014,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    47059: ((c, g, t) => {
+                    },
+                    47059: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10130,8 +10131,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    54434: (c => {
+                    },
+                    54434: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10160,8 +10161,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    8004: ((c, g, t) => {
+                    },
+                    8004: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10216,8 +10217,8 @@ function mh() {
                                 }
                             };
                         c.exports = r
-                    }),
-                    8573: ((c, g, t) => {
+                    },
+                    8573: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10241,8 +10242,8 @@ function mh() {
                                 }
                             };
                         c.exports = a
-                    }),
-                    27387: (c => {
+                    },
+                    27387: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10284,8 +10285,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    37640: ((c, g, t) => {
+                    },
+                    37640: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10376,8 +10377,8 @@ function mh() {
                                 }
                             };
                         c.exports = e
-                    }),
-                    72699: ((c, g, t) => {
+                    },
+                    72699: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10422,8 +10423,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    17581: ((c, g, t) => {
+                    },
+                    17581: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10483,8 +10484,8 @@ function mh() {
                                 }
                             };
                         c.exports = r
-                    }),
-                    80227: (c => {
+                    },
+                    80227: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10498,8 +10499,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    16736: (c => {
+                    },
+                    16736: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10538,8 +10539,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    37726: ((c, g, t) => {
+                    },
+                    37726: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10559,8 +10560,8 @@ function mh() {
                                 }
                             };
                         c.exports = a
-                    }),
-                    79812: ((c, g, t) => {
+                    },
+                    79812: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10610,8 +10611,8 @@ function mh() {
                                 }
                             };
                         c.exports = a
-                    }),
-                    27472: (c => {
+                    },
+                    27472: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10648,8 +10649,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    53774: (c => {
+                    },
+                    53774: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10683,8 +10684,8 @@ function mh() {
                             return t.texture && (o.textureKey = t.texture.key, o.frameKey = t.frame.name), o
                         };
                         c.exports = g
-                    }),
-                    16901: ((c, g, t) => {
+                    },
+                    16901: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -10808,8 +10809,8 @@ function mh() {
                                 }
                             };
                         c.exports = h
-                    }),
-                    61340: ((c, g, t) => {
+                    },
+                    61340: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11118,8 +11119,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    59715: (c => {
+                    },
+                    59715: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11141,8 +11142,8 @@ function mh() {
                                 }
                             };
                         c.exports = t
-                    }),
-                    31401: ((c, g, t) => {
+                    },
+                    31401: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11173,8 +11174,8 @@ function mh() {
                             TransformMatrix: t(61340),
                             Visible: t(59715)
                         }
-                    }),
-                    31559: ((c, g, t) => {
+                    },
+                    31559: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Felipe Alfonso <@bitnenfer>
@@ -11402,8 +11403,8 @@ function mh() {
                                 }
                             });
                         c.exports = f
-                    }),
-                    53584: (c => {
+                    },
+                    53584: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Felipe Alfonso <@bitnenfer>
@@ -11435,8 +11436,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    77143: ((c, g, t) => {
+                    },
+                    77143: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Felipe Alfonso <@bitnenfer>
@@ -11456,8 +11457,8 @@ function mh() {
                                 u = new v(this.scene, h, n, l);
                             return s !== void 0 && (e.add = s), o(this.scene, u, e), u
                         })
-                    }),
-                    24961: ((c, g, t) => {
+                    },
+                    24961: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Felipe Alfonso <@bitnenfer>
@@ -11469,8 +11470,8 @@ function mh() {
                         v.register("container", function(a, r, i) {
                             return this.displayList.add(new o(this.scene, a, r, i))
                         })
-                    }),
-                    29959: ((c, g, t) => {
+                    },
+                    29959: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Felipe Alfonso <@bitnenfer>
@@ -11484,8 +11485,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    72249: (c => {
+                    },
+                    72249: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Felipe Alfonso <@bitnenfer>
@@ -11523,16 +11524,16 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    47407: (c => {
+                    },
+                    47407: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = ["normal", "multiply", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"]
-                    }),
-                    3069: ((c, g, t) => {
+                    },
+                    3069: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11652,8 +11653,8 @@ function mh() {
                                 }
                             });
                         c.exports = n
-                    }),
-                    49381: ((c, g, t) => {
+                    },
+                    49381: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11687,8 +11688,8 @@ function mh() {
                                 }
                             };
                         c.exports = s
-                    }),
-                    2611: ((c, g, t) => {
+                    },
+                    2611: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11700,8 +11701,8 @@ function mh() {
                             var h = new o(this.scene, a, r, i, e, s);
                             return this.displayList.add(h), h
                         })
-                    }),
-                    441: ((c, g, t) => {
+                    },
+                    441: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11714,152 +11715,152 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    62980: (c => {
+                    },
+                    62980: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "addedtoscene"
-                    }),
-                    41337: (c => {
+                    },
+                    41337: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "destroy"
-                    }),
-                    44947: (c => {
+                    },
+                    44947: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "removedfromscene"
-                    }),
-                    49358: (c => {
+                    },
+                    49358: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "complete"
-                    }),
-                    35163: (c => {
+                    },
+                    35163: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "created"
-                    }),
-                    97249: (c => {
+                    },
+                    97249: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "error"
-                    }),
-                    19483: (c => {
+                    },
+                    19483: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "locked"
-                    }),
-                    56059: (c => {
+                    },
+                    56059: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "loop"
-                    }),
-                    26772: (c => {
+                    },
+                    26772: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "metadata"
-                    }),
-                    64437: (c => {
+                    },
+                    64437: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "playing"
-                    }),
-                    83411: (c => {
+                    },
+                    83411: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "play"
-                    }),
-                    75780: (c => {
+                    },
+                    75780: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "seeked"
-                    }),
-                    67799: (c => {
+                    },
+                    67799: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "seeking"
-                    }),
-                    63500: (c => {
+                    },
+                    63500: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "stalled"
-                    }),
-                    55541: (c => {
+                    },
+                    55541: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "stop"
-                    }),
-                    53208: (c => {
+                    },
+                    53208: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "textureready"
-                    }),
-                    4992: (c => {
+                    },
+                    4992: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "unlocked"
-                    }),
-                    12: (c => {
+                    },
+                    12: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "unsupported"
-                    }),
-                    51708: ((c, g, t) => {
+                    },
+                    51708: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11885,8 +11886,8 @@ function mh() {
                             VIDEO_UNLOCKED: t(4992),
                             VIDEO_UNSUPPORTED: t(12)
                         }
-                    }),
-                    42421: ((c, g, t) => {
+                    },
+                    42421: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11912,9 +11913,9 @@ function mh() {
                                 render: function() {}
                             });
                         c.exports = i
-                    }),
-                    70217: (() => {}),
-                    56315: ((c, g, t) => {
+                    },
+                    70217: () => {},
+                    56315: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11926,8 +11927,8 @@ function mh() {
                             var a = new o(this.scene);
                             return this.displayList.add(a), a
                         })
-                    }),
-                    64993: ((c, g, t) => {
+                    },
+                    64993: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11940,8 +11941,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    80287: ((c, g, t) => {
+                    },
+                    80287: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11954,8 +11955,8 @@ function mh() {
                                 r.render.call(r, a, i, s), a.pipelines.rebind()
                             };
                         c.exports = v
-                    }),
-                    85592: (c => {
+                    },
+                    85592: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -11982,8 +11983,8 @@ function mh() {
                             GRADIENT_FILL_STYLE: 21,
                             GRADIENT_LINE_STYLE: 22
                         }
-                    }),
-                    43831: ((c, g, t) => {
+                    },
+                    43831: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12201,8 +12202,8 @@ function mh() {
                                 }
                             });
                         u.TargetCamera = new o, c.exports = u
-                    }),
-                    32768: ((c, g, t) => {
+                    },
+                    32768: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12297,8 +12298,8 @@ function mh() {
                                 }
                             };
                         c.exports = a
-                    }),
-                    87079: ((c, g, t) => {
+                    },
+                    87079: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12311,8 +12312,8 @@ function mh() {
                             var i = new v(this.scene, a);
                             return a.add && this.scene.sys.displayList.add(i), i
                         })
-                    }),
-                    1201: ((c, g, t) => {
+                    },
+                    1201: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12323,8 +12324,8 @@ function mh() {
                         v.register("graphics", function(a) {
                             return this.displayList.add(new o(this.scene, a))
                         })
-                    }),
-                    84503: ((c, g, t) => {
+                    },
+                    84503: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12337,8 +12338,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    77545: ((c, g, t) => {
+                    },
+                    77545: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12465,8 +12466,8 @@ function mh() {
                                 }
                             };
                         c.exports = n
-                    }),
-                    26479: ((c, g, t) => {
+                    },
+                    26479: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12777,8 +12778,8 @@ function mh() {
                                 }
                             });
                         c.exports = d
-                    }),
-                    94975: ((c, g, t) => {
+                    },
+                    94975: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12789,8 +12790,8 @@ function mh() {
                         o.register("group", function(a) {
                             return new v(this.scene, null, a)
                         })
-                    }),
-                    3385: ((c, g, t) => {
+                    },
+                    3385: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12801,8 +12802,8 @@ function mh() {
                         v.register("group", function(a, r) {
                             return this.updateList.add(new o(this.scene, a, r))
                         })
-                    }),
-                    88571: ((c, g, t) => {
+                    },
+                    88571: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12820,8 +12821,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    40652: (c => {
+                    },
+                    40652: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12831,8 +12832,8 @@ function mh() {
                             v.addToRenderList(o), t.batchSprite(o, o.frame, v, a)
                         };
                         c.exports = g
-                    }),
-                    82459: ((c, g, t) => {
+                    },
+                    82459: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12849,8 +12850,8 @@ function mh() {
                                 n = new r(this.scene, 0, 0, s, h);
                             return e !== void 0 && (i.add = e), o(this.scene, n, i), n
                         })
-                    }),
-                    2117: ((c, g, t) => {
+                    },
+                    2117: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12861,8 +12862,8 @@ function mh() {
                         v.register("image", function(a, r, i, e) {
                             return this.displayList.add(new o(this.scene, a, r, i, e))
                         })
-                    }),
-                    59819: ((c, g, t) => {
+                    },
+                    59819: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12875,8 +12876,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    99517: (c => {
+                    },
+                    99517: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12886,8 +12887,8 @@ function mh() {
                             v.addToRenderList(o), this.pipeline.batchSprite(o, v, a)
                         };
                         c.exports = g
-                    }),
-                    77856: ((c, g, t) => {
+                    },
+                    77856: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -12992,8 +12993,8 @@ function mh() {
                             }
                         };
                         o.Shader = t(20071), o.Mesh = t(4703), o.NineSlice = t(28103), o.PointLight = t(80321), o.Plane = t(33663), o.Factories.Shader = t(74177), o.Factories.Mesh = t(9225), o.Factories.NineSlice = t(47521), o.Factories.PointLight = t(71255), o.Factories.Plane = t(30985), o.Creators.Shader = t(54935), o.Creators.Mesh = t(20527), o.Creators.NineSlice = t(28279), o.Creators.PointLight = t(39829), o.Creators.Plane = t(56015), o.Light = t(41432), o.LightsManager = t(61356), o.LightsPlugin = t(88992), c.exports = o
-                    }),
-                    93595: ((c, g, t) => {
+                    },
+                    93595: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13101,8 +13102,8 @@ function mh() {
                                 }
                             });
                         c.exports = f
-                    }),
-                    2956: (c => {
+                    },
+                    2956: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13127,8 +13128,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    25179: ((c, g, t) => {
+                    },
+                    25179: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13144,8 +13145,8 @@ function mh() {
                                 h = new v(this.scene, s);
                             return e !== void 0 && (i.add = e), o(this.scene, h, i), h
                         })
-                    }),
-                    20005: ((c, g, t) => {
+                    },
+                    20005: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13156,8 +13157,8 @@ function mh() {
                         v.register("layer", function(a) {
                             return this.displayList.add(new o(this.scene, a))
                         })
-                    }),
-                    33963: ((c, g, t) => {
+                    },
+                    33963: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13170,8 +13171,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    15869: (c => {
+                    },
+                    15869: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13203,8 +13204,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    41432: ((c, g, t) => {
+                    },
+                    41432: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13268,8 +13269,8 @@ function mh() {
                                 }
                             });
                         e.RENDER_MASK = 15, c.exports = e
-                    }),
-                    61356: ((c, g, t) => {
+                    },
+                    61356: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13338,8 +13339,8 @@ function mh() {
                                 }
                             });
                         c.exports = l
-                    }),
-                    88992: ((c, g, t) => {
+                    },
+                    88992: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13363,8 +13364,8 @@ function mh() {
                                 }
                             });
                         a.register("LightsPlugin", i, "lights"), c.exports = i
-                    }),
-                    4703: ((c, g, t) => {
+                    },
+                    4703: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13584,8 +13585,8 @@ function mh() {
                                 }
                             });
                         c.exports = m
-                    }),
-                    36488: (c => {
+                    },
+                    36488: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13593,8 +13594,8 @@ function mh() {
                          */
                         var g = function() {};
                         c.exports = g
-                    }),
-                    20527: ((c, g, t) => {
+                    },
+                    20527: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13619,8 +13620,8 @@ function mh() {
                                 x = new i(this.scene, 0, 0, h, n, l, u, f, d, p, m, y);
                             return s !== void 0 && (e.add = s), o(this.scene, x, e), x
                         })
-                    }),
-                    9225: ((c, g, t) => {
+                    },
+                    9225: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13631,8 +13632,8 @@ function mh() {
                         v.register("mesh", function(a, r, i, e, s, h, n, l, u, f, d) {
                             return this.displayList.add(new o(this.scene, a, r, i, e, s, h, n, l, u, f, d))
                         })
-                    }),
-                    29807: ((c, g, t) => {
+                    },
+                    29807: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13645,8 +13646,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    48833: ((c, g, t) => {
+                    },
+                    48833: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13669,8 +13670,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    28103: ((c, g, t) => {
+                    },
+                    28103: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13835,8 +13836,8 @@ function mh() {
                                 }
                             });
                         c.exports = e
-                    }),
-                    28279: ((c, g, t) => {
+                    },
+                    28279: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13860,8 +13861,8 @@ function mh() {
                                 y = new i(this.scene, 0, 0, h, n, l, u, f, d, p, m);
                             return s !== void 0 && (e.add = s), o(this.scene, y, e), y
                         })
-                    }),
-                    47521: ((c, g, t) => {
+                    },
+                    47521: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13872,8 +13873,8 @@ function mh() {
                         v.register("nineslice", function(a, r, i, e, s, h, n, l, u, f) {
                             return this.displayList.add(new o(this.scene, a, r, i, e, s, h, n, l, u, f))
                         })
-                    }),
-                    78023: ((c, g, t) => {
+                    },
+                    78023: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13886,8 +13887,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    52230: ((c, g, t) => {
+                    },
+                    52230: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13922,8 +13923,8 @@ function mh() {
                                 }
                             };
                         c.exports = a
-                    }),
-                    76472: ((c, g, t) => {
+                    },
+                    76472: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -13973,8 +13974,8 @@ function mh() {
                                 }
                             });
                         c.exports = s
-                    }),
-                    44777: ((c, g, t) => {
+                    },
+                    44777: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -14150,8 +14151,8 @@ function mh() {
                                 }
                             });
                         c.exports = l
-                    }),
-                    24502: ((c, g, t) => {
+                    },
+                    24502: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -14207,8 +14208,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    56480: ((c, g, t) => {
+                    },
+                    56480: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -14364,8 +14365,8 @@ function mh() {
                                 }
                             });
                         c.exports = h
-                    }),
-                    69601: ((c, g, t) => {
+                    },
+                    69601: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -14387,8 +14388,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    31600: ((c, g, t) => {
+                    },
+                    31600: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15097,8 +15098,8 @@ function mh() {
                                 }
                             });
                         c.exports = U
-                    }),
-                    9871: ((c, g, t) => {
+                    },
+                    9871: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15146,8 +15147,8 @@ function mh() {
                                 }
                             };
                         c.exports = s
-                    }),
-                    92730: ((c, g, t) => {
+                    },
+                    92730: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15165,8 +15166,8 @@ function mh() {
                                 l = new i(this.scene, 0, 0, h);
                             return s !== void 0 && (e.add = s), o(this.scene, l, e), n && l.setConfig(n), l
                         })
-                    }),
-                    676: ((c, g, t) => {
+                    },
+                    676: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15177,8 +15178,8 @@ function mh() {
                         o.register("particles", function(a, r, i, e) {
                             return a !== void 0 && typeof a == "string" && console.warn("ParticleEmitterManager was removed in Phaser 3.60. See documentation for details"), this.displayList.add(new v(this.scene, a, r, i, e))
                         })
-                    }),
-                    90668: ((c, g, t) => {
+                    },
+                    90668: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15191,8 +15192,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    21188: ((c, g, t) => {
+                    },
+                    21188: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15239,8 +15240,8 @@ function mh() {
                                 }
                             };
                         c.exports = h
-                    }),
-                    20286: ((c, g, t) => {
+                    },
+                    20286: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15257,48 +15258,48 @@ function mh() {
                                 }
                             });
                         c.exports = v
-                    }),
-                    9774: (c => {
+                    },
+                    9774: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "complete"
-                    }),
-                    812: (c => {
+                    },
+                    812: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "deathzone"
-                    }),
-                    30522: (c => {
+                    },
+                    30522: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "explode"
-                    }),
-                    96695: (c => {
+                    },
+                    96695: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "start"
-                    }),
-                    18677: (c => {
+                    },
+                    18677: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "stop"
-                    }),
-                    20696: ((c, g, t) => {
+                    },
+                    20696: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15311,8 +15312,8 @@ function mh() {
                             START: t(96695),
                             STOP: t(18677)
                         }
-                    }),
-                    18404: ((c, g, t) => {
+                    },
+                    18404: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15329,8 +15330,8 @@ function mh() {
                             ParticleProcessor: t(20286),
                             Zones: t(21024)
                         }
-                    }),
-                    26388: ((c, g, t) => {
+                    },
+                    26388: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15348,8 +15349,8 @@ function mh() {
                                 }
                             });
                         c.exports = v
-                    }),
-                    19909: ((c, g, t) => {
+                    },
+                    19909: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15379,8 +15380,8 @@ function mh() {
                                 }
                             });
                         c.exports = v
-                    }),
-                    68875: ((c, g, t) => {
+                    },
+                    68875: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15398,8 +15399,8 @@ function mh() {
                                 }
                             });
                         c.exports = a
-                    }),
-                    21024: ((c, g, t) => {
+                    },
+                    21024: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15410,8 +15411,8 @@ function mh() {
                             EdgeZone: t(19909),
                             RandomZone: t(68875)
                         }
-                    }),
-                    1159: ((c, g, t) => {
+                    },
+                    1159: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15431,8 +15432,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    90145: ((c, g, t) => {
+                    },
+                    90145: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15444,8 +15445,8 @@ function mh() {
                             var h = new v(this.scene, a, r, i, e, s);
                             return this.displayList.add(h), this.updateList.add(h), h
                         })
-                    }),
-                    33663: ((c, g, t) => {
+                    },
+                    33663: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15569,8 +15570,8 @@ function mh() {
                                 }
                             });
                         c.exports = s
-                    }),
-                    56015: ((c, g, t) => {
+                    },
+                    56015: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15602,8 +15603,8 @@ function mh() {
                             }
                             return o(this.scene, p, s), v(p, s), p
                         })
-                    }),
-                    30985: ((c, g, t) => {
+                    },
+                    30985: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15614,8 +15615,8 @@ function mh() {
                         v.register("plane", function(a, r, i, e, s, h, n) {
                             return this.displayList.add(new o(this.scene, a, r, i, e, s, h, n))
                         })
-                    }),
-                    80321: ((c, g, t) => {
+                    },
+                    80321: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15663,8 +15664,8 @@ function mh() {
                                 }
                             });
                         c.exports = s
-                    }),
-                    39829: ((c, g, t) => {
+                    },
+                    39829: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15683,8 +15684,8 @@ function mh() {
                                 u = new r(this.scene, 0, 0, s, h, n, l);
                             return e !== void 0 && (i.add = e), o(this.scene, u, i), u
                         })
-                    }),
-                    71255: ((c, g, t) => {
+                    },
+                    71255: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15695,8 +15696,8 @@ function mh() {
                         o.register("pointlight", function(a, r, i, e, s, h) {
                             return this.displayList.add(new v(this.scene, a, r, i, e, s, h))
                         })
-                    }),
-                    67277: ((c, g, t) => {
+                    },
+                    67277: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15709,8 +15710,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    57787: ((c, g, t) => {
+                    },
+                    57787: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15740,8 +15741,8 @@ function mh() {
                                 a.pipelines.preBatch(r), s.batchPointLight(r, i, x, S, C, P, R, L, F, w, m, y), a.pipelines.postBatch(r)
                             };
                         c.exports = v
-                    }),
-                    591: ((c, g, t) => {
+                    },
+                    591: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15816,8 +15817,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    34495: ((c, g, t) => {
+                    },
+                    34495: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15836,8 +15837,8 @@ function mh() {
                                 u = new r(this.scene, s, h, n, l);
                             return e !== void 0 && (i.add = e), o(this.scene, u, i), u
                         })
-                    }),
-                    60505: ((c, g, t) => {
+                    },
+                    60505: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -15848,8 +15849,8 @@ function mh() {
                         o.register("renderTexture", function(a, r, i, e) {
                             return this.displayList.add(new v(this.scene, a, r, i, e))
                         })
-                    }),
-                    77757: ((c, g, t) => {
+                    },
+                    77757: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16016,8 +16017,8 @@ function mh() {
                                 }
                             });
                         c.exports = h
-                    }),
-                    95262: (c => {
+                    },
+                    95262: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16025,8 +16026,8 @@ function mh() {
                          */
                         var g = function() {};
                         c.exports = g
-                    }),
-                    26209: ((c, g, t) => {
+                    },
+                    26209: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16048,8 +16049,8 @@ function mh() {
                                 p = new i(this.scene, 0, 0, h, n, u, l, f, d);
                             return s !== void 0 && (e.add = s), o(this.scene, p, e), p
                         })
-                    }),
-                    96819: ((c, g, t) => {
+                    },
+                    96819: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16060,8 +16061,8 @@ function mh() {
                         v.register("rope", function(a, r, i, e, s, h, n, l) {
                             return this.displayList.add(new o(this.scene, a, r, i, e, s, h, n, l))
                         })
-                    }),
-                    38745: ((c, g, t) => {
+                    },
+                    38745: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16074,8 +16075,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    20439: ((c, g, t) => {
+                    },
+                    20439: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16114,8 +16115,8 @@ function mh() {
                                 O && O.call(i, i, x, D), h.vertexCount += S, h.currentBatch.count = h.vertexCount - h.currentBatch.start, r.pipelines.postBatch(i)
                             };
                         c.exports = a
-                    }),
-                    20071: ((c, g, t) => {
+                    },
+                    20071: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16391,8 +16392,8 @@ function mh() {
                                 }
                             });
                         c.exports = u
-                    }),
-                    80464: (c => {
+                    },
+                    80464: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16400,8 +16401,8 @@ function mh() {
                          */
                         var g = function() {};
                         c.exports = g
-                    }),
-                    54935: ((c, g, t) => {
+                    },
+                    54935: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16421,8 +16422,8 @@ function mh() {
                                 f = new r(this.scene, s, h, n, l, u);
                             return e !== void 0 && (i.add = e), o(this.scene, f, i), f
                         })
-                    }),
-                    74177: ((c, g, t) => {
+                    },
+                    74177: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16433,8 +16434,8 @@ function mh() {
                         v.register("shader", function(a, r, i, e, s, h, n) {
                             return this.displayList.add(new o(this.scene, a, r, i, e, s, h, n))
                         })
-                    }),
-                    25479: ((c, g, t) => {
+                    },
+                    25479: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16447,8 +16448,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    19257: ((c, g, t) => {
+                    },
+                    19257: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16466,8 +16467,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    10441: ((c, g, t) => {
+                    },
+                    10441: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16495,8 +16496,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    65960: (c => {
+                    },
+                    65960: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16511,8 +16512,8 @@ function mh() {
                             t.fillStyle = "rgba(" + e + "," + s + "," + h + "," + i + ")"
                         };
                         c.exports = g
-                    }),
-                    75177: (c => {
+                    },
+                    75177: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16527,8 +16528,8 @@ function mh() {
                             t.strokeStyle = "rgba(" + e + "," + s + "," + h + "," + i + ")", t.lineWidth = o.lineWidth
                         };
                         c.exports = g
-                    }),
-                    17803: ((c, g, t) => {
+                    },
+                    17803: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16580,8 +16581,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    34682: ((c, g, t) => {
+                    },
+                    34682: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16606,8 +16607,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    23629: ((c, g, t) => {
+                    },
+                    23629: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16697,8 +16698,8 @@ function mh() {
                                 }
                             });
                         c.exports = h
-                    }),
-                    42542: ((c, g, t) => {
+                    },
+                    42542: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16717,8 +16718,8 @@ function mh() {
                                 }
                             };
                         c.exports = i
-                    }),
-                    42563: ((c, g, t) => {
+                    },
+                    42563: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16731,8 +16732,8 @@ function mh() {
                         }), v.register("circle", function(a, r, i, e, s) {
                             return this.displayList.add(new o(this.scene, a, r, i, 0, 360, !1, e, s))
                         })
-                    }),
-                    13609: ((c, g, t) => {
+                    },
+                    13609: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16745,8 +16746,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    41447: ((c, g, t) => {
+                    },
+                    41447: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16766,8 +16767,8 @@ function mh() {
                                 i.pipelines.preBatch(e), e.isFilled && v(n, u, e, p, f, d), e.isStroked && a(n, e, p, f, d), i.pipelines.postBatch(e)
                             };
                         c.exports = r
-                    }),
-                    89: ((c, g, t) => {
+                    },
+                    89: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16804,8 +16805,8 @@ function mh() {
                                 }
                             });
                         c.exports = e
-                    }),
-                    3170: ((c, g, t) => {
+                    },
+                    3170: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16834,8 +16835,8 @@ function mh() {
                                 }
                             };
                         c.exports = r
-                    }),
-                    40511: ((c, g, t) => {
+                    },
+                    40511: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16846,8 +16847,8 @@ function mh() {
                         o.register("curve", function(a, r, i, e, s) {
                             return this.displayList.add(new v(this.scene, a, r, i, e, s))
                         })
-                    }),
-                    33141: ((c, g, t) => {
+                    },
+                    33141: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16860,8 +16861,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    53987: ((c, g, t) => {
+                    },
+                    53987: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16881,8 +16882,8 @@ function mh() {
                                 i.pipelines.preBatch(e), e.isFilled && o(n, u, e, p, f, d), e.isStroked && a(n, e, p, f, d), i.pipelines.postBatch(e)
                             };
                         c.exports = r
-                    }),
-                    19921: ((c, g, t) => {
+                    },
+                    19921: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16919,8 +16920,8 @@ function mh() {
                                 }
                             });
                         c.exports = e
-                    }),
-                    7930: ((c, g, t) => {
+                    },
+                    7930: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16949,8 +16950,8 @@ function mh() {
                                 }
                             };
                         c.exports = r
-                    }),
-                    1543: ((c, g, t) => {
+                    },
+                    1543: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16961,8 +16962,8 @@ function mh() {
                         v.register("ellipse", function(a, r, i, e, s, h) {
                             return this.displayList.add(new o(this.scene, a, r, i, e, s, h))
                         })
-                    }),
-                    54205: ((c, g, t) => {
+                    },
+                    54205: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16975,8 +16976,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    19467: ((c, g, t) => {
+                    },
+                    19467: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -16996,8 +16997,8 @@ function mh() {
                                 i.pipelines.preBatch(e), e.isFilled && o(n, u, e, p, f, d), e.isStroked && a(n, e, p, f, d), i.pipelines.postBatch(e)
                             };
                         c.exports = r
-                    }),
-                    30479: ((c, g, t) => {
+                    },
+                    30479: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17023,8 +17024,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    49912: ((c, g, t) => {
+                    },
+                    49912: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17090,8 +17091,8 @@ function mh() {
                                 }
                             };
                         c.exports = r
-                    }),
-                    34137: ((c, g, t) => {
+                    },
+                    34137: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17102,8 +17103,8 @@ function mh() {
                         o.register("grid", function(a, r, i, e, s, h, n, l, u, f) {
                             return this.displayList.add(new v(this.scene, a, r, i, e, s, h, n, l, u, f))
                         })
-                    }),
-                    26015: ((c, g, t) => {
+                    },
+                    26015: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17116,8 +17117,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    46161: ((c, g, t) => {
+                    },
+                    46161: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17183,8 +17184,8 @@ function mh() {
                                 r.pipelines.postBatch(i)
                             };
                         c.exports = a
-                    }),
-                    61475: ((c, g, t) => {
+                    },
+                    61475: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17210,8 +17211,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    11508: ((c, g, t) => {
+                    },
+                    11508: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17231,8 +17232,8 @@ function mh() {
                                 }
                             };
                         c.exports = a
-                    }),
-                    3933: ((c, g, t) => {
+                    },
+                    3933: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17243,8 +17244,8 @@ function mh() {
                         o.register("isobox", function(a, r, i, e, s, h, n) {
                             return this.displayList.add(new v(this.scene, a, r, i, e, s, h, n))
                         })
-                    }),
-                    99651: ((c, g, t) => {
+                    },
+                    99651: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17257,8 +17258,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    68149: ((c, g, t) => {
+                    },
+                    68149: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17282,8 +17283,8 @@ function mh() {
                                 }
                             };
                         c.exports = a
-                    }),
-                    16933: ((c, g, t) => {
+                    },
+                    16933: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17312,8 +17313,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    79590: ((c, g, t) => {
+                    },
+                    79590: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17334,8 +17335,8 @@ function mh() {
                                 }
                             };
                         c.exports = a
-                    }),
-                    49803: ((c, g, t) => {
+                    },
+                    49803: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17346,8 +17347,8 @@ function mh() {
                         o.register("isotriangle", function(a, r, i, e, s, h, n, l) {
                             return this.displayList.add(new v(this.scene, a, r, i, e, s, h, n, l))
                         })
-                    }),
-                    60561: ((c, g, t) => {
+                    },
+                    60561: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17360,8 +17361,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    51503: ((c, g, t) => {
+                    },
+                    51503: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17393,8 +17394,8 @@ function mh() {
                                 }
                             };
                         c.exports = a
-                    }),
-                    57847: ((c, g, t) => {
+                    },
+                    57847: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17421,8 +17422,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    17440: ((c, g, t) => {
+                    },
+                    17440: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17440,8 +17441,8 @@ function mh() {
                                 }
                             };
                         c.exports = a
-                    }),
-                    2481: ((c, g, t) => {
+                    },
+                    2481: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17452,8 +17453,8 @@ function mh() {
                         o.register("line", function(a, r, i, e, s, h, n, l) {
                             return this.displayList.add(new v(this.scene, a, r, i, e, s, h, n, l))
                         })
-                    }),
-                    36823: ((c, g, t) => {
+                    },
+                    36823: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17466,8 +17467,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    77385: ((c, g, t) => {
+                    },
+                    77385: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17491,8 +17492,8 @@ function mh() {
                                 r.pipelines.postBatch(i)
                             };
                         c.exports = a
-                    }),
-                    24949: ((c, g, t) => {
+                    },
+                    24949: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17529,8 +17530,8 @@ function mh() {
                                 }
                             });
                         c.exports = h
-                    }),
-                    38710: ((c, g, t) => {
+                    },
+                    38710: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17559,8 +17560,8 @@ function mh() {
                                 }
                             };
                         c.exports = r
-                    }),
-                    64827: ((c, g, t) => {
+                    },
+                    64827: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17571,8 +17572,8 @@ function mh() {
                         o.register("polygon", function(a, r, i, e, s) {
                             return this.displayList.add(new v(this.scene, a, r, i, e, s))
                         })
-                    }),
-                    90273: ((c, g, t) => {
+                    },
+                    90273: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17585,8 +17586,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    73695: ((c, g, t) => {
+                    },
+                    73695: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17606,8 +17607,8 @@ function mh() {
                                 i.pipelines.preBatch(e), e.isFilled && o(n, u, e, p, f, d), e.isStroked && a(n, e, p, f, d), i.pipelines.postBatch(e)
                             };
                         c.exports = r
-                    }),
-                    74561: ((c, g, t) => {
+                    },
+                    74561: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17658,8 +17659,8 @@ function mh() {
                                 }
                             });
                         c.exports = e
-                    }),
-                    48682: ((c, g, t) => {
+                    },
+                    48682: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17687,8 +17688,8 @@ function mh() {
                                 }
                             };
                         c.exports = i
-                    }),
-                    87959: ((c, g, t) => {
+                    },
+                    87959: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17699,8 +17700,8 @@ function mh() {
                         o.register("rectangle", function(a, r, i, e, s, h) {
                             return this.displayList.add(new v(this.scene, a, r, i, e, s, h))
                         })
-                    }),
-                    95597: ((c, g, t) => {
+                    },
+                    95597: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17713,8 +17714,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    52059: ((c, g, t) => {
+                    },
+                    52059: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17741,8 +17742,8 @@ function mh() {
                                 s.isStroked && a(l, s, p, f, d), e.pipelines.postBatch(s)
                             };
                         c.exports = i
-                    }),
-                    55911: ((c, g, t) => {
+                    },
+                    55911: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17806,8 +17807,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    64272: ((c, g, t) => {
+                    },
+                    64272: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17836,8 +17837,8 @@ function mh() {
                                 }
                             };
                         c.exports = r
-                    }),
-                    93697: ((c, g, t) => {
+                    },
+                    93697: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17848,8 +17849,8 @@ function mh() {
                         v.register("star", function(a, r, i, e, s, h, n) {
                             return this.displayList.add(new o(this.scene, a, r, i, e, s, h, n))
                         })
-                    }),
-                    81991: ((c, g, t) => {
+                    },
+                    81991: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17862,8 +17863,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    57017: ((c, g, t) => {
+                    },
+                    57017: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17883,8 +17884,8 @@ function mh() {
                                 i.pipelines.preBatch(e), e.isFilled && o(n, u, e, p, f, d), e.isStroked && a(n, e, p, f, d), i.pipelines.postBatch(e)
                             };
                         c.exports = r
-                    }),
-                    36931: ((c, g, t) => {
+                    },
+                    36931: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17914,8 +17915,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    85172: ((c, g, t) => {
+                    },
+                    85172: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17940,8 +17941,8 @@ function mh() {
                                 }
                             };
                         c.exports = r
-                    }),
-                    45245: ((c, g, t) => {
+                    },
+                    45245: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17952,8 +17953,8 @@ function mh() {
                         o.register("triangle", function(a, r, i, e, s, h, n, l, u, f) {
                             return this.displayList.add(new v(this.scene, a, r, i, e, s, h, n, l, u, f))
                         })
-                    }),
-                    96195: ((c, g, t) => {
+                    },
+                    96195: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17966,8 +17967,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    83253: ((c, g, t) => {
+                    },
+                    83253: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -17999,8 +18000,8 @@ function mh() {
                                 e.isStroked && v(n, e, d, u, f), i.pipelines.postBatch(e)
                             };
                         c.exports = r
-                    }),
-                    68287: ((c, g, t) => {
+                    },
+                    68287: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18061,8 +18062,8 @@ function mh() {
                                 }
                             });
                         c.exports = e
-                    }),
-                    76552: (c => {
+                    },
+                    76552: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18072,8 +18073,8 @@ function mh() {
                             v.addToRenderList(o), t.batchSprite(o, o.frame, v, a)
                         };
                         c.exports = g
-                    }),
-                    15567: ((c, g, t) => {
+                    },
+                    15567: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18091,8 +18092,8 @@ function mh() {
                                 l = new i(this.scene, 0, 0, h, n);
                             return s !== void 0 && (e.add = s), o(this.scene, l, e), v(l, e), l
                         })
-                    }),
-                    46409: ((c, g, t) => {
+                    },
+                    46409: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18103,8 +18104,8 @@ function mh() {
                         o.register("sprite", function(a, r, i, e) {
                             return this.displayList.add(new v(this.scene, a, r, i, e))
                         })
-                    }),
-                    92751: ((c, g, t) => {
+                    },
+                    92751: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18117,8 +18118,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    9409: (c => {
+                    },
+                    9409: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18128,8 +18129,8 @@ function mh() {
                             v.addToRenderList(o), o.pipeline.batchSprite(o, v, a)
                         };
                         c.exports = g
-                    }),
-                    14220: (c => {
+                    },
+                    14220: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18165,8 +18166,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    79557: ((c, g, t) => {
+                    },
+                    79557: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18224,8 +18225,8 @@ function mh() {
                                 return f.descent = x - l, f.fontSize = f.ascent + f.descent, o.remove(r), f
                             };
                         c.exports = v
-                    }),
-                    50171: ((c, g, t) => {
+                    },
+                    50171: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18499,8 +18500,8 @@ function mh() {
                                 }
                             });
                         c.exports = f
-                    }),
-                    79724: (c => {
+                    },
+                    79724: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18510,8 +18511,8 @@ function mh() {
                             o.width === 0 || o.height === 0 || (v.addToRenderList(o), t.batchSprite(o, o.frame, v, a))
                         };
                         c.exports = g
-                    }),
-                    71259: ((c, g, t) => {
+                    },
+                    71259: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18530,8 +18531,8 @@ function mh() {
                             var l = new r(this.scene, 0, 0, s, h);
                             return e !== void 0 && (i.add = e), o(this.scene, l, i), l.autoRound = a(i, "autoRound", !0), l.resolution = a(i, "resolution", 1), l
                         })
-                    }),
-                    68005: ((c, g, t) => {
+                    },
+                    68005: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18542,8 +18543,8 @@ function mh() {
                         v.register("text", function(a, r, i, e) {
                             return this.displayList.add(new o(this.scene, a, r, i, e))
                         })
-                    }),
-                    61771: ((c, g, t) => {
+                    },
+                    61771: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18556,8 +18557,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    35762: ((c, g, t) => {
+                    },
+                    35762: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18719,8 +18720,8 @@ function mh() {
                                 }
                             });
                         c.exports = e
-                    }),
-                    34397: ((c, g, t) => {
+                    },
+                    34397: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18740,8 +18741,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    20839: ((c, g, t) => {
+                    },
+                    20839: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18851,8 +18852,8 @@ function mh() {
                                 }
                             });
                         c.exports = u
-                    }),
-                    46992: (c => {
+                    },
+                    46992: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18862,8 +18863,8 @@ function mh() {
                             o.updateCanvas(), v.addToRenderList(o), t.batchSprite(o, o.frame, v, a)
                         };
                         c.exports = g
-                    }),
-                    14167: ((c, g, t) => {
+                    },
+                    14167: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18884,8 +18885,8 @@ function mh() {
                                 d = new r(this.scene, s, h, n, l, u, f);
                             return e !== void 0 && (i.add = e), o(this.scene, d, i), d
                         })
-                    }),
-                    91681: ((c, g, t) => {
+                    },
+                    91681: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18896,8 +18897,8 @@ function mh() {
                         v.register("tileSprite", function(a, r, i, e, s, h) {
                             return this.displayList.add(new o(this.scene, a, r, i, e, s, h))
                         })
-                    }),
-                    56295: ((c, g, t) => {
+                    },
+                    56295: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18910,8 +18911,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    18553: ((c, g, t) => {
+                    },
+                    18553: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -18931,8 +18932,8 @@ function mh() {
                                 }
                             };
                         c.exports = v
-                    }),
-                    18471: ((c, g, t) => {
+                    },
+                    18471: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19248,8 +19249,8 @@ function mh() {
                                 }
                             });
                         c.exports = u
-                    }),
-                    58352: (c => {
+                    },
+                    58352: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19259,8 +19260,8 @@ function mh() {
                             o.videoTexture && (v.addToRenderList(o), t.batchSprite(o, o.frame, v, a))
                         };
                         c.exports = g
-                    }),
-                    11511: ((c, g, t) => {
+                    },
+                    11511: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19276,8 +19277,8 @@ function mh() {
                                 h = new r(this.scene, 0, 0, s);
                             return e !== void 0 && (i.add = e), o(this.scene, h, i), h
                         })
-                    }),
-                    89025: ((c, g, t) => {
+                    },
+                    89025: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19288,8 +19289,8 @@ function mh() {
                         v.register("video", function(a, r, i) {
                             return this.displayList.add(new o(this.scene, a, r, i))
                         })
-                    }),
-                    10247: ((c, g, t) => {
+                    },
+                    10247: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19302,8 +19303,8 @@ function mh() {
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    29849: (c => {
+                    },
+                    29849: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19313,8 +19314,8 @@ function mh() {
                             o.videoTexture && (v.addToRenderList(o), o.pipeline.batchSprite(o, v, a))
                         };
                         c.exports = g
-                    }),
-                    41481: ((c, g, t) => {
+                    },
+                    41481: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19377,8 +19378,8 @@ function mh() {
                                 }
                             });
                         c.exports = n
-                    }),
-                    95261: ((c, g, t) => {
+                    },
+                    95261: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19394,8 +19395,8 @@ function mh() {
                                 h = v(r, "height", s);
                             return new a(this.scene, i, e, s, h)
                         })
-                    }),
-                    84175: ((c, g, t) => {
+                    },
+                    84175: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19406,8 +19407,8 @@ function mh() {
                         v.register("zone", function(a, r, i, e) {
                             return this.displayList.add(new o(this.scene, a, r, i, e))
                         })
-                    }),
-                    95166: (c => {
+                    },
+                    95166: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19417,8 +19418,8 @@ function mh() {
                             return t.radius > 0 ? Math.PI * t.radius * t.radius : 0
                         };
                         c.exports = g
-                    }),
-                    96503: ((c, g, t) => {
+                    },
+                    96503: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19508,8 +19509,8 @@ function mh() {
                                 }
                             });
                         c.exports = s
-                    }),
-                    71562: (c => {
+                    },
+                    71562: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19519,8 +19520,8 @@ function mh() {
                             return 2 * (Math.PI * t.radius)
                         };
                         c.exports = g
-                    }),
-                    92110: ((c, g, t) => {
+                    },
+                    92110: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19531,8 +19532,8 @@ function mh() {
                                 return i === void 0 && (i = new o), i.x = a.x + a.radius * Math.cos(r), i.y = a.y + a.radius * Math.sin(r), i
                             };
                         c.exports = v
-                    }),
-                    42250: ((c, g, t) => {
+                    },
+                    42250: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19543,8 +19544,8 @@ function mh() {
                                 return new o(a.x, a.y, a.radius)
                             };
                         c.exports = v
-                    }),
-                    87902: (c => {
+                    },
+                    87902: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19558,8 +19559,8 @@ function mh() {
                             } else return !1
                         };
                         c.exports = g
-                    }),
-                    5698: ((c, g, t) => {
+                    },
+                    5698: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19570,8 +19571,8 @@ function mh() {
                                 return o(a, r.x, r.y)
                             };
                         c.exports = v
-                    }),
-                    70588: ((c, g, t) => {
+                    },
+                    70588: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19582,8 +19583,8 @@ function mh() {
                                 return o(a, r.x, r.y) && o(a, r.right, r.y) && o(a, r.x, r.bottom) && o(a, r.right, r.bottom)
                             };
                         c.exports = v
-                    }),
-                    26394: (c => {
+                    },
+                    26394: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19593,8 +19594,8 @@ function mh() {
                             return o.setTo(t.x, t.y, t.radius)
                         };
                         c.exports = g
-                    }),
-                    76278: (c => {
+                    },
+                    76278: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19604,8 +19605,8 @@ function mh() {
                             return t.x === o.x && t.y === o.y && t.radius === o.radius
                         };
                         c.exports = g
-                    }),
-                    2074: ((c, g, t) => {
+                    },
+                    2074: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19616,8 +19617,8 @@ function mh() {
                                 return r === void 0 && (r = new o), r.x = a.left, r.y = a.top, r.width = a.diameter, r.height = a.diameter, r
                             };
                         c.exports = v
-                    }),
-                    26241: ((c, g, t) => {
+                    },
+                    26241: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19633,8 +19634,8 @@ function mh() {
                                 return o(e, n, h)
                             };
                         c.exports = i
-                    }),
-                    79124: ((c, g, t) => {
+                    },
+                    79124: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19653,8 +19654,8 @@ function mh() {
                                 return n
                             };
                         c.exports = i
-                    }),
-                    50884: (c => {
+                    },
+                    50884: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19664,8 +19665,8 @@ function mh() {
                             return t.x += o, t.y += v, t
                         };
                         c.exports = g
-                    }),
-                    39212: (c => {
+                    },
+                    39212: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19675,8 +19676,8 @@ function mh() {
                             return t.x += o.x, t.y += o.y, t
                         };
                         c.exports = g
-                    }),
-                    28176: ((c, g, t) => {
+                    },
+                    28176: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19693,8 +19694,8 @@ function mh() {
                                 return r.x = a.x + h * a.radius, r.y = a.y + n * a.radius, r
                             };
                         c.exports = v
-                    }),
-                    88911: ((c, g, t) => {
+                    },
+                    88911: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19702,8 +19703,8 @@ function mh() {
                          */
                         var o = t(96503);
                         o.Area = t(95166), o.Circumference = t(71562), o.CircumferencePoint = t(92110), o.Clone = t(42250), o.Contains = t(87902), o.ContainsPoint = t(5698), o.ContainsRect = t(70588), o.CopyFrom = t(26394), o.Equals = t(76278), o.GetBounds = t(2074), o.GetPoint = t(26241), o.GetPoints = t(79124), o.Offset = t(50884), o.OffsetPoint = t(39212), o.Random = t(28176), c.exports = o
-                    }),
-                    23777: (c => {
+                    },
+                    23777: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19719,8 +19720,8 @@ function mh() {
                             TRIANGLE: 6
                         };
                         c.exports = g
-                    }),
-                    78874: (c => {
+                    },
+                    78874: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19730,8 +19731,8 @@ function mh() {
                             return t.isEmpty() ? 0 : t.getMajorRadius() * t.getMinorRadius() * Math.PI
                         };
                         c.exports = g
-                    }),
-                    92990: (c => {
+                    },
+                    92990: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19744,8 +19745,8 @@ function mh() {
                             return Math.PI * (o + v) * (1 + 3 * a / (10 + Math.sqrt(4 - 3 * a)))
                         };
                         c.exports = g
-                    }),
-                    79522: ((c, g, t) => {
+                    },
+                    79522: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19759,8 +19760,8 @@ function mh() {
                                 return i.x = a.x + e * Math.cos(r), i.y = a.y + s * Math.sin(r), i
                             };
                         c.exports = v
-                    }),
-                    58102: ((c, g, t) => {
+                    },
+                    58102: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19771,8 +19772,8 @@ function mh() {
                                 return new o(a.x, a.y, a.width, a.height)
                             };
                         c.exports = v
-                    }),
-                    81154: (c => {
+                    },
+                    81154: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19785,8 +19786,8 @@ function mh() {
                             return a *= a, r *= r, a + r < .25
                         };
                         c.exports = g
-                    }),
-                    46662: ((c, g, t) => {
+                    },
+                    46662: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19797,8 +19798,8 @@ function mh() {
                                 return o(a, r.x, r.y)
                             };
                         c.exports = v
-                    }),
-                    1632: ((c, g, t) => {
+                    },
+                    1632: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19809,8 +19810,8 @@ function mh() {
                                 return o(a, r.x, r.y) && o(a, r.right, r.y) && o(a, r.x, r.bottom) && o(a, r.right, r.bottom)
                             };
                         c.exports = v
-                    }),
-                    65534: (c => {
+                    },
+                    65534: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19820,8 +19821,8 @@ function mh() {
                             return o.setTo(t.x, t.y, t.width, t.height)
                         };
                         c.exports = g
-                    }),
-                    8497: ((c, g, t) => {
+                    },
+                    8497: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19904,8 +19905,8 @@ function mh() {
                                 }
                             });
                         c.exports = s
-                    }),
-                    36146: (c => {
+                    },
+                    36146: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19915,8 +19916,8 @@ function mh() {
                             return t.x === o.x && t.y === o.y && t.width === o.width && t.height === o.height
                         };
                         c.exports = g
-                    }),
-                    23694: ((c, g, t) => {
+                    },
+                    23694: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19927,8 +19928,8 @@ function mh() {
                                 return r === void 0 && (r = new o), r.x = a.left, r.y = a.top, r.width = a.width, r.height = a.height, r
                             };
                         c.exports = v
-                    }),
-                    90549: ((c, g, t) => {
+                    },
+                    90549: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19944,8 +19945,8 @@ function mh() {
                                 return o(e, n, h)
                             };
                         c.exports = i
-                    }),
-                    48320: ((c, g, t) => {
+                    },
+                    48320: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19964,8 +19965,8 @@ function mh() {
                                 return n
                             };
                         c.exports = i
-                    }),
-                    73424: (c => {
+                    },
+                    73424: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19975,8 +19976,8 @@ function mh() {
                             return t.x += o, t.y += v, t
                         };
                         c.exports = g
-                    }),
-                    44808: (c => {
+                    },
+                    44808: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -19986,8 +19987,8 @@ function mh() {
                             return t.x += o.x, t.y += o.y, t
                         };
                         c.exports = g
-                    }),
-                    24820: ((c, g, t) => {
+                    },
+                    24820: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20001,8 +20002,8 @@ function mh() {
                                 return r.x = a.x + e * Math.cos(i) * a.width / 2, r.y = a.y + e * Math.sin(i) * a.height / 2, r
                             };
                         c.exports = v
-                    }),
-                    49203: ((c, g, t) => {
+                    },
+                    49203: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20010,8 +20011,8 @@ function mh() {
                          */
                         var o = t(8497);
                         o.Area = t(78874), o.Circumference = t(92990), o.CircumferencePoint = t(79522), o.Clone = t(58102), o.Contains = t(81154), o.ContainsPoint = t(46662), o.ContainsRect = t(1632), o.CopyFrom = t(65534), o.Equals = t(36146), o.GetBounds = t(23694), o.GetPoint = t(90549), o.GetPoints = t(48320), o.Offset = t(73424), o.OffsetPoint = t(44808), o.Random = t(24820), c.exports = o
-                    }),
-                    55738: ((c, g, t) => {
+                    },
+                    55738: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20031,8 +20032,8 @@ function mh() {
                                 Triangle: t(84435)
                             };
                         a = v(!1, a, o), c.exports = a
-                    }),
-                    2044: ((c, g, t) => {
+                    },
+                    2044: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20043,8 +20044,8 @@ function mh() {
                                 return o(a.x, a.y, r.x, r.y) <= a.radius + r.radius
                             };
                         c.exports = v
-                    }),
-                    81491: (c => {
+                    },
+                    81491: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20067,8 +20068,8 @@ function mh() {
                             return l + u <= f
                         };
                         c.exports = g
-                    }),
-                    63376: ((c, g, t) => {
+                    },
+                    63376: (c, g, t) => {
                         /**
                          * @author       Florian Vazelle
                          * @author       Geoffrey Glaive
@@ -20096,8 +20097,8 @@ function mh() {
                                 return e
                             };
                         c.exports = a
-                    }),
-                    97439: ((c, g, t) => {
+                    },
+                    97439: (c, g, t) => {
                         /**
                          * @author       Florian Vazelle
                          * @author       Geoffrey Glaive
@@ -20117,8 +20118,8 @@ function mh() {
                                 return e
                             };
                         c.exports = a
-                    }),
-                    4042: ((c, g, t) => {
+                    },
+                    4042: (c, g, t) => {
                         /**
                          * @author       Florian Vazelle
                          * @author       Geoffrey Glaive
@@ -20158,8 +20159,8 @@ function mh() {
                                 return e
                             };
                         c.exports = a
-                    }),
-                    36100: ((c, g, t) => {
+                    },
+                    36100: (c, g, t) => {
                         /**
                          * @author       Richard Davey
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20196,8 +20197,8 @@ function mh() {
                                 return e === void 0 && (e = new o), e.set(s + m * L, h + y * L, L)
                             };
                         c.exports = v
-                    }),
-                    3073: ((c, g, t) => {
+                    },
+                    3073: (c, g, t) => {
                         /**
                          * @author       Richard Davey
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20219,8 +20220,8 @@ function mh() {
                                 return u ? l : null
                             };
                         c.exports = e
-                    }),
-                    56362: ((c, g, t) => {
+                    },
+                    56362: (c, g, t) => {
                         /**
                          * @author       Richard Davey
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20238,8 +20239,8 @@ function mh() {
                                 return l ? n : null
                             };
                         c.exports = i
-                    }),
-                    60646: ((c, g, t) => {
+                    },
+                    60646: (c, g, t) => {
                         /**
                          * @author       Florian Vazelle
                          * @author       Geoffrey Glaive
@@ -20255,8 +20256,8 @@ function mh() {
                                 return s
                             };
                         c.exports = r
-                    }),
-                    71147: ((c, g, t) => {
+                    },
+                    71147: (c, g, t) => {
                         /**
                          * @author       Richard Davey
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20288,8 +20289,8 @@ function mh() {
                             return u.sort(e)
                         };
                         c.exports = s
-                    }),
-                    68389: ((c, g, t) => {
+                    },
+                    68389: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20301,8 +20302,8 @@ function mh() {
                                 return e === void 0 && (e = new o), v(r, i) && (e.x = Math.max(r.x, i.x), e.y = Math.max(r.y, i.y), e.width = Math.min(r.right, i.right) - e.x, e.height = Math.min(r.bottom, i.bottom) - e.y), e
                             };
                         c.exports = a
-                    }),
-                    52784: ((c, g, t) => {
+                    },
+                    52784: (c, g, t) => {
                         /**
                          * @author       Florian Vazelle
                          * @author       Geoffrey Glaive
@@ -20322,8 +20323,8 @@ function mh() {
                                 return e
                             };
                         c.exports = a
-                    }),
-                    26341: ((c, g, t) => {
+                    },
+                    26341: (c, g, t) => {
                         /**
                          * @author       Florian Vazelle
                          * @author       Geoffrey Glaive
@@ -20342,8 +20343,8 @@ function mh() {
                                 return e
                             };
                         c.exports = a
-                    }),
-                    38720: ((c, g, t) => {
+                    },
+                    38720: (c, g, t) => {
                         /**
                          * @author       Florian Vazelle
                          * @author       Geoffrey Glaive
@@ -20362,8 +20363,8 @@ function mh() {
                                 return e
                             };
                         c.exports = a
-                    }),
-                    13882: ((c, g, t) => {
+                    },
+                    13882: (c, g, t) => {
                         /**
                          * @author       Florian Vazelle
                          * @author       Geoffrey Glaive
@@ -20379,8 +20380,8 @@ function mh() {
                                 return s
                             };
                         c.exports = r
-                    }),
-                    75636: ((c, g, t) => {
+                    },
+                    75636: (c, g, t) => {
                         /**
                          * @author       Florian Vazelle
                          * @author       Geoffrey Glaive
@@ -20399,8 +20400,8 @@ function mh() {
                                 return e
                             };
                         c.exports = a
-                    }),
-                    80462: ((c, g, t) => {
+                    },
+                    80462: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20428,8 +20429,8 @@ function mh() {
                                 return y <= f && d * h + p * n >= 0 && o(e, s.x, s.y)
                             };
                         c.exports = r
-                    }),
-                    76112: (c => {
+                    },
+                    76112: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20452,8 +20453,8 @@ function mh() {
                             return f < 0 || f > 1 || d < 0 || d > 1 ? !1 : (v && (v.x = a + f * (i - a), v.y = r + f * (e - r)), !0)
                         };
                         c.exports = g
-                    }),
-                    92773: (c => {
+                    },
+                    92773: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20479,8 +20480,8 @@ function mh() {
                             return !1
                         };
                         c.exports = g
-                    }),
-                    16204: (c => {
+                    },
+                    16204: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Florian Mertens
@@ -20505,8 +20506,8 @@ function mh() {
                             } else return Math.sqrt((i - s) * (i - s) + (e - h) * (e - h)) <= v
                         };
                         c.exports = g
-                    }),
-                    14199: ((c, g, t) => {
+                    },
+                    14199: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20522,8 +20523,8 @@ function mh() {
                                 return a.x >= i && a.x <= e && a.y >= s && a.y <= h
                             };
                         c.exports = v
-                    }),
-                    59996: (c => {
+                    },
+                    59996: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20533,8 +20534,8 @@ function mh() {
                             return t.width <= 0 || t.height <= 0 || o.width <= 0 || o.height <= 0 ? !1 : !(t.right < o.x || t.bottom < o.y || t.x > o.right || t.y > o.bottom)
                         };
                         c.exports = g
-                    }),
-                    89265: ((c, g, t) => {
+                    },
+                    89265: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20560,8 +20561,8 @@ function mh() {
                                 return y.length > 0
                             };
                         c.exports = i
-                    }),
-                    84411: (c => {
+                    },
+                    84411: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20571,8 +20572,8 @@ function mh() {
                             return i === void 0 && (i = 0), !(o > t.right + i || v < t.left - i || a > t.bottom + i || r < t.top - i)
                         };
                         c.exports = g
-                    }),
-                    67636: ((c, g, t) => {
+                    },
+                    67636: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20584,8 +20585,8 @@ function mh() {
                                 return r.left > i.right || r.right < i.left || r.top > i.bottom || r.bottom < i.top ? !1 : !!(v(r, i.x, i.y) || o(r.getLineA(), i) || o(r.getLineB(), i) || o(r.getLineC(), i))
                             };
                         c.exports = a
-                    }),
-                    2822: ((c, g, t) => {
+                    },
+                    2822: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20596,8 +20597,8 @@ function mh() {
                                 return !!(a.contains(r.x1, r.y1) || a.contains(r.x2, r.y2) || o(a.getLineA(), r) || o(a.getLineB(), r) || o(a.getLineC(), r))
                             };
                         c.exports = v
-                    }),
-                    82944: ((c, g, t) => {
+                    },
+                    82944: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20620,8 +20621,8 @@ function mh() {
                                 return p.length > 0 || (d = v(e), p = o(i, d, !0), p.length > 0)
                             };
                         c.exports = r
-                    }),
-                    91865: ((c, g, t) => {
+                    },
+                    91865: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20656,8 +20657,8 @@ function mh() {
                             TriangleToLine: t(2822),
                             TriangleToTriangle: t(82944)
                         }
-                    }),
-                    91938: (c => {
+                    },
+                    91938: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20667,8 +20668,8 @@ function mh() {
                             return Math.atan2(t.y2 - t.y1, t.x2 - t.x1)
                         };
                         c.exports = g
-                    }),
-                    84993: (c => {
+                    },
+                    84993: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20699,8 +20700,8 @@ function mh() {
                             return v
                         };
                         c.exports = g
-                    }),
-                    36469: (c => {
+                    },
+                    36469: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20712,8 +20713,8 @@ function mh() {
                             return t.x1 += a, t.y1 += r, t.x2 += a, t.y2 += r, t
                         };
                         c.exports = g
-                    }),
-                    31116: ((c, g, t) => {
+                    },
+                    31116: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20724,8 +20725,8 @@ function mh() {
                                 return new o(a.x1, a.y1, a.x2, a.y2)
                             };
                         c.exports = v
-                    }),
-                    59944: (c => {
+                    },
+                    59944: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20735,8 +20736,8 @@ function mh() {
                             return o.setTo(t.x1, t.y1, t.x2, t.y2)
                         };
                         c.exports = g
-                    }),
-                    59220: (c => {
+                    },
+                    59220: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20746,8 +20747,8 @@ function mh() {
                             return t.x1 === o.x1 && t.y1 === o.y1 && t.x2 === o.x2 && t.y2 === o.y2
                         };
                         c.exports = g
-                    }),
-                    78177: ((c, g, t) => {
+                    },
+                    78177: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20762,8 +20763,8 @@ function mh() {
                                 return r && (a.x1 = a.x1 - s / e * r, a.y1 = a.y1 - h / e * r), i && (a.x2 = a.x2 + s / e * i, a.y2 = a.y2 + h / e * i), a
                             };
                         c.exports = v
-                    }),
-                    26708: ((c, g, t) => {
+                    },
+                    26708: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20794,8 +20795,8 @@ function mh() {
                                 } else return l
                             };
                         c.exports = r
-                    }),
-                    32125: ((c, g, t) => {
+                    },
+                    32125: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20806,8 +20807,8 @@ function mh() {
                                 return r === void 0 && (r = new o), r.x = (a.x1 + a.x2) / 2, r.y = (a.y1 + a.y2) / 2, r
                             };
                         c.exports = v
-                    }),
-                    99569: ((c, g, t) => {
+                    },
+                    99569: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Florian Mertens
@@ -20827,8 +20828,8 @@ function mh() {
                                 return i.x = e + u * (h - e), i.y = s + u * (n - s), i
                             };
                         c.exports = v
-                    }),
-                    34638: ((c, g, t) => {
+                    },
+                    34638: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20843,8 +20844,8 @@ function mh() {
                                 return e.x = Math.cos(s), e.y = Math.sin(s), e
                             };
                         c.exports = r
-                    }),
-                    13151: ((c, g, t) => {
+                    },
+                    13151: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20855,8 +20856,8 @@ function mh() {
                                 return i === void 0 && (i = new o), i.x = a.x1 + (a.x2 - a.x1) * r, i.y = a.y1 + (a.y2 - a.y1) * r, i
                             };
                         c.exports = v
-                    }),
-                    15258: ((c, g, t) => {
+                    },
+                    15258: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20875,8 +20876,8 @@ function mh() {
                                 return s
                             };
                         c.exports = a
-                    }),
-                    26408: (c => {
+                    },
+                    26408: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Florian Mertens
@@ -20894,8 +20895,8 @@ function mh() {
                             return Math.abs(s) * Math.sqrt(e)
                         };
                         c.exports = g
-                    }),
-                    98770: (c => {
+                    },
+                    98770: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20905,8 +20906,8 @@ function mh() {
                             return Math.abs(t.y1 - t.y2)
                         };
                         c.exports = g
-                    }),
-                    35001: (c => {
+                    },
+                    35001: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20916,8 +20917,8 @@ function mh() {
                             return Math.sqrt((t.x2 - t.x1) * (t.x2 - t.x1) + (t.y2 - t.y1) * (t.y2 - t.y1))
                         };
                         c.exports = g
-                    }),
-                    23031: ((c, g, t) => {
+                    },
+                    23031: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -20988,8 +20989,8 @@ function mh() {
                                 }
                             });
                         c.exports = s
-                    }),
-                    64795: ((c, g, t) => {
+                    },
+                    64795: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21003,8 +21004,8 @@ function mh() {
                                 return v(e, -Math.PI, Math.PI)
                             };
                         c.exports = r
-                    }),
-                    52616: ((c, g, t) => {
+                    },
+                    52616: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21016,8 +21017,8 @@ function mh() {
                                 return Math.cos(v(r) - o.TAU)
                             };
                         c.exports = a
-                    }),
-                    87231: ((c, g, t) => {
+                    },
+                    87231: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21029,8 +21030,8 @@ function mh() {
                                 return Math.sin(v(r) - o.TAU)
                             };
                         c.exports = a
-                    }),
-                    89662: (c => {
+                    },
+                    89662: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21040,8 +21041,8 @@ function mh() {
                             return t.x1 += o, t.y1 += v, t.x2 += o, t.y2 += v, t
                         };
                         c.exports = g
-                    }),
-                    71165: (c => {
+                    },
+                    71165: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21051,8 +21052,8 @@ function mh() {
                             return -((t.x2 - t.x1) / (t.y2 - t.y1))
                         };
                         c.exports = g
-                    }),
-                    65822: ((c, g, t) => {
+                    },
+                    65822: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21065,8 +21066,8 @@ function mh() {
                                 return r.x = a.x1 + i * (a.x2 - a.x1), r.y = a.y1 + i * (a.y2 - a.y1), r
                             };
                         c.exports = v
-                    }),
-                    69777: ((c, g, t) => {
+                    },
+                    69777: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21078,8 +21079,8 @@ function mh() {
                                 return 2 * v(i) - Math.PI - o(r)
                             };
                         c.exports = a
-                    }),
-                    39706: ((c, g, t) => {
+                    },
+                    39706: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21092,8 +21093,8 @@ function mh() {
                                 return o(a, i, e, r)
                             };
                         c.exports = v
-                    }),
-                    82585: ((c, g, t) => {
+                    },
+                    82585: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21104,8 +21105,8 @@ function mh() {
                                 return o(a, r.x, r.y, i)
                             };
                         c.exports = v
-                    }),
-                    64400: (c => {
+                    },
+                    64400: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21119,8 +21120,8 @@ function mh() {
                             return t.x1 = e * r - s * i + o, t.y1 = e * i + s * r + v, e = t.x2 - o, s = t.y2 - v, t.x2 = e * r - s * i + o, t.y2 = e * i + s * r + v, t
                         };
                         c.exports = g
-                    }),
-                    62377: (c => {
+                    },
+                    62377: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21130,8 +21131,8 @@ function mh() {
                             return t.x1 = o, t.y1 = v, t.x2 = o + Math.cos(a) * r, t.y2 = v + Math.sin(a) * r, t
                         };
                         c.exports = g
-                    }),
-                    71366: (c => {
+                    },
+                    71366: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21141,8 +21142,8 @@ function mh() {
                             return (t.y2 - t.y1) / (t.x2 - t.x1)
                         };
                         c.exports = g
-                    }),
-                    10809: (c => {
+                    },
+                    10809: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21152,8 +21153,8 @@ function mh() {
                             return Math.abs(t.x1 - t.x2)
                         };
                         c.exports = g
-                    }),
-                    2529: ((c, g, t) => {
+                    },
+                    2529: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21161,8 +21162,8 @@ function mh() {
                          */
                         var o = t(23031);
                         o.Angle = t(91938), o.BresenhamPoints = t(84993), o.CenterOn = t(36469), o.Clone = t(31116), o.CopyFrom = t(59944), o.Equals = t(59220), o.Extend = t(78177), o.GetEasedPoints = t(26708), o.GetMidPoint = t(32125), o.GetNearestPoint = t(99569), o.GetNormal = t(34638), o.GetPoint = t(13151), o.GetPoints = t(15258), o.GetShortestDistance = t(26408), o.Height = t(98770), o.Length = t(35001), o.NormalAngle = t(64795), o.NormalX = t(52616), o.NormalY = t(87231), o.Offset = t(89662), o.PerpSlope = t(71165), o.Random = t(65822), o.ReflectAngle = t(69777), o.Rotate = t(39706), o.RotateAroundPoint = t(82585), o.RotateAroundXY = t(64400), o.SetToAngle = t(62377), o.Slope = t(71366), o.Width = t(10809), c.exports = o
-                    }),
-                    83997: ((c, g, t) => {
+                    },
+                    83997: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21324,8 +21325,8 @@ function mh() {
                             }
                         });
                         c.exports = i
-                    }),
-                    48803: ((c, g, t) => {
+                    },
+                    48803: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21408,19 +21409,19 @@ function mh() {
                                             zt = (_ + 1 + Z * nt) * 2,
                                             Zt = D[Bt],
                                             Qt = N[Wt],
-                                            ee = new i(et[Gt], et[Gt + 1], 0, k[Gt], k[Gt + 1], Zt, Qt).transformMat4(h),
+                                            ie = new i(et[Gt], et[Gt + 1], 0, k[Gt], k[Gt + 1], Zt, Qt).transformMat4(h),
                                             qe = new i(et[Kt], et[Kt + 1], 0, k[Kt], k[Kt + 1], Zt, Qt).transformMat4(h),
                                             _e = new i(et[zt], et[zt + 1], 0, k[zt], k[zt + 1], Zt, Qt).transformMat4(h),
                                             ti = new i(et[Kt], et[Kt + 1], 0, k[Kt], k[Kt + 1], Zt, Qt).transformMat4(h),
                                             ei = new i(et[jt], et[jt + 1], 0, k[jt], k[jt + 1], Zt, Qt).transformMat4(h),
                                             ii = new i(et[zt], et[zt + 1], 0, k[zt], k[zt + 1], Zt, Qt).transformMat4(h);
-                                        Y && (ee.setUVs(rt, vt), qe.setUVs(rt, ft), _e.setUVs(it, vt), ti.setUVs(rt, ft), ei.setUVs(it, ft), ii.setUVs(it, vt)), Bt++, Bt === D.length && (Bt = 0), Wt++, Wt === N.length && (Wt = 0), G.verts.push(ee, qe, _e, ti, ei, ii), G.faces.push(new o(ee, qe, _e), new o(ti, ei, ii))
+                                        Y && (ie.setUVs(rt, vt), qe.setUVs(rt, ft), _e.setUVs(it, vt), ti.setUVs(rt, ft), ei.setUVs(it, ft), ii.setUVs(it, vt)), Bt++, Bt === D.length && (Bt = 0), Wt++, Wt === N.length && (Wt = 0), G.verts.push(ie, qe, _e, ti, ei, ii), G.faces.push(new o(ie, qe, _e), new o(ti, ei, ii))
                                     }
                                 return u && (u.faces = u.faces.concat(G.faces), u.vertices = u.vertices.concat(G.verts)), G
                             };
                         c.exports = n
-                    }),
-                    34684: ((c, g, t) => {
+                    },
+                    34684: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21475,8 +21476,8 @@ function mh() {
                                 return l && (l.faces = l.faces.concat(C.faces), l.vertices = l.vertices.concat(C.verts)), C
                             };
                         c.exports = h
-                    }),
-                    92515: ((c, g, t) => {
+                    },
+                    92515: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21516,8 +21517,8 @@ function mh() {
                                 return f
                             };
                         c.exports = a
-                    }),
-                    85048: (c => {
+                    },
+                    85048: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21669,8 +21670,8 @@ function mh() {
                             return y
                         };
                         c.exports = d
-                    }),
-                    61485: ((c, g, t) => {
+                    },
+                    61485: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21701,8 +21702,8 @@ function mh() {
                                 return r
                             };
                         c.exports = v
-                    }),
-                    92570: (c => {
+                    },
+                    92570: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21724,8 +21725,8 @@ function mh() {
                             n.set(f * s - d * h + r, f * h + d * s + i), f = l.x - r, d = l.y - i, l.set(f * s - d * h + r, f * h + d * s + i), f = u.x - r, d = u.y - i, u.set(f * s - d * h + r, f * h + d * s + i)
                         };
                         c.exports = g
-                    }),
-                    39318: ((c, g, t) => {
+                    },
+                    39318: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21772,8 +21773,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    73090: ((c, g, t) => {
+                    },
+                    73090: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21790,8 +21791,8 @@ function mh() {
                             Vertex: t(39318)
                         };
                         c.exports = o
-                    }),
-                    96550: (c => {
+                    },
+                    96550: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21801,8 +21802,8 @@ function mh() {
                             return t.setTo(Math.ceil(t.x), Math.ceil(t.y))
                         };
                         c.exports = g
-                    }),
-                    99706: ((c, g, t) => {
+                    },
+                    99706: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21813,8 +21814,8 @@ function mh() {
                                 return new o(a.x, a.y)
                             };
                         c.exports = v
-                    }),
-                    68010: (c => {
+                    },
+                    68010: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21824,8 +21825,8 @@ function mh() {
                             return o.setTo(t.x, t.y)
                         };
                         c.exports = g
-                    }),
-                    27814: (c => {
+                    },
+                    27814: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21835,8 +21836,8 @@ function mh() {
                             return t.x === o.x && t.y === o.y
                         };
                         c.exports = g
-                    }),
-                    73565: (c => {
+                    },
+                    73565: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21846,8 +21847,8 @@ function mh() {
                             return t.setTo(Math.floor(t.x), Math.floor(t.y))
                         };
                         c.exports = g
-                    }),
-                    87555: ((c, g, t) => {
+                    },
+                    87555: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21866,8 +21867,8 @@ function mh() {
                                 return r
                             };
                         c.exports = v
-                    }),
-                    28793: (c => {
+                    },
+                    28793: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21877,8 +21878,8 @@ function mh() {
                             return Math.sqrt(t.x * t.x + t.y * t.y)
                         };
                         c.exports = g
-                    }),
-                    44405: (c => {
+                    },
+                    44405: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21888,8 +21889,8 @@ function mh() {
                             return t.x * t.x + t.y * t.y
                         };
                         c.exports = g
-                    }),
-                    20873: ((c, g, t) => {
+                    },
+                    20873: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21905,8 +21906,8 @@ function mh() {
                                 return r.x = e, r.y = h, r.width = i - e, r.height = s - h, r
                             };
                         c.exports = v
-                    }),
-                    26152: ((c, g, t) => {
+                    },
+                    26152: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21917,8 +21918,8 @@ function mh() {
                                 return i === void 0 && (i = 0), e === void 0 && (e = new o), e.x = a.x + (r.x - a.x) * i, e.y = a.y + (r.y - a.y) * i, e
                             };
                         c.exports = v
-                    }),
-                    55767: (c => {
+                    },
+                    55767: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21928,8 +21929,8 @@ function mh() {
                             return t.setTo(t.y, t.x)
                         };
                         c.exports = g
-                    }),
-                    79432: ((c, g, t) => {
+                    },
+                    79432: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21940,8 +21941,8 @@ function mh() {
                                 return r === void 0 && (r = new o), r.setTo(-a.x, -a.y)
                             };
                         c.exports = v
-                    }),
-                    2141: ((c, g, t) => {
+                    },
+                    2141: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21958,8 +21959,8 @@ function mh() {
                                 }
                             });
                         c.exports = a
-                    }),
-                    72930: ((c, g, t) => {
+                    },
+                    72930: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21974,8 +21975,8 @@ function mh() {
                                 return h !== 0 && (e.x = h * i.x, e.y = h * i.y), e
                             };
                         c.exports = a
-                    }),
-                    62880: ((c, g, t) => {
+                    },
+                    62880: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -21988,8 +21989,8 @@ function mh() {
                                 return e !== 0 && (i.x = e * r.x, i.y = e * r.y), i
                             };
                         c.exports = v
-                    }),
-                    15093: ((c, g, t) => {
+                    },
+                    15093: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22004,8 +22005,8 @@ function mh() {
                                 return a.x *= r, a.y *= r, a
                             };
                         c.exports = v
-                    }),
-                    43711: ((c, g, t) => {
+                    },
+                    43711: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22013,8 +22014,8 @@ function mh() {
                          */
                         var o = t(2141);
                         o.Ceil = t(96550), o.Clone = t(99706), o.CopyFrom = t(68010), o.Equals = t(27814), o.Floor = t(73565), o.GetCentroid = t(87555), o.GetMagnitude = t(28793), o.GetMagnitudeSq = t(44405), o.GetRectangleFromPoints = t(20873), o.Interpolate = t(26152), o.Invert = t(55767), o.Negative = t(79432), o.Project = t(72930), o.ProjectUnit = t(62880), o.SetMagnitude = t(15093), c.exports = o
-                    }),
-                    12306: ((c, g, t) => {
+                    },
+                    12306: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22025,8 +22026,8 @@ function mh() {
                                 return new o(a.points)
                             };
                         c.exports = v
-                    }),
-                    63814: (c => {
+                    },
+                    63814: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22043,8 +22044,8 @@ function mh() {
                             return a
                         };
                         c.exports = g
-                    }),
-                    99338: ((c, g, t) => {
+                    },
+                    99338: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22055,8 +22056,8 @@ function mh() {
                                 return o(a, r.x, r.y)
                             };
                         c.exports = v
-                    }),
-                    94811: (c => {
+                    },
+                    94811: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22360,8 +22361,8 @@ function mh() {
                             }
                             return B
                         }, c.exports = g
-                    }),
-                    13829: ((c, g, t) => {
+                    },
+                    13829: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22374,8 +22375,8 @@ function mh() {
                                 return r.x = i, r.y = e, r.width = s - i, r.height = h - e, r
                             };
                         c.exports = v
-                    }),
-                    26173: (c => {
+                    },
+                    26173: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22387,8 +22388,8 @@ function mh() {
                             return o
                         };
                         c.exports = g
-                    }),
-                    9564: ((c, g, t) => {
+                    },
+                    9564: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22419,8 +22420,8 @@ function mh() {
                                 return h
                             };
                         c.exports = r
-                    }),
-                    30052: ((c, g, t) => {
+                    },
+                    30052: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22438,8 +22439,8 @@ function mh() {
                                 return e
                             };
                         c.exports = a
-                    }),
-                    25717: ((c, g, t) => {
+                    },
+                    25717: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22474,8 +22475,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    8133: (c => {
+                    },
+                    8133: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22485,8 +22486,8 @@ function mh() {
                             return t.points.reverse(), t
                         };
                         c.exports = g
-                    }),
-                    29524: (c => {
+                    },
+                    29524: c => {
                         function g(i, e) {
                             var s = i.x - e.x,
                                 h = i.y - e.y;
@@ -22533,8 +22534,8 @@ function mh() {
                             return i
                         };
                         c.exports = r
-                    }),
-                    5469: (c => {
+                    },
+                    5469: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Igor Ognichenko <ognichenko.igor@gmail.com>
@@ -22561,8 +22562,8 @@ function mh() {
                                 return a.length > 1 && i.push(g([0, 0], a[a.length - 1])), o.setTo(i)
                             };
                         c.exports = t
-                    }),
-                    24709: (c => {
+                    },
+                    24709: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22573,8 +22574,8 @@ function mh() {
                             return t
                         };
                         c.exports = g
-                    }),
-                    58423: ((c, g, t) => {
+                    },
+                    58423: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22582,8 +22583,8 @@ function mh() {
                          */
                         var o = t(25717);
                         o.Clone = t(12306), o.Contains = t(63814), o.ContainsPoint = t(99338), o.Earcut = t(94811), o.GetAABB = t(13829), o.GetNumberArray = t(26173), o.GetPoints = t(9564), o.Perimeter = t(30052), o.Reverse = t(8133), o.Simplify = t(29524), o.Smooth = t(5469), o.Translate = t(24709), c.exports = o
-                    }),
-                    62224: (c => {
+                    },
+                    62224: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22593,8 +22594,8 @@ function mh() {
                             return t.width * t.height
                         };
                         c.exports = g
-                    }),
-                    98615: (c => {
+                    },
+                    98615: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22604,8 +22605,8 @@ function mh() {
                             return t.x = Math.ceil(t.x), t.y = Math.ceil(t.y), t
                         };
                         c.exports = g
-                    }),
-                    31688: (c => {
+                    },
+                    31688: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22615,8 +22616,8 @@ function mh() {
                             return t.x = Math.ceil(t.x), t.y = Math.ceil(t.y), t.width = Math.ceil(t.width), t.height = Math.ceil(t.height), t
                         };
                         c.exports = g
-                    }),
-                    67502: (c => {
+                    },
+                    67502: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22626,8 +22627,8 @@ function mh() {
                             return t.x = o - t.width / 2, t.y = v - t.height / 2, t
                         };
                         c.exports = g
-                    }),
-                    65085: ((c, g, t) => {
+                    },
+                    65085: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22638,8 +22639,8 @@ function mh() {
                                 return new o(a.x, a.y, a.width, a.height)
                             };
                         c.exports = v
-                    }),
-                    37303: (c => {
+                    },
+                    37303: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22649,8 +22650,8 @@ function mh() {
                             return t.width <= 0 || t.height <= 0 ? !1 : t.x <= o && t.x + t.width >= o && t.y <= v && t.y + t.height >= v
                         };
                         c.exports = g
-                    }),
-                    96553: ((c, g, t) => {
+                    },
+                    96553: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22661,8 +22662,8 @@ function mh() {
                                 return o(a, r.x, r.y)
                             };
                         c.exports = v
-                    }),
-                    70273: (c => {
+                    },
+                    70273: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22672,8 +22673,8 @@ function mh() {
                             return o.width * o.height > t.width * t.height ? !1 : o.x > t.x && o.x < t.right && o.right > t.x && o.right < t.right && o.y > t.y && o.y < t.bottom && o.bottom > t.y && o.bottom < t.bottom
                         };
                         c.exports = g
-                    }),
-                    43459: (c => {
+                    },
+                    43459: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22683,8 +22684,8 @@ function mh() {
                             return o.setTo(t.x, t.y, t.width, t.height)
                         };
                         c.exports = g
-                    }),
-                    77493: (c => {
+                    },
+                    77493: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22706,8 +22707,8 @@ function mh() {
                             }), o
                         };
                         c.exports = g
-                    }),
-                    9219: (c => {
+                    },
+                    9219: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22717,8 +22718,8 @@ function mh() {
                             return t.x === o.x && t.y === o.y && t.width === o.width && t.height === o.height
                         };
                         c.exports = g
-                    }),
-                    53751: ((c, g, t) => {
+                    },
+                    53751: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22730,8 +22731,8 @@ function mh() {
                                 return i < o(r) ? a.setSize(r.height * i, r.height) : a.setSize(r.width, r.width / i), a.setPosition(r.centerX - a.width / 2, r.centerY - a.height / 2)
                             };
                         c.exports = v
-                    }),
-                    16088: ((c, g, t) => {
+                    },
+                    16088: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22743,8 +22744,8 @@ function mh() {
                                 return i > o(r) ? a.setSize(r.height * i, r.height) : a.setSize(r.width, r.width / i), a.setPosition(r.centerX - a.width / 2, r.centerY - a.height / 2)
                             };
                         c.exports = v
-                    }),
-                    80774: (c => {
+                    },
+                    80774: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22754,8 +22755,8 @@ function mh() {
                             return t.x = Math.floor(t.x), t.y = Math.floor(t.y), t
                         };
                         c.exports = g
-                    }),
-                    83859: (c => {
+                    },
+                    83859: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22765,8 +22766,8 @@ function mh() {
                             return t.x = Math.floor(t.x), t.y = Math.floor(t.y), t.width = Math.floor(t.width), t.height = Math.floor(t.height), t
                         };
                         c.exports = g
-                    }),
-                    19217: ((c, g, t) => {
+                    },
+                    19217: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22780,8 +22781,8 @@ function mh() {
                                 return i.x = e, i.y = s, i.width = h - e, i.height = n - s, i
                             };
                         c.exports = a
-                    }),
-                    9477: ((c, g, t) => {
+                    },
+                    9477: (c, g, t) => {
                         /**
                          * @author       samme
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22792,8 +22793,8 @@ function mh() {
                                 return s === void 0 && (s = new o), s.setTo(Math.min(a, i), Math.min(r, e), Math.abs(a - i), Math.abs(r - e))
                             };
                         c.exports = v
-                    }),
-                    8249: (c => {
+                    },
+                    8249: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22803,8 +22804,8 @@ function mh() {
                             return t.height === 0 ? NaN : t.width / t.height
                         };
                         c.exports = g
-                    }),
-                    27165: ((c, g, t) => {
+                    },
+                    27165: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22815,8 +22816,8 @@ function mh() {
                                 return r === void 0 && (r = new o), r.x = a.centerX, r.y = a.centerY, r
                             };
                         c.exports = v
-                    }),
-                    20812: ((c, g, t) => {
+                    },
+                    20812: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22830,8 +22831,8 @@ function mh() {
                                 return i > .5 ? (s -= r.width + r.height, s <= r.width ? (e.x = r.right - s, e.y = r.bottom) : (e.x = r.x, e.y = r.bottom - (s - r.width))) : s <= r.width ? (e.x = r.x + s, e.y = r.y) : (e.x = r.right, e.y = r.y + (s - r.width)), e
                             };
                         c.exports = a
-                    }),
-                    34819: ((c, g, t) => {
+                    },
+                    34819: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22848,8 +22849,8 @@ function mh() {
                                 return s
                             };
                         c.exports = a
-                    }),
-                    51313: ((c, g, t) => {
+                    },
+                    51313: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22860,8 +22861,8 @@ function mh() {
                                 return r === void 0 && (r = new o), r.x = a.width, r.y = a.height, r
                             };
                         c.exports = v
-                    }),
-                    86091: ((c, g, t) => {
+                    },
+                    86091: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22874,8 +22875,8 @@ function mh() {
                                 return a.setSize(a.width + r * 2, a.height + i * 2), o(a, e, s)
                             };
                         c.exports = v
-                    }),
-                    53951: ((c, g, t) => {
+                    },
+                    53951: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22887,8 +22888,8 @@ function mh() {
                                 return e === void 0 && (e = new o), v(r, i) ? (e.x = Math.max(r.x, i.x), e.y = Math.max(r.y, i.y), e.width = Math.min(r.right, i.right) - e.x, e.height = Math.min(r.bottom, i.bottom) - e.y) : e.setEmpty(), e
                             };
                         c.exports = a
-                    }),
-                    14649: ((c, g, t) => {
+                    },
+                    14649: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22916,8 +22917,8 @@ function mh() {
                                 return s
                             };
                         c.exports = a
-                    }),
-                    33595: (c => {
+                    },
+                    33595: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22928,8 +22929,8 @@ function mh() {
                             return t.x = v, t.y = r, t.width = a - v, t.height = i - r, t
                         };
                         c.exports = g
-                    }),
-                    20074: (c => {
+                    },
+                    20074: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22944,8 +22945,8 @@ function mh() {
                             return t.y = r, t.height = i - r, t
                         };
                         c.exports = g
-                    }),
-                    92171: (c => {
+                    },
+                    92171: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22960,8 +22961,8 @@ function mh() {
                             return t.y = i, t.height = e - i, t
                         };
                         c.exports = g
-                    }),
-                    42981: (c => {
+                    },
+                    42981: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22971,8 +22972,8 @@ function mh() {
                             return t.x += o, t.y += v, t
                         };
                         c.exports = g
-                    }),
-                    46907: (c => {
+                    },
+                    46907: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22982,8 +22983,8 @@ function mh() {
                             return t.x += o.x, t.y += o.y, t
                         };
                         c.exports = g
-                    }),
-                    60170: (c => {
+                    },
+                    60170: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -22993,8 +22994,8 @@ function mh() {
                             return t.x < o.right && t.right > o.x && t.y < o.bottom && t.bottom > o.y
                         };
                         c.exports = g
-                    }),
-                    13019: (c => {
+                    },
+                    13019: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23004,8 +23005,8 @@ function mh() {
                             return 2 * (t.width + t.height)
                         };
                         c.exports = g
-                    }),
-                    85133: ((c, g, t) => {
+                    },
+                    85133: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23022,8 +23023,8 @@ function mh() {
                                 return Math.abs(n * s) < Math.abs(l * h) ? l = n * s / h : n = l * h / s, e.x = n + r.centerX, e.y = l + r.centerY, e
                             };
                         c.exports = a
-                    }),
-                    26597: ((c, g, t) => {
+                    },
+                    26597: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23034,8 +23035,8 @@ function mh() {
                                 return r === void 0 && (r = new o), r.x = a.x + Math.random() * a.width, r.y = a.y + Math.random() * a.height, r
                             };
                         c.exports = v
-                    }),
-                    86470: ((c, g, t) => {
+                    },
+                    86470: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23062,8 +23063,8 @@ function mh() {
                                 return s
                             };
                         c.exports = r
-                    }),
-                    87841: ((c, g, t) => {
+                    },
+                    87841: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23169,8 +23170,8 @@ function mh() {
                                 }
                             });
                         c.exports = h
-                    }),
-                    94845: (c => {
+                    },
+                    94845: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23180,8 +23181,8 @@ function mh() {
                             return t.width === o.width && t.height === o.height
                         };
                         c.exports = g
-                    }),
-                    31730: (c => {
+                    },
+                    31730: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23191,8 +23192,8 @@ function mh() {
                             return v === void 0 && (v = o), t.width *= o, t.height *= v, t
                         };
                         c.exports = g
-                    }),
-                    36899: ((c, g, t) => {
+                    },
+                    36899: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23208,8 +23209,8 @@ function mh() {
                                 return i.setTo(e, s, h, n)
                             };
                         c.exports = v
-                    }),
-                    93232: ((c, g, t) => {
+                    },
+                    93232: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23217,8 +23218,8 @@ function mh() {
                          */
                         var o = t(87841);
                         o.Area = t(62224), o.Ceil = t(98615), o.CeilAll = t(31688), o.CenterOn = t(67502), o.Clone = t(65085), o.Contains = t(37303), o.ContainsPoint = t(96553), o.ContainsRect = t(70273), o.CopyFrom = t(43459), o.Decompose = t(77493), o.Equals = t(9219), o.FitInside = t(53751), o.FitOutside = t(16088), o.Floor = t(80774), o.FloorAll = t(83859), o.FromPoints = t(19217), o.FromXY = t(9477), o.GetAspectRatio = t(8249), o.GetCenter = t(27165), o.GetPoint = t(20812), o.GetPoints = t(34819), o.GetSize = t(51313), o.Inflate = t(86091), o.Intersection = t(53951), o.MarchingAnts = t(14649), o.MergePoints = t(33595), o.MergeRect = t(20074), o.MergeXY = t(92171), o.Offset = t(42981), o.OffsetPoint = t(46907), o.Overlaps = t(60170), o.Perimeter = t(13019), o.PerimeterPoint = t(85133), o.Random = t(26597), o.RandomOutside = t(86470), o.SameDimensions = t(94845), o.Scale = t(31730), o.Union = t(36899), c.exports = o
-                    }),
-                    41658: (c => {
+                    },
+                    41658: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23234,8 +23235,8 @@ function mh() {
                             return Math.abs(((i - o) * (r - v) - (a - o) * (e - v)) / 2)
                         };
                         c.exports = g
-                    }),
-                    39208: ((c, g, t) => {
+                    },
+                    39208: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23253,8 +23254,8 @@ function mh() {
                                 return new o(s, h, n, l, u, f)
                             };
                         c.exports = v
-                    }),
-                    39545: ((c, g, t) => {
+                    },
+                    39545: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23268,8 +23269,8 @@ function mh() {
                                 return h
                             };
                         c.exports = a
-                    }),
-                    90301: ((c, g, t) => {
+                    },
+                    90301: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23287,8 +23288,8 @@ function mh() {
                                 return new o(s, h, n, l, u, f)
                             };
                         c.exports = v
-                    }),
-                    23707: ((c, g, t) => {
+                    },
+                    23707: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23304,8 +23305,8 @@ function mh() {
                                 return v(r, n, l)
                             };
                         c.exports = a
-                    }),
-                    97523: ((c, g, t) => {
+                    },
+                    97523: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23316,8 +23317,8 @@ function mh() {
                                 return r === void 0 && (r = new o), r.x = (a.x1 + a.x2 + a.x3) / 3, r.y = (a.y1 + a.y2 + a.y3) / 3, r
                             };
                         c.exports = v
-                    }),
-                    24951: ((c, g, t) => {
+                    },
+                    24951: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23342,8 +23343,8 @@ function mh() {
                             return i.x = e - d / f, i.y = s + p / f, i
                         };
                         c.exports = a
-                    }),
-                    85614: ((c, g, t) => {
+                    },
+                    85614: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23374,8 +23375,8 @@ function mh() {
                                 return r
                             };
                         c.exports = v
-                    }),
-                    74422: ((c, g, t) => {
+                    },
+                    74422: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23386,8 +23387,8 @@ function mh() {
                                 return new o(a.x1, a.y1, a.x2, a.y2, a.x3, a.y3)
                             };
                         c.exports = v
-                    }),
-                    10690: (c => {
+                    },
+                    10690: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23412,8 +23413,8 @@ function mh() {
                             return y >= 0 && x >= 0 && y + x < 1
                         };
                         c.exports = g
-                    }),
-                    48653: (c => {
+                    },
+                    48653: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23428,8 +23429,8 @@ function mh() {
                             return a
                         };
                         c.exports = g
-                    }),
-                    96006: ((c, g, t) => {
+                    },
+                    96006: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23440,8 +23441,8 @@ function mh() {
                                 return o(a, r.x, r.y)
                             };
                         c.exports = v
-                    }),
-                    71326: (c => {
+                    },
+                    71326: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23451,8 +23452,8 @@ function mh() {
                             return o.setTo(t.x1, t.y1, t.x2, t.y2, t.x3, t.y3)
                         };
                         c.exports = g
-                    }),
-                    71694: (c => {
+                    },
+                    71694: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23471,8 +23472,8 @@ function mh() {
                             }), o
                         };
                         c.exports = g
-                    }),
-                    33522: (c => {
+                    },
+                    33522: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23482,8 +23483,8 @@ function mh() {
                             return t.x1 === o.x1 && t.y1 === o.y1 && t.x2 === o.x2 && t.y2 === o.y2 && t.x3 === o.x3 && t.y3 === o.y3
                         };
                         c.exports = g
-                    }),
-                    20437: ((c, g, t) => {
+                    },
+                    20437: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23506,8 +23507,8 @@ function mh() {
                                 return p < l ? (m = p / l, e.x = s.x1 + (s.x2 - s.x1) * m, e.y = s.y1 + (s.y2 - s.y1) * m) : p > l + u ? (p -= l + u, m = p / f, e.x = n.x1 + (n.x2 - n.x1) * m, e.y = n.y1 + (n.y2 - n.y1) * m) : (p -= l, m = p / u, e.x = h.x1 + (h.x2 - h.x1) * m, e.y = h.y1 + (h.y2 - h.y1) * m), e
                             };
                         c.exports = a
-                    }),
-                    80672: ((c, g, t) => {
+                    },
+                    80672: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23534,8 +23535,8 @@ function mh() {
                                 return s
                             };
                         c.exports = a
-                    }),
-                    39757: ((c, g, t) => {
+                    },
+                    39757: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23564,8 +23565,8 @@ function mh() {
                             return i.x = (e * f + h * d + l * p) / m, i.y = (s * f + n * d + u * p) / m, i
                         };
                         c.exports = a
-                    }),
-                    13584: (c => {
+                    },
+                    13584: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23575,8 +23576,8 @@ function mh() {
                             return t.x1 += o, t.y1 += v, t.x2 += o, t.y2 += v, t.x3 += o, t.y3 += v, t
                         };
                         c.exports = g
-                    }),
-                    1376: ((c, g, t) => {
+                    },
+                    1376: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23590,8 +23591,8 @@ function mh() {
                                 return o(r) + o(i) + o(e)
                             };
                         c.exports = v
-                    }),
-                    90260: ((c, g, t) => {
+                    },
+                    90260: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23609,8 +23610,8 @@ function mh() {
                                 return n + l >= 1 && (n = 1 - n, l = 1 - l), r.x = a.x1 + (i * n + s * l), r.y = a.y1 + (e * n + h * l), r
                             };
                         c.exports = v
-                    }),
-                    52172: ((c, g, t) => {
+                    },
+                    52172: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23623,8 +23624,8 @@ function mh() {
                                 return o(r, e.x, e.y, i)
                             };
                         c.exports = a
-                    }),
-                    49907: ((c, g, t) => {
+                    },
+                    49907: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23635,8 +23636,8 @@ function mh() {
                                 return o(a, r.x, r.y, i)
                             };
                         c.exports = v
-                    }),
-                    99614: (c => {
+                    },
+                    99614: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23650,8 +23651,8 @@ function mh() {
                             return t.x1 = e * r - s * i + o, t.y1 = e * i + s * r + v, e = t.x2 - o, s = t.y2 - v, t.x2 = e * r - s * i + o, t.y2 = e * i + s * r + v, e = t.x3 - o, s = t.y3 - v, t.x3 = e * r - s * i + o, t.y3 = e * i + s * r + v, t
                         };
                         c.exports = g
-                    }),
-                    16483: ((c, g, t) => {
+                    },
+                    16483: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23730,8 +23731,8 @@ function mh() {
                                 }
                             });
                         c.exports = h
-                    }),
-                    84435: ((c, g, t) => {
+                    },
+                    84435: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23739,8 +23740,8 @@ function mh() {
                          */
                         var o = t(16483);
                         o.Area = t(41658), o.BuildEquilateral = t(39208), o.BuildFromPolygon = t(39545), o.BuildRight = t(90301), o.CenterOn = t(23707), o.Centroid = t(97523), o.CircumCenter = t(24951), o.CircumCircle = t(85614), o.Clone = t(74422), o.Contains = t(10690), o.ContainsArray = t(48653), o.ContainsPoint = t(96006), o.CopyFrom = t(71326), o.Decompose = t(71694), o.Equals = t(33522), o.GetPoint = t(20437), o.GetPoints = t(80672), o.InCenter = t(39757), o.Perimeter = t(1376), o.Offset = t(13584), o.Random = t(90260), o.Rotate = t(52172), o.RotateAroundPoint = t(49907), o.RotateAroundXY = t(99614), c.exports = o
-                    }),
-                    74457: (c => {
+                    },
+                    74457: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23772,8 +23773,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    84409: (c => {
+                    },
+                    84409: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23786,8 +23787,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    7003: ((c, g, t) => {
+                    },
+                    7003: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -23995,8 +23996,8 @@ function mh() {
                                 }
                             });
                         c.exports = f
-                    }),
-                    48205: ((c, g, t) => {
+                    },
+                    48205: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -24662,8 +24663,8 @@ function mh() {
                                 }
                             });
                         y.register("InputPlugin", L, "input"), c.exports = L
-                    }),
-                    89639: ((c, g, t) => {
+                    },
+                    89639: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -24695,8 +24696,8 @@ function mh() {
                         }, a.remove = function(r) {
                             v.hasOwnProperty(r) && delete v[r]
                         }, c.exports = a
-                    }),
-                    42515: ((c, g, t) => {
+                    },
+                    42515: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -24846,8 +24847,8 @@ function mh() {
                                 }
                             });
                         c.exports = h
-                    }),
-                    93301: (c => {
+                    },
+                    93301: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -24865,376 +24866,376 @@ function mh() {
                             MOUSE_WHEEL: 8
                         };
                         c.exports = g
-                    }),
-                    7179: (c => {
+                    },
+                    7179: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "boot"
-                    }),
-                    85375: (c => {
+                    },
+                    85375: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "destroy"
-                    }),
-                    39843: (c => {
+                    },
+                    39843: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "dragend"
-                    }),
-                    23388: (c => {
+                    },
+                    23388: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "dragenter"
-                    }),
-                    16133: (c => {
+                    },
+                    16133: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "drag"
-                    }),
-                    27829: (c => {
+                    },
+                    27829: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "dragleave"
-                    }),
-                    53904: (c => {
+                    },
+                    53904: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "dragover"
-                    }),
-                    56058: (c => {
+                    },
+                    56058: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "dragstart"
-                    }),
-                    2642: (c => {
+                    },
+                    2642: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "drop"
-                    }),
-                    88171: (c => {
+                    },
+                    88171: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "gameobjectdown"
-                    }),
-                    36147: (c => {
+                    },
+                    36147: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "dragend"
-                    }),
-                    71692: (c => {
+                    },
+                    71692: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "dragenter"
-                    }),
-                    96149: (c => {
+                    },
+                    96149: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "drag"
-                    }),
-                    81285: (c => {
+                    },
+                    81285: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "dragleave"
-                    }),
-                    74048: (c => {
+                    },
+                    74048: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "dragover"
-                    }),
-                    21322: (c => {
+                    },
+                    21322: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "dragstart"
-                    }),
-                    49378: (c => {
+                    },
+                    49378: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "drop"
-                    }),
-                    86754: (c => {
+                    },
+                    86754: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "gameobjectmove"
-                    }),
-                    86433: (c => {
+                    },
+                    86433: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "gameobjectout"
-                    }),
-                    60709: (c => {
+                    },
+                    60709: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "gameobjectover"
-                    }),
-                    24081: (c => {
+                    },
+                    24081: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointerdown"
-                    }),
-                    11172: (c => {
+                    },
+                    11172: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointermove"
-                    }),
-                    18907: (c => {
+                    },
+                    18907: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointerout"
-                    }),
-                    95579: (c => {
+                    },
+                    95579: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointerover"
-                    }),
-                    35368: (c => {
+                    },
+                    35368: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointerup"
-                    }),
-                    26972: (c => {
+                    },
+                    26972: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "wheel"
-                    }),
-                    47078: (c => {
+                    },
+                    47078: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "gameobjectup"
-                    }),
-                    73802: (c => {
+                    },
+                    73802: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "gameobjectwheel"
-                    }),
-                    56718: (c => {
+                    },
+                    56718: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "gameout"
-                    }),
-                    25936: (c => {
+                    },
+                    25936: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "gameover"
-                    }),
-                    27503: (c => {
+                    },
+                    27503: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "boot"
-                    }),
-                    50852: (c => {
+                    },
+                    50852: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "process"
-                    }),
-                    96438: (c => {
+                    },
+                    96438: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "update"
-                    }),
-                    59152: (c => {
+                    },
+                    59152: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointerlockchange"
-                    }),
-                    47777: (c => {
+                    },
+                    47777: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointerdown"
-                    }),
-                    27957: (c => {
+                    },
+                    27957: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointerdownoutside"
-                    }),
-                    19444: (c => {
+                    },
+                    19444: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointermove"
-                    }),
-                    54251: (c => {
+                    },
+                    54251: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointerout"
-                    }),
-                    18667: (c => {
+                    },
+                    18667: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointerover"
-                    }),
-                    27192: (c => {
+                    },
+                    27192: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointerup"
-                    }),
-                    24652: (c => {
+                    },
+                    24652: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pointerupoutside"
-                    }),
-                    45132: (c => {
+                    },
+                    45132: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "wheel"
-                    }),
-                    44512: (c => {
+                    },
+                    44512: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "preupdate"
-                    }),
-                    15757: (c => {
+                    },
+                    15757: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "shutdown"
-                    }),
-                    41637: (c => {
+                    },
+                    41637: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "start"
-                    }),
-                    93802: (c => {
+                    },
+                    93802: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "update"
-                    }),
-                    8214: ((c, g, t) => {
+                    },
+                    8214: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25288,8 +25289,8 @@ function mh() {
                             START: t(41637),
                             UPDATE: t(93802)
                         }
-                    }),
-                    97421: ((c, g, t) => {
+                    },
+                    97421: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25311,8 +25312,8 @@ function mh() {
                                 }
                             });
                         c.exports = v
-                    }),
-                    28884: ((c, g, t) => {
+                    },
+                    28884: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25335,8 +25336,8 @@ function mh() {
                                 }
                             });
                         c.exports = a
-                    }),
-                    99125: ((c, g, t) => {
+                    },
+                    99125: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25475,8 +25476,8 @@ function mh() {
                                 }
                             });
                         c.exports = e
-                    }),
-                    56654: ((c, g, t) => {
+                    },
+                    56654: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25594,8 +25595,8 @@ function mh() {
                                 }
                             });
                         e.register("GamepadPlugin", h, "gamepad", "gamepad", "inputGamepad"), c.exports = h
-                    }),
-                    89651: (c => {
+                    },
+                    89651: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25615,8 +25616,8 @@ function mh() {
                             LEFT_SHOULDER: 4,
                             RIGHT_SHOULDER: 5
                         }
-                    }),
-                    65294: (c => {
+                    },
+                    65294: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25646,8 +25647,8 @@ function mh() {
                             RIGHT_STICK_H: 2,
                             RIGHT_STICK_V: 3
                         }
-                    }),
-                    90089: (c => {
+                    },
+                    90089: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25676,8 +25677,8 @@ function mh() {
                             RIGHT_STICK_H: 2,
                             RIGHT_STICK_V: 3
                         }
-                    }),
-                    64894: ((c, g, t) => {
+                    },
+                    64894: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25688,56 +25689,56 @@ function mh() {
                             SNES_USB: t(89651),
                             XBOX_360: t(90089)
                         }
-                    }),
-                    46008: (c => {
+                    },
+                    46008: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "down"
-                    }),
-                    7629: (c => {
+                    },
+                    7629: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "up"
-                    }),
-                    42206: (c => {
+                    },
+                    42206: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "connected"
-                    }),
-                    86544: (c => {
+                    },
+                    86544: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "disconnected"
-                    }),
-                    94784: (c => {
+                    },
+                    94784: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "down"
-                    }),
-                    14325: (c => {
+                    },
+                    14325: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "up"
-                    }),
-                    92734: ((c, g, t) => {
+                    },
+                    92734: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25751,8 +25752,8 @@ function mh() {
                             GAMEPAD_BUTTON_DOWN: t(94784),
                             GAMEPAD_BUTTON_UP: t(14325)
                         }
-                    }),
-                    48646: ((c, g, t) => {
+                    },
+                    48646: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25766,8 +25767,8 @@ function mh() {
                             GamepadPlugin: t(56654),
                             Configs: t(64894)
                         }
-                    }),
-                    14350: ((c, g, t) => {
+                    },
+                    14350: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25789,8 +25790,8 @@ function mh() {
                                 Touch: t(95618)
                             };
                         a = v(!1, a, o), c.exports = a
-                    }),
-                    78970: ((c, g, t) => {
+                    },
+                    78970: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -25859,8 +25860,8 @@ function mh() {
                                 }
                             });
                         c.exports = s
-                    }),
-                    28846: ((c, g, t) => {
+                    },
+                    28846: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26009,8 +26010,8 @@ function mh() {
                                 }
                             });
                         s.register("KeyboardPlugin", p, "keyboard", "keyboard", "inputKeyboard"), c.exports = p
-                    }),
-                    66970: (c => {
+                    },
+                    66970: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26020,8 +26021,8 @@ function mh() {
                             return o.timeLastMatched = t.timeStamp, o.index++, o.index === o.size ? !0 : (o.current = o.keyCodes[o.index], !1)
                         };
                         c.exports = g
-                    }),
-                    87960: ((c, g, t) => {
+                    },
+                    87960: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26060,8 +26061,8 @@ function mh() {
                                 }
                             });
                         c.exports = e
-                    }),
-                    68769: ((c, g, t) => {
+                    },
+                    68769: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26080,8 +26081,8 @@ function mh() {
                                 return !e && r.resetOnWrongKey && (r.index = 0, r.current = r.keyCodes[0]), i && (r.timeLastMatched = a.timeStamp, r.matched = !0, r.timeMatched = a.timeStamp), i
                             };
                         c.exports = v
-                    }),
-                    92803: (c => {
+                    },
+                    92803: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26091,64 +26092,64 @@ function mh() {
                             return t.current = t.keyCodes[0], t.index = 0, t.timeLastMatched = 0, t.matched = !1, t.timeMatched = 0, t
                         };
                         c.exports = g
-                    }),
-                    92612: (c => {
+                    },
+                    92612: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "keydown"
-                    }),
-                    23345: (c => {
+                    },
+                    23345: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "keyup"
-                    }),
-                    21957: (c => {
+                    },
+                    21957: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "keycombomatch"
-                    }),
-                    44743: (c => {
+                    },
+                    44743: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "down"
-                    }),
-                    3771: (c => {
+                    },
+                    3771: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "keydown-"
-                    }),
-                    46358: (c => {
+                    },
+                    46358: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "keyup-"
-                    }),
-                    75674: (c => {
+                    },
+                    75674: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "up"
-                    }),
-                    95922: ((c, g, t) => {
+                    },
+                    95922: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26163,8 +26164,8 @@ function mh() {
                             KEY_UP: t(46358),
                             UP: t(75674)
                         }
-                    }),
-                    51442: ((c, g, t) => {
+                    },
+                    51442: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26185,8 +26186,8 @@ function mh() {
                             DownDuration: t(37015),
                             UpDuration: t(41170)
                         }
-                    }),
-                    37015: (c => {
+                    },
+                    37015: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26198,8 +26199,8 @@ function mh() {
                             return t.isDown && v < o
                         };
                         c.exports = g
-                    }),
-                    90229: (c => {
+                    },
+                    90229: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26209,8 +26210,8 @@ function mh() {
                             return t._justDown ? (t._justDown = !1, !0) : !1
                         };
                         c.exports = g
-                    }),
-                    38796: (c => {
+                    },
+                    38796: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26220,8 +26221,8 @@ function mh() {
                             return t._justUp ? (t._justUp = !1, !0) : !1
                         };
                         c.exports = g
-                    }),
-                    30472: ((c, g, t) => {
+                    },
+                    30472: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26255,8 +26256,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    46032: (c => {
+                    },
+                    46032: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26363,8 +26364,8 @@ function mh() {
                             BRACKET_LEFT_FIREFOX: 175
                         };
                         c.exports = g
-                    }),
-                    74600: ((c, g, t) => {
+                    },
+                    74600: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26374,8 +26375,8 @@ function mh() {
                             v = {};
                         for (var a in o) v[o[a]] = a;
                         c.exports = v
-                    }),
-                    41170: (c => {
+                    },
+                    41170: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26387,8 +26388,8 @@ function mh() {
                             return t.isUp && v < o
                         };
                         c.exports = g
-                    }),
-                    85098: ((c, g, t) => {
+                    },
+                    85098: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26469,8 +26470,8 @@ function mh() {
                                 }
                             });
                         c.exports = i
-                    }),
-                    87078: ((c, g, t) => {
+                    },
+                    87078: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26479,8 +26480,8 @@ function mh() {
                         c.exports = {
                             MouseManager: t(85098)
                         }
-                    }),
-                    36210: ((c, g, t) => {
+                    },
+                    36210: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26548,8 +26549,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    95618: ((c, g, t) => {
+                    },
+                    95618: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26558,8 +26559,8 @@ function mh() {
                         c.exports = {
                             TouchManager: t(36210)
                         }
-                    }),
-                    41299: ((c, g, t) => {
+                    },
+                    41299: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26650,8 +26651,8 @@ function mh() {
                         }, n.revokeObjectURL = function(l) {
                             typeof URL == "function" && URL.revokeObjectURL(l.src)
                         }, c.exports = n
-                    }),
-                    74099: (c => {
+                    },
+                    74099: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26670,8 +26671,8 @@ function mh() {
                                 }
                             };
                         c.exports = t
-                    }),
-                    98356: (c => {
+                    },
+                    98356: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26681,8 +26682,8 @@ function mh() {
                             return t.url ? t.url.match(/^(?:blob:|data:|capacitor:\/\/|http:\/\/|https:\/\/|\/\/)/) ? t.url : o + t.url : !1
                         };
                         c.exports = g
-                    }),
-                    74261: ((c, g, t) => {
+                    },
+                    74261: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26913,8 +26914,8 @@ function mh() {
                                 }
                             });
                         l.register("Loader", d, "load"), c.exports = d
-                    }),
-                    3374: ((c, g, t) => {
+                    },
+                    3374: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26929,8 +26930,8 @@ function mh() {
                                 return e
                             };
                         c.exports = a
-                    }),
-                    26430: ((c, g, t) => {
+                    },
+                    26430: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -26977,8 +26978,8 @@ function mh() {
                                 }
                             });
                         c.exports = r
-                    }),
-                    84376: ((c, g, t) => {
+                    },
+                    84376: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27005,8 +27006,8 @@ function mh() {
                                 return i.header && i.headerValue && h.setRequestHeader(i.header, i.headerValue), i.requestedWith && h.setRequestHeader("X-Requested-With", i.requestedWith), i.overrideMimeType && h.overrideMimeType(i.overrideMimeType), i.withCredentials && (h.withCredentials = !0), h.onload = a.onLoad.bind(a, h), h.onerror = a.onError.bind(a, h), h.onprogress = a.onProgress.bind(a), h.ontimeout = a.onError.bind(a, h), h.send(), h
                             };
                         c.exports = v
-                    }),
-                    92638: (c => {
+                    },
+                    92638: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27028,8 +27029,8 @@ function mh() {
                             }
                         };
                         c.exports = g
-                    }),
-                    23906: (c => {
+                    },
+                    23906: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27054,88 +27055,88 @@ function mh() {
                             FILE_PENDING_DESTROY: 20
                         };
                         c.exports = g
-                    }),
-                    42155: (c => {
+                    },
+                    42155: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "addfile"
-                    }),
-                    38991: (c => {
+                    },
+                    38991: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "complete"
-                    }),
-                    27540: (c => {
+                    },
+                    27540: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "filecomplete"
-                    }),
-                    87464: (c => {
+                    },
+                    87464: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "filecomplete-"
-                    }),
-                    94486: (c => {
+                    },
+                    94486: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "loaderror"
-                    }),
-                    13035: (c => {
+                    },
+                    13035: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "load"
-                    }),
-                    38144: (c => {
+                    },
+                    38144: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "fileprogress"
-                    }),
-                    97520: (c => {
+                    },
+                    97520: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "postprocess"
-                    }),
-                    85595: (c => {
+                    },
+                    85595: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "progress"
-                    }),
-                    55680: (c => {
+                    },
+                    55680: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "start"
-                    }),
-                    54899: ((c, g, t) => {
+                    },
+                    54899: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27153,8 +27154,8 @@ function mh() {
                             PROGRESS: t(85595),
                             START: t(55680)
                         }
-                    }),
-                    14135: ((c, g, t) => {
+                    },
+                    14135: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27182,8 +27183,8 @@ function mh() {
                             else this.addFile(new i(this, e, s, n, h));
                             return this
                         }), c.exports = i
-                    }),
-                    76272: ((c, g, t) => {
+                    },
+                    76272: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27233,8 +27234,8 @@ function mh() {
                             else p = new h(this, n, l, u, f, d), this.addFile(p.files);
                             return this
                         }), c.exports = h
-                    }),
-                    38734: ((c, g, t) => {
+                    },
+                    38734: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27284,8 +27285,8 @@ function mh() {
                             else p = new h(this, n, l, u, f, d), this.addFile(p.files);
                             return this
                         }), c.exports = h
-                    }),
-                    74599: ((c, g, t) => {
+                    },
+                    74599: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27335,8 +27336,8 @@ function mh() {
                             else p = new h(this, n, l, u, f, d), this.addFile(p.files);
                             return this
                         }), c.exports = h
-                    }),
-                    21097: ((c, g, t) => {
+                    },
+                    21097: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27413,8 +27414,8 @@ function mh() {
                             else y = h.create(this, n, l, u, f), y && this.addFile(y);
                             return this
                         }), c.exports = h
-                    }),
-                    89524: ((c, g, t) => {
+                    },
+                    89524: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27470,8 +27471,8 @@ function mh() {
                             else S = new h(this, n, l, u, f, d, p), S.files && this.addFile(S.files);
                             return this
                         })
-                    }),
-                    85722: ((c, g, t) => {
+                    },
+                    85722: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27517,8 +27518,8 @@ function mh() {
                             else this.addFile(new s(this, h, n, u, l));
                             return this
                         }), c.exports = s
-                    }),
-                    97025: ((c, g, t) => {
+                    },
+                    97025: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27575,8 +27576,8 @@ function mh() {
                             else m = new n(this, l, u, f, d, p), this.addFile(m.files);
                             return this
                         }), c.exports = n
-                    }),
-                    16024: ((c, g, t) => {
+                    },
+                    16024: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27617,8 +27618,8 @@ function mh() {
                             else this.addFile(new s(this, h, n, l));
                             return this
                         }), c.exports = s
-                    }),
-                    69559: ((c, g, t) => {
+                    },
+                    69559: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2021 Photon Storm Ltd.
@@ -27772,8 +27773,8 @@ function mh() {
                             else P(this, y, x, S);
                             return this
                         }), c.exports = m
-                    }),
-                    87674: ((c, g, t) => {
+                    },
+                    87674: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27827,8 +27828,8 @@ function mh() {
                             else this.addFile(new h(this, n, l, u, f, d));
                             return this
                         }), c.exports = h
-                    }),
-                    47931: ((c, g, t) => {
+                    },
+                    47931: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27939,8 +27940,8 @@ function mh() {
                             else this.addFile(new h(this, n, l, u, f));
                             return this
                         }), c.exports = h
-                    }),
-                    89749: ((c, g, t) => {
+                    },
+                    89749: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -27996,8 +27997,8 @@ function mh() {
                                 }
                             });
                         c.exports = s
-                    }),
-                    88470: ((c, g, t) => {
+                    },
+                    88470: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28038,8 +28039,8 @@ function mh() {
                             else this.addFile(new s(this, h, n, l));
                             return this
                         }), c.exports = s
-                    }),
-                    14643: ((c, g, t) => {
+                    },
+                    14643: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28108,8 +28109,8 @@ function mh() {
                             else this.addFile(new s(this, h, n, l, u, f));
                             return this
                         }), c.exports = s
-                    }),
-                    19550: ((c, g, t) => {
+                    },
+                    19550: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28181,8 +28182,8 @@ function mh() {
                             else this.addFile(new h(this, n, l, u));
                             return this
                         }), c.exports = h
-                    }),
-                    518: ((c, g, t) => {
+                    },
+                    518: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28235,8 +28236,8 @@ function mh() {
                             else this.addFile(new h(this, n, l, f, u));
                             return this
                         }), c.exports = h
-                    }),
-                    59327: ((c, g, t) => {
+                    },
+                    59327: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28309,8 +28310,8 @@ function mh() {
                             else p = new h(this, n, l, u, f, d), this.addFile(p.files);
                             return this
                         }), c.exports = h
-                    }),
-                    99297: ((c, g, t) => {
+                    },
+                    99297: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28362,8 +28363,8 @@ function mh() {
                             else u = new s(this, h, n, l), this.addFile(u.files);
                             return this
                         }), c.exports = s
-                    }),
-                    41846: ((c, g, t) => {
+                    },
+                    41846: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28437,8 +28438,8 @@ function mh() {
                             else m = new n(this, l, u, f, d, p), this.addFile(m.files);
                             return this
                         }), c.exports = n
-                    }),
-                    58610: ((c, g, t) => {
+                    },
+                    58610: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28467,8 +28468,8 @@ function mh() {
                             else this.addFile(new i(this, e, s, n, h));
                             return this
                         }), c.exports = i
-                    }),
-                    48988: ((c, g, t) => {
+                    },
+                    48988: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28523,8 +28524,8 @@ function mh() {
                             else this.addFile(new s(this, h, n, l, u, f));
                             return this
                         }), c.exports = s
-                    }),
-                    67397: ((c, g, t) => {
+                    },
+                    67397: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28612,8 +28613,8 @@ function mh() {
                             else this.addFile(new s(this, h, n, l, u));
                             return this
                         }), c.exports = s
-                    }),
-                    88423: ((c, g, t) => {
+                    },
+                    88423: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28660,8 +28661,8 @@ return new ` + this.key + `();
                             else this.addFile(new s(this, h, n, l));
                             return this
                         }), c.exports = s
-                    }),
-                    56812: ((c, g, t) => {
+                    },
+                    56812: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28711,8 +28712,8 @@ return new ` + this.key + `();
                             else this.addFile(new s(this, h, n, l, u, f));
                             return this
                         }), c.exports = s
-                    }),
-                    34328: ((c, g, t) => {
+                    },
+                    34328: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28753,8 +28754,8 @@ return new ` + this.key + `();
                             else this.addFile(new s(this, h, n, l, u));
                             return this
                         }), c.exports = s
-                    }),
-                    85035: ((c, g, t) => {
+                    },
+                    85035: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28780,8 +28781,8 @@ return new ` + this.key + `();
                             else this.addFile(new i(this, e, s, h, n));
                             return this
                         }), c.exports = i
-                    }),
-                    78776: ((c, g, t) => {
+                    },
+                    78776: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28824,8 +28825,8 @@ return new ` + this.key + `();
                             else this.addFile(new s(this, h, n, l));
                             return this
                         }), c.exports = s
-                    }),
-                    49477: ((c, g, t) => {
+                    },
+                    49477: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28874,8 +28875,8 @@ return new ` + this.key + `();
                             else this.addFile(new h(this, n, l, u));
                             return this
                         }), c.exports = h
-                    }),
-                    40807: ((c, g, t) => {
+                    },
+                    40807: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28904,8 +28905,8 @@ return new ` + this.key + `();
                             else this.addFile(new i(this, e, s, h));
                             return this
                         }), c.exports = i
-                    }),
-                    56775: ((c, g, t) => {
+                    },
+                    56775: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28934,8 +28935,8 @@ return new ` + this.key + `();
                             else this.addFile(new i(this, e, s, h));
                             return this
                         }), c.exports = i
-                    }),
-                    25771: ((c, g, t) => {
+                    },
+                    25771: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -28985,8 +28986,8 @@ return new ` + this.key + `();
                             else p = new h(this, n, l, u, f, d), this.addFile(p.files);
                             return this
                         }), c.exports = h
-                    }),
-                    33720: ((c, g, t) => {
+                    },
+                    33720: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29037,8 +29038,8 @@ return new ` + this.key + `();
                             else this.addFile(new h(this, n, l, u));
                             return this
                         }), c.exports = h
-                    }),
-                    57318: ((c, g, t) => {
+                    },
+                    57318: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29080,8 +29081,8 @@ return new ` + this.key + `();
                             else this.addFile(new h(this, n, l, u));
                             return this
                         }), c.exports = h
-                    }),
-                    64589: ((c, g, t) => {
+                    },
+                    64589: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29123,8 +29124,8 @@ return new ` + this.key + `();
                             VideoFile: t(33720),
                             XMLFile: t(57318)
                         }
-                    }),
-                    57777: ((c, g, t) => {
+                    },
+                    57777: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29145,8 +29146,8 @@ return new ` + this.key + `();
                                 XHRSettings: t(92638)
                             };
                         a = v(!1, a, o), c.exports = a
-                    }),
-                    53307: (c => {
+                    },
+                    53307: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29157,8 +29158,8 @@ return new ` + this.key + `();
                             return o / t.length
                         };
                         c.exports = g
-                    }),
-                    85710: ((c, g, t) => {
+                    },
+                    85710: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29169,8 +29170,8 @@ return new ` + this.key + `();
                                 return o(a) / o(r) / o(a - r)
                             };
                         c.exports = v
-                    }),
-                    30976: (c => {
+                    },
+                    30976: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29180,8 +29181,8 @@ return new ` + this.key + `();
                             return Math.floor(Math.random() * (o - t + 1) + t)
                         };
                         c.exports = g
-                    }),
-                    87842: (c => {
+                    },
+                    87842: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29195,8 +29196,8 @@ return new ` + this.key + `();
                             return (2 * v - 2 * a + i + e) * h + (-3 * v + 3 * a - 2 * i - e) * s + i * t + v
                         };
                         c.exports = g
-                    }),
-                    26302: (c => {
+                    },
+                    26302: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29208,8 +29209,8 @@ return new ` + this.key + `();
                             return Math.ceil(t * a) / a
                         };
                         c.exports = g
-                    }),
-                    45319: (c => {
+                    },
+                    45319: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29219,8 +29220,8 @@ return new ` + this.key + `();
                             return Math.max(o, Math.min(v, t))
                         };
                         c.exports = g
-                    }),
-                    39506: ((c, g, t) => {
+                    },
+                    39506: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29231,8 +29232,8 @@ return new ` + this.key + `();
                                 return a * o.DEG_TO_RAD
                             };
                         c.exports = v
-                    }),
-                    61241: (c => {
+                    },
+                    61241: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29242,8 +29243,8 @@ return new ` + this.key + `();
                             return Math.abs(t - o)
                         };
                         c.exports = g
-                    }),
-                    38857: ((c, g, t) => {
+                    },
+                    38857: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29345,8 +29346,8 @@ return new ` + this.key + `();
                                 }
                             });
                         e.RotationOrders = ["XYZ", "YXZ", "ZXY", "ZYX", "YZX", "XZY"], e.DefaultOrder = "XYZ", c.exports = e
-                    }),
-                    6411: (c => {
+                    },
+                    6411: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29358,8 +29359,8 @@ return new ` + this.key + `();
                             return o
                         };
                         c.exports = g
-                    }),
-                    99472: (c => {
+                    },
+                    99472: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29369,8 +29370,8 @@ return new ` + this.key + `();
                             return Math.random() * (o - t) + t
                         };
                         c.exports = g
-                    }),
-                    77623: (c => {
+                    },
+                    77623: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29382,8 +29383,8 @@ return new ` + this.key + `();
                             return Math.floor(t * a) / a
                         };
                         c.exports = g
-                    }),
-                    62945: ((c, g, t) => {
+                    },
+                    62945: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29394,8 +29395,8 @@ return new ` + this.key + `();
                                 return a = o(a, 0, 1), (i - r) * a + r
                             };
                         c.exports = v
-                    }),
-                    38265: (c => {
+                    },
+                    38265: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29405,8 +29406,8 @@ return new ` + this.key + `();
                             return t / o / 1e3
                         };
                         c.exports = g
-                    }),
-                    78702: (c => {
+                    },
+                    78702: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29416,8 +29417,8 @@ return new ` + this.key + `();
                             return t == parseFloat(t) ? !(t % 2) : void 0
                         };
                         c.exports = g
-                    }),
-                    94883: (c => {
+                    },
+                    94883: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29427,8 +29428,8 @@ return new ` + this.key + `();
                             return t === parseFloat(t) ? !(t % 2) : void 0
                         };
                         c.exports = g
-                    }),
-                    28915: (c => {
+                    },
+                    28915: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29438,8 +29439,8 @@ return new ` + this.key + `();
                             return (o - t) * v + t
                         };
                         c.exports = g
-                    }),
-                    94908: (c => {
+                    },
+                    94908: c => {
                         /**
                          * @author       Greg McLean <GregDevProjects>
                          * @copyright    2021 Photon Storm Ltd.
@@ -29449,8 +29450,8 @@ return new ` + this.key + `();
                             return v === void 0 && (v = 0), t.clone().lerp(o, v)
                         };
                         c.exports = g
-                    }),
-                    94434: ((c, g, t) => {
+                    },
+                    94434: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -29638,8 +29639,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = v
-                    }),
-                    37867: ((c, g, t) => {
+                    },
+                    37867: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30134,8 +30135,8 @@ return new ` + this.key + `();
                             h = new v,
                             n = new v;
                         c.exports = r
-                    }),
-                    86883: (c => {
+                    },
+                    86883: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30145,8 +30146,8 @@ return new ` + this.key + `();
                             return Math.min(t + o, v)
                         };
                         c.exports = g
-                    }),
-                    50040: (c => {
+                    },
+                    50040: c => {
                         /**
                          * @author       Vladislav Forsh <vlad@robowhale.com>
                          * @copyright    2021 RoboWhale
@@ -30162,8 +30163,8 @@ return new ` + this.key + `();
                             return o % 2 === 0 ? (t[v] + t[v - 1]) / 2 : t[v]
                         };
                         c.exports = g
-                    }),
-                    37204: (c => {
+                    },
+                    37204: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30173,8 +30174,8 @@ return new ` + this.key + `();
                             return Math.max(t - o, v)
                         };
                         c.exports = g
-                    }),
-                    65201: (c => {
+                    },
+                    65201: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30186,8 +30187,8 @@ return new ` + this.key + `();
                             return r > 1 ? a !== void 0 ? (r = (a - t) / (a - v), r < 0 && (r = 0)) : r = 1 : r < 0 && (r = 0), r
                         };
                         c.exports = g
-                    }),
-                    15746: ((c, g, t) => {
+                    },
+                    15746: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30452,8 +30453,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = f
-                    }),
-                    43396: ((c, g, t) => {
+                    },
+                    43396: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30464,8 +30465,8 @@ return new ` + this.key + `();
                                 return a * o.RAD_TO_DEG
                             };
                         c.exports = v
-                    }),
-                    74362: (c => {
+                    },
+                    74362: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30477,8 +30478,8 @@ return new ` + this.key + `();
                             return t.x = Math.cos(v) * o, t.y = Math.sin(v) * o, t
                         };
                         c.exports = g
-                    }),
-                    60706: (c => {
+                    },
+                    60706: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30492,8 +30493,8 @@ return new ` + this.key + `();
                             return t.x = Math.cos(v) * r, t.y = Math.sin(v) * r, t.z = a * o, t
                         };
                         c.exports = g
-                    }),
-                    67421: (c => {
+                    },
+                    67421: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30503,8 +30504,8 @@ return new ` + this.key + `();
                             return o === void 0 && (o = 1), t.x = (Math.random() * 2 - 1) * o, t.y = (Math.random() * 2 - 1) * o, t.z = (Math.random() * 2 - 1) * o, t.w = (Math.random() * 2 - 1) * o, t
                         };
                         c.exports = g
-                    }),
-                    36305: (c => {
+                    },
+                    36305: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30516,8 +30517,8 @@ return new ` + this.key + `();
                             return t.x = v * Math.cos(o) - a * Math.sin(o), t.y = v * Math.sin(o) + a * Math.cos(o), t
                         };
                         c.exports = g
-                    }),
-                    11520: (c => {
+                    },
+                    11520: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30531,8 +30532,8 @@ return new ` + this.key + `();
                             return t.x = e * r - s * i + o, t.y = e * i + s * r + v, t
                         };
                         c.exports = g
-                    }),
-                    1163: (c => {
+                    },
+                    1163: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30543,8 +30544,8 @@ return new ` + this.key + `();
                             return t.x = o + r * Math.cos(i), t.y = v + r * Math.sin(i), t
                         };
                         c.exports = g
-                    }),
-                    70336: (c => {
+                    },
+                    70336: c => {
                         /**
                          * @author       samme
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30554,8 +30555,8 @@ return new ` + this.key + `();
                             return t.x = o + r * Math.cos(a), t.y = v + r * Math.sin(a), t
                         };
                         c.exports = g
-                    }),
-                    72678: ((c, g, t) => {
+                    },
+                    72678: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30571,8 +30572,8 @@ return new ` + this.key + `();
                                 return i.setAxisAngle(n, l), r.fromRotationTranslation(i, e.set(0, 0, 0)), h.transformMat4(r)
                             };
                         c.exports = s
-                    }),
-                    2284: (c => {
+                    },
+                    2284: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30582,8 +30583,8 @@ return new ` + this.key + `();
                             return t > 0 ? Math.ceil(t) : Math.floor(t)
                         };
                         c.exports = g
-                    }),
-                    41013: (c => {
+                    },
+                    41013: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30595,8 +30596,8 @@ return new ` + this.key + `();
                             return Math.round(t * a) / a
                         };
                         c.exports = g
-                    }),
-                    16922: (c => {
+                    },
+                    16922: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30612,8 +30613,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    7602: (c => {
+                    },
+                    7602: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30623,8 +30624,8 @@ return new ` + this.key + `();
                             return t <= o ? 0 : t >= v ? 1 : (t = (t - o) / (v - o), t * t * (3 - 2 * t))
                         };
                         c.exports = g
-                    }),
-                    54261: (c => {
+                    },
+                    54261: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30634,8 +30635,8 @@ return new ` + this.key + `();
                             return t = Math.max(0, Math.min(1, (t - o) / (v - o))), t * t * t * (t * (t * 6 - 15) + 10)
                         };
                         c.exports = g
-                    }),
-                    44408: ((c, g, t) => {
+                    },
+                    44408: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30650,8 +30651,8 @@ return new ` + this.key + `();
                                 return a > 0 && a <= n && (a > r - 1 ? (h = Math.floor(a / r), s = a - h * r) : s = a), e.set(s, h)
                             };
                         c.exports = v
-                    }),
-                    85955: ((c, g, t) => {
+                    },
+                    85955: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30670,8 +30671,8 @@ return new ` + this.key + `();
                                 return l.x = y * x * a + -m * x * r + (e * m - i * y) * x, l.y = d * x * r + -p * x * a + (-e * d + i * p) * x, l
                             };
                         c.exports = v
-                    }),
-                    26099: ((c, g, t) => {
+                    },
+                    26099: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -30817,8 +30818,8 @@ return new ` + this.key + `();
                                 }
                             });
                         a.ZERO = new a, a.RIGHT = new a(1, 0), a.LEFT = new a(-1, 0), a.UP = new a(0, -1), a.DOWN = new a(0, 1), a.ONE = new a(1, 1), c.exports = a
-                    }),
-                    25836: ((c, g, t) => {
+                    },
+                    25836: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31047,8 +31048,8 @@ return new ` + this.key + `();
                                 }
                             });
                         v.ZERO = new v, v.RIGHT = new v(1, 0, 0), v.LEFT = new v(-1, 0, 0), v.UP = new v(0, -1, 0), v.DOWN = new v(0, 1, 0), v.FORWARD = new v(0, 0, 1), v.BACK = new v(0, 0, -1), v.ONE = new v(1, 1, 1), c.exports = v
-                    }),
-                    61369: ((c, g, t) => {
+                    },
+                    61369: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31163,8 +31164,8 @@ return new ` + this.key + `();
                                 }
                             });
                         v.prototype.sub = v.prototype.subtract, v.prototype.mul = v.prototype.multiply, v.prototype.div = v.prototype.divide, v.prototype.dist = v.prototype.distance, v.prototype.distSq = v.prototype.distanceSq, v.prototype.len = v.prototype.length, v.prototype.lenSq = v.prototype.lengthSq, c.exports = v
-                    }),
-                    60417: (c => {
+                    },
+                    60417: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31174,8 +31175,8 @@ return new ` + this.key + `();
                             return Math.abs(t - o) <= v
                         };
                         c.exports = g
-                    }),
-                    15994: (c => {
+                    },
+                    15994: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31186,8 +31187,8 @@ return new ` + this.key + `();
                             return o + ((t - o) % a + a) % a
                         };
                         c.exports = g
-                    }),
-                    31040: (c => {
+                    },
+                    31040: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31197,8 +31198,8 @@ return new ` + this.key + `();
                             return Math.atan2(a - o, v - t)
                         };
                         c.exports = g
-                    }),
-                    55495: (c => {
+                    },
+                    55495: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31208,8 +31209,8 @@ return new ` + this.key + `();
                             return Math.atan2(o.y - t.y, o.x - t.x)
                         };
                         c.exports = g
-                    }),
-                    128: (c => {
+                    },
+                    128: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31219,8 +31220,8 @@ return new ` + this.key + `();
                             return Math.atan2(o.x - t.x, o.y - t.y)
                         };
                         c.exports = g
-                    }),
-                    41273: (c => {
+                    },
+                    41273: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31230,8 +31231,8 @@ return new ` + this.key + `();
                             return Math.atan2(v - t, a - o)
                         };
                         c.exports = g
-                    }),
-                    1432: ((c, g, t) => {
+                    },
+                    1432: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31242,8 +31243,8 @@ return new ` + this.key + `();
                                 return a > Math.PI && (a -= o.PI2), Math.abs(((a + o.TAU) % o.PI2 - o.PI2) % o.PI2)
                             };
                         c.exports = v
-                    }),
-                    49127: ((c, g, t) => {
+                    },
+                    49127: (c, g, t) => {
                         /**
                          * @author       samme
                          * @copyright    2025 Phaser Studio Inc.
@@ -31254,8 +31255,8 @@ return new ` + this.key + `();
                                 return o(r - a)
                             };
                         c.exports = v
-                    }),
-                    52285: ((c, g, t) => {
+                    },
+                    52285: (c, g, t) => {
                         /**
                          * @author       samme
                          * @copyright    2025 Phaser Studio Inc.
@@ -31268,8 +31269,8 @@ return new ` + this.key + `();
                                 return e > 0 && (e -= v), e
                             };
                         c.exports = a
-                    }),
-                    67317: ((c, g, t) => {
+                    },
+                    67317: (c, g, t) => {
                         /**
                          * @author       samme
                          * @copyright    2025 Phaser Studio Inc.
@@ -31280,8 +31281,8 @@ return new ` + this.key + `();
                                 return o(r - a)
                             };
                         c.exports = v
-                    }),
-                    12407: (c => {
+                    },
+                    12407: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31291,8 +31292,8 @@ return new ` + this.key + `();
                             return t = t % (2 * Math.PI), t >= 0 ? t : t + 2 * Math.PI
                         };
                         c.exports = g
-                    }),
-                    53993: ((c, g, t) => {
+                    },
+                    53993: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       @samme
@@ -31304,8 +31305,8 @@ return new ` + this.key + `();
                                 return o(-Math.PI, Math.PI)
                             };
                         c.exports = v
-                    }),
-                    86564: ((c, g, t) => {
+                    },
+                    86564: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       @samme
@@ -31317,8 +31318,8 @@ return new ` + this.key + `();
                                 return o(-180, 180)
                             };
                         c.exports = v
-                    }),
-                    90154: ((c, g, t) => {
+                    },
+                    90154: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31329,8 +31330,8 @@ return new ` + this.key + `();
                                 return o(a + Math.PI)
                             };
                         c.exports = v
-                    }),
-                    48736: ((c, g, t) => {
+                    },
+                    48736: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31341,8 +31342,8 @@ return new ` + this.key + `();
                                 return i === void 0 && (i = .05), a === r || (Math.abs(r - a) <= i || Math.abs(r - a) >= o.PI2 - i ? a = r : (Math.abs(r - a) > Math.PI && (r < a ? r += o.PI2 : r -= o.PI2), r > a ? a += i : r < a && (a -= i))), a
                             };
                         c.exports = v
-                    }),
-                    61430: (c => {
+                    },
+                    61430: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31355,8 +31356,8 @@ return new ` + this.key + `();
                             return v - a * 360
                         };
                         c.exports = g
-                    }),
-                    86554: ((c, g, t) => {
+                    },
+                    86554: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31367,8 +31368,8 @@ return new ` + this.key + `();
                                 return o(a, -Math.PI, Math.PI)
                             };
                         c.exports = v
-                    }),
-                    30954: ((c, g, t) => {
+                    },
+                    30954: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31379,8 +31380,8 @@ return new ` + this.key + `();
                                 return o(a, -180, 180)
                             };
                         c.exports = v
-                    }),
-                    25588: ((c, g, t) => {
+                    },
+                    25588: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31404,8 +31405,8 @@ return new ` + this.key + `();
                             Wrap: t(86554),
                             WrapDegrees: t(30954)
                         }
-                    }),
-                    36383: (c => {
+                    },
+                    36383: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31422,8 +31423,8 @@ return new ` + this.key + `();
                             MAX_SAFE_INTEGER: Number.MAX_SAFE_INTEGER || 9007199254740991
                         };
                         c.exports = g
-                    }),
-                    20339: (c => {
+                    },
+                    20339: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31435,8 +31436,8 @@ return new ` + this.key + `();
                             return Math.sqrt(r * r + i * i)
                         };
                         c.exports = g
-                    }),
-                    52816: (c => {
+                    },
+                    52816: c => {
                         /**
                          * @author       samme
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31448,8 +31449,8 @@ return new ` + this.key + `();
                             return Math.sqrt(v * v + a * a)
                         };
                         c.exports = g
-                    }),
-                    64559: (c => {
+                    },
+                    64559: c => {
                         /**
                          * @author       samme
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31461,8 +31462,8 @@ return new ` + this.key + `();
                             return v * v + a * a
                         };
                         c.exports = g
-                    }),
-                    82340: (c => {
+                    },
+                    82340: c => {
                         /**
                          * @author       samme
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31472,8 +31473,8 @@ return new ` + this.key + `();
                             return Math.max(Math.abs(t - v), Math.abs(o - a))
                         };
                         c.exports = g
-                    }),
-                    14390: (c => {
+                    },
+                    14390: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31483,8 +31484,8 @@ return new ` + this.key + `();
                             return r === void 0 && (r = 2), Math.sqrt(Math.pow(v - t, r) + Math.pow(a - o, r))
                         };
                         c.exports = g
-                    }),
-                    2243: (c => {
+                    },
+                    2243: c => {
                         /**
                          * @author       samme
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31494,8 +31495,8 @@ return new ` + this.key + `();
                             return Math.abs(t - v) + Math.abs(o - a)
                         };
                         c.exports = g
-                    }),
-                    89774: (c => {
+                    },
+                    89774: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31507,8 +31508,8 @@ return new ` + this.key + `();
                             return r * r + i * i
                         };
                         c.exports = g
-                    }),
-                    50994: ((c, g, t) => {
+                    },
+                    50994: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31523,8 +31524,8 @@ return new ` + this.key + `();
                             Snake: t(2243),
                             Squared: t(89774)
                         }
-                    }),
-                    62640: ((c, g, t) => {
+                    },
+                    62640: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31591,8 +31592,8 @@ return new ` + this.key + `();
                             "Back.easeInOut": o.InOut,
                             "Bounce.easeInOut": v.InOut
                         }
-                    }),
-                    1639: (c => {
+                    },
+                    1639: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31602,8 +31603,8 @@ return new ` + this.key + `();
                             return o === void 0 && (o = 1.70158), t * t * ((o + 1) * t - o)
                         };
                         c.exports = g
-                    }),
-                    50099: (c => {
+                    },
+                    50099: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31615,8 +31616,8 @@ return new ` + this.key + `();
                             return (t *= 2) < 1 ? .5 * (t * t * ((v + 1) * t - v)) : .5 * ((t -= 2) * t * ((v + 1) * t + v) + 2)
                         };
                         c.exports = g
-                    }),
-                    41286: (c => {
+                    },
+                    41286: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31626,8 +31627,8 @@ return new ` + this.key + `();
                             return o === void 0 && (o = 1.70158), --t * t * ((o + 1) * t + o) + 1
                         };
                         c.exports = g
-                    }),
-                    54178: ((c, g, t) => {
+                    },
+                    54178: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31638,8 +31639,8 @@ return new ` + this.key + `();
                             Out: t(41286),
                             InOut: t(50099)
                         }
-                    }),
-                    59590: (c => {
+                    },
+                    59590: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31649,8 +31650,8 @@ return new ` + this.key + `();
                             return t = 1 - t, t < .36363636363636365 ? 1 - 7.5625 * t * t : t < .7272727272727273 ? 1 - (7.5625 * (t -= .5454545454545454) * t + .75) : t < .9090909090909091 ? 1 - (7.5625 * (t -= .8181818181818182) * t + .9375) : 1 - (7.5625 * (t -= .9545454545454546) * t + .984375)
                         };
                         c.exports = g
-                    }),
-                    41788: (c => {
+                    },
+                    41788: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31661,8 +31662,8 @@ return new ` + this.key + `();
                             return t < .5 ? (t = 1 - t * 2, o = !0) : t = t * 2 - 1, t < .36363636363636365 ? t = 7.5625 * t * t : t < .7272727272727273 ? t = 7.5625 * (t -= .5454545454545454) * t + .75 : t < .9090909090909091 ? t = 7.5625 * (t -= .8181818181818182) * t + .9375 : t = 7.5625 * (t -= .9545454545454546) * t + .984375, o ? (1 - t) * .5 : t * .5 + .5
                         };
                         c.exports = g
-                    }),
-                    69905: (c => {
+                    },
+                    69905: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31672,8 +31673,8 @@ return new ` + this.key + `();
                             return t < .36363636363636365 ? 7.5625 * t * t : t < .7272727272727273 ? 7.5625 * (t -= .5454545454545454) * t + .75 : t < .9090909090909091 ? 7.5625 * (t -= .8181818181818182) * t + .9375 : 7.5625 * (t -= .9545454545454546) * t + .984375
                         };
                         c.exports = g
-                    }),
-                    41521: ((c, g, t) => {
+                    },
+                    41521: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31684,8 +31685,8 @@ return new ` + this.key + `();
                             Out: t(69905),
                             InOut: t(41788)
                         }
-                    }),
-                    91861: (c => {
+                    },
+                    91861: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31695,8 +31696,8 @@ return new ` + this.key + `();
                             return 1 - Math.sqrt(1 - t * t)
                         };
                         c.exports = g
-                    }),
-                    4177: (c => {
+                    },
+                    4177: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31706,8 +31707,8 @@ return new ` + this.key + `();
                             return (t *= 2) < 1 ? -.5 * (Math.sqrt(1 - t * t) - 1) : .5 * (Math.sqrt(1 - (t -= 2) * t) + 1)
                         };
                         c.exports = g
-                    }),
-                    57512: (c => {
+                    },
+                    57512: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31717,8 +31718,8 @@ return new ` + this.key + `();
                             return Math.sqrt(1 - --t * t)
                         };
                         c.exports = g
-                    }),
-                    79980: ((c, g, t) => {
+                    },
+                    79980: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31729,8 +31730,8 @@ return new ` + this.key + `();
                             Out: t(57512),
                             InOut: t(4177)
                         }
-                    }),
-                    51150: (c => {
+                    },
+                    51150: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31740,8 +31741,8 @@ return new ` + this.key + `();
                             return t * t * t
                         };
                         c.exports = g
-                    }),
-                    82820: (c => {
+                    },
+                    82820: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31751,8 +31752,8 @@ return new ` + this.key + `();
                             return (t *= 2) < 1 ? .5 * t * t * t : .5 * ((t -= 2) * t * t + 2)
                         };
                         c.exports = g
-                    }),
-                    35033: (c => {
+                    },
+                    35033: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31762,8 +31763,8 @@ return new ` + this.key + `();
                             return --t * t * t + 1
                         };
                         c.exports = g
-                    }),
-                    85433: ((c, g, t) => {
+                    },
+                    85433: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31774,8 +31775,8 @@ return new ` + this.key + `();
                             Out: t(35033),
                             InOut: t(82820)
                         }
-                    }),
-                    69965: (c => {
+                    },
+                    69965: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31788,8 +31789,8 @@ return new ` + this.key + `();
                             return o < 1 ? o = 1 : a = v * Math.asin(1 / o) / (2 * Math.PI), -(o * Math.pow(2, 10 * (t -= 1)) * Math.sin((t - a) * (2 * Math.PI) / v))
                         };
                         c.exports = g
-                    }),
-                    50665: (c => {
+                    },
+                    50665: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31802,8 +31803,8 @@ return new ` + this.key + `();
                             return o < 1 ? o = 1 : a = v * Math.asin(1 / o) / (2 * Math.PI), (t *= 2) < 1 ? -.5 * (o * Math.pow(2, 10 * (t -= 1)) * Math.sin((t - a) * (2 * Math.PI) / v)) : o * Math.pow(2, -10 * (t -= 1)) * Math.sin((t - a) * (2 * Math.PI) / v) * .5 + 1
                         };
                         c.exports = g
-                    }),
-                    7744: (c => {
+                    },
+                    7744: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31816,8 +31817,8 @@ return new ` + this.key + `();
                             return o < 1 ? o = 1 : a = v * Math.asin(1 / o) / (2 * Math.PI), o * Math.pow(2, -10 * t) * Math.sin((t - a) * (2 * Math.PI) / v) + 1
                         };
                         c.exports = g
-                    }),
-                    99140: ((c, g, t) => {
+                    },
+                    99140: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31828,8 +31829,8 @@ return new ` + this.key + `();
                             Out: t(7744),
                             InOut: t(50665)
                         }
-                    }),
-                    24590: (c => {
+                    },
+                    24590: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31839,8 +31840,8 @@ return new ` + this.key + `();
                             return Math.pow(2, 10 * (t - 1)) - .001
                         };
                         c.exports = g
-                    }),
-                    87844: (c => {
+                    },
+                    87844: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31850,8 +31851,8 @@ return new ` + this.key + `();
                             return (t *= 2) < 1 ? .5 * Math.pow(2, 10 * (t - 1)) : .5 * (2 - Math.pow(2, -10 * (t - 1)))
                         };
                         c.exports = g
-                    }),
-                    89433: (c => {
+                    },
+                    89433: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31861,8 +31862,8 @@ return new ` + this.key + `();
                             return 1 - Math.pow(2, -10 * t)
                         };
                         c.exports = g
-                    }),
-                    48857: ((c, g, t) => {
+                    },
+                    48857: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31873,8 +31874,8 @@ return new ` + this.key + `();
                             Out: t(89433),
                             InOut: t(87844)
                         }
-                    }),
-                    48820: ((c, g, t) => {
+                    },
+                    48820: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31894,8 +31895,8 @@ return new ` + this.key + `();
                             Sine: t(82500),
                             Stepped: t(49752)
                         }
-                    }),
-                    7147: (c => {
+                    },
+                    7147: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31905,16 +31906,16 @@ return new ` + this.key + `();
                             return t
                         };
                         c.exports = g
-                    }),
-                    81596: ((c, g, t) => {
+                    },
+                    81596: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = t(7147)
-                    }),
-                    34826: (c => {
+                    },
+                    34826: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31924,8 +31925,8 @@ return new ` + this.key + `();
                             return t * t
                         };
                         c.exports = g
-                    }),
-                    20544: (c => {
+                    },
+                    20544: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31935,8 +31936,8 @@ return new ` + this.key + `();
                             return (t *= 2) < 1 ? .5 * t * t : -.5 * (--t * (t - 2) - 1)
                         };
                         c.exports = g
-                    }),
-                    92029: (c => {
+                    },
+                    92029: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31946,8 +31947,8 @@ return new ` + this.key + `();
                             return t * (2 - t)
                         };
                         c.exports = g
-                    }),
-                    59133: ((c, g, t) => {
+                    },
+                    59133: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31958,8 +31959,8 @@ return new ` + this.key + `();
                             Out: t(92029),
                             InOut: t(20544)
                         }
-                    }),
-                    64413: (c => {
+                    },
+                    64413: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31969,8 +31970,8 @@ return new ` + this.key + `();
                             return t * t * t * t
                         };
                         c.exports = g
-                    }),
-                    78137: (c => {
+                    },
+                    78137: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31980,8 +31981,8 @@ return new ` + this.key + `();
                             return (t *= 2) < 1 ? .5 * t * t * t * t : -.5 * ((t -= 2) * t * t * t - 2)
                         };
                         c.exports = g
-                    }),
-                    45840: (c => {
+                    },
+                    45840: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -31991,8 +31992,8 @@ return new ` + this.key + `();
                             return 1 - --t * t * t * t
                         };
                         c.exports = g
-                    }),
-                    98516: ((c, g, t) => {
+                    },
+                    98516: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32003,8 +32004,8 @@ return new ` + this.key + `();
                             Out: t(45840),
                             InOut: t(78137)
                         }
-                    }),
-                    87745: (c => {
+                    },
+                    87745: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32014,8 +32015,8 @@ return new ` + this.key + `();
                             return t * t * t * t * t
                         };
                         c.exports = g
-                    }),
-                    16509: (c => {
+                    },
+                    16509: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32025,8 +32026,8 @@ return new ` + this.key + `();
                             return (t *= 2) < 1 ? .5 * t * t * t * t * t : .5 * ((t -= 2) * t * t * t * t + 2)
                         };
                         c.exports = g
-                    }),
-                    17868: (c => {
+                    },
+                    17868: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32036,8 +32037,8 @@ return new ` + this.key + `();
                             return --t * t * t * t * t + 1
                         };
                         c.exports = g
-                    }),
-                    35248: ((c, g, t) => {
+                    },
+                    35248: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32048,8 +32049,8 @@ return new ` + this.key + `();
                             Out: t(17868),
                             InOut: t(16509)
                         }
-                    }),
-                    80461: (c => {
+                    },
+                    80461: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32059,8 +32060,8 @@ return new ` + this.key + `();
                             return t === 0 ? 0 : t === 1 ? 1 : 1 - Math.cos(t * Math.PI / 2)
                         };
                         c.exports = g
-                    }),
-                    34025: (c => {
+                    },
+                    34025: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32070,8 +32071,8 @@ return new ` + this.key + `();
                             return t === 0 ? 0 : t === 1 ? 1 : .5 * (1 - Math.cos(Math.PI * t))
                         };
                         c.exports = g
-                    }),
-                    52768: (c => {
+                    },
+                    52768: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32081,8 +32082,8 @@ return new ` + this.key + `();
                             return t === 0 ? 0 : t === 1 ? 1 : Math.sin(t * Math.PI / 2)
                         };
                         c.exports = g
-                    }),
-                    82500: ((c, g, t) => {
+                    },
+                    82500: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32093,8 +32094,8 @@ return new ` + this.key + `();
                             Out: t(52768),
                             InOut: t(34025)
                         }
-                    }),
-                    72251: (c => {
+                    },
+                    72251: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32104,16 +32105,16 @@ return new ` + this.key + `();
                             return o === void 0 && (o = 1), t <= 0 ? 0 : t >= 1 ? 1 : ((o * t | 0) + 1) * (1 / o)
                         };
                         c.exports = g
-                    }),
-                    49752: ((c, g, t) => {
+                    },
+                    49752: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = t(72251)
-                    }),
-                    75698: (c => {
+                    },
+                    75698: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32123,8 +32124,8 @@ return new ` + this.key + `();
                             return o === void 0 && (o = 1e-4), Math.ceil(t - o)
                         };
                         c.exports = g
-                    }),
-                    43855: (c => {
+                    },
+                    43855: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32134,8 +32135,8 @@ return new ` + this.key + `();
                             return v === void 0 && (v = 1e-4), Math.abs(t - o) < v
                         };
                         c.exports = g
-                    }),
-                    25777: (c => {
+                    },
+                    25777: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32145,8 +32146,8 @@ return new ` + this.key + `();
                             return o === void 0 && (o = 1e-4), Math.floor(t + o)
                         };
                         c.exports = g
-                    }),
-                    5470: (c => {
+                    },
+                    5470: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32156,8 +32157,8 @@ return new ` + this.key + `();
                             return v === void 0 && (v = 1e-4), t > o - v
                         };
                         c.exports = g
-                    }),
-                    94977: (c => {
+                    },
+                    94977: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32167,8 +32168,8 @@ return new ` + this.key + `();
                             return v === void 0 && (v = 1e-4), t < o + v
                         };
                         c.exports = g
-                    }),
-                    48379: ((c, g, t) => {
+                    },
+                    48379: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32181,8 +32182,8 @@ return new ` + this.key + `();
                             GreaterThan: t(5470),
                             LessThan: t(94977)
                         }
-                    }),
-                    75508: ((c, g, t) => {
+                    },
+                    75508: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32247,8 +32248,8 @@ return new ` + this.key + `();
                                 RotateVec3: t(72678)
                             };
                         a = v(!1, a, o), c.exports = a
-                    }),
-                    89318: ((c, g, t) => {
+                    },
+                    89318: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32260,8 +32261,8 @@ return new ` + this.key + `();
                                 return i
                             };
                         c.exports = v
-                    }),
-                    77259: ((c, g, t) => {
+                    },
+                    77259: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32275,8 +32276,8 @@ return new ` + this.key + `();
                                 return a[0] === a[i] ? (r < 0 && (s = Math.floor(e = i * (1 + r))), o(e - s, a[(s - 1 + i) % i], a[s], a[(s + 1) % i], a[(s + 2) % i])) : r < 0 ? a[0] - (o(-e, a[0], a[0], a[1], a[1]) - a[0]) : r > 1 ? a[i] - (o(e - i, a[i], a[i], a[i - 1], a[i - 1]) - a[i]) : o(e - s, a[s ? s - 1 : 0], a[s], a[i < s + 1 ? i : s + 1], a[i < s + 2 ? i : s + 2])
                             };
                         c.exports = v
-                    }),
-                    36316: (c => {
+                    },
+                    36316: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32303,8 +32304,8 @@ return new ` + this.key + `();
                             return g(r, i) + t(r, e) + o(r, s) + v(r, h)
                         };
                         c.exports = a
-                    }),
-                    28392: ((c, g, t) => {
+                    },
+                    28392: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32318,8 +32319,8 @@ return new ` + this.key + `();
                                 return r < 0 ? o(a[0], a[1], e) : r > 1 ? o(a[i], a[i - 1], i - e) : o(a[s], a[s + 1 > i ? i : s + 1], e - s)
                             };
                         c.exports = v
-                    }),
-                    32112: (c => {
+                    },
+                    32112: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32341,8 +32342,8 @@ return new ` + this.key + `();
                             return g(a, r) + t(a, i) + o(a, e)
                         };
                         c.exports = v
-                    }),
-                    47235: ((c, g, t) => {
+                    },
+                    47235: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32353,8 +32354,8 @@ return new ` + this.key + `();
                                 return r + (i - r) * o(a, 0, 1)
                             };
                         c.exports = v
-                    }),
-                    50178: ((c, g, t) => {
+                    },
+                    50178: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32365,8 +32366,8 @@ return new ` + this.key + `();
                                 return r + (i - r) * o(a, 0, 1)
                             };
                         c.exports = v
-                    }),
-                    38289: ((c, g, t) => {
+                    },
+                    38289: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32381,8 +32382,8 @@ return new ` + this.key + `();
                             SmoothStep: t(47235),
                             SmootherStep: t(50178)
                         }
-                    }),
-                    98439: (c => {
+                    },
+                    98439: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32393,8 +32394,8 @@ return new ` + this.key + `();
                             return 1 << Math.ceil(o)
                         };
                         c.exports = g
-                    }),
-                    50030: (c => {
+                    },
+                    50030: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32404,8 +32405,8 @@ return new ` + this.key + `();
                             return t > 0 && (t & t - 1) === 0 && o > 0 && (o & o - 1) === 0
                         };
                         c.exports = g
-                    }),
-                    81230: (c => {
+                    },
+                    81230: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32415,8 +32416,8 @@ return new ` + this.key + `();
                             return t > 0 && (t & t - 1) === 0
                         };
                         c.exports = g
-                    }),
-                    49001: ((c, g, t) => {
+                    },
+                    49001: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32427,8 +32428,8 @@ return new ` + this.key + `();
                             IsSize: t(50030),
                             IsValue: t(81230)
                         }
-                    }),
-                    28453: ((c, g, t) => {
+                    },
+                    28453: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32517,8 +32518,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = v
-                    }),
-                    63448: (c => {
+                    },
+                    63448: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32528,8 +32529,8 @@ return new ` + this.key + `();
                             return v === void 0 && (v = 0), o === 0 ? t : (t -= v, t = o * Math.ceil(t / o), a ? (v + t) / o : v + t)
                         };
                         c.exports = g
-                    }),
-                    56583: (c => {
+                    },
+                    56583: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32539,8 +32540,8 @@ return new ` + this.key + `();
                             return v === void 0 && (v = 0), o === 0 ? t : (t -= v, t = o * Math.floor(t / o), a ? (v + t) / o : v + t)
                         };
                         c.exports = g
-                    }),
-                    77720: (c => {
+                    },
+                    77720: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32550,8 +32551,8 @@ return new ` + this.key + `();
                             return v === void 0 && (v = 0), o === 0 ? t : (t -= v, t = o * Math.round(t / o), a ? (v + t) / o : v + t)
                         };
                         c.exports = g
-                    }),
-                    73697: ((c, g, t) => {
+                    },
+                    73697: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32562,8 +32563,8 @@ return new ` + this.key + `();
                             Floor: t(56583),
                             To: t(77720)
                         }
-                    }),
-                    85454: ((c, g, t) => {
+                    },
+                    85454: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32608,8 +32609,8 @@ return new ` + this.key + `();
                                 Utils: t(91799)
                             };
                         a.Sound = t(23717), a = v(!1, a, o), c.exports = a, t.g.Phaser = a
-                    }),
-                    71289: ((c, g, t) => {
+                    },
+                    71289: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32626,8 +32627,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    86689: ((c, g, t) => {
+                    },
+                    86689: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32754,8 +32755,8 @@ return new ` + this.key + `();
                                 }
                             });
                         l.register("ArcadePhysics", p, "arcadePhysics"), c.exports = p
-                    }),
-                    13759: ((c, g, t) => {
+                    },
+                    13759: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -32772,8 +32773,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    37742: ((c, g, t) => {
+                    },
+                    37742: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33140,8 +33141,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = l
-                    }),
-                    79342: ((c, g, t) => {
+                    },
+                    79342: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33163,8 +33164,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = v
-                    }),
-                    66022: ((c, g, t) => {
+                    },
+                    66022: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33227,8 +33228,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = n
-                    }),
-                    79599: (c => {
+                    },
+                    79599: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33242,8 +33243,8 @@ return new ` + this.key + `();
                             return o
                         };
                         c.exports = g
-                    }),
-                    64897: ((c, g, t) => {
+                    },
+                    64897: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33256,8 +33257,8 @@ return new ` + this.key + `();
                                 return a._dx === 0 && r._dx === 0 ? (a.embedded = !0, r.embedded = !0) : a._dx > r._dx ? (s = a.right - r.x, s > h && !i || a.checkCollision.right === !1 || r.checkCollision.left === !1 ? s = 0 : (a.touching.none = !1, a.touching.right = !0, r.touching.none = !1, r.touching.left = !0, r.physicsType === o.STATIC_BODY && !i && (a.blocked.none = !1, a.blocked.right = !0), a.physicsType === o.STATIC_BODY && !i && (r.blocked.none = !1, r.blocked.left = !0))) : a._dx < r._dx && (s = a.x - r.width - r.x, -s > h && !i || a.checkCollision.left === !1 || r.checkCollision.right === !1 ? s = 0 : (a.touching.none = !1, a.touching.left = !0, r.touching.none = !1, r.touching.right = !0, r.physicsType === o.STATIC_BODY && !i && (a.blocked.none = !1, a.blocked.left = !0), a.physicsType === o.STATIC_BODY && !i && (r.blocked.none = !1, r.blocked.right = !0))), a.overlapX = s, r.overlapX = s, s
                             };
                         c.exports = v
-                    }),
-                    45170: ((c, g, t) => {
+                    },
+                    45170: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33270,8 +33271,8 @@ return new ` + this.key + `();
                                 return a._dy === 0 && r._dy === 0 ? (a.embedded = !0, r.embedded = !0) : a._dy > r._dy ? (s = a.bottom - r.y, s > h && !i || a.checkCollision.down === !1 || r.checkCollision.up === !1 ? s = 0 : (a.touching.none = !1, a.touching.down = !0, r.touching.none = !1, r.touching.up = !0, r.physicsType === o.STATIC_BODY && !i && (a.blocked.none = !1, a.blocked.down = !0), a.physicsType === o.STATIC_BODY && !i && (r.blocked.none = !1, r.blocked.up = !0))) : a._dy < r._dy && (s = a.y - r.bottom, -s > h && !i || a.checkCollision.up === !1 || r.checkCollision.down === !1 ? s = 0 : (a.touching.none = !1, a.touching.up = !0, r.touching.none = !1, r.touching.down = !0, r.physicsType === o.STATIC_BODY && !i && (a.blocked.none = !1, a.blocked.up = !0), a.physicsType === o.STATIC_BODY && !i && (r.blocked.none = !1, r.blocked.down = !0))), a.overlapY = s, r.overlapY = s, s
                             };
                         c.exports = v
-                    }),
-                    60758: ((c, g, t) => {
+                    },
+                    60758: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33357,8 +33358,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = h
-                    }),
-                    3017: (c => {
+                    },
+                    3017: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33411,8 +33412,8 @@ return new ` + this.key + `();
                             RunImmovableBody1: P,
                             RunImmovableBody2: R
                         }
-                    }),
-                    47962: (c => {
+                    },
+                    47962: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33465,8 +33466,8 @@ return new ` + this.key + `();
                             RunImmovableBody1: P,
                             RunImmovableBody2: R
                         }
-                    }),
-                    14087: ((c, g, t) => {
+                    },
+                    14087: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33483,8 +33484,8 @@ return new ` + this.key + `();
                                 return !n && !l ? u > 0 ? !0 : v.Check() : (n ? v.RunImmovableBody1(u) : l && v.RunImmovableBody2(u), !0)
                             };
                         c.exports = a
-                    }),
-                    89936: ((c, g, t) => {
+                    },
+                    89936: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33501,8 +33502,8 @@ return new ` + this.key + `();
                                 return !n && !l ? u > 0 ? !0 : v.Check() : (n ? v.RunImmovableBody1(u) : l && v.RunImmovableBody2(u), !0)
                             };
                         c.exports = a
-                    }),
-                    95829: (c => {
+                    },
+                    95829: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33512,8 +33513,8 @@ return new ` + this.key + `();
                             return o === void 0 && (o = {}), o.none = t, o.up = !1, o.down = !1, o.left = !1, o.right = !1, t || (o.up = !0, o.down = !0, o.left = !0, o.right = !0), o
                         };
                         c.exports = g
-                    }),
-                    72624: ((c, g, t) => {
+                    },
+                    72624: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33655,8 +33656,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = h
-                    }),
-                    71464: ((c, g, t) => {
+                    },
+                    71464: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33700,8 +33701,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = h
-                    }),
-                    82248: ((c, g, t) => {
+                    },
+                    82248: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -33973,8 +33974,8 @@ return new ` + this.key + `();
                                             zt = Math.sqrt(Math.pow(Kt, 2) + Math.pow(jt, 2)),
                                             Zt = (Q.x - J.x) / zt || 0,
                                             Qt = (Q.y - J.y) / zt || 0,
-                                            ee = 2 * (et.x * Zt + et.y * Qt - _.x * Zt - _.y * Qt) / (B.mass + U.mass);
-                                        ($ || k || !B.pushable || !U.pushable) && (ee *= 2), !$ && B.pushable && (et.x = et.x - ee / B.mass * Zt, et.y = et.y - ee / B.mass * Qt, et.multiply(B.bounce)), !k && U.pushable && (_.x = _.x + ee / U.mass * Zt, _.y = _.y + ee / U.mass * Qt, _.multiply(U.bounce)), !$ && !k && (bt *= .5, Wt *= .5), (!$ || B.pushable || Gt) && (B.x -= bt, B.y -= Wt, B.updateCenter()), (!k || U.pushable || Gt) && (U.x += bt, U.y += Wt, U.updateCenter()), Bt.result = !0
+                                            ie = 2 * (et.x * Zt + et.y * Qt - _.x * Zt - _.y * Qt) / (B.mass + U.mass);
+                                        ($ || k || !B.pushable || !U.pushable) && (ie *= 2), !$ && B.pushable && (et.x = et.x - ie / B.mass * Zt, et.y = et.y - ie / B.mass * Qt, et.multiply(B.bounce)), !k && U.pushable && (_.x = _.x + ie / U.mass * Zt, _.y = _.y + ie / U.mass * Qt, _.multiply(U.bounce)), !$ && !k && (bt *= .5, Wt *= .5), (!$ || B.pushable || Gt) && (B.x -= bt, B.y -= Wt, B.updateCenter()), (!k || U.pushable || Gt) && (U.x += bt, U.y += Wt, U.updateCenter()), Bt.result = !0
                                     } else !$ && (B.pushable || Gt) && (B.x -= bt, B.y -= Wt, B.updateCenter()), !k && (U.pushable || Gt) && (U.x += bt, U.y += Wt, U.updateCenter()), Bt.x = void 0, Bt.y = void 0;
                                     return Bt
                                 },
@@ -34113,8 +34114,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = X
-                    }),
-                    1093: (c => {
+                    },
+                    1093: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34132,8 +34133,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    59023: (c => {
+                    },
+                    59023: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34151,8 +34152,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    62069: (c => {
+                    },
+                    62069: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34173,8 +34174,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    78389: ((c, g, t) => {
+                    },
+                    78389: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34208,8 +34209,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = v
-                    }),
-                    87118: (c => {
+                    },
+                    87118: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34248,8 +34249,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    52819: (c => {
+                    },
+                    52819: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34270,8 +34271,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    4074: (c => {
+                    },
+                    4074: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34292,8 +34293,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    40831: (c => {
+                    },
+                    40831: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34311,8 +34312,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    26775: (c => {
+                    },
+                    26775: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34330,8 +34331,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    9437: (c => {
+                    },
+                    9437: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34343,8 +34344,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    30621: (c => {
+                    },
+                    30621: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34356,8 +34357,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    72441: ((c, g, t) => {
+                    },
+                    72441: (c, g, t) => {
                         var o = t(47956),
                             v = t(96503),
                             a = t(2044),
@@ -34372,8 +34373,8 @@ return new ` + this.key + `();
                                 return m
                             };
                         c.exports = i
-                    }),
-                    47956: (c => {
+                    },
+                    47956: c => {
                         var g = function(t, o, v, a, r, i, e) {
                             i === void 0 && (i = !0), e === void 0 && (e = !1);
                             var s = [],
@@ -34401,8 +34402,8 @@ return new ` + this.key + `();
                             return h.concat(s)
                         };
                         c.exports = g
-                    }),
-                    62121: (c => {
+                    },
+                    62121: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34414,8 +34415,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    29384: (c => {
+                    },
+                    29384: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34436,8 +34437,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    15098: (c => {
+                    },
+                    15098: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34458,8 +34459,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    92209: ((c, g, t) => {
+                    },
+                    92209: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34483,8 +34484,8 @@ return new ` + this.key + `();
                             Size: t(29384),
                             Velocity: t(15098)
                         }
-                    }),
-                    37747: (c => {
+                    },
+                    37747: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34502,72 +34503,72 @@ return new ` + this.key + `();
                             FACING_RIGHT: 14
                         };
                         c.exports = g
-                    }),
-                    20009: (c => {
+                    },
+                    20009: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "collide"
-                    }),
-                    36768: (c => {
+                    },
+                    36768: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "overlap"
-                    }),
-                    60473: (c => {
+                    },
+                    60473: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pause"
-                    }),
-                    89954: (c => {
+                    },
+                    89954: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "resume"
-                    }),
-                    61804: (c => {
+                    },
+                    61804: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "tilecollide"
-                    }),
-                    7161: (c => {
+                    },
+                    7161: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "tileoverlap"
-                    }),
-                    34689: (c => {
+                    },
+                    34689: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "worldbounds"
-                    }),
-                    16006: (c => {
+                    },
+                    16006: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "worldstep"
-                    }),
-                    63012: ((c, g, t) => {
+                    },
+                    63012: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34583,8 +34584,8 @@ return new ` + this.key + `();
                             WORLD_BOUNDS: t(34689),
                             WORLD_STEP: t(16006)
                         }
-                    }),
-                    27064: ((c, g, t) => {
+                    },
+                    27064: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34613,8 +34614,8 @@ return new ` + this.key + `();
                                 World: t(82248)
                             };
                         a = v(!1, a, o), c.exports = a
-                    }),
-                    96602: (c => {
+                    },
+                    96602: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34624,8 +34625,8 @@ return new ` + this.key + `();
                             return t.collisionCallback ? !t.collisionCallback.call(t.collisionCallbackContext, o, t) : t.layer.callbacks[t.index] ? !t.layer.callbacks[t.index].callback.call(t.layer.callbacks[t.index].callbackContext, o, t) : !0
                         };
                         c.exports = g
-                    }),
-                    36294: (c => {
+                    },
+                    36294: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34635,8 +34636,8 @@ return new ` + this.key + `();
                             o < 0 ? (t.blocked.none = !1, t.blocked.left = !0) : o > 0 && (t.blocked.none = !1, t.blocked.right = !0), t.position.x -= o, t.updateCenter(), t.bounce.x === 0 ? t.velocity.x = 0 : t.velocity.x = -t.velocity.x * t.bounce.x
                         };
                         c.exports = g
-                    }),
-                    67013: (c => {
+                    },
+                    67013: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34646,8 +34647,8 @@ return new ` + this.key + `();
                             o < 0 ? (t.blocked.none = !1, t.blocked.up = !0) : o > 0 && (t.blocked.none = !1, t.blocked.down = !0), t.position.y -= o, t.updateCenter(), t.bounce.y === 0 ? t.velocity.y = 0 : t.velocity.y = -t.velocity.y * t.bounce.y
                         };
                         c.exports = g
-                    }),
-                    40012: ((c, g, t) => {
+                    },
+                    40012: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34678,8 +34679,8 @@ return new ` + this.key + `();
                                 return S !== 0 || C !== 0
                             };
                         c.exports = r
-                    }),
-                    21329: ((c, g, t) => {
+                    },
+                    21329: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34695,8 +34696,8 @@ return new ` + this.key + `();
                                 return h || (l = !0, u = !0, f = !0, d = !0), a.deltaX() < 0 && d && a.checkCollision.left ? u && a.x < e && (n = a.x - e, n < -s && (n = 0)) : a.deltaX() > 0 && f && a.checkCollision.right && l && a.right > i && (n = a.right - i, n > s && (n = 0)), n !== 0 && (a.customSeparateX ? a.overlapX = n : o(a, n)), n
                             };
                         c.exports = v
-                    }),
-                    53442: ((c, g, t) => {
+                    },
+                    53442: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34712,8 +34713,8 @@ return new ` + this.key + `();
                                 return h || (l = !0, u = !0, f = !0, d = !0), a.deltaY() < 0 && d && a.checkCollision.up ? u && a.y < e && (n = a.y - e, n < -s && (n = 0)) : a.deltaY() > 0 && f && a.checkCollision.down && l && a.bottom > i && (n = a.bottom - i, n > s && (n = 0)), n !== 0 && (a.customSeparateY ? a.overlapY = n : o(a, n)), n
                             };
                         c.exports = v
-                    }),
-                    2483: (c => {
+                    },
+                    2483: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34723,8 +34724,8 @@ return new ` + this.key + `();
                             return !(o.right <= t.left || o.bottom <= t.top || o.position.x >= t.right || o.position.y >= t.bottom)
                         };
                         c.exports = g
-                    }),
-                    55173: ((c, g, t) => {
+                    },
+                    55173: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34740,8 +34741,8 @@ return new ` + this.key + `();
                             TileIntersectsBody: t(2483)
                         };
                         c.exports = o
-                    }),
-                    44563: ((c, g, t) => {
+                    },
+                    44563: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34751,8 +34752,8 @@ return new ` + this.key + `();
                             Arcade: t(27064),
                             Matter: t(3875)
                         }
-                    }),
-                    68174: ((c, g, t) => {
+                    },
+                    68174: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34847,8 +34848,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = a
-                    }),
-                    19933: ((c, g, t) => {
+                    },
+                    19933: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -34856,8 +34857,8 @@ return new ` + this.key + `();
                          */
                         var o = t(6790);
                         o.Body = t(22562), o.Composite = t(69351), o.World = t(4372), o.Collision = t(52284), o.Detector = t(81388), o.Pairs = t(99561), o.Pair = t(4506), o.Query = t(73296), o.Resolver = t(66272), o.Constraint = t(48140), o.Common = t(53402), o.Engine = t(48413), o.Events = t(35810), o.Sleeping = t(53614), o.Plugin = t(73832), o.Bodies = t(66280), o.Composites = t(74116), o.Axes = t(66615), o.Bounds = t(15647), o.Svg = t(74058), o.Vector = t(31725), o.Vertices = t(41598), o.World.add = o.Composite.add, o.World.remove = o.Composite.remove, o.World.addComposite = o.Composite.addComposite, o.World.addBody = o.Composite.addBody, o.World.addConstraint = o.Composite.addConstraint, o.World.clear = o.Composite.clear, c.exports = o
-                    }),
-                    28137: ((c, g, t) => {
+                    },
+                    28137: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -35002,8 +35003,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = p
-                    }),
-                    75803: ((c, g, t) => {
+                    },
+                    75803: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -35043,8 +35044,8 @@ return new ` + this.key + `();
                             return s
                         };
                         c.exports = i
-                    }),
-                    23181: ((c, g, t) => {
+                    },
+                    23181: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -35067,8 +35068,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = h
-                    }),
-                    42045: ((c, g, t) => {
+                    },
+                    42045: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -35328,8 +35329,8 @@ return new ` + this.key + `();
                             }
                         });
                         R.register("MatterPhysics", H, "matterPhysics"), c.exports = H
-                    }),
-                    34803: ((c, g, t) => {
+                    },
+                    34803: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -35353,8 +35354,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = n
-                    }),
-                    73834: ((c, g, t) => {
+                    },
+                    73834: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -35443,8 +35444,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = l
-                    }),
-                    19496: ((c, g, t) => {
+                    },
+                    19496: (c, g, t) => {
                         /**
                          * @author       Joachim Grill <joachim@codeandweb.com>
                          * @author       Richard Davey <rich@phaser.io>
@@ -35492,8 +35493,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = e
-                    }),
-                    85791: ((c, g, t) => {
+                    },
+                    85791: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -35522,8 +35523,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = a
-                    }),
-                    98713: ((c, g, t) => {
+                    },
+                    98713: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -35618,8 +35619,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = f
-                    }),
-                    68243: ((c, g, t) => {
+                    },
+                    68243: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36117,8 +36118,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = x
-                    }),
-                    70410: (c => {
+                    },
+                    70410: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36130,8 +36131,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    66968: (c => {
+                    },
+                    66968: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36170,8 +36171,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    51607: ((c, g, t) => {
+                    },
+                    51607: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36215,8 +36216,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = v
-                    }),
-                    5436: (c => {
+                    },
+                    5436: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36234,8 +36235,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    39858: (c => {
+                    },
+                    39858: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36247,8 +36248,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    37302: ((c, g, t) => {
+                    },
+                    37302: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36270,8 +36271,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = a
-                    }),
-                    39132: (c => {
+                    },
+                    39132: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36286,8 +36287,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    57772: ((c, g, t) => {
+                    },
+                    57772: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36400,8 +36401,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = h
-                    }),
-                    38083: ((c, g, t) => {
+                    },
+                    38083: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36443,8 +36444,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = r
-                    }),
-                    90556: ((c, g, t) => {
+                    },
+                    90556: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36460,8 +36461,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = v
-                    }),
-                    85436: ((c, g, t) => {
+                    },
+                    85436: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36553,8 +36554,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = e
-                    }),
-                    42081: ((c, g, t) => {
+                    },
+                    42081: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36588,8 +36589,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = v
-                    }),
-                    31884: ((c, g, t) => {
+                    },
+                    31884: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36609,136 +36610,136 @@ return new ` + this.key + `();
                             Transform: t(85436),
                             Velocity: t(42081)
                         }
-                    }),
-                    85608: (c => {
+                    },
+                    85608: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "afteradd"
-                    }),
-                    1213: (c => {
+                    },
+                    1213: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "afterremove"
-                    }),
-                    25968: (c => {
+                    },
+                    25968: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "afterupdate"
-                    }),
-                    67205: (c => {
+                    },
+                    67205: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "beforeadd"
-                    }),
-                    39438: (c => {
+                    },
+                    39438: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "beforeremove"
-                    }),
-                    44823: (c => {
+                    },
+                    44823: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "beforeupdate"
-                    }),
-                    92593: (c => {
+                    },
+                    92593: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "collisionactive"
-                    }),
-                    60128: (c => {
+                    },
+                    60128: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "collisionend"
-                    }),
-                    76861: (c => {
+                    },
+                    76861: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "collisionstart"
-                    }),
-                    92362: (c => {
+                    },
+                    92362: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "dragend"
-                    }),
-                    76408: (c => {
+                    },
+                    76408: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "drag"
-                    }),
-                    93971: (c => {
+                    },
+                    93971: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "dragstart"
-                    }),
-                    5656: (c => {
+                    },
+                    5656: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pause"
-                    }),
-                    47861: (c => {
+                    },
+                    47861: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "resume"
-                    }),
-                    79099: (c => {
+                    },
+                    79099: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "sleepend"
-                    }),
-                    35906: (c => {
+                    },
+                    35906: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "sleepstart"
-                    }),
-                    1121: ((c, g, t) => {
+                    },
+                    1121: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36762,8 +36763,8 @@ return new ` + this.key + `();
                             SLEEP_END: t(79099),
                             SLEEP_START: t(35906)
                         }
-                    }),
-                    3875: ((c, g, t) => {
+                    },
+                    3875: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -36786,8 +36787,8 @@ return new ` + this.key + `();
                             PointerConstraint: t(98713),
                             World: t(68243)
                         }
-                    }),
-                    22562: ((c, g, t) => {
+                    },
+                    22562: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(41598),
@@ -37143,8 +37144,8 @@ return new ` + this.key + `();
                                 return u && o.translate(n, u), u
                             }
                         })()
-                    }),
-                    69351: ((c, g, t) => {
+                    },
+                    69351: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(35810),
@@ -37337,16 +37338,16 @@ return new ` + this.key + `();
                                 return h && o.translate(e, h), h
                             }
                         })()
-                    }),
-                    4372: ((c, g, t) => {
+                    },
+                    4372: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(69351);
                         (function() {
                             o.create = v.create, o.add = v.add, o.remove = v.remove, o.clear = v.clear, o.addComposite = v.addComposite, o.addBody = v.addBody, o.addConstraint = v.addConstraint
                         })()
-                    }),
-                    52284: ((c, g, t) => {
+                    },
+                    52284: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(41598),
@@ -37449,20 +37450,21 @@ return new ` + this.key + `();
                                 return P = u[(f + x.index - 1) % f], C = m * (d - P.x) + y * (p - P.y), S = u[(x.index + 1) % f], m * (d - S.x) + y * (p - S.y) < C ? (r[0] = x, r[1] = S, r) : (r[0] = x, r[1] = P, r)
                             }
                         })()
-                    }),
-                    43424: (c => {
+                    },
+                    43424: c => {
                         var g = {};
-                        c.exports = g, (function() {
-                            g.create = function(t) {
-                                return {
-                                    vertex: t,
-                                    normalImpulse: 0,
-                                    tangentImpulse: 0
+                        c.exports = g,
+                            function() {
+                                g.create = function(t) {
+                                    return {
+                                        vertex: t,
+                                        normalImpulse: 0,
+                                        tangentImpulse: 0
+                                    }
                                 }
-                            }
-                        })()
-                    }),
-                    81388: ((c, g, t) => {
+                            }()
+                    },
+                    81388: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(53402),
@@ -37526,8 +37528,8 @@ return new ` + this.key + `();
                                 return r.bounds.min.x - i.bounds.min.x
                             }
                         })()
-                    }),
-                    4506: ((c, g, t) => {
+                    },
+                    4506: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(43424);
@@ -37572,8 +37574,8 @@ return new ` + this.key + `();
                                 return a.id < r.id ? a.id.toString(36) + ":" + r.id.toString(36) : r.id.toString(36) + ":" + a.id.toString(36)
                             }
                         })()
-                    }),
-                    99561: ((c, g, t) => {
+                    },
+                    99561: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(4506),
@@ -37610,8 +37612,8 @@ return new ` + this.key + `();
                                 return r.table = {}, r.list.length = 0, r.collisionStart.length = 0, r.collisionActive.length = 0, r.collisionEnd.length = 0, r
                             }
                         })()
-                    }),
-                    73296: ((c, g, t) => {
+                    },
+                    73296: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(31725),
@@ -37669,8 +37671,8 @@ return new ` + this.key + `();
                                 return n
                             }
                         })()
-                    }),
-                    66272: ((c, g, t) => {
+                    },
+                    66272: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(41598),
@@ -37800,8 +37802,8 @@ return new ` + this.key + `();
                                 }
                             }
                         })()
-                    }),
-                    48140: ((c, g, t) => {
+                    },
+                    48140: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(41598),
@@ -37912,148 +37914,149 @@ return new ` + this.key + `();
                                 return Math.sqrt(d * d + p * p)
                             }
                         })()
-                    }),
-                    53402: ((c, g, t) => {
+                    },
+                    53402: (c, g, t) => {
                         var o = {};
-                        c.exports = o, (function() {
-                            o._baseDelta = 16.666666666666668, o._nextId = 0, o._seed = 0, o._nowStartTime = +new Date, o._warnedOnce = {}, o._decomp = null, o.extend = function(a, r) {
-                                var i, e;
-                                typeof r == "boolean" ? (i = 2, e = r) : (i = 1, e = !0);
-                                for (var s = i; s < arguments.length; s++) {
-                                    var h = arguments[s];
-                                    if (h)
-                                        for (var n in h) e && h[n] && h[n].constructor === Object && (!a[n] || a[n].constructor === Object) ? (a[n] = a[n] || {}, o.extend(a[n], e, h[n])) : a[n] = h[n]
-                                }
-                                return a
-                            }, o.clone = function(a, r) {
-                                return o.extend({}, r, a)
-                            }, o.keys = function(a) {
-                                if (Object.keys) return Object.keys(a);
-                                var r = [];
-                                for (var i in a) r.push(i);
-                                return r
-                            }, o.values = function(a) {
-                                var r = [];
-                                if (Object.keys) {
-                                    for (var i = Object.keys(a), e = 0; e < i.length; e++) r.push(a[i[e]]);
-                                    return r
-                                }
-                                for (var s in a) r.push(a[s]);
-                                return r
-                            }, o.get = function(a, r, i, e) {
-                                r = r.split(".").slice(i, e);
-                                for (var s = 0; s < r.length; s += 1) a = a[r[s]];
-                                return a
-                            }, o.set = function(a, r, i, e, s) {
-                                var h = r.split(".").slice(e, s);
-                                return o.get(a, r, 0, -1)[h[h.length - 1]] = i, i
-                            }, o.shuffle = function(a) {
-                                for (var r = a.length - 1; r > 0; r--) {
-                                    var i = Math.floor(o.random() * (r + 1)),
-                                        e = a[r];
-                                    a[r] = a[i], a[i] = e
-                                }
-                                return a
-                            }, o.choose = function(a) {
-                                return a[Math.floor(o.random() * a.length)]
-                            }, o.isElement = function(a) {
-                                return typeof HTMLElement < "u" ? a instanceof HTMLElement : !!(a && a.nodeType && a.nodeName)
-                            }, o.isArray = function(a) {
-                                return Object.prototype.toString.call(a) === "[object Array]"
-                            }, o.isFunction = function(a) {
-                                return typeof a == "function"
-                            }, o.isPlainObject = function(a) {
-                                return typeof a == "object" && a.constructor === Object
-                            }, o.isString = function(a) {
-                                return toString.call(a) === "[object String]"
-                            }, o.clamp = function(a, r, i) {
-                                return a < r ? r : a > i ? i : a
-                            }, o.sign = function(a) {
-                                return a < 0 ? -1 : 1
-                            }, o.now = function() {
-                                if (typeof window < "u" && window.performance) {
-                                    if (window.performance.now) return window.performance.now();
-                                    if (window.performance.webkitNow) return window.performance.webkitNow()
-                                }
-                                return Date.now ? Date.now() : new Date - o._nowStartTime
-                            }, o.random = function(a, r) {
-                                return a = typeof a < "u" ? a : 0, r = typeof r < "u" ? r : 1, a + v() * (r - a)
-                            };
-                            var v = function() {
-                                return o._seed = (o._seed * 9301 + 49297) % 233280, o._seed / 233280
-                            };
-                            o.colorToNumber = function(a) {
-                                return a = a.replace("#", ""), a.length == 3 && (a = a.charAt(0) + a.charAt(0) + a.charAt(1) + a.charAt(1) + a.charAt(2) + a.charAt(2)), parseInt(a, 16)
-                            }, o.logLevel = 1, o.log = function() {
-                                console && o.logLevel > 0 && o.logLevel <= 3 && console.log.apply(console, ["matter-js:"].concat(Array.prototype.slice.call(arguments)))
-                            }, o.info = function() {
-                                console && o.logLevel > 0 && o.logLevel <= 2 && console.info.apply(console, ["matter-js:"].concat(Array.prototype.slice.call(arguments)))
-                            }, o.warn = function() {
-                                console && o.logLevel > 0 && o.logLevel <= 3 && console.warn.apply(console, ["matter-js:"].concat(Array.prototype.slice.call(arguments)))
-                            }, o.warnOnce = function() {
-                                var a = Array.prototype.slice.call(arguments).join(" ");
-                                o._warnedOnce[a] || (o.warn(a), o._warnedOnce[a] = !0)
-                            }, o.deprecated = function(a, r, i) {
-                                a[r] = o.chain(function() {
-                                    o.warnOnce("🔅 deprecated 🔅", i)
-                                }, a[r])
-                            }, o.nextId = function() {
-                                return o._nextId++
-                            }, o.indexOf = function(a, r) {
-                                if (a.indexOf) return a.indexOf(r);
-                                for (var i = 0; i < a.length; i++)
-                                    if (a[i] === r) return i;
-                                return -1
-                            }, o.map = function(a, r) {
-                                if (a.map) return a.map(r);
-                                for (var i = [], e = 0; e < a.length; e += 1) i.push(r(a[e]));
-                                return i
-                            }, o.topologicalSort = function(a) {
-                                var r = [],
-                                    i = [],
-                                    e = [];
-                                for (var s in a) !i[s] && !e[s] && o._topologicalSort(s, i, e, a, r);
-                                return r
-                            }, o._topologicalSort = function(a, r, i, e, s) {
-                                var h = e[a] || [];
-                                i[a] = !0;
-                                for (var n = 0; n < h.length; n += 1) {
-                                    var l = h[n];
-                                    i[l] || r[l] || o._topologicalSort(l, r, i, e, s)
-                                }
-                                i[a] = !1, r[a] = !0, s.push(a)
-                            }, o.chain = function() {
-                                for (var a = [], r = 0; r < arguments.length; r += 1) {
-                                    var i = arguments[r];
-                                    i._chained ? a.push.apply(a, i._chained) : a.push(i)
-                                }
-                                var e = function() {
-                                    for (var s, h = new Array(arguments.length), n = 0, l = arguments.length; n < l; n++) h[n] = arguments[n];
-                                    for (n = 0; n < a.length; n += 1) {
-                                        var u = a[n].apply(s, h);
-                                        typeof u < "u" && (s = u)
+                        c.exports = o,
+                            function() {
+                                o._baseDelta = 16.666666666666668, o._nextId = 0, o._seed = 0, o._nowStartTime = +new Date, o._warnedOnce = {}, o._decomp = null, o.extend = function(a, r) {
+                                    var i, e;
+                                    typeof r == "boolean" ? (i = 2, e = r) : (i = 1, e = !0);
+                                    for (var s = i; s < arguments.length; s++) {
+                                        var h = arguments[s];
+                                        if (h)
+                                            for (var n in h) e && h[n] && h[n].constructor === Object && (!a[n] || a[n].constructor === Object) ? (a[n] = a[n] || {}, o.extend(a[n], e, h[n])) : a[n] = h[n]
                                     }
-                                    return s
+                                    return a
+                                }, o.clone = function(a, r) {
+                                    return o.extend({}, r, a)
+                                }, o.keys = function(a) {
+                                    if (Object.keys) return Object.keys(a);
+                                    var r = [];
+                                    for (var i in a) r.push(i);
+                                    return r
+                                }, o.values = function(a) {
+                                    var r = [];
+                                    if (Object.keys) {
+                                        for (var i = Object.keys(a), e = 0; e < i.length; e++) r.push(a[i[e]]);
+                                        return r
+                                    }
+                                    for (var s in a) r.push(a[s]);
+                                    return r
+                                }, o.get = function(a, r, i, e) {
+                                    r = r.split(".").slice(i, e);
+                                    for (var s = 0; s < r.length; s += 1) a = a[r[s]];
+                                    return a
+                                }, o.set = function(a, r, i, e, s) {
+                                    var h = r.split(".").slice(e, s);
+                                    return o.get(a, r, 0, -1)[h[h.length - 1]] = i, i
+                                }, o.shuffle = function(a) {
+                                    for (var r = a.length - 1; r > 0; r--) {
+                                        var i = Math.floor(o.random() * (r + 1)),
+                                            e = a[r];
+                                        a[r] = a[i], a[i] = e
+                                    }
+                                    return a
+                                }, o.choose = function(a) {
+                                    return a[Math.floor(o.random() * a.length)]
+                                }, o.isElement = function(a) {
+                                    return typeof HTMLElement < "u" ? a instanceof HTMLElement : !!(a && a.nodeType && a.nodeName)
+                                }, o.isArray = function(a) {
+                                    return Object.prototype.toString.call(a) === "[object Array]"
+                                }, o.isFunction = function(a) {
+                                    return typeof a == "function"
+                                }, o.isPlainObject = function(a) {
+                                    return typeof a == "object" && a.constructor === Object
+                                }, o.isString = function(a) {
+                                    return toString.call(a) === "[object String]"
+                                }, o.clamp = function(a, r, i) {
+                                    return a < r ? r : a > i ? i : a
+                                }, o.sign = function(a) {
+                                    return a < 0 ? -1 : 1
+                                }, o.now = function() {
+                                    if (typeof window < "u" && window.performance) {
+                                        if (window.performance.now) return window.performance.now();
+                                        if (window.performance.webkitNow) return window.performance.webkitNow()
+                                    }
+                                    return Date.now ? Date.now() : new Date - o._nowStartTime
+                                }, o.random = function(a, r) {
+                                    return a = typeof a < "u" ? a : 0, r = typeof r < "u" ? r : 1, a + v() * (r - a)
                                 };
-                                return e._chained = a, e
-                            }, o.chainPathBefore = function(a, r, i) {
-                                return o.set(a, r, o.chain(i, o.get(a, r)))
-                            }, o.chainPathAfter = function(a, r, i) {
-                                return o.set(a, r, o.chain(o.get(a, r), i))
-                            }, o.setDecomp = function(a) {
-                                o._decomp = a
-                            }, o.getDecomp = function() {
-                                var a = o._decomp;
-                                try {
-                                    !a && typeof window < "u" && (a = window.decomp), !a && typeof t.g < "u" && (a = t.g.decomp)
-                                } catch {
-                                    a = null
+                                var v = function() {
+                                    return o._seed = (o._seed * 9301 + 49297) % 233280, o._seed / 233280
+                                };
+                                o.colorToNumber = function(a) {
+                                    return a = a.replace("#", ""), a.length == 3 && (a = a.charAt(0) + a.charAt(0) + a.charAt(1) + a.charAt(1) + a.charAt(2) + a.charAt(2)), parseInt(a, 16)
+                                }, o.logLevel = 1, o.log = function() {
+                                    console && o.logLevel > 0 && o.logLevel <= 3 && console.log.apply(console, ["matter-js:"].concat(Array.prototype.slice.call(arguments)))
+                                }, o.info = function() {
+                                    console && o.logLevel > 0 && o.logLevel <= 2 && console.info.apply(console, ["matter-js:"].concat(Array.prototype.slice.call(arguments)))
+                                }, o.warn = function() {
+                                    console && o.logLevel > 0 && o.logLevel <= 3 && console.warn.apply(console, ["matter-js:"].concat(Array.prototype.slice.call(arguments)))
+                                }, o.warnOnce = function() {
+                                    var a = Array.prototype.slice.call(arguments).join(" ");
+                                    o._warnedOnce[a] || (o.warn(a), o._warnedOnce[a] = !0)
+                                }, o.deprecated = function(a, r, i) {
+                                    a[r] = o.chain(function() {
+                                        o.warnOnce("🔅 deprecated 🔅", i)
+                                    }, a[r])
+                                }, o.nextId = function() {
+                                    return o._nextId++
+                                }, o.indexOf = function(a, r) {
+                                    if (a.indexOf) return a.indexOf(r);
+                                    for (var i = 0; i < a.length; i++)
+                                        if (a[i] === r) return i;
+                                    return -1
+                                }, o.map = function(a, r) {
+                                    if (a.map) return a.map(r);
+                                    for (var i = [], e = 0; e < a.length; e += 1) i.push(r(a[e]));
+                                    return i
+                                }, o.topologicalSort = function(a) {
+                                    var r = [],
+                                        i = [],
+                                        e = [];
+                                    for (var s in a) !i[s] && !e[s] && o._topologicalSort(s, i, e, a, r);
+                                    return r
+                                }, o._topologicalSort = function(a, r, i, e, s) {
+                                    var h = e[a] || [];
+                                    i[a] = !0;
+                                    for (var n = 0; n < h.length; n += 1) {
+                                        var l = h[n];
+                                        i[l] || r[l] || o._topologicalSort(l, r, i, e, s)
+                                    }
+                                    i[a] = !1, r[a] = !0, s.push(a)
+                                }, o.chain = function() {
+                                    for (var a = [], r = 0; r < arguments.length; r += 1) {
+                                        var i = arguments[r];
+                                        i._chained ? a.push.apply(a, i._chained) : a.push(i)
+                                    }
+                                    var e = function() {
+                                        for (var s, h = new Array(arguments.length), n = 0, l = arguments.length; n < l; n++) h[n] = arguments[n];
+                                        for (n = 0; n < a.length; n += 1) {
+                                            var u = a[n].apply(s, h);
+                                            typeof u < "u" && (s = u)
+                                        }
+                                        return s
+                                    };
+                                    return e._chained = a, e
+                                }, o.chainPathBefore = function(a, r, i) {
+                                    return o.set(a, r, o.chain(i, o.get(a, r)))
+                                }, o.chainPathAfter = function(a, r, i) {
+                                    return o.set(a, r, o.chain(o.get(a, r), i))
+                                }, o.setDecomp = function(a) {
+                                    o._decomp = a
+                                }, o.getDecomp = function() {
+                                    var a = o._decomp;
+                                    try {
+                                        !a && typeof window < "u" && (a = window.decomp), !a && typeof t.g < "u" && (a = t.g.decomp)
+                                    } catch {
+                                        a = null
+                                    }
+                                    return a
                                 }
-                                return a
-                            }
-                        })()
-                    }),
-                    48413: ((c, g, t) => {
+                            }()
+                    },
+                    48413: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(53614),
@@ -38188,8 +38191,8 @@ return new ` + this.key + `();
                                 }
                             }
                         })()
-                    }),
-                    35810: ((c, g, t) => {
+                    },
+                    35810: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(53402);
@@ -38222,8 +38225,8 @@ return new ` + this.key + `();
                                 }
                             }
                         })()
-                    }),
-                    6790: ((c, g, t) => {
+                    },
+                    6790: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(73832),
@@ -38237,8 +38240,8 @@ return new ` + this.key + `();
                                 return r = r.replace(/^Matter./, ""), a.chainPathAfter(o, r, i)
                             }
                         })()
-                    }),
-                    73832: ((c, g, t) => {
+                    },
+                    73832: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(53402);
@@ -38334,8 +38337,8 @@ return new ` + this.key + `();
                                 return a === r || a === "*"
                             }
                         })()
-                    }),
-                    13037: ((c, g, t) => {
+                    },
+                    13037: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(35810),
@@ -38361,9 +38364,10 @@ return new ` + this.key + `();
                                     h = r.extend(s, e);
                                 return h.fps = 0, h
                             }, o.run = function(e, s) {
-                                return e.timeBuffer = o._frameDeltaFallback, (function h(n) {
-                                    e.frameRequestId = o._onNextFrame(e, h), n && e.enabled && o.tick(e, s, n)
-                                })(), e
+                                return e.timeBuffer = o._frameDeltaFallback,
+                                    function h(n) {
+                                        e.frameRequestId = o._onNextFrame(e, h), n && e.enabled && o.tick(e, s, n)
+                                    }(), e
                             }, o.tick = function(e, s, h) {
                                 var n = r.now(),
                                     l = e.delta,
@@ -38409,8 +38413,8 @@ return new ` + this.key + `();
                             };
                             o._mean = i
                         })()
-                    }),
-                    53614: ((c, g, t) => {
+                    },
+                    53614: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(22562),
@@ -38450,8 +38454,8 @@ return new ` + this.key + `();
                                 e ? (i.isSleeping = !0, i.sleepCounter = i.sleepThreshold, i.positionImpulse.x = 0, i.positionImpulse.y = 0, i.positionPrev.x = i.position.x, i.positionPrev.y = i.position.y, i.anglePrev = i.angle, i.speed = 0, i.angularSpeed = 0, i.motion = 0, s || a.trigger(i, "sleepStart")) : (i.isSleeping = !1, i.sleepCounter = 0, s && a.trigger(i, "sleepEnd"))
                             }
                         })()
-                    }),
-                    66280: ((c, g, t) => {
+                    },
+                    66280: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(41598),
@@ -38598,8 +38602,8 @@ return new ` + this.key + `();
                                 return s
                             }
                         })()
-                    }),
-                    74116: ((c, g, t) => {
+                    },
+                    74116: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(69351),
@@ -38778,8 +38782,8 @@ return new ` + this.key + `();
                                 return o.mesh(x, n, l, d, y), x.label = "Soft Body", x
                             }
                         })()
-                    }),
-                    66615: ((c, g, t) => {
+                    },
+                    66615: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(31725),
@@ -38805,50 +38809,51 @@ return new ` + this.key + `();
                                     }
                             }
                         })()
-                    }),
-                    15647: (c => {
+                    },
+                    15647: c => {
                         var g = {};
-                        c.exports = g, (function() {
-                            g.create = function(t) {
-                                var o = {
-                                    min: {
-                                        x: 0,
-                                        y: 0
-                                    },
-                                    max: {
-                                        x: 0,
-                                        y: 0
+                        c.exports = g,
+                            function() {
+                                g.create = function(t) {
+                                    var o = {
+                                        min: {
+                                            x: 0,
+                                            y: 0
+                                        },
+                                        max: {
+                                            x: 0,
+                                            y: 0
+                                        }
+                                    };
+                                    return t && g.update(o, t), o
+                                }, g.update = function(t, o, v) {
+                                    t.min.x = 1 / 0, t.max.x = -1 / 0, t.min.y = 1 / 0, t.max.y = -1 / 0;
+                                    for (var a = 0; a < o.length; a++) {
+                                        var r = o[a];
+                                        r.x > t.max.x && (t.max.x = r.x), r.x < t.min.x && (t.min.x = r.x), r.y > t.max.y && (t.max.y = r.y), r.y < t.min.y && (t.min.y = r.y)
                                     }
-                                };
-                                return t && g.update(o, t), o
-                            }, g.update = function(t, o, v) {
-                                t.min.x = 1 / 0, t.max.x = -1 / 0, t.min.y = 1 / 0, t.max.y = -1 / 0;
-                                for (var a = 0; a < o.length; a++) {
-                                    var r = o[a];
-                                    r.x > t.max.x && (t.max.x = r.x), r.x < t.min.x && (t.min.x = r.x), r.y > t.max.y && (t.max.y = r.y), r.y < t.min.y && (t.min.y = r.y)
+                                    v && (v.x > 0 ? t.max.x += v.x : t.min.x += v.x, v.y > 0 ? t.max.y += v.y : t.min.y += v.y)
+                                }, g.contains = function(t, o) {
+                                    return o.x >= t.min.x && o.x <= t.max.x && o.y >= t.min.y && o.y <= t.max.y
+                                }, g.overlaps = function(t, o) {
+                                    return t.min.x <= o.max.x && t.max.x >= o.min.x && t.max.y >= o.min.y && t.min.y <= o.max.y
+                                }, g.translate = function(t, o) {
+                                    t.min.x += o.x, t.max.x += o.x, t.min.y += o.y, t.max.y += o.y
+                                }, g.shift = function(t, o) {
+                                    var v = t.max.x - t.min.x,
+                                        a = t.max.y - t.min.y;
+                                    t.min.x = o.x, t.max.x = o.x + v, t.min.y = o.y, t.max.y = o.y + a
+                                }, g.wrap = function(t, o, v) {
+                                    var a = null,
+                                        r = null;
+                                    if (typeof o.min.x < "u" && typeof o.max.x < "u" && (t.min.x > o.max.x ? a = o.min.x - t.max.x : t.max.x < o.min.x && (a = o.max.x - t.min.x)), typeof o.min.y < "u" && typeof o.max.y < "u" && (t.min.y > o.max.y ? r = o.min.y - t.max.y : t.max.y < o.min.y && (r = o.max.y - t.min.y)), a !== null || r !== null) return {
+                                        x: a || 0,
+                                        y: r || 0
+                                    }
                                 }
-                                v && (v.x > 0 ? t.max.x += v.x : t.min.x += v.x, v.y > 0 ? t.max.y += v.y : t.min.y += v.y)
-                            }, g.contains = function(t, o) {
-                                return o.x >= t.min.x && o.x <= t.max.x && o.y >= t.min.y && o.y <= t.max.y
-                            }, g.overlaps = function(t, o) {
-                                return t.min.x <= o.max.x && t.max.x >= o.min.x && t.max.y >= o.min.y && t.min.y <= o.max.y
-                            }, g.translate = function(t, o) {
-                                t.min.x += o.x, t.max.x += o.x, t.min.y += o.y, t.max.y += o.y
-                            }, g.shift = function(t, o) {
-                                var v = t.max.x - t.min.x,
-                                    a = t.max.y - t.min.y;
-                                t.min.x = o.x, t.max.x = o.x + v, t.min.y = o.y, t.max.y = o.y + a
-                            }, g.wrap = function(t, o, v) {
-                                var a = null,
-                                    r = null;
-                                if (typeof o.min.x < "u" && typeof o.max.x < "u" && (t.min.x > o.max.x ? a = o.min.x - t.max.x : t.max.x < o.min.x && (a = o.max.x - t.min.x)), typeof o.min.y < "u" && typeof o.max.y < "u" && (t.min.y > o.max.y ? r = o.min.y - t.max.y : t.max.y < o.min.y && (r = o.max.y - t.min.y)), a !== null || r !== null) return {
-                                    x: a || 0,
-                                    y: r || 0
-                                }
-                            }
-                        })()
-                    }),
-                    74058: ((c, g, t) => {
+                            }()
+                    },
+                    74058: (c, g, t) => {
                         var o = {};
                         c.exports = o, t(15647);
                         var v = t(53402);
@@ -38953,81 +38958,82 @@ return new ` + this.key + `();
                                 }
                             }
                         })()
-                    }),
-                    31725: (c => {
+                    },
+                    31725: c => {
                         var g = {};
-                        c.exports = g, (function() {
-                            g.create = function(t, o) {
-                                return {
-                                    x: t || 0,
-                                    y: o || 0
-                                }
-                            }, g.clone = function(t) {
-                                return {
-                                    x: t.x,
-                                    y: t.y
-                                }
-                            }, g.magnitude = function(t) {
-                                return Math.sqrt(t.x * t.x + t.y * t.y)
-                            }, g.magnitudeSquared = function(t) {
-                                return t.x * t.x + t.y * t.y
-                            }, g.rotate = function(t, o, v) {
-                                var a = Math.cos(o),
-                                    r = Math.sin(o);
-                                v || (v = {});
-                                var i = t.x * a - t.y * r;
-                                return v.y = t.x * r + t.y * a, v.x = i, v
-                            }, g.rotateAbout = function(t, o, v, a) {
-                                var r = Math.cos(o),
-                                    i = Math.sin(o);
-                                a || (a = {});
-                                var e = v.x + ((t.x - v.x) * r - (t.y - v.y) * i);
-                                return a.y = v.y + ((t.x - v.x) * i + (t.y - v.y) * r), a.x = e, a
-                            }, g.normalise = function(t) {
-                                var o = g.magnitude(t);
-                                return o === 0 ? {
-                                    x: 0,
-                                    y: 0
-                                } : {
-                                    x: t.x / o,
-                                    y: t.y / o
-                                }
-                            }, g.dot = function(t, o) {
-                                return t.x * o.x + t.y * o.y
-                            }, g.cross = function(t, o) {
-                                return t.x * o.y - t.y * o.x
-                            }, g.cross3 = function(t, o, v) {
-                                return (o.x - t.x) * (v.y - t.y) - (o.y - t.y) * (v.x - t.x)
-                            }, g.add = function(t, o, v) {
-                                return v || (v = {}), v.x = t.x + o.x, v.y = t.y + o.y, v
-                            }, g.sub = function(t, o, v) {
-                                return v || (v = {}), v.x = t.x - o.x, v.y = t.y - o.y, v
-                            }, g.mult = function(t, o) {
-                                return {
-                                    x: t.x * o,
-                                    y: t.y * o
-                                }
-                            }, g.div = function(t, o) {
-                                return {
-                                    x: t.x / o,
-                                    y: t.y / o
-                                }
-                            }, g.perp = function(t, o) {
-                                return o = o === !0 ? -1 : 1, {
-                                    x: o * -t.y,
-                                    y: o * t.x
-                                }
-                            }, g.neg = function(t) {
-                                return {
-                                    x: -t.x,
-                                    y: -t.y
-                                }
-                            }, g.angle = function(t, o) {
-                                return Math.atan2(o.y - t.y, o.x - t.x)
-                            }, g._temp = [g.create(), g.create(), g.create(), g.create(), g.create(), g.create()]
-                        })()
-                    }),
-                    41598: ((c, g, t) => {
+                        c.exports = g,
+                            function() {
+                                g.create = function(t, o) {
+                                    return {
+                                        x: t || 0,
+                                        y: o || 0
+                                    }
+                                }, g.clone = function(t) {
+                                    return {
+                                        x: t.x,
+                                        y: t.y
+                                    }
+                                }, g.magnitude = function(t) {
+                                    return Math.sqrt(t.x * t.x + t.y * t.y)
+                                }, g.magnitudeSquared = function(t) {
+                                    return t.x * t.x + t.y * t.y
+                                }, g.rotate = function(t, o, v) {
+                                    var a = Math.cos(o),
+                                        r = Math.sin(o);
+                                    v || (v = {});
+                                    var i = t.x * a - t.y * r;
+                                    return v.y = t.x * r + t.y * a, v.x = i, v
+                                }, g.rotateAbout = function(t, o, v, a) {
+                                    var r = Math.cos(o),
+                                        i = Math.sin(o);
+                                    a || (a = {});
+                                    var e = v.x + ((t.x - v.x) * r - (t.y - v.y) * i);
+                                    return a.y = v.y + ((t.x - v.x) * i + (t.y - v.y) * r), a.x = e, a
+                                }, g.normalise = function(t) {
+                                    var o = g.magnitude(t);
+                                    return o === 0 ? {
+                                        x: 0,
+                                        y: 0
+                                    } : {
+                                        x: t.x / o,
+                                        y: t.y / o
+                                    }
+                                }, g.dot = function(t, o) {
+                                    return t.x * o.x + t.y * o.y
+                                }, g.cross = function(t, o) {
+                                    return t.x * o.y - t.y * o.x
+                                }, g.cross3 = function(t, o, v) {
+                                    return (o.x - t.x) * (v.y - t.y) - (o.y - t.y) * (v.x - t.x)
+                                }, g.add = function(t, o, v) {
+                                    return v || (v = {}), v.x = t.x + o.x, v.y = t.y + o.y, v
+                                }, g.sub = function(t, o, v) {
+                                    return v || (v = {}), v.x = t.x - o.x, v.y = t.y - o.y, v
+                                }, g.mult = function(t, o) {
+                                    return {
+                                        x: t.x * o,
+                                        y: t.y * o
+                                    }
+                                }, g.div = function(t, o) {
+                                    return {
+                                        x: t.x / o,
+                                        y: t.y / o
+                                    }
+                                }, g.perp = function(t, o) {
+                                    return o = o === !0 ? -1 : 1, {
+                                        x: o * -t.y,
+                                        y: o * t.x
+                                    }
+                                }, g.neg = function(t) {
+                                    return {
+                                        x: -t.x,
+                                        y: -t.y
+                                    }
+                                }, g.angle = function(t, o) {
+                                    return Math.atan2(o.y - t.y, o.x - t.x)
+                                }, g._temp = [g.create(), g.create(), g.create(), g.create(), g.create(), g.create()]
+                            }()
+                    },
+                    41598: (c, g, t) => {
                         var o = {};
                         c.exports = o;
                         var v = t(31725),
@@ -39162,8 +39168,8 @@ return new ` + this.key + `();
                                 return i.pop(), e.pop(), i.concat(e)
                             }
                         })()
-                    }),
-                    55973: (c => {
+                    },
+                    55973: c => {
                         /**
                          * @author       Stefan Hedman <schteppe@gmail.com> (http://steffe.se)
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
@@ -39406,8 +39412,8 @@ return new ` + this.key + `();
                         function W(G, X, B) {
                             return H(G[0], X[0], B) && H(G[1], X[1], B)
                         }
-                    }),
-                    52018: ((c, g, t) => {
+                    },
+                    52018: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -39426,8 +39432,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = v
-                    }),
-                    42363: (c => {
+                    },
+                    42363: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -39439,8 +39445,8 @@ return new ` + this.key + `();
                             DefaultScene: ["Clock", "DataManagerPlugin", "InputPlugin", "Loader", "TweenManager", "LightsPlugin"]
                         };
                         c.exports = g
-                    }),
-                    37277: (c => {
+                    },
+                    37277: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -39480,8 +39486,8 @@ return new ` + this.key + `();
                         }, o.destroyCustomPlugins = function() {
                             for (var v in t) t.hasOwnProperty(v) && delete t[v]
                         }, c.exports = o
-                    }),
-                    77332: ((c, g, t) => {
+                    },
+                    77332: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -39629,8 +39635,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = u
-                    }),
-                    45145: ((c, g, t) => {
+                    },
+                    45145: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -39650,8 +39656,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    18922: ((c, g, t) => {
+                    },
+                    18922: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -39664,8 +39670,8 @@ return new ` + this.key + `();
                             PluginManager: t(77332),
                             ScenePlugin: t(45145)
                         }
-                    }),
-                    63595: (() => {
+                    },
+                    63595: () => {
                         typeof HTMLVideoElement < "u" && !("requestVideoFrameCallback" in HTMLVideoElement.prototype) && "getVideoPlaybackQuality" in HTMLVideoElement.prototype && (HTMLVideoElement.prototype._rvfcpolyfillmap = {}, HTMLVideoElement.prototype.requestVideoFrameCallback = function(c) {
                             const g = performance.now(),
                                 t = this.getVideoPlaybackQuality(),
@@ -39691,8 +39697,8 @@ return new ` + this.key + `();
                         }, HTMLVideoElement.prototype.cancelVideoFrameCallback = function(c) {
                             cancelAnimationFrame(this._rvfcpolyfillmap[c]), delete this._rvfcpolyfillmap[c]
                         })
-                    }),
-                    10312: (c => {
+                    },
+                    10312: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -39729,8 +39735,8 @@ return new ` + this.key + `();
                             COPY: 26,
                             XOR: 27
                         }
-                    }),
-                    29795: (c => {
+                    },
+                    29795: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -39742,8 +39748,8 @@ return new ` + this.key + `();
                             NEAREST: 1
                         };
                         c.exports = g
-                    }),
-                    68627: ((c, g, t) => {
+                    },
+                    68627: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Felipe Alfonso <@bitnenfer>
@@ -39907,8 +39913,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = f
-                    }),
-                    55830: ((c, g, t) => {
+                    },
+                    55830: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -39919,8 +39925,8 @@ return new ` + this.key + `();
                             GetBlendModes: t(56373),
                             SetTransform: t(20926)
                         }
-                    }),
-                    56373: ((c, g, t) => {
+                    },
+                    56373: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -39935,8 +39941,8 @@ return new ` + this.key + `();
                                 return r[o.NORMAL] = e, r[o.ADD] = "lighter", r[o.MULTIPLY] = i ? "multiply" : e, r[o.SCREEN] = i ? "screen" : e, r[o.OVERLAY] = i ? "overlay" : e, r[o.DARKEN] = i ? "darken" : e, r[o.LIGHTEN] = i ? "lighten" : e, r[o.COLOR_DODGE] = i ? "color-dodge" : e, r[o.COLOR_BURN] = i ? "color-burn" : e, r[o.HARD_LIGHT] = i ? "hard-light" : e, r[o.SOFT_LIGHT] = i ? "soft-light" : e, r[o.DIFFERENCE] = i ? "difference" : e, r[o.EXCLUSION] = i ? "exclusion" : e, r[o.HUE] = i ? "hue" : e, r[o.SATURATION] = i ? "saturation" : e, r[o.COLOR] = i ? "color" : e, r[o.LUMINOSITY] = i ? "luminosity" : e, r[o.ERASE] = "destination-out", r[o.SOURCE_IN] = "source-in", r[o.SOURCE_OUT] = "source-out", r[o.SOURCE_ATOP] = "source-atop", r[o.DESTINATION_OVER] = "destination-over", r[o.DESTINATION_IN] = "destination-in", r[o.DESTINATION_OUT] = "destination-out", r[o.DESTINATION_ATOP] = "destination-atop", r[o.LIGHTER] = "lighter", r[o.COPY] = "copy", r[o.XOR] = "xor", r
                             };
                         c.exports = a
-                    }),
-                    20926: ((c, g, t) => {
+                    },
+                    20926: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -39950,56 +39956,56 @@ return new ` + this.key + `();
                                 return r.globalCompositeOperation = a.blendModes[i.blendMode], r.globalAlpha = h, r.save(), n.setToContext(r), r.imageSmoothingEnabled = i.frame ? !i.frame.source.scaleMode : a.antialias, !0
                             };
                         c.exports = v
-                    }),
-                    63899: (c => {
+                    },
+                    63899: c => {
                         /**
                          * @author       Benjamin D. Richards <benjamindrichards@gmail.com>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "losewebgl"
-                    }),
-                    6119: (c => {
+                    },
+                    6119: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "postrender"
-                    }),
-                    48070: (c => {
+                    },
+                    48070: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "prerender"
-                    }),
-                    15640: (c => {
+                    },
+                    15640: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "render"
-                    }),
-                    8912: (c => {
+                    },
+                    8912: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "resize"
-                    }),
-                    87124: (c => {
+                    },
+                    87124: c => {
                         /**
                          * @author       Benjamin D. Richards <benjamindrichards@gmail.com>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "restorewebgl"
-                    }),
-                    92503: ((c, g, t) => {
+                    },
+                    92503: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -40013,8 +40019,8 @@ return new ` + this.key + `();
                             RESIZE: t(8912),
                             RESTORE_WEBGL: t(87124)
                         }
-                    }),
-                    36909: ((c, g, t) => {
+                    },
+                    36909: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -40024,8 +40030,8 @@ return new ` + this.key + `();
                             Events: t(92503),
                             Snapshot: t(89966)
                         }, c.exports.Canvas = t(55830), c.exports.WebGL = t(4159)
-                    }),
-                    32880: ((c, g, t) => {
+                    },
+                    32880: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -40072,8 +40078,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = r
-                    }),
-                    88815: ((c, g, t) => {
+                    },
+                    88815: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -40121,8 +40127,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = r
-                    }),
-                    89966: ((c, g, t) => {
+                    },
+                    89966: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -40132,8 +40138,8 @@ return new ` + this.key + `();
                             Canvas: t(32880),
                             WebGL: t(88815)
                         }
-                    }),
-                    7530: ((c, g, t) => {
+                    },
+                    7530: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -40381,8 +40387,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = R
-                    }),
-                    32302: ((c, g, t) => {
+                    },
+                    32302: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -40440,8 +40446,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = a
-                    }),
-                    70554: (c => {
+                    },
+                    70554: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Felipe Alfonso <@bitnenfer>
@@ -40491,8 +40497,8 @@ return new ` + this.key + `();
                                 return o === void 0 && (o = t.config.glowFXQuality), v === void 0 && (v = t.config.glowFXDistance), g = g.replace(/__SIZE__/gi, (1 / o / v).toFixed(7)), g = g.replace(/__DIST__/gi, v.toFixed(0) + ".0"), g
                             }
                         }
-                    }),
-                    29100: ((c, g, t) => {
+                    },
+                    29100: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -40851,8 +40857,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = u
-                    }),
-                    74797: ((c, g, t) => {
+                    },
+                    74797: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Felipe Alfonso <@bitnenfer>
@@ -41465,8 +41471,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = F
-                    }),
-                    38683: ((c, g, t) => {
+                    },
+                    38683: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -41664,8 +41670,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = i
-                    }),
-                    14500: (c => {
+                    },
+                    14500: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -41702,8 +41708,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    4159: ((c, g, t) => {
+                    },
+                    4159: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -41722,8 +41728,8 @@ return new ` + this.key + `();
                                 Wrappers: t(9503)
                             };
                         a = v(!1, a, o), c.exports = a
-                    }),
-                    31302: ((c, g, t) => {
+                    },
+                    31302: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Felipe Alfonso <@bitnenfer>
@@ -41762,8 +41768,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = s
-                    }),
-                    92651: ((c, g, t) => {
+                    },
+                    92651: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -41866,8 +41872,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = h
-                    }),
-                    96569: ((c, g, t) => {
+                    },
+                    96569: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Felipe Alfonso <@bitnenfer>
@@ -41964,8 +41970,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = h
-                    }),
-                    56527: ((c, g, t) => {
+                    },
+                    56527: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42005,8 +42011,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = h
-                    }),
-                    57516: ((c, g, t) => {
+                    },
+                    57516: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Felipe Alfonso <@bitnenfer>
@@ -42260,8 +42266,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = l
-                    }),
-                    43439: ((c, g, t) => {
+                    },
+                    43439: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42311,8 +42317,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = e
-                    }),
-                    84057: ((c, g, t) => {
+                    },
+                    84057: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42394,8 +42400,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = s
-                    }),
-                    43558: ((c, g, t) => {
+                    },
+                    43558: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42547,8 +42553,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = d
-                    }),
-                    81041: ((c, g, t) => {
+                    },
+                    81041: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42564,8 +42570,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    12385: ((c, g, t) => {
+                    },
+                    12385: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42589,8 +42595,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = s
-                    }),
-                    7589: ((c, g, t) => {
+                    },
+                    7589: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42714,8 +42720,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = u
-                    }),
-                    36060: (c => {
+                    },
+                    36060: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42735,64 +42741,64 @@ return new ` + this.key + `();
                             FX_PIPELINE: "FxPipeline"
                         };
                         c.exports = g
-                    }),
-                    84817: (c => {
+                    },
+                    84817: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pipelineafterflush"
-                    }),
-                    36712: (c => {
+                    },
+                    36712: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pipelinebeforeflush"
-                    }),
-                    40285: (c => {
+                    },
+                    40285: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pipelinebind"
-                    }),
-                    65918: (c => {
+                    },
+                    65918: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pipelineboot"
-                    }),
-                    92852: (c => {
+                    },
+                    92852: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pipelinedestroy"
-                    }),
-                    56072: (c => {
+                    },
+                    56072: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pipelinerebind"
-                    }),
-                    57566: (c => {
+                    },
+                    57566: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pipelineresize"
-                    }),
-                    77085: ((c, g, t) => {
+                    },
+                    77085: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42807,8 +42813,8 @@ return new ` + this.key + `();
                             REBIND: t(56072),
                             RESIZE: t(57566)
                         }
-                    }),
-                    54812: ((c, g, t) => {
+                    },
+                    54812: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42830,8 +42836,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    67329: ((c, g, t) => {
+                    },
+                    67329: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42861,8 +42867,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    8861: ((c, g, t) => {
+                    },
+                    8861: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42910,8 +42916,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = e
-                    }),
-                    51051: ((c, g, t) => {
+                    },
+                    51051: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42936,8 +42942,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    89428: ((c, g, t) => {
+                    },
+                    89428: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42962,8 +42968,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    88904: ((c, g, t) => {
+                    },
+                    88904: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -42984,8 +42990,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = a
-                    }),
-                    63563: ((c, g, t) => {
+                    },
+                    63563: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43016,8 +43022,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    94045: ((c, g, t) => {
+                    },
+                    94045: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43046,8 +43052,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = e
-                    }),
-                    74088: ((c, g, t) => {
+                    },
+                    74088: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43069,8 +43075,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    99636: ((c, g, t) => {
+                    },
+                    99636: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43095,8 +43101,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    34700: ((c, g, t) => {
+                    },
+                    34700: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43120,8 +43126,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    91157: ((c, g, t) => {
+                    },
+                    91157: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43146,8 +43152,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    27797: ((c, g, t) => {
+                    },
+                    27797: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43169,8 +43175,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    67603: ((c, g, t) => {
+                    },
+                    67603: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43197,8 +43203,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    58918: ((c, g, t) => {
+                    },
+                    58918: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43221,8 +43227,8 @@ return new ` + this.key + `();
                             Wipe: t(67603)
                         };
                         c.exports = o
-                    }),
-                    96615: ((c, g, t) => {
+                    },
+                    96615: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43246,144 +43252,144 @@ return new ` + this.key + `();
                                 UtilityPipeline: t(7589)
                             };
                         a = v(!1, a, o), c.exports = a
-                    }),
-                    35407: (c => {
+                    },
+                    35407: c => {
                         c.exports = ["#define SHADER_NAME PHASER_ADD_BLEND_FS", "precision mediump float;", "uniform sampler2D uMainSampler1;", "uniform sampler2D uMainSampler2;", "uniform float uStrength;", "varying vec2 outTexCoord;", "void main ()", "{", "    vec4 frame1 = texture2D(uMainSampler1, outTexCoord);", "    vec4 frame2 = texture2D(uMainSampler2, outTexCoord);", "    gl_FragColor = frame1 + frame2 * uStrength;", "}"].join(`
 `)
-                    }),
-                    78908: (c => {
+                    },
+                    78908: c => {
                         c.exports = ["#define SHADER_NAME PHASER_BITMAP_MASK_FS", "precision mediump float;", "uniform vec2 uResolution;", "uniform sampler2D uMainSampler;", "uniform sampler2D uMaskSampler;", "uniform bool uInvertMaskAlpha;", "void main ()", "{", "    vec2 uv = gl_FragCoord.xy / uResolution;", "    vec4 mainColor = texture2D(uMainSampler, uv);", "    vec4 maskColor = texture2D(uMaskSampler, uv);", "    if (!uInvertMaskAlpha)", "    {", "        mainColor *= maskColor.a;", "    }", "    else", "    {", "        mainColor *= (1.0 - maskColor.a);", "    }", "    gl_FragColor = mainColor;", "}"].join(`
 `)
-                    }),
-                    85191: (c => {
+                    },
+                    85191: c => {
                         c.exports = ["#define SHADER_NAME PHASER_BITMAP_MASK_VS", "precision mediump float;", "attribute vec2 inPosition;", "void main ()", "{", "    gl_Position = vec4(inPosition, 0.0, 1.0);", "}"].join(`
 `)
-                    }),
-                    96293: (c => {
+                    },
+                    96293: c => {
                         c.exports = ["#define SHADER_NAME PHASER_COLORMATRIX_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform float uColorMatrix[20];", "uniform float uAlpha;", "varying vec2 outTexCoord;", "void main ()", "{", "    vec4 c = texture2D(uMainSampler, outTexCoord);", "    if (uAlpha == 0.0)", "    {", "        gl_FragColor = c;", "        return;", "    }", "    if (c.a > 0.0)", "    {", "        c.rgb /= c.a;", "    }", "    vec4 result;", "    result.r = (uColorMatrix[0] * c.r) + (uColorMatrix[1] * c.g) + (uColorMatrix[2] * c.b) + (uColorMatrix[3] * c.a) + uColorMatrix[4];", "    result.g = (uColorMatrix[5] * c.r) + (uColorMatrix[6] * c.g) + (uColorMatrix[7] * c.b) + (uColorMatrix[8] * c.a) + uColorMatrix[9];", "    result.b = (uColorMatrix[10] * c.r) + (uColorMatrix[11] * c.g) + (uColorMatrix[12] * c.b) + (uColorMatrix[13] * c.a) + uColorMatrix[14];", "    result.a = (uColorMatrix[15] * c.r) + (uColorMatrix[16] * c.g) + (uColorMatrix[17] * c.b) + (uColorMatrix[18] * c.a) + uColorMatrix[19];", "    vec3 rgb = mix(c.rgb, result.rgb, uAlpha);", "    rgb *= result.a;", "    gl_FragColor = vec4(rgb, result.a);", "}"].join(`
 `)
-                    }),
-                    36682: (c => {
+                    },
+                    36682: c => {
                         c.exports = ["#define SHADER_NAME PHASER_COPY_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform float uBrightness;", "varying vec2 outTexCoord;", "void main ()", "{", "    gl_FragColor = texture2D(uMainSampler, outTexCoord) * uBrightness;", "}"].join(`
 `)
-                    }),
-                    99155: (c => {
+                    },
+                    99155: c => {
                         c.exports = ["#define SHADER_NAME BARREL_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform float amount;", "varying vec2 outTexCoord;", "vec2 Distort(vec2 p)", "{", "    float theta  = atan(p.y, p.x);", "    float radius = length(p);", "    radius = pow(radius, amount);", "    p.x = radius * cos(theta);", "    p.y = radius * sin(theta);", "    return 0.5 * (p + 1.0);", "}", "void main()", "{", "    vec2 xy = 2.0 * outTexCoord - 1.0;", "    vec2 texCoord = outTexCoord;", "    if (length(xy) < 1.0)", "    {", "        texCoord = Distort(xy);", "    }", "    gl_FragColor = texture2D(uMainSampler, texCoord);", "}"].join(`
 `)
-                    }),
-                    24400: (c => {
+                    },
+                    24400: c => {
                         c.exports = ["#define SHADER_NAME BLOOM_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform vec2 offset;", "uniform float strength;", "uniform vec3 color;", "varying vec2 outTexCoord;", "void main ()", "{", "    vec4 sum = texture2D(uMainSampler, outTexCoord) * 0.204164 * strength;", "    sum = sum + texture2D(uMainSampler, outTexCoord + offset * 1.407333) * 0.304005;", "    sum = sum + texture2D(uMainSampler, outTexCoord - offset * 1.407333) * 0.304005;", "    sum = sum + texture2D(uMainSampler, outTexCoord + offset * 3.294215) * 0.093913;", "    gl_FragColor = (sum + texture2D(uMainSampler, outTexCoord - offset * 3.294215) * 0.093913) * vec4(color, 1);", "}"].join(`
 `)
-                    }),
-                    94328: (c => {
+                    },
+                    94328: c => {
                         c.exports = ["#define SHADER_NAME BLUR_HIGH_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform vec2 resolution;", "uniform vec2 offset;", "uniform float strength;", "uniform vec3 color;", "varying vec2 outTexCoord;", "void main ()", "{", "    vec2 uv = outTexCoord;", "    vec4 col = vec4(0.0);", "    vec2 off1 = vec2(1.411764705882353) * offset * strength;", "    vec2 off2 = vec2(3.2941176470588234) * offset * strength;", "    vec2 off3 = vec2(5.176470588235294) * offset * strength;", "    col += texture2D(uMainSampler, uv) * 0.1964825501511404;", "    col += texture2D(uMainSampler, uv + (off1 / resolution)) * 0.2969069646728344;", "    col += texture2D(uMainSampler, uv - (off1 / resolution)) * 0.2969069646728344;", "    col += texture2D(uMainSampler, uv + (off2 / resolution)) * 0.09447039785044732;", "    col += texture2D(uMainSampler, uv - (off2 / resolution)) * 0.09447039785044732;", "    col += texture2D(uMainSampler, uv + (off3 / resolution)) * 0.010381362401148057;", "    col += texture2D(uMainSampler, uv - (off3 / resolution)) * 0.010381362401148057;", "    gl_FragColor = col * vec4(color, 1.0);", "}"].join(`
 `)
-                    }),
-                    41514: (c => {
+                    },
+                    41514: c => {
                         c.exports = ["#define SHADER_NAME BLUR_LOW_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform vec2 resolution;", "uniform vec2 offset;", "uniform float strength;", "uniform vec3 color;", "varying vec2 outTexCoord;", "void main ()", "{", "    vec2 uv = outTexCoord;", "    vec4 col = vec4(0.0);", "    vec2 offset = vec2(1.333) * offset * strength;", "    col += texture2D(uMainSampler, uv) * 0.29411764705882354;", "    col += texture2D(uMainSampler, uv + (offset / resolution)) * 0.35294117647058826;", "    col += texture2D(uMainSampler, uv - (offset / resolution)) * 0.35294117647058826;", "    gl_FragColor = col * vec4(color, 1.0);", "}"].join(`
 `)
-                    }),
-                    51078: (c => {
+                    },
+                    51078: c => {
                         c.exports = ["#define SHADER_NAME BLUR_MED_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform vec2 resolution;", "uniform vec2 offset;", "uniform float strength;", "uniform vec3 color;", "varying vec2 outTexCoord;", "void main ()", "{", "    vec2 uv = outTexCoord;", "    vec4 col = vec4(0.0);", "    vec2 off1 = vec2(1.3846153846) * offset * strength;", "    vec2 off2 = vec2(3.2307692308) * offset * strength;", "    col += texture2D(uMainSampler, uv) * 0.2270270270;", "    col += texture2D(uMainSampler, uv + (off1 / resolution)) * 0.3162162162;", "    col += texture2D(uMainSampler, uv - (off1 / resolution)) * 0.3162162162;", "    col += texture2D(uMainSampler, uv + (off2 / resolution)) * 0.0702702703;", "    col += texture2D(uMainSampler, uv - (off2 / resolution)) * 0.0702702703;", "    gl_FragColor = col * vec4(color, 1.0);", "}"].join(`
 `)
-                    }),
-                    90610: (c => {
+                    },
+                    90610: c => {
                         c.exports = ["#define SHADER_NAME BOKEH_FS", "precision mediump float;", "#define ITERATIONS 100.0", "#define ONEOVER_ITR 1.0 / ITERATIONS", "#define PI 3.141596", "#define GOLDEN_ANGLE 2.39996323", "uniform sampler2D uMainSampler;", "uniform vec2 resolution;", "uniform float radius;", "uniform float amount;", "uniform float contrast;", "uniform bool isTiltShift;", "uniform float strength;", "uniform vec2 blur;", "varying vec2 outTexCoord;", "vec2 Sample (in float theta, inout float r)", "{", "    r += 1.0 / r;", "    return (r - 1.0) * vec2(cos(theta), sin(theta)) * 0.06;", "}", "vec3 Bokeh (sampler2D tex, vec2 uv, float radius)", "{", "    vec3 acc = vec3(0.0);", "    vec3 div = vec3(0.0);", "    vec2 pixel = vec2(resolution.y / resolution.x, 1.0) * radius * .025;", "    float r = 1.0;", "    for (float j = 0.0; j < GOLDEN_ANGLE * ITERATIONS; j += GOLDEN_ANGLE)", "    {", "        vec3 col = texture2D(tex, uv + pixel * Sample(j, r)).xyz;", "        col = contrast > 0.0 ? col * col * (1.0 + contrast) : col;", "        vec3 bokeh = vec3(0.5) + pow(col, vec3(10.0)) * amount;", "        acc += col * bokeh;", "        div += bokeh;", "    }", "    return acc / div;", "}", "void main ()", "{", "    float shift = 1.0;", "    if (isTiltShift)", "    {", "        vec2 uv = vec2(gl_FragCoord.xy / resolution + vec2(-0.5, -0.5)) * 2.0;", "        float centerStrength = 1.0;", "        shift = length(uv * blur * strength) * centerStrength;", "    }", "    gl_FragColor = vec4(Bokeh(uMainSampler, outTexCoord * vec2(1.0, 1.0), radius * shift), 0.0);", "}"].join(`
 `)
-                    }),
-                    91899: (c => {
+                    },
+                    91899: c => {
                         c.exports = ["#define SHADER_NAME CIRCLE_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform vec2 resolution;", "uniform vec3 color;", "uniform vec4 backgroundColor;", "uniform float thickness;", "uniform float scale;", "uniform float feather;", "varying vec2 outTexCoord;", "void main ()", "{", "    vec4 texture = texture2D(uMainSampler, outTexCoord);", "    vec2 position = (gl_FragCoord.xy / resolution.xy) * 2.0 - 1.0;", "    float aspectRatio = resolution.x / resolution.y;", "    position.x *= aspectRatio;", "    float grad = length(position);", "    float outer = aspectRatio;", "    float inner = outer - (thickness * 2.0 / resolution.y);", "    if (aspectRatio >= 1.0)", "    {", "        float f = 2.0 + (resolution.y / resolution.x);", "        outer = 1.0;", "        inner = 1.0 - (thickness * f / resolution.x);", "    }", "    outer *= scale;", "    inner *= scale;", "    float circle = smoothstep(outer, outer - 0.01, grad);", "    float ring = circle - smoothstep(inner, inner - feather, grad);", "    texture = mix(backgroundColor * backgroundColor.a, texture, texture.a);", "    texture = (texture * (circle - ring));", "    gl_FragColor = vec4(texture.rgb + (ring * color), texture.a);", "}"].join(`
 `)
-                    }),
-                    47838: (c => {
+                    },
+                    47838: c => {
                         c.exports = ["#define SHADER_NAME DISPLACEMENT_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform sampler2D uDisplacementSampler;", "uniform vec2 amount;", "varying vec2 outTexCoord;", "void main ()", "{", "    vec2 disp = (-vec2(0.5, 0.5) + texture2D(uDisplacementSampler, outTexCoord).rr) * amount;", "    gl_FragColor = texture2D(uMainSampler, outTexCoord + disp).rgba;", "}"].join(`
 `)
-                    }),
-                    98656: (c => {
+                    },
+                    98656: c => {
                         c.exports = ["#define SHADER_NAME GLOW_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "varying vec2 outTexCoord;", "uniform float outerStrength;", "uniform float innerStrength;", "uniform vec2 resolution;", "uniform vec4 glowColor;", "uniform bool knockout;", "const float PI = 3.14159265358979323846264;", "const float DIST = __DIST__;", "const float SIZE = min(__SIZE__, PI * 2.0);", "const float STEP = ceil(PI * 2.0 / SIZE);", "const float MAX_ALPHA = STEP * DIST * (DIST + 1.0) / 2.0;", "void main ()", "{", "    vec2 px = vec2(1.0 / resolution.x, 1.0 / resolution.y);", "    float totalAlpha = 0.0;", "    vec2 direction;", "    vec2 displaced;", "    vec4 color;", "    for (float angle = 0.0; angle < PI * 2.0; angle += SIZE)", "    {", "        direction = vec2(cos(angle), sin(angle)) * px;", "        for (float curDistance = 0.0; curDistance < DIST; curDistance++)", "        {", "            displaced = outTexCoord + direction * (curDistance + 1.0);", "            color = texture2D(uMainSampler, displaced);", "            totalAlpha += (DIST - curDistance) * color.a;", "        }", "    }", "    color = texture2D(uMainSampler, outTexCoord);", "    float alphaRatio = (totalAlpha / MAX_ALPHA);", "    float innerGlowAlpha = (1.0 - alphaRatio) * innerStrength * color.a;", "    float innerGlowStrength = min(1.0, innerGlowAlpha);", "    vec4 innerColor = mix(color, glowColor, innerGlowStrength);", "    float outerGlowAlpha = alphaRatio * outerStrength * (1.0 - color.a);", "    float outerGlowStrength = min(1.0 - innerColor.a, outerGlowAlpha);", "    vec4 outerGlowColor = outerGlowStrength * glowColor.rgba;", "    if (knockout)", "    {", "        float resultAlpha = outerGlowAlpha + innerGlowAlpha;", "        gl_FragColor = vec4(glowColor.rgb * resultAlpha, resultAlpha);", "    }", "    else", "    {", "        gl_FragColor = innerColor + outerGlowColor;", "    }", "}"].join(`
 `)
-                    }),
-                    70463: (c => {
+                    },
+                    70463: c => {
                         c.exports = ["#define SHADER_NAME GRADIENT_FS", "#define SRGB_TO_LINEAR(c) pow((c), vec3(2.2))", "#define LINEAR_TO_SRGB(c) pow((c), vec3(1.0 / 2.2))", "#define SRGB(r, g, b) SRGB_TO_LINEAR(vec3(float(r), float(g), float(b)) / 255.0)", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform vec2 positionFrom;", "uniform vec2 positionTo;", "uniform vec3 color1;", "uniform vec3 color2;", "uniform float alpha;", "uniform int size;", "varying vec2 outTexCoord;", "float gradientNoise(in vec2 uv)", "{", "    const vec3 magic = vec3(0.06711056, 0.00583715, 52.9829189);", "    return fract(magic.z * fract(dot(uv, magic.xy)));", "}", "float stepped (in float s, in float scale, in int steps)", "{", "    return steps > 0 ? floor( s / ((1.0 * scale) / float(steps))) * 1.0 / float(steps - 1) : s;", "}", "void main ()", "{", "    vec2 a = positionFrom;", "    vec2 b = positionTo;", "    vec2 ba = b - a;", "    float d = dot(outTexCoord - a, ba) / dot(ba, ba);", "    float t = size > 0 ? stepped(d, 1.0, size) : d;", "    t = smoothstep(0.0, 1.0, clamp(t, 0.0, 1.0));", "    vec3 color = mix(SRGB(color1.r, color1.g, color1.b), SRGB(color2.r, color2.g, color2.b), t);", "    color = LINEAR_TO_SRGB(color);", "    color += (1.0 / 255.0) * gradientNoise(outTexCoord) - (0.5 / 255.0);", "    vec4 texture = texture2D(uMainSampler, outTexCoord);", "    gl_FragColor = vec4(mix(color.rgb, texture.rgb, alpha), 1.0) * texture.a;", "}"].join(`
 `)
-                    }),
-                    50831: (c => {
+                    },
+                    50831: c => {
                         c.exports = ["#define SHADER_NAME PIXELATE_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform vec2 resolution;", "uniform float amount;", "varying vec2 outTexCoord;", "void main ()", "{", "    float pixelSize = floor(2.0 + amount);", "    vec2 center = pixelSize * floor(outTexCoord * resolution / pixelSize) + pixelSize * vec2(0.5, 0.5);", "    vec2 corner1 = center + pixelSize * vec2(-0.5, -0.5);", "    vec2 corner2 = center + pixelSize * vec2(+0.5, -0.5);", "    vec2 corner3 = center + pixelSize * vec2(+0.5, +0.5);", "    vec2 corner4 = center + pixelSize * vec2(-0.5, +0.5);", "    vec4 pixel = 0.4 * texture2D(uMainSampler, center / resolution);", "    pixel += 0.15 * texture2D(uMainSampler, corner1 / resolution);", "    pixel += 0.15 * texture2D(uMainSampler, corner2 / resolution);", "    pixel += 0.15 * texture2D(uMainSampler, corner3 / resolution);", "    pixel += 0.15 * texture2D(uMainSampler, corner4 / resolution);", "    gl_FragColor = pixel;", "}"].join(`
 `)
-                    }),
-                    92595: (c => {
+                    },
+                    92595: c => {
                         c.exports = ["#define SHADER_NAME SHADOW_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "varying vec2 outTexCoord;", "uniform vec2 lightPosition;", "uniform vec4 color;", "uniform float decay;", "uniform float power;", "uniform float intensity;", "uniform int samples;", "const int MAX = 12;", "void main ()", "{", "    vec4 texture = texture2D(uMainSampler, outTexCoord);", "    vec2 pc = (lightPosition - outTexCoord) * intensity;", "    float shadow = 0.0;", "    float limit = max(float(MAX), float(samples));", "    for (int i = 0; i < MAX; ++i)", "    {", "        if (i >= samples)", "        {", "            break;", "        }", "        shadow += texture2D(uMainSampler, outTexCoord + float(i) * decay / limit * pc).a * power;", "    }", "    float mask = 1.0 - texture.a;", "    gl_FragColor = mix(texture, color, shadow * mask);", "}"].join(`
 `)
-                    }),
-                    72464: (c => {
+                    },
+                    72464: c => {
                         c.exports = ["#define SHADER_NAME SHINE_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform vec2 resolution;", "uniform bool reveal;", "uniform float speed;", "uniform float time;", "uniform float lineWidth;", "uniform float gradient;", "varying vec2 outTexCoord;", "void main ()", "{", "	vec2 uv = gl_FragCoord.xy / resolution.xy;", "    vec4 tex = texture2D(uMainSampler, outTexCoord);", "    vec4 col1 = vec4(0.3, 0.0, 0.0, 1.0);", "    vec4 col2 = vec4(0.85, 0.85, 0.85, 1.0);", "    uv.x = uv.x - mod(time * speed, 2.0) + 0.5;", "    float y = uv.x * gradient;", "    float s = smoothstep(y - lineWidth, y, uv.y) - smoothstep(y, y + lineWidth, uv.y);", "    gl_FragColor = (((s * col1) + (s * col2)) * tex);", "    if (!reveal)", "    {", "        gl_FragColor += tex;", "    }", "}"].join(`
 `)
-                    }),
-                    39249: (c => {
+                    },
+                    39249: c => {
                         c.exports = ["#define SHADER_NAME VIGNETTE_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform float radius;", "uniform float strength;", "uniform vec2 position;", "varying vec2 outTexCoord;", "void main ()", "{", "    vec4 col = vec4(1.0);", "    float d = length(outTexCoord - position);", "    if (d <= radius)", "    {", "        float g = d / radius;", "        g = sin(g * 3.14 * strength);", "    	col = vec4(g * g * g);", "    }", "    vec4 texture = texture2D(uMainSampler, outTexCoord);", "    gl_FragColor = texture * (1.0 - col);", "}"].join(`
 `)
-                    }),
-                    2878: (c => {
+                    },
+                    2878: c => {
                         c.exports = ["#define SHADER_NAME WIPE_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "uniform vec4 config;", "uniform bool reveal;", "varying vec2 outTexCoord;", "void main ()", "{", "    vec2 uv = outTexCoord;", "    vec4 color0;", "    vec4 color1;", "    if (reveal)", "    {", "        color0 = vec4(0);", "        color1 = texture2D(uMainSampler, uv);", "    }", "    else", "    {", "        color0 = texture2D(uMainSampler, uv);", "        color1 = vec4(0);", "    }", "    float distance = config.x;", "    float width = config.y;", "    float direction = config.z;", "    float axis = uv.x;", "    if (config.w == 1.0)", "    {", "        axis = uv.y;", "    }", "    float adjust = mix(width, -width, distance);", "    float value = smoothstep(distance - width, distance + width, abs(direction - axis) + adjust);", "    gl_FragColor = mix(color1, color0, value);", "}"].join(`
 `)
-                    }),
-                    31063: (c => {
+                    },
+                    31063: c => {
                         c.exports = ["#define SHADER_NAME PHASER_LIGHT_FS", "precision mediump float;", "struct Light", "{", "    vec2 position;", "    vec3 color;", "    float intensity;", "    float radius;", "};", "const int kMaxLights = %LIGHT_COUNT%;", "uniform vec4 uCamera; /* x, y, rotation, zoom */", "uniform vec2 uResolution;", "uniform sampler2D uMainSampler;", "uniform sampler2D uNormSampler;", "uniform vec3 uAmbientLightColor;", "uniform Light uLights[kMaxLights];", "uniform mat3 uInverseRotationMatrix;", "uniform int uLightCount;", "varying vec2 outTexCoord;", "varying float outTexId;", "varying float outTintEffect;", "varying vec4 outTint;", "void main ()", "{", "    vec3 finalColor = vec3(0.0, 0.0, 0.0);", "    vec4 texel = vec4(outTint.bgr * outTint.a, outTint.a);", "    vec4 texture = texture2D(uMainSampler, outTexCoord);", "    vec4 color = texture * texel;", "    if (outTintEffect == 1.0)", "    {", "        color.rgb = mix(texture.rgb, outTint.bgr * outTint.a, texture.a);", "    }", "    else if (outTintEffect == 2.0)", "    {", "        color = texel;", "    }", "    vec3 normalMap = texture2D(uNormSampler, outTexCoord).rgb;", "    vec3 normal = normalize(uInverseRotationMatrix * vec3(normalMap * 2.0 - 1.0));", "    vec2 res = vec2(min(uResolution.x, uResolution.y)) * uCamera.w;", "    for (int index = 0; index < kMaxLights; ++index)", "    {", "        if (index < uLightCount)", "        {", "            Light light = uLights[index];", "            vec3 lightDir = vec3((light.position.xy / res) - (gl_FragCoord.xy / res), 0.1);", "            vec3 lightNormal = normalize(lightDir);", "            float distToSurf = length(lightDir) * uCamera.w;", "            float diffuseFactor = max(dot(normal, lightNormal), 0.0);", "            float radius = (light.radius / res.x * uCamera.w) * uCamera.w;", "            float attenuation = clamp(1.0 - distToSurf * distToSurf / (radius * radius), 0.0, 1.0);", "            vec3 diffuse = light.color * diffuseFactor;", "            finalColor += (attenuation * diffuse) * light.intensity;", "        }", "    }", "    vec4 colorOutput = vec4(uAmbientLightColor + finalColor, 1.0);", "    gl_FragColor = color * vec4(colorOutput.rgb * colorOutput.a, colorOutput.a);", "}"].join(`
 `)
-                    }),
-                    48247: (c => {
+                    },
+                    48247: c => {
                         c.exports = ["#define SHADER_NAME PHASER_LINEAR_BLEND_FS", "precision mediump float;", "uniform sampler2D uMainSampler1;", "uniform sampler2D uMainSampler2;", "uniform float uStrength;", "varying vec2 outTexCoord;", "void main ()", "{", "    vec4 frame1 = texture2D(uMainSampler1, outTexCoord);", "    vec4 frame2 = texture2D(uMainSampler2, outTexCoord);", "    gl_FragColor = mix(frame1, frame2 * uStrength, 0.5);", "}"].join(`
 `)
-                    }),
-                    41214: (c => {
+                    },
+                    41214: c => {
                         c.exports = ["#define SHADER_NAME PHASER_MESH_FS", "precision mediump float;", "uniform vec3 uLightPosition;", "uniform vec3 uLightAmbient;", "uniform vec3 uLightDiffuse;", "uniform vec3 uLightSpecular;", "uniform vec3 uFogColor;", "uniform float uFogNear;", "uniform float uFogFar;", "uniform vec3 uMaterialAmbient;", "uniform vec3 uMaterialDiffuse;", "uniform vec3 uMaterialSpecular;", "uniform float uMaterialShine;", "uniform vec3 uCameraPosition;", "uniform sampler2D uTexture;", "varying vec2 vTextureCoord;", "varying vec3 vNormal;", "varying vec3 vPosition;", "void main (void)", "{", "    vec4 color = texture2D(uTexture, vTextureCoord);", "    vec3 ambient = uLightAmbient * uMaterialAmbient;", "    vec3 norm = normalize(vNormal);", "    vec3 lightDir = normalize(uLightPosition - vPosition);", "    float diff = max(dot(norm, lightDir), 0.0);", "    vec3 diffuse = uLightDiffuse * (diff * uMaterialDiffuse);", "    vec3 viewDir = normalize(uCameraPosition - vPosition);", "    vec3 reflectDir = reflect(-lightDir, norm);", "    float spec = pow(max(dot(viewDir, reflectDir), 0.0), uMaterialShine);", "    vec3 specular = uLightSpecular * (spec * uMaterialSpecular);", "    vec3 result = (ambient + diffuse + specular) * color.rgb;", "    float depth = gl_FragCoord.z / gl_FragCoord.w;", "    float fogFactor = smoothstep(uFogNear, uFogFar, depth);", "    gl_FragColor.rgb = mix(result.rgb, uFogColor, fogFactor);", "    gl_FragColor.a = color.a;", "}"].join(`
 `)
-                    }),
-                    39653: (c => {
+                    },
+                    39653: c => {
                         c.exports = ["#define SHADER_NAME PHASER_MESH_VS", "precision mediump float;", "attribute vec3 aVertexPosition;", "attribute vec3 aVertexNormal;", "attribute vec2 aTextureCoord;", "uniform mat4 uViewProjectionMatrix;", "uniform mat4 uModelMatrix;", "uniform mat4 uNormalMatrix;", "varying vec2 vTextureCoord;", "varying vec3 vNormal;", "varying vec3 vPosition;", "void main ()", "{", "    vTextureCoord = aTextureCoord;", "    vPosition = vec3(uModelMatrix * vec4(aVertexPosition, 1.0));", "    vNormal = vec3(uNormalMatrix * vec4(aVertexNormal, 1.0));", "    gl_Position = uViewProjectionMatrix * uModelMatrix * vec4(aVertexPosition, 1.0);", "}"].join(`
 `)
-                    }),
-                    62143: (c => {
+                    },
+                    62143: c => {
                         c.exports = ["#define SHADER_NAME PHASER_MOBILE_FS", "#ifdef GL_FRAGMENT_PRECISION_HIGH", "precision highp float;", "#else", "precision mediump float;", "#endif", "uniform sampler2D uMainSampler;", "varying vec2 outTexCoord;", "varying float outTintEffect;", "varying vec4 outTint;", "void main ()", "{", "    vec4 texel = vec4(outTint.bgr * outTint.a, outTint.a);", "    vec4 texture = texture2D(uMainSampler, outTexCoord);", "    vec4 color = texture * texel;", "    if (outTintEffect == 1.0)", "    {", "        color.rgb = mix(texture.rgb, outTint.bgr * outTint.a, texture.a);", "    }", "    else if (outTintEffect == 2.0)", "    {", "        color = texel;", "    }", "    gl_FragColor = color;", "}"].join(`
 `)
-                    }),
-                    47940: (c => {
+                    },
+                    47940: c => {
                         c.exports = ["#define SHADER_NAME PHASER_MOBILE_VS", "precision mediump float;", "uniform mat4 uProjectionMatrix;", "uniform vec2 uResolution;", "attribute vec2 inPosition;", "attribute vec2 inTexCoord;", "attribute float inTexId;", "attribute float inTintEffect;", "attribute vec4 inTint;", "varying vec2 outTexCoord;", "varying float outTintEffect;", "varying vec4 outTint;", "void main ()", "{", "    gl_Position = uProjectionMatrix * vec4(inPosition, 1.0, 1.0);", "    outTexCoord = inTexCoord;", "    outTint = inTint;", "    outTintEffect = inTintEffect;", "}"].join(`
 `)
-                    }),
-                    98840: (c => {
+                    },
+                    98840: c => {
                         c.exports = ["#define SHADER_NAME PHASER_MULTI_FS", "#ifdef GL_FRAGMENT_PRECISION_HIGH", "precision highp float;", "#else", "precision mediump float;", "#endif", "uniform sampler2D uMainSampler[%count%];", "varying vec2 outTexCoord;", "varying float outTexId;", "varying float outTintEffect;", "varying vec4 outTint;", "void main ()", "{", "    vec4 texture;", "    %forloop%", "    vec4 texel = vec4(outTint.bgr * outTint.a, outTint.a);", "    vec4 color = texture * texel;", "    if (outTintEffect == 1.0)", "    {", "        color.rgb = mix(texture.rgb, outTint.bgr * outTint.a, texture.a);", "    }", "    else if (outTintEffect == 2.0)", "    {", "        color = texel;", "    }", "    gl_FragColor = color;", "}"].join(`
 `)
-                    }),
-                    44667: (c => {
+                    },
+                    44667: c => {
                         c.exports = ["#define SHADER_NAME PHASER_MULTI_VS", "precision mediump float;", "uniform mat4 uProjectionMatrix;", "uniform vec2 uResolution;", "attribute vec2 inPosition;", "attribute vec2 inTexCoord;", "attribute float inTexId;", "attribute float inTintEffect;", "attribute vec4 inTint;", "varying vec2 outTexCoord;", "varying float outTexId;", "varying float outTintEffect;", "varying vec4 outTint;", "void main ()", "{", "    gl_Position = uProjectionMatrix * vec4(inPosition, 1.0, 1.0);", "    outTexCoord = inTexCoord;", "    outTexId = inTexId;", "    outTint = inTint;", "    outTintEffect = inTintEffect;", "}"].join(`
 `)
-                    }),
-                    4127: (c => {
+                    },
+                    4127: c => {
                         c.exports = ["#define SHADER_NAME PHASER_POINTLIGHT_FS", "precision mediump float;", "uniform vec2 uResolution;", "uniform float uCameraZoom;", "varying vec4 lightPosition;", "varying vec4 lightColor;", "varying float lightRadius;", "varying float lightAttenuation;", "void main ()", "{", "    vec2 center = (lightPosition.xy + 1.0) * (uResolution.xy * 0.5);", "    float distToSurf = length(center - gl_FragCoord.xy);", "    float radius = 1.0 - distToSurf / (lightRadius * uCameraZoom);", "    float intensity = smoothstep(0.0, 1.0, radius * lightAttenuation);", "    vec4 color = vec4(intensity, intensity, intensity, 0.0) * lightColor;", "    gl_FragColor = vec4(color.rgb * lightColor.a, color.a);", "}"].join(`
 `)
-                    }),
-                    89924: (c => {
+                    },
+                    89924: c => {
                         c.exports = ["#define SHADER_NAME PHASER_POINTLIGHT_VS", "precision mediump float;", "uniform mat4 uProjectionMatrix;", "attribute vec2 inPosition;", "attribute vec2 inLightPosition;", "attribute vec4 inLightColor;", "attribute float inLightRadius;", "attribute float inLightAttenuation;", "varying vec4 lightPosition;", "varying vec4 lightColor;", "varying float lightRadius;", "varying float lightAttenuation;", "void main ()", "{", "    lightColor = inLightColor;", "    lightRadius = inLightRadius;", "    lightAttenuation = inLightAttenuation;", "    lightPosition = uProjectionMatrix * vec4(inLightPosition, 1.0, 1.0);", "    gl_Position = uProjectionMatrix * vec4(inPosition, 1.0, 1.0);", "}"].join(`
 `)
-                    }),
-                    27681: (c => {
+                    },
+                    27681: c => {
                         c.exports = ["#define SHADER_NAME PHASER_POSTFX_FS", "precision mediump float;", "uniform sampler2D uMainSampler;", "varying vec2 outTexCoord;", "void main ()", "{", "    gl_FragColor = texture2D(uMainSampler, outTexCoord);", "}"].join(`
 `)
-                    }),
-                    49627: (c => {
+                    },
+                    49627: c => {
                         c.exports = ["#define SHADER_NAME PHASER_QUAD_VS", "precision mediump float;", "attribute vec2 inPosition;", "attribute vec2 inTexCoord;", "varying vec2 outFragCoord;", "varying vec2 outTexCoord;", "void main ()", "{", "    outFragCoord = inPosition.xy * 0.5 + 0.5;", "    outTexCoord = inTexCoord;", "    gl_Position = vec4(inPosition, 0, 1);", "}"].join(`
 `)
-                    }),
-                    45561: (c => {
+                    },
+                    45561: c => {
                         c.exports = ["#define SHADER_NAME PHASER_SINGLE_FS", "#ifdef GL_FRAGMENT_PRECISION_HIGH", "precision highp float;", "#else", "precision mediump float;", "#endif", "uniform sampler2D uMainSampler;", "varying vec2 outTexCoord;", "varying float outTintEffect;", "varying vec4 outTint;", "void main ()", "{", "    vec4 texture = texture2D(uMainSampler, outTexCoord);", "    vec4 texel = vec4(outTint.bgr * outTint.a, outTint.a);", "    vec4 color = texture * texel;", "    if (outTintEffect == 1.0)", "    {", "        color.rgb = mix(texture.rgb, outTint.bgr * outTint.a, texture.a);", "    }", "    else if (outTintEffect == 2.0)", "    {", "        color = texel;", "    }", "    gl_FragColor = color;", "}"].join(`
 `)
-                    }),
-                    60722: (c => {
+                    },
+                    60722: c => {
                         c.exports = ["#define SHADER_NAME PHASER_SINGLE_VS", "precision mediump float;", "uniform mat4 uProjectionMatrix;", "uniform vec2 uResolution;", "attribute vec2 inPosition;", "attribute vec2 inTexCoord;", "attribute float inTexId;", "attribute float inTintEffect;", "attribute vec4 inTint;", "varying vec2 outTexCoord;", "varying float outTintEffect;", "varying vec4 outTint;", "void main ()", "{", "    gl_Position = uProjectionMatrix * vec4(inPosition, 1.0, 1.0);", "    outTexCoord = inTexCoord;", "    outTint = inTint;", "    outTintEffect = inTintEffect;", "}"].join(`
 `)
-                    }),
-                    89350: ((c, g, t) => {
+                    },
+                    89350: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@photonstorm.com>
                          * @copyright    2013-2023 Photon Storm Ltd.
@@ -43425,8 +43431,8 @@ return new ` + this.key + `();
                             SingleFrag: t(45561),
                             SingleVert: t(60722)
                         }
-                    }),
-                    93567: ((c, g, t) => {
+                    },
+                    93567: (c, g, t) => {
                         /**
                          * @author       Benjamin D. Richards <benjamindrichards@gmail.com>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43450,8 +43456,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = v
-                    }),
-                    26128: ((c, g, t) => {
+                    },
+                    26128: (c, g, t) => {
                         /**
                          * @author       Benjamin D. Richards <benjamindrichards@gmail.com>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43478,8 +43484,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = v
-                    }),
-                    84387: ((c, g, t) => {
+                    },
+                    84387: (c, g, t) => {
                         /**
                          * @author       Benjamin D. Richards <benjamindrichards@gmail.com>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43525,8 +43531,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = a
-                    }),
-                    1482: ((c, g, t) => {
+                    },
+                    1482: (c, g, t) => {
                         /**
                          * @author       Benjamin D. Richards <benjamindrichards@gmail.com>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43557,8 +43563,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = v
-                    }),
-                    82751: ((c, g, t) => {
+                    },
+                    82751: (c, g, t) => {
                         /**
                          * @author       Benjamin D. Richards <benjamindrichards@gmail.com>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43619,8 +43625,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = a
-                    }),
-                    57183: ((c, g, t) => {
+                    },
+                    57183: (c, g, t) => {
                         /**
                          * @author       Benjamin D. Richards <benjamindrichards@gmail.com>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43644,8 +43650,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = v
-                    }),
-                    9503: ((c, g, t) => {
+                    },
+                    9503: (c, g, t) => {
                         /**
                          * @author       Benjamin D. Richards <benjamindrichards@gmail.com>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43660,8 +43666,8 @@ return new ` + this.key + `();
                             WebGLUniformLocationWrapper: t(57183)
                         };
                         c.exports = o
-                    }),
-                    76531: ((c, g, t) => {
+                    },
+                    76531: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -43997,8 +44003,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = y
-                    }),
-                    64743: (c => {
+                    },
+                    64743: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44010,8 +44016,8 @@ return new ` + this.key + `();
                             CENTER_HORIZONTALLY: 2,
                             CENTER_VERTICALLY: 3
                         }
-                    }),
-                    39218: (c => {
+                    },
+                    39218: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44023,8 +44029,8 @@ return new ` + this.key + `();
                             PORTRAIT: "portrait-primary",
                             PORTRAIT_SECONDARY: "portrait-secondary"
                         }
-                    }),
-                    81050: (c => {
+                    },
+                    81050: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44039,8 +44045,8 @@ return new ` + this.key + `();
                             RESIZE: 5,
                             EXPAND: 6
                         }
-                    }),
-                    80805: (c => {
+                    },
+                    80805: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44052,8 +44058,8 @@ return new ` + this.key + `();
                             ZOOM_4X: 4,
                             MAX_ZOOM: -1
                         }
-                    }),
-                    13560: ((c, g, t) => {
+                    },
+                    13560: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44066,56 +44072,56 @@ return new ` + this.key + `();
                             ZOOM: t(80805)
                         };
                         c.exports = o
-                    }),
-                    56139: (c => {
+                    },
+                    56139: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "enterfullscreen"
-                    }),
-                    2336: (c => {
+                    },
+                    2336: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "fullscreenfailed"
-                    }),
-                    47412: (c => {
+                    },
+                    47412: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "fullscreenunsupported"
-                    }),
-                    51452: (c => {
+                    },
+                    51452: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "leavefullscreen"
-                    }),
-                    20666: (c => {
+                    },
+                    20666: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "orientationchange"
-                    }),
-                    47945: (c => {
+                    },
+                    47945: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "resize"
-                    }),
-                    97480: ((c, g, t) => {
+                    },
+                    97480: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44129,8 +44135,8 @@ return new ` + this.key + `();
                             ORIENTATION_CHANGE: t(20666),
                             RESIZE: t(47945)
                         }
-                    }),
-                    93364: ((c, g, t) => {
+                    },
+                    93364: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44147,8 +44153,8 @@ return new ` + this.key + `();
                                 Zoom: t(80805)
                             };
                         a = o(!1, a, v.CENTER), a = o(!1, a, v.ORIENTATION), a = o(!1, a, v.SCALE_MODE), a = o(!1, a, v.ZOOM), c.exports = a
-                    }),
-                    27397: ((c, g, t) => {
+                    },
+                    27397: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44167,8 +44173,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = a
-                    }),
-                    52106: ((c, g, t) => {
+                    },
+                    52106: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44181,8 +44187,8 @@ return new ` + this.key + `();
                                 return Array.isArray(i) ? i : r || []
                             };
                         c.exports = v
-                    }),
-                    87033: (c => {
+                    },
+                    87033: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44215,8 +44221,8 @@ return new ` + this.key + `();
                             matterPhysics: "matter"
                         };
                         c.exports = g
-                    }),
-                    97482: ((c, g, t) => {
+                    },
+                    97482: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44231,8 +44237,8 @@ return new ` + this.key + `();
                                 update: function() {}
                             });
                         c.exports = a
-                    }),
-                    60903: ((c, g, t) => {
+                    },
+                    60903: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44573,8 +44579,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = l
-                    }),
-                    52209: ((c, g, t) => {
+                    },
+                    52209: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44722,8 +44728,8 @@ return new ` + this.key + `();
                                 }
                             });
                         i.register("ScenePlugin", e, "scenePlugin"), c.exports = e
-                    }),
-                    55681: ((c, g, t) => {
+                    },
+                    55681: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44759,8 +44765,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = i
-                    }),
-                    2368: ((c, g, t) => {
+                    },
+                    2368: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44872,8 +44878,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = n
-                    }),
-                    89993: (c => {
+                    },
+                    89993: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -44892,184 +44898,184 @@ return new ` + this.key + `();
                             DESTROYED: 9
                         };
                         c.exports = g
-                    }),
-                    69830: (c => {
+                    },
+                    69830: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "addedtoscene"
-                    }),
-                    7919: (c => {
+                    },
+                    7919: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "boot"
-                    }),
-                    46763: (c => {
+                    },
+                    46763: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "create"
-                    }),
-                    11763: (c => {
+                    },
+                    11763: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "destroy"
-                    }),
-                    71555: (c => {
+                    },
+                    71555: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pause"
-                    }),
-                    36735: (c => {
+                    },
+                    36735: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "postupdate"
-                    }),
-                    3809: (c => {
+                    },
+                    3809: c => {
                         /**
                          * @author       samme
                          * @copyright    2021 Photon Storm Ltd.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "prerender"
-                    }),
-                    90716: (c => {
+                    },
+                    90716: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "preupdate"
-                    }),
-                    58262: (c => {
+                    },
+                    58262: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "ready"
-                    }),
-                    91633: (c => {
+                    },
+                    91633: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "removedfromscene"
-                    }),
-                    10319: (c => {
+                    },
+                    10319: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "render"
-                    }),
-                    87132: (c => {
+                    },
+                    87132: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "resume"
-                    }),
-                    81961: (c => {
+                    },
+                    81961: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "shutdown"
-                    }),
-                    90194: (c => {
+                    },
+                    90194: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "sleep"
-                    }),
-                    6265: (c => {
+                    },
+                    6265: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "start"
-                    }),
-                    33178: (c => {
+                    },
+                    33178: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "transitioncomplete"
-                    }),
-                    43063: (c => {
+                    },
+                    43063: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "transitioninit"
-                    }),
-                    11259: (c => {
+                    },
+                    11259: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "transitionout"
-                    }),
-                    61611: (c => {
+                    },
+                    61611: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "transitionstart"
-                    }),
-                    45209: (c => {
+                    },
+                    45209: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "transitionwake"
-                    }),
-                    22966: (c => {
+                    },
+                    22966: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "update"
-                    }),
-                    21747: (c => {
+                    },
+                    21747: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "wake"
-                    }),
-                    44594: ((c, g, t) => {
+                    },
+                    44594: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -45099,8 +45105,8 @@ return new ` + this.key + `();
                             UPDATE: t(22966),
                             WAKE: t(21747)
                         }
-                    }),
-                    62194: ((c, g, t) => {
+                    },
+                    62194: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -45118,8 +45124,8 @@ return new ` + this.key + `();
                                 Systems: t(2368)
                             };
                         a = v(!1, a, o), c.exports = a
-                    }),
-                    30341: ((c, g, t) => {
+                    },
+                    30341: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -45205,8 +45211,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = e
-                    }),
-                    85034: ((c, g, t) => {
+                    },
+                    85034: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -45366,8 +45372,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = l
-                    }),
-                    14747: ((c, g, t) => {
+                    },
+                    14747: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -45385,200 +45391,200 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = r
-                    }),
-                    19723: (c => {
+                    },
+                    19723: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "complete"
-                    }),
-                    98882: (c => {
+                    },
+                    98882: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "decodedall"
-                    }),
-                    57506: (c => {
+                    },
+                    57506: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "decoded"
-                    }),
-                    73146: (c => {
+                    },
+                    73146: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "destroy"
-                    }),
-                    11305: (c => {
+                    },
+                    11305: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "detune"
-                    }),
-                    40577: (c => {
+                    },
+                    40577: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "detune"
-                    }),
-                    30333: (c => {
+                    },
+                    30333: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "mute"
-                    }),
-                    20394: (c => {
+                    },
+                    20394: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "rate"
-                    }),
-                    21802: (c => {
+                    },
+                    21802: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "volume"
-                    }),
-                    1299: (c => {
+                    },
+                    1299: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "looped"
-                    }),
-                    99190: (c => {
+                    },
+                    99190: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "loop"
-                    }),
-                    97125: (c => {
+                    },
+                    97125: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "mute"
-                    }),
-                    89259: (c => {
+                    },
+                    89259: c => {
                         /**
                          * @author       pi-kei
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pan"
-                    }),
-                    79986: (c => {
+                    },
+                    79986: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pauseall"
-                    }),
-                    17586: (c => {
+                    },
+                    17586: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pause"
-                    }),
-                    19618: (c => {
+                    },
+                    19618: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "play"
-                    }),
-                    42306: (c => {
+                    },
+                    42306: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "rate"
-                    }),
-                    10387: (c => {
+                    },
+                    10387: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "resumeall"
-                    }),
-                    48959: (c => {
+                    },
+                    48959: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "resume"
-                    }),
-                    9960: (c => {
+                    },
+                    9960: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "seek"
-                    }),
-                    19180: (c => {
+                    },
+                    19180: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "stopall"
-                    }),
-                    98328: (c => {
+                    },
+                    98328: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "stop"
-                    }),
-                    50401: (c => {
+                    },
+                    50401: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "unlocked"
-                    }),
-                    52498: (c => {
+                    },
+                    52498: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "volume"
-                    }),
-                    14463: ((c, g, t) => {
+                    },
+                    14463: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -45610,8 +45616,8 @@ return new ` + this.key + `();
                             UNLOCKED: t(50401),
                             VOLUME: t(52498)
                         }
-                    }),
-                    64895: ((c, g, t) => {
+                    },
+                    64895: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -45789,8 +45795,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = i
-                    }),
-                    33684: ((c, g, t) => {
+                    },
+                    33684: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -45904,8 +45910,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = i
-                    }),
-                    23717: ((c, g, t) => {
+                    },
+                    23717: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -45924,8 +45930,8 @@ return new ` + this.key + `();
                             NoAudioSound: t(4603),
                             NoAudioSoundManager: t(25960)
                         }
-                    }),
-                    4603: ((c, g, t) => {
+                    },
+                    4603: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -45983,8 +45989,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = n
-                    }),
-                    25960: ((c, g, t) => {
+                    },
+                    25960: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -46054,8 +46060,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = e
-                    }),
-                    71741: ((c, g, t) => {
+                    },
+                    71741: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -46257,8 +46263,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = i
-                    }),
-                    57490: ((c, g, t) => {
+                    },
+                    57490: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -46387,8 +46393,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = h
-                    }),
-                    73162: ((c, g, t) => {
+                    },
+                    73162: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -46523,8 +46529,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = i
-                    }),
-                    90330: ((c, g, t) => {
+                    },
+                    90330: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -46599,8 +46605,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = v
-                    }),
-                    25774: ((c, g, t) => {
+                    },
+                    25774: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -46664,8 +46670,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    59542: ((c, g, t) => {
+                    },
+                    59542: (c, g, t) => {
                         /**
                          * @author       Vladimir Agafonkin
                          * @author       Richard Davey <rich@phaser.io>
@@ -46911,8 +46917,8 @@ return new ` + this.key + `();
                             for (var L = [S, C], F; L.length;) C = L.pop(), S = L.pop(), !(C - S <= P) && (F = S + Math.ceil((C - S) / P / 2) * P, o(x, F, S, C, R), L.push(S, F, F, C))
                         }
                         c.exports = v
-                    }),
-                    35072: ((c, g, t) => {
+                    },
+                    35072: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -47011,8 +47017,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = v
-                    }),
-                    86555: ((c, g, t) => {
+                    },
+                    86555: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -47121,24 +47127,24 @@ return new ` + this.key + `();
                                 }
                             });
                         i.NONE = 0, i.WIDTH_CONTROLS_HEIGHT = 1, i.HEIGHT_CONTROLS_WIDTH = 2, i.FIT = 3, i.ENVELOP = 4, c.exports = i
-                    }),
-                    15238: (c => {
+                    },
+                    15238: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "add"
-                    }),
-                    56187: (c => {
+                    },
+                    56187: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "remove"
-                    }),
-                    82348: ((c, g, t) => {
+                    },
+                    82348: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -47148,8 +47154,8 @@ return new ` + this.key + `();
                             PROCESS_QUEUE_ADD: t(15238),
                             PROCESS_QUEUE_REMOVE: t(56187)
                         }
-                    }),
-                    41392: ((c, g, t) => {
+                    },
+                    41392: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -47164,8 +47170,8 @@ return new ` + this.key + `();
                             Set: t(35072),
                             Size: t(86555)
                         }
-                    }),
-                    57382: ((c, g, t) => {
+                    },
+                    57382: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -47268,8 +47274,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = s
-                    }),
-                    81320: ((c, g, t) => {
+                    },
+                    81320: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -47509,8 +47515,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = f
-                    }),
-                    4327: ((c, g, t) => {
+                    },
+                    4327: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -47686,8 +47692,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    79237: ((c, g, t) => {
+                    },
+                    79237: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -47794,8 +47800,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = i
-                    }),
-                    17130: ((c, g, t) => {
+                    },
+                    17130: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48072,8 +48078,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = S
-                    }),
-                    11876: ((c, g, t) => {
+                    },
+                    11876: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48123,8 +48129,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = e
-                    }),
-                    19673: (c => {
+                    },
+                    19673: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48135,64 +48141,64 @@ return new ` + this.key + `();
                             NEAREST: 1
                         };
                         c.exports = g
-                    }),
-                    44538: (c => {
+                    },
+                    44538: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "addtexture"
-                    }),
-                    63486: (c => {
+                    },
+                    63486: c => {
                         /**
                          * @author       samme
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "addtexture-"
-                    }),
-                    94851: (c => {
+                    },
+                    94851: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "onerror"
-                    }),
-                    29099: (c => {
+                    },
+                    29099: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "onload"
-                    }),
-                    8678: (c => {
+                    },
+                    8678: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "ready"
-                    }),
-                    86415: (c => {
+                    },
+                    86415: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "removetexture"
-                    }),
-                    30879: (c => {
+                    },
+                    30879: c => {
                         /**
                          * @author       samme
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "removetexture-"
-                    }),
-                    69442: ((c, g, t) => {
+                    },
+                    69442: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48207,8 +48213,8 @@ return new ` + this.key + `();
                             REMOVE: t(86415),
                             REMOVE_KEY: t(30879)
                         }
-                    }),
-                    27458: ((c, g, t) => {
+                    },
+                    27458: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48228,8 +48234,8 @@ return new ` + this.key + `();
                                 TextureSource: t(11876)
                             };
                         a = o(!1, a, v), c.exports = a
-                    }),
-                    89905: (c => {
+                    },
+                    89905: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48260,8 +48266,8 @@ return new ` + this.key + `();
                             return t
                         };
                         c.exports = g
-                    }),
-                    72893: (c => {
+                    },
+                    72893: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48272,8 +48278,8 @@ return new ` + this.key + `();
                             return t.add("__BASE", o, 0, 0, v.width, v.height), t
                         };
                         c.exports = g
-                    }),
-                    4832: (c => {
+                    },
+                    4832: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48284,8 +48290,8 @@ return new ` + this.key + `();
                             return t.add("__BASE", o, 0, 0, v.width, v.height), t
                         };
                         c.exports = g
-                    }),
-                    78566: ((c, g, t) => {
+                    },
+                    78566: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48313,8 +48319,8 @@ return new ` + this.key + `();
                                 return a
                             };
                         c.exports = v
-                    }),
-                    39711: ((c, g, t) => {
+                    },
+                    39711: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48344,8 +48350,8 @@ return new ` + this.key + `();
                                 return a
                             };
                         c.exports = v
-                    }),
-                    31403: (c => {
+                    },
+                    31403: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2021 Photon Storm Ltd.
@@ -48393,8 +48399,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    82038: (c => {
+                    },
+                    82038: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2021 Photon Storm Ltd.
@@ -48616,8 +48622,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = C
-                    }),
-                    75549: ((c, g, t) => {
+                    },
+                    75549: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48647,8 +48653,8 @@ return new ` + this.key + `();
                                 return a
                             };
                         c.exports = v
-                    }),
-                    47534: ((c, g, t) => {
+                    },
+                    47534: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48682,8 +48688,8 @@ return new ` + this.key + `();
                                 return a
                             };
                         c.exports = v
-                    }),
-                    86147: (c => {
+                    },
+                    86147: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48731,8 +48737,8 @@ return new ` + this.key + `();
                                 return n !== h && t(v, a, n, l), v
                             };
                         c.exports = o
-                    }),
-                    55222: ((c, g, t) => {
+                    },
+                    55222: (c, g, t) => {
                         /**
                          * @author       Ben Richards <benjamindrichards@gmail.com>
                          * @copyright    2024 Photon Storm Ltd.
@@ -48835,8 +48841,8 @@ return new ` + this.key + `();
                             35919: e
                         };
                         c.exports = v
-                    }),
-                    61309: ((c, g, t) => {
+                    },
+                    61309: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48854,8 +48860,8 @@ return new ` + this.key + `();
                             SpriteSheetFromAtlas: t(47534),
                             UnityYAML: t(86147)
                         }
-                    }),
-                    80341: (c => {
+                    },
+                    80341: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48867,8 +48873,8 @@ return new ` + this.key + `();
                             ARRAY_2D: 2,
                             WELTMEISTER: 3
                         }
-                    }),
-                    16536: ((c, g, t) => {
+                    },
+                    16536: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48892,8 +48898,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = v
-                    }),
-                    27462: ((c, g, t) => {
+                    },
+                    27462: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2021 Photon Storm Ltd.
@@ -48953,8 +48959,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = v
-                    }),
-                    31989: ((c, g, t) => {
+                    },
+                    31989: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -48982,8 +48988,8 @@ return new ` + this.key + `();
                                 })), new r(e, p)
                             };
                         c.exports = i
-                    }),
-                    23029: ((c, g, t) => {
+                    },
+                    23029: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49128,8 +49134,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = e
-                    }),
-                    49075: ((c, g, t) => {
+                    },
+                    49075: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49501,8 +49507,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = y
-                    }),
-                    45939: ((c, g, t) => {
+                    },
+                    45939: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49514,8 +49520,8 @@ return new ` + this.key + `();
                             var r = a !== void 0 ? a : {};
                             return v(this.scene, r.key, r.tileWidth, r.tileHeight, r.width, r.height, r.data, r.insertNull)
                         })
-                    }),
-                    46029: ((c, g, t) => {
+                    },
+                    46029: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49526,8 +49532,8 @@ return new ` + this.key + `();
                         o.register("tilemap", function(a, r, i, e, s, h, n) {
                             return a === null && (a = void 0), r === null && (r = void 0), i === null && (i = void 0), e === null && (e = void 0), s === null && (s = void 0), v(this.scene, a, r, i, e, s, h, n)
                         })
-                    }),
-                    20442: ((c, g, t) => {
+                    },
+                    20442: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49720,8 +49726,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = h
-                    }),
-                    16153: ((c, g, t) => {
+                    },
+                    16153: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49762,8 +49768,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = i
-                    }),
-                    19218: ((c, g, t) => {
+                    },
+                    19218: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49776,8 +49782,8 @@ return new ` + this.key + `();
                             renderWebGL: v,
                             renderCanvas: a
                         }
-                    }),
-                    99558: ((c, g, t) => {
+                    },
+                    99558: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49826,8 +49832,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = v
-                    }),
-                    33629: ((c, g, t) => {
+                    },
+                    33629: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49883,8 +49889,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = a
-                    }),
-                    72023: ((c, g, t) => {
+                    },
+                    72023: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49901,8 +49907,8 @@ return new ` + this.key + `();
                                 return u && (e.faceTop = !0, e.faceBottom = !0, e.faceLeft = !0, e.faceRight = !0), s && s.collides && (u && (e.faceTop = !1), s.faceBottom = !u), h && h.collides && (u && (e.faceBottom = !1), h.faceTop = !u), n && n.collides && (u && (e.faceLeft = !1), n.faceRight = !u), l && l.collides && (u && (e.faceRight = !1), l.faceLeft = !u), e && !e.collides && e.resetFaces(), e
                             };
                         c.exports = v
-                    }),
-                    42573: ((c, g, t) => {
+                    },
+                    42573: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49917,8 +49923,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = a
-                    }),
-                    33528: ((c, g, t) => {
+                    },
+                    33528: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49934,8 +49940,8 @@ return new ` + this.key + `();
                                 return u.x > s.worldView.x + h.scaleX * e.tileWidth * (-n - .5) && u.x < s.worldView.right + h.scaleX * e.tileWidth * (n - .5) && u.y > s.worldView.y + h.scaleY * e.tileHeight * (-l - 1) && u.y < s.worldView.bottom + h.scaleY * e.tileHeight * (l - .5)
                             };
                         c.exports = a
-                    }),
-                    1785: ((c, g, t) => {
+                    },
+                    1785: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -49962,8 +49968,8 @@ return new ` + this.key + `();
                                 f && o(l - 1, u - 1, h + 2, n + 2, d), p.length = 0, m.length = 0
                             };
                         c.exports = i
-                    }),
-                    78419: ((c, g, t) => {
+                    },
+                    78419: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50001,8 +50007,8 @@ return new ` + this.key + `();
                                 return m
                             };
                         c.exports = r
-                    }),
-                    19545: ((c, g, t) => {
+                    },
+                    19545: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50024,8 +50030,8 @@ return new ` + this.key + `();
                                 return r.setTo(f, p, d - f, m - p)
                             };
                         c.exports = i
-                    }),
-                    30003: ((c, g, t) => {
+                    },
+                    30003: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50040,8 +50046,8 @@ return new ` + this.key + `();
                                 return (h.skipCull || h.scrollFactorX !== 1 || h.scrollFactorY !== 1) && (n.left = 0, n.right = r.width, n.top = 0, n.bottom = r.height), v(r, n, s, e), e
                             };
                         c.exports = a
-                    }),
-                    35137: ((c, g, t) => {
+                    },
+                    35137: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50055,8 +50061,8 @@ return new ` + this.key + `();
                                 l && v(e - 1, s - 1, h + 2, n + 2, u)
                             };
                         c.exports = r
-                    }),
-                    40253: ((c, g, t) => {
+                    },
+                    40253: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50068,8 +50074,8 @@ return new ` + this.key + `();
                                 return u.filter(a, r)
                             };
                         c.exports = v
-                    }),
-                    52692: (c => {
+                    },
+                    52692: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50095,8 +50101,8 @@ return new ` + this.key + `();
                                         } return null
                         };
                         c.exports = g
-                    }),
-                    66151: ((c, g, t) => {
+                    },
+                    66151: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50108,8 +50114,8 @@ return new ` + this.key + `();
                                 return u.find(a, r) || null
                             };
                         c.exports = v
-                    }),
-                    97560: ((c, g, t) => {
+                    },
+                    97560: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50121,8 +50127,8 @@ return new ` + this.key + `();
                                 u.forEach(a, r)
                             };
                         c.exports = v
-                    }),
-                    43305: ((c, g, t) => {
+                    },
+                    43305: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50138,8 +50144,8 @@ return new ` + this.key + `();
                                 return h === o.ORTHOGONAL ? v : h === o.HEXAGONAL ? a : h === o.STAGGERED ? e : h === o.ISOMETRIC ? r : i
                             };
                         c.exports = s
-                    }),
-                    7423: ((c, g, t) => {
+                    },
+                    7423: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50153,8 +50159,8 @@ return new ` + this.key + `();
                                 } else return null
                             };
                         c.exports = v
-                    }),
-                    60540: ((c, g, t) => {
+                    },
+                    60540: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50167,8 +50173,8 @@ return new ` + this.key + `();
                                 return n.tilemapLayer.worldToTileXY(i, e, !0, a, h), o(a.x, a.y, s, n)
                             };
                         c.exports = r
-                    }),
-                    55826: ((c, g, t) => {
+                    },
+                    55826: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50187,8 +50193,8 @@ return new ` + this.key + `();
                                 return [new o(f, d), new o(f + s, d), new o(f + s, d + h), new o(f, d + h)]
                             };
                         c.exports = v
-                    }),
-                    11758: ((c, g, t) => {
+                    },
+                    11758: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50202,8 +50208,8 @@ return new ` + this.key + `();
                                 return e === o.ORTHOGONAL ? r : e === o.ISOMETRIC ? a : e === o.HEXAGONAL ? v : (e === o.STAGGERED, a)
                             };
                         c.exports = i
-                    }),
-                    39167: ((c, g, t) => {
+                    },
+                    39167: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50216,8 +50222,8 @@ return new ` + this.key + `();
                                 return i === o.ORTHOGONAL ? a : v
                             };
                         c.exports = r
-                    }),
-                    62e3: ((c, g, t) => {
+                    },
+                    62e3: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50233,8 +50239,8 @@ return new ` + this.key + `();
                                 return h === o.ORTHOGONAL ? e : h === o.ISOMETRIC ? a : h === o.HEXAGONAL ? v : h === o.STAGGERED ? i : r
                             };
                         c.exports = s
-                    }),
-                    5984: ((c, g, t) => {
+                    },
+                    5984: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50248,8 +50254,8 @@ return new ` + this.key + `();
                                 return e === o.ORTHOGONAL ? r : e === o.STAGGERED ? a : v
                             };
                         c.exports = i
-                    }),
-                    7386: ((c, g, t) => {
+                    },
+                    7386: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50273,8 +50279,8 @@ return new ` + this.key + `();
                                 return f
                             };
                         c.exports = v
-                    }),
-                    91141: ((c, g, t) => {
+                    },
+                    91141: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50315,8 +50321,8 @@ return new ` + this.key + `();
                                 return D
                             };
                         c.exports = u
-                    }),
-                    96523: ((c, g, t) => {
+                    },
+                    96523: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50337,8 +50343,8 @@ return new ` + this.key + `();
                                 return o(p, m, y - p, x - m, l, f)
                             };
                         c.exports = i
-                    }),
-                    96113: ((c, g, t) => {
+                    },
+                    96113: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50351,8 +50357,8 @@ return new ` + this.key + `();
                                 return i === o.ORTHOGONAL ? a : v
                             };
                         c.exports = r
-                    }),
-                    16926: ((c, g, t) => {
+                    },
+                    16926: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50368,8 +50374,8 @@ return new ` + this.key + `();
                                 return h === o.ORTHOGONAL ? e : h === o.ISOMETRIC ? a : h === o.HEXAGONAL ? v : h === o.STAGGERED ? i : r
                             };
                         c.exports = s
-                    }),
-                    55762: ((c, g, t) => {
+                    },
+                    55762: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50383,8 +50389,8 @@ return new ` + this.key + `();
                                 return e === o.ORTHOGONAL ? r : e === o.STAGGERED ? a : v
                             };
                         c.exports = i
-                    }),
-                    45091: ((c, g, t) => {
+                    },
+                    45091: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50398,8 +50404,8 @@ return new ` + this.key + `();
                                 } else return !1
                             };
                         c.exports = v
-                    }),
-                    24152: ((c, g, t) => {
+                    },
+                    24152: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50415,8 +50421,8 @@ return new ` + this.key + `();
                                 return o(n, l, h)
                             };
                         c.exports = r
-                    }),
-                    90454: ((c, g, t) => {
+                    },
+                    90454: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50446,8 +50452,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = a
-                    }),
-                    9474: ((c, g, t) => {
+                    },
+                    9474: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50462,8 +50468,8 @@ return new ` + this.key + `();
                                 return h.skipCull && h.scrollFactorX === 1 && h.scrollFactorY === 1 && (n.left = 0, n.right = r.width, n.top = 0, n.bottom = r.height), v(r, n, s, e), e
                             };
                         c.exports = a
-                    }),
-                    27229: ((c, g, t) => {
+                    },
+                    27229: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50489,8 +50495,8 @@ return new ` + this.key + `();
                                 return d
                             };
                         c.exports = r
-                    }),
-                    19951: ((c, g, t) => {
+                    },
+                    19951: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50512,8 +50518,8 @@ return new ` + this.key + `();
                                 return x === "y" ? (m = u + h * a + h, y = f + 1.5 * r * p + p, r % 2 === 0 && (S === "odd" ? m -= d : m += d)) : x === "x" && S === "odd" && (m = u + 1.5 * a * d + d, y = f + n * a + n, a % 2 === 0 && (S === "odd" ? y -= p : y += p)), i.set(m, y)
                             };
                         c.exports = v
-                    }),
-                    86625: ((c, g, t) => {
+                    },
+                    86625: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50545,8 +50551,8 @@ return new ` + this.key + `();
                                 return h.staggerIndex === "odd" ? H = W % 2 === 0 ? w / 2 + F : w / 2 + F - .5 : H = W % 2 === 0 ? w / 2 + F : w / 2 + F + .5, e.set(H, W)
                             };
                         c.exports = v
-                    }),
-                    62991: (c => {
+                    },
+                    62991: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50556,8 +50562,8 @@ return new ` + this.key + `();
                             return t >= 0 && t < v.width && o >= 0 && o < v.height
                         };
                         c.exports = g
-                    }),
-                    14018: ((c, g, t) => {
+                    },
+                    14018: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50591,8 +50597,8 @@ return new ` + this.key + `();
                                 return s.tilesDrawn = i.length, s.tilesTotal = n * l, i
                             };
                         c.exports = v
-                    }),
-                    14127: ((c, g, t) => {
+                    },
+                    14127: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50612,8 +50618,8 @@ return new ` + this.key + `();
                                 return i.set(d, p)
                             };
                         c.exports = v
-                    }),
-                    96897: ((c, g, t) => {
+                    },
+                    96897: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50634,8 +50640,8 @@ return new ` + this.key + `();
                                 return i && (m = Math.floor(m), y = Math.floor(y)), e.set(m, y)
                             };
                         c.exports = v
-                    }),
-                    71558: ((c, g, t) => {
+                    },
+                    71558: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50663,8 +50669,8 @@ return new ` + this.key + `();
                                 return r(p, m), n && d !== p.collides && a(s, h, l), p
                             };
                         c.exports = i
-                    }),
-                    26303: ((c, g, t) => {
+                    },
+                    26303: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50677,8 +50683,8 @@ return new ` + this.key + `();
                                 return l.tilemapLayer.worldToTileXY(e, s, !0, a, n, l), o(i, a.x, a.y, h, l)
                             };
                         c.exports = r
-                    }),
-                    14051: ((c, g, t) => {
+                    },
+                    14051: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50697,8 +50703,8 @@ return new ` + this.key + `();
                                 s && o(i - 1, e - 1, l + 2, n + 2, h)
                             };
                         c.exports = a
-                    }),
-                    77389: ((c, g, t) => {
+                    },
+                    77389: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50713,8 +50719,8 @@ return new ` + this.key + `();
                                 for (l = 0; l < u.length; l++) u[l].index = v(h)
                             };
                         c.exports = a
-                    }),
-                    63557: ((c, g, t) => {
+                    },
+                    63557: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50731,8 +50737,8 @@ return new ` + this.key + `();
                                 return h && l && l.collides && a(i, e, n), l
                             };
                         c.exports = r
-                    }),
-                    94178: ((c, g, t) => {
+                    },
+                    94178: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50745,8 +50751,8 @@ return new ` + this.key + `();
                                 return l.tilemapLayer.worldToTileXY(i, e, !0, a, n, l), o(a.x, a.y, s, h, l)
                             };
                         c.exports = r
-                    }),
-                    15533: ((c, g, t) => {
+                    },
+                    15533: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50779,8 +50785,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = e
-                    }),
-                    27987: ((c, g, t) => {
+                    },
+                    27987: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50791,8 +50797,8 @@ return new ` + this.key + `();
                                 for (var l = o(i, e, s, h, null, n), u = 0; u < l.length; u++) l[u] && l[u].index === a && (l[u].index = r)
                             };
                         c.exports = v
-                    }),
-                    32483: (c => {
+                    },
+                    32483: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50823,8 +50829,8 @@ return new ` + this.key + `();
                             return s.tilesDrawn = a.length, s.tilesTotal = i * e, a
                         };
                         c.exports = g
-                    }),
-                    57068: ((c, g, t) => {
+                    },
+                    57068: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50845,8 +50851,8 @@ return new ` + this.key + `();
                                 s && v(0, 0, h.width, h.height, h)
                             };
                         c.exports = r
-                    }),
-                    37266: ((c, g, t) => {
+                    },
+                    37266: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50868,8 +50874,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = r
-                    }),
-                    75661: ((c, g, t) => {
+                    },
+                    75661: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50888,8 +50894,8 @@ return new ` + this.key + `();
                                 s && v(0, 0, h.width, h.height, h)
                             };
                         c.exports = r
-                    }),
-                    64740: ((c, g, t) => {
+                    },
+                    64740: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50915,8 +50921,8 @@ return new ` + this.key + `();
                                 s && v(0, 0, h.width, h.height, h)
                             };
                         c.exports = r
-                    }),
-                    63307: ((c, g, t) => {
+                    },
+                    63307: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50937,8 +50943,8 @@ return new ` + this.key + `();
                                 i && v(0, 0, e.width, e.height, e)
                             };
                         c.exports = a
-                    }),
-                    9589: (c => {
+                    },
+                    9589: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50949,8 +50955,8 @@ return new ` + this.key + `();
                             o && a === -1 ? v.collideIndexes.push(t) : !o && a !== -1 && v.collideIndexes.splice(a, 1)
                         };
                         c.exports = g
-                    }),
-                    20576: (c => {
+                    },
+                    20576: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50960,8 +50966,8 @@ return new ` + this.key + `();
                             o ? t.setCollision(!0, !0, !0, !0, !1) : t.resetCollision(!1)
                         };
                         c.exports = g
-                    }),
-                    79583: (c => {
+                    },
+                    79583: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50979,8 +50985,8 @@ return new ` + this.key + `();
                                 } : void 0
                         };
                         c.exports = g
-                    }),
-                    93254: ((c, g, t) => {
+                    },
+                    93254: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -50991,8 +50997,8 @@ return new ` + this.key + `();
                                 for (var l = o(a, r, i, e, null, n), u = 0; u < l.length; u++) l[u].setCollisionCallback(s, h)
                             };
                         c.exports = v
-                    }),
-                    32903: ((c, g, t) => {
+                    },
+                    32903: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51009,8 +51015,8 @@ return new ` + this.key + `();
                                 for (var u = 0; u < n.length; u++) n[u].index = l[u]
                             };
                         c.exports = a
-                    }),
-                    61325: ((c, g, t) => {
+                    },
+                    61325: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51035,8 +51041,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = a
-                    }),
-                    54503: ((c, g, t) => {
+                    },
+                    54503: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51051,8 +51057,8 @@ return new ` + this.key + `();
                                 return h.skipCull && h.scrollFactorX === 1 && h.scrollFactorY === 1 && (n.left = 0, n.right = r.width, n.top = 0, n.bottom = r.height), v(r, n, s, e), e
                             };
                         c.exports = a
-                    }),
-                    97202: ((c, g, t) => {
+                    },
+                    97202: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51072,8 +51078,8 @@ return new ` + this.key + `();
                                 return i.set(d, p)
                             };
                         c.exports = v
-                    }),
-                    28054: (c => {
+                    },
+                    28054: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51086,8 +51092,8 @@ return new ` + this.key + `();
                             return r && (o === void 0 && (o = r.scene.cameras.main), i = r.y + o.scrollY * (1 - r.scrollFactorY), a *= r.scaleY), i + t * (a / 2) + a
                         };
                         c.exports = g
-                    }),
-                    15108: ((c, g, t) => {
+                    },
+                    15108: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51105,8 +51111,8 @@ return new ` + this.key + `();
                                 return e.set(d, f)
                             };
                         c.exports = v
-                    }),
-                    51900: (c => {
+                    },
+                    51900: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51118,8 +51124,8 @@ return new ` + this.key + `();
                             return i && (v || (v = i.scene.cameras.main), t = t - (i.y + v.scrollY * (1 - i.scrollFactorY)), r *= i.scaleY), o ? Math.floor(t / (r / 2)) : t / (r / 2)
                         };
                         c.exports = g
-                    }),
-                    86560: ((c, g, t) => {
+                    },
+                    86560: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51130,8 +51136,8 @@ return new ` + this.key + `();
                                 for (var l = o(i, e, s, h, null, n), u = 0; u < l.length; u++) l[u] && (l[u].index === a ? l[u].index = r : l[u].index === r && (l[u].index = a))
                             };
                         c.exports = v
-                    }),
-                    97281: (c => {
+                    },
+                    97281: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51144,8 +51150,8 @@ return new ` + this.key + `();
                             return r && (o || (o = r.scene.cameras.main), i = r.x + o.scrollX * (1 - r.scrollFactorX), a *= r.scaleX), i + t * a
                         };
                         c.exports = g
-                    }),
-                    70326: ((c, g, t) => {
+                    },
+                    70326: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51158,8 +51164,8 @@ return new ` + this.key + `();
                                 return s || (s = new a(0, 0)), s.x = o(i, h, n), s.y = v(e, h, n), s
                             };
                         c.exports = r
-                    }),
-                    29650: (c => {
+                    },
+                    29650: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51172,8 +51178,8 @@ return new ` + this.key + `();
                             return r && (o || (o = r.scene.cameras.main), i = r.y + o.scrollY * (1 - r.scrollFactorY), a *= r.scaleY), i + t * a
                         };
                         c.exports = g
-                    }),
-                    77366: ((c, g, t) => {
+                    },
+                    77366: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51198,8 +51204,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = a
-                    }),
-                    10095: ((c, g, t) => {
+                    },
+                    10095: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51212,8 +51218,8 @@ return new ` + this.key + `();
                                 return o(i, 0, e, a, s, h), a.x
                             };
                         c.exports = r
-                    }),
-                    85896: ((c, g, t) => {
+                    },
+                    85896: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51231,8 +51237,8 @@ return new ` + this.key + `();
                                 return i && (f = Math.floor(f), d = Math.floor(d)), e.set(f, d)
                             };
                         c.exports = v
-                    }),
-                    63288: ((c, g, t) => {
+                    },
+                    63288: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51245,8 +51251,8 @@ return new ` + this.key + `();
                                 return o(0, i, e, a, s, h), a.y
                             };
                         c.exports = r
-                    }),
-                    81086: ((c, g, t) => {
+                    },
+                    81086: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51324,8 +51330,8 @@ return new ` + this.key + `();
                             WorldToTileXY: t(85896),
                             WorldToTileY: t(63288)
                         }
-                    }),
-                    91907: (c => {
+                    },
+                    91907: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51337,8 +51343,8 @@ return new ` + this.key + `();
                             STAGGERED: 2,
                             HEXAGONAL: 3
                         }
-                    }),
-                    21829: ((c, g, t) => {
+                    },
+                    21829: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51348,8 +51354,8 @@ return new ` + this.key + `();
                             ORIENTATION: t(91907)
                         };
                         c.exports = o
-                    }),
-                    62501: ((c, g, t) => {
+                    },
+                    62501: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51375,8 +51381,8 @@ return new ` + this.key + `();
                                 ObjectLayer: t(48700)
                             };
                         a = o(!1, a, v.ORIENTATION), c.exports = a
-                    }),
-                    14977: ((c, g, t) => {
+                    },
+                    14977: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51391,8 +51397,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    87010: ((c, g, t) => {
+                    },
+                    87010: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51407,8 +51413,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    48700: ((c, g, t) => {
+                    },
+                    48700: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51422,8 +51428,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = a
-                    }),
-                    6641: ((c, g, t) => {
+                    },
+                    6641: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51434,8 +51440,8 @@ return new ` + this.key + `();
                                 return a = a.toLowerCase(), a === "isometric" ? o.ISOMETRIC : a === "staggered" ? o.STAGGERED : a === "hexagonal" ? o.HEXAGONAL : o.ORTHOGONAL
                             };
                         c.exports = v
-                    }),
-                    46177: ((c, g, t) => {
+                    },
+                    46177: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51467,8 +51473,8 @@ return new ` + this.key + `();
                                 return d
                             };
                         c.exports = e
-                    }),
-                    2342: ((c, g, t) => {
+                    },
+                    2342: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51499,8 +51505,8 @@ return new ` + this.key + `();
                                 return f.width = u.width = m, f.height = u.height = p, f.widthInPixels = u.widthInPixels = m * h, f.heightInPixels = u.heightInPixels = p * n, u.data = d, f
                             };
                         c.exports = i
-                    }),
-                    82593: ((c, g, t) => {
+                    },
+                    82593: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51517,8 +51523,8 @@ return new ` + this.key + `();
                                 return l.format = o.CSV, l
                             };
                         c.exports = a
-                    }),
-                    6656: ((c, g, t) => {
+                    },
+                    6656: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51548,8 +51554,8 @@ return new ` + this.key + `();
                                 return e
                             };
                         c.exports = a
-                    }),
-                    96483: ((c, g, t) => {
+                    },
+                    96483: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51565,8 +51571,8 @@ return new ` + this.key + `();
                                 return r
                             };
                         c.exports = v
-                    }),
-                    87021: ((c, g, t) => {
+                    },
+                    87021: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51590,8 +51596,8 @@ return new ` + this.key + `();
                                 return f.layers = a(s, h), f.tilesets = r(s), f
                             };
                         c.exports = i
-                    }),
-                    52833: ((c, g, t) => {
+                    },
+                    52833: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51602,8 +51608,8 @@ return new ` + this.key + `();
                             ParseTilesets: t(96483),
                             ParseWeltmeister: t(87021)
                         }
-                    }),
-                    57442: ((c, g, t) => {
+                    },
+                    57442: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51617,8 +51623,8 @@ return new ` + this.key + `();
                             Impact: t(52833),
                             Tiled: t(96761)
                         }
-                    }),
-                    51233: ((c, g, t) => {
+                    },
+                    51233: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51635,8 +51641,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = v
-                    }),
-                    41868: (c => {
+                    },
+                    41868: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51647,8 +51653,8 @@ return new ` + this.key + `();
                             return a
                         };
                         c.exports = g
-                    }),
-                    84101: ((c, g, t) => {
+                    },
+                    84101: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51673,8 +51679,8 @@ return new ` + this.key + `();
                                 return e
                             };
                         c.exports = v
-                    }),
-                    79677: ((c, g, t) => {
+                    },
+                    79677: (c, g, t) => {
                         /**
                          * @author       Seth Berrier <berriers@uwstout.edu>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51704,8 +51710,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = v
-                    }),
-                    29920: (c => {
+                    },
+                    29920: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51731,8 +51737,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = v
-                    }),
-                    12635: ((c, g, t) => {
+                    },
+                    12635: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51773,8 +51779,8 @@ return new ` + this.key + `();
                                 return i
                             };
                         c.exports = a
-                    }),
-                    46594: ((c, g, t) => {
+                    },
+                    46594: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51818,8 +51824,8 @@ return new ` + this.key + `();
                                 return x.tilesets = P.tilesets, x.imageCollections = P.imageCollections, x.objects = n(y), x.tiles = v(x), o(x), x
                             };
                         c.exports = f
-                    }),
-                    52205: ((c, g, t) => {
+                    },
+                    52205: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51844,8 +51850,8 @@ return new ` + this.key + `();
                                 return n
                             };
                         c.exports = i
-                    }),
-                    22611: ((c, g, t) => {
+                    },
+                    22611: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51884,8 +51890,8 @@ return new ` + this.key + `();
                                 return s
                             };
                         c.exports = i
-                    }),
-                    28200: ((c, g, t) => {
+                    },
+                    28200: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -51976,8 +51982,8 @@ return new ` + this.key + `();
                                 return d
                             };
                         c.exports = n
-                    }),
-                    24619: ((c, g, t) => {
+                    },
+                    24619: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52051,8 +52057,8 @@ return new ` + this.key + `();
                                 }
                             };
                         c.exports = i
-                    }),
-                    57880: (c => {
+                    },
+                    57880: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52094,8 +52100,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    96761: ((c, g, t) => {
+                    },
+                    96761: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52114,8 +52120,8 @@ return new ` + this.key + `();
                             ParseTileLayers: t(28200),
                             ParseTilesets: t(24619)
                         }
-                    }),
-                    33385: ((c, g, t) => {
+                    },
+                    33385: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52211,8 +52217,8 @@ return new ` + this.key + `();
                                 }
                             });
                         v.register("Clock", e, "time"), c.exports = e
-                    }),
-                    96120: ((c, g, t) => {
+                    },
+                    96120: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52338,8 +52344,8 @@ return new ` + this.key + `();
                         a.register("timeline", function(h) {
                             return new s(this.scene, h)
                         }), c.exports = s
-                    }),
-                    94880: ((c, g, t) => {
+                    },
+                    94880: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52394,16 +52400,16 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = a
-                    }),
-                    35945: (c => {
+                    },
+                    35945: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "complete"
-                    }),
-                    89809: ((c, g, t) => {
+                    },
+                    89809: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52412,8 +52418,8 @@ return new ` + this.key + `();
                         c.exports = {
                             COMPLETE: t(35945)
                         }
-                    }),
-                    90291: ((c, g, t) => {
+                    },
+                    90291: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52425,8 +52431,8 @@ return new ` + this.key + `();
                             Timeline: t(96120),
                             TimerEvent: t(94880)
                         }
-                    }),
-                    40382: ((c, g, t) => {
+                    },
+                    40382: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52590,8 +52596,8 @@ return new ` + this.key + `();
                                 }
                             });
                         i.register("TweenManager", f, "tweens"), c.exports = f
-                    }),
-                    57355: (c => {
+                    },
+                    57355: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52601,8 +52607,8 @@ return new ` + this.key + `();
                             return t && t.hasOwnProperty(o) ? t[o] : v
                         };
                         c.exports = g
-                    }),
-                    6113: ((c, g, t) => {
+                    },
+                    6113: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52632,8 +52638,8 @@ return new ` + this.key + `();
                                     }
                             };
                         c.exports = a
-                    }),
-                    91389: ((c, g, t) => {
+                    },
+                    91389: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52654,8 +52660,8 @@ return new ` + this.key + `();
                                 return typeof e == "string" ? r.hasOwnProperty(e) && (s = r[e]) : typeof e == "function" && (s = e), s
                             };
                         c.exports = i
-                    }),
-                    55292: (c => {
+                    },
+                    55292: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52676,8 +52682,8 @@ return new ` + this.key + `();
                             return a
                         };
                         c.exports = g
-                    }),
-                    82985: ((c, g, t) => {
+                    },
+                    82985: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52699,8 +52705,8 @@ return new ` + this.key + `();
                                 return i
                             };
                         c.exports = v
-                    }),
-                    62329: ((c, g, t) => {
+                    },
+                    62329: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52712,8 +52718,8 @@ return new ` + this.key + `();
                                 return r === null || (typeof r == "function" && (r = r.call()), Array.isArray(r) || (r = [r])), r
                             };
                         c.exports = v
-                    }),
-                    17777: ((c, g, t) => {
+                    },
+                    17777: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52827,8 +52833,8 @@ return new ` + this.key + `();
                             }), l
                         };
                         c.exports = s
-                    }),
-                    88032: ((c, g, t) => {
+                    },
+                    88032: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52871,8 +52877,8 @@ return new ` + this.key + `();
                                 return F
                             };
                         c.exports = f
-                    }),
-                    93109: ((c, g, t) => {
+                    },
+                    93109: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52938,8 +52944,8 @@ return new ` + this.key + `();
                                 }, s
                             };
                         c.exports = r
-                    }),
-                    8357: ((c, g, t) => {
+                    },
+                    8357: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -52988,8 +52994,8 @@ return new ` + this.key + `();
                                 return B
                             };
                         c.exports = m
-                    }),
-                    26012: ((c, g, t) => {
+                    },
+                    26012: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53028,8 +53034,8 @@ return new ` + this.key + `();
                                 return u
                             };
                         c.exports = h
-                    }),
-                    30231: ((c, g, t) => {
+                    },
+                    30231: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53047,88 +53053,88 @@ return new ` + this.key + `();
                             StaggerBuilder: t(93109),
                             TweenBuilder: t(8357)
                         }
-                    }),
-                    73685: (c => {
+                    },
+                    73685: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "active"
-                    }),
-                    98540: (c => {
+                    },
+                    98540: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "complete"
-                    }),
-                    67233: (c => {
+                    },
+                    67233: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "loop"
-                    }),
-                    2859: (c => {
+                    },
+                    2859: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "pause"
-                    }),
-                    98336: (c => {
+                    },
+                    98336: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "repeat"
-                    }),
-                    25764: (c => {
+                    },
+                    25764: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "resume"
-                    }),
-                    32193: (c => {
+                    },
+                    32193: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "start"
-                    }),
-                    84371: (c => {
+                    },
+                    84371: c => {
                         /**
                          * @author       samme
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "stop"
-                    }),
-                    70766: (c => {
+                    },
+                    70766: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "update"
-                    }),
-                    55659: (c => {
+                    },
+                    55659: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = "yoyo"
-                    }),
-                    842: ((c, g, t) => {
+                    },
+                    842: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53146,8 +53152,8 @@ return new ` + this.key + `();
                             TWEEN_UPDATE: t(70766),
                             TWEEN_YOYO: t(55659)
                         }
-                    }),
-                    43066: ((c, g, t) => {
+                    },
+                    43066: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53165,8 +53171,8 @@ return new ` + this.key + `();
                             TweenChain: t(43960)
                         };
                         c.exports = o
-                    }),
-                    70402: ((c, g, t) => {
+                    },
+                    70402: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53304,8 +53310,8 @@ return new ` + this.key + `();
                                 }
                             });
                         i.TYPES = ["onActive", "onComplete", "onLoop", "onPause", "onRepeat", "onResume", "onStart", "onStop", "onUpdate", "onYoyo"], c.exports = i
-                    }),
-                    95042: ((c, g, t) => {
+                    },
+                    95042: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53408,8 +53414,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = r
-                    }),
-                    69902: (c => {
+                    },
+                    69902: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53431,16 +53437,16 @@ return new ` + this.key + `();
                             interpolation: null
                         };
                         c.exports = g
-                    }),
-                    81076: (c => {
+                    },
+                    81076: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
                          * @license      {@link https://opensource.org/licenses/MIT|MIT License}
                          */
                         c.exports = ["callbackScope", "completeDelay", "delay", "duration", "ease", "easeParams", "flipX", "flipY", "hold", "interpolation", "loop", "loopDelay", "onActive", "onActiveParams", "onComplete", "onCompleteParams", "onLoop", "onLoopParams", "onPause", "onPauseParams", "onRepeat", "onRepeatParams", "onResume", "onResumeParams", "onStart", "onStartParams", "onStop", "onStopParams", "onUpdate", "onUpdateParams", "onYoyo", "onYoyoParams", "paused", "persist", "props", "repeat", "repeatDelay", "targets", "yoyo"]
-                    }),
-                    86081: ((c, g, t) => {
+                    },
+                    86081: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53573,8 +53579,8 @@ return new ` + this.key + `();
                         }), r.register("tween", function(u) {
                             return this.scene.sys.tweens.create(u)
                         }), c.exports = l
-                    }),
-                    43960: ((c, g, t) => {
+                    },
+                    43960: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53663,8 +53669,8 @@ return new ` + this.key + `();
                         }), i.register("tweenchain", function(n) {
                             return this.scene.sys.tweens.create(n)
                         }), c.exports = h
-                    }),
-                    48177: ((c, g, t) => {
+                    },
+                    48177: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53725,8 +53731,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = i
-                    }),
-                    42220: ((c, g, t) => {
+                    },
+                    42220: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53780,8 +53786,8 @@ return new ` + this.key + `();
                                 }
                             });
                         c.exports = i
-                    }),
-                    86353: (c => {
+                    },
+                    86353: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53808,8 +53814,8 @@ return new ` + this.key + `();
                             MAX: 999999999999
                         };
                         c.exports = g
-                    }),
-                    83419: (c => {
+                    },
+                    83419: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53868,8 +53874,8 @@ return new ` + this.key + `();
                             return i.Mixins && (n = i.Mixins, delete i.Mixins), a(e, n), v(e, i, !0, s), e
                         }
                         r.extend = v, r.mixin = a, r.ignoreFinals = !1, c.exports = r
-                    }),
-                    29747: (c => {
+                    },
+                    29747: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53877,8 +53883,8 @@ return new ` + this.key + `();
                          */
                         var g = function() {};
                         c.exports = g
-                    }),
-                    20242: (c => {
+                    },
+                    20242: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53888,8 +53894,8 @@ return new ` + this.key + `();
                             return null
                         };
                         c.exports = g
-                    }),
-                    71146: (c => {
+                    },
+                    71146: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53911,8 +53917,8 @@ return new ` + this.key + `();
                             return o
                         };
                         c.exports = g
-                    }),
-                    51067: (c => {
+                    },
+                    51067: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53934,8 +53940,8 @@ return new ` + this.key + `();
                             return o
                         };
                         c.exports = g
-                    }),
-                    66905: (c => {
+                    },
+                    66905: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53946,8 +53952,8 @@ return new ` + this.key + `();
                             return v !== -1 && v < t.length && (t.splice(v, 1), t.push(o)), o
                         };
                         c.exports = g
-                    }),
-                    21612: ((c, g, t) => {
+                    },
+                    21612: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53965,8 +53971,8 @@ return new ` + this.key + `();
                                 return h
                             };
                         c.exports = v
-                    }),
-                    95428: (c => {
+                    },
+                    95428: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53979,8 +53985,8 @@ return new ` + this.key + `();
                             return t
                         };
                         c.exports = g
-                    }),
-                    36914: ((c, g, t) => {
+                    },
+                    36914: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -53996,8 +54002,8 @@ return new ` + this.key + `();
                                 return a
                             };
                         c.exports = v
-                    }),
-                    81957: (c => {
+                    },
+                    81957: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54017,8 +54023,8 @@ return new ` + this.key + `();
                             return a > o.length && (a = o.length), v ? (r = o[a - 1][v], i = o[a][v], i - t <= t - r ? o[a] : o[a - 1]) : (r = o[a - 1], i = o[a], i - t <= t - r ? i : r)
                         };
                         c.exports = g
-                    }),
-                    43491: (c => {
+                    },
+                    43491: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54030,8 +54036,8 @@ return new ` + this.key + `();
                             return o
                         };
                         c.exports = g
-                    }),
-                    46710: ((c, g, t) => {
+                    },
+                    46710: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54049,8 +54055,8 @@ return new ` + this.key + `();
                                 return h
                             };
                         c.exports = v
-                    }),
-                    58731: ((c, g, t) => {
+                    },
+                    58731: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54072,8 +54078,8 @@ return new ` + this.key + `();
                                 return null
                             };
                         c.exports = v
-                    }),
-                    26546: (c => {
+                    },
+                    26546: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54085,8 +54091,8 @@ return new ` + this.key + `();
                             return t[a] === void 0 ? null : t[a]
                         };
                         c.exports = g
-                    }),
-                    85835: (c => {
+                    },
+                    85835: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54100,8 +54106,8 @@ return new ` + this.key + `();
                             return a > r || (t.splice(a, 1), r = t.indexOf(v), t.splice(r + 1, 0, o)), t
                         };
                         c.exports = g
-                    }),
-                    83371: (c => {
+                    },
+                    83371: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54115,8 +54121,8 @@ return new ` + this.key + `();
                             return a < r || (t.splice(a, 1), r === 0 ? t.unshift(o) : t.splice(r, 0, o)), t
                         };
                         c.exports = g
-                    }),
-                    70864: (c => {
+                    },
+                    70864: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54132,8 +54138,8 @@ return new ` + this.key + `();
                             return t
                         };
                         c.exports = g
-                    }),
-                    69693: (c => {
+                    },
+                    69693: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54145,8 +54151,8 @@ return new ` + this.key + `();
                             return a !== v && (t.splice(a, 1), t.splice(v, 0, o)), o
                         };
                         c.exports = g
-                    }),
-                    40853: (c => {
+                    },
+                    40853: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54162,8 +54168,8 @@ return new ` + this.key + `();
                             return t
                         };
                         c.exports = g
-                    }),
-                    20283: (c => {
+                    },
+                    20283: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54179,8 +54185,8 @@ return new ` + this.key + `();
                             return r
                         };
                         c.exports = g
-                    }),
-                    593: ((c, g, t) => {
+                    },
+                    593: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54193,8 +54199,8 @@ return new ` + this.key + `();
                                 return e
                             };
                         c.exports = v
-                    }),
-                    43886: (c => {
+                    },
+                    43886: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54231,8 +54237,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = o
-                    }),
-                    88492: ((c, g, t) => {
+                    },
+                    88492: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54269,8 +54275,8 @@ return new ` + this.key + `();
                                 return h && p.splice(h), p
                             };
                         c.exports = r
-                    }),
-                    72905: ((c, g, t) => {
+                    },
+                    72905: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54288,8 +54294,8 @@ return new ` + this.key + `();
                                 return n
                             };
                         c.exports = v
-                    }),
-                    60248: ((c, g, t) => {
+                    },
+                    60248: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54302,8 +54308,8 @@ return new ` + this.key + `();
                                 return i && i.call(e, s), s
                             };
                         c.exports = v
-                    }),
-                    81409: ((c, g, t) => {
+                    },
+                    81409: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54323,8 +54329,8 @@ return new ` + this.key + `();
                                 } else return []
                             };
                         c.exports = v
-                    }),
-                    31856: ((c, g, t) => {
+                    },
+                    31856: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54337,8 +54343,8 @@ return new ` + this.key + `();
                                 return o(a, e)
                             };
                         c.exports = v
-                    }),
-                    42169: (c => {
+                    },
+                    42169: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54350,8 +54356,8 @@ return new ` + this.key + `();
                             return a !== -1 && r === -1 ? (t[a] = v, !0) : !1
                         };
                         c.exports = g
-                    }),
-                    86003: (c => {
+                    },
+                    86003: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54363,8 +54369,8 @@ return new ` + this.key + `();
                             return v
                         };
                         c.exports = g
-                    }),
-                    49498: (c => {
+                    },
+                    49498: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54376,8 +54382,8 @@ return new ` + this.key + `();
                             return v
                         };
                         c.exports = g
-                    }),
-                    82011: (c => {
+                    },
+                    82011: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54391,8 +54397,8 @@ return new ` + this.key + `();
                             } else return !0
                         };
                         c.exports = g
-                    }),
-                    89545: (c => {
+                    },
+                    89545: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54403,8 +54409,8 @@ return new ` + this.key + `();
                             return v !== -1 && v > 0 && (t.splice(v, 1), t.unshift(o)), o
                         };
                         c.exports = g
-                    }),
-                    17810: ((c, g, t) => {
+                    },
+                    17810: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54420,8 +54426,8 @@ return new ` + this.key + `();
                                 return a
                             };
                         c.exports = v
-                    }),
-                    33680: (c => {
+                    },
+                    33680: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54436,8 +54442,8 @@ return new ` + this.key + `();
                             return t
                         };
                         c.exports = g
-                    }),
-                    90126: (c => {
+                    },
+                    90126: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54450,8 +54456,8 @@ return new ` + this.key + `();
                             }), t
                         };
                         c.exports = g
-                    }),
-                    19133: (c => {
+                    },
+                    19133: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54464,8 +54470,8 @@ return new ` + this.key + `();
                             }
                         };
                         c.exports = g
-                    }),
-                    19186: ((c, g, t) => {
+                    },
+                    19186: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @author       Angry Bytes (and contributors)
@@ -54508,8 +54514,8 @@ return new ` + this.key + `();
                             return h !== e && r(h, null, e.length, e), e
                         };
                         c.exports = i
-                    }),
-                    25630: (c => {
+                    },
+                    25630: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54523,8 +54529,8 @@ return new ` + this.key + `();
                             return t[a] = v, t[r] = o, t
                         };
                         c.exports = g
-                    }),
-                    37105: ((c, g, t) => {
+                    },
+                    37105: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54568,8 +54574,8 @@ return new ` + this.key + `();
                             StableSort: t(19186),
                             Swap: t(25630)
                         }
-                    }),
-                    86922: (c => {
+                    },
+                    86922: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54582,8 +54588,8 @@ return new ` + this.key + `();
                             return !0
                         };
                         c.exports = g
-                    }),
-                    63362: ((c, g, t) => {
+                    },
+                    63362: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54610,8 +54616,8 @@ return new ` + this.key + `();
                                 return i
                             };
                         c.exports = a
-                    }),
-                    92598: (c => {
+                    },
+                    92598: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54621,8 +54627,8 @@ return new ` + this.key + `();
                             return t.reverse()
                         };
                         c.exports = g
-                    }),
-                    21224: (c => {
+                    },
+                    21224: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54633,8 +54639,8 @@ return new ` + this.key + `();
                             return t
                         };
                         c.exports = g
-                    }),
-                    98717: ((c, g, t) => {
+                    },
+                    98717: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54645,8 +54651,8 @@ return new ` + this.key + `();
                                 return o(a, 180)
                             };
                         c.exports = v
-                    }),
-                    44657: ((c, g, t) => {
+                    },
+                    44657: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54659,8 +54665,8 @@ return new ` + this.key + `();
                                 return a
                             };
                         c.exports = v
-                    }),
-                    37829: ((c, g, t) => {
+                    },
+                    37829: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54679,8 +54685,8 @@ return new ` + this.key + `();
                                 return r
                             };
                         c.exports = a
-                    }),
-                    92632: ((c, g, t) => {
+                    },
+                    92632: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54693,8 +54699,8 @@ return new ` + this.key + `();
                                 return a
                             };
                         c.exports = v
-                    }),
-                    69512: ((c, g, t) => {
+                    },
+                    69512: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54711,8 +54717,8 @@ return new ` + this.key + `();
                                 return r
                             };
                         c.exports = a
-                    }),
-                    2429: (c => {
+                    },
+                    2429: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54726,8 +54732,8 @@ return new ` + this.key + `();
                             return a
                         };
                         c.exports = g
-                    }),
-                    54915: ((c, g, t) => {
+                    },
+                    54915: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54745,8 +54751,8 @@ return new ` + this.key + `();
                             Translate: t(69512),
                             TransposeMatrix: t(2429)
                         }
-                    }),
-                    71334: (c => {
+                    },
+                    71334: c => {
                         /**
                          * @author       Niklas von Hertzen (https://github.com/niklasvh/base64-arraybuffer)
                          * @author       Richard Davey <rich@phaser.io>
@@ -54759,8 +54765,8 @@ return new ` + this.key + `();
                                 return r % 3 === 2 ? i = i.substring(0, i.length - 1) + "=" : r % 3 === 1 && (i = i.substring(0, i.length - 2) + "=="), i
                             };
                         c.exports = t
-                    }),
-                    53134: (c => {
+                    },
+                    53134: c => {
                         /**
                          * @author       Niklas von Hertzen (https://github.com/niklasvh/base64-arraybuffer)
                          * @author       Richard Davey <rich@phaser.io>
@@ -54779,8 +54785,8 @@ return new ` + this.key + `();
                             return u
                         };
                         c.exports = v
-                    }),
-                    65839: ((c, g, t) => {
+                    },
+                    65839: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54790,8 +54796,8 @@ return new ` + this.key + `();
                             ArrayBufferToBase64: t(71334),
                             Base64ToArrayBuffer: t(53134)
                         }
-                    }),
-                    91799: ((c, g, t) => {
+                    },
+                    91799: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54805,8 +54811,8 @@ return new ` + this.key + `();
                             NOOP: t(29747),
                             NULL: t(20242)
                         }
-                    }),
-                    41786: (c => {
+                    },
+                    41786: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54818,8 +54824,8 @@ return new ` + this.key + `();
                             return o
                         };
                         c.exports = g
-                    }),
-                    62644: (c => {
+                    },
+                    62644: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54833,8 +54839,8 @@ return new ` + this.key + `();
                             return o
                         };
                         c.exports = g
-                    }),
-                    79291: ((c, g, t) => {
+                    },
+                    79291: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54852,8 +54858,8 @@ return new ` + this.key + `();
                                 return n
                             };
                         c.exports = v
-                    }),
-                    23568: ((c, g, t) => {
+                    },
+                    23568: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54872,8 +54878,8 @@ return new ` + this.key + `();
                                 return s
                             };
                         c.exports = a
-                    }),
-                    95540: (c => {
+                    },
+                    95540: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54884,8 +54890,8 @@ return new ` + this.key + `();
                             return !t || a === "number" || a === "string" ? v : t.hasOwnProperty(o) && t[o] !== void 0 ? t[o] : v
                         };
                         c.exports = g
-                    }),
-                    82840: ((c, g, t) => {
+                    },
+                    82840: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54899,8 +54905,8 @@ return new ` + this.key + `();
                                 return v(n, e, s)
                             };
                         c.exports = a
-                    }),
-                    35154: (c => {
+                    },
+                    35154: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54916,8 +54922,8 @@ return new ` + this.key + `();
                             } else return v
                         };
                         c.exports = g
-                    }),
-                    69036: (c => {
+                    },
+                    69036: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54929,8 +54935,8 @@ return new ` + this.key + `();
                             return !0
                         };
                         c.exports = g
-                    }),
-                    1985: (c => {
+                    },
+                    1985: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54942,8 +54948,8 @@ return new ` + this.key + `();
                             return !1
                         };
                         c.exports = g
-                    }),
-                    97022: (c => {
+                    },
+                    97022: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54953,8 +54959,8 @@ return new ` + this.key + `();
                             return t.hasOwnProperty(o)
                         };
                         c.exports = g
-                    }),
-                    41212: (c => {
+                    },
+                    41212: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54970,8 +54976,8 @@ return new ` + this.key + `();
                             return !0
                         };
                         c.exports = g
-                    }),
-                    46975: ((c, g, t) => {
+                    },
+                    46975: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54984,8 +54990,8 @@ return new ` + this.key + `();
                                 return i
                             };
                         c.exports = v
-                    }),
-                    269: ((c, g, t) => {
+                    },
+                    269: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -54998,8 +55004,8 @@ return new ` + this.key + `();
                                 return i
                             };
                         c.exports = v
-                    }),
-                    18254: ((c, g, t) => {
+                    },
+                    18254: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -55014,8 +55020,8 @@ return new ` + this.key + `();
                                 return i
                             };
                         c.exports = v
-                    }),
-                    61622: (c => {
+                    },
+                    61622: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -55033,8 +55039,8 @@ return new ` + this.key + `();
                             return !1
                         };
                         c.exports = g
-                    }),
-                    1183: ((c, g, t) => {
+                    },
+                    1183: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -55057,8 +55063,8 @@ return new ` + this.key + `();
                             Pick: t(18254),
                             SetValue: t(61622)
                         }
-                    }),
-                    27902: (c => {
+                    },
+                    27902: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -55070,8 +55076,8 @@ return new ` + this.key + `();
                             })
                         };
                         c.exports = g
-                    }),
-                    41836: (c => {
+                    },
+                    41836: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -55096,8 +55102,8 @@ return new ` + this.key + `();
                             return t
                         };
                         c.exports = g
-                    }),
-                    33628: (c => {
+                    },
+                    33628: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -55107,8 +55113,8 @@ return new ` + this.key + `();
                             return o === 0 ? t.slice(1) : t.slice(0, o) + t.slice(o + 1)
                         };
                         c.exports = g
-                    }),
-                    27671: (c => {
+                    },
+                    27671: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -55118,8 +55124,8 @@ return new ` + this.key + `();
                             return t.split("").reverse().join("")
                         };
                         c.exports = g
-                    }),
-                    45650: (c => {
+                    },
+                    45650: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -55133,8 +55139,8 @@ return new ` + this.key + `();
                             })
                         };
                         c.exports = g
-                    }),
-                    35355: (c => {
+                    },
+                    35355: c => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -55144,8 +55150,8 @@ return new ` + this.key + `();
                             return t && t[0].toUpperCase() + t.slice(1)
                         };
                         c.exports = g
-                    }),
-                    31749: ((c, g, t) => {
+                    },
+                    31749: (c, g, t) => {
                         /**
                          * @author       Richard Davey <rich@phaser.io>
                          * @copyright    2013-2025 Phaser Studio Inc.
@@ -55159,7 +55165,7 @@ return new ` + this.key + `();
                             UppercaseFirst: t(35355),
                             UUID: t(45650)
                         }
-                    })
+                    }
                 },
                 M = {};
 
@@ -55171,22 +55177,22 @@ return new ` + this.key + `();
                 };
                 return E[c](t, t.exports, A), t.exports
             }
-            A.g = (function() {
+            A.g = function() {
                 if (typeof globalThis == "object") return globalThis;
                 try {
                     return this || new Function("return this")()
                 } catch {
                     if (typeof window == "object") return window
                 }
-            })();
+            }();
             var I = A(85454);
             return I
         })())
-    })($i)), $i.exports
+    }($i)), $i.exports
 }
-var ue = mh();
-const Dr = Da(ue);
-var ne = (V => (V.rest = "rest", V.run = "run", V.jumpStart = "jumpStart", V.jumpMiddleIdle = "jumpMiddleIdle", V.jumpDownIdle = "jumpDownIdle", V.jumpLand = "jumpLand", V))(ne || {});
+var fe = mh();
+const Ir = Da(fe);
+var re = (V => (V.rest = "rest", V.run = "run", V.jumpStart = "jumpStart", V.jumpMiddleIdle = "jumpMiddleIdle", V.jumpDownIdle = "jumpDownIdle", V.jumpLand = "jumpLand", V))(re || {});
 const gh = {
     rest: "idle",
     run: "run",
@@ -55234,11 +55240,11 @@ const xh = {
 var Os = {},
     xi = {},
     yi = {},
-    An;
+    En;
 
-function Br() {
-    if (An) return yi;
-    An = 1, Object.defineProperty(yi, "__esModule", {
+function Dr() {
+    if (En) return yi;
+    En = 1, Object.defineProperty(yi, "__esModule", {
         value: !0
     }), yi.getType = V, yi.throwUnknownDataType = T, yi.throwUnsupportedData = E;
 
@@ -55257,11 +55263,11 @@ function Br() {
 }
 var Re = {},
     Fe = {},
-    Pn;
+    An;
 
-function mn() {
-    if (Pn) return Fe;
-    Pn = 1, Object.defineProperty(Fe, "__esModule", {
+function Br() {
+    if (An) return Fe;
+    An = 1, Object.defineProperty(Fe, "__esModule", {
         value: !0
     }), Fe.s_to_int = M, Fe.s_to_big_int = A, Fe.int_to_s = I, Fe.big_int_to_s = c, Fe.num_to_s = t, Fe.int_str_to_s = o, Fe.s_to_num = a;
     let V = "";
@@ -55384,29 +55390,29 @@ function mn() {
     }
     return Fe
 }
-var Mn;
+var Pn;
 
 function Gr() {
-    if (Mn) return Re;
-    Mn = 1, Object.defineProperty(Re, "__esModule", {
+    if (Pn) return Re;
+    Pn = 1, Object.defineProperty(Re, "__esModule", {
         value: !0
     }), Re.encodeNum = T, Re.decodeNum = E, Re.decodeKey = M, Re.encodeBool = A, Re.decodeBool = I, Re.encodeStr = c, Re.decodeStr = g;
-    const V = mn();
+    const V = Br();
 
     function T(t) {
         return t === 1 / 0 ? "N|+" : t === -1 / 0 ? "N|-" : Number.isNaN(t) ? "N|0" : "n|" + (0, V.num_to_s)(t)
     }
 
     function E(t) {
-        if (t.length === 3 && t[0] === "N" && t[1] === "|") switch (t[2]) {
-            case "+":
+        switch (t) {
+            case "N|+":
                 return 1 / 0;
-            case "-":
+            case "N|-":
                 return -1 / 0;
-            case "0":
+            case "N|0":
                 return NaN
         }
-        return (0, V.s_to_num)(t.slice(2))
+        return t = t.replace("n|", ""), (0, V.s_to_num)(t)
     }
 
     function M(t) {
@@ -55418,58 +55424,56 @@ function Gr() {
     }
 
     function I(t) {
-        if (t.length === 3 && t[0] === "b" && t[1] === "|") switch (t[2]) {
-            case "T":
+        switch (t) {
+            case "b|T":
                 return !0;
-            case "F":
+            case "b|F":
                 return !1
         }
         return !!t
     }
 
     function c(t) {
-        if (t[1] === "|") switch (t[0]) {
-            case "b":
-            case "o":
-            case "n":
-            case "a":
-            case "s":
-                return "s|" + t
+        switch (t[0] + t[1]) {
+            case "b|":
+            case "o|":
+            case "n|":
+            case "a|":
+            case "s|":
+                t = "s|" + t
         }
         return t
     }
 
     function g(t) {
-        return t[0] === "s" && t[1] === "|" ? t.substr(2) : t
+        return t[0] + t[1] === "s|" ? t.substr(2) : t
     }
     return Re
 }
 var ze = {},
     Xi = {},
-    Rn;
+    Mn;
 
 function br() {
-    return Rn || (Rn = 1, Object.defineProperty(Xi, "__esModule", {
+    return Mn || (Mn = 1, Object.defineProperty(Xi, "__esModule", {
         value: !0
     }), Xi.config = void 0, Xi.config = {
         sort_key: !1,
-        preserve_nan: !1,
         error_on_nan: !1,
-        preserve_infinite: !1,
         error_on_infinite: !1
     }), Xi
 }
-var Fn;
+var Rn;
 
 function Nr() {
-    if (Fn) return ze;
-    Fn = 1, Object.defineProperty(ze, "__esModule", {
+    if (Rn) return ze;
+    Rn = 1, Object.defineProperty(ze, "__esModule", {
         value: !0
     }), ze.memToValues = A, ze.makeInMemoryStore = I, ze.makeInMemoryCache = c, ze.makeInMemoryMemory = g, ze.addValue = v;
     const V = br(),
-        T = Br(),
+        T = Dr(),
         E = Gr(),
-        M = mn();
+        M = Br();
 
     function A(a) {
         return a.store.toArray()
@@ -55579,7 +55583,7 @@ function Nr() {
             case "boolean":
                 return t(a, (0, E.encodeBool)(r));
             case "number":
-                return Number.isNaN(r) ? V.config.preserve_nan ? t(a, "N|0") : (V.config.error_on_nan && (0, T.throwUnsupportedData)("[number NaN]"), "") : Number.POSITIVE_INFINITY === r ? V.config.preserve_infinite ? t(a, "N|+") : (V.config.error_on_infinite && (0, T.throwUnsupportedData)("[number Infinity]"), "") : Number.NEGATIVE_INFINITY === r ? V.config.preserve_infinite ? t(a, "N|-") : (V.config.error_on_infinite && (0, T.throwUnsupportedData)("[number -Infinity]"), "") : t(a, (0, E.encodeNum)(r));
+                return Number.isNaN(r) ? (V.config.error_on_nan && (0, T.throwUnsupportedData)("[number NaN]"), "") : Number.POSITIVE_INFINITY === r || Number.NEGATIVE_INFINITY === r ? (V.config.error_on_infinite && (0, T.throwUnsupportedData)("[number Infinity]"), "") : t(a, (0, E.encodeNum)(r));
             case "string":
                 return t(a, (0, E.encodeStr)(r))
         }
@@ -55587,108 +55591,93 @@ function Nr() {
     }
     return ze
 }
-var wn;
+var Fn;
 
-function Ln() {
-    if (wn) return xi;
-    wn = 1, Object.defineProperty(xi, "__esModule", {
+function wn() {
+    if (Fn) return xi;
+    Fn = 1, Object.defineProperty(xi, "__esModule", {
         value: !0
-    }), xi.compress = A, xi.decode = g, xi.decompress = t;
-    const V = Br(),
+    }), xi.compress = M, xi.decode = c, xi.decompress = g;
+    const V = Dr(),
         T = Gr(),
-        E = Nr(),
-        M = mn();
+        E = Nr();
 
-    function A(o) {
-        const v = (0, E.makeInMemoryMemory)(),
-            a = (0, E.addValue)(v, o, void 0);
-        return [(0, E.memToValues)(v), a]
+    function M(t) {
+        const o = (0, E.makeInMemoryMemory)(),
+            v = (0, E.addValue)(o, t, void 0);
+        return [(0, E.memToValues)(o), v]
     }
 
-    function I(o, v) {
-        if (v === "o|") return {};
-        const a = {},
-            r = v.split("|"),
-            i = r[1];
-        let e = g(o, i);
-        const s = r.length;
-        s - 2 === 1 && !Array.isArray(e) && (e = [e]);
-        for (let h = 2; h < s; h++) {
-            const n = e[h - 2];
-            let l = r[h];
-            l = g(o, l), a[n] = l
+    function A(t, o) {
+        if (o === "o|") return {};
+        const v = {},
+            a = o.split("|"),
+            r = a[1];
+        let i = c(t, r);
+        const e = a.length;
+        e - 2 === 1 && !Array.isArray(i) && (i = [i]);
+        for (let s = 2; s < e; s++) {
+            const h = i[s - 2];
+            let n = a[s];
+            n = c(t, n), v[h] = n
         }
-        return a
+        return v
     }
 
-    function c(o, v) {
-        if (v === "a|") return [];
-        const a = v.split("|"),
-            r = a.length - 1,
-            i = new Array(r);
-        for (let e = 0; e < r; e++) {
-            let s = a[e + 1];
-            s = g(o, s), i[e] = s
+    function I(t, o) {
+        if (o === "a|") return [];
+        const v = o.split("|"),
+            a = v.length - 1,
+            r = new Array(a);
+        for (let i = 0; i < a; i++) {
+            let e = v[i + 1];
+            e = c(t, e), r[i] = e
         }
-        return i
+        return r
     }
 
-    function g(o, v) {
-        if (v === "" || v === "_") return null;
-        const a = (0, T.decodeKey)(v),
-            r = o[a];
-        if (r === null) return r;
-        switch (typeof r) {
+    function c(t, o) {
+        if (o === "" || o === "_") return null;
+        const v = (0, T.decodeKey)(o),
+            a = t[v];
+        if (a === null) return a;
+        switch (typeof a) {
             case "undefined":
-                return r;
+                return a;
             case "number":
-                return r;
+                return a;
             case "string":
-                if (r[1] === "|") switch (r[0]) {
-                    case "b":
-                        switch (r[2]) {
-                            case "T":
-                                return !0;
-                            case "F":
-                                return !1;
-                            default:
-                                return (0, V.throwUnknownDataType)(r)
-                        }
-                    case "o":
-                        return I(o, r);
-                    case "n":
-                        return (0, M.s_to_num)(r.slice(2));
-                    case "N":
-                        switch (r[2]) {
-                            case "+":
-                                return 1 / 0;
-                            case "-":
-                                return -1 / 0;
-                            case "0":
-                                return NaN;
-                            default:
-                                return (0, V.throwUnknownDataType)(r)
-                        }
-                    case "a":
-                        return c(o, r)
+                switch (a[0] + a[1]) {
+                    case "b|":
+                        return (0, T.decodeBool)(a);
+                    case "o|":
+                        return A(t, a);
+                    case "n|":
+                    case "N|+":
+                    case "N|-":
+                    case "N|0":
+                        return (0, T.decodeNum)(a);
+                    case "a|":
+                        return I(t, a);
+                    default:
+                        return (0, T.decodeStr)(a)
                 }
-                return (0, T.decodeStr)(r)
         }
-        return (0, V.throwUnknownDataType)(r)
+        return (0, V.throwUnknownDataType)(a)
     }
 
-    function t(o) {
-        const [v, a] = o;
-        return g(v, a)
+    function g(t) {
+        const [o, v] = t;
+        return c(o, v)
     }
     return xi
 }
 var Yi = {},
-    On;
+    Ln;
 
 function yh() {
-    if (On) return Yi;
-    On = 1, Object.defineProperty(Yi, "__esModule", {
+    if (Ln) return Yi;
+    Ln = 1, Object.defineProperty(Yi, "__esModule", {
         value: !0
     }), Yi.trimUndefined = V, Yi.trimUndefinedRecursively = T;
 
@@ -55711,14 +55700,14 @@ function yh() {
     }
     return Yi
 }
-var In;
+var On;
 
 function Th() {
-    return In || (In = 1, (function(V) {
+    return On || (On = 1, function(V) {
         Object.defineProperty(V, "__esModule", {
             value: !0
         }), V.config = V.trimUndefinedRecursively = V.trimUndefined = V.addValue = V.decode = V.decompress = V.compress = void 0;
-        var T = Ln();
+        var T = wn();
         Object.defineProperty(V, "compress", {
             enumerable: !0,
             get: function() {
@@ -55730,7 +55719,7 @@ function Th() {
                 return T.decompress
             }
         });
-        var E = Ln();
+        var E = wn();
         Object.defineProperty(V, "decode", {
             enumerable: !0,
             get: function() {
@@ -55763,7 +55752,7 @@ function Th() {
                 return I.config
             }
         })
-    })(Os)), Os
+    }(Os)), Os
 }
 var gu = Th(),
     bs = (V => (V.jump = "jump", V.land = "land", V))(bs || {});
@@ -55827,7 +55816,7 @@ const Sh = {
         return !T || !Fi() ? !1 : T.isMain ? Fi() && T.physics.state.jump.isJumping : !T.animation.nonMainCharacterState.grounded
     },
     Rh = V => {
-        if (!Fi() || Ir()) return !0;
+        if (!Fi() || Or()) return !0;
         const T = Rs(V.characterId);
         return T ? T.isMain ? T.physics.state.grounded : T.animation.nonMainCharacterState.grounded : !1
     };
@@ -55839,9 +55828,9 @@ class Xr {
 const Fh = new Xr(3),
     wh = new Xr(3),
     yu = () => {
-        jn({
+        $n({
             path: ds(`sounds/core/platforming/jump/${Fh.next()}.mp3`),
-            volume: Or({
+            volume: Lr({
                 volume: .37,
                 type: pn.soundEffect
             }),
@@ -55849,9 +55838,9 @@ const Fh = new Xr(3),
         })
     },
     Lh = () => {
-        jn({
+        $n({
             path: ds(`sounds/core/platforming/land/${wh.next()}.mp3`),
-            volume: Or({
+            volume: Lr({
                 volume: .24,
                 type: pn.soundEffect
             }),
@@ -55861,9 +55850,9 @@ const Fh = new Xr(3),
     Oh = (V, T) => {
         const E = V.body,
             M = V.prevBody,
-            A = Dr.Math.Distance.Between(E.x, E.y, M.x, M.y),
+            A = Ir.Math.Distance.Between(E.x, E.y, M.x, M.y),
             I = Math.abs(E.x - M.x);
-        if (ch() || Ir()) return A > $t.movementPixels.running(T) ? ne.run : ne.rest;
+        if (ch() || Or()) return A > $t.movementPixels.running(T) ? re.run : re.rest;
         const g = Rh({
             characterId: V.id
         });
@@ -55871,20 +55860,20 @@ const Fh = new Xr(3),
                 characterId: V.id
             }) && A > $t.movementPixels.rising(T)) {
             const t = V.isMain ? V.physics.prevState.grounded : V.animation.prevNonMainCharacterState.grounded;
-            return !g && t && V.impactAnimation.play(bs.jump), ne.jumpStart
+            return !g && t && V.impactAnimation.play(bs.jump), re.jumpStart
         }
         if (g) {
             if (Ph({
                     characterId: V.id
-                }) && (A > $t.movementPixels.falling(T) || !V.isMain)) return V.animation.currentBodyAnimation !== ne.jumpLand && Date.now() - V.animation.lastGroundedAnimationAt > Eh.land.minimumAirTime && (V.impactAnimation.play(bs.land), V.isMain && Lh()), ne.jumpLand;
-            if (I > $t.movementPixels.running(T)) return ne.run
+                }) && (A > $t.movementPixels.falling(T) || !V.isMain)) return V.animation.currentBodyAnimation !== re.jumpLand && Date.now() - V.animation.lastGroundedAnimationAt > Eh.land.minimumAirTime && (V.impactAnimation.play(bs.land), V.isMain && Lh()), re.jumpLand;
+            if (I > $t.movementPixels.running(T)) return re.run
         } else {
-            if (E.y < M.y && A > $t.movementPixels.rising(T)) return ne.jumpMiddleIdle;
-            if (A > $t.movementPixels.falling(T)) return ne.jumpDownIdle
+            if (E.y < M.y && A > $t.movementPixels.rising(T)) return re.jumpMiddleIdle;
+            if (A > $t.movementPixels.falling(T)) return re.jumpDownIdle
         }
         return Mh({
             characterId: V.id
-        }) ? V.animation.currentBodyAnimation : ne.rest
+        }) ? V.animation.currentBodyAnimation : re.rest
     },
     si = {
         COMMON: 0,
@@ -55896,14 +55885,14 @@ const Fh = new Xr(3),
     };
 class Tu {
     constructor(T) {
-        this.skinChanged = !1, this.availableAnimations = [], this.currentBodyAnimation = ne.rest, this.bodyAnimationLocked = !1, this.bodyAnimationStartedAt = 0, this.currentEyeAnimation = Ti.idle, this.nonMainCharacterState = {
+        this.skinChanged = !1, this.availableAnimations = [], this.currentBodyAnimation = re.rest, this.bodyAnimationLocked = !1, this.bodyAnimationStartedAt = 0, this.currentEyeAnimation = Ti.idle, this.nonMainCharacterState = {
             grounded: !0
         }, this.prevNonMainCharacterState = {
             ...this.nonMainCharacterState
         }, this.lastGroundedAnimationAt = 0, this.update = E => {
             this.character.isMain || (this.nonMainCharacterState.grounded = this.character.movement.nonMainCharacterGrounded);
             const M = Oh(this.character, E);
-            this.playBodyAnimation(M), (M === ne.rest || M === ne.run) && (this.lastGroundedAnimationAt = Date.now()), this.character.isMain || (this.prevNonMainCharacterState = {
+            this.playBodyAnimation(M), (M === re.rest || M === re.run) && (this.lastGroundedAnimationAt = Date.now()), this.character.isMain || (this.prevNonMainCharacterState = {
                 ...this.nonMainCharacterState
             })
         }, this.setupAnimations = () => {
@@ -55925,7 +55914,7 @@ class Tu {
                 }
             }
             const M = !!((c = $t.animationLocks) != null && c[E]);
-            this.bodyAnimationLocked = M, this.bodyAnimationStartedAt = Date.now(), E === ne.rest ? this.startBlinkAnimation() : this.stopBlinkAnimation(), this.currentBodyAnimation = E, this.character.spine.animationState.setAnimation(si.BODY, $t.body.animationNames[E], $t.bodyLoopedAnimations.includes(E)), this.character.dimensions.onPotentialDimensionsChange(), this.playBodySupplementalAnimation(E)
+            this.bodyAnimationLocked = M, this.bodyAnimationStartedAt = Date.now(), E === re.rest ? this.startBlinkAnimation() : this.stopBlinkAnimation(), this.currentBodyAnimation = E, this.character.spine.animationState.setAnimation(si.BODY, $t.body.animationNames[E], $t.bodyLoopedAnimations.includes(E)), this.character.dimensions.onPotentialDimensionsChange(), this.playBodySupplementalAnimation(E)
         }, this.playEyeAnimation = E => {
             E === this.currentEyeAnimation && !this.skinChanged || (this.currentEyeAnimation = E, this.character.spine.animationState.setAnimation(si.EYES, $t.eyes.animationNames[E], !0))
         }, this.playAnimationOrClearTrack = (E, M) => {
@@ -55938,7 +55927,7 @@ class Tu {
         }, this.playBodySupplementalAnimation = E => {
             this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-${$t.body.animationNames[E]}`, `skins-${this.character.skin.skinId}-pose`], si.BODY_SUPPLEMENTAL), this.playMovementSupplementalAnimation(E), this.playJumpSupplementalAnimation(E)
         }, this.playMovementSupplementalAnimation = E => {
-            this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-movement=${E===ne.rest?"false":"true"}`], si.MOVEMENT_SUPPLEMENTAL)
+            this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-movement=${E===re.rest?"false":"true"}`], si.MOVEMENT_SUPPLEMENTAL)
         }, this.playJumpSupplementalAnimation = E => {
             const M = $t.jumpAnimations.includes(E);
             this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-jumping=${M?"true":"false"}`], si.JUMP_SUPPLEMENTAL)
@@ -55949,7 +55938,7 @@ class Tu {
         }, this.stopBlinkAnimation = () => {
             this.playEyeAnimation(Ti.idle), this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null)
         }, this.onAnimationComplete = E => {
-            E.trackIndex === si.EYES && this.currentBodyAnimation === ne.rest && this.currentEyeAnimation === Ti.blink && this.startBlinkAnimation()
+            E.trackIndex === si.EYES && this.currentBodyAnimation === re.rest && this.currentEyeAnimation === Ti.blink && this.startBlinkAnimation()
         }, this.onSkinChanged = () => {
             this.skinChanged = !0, this.setupAnimations(), this.skinChanged = !1
         }, this.destroy = () => {
@@ -56277,7 +56266,7 @@ var te;
     V[V.hold = 0] = "hold", V[V.once = 1] = "once", V[V.loop = 2] = "loop", V[V.pingpong = 3] = "pingpong", V[V.onceReverse = 4] = "onceReverse", V[V.loopReverse = 5] = "loopReverse", V[V.pingpongReverse = 6] = "pingpongReverse"
 })(te || (te = {}));
 const Vr = [te.hold, te.once, te.loop, te.pingpong, te.onceReverse, te.loopReverse, te.pingpongReverse];
-class gn {
+class mn {
     constructor(T, E, M) {
         z(this, "name");
         z(this, "timelines", []);
@@ -56307,10 +56296,10 @@ var at;
 (function(V) {
     V[V.setup = 0] = "setup", V[V.first = 1] = "first", V[V.replace = 2] = "replace", V[V.add = 3] = "add"
 })(at || (at = {}));
-var re;
+var ae;
 (function(V) {
     V[V.mixIn = 0] = "mixIn", V[V.mixOut = 1] = "mixOut"
-})(re || (re = {}));
+})(ae || (ae = {}));
 const Dt = {
     rotate: 0,
     x: 1,
@@ -56513,7 +56502,7 @@ class Me extends Ge {
         }
         let t = this.getCurveValue(T) * c;
         if (E == 1) return M == at.add ? I + t - c : t;
-        if (A == re.mixOut) switch (M) {
+        if (A == ae.mixOut) switch (M) {
             case at.setup:
                 return c + (Math.abs(t) * ht.signum(c) - c) * E;
             case at.first:
@@ -56532,7 +56521,7 @@ class Me extends Ge {
         return I + (t - c) * E
     }
 }
-class xn extends Ge {
+class gn extends Ge {
     constructor(T, E, M, A) {
         super(T, E, [M, A])
     }
@@ -56554,7 +56543,7 @@ class _i extends Me {
         o.active && (o.rotation = this.getRelativeValue(A, c, g, o.rotation, o.data.rotation))
     }
 }
-class zr extends xn {
+class zr extends gn {
     constructor(E, M, A) {
         super(E, M, Dt.x + "|" + A, Dt.y + "|" + A);
         z(this, "boneIndex", 0);
@@ -56626,7 +56615,7 @@ class Hr extends Me {
         o.active && (o.y = this.getRelativeValue(A, c, g, o.y, o.data.y))
     }
 }
-class Kr extends xn {
+class Kr extends gn {
     constructor(E, M, A) {
         super(E, M, Dt.scaleX + "|" + A, Dt.scaleY + "|" + A);
         z(this, "boneIndex", 0);
@@ -56665,7 +56654,7 @@ class Kr extends xn {
         else {
             let s = 0,
                 h = 0;
-            if (t == re.mixOut) switch (g) {
+            if (t == ae.mixOut) switch (g) {
                 case at.setup:
                     s = o.data.scaleX, h = o.data.scaleY, o.scaleX = s + (Math.abs(a) * ht.signum(s) - s) * c, o.scaleY = h + (Math.abs(r) * ht.signum(h) - h) * c;
                     break;
@@ -56711,7 +56700,7 @@ class Jr extends Me {
         o.active && (o.scaleY = this.getScaleValue(A, c, g, t, o.scaleY, o.data.scaleY))
     }
 }
-class Qr extends xn {
+class Qr extends gn {
     constructor(E, M, A) {
         super(E, M, Dt.shearX + "|" + A, Dt.shearY + "|" + A);
         z(this, "boneIndex", 0);
@@ -56798,7 +56787,7 @@ class kr extends Ht {
     apply(E, M, A, I, c, g, t) {
         let o = E.bones[this.boneIndex];
         if (!o.active) return;
-        if (t == re.mixOut) {
+        if (t == ae.mixOut) {
             g == at.setup && (o.inherit = o.data.inherit);
             return
         }
@@ -57082,7 +57071,7 @@ class Si extends Ht {
     apply(E, M, A, I, c, g, t) {
         let o = E.slots[this.slotIndex];
         if (o.bone.active) {
-            if (t == re.mixOut) {
+            if (t == ae.mixOut) {
                 g == at.setup && this.setAttachment(E, o, o.data.attachmentName);
                 return
             }
@@ -57330,7 +57319,7 @@ const us = class us extends Ht {
         this.frames[E] = M, this.drawOrders[E] = A
     }
     apply(E, M, A, I, c, g, t) {
-        if (t == re.mixOut) {
+        if (t == ae.mixOut) {
             g == at.setup && ot.arrayCopy(E.slots, 0, E.drawOrder, 0, E.slots.length);
             return
         }
@@ -57393,7 +57382,7 @@ class na extends Ge {
             default:
                 a = this.getBezierValue(A, i, 1, e - 2), r = this.getBezierValue(A, i, 2, e + 18 - 2)
         }
-        g == at.setup ? (o.mix = o.data.mix + (a - o.data.mix) * c, o.softness = o.data.softness + (r - o.data.softness) * c, t == re.mixOut ? (o.bendDirection = o.data.bendDirection, o.compress = o.data.compress, o.stretch = o.data.stretch) : (o.bendDirection = v[i + 3], o.compress = v[i + 4] != 0, o.stretch = v[i + 5] != 0)) : (o.mix += (a - o.mix) * c, o.softness += (r - o.softness) * c, t == re.mixIn && (o.bendDirection = v[i + 3], o.compress = v[i + 4] != 0, o.stretch = v[i + 5] != 0))
+        g == at.setup ? (o.mix = o.data.mix + (a - o.data.mix) * c, o.softness = o.data.softness + (r - o.data.softness) * c, t == ae.mixOut ? (o.bendDirection = o.data.bendDirection, o.compress = o.data.compress, o.stretch = o.data.stretch) : (o.bendDirection = v[i + 3], o.compress = v[i + 4] != 0, o.stretch = v[i + 5] != 0)) : (o.mix += (a - o.mix) * c, o.softness += (r - o.softness) * c, t == ae.mixIn && (o.bendDirection = v[i + 3], o.compress = v[i + 4] != 0, o.stretch = v[i + 5] != 0))
     }
 }
 class ra extends Ge {
@@ -57700,7 +57689,7 @@ const Ce = class Ce extends Ht {
         let v = o.attachment,
             a = this.attachment;
         if (v != a && (!(v instanceof Pe) || v.timelineAttachment != a)) return;
-        if (t == re.mixOut) {
+        if (t == ae.mixOut) {
             g == at.setup && (o.sequenceIndex = -1);
             return
         }
@@ -57828,7 +57817,7 @@ const Ai = class Ai {
                 r == 0 && (n = !0);
                 for (let y = 0; y < m; y++) {
                     var I = p[y];
-                    I instanceof Si ? this.applyAttachmentTimeline(I, T, f, s, n) : I.apply(T, l, f, d, h, s, re.mixIn)
+                    I instanceof Si ? this.applyAttachmentTimeline(I, T, f, s, n) : I.apply(T, l, f, d, h, s, ae.mixIn)
                 }
             } else {
                 let y = e.timelineMode,
@@ -57838,12 +57827,12 @@ const Ai = class Ai {
                 for (let C = 0; C < m; C++) {
                     let P = p[C],
                         R = y[C] == Is ? s : at.setup;
-                    !x && P instanceof _i ? this.applyRotateTimeline(P, T, f, h, R, e.timelinesRotation, C << 1, S) : P instanceof Si ? this.applyAttachmentTimeline(P, T, f, s, n) : P.apply(T, l, f, d, h, R, re.mixIn)
+                    !x && P instanceof _i ? this.applyRotateTimeline(P, T, f, h, R, e.timelinesRotation, C << 1, S) : P instanceof Si ? this.applyAttachmentTimeline(P, T, f, s, n) : P.apply(T, l, f, d, h, R, ae.mixIn)
                 }
             }
             this.queueEvents(e, u), E.length = 0, e.nextAnimationLast = u, e.nextTrackLast = e.trackTime
         }
-        for (var c = this.unkeyedState + Gn, g = T.slots, t = 0, o = T.slots.length; t < o; t++) {
+        for (var c = this.unkeyedState + Bn, g = T.slots, t = 0, o = T.slots.length; t < o; t++) {
             var v = g[t];
             if (v.attachmentState == c) {
                 var a = v.data.attachmentName;
@@ -57868,7 +57857,7 @@ const Ai = class Ai {
             e = i,
             s = null;
         if (A.reverse ? e = A.animation.duration - e : I < A.eventThreshold && (s = this.events), M == at.add)
-            for (let h = 0; h < o; h++) t[h].apply(E, r, e, s, a, M, re.mixOut);
+            for (let h = 0; h < o; h++) t[h].apply(E, r, e, s, a, M, ae.mixOut);
         else {
             let h = A.timelineMode,
                 n = A.timelineHoldMix,
@@ -57877,17 +57866,17 @@ const Ai = class Ai {
             u && (A.timelinesRotation.length = o << 1), A.totalAlpha = 0;
             for (let f = 0; f < o; f++) {
                 let d = t[f],
-                    p = re.mixOut,
+                    p = ae.mixOut,
                     m, y = 0;
                 switch (h[f]) {
                     case Is:
                         if (!g && d instanceof ai) continue;
                         m = M, y = a;
                         break;
-                    case Dn:
+                    case In:
                         m = at.setup, y = a;
                         break;
-                    case Bn:
+                    case Dn:
                         m = M, y = v;
                         break;
                     case Ds:
@@ -57899,21 +57888,21 @@ const Ai = class Ai {
                         y = v * Math.max(0, 1 - x.mixTime / x.mixDuration);
                         break
                 }
-                A.totalAlpha += y, !l && d instanceof _i ? this.applyRotateTimeline(d, E, e, y, m, A.timelinesRotation, f << 1, u) : d instanceof Si ? this.applyAttachmentTimeline(d, E, e, m, c && y >= A.alphaAttachmentThreshold) : (g && d instanceof ai && m == at.setup && (p = re.mixIn), d.apply(E, r, e, s, y, m, p))
+                A.totalAlpha += y, !l && d instanceof _i ? this.applyRotateTimeline(d, E, e, y, m, A.timelinesRotation, f << 1, u) : d instanceof Si ? this.applyAttachmentTimeline(d, E, e, m, c && y >= A.alphaAttachmentThreshold) : (g && d instanceof ai && m == at.setup && (p = ae.mixIn), d.apply(E, r, e, s, y, m, p))
             }
         }
         return T.mixDuration > 0 && this.queueEvents(A, i), this.events.length = 0, A.nextAnimationLast = i, A.nextTrackLast = A.trackTime, I
     }
     applyAttachmentTimeline(T, E, M, A, I) {
         var c = E.slots[T.slotIndex];
-        c.bone.active && (M < T.frames[0] ? (A == at.setup || A == at.first) && this.setAttachment(E, c, c.data.attachmentName, I) : this.setAttachment(E, c, T.attachmentNames[Ht.search1(T.frames, M)], I), c.attachmentState <= this.unkeyedState && (c.attachmentState = this.unkeyedState + Gn))
+        c.bone.active && (M < T.frames[0] ? (A == at.setup || A == at.first) && this.setAttachment(E, c, c.data.attachmentName, I) : this.setAttachment(E, c, T.attachmentNames[Ht.search1(T.frames, M)], I), c.attachmentState <= this.unkeyedState && (c.attachmentState = this.unkeyedState + Bn))
     }
     setAttachment(T, E, M, A) {
         E.setAttachment(M ? T.getAttachment(E.data.index, M) : null), A && (E.attachmentState = this.unkeyedState + Yh)
     }
     applyRotateTimeline(T, E, M, A, I, c, g, t) {
         if (t && (c[g] = 0), A == 1) {
-            T.apply(E, 0, M, null, 1, I, re.mixIn);
+            T.apply(E, 0, M, null, 1, I, ae.mixIn);
             return
         }
         let o = E.bones[T.boneIndex];
@@ -58069,14 +58058,14 @@ const Ai = class Ai {
         c.length = 0;
         let g = this.propertyIDs;
         if (E && E.holdPrevious) {
-            for (let t = 0; t < A; t++) I[t] = g.addAll(M[t].getPropertyIds()) ? Ds : Bn;
+            for (let t = 0; t < A; t++) I[t] = g.addAll(M[t].getPropertyIds()) ? Ds : Dn;
             return
         }
         t: for (let t = 0; t < A; t++) {
             let o = M[t],
                 v = o.getPropertyIds();
             if (!g.addAll(v)) I[t] = Is;
-            else if (!E || o instanceof Si || o instanceof ai || o instanceof Vi || !E.animation.hasTimeline(v)) I[t] = Dn;
+            else if (!E || o instanceof Si || o instanceof ai || o instanceof Vi || !E.animation.hasTimeline(v)) I[t] = In;
             else {
                 for (let a = E.mixingTo; a; a = a.mixingTo)
                     if (!a.animation.hasTimeline(v)) {
@@ -58107,7 +58096,7 @@ const Ai = class Ai {
         this.queue.clear()
     }
 };
-z(Ai, "_emptyAnimation", new gn("<empty>", [], 0));
+z(Ai, "_emptyAnimation", new mn("<empty>", [], 0));
 let is = Ai;
 class bh {
     constructor() {
@@ -58279,11 +58268,11 @@ var ve;
     V[V.start = 0] = "start", V[V.interrupt = 1] = "interrupt", V[V.end = 2] = "end", V[V.dispose = 3] = "dispose", V[V.complete = 4] = "complete", V[V.event = 5] = "event"
 })(ve || (ve = {}));
 const Is = 0,
-    Dn = 1,
-    Bn = 2,
+    In = 1,
+    Dn = 2,
     Ds = 3,
     Xh = 4,
-    Gn = 1,
+    Bn = 1,
     Yh = 2;
 class Uh {
     constructor(T) {
@@ -58342,10 +58331,10 @@ class ma {
         return this._image
     }
 }
-var le;
+var ue;
 (function(V) {
     V[V.Nearest = 9728] = "Nearest", V[V.Linear = 9729] = "Linear", V[V.MipMap = 9987] = "MipMap", V[V.MipMapNearestNearest = 9984] = "MipMapNearestNearest", V[V.MipMapLinearNearest = 9985] = "MipMapLinearNearest", V[V.MipMapNearestLinear = 9986] = "MipMapNearestLinear", V[V.MipMapLinearLinear = 9987] = "MipMapLinearLinear"
-})(le || (le = {}));
+})(ue || (ue = {}));
 var Li;
 (function(V) {
     V[V.MirroredRepeat = 33648] = "MirroredRepeat", V[V.ClampToEdge = 33071] = "ClampToEdge", V[V.Repeat = 10497] = "Repeat"
@@ -58376,7 +58365,7 @@ class zh {
         A.size = v => {
             v.width = parseInt(M[1]), v.height = parseInt(M[2])
         }, A.format = () => {}, A.filter = v => {
-            v.minFilter = ot.enumValue(le, M[1]), v.magFilter = ot.enumValue(le, M[2])
+            v.minFilter = ot.enumValue(ue, M[1]), v.magFilter = ot.enumValue(ue, M[2])
         }, A.repeat = v => {
             M[1].indexOf("x") != -1 && (v.uWrap = Li.Repeat), M[1].indexOf("y") != -1 && (v.vWrap = Li.Repeat)
         }, A.pma = v => {
@@ -58469,8 +58458,8 @@ class Wh {
 class Hh {
     constructor(T) {
         z(this, "name");
-        z(this, "minFilter", le.Nearest);
-        z(this, "magFilter", le.Nearest);
+        z(this, "minFilter", ue.Nearest);
+        z(this, "magFilter", ue.Nearest);
         z(this, "uWrap", Li.ClampToEdge);
         z(this, "vWrap", Li.ClampToEdge);
         z(this, "texture", null);
@@ -58586,7 +58575,7 @@ class li extends Pe {
         return this.copyTo(E), E.lengths = new Array(this.lengths.length), ot.arrayCopy(this.lengths, 0, E.lengths, 0, this.lengths.length), E.closed = closed, E.constantSpeed = this.constantSpeed, E.color.setFromColor(this.color), E
     }
 }
-class yn extends Pe {
+class xn extends Pe {
     constructor(E) {
         super(E);
         z(this, "x", 0);
@@ -58606,7 +58595,7 @@ class yn extends Pe {
         return ht.atan2Deg(g, c)
     }
     copy() {
-        let E = new yn(this.name);
+        let E = new xn(this.name);
         return E.x = this.x, E.y = this.y, E.rotation = this.rotation, E.color.setFromColor(this.color), E
     }
 }
@@ -58680,7 +58669,7 @@ const Xt = class Xt extends Ur {
 };
 z(Xt, "X1", 0), z(Xt, "Y1", 1), z(Xt, "C1R", 2), z(Xt, "C1G", 3), z(Xt, "C1B", 4), z(Xt, "C1A", 5), z(Xt, "U1", 6), z(Xt, "V1", 7), z(Xt, "X2", 8), z(Xt, "Y2", 9), z(Xt, "C2R", 10), z(Xt, "C2G", 11), z(Xt, "C2B", 12), z(Xt, "C2A", 13), z(Xt, "U2", 14), z(Xt, "V2", 15), z(Xt, "X3", 16), z(Xt, "Y3", 17), z(Xt, "C3R", 18), z(Xt, "C3G", 19), z(Xt, "C3B", 20), z(Xt, "C3A", 21), z(Xt, "U3", 22), z(Xt, "V3", 23), z(Xt, "X4", 24), z(Xt, "Y4", 25), z(Xt, "C4R", 26), z(Xt, "C4G", 27), z(Xt, "C4B", 28), z(Xt, "C4A", 29), z(Xt, "U4", 30), z(Xt, "V4", 31);
 let Vt = Xt;
-class bn {
+class Gn {
     constructor(T) {
         z(this, "atlas");
         this.atlas = T
@@ -58721,7 +58710,7 @@ class bn {
         return new li(E)
     }
     newPointAttachment(T, E) {
-        return new yn(E)
+        return new xn(E)
     }
     newClippingAttachment(T, E) {
         return new Ni(E)
@@ -58754,7 +58743,7 @@ var Jt;
 (function(V) {
     V[V.Normal = 0] = "Normal", V[V.OnlyTranslation = 1] = "OnlyTranslation", V[V.NoRotationOrReflection = 2] = "NoRotationOrReflection", V[V.NoScale = 3] = "NoScale", V[V.NoScaleOrReflection = 4] = "NoScaleOrReflection"
 })(Jt || (Jt = {}));
-class Nn {
+class bn {
     constructor(T, E, M) {
         z(this, "data");
         z(this, "skeleton");
@@ -59940,10 +59929,10 @@ const Pi = class Pi {
         for (let E = 0; E < T.bones.length; E++) {
             let M = T.bones[E],
                 A;
-            if (!M.parent) A = new Nn(M, this, null);
+            if (!M.parent) A = new bn(M, this, null);
             else {
                 let I = this.bones[M.parent.index];
-                A = new Nn(M, this, I), I.children.push(A)
+                A = new bn(M, this, I), I.children.push(A)
             }
             this.bones.push(A)
         }
@@ -60454,7 +60443,7 @@ class Aa {
         return null
     }
 }
-class Xn {
+class Nn {
     constructor(T = 0, E, M) {
         z(this, "slotIndex");
         z(this, "name");
@@ -60542,7 +60531,7 @@ class ss {
             if (M)
                 for (let A in M) {
                     let I = M[A];
-                    I && T.push(new Xn(E, A, I))
+                    I && T.push(new Nn(E, A, I))
                 }
         }
         return T
@@ -60552,7 +60541,7 @@ class ss {
         if (M)
             for (let A in M) {
                 let I = M[A];
-                I && E.push(new Xn(T, A, I))
+                I && E.push(new Nn(T, A, I))
             }
     }
     clear() {
@@ -61051,34 +61040,34 @@ class $h {
                 let h = T.readInt(!0);
                 switch (e) {
                     case _h:
-                        A.push(ie(T, new _i(s, h, a), 1));
+                        A.push(se(T, new _i(s, h, a), 1));
                         break;
                     case tl:
                         A.push(Bs(T, new zr(s, h, a), I));
                         break;
                     case el:
-                        A.push(ie(T, new Wr(s, h, a), I));
+                        A.push(se(T, new Wr(s, h, a), I));
                         break;
                     case il:
-                        A.push(ie(T, new Hr(s, h, a), I));
+                        A.push(se(T, new Hr(s, h, a), I));
                         break;
                     case sl:
                         A.push(Bs(T, new Kr(s, h, a), 1));
                         break;
                     case nl:
-                        A.push(ie(T, new Zr(s, h, a), 1));
+                        A.push(se(T, new Zr(s, h, a), 1));
                         break;
                     case rl:
-                        A.push(ie(T, new Jr(s, h, a), 1));
+                        A.push(se(T, new Jr(s, h, a), 1));
                         break;
                     case al:
                         A.push(Bs(T, new Qr(s, h, a), 1));
                         break;
                     case ol:
-                        A.push(ie(T, new $r(s, h, a), 1));
+                        A.push(se(T, new $r(s, h, a), 1));
                         break;
                     case hl:
-                        A.push(ie(T, new jr(s, h, a), 1))
+                        A.push(se(T, new jr(s, h, a), 1))
                 }
             }
         }
@@ -61140,10 +61129,10 @@ class $h {
                     n = T.readInt(!0);
                 switch (s) {
                     case xl:
-                        A.push(ie(T, new aa(h, n, a), r.positionMode == Oe.Fixed ? I : 1));
+                        A.push(se(T, new aa(h, n, a), r.positionMode == Oe.Fixed ? I : 1));
                         break;
                     case yl:
-                        A.push(ie(T, new oa(h, n, a), r.spacingMode == qt.Length || r.spacingMode == qt.Fixed ? I : 1));
+                        A.push(se(T, new oa(h, n, a), r.spacingMode == qt.Length || r.spacingMode == qt.Fixed ? I : 1));
                         break;
                     case Tl:
                         let l = new ha(h, n, a),
@@ -61183,25 +61172,25 @@ class $h {
                 const h = T.readInt(!0);
                 switch (e) {
                     case Sl:
-                        A.push(ie(T, new la(s, h, a), 1));
+                        A.push(se(T, new la(s, h, a), 1));
                         break;
                     case Cl:
-                        A.push(ie(T, new ua(s, h, a), 1));
+                        A.push(se(T, new ua(s, h, a), 1));
                         break;
                     case El:
-                        A.push(ie(T, new fa(s, h, a), 1));
+                        A.push(se(T, new fa(s, h, a), 1));
                         break;
                     case Al:
-                        A.push(ie(T, new da(s, h, a), 1));
+                        A.push(se(T, new da(s, h, a), 1));
                         break;
                     case Pl:
-                        A.push(ie(T, new va(s, h, a), 1));
+                        A.push(se(T, new va(s, h, a), 1));
                         break;
                     case Ml:
-                        A.push(ie(T, new ca(s, h, a), 1));
+                        A.push(se(T, new ca(s, h, a), 1));
                         break;
                     case Rl:
-                        A.push(ie(T, new pa(s, h, a), 1))
+                        A.push(se(T, new pa(s, h, a), 1))
                 }
             }
         }
@@ -61302,7 +61291,7 @@ class $h {
         }
         let t = 0;
         for (let o = 0, v = A.length; o < v; o++) t = Math.max(t, A[o].getDuration());
-        return new gn(E, A, t)
+        return new mn(E, A, t)
     }
 }
 class jh {
@@ -61392,7 +61381,7 @@ var Ne;
     V[V.Region = 0] = "Region", V[V.BoundingBox = 1] = "BoundingBox", V[V.Mesh = 2] = "Mesh", V[V.LinkedMesh = 3] = "LinkedMesh", V[V.Path = 4] = "Path", V[V.Point = 5] = "Point", V[V.Clipping = 6] = "Clipping"
 })(Ne || (Ne = {}));
 
-function ie(V, T, E) {
+function se(V, T, E) {
     let M = V.readFloat(),
         A = V.readFloat() * E;
     for (let I = 0, c = 0, g = T.getFrameCount() - 1; T.setFrame(I, M, A), I != g; I++) {
@@ -62670,7 +62659,7 @@ class Ll {
         }
         let c = 0;
         for (let g = 0, t = I.length; g < t; g++) c = Math.max(c, I[g].getDuration());
-        M.animations.push(new gn(E, I, c))
+        M.animations.push(new mn(E, I, c))
     }
 }
 class Ol {
@@ -62730,11 +62719,11 @@ function Ut(V, T, E, M, A, I, c, g, t, o) {
 function tt(V, T, E) {
     return V[T] !== void 0 ? V[T] : E
 }
-typeof Math.fround > "u" && (Math.fround = (function(V) {
+typeof Math.fround > "u" && (Math.fround = function(V) {
     return function(T) {
         return V[0] = T, V[0]
     }
-})(new Float32Array(1)));
+}(new Float32Array(1)));
 class me {
     constructor(T, E = {
         alpha: "true"
@@ -62775,21 +62764,21 @@ const Ui = class Ui extends ma {
     }
     static validateMagFilter(E) {
         switch (E) {
-            case le.MipMapLinearLinear:
-            case le.MipMapLinearNearest:
-            case le.MipMapNearestLinear:
-            case le.MipMapNearestNearest:
-                return le.Linear;
+            case ue.MipMapLinearLinear:
+            case ue.MipMapLinearNearest:
+            case ue.MipMapNearestLinear:
+            case ue.MipMapNearestNearest:
+                return ue.Linear;
             default:
                 return E
         }
     }
     static usesMipMaps(E) {
         switch (E) {
-            case le.MipMapLinearLinear:
-            case le.MipMapLinearNearest:
-            case le.MipMapNearestLinear:
-            case le.MipMapNearestNearest:
+            case ue.MipMapLinearLinear:
+            case ue.MipMapLinearNearest:
+            case ue.MipMapNearestLinear:
+            case ue.MipMapNearestNearest:
                 return !0;
             default:
                 return !1
@@ -62887,7 +62876,7 @@ const ct = 0,
     Ft = 7,
     wt = 11,
     Mt = 15,
-    se = class se {
+    ne = class ne {
         constructor() {
             z(this, "temp", new Float32Array(16));
             z(this, "values", new Float32Array(16));
@@ -62923,7 +62912,7 @@ const ct = 0,
             return A[pt] += T, A[gt] += E, A[yt] += M, this
         }
         copy() {
-            return new se().set(this.values)
+            return new ne().set(this.values)
         }
         projection(T, E, M, A) {
             this.identity();
@@ -62960,16 +62949,16 @@ const ct = 0,
             return E[ct] = A[ct] * M[ct] + A[Tt] * M[Ct] + A[St] * M[At] + A[pt] * M[Rt], E[Tt] = A[ct] * M[Tt] + A[Tt] * M[mt] + A[St] * M[Pt] + A[pt] * M[Ft], E[St] = A[ct] * M[St] + A[Tt] * M[Et] + A[St] * M[xt] + A[pt] * M[wt], E[pt] = A[ct] * M[pt] + A[Tt] * M[gt] + A[St] * M[yt] + A[pt] * M[Mt], E[Ct] = A[Ct] * M[ct] + A[mt] * M[Ct] + A[Et] * M[At] + A[gt] * M[Rt], E[mt] = A[Ct] * M[Tt] + A[mt] * M[mt] + A[Et] * M[Pt] + A[gt] * M[Ft], E[Et] = A[Ct] * M[St] + A[mt] * M[Et] + A[Et] * M[xt] + A[gt] * M[wt], E[gt] = A[Ct] * M[pt] + A[mt] * M[gt] + A[Et] * M[yt] + A[gt] * M[Mt], E[At] = A[At] * M[ct] + A[Pt] * M[Ct] + A[xt] * M[At] + A[yt] * M[Rt], E[Pt] = A[At] * M[Tt] + A[Pt] * M[mt] + A[xt] * M[Pt] + A[yt] * M[Ft], E[xt] = A[At] * M[St] + A[Pt] * M[Et] + A[xt] * M[xt] + A[yt] * M[wt], E[yt] = A[At] * M[pt] + A[Pt] * M[gt] + A[xt] * M[yt] + A[yt] * M[Mt], E[Rt] = A[Rt] * M[ct] + A[Ft] * M[Ct] + A[wt] * M[At] + A[Mt] * M[Rt], E[Ft] = A[Rt] * M[Tt] + A[Ft] * M[mt] + A[wt] * M[Pt] + A[Mt] * M[Ft], E[wt] = A[Rt] * M[St] + A[Ft] * M[Et] + A[wt] * M[xt] + A[Mt] * M[wt], E[Mt] = A[Rt] * M[pt] + A[Ft] * M[gt] + A[wt] * M[yt] + A[Mt] * M[Mt], this.set(this.temp)
         }
         lookAt(T, E, M) {
-            let A = se.xAxis,
-                I = se.yAxis,
-                c = se.zAxis;
+            let A = ne.xAxis,
+                I = ne.yAxis,
+                c = ne.zAxis;
             c.setFrom(E).normalize(), A.setFrom(E).normalize(), A.cross(M).normalize(), I.setFrom(A).cross(c).normalize(), this.identity();
             let g = this.values;
-            return g[ct] = A.x, g[Tt] = A.y, g[St] = A.z, g[Ct] = I.x, g[mt] = I.y, g[Et] = I.z, g[At] = -c.x, g[Pt] = -c.y, g[xt] = -c.z, se.tmpMatrix.identity(), se.tmpMatrix.values[pt] = -T.x, se.tmpMatrix.values[gt] = -T.y, se.tmpMatrix.values[yt] = -T.z, this.multiply(se.tmpMatrix), this
+            return g[ct] = A.x, g[Tt] = A.y, g[St] = A.z, g[Ct] = I.x, g[mt] = I.y, g[Et] = I.z, g[At] = -c.x, g[Pt] = -c.y, g[xt] = -c.z, ne.tmpMatrix.identity(), ne.tmpMatrix.values[pt] = -T.x, ne.tmpMatrix.values[gt] = -T.y, ne.tmpMatrix.values[yt] = -T.z, this.multiply(ne.tmpMatrix), this
         }
     };
-z(se, "xAxis", new Ri), z(se, "yAxis", new Ri), z(se, "zAxis", new Ri), z(se, "tmpMatrix", new se);
-let Ci = se;
+z(ne, "xAxis", new Ri), z(ne, "yAxis", new Ri), z(ne, "zAxis", new Ri), z(ne, "tmpMatrix", new ne);
+let Ci = ne;
 class Il {
     constructor(T, E) {
         z(this, "position", new Ri(0, 0, 0));
@@ -63336,7 +63325,7 @@ class Ys extends Ls {
         super(Ae.POSITION, Ii.Float, 2)
     }
 }
-class Yn extends Ls {
+class Xn extends Ls {
     constructor(T = 0) {
         super(Ae.TEXCOORDS + (T == 0 ? "" : T), Ii.Float, 2)
     }
@@ -63357,9 +63346,9 @@ var Ii;
 })(Ii || (Ii = {}));
 const be = 1,
     Bl = 769,
-    Un = 770,
-    Vn = 771,
-    zn = 774,
+    Yn = 770,
+    Un = 771,
+    Vn = 774,
     Xe = class Xe {
         constructor(T, E = !0, M = 10920) {
             z(this, "context");
@@ -63376,7 +63365,7 @@ const be = 1,
             z(this, "cullWasEnabled", !1);
             if (M > 10920) throw new Error("Can't have more than 10920 triangles per batch: " + M);
             this.context = T instanceof me ? T : new me(T);
-            let A = E ? [new Ys, new Us, new Yn, new Dl] : [new Ys, new Us, new Yn];
+            let A = E ? [new Ys, new Us, new Xn, new Dl] : [new Ys, new Us, new Xn];
             this.mesh = new Ra(T, A, M, M * 3);
             let I = this.context.gl;
             this.srcColorBlend = I.SRC_ALPHA, this.srcAlphaBlend = I.ONE, this.dstBlend = I.ONE_MINUS_SRC_ALPHA
@@ -63428,19 +63417,19 @@ const be = 1,
         }
     };
 z(Xe, "disableCulling", !1), z(Xe, "globalDrawCalls", 0), z(Xe, "blendModesGL", [{
-    srcRgb: Un,
+    srcRgb: Yn,
     srcRgbPma: be,
-    dstRgb: Vn,
+    dstRgb: Un,
     srcAlpha: be
 }, {
-    srcRgb: Un,
+    srcRgb: Yn,
     srcRgbPma: be,
     dstRgb: be,
     srcAlpha: be
 }, {
-    srcRgb: zn,
-    srcRgbPma: zn,
-    dstRgb: Vn,
+    srcRgb: Vn,
+    srcRgbPma: Vn,
+    dstRgb: Un,
     srcAlpha: be
 }, {
     srcRgb: be,
@@ -63449,12 +63438,12 @@ z(Xe, "disableCulling", !1), z(Xe, "globalDrawCalls", 0), z(Xe, "blendModesGL", 
     srcAlpha: be
 }]);
 let rs = Xe;
-class Wn {
+class zn {
     constructor(T, E = 10920) {
         z(this, "context");
         z(this, "isDrawing", !1);
         z(this, "mesh");
-        z(this, "shapeType", he.Filled);
+        z(this, "shapeType", le.Filled);
         z(this, "color", new Lt(1, 1, 1, 1));
         z(this, "shader", null);
         z(this, "vertexIndex", 0);
@@ -63483,22 +63472,22 @@ class Wn {
         this.color.set(T, E, M, A)
     }
     point(T, E, M) {
-        this.check(he.Point, 1), M || (M = this.color), this.vertex(T, E, M)
+        this.check(le.Point, 1), M || (M = this.color), this.vertex(T, E, M)
     }
     line(T, E, M, A, I) {
-        this.check(he.Line, 2), this.mesh.getVertices(), this.vertexIndex, I || (I = this.color), this.vertex(T, E, I), this.vertex(M, A, I)
+        this.check(le.Line, 2), this.mesh.getVertices(), this.vertexIndex, I || (I = this.color), this.vertex(T, E, I), this.vertex(M, A, I)
     }
     triangle(T, E, M, A, I, c, g, t, o, v) {
-        this.check(T ? he.Filled : he.Line, 3), this.mesh.getVertices(), this.vertexIndex, t || (t = this.color), o || (o = this.color), v || (v = this.color), T ? (this.vertex(E, M, t), this.vertex(A, I, o), this.vertex(c, g, v)) : (this.vertex(E, M, t), this.vertex(A, I, o), this.vertex(A, I, t), this.vertex(c, g, o), this.vertex(c, g, t), this.vertex(E, M, o))
+        this.check(T ? le.Filled : le.Line, 3), this.mesh.getVertices(), this.vertexIndex, t || (t = this.color), o || (o = this.color), v || (v = this.color), T ? (this.vertex(E, M, t), this.vertex(A, I, o), this.vertex(c, g, v)) : (this.vertex(E, M, t), this.vertex(A, I, o), this.vertex(A, I, t), this.vertex(c, g, o), this.vertex(c, g, t), this.vertex(E, M, o))
     }
     quad(T, E, M, A, I, c, g, t, o, v, a, r, i) {
-        this.check(T ? he.Filled : he.Line, 3), this.mesh.getVertices(), this.vertexIndex, v || (v = this.color), a || (a = this.color), r || (r = this.color), i || (i = this.color), T ? (this.vertex(E, M, v), this.vertex(A, I, a), this.vertex(c, g, r), this.vertex(c, g, r), this.vertex(t, o, i), this.vertex(E, M, v)) : (this.vertex(E, M, v), this.vertex(A, I, a), this.vertex(A, I, a), this.vertex(c, g, r), this.vertex(c, g, r), this.vertex(t, o, i), this.vertex(t, o, i), this.vertex(E, M, v))
+        this.check(T ? le.Filled : le.Line, 3), this.mesh.getVertices(), this.vertexIndex, v || (v = this.color), a || (a = this.color), r || (r = this.color), i || (i = this.color), T ? (this.vertex(E, M, v), this.vertex(A, I, a), this.vertex(c, g, r), this.vertex(c, g, r), this.vertex(t, o, i), this.vertex(E, M, v)) : (this.vertex(E, M, v), this.vertex(A, I, a), this.vertex(A, I, a), this.vertex(c, g, r), this.vertex(c, g, r), this.vertex(t, o, i), this.vertex(t, o, i), this.vertex(E, M, v))
     }
     rect(T, E, M, A, I, c) {
         this.quad(T, E, M, E + A, M, E + A, M + I, E, M + I, c, c, c, c)
     }
     rectLine(T, E, M, A, I, c, g) {
-        this.check(T ? he.Filled : he.Line, 8), g || (g = this.color);
+        this.check(T ? le.Filled : le.Line, 8), g || (g = this.color);
         let t = this.tmp.set(I - M, E - A);
         t.normalize(), c *= .5;
         let o = t.x * c,
@@ -63510,7 +63499,7 @@ class Wn {
     }
     polygon(T, E, M, A) {
         if (M < 3) throw new Error("Polygon must contain at least 3 vertices");
-        this.check(he.Line, M * 2), A || (A = this.color), this.mesh.getVertices(), this.vertexIndex, E <<= 1, M <<= 1;
+        this.check(le.Line, M * 2), A || (A = this.color), this.mesh.getVertices(), this.vertexIndex, E <<= 1, M <<= 1;
         let I = T[E],
             c = T[E + 1],
             g = E + M;
@@ -63531,7 +63520,7 @@ class Wn {
             v = A,
             a = 0;
         if (T) {
-            this.check(he.Filled, c * 3 + 3), c--;
+            this.check(le.Filled, c * 3 + 3), c--;
             for (let r = 0; r < c; r++) {
                 this.vertex(E, M, I), this.vertex(E + v, M + a, I);
                 let i = v;
@@ -63539,7 +63528,7 @@ class Wn {
             }
             this.vertex(E, M, I), this.vertex(E + v, M + a, I)
         } else {
-            this.check(he.Line, c * 2 + 2);
+            this.check(le.Line, c * 2 + 2);
             for (let r = 0; r < c; r++) {
                 this.vertex(E + v, M + a, I);
                 let i = v;
@@ -63550,7 +63539,7 @@ class Wn {
         v = A, a = 0, this.vertex(E + v, M + a, I)
     }
     curve(T, E, M, A, I, c, g, t, o, v) {
-        this.check(he.Line, o * 2 + 2), v || (v = this.color);
+        this.check(le.Line, o * 2 + 2), v || (v = this.color);
         let a = 1 / o,
             r = a * a,
             i = a * a * a,
@@ -63601,10 +63590,10 @@ class Wn {
         this.mesh.dispose()
     }
 }
-var he;
+var le;
 (function(V) {
     V[V.Point = 0] = "Point", V[V.Line = 1] = "Line", V[V.Filled = 4] = "Filled"
-})(he || (he = {}));
+})(le || (le = {}));
 const Mi = class Mi {
     constructor(T) {
         z(this, "boneLineColor", new Lt(1, 0, 0, 1));
@@ -63882,7 +63871,7 @@ class Fa {
         z(this, "activeRenderer", null);
         z(this, "skeletonRenderer");
         z(this, "skeletonDebugRenderer");
-        this.canvas = T, this.context = E instanceof me ? E : new me(E), this.twoColorTint = M, this.camera = new Il(T.width, T.height), this.batcherShader = M ? Ae.newTwoColoredTextured(this.context) : Ae.newColoredTextured(this.context), this.batcher = new rs(this.context, M), this.shapesShader = Ae.newColored(this.context), this.shapes = new Wn(this.context), this.skeletonRenderer = new bl(this.context, M), this.skeletonDebugRenderer = new Vs(this.context)
+        this.canvas = T, this.context = E instanceof me ? E : new me(E), this.twoColorTint = M, this.camera = new Il(T.width, T.height), this.batcherShader = M ? Ae.newTwoColoredTextured(this.context) : Ae.newColoredTextured(this.context), this.batcher = new rs(this.context, M), this.shapesShader = Ae.newColored(this.context), this.shapes = new zn(this.context), this.skeletonRenderer = new bl(this.context, M), this.skeletonDebugRenderer = new Vs(this.context)
     }
     dispose() {
         this.batcher.dispose(), this.batcherShader.dispose(), this.shapes.dispose(), this.shapesShader.dispose(), this.skeletonDebugRenderer.dispose()
@@ -63990,7 +63979,7 @@ class Fa {
         this.camera.update()
     }
     enableRenderer(T) {
-        this.activeRenderer !== T && (this.end(), T instanceof rs ? (this.batcherShader.bind(), this.batcherShader.setUniform4x4f(Ae.MVP_MATRIX, this.camera.projectionView.values), this.batcherShader.setUniformi("u_texture", 0), this.batcher.begin(this.batcherShader), this.activeRenderer = this.batcher) : T instanceof Wn ? (this.shapesShader.bind(), this.shapesShader.setUniform4x4f(Ae.MVP_MATRIX, this.camera.projectionView.values), this.shapes.begin(this.shapesShader), this.activeRenderer = this.shapes) : this.activeRenderer = this.skeletonDebugRenderer)
+        this.activeRenderer !== T && (this.end(), T instanceof rs ? (this.batcherShader.bind(), this.batcherShader.setUniform4x4f(Ae.MVP_MATRIX, this.camera.projectionView.values), this.batcherShader.setUniformi("u_texture", 0), this.batcher.begin(this.batcherShader), this.activeRenderer = this.batcher) : T instanceof zn ? (this.shapesShader.bind(), this.shapesShader.setUniform4x4f(Ae.MVP_MATRIX, this.camera.projectionView.values), this.shapes.begin(this.shapesShader), this.activeRenderer = this.shapes) : this.activeRenderer = this.skeletonDebugRenderer)
     }
 }
 var as;
@@ -64112,7 +64101,7 @@ class Cu {
         }
     }
 }
-class Hn extends Zl(kl(Kl(Jl(Ql($l(jl(ql(_l)))))))) {
+class Wn extends Zl(kl(Kl(Jl(Ql($l(jl(ql(_l)))))))) {
     constructor(E, M, A, I, c, g, t = new tu) {
         super(E, window.SPINE_GAME_OBJECT_TYPE ? window.SPINE_GAME_OBJECT_TYPE : ji);
         z(this, "plugin");
@@ -64349,7 +64338,7 @@ const iu = ot.newFloatArray(8),
     };
 z(ni, "QUAD_TRIANGLES", [0, 1, 2, 2, 3, 0]), z(ni, "VERTEX_SIZE", 8);
 let os = ni;
-const He = class He extends ue.Plugins.ScenePlugin {
+const He = class He extends fe.Plugins.ScenePlugin {
     constructor(E, M, A) {
         super(E, M, A);
         z(this, "game");
@@ -64361,12 +64350,12 @@ const He = class He extends ue.Plugins.ScenePlugin {
         z(this, "atlasCache");
         this.game = M.game, this.isWebGL = this.game.config.renderType === 2, this.gl = this.isWebGL ? this.game.renderer.gl : null, this.phaserRenderer = this.game.renderer, this.canvasRenderer = null, this.skeletonDataCache = this.game.cache.addCustom(Ih), this.atlasCache = this.game.cache.addCustom(Dh);
         let I = function(v, a, r) {
-            let i = new Kn(this, v, a, hi.json, r);
+            let i = new Hn(this, v, a, hi.json, r);
             return this.addFile(i.files), this
         };
         M.registerFileType("spineJson", I, E);
         let c = function(v, a, r) {
-            let i = new Kn(this, v, a, hi.binary, r);
+            let i = new Hn(this, v, a, hi.binary, r);
             return this.addFile(i.files), this
         };
         M.registerFileType("spineBinary", c, E);
@@ -64376,19 +64365,19 @@ const He = class He extends ue.Plugins.ScenePlugin {
         };
         M.registerFileType("spineAtlas", g, E);
         let t = function(v, a, r, i, e) {
-                this.scene.sys.renderer instanceof ue.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.clear();
+                this.scene.sys.renderer instanceof fe.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.clear();
                 const s = this.scene.sys[A];
-                let h = new Hn(this.scene, s, v, a, r, i, e);
-                return this.displayList.add(h), this.updateList.add(h), this.scene.sys.renderer instanceof ue.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.rebind(), h
+                let h = new Wn(this.scene, s, v, a, r, i, e);
+                return this.displayList.add(h), this.updateList.add(h), this.scene.sys.renderer instanceof fe.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.rebind(), h
             },
             o = function(v, a = !1) {
-                this.scene.sys.renderer instanceof ue.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.clear();
+                this.scene.sys.renderer instanceof fe.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.clear();
                 let r = v.x ? v.x : 0,
                     i = v.y ? v.y : 0,
                     e = v.boundsProvider ? v.boundsProvider : void 0;
                 const s = this.scene.sys[A];
-                let h = new Hn(this.scene, s, r, i, v.dataKey, v.atlasKey, e);
-                return a !== void 0 && (v.add = a), this.scene.sys.renderer instanceof ue.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.rebind(), ue.GameObjects.BuildGameObject(this.scene, h, v)
+                let h = new Wn(this.scene, s, r, i, v.dataKey, v.atlasKey, e);
+                return a !== void 0 && (v.add = a), this.scene.sys.renderer instanceof fe.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.rebind(), fe.GameObjects.BuildGameObject(this.scene, h, v)
             };
         M.registerGameObject(window.SPINE_GAME_OBJECT_TYPE ? window.SPINE_GAME_OBJECT_TYPE : ji, t, o)
     }
@@ -64396,7 +64385,7 @@ const He = class He extends ue.Plugins.ScenePlugin {
         return He.gameWebGLRenderer
     }
     boot() {
-        Ke.yDown = !0, this.isWebGL ? (He.gameWebGLRenderer || (He.gameWebGLRenderer = new Fa(this.game.renderer.canvas, this.gl, !0)), this.onResize(), this.game.scale.on(ue.Scale.Events.RESIZE, this.onResize, this)) : this.canvasRenderer || (this.canvasRenderer = new os(this.scene.sys.context));
+        Ke.yDown = !0, this.isWebGL ? (He.gameWebGLRenderer || (He.gameWebGLRenderer = new Fa(this.game.renderer.canvas, this.gl, !0)), this.onResize(), this.game.scale.on(fe.Scale.Events.RESIZE, this.onResize, this)) : this.canvasRenderer || (this.canvasRenderer = new os(this.scene.sys.context));
         var E = this.systems.events;
         E.once("shutdown", this.shutdown, this), E.once("destroy", this.destroy, this), this.game.events.once("destroy", this.gameDestroy, this)
     }
@@ -64410,7 +64399,7 @@ const He = class He extends ue.Plugins.ScenePlugin {
         }
     }
     shutdown() {
-        this.systems.events.off("shutdown", this.shutdown, this), this.isWebGL && this.game.scale.off(ue.Scale.Events.RESIZE, this.onResize, this)
+        this.systems.events.off("shutdown", this.shutdown, this), this.isWebGL && this.game.scale.off(fe.Scale.Events.RESIZE, this.onResize, this)
     }
     destroy() {
         this.shutdown()
@@ -64447,10 +64436,10 @@ const He = class He extends ue.Plugins.ScenePlugin {
         else {
             if (this.game.cache.json.exists(E)) {
                 let g = this.game.cache.json.get(E);
-                c = new Ll(new bn(A)).readSkeletonData(g)
+                c = new Ll(new Gn(A)).readSkeletonData(g)
             } else {
                 let g = this.game.cache.binary.get(E);
-                c = new $h(new bn(A)).readSkeletonData(new Uint8Array(g))
+                c = new $h(new Gn(A)).readSkeletonData(new Uint8Array(g))
             }
             this.skeletonDataCache.add(I, c)
         }
@@ -64466,19 +64455,19 @@ var hi;
 (function(V) {
     V[V.json = 0] = "json", V[V.binary = 1] = "binary"
 })(hi || (hi = {}));
-class Kn extends ue.Loader.MultiFile {
+class Hn extends fe.Loader.MultiFile {
     constructor(E, M, A, I, c) {
         if (typeof M != "string") {
             const o = M;
             M = o.key, A = o.url, I = o.type === "spineJson" ? hi.json : hi.binary, c = o.xhrSettings
         }
         let g = null;
-        I == hi.json ? g = new ue.Loader.FileTypes.JSONFile(E, {
+        I == hi.json ? g = new fe.Loader.FileTypes.JSONFile(E, {
             key: M,
             url: A,
             extension: "json",
             xhrSettings: c
-        }) : g = new ue.Loader.FileTypes.BinaryFile(E, {
+        }) : g = new fe.Loader.FileTypes.BinaryFile(E, {
             key: M,
             url: A,
             extension: "skel",
@@ -64495,13 +64484,13 @@ class Kn extends ue.Loader.MultiFile {
         this.isReadyToProcess() && this.files[0].addToCache()
     }
 }
-class su extends ue.Loader.MultiFile {
+class su extends fe.Loader.MultiFile {
     constructor(E, M, A, I, c) {
         if (typeof M != "string") {
             const g = M;
             M = g.key, A = g.url, I = g.premultipliedAlpha, c = g.xhrSettings
         }
-        super(E, Gh, M, [new ue.Loader.FileTypes.TextFile(E, {
+        super(E, Gh, M, [new fe.Loader.FileTypes.TextFile(E, {
             key: M,
             url: A,
             xhrSettings: c,
@@ -64523,7 +64512,7 @@ class su extends ue.Loader.MultiFile {
             for (var c = 0; c < v.length; c++) {
                 var g = a + v[c],
                     t = E.key + "!" + v[c],
-                    o = new ue.Loader.FileTypes.ImageFile(this.loader, t, g);
+                    o = new fe.Loader.FileTypes.ImageFile(this.loader, t, g);
                 this.loader.keyExists(o) || (this.addToMultiFile(o), this.loader.addFile(o))
             }
         }
@@ -64542,10 +64531,10 @@ window.spine = {
     SpinePlugin: Ye
 };
 window["spine.SpinePlugin"] = Ye;
-let Zn = !1;
+let Kn = !1;
 const Eu = () => {
-    if (Zn) return;
-    Zn = !0;
+    if (Kn) return;
+    Kn = !0;
     const V = Phaser.Renderer.WebGL.PipelineManager.prototype.boot;
     Phaser.Renderer.WebGL.PipelineManager.prototype.boot = function(T, E, M) {
         if (T != null && T.skipPipelinesAtBoot) {
@@ -64557,9 +64546,9 @@ const Eu = () => {
         } else V.call(this, T, E, M)
     }
 };
-let Jn = !1;
+let Zn = !1;
 const Au = () => {
-    Jn || (Jn = !0, delete Ye.gameWebGLRenderer, Object.defineProperty(Ye.prototype, "gameWebGLRenderer", {
+    Zn || (Zn = !0, delete Ye.gameWebGLRenderer, Object.defineProperty(Ye.prototype, "gameWebGLRenderer", {
         value: null,
         writable: !0,
         configurable: !0
@@ -64568,7 +64557,7 @@ const Au = () => {
             return this.gameWebGLRenderer
         }
     }), Ye.prototype.boot = function() {
-        Ke.yDown = !0, this.isWebGL ? (this.gameWebGLRenderer || (this.gameWebGLRenderer = new Fa(this.game.renderer.canvas, this.gl, !0)), this.onResize(), this.game.scale.on(Dr.Scale.Events.RESIZE, this.onResize, this)) : this.canvasRenderer || (this.canvasRenderer = new os(this.scene.sys.context));
+        Ke.yDown = !0, this.isWebGL ? (this.gameWebGLRenderer || (this.gameWebGLRenderer = new Fa(this.game.renderer.canvas, this.gl, !0)), this.onResize(), this.game.scale.on(Ir.Scale.Events.RESIZE, this.onResize, this)) : this.canvasRenderer || (this.canvasRenderer = new os(this.scene.sys.context));
         const V = this.systems.events;
         V.once("shutdown", this.shutdown, this), V.once("destroy", this.destroy, this), this.game.events.once("destroy", this.gameDestroy, this)
     }, Ye.prototype.gameDestroy = function() {
@@ -64576,5 +64565,5 @@ const Au = () => {
     })
 };
 export {
-    Ha as A, kn as B, mo as C, Ye as D, Ya as E, Rs as F, Sr as G, Au as H, Lr as I, Eu as J, Do as K, $a as L, _n as M, Xo as N, Tr as O, Dr as P, Cn as Q, no as R, pn as S, Tn as T, bo as U, fh as a, io as b, Fi as c, wr as d, dh as e, mr as f, Or as g, $t as h, pu as i, Sn as j, gu as k, ne as l, si as m, Ti as n, Cs as o, hn as p, ro as q, Ir as r, pe as s, ch as t, yu as u, vh as v, Cu as w, xu as x, Tu as y, mu as z
+    Ha as A, jn as B, mo as C, Ye as D, Ya as E, Rs as F, Tr as G, Au as H, wr as I, Eu as J, Do as K, $a as L, qn as M, Xo as N, yr as O, Ir as P, Sn as Q, no as R, pn as S, yn as T, bo as U, fh as a, io as b, Fi as c, Fr as d, dh as e, pr as f, Lr as g, $t as h, pu as i, Tn as j, gu as k, re as l, si as m, Ti as n, Cs as o, hn as p, ro as q, Or as r, pe as s, ch as t, yu as u, vh as v, Cu as w, xu as x, Tu as y, mu as z
 };
