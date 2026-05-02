@@ -112,8 +112,8 @@ class Zt extends W {
                 x: e,
                 y: i,
                 w: o,
-                h
-            } = t, n = d.editor.baseSize, a = n / 2, p = n / 2, I = e, S = i, x = a, y = p, A = x - I, T = y - S, D = A / o, O = T / h;
+                h: p
+            } = t, n = d.editor.baseSize, a = n / 2, h = n / 2, I = e, S = i, x = a, y = h, A = x - I, T = y - S, D = A / o, O = T / p;
             return {
                 originX: D,
                 originY: O
@@ -132,18 +132,18 @@ class Zt extends W {
                 requestId: this.id + "_border",
                 customAssetId: this.options.customAssetId,
                 borderWidth: this.options.borderWidth
-            }), o = this.getScale(), h = e.maxX - e.minX, n = e.maxY - e.minY, {
+            }), o = this.getScale(), p = e.maxX - e.minX, n = e.maxY - e.minY, {
                 originX: a,
-                originY: p
+                originY: h
             } = this.calculateOrigin({
                 x: e.minX,
                 y: e.minY,
-                w: h,
+                w: p,
                 h: n,
                 alpha: this.options.angle,
                 scale: o
             });
-            this.fill.view.setTexture(t), this.fill.view.setOrigin(a, p), this.fill.view.angle = this.options.angle, this.border.view.setTexture(i), this.border.view.setOrigin(a, p), this.border.view.angle = this.options.angle, this.boundingBox.clearCached()
+            this.fill.view.setTexture(t), this.fill.view.setOrigin(a, h), this.fill.view.angle = this.options.angle, this.border.view.setTexture(i), this.border.view.setOrigin(a, h), this.border.view.angle = this.options.angle, this.boundingBox.clearCached()
         }, this.getScale = () => .5 * this.options.width / d.editor.baseSize, this.setupVisualEditing = () => {
             if (!f() || !v()) return;
             const t = w(this, "width"),
@@ -193,9 +193,13 @@ class Zt extends W {
             imageId: u.imageId
         }), this.fill.view.tint = g(this.options.fillColor), this.border.view.tint = g(this.options.borderColor);
         const m = this.getScale();
-        this.fill.view.setScale(m), this.border.view.setScale(m), this.setupVisualEditing(), this.cull.setOnEnterViewCallback(() => {
-            this.needsTextureUpdate && (this.updateTexture(), this.needsTextureUpdate = !1)
-        }), _() && this.options.animation !== r.none && this.options.animateOnGameStart && this.playTween(), f() && v() && !this.options.visibleOnGameStart && (this.fill.view.setAlpha(.6), this.border.view.setAlpha(.6)), G() && !this.options.visibleOnGameStart && (this.fill.view.setAlpha(0), this.border.view.setAlpha(0)), this.isPreview && this.updateTexture()
+        if (this.fill.view.setScale(m), this.border.view.setScale(m), this.setupVisualEditing(), this.cull.setOnEnterViewCallback(() => {
+                this.needsTextureUpdate && (this.updateTexture(), this.needsTextureUpdate = !1)
+            }), _() && this.options.animation !== r.none && this.options.animateOnGameStart && this.playTween(), f() && v() && !this.options.visibleOnGameStart && (this.fill.view.setAlpha(.6), this.border.view.setAlpha(.6)), G()) {
+            const t = this.state.visible ?? this.options.visibleOnGameStart;
+            this.fill.view.setAlpha(t ? 1 : 0), this.border.view.setAlpha(t ? 1 : 0)
+        }
+        this.isPreview && this.updateTexture()
     }
 }
 export {
