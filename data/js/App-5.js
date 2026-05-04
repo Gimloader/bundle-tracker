@@ -1,6 +1,6 @@
 import {
-    G as p,
-    H as x,
+    J as p,
+    L as x,
     r as n,
     e as g,
     j as r,
@@ -86,7 +86,7 @@ const S = e => {
     })`
   flex: 1;
 `,
-    O = e => {
+    P = e => {
         const t = n.useMemo(() => e.theme ?? a.light, [e.theme]),
             i = n.useMemo(() => e.alpha ?? f.standard, [e.alpha]),
             c = n.useMemo(() => {
@@ -120,5 +120,5 @@ const S = e => {
         className: "maxWidth flex vc between"
     })``;
 export {
-    O as S
+    P as S
 };

@@ -3,12 +3,12 @@ import {
     j as t,
     e as S,
     d as s,
-    b6 as C,
-    y as M,
+    b7 as C,
+    A as M,
     a as A,
     t as E,
     u as y,
-    U as N
+    W as N
 } from "./_index.js";
 import {
     a as p,
@@ -20,7 +20,7 @@ import {
     c as O,
     P as z,
     p as B
-} from "./App-67.js";
+} from "./App-68.js";
 import {
     n as D
 } from "./motion.js";
@@ -28,25 +28,25 @@ import {
     g as R
 } from "./App-44.js";
 import {
-    p as H
+    p as W
 } from "./playSound.js";
 import {
-    G as L
+    G as H
 } from "./GetAssetPath.js";
 import {
-    u as Q
+    u as L
 } from "./useQuery.js";
 import {
-    A as V
+    A as Q
 } from "./TrackEvent.js";
-var W = {
+var V = {
     root: null,
     rootMargin: "0px 0px 0px 0px",
     threshold: [0, 1]
 };
 
 function _(e, r) {
-    e === void 0 && (e = function() {}), r === void 0 && (r = W);
+    e === void 0 && (e = function() {}), r === void 0 && (r = V);
     var a = r.root,
         m = a === void 0 ? null : a,
         u = r.rootMargin,
@@ -163,7 +163,7 @@ const F = e => t.jsx(G, {
   max-height: 100%;
 `,
     b = ["cosmos-item-shop"],
-    xe = () => Q(b, () => M({
+    xe = () => L(b, () => M({
         url: "/api/cosmos/shop"
     })),
     fe = () => {
@@ -185,15 +185,15 @@ const F = e => t.jsx(G, {
                     cosmeticId: e.id
                 },
                 success: () => {
-                    V({
+                    Q({
                         event: "cosmetic_purchased",
                         properties: {
                             id: n,
                             name: o,
                             type: c
                         }
-                    }), H({
-                        path: L("cosmos/cosmeticPurchased.mp3"),
+                    }), W({
+                        path: H("cosmos/cosmeticPurchased.mp3"),
                         volume: .6
                     }), T(), te(), u(!0)
                 },

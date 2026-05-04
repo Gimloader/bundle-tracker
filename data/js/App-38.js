@@ -8,20 +8,20 @@ import {
     d as i,
     F as f,
     e as h,
-    U as k,
+    W as k,
     a as y,
-    aa as ne,
-    A as se,
+    ac as ne,
+    G as se,
     R as re,
     c as C,
-    a4 as O,
-    D as G,
-    ar as ie,
+    a6 as G,
+    D as O,
+    at as ie,
     S as W,
-    aX as oe,
+    s as oe,
     T as H,
-    n as ae,
-    $ as le
+    q as ae,
+    a1 as le
 } from "./_index.js";
 import {
     T as K
@@ -58,7 +58,7 @@ import {
     g as fe
 } from "./App-3.js";
 import {
-    A as Y
+    A as q
 } from "./AccessibleAnchor.js";
 import {
     I as je
@@ -295,9 +295,9 @@ const be = t => {
   }
 `;
 u.extend(he);
-const q = t => `${u(t).format("MMMM Do")} at ${u(t).format("h:mma")}`;
+const Y = t => `${u(t).format("MMMM Do")} at ${u(t).format("h:mma")}`;
 var E = (t => (t.gameReport = "gameReport", t))(E || {});
-const X = t => {
+const J = t => {
         var a;
         const [s, r] = d.useState(), {
             links: o
@@ -359,9 +359,9 @@ const X = t => {
             },
             children: e.jsxs(Be, {
                 children: [e.jsxs(ze, {
-                    children: ["Completed ", q(r.completedAt)]
-                }), e.jsx(Oe, {
-                    children: e.jsx(X, {
+                    children: ["Completed ", Y(r.completedAt)]
+                }), e.jsx(Ge, {
+                    children: e.jsx(J, {
                         links: r.links || [],
                         playerName: s
                     })
@@ -377,25 +377,25 @@ const X = t => {
   line-height: 1;
 `,
     ze = i.div``,
-    Oe = i.div``,
-    Ge = t => {
+    Ge = i.div``,
+    Oe = t => {
         const {
             data: {
                 name: s,
                 completions: r
             }
-        } = t, o = r.length > 1, n = () => o ? `Completed ${r.length} times` : `Completed ${q(r[0].completedAt)}`;
+        } = t, o = r.length > 1, n = () => o ? `Completed ${r.length} times` : `Completed ${Y(r[0].completedAt)}`;
         return e.jsx(C, {
             children: e.jsxs(We, {
                 children: [e.jsxs(He, {
                     children: [e.jsxs(Ke, {
-                        children: [e.jsx(J, {
+                        children: [e.jsx(Q, {
                             children: s
-                        }), e.jsx(Q, {
+                        }), e.jsx(V, {
                             children: n()
                         })]
                     }), e.jsx(Ue, {
-                        children: o ? null : e.jsx(X, {
+                        children: o ? null : e.jsx(J, {
                             links: r[0].links || [],
                             playerName: s
                         })
@@ -426,17 +426,17 @@ const X = t => {
         className: "flex between vc"
     })``,
     Ke = i.div``,
-    J = i.div`
+    Q = i.div`
   font-size: 18px;
   font-weight: ${f.Bold};
   color: rgba(0, 0, 0, 0.9);
 `,
-    Q = i.div`
+    V = i.div`
   font-size: 15px;
   margin-top: 2px;
 `,
     Ue = i.div``,
-    Ye = t => {
+    qe = t => {
         const [s, r, o] = j(!0), [n, l] = d.useState([]);
         if (d.useEffect(() => {
                 r(), y({
@@ -457,7 +457,7 @@ const X = t => {
         return e.jsxs("div", {
             className: "maxWidth",
             children: [m.length >= 1e3 ? e.jsxs(e.Fragment, {
-                children: [e.jsx(O, {
+                children: [e.jsx(G, {
                     message: e.jsx("span", {
                         style: {
                             fontWeight: f.Bold
@@ -467,9 +467,9 @@ const X = t => {
                     description: "This assignment has been completed 1,000+ times. Only the first 1,000 completions are shown, meaning data for some students may be missing.",
                     showIcon: !0,
                     type: "warning"
-                }), e.jsx(G, {})]
+                }), e.jsx(O, {})]
             }) : null, m.map((a, c) => e.jsxs(d.Fragment, {
-                children: [e.jsx(Ge, {
+                children: [e.jsx(Oe, {
                     data: a
                 }), c !== n.length - 1 && e.jsx("div", {
                     style: {
@@ -487,7 +487,7 @@ const X = t => {
         color: "rgba(0,0,0,0.9)"
     },
     M = "NO_GROUP",
-    qe = t => {
+    Ye = t => {
         const s = n => {
                 t.onStatusChange(n.target.value)
             },
@@ -497,7 +497,7 @@ const X = t => {
             o = n => {
                 t.onSortChange(n.target.value)
             };
-        return e.jsxs(Xe, {
+        return e.jsxs(Je, {
             children: [t.groups && t.groups.length ? e.jsxs(e.Fragment, {
                 children: [e.jsx(R, {
                     children: "Class"
@@ -572,7 +572,7 @@ const X = t => {
             })]
         })
     },
-    Xe = i.div`
+    Je = i.div`
   width: 220px;
   flex-shrink: 0;
   min-height: calc(100vh - 305px); // height of the top section
@@ -581,32 +581,32 @@ const X = t => {
 `,
     R = ({
         children: t
-    }) => e.jsx(Je, {
-        children: e.jsx(Qe, {
+    }) => e.jsx(Qe, {
+        children: e.jsx(Ve, {
             children: t
         })
     }),
-    Je = i.div.attrs({
+    Qe = i.div.attrs({
         className: "flex vc"
     })`
   margin-bottom: 15px;
 `,
-    Qe = i.div`
+    Ve = i.div`
   font-size: 18px;
   font-weight: ${f.Bold};
   line-height: 1;
 `,
-    V = t => e.jsxs(C, {
+    X = t => e.jsxs(C, {
         style: {
             color: h.Black
         },
-        children: [e.jsx(J, {
+        children: [e.jsx(Q, {
             children: t.name
-        }), ie.isNil(t.percentageComplete) ? null : e.jsxs(Q, {
+        }), ie.isNil(t.percentageComplete) ? null : e.jsxs(V, {
             children: [t.percentageComplete, "% complete"]
         })]
     }),
-    Ve = t => {
+    Xe = t => {
         const [s, r] = d.useState([]), [o, n, l] = j(!0);
         if (d.useEffect(() => {
                 n(), y({
@@ -627,7 +627,7 @@ const X = t => {
         return e.jsx("div", {
             className: "maxWidth",
             children: m.map((a, c) => e.jsxs(d.Fragment, {
-                children: [e.jsx(V, {
+                children: [e.jsx(X, {
                     name: a.name,
                     percentageComplete: a.percentageComplete
                 }), c !== s.length - 1 && e.jsx("div", {
@@ -659,7 +659,7 @@ const X = t => {
         return e.jsx("div", {
             className: "maxWidth",
             children: m.map((a, c) => e.jsxs(d.Fragment, {
-                children: [e.jsx(V, {
+                children: [e.jsx(X, {
                     name: a.name
                 }), c !== s.length - 1 && e.jsx("div", {
                     style: {
@@ -672,11 +672,11 @@ const X = t => {
 var N = (t => (t.completed = "completed", t.inProgress = "in-progress", t.notStarted = "not-started", t))(N || {}),
     v = (t => (t.firstName = "firstName", t.lastName = "lastName", t))(v || {});
 const et = t => {
-        const [s, r] = d.useState("completed"), [o, n] = d.useState(""), [l, m] = d.useState("firstName"), a = () => s === "completed" ? e.jsx(Ye, {
+        const [s, r] = d.useState("completed"), [o, n] = d.useState(""), [l, m] = d.useState("firstName"), a = () => s === "completed" ? e.jsx(qe, {
             id: t.id,
             group: o,
             sort: l
-        }) : s === "in-progress" ? e.jsx(Ve, {
+        }) : s === "in-progress" ? e.jsx(Xe, {
             id: t.id,
             group: o,
             sort: l
@@ -686,7 +686,7 @@ const et = t => {
             sort: l
         }) : null;
         return e.jsxs(tt, {
-            children: [e.jsx(qe, {
+            children: [e.jsx(Ye, {
                 group: o,
                 onGroupChange: n,
                 groups: t.groups,
@@ -733,7 +733,7 @@ const et = t => {
             })
         }) : e.jsx(C, {
             hoverable: !0,
-            children: e.jsx(Y, {
+            children: e.jsx(q, {
                 to: n ? `/view/${n._id}` : void 0,
                 children: e.jsxs(rt, {
                     children: [n != null && n.gif ? e.jsx(je, {
@@ -804,7 +804,7 @@ const et = t => {
                     children: "These are the options you set when creating this assignment. They cannot be changed."
                 }) : null,
                 footer: n => r.length ? e.jsxs(e.Fragment, {
-                    children: [n > 0 ? e.jsx(G, {
+                    children: [n > 0 ? e.jsx(O, {
                         style: {
                             marginTop: 30,
                             marginBottom: 30
@@ -913,7 +913,7 @@ const et = t => {
   column-gap: 12px;
   row-gap: 12px;
 `,
-    pt = i(Y).attrs({
+    pt = i(q).attrs({
         className: "flex vc hc"
     })`
   color: rgba(0, 0, 0, 0.8);
@@ -946,7 +946,7 @@ const ft = t => {
         const m = u(oe(t.id)).add(546, "days"),
             c = !u().isAfter(m) && Math.abs(u().diff(m, "months")) < 3;
         return e.jsxs(e.Fragment, {
-            children: [c ? e.jsx(O, {
+            children: [c ? e.jsx(G, {
                 banner: !0,
                 message: `Assignments are automatically deleted after 1.5 years. This assignment will be deleted on ${m.format("MMMM Do")}.`
             }) : null, e.jsxs(jt, {

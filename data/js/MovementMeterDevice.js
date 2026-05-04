@@ -20,7 +20,7 @@ import {
     p as g
 } from "./playSound.js";
 import {
-    b$ as d
+    c0 as d
 } from "./_index.js";
 import "./MapModeType.js";
 import "./MapStyle.js";

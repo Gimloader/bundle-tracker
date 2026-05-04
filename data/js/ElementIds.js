@@ -1,11 +1,11 @@
 import {
     j as s,
-    b5 as m,
+    b6 as m,
     d as t,
     F as r,
-    b6 as u,
-    y as d,
-    U as f,
+    b7 as u,
+    A as d,
+    W as f,
     e as h
 } from "./_index.js";
 import {
@@ -34,7 +34,7 @@ const j = e => {
             children: [s.jsx(z, {
                 draggable: !1,
                 style: o
-            }), s.jsx(N, {
+            }), s.jsx(A, {
                 style: {
                     marginLeft: l
                 },
@@ -48,7 +48,7 @@ const j = e => {
     z = t.img.attrs({
         src: x("cosmos/currency_v2.svg")
     })``,
-    N = t.div`
+    A = t.div`
   line-height: 1;
   font-weight: ${r.Bold};
   margin-top: 0.15em;
@@ -88,7 +88,7 @@ const I = {
         }
     },
     c = ["cosmos-basics"],
-    A = () => p(c, () => d({
+    N = () => p(c, () => d({
         url: "/api/cosmos/basics"
     }), {
         staleTime: 2e4
@@ -97,15 +97,15 @@ const I = {
     M = () => {
         const {
             data: e
-        } = A();
-        return e ? s.jsx(B, {
+        } = N();
+        return e ? s.jsx(W, {
             children: s.jsx(j, {
                 amount: e.currency,
                 size: 16
             })
         }) : null
     },
-    B = t.div`
+    W = t.div`
   margin-left: 20px;
   font-family: ${f.FugazOne};
   color: ${h.White};
@@ -118,5 +118,5 @@ const I = {
         content: "cosmos-content"
     };
 export {
-    b as C, j as a, I as b, a as c, M as d, Q as e, v as f, k as g, L as i, A as u
+    b as C, j as a, I as b, a as c, M as d, Q as e, v as f, k as g, L as i, N as u
 };

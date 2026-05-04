@@ -1,7 +1,7 @@
 import {
-    di as ce,
+    dj as ce,
     r as Z,
-    bq as fe
+    br as fe
 } from "./_index.js";
 const ee = e => typeof e == "object" && e != null && e.nodeType === 1,
     te = (e, o) => (!o || e !== "hidden") && e !== "visible" && e !== "clip",
@@ -87,28 +87,28 @@ const ee = e => typeof e == "object" && e != null && e.nodeType === 1,
                     top: N,
                     right: X,
                     bottom: Y,
-                    left: H
+                    left: j
                 } = s.getBoundingClientRect();
-            if (i === "if-needed" && M >= 0 && _ >= 0 && V <= b && D <= m && (s === P && !B(s) || M >= N && V <= Y && _ >= H && D <= X)) return A;
-            const R = getComputedStyle(s),
-                j = parseInt(R.borderLeftWidth, 10),
-                E = parseInt(R.borderTopWidth, 10),
-                S = parseInt(R.borderRightWidth, 10),
-                T = parseInt(R.borderBottomWidth, 10);
+            if (i === "if-needed" && M >= 0 && _ >= 0 && V <= b && D <= m && (s === P && !B(s) || M >= N && V <= Y && _ >= j && D <= X)) return A;
+            const H = getComputedStyle(s),
+                R = parseInt(H.borderLeftWidth, 10),
+                E = parseInt(H.borderTopWidth, 10),
+                S = parseInt(H.borderRightWidth, 10),
+                T = parseInt(H.borderBottomWidth, 10);
             let h = 0,
                 g = 0;
-            const x = "offsetWidth" in s ? s.offsetWidth - s.clientWidth - j - S : 0,
+            const x = "offsetWidth" in s ? s.offsetWidth - s.clientWidth - R - S : 0,
                 k = "offsetHeight" in s ? s.offsetHeight - s.clientHeight - E - T : 0,
-                q = "offsetWidth" in s ? s.offsetWidth === 0 ? 0 : W / s.offsetWidth : 0,
-                $ = "offsetHeight" in s ? s.offsetHeight === 0 ? 0 : O / s.offsetHeight : 0;
-            if (P === s) h = c === "start" ? d : c === "end" ? d - b : c === "nearest" ? C(y, y + b, b, E, T, y + d, y + d + v, v) : d - b / 2, g = f === "start" ? u : f === "center" ? u - m / 2 : f === "end" ? u - m : C(w, w + m, m, j, S, w + u, w + u + F, F), h = Math.max(0, h + y), g = Math.max(0, g + w);
+                $ = "offsetWidth" in s ? s.offsetWidth === 0 ? 0 : W / s.offsetWidth : 0,
+                q = "offsetHeight" in s ? s.offsetHeight === 0 ? 0 : O / s.offsetHeight : 0;
+            if (P === s) h = c === "start" ? d : c === "end" ? d - b : c === "nearest" ? C(y, y + b, b, E, T, y + d, y + d + v, v) : d - b / 2, g = f === "start" ? u : f === "center" ? u - m / 2 : f === "end" ? u - m : C(w, w + m, m, R, S, w + u, w + u + F, F), h = Math.max(0, h + y), g = Math.max(0, g + w);
             else {
-                h = c === "start" ? d - N - E : c === "end" ? d - Y + T + k : c === "nearest" ? C(N, Y, O, E, T + k, d, d + v, v) : d - (N + O / 2) + k / 2, g = f === "start" ? u - H - j : f === "center" ? u - (H + W / 2) + x / 2 : f === "end" ? u - X + S + x : C(H, X, W, j, S + x, u, u + F, F);
+                h = c === "start" ? d - N - E : c === "end" ? d - Y + T + k : c === "nearest" ? C(N, Y, O, E, T + k, d, d + v, v) : d - (N + O / 2) + k / 2, g = f === "start" ? u - j - R : f === "center" ? u - (j + W / 2) + x / 2 : f === "end" ? u - X + S + x : C(j, X, W, R, S + x, u, u + F, F);
                 const {
                     scrollLeft: Q,
                     scrollTop: U
                 } = s;
-                h = $ === 0 ? 0 : Math.max(0, Math.min(U + h / $, s.scrollHeight - O / $ + k)), g = q === 0 ? 0 : Math.max(0, Math.min(Q + g / q, s.scrollWidth - W / q + x)), d += U - h, u += Q - g
+                h = q === 0 ? 0 : Math.max(0, Math.min(U + h / q, s.scrollHeight - O / q + k)), g = $ === 0 ? 0 : Math.max(0, Math.min(Q + g / $, s.scrollWidth - W / $ + x)), d += U - h, u += Q - g
             }
             A.push({
                 el: s,

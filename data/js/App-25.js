@@ -1,10 +1,10 @@
 import {
     r,
     j as e,
-    B as q,
-    a_ as W,
+    B as T,
+    a$ as H,
     M as Z,
-    U as Q,
+    W as Q,
     e as I,
     d as c,
     F as B,
@@ -12,13 +12,13 @@ import {
     a as P,
     D as E,
     l as A,
-    S as H,
+    S as W,
     t as k,
     b as L,
-    c8 as ee,
-    n as te,
-    a4 as re,
-    a2 as ae
+    c9 as ee,
+    q as te,
+    a6 as re,
+    a4 as ae
 } from "./_index.js";
 import {
     v as se
@@ -36,10 +36,10 @@ import {
     R as _
 } from "./UploadOutlined.js";
 import {
-    s as ne
+    s as oe
 } from "./index-4.js";
 import {
-    l as oe
+    l as ne
 } from "./stripe.esm.js";
 import {
     S as le
@@ -73,15 +73,15 @@ import "./StarOutlined.js";
 import "./index-15.js";
 import "./colors.js";
 import "./useWarningOnMountInDevelopment.js";
-const U = t => {
-        const [d, s] = r.useState([t.initialEmail]), [i, f] = r.useState(""), [m, j] = r.useState(!1), [h, g] = r.useState(!1), o = () => j(!0), x = () => j(!1);
+const $ = t => {
+        const [d, s] = r.useState([t.initialEmail]), [i, f] = r.useState(""), [m, j] = r.useState(!1), [h, g] = r.useState(!1), n = () => j(!0), x = () => j(!1);
         r.useEffect(() => {
             t.onChange(d)
         }, [d.length]);
-        const a = n => f(n.target.value.trim().toLowerCase()),
+        const a = o => f(o.target.value.trim().toLowerCase()),
             p = !!(i && se(i)),
-            y = n => {
-                s(F => [...F, n]), x(), f("")
+            y = o => {
+                s(F => [...F, o]), x(), f("")
             },
             w = () => {
                 if (p && !h) {
@@ -100,8 +100,8 @@ const U = t => {
                         data: {
                             email: i
                         },
-                        success: n => {
-                            n.exists ? y(i) : D({
+                        success: o => {
+                            o.exists ? y(i) : D({
                                 title: "Couldn't add them!",
                                 content: t.ensureActiveUserErrorMessage || "User not found"
                             })
@@ -117,14 +117,14 @@ const U = t => {
             };
         return e.jsxs(e.Fragment, {
             children: [e.jsxs(ce, {
-                children: [d.map(n => e.jsx(de, {
-                    children: n
-                }, `${t.type}-${n}`)), e.jsx(ue, {
-                    children: e.jsxs(q, {
+                children: [d.map(o => e.jsx(de, {
+                    children: o
+                }, `${t.type}-${o}`)), e.jsx(ue, {
+                    children: e.jsxs(T, {
                         type: "primary",
-                        icon: e.jsx(W, {}),
+                        icon: e.jsx(H, {}),
                         onClick: () => {
-                            o()
+                            n()
                         },
                         children: ["Add ", t.addType]
                     })
@@ -151,13 +151,13 @@ const U = t => {
                         autoFocus: !0,
                         value: i,
                         onChange: a,
-                        onPressEnter: n => {
-                            n.preventDefault(), w()
+                        onPressEnter: o => {
+                            o.preventDefault(), w()
                         },
                         autoComplete: "chrome-off"
-                    }), e.jsx(q, {
+                    }), e.jsx(T, {
                         type: "primary",
-                        icon: e.jsx(W, {}),
+                        icon: e.jsx(H, {}),
                         style: {
                             marginLeft: 10
                         },
@@ -198,7 +198,7 @@ const U = t => {
 `,
     J = "Managers are required to have a Gimkit account, and it looks like one doesn't exist under this email.",
     he = t => {
-        const [d, s] = r.useState(!1), [i, f] = r.useState(t.quote.name), [m, j] = r.useState(""), [h, g] = r.useState(""), [o, x] = r.useState(!1), [a, p] = r.useState(""), [y, w] = r.useState([]), [n, F] = r.useState([]), R = ({
+        const [d, s] = r.useState(!1), [i, f] = r.useState(t.quote.name), [m, j] = r.useState(""), [h, g] = r.useState(""), [n, x] = r.useState(!1), [a, p] = r.useState(""), [y, w] = r.useState([]), [o, F] = r.useState([]), R = ({
             file: l
         }) => {
             const N = new FormData;
@@ -215,8 +215,8 @@ const U = t => {
             })
         }, u = l => {
             const N = l.size / 1024 / 1024 < 5;
-            return N || ne.error("PDF must be less than 5MB"), N
-        }, O = l => f(l.target.value), v = l => j(l.target.value), z = l => g(l.target.value), b = !!(i && h && a && m), G = () => {
+            return N || oe.error("PDF must be less than 5MB"), N
+        }, q = l => f(l.target.value), v = l => j(l.target.value), z = l => g(l.target.value), b = !!(i && h && a && m), G = () => {
             d || !b || (s(!0), P({
                 url: "/api/bulk/createFromPlan",
                 method: "post",
@@ -227,7 +227,7 @@ const U = t => {
                     purchaseOrderDocument: a,
                     purchaseOrderNumber: h,
                     invoiceEmails: y,
-                    adminEmails: n
+                    adminEmails: o
                 },
                 success: l => X(`/group-subscription/complete?subscriptionId=${l.subscriptionId}`),
                 error: l => k({
@@ -248,11 +248,11 @@ const U = t => {
             }), " If payment is not received within 45 days, the license will automatically deactivate."]
         });
         return e.jsxs(e.Fragment, {
-            children: [e.jsx(E, {}), e.jsx(T, {
+            children: [e.jsx(E, {}), e.jsx(O, {
                 children: "Group Name"
             }), e.jsx(S, {
                 placeholder: "Name here...",
-                onChange: O,
+                onChange: q,
                 value: i,
                 maxLength: 50,
                 autoComplete: "chrome-off"
@@ -260,7 +260,7 @@ const U = t => {
                 style: {
                     height: 10
                 }
-            }), e.jsx(T, {
+            }), e.jsx(O, {
                 children: "School or District Name"
             }), e.jsx(S, {
                 placeholder: "Name here...",
@@ -272,7 +272,7 @@ const U = t => {
                 style: {
                     height: 10
                 }
-            }), e.jsx(T, {
+            }), e.jsx(O, {
                 children: "Purchase Order Number"
             }), e.jsx(S, {
                 placeholder: "Purchase order number here...",
@@ -281,9 +281,9 @@ const U = t => {
             }), e.jsx(E, {}), e.jsxs("div", {
                 className: "flex",
                 children: [e.jsxs(M, {
-                    children: [e.jsx($, {
+                    children: [e.jsx(U, {
                         children: "Send a copy of the invoice to..."
-                    }), e.jsx(U, {
+                    }), e.jsx($, {
                         type: "invoiceCopy",
                         initialEmail: A().email,
                         addType: "Recipient",
@@ -294,9 +294,9 @@ const U = t => {
                         width: 12
                     }
                 }), e.jsxs(M, {
-                    children: [e.jsx($, {
+                    children: [e.jsx(U, {
                         children: "Group license managers..."
-                    }), e.jsx(U, {
+                    }), e.jsx($, {
                         type: "manager",
                         initialEmail: A().email,
                         addType: "Manager",
@@ -305,11 +305,11 @@ const U = t => {
                         onChange: F
                     })]
                 })]
-            }), e.jsx(E, {}), e.jsx(T, {
+            }), e.jsx(E, {}), e.jsx(O, {
                 children: "Purchase Order PDF"
             }), e.jsx(pe, {
                 children: e.jsx(ie.Dragger, {
-                    disabled: !!(o || a),
+                    disabled: !!(n || a),
                     multiple: !1,
                     height: 200,
                     showUploadList: !1,
@@ -325,7 +325,7 @@ const U = t => {
                                 className: "ant-upload-text",
                                 children: "Purchase Order Uploaded!"
                             })]
-                        }) : o ? e.jsx(H, {}) : e.jsxs(e.Fragment, {
+                        }) : n ? e.jsx(W, {}) : e.jsxs(e.Fragment, {
                             children: [e.jsx("p", {
                                 className: "ant-upload-drag-icon",
                                 children: e.jsx(_, {})
@@ -339,7 +339,7 @@ const U = t => {
                         })
                     })
                 })
-            }), e.jsxs(q, {
+            }), e.jsxs(T, {
                 style: {
                     marginTop: 10
                 },
@@ -363,7 +363,7 @@ const U = t => {
     height: 200px;
   }
 `,
-    T = c.div`
+    O = c.div`
   font-weight: ${B.Bold};
   font-size: 19px;
   margin-bottom: 2px;
@@ -371,7 +371,7 @@ const U = t => {
     M = c.div`
   width: calc(50% - 6px);
 `,
-    $ = c.div`
+    U = c.div`
   font-weight: ${B.Bold};
   font-size: 19px;
   margin-bottom: 6px;
@@ -395,7 +395,7 @@ const U = t => {
   font-size: 17px;
 `,
     je = t => {
-        const [d, s] = r.useState(!1), [i, f] = r.useState(t.quote.name), [m, j] = r.useState(""), [h, g] = r.useState(""), [o, x] = r.useState([]), [a, p] = r.useState([]), y = u => f(u.target.value), w = u => j(u.target.value), n = !!(i && m);
+        const [d, s] = r.useState(!1), [i, f] = r.useState(t.quote.name), [m, j] = r.useState(""), [h, g] = r.useState(""), [n, x] = r.useState([]), [a, p] = r.useState([]), y = u => f(u.target.value), w = u => j(u.target.value), o = !!(i && m);
         if (r.useEffect(() => {
                 s(!0), P({
                     url: "/api/billing/stripe-key",
@@ -411,13 +411,13 @@ const U = t => {
                     }),
                     both: () => s(!1)
                 })
-            }, []), !h) return e.jsx(H, {});
+            }, []), !h) return e.jsx(W, {});
         const F = async u => {
-            if (d || !n) return;
+            if (d || !o) return;
             s(!0);
-            let O;
+            let q;
             try {
-                O = await oe(h)
+                q = await ne(h)
             } catch (v) {
                 s(!1), k({
                     e: v,
@@ -434,14 +434,14 @@ const U = t => {
                     name: i,
                     billingName: m,
                     quoteId: t.quote.quoteId,
-                    receiptEmails: o,
+                    receiptEmails: n,
                     adminEmails: a
                 },
                 success: async v => {
                     const z = v;
                     let b;
                     try {
-                        if (b = await O.redirectToCheckout({
+                        if (b = await q.redirectToCheckout({
                                 sessionId: z.id
                             }), b && b.error) throw b.error
                     } catch (G) {
@@ -498,9 +498,9 @@ const U = t => {
             }), e.jsx(E, {}), e.jsxs("div", {
                 className: "flex",
                 children: [e.jsxs(M, {
-                    children: [e.jsx($, {
+                    children: [e.jsx(U, {
                         children: "Send a copy of the receipt to..."
-                    }), e.jsx(U, {
+                    }), e.jsx($, {
                         type: "receiptCopy",
                         initialEmail: A().email,
                         addType: "Recipient",
@@ -511,9 +511,9 @@ const U = t => {
                         width: 12
                     }
                 }), e.jsxs(M, {
-                    children: [e.jsx($, {
+                    children: [e.jsx(U, {
                         children: "Group license managers..."
-                    }), e.jsx(U, {
+                    }), e.jsx($, {
                         type: "manager",
                         initialEmail: A().email,
                         addType: "Manager",
@@ -522,7 +522,7 @@ const U = t => {
                         onChange: p
                     })]
                 })]
-            }), e.jsx(E, {}), e.jsx(q, {
+            }), e.jsx(E, {}), e.jsx(T, {
                 id: "checkout-button",
                 style: {
                     marginBottom: 20
@@ -532,7 +532,7 @@ const U = t => {
                 block: !0,
                 size: "large",
                 onClick: F,
-                disabled: !n,
+                disabled: !o,
                 children: "Checkout"
             }), e.jsx("div", {
                 style: {
@@ -554,11 +554,11 @@ const U = t => {
     it = () => {
         const [t, d] = r.useState(null), [s, i] = r.useState(null), [f, m] = r.useState(!1), [j, h] = r.useState(null), {
             id: g,
-            source: o
+            source: n
         } = te();
         r.useEffect(() => {
-            o !== C.creditCard && o !== C.purchaseOrder && X(ae)
-        }, [o]), r.useEffect(() => {
+            n !== C.creditCard && n !== C.purchaseOrder && X(ae)
+        }, [n]), r.useEffect(() => {
             P({
                 url: "/api/quote/fetch/" + g,
                 success: a => {
@@ -580,20 +580,20 @@ const U = t => {
                 type: "error",
                 message: "Error fetching quote"
             });
-            if (!t || !s) return e.jsx(H, {});
+            if (!t || !s) return e.jsx(W, {});
             let a = "";
-            o === C.purchaseOrder && (a = "Purchase Order"), o === C.creditCard && (a = "Credit Card ");
+            n === C.purchaseOrder && (a = "Purchase Order"), n === C.creditCard && (a = "Credit Card ");
             const p = () => f ? `Renew with a ${a}` : `Paying with ${a}`;
             return e.jsxs(e.Fragment, {
                 children: [e.jsx(ge, {
                     title: p(),
                     plan: s.name,
                     cost: t.price
-                }), o === C.purchaseOrder && e.jsx(he, {
+                }), n === C.purchaseOrder && e.jsx(he, {
                     quote: t,
                     planId: s.id,
                     planLengthInDays: s.days
-                }), o === C.creditCard && e.jsx(je, {
+                }), n === C.creditCard && e.jsx(je, {
                     quote: t,
                     planId: s.id,
                     planLengthInDays: s.days

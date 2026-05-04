@@ -2,17 +2,17 @@ import {
     r as e,
     I as D,
     _ as W,
-    ai as j,
-    aj as A,
-    ak as m,
-    al as z,
-    am as F,
-    an as $,
-    ao as S,
-    ap as x,
+    ak as j,
+    al as A,
+    am as m,
+    an as z,
+    ao as F,
+    ap as $,
+    aq as S,
+    ar as x,
     j as d,
-    a5 as H,
-    a2 as I,
+    a7 as H,
+    a4 as I,
     B as N
 } from "./_index.js";
 import {
@@ -655,13 +655,13 @@ const w = () => e.createElement("svg", {
     },
     P = t => [_(t), G(t)],
     O = t => P(t),
-    X = t => ({
+    q = t => ({
         titleFontSize: t.fontSizeHeading3,
         subtitleFontSize: t.fontSize,
         iconFontSize: t.fontSizeHeading3 * 3,
         extraMargin: `${t.paddingLG}px 0 0 0`
     }),
-    q = j("Result", t => {
+    X = j("Result", t => {
         const a = t.colorInfo,
             l = t.colorError,
             r = t.colorSuccess,
@@ -675,7 +675,7 @@ const w = () => e.createElement("svg", {
                 imageHeight: 295
             });
         return [O(o)]
-    }, X),
+    }, q),
     U = () => e.createElement("svg", {
         width: "251",
         height: "294"
@@ -950,7 +950,7 @@ const w = () => e.createElement("svg", {
             getPrefixCls: u,
             direction: f,
             result: i
-        } = e.useContext(z), n = u("result", t), [L, B, v] = q(n), C = F(n, `${n}-${s}`, a, i == null ? void 0 : i.className, l, {
+        } = e.useContext(z), n = u("result", t), [L, B, v] = X(n), C = F(n, `${n}-${s}`, a, i == null ? void 0 : i.className, l, {
             [`${n}-rtl`]: f === "rtl"
         }, B, v), g = Object.assign(Object.assign({}, i == null ? void 0 : i.style), o);
         return L(e.createElement("div", {

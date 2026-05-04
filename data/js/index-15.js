@@ -1,11 +1,11 @@
 import {
-    bI as p,
-    aw as m
+    bJ as p,
+    ay as y
 } from "./_index.js";
 var e = {},
     d;
 
-function y() {
+function m() {
     if (d) return e;
     d = 1, Object.defineProperty(e, "__esModule", {
         value: !0
@@ -29,8 +29,8 @@ function y() {
     }
     return e.lazyWithPreload = o, e.default = o, e
 }
-var z = y();
-const b = m(z);
+var z = m();
+const b = y(z);
 export {
     b as a, z as l
 };

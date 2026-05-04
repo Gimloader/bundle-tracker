@@ -7,12 +7,12 @@ import {
     F as p,
     j as t,
     B as g,
-    U as S,
+    W as S,
     a as c,
     h as f,
     b as v,
-    ar as b,
-    a5 as w,
+    at as b,
+    a7 as w,
     T as R
 } from "./_index.js";
 import {
@@ -70,7 +70,7 @@ var _ = {
         }))
     },
     I = h.forwardRef(q);
-const k = n.div.attrs({
+const W = n.div.attrs({
         id: "left-side-search",
         className: "scroll-y"
     })`
@@ -81,7 +81,7 @@ const k = n.div.attrs({
   padding: ${r=>r.customPadding?r.customPadding:"15px"};
   padding-top: 0px;
 `,
-    A = n.div.attrs({
+    k = n.div.attrs({
         id: "right-side-search",
         className: "scroll-y"
     })`
@@ -113,7 +113,7 @@ const l = n.div`
         }
     })``;
 var x = (r => (r.relevant = "relevant", r.recent = "recent", r))(x || {});
-const P = r => {
+const A = r => {
         const a = () => t.jsxs("div", {
                 className: "maxWidth",
                 children: [t.jsx(l, {
@@ -424,7 +424,7 @@ class X extends h.Component {
             }), t.jsxs(C, {
                 customBackgroundColor: this.props.customBackgroundColor,
                 customHeight: this.props.customHeight,
-                children: [t.jsx(k, {
+                children: [t.jsx(W, {
                     customPadding: this.props.customLeftSidePadding,
                     children: t.jsxs("div", {
                         children: [!this.props.showMyKits && t.jsx("div", {
@@ -434,7 +434,7 @@ class X extends h.Component {
                                 zIndex: 999
                             },
                             className: "maxWidth",
-                            children: t.jsx(P, {
+                            children: t.jsx(A, {
                                 onSearch: this.onSearch,
                                 searchQuery: this.state.draftSearchQuery,
                                 onUpdateSearchQuery: this.onUpdateSearchQuery,
@@ -449,7 +449,7 @@ class X extends h.Component {
                             })
                         }), this.getLeftSide()]
                     })
-                }), t.jsx(A, {
+                }), t.jsx(k, {
                     children: this.getRightSide()
                 })]
             })]

@@ -1,27 +1,27 @@
 import {
-    b6 as V,
-    y as g,
-    aa as L,
+    b7 as L,
+    A as g,
+    ac as U,
     j as e,
     c as B,
-    U as F,
+    W as F,
     e as j,
     B as w,
     d as c,
-    b7 as D,
+    b8 as D,
     r as h,
     M as b,
     R as N,
-    aW as P,
+    aY as P,
     t as T,
-    a8 as H,
+    aa as H,
     F as _,
-    u as J,
-    C as Q,
-    f as Y,
-    n as K,
+    u as Y,
+    C as J,
+    f as Q,
+    q as K,
     T as X,
-    A as Z
+    G as Z
 } from "./_index.js";
 import {
     P as ee
@@ -90,9 +90,9 @@ const z = ["group"],
             url: `/api/v1/groups/info/${t}`
         })
     }),
-    y = t => V.invalidateQueries([z, t]),
+    y = t => L.invalidateQueries([z, t]),
     ue = t => {
-        const r = `${L()}/class/join/${t.groupId}`,
+        const r = `${U()}/class/join/${t.groupId}`,
             a = () => {
                 ae(r), k.success("Link copied!")
             };
@@ -480,8 +480,8 @@ const O = t => new Promise((r, a) => {
 `,
     Ie = t => {
         var m;
-        const [r, a, s] = J(!1), d = n => {
-            if (!Y()) {
+        const [r, a, s] = Y(!1), d = n => {
+            if (!Q()) {
                 a();
                 return
             }
@@ -594,7 +594,7 @@ const O = t => new Promise((r, a) => {
                 id: "student progress",
                 copy: {
                     title: "View student progress with Pro",
-                    description: `To view all reports for a student in one place, upgrade to ${Q} Pro.`
+                    description: `To view all reports for a student in one place, upgrade to ${J} Pro.`
                 }
             })]
         }) : null
@@ -665,7 +665,7 @@ const O = t => new Promise((r, a) => {
                         }
                     }) : e.jsx(ye, {
                         data: s
-                    }), e.jsx(U, {
+                    }), e.jsx(V, {
                         children: d()
                     })]
                 })]
@@ -687,7 +687,7 @@ const O = t => new Promise((r, a) => {
   max-width: 1200px;
   flex: 1;
 `,
-    U = c(ee).attrs({
+    V = c(ee).attrs({
         className: "maxWidth"
     })`
   flex: 1;
@@ -696,15 +696,15 @@ const O = t => new Promise((r, a) => {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
 `,
-    Je = Object.freeze(Object.defineProperty({
+    Ye = Object.freeze(Object.defineProperty({
         __proto__: null,
         Container: q,
-        Content: U,
+        Content: V,
         ContentContainer: G,
         default: $e
     }, Symbol.toStringTag, {
         value: "Module"
     }));
 export {
-    Je as A, q as C, Ne as G, G as a, U as b, ye as c, me as u
+    Ye as A, q as C, Ne as G, G as a, V as b, ye as c, me as u
 };

@@ -1,5 +1,5 @@
 import {
-    x as r
+    z as r
 } from "./_index.js";
 var d = "__wrap_b",
     f = "__wrap_o",
@@ -31,7 +31,7 @@ var d = "__wrap_b",
         }
     }),
     y = r.createContext(!1),
-    x = ({
+    E = ({
         children: n
     }) => r.createElement(y.Provider, {
         value: !0
@@ -64,7 +64,7 @@ var d = "__wrap_b",
             suppressHydrationWarning: !0
         }, e), m(u, `self.${d}("${s}",${a})`))
     },
-    E = g;
+    x = g;
 export {
-    E as B, x as h
+    x as B, E as h
 };

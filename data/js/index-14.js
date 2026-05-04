@@ -2,25 +2,25 @@ import {
     r as o,
     I as Ye,
     _ as Ze,
-    cU as et,
-    bD as je,
-    ak as tt,
-    ai as nt,
-    am as Y,
-    aQ as ot,
-    aC as he,
-    bh as st,
-    aO as rt,
-    cV as Te,
-    bA as it,
-    aF as Ie,
-    bf as U,
-    aK as $e,
-    al as lt,
-    bd as at,
-    aS as _e,
-    aG as xe,
-    bm as ct
+    cV as et,
+    bE as je,
+    am as tt,
+    ak as nt,
+    ao as Y,
+    aS as ot,
+    aE as he,
+    bi as st,
+    aQ as rt,
+    cW as Te,
+    bB as it,
+    aH as Ie,
+    bg as U,
+    aM as $e,
+    an as lt,
+    be as at,
+    aU as _e,
+    aI as xe,
+    bn as ct
 } from "./_index.js";
 import {
     R as ut
@@ -67,8 +67,8 @@ var bt = {
             icon: bt
         }))
     },
-    vt = o.forwardRef(yt);
-const Et = (e, n, s, t) => {
+    Et = o.forwardRef(yt);
+const vt = (e, n, s, t) => {
         const {
             titleMarginBottom: r,
             fontWeightStrong: l
@@ -90,7 +90,7 @@ const Et = (e, n, s, t) => {
       div&-h${t},
       div&-h${t} > textarea,
       h${t}
-    `] = Et(e[`fontSizeHeading${t}`], e[`lineHeightHeading${t}`], e.colorTextHeading, e)
+    `] = vt(e[`fontSizeHeading${t}`], e[`lineHeightHeading${t}`], e.colorTextHeading, e)
         }), s
     },
     xt = e => {
@@ -347,13 +347,13 @@ const Et = (e, n, s, t) => {
             style: r,
             direction: l,
             maxLength: m,
-            autoSize: v = !0,
+            autoSize: E = !0,
             value: a,
             onSave: c,
             onCancel: d,
             onEnd: b,
             component: p,
-            enterIcon: C = o.createElement(vt, null)
+            enterIcon: C = o.createElement(Et, null)
         } = e, w = o.useRef(null), R = o.useRef(!1), $ = o.useRef(null), [f, _] = o.useState(a);
         o.useEffect(() => {
             _(a)
@@ -365,12 +365,12 @@ const Et = (e, n, s, t) => {
                 } = w.current.resizableTextArea;
                 h.focus();
                 const {
-                    length: E
+                    length: v
                 } = h.value;
-                h.setSelectionRange(E, E)
+                h.setSelectionRange(v, v)
             }
         }, []);
-        const H = ({
+        const k = ({
                 target: g
             }) => {
                 _(g.value.replace(/[\n\r]/g, ""))
@@ -392,28 +392,28 @@ const Et = (e, n, s, t) => {
             B = ({
                 keyCode: g,
                 ctrlKey: h,
-                altKey: E,
+                altKey: v,
                 metaKey: A,
                 shiftKey: j
             }) => {
-                $.current !== g || R.current || h || E || A || j || (g === he.ENTER ? (y(), b == null || b()) : g === he.ESC && d())
+                $.current !== g || R.current || h || v || A || j || (g === he.ENTER ? (y(), b == null || b()) : g === he.ESC && d())
             },
             F = () => {
                 y()
             },
-            [z, M, V] = Le(n),
+            [D, P, V] = Le(n),
             N = Y(n, `${n}-edit-content`, {
                 [`${n}-rtl`]: l === "rtl",
                 [`${n}-${p}`]: !!p
-            }, t, M, V);
-        return z(o.createElement("div", {
+            }, t, P, V);
+        return D(o.createElement("div", {
             className: N,
             style: r
         }, o.createElement(dt, {
             ref: w,
             maxLength: m,
             value: f,
-            onChange: H,
+            onChange: k,
             onKeyDown: T,
             onKeyUp: B,
             onCompositionStart: x,
@@ -421,7 +421,7 @@ const Et = (e, n, s, t) => {
             onBlur: F,
             "aria-label": s,
             rows: 1,
-            autoSize: v
+            autoSize: E
         }), C !== null ? ot(C, {
             className: `${n}-edit-content-confirm`
         }) : null))
@@ -433,7 +433,7 @@ var It = function(e, n, s, t) {
         })
     }
     return new(s || (s = Promise))(function(l, m) {
-        function v(d) {
+        function E(d) {
             try {
                 c(t.next(d))
             } catch (b) {
@@ -450,7 +450,7 @@ var It = function(e, n, s, t) {
         }
 
         function c(d) {
-            d.done ? l(d.value) : r(d.value).then(v, a)
+            d.done ? l(d.value) : r(d.value).then(E, a)
         }
         c((t = t.apply(e, n || [])).next())
     })
@@ -459,16 +459,16 @@ const $t = ({
     copyConfig: e,
     children: n
 }) => {
-    const [s, t] = o.useState(!1), [r, l] = o.useState(!1), m = o.useRef(null), v = () => {
+    const [s, t] = o.useState(!1), [r, l] = o.useState(!1), m = o.useRef(null), E = () => {
         m.current && clearTimeout(m.current)
     }, a = {};
-    e.format && (a.format = e.format), o.useEffect(() => v, []);
+    e.format && (a.format = e.format), o.useEffect(() => E, []);
     const c = st(d => It(void 0, void 0, void 0, function*() {
         var b;
         d == null || d.preventDefault(), d == null || d.stopPropagation(), l(!0);
         try {
             const p = typeof e.text == "function" ? yield e.text(): e.text;
-            pt(p || gt(n, !0).join("") || "", a), l(!1), t(!0), v(), m.current = setTimeout(() => {
+            pt(p || gt(n, !0).join("") || "", a), l(!1), t(!0), E(), m.current = setTimeout(() => {
                 t(!1)
             }, 3e3), (b = e.onCopy) === null || b === void 0 || b.call(e, d)
         } catch (p) {
@@ -503,36 +503,36 @@ const _t = e => {
     }, e) : {
         title: e
     }, [e, n, s]);
-var Pt = function(e, n) {
+var Mt = function(e, n) {
     var s = {};
     for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (s[t] = e[t]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
         for (var r = 0, t = Object.getOwnPropertySymbols(e); r < t.length; r++) n.indexOf(t[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[r]) && (s[t[r]] = e[t[r]]);
     return s
 };
-const Pe = o.forwardRef((e, n) => {
+const Me = o.forwardRef((e, n) => {
     const {
         prefixCls: s,
         component: t = "article",
         className: r,
         rootClassName: l,
         setContentRef: m,
-        children: v,
+        children: E,
         direction: a,
         style: c
-    } = e, d = Pt(e, ["prefixCls", "component", "className", "rootClassName", "setContentRef", "children", "direction", "style"]), {
+    } = e, d = Mt(e, ["prefixCls", "component", "className", "rootClassName", "setContentRef", "children", "direction", "style"]), {
         getPrefixCls: b,
         direction: p,
         className: C,
         style: w
-    } = rt("typography"), R = a ?? p, $ = m ? Te(n, m) : n, f = b("typography", s), [_, H, x] = Le(f), S = Y(f, C, {
+    } = rt("typography"), R = a ?? p, $ = m ? Te(n, m) : n, f = b("typography", s), [_, k, x] = Le(f), S = Y(f, C, {
         [`${f}-rtl`]: R === "rtl"
-    }, r, l, H, x), T = Object.assign(Object.assign({}, w), c);
+    }, r, l, k, x), T = Object.assign(Object.assign({}, w), c);
     return _(o.createElement(t, Object.assign({
         className: S,
         style: T,
         ref: $
-    }, d), v))
+    }, d), E))
 });
 
 function Oe(e) {
@@ -543,7 +543,7 @@ function le(e, n, s) {
     return e === !0 || e === void 0 ? n : e || s && n
 }
 
-function Mt(e) {
+function Pt(e) {
     const n = document.createElement("em");
     e.appendChild(n);
     const s = e.getBoundingClientRect(),
@@ -559,7 +559,7 @@ const fe = e => ["string", "number"].includes(typeof e),
         tooltips: r,
         icon: l,
         tabIndex: m,
-        onCopy: v,
+        onCopy: E,
         loading: a
     }) => {
         const c = Oe(r),
@@ -579,12 +579,12 @@ const fe = e => ["string", "number"].includes(typeof e),
                 [`${e}-copy-success`]: n,
                 [`${e}-copy-icon-only`]: t
             }),
-            onClick: v,
+            onClick: E,
             "aria-label": R,
             tabIndex: m
         }, n ? le(d[1], o.createElement(ft, null), !0) : le(d[0], a ? o.createElement(it, null) : o.createElement(mt, null), !0)))
     },
-    G = o.forwardRef(({
+    Q = o.forwardRef(({
         style: e,
         children: n
     }, s) => {
@@ -616,8 +616,8 @@ function Ce(e, n) {
     for (let r = 0; r < e.length; r += 1) {
         if (s === n) return t;
         const l = e[r],
-            v = fe(l) ? String(l).length : 1,
-            a = s + v;
+            E = fe(l) ? String(l).length : 1,
+            a = s + E;
         if (a > n) {
             const c = n - s;
             return t.push(String(l).slice(0, c)), t
@@ -631,13 +631,13 @@ const ae = 0,
     ue = 2,
     de = 3,
     we = 4,
-    Q = {
+    G = {
         display: "-webkit-box",
         overflow: "hidden",
         WebkitBoxOrient: "vertical"
     };
 
-function kt(e) {
+function Ht(e) {
     const {
         enableMeasure: n,
         width: s,
@@ -645,83 +645,83 @@ function kt(e) {
         children: r,
         rows: l,
         expanded: m,
-        miscDeps: v,
+        miscDeps: E,
         onEllipsis: a
-    } = e, c = o.useMemo(() => Ie(t), [t]), d = o.useMemo(() => At(c), [t]), b = o.useMemo(() => r(c, !1), [t]), [p, C] = o.useState(null), w = o.useRef(null), R = o.useRef(null), $ = o.useRef(null), f = o.useRef(null), _ = o.useRef(null), [H, x] = o.useState(!1), [S, T] = o.useState(ae), [y, B] = o.useState(0), [F, z] = o.useState(null);
+    } = e, c = o.useMemo(() => Ie(t), [t]), d = o.useMemo(() => At(c), [t]), b = o.useMemo(() => r(c, !1), [t]), [p, C] = o.useState(null), w = o.useRef(null), R = o.useRef(null), $ = o.useRef(null), f = o.useRef(null), _ = o.useRef(null), [k, x] = o.useState(!1), [S, T] = o.useState(ae), [y, B] = o.useState(0), [F, D] = o.useState(null);
     U(() => {
         T(n && s && d ? ce : ae)
     }, [s, t, l, n, c]), U(() => {
-        var g, h, E, A;
+        var g, h, v, A;
         if (S === ce) {
             T(ue);
             const j = R.current && getComputedStyle(R.current).whiteSpace;
-            z(j)
+            D(j)
         } else if (S === ue) {
             const j = !!(!((g = $.current) === null || g === void 0) && g.isExceed());
             T(j ? de : we), C(j ? [0, d] : null), x(j);
             const W = ((h = $.current) === null || h === void 0 ? void 0 : h.getHeight()) || 0,
-                te = l === 1 ? 0 : ((E = f.current) === null || E === void 0 ? void 0 : E.getHeight()) || 0,
+                te = l === 1 ? 0 : ((v = f.current) === null || v === void 0 ? void 0 : v.getHeight()) || 0,
                 q = ((A = _.current) === null || A === void 0 ? void 0 : A.getHeight()) || 0,
                 ne = Math.max(W, te + q);
             B(ne + 1), a(j)
         }
     }, [S]);
-    const M = p ? Math.ceil((p[0] + p[1]) / 2) : 0;
+    const P = p ? Math.ceil((p[0] + p[1]) / 2) : 0;
     U(() => {
         var g;
-        const [h, E] = p || [0, 0];
-        if (h !== E) {
+        const [h, v] = p || [0, 0];
+        if (h !== v) {
             const j = (((g = w.current) === null || g === void 0 ? void 0 : g.getHeight()) || 0) > y;
-            let W = M;
-            E - h === 1 && (W = j ? h : E), C(j ? [h, W] : [W, E])
+            let W = P;
+            v - h === 1 && (W = j ? h : v), C(j ? [h, W] : [W, v])
         }
-    }, [p, M]);
+    }, [p, P]);
     const V = o.useMemo(() => {
             if (!n) return r(c, !1);
             if (S !== de || !p || p[0] !== p[1]) {
                 const g = r(c, !1);
                 return [we, ae].includes(S) ? g : o.createElement("span", {
-                    style: Object.assign(Object.assign({}, Q), {
+                    style: Object.assign(Object.assign({}, G), {
                         WebkitLineClamp: l
                     })
                 }, g)
             }
-            return r(m ? c : Ce(c, p[0]), H)
-        }, [m, S, p, c].concat($e(v))),
+            return r(m ? c : Ce(c, p[0]), k)
+        }, [m, S, p, c].concat($e(E))),
         N = {
             width: s,
             margin: 0,
             padding: 0,
             whiteSpace: F === "nowrap" ? "normal" : "inherit"
         };
-    return o.createElement(o.Fragment, null, V, S === ue && o.createElement(o.Fragment, null, o.createElement(G, {
-        style: Object.assign(Object.assign(Object.assign({}, N), Q), {
+    return o.createElement(o.Fragment, null, V, S === ue && o.createElement(o.Fragment, null, o.createElement(Q, {
+        style: Object.assign(Object.assign(Object.assign({}, N), G), {
             WebkitLineClamp: l
         }),
         ref: $
-    }, b), o.createElement(G, {
-        style: Object.assign(Object.assign(Object.assign({}, N), Q), {
+    }, b), o.createElement(Q, {
+        style: Object.assign(Object.assign(Object.assign({}, N), G), {
             WebkitLineClamp: l - 1
         }),
         ref: f
-    }, b), o.createElement(G, {
-        style: Object.assign(Object.assign(Object.assign({}, N), Q), {
+    }, b), o.createElement(Q, {
+        style: Object.assign(Object.assign(Object.assign({}, N), G), {
             WebkitLineClamp: 1
         }),
         ref: _
-    }, r([], !0))), S === de && p && p[0] !== p[1] && o.createElement(G, {
+    }, r([], !0))), S === de && p && p[0] !== p[1] && o.createElement(Q, {
         style: Object.assign(Object.assign({}, N), {
             top: 400
         }),
         ref: w
-    }, r(Ce(c, M), !0)), S === ce && o.createElement("span", {
+    }, r(Ce(c, P), !0)), S === ce && o.createElement("span", {
         style: {
             whiteSpace: "inherit"
         },
         ref: R
     }))
 }
-const Ht = ({
+const kt = ({
     enableEllipsis: e,
     isEllipsis: n,
     children: s,
@@ -745,15 +745,15 @@ function Wt({
     strong: r,
     keyboard: l,
     italic: m
-}, v) {
-    let a = v;
+}, E) {
+    let a = E;
 
     function c(d, b) {
         b && (a = o.createElement(d, {}, a))
     }
     return c("strong", r), c("u", s), c("del", t), c("code", n), c("mark", e), c("kbd", l), c("i", m), a
 }
-const Dt = "...",
+const zt = "...",
     Re = ["delete", "mark", "code", "underline", "strong", "keyboard", "italic"],
     Z = o.forwardRef((e, n) => {
         var s;
@@ -762,7 +762,7 @@ const Dt = "...",
             className: r,
             style: l,
             type: m,
-            disabled: v,
+            disabled: E,
             children: a,
             ellipsis: c,
             editable: d,
@@ -772,30 +772,30 @@ const Dt = "...",
         } = e, w = Bt(e, ["prefixCls", "className", "style", "type", "disabled", "children", "ellipsis", "editable", "copyable", "component", "title"]), {
             getPrefixCls: R,
             direction: $
-        } = o.useContext(lt), [f] = at("Text"), _ = o.useRef(null), H = o.useRef(null), x = R("typography", t), S = _e(w, Re), [T, y] = ie(d), [B, F] = xe(!1, {
+        } = o.useContext(lt), [f] = at("Text"), _ = o.useRef(null), k = o.useRef(null), x = R("typography", t), S = _e(w, Re), [T, y] = ie(d), [B, F] = xe(!1, {
             value: y.editing
         }), {
-            triggerType: z = ["icon"]
-        } = y, M = i => {
+            triggerType: D = ["icon"]
+        } = y, P = i => {
             var u;
             i && ((u = y.onStart) === null || u === void 0 || u.call(y)), F(i)
         }, V = _t(B);
         U(() => {
             var i;
-            !B && V && ((i = H.current) === null || i === void 0 || i.focus())
+            !B && V && ((i = k.current) === null || i === void 0 || i.focus())
         }, [B]);
         const N = i => {
-                i == null || i.preventDefault(), M(!0)
+                i == null || i.preventDefault(), P(!0)
             },
             g = i => {
                 var u;
-                (u = y.onChange) === null || u === void 0 || u.call(y, i), M(!1)
+                (u = y.onChange) === null || u === void 0 || u.call(y, i), P(!1)
             },
             h = () => {
                 var i;
-                (i = y.onCancel) === null || i === void 0 || i.call(y), M(!1)
+                (i = y.onCancel) === null || i === void 0 || i.call(y), P(!1)
             },
-            [E, A] = ie(b),
+            [v, A] = ie(b),
             {
                 copied: j,
                 copyLoading: W,
@@ -805,37 +805,37 @@ const Dt = "...",
                 children: a
             }),
             [q, ne] = o.useState(!1),
-            [me, Me] = o.useState(!1),
+            [me, Pe] = o.useState(!1),
             [ge, Ne] = o.useState(!1),
             [be, Ae] = o.useState(!1),
-            [ke, He] = o.useState(!0),
-            [D, O] = ie(c, {
+            [He, ke] = o.useState(!0),
+            [z, O] = ie(c, {
                 expandable: !1,
                 symbol: i => i ? f == null ? void 0 : f.collapse : f == null ? void 0 : f.expand
             }),
-            [k, Be] = xe(O.defaultExpanded || !1, {
+            [H, Be] = xe(O.defaultExpanded || !1, {
                 value: O.expanded
             }),
-            I = D && (!k || O.expandable === "collapsible"),
+            I = z && (!H || O.expandable === "collapsible"),
             {
                 rows: K = 1
             } = O,
-            X = o.useMemo(() => I && (O.suffix !== void 0 || O.onEllipsis || O.expandable || T || E), [I, O, T, E]);
+            X = o.useMemo(() => I && (O.suffix !== void 0 || O.onEllipsis || O.expandable || T || v), [I, O, T, v]);
         U(() => {
-            D && !X && (ne(Se("webkitLineClamp")), Me(Se("textOverflow")))
-        }, [X, D]);
+            z && !X && (ne(Se("webkitLineClamp")), Pe(Se("textOverflow")))
+        }, [X, z]);
         const [L, We] = o.useState(I), ye = o.useMemo(() => X ? !1 : K === 1 ? me : q, [X, me, q]);
         U(() => {
             We(ye && I)
         }, [ye, I]);
-        const ve = I && (L ? be : ge),
-            De = I && K === 1 && L,
+        const Ee = I && (L ? be : ge),
+            ze = I && K === 1 && L,
             oe = I && K > 1 && L,
-            ze = (i, u) => {
-                var P;
-                Be(u.expanded), (P = O.onExpand) === null || P === void 0 || P.call(O, i, u)
+            De = (i, u) => {
+                var M;
+                Be(u.expanded), (M = O.onExpand) === null || M === void 0 || M.call(O, i, u)
             },
-            [Ee, Ue] = o.useState(0),
+            [ve, Ue] = o.useState(0),
             Fe = ({
                 offsetWidth: i
             }) => {
@@ -847,15 +847,15 @@ const Dt = "...",
             };
         o.useEffect(() => {
             const i = _.current;
-            if (D && L && i) {
-                const u = Mt(i);
+            if (z && L && i) {
+                const u = Pt(i);
                 be !== u && Ae(u)
             }
-        }, [D, L, a, oe, ke, Ee]), o.useEffect(() => {
+        }, [z, L, a, oe, He, ve]), o.useEffect(() => {
             const i = _.current;
             if (typeof IntersectionObserver > "u" || !i || !L || !I) return;
             const u = new IntersectionObserver(() => {
-                He(!!i.offsetParent)
+                ke(!!i.offsetParent)
             });
             return u.observe(i), () => {
                 u.disconnect()
@@ -863,8 +863,8 @@ const Dt = "...",
         }, [L, I]);
         const se = Lt(O.tooltip, y.text, a),
             J = o.useMemo(() => {
-                if (!(!D || L)) return [y.text, a, C, se.title].find(fe)
-            }, [D, L, C, se.title, ve]);
+                if (!(!z || L)) return [y.text, a, C, se.title].find(fe)
+            }, [z, L, C, se.title, Ee]);
         if (B) return o.createElement(Tt, {
             value: (s = y.text) !== null && s !== void 0 ? s : typeof a == "string" ? a : "",
             onSave: g,
@@ -887,35 +887,35 @@ const Dt = "...",
                 return i ? o.createElement("button", {
                     type: "button",
                     key: "expand",
-                    className: `${x}-${k?"collapse":"expand"}`,
-                    onClick: P => ze(P, {
-                        expanded: !k
+                    className: `${x}-${H?"collapse":"expand"}`,
+                    onClick: M => De(M, {
+                        expanded: !H
                     }),
-                    "aria-label": k ? f.collapse : f == null ? void 0 : f.expand
-                }, typeof u == "function" ? u(k) : u) : null
+                    "aria-label": H ? f.collapse : f == null ? void 0 : f.expand
+                }, typeof u == "function" ? u(H) : u) : null
             },
             qe = () => {
                 if (!T) return;
                 const {
                     icon: i,
                     tooltip: u,
-                    tabIndex: P
-                } = y, re = Ie(u)[0] || (f == null ? void 0 : f.edit), Qe = typeof re == "string" ? re : "";
-                return z.includes("icon") ? o.createElement(pe, {
+                    tabIndex: M
+                } = y, re = Ie(u)[0] || (f == null ? void 0 : f.edit), Ge = typeof re == "string" ? re : "";
+                return D.includes("icon") ? o.createElement(pe, {
                     key: "edit",
                     title: u === !1 ? "" : re
                 }, o.createElement("button", {
                     type: "button",
-                    ref: H,
+                    ref: k,
                     className: `${x}-edit`,
                     onClick: N,
-                    "aria-label": Qe,
-                    tabIndex: P
+                    "aria-label": Ge,
+                    tabIndex: M
                 }, i || o.createElement(ut, {
                     role: "button"
                 }))) : null
             },
-            Xe = () => E ? o.createElement(Nt, Object.assign({
+            Xe = () => v ? o.createElement(Nt, Object.assign({
                 key: "copy"
             }, A, {
                 prefixCls: x,
@@ -926,23 +926,23 @@ const Dt = "...",
                 iconOnly: a == null
             })) : null,
             Je = i => [i && Ke(), qe(), Xe()],
-            Ge = i => [i && !k && o.createElement("span", {
+            Qe = i => [i && !H && o.createElement("span", {
                 "aria-hidden": !0,
                 key: "ellipsis"
-            }, Dt), O.suffix, Je(i)];
+            }, zt), O.suffix, Je(i)];
         return o.createElement(ct, {
             onResize: Fe,
             disabled: !I
-        }, i => o.createElement(Ht, {
+        }, i => o.createElement(kt, {
             tooltipProps: se,
             enableEllipsis: I,
-            isEllipsis: ve
-        }, o.createElement(Pe, Object.assign({
+            isEllipsis: Ee
+        }, o.createElement(Me, Object.assign({
             className: Y({
                 [`${x}-${m}`]: m,
-                [`${x}-disabled`]: v,
-                [`${x}-ellipsis`]: D,
-                [`${x}-ellipsis-single-line`]: De,
+                [`${x}-disabled`]: E,
+                [`${x}-ellipsis`]: z,
+                [`${x}-ellipsis-single-line`]: ze,
                 [`${x}-ellipsis-multiple-line`]: oe
             }, r),
             prefixCls: t,
@@ -952,23 +952,23 @@ const Dt = "...",
             component: p,
             ref: Te(i, _, n),
             direction: $,
-            onClick: z.includes("text") ? N : void 0,
+            onClick: D.includes("text") ? N : void 0,
             "aria-label": J == null ? void 0 : J.toString(),
             title: C
-        }, S), o.createElement(kt, {
+        }, S), o.createElement(Ht, {
             enableMeasure: I && !L,
             text: a,
             rows: K,
-            width: Ee,
+            width: ve,
             onEllipsis: Ve,
-            expanded: k,
-            miscDeps: [j, k, W, T, E, f].concat($e(Re.map(u => e[u])))
-        }, (u, P) => Wt(e, o.createElement(o.Fragment, null, u.length > 0 && P && !k && J ? o.createElement("span", {
+            expanded: H,
+            miscDeps: [j, H, W, T, v, f].concat($e(Re.map(u => e[u])))
+        }, (u, M) => Wt(e, o.createElement(o.Fragment, null, u.length > 0 && M && !H && J ? o.createElement("span", {
             key: "show-content",
             "aria-hidden": !0
-        }, u) : u, Ge(P)))))))
+        }, u) : u, Qe(M)))))))
     });
-var zt = function(e, n) {
+var Dt = function(e, n) {
     var s = {};
     for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.indexOf(t) < 0 && (s[t] = e[t]);
     if (e != null && typeof Object.getOwnPropertySymbols == "function")
@@ -979,7 +979,7 @@ const Ut = o.forwardRef((e, n) => {
         var {
             ellipsis: s,
             rel: t
-        } = e, r = zt(e, ["ellipsis", "rel"]);
+        } = e, r = Dt(e, ["ellipsis", "rel"]);
         const l = Object.assign(Object.assign({}, r), {
             rel: t === void 0 && r.target === "_blank" ? "noopener noreferrer" : t
         });
@@ -1022,7 +1022,7 @@ var Xt = function(e, n) {
     return s
 };
 const Jt = [1, 2, 3, 4, 5],
-    Gt = o.forwardRef((e, n) => {
+    Qt = o.forwardRef((e, n) => {
         const {
             level: s = 1
         } = e, t = Xt(e, ["level"]), r = Jt.includes(s) ? `h${s}` : "h1";
@@ -1032,10 +1032,10 @@ const Jt = [1, 2, 3, 4, 5],
             component: r
         }))
     }),
-    ee = Pe;
+    ee = Me;
 ee.Text = qt;
 ee.Link = Ut;
-ee.Title = Gt;
+ee.Title = Qt;
 ee.Paragraph = Ft;
 export {
     ee as T

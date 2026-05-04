@@ -1,64 +1,342 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Overview.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/Centered.js", "assets/GetAssetPath.js", "assets/AccessibleAnchor.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/index-14.js", "assets/EditOutlined.js", "assets/styleChecker.js", "assets/index-5.js", "assets/index-3.js", "assets/index-2.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/Requirements.js", "assets/SeasonTicketName.js", "assets/Names.js", "assets/Form.js", "assets/index-19.js", "assets/index-10.js", "assets/move.js", "assets/PaperClipOutlined.js", "assets/useForceUpdate.js", "assets/DeleteOutlined.js", "assets/DownloadOutlined.js", "assets/progress.js", "assets/index-28.js", "assets/index-4.js", "assets/context.js", "assets/OwnsSeasonTicket.js", "assets/App-41.js", "assets/FixSpinePlugin.js", "assets/MapModeType.js", "assets/MapStyle.js", "assets/playSound.js", "assets/howler.js", "assets/mobxreact.esm.js", "assets/index-21.js", "assets/QuizTypes.js", "assets/TutorialConsts.js", "assets/ActionButton.js", "assets/index-18.js", "assets/FontAwesomeIcon.js", "assets/CapitalizeFirstLetter.js", "assets/motion.js", "assets/SixteenByNineScaler.js", "assets/index-20.js", "assets/index-22.js", "assets/index-1.js", "assets/ElementIds.js", "assets/useQuery.js", "assets/___vite-browser-external_commonjs-proxy.js", "assets/util-1.js", "assets/util-2.js", "assets/Shortcut.js", "assets/useWillUnmount.js", "assets/use-motion-value.js", "assets/use-transform.js", "assets/index-6.js", "assets/CircularProgress.js", "assets/clsx.m.js", "assets/index-17.js", "assets/use-force-update.js", "assets/GimkitLiveQuestion.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/Tooltip.js", "assets/index-9.js", "assets/index-23.js", "assets/useIntervalWhen.js", "assets/react-flip-move.es.js", "assets/sounds.js", "assets/App-5.js", "assets/AnimatedBackground-2.js", "assets/useDebouncedValue.js", "assets/FillRemainingSpace.js", "assets/index-24.js", "assets/TrackEvent.js", "assets/TrackPostHogEvent.js", "assets/index-16.js", "assets/useForm.js", "assets/useBreakpoint.js", "assets/QuestionCircleOutlined.js", "assets/index-8.js", "assets/DownOutlined.js", "assets/index-11.js", "assets/useBubbleLock.js", "assets/StarOutlined.js"]))) => i.map(i => d[i]);
 import {
-    r as e,
-    j as t,
-    p as s,
-    a as p,
-    t as d
+    j as e,
+    D as m,
+    r as x,
+    c as v,
+    e as h,
+    B as k,
+    a as C,
+    t as S,
+    M as F,
+    W as y,
+    F as l,
+    d as n
 } from "./_index.js";
 import {
-    s as _
-} from "./index-4.js";
+    A as c
+} from "./AccessibleAnchor.js";
+import {
+    F as r
+} from "./index-16.js";
+import {
+    I as i
+} from "./index-3.js";
+import {
+    C as P
+} from "./index-11.js";
+import {
+    N as I
+} from "./NotionContentWrapper.js";
+import {
+    P as N
+} from "./Paper.js";
+import {
+    S as A
+} from "./App-4.js";
+import "./index-10.js";
+import "./index-5.js";
+import "./move.js";
+import "./index-2.js";
+import "./useForm.js";
+import "./useBreakpoint.js";
+import "./useForceUpdate.js";
+import "./QuestionCircleOutlined.js";
+import "./useBubbleLock.js";
+import "./Shortcut.js";
+import "./Names.js";
+import "./mobxreact.esm.js";
+import "./index-1.js";
+import "./index-6.js";
+import "./FontAwesomeIcon.js";
+import "./App-2.js";
+import "./Sizes.js";
+import "./motion.js";
+import "./price.js";
+import "./TrackPostHogEvent.js";
+import "./index-4.js";
 import "./context.js";
-const E = e.lazy(() => s(() => import("./Overview.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]))),
-    f = e.lazy(() => s(() => import("./Requirements.js"), __vite__mapDeps([17, 1, 2, 18, 19, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]))),
-    h = e.lazy(() => s(() => import("./Form.js"), __vite__mapDeps([20, 1, 2, 21, 22, 12, 23, 14, 24, 25, 26, 27, 13, 28, 15, 29, 6, 7, 8, 30, 31, 19, 5, 18, 32, 33, 34, 4, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 3, 46, 47, 9, 10, 11, 16, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91]))),
-    b = n => {
-        const [i, a] = e.useState("overview"), u = () => {
-            if (i === "overview") return t.jsx(E, {
-                next: () => a("requirements")
-            });
-            if (i === "requirements") return t.jsx(f, {
-                publishRequirementError: n.publishRequirementError,
-                next: () => a("form")
-            });
-            if (i === "form") {
-                const l = r => new Promise((m, c) => {
-                    p({
-                        url: "/api/created-map/listing/create",
-                        data: {
-                            name: r.name,
-                            description: r.description,
-                            imageUrl: r.imageUrl,
-                            educationalRating: r.educationalRating,
-                            map: window._mapId
-                        },
-                        success: () => {
-                            _.success("Map published!"), n.refetch(), m(null)
-                        },
-                        error: o => {
-                            d({
-                                e: o,
-                                default: {
-                                    title: "Error publishing map",
-                                    content: "Please try again."
-                                }
-                            }), c(o)
+import "./StarOutlined.js";
+import "./NavigateTo.js";
+import "./index-15.js";
+import "./colors.js";
+import "./useWarningOnMountInDevelopment.js";
+const T = () => e.jsxs("div", {
+        children: ["One giant obstacle for teachers is classroom funding: The average teacher in the US spends nearly $750 a year on classroom supplies. ", e.jsx("br", {}), " ", e.jsx("br", {}), " ", "That's an eye-popping number. For us, it's also a motivating one. ", e.jsx("br", {}), " ", e.jsx("br", {}), "And that's why we created GiveKit!", e.jsx("br", {}), " ", e.jsx("br", {}), e.jsx("b", {
+            children: "With GiveKit, we're donating $500 in funding every month to help pay for your school materials, first aid kits, tech tools, furniture, and anything else you may need to do your best work."
+        }), e.jsx(m, {}), e.jsx("h2", {
+            children: "How it works"
+        }), e.jsxs("b", {
+            children: ["Every month we’ll fund $500 to educator-led projects via", " ", e.jsx(c, {
+                external: !0,
+                to: "https://www.donorschoose.org",
+                target: "_blank",
+                children: "DonorsChoose.org."
+            })]
+        }), e.jsx("br", {}), " ", e.jsx("br", {}), "We may fund one project in a month or several. If you don't get picked one month, no worries, we might always come back to fund it in the future.", e.jsx("br", {}), " ", e.jsx("br", {}), "We've decided to donate through", " ", e.jsx(c, {
+            external: !0,
+            to: "https://www.donorschoose.org",
+            target: "_blank",
+            children: "DonorsChoose.org"
+        }), " ", "—- they help take care of all the complexities in getting money from us to you.", e.jsx("br", {}), " ", e.jsx("br", {}), e.jsx("b", {
+            children: "To apply for GiveKit, simply:"
+        }), e.jsx("br", {}), " ", e.jsx("br", {}), "1. Register and start a project at", " ", e.jsx(c, {
+            external: !0,
+            to: "https://www.donorschoose.org",
+            target: "_blank",
+            children: "DonorsChoose.org"
+        }), " ", e.jsx("br", {}), "2. Fill out the form below with a link to your project ", e.jsx("br", {}), "3. Keep up your incredible work! ", e.jsx("br", {}), " ", e.jsx("br", {}), "We'll review applications monthly and select a project or projects to fund.", e.jsx("br", {})]
+    }),
+    j = "Thank you so much for applying! If you're selected, we'll send you an email. Take care and have a great rest of your day!",
+    W = () => {
+        const [t, s] = x.useState(!1), [a, p] = x.useState(!1), f = b => {
+            t || a || (s(!0), C({
+                url: "/api/v1/givekit/apply",
+                data: b,
+                success: () => {
+                    p(!0), F.success({
+                        title: "Applied!",
+                        content: j
+                    })
+                },
+                error: w => {
+                    S({
+                        e: w,
+                        default: {
+                            title: "Error applying. Please try again later"
                         }
                     })
-                });
-                return t.jsx(h, {
-                    handleSubmit: l
-                })
-            }
-            return null
+                },
+                both: () => {
+                    s(!1)
+                }
+            }))
         };
-        return t.jsx(e.Suspense, {
-            fallback: null,
-            children: u()
+        return a ? e.jsx(v, {
+            style: {
+                fontSize: 18,
+                color: h.Black
+            },
+            children: j
+        }) : e.jsxs(r, {
+            onFinish: f,
+            style: {
+                width: "100%"
+            },
+            children: [e.jsx(o, {
+                children: "First Name*"
+            }), e.jsx(r.Item, {
+                name: "firstName",
+                rules: [{
+                    required: !0,
+                    message: "Please enter your first name."
+                }],
+                children: e.jsx(i, {})
+            }), e.jsx(o, {
+                children: "Last Name*"
+            }), e.jsx(r.Item, {
+                name: "lastName",
+                rules: [{
+                    required: !0,
+                    message: "Please enter your last name."
+                }],
+                children: e.jsx(i, {})
+            }), e.jsx(o, {
+                children: "Role*"
+            }), e.jsx(r.Item, {
+                name: "role",
+                rules: [{
+                    required: !0,
+                    message: "Please enter your role."
+                }],
+                children: e.jsx(i, {})
+            }), e.jsx(o, {
+                children: "Email Address*"
+            }), e.jsx(r.Item, {
+                name: "email",
+                rules: [{
+                    required: !0,
+                    type: "email",
+                    message: "Please enter a valid email."
+                }],
+                children: e.jsx(i, {
+                    type: "email"
+                })
+            }), e.jsx(o, {
+                children: "DonorsChoose Project Link*"
+            }), e.jsx(u, {
+                children: "Paste the link to your project on DonorsChoose.org"
+            }), e.jsx(r.Item, {
+                name: "projectLink",
+                rules: [{
+                    required: !0,
+                    message: "Please enter the project link."
+                }],
+                children: e.jsx(i, {
+                    placeholder: "https://www.donorschoose.org/project/my-project"
+                })
+            }), e.jsx(o, {
+                children: "Date Needed"
+            }), e.jsx(u, {
+                children: "If your project is time sensitive, let us know!"
+            }), e.jsx(r.Item, {
+                name: "dateNeeded",
+                children: e.jsx(i, {})
+            }), e.jsx(o, {
+                children: "Comments"
+            }), e.jsx(r.Item, {
+                name: "comments",
+                children: e.jsx(i, {})
+            }), e.jsx(o, {
+                children: "Permission"
+            }), e.jsx(u, {
+                children: "Check the box below if you give us permission to use your name and project info. If you're not comfortable, no worries! Checking this box does not increase your chances of being selected."
+            }), e.jsx(r.Item, {
+                name: "permission",
+                valuePropName: "checked",
+                initialValue: !1,
+                children: e.jsx(P, {
+                    children: "Yes, you may use my name and project info!"
+                })
+            }), e.jsx(r.Item, {
+                children: e.jsx(k, {
+                    style: {
+                        marginTop: 20
+                    },
+                    type: "primary",
+                    htmlType: "submit",
+                    size: "large",
+                    block: !0,
+                    loading: t,
+                    children: "Submit"
+                })
+            })]
         })
-    };
+    },
+    o = n.div`
+  font-size: 18px;
+  color: ${h.Black};
+  font-family: ${y.SFPro};
+  margin-top: 12px;
+  font-weight: ${l.Bold};
+`,
+    u = n.div``,
+    $ = () => e.jsxs(e.Fragment, {
+        children: [e.jsx(m, {}), e.jsx("h2", {
+            children: "Apply for GiveKit funding"
+        }), e.jsx(W, {})]
+    }),
+    D = () => e.jsxs(e.Fragment, {
+        children: [e.jsx(m, {}), e.jsx("h2", {
+            children: "FAQ"
+        }), e.jsx("b", {
+            children: "What kind of projects are you looking for? "
+        }), " ", e.jsx("br", {}), "We’re looking for projects that have the largest possible positive impact on students. That could be anything! Classroom materials, first aid kits, resources that celebrate diversity, supplies for ambitious project-based learning ideas — Anything. If you need it, we want to know about it. The only thing we’re not looking for are requests for Gimkit subscriptions or licenses.", e.jsx("br", {}), " ", e.jsx("br", {}), e.jsx("b", {
+            children: "Why not give money directly to teachers?"
+        }), " ", e.jsx("br", {}), "Because DonorsChoose specializes in funding classroom projects and they're great at what they do. They’ve helped donors give more than $1 billion to teachers, funding nearly 2 million projects. They take care of the hard parts of giving including vetting requests, purchasing items, and shipping materials directly to verified schools. Simply, working with them makes it easy to give!", " ", e.jsx(c, {
+            external: !0,
+            target: "_blank",
+            to: "https://www.donorschoose.org",
+            children: "Learn more about DonorsChoose.org."
+        }), e.jsx(m, {}), e.jsx("b", {
+            children: "Need more info?"
+        }), " ", e.jsx("br", {}), "Write us at", " ", e.jsx(c, {
+            to: "mailto:hello@gimkit.com",
+            external: !0,
+            children: "hello@gimkit.com"
+        }), " ", "and put GiveKit in the subject line."]
+    }),
+    B = t => {
+        const s = a => a === t.currentScreen;
+        return e.jsxs(q, {
+            children: [e.jsx(g, {
+                onClick: () => t.setScreen(d.apply),
+                style: {
+                    marginRight: 5,
+                    fontWeight: s(d.apply) ? l.Bold : l.Normal
+                },
+                children: "About & Apply"
+            }), e.jsx(g, {
+                onClick: () => t.setScreen(d.pastProjects),
+                style: {
+                    fontWeight: s(d.pastProjects) ? l.Bold : l.Normal
+                },
+                children: "Previously funded projects"
+            })]
+        })
+    },
+    q = n.div.attrs({
+        className: "flex vc"
+    })`
+  margin-bottom: 25px;
+`,
+    g = n(c)`
+  padding: 4px 15px;
+  background: ${h.White};
+  border: solid 1px;
+  border-radius: 500px;
+  font-size: 15px;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`,
+    E = () => e.jsx(I, {
+        id: "382c29c71fa14d5a99358c8e5c9b1e43"
+    });
+var d = (t => (t.apply = "apply", t.pastProjects = "pastProjects", t))(d || {});
+const ve = () => {
+        const [t, s] = x.useState("apply"), a = () => t === "apply" ? e.jsxs(e.Fragment, {
+            children: [e.jsx(T, {}), e.jsx($, {}), e.jsx(D, {})]
+        }) : e.jsx(E, {});
+        return e.jsxs(G, {
+            children: [e.jsx(A, {
+                includeSpacer: !0
+            }), e.jsx(K, {}), e.jsx(B, {
+                currentScreen: t,
+                setScreen: p => {
+                    s(p)
+                }
+            }), e.jsx(z, {
+                children: a()
+            })]
+        })
+    },
+    G = n.div.attrs({
+        className: "flex flex-column vc"
+    })`
+  flex: 1;
+  background: ${h.Snow};
+  color: #1d2d35;
+  font-family: ${y.SFPro};
+  .ant-row.ant-form-item {
+    margin: 0px;
+  }
+`,
+    K = n.img.attrs({
+        src: "/client/img/givekit/header.png",
+        alt: "GiveKit"
+    })`
+  height: 225px;
+  margin: 45px;
+  margin-bottom: 35px;
+  max-width: 80%;
+`,
+    z = n(N)`
+  flex: 1;
+  width: 90%;
+  max-width: 720px;
+  padding: 45px;
+  border-radius: 9px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+
+  h2 {
+    font-size: 28px;
+    font-weight: ${l.Bold};
+  }
+`;
 export {
-    b as
+    d as GiveKitScreen, ve as
     default
 };

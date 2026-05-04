@@ -1,30 +1,36 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/App-76.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/ItemNameWithAmount.js", "assets/FixSpinePlugin.js", "assets/GetAssetPath.js", "assets/MapModeType.js", "assets/MapStyle.js", "assets/playSound.js", "assets/howler.js", "assets/CapitalizeFirstLetter.js", "assets/App-41.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/mobxreact.esm.js", "assets/index-21.js", "assets/QuizTypes.js", "assets/TutorialConsts.js", "assets/ActionButton.js", "assets/index-5.js", "assets/index-18.js", "assets/context.js", "assets/FontAwesomeIcon.js", "assets/Centered.js", "assets/index-4.js", "assets/motion.js", "assets/index-2.js", "assets/index-14.js", "assets/EditOutlined.js", "assets/styleChecker.js", "assets/index-3.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/SixteenByNineScaler.js", "assets/index-20.js", "assets/index-22.js", "assets/index-1.js", "assets/progress.js", "assets/ElementIds.js", "assets/SeasonTicketName.js", "assets/useQuery.js", "assets/___vite-browser-external_commonjs-proxy.js", "assets/util-1.js", "assets/util-2.js", "assets/Shortcut.js", "assets/Names.js", "assets/useWillUnmount.js", "assets/use-motion-value.js", "assets/use-transform.js", "assets/index-6.js", "assets/AccessibleAnchor.js", "assets/CircularProgress.js", "assets/clsx.m.js", "assets/index-17.js", "assets/use-force-update.js", "assets/GimkitLiveQuestion.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/Tooltip.js", "assets/index-9.js", "assets/index-23.js", "assets/useIntervalWhen.js", "assets/index-10.js", "assets/move.js", "assets/react-flip-move.es.js", "assets/sounds.js", "assets/App-5.js", "assets/AnimatedBackground-2.js", "assets/useDebouncedValue.js", "assets/FillRemainingSpace.js", "assets/index-24.js", "assets/confetti.js"]))) => i.map(i => d[i]);
 import {
+    r as x,
     j as i,
-    r as m,
-    d as o,
-    p
+    D as d,
+    B as e,
+    d as C,
+    e as s
 } from "./_index.js";
 import {
-    ae as s,
-    o as n,
-    af as l
+    F as l,
+    s as o,
+    a,
+    P as g
+} from "./FixSpinePlugin.js";
+import {
+    T as p,
+    o as w,
+    af as S
 } from "./App-41.js";
 import {
-    S as c
+    S as U
 } from "./SixteenByNineScaler.js";
 import {
-    m as e
-} from "./motion.js";
-import "./Button.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./FixSpinePlugin.js";
+    S as h
+} from "./index-28.js";
 import "./GetAssetPath.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
 import "./playSound.js";
 import "./howler.js";
+import "./Button.js";
+import "./polished.esm.js";
+import "./inheritsLoose.js";
 import "./mobxreact.esm.js";
 import "./index-21.js";
 import "./QuizTypes.js";
@@ -37,6 +43,7 @@ import "./FontAwesomeIcon.js";
 import "./Centered.js";
 import "./CapitalizeFirstLetter.js";
 import "./index-4.js";
+import "./motion.js";
 import "./index-2.js";
 import "./index-14.js";
 import "./EditOutlined.js";
@@ -82,83 +89,162 @@ import "./FillRemainingSpace.js";
 import "./index-24.js";
 import "./index-20.js";
 import "./index-22.js";
-const d = m.lazy(() => p(() => import("./App-76.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73]))),
-    r = .3,
-    x = t => (n(Phaser.Input.Keyboard.KeyCodes.ESC, t.close, []), i.jsx(u, {
-        children: i.jsx(f, {
-            initial: {
-                background: "rgba(0,0,0,0)"
-            },
-            animate: {
-                background: "rgba(0,0,0,0.4)"
-            },
-            exit: {
-                background: "rgba(0,0,0,0)"
-            },
-            transition: {
-                duration: r
-            },
-            onClick: t.close,
-            children: i.jsx(C, {
-                initial: {
-                    x: "125%"
-                },
-                animate: {
-                    x: "0%"
-                },
-                exit: {
-                    x: "125%"
-                },
-                transition: {
-                    duration: r,
-                    ease: "easeOut"
-                },
-                onClick: a => a.stopPropagation(),
-                children: i.jsx(m.Suspense, {
-                    fallback: i.jsx("div", {}),
-                    children: i.jsx(d, {
-                        status: t.status,
-                        style: t.style,
-                        tableGroup: t.tableGroup,
-                        craft: t.craft,
-                        collect: t.collect,
-                        item: t.item,
-                        itemAmount: t.itemAmount,
-                        craftingDurationMs: t.craftingDurationMs,
-                        itemFinishesCraftingAt: t.itemFinishesCraftingAt,
-                        itemDisposalMs: t.itemDisposalMs,
-                        itemDisposedAt: t.itemDisposedAt,
-                        itemCrafterCharacterId: t.itemCrafterCharacterId,
-                        useCrafterCollectionAdvantage: t.useCrafterCollectionAdvantage,
-                        close: t.close
-                    })
-                })
+const k = () => {
+        const t = l(p());
+        t && (t.alpha.cinematicModeAlpha = 0, o.me.cinematicMode.mainCharacterVisible = !1)
+    },
+    b = () => {
+        o.me.cinematicMode.nameTagsVisible = !0
+    },
+    y = () => {
+        o.me.cinematicMode.nameTagsVisible = !1
+    },
+    v = () => {
+        const t = l(p());
+        t && (t.alpha.cinematicModeAlpha = 1, o.me.cinematicMode.mainCharacterVisible = !0)
+    },
+    F = () => {
+        const t = l(p());
+        t && (a().cameraHelper.startFollowingObject({
+            object: t.body
+        }), o.me.cinematicMode.followingMainCharacter = !0)
+    },
+    N = () => {
+        a().cameraHelper.stopFollow(), o.me.cinematicMode.followingMainCharacter = !1
+    },
+    _ = () => {
+        o.me.cinematicMode.hidingGUI = !1
+    },
+    H = () => {
+        o.me.cinematicMode.hidingGUI = !0
+    },
+    n = t => {
+        const r = a().cameras.main;
+        r.centerOn(r.worldView.centerX + t.x, r.worldView.centerY + t.y)
+    },
+    I = t => {
+        const r = a().cameras.main;
+        a().cameraHelper.setBounds(o.world.width, o.world.height), r.setZoom(t)
+    },
+    V = () => {
+        const [t, r] = x.useState(50), m = f => {
+            I(f)
+        }, c = () => {
+            n({
+                x: -t,
+                y: 0
             })
+        }, M = () => {
+            n({
+                x: t,
+                y: 0
+            })
+        }, u = () => {
+            n({
+                x: 0,
+                y: -t
+            })
+        }, j = () => {
+            n({
+                x: 0,
+                y: t
+            })
+        };
+        return i.jsxs("div", {
+            className: "maxWidth",
+            children: [i.jsx(d, {}), i.jsx("div", {
+                className: "maxWidth flex-center",
+                children: i.jsx(e, {
+                    onClick: u,
+                    children: "Up"
+                })
+            }), i.jsxs("div", {
+                className: "maxWidth flex between",
+                children: [i.jsx(e, {
+                    onClick: c,
+                    children: "Left"
+                }), i.jsx(e, {
+                    onClick: M,
+                    children: "Right"
+                })]
+            }), i.jsx("div", {
+                className: "maxWidth flex-center",
+                children: i.jsx(e, {
+                    onClick: j,
+                    children: "Down"
+                })
+            }), i.jsx(h, {
+                value: t,
+                onChange: r,
+                min: 1,
+                max: 200,
+                step: 1
+            }), i.jsx(d, {}), i.jsx("p", {
+                children: "Zoom"
+            }), i.jsx(h, {
+                onChange: m,
+                min: .2,
+                max: 10,
+                step: .1
+            })]
         })
-    })),
-    Ot = s(x),
-    u = o(c).attrs({
-        className: "maxAll"
+    },
+    Qi = () => {
+        const [t, r] = x.useState(!0), m = () => r(c => !c);
+        return w(g.Input.Keyboard.KeyCodes.SPACE, m), t ? i.jsx(G, {
+            children: i.jsxs(A, {
+                children: [i.jsx("h2", {
+                    children: "Cinematic Mode"
+                }), i.jsxs("div", {
+                    className: "flex-column",
+                    children: [i.jsx(e, {
+                        onClick: N,
+                        children: "Stop Focus Main Character"
+                    }), i.jsx(e, {
+                        onClick: F,
+                        children: "Start Focus Main Character"
+                    }), i.jsx(e, {
+                        onClick: v,
+                        children: "Show Main Character"
+                    }), i.jsx(e, {
+                        onClick: k,
+                        children: "Hide Main Character"
+                    }), i.jsx(e, {
+                        onClick: b,
+                        children: "Show Nametags"
+                    }), i.jsx(e, {
+                        onClick: y,
+                        children: "Hide Nametags"
+                    }), i.jsx(e, {
+                        onClick: _,
+                        children: "Show GUI"
+                    }), i.jsx(e, {
+                        onClick: H,
+                        children: "Hide GUI"
+                    }), i.jsx(V, {})]
+                })]
+            })
+        }) : null
+    },
+    G = C.div.attrs({
+        className: "maxAll flex"
     })`
-  overflow: hidden;
-  z-index: ${l.primaryContent};
-`,
-    f = o(e.div).attrs({
-        className: "maxAll"
-    })`
-  position: relative;
-`,
-    C = o(e.div)`
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  width: 70%;
-  max-width: 420px;
-  box-shadow: -13px 2px 54px 1px rgba(0, 0, 0, 0.41);
-  overflow: hidden;
+  left: 0;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+  padding-bottom: 75px;
+  z-index: ${S.overlayContent};
+`,
+    A = C(U)`
+  padding: 20px;
+  background: ${s.White};
+  border: 4px solid ${s.Black};
+  color: ${s.Black};
 `;
 export {
-    Ot as
+    Qi as
     default
 };

@@ -11,7 +11,7 @@ import {
     an as Z
 } from "./App-41.js";
 import {
-    G
+    G as W
 } from "./GetAssetPath.js";
 import {
     a as M,
@@ -23,13 +23,13 @@ import {
     d as it
 } from "./FixSpinePlugin.js";
 import {
-    U as ot
+    W as ot
 } from "./_index.js";
 import {
     C as at
 } from "./Interfaces.js";
 import {
-    D as W
+    D as G
 } from "./TutorialConsts.js";
 import "./Button.js";
 import "./polished.esm.js";
@@ -98,7 +98,7 @@ import "./FillRemainingSpace.js";
 import "./index-24.js";
 const rt = {
         imageId: "radar_arrow",
-        imageUrl: G("devices/waypoint/arrow.png")
+        imageUrl: W("devices/waypoint/arrow.png")
     },
     s = {
         NameTextFontSize: 20,
@@ -145,7 +145,7 @@ const rt = {
 var h = (t => (t.deviceLocation = "deviceLocation", t.player = "player", t.flag = "flag", t.ball = "ball", t))(h || {});
 const E = t => {
         if (t.options.flagColor === void 0) return;
-        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === W.flag && e.options.flagColor === t.options.flagColor && (e.pointedByWaypointDeviceID === void 0 || e.pointedByWaypointDeviceID === t.id));
+        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.flag && e.options.flagColor === t.options.flagColor && (e.pointedByWaypointDeviceID === void 0 || e.pointedByWaypointDeviceID === t.id));
         return i && (i.pointedByWaypointDeviceID = t.id), i
     },
     V = t => {
@@ -154,7 +154,7 @@ const E = t => {
             const e = J(t.trackedBallDeviceId);
             if (e) return e
         }
-        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === W.ball && e.options.identifier === t.options.ballId);
+        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.ball && e.options.identifier === t.options.ballId);
         return i && (t.trackedBallDeviceId = i.id), i
     },
     ct = t => {
@@ -231,7 +231,7 @@ const E = t => {
         }
         const e = i.skin.skinId.replace("character_", "");
         if (!e) return;
-        const o = G(`characters/spine/normalized_preview/${e}.png`);
+        const o = W(`characters/spine/normalized_preview/${e}.png`);
         ((r = t.icon) == null ? void 0 : r.options.imageUrl) !== o && t.parts.add.sprite({
             imageId: o,
             imageUrl: o,
@@ -245,14 +245,14 @@ const E = t => {
         })
     },
     mt = (t, i, e) => {
-        var F, L, O, z;
+        var U, L, O, z;
         const o = t.scene.cameras.main.zoom / y(),
             a = 999999999,
             r = e.camData.x + Math.cos(e.angle) * a,
             n = e.camData.y + Math.sin(e.angle) * a,
             l = Phaser.Geom.Intersects.GetLineToRectangle(new Phaser.Geom.Line(e.camData.x, e.camData.y, r, n), Y(t, e));
         if (!l[0]) {
-            (F = t.pointer) != null && F.view && (t.pointer.view.alpha = 0);
+            (U = t.pointer) != null && U.view && (t.pointer.view.alpha = 0);
             return
         }
         const c = l[0].x,
@@ -269,12 +269,12 @@ const E = t => {
         let d = Phaser.Math.Distance.Between(c, m, e.camData.x, e.camData.y) - A,
             g = e.camData.x + Math.cos(e.angle) * d,
             S = e.camData.y + Math.sin(e.angle) * d,
-            U = !0;
-        for (; U;) {
+            F = !0;
+        for (; F;) {
             d -= 1 / o, g = e.camData.x + Math.cos(e.angle) * d, S = e.camData.y + Math.sin(e.angle) * d;
             const T = new Phaser.Geom.Circle(c, m, A),
                 N = new Phaser.Geom.Rectangle(g - x / 2, S - R / 2, x, R);
-            U = Phaser.Geom.Intersects.CircleToRectangle(T, N)
+            F = Phaser.Geom.Intersects.CircleToRectangle(T, N)
         }
         if (t.nameText.view.x = g, t.nameText.view.y = S, p) {
             (z = t.icon) != null && z.view && (t.icon.view.setOrigin(s.CharacterPreviewOriginX, s.CharacterPreviewOriginY), t.icon.view.x = g, t.icon.view.y = S, t.icon.view.setScale(s.CharacterPreviewScale / o), t.icon.view.setAlpha(1));
@@ -311,7 +311,7 @@ const ft = (t, i) => {
     },
     gt = t => {
         if (t.options.flagColor === void 0) return;
-        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === W.flag && e.options.flagColor === t.options.flagColor && e.pointedByWaypointDeviceID === t.id);
+        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.flag && e.options.flagColor === t.options.flagColor && e.pointedByWaypointDeviceID === t.id);
         i && (i.pointedByWaypointDeviceID = void 0)
     };
 class Re extends K {
@@ -331,7 +331,7 @@ class Re extends K {
                 boxColor: e.boxColor,
                 content: {
                     icon: {
-                        image: G("devices/waypoint/icon.png"),
+                        image: W("devices/waypoint/icon.png"),
                         scale: .9
                     }
                 }

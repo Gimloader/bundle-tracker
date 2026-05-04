@@ -1,28 +1,28 @@
 import {
-    dS as Me,
-    by as x,
-    bw as Z,
-    aA as v,
+    dT as Me,
+    bz as x,
+    bx as Z,
+    aC as v,
     r as B,
-    x as E,
-    aB as ne,
-    az as Re,
-    aD as we,
+    z as E,
+    aD as ne,
+    aB as Re,
+    aF as we,
     _ as X,
     I as pe,
     B as Se,
     S as ye,
-    ai as Ae,
-    aj as be,
-    bF as Ne,
-    aL as ke,
-    ak as Ie,
-    bc as Pe,
-    al as Oe,
-    aI as ze,
-    aS as Le,
-    bd as Be,
-    am as Fe
+    ak as Ae,
+    al as be,
+    bG as Ne,
+    aN as ke,
+    am as Pe,
+    bd as Ie,
+    an as Oe,
+    aK as ze,
+    aU as Le,
+    be as Be,
+    ao as Fe
 } from "./_index.js";
 
 function H(a, o) {
@@ -84,7 +84,7 @@ function _(a, o) {
     return (a >>> o & 1) != 0
 }
 
-function P(a) {
+function I(a) {
     if (!a) throw new Error("Assertion error")
 }
 var T = function() {
@@ -236,7 +236,7 @@ var U = function() {
                 var h = this.getPenaltyScore();
                 h < c && (n = m, c = h), this.applyMask(m)
             }
-        P(0 <= n && n <= 7), this.mask = n, this.applyMask(n), this.drawFormatBits(n), this.isFunction = []
+        I(0 <= n && n <= 7), this.mask = n, this.applyMask(n), this.drawFormatBits(n), this.isFunction = []
     }
     return x(a, [{
         key: "getModule",
@@ -262,7 +262,7 @@ var U = function() {
         value: function(e) {
             for (var t = this.errorCorrectionLevel.formatBits << 3 | e, r = t, n = 0; n < 10; n++) r = r << 1 ^ (r >>> 9) * 1335;
             var i = (t << 10 | r) ^ 21522;
-            P(i >>> 15 == 0);
+            I(i >>> 15 == 0);
             for (var s = 0; s <= 5; s++) this.setFunctionModule(8, s, _(i, s));
             this.setFunctionModule(8, 7, _(i, 6)), this.setFunctionModule(8, 8, _(i, 7)), this.setFunctionModule(7, 8, _(i, 8));
             for (var l = 9; l < 15; l++) this.setFunctionModule(14 - l, 8, _(i, l));
@@ -276,7 +276,7 @@ var U = function() {
             if (!(this.version < 7)) {
                 for (var e = this.version, t = 0; t < 12; t++) e = e << 1 ^ (e >>> 11) * 7973;
                 var r = this.version << 12 | e;
-                P(r >>> 18 == 0);
+                I(r >>> 18 == 0);
                 for (var n = 0; n < 18; n++) {
                     var i = _(r, n),
                         s = this.size - 11 + n % 3,
@@ -324,7 +324,7 @@ var U = function() {
                         (C != u - i || y >= l) && d.push(S[C])
                     })
                 }, w = 0; w < c[0].length; w++) M(w);
-            return P(d.length == s), d
+            return I(d.length == s), d
         }
     }, {
         key: "drawCodewords",
@@ -340,7 +340,7 @@ var U = function() {
                         !this.isFunction[u][s] && t < e.length * 8 && (this.modules[u][s] = _(e[t >>> 3], 7 - (t & 7)), t++)
                     }
             }
-            P(t == e.length * 8)
+            I(t == e.length * 8)
         }
     }, {
         key: "applyMask",
@@ -412,7 +412,7 @@ var U = function() {
             }
             var C = this.size * this.size,
                 S = Math.ceil(Math.abs(d * 20 - C * 10) / C) - 1;
-            return P(0 <= S && S <= 9), e += S * a.PENALTY_N4, P(0 <= e && e <= 2568888), e
+            return I(0 <= S && S <= 9), e += S * a.PENALTY_N4, I(0 <= e && e <= 2568888), e
         }
     }, {
         key: "getAlignmentPatternPositions",
@@ -425,7 +425,7 @@ var U = function() {
         key: "finderPenaltyCountPatterns",
         value: function(e) {
             var t = e[1];
-            P(t <= this.size * 3);
+            I(t <= this.size * 3);
             var r = t > 0 && e[2] == t && e[3] == t * 3 && e[4] == t && e[5] == t;
             return (r && e[0] >= t * 4 && e[6] >= t ? 1 : 0) + (r && e[6] >= t * 4 && e[0] >= t ? 1 : 0)
         }
@@ -489,24 +489,24 @@ var U = function() {
                             var y = S.value;
                             d.push(y)
                         }
-                    } catch (I) {
-                        C.e(I)
+                    } catch (P) {
+                        C.e(P)
                     } finally {
                         C.f()
                     }
                 }
-            } catch (I) {
-                M.e(I)
+            } catch (P) {
+                M.e(P)
             } finally {
                 M.f()
             }
-            P(d.length == u);
+            I(d.length == u);
             var b = a.getNumDataCodewords(l, h) * 8;
-            P(d.length <= b), N(0, Math.min(4, b - d.length), d), N(0, (8 - d.length % 8) % 8, d), P(d.length % 8 == 0);
+            I(d.length <= b), N(0, Math.min(4, b - d.length), d), N(0, (8 - d.length % 8) % 8, d), I(d.length % 8 == 0);
             for (var p = 236; d.length < b; p ^= 253) N(p, 8, d);
             for (var z = []; z.length * 8 < d.length;) z.push(0);
-            return d.forEach(function(I, L) {
-                return z[L >>> 3] |= I << 7 - (L & 7)
+            return d.forEach(function(P, L) {
+                return z[L >>> 3] |= P << 7 - (L & 7)
             }), new a(l, h, z, i)
         }
     }, {
@@ -518,7 +518,7 @@ var U = function() {
                 var r = Math.floor(e / 7) + 2;
                 t -= (25 * r - 10) * r - 55, e >= 7 && (t -= 36)
             }
-            return P(208 <= t && t <= 29648), t
+            return I(208 <= t && t <= 29648), t
         }
     }, {
         key: "getNumDataCodewords",
@@ -566,7 +566,7 @@ var U = function() {
         value: function(e, t) {
             if (e >>> 8 || t >>> 8) throw new RangeError("Byte out of range");
             for (var r = 0, n = 7; n >= 0; n--) r = r << 1 ^ (r >>> 7) * 285, r ^= (t >>> n & 1) * e;
-            return P(r >>> 8 == 0), r
+            return I(r >>> 8 == 0), r
         }
     }]), a
 }();
@@ -742,7 +742,7 @@ var He = ["value", "size", "level", "bgColor", "fgColor", "includeMargin", "minV
             }, [e]),
             p = B.useState(!1),
             z = Re(p, 2),
-            I = z[1],
+            P = z[1],
             L = ve({
                 value: t,
                 level: s,
@@ -775,7 +775,7 @@ var He = ["value", "size", "level", "bgColor", "fgColor", "includeMargin", "minV
                 }), A && (D.globalAlpha = A.opacity), ee && D.drawImage(K, A.x + V, A.y + V, A.w, A.h)
             }
         }), B.useEffect(function() {
-            I(!1)
+            P(!1)
         }, [C]);
         var q = we({
                 height: n,
@@ -789,7 +789,7 @@ var He = ["value", "size", "level", "bgColor", "fgColor", "includeMargin", "minV
                 display: "none"
             },
             onLoad: function() {
-                I(!0)
+                P(!0)
             },
             ref: y,
             crossOrigin: A == null ? void 0 : A.crossOrigin
@@ -835,8 +835,8 @@ var Ge = ["value", "size", "level", "bgColor", "fgColor", "includeMargin", "minV
             b = C.numCells,
             p = C.calculatedImageSettings,
             z = y,
-            I = null;
-        w != null && p != null && (p.excavation != null && (z = de(y, p.excavation)), I = E.createElement("image", {
+            P = null;
+        w != null && p != null && (p.excavation != null && (z = de(y, p.excavation)), P = E.createElement("image", {
             href: w.src,
             height: p.h,
             width: p.w,
@@ -861,7 +861,7 @@ var Ge = ["value", "size", "level", "bgColor", "fgColor", "includeMargin", "minV
             fill: m,
             d: L,
             shapeRendering: "crispEdges"
-        }), I)
+        }), P)
     });
 fe.displayName = "QRCodeSVG";
 var We = {
@@ -933,7 +933,7 @@ const Ze = a => {
                 padding: a.paddingSM,
                 backgroundColor: a.colorWhite,
                 borderRadius: a.borderRadiusLG,
-                border: `${Ie(e)} ${t} ${r}`,
+                border: `${Pe(e)} ${t} ${r}`,
                 position: "relative",
                 overflow: "hidden",
                 [`& > ${o}-mask`]: {
@@ -990,7 +990,7 @@ var Je = function(a, o) {
 };
 const tt = a => {
     var o, e, t, r;
-    const [, n] = Pe(), {
+    const [, n] = Ie(), {
         value: i,
         type: s = "canvas",
         icon: l = "",
@@ -1009,7 +1009,7 @@ const tt = a => {
         statusRender: S
     } = a, y = Je(a, ["value", "type", "icon", "size", "iconSize", "color", "errorLevel", "status", "bordered", "onRefresh", "style", "className", "rootClassName", "prefixCls", "bgColor", "statusRender"]), {
         getPrefixCls: b
-    } = B.useContext(Oe), p = b("qrcode", k), [z, I, L] = Xe(p), V = {
+    } = B.useContext(Oe), p = b("qrcode", k), [z, P, L] = Xe(p), V = {
         src: l,
         x: void 0,
         y: void 0,
@@ -1030,7 +1030,7 @@ const tt = a => {
         imageSettings: l ? V : void 0
     }, Q), [q] = Be("QRCode");
     if (!i) return null;
-    const j = Fe(p, M, w, I, L, {
+    const j = Fe(p, M, w, P, L, {
             [`${p}-borderless`]: !f
         }),
         F = Object.assign(Object.assign({

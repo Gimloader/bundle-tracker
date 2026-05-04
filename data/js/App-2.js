@@ -1,31 +1,31 @@
 import {
-    U as b,
+    W as b,
     r as l,
     u as Q,
     i as Y,
-    f as j,
+    f as w,
     j as e,
     e as d,
     d as s,
     D as $,
     F as S,
-    x as y,
-    a as B,
+    z as y,
+    a as O,
     t as X,
-    M as O,
+    M as U,
     S as V,
     C as F,
     B as D,
-    aa as Z,
-    Z as J,
-    af as ee,
-    ah as te,
+    ac as J,
+    a0 as Z,
+    ah as ee,
+    aj as te,
     l as ie,
-    E as se,
-    cm as ne
+    H as se,
+    cn as ne
 } from "./_index.js";
 import {
-    E as w
+    E as j
 } from "./Sizes.js";
 import {
     A as _
@@ -120,7 +120,7 @@ const p = () => "limitedModes",
     W = A + H,
     v = .2,
     fe = t => {
-        const [i, a, o] = Q(!1), n = p(), r = l.useMemo(() => t.isProExperience && !Y() && n === x.limitedModes && !j(), [t.isProExperience, n]);
+        const [i, a, o] = Q(!1), n = p(), r = l.useMemo(() => t.isProExperience && !Y() && n === x.limitedModes && !w(), [t.isProExperience, n]);
         return e.jsxs(ge, {
             onMouseEnter: a,
             onMouseLeave: o,
@@ -142,7 +142,7 @@ const p = () => "limitedModes",
                 },
                 children: e.jsx(ye, {})
             }) : e.jsx("div", {}), e.jsxs(ve, {
-                children: [r ? e.jsx(we, {
+                children: [r ? e.jsx(je, {
                     animate: {
                         opacity: i ? 0 : 1
                     },
@@ -153,7 +153,7 @@ const p = () => "limitedModes",
                         duration: v
                     },
                     children: "Gimkit Pro Exclusive"
-                }) : null, !r && t.tag ? e.jsx(je, {
+                }) : null, !r && t.tag ? e.jsx(we, {
                     animate: {
                         opacity: i ? 0 : 1
                     },
@@ -233,7 +233,7 @@ const p = () => "limitedModes",
   overflow: hidden;
   align-items: flex-start;
 `,
-    we = s(g.div)`
+    je = s(g.div)`
   font-family: ${E.titleFont};
   text-transform: uppercase;
   font-size: 12px;
@@ -241,7 +241,7 @@ const p = () => "limitedModes",
   text-shadow: 1px 1px 1px ${d.Black};
   color: ${d.White};
 `,
-    je = s(g.div)`
+    we = s(g.div)`
   font-family: ${E.titleFont};
   text-transform: uppercase;
   background: rgba(255, 87, 34, 0.8);
@@ -267,7 +267,7 @@ const p = () => "limitedModes",
   font-family: ${b.ProductSans};
 `,
     ke = t => {
-        const [i, a] = l.useState(0), o = l.useRef(!1), n = l.useRef(null), [r] = oe(n), u = l.useMemo(() => t.verticalList ? 0 : i * W * -1 + w.sideMargin, [i, t.verticalList]), c = l.useMemo(() => !(i <= 0), [i]), f = () => {
+        const [i, a] = l.useState(0), o = l.useRef(!1), n = l.useRef(null), [r] = oe(n), u = l.useMemo(() => t.verticalList ? 0 : i * W * -1 + j.sideMargin, [i, t.verticalList]), c = l.useMemo(() => !(i <= 0), [i]), f = () => {
             o.current = !0
         }, m = () => {
             o.current = !1
@@ -277,7 +277,7 @@ const p = () => "limitedModes",
         });
         const M = l.useMemo(() => {
                 if (i + 1 === t.list.items.length) return !1;
-                const h = (r - w.sideMargin) / W;
+                const h = (r - j.sideMargin) / W;
                 return !(i >= t.list.items.length - h)
             }, [r, i, t.list.items.length]),
             N = () => {
@@ -297,7 +297,7 @@ const p = () => "limitedModes",
                         x: u
                     },
                     initial: {
-                        x: t.verticalList ? 0 : w.sideMargin
+                        x: t.verticalList ? 0 : j.sideMargin
                     },
                     transition: {
                         duration: .3,
@@ -513,11 +513,11 @@ const p = () => "limitedModes",
   margin-top: 5px;
 `,
     Re = t => {
-        const [i, a] = y.useState(!0), [o, n] = y.useState(null), [r, u] = y.useState(null), c = () => `${Z()}/pay-for-me/${r}`, f = () => {
+        const [i, a] = y.useState(!0), [o, n] = y.useState(null), [r, u] = y.useState(null), c = () => `${J()}/pay-for-me/${r}`, f = () => {
             re(c()), ce.success("Pay For Me link copied to clipboard!")
         };
         return y.useEffect(() => {
-            B({
+            O({
                 method: "GET",
                 url: "/api/billing/pay-for-me-link",
                 success: m => {
@@ -534,7 +534,7 @@ const p = () => "limitedModes",
                 },
                 both: () => a(!1)
             })
-        }, []), e.jsx(O, {
+        }, []), e.jsx(U, {
             open: t.showPayForMeModal,
             onCancel: t.onCancel,
             footer: null,
@@ -552,16 +552,16 @@ const p = () => "limitedModes",
                     size: "large"
                 })
             }) : e.jsxs(Ge, {
-                children: [e.jsx(Oe, {
+                children: [e.jsx(Ue, {
                     onClick: t.onCancel
-                }), e.jsxs(Ue, {
+                }), e.jsxs(Be, {
                     children: [e.jsx("span", {
                         style: {
                             fontWeight: S.UltraBold
                         },
                         children: "Pay For Me"
                     }), " ", "link"]
-                }), e.jsxs(Be, {
+                }), e.jsxs(Oe, {
                     children: ["Send this link to someone to allow them to pay for your", " ", F, " Pro subscription. Once they pay, you'll get one full year of ", F, " Pro and we'll make sure autorenew is off so they aren't charged again.", e.jsx("br", {}), " ", e.jsx("br", {}), "One more thing: once they pay for your subscription, we'll send you an email letting you know!"]
                 }), e.jsx($, {}), !o && e.jsxs("div", {
                     className: "flex",
@@ -589,14 +589,14 @@ const p = () => "limitedModes",
   font-family: ${b.SFPro};
   padding: 30px;
 `,
-    Ue = s.div`
+    Be = s.div`
   font-size: 32px;
 `,
-    Be = s.div`
+    Oe = s.div`
   font-size: 17px;
   margin-top: 14px;
 `,
-    Oe = s.i.attrs({
+    Ue = s.i.attrs({
         className: "fal fa-times"
     })`
   position: absolute;
@@ -619,7 +619,7 @@ const p = () => "limitedModes",
                 paddingBottom: 30
             },
             children: [e.jsx(_, {
-                to: J,
+                to: Z,
                 children: e.jsx(D, {
                     type: "primary",
                     size: "large",
@@ -628,7 +628,7 @@ const p = () => "limitedModes",
                         width: 380,
                         height: 70
                     },
-                    children: j() ? "Upgrade to Gimkit Pro early" : "Upgrade to Gimkit Pro"
+                    children: w() ? "Upgrade to Gimkit Pro early" : "Upgrade to Gimkit Pro"
                 })
             }), null, e.jsx($, {
                 style: {
@@ -675,7 +675,7 @@ const P = s(_)`
     _e = t => {
         const {
             copy: i
-        } = t, a = () => i && i.title ? i.title : j() ? e.jsx(e.Fragment, {
+        } = t, a = () => i && i.title ? i.title : w() ? e.jsx(e.Fragment, {
             children: "Your trial ends soon."
         }) : p() === x.limitedGames ? e.jsx(e.Fragment, {
             children: "Upgrade to host unlimited games"
@@ -696,7 +696,7 @@ const P = s(_)`
                 style: {
                     textAlign: "left"
                 },
-                children: [j() ? `After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${r}.` : `You're on the free version of Gimkit, which limits you to ${r}.`, e.jsx("br", {}), " ", e.jsx("br", {}), n === x.limitedModes ? "Want access to every single mode?" : "Want to host unlimited games?", " ", "Upgrade to Gimkit Pro! It’s just", " ", L({
+                children: [w() ? `After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${r}.` : `You're on the free version of Gimkit, which limits you to ${r}.`, e.jsx("br", {}), " ", e.jsx("br", {}), n === x.limitedModes ? "Want access to every single mode?" : "Want to host unlimited games?", " ", "Upgrade to Gimkit Pro! It’s just", " ", L({
                     simple: !0
                 }), " a month and you’ll be helping support us, an independent small business.", n === x.limitedModes ? e.jsxs(e.Fragment, {
                     children: [e.jsx("br", {}), " ", e.jsx("br", {}), "Upgrade to get access to these game modes and more:"]
@@ -768,7 +768,7 @@ const P = s(_)`
     Xe = () => {
         const [t, i] = l.useState([]);
         return l.useEffect(() => {
-            B({
+            O({
                 url: "/api/experiences",
                 data: {
                     mode: "liveGame"
@@ -792,7 +792,7 @@ const P = s(_)`
                     }), i(o)
                 }
             })
-        }, []), t.length ? e.jsx(U, {
+        }, []), t.length ? e.jsx(B, {
             children: e.jsx(ke, {
                 list: {
                     _id: "_",
@@ -804,7 +804,7 @@ const P = s(_)`
                 forceAllSelected: !0,
                 forcePremiumBadge: !0
             })
-        }) : e.jsx(U, {
+        }) : e.jsx(B, {
             children: e.jsx("div", {
                 style: {
                     height: 180
@@ -812,12 +812,12 @@ const P = s(_)`
             })
         })
     },
-    U = s.div.attrs({
+    B = s.div.attrs({
         className: "maxWidth"
     })`
   margin-top: ${()=>-K+25}px;
 `,
-    k = w.sideMargin,
+    k = j.sideMargin,
     ct = t => {
         l.useEffect(() => {
             t.visible && t.showModes && te("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap")
@@ -836,7 +836,7 @@ const P = s(_)`
             theme: {
                 algorithm: ne.defaultAlgorithm
             },
-            children: e.jsx(O, {
+            children: e.jsx(U, {
                 footer: null,
                 width: 850,
                 style: {

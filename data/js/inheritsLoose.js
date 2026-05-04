@@ -1,5 +1,5 @@
 import {
-    d8 as e
+    dc as e
 } from "./_index.js";
 
 function p(o, t) {

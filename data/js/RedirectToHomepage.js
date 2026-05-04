@@ -1,14 +1,14 @@
 import {
-    a3 as a,
-    i as o,
-    P as s,
-    k as t,
-    cs as r
+    a5 as a,
+    i as t,
+    U as o,
+    k as s,
+    ct as r
 } from "./_index.js";
 import {
     N as i
 } from "./NavigateTo.js";
-const e = () => a() ? o() ? s : t : "/",
+const e = () => a() ? t() ? o : s : "/",
     m = () => {
         i(e())
     },

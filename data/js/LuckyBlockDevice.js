@@ -21,7 +21,7 @@ import {
     p as y
 } from "./playSound.js";
 import {
-    ar as w
+    at as w
 } from "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";

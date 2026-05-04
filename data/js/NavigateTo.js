@@ -1,8 +1,8 @@
 import {
-    cs as s
+    ct as t
 } from "./_index.js";
 const a = o => {
-    s.push(o)
+    t.push(o)
 };
 export {
     a as N

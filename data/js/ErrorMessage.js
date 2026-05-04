@@ -1,6 +1,6 @@
 import {
     j as e,
-    a4 as t
+    a6 as t
 } from "./_index.js";
 const o = r => r.error ? e.jsx(t, {
     message: "Error",

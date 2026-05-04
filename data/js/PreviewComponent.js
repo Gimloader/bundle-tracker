@@ -1,8 +1,8 @@
 import {
     r as t,
-    ar as m,
+    at as m,
     j as l,
-    U as y
+    W as y
 } from "./_index.js";
 import {
     G as _,
@@ -28,7 +28,7 @@ import "./clsx.m.js";
 import "./Tooltip.js";
 import "./howler.js";
 import "./GetAssetPath.js";
-const B = s => {
+const H = s => {
     const [r, f] = t.useState(m.shuffle(s.questions.map(e => e._id))), [n, w] = t.useState(0), [a, p] = t.useState({
         ...s.questions.find(e => e._id === r[n]),
         answers: m.shuffle(s.questions.find(e => e._id === r[n]).answers)
@@ -86,6 +86,6 @@ const B = s => {
     })
 };
 export {
-    B as
+    H as
     default
 };

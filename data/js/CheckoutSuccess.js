@@ -1,15 +1,15 @@
 import {
-    ac as f,
-    a3 as c,
+    ae as f,
+    a5 as c,
     f as h,
-    W as m,
+    Y as m,
     M as s,
     a as x,
     l as b,
-    $ as d,
-    a2 as v,
+    a1 as d,
+    a4 as v,
     t as S,
-    V as k,
+    X as k,
     r as w,
     i as y,
     j as e,
@@ -17,7 +17,7 @@ import {
     F as j,
     d as l,
     e as a,
-    U
+    W as U
 } from "./_index.js";
 import {
     o as A
@@ -80,7 +80,7 @@ const P = "An error ocurred on our end while upgrading your account. Please cont
             onError: p
         })
     },
-    H = A(() => {
+    I = A(() => {
         const t = k("session_id");
         w.useEffect(() => {
             if (y()) {
@@ -137,6 +137,6 @@ const P = "An error ocurred on our end while upgrading your account. Please cont
   color: ${a.Black};
 `;
 export {
-    H as
+    I as
     default
 };

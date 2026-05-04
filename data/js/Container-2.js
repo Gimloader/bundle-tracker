@@ -5,20 +5,20 @@ import {
     D as w,
     d as i,
     l as y,
-    a1 as r,
+    a3 as r,
     t as j,
     a as C,
     B,
     e as l,
     f as D,
     S as N,
-    a5 as z,
-    $ as F,
-    i as U,
-    a3 as W,
-    V as M,
+    a7 as W,
+    a1 as F,
+    i as z,
+    a5 as M,
+    X as U,
     T as L,
-    U as R
+    W as R
 } from "./_index.js";
 import {
     o as P
@@ -38,16 +38,16 @@ import {
     l as G
 } from "./stripe.esm.js";
 import {
-    g as V,
-    a as q,
+    g as q,
+    a as H,
     b as I,
     c as T,
-    d as H,
-    e as J,
-    f as Q
+    d as V,
+    e as X,
+    f as J
 } from "./price.js";
 import {
-    N as X
+    N as Q
 } from "./NavigateTo.js";
 const E = () => !1,
     Y = P(() => {
@@ -150,18 +150,18 @@ const E = () => !1,
                     method: "POST",
                     data: {
                         plan: s.planId,
-                        customPriceId: s.planId === r.pro ? V() : q()
+                        customPriceId: s.planId === r.pro ? q() : H()
                     },
                     success: async h => {
-                        const $ = h;
+                        const A = h;
                         let x;
                         try {
                             if (x = await d.redirectToCheckout({
-                                    sessionId: $.id
+                                    sessionId: A.id
                                 }), x && x.error) throw x.error
-                        } catch (A) {
+                        } catch ($) {
                             n(!1), j({
-                                e: A,
+                                e: $,
                                 default: {
                                     title: "Connection Error",
                                     content: "An error ocurred. Please try again later"
@@ -293,7 +293,7 @@ const E = () => !1,
                 size: "large"
             }), n ? t.jsx(k, {}) : null]
         }) : t.jsxs(ce, {
-            children: [t.jsx(z, {
+            children: [t.jsx(W, {
                 to: F,
                 children: t.jsx("img", {
                     src: "/client/img/svgLogo.svg",
@@ -312,7 +312,7 @@ const E = () => !1,
                     children: [t.jsx(S, {
                         title: "Annually",
                         description: t.jsxs("span", {
-                            children: [H(), " a year", t.jsx("br", {}), "That works out to ", J({
+                            children: [V(), " a year", t.jsx("br", {}), "That works out to ", X({
                                 simple: !0
                             }), " a month"]
                         }),
@@ -323,7 +323,7 @@ const E = () => !1,
                     }), t.jsx(S, {
                         title: "Monthly",
                         description: t.jsxs("span", {
-                            children: [Q({
+                            children: [J({
                                 simple: !0
                             }), " a month"]
                         }),
@@ -371,12 +371,12 @@ const E = () => !1,
             navigation: e
         } = a.useContext(p);
         a.useEffect(() => {
-            if (U()) {
-                X(F);
+            if (z()) {
+                Q(F);
                 return
             }
-            W() && le(), K();
-            const s = M("coupon");
+            M() && le(), K();
+            const s = U("coupon");
             s && de(s)
         }, []);
         const n = () => {

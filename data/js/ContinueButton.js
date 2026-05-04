@@ -1,7 +1,7 @@
 import {
     o as t,
     m as u,
-    aZ as f,
+    a_ as f,
     r as I,
     j as E,
     B as N
@@ -114,12 +114,12 @@ const g = {
         loginError: G,
         redirectUri: W,
         classJoiningId: Y,
-        classJoiningName: Z,
-        classJoiningTeacherName: H
+        classJoiningName: H,
+        classJoiningTeacherName: V
     } = g;
 class a {
     constructor() {
-        this.currentStage = D, this.emailSignInBlocked = U, this.creatingAccount = M, this.loggingIn = $, this.updatingAccountInformation = F, this.loginError = G, this.redirectUri = W, this.classJoiningId = Y, this.classJoiningName = Z, this.classJoiningTeacherName = H, this.reset = () => {
+        this.currentStage = D, this.emailSignInBlocked = U, this.creatingAccount = M, this.loggingIn = $, this.updatingAccountInformation = F, this.loginError = G, this.redirectUri = W, this.classJoiningId = Y, this.classJoiningName = H, this.classJoiningTeacherName = V, this.reset = () => {
             Object.keys(g).forEach(r => this[r] = g[r])
         }, u(this)
     }
@@ -135,11 +135,11 @@ n([t], a.prototype, "classJoiningId");
 n([t], a.prototype, "classJoiningName");
 n([t], a.prototype, "classJoiningTeacherName");
 n([f], a.prototype, "reset");
-const V = {
+const X = {
         login: new o,
         navigation: new a
     },
-    K = I.createContext(V),
+    K = I.createContext(X),
     Q = T(e => E.jsx(N, {
         disabled: e.disabled,
         size: e.size || "middle",
@@ -152,5 +152,5 @@ const V = {
         children: e.children
     }));
 export {
-    Q as C, m as S, K as a, h as i, V as s
+    Q as C, m as S, K as a, h as i, X as s
 };

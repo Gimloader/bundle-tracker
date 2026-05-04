@@ -1,19 +1,19 @@
 import {
     d as s,
     e as y,
-    U as A,
-    F as L,
-    x as r,
-    n as W,
-    V as w,
-    ac as $,
+    W,
+    F as A,
+    z as r,
+    q as L,
+    X as w,
+    ae as $,
     a as P,
     j as e,
     T as I,
     D as R,
     S as D,
     t as l,
-    C as n,
+    C as o,
     B as j
 } from "./_index.js";
 import {
@@ -31,7 +31,7 @@ const V = s.div.attrs({
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/client/img/signup/funky-lines.png') repeat 0 0;
 `,
-    K = s.div.attrs({
+    q = s.div.attrs({
         className: "scroll-y"
     })`
   background: ${y.White};
@@ -41,13 +41,13 @@ const V = s.div.attrs({
   width: 670px;
   max-width: 90%;
   max-height: 90%;
-  font-family: ${A.SFPro};
+  font-family: ${W.SFPro};
   color: ${y.Black};
 `,
-    O = s.div.attrs({
+    K = s.div.attrs({
         className: "maxWidth flex flex-column vc"
     })``,
-    q = s.img.attrs({
+    O = s.img.attrs({
         src: "/client/img/svgLogo.svg"
     })`
   height: 35px;
@@ -55,13 +55,13 @@ const V = s.div.attrs({
     G = s.div.attrs({
         className: "maxWidth flex flex-column vc"
     })``,
-    o = {
+    n = {
         TopHeader: s.div`
     font-size: 17px;
   `,
         Title: s.div`
     font-size: 36px;
-    font-weight: ${L.Bold};
+    font-weight: ${A.Bold};
   `,
         Description: s.div`
     margin-top: 16px;
@@ -76,7 +76,7 @@ const V = s.div.attrs({
         let [g, v] = r.useState(!1), [f, a] = r.useState(!0), [i, S] = r.useState(""), [T, b] = r.useState(""), [C, F] = r.useState(!1), [h, k] = r.useState(null);
         const {
             id: m
-        } = W();
+        } = L();
         r.useEffect(() => {
             H();
             const t = w("session_id");
@@ -135,15 +135,15 @@ const V = s.div.attrs({
                             encryptedUserId: m
                         },
                         success: async d => {
-                            const U = d;
+                            const z = d;
                             let u;
                             try {
                                 if (u = await c.redirectToCheckout({
-                                        sessionId: U.id
+                                        sessionId: z.id
                                     }), u && u.error) throw u.error
-                            } catch (z) {
+                            } catch (U) {
                                 a(!1), l({
-                                    e: z,
+                                    e: U,
                                     default: {
                                         title: "Connection Error",
                                         content: "An error ocurred. Please try again later"
@@ -170,14 +170,14 @@ const V = s.div.attrs({
                     style: {
                         fontSize: 20
                     },
-                    children: [i, " has already been upgraded to ", n, " Pro."]
+                    children: [i, " has already been upgraded to ", o, " Pro."]
                 }) : t && g && C ? e.jsxs(e.Fragment, {
-                    children: [e.jsxs(o.TopHeader, {
+                    children: [e.jsxs(n.TopHeader, {
                         children: [i, " has been upgraded to"]
-                    }), e.jsxs(o.Title, {
-                        children: [n, " Pro!"]
-                    }), e.jsxs(o.Description, {
-                        children: ["We charged your card $59.88 and upgraded ", i, " to", " ", n, " Pro for one year. This was a one-time charge and auto-renew is off."]
+                    }), e.jsxs(n.Title, {
+                        children: [o, " Pro!"]
+                    }), e.jsxs(n.Description, {
+                        children: ["We charged your card $59.88 and upgraded ", i, " to", " ", o, " Pro for one year. This was a one-time charge and auto-renew is off."]
                     }), h && e.jsx("div", {
                         style: {
                             marginTop: 30
@@ -194,12 +194,12 @@ const V = s.div.attrs({
                         })
                     })]
                 }) : e.jsxs(e.Fragment, {
-                    children: [e.jsxs(o.TopHeader, {
-                        children: ["Purchase ", n, " Pro for"]
-                    }), e.jsxs(o.Title, {
+                    children: [e.jsxs(n.TopHeader, {
+                        children: ["Purchase ", o, " Pro for"]
+                    }), e.jsxs(n.Title, {
                         children: [i, " ", T]
-                    }), e.jsxs(o.Description, {
-                        children: ["Make a one-time $59.88 payment for ", i, " to receive one year of ", n, " Pro. Auto-renew is off, which means you will only be charged once."]
+                    }), e.jsxs(n.Description, {
+                        children: ["Make a one-time $59.88 payment for ", i, " to receive one year of ", o, " Pro. Auto-renew is off, which means you will only be charged once."]
                     }), e.jsx("div", {
                         style: {
                             marginTop: 30
@@ -212,7 +212,7 @@ const V = s.div.attrs({
                                 width: 400,
                                 height: 60
                             },
-                            children: ["Purchase ", n, " Pro for ", i]
+                            children: ["Purchase ", o, " Pro for ", i]
                         })
                     })]
                 })
@@ -221,9 +221,9 @@ const V = s.div.attrs({
             children: [e.jsx(I, {
                 title: "Pay For Me"
             }), e.jsx(V, {
-                children: e.jsxs(K, {
-                    children: [e.jsxs(O, {
-                        children: [e.jsx(q, {}), e.jsx(R, {})]
+                children: e.jsxs(q, {
+                    children: [e.jsxs(K, {
+                        children: [e.jsx(O, {}), e.jsx(R, {})]
                     }), e.jsx(G, {
                         children: f ? e.jsx(D, {
                             size: "large",

@@ -1,8 +1,8 @@
 import {
-    x as j,
+    z as j,
     r as g,
-    b9 as W,
-    bg as I
+    ba as W,
+    bh as I
 } from "./_index.js";
 
 function x(l) {
@@ -109,9 +109,9 @@ Please note that this will cause animations to break in Internet Explorer 11 and
         },
         none: null
     },
-    Y = O,
+    z = O,
     y = "elevator",
-    z = "none",
+    Y = "none",
     N = function(e, r) {
         for (var t = 0; t < r.length; t++)
             if (e(r[t], t, r)) return r[t]
@@ -210,7 +210,7 @@ function Q(l) {
                 delay: this.convertTimingProp("delay"),
                 staggerDurationBy: this.convertTimingProp("staggerDurationBy"),
                 staggerDelayBy: this.convertTimingProp("staggerDelayBy"),
-                appearAnimation: this.convertAnimationProp(n.appearAnimation, Y),
+                appearAnimation: this.convertAnimationProp(n.appearAnimation, z),
                 enterAnimation: this.convertAnimationProp(n.enterAnimation, O),
                 leaveAnimation: this.convertAnimationProp(n.leaveAnimation, X),
                 delegated: {}
@@ -232,7 +232,7 @@ function Q(l) {
         }, i.prototype.convertAnimationProp = function(n, o) {
             switch (typeof n > "u" ? "undefined" : J(n)) {
                 case "boolean":
-                    return o[n ? y : z];
+                    return o[n ? y : Y];
                 case "string": {
                     var a = Object.keys(o);
                     return a.indexOf(n) === -1 ? o[y] : o[n]
@@ -292,15 +292,15 @@ var et = function(e) {
             o = n.top,
             a = n.left,
             d = n.right,
-            p = n.bottom,
-            h = n.width,
+            h = n.bottom,
+            p = n.width,
             f = n.height;
         return {
             top: o - s.top,
             left: a - s.left,
             right: s.right - d,
-            bottom: s.bottom - p,
-            width: h,
+            bottom: s.bottom - h,
+            width: p,
             height: f
         }
     },
@@ -316,11 +316,11 @@ var et = function(e) {
             o = t || n,
             a = i || n,
             d = s(r),
-            p = {
+            h = {
                 top: d.top - a.top,
                 left: d.left - a.left
             };
-        return [o.left - p.left, o.top - p.top]
+        return [o.left - h.left, o.top - h.top]
     },
     nt = function(e, r) {
         var t = e.domNode,
@@ -328,9 +328,9 @@ var et = function(e) {
         if (!(!t || !i)) {
             var s = window.getComputedStyle(t),
                 n = ["margin-top", "margin-left", "margin-right"],
-                o = n.reduce(function(p, h) {
-                    var f, m = s.getPropertyValue(h);
-                    return c({}, p, (f = {}, f[h] = Number(m.replace("px", "")), f))
+                o = n.reduce(function(h, p) {
+                    var f, m = s.getPropertyValue(p);
+                    return c({}, h, (f = {}, f[p] = Number(m.replace("px", "")), f))
                 }, {}),
                 a = r === "bottom" ? i.top - i.height : i.top,
                 d = {
@@ -361,12 +361,12 @@ var et = function(e) {
             var o = n.height,
                 a = i(s).height,
                 d = o - a,
-                p = {
+                h = {
                     height: d > 0 ? d + "px" : "0"
                 };
             v({
                 domNode: r,
-                styles: p
+                styles: h
             })
         }
     },
@@ -423,19 +423,19 @@ var st = function(l) {
                 !d || !(d instanceof HTMLElement) || (window.getComputedStyle(d).position === "static" && (d.style.position = "relative", K()), t.parentData.domNode = d)
             }, t.runAnimation = function() {
                 var a = t.state.children.filter(t.doesChildNeedToBeAnimated),
-                    d = a.map(function(p) {
-                        return t.computeInitialStyles(p)
+                    d = a.map(function(h) {
+                        return t.computeInitialStyles(h)
                     });
-                a.forEach(function(p, h) {
-                    t.remainingAnimations += 1, t.childrenToAnimate.push(u(p)), t.animateChild(p, h, d[h])
+                a.forEach(function(h, p) {
+                    t.remainingAnimations += 1, t.childrenToAnimate.push(u(h)), t.animateChild(h, p, d[p])
                 }), typeof t.props.onStartAll == "function" && t.callChildrenHook(t.props.onStartAll)
             }, t.doesChildNeedToBeAnimated = function(a) {
                 if (!u(a)) return !1;
                 var d = t.getChildData(u(a)),
-                    p = d.domNode,
-                    h = d.boundingBox,
+                    h = d.domNode,
+                    p = d.boundingBox,
                     f = t.parentData.boundingBox;
-                if (!p) return !1;
+                if (!h) return !1;
                 var m = t.props,
                     S = m.appearAnimation,
                     H = m.enterAnimation,
@@ -446,8 +446,8 @@ var st = function(l) {
                     k = a.leaving && T;
                 if (M || _ || k) return !0;
                 var B = C({
-                        childDomNode: p,
-                        childBoundingBox: h,
+                        childDomNode: h,
+                        childBoundingBox: p,
                         parentBoundingBox: f,
                         getPosition: F
                     }),
@@ -487,11 +487,11 @@ var st = function(l) {
                     return m === u(o)
                 }, t);
                 if (!(!d || !i.props.leaveAnimation)) {
-                    var p = c({}, o, {
+                    var h = c({}, o, {
                             leaving: !0
                         }),
-                        h = a + n;
-                    s.splice(h, 0, p), n += 1
+                        p = a + n;
+                    s.splice(p, 0, h), n += 1
                 }
             }), s
         }, e.prototype.prepForAnimation = function() {
@@ -505,8 +505,8 @@ var st = function(l) {
                     return d.leaving
                 });
                 a.forEach(function(d) {
-                    var p = t.getChildData(u(d));
-                    !t.isAnimationDisabled(t.props) && p.domNode && p.domNode.disabled && V(), p.boundingBox && nt(p, t.props.verticalAlignment)
+                    var h = t.getChildData(u(d));
+                    !t.isAnimationDisabled(t.props) && h.domNode && h.domNode.disabled && V(), h.boundingBox && nt(h, t.props.verticalAlignment)
                 }), n && this.heightPlaceholderData.domNode && it({
                     domNode: this.heightPlaceholderData.domNode,
                     parentData: this.parentData,
@@ -514,10 +514,10 @@ var st = function(l) {
                 })
             }
             this.state.children.forEach(function(d) {
-                var p = t.getChildData(u(d)),
-                    h = p.domNode;
-                h && !d.entering && !d.leaving && v({
-                    domNode: h,
+                var h = t.getChildData(u(d)),
+                    p = h.domNode;
+                p && !d.entering && !d.leaving && v({
+                    domNode: p,
                     styles: {
                         transition: ""
                     }
@@ -646,9 +646,9 @@ var st = function(l) {
                     getPosition: this.props.getPosition
                 }),
                 d = a[0],
-                p = a[1];
+                h = a[1];
             return {
-                transform: "translate(" + d + "px, " + p + "px)"
+                transform: "translate(" + d + "px, " + h + "px)"
             }
         }, e.prototype.isAnimationDisabled = function(t) {
             return at || t.disableAllAnimations || t.duration === 0 && t.delay === 0 && t.staggerDurationBy === 0 && t.staggerDelayBy === 0
@@ -708,13 +708,13 @@ var st = function(l) {
                 a = i.maintainContainerHeight,
                 d = this.childrenWithRefs();
             if (o && a && d.push(this.createHeightPlaceholder()), !s) return d;
-            var p = c({}, n, {
+            var h = c({}, n, {
                 children: d,
                 ref: function(f) {
                     t.parentData.domNode = f
                 }
             });
-            return g.createElement(s, p)
+            return g.createElement(s, h)
         }, e
     }(g.Component),
     dt = Q(st);

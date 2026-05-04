@@ -1,21 +1,21 @@
 import {
     j as o,
     e as n,
-    U as S,
+    W as S,
     d as t,
     F as v,
     r as u,
-    n as k,
-    V as R,
-    a3 as g,
+    q as k,
+    X as R,
+    a5 as g,
     a as j,
     T as w,
     S as T,
     B as y,
     M as m,
-    W as I,
+    Y as I,
     t as N,
-    $
+    a1 as $
 } from "./_index.js";
 import {
     N as A
@@ -27,7 +27,7 @@ import {
     S as E
 } from "./App-4.js";
 import {
-    C as U
+    C as B
 } from "./Centered.js";
 import "./Shortcut.js";
 import "./Names.js";
@@ -52,7 +52,7 @@ import "./useWarningOnMountInDevelopment.js";
 import "./index-10.js";
 import "./index-5.js";
 import "./move.js";
-const B = h => {
+const U = h => {
         const {
             groupName: c,
             groupColor: i,
@@ -68,12 +68,12 @@ const B = h => {
                     style: {
                         background: i
                     }
-                }), o.jsx(D, {
+                }), o.jsx(q, {
                     children: c
-                }), o.jsx(L, {
+                }), o.jsx(D, {
                     children: f
-                }), o.jsxs(P, {
-                    children: [o.jsxs(q, {
+                }), o.jsxs(L, {
+                    children: [o.jsxs(P, {
                         children: [o.jsx("div", {
                             children: o.jsx(M, {
                                 className: l,
@@ -82,7 +82,7 @@ const B = h => {
                                 }
                             })
                         }), o.jsx("div", {
-                            children: o.jsx(G, {
+                            children: o.jsx(Y, {
                                 children: x
                             })
                         })]
@@ -115,18 +115,18 @@ const B = h => {
   width: 115px;
   border-radius: 8px;
 `,
-    D = t.div`
+    q = t.div`
   margin-top: 10px;
   text-align: center;
   font-size: 50px;
   font-weight: ${v.UltraBold};
 `,
-    L = t.div`
+    D = t.div`
   font-size: 22px;
   margin-top: -4px;
   color: rgba(0, 0, 0, 0.7);
 `,
-    P = t.div.attrs({
+    L = t.div.attrs({
         className: "maxWidth"
     })`
   background: ${n.White};
@@ -137,13 +137,13 @@ const B = h => {
   border-color: ${n.BorderGray};
   margin-top: 25px;
 `,
-    q = t.div.attrs({
+    P = t.div.attrs({
         className: "flex maxWidth vc"
     })``,
     M = t.i`
   font-size: 40px;
 `,
-    G = t.div`
+    Y = t.div`
   margin-left: 30px;
   font-size: 18px;
 `,
@@ -292,7 +292,7 @@ const B = h => {
                 return o.jsxs(o.Fragment, {
                     children: [o.jsx(w, {
                         title: e.name
-                    }), o.jsx(B, {
+                    }), o.jsx(U, {
                         groupName: e.name,
                         groupColor: e.color,
                         groupCreator: e.creator,
@@ -303,21 +303,21 @@ const B = h => {
                     })]
                 })
             };
-        return o.jsxs(H, {
+        return o.jsxs(G, {
             children: [o.jsx(E, {
                 includeSpacer: !0
-            }), o.jsx(Y, {
+            }), o.jsx(H, {
                 children: b()
             })]
         })
     },
-    H = t.div.attrs({
+    G = t.div.attrs({
         className: "maxWidth flex-column"
     })`
   background: ${n.Snow};
   flex: 1;
 `,
-    Y = t(U)`
+    H = t(B)`
   flex: 1;
 `;
 export {

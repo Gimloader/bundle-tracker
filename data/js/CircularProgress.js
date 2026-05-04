@@ -1,6 +1,6 @@
 import {
     r as i,
-    aB as w,
+    aD as w,
     _ as x
 } from "./_index.js";
 import {
@@ -126,10 +126,10 @@ var a = 44,
             strokeWidth: s
         })))
     });
-const B = C(z, {
+const F = C(z, {
     name: "MuiCircularProgress",
     flip: !1
 })(E);
 export {
-    B as C
+    F as C
 };

@@ -1,12 +1,12 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/App-64.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/useQuery.js", "assets/index-1.js", "assets/Centered.js", "assets/index-2.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/AccessibleAnchor.js", "assets/TrackEvent.js", "assets/TrackPostHogEvent.js", "assets/index-3.js", "assets/getCloudinaryUrl.js", "assets/FontAwesomeIcon.js", "assets/CircularProgress.js", "assets/clsx.m.js", "assets/App-65.js", "assets/AnimatedBackground-1.js", "assets/App-4.js", "assets/Shortcut.js", "assets/Names.js", "assets/mobxreact.esm.js", "assets/index-6.js", "assets/App-2.js", "assets/Sizes.js", "assets/motion.js", "assets/price.js", "assets/index-4.js", "assets/context.js", "assets/StarOutlined.js", "assets/NavigateTo.js", "assets/index-15.js", "assets/colors.js", "assets/useWarningOnMountInDevelopment.js", "assets/index-10.js", "assets/index-5.js", "assets/move.js", "assets/App-5.js", "assets/index-24.js", "assets/GetAssetPath.js", "assets/index-14.js", "assets/EditOutlined.js", "assets/styleChecker.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/MapStyle.js", "assets/SeasonTicketInlineUpsell.js", "assets/SeasonTicketName.js", "assets/OwnsSeasonTicket.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/App-65.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/useQuery.js", "assets/index-1.js", "assets/Centered.js", "assets/index-2.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/AccessibleAnchor.js", "assets/TrackEvent.js", "assets/TrackPostHogEvent.js", "assets/index-3.js", "assets/getCloudinaryUrl.js", "assets/FontAwesomeIcon.js", "assets/CircularProgress.js", "assets/clsx.m.js", "assets/App-66.js", "assets/AnimatedBackground-1.js", "assets/App-4.js", "assets/Shortcut.js", "assets/Names.js", "assets/mobxreact.esm.js", "assets/index-6.js", "assets/App-2.js", "assets/Sizes.js", "assets/motion.js", "assets/price.js", "assets/index-4.js", "assets/context.js", "assets/StarOutlined.js", "assets/NavigateTo.js", "assets/index-15.js", "assets/colors.js", "assets/useWarningOnMountInDevelopment.js", "assets/index-10.js", "assets/index-5.js", "assets/move.js", "assets/App-5.js", "assets/index-24.js", "assets/GetAssetPath.js", "assets/index-14.js", "assets/EditOutlined.js", "assets/styleChecker.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/MapStyle.js", "assets/SeasonTicketInlineUpsell.js", "assets/SeasonTicketName.js", "assets/OwnsSeasonTicket.js"]))) => i.map(i => d[i]);
 import {
     j as e,
     d as a,
-    U as b,
-    dT as ce,
+    W as b,
+    dU as ce,
     F as M,
-    b6 as de,
-    y as q,
+    b7 as de,
+    A as Q,
     u as x,
     r as l,
     B as u,
@@ -14,17 +14,17 @@ import {
     M as L,
     a as y,
     t as W,
-    E as me,
-    cm as pe,
-    s as he,
-    G as xe,
-    H as O,
+    H as me,
+    cn as pe,
+    x as he,
+    J as xe,
+    L as O,
     T as ue,
-    co as ge,
-    dU as G,
-    p as Q,
-    dV as fe,
-    ah as je
+    cp as ge,
+    dV as G,
+    v as U,
+    dW as fe,
+    aj as je
 } from "./_index.js";
 import {
     A as be
@@ -54,7 +54,7 @@ import {
     C as _
 } from "./Button.js";
 import {
-    G as R
+    G as A
 } from "./GetAssetPath.js";
 import {
     u as Z
@@ -66,7 +66,7 @@ import {
     T as C
 } from "./index-14.js";
 import {
-    I as A
+    I as R
 } from "./index-3.js";
 import {
     A as ke
@@ -135,8 +135,8 @@ const D = {
   backdrop-filter: blur(3px);
 `,
     Le = () => e.jsxs(_e, {
-        children: [e.jsx(Re, {
-            children: e.jsx(Ae, {})
+        children: [e.jsx(Ae, {
+            children: e.jsx(Re, {})
         }), e.jsxs(Be, {
             children: [e.jsx(Ie, {
                 children: e.jsx(K, {
@@ -157,9 +157,9 @@ const D = {
     _e = a.div.attrs({
         className: "maxWidth flex-center"
     })``,
-    Re = a.div``,
-    Ae = a.img.attrs({
-        src: R("characters/spine/preview/construction.png")
+    Ae = a.div``,
+    Re = a.img.attrs({
+        src: A("characters/spine/preview/construction.png")
     })`
   height: 155px;
   transform: rotate(353deg);
@@ -181,7 +181,7 @@ const D = {
   font-style: italic;
 `,
     ee = ["creative-created-maps"],
-    Fe = () => Z(ee, () => q({
+    Fe = () => Z(ee, () => Q({
         url: "/api/created-maps"
     })),
     B = () => de.invalidateQueries(ee),
@@ -317,7 +317,7 @@ const D = {
                     children: ["Enter a new name for ", e.jsxs("b", {
                         children: [t.name, ":"]
                     })]
-                }), e.jsx(A, {
+                }), e.jsx(R, {
                     value: m,
                     style: {
                         marginTop: 5
@@ -349,7 +349,7 @@ const D = {
                         },
                         children: t.name
                     }), " to confirm. Note that deleting a map will also remove it from Creative Discovery."]
-                }), e.jsx(A, {
+                }), e.jsx(R, {
                     value: h,
                     style: {
                         marginTop: 10
@@ -377,7 +377,7 @@ const D = {
     background: rgba(255, 255, 255, 0.17);
   }
 `,
-    U = t => {
+    Y = t => {
         const {
             image: i,
             name: r,
@@ -388,16 +388,16 @@ const D = {
             style: {
                 borderColor: t.selected ? _.Yellow : "rgba(255, 255, 255, 0.1)"
             },
-            children: [t.tag ? e.jsx(Ue, {
+            children: [t.tag ? e.jsx(Ye, {
                 children: t.tag
             }) : null, e.jsx(Ve, {
                 style: {
                     backgroundImage: `url("${i}")`
                 }
             }), e.jsxs(He, {
-                children: [e.jsx(Ye, {
+                children: [e.jsx(qe, {
                     children: r
-                }), e.jsx(qe, {
+                }), e.jsx(Qe, {
                     children: c
                 })]
             })]
@@ -432,7 +432,7 @@ const D = {
   padding: 10px;
   padding-top: 0px;
 `,
-    Ue = a.div`
+    Ye = a.div`
   font-family: ${b.FugazOne};
   text-transform: uppercase;
   font-size: 9px;
@@ -446,17 +446,17 @@ const D = {
   top: 10px;
   z-index: 2;
 `,
-    Ye = a.div`
+    qe = a.div`
   font-family: ${b.FugazOne};
   text-transform: uppercase;
   font-size: 16px;
 `,
-    qe = a.div`
+    Qe = a.div`
   font-family: ${b.SFPro};
   font-size: 13px;
   margin-top: -3px;
 `,
-    Qe = t => {
+    Ue = t => {
         const i = l.useRef(null),
             [r, c] = l.useState(""),
             [d, v] = l.useState(),
@@ -536,9 +536,9 @@ const D = {
                     className: "maxWidth",
                     children: [e.jsxs("div", {
                         className: "maxWidth",
-                        children: [e.jsx(Y, {
+                        children: [e.jsx(q, {
                             children: "Map Name"
-                        }), e.jsx(A, {
+                        }), e.jsx(R, {
                             ref: i,
                             value: r,
                             onChange: s,
@@ -549,7 +549,7 @@ const D = {
                         })]
                     }), e.jsxs("div", {
                         className: "maxWidth",
-                        children: [e.jsx(Y, {
+                        children: [e.jsx(q, {
                             children: "Map Style"
                         }), e.jsxs("div", {
                             className: "flex",
@@ -558,14 +558,14 @@ const D = {
                                 gap: 14,
                                 marginBottom: 3
                             },
-                            children: [e.jsx(U, {
-                                image: R("creative/top-down.jpeg"),
+                            children: [e.jsx(Y, {
+                                image: A("creative/top-down.jpeg"),
                                 name: "Top-Down",
                                 description: "Players move in all four directions",
                                 selected: d === N.topDown,
                                 onSelect: () => S(N.topDown)
-                            }), e.jsx(U, {
-                                image: R("creative/platformer.jpeg"),
+                            }), e.jsx(Y, {
+                                image: A("creative/platformer.jpeg"),
                                 name: "Platformer",
                                 description: "Players move left & right, but can also jump",
                                 selected: d === N.platformer,
@@ -577,7 +577,7 @@ const D = {
             })
         })
     },
-    Y = a.div`
+    q = a.div`
   font-family: ${b.FugazOne};
   text-transform: uppercase;
   font-size: 20px;
@@ -665,7 +665,7 @@ const D = {
                         children: "Create New Map"
                     }), " button above to get started."]
                 })]
-            }), e.jsx(Qe, {
+            }), e.jsx(Ue, {
                 open: d,
                 close: p
             })]
@@ -774,7 +774,7 @@ const D = {
   }
 `,
     rt = ["creative-creative-basics"],
-    st = () => Z(rt, () => q({
+    st = () => Z(rt, () => Q({
         url: "/api/created-map/basics"
     })),
     ot = () => {
@@ -834,8 +834,8 @@ const D = {
     })`
   padding: 35px 0px;
 `,
-    ct = l.lazy(() => Q(() => import("./App-64.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]))),
-    dt = l.lazy(() => Q(() => import("./App-65.js"), __vite__mapDeps([18, 1, 2, 3, 10, 14, 6, 7, 8, 9, 13, 5, 16, 17, 19, 20, 21, 22, 23, 4, 24, 15, 25, 26, 27, 28, 12, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 11, 47, 48, 49, 50]))),
+    ct = l.lazy(() => U(() => import("./App-65.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]))),
+    dt = l.lazy(() => U(() => import("./App-66.js"), __vite__mapDeps([18, 1, 2, 3, 10, 14, 6, 7, 8, 9, 13, 5, 16, 17, 19, 20, 21, 22, 23, 4, 24, 15, 25, 26, 27, 28, 12, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 11, 47, 48, 49, 50]))),
     mt = () => {
         he(() => {
             je("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap")

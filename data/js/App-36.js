@@ -8,9 +8,9 @@ import {
     d as a,
     a as d,
     T as w,
-    a4 as k,
+    a6 as k,
     D as j,
-    U as y
+    W as y
 } from "./_index.js";
 import {
     C as v
@@ -307,10 +307,10 @@ const S = () => e.jsxs("div", {
     x = [N, E, Y, H, D],
     Z = () => {
         const [o, t] = l.useState(0), s = () => t(n => n + 1);
-        return e.jsxs(U, {
+        return e.jsxs(A, {
             children: [e.jsx(w, {
                 title: "Compatibility Check"
-            }), e.jsxs(A, {
+            }), e.jsxs(R, {
                 children: [e.jsx(S, {}), o === x.length ? e.jsx(k, {
                     type: "success",
                     style: {
@@ -326,7 +326,7 @@ const S = () => e.jsxs("div", {
             })]
         })
     },
-    U = a.div.attrs({
+    A = a.div.attrs({
         className: "flex hc"
     })`
   flex: 1;
@@ -334,7 +334,7 @@ const S = () => e.jsxs("div", {
   font-family: ${y.SFPro};
   color: ${h.Black};
 `,
-    A = a(W)`
+    R = a(W)`
   width: 90%;
   max-width: 750px;
   margin: 40px 0px;

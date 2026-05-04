@@ -3,21 +3,21 @@ import {
     I as v,
     _ as b,
     j as e,
-    ad as f,
+    af as f,
     B as r,
     D as l,
-    ae as $,
-    af as y,
+    ag as y,
+    ah as $,
     d as t,
     e as n,
-    F as c,
-    a3 as k,
-    s as C,
-    ag as S,
-    $ as z,
+    F as x,
+    a5 as k,
+    x as C,
+    ai as S,
+    a1 as z,
     T as I,
-    E as N,
-    ah as T
+    H as N,
+    aj as T
 } from "./_index.js";
 import {
     A as o
@@ -72,7 +72,7 @@ var B = {
             icon: B
         }))
     },
-    u = g.forwardRef(G);
+    j = g.forwardRef(G);
 const m = 890,
     W = () => e.jsxs(E, {
         children: [e.jsx(h, {
@@ -100,7 +100,7 @@ const m = 890,
                         height: 61
                     },
                     size: "large",
-                    icon: e.jsx(u, {}),
+                    icon: e.jsx(j, {}),
                     type: "primary",
                     children: "Sign Up For Free"
                 })
@@ -121,7 +121,7 @@ const m = 890,
                 }), e.jsx(l, {
                     type: "vertical"
                 }), e.jsx(o, {
-                    to: $,
+                    to: y,
                     children: e.jsxs(r, {
                         type: "link",
                         children: [e.jsx(R, {}), "Login"]
@@ -130,7 +130,7 @@ const m = 890,
                     children: [e.jsx(l, {
                         type: "vertical"
                     }), e.jsx(o, {
-                        to: y,
+                        to: $,
                         children: e.jsxs(r, {
                             type: "link",
                             children: [e.jsx("i", {
@@ -239,25 +239,25 @@ const m = 890,
     display: none;
   }
 `,
-    j = t.div`
+    u = t.div`
   width: 90%;
   max-width: 900px;
 `,
     d = 670,
-    x = i => {
+    c = i => {
         const s = i.imageSide === "right";
-        return e.jsx(j, {
+        return e.jsx(u, {
             children: e.jsxs(q, {
                 row: s,
                 children: [e.jsxs(P, {
                     marginLeft: s ? 0 : 55,
                     marginRight: s ? 55 : 0,
-                    children: [e.jsx(U, {
+                    children: [e.jsx(H, {
                         children: i.title
-                    }), e.jsx(_, {
+                    }), e.jsx(U, {
                         children: i.description
                     })]
-                }), e.jsx(H, {
+                }), e.jsx(_, {
                     style: {
                         transform: `rotate(${s?2:-2}deg)`
                     },
@@ -284,20 +284,20 @@ const m = 890,
     text-align: center;
   }
 `,
-    U = t.div`
+    H = t.div`
   font-size: 40px;
-  font-weight: ${c.Bold};
+  font-weight: ${x.Bold};
   @media (max-width: ${d}px) {
     font-size: 32px;
   }
 `,
-    _ = t.div`
+    U = t.div`
   font-size: 19px;
   @media (max-width: ${d}px) {
     font-size: 16px;
   }
 `,
-    H = t.img`
+    _ = t.img`
   height: 390px;
   @media (max-width: ${d}px) {
     margin-top: 20px;
@@ -327,7 +327,7 @@ const m = 890,
     Q = t.div`
   color: ${n.White};
   font-size: 40px;
-  font-weight: ${c.Bold};
+  font-weight: ${x.Bold};
   @media (max-width: 580px) {
     font-size: 27px;
   }
@@ -352,7 +352,7 @@ const m = 890,
 `,
     p = i => {
         const s = i.imageSide === "left";
-        return e.jsx(j, {
+        return e.jsx(u, {
             children: e.jsxs(Z, {
                 flexDirection: s ? "row-reverse" : "row",
                 children: [e.jsxs(ee, {
@@ -389,7 +389,7 @@ const m = 890,
 `,
     te = t.div`
   font-size: 40px;
-  font-weight: ${c.Bold};
+  font-weight: ${x.Bold};
 `,
     ie = t.div`
   font-size: 19px;
@@ -415,13 +415,13 @@ const m = 890,
         children: [e.jsxs(oe, {
             children: [e.jsx(de, {
                 children: "Game on."
-            }), e.jsx(ce, {
+            }), e.jsx(xe, {
                 children: "Get your first game going and see your students engaged like never before!"
             })]
         }), e.jsx(o, {
             to: f,
             children: e.jsx(r, {
-                icon: e.jsx(u, {}),
+                icon: e.jsx(j, {}),
                 type: "primary",
                 size: "large",
                 style: {
@@ -445,12 +445,12 @@ const m = 890,
 `,
     de = t.div`
   font-size: 48px;
-  font-weight: ${c.Bold};
+  font-weight: ${x.Bold};
   @media (max-width: 580px) {
     font-size: 36px;
   }
 `,
-    ce = t.div`
+    xe = t.div`
   font-size: 22px;
   margin-top: -5px;
   margin-bottom: 20px;
@@ -465,8 +465,8 @@ const m = 890,
             height: i.height
         }
     }),
-    xe = () => e.jsxs(me, {
-        children: [e.jsx(x, {
+    ce = () => e.jsxs(me, {
+        children: [e.jsx(c, {
             title: "Answer",
             description: `Students answer questions on their own device at their own pace.
             Throughout a Kit, each student will get exposure to the questions
@@ -475,14 +475,14 @@ const m = 890,
             imageSide: "right"
         }), e.jsx(a, {
             height: 50
-        }), e.jsx(x, {
+        }), e.jsx(c, {
             title: "Earn",
             description: "Students earn in-game cash by answering questions correctly. But be careful, an incorrect answer will cost you!",
             image: "/client/img/home/earn.png",
             imageSide: "left"
         }), e.jsx(a, {
             height: 50
-        }), e.jsx(x, {
+        }), e.jsx(c, {
             title: "Shop",
             description: "Students can reinvest their money by purchasing upgrades & powerups. With millions of combinations, students can make purchases that suit their strengths.",
             image: "/client/img/home/shop.png",
@@ -535,7 +535,7 @@ const m = 890,
                     children: [e.jsx(A, {
                         includeSpacer: !0
                     }), e.jsxs(he, {
-                        children: [e.jsx(W, {}), e.jsx(xe, {})]
+                        children: [e.jsx(W, {}), e.jsx(ce, {})]
                     })]
                 })
             })]

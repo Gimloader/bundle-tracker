@@ -6,22 +6,22 @@ import {
     o as D,
     j as e,
     b as u,
-    aX as $,
+    s as $,
     T as z,
-    q as A,
+    w as A,
     e as p,
-    a4 as _,
+    a6 as _,
     D as I,
     d,
     F as M,
-    aY as x,
+    aZ as x,
     c as N,
-    n as F,
-    a as H,
-    U as L,
-    S as W,
+    q as F,
+    a as W,
+    W as H,
+    S as L,
     h as V,
-    $ as q
+    a1 as q
 } from "./_index.js";
 import {
     o as g
@@ -40,22 +40,22 @@ import {
     S as U
 } from "./App-4.js";
 import {
-    R as X
+    R as Z
 } from "./QuestionCircleOutlined.js";
 import {
     C as j,
     H as b,
     I as w,
     a as y,
-    B as Y,
-    Q as J,
-    P as K
+    B as J,
+    Q as K,
+    P as X
 } from "./Player.js";
 import {
     p as T
 } from "./papaparse.min.js";
 import {
-    F as Z
+    F as Y
 } from "./FillRemainingSpace.js";
 import {
     N as ee
@@ -248,7 +248,7 @@ const ce = {
                 }
             }), e.jsxs("div", {
                 children: [e.jsx(h, {
-                    icon: X,
+                    icon: Z,
                     onClick: () => r.currentTab = c.breakdown,
                     title: "Question Breakdown",
                     selected: r.currentTab === c.breakdown
@@ -345,7 +345,7 @@ const ce = {
                     })
                 }
             }), e.jsx("div", {
-                children: o.map(s => e.jsx(Y, {
+                children: o.map(s => e.jsx(J, {
                     question: s.question,
                     correct: s.resultData.correct,
                     incorrect: s.resultData.incorrect,
@@ -404,7 +404,7 @@ const ce = {
                             children: e.jsx("div", {
                                 children: a.name
                             })
-                        }), e.jsx(J, {
+                        }), e.jsx(K, {
                             correct: a.correctQuestionIds.length,
                             incorrect: a.incorrectQuestionIds.length,
                             accuracy: s
@@ -428,7 +428,7 @@ const ce = {
             gameReport: r
         }) : a === c.breakdown ? e.jsx(ge, {
             gameReport: r
-        }) : a === c.player && r.players[o] ? e.jsx(K, {
+        }) : a === c.player && r.players[o] ? e.jsx(X, {
             player: r.players[o],
             questions: r.questions
         }) : null;
@@ -449,7 +449,7 @@ const ce = {
   height: 100%;
   display: flex;
   background: ${n=>n.customBackgroundColor||p.Snow};
-  font-family: ${L.SFPro};
+  font-family: ${H.SFPro};
   color: ${p.Black};
 `,
     ut = () => {
@@ -457,7 +457,7 @@ const ce = {
             id: r
         } = F();
         l.useEffect(() => {
-            H({
+            W({
                 url: `/api/game-report/fetch/${r}`,
                 method: "GET",
                 success: o => {
@@ -483,7 +483,7 @@ const ce = {
             })]
         }) : e.jsx("div", {
             className: "flex-center maxAll",
-            children: e.jsx(W, {
+            children: e.jsx(L, {
                 size: "large"
             })
         });
@@ -493,7 +493,7 @@ const ce = {
             })
         })
     },
-    Ce = d(Z)`
+    Ce = d(Y)`
   @media print {
     height: auto !important;
     ::-webkit-scrollbar {

@@ -9,12 +9,12 @@ import {
     a as S,
     t as B,
     e as N,
-    c as D,
-    U as F,
-    M as K,
-    a3 as P,
-    dJ as O,
-    n as R,
+    c as K,
+    W as F,
+    M as U,
+    a5 as P,
+    dK as O,
+    q as R,
     S as _,
     T as H
 } from "./_index.js";
@@ -92,18 +92,18 @@ import "./inheritsLoose.js";
 import "./index-13.js";
 import "./useForm.js";
 const se = () => t.jsxs(ie, {
-        children: [t.jsx(ne, {}), t.jsx(oe, {
+        children: [t.jsx(oe, {}), t.jsx(ne, {
             children: "KitCollab"
         }), t.jsx(q, {})]
     }),
     ie = a.div``,
-    ne = a.img.attrs({
+    oe = a.img.attrs({
         src: "/client/img/svgLogo.svg"
     })`
   height: 22px;
   opacity: 0.8;
 `,
-    oe = a.div`
+    ne = a.div`
   font-size: 45px;
   font-weight: ${w.UltraBold};
   line-height: 1;
@@ -113,22 +113,22 @@ const se = () => t.jsxs(ie, {
         text: e.text,
         type: e.type,
         answers: e.answers.map(s => {
-            const o = {
+            const n = {
                 text: s.text,
                 correct: s.correct
             };
             return s.textType ? {
-                ...o,
+                ...n,
                 textType: s.textType
-            } : o
+            } : n
         })
     }),
     ae = e => {
         const s = i.useMemo(() => e.status === g.accepted ? "Accepted" : e.status === g.rejected ? "Rejected" : "Waiting For Approval", [e.status]),
-            o = i.useMemo(() => e.status === g.accepted ? "#1b5e20" : e.status === g.rejected ? "#b71c1c" : "#283593", [e.status]);
+            n = i.useMemo(() => e.status === g.accepted ? "#1b5e20" : e.status === g.rejected ? "#b71c1c" : "#283593", [e.status]);
         return t.jsxs(ce, {
             style: {
-                backgroundColor: o
+                backgroundColor: n
             },
             children: [t.jsx(de, {
                 children: s
@@ -170,14 +170,14 @@ const se = () => t.jsxs(ie, {
                     textType: r.textType
                 }))
             })),
-            [o, m, u] = v(!1),
-            [c, n] = i.useState(e.status),
+            [n, m, u] = v(!1),
+            [c, o] = i.useState(e.status),
             [d, x, f] = v(!1),
             b = i.useCallback(() => {
                 e.deleteQuestion(e.id)
             }, [e.id]);
         i.useEffect(() => {
-            if (c !== e.status && (n(e.status), e.status === g.accepted && I.success({
+            if (c !== e.status && (o(e.status), e.status === g.accepted && I.success({
                     message: "Question Accepted!",
                     description: "Your question was added to the kit!"
                 }), e.status === g.rejected)) {
@@ -213,7 +213,7 @@ const se = () => t.jsxs(ie, {
                         userSessionId: e.userSessionId
                     },
                     success: () => {
-                        n(g.waiting), y(r), u()
+                        o(g.waiting), y(r), u()
                     },
                     error: C => {
                         B({
@@ -248,7 +248,7 @@ const se = () => t.jsxs(ie, {
                     paddingTop: 14
                 }
             }), t.jsx(z, {
-                visible: !!(o && l),
+                visible: !!(n && l),
                 close: u,
                 existingQuestion: s,
                 submitQuestion: p,
@@ -281,8 +281,8 @@ const se = () => t.jsxs(ie, {
 `,
     ue = e => {
         const s = i.useRef(),
-            [o, m, u] = v(!1),
-            [c, n] = i.useState(!1),
+            [n, m, u] = v(!1),
+            [c, o] = i.useState(!1),
             [d, x, f] = v(!1),
             b = y => {
                 if (d) return;
@@ -296,7 +296,7 @@ const se = () => t.jsxs(ie, {
                         userSessionId: e.userSessionId
                     },
                     success: r => {
-                        n(!0), e.addQuestion(r, p), u()
+                        o(!0), e.addQuestion(r, p), u()
                     },
                     error: r => {
                         B({
@@ -310,10 +310,10 @@ const se = () => t.jsxs(ie, {
                 })
             },
             l = () => {
-                c && s.current && s.current.clear(), n(!1)
+                c && s.current && s.current.clear(), o(!1)
             };
         return t.jsxs(t.Fragment, {
-            children: [t.jsx(D, {
+            children: [t.jsx(K, {
                 style: {
                     marginBottom: 20
                 },
@@ -333,7 +333,7 @@ const se = () => t.jsxs(ie, {
                 })
             }), t.jsx(z, {
                 ref: s,
-                visible: o,
+                visible: n,
                 close: u,
                 submitQuestion: b,
                 imagesBlocked: !0,
@@ -374,31 +374,31 @@ const se = () => t.jsxs(ie, {
 `;
 var g = (e => (e.waiting = "waiting", e.rejected = "rejected", e.accepted = "accepted", e))(g || {});
 const he = e => {
-        const [s, o] = i.useState([]), m = () => {
+        const [s, n] = i.useState([]), m = () => {
             S({
                 url: `/api/kitcollab/my-questions/${e.sessionId}`,
                 data: {
                     userSessionId: e.userSessionId
                 },
-                success: n => {
-                    o(n)
+                success: o => {
+                    n(o)
                 }
             })
-        }, u = (n, d) => {
-            o(x => [{
-                _id: n,
+        }, u = (o, d) => {
+            n(x => [{
+                _id: o,
                 status: "waiting",
                 question: d
             }, ...x])
-        }, c = n => {
-            K.confirm({
+        }, c = o => {
+            U.confirm({
                 title: "Are you sure you want to delete this question?",
                 okText: "Yes",
                 onOk: () => {
-                    o(d => d.filter(x => x._id !== n)), S({
+                    n(d => d.filter(x => x._id !== o)), S({
                         url: "/api/kitcollab/question/remove",
                         data: {
-                            questionId: n,
+                            questionId: o,
                             userSessionId: e.userSessionId
                         }
                     })
@@ -417,16 +417,16 @@ const he = e => {
                 userSessionId: e.userSessionId,
                 addQuestion: u
             }), t.jsx(Y, {
-                children: s.map(n => t.jsx("div", {
+                children: s.map(o => t.jsx("div", {
                     className: "maxWidth",
                     children: t.jsx(re, {
-                        id: n._id,
-                        question: n.question,
-                        status: n.status,
+                        id: o._id,
+                        question: o.question,
+                        status: o.status,
                         deleteQuestion: c,
                         userSessionId: e.userSessionId
                     })
-                }, `submitted-question-${n._id}`))
+                }, `submitted-question-${o._id}`))
             })]
         })
     },
@@ -477,12 +477,12 @@ const he = e => {
         children: e.label
     }),
     ye = e => {
-        const [s, o] = i.useState("");
+        const [s, n] = i.useState("");
         i.useEffect(() => {
             e.onNameChange(s)
         }, [s]);
         const m = c => {
-                o(c.target.value.trimStart())
+                n(c.target.value.trimStart())
             },
             u = () => {
                 s && e.join()
@@ -532,11 +532,11 @@ const he = e => {
     Ie = e => {
         const {
             sessionId: s,
-            creatorName: o,
+            creatorName: n,
             canAccess: m,
             mustBeLoggedIn: u
-        } = e, [c, n] = i.useState(!1), [d, x] = i.useState(""), f = () => {
-            c || (n(!0), S({
+        } = e, [c, o] = i.useState(!1), [d, x] = i.useState(""), f = () => {
+            c || (o(!0), S({
                 url: `/api/kitcollab/session/join/${s}`,
                 data: {
                     name: d
@@ -550,7 +550,7 @@ const he = e => {
                         default: {
                             title: "Error joining. Please try again later."
                         }
-                    }), n(!1)
+                    }), o(!1)
                 }
             }))
         }, b = () => {
@@ -563,9 +563,9 @@ const he = e => {
                 join: f,
                 loading: c
             }) : t.jsx(Ce, {
-                creatorName: o
+                creatorName: n
             }) : t.jsx(ve, {
-                creatorName: o
+                creatorName: n
             })
         };
         return t.jsx(ke, {
@@ -609,16 +609,16 @@ const he = e => {
     Te = a.div``,
     Et = () => {
         const e = R().id,
-            [s, o] = i.useState(""),
+            [s, n] = i.useState(""),
             [m, u] = i.useState(""),
-            [c, n] = i.useState("join"),
+            [c, o] = i.useState("join"),
             [d, x] = i.useState(!0),
             [f, b] = i.useState(""),
             [l, y] = i.useState(""),
             [p, r] = i.useState(!1),
             [j, C] = i.useState(!1),
             [T, Q] = i.useState(""),
-            W = () => n("dashboard");
+            W = () => o("dashboard");
         i.useEffect(() => {
             S({
                 url: `/api/kitcollab/contributor/session-info/${e}`,
@@ -633,7 +633,7 @@ const he = e => {
                 }
             })
         }, []);
-        const U = () => T ? t.jsx("div", {
+        const D = () => T ? t.jsx("div", {
             style: {
                 fontSize: 18
             },
@@ -649,7 +649,7 @@ const he = e => {
             gameName: l,
             mustBeLoggedIn: j,
             switchToDashboardScreen: W,
-            setUserName: o,
+            setUserName: n,
             setUserSessionId: u
         });
         return d ? t.jsx($, {
@@ -659,7 +659,7 @@ const he = e => {
         }) : t.jsxs(t.Fragment, {
             children: [t.jsx($, {
                 children: t.jsx(Qe, {
-                    children: U()
+                    children: D()
                 })
             }), t.jsx(H, {
                 title: "KitCollab"

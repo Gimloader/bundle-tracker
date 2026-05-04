@@ -2,49 +2,49 @@ import {
     r as l,
     I as Ie,
     _ as Ce,
-    al as Q,
-    am as j,
-    cI as Ne,
-    aF as Ae,
-    cJ as Le,
-    aS as J,
-    aQ as K,
-    cK as _e,
-    cL as We,
-    cM as Xe,
-    bZ as ke,
-    ak as g,
-    ba as Ve,
-    bC as qe,
-    ai as Se,
-    aj as se,
-    bO as Y,
-    cN as ye,
-    bE as ce,
-    aL as xe,
-    bF as me,
-    aN as Fe,
-    cO as Ge,
-    bY as we,
-    cP as Ye,
-    bh as Be,
-    bH as Oe,
-    cQ as Ue,
+    an as Q,
+    ao as j,
+    cJ as Ne,
+    aH as Ae,
+    cK as Le,
+    aU as J,
+    aS as K,
+    cL as _e,
+    cM as We,
+    cN as Xe,
+    b_ as ke,
+    am as g,
+    bb as Ve,
+    bD as qe,
+    ak as Se,
+    al as se,
+    bP as Y,
+    cO as ye,
+    bF as ce,
+    aN as xe,
+    bG as me,
+    aP as Ge,
+    cP as Fe,
+    bZ as we,
+    cQ as Ye,
+    bi as Be,
+    bI as Oe,
+    cR as Ue,
     R as Pe,
-    aR as Ze,
-    cR as Qe,
-    bQ as Je,
-    bP as Ke,
-    bS as et,
-    bR as tt,
-    aM as ue,
-    bc as ot,
-    aG as nt,
-    cS as it,
-    cT as rt,
-    bt as lt,
-    b_ as at,
-    bT as st,
+    aT as Ze,
+    cS as Qe,
+    bR as Je,
+    bQ as Ke,
+    bT as et,
+    bS as tt,
+    aO as ue,
+    bd as ot,
+    aI as nt,
+    cT as it,
+    cU as rt,
+    bu as lt,
+    b$ as at,
+    bU as st,
     B as pe
 } from "./_index.js";
 import {
@@ -681,7 +681,7 @@ const Z = l.createContext(null),
                         transition: [`opacity ${e} ${n}`, `margin ${e}`, `color ${e}`].join(",")
                     }
                 },
-                [`${o}-item-icon`]: Object.assign({}, Fe()),
+                [`${o}-item-icon`]: Object.assign({}, Ge()),
                 [`&${o}-item-only-child`]: {
                     [`> ${r}, > ${o}-item-icon`]: {
                         marginInlineEnd: 0
@@ -1151,7 +1151,7 @@ const Z = l.createContext(null),
             prefixCls: d,
             inlineCollapsed: s,
             theme: b
-        } = r, $ = Ge();
+        } = r, $ = Fe();
         let f;
         if (!i) f = s && !$.length && n && typeof n == "string" ? l.createElement("div", {
             className: `${d}-inline-collapsed-noicon`
@@ -1290,7 +1290,7 @@ const jt = {
             _internalComponents: jt
         })))))
     }),
-    F = l.forwardRef((t, o) => {
+    G = l.forwardRef((t, o) => {
         const e = l.useRef(null),
             i = l.useContext(Ee);
         return l.useImperativeHandle(o, () => ({
@@ -1303,10 +1303,10 @@ const jt = {
             ref: e
         }, t, i))
     });
-F.Item = Te;
-F.SubMenu = He;
-F.Divider = ze;
-F.ItemGroup = Qe;
+G.Item = Te;
+G.SubMenu = He;
+G.Divider = ze;
+G.ItemGroup = Qe;
 const Rt = t => {
         const {
             componentCls: o,
@@ -1645,13 +1645,13 @@ const Rt = t => {
             }),
             V = d ? [] : r,
             te = !!(V != null && V.includes("contextMenu")),
-            [oe, G] = nt(!1, {
+            [oe, F] = nt(!1, {
                 value: m ?? I
             }),
             ne = Be(B => {
                 c == null || c(B, {
                     source: "trigger"
-                }), v == null || v(B), G(B)
+                }), v == null || v(B), F(B)
             }),
             ie = j(f, p, X, k, L, P == null ? void 0 : P.className, {
                 [`${E}-rtl`]: w === "rtl"
@@ -1666,11 +1666,11 @@ const Rt = t => {
             Me = l.useCallback(() => {
                 e != null && e.selectable && (e != null && e.multiple) || (c == null || c(!1, {
                     source: "menu"
-                }), G(!1))
+                }), F(!1))
             }, [e == null ? void 0 : e.selectable, e == null ? void 0 : e.multiple]),
             Re = () => {
                 let B;
-                return e != null && e.items ? B = l.createElement(F, Object.assign({}, e)) : typeof z == "function" ? B = z() : B = z, S && (B = S(B)), B = l.Children.only(typeof B == "string" ? l.createElement("span", null, B) : B), l.createElement(wt, {
+                return e != null && e.items ? B = l.createElement(G, Object.assign({}, e)) : typeof z == "function" ? B = z() : B = z, S && (B = S(B)), B = l.Children.only(typeof B == "string" ? l.createElement("span", null, B) : B), l.createElement(wt, {
                     prefixCls: `${E}-menu`,
                     rootClassName: j(k, L),
                     expandIcon: l.createElement("span", {
@@ -1791,12 +1791,12 @@ const je = t => {
             href: M,
             title: h
         }, f),
-        G = l.createElement(pe, {
+        F = l.createElement(pe, {
             type: a,
             danger: r,
             icon: T
         }),
-        [ne, ie] = D([oe, G]);
+        [ne, ie] = D([oe, F]);
     return l.createElement(gt.Compact, Object.assign({
         className: te,
         size: W,
@@ -1807,5 +1807,5 @@ je.__ANT_BUTTON = !0;
 const Xt = ee;
 Xt.Button = je;
 export {
-    Xt as D, F as M, wt as O, vt as R, ee as a, Ct as b, ft as g
+    Xt as D, G as M, wt as O, vt as R, ee as a, Ct as b, ft as g
 };

@@ -1,19 +1,19 @@
 import {
-    cv as V,
-    cw as x,
-    cx as K,
-    cy as D,
-    cz as P,
-    cA as z,
-    cB as G,
-    cC as H,
-    cD as k,
-    cE as N,
-    cF as b,
-    bI as W,
+    cw as V,
+    cx as x,
+    cy as K,
+    cz as D,
+    cA as P,
+    cB as z,
+    cC as G,
+    cD as H,
+    cE as k,
+    cF as N,
+    cG as b,
+    bJ as W,
     r as S,
-    cG as J,
-    cH as X
+    cH as J,
+    cI as X
 } from "./_index.js";
 class Y extends V {
     constructor(e, t) {
@@ -142,26 +142,26 @@ class Y extends V {
             } = e;
         let {
             dataUpdatedAt: o,
-            error: R,
+            error: v,
             errorUpdatedAt: m,
             fetchStatus: h,
             status: d
-        } = i, U = !1, w = !1, v;
+        } = i, U = !1, w = !1, R;
         if (t._optimisticResults) {
             const p = this.hasListeners(),
                 C = !p && A(e, t),
                 q = p && L(e, s, t, c);
             (C || q) && (h = H(e.options.networkMode) ? "fetching" : "paused", o || (d = "loading")), t._optimisticResults === "isRestoring" && (h = "idle")
         }
-        if (t.keepPreviousData && !i.dataUpdatedAt && f != null && f.isSuccess && d !== "error") v = f.data, o = f.dataUpdatedAt, d = f.status, U = !0;
+        if (t.keepPreviousData && !i.dataUpdatedAt && f != null && f.isSuccess && d !== "error") R = f.data, o = f.dataUpdatedAt, d = f.status, U = !0;
         else if (t.select && typeof i.data < "u")
-            if (n && i.data === (u == null ? void 0 : u.data) && t.select === this.selectFn) v = this.selectResult;
+            if (n && i.data === (u == null ? void 0 : u.data) && t.select === this.selectFn) R = this.selectResult;
             else try {
-                this.selectFn = t.select, v = t.select(i.data), v = k(n == null ? void 0 : n.data, v, t), this.selectResult = v, this.selectError = null
+                this.selectFn = t.select, R = t.select(i.data), R = k(n == null ? void 0 : n.data, R, t), this.selectResult = R, this.selectError = null
             } catch (p) {
                 this.selectError = p
-            } else v = i.data;
-        if (typeof t.placeholderData < "u" && typeof v > "u" && d === "loading") {
+            } else R = i.data;
+        if (typeof t.placeholderData < "u" && typeof R > "u" && d === "loading") {
             let p;
             if (n != null && n.isPlaceholderData && t.placeholderData === (a == null ? void 0 : a.placeholderData)) p = n.data;
             else if (p = typeof t.placeholderData == "function" ? t.placeholderData() : t.placeholderData, t.select && typeof p < "u") try {
@@ -169,9 +169,9 @@ class Y extends V {
             } catch (C) {
                 this.selectError = C
             }
-            typeof p < "u" && (d = "success", v = k(n == null ? void 0 : n.data, p, t), w = !0)
+            typeof p < "u" && (d = "success", R = k(n == null ? void 0 : n.data, p, t), w = !0)
         }
-        this.selectError && (R = this.selectError, v = this.selectResult, m = Date.now(), d = "error");
+        this.selectError && (v = this.selectError, R = this.selectResult, m = Date.now(), d = "error");
         const E = h === "fetching",
             Q = d === "loading",
             g = d === "error";
@@ -182,9 +182,9 @@ class Y extends V {
             isSuccess: d === "success",
             isError: g,
             isInitialLoading: Q && E,
-            data: v,
+            data: R,
             dataUpdatedAt: o,
-            error: R,
+            error: v,
             errorUpdatedAt: m,
             failureCount: i.fetchFailureCount,
             failureReason: i.fetchFailureReason,
@@ -316,20 +316,20 @@ function $() {
         u = r.useDebugValue;
 
     function a(i, o) {
-        var R = o(),
+        var v = o(),
             m = s({
                 inst: {
-                    value: R,
+                    value: v,
                     getSnapshot: o
                 }
             }),
             h = m[0].inst,
             d = m[1];
         return n(function() {
-            h.value = R, h.getSnapshot = o, l(h) && d({
+            h.value = v, h.getSnapshot = o, l(h) && d({
                 inst: h
             })
-        }, [i, R, o]), c(function() {
+        }, [i, v, o]), c(function() {
             return l(h) && d({
                 inst: h
             }), i(function() {
@@ -337,15 +337,15 @@ function $() {
                     inst: h
                 })
             })
-        }, [i]), u(R), R
+        }, [i]), u(v), v
     }
 
     function l(i) {
         var o = i.getSnapshot;
         i = i.value;
         try {
-            var R = o();
-            return !t(i, R)
+            var v = o();
+            return !t(i, v)
         } catch {
             return !0
         }

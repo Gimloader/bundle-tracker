@@ -1,73 +1,75 @@
 import {
-    r as l,
-    j as t,
-    q as u,
-    d as a,
-    U as b,
-    F as I,
-    b5 as y,
-    e as B
+    j as e,
+    d as c,
+    F as k,
+    B as w,
+    R as H,
+    M as L,
+    D as v,
+    at as m,
+    a6 as S,
+    b6 as f
 } from "./_index.js";
 import {
-    b as N,
-    a as h,
-    d as m,
-    c as j,
-    F as D,
-    C as G
-} from "./ItemNameWithAmount.js";
-import {
-    o as p,
-    a as V
+    o as y,
+    a as T
 } from "./mobxreact.esm.js";
 import {
-    u as A,
-    T as R,
-    b9 as F,
-    az as v,
-    aS as L
+    D as A
+} from "./TutorialConsts.js";
+import {
+    H as p
+} from "./Hook.js";
+import {
+    S as M,
+    J as K,
+    u as j
 } from "./App-41.js";
 import {
-    M as k
-} from "./Button.js";
+    H as r,
+    a as D,
+    g as B,
+    d as V,
+    c as g,
+    b as z
+} from "./Header.js";
 import {
     C as O
-} from "./confetti.js";
+} from "./Button.js";
 import {
-    u as w
-} from "./useIntervalWhen.js";
+    O as E,
+    I as $
+} from "./App-54.js";
 import {
-    m as g
-} from "./motion.js";
+    D as F,
+    M as b
+} from "./index-10.js";
 import {
-    P as E
-} from "./progress.js";
+    A as W
+} from "./AccessibleAnchor.js";
 import {
-    A as q
-} from "./index-17.js";
-import {
-    s as U,
-    a as H
-} from "./FixSpinePlugin.js";
-import {
-    C
-} from "./CapitalizeFirstLetter.js";
+    S as C
+} from "./index-8.js";
 import {
     D as J
-} from "./TutorialConsts.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./MapModeType.js";
+} from "./index-6.js";
+import "./FixSpinePlugin.js";
 import "./GetAssetPath.js";
-import "./ActionButton.js";
-import "./index-5.js";
+import "./MapModeType.js";
+import "./MapStyle.js";
 import "./playSound.js";
 import "./howler.js";
+import "./index-21.js";
+import "./QuizTypes.js";
+import "./ActionButton.js";
+import "./index-5.js";
 import "./index-18.js";
 import "./context.js";
 import "./FontAwesomeIcon.js";
 import "./Centered.js";
+import "./CapitalizeFirstLetter.js";
 import "./index-4.js";
+import "./motion.js";
 import "./index-2.js";
 import "./index-14.js";
 import "./EditOutlined.js";
@@ -79,6 +81,7 @@ import "./SixteenByNineScaler.js";
 import "./index-20.js";
 import "./index-22.js";
 import "./index-1.js";
+import "./progress.js";
 import "./ElementIds.js";
 import "./SeasonTicketName.js";
 import "./useQuery.js";
@@ -90,11 +93,11 @@ import "./Names.js";
 import "./useWillUnmount.js";
 import "./use-motion-value.js";
 import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
 import "./inheritsLoose.js";
+import "./index-17.js";
+import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
 import "./Text.js";
 import "./getCloudinaryUrl.js";
@@ -103,598 +106,491 @@ import "./Tooltip.js";
 import "./polished.esm.js";
 import "./index-9.js";
 import "./index-23.js";
-import "./index-10.js";
-import "./move.js";
+import "./useIntervalWhen.js";
 import "./react-flip-move.es.js";
 import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
-import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-import "./use-force-update.js";
-const K = p(e => {
-        const [, i] = l.useReducer(x => x + 1, 0), [r, n] = l.useState(!1), {
-            session: {
-                gameTime: s
+import "./ReplaceDevice.js";
+import "./GetCurrentMapStyle.js";
+import "./index-28.js";
+import "./index-7.js";
+import "./DownOutlined.js";
+import "./LoadGoogleFontAfterSceneStart.js";
+import "./useItemAmount.js";
+import "./clsx.js";
+import "./index-29.js";
+import "./move.js";
+const R = o => {
+        M(K.hookOptionAction, {
+            device: o.device,
+            action: o.action,
+            payload: o.payload
+        })
+    },
+    u = o => {
+        R(o)
+    },
+    x = {
+        connect: "CONNECT",
+        createLink: "CREATE_LINK",
+        changeLinkOption: "CHANGE_LINK_OPTION",
+        changeLinkValue: "CHANGE_LINK_VALUE",
+        removeLink: "REMOVE_LINK",
+        disconnect: "DISCONNECT"
+    },
+    _ = (o, i, n) => n === p.kit ? o.key === "kitId" && i === A.gimkitLiveQuestion : !(n === p.number && o.option.type !== E.numberInput),
+    G = y(o => {
+        var s;
+        const {
+            hooks: {
+                hookJSON: i
             }
-        } = A();
-        l.useEffect(() => {
-            n(!0)
-        }, []), w(i, 33, !!e.itemDisposalMs);
-        const o = () => {
-                const x = Math.max(e.itemDisposalAt - F(), 0),
-                    $ = Math.ceil(x / 1e3);
-                return isNaN($) ? 0 : $
-            },
-            c = l.useMemo(() => {
-                if (!e.useCrafterCollectionAdvantage) return !1;
-                if (e.itemCrafterCharacterId !== R()) {
-                    const x = e.itemFinishesCraftingAt + N.secondsAdvantage * 1e3;
-                    return s < x
-                }
-                return !1
-            }, [e.useCrafterCollectionAdvantage, s, e.itemFinishesCraftingAt, e.itemCrafterCharacterId]),
-            f = () => {
-                e.collect(), e.close()
-            },
-            d = Math.max(1, o());
-        return t.jsxs(Q, {
-            children: [t.jsx(O, {
-                config: Y,
-                active: r
-            }), t.jsx(k, {
-                block: !0,
-                type: "success",
-                disabled: c,
-                style: {
-                    width: "80%"
-                },
-                onClick: f,
-                ariaLabel: "Collect",
-                children: t.jsx("span", {
+        } = j(), n = JSON.parse(i);
+        return (s = n == null ? void 0 : n.hooks) != null && s.length ? e.jsxs(N, {
+            children: [e.jsxs(P, {
+                children: ["Choose a ", r.name.toLowerCase(), " to connect to..."]
+            }), n.hooks.map(t => {
+                const l = !_(o.option, o.deviceType, t.type),
+                    h = () => {
+                        l || u({
+                            action: x.connect,
+                            payload: {
+                                hook: t.key,
+                                option: o.option.key
+                            },
+                            device: o.deviceId
+                        })
+                    };
+                return e.jsx(D, {
                     style: {
-                        textTransform: "uppercase"
+                        marginBottom: 10,
+                        cursor: l ? "not-allowed" : "pointer",
+                        background: l ? "#e0e0e0" : O.White
                     },
-                    children: "Collect"
+                    onClick: h,
+                    children: e.jsxs("div", {
+                        className: "flex-column",
+                        style: {
+                            alignItems: "flex-start"
+                        },
+                        children: [e.jsx(q, {
+                            children: B(t.type)
+                        }), e.jsx(Q, {
+                            children: t.key
+                        }), l && e.jsxs(Y, {
+                            children: ["Cannot use ", r.name.toLowerCase(), " for this option"]
+                        })]
+                    })
+                }, `${t.key}-option-connect`)
+            })]
+        }) : e.jsx(N, {
+            children: e.jsxs("div", {
+                className: "flex-column maxWidth flex-center",
+                children: [e.jsx("div", {
+                    style: {
+                        fontSize: 42,
+                        marginBottom: 10,
+                        color: "#3949ab"
+                    },
+                    children: e.jsx("i", {
+                        className: "fad fa-plus-square"
+                    })
+                }), e.jsxs(U, {
+                    children: ["You haven't created any ", r.name.toLowerCase(), "s yet. Create one first and then come back here to connect this option to that", " ", r.name.toLowerCase(), "."]
+                })]
+            })
+        })
+    }),
+    N = c.div``,
+    U = c.div`
+  font-size: 18px;
+`,
+    P = c.div`
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 20px;
+`,
+    q = c.div`
+  font-size: 12px;
+  font-style: italic;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: ${k.Normal};
+`,
+    Q = c.div``,
+    Y = c.div`
+  background: #e53935;
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: ${k.Normal};
+  color: ${O.White};
+  padding: 10px 12px;
+  border-radius: 8px;
+  line-height: 1;
+`,
+    X = o => {
+        const i = () => {
+                L.confirm({
+                    title: `Are you sure you want to disconnect this option from this ${r.name.toLowerCase()}?`,
+                    onOk: () => {
+                        u({
+                            action: x.disconnect,
+                            device: o.deviceId,
+                            payload: {
+                                option: o.optionKey
+                            }
+                        }), o.close()
+                    }
                 })
-            }), e.itemDisposalMs ? t.jsxs(X, {
-                children: ["Goes bad in ", d, " ", u("second", d)]
+            },
+            n = () => e.jsx(b, {
+                children: e.jsxs(b.Item, {
+                    onClick: i,
+                    children: ["Disconnect From ", r.name]
+                })
+            });
+        return e.jsxs("div", {
+            className: "flex between vc",
+            children: [e.jsx("div", {
+                children: e.jsx(V, {
+                    title: o.optionName,
+                    descriptor: o.connectionName || `Connect ${r.name}`
+                })
+            }), e.jsx("div", {
+                style: {
+                    marginLeft: 10
+                },
+                children: o.connectionName ? e.jsx(F, {
+                    overlay: n(),
+                    children: e.jsx(w, {
+                        shape: "circle",
+                        icon: e.jsx(H, {}),
+                        type: "dashed"
+                    })
+                }) : null
+            })]
+        })
+    },
+    I = o => e.jsxs(ee, {
+        children: [e.jsx("div", {
+            children: e.jsx("i", {
+                style: {
+                    color: "#388e3c",
+                    fontSize: 32
+                },
+                className: "fas fa-check"
+            })
+        }), e.jsxs(oe, {
+            children: [r.name, " connected!"]
+        }), e.jsxs(te, {
+            children: ["The value of this ", r.name.toLowerCase(), " will be the value of this option."]
+        }), o.children]
+    }),
+    Z = () => e.jsx(I, {}),
+    ee = c.div.attrs({
+        className: "flex-column flex-center"
+    })``,
+    oe = c.div`
+  font-weight: ${k.Bold};
+  font-size: 24px;
+  margin-top: 10px;
+`,
+    te = c.div`
+  font-size: 16px;
+  margin-top: 4px;
+`,
+    ie = T(o => {
+        const {
+            hooks: {
+                hookJSON: i
+            }
+        } = j(), n = JSON.parse(i).hooks.find(a => a.key === o.connection.hook);
+        if (!n || n.type !== p.number) return null;
+        const s = n.options || {},
+            t = o.option.option.props || {},
+            l = () => {
+                const a = [];
+                return m.isNil(t.min) || (m.isNil(s.min) ? a.push({
+                    key: "Minimum",
+                    device: t.min
+                }) : s.min < t.min && a.push({
+                    key: "Minimum",
+                    device: t.min,
+                    hook: s.min
+                })), m.isNil(t.max) || (m.isNil(s.max) && a.push({
+                    key: "Maximum",
+                    device: t.max
+                }), s.max > t.max && a.push({
+                    key: "Maximum",
+                    device: t.max,
+                    hook: s.max
+                })), m.isNil(t.step) || (m.isNil(s.step) ? a.push({
+                    key: "Step",
+                    device: t.step
+                }) : s.step !== t.step && a.push({
+                    key: "Step",
+                    device: t.step,
+                    hook: s.step
+                })), a
+            },
+            h = l();
+        return e.jsx(I, {
+            children: h.length ? e.jsxs(e.Fragment, {
+                children: [e.jsx(v, {}), e.jsxs(se, {
+                    children: [e.jsxs(re, {
+                        children: ["This ", r.name.toLowerCase(), "'s settings are setup in a way that a user could enter a number not allowed for this device's option. ", e.jsx("br", {}), " ", e.jsx("br", {}), " If a number invalid for this device's option is used, the value set on the device itself will be used."]
+                    }), l().map(a => e.jsx(ne, {
+                        name: a.key,
+                        deviceValue: a.device,
+                        hookValue: a.hook
+                    }, a.key))]
+                })]
+            }) : null
+        })
+    }),
+    ne = o => {
+        const {
+            name: i,
+            deviceValue: n,
+            hookValue: s
+        } = o, t = () => m.isNil(s) ? e.jsxs(e.Fragment, {
+            children: ["This device's option has a ", e.jsx("b", {
+                children: i.toLowerCase()
+            }), " of", " ", e.jsx("b", {
+                children: f(n)
+            }), ", but no ", i.toLowerCase(), " is set on the ", r.name.toLowerCase(), "."]
+        }) : e.jsxs(e.Fragment, {
+            children: ["This device's option has a ", e.jsx("b", {
+                children: i.toLowerCase()
+            }), " of", " ", e.jsx("b", {
+                children: f(n)
+            }), ", but the", " ", r.name.toLowerCase(), " value is set to", " ", e.jsx("b", {
+                children: f(s)
+            })]
+        });
+        return e.jsx(S, {
+            style: {
+                marginBottom: 10
+            },
+            type: "warning",
+            message: t()
+        })
+    },
+    se = c.div`
+  background: rgba(0, 0, 0, 0.04);
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+`,
+    re = c.div`
+  font-size: 16px;
+  margin-bottom: 18px;
+`,
+    ae = y(o => {
+        const {
+            hooks: {
+                hookJSON: i
+            }
+        } = j(), n = () => {
+            u({
+                action: x.createLink,
+                payload: {
+                    option: o.connection.option,
+                    hook: o.connection.hook
+                },
+                device: o.deviceId
+            })
+        }, s = o.connection.options, t = Object.keys(s.valueMap), l = JSON.parse(i).hooks.find(d => d.key === o.connection.hook);
+        if (!l) return null;
+        const h = l.options;
+        if (!h.options.length) return e.jsxs("div", {
+            style: {
+                fontSize: 16
+            },
+            children: ["Before you can connect the ", r.name.toLowerCase(), " to this option, you need to add selectable options. Go modify your", " ", r.name.toLowerCase(), " to include options and then come back here!"]
+        });
+        if (!t.length) return e.jsx(le, {
+            createLink: n
+        });
+        const a = h.options.filter(d => !t.includes(d));
+        return e.jsxs(de, {
+            children: [t.map(d => e.jsx(ce, {
+                option: o.option,
+                selectKey: d,
+                selectValue: o.connection.options.valueMap[d],
+                selectOptions: [d, ...a],
+                deviceId: o.deviceId,
+                hookId: o.connection.hook
+            }, d + "-hook-option")), a.length ? e.jsxs(e.Fragment, {
+                children: [e.jsx(v, {}), e.jsx(w, {
+                    size: "large",
+                    type: "primary",
+                    block: !0,
+                    style: {
+                        height: 60
+                    },
+                    onClick: n,
+                    children: "Add Another Link"
+                })]
             }) : null]
         })
     }),
-    Q = a(g.div).attrs({
-        className: "maxWidth flex-center flex-column",
-        initial: {
-            opacity: 0
-        },
-        animate: {
-            opacity: 1
-        },
-        exit: {
-            opacity: 0
-        },
-        transition: {
-            duration: .25
-        }
-    })`
-  margin-top: 25px;
-`,
-    X = a.div`
-  margin-top: 10px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  font-family: ${b.ProductSans};
-  font-weight: ${I.Bold};
-  text-transform: none;
-`,
-    Y = {
-        angle: 90,
-        spread: 55,
-        elementCount: 50,
-        startVelocity: 30,
-        decay: .95
-    },
-    Z = e => {
-        const [, i] = l.useReducer(c => c + 1, 0);
-        w(i, 33);
-        const r = Math.max(e.itemFinishesCraftingAt - F(), 0),
-            n = Math.max(100 - r / e.craftingDurationMs * 100, 0);
-        if (isNaN(r)) return null;
-        const s = Math.max(1, Math.ceil(r / 1e3)),
-            o = `Ready in ${s} ${u("second",s)}`;
-        return isNaN(n) ? null : t.jsxs(_, {
-            children: [t.jsx(E, {
-                percent: n,
-                showInfo: !1,
-                status: "active"
-            }), t.jsx(ee, {
-                children: o
-            })]
-        })
-    },
-    _ = a(g.div).attrs({
-        className: "maxWidth",
-        initial: {
-            opacity: 0
-        },
-        animate: {
-            opacity: 1
-        },
-        exit: {
-            opacity: 0
-        },
-        transition: {
-            duration: .15
-        }
-    })`
-  background: rgba(255, 255, 255, 0.1);
-  padding: 40px 30px;
-  padding-bottom: 32px;
-  margin-top: 20px;
-  border-radius: 6px;
-  .ant-progress-bg {
-    height: 22px !important;
-    transition: all 0.05s cubic-bezier(0.78, 0.14, 0.15, 0.86) !important;
-  }
-`,
-    ee = a.div`
-  margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  line-height: 1;
-`,
-    te = p(e => {
-        const i = l.useMemo(() => v(e.item), [e.item]),
-            {
-                session: {
-                    gameTime: r
-                }
-            } = A(),
-            n = l.useMemo(() => {
-                if (e.status === h.crafting) return `Currently ${m.preparing(e.style)}...`;
-                if (e.useCrafterCollectionAdvantage && e.itemCrafterCharacterId !== R()) {
-                    const o = e.itemFinishesCraftingAt + N.secondsAdvantage * 1e3 - r;
-                    if (o > 0) {
-                        const c = Math.ceil(o / 1e3);
-                        return `Collect in ${c} ${u("second",c)}`
+    ce = o => {
+        const i = t => {
+                u({
+                    action: x.changeLinkOption,
+                    device: o.deviceId,
+                    payload: {
+                        option: o.option.key,
+                        hook: o.hookId,
+                        currentOption: o.selectKey,
+                        newOption: t
                     }
-                }
-                return "Ready to collect"
-            }, [e.status, r, e.useCrafterCollectionAdvantage, e.itemFinishesCraftingAt, e.itemCrafterCharacterId]);
-        return i ? t.jsxs(t.Fragment, {
-            children: [t.jsx(re, {
-                src: i.previewImage
-            }), t.jsx(ne, {
-                children: j(i.id, e.itemAmount)
-            }), t.jsxs(ie, {
-                children: [t.jsx(ae, {
-                    children: n
-                }), t.jsxs(q, {
-                    mode: "wait",
-                    children: [e.status === h.crafting ? t.jsx(Z, {
-                        itemFinishesCraftingAt: e.itemFinishesCraftingAt,
-                        craftingDurationMs: e.craftingDurationMs
-                    }, "craft-countdown") : null, e.status === h.availableForCollection ? t.jsx(K, {
-                        itemFinishesCraftingAt: e.itemFinishesCraftingAt,
-                        itemDisposalMs: e.itemDisposalMs,
-                        itemDisposalAt: e.itemDisposedAt,
-                        collect: e.collect,
-                        itemCrafterCharacterId: e.itemCrafterCharacterId,
-                        useCrafterCollectionAdvantage: e.useCrafterCollectionAdvantage,
-                        close: e.close
-                    }, "craft-collection") : null]
-                })]
-            })]
-        }) : null
-    }),
-    ie = a(g.div).attrs({
-        className: "maxWidth flex-column flex-center",
-        initial: {
-            opacity: 0
-        },
-        animate: {
-            opacity: 1
-        }
-    })``,
-    re = a.img`
-  height: 82px;
-`,
-    ne = a.div`
-  text-transform: uppercase;
-  font-size: 26px;
-  line-height: 1;
-  margin-top: 10px;
-`,
-    ae = a.div`
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.8);
-  margin-top: 8px;
-`,
-    z = e => !e.ingredients.find(r => {
-        if (!r.item) return !1;
-        const n = U.me.inventory.slots.get(r.item);
-        return !n || n.amount < r.amount
-    }),
-    se = p(e => {
-        const i = () => {
-            e.craft(e.recipe.id)
-        };
-        return t.jsxs(oe, {
-            children: [t.jsx(k, {
-                type: "success",
-                size: "small",
-                style: {
-                    width: "75%"
-                },
-                block: !0,
-                disabled: !z(e.recipe),
-                onClick: i,
-                ariaLabel: C(m.baseVerb(e.style)),
-                children: t.jsx("span", {
-                    style: {
-                        textTransform: "uppercase"
-                    },
-                    children: C(m.baseVerb(e.style))
                 })
-            }), t.jsx(ce, {
-                onClick: e.goBack,
-                children: "...or go back"
-            })]
-        })
-    }),
-    oe = a.div.attrs({
-        className: "maxWidth flex-center flex-column"
-    })`
-  margin-top: 15px;
-`,
-    ce = a.div`
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.8);
-  margin-top: 6px;
-  font-weight: ${I.Bold};
-  font-family: ${b.ProductSans};
-  text-transform: none;
-  text-decoration: underline;
-  transition: color 0.2s;
-  cursor: pointer;
-  &:hover {
-    color: rgba(255, 255, 255, 1);
-  }
-`,
-    le = p(e => {
-        var f, d;
-        const {
-            me: {
-                inventory: i
-            }
-        } = A(), {
-            itemId: r,
-            requiredAmount: n
-        } = e;
-        let s = !0;
-        const o = ((f = i.slots.get(r)) == null ? void 0 : f.amount) || 0;
-        let c = L(r);
-        return o >= n ? c += ` (${y(n)})` : (s = !1, c += ` (${y(o)}/${y(n)})`), t.jsxs(me, {
-            style: {
-                background: s ? "rgba(255,255,255, 0.1)" : "rgba(198, 40, 40, 0.5)"
             },
-            children: [t.jsx("img", {
-                src: (d = v(r)) == null ? void 0 : d.previewImage,
+            n = t => {
+                u({
+                    action: x.changeLinkValue,
+                    device: o.deviceId,
+                    payload: {
+                        option: o.option.key,
+                        hook: o.hookId,
+                        key: o.selectKey,
+                        value: t
+                    }
+                })
+            },
+            s = () => {
+                L.confirm({
+                    title: "Are you sure you want to remove this link?",
+                    onOk: () => {
+                        u({
+                            action: x.removeLink,
+                            device: o.deviceId,
+                            payload: {
+                                option: o.option.key,
+                                hook: o.hookId,
+                                key: o.selectKey
+                            }
+                        })
+                    }
+                })
+            };
+        return e.jsxs(me, {
+            children: [e.jsxs(g, {
+                children: [r.name, " Value"]
+            }), e.jsx(C, {
                 style: {
-                    height: 35
+                    width: "100%"
+                },
+                value: o.selectKey,
+                placeholder: "Choose a value...",
+                onChange: i,
+                children: o.selectOptions.map(t => e.jsx(C.Option, {
+                    value: t,
+                    children: t
+                }, t + o.selectKey))
+            }), e.jsx("div", {
+                style: {
+                    height: 15
                 }
-            }), t.jsx(de, {
-                children: c
-            })]
-        })
-    }),
-    me = a.div.attrs({
-        className: "flex vc"
-    })`
-  margin-bottom: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 10px;
-  border-radius: 4px;
-  &:last-of-type {
-    margin-bottom: 0px;
-  }
-`,
-    de = a.div`
-  line-height: 1;
-  margin-left: 8px;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 14px;
-`,
-    fe = e => {
-        const i = e.recipe.ingredients.filter(r => r.item && r.amount);
-        return t.jsx(t.Fragment, {
-            children: t.jsxs(P, {
-                children: [t.jsxs(W, {
-                    children: ["Required", " ", u(C(m.resource(e.style)), i.length)]
-                }), i.map((r, n) => t.jsx(le, {
-                    itemId: r.item,
-                    requiredAmount: r.amount
-                }, `ingredient-${r.item}-${n}`))]
-            })
-        })
-    },
-    P = a.div.attrs({
-        className: "maxWidth"
-    })`
-  margin-top: 30px;
-`,
-    W = a.div`
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  margin-bottom: 8px;
-`,
-    M = e => {
-        const i = e / 60;
-        return i >= 1 && e % 60 === 0 ? `${i} ${u("minute",i)}` : `${e} ${u("second",e)}`
-    },
-    T = e => t.jsx(ge, {
-        children: e.children
-    }),
-    ue = e => {
-        const {
-            recipe: i,
-            style: r
-        } = e, n = l.useMemo(() => {
-            if (i.timeToCraftMs === 0) return m.instantNote(r);
-            const o = Math.floor(i.timeToCraftMs / 1e3);
-            return m.durationNote(M(o))(r)
-        }, [i.timeToCraftMs]), s = l.useMemo(() => {
-            if (i.timeToDisposeMs === 0) return `Never ${m.expireVerb(r)}`;
-            const o = Math.floor(i.timeToDisposeMs / 1e3);
-            return `${C(m.expireVerb(r))} after ${M(o)}`
-        }, [i.timeToDisposeMs]);
-        return t.jsxs(P, {
-            children: [t.jsx(W, {
-                children: "Notes"
-            }), t.jsx(T, {
-                children: n
-            }), t.jsx(T, {
-                children: s
+            }), e.jsx(g, {
+                children: "Option Value"
+            }), e.jsx($, {
+                option: o.option.option,
+                value: o.selectValue,
+                onChange: n,
+                readOnly: !1
+            }), e.jsx("div", {
+                style: {
+                    height: 15
+                }
+            }), e.jsx("div", {
+                className: "maxWidth flex",
+                style: {
+                    justifyContent: "flex-end"
+                },
+                children: e.jsx(W, {
+                    onClick: s,
+                    children: "Remove link"
+                })
             })]
         })
     },
-    ge = a.div.attrs({
-        className: "flex vc"
-    })`
-  margin-bottom: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1;
-  border-radius: 4px;
-  &:last-of-type {
-    margin-bottom: 0px;
-  }
-`,
-    xe = e => {
-        const {
-            recipe: i
-        } = e;
-        return t.jsxs(t.Fragment, {
-            children: [t.jsx(he, {
-                src: v(i.itemId).previewImage
-            }), t.jsx(pe, {
-                children: j(e.recipe.itemId, e.recipe.itemAmount)
-            })]
-        })
-    },
-    he = a.img`
-  height: 82px;
-`,
-    pe = a.div`
-  text-transform: uppercase;
-  font-size: 26px;
-  line-height: 1;
-  margin-top: 10px;
-`,
-    Ce = V(e => {
-        const i = D(e.selectedRecipeId);
-        return i ? t.jsxs(t.Fragment, {
-            children: [t.jsx(xe, {
-                recipe: i
-            }), t.jsxs(be, {
-                children: [t.jsx(se, {
-                    craft: e.craft,
-                    recipe: i,
-                    goBack: e.backToRecipeSelectionScreen,
-                    style: e.style
-                }), t.jsx(fe, {
-                    recipe: i,
-                    style: e.style
-                }), t.jsx(ue, {
-                    recipe: i,
-                    style: e.style
-                })]
-            })]
-        }) : null
-    }),
-    be = a(g.div).attrs({
-        className: "maxWidth flex-column flex-center",
-        initial: {
-            opacity: 0
+    le = o => e.jsxs("div", {
+        className: "flex-column flex-center",
+        style: {
+            background: "#eceff1",
+            padding: 40,
+            borderRadius: 6,
+            border: "1px dashed rgba(0, 0, 0, 0.5)",
+            cursor: "pointer"
         },
-        animate: {
-            opacity: 1
-        }
-    })``,
-    ve = e => {
-        if (!e.item || !e.itemAmount) return !1;
-        let i = !1;
-        for (let r = 1; r <= e.numberOfIngredients; r++)
-            if (e[`ingredient${r}Item`] && e[`ingredient${r}Amount`]) {
-                i = !0;
-                break
-            } return !!i
-    },
-    ye = (e = "") => {
-        const i = [];
-        return H().worldManager.devices.allDevices.filter(n => n.deviceOption.id === J.craftingRecipe).forEach(n => {
-            const s = n.options;
-            n.state.active && s.group === e && ve(n.options) && i.push({
-                id: n.id,
-                y: n.y
-            })
-        }), i.sort((n, s) => n.y - s.y).map(n => n.id)
-    },
-    Ie = e => {
-        const i = D(e.recipeId),
-            r = l.useMemo(() => v(i.itemId).previewImage, [i.itemId]),
-            n = z(i);
-        return t.jsxs(je, {
-            onClick: e.onSelect,
-            children: [t.jsx(Ae, {
-                src: r
-            }), t.jsxs($e, {
-                children: [t.jsx(Me, {
-                    children: j(i.itemId, i.itemAmount)
-                }), t.jsx(Te, {
-                    style: {
-                        color: n ? "#a5d6a7" : "#ef9a9a"
-                    },
-                    children: n ? m.availableToCraft(e.style) : "Insufficient Resources"
-                })]
-            })]
-        })
-    },
-    je = a.div.attrs({
-        className: "maxWidth flex vc"
+        onClick: o.createLink,
+        children: [e.jsx("div", {
+            style: {
+                fontWeight: k.Bold,
+                fontSize: 18,
+                marginBottom: 6
+            },
+            children: "Create new link"
+        }), e.jsxs("div", {
+            children: ["Link the value of a ", r.name.toLowerCase(), " to the value of this option"]
+        })]
+    }),
+    de = c.div``,
+    me = c.div.attrs({
+        className: "light-shadow"
     })`
-  background: rgba(255, 255, 255, 0.1);
-  padding: 25px 20px;
+  background: #fafafa;
+  padding: 30px;
   border-radius: 6px;
-  cursor: pointer;
-  margin-bottom: 15px;
-  transition: background 0.2s;
-  overflow: hidden;
-  &:last-of-type {
-    margin-bottom: 0px;
-  }
-  &:hover {
-    background: rgba(255, 255, 255, 0.15);
-  }
+  margin-bottom: 20px;
 `,
-    Ae = a.img`
-  height: 55px;
-`,
-    $e = a(g.div).attrs({
-        className: "flex-column"
-    })`
-  margin-left: 15px;
-  line-height: 1;
-`,
-    Me = a.div`
-  font-size: 20px;
-`,
-    Te = a.div`
-  color: #a5d6a7;
-  font-size: 12px;
-  margin-top: 6px;
-  opacity: 0.8;
-`,
-    Se = p(e => {
-        const i = ye(e.group);
-        return i.length ? t.jsxs(Ne, {
-            children: [t.jsx(S, {
-                children: m.selectItem(e.style)
-            }), i.map(r => t.jsx(Ie, {
-                recipeId: r,
-                style: e.style,
-                onSelect: () => e.setToRecipePreviewScreen(r)
-            }, `recipe-${r}`))]
-        }) : t.jsx("div", {
-            className: "maxAll flex-center",
-            style: {
-                textAlign: "center"
-            },
-            children: t.jsx(S, {
-                children: m.noItems(e.style)
+    Wo = y(o => {
+        var s, t;
+        const i = (t = (s = o.hooks) == null ? void 0 : s.connections) == null ? void 0 : t.find(l => l.option === o.option.key),
+            n = () => {
+                if (i) {
+                    if (i.hookType === p.selectBox) return e.jsx(ae, {
+                        option: o.option,
+                        connection: i,
+                        deviceId: o.deviceId
+                    });
+                    if (i.hookType === p.kit) return e.jsx(Z, {});
+                    if (i.hookType === p.number) return e.jsx(ie, {
+                        option: o.option,
+                        connection: i
+                    })
+                }
+                return e.jsx(G, {
+                    option: o.option,
+                    deviceId: o.deviceId,
+                    deviceType: o.deviceType
+                })
+            };
+        return e.jsx(J, {
+            open: o.visible,
+            onClose: o.close,
+            width: r.drawer.widths.default,
+            placement: r.drawer.placement,
+            closable: !0,
+            children: e.jsxs(z, {
+                children: [e.jsx(X, {
+                    optionName: o.option.option.label,
+                    optionKey: o.option.key,
+                    deviceId: o.deviceId,
+                    connectionName: i == null ? void 0 : i.hook,
+                    close: o.close
+                }), e.jsx(v, {}), n()]
             })
         })
-    }),
-    Ne = a(g.div).attrs({
-        className: "maxWidth flex-column flex-center",
-        initial: {
-            opacity: 0
-        },
-        animate: {
-            opacity: 1
-        }
-    })``,
-    S = a.div`
-  font-family: ${b.ProductSans};
-  font-weight: ${I.Bold};
-  text-transform: none;
-  margin-bottom: 15px;
-  font-size: 22px;
-`,
-    De = e => e === G.plant ? "rgba(0,51,0,0.93)" : "rgba(38,50,56,0.93)",
-    Xt = e => {
-        const [i, r] = l.useState("recipeSelection"), [n, s] = l.useState(null), o = d => {
-            s(d), r("itemPreview")
-        }, c = () => {
-            r("recipeSelection")
-        };
-        l.useEffect(() => {
-            e.status === h.availableForCollection && c()
-        }, [e.status]);
-        const f = () => {
-            if (e.status === h.idle) switch (i) {
-                case "recipeSelection":
-                    return t.jsx(Se, {
-                        setToRecipePreviewScreen: o,
-                        style: e.style,
-                        group: e.tableGroup
-                    }, "recipe-selection-screen");
-                case "itemPreview":
-                    return t.jsx(Ce, {
-                        craft: e.craft,
-                        selectedRecipeId: n,
-                        style: e.style,
-                        backToRecipeSelectionScreen: c
-                    }, "recipe-preview-screen");
-                default:
-                    return null
-            }
-            return t.jsx(te, {
-                item: e.item,
-                itemAmount: e.itemAmount,
-                status: e.status,
-                style: e.style,
-                craftingDurationMs: e.craftingDurationMs,
-                itemFinishesCraftingAt: e.itemFinishesCraftingAt,
-                itemDisposalMs: e.itemDisposalMs,
-                itemDisposedAt: e.itemDisposedAt,
-                itemCrafterCharacterId: e.itemCrafterCharacterId,
-                useCrafterCollectionAdvantage: e.useCrafterCollectionAdvantage,
-                collect: e.collect,
-                close: e.close
-            }, "crafting-status-screen")
-        };
-        return t.jsx(Re, {
-            style: {
-                background: De(e.style)
-            },
-            children: f()
-        })
-    },
-    Re = a.div.attrs({
-        className: "maxAll flex-column vc scroll-y"
-    })`
-  backdrop-filter: blur(5px);
-  color: ${B.White};
-  padding: 25px;
-  font-family: ${b.FugazOne};
-  text-transform: uppercase;
-`;
+    });
 export {
-    Xt as
+    Wo as
     default
 };
