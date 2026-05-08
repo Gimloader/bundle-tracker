@@ -201,6 +201,10 @@ function format(js: string) {
     for(const url in urlMap) {
         js = js.replaceAll(url, urlMap[url]);
     }
+    // Replace minifier shortenings with idiomatic code
+    js = js.replaceAll("!1", "false");
+    js = js.replaceAll("!0", "true");
+    js = js.replaceAll("void 0", "undefined");
 
     return js;
 }
