@@ -3,21 +3,21 @@ import {
     r as s,
     I as ie,
     _ as le,
-    x as ce,
-    aY as je,
+    s as ce,
+    aW as je,
     j as e,
-    v as we,
+    p as we,
     d as m,
-    as as be,
+    aq as be,
     b as ye,
-    G as Ce,
-    W as R,
+    A as Ce,
+    U as R,
     F as z,
     C as S,
-    H as O,
-    cn as I,
+    E as O,
+    cm as I,
     B as D,
-    p as ke,
+    w as ke,
     u as _,
     a as de,
     i as y,
@@ -26,21 +26,21 @@ import {
     D as Ie,
     m as he,
     o as x,
-    a_ as Ae,
-    ah as Me,
-    af as Oe,
-    a3 as $,
+    aZ as Ae,
+    af as Me,
+    ad as Oe,
+    a1 as $,
     f as De,
-    co as Le,
+    cn as Le,
     l as T,
-    cp as W,
-    aV as $e,
-    cq as _e,
+    co as W,
+    aT as $e,
+    cp as _e,
+    cq as Ee,
     cr as Pe,
-    cs as Ee,
-    cc as ue,
-    a7 as Be,
-    a5 as Fe
+    cb as ue,
+    a5 as Be,
+    a3 as Fe
 } from "./_index.js";
 import {
     d as me,
@@ -56,7 +56,7 @@ import {
     A as fe
 } from "./AccessibleAnchor.js";
 import {
-    b as G
+    b as U
 } from "./index-1.js";
 import {
     S as F
@@ -74,10 +74,10 @@ import {
     N as M
 } from "./NavigateTo.js";
 import {
-    a as Ge
+    a as Ue
 } from "./index-15.js";
 import {
-    C as Ue
+    C as Ge
 } from "./colors.js";
 import {
     n as He
@@ -86,7 +86,7 @@ import {
     u as Ve
 } from "./useWarningOnMountInDevelopment.js";
 import {
-    M as U,
+    M as G,
     D as Ke
 } from "./index-10.js";
 var qe = {
@@ -113,14 +113,14 @@ var qe = {
         name: "login",
         theme: "outlined"
     },
-    Ye = function(n, a) {
+    Je = function(n, a) {
         return s.createElement(ie, le({}, n, {
             ref: a,
             icon: qe
         }))
     },
-    Je = s.forwardRef(Ye),
-    Qe = {
+    Ye = s.forwardRef(Je),
+    Ze = {
         icon: {
             tag: "svg",
             attrs: {
@@ -137,13 +137,13 @@ var qe = {
         name: "menu",
         theme: "outlined"
     },
-    Xe = function(n, a) {
+    Qe = function(n, a) {
         return s.createElement(ie, le({}, n, {
             ref: a,
-            icon: Qe
+            icon: Ze
         }))
     },
-    Ze = s.forwardRef(Xe);
+    Xe = s.forwardRef(Qe);
 
 function et(t, n) {
     var a = s.useState(g()),
@@ -194,7 +194,7 @@ function et(t, n) {
     });
     return w
 }
-const H = Ge(() => we(() => import("./NotionContent.js"), __vite__mapDeps([0, 1, 2, 3]))),
+const H = Ue(() => we(() => import("./NotionContent.js"), __vite__mapDeps([0, 1, 2, 3]))),
     V = () => e.jsx(Ce, {
         active: !0,
         title: !1,
@@ -330,7 +330,7 @@ const H = Ge(() => we(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
     lt = m.div.attrs({
         className: "maxWidth flex vc between"
     })`
-  color: ${Ue.White};
+  color: ${Ge.White};
   padding: 20px;
   background: #730aad;
 `,
@@ -455,7 +455,7 @@ const H = Ge(() => we(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
             })
         })
     };
-var P = (t => (t.accountInformation = "accountInformation", t.gameSettings = "game-settings", t.billing = "billing", t.support = "support", t))(P || {}),
+var E = (t => (t.accountInformation = "accountInformation", t.gameSettings = "game-settings", t.billing = "billing", t.support = "support", t))(E || {}),
     mt = Object.defineProperty,
     gt = (t, n, a, o) => {
         for (var l = void 0, h = t.length - 1, g; h >= 0; h--)(g = t[h]) && (l = g(n, a, l) || l);
@@ -463,7 +463,7 @@ var P = (t => (t.accountInformation = "accountInformation", t.gameSettings = "ga
     };
 class xe {
     constructor() {
-        this.currentTab = P.accountInformation, he(this)
+        this.currentTab = E.accountInformation, he(this)
     }
 }
 gt([x], xe.prototype, "currentTab");
@@ -473,11 +473,11 @@ var ft = Object.defineProperty,
         return l && ft(n, a, l), l
     };
 const q = "",
-    Y = "",
     J = "",
-    Q = !1,
+    Y = "",
+    Z = !1,
+    Q = "",
     X = "",
-    Z = "",
     ee = 0,
     xt = x.array(),
     te = "",
@@ -488,8 +488,8 @@ const q = "",
     oe = "";
 class p {
     constructor() {
-        this.planName = q, this.planDescription = Y, this.billingInterval = J, this.hasNextCharge = Q, this.nextChargeAmount = X, this.nextChargeDate = Z, this.accountBalance = ee, this.charges = xt, this.cardName = te, this.last4DigitsOfCard = ne, this.stripePublicKey = se, this.canDowngrade = ae, this.downgradeMessage = re, this.downgradeDateMessage = oe, this.reset = () => {
-            this.planName = q, this.planDescription = Y, this.billingInterval = J, this.hasNextCharge = Q, this.nextChargeAmount = X, this.nextChargeDate = Z, this.accountBalance = ee, this.charges.replace([]), this.cardName = te, this.last4DigitsOfCard = ne, this.stripePublicKey = se, this.canDowngrade = ae, this.downgradeMessage = re, this.downgradeDateMessage = oe
+        this.planName = q, this.planDescription = J, this.billingInterval = Y, this.hasNextCharge = Z, this.nextChargeAmount = Q, this.nextChargeDate = X, this.accountBalance = ee, this.charges = xt, this.cardName = te, this.last4DigitsOfCard = ne, this.stripePublicKey = se, this.canDowngrade = ae, this.downgradeMessage = re, this.downgradeDateMessage = oe, this.reset = () => {
+            this.planName = q, this.planDescription = J, this.billingInterval = Y, this.hasNextCharge = Z, this.nextChargeAmount = Q, this.nextChargeDate = X, this.accountBalance = ee, this.charges.replace([]), this.cardName = te, this.last4DigitsOfCard = ne, this.stripePublicKey = se, this.canDowngrade = ae, this.downgradeMessage = re, this.downgradeDateMessage = oe
         }, he(this)
     }
 }
@@ -508,15 +508,15 @@ v([x], p.prototype, "canDowngrade");
 v([x], p.prototype, "downgradeMessage");
 v([x], p.prototype, "downgradeDateMessage");
 v([Ae], p.prototype, "reset");
-const E = {
+const P = {
         navigation: new xe,
         billing: new p
     },
-    pt = s.createContext(E),
+    pt = s.createContext(P),
     pe = t => {
         const {
             width: n
-        } = me.useWindowSize(), [a, o, l] = _(!1), [h, g] = s.useState(!1), [d, i] = s.useState(null), r = s.useRef(), [u] = G(r), w = s.useRef(), [c] = G(w);
+        } = me.useWindowSize(), [a, o, l] = _(!1), [h, g] = s.useState(!1), [d, i] = s.useState(null), r = s.useRef(), [u] = U(r), w = s.useRef(), [c] = U(w);
         return s.useEffect(() => {
             (!n || !u ? !1 : !c) && (!d || n > d) && i(n)
         }, [n, d, u, c]), s.useEffect(() => {
@@ -545,7 +545,7 @@ const E = {
                     children: e.jsx(D, {
                         onClick: o,
                         type: "text",
-                        icon: e.jsx(Ze, {})
+                        icon: e.jsx(Xe, {})
                     })
                 }) : e.jsx(jt, {
                     style: {
@@ -643,7 +643,7 @@ const E = {
                 children: e.jsx(D, {
                     type: "primary",
                     size: "large",
-                    icon: e.jsx(Je, {}),
+                    icon: e.jsx(Ye, {}),
                     block: o,
                     children: "Login"
                 })
@@ -681,7 +681,7 @@ const E = {
                     name: "far fa-credit-card"
                 }),
                 onClick: () => {
-                    E.navigation.currentTab = P.billing, M("/settings")
+                    P.navigation.currentTab = E.billing, M("/settings")
                 },
                 blockIf: [y]
             }, {
@@ -712,7 +712,7 @@ const E = {
                     name: "far fa-question-circle"
                 }),
                 onClick: () => {
-                    E.navigation.currentTab = P.support, M("/settings")
+                    P.navigation.currentTab = E.support, M("/settings")
                 },
                 blockIf: [y]
             }, {
@@ -727,7 +727,7 @@ const E = {
                 })
             }];
             return e.jsx(e.Fragment, {
-                children: e.jsxs(U, {
+                children: e.jsxs(G, {
                     style: {
                         width: 250
                     },
@@ -737,7 +737,7 @@ const E = {
                         }), e.jsx(Nt, {
                             children: yt(T().type)
                         })]
-                    }), r.filter(u => u.blockIf ? !u.blockIf.some(w => w()) : !0).map(u => e.jsx(U.Item, {
+                    }), r.filter(u => u.blockIf ? !u.blockIf.some(w => w()) : !0).map(u => e.jsx(G.Item, {
                         onClick: u.onClick,
                         children: e.jsxs("div", {
                             className: "flex vc",
@@ -758,7 +758,7 @@ const E = {
         return d.push({
             key: "gallery",
             item: r => e.jsx(N, {
-                path: Pe,
+                path: Ee,
                 icon: e.jsx(f, {
                     name: "far fa-search"
                 }),
@@ -778,7 +778,7 @@ const E = {
         }), d.push({
             key: "rewards",
             item: r => e.jsx(N, {
-                path: Ee,
+                path: Pe,
                 icon: e.jsx(f, {
                     name: "far fa-coins"
                 }),
@@ -905,8 +905,8 @@ const E = {
                         $hideBorder: t.hideBorder,
                         $borderColor: c,
                         children: e.jsx(pt.Provider, {
-                            value: E,
-                            children: e.jsxs(Pt, {
+                            value: P,
+                            children: e.jsxs(Et, {
                                 children: [e.jsx(Mt, {
                                     theme: t.theme
                                 }), Fe() ? e.jsx(Ct, {
@@ -953,12 +953,12 @@ const E = {
     display: none;
   }
 `,
-    Pt = m.div.attrs({
+    Et = m.div.attrs({
         className: "flex maxWidth between vc"
     })``,
-    Xt = t => e.jsx(Lt, {
+    Qt = t => e.jsx(Lt, {
         ...t
     });
 export {
-    yt as G, ut as N, Je as R, Xt as S, P as T, bt as a, pt as b, E as s
+    yt as G, ut as N, Ye as R, Qt as S, E as T, bt as a, pt as b, P as s
 };

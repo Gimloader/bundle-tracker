@@ -1,9 +1,9 @@
 const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/NotionContent.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/NotionContent-Ctz5Og9E.css"]))) => i.map(i => d[i]);
 import {
     j as t,
-    G as o,
+    A as o,
     r as s,
-    v as r
+    p as r
 } from "./_index.js";
 const i = s.lazy(() => r(() => import("./NotionContent.js"), __vite__mapDeps([0, 1, 2, 3]))),
     l = e => {

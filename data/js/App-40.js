@@ -1,5 +1,5 @@
 import {
-    q as f,
+    n as f,
     r as i,
     u as x,
     a as g,
@@ -8,7 +8,7 @@ import {
     e,
     d as j,
     M as C,
-    W as k,
+    U as k,
     D as y
 } from "./_index.js";
 import {
@@ -89,7 +89,7 @@ import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const Jt = () => {
+const Ht = () => {
         const {
             id: m
         } = f(), [p, n] = i.useState(""), [l, c, d] = x(!1), [s, o] = i.useState("");
@@ -167,6 +167,6 @@ const Jt = () => {
   background: ${e.BackgroundPurple};
 `;
 export {
-    Jt as
+    Ht as
     default
 };

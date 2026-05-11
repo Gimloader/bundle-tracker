@@ -1,8 +1,8 @@
 import {
-    av as O,
-    ay as Y,
+    at as O,
+    aw as Y,
     r as l,
-    x as Z
+    s as Z
 } from "./_index.js";
 var R, _;
 
@@ -16,7 +16,7 @@ function w() {
         c = /^[-+]0x[0-9a-f]+$/i,
         g = /^0b[01]+$/i,
         j = /^0o[0-7]+$/i,
-        x = parseInt,
+        T = parseInt,
         M = typeof O == "object" && O && O.Object === Object && O,
         V = typeof self == "object" && self && self.Object === Object && self,
         F = M || V || Function("return this")(),
@@ -29,12 +29,12 @@ function w() {
         };
 
     function G(e, t, f) {
-        var b, y, T, m, u, d, h = 0,
+        var b, y, x, m, u, d, h = 0,
             L = !1,
             p = !1,
             k = !0;
         if (typeof e != "function") throw new TypeError(i);
-        t = A(t) || 0, S(f) && (L = !!f.leading, p = "maxWait" in f, T = p ? B(A(f.maxWait) || 0, t) : T, k = "trailing" in f ? !!f.trailing : k);
+        t = A(t) || 0, S(f) && (L = !!f.leading, p = "maxWait" in f, x = p ? B(A(f.maxWait) || 0, t) : x, k = "trailing" in f ? !!f.trailing : k);
 
         function D(n) {
             var s = b,
@@ -50,13 +50,13 @@ function w() {
             var s = n - d,
                 v = n - h,
                 W = t - s;
-            return p ? q(W, T - v) : W
+            return p ? q(W, x - v) : W
         }
 
         function N(n) {
             var s = n - d,
                 v = n - h;
-            return d === void 0 || s >= t || s < 0 || p && v >= T
+            return d === void 0 || s >= t || s < 0 || p && v >= x
         }
 
         function E() {
@@ -112,7 +112,7 @@ function w() {
         if (typeof e != "string") return e === 0 ? e : +e;
         e = e.replace(o, "");
         var f = g.test(e);
-        return f || j.test(e) ? x(e.slice(2), f ? 2 : 8) : c.test(e) ? r : +e
+        return f || j.test(e) ? T(e.slice(2), f ? 2 : 8) : c.test(e) ? r : +e
     }
     return R = G, R
 }
@@ -148,11 +148,11 @@ var ie = {
             c = l.useState(o ? null : i),
             g = c[0],
             j = c[1],
-            x = re(j, r);
+            T = re(j, r);
         return Z(function() {
-            o && x(i)
+            o && T(i)
         }), te(function() {
-            x(i)
+            T(i)
         }, [i]), [g, j]
     };
 export {

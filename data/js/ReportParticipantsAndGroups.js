@@ -1,6 +1,6 @@
 import {
     j as i,
-    w as s
+    q as s
 } from "./_index.js";
 import {
     c as e

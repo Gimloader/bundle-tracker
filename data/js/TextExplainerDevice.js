@@ -20,7 +20,7 @@ import {
     D as u
 } from "./TutorialConsts.js";
 import {
-    at as A
+    ar as A
 } from "./_index.js";
 import "./MapModeType.js";
 import "./MapStyle.js";

@@ -1,16 +1,16 @@
 import {
-    z as r,
+    x as r,
     r as l,
     j as e,
     d as s,
     a as X,
-    at as st,
+    ar as st,
     F as rt,
-    dM as ct,
+    dL as ct,
     u as lt
 } from "./_index.js";
 import {
-    o as L
+    o as I
 } from "./mobxreact.esm.js";
 import {
     s as E,
@@ -34,7 +34,7 @@ import {
     L as ft
 } from "./LazyLatexRenderer.js";
 import {
-    b as H
+    b as L
 } from "./index-1.js";
 import {
     m as B,
@@ -45,7 +45,7 @@ import {
     A as tt
 } from "./index-17.js";
 import {
-    u as D
+    u as z
 } from "./use-motion-value.js";
 const U = new Map,
     et = new Map,
@@ -77,7 +77,7 @@ const Ct = () => {
   align-items: center;
   text-align: left;
 `,
-    At = L(t => {
+    At = I(t => {
         const {
             readToMe: n
         } = l.useContext(nt), {
@@ -312,10 +312,10 @@ const Ct = () => {
         })]
     }),
     Qt = [49, 50, 51, 52],
-    $t = L(t => {
+    $t = I(t => {
         const [n, i] = r.useState(!0), [o, c] = r.useState(), {
             readToMe: a
-        } = r.useContext(nt), h = r.useRef(null), [d] = H(h), g = r.useMemo(() => st.take(q(t.eas), 4), []);
+        } = r.useContext(nt), h = r.useRef(null), [d] = L(h), g = r.useMemo(() => st.take(q(t.eas), 4), []);
         if (r.useEffect(() => {
                 o && t.onQuestionAnswered(o)
             }, [o]), t.type === p.textInput) return e.jsx(J, {
@@ -371,7 +371,7 @@ const Ct = () => {
             i = r.useMemo(() => t.textShownWhenAnsweringCorrectly, []),
             o = () => t.customCorrectTextAnimation && t.customCorrectTextAnimation.className ? t.customCorrectTextAnimation.className : "animated tada",
             c = () => t.customCorrectTextAnimation && t.customCorrectTextAnimation.duration ? t.customCorrectTextAnimation.duration : 1;
-        return e.jsx(Ht, {
+        return e.jsx(Lt, {
             style: {
                 color: n,
                 animationDuration: `${c()}s`
@@ -384,10 +384,10 @@ const Ct = () => {
             })
         })
     },
-    Ht = s.div.attrs({
+    Lt = s.div.attrs({
         className: "maxAll flex-center"
     })``,
-    It = t => e.jsx(Lt, {
+    Ht = t => e.jsx(It, {
         backgroundColor: t.correctAnswerColor.background,
         children: e.jsx(Pt, {
             textShownWhenAnsweringCorrectly: t.textShownWhenAnsweringCorrectly,
@@ -395,7 +395,7 @@ const Ct = () => {
             textColor: t.correctAnswerColor.text
         })
     }),
-    Lt = s.div.attrs({
+    It = s.div.attrs({
         className: "maxWidth flex-center"
     })`
   height: 40%;
@@ -412,7 +412,7 @@ const Ct = () => {
     },
     Nt = t => {
         const n = r.useRef(null),
-            [i] = H(n),
+            [i] = L(n),
             o = () => e.jsx(it, {
                 ref: n,
                 background: t.background,
@@ -458,7 +458,7 @@ const Ct = () => {
 `,
     Rt = t => {
         const n = 1 / t.actions.length * 100;
-        return e.jsx(zt, {
+        return e.jsx(Dt, {
             children: t.actions.filter(i => i !== null).map(i => e.jsx(Nt, {
                 ...i,
                 heightPercentage: n,
@@ -469,13 +469,13 @@ const Ct = () => {
             }, i.text))
         })
     },
-    zt = s.div.attrs({
+    Dt = s.div.attrs({
         className: "maxWidth"
     })`
   height: 60%;
   text-align: center;
 `,
-    Dt = t => {
+    zt = t => {
         l.useEffect(() => (document.addEventListener("keydown", n), () => {
             document.removeEventListener("keydown", n)
         }), [t.canAdvanceToQuestions, t.blockKeyboardEvents]);
@@ -484,7 +484,7 @@ const Ct = () => {
         };
         return e.jsxs(Kt, {
             defaultBackgroundColor: t.defaultBackgroundColor,
-            children: [e.jsx(It, {
+            children: [e.jsx(Ht, {
                 textShownWhenAnsweringCorrectly: t.textShownWhenAnsweringCorrectly,
                 customCorrectTextAnimation: t.customCorrectTextAnimation,
                 correctAnswerColor: t.correctAnswerColor
@@ -649,7 +649,7 @@ O.defaultProps = {
     mode: "single",
     forceSingleModeWidth: !1
 };
-let I = O;
+let H = O;
 class se extends r.Component {
     constructor() {
         super(...arguments), this.state = {
@@ -806,7 +806,7 @@ const re = t => e.jsxs(Yt, {
                     },
                     onClick: y,
                     children: e.jsx(ne, {
-                        children: e.jsx(I, {
+                        children: e.jsx(H, {
                             text: e.jsxs(oe, {
                                 children: [e.jsx("div", {
                                     children: h
@@ -838,7 +838,7 @@ const re = t => e.jsxs(Yt, {
         })
     },
     ue = t => {
-        const [n, i] = l.useState("message"), o = l.useRef(null), [c, a] = H(o), h = l.useRef(null), [d, g] = H(h), y = l.useMemo(() => t.secondsToWaitBeforeContinue ? t.secondsToWaitBeforeContinue : 3, [t.secondsToWaitBeforeContinue]), m = l.useMemo(() => t.lastQuestion ? t.lastQuestion.answers.find(A => A.correct) : null, [t.lastQuestion]);
+        const [n, i] = l.useState("message"), o = l.useRef(null), [c, a] = L(o), h = l.useRef(null), [d, g] = L(h), y = l.useMemo(() => t.secondsToWaitBeforeContinue ? t.secondsToWaitBeforeContinue : 3, [t.secondsToWaitBeforeContinue]), m = l.useMemo(() => t.lastQuestion ? t.lastQuestion.answers.find(A => A.correct) : null, [t.lastQuestion]);
         wt(() => {
             i("answer")
         }, t.showCorrectAnswerAfterMs || 800);
@@ -847,9 +847,9 @@ const re = t => e.jsxs(Yt, {
             v = l.useMemo(() => n === "answer", [n]),
             u = l.useMemo(() => a * j.marginPercentage, [a]),
             T = l.useMemo(() => {
-                const z = j.textHeightPercentage * a / g,
+                const D = j.textHeightPercentage * a / g,
                     k = c * j.maxTextWidthPercentage / d;
-                return Math.min(z, k)
+                return Math.min(D, k)
             }, [a, g, d, c]),
             M = l.useMemo(() => {
                 if (f) return 0;
@@ -876,7 +876,7 @@ const re = t => e.jsxs(Yt, {
                         scale: f ? 1 : T,
                         opacity: f ? 1 : .8
                     },
-                    children: e.jsx(I, {
+                    children: e.jsx(H, {
                         max: 170,
                         mode: "single",
                         text: e.jsx("div", {
@@ -932,7 +932,7 @@ const re = t => e.jsxs(Yt, {
             })
         })
     },
-    de = t => t.lastQuestionCorrect ? e.jsx(Dt, {
+    de = t => t.lastQuestionCorrect ? e.jsx(zt, {
         textShownWhenAnsweringCorrectly: t.textShownWhenAnsweringCorrectly,
         customCorrectTextAnimation: t.customCorrectTextAnimation,
         onActionSound: t.onActionSound,
@@ -1003,7 +1003,7 @@ const re = t => e.jsxs(Yt, {
   width: 100%;
   will-change: transform;
 `,
-    he = L(t => (r.useEffect(() => (E.readToMe.canPlayAgain = !0, () => {
+    he = I(t => (r.useEffect(() => (E.readToMe.canPlayAgain = !0, () => {
         E.readToMe.canPlayAgain = !1
     }), []), e.jsx(ge, {
         style: {
@@ -1013,8 +1013,8 @@ const re = t => e.jsxs(Yt, {
         defaultBackgroundColor: t.defaultBackgroundColor || w.defaultBackground,
         children: t.children
     }))),
-    je = L(t => {
-        const [n, i] = r.useState(!1), [o, c] = r.useState("questions"), [a, h] = r.useState(!1), [d, g] = r.useState(t.ecc), [y, m] = r.useState(), x = D("0%"), f = D(1), v = D(t.disableFadeInOnMount ? 1 : 0);
+    je = I(t => {
+        const [n, i] = r.useState(!1), [o, c] = r.useState("questions"), [a, h] = r.useState(!1), [d, g] = r.useState(t.ecc), [y, m] = r.useState(), x = z("0%"), f = z(1), v = z(t.disableFadeInOnMount ? 1 : 0);
         r.useEffect(() => {
             m(t.ecc)
         }, [t.ecc]), r.useEffect(() => {
@@ -1103,7 +1103,7 @@ const re = t => e.jsxs(Yt, {
                 };
                 return t.responseActions ? [...t.responseActions, k] : [k]
             },
-            z = () => e.jsx(me, {
+            D = () => e.jsx(me, {
                 style: {
                     opacity: f
                 },
@@ -1130,7 +1130,7 @@ const re = t => e.jsxs(Yt, {
                     onLockedChange: t.onLockedChange
                 })
             }),
-            V = () => o === "questions" ? R() : z();
+            V = () => o === "questions" ? R() : D();
         return e.jsx(tt, {
             mode: "wait",
             children: V()
@@ -1147,5 +1147,5 @@ const re = t => e.jsxs(Yt, {
   will-change: opacity;
 `;
 export {
-    q as D, kt as E, vt as F, je as G, nt as S, I as T
+    q as D, kt as E, vt as F, je as G, nt as S, H as T
 };

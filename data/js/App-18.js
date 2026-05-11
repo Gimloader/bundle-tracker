@@ -1,17 +1,17 @@
 import {
-    A as T,
+    y as T,
     j as t,
-    H as b,
-    q as k,
-    E as w,
+    E as b,
+    n as k,
+    z as w,
     r as n,
     f as I,
     C as N,
     T as A,
-    G
+    A as E
 } from "./_index.js";
 import {
-    u as E,
+    u as G,
     C as F,
     G as S,
     a as L,
@@ -27,14 +27,14 @@ import {
 import {
     a as _,
     b as $,
-    u as q,
-    R as H
+    u as z,
+    R as W
 } from "./ReportAccuracyMeter.js";
 import {
-    R as W
+    R as q
 } from "./ReportParticipantsAndGroups.js";
 import {
-    F as z
+    F as H
 } from "./useClasses.js";
 import {
     U as K
@@ -113,7 +113,7 @@ const U = "group-reports",
                     }
                 }
             },
-            children: t.jsx(z, {
+            children: t.jsx(H, {
                 className: "maxWidth",
                 dataSource: e.data.map(r => ({
                     key: r._id,
@@ -188,7 +188,7 @@ const U = "group-reports",
         title: "Participants",
         dataIndex: "groups",
         key: "report-groups",
-        render: (e, r) => t.jsx(W, {
+        render: (e, r) => t.jsx(q, {
             reportId: r._id,
             participants: r.participants,
             groups: []
@@ -201,13 +201,13 @@ const U = "group-reports",
             isLoading: y,
             error: m,
             data: o
-        } = E(e), {
+        } = G(e), {
             isLoading: j,
             error: l,
             data: i,
             isFetching: P
         } = B(p, e), [v, C] = n.useState(0), d = n.useRef(null);
-        q(d, s => {
+        z(d, s => {
             var f;
             C(((f = s.target) == null ? void 0 : f.offsetTop) ?? 0)
         });
@@ -218,7 +218,7 @@ const U = "group-reports",
         n.useEffect(() => {
             window.scrollTo(0, 0)
         }, [p]);
-        const u = !i || !i.totalItems ? null : t.jsx(H, {
+        const u = !i || !i.totalItems ? null : t.jsx(W, {
                 total: i.totalItems,
                 current: p,
                 onPageChange: s => {
@@ -229,7 +229,7 @@ const U = "group-reports",
             }),
             R = () => {
                 var s;
-                return y || j ? t.jsx(G, {
+                return y || j ? t.jsx(E, {
                     paragraph: {
                         rows: 4
                     },

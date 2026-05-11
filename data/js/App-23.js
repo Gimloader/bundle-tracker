@@ -1,7 +1,7 @@
 import {
     j as t,
-    c2 as l,
-    W as c,
+    c1 as l,
+    U as c,
     d,
     F as a,
     c as g,
@@ -10,9 +10,9 @@ import {
     r as u,
     a as h,
     S as C,
-    bB as G,
+    bA as G,
     B as j,
-    c3 as b,
+    c2 as b,
     e as y
 } from "./_index.js";
 import {
@@ -128,15 +128,15 @@ const $ = d(g)`
             })]
         })]
     }),
-    W = d.div``,
-    F = d.h2`
+    F = d.div``,
+    H = d.h2`
   text-align: center;
   font-size: 36px;
   font-family: ${c.SFPro};
   font-weight: ${a.UltraBold};
 `,
-    m = e => e.gifts && e.gifts.length !== 0 ? t.jsxs(W, {
-        children: [t.jsx(F, {
+    m = e => e.gifts && e.gifts.length !== 0 ? t.jsxs(F, {
+        children: [t.jsx(H, {
             children: e.title
         }), e.gifts.map(i => t.jsx(B, {
             value: i.value,
@@ -145,14 +145,14 @@ const $ = d(g)`
             purchaseDate: e.hidePurchaseDate ? null : i.createdAt
         }, i.code))]
     }) : null,
-    H = d.div`
+    W = d.div`
   width: 80%;
 
   @media (max-width: 900px) {
     width: 100%;
   }
 `,
-    A = e => t.jsxs(H, {
+    A = e => t.jsxs(W, {
         children: [t.jsx(m, {
             title: "Gifts you've purchased",
             gifts: e.purchasedGiftCards

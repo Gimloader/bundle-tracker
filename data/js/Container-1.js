@@ -1,195 +1,193 @@
 const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/SchoolLibrary.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/KitPreview.js", "assets/ImagePreview.js", "assets/getCloudinaryUrl.js", "assets/AccessibleAnchor.js", "assets/NavigateTo.js", "assets/index.es.js"]))) => i.map(i => d[i]);
 import {
     r as l,
-    I as ft,
-    _ as xt,
-    m as Ce,
-    o as we,
+    I as dt,
+    _ as ut,
+    m as ke,
+    o as Se,
     u as k,
     j as e,
     S as le,
     B as b,
-    D as Ie,
+    D as Ce,
     a as v,
     t as _,
     d as a,
     C as ce,
     F as T,
-    b as g,
+    b as p,
     c as K,
     e as h,
     i as w,
-    R as gt,
-    f as L,
+    R as ht,
+    f as E,
     K as ee,
-    g as pt,
-    h as jt,
-    k as P,
-    M as F,
-    T as U,
+    g as mt,
+    h as ft,
+    k as L,
+    M,
+    T as B,
     l as I,
-    n as yt,
-    p as Te,
-    q as bt,
-    s as vt,
-    v as kt,
-    w as de,
-    x as Ne,
-    y as St,
+    n as xt,
+    p as gt,
+    q as de,
+    s as we,
+    v as pt,
     N as xe,
-    z as q,
-    A as Ct,
-    E as wt,
-    G as It,
-    H as Tt,
-    J as Nt,
-    L as E,
-    O as Re,
+    w as jt,
+    x as q,
+    y as yt,
+    z as bt,
+    A as vt,
+    E as kt,
+    G as St,
+    H as D,
+    J as Ie,
+    L as Te,
+    O as Ne,
     P as $e,
-    Q as Fe,
-    U as Me,
-    V as te,
-    W as O,
-    X as Ae,
-    Y as Rt,
-    Z as $t,
-    $ as Ft,
-    a0 as Mt,
-    a1 as ge,
-    a2 as At,
-    a3 as _t
+    Q as te,
+    U as P,
+    V as Fe,
+    W as Ct,
+    X as wt,
+    Y as It,
+    Z as Tt,
+    $ as ge,
+    a0 as Nt,
+    a1 as $t
 } from "./_index.js";
 import {
-    o as _e,
-    i as Dt,
-    P as Et
+    o as Me,
+    i as Ft,
+    P as Mt
 } from "./mobxreact.esm.js";
 import {
-    I as Lt
+    I as Rt
 } from "./ImagePreview.js";
 import {
-    u as De,
-    i as R,
+    u as Re,
+    i as $,
     I as z,
-    A as Pt,
-    a as Ot,
-    E as Bt,
-    b as B,
+    A as At,
+    a as _t,
+    E as Dt,
+    b as W,
     H,
     S as Y,
     c as ue,
-    d as Ut,
-    e as Wt
+    d as Et,
+    e as Lt
 } from "./App-1.js";
 import {
     U as G,
     g as J,
     F as Q,
     a as pe,
-    T as zt
+    T as Pt
 } from "./App-2.js";
 import {
-    N as $
+    N as F
 } from "./NavigateTo.js";
 import {
     F as C
 } from "./FontAwesomeIcon.js";
 import {
-    D as Gt
+    D as Ot
 } from "./index-6.js";
 import {
-    I as Ee
+    I as Ae
 } from "./index-3.js";
 import {
     S as he
 } from "./index-2.js";
 import {
-    s as Le
+    s as _e
 } from "./index-4.js";
 import {
-    U as Kt
+    U as Bt
 } from "./CopyKit.js";
 import {
-    T as Ht
+    T as Ut
 } from "./index-12.js";
 import {
-    R as Yt
+    R as zt
 } from "./PlayCircleOutlined.js";
 import {
-    R as Vt
+    R as Wt
 } from "./PaperClipOutlined.js";
 import {
-    D as Pe,
+    D as De,
     M as N
 } from "./index-10.js";
 import {
-    R as qt
+    R as Gt
 } from "./EditOutlined.js";
 import {
-    R as Jt
+    R as Kt
 } from "./CopyOutlined.js";
 import {
     R as je,
-    u as Qt,
-    F as Zt
+    u as Ht,
+    F as Yt
 } from "./useClasses.js";
 import {
-    R as Xt
+    R as Vt
 } from "./DeleteOutlined.js";
 import {
-    R as es
+    R as qt
 } from "./FilterOutlined.js";
 import {
-    e as ts
+    e as Jt
 } from "./react-flip-move.es.js";
 import {
-    A as D
+    A as O
 } from "./AccessibleAnchor.js";
 import {
-    m as ss
+    m as Qt
 } from "./motion.js";
 import {
-    T as Oe
+    T as Ee
 } from "./index-14.js";
 import {
-    T as Be
-} from "./index-5.js";
-import {
-    R as Ue,
+    R as Le,
     H as Z,
-    a as rs
+    a as Zt
 } from "./Question.js";
 import {
-    R as We
+    R as Pe
 } from "./RedirectToHomepage.js";
 import {
-    u as os,
-    R as ns,
-    a as is,
-    b as as
+    T as Xt
+} from "./index-5.js";
+import {
+    u as es,
+    R as ts,
+    a as ss,
+    b as rs
 } from "./ReportAccuracyMeter.js";
 import {
-    u as ls
+    u as ns
 } from "./useQuery.js";
 import {
-    R as cs
+    R as os
 } from "./ReportParticipantsAndGroups.js";
 import {
-    u as ds
+    u as is
 } from "./useIntervalWhen.js";
 import {
-    N as us,
-    S as hs,
-    a as ms
+    N as as,
+    S as ls,
+    a as cs
 } from "./App-4.js";
 import {
-    R as fs
+    R as ds
 } from "./StarOutlined.js";
 import {
-    S as xs
+    S as us
 } from "./App-5.js";
 import {
-    S as gs
+    S as hs
 } from "./Shortcut.js";
 import "./getCloudinaryUrl.js";
 import "./Sizes.js";
@@ -234,7 +232,7 @@ import "./index-15.js";
 import "./colors.js";
 import "./useWarningOnMountInDevelopment.js";
 import "./Names.js";
-var ps = {
+var ms = {
         icon: {
             tag: "svg",
             attrs: {
@@ -251,53 +249,53 @@ var ps = {
         name: "fullscreen",
         theme: "outlined"
     },
-    js = function(s, r) {
-        return l.createElement(ft, xt({}, s, {
+    fs = function(s, r) {
+        return l.createElement(dt, ut({}, s, {
             ref: r,
-            icon: ps
+            icon: ms
         }))
     },
-    ys = l.forwardRef(js),
-    bs = Object.defineProperty,
-    vs = (t, s, r, n) => {
-        for (var o = void 0, i = t.length - 1, c; i >= 0; i--)(c = t[i]) && (o = c(s, r, o) || o);
-        return o && bs(s, r, o), o
+    xs = l.forwardRef(fs),
+    gs = Object.defineProperty,
+    ps = (t, s, r, o) => {
+        for (var n = void 0, i = t.length - 1, c; i >= 0; i--)(c = t[i]) && (n = c(s, r, n) || n);
+        return n && gs(s, r, n), n
     };
-class ze {
+class Oe {
     constructor() {
-        this.archiveModalShow = !1, Ce(this)
+        this.archiveModalShow = !1, ke(this)
     }
 }
-vs([we], ze.prototype, "archiveModalShow");
-var ks = Object.defineProperty,
-    Ss = (t, s, r, n) => {
-        for (var o = void 0, i = t.length - 1, c; i >= 0; i--)(c = t[i]) && (o = c(s, r, o) || o);
-        return o && ks(s, r, o), o
+ps([Se], Oe.prototype, "archiveModalShow");
+var js = Object.defineProperty,
+    ys = (t, s, r, o) => {
+        for (var n = void 0, i = t.length - 1, c; i >= 0; i--)(c = t[i]) && (n = c(s, r, n) || n);
+        return n && js(s, r, n), n
     };
-let Ge = class {
+let Be = class {
     constructor() {
-        this.kitAttemptedAction = "open", Ce(this)
+        this.kitAttemptedAction = "open", ke(this)
     }
 };
-Ss([we], Ge.prototype, "kitAttemptedAction");
+ys([Se], Be.prototype, "kitAttemptedAction");
 const se = {
-        navigation: new ze,
-        kits: new Ge
+        navigation: new Oe,
+        kits: new Be
     },
-    Ke = l.createContext(se),
-    Cs = t => {
+    Ue = l.createContext(se),
+    bs = t => {
         const {
             data: {
                 folders: s
             },
             isLoading: r
-        } = De(), [n, o, i] = k(!1), [c, u] = l.useState("");
+        } = Re(), [o, n, i] = k(!1), [c, d] = l.useState("");
         l.useEffect(() => {
-            t.open || u("")
+            t.open || d("")
         }, [t.open]);
         const x = c.length < 2,
             m = () => {
-                x || n || (o(), v({
+                x || o || (n(), v({
                     url: "/api/folders/new",
                     data: {
                         title: c
@@ -310,11 +308,11 @@ const se = {
                                 gameId: t.kitId
                             },
                             success: () => {
-                                t.close(), R()
+                                t.close(), $()
                             },
-                            error: p => {
+                            error: g => {
                                 _({
-                                    e: p,
+                                    e: g,
                                     default: {
                                         title: "Error adding kit to folder"
                                     }
@@ -340,12 +338,12 @@ const se = {
                         size: "large"
                     })
                 });
-                const f = s == null ? void 0 : s.filter(p => !p.games.includes(t.kitId)).sort((p, d) => p.title.localeCompare(d.title));
+                const f = s == null ? void 0 : s.filter(g => !g.games.includes(t.kitId)).sort((g, u) => g.title.localeCompare(u.title));
                 return e.jsxs("div", {
-                    children: [e.jsx(Ee, {
+                    children: [e.jsx(Ae, {
                         placeholder: "New folder name...",
                         value: c,
-                        onChange: p => u(p.target.value),
+                        onChange: g => d(g.target.value),
                         onPressEnter: m
                     }), e.jsx(b, {
                         block: !0,
@@ -354,14 +352,14 @@ const se = {
                             marginTop: 7
                         },
                         disabled: x,
-                        loading: n,
+                        loading: o,
                         onClick: m,
                         children: "Create Folder"
                     }), f.length ? e.jsxs(e.Fragment, {
-                        children: [e.jsx(Ie, {}), e.jsx(ws, {
-                            folders: f.map(p => ({
-                                _id: p._id,
-                                name: p.title
+                        children: [e.jsx(Ce, {}), e.jsx(vs, {
+                            folders: f.map(g => ({
+                                _id: g._id,
+                                name: g.title
                             })),
                             kitId: t.kitId,
                             close: t.close
@@ -369,7 +367,7 @@ const se = {
                     }) : null]
                 })
             };
-        return e.jsx(Gt, {
+        return e.jsx(Ot, {
             open: t.open,
             onClose: t.close,
             width: 375,
@@ -383,8 +381,8 @@ const se = {
             children: j()
         })
     },
-    ws = t => {
-        const [s, r, n] = k(!1), o = i => {
+    vs = t => {
+        const [s, r, o] = k(!1), n = i => {
             s || (r(), v({
                 url: "/api/folders/addGame",
                 data: {
@@ -392,7 +390,7 @@ const se = {
                     gameId: t.kitId
                 },
                 success: () => {
-                    t.close(), R(), Le.success({
+                    t.close(), $(), _e.success({
                         content: "Kit added to folder!"
                     })
                 },
@@ -404,15 +402,15 @@ const se = {
                         }
                     })
                 },
-                both: n
+                both: o
             }))
         };
         return e.jsx(he, {
             direction: "vertical",
             size: 7,
             className: "maxWidth",
-            children: t.folders.map(i => e.jsxs(Is, {
-                onClick: () => o(i._id),
+            children: t.folders.map(i => e.jsxs(ks, {
+                onClick: () => n(i._id),
                 children: [e.jsx("div", {
                     style: {
                         marginRight: 8
@@ -426,7 +424,7 @@ const se = {
             }, i._id))
         })
     },
-    Is = a.div.attrs({
+    ks = a.div.attrs({
         className: "flex vc"
     })`
   padding: 12px 20px;
@@ -438,7 +436,7 @@ const se = {
     background: rgba(0, 0, 0, 0.1);
   }
 `,
-    Ts = {
+    Ss = {
         title: e.jsx(e.Fragment, {
             children: "Create folders with Pro"
         }),
@@ -449,38 +447,38 @@ const se = {
     re = 80,
     ye = 140,
     A = 7,
-    He = a.div`
+    ze = a.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `,
-    Ye = a.div`
+    We = a.div`
   display: flex;
   align-items: center;
   width: calc(100% - 182px);
 `,
-    Ve = a.div`
+    Ge = a.div`
   margin-right: 20px;
   flex: 1;
   margin-left: 12px;
   overflow: hidden;
   max-width: 100%;
 `,
-    qe = a.div`
+    Ke = a.div`
   font-weight: ${T.Bold};
   font-size: 23px;
   max-width: 100%;
   display: flex;
   align-items: center;
 `,
-    Ns = a.div`
+    Cs = a.div`
   max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 `,
-    Je = a.div`
+    He = a.div`
   opacity: 0.7;
   font-size: 15;
   margin-top: -7px;
@@ -488,86 +486,86 @@ const se = {
   white-space: nowrap;
   text-overflow: ellipsis;
 `,
-    Rs = a.div`
+    ws = a.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
 `,
-    $s = a.div`
+    Is = a.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 10px;
 `,
-    Fs = a.div`
+    Ts = a.div`
   display: flex;
   align-items: center;
   justify-content: center;
 `,
-    Ms = _e(t => {
+    Ns = Me(t => {
         const {
             kits: s,
             navigation: r
-        } = l.useContext(Ke), [n, o, i] = k(!1), [c, u, x] = k(!1), [m, j] = l.useState(z.liveGame), [f, p] = l.useState(null), {
-            game: d
-        } = t, M = l.useMemo(() => d.createdAt ? `Created ${g(d.createdAt).fromNow()}` : "", [d.editCount, d.updatedAt, d.createdAt]), y = l.useCallback(S => d.isArchived ? (s.kitAttemptedAction = S, r.archiveModalShow = !0, !0) : !1, [d.isArchived]), W = () => {
-            y("play") || (j(z.liveGame), u())
-        }, ot = () => {
-            y("assign") || (j(z.assignment), u())
+        } = l.useContext(Ue), [o, n, i] = k(!1), [c, d, x] = k(!1), [m, j] = l.useState(z.liveGame), [f, g] = l.useState(null), {
+            game: u
+        } = t, R = l.useMemo(() => u.createdAt ? `Created ${p(u.createdAt).fromNow()}` : "", [u.editCount, u.updatedAt, u.createdAt]), y = l.useCallback(S => u.isArchived ? (s.kitAttemptedAction = S, r.archiveModalShow = !0, !0) : !1, [u.isArchived]), U = () => {
+            y("play") || (j(z.liveGame), d())
+        }, et = () => {
+            y("assign") || (j(z.assignment), d())
         }, V = () => {
-            y("open") || $(`/view/${d._id}`)
-        }, nt = () => {
-            y("edit") || $(ee + `/${d._id}/editor`)
-        }, it = () => {
+            y("open") || F(`/view/${u._id}`)
+        }, tt = () => {
+            y("edit") || F(ee + `/${u._id}/editor`)
+        }, st = () => {
             if (!y("copy")) {
-                if (B() && !L()) {
-                    p({
+                if (W() && !E()) {
+                    g({
                         id: "self-copy",
-                        ...Kt
+                        ...Bt
                     });
                     return
                 }
-                pt({
-                    kitId: d._id,
+                mt({
+                    kitId: u._id,
                     onSuccess: () => {
-                        R(), $(P)
+                        $(), F(L)
                     },
-                    onFailure: () => jt({
+                    onFailure: () => ft({
                         title: "Error copying kit"
                     })
                 })
             }
-        }, at = () => {
+        }, rt = () => {
             if (!y("make changes to")) {
-                if (B() && !L()) {
-                    p({
+                if (W() && !E()) {
+                    g({
                         id: "folders",
-                        ...Ts
+                        ...Ss
                     });
                     return
                 }
-                o()
+                n()
             }
         }, fe = S => {
             v({
                 url: "/api/games/archived",
                 data: {
-                    id: d._id,
+                    id: u._id,
                     archived: S
                 },
-                success: () => R()
+                success: () => $()
             })
-        }, lt = () => fe(!0), ct = () => fe(!1), dt = () => {
+        }, nt = () => fe(!0), ot = () => fe(!1), it = () => {
             v({
                 url: "/api/folders/removeGame",
                 method: "post",
                 data: {
-                    gameId: d._id,
+                    gameId: u._id,
                     folderId: t.folderId
                 },
                 success: () => {
-                    R()
+                    $()
                 },
                 error: S => {
                     _({
@@ -578,8 +576,8 @@ const se = {
                     })
                 }
             })
-        }, ut = () => {
-            F.confirm({
+        }, at = () => {
+            M.confirm({
                 title: "Are you sure you want to delete this kit?",
                 cancelText: "No",
                 okText: "Yes",
@@ -587,10 +585,10 @@ const se = {
                     v({
                         url: "/api/games/delete",
                         data: {
-                            id: d._id
+                            id: u._id
                         },
                         success: () => {
-                            R()
+                            $()
                         },
                         error: S => _({
                             e: S,
@@ -601,72 +599,72 @@ const se = {
                     })
                 }
             })
-        }, ht = () => {
+        }, lt = () => {
             const {
                 isArchived: S
-            } = d;
+            } = u;
             return e.jsxs(N, {
                 children: [e.jsxs(N.Item, {
                     onClick: V,
-                    children: [e.jsx(ys, {
+                    children: [e.jsx(xs, {
                         style: {
                             marginRight: A
                         }
                     }), "Open"]
                 }, "open"), e.jsxs(N.Item, {
-                    onClick: nt,
-                    children: [e.jsx(qt, {
+                    onClick: tt,
+                    children: [e.jsx(Gt, {
                         style: {
                             marginRight: A
                         }
                     }), "Edit"]
                 }, "edit"), e.jsxs(N.Item, {
-                    onClick: it,
-                    children: [e.jsx(Jt, {
+                    onClick: st,
+                    children: [e.jsx(Kt, {
                         style: {
                             marginRight: A
                         }
                     }), "Copy"]
                 }, "copy"), t.folderId ? null : e.jsxs(N.Item, {
-                    onClick: at,
+                    onClick: rt,
                     children: [e.jsx(je, {
                         style: {
                             marginRight: A
                         }
                     }), "Add to Folder"]
                 }, "folder"), t.folderId ? e.jsxs(N.Item, {
-                    onClick: dt,
+                    onClick: it,
                     children: [e.jsx(je, {
                         style: {
                             marginRight: A
                         }
                     }), "Remove from Folder"]
                 }, "folder") : null, S ? e.jsxs(N.Item, {
-                    onClick: ut,
-                    children: [e.jsx(Xt, {
+                    onClick: at,
+                    children: [e.jsx(Vt, {
                         style: {
                             marginRight: A
                         }
                     }), "Delete"]
                 }, "delete") : null, e.jsxs(N.Item, {
-                    onClick: S ? ct : lt,
-                    children: [e.jsx(es, {
+                    onClick: S ? ot : nt,
+                    children: [e.jsx(qt, {
                         style: {
                             marginRight: A
                         }
                     }), S ? "Unarchive" : "Archive"]
                 }, "archive")]
             })
-        }, mt = () => m === z.assignment && !L() ? e.jsx(G, {
+        }, ct = () => m === z.assignment && !E() ? e.jsx(G, {
             id: "assignment creation",
             visible: c,
             close: x,
             copy: {
-                title: Ot,
-                description: Pt
+                title: _t,
+                description: At
             }
-        }) : e.jsx(Bt, {
-            gameId: d._id,
+        }) : e.jsx(Dt, {
+            gameId: u._id,
             close: x,
             mode: m
         });
@@ -680,78 +678,78 @@ const se = {
                         marginBottom: 12,
                         overflow: "hidden"
                     },
-                    children: e.jsxs(He, {
-                        children: [e.jsxs(Ye, {
+                    children: e.jsxs(ze, {
+                        children: [e.jsxs(We, {
                             onClick: V,
                             children: [e.jsx("div", {
-                                children: e.jsx(Lt, {
-                                    image: d.gif,
+                                children: e.jsx(Rt, {
+                                    image: u.gif,
                                     size: re,
                                     blockModalOpen: !0,
                                     onClick: V
                                 })
-                            }), e.jsxs(Ve, {
-                                children: [e.jsxs(qe, {
-                                    children: [e.jsx(Ns, {
-                                        children: d.title
-                                    }), d.isArchived && e.jsx(Ht, {
+                            }), e.jsxs(Ge, {
+                                children: [e.jsxs(Ke, {
+                                    children: [e.jsx(Cs, {
+                                        children: u.title
+                                    }), u.isArchived && e.jsx(Ut, {
                                         style: {
                                             marginLeft: 5
                                         },
                                         children: "Archived"
                                     })]
-                                }), e.jsx(Je, {
-                                    children: M
+                                }), e.jsx(He, {
+                                    children: R
                                 })]
                             })]
-                        }), e.jsxs(Rs, {
-                            children: [e.jsxs($s, {
+                        }), e.jsxs(ws, {
+                            children: [e.jsxs(Is, {
                                 children: [e.jsx(b, {
                                     size: "large",
                                     type: "primary",
-                                    icon: e.jsx(Yt, {}),
+                                    icon: e.jsx(zt, {}),
                                     style: {
                                         width: ye,
                                         backgroundColor: "#2e7d32",
                                         borderColor: "#2e7d32"
                                     },
-                                    onClick: W,
+                                    onClick: U,
                                     children: "Play Live"
                                 }), !w() && e.jsx(b, {
                                     size: "large",
                                     type: "primary",
-                                    icon: e.jsx(Vt, {}),
+                                    icon: e.jsx(Wt, {}),
                                     style: {
                                         marginTop: 5,
                                         width: ye,
                                         backgroundColor: "#3849aa",
                                         borderColor: "#3849aa"
                                     },
-                                    onClick: ot,
+                                    onClick: et,
                                     children: "Assign HW"
                                 })]
-                            }), e.jsx(Fs, {
-                                children: e.jsx(Pe, {
-                                    overlay: ht(),
+                            }), e.jsx(Ts, {
+                                children: e.jsx(De, {
+                                    overlay: lt(),
                                     mouseLeaveDelay: .4,
                                     children: e.jsx(b, {
                                         shape: "circle",
                                         size: "middle",
-                                        children: e.jsx(gt, {})
+                                        children: e.jsx(ht, {})
                                     })
                                 })
                             })]
                         })]
                     })
                 })
-            }), e.jsx(Cs, {
-                open: n,
+            }), e.jsx(bs, {
+                open: o,
                 close: i,
-                kitId: d._id
-            }), c ? mt() : null, f ? e.jsx(G, {
+                kitId: u._id
+            }), c ? ct() : null, f ? e.jsx(G, {
                 id: f.id,
                 visible: !0,
-                close: () => p(null),
+                close: () => g(null),
                 copy: {
                     title: f.title,
                     description: f.description
@@ -759,16 +757,16 @@ const se = {
             }) : null]
         })
     }),
-    As = t => {
+    $s = t => {
         var c;
         const s = [],
             r = [],
-            n = (c = t.folders) == null ? void 0 : c.find(u => u._id === t.selectedFolder);
-        t.kits.forEach(u => {
-            t.selectedFolder && (!n || !n.games.includes(u._id)) || (u.isArchived ? r.push(u) : s.push(u))
+            o = (c = t.folders) == null ? void 0 : c.find(d => d._id === t.selectedFolder);
+        t.kits.forEach(d => {
+            t.selectedFolder && (!o || !o.games.includes(d._id)) || (d.isArchived ? r.push(d) : s.push(d))
         });
-        const o = [...s, ...r],
-            i = () => !o.length && t.selectedFolder ? e.jsxs("div", {
+        const n = [...s, ...r],
+            i = () => !n.length && t.selectedFolder ? e.jsxs("div", {
                 className: "maxAll flex-center flex-column",
                 children: [e.jsx("div", {
                     style: {
@@ -784,27 +782,27 @@ const se = {
                     children: "There are no kits in this folder."
                 })]
             }) : e.jsx(e.Fragment, {
-                children: e.jsx(ts, {
+                children: e.jsx(Jt, {
                     duration: 400,
-                    children: o.map(u => e.jsx("div", {
-                        children: e.jsx(Ms, {
-                            game: u,
+                    children: n.map(d => e.jsx("div", {
+                        children: e.jsx(Ns, {
+                            game: d,
                             folderId: t.selectedFolder
                         })
-                    }, "dashboard-kit-" + u._id))
+                    }, "dashboard-kit-" + d._id))
                 })
             });
         return e.jsxs(e.Fragment, {
-            children: [e.jsx(U, {
-                title: (n == null ? void 0 : n.title) ?? "Kits"
+            children: [e.jsx(B, {
+                title: (o == null ? void 0 : o.title) ?? "Kits"
             }), i()]
         })
     },
-    _s = t => {
-        var n;
-        const s = !w() && ((n = I()) == null ? void 0 : n.schoolId),
-            r = o => o === t.selectedFolder && !t.schoolLibraryScreenOpen;
-        return e.jsx(Ps, {
+    Fs = t => {
+        var o;
+        const s = !w() && ((o = I()) == null ? void 0 : o.schoolId),
+            r = n => n === t.selectedFolder && !t.schoolLibraryScreenOpen;
+        return e.jsx(_s, {
             children: e.jsxs(he, {
                 direction: "horizontal",
                 size: 10,
@@ -814,25 +812,25 @@ const se = {
                     label: "All kits",
                     icon: "fas fa-box-open",
                     selected: r(""),
-                    path: P
+                    path: L
                 }), s ? e.jsx(be, {
                     label: "My school",
                     icon: "fas fa-school",
                     selected: t.schoolLibraryScreenOpen,
-                    path: `${P}/school`
-                }) : null, t.folders.sort((o, i) => o.title.localeCompare(i.title)).map(o => e.jsx(Ds, {
-                    id: o._id,
-                    name: o.title,
-                    selected: r(o._id),
-                    path: `${P}/${o._id}`,
+                    path: `${L}/school`
+                }) : null, t.folders.sort((n, i) => n.title.localeCompare(i.title)).map(n => e.jsx(Ms, {
+                    id: n._id,
+                    name: n.title,
+                    selected: r(n._id),
+                    path: `${L}/${n._id}`,
                     icon: e.jsx(C, {
                         name: "fas fa-folder"
                     })
-                }, `folder-${o._id}`))]
+                }, `folder-${n._id}`))]
             })
         })
     },
-    Qe = t => {
+    Ye = t => {
         const s = t ? h.White : h.Black,
             r = t ? h.BackgroundPurple : "rgba(0,0,0,0.07)";
         return {
@@ -845,14 +843,14 @@ const se = {
         const {
             color: s,
             backgroundColor: r,
-            hoverBackgroundColor: n
-        } = Qe(t.selected);
-        return e.jsx(D, {
+            hoverBackgroundColor: o
+        } = Ye(t.selected);
+        return e.jsx(O, {
             to: t.path,
-            children: e.jsxs(Ze, {
+            children: e.jsxs(Ve, {
                 background: r,
                 color: s,
-                hoverBackgroundColor: n,
+                hoverBackgroundColor: o,
                 children: [e.jsx("span", {
                     style: {
                         marginRight: 6
@@ -864,27 +862,27 @@ const se = {
             })
         })
     },
-    Ds = t => {
+    Ms = t => {
         const {
             color: s,
             backgroundColor: r,
-            hoverBackgroundColor: n
-        } = Qe(t.selected), [o, i, c] = k(!1), [u, x, m] = k(!1);
-        return e.jsx(D, {
+            hoverBackgroundColor: o
+        } = Ye(t.selected), [n, i, c] = k(!1), [d, x, m] = k(!1);
+        return e.jsx(O, {
             to: t.path,
-            children: e.jsxs(Ze, {
+            children: e.jsxs(Ve, {
                 background: r,
                 color: s,
-                hoverBackgroundColor: n,
+                hoverBackgroundColor: o,
                 children: [t.icon && !t.selected ? e.jsx("span", {
                     style: {
                         marginRight: 6
                     },
                     children: t.icon
-                }) : null, e.jsx(ss.span, {
+                }) : null, e.jsx(Qt.span, {
                     layout: !0,
                     children: t.name
-                }), t.selected ? e.jsx(Pe, {
+                }), t.selected ? e.jsx(De, {
                     menu: {
                         items: [{
                             key: "rename-folder",
@@ -897,40 +895,40 @@ const se = {
                             onClick: x
                         }]
                     },
-                    children: e.jsx(Os, {
+                    children: e.jsx(Ds, {
                         children: e.jsx(C, {
                             name: "far fa-ellipsis-h"
                         })
                     })
-                }) : null, e.jsx(Es, {
-                    open: o,
+                }) : null, e.jsx(Rs, {
+                    open: n,
                     close: c,
                     folderId: t.id,
                     folderName: t.name
-                }), e.jsx(Ls, {
-                    open: u,
+                }), e.jsx(As, {
+                    open: d,
                     close: m,
                     folderId: t.id
                 })]
             })
         })
     },
-    Es = t => {
-        const [s, r, n] = k(!1), [o, i] = l.useState(""), c = l.useMemo(() => o.length < 2, [o]);
+    Rs = t => {
+        const [s, r, o] = k(!1), [n, i] = l.useState(""), c = l.useMemo(() => n.length < 2, [n]);
         l.useEffect(() => {
             t.open || i("")
         }, [t.open]);
-        const u = () => {
+        const d = () => {
             s || (r(), v({
                 url: "/api/folders/rename",
                 data: {
                     id: t.folderId,
-                    title: o
+                    title: n
                 },
                 success: () => {
-                    t.close(), R()
+                    t.close(), $()
                 },
-                both: n,
+                both: o,
                 error: x => {
                     _({
                         e: x,
@@ -941,7 +939,7 @@ const se = {
                 }
             }))
         };
-        return e.jsxs(F, {
+        return e.jsxs(M, {
             open: t.open,
             onCancel: t.close,
             title: "Rename",
@@ -950,36 +948,36 @@ const se = {
                 children: "Cancel"
             }, "cancel-rename-folder"), e.jsx(b, {
                 type: "primary",
-                onClick: u,
+                onClick: d,
                 disabled: c,
                 loading: s,
                 children: "Rename"
             }, "rename-folder")],
-            children: [e.jsxs(Oe.Text, {
+            children: [e.jsxs(Ee.Text, {
                 children: ["Enter a new name for ", e.jsxs("b", {
                     children: [t.folderName, ":"]
                 })]
-            }), e.jsx(Ee, {
-                value: o,
+            }), e.jsx(Ae, {
+                value: n,
                 style: {
                     marginTop: 5
                 },
                 placeholder: "New name...",
                 maxLength: 24,
                 onChange: x => i(x.target.value),
-                onPressEnter: u
+                onPressEnter: d
             })]
         })
     },
-    Ls = t => {
-        const [s, r, n] = k(!1), o = () => {
+    As = t => {
+        const [s, r, o] = k(!1), n = () => {
             r(), v({
                 url: "/api/folders/delete",
                 data: {
                     id: t.folderId
                 },
                 success: () => {
-                    t.close(), R()
+                    t.close(), $()
                 },
                 error: i => {
                     _({
@@ -989,10 +987,10 @@ const se = {
                         }
                     })
                 },
-                both: n
+                both: o
             })
         };
-        return e.jsx(F, {
+        return e.jsx(M, {
             open: t.open,
             onCancel: t.close,
             title: "Delete Folder",
@@ -1002,21 +1000,21 @@ const se = {
             }, "cancel-delete-folder"), e.jsx(b, {
                 type: "primary",
                 danger: !0,
-                onClick: o,
+                onClick: n,
                 loading: s,
                 children: "Delete Folder"
             }, "delete-folder")],
-            children: e.jsx(Oe.Text, {
+            children: e.jsx(Ee.Text, {
                 children: "Are you sure you want to delete this folder? The kits within the folder will not be deleted."
             })
         })
     },
-    Ps = a.div`
+    _s = a.div`
   .ant-space-item {
     flex-shrink: 0;
   }
 `,
-    Ze = a.div.attrs({
+    Ve = a.div.attrs({
         className: "flex-center"
     })`
   background: ${t=>t.background};
@@ -1030,7 +1028,7 @@ const se = {
     background: ${t=>t.hoverBackgroundColor};
   }
 `,
-    Os = a.div`
+    Ds = a.div`
   margin-left: 12px;
   transition: 0.15s background ease-in-out;
   padding: 0px 6px;
@@ -1040,130 +1038,68 @@ const se = {
     background: rgba(0, 0, 0, 0.2);
   }
 `,
-    ve = "teacher-appreciation-promo",
-    ke = "2026",
-    Bs = () => {
-        const [t, s] = l.useState(localStorage.getItem(ve) !== ke), r = n => {
-            n.preventDefault(), n.stopPropagation(), s(!1), localStorage.setItem(ve, ke)
-        };
-        return t ? e.jsx(Us, {
-            children: e.jsx(D, {
-                className: "maxWidth",
-                to: yt,
-                style: {
-                    color: h.White
-                },
-                children: e.jsxs("div", {
-                    style: {
-                        marginBottom: 20,
-                        marginTop: -15,
-                        padding: 20,
-                        borderRadius: 6,
-                        background: h.BackgroundPurple,
-                        position: "relative",
-                        overflow: "hidden"
-                    },
-                    className: "maxWidth flex between vc light-shadow",
-                    children: [e.jsx("img", {
-                        src: "/assets/map/characters/spine/preview/projector.png",
-                        style: {
-                            width: 80,
-                            position: "absolute",
-                            left: 2,
-                            bottom: -7,
-                            transform: "rotate(348deg)"
-                        }
-                    }), e.jsx("div", {
-                        style: {
-                            paddingLeft: 65,
-                            fontWeight: T.Bold
-                        },
-                        children: "Free Gim for Teacher Appreciation Week!"
-                    }), e.jsx("div", {
-                        children: e.jsx(Be, {
-                            title: "Close",
-                            children: e.jsx(b, {
-                                onClick: r,
-                                icon: e.jsx(Te, {}),
-                                type: "dashed",
-                                shape: "circle"
-                            })
-                        })
-                    })]
-                })
-            })
-        }) : null
-    },
-    Us = a.div.attrs({
-        className: "maxWidth"
-    })`
-  transition: transform 0.2s;
-  &:hover {
-    transform: scale(1.01);
-  }
-`,
-    Ws = l.lazy(() => kt(() => import("./SchoolLibrary.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8]))),
-    zs = () => {
-        var x, m, j, f, p;
+    Es = l.lazy(() => gt(() => import("./SchoolLibrary.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8]))),
+    Ls = () => {
+        var d, x, m, j, f;
         const {
             data: t,
             isLoading: s
-        } = De(), {
+        } = Re(), {
             id: r
-        } = bt(), n = B() && ((x = I()) == null ? void 0 : x.schoolId) && r === "school", o = ((j = (m = t == null ? void 0 : t.folders) == null ? void 0 : m.find(d => d._id === r)) == null ? void 0 : j._id) ?? "", i = Math.abs(g(vt(I()._id)).diff(g(), "days"));
+        } = xt(), o = W() && ((d = I()) == null ? void 0 : d.schoolId) && r === "school", n = ((m = (x = t == null ? void 0 : t.folders) == null ? void 0 : x.find(g => g._id === r)) == null ? void 0 : m._id) ?? "";
         if (s) return null;
-        const c = () => {
-                var d;
-                return (d = t == null ? void 0 : t.games) != null && d.length ? e.jsx(As, {
+        const i = () => {
+                var g;
+                return (g = t == null ? void 0 : t.games) != null && g.length ? e.jsx($s, {
                     kits: t == null ? void 0 : t.games,
                     folders: t == null ? void 0 : t.folders,
-                    selectedFolder: o
+                    selectedFolder: n
                 }) : e.jsx(ue, {
                     image: "kit",
                     title: "Kits",
                     description: w() ? "Kits contain multiple choice questions. Create a kit and study it with any of our game modes!" : "Kits are live learning games for your class. They include all the content your students will learn in a game.",
                     button: "New Kit",
-                    onClick: () => $(ee)
+                    onClick: () => F(ee)
                 })
             },
-            u = (t == null ? void 0 : t.folders.length) || ((f = I()) == null ? void 0 : f.schoolId);
-        return !u && !((p = t == null ? void 0 : t.games) != null && p.length) ? c() : e.jsx(H, {
-            header: e.jsxs("div", {
+            c = (t == null ? void 0 : t.folders.length) || ((j = I()) == null ? void 0 : j.schoolId);
+        return !c && !((f = t == null ? void 0 : t.games) != null && f.length) ? i() : e.jsx(H, {
+            header: e.jsx("div", {
                 className: "maxWidth",
-                children: [e.jsx(Y, {
+                children: e.jsx(Y, {
                     title: "Kits",
-                    customUnderTitleComponent: u ? e.jsx("div", {
+                    customUnderTitleComponent: c ? e.jsx("div", {
                         style: {
                             marginTop: 13
                         },
-                        children: e.jsx(_s, {
-                            schoolLibraryScreenOpen: n,
+                        children: e.jsx(Fs, {
+                            schoolLibraryScreenOpen: o,
                             openSchoolLibraryScreen: () => {
-                                $("/kits/school")
+                                F("/kits/school")
                             },
                             folders: (t == null ? void 0 : t.folders) ?? [],
-                            selectedFolder: o
+                            selectedFolder: n
                         })
                     }) : null,
-                    buttonIcon: e.jsx(Ue, {}),
+                    buttonIcon: e.jsx(Le, {}),
                     buttonLink: ee,
                     buttonText: "New Kit"
-                }), i > 7 && B() ? e.jsx(Bs, {}) : null]
+                })
             }),
             children: e.jsx(l.Suspense, {
                 fallback: null,
-                children: n ? e.jsx(Ws, {}) : c()
+                children: o ? e.jsx(Es, {}) : i()
             })
         })
     },
-    Gs = a.div`
+    Ps = a.div`
   background: ${t=>t.color};
   height: ${re}px;
   width: ${re}px;
   border-radius: 5px;
   margin-right: 10px;
 `;
-class Ks extends l.Component {
+class Os extends l.Component {
     render() {
         const r = {
                 ...{
@@ -1173,9 +1109,9 @@ class Ks extends l.Component {
                 ...this.props.style || {}
             },
             {
-                group: n
+                group: o
             } = this.props;
-        return e.jsx(D, {
+        return e.jsx(O, {
             to: this.props.to,
             style: {
                 textDecoration: "none"
@@ -1183,15 +1119,15 @@ class Ks extends l.Component {
             children: e.jsx(K, {
                 hoverable: !0,
                 style: r,
-                children: e.jsx(He, {
-                    children: e.jsxs(Ye, {
-                        children: [e.jsx(Gs, {
-                            color: n.color
-                        }), e.jsxs(Ve, {
-                            children: [e.jsx(qe, {
-                                children: n.name
-                            }), e.jsx(Je, {
-                                children: n.memberCount + " " + de("member", n.memberCount)
+                children: e.jsx(ze, {
+                    children: e.jsxs(We, {
+                        children: [e.jsx(Ps, {
+                            color: o.color
+                        }), e.jsxs(Ge, {
+                            children: [e.jsx(Ke, {
+                                children: o.name
+                            }), e.jsx(He, {
+                                children: o.memberCount + " " + de("member", o.memberCount)
                             })]
                         })]
                     })
@@ -1200,18 +1136,18 @@ class Ks extends l.Component {
         })
     }
 }
-const Hs = () => {
+const Bs = () => {
         const {
             data: t,
             isLoading: s
-        } = Qt();
-        Ne(() => {
-            St() && We()
+        } = Ht();
+        we(() => {
+            pt() && Pe()
         });
         const r = () => s ? null : t.length ? e.jsx(H, {
             header: e.jsx(Y, {
                 title: "Classes",
-                buttonIcon: e.jsx(Ue, {}),
+                buttonIcon: e.jsx(Le, {}),
                 buttonLink: xe,
                 buttonText: "New Class"
             }),
@@ -1219,25 +1155,25 @@ const Hs = () => {
                 direction: "vertical",
                 className: "maxWidth",
                 size: 10,
-                children: t.map(n => e.jsx(Ks, {
-                    group: n,
-                    to: `/class/${n._id}`
-                }, n._id))
+                children: t.map(o => e.jsx(Os, {
+                    group: o,
+                    to: `/class/${o._id}`
+                }, o._id))
             })
         }) : e.jsx(ue, {
             image: "groups",
             title: "Classes",
             description: "Keep your games safe and secure! Use classes to force students to use their real names and control who can join your games.",
             button: "New Class",
-            onClick: () => $(xe)
+            onClick: () => F(xe)
         });
         return e.jsxs(e.Fragment, {
-            children: [e.jsx(U, {
+            children: [e.jsx(B, {
                 title: "Classes"
             }), r()]
         })
     },
-    Ys = t => e.jsxs(Vs, {
+    Us = t => e.jsxs(zs, {
         href: t.to,
         customWidth: t.customWidth,
         className: `flex vc ${t.className}`,
@@ -1259,7 +1195,7 @@ const Hs = () => {
             children: t.text
         })]
     }),
-    Vs = a.a`
+    zs = a.a`
   background: ${h.White};
   color: ${h.Black};
   width: ${t=>t.customWidth||350}px;
@@ -1277,17 +1213,17 @@ const Hs = () => {
     color: ${h.Black};
   }
 `,
-    Xe = () => e.jsx(Ie, {
+    qe = () => e.jsx(Ce, {
         style: {
             marginTop: 40,
             marginBottom: 40
         }
     }),
-    qs = t => {
+    Ws = t => {
         const [s, r] = l.useState();
         return l.useEffect(() => {
             if (t.groups.length) {
-                const n = () => {
+                const o = () => {
                     v({
                         url: "/api/matchmaker/instant-join",
                         success: i => {
@@ -1295,23 +1231,23 @@ const Hs = () => {
                         }
                     })
                 };
-                n();
-                const o = setInterval(n, 3e4);
-                return () => clearInterval(o)
+                o();
+                const n = setInterval(o, 3e4);
+                return () => clearInterval(n)
             }
         }, [t.groups.length]), s ? e.jsx(e.Fragment, {
-            children: e.jsxs(Js, {
+            children: e.jsxs(Gs, {
                 children: [e.jsxs("div", {
-                    children: [e.jsx(Qs, {
+                    children: [e.jsx(Ks, {
                         children: "Join your teacher's live game!"
-                    }), e.jsx(Zs, {
+                    }), e.jsx(Hs, {
                         children: s
                     })]
                 }), e.jsx("div", {
                     style: {
                         marginLeft: 20
                     },
-                    children: e.jsx(Ys, {
+                    children: e.jsx(Us, {
                         background: "#2e7d32",
                         color: h.White,
                         icon: "fas fa-gamepad",
@@ -1323,21 +1259,21 @@ const Hs = () => {
                         },
                         to: `/join?gc=${s}`
                     })
-                }), e.jsx(Xe, {})]
+                }), e.jsx(qe, {})]
             })
         }) : null
     },
-    Js = a.div.attrs({
+    Gs = a.div.attrs({
         className: "flex vc wrap"
     })`
   justify-content: space-between;
 `,
-    Qs = a.div`
+    Ks = a.div`
   line-height: 16px;
   color: rgba(0, 0, 0, 0.8);
   font-size: 16px;
 `,
-    Zs = a.div`
+    Hs = a.div`
   font-size: 50px;
   line-height: 50px;
   margin-top: 10px;
@@ -1348,12 +1284,12 @@ const Hs = () => {
     })`
   color: ${h.Black};
 `,
-    Xs = t => e.jsx(me, {
-        children: e.jsx(qs, {
+    Ys = t => e.jsx(me, {
+        children: e.jsx(Ws, {
             groups: t.groups
         })
     }),
-    er = a.div.attrs({
+    Vs = a.div.attrs({
         className: "flex maxWidth flex-column"
     })`
   align-items: flex-start;
@@ -1362,7 +1298,7 @@ const Hs = () => {
     margin-bottom: 0px;
   }
 `,
-    tr = a.div.attrs({
+    qs = a.div.attrs({
         className: "flex vc"
     })`
   border-style: solid;
@@ -1373,58 +1309,58 @@ const Hs = () => {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 `,
-    sr = a.div`
+    Js = a.div`
   height: 14px;
   width: 14px;
   border-radius: 50%;
 `,
-    rr = a.div`
+    Qs = a.div`
   margin-left: 7px;
   font-size: 14px;
   line-height: 14px;
 `,
-    or = a.div.attrs({
+    Zs = a.div.attrs({
         className: "flex maxWidth vc"
     })`
   color: ${h.Black};
 `,
-    nr = a.div.attrs({
+    Xs = a.div.attrs({
         className: "flex maxWidth vc"
     })`
   margin-left: 25px;
   justify-content: space-between;
 `,
-    ir = a.div`
+    er = a.div`
   line-height: 1;
 `,
-    ar = a.div`
+    tr = a.div`
   font-size: 26px;
   color: #263238;
 `,
-    lr = a.div`
+    sr = a.div`
   font-size: 20px;
   font-weight: ${T.Bold};
 `,
-    cr = a.div`
+    rr = a.div`
   color: rgba(0, 0, 0, 0.8);
   font-size: 15px;
   margin-top: 6px;
 `,
-    dr = a.div`
+    nr = a.div`
   font-size: 32px;
 `,
-    ur = t => {
-        const s = l.useMemo(() => t.status === Z.completed ? "Completed" : t.status === Z.inProgress ? "In Progress..." : g().isAfter(g(t.dueDate)) ? "Past Due" : null, [t.status, t.dueDate]);
-        return e.jsxs(er, {
-            children: [e.jsxs(tr, {
-                children: [e.jsx(sr, {
+    or = t => {
+        const s = l.useMemo(() => t.status === Z.completed ? "Completed" : t.status === Z.inProgress ? "In Progress..." : p().isAfter(p(t.dueDate)) ? "Past Due" : null, [t.status, t.dueDate]);
+        return e.jsxs(Vs, {
+            children: [e.jsxs(qs, {
+                children: [e.jsx(Js, {
                     style: {
                         background: t.groupColor
                     }
-                }), e.jsxs(rr, {
-                    children: [t.groupName, " - due ", g(t.dueDate).format("MMMM Do")]
+                }), e.jsxs(Qs, {
+                    children: [t.groupName, " - due ", p(t.dueDate).format("MMMM Do")]
                 })]
-            }), e.jsx(D, {
+            }), e.jsx(O, {
                 to: t.link,
                 className: "maxWidth",
                 target: "_parent",
@@ -1438,19 +1374,19 @@ const Hs = () => {
                         width: "100%",
                         borderTopLeftRadius: 0
                     },
-                    children: e.jsxs(or, {
-                        children: [e.jsx(ar, {
+                    children: e.jsxs(Zs, {
+                        children: [e.jsx(tr, {
                             children: e.jsx("i", {
                                 className: "fal fa-file-alt"
                             })
-                        }), e.jsxs(nr, {
-                            children: [e.jsxs(ir, {
-                                children: [e.jsx(lr, {
+                        }), e.jsxs(Xs, {
+                            children: [e.jsxs(er, {
+                                children: [e.jsx(sr, {
                                     children: t.title
-                                }), s ? e.jsx(cr, {
+                                }), s ? e.jsx(rr, {
                                     children: s
                                 }) : null]
-                            }), e.jsx(dr, {
+                            }), e.jsx(nr, {
                                 children: t.status === Z.completed ? e.jsx("i", {
                                     style: {
                                         color: "#388e3c"
@@ -1464,7 +1400,7 @@ const Hs = () => {
             })]
         })
     },
-    hr = () => e.jsxs("div", {
+    ir = () => e.jsxs("div", {
         style: {
             borderStyle: "dashed",
             borderColor: h.BorderGray,
@@ -1490,26 +1426,26 @@ const Hs = () => {
             children: "No assignments for this time period."
         })]
     }),
-    mr = () => {
-        const [t, s] = l.useState(!0), [r, n] = l.useState(!1), [o, i] = l.useState(null), [c, u] = l.useState([]), x = (d, M) => {
-            t && r || (s(!0), n(!0), v({
-                url: `/api/hub/hub-items?startDate=${d.format("MM-DD-YYYY")}&endDate=${M.format("MM-DD-YYYY")}`,
+    ar = () => {
+        const [t, s] = l.useState(!0), [r, o] = l.useState(!1), [n, i] = l.useState(null), [c, d] = l.useState([]), x = (u, R) => {
+            t && r || (s(!0), o(!0), v({
+                url: `/api/hub/hub-items?startDate=${u.format("MM-DD-YYYY")}&endDate=${R.format("MM-DD-YYYY")}`,
                 success: y => {
-                    u(y)
+                    d(y)
                 },
                 both: () => s(!1)
             }))
         }, m = () => t ? !r : !0, j = () => {
-            o !== "nextSevenDays" && m() && (i("nextSevenDays"), x(g(), g().add(15, "days")))
+            n !== "nextSevenDays" && m() && (i("nextSevenDays"), x(p(), p().add(15, "days")))
         }, f = () => {
-            o !== "nextFortyFiveDays" && m() && (i("nextFortyFiveDays"), x(g(), g().add(46, "days")))
-        }, p = () => {
-            o !== "lastThirtyDays" && m() && (i("lastThirtyDays"), x(g().subtract(31, "days"), g()))
+            n !== "nextFortyFiveDays" && m() && (i("nextFortyFiveDays"), x(p(), p().add(46, "days")))
+        }, g = () => {
+            n !== "lastThirtyDays" && m() && (i("lastThirtyDays"), x(p().subtract(31, "days"), p()))
         };
         return l.useEffect(() => {
             j()
         }, []), e.jsxs(me, {
-            children: [e.jsx(fr, {
+            children: [e.jsx(lr, {
                 children: "Assignments"
             }), e.jsxs("div", {
                 className: "flex vc wrap",
@@ -1518,15 +1454,15 @@ const Hs = () => {
                 },
                 children: [e.jsx(X, {
                     onClick: j,
-                    selected: o === "nextSevenDays",
+                    selected: n === "nextSevenDays",
                     children: "Next 14 days"
                 }), e.jsx(X, {
                     onClick: f,
-                    selected: o === "nextFortyFiveDays",
+                    selected: n === "nextFortyFiveDays",
                     children: "Next 45 days"
                 }), e.jsx(X, {
-                    onClick: p,
-                    selected: o === "lastThirtyDays",
+                    onClick: g,
+                    selected: n === "lastThirtyDays",
                     children: "Last 30 days"
                 })]
             }), e.jsx("div", {
@@ -1542,18 +1478,18 @@ const Hs = () => {
                     size: "large"
                 })
             }) : c.length ? e.jsx(e.Fragment, {
-                children: c.sort((d, M) => new Date(d.dueDate).getTime() - new Date(M.dueDate).getTime()).map(d => d.type === rs.mapAssignment ? e.jsx(ur, {
-                    groupColor: d.group.color,
-                    groupName: d.group.name,
-                    dueDate: d.dueDate,
-                    title: d.title,
-                    status: d.status,
-                    link: `/join/${d.resourceId}`
-                }, d.resourceId + d.group._id) : null)
-            }) : e.jsx(hr, {})]
+                children: c.sort((u, R) => new Date(u.dueDate).getTime() - new Date(R.dueDate).getTime()).map(u => u.type === Zt.mapAssignment ? e.jsx(or, {
+                    groupColor: u.group.color,
+                    groupName: u.group.name,
+                    dueDate: u.dueDate,
+                    title: u.title,
+                    status: u.status,
+                    link: `/join/${u.resourceId}`
+                }, u.resourceId + u.group._id) : null)
+            }) : e.jsx(ir, {})]
         })
     },
-    fr = a.div`
+    lr = a.div`
   font-size: 38px;
   line-height: 38px;
   font-weight: ${T.UltraBold};
@@ -1580,9 +1516,9 @@ const Hs = () => {
   }
   `}
 `,
-    xr = t => {
+    cr = t => {
         const s = () => {
-            F.confirm({
+            M.confirm({
                 title: "Are you sure you want to unenroll from this class?",
                 okText: "Yes",
                 cancelText: "No",
@@ -1593,7 +1529,7 @@ const Hs = () => {
                             groupId: t.groupId
                         },
                         success: () => {
-                            Le.success(`Unenrolled from "${t.name}"!`), t.onUnenroll(t.groupId)
+                            _e.success(`Unenrolled from "${t.name}"!`), t.onUnenroll(t.groupId)
                         }
                     })
                 }
@@ -1605,7 +1541,7 @@ const Hs = () => {
                     borderRadius: 8,
                     marginBottom: 10
                 },
-                children: e.jsxs(gr, {
+                children: e.jsxs(dr, {
                     children: [e.jsxs("div", {
                         className: "flex vc",
                         children: [e.jsx("div", {
@@ -1615,21 +1551,21 @@ const Hs = () => {
                                 width: 55,
                                 background: t.color
                             }
-                        }), e.jsxs(pr, {
-                            children: [e.jsx(jr, {
+                        }), e.jsxs(ur, {
+                            children: [e.jsx(hr, {
                                 children: t.name
-                            }), e.jsx(yr, {
+                            }), e.jsx(mr, {
                                 children: t.creator
                             })]
                         })]
                     }), e.jsx("div", {
-                        children: e.jsx(Be, {
+                        children: e.jsx(Xt, {
                             title: "Unenroll from class",
                             children: e.jsx(b, {
                                 onClick: s,
                                 shape: "circle",
                                 type: "dashed",
-                                icon: e.jsx(Te, {})
+                                icon: e.jsx(jt, {})
                             })
                         })
                     })]
@@ -1637,26 +1573,26 @@ const Hs = () => {
             })
         })
     },
-    gr = a.div.attrs({
+    dr = a.div.attrs({
         className: "flex maxWidth vc between"
     })`
   color: ${h.Black};
 `,
-    pr = a.div`
+    ur = a.div`
   margin-left: 25px;
 `,
-    jr = a.div`
+    hr = a.div`
   font-size: 20px;
   line-height: 20px;
   font-weight: ${T.Bold};
 `,
-    yr = a.div`
+    mr = a.div`
   color: rgba(0, 0, 0, 0.8);
   font-size: 15px;
   line-height: 15px;
   margin-top: 6px;
 `,
-    br = () => e.jsxs("div", {
+    fr = () => e.jsxs("div", {
         style: {
             borderStyle: "dashed",
             borderColor: h.BorderGray,
@@ -1682,15 +1618,15 @@ const Hs = () => {
             children: "You're not part of any classes."
         })]
     }),
-    vr = t => {
-        const [s, r] = l.useState([]), n = t.groups.filter(i => !s.includes(i._id)), o = i => {
+    xr = t => {
+        const [s, r] = l.useState([]), o = t.groups.filter(i => !s.includes(i._id)), n = i => {
             r(c => [...c, i])
         };
         return e.jsxs(me, {
             style: {
                 marginTop: 30
             },
-            children: [e.jsx(kr, {
+            children: [e.jsx(gr, {
                 children: "Classes"
             }), t.loading ? e.jsx("div", {
                 className: "maxWidth flex hc",
@@ -1700,67 +1636,67 @@ const Hs = () => {
                 children: e.jsx(le, {
                     size: "large"
                 })
-            }) : n.length ? n.map(i => e.jsx(xr, {
+            }) : o.length ? o.map(i => e.jsx(cr, {
                 name: i.name,
                 color: i.color,
                 creator: i.creatorName,
                 groupId: i._id,
-                onUnenroll: o
-            }, i._id)) : e.jsx(br, {})]
+                onUnenroll: n
+            }, i._id)) : e.jsx(fr, {})]
         })
     },
-    kr = a.div`
+    gr = a.div`
   font-size: 38px;
   line-height: 38px;
   font-weight: ${T.UltraBold};
   margin-bottom: 20px;
 `,
-    Sr = () => {
-        const [t, s] = q.useState(!0), [r, n] = q.useState([]);
+    pr = () => {
+        const [t, s] = q.useState(!0), [r, o] = q.useState([]);
         return q.useEffect(() => {
             w() && v({
                 url: "/api/v1/groups/part-of",
-                success: o => n(o),
+                success: n => o(n),
                 both: () => s(!1)
             })
         }, []), e.jsxs(e.Fragment, {
-            children: [e.jsx(Xs, {
-                groups: r.map(o => o._id)
-            }), e.jsx(mr, {}), e.jsx(Xe, {}), e.jsx(vr, {
+            children: [e.jsx(Ys, {
+                groups: r.map(n => n._id)
+            }), e.jsx(ar, {}), e.jsx(qe, {}), e.jsx(xr, {
                 groups: r,
                 loading: t
             })]
         })
     },
-    Cr = () => (Ne(() => {
-        w() || We()
+    jr = () => (we(() => {
+        w() || Pe()
     }), e.jsxs(e.Fragment, {
-        children: [e.jsx(U, {
+        children: [e.jsx(B, {
             title: "Home"
         }), e.jsx(H, {
             header: e.jsx(Y, {
                 title: "Home",
                 hideButton: !0
             }),
-            children: e.jsx(Sr, {})
+            children: e.jsx(pr, {})
         })]
     })),
-    wr = "dashboard-repports",
-    Ir = t => ls({
-        queryKey: [wr, {
+    yr = "dashboard-repports",
+    br = t => ns({
+        queryKey: [yr, {
             page: t
         }],
         keepPreviousData: !0,
         staleTime: 1e3 * 60,
         retry: 2,
-        queryFn: () => Ct({
+        queryFn: () => yt({
             url: "/api/game-report/fetch-all",
             data: {
                 page: t
             }
         })
     }),
-    Tr = t => e.jsx(G, {
+    vr = t => e.jsx(G, {
         id: "view more reports",
         ...t,
         copy: {
@@ -1768,11 +1704,11 @@ const Hs = () => {
             description: `To view more of your past reports, upgrade to ${ce} Pro.`
         }
     }),
-    Nr = [{
+    kr = [{
         title: "Kit",
         dataIndex: "kit",
         key: "report-kit",
-        render: (t, s) => e.jsx(is, {
+        render: (t, s) => e.jsx(ss, {
             kit: t,
             dateId: s._id,
             assignmentId: s.mapAssignment
@@ -1781,38 +1717,38 @@ const Hs = () => {
         title: "Accuracy",
         dataIndex: "accuracy",
         key: "report-accuracy",
-        render: t => e.jsx(as, {
+        render: t => e.jsx(rs, {
             percent: t
         })
     }, {
         title: "Participants",
         dataIndex: "groups",
         key: "report-groups",
-        render: (t, s) => e.jsx(cs, {
+        render: (t, s) => e.jsx(os, {
             reportId: s._id,
             participants: s.participants,
             groups: t
         })
     }],
-    Rr = () => {
-        const [t, s] = wt(), r = Math.max(1, Number(t.get("page")) ?? 1), [n, o] = l.useState(0), i = l.useRef(null), [c, u, x] = k(!1), {
+    Sr = () => {
+        const [t, s] = bt(), r = Math.max(1, Number(t.get("page")) ?? 1), [o, n] = l.useState(0), i = l.useRef(null), [c, d, x] = k(!1), {
             data: m,
             isLoading: j,
             isError: f,
-            isFetching: p
-        } = Ir(r);
-        os(i, y => {
-            var W;
-            o(((W = y.target) == null ? void 0 : W.offsetTop) ?? 0)
+            isFetching: g
+        } = br(r);
+        es(i, y => {
+            var U;
+            n(((U = y.target) == null ? void 0 : U.offsetTop) ?? 0)
         }), l.useEffect(() => {
             window.scrollTo(0, 0)
         }, [r]);
-        const d = m ? e.jsx(ns, {
+        const u = m ? e.jsx(ts, {
                 total: m.totalItems,
                 current: r,
                 onPageChange: y => {
-                    if (!L()) {
-                        u();
+                    if (!E()) {
+                        d();
                         return
                     }
                     s({
@@ -1820,7 +1756,7 @@ const Hs = () => {
                     })
                 }
             }) : null,
-            M = () => j ? e.jsx(It, {
+            R = () => j ? e.jsx(vt, {
                 paragraph: {
                     rows: 4
                 },
@@ -1838,7 +1774,7 @@ const Hs = () => {
                 children: "There was an error loading your reports. Please try again later."
             }) : e.jsxs("div", {
                 id: "reports-container",
-                children: [e.jsx(Tt, {
+                children: [e.jsx(kt, {
                     theme: {
                         components: {
                             Table: {
@@ -1847,30 +1783,30 @@ const Hs = () => {
                             }
                         }
                     },
-                    children: e.jsx(Zt, {
+                    children: e.jsx(Yt, {
                         dataSource: m.items.map(y => ({
                             key: y._id,
                             ...y
                         })),
-                        columns: Nr,
+                        columns: kr,
                         bordered: !0,
                         pagination: !1,
                         tableLayout: "auto",
                         size: "large",
                         onRow: y => ({
                             onClick: () => {
-                                $(`/report/${y._id}`)
+                                F(`/report/${y._id}`)
                             },
                             style: {
                                 cursor: "pointer"
                             }
                         }),
                         loading: {
-                            spinning: p,
+                            spinning: g,
                             indicator: null
                         },
                         sticky: {
-                            offsetHeader: n,
+                            offsetHeader: o,
                             getContainer: () => document.getElementById("reports-container")
                         }
                     })
@@ -1879,11 +1815,11 @@ const Hs = () => {
                     style: {
                         padding: "35px 0px"
                     },
-                    children: d
+                    children: u
                 })]
             });
         return e.jsxs(e.Fragment, {
-            children: [e.jsx(U, {
+            children: [e.jsx(B, {
                 title: "Reports"
             }), m && !(m != null && m.totalItems) ? e.jsx(ue, {
                 image: "report",
@@ -1891,86 +1827,86 @@ const Hs = () => {
                 description: "View and analyze student performance data. Reports for live games and assignments appear here when you host a game with one of your kits.",
                 hideButton: !0
             }) : e.jsxs(e.Fragment, {
-                children: [e.jsx($r, {
+                children: [e.jsx(Cr, {
                     ref: i,
                     children: e.jsx(H, {
                         header: e.jsx(Y, {
                             title: "Reports",
-                            customRightComponent: d ?? e.jsx(e.Fragment, {})
+                            customRightComponent: u ?? e.jsx(e.Fragment, {})
                         }),
                         contentStyle: {
                             padding: 0
                         },
-                        children: M()
+                        children: R()
                     })
-                }), e.jsx(Tr, {
+                }), e.jsx(vr, {
                     visible: c,
                     close: x
                 })]
             })]
         })
     },
-    $r = a.div.attrs({
+    Cr = a.div.attrs({
         className: "maxWidth flex"
     })`
   flex: 1;
 `,
-    Fr = a.div.attrs({
+    wr = a.div.attrs({
         className: "flex-column"
     })`
   color: ${h.Black};
   flex: 1;
 `,
-    Mr = () => {
+    Ir = () => {
         const {
             pathname: t
-        } = Nt(), s = l.useMemo(() => t ? E({
-            path: Re
-        }, t) ? "reports" : E({
+        } = St(), s = l.useMemo(() => t ? D({
+            path: Ie
+        }, t) ? "reports" : D({
+            path: Te
+        }, t) ? "assignments" : D({
+            path: Ne
+        }, t) ? "classes" : D({
             path: $e
-        }, t) ? "assignments" : E({
-            path: Fe
-        }, t) ? "classes" : E({
-            path: Me
-        }, t) ? "hub" : E({
-            path: P
-        }, t) || E({
+        }, t) ? "hub" : D({
+            path: L
+        }, t) || D({
             path: te
         }, t) ? "kits" : w() ? "hub" : "kits" : "kits", [t]), r = l.useMemo(() => {
             switch (s) {
                 case "reports":
-                    return e.jsx(Rr, {});
+                    return e.jsx(Sr, {});
                 case "assignments":
-                    return e.jsx(Ut, {});
+                    return e.jsx(Et, {});
                 case "classes":
-                    return e.jsx(Hs, {});
+                    return e.jsx(Bs, {});
                 case "hub":
-                    return e.jsx(Cr, {});
+                    return e.jsx(jr, {});
                 default:
-                    return e.jsx(zs, {})
+                    return e.jsx(Ls, {})
             }
         }, [s]);
-        return e.jsx(Fr, {
+        return e.jsx(wr, {
             children: r
         })
     };
-var Ar = Object.getOwnPropertyDescriptor,
-    _r = (t, s, r, n) => {
-        for (var o = n > 1 ? void 0 : n ? Ar(s, r) : s, i = t.length - 1, c; i >= 0; i--)(c = t[i]) && (o = c(o) || o);
-        return o
+var Tr = Object.getOwnPropertyDescriptor,
+    Nr = (t, s, r, o) => {
+        for (var n = o > 1 ? void 0 : o ? Tr(s, r) : s, i = t.length - 1, c; i >= 0; i--)(c = t[i]) && (n = c(n) || n);
+        return n
     };
-let oe = class extends l.Component {
+let ne = class extends l.Component {
     constructor() {
         super(...arguments), this.handleClose = () => this.props.navigation.archiveModalShow = !1
     }
     render() {
-        return e.jsxs(F, {
+        return e.jsxs(M, {
             onCancel: this.handleClose,
             open: this.props.navigation.archiveModalShow,
             closable: !0,
             footer: null,
             bodyStyle: {
-                fontFamily: O.SFPro,
+                fontFamily: P.SFPro,
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
@@ -2000,42 +1936,42 @@ let oe = class extends l.Component {
         })
     }
 };
-oe = _r([Dt("navigation", "kits"), _e], oe);
-const ne = "#0a2540",
-    Dr = t => {
-        const [s, r] = l.useState(0), [n, o] = l.useState(""), i = () => {
+ne = Nr([Ft("navigation", "kits"), Me], ne);
+const oe = "#0a2540",
+    $r = t => {
+        const [s, r] = l.useState(0), [o, n] = l.useState(""), i = () => {
             const {
                 user: c
             } = t;
             if (!c && !c.freeTrial) return;
-            const u = g.duration(g(c.freeTrial.freeTrialExpiration).diff(g())),
-                x = u.asDays(),
-                m = u.asHours(),
-                j = u.asMinutes(),
-                f = u.asSeconds();
+            const d = p.duration(p(c.freeTrial.freeTrialExpiration).diff(p())),
+                x = d.asDays(),
+                m = d.asHours(),
+                j = d.asMinutes(),
+                f = d.asSeconds();
             if (x >= 1) {
-                let p = x;
-                x === 31 && (p = 30), o("day"), r(Math.ceil(p))
-            } else m >= 1 && m < 24 ? (o("hour"), r(Math.ceil(m))) : j >= 1 && j < 60 ? (o("minute"), r(Math.ceil(j))) : f > 0 && f < 60 && (o("second"), r(Math.ceil(f)))
+                let g = x;
+                x === 31 && (g = 30), n("day"), r(Math.ceil(g))
+            } else m >= 1 && m < 24 ? (n("hour"), r(Math.ceil(m))) : j >= 1 && j < 60 ? (n("minute"), r(Math.ceil(j))) : f > 0 && f < 60 && (n("second"), r(Math.ceil(f)))
         };
         return l.useEffect(() => {
             i()
-        }, []), ds(i, 1e3), n ? e.jsxs(et, {
-            background: ne,
-            children: [e.jsxs(tt, {
+        }, []), is(i, 1e3), o ? e.jsxs(Je, {
+            background: oe,
+            children: [e.jsxs(Qe, {
                 children: ["Your trial of ", e.jsx(ie, {
                     children: "Gimkit Pro"
                 }), " ends in", " ", e.jsxs(ie, {
-                    children: [s, " ", de(n, s), "."]
+                    children: [s, " ", de(o, s), "."]
                 })]
-            }), e.jsx(st, {
+            }), e.jsx(Ze, {
                 onClick: t.openUpgradeModal,
-                background: ne,
+                background: oe,
                 children: "Learn more"
             })]
         }) : null
     },
-    et = a.div.attrs({
+    Je = a.div.attrs({
         className: "maxWidth flex vc"
     })`
   background: ${t=>t.background};
@@ -2047,13 +1983,13 @@ const ne = "#0a2540",
     text-align: center;
   }
 `,
-    tt = a.div`
+    Qe = a.div`
   font-size: 18px;
 `,
     ie = a.span`
   font-weight: ${T.Bold};
 `,
-    st = a(D)`
+    Ze = a(O)`
   background: ${t=>t.background};
   color: ${h.White};
   font-size: 15px;
@@ -2073,25 +2009,25 @@ const ne = "#0a2540",
   }
 `,
     ae = "hub_upgrade_modal_last_seen",
-    Er = "#c62828",
-    Lr = () => {
+    Fr = "#c62828",
+    Mr = () => {
         if (!localStorage.getItem(ae)) return !0;
         const t = localStorage.getItem(ae),
             s = Number(t);
         if (!s || isNaN(s)) return !0;
-        const r = g.unix(s);
-        return Math.abs(g().diff(r, "hour")) >= 48
+        const r = p.unix(s);
+        return Math.abs(p().diff(r, "hour")) >= 48
     },
-    Pr = t => {
+    Rr = t => {
         const {
             isLoading: s,
             data: r
-        } = Wt();
+        } = Lt();
         l.useEffect(() => {
-            Lr() && (localStorage.setItem(ae, g().unix().toString()), t.openUpgradeModal(!0))
+            Mr() && (localStorage.setItem(ae, p().unix().toString()), t.openUpgradeModal(!0))
         }, []);
-        const n = l.useMemo(() => J() === Q.limitedGames && (r == null ? void 0 : r.count) < pe() ? ne : Er, [r]),
-            o = () => {
+        const o = l.useMemo(() => J() === Q.limitedGames && (r == null ? void 0 : r.count) < pe() ? oe : Fr, [r]),
+            n = () => {
                 if (J() === Q.limitedGames) {
                     const i = pe() - r.count;
                     return i <= 0 ? e.jsx(e.Fragment, {
@@ -2106,27 +2042,27 @@ const ne = "#0a2540",
                     children: ["You are on the limited free version of ", ce, "."]
                 })
             };
-        return J() === Q.limitedGames && s ? null : e.jsxs(et, {
-            background: n,
-            children: [e.jsx(tt, {
-                children: o()
-            }), e.jsx(st, {
+        return J() === Q.limitedGames && s ? null : e.jsxs(Je, {
+            background: o,
+            children: [e.jsx(Qe, {
+                children: n()
+            }), e.jsx(Ze, {
                 onClick: () => {
                     t.openUpgradeModal(!1)
                 },
-                background: n,
+                background: o,
                 children: "Learn more"
             })]
         })
     },
-    Or = () => {
+    Ar = () => {
         const [t, s] = l.useState(!1);
         l.useEffect(() => {
-            const n = Ae("from");
-            n && n === "upgrade" && s(!0)
+            const o = Fe("from");
+            o && o === "upgrade" && s(!0)
         }, []);
         const r = () => s(!1);
-        return e.jsx(F, {
+        return e.jsx(M, {
             onCancel: r,
             open: t,
             footer: null,
@@ -2137,7 +2073,7 @@ const ne = "#0a2540",
             },
             children: e.jsxs("div", {
                 style: {
-                    fontFamily: O.SFPro,
+                    fontFamily: P.SFPro,
                     color: h.Black
                 },
                 className: "flex hc vc flex-column",
@@ -2173,29 +2109,29 @@ const ne = "#0a2540",
             })
         })
     },
-    Br = t => {
+    _r = t => {
         const s = I(),
             r = () => {
                 const {
-                    freeTrial: o
+                    freeTrial: n
                 } = s;
-                return !!(L() && o && o.currentlyOnFreeTrial)
+                return !!(E() && n && n.currentlyOnFreeTrial)
             },
-            n = () => !L();
+            o = () => !E();
         return w() ? null : e.jsxs(e.Fragment, {
-            children: [e.jsxs(Ur, {
-                children: [r() && e.jsx(Dr, {
+            children: [e.jsxs(Dr, {
+                children: [r() && e.jsx($r, {
                     user: s,
                     openUpgradeModal: () => {
                         t.openUpgradeModal(!1)
                     }
-                }), n() && e.jsx(Pr, {
+                }), o() && e.jsx(Rr, {
                     openUpgradeModal: t.openUpgradeModal
                 })]
-            }), e.jsx(Or, {})]
+            }), e.jsx(Ar, {})]
         })
     },
-    Ur = a.div.attrs({
+    Dr = a.div.attrs({
         className: "maxWidth"
     })`
   position: sticky;
@@ -2203,35 +2139,35 @@ const ne = "#0a2540",
   right: 0;
   bottom: 0;
   color: ${h.Black};
-  font-family: ${O.SFPro};
+  font-family: ${P.SFPro};
 `,
-    Wr = () => 3600 * 24,
-    zr = () => (l.useEffect(() => {
+    Er = () => 3600 * 24,
+    Lr = () => (l.useEffect(() => {
         const t = I().tokenIssued || 0;
-        Math.round(new Date().getTime() / 1e3) - t >= Wr() && Rt({})
+        Math.round(new Date().getTime() / 1e3) - t >= Er() && Ct({})
     }, []), null),
-    Gr = () => {
+    Pr = () => {
         l.useEffect(() => {
             var s, r;
             const t = I();
-            t && (s = t == null ? void 0 : t.seasonTicket) != null && s.active && !((r = t == null ? void 0 : t.seasonTicket) != null && r.viewed) && $($t)
+            t && (s = t == null ? void 0 : t.seasonTicket) != null && s.active && !((r = t == null ? void 0 : t.seasonTicket) != null && r.viewed) && F(wt)
         }, [])
     },
-    Kr = t => (() => {
-        if (t.upgradeModalVisible || t.proUpsellModalVisible || Ae("from")) return !0;
+    Or = t => (() => {
+        if (t.upgradeModalVisible || t.proUpsellModalVisible || Fe("from")) return !0;
         const r = I(),
-            n = Ft(r._id);
-        return g().diff(g(n), "days") < 3
-    })() ? null : e.jsx(us, {
+            o = It(r._id);
+        return p().diff(p(o), "days") < 3
+    })() ? null : e.jsx(as, {
         allowAutoOpen: !0
     }),
-    Hr = t => (Gr(), e.jsxs(e.Fragment, {
-        children: [e.jsx(zr, {}), e.jsx(Kr, {
+    Br = t => (Pr(), e.jsxs(e.Fragment, {
+        children: [e.jsx(Lr, {}), e.jsx(Or, {
             upgradeModalVisible: t.upgradeModalVisible,
             proUpsellModalVisible: t.proUpsellModalVisible
         })]
     })),
-    rt = [{
+    Xe = [{
         title: "Hey, welcome to Gimkit!",
         content: e.jsxs(e.Fragment, {
             children: ["Thanks for signing up! I'm Josh, and I started Gimkit as a high school project. Games really helped me get engaged in school, so I decided to build my own!", e.jsx("br", {}), " ", e.jsx("br", {}), `Click "Next" and I'll walk you through a few of the basics.`]
@@ -2263,8 +2199,8 @@ const ne = "#0a2540",
             }), " & we'll get back to you. Enjoy!"]
         })
     }],
-    Yr = t => {
-        const s = l.useMemo(() => t.currentStage === rt.length - 1, [t.currentStage]),
+    Ur = t => {
+        const s = l.useMemo(() => t.currentStage === Xe.length - 1, [t.currentStage]),
             r = l.useCallback(() => {
                 s ? t.close() : t.nextStage()
             }, [s]);
@@ -2279,7 +2215,7 @@ const ne = "#0a2540",
                 },
                 onClick: r,
                 children: s ? "Close" : "Next"
-            }), !s && e.jsx(D, {
+            }), !s && e.jsx(O, {
                 onClick: t.close,
                 style: {
                     marginTop: 10
@@ -2288,26 +2224,26 @@ const ne = "#0a2540",
             })]
         })
     },
-    Vr = t => {
-        const s = rt[t.currentStage];
-        return e.jsxs(qr, {
-            children: [s.image ? e.jsx(Qr, {
+    zr = t => {
+        const s = Xe[t.currentStage];
+        return e.jsxs(Wr, {
+            children: [s.image ? e.jsx(Kr, {
                 src: `/client/img/dashboard/onboarding/${s.image}.svg`
-            }, s.image) : e.jsx(Jr, {}), e.jsx(Zr, {
+            }, s.image) : e.jsx(Gr, {}), e.jsx(Hr, {
                 children: s.title
-            }), e.jsx(Xr, {
-                children: s.content
             }), e.jsx(Yr, {
+                children: s.content
+            }), e.jsx(Ur, {
                 currentStage: t.currentStage,
                 nextStage: t.nextStage,
                 close: t.close
             })]
         })
     },
-    qr = a.div.attrs({
+    Wr = a.div.attrs({
         className: "flex-center flex-column maxWidth"
     })``,
-    Jr = a.div`
+    Gr = a.div`
   height: 80px;
   width: 80px;
   background-image: url(/client/img/home/me.jpg);
@@ -2318,26 +2254,26 @@ const ne = "#0a2540",
   border-radius: 50%;
   border-color: #1d2d35;
 `,
-    Qr = a.img`
+    Kr = a.img`
   height: 80px;
 `,
-    Zr = a.div`
+    Hr = a.div`
   font-size: 34px;
   font-weight: ${T.Bold};
   margin-top: 20px;
 `,
-    Xr = a.div`
+    Yr = a.div`
   font-size: 18px;
   margin-top: 15px;
   margin-bottom: 25px;
 `,
-    eo = () => {
-        const [t, s, r] = k(!1), [n, o] = l.useState(0), i = l.useMemo(() => w() ? !1 : !!sessionStorage.getItem("NEW_USER"), []);
+    Vr = () => {
+        const [t, s, r] = k(!1), [o, n] = l.useState(0), i = l.useMemo(() => w() ? !1 : !!sessionStorage.getItem("NEW_USER"), []);
         l.useEffect(() => {
             i && (s(), sessionStorage.removeItem("NEW_USER"))
         }, []);
-        const c = () => o(u => u + 1);
-        return i ? e.jsx(F, {
+        const c = () => n(d => d + 1);
+        return i ? e.jsx(M, {
             width: 730,
             open: t,
             footer: null,
@@ -2348,43 +2284,43 @@ const ne = "#0a2540",
                 padding: 50
             },
             closable: !1,
-            children: e.jsx(to, {
-                children: e.jsx(Vr, {
-                    currentStage: n,
+            children: e.jsx(qr, {
+                children: e.jsx(zr, {
+                    currentStage: o,
                     nextStage: c,
                     close: r
                 })
             })
         }) : null
     },
-    to = a.div.attrs({
+    qr = a.div.attrs({
         className: "maxWidth"
     })`
-  font-family: ${O.SFPro};
+  font-family: ${P.SFPro};
   color: ${h.Black};
 `,
-    so = 75,
-    ro = 21,
-    Se = "pro-monthly-modal-last-shown",
-    oo = t => {
-        const [s, r, n] = k(!1);
+    Jr = 75,
+    Qr = 21,
+    ve = "pro-monthly-modal-last-shown",
+    Zr = t => {
+        const [s, r, o] = k(!1);
         return l.useEffect(() => {
-            const o = I();
-            if (!o || !o.planStartDate) return;
-            const i = g.unix(o.planStartDate);
-            if (Math.abs(g().diff(i, "days")) < so) return;
-            const u = localStorage.getItem(Se);
-            if (u) {
-                const x = g.unix(Number(u));
-                if (Math.abs(g().diff(x, "days")) < ro) return
+            const n = I();
+            if (!n || !n.planStartDate) return;
+            const i = p.unix(n.planStartDate);
+            if (Math.abs(p().diff(i, "days")) < Jr) return;
+            const d = localStorage.getItem(ve);
+            if (d) {
+                const x = p.unix(Number(d));
+                if (Math.abs(p().diff(x, "days")) < Qr) return
             }
-            r(), localStorage.setItem(Se, g().unix().toString())
+            r(), localStorage.setItem(ve, p().unix().toString())
         }, []), l.useEffect(() => {
             t.onVisibleChange(s)
         }, [s]), e.jsx(e.Fragment, {
-            children: e.jsx(F, {
+            children: e.jsx(M, {
                 open: s,
-                onCancel: n,
+                onCancel: o,
                 footer: null,
                 width: 850,
                 style: {
@@ -2402,10 +2338,10 @@ const ne = "#0a2540",
                     }
                 },
                 closable: !1,
-                children: e.jsxs(no, {
-                    children: [e.jsx(zt, {
+                children: e.jsxs(Xr, {
+                    children: [e.jsx(Pt, {
                         user: I(),
-                        close: n,
+                        close: o,
                         copy: {
                             title: e.jsx("div", {
                                 style: {
@@ -2427,17 +2363,17 @@ const ne = "#0a2540",
                         children: [e.jsx(b, {
                             size: "large",
                             type: "primary",
-                            icon: e.jsx(fs, {}),
+                            icon: e.jsx(ds, {}),
                             style: {
                                 width: 380,
                                 height: 70,
                                 display: "flex"
                             },
                             className: "flex-center",
-                            href: Mt,
+                            href: Tt,
                             children: "Switch To Annual Billing"
-                        }), e.jsx(io, {
-                            onClick: n,
+                        }), e.jsx(en, {
+                            onClick: o,
                             children: "No thanks!"
                         })]
                     })]
@@ -2445,13 +2381,13 @@ const ne = "#0a2540",
             })
         })
     },
-    no = a.div.attrs({
+    Xr = a.div.attrs({
         className: "maxWidth"
     })`
   color: ${h.Black};
-  font-family: ${O.SFPro};
+  font-family: ${P.SFPro};
 `,
-    io = a.div`
+    en = a.div`
   z-index: 999;
   color: rgba(0, 0, 0, 0.9);
   font-size: 14px;
@@ -2459,24 +2395,24 @@ const ne = "#0a2540",
   cursor: pointer;
   text-decoration: underline;
 `,
-    ao = a.div.attrs({
+    tn = a.div.attrs({
         className: "maxAll flex-column"
     })``,
-    lo = a.div`
+    sn = a.div`
   flex: 1;
   display: flex;
-  font-family: ${O.SFPro};
+  font-family: ${P.SFPro};
 `,
-    co = a.div.attrs({
+    rn = a.div.attrs({
         id: "mainContainer",
         className: "flex-column"
     })`
   height: 100%;
   background: ${h.Snow};
 `,
-    uo = () => {
-        const [t, s, r] = k(!1), [n, o] = l.useState(!1), [i, c] = l.useState(!1), u = f => {
-            o(f ?? !1), s()
+    nn = () => {
+        const [t, s, r] = k(!1), [o, n] = l.useState(!1), [i, c] = l.useState(!1), d = f => {
+            n(f ?? !1), s()
         }, x = l.useRef(null), m = I();
         if (!m) return null;
         const j = (() => {
@@ -2487,7 +2423,7 @@ const ne = "#0a2540",
                 icon: e.jsx(C, {
                     name: "fas fa-home"
                 }),
-                path: Me,
+                path: $e,
                 otherMatchingPaths: [ge]
             }), f.push({
                 id: "kits",
@@ -2495,33 +2431,33 @@ const ne = "#0a2540",
                 icon: e.jsx(C, {
                     name: "fas fa-box-open"
                 }),
-                path: P,
-                otherMatchingPaths: B() ? [ge, te] : [te]
+                path: L,
+                otherMatchingPaths: W() ? [ge, te] : [te]
             }), w() || f.push({
                 id: "reports",
                 label: "Reports",
                 icon: e.jsx(C, {
                     name: "fas fa-analytics"
                 }),
-                path: Re
+                path: Ie
             }, {
                 id: "assignments",
                 label: "Assignments",
-                path: $e,
+                path: Te,
                 icon: e.jsx(C, {
                     name: "fas fa-file-alt"
                 })
             }, {
                 id: "classes",
                 label: "Classes",
-                path: Fe,
+                path: Ne,
                 icon: e.jsx(C, {
                     name: "fas fa-users-class"
                 })
             }), w() && f.push({
                 id: "join-game",
                 label: "Join Game",
-                path: At,
+                path: Nt,
                 target: "_blank",
                 icon: e.jsx(C, {
                     name: "fas fa-gamepad"
@@ -2529,47 +2465,47 @@ const ne = "#0a2540",
             }), f
         })();
         return e.jsxs(e.Fragment, {
-            children: [e.jsx(hs, {
-                alpha: gs.none,
-                children: e.jsx(xs, {
+            children: [e.jsx(ls, {
+                alpha: hs.none,
+                children: e.jsx(us, {
                     options: j
                 })
-            }), e.jsxs(ao, {
-                children: [e.jsxs(lo, {
+            }), e.jsxs(tn, {
+                children: [e.jsxs(sn, {
                     className: "disable-scrollbars",
-                    children: [e.jsx(U, {
+                    children: [e.jsx(B, {
                         title: "Dashboard"
-                    }), e.jsxs(co, {
+                    }), e.jsxs(rn, {
                         style: {
                             flex: 1
                         },
                         ref: x,
-                        children: [e.jsx(ms, {}), e.jsx(Mr, {})]
-                    }), e.jsx(oe, {})]
-                }), e.jsx(Br, {
-                    openUpgradeModal: u
+                        children: [e.jsx(cs, {}), e.jsx(Ir, {})]
+                    }), e.jsx(ne, {})]
+                }), e.jsx(_r, {
+                    openUpgradeModal: d
                 })]
-            }), e.jsx(Hr, {
+            }), e.jsx(Br, {
                 upgradeModalVisible: t,
                 proUpsellModalVisible: i
-            }), e.jsx(eo, {}), e.jsx(G, {
-                id: n ? "dashboard-auto" : "dashboard",
+            }), e.jsx(Vr, {}), e.jsx(G, {
+                id: o ? "dashboard-auto" : "dashboard",
                 visible: t,
                 close: r,
                 showModes: !0
-            }), m.type === _t.proPass ? e.jsx(oo, {
+            }), m.type === $t.proPass ? e.jsx(Zr, {
                 onVisibleChange: c
             }) : null]
         })
     },
-    On = () => e.jsx(Ke.Provider, {
+    Ao = () => e.jsx(Ue.Provider, {
         value: se,
-        children: e.jsx(Et, {
+        children: e.jsx(Mt, {
             ...se,
-            children: e.jsx(uo, {})
+            children: e.jsx(nn, {})
         })
     });
 export {
-    On as
+    Ao as
     default
 };

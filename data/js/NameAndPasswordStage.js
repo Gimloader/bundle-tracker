@@ -7,7 +7,7 @@ import {
     D as x,
     e as L,
     F,
-    W as k
+    U as k
 } from "./_index.js";
 import {
     a as C,
@@ -85,7 +85,7 @@ const T = e => t.jsx(z, {
         marginTop: 0,
         minHeight: 0
     },
-    O = () => {
+    W = () => {
         const {
             login: e
         } = n.useContext(C), [o, c] = n.useState(e.firstName), [d, N] = n.useState(e.lastName), [i, j] = n.useState(e.password), p = s => c(s.target.value), v = s => N(s.target.value), w = s => j(s.target.value), u = () => {
@@ -154,5 +154,5 @@ const T = e => t.jsx(z, {
         })
     };
 export {
-    g as A, H as M, O as N, _ as P, M as R, h as T, B as a
+    g as A, H as M, W as N, _ as P, M as R, h as T, B as a
 };

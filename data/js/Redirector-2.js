@@ -1,6 +1,6 @@
 import {
     r as i,
-    X as r
+    V as r
 } from "./_index.js";
 const s = () => (i.useEffect(() => {
     if (window.location.href.includes("/group-subscription/complete")) {

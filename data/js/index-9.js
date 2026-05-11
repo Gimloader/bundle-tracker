@@ -1,44 +1,44 @@
 import {
     r as g,
-    aD as L,
-    aI as D,
-    aB as R,
-    ao as N,
-    aC as H,
-    _ as A,
-    aE as q,
-    ak as X,
-    al as K,
-    aN as V,
-    am as $,
-    aO as B,
-    bG as _,
-    an as F,
-    bW as G,
-    aR as Q,
-    d8 as J,
-    bB as U
+    aB as W,
+    aG as P,
+    az as A,
+    am as D,
+    aA as H,
+    _ as R,
+    aC as q,
+    ai as X,
+    aj as V,
+    aL as K,
+    ak as $,
+    aM as F,
+    bF as _,
+    al as B,
+    bV as G,
+    aP as Q,
+    d3 as J,
+    bA as U
 } from "./_index.js";
 var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loadingIcon", "checkedChildren", "unCheckedChildren", "onClick", "onChange", "onKeyDown"],
-    O = g.forwardRef(function(e, n) {
+    N = g.forwardRef(function(e, n) {
         var c, a = e.prefixCls,
             l = a === void 0 ? "rc-switch" : a,
-            r = e.className,
+            o = e.className,
             d = e.checked,
             t = e.defaultChecked,
             i = e.disabled,
-            o = e.loadingIcon,
+            r = e.loadingIcon,
             s = e.checkedChildren,
             u = e.unCheckedChildren,
             I = e.onClick,
             C = e.onChange,
             w = e.onKeyDown,
-            y = L(e, Y),
-            M = D(!1, {
+            y = W(e, Y),
+            M = P(!1, {
                 value: d,
                 defaultValue: t
             }),
-            f = R(M, 2),
+            f = A(M, 2),
             p = f[0],
             S = f[1];
 
@@ -55,8 +55,8 @@ var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loa
             var k = v(!p, h);
             I == null || I(k, h)
         }
-        var E = N(l, r, (c = {}, H(c, "".concat(l, "-checked"), p), H(c, "".concat(l, "-disabled"), i), c));
-        return g.createElement("button", A({}, y, {
+        var E = D(l, o, (c = {}, H(c, "".concat(l, "-checked"), p), H(c, "".concat(l, "-disabled"), i), c));
+        return g.createElement("button", R({}, y, {
             type: "button",
             role: "switch",
             "aria-checked": p,
@@ -65,7 +65,7 @@ var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loa
             ref: n,
             onKeyDown: x,
             onClick: m
-        }), o, g.createElement("span", {
+        }), r, g.createElement("span", {
             className: "".concat(l, "-inner")
         }, g.createElement("span", {
             className: "".concat(l, "-inner-checked")
@@ -73,18 +73,18 @@ var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loa
             className: "".concat(l, "-inner-unchecked")
         }, u)))
     });
-O.displayName = "Switch";
+N.displayName = "Switch";
 const Z = e => {
         const {
             componentCls: n,
             trackHeightSM: c,
             trackPadding: a,
             trackMinWidthSM: l,
-            innerMinMarginSM: r,
+            innerMinMarginSM: o,
             innerMaxMarginSM: d,
             handleSizeSM: t,
             calc: i
-        } = e, o = `${n}-inner`, s = $(i(t).add(i(a).mul(2)).equal()), u = $(i(d).mul(2).equal());
+        } = e, r = `${n}-inner`, s = $(i(t).add(i(a).mul(2)).equal()), u = $(i(d).mul(2).equal());
         return {
             [n]: {
                 [`&${n}-small`]: {
@@ -93,15 +93,15 @@ const Z = e => {
                     lineHeight: $(c),
                     [`${n}-inner`]: {
                         paddingInlineStart: d,
-                        paddingInlineEnd: r,
-                        [`${o}-checked, ${o}-unchecked`]: {
+                        paddingInlineEnd: o,
+                        [`${r}-checked, ${r}-unchecked`]: {
                             minHeight: c
                         },
-                        [`${o}-checked`]: {
+                        [`${r}-checked`]: {
                             marginInlineStart: `calc(-100% + ${s} - ${u})`,
                             marginInlineEnd: `calc(100% - ${s} + ${u})`
                         },
-                        [`${o}-unchecked`]: {
+                        [`${r}-unchecked`]: {
                             marginTop: i(c).mul(-1).equal(),
                             marginInlineStart: 0,
                             marginInlineEnd: 0
@@ -117,13 +117,13 @@ const Z = e => {
                     },
                     [`&${n}-checked`]: {
                         [`${n}-inner`]: {
-                            paddingInlineStart: r,
+                            paddingInlineStart: o,
                             paddingInlineEnd: d,
-                            [`${o}-checked`]: {
+                            [`${r}-checked`]: {
                                 marginInlineStart: 0,
                                 marginInlineEnd: 0
                             },
-                            [`${o}-unchecked`]: {
+                            [`${r}-unchecked`]: {
                                 marginInlineStart: `calc(100% - ${s} + ${u})`,
                                 marginInlineEnd: `calc(-100% + ${s} - ${u})`
                             }
@@ -133,14 +133,14 @@ const Z = e => {
                         }
                     },
                     [`&:not(${n}-disabled):active`]: {
-                        [`&:not(${n}-checked) ${o}`]: {
-                            [`${o}-unchecked`]: {
+                        [`&:not(${n}-checked) ${r}`]: {
+                            [`${r}-unchecked`]: {
                                 marginInlineStart: i(e.marginXXS).div(2).equal(),
                                 marginInlineEnd: i(e.marginXXS).mul(-1).div(2).equal()
                             }
                         },
-                        [`&${n}-checked ${o}`]: {
-                            [`${o}-checked`]: {
+                        [`&${n}-checked ${r}`]: {
+                            [`${r}-checked`]: {
                                 marginInlineStart: i(e.marginXXS).mul(-1).div(2).equal(),
                                 marginInlineEnd: i(e.marginXXS).div(2).equal()
                             }
@@ -176,7 +176,7 @@ const Z = e => {
             trackPadding: c,
             handleBg: a,
             handleShadow: l,
-            handleSize: r,
+            handleSize: o,
             calc: d
         } = e, t = `${n}-handle`;
         return {
@@ -185,8 +185,8 @@ const Z = e => {
                     position: "absolute",
                     top: c,
                     insetInlineStart: c,
-                    width: r,
-                    height: r,
+                    width: o,
+                    height: o,
                     transition: `all ${e.switchDuration} ease-in-out`,
                     "&::before": {
                         position: "absolute",
@@ -195,14 +195,14 @@ const Z = e => {
                         bottom: 0,
                         insetInlineStart: 0,
                         backgroundColor: a,
-                        borderRadius: d(r).div(2).equal(),
+                        borderRadius: d(o).div(2).equal(),
                         boxShadow: l,
                         transition: `all ${e.switchDuration} ease-in-out`,
                         content: '""'
                     }
                 },
                 [`&${n}-checked ${t}`]: {
-                    insetInlineStart: `calc(100% - ${$(d(r).add(c).equal())})`
+                    insetInlineStart: `calc(100% - ${$(d(o).add(c).equal())})`
                 },
                 [`&:not(${n}-disabled):active`]: {
                     [`${t}::before`]: {
@@ -223,10 +223,10 @@ const Z = e => {
             trackHeight: c,
             trackPadding: a,
             innerMinMargin: l,
-            innerMaxMargin: r,
+            innerMaxMargin: o,
             handleSize: d,
             calc: t
-        } = e, i = `${n}-inner`, o = $(t(d).add(t(a).mul(2)).equal()), s = $(t(r).mul(2).equal());
+        } = e, i = `${n}-inner`, r = $(t(d).add(t(a).mul(2)).equal()), s = $(t(o).mul(2).equal());
         return {
             [n]: {
                 [i]: {
@@ -234,7 +234,7 @@ const Z = e => {
                     overflow: "hidden",
                     borderRadius: 100,
                     height: "100%",
-                    paddingInlineStart: r,
+                    paddingInlineStart: o,
                     paddingInlineEnd: l,
                     transition: `padding-inline-start ${e.switchDuration} ease-in-out, padding-inline-end ${e.switchDuration} ease-in-out`,
                     [`${i}-checked, ${i}-unchecked`]: {
@@ -246,8 +246,8 @@ const Z = e => {
                         minHeight: c
                     },
                     [`${i}-checked`]: {
-                        marginInlineStart: `calc(-100% + ${o} - ${s})`,
-                        marginInlineEnd: `calc(100% - ${o} + ${s})`
+                        marginInlineStart: `calc(-100% + ${r} - ${s})`,
+                        marginInlineEnd: `calc(100% - ${r} + ${s})`
                     },
                     [`${i}-unchecked`]: {
                         marginTop: t(c).mul(-1).equal(),
@@ -257,14 +257,14 @@ const Z = e => {
                 },
                 [`&${n}-checked ${i}`]: {
                     paddingInlineStart: l,
-                    paddingInlineEnd: r,
+                    paddingInlineEnd: o,
                     [`${i}-checked`]: {
                         marginInlineStart: 0,
                         marginInlineEnd: 0
                     },
                     [`${i}-unchecked`]: {
-                        marginInlineStart: `calc(100% - ${o} + ${s})`,
-                        marginInlineEnd: `calc(-100% + ${o} - ${s})`
+                        marginInlineStart: `calc(100% - ${r} + ${s})`,
+                        marginInlineEnd: `calc(-100% + ${r} - ${s})`
                     }
                 },
                 [`&:not(${n}-disabled):active`]: {
@@ -291,7 +291,7 @@ const Z = e => {
             trackMinWidth: a
         } = e;
         return {
-            [n]: Object.assign(Object.assign(Object.assign(Object.assign({}, V(e)), {
+            [n]: Object.assign(Object.assign(Object.assign(Object.assign({}, K(e)), {
                 position: "relative",
                 display: "inline-block",
                 boxSizing: "border-box",
@@ -308,7 +308,7 @@ const Z = e => {
                 [`&:hover:not(${n}-disabled)`]: {
                     background: e.colorTextTertiary
                 }
-            }), B(e)), {
+            }), F(e)), {
                 [`&${n}-checked`]: {
                     background: e.switchColor,
                     [`&:hover:not(${n}-disabled)`]: {
@@ -335,25 +335,25 @@ const Z = e => {
             lineHeight: c,
             controlHeight: a,
             colorWhite: l
-        } = e, r = n * c, d = a / 2, t = 2, i = r - t * 2, o = d - t * 2;
+        } = e, o = n * c, d = a / 2, t = 2, i = o - t * 2, r = d - t * 2;
         return {
-            trackHeight: r,
+            trackHeight: o,
             trackHeightSM: d,
             trackMinWidth: i * 2 + t * 4,
-            trackMinWidthSM: o * 2 + t * 2,
+            trackMinWidthSM: r * 2 + t * 2,
             trackPadding: t,
             handleBg: l,
             handleSize: i,
-            handleSizeSM: o,
+            handleSizeSM: r,
             handleShadow: `0 2px 4px 0 ${new _("#00230b").setA(.2).toRgbString()}`,
             innerMinMargin: i / 2,
             innerMaxMargin: i + t + t * 2,
-            innerMinMarginSM: o / 2,
-            innerMaxMarginSM: o + t + t * 2
+            innerMinMarginSM: r / 2,
+            innerMaxMarginSM: r + t + t * 2
         }
     },
     ce = X("Switch", e => {
-        const n = K(e, {
+        const n = V(e, {
             switchDuration: e.motionDurationMid,
             switchColor: e.colorPrimary,
             switchDisabledOpacity: e.opacityLoading,
@@ -370,43 +370,43 @@ var le = function(e, n) {
         for (var l = 0, a = Object.getOwnPropertySymbols(e); l < a.length; l++) n.indexOf(a[l]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[l]) && (c[a[l]] = e[a[l]]);
     return c
 };
-const oe = g.forwardRef((e, n) => {
+const re = g.forwardRef((e, n) => {
         const {
             prefixCls: c,
             size: a,
             disabled: l,
-            loading: r,
+            loading: o,
             className: d,
             rootClassName: t,
             style: i,
-            checked: o,
+            checked: r,
             value: s,
             defaultChecked: u,
             defaultValue: I,
             onChange: C
-        } = e, w = le(e, ["prefixCls", "size", "disabled", "loading", "className", "rootClassName", "style", "checked", "value", "defaultChecked", "defaultValue", "onChange"]), [y, M] = D(!1, {
-            value: o ?? s,
+        } = e, w = le(e, ["prefixCls", "size", "disabled", "loading", "className", "rootClassName", "style", "checked", "value", "defaultChecked", "defaultValue", "onChange"]), [y, M] = P(!1, {
+            value: r ?? s,
             defaultValue: u ?? I
         }), {
             getPrefixCls: f,
             direction: p,
             switch: S
-        } = g.useContext(F), v = g.useContext(G), x = (l ?? v) || r, m = f("switch", c), E = g.createElement("div", {
+        } = g.useContext(B), v = g.useContext(G), x = (l ?? v) || o, m = f("switch", c), E = g.createElement("div", {
             className: `${m}-handle`
-        }, r && g.createElement(U, {
+        }, o && g.createElement(U, {
             className: `${m}-loading-icon`
-        })), [h, k, b] = ce(m), P = Q(a), T = N(S == null ? void 0 : S.className, {
-            [`${m}-small`]: P === "small",
-            [`${m}-loading`]: r,
+        })), [h, k, b] = ce(m), O = Q(a), T = D(S == null ? void 0 : S.className, {
+            [`${m}-small`]: O === "small",
+            [`${m}-loading`]: o,
             [`${m}-rtl`]: p === "rtl"
-        }, d, t, k, b), j = Object.assign(Object.assign({}, S == null ? void 0 : S.style), i), W = (...z) => {
+        }, d, t, k, b), j = Object.assign(Object.assign({}, S == null ? void 0 : S.style), i), L = (...z) => {
             M(z[0]), C == null || C.apply(void 0, z)
         };
         return h(g.createElement(J, {
             component: "Switch"
-        }, g.createElement(O, Object.assign({}, w, {
+        }, g.createElement(N, Object.assign({}, w, {
             checked: y,
-            onChange: W,
+            onChange: L,
             prefixCls: m,
             className: T,
             style: j,
@@ -415,8 +415,8 @@ const oe = g.forwardRef((e, n) => {
             loadingIcon: E
         }))))
     }),
-    re = oe;
-re.__ANT_SWITCH = !0;
+    oe = re;
+oe.__ANT_SWITCH = !0;
 export {
-    re as S
+    oe as S
 };

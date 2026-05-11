@@ -5,7 +5,7 @@ import {
     C as f
 } from "./CapitalizeFirstLetter.js";
 import {
-    b6 as l
+    b5 as l
 } from "./_index.js";
 import {
     aS as p

@@ -1,130 +1,131 @@
 import {
-    z as I,
-    aB as ze,
-    ao as Q,
-    aC as V,
-    aD as Re,
-    aE as ke,
-    _ as X,
-    aF as Xe,
-    aG as Ze,
-    aH as Fe,
-    aI as Qe,
-    aJ as Je,
-    aK as et,
-    aL as tt,
-    aM as nt,
+    x as N,
+    az as ze,
+    am as ee,
+    aA as X,
+    aB as Re,
+    aC as ke,
+    _ as Z,
+    aD as Xe,
+    aE as Ze,
+    aF as Fe,
+    aG as Qe,
+    aH as Je,
+    aI as et,
+    aJ as tt,
+    aK as nt,
     r as i,
-    an as at,
-    ak as st,
-    al as ot,
-    am as G,
-    aN as it,
-    aO as rt,
-    aP as lt,
-    aQ as ct,
-    aR as dt,
-    aS as Ie,
-    aT as ut,
-    aU as Ne,
+    al as st,
+    ai as at,
+    aj as ot,
+    ak as G,
+    aL as it,
+    aM as rt,
+    aN as lt,
+    aO as ct,
+    aP as dt,
+    aQ as Ie,
+    aR as ut,
+    aS as Ne,
     I as Oe,
-    i as q,
+    i as W,
     j as e,
-    ac as mt,
+    aa as mt,
     F as y,
-    aV as gt,
+    aT as gt,
     e as k,
-    d as W,
-    a as $,
-    Y as ge,
+    d as _,
+    a as I,
+    W as ge,
     l as D,
-    M as ee,
-    W as T,
-    B as K,
-    D as Z,
-    aW as ht,
-    ad as re,
-    a6 as ft,
+    M as Y,
+    U as T,
+    B as q,
+    D as Q,
+    aU as ht,
+    ab as re,
+    ae as ft,
+    a4 as xt,
     h as me,
-    t as ae,
-    aX as xt,
+    t as se,
+    aV as pt,
     c as L,
-    x as pt,
-    aY as $e,
-    A as yt,
+    s as yt,
+    aW as $e,
+    y as vt,
     f as Ce,
-    b as vt,
-    X as De,
-    ae as bt,
-    at as jt,
-    C as Ct,
-    a0 as St,
-    T as wt
+    b as bt,
+    V as De,
+    ac as jt,
+    ar as Ct,
+    C as St,
+    Z as wt,
+    T as kt
 } from "./_index.js";
 import {
-    b as _,
+    b as U,
     a as Le,
     T as A,
     s as P,
     G as ue,
-    S as kt
+    S as It
 } from "./App-4.js";
 import {
-    o as U
+    o as H
 } from "./mobxreact.esm.js";
 import {
-    A as te
+    A as J
 } from "./AccessibleAnchor.js";
 import {
     M as le
 } from "./MenuItem.js";
 import {
-    R as It
+    R as Nt
 } from "./PlayCircleOutlined.js";
 import {
-    R as Nt
+    R as $t
 } from "./QuestionCircleOutlined.js";
 import {
     i as Pe
 } from "./ContinueButton.js";
 import {
-    M as $t,
-    a as Pt
+    M as Pt,
+    a as Bt
 } from "./NameAndPasswordStage.js";
 import {
-    I as J,
-    R as Bt
+    I as te,
+    R as Et
 } from "./index-3.js";
 import {
-    v as Et,
-    F as At
+    v as At,
+    F as Tt
 } from "./EmailStage.js";
 import {
-    E as Tt
+    E as Mt
 } from "./ErrorMessage.js";
 import {
-    g as Mt,
-    R as zt
+    g as zt,
+    R as Rt
 } from "./index-10.js";
 import {
-    LIBRARY_CACHE_KEY as Rt
+    LIBRARY_CACHE_KEY as Ft
 } from "./SchoolLibrary.js";
 import {
-    S as Ft
+    S as Ot
 } from "./School.js";
 import {
-    D as Ot
+    D as Dt
 } from "./index-6.js";
 import {
-    L as Y
+    L as V
 } from "./AppTypes.js";
 import {
     S as he
 } from "./index-8.js";
 import {
-    g as Dt,
-    a as Lt,
-    b as Gt
+    g as Lt,
+    a as Gt,
+    b as Wt
 } from "./Language.js";
 import {
     S as Se
@@ -133,28 +134,28 @@ import {
     s as Ge
 } from "./index-4.js";
 import {
-    u as Wt
+    u as _t
 } from "./useQuery.js";
 import {
     T as We
 } from "./index-12.js";
 import {
-    S as _t
+    S as Ut
 } from "./index-2.js";
 import {
     c as fe
 } from "./Money.js";
 import {
-    l as Ut
+    l as Ht
 } from "./stripe.esm.js";
 import {
     R as Be
 } from "./index-13.js";
 import {
-    R as Ht
+    R as Kt
 } from "./StarOutlined.js";
 import {
-    F as Kt
+    F as Yt
 } from "./FillRemainingSpace.js";
 import "./Shortcut.js";
 import "./Names.js";
@@ -180,46 +181,46 @@ import "./DownOutlined.js";
 import "./context.js";
 import "./useBubbleLock.js";
 import "./useForm.js";
-var _e = I.forwardRef(function(t, n) {
-    var a = t.prefixCls,
-        s = t.forceRender,
+var _e = N.forwardRef(function(t, n) {
+    var s = t.prefixCls,
+        a = t.forceRender,
         o = t.className,
-        u = t.style,
+        l = t.style,
         r = t.children,
-        l = t.isActive,
+        c = t.isActive,
         m = t.role,
-        c = t.classNames,
+        d = t.classNames,
         g = t.styles,
-        d = I.useState(l || s),
-        v = ze(d, 2),
+        u = N.useState(c || a),
+        v = ze(u, 2),
         f = v[0],
         p = v[1];
-    return I.useEffect(function() {
-        (s || l) && p(!0)
-    }, [s, l]), f ? I.createElement("div", {
+    return N.useEffect(function() {
+        (a || c) && p(!0)
+    }, [a, c]), f ? N.createElement("div", {
         ref: n,
-        className: Q("".concat(a, "-content"), V(V({}, "".concat(a, "-content-active"), l), "".concat(a, "-content-inactive"), !l), o),
-        style: u,
+        className: ee("".concat(s, "-content"), X(X({}, "".concat(s, "-content-active"), c), "".concat(s, "-content-inactive"), !c), o),
+        style: l,
         role: m
-    }, I.createElement("div", {
-        className: Q("".concat(a, "-content-box"), c == null ? void 0 : c.body),
+    }, N.createElement("div", {
+        className: ee("".concat(s, "-content-box"), d == null ? void 0 : d.body),
         style: g == null ? void 0 : g.body
     }, r)) : null
 });
 _e.displayName = "PanelContent";
-var Yt = ["showArrow", "headerClass", "isActive", "onItemClick", "forceRender", "className", "classNames", "styles", "prefixCls", "collapsible", "accordion", "panelKey", "extra", "header", "expandIcon", "openMotion", "destroyInactivePanel", "children"],
-    Ue = I.forwardRef(function(t, n) {
-        var a = t.showArrow,
-            s = a === void 0 ? !0 : a,
+var qt = ["showArrow", "headerClass", "isActive", "onItemClick", "forceRender", "className", "classNames", "styles", "prefixCls", "collapsible", "accordion", "panelKey", "extra", "header", "expandIcon", "openMotion", "destroyInactivePanel", "children"],
+    Ue = N.forwardRef(function(t, n) {
+        var s = t.showArrow,
+            a = s === void 0 ? !0 : s,
             o = t.headerClass,
-            u = t.isActive,
+            l = t.isActive,
             r = t.onItemClick,
-            l = t.forceRender,
+            c = t.forceRender,
             m = t.className,
-            c = t.classNames,
-            g = c === void 0 ? {} : c,
-            d = t.styles,
-            v = d === void 0 ? {} : d,
+            d = t.classNames,
+            g = d === void 0 ? {} : d,
+            u = t.styles,
+            v = u === void 0 ? {} : u,
             f = t.prefixCls,
             p = t.collapsible,
             j = t.accordion,
@@ -230,10 +231,10 @@ var Yt = ["showArrow", "headerClass", "isActive", "onItemClick", "forceRender", 
             h = t.openMotion,
             B = t.destroyInactivePanel,
             b = t.children,
-            N = Re(t, Yt),
+            $ = Re(t, qt),
             E = p === "disabled",
             M = x != null && typeof x != "boolean",
-            z = V(V(V({
+            z = X(X(X({
                 onClick: function() {
                     r == null || r(C)
                 },
@@ -241,99 +242,99 @@ var Yt = ["showArrow", "headerClass", "isActive", "onItemClick", "forceRender", 
                     (O.key === "Enter" || O.keyCode === ke.ENTER || O.which === ke.ENTER) && (r == null || r(C))
                 },
                 role: j ? "tab" : "button"
-            }, "aria-expanded", u), "aria-disabled", E), "tabIndex", E ? -1 : 0),
-            H = typeof w == "function" ? w(t) : I.createElement("i", {
+            }, "aria-expanded", l), "aria-disabled", E), "tabIndex", E ? -1 : 0),
+            K = typeof w == "function" ? w(t) : N.createElement("i", {
                 className: "arrow"
             }),
-            oe = H && I.createElement("div", X({
+            oe = K && N.createElement("div", Z({
                 className: "".concat(f, "-expand-icon")
-            }, ["header", "icon"].includes(p) ? z : {}), H),
-            xe = Q("".concat(f, "-item"), V(V({}, "".concat(f, "-item-active"), u), "".concat(f, "-item-disabled"), E), m),
-            pe = Q(o, "".concat(f, "-header"), V({}, "".concat(f, "-collapsible-").concat(p), !!p), g.header),
+            }, ["header", "icon"].includes(p) ? z : {}), K),
+            xe = ee("".concat(f, "-item"), X(X({}, "".concat(f, "-item-active"), l), "".concat(f, "-item-disabled"), E), m),
+            pe = ee(o, "".concat(f, "-header"), X({}, "".concat(f, "-collapsible-").concat(p), !!p), g.header),
             R = Xe({
                 className: pe,
                 style: v.header
             }, ["header", "icon"].includes(p) ? {} : z);
-        return I.createElement("div", X({}, N, {
+        return N.createElement("div", Z({}, $, {
             ref: n,
             className: xe
-        }), I.createElement("div", R, s && oe, I.createElement("span", X({
+        }), N.createElement("div", R, a && oe, N.createElement("span", Z({
             className: "".concat(f, "-header-text")
-        }, p === "header" ? z : {}), S), M && I.createElement("div", {
+        }, p === "header" ? z : {}), S), M && N.createElement("div", {
             className: "".concat(f, "-extra")
-        }, x)), I.createElement(Ze, X({
-            visible: u,
+        }, x)), N.createElement(Ze, Z({
+            visible: l,
             leavedClassName: "".concat(f, "-content-hidden")
         }, h, {
-            forceRender: l,
+            forceRender: c,
             removeOnLeave: B
         }), function(F, O) {
             var ie = F.className,
                 ne = F.style;
-            return I.createElement(_e, {
+            return N.createElement(_e, {
                 ref: O,
                 prefixCls: f,
                 className: ie,
                 classNames: g,
                 style: ne,
                 styles: v,
-                isActive: u,
-                forceRender: l,
+                isActive: l,
+                forceRender: c,
                 role: j ? "tabpanel" : void 0
             }, b)
         }))
     }),
-    qt = ["children", "label", "key", "collapsible", "onItemClick", "destroyInactivePanel"],
-    Vt = function(n, a) {
-        var s = a.prefixCls,
-            o = a.accordion,
-            u = a.collapsible,
-            r = a.destroyInactivePanel,
-            l = a.onItemClick,
-            m = a.activeKey,
-            c = a.openMotion,
-            g = a.expandIcon;
-        return n.map(function(d, v) {
-            var f = d.children,
-                p = d.label,
-                j = d.key,
-                C = d.collapsible,
-                x = d.onItemClick,
-                S = d.destroyInactivePanel,
-                w = Re(d, qt),
+    Vt = ["children", "label", "key", "collapsible", "onItemClick", "destroyInactivePanel"],
+    Xt = function(n, s) {
+        var a = s.prefixCls,
+            o = s.accordion,
+            l = s.collapsible,
+            r = s.destroyInactivePanel,
+            c = s.onItemClick,
+            m = s.activeKey,
+            d = s.openMotion,
+            g = s.expandIcon;
+        return n.map(function(u, v) {
+            var f = u.children,
+                p = u.label,
+                j = u.key,
+                C = u.collapsible,
+                x = u.onItemClick,
+                S = u.destroyInactivePanel,
+                w = Re(u, Vt),
                 h = String(j ?? v),
-                B = C ?? u,
+                B = C ?? l,
                 b = S ?? r,
-                N = function(z) {
-                    B !== "disabled" && (l(z), x == null || x(z))
+                $ = function(z) {
+                    B !== "disabled" && (c(z), x == null || x(z))
                 },
                 E = !1;
-            return o ? E = m[0] === h : E = m.indexOf(h) > -1, I.createElement(Ue, X({}, w, {
-                prefixCls: s,
+            return o ? E = m[0] === h : E = m.indexOf(h) > -1, N.createElement(Ue, Z({}, w, {
+                prefixCls: a,
                 key: h,
                 panelKey: h,
                 isActive: E,
                 accordion: o,
-                openMotion: c,
+                openMotion: d,
                 expandIcon: g,
                 header: p,
                 collapsible: B,
-                onItemClick: N,
+                onItemClick: $,
                 destroyInactivePanel: b
             }), f)
         })
     },
-    Xt = function(n, a, s) {
+    Zt = function(n, s, a) {
         if (!n) return null;
-        var o = s.prefixCls,
-            u = s.accordion,
-            r = s.collapsible,
-            l = s.destroyInactivePanel,
-            m = s.onItemClick,
-            c = s.activeKey,
-            g = s.openMotion,
-            d = s.expandIcon,
-            v = n.key || String(a),
+        var o = a.prefixCls,
+            l = a.accordion,
+            r = a.collapsible,
+            c = a.destroyInactivePanel,
+            m = a.onItemClick,
+            d = a.activeKey,
+            g = a.openMotion,
+            u = a.expandIcon,
+            v = n.key || String(s),
             f = n.props,
             p = f.header,
             j = f.headerClass,
@@ -341,7 +342,7 @@ var Yt = ["showArrow", "headerClass", "isActive", "onItemClick", "forceRender", 
             x = f.collapsible,
             S = f.onItemClick,
             w = !1;
-        u ? w = c[0] === v : w = c.indexOf(v) > -1;
+        l ? w = d[0] === v : w = d.indexOf(v) > -1;
         var h = x ?? r,
             B = function(E) {
                 h !== "disabled" && (m(E), S == null || S(E))
@@ -353,128 +354,128 @@ var Yt = ["showArrow", "headerClass", "isActive", "onItemClick", "forceRender", 
                 headerClass: j,
                 isActive: w,
                 prefixCls: o,
-                destroyInactivePanel: C ?? l,
+                destroyInactivePanel: C ?? c,
                 openMotion: g,
-                accordion: u,
+                accordion: l,
                 children: n.props.children,
                 onItemClick: B,
-                expandIcon: d,
+                expandIcon: u,
                 collapsible: h
             };
-        return typeof n.type == "string" ? n : (Object.keys(b).forEach(function(N) {
-            typeof b[N] > "u" && delete b[N]
-        }), I.cloneElement(n, b))
+        return typeof n.type == "string" ? n : (Object.keys(b).forEach(function($) {
+            typeof b[$] > "u" && delete b[$]
+        }), N.cloneElement(n, b))
     };
 
-function Zt(t, n, a) {
-    return Array.isArray(t) ? Vt(t, a) : Fe(n).map(function(s, o) {
-        return Xt(s, o, a)
+function Qt(t, n, s) {
+    return Array.isArray(t) ? Xt(t, s) : Fe(n).map(function(a, o) {
+        return Zt(a, o, s)
     })
 }
 
-function Qt(t) {
+function Jt(t) {
     var n = t;
     if (!Array.isArray(n)) {
-        var a = tt(n);
-        n = a === "number" || a === "string" ? [n] : []
+        var s = tt(n);
+        n = s === "number" || s === "string" ? [n] : []
     }
-    return n.map(function(s) {
-        return String(s)
+    return n.map(function(a) {
+        return String(a)
     })
 }
-var Jt = I.forwardRef(function(t, n) {
-    var a = t.prefixCls,
-        s = a === void 0 ? "rc-collapse" : a,
+var en = N.forwardRef(function(t, n) {
+    var s = t.prefixCls,
+        a = s === void 0 ? "rc-collapse" : s,
         o = t.destroyInactivePanel,
-        u = o === void 0 ? !1 : o,
+        l = o === void 0 ? !1 : o,
         r = t.style,
-        l = t.accordion,
+        c = t.accordion,
         m = t.className,
-        c = t.children,
+        d = t.children,
         g = t.collapsible,
-        d = t.openMotion,
+        u = t.openMotion,
         v = t.expandIcon,
         f = t.activeKey,
         p = t.defaultActiveKey,
         j = t.onChange,
         C = t.items,
-        x = Q(s, m),
+        x = ee(a, m),
         S = Qe([], {
             value: f,
             onChange: function(M) {
                 return j == null ? void 0 : j(M)
             },
             defaultValue: p,
-            postState: Qt
+            postState: Jt
         }),
         w = ze(S, 2),
         h = w[0],
         B = w[1],
         b = function(M) {
             return B(function() {
-                if (l) return h[0] === M ? [] : [M];
+                if (c) return h[0] === M ? [] : [M];
                 var z = h.indexOf(M),
-                    H = z > -1;
-                return H ? h.filter(function(oe) {
+                    K = z > -1;
+                return K ? h.filter(function(oe) {
                     return oe !== M
                 }) : [].concat(nt(h), [M])
             })
         };
-    Je(!c, "[rc-collapse] `children` will be removed in next major version. Please use `items` instead.");
-    var N = Zt(C, c, {
-        prefixCls: s,
-        accordion: l,
-        openMotion: d,
+    Je(!d, "[rc-collapse] `children` will be removed in next major version. Please use `items` instead.");
+    var $ = Qt(C, d, {
+        prefixCls: a,
+        accordion: c,
+        openMotion: u,
         expandIcon: v,
         collapsible: g,
-        destroyInactivePanel: u,
+        destroyInactivePanel: l,
         onItemClick: b,
         activeKey: h
     });
-    return I.createElement("div", X({
+    return N.createElement("div", Z({
         ref: n,
         className: x,
         style: r,
-        role: l ? "tablist" : void 0
+        role: c ? "tablist" : void 0
     }, et(t, {
         aria: !0,
         data: !0
-    })), N)
+    })), $)
 });
-const we = Object.assign(Jt, {
+const we = Object.assign(en, {
     Panel: Ue
 });
 we.Panel;
-const en = i.forwardRef((t, n) => {
+const tn = i.forwardRef((t, n) => {
         const {
-            getPrefixCls: a
-        } = i.useContext(at), {
-            prefixCls: s,
+            getPrefixCls: s
+        } = i.useContext(st), {
+            prefixCls: a,
             className: o,
-            showArrow: u = !0
-        } = t, r = a("collapse", s), l = Q({
-            [`${r}-no-arrow`]: !u
+            showArrow: l = !0
+        } = t, r = s("collapse", a), c = ee({
+            [`${r}-no-arrow`]: !l
         }, o);
         return i.createElement(we.Panel, Object.assign({
             ref: n
         }, t, {
             prefixCls: r,
-            className: l
+            className: c
         }))
     }),
-    tn = t => {
+    nn = t => {
         const {
             componentCls: n,
-            contentBg: a,
-            padding: s,
+            contentBg: s,
+            padding: a,
             headerBg: o,
-            headerPadding: u,
+            headerPadding: l,
             collapseHeaderPaddingSM: r,
-            collapseHeaderPaddingLG: l,
+            collapseHeaderPaddingLG: c,
             collapsePanelBorderRadius: m,
-            lineWidth: c,
+            lineWidth: d,
             lineType: g,
-            colorBorder: d,
+            colorBorder: u,
             colorText: v,
             colorTextHeading: f,
             colorTextDisabled: p,
@@ -486,21 +487,21 @@ const en = i.forwardRef((t, n) => {
             paddingLG: h,
             paddingXS: B,
             motionDurationSlow: b,
-            fontSizeIcon: N,
+            fontSizeIcon: $,
             contentPadding: E,
             fontHeight: M,
             fontHeightLG: z
-        } = t, H = `${G(c)} ${g} ${d}`;
+        } = t, K = `${G(d)} ${g} ${u}`;
         return {
             [n]: Object.assign(Object.assign({}, it(t)), {
                 backgroundColor: o,
-                border: H,
+                border: K,
                 borderRadius: m,
                 "&-rtl": {
                     direction: "rtl"
                 },
                 [`& > ${n}-item`]: {
-                    borderBottom: H,
+                    borderBottom: K,
                     "&:first-child": {
                         [`
             &,
@@ -520,7 +521,7 @@ const en = i.forwardRef((t, n) => {
                         display: "flex",
                         flexWrap: "nowrap",
                         alignItems: "flex-start",
-                        padding: u,
+                        padding: l,
                         color: f,
                         lineHeight: C,
                         cursor: "pointer",
@@ -536,7 +537,7 @@ const en = i.forwardRef((t, n) => {
                             paddingInlineEnd: S
                         },
                         [`${n}-arrow`]: Object.assign(Object.assign({}, lt()), {
-                            fontSize: N,
+                            fontSize: $,
                             transition: `transform ${b}`,
                             svg: {
                                 transition: `transform ${b}`
@@ -562,8 +563,8 @@ const en = i.forwardRef((t, n) => {
                 },
                 [`${n}-content`]: {
                     color: v,
-                    backgroundColor: a,
-                    borderTop: H,
+                    backgroundColor: s,
+                    borderTop: K,
                     [`& > ${n}-content-box`]: {
                         padding: E
                     },
@@ -590,11 +591,11 @@ const en = i.forwardRef((t, n) => {
                         fontSize: j,
                         lineHeight: x,
                         [`> ${n}-header`]: {
-                            padding: l,
-                            paddingInlineStart: s,
+                            padding: c,
+                            paddingInlineStart: a,
                             [`> ${n}-expand-icon`]: {
                                 height: z,
-                                marginInlineStart: t.calc(h).sub(s).equal()
+                                marginInlineStart: t.calc(h).sub(a).equal()
                             }
                         },
                         [`> ${n}-content > ${n}-content-box`]: {
@@ -628,13 +629,13 @@ const en = i.forwardRef((t, n) => {
             })
         }
     },
-    nn = t => {
+    sn = t => {
         const {
             componentCls: n
-        } = t, a = `> ${n}-item > ${n}-header ${n}-arrow`;
+        } = t, s = `> ${n}-item > ${n}-header ${n}-arrow`;
         return {
             [`${n}-rtl`]: {
-                [a]: {
+                [s]: {
                     transform: "rotate(180deg)"
                 }
             }
@@ -643,17 +644,17 @@ const en = i.forwardRef((t, n) => {
     an = t => {
         const {
             componentCls: n,
-            headerBg: a,
-            borderlessContentPadding: s,
+            headerBg: s,
+            borderlessContentPadding: a,
             borderlessContentBg: o,
-            colorBorder: u
+            colorBorder: l
         } = t;
         return {
             [`${n}-borderless`]: {
-                backgroundColor: a,
+                backgroundColor: s,
                 border: 0,
                 [`> ${n}-item`]: {
-                    borderBottom: `1px solid ${u}`
+                    borderBottom: `1px solid ${l}`
                 },
                 [`
         > ${n}-item:last-child,
@@ -669,15 +670,15 @@ const en = i.forwardRef((t, n) => {
                     borderTop: 0
                 },
                 [`> ${n}-item > ${n}-content > ${n}-content-box`]: {
-                    padding: s
+                    padding: a
                 }
             }
         }
     },
-    sn = t => {
+    on = t => {
         const {
             componentCls: n,
-            paddingSM: a
+            paddingSM: s
         } = t;
         return {
             [`${n}-ghost`]: {
@@ -689,14 +690,14 @@ const en = i.forwardRef((t, n) => {
                         backgroundColor: "transparent",
                         border: 0,
                         [`> ${n}-content-box`]: {
-                            paddingBlock: a
+                            paddingBlock: s
                         }
                     }
                 }
             }
         }
     },
-    on = t => ({
+    rn = t => ({
         headerPadding: `${t.paddingSM}px ${t.padding}px`,
         headerBg: t.colorFillAlter,
         contentPadding: `${t.padding}px 16px`,
@@ -704,27 +705,27 @@ const en = i.forwardRef((t, n) => {
         borderlessContentPadding: `${t.paddingXXS}px 16px ${t.padding}px`,
         borderlessContentBg: "transparent"
     }),
-    rn = st("Collapse", t => {
+    ln = at("Collapse", t => {
         const n = ot(t, {
             collapseHeaderPaddingSM: `${G(t.paddingXS)} ${G(t.paddingSM)}`,
             collapseHeaderPaddingLG: `${G(t.padding)} ${G(t.paddingLG)}`,
             collapsePanelBorderRadius: t.borderRadiusLG
         });
-        return [tn(n), an(n), sn(n), nn(n), Mt(n)]
-    }, on),
-    ln = i.forwardRef((t, n) => {
+        return [nn(n), an(n), on(n), sn(n), zt(n)]
+    }, rn),
+    cn = i.forwardRef((t, n) => {
         const {
-            getPrefixCls: a,
-            direction: s,
+            getPrefixCls: s,
+            direction: a,
             expandIcon: o,
-            className: u,
+            className: l,
             style: r
         } = ct("collapse"), {
-            prefixCls: l,
+            prefixCls: c,
             className: m,
-            rootClassName: c,
+            rootClassName: d,
             style: g,
-            bordered: d = !0,
+            bordered: u = !0,
             ghost: v,
             size: f,
             expandIconPosition: p = "start",
@@ -735,23 +736,23 @@ const en = i.forwardRef((t, n) => {
         } = t, w = dt(R => {
             var F;
             return (F = f ?? R) !== null && F !== void 0 ? F : "middle"
-        }), h = a("collapse", l), B = a(), [b, N, E] = rn(h), M = i.useMemo(() => p === "left" ? "start" : p === "right" ? "end" : p, [p]), z = S ?? o, H = i.useCallback((R = {}) => {
-            const F = typeof z == "function" ? z(R) : i.createElement(zt, {
-                rotate: R.isActive ? s === "rtl" ? -90 : 90 : void 0,
+        }), h = s("collapse", c), B = s(), [b, $, E] = ln(h), M = i.useMemo(() => p === "left" ? "start" : p === "right" ? "end" : p, [p]), z = S ?? o, K = i.useCallback((R = {}) => {
+            const F = typeof z == "function" ? z(R) : i.createElement(Rt, {
+                rotate: R.isActive ? a === "rtl" ? -90 : 90 : void 0,
                 "aria-label": R.isActive ? "expanded" : "collapsed"
             });
             return Ie(F, () => {
                 var O;
                 return {
-                    className: Q((O = F.props) === null || O === void 0 ? void 0 : O.className, `${h}-arrow`)
+                    className: ee((O = F.props) === null || O === void 0 ? void 0 : O.className, `${h}-arrow`)
                 }
             })
-        }, [z, h, s]), oe = Q(`${h}-icon-position-${M}`, {
-            [`${h}-borderless`]: !d,
-            [`${h}-rtl`]: s === "rtl",
+        }, [z, h, a]), oe = ee(`${h}-icon-position-${M}`, {
+            [`${h}-borderless`]: !u,
+            [`${h}-rtl`]: a === "rtl",
             [`${h}-ghost`]: !!v,
             [`${h}-${w}`]: w !== "middle"
-        }, u, m, c, N, E), xe = i.useMemo(() => Object.assign(Object.assign({}, ut(B)), {
+        }, l, m, d, $, E), xe = i.useMemo(() => Object.assign(Object.assign({}, ut(B)), {
             motionAppear: !1,
             leavedClassName: `${h}-content-hidden`
         }), [B, h]), pe = i.useMemo(() => j ? Fe(j).map((R, F) => {
@@ -771,17 +772,17 @@ const en = i.forwardRef((t, n) => {
             ref: n,
             openMotion: xe
         }, Ne(t, ["rootClassName"]), {
-            expandIcon: H,
+            expandIcon: K,
             prefixCls: h,
             className: oe,
             style: Object.assign(Object.assign({}, r), g),
             destroyInactivePanel: x ?? C
         }), pe))
     }),
-    ye = Object.assign(ln, {
-        Panel: en
+    ye = Object.assign(cn, {
+        Panel: tn
     });
-var cn = {
+var dn = {
         icon: {
             tag: "svg",
             attrs: {
@@ -798,14 +799,14 @@ var cn = {
         name: "credit-card",
         theme: "outlined"
     },
-    dn = function(n, a) {
-        return i.createElement(Oe, X({}, n, {
-            ref: a,
-            icon: cn
+    un = function(n, s) {
+        return i.createElement(Oe, Z({}, n, {
+            ref: s,
+            icon: dn
         }))
     },
-    He = i.forwardRef(dn),
-    un = {
+    He = i.forwardRef(un),
+    mn = {
         icon: {
             tag: "svg",
             attrs: {
@@ -822,40 +823,40 @@ var cn = {
         name: "user",
         theme: "outlined"
     },
-    mn = function(n, a) {
-        return i.createElement(Oe, X({}, n, {
-            ref: a,
-            icon: un
+    gn = function(n, s) {
+        return i.createElement(Oe, Z({}, n, {
+            ref: s,
+            icon: mn
         }))
     },
-    gn = i.forwardRef(mn);
-const hn = U(() => {
+    hn = i.forwardRef(gn);
+const fn = H(() => {
         const {
             navigation: t
-        } = i.useContext(_), n = o => t.currentTab === o, a = o => t.currentTab = o, s = !q();
-        return e.jsxs(fn, {
+        } = i.useContext(U), n = o => t.currentTab === o, s = o => t.currentTab = o, a = !W();
+        return e.jsxs(xn, {
             children: [e.jsx(Le, {}), e.jsx(le, {
-                title: q() ? "General Settings" : "Account Information",
-                icon: gn,
-                onClick: () => a(A.accountInformation),
+                title: W() ? "General Settings" : "Account Information",
+                icon: hn,
+                onClick: () => s(A.accountInformation),
                 selected: n(A.accountInformation)
-            }), !q() && e.jsx(le, {
+            }), !W() && e.jsx(le, {
                 title: "Game Settings",
-                icon: It,
-                onClick: () => a(A.gameSettings),
+                icon: Nt,
+                onClick: () => s(A.gameSettings),
                 selected: n(A.gameSettings)
-            }), s && e.jsx(le, {
+            }), a && e.jsx(le, {
                 title: "Plan & Billing",
                 icon: He,
                 selected: n(A.billing),
-                onClick: () => a(A.billing)
-            }), !q() && e.jsx(le, {
+                onClick: () => s(A.billing)
+            }), !W() && e.jsx(le, {
                 title: "Help & Support",
-                icon: Nt,
+                icon: $t,
                 selected: n(A.support),
-                onClick: () => a(A.support)
-            }), q() ? null : e.jsxs(xn, {
-                children: ["Looking to manage a group license?", e.jsx("br", {}), e.jsx("br", {}), "We moved license management to a dedicated page:", e.jsx("br", {}), e.jsx("br", {}), e.jsxs(te, {
+                onClick: () => s(A.support)
+            }), W() ? null : e.jsxs(pn, {
+                children: ["Looking to manage a group license?", e.jsx("br", {}), e.jsx("br", {}), "We moved license management to a dedicated page:", e.jsx("br", {}), e.jsx("br", {}), e.jsxs(J, {
                     to: gt,
                     style: {
                         fontWeight: y.Bold
@@ -865,14 +866,14 @@ const hn = U(() => {
             })]
         })
     }),
-    fn = W.div.attrs({
+    xn = _.div.attrs({
         className: "scroll-y"
     })`
   height: 100%;
   width: 320px;
   border-right: 1px solid ${k.BorderGray};
 `,
-    xn = W.div`
+    pn = _.div`
   padding: 20px 15px;
   background: rgba(0, 0, 0, 0.07);
   font-size: 12px;
@@ -883,7 +884,7 @@ const hn = U(() => {
   width: 84%;
 `,
     Ee = t => {
-        $({
+        I({
             url: "/api/users/update-information",
             method: "post",
             data: {
@@ -897,86 +898,86 @@ const hn = U(() => {
             }
         })
     },
-    pn = () => {
-        const [t, n] = i.useState(D().firstName), [a, s] = i.useState(D().lastName), o = g => n(g.target.value), u = g => s(g.target.value), r = () => {
+    yn = () => {
+        const [t, n] = i.useState(D().firstName), [s, a] = i.useState(D().lastName), o = g => n(g.target.value), l = g => a(g.target.value), r = () => {
             t && Ee({
                 changes: [{
                     key: Pe.firstName,
                     value: t
                 }]
             })
-        }, l = () => {
-            a && Ee({
+        }, c = () => {
+            s && Ee({
                 changes: [{
                     key: Pe.lastName,
-                    value: a
+                    value: s
                 }]
             })
-        }, m = q() && D().lastName.length < 2 ? "Last Initial" : "Last Name", c = q() && D().lastName.length < 2 ? 1 : $t;
+        }, m = W() && D().lastName.length < 2 ? "Last Initial" : "Last Name", d = W() && D().lastName.length < 2 ? 1 : Pt;
         return e.jsxs(e.Fragment, {
             children: [e.jsxs(Ae, {
                 children: [e.jsx(je, {
                     children: "First Name"
-                }), e.jsx(J, {
+                }), e.jsx(te, {
                     onBlur: r,
                     onChange: o,
                     value: t,
-                    maxLength: Pt
+                    maxLength: Bt
                 })]
             }), e.jsxs(Ae, {
                 children: [e.jsx(je, {
                     children: m
-                }), e.jsx(J, {
-                    onBlur: l,
-                    onChange: u,
-                    value: a,
-                    maxLength: c
+                }), e.jsx(te, {
+                    onBlur: c,
+                    onChange: l,
+                    value: s,
+                    maxLength: d
                 })]
             })]
         })
     },
-    Ae = W.div`
+    Ae = _.div`
   margin-bottom: 8px;
 `,
-    je = W.div`
+    je = _.div`
   font-weight: ${y.Bold};
   font-size: 18px;
 `,
-    yn = t => {
-        const [n, a] = i.useState("newEmail"), [s, o] = i.useState(""), [u, r] = i.useState(!1), [l, m] = i.useState(!1), [c, g] = i.useState(""), [d, v] = i.useState(""), [f, p] = i.useState(null), j = b => o(b.target.value.toLowerCase()), C = s && Et(s) && s !== D().email, x = () => {
-            C && (r(!0), $({
+    vn = t => {
+        const [n, s] = i.useState("newEmail"), [a, o] = i.useState(""), [l, r] = i.useState(!1), [c, m] = i.useState(!1), [d, g] = i.useState(""), [u, v] = i.useState(""), [f, p] = i.useState(null), j = b => o(b.target.value.toLowerCase()), C = a && At(a) && a !== D().email, x = () => {
+            C && (r(!0), I({
                 url: "/api/users/register/email-info",
                 method: "post",
                 data: {
-                    email: s
+                    email: a
                 },
                 success: b => {
-                    b.accountExists ? (p(`Account already exists with email "${s}"`), r(!1)) : $({
+                    b.accountExists ? (p(`Account already exists with email "${a}"`), r(!1)) : I({
                         url: "/api/users/requestEmailChange",
                         method: "post",
                         data: {
-                            emailToChangeTo: s
+                            emailToChangeTo: a
                         },
-                        success: N => {
-                            g(N.encryptedToken), a("code")
+                        success: $ => {
+                            g($.encryptedToken), s("code")
                         },
-                        error: N => p(N),
+                        error: $ => p($),
                         both: () => r(!1)
                     })
                 },
                 error: () => r(!1)
             }))
-        }, S = b => v(b.target.value), w = !!d, h = () => {
-            w && (m(!0), $({
+        }, S = b => v(b.target.value), w = !!u, h = () => {
+            w && (m(!0), I({
                 url: "/api/users/changeEmail",
                 method: "post",
                 data: {
-                    changeToken: c,
-                    encryptCode: d
+                    changeToken: d,
+                    encryptCode: u
                 },
                 success: () => {
                     ge({
-                        onSuccess: () => t.onEmailChange(s)
+                        onSuccess: () => t.onEmailChange(a)
                     })
                 },
                 error: b => p(b),
@@ -989,15 +990,15 @@ const hn = U(() => {
                     fontSize: 31
                 },
                 children: "New Account Email"
-            }), e.jsx(J, {
+            }), e.jsx(te, {
                 onChange: j,
                 placeholder: "please-do-not-ice-me@gimkit.com",
                 size: "large",
-                value: s,
+                value: a,
                 autoFocus: !0,
                 onPressEnter: x,
                 maxLength: 256
-            }), e.jsx(K, {
+            }), e.jsx(q, {
                 type: "primary",
                 disabled: !C,
                 style: {
@@ -1006,7 +1007,7 @@ const hn = U(() => {
                 },
                 size: "large",
                 onClick: x,
-                loading: u,
+                loading: l,
                 children: "Continue"
             })]
         }) : n === "code" ? e.jsxs(e.Fragment, {
@@ -1021,16 +1022,16 @@ const hn = U(() => {
                     marginBottom: 9
                 },
                 children: ["A code was just sent to ", e.jsx("b", {
-                    children: s
+                    children: a
                 }), ". Please check that email and enter it here. The code expires in 30 minutes."]
-            }), e.jsx(J, {
+            }), e.jsx(te, {
                 onChange: S,
                 placeholder: "Enter code here...",
                 size: "large",
-                value: d,
+                value: u,
                 autoFocus: !0,
                 onPressEnter: h
-            }), e.jsx(K, {
+            }), e.jsx(q, {
                 type: "primary",
                 disabled: !w,
                 style: {
@@ -1039,11 +1040,11 @@ const hn = U(() => {
                 },
                 size: "large",
                 onClick: h,
-                loading: l,
+                loading: c,
                 children: "Submit"
             })]
         }) : null;
-        return e.jsxs(ee, {
+        return e.jsxs(Y, {
             style: {
                 fontFamily: T.SFPro,
                 color: k.Black
@@ -1052,7 +1053,7 @@ const hn = U(() => {
             open: !0,
             onCancel: t.close,
             closable: !0,
-            children: [B(), e.jsx(Tt, {
+            children: [B(), e.jsx(Mt, {
                 error: f,
                 style: {
                     marginTop: 10
@@ -1060,17 +1061,17 @@ const hn = U(() => {
             })]
         })
     },
-    vn = () => {
-        const [t, n] = i.useState(D().email), [a, s] = i.useState(!1), [o, u] = i.useState(!1), r = () => u(!0), l = () => u(!1), m = () => s(!a), c = d => {
-            ee.success({
+    bn = () => {
+        const [t, n] = i.useState(D().email), [s, a] = i.useState(!1), [o, l] = i.useState(!1), r = () => l(!0), c = () => l(!1), m = () => a(!s), d = u => {
+            Y.success({
                 title: "Email changed!",
-                content: `Email changed to "${d}"`
-            }), n(d), s(!1)
+                content: `Email changed to "${u}"`
+            }), n(u), a(!1)
         }, g = D().passwordless;
         return e.jsxs(e.Fragment, {
             children: [e.jsx(je, {
                 children: "Email"
-            }), e.jsx(J, {
+            }), e.jsx(te, {
                 readOnly: !0,
                 value: t,
                 onFocus: m
@@ -1079,7 +1080,7 @@ const hn = U(() => {
                     justifyContent: "space-between"
                 },
                 className: "maxWidth flex",
-                children: [e.jsx("div", {}), e.jsx(te, {
+                children: [e.jsx("div", {}), e.jsx(J, {
                     style: {
                         marginTop: 9,
                         fontSize: 14
@@ -1087,71 +1088,108 @@ const hn = U(() => {
                     onClick: r,
                     children: g ? "Add password" : "Change password"
                 })]
-            }), a && e.jsx(yn, {
-                onEmailChange: c,
+            }), s && e.jsx(vn, {
+                onEmailChange: d,
                 close: m
-            }), e.jsx(At, {
+            }), e.jsx(Tt, {
                 open: o,
-                close: l,
+                close: c,
                 defaultEmail: D().email
             })]
         })
     },
-    bn = t => t === re.educator ? "Educator" : t === re.student ? "Student" : t === re.guardian ? "Parent/Guardian" : t === re.nonSchool ? "Other" : "",
-    jn = () => {
-        const t = () => $({
+    jn = t => t === re.educator ? "Educator" : t === re.student ? "Student" : t === re.guardian ? "Parent/Guardian" : t === re.nonSchool ? "Other" : "",
+    Cn = () => {
+        const t = () => I({
                 url: "/api/user/request-info",
-                success: s => {
-                    ee.info({
+                success: l => {
+                    Y.info({
                         title: "Information",
                         content: e.jsx("div", {
-                            children: Object.keys(s).map(o => e.jsxs("div", {
+                            children: Object.keys(l).map(r => e.jsxs("div", {
                                 children: [e.jsx("span", {
                                     style: {
                                         fontWeight: y.Bold
                                     },
-                                    children: o
-                                }), ":", " ", s[o], e.jsx("br", {})]
-                            }, `info-item-${o}`))
+                                    children: r
+                                }), ":", " ", l[r], e.jsx("br", {})]
+                            }, `info-item-${r}`))
                         })
                     })
                 }
             }),
-            n = D();
-        let a = [];
-        return a.push(["Account Email", n.email]), a.push(["Account Type", bn(n.accountType)]), e.jsxs(e.Fragment, {
+            n = l => {
+                I({
+                    url: "/api/user/reset-account-type",
+                    success: () => {
+                        I({
+                            url: "/logout",
+                            both: () => {
+                                Y.success({
+                                    title: "One more thing!",
+                                    content: `When you log back in, choose "${l}" as your role.`,
+                                    onOk: () => {
+                                        window.location.href = ft
+                                    }
+                                })
+                            }
+                        })
+                    }
+                })
+            },
+            s = () => {
+                W() ? Y.confirm({
+                    title: "Are you sure you want to switch to an educator account?",
+                    content: "Doing so will remove you from all your current classes.",
+                    okText: "Yes",
+                    onOk: () => n("Educator")
+                }) : Y.confirm({
+                    title: "Are you sure you want to switch to a student account?",
+                    content: "Many educator features are not available with student accounts.",
+                    okText: "Yes",
+                    onOk: () => n("Student")
+                })
+            },
+            a = D();
+        let o = [];
+        return o.push(["Account Email", a.email]), o.push(["Account Type", jn(a.accountType)]), e.jsxs(e.Fragment, {
             children: [e.jsx("div", {
                 style: {
                     fontSize: 22,
                     fontWeight: y.Bold
                 },
                 children: "Account Information"
-            }), e.jsx("div", {
+            }), e.jsxs("div", {
                 className: "flex maxWidth between",
                 style: {
                     alignItems: "flex-end"
                 },
-                children: e.jsx("div", {
+                children: [e.jsx("div", {
                     style: {
                         marginTop: 10
                     },
-                    children: a.map(s => e.jsxs("div", {
+                    children: o.map(l => e.jsxs("div", {
                         children: [e.jsxs("b", {
-                            children: [s[0], ":"]
-                        }), " ", s[1]]
-                    }, s[0]))
-                })
-            }), e.jsx(Z, {}), e.jsx("div", {
+                            children: [l[0], ":"]
+                        }), " ", l[1]]
+                    }, l[0]))
+                }), e.jsx("div", {
+                    children: e.jsxs(J, {
+                        onClick: s,
+                        children: ["Switch to ", W() ? "educator" : "student", " account"]
+                    })
+                })]
+            }), e.jsx(Q, {}), e.jsx("div", {
                 children: e.jsxs(ye, {
                     children: [e.jsx(ye.Panel, {
                         header: "Support",
-                        children: e.jsx(te, {
+                        children: e.jsx(J, {
                             onClick: t,
                             children: "Information Gimkit has collected on me"
                         })
                     }, "support"), e.jsx(ye.Panel, {
                         header: "Danger Zone",
-                        children: e.jsx(te, {
+                        children: e.jsx(J, {
                             to: ht,
                             children: "Delete my account"
                         })
@@ -1160,30 +1198,30 @@ const hn = U(() => {
             })]
         })
     },
-    Cn = t => {
+    Sn = t => {
         const {
             visible: n,
-            close: a
-        } = t, [s, o] = i.useState(null), [u, r] = i.useState(!1), [l, m] = i.useState([]), c = () => {
-            if (s) {
-                if (String(s).length !== 5) {
-                    ee.warning({
+            close: s
+        } = t, [a, o] = i.useState(null), [l, r] = i.useState(!1), [c, m] = i.useState([]), d = () => {
+            if (a) {
+                if (String(a).length !== 5) {
+                    Y.warning({
                         title: "Please enter a 5 digit zip code"
                     });
                     return
                 }
-                r(!0), $({
+                r(!0), I({
                     url: "/api/users/fetch-schools",
                     method: "post",
                     data: {
-                        zipCode: s
+                        zipCode: a
                     },
-                    success: d => {
-                        d && d.schoolList && d.schoolList.length ? m(d.schoolList) : me({
+                    success: u => {
+                        u && u.schoolList && u.schoolList.length ? m(u.schoolList) : me({
                             title: "No schools found for this zip code."
                         })
                     },
-                    error: d => {
+                    error: u => {
                         me({
                             title: "An error occurred while searching for your school",
                             content: "Please try again later"
@@ -1194,13 +1232,13 @@ const hn = U(() => {
                     }
                 })
             }
-        }, g = d => {
-            const v = d.target.value;
+        }, g = u => {
+            const v = u.target.value;
             o(v)
         };
-        return e.jsxs(Ot, {
+        return e.jsxs(Dt, {
             open: n,
-            onClose: a,
+            onClose: s,
             placement: "left",
             width: 560,
             closable: !0,
@@ -1209,9 +1247,9 @@ const hn = U(() => {
                 overflowY: "auto",
                 scrollbarWidth: "none"
             },
-            children: [e.jsx(wn, {
+            children: [e.jsx(kn, {
                 children: "School search"
-            }), e.jsx(ft, {
+            }), e.jsx(xt, {
                 type: "info",
                 showIcon: !0,
                 banner: !0,
@@ -1219,9 +1257,9 @@ const hn = U(() => {
                     width: "100%"
                 },
                 message: "We currently only support schools in the US."
-            }), e.jsx(Z, {}), e.jsx(J.Search, {
+            }), e.jsx(Q, {}), e.jsx(te.Search, {
                 placeholder: "Zip Code",
-                onSearch: c,
+                onSearch: d,
                 size: "large",
                 enterButton: "Search",
                 autoFocus: !0,
@@ -1229,29 +1267,29 @@ const hn = U(() => {
                     flex: 1
                 },
                 maxLength: 5,
-                loading: u,
-                value: s,
+                loading: l,
+                value: a,
                 onChange: g
             }), e.jsx("div", {
                 style: {
                     marginTop: 25
                 }
-            }), l && l.length ? e.jsx(e.Fragment, {
-                children: l.map(d => e.jsx(Ft, {
-                    name: d.schoolName,
-                    description: `${d.address.city}, ${d.address.stateFull}`,
-                    onSelect: () => t.selectSchool(d)
-                }, d.schoolid))
-            }) : e.jsx(Sn, {})]
+            }), c && c.length ? e.jsx(e.Fragment, {
+                children: c.map(u => e.jsx(Ot, {
+                    name: u.schoolName,
+                    description: `${u.address.city}, ${u.address.stateFull}`,
+                    onSelect: () => t.selectSchool(u)
+                }, u.schoolid))
+            }) : e.jsx(wn, {})]
         })
     },
-    Sn = () => e.jsxs("div", {
+    wn = () => e.jsxs("div", {
         className: "flex hc vc flex-column",
         style: {
             color: k.Black,
             marginTop: 10
         },
-        children: [e.jsx(Bt, {
+        children: [e.jsx(Et, {
             style: {
                 fontSize: 50,
                 marginBottom: 5
@@ -1264,39 +1302,39 @@ const hn = U(() => {
             children: "Enter your school's zip code above!"
         })]
     }),
-    wn = W.div`
+    kn = _.div`
   font-weight: ${y.UltraBold};
   font-size: 42px;
   color: ${k.Black};
   line-height: 1;
   margin-bottom: 10px;
 `,
-    kn = U(() => {
+    In = H(() => {
         var r;
-        const [t, n] = i.useState(!1), a = () => {
+        const [t, n] = i.useState(!1), s = () => {
             n(!0)
-        }, s = () => {
-            ee.confirm({
+        }, a = () => {
+            Y.confirm({
                 title: "Are you sure you want to unenroll from your current school?",
                 cancelText: "No",
                 okText: "Yes",
                 onOk: () => o(null)
             })
-        }, o = l => {
-            $({
+        }, o = c => {
+            I({
                 url: "/api/user/update-school",
                 data: {
-                    schoolDiggerId: l == null ? void 0 : l.schoolid
+                    schoolDiggerId: c == null ? void 0 : c.schoolid
                 },
                 success: () => {
                     n(!1), ge({
                         onSuccess: () => {
-                            xt(Rt)
+                            pt(Ft)
                         }
                     })
                 },
                 error: () => {
-                    ae({
+                    se({
                         default: {
                             title: "An error ocurred while trying to update your school",
                             content: "Please try again later or contact support"
@@ -1304,7 +1342,7 @@ const hn = U(() => {
                     })
                 }
             })
-        }, u = (r = D()) == null ? void 0 : r.schoolName;
+        }, l = (r = D()) == null ? void 0 : r.schoolName;
         return e.jsxs(e.Fragment, {
             children: [e.jsxs("div", {
                 style: {
@@ -1315,8 +1353,8 @@ const hn = U(() => {
                         fontWeight: y.Bold
                     },
                     children: "School:"
-                }), " ", u || "None"]
-            }), e.jsx(Z, {
+                }), " ", l || "None"]
+            }), e.jsx(Q, {
                 style: {
                     margin: "12px 0px"
                 }
@@ -1326,14 +1364,14 @@ const hn = U(() => {
                     justifyContent: "space-between",
                     fontSize: 14
                 },
-                children: [e.jsxs(te, {
-                    onClick: a,
-                    children: [u ? "Change" : "Add", " school"]
-                }), u && e.jsx(te, {
+                children: [e.jsxs(J, {
                     onClick: s,
+                    children: [l ? "Change" : "Add", " school"]
+                }), l && e.jsx(J, {
+                    onClick: a,
                     children: "Unenroll from school"
                 })]
-            }), e.jsx(Cn, {
+            }), e.jsx(Sn, {
                 visible: t,
                 close: () => n(!1),
                 selectSchool: o
@@ -1348,43 +1386,43 @@ const hn = U(() => {
         },
         ...t
     }),
-    In = () => e.jsxs(e.Fragment, {
+    Nn = () => e.jsxs(e.Fragment, {
         children: [e.jsxs(e.Fragment, {
             children: [e.jsx(de, {
                 children: "👋 Name"
             }), e.jsx(ce, {
-                children: e.jsx(pn, {})
+                children: e.jsx(yn, {})
             }), e.jsx(de, {
                 children: "🔑 Authentication"
             }), e.jsx(ce, {
-                children: e.jsx(vn, {})
-            }), !q() && e.jsxs(e.Fragment, {
+                children: e.jsx(bn, {})
+            }), !W() && e.jsxs(e.Fragment, {
                 children: [e.jsx(de, {
                     children: "🏫 School"
                 }), e.jsx(ce, {
-                    children: e.jsx(kn, {})
+                    children: e.jsx(In, {})
                 })]
             })]
         }), e.jsx(de, {
-            children: q() ? "⌨️ Manage" : "🔒 Account"
+            children: W() ? "⌨️ Manage" : "🔒 Account"
         }), e.jsx(ce, {
-            children: e.jsx(jn, {})
+            children: e.jsx(Cn, {})
         })]
     }),
-    de = W.div`
+    de = _.div`
   font-size: 30px;
   font-weight: ${y.UltraBold};
   margin-bottom: 5px;
 `,
     {
-        Option: Nn
+        Option: $n
     } = he,
-    $n = ["$", "€", "¥", "£", "X̶", "₩"],
-    Pn = () => {
-        const [t, n] = i.useState(localStorage.getItem(Y.currency) || "$"), a = s => {
-            localStorage.setItem(Y.currency, s), n(s)
+    Pn = ["$", "€", "¥", "£", "X̶", "₩"],
+    Bn = () => {
+        const [t, n] = i.useState(localStorage.getItem(V.currency) || "$"), s = a => {
+            localStorage.setItem(V.currency, a), n(a)
         };
-        return e.jsx(se, {
+        return e.jsx(ae, {
             title: "Currency",
             description: "Currency to be used while playing Gimkit (non-2D modes)",
             children: e.jsx(he, {
@@ -1392,24 +1430,24 @@ const hn = U(() => {
                 style: {
                     width: 200
                 },
-                onChange: a,
-                children: $n.map(s => e.jsx(Nn, {
-                    value: s,
-                    children: s
-                }, s))
+                onChange: s,
+                children: Pn.map(a => e.jsx($n, {
+                    value: a,
+                    children: a
+                }, a))
             })
         })
     },
     {
-        Option: Bn
+        Option: En
     } = he,
-    En = Lt(),
-    An = () => {
-        const [t, n] = i.useState(Dt(localStorage.getItem(Y.language)) || "English"), a = s => {
-            const o = Gt(s);
-            localStorage.setItem(Y.language, o), n(s)
+    An = Gt(),
+    Tn = () => {
+        const [t, n] = i.useState(Lt(localStorage.getItem(V.language)) || "English"), s = a => {
+            const o = Wt(a);
+            localStorage.setItem(V.language, o), n(a)
         };
-        return e.jsx(se, {
+        return e.jsx(ae, {
             title: "Language",
             description: "Language used for upgrade names and other text while playing Gimkit (non-2D modes)",
             children: e.jsx(he, {
@@ -1417,87 +1455,87 @@ const hn = U(() => {
                 style: {
                     width: 200
                 },
-                onChange: a,
-                children: En.map(s => e.jsx(Bn, {
-                    value: s,
-                    children: s
-                }, s))
-            })
-        })
-    },
-    Tn = () => {
-        const [t, n] = i.useState(!!localStorage.getItem(Y.allowGoogleTranslate)), a = s => {
-            s ? localStorage.setItem(Y.allowGoogleTranslate, "allow") : localStorage.removeItem(Y.allowGoogleTranslate), n(s)
-        };
-        return e.jsx(se, {
-            title: "Allow Google Translate",
-            description: "Allow Google Chrome to translate text inside of live games?",
-            children: e.jsx(Se, {
-                onClick: a,
-                checked: t
+                onChange: s,
+                children: An.map(a => e.jsx(En, {
+                    value: a,
+                    children: a
+                }, a))
             })
         })
     },
     Mn = () => {
-        const [t, n] = i.useState(!!localStorage.getItem(Y.cosmosBlockedInGame)), a = s => {
-            s ? localStorage.setItem(Y.cosmosBlockedInGame, "true") : localStorage.removeItem(Y.cosmosBlockedInGame), n(s)
+        const [t, n] = i.useState(!!localStorage.getItem(V.allowGoogleTranslate)), s = a => {
+            a ? localStorage.setItem(V.allowGoogleTranslate, "allow") : localStorage.removeItem(V.allowGoogleTranslate), n(a)
         };
-        return e.jsx(se, {
-            title: "Disable Cosmetics",
-            description: "Gims, trails, and stickers are disabled in-game. All players appear as default Gims.",
+        return e.jsx(ae, {
+            title: "Allow Google Translate",
+            description: "Allow Google Chrome to translate text inside of live games?",
             children: e.jsx(Se, {
-                onClick: a,
+                onClick: s,
                 checked: t
             })
         })
     },
     zn = () => {
-        const [t, n] = i.useState(!0), [a, s] = i.useState(!1), [o, u] = i.useState(""), r = () => {
+        const [t, n] = i.useState(!!localStorage.getItem(V.cosmosBlockedInGame)), s = a => {
+            a ? localStorage.setItem(V.cosmosBlockedInGame, "true") : localStorage.removeItem(V.cosmosBlockedInGame), n(a)
+        };
+        return e.jsx(ae, {
+            title: "Disable Cosmetics",
+            description: "Gims, trails, and stickers are disabled in-game. All players appear as default Gims.",
+            children: e.jsx(Se, {
+                onClick: s,
+                checked: t
+            })
+        })
+    },
+    Rn = () => {
+        const [t, n] = i.useState(!0), [s, a] = i.useState(!1), [o, l] = i.useState(""), r = () => {
             $e({
                 url: "/api/user/display-name",
-                success: c => {
-                    u(c.name)
+                success: d => {
+                    l(d.name)
                 },
                 both: () => n(!1)
             })
-        }, l = c => {
-            u(c.target.value)
+        }, c = d => {
+            l(d.target.value)
         }, m = () => {
-            if (a) return;
-            let c = o;
-            if (c && (c = c.trim(), c.length < 2)) {
-                ae({
+            if (s) return;
+            let d = o;
+            if (d && (d = d.trim(), d.length < 2)) {
+                se({
                     default: {
                         title: "Display name must be at least 2 characters long"
                     }
                 });
                 return
             }
-            s(!0), $e({
+            a(!0), $e({
                 url: "/api/user/display-name",
                 data: {
-                    name: c
+                    name: d
                 },
                 success: g => {
-                    Ge.success("Display name updated!"), u(g.name)
+                    Ge.success("Display name updated!"), l(g.name)
                 },
                 error: g => {
-                    ae({
+                    se({
                         e: g,
                         default: {
                             title: "Error updating display name"
                         }
                     })
                 },
-                both: () => s(!1)
+                both: () => a(!1)
             })
         };
-        return pt(r), e.jsx(se, {
+        return yt(r), e.jsx(ae, {
             title: "Display Name",
             description: "The name you appear as in-game when hosting a game. Leave empty to use your account name.",
             children: e.jsxs("div", {
                 className: "flex vc",
-                children: [e.jsx(J, {
+                children: [e.jsx(te, {
                     disabled: t,
                     value: o,
                     maxLength: 20,
@@ -1507,9 +1545,9 @@ const hn = U(() => {
                     },
                     placeholder: "Ms. Gimkit",
                     onPressEnter: m,
-                    onChange: l
-                }), e.jsx(K, {
-                    loading: a,
+                    onChange: c
+                }), e.jsx(q, {
+                    loading: s,
                     onClick: m,
                     type: "primary",
                     children: "Save"
@@ -1517,24 +1555,24 @@ const hn = U(() => {
             })
         })
     },
-    Rn = ["user-preferences"],
-    Fn = () => Wt({
-        queryKey: [Rn],
+    Fn = ["user-preferences"],
+    On = () => _t({
+        queryKey: [Fn],
         retry: !1,
-        queryFn: () => yt({
+        queryFn: () => vt({
             url: "/api/user/preferences"
         })
     }),
     Te = "six-seven-mode",
-    On = () => {
+    Dn = () => {
         const [t, n] = i.useState(!1), {
-            data: a
-        } = Fn();
+            data: s
+        } = On();
         i.useEffect(() => {
-            n((a == null ? void 0 : a[Te]) === !0)
-        }, [a]);
-        const s = o => {
-            n(o), $({
+            n((s == null ? void 0 : s[Te]) === !0)
+        }, [s]);
+        const a = o => {
+            n(o), I({
                 url: "/api/user/preferences",
                 data: {
                     key: Te,
@@ -1542,7 +1580,7 @@ const hn = U(() => {
                 }
             })
         };
-        return a ? e.jsx(se, {
+        return s ? e.jsx(ae, {
             title: e.jsxs("div", {
                 className: "flex vc",
                 children: ["67 Mode", " ", e.jsx(We, {
@@ -1555,12 +1593,12 @@ const hn = U(() => {
             }),
             description: `To be honest, we don't even know what this means. But the kids seem to like it. Ensures your game codes start with "67".`,
             children: e.jsx(Se, {
-                onClick: s,
+                onClick: a,
                 checked: t
             })
         }) : null
     },
-    se = t => e.jsx(L, {
+    ae = t => e.jsx(L, {
         style: {
             fontFamily: T.SFPro,
             color: k.Black
@@ -1571,9 +1609,9 @@ const hn = U(() => {
                 style: {
                     marginRight: 40
                 },
-                children: [e.jsx(Ln, {
+                children: [e.jsx(Gn, {
                     children: t.title
-                }), e.jsx(Gn, {
+                }), e.jsx(Wn, {
                     children: t.description
                 })]
             }), e.jsx("div", {
@@ -1581,25 +1619,25 @@ const hn = U(() => {
             })]
         })
     }),
-    Dn = () => e.jsx(e.Fragment, {
-        children: e.jsxs(_t, {
+    Ln = () => e.jsx(e.Fragment, {
+        children: e.jsxs(Ut, {
             direction: "vertical",
             size: 10,
             className: "maxWidth",
-            children: [e.jsx(On, {}), e.jsx(Mn, {}), e.jsx(zn, {}), e.jsx(Pn, {}), e.jsx(An, {}), e.jsx(Tn, {})]
+            children: [e.jsx(Dn, {}), e.jsx(zn, {}), e.jsx(Rn, {}), e.jsx(Bn, {}), e.jsx(Tn, {}), e.jsx(Mn, {})]
         })
     }),
-    Ln = W.div`
+    Gn = _.div`
   font-weight: ${y.UltraBold};
   font-size: 18px;
 `,
-    Gn = W.div`
+    Wn = _.div`
   font-size: 14px;
 `,
-    Wn = U(() => {
+    _n = H(() => {
         const {
             billing: t
-        } = i.useContext(_);
+        } = i.useContext(U);
         return e.jsx(L, {
             style: {
                 fontFamily: T.SFPro,
@@ -1634,9 +1672,9 @@ const hn = U(() => {
             })
         })
     }),
-    _n = t => {
+    Un = t => {
         const n = !!t.amountRefunded,
-            a = n && t.amountRefunded === t.amount;
+            s = n && t.amountRefunded === t.amount;
         return e.jsx("a", {
             href: t.link,
             target: "_blank",
@@ -1669,17 +1707,17 @@ const hn = U(() => {
                     }), e.jsx("div", {
                         children: n && e.jsx(We, {
                             color: "green",
-                            children: a ? "Refunded" : "Partially Refunded"
+                            children: s ? "Refunded" : "Partially Refunded"
                         })
                     })]
                 })
             })
         })
     },
-    Un = U(() => {
+    Hn = H(() => {
         const {
             billing: t
-        } = i.useContext(_);
+        } = i.useContext(U);
         return t.charges.length ? e.jsxs(L, {
             style: {
                 color: k.Black,
@@ -1698,18 +1736,18 @@ const hn = U(() => {
                     marginBottom: 7
                 },
                 children: "Click a charge to open the receipt"
-            }), t.charges.map(n => e.jsx(_n, {
-                date: vt.unix(n.unixDate).format("MMMM Do, YYYY"),
+            }), t.charges.map(n => e.jsx(Un, {
+                date: bt.unix(n.unixDate).format("MMMM Do, YYYY"),
                 amount: n.amount,
                 link: n.receiptUrl,
                 amountRefunded: n.amountRefunded
             }, n.id))]
         }) : null
     }),
-    Hn = U(() => {
+    Kn = H(() => {
         const {
             billing: t
-        } = i.useContext(_);
+        } = i.useContext(U);
         return !t.hasNextCharge || t.planName.toLowerCase().includes("basic") ? null : e.jsxs(L, {
             style: {
                 marginTop: 10,
@@ -1740,10 +1778,10 @@ const hn = U(() => {
             })]
         })
     }),
-    Kn = U(() => {
+    Yn = H(() => {
         const {
             billing: t
-        } = i.useContext(_);
+        } = i.useContext(U);
         return t.accountBalance ? e.jsxs(L, {
             style: {
                 color: k.Black,
@@ -1766,27 +1804,27 @@ const hn = U(() => {
         }) : null
     }),
     Ke = () => {
-        $({
+        I({
             url: "/api/billing/payment-source",
             success: t => {
-                P.billing.cardName = t.source.cardType, P.billing.last4DigitsOfCard = t.source.last4Digits, $({
+                P.billing.cardName = t.source.cardType, P.billing.last4DigitsOfCard = t.source.last4Digits, I({
                     url: "/api/billing/stripe-key",
                     success: n => P.billing.stripePublicKey = n.key
                 })
             }
         })
     },
-    Yn = U(() => {
+    qn = H(() => {
         const [t, n] = i.useState(!1), {
             billing: {
-                last4DigitsOfCard: a,
-                stripePublicKey: s,
+                last4DigitsOfCard: s,
+                stripePublicKey: a,
                 cardName: o
             }
-        } = i.useContext(_);
+        } = i.useContext(U);
         if (i.useEffect(() => {
                 const r = De("session_id");
-                r && (n(!0), bt({
+                r && (n(!0), jt({
                     sessionId: r,
                     onSuccess: () => {
                         Ke(), Ge.success("Credit card updated successfully")
@@ -1800,33 +1838,33 @@ const hn = U(() => {
                     },
                     invokeImmediately: !0
                 }))
-            }, []), !a || !o) return null;
-        const u = async () => {
+            }, []), !s || !o) return null;
+        const l = async () => {
             n(!0);
             let r;
             try {
-                r = await Ut(s)
-            } catch (l) {
-                n(!1), ae({
-                    e: l,
+                r = await Ht(a)
+            } catch (c) {
+                n(!1), se({
+                    e: c,
                     default: {
                         title: "Our payment processor is currently down",
                         content: "Please try again later"
                     }
                 })
             }
-            r && $({
+            r && I({
                 url: "/api/billing/create-billing-info-session",
                 method: "POST",
-                success: async l => {
-                    const m = l;
-                    let c;
+                success: async c => {
+                    const m = c;
+                    let d;
                     try {
-                        if (c = await r.redirectToCheckout({
+                        if (d = await r.redirectToCheckout({
                                 sessionId: m.id
-                            }), c && c.error) throw c.error
+                            }), d && d.error) throw d.error
                     } catch (g) {
-                        ae({
+                        se({
                             e: g,
                             default: {
                                 title: "Error",
@@ -1835,9 +1873,9 @@ const hn = U(() => {
                         })
                     }
                 },
-                error: l => {
-                    n(!1), ae({
-                        e: l,
+                error: c => {
+                    n(!1), se({
+                        e: c,
                         default: {
                             title: "Connection Error",
                             content: "An error ocurred while connecting to our payments provider. Please try again later"
@@ -1881,7 +1919,7 @@ const hn = U(() => {
                             style: {
                                 fontWeight: y.UltraBold
                             },
-                            children: a
+                            children: s
                         })]
                     })]
                 })
@@ -1891,33 +1929,33 @@ const hn = U(() => {
                     justifyContent: "space-between"
                 },
                 className: "flex maxWidth",
-                children: [e.jsx("div", {}), s && e.jsx(K, {
+                children: [e.jsx("div", {}), a && e.jsx(q, {
                     type: "primary",
                     size: "large",
-                    onClick: u,
+                    onClick: l,
                     loading: t,
                     children: "Change Credit Card"
                 })]
             })]
         })
     }),
-    qn = () => {
-        $({
+    Vn = () => {
+        I({
             url: "/api/billing/upcoming-invoice",
             success: t => {
                 P.billing.nextChargeAmount = fe(t.amount), P.billing.nextChargeDate = t.date, P.billing.hasNextCharge = !0
             }
         })
     },
-    Vn = () => {
-        $({
+    Xn = () => {
+        I({
             url: "/api/billing/downgrade-details",
             success: t => {
                 P.billing.canDowngrade = t.canDowngrade, t.message && (P.billing.downgradeMessage = t.message), t.subscriptionEndDateText && (P.billing.downgradeDateMessage = t.subscriptionEndDateText)
             }
         })
     },
-    Xn = t => {
+    Zn = t => {
         if (t.info.plan === "basic") return "Free Forever!";
         if (t.info.info) {
             const n = t.info.info;
@@ -1927,25 +1965,25 @@ const hn = U(() => {
         }
         return ""
     },
-    Zn = () => {
-        Ce() && Vn(), $({
+    Qn = () => {
+        Ce() && Xn(), I({
             url: "/api/billing/plan-info",
             success: t => {
                 const {
                     info: n
                 } = t;
-                P.billing.planName = ue(n.plan), P.billing.planDescription = Xn(t), n.info && n.info.timePeriod && (P.billing.billingInterval = n.info.timePeriod), n.source === "stripe" && qn()
+                P.billing.planName = ue(n.plan), P.billing.planDescription = Zn(t), n.info && n.info.timePeriod && (P.billing.billingInterval = n.info.timePeriod), n.source === "stripe" && Vn()
             }
         })
     },
-    Qn = () => {
-        $({
+    Jn = () => {
+        I({
             url: "/api/billing/charges",
             success: t => P.billing.charges.replace(t.charges)
         })
     },
-    Jn = () => {
-        $({
+    es = () => {
+        I({
             url: "/api/billing/account-balance",
             success: t => {
                 P.billing.accountBalance = t.balance
@@ -1955,22 +1993,22 @@ const hn = U(() => {
     Ye = () => {
         ge({
             onSuccess: () => {
-                Zn(), Qn(), Jn(), Ke()
+                Qn(), Jn(), es(), Ke()
             }
         })
     },
-    ea = U(t => {
+    ts = H(t => {
         const {
             billing: n
-        } = i.useContext(_), [a, s] = i.useState("firstAsk"), [o, u] = i.useState(""), [r, l] = i.useState(""), [m, c] = i.useState(!1), g = !m, d = x => u(x.target.value), v = x => l(x.target.value), f = () => {
-            g && (c(!0), $({
+        } = i.useContext(U), [s, a] = i.useState("firstAsk"), [o, l] = i.useState(""), [r, c] = i.useState(""), [m, d] = i.useState(!1), g = !m, u = x => l(x.target.value), v = x => c(x.target.value), f = () => {
+            g && (d(!0), I({
                 url: "/api/billing/downgrade",
                 data: {
                     reasonId: o,
                     otherReason: r
                 },
                 success: () => {
-                    ee.success({
+                    Y.success({
                         title: `You've canceled your ${ue(D().type)} subscription${n.downgradeDateMessage&&" to end on "+n.downgradeDateMessage}.`
                     }), n.reset(), Ye(), t.close()
                 },
@@ -1978,9 +2016,9 @@ const hn = U(() => {
                     title: "Error canceling subscription",
                     content: "Please contact support"
                 }),
-                both: () => c(!1)
+                both: () => d(!1)
             }))
-        }, p = () => s("reason"), j = () => s("groupOrder"), C = () => a === "firstAsk" ? e.jsxs(e.Fragment, {
+        }, p = () => a("reason"), j = () => a("groupOrder"), C = () => s === "firstAsk" ? e.jsxs(e.Fragment, {
             children: [e.jsx("div", {
                 style: {
                     textAlign: "center",
@@ -1988,7 +2026,7 @@ const hn = U(() => {
                     fontSize: 25
                 },
                 children: "Are you canceling because you're joining a group license?"
-            }), e.jsx(Z, {}), e.jsx(K, {
+            }), e.jsx(Q, {}), e.jsx(q, {
                 style: {
                     marginBottom: 5
                 },
@@ -1996,13 +2034,13 @@ const hn = U(() => {
                 block: !0,
                 size: "large",
                 children: "Yes"
-            }), e.jsx(K, {
+            }), e.jsx(q, {
                 block: !0,
                 size: "large",
                 onClick: p,
                 children: "No"
             })]
-        }) : a === "groupOrder" ? e.jsxs(e.Fragment, {
+        }) : s === "groupOrder" ? e.jsxs(e.Fragment, {
             children: [e.jsx("div", {
                 style: {
                     fontWeight: y.Bold,
@@ -2010,14 +2048,14 @@ const hn = U(() => {
                     lineHeight: "30px"
                 },
                 children: "To get a refund, don't cancel your subscription just yet!"
-            }), e.jsx(Z, {}), e.jsxs("div", {
+            }), e.jsx(Q, {}), e.jsxs("div", {
                 style: {
                     fontSize: 15
                 },
                 children: ["If you're joining a group license, ask your group manager for the", " ", e.jsx("b", {
                     children: "invite link."
                 }), " ", e.jsx("br", {}), " ", e.jsx("br", {}), "When you open the invite link, your current subscription will automatically be canceled, and you will receive a refund for your unused time on ", ue(D().type), ". ", e.jsx("br", {}), " ", e.jsx("br", {}), " If you cancel now, you will not be refunded for your unused time."]
-            }), e.jsx(Z, {}), e.jsx(K, {
+            }), e.jsx(Q, {}), e.jsx(q, {
                 block: !0,
                 type: "primary",
                 size: "large",
@@ -2034,7 +2072,7 @@ const hn = U(() => {
                     children: "Cancel subscription anyway"
                 })
             })]
-        }) : a === "reason" ? e.jsxs(e.Fragment, {
+        }) : s === "reason" ? e.jsxs(e.Fragment, {
             children: [e.jsx("div", {
                 style: {
                     fontWeight: y.UltraBold,
@@ -2057,9 +2095,9 @@ const hn = U(() => {
                     flexDirection: "column",
                     marginTop: 20
                 },
-                onChange: d,
+                onChange: u,
                 value: o,
-                children: ta.map(x => e.jsx(Be, {
+                children: ns.map(x => e.jsx(Be, {
                     value: x.id,
                     style: {
                         fontSize: 15,
@@ -2068,7 +2106,7 @@ const hn = U(() => {
                     },
                     children: x.text
                 }, x.id))
-            }), o === "other" ? e.jsx(J, {
+            }), o === "other" ? e.jsx(te, {
                 placeholder: "Reason...",
                 autoFocus: !0,
                 style: {
@@ -2076,7 +2114,7 @@ const hn = U(() => {
                 },
                 value: r,
                 onChange: v
-            }) : null, e.jsx(K, {
+            }) : null, e.jsx(q, {
                 block: !0,
                 style: {
                     marginTop: 25
@@ -2089,7 +2127,7 @@ const hn = U(() => {
                 children: "Cancel Subscription"
             })]
         }) : null;
-        return e.jsx(ee, {
+        return e.jsx(Y, {
             open: t.visible,
             onCancel: t.close,
             style: {
@@ -2101,10 +2139,10 @@ const hn = U(() => {
             children: C()
         })
     }),
-    ta = [{
+    ns = [{
         id: "break",
         text: "Summer break/taking a break"
-    }, ...jt.shuffle([{
+    }, ...Ct.shuffle([{
         id: "didNotUse",
         text: "Didn’t use it much"
     }, {
@@ -2135,10 +2173,10 @@ const hn = U(() => {
         id: "other",
         text: "Other"
     }],
-    na = U(() => {
+    ss = H(() => {
         const {
             billing: t
-        } = i.useContext(_), [n, a] = i.useState(!1), s = () => a(!n);
+        } = i.useContext(U), [n, s] = i.useState(!1), a = () => s(!n);
         if (!t.canDowngrade) {
             if (t.downgradeMessage && t.downgradeMessage.includes("set to end")) {
                 const o = t.downgradeMessage.split("end on ")[1];
@@ -2167,20 +2205,20 @@ const hn = U(() => {
                     style: {
                         justifyContent: "space-between"
                     },
-                    children: [e.jsx("div", {}), t.canDowngrade && e.jsx(K, {
-                        onClick: s,
+                    children: [e.jsx("div", {}), t.canDowngrade && e.jsx(q, {
+                        onClick: a,
                         type: "primary",
                         danger: !0,
                         children: "Cancel Subscription"
                     })]
                 })
-            }), e.jsx(ea, {
+            }), e.jsx(ts, {
                 visible: n,
-                close: s
+                close: a
             })]
         })
     }),
-    aa = t => e.jsx(L, {
+    as = t => e.jsx(L, {
         style: {
             fontFamily: T.SFPro,
             color: k.White,
@@ -2189,11 +2227,11 @@ const hn = U(() => {
         },
         ...t
     }),
-    sa = U(() => {
+    os = H(() => {
         const {
             billing: t
-        } = i.useContext(_);
-        return Ce() ? !t.billingInterval || t.billingInterval === "year" ? null : e.jsx(aa, {
+        } = i.useContext(U);
+        return Ce() ? !t.billingInterval || t.billingInterval === "year" ? null : e.jsx(as, {
             bodyStyle: {
                 backgroundImage: "linear-gradient(to left, #434343 0%, #1c1c1c 100%)",
                 padding: 40
@@ -2216,16 +2254,16 @@ const hn = U(() => {
                         color: "rgba(255,255,255,0.9)",
                         marginTop: 2
                     },
-                    children: ["If you use ", Ct, " more than 3 months a year, you'll save money by switching to annual billing!"]
+                    children: ["If you use ", St, " more than 3 months a year, you'll save money by switching to annual billing!"]
                 }), e.jsx("div", {
                     style: {
                         marginTop: 20
                     },
-                    children: e.jsx(te, {
-                        to: St,
-                        children: e.jsx(K, {
+                    children: e.jsx(J, {
+                        to: wt,
+                        children: e.jsx(q, {
                             size: "large",
-                            icon: e.jsx(Ht, {}),
+                            icon: e.jsx(Kt, {}),
                             type: "primary",
                             children: "Switch To Annual Billing"
                         })
@@ -2234,10 +2272,10 @@ const hn = U(() => {
             })
         }) : null
     }),
-    oa = () => (i.useEffect(() => {
+    is = () => (i.useEffect(() => {
         Ye()
     }, []), e.jsxs(e.Fragment, {
-        children: [e.jsx(Wn, {}), e.jsx(Hn, {}), e.jsx(sa, {}), e.jsx(Un, {}), e.jsx(Yn, {}), e.jsx(Kn, {}), e.jsx(na, {})]
+        children: [e.jsx(_n, {}), e.jsx(Kn, {}), e.jsx(os, {}), e.jsx(Hn, {}), e.jsx(qn, {}), e.jsx(Yn, {}), e.jsx(ss, {})]
     })),
     ve = t => e.jsx("div", {
         style: {
@@ -2269,11 +2307,11 @@ const hn = U(() => {
             children: t.content
         })]
     }),
-    ia = () => {
+    rs = () => {
         const t = () => {
             window.open("https://help.gimkit.com")
         };
-        return e.jsx(ra, {
+        return e.jsx(ls, {
             className: "flex hc",
             children: e.jsxs("div", {
                 style: {
@@ -2313,7 +2351,7 @@ const hn = U(() => {
                             children: "2 business days."
                         })]
                     })]
-                }), e.jsx(Z, {}), e.jsx(be, {
+                }), e.jsx(Q, {}), e.jsx(be, {
                     image: "/client/img/settings/question.svg",
                     content: e.jsxs("div", {
                         children: [e.jsxs("div", {
@@ -2338,7 +2376,7 @@ const hn = U(() => {
                             }), " ", "to search our helpdesk for an answer!"]
                         })]
                     })
-                }), e.jsx(Z, {
+                }), e.jsx(Q, {
                     style: {
                         marginTop: 30,
                         marginBottom: 30
@@ -2408,21 +2446,21 @@ const hn = U(() => {
             height: 35
         }
     }),
-    ra = W.div``,
-    la = U(() => {
+    ls = _.div``,
+    cs = H(() => {
         const {
             navigation: t
-        } = i.useContext(_), n = () => {
+        } = i.useContext(U), n = () => {
             const {
-                currentTab: a
+                currentTab: s
             } = t;
-            return a === A.accountInformation ? e.jsx(In, {}) : a === A.gameSettings ? e.jsx(Dn, {}) : a === A.billing ? e.jsx(oa, {}) : a === A.support ? e.jsx(ia, {}) : null
+            return s === A.accountInformation ? e.jsx(Nn, {}) : s === A.gameSettings ? e.jsx(Ln, {}) : s === A.billing ? e.jsx(is, {}) : s === A.support ? e.jsx(rs, {}) : null
         };
-        return e.jsxs(ca, {
+        return e.jsxs(ds, {
             children: [e.jsx(Le, {}), n()]
         })
     }),
-    ca = W.div.attrs({
+    ds = _.div.attrs({
         className: "scroll"
     })`
   flex: 1;
@@ -2432,29 +2470,29 @@ const hn = U(() => {
   font-family: ${T.SFPro};
   color: ${k.Black};
 `,
-    ds = () => (i.useEffect(() => {
+    ua = () => (i.useEffect(() => {
         const t = De("tab");
         t && t === A.billing ? P.navigation.currentTab = A.billing : t && t === A.gameSettings && (P.navigation.currentTab = A.gameSettings)
     }, []), e.jsxs(e.Fragment, {
-        children: [e.jsx(_.Provider, {
+        children: [e.jsx(U.Provider, {
             value: P,
-            children: e.jsxs(Kt, {
+            children: e.jsxs(Yt, {
                 className: "flex-column",
-                children: [e.jsx(kt, {}), e.jsxs(da, {
-                    children: [e.jsx(hn, {}), e.jsx(la, {})]
+                children: [e.jsx(It, {}), e.jsxs(us, {
+                    children: [e.jsx(fn, {}), e.jsx(cs, {})]
                 })]
             })
-        }), e.jsx(wt, {
+        }), e.jsx(kt, {
             title: "Settings"
         })]
     })),
-    da = W.div.attrs({
+    us = _.div.attrs({
         className: "flex"
     })`
   flex: 1;
   overflow: hidden;
 `;
 export {
-    ds as
+    ua as
     default
 };

@@ -3,37 +3,37 @@ import {
     r as m,
     I as ae,
     _ as le,
-    cd as ce,
-    A as U,
+    cc as ce,
+    y as W,
     j as e,
     e as u,
     d as l,
     F as x,
     C as M,
-    ah as D,
+    af as D,
     B as k,
-    a$ as de,
+    a_ as de,
     b as j,
-    $ as me,
+    Y as me,
     c as g,
-    W as A,
+    U as A,
     a as w,
     h as N,
     l as ue,
     M as $,
-    a6 as xe,
+    a4 as xe,
     t as E,
     D as C,
-    w as pe,
-    s as he,
-    ac as ge,
+    q as pe,
+    aX as he,
+    aa as ge,
     T as z,
     S as _,
-    aV as fe,
-    b0 as Y,
-    v as je,
-    q as ve,
-    ce as be
+    aT as fe,
+    a$ as Y,
+    p as je,
+    n as ve,
+    cd as be
 } from "./_index.js";
 import {
     u as V
@@ -127,7 +127,7 @@ var Ie = {
     Re = m.forwardRef($e);
 const P = new ce,
     K = ["specific-bulk"],
-    ze = t => V([K, t], () => U({
+    ze = t => V([K, t], () => W({
         url: "/api/bulk/fetch/" + t
     })),
     I = t => P.refetchQueries([K, t]),
@@ -194,7 +194,7 @@ const P = new ce,
   margin-top: 2px;
   color: rgba(0, 0, 0, 0.9);
 `,
-    We = t => e.jsx(J, {
+    Ue = t => e.jsx(J, {
         children: e.jsxs(X, {
             children: [e.jsxs("div", {
                 style: {
@@ -203,7 +203,7 @@ const P = new ce,
                 className: "flex-column flex-center",
                 children: [e.jsxs(Z, {
                     children: [M, " Groups"]
-                }), e.jsxs(Ue, {
+                }), e.jsxs(We, {
                     children: ["Welcome to ", M, " Groups! Below are the group licenses you manage. Click into a license to invite members, add managers, view usage analytics, and more!"]
                 }), e.jsx(y, {
                     to: D,
@@ -247,7 +247,7 @@ const P = new ce,
   font-size: 54px;
   font-weight: ${x.UltraBold};
 `,
-    Ue = l.div`
+    We = l.div`
   font-size: 16px;
   margin-bottom: 30px;
   max-width: 700px;
@@ -417,7 +417,7 @@ const P = new ce,
         })
     },
     se = ["all-bulks"],
-    re = () => V(se, () => U({
+    re = () => V(se, () => W({
         url: "/api/bulk/fetch-all"
     })),
     _e = () => {
@@ -762,7 +762,7 @@ const P = new ce,
         width: "calc(50% - 4px)",
         flex: 1
     },
-    W = {
+    U = {
         textAlign: "center",
         fontSize: 32
     },
@@ -825,7 +825,7 @@ const P = new ce,
                         children: [e.jsxs(g, {
                             style: G,
                             hoverable: !0,
-                            bodyStyle: W,
+                            bodyStyle: U,
                             className: "flex hc vc flex-column",
                             children: [e.jsx(Re, {}), e.jsx(C, {}), e.jsxs("div", {
                                 style: {
@@ -840,7 +840,7 @@ const P = new ce,
                         }), e.jsxs(g, {
                             style: G,
                             hoverable: !0,
-                            bodyStyle: W,
+                            bodyStyle: U,
                             className: "flex hc vc flex-column",
                             children: [e.jsx(Ne, {}), e.jsx(C, {}), e.jsxs("div", {
                                 style: {
@@ -1016,7 +1016,7 @@ const P = new ce,
                 })
             });
             const i = s && Array.isArray(s) ? s : [];
-            return i.length ? e.jsx(We, {
+            return i.length ? e.jsx(Ue, {
                 bulks: i
             }) : e.jsx(rt, {})
         };

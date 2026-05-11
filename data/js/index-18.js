@@ -1,27 +1,27 @@
 import {
-    bA as w,
-    ak as K,
-    al as Q,
-    am as E,
-    aN as Y,
-    d1 as J,
-    aO as Z,
-    bc as tt,
+    bz as w,
+    ai as K,
+    aj as Y,
+    ak as E,
+    aL as Q,
+    cY as Z,
+    aM as J,
+    bb as tt,
     r as u,
-    an as H,
-    bI as A,
-    ao as I,
-    p as et,
-    ap as ot,
-    aq as nt,
-    d2 as at,
-    ar as it,
-    z as f,
-    bu as rt,
-    bd as ct,
-    d3 as st,
-    H as lt,
-    d4 as dt
+    al as H,
+    bH as A,
+    am as P,
+    w as et,
+    an as ot,
+    ao as nt,
+    cZ as at,
+    ap as it,
+    x as f,
+    bt as rt,
+    bc as ct,
+    c_ as st,
+    E as lt,
+    c$ as dt
 } from "./_index.js";
 import {
     N as ft,
@@ -228,7 +228,7 @@ const mt = t => {
             lineHeight: m,
             width: x,
             notificationIconSize: S,
-            colorText: P
+            colorText: I
         } = t, d = `${o}-notice`;
         return {
             position: "relative",
@@ -252,7 +252,7 @@ const mt = t => {
             },
             [`${d}-description`]: {
                 fontSize: C,
-                color: P,
+                color: I,
                 marginTop: t.marginXS
             },
             [`${d}-closable ${d}-message`]: {
@@ -305,7 +305,7 @@ const mt = t => {
                 "&:active": {
                     backgroundColor: t.colorBgTextActive
                 }
-            }, Z(t)),
+            }, J(t)),
             [`${d}-progress`]: {
                 position: "absolute",
                 display: "block",
@@ -361,7 +361,7 @@ const mt = t => {
             }
         });
         return [{
-            [e]: Object.assign(Object.assign({}, Y(t)), {
+            [e]: Object.assign(Object.assign({}, Q(t)), {
                 position: "fixed",
                 zIndex: t.zIndexPopup,
                 marginRight: {
@@ -408,13 +408,13 @@ const mt = t => {
         }]
     },
     G = t => ({
-        zIndexPopup: t.zIndexPopupBase + J + 50,
+        zIndexPopup: t.zIndexPopupBase + Z + 50,
         width: 384
     }),
     k = t => {
         const e = t.paddingMD,
             o = t.paddingLG;
-        return Q(t, {
+        return Y(t, {
             notificationBg: t.colorBgElevated,
             notificationPaddingVertical: e,
             notificationPaddingHorizontal: o,
@@ -429,7 +429,7 @@ const mt = t => {
             notificationProgressBg: `linear-gradient(90deg, ${t.colorPrimaryBorderHover}, ${t.colorPrimary})`
         })
     },
-    q = K("Notification", t => {
+    W = K("Notification", t => {
         const e = k(t);
         return [St(e), mt(e), Ct(e)]
     }, G),
@@ -457,13 +457,13 @@ function L(t, e) {
         className: `${t}-close-icon`
     })
 }
-const It = {
+const Pt = {
         success: it,
         info: at,
         error: nt,
         warning: ot
     },
-    W = t => {
+    q = t => {
         const {
             prefixCls: e,
             icon: o,
@@ -476,10 +476,10 @@ const It = {
         let c = null;
         return o ? c = u.createElement("span", {
             className: `${e}-icon`
-        }, o) : n && (c = u.createElement(It[n] || null, {
-            className: I(`${e}-icon`, `${e}-icon-${n}`)
+        }, o) : n && (c = u.createElement(Pt[n] || null, {
+            className: P(`${e}-icon`, `${e}-icon-${n}`)
         })), u.createElement("div", {
-            className: I({
+            className: P({
                 [`${e}-with-icon`]: c
             }),
             role: r
@@ -491,7 +491,7 @@ const It = {
             className: `${e}-actions`
         }, s))
     },
-    Pt = t => {
+    It = t => {
         const {
             prefixCls: e,
             className: o,
@@ -506,9 +506,9 @@ const It = {
             className: p
         } = t, v = xt(t, ["prefixCls", "className", "icon", "type", "message", "description", "btn", "actions", "closable", "closeIcon", "className"]), {
             getPrefixCls: O
-        } = u.useContext(H), y = c ?? r, g = e || O("notification"), $ = `${g}-notice`, C = A(g), [m, x, S] = q(g, C);
+        } = u.useContext(H), y = c ?? r, g = e || O("notification"), $ = `${g}-notice`, C = A(g), [m, x, S] = W(g, C);
         return m(u.createElement("div", {
-            className: I(`${$}-pure-panel`, x, o, S, C)
+            className: P(`${$}-pure-panel`, x, o, S, C)
         }, u.createElement(Ot, {
             prefixCls: g
         }), u.createElement(ft, Object.assign({}, v, {
@@ -516,11 +516,11 @@ const It = {
             eventKey: "pure",
             duration: null,
             closable: l,
-            className: I({
+            className: P({
                 notificationClassName: p
             }),
             closeIcon: L(g, b),
-            content: u.createElement(W, {
+            content: u.createElement(q, {
                 prefixCls: $,
                 icon: n,
                 type: a,
@@ -608,10 +608,10 @@ const B = 24,
         prefixCls: e
     }) => {
         const o = A(e),
-            [n, a, i] = q(e, o);
+            [n, a, i] = W(e, o);
         return n(f.createElement(ut, {
             classNames: {
-                list: I(a, i, o)
+                list: P(a, i, o)
             }
         }, t))
     },
@@ -640,13 +640,13 @@ const B = 24,
             getPopupContainer: y,
             notification: g,
             direction: $
-        } = u.useContext(H), [, C] = ct(), m = a || O("notification"), x = M => Nt(M, o ?? B, n ?? B), S = () => I({
+        } = u.useContext(H), [, C] = ct(), m = a || O("notification"), x = M => Nt(M, o ?? B, n ?? B), S = () => P({
             [`${m}-rtl`]: r ?? $ === "rtl"
-        }), P = () => wt(m), [d, N] = pt({
+        }), I = () => wt(m), [d, N] = pt({
             prefixCls: m,
             style: x,
             className: S,
-            motion: P,
+            motion: I,
             closable: !0,
             closeIcon: L(m),
             duration: b ?? Rt,
@@ -687,23 +687,23 @@ function V(t) {
                     actions: m,
                     className: x,
                     style: S,
-                    role: P = "alert",
+                    role: I = "alert",
                     closeIcon: d,
                     closable: N
                 } = r, M = jt(r, ["message", "description", "icon", "type", "btn", "actions", "className", "style", "role", "closeIcon", "closable"]), X = m ?? C, F = L(v, Et(d, t, p));
                 return l(Object.assign(Object.assign({
                     placement: (c = t == null ? void 0 : t.placement) !== null && c !== void 0 ? c : _t
                 }, M), {
-                    content: f.createElement(W, {
+                    content: f.createElement(q, {
                         prefixCls: v,
                         icon: g,
                         type: $,
                         message: O,
                         description: y,
                         actions: X,
-                        role: P
+                        role: I
                     }),
-                    className: I($ && `${v}-${$}`, x, p == null ? void 0 : p.className),
+                    className: P($ && `${v}-${$}`, x, p == null ? void 0 : p.className),
                     style: Object.assign(Object.assign({}, p == null ? void 0 : p.style), S),
                     closeIcon: F,
                     closable: N ?? !!F
@@ -859,7 +859,7 @@ const At = t => {
         destroy: At,
         config: zt,
         useNotification: Tt,
-        _InternalPanelDoNotUseOrYouWillBeFired: Pt
+        _InternalPanelDoNotUseOrYouWillBeFired: It
     },
     kt = Gt;
 Dt.forEach(t => {

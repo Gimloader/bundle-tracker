@@ -1,11 +1,11 @@
 import {
-    j as s,
-    b6 as m,
+    j as e,
+    b5 as l,
     d as t,
-    F as r,
-    b7 as u,
-    A as d,
-    W as f,
+    F as m,
+    b6 as u,
+    y as f,
+    U as d,
     e as h
 } from "./_index.js";
 import {
@@ -17,28 +17,28 @@ import {
 import {
     u as p
 } from "./useQuery.js";
-var v = (e => (e.character = "character", e.sticker = "sticker", e.trail = "trail", e))(v || {}),
-    k = (e => (e.common = "common", e.uncommon = "uncommon", e.rare = "rare", e.epic = "epic", e.legendary = "legendary", e.mythic = "mythic", e))(k || {}),
-    b = (e => (e.color = "color", e.select = "select", e))(b || {});
-const j = e => {
-        const n = e.size || 18,
-            i = Math.ceil(n * 1.22),
-            l = Math.floor(n / 3),
+var v = (s => (s.character = "character", s.sticker = "sticker", s.trail = "trail", s))(v || {}),
+    k = (s => (s.common = "common", s.uncommon = "uncommon", s.rare = "rare", s.epic = "epic", s.legendary = "legendary", s.mythic = "mythic", s))(k || {}),
+    b = (s => (s.color = "color", s.select = "select", s))(b || {});
+const j = s => {
+        const n = s.size || 18,
+            c = Math.ceil(n * 1.22),
+            i = Math.floor(n / 3),
             o = {
-                height: i
+                height: c
             };
-        return e.grayscale && (o.filter = "grayscale(1)"), s.jsxs(y, {
+        return s.grayscale && (o.filter = "grayscale(1)"), e.jsxs(y, {
             style: {
-                fontSize: e.size
+                fontSize: s.size
             },
-            children: [s.jsx(z, {
+            children: [e.jsx(z, {
                 draggable: !1,
                 style: o
-            }), s.jsx(A, {
+            }), e.jsx(A, {
                 style: {
-                    marginLeft: l
+                    marginLeft: i
                 },
-                children: m(e.amount)
+                children: l(s.amount)
             })]
         })
     },
@@ -50,11 +50,11 @@ const j = e => {
     })``,
     A = t.div`
   line-height: 1;
-  font-weight: ${r.Bold};
+  font-weight: ${m.Bold};
   margin-top: 0.15em;
 `;
-var a = (e => (e.xp = "xp", e.locker = "locker", e.seasonTicket = "seasonTicket", e.shop = "shop", e.pack = "pack", e))(a || {});
-const I = {
+var a = (s => (s.xp = "xp", s.locker = "locker", s.seasonTicket = "seasonTicket", s.shop = "shop", s.pack = "pack", s))(a || {});
+const M = {
         [a.xp]: {
             title: "Home",
             icon: "fas fa-home"
@@ -64,21 +64,11 @@ const I = {
             icon: "fas fa-th-large"
         },
         [a.seasonTicket]: {
-            title: s.jsxs("div", {
+            title: e.jsx("div", {
                 className: "flex vc",
-                children: [s.jsx("div", {
+                children: e.jsx("div", {
                     children: g.name
-                }), s.jsx("div", {
-                    style: {
-                        fontSize: "0.7em",
-                        padding: "0.3em 0.5em",
-                        borderRadius: 50,
-                        fontWeight: r.Bold,
-                        background: "#009933",
-                        marginLeft: "0.5em"
-                    },
-                    children: "New!"
-                })]
+                })
             }),
             icon: "fas fa-ticket-alt"
         },
@@ -87,36 +77,36 @@ const I = {
             icon: "fas fa-store"
         }
     },
-    c = ["cosmos-basics"],
-    N = () => p(c, () => d({
+    r = ["cosmos-basics"],
+    F = () => p(r, () => f({
         url: "/api/cosmos/basics"
     }), {
         staleTime: 2e4
     }),
-    L = () => u.invalidateQueries(c),
-    M = () => {
+    Q = () => u.invalidateQueries(r),
+    T = () => {
         const {
-            data: e
-        } = N();
-        return e ? s.jsx(W, {
-            children: s.jsx(j, {
-                amount: e.currency,
+            data: s
+        } = F();
+        return s ? e.jsx(N, {
+            children: e.jsx(j, {
+                amount: s.currency,
                 size: 16
             })
         }) : null
     },
-    W = t.div`
+    N = t.div`
   margin-left: 20px;
-  font-family: ${f.FugazOne};
+  font-family: ${d.FugazOne};
   color: ${h.White};
   padding: 6px 12px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 6px;
 `,
-    Q = {
+    W = {
         container: "cosmos-container",
         content: "cosmos-content"
     };
 export {
-    b as C, j as a, I as b, a as c, M as d, Q as e, v as f, k as g, L as i, N as u
+    b as C, j as a, M as b, a as c, T as d, W as e, v as f, k as g, Q as i, F as u
 };

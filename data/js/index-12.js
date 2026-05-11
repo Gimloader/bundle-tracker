@@ -1,18 +1,18 @@
 import {
-    ak as Q,
-    bG as J,
-    al as K,
-    am as _,
-    aN as Y,
+    ai as G,
+    bF as J,
+    aj as K,
+    ak as F,
+    aL as Y,
     r as n,
-    an as F,
-    ao as T,
-    bc as M,
-    aU as Z,
-    d5 as ee,
-    d6 as oe,
-    d7 as H,
-    d8 as re
+    al as _,
+    am as T,
+    bb as L,
+    aS as Z,
+    d0 as ee,
+    d1 as oe,
+    d2 as H,
+    d3 as re
 } from "./_index.js";
 import {
     e as te,
@@ -37,7 +37,7 @@ const ae = e => {
                 lineHeight: e.tagLineHeight,
                 whiteSpace: "nowrap",
                 background: e.defaultBg,
-                border: `${_(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,
+                border: `${F(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,
                 borderRadius: e.borderRadiusSM,
                 opacity: 1,
                 transition: `all ${e.motionDurationMid}`,
@@ -107,7 +107,7 @@ const ae = e => {
         } = e, r = e.fontSizeSM;
         return K(e, {
             tagFontSize: r,
-            tagLineHeight: _(o(e.lineHeightSM).mul(r).equal()),
+            tagLineHeight: F(o(e.lineHeightSM).mul(r).equal()),
             tagIconSize: o(l).sub(o(t).mul(2)).equal(),
             tagPaddingHorizontal: 8,
             tagBorderlessBg: e.defaultBg
@@ -117,7 +117,7 @@ const ae = e => {
         defaultBg: new J(e.colorFillQuaternary).onBackground(e.colorBgContainer).toHexString(),
         defaultColor: e.colorText
     }),
-    V = Q("Tag", e => {
+    M = G("Tag", e => {
         const t = I(e);
         return ae(t)
     }, P);
@@ -139,9 +139,9 @@ const ce = n.forwardRef((e, t) => {
         } = e, d = se(e, ["prefixCls", "style", "className", "checked", "onChange", "onClick"]), {
             getPrefixCls: m,
             tag: g
-        } = n.useContext(F), f = h => {
+        } = n.useContext(_), f = h => {
             a == null || a(!s), u == null || u(h)
-        }, C = m("tag", l), [y, S, i] = V(C), $ = T(C, `${C}-checkable`, {
+        }, C = m("tag", l), [y, S, i] = M(C), $ = T(C, `${C}-checkable`, {
             [`${C}-checkable-checked`]: s
         }, g == null ? void 0 : g.className, r, S, i);
         return y(n.createElement("span", Object.assign({}, d, {
@@ -171,7 +171,7 @@ const ce = n.forwardRef((e, t) => {
             }
         }
     })),
-    de = M(["Tag", "preset"], e => {
+    de = L(["Tag", "preset"], e => {
         const t = I(e);
         return ie(t)
     }, P);
@@ -192,7 +192,7 @@ const v = (e, t, l) => {
             }
         }
     },
-    ue = M(["Tag", "status"], e => {
+    ue = L(["Tag", "status"], e => {
         const t = I(e);
         return [v(t, "success", "Success"), v(t, "processing", "Info"), v(t, "error", "Error"), v(t, "warning", "Warning")]
     }, P);
@@ -219,18 +219,18 @@ const pe = n.forwardRef((e, t) => {
             getPrefixCls: y,
             direction: S,
             tag: i
-        } = n.useContext(F), [$, h] = n.useState(!0), W = Z(C, ["closeIcon", "closable"]);
+        } = n.useContext(_), [$, h] = n.useState(!0), V = Z(C, ["closeIcon", "closable"]);
         n.useEffect(() => {
             f !== void 0 && h(f)
         }, [f]);
-        const N = le(d),
-            j = ne(d),
-            x = N || j,
-            L = Object.assign(Object.assign({
+        const j = le(d),
+            N = ne(d),
+            x = j || N,
+            W = Object.assign(Object.assign({
                 backgroundColor: d && !x ? d : void 0
             }, i == null ? void 0 : i.style), s),
             c = y("tag", l),
-            [R, k, q] = V(c),
+            [R, k, q] = M(c),
             A = T(c, i == null ? void 0 : i.className, {
                 [`${c}-${d}`]: x,
                 [`${c}-has-color`]: d && !x,
@@ -244,11 +244,11 @@ const pe = n.forwardRef((e, t) => {
             [, X] = ee(H(e), H(i), {
                 closable: !1,
                 closeIconRender: b => {
-                    const G = n.createElement("span", {
+                    const U = n.createElement("span", {
                         className: `${c}-close-icon`,
                         onClick: E
                     }, b);
-                    return oe(b, G, p => ({
+                    return oe(b, U, p => ({
                         onClick: B => {
                             var O;
                             (O = p == null ? void 0 : p.onClick) === null || O === void 0 || O.call(p, B), E(B)
@@ -259,15 +259,15 @@ const pe = n.forwardRef((e, t) => {
             }),
             D = typeof C.onClick == "function" || a && a.type === "a",
             w = u || null,
-            U = w ? n.createElement(n.Fragment, null, w, a && n.createElement("span", null, a)) : a,
-            z = n.createElement("span", Object.assign({}, W, {
+            Q = w ? n.createElement(n.Fragment, null, w, a && n.createElement("span", null, a)) : a,
+            z = n.createElement("span", Object.assign({}, V, {
                 ref: t,
                 className: A,
-                style: L
-            }), U, X, N && n.createElement(de, {
+                style: W
+            }), Q, X, j && n.createElement(de, {
                 key: "preset",
                 prefixCls: c
-            }), j && n.createElement(ue, {
+            }), N && n.createElement(ue, {
                 key: "status",
                 prefixCls: c
             }));

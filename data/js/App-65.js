@@ -1,472 +1,370 @@
 import {
-    A as L,
-    j as e,
-    W as p,
+    y as g,
+    j as r,
+    e as f,
     d as s,
-    u as c,
-    r as j,
-    q as M,
-    f as P,
-    i as q,
-    C as b,
-    a0 as E,
-    M as D,
-    B as g,
-    a as v,
-    t as O,
-    K as Y,
-    F as _,
-    T as B,
-    H as U,
-    cn as G,
-    D as H
+    U as m,
+    F as S,
+    z as T,
+    r as y,
+    E as $,
+    cm as W,
+    b as z,
+    i as N,
+    T as D,
+    C as k
 } from "./_index.js";
 import {
-    u as Q
+    u as j
 } from "./useQuery.js";
 import {
-    b as J
-} from "./index-1.js";
-import {
-    a as m
-} from "./Centered.js";
-import {
-    S as y
-} from "./index-2.js";
-import {
-    C as n,
-    M as V
-} from "./Button.js";
-import {
-    A as l
+    A as F
 } from "./AccessibleAnchor.js";
 import {
-    A as X
-} from "./TrackEvent.js";
-import {
-    I as Z
-} from "./index-3.js";
-import {
-    g as z
+    g as I
 } from "./getCloudinaryUrl.js";
 import {
-    F as ee
-} from "./FontAwesomeIcon.js";
+    S as c
+} from "./index-2.js";
 import {
-    C as te
+    C as d,
+    T as P,
+    D as A,
+    a as x
+} from "./App-42.js";
+import {
+    C as v
+} from "./Button.js";
+import {
+    I as E
+} from "./index-3.js";
+import {
+    C as u
+} from "./Centered.js";
+import {
+    C as H
 } from "./CircularProgress.js";
+import "./AnimatedBackground-1.js";
+import "./App-4.js";
+import "./Shortcut.js";
+import "./Names.js";
+import "./mobxreact.esm.js";
+import "./index-1.js";
+import "./index-6.js";
+import "./FontAwesomeIcon.js";
+import "./App-2.js";
+import "./Sizes.js";
+import "./motion.js";
+import "./price.js";
+import "./TrackPostHogEvent.js";
+import "./index-4.js";
+import "./context.js";
+import "./StarOutlined.js";
+import "./NavigateTo.js";
+import "./index-15.js";
+import "./colors.js";
+import "./useWarningOnMountInDevelopment.js";
+import "./index-10.js";
+import "./index-5.js";
+import "./move.js";
+import "./App-5.js";
+import "./index-24.js";
+import "./GetAssetPath.js";
+import "./index-14.js";
+import "./EditOutlined.js";
+import "./styleChecker.js";
+import "./CheckOutlined.js";
+import "./CopyOutlined.js";
+import "./TrackEvent.js";
+import "./MapStyle.js";
+import "./SeasonTicketInlineUpsell.js";
+import "./SeasonTicketName.js";
+import "./OwnsSeasonTicket.js";
 import "./polished.esm.js";
 import "./inheritsLoose.js";
-import "./TrackPostHogEvent.js";
 import "./clsx.m.js";
-const re = ["creative-map-listing"],
-    se = t => Q({
-        queryKey: [re, t],
-        retry: !1,
-        queryFn: () => L({
-            url: `/api/created-map/listing/info/${t}`
-        })
+const _ = ["creative-discovery"],
+    L = () => j(_, () => g({
+        url: "/api/created-map/listing/discovery"
+    }), {
+        refetchOnMount: !1,
+        refetchOnWindowFocus: !1
     }),
-    ie = t => e.jsxs(ae, {
-        children: [t.tags.length ? e.jsx(y, {
-            wrap: !0,
-            direction: "horizontal",
-            size: 10,
-            style: {
-                marginBottom: 6
-            },
-            children: t.tags.map((r, i) => e.jsx(ne, {
-                children: r
-            }, r + i))
-        }) : null, e.jsx(oe, {
-            children: t.title
-        }), e.jsx(le, {
-            children: t.description
-        })]
-    }),
-    ae = s(m).attrs({
-        className: "maxWidth"
-    })`
-  font-family: ${p.FugazOne};
-  font-size: 42px;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-  text-align: center;
-`,
-    oe = s.div`
-  margin-bottom: 2px;
-  font-size: 42px;
-`,
-    ne = s.div`
-  font-family: ${p.FugazOne};
-  background: rgba(255, 255, 255, 0.1);
-  line-height: 1;
-  font-size: 14px;
-  padding: 8px 21px 6px 21px;
-  border-radius: 50px;
-  transition: background 0.2s ease-in-out;
-  cursor: default;
-  &:hover {
-    background: rgba(255, 255, 255, 0.17);
-  }
-`,
-    le = s.div`
-  font-family: ${p.SFPro};
-  text-transform: none;
-  font-size: 16px;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.9);
-`,
-    w = "https://docs.creative.gimkit.com/general/publishing/community-rules-for-publishing-with-gimkit-creative",
-    de = t => {
-        const [r, i, a] = c(!1), [o, R, S] = c(!1), [k, $] = c(!1), [I, N] = j.useState(""), [F, W, u] = c(!1), {
-            id: x
-        } = M(), A = () => {
-            if (r) return;
-            i();
-            const d = {
-                listing: x
-            };
-            t.kitId && (d.kit = t.kitId), X({
-                event: "creative_discovery_hosted",
-                properties: {
-                    id: x
-                }
-            }), v({
-                url: "/api/matchmaker/intent/map/play/listing/create",
-                data: d,
-                success: h => {
-                    window.location.href = `/host?id=${h}`
-                },
-                error: h => {
-                    O({
-                        e: h,
-                        default: {
-                            title: "There was an error loading you in."
-                        }
-                    })
-                },
-                both: a
-            })
-        }, K = () => {
-            o || (R(), v({
-                url: `/api/created-map/listing/report/${x}`,
-                data: {
-                    comment: I
-                },
-                success: () => {
-                    $()
-                },
-                both: () => {
-                    S()
-                }
-            }))
-        };
-        return e.jsxs(ce, {
-            children: [!P() && !q() ? e.jsxs(pe, {
-                children: ["This map is limited to 5 players.", " ", e.jsxs(l, {
-                    to: E,
-                    style: {
-                        color: n.Yellow,
-                        textDecoration: "underline"
-                    },
-                    children: ["Upgrade to ", b, " Pro"]
-                }), " ", "to remove this limit."]
-            }) : null, e.jsx(V, {
-                size: "large",
-                type: "success",
-                block: !0,
-                onClick: A,
-                ariaLabel: "Play Live",
+    b = 130,
+    O = b * .5625,
+    C = t => {
+        const {
+            _id: o,
+            title: i,
+            image: n,
+            tags: e
+        } = t.listing;
+        return r.jsx("div", {
+            className: "maxWidth",
+            children: r.jsx(F, {
+                className: "maxWidth",
                 style: {
-                    fontFamily: p.FugazOne,
-                    width: "100%",
-                    maxWidth: 350,
-                    lineHeight: 1
+                    color: f.White
                 },
-                children: e.jsx("span", {
-                    style: {
-                        textTransform: "uppercase"
-                    },
-                    children: "Play Live"
+                to: `/creative/map/${o}`,
+                children: r.jsx(M, {
+                    children: r.jsxs(c, {
+                        direction: "horizontal",
+                        size: 20,
+                        align: "center",
+                        children: [r.jsx(R, {
+                            style: {
+                                backgroundImage: `url(${I(n)})`
+                            }
+                        }), r.jsxs("div", {
+                            children: [r.jsx(q, {
+                                children: i
+                            }), e.length ? r.jsx(c, {
+                                direction: "horizontal",
+                                size: 6,
+                                wrap: !0,
+                                style: {
+                                    marginTop: 6
+                                },
+                                children: e.map(l => r.jsx(U, {
+                                    children: l
+                                }, l + o))
+                            }) : null]
+                        })]
+                    })
                 })
-            }), e.jsxs(me, {
-                children: ["This map was not created by ", b, ". If anything in this map breaks our", " ", e.jsx(l, {
-                    to: w,
-                    external: !0,
-                    target: "_blank",
-                    style: {
-                        color: n.Yellow,
-                        textDecoration: "underline"
-                    },
-                    children: "Community Guidelines"
-                }), ", please", " ", e.jsx(l, {
-                    style: {
-                        color: n.Yellow,
-                        textDecoration: "underline",
-                        cursor: "pointer"
-                    },
-                    onClick: W,
-                    children: "report"
-                }), " ", "and we will take proper action."]
-            }), e.jsx(D, {
-                open: F,
-                onCancel: u,
-                title: "Report map",
-                footer: k ? e.jsx(g, {
-                    onClick: u,
-                    type: "primary",
-                    children: "Close"
-                }, "reported-close") : [e.jsx(g, {
-                    onClick: u,
-                    children: "Cancel"
-                }, "reporting-close"), e.jsx(g, {
-                    danger: !0,
-                    loading: o,
-                    onClick: K,
-                    children: "Report Map"
-                }, "reporting-submit")],
-                children: k ? e.jsx(e.Fragment, {
-                    children: "Your report was sent to our team. Thanks for keeping Gimkit safe!"
-                }) : e.jsxs(e.Fragment, {
-                    children: ["Found a map that breaks our", " ", e.jsx(l, {
-                        to: w,
-                        external: !0,
-                        target: "_blank",
-                        style: {
-                            textDecoration: "underline"
-                        },
-                        children: "Community Guidelines"
-                    }), "? Report it here and our team will take a look. Thanks for keeping Gimkit safe!", e.jsx(Z.TextArea, {
-                        placeholder: "Optional comment...",
-                        style: {
-                            marginTop: 10
-                        },
-                        maxLength: 1e3,
-                        onChange: d => N(d.target.value)
-                    })]
-                })
-            })]
+            })
         })
     },
-    ce = s(m).attrs({
+    M = s.div.attrs({
         className: "maxWidth"
     })`
-  padding-top: 10px;
-`,
-    pe = s.div`
-  font-size: 14px;
-  font-style: italic;
-  margin-bottom: 25px;
-  background: rgba(255, 255, 255, 0.15);
-  padding: 14px 22px;
-  border-radius: 6px;
-`,
-    me = s.div`
-  font-size: 12px;
-  font-style: italic;
-  margin-top: 20px;
-`,
-    ue = t => t.kits.length ? e.jsxs(C, {
-        children: [e.jsxs(T, {
-            children: ["This map allows players to answer questions.", e.jsx("br", {}), "Select the kit you would like players to answer questions from:"]
-        }), e.jsx(y, {
-            direction: "vertical",
-            size: 15,
-            className: "maxWidth",
-            style: {
-                marginTop: 25
-            },
-            children: t.kits.map(r => e.jsx(xe, {
-                onSelect: () => t.selectKit(r._id),
-                title: r.title,
-                gif: r.gif
-            }, r._id))
-        })]
-    }) : e.jsx(C, {
-        children: e.jsxs(T, {
-            children: ["This map has players answer questions from a kit, but you", " ", e.jsx("b", {
-                children: "do not currently have any kits with questions."
-            }), e.jsx("br", {}), e.jsx("br", {}), e.jsx(l, {
-                to: Y,
-                style: {
-                    color: n.Yellow,
-                    textDecoration: "underline"
-                },
-                children: "Create a kit,"
-            }), " ", "add some questions and then come back here to play this map!"]
-        })
-    }),
-    xe = t => e.jsx(he, {
-        onClick: t.onSelect,
-        children: e.jsxs(y, {
-            direction: "horizontal",
-            size: 16,
-            wrap: !0,
-            align: "center",
-            children: [e.jsx(ge, {
-                style: {
-                    backgroundImage: `url(${z(t.gif)})`
-                }
-            }), e.jsx(fe, {
-                children: t.title
-            })]
-        })
-    }),
-    C = s(m).attrs({
-        className: "maxWidth"
-    })``,
-    T = s.div`
-  text-align: center;
-`,
-    he = s.div.attrs({
-        className: "maxWidth flex vc"
-    })`
-  cursor: pointer;
-
-  border-radius: 6px;
-  padding: 16px;
   background: rgba(255, 255, 255, 0.1);
-  border-width: 2px;
-  border-style: solid;
-  border-color: transparent;
-  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  transition: background 0.2s ease-in-out;
+  line-height: 0;
+  overflow: hidden;
+
   &:hover {
     background: rgba(255, 255, 255, 0.17);
-    border-color: ${n.Yellow};
   }
 `,
-    ge = s.div.attrs({
-        className: "light-shadow"
-    })`
-  height: 65px;
-  width: 65px;
-  border-radius: 5px;
+    R = s.div`
+  width: ${b}px;
+  height: ${O}px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   background-size: cover;
 `,
-    fe = s.div`
-  font-weight: ${_.Bold};
+    q = s.div`
+  font-family: ${m.FugazOne};
   font-size: 16px;
+  line-height: 1;
+  margin-top: 2px;
+  text-transform: uppercase;
 `,
-    be = t => {
-        const [r, i] = j.useState();
-        return !r && t.response.kits ? e.jsx(ue, {
-            kits: t.response.kits,
-            selectKit: i
-        }) : e.jsx(de, {
-            kitId: r
-        })
-    },
-    je = t => {
-        const r = j.useRef(null),
-            [i] = J(r),
-            a = Math.min(500, i * .9),
-            o = a * (9 / 16);
-        return e.jsxs(ye, {
-            ref: r,
-            children: [e.jsx(ke, {
+    U = s.div`
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 50px;
+  font-style: italic;
+  font-weight: ${S.Bold};
+`,
+    B = t => {
+        const {
+            name: o,
+            description: i,
+            items: n
+        } = t.list;
+        return r.jsxs(d, {
+            children: [r.jsx(P, {
+                children: o
+            }), r.jsx(A, {
+                children: i
+            }), r.jsx(c, {
                 style: {
-                    width: a,
-                    height: o,
-                    backgroundImage: `url(${z(t.response.image)})`
-                }
-            }), e.jsxs(ve, {
-                style: {
-                    marginTop: o / 2 * -1,
-                    paddingTop: o / 2 + 35
+                    marginTop: 18
                 },
-                children: [e.jsx(B, {
-                    title: `${t.response.title} | ${b} Creative`,
-                    override: !0
-                }), e.jsx(ie, {
-                    ...t.response
-                }), e.jsx(U, {
-                    theme: {
-                        algorithm: G.darkAlgorithm
-                    },
-                    children: e.jsx(H, {})
-                }), e.jsx(be, {
-                    response: t.response
-                })]
+                direction: "vertical",
+                className: "maxWidth",
+                size: 14,
+                children: n.map(e => r.jsx(C, {
+                    listing: e
+                }, e._id))
             })]
         })
     },
-    ye = s.div.attrs({
+    Y = "useDiscoverySearch",
+    G = t => j({
+        queryKey: [Y, {
+            searchQuery: t
+        }],
+        enabled: !!t,
+        queryFn: () => g({
+            url: "/api/created-map/listing/discovery/search",
+            data: {
+                query: t
+            }
+        })
+    }),
+    K = t => {
+        const [o] = T(), [i, n] = y.useState(o.get("q")), {
+            data: e,
+            isLoading: l
+        } = G(i), p = !!(i && l), w = a => {
+            const h = new URL(window.location.href);
+            h.searchParams.set("q", a), window.history.pushState({}, "", h), n(a)
+        };
+        return r.jsxs(r.Fragment, {
+            children: [r.jsx($, {
+                theme: {
+                    algorithm: W.darkAlgorithm
+                },
+                children: r.jsx(E.Search, {
+                    onSearch: w,
+                    loading: p,
+                    placeholder: "Search for maps...",
+                    size: "large",
+                    style: {
+                        marginBottom: 20
+                    }
+                })
+            }), !p && i ? r.jsx("div", {
+                className: "maxWidth",
+                style: {
+                    marginBottom: 20
+                },
+                children: r.jsx(d, {
+                    className: "maxWidth",
+                    children: e.length ? r.jsx(c, {
+                        direction: "vertical",
+                        size: 14,
+                        className: "maxWidth",
+                        children: e.map(a => r.jsx(C, {
+                            listing: a
+                        }, a._id + "-search"))
+                    }) : r.jsxs("div", {
+                        style: {
+                            opacity: .9,
+                            fontStyle: "italic"
+                        },
+                        children: [r.jsx("span", {
+                            style: {
+                                color: v.Yellow
+                            },
+                            children: "No results found."
+                        }), " ", "Try searching for something else!"]
+                    })
+                })
+            }) : null, r.jsx(c, {
+                className: "maxWidth",
+                direction: "vertical",
+                size: 20,
+                children: t.lists.map(a => r.jsx(B, {
+                    list: a
+                }, a.name + "-list"))
+            })]
+        })
+    },
+    Q = 8,
+    J = 16,
+    V = () => r.jsxs(X, {
+        children: [r.jsx("img", {
+            src: "/client/img/creative/banner.png",
+            style: {
+                height: 200
+            }
+        }), r.jsx(Z, {
+            children: "Discovery Is Closed During School Hours"
+        }), r.jsxs(rr, {
+            children: ["Check back in after ", r.jsx("b", {
+                style: {
+                    color: v.Yellow
+                },
+                children: "4pm"
+            }), " to view & play maps made by the Gimkit Creative community!"]
+        })]
+    }),
+    X = s(d).attrs({
         className: "flex-column flex-center"
     })`
-  width: 80%;
-  max-width: 900px;
+  max-width: 700px;
+  font-family: ${m.FugazOne};
+  overflow: hidden;
 `,
-    ke = s.div.attrs({
-        className: "medium-shadow"
-    })`
-  border-radius: 8px;
-  background-size: cover;
-  z-index: 2;
+    Z = s.div`
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-top: 15px;
 `,
-    ve = s.div.attrs({
-        className: "maxWidth light-shadow"
-    })`
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(3px);
-  padding: 35px;
-  border-radius: 12px;
+    rr = s.div`
+  font-family: ${m.SFPro};
+  opacity: 0.9;
+  font-size: 16px;
+  margin-top: 3px;
 `,
-    qe = () => {
-        var o;
+    Xr = () => {
         const {
-            id: t
-        } = M(), {
-            data: r,
-            isLoading: i,
-            error: a
-        } = se(t);
-        return i ? e.jsx(f, {
-            children: e.jsx(te, {
-                style: {
-                    color: n.White,
-                    marginTop: 50
-                }
-            })
-        }) : a ? e.jsx(f, {
-            children: e.jsxs(m, {
+            isLoading: t,
+            error: o,
+            data: i
+        } = L(), n = y.useMemo(() => {
+            const e = z();
+            return e.day() === 0 || e.day() === 6 ? !1 : e.hour() >= Q && e.hour() < J
+        }, []);
+        return N() && n ? r.jsx(u, {
+            style: {
+                padding: 35
+            },
+            children: r.jsx(V, {})
+        }) : o ? r.jsx("div", {
+            className: "flex-center maxWidth",
+            style: {
+                marginTop: 50
+            },
+            children: r.jsx("div", {
                 className: "light-shadow",
                 style: {
                     background: "rgba(255,255,255,0.1)",
-                    padding: 30,
-                    borderRadius: 8,
-                    width: "90%",
-                    marginTop: 25,
-                    maxWidth: 500
+                    padding: 35,
+                    borderRadius: 12,
+                    maxWidth: "90%"
                 },
-                children: [e.jsx("div", {
-                    children: e.jsx(ee, {
-                        name: "fas fa-exclamation-triangle",
-                        style: {
-                            color: n.Yellow,
-                            fontSize: 42,
-                            marginBottom: 20
-                        }
-                    })
-                }), e.jsx("div", {
-                    style: {
-                        fontSize: 16
-                    },
-                    children: ((o = a == null ? void 0 : a.message) == null ? void 0 : o.text) || "There was an error. Please refresh and try again."
-                })]
+                children: "There was an error loading Discovery. Please refresh and try again."
             })
-        }) : e.jsx(f, {
-            children: r ? e.jsx(je, {
-                response: r
-            }) : null
+        }) : t ? r.jsx(u, {
+            style: {
+                marginTop: 100
+            },
+            children: r.jsx(H, {
+                style: {
+                    color: f.White
+                }
+            })
+        }) : r.jsxs(er, {
+            children: [r.jsx(D, {
+                title: `${k} Creative | Discovery`,
+                override: !0
+            }), r.jsx(tr, {
+                children: r.jsx(K, {
+                    lists: i ?? []
+                })
+            })]
         })
     },
-    f = s.div.attrs({
-        className: "maxWidth flex-center"
+    er = s.div.attrs({
+        className: "maxWidth flex hc"
     })`
   padding: 35px 0px;
+`,
+    tr = s.div`
+  width: ${x.width};
+  max-width: ${x.maxWidth};
 `;
 export {
-    qe as
+    Xr as
     default
 };

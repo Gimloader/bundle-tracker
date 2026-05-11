@@ -1,30 +1,30 @@
 import {
     r,
-    aD as pt,
+    aB as pt,
     _ as at,
-    aF as K,
-    ao as ge,
-    aC as Se,
-    aE as W,
-    aB as ie,
-    bh as _t,
-    bg as jt,
-    bi as Je,
-    aM as we,
-    aL as Lt,
-    aI as At,
-    bj as qt,
-    aJ as Ct,
-    cW as It,
-    b9 as Ge,
-    ak as zt,
-    al as Wt,
-    aN as Xt,
-    am as ue,
-    bG as St,
-    z as Pe,
-    aQ as Ut,
-    bW as Yt
+    aD as K,
+    am as fe,
+    aA as Se,
+    aC as W,
+    az as ie,
+    bg as _t,
+    bf as jt,
+    bh as Je,
+    aK as we,
+    aJ as Lt,
+    aG as At,
+    bi as qt,
+    aH as Ct,
+    cV as zt,
+    b8 as Ge,
+    ai as It,
+    aj as Wt,
+    aL as Xt,
+    ak as ue,
+    bF as St,
+    x as Pe,
+    aO as Ut,
+    bV as Yt
 } from "./_index.js";
 import {
     T as Gt
@@ -79,12 +79,12 @@ var Ae = r.createContext({
             m = e.onDelete,
             c = e.style,
             E = e.render,
-            g = e.dragging,
+            f = e.dragging,
             v = e.draggingDelete,
             S = e.onOffsetChange,
             y = e.onChangeComplete,
             b = e.onFocus,
-            f = e.onMouseEnter,
+            g = e.onMouseEnter,
             s = pt(e, Vt),
             a = r.useContext(Ae),
             d = a.min,
@@ -99,7 +99,7 @@ var Ae = r.createContext({
             p = a.ariaRequired,
             k = a.ariaValueTextFormatterForHandle,
             $ = a.styles,
-            I = a.classNames,
+            z = a.classNames,
             X = "".concat(o, "-handle"),
             j = function(w) {
                 M || u(w, i)
@@ -108,7 +108,7 @@ var Ae = r.createContext({
                 b == null || b(w, i)
             },
             T = function(w) {
-                f(w, i)
+                g(w, i)
             },
             ye = function(w) {
                 if (!M && R) {
@@ -160,7 +160,7 @@ var Ae = r.createContext({
                         break
                 }
             },
-            fe = nt(C, n, d, l),
+            ge = nt(C, n, d, l),
             de = {};
         if (i !== null) {
             var ae;
@@ -186,14 +186,14 @@ var Ae = r.createContext({
         }
         var ke = r.createElement("div", at({
             ref: t,
-            className: ge(X, Se(Se(Se({}, "".concat(X, "-").concat(i + 1), i !== null && B), "".concat(X, "-dragging"), g), "".concat(X, "-dragging-delete"), v), I.handle),
-            style: K(K(K({}, fe), c), $.handle)
+            className: fe(X, Se(Se(Se({}, "".concat(X, "-").concat(i + 1), i !== null && B), "".concat(X, "-dragging"), f), "".concat(X, "-dragging-delete"), v), z.handle),
+            style: K(K(K({}, ge), c), $.handle)
         }, de, s));
         return E && (ke = E(ke, {
             index: i,
             prefixCls: o,
             value: n,
-            dragging: g,
+            dragging: f,
             draggingDelete: v
         })), ke
     }),
@@ -206,13 +206,13 @@ var Ae = r.createContext({
             m = e.values,
             c = e.handleRender,
             E = e.activeHandleRender,
-            g = e.draggingIndex,
+            f = e.draggingIndex,
             v = e.draggingDelete,
             S = e.onFocus,
             y = pt(e, Jt),
             b = r.useRef({}),
-            f = r.useState(!1),
-            s = ie(f, 2),
+            g = r.useState(!1),
+            s = ie(g, 2),
             a = s[0],
             d = s[1],
             l = r.useState(-1),
@@ -250,7 +250,7 @@ var Ae = r.createContext({
             onMouseEnter: q
         }, y);
         return r.createElement(r.Fragment, null, m.map(function(p, k) {
-            var $ = g === k;
+            var $ = f === k;
             return r.createElement(yt, at({
                 ref: function(X) {
                     X ? b.current[k] = X : delete b.current[k]
@@ -267,7 +267,7 @@ var Ae = r.createContext({
         }, D, {
             value: m[M],
             valueIndex: null,
-            dragging: g !== -1,
+            dragging: f !== -1,
             draggingDelete: v,
             render: E,
             style: {
@@ -285,15 +285,15 @@ var Ae = r.createContext({
             m = t.onClick,
             c = r.useContext(Ae),
             E = c.min,
-            g = c.max,
+            f = c.max,
             v = c.direction,
             S = c.includedStart,
             y = c.includedEnd,
             b = c.included,
-            f = "".concat(o, "-text"),
-            s = nt(v, u, E, g);
+            g = "".concat(o, "-text"),
+            s = nt(v, u, E, f);
         return r.createElement("span", {
-            className: ge(f, Se({}, "".concat(f, "-active"), b && S <= u && u <= y)),
+            className: fe(g, Se({}, "".concat(g, "-active"), b && S <= u && u <= y)),
             style: K(K({}, s), n),
             onMouseDown: function(d) {
                 d.stopPropagation()
@@ -313,14 +313,14 @@ var Ae = r.createContext({
         }, n.map(function(m) {
             var c = m.value,
                 E = m.style,
-                g = m.label;
+                f = m.label;
             return r.createElement(Zt, {
                 key: c,
                 prefixCls: u,
                 style: E,
                 value: c,
                 onClick: i
-            }, g)
+            }, f)
         })) : null
     },
     ta = function(t) {
@@ -331,15 +331,15 @@ var Ae = r.createContext({
             m = r.useContext(Ae),
             c = m.min,
             E = m.max,
-            g = m.direction,
+            f = m.direction,
             v = m.included,
             S = m.includedStart,
             y = m.includedEnd,
             b = "".concat(o, "-dot"),
-            f = v && S <= n && n <= y,
-            s = K(K({}, nt(g, n, c, E)), typeof i == "function" ? i(n) : i);
-        return f && (s = K(K({}, s), typeof u == "function" ? u(n) : u)), r.createElement("span", {
-            className: ge(b, Se({}, "".concat(b, "-active"), f)),
+            g = v && S <= n && n <= y,
+            s = K(K({}, nt(f, n, c, E)), typeof i == "function" ? i(n) : i);
+        return g && (s = K(K({}, s), typeof u == "function" ? u(n) : u)), r.createElement("span", {
+            className: fe(b, Se({}, "".concat(b, "-active"), g)),
             style: s
         })
     },
@@ -351,16 +351,16 @@ var Ae = r.createContext({
             m = t.activeStyle,
             c = r.useContext(Ae),
             E = c.min,
-            g = c.max,
+            f = c.max,
             v = c.step,
             S = r.useMemo(function() {
                 var y = new Set;
-                if (n.forEach(function(f) {
-                        y.add(f.value)
+                if (n.forEach(function(g) {
+                        y.add(g.value)
                     }), i && v !== null)
-                    for (var b = E; b <= g;) y.add(b), b += v;
+                    for (var b = E; b <= f;) y.add(b), b += v;
                 return Array.from(y)
-            }, [E, g, v, i, n]);
+            }, [E, f, v, i, n]);
         return r.createElement("div", {
             className: "".concat(o, "-step")
         }, S.map(function(y) {
@@ -381,13 +381,13 @@ var Ae = r.createContext({
             m = t.index,
             c = t.onStartMove,
             E = t.replaceCls,
-            g = r.useContext(Ae),
-            v = g.direction,
-            S = g.min,
-            y = g.max,
-            b = g.disabled,
-            f = g.range,
-            s = g.classNames,
+            f = r.useContext(Ae),
+            v = f.direction,
+            S = f.min,
+            y = f.max,
+            b = f.disabled,
+            g = f.range,
+            s = f.classNames,
             a = "".concat(o, "-track"),
             d = rt(i, S, y),
             l = rt(u, S, y),
@@ -408,7 +408,7 @@ var Ae = r.createContext({
             default:
                 M.left = "".concat(d * 100, "%"), M.width = "".concat(l * 100 - d * 100, "%")
         }
-        var R = E || ge(a, Se(Se({}, "".concat(a, "-").concat(m + 1), m !== null && f), "".concat(o, "-track-draggable"), c), s.track);
+        var R = E || fe(a, Se(Se({}, "".concat(a, "-").concat(m + 1), m !== null && g), "".concat(o, "-track-draggable"), c), s.track);
         return r.createElement("div", {
             className: R,
             style: K(K({}, M), n),
@@ -424,12 +424,12 @@ var Ae = r.createContext({
             m = t.onStartMove,
             c = r.useContext(Ae),
             E = c.included,
-            g = c.range,
+            f = c.range,
             v = c.min,
             S = c.styles,
             y = c.classNames,
             b = r.useMemo(function() {
-                if (!g) {
+                if (!f) {
                     if (i.length === 0) return [];
                     var s = u ?? v,
                         a = i[0];
@@ -443,17 +443,17 @@ var Ae = r.createContext({
                     end: i[l + 1]
                 });
                 return d
-            }, [i, g, u, v]);
+            }, [i, f, u, v]);
         if (!E) return null;
-        var f = b != null && b.length && (y.tracks || S.tracks) ? r.createElement(kt, {
+        var g = b != null && b.length && (y.tracks || S.tracks) ? r.createElement(kt, {
             index: null,
             prefixCls: o,
             start: b[0].start,
             end: b[b.length - 1].end,
-            replaceCls: ge(y.tracks, "".concat(o, "-tracks")),
+            replaceCls: fe(y.tracks, "".concat(o, "-tracks")),
             style: S.tracks
         }) : null;
-        return r.createElement(r.Fragment, null, f, b.map(function(s, a) {
+        return r.createElement(r.Fragment, null, g, b.map(function(s, a) {
             var d = s.start,
                 l = s.end;
             return r.createElement(kt, {
@@ -477,11 +477,11 @@ function Et(e) {
     }
 }
 
-function oa(e, t, o, n, i, u, m, c, E, g, v) {
+function oa(e, t, o, n, i, u, m, c, E, f, v) {
     var S = r.useState(null),
         y = ie(S, 2),
         b = y[0],
-        f = y[1],
+        g = y[1],
         s = r.useState(-1),
         a = ie(s, 2),
         d = a[0],
@@ -496,14 +496,14 @@ function oa(e, t, o, n, i, u, m, c, E, g, v) {
         p = q[1],
         k = r.useState(o),
         $ = ie(k, 2),
-        I = $[0],
+        z = $[0],
         X = $[1],
         j = r.useRef(null),
         V = r.useRef(null),
         T = r.useRef(null),
         ye = r.useContext(Kt),
         te = ye.onDragStart,
-        fe = ye.onDragChange;
+        ge = ye.onDragChange;
     jt(function() {
         d === -1 && p(o)
     }, [o, d]), r.useEffect(function() {
@@ -512,11 +512,11 @@ function oa(e, t, o, n, i, u, m, c, E, g, v) {
         }
     }, []);
     var de = function(x, L, A) {
-            L !== void 0 && f(L), p(x);
+            L !== void 0 && g(L), p(x);
             var Q = x;
             A && (Q = x.filter(function(N, U) {
                 return U !== d
-            })), m(Q), fe && fe({
+            })), m(Q), ge && ge({
                 rawValues: x,
                 deleteIndex: A ? d : -1,
                 draggingIndex: d,
@@ -525,22 +525,22 @@ function oa(e, t, o, n, i, u, m, c, E, g, v) {
         },
         ae = Je(function(w, x, L) {
             if (w === -1) {
-                var A = I[0],
-                    Q = I[I.length - 1],
+                var A = z[0],
+                    Q = z[z.length - 1],
                     N = n - A,
                     U = i - Q,
                     re = x * (i - n);
                 re = Math.max(re, N), re = Math.min(re, U);
                 var se = u(A + re);
                 re = se - A;
-                var me = I.map(function(ve) {
+                var me = z.map(function(ve) {
                     return ve + re
                 });
                 de(me)
             } else {
                 var he = (i - n) * x,
                     be = we(D);
-                be[w] = I[w];
+                be[w] = z[w];
                 var Ee = E(be, he, w, "dist");
                 de(Ee.values, Ee.value, L)
             }
@@ -549,7 +549,7 @@ function oa(e, t, o, n, i, u, m, c, E, g, v) {
             x.stopPropagation();
             var Q = A || o,
                 N = Q[L];
-            l(L), f(N), X(Q), p(Q), B(!1);
+            l(L), g(N), X(Q), p(Q), B(!1);
             var U = Et(x),
                 re = U.pageX,
                 se = U.pageY,
@@ -583,7 +583,7 @@ function oa(e, t, o, n, i, u, m, c, E, g, v) {
                         default:
                             Ce = pe / Y, oe = ce
                     }
-                    me = g ? Math.abs(oe) > na && v < D.length : !1, B(me), ae(L, Ce, me)
+                    me = f ? Math.abs(oe) > na && v < D.length : !1, B(me), ae(L, Ce, me)
                 },
                 be = function Ee(ve) {
                     ve.preventDefault(), document.removeEventListener("mouseup", Ee), document.removeEventListener("mousemove", he), T.current && (T.current.removeEventListener("touchmove", j.current), T.current.removeEventListener("touchend", V.current)), j.current = null, V.current = null, T.current = null, c(me), l(-1), B(!1)
@@ -603,12 +603,12 @@ function oa(e, t, o, n, i, u, m, c, E, g, v) {
             }), w.forEach(function(N) {
                 L[N] = (L[N] || 0) - 1
             });
-            var A = g ? 1 : 0,
+            var A = f ? 1 : 0,
                 Q = Object.values(L).reduce(function(N, U) {
                     return N + Math.abs(U)
                 }, 0);
             return Q <= A ? D : o
-        }, [o, D, g]);
+        }, [o, D, f]);
     return [d, b, R, J, ke]
 }
 
@@ -618,18 +618,18 @@ function la(e, t, o, n, i, u) {
         }, [e, t]),
         c = r.useCallback(function(b) {
             if (o !== null) {
-                var f = e + Math.round((m(b) - e) / o) * o,
+                var g = e + Math.round((m(b) - e) / o) * o,
                     s = function(C) {
                         return (String(C).split(".")[1] || "").length
                     },
                     a = Math.max(s(o), s(t), s(e)),
-                    d = Number(f.toFixed(a));
+                    d = Number(g.toFixed(a));
                 return e <= d && d <= t ? d : null
             }
             return null
         }, [o, e, t, m]),
         E = r.useCallback(function(b) {
-            var f = m(b),
+            var g = m(b),
                 s = n.map(function(l) {
                     return l.value
                 });
@@ -637,14 +637,14 @@ function la(e, t, o, n, i, u) {
             var a = s[0],
                 d = t - e;
             return s.forEach(function(l) {
-                var C = Math.abs(f - l);
+                var C = Math.abs(g - l);
                 C <= d && (a = l, d = C)
             }), a
         }, [e, t, n, o, m, c]),
-        g = function b(f, s, a) {
+        f = function b(g, s, a) {
             var d = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : "unit";
             if (typeof s == "number") {
-                var l, C = f[a],
+                var l, C = g[a],
                     M = C + s,
                     R = [];
                 n.forEach(function(p) {
@@ -667,7 +667,7 @@ function la(e, t, o, n, i, u) {
                     }), l === void 0) return s < 0 ? e : t;
                 if (d === "dist") return l;
                 if (Math.abs(s) > 1) {
-                    var D = we(f);
+                    var D = we(g);
                     return D[a] = l, b(D, s - B, a, d)
                 }
                 return l
@@ -676,23 +676,23 @@ function la(e, t, o, n, i, u) {
                 if (s === "max") return t
             }
         },
-        v = function(f, s, a) {
+        v = function(g, s, a) {
             var d = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : "unit",
-                l = f[a],
-                C = g(f, s, a, d);
+                l = g[a],
+                C = f(g, s, a, d);
             return {
                 value: C,
                 changed: C !== l
             }
         },
-        S = function(f) {
-            return u === null && f === 0 || typeof u == "number" && f < u
+        S = function(g) {
+            return u === null && g === 0 || typeof u == "number" && g < u
         },
-        y = function(f, s, a) {
+        y = function(g, s, a) {
             var d = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : "unit",
-                l = f.map(E),
+                l = g.map(E),
                 C = l[a],
-                M = g(l, s, a, d);
+                M = f(l, s, a, d);
             if (l[a] = M, i === !1) {
                 var R = u || 0;
                 a > 0 && l[a - 1] !== C && (l[a] = Math.max(l[a], l[a - 1] + R)), a < l.length - 1 && l[a + 1] !== C && (l[a] = Math.min(l[a], l[a + 1] - R))
@@ -708,9 +708,9 @@ function la(e, t, o, n, i, u) {
                         l[D - 1] = k.value, p = k.changed
                     }
                 for (var $ = l.length - 1; $ > 0; $ -= 1)
-                    for (var I = !0; S(l[$] - l[$ - 1]) && I;) {
+                    for (var z = !0; S(l[$] - l[$ - 1]) && z;) {
                         var X = v(l, -1, $ - 1);
-                        l[$ - 1] = X.value, I = X.changed
+                        l[$ - 1] = X.value, z = X.changed
                     }
                 for (var j = 0; j < l.length - 1; j += 1)
                     for (var V = !0; S(l[j + 1] - l[j]) && V;) {
@@ -744,12 +744,12 @@ var sa = r.forwardRef(function(e, t) {
         m = e.classNames,
         c = e.styles,
         E = e.id,
-        g = e.disabled,
-        v = g === void 0 ? !1 : g,
+        f = e.disabled,
+        v = f === void 0 ? !1 : f,
         S = e.keyboard,
         y = S === void 0 ? !0 : S,
         b = e.autoFocus,
-        f = e.onFocus,
+        g = e.onFocus,
         s = e.onBlur,
         a = e.min,
         d = a === void 0 ? 0 : a,
@@ -764,15 +764,15 @@ var sa = r.forwardRef(function(e, t) {
         p = e.onChange,
         k = e.onBeforeChange,
         $ = e.onAfterChange,
-        I = e.onChangeComplete,
+        z = e.onChangeComplete,
         X = e.allowCross,
         j = X === void 0 ? !0 : X,
         V = e.pushable,
         T = V === void 0 ? !1 : V,
         ye = e.reverse,
         te = e.vertical,
-        fe = e.included,
-        de = fe === void 0 ? !0 : fe,
+        ge = e.included,
+        de = ge === void 0 ? !0 : ge,
         ae = e.startPoint,
         ke = e.trackStyle,
         J = e.handleStyle,
@@ -829,9 +829,9 @@ var sa = r.forwardRef(function(e, t) {
             })
         }, [A]),
         Qe = la(le, xe, Me, Z, j, G),
-        ze = ie(Qe, 2),
-        Fe = ze[0],
-        We = ze[1],
+        Ie = ie(Qe, 2),
+        Fe = Ie[0],
+        We = Ie[1],
         Xe = At(_, {
             value: B
         }),
@@ -843,22 +843,22 @@ var sa = r.forwardRef(function(e, t) {
                 h = ie(O, 1),
                 P = h[0],
                 F = P === void 0 ? le : P,
-                z = Te === null ? [] : [F];
+                I = Te === null ? [] : [F];
             if (H) {
-                if (z = we(O), D || Te === void 0) {
+                if (I = we(O), D || Te === void 0) {
                     var Ne = D >= 0 ? D + 1 : 2;
-                    for (z = z.slice(0, Ne); z.length < Ne;) {
+                    for (I = I.slice(0, Ne); I.length < Ne;) {
                         var Re;
-                        z.push((Re = z[z.length - 1]) !== null && Re !== void 0 ? Re : le)
+                        I.push((Re = I[I.length - 1]) !== null && Re !== void 0 ? Re : le)
                     }
                 }
-                z.sort(function(De, Oe) {
+                I.sort(function(De, Oe) {
                     return De - Oe
                 })
             }
-            return z.forEach(function(De, Oe) {
-                z[Oe] = Fe(De)
-            }), z
+            return I.forEach(function(De, Oe) {
+                I[Oe] = Fe(De)
+            }), I
         }, [Te, H, le, D, Fe]),
         qe = function(h) {
             return H ? h : h[0]
@@ -872,7 +872,7 @@ var sa = r.forwardRef(function(e, t) {
         lt = Je(function(O) {
             O && ne.current.hideHelp();
             var h = qe(ee);
-            $ == null || $(h), Ct(!$, "[rc-slider] `onAfterChange` is deprecated. Please use `onChangeComplete` instead."), I == null || I(h)
+            $ == null || $(h), Ct(!$, "[rc-slider] `onAfterChange` is deprecated. Please use `onChangeComplete` instead."), z == null || z(h)
         }),
         Rt = function(h) {
             if (!(v || !Y || ee.length <= Ce)) {
@@ -892,40 +892,40 @@ var sa = r.forwardRef(function(e, t) {
         ct = function(h, P) {
             if (!v) {
                 var F = we(ee),
-                    z = 0,
+                    I = 0,
                     Ne = 0,
                     Re = xe - le;
                 ee.forEach(function(_e, Ve) {
                     var bt = Math.abs(h - _e);
-                    bt <= Re && (Re = bt, z = Ve), _e < h && (Ne = Ve)
+                    bt <= Re && (Re = bt, I = Ve), _e < h && (Ne = Ve)
                 });
-                var De = z;
-                Y && Re !== 0 && (!oe || ee.length < oe) ? (F.splice(Ne + 1, 0, h), De = Ne + 1) : F[z] = h, H && !ee.length && D === void 0 && F.push(h);
+                var De = I;
+                Y && Re !== 0 && (!oe || ee.length < oe) ? (F.splice(Ne + 1, 0, h), De = Ne + 1) : F[I] = h, H && !ee.length && D === void 0 && F.push(h);
                 var Oe = qe(F);
                 if (k == null || k(Oe), Ke(F), P) {
-                    var je, Ie;
-                    (je = document.activeElement) === null || je === void 0 || (Ie = je.blur) === null || Ie === void 0 || Ie.call(je), ne.current.focus(De), st(P, De, F)
-                } else $ == null || $(Oe), Ct(!$, "[rc-slider] `onAfterChange` is deprecated. Please use `onChangeComplete` instead."), I == null || I(Oe)
+                    var je, ze;
+                    (je = document.activeElement) === null || je === void 0 || (ze = je.blur) === null || ze === void 0 || ze.call(je), ne.current.focus(De), st(P, De, F)
+                } else $ == null || $(Oe), Ct(!$, "[rc-slider] `onAfterChange` is deprecated. Please use `onChangeComplete` instead."), z == null || z(Oe)
             }
         },
         wt = function(h) {
             h.preventDefault();
             var P = He.current.getBoundingClientRect(),
                 F = P.width,
-                z = P.height,
+                I = P.height,
                 Ne = P.left,
                 Re = P.top,
                 De = P.bottom,
                 Oe = P.right,
                 je = h.clientX,
-                Ie = h.clientY,
+                ze = h.clientY,
                 _e;
             switch (Be) {
                 case "btt":
-                    _e = (De - Ie) / z;
+                    _e = (De - ze) / I;
                     break;
                 case "ttb":
-                    _e = (Ie - Re) / z;
+                    _e = (ze - Re) / I;
                     break;
                 case "rtl":
                     _e = (Oe - je) / F;
@@ -959,13 +959,13 @@ var sa = r.forwardRef(function(e, t) {
         vt = Je(function(O, h) {
             st(O, h), k == null || k(qe(ee))
         }),
-        gt = it !== -1;
+        ft = it !== -1;
     r.useEffect(function() {
-        if (!gt) {
+        if (!ft) {
             var O = ee.lastIndexOf(Ot);
             ne.current.focus(O)
         }
-    }, [gt]);
+    }, [ft]);
     var Ye = r.useMemo(function() {
             return we(Ze).sort(function(O, h) {
                 return O - h
@@ -974,9 +974,9 @@ var sa = r.forwardRef(function(e, t) {
         Tt = r.useMemo(function() {
             return H ? [Ye[0], Ye[Ye.length - 1]] : [le, Ye[0]]
         }, [Ye, H, le]),
-        ft = ie(Tt, 2),
-        mt = ft[0],
-        ht = ft[1];
+        gt = ie(Tt, 2),
+        mt = gt[0],
+        ht = gt[1];
     r.useImperativeHandle(t, function() {
         return {
             focus: function() {
@@ -1016,12 +1016,12 @@ var sa = r.forwardRef(function(e, t) {
         value: Nt
     }, r.createElement("div", {
         ref: He,
-        className: ge(n, i, Se(Se(Se(Se({}, "".concat(n, "-disabled"), v), "".concat(n, "-vertical"), te), "".concat(n, "-horizontal"), !te), "".concat(n, "-with-marks"), Z.length)),
+        className: fe(n, i, Se(Se(Se(Se({}, "".concat(n, "-disabled"), v), "".concat(n, "-vertical"), te), "".concat(n, "-horizontal"), !te), "".concat(n, "-with-marks"), Z.length)),
         style: u,
         onMouseDown: wt,
         id: E
     }, r.createElement("div", {
-        className: ge("".concat(n, "-rail"), m == null ? void 0 : m.rail),
+        className: fe("".concat(n, "-rail"), m == null ? void 0 : m.rail),
         style: K(K({}, w), c == null ? void 0 : c.rail)
     }), re !== !1 && r.createElement(ra, {
         prefixCls: n,
@@ -1044,7 +1044,7 @@ var sa = r.forwardRef(function(e, t) {
         draggingDelete: Pt,
         onStartMove: vt,
         onOffsetChange: Bt,
-        onFocus: f,
+        onFocus: g,
         onBlur: s,
         handleRender: N,
         activeHandleRender: U,
@@ -1068,14 +1068,14 @@ const ca = r.createContext({}),
             Ge.cancel(c.current), c.current = null
         }
 
-        function g() {
+        function f() {
             c.current = Ge(() => {
                 var v;
                 (v = u.current) === null || v === void 0 || v.forceAlign(), c.current = null
             })
         }
-        return r.useEffect(() => (m ? g() : E(), E), [m, e.title, i]), r.createElement(Gt, Object.assign({
-            ref: It(u, t)
+        return r.useEffect(() => (m ? f() : E(), E), [m, e.title, i]), r.createElement(Gt, Object.assign({
+            ref: zt(u, t)
         }, e, {
             open: m
         }))
@@ -1090,12 +1090,12 @@ const ca = r.createContext({}),
             marginPart: m,
             colorFillContentHover: c,
             handleColorDisabled: E,
-            calc: g,
+            calc: f,
             handleSize: v,
             handleSizeHover: S,
             handleActiveColor: y,
             handleActiveOutlineColor: b,
-            handleLineWidth: f,
+            handleLineWidth: g,
             handleLineWidthHover: s,
             motionDurationMid: a
         } = e;
@@ -1140,7 +1140,7 @@ const ca = r.createContext({}),
                         borderColor: c
                     },
                     [`${t}-handle::after`]: {
-                        boxShadow: `0 0 0 ${ue(f)} ${e.colorPrimaryBorderHover}`
+                        boxShadow: `0 0 0 ${ue(g)} ${e.colorPrimaryBorderHover}`
                     },
                     [`${t}-dot-active`]: {
                         borderColor: e.dotActiveBorderColor
@@ -1158,10 +1158,10 @@ const ca = r.createContext({}),
                     "&::before": {
                         content: '""',
                         position: "absolute",
-                        insetInlineStart: g(f).mul(-1).equal(),
-                        insetBlockStart: g(f).mul(-1).equal(),
-                        width: g(v).add(g(f).mul(2)).equal(),
-                        height: g(v).add(g(f).mul(2)).equal(),
+                        insetInlineStart: f(g).mul(-1).equal(),
+                        insetBlockStart: f(g).mul(-1).equal(),
+                        width: f(v).add(f(g).mul(2)).equal(),
+                        height: f(v).add(f(g).mul(2)).equal(),
                         backgroundColor: "transparent"
                     },
                     "&::after": {
@@ -1172,7 +1172,7 @@ const ca = r.createContext({}),
                         width: v,
                         height: v,
                         backgroundColor: e.colorBgElevated,
-                        boxShadow: `0 0 0 ${ue(f)} ${e.handleColor}`,
+                        boxShadow: `0 0 0 ${ue(g)} ${e.handleColor}`,
                         outline: "0px solid transparent",
                         borderRadius: "50%",
                         cursor: "pointer",
@@ -1187,10 +1187,10 @@ const ca = r.createContext({}),
                     },
                     "&:hover, &:active, &:focus": {
                         "&::before": {
-                            insetInlineStart: g(S).sub(v).div(2).add(s).mul(-1).equal(),
-                            insetBlockStart: g(S).sub(v).div(2).add(s).mul(-1).equal(),
-                            width: g(S).add(g(s).mul(2)).equal(),
-                            height: g(S).add(g(s).mul(2)).equal()
+                            insetInlineStart: f(S).sub(v).div(2).add(s).mul(-1).equal(),
+                            insetBlockStart: f(S).sub(v).div(2).add(s).mul(-1).equal(),
+                            width: f(S).add(f(s).mul(2)).equal(),
+                            height: f(S).add(f(s).mul(2)).equal()
                         },
                         "&::after": {
                             boxShadow: `0 0 0 ${ue(s)} ${y}`,
@@ -1233,7 +1233,7 @@ const ca = r.createContext({}),
                     width: i,
                     height: i,
                     backgroundColor: e.colorBgElevated,
-                    border: `${ue(f)} solid ${e.dotBorderColor}`,
+                    border: `${ue(g)} solid ${e.dotBorderColor}`,
                     borderRadius: "50%",
                     cursor: "pointer",
                     transition: `border-color ${e.motionDurationSlow}`,
@@ -1263,7 +1263,7 @@ const ca = r.createContext({}),
                         cursor: "not-allowed",
                         width: v,
                         height: v,
-                        boxShadow: `0 0 0 ${ue(f)} ${E}`,
+                        boxShadow: `0 0 0 ${ue(g)} ${E}`,
                         insetInlineStart: 0,
                         insetBlockStart: 0
                     },
@@ -1288,18 +1288,18 @@ const ca = r.createContext({}),
             dotSize: u,
             marginFull: m,
             calc: c
-        } = e, E = t ? "paddingBlock" : "paddingInline", g = t ? "width" : "height", v = t ? "height" : "width", S = t ? "insetBlockStart" : "insetInlineStart", y = t ? "top" : "insetInlineStart", b = c(n).mul(3).sub(i).div(2).equal(), f = c(i).sub(n).div(2).equal(), s = t ? {
-            borderWidth: `${ue(f)} 0`,
-            transform: `translateY(${ue(c(f).mul(-1).equal())})`
+        } = e, E = t ? "paddingBlock" : "paddingInline", f = t ? "width" : "height", v = t ? "height" : "width", S = t ? "insetBlockStart" : "insetInlineStart", y = t ? "top" : "insetInlineStart", b = c(n).mul(3).sub(i).div(2).equal(), g = c(i).sub(n).div(2).equal(), s = t ? {
+            borderWidth: `${ue(g)} 0`,
+            transform: `translateY(${ue(c(g).mul(-1).equal())})`
         } : {
-            borderWidth: `0 ${ue(f)}`,
-            transform: `translateX(${ue(e.calc(f).mul(-1).equal())})`
+            borderWidth: `0 ${ue(g)}`,
+            transform: `translateX(${ue(e.calc(g).mul(-1).equal())})`
         };
         return {
             [E]: n,
             [v]: c(n).mul(3).equal(),
             [`${o}-rail`]: {
-                [g]: "100%",
+                [f]: "100%",
                 [v]: n
             },
             [`${o}-track,${o}-tracks`]: {
@@ -1313,13 +1313,13 @@ const ca = r.createContext({}),
                 insetInlineStart: 0,
                 top: 0,
                 [y]: c(n).mul(3).add(t ? 0 : m).equal(),
-                [g]: "100%"
+                [f]: "100%"
             },
             [`${o}-step`]: {
                 insetInlineStart: 0,
                 top: 0,
                 [y]: n,
-                [g]: "100%",
+                [f]: "100%",
                 [v]: n
             },
             [`${o}-dot`]: {
@@ -1351,7 +1351,7 @@ const ca = r.createContext({}),
             })
         }
     },
-    ga = e => {
+    fa = e => {
         const o = e.controlHeightLG / 4,
             n = e.controlHeightSM / 2,
             i = e.lineWidth + 1,
@@ -1379,14 +1379,14 @@ const ca = r.createContext({}),
             trackBgDisabled: e.colorBgContainerDisabled
         }
     },
-    fa = zt("Slider", e => {
+    ga = It("Slider", e => {
         const t = Wt(e, {
             marginPart: e.calc(e.controlHeight).sub(e.controlSize).div(2).equal(),
             marginFull: e.calc(e.controlSize).div(2).equal(),
             marginPartWithMark: e.calc(e.controlHeightLG).sub(e.controlSize).equal()
         });
         return [ua(t), da(t), va(t)]
-    }, ga);
+    }, fa);
 
 function tt() {
     const [e, t] = r.useState(!1), o = r.useRef(null), n = () => {
@@ -1418,12 +1418,12 @@ const Sa = Pe.forwardRef((e, t) => {
         style: m,
         disabled: c,
         tooltipPrefixCls: E,
-        tipFormatter: g,
+        tipFormatter: f,
         tooltipVisible: v,
         getTooltipPopupContainer: S,
         tooltipPlacement: y,
         tooltip: b = {},
-        onChangeComplete: f,
+        onChangeComplete: g,
         classNames: s,
         styles: a
     } = e, d = ma(e, ["prefixCls", "range", "className", "rootClassName", "style", "disabled", "tooltipPrefixCls", "tipFormatter", "tooltipVisible", "getTooltipPopupContainer", "tooltipPlacement", "tooltip", "onChangeComplete", "classNames", "styles"]), {
@@ -1438,16 +1438,16 @@ const Sa = Pe.forwardRef((e, t) => {
         getPopupContainer: D
     } = Ut("slider"), p = Pe.useContext(Yt), k = c ?? p, {
         handleRender: $,
-        direction: I
-    } = Pe.useContext(ca), j = (I || M) === "rtl", [V, T] = tt(), [ye, te] = tt(), fe = Object.assign({}, b), {
+        direction: z
+    } = Pe.useContext(ca), j = (z || M) === "rtl", [V, T] = tt(), [ye, te] = tt(), ge = Object.assign({}, b), {
         open: de,
         placement: ae,
         getPopupContainer: ke,
         prefixCls: J,
         formatter: w
-    } = fe, x = de ?? v, L = (V || ye) && x !== !1, A = ha(w, g), [Q, N] = tt(), U = H => {
-        f == null || f(H), N(!1)
-    }, re = (H, Y) => H || (Y ? j ? "left" : "right" : "top"), se = C("slider", o), [me, he, be] = fa(se), Ee = ge(i, R, _.root, s == null ? void 0 : s.root, u, {
+    } = ge, x = de ?? v, L = (V || ye) && x !== !1, A = ha(w, f), [Q, N] = tt(), U = H => {
+        g == null || g(H), N(!1)
+    }, re = (H, Y) => H || (Y ? j ? "left" : "right" : "top"), se = C("slider", o), [me, he, be] = ga(se), Ee = fe(i, R, _.root, s == null ? void 0 : s.root, u, {
         [`${se}-rtl`]: j,
         [`${se}-lock`]: Q
     }, he, be);
@@ -1468,8 +1468,8 @@ const Sa = Pe.forwardRef((e, t) => {
             } = Y, Ce = H.props;
 
             function oe(G, Z, Qe) {
-                var ze, Fe, We, Xe;
-                Qe && ((Fe = (ze = d)[G]) === null || Fe === void 0 || Fe.call(ze, Z)), (Xe = (We = Ce)[G]) === null || Xe === void 0 || Xe.call(We, Z)
+                var Ie, Fe, We, Xe;
+                Qe && ((Fe = (Ie = d)[G]) === null || Fe === void 0 || Fe.call(Ie, Z)), (Xe = (We = Ce)[G]) === null || Xe === void 0 || Xe.call(We, Z)
             }
             const le = Object.assign(Object.assign({}, Ce), {
                     onMouseEnter: G => {
@@ -1492,7 +1492,7 @@ const Sa = Pe.forwardRef((e, t) => {
                 }),
                 xe = Pe.cloneElement(H, le),
                 Me = (!!x || L) && A !== null;
-            return ve ? xe : Pe.createElement($t, Object.assign({}, fe, {
+            return ve ? xe : Pe.createElement($t, Object.assign({}, ge, {
                 prefixCls: C("tooltip", J ?? E),
                 title: A ? A(Y.value) : "",
                 value: Y.value,
@@ -1511,7 +1511,7 @@ const Sa = Pe.forwardRef((e, t) => {
                     visibility: "hidden"
                 })
             });
-            return Pe.createElement($t, Object.assign({}, fe, {
+            return Pe.createElement($t, Object.assign({}, ge, {
                 prefixCls: C("tooltip", J ?? E),
                 title: A ? A(Y.value) : "",
                 open: A !== null && L,
@@ -1526,12 +1526,12 @@ const Sa = Pe.forwardRef((e, t) => {
         } : void 0,
         Be = Object.assign(Object.assign(Object.assign(Object.assign({}, q.root), B), a == null ? void 0 : a.root), m),
         pe = Object.assign(Object.assign({}, q.tracks), a == null ? void 0 : a.tracks),
-        ce = ge(_.tracks, s == null ? void 0 : s.tracks);
+        ce = fe(_.tracks, s == null ? void 0 : s.tracks);
     return me(Pe.createElement(sa, Object.assign({}, d, {
         classNames: Object.assign({
-            handle: ge(_.handle, s == null ? void 0 : s.handle),
-            rail: ge(_.rail, s == null ? void 0 : s.rail),
-            track: ge(_.track, s == null ? void 0 : s.track)
+            handle: fe(_.handle, s == null ? void 0 : s.handle),
+            rail: fe(_.rail, s == null ? void 0 : s.rail),
+            track: fe(_.track, s == null ? void 0 : s.track)
         }, ce ? {
             tracks: ce
         } : {}),

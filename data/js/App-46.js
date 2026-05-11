@@ -2,20 +2,20 @@ import {
     r as l,
     I as U,
     _ as G,
-    dX as A,
-    dY as Y,
-    dZ as V,
-    cI as X,
+    dW as A,
+    dX as Y,
+    dY as V,
+    cH as X,
     j as t,
-    T as Z,
+    T as J,
     d as o,
-    u as J,
+    u as Z,
     b as ee,
     e as m,
     F as P,
     B as C,
-    A as B,
-    E as te,
+    y as B,
+    z as te,
     D as ae,
     S as se
 } from "./_index.js";
@@ -26,7 +26,7 @@ import {
     F as ne
 } from "./FontAwesomeIcon.js";
 import {
-    A as I
+    A as O
 } from "./AccessibleAnchor.js";
 import {
     C as q
@@ -35,7 +35,7 @@ import {
     g as ie
 } from "./getCloudinaryUrl.js";
 import {
-    S as O
+    S as I
 } from "./index-2.js";
 import {
     a as oe
@@ -50,7 +50,7 @@ import {
     R as de
 } from "./index-13.js";
 import {
-    S as T
+    S as W
 } from "./index-8.js";
 import {
     P as ue
@@ -159,7 +159,7 @@ function pe(e, a, s) {
 const be = e => {
         var a, s, i, r;
         return t.jsxs(t.Fragment, {
-            children: [e.title ? t.jsx(Z, {
+            children: [e.title ? t.jsx(J, {
                 title: e.title
             }) : null, t.jsxs(Pe, {
                 style: (a = e.styles) == null ? void 0 : a.container,
@@ -196,7 +196,7 @@ const be = e => {
     Ne = new Intl.NumberFormat("en", {
         notation: "compact"
     }),
-    N = e => t.jsxs(Le, {
+    N = e => t.jsxs(Fe, {
         children: [t.jsx(ne, {
             name: `far ${e.icon}`
         }), t.jsx("span", {
@@ -207,8 +207,8 @@ const be = e => {
         })]
     }),
     we = e => {
-        const [a, s, i] = J(!1), r = $e(e.image);
-        return t.jsx(I, {
+        const [a, s, i] = Z(!1), r = $e(e.image);
+        return t.jsx(O, {
             to: `/view/${e.id}`,
             style: {
                 textDecoration: "none"
@@ -229,9 +229,9 @@ const be = e => {
                     },
                     children: [t.jsx(Me, {
                         children: e.title
-                    }), t.jsx(Fe, {
+                    }), t.jsx(ze, {
                         children: q(e.creatorName)
-                    }), t.jsxs(O, {
+                    }), t.jsxs(I, {
                         direction: "horizontal",
                         size: 16,
                         style: {
@@ -278,18 +278,18 @@ const be = e => {
   font-weight: ${P.Bold};
   color: ${m.White};
 `,
-    Fe = o.div`
+    ze = o.div`
   font-style: italic;
   color: rgba(255, 255, 255, 0.8);
 `,
-    Le = o.div.attrs({
+    Fe = o.div.attrs({
         className: "flex vc"
     })`
   font-size: 12px;
   color: rgba(255, 255, 255, 0.8);
 `;
 var R = (e => (e.relevant = "relevant", e.recent = "recent", e))(R || {});
-const ze = e => t.jsxs(O, {
+const Le = e => t.jsxs(I, {
         direction: "vertical",
         size: 10,
         children: [t.jsxs("div", {
@@ -311,7 +311,7 @@ const ze = e => t.jsxs(O, {
         }), t.jsxs("div", {
             children: [t.jsx(w, {
                 children: "Language"
-            }), t.jsx(T, {
+            }), t.jsx(W, {
                 showSearch: !0,
                 placeholder: "All languages",
                 allowClear: !0,
@@ -327,7 +327,7 @@ const ze = e => t.jsxs(O, {
         }), t.jsxs("div", {
             children: [t.jsx(w, {
                 children: "Subject"
-            }), t.jsx(T, {
+            }), t.jsx(W, {
                 showSearch: !0,
                 placeholder: "All subjects",
                 allowClear: !0,
@@ -354,7 +354,7 @@ const ze = e => t.jsxs(O, {
             search: i
         } = e;
         return t.jsxs(qe, {
-            children: [t.jsx(Te, {
+            children: [t.jsx(We, {
                 placeholder: "Search for kits...",
                 autoFocus: !0,
                 value: a,
@@ -362,12 +362,12 @@ const ze = e => t.jsxs(O, {
                 onKeyDown: r => {
                     r.key === "Enter" && i()
                 }
-            }), t.jsx(W, {
+            }), t.jsx(T, {
                 style: {
                     right: 55
                 },
                 children: t.jsx(ue, {
-                    content: t.jsx(ze, {
+                    content: t.jsx(Le, {
                         sort: e.sort,
                         setSort: e.setSort,
                         language: e.language,
@@ -390,7 +390,7 @@ const ze = e => t.jsxs(O, {
                         onClick: i
                     })
                 })
-            }), t.jsx(W, {
+            }), t.jsx(T, {
                 children: t.jsx(C, {
                     shape: "circle",
                     type: "primary",
@@ -406,7 +406,7 @@ const ze = e => t.jsxs(O, {
     })`
   position: relative;
 `,
-    Te = o.input.attrs({
+    We = o.input.attrs({
         className: "maxWidth"
     })`
   border: 2px solid ${m.Black};
@@ -417,17 +417,17 @@ const ze = e => t.jsxs(O, {
     font-style: italic;
   }
 `,
-    W = o.div.attrs({
+    T = o.div.attrs({
         className: "maxHeight flex-center"
     })`
   position: absolute;
   right: 9px;
   top: 0px;
 `,
-    We = () => t.jsxs(t.Fragment, {
+    Te = () => t.jsxs(t.Fragment, {
         children: [t.jsx(Be, {
             children: "Discovery"
-        }), t.jsx(Ie, {
+        }), t.jsx(Oe, {
             children: "Search from our library of over 30,000,000 kits!"
         })]
     }),
@@ -437,14 +437,14 @@ const ze = e => t.jsxs(O, {
   font-weight: ${P.UltraBold};
   margin-bottom: 1px;
 `,
-    Ie = o.div`
+    Oe = o.div`
   font-size: 18px;
   font-style: italic;
   color: rgba(0, 0, 0, 0.9);
   margin-top: -10px;
   margin-bottom: 20px;
 `,
-    Oe = e => pe({
+    Ie = e => pe({
         queryKey: ["search", e.query, e.sort, e.language, e.subject],
         enabled: !!e.query,
         refetchOnMount: !1,
@@ -494,7 +494,7 @@ const ze = e => t.jsxs(O, {
                         marginTop: 5
                     },
                     children: e.error ? "Please try again later. If the issue persists, contact support." : t.jsxs(t.Fragment, {
-                        children: ["Try another search or maybe", " ", t.jsx(I, {
+                        children: ["Try another search or maybe", " ", t.jsx(O, {
                             to: "/create",
                             children: "make your own kit!"
                         })]
@@ -526,7 +526,7 @@ const ze = e => t.jsxs(O, {
             hasNextPage: v,
             fetchNextPage: S,
             isFetchingNextPage: y
-        } = Oe({
+        } = Ie({
             query: r,
             sort: c,
             language: d,
@@ -535,10 +535,10 @@ const ze = e => t.jsxs(O, {
             data: f,
             error: k,
             isLoading: M
-        } = _e(r), E = l.useMemo(() => r ? x : M, [x, M, r]), F = l.useMemo(() => r ? h : k, [h, k, r]), L = l.useMemo(() => r ? ((g == null ? void 0 : g.pages.flat()) ?? []).map(n => n.data).flat() : f ?? [], [r, g, f]), j = (n, z) => {
+        } = _e(r), E = l.useMemo(() => r ? x : M, [x, M, r]), z = l.useMemo(() => r ? h : k, [h, k, r]), F = l.useMemo(() => r ? ((g == null ? void 0 : g.pages.flat()) ?? []).map(n => n.data).flat() : f ?? [], [r, g, f]), j = (n, L) => {
             i(D => {
                 const $ = Object.fromEntries(D);
-                return z === void 0 ? delete $[n] : $[n] = z, $
+                return L === void 0 ? delete $[n] : $[n] = L, $
             })
         }, H = l.useCallback(() => {
             e !== r && j("q", e || void 0)
@@ -556,11 +556,11 @@ const ze = e => t.jsxs(O, {
             children: t.jsx(se, {
                 size: "large"
             })
-        }) : !L.length || F ? t.jsx(Re, {
-            error: !!F
+        }) : !F.length || z ? t.jsx(Re, {
+            error: !!z
         }) : t.jsxs(t.Fragment, {
             children: [t.jsx(Q, {
-                children: L.map(n => t.jsx(we, {
+                children: F.map(n => t.jsx(we, {
                     id: n._id,
                     title: n.title,
                     image: n.gif,
@@ -599,7 +599,7 @@ const ze = e => t.jsxs(O, {
                     maxWidth: 1350
                 }
             },
-            children: [t.jsx(We, {}), t.jsx(Ae, {
+            children: [t.jsx(Te, {}), t.jsx(Ae, {
                 query: e,
                 setQuery: a,
                 search: H,

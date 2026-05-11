@@ -1,22 +1,22 @@
 import {
     r as o,
     l as E,
-    a5 as P,
-    q as k,
+    a3 as P,
+    n as k,
     a as u,
     j as t,
     e as s,
-    W as q,
+    U as $,
     d as i,
-    S as $,
+    S as q,
     T as B,
     D as I,
-    B as W,
+    B as F,
     F as x,
     h as l
 } from "./_index.js";
 import {
-    v as F
+    v as W
 } from "./EmailStage.js";
 import {
     N as z
@@ -75,7 +75,7 @@ const ft = () => {
                 })
             })
         }, []);
-        const d = m && r && F(r),
+        const d = m && r && W(r),
             C = e => {
                 S(e.target.value)
             },
@@ -103,7 +103,7 @@ const ft = () => {
             },
             y = () => f ? t.jsx("div", {
                 className: "maxWidth hc flex",
-                children: t.jsx($, {})
+                children: t.jsx(q, {})
             }) : t.jsxs(t.Fragment, {
                 children: [t.jsx(B, {
                     title: "New Quote"
@@ -119,7 +119,7 @@ const ft = () => {
                     }), t.jsxs("div", {
                         children: [t.jsx(G, {
                             children: "New Quote"
-                        }), t.jsx(H, {
+                        }), t.jsx(U, {
                             children: "We're so excited to get your group on Gimkit Pro!"
                         })]
                     })]
@@ -150,7 +150,7 @@ const ft = () => {
                         justifyContent: "space-between",
                         marginTop: 5
                     },
-                    children: [t.jsx("div", {}), t.jsx(W, {
+                    children: [t.jsx("div", {}), t.jsx(F, {
                         onClick: n,
                         loading: c,
                         disabled: !d,
@@ -173,7 +173,7 @@ const ft = () => {
   background: ${s.Snow};
   width: 100%;
   color: ${s.Black};
-  font-family: ${q.SFPro};
+  font-family: ${$.SFPro};
 `,
     L = i.div`
   width: 100%;
@@ -189,7 +189,7 @@ const ft = () => {
   font-weight: ${x.UltraBold};
   margin-bottom: -10px;
 `,
-    H = i.p`
+    U = i.p`
   font-size: 17px;
   margin-bottom: 0px;
 `,

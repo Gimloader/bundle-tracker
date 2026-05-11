@@ -1,23 +1,23 @@
 import {
     r as f,
-    aD as $e,
+    aB as $e,
     _ as re,
-    z as p,
-    by as fn,
-    dh as St,
-    aM as dn,
-    bh as pn,
-    bJ as Et,
-    bK as hn,
+    x as p,
+    bx as fn,
+    dg as St,
+    aK as dn,
+    bg as pn,
+    bI as Et,
+    bJ as hn,
     j as M,
     d as _e,
-    az as mn,
-    ay as gn,
+    ax as mn,
+    aw as gn,
     m as vn,
-    a_ as yn,
+    aZ as yn,
     o as Q,
-    dN as bn,
-    b5 as X
+    dM as bn,
+    b4 as X
 } from "./_index.js";
 import {
     g as be
@@ -31,7 +31,7 @@ import {
 import {
     w as je,
     c as se,
-    a as ze
+    a as Ce
 } from "./clsx.m.js";
 import {
     c as wn,
@@ -44,10 +44,10 @@ import {
     T as Mn
 } from "./Tooltip.js";
 import {
-    h as zt
+    h as Ct
 } from "./howler.js";
 import {
-    _ as Ct
+    _ as zt
 } from "./inheritsLoose.js";
 var Sn = function(e) {
         return {
@@ -89,7 +89,7 @@ var Sn = function(e) {
             }
         }
     },
-    Dt = f.forwardRef(function(e, r) {
+    It = f.forwardRef(function(e, r) {
         var n = e.children,
             o = e.classes,
             i = e.className,
@@ -101,11 +101,11 @@ var Sn = function(e) {
             h = u === void 0 ? "medium" : u,
             d = e.htmlColor,
             g = e.titleAccess,
-            D = e.viewBox,
-            S = D === void 0 ? "0 0 24 24" : D,
+            I = e.viewBox,
+            S = I === void 0 ? "0 0 24 24" : I,
             P = $e(e, ["children", "classes", "className", "color", "component", "fontSize", "htmlColor", "titleAccess", "viewBox"]);
         return f.createElement(c, re({
-            className: se(o.root, i, a !== "inherit" && o["color".concat(ze(a))], h !== "default" && h !== "medium" && o["fontSize".concat(ze(h))]),
+            className: se(o.root, i, a !== "inherit" && o["color".concat(Ce(a))], h !== "default" && h !== "medium" && o["fontSize".concat(Ce(h))]),
             focusable: "false",
             viewBox: S,
             color: d,
@@ -114,10 +114,10 @@ var Sn = function(e) {
             ref: r
         }, P), n, g ? f.createElement("title", null, g) : null)
     });
-Dt.muiName = "SvgIcon";
+It.muiName = "SvgIcon";
 const it = je(Sn, {
     name: "MuiSvgIcon"
-})(Dt);
+})(It);
 
 function En(t, e) {
     var r = function(o, i) {
@@ -151,26 +151,26 @@ function Pn(t, e) {
     }
 }
 
-function zn(t, e) {
+function Cn(t, e) {
     return f.isValidElement(t) && e.indexOf(t.type.muiName) !== -1
 }
 
-function It(t) {
+function Dt(t) {
     return t && t.ownerDocument || document
 }
 
-function Cn(t) {
-    var e = It(t);
+function zn(t) {
+    var e = Dt(t);
     return e.defaultView || window
 }
 
-function Dn(t) {
+function In(t) {
     return function() {
         return null
     }
 }
 
-function In(t, e, r, n, o) {
+function Dn(t, e, r, n, o) {
     return null
 }
 var kn = typeof window < "u" ? f.useLayoutEffect : f.useEffect;
@@ -185,18 +185,18 @@ function ce(t) {
 }
 const $n = Object.freeze(Object.defineProperty({
     __proto__: null,
-    capitalize: ze,
+    capitalize: Ce,
     createChainedFunction: wn,
     createSvgIcon: En,
     debounce: On,
     deprecatedPropType: Pn,
-    isMuiElement: zn,
-    ownerDocument: It,
-    ownerWindow: Cn,
-    requirePropFactory: Dn,
+    isMuiElement: Cn,
+    ownerDocument: Dt,
+    ownerWindow: zn,
+    requirePropFactory: In,
     setRef: xn,
     unstable_useId: Rn,
-    unsupportedProp: In,
+    unsupportedProp: Dn,
     useControlled: Tn,
     useEventCallback: ce,
     useForkRef: Ee,
@@ -293,7 +293,7 @@ var An = Object.values || function(t) {
         }
     },
     Je = function(t) {
-        Ct(e, t);
+        zt(e, t);
 
         function e(n, o) {
             var i;
@@ -364,7 +364,7 @@ function qn(t) {
         h = f.useState(!1),
         d = h[0],
         g = h[1],
-        D = se(e.ripple, e.rippleVisible, n && e.ripplePulsate),
+        I = se(e.ripple, e.rippleVisible, n && e.ripplePulsate),
         S = {
             width: l,
             height: l,
@@ -376,13 +376,13 @@ function qn(t) {
     return Ln(function() {
         if (!a) {
             g(!0);
-            var C = setTimeout(T, u);
+            var z = setTimeout(T, u);
             return function() {
-                clearTimeout(C)
+                clearTimeout(z)
             }
         }
     }, [T, a, u]), f.createElement("span", {
-        className: D,
+        className: I,
         style: S
     }, f.createElement("span", {
         className: P
@@ -479,16 +479,16 @@ var Be = 550,
             d.current && (d.current(), d.current = null)
         }, [c]);
         var g = f.useRef(!1),
-            D = f.useRef(null),
+            I = f.useRef(null),
             S = f.useRef(null),
             P = f.useRef(null);
         f.useEffect(function() {
             return function() {
-                clearTimeout(D.current)
+                clearTimeout(I.current)
             }
         }, []);
         var T = f.useCallback(function(R) {
-                var z = R.pulsate,
+                var C = R.pulsate,
                     V = R.rippleX,
                     G = R.rippleY,
                     Z = R.rippleSize,
@@ -498,22 +498,22 @@ var Be = 550,
                         key: h.current,
                         classes: i,
                         timeout: Be,
-                        pulsate: z,
+                        pulsate: C,
                         rippleX: V,
                         rippleY: G,
                         rippleSize: Z
                     })])
                 }), h.current += 1, d.current = w
             }, [i]),
-            C = f.useCallback(function() {
+            z = f.useCallback(function() {
                 var R = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {},
-                    z = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {},
+                    C = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {},
                     V = arguments.length > 2 ? arguments[2] : void 0,
-                    G = z.pulsate,
+                    G = C.pulsate,
                     Z = G === void 0 ? !1 : G,
-                    w = z.center,
-                    m = w === void 0 ? o || z.pulsate : w,
-                    E = z.fakeElement,
+                    w = C.center,
+                    m = w === void 0 ? o || C.pulsate : w,
+                    E = C.fakeElement,
                     v = E === void 0 ? !1 : E;
                 if (R.type === "mousedown" && g.current) {
                     g.current = !1;
@@ -521,21 +521,21 @@ var Be = 550,
                 }
                 R.type === "touchstart" && (g.current = !0);
                 var x = v ? null : P.current,
-                    I = x ? x.getBoundingClientRect() : {
+                    D = x ? x.getBoundingClientRect() : {
                         width: 0,
                         height: 0,
                         left: 0,
                         top: 0
                     },
                     j, N, W;
-                if (m || R.clientX === 0 && R.clientY === 0 || !R.clientX && !R.touches) j = Math.round(I.width / 2), N = Math.round(I.height / 2);
+                if (m || R.clientX === 0 && R.clientY === 0 || !R.clientX && !R.touches) j = Math.round(D.width / 2), N = Math.round(D.height / 2);
                 else {
                     var oe = R.touches ? R.touches[0] : R,
                         J = oe.clientX,
                         K = oe.clientY;
-                    j = Math.round(J - I.left), N = Math.round(K - I.top)
+                    j = Math.round(J - D.left), N = Math.round(K - D.top)
                 }
-                if (m) W = Math.sqrt((2 * Math.pow(I.width, 2) + Math.pow(I.height, 2)) / 3), W % 2 === 0 && (W += 1);
+                if (m) W = Math.sqrt((2 * Math.pow(D.width, 2) + Math.pow(D.height, 2)) / 3), W % 2 === 0 && (W += 1);
                 else {
                     var Y = Math.max(Math.abs((x ? x.clientWidth : 0) - j), j) * 2 + 2,
                         H = Math.max(Math.abs((x ? x.clientHeight : 0) - N), N) * 2 + 2;
@@ -549,7 +549,7 @@ var Be = 550,
                         rippleSize: W,
                         cb: V
                     })
-                }, D.current = setTimeout(function() {
+                }, I.current = setTimeout(function() {
                     S.current && (S.current(), S.current = null)
                 }, Fn)) : T({
                     pulsate: Z,
@@ -560,28 +560,28 @@ var Be = 550,
                 })
             }, [o, T]),
             $ = f.useCallback(function() {
-                C({}, {
+                z({}, {
                     pulsate: !0
                 })
-            }, [C]),
-            _ = f.useCallback(function(R, z) {
-                if (clearTimeout(D.current), R.type === "touchend" && S.current) {
-                    R.persist(), S.current(), S.current = null, D.current = setTimeout(function() {
-                        _(R, z)
+            }, [z]),
+            _ = f.useCallback(function(R, C) {
+                if (clearTimeout(I.current), R.type === "touchend" && S.current) {
+                    R.persist(), S.current(), S.current = null, I.current = setTimeout(function() {
+                        _(R, C)
                     });
                     return
                 }
                 S.current = null, u(function(V) {
                     return V.length > 0 ? V.slice(1) : V
-                }), d.current = z
+                }), d.current = C
             }, []);
         return f.useImperativeHandle(r, function() {
             return {
                 pulsate: $,
-                start: C,
+                start: z,
                 stop: _
             }
-        }, [$, C, _]), f.createElement("span", re({
+        }, [$, z, _]), f.createElement("span", re({
             className: se(i.root, l),
             ref: P
         }, a), f.createElement(Je, {
@@ -639,15 +639,15 @@ var Qn = {
             h = u === void 0 ? "button" : u,
             d = e.disabled,
             g = d === void 0 ? !1 : d,
-            D = e.disableRipple,
-            S = D === void 0 ? !1 : D,
+            I = e.disableRipple,
+            S = I === void 0 ? !1 : I,
             P = e.disableTouchRipple,
             T = P === void 0 ? !1 : P,
-            C = e.focusRipple,
-            $ = C === void 0 ? !1 : C,
+            z = e.focusRipple,
+            $ = z === void 0 ? !1 : z,
             _ = e.focusVisibleClassName,
             R = e.onBlur,
-            z = e.onClick,
+            C = e.onClick,
             V = e.onFocus,
             G = e.onFocusVisible,
             Z = e.onKeyDown,
@@ -656,7 +656,7 @@ var Qn = {
             E = e.onMouseLeave,
             v = e.onMouseUp,
             x = e.onTouchEnd,
-            I = e.onTouchMove,
+            D = e.onTouchMove,
             j = e.onTouchStart,
             N = e.onDragLeave,
             W = e.tabIndex,
@@ -705,7 +705,7 @@ var Qn = {
             }),
             Kt = ie("start", j),
             Yt = ie("stop", x),
-            Xt = ie("stop", I),
+            Xt = ie("stop", D),
             Gt = ie("stop", function(b) {
                 O && (te(b), L(!1)), R && R(b)
             }, !1),
@@ -720,12 +720,12 @@ var Qn = {
             en = ce(function(b) {
                 $ && !Ne.current && O && k.current && b.key === " " && (Ne.current = !0, b.persist(), k.current.stop(b, function() {
                     k.current.start(b)
-                })), b.target === b.currentTarget && Ve() && b.key === " " && b.preventDefault(), Z && Z(b), b.target === b.currentTarget && Ve() && b.key === "Enter" && !g && (b.preventDefault(), z && z(b))
+                })), b.target === b.currentTarget && Ve() && b.key === " " && b.preventDefault(), Z && Z(b), b.target === b.currentTarget && Ve() && b.key === "Enter" && !g && (b.preventDefault(), C && C(b))
             }),
             tn = ce(function(b) {
                 $ && b.key === " " && k.current && O && !b.defaultPrevented && (Ne.current = !1, b.persist(), k.current.stop(b, function() {
                     k.current.pulsate(b)
-                })), w && w(b), z && b.target === b.currentTarget && Ve() && b.key === " " && !b.defaultPrevented && z(b)
+                })), w && w(b), C && b.target === b.currentTarget && Ve() && b.key === " " && !b.defaultPrevented && C(b)
             }),
             pe = h;
         pe === "button" && H.href && (pe = "a");
@@ -744,7 +744,7 @@ var Qn = {
         return f.createElement(pe, re({
             className: se(s.root, c, O && [s.focusVisible, _], g && s.disabled),
             onBlur: Gt,
-            onClick: z,
+            onClick: C,
             onFocus: Jt,
             onKeyDown: en,
             onKeyUp: tn,
@@ -878,14 +878,14 @@ var Yn = function(e) {
             h = u === void 0 ? !1 : u,
             d = e.disableFocusRipple,
             g = d === void 0 ? !1 : d,
-            D = e.focusVisibleClassName,
+            I = e.focusVisibleClassName,
             S = e.size,
             P = S === void 0 ? "large" : S,
             T = e.variant,
-            C = T === void 0 ? "circular" : T,
+            z = T === void 0 ? "circular" : T,
             $ = $e(e, ["children", "classes", "className", "color", "component", "disabled", "disableFocusRipple", "focusVisibleClassName", "size", "variant"]);
         return f.createElement(Kn, re({
-            className: se(o.root, i, P !== "large" && o["size".concat(ze(P))], h && o.disabled, C === "extended" && o.extended, {
+            className: se(o.root, i, P !== "large" && o["size".concat(Ce(P))], h && o.disabled, z === "extended" && o.extended, {
                 primary: o.primary,
                 secondary: o.secondary,
                 inherit: o.colorInherit
@@ -893,7 +893,7 @@ var Yn = function(e) {
             component: c,
             disabled: h,
             focusRipple: !g,
-            focusVisibleClassName: se(o.focusVisible, D),
+            focusVisibleClassName: se(o.focusVisible, I),
             ref: r
         }, $), f.createElement("span", {
             className: o.label
@@ -951,10 +951,10 @@ function Qe(t, e) {
 function rr(t) {
     var e = ar();
     return function() {
-        var n = Ce(t),
+        var n = ze(t),
             o;
         if (e) {
-            var i = Ce(this).constructor;
+            var i = ze(this).constructor;
             o = Reflect.construct(n, arguments, i)
         } else o = n.apply(this, arguments);
         return or(this, o)
@@ -982,10 +982,10 @@ function ar() {
     }
 }
 
-function Ce(t) {
-    return Ce = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(r) {
+function ze(t) {
+    return ze = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(r) {
         return r.__proto__ || Object.getPrototypeOf(r)
-    }, Ce(t)
+    }, ze(t)
 }
 
 function lr(t, e) {
@@ -1278,10 +1278,10 @@ function Ke(t, e) {
 function Rr(t) {
     var e = Mr();
     return function() {
-        var n = De(t),
+        var n = Ie(t),
             o;
         if (e) {
-            var i = De(this).constructor;
+            var i = Ie(this).constructor;
             o = Reflect.construct(n, arguments, i)
         } else o = n.apply(this, arguments);
         return Tr(this, o)
@@ -1309,10 +1309,10 @@ function Mr() {
     }
 }
 
-function De(t) {
-    return De = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(r) {
+function Ie(t) {
+    return Ie = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(r) {
         return r.__proto__ || Object.getPrototypeOf(r)
-    }, De(t)
+    }, Ie(t)
 }
 
 function Ae(t, e, r) {
@@ -1408,20 +1408,20 @@ function Xe(t, e) {
     }, Xe(t, e)
 }
 
-function zr(t) {
-    var e = Dr();
+function Cr(t) {
+    var e = Ir();
     return function() {
-        var n = Ie(t),
+        var n = De(t),
             o;
         if (e) {
-            var i = Ie(this).constructor;
+            var i = De(this).constructor;
             o = Reflect.construct(n, arguments, i)
         } else o = n.apply(this, arguments);
-        return Cr(this, o)
+        return zr(this, o)
     }
 }
 
-function Cr(t, e) {
+function zr(t, e) {
     if (e && (Ye(e) === "object" || typeof e == "function")) return e;
     if (e !== void 0) throw new TypeError("Derived constructors may only return object or undefined");
     return ne(t)
@@ -1432,7 +1432,7 @@ function ne(t) {
     return t
 }
 
-function Dr() {
+function Ir() {
     if (typeof Reflect > "u" || !Reflect.construct || Reflect.construct.sham) return !1;
     if (typeof Proxy == "function") return !0;
     try {
@@ -1442,10 +1442,10 @@ function Dr() {
     }
 }
 
-function Ie(t) {
-    return Ie = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(r) {
+function De(t) {
+    return De = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(r) {
         return r.__proto__ || Object.getPrototypeOf(r)
-    }, Ie(t)
+    }, De(t)
 }
 
 function ae(t, e, r) {
@@ -1458,7 +1458,7 @@ function ae(t, e, r) {
 }
 var kt = function(t) {
         Pr(r, t);
-        var e = zr(r);
+        var e = Cr(r);
 
         function r() {
             var n;
@@ -1562,15 +1562,15 @@ var kt = function(t) {
                     h = i.hideZoom,
                     d = i.showRotate,
                     g = i.imageBackgroundColor,
-                    D = g === void 0 ? "black" : g,
+                    I = g === void 0 ? "black" : g,
                     S = this.state,
                     P = S.move,
                     T = S.zoomed,
-                    C = S.rotationDeg;
+                    z = S.rotationDeg;
                 return p.createElement("div", null, p.createElement(sr, {
                     name: "__react_modal_image__lightbox",
                     css: ur({
-                        imageBackgroundColor: D
+                        imageBackgroundColor: I
                     })
                 }), p.createElement("div", {
                     className: "__react_modal_image__modal_container"
@@ -1590,9 +1590,9 @@ var kt = function(t) {
                     className: "__react_modal_image__large_img",
                     src: a || l,
                     style: {
-                        transform: "translate3d(-50%, -50%, 0) translate3d(".concat(P.x, "px, ").concat(P.y, "px, 0) rotate(").concat(C, "deg)"),
-                        WebkitTransform: "translate3d(-50%, -50%, 0) translate3d(".concat(P.x, "px, ").concat(P.y, "px, 0) rotate(").concat(C, "deg)"),
-                        MsTransform: "translate3d(-50%, -50%, 0) translate3d(".concat(P.x, "px, ").concat(P.y, "px, 0) rotate(").concat(C, "deg)")
+                        transform: "translate3d(-50%, -50%, 0) translate3d(".concat(P.x, "px, ").concat(P.y, "px, 0) rotate(").concat(z, "deg)"),
+                        WebkitTransform: "translate3d(-50%, -50%, 0) translate3d(".concat(P.x, "px, ").concat(P.y, "px, 0) rotate(").concat(z, "deg)"),
+                        MsTransform: "translate3d(-50%, -50%, 0) translate3d(".concat(P.x, "px, ").concat(P.y, "px, 0) rotate(").concat(z, "deg)")
                     },
                     handleDoubleClick: this.toggleZoom
                 }), !T && p.createElement(at, {
@@ -1602,9 +1602,9 @@ var kt = function(t) {
                     handleDoubleClick: this.toggleZoom,
                     contextMenu: !l,
                     style: {
-                        transform: "translate3d(-50%, -50%, 0) rotate(".concat(C, "deg)"),
-                        WebkitTransform: "translate3d(-50%, -50%, 0) rotate(".concat(C, "deg)"),
-                        MsTransform: "translate3d(-50%, -50%, 0) rotate(".concat(C, "deg)")
+                        transform: "translate3d(-50%, -50%, 0) rotate(".concat(z, "deg)"),
+                        WebkitTransform: "translate3d(-50%, -50%, 0) rotate(".concat(z, "deg)"),
+                        MsTransform: "translate3d(-50%, -50%, 0) rotate(".concat(z, "deg)")
                     }
                 })), p.createElement(yr, {
                     image: a || l,
@@ -1625,7 +1625,7 @@ var kt = function(t) {
     xe = {},
     lt;
 
-function Ir() {
+function Dr() {
     if (lt) return xe;
     lt = 1, Object.defineProperty(xe, "__esModule", {
         value: !0
@@ -1716,13 +1716,13 @@ function kr() {
             h = !1,
             d, g = -1;
 
-        function D() {
+        function I() {
             !h || !d || (h = !1, d.length ? u = d.concat(u) : g = -1, u.length && S())
         }
 
         function S() {
             if (!h) {
-                var _ = s(D);
+                var _ = s(I);
                 h = !0;
                 for (var R = u.length; R;) {
                     for (d = u, u = []; ++g < R;) d && d[g].run();
@@ -1734,7 +1734,7 @@ function kr() {
         n.nextTick = function(_) {
             var R = new Array(arguments.length - 1);
             if (arguments.length > 1)
-                for (var z = 1; z < arguments.length; z++) R[z - 1] = arguments[z];
+                for (var C = 1; C < arguments.length; C++) R[C - 1] = arguments[C];
             u.push(new P(_, R)), u.length === 1 && !h && s(S)
         };
 
@@ -1757,8 +1757,8 @@ function kr() {
         }, n.umask = function() {
             return 0
         };
-        var C = r.exports;
-        const $ = e(C);
+        var z = r.exports;
+        const $ = e(z);
         t.default = $, t.process = $
     }(We)), We
 }
@@ -1907,7 +1907,7 @@ function Wr() {
         n = T(r),
         o = hn(),
         i = T(o),
-        l = Ir(),
+        l = Dr(),
         a = T(l),
         s = $r(),
         c = T(s),
@@ -1915,8 +1915,8 @@ function Wr() {
         h = T(u),
         d = Vr(),
         g = T(d),
-        D = Nr(),
-        S = T(D),
+        I = Nr(),
+        S = T(I),
         P = Ar();
 
     function T(w) {
@@ -1925,7 +1925,7 @@ function Wr() {
         }
     }
 
-    function C(w, m) {
+    function z(w, m) {
         var E = {};
         for (var v in w) m.indexOf(v) >= 0 || Object.prototype.hasOwnProperty.call(w, v) && (E[v] = w[v]);
         return E
@@ -1952,7 +1952,7 @@ function Wr() {
         }), m && (Object.setPrototypeOf ? Object.setPrototypeOf(w, m) : w.__proto__ = m)
     }
 
-    function z(w, m) {
+    function C(w, m) {
         return w.scrollWidth - 1 <= m
     }
 
@@ -1997,7 +1997,7 @@ function Wr() {
             value: function() {
                 var v = this,
                     x = this.props,
-                    I = x.min,
+                    D = x.min,
                     j = x.max,
                     N = x.mode,
                     W = x.forceSingleModeWidth,
@@ -2022,15 +2022,15 @@ function Wr() {
                     k = N === "multi" ? function() {
                         return V(K, H)
                     } : function() {
-                        return z(K, Y)
+                        return C(K, Y)
                     },
                     de = N === "multi" ? function() {
-                        return z(K, Y)
+                        return C(K, Y)
                     } : function() {
                         return V(K, H)
                     },
                     O = void 0,
-                    L = I,
+                    L = D,
                     U = j;
                 this.setState({
                     ready: !1
@@ -2046,7 +2046,7 @@ function Wr() {
                         })
                     }, q)
                 }, function(q) {
-                    return N === "single" && W || de() ? q() : (L = I, U = O, (0, h.default)(function() {
+                    return N === "single" && W || de() ? q() : (L = D, U = O, (0, h.default)(function() {
                         return L < U
                     }, function(te) {
                         if (ee()) return te(!0);
@@ -2057,7 +2057,7 @@ function Wr() {
                         })
                     }, q))
                 }, function(q) {
-                    if (O = Math.min(L, U), O = Math.max(O, I), O = Math.min(O, j), O = Math.max(O, 0), ee()) return q(!0);
+                    if (O = Math.min(L, U), O = Math.max(O, D), O = Math.min(O, j), O = Math.max(O, 0), ee()) return q(!0);
                     v.setState({
                         fontSize: O
                     }, q)
@@ -2074,13 +2074,13 @@ function Wr() {
             value: function() {
                 var v = this,
                     x = this.props,
-                    I = x.children,
+                    D = x.children,
                     j = x.text,
                     N = x.style;
                 x.min, x.max;
                 var W = x.mode;
                 x.forceWidth, x.forceSingleModeWidth, x.throttle, x.autoResize, x.onReady;
-                var oe = C(x, ["children", "text", "style", "min", "max", "mode", "forceWidth", "forceSingleModeWidth", "throttle", "autoResize", "onReady"]),
+                var oe = z(x, ["children", "text", "style", "min", "max", "mode", "forceWidth", "forceSingleModeWidth", "throttle", "autoResize", "onReady"]),
                     J = this.state,
                     K = J.fontSize,
                     Y = J.ready,
@@ -2100,7 +2100,7 @@ function Wr() {
                         return v._child = k
                     },
                     style: B
-                }, j && typeof I == "function" ? Y ? I(j) : j : I))
+                }, j && typeof D == "function" ? Y ? D(j) : j : D))
             }
         }]), m
     }(n.default.Component);
@@ -2342,7 +2342,7 @@ const y = {
         if ("speechSynthesis" in window && y.readToMe.enabled && !y.readToMe.isCurrentlySpeaking && !y.readToMe.hasPlayedForCurrentQuestion) {
             y.readToMe.isCurrentlySpeaking = !0;
             let e, r;
-            t != null && t.text && (r = new SpeechSynthesisUtterance(t.text), r.voice = await Wt(), r.rate = jt, y.readToMe.speechQuestion = r), t != null && t.audio && (e = new zt.Howl({
+            t != null && t.text && (r = new SpeechSynthesisUtterance(t.text), r.voice = await Wt(), r.rate = jt, y.readToMe.speechQuestion = r), t != null && t.audio && (e = new Ct.Howl({
                 src: [t.audio],
                 onplay: At,
                 onend: t != null && t.text ? () => window.speechSynthesis.speak(r) : () => ye(t)
@@ -2350,7 +2350,7 @@ const y = {
         }
     }, Nt = t => {
         if (!y.readToMe.enabled || y.readToMe.enabled && !y.readToMe.currentlyPlayingQuestionAudio && !y.readToMe.currentlyPlayingAnswerAudio && y.readToMe.hasPlayedForCurrentQuestion) {
-            let e = new zt.Howl({
+            let e = new Ct.Howl({
                 src: [be(t)],
                 onplay: () => At(),
                 onend: () => ye(),
@@ -2483,7 +2483,7 @@ function fo(t) {
     return function(e) {
         var r, n;
         return n = r = function(o) {
-            Ct(i, o);
+            zt(i, o);
 
             function i() {
                 for (var a, s = arguments.length, c = new Array(s), u = 0; u < s; u++) c[u] = arguments[u];
@@ -2729,12 +2729,12 @@ const qt = (t, e) => M.jsx("span", {
             })]
         })
     },
-    zo = t => M.jsx(fe, {
+    Co = t => M.jsx(fe, {
         mode: "multi",
         text: qt(t.allowGoogleTranslate || !1, t.text),
         highlighted: t.highlighted,
         noBold: t.noBold
     });
 export {
-    Kn as B, Po as I, ke as Q, lo as R, zo as T, Oo as a, fe as b, So as c, En as d, Cn as e, On as f, zn as g, Qr as h, Eo as i, Kr as j, qr as l, It as o, qt as p, Br as r, y as s, ce as u
+    Kn as B, Po as I, ke as Q, lo as R, Co as T, Oo as a, fe as b, So as c, En as d, zn as e, On as f, Cn as g, Qr as h, Eo as i, Kr as j, qr as l, Dt as o, qt as p, Br as r, y as s, ce as u
 };

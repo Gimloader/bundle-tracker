@@ -23,7 +23,7 @@ import {
     p as b
 } from "./playSound.js";
 import {
-    at as A
+    ar as A
 } from "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";

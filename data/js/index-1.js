@@ -1,5 +1,5 @@
 import {
-    z as ae,
+    x as ae,
     r as C
 } from "./_index.js";
 var f = [],
@@ -98,7 +98,7 @@ var d = function(e) {
         return !1
     },
     p = typeof window < "u" ? window : {},
-    w = new WeakMap,
+    E = new WeakMap,
     L = /auto|scroll/,
     he = /^tb|vertical/,
     le = /msie|trident/i.test(p.navigator && p.navigator.userAgent),
@@ -115,8 +115,8 @@ var d = function(e) {
         contentRect: new G(0, 0, 0, 0)
     }),
     J = function(e, t) {
-        if (t === void 0 && (t = !1), w.has(e) && !t) return w.get(e);
-        if (U(e)) return w.set(e, H), H;
+        if (t === void 0 && (t = !1), E.has(e) && !t) return E.get(e);
+        if (U(e)) return E.set(e, H), H;
         var r = getComputedStyle(e),
             n = D(e) && e.ownerSVGElement && e.getBBox(),
             i = !le && r.boxSizing === "border-box",
@@ -140,16 +140,16 @@ var d = function(e) {
             ne = i ? _ + m : 0,
             ie = i ? N + y : 0,
             z = n ? n.width : v(r.width) - ne - A,
-            E = n ? n.height : v(r.height) - ie - W,
+            x = n ? n.height : v(r.height) - ie - W,
             oe = z + _ + A + m,
-            se = E + N + W + y,
+            se = x + N + W + y,
             M = d({
-                devicePixelContentBoxSize: h(Math.round(z * devicePixelRatio), Math.round(E * devicePixelRatio), s),
+                devicePixelContentBoxSize: h(Math.round(z * devicePixelRatio), Math.round(x * devicePixelRatio), s),
                 borderBoxSize: h(oe, se, s),
-                contentBoxSize: h(z, E, s),
-                contentRect: new G(b, c, z, E)
+                contentBoxSize: h(z, x, s),
+                contentRect: new G(b, c, z, x)
             });
-        return w.set(e, M), M
+        return E.set(e, M), M
     },
     Y = function(e, t, r) {
         var n = J(e, r),
@@ -216,7 +216,7 @@ var d = function(e) {
             return e()
         })
     },
-    Ee = function(e) {
+    xe = function(e) {
         if (!T) {
             var t = 0,
                 r = document.createTextNode(""),
@@ -231,13 +231,13 @@ var d = function(e) {
         }
         Q.push(e), T()
     },
-    we = function(e) {
-        Ee(function() {
+    Ee = function(e) {
+        xe(function() {
             requestAnimationFrame(e)
         })
     },
     R = 0,
-    xe = function() {
+    we = function() {
         return !!R
     },
     Oe = 250,
@@ -264,12 +264,12 @@ var d = function(e) {
             if (t === void 0 && (t = Oe), !B) {
                 B = !0;
                 var n = X(t);
-                we(function() {
+                Ee(function() {
                     var i = !1;
                     try {
                         i = ge()
                     } finally {
-                        if (B = !1, t = n - X(), !xe()) return;
+                        if (B = !1, t = n - X(), !we()) return;
                         i ? r.run(1e3) : t > 0 ? r.run(t) : r.start()
                     }
                 })
@@ -319,7 +319,7 @@ var d = function(e) {
         }
         return e
     }(),
-    x = new WeakMap,
+    w = new WeakMap,
     $ = function(e, t) {
         for (var r = 0; r < e.length; r += 1)
             if (e[r].target === t) return r;
@@ -329,19 +329,19 @@ var d = function(e) {
         function e() {}
         return e.connect = function(t, r) {
             var n = new Be(t, r);
-            x.set(t, n)
+            w.set(t, n)
         }, e.observe = function(t, r, n) {
-            var i = x.get(t),
+            var i = w.get(t),
                 s = i.observationTargets.length === 0;
             $(i.observationTargets, r) < 0 && (s && f.push(i), i.observationTargets.push(new Te(r, n && n.box)), q(1), k.schedule())
         }, e.unobserve = function(t, r) {
-            var n = x.get(t),
+            var n = w.get(t),
                 i = $(n.observationTargets, r),
                 s = n.observationTargets.length === 1;
             i >= 0 && (s && f.splice(f.indexOf(n), 1), n.observationTargets.splice(i, 1), q(-1))
         }, e.disconnect = function(t) {
             var r = this,
-                n = x.get(t);
+                n = w.get(t);
             n.observationTargets.slice().forEach(function(i) {
                 return r.unobserve(t, i.target)
             }), n.activeTargets.splice(0, n.activeTargets.length)

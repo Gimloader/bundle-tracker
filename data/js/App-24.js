@@ -1,30 +1,30 @@
 import {
     j as e,
     e as c,
-    F as R,
+    F as T,
     d as s,
-    c4 as l,
-    c5 as a,
-    c6 as p,
+    c3 as l,
+    c4 as a,
+    c5 as p,
     B as u,
-    c7 as I,
-    c8 as E,
+    c6 as I,
+    c7 as E,
     D as h,
     C as M,
-    aV as B,
+    aT as B,
     r,
-    Y as D,
-    X as v,
-    ae as O,
+    W as D,
+    V as v,
+    ac as O,
     a as b,
     T as _,
-    W as N,
-    S as F,
+    U as N,
+    S as U,
     h as C,
-    t as G
+    t as F
 } from "./_index.js";
 import {
-    S as L
+    S as G
 } from "./App-4.js";
 import "./Shortcut.js";
 import "./Names.js";
@@ -50,7 +50,7 @@ import "./useWarningOnMountInDevelopment.js";
 import "./index-10.js";
 import "./index-5.js";
 import "./move.js";
-const U = t => e.jsxs("div", {
+const L = t => e.jsxs("div", {
         className: "flex vc flex-column",
         children: [e.jsx("img", {
             src: "/client/img/quote/medal.svg",
@@ -65,7 +65,7 @@ const U = t => e.jsxs("div", {
     }),
     Y = s.h1`
   color: ${c.Black};
-  font-weight: ${R.UltraBold};
+  font-weight: ${T.UltraBold};
   font-size: 50px;
 `,
     z = s.p`
@@ -160,7 +160,7 @@ const U = t => e.jsxs("div", {
         text: "Managing group licenses",
         link: "https://help.gimkit.com/en/article/managing-group-subscriptions-117yzia/"
     }],
-    J = () => e.jsxs(X, {
+    J = () => e.jsxs(K, {
         className: "flex vc flex-column",
         children: [e.jsx(w, {
             children: "📚 Resources"
@@ -189,12 +189,12 @@ const U = t => e.jsxs("div", {
             }), "!"]
         })]
     }),
-    X = s.div`
+    K = s.div`
   text-align: center;
 `,
     w = s.h2`
   font-size: 32px;
-  font-weight: ${R.UltraBold};
+  font-weight: ${T.UltraBold};
   color: ${c.Black};
 `,
     S = s.p`
@@ -203,7 +203,7 @@ const U = t => e.jsxs("div", {
 `,
     d = "Error fetching subscription info. Try refreshing the page. If you continue to see this error, please contact support.",
     Se = () => {
-        const [t, o] = r.useState(!0), [m, x] = r.useState(""), [T, g] = r.useState(""), [P, j] = r.useState(""), [f, y] = r.useState(!1);
+        const [t, o] = r.useState(!0), [m, x] = r.useState(""), [R, g] = r.useState(""), [P, j] = r.useState(""), [f, y] = r.useState(!1);
         r.useEffect(() => {
             D({})
         }, []), r.useEffect(() => {
@@ -233,7 +233,7 @@ const U = t => e.jsxs("div", {
                     success: i => {
                         x(i.paymentMethod), g(i.receiptUrl), j(i.invoiceUrl), y(i.renewal), o(!1)
                     },
-                    error: i => G({
+                    error: i => F({
                         e: i,
                         default: {
                             title: d
@@ -243,10 +243,10 @@ const U = t => e.jsxs("div", {
             }
         }, []);
         const $ = () => e.jsxs(e.Fragment, {
-                children: [e.jsx(U, {
+                children: [e.jsx(L, {
                     isRenewal: f
                 }), e.jsx(h, {}), m === "creditCard" && e.jsx(H, {
-                    receiptLink: T
+                    receiptLink: R
                 }), m === "purchaseOrder" && e.jsx(W, {
                     invoiceLink: P
                 }), e.jsx("div", {
@@ -259,22 +259,22 @@ const U = t => e.jsxs("div", {
             }),
             A = () => t ? e.jsx("div", {
                 className: "maxWidth flex hc",
-                children: e.jsx(F, {})
+                children: e.jsx(U, {})
             }) : $();
         return e.jsxs(e.Fragment, {
             children: [e.jsx(_, {
                 title: "Group License Complete"
-            }), e.jsxs(K, {
+            }), e.jsxs(Q, {
                 className: "flex-column vc",
-                children: [e.jsx(L, {
+                children: [e.jsx(G, {
                     includeSpacer: !0
-                }), e.jsx(Q, {
+                }), e.jsx(X, {
                     children: A()
                 })]
             })]
         })
     },
-    K = s.div`
+    Q = s.div`
   flex: 1;
   background: ${c.Snow};
   width: 100%;
@@ -283,7 +283,7 @@ const U = t => e.jsxs("div", {
   padding: 20px;
   min-height: 900px;
 `,
-    Q = s.div`
+    X = s.div`
   width: 100%;
   max-width: 550px;
 `;

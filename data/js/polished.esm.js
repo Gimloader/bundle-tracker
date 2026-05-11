@@ -1,13 +1,13 @@
 import {
-    by as D,
-    c$ as P,
+    bx as D,
+    cW as P,
     _ as o
 } from "./_index.js";
 import {
-    _ as E
+    _ as W
 } from "./inheritsLoose.js";
 var h = function(r) {
-    E(e, r);
+    W(e, r);
 
     function e(a) {
         var t;
@@ -20,12 +20,12 @@ function T(r) {
     return Math.round(r * 255)
 }
 
-function N(r, e, a) {
+function E(r, e, a) {
     return T(r) + "," + T(e) + "," + T(a)
 }
 
 function F(r, e, a, t) {
-    if (t === void 0 && (t = N), e === 0) return t(a, a, a);
+    if (t === void 0 && (t = E), e === 0) return t(a, a, a);
     var n = (r % 360 + 360) % 360 / 60,
         f = (1 - Math.abs(2 * a - 1)) * e,
         i = f * (1 - Math.abs(n % 2 - 1)),
@@ -36,8 +36,8 @@ function F(r, e, a, t) {
     var g = a - f / 2,
         l = s + g,
         d = u + g,
-        k = b + g;
-    return t(l, d, k)
+        x = b + g;
+    return t(l, d, x)
 }
 var q = {
     aliceblue: "f0f8ff",
@@ -190,7 +190,7 @@ var q = {
     yellowgreen: "9acd32"
 };
 
-function W(r) {
+function N(r) {
     if (typeof r != "string") return r;
     var e = r.toLowerCase();
     return q[e] ? "#" + q[e] : r
@@ -199,14 +199,14 @@ var _ = /^#[a-fA-F0-9]{6}$/,
     B = /^#[a-fA-F0-9]{8}$/,
     G = /^#[a-fA-F0-9]{3}$/,
     J = /^#[a-fA-F0-9]{4}$/,
-    $ = /^rgb\(\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*\)$/i,
+    C = /^rgb\(\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*\)$/i,
     K = /^rgb(?:a)?\(\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*(?:,|\/)\s*([-+]?\d*[.]?\d+[%]?)\s*\)$/i,
     O = /^hsl\(\s*(\d{0,3}[.]?[0-9]+(?:deg)?)\s*(?:,)?\s*(\d{1,3}[.]?[0-9]?)%\s*(?:,)?\s*(\d{1,3}[.]?[0-9]?)%\s*\)$/i,
     Q = /^hsl(?:a)?\(\s*(\d{0,3}[.]?[0-9]+(?:deg)?)\s*(?:,)?\s*(\d{1,3}[.]?[0-9]?)%\s*(?:,)?\s*(\d{1,3}[.]?[0-9]?)%\s*(?:,|\/)\s*([-+]?\d*[.]?\d+[%]?)\s*\)$/i;
 
 function y(r) {
     if (typeof r != "string") throw new h(3);
-    var e = W(r);
+    var e = N(r);
     if (e.match(_)) return {
         red: parseInt("" + e[1] + e[2], 16),
         green: parseInt("" + e[3] + e[4], 16),
@@ -235,7 +235,7 @@ function y(r) {
             alpha: t
         }
     }
-    var n = $.exec(e);
+    var n = C.exec(e);
     if (n) return {
         red: parseInt("" + n[1], 10),
         green: parseInt("" + n[2], 10),
@@ -254,7 +254,7 @@ function y(r) {
             u = parseInt("" + i[2], 10) / 100,
             b = parseInt("" + i[3], 10) / 100,
             g = "rgb(" + F(s, u, b) + ")",
-            l = $.exec(g);
+            l = C.exec(g);
         if (!l) throw new h(4, e, g);
         return {
             red: parseInt("" + l[1], 10),
@@ -264,11 +264,11 @@ function y(r) {
     }
     var d = Q.exec(e.substring(0, 50));
     if (d) {
-        var k = parseInt("" + d[1], 10),
+        var x = parseInt("" + d[1], 10),
             L = parseInt("" + d[2], 10) / 100,
             S = parseInt("" + d[3], 10) / 100,
-            R = "rgb(" + F(k, L, S) + ")",
-            I = $.exec(R);
+            R = "rgb(" + F(x, L, S) + ")",
+            I = C.exec(R);
         if (!I) throw new h(4, e, R);
         return {
             red: parseInt("" + I[1], 10),
@@ -328,19 +328,19 @@ function m(r) {
 var X = function(e) {
         return e.length === 7 && e[1] === e[2] && e[3] === e[4] && e[5] === e[6] ? "#" + e[1] + e[3] + e[5] : e
     },
-    M = X;
+    $ = X;
 
 function v(r) {
     var e = r.toString(16);
     return e.length === 1 ? "0" + e : e
 }
 
-function C(r) {
+function M(r) {
     return v(Math.round(r * 255))
 }
 
 function Y(r, e, a) {
-    return M("#" + C(r) + C(e) + C(a))
+    return $("#" + M(r) + M(e) + M(a))
 }
 
 function j(r, e, a) {
@@ -358,12 +358,12 @@ function V(r, e, a, t) {
 }
 
 function H(r, e, a) {
-    if (typeof r == "number" && typeof e == "number" && typeof a == "number") return M("#" + v(r) + v(e) + v(a));
-    if (typeof r == "object" && e === void 0 && a === void 0) return M("#" + v(r.red) + v(r.green) + v(r.blue));
+    if (typeof r == "number" && typeof e == "number" && typeof a == "number") return $("#" + v(r) + v(e) + v(a));
+    if (typeof r == "object" && e === void 0 && a === void 0) return $("#" + v(r.red) + v(r.green) + v(r.blue));
     throw new h(6)
 }
 
-function x(r, e, a, t) {
+function k(r, e, a, t) {
     if (typeof r == "string" && typeof e == "number") {
         var n = y(r);
         return "rgba(" + n.red + "," + n.green + "," + n.blue + "," + e + ")"
@@ -388,7 +388,7 @@ var ee = function(e) {
 
 function c(r) {
     if (typeof r != "object") throw new h(8);
-    if (re(r)) return x(r);
+    if (re(r)) return k(r);
     if (ee(r)) return H(r);
     if (ne(r)) return V(r);
     if (ae(r)) return Z(r);
@@ -427,7 +427,7 @@ function fe(r, e) {
     }))
 }
 var ie = p(fe),
-    xe = ie;
+    ke = ie;
 
 function se(r, e) {
     if (e === "transparent") return e;
@@ -466,13 +466,13 @@ function pe(r, e, a) {
         g = 1 + u * s,
         l = (b / g + 1) / 2,
         d = 1 - l,
-        k = {
+        x = {
             red: Math.floor(n.red * l + i.red * d),
             green: Math.floor(n.green * l + i.green * d),
             blue: Math.floor(n.blue * l + i.blue * d),
             alpha: n.alpha * parseFloat(r) + i.alpha * (1 - parseFloat(r))
         };
-    return x(k)
+    return k(x)
 }
 var be = p(pe),
     z = be;
@@ -484,12 +484,12 @@ function oe(r, e) {
         n = o({}, a, {
             alpha: w(0, 1, (t * 100 + parseFloat(r) * 100) / 100)
         });
-    return x(n)
+    return k(n)
 }
 p(oe);
 
 function Fe(r) {
-    if (typeof r == "object" && typeof r.red == "number" && typeof r.green == "number" && typeof r.blue == "number") return typeof r.alpha == "number" ? x({
+    if (typeof r == "object" && typeof r.red == "number" && typeof r.green == "number" && typeof r.blue == "number") return typeof r.alpha == "number" ? k({
         red: r.red,
         green: r.green,
         blue: r.blue,
@@ -549,9 +549,9 @@ function ye(r, e) {
         n = o({}, a, {
             alpha: w(0, 1, +(t * 100 - parseFloat(r) * 100).toFixed(2) / 100)
         });
-    return x(n)
+    return k(n)
 }
 p(ye);
 export {
-    xe as a, Fe as b, Ie as c, x as r
+    ke as a, Fe as b, Ie as c, k as r
 };

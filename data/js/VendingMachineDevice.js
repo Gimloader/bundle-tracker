@@ -24,7 +24,7 @@ import {
     d as ht
 } from "./FixSpinePlugin.js";
 import {
-    b6 as f
+    b5 as f
 } from "./_index.js";
 import {
     G as l

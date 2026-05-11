@@ -1,22 +1,22 @@
 import {
     r as n,
-    z as U,
+    x as D,
     j as e,
-    a6 as I,
+    a4 as I,
     a as w,
     t as A,
     M as Y,
     e as y,
-    W as C,
+    U as C,
     B as O,
     F as T,
     D as L,
     c as G,
     S as Z,
-    X as H,
-    af as X,
-    a8 as K,
-    a9 as Q,
+    V as H,
+    ad as K,
+    a6 as Q,
+    a7 as X,
     d as b
 } from "./_index.js";
 import {
@@ -73,7 +73,7 @@ function re({
             clientId: t,
             scriptLoadedSuccessfully: u
         }), [t, u]);
-    return U.createElement(z.Provider, {
+    return D.createElement(z.Provider, {
         value: g
     }, l)
 }
@@ -375,22 +375,22 @@ const le = W(() => {
                     }
                 }))
             },
-            $ = i => {
+            V = i => {
                 const {
                     firstName: j,
                     lastName: q,
                     email: P,
-                    emailVerified: D,
+                    emailVerified: U,
                     userToken: R
                 } = i;
-                P && (D && R && (o.googleToken = R), o.email = P, o.firstName = j, o.lastName = q, B())
+                P && (U && R && (o.googleToken = R), o.email = P, o.firstName = j, o.lastName = q, B())
             },
             F = () => {
                 ne.error("Error with Google Authentication. Please try again.")
             },
-            V = i => {
+            $ = i => {
                 ge(i).then(j => {
-                    $(j)
+                    V(j)
                 }).catch(j => {
                     F()
                 })
@@ -410,7 +410,7 @@ const le = W(() => {
                         clientId: u,
                         children: e.jsx(ue, {
                             text: i,
-                            onToken: V,
+                            onToken: $,
                             onError: F
                         })
                     }) : e.jsx(M, {
@@ -460,7 +460,7 @@ const le = W(() => {
                         message: e.jsxs("div", {
                             children: ["No account found.", " ", H("blockRedirect") ? null : e.jsxs(e.Fragment, {
                                 children: ["Click here to ", e.jsx("a", {
-                                    href: X,
+                                    href: K,
                                     children: "sign up."
                                 })]
                             })]
@@ -475,11 +475,11 @@ const le = W(() => {
                             marginTop: 25
                         },
                         children: ["By joining, you agree to our", " ", e.jsx("a", {
-                            href: K,
+                            href: Q,
                             target: "_blank",
                             children: "Privacy Policy"
                         }), " ", "and", " ", e.jsx("a", {
-                            href: Q,
+                            href: X,
                             target: "_blank",
                             children: "Terms Of Service"
                         }), "."]

@@ -1,17 +1,17 @@
 import {
-    ay as g
+    aw as g
 } from "./_index.js";
 var t = {
         exports: {}
     },
-    p = t.exports,
+    w = t.exports,
     u;
 
-function v() {
+function p() {
     return u || (u = 1, function(d, l) {
         (function(f, a) {
             d.exports = a()
-        })(p, function() {
+        })(w, function() {
             return function(f, a) {
                 var s = a.prototype,
                     o = s.format;
@@ -59,8 +59,8 @@ function v() {
         })
     }(t)), t.exports
 }
-var w = v();
-const h = g(w);
+var v = p();
+const h = g(v);
 export {
     h as a
 };

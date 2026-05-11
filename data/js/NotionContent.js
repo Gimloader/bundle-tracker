@@ -1,14 +1,14 @@
 import {
     r as X,
-    aC as Wt,
-    dh as gn,
-    z as M,
+    aA as Wt,
+    dg as gn,
+    x as M,
     j as n,
-    d_ as Vt,
-    dJ as Ue,
+    dZ as Vt,
+    dI as Ue,
     a as yn,
     d as xn,
-    G as bn
+    A as bn
 } from "./_index.js";
 
 function pt(e, {
@@ -157,7 +157,7 @@ const zn = "text/plain",
         return `data:${p.join(";")},${l?r.trim():r}${v}`
     };
 
-function Hn(e, t) {
+function An(e, t) {
     if (t = {
             defaultProtocol: "http",
             normalizeProtocol: !0,
@@ -266,7 +266,7 @@ function Ge(e, t) {
     }
     return ""
 }
-var An = {
+var Hn = {
         header: 0,
         sub_header: 1,
         sub_sub_header: 2,
@@ -285,7 +285,7 @@ var An = {
                         id: l,
                         type: p,
                         text: ve((u = c.properties) == null ? void 0 : u.title),
-                        indentLevel: An[p]
+                        indentLevel: Hn[p]
                     };
                     if (p === "transclusion_container" || p === "column_list" || p === "column") return o(c.content)
                 }
@@ -465,7 +465,7 @@ var qn = (e, t) => {
                     i = Zt(o);
                 t.pathname = `/image/${encodeURIComponent(i)}`, e = t.toString()
             }
-            return Hn(e, {
+            return An(e, {
                 stripProtocol: !0,
                 stripWWW: !0,
                 stripHash: !0,
@@ -1210,8 +1210,8 @@ See: https://github.com/francoischalifour/medium-zoom`)
                 var k = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {},
                     I = k;
                 if (k.background && (z.style.background = k.background), k.container && k.container instanceof Object && (I.container = Ne({}, y.container, k.container)), k.template) {
-                    var A = Ze(k.template) ? k.template : document.querySelector(k.template);
-                    I.template = A
+                    var H = Ze(k.template) ? k.template : document.querySelector(k.template);
+                    I.template = H
                 }
                 return y = Ne({}, y, I), j.forEach(function(T) {
                     T.dispatchEvent(Pe("medium-zoom:update", {
@@ -1226,7 +1226,7 @@ See: https://github.com/francoischalifour/medium-zoom`)
                 return e(Ne({}, y, k))
             },
             c = function() {
-                for (var k = arguments.length, I = Array(k), A = 0; A < k; A++) I[A] = arguments[A];
+                for (var k = arguments.length, I = Array(k), H = 0; H < k; H++) I[H] = arguments[H];
                 var T = I.reduce(function(P, U) {
                     return [].concat(P, Rt(U))
                 }, []);
@@ -1244,7 +1244,7 @@ See: https://github.com/francoischalifour/medium-zoom`)
                 }), L
             },
             p = function() {
-                for (var k = arguments.length, I = Array(k), A = 0; A < k; A++) I[A] = arguments[A];
+                for (var k = arguments.length, I = Array(k), H = 0; H < k; H++) I[H] = arguments[H];
                 d.zoomed && _();
                 var T = I.length > 0 ? I.reduce(function(P, U) {
                     return [].concat(P, Rt(U))
@@ -1260,19 +1260,19 @@ See: https://github.com/francoischalifour/medium-zoom`)
                 }), L
             },
             v = function(k, I) {
-                var A = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
+                var H = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
                 return j.forEach(function(T) {
-                    T.addEventListener("medium-zoom:" + k, I, A)
+                    T.addEventListener("medium-zoom:" + k, I, H)
                 }), E.push({
                     type: "medium-zoom:" + k,
                     listener: I,
-                    options: A
+                    options: H
                 }), L
             },
             m = function(k, I) {
-                var A = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
+                var H = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
                 return j.forEach(function(T) {
-                    T.removeEventListener("medium-zoom:" + k, I, A)
+                    T.removeEventListener("medium-zoom:" + k, I, H)
                 }), E = E.filter(function(T) {
                     return !(T.type === "medium-zoom:" + k && T.listener.toString() === I.toString())
                 }), L
@@ -1280,7 +1280,7 @@ See: https://github.com/francoischalifour/medium-zoom`)
             b = function() {
                 var k = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {},
                     I = k.target,
-                    A = function() {
+                    H = function() {
                         var P = {
                                 width: document.documentElement.clientWidth,
                                 height: document.documentElement.clientHeight,
@@ -1360,17 +1360,17 @@ See: https://github.com/francoischalifour/medium-zoom`)
                             document.body.classList.add("medium-zoom--opened")
                         }), d.original.classList.add("medium-zoom-image--hidden"), d.zoomed.classList.add("medium-zoom-image--opened"), d.zoomed.addEventListener("click", _), d.zoomed.addEventListener("transitionend", P), d.original.getAttribute("data-zoom-src")) {
                         d.zoomedHd = d.zoomed.cloneNode(), d.zoomedHd.removeAttribute("srcset"), d.zoomedHd.removeAttribute("sizes"), d.zoomedHd.removeAttribute("loading"), d.zoomedHd.src = d.zoomed.getAttribute("data-zoom-src"), d.zoomedHd.onerror = function() {
-                            clearInterval(D), console.warn("Unable to reach the zoom image target " + d.zoomedHd.src), d.zoomedHd = null, A()
+                            clearInterval(D), console.warn("Unable to reach the zoom image target " + d.zoomedHd.src), d.zoomedHd = null, H()
                         };
                         var D = setInterval(function() {
-                            d.zoomedHd.complete && (clearInterval(D), d.zoomedHd.classList.add("medium-zoom-image--opened"), d.zoomedHd.addEventListener("click", _), document.body.appendChild(d.zoomedHd), A())
+                            d.zoomedHd.complete && (clearInterval(D), d.zoomedHd.classList.add("medium-zoom-image--opened"), d.zoomedHd.addEventListener("click", _), document.body.appendChild(d.zoomedHd), H())
                         }, 10)
                     } else if (d.original.hasAttribute("srcset")) {
                         d.zoomedHd = d.zoomed.cloneNode(), d.zoomedHd.removeAttribute("sizes"), d.zoomedHd.removeAttribute("loading");
                         var K = d.zoomedHd.addEventListener("load", function() {
-                            d.zoomedHd.removeEventListener("load", K), d.zoomedHd.classList.add("medium-zoom-image--opened"), d.zoomedHd.addEventListener("click", _), document.body.appendChild(d.zoomedHd), A()
+                            d.zoomedHd.removeEventListener("load", K), d.zoomedHd.classList.add("medium-zoom-image--opened"), d.zoomedHd.addEventListener("click", _), document.body.appendChild(d.zoomedHd), H()
                         })
-                    } else A()
+                    } else H()
                 })
             },
             _ = function() {
@@ -1379,8 +1379,8 @@ See: https://github.com/francoischalifour/medium-zoom`)
                         k(L);
                         return
                     }
-                    var I = function A() {
-                        d.original.classList.remove("medium-zoom-image--hidden"), document.body.removeChild(d.zoomed), d.zoomedHd && document.body.removeChild(d.zoomedHd), document.body.removeChild(z), d.zoomed.classList.remove("medium-zoom-image--opened"), d.template && document.body.removeChild(d.template), h = !1, d.zoomed.removeEventListener("transitionend", A), d.original.dispatchEvent(Pe("medium-zoom:closed", {
+                    var I = function H() {
+                        d.original.classList.remove("medium-zoom-image--hidden"), document.body.removeChild(d.zoomed), d.zoomedHd && document.body.removeChild(d.zoomedHd), document.body.removeChild(z), d.zoomed.classList.remove("medium-zoom-image--opened"), d.template && document.body.removeChild(d.template), h = !1, d.zoomed.removeEventListener("transitionend", H), d.original.dispatchEvent(Pe("medium-zoom:closed", {
                             detail: {
                                 zoom: L
                             }
@@ -1464,13 +1464,13 @@ var $o = Object.create,
     en = Object.getOwnPropertyNames,
     Mo = Object.getPrototypeOf,
     Ro = Object.prototype.hasOwnProperty,
-    Ho = (e, t, o) => t in e ? yt(e, t, {
+    Ao = (e, t, o) => t in e ? yt(e, t, {
         enumerable: !0,
         configurable: !0,
         writable: !0,
         value: o
     }) : e[t] = o,
-    Ao = (e, t) => function() {
+    Ho = (e, t) => function() {
         return t || (0, e[en(e)[0]])((t = {
             exports: {}
         }).exports, t), t.exports
@@ -1487,8 +1487,8 @@ var $o = Object.create,
         value: e,
         enumerable: !0
     }), e)),
-    fe = (e, t, o) => Ho(e, typeof t != "symbol" ? t + "" : t, o),
-    nn = Ao({
+    fe = (e, t, o) => Ao(e, typeof t != "symbol" ? t + "" : t, o),
+    nn = Ho({
         "../../node_modules/.pnpm/lodash.throttle@4.1.1/node_modules/lodash.throttle/index.js"(e, t) {
             var o = "Expected a function",
                 i = NaN,
@@ -1510,7 +1510,7 @@ var $o = Object.create,
                 };
 
             function S(d, z, L) {
-                var $, k, I, A, T, P, U = 0,
+                var $, k, I, H, T, P, U = 0,
                     W = !1,
                     D = !1,
                     K = !0;
@@ -1520,11 +1520,11 @@ var $o = Object.create,
                 function F(R) {
                     var ie = $,
                         ae = k;
-                    return $ = k = void 0, U = R, A = d.apply(ae, ie), A
+                    return $ = k = void 0, U = R, H = d.apply(ae, ie), H
                 }
 
                 function ge(R) {
-                    return U = R, T = setTimeout(oe, z), W ? F(R) : A
+                    return U = R, T = setTimeout(oe, z), W ? F(R) : H
                 }
 
                 function me(R) {
@@ -1547,7 +1547,7 @@ var $o = Object.create,
                 }
 
                 function Z(R) {
-                    return T = void 0, K && $ ? F(R) : ($ = k = void 0, A)
+                    return T = void 0, K && $ ? F(R) : ($ = k = void 0, H)
                 }
 
                 function q() {
@@ -1555,7 +1555,7 @@ var $o = Object.create,
                 }
 
                 function ye() {
-                    return T === void 0 ? A : Z(x())
+                    return T === void 0 ? H : Z(x())
                 }
 
                 function ce() {
@@ -1565,7 +1565,7 @@ var $o = Object.create,
                         if (T === void 0) return ge(P);
                         if (D) return T = setTimeout(oe, z), F(P)
                     }
-                    return T === void 0 && (T = setTimeout(oe, z)), A
+                    return T === void 0 && (T = setTimeout(oe, z)), H
                 }
                 return ce.cancel = q, ce.flush = ye, ce
             }
@@ -1652,7 +1652,7 @@ var $o = Object.create,
         const o = an(Yo(e));
         o.promise.then(() => t.update(Re.BufferingEnded())).catch(i => {}), t.promiseCache.buffering = o
     },
-    Ht = (e, t) => o => {
+    At = (e, t) => o => {
         const i = an(Qo(e, t));
         i.promise.then(r => o.update(Re.LoadSuccess({}))).catch(r => {
             r.isCanceled || o.update(new Re.LoadError({
@@ -1678,7 +1678,7 @@ var $o = Object.create,
                         cmd: qo(i.debounceDurationMs)
                     } : {
                         nextState: de.Loading(),
-                        cmd: Ht(i, i.experimentalDecode)
+                        cmd: At(i, i.experimentalDecode)
                     },
                     default: () => ({
                         nextState: o
@@ -1696,7 +1696,7 @@ var $o = Object.create,
                 }),
                 BufferingEnded: () => ({
                     nextState: de.Loading(),
-                    cmd: Ht(i, i.experimentalDecode)
+                    cmd: At(i, i.experimentalDecode)
                 }),
                 LoadSuccess: () => ({
                     nextState: de.LoadSuccess()
@@ -1873,7 +1873,7 @@ function Se({
 }
 var Go = e => Object.keys(e).map(t => `${encodeURIComponent(t)}=${encodeURIComponent(e[t])}`).join("&"),
     xt = [120, 320, 480, 640, 1280],
-    At = {
+    Ht = {
         120: "default",
         320: "mqdefault",
         480: "hqdefault",
@@ -1883,7 +1883,7 @@ var Go = e => Object.keys(e).map(t => `${encodeURIComponent(t)}=${encodeURICompo
     Xo = xt.map(e => `(max-width: ${e}px) ${e}px`).join(", ");
 
 function Qe(e, t = 480, o = "jpg") {
-    return o === "webp" ? `https://i.ytimg.com/vi_webp/${e}/${At[t]}.webp` : `https://i.ytimg.com/vi/${e}/${At[t]}.jpg`
+    return o === "webp" ? `https://i.ytimg.com/vi_webp/${e}/${Ht[t]}.webp` : `https://i.ytimg.com/vi/${e}/${Ht[t]}.jpg`
 }
 
 function Jo(e, t = "jpg") {
@@ -2386,7 +2386,7 @@ function mr({
         children: p
     }) : null
 }
-var He = M.memo(mr);
+var Ae = M.memo(mr);
 
 function pr({
     block: e,
@@ -2408,7 +2408,7 @@ function pr({
         return n.jsxs("span", {
             className: N("notion-page-title", t),
             ...i,
-            children: [n.jsx(He, {
+            children: [n.jsx(Ae, {
                 block: e,
                 defaultIcon: o,
                 className: "notion-page-title-icon"
@@ -2424,7 +2424,7 @@ function pr({
     return (r = e.properties) != null && r.title ? n.jsxs("span", {
         className: N("notion-page-title", t),
         ...i,
-        children: [n.jsx(He, {
+        children: [n.jsx(Ae, {
             block: e,
             defaultIcon: o,
             className: "notion-page-title-icon"
@@ -2437,7 +2437,7 @@ function pr({
         })]
     }) : null
 }
-var Ae = M.memo(pr);
+var He = M.memo(pr);
 
 function Y({
     value: e,
@@ -2469,7 +2469,7 @@ function Y({
                         return w ? n.jsx(r.PageLink, {
                             className: "notion-link",
                             href: s(g),
-                            children: n.jsx(Ae, {
+                            children: n.jsx(He, {
                                 block: w
                             })
                         }) : (console.log('"p" missing block', g), null)
@@ -2498,7 +2498,7 @@ function Y({
                                     ...o,
                                     target: "_blank",
                                     rel: "noopener noreferrer",
-                                    children: n.jsx(Ae, {
+                                    children: n.jsx(He, {
                                         block: x
                                     })
                                 }) : (console.log('"‣" missing block', g, w), null)
@@ -2950,7 +2950,7 @@ var kr = class extends M.Component {
                                         return n.jsxs(u.PageLink, {
                                             className: N("result", "notion-page-link"),
                                             href: p(v.page.id, r.recordMap),
-                                            children: [n.jsx(Ae, {
+                                            children: [n.jsx(He, {
                                                 block: v.page,
                                                 defaultIcon: c
                                             }), ((m = v.highlight) == null ? void 0 : m.html) && n.jsx("div", {
@@ -3036,7 +3036,7 @@ function Nr({
                 children: [n.jsxs(c.pageLink, {
                     className: N("breadcrumb", s.active && "active"),
                     ...u,
-                    children: [s.icon && n.jsx(He, {
+                    children: [s.icon && n.jsx(Ae, {
                         className: "icon",
                         block: s.block
                     }), s.title && n.jsx("span", {
@@ -3337,7 +3337,7 @@ function Rr({
                 }
             }
         }, h = async () => {
-            var C, y, d, z, L, $, k, I, A, T, P;
+            var C, y, d, z, L, $, k, I, H, T, P;
             const U = (C = S.action_ids) == null ? void 0 : C[0];
             if (!U) {
                 console.warn("No actions defined for automation:", g);
@@ -3401,7 +3401,7 @@ function Rr({
                                                 url: F.format.page_cover.startsWith("/") ? `https://www.notion.so${F.format.page_cover}` : F.format.page_cover
                                             }
                                         } : null,
-                                        icon: (A = F.format) != null && A.page_icon ? {
+                                        icon: (H = F.format) != null && H.page_icon ? {
                                             type: "external",
                                             external: {
                                                 url: F.format.page_icon
@@ -3495,7 +3495,7 @@ function Ut(e) {
     return e.map(t => typeof t == "string" ? t : t[0] || "").join("")
 }
 
-function Hr({
+function Ar({
     block: e,
     className: t
 }) {
@@ -3519,7 +3519,7 @@ function Hr({
     })
 }
 
-function Ar(e) {
+function Hr(e) {
     const {
         className: t,
         ...o
@@ -3556,7 +3556,7 @@ function Br({
             href: c,
             target: "_blank",
             rel: "noopener noreferrer",
-            children: [n.jsx(Ar, {
+            children: [n.jsx(Hr, {
                 className: "notion-file-icon"
             }), n.jsxs("div", {
                 className: "notion-file-info",
@@ -3726,7 +3726,7 @@ var Dt = {},
     Ft = {};
 
 function qr(e) {
-    var t, o, i, r, a, s, l, u, c, p, v, m, b, _, g, w, x, S, j, E, h, C, y, d, z, L, $, k, I, A, T, P, U, W, D, K, F, ge, me, pe, oe;
+    var t, o, i, r, a, s, l, u, c, p, v, m, b, _, g, w, x, S, j, E, h, C, y, d, z, L, $, k, I, H, T, P, U, W, D, K, F, ge, me, pe, oe;
     const Z = ne(),
         {
             components: q,
@@ -3767,7 +3767,7 @@ function qr(e) {
             if (tt === 0) {
                 const {
                     page_icon: O = Ee,
-                    page_cover: H = Oe,
+                    page_cover: A = Oe,
                     page_cover_position: G = Je,
                     page_full_width: Q,
                     page_small_text: re
@@ -3786,7 +3786,7 @@ function qr(e) {
                         le = it(f, R),
                         be = _e && le.length >= Xe,
                         Le = !!((be || Lt) && !Q),
-                        $e = !!(nt || H);
+                        $e = !!(nt || A);
                     return n.jsxs("div", {
                         className: N("notion", "notion-app", ce ? "dark-mode" : "light-mode", B, jt),
                         children: [n.jsx("div", {
@@ -3800,7 +3800,7 @@ function qr(e) {
                                 children: [$e && (nt ?? n.jsx("div", {
                                     className: "notion-page-cover-wrapper",
                                     children: n.jsx(Se, {
-                                        src: ae(H, f),
+                                        src: ae(A, f),
                                         alt: ve(te == null ? void 0 : te.title),
                                         priority: !0,
                                         className: "notion-page-cover",
@@ -3808,7 +3808,7 @@ function qr(e) {
                                     })
                                 })), n.jsxs("main", {
                                     className: N("notion-page", $e ? "notion-page-has-cover" : "notion-page-no-cover", O ? "notion-page-has-icon" : "notion-page-no-icon", xe ? "notion-page-has-image-icon" : "notion-page-has-text-icon", "notion-full-page", Q && "notion-full-width", re && "notion-small-text", wt),
-                                    children: [O && n.jsx(He, {
+                                    children: [O && n.jsx(Ae, {
                                         block: f,
                                         defaultIcon: Ee,
                                         inline: !1
@@ -3853,7 +3853,7 @@ function qr(e) {
                 return n.jsx(q.PageLink, {
                     className: N("notion-page-link", O && `notion-${O}`, B),
                     href: ie(f.id),
-                    children: n.jsx(Ae, {
+                    children: n.jsx(He, {
                         block: f
                     })
                 })
@@ -3864,8 +3864,8 @@ function qr(e) {
         case "header_4": {
             if (!f.properties) return null;
             const O = (r = f.format) == null ? void 0 : r.block_color,
-                H = Ke(f.id),
-                G = ve(f.properties.title) || `Notion Header ${H}`;
+                A = Ke(f.id),
+                G = ve(f.properties.title) || `Notion Header ${A}`;
             let Q = Dt[f.id],
                 re;
             if (Q === void 0) {
@@ -3883,11 +3883,11 @@ function qr(e) {
                 he = N(te && "notion-h notion-h1", ze && "notion-h notion-h2", ue && "notion-h notion-h3", Ce && "notion-h notion-h4", O && `notion-${O}`, re, B),
                 xe = n.jsxs("span", {
                     children: [n.jsx("div", {
-                        id: H,
+                        id: A,
                         className: "notion-header-anchor"
                     }), !((a = f.format) != null && a.toggleable) && n.jsx("a", {
                         className: "notion-hash-link",
-                        href: `#${H}`,
+                        href: `#${A}`,
                         title: G,
                         children: n.jsx(Vr, {})
                     }), n.jsx("span", {
@@ -3901,19 +3901,19 @@ function qr(e) {
             let le = null;
             return te ? le = n.jsx("h2", {
                 className: he,
-                "data-id": H,
+                "data-id": A,
                 children: xe
             }) : ze ? le = n.jsx("h3", {
                 className: he,
-                "data-id": H,
+                "data-id": A,
                 children: xe
             }) : ue ? le = n.jsx("h4", {
                 className: he,
-                "data-id": H,
+                "data-id": A,
                 children: xe
             }) : le = n.jsx("h5", {
                 className: he,
-                "data-id": H,
+                "data-id": A,
                 children: xe
             }), (s = f.format) != null && s.toggleable ? n.jsxs("details", {
                 className: N("notion-toggle", B),
@@ -3958,7 +3958,7 @@ function qr(e) {
                 } : void 0,
                 children: re
             });
-            let H = null;
+            let A = null;
             const G = f.type !== ((p = V(R.block[f.parent_id])) == null ? void 0 : p.type),
                 Q = Vn(f.id, R.block);
             if (f.content) {
@@ -3968,7 +3968,7 @@ function qr(e) {
                         block: f
                     })
                 }) : null;
-                if (f.type === "bulleted_list") H = n.jsxs(n.Fragment, {
+                if (f.type === "bulleted_list") A = n.jsxs(n.Fragment, {
                     children: [re, n.jsx("ul", {
                         className: N("notion-list", "notion-list-disc", B),
                         children: ee
@@ -3976,7 +3976,7 @@ function qr(e) {
                 });
                 else {
                     const te = Pt(f.id, R.block);
-                    H = n.jsxs(n.Fragment, {
+                    A = n.jsxs(n.Fragment, {
                         children: [re, n.jsx("ol", {
                             className: N("notion-list", "notion-list-numbered", B),
                             style: {
@@ -3986,13 +3986,13 @@ function qr(e) {
                         })]
                     })
                 }
-            } else H = f.properties ? n.jsx("li", {
+            } else A = f.properties ? n.jsx("li", {
                 children: n.jsx(Y, {
                     value: f.properties.title,
                     block: f
                 })
             }) : null;
-            return G ? O(H, Q) : H
+            return G ? O(A, Q) : A
         }
         case "embed":
             return n.jsx(q.Embed, {
@@ -4023,7 +4023,7 @@ function qr(e) {
                 className: B
             });
         case "audio":
-            return n.jsx(Hr, {
+            return n.jsx(Ar, {
                 block: f,
                 className: B
             });
@@ -4049,10 +4049,10 @@ function qr(e) {
             });
         case "column": {
             const O = "min(32px, 4vw)",
-                H = ((b = f.format) == null ? void 0 : b.column_ratio) || .5,
+                A = ((b = f.format) == null ? void 0 : b.column_ratio) || .5,
                 G = V(R.block[f.parent_id]),
                 te = {
-                    width: `calc((100% - (${(((_=G==null?void 0:G.content)==null?void 0:_.length)||Math.max(2,Math.ceil(1/H)))-1} * ${O})) * ${H})`
+                    width: `calc((100% - (${(((_=G==null?void 0:G.content)==null?void 0:_.length)||Math.max(2,Math.ceil(1/A)))-1} * ${O})) * ${A})`
                 };
             return n.jsxs(n.Fragment, {
                 children: [n.jsx("div", {
@@ -4089,7 +4089,7 @@ function qr(e) {
                 className: B
             }) : n.jsxs("div", {
                 className: N("notion-callout", ((w = f.format) == null ? void 0 : w.block_color) && `notion-${(x=f.format)==null?void 0:x.block_color}_co`, B),
-                children: [n.jsx(He, {
+                children: [n.jsx(Ae, {
                     block: f,
                     hideDefaultIcon: !0
                 }), n.jsxs("div", {
@@ -4104,9 +4104,9 @@ function qr(e) {
             if (!f.properties) return null;
             const O = f.properties.link;
             if (!O || !((j = O[0]) != null && j[0])) return null;
-            let H = ve(f.properties.title);
-            if (H || (H = ve(O)), H && H.startsWith("http")) try {
-                H = new URL(H).hostname
+            let A = ve(f.properties.title);
+            if (A || (A = ve(O)), A && A.startsWith("http")) try {
+                A = new URL(A).hostname
             } catch {}
             return n.jsx("div", {
                 className: "notion-row",
@@ -4116,11 +4116,11 @@ function qr(e) {
                     className: N("notion-bookmark", ((E = f.format) == null ? void 0 : E.block_color) && `notion-${f.format.block_color}`, B),
                     href: O[0][0],
                     children: [n.jsxs("div", {
-                        children: [H && n.jsx("div", {
+                        children: [A && n.jsx("div", {
                             className: "notion-bookmark-title",
                             children: n.jsx(Y, {
                                 value: [
-                                    [H]
+                                    [A]
                                 ],
                                 block: f
                             })
@@ -4136,7 +4136,7 @@ function qr(e) {
                                 className: "notion-bookmark-link-icon",
                                 children: n.jsx(Se, {
                                     src: ae((d = f.format) == null ? void 0 : d.bookmark_icon, f),
-                                    alt: H
+                                    alt: A
                                 })
                             }), n.jsx("div", {
                                 className: "notion-bookmark-link-text",
@@ -4182,11 +4182,11 @@ function qr(e) {
         case "table_of_contents": {
             const O = Ye(f, R);
             if (!O) return null;
-            const H = it(O, R),
+            const A = it(O, R),
                 G = (I = f.format) == null ? void 0 : I.block_color;
             return n.jsx("div", {
                 className: N("notion-table-of-contents", G && `notion-${G}`, B),
-                children: H.map(Q => n.jsx("a", {
+                children: A.map(Q => n.jsx("a", {
                     href: `#${Ke(Q.id)}`,
                     className: "notion-table-of-contents-item",
                     children: n.jsx("span", {
@@ -4201,7 +4201,7 @@ function qr(e) {
             })
         }
         case "to_do": {
-            const O = ((P = (T = (A = f.properties) == null ? void 0 : A.checked) == null ? void 0 : T[0]) == null ? void 0 : P[0]) === "Yes";
+            const O = ((P = (T = (H = f.properties) == null ? void 0 : H.checked) == null ? void 0 : T[0]) == null ? void 0 : P[0]) === "Yes";
             return n.jsxs("div", {
                 className: N("notion-to-do", B),
                 children: [n.jsxs("div", {
@@ -4234,12 +4234,12 @@ function qr(e) {
             });
         case "alias": {
             const O = (D = (W = f == null ? void 0 : f.format) == null ? void 0 : W.alias_pointer) == null ? void 0 : D.id,
-                H = V(R.block[O]);
-            return H ? n.jsx(q.PageLink, {
+                A = V(R.block[O]);
+            return A ? n.jsx(q.PageLink, {
                 className: N("notion-page-link", O),
                 href: ie(O),
-                children: n.jsx(Ae, {
-                    block: H
+                children: n.jsx(He, {
+                    block: A
                 })
             }) : (console.log('"alias" missing block', O), null)
         }
@@ -4253,15 +4253,15 @@ function qr(e) {
         case "table_row": {
             const O = V(R.block[f.parent_id]);
             if (!O) return null;
-            const H = (K = O.format) == null ? void 0 : K.table_block_column_order,
+            const A = (K = O.format) == null ? void 0 : K.table_block_column_order,
                 G = (F = O.format) == null ? void 0 : F.table_block_column_format,
                 Q = (ge = f.format) == null ? void 0 : ge.block_color,
                 re = ((me = O.format) == null ? void 0 : me.table_block_column_header) === !0,
                 te = ((pe = O.format) == null ? void 0 : pe.table_block_row_header) === !0,
                 ze = re && ((oe = O.content) == null ? void 0 : oe[0]) === f.id;
-            return !O || !H ? null : n.jsx("tr", {
+            return !O || !A ? null : n.jsx("tr", {
                 className: N("notion-simple-table-row", Q && `notion-${Q}`, ze && "notion-simple-table-header-row", B),
-                children: H.map((ue, Ce) => {
+                children: A.map((ue, Ce) => {
                     var he, xe, le;
                     const be = (he = G == null ? void 0 : G[ue]) == null ? void 0 : he.color,
                         Le = te && Ce === 0;

@@ -1,23 +1,23 @@
 import {
     j as e,
-    c4 as s,
-    c5 as c,
-    c6 as l,
+    c3 as s,
+    c4 as c,
+    c5 as l,
     C as r,
     B as n,
-    ca as g,
+    c9 as g,
     F as y,
     T as S,
     D as I,
-    cb as N,
+    ca as N,
     e as $,
     d as m,
     r as o,
-    cc as Q,
-    q as L,
+    cb as Q,
+    n as L,
     a as F,
-    S as W,
-    W as B,
+    S as B,
+    U as W,
     t as E
 } from "./_index.js";
 import {
@@ -36,7 +36,7 @@ import {
     o as O
 } from "./mobxreact.esm.js";
 import {
-    S as z
+    S as U
 } from "./App-4.js";
 import "./context.js";
 import "./Shortcut.js";
@@ -57,7 +57,7 @@ import "./useWarningOnMountInDevelopment.js";
 import "./index-10.js";
 import "./index-5.js";
 import "./move.js";
-const H = t => {
+const z = t => {
         const i = () => {
             g(() => {
                 x(`/group-subscription/pay/${t.quoteId}/po`)
@@ -82,7 +82,7 @@ const H = t => {
     },
     j = t => "https://www.gimkit.com/quote/" + t,
     f = t => "/quote-printable/" + t,
-    M = t => e.jsxs(e.Fragment, {
+    H = t => e.jsxs(e.Fragment, {
         children: [e.jsxs(s, {
             children: [e.jsx("div", {
                 style: {
@@ -111,7 +111,7 @@ const H = t => {
             children: "Download Quote PDF"
         })]
     }),
-    U = t => {
+    M = t => {
         const i = () => {
             D(j(t.quoteId)), A.success("Quote link copied to clipboard.")
         };
@@ -177,11 +177,11 @@ const H = t => {
     V = t => e.jsxs(Y, {
         children: [e.jsx(S, {
             title: `Quote for ${t.name}`
-        }), e.jsx(M, {
+        }), e.jsx(H, {
             name: t.name,
             quoteId: t.id,
             planName: t.planName
-        }), e.jsx(I, {}), e.jsx(H, {
+        }), e.jsx(I, {}), e.jsx(z, {
             converted: t.converted,
             quoteId: t.id,
             isRenewal: t.isRenewal
@@ -189,7 +189,7 @@ const H = t => {
             converted: t.converted,
             quoteId: t.id,
             isRenewal: t.isRenewal
-        }), e.jsx(a, {}), e.jsx(U, {
+        }), e.jsx(a, {}), e.jsx(M, {
             quoteId: t.id
         }), e.jsx(a, {}), e.jsx(G, {
             quoteId: t.id,
@@ -256,9 +256,9 @@ const H = t => {
             })
         }, []), t ? e.jsx("div", {
             className: "hc vc flex maxWidth maxHeight",
-            children: e.jsx(W, {})
+            children: e.jsx(B, {})
         }) : e.jsxs(K, {
-            children: [e.jsx(z, {
+            children: [e.jsx(U, {
                 includeSpacer: !0
             }), e.jsxs(X, {
                 children: [e.jsx(V, {
@@ -281,7 +281,7 @@ const H = t => {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-family: ${B.SFPro};
+  font-family: ${W.SFPro};
 `;
 export {
     qe as

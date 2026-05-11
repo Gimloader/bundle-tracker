@@ -1,6 +1,6 @@
 import {
-    bA as t,
-    di as s
+    bz as t,
+    dh as s
 } from "./_index.js";
 const m = new t("antMoveDownIn", {
         "0%": {

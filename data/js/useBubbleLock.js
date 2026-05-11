@@ -1,16 +1,16 @@
 import {
     r as n,
-    aD as $,
-    aI as w,
-    aB as D,
-    ao as M,
-    aC as g,
+    aB as $,
+    aG as w,
+    az as D,
+    am as M,
+    aA as g,
     _ as j,
-    aF as _,
-    z as B,
-    b9 as m
+    aD as m,
+    x as A,
+    b8 as _
 } from "./_index.js";
-var I = ["prefixCls", "className", "style", "checked", "disabled", "defaultChecked", "type", "title", "onChange"],
+var B = ["prefixCls", "className", "style", "checked", "disabled", "defaultChecked", "type", "title", "onChange"],
     z = n.forwardRef(function(e, a) {
         var r = e.prefixCls,
             c = r === void 0 ? "rc-checkbox" : r,
@@ -24,14 +24,14 @@ var I = ["prefixCls", "className", "style", "checked", "disabled", "defaultCheck
             h = v === void 0 ? "checkbox" : v,
             R = e.title,
             i = e.onChange,
-            E = $(e, I),
+            E = $(e, B),
             s = n.useRef(null),
             p = n.useRef(null),
             P = w(y, {
                 value: x
             }),
             k = D(P, 2),
-            C = k[0],
+            b = k[0],
             N = k[1];
         n.useImperativeHandle(a, function() {
             return {
@@ -47,10 +47,10 @@ var I = ["prefixCls", "className", "style", "checked", "disabled", "defaultCheck
                 nativeElement: p.current
             }
         });
-        var L = M(c, d, g(g({}, "".concat(c, "-checked"), C), "".concat(c, "-disabled"), o)),
+        var L = M(c, d, g(g({}, "".concat(c, "-checked"), b), "".concat(c, "-disabled"), o)),
             S = function(t) {
                 o || ("checked" in e || N(t.target.checked), i == null || i({
-                    target: _(_({}, e), {}, {
+                    target: m(m({}, e), {}, {
                         type: h,
                         checked: t.target.checked
                     }),
@@ -73,20 +73,20 @@ var I = ["prefixCls", "className", "style", "checked", "disabled", "defaultCheck
             ref: s,
             onChange: S,
             disabled: o,
-            checked: !!C,
+            checked: !!b,
             type: h
         })), n.createElement("span", {
             className: "".concat(c, "-inner")
         }))
     });
 
-function A(e) {
-    const a = B.useRef(null),
+function G(e) {
+    const a = A.useRef(null),
         r = () => {
-            m.cancel(a.current), a.current = null
+            _.cancel(a.current), a.current = null
         };
     return [() => {
-        r(), a.current = m(() => {
+        r(), a.current = _(() => {
             a.current = null
         })
     }, u => {
@@ -94,5 +94,5 @@ function A(e) {
     }]
 }
 export {
-    z as C, A as u
+    z as C, G as u
 };
