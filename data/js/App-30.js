@@ -4,54 +4,54 @@ import {
     I as ae,
     _ as le,
     cc as ce,
-    y as W,
+    y as _,
     j as e,
     e as u,
     d as l,
     F as x,
-    C as M,
-    af as D,
+    C as B,
+    af as Y,
     B as k,
     a_ as de,
-    b as j,
+    b as v,
     Y as me,
-    c as g,
-    U as A,
-    a as w,
-    h as N,
+    c as f,
+    U as R,
+    a as y,
+    h as $,
     l as ue,
-    M as $,
+    M as I,
     a4 as xe,
-    t as E,
-    D as C,
+    t as z,
+    D as M,
     q as pe,
     aX as he,
     aa as ge,
-    T as z,
-    S as _,
+    T as L,
+    S as V,
     aT as fe,
-    a$ as Y,
+    a$ as q,
     p as je,
     n as ve,
     cd as be
 } from "./_index.js";
 import {
-    u as V
+    u as Q
 } from "./useQuery.js";
 import {
-    A as y
+    A as b
 } from "./AccessibleAnchor.js";
 import {
     P as ye
 } from "./Paper.js";
 import {
-    T as q
+    T as H
 } from "./index-5.js";
 import {
     R as ke
 } from "./DeleteOutlined.js";
 import {
-    e as Q
+    e as K
 } from "./react-flip-move.es.js";
 import {
     v as we
@@ -60,13 +60,13 @@ import {
     E as Se
 } from "./ErrorMessage.js";
 import {
-    I as L
+    I as F
 } from "./index-3.js";
 import {
-    s as T
+    s as P
 } from "./index-4.js";
 import {
-    N as H
+    N as J
 } from "./NavigateTo.js";
 import {
     T as Ce
@@ -101,7 +101,7 @@ import "./colors.js";
 import "./useWarningOnMountInDevelopment.js";
 import "./index-10.js";
 import "./move.js";
-var Ie = {
+var $e = {
         icon: {
             tag: "svg",
             attrs: {
@@ -118,21 +118,21 @@ var Ie = {
         name: "dollar",
         theme: "outlined"
     },
-    $e = function(s, n) {
+    Ie = function(s, n) {
         return m.createElement(ae, le({}, s, {
             ref: n,
-            icon: Ie
+            icon: $e
         }))
     },
-    Re = m.forwardRef($e);
-const P = new ce,
-    K = ["specific-bulk"],
-    ze = t => V([K, t], () => W({
+    Re = m.forwardRef(Ie);
+const O = new ce,
+    X = ["specific-bulk"],
+    ze = t => Q([X, t], () => _({
         url: "/api/bulk/fetch/" + t
     })),
-    I = t => P.refetchQueries([K, t]),
-    Te = "#388e3c",
-    Ee = "#f44336",
+    N = t => O.refetchQueries([X, t]),
+    Ee = "#388e3c",
+    Te = "#f44336",
     Le = t => {
         const {
             id: s,
@@ -144,7 +144,7 @@ const P = new ce,
             to: `/groups/${s}`,
             children: [e.jsx(Fe, {
                 style: {
-                    background: r ? Te : Ee
+                    background: r ? Ee : Te
                 },
                 children: r ? "Active" : "Inactive"
             }), e.jsx(Oe, {
@@ -154,7 +154,7 @@ const P = new ce,
             }) : null]
         })
     },
-    Pe = l(y).attrs({
+    Pe = l(b).attrs({
         className: "flex-column"
     })`
   padding-top: 0px;
@@ -194,19 +194,19 @@ const P = new ce,
   margin-top: 2px;
   color: rgba(0, 0, 0, 0.9);
 `,
-    Ue = t => e.jsx(J, {
-        children: e.jsxs(X, {
+    Ue = t => e.jsx(Z, {
+        children: e.jsxs(ee, {
             children: [e.jsxs("div", {
                 style: {
                     textAlign: "center"
                 },
                 className: "flex-column flex-center",
-                children: [e.jsxs(Z, {
-                    children: [M, " Groups"]
-                }), e.jsxs(We, {
-                    children: ["Welcome to ", M, " Groups! Below are the group licenses you manage. Click into a license to invite members, add managers, view usage analytics, and more!"]
-                }), e.jsx(y, {
-                    to: D,
+                children: [e.jsxs(te, {
+                    children: [B, " Groups"]
+                }), e.jsxs(De, {
+                    children: ["Welcome to ", B, " Groups! Below are the group licenses you manage. Click into a license to invite members, add managers, view usage analytics, and more!"]
+                }), e.jsx(b, {
+                    to: Y,
                     style: {
                         marginBottom: 30,
                         marginTop: -10
@@ -218,17 +218,17 @@ const P = new ce,
                         children: "Start New Group"
                     })
                 })]
-            }), e.jsx(ee, {
+            }), e.jsx(se, {
                 children: t.bulks.map(s => e.jsx(Le, {
                     id: s.id,
                     name: s.name,
                     isActive: s.isActive,
-                    startDate: j(me(s.id)).format("MMMM Do, YYYY")
+                    startDate: v(me(s.id)).format("MMMM Do, YYYY")
                 }, s.id + "-item"))
             })]
         })
     }),
-    J = l.div.attrs({
+    Z = l.div.attrs({
         className: "flex-column vc"
     })`
   flex: 1;
@@ -236,23 +236,23 @@ const P = new ce,
   padding-bottom: 0px;
   overflow: hidden;
 `,
-    X = l.div.attrs({
+    ee = l.div.attrs({
         className: "flex-column"
     })`
   flex: 1;
   width: 90%;
   max-width: 1200px;
 `,
-    Z = l.div`
+    te = l.div`
   font-size: 54px;
   font-weight: ${x.UltraBold};
 `,
-    We = l.div`
+    De = l.div`
   font-size: 16px;
   margin-bottom: 30px;
   max-width: 700px;
 `,
-    ee = l(ye).attrs({
+    se = l(ye).attrs({
         className: "maxWidth"
     })`
   flex: 1;
@@ -261,9 +261,9 @@ const P = new ce,
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 `,
-    te = t => e.jsx(g, {
+    re = t => e.jsx(f, {
         style: {
-            fontFamily: A.SFPro,
+            fontFamily: R.SFPro,
             color: u.Black,
             marginBottom: 5
         },
@@ -275,7 +275,7 @@ const P = new ce,
             children: [e.jsx("div", {
                 children: t.email
             }), e.jsx("div", {
-                children: e.jsx(q, {
+                children: e.jsx(H, {
                     title: "Remove",
                     children: e.jsx(ke, {
                         onClick: t.remove,
@@ -287,63 +287,63 @@ const P = new ce,
             })]
         })
     }),
-    F = {
-        fontFamily: A.SFPro,
+    G = {
+        fontFamily: R.SFPro,
         color: u.Black
     },
-    De = t => {
+    We = t => {
         const {
             bulk: s,
             bulkId: n
-        } = t, [i, r] = m.useState(""), [o, c] = m.useState(!1), [p, f] = m.useState(null), d = a => {
-            r(a.target.value.toLowerCase()), f(null)
-        }, h = i && we(i), v = () => {
-            h && (c(!0), w({
+        } = t, [i, r] = m.useState(""), [o, c] = m.useState(!1), [p, j] = m.useState(null), d = a => {
+            r(a.target.value.toLowerCase()), j(null)
+        }, h = i && we(i), w = () => {
+            h && (c(!0), y({
                 url: "/api/bulk/add-admin",
                 data: {
                     bulk: n,
                     newAdmin: i
                 },
                 success: () => {
-                    I(n), T.success("Manager added!"), r("")
+                    N(n), P.success("Manager added!"), r("")
                 },
                 error: a => {
                     if (a && a.message && a.message.text && a.message.text === "USER NOT FOUND") {
-                        N({
+                        $({
                             title: "User not found",
                             content: "This user does not exist on Gimkit yet. In order to be an manager for this license, they will need to create a free account first."
                         });
                         return
                     }
-                    f(a)
+                    j(a)
                 },
                 both: () => c(!1)
             }))
-        }, b = a => {
+        }, S = a => {
             if (s.owners.length < 2) {
-                N({
+                $({
                     title: "Cannot remove",
                     content: "Please add another admin before removing yourself"
                 });
                 return
             }
             if (ue().email !== a) {
-                N({
+                $({
                     title: "Cannot remove",
                     content: "Managers can only remove themselves"
                 });
                 return
             }
-            $.confirm({
+            I.confirm({
                 title: "Are you sure you want to remove yourself as a manager?",
                 onOk: () => {
-                    w({
+                    y({
                         url: "/api/bulk/remove-admin",
                         data: {
                             bulk: n
                         },
                         success: () => window.location.reload(),
-                        error: () => N({
+                        error: () => $({
                             title: "Error removing user from license"
                         })
                     })
@@ -351,8 +351,8 @@ const P = new ce,
             })
         };
         return e.jsxs(e.Fragment, {
-            children: [e.jsx(g, {
-                style: F,
+            children: [e.jsx(f, {
+                style: G,
                 children: e.jsxs("div", {
                     children: [e.jsx("div", {
                         style: {
@@ -368,9 +368,9 @@ const P = new ce,
                         children: "Managers can remove members, add other managers, and modify group options"
                     })]
                 })
-            }), e.jsxs(g, {
+            }), e.jsxs(f, {
                 style: {
-                    ...F,
+                    ...G,
                     marginTop: 10,
                     marginBottom: 10
                 },
@@ -380,7 +380,7 @@ const P = new ce,
                         fontSize: 25
                     },
                     children: "Add Manager"
-                }), e.jsx(L, {
+                }), e.jsx(F, {
                     size: "large",
                     placeholder: "Manager email...",
                     style: {
@@ -389,7 +389,7 @@ const P = new ce,
                     },
                     value: i,
                     onChange: d,
-                    onPressEnter: v
+                    onPressEnter: w
                 }), e.jsx(k, {
                     style: {
                         width: "100%",
@@ -398,7 +398,7 @@ const P = new ce,
                     type: "primary",
                     disabled: !h,
                     loading: o,
-                    onClick: v,
+                    onClick: w,
                     children: "Add"
                 }), e.jsx(Se, {
                     error: p,
@@ -406,22 +406,22 @@ const P = new ce,
                         marginTop: 5
                     }
                 })]
-            }), e.jsx(Q, {
+            }), e.jsx(K, {
                 children: s.owners.map(a => e.jsx("div", {
-                    children: e.jsx(te, {
+                    children: e.jsx(re, {
                         email: a,
-                        remove: () => b(a)
+                        remove: () => S(a)
                     })
                 }, "admin-" + a))
             })]
         })
     },
-    se = ["all-bulks"],
-    re = () => V(se, () => W({
+    ne = ["all-bulks"],
+    ie = () => Q(ne, () => _({
         url: "/api/bulk/fetch-all"
     })),
     _e = () => {
-        P.invalidateQueries(se)
+        O.invalidateQueries(ne)
     },
     Ye = t => {
         const {
@@ -429,30 +429,30 @@ const P = new ce,
             bulkId: n
         } = t, [i, r] = m.useState(!1), [o, c] = m.useState(!1), {
             isActive: p,
-            name: f,
+            name: j,
             expiration: d,
             statusText: h
-        } = s, v = () => c(!0), b = () => c(!1), a = B => {
-            w({
+        } = s, w = () => c(!0), S = () => c(!1), a = A => {
+            y({
                 url: "/api/bulk/rename",
                 data: {
                     id: n,
-                    name: B
+                    name: A
                 }
-            }), I(n), _e()
-        }, ne = () => p ? d ? `Expires on ${j.unix(d).format("L")}` : "Paid with credit/debit card" : d && j().isAfter(j.unix(d)) ? `Expired on ${j.unix(d).format("L")}` : "Inactive group license", ie = () => p ? h || "Active" : d && j().isAfter(j.unix(d)) ? "Inactive" : h || "Inactive", oe = () => {
-            r(!0), w({
+            }), N(n), _e()
+        }, g = () => p ? d ? `Expires on ${v.unix(d).format("L")}` : "Paid with credit/debit card" : d && v().isAfter(v.unix(d)) ? `Expired on ${v.unix(d).format("L")}` : "Inactive group license", T = () => p ? h || "Active" : d && v().isAfter(v.unix(d)) ? "Inactive" : h || "Inactive", oe = () => {
+            r(!0), y({
                 url: "/api/quote/createFromRenewal",
                 method: "post",
                 data: {
                     id: n
                 },
-                success: B => {
-                    H(`/quote/${B}`)
+                success: A => {
+                    J(`/quote/${A}`)
                 },
-                error: B => {
-                    E({
-                        e: B,
+                error: A => {
+                    z({
+                        e: A,
                         default: {
                             title: "Error generating a renewal quote. Please try again later"
                         }
@@ -484,25 +484,25 @@ const P = new ce,
                                     fontSize: 34,
                                     cursor: "pointer"
                                 },
-                                onClick: v,
-                                children: e.jsx(q, {
+                                onClick: w,
+                                children: e.jsx(H, {
                                     title: "Rename Group License",
                                     placement: "topLeft",
-                                    children: f
+                                    children: j
                                 })
                             }), e.jsx(Ce, {
                                 style: {
                                     marginLeft: 10
                                 },
                                 color: p ? "green" : "red",
-                                children: ie()
+                                children: T()
                             })]
                         }), e.jsx("div", {
                             style: {
                                 fontSize: 18,
                                 opacity: .8
                             },
-                            children: ne()
+                            children: g()
                         })]
                     }), e.jsx("div", {
                         children: s.allowedToRenew ? e.jsx(k, {
@@ -518,7 +518,7 @@ const P = new ce,
                     type: "error",
                     message: "Group License No Longer Active",
                     description: e.jsxs(e.Fragment, {
-                        children: ["To reactivate this group license,", " ", e.jsx(y, {
+                        children: ["To reactivate this group license,", " ", e.jsx(b, {
                             to: "mailto:groups@gimkit.com",
                             external: !0,
                             children: "contact support."
@@ -530,7 +530,7 @@ const P = new ce,
                     showIcon: !0
                 }), e.jsx(Ve, {
                     open: o,
-                    close: b,
+                    close: S,
                     onNewName: a
                 })]
             })
@@ -540,7 +540,7 @@ const P = new ce,
         const [s, n] = m.useState(""), i = !!s, r = c => n(c.target.value), o = () => {
             i && (t.onNewName(s), t.close())
         };
-        return e.jsx($, {
+        return e.jsx(I, {
             open: t.open,
             closable: !0,
             onCancel: t.close,
@@ -557,7 +557,7 @@ const P = new ce,
                     children: "Rename"
                 })]
             }),
-            children: e.jsx(L, {
+            children: e.jsx(F, {
                 size: "large",
                 style: {
                     width: "100%"
@@ -571,34 +571,34 @@ const P = new ce,
             })
         })
     },
-    R = {
-        fontFamily: A.SFPro,
+    E = {
+        fontFamily: R.SFPro,
         color: u.Black
     },
-    qe = t => e.jsx(g, {
+    qe = t => e.jsx(f, {
         style: {
-            ...R,
+            ...E,
             minWidth: 215,
             marginLeft: 20
         },
         children: e.jsxs("div", {
             className: "flex vc",
-            children: [e.jsx(O, {
+            children: [e.jsx(U, {
                 count: t.maxSeats,
                 description: "total seats"
-            }), e.jsx(C, {
+            }), e.jsx(M, {
                 type: "vertical",
                 style: {
                     marginLeft: 20,
                     marginRight: 20
                 }
-            }), e.jsx(O, {
+            }), e.jsx(U, {
                 count: t.seatsRemaining,
                 description: `${pe("seat",t.seatsRemaining)} remaining`
             })]
         })
     }),
-    O = t => e.jsxs("div", {
+    U = t => e.jsxs("div", {
         className: "flex flex-column vc",
         children: [e.jsx("div", {
             style: {
@@ -620,14 +620,14 @@ const P = new ce,
             bulkId: s,
             bulk: n
         } = t, i = Math.abs(n.maxSeats - n.seats.length), r = o => {
-            w({
+            y({
                 url: "/api/bulk/remove-member",
                 data: {
                     bulk: s,
                     removedMember: o
                 },
-                success: () => I(s),
-                error: c => E({
+                success: () => N(s),
+                error: c => z({
                     e: c,
                     default: {
                         title: "Error removing user from license"
@@ -636,8 +636,8 @@ const P = new ce,
             })
         };
         return e.jsxs(e.Fragment, {
-            children: [e.jsx(g, {
-                style: R,
+            children: [e.jsx(f, {
+                style: E,
                 children: e.jsxs("div", {
                     className: "flex vc",
                     style: {
@@ -655,24 +655,24 @@ const P = new ce,
                                 fontSize: 15,
                                 marginTop: -6
                             },
-                            children: ["Members receive ", M, " Pro covered by this group license"]
+                            children: ["Members receive ", B, " Pro covered by this group license"]
                         })]
                     }), !n.hiddenSeatLimit && e.jsx(qe, {
                         maxSeats: n.maxSeats,
                         seatsRemaining: i
                     })]
                 })
-            }), n.seats.length ? e.jsx(Q, {
+            }), n.seats.length ? e.jsx(K, {
                 style: {
                     marginTop: 10
                 },
                 children: n.seats.map(o => e.jsx("div", {
-                    children: e.jsx(te, {
+                    children: e.jsx(re, {
                         email: o,
                         remove: () => r(o)
                     })
                 }, "member-" + o))
-            }) : e.jsx(g, {
+            }) : e.jsx(f, {
                 className: "maxWidth",
                 style: {
                     marginTop: 10
@@ -683,14 +683,14 @@ const P = new ce,
     },
     He = t => {
         const [s, n] = m.useState(!1), i = (r, o) => {
-            s || (n(!0), w({
+            s || (n(!0), y({
                 url: "/api/bulk/members/import",
                 data: {
                     bulk: t.currentBulk,
                     importedBulk: r
                 },
                 success: () => {
-                    I(t.currentBulk), $.success({
+                    N(t.currentBulk), I.success({
                         title: "Members imported!",
                         content: e.jsxs(e.Fragment, {
                             children: ["All members from ", e.jsx("b", {
@@ -700,7 +700,7 @@ const P = new ce,
                     })
                 },
                 error: c => {
-                    N({
+                    $({
                         title: "Error importing members",
                         content: "Please try again."
                     })
@@ -710,7 +710,7 @@ const P = new ce,
                 }
             }))
         };
-        return e.jsx($, {
+        return e.jsx(I, {
             open: t.visible,
             onCancel: t.close,
             width: 650,
@@ -722,11 +722,11 @@ const P = new ce,
             children: e.jsxs(Ke, {
                 children: [e.jsx(Je, {
                     children: "Import members from which group license?"
-                }), e.jsx(C, {
+                }), e.jsx(M, {
                     style: {
                         margin: "30px 0px"
                     }
-                }), t.otherBulks.map(r => e.jsxs(g, {
+                }), t.otherBulks.map(r => e.jsxs(f, {
                     style: {
                         marginBottom: 10,
                         color: u.Black
@@ -741,7 +741,7 @@ const P = new ce,
                         },
                         children: r.name
                     }), e.jsxs("div", {
-                        children: ["Started", " ", j(he(r.id)).format("MMMM Do, YYYY")]
+                        children: ["Started", " ", v(he(r.id)).format("MMMM Do, YYYY")]
                     })]
                 }, `import-sub-${r.id}`))]
             })
@@ -749,7 +749,7 @@ const P = new ce,
     },
     Ke = l.div`
   color: ${u.Black};
-  font-family: ${A.SFPro};
+  font-family: ${R.SFPro};
 `,
     Je = l.div`
   font-size: 28px;
@@ -757,46 +757,67 @@ const P = new ce,
   line-height: 1;
   margin-top: 20px;
 `,
-    G = {
-        ...R,
+    D = {
+        ...E,
         width: "calc(50% - 4px)",
         flex: 1
     },
-    U = {
+    W = {
         textAlign: "center",
         fontSize: 32
     },
     Xe = t => {
-        const [s, n] = m.useState(!1), i = re().data, {
+        const [s, n] = m.useState(!1), i = ie().data, {
             bulkId: r,
             bulk: o
         } = t, c = `${ge()}/group/join/${r}`, p = () => {
-            Be(c), T.success("Link copied to clipboard!")
-        }, f = () => {
-            w({
+            Be(c), P.success("Link copied to clipboard!")
+        }, j = () => {
+            y({
                 url: "/api/bulk/toggle-join-by-link",
                 method: "post",
                 data: {
                     bulk: r
                 },
                 success: () => {
-                    T.success(`Group is ${o.joinByLinkEnabled?"closed":"open"} to new members!`), I(r)
+                    P.success(`Group is ${o.joinByLinkEnabled?"closed":"open"} to new members!`), N(r)
                 },
-                error: a => E({
-                    e: a,
+                error: g => z({
+                    e: g,
                     default: {
                         title: "Error switching."
                     }
                 })
             })
-        }, d = () => n(!0), h = () => n(!1), v = (i || []).filter(a => a.id !== r), b = !o.joinByLinkEnabled;
+        }, d = () => {
+            const g = o.blockSeatRenewalEmails !== !0;
+            y({
+                url: "/api/bulk/update-block-seat-renewal-emails",
+                data: {
+                    id: r,
+                    blockSeatRenewalEmails: g
+                },
+                success: () => {
+                    I.success({
+                        title: `Renewal emails ${g?"disabled":"enabled"}`,
+                        content: `Members of this group will ${g?"no longer":"now"} receive renewal emails when this license is close to expiring.`
+                    }), N(r)
+                },
+                error: T => z({
+                    e: T,
+                    default: {
+                        title: "Error updating."
+                    }
+                })
+            })
+        }, h = () => n(!0), w = () => n(!1), S = (i || []).filter(g => g.id !== r), a = !o.joinByLinkEnabled;
         return e.jsxs(e.Fragment, {
             children: [e.jsxs("div", {
-                style: R,
+                style: E,
                 children: [e.jsxs("div", {
                     style: {
-                        opacity: b ? .6 : 1,
-                        pointerEvents: b ? "none" : "auto"
+                        opacity: a ? .6 : 1,
+                        pointerEvents: a ? "none" : "auto"
                     },
                     children: [e.jsx(Ze, {
                         children: "Invite"
@@ -807,7 +828,7 @@ const P = new ce,
                         style: {
                             marginTop: 7
                         },
-                        children: [e.jsx(L, {
+                        children: [e.jsx(F, {
                             value: c,
                             readOnly: !0,
                             size: "large"
@@ -820,29 +841,29 @@ const P = new ce,
                             size: "large",
                             children: "Copy Link"
                         })]
-                    }), e.jsx(C, {}), e.jsxs("div", {
+                    }), e.jsx(M, {}), e.jsxs("div", {
                         className: "flex",
-                        children: [e.jsxs(g, {
-                            style: G,
+                        children: [e.jsxs(f, {
+                            style: D,
                             hoverable: !0,
-                            bodyStyle: U,
+                            bodyStyle: W,
                             className: "flex hc vc flex-column",
-                            children: [e.jsx(Re, {}), e.jsx(C, {}), e.jsxs("div", {
+                            children: [e.jsx(Re, {}), e.jsx(M, {}), e.jsxs("div", {
                                 style: {
                                     fontSize: 16
                                 },
-                                children: [M, " Pro subscribers who use this link to join your group license will be refunded automatically for their unused subscription time."]
+                                children: [B, " Pro subscribers who use this link to join your group license will be refunded automatically for their unused subscription time."]
                             })]
                         }), e.jsx("div", {
                             style: {
                                 width: 8
                             }
-                        }), e.jsxs(g, {
-                            style: G,
+                        }), e.jsxs(f, {
+                            style: D,
                             hoverable: !0,
-                            bodyStyle: U,
+                            bodyStyle: W,
                             className: "flex hc vc flex-column",
-                            children: [e.jsx(Ne, {}), e.jsx(C, {}), e.jsxs("div", {
+                            children: [e.jsx(Ne, {}), e.jsx(M, {}), e.jsxs("div", {
                                 style: {
                                     fontSize: 16
                                 },
@@ -851,16 +872,19 @@ const P = new ce,
                                 }), " ", "tab above."]
                             })]
                         })]
-                    }), e.jsx(C, {})]
+                    }), e.jsx(M, {})]
                 }), e.jsxs("div", {
                     className: "flex flex-column",
-                    children: [e.jsxs(y, {
-                        onClick: f,
-                        children: [b ? "Open" : "Close", " group to new members"]
-                    }), v.length && o.isActive ? e.jsx(y, {
-                        onClick: d,
+                    children: [e.jsxs(b, {
+                        onClick: j,
+                        children: [a ? "Open" : "Close", " group to new members"]
+                    }), S.length && o.isActive ? e.jsx(b, {
+                        onClick: h,
                         children: "Import members from previous group license"
-                    }) : null, e.jsx(y, {
+                    }) : null, o.isActive ? e.jsxs(b, {
+                        onClick: d,
+                        children: [o.blockSeatRenewalEmails ? "Enable" : "Disable", " renewal emails for members of this group"]
+                    }) : null, e.jsx(b, {
                         to: "mailto:groups@gimkit.com",
                         external: !0,
                         children: "Contact support"
@@ -869,8 +893,8 @@ const P = new ce,
             }), e.jsx(He, {
                 visible: s,
                 currentBulk: r,
-                otherBulks: v,
-                close: h
+                otherBulks: S,
+                close: w
             })]
         })
     },
@@ -884,8 +908,8 @@ const P = new ce,
 `,
     tt = m.lazy(() => je(() => import("./BulkAnalytics.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43]))),
     {
-        TabPane: S
-    } = Y,
+        TabPane: C
+    } = q,
     st = t => {
         const {
             bulkId: s
@@ -899,15 +923,15 @@ const P = new ce,
                 flex: 1
             },
             className: "flex-center",
-            children: [e.jsx(z, {
+            children: [e.jsx(L, {
                 title: "Group License"
-            }), e.jsx(_, {
+            }), e.jsx(V, {
                 size: "large"
             })]
         });
-        if (o) return H(fe), null;
-        const p = f => {
-            const d = f;
+        if (o) return J(fe), null;
+        const p = j => {
+            const d = j;
             if (d === "invoice") {
                 r.invoiceUrl && window.open(r.invoiceUrl);
                 return
@@ -918,37 +942,37 @@ const P = new ce,
             }
             i(d)
         };
-        return e.jsxs(J, {
-            children: [e.jsx(z, {
+        return e.jsxs(Z, {
+            children: [e.jsx(L, {
                 title: `${r.name} | Group License`
-            }), e.jsxs(X, {
+            }), e.jsxs(ee, {
                 children: [e.jsx(Ye, {
                     bulk: r,
                     bulkId: t.bulkId
-                }), e.jsx(ee, {
-                    children: e.jsxs(Y, {
+                }), e.jsx(se, {
+                    children: e.jsxs(q, {
                         type: "card",
                         activeKey: n,
                         onChange: p,
-                        children: [e.jsx(S, {
+                        children: [e.jsx(C, {
                             tab: "Invite",
                             children: e.jsx(Xe, {
                                 bulk: r,
                                 bulkId: s
                             })
-                        }, "invite"), e.jsx(S, {
+                        }, "invite"), e.jsx(C, {
                             tab: "Members",
                             children: e.jsx(Qe, {
                                 bulk: r,
                                 bulkId: s
                             })
-                        }, "members"), e.jsx(S, {
+                        }, "members"), e.jsx(C, {
                             tab: "Managers",
-                            children: e.jsx(De, {
+                            children: e.jsx(We, {
                                 bulk: r,
                                 bulkId: s
                             })
-                        }, "managers"), e.jsx(S, {
+                        }, "managers"), e.jsx(C, {
                             tab: "Usage Report",
                             children: e.jsx(m.Suspense, {
                                 fallback: null,
@@ -956,9 +980,9 @@ const P = new ce,
                                     bulkId: s
                                 })
                             })
-                        }, "analytics"), r.receiptUrl ? e.jsx(S, {
+                        }, "analytics"), r.receiptUrl ? e.jsx(C, {
                             tab: "View Receipt"
-                        }, "receipt") : null, r.invoiceUrl ? e.jsx(S, {
+                        }, "receipt") : null, r.invoiceUrl ? e.jsx(C, {
                             tab: "View Invoice"
                         }, "invoice") : null]
                     })
@@ -968,12 +992,12 @@ const P = new ce,
     },
     rt = () => e.jsx(nt, {
         children: e.jsxs(it, {
-            children: [e.jsxs(Z, {
-                children: [M, " Groups"]
+            children: [e.jsxs(te, {
+                children: [B, " Groups"]
             }), e.jsxs(ot, {
-                children: ["Welcome to ", M, " Groups! You don’t manage any group licenses yet. Click the button below to get your group started!"]
-            }), e.jsx(y, {
-                to: D,
+                children: ["Welcome to ", B, " Groups! You don’t manage any group licenses yet. Click the button below to get your group started!"]
+            }), e.jsx(b, {
+                to: Y,
                 className: "maxWidth",
                 children: e.jsx(k, {
                     block: !0,
@@ -1009,9 +1033,9 @@ const P = new ce,
         const {
             isLoading: t,
             data: s
-        } = re(), n = () => {
+        } = ie(), n = () => {
             if (t) return e.jsx(lt, {
-                children: e.jsx(_, {
+                children: e.jsx(V, {
                     size: "large"
                 })
             });
@@ -1021,7 +1045,7 @@ const P = new ce,
             }) : e.jsx(rt, {})
         };
         return e.jsxs(e.Fragment, {
-            children: [e.jsx(z, {
+            children: [e.jsx(L, {
                 title: "Group Licenses"
             }), n()]
         })
@@ -1034,7 +1058,7 @@ const P = new ce,
             id: t
         } = ve(), s = t;
         return e.jsx(be, {
-            client: P,
+            client: O,
             children: e.jsxs(ct, {
                 children: [e.jsx(Ae, {
                     includeSpacer: !0
@@ -1050,7 +1074,7 @@ const P = new ce,
   flex: 1;
   color: ${u.Black};
   background: ${u.Snow};
-  font-family: ${A.SFPro};
+  font-family: ${R.SFPro};
 `;
 export {
     Yt as
