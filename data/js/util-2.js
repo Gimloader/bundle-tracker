@@ -13,7 +13,7 @@ var Ce = {
     ht;
 
 function Fe() {
-    return ht || (ht = 1, function(N) {
+    return ht || (ht = 1, (function(N) {
         Object.defineProperties(N, {
             __esModule: {
                 value: !0
@@ -982,7 +982,7 @@ function Fe() {
             function qe(r) {
                 return r !== r
             }
-            const Yt = function() {
+            const Yt = (function() {
                 const r = "0123456789abcdef",
                     e = new Array(256);
                 for (let t = 0; t < 16; ++t) {
@@ -990,7 +990,7 @@ function Fe() {
                     for (let f = 0; f < 16; ++f) e[n + f] = r[t] + r[f]
                 }
                 return e
-            }();
+            })();
 
             function _e(r) {
                 return typeof BigInt > "u" ? Vt : r
@@ -1002,12 +1002,12 @@ function Fe() {
         })(L);
         const l = L.Buffer;
         N.Blob = L.Blob, N.BlobOptions = L.BlobOptions, N.Buffer = L.Buffer, N.File = L.File, N.FileOptions = L.FileOptions, N.INSPECT_MAX_BYTES = L.INSPECT_MAX_BYTES, N.SlowBuffer = L.SlowBuffer, N.TranscodeEncoding = L.TranscodeEncoding, N.atob = L.atob, N.btoa = L.btoa, N.constants = L.constants, N.default = l, N.isAscii = L.isAscii, N.isUtf8 = L.isUtf8, N.kMaxLength = L.kMaxLength, N.kStringMaxLength = L.kStringMaxLength, N.resolveObjectURL = L.resolveObjectURL, N.transcode = L.transcode
-    }(We)), We
+    })(We)), We
 } /*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
 var ct;
 
 function Kt() {
-    return ct || (ct = 1, function(N, L) {
+    return ct || (ct = 1, (function(N, L) {
         var I = Fe(),
             F = I.Buffer;
 
@@ -1033,7 +1033,7 @@ function Kt() {
             if (typeof R != "number") throw new TypeError("Argument must be a number");
             return I.SlowBuffer(R)
         }
-    }(Ce, Ce.exports)), Ce.exports
+    })(Ce, Ce.exports)), Ce.exports
 }
 var Ue = {
         exports: {}
@@ -1332,7 +1332,7 @@ function Xt() {
     function q(U, S, O) {
         B.prototype.copy.call(U, S, O)
     }
-    return $e = function() {
+    return $e = (function() {
         function U() {
             F(this, U), this.head = null, this.tail = null, this.length = 0
         }
@@ -1433,7 +1433,7 @@ function Xt() {
                 }))
             }
         }]), U
-    }(), $e
+    })(), $e
 }
 var Ge, gt;
 
@@ -1495,14 +1495,14 @@ function Ae() {
         function P(A, q, U) {
             return typeof _ == "string" ? _ : _(A, q, U)
         }
-        var C = function(A) {
+        var C = (function(A) {
             N(q, A);
 
             function q(U, S, O) {
                 return A.call(this, P(U, S, O)) || this
             }
             return q
-        }(B);
+        })(B);
         C.prototype.name = B.name, C.prototype.code = E, L[E] = C
     }
 
@@ -1656,18 +1656,17 @@ function Dt() {
         }, this.writecb = null, this.writelen = 0, this.bufferedRequest = null, this.lastBufferedRequest = null, this.pendingcb = 0, this.prefinished = !1, this.errorEmitted = !1, this.emitClose = p.emitClose !== !1, this.autoDestroy = !!p.autoDestroy, this.bufferedRequestCount = 0, this.corkedRequestsFree = new N(this)
     }
     y.prototype.getBuffer = function() {
-            for (var d = this.bufferedRequest, M = []; d;) M.push(d), d = d.next;
-            return M
-        },
-        function() {
-            try {
-                Object.defineProperty(y.prototype, "buffer", {
-                    get: I.deprecate(function() {
-                        return this.getBuffer()
-                    }, "_writableState.buffer is deprecated. Use _writableState.getBuffer instead.", "DEP0003")
-                })
-            } catch {}
-        }();
+        for (var d = this.bufferedRequest, M = []; d;) M.push(d), d = d.next;
+        return M
+    }, (function() {
+        try {
+            Object.defineProperty(y.prototype, "buffer", {
+                get: I.deprecate(function() {
+                    return this.getBuffer()
+                }, "_writableState.buffer is deprecated. Use _writableState.getBuffer instead.", "DEP0003")
+            })
+        } catch {}
+    })();
     var b;
     typeof Symbol == "function" && Symbol.hasInstance && typeof Function.prototype[Symbol.hasInstance] == "function" ? (b = Function.prototype[Symbol.hasInstance], Object.defineProperty(v, Symbol.hasInstance, {
         value: function(d) {
@@ -2596,11 +2595,11 @@ function kt() {
                 ge || (j = !0, i.pause())
             }
         });
-        for (var z in i) this[z] === void 0 && typeof i[z] == "function" && (this[z] = function(ge) {
+        for (var z in i) this[z] === void 0 && typeof i[z] == "function" && (this[z] = (function(ge) {
             return function() {
                 return i[ge].apply(i, arguments)
             }
-        }(z));
+        })(z));
         for (var H = 0; H < y.length; H++) i.on(y[H], this.emit.bind(this, y[H]));
         return this._read = function(K) {
             _("wrapped _read", K), j && (j = !1, i.resume())

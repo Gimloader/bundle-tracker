@@ -1,7 +1,7 @@
 import {
     d as a,
-    e as s,
-    c as e
+    e,
+    c as s
 } from "./FixSpinePlugin.js";
 import {
     F as n,
@@ -9,9 +9,9 @@ import {
 } from "./ReplaceVisualEditingPreview.js";
 import {
     al as h,
-    as as c,
-    aE as l,
-    aF as u
+    am as c,
+    aN as l,
+    aO as u
 } from "./App-41.js";
 import {
     G as o
@@ -85,7 +85,7 @@ import "./FillRemainingSpace.js";
 import "./index-24.js";
 class Hi extends h {
     constructor(p) {
-        if (super(p), this.currentFallVelocity = 0, a() || s()) return;
+        if (super(p), this.currentFallVelocity = 0, a() || e()) return;
         const t = n(this, "rangeRadius");
         this.visualEditing.add.circle({
             radius: this.options.rangeRadius,
@@ -108,7 +108,7 @@ class Hi extends h {
             onReady: i => {
                 i.view.setScale(.28 * this.options.scale), i.view.setOrigin(.5, 550 / 600)
             }
-        }), e() || this.parts.add.sprite({
+        }), s() || this.parts.add.sprite({
             y: 30 / 2 - 5 * this.options.scale,
             imageId: "character-shadow",
             imageUrl: o("characters/shadow.png"),

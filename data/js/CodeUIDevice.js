@@ -1,11 +1,11 @@
 import {
-    I as m,
-    i as p
+    I as p,
+    i as m
 } from "./FixSpinePlugin.js";
 import {
     al as e,
-    am as s,
-    an as a
+    aA as s,
+    aB as a
 } from "./App-41.js";
 import {
     L as l
@@ -97,7 +97,7 @@ class So extends e {
                 })
             }, l({
                 familyName: this.options.defaultFontFamily
-            }), m() && p()) {
+            }), p() && m()) {
             const o = a.Overlay;
             new s({
                 device: this,

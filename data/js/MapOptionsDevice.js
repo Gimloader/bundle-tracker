@@ -7,7 +7,7 @@ import {
     d as f
 } from "./FixSpinePlugin.js";
 import {
-    aX as g,
+    b4 as g,
     al as w,
     a8 as y
 } from "./App-41.js";
@@ -102,7 +102,7 @@ const A = t => {
     O = !1,
     e = new Map,
     p = new Map;
-class kt extends w {
+class qt extends w {
     constructor(o) {
         if (super(o), this.onUpdate = () => {
                 if (!this.state.countdownActive && !this.state.countupActive) return;
@@ -156,6 +156,6 @@ class kt extends w {
     }
 }
 export {
-    kt as
+    qt as
     default
 };

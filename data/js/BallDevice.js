@@ -1,6 +1,6 @@
 import {
-    aK as d,
-    aL as g,
+    aU as d,
+    aV as g,
     G as b,
     L as f,
     al as v
@@ -262,7 +262,7 @@ const E = {
         const a = 1 - B * i.animations.ballHeight / n.animation.maxHeight;
         i.shadow.r1 = R * a * i.container2.view.scaleX * i.options.radius, i.shadow.r2 = _ * a * i.container2.view.scaleY * i.options.radius, i.shadow.alphaMultip = i.container2.view.alpha * i.container.view.alpha
     },
-    L = i => {
+    F = i => {
         l() && !c() || (i.projectiles.setDynamic(!0), i.projectiles.collidesWithProjectile = a => {
             const {
                 x: t,
@@ -332,7 +332,7 @@ class ei extends v {
                 t.key === "goal" && (this.hide(), setTimeout(() => {
                     this.isDestroyed || this.particles.burst(this.container.view.x, this.container.view.y, this.container.view.depth)
                 }, 250)), t.key === "reset" && (this.movement.onReset(), this.show())
-            }, A(this), L(this), this.movement = new X(this), this.animations = new Y(this), this.rotation = new I(this), this.particles = new H(this), this.updateActive(), l() && S()) {
+            }, A(this), F(this), this.movement = new X(this), this.animations = new Y(this), this.rotation = new I(this), this.particles = new H(this), this.updateActive(), l() && S()) {
             const t = P(this, "radius");
             this.visualEditing.add.circle({
                 angle: 0,

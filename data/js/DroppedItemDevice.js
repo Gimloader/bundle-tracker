@@ -1,22 +1,24 @@
 import {
     al as w,
-    aR as v,
-    aS as u,
-    aT as f,
-    aU as g,
-    aV as I,
+    a_ as v,
+    a$ as f,
+    b0 as u,
+    b1 as g,
+    b2 as I,
     L as d,
-    aQ as y,
-    aL as C
+    aV as y
 } from "./App-41.js";
 import {
-    N as S
+    N as C
 } from "./NewWidthSameAspectRatio.js";
+import {
+    F as O
+} from "./FetchTextureDimensions.js";
 import {
     G as l
 } from "./GetAssetPath.js";
 import {
-    A as O
+    A as S
 } from "./AddOutline.js";
 import {
     R as x
@@ -33,7 +35,7 @@ import {
 import {
     D as r,
     G as Y,
-    a as P
+    a as b
 } from "./Constants.js";
 import "./_index.js";
 import "./Button.js";
@@ -101,19 +103,19 @@ import "./useDebouncedValue.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const A = {
+const P = {
     imageId: "item_shadow",
     imageUrl: l("devices/dropped_item/item-shadow.png")
 };
-class Kt extends w {
+class Qt extends w {
     constructor(c) {
         if (super(c), this.hidden = !1, this.onUpdate = t => {
                 var i;
                 a() && (i = this.item) != null && i.view && (this.item.view.y < this.state.fallY && (this.item.view.y += v(r.fall.fallSpeedPerSecond) * t / 1e3, this.item.view.y >= this.state.fallY && (this.item.view.y = this.state.fallY)), this.y = this.item.view.y)
             }, this.setInteractionInfo = () => {
                 var n;
-                const t = u(this.options.itemId),
-                    i = f(this.options.itemId),
+                const t = f(this.options.itemId),
+                    i = u(this.options.itemId),
                     s = g(this.options.itemId);
                 let e = !0;
                 if (i || s) {
@@ -124,7 +126,7 @@ class Kt extends w {
                         });
                         e = o < m
                     } else if (s) {
-                        const m = P({
+                        const m = b({
                             itemId: this.options.itemId
                         });
                         e = o < m
@@ -212,7 +214,7 @@ class Kt extends w {
             }, this.onStateChange = t => {
                 t === "amount" && this.setInteractionInfo(), t === "alreadyCollected" && !this.prevState.alreadyCollected && this.state.alreadyCollected && !this.hidden && (this.hidden = !0, this.startHideTweens())
             }, this.addOutline = () => {
-                this.state.visible && O({
+                this.state.visible && S({
                     view: this.item.view
                 })
             }, this.removeOutline = () => {
@@ -225,20 +227,20 @@ class Kt extends w {
                 y: -112.5
             }), !this.state.visible || this.state.alreadyCollected) return;
         a() || (this.shadow = this.parts.add.sprite({
-            ...A,
+            ...P,
             layerId: d.DevicesUnderCharacters
         }));
         const h = p.worldOptions.itemOptions.find(t => t.id === this.options.itemId);
         if (h) {
             const t = h.id,
                 i = h.previewImage,
-                s = y(t),
-                e = S({
+                s = O(t),
+                e = C({
                     height: s.height,
                     width: s.width,
                     newWidth: r.itemWidth
                 });
-            C({
+            y({
                 key: t,
                 url: i,
                 onLoad: () => {
@@ -273,6 +275,6 @@ class Kt extends w {
     }
 }
 export {
-    Kt as
+    Qt as
     default
 };

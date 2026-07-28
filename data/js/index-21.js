@@ -13,20 +13,19 @@ var oe = {},
     ut;
 
 function Ve() {
-    return ut || (ut = 1, function(_) {
+    return ut || (ut = 1, (function(_) {
         Object.defineProperty(_, "__esModule", {
-                value: !0
-            }), _.ServerError = _.CloseCode = void 0,
-            function(s) {
-                s[s.CONSENTED = 4e3] = "CONSENTED", s[s.DEVMODE_RESTART = 4010] = "DEVMODE_RESTART"
-            }(_.CloseCode || (_.CloseCode = {}));
+            value: !0
+        }), _.ServerError = _.CloseCode = void 0, (function(s) {
+            s[s.CONSENTED = 4e3] = "CONSENTED", s[s.DEVMODE_RESTART = 4010] = "DEVMODE_RESTART"
+        })(_.CloseCode || (_.CloseCode = {}));
         class w extends Error {
             constructor(d, y) {
                 super(y), this.name = "ServerError", this.code = d
             }
         }
         _.ServerError = w
-    }(We)), We
+    })(We)), We
 }
 var ee = {},
     pe = {},
@@ -359,16 +358,14 @@ var Ke = {},
     vt;
 
 function Pt() {
-    return vt || (vt = 1, function(_) {
+    return vt || (vt = 1, (function(_) {
         Object.defineProperty(_, "__esModule", {
-                value: !0
-            }), _.utf8Length = _.utf8Read = _.ErrorCode = _.Protocol = void 0,
-            function(d) {
-                d[d.HANDSHAKE = 9] = "HANDSHAKE", d[d.JOIN_ROOM = 10] = "JOIN_ROOM", d[d.ERROR = 11] = "ERROR", d[d.LEAVE_ROOM = 12] = "LEAVE_ROOM", d[d.ROOM_DATA = 13] = "ROOM_DATA", d[d.ROOM_STATE = 14] = "ROOM_STATE", d[d.ROOM_STATE_PATCH = 15] = "ROOM_STATE_PATCH", d[d.ROOM_DATA_SCHEMA = 16] = "ROOM_DATA_SCHEMA", d[d.ROOM_DATA_BYTES = 17] = "ROOM_DATA_BYTES"
-            }(_.Protocol || (_.Protocol = {})),
-            function(d) {
-                d[d.MATCHMAKE_NO_HANDLER = 4210] = "MATCHMAKE_NO_HANDLER", d[d.MATCHMAKE_INVALID_CRITERIA = 4211] = "MATCHMAKE_INVALID_CRITERIA", d[d.MATCHMAKE_INVALID_ROOM_ID = 4212] = "MATCHMAKE_INVALID_ROOM_ID", d[d.MATCHMAKE_UNHANDLED = 4213] = "MATCHMAKE_UNHANDLED", d[d.MATCHMAKE_EXPIRED = 4214] = "MATCHMAKE_EXPIRED", d[d.AUTH_FAILED = 4215] = "AUTH_FAILED", d[d.APPLICATION_ERROR = 4216] = "APPLICATION_ERROR"
-            }(_.ErrorCode || (_.ErrorCode = {}));
+            value: !0
+        }), _.utf8Length = _.utf8Read = _.ErrorCode = _.Protocol = void 0, (function(d) {
+            d[d.HANDSHAKE = 9] = "HANDSHAKE", d[d.JOIN_ROOM = 10] = "JOIN_ROOM", d[d.ERROR = 11] = "ERROR", d[d.LEAVE_ROOM = 12] = "LEAVE_ROOM", d[d.ROOM_DATA = 13] = "ROOM_DATA", d[d.ROOM_STATE = 14] = "ROOM_STATE", d[d.ROOM_STATE_PATCH = 15] = "ROOM_STATE_PATCH", d[d.ROOM_DATA_SCHEMA = 16] = "ROOM_DATA_SCHEMA", d[d.ROOM_DATA_BYTES = 17] = "ROOM_DATA_BYTES"
+        })(_.Protocol || (_.Protocol = {})), (function(d) {
+            d[d.MATCHMAKE_NO_HANDLER = 4210] = "MATCHMAKE_NO_HANDLER", d[d.MATCHMAKE_INVALID_CRITERIA = 4211] = "MATCHMAKE_INVALID_CRITERIA", d[d.MATCHMAKE_INVALID_ROOM_ID = 4212] = "MATCHMAKE_INVALID_ROOM_ID", d[d.MATCHMAKE_UNHANDLED = 4213] = "MATCHMAKE_UNHANDLED", d[d.MATCHMAKE_EXPIRED = 4214] = "MATCHMAKE_EXPIRED", d[d.AUTH_FAILED = 4215] = "AUTH_FAILED", d[d.APPLICATION_ERROR = 4216] = "APPLICATION_ERROR"
+        })(_.ErrorCode || (_.ErrorCode = {}));
 
         function w(d, y) {
             const v = d[y++];
@@ -403,7 +400,7 @@ function Pt() {
             return v + 1
         }
         _.utf8Length = s
-    }(Ke)), Ke
+    })(Ke)), Ke
 }
 var ve = {},
     mt;
@@ -504,10 +501,10 @@ var Te = {
     $t;
 
 function Dt() {
-    return $t || ($t = 1, function(_, w) {
+    return $t || ($t = 1, (function(_, w) {
         (function(s, d) {
             d(w)
-        })(_n, function(s) {
+        })(_n, (function(s) {
             var d = function(t, e) {
                 return d = Object.setPrototypeOf || {
                     __proto__: []
@@ -547,11 +544,10 @@ function Dt() {
             typeof SuppressedError == "function" && SuppressedError;
             var E = 255,
                 I = 213;
-            s.OPERATION = void 0,
-                function(t) {
-                    t[t.ADD = 128] = "ADD", t[t.REPLACE = 0] = "REPLACE", t[t.DELETE = 64] = "DELETE", t[t.DELETE_AND_ADD = 192] = "DELETE_AND_ADD", t[t.TOUCH = 1] = "TOUCH", t[t.CLEAR = 10] = "CLEAR"
-                }(s.OPERATION || (s.OPERATION = {}));
-            var f = function() {
+            s.OPERATION = void 0, (function(t) {
+                t[t.ADD = 128] = "ADD", t[t.REPLACE = 0] = "REPLACE", t[t.DELETE = 64] = "DELETE", t[t.DELETE_AND_ADD = 192] = "DELETE_AND_ADD", t[t.TOUCH = 1] = "TOUCH", t[t.CLEAR = 10] = "CLEAR"
+            })(s.OPERATION || (s.OPERATION = {}));
+            var f = (function() {
                 function t(e, n, r) {
                     this.changed = !1, this.changes = new Map, this.allChanges = new Set, this.caches = {}, this.currentCustomOperation = 0, this.ref = e, this.setParent(n, r)
                 }
@@ -641,7 +637,7 @@ function Dt() {
                 }, t.prototype.assertValidIndex = function(e, n) {
                     if (e === void 0) throw new Error('ChangeTree: missing index for field "'.concat(n, '"'))
                 }, t
-            }();
+            })();
 
             function h(t, e, n, r) {
                 return t[e] || (t[e] = []), t[e].push(n), r == null || r.forEach(function(o, g) {
@@ -698,7 +694,7 @@ function Dt() {
                     }
                 }), t
             }
-            var p = function() {
+            var p = (function() {
                 function t() {
                     for (var e = [], n = 0; n < arguments.length; n++) e[n] = arguments[n];
                     this.$changes = new f(this), this.$items = new Map, this.$indexes = new Map, this.$refId = 0, this.push.apply(this, e)
@@ -892,7 +888,7 @@ function Dt() {
                         return r.$changes ? r.clone() : r
                     }), !1))), n
                 }, t
-            }();
+            })();
 
             function l(t) {
                 return t.$proxy = !0, t = new Proxy(t, {
@@ -907,7 +903,7 @@ function Dt() {
                     }
                 }), t
             }
-            var m = function() {
+            var m = (function() {
                     function t(e) {
                         var n = this;
                         if (this.$changes = new f(this), this.$items = new Map, this.$indexes = new Map, this.$refId = 0, e)
@@ -997,7 +993,7 @@ function Dt() {
                             r.$changes ? n.set(o, r.clone()) : n.set(o, r)
                         })), n
                     }, t
-                }(),
+                })(),
                 x = {};
 
             function b(t, e) {
@@ -1007,7 +1003,7 @@ function Dt() {
             function P(t) {
                 return x[t]
             }
-            var B = function() {
+            var B = (function() {
                 function t() {
                     this.indexes = {}, this.fieldsByIndex = {}, this.deprecated = {}, this.descriptors = {}
                 }
@@ -1033,12 +1029,12 @@ function Dt() {
                 }, t.prototype.getNextFieldIndex = function() {
                     return Object.keys(this.schema || {}).length
                 }, t
-            }();
+            })();
 
             function Q(t) {
                 return t._context && t._context.useFilters
             }
-            var J = function() {
+            var J = (function() {
                     function t() {
                         this.types = {}, this.schemas = new Map, this.useFilters = !1
                     }
@@ -1054,7 +1050,7 @@ function Dt() {
                                 return e.context || (e.context = new t), Y(n, e)
                             }
                     }, t
-                }(),
+                })(),
                 q = new J;
 
             function Y(t, e) {
@@ -1403,7 +1399,7 @@ Check @type() annotation`))
                     uint64: it,
                     uint8: Ee
                 }),
-                Ue = function() {
+                Ue = (function() {
                     function t(e) {
                         var n = this;
                         this.$changes = new f(this), this.$items = new Map, this.$indexes = new Map, this.$refId = 0, e && e.forEach(function(r) {
@@ -1478,8 +1474,8 @@ Check @type() annotation`))
                             r.$changes ? n.add(r.clone()) : n.add(r)
                         })), n
                     }, t
-                }(),
-                je = function() {
+                })(),
+                je = (function() {
                     function t(e) {
                         var n = this;
                         this.$changes = new f(this), this.$items = new Map, this.$indexes = new Map, this.$refId = 0, e && e.forEach(function(r) {
@@ -1557,8 +1553,8 @@ Check @type() annotation`))
                             r.$changes ? n.add(r.clone()) : n.add(r)
                         })), n
                     }, t
-                }(),
-                rn = function() {
+                })(),
+                rn = (function() {
                     function t() {
                         this.refIds = new WeakSet, this.containerIndexes = new WeakMap
                     }
@@ -1567,8 +1563,8 @@ Check @type() annotation`))
                     }, t.get = function(e) {
                         return e.$filterState === void 0 && (e.$filterState = new t), e.$filterState
                     }, t
-                }(),
-                on = function() {
+                })(),
+                on = (function() {
                     function t() {
                         this.refs = new Map, this.refCounts = {}, this.deletedRefs = new Set, this.nextUniqueId = 0
                     }
@@ -1607,15 +1603,15 @@ Check @type() annotation`))
                             }
                         }), this.deletedRefs.clear()
                     }, t
-                }(),
-                ze = function(t) {
+                })(),
+                ze = (function(t) {
                     y(e, t);
 
                     function e() {
                         return t !== null && t.apply(this, arguments) || this
                     }
                     return e
-                }(Error);
+                })(Error);
 
             function sn(t, e, n, r) {
                 var o, g = !1;
@@ -1659,7 +1655,7 @@ Check @type() annotation`))
             function cn(t, e, n) {
                 return at[t](e, n)
             }
-            var G = function() {
+            var G = (function() {
                 function t() {
                     for (var e = [], n = 0; n < arguments.length; n++) e[n] = arguments[n];
                     Object.defineProperties(this, {
@@ -1973,7 +1969,7 @@ Check @type() annotation`))
                             N.add(j)
                         }, C = 0; C < e.length; C++) D(C)
                 }, t._definition = B.create(), t
-            }();
+            })();
 
             function fn(t) {
                 for (var e = [t.$changes], n = 1, r = {}, o = r, g = function(O) {
@@ -1990,15 +1986,15 @@ Check @type() annotation`))
             var le = {
                     context: new J
                 },
-                Be = function(t) {
+                Be = (function(t) {
                     y(e, t);
 
                     function e() {
                         return t !== null && t.apply(this, arguments) || this
                     }
                     return v([Y("string", le)], e.prototype, "name", void 0), v([Y("string", le)], e.prototype, "type", void 0), v([Y("number", le)], e.prototype, "referencedType", void 0), e
-                }(G),
-                Fe = function(t) {
+                })(G),
+                Fe = (function(t) {
                     y(e, t);
 
                     function e() {
@@ -2006,8 +2002,8 @@ Check @type() annotation`))
                         return n.fields = new p, n
                     }
                     return v([Y("number", le)], e.prototype, "id", void 0), v([Y([Be], le)], e.prototype, "fields", void 0), e
-                }(G),
-                hn = function(t) {
+                })(G),
+                hn = (function(t) {
                     y(e, t);
 
                     function e() {
@@ -2044,14 +2040,14 @@ Check @type() annotation`))
                             g = new e;
                         g.decode(n, r);
                         var R = g.types.reduce(function(N, T) {
-                            var D = function(M) {
+                            var D = (function(M) {
                                     y($, M);
 
                                     function $() {
                                         return M !== null && M.apply(this, arguments) || this
                                     }
                                     return $
-                                }(G),
+                                })(G),
                                 C = T.id;
                             return N[C] = D, o.add(D, C), N
                         }, {});
@@ -2084,7 +2080,7 @@ Check @type() annotation`))
                         }
                         return U
                     }, v([Y([Fe], le)], e.prototype, "types", void 0), v([Y("number", le)], e.prototype, "rootType", void 0), e
-                }(G);
+                })(G);
             b("map", {
                 constructor: m
             }), b("array", {
@@ -2094,15 +2090,15 @@ Check @type() annotation`))
             }), b("collection", {
                 constructor: Ue
             }), s.ArraySchema = p, s.CollectionSchema = Ue, s.Context = J, s.MapSchema = m, s.Reflection = hn, s.ReflectionField = Be, s.ReflectionType = Fe, s.Schema = G, s.SchemaDefinition = B, s.SetSchema = je, s.decode = at, s.defineTypes = Bt, s.deprecated = zt, s.dumpChanges = fn, s.encode = ke, s.filter = Ut, s.filterChildren = jt, s.hasFilter = Q, s.registerType = b, s.type = Y
-        })
-    }(Te, Te.exports)), Te.exports
+        }))
+    })(Te, Te.exports)), Te.exports
 }
 var Et;
 
 function Nt() {
     if (Et) return ee;
     Et = 1;
-    var _ = ee && ee.__createBinding || (Object.create ? function(a, c, u, p) {
+    var _ = ee && ee.__createBinding || (Object.create ? (function(a, c, u, p) {
             p === void 0 && (p = u);
             var l = Object.getOwnPropertyDescriptor(c, u);
             (!l || ("get" in l ? !c.__esModule : l.writable || l.configurable)) && (l = {
@@ -2111,15 +2107,15 @@ function Nt() {
                     return c[u]
                 }
             }), Object.defineProperty(a, p, l)
-        } : function(a, c, u, p) {
+        }) : (function(a, c, u, p) {
             p === void 0 && (p = u), a[p] = c[u]
-        }),
-        w = ee && ee.__setModuleDefault || (Object.create ? function(a, c) {
+        })),
+        w = ee && ee.__setModuleDefault || (Object.create ? (function(a, c) {
             Object.defineProperty(a, "default", {
                 enumerable: !0,
                 value: c
             })
-        } : function(a, c) {
+        }) : function(a, c) {
             a.default = c
         }),
         s = ee && ee.__importStar || function(a) {
@@ -2316,7 +2312,7 @@ var At;
 function Rn() {
     if (At) return te;
     At = 1;
-    var _ = te && te.__createBinding || (Object.create ? function(A, E, I, f) {
+    var _ = te && te.__createBinding || (Object.create ? (function(A, E, I, f) {
             f === void 0 && (f = I);
             var h = Object.getOwnPropertyDescriptor(E, I);
             (!h || ("get" in h ? !E.__esModule : h.writable || h.configurable)) && (h = {
@@ -2325,15 +2321,15 @@ function Rn() {
                     return E[I]
                 }
             }), Object.defineProperty(A, f, h)
-        } : function(A, E, I, f) {
+        }) : (function(A, E, I, f) {
             f === void 0 && (f = I), A[f] = E[I]
-        }),
-        w = te && te.__setModuleDefault || (Object.create ? function(A, E) {
+        })),
+        w = te && te.__setModuleDefault || (Object.create ? (function(A, E) {
             Object.defineProperty(A, "default", {
                 enumerable: !0,
                 value: E
             })
-        } : function(A, E) {
+        }) : function(A, E) {
             A.default = E
         }),
         s = te && te.__importStar || function(A) {
@@ -2827,7 +2823,7 @@ function Pn() {
 var Ct;
 
 function Mn() {
-    return Ct || (Ct = 1, function(_) {
+    return Ct || (Ct = 1, (function(_) {
         Object.defineProperty(_, "__esModule", {
             value: !0
         }), _.SchemaSerializer = _.registerSerializer = _.Auth = _.Room = _.ErrorCode = _.Protocol = _.MatchMakeError = _.Client = void 0, dn();
@@ -2884,7 +2880,7 @@ function Mn() {
                 return E.registerSerializer
             }
         }), (0, E.registerSerializer)("schema", v.SchemaSerializer), (0, E.registerSerializer)("none", A.NoneSerializer)
-    }(qe)), qe
+    })(qe)), qe
 }
 var Bn = Mn();
 export {

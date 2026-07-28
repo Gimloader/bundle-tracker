@@ -1,17 +1,17 @@
 import {
-    aM as j,
-    aN as q,
-    U as J,
+    aW as Z,
+    aX as j,
+    U as q,
     T as P,
-    aO as y,
-    aP as C,
+    aY as y,
+    aZ as C,
     L as B,
-    al as K,
-    am as Q,
-    an as Z
+    al as J,
+    aA as K,
+    aB as Q
 } from "./App-41.js";
 import {
-    G
+    G as W
 } from "./GetAssetPath.js";
 import {
     a as M,
@@ -29,7 +29,7 @@ import {
     C as at
 } from "./Interfaces.js";
 import {
-    D as W
+    D as G
 } from "./TutorialConsts.js";
 import "./Button.js";
 import "./polished.esm.js";
@@ -98,7 +98,7 @@ import "./FillRemainingSpace.js";
 import "./index-24.js";
 const rt = {
         imageId: "radar_arrow",
-        imageUrl: G("devices/waypoint/arrow.png")
+        imageUrl: W("devices/waypoint/arrow.png")
     },
     s = {
         NameTextFontSize: 20,
@@ -115,7 +115,7 @@ const rt = {
         CharacterShift: -25,
         SafeAreaTopMarginWithGUIDevices: 180,
         SafeAreaTopMarginWithoutGUIDevices: 110,
-        SafeAreaExtraTopMarginWithScorebar: q,
+        SafeAreaExtraTopMarginWithScorebar: j,
         SafeAreaBottomMarginWithGUIDevices: 100,
         SafeAreaBottomMarginWithoutGUIDevices: 30,
         SafeAreaLeftRightMargin: 30,
@@ -123,7 +123,7 @@ const rt = {
     },
     nt = {
         fontFamily: ot.ProductSans,
-        fontSize: `${j.fontWeight} ${s.NameTextFontSize}px`
+        fontSize: `${Z.fontWeight} ${s.NameTextFontSize}px`
     },
     st = () => {
         const t = M(),
@@ -145,16 +145,16 @@ const rt = {
 var h = (t => (t.deviceLocation = "deviceLocation", t.player = "player", t.flag = "flag", t.ball = "ball", t))(h || {});
 const E = t => {
         if (t.options.flagColor === void 0) return;
-        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === W.flag && e.options.flagColor === t.options.flagColor && (e.pointedByWaypointDeviceID === void 0 || e.pointedByWaypointDeviceID === t.id));
+        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.flag && e.options.flagColor === t.options.flagColor && (e.pointedByWaypointDeviceID === void 0 || e.pointedByWaypointDeviceID === t.id));
         return i && (i.pointedByWaypointDeviceID = t.id), i
     },
     V = t => {
         if (t.options.ballId === void 0) return;
         if (t.trackedBallDeviceId) {
-            const e = J(t.trackedBallDeviceId);
+            const e = q(t.trackedBallDeviceId);
             if (e) return e
         }
-        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === W.ball && e.options.identifier === t.options.ballId);
+        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.ball && e.options.identifier === t.options.ballId);
         return i && (t.trackedBallDeviceId = i.id), i
     },
     ct = t => {
@@ -231,7 +231,7 @@ const E = t => {
         }
         const e = i.skin.skinId.replace("character_", "");
         if (!e) return;
-        const o = G(`characters/spine/normalized_preview/${e}.png`);
+        const o = W(`characters/spine/normalized_preview/${e}.png`);
         ((r = t.icon) == null ? void 0 : r.options.imageUrl) !== o && t.parts.add.sprite({
             imageId: o,
             imageUrl: o,
@@ -283,9 +283,9 @@ const E = t => {
         }
         const D = u.phaser.mainCharacter;
         if (!D) return;
-        const H = Phaser.Math.Distance.Between(D.body.x, D.body.y, e.x, e.y),
-            X = s.PixelsPerMeter,
-            _ = Math.round(H / X);
+        const $ = Phaser.Math.Distance.Between(D.body.x, D.body.y, e.x, e.y),
+            H = s.PixelsPerMeter,
+            _ = Math.round($ / H);
         t.nameText.view.setText(`${t.options.name} (${_}m)`)
     },
     v = t => {
@@ -300,21 +300,21 @@ const E = t => {
         }
         return (e = t.pointer) != null && e.view && (t.pointer.view.alpha = i), (o = t.nameText) != null && o.view && (t.nameText.view.alpha = i), (a = t.icon) != null && a.view && (t.icon.view.alpha = i), i
     };
-var $ = (t => (t.deactivateWithinRange = "deactivateWithinRange", t))($ || {});
+var X = (t => (t.deactivateWithinRange = "deactivateWithinRange", t))(X || {});
 const ft = (t, i) => {
         if (!t.options.useDeactivateWithinRange || t.options.target !== h.deviceLocation || !t.state.active) return;
         const e = u.phaser.mainCharacter;
         if (!e) return;
         const o = Phaser.Math.Distance.Between(e.body.x, e.body.y, i.x, i.y),
             a = s.PixelsPerMeter;
-        Math.round(o / a) < t.options.deactivateWithinRange && t.sendToServerDevice($.deactivateWithinRange)
+        Math.round(o / a) < t.options.deactivateWithinRange && t.sendToServerDevice(X.deactivateWithinRange)
     },
     gt = t => {
         if (t.options.flagColor === void 0) return;
-        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === W.flag && e.options.flagColor === t.options.flagColor && e.pointedByWaypointDeviceID === t.id);
+        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.flag && e.options.flagColor === t.options.flagColor && e.pointedByWaypointDeviceID === t.id);
         i && (i.pointedByWaypointDeviceID = void 0)
     };
-class Re extends K {
+class Re extends J {
     constructor(i) {
         if (super(i), this.onUpdate = e => {
                 if (!v(this)) return;
@@ -324,14 +324,14 @@ class Re extends K {
             }, this.onDestroy = e => {
                 gt(this)
             }, k() && et()) {
-            const e = Z.Overlay;
-            new Q({
+            const e = Q.Overlay;
+            new K({
                 device: this,
                 baseColor: e.baseColor,
                 boxColor: e.boxColor,
                 content: {
                     icon: {
-                        image: G("devices/waypoint/icon.png"),
+                        image: W("devices/waypoint/icon.png"),
                         scale: .9
                     }
                 }

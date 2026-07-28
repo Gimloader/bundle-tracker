@@ -365,7 +365,7 @@ lt.exports;
 var Er;
 
 function Bi() {
-    return Er || (Er = 1, function(g, t) {
+    return Er || (Er = 1, (function(g, t) {
         var n = ui(),
             u = t && !t.nodeType && t,
             m = u && !0 && g && !g.nodeType && g,
@@ -380,7 +380,7 @@ function Bi() {
             return a.copy(p), p
         }
         g.exports = c
-    }(lt, lt.exports)), lt.exports
+    })(lt, lt.exports)), lt.exports
 }
 var Ht, Pr;
 
@@ -605,7 +605,7 @@ function zi() {
     Ir = 1;
     var g = ir(),
         t = Object.create,
-        n = function() {
+        n = (function() {
             function u() {}
             return function(m) {
                 if (!g(m)) return {};
@@ -614,7 +614,7 @@ function zi() {
                 var h = new u;
                 return u.prototype = void 0, h
             }
-        }();
+        })();
     return Xt = n, Xt
 }
 var Kt, Nr;
@@ -994,7 +994,7 @@ function eo() {
     }
     var o = pe.hover = function(a) {
         var s = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : "span";
-        return function(e) {
+        return (function(e) {
             f(p, e);
 
             function p() {
@@ -1019,7 +1019,7 @@ function eo() {
                 }, r), h(d, l)
             }
             return p
-        }(n.default.Component)
+        })(n.default.Component)
     };
     return pe.default = o, pe
 }
@@ -1069,7 +1069,7 @@ function to() {
     }
     var o = ve.active = function(a) {
         var s = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : "span";
-        return function(e) {
+        return (function(e) {
             f(p, e);
 
             function p() {
@@ -1094,7 +1094,7 @@ function to() {
                 }, r), h(d, l)
             }
             return p
-        }(n.default.Component)
+        })(n.default.Component)
     };
     return ve.default = o, ve
 }
@@ -1280,7 +1280,7 @@ function io() {
             }
             return l
         },
-        t = function() {
+        t = (function() {
             function l(i, w) {
                 for (var _ = 0; _ < w.length; _++) {
                     var C = w[_];
@@ -1290,7 +1290,7 @@ function io() {
             return function(i, w, _) {
                 return w && l(i.prototype, w), _ && l(i, _), i
             }
-        }(),
+        })(),
         n = T(),
         u = e(n),
         m = D(),
@@ -1334,7 +1334,7 @@ function io() {
             }
         }), i && (Object.setPrototypeOf ? Object.setPrototypeOf(l, i) : l.__proto__ = i)
     }
-    var d = ge.Alpha = function(l) {
+    var d = ge.Alpha = (function(l) {
         r(i, l);
 
         function i() {
@@ -1437,7 +1437,7 @@ function io() {
                 }))))
             }
         }]), i
-    }(n.PureComponent || n.Component);
+    })(n.PureComponent || n.Component);
     return ge.default = d, ge
 }
 var me = {},
@@ -1448,7 +1448,7 @@ function oo() {
     ra = 1, Object.defineProperty(me, "__esModule", {
         value: !0
     }), me.EditableInput = void 0;
-    var g = function() {
+    var g = (function() {
             function e(p, v) {
                 for (var r = 0; r < v.length; r++) {
                     var d = v[r];
@@ -1458,7 +1458,7 @@ function oo() {
             return function(p, v, r) {
                 return v && e(p.prototype, v), r && e(p, r), p
             }
-        }(),
+        })(),
         t = T(),
         n = h(t),
         u = D(),
@@ -1499,7 +1499,7 @@ function oo() {
             }
         }), p && (Object.setPrototypeOf ? Object.setPrototypeOf(e, p) : e.__proto__ = p)
     }
-    var s = me.EditableInput = function(e) {
+    var s = me.EditableInput = (function(e) {
         a(p, e);
 
         function p(v) {
@@ -1604,7 +1604,7 @@ function oo() {
                 }, this.props.label) : null)
             }
         }]), p
-    }(t.PureComponent || t.Component);
+    })(t.PureComponent || t.Component);
     return me.default = s, me
 }
 var xe = {},
@@ -1663,7 +1663,7 @@ function uo() {
     na = 1, Object.defineProperty(xe, "__esModule", {
         value: !0
     }), xe.Hue = void 0;
-    var g = function() {
+    var g = (function() {
             function v(r, d) {
                 for (var l = 0; l < d.length; l++) {
                     var i = d[l];
@@ -1673,7 +1673,7 @@ function uo() {
             return function(r, d, l) {
                 return d && v(r.prototype, d), l && v(r, l), r
             }
-        }(),
+        })(),
         t = T(),
         n = c(t),
         u = D(),
@@ -1715,7 +1715,7 @@ function uo() {
             }
         }), r && (Object.setPrototypeOf ? Object.setPrototypeOf(v, r) : v.__proto__ = r)
     }
-    var p = xe.Hue = function(v) {
+    var p = xe.Hue = (function(v) {
         e(r, v);
 
         function r() {
@@ -1815,7 +1815,7 @@ function uo() {
                 }))))
             }
         }]), r
-    }(t.PureComponent || t.Component);
+    })(t.PureComponent || t.Component);
     return xe.default = p, xe
 }
 var ye = {},
@@ -1955,7 +1955,7 @@ function fo() {
     la = 1, Object.defineProperty(_e, "__esModule", {
         value: !0
     }), _e.Saturation = void 0;
-    var g = function() {
+    var g = (function() {
             function d(l, i) {
                 for (var w = 0; w < i.length; w++) {
                     var _ = i[w];
@@ -1965,7 +1965,7 @@ function fo() {
             return function(l, i, w) {
                 return i && d(l.prototype, i), w && d(l, w), l
             }
-        }(),
+        })(),
         t = T(),
         n = s(t),
         u = D(),
@@ -2009,7 +2009,7 @@ function fo() {
             }
         }), l && (Object.setPrototypeOf ? Object.setPrototypeOf(d, l) : d.__proto__ = l)
     }
-    var r = _e.Saturation = function(d) {
+    var r = _e.Saturation = (function(d) {
         v(l, d);
 
         function l(i) {
@@ -2117,7 +2117,7 @@ function fo() {
                 }))))
             }
         }]), l
-    }(t.PureComponent || t.Component);
+    })(t.PureComponent || t.Component);
     return _e.default = r, _e
 }
 var we = {},
@@ -2150,10 +2150,10 @@ var xt = {
     ca;
 
 function go() {
-    return ca || (ca = 1, function(g, t) {
+    return ca || (ca = 1, (function(g, t) {
         (function(n, u) {
             g.exports = u()
-        })(vo, function() {
+        })(vo, (function() {
             function n(b) {
                 "@babel/helpers - typeof";
                 return n = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(y) {
@@ -2825,7 +2825,7 @@ function go() {
             function ft(b) {
                 return V(b) / 255
             }
-            var Z = function() {
+            var Z = (function() {
                 var b = "[-\\+]?\\d+%?",
                     y = "[-\\+]?\\d*\\.\\d+%?",
                     x = "(?:" + y + ")|(?:" + b + ")",
@@ -2844,7 +2844,7 @@ function go() {
                     hex4: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
                     hex8: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/
                 }
-            }();
+            })();
 
             function Q(b) {
                 return !!Z.CSS_UNIT.exec(b)
@@ -2925,8 +2925,8 @@ function go() {
                 }
             }
             return h
-        })
-    }(xt)), xt.exports
+        }))
+    })(xt)), xt.exports
 }
 var fa;
 
@@ -3021,7 +3021,7 @@ function gn() {
             }
             return v
         },
-        t = function() {
+        t = (function() {
             function v(r, d) {
                 for (var l = 0; l < d.length; l++) {
                     var i = d[l];
@@ -3031,7 +3031,7 @@ function gn() {
             return function(r, d, l) {
                 return d && v(r.prototype, d), l && v(r, l), r
             }
-        }(),
+        })(),
         n = T(),
         u = c(n),
         m = ni(),
@@ -3066,7 +3066,7 @@ function gn() {
         }), r && (Object.setPrototypeOf ? Object.setPrototypeOf(v, r) : v.__proto__ = r)
     }
     var p = we.ColorWrap = function(r) {
-        var d = function(l) {
+        var d = (function(l) {
             e(i, l);
 
             function i(w) {
@@ -3102,7 +3102,7 @@ function gn() {
                     }, _))
                 }
             }]), i
-        }(n.PureComponent || n.Component);
+        })(n.PureComponent || n.Component);
         return d.propTypes = g({}, r.propTypes), d.defaultProps = g({}, r.defaultProps, {
             color: {
                 h: 250,
@@ -3130,7 +3130,7 @@ function bo() {
             }
             return c
         },
-        t = function() {
+        t = (function() {
             function c(a, s) {
                 for (var e = 0; e < s.length; e++) {
                     var p = s[e];
@@ -3140,7 +3140,7 @@ function bo() {
             return function(a, s, e) {
                 return s && c(a.prototype, s), e && c(a, e), a
             }
-        }(),
+        })(),
         n = T(),
         u = m(n);
 
@@ -3172,7 +3172,7 @@ function bo() {
     }
     return ot.handleFocus = function(a) {
         var s = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : "span";
-        return function(e) {
+        return (function(e) {
             o(p, e);
 
             function p() {
@@ -3200,7 +3200,7 @@ function bo() {
                     }, u.default.createElement(a, g({}, this.props, this.state)))
                 }
             }]), p
-        }(u.default.Component)
+        })(u.default.Component)
     }, ot
 }
 var pa;
@@ -3281,7 +3281,7 @@ function mo() {
 var va;
 
 function W() {
-    return va || (va = 1, function(g) {
+    return va || (va = 1, (function(g) {
         Object.defineProperty(g, "__esModule", {
             value: !0
         });
@@ -3347,7 +3347,7 @@ function W() {
                 default: s
             }
         }
-    }(rr)), rr
+    })(rr)), rr
 }
 var Ee = {},
     ga;
@@ -4206,7 +4206,7 @@ function Ro() {
     wa = 1, Object.defineProperty(qe, "__esModule", {
         value: !0
     }), qe.ChromeFields = void 0;
-    var g = function() {
+    var g = (function() {
             function v(r, d) {
                 for (var l = 0; l < d.length; l++) {
                     var i = d[l];
@@ -4216,7 +4216,7 @@ function Ro() {
             return function(r, d, l) {
                 return d && v(r.prototype, d), l && v(r, l), r
             }
-        }(),
+        })(),
         t = T(),
         n = c(t),
         u = D(),
@@ -4251,7 +4251,7 @@ function Ro() {
             }
         }), r && (Object.setPrototypeOf ? Object.setPrototypeOf(v, r) : v.__proto__ = r)
     }
-    var p = qe.ChromeFields = function(v) {
+    var p = qe.ChromeFields = (function(v) {
         e(r, v);
 
         function r() {
@@ -4523,7 +4523,7 @@ function Ro() {
                 })))))
             }
         }]), r
-    }(n.default.Component);
+    })(n.default.Component);
     return qe.default = p, qe
 }
 var Ae = {},
@@ -5989,7 +5989,7 @@ function zo() {
     Na = 1, Object.defineProperty($e, "__esModule", {
         value: !0
     }), $e.Photoshop = void 0;
-    var g = function() {
+    var g = (function() {
             function R(M, q) {
                 for (var A = 0; A < q.length; A++) {
                     var F = q[A];
@@ -5999,7 +5999,7 @@ function zo() {
             return function(M, q, A) {
                 return q && R(M.prototype, q), A && R(M, A), M
             }
-        }(),
+        })(),
         t = T(),
         n = w(t),
         u = ee(),
@@ -6044,7 +6044,7 @@ function zo() {
             }
         }), M && (Object.setPrototypeOf ? Object.setPrototypeOf(R, M) : R.__proto__ = M)
     }
-    var P = $e.Photoshop = function(R) {
+    var P = $e.Photoshop = (function(R) {
         O(M, R);
 
         function M(q) {
@@ -6164,7 +6164,7 @@ function zo() {
                 }))))))
             }
         }]), M
-    }(n.default.Component);
+    })(n.default.Component);
     return P.propTypes = {
         header: m.default.string
     }, P.defaultProps = {
@@ -7298,7 +7298,7 @@ function tl() {
 var Za;
 
 function rl() {
-    return Za || (Za = 1, function(g) {
+    return Za || (Za = 1, (function(g) {
         Object.defineProperty(g, "__esModule", {
             value: !0
         }), g.CustomPicker = g.TwitterPicker = g.SwatchesPicker = g.SliderPicker = g.SketchPicker = g.PhotoshopPicker = g.MaterialPicker = g.HuePicker = g.GithubPicker = g.CompactPicker = g.ChromePicker = g.default = g.CirclePicker = g.BlockPicker = g.AlphaPicker = void 0;
@@ -7408,7 +7408,7 @@ function rl() {
             }
         }
         g.default = d.default
-    }(Et)), Et
+    })(Et)), Et
 }
 var al = rl();
 const vu = () => {

@@ -1,6 +1,6 @@
 import {
-    aJ as y,
-    al as L
+    aS as y,
+    al as S
 } from "./App-41.js";
 import "./_index.js";
 import "./Button.js";
@@ -82,7 +82,7 @@ const I = (t, s, o, n, i) => {
         const l = Phaser.Math.Distance.Between(0, 0, s, o);
         return !(l > n || l < i)
     },
-    S = t => {
+    L = t => {
         const s = t.options.circleRadius * 2 + t.options.thickness / 2,
             o = t.options.circleRadius * 2 + t.options.thickness / 2,
             n = -Math.PI / 2 - t.options.circlePercentage / 100 * Math.PI,
@@ -223,11 +223,11 @@ const I = (t, s, o, n, i) => {
             return
         }
         if (o && i) {
-            S(t);
+            L(t);
             return
         }
     };
-class Zt extends L {
+class Zt extends S {
     constructor(s) {
         super(s), this.onStateChange = o => {}, T(this)
     }

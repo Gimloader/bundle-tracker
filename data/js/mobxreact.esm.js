@@ -31,7 +31,7 @@ function ne(e) {
 }
 var oe = 1e4,
     ie = 1e4,
-    ae = function() {
+    ae = (function() {
         function e(r) {
             var t = this;
             Object.defineProperty(this, "finalize", {
@@ -94,7 +94,7 @@ var oe = 1e4,
                 this.sweepTimeout === void 0 && (this.sweepTimeout = setTimeout(this.sweep, ie))
             }
         }), e
-    }(),
+    })(),
     ue = typeof FinalizationRegistry < "u" ? FinalizationRegistry : ae,
     T = new ue(function(e) {
         var r;
@@ -126,10 +126,10 @@ var oe = 1e4,
 function M(e) {
     return "observer".concat(e)
 }
-var ce = function() {
+var ce = (function() {
     function e() {}
     return e
-}();
+})();
 
 function se() {
     return new ce

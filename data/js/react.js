@@ -16,10 +16,10 @@ var R = O.exports,
     S;
 
 function B() {
-    return S || (S = 1, function(M, P) {
+    return S || (S = 1, (function(M, P) {
         (function(v, x) {
             M.exports = x()
-        })(R, function() {
+        })(R, (function() {
             return (() => {
                 var v = {
                         511: (d, o, r) => {
@@ -70,7 +70,7 @@ function B() {
                         },
                         449: function(d, o, r) {
                             var h = this && this.__awaiter || function(t, i, n, u) {
-                                return new(n || (n = Promise))(function(m, a) {
+                                return new(n || (n = Promise))((function(m, a) {
                                     function s(_) {
                                         try {
                                             l(u.next(_))
@@ -89,12 +89,12 @@ function B() {
 
                                     function l(_) {
                                         var p;
-                                        _.done ? m(_.value) : (p = _.value, p instanceof n ? p : new n(function(y) {
+                                        _.done ? m(_.value) : (p = _.value, p instanceof n ? p : new n((function(y) {
                                             y(p)
-                                        })).then(s, c)
+                                        }))).then(s, c)
                                     }
                                     l((u = u.apply(t, i || [])).next())
-                                })
+                                }))
                             };
                             Object.defineProperty(o, "__esModule", {
                                 value: !0
@@ -115,16 +115,16 @@ function B() {
                                     this.onInit && this.options.enabled && (this.onInit = !1, this._audioContext = new(window.AudioContext || window.webkitAudioContext), this.load())
                                 }
                                 load() {
-                                    return h(this, void 0, void 0, function*() {
+                                    return h(this, void 0, void 0, (function*() {
                                         for (var t of this.options.files) {
                                             var i = yield(yield fetch(t)).arrayBuffer();
-                                            this._audioContext.decodeAudioData(i).then(n => {
+                                            this._audioContext.decodeAudioData(i).then((n => {
                                                 this._buffer.push(n)
-                                            }).catch(n => {
+                                            })).catch((n => {
                                                 throw n
-                                            })
+                                            }))
                                         }
-                                    })
+                                    }))
                                 }
                                 play() {
                                     if (this.options.enabled && this._buffer.length) {
@@ -247,13 +247,13 @@ function B() {
                                     min: .015,
                                     max: .03
                                 }
-                            }, u), this.autoresize && window.addEventListener("resize", () => this.windowResize()), this._canvas.addEventListener("mousedown", b => {
+                            }, u), this.autoresize && window.addEventListener("resize", (() => this.windowResize())), this._canvas.addEventListener("mousedown", (b => {
                                 this.mouseDown(b)
-                            }), this._canvas.addEventListener("mouseup", b => {
+                            })), this._canvas.addEventListener("mouseup", (b => {
                                 this.mouseUp(b)
-                            }), this._canvas.addEventListener("mousemove", b => {
+                            })), this._canvas.addEventListener("mousemove", (b => {
                                 this.mouseMove(b)
-                            })
+                            }))
                         }
                         get isRunning() {
                             return this._running
@@ -314,7 +314,7 @@ function B() {
                         render() {
                             var t = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : this._timestamp;
                             if (this._ctx && this._running) {
-                                requestAnimationFrame(n => this.render(n)), this._ctx.globalCompositeOperation = "destination-out", this._ctx.fillStyle = "rgba(0, 0, 0, ".concat(this.opacity, ")"), this._ctx.fillRect(0, 0, this._width, this._height), this._ctx.globalCompositeOperation = "lighter", this._ctx.lineCap = this.lineStyle, this._ctx.lineJoin = "round", this.drawBoundaries(), this.initTrace(), this.drawTrace(), this.drawExplosion();
+                                requestAnimationFrame((n => this.render(n))), this._ctx.globalCompositeOperation = "destination-out", this._ctx.fillStyle = "rgba(0, 0, 0, ".concat(this.opacity, ")"), this._ctx.fillRect(0, 0, this._width, this._height), this._ctx.globalCompositeOperation = "lighter", this._ctx.lineCap = this.lineStyle, this._ctx.lineJoin = "round", this.drawBoundaries(), this.initTrace(), this.drawTrace(), this.drawExplosion();
                                 var i = t - this._timestamp;
                                 this._timestamp = t, this._tick += i * (this.intensity * Math.PI) / 1e3
                             }
@@ -337,9 +337,9 @@ function B() {
                         }
                         drawTrace() {
                             var t = this._traces.length;
-                            for (this._ctx.lineWidth = (0, e.randomFloat)(this.lineWidth.trace.min, this.lineWidth.trace.max); t--;) this._traces[t].draw(), this._traces[t].update((i, n, u) => {
+                            for (this._ctx.lineWidth = (0, e.randomFloat)(this.lineWidth.trace.min, this.lineWidth.trace.max); t--;) this._traces[t].draw(), this._traces[t].update(((i, n, u) => {
                                 this.initExplosion(i, n, u), this._sound.play(), this._traces.splice(t, 1)
-                            })
+                            }))
                         }
                         initExplosion(t, i, n) {
                             for (var u = this.particles; u--;) this._explosions.push(new h.Explosion({
@@ -356,15 +356,15 @@ function B() {
                             }))
                         }
                         drawExplosion() {
-                            for (var t = this._explosions.length; t--;) this._explosions[t].draw(), this._explosions[t].update(() => {
+                            for (var t = this._explosions.length; t--;) this._explosions[t].draw(), this._explosions[t].update((() => {
                                 this._explosions.splice(t, 1)
-                            })
+                            }))
                         }
                     }
                 })(), g
             })()
-        })
-    }(O)), O.exports
+        }))
+    })(O)), O.exports
 }
 /*!
  * fireworks-js 1.4.1 by Vitalij Ryndin (https://crashmax.ru)
@@ -375,10 +375,10 @@ var q = k.exports,
     E;
 
 function U() {
-    return E || (E = 1, function(M, P) {
+    return E || (E = 1, (function(M, P) {
         (function(v, x) {
             M.exports = x(B(), z())
-        })(q, function(v, x) {
+        })(q, (function(v, x) {
             return (() => {
                 var f = {
                         21: function(o, r, h) {
@@ -424,7 +424,7 @@ function U() {
                                     options: p,
                                     setOptions: y,
                                     setEnabled: w => {
-                                        _(j => w ?? !j)
+                                        _((j => w ?? !j))
                                     }
                                 }
                             };
@@ -468,18 +468,18 @@ function U() {
                         }
                     },
                     g = {},
-                    d = function o(r) {
+                    d = (function o(r) {
                         var h = g[r];
                         if (h !== void 0) return h.exports;
                         var e = g[r] = {
                             exports: {}
                         };
                         return f[r].call(e.exports, e, e.exports, o), e.exports
-                    }(21);
+                    })(21);
                 return d
             })()
-        })
-    }(k)), k.exports
+        }))
+    })(k)), k.exports
 }
 var H = U();
 export {

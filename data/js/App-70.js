@@ -9,9 +9,9 @@ import {
     T as Le,
     aW as Be,
     t as We,
-    dI as oe,
+    dK as oe,
     _ as ye,
-    dg as qe,
+    dh as qe,
     aw as Ue,
     bg as re,
     ar as be,
@@ -542,7 +542,7 @@ function P(e) {
 }
 
 function nr(e) {
-    var t = function(n) {
+    var t = (function(n) {
         rr(r, n);
 
         function r() {
@@ -568,7 +568,7 @@ function nr(e) {
             var o = this.props.children;
             return o ? k.createElement(e.Consumer, null, this.renderProvider) : null
         }, r
-    }(k.Component);
+    })(k.Component);
     return t
 }
 

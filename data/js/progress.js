@@ -58,7 +58,7 @@ function je() {
     var e;
     return Oe ? (e = oe, oe += 1) : e = "TEST_OR_SSR", e
 }
-const De = function(e) {
+const De = (function(e) {
     var t = i.useState(),
         r = ue(t, 2),
         o = r[0],
@@ -66,7 +66,7 @@ const De = function(e) {
     return i.useEffect(function() {
         n("rc_progress_".concat(je()))
     }, []), e || o
-};
+});
 var ne = function(t) {
     var r = t.bg,
         o = t.children;

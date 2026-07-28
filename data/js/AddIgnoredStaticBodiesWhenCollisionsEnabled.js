@@ -1,17 +1,12 @@
 import {
-    T as e
+    aT as i
 } from "./App-41.js";
-import {
-    F as i
-} from "./FixSpinePlugin.js";
-const l = r => {
-    const o = i(e());
-    r.colliders.forEach(s => {
-        var d, t, c;
-        const a = s.bodyId;
-        (c = (t = (d = o == null ? void 0 : o.physics.getBody()) == null ? void 0 : d.character) == null ? void 0 : t.ignoredStaticBodies) == null || c.add(a)
+const t = o => {
+    o.colliders.forEach(d => {
+        const e = d.bodyId;
+        i(e)
     })
 };
 export {
-    l as A
+    t as A
 };

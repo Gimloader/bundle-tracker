@@ -378,11 +378,11 @@ var N = function(e, t, r) {
     },
     ee = function(e, t, r) {
         var o = e.getBoundingClientRect(),
-            a = _(t) ? function(s, u) {
+            a = _(t) ? (function(s, u) {
                 for (var l = 0; l < s.length; l++)
                     if (s[l].identifier === u) return s[l];
                 return s[0]
-            }(t.touches, r) : t;
+            })(t.touches, r) : t;
         return {
             left: N((a.pageX - (o.left + L(e).pageXOffset)) / o.width),
             top: N((a.pageY - (o.top + L(e).pageYOffset)) / o.height)
@@ -417,9 +417,9 @@ var N = function(e, t, r) {
                 return [function(g) {
                     var x = g.nativeEvent,
                         p = a.current;
-                    if (p && (te(x), ! function(Se, ke) {
+                    if (p && (te(x), !(function(Se, ke) {
                             return ke && !_(Se)
-                        }(x, f.current) && p)) {
+                        })(x, f.current) && p)) {
                         if (_(x)) {
                             f.current = !0;
                             var w = x.changedTouches || [];

@@ -4,7 +4,7 @@ import {
     r as p,
     i as y,
     D as l,
-    dK as j,
+    dM as j,
     u as g,
     a as u,
     t as b,
@@ -65,7 +65,7 @@ const c = t => e.jsx(w, {
 you're currently part of. You will also lose any content you've
 created and cosmetics earned.`,
     m = "delete my account",
-    F = t => {
+    M = t => {
         const [o, n] = p.useState(""), s = o !== m, r = () => {
             s || t.continue()
         };
@@ -94,7 +94,7 @@ created and cosmetics earned.`,
             })]
         })
     },
-    I = () => e.jsxs(e.Fragment, {
+    F = () => e.jsxs(e.Fragment, {
         children: [e.jsx("h1", {
             children: "Add a password to delete your account"
         }), e.jsx("p", {
@@ -104,7 +104,7 @@ created and cosmetics earned.`,
             children: "Go To Settings"
         })]
     }),
-    M = () => {
+    I = () => {
         const [t, o, n] = g(!1), [s, r] = p.useState(""), a = !s.length, x = () => {
             if (a || t) return;
             const i = y();
@@ -153,7 +153,7 @@ created and cosmetics earned.`,
         })
     },
     ce = () => {
-        const [t, o] = g(!1), n = () => E().passwordless ? e.jsx(I, {}) : t ? e.jsx(M, {}) : e.jsx(F, {
+        const [t, o] = g(!1), n = () => E().passwordless ? e.jsx(F, {}) : t ? e.jsx(I, {}) : e.jsx(M, {
             continue: o
         });
         return e.jsxs(e.Fragment, {

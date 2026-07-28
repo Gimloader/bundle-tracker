@@ -8,10 +8,10 @@ var t = {
     u;
 
 function p() {
-    return u || (u = 1, function(d, l) {
+    return u || (u = 1, (function(d, l) {
         (function(f, a) {
             d.exports = a()
-        })(w, function() {
+        })(w, (function() {
             return function(f, a) {
                 var s = a.prototype,
                     o = s.format;
@@ -20,7 +20,7 @@ function p() {
                         i = this.$locale();
                     if (!this.isValid()) return o.bind(this)(c);
                     var n = this.$utils(),
-                        m = (c || "YYYY-MM-DDTHH:mm:ssZ").replace(/\[([^\]]+)]|Q|wo|ww|w|WW|W|zzz|z|gggg|GGGG|Do|X|x|k{1,2}|S/g, function(r) {
+                        m = (c || "YYYY-MM-DDTHH:mm:ssZ").replace(/\[([^\]]+)]|Q|wo|ww|w|WW|W|zzz|z|gggg|GGGG|Do|X|x|k{1,2}|S/g, (function(r) {
                             switch (r) {
                                 case "Q":
                                     return Math.ceil((e.$M + 1) / 3);
@@ -52,12 +52,12 @@ function p() {
                                 default:
                                     return r
                             }
-                        });
+                        }));
                     return o.bind(this)(m)
                 }
             }
-        })
-    }(t)), t.exports
+        }))
+    })(t)), t.exports
 }
 var v = p();
 const h = g(v);

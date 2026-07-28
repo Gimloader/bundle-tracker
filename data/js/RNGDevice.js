@@ -4,8 +4,8 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     al as m,
-    am as p,
-    an as e
+    aA as p,
+    aB as e
 } from "./App-41.js";
 import "./GetAssetPath.js";
 import "./_index.js";

@@ -6,20 +6,20 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     F as f,
-    R as B
+    R as S
 } from "./ReplaceVisualEditingPreview.js";
 import {
-    aG as d,
-    as as T,
-    aH as L,
+    aP as d,
+    am as T,
+    aQ as L,
     al as C,
-    au as F,
-    aI as D,
-    am as _,
-    an as k
+    aq as F,
+    aR as D,
+    aA as _,
+    aB as k
 } from "./App-41.js";
 import {
-    G
+    G as P
 } from "./GetAssetPath.js";
 import "./_index.js";
 import "./MapModeType.js";
@@ -110,7 +110,7 @@ const b = o => {
         }
     },
     y = o => Math.floor(o / d.width),
-    O = o => {
+    R = o => {
         const i = {
                 x: o.x,
                 y: o.y
@@ -133,8 +133,8 @@ const b = o => {
             const a = i.x - t.x,
                 l = t.x + t.width - i.x,
                 c = i.y - t.y,
-                S = t.y + t.height - i.y,
-                x = Math.min(a, l, c, S);
+                B = t.y + t.height - i.y,
+                x = Math.min(a, l, c, B);
             return x === a ? {
                 x: t.x,
                 y: i.y
@@ -155,7 +155,7 @@ const b = o => {
         }
     },
     Y = 1e3,
-    P = o => {
+    O = o => {
         const i = L.Fill3 + .1,
             n = (Y - o.options.order + T(o.y) / Y) * .1;
         return i + n
@@ -178,7 +178,7 @@ class ti extends C {
                     minY: r,
                     maxX: t,
                     maxY: p
-                } = b(this), m = P(this), a = u().tileManager.layerManager.backgroundLayersManager.createLayer({
+                } = b(this), m = O(this), a = u().tileManager.layerManager.backgroundLayersManager.createLayer({
                     layerId: this.id,
                     depth: m
                 }), l = {
@@ -206,7 +206,7 @@ class ti extends C {
                 this.removeLayer()
             }, this.addConnectionLine = () => {
                 if (this.options.useFullMapSize) return;
-                const e = O(this),
+                const e = R(this),
                     s = Phaser.Math.Distance.Between(this.x, this.y, e.x, e.y),
                     r = Phaser.Math.Angle.Between(this.x, this.y, e.x, e.y);
                 this.parts.add.rect({
@@ -253,7 +253,7 @@ class ti extends C {
                     x: this.options.zoneX - this.x,
                     y: this.options.zoneY - this.y,
                     onChange: r => {
-                        B(this.x, this.y, {
+                        S(this.x, this.y, {
                             width: r.width,
                             height: r.height,
                             zoneX: r.x,
@@ -271,7 +271,7 @@ class ti extends C {
             boxColor: n.boxColor,
             content: {
                 icon: {
-                    image: G("devices/background_tile_zone/icon.png"),
+                    image: P("devices/background_tile_zone/icon.png"),
                     scale: 1
                 },
                 text: {

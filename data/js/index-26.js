@@ -517,7 +517,7 @@ function Lr() {
 var ct;
 
 function Ur() {
-    return ct || (ct = 1, function(o, n) {
+    return ct || (ct = 1, (function(o, n) {
         n = o.exports = s.debug = s.default = s, n.coerce = h, n.disable = l, n.enable = a, n.enabled = c, n.humanize = Lr(), n.instances = [], n.names = [], n.skips = [], n.formatters = {};
 
         function d(t) {
@@ -589,12 +589,12 @@ function Ur() {
         function h(t) {
             return t instanceof Error ? t.stack || t.message : t
         }
-    }(G, G.exports)), G.exports
+    })(G, G.exports)), G.exports
 }
 var ut;
 
 function de() {
-    return ut || (ut = 1, function(o, n) {
+    return ut || (ut = 1, (function(o, n) {
         var d = {};
         n = o.exports = Ur(), n.log = a, n.formatArgs = u, n.save = l, n.load = c, n.useColors = s, n.storage = typeof chrome < "u" && typeof chrome.storage < "u" ? chrome.storage.local : h(), n.colors = ["#0000CC", "#0000FF", "#0033CC", "#0033FF", "#0066CC", "#0066FF", "#0099CC", "#0099FF", "#00CC00", "#00CC33", "#00CC66", "#00CC99", "#00CCCC", "#00CCFF", "#3300CC", "#3300FF", "#3333CC", "#3333FF", "#3366CC", "#3366FF", "#3399CC", "#3399FF", "#33CC00", "#33CC33", "#33CC66", "#33CC99", "#33CCCC", "#33CCFF", "#6600CC", "#6600FF", "#6633CC", "#6633FF", "#66CC00", "#66CC33", "#9900CC", "#9900FF", "#9933CC", "#9933FF", "#99CC00", "#99CC33", "#CC0000", "#CC0033", "#CC0066", "#CC0099", "#CC00CC", "#CC00FF", "#CC3300", "#CC3333", "#CC3366", "#CC3399", "#CC33CC", "#CC33FF", "#CC6600", "#CC6633", "#CC9900", "#CC9933", "#CCCC00", "#CCCC33", "#FF0000", "#FF0033", "#FF0066", "#FF0099", "#FF00CC", "#FF00FF", "#FF3300", "#FF3333", "#FF3366", "#FF3399", "#FF33CC", "#FF33FF", "#FF6600", "#FF6633", "#FF9900", "#FF9933", "#FFCC00", "#FFCC33"];
 
@@ -646,7 +646,7 @@ function de() {
                 return window.localStorage
             } catch {}
         }
-    }(K, K.exports)), K.exports
+    })(K, K.exports)), K.exports
 }
 var we, ft;
 
@@ -755,7 +755,7 @@ function Hr() {
 var lt;
 
 function jr() {
-    return lt || (lt = 1, function(o, n) {
+    return lt || (lt = 1, (function(o, n) {
         n = o.exports = s.debug = s.default = s, n.coerce = h, n.disable = l, n.enable = a, n.enabled = c, n.humanize = Hr(), n.instances = [], n.names = [], n.skips = [], n.formatters = {};
 
         function d(t) {
@@ -827,12 +827,12 @@ function jr() {
         function h(t) {
             return t instanceof Error ? t.stack || t.message : t
         }
-    }(Q, Q.exports)), Q.exports
+    })(Q, Q.exports)), Q.exports
 }
 var dt;
 
 function Jr() {
-    return dt || (dt = 1, function(o, n) {
+    return dt || (dt = 1, (function(o, n) {
         var d = {};
         n = o.exports = jr(), n.log = a, n.formatArgs = u, n.save = l, n.load = c, n.useColors = s, n.storage = typeof chrome < "u" && typeof chrome.storage < "u" ? chrome.storage.local : h(), n.colors = ["#0000CC", "#0000FF", "#0033CC", "#0033FF", "#0066CC", "#0066FF", "#0099CC", "#0099FF", "#00CC00", "#00CC33", "#00CC66", "#00CC99", "#00CCCC", "#00CCFF", "#3300CC", "#3300FF", "#3333CC", "#3333FF", "#3366CC", "#3366FF", "#3399CC", "#3399FF", "#33CC00", "#33CC33", "#33CC66", "#33CC99", "#33CCCC", "#33CCFF", "#6600CC", "#6600FF", "#6633CC", "#6633FF", "#66CC00", "#66CC33", "#9900CC", "#9900FF", "#9933CC", "#9933FF", "#99CC00", "#99CC33", "#CC0000", "#CC0033", "#CC0066", "#CC0099", "#CC00CC", "#CC00FF", "#CC3300", "#CC3333", "#CC3366", "#CC3399", "#CC33CC", "#CC33FF", "#CC6600", "#CC6633", "#CC9900", "#CC9933", "#CCCC00", "#CCCC33", "#FF0000", "#FF0033", "#FF0066", "#FF0099", "#FF00CC", "#FF00FF", "#FF3300", "#FF3333", "#FF3366", "#FF3399", "#FF33CC", "#FF33FF", "#FF6600", "#FF6633", "#FF9900", "#FF9933", "#FFCC00", "#FFCC33"];
 
@@ -884,7 +884,7 @@ function Jr() {
                 return window.localStorage
             } catch {}
         }
-    }(Z, Z.exports)), Z.exports
+    })(Z, Z.exports)), Z.exports
 }
 var Fe = {
         exports: {}
@@ -892,7 +892,7 @@ var Fe = {
     pt;
 
 function U() {
-    return pt || (pt = 1, function(o) {
+    return pt || (pt = 1, (function(o) {
         o.exports = n;
 
         function n(s) {
@@ -933,7 +933,7 @@ function U() {
         }, n.prototype.hasListeners = function(s) {
             return !!this.listeners(s).length
         }
-    }(Fe)), Fe.exports
+    })(Fe)), Fe.exports
 }
 var X = {},
     xe, gt;
@@ -1038,7 +1038,7 @@ function Wr() {
 var mt;
 
 function et() {
-    return mt || (mt = 1, function(o) {
+    return mt || (mt = 1, (function(o) {
         var n = Jr()("socket.io-parser"),
             d = U(),
             s = Wr(),
@@ -1184,7 +1184,7 @@ function et() {
                 data: "parser error: " + y
             }
         }
-    }(be)), be
+    })(be)), be
 }
 var ee = {
         exports: {}
@@ -1208,9 +1208,9 @@ function zr() {
 var Re, wt;
 
 function tt() {
-    return wt || (wt = 1, Re = function() {
+    return wt || (wt = 1, Re = (function() {
         return typeof self < "u" ? self : typeof window < "u" ? window : Function("return this")()
-    }()), Re
+    })()), Re
 }
 var ke, bt;
 
@@ -1398,7 +1398,7 @@ var ie = {},
     Et;
 
 function Zr() {
-    return Et || (Et = 1, function(o) {
+    return Et || (Et = 1, (function(o) {
         ie.encode = function(n) {
             var d = new Uint8Array(n),
                 s, u = d.length,
@@ -1416,7 +1416,7 @@ function Zr() {
             for (u = 0; u < s; u += 4) l = o.indexOf(n[u]), c = o.indexOf(n[u + 1]), h = o.indexOf(n[u + 2]), t = o.indexOf(n[u + 3]), e[a++] = l << 2 | c >> 4, e[a++] = (c & 15) << 4 | h >> 2, e[a++] = (h & 3) << 6 | t & 63;
             return r
         }
-    }("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/")), ie
+    })("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/")), ie
 }
 var Te, Bt;
 
@@ -1424,22 +1424,22 @@ function Qr() {
     if (Bt) return Te;
     Bt = 1;
     var o = typeof o < "u" ? o : typeof WebKitBlobBuilder < "u" ? WebKitBlobBuilder : typeof MSBlobBuilder < "u" ? MSBlobBuilder : typeof MozBlobBuilder < "u" ? MozBlobBuilder : !1,
-        n = function() {
+        n = (function() {
             try {
                 var c = new Blob(["hi"]);
                 return c.size === 2
             } catch {
                 return !1
             }
-        }(),
-        d = n && function() {
+        })(),
+        d = n && (function() {
             try {
                 var c = new Blob([new Uint8Array([1, 2])]);
                 return c.size === 2
             } catch {
                 return !1
             }
-        }(),
+        })(),
         s = o && o.prototype.append && o.prototype.getBlob;
 
     function u(c) {
@@ -1467,14 +1467,14 @@ function Qr() {
     function l(c, h) {
         return new Blob(u(c), h || {})
     }
-    return typeof Blob < "u" && (a.prototype = Blob.prototype, l.prototype = Blob.prototype), Te = function() {
+    return typeof Blob < "u" && (a.prototype = Blob.prototype, l.prototype = Blob.prototype), Te = (function() {
         return n ? d ? Blob : l : s ? a : void 0
-    }(), Te
+    })(), Te
 }
 var St;
 
 function z() {
-    return St || (St = 1, function(o) {
+    return St || (St = 1, (function(o) {
         var n = Xr(),
             d = yr(),
             s = Yr(),
@@ -1726,7 +1726,7 @@ function z() {
                 F(o.decodePacket(T, _, !0), P, q)
             })
         }
-    }(Ee)), Ee
+    })(Ee)), Ee
 }
 var Pe, qt;
 
@@ -1904,7 +1904,7 @@ function en() {
 var Pt;
 
 function tn() {
-    return Pt || (Pt = 1, function(o, n) {
+    return Pt || (Pt = 1, (function(o, n) {
         n = o.exports = s.debug = s.default = s, n.coerce = h, n.disable = l, n.enable = a, n.enabled = c, n.humanize = en(), n.instances = [], n.names = [], n.skips = [], n.formatters = {};
 
         function d(t) {
@@ -1976,12 +1976,12 @@ function tn() {
         function h(t) {
             return t instanceof Error ? t.stack || t.message : t
         }
-    }(ae, ae.exports)), ae.exports
+    })(ae, ae.exports)), ae.exports
 }
 var It;
 
 function ye() {
-    return It || (It = 1, function(o, n) {
+    return It || (It = 1, (function(o, n) {
         var d = {};
         n = o.exports = tn(), n.log = a, n.formatArgs = u, n.save = l, n.load = c, n.useColors = s, n.storage = typeof chrome < "u" && typeof chrome.storage < "u" ? chrome.storage.local : h(), n.colors = ["#0000CC", "#0000FF", "#0033CC", "#0033FF", "#0066CC", "#0066FF", "#0099CC", "#0099FF", "#00CC00", "#00CC33", "#00CC66", "#00CC99", "#00CCCC", "#00CCFF", "#3300CC", "#3300FF", "#3333CC", "#3333FF", "#3366CC", "#3366FF", "#3399CC", "#3399FF", "#33CC00", "#33CC33", "#33CC66", "#33CC99", "#33CCCC", "#33CCFF", "#6600CC", "#6600FF", "#6633CC", "#6633FF", "#66CC00", "#66CC33", "#9900CC", "#9900FF", "#9933CC", "#9933FF", "#99CC00", "#99CC33", "#CC0000", "#CC0033", "#CC0066", "#CC0099", "#CC00CC", "#CC00FF", "#CC3300", "#CC3333", "#CC3366", "#CC3399", "#CC33CC", "#CC33FF", "#CC6600", "#CC6633", "#CC9900", "#CC9933", "#CCCC00", "#CCCC33", "#FF0000", "#FF0033", "#FF0066", "#FF0099", "#FF00CC", "#FF00FF", "#FF3300", "#FF3333", "#FF3366", "#FF3399", "#FF33CC", "#FF33FF", "#FF6600", "#FF6633", "#FF9900", "#FF9933", "#FFCC00", "#FFCC33"];
 
@@ -2033,7 +2033,7 @@ function ye() {
                 return window.localStorage
             } catch {}
         }
-    }(oe, oe.exports)), oe.exports
+    })(oe, oe.exports)), oe.exports
 }
 var Ue, Mt;
 
@@ -2047,13 +2047,13 @@ function mr() {
         u = vr(),
         a = ye()("engine.io-client:polling");
     Ue = c;
-    var l = function() {
+    var l = (function() {
         var h = rt(),
             t = new h({
                 xdomain: !1
             });
         return t.responseType != null
-    }();
+    })();
 
     function c(h) {
         var t = h && h.forceBase64;
@@ -2746,7 +2746,7 @@ function br() {
 var Kt;
 
 function _r() {
-    return Kt || (Kt = 1, function(o, n) {
+    return Kt || (Kt = 1, (function(o, n) {
         var d = et(),
             s = U(),
             u = cn(),
@@ -2879,7 +2879,7 @@ function _r() {
         }, i.prototype.binary = function(f) {
             return this.flags.binary = f, this
         }
-    }(We)), We.exports
+    })(We)), We.exports
 }
 var Ye, Gt;
 
@@ -3064,7 +3064,7 @@ function Qt() {
 var er;
 
 function fn() {
-    return er || (er = 1, function(o, n) {
+    return er || (er = 1, (function(o, n) {
         var d = $r(),
             s = et(),
             u = Qt(),
@@ -3084,7 +3084,7 @@ function fn() {
             return g ? (a("ignoring socket cache for %s", e), w = u(e, t)) : (l[i] || (a("new io instance for %s", e), l[i] = u(e, t)), w = l[i]), r.query && !t.query && (t.query = r.query), w.socket(r.path, t)
         }
         n.protocol = s.protocol, n.connect = c, n.Manager = Qt(), n.Socket = _r()
-    }(Y, Y.exports)), Y.exports
+    })(Y, Y.exports)), Y.exports
 }
 var Ge = {},
     ce = {},
@@ -3332,7 +3332,7 @@ function dn() {
 var ir;
 
 function pn() {
-    return ir || (ir = 1, function(o) {
+    return ir || (ir = 1, (function(o) {
         var n = dn(),
             d = U();
         o.CONNECT = 0, o.DISCONNECT = 1, o.EVENT = 2, o.ACK = 3, o.ERROR = 4, o.BINARY_EVENT = 5, o.BINARY_ACK = 6;
@@ -3385,7 +3385,7 @@ function pn() {
             var r = h.id === void 0 || s(h.id);
             if (!r) throw new Error("invalid packet id")
         }, l.prototype.destroy = function() {}, o.Encoder = a, o.Decoder = l
-    }(Ge)), Ge
+    })(Ge)), Ge
 }
 var ue = {},
     sr;

@@ -288,7 +288,7 @@ const Z = l.createContext(null),
             }
         }
     }),
-    be = t => Object.assign({}, Ve(t)),
+    be = t => Ve(t),
     $e = (t, o) => {
         const {
             componentCls: e,

@@ -7,8 +7,8 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     al as a,
-    am as s,
-    an as c
+    aA as s,
+    aB as c
 } from "./App-41.js";
 import "./_index.js";
 import "./MapModeType.js";
@@ -78,7 +78,7 @@ import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var t = (o => (o.callToAction = "primaryCallToAction", o))(t || {});
-class Po extends a {
+class Mo extends a {
     constructor(r) {
         if (super(r), this.useCallToAction = () => {
                 this.sendToServerDevice(t.callToAction)
@@ -99,6 +99,6 @@ class Po extends a {
     }
 }
 export {
-    Po as
+    Mo as
     default
 };

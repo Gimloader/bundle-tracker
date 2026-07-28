@@ -66,7 +66,7 @@ const K = i.createContext(null),
             colorBorder: S,
             lineWidth: x,
             colorBgContainerDisabled: C,
-            colorTextDisabled: O,
+            colorTextDisabled: E,
             paddingXS: $,
             dotColorDisabled: w,
             lineType: I,
@@ -127,7 +127,7 @@ const K = i.createContext(null),
         &:hover ${y}`]: {
                     borderColor: o
                 },
-                [`${r}-input:focus-visible + ${y}`]: Object.assign({}, F(t)),
+                [`${r}-input:focus-visible + ${y}`]: F(t),
                 [`${r}:hover::after, ${r}-wrapper:hover &::after`]: {
                     visibility: "visible"
                 },
@@ -201,7 +201,7 @@ const K = i.createContext(null),
                         cursor: "not-allowed"
                     },
                     [`${r}-disabled + span`]: {
-                        color: O,
+                        color: E,
                         cursor: "not-allowed"
                     },
                     [`&${r}-checked`]: {
@@ -232,7 +232,7 @@ const K = i.createContext(null),
             buttonPaddingInline: S,
             fontSize: x,
             buttonBg: C,
-            fontSizeLG: O,
+            fontSizeLG: E,
             controlHeightLG: $,
             controlHeightSM: w,
             paddingXS: I,
@@ -245,7 +245,7 @@ const K = i.createContext(null),
             colorBgContainerDisabled: l,
             buttonCheckedBgDisabled: j,
             buttonCheckedColorDisabled: D,
-            colorPrimary: E,
+            colorPrimary: O,
             colorPrimaryHover: k,
             colorPrimaryActive: a,
             buttonSolidCheckedBg: P,
@@ -312,7 +312,7 @@ const K = i.createContext(null),
                 },
                 [`${o}-group-large &`]: {
                     height: $,
-                    fontSize: O,
+                    fontSize: E,
                     lineHeight: z(g($).sub(g(e).mul(2)).equal()),
                     "&:first-child": {
                         borderStartStartRadius: b,
@@ -339,9 +339,9 @@ const K = i.createContext(null),
                 },
                 "&:hover": {
                     position: "relative",
-                    color: E
+                    color: O
                 },
-                "&:has(:focus-visible)": Object.assign({}, F(t)),
+                "&:has(:focus-visible)": F(t),
                 [`${o}-inner, input[type='checkbox'], input[type='radio']`]: {
                     width: 0,
                     height: 0,
@@ -350,14 +350,14 @@ const K = i.createContext(null),
                 },
                 [`&-checked:not(${o}-button-wrapper-disabled)`]: {
                     zIndex: 1,
-                    color: E,
+                    color: O,
                     background: y,
-                    borderColor: E,
+                    borderColor: O,
                     "&::before": {
-                        backgroundColor: E
+                        backgroundColor: O
                     },
                     "&:first-child": {
-                        borderColor: E
+                        borderColor: O
                     },
                     "&:hover": {
                         color: k,
@@ -426,7 +426,7 @@ const K = i.createContext(null),
             controlItemBgActiveDisabled: S,
             colorTextLightSolid: x,
             colorPrimary: C,
-            colorPrimaryHover: O,
+            colorPrimaryHover: E,
             colorPrimaryActive: $,
             colorWhite: w
         } = t, I = 4, u = s, h = r ? u - I * 2 : u - (I + e) * 2;
@@ -436,7 +436,7 @@ const K = i.createContext(null),
             dotColorDisabled: c,
             buttonSolidCheckedColor: x,
             buttonSolidCheckedBg: C,
-            buttonSolidCheckedHoverBg: O,
+            buttonSolidCheckedHoverBg: E,
             buttonSolidCheckedActiveBg: $,
             buttonBg: m,
             buttonCheckedBg: m,
@@ -485,7 +485,7 @@ const ke = (t, r) => {
             {
                 isFormItemInput: C
             } = i.useContext(X),
-            O = M => {
+            E = M => {
                 var T, N;
                 (T = t.onChange) === null || T === void 0 || T.call(t, M), (N = e == null ? void 0 : e.onChange) === null || N === void 0 || N.call(e, M)
             },
@@ -502,17 +502,17 @@ const ke = (t, r) => {
             v = ((e == null ? void 0 : e.optionType) || s) === "button",
             l = v ? `${f}-button` : f,
             j = J(f),
-            [D, E, k] = U(f, j),
+            [D, O, k] = U(f, j),
             a = Object.assign({}, y),
             P = i.useContext(ne);
-        e && (a.name = e.name, a.onChange = O, a.checked = t.value === e.value, a.disabled = (n = a.disabled) !== null && n !== void 0 ? n : e.disabled), a.disabled = (o = a.disabled) !== null && o !== void 0 ? o : P;
+        e && (a.name = e.name, a.onChange = E, a.checked = t.value === e.value, a.disabled = (n = a.disabled) !== null && n !== void 0 ? n : e.disabled), a.disabled = (o = a.disabled) !== null && o !== void 0 ? o : P;
         const R = L(`${l}-wrapper`, {
                 [`${l}-wrapper-checked`]: a.checked,
                 [`${l}-wrapper-disabled`]: a.disabled,
                 [`${l}-wrapper-rtl`]: m === "rtl",
                 [`${l}-wrapper-in-form-item`]: C,
                 [`${l}-wrapper-block`]: !!(e != null && e.block)
-            }, c == null ? void 0 : c.className, w, I, E, k, j),
+            }, c == null ? void 0 : c.className, w, I, O, k, j),
             [B, g] = ue(a.onClick);
         return D(i.createElement(ie, {
             component: "Radio",
@@ -550,7 +550,7 @@ const ke = (t, r) => {
             options: S,
             buttonStyle: x = "outline",
             disabled: C,
-            children: O,
+            children: E,
             size: $,
             style: w,
             id: I,
@@ -563,7 +563,7 @@ const ke = (t, r) => {
             onMouseEnter: l,
             onMouseLeave: j,
             onFocus: D,
-            onBlur: E
+            onBlur: O
         } = t, [k, a] = de(b, {
             value: y
         }), P = i.useCallback(d => {
@@ -571,7 +571,7 @@ const ke = (t, r) => {
                 A = d.target.value;
             "value" in t || a(A), A !== ee && (v == null || v(d))
         }, [k, a, v]), R = n("radio", p), B = `${R}-group`, g = J(R), [M, T, N] = U(R, g);
-        let V = O;
+        let V = E;
         S && S.length > 0 && (V = S.map(d => typeof d == "string" || typeof d == "number" ? i.createElement(q, {
             key: d.toString(),
             prefixCls: R,
@@ -613,7 +613,7 @@ const ke = (t, r) => {
             onMouseEnter: l,
             onMouseLeave: j,
             onFocus: D,
-            onBlur: E,
+            onBlur: O,
             id: I,
             ref: r
         }), i.createElement(pe, {

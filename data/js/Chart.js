@@ -908,11 +908,11 @@ function Vn(s) {
     const t = new Set(s);
     return t.size === s.length ? s : Array.from(t)
 }
-const xi = function() {
+const xi = (function() {
     return typeof window > "u" ? function(s) {
         return s()
     } : window.requestAnimationFrame
-}();
+})();
 
 function yi(s, t) {
     let e = [],
@@ -1939,7 +1939,7 @@ function ws(s, t, e) {
     const r = s.canvas;
     return r.style && (e || !r.style.height && !r.style.width) && (r.style.height = `${s.height}px`, r.style.width = `${s.width}px`), s.currentDevicePixelRatio !== i || r.height !== n || r.width !== o ? (s.currentDevicePixelRatio = i, r.height = n, r.width = o, s.ctx.setTransform(i, 0, 0, i, 0, 0), !0) : !1
 }
-const Bo = function() {
+const Bo = (function() {
     let s = !1;
     try {
         const t = {
@@ -1950,7 +1950,7 @@ const Bo = function() {
         Qe() && (window.addEventListener("test", null, t), window.removeEventListener("test", null, t))
     } catch {}
     return s
-}();
+})();
 
 function Ss(s, t) {
     const e = Lo(s, t),

@@ -136,9 +136,9 @@ function Ea() {
         t = Object.prototype,
         a = t.hasOwnProperty,
         n = t.propertyIsEnumerable,
-        i = e(function() {
+        i = e((function() {
             return arguments
-        }()) ? e : function(s) {
+        })()) ? e : function(s) {
             return r(s) && a.call(s, "callee") && !n.call(s, "callee")
         };
     return er = i, er
@@ -161,7 +161,7 @@ x.exports;
 var ze;
 
 function qa() {
-    return ze || (ze = 1, function(e, r) {
+    return ze || (ze = 1, (function(e, r) {
         var t = w(),
             a = Ma(),
             n = r && !r.nodeType && r,
@@ -171,7 +171,7 @@ function qa() {
             f = u ? u.isBuffer : void 0,
             o = f || a;
         e.exports = o
-    }(x, x.exports)), x.exports
+    })(x, x.exports)), x.exports
 }
 var ar, ke;
 
@@ -259,20 +259,20 @@ D.exports;
 var Ve;
 
 function Na() {
-    return Ve || (Ve = 1, function(e, r) {
+    return Ve || (Ve = 1, (function(e, r) {
         var t = ba(),
             a = r && !r.nodeType && r,
             n = a && !0 && e && !e.nodeType && e,
             i = n && n.exports === a,
             s = i && t.process,
-            u = function() {
+            u = (function() {
                 try {
                     var f = n && n.require && n.require("util").types;
                     return f || s && s.binding && s.binding("util")
                 } catch {}
-            }();
+            })();
         e.exports = u
-    }(D, D.exports)), D.exports
+    })(D, D.exports)), D.exports
 }
 var ur, Xe;
 
@@ -614,10 +614,10 @@ function nn() {
     if (qt) return Pr;
     qt = 1;
     var e = an(),
-        r = function() {
+        r = (function() {
             var a = /[^.]+$/.exec(e && e.keys && e.keys.IE_PROTO || "");
             return a ? "Symbol(src)_1." + a : ""
-        }();
+        })();
 
     function t(a) {
         return !!r && r in a

@@ -8,8 +8,8 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     al as s,
-    am as n,
-    an as d
+    aA as n,
+    aB as d
 } from "./App-41.js";
 import "./GetAssetPath.js";
 import "./_index.js";

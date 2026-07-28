@@ -1,17 +1,19 @@
 import {
     al as a,
-    as as m,
-    aQ as h,
-    L as d
+    am as m,
+    L as h
 } from "./App-41.js";
 import {
-    s as n,
-    e as w,
-    d as g
+    s as d,
+    e as n,
+    d as w
 } from "./FixSpinePlugin.js";
 import {
-    N as c
+    N as g
 } from "./NewWidthSameAspectRatio.js";
+import {
+    F as c
+} from "./FetchTextureDimensions.js";
 import {
     B as l,
     U as I
@@ -105,11 +107,11 @@ class Nt extends a {
                     ...I
                 };
             if (this.options.itemId) {
-                const e = n.worldOptions.itemOptions.find(s => s.id === this.options.itemId);
+                const e = d.worldOptions.itemOptions.find(s => s.id === this.options.itemId);
                 e && (t.imageId = e.id, t.imageUrl = e.previewImage)
             }
-            const r = h(t.imageId),
-                o = c({
+            const r = c(t.imageId),
+                o = g({
                     height: r.height,
                     width: r.width,
                     newWidth: 60
@@ -136,7 +138,7 @@ class Nt extends a {
                 repeat: -1,
                 ease: Phaser.Math.Easing.Sine.InOut
             })
-        }, !(w() || g()) && (this.layers.setDefaultLayer(d.DepthSortedCharactersAndDevices), this.addBase(), this.addItemPreview())
+        }, !(n() || w()) && (this.layers.setDefaultLayer(h.DepthSortedCharactersAndDevices), this.addBase(), this.addItemPreview())
     }
 }
 export {

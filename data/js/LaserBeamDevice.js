@@ -1,13 +1,13 @@
 import {
     al as N,
     L as y,
-    au as M
+    aq as M
 } from "./App-41.js";
 import {
     G as r
 } from "./GetAssetPath.js";
 import {
-    z as D,
+    B as D,
     I as g,
     i as C,
     d as x
@@ -247,22 +247,22 @@ class ni extends N {
             a = -m / 2,
             s = -h / 2,
             p = m / 2,
-            u = h / 2,
+            P = h / 2,
             w = Math.floor(o / f),
             S = (p - a) / w,
-            _ = (u - s) / w,
+            _ = (P - s) / w,
             A = g() ? b : (1 - this.activeFactor) * b,
             F = g() ? Phaser.BlendModes.NORMAL : Phaser.BlendModes.ADD;
         for (let v = 0; v <= w; v++) {
             const E = a + v * S,
-                P = s + v * _;
+                u = s + v * _;
             this.parts.add.sprite({
                 ...L,
-                depthChange: Math.min(s, u) - P,
+                depthChange: Math.min(s, P) - u,
                 ignoreInput: !0,
                 layerId: y.DevicesUnderCharacters,
                 x: E,
-                y: P,
+                y: u,
                 onReady: c => {
                     c.view.tint = M(this.options.laserColor), c.view.alpha = A, c.view.blendMode = F, c.view.setScale(.2), this.dots.push(c)
                 }

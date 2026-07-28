@@ -1,9 +1,9 @@
 import {
-    aw as h,
+    aH as h,
     al as d,
     T as o,
-    ax as l,
-    ay as u
+    au as l,
+    az as u
 } from "./App-41.js";
 import {
     G as a
@@ -127,7 +127,7 @@ const n = {
     radius: h(125),
     width: 125
 };
-class Hi extends d {
+class _i extends d {
     constructor(s) {
         super(s), this.isDisabled = !1, this.isAnimationReady = !1, this.size = {
             width: 0,
@@ -196,6 +196,6 @@ class Hi extends d {
     }
 }
 export {
-    Hi as
+    _i as
     default
 };

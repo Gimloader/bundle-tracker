@@ -1,21 +1,21 @@
 import {
     al as W,
-    ap as l,
-    aq as d,
-    ar as c,
-    as as P,
-    at as u,
-    au as g,
-    av as _
+    aC as l,
+    aD as d,
+    aE as c,
+    am as G,
+    aF as u,
+    aq as g,
+    aG as P
 } from "./App-41.js";
 import {
     F as w,
-    R as k
+    R as _
 } from "./ReplaceVisualEditingPreview.js";
 import {
     I as f,
     i as v,
-    d as G
+    d as k
 } from "./FixSpinePlugin.js";
 import "./_index.js";
 import "./Button.js";
@@ -87,7 +87,7 @@ import "./FillRemainingSpace.js";
 import "./index-24.js";
 var r = (s => (s.none = "None", s.pulse = "Pulse", s.spinClockwise = "Spin Clockwise", s.spinCounterClockwise = "Spin Counter Clockwise", s))(r || {});
 const b = 1.2,
-    X = 500;
+    E = 500;
 class Zt extends W {
     constructor(C) {
         super(C), this.isDuringAnimation = !1, this.needsTextureUpdate = !0, this.playTween = () => {
@@ -159,7 +159,7 @@ class Zt extends W {
                 maxHeight: e.max / 2,
                 keepRatio: !0,
                 onChange: i => {
-                    k(i.x, i.y, {
+                    _(i.x, i.y, {
                         width: i.width * 2,
                         height: i.height * 2,
                         angle: i.angle
@@ -170,7 +170,7 @@ class Zt extends W {
             this.tweens.add({
                 targets: [this.fill.view, this.border.view],
                 alpha: t ? 1 : 0,
-                duration: X
+                duration: E
             })
         }, this.onStateChange = t => {
             t === "visible" && this.tweenVisibility(this.state.visible), t === "animationCounter" && this.state.animationCounter > 0 && this.playTween()
@@ -188,14 +188,14 @@ class Zt extends W {
             }))
         }, this.fill = this.parts.add.sprite({
             imageId: u.imageId,
-            depthChange: P(1)
+            depthChange: G(1)
         }), this.border = this.parts.add.sprite({
             imageId: u.imageId
         }), this.fill.view.tint = g(this.options.fillColor), this.border.view.tint = g(this.options.borderColor);
         const m = this.getScale();
         if (this.fill.view.setScale(m), this.border.view.setScale(m), this.setupVisualEditing(), this.cull.setOnEnterViewCallback(() => {
                 this.needsTextureUpdate && (this.updateTexture(), this.needsTextureUpdate = !1)
-            }), _() && this.options.animation !== r.none && this.options.animateOnGameStart && this.playTween(), f() && v() && !this.options.visibleOnGameStart && (this.fill.view.setAlpha(.6), this.border.view.setAlpha(.6)), G()) {
+            }), P() && this.options.animation !== r.none && this.options.animateOnGameStart && this.playTween(), f() && v() && !this.options.visibleOnGameStart && (this.fill.view.setAlpha(.6), this.border.view.setAlpha(.6)), k()) {
             const t = this.state.visible ?? this.options.visibleOnGameStart;
             this.fill.view.setAlpha(t ? 1 : 0), this.border.view.setAlpha(t ? 1 : 0)
         }

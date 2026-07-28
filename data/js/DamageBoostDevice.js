@@ -7,8 +7,8 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     al as p,
-    am as e,
-    an as a
+    aA as e,
+    aB as a
 } from "./App-41.js";
 import "./_index.js";
 import "./MapModeType.js";

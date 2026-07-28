@@ -1,13 +1,13 @@
 import {
     bz as w,
     ai as K,
-    aj as Y,
+    aj as Q,
     ak as E,
-    aL as Q,
+    aL as Y,
     cY as Z,
     aM as J,
     bb as tt,
-    r as u,
+    r as p,
     al as H,
     bH as A,
     am as P,
@@ -25,8 +25,8 @@ import {
 } from "./_index.js";
 import {
     N as ft,
-    u as pt,
-    a as ut,
+    u as ut,
+    a as pt,
     A as gt
 } from "./context.js";
 const mt = t => {
@@ -218,7 +218,7 @@ const mt = t => {
             colorInfo: c,
             colorWarning: l,
             colorError: b,
-            colorTextHeading: p,
+            colorTextHeading: u,
             notificationBg: v,
             notificationPadding: O,
             notificationMarginEdge: y,
@@ -246,7 +246,7 @@ const mt = t => {
                 wordWrap: "break-word"
             },
             [`${d}-message`]: {
-                color: p,
+                color: u,
                 fontSize: a,
                 lineHeight: t.lineHeightLG
             },
@@ -361,7 +361,7 @@ const mt = t => {
             }
         });
         return [{
-            [e]: Object.assign(Object.assign({}, Q(t)), {
+            [e]: Object.assign(Object.assign({}, Y(t)), {
                 position: "fixed",
                 zIndex: t.zIndexPopup,
                 marginRight: {
@@ -414,7 +414,7 @@ const mt = t => {
     k = t => {
         const e = t.paddingMD,
             o = t.paddingLG;
-        return Y(t, {
+        return Q(t, {
             notificationBg: t.colorBgElevated,
             notificationPaddingVertical: e,
             notificationPaddingHorizontal: o,
@@ -453,7 +453,7 @@ var xt = function(t, e) {
 };
 
 function L(t, e) {
-    return e === null || e === !1 ? null : e || u.createElement(et, {
+    return e === null || e === !1 ? null : e || p.createElement(et, {
         className: `${t}-close-icon`
     })
 }
@@ -474,20 +474,20 @@ const Pt = {
             role: r = "alert"
         } = t;
         let c = null;
-        return o ? c = u.createElement("span", {
+        return o ? c = p.createElement("span", {
             className: `${e}-icon`
-        }, o) : n && (c = u.createElement(Pt[n] || null, {
+        }, o) : n && (c = p.createElement(Pt[n] || null, {
             className: P(`${e}-icon`, `${e}-icon-${n}`)
-        })), u.createElement("div", {
+        })), p.createElement("div", {
             className: P({
                 [`${e}-with-icon`]: c
             }),
             role: r
-        }, c, u.createElement("div", {
+        }, c, p.createElement("div", {
             className: `${e}-message`
-        }, a), i && u.createElement("div", {
+        }, a), i && p.createElement("div", {
             className: `${e}-description`
-        }, i), s && u.createElement("div", {
+        }, i), s && p.createElement("div", {
             className: `${e}-actions`
         }, s))
     },
@@ -503,24 +503,24 @@ const Pt = {
             actions: c,
             closable: l = !0,
             closeIcon: b,
-            className: p
+            className: u
         } = t, v = xt(t, ["prefixCls", "className", "icon", "type", "message", "description", "btn", "actions", "closable", "closeIcon", "className"]), {
             getPrefixCls: O
-        } = u.useContext(H), y = c ?? r, g = e || O("notification"), $ = `${g}-notice`, C = A(g), [m, x, S] = W(g, C);
-        return m(u.createElement("div", {
+        } = p.useContext(H), y = c ?? r, g = e || O("notification"), $ = `${g}-notice`, C = A(g), [m, x, S] = W(g, C);
+        return m(p.createElement("div", {
             className: P(`${$}-pure-panel`, x, o, S, C)
-        }, u.createElement(Ot, {
+        }, p.createElement(Ot, {
             prefixCls: g
-        }), u.createElement(ft, Object.assign({}, v, {
+        }), p.createElement(ft, Object.assign({}, v, {
             prefixCls: g,
             eventKey: "pure",
             duration: null,
             closable: l,
             className: P({
-                notificationClassName: p
+                notificationClassName: u
             }),
             closeIcon: L(g, b),
-            content: u.createElement(q, {
+            content: p.createElement(q, {
                 prefixCls: $,
                 icon: n,
                 type: a,
@@ -609,7 +609,7 @@ const B = 24,
     }) => {
         const o = A(e),
             [n, a, i] = W(e, o);
-        return n(f.createElement(ut, {
+        return n(f.createElement(pt, {
             classNames: {
                 list: P(a, i, o)
             }
@@ -633,16 +633,16 @@ const B = 24,
             onAllRemoved: c,
             stack: l,
             duration: b,
-            pauseOnHover: p = !0,
+            pauseOnHover: u = !0,
             showProgress: v
         } = t, {
             getPrefixCls: O,
             getPopupContainer: y,
             notification: g,
             direction: $
-        } = u.useContext(H), [, C] = ct(), m = a || O("notification"), x = M => Nt(M, o ?? B, n ?? B), S = () => P({
+        } = p.useContext(H), [, C] = ct(), m = a || O("notification"), x = M => Nt(M, o ?? B, n ?? B), S = () => P({
             [`${m}-rtl`]: r ?? $ === "rtl"
-        }), I = () => wt(m), [d, N] = pt({
+        }), I = () => wt(m), [d, N] = ut({
             prefixCls: m,
             style: x,
             className: S,
@@ -652,7 +652,7 @@ const B = 24,
             duration: b ?? Rt,
             getContainer: () => (i == null ? void 0 : i()) || (y == null ? void 0 : y()) || document.body,
             maxCount: s,
-            pauseOnHover: p,
+            pauseOnHover: u,
             showProgress: v,
             onAllRemoved: c,
             renderNotifications: Ht,
@@ -677,7 +677,7 @@ function V(t) {
                 const {
                     open: l,
                     prefixCls: b,
-                    notification: p
+                    notification: u
                 } = e.current, v = `${b}-notice`, {
                     message: O,
                     description: y,
@@ -690,7 +690,7 @@ function V(t) {
                     role: I = "alert",
                     closeIcon: d,
                     closable: N
-                } = r, M = jt(r, ["message", "description", "icon", "type", "btn", "actions", "className", "style", "role", "closeIcon", "closable"]), X = m ?? C, F = L(v, Et(d, t, p));
+                } = r, M = jt(r, ["message", "description", "icon", "type", "btn", "actions", "className", "style", "role", "closeIcon", "closable"]), X = m ?? C, F = L(v, Et(d, t, u));
                 return l(Object.assign(Object.assign({
                     placement: (c = t == null ? void 0 : t.placement) !== null && c !== void 0 ? c : _t
                 }, M), {
@@ -703,8 +703,8 @@ function V(t) {
                         actions: X,
                         role: I
                     }),
-                    className: P($ && `${v}-${$}`, x, p == null ? void 0 : p.className),
-                    style: Object.assign(Object.assign({}, p == null ? void 0 : p.style), S),
+                    className: P($ && `${v}-${$}`, x, u == null ? void 0 : u.className),
+                    style: Object.assign(Object.assign({}, u == null ? void 0 : u.style), S),
                     closeIcon: F,
                     closable: N ?? !!F
                 }))
@@ -762,13 +762,13 @@ const Ft = f.forwardRef((t, e) => {
             sync: n
         } = t, {
             getPrefixCls: a
-        } = u.useContext(H), i = j.prefixCls || a("notification"), s = u.useContext(gt), [r, c] = V(Object.assign(Object.assign(Object.assign({}, o), {
+        } = p.useContext(H), i = j.prefixCls || a("notification"), s = p.useContext(gt), [r, c] = V(Object.assign(Object.assign(Object.assign({}, o), {
             prefixCls: i
         }), s.notification));
         return f.useEffect(n, []), f.useImperativeHandle(e, () => {
             const l = Object.assign({}, r);
             return Object.keys(l).forEach(b => {
-                l[b] = (...p) => (n(), r[b].apply(r, p))
+                l[b] = (...u) => (n(), r[b].apply(r, u))
             }), {
                 instance: l,
                 sync: n
@@ -794,45 +794,45 @@ const Ft = f.forwardRef((t, e) => {
             iconPrefixCls: r,
             theme: c
         }, i.holderRender ? i.holderRender(l) : l)
-    });
-
-function T() {
-    if (!h) {
-        const t = document.createDocumentFragment(),
-            e = {
-                fragment: t
-            };
-        h = e, R(() => {
-            st()(f.createElement(Bt, {
-                ref: n => {
-                    const {
-                        instance: a,
-                        sync: i
-                    } = n || {};
-                    Promise.resolve().then(() => {
-                        !e.instance && a && (e.instance = a, e.sync = i, T())
-                    })
-                }
-            }), t)
-        });
-        return
-    }
-    h.instance && (_.forEach(t => {
-        switch (t.type) {
-            case "open": {
-                R(() => {
-                    h.instance.open(Object.assign(Object.assign({}, j), t.config))
-                });
-                break
-            }
-            case "destroy":
-                R(() => {
-                    h == null || h.instance.destroy(t.key)
-                });
-                break
+    }),
+    T = () => {
+        if (!h) {
+            const t = document.createDocumentFragment(),
+                e = {
+                    fragment: t
+                };
+            h = e, R(() => {
+                st()(f.createElement(Bt, {
+                    ref: n => {
+                        const {
+                            instance: a,
+                            sync: i
+                        } = n || {};
+                        Promise.resolve().then(() => {
+                            !e.instance && a && (e.instance = a, e.sync = i, T())
+                        })
+                    }
+                }), t)
+            });
+            return
         }
-    }), _ = [])
-}
+        h.instance && (_.forEach(t => {
+            switch (t.type) {
+                case "open": {
+                    R(() => {
+                        h.instance.open(Object.assign(Object.assign({}, j), t.config))
+                    });
+                    break
+                }
+                case "destroy":
+                    R(() => {
+                        var e;
+                        (e = h == null ? void 0 : h.instance) === null || e === void 0 || e.destroy(t.key)
+                    });
+                    break
+            }
+        }), _ = [])
+    };
 
 function zt(t) {
     j = Object.assign(Object.assign({}, j), t), R(() => {

@@ -1,95 +1,95 @@
 import {
-    r as F,
-    I as _e,
-    _ as Ee,
-    o as bs,
+    r as V,
+    I as Ee,
+    _ as xe,
+    o as _s,
     e as me,
     j as f,
     U as Ie,
-    a as Jt,
-    S as tr,
-    C as nr,
-    f as rr,
-    i as en,
-    a$ as mt,
-    a4 as sr,
-    B as ee,
-    d as re,
-    D as Wt,
+    a as tn,
+    S as rr,
+    C as sr,
+    f as or,
+    i as nn,
+    a$ as gt,
+    a4 as ar,
+    B as te,
+    d as se,
+    D as Ft,
     F as Me,
-    aw as or,
-    ax as ar,
-    bI as Cs,
-    h as _s,
-    M as ir,
-    u as Le,
-    R as Es,
-    q as xs
+    aw as ir,
+    ax as cr,
+    bI as Es,
+    h as xs,
+    M as lr,
+    u as De,
+    R as As,
+    q as Ts
 } from "./_index.js";
 import {
-    o as pt
+    o as vt
 } from "./mobxreact.esm.js";
 import {
-    b as te,
-    c as Vt,
-    T as Rt
+    b as ne,
+    c as $t,
+    T as It
 } from "./Question.js";
 import {
-    I as tn,
-    R as As
+    I as rn,
+    R as Ms
 } from "./index-3.js";
 import {
-    T as Ts
+    T as Ss
 } from "./index-5.js";
 import {
-    s as Ft
+    s as zt
 } from "./index-4.js";
 import {
-    U as Ms
+    U as Rs
 } from "./index-19.js";
 import {
-    U as cr
+    U as ur
 } from "./App-2.js";
 import {
-    A as wn
+    A as bn
 } from "./AccessibleAnchor.js";
 import {
-    g as lr
+    g as dr
 } from "./getCloudinaryUrl.js";
 import {
-    D as ur
+    D as fr
 } from "./index-6.js";
 import {
-    I as dr
+    I as hr
 } from "./ImagePreview.js";
 import {
-    R as Ss
+    R as ks
 } from "./SaveOutlined.js";
 import {
-    R as Rs
+    R as Is
 } from "./PlayCircleOutlined.js";
 import {
-    R as fr
+    R as mr
 } from "./DeleteOutlined.js";
 import {
-    v as ks
+    v as Ns
 } from "./mathlive.min.js";
 import {
-    L as hr
+    L as pr
 } from "./LazyLatexRenderer.js";
 import {
-    S as kt
+    S as Nt
 } from "./index-8.js";
 import {
-    D as Is
+    D as Os
 } from "./index-10.js";
 import {
-    T as Ns
+    T as js
 } from "./Tooltip.js";
 import {
-    R as It
+    R as Ot
 } from "./index-13.js";
-var Os = {
+var Ps = {
         icon: {
             tag: "svg",
             attrs: {
@@ -106,14 +106,14 @@ var Os = {
         name: "camera",
         theme: "outlined"
     },
-    js = function(t, n) {
-        return F.createElement(_e, Ee({}, t, {
+    Ls = function(t, n) {
+        return V.createElement(Ee, xe({}, t, {
             ref: n,
-            icon: Os
+            icon: Ps
         }))
     },
-    mr = F.forwardRef(js),
-    Ps = {
+    gr = V.forwardRef(Ls),
+    Bs = {
         icon: function(t, n) {
             return {
                 tag: "svg",
@@ -145,14 +145,14 @@ var Os = {
         name: "check-circle",
         theme: "twotone"
     },
-    Ls = function(t, n) {
-        return F.createElement(_e, Ee({}, t, {
+    Us = function(t, n) {
+        return V.createElement(Ee, xe({}, t, {
             ref: n,
-            icon: Ps
+            icon: Bs
         }))
     },
-    Bs = F.forwardRef(Ls),
-    Us = {
+    Ds = V.forwardRef(Us),
+    Ws = {
         icon: function(t, n) {
             return {
                 tag: "svg",
@@ -184,14 +184,14 @@ var Os = {
         name: "close-circle",
         theme: "twotone"
     },
-    Ds = function(t, n) {
-        return F.createElement(_e, Ee({}, t, {
+    Vs = function(t, n) {
+        return V.createElement(Ee, xe({}, t, {
             ref: n,
-            icon: Us
+            icon: Ws
         }))
     },
-    Ws = F.forwardRef(Ds),
-    Vs = {
+    Fs = V.forwardRef(Vs),
+    $s = {
         icon: {
             tag: "svg",
             attrs: {
@@ -215,14 +215,14 @@ var Os = {
         name: "function",
         theme: "outlined"
     },
-    Fs = function(t, n) {
-        return F.createElement(_e, Ee({}, t, {
+    zs = function(t, n) {
+        return V.createElement(Ee, xe({}, t, {
             ref: n,
-            icon: Vs
+            icon: $s
         }))
     },
-    pr = F.forwardRef(Fs),
-    $s = {
+    vr = V.forwardRef(zs),
+    qs = {
         icon: {
             tag: "svg",
             attrs: {
@@ -239,14 +239,14 @@ var Os = {
         name: "inbox",
         theme: "outlined"
     },
-    zs = function(t, n) {
-        return F.createElement(_e, Ee({}, t, {
+    Gs = function(t, n) {
+        return V.createElement(Ee, xe({}, t, {
             ref: n,
-            icon: $s
+            icon: qs
         }))
     },
-    qs = F.forwardRef(zs),
-    Gs = {
+    Hs = V.forwardRef(Gs),
+    Xs = {
         icon: {
             tag: "svg",
             attrs: {
@@ -263,14 +263,14 @@ var Os = {
         name: "meh",
         theme: "outlined"
     },
-    Hs = function(t, n) {
-        return F.createElement(_e, Ee({}, t, {
+    Qs = function(t, n) {
+        return V.createElement(Ee, xe({}, t, {
             ref: n,
-            icon: Gs
+            icon: Xs
         }))
     },
-    Xs = F.forwardRef(Hs),
-    Qs = {
+    Ys = V.forwardRef(Qs),
+    Ks = {
         icon: {
             tag: "svg",
             attrs: {
@@ -287,14 +287,14 @@ var Os = {
         name: "read",
         theme: "outlined"
     },
-    Ys = function(t, n) {
-        return F.createElement(_e, Ee({}, t, {
+    Zs = function(t, n) {
+        return V.createElement(Ee, xe({}, t, {
             ref: n,
-            icon: Qs
+            icon: Ks
         }))
     },
-    Ks = F.forwardRef(Ys),
-    Zs = {
+    Js = V.forwardRef(Zs),
+    eo = {
         icon: {
             tag: "svg",
             attrs: {
@@ -311,17 +311,17 @@ var Os = {
         name: "stop",
         theme: "outlined"
     },
-    Js = function(t, n) {
-        return F.createElement(_e, Ee({}, t, {
+    to = function(t, n) {
+        return V.createElement(Ee, xe({}, t, {
             ref: n,
-            icon: Zs
+            icon: eo
         }))
     },
-    eo = F.forwardRef(Js);
+    no = V.forwardRef(to);
 
-function to(e, t) {
-    return F.useState(function() {
-        return bs(e(), t, {
+function ro(e, t) {
+    return V.useState(function() {
+        return _s(e(), t, {
             autoBind: !0
         })
     })[0]
@@ -338,7 +338,7 @@ const he = e => {
         children: e.children
     })
 };
-class no extends F.Component {
+class so extends V.Component {
     constructor() {
         super(...arguments), this.state = {
             loading: !1
@@ -348,7 +348,7 @@ class no extends F.Component {
             const n = new FormData;
             n.append("file", t), this.setState({
                 loading: !0
-            }), Jt({
+            }), tn({
                 url: "/api/games/image/add",
                 method: "post",
                 data: n,
@@ -360,12 +360,12 @@ class no extends F.Component {
                 error: r => {
                     this.setState({
                         loading: !1
-                    }), Ft.error("Error uploading. Please try again.")
+                    }), zt.error("Error uploading. Please try again.")
                 }
             })
         }, this.fileIsSmallEnough = t => {
             const n = t.size / 1024 / 1024 < 5;
-            return n || Ft.error("Photo must be less than 5MB"), n
+            return n || zt.error("Photo must be less than 5MB"), n
         }
     }
     render() {
@@ -375,17 +375,17 @@ class no extends F.Component {
                     width: "100%",
                     height: 300
                 },
-                children: f.jsx(Ms.Dragger, {
+                children: f.jsx(Rs.Dragger, {
                     customRequest: this.uploadImage,
                     multiple: !1,
                     accept: "image/*",
                     beforeUpload: this.fileIsSmallEnough,
-                    children: this.state.loading ? f.jsx(tr, {
+                    children: this.state.loading ? f.jsx(rr, {
                         size: "large"
                     }) : f.jsxs(f.Fragment, {
                         children: [f.jsx("p", {
                             className: "ant-upload-drag-icon",
-                            children: f.jsx(qs, {})
+                            children: f.jsx(Hs, {})
                         }), f.jsx("p", {
                             className: "ant-upload-text",
                             children: "Click or drag to upload a photo!"
@@ -399,26 +399,26 @@ class no extends F.Component {
         })
     }
 }
-const ro = f.jsx(f.Fragment, {
+const oo = f.jsx(f.Fragment, {
         children: "Add audio with Pro"
     }),
-    so = f.jsxs(f.Fragment, {
+    ao = f.jsxs(f.Fragment, {
         children: ["Record your voice and have the audio played each time a student goes to answer this question. ", f.jsxs("b", {
-            children: ["To add audio, upgrade to ", nr, " Pro."]
+            children: ["To add audio, upgrade to ", sr, " Pro."]
         })]
     }),
-    oo = f.jsx(f.Fragment, {
+    io = f.jsx(f.Fragment, {
         children: "Upload images with Pro"
     }),
-    ao = f.jsxs(f.Fragment, {
+    co = f.jsxs(f.Fragment, {
         children: ["To add your own images to questions, ", f.jsxs("b", {
-            children: ["upgrade to ", nr, " Pro."]
+            children: ["upgrade to ", sr, " Pro."]
         })]
     }),
-    Nt = mt.TabPane,
-    io = tn.Search,
-    gr = 464,
-    co = e => {
+    jt = gt.TabPane,
+    lo = rn.Search,
+    wr = 464,
+    uo = e => {
         const t = () => {
             e.onSelect(e.details.url)
         };
@@ -428,7 +428,7 @@ const ro = f.jsx(f.Fragment, {
                 flexDirection: "column",
                 alignItems: "center"
             },
-            children: [f.jsx(fo, {
+            children: [f.jsx(mo, {
                 className: "lightShadow mediumShadowOnHover",
                 url: e.details.url,
                 isMiddle: e.isMiddle,
@@ -453,7 +453,7 @@ const ro = f.jsx(f.Fragment, {
             })]
         })
     };
-class lo extends F.Component {
+class fo extends V.Component {
     constructor() {
         super(...arguments), this.state = {
             loading: !1,
@@ -470,7 +470,7 @@ class lo extends F.Component {
         }, this.requestImages = t => {
             this.setState({
                 loading: !0
-            }), Jt({
+            }), tn({
                 method: "POST",
                 url: "/api/v1/editor/images",
                 data: {
@@ -496,7 +496,7 @@ class lo extends F.Component {
                 })
             }, r.src = n
         }, this.onPickCustomImage = () => this.props.onImagePicked(this.state.customLinkUrl), this.onImageUploaded = t => this.props.onImagePicked(t), this.handleTabClick = t => {
-            if (t === "3" && !rr() && !en()) {
+            if (t === "3" && !or() && !nn()) {
                 this.setState({
                     upgradeModalOpen: !0
                 });
@@ -515,18 +515,18 @@ class lo extends F.Component {
                     marginBottom: this.props.titleBottomMargin || 0
                 },
                 children: this.props.title
-            }), f.jsxs(mt, {
+            }), f.jsxs(gt, {
                 type: "card",
                 activeKey: this.state.currentTabKey,
                 onTabClick: this.handleTabClick,
-                children: [!this.props.blockImageSearch && f.jsxs(Nt, {
+                children: [!this.props.blockImageSearch && f.jsxs(jt, {
                     tab: "Photo Search",
-                    children: [f.jsx(io, {
+                    children: [f.jsx(lo, {
                         placeholder: "Search photos...",
                         size: "large",
                         enterButton: !0,
                         style: {
-                            width: gr,
+                            width: wr,
                             marginBottom: 10,
                             marginTop: -3
                         },
@@ -536,10 +536,10 @@ class lo extends F.Component {
                         style: {
                             marginTop: 5
                         },
-                        children: f.jsx(tr, {
+                        children: f.jsx(rr, {
                             size: "large"
                         })
-                    }), this.state.error && f.jsx(sr, {
+                    }), this.state.error && f.jsx(ar, {
                         message: "Error",
                         description: "There was an error searching from our image provider. Please try again later or enter a link.",
                         type: "error",
@@ -550,7 +550,7 @@ class lo extends F.Component {
                             color: me.Black,
                             marginTop: 10
                         },
-                        children: [f.jsx(As, {
+                        children: [f.jsx(Ms, {
                             style: {
                                 fontSize: 50,
                                 marginBottom: 5
@@ -568,7 +568,7 @@ class lo extends F.Component {
                             color: me.Black,
                             marginTop: 10
                         },
-                        children: [f.jsx(Xs, {
+                        children: [f.jsx(Ys, {
                             style: {
                                 fontSize: 50,
                                 marginBottom: 5
@@ -580,8 +580,8 @@ class lo extends F.Component {
                             },
                             children: this.state.searchCount === 1 ? "No images found. Try searching for something!" : "No results found."
                         })]
-                    }), f.jsxs(uo, {
-                        children: [this.state.imageResults.map((t, n) => f.jsx(co, {
+                    }), f.jsxs(ho, {
+                        children: [this.state.imageResults.map((t, n) => f.jsx(uo, {
                             details: t,
                             isMiddle: (n - 1) % 3 === 0,
                             onSelect: this.props.onImagePicked
@@ -591,13 +591,13 @@ class lo extends F.Component {
                                 marginTop: 10
                             },
                             children: [f.jsx("div", {
-                                children: f.jsx(wn, {
+                                children: f.jsx(bn, {
                                     to: "https://www.pexels.com",
                                     external: !0,
                                     target: "_blank",
                                     children: "Photos provided by Pexels"
                                 })
-                            }), f.jsx(wn, {
+                            }), f.jsx(bn, {
                                 to: "https://www.pexels.com",
                                 external: !0,
                                 target: "_blank",
@@ -611,16 +611,16 @@ class lo extends F.Component {
                             })]
                         }) : null]
                     })]
-                }, "1"), f.jsxs(Nt, {
+                }, "1"), f.jsxs(jt, {
                     tab: "Link",
-                    children: [f.jsx(tn, {
+                    children: [f.jsx(rn, {
                         size: "large",
                         placeholder: "Image link",
                         style: {
                             marginTop: -3
                         },
                         onChange: this.onImageChange
-                    }), f.jsx(ee, {
+                    }), f.jsx(te, {
                         style: {
                             marginTop: 5
                         },
@@ -631,9 +631,9 @@ class lo extends F.Component {
                         disabled: !this.state.customLinkUrl,
                         children: "Add"
                     })]
-                }, "2"), this.props.allowUpload && f.jsx(Nt, {
+                }, "2"), this.props.allowUpload && f.jsx(jt, {
                     tab: "Upload",
-                    children: f.jsx(no, {
+                    children: f.jsx(so, {
                         onPhotoUploaded: this.onImageUploaded
                     })
                 }, "3")]
@@ -645,25 +645,25 @@ class lo extends F.Component {
     }
     render() {
         return f.jsxs(f.Fragment, {
-            children: [this.getContent(), f.jsx(cr, {
+            children: [this.getContent(), f.jsx(ur, {
                 id: "upload image",
                 visible: this.state.upgradeModalOpen,
                 close: this.closeUpgradeModal,
                 copy: {
-                    title: oo,
-                    description: ao
+                    title: io,
+                    description: co
                 }
             })]
         })
     }
 }
-const uo = re.div`
+const ho = se.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  width: ${()=>gr}px;
+  width: ${()=>wr}px;
 `,
-    fo = re.div`
+    mo = se.div`
   height: 146px;
   width: 146px;
   background-image: url(${e=>e.url});
@@ -675,42 +675,42 @@ const uo = re.div`
   margin-left: ${e=>e.isMiddle?13:0}px;
   cursor: pointer;
 `,
-    ho = pt(e => {
-        const t = F.useCallback(s => {
-                s.target.value === te.multipleChoice && r(), s.target.value === te.textInput && n()
+    po = vt(e => {
+        const t = V.useCallback(s => {
+                s.target.value === ne.multipleChoice && r(), s.target.value === ne.textInput && n()
             }, []),
             n = () => {
                 const s = e.question.answers.filter(o => o.correct && o.text && !o.image);
-                s.length ? e.question.answers = s : e.question.answers = [Re(!0)], e.question.type = te.textInput
+                s.length ? e.question.answers = s : e.question.answers = [Re(!0)], e.question.type = ne.textInput
             },
             r = () => {
                 const s = e.question.answers.filter((o, a) => a <= 3);
                 e.question.answers = s;
                 for (let o = s.length; o < 4; o++) e.question.answers.push(Re(!1));
-                e.question.type = te.multipleChoice
+                e.question.type = ne.multipleChoice
             };
         return f.jsxs(f.Fragment, {
-            children: [f.jsxs(mo, {
+            children: [f.jsxs(go, {
                 children: [f.jsx("div", {}), f.jsx("div", {
-                    children: f.jsxs(It.Group, {
+                    children: f.jsxs(Ot.Group, {
                         onChange: t,
                         value: e.question.type,
-                        children: [f.jsx(It, {
-                            value: te.multipleChoice,
+                        children: [f.jsx(Ot, {
+                            value: ne.multipleChoice,
                             children: f.jsx("span", {
-                                style: yn,
+                                style: Cn,
                                 children: "Multiple Choice"
                             })
-                        }), f.jsx(It, {
-                            value: te.textInput,
+                        }), f.jsx(Ot, {
+                            value: ne.textInput,
                             children: f.jsx("span", {
-                                style: yn,
+                                style: Cn,
                                 children: "Text Input"
                             })
                         })]
                     })
                 })]
-            }), f.jsx(Wt, {
+            }), f.jsx(Ft, {
                 style: {
                     marginTop: 16,
                     marginBottom: 11
@@ -718,15 +718,15 @@ const uo = re.div`
             })]
         })
     }),
-    yn = {
+    Cn = {
         fontFamily: Ie.SFPro
     },
-    mo = re.div`
+    go = se.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
 `,
-    bn = [{
+    _n = [{
         name: "Symbols",
         characters: ["À", "Á", "Â", "Ã", "Ä", "Å", "Æ", "Ç", "È", "É", "Ê", "Ë", "Ì", "Í", "Î", "Ï", "Ð", "Ñ", "Ò", "Ó", "Ô", "Õ", "Ö", "Ø", "Ù", "Ú", "Û", "Ü", "Ý", "Þ", "ß", "à", "á", "â", "ã", "ä", "å", "æ", "ç", "è", "é", "ê", "ë", "ì", "í", "î", "ï", "ð", "ñ", "ò", "ó", "ô", "õ", "ö", "ø", "ù", "ú", "û", "ü", "ý", "þ", "Ā", "ā", "Ă", "ă", "Ą", "ą", "Ć", "ć", "Ĉ", "ĉ", "Ċ", "ċ", "Č", "č", "Ď", "ď", "Đ", "đ", "Ē", "ē", "Ĕ", "ĕ", "Ė", "ė", "Ę", "ę", "Ě", "ě", "Ĝ", "ĝ", "Ğ", "ğ", "Ġ", "ġ", "Ģ", "ģ", "Ĥ", "ĥ", "Ħ", "ħ", "Ĩ", "ĩ", "Ī", "ī", "Ĭ", "ĭ", "Į", "į", "İ", "ı", "Ĳ", "ĳ", "Ĵ", "ĵ", "Ķ", "ķ", "ĸ", "Ĺ", "ĺ", "Ļ", "ļ", "Ľ", "ľ", "Ŀ", "ŀ", "Ł", "ł", "Ń", "ń", "Ņ", "ņ", "Ň", "ň", "ŉ", "Ŋ", "ŋ", "Ō", "ō", "Ŏ", "ŏ", "Ő", "ő", "Œ", "œ", "Ż", "ż", "Ž", "ž", "Ŕ", "ŕ", "Ŗ", "ŗ", "Ř", "ř", "Ś", "ś", "Ŝ", "ŝ", "Ş", "ş", "Š", "š", "Ţ", "ţ", "Ť", "ť", "Ŧ", "ŧ", "Ũ", "ũ", "Ū", "ū", "Ŭ", "ŭ", "Ů", "ů", "Ű", "ű", "Ų", "ų", "Ŵ", "ŵ", "Ŷ", "ŷ", "Ÿ", "Ź", "ź", "ƀ", "Ɓ", "Ƃ", "ƃ", "Ƅ", "ƅ", "Ɔ", "Ƈ", "ƈ", "Ɖ", "Ɗ", "Ƌ", "ƌ", "ƍ", "Ǝ", "Ə", "Ɛ", "Ƒ", "ƒ", "Ɠ", "Ɣ", "ƕ", "Ɩ", "Ɨ", "Ƙ", "ƙ", "ƚ", "ƛ", "Ɯ", "Ɲ", "ƞ", "Ɵ", "Ơ", "ơ", "Ƣ", "ƣ", "Ƥ", "ƥ", "Ʀ", "Ƨ", "ƨ", "Ʃ", "ƪ", "ƫ", "Ƭ", "ƭ", "Ʈ", "Ư", "ư", "Ʊ", "Ʋ", "Ƴ", "ƴ", "Ƶ", "ƶ", "Ʒ", "Ƹ", "ƹ", "ƺ", "ƻ", "Ƽ", "ƽ", "ƾ", "ƿ", "ǀ", "ǁ", "ǂ", "ǃ", "Ǆ", "ǅ", "ǆ", "Ǉ", "ǈ", "ǉ", "Ǌ", "ǋ", "ǌ", "Ǎ", "ǎ", "Ǐ", "ǐ", "Ǒ", "ǒ", "Ǔ", "ǔ", "Ǖ", "ǖ", "Ǘ", "ǘ", "Ǚ", "ǚ", "Ǜ", "ǜ", "ǝ", "Ǟ", "ǟ", "Ǡ", "ǡ", "Ǣ", "ǣ", "Ǥ", "ǥ", "Ǧ", "ǧ", "Ǩ", "ǩ", "Ǫ", "ǫ", "Ǭ", "ǭ", "Ǯ", "ǯ", "ǰ", "Ǳ", "ǲ", "ǳ", "Ǵ", "ǵ", "Ƕ", "Ƿ", "Ǹ", "ǹ", "Ǻ", "ǻ", "Ǽ", "ǽ", "Ǿ", "ǿ", "Ȁ", "ȁ", "Ȃ", "ȃ", "Ȅ", "ȅ", "Ȇ", "ȇ", "Ȉ", "ȉ", "Ȋ", "ȋ", "Ȍ", "ȍ", "Ȏ", "ȏ", "Ȑ", "ȑ", "Ȓ", "ȓ", "Ȕ", "ȕ", "Ȗ", "ȗ", "Ș", "ș", "Ț", "ț", "Ȝ", "ȝ", "Ȟ", "ȟ", "Ƞ", "ȡ", "Ȣ", "ȣ", "Ȥ", "ȥ", "Ȧ", "ȧ", "Ȩ", "ȩ", "Ȫ", "ȫ", "Ȭ", "ȭ", "Ȯ", "ȯ", "Ȱ", "ȱ", "Ȳ", "ȳ", "ȴ", "ȵ", "ȶ", "ȷ", "ȸ", "ȹ", "Ⱥ", "Ȼ", "ȼ", "Ƚ", "Ⱦ", "ȿ", "ɀ", "Ɂ", "ɂ", "Ƀ", "Ʉ", "Ʌ", "Ɇ", "ɇ", "Ɉ", "ɉ", "Ɋ", "ɋ", "Ɍ", "ɍ", "Ɏ", "Ḁ", "ḁ", "Ḃ", "ḃ", "Ḅ", "ḅ", "Ḇ", "ḇ", "Ḉ", "ḉ", "Ḋ", "ḋ", "Ḍ", "ḍ", "Ḏ", "ḏ", "Ḑ", "ḑ", "Ḓ", "ḓ", "Ḕ", "ḕ", "Ḗ", "ḗ", "Ḙ", "ḙ", "Ḛ", "ḛ", "Ḝ", "ḝ", "Ḟ", "ḟ", "Ḡ", "ḡ", "Ḣ", "ḣ", "Ḥ", "ḥ", "Ḧ", "ḧ", "Ḩ", "ḩ", "Ḫ", "ḫ", "Ḭ", "ḭ", "Ḯ", "ḯ", "Ḱ", "ḱ", "Ḳ", "ḳ", "Ḵ", "ḵ", "Ḷ", "ḷ", "Ḹ", "ḹ", "Ḻ", "ḻ", "Ḽ", "ḽ", "Ḿ", "ḿ", "Ṁ", "ṁ", "Ṃ", "ṃ", "Ṅ", "ṅ", "Ṇ", "ṇ", "Ṉ", "ṉ", "Ṋ", "ṋ", "Ṍ", "ṍ", "Ṏ", "ṏ", "Ṑ", "ṑ", "Ṓ", "ṓ", "Ṕ", "ṕ", "Ṗ", "ṗ", "Ṙ", "ṙ", "Ṛ", "ṛ", "Ṝ", "ṝ", "Ṟ", "ṟ", "Ṡ", "ṡ", "Ṣ", "ṣ", "Ṥ", "ṥ", "Ṧ", "ṧ", "Ṩ", "ṩ", "Ṫ", "ṫ", "Ṭ", "ṭ", "Ṯ", "ṯ", "Ṱ", "ṱ", "Ṳ", "ṳ", "Ṵ", "ṵ", "Ṷ", "ṷ", "Ṹ", "ṹ", "Ṻ", "ṻ", "Ṽ", "ṽ", "Ṿ", "ṿ", "Ẁ", "ẁ", "Ẃ", "ẃ", "Ẅ", "ẅ", "Ẇ", "ẇ", "Ẉ", "ẉ", "Ẋ", "ẋ", "Ẍ", "ẍ", "Ẏ", "ẏ", "Ẑ", "ẑ", "Ẓ", "ẓ", "Ẕ", "ẕ", "ẖ", "ẗ", "ẘ", "ẙ", "ẚ", "ẛ", "ẜ", "ẝ", "ẞ", "ẟ", "Ạ", "ạ", "Ả", "ả", "Ấ", "ấ", "Ầ", "ầ", "Ẩ", "ẩ", "Ẫ", "ẫ", "Ậ", "ậ", "Ắ", "ắ", "Ằ", "ằ", "Ẳ", "ẳ", "Ẵ", "ẵ", "Ặ", "ặ", "Ẹ", "ẹ", "Ẻ", "ẻ", "Ẽ", "ẽ", "Ế", "ế", "Ề", "ề", "Ễ", "ễ", "Ệ", "ệ", "Ỉ", "ỉ", "Ị", "ị", "Ọ", "ọ", "Ỏ", "ỏ", "Ố", "ố", "Ồ", "ồ", "Ổ", "ổ", "Ỗ", "ỗ", "Ộ", "ộ", "Ớ", "ớ", "Ờ", "ờ", "Ở", "ở", "Ỡ", "ỡ", "Ợ", "ợ", "Ụ", "ụ", "Ủ", "ủ", "Ứ", "ứ", "Ừ", "ừ", "Ử", "ử", "Ữ", "ữ", "Ự", "ự", "Ỳ", "ỳ", "Ỵ", "ỵ", "Ỷ", "ỷ", "Ỹ", "ỹ", "Ỻ", "ỻ", "Ỽ", "ỽ", "Ỿ"]
     }, {
@@ -742,29 +742,29 @@ const uo = re.div`
         name: "Other",
         characters: ["¿", "&", "!", "¡", "#", "@", "¶", "¤", "®", "©", ":", ";", "(", ")", "[", "]", "{", "}", "|", "¦", "←", "→", "»", "«", "↓", "↑", "⇄", "⇨", "⇦", "₧", "₨", "₠"]
     }],
-    po = re.div`
+    vo = se.div`
   margin-top: 1px;
 `,
     {
-        TabPane: go
-    } = mt,
-    vo = e => {
-        const [t, n] = F.useState(bn[0].name), r = s => {
+        TabPane: wo
+    } = gt,
+    yo = e => {
+        const [t, n] = V.useState(_n[0].name), r = s => {
             e == null || e.onSymbolSelected(s), e == null || e.focusInput()
         };
-        return f.jsx(po, {
-            children: f.jsx(mt, {
+        return f.jsx(vo, {
+            children: f.jsx(gt, {
                 onChange: n,
                 activeKey: t,
                 tabPosition: e.tabPosition || "top",
-                children: bn.map(s => f.jsx(go, {
+                children: _n.map(s => f.jsx(wo, {
                     tab: s.name,
                     style: {
                         boxSizing: "border-box",
                         maxHeight: 255
                     },
                     className: "scroll",
-                    children: s.characters.map(o => f.jsx(ee, {
+                    children: s.characters.map(o => f.jsx(te, {
                         style: {
                             margin: 2
                         },
@@ -776,10 +776,10 @@ const uo = re.div`
             })
         })
     },
-    wo = 220,
-    vr = e => {
-        const t = F.useRef(),
-            [n, r] = F.useState(!1),
+    bo = 220,
+    yr = e => {
+        const t = V.useRef(),
+            [n, r] = V.useState(!1),
             s = i => {
                 e.onTextChange(i.target.value)
             },
@@ -797,10 +797,10 @@ const uo = re.div`
             style: {
                 width: "100%"
             },
-            children: [f.jsx(tn, {
+            children: [f.jsx(rn, {
                 ref: t,
                 onPressEnter: e.onPressEnter,
-                maxLength: wo,
+                maxLength: bo,
                 disabled: e.disabled,
                 autoFocus: e.autoFocus,
                 style: {
@@ -814,19 +814,19 @@ const uo = re.div`
                 placeholder: e.placeholder,
                 value: e.value,
                 onChange: o,
-                suffix: n ? f.jsx("span", {}) : f.jsx(Ts, {
+                suffix: n ? f.jsx("span", {}) : f.jsx(Ss, {
                     title: "Show Symbol Keyboard",
-                    children: f.jsx(Ks, {
+                    children: f.jsx(Js, {
                         onClick: a
                     })
                 })
-            }), n ? f.jsx(vo, {
+            }), n ? f.jsx(yo, {
                 onSymbolSelected: i => e.onTextChange(e.value + i),
                 focusInput: c
             }) : null]
         })
     };
-class wr extends F.Component {
+class br extends V.Component {
     constructor() {
         super(...arguments), this.removeImage = () => {
             this.onImagePicked("")
@@ -835,13 +835,13 @@ class wr extends F.Component {
         }, this.getContent = () => this.props.currentImage ? f.jsxs("div", {
             className: "flex hc vc flex-column",
             children: [f.jsx("img", {
-                src: lr(this.props.currentImage),
+                src: dr(this.props.currentImage),
                 style: {
                     maxWidth: "100%",
                     maxHeight: 300,
                     borderRadius: 5
                 }
-            }), f.jsx(ee, {
+            }), f.jsx(te, {
                 type: "primary",
                 style: {
                     marginTop: 10
@@ -850,13 +850,13 @@ class wr extends F.Component {
                 onClick: this.removeImage,
                 children: "Remove Image"
             })]
-        }) : f.jsx(lo, {
+        }) : f.jsx(fo, {
             title: "Add Photo",
             titleFontSize: 34,
             titleBottomMargin: 6,
             defaultSearchTerm: "",
             onImagePicked: this.onImagePicked,
-            allowUpload: !en(),
+            allowUpload: !nn(),
             imageSearchDefaultText: "Search for anything!"
         })
     }
@@ -865,7 +865,7 @@ class wr extends F.Component {
             visible: t,
             close: n
         } = this.props;
-        return f.jsx(ur, {
+        return f.jsx(fr, {
             open: t,
             placement: "right",
             closable: !0,
@@ -882,33 +882,33 @@ class wr extends F.Component {
     }
 }
 var Te = {};
-const yo = e => t => {
+const Co = e => t => {
         const n = e(t);
         return t.add(n), n
     },
-    bo = e => (t, n) => (e.set(t, n), n),
-    Cn = Number.MAX_SAFE_INTEGER === void 0 ? 9007199254740991 : Number.MAX_SAFE_INTEGER,
-    yr = 536870912,
-    _n = yr * 2,
-    Co = (e, t) => n => {
+    _o = e => (t, n) => (e.set(t, n), n),
+    En = Number.MAX_SAFE_INTEGER === void 0 ? 9007199254740991 : Number.MAX_SAFE_INTEGER,
+    Cr = 536870912,
+    xn = Cr * 2,
+    Eo = (e, t) => n => {
         const r = t.get(n);
-        let s = r === void 0 ? n.size : r < _n ? r + 1 : 0;
+        let s = r === void 0 ? n.size : r < xn ? r + 1 : 0;
         if (!n.has(s)) return e(n, s);
-        if (n.size < yr) {
-            for (; n.has(s);) s = Math.floor(Math.random() * _n);
+        if (n.size < Cr) {
+            for (; n.has(s);) s = Math.floor(Math.random() * xn);
             return e(n, s)
         }
-        if (n.size > Cn) throw new Error("Congratulations, you created a collection of unique numbers which uses all available integers!");
-        for (; n.has(s);) s = Math.floor(Math.random() * Cn);
+        if (n.size > En) throw new Error("Congratulations, you created a collection of unique numbers which uses all available integers!");
+        for (; n.has(s);) s = Math.floor(Math.random() * En);
         return e(n, s)
     },
-    br = new WeakMap,
-    _o = bo(br),
-    Cr = Co(_o, br),
-    Eo = yo(Cr),
-    xo = e => typeof e.start == "function",
-    En = new WeakMap,
-    Ao = e => ({
+    _r = new WeakMap,
+    xo = _o(_r),
+    Er = Eo(xo, _r),
+    Ao = Co(Er),
+    To = e => typeof e.start == "function",
+    An = new WeakMap,
+    Mo = e => ({
         ...e,
         connect: ({
             call: t
@@ -919,12 +919,12 @@ const yo = e => t => {
             } = new MessageChannel, s = await t("connect", {
                 port: n
             }, [n]);
-            return En.set(r, s), r
+            return An.set(r, s), r
         },
         disconnect: ({
             call: t
         }) => async n => {
-            const r = En.get(n);
+            const r = An.get(n);
             if (r === void 0) throw new Error("The given port is not connected.");
             await t("disconnect", {
                 portId: r
@@ -934,17 +934,17 @@ const yo = e => t => {
             call: t
         }) => () => t("isSupported")
     }),
-    Ot = new WeakMap,
-    To = e => {
-        if (Ot.has(e)) return Ot.get(e);
+    Pt = new WeakMap,
+    So = e => {
+        if (Pt.has(e)) return Pt.get(e);
         const t = new Map;
-        return Ot.set(e, t), t
+        return Pt.set(e, t), t
     },
-    _r = e => {
-        const t = Ao(e);
+    xr = e => {
+        const t = Mo(e);
         return n => {
-            const r = To(n);
-            n.addEventListener("message", ({
+            const r = So(n);
+            n.addEventListener("message", (({
                 data: c
             }) => {
                 const {
@@ -957,9 +957,9 @@ const yo = e => t => {
                     } = r.get(i);
                     r.delete(i), c.error === void 0 ? d(c.result) : l(new Error(c.error.message))
                 }
-            }), xo(n) && n.start();
+            })), To(n) && n.start();
             const s = (c, i = null, l = []) => new Promise((d, u) => {
-                    const h = Cr(r);
+                    const h = Er(r);
                     r.set(h, {
                         reject: u,
                         resolve: d
@@ -992,8 +992,8 @@ const yo = e => t => {
             }
         }
     },
-    xn = new Set,
-    Mo = _r({
+    Tn = new Set,
+    Ro = xr({
         deregister: ({
             call: e
         }) => t => e("deregister", {
@@ -1006,12 +1006,12 @@ const yo = e => t => {
                 encoderId: t,
                 timeslice: n
             });
-            return xn.delete(t), r
+            return Tn.delete(t), r
         },
         instantiate: ({
             call: e
         }) => async (t, n) => {
-            const r = Eo(xn),
+            const r = Ao(Tn),
                 s = await e("instantiate", {
                     encoderId: r,
                     mimeType: t,
@@ -1028,21 +1028,21 @@ const yo = e => t => {
             port: t
         }, [t])
     }),
-    So = e => {
+    ko = e => {
         const t = new Worker(e);
-        return Mo(t)
+        return Ro(t)
     },
-    Ro = `(()=>{var e={455:function(e,t){!function(e){"use strict";var t=function(e){return function(t){var r=e(t);return t.add(r),r}},r=function(e){return function(t,r){return e.set(t,r),r}},n=void 0===Number.MAX_SAFE_INTEGER?9007199254740991:Number.MAX_SAFE_INTEGER,o=536870912,s=2*o,a=function(e,t){return function(r){var a=t.get(r),i=void 0===a?r.size:a<s?a+1:0;if(!r.has(i))return e(r,i);if(r.size<o){for(;r.has(i);)i=Math.floor(Math.random()*s);return e(r,i)}if(r.size>n)throw new Error("Congratulations, you created a collection of unique numbers which uses all available integers!");for(;r.has(i);)i=Math.floor(Math.random()*n);return e(r,i)}},i=new WeakMap,c=r(i),l=a(c,i),d=t(l);e.addUniqueNumber=d,e.generateUniqueNumber=l}(t)}},t={};function r(n){var o=t[n];if(void 0!==o)return o.exports;var s=t[n]={exports:{}};return e[n].call(s.exports,s,s.exports,r),s.exports}(()=>{"use strict";var e=r(455);const t=new WeakMap,n=new WeakMap,o=(r=>{const o=(s=r,{...s,connect:e=>{let{call:r}=e;return async()=>{const{port1:e,port2:n}=new MessageChannel,o=await r("connect",{port:e},[e]);return t.set(n,o),n}},disconnect:e=>{let{call:r}=e;return async e=>{const n=t.get(e);if(void 0===n)throw new Error("The given port is not connected.");await r("disconnect",{portId:n})}},isSupported:e=>{let{call:t}=e;return()=>t("isSupported")}});var s;return t=>{const r=(e=>{if(n.has(e))return n.get(e);const t=new Map;return n.set(e,t),t})(t);t.addEventListener("message",(e=>{let{data:t}=e;const{id:n}=t;if(null!==n&&r.has(n)){const{reject:e,resolve:o}=r.get(n);r.delete(n),void 0===t.error?o(t.result):e(new Error(t.error.message))}})),(e=>"function"==typeof e.start)(t)&&t.start();const s=function(n){let o=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null,s=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];return new Promise(((a,i)=>{const c=(0,e.generateUniqueNumber)(r);r.set(c,{reject:i,resolve:a}),null===o?t.postMessage({id:c,method:n},s):t.postMessage({id:c,method:n,params:o},s)}))},a=function(e,r){let n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];t.postMessage({id:null,method:e,params:r},n)};let i={};for(const[e,t]of Object.entries(o))i={...i,[e]:t({call:s,notify:a})};return{...i}}})({characterize:e=>{let{call:t}=e;return()=>t("characterize")},encode:e=>{let{call:t}=e;return(e,r)=>t("encode",{recordingId:e,timeslice:r})},record:e=>{let{call:t}=e;return async(e,r,n)=>{await t("record",{recordingId:e,sampleRate:r,typedArrays:n},n.map((e=>{let{buffer:t}=e;return t})))}}}),s=-32603,a=-32602,i=-32601,c=(e,t)=>Object.assign(new Error(e),{status:t}),l=e=>c('The handler of the method called "'.concat(e,'" returned an unexpected result.'),s),d=(e,t)=>async r=>{let{data:{id:n,method:o,params:a}}=r;const d=t[o];try{if(void 0===d)throw(e=>c('The requested method called "'.concat(e,'" is not supported.'),i))(o);const t=void 0===a?d():d(a);if(void 0===t)throw(e=>c('The handler of the method called "'.concat(e,'" returned no required result.'),s))(o);const r=t instanceof Promise?await t:t;if(null===n){if(void 0!==r.result)throw l(o)}else{if(void 0===r.result)throw l(o);const{result:t,transferables:s=[]}=r;e.postMessage({id:n,result:t},s)}}catch(t){const{message:r,status:o=-32603}=t;e.postMessage({error:{code:o,message:r},id:n})}},u=new Map,h=(t,r,n)=>({...r,connect:n=>{let{port:o}=n;o.start();const s=t(o,r),a=(0,e.generateUniqueNumber)(u);return u.set(a,(()=>{s(),o.close(),u.delete(a)})),{result:a}},disconnect:e=>{let{portId:t}=e;const r=u.get(t);if(void 0===r)throw(e=>c('The specified parameter called "portId" with the given value "'.concat(e,'" does not identify a port connected to this worker.'),a))(t);return r(),{result:null}},isSupported:async()=>{if(await new Promise((e=>{const t=new ArrayBuffer(0),{port1:r,port2:n}=new MessageChannel;r.onmessage=t=>{let{data:r}=t;return e(null!==r)},n.postMessage(t,[t])}))){const e=n();return{result:e instanceof Promise?await e:e}}return{result:!1}}}),f=function(e,t){const r=h(f,t,arguments.length>2&&void 0!==arguments[2]?arguments[2]:()=>!0),n=d(e,r);return e.addEventListener("message",n),()=>e.removeEventListener("message",n)},p=e=>{e.onmessage=null,e.close()},w=new Map,m=new WeakMap,g=((e,t)=>r=>{const n=t.get(r);if(void 0===n)throw new Error("There is no encoder stored which wraps this port.");e.delete(n),t.delete(r)})(w,m),v=new Map,y=(e=>t=>{const r=e.get(t);if(void 0===r)throw new Error("There was no instance of an encoder stored with the given id.");return r})(v),M=((e,t)=>r=>{const n=t(r);return e.delete(r),n})(v,y),E=((e,t)=>r=>{const[n,o,s,a]=t(r);return s?new Promise((t=>{o.onmessage=s=>{let{data:i}=s;0===i.length?(e(o),t(n.encode(r,null))):n.record(r,a,i)}})):n.encode(r,null)})(p,M),b=(e=>t=>{for(const[r,n]of Array.from(e.values()))if(r.test(t))return n;throw new Error("There is no encoder registered which could handle the given mimeType.")})(w),T=((e,t,r)=>(n,o,s)=>{if(t.has(n))throw new Error('There is already an encoder registered with an id called "'.concat(n,'".'));const a=r(o),{port1:i,port2:c}=new MessageChannel,l=[a,i,!0,s];return t.set(n,l),i.onmessage=t=>{let{data:r}=t;0===r.length?(e(i),l[2]=!1):a.record(n,s,r.map((e=>"number"==typeof e?new Float32Array(e):e)))},c})(p,v,b),I=((e,t,r)=>async n=>{const o=r(n),s=await o.characterize(),a=s.toString();if(e.has(a)||t.has(n))throw new Error("There is already an encoder stored which handles exactly the same mime types.");return e.set(a,[s,o]),t.set(n,a),s})(w,m,o),A=(e=>(t,r)=>{const[n]=e(t);return n.encode(t,r)})(y);f(self,{deregister:async e=>{let{port:t}=e;return{result:g(t)}},encode:async e=>{let{encoderId:t,timeslice:r}=e;const n=null===r?await E(t):await A(t,r);return{result:n,transferables:n}},instantiate:e=>{let{encoderId:t,mimeType:r,sampleRate:n}=e;const o=T(t,r,n);return{result:o,transferables:[o]}},register:async e=>{let{port:t}=e;return{result:await I(t)}}})})()})();`,
-    ko = new Blob([Ro], {
+    Io = `(()=>{var e={455:function(e,t){!function(e){"use strict";var t=function(e){return function(t){var r=e(t);return t.add(r),r}},r=function(e){return function(t,r){return e.set(t,r),r}},n=void 0===Number.MAX_SAFE_INTEGER?9007199254740991:Number.MAX_SAFE_INTEGER,o=536870912,s=2*o,a=function(e,t){return function(r){var a=t.get(r),i=void 0===a?r.size:a<s?a+1:0;if(!r.has(i))return e(r,i);if(r.size<o){for(;r.has(i);)i=Math.floor(Math.random()*s);return e(r,i)}if(r.size>n)throw new Error("Congratulations, you created a collection of unique numbers which uses all available integers!");for(;r.has(i);)i=Math.floor(Math.random()*n);return e(r,i)}},i=new WeakMap,c=r(i),l=a(c,i),d=t(l);e.addUniqueNumber=d,e.generateUniqueNumber=l}(t)}},t={};function r(n){var o=t[n];if(void 0!==o)return o.exports;var s=t[n]={exports:{}};return e[n].call(s.exports,s,s.exports,r),s.exports}(()=>{"use strict";var e=r(455);const t=new WeakMap,n=new WeakMap,o=(r=>{const o=(s=r,{...s,connect:e=>{let{call:r}=e;return async()=>{const{port1:e,port2:n}=new MessageChannel,o=await r("connect",{port:e},[e]);return t.set(n,o),n}},disconnect:e=>{let{call:r}=e;return async e=>{const n=t.get(e);if(void 0===n)throw new Error("The given port is not connected.");await r("disconnect",{portId:n})}},isSupported:e=>{let{call:t}=e;return()=>t("isSupported")}});var s;return t=>{const r=(e=>{if(n.has(e))return n.get(e);const t=new Map;return n.set(e,t),t})(t);t.addEventListener("message",(e=>{let{data:t}=e;const{id:n}=t;if(null!==n&&r.has(n)){const{reject:e,resolve:o}=r.get(n);r.delete(n),void 0===t.error?o(t.result):e(new Error(t.error.message))}})),(e=>"function"==typeof e.start)(t)&&t.start();const s=function(n){let o=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null,s=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];return new Promise(((a,i)=>{const c=(0,e.generateUniqueNumber)(r);r.set(c,{reject:i,resolve:a}),null===o?t.postMessage({id:c,method:n},s):t.postMessage({id:c,method:n,params:o},s)}))},a=function(e,r){let n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];t.postMessage({id:null,method:e,params:r},n)};let i={};for(const[e,t]of Object.entries(o))i={...i,[e]:t({call:s,notify:a})};return{...i}}})({characterize:e=>{let{call:t}=e;return()=>t("characterize")},encode:e=>{let{call:t}=e;return(e,r)=>t("encode",{recordingId:e,timeslice:r})},record:e=>{let{call:t}=e;return async(e,r,n)=>{await t("record",{recordingId:e,sampleRate:r,typedArrays:n},n.map((e=>{let{buffer:t}=e;return t})))}}}),s=-32603,a=-32602,i=-32601,c=(e,t)=>Object.assign(new Error(e),{status:t}),l=e=>c('The handler of the method called "'.concat(e,'" returned an unexpected result.'),s),d=(e,t)=>async r=>{let{data:{id:n,method:o,params:a}}=r;const d=t[o];try{if(void 0===d)throw(e=>c('The requested method called "'.concat(e,'" is not supported.'),i))(o);const t=void 0===a?d():d(a);if(void 0===t)throw(e=>c('The handler of the method called "'.concat(e,'" returned no required result.'),s))(o);const r=t instanceof Promise?await t:t;if(null===n){if(void 0!==r.result)throw l(o)}else{if(void 0===r.result)throw l(o);const{result:t,transferables:s=[]}=r;e.postMessage({id:n,result:t},s)}}catch(t){const{message:r,status:o=-32603}=t;e.postMessage({error:{code:o,message:r},id:n})}},u=new Map,h=(t,r,n)=>({...r,connect:n=>{let{port:o}=n;o.start();const s=t(o,r),a=(0,e.generateUniqueNumber)(u);return u.set(a,(()=>{s(),o.close(),u.delete(a)})),{result:a}},disconnect:e=>{let{portId:t}=e;const r=u.get(t);if(void 0===r)throw(e=>c('The specified parameter called "portId" with the given value "'.concat(e,'" does not identify a port connected to this worker.'),a))(t);return r(),{result:null}},isSupported:async()=>{if(await new Promise((e=>{const t=new ArrayBuffer(0),{port1:r,port2:n}=new MessageChannel;r.onmessage=t=>{let{data:r}=t;return e(null!==r)},n.postMessage(t,[t])}))){const e=n();return{result:e instanceof Promise?await e:e}}return{result:!1}}}),f=function(e,t){const r=h(f,t,arguments.length>2&&void 0!==arguments[2]?arguments[2]:()=>!0),n=d(e,r);return e.addEventListener("message",n),()=>e.removeEventListener("message",n)},p=e=>{e.onmessage=null,e.close()},w=new Map,m=new WeakMap,g=((e,t)=>r=>{const n=t.get(r);if(void 0===n)throw new Error("There is no encoder stored which wraps this port.");e.delete(n),t.delete(r)})(w,m),v=new Map,y=(e=>t=>{const r=e.get(t);if(void 0===r)throw new Error("There was no instance of an encoder stored with the given id.");return r})(v),M=((e,t)=>r=>{const n=t(r);return e.delete(r),n})(v,y),E=((e,t)=>r=>{const[n,o,s,a]=t(r);return s?new Promise((t=>{o.onmessage=s=>{let{data:i}=s;0===i.length?(e(o),t(n.encode(r,null))):n.record(r,a,i)}})):n.encode(r,null)})(p,M),b=(e=>t=>{for(const[r,n]of Array.from(e.values()))if(r.test(t))return n;throw new Error("There is no encoder registered which could handle the given mimeType.")})(w),T=((e,t,r)=>(n,o,s)=>{if(t.has(n))throw new Error('There is already an encoder registered with an id called "'.concat(n,'".'));const a=r(o),{port1:i,port2:c}=new MessageChannel,l=[a,i,!0,s];return t.set(n,l),i.onmessage=t=>{let{data:r}=t;0===r.length?(e(i),l[2]=!1):a.record(n,s,r.map((e=>"number"==typeof e?new Float32Array(e):e)))},c})(p,v,b),I=((e,t,r)=>async n=>{const o=r(n),s=await o.characterize(),a=s.toString();if(e.has(a)||t.has(n))throw new Error("There is already an encoder stored which handles exactly the same mime types.");return e.set(a,[s,o]),t.set(n,a),s})(w,m,o),A=(e=>(t,r)=>{const[n]=e(t);return n.encode(t,r)})(y);f(self,{deregister:async e=>{let{port:t}=e;return{result:g(t)}},encode:async e=>{let{encoderId:t,timeslice:r}=e;const n=null===r?await E(t):await A(t,r);return{result:n,transferables:n}},instantiate:e=>{let{encoderId:t,mimeType:r,sampleRate:n}=e;const o=T(t,r,n);return{result:o,transferables:[o]}},register:async e=>{let{port:t}=e;return{result:await I(t)}}})})()})();`,
+    No = new Blob([Io], {
         type: "application/javascript; charset=utf-8"
     }),
-    Er = URL.createObjectURL(ko),
-    nn = So(Er),
-    it = nn.encode,
-    xr = nn.instantiate,
-    Io = nn.register;
-URL.revokeObjectURL(Er);
-const No = e => (t, n) => {
+    Ar = URL.createObjectURL(No),
+    sn = ko(Ar),
+    lt = sn.encode,
+    Tr = sn.instantiate,
+    Oo = sn.register;
+URL.revokeObjectURL(Ar);
+const jo = e => (t, n) => {
         if (e === null) {
             const {
                 data: r,
@@ -1052,7 +1052,7 @@ const No = e => (t, n) => {
         }
         return new e(t, n)
     },
-    Oo = (e, t) => (n, r, s) => {
+    Po = (e, t) => (n, r, s) => {
         const o = [];
         let a = r,
             c = 0;
@@ -1079,7 +1079,7 @@ const No = e => (t, n) => {
             offset: c
         }
     },
-    jo = (e, t) => class {
+    Lo = (e, t) => class {
         constructor(r = null) {
             this._listeners = new WeakMap, this._nativeEventTarget = r === null ? e() : r
         }
@@ -1097,25 +1097,25 @@ const No = e => (t, n) => {
             this._nativeEventTarget.removeEventListener(r, a === void 0 ? null : a, o)
         }
     },
-    Po = e => () => {
+    Bo = e => () => {
         if (e === null) throw new Error("A native EventTarget could not be created.");
         return e.document.createElement("p")
     },
-    rn = (e = "") => {
+    on = (e = "") => {
         try {
             return new DOMException(e, "InvalidModificationError")
         } catch (t) {
             return t.code = 13, t.message = e, t.name = "InvalidModificationError", t
         }
     },
-    Lo = () => {
+    Uo = () => {
         try {
             return new DOMException("", "InvalidStateError")
         } catch (e) {
             return e.code = 11, e.name = "InvalidStateError", e
         }
     },
-    Bo = e => e !== null && e.MediaStream !== void 0 && (e.MediaRecorder === void 0 || e.MediaRecorder.isTypeSupported !== void 0) ? new Promise(t => {
+    Do = e => e !== null && e.MediaStream !== void 0 && (e.MediaRecorder === void 0 || e.MediaRecorder.isTypeSupported !== void 0) ? new Promise(t => {
         if (e.MediaRecorder === void 0) return t(!0);
         const n = document.createElement("canvas");
         if (n.getContext("2d"), typeof n.captureStream != "function") return t(!1);
@@ -1132,7 +1132,7 @@ const No = e => (t, n) => {
             t(o.name === "NotSupportedError")
         }
     }) : Promise.resolve(!1),
-    Uo = (e, t, n, r, s, o, a) => class extends o {
+    Wo = (e, t, n, r, s, o, a) => class extends o {
         constructor(i, l = {}) {
             const {
                 mimeType: d
@@ -1220,8 +1220,8 @@ const No = e => (t, n) => {
             return a !== null && a.isTypeSupported !== void 0 && a.isTypeSupported(i) || s.some(l => l.test(i))
         }
     },
-    Do = e => e !== null && e.BlobEvent !== void 0 ? e.BlobEvent : null,
-    Wo = (e, t) => (n, r, s) => {
+    Vo = e => e !== null && e.BlobEvent !== void 0 ? e.BlobEvent : null,
+    Fo = (e, t) => (n, r, s) => {
         const o = [],
             a = new WeakMap,
             c = new WeakMap,
@@ -1287,15 +1287,15 @@ const No = e => (t, n) => {
             return d = h !== void 0, h === void 0 ? u.call(i) : u.call(i, h)
         })(i.start), i
     },
-    Vo = e => e === null || e.MediaRecorder === void 0 ? null : e.MediaRecorder,
-    gt = () => {
+    $o = e => e === null || e.MediaRecorder === void 0 ? null : e.MediaRecorder,
+    wt = () => {
         try {
             return new DOMException("", "NotSupportedError")
         } catch (e) {
             return e.code = 9, e.name = "NotSupportedError", e
         }
     },
-    Fo = e => (t, n, r, s = 2) => {
+    zo = e => (t, n, r, s = 2) => {
         const o = e(t, n);
         if (o === null) return o;
         const {
@@ -1326,7 +1326,7 @@ const No = e => (t, n) => {
             length: a + c
         }
     },
-    $o = e => (t, n) => {
+    qo = e => (t, n) => {
         const r = e(t, n);
         if (r === null) return r;
         const {
@@ -1344,7 +1344,7 @@ const No = e => (t, n) => {
             type: "unknown"
         }
     },
-    zo = e => (t, n) => {
+    Go = e => (t, n) => {
         const r = e(t, n);
         if (r === null) return r;
         const s = n + Math.floor((r - 1) / 8);
@@ -1356,60 +1356,60 @@ const No = e => (t, n) => {
             value: a
         }
     },
-    qo = e => (t, n) => (e.set(t, n), n),
-    An = Number.MAX_SAFE_INTEGER === void 0 ? 9007199254740991 : Number.MAX_SAFE_INTEGER,
-    Ar = 536870912,
-    Tn = Ar * 2,
-    Go = (e, t) => n => {
+    Ho = e => (t, n) => (e.set(t, n), n),
+    Mn = Number.MAX_SAFE_INTEGER === void 0 ? 9007199254740991 : Number.MAX_SAFE_INTEGER,
+    Mr = 536870912,
+    Sn = Mr * 2,
+    Xo = (e, t) => n => {
         const r = t.get(n);
-        let s = r === void 0 ? n.size : r < Tn ? r + 1 : 0;
+        let s = r === void 0 ? n.size : r < Sn ? r + 1 : 0;
         if (!n.has(s)) return e(n, s);
-        if (n.size < Ar) {
-            for (; n.has(s);) s = Math.floor(Math.random() * Tn);
+        if (n.size < Mr) {
+            for (; n.has(s);) s = Math.floor(Math.random() * Sn);
             return e(n, s)
         }
-        if (n.size > An) throw new Error("Congratulations, you created a collection of unique numbers which uses all available integers!");
-        for (; n.has(s);) s = Math.floor(Math.random() * An);
+        if (n.size > Mn) throw new Error("Congratulations, you created a collection of unique numbers which uses all available integers!");
+        for (; n.has(s);) s = Math.floor(Math.random() * Mn);
         return e(n, s)
     },
-    Tr = new WeakMap,
-    Ho = qo(Tr),
-    Xo = Go(Ho, Tr),
-    Mn = Symbol.observable || "@@observable";
+    Sr = new WeakMap,
+    Qo = Ho(Sr),
+    Yo = Xo(Qo, Sr),
+    Rn = Symbol.observable || "@@observable";
 
-function Qo(e) {
-    return Symbol.observable || (typeof e == "function" && e.prototype && e.prototype[Symbol.observable] ? (e.prototype[Mn] = e.prototype[Symbol.observable], delete e.prototype[Symbol.observable]) : (e[Mn] = e[Symbol.observable], delete e[Symbol.observable])), e
+function Ko(e) {
+    return Symbol.observable || (typeof e == "function" && e.prototype && e.prototype[Symbol.observable] ? (e.prototype[Rn] = e.prototype[Symbol.observable], delete e.prototype[Symbol.observable]) : (e[Rn] = e[Symbol.observable], delete e[Symbol.observable])), e
 }
-const rt = () => {},
-    Sn = e => {
+const ot = () => {},
+    kn = e => {
         throw e
     };
 
-function Yo(e) {
+function Zo(e) {
     return e ? e.next && e.error && e.complete ? e : {
-        complete: (e.complete ?? rt).bind(e),
-        error: (e.error ?? Sn).bind(e),
-        next: (e.next ?? rt).bind(e)
+        complete: (e.complete ?? ot).bind(e),
+        error: (e.error ?? kn).bind(e),
+        next: (e.next ?? ot).bind(e)
     } : {
-        complete: rt,
-        error: Sn,
-        next: rt
+        complete: ot,
+        error: kn,
+        next: ot
     }
 }
-const Ko = e => (t, n, r) => e(s => {
+const Jo = e => (t, n, r) => e(s => {
         const o = a => s.next(a);
         return t.addEventListener(n, o, r), () => t.removeEventListener(n, o, r)
     }),
-    Zo = (e, t) => {
+    ea = (e, t) => {
         const n = () => {},
             r = s => typeof s[0] == "function";
         return s => {
-            const o = (...a) => {
+            const o = ((...a) => {
                 const c = s(r(a) ? t({
                     next: a[0]
                 }) : t(...a));
                 return c !== void 0 ? c : n
-            };
+            });
             return o[Symbol.observable] = () => ({
                 subscribe: (...a) => ({
                     unsubscribe: o(...a)
@@ -1417,31 +1417,31 @@ const Ko = e => (t, n, r) => e(s => {
             }), e(o)
         }
     },
-    Jo = Zo(Qo, Yo),
-    Mr = Ko(Jo);
+    ta = ea(Ko, Zo),
+    Rr = Jo(ta);
 /*!
  * dashify <https://github.com/jonschlinkert/dashify>
  *
  * Copyright (c) 2015-2017, Jon Schlinkert.
  * Released under the MIT License.
  */
-var jt, Rn;
+var Lt, In;
 
-function ea() {
-    return Rn || (Rn = 1, jt = (e, t) => {
+function na() {
+    return In || (In = 1, Lt = (e, t) => {
         if (typeof e != "string") throw new TypeError("expected a string");
         return e.trim().replace(/([a-z])([A-Z])/g, "$1-$2").replace(/\W/g, n => /[À-ž]/.test(n) ? n : "-").replace(/^-+|-+$/g, "").replace(/-{2,}/g, n => t && t.condense ? "-" : n).toLowerCase()
-    }), jt
+    }), Lt
 }
-var ta = ea();
-const na = or(ta);
-var Pt = {
+var ra = na();
+const sa = ir(ra);
+var Bt = {
         exports: {}
     },
-    kn;
+    Nn;
 
-function ra() {
-    return kn || (kn = 1, function(e) {
+function oa() {
+    return Nn || (Nn = 1, (function(e) {
         var t = function(n) {
             var r, s, o = /\w+/.exec(n);
             if (o) s = o[0];
@@ -1458,23 +1458,23 @@ function ra() {
             return s.match(/^U[NK][AIEO]/) ? "a" : s == s.toUpperCase() ? "aedhilmnorsx".indexOf(a[0]) >= 0 ? "an" : "a" : "aeiou".indexOf(a[0]) >= 0 || a.match(/^y(b[lor]|cl[ea]|fere|gg|p[ios]|rou|tt)/) ? "an" : "a"
         };
         e.exports = t
-    }(Pt)), Pt.exports
+    })(Bt)), Bt.exports
 }
-var sa = ra();
-const oa = or(sa),
-    In = (e, t) => t === void 0 ? e : t.reduce((n, r) => {
+var aa = oa();
+const ia = ir(aa),
+    On = (e, t) => t === void 0 ? e : t.reduce((n, r) => {
         if (r === "capitalize") {
             const s = n.charAt(0).toUpperCase(),
                 o = n.slice(1);
             return `${s}${o}`
         }
-        return r === "dashify" ? na(n) : r === "prependIndefiniteArticle" ? `${oa(n)} ${n}` : n
+        return r === "dashify" ? sa(n) : r === "prependIndefiniteArticle" ? `${ia(n)} ${n}` : n
     }, e),
-    aa = e => {
+    ca = e => {
         const t = e.name + e.modifiers.map(n => `\\.${n}\\(\\)`).join("");
         return new RegExp(`\\$\\{${t}}`, "g")
     },
-    Nn = (e, t) => {
+    jn = (e, t) => {
         const n = /\${([^.}]+)((\.[^(]+\(\))*)}/g,
             r = [];
         let s = n.exec(e);
@@ -1490,12 +1490,12 @@ const oa = or(sa),
             }
             r.push(a), s = n.exec(e)
         }
-        const o = r.reduce((a, c) => a.map(i => typeof i == "string" ? i.split(aa(c)).reduce((l, d, u) => u === 0 ? [d] : c.name in t ? [...l, In(t[c.name], c.modifiers), d] : [...l, h => In(h[c.name], c.modifiers), d], []) : [i]).reduce((i, l) => [...i, ...l], []), [e]);
+        const o = r.reduce((a, c) => a.map(i => typeof i == "string" ? i.split(ca(c)).reduce((l, d, u) => u === 0 ? [d] : c.name in t ? [...l, On(t[c.name], c.modifiers), d] : [...l, h => On(h[c.name], c.modifiers), d], []) : [i]).reduce((i, l) => [...i, ...l], []), [e]);
         return a => o.reduce((c, i) => typeof i == "string" ? [...c, i] : [...c, i(a)], []).join("")
     },
-    vt = (e, t = {}) => {
-        const n = e.code === void 0 ? void 0 : Nn(e.code, t),
-            r = e.message === void 0 ? void 0 : Nn(e.message, t);
+    yt = (e, t = {}) => {
+        const n = e.code === void 0 ? void 0 : jn(e.code, t),
+            r = e.message === void 0 ? void 0 : jn(e.message, t);
 
         function s(o = {}, a) {
             const c = a === void 0 && (o instanceof Error || o.code !== void 0 && o.code.slice(-9) === "Exception"),
@@ -1514,28 +1514,28 @@ const oa = or(sa),
         }
         return s
     },
-    wt = {
+    bt = {
         INTERNAL_ERROR: -32603,
         INVALID_PARAMS: -32602,
         METHOD_NOT_FOUND: -32601
     };
-vt({
+yt({
     message: 'The requested method called "${method}" is not supported.',
-    status: wt.METHOD_NOT_FOUND
+    status: bt.METHOD_NOT_FOUND
 });
-vt({
+yt({
     message: 'The handler of the method called "${method}" returned no required result.',
-    status: wt.INTERNAL_ERROR
+    status: bt.INTERNAL_ERROR
 });
-vt({
+yt({
     message: 'The handler of the method called "${method}" returned an unexpected result.',
-    status: wt.INTERNAL_ERROR
+    status: bt.INTERNAL_ERROR
 });
-vt({
+yt({
     message: 'The specified parameter called "portId" with the given value "${portId}" does not identify a port connected to this worker.',
-    status: wt.INVALID_PARAMS
+    status: bt.INVALID_PARAMS
 });
-const ia = (e, t, n) => async r => {
+const la = (e, t, n) => async r => {
     const s = new e([n], {
             type: "application/javascript; charset=utf-8"
         }),
@@ -1545,7 +1545,7 @@ const ia = (e, t, n) => async r => {
     } finally {
         t.revokeObjectURL(o)
     }
-}, ca = e => ({
+}, ua = e => ({
     data: t
 }) => {
     const {
@@ -1561,7 +1561,7 @@ const ia = (e, t, n) => async r => {
             e.delete(n), t.error === void 0 ? o(t.result) : s(new Error(t.error.message))
         }
     }
-}, la = e => (t, n) => (r, s = []) => new Promise((o, a) => {
+}, da = e => (t, n) => (r, s = []) => new Promise((o, a) => {
     const c = e(t);
     t.set(c, {
         reject: a,
@@ -1570,7 +1570,7 @@ const ia = (e, t, n) => async r => {
         id: c,
         ...r
     }, s)
-}), ua = (e, t, n, r) => (s, o, a = {}) => {
+}), fa = (e, t, n, r) => (s, o, a = {}) => {
     const c = new s(o, "recorder-audio-worklet-processor", {
             ...a,
             channelCountMode: "explicit",
@@ -1627,74 +1627,74 @@ const ia = (e, t, n) => async r => {
             }
         }
     }), c
-}, da = (e, t) => {
+}, ha = (e, t) => {
     if (!e.includes(t)) throw new Error(`Expected the state to be ${e.map(n=>`"${n}"`).join(" or ")} but it was "${t}".`)
-}, fa = '(()=>{"use strict";class e extends AudioWorkletProcessor{constructor(){super(),this._encoderPort=null,this._state="inactive",this.port.onmessage=e=>{let{data:t}=e;"pause"===t.method?"active"===this._state||"recording"===this._state?(this._state="paused",this._sendAcknowledgement(t.id)):this._sendUnexpectedStateError(t.id):"record"===t.method?"inactive"===this._state?(this._encoderPort=t.params.encoderPort,this._state="active",this._sendAcknowledgement(t.id)):this._sendUnexpectedStateError(t.id):"resume"===t.method?"paused"===this._state?(this._state="active",this._sendAcknowledgement(t.id)):this._sendUnexpectedStateError(t.id):"stop"===t.method?"active"!==this._state&&"paused"!==this._state&&"recording"!==this._state||null===this._encoderPort?this._sendUnexpectedStateError(t.id):(this._stop(this._encoderPort),this._sendAcknowledgement(t.id)):"number"==typeof t.id&&this.port.postMessage({error:{code:-32601,message:"The requested method is not supported."},id:t.id})}}process(e){let[t]=e;if("inactive"===this._state||"paused"===this._state)return!0;if("active"===this._state){if(void 0===t)throw new Error("No channelData was received for the first input.");if(0===t.length)return!0;this._state="recording"}if("recording"===this._state&&null!==this._encoderPort){if(void 0===t)throw new Error("No channelData was received for the first input.");if(0!==t.length)return this._encoderPort.postMessage(t,t.map((e=>{let{buffer:t}=e;return t}))),!0;this._stop(this._encoderPort)}return!1}_sendAcknowledgement(e){this.port.postMessage({id:e,result:null})}_sendUnexpectedStateError(e){this.port.postMessage({error:{code:-32603,message:"The internal state does not allow to process the given message."},id:e})}_stop(e){e.postMessage([]),e.close(),this._encoderPort=null,this._state="stopped"}}e.parameterDescriptors=[],registerProcessor("recorder-audio-worklet-processor",e)})();', ha = ia(Blob, URL, fa), ma = ua(ca, la(Xo), Mr, da), On = (e, t, n) => ({
+}, ma = '(()=>{"use strict";class e extends AudioWorkletProcessor{constructor(){super(),this._encoderPort=null,this._state="inactive",this.port.onmessage=e=>{let{data:t}=e;"pause"===t.method?"active"===this._state||"recording"===this._state?(this._state="paused",this._sendAcknowledgement(t.id)):this._sendUnexpectedStateError(t.id):"record"===t.method?"inactive"===this._state?(this._encoderPort=t.params.encoderPort,this._state="active",this._sendAcknowledgement(t.id)):this._sendUnexpectedStateError(t.id):"resume"===t.method?"paused"===this._state?(this._state="active",this._sendAcknowledgement(t.id)):this._sendUnexpectedStateError(t.id):"stop"===t.method?"active"!==this._state&&"paused"!==this._state&&"recording"!==this._state||null===this._encoderPort?this._sendUnexpectedStateError(t.id):(this._stop(this._encoderPort),this._sendAcknowledgement(t.id)):"number"==typeof t.id&&this.port.postMessage({error:{code:-32601,message:"The requested method is not supported."},id:t.id})}}process(e){let[t]=e;if("inactive"===this._state||"paused"===this._state)return!0;if("active"===this._state){if(void 0===t)throw new Error("No channelData was received for the first input.");if(0===t.length)return!0;this._state="recording"}if("recording"===this._state&&null!==this._encoderPort){if(void 0===t)throw new Error("No channelData was received for the first input.");if(0!==t.length)return this._encoderPort.postMessage(t,t.map((e=>{let{buffer:t}=e;return t}))),!0;this._stop(this._encoderPort)}return!1}_sendAcknowledgement(e){this.port.postMessage({id:e,result:null})}_sendUnexpectedStateError(e){this.port.postMessage({error:{code:-32603,message:"The internal state does not allow to process the given message."},id:e})}_stop(e){e.postMessage([]),e.close(),this._encoderPort=null,this._state="stopped"}}e.parameterDescriptors=[],registerProcessor("recorder-audio-worklet-processor",e)})();', pa = la(Blob, URL, ma), ga = fa(ua, da(Yo), Rr, ha), Pn = (e, t, n) => ({
     endTime: t,
     insertTime: n,
     type: "exponentialRampToValue",
     value: e
-}), jn = (e, t, n) => ({
+}), Ln = (e, t, n) => ({
     endTime: t,
     insertTime: n,
     type: "linearRampToValue",
     value: e
-}), $t = (e, t) => ({
+}), qt = (e, t) => ({
     startTime: t,
     type: "setValue",
     value: e
-}), Sr = (e, t, n) => ({
+}), kr = (e, t, n) => ({
     duration: n,
     startTime: t,
     type: "setValueCurve",
     values: e
-}), Rr = (e, t, {
+}), Ir = (e, t, {
     startTime: n,
     target: r,
     timeConstant: s
-}) => r + (t - r) * Math.exp((n - e) / s), Be = e => e.type === "exponentialRampToValue", ct = e => e.type === "linearRampToValue", we = e => Be(e) || ct(e), sn = e => e.type === "setValue", fe = e => e.type === "setValueCurve", lt = (e, t, n, r) => {
+}) => r + (t - r) * Math.exp((n - e) / s), We = e => e.type === "exponentialRampToValue", ut = e => e.type === "linearRampToValue", ye = e => We(e) || ut(e), an = e => e.type === "setValue", fe = e => e.type === "setValueCurve", dt = (e, t, n, r) => {
     const s = e[t];
-    return s === void 0 ? r : we(s) || sn(s) ? s.value : fe(s) ? s.values[s.values.length - 1] : Rr(n, lt(e, t - 1, s.startTime, r), s)
-}, Pn = (e, t, n, r, s) => n === void 0 ? [r.insertTime, s] : we(n) ? [n.endTime, n.value] : sn(n) ? [n.startTime, n.value] : fe(n) ? [n.startTime + n.duration, n.values[n.values.length - 1]] : [n.startTime, lt(e, t - 1, n.startTime, s)], zt = e => e.type === "cancelAndHold", qt = e => e.type === "cancelScheduledValues", ve = e => zt(e) || qt(e) ? e.cancelTime : Be(e) || ct(e) ? e.endTime : e.startTime, Ln = (e, t, n, {
+    return s === void 0 ? r : ye(s) || an(s) ? s.value : fe(s) ? s.values[s.values.length - 1] : Ir(n, dt(e, t - 1, s.startTime, r), s)
+}, Bn = (e, t, n, r, s) => n === void 0 ? [r.insertTime, s] : ye(n) ? [n.endTime, n.value] : an(n) ? [n.startTime, n.value] : fe(n) ? [n.startTime + n.duration, n.values[n.values.length - 1]] : [n.startTime, dt(e, t - 1, n.startTime, s)], Gt = e => e.type === "cancelAndHold", Ht = e => e.type === "cancelScheduledValues", we = e => Gt(e) || Ht(e) ? e.cancelTime : We(e) || ut(e) ? e.endTime : e.startTime, Un = (e, t, n, {
     endTime: r,
     value: s
-}) => n === s ? s : 0 < n && 0 < s || n < 0 && s < 0 ? n * (s / n) ** ((e - t) / (r - t)) : 0, Bn = (e, t, n, {
+}) => n === s ? s : 0 < n && 0 < s || n < 0 && s < 0 ? n * (s / n) ** ((e - t) / (r - t)) : 0, Dn = (e, t, n, {
     endTime: r,
     value: s
-}) => n + (e - t) / (r - t) * (s - n), pa = (e, t) => {
+}) => n + (e - t) / (r - t) * (s - n), va = (e, t) => {
     const n = Math.floor(t),
         r = Math.ceil(t);
     return n === r ? e[n] : (1 - (t - n)) * e[n] + (1 - (r - t)) * e[r]
-}, ga = (e, {
+}, wa = (e, {
     duration: t,
     startTime: n,
     values: r
 }) => {
     const s = (e - n) / t * (r.length - 1);
-    return pa(r, s)
-}, st = e => e.type === "setTarget";
-class va {
+    return va(r, s)
+}, at = e => e.type === "setTarget";
+class ya {
     constructor(t) {
         this._automationEvents = [], this._currenTime = 0, this._defaultValue = t
     } [Symbol.iterator]() {
         return this._automationEvents[Symbol.iterator]()
     }
     add(t) {
-        const n = ve(t);
-        if (zt(t) || qt(t)) {
-            const r = this._automationEvents.findIndex(o => qt(t) && fe(o) ? o.startTime + o.duration >= n : ve(o) >= n),
+        const n = we(t);
+        if (Gt(t) || Ht(t)) {
+            const r = this._automationEvents.findIndex(o => Ht(t) && fe(o) ? o.startTime + o.duration >= n : we(o) >= n),
                 s = this._automationEvents[r];
-            if (r !== -1 && (this._automationEvents = this._automationEvents.slice(0, r)), zt(t)) {
+            if (r !== -1 && (this._automationEvents = this._automationEvents.slice(0, r)), Gt(t)) {
                 const o = this._automationEvents[this._automationEvents.length - 1];
-                if (s !== void 0 && we(s)) {
-                    if (o !== void 0 && st(o)) throw new Error("The internal list is malformed.");
-                    const a = o === void 0 ? s.insertTime : fe(o) ? o.startTime + o.duration : ve(o),
+                if (s !== void 0 && ye(s)) {
+                    if (o !== void 0 && at(o)) throw new Error("The internal list is malformed.");
+                    const a = o === void 0 ? s.insertTime : fe(o) ? o.startTime + o.duration : we(o),
                         c = o === void 0 ? this._defaultValue : fe(o) ? o.values[o.values.length - 1] : o.value,
-                        i = Be(s) ? Ln(n, a, c, s) : Bn(n, a, c, s),
-                        l = Be(s) ? On(i, n, this._currenTime) : jn(i, n, this._currenTime);
+                        i = We(s) ? Un(n, a, c, s) : Dn(n, a, c, s),
+                        l = We(s) ? Pn(i, n, this._currenTime) : Ln(i, n, this._currenTime);
                     this._automationEvents.push(l)
                 }
-                if (o !== void 0 && st(o) && this._automationEvents.push($t(this.getValue(n), n)), o !== void 0 && fe(o) && o.startTime + o.duration > n) {
+                if (o !== void 0 && at(o) && this._automationEvents.push(qt(this.getValue(n), n)), o !== void 0 && fe(o) && o.startTime + o.duration > n) {
                     const a = n - o.startTime,
                         c = (o.values.length - 1) / o.duration,
                         i = Math.max(2, 1 + Math.ceil(a * c)),
@@ -1705,80 +1705,80 @@ class va {
                             const h = l * u % 1;
                             d[u] = o.values[u - 1] * (1 - h) + o.values[u] * h
                         }
-                    this._automationEvents[this._automationEvents.length - 1] = Sr(d, o.startTime, a)
+                    this._automationEvents[this._automationEvents.length - 1] = kr(d, o.startTime, a)
                 }
             }
         } else {
-            const r = this._automationEvents.findIndex(a => ve(a) > n),
+            const r = this._automationEvents.findIndex(a => we(a) > n),
                 s = r === -1 ? this._automationEvents[this._automationEvents.length - 1] : this._automationEvents[r - 1];
-            if (s !== void 0 && fe(s) && ve(s) + s.duration > n) return !1;
-            const o = Be(t) ? On(t.value, t.endTime, this._currenTime) : ct(t) ? jn(t.value, n, this._currenTime) : t;
+            if (s !== void 0 && fe(s) && we(s) + s.duration > n) return !1;
+            const o = We(t) ? Pn(t.value, t.endTime, this._currenTime) : ut(t) ? Ln(t.value, n, this._currenTime) : t;
             if (r === -1) this._automationEvents.push(o);
             else {
-                if (fe(t) && n + t.duration > ve(this._automationEvents[r])) return !1;
+                if (fe(t) && n + t.duration > we(this._automationEvents[r])) return !1;
                 this._automationEvents.splice(r, 0, o)
             }
         }
         return !0
     }
     flush(t) {
-        const n = this._automationEvents.findIndex(r => ve(r) > t);
+        const n = this._automationEvents.findIndex(r => we(r) > t);
         if (n > 1) {
             const r = this._automationEvents.slice(n - 1),
                 s = r[0];
-            st(s) && r.unshift($t(lt(this._automationEvents, n - 2, s.startTime, this._defaultValue), s.startTime)), this._automationEvents = r
+            at(s) && r.unshift(qt(dt(this._automationEvents, n - 2, s.startTime, this._defaultValue), s.startTime)), this._automationEvents = r
         }
     }
     getValue(t) {
         if (this._automationEvents.length === 0) return this._defaultValue;
-        const n = this._automationEvents.findIndex(a => ve(a) > t),
+        const n = this._automationEvents.findIndex(a => we(a) > t),
             r = this._automationEvents[n],
             s = (n === -1 ? this._automationEvents.length : n) - 1,
             o = this._automationEvents[s];
-        if (o !== void 0 && st(o) && (r === void 0 || !we(r) || r.insertTime > t)) return Rr(t, lt(this._automationEvents, s - 1, o.startTime, this._defaultValue), o);
-        if (o !== void 0 && sn(o) && (r === void 0 || !we(r))) return o.value;
-        if (o !== void 0 && fe(o) && (r === void 0 || !we(r) || o.startTime + o.duration > t)) return t < o.startTime + o.duration ? ga(t, o) : o.values[o.values.length - 1];
-        if (o !== void 0 && we(o) && (r === void 0 || !we(r))) return o.value;
-        if (r !== void 0 && Be(r)) {
-            const [a, c] = Pn(this._automationEvents, s, o, r, this._defaultValue);
-            return Ln(t, a, c, r)
+        if (o !== void 0 && at(o) && (r === void 0 || !ye(r) || r.insertTime > t)) return Ir(t, dt(this._automationEvents, s - 1, o.startTime, this._defaultValue), o);
+        if (o !== void 0 && an(o) && (r === void 0 || !ye(r))) return o.value;
+        if (o !== void 0 && fe(o) && (r === void 0 || !ye(r) || o.startTime + o.duration > t)) return t < o.startTime + o.duration ? wa(t, o) : o.values[o.values.length - 1];
+        if (o !== void 0 && ye(o) && (r === void 0 || !ye(r))) return o.value;
+        if (r !== void 0 && We(r)) {
+            const [a, c] = Bn(this._automationEvents, s, o, r, this._defaultValue);
+            return Un(t, a, c, r)
         }
-        if (r !== void 0 && ct(r)) {
-            const [a, c] = Pn(this._automationEvents, s, o, r, this._defaultValue);
-            return Bn(t, a, c, r)
+        if (r !== void 0 && ut(r)) {
+            const [a, c] = Bn(this._automationEvents, s, o, r, this._defaultValue);
+            return Dn(t, a, c, r)
         }
         return this._defaultValue
     }
 }
-const wa = e => ({
+const ba = e => ({
         cancelTime: e,
         type: "cancelAndHold"
     }),
-    ya = e => ({
+    Ca = e => ({
         cancelTime: e,
         type: "cancelScheduledValues"
     }),
-    ba = (e, t) => ({
+    _a = (e, t) => ({
         endTime: t,
         type: "exponentialRampToValue",
         value: e
     }),
-    Ca = (e, t) => ({
+    Ea = (e, t) => ({
         endTime: t,
         type: "linearRampToValue",
         value: e
     }),
-    _a = (e, t, n) => ({
+    xa = (e, t, n) => ({
         startTime: t,
         target: e,
         timeConstant: n,
         type: "setTarget"
     }),
-    Ea = () => new DOMException("", "AbortError"),
-    xa = e => (t, n, [r, s, o], a) => {
+    Aa = () => new DOMException("", "AbortError"),
+    Ta = e => (t, n, [r, s, o], a) => {
         e(t[s], [n, r, o], c => c[0] === n && c[1] === r, a)
     },
-    Aa = e => (t, n, r) => {
+    Ma = e => (t, n, r) => {
         const s = [];
         for (let o = 0; o < r.numberOfInputs; o += 1) s.push(new Set);
         e.set(t, {
@@ -1788,57 +1788,57 @@ const wa = e => ({
             renderer: n
         })
     },
-    Ta = e => (t, n) => {
+    Sa = e => (t, n) => {
         e.set(t, {
             activeInputs: new Set,
             passiveInputs: new WeakMap,
             renderer: n
         })
     },
-    Ue = new WeakSet,
-    kr = new WeakMap,
-    Ir = new WeakMap,
+    Ve = new WeakSet,
     Nr = new WeakMap,
     Or = new WeakMap,
     jr = new WeakMap,
     Pr = new WeakMap,
-    Gt = new WeakMap,
-    Ht = new WeakMap,
+    Lr = new WeakMap,
+    Br = new WeakMap,
     Xt = new WeakMap,
-    Lr = {
+    Qt = new WeakMap,
+    Yt = new WeakMap,
+    Ur = {
         construct() {
-            return Lr
+            return Ur
         }
     },
-    Ma = e => {
+    Ra = e => {
         try {
-            const t = new Proxy(e, Lr);
+            const t = new Proxy(e, Ur);
             new t
         } catch {
             return !1
         }
         return !0
     },
-    Un = /^import(?:(?:[\s]+[\w]+|(?:[\s]+[\w]+[\s]*,)?[\s]*\{[\s]*[\w]+(?:[\s]+as[\s]+[\w]+)?(?:[\s]*,[\s]*[\w]+(?:[\s]+as[\s]+[\w]+)?)*[\s]*}|(?:[\s]+[\w]+[\s]*,)?[\s]*\*[\s]+as[\s]+[\w]+)[\s]+from)?(?:[\s]*)("([^"\\]|\\.)+"|'([^'\\]|\\.)+')(?:[\s]*);?/,
-    Dn = (e, t) => {
+    Wn = /^import(?:(?:[\s]+[\w]+|(?:[\s]+[\w]+[\s]*,)?[\s]*\{[\s]*[\w]+(?:[\s]+as[\s]+[\w]+)?(?:[\s]*,[\s]*[\w]+(?:[\s]+as[\s]+[\w]+)?)*[\s]*}|(?:[\s]+[\w]+[\s]*,)?[\s]*\*[\s]+as[\s]+[\w]+)[\s]+from)?(?:[\s]*)("([^"\\]|\\.)+"|'([^'\\]|\\.)+')(?:[\s]*);?/,
+    Vn = (e, t) => {
         const n = [];
         let r = e.replace(/^[\s]+/, ""),
-            s = r.match(Un);
+            s = r.match(Wn);
         for (; s !== null;) {
             const o = s[1].slice(1, -1),
                 a = s[0].replace(/([\s]+)?;?$/, "").replace(o, new URL(o, t).toString());
-            n.push(a), r = r.slice(s[0].length).replace(/^[\s]+/, ""), s = r.match(Un)
+            n.push(a), r = r.slice(s[0].length).replace(/^[\s]+/, ""), s = r.match(Wn)
         }
         return [n.join(";"), r]
     },
-    Wn = e => {
+    Fn = e => {
         if (e !== void 0 && !Array.isArray(e)) throw new TypeError("The parameterDescriptors property of given value for processorCtor is not an array.")
     },
-    Vn = e => {
-        if (!Ma(e)) throw new TypeError("The given value for processorCtor should be a constructor.");
+    $n = e => {
+        if (!Ra(e)) throw new TypeError("The given value for processorCtor should be a constructor.");
         if (e.prototype === null || typeof e.prototype != "object") throw new TypeError("The given value for processorCtor should have a prototype.")
     },
-    Sa = (e, t, n, r, s, o, a, c, i, l, d, u, h) => {
+    ka = (e, t, n, r, s, o, a, c, i, l, d, u, h) => {
         let p = 0;
         return (m, g, v = {
             credentials: "omit"
@@ -1847,58 +1847,58 @@ const wa = e => ({
             if (w !== void 0 && w.has(g)) return Promise.resolve();
             const y = l.get(m);
             if (y !== void 0) {
-                const E = y.get(g);
-                if (E !== void 0) return E
+                const _ = y.get(g);
+                if (_ !== void 0) return _
             }
             const b = o(m),
-                T = b.audioWorklet === void 0 ? s(g).then(([E, x]) => {
-                    const [_, C] = Dn(E, x), S = `${_};((a,b)=>{(a[b]=a[b]||[]).push((AudioWorkletProcessor,global,registerProcessor,sampleRate,self,window)=>{${C}
+                M = b.audioWorklet === void 0 ? s(g).then(([_, x]) => {
+                    const [E, C] = Vn(_, x), R = `${E};((a,b)=>{(a[b]=a[b]||[]).push((AudioWorkletProcessor,global,registerProcessor,sampleRate,self,window)=>{${C}
 })})(window,'_AWGS')`;
-                    return n(S)
+                    return n(R)
                 }).then(() => {
-                    const E = h._AWGS.pop();
-                    if (E === void 0) throw new SyntaxError;
-                    r(b.currentTime, b.sampleRate, () => E(class {}, void 0, (x, _) => {
+                    const _ = h._AWGS.pop();
+                    if (_ === void 0) throw new SyntaxError;
+                    r(b.currentTime, b.sampleRate, () => _(class {}, void 0, (x, E) => {
                         if (x.trim() === "") throw t();
-                        const C = Ht.get(b);
+                        const C = Qt.get(b);
                         if (C !== void 0) {
                             if (C.has(x)) throw t();
-                            Vn(_), Wn(_.parameterDescriptors), C.set(x, _)
-                        } else Vn(_), Wn(_.parameterDescriptors), Ht.set(b, new Map([
-                            [x, _]
+                            $n(E), Fn(E.parameterDescriptors), C.set(x, E)
+                        } else $n(E), Fn(E.parameterDescriptors), Qt.set(b, new Map([
+                            [x, E]
                         ]))
                     }, b.sampleRate, void 0, void 0))
                 }) : Promise.all([s(g), Promise.resolve(e(u, u))]).then(([
-                    [E, x], _
+                    [_, x], E
                 ]) => {
                     const C = p + 1;
                     p = C;
-                    const [S, j] = Dn(E, x), W = `${S};((AudioWorkletProcessor,registerProcessor)=>{${j}
-})(${_?"AudioWorkletProcessor":"class extends AudioWorkletProcessor {__b=new WeakSet();constructor(){super();(p=>p.postMessage=(q=>(m,t)=>q.call(p,m,t?t.filter(u=>!this.__b.has(u)):t))(p.postMessage))(this.port)}}"},(n,p)=>registerProcessor(n,class extends p{${_?"":"__c = (a) => a.forEach(e=>this.__b.add(e.buffer));"}process(i,o,p){${_?"":"i.forEach(this.__c);o.forEach(this.__c);this.__c(Object.values(p));"}return super.process(i.map(j=>j.some(k=>k.length===0)?[]:j),o,p)}}));registerProcessor('__sac${C}',class extends AudioWorkletProcessor{process(){return !1}})`, L = new Blob([W], {
+                    const [R, O] = Vn(_, x), D = `${R};((AudioWorkletProcessor,registerProcessor)=>{${O}
+})(${E?"AudioWorkletProcessor":"class extends AudioWorkletProcessor {__b=new WeakSet();constructor(){super();(p=>p.postMessage=(q=>(m,t)=>q.call(p,m,t?t.filter(u=>!this.__b.has(u)):t))(p.postMessage))(this.port)}}"},(n,p)=>registerProcessor(n,class extends p{${E?"":"__c = (a) => a.forEach(e=>this.__b.add(e.buffer));"}process(i,o,p){${E?"":"i.forEach(this.__c);o.forEach(this.__c);this.__c(Object.values(p));"}return super.process(i.map(j=>j.some(k=>k.length===0)?[]:j),o,p)}}));registerProcessor('__sac${C}',class extends AudioWorkletProcessor{process(){return !1}})`, B = new Blob([D], {
                         type: "application/javascript; charset=utf-8"
-                    }), M = URL.createObjectURL(L);
-                    return b.audioWorklet.addModule(M, v).then(() => {
+                    }), j = URL.createObjectURL(B);
+                    return b.audioWorklet.addModule(j, v).then(() => {
                         if (c(b)) return b;
-                        const B = a(b);
-                        return B.audioWorklet.addModule(M, v).then(() => B)
-                    }).then(B => {
+                        const U = a(b);
+                        return U.audioWorklet.addModule(j, v).then(() => U)
+                    }).then(U => {
                         if (i === null) throw new SyntaxError;
                         try {
-                            new i(B, `__sac${C}`)
+                            new i(U, `__sac${C}`)
                         } catch {
                             throw new SyntaxError
                         }
-                    }).finally(() => URL.revokeObjectURL(M))
+                    }).finally(() => URL.revokeObjectURL(j))
                 });
             return y === void 0 ? l.set(m, new Map([
-                [g, T]
-            ])) : y.set(g, T), T.then(() => {
-                const E = d.get(m);
-                E === void 0 ? d.set(m, new Set([g])) : E.add(g)
+                [g, M]
+            ])) : y.set(g, M), M.then(() => {
+                const _ = d.get(m);
+                _ === void 0 ? d.set(m, new Set([g])) : _.add(g)
             }).finally(() => {
-                const E = l.get(m);
-                E !== void 0 && E.delete(g)
-            }), T
+                const _ = l.get(m);
+                _ !== void 0 && _.delete(g)
+            }), M
         }
     },
     ae = (e, t) => {
@@ -1906,68 +1906,68 @@ const wa = e => ({
         if (n === void 0) throw new Error("A value with the given key could not be found.");
         return n
     },
-    yt = (e, t) => {
+    Ct = (e, t) => {
         const n = Array.from(e).filter(t);
         if (n.length > 1) throw Error("More than one element was found.");
         if (n.length === 0) throw Error("No element was found.");
         const [r] = n;
         return e.delete(r), r
     },
-    Br = (e, t, n, r) => {
+    Dr = (e, t, n, r) => {
         const s = ae(e, t),
-            o = yt(s, a => a[0] === n && a[1] === r);
+            o = Ct(s, a => a[0] === n && a[1] === r);
         return s.size === 0 && e.delete(t), o
     },
-    He = e => ae(Pr, e),
-    ze = e => {
-        if (Ue.has(e)) throw new Error("The AudioNode is already stored.");
-        Ue.add(e), He(e).forEach(t => t(!0))
+    Xe = e => ae(Br, e),
+    qe = e => {
+        if (Ve.has(e)) throw new Error("The AudioNode is already stored.");
+        Ve.add(e), Xe(e).forEach(t => t(!0))
     },
-    Ur = e => "port" in e,
-    bt = e => {
-        if (!Ue.has(e)) throw new Error("The AudioNode is not stored.");
-        Ue.delete(e), He(e).forEach(t => t(!1))
+    Wr = e => "port" in e,
+    _t = e => {
+        if (!Ve.has(e)) throw new Error("The AudioNode is not stored.");
+        Ve.delete(e), Xe(e).forEach(t => t(!1))
     },
-    Qt = (e, t) => {
-        !Ur(e) && t.every(n => n.size === 0) && bt(e)
+    Kt = (e, t) => {
+        !Wr(e) && t.every(n => n.size === 0) && _t(e)
     },
-    Ra = (e, t, n, r, s, o, a, c, i, l, d, u, h) => {
+    Ia = (e, t, n, r, s, o, a, c, i, l, d, u, h) => {
         const p = new WeakMap;
         return (m, g, v, w, y) => {
             const {
                 activeInputs: b,
-                passiveInputs: T
+                passiveInputs: M
             } = o(g), {
-                outputs: E
-            } = o(m), x = c(m), _ = C => {
-                const S = i(g),
-                    j = i(m);
+                outputs: _
+            } = o(m), x = c(m), E = C => {
+                const R = i(g),
+                    O = i(m);
                 if (C) {
-                    const R = Br(T, m, v, w);
-                    e(b, m, R, !1), !y && !u(m) && n(j, S, v, w), h(g) && ze(g)
+                    const S = Dr(M, m, v, w);
+                    e(b, m, S, !1), !y && !u(m) && n(O, R, v, w), h(g) && qe(g)
                 } else {
-                    const R = r(b, m, v, w);
-                    t(T, w, R, !1), !y && !u(m) && s(j, S, v, w);
-                    const D = a(g);
-                    if (D === 0) d(g) && Qt(g, b);
+                    const S = r(b, m, v, w);
+                    t(M, w, S, !1), !y && !u(m) && s(O, R, v, w);
+                    const L = a(g);
+                    if (L === 0) d(g) && Kt(g, b);
                     else {
                         const P = p.get(g);
                         P !== void 0 && clearTimeout(P), p.set(g, setTimeout(() => {
-                            d(g) && Qt(g, b)
-                        }, D * 1e3))
+                            d(g) && Kt(g, b)
+                        }, L * 1e3))
                     }
                 }
             };
-            return l(E, [g, v, w], C => C[0] === g && C[1] === v && C[2] === w, !0) ? (x.add(_), d(m) ? e(b, m, [v, w, _], !0) : t(T, w, [m, v, _], !0), !0) : !1
+            return l(_, [g, v, w], C => C[0] === g && C[1] === v && C[2] === w, !0) ? (x.add(E), d(m) ? e(b, m, [v, w, E], !0) : t(M, w, [m, v, E], !0), !0) : !1
         }
     },
-    ka = e => (t, n, [r, s, o], a) => {
+    Na = e => (t, n, [r, s, o], a) => {
         const c = t.get(r);
         c === void 0 ? t.set(r, new Set([
             [s, n, o]
         ])) : e(c, [s, n, o], i => i[0] === s && i[1] === n, a)
     },
-    Ia = e => (t, n) => {
+    Oa = e => (t, n) => {
         const r = e(t, {
             channelCount: 1,
             channelCountMode: "explicit",
@@ -1980,11 +1980,11 @@ const wa = e => ({
         };
         n.addEventListener("ended", s)
     },
-    Na = e => (t, n) => {
+    ja = e => (t, n) => {
         e(t).add(n)
     },
-    on = (e, t) => e.context === t,
-    Fn = e => {
+    cn = (e, t) => e.context === t,
+    zn = e => {
         try {
             e.copyToChannel(new Float32Array(1), 0, -1)
         } catch {
@@ -1993,7 +1993,7 @@ const wa = e => ({
         return !0
     },
     Ne = () => new DOMException("", "IndexSizeError"),
-    Oa = e => {
+    Pa = e => {
         e.getChannelData = (t => n => {
             try {
                 return t.call(e, n)
@@ -2002,12 +2002,12 @@ const wa = e => ({
             }
         })(e.getChannelData)
     },
-    ja = {
+    La = {
         numberOfChannels: 1
     },
-    Pa = (e, t, n, r, s, o, a, c) => {
+    Ba = (e, t, n, r, s, o, a, c) => {
         let i = null;
-        return class Dr {
+        return class Vr {
             constructor(d) {
                 if (s === null) throw new Error("Missing the native OfflineAudioContext constructor.");
                 const {
@@ -2015,7 +2015,7 @@ const wa = e => ({
                     numberOfChannels: h,
                     sampleRate: p
                 } = {
-                    ...ja,
+                    ...La,
                     ...d
                 };
                 i === null && (i = new s(1, 1, 44100));
@@ -2025,17 +2025,17 @@ const wa = e => ({
                     sampleRate: p
                 }) : i.createBuffer(h, u, p);
                 if (m.numberOfChannels === 0) throw n();
-                return typeof m.copyFromChannel != "function" ? (a(m), Oa(m)) : t(Fn, () => Fn(m)) || c(m), e.add(m), m
+                return typeof m.copyFromChannel != "function" ? (a(m), Pa(m)) : t(zn, () => zn(m)) || c(m), e.add(m), m
             }
             static[Symbol.hasInstance](d) {
-                return d !== null && typeof d == "object" && Object.getPrototypeOf(d) === Dr.prototype || e.has(d)
+                return d !== null && typeof d == "object" && Object.getPrototypeOf(d) === Vr.prototype || e.has(d)
             }
         }
     },
-    Xe = -34028234663852886e22,
-    Ct = -Xe,
-    ye = e => Ue.has(e),
-    La = {
+    Qe = -34028234663852886e22,
+    Et = -Qe,
+    be = e => Ve.has(e),
+    Ua = {
         buffer: null,
         channelCount: 2,
         channelCountMode: "max",
@@ -2045,17 +2045,17 @@ const wa = e => ({
         loopStart: 0,
         playbackRate: 1
     },
-    Ba = (e, t, n, r, s, o, a, c) => class extends e {
+    Da = (e, t, n, r, s, o, a, c) => class extends e {
         constructor(l, d) {
             const u = o(l),
                 h = {
-                    ...La,
+                    ...Ua,
                     ...d
                 },
                 p = s(u, h),
                 m = a(u),
                 g = m ? t() : null;
-            super(l, !1, p, g), this._audioBufferSourceNodeRenderer = g, this._isBufferNullified = !1, this._isBufferSet = h.buffer !== null, this._nativeAudioBufferSourceNode = p, this._onended = null, this._playbackRate = n(this, m, p.playbackRate, Ct, Xe)
+            super(l, !1, p, g), this._audioBufferSourceNodeRenderer = g, this._isBufferNullified = !1, this._isBufferSet = h.buffer !== null, this._nativeAudioBufferSourceNode = p, this._onended = null, this._playbackRate = n(this, m, p.playbackRate, Et, Qe)
         }
         get buffer() {
             return this._isBufferNullified ? null : this._nativeAudioBufferSourceNode.buffer
@@ -2098,9 +2098,9 @@ const wa = e => ({
         }
         start(l = 0, d = 0, u) {
             if (this._nativeAudioBufferSourceNode.start(l, d, u), this._audioBufferSourceNodeRenderer !== null && (this._audioBufferSourceNodeRenderer.start = u === void 0 ? [l, d] : [l, d, u]), this.context.state !== "closed") {
-                ze(this);
+                qe(this);
                 const h = () => {
-                    this._nativeAudioBufferSourceNode.removeEventListener("ended", h), ye(this) && bt(this)
+                    this._nativeAudioBufferSourceNode.removeEventListener("ended", h), be(this) && _t(this)
                 };
                 this._nativeAudioBufferSourceNode.addEventListener("ended", h)
             }
@@ -2109,13 +2109,13 @@ const wa = e => ({
             this._nativeAudioBufferSourceNode.stop(l), this._audioBufferSourceNodeRenderer !== null && (this._audioBufferSourceNodeRenderer.stop = l)
         }
     },
-    Ua = (e, t, n, r, s) => () => {
+    Wa = (e, t, n, r, s) => () => {
         const o = new WeakMap;
         let a = null,
             c = null;
         const i = async (l, d) => {
             let u = n(l);
-            const h = on(u, d);
+            const h = cn(u, d);
             if (!h) {
                 const p = {
                     buffer: u.buffer,
@@ -2144,33 +2144,33 @@ const wa = e => ({
             }
         }
     },
-    Da = e => "playbackRate" in e,
-    Wa = e => "frequency" in e && "gain" in e,
-    Va = e => "offset" in e,
-    Fa = e => !("frequency" in e) && "gain" in e,
-    $a = e => "detune" in e && "frequency" in e && !("gain" in e),
-    za = e => "pan" in e,
-    Z = e => ae(kr, e),
-    Qe = e => ae(Nr, e),
-    Yt = (e, t) => {
+    Va = e => "playbackRate" in e,
+    Fa = e => "frequency" in e && "gain" in e,
+    $a = e => "offset" in e,
+    za = e => !("frequency" in e) && "gain" in e,
+    qa = e => "detune" in e && "frequency" in e && !("gain" in e),
+    Ga = e => "pan" in e,
+    ee = e => ae(Nr, e),
+    Ye = e => ae(jr, e),
+    Zt = (e, t) => {
         const {
             activeInputs: n
-        } = Z(e);
+        } = ee(e);
         n.forEach(s => s.forEach(([o]) => {
-            t.includes(e) || Yt(o, [...t, e])
+            t.includes(e) || Zt(o, [...t, e])
         }));
-        const r = Da(e) ? [e.playbackRate] : Ur(e) ? Array.from(e.parameters.values()) : Wa(e) ? [e.Q, e.detune, e.frequency, e.gain] : Va(e) ? [e.offset] : Fa(e) ? [e.gain] : $a(e) ? [e.detune, e.frequency] : za(e) ? [e.pan] : [];
+        const r = Va(e) ? [e.playbackRate] : Wr(e) ? Array.from(e.parameters.values()) : Fa(e) ? [e.Q, e.detune, e.frequency, e.gain] : $a(e) ? [e.offset] : za(e) ? [e.gain] : qa(e) ? [e.detune, e.frequency] : Ga(e) ? [e.pan] : [];
         for (const s of r) {
-            const o = Qe(s);
-            o !== void 0 && o.activeInputs.forEach(([a]) => Yt(a, t))
+            const o = Ye(s);
+            o !== void 0 && o.activeInputs.forEach(([a]) => Zt(a, t))
         }
-        ye(e) && bt(e)
+        be(e) && _t(e)
     },
-    qa = e => {
-        Yt(e.destination, [])
+    Ha = e => {
+        Zt(e.destination, [])
     },
-    Ga = e => e === void 0 || typeof e == "number" || typeof e == "string" && (e === "balanced" || e === "interactive" || e === "playback"),
-    Ha = (e, t, n, r, s, o, a, c) => class extends e {
+    Xa = e => e === void 0 || typeof e == "number" || typeof e == "string" && (e === "balanced" || e === "interactive" || e === "playback"),
+    Qa = (e, t, n, r, s, o, a, c) => class extends e {
         constructor(l, d) {
             const u = o(l),
                 h = a(u),
@@ -2197,7 +2197,7 @@ const wa = e => ({
             return this._nativeAudioDestinationNode.maxChannelCount
         }
     },
-    Xa = e => {
+    Ya = e => {
         const t = new WeakMap,
             n = async (r, s) => {
                 const o = s.destination;
@@ -2210,108 +2210,108 @@ const wa = e => ({
             }
         }
     },
-    Qa = (e, t, n, r, s, o, a, c) => (i, l) => {
+    Ka = (e, t, n, r, s, o, a, c) => (i, l) => {
         const d = l.listener,
             u = () => {
-                const E = new Float32Array(1),
+                const _ = new Float32Array(1),
                     x = t(l, {
                         channelCount: 1,
                         channelCountMode: "explicit",
                         channelInterpretation: "speakers",
                         numberOfInputs: 9
                     }),
-                    _ = a(l);
+                    E = a(l);
                 let C = !1,
-                    S = [0, 0, -1, 0, 1, 0],
-                    j = [0, 0, 0];
-                const R = () => {
+                    R = [0, 0, -1, 0, 1, 0],
+                    O = [0, 0, 0];
+                const S = () => {
                         if (C) return;
                         C = !0;
-                        const L = r(l, 256, 9, 0);
-                        L.onaudioprocess = ({
-                            inputBuffer: M
+                        const B = r(l, 256, 9, 0);
+                        B.onaudioprocess = ({
+                            inputBuffer: j
                         }) => {
-                            const B = [o(M, E, 0), o(M, E, 1), o(M, E, 2), o(M, E, 3), o(M, E, 4), o(M, E, 5)];
-                            B.some((I, O) => I !== S[O]) && (d.setOrientation(...B), S = B);
-                            const k = [o(M, E, 6), o(M, E, 7), o(M, E, 8)];
-                            k.some((I, O) => I !== j[O]) && (d.setPosition(...k), j = k)
-                        }, x.connect(L)
+                            const U = [o(j, _, 0), o(j, _, 1), o(j, _, 2), o(j, _, 3), o(j, _, 4), o(j, _, 5)];
+                            U.some((k, T) => k !== R[T]) && (d.setOrientation(...U), R = U);
+                            const N = [o(j, _, 6), o(j, _, 7), o(j, _, 8)];
+                            N.some((k, T) => k !== O[T]) && (d.setPosition(...N), O = N)
+                        }, x.connect(B)
                     },
-                    D = L => M => {
-                        M !== S[L] && (S[L] = M, d.setOrientation(...S))
+                    L = B => j => {
+                        j !== R[B] && (R[B] = j, d.setOrientation(...R))
                     },
-                    P = L => M => {
-                        M !== j[L] && (j[L] = M, d.setPosition(...j))
+                    P = B => j => {
+                        j !== O[B] && (O[B] = j, d.setPosition(...O))
                     },
-                    W = (L, M, B) => {
-                        const k = n(l, {
+                    D = (B, j, U) => {
+                        const N = n(l, {
                             channelCount: 1,
                             channelCountMode: "explicit",
                             channelInterpretation: "discrete",
-                            offset: M
+                            offset: j
                         });
-                        k.connect(x, 0, L), k.start(), Object.defineProperty(k.offset, "defaultValue", {
+                        N.connect(x, 0, B), N.start(), Object.defineProperty(N.offset, "defaultValue", {
                             get() {
-                                return M
+                                return j
                             }
                         });
-                        const I = e({
+                        const k = e({
                             context: i
-                        }, _, k.offset, Ct, Xe);
-                        return c(I, "value", O => () => O.call(I), O => U => {
+                        }, E, N.offset, Et, Qe);
+                        return c(k, "value", T => () => T.call(k), T => W => {
                             try {
-                                O.call(I, U)
+                                T.call(k, W)
                             } catch (H) {
                                 if (H.code !== 9) throw H
                             }
-                            R(), _ && B(U)
-                        }), I.cancelAndHoldAtTime = (O => _ ? () => {
+                            S(), E && U(W)
+                        }), k.cancelAndHoldAtTime = (T => E ? () => {
                             throw s()
-                        } : (...U) => {
-                            const H = O.apply(I, U);
-                            return R(), H
-                        })(I.cancelAndHoldAtTime), I.cancelScheduledValues = (O => _ ? () => {
+                        } : (...W) => {
+                            const H = T.apply(k, W);
+                            return S(), H
+                        })(k.cancelAndHoldAtTime), k.cancelScheduledValues = (T => E ? () => {
                             throw s()
-                        } : (...U) => {
-                            const H = O.apply(I, U);
-                            return R(), H
-                        })(I.cancelScheduledValues), I.exponentialRampToValueAtTime = (O => _ ? () => {
+                        } : (...W) => {
+                            const H = T.apply(k, W);
+                            return S(), H
+                        })(k.cancelScheduledValues), k.exponentialRampToValueAtTime = (T => E ? () => {
                             throw s()
-                        } : (...U) => {
-                            const H = O.apply(I, U);
-                            return R(), H
-                        })(I.exponentialRampToValueAtTime), I.linearRampToValueAtTime = (O => _ ? () => {
+                        } : (...W) => {
+                            const H = T.apply(k, W);
+                            return S(), H
+                        })(k.exponentialRampToValueAtTime), k.linearRampToValueAtTime = (T => E ? () => {
                             throw s()
-                        } : (...U) => {
-                            const H = O.apply(I, U);
-                            return R(), H
-                        })(I.linearRampToValueAtTime), I.setTargetAtTime = (O => _ ? () => {
+                        } : (...W) => {
+                            const H = T.apply(k, W);
+                            return S(), H
+                        })(k.linearRampToValueAtTime), k.setTargetAtTime = (T => E ? () => {
                             throw s()
-                        } : (...U) => {
-                            const H = O.apply(I, U);
-                            return R(), H
-                        })(I.setTargetAtTime), I.setValueAtTime = (O => _ ? () => {
+                        } : (...W) => {
+                            const H = T.apply(k, W);
+                            return S(), H
+                        })(k.setTargetAtTime), k.setValueAtTime = (T => E ? () => {
                             throw s()
-                        } : (...U) => {
-                            const H = O.apply(I, U);
-                            return R(), H
-                        })(I.setValueAtTime), I.setValueCurveAtTime = (O => _ ? () => {
+                        } : (...W) => {
+                            const H = T.apply(k, W);
+                            return S(), H
+                        })(k.setValueAtTime), k.setValueCurveAtTime = (T => E ? () => {
                             throw s()
-                        } : (...U) => {
-                            const H = O.apply(I, U);
-                            return R(), H
-                        })(I.setValueCurveAtTime), I
+                        } : (...W) => {
+                            const H = T.apply(k, W);
+                            return S(), H
+                        })(k.setValueCurveAtTime), k
                     };
                 return {
-                    forwardX: W(0, 0, D(0)),
-                    forwardY: W(1, 0, D(1)),
-                    forwardZ: W(2, -1, D(2)),
-                    positionX: W(6, 0, P(0)),
-                    positionY: W(7, 0, P(1)),
-                    positionZ: W(8, 0, P(2)),
-                    upX: W(3, 0, D(3)),
-                    upY: W(4, 1, D(4)),
-                    upZ: W(5, 0, D(5))
+                    forwardX: D(0, 0, L(0)),
+                    forwardY: D(1, 0, L(1)),
+                    forwardZ: D(2, -1, L(2)),
+                    positionX: D(6, 0, P(0)),
+                    positionY: D(7, 0, P(1)),
+                    positionZ: D(8, 0, P(2)),
+                    upX: D(3, 0, L(3)),
+                    upY: D(4, 1, L(4)),
+                    upZ: D(5, 0, L(5))
                 }
             },
             {
@@ -2323,7 +2323,7 @@ const wa = e => ({
                 positionZ: w,
                 upX: y,
                 upY: b,
-                upZ: T
+                upZ: M
             } = d.forwardX === void 0 ? u() : d;
         return {
             get forwardX() {
@@ -2351,12 +2351,12 @@ const wa = e => ({
                 return b
             },
             get upZ() {
-                return T
+                return M
             }
         }
     },
-    ut = e => "context" in e,
-    Ye = e => ut(e[0]),
+    ft = e => "context" in e,
+    Ke = e => ft(e[0]),
     Oe = (e, t, n, r) => {
         for (const s of e)
             if (n(s)) {
@@ -2364,45 +2364,45 @@ const wa = e => ({
                 throw Error("The set contains at least one similar element.")
             } return e.add(t), !0
     },
-    $n = (e, t, [n, r], s) => {
+    qn = (e, t, [n, r], s) => {
         Oe(e, [t, n, r], o => o[0] === t && o[1] === n, s)
     },
-    zn = (e, [t, n, r], s) => {
+    Gn = (e, [t, n, r], s) => {
         const o = e.get(t);
         o === void 0 ? e.set(t, new Set([
             [n, r]
         ])) : Oe(o, [n, r], a => a[0] === n, s)
     },
-    Wr = e => "inputs" in e,
-    Kt = (e, t, n, r) => {
-        if (Wr(t)) {
+    Fr = e => "inputs" in e,
+    Jt = (e, t, n, r) => {
+        if (Fr(t)) {
             const s = t.inputs[r];
             return e.connect(s, n, 0), [s, n, 0]
         }
         return e.connect(t, n, r), [t, n, r]
     },
-    Vr = (e, t, n) => {
+    $r = (e, t, n) => {
         for (const r of e)
             if (r[0] === t && r[1] === n) return e.delete(r), r;
         return null
     },
-    Ya = (e, t, n) => yt(e, r => r[0] === t && r[1] === n),
-    Fr = (e, t) => {
-        if (!He(e).delete(t)) throw new Error("Missing the expected event listener.")
+    Za = (e, t, n) => Ct(e, r => r[0] === t && r[1] === n),
+    zr = (e, t) => {
+        if (!Xe(e).delete(t)) throw new Error("Missing the expected event listener.")
     },
-    $r = (e, t, n) => {
+    qr = (e, t, n) => {
         const r = ae(e, t),
-            s = yt(r, o => o[0] === n);
+            s = Ct(r, o => o[0] === n);
         return r.size === 0 && e.delete(t), s
     },
-    Zt = (e, t, n, r) => {
-        Wr(t) ? e.disconnect(t.inputs[r], n, 0) : e.disconnect(t, n, r)
+    en = (e, t, n, r) => {
+        Fr(t) ? e.disconnect(t.inputs[r], n, 0) : e.disconnect(t, n, r)
     },
-    ne = e => ae(Ir, e),
-    qe = e => ae(Or, e),
-    ke = e => Gt.has(e),
-    at = e => !Ue.has(e),
-    qn = (e, t) => new Promise(n => {
+    re = e => ae(Or, e),
+    Ge = e => ae(Pr, e),
+    ke = e => Xt.has(e),
+    ct = e => !Ve.has(e),
+    Hn = (e, t) => new Promise(n => {
         if (t !== null) n(!0);
         else {
             const r = e.createScriptProcessor(256, 1, 1),
@@ -2417,7 +2417,7 @@ const wa = e => ({
             }, c.start()
         }
     }),
-    Lt = (e, t) => {
+    Ut = (e, t) => {
         const n = new Map;
         for (const r of e)
             for (const s of r) {
@@ -2426,11 +2426,11 @@ const wa = e => ({
             }
         n.forEach((r, s) => t(s, r))
     },
-    dt = e => "context" in e,
-    Ka = e => {
+    ht = e => "context" in e,
+    Ja = e => {
         const t = new Map;
         e.connect = (n => (r, s = 0, o = 0) => {
-            const a = dt(r) ? n(r, s, o) : n(r, s),
+            const a = ht(r) ? n(r, s, o) : n(r, s),
                 c = t.get(r);
             return c === void 0 ? t.set(r, [{
                 input: o,
@@ -2454,77 +2454,77 @@ const wa = e => ({
                             c.length === 0 ? t.delete(r) : t.set(r, c)
                         }
                     } for (const [a, c] of t) c.forEach(i => {
-                dt(a) ? e.connect(a, i.output, i.input) : e.connect(a, i.output)
+                ht(a) ? e.connect(a, i.output, i.input) : e.connect(a, i.output)
             })
         })(e.disconnect)
     },
-    Za = (e, t, n, r) => {
+    ei = (e, t, n, r) => {
         const {
             activeInputs: s,
             passiveInputs: o
-        } = Qe(t), {
+        } = Ye(t), {
             outputs: a
-        } = Z(e), c = He(e), i = l => {
-            const d = ne(e),
-                u = qe(t);
+        } = ee(e), c = Xe(e), i = l => {
+            const d = re(e),
+                u = Ge(t);
             if (l) {
-                const h = $r(o, e, n);
-                $n(s, e, h, !1), !r && !ke(e) && d.connect(u, n)
+                const h = qr(o, e, n);
+                qn(s, e, h, !1), !r && !ke(e) && d.connect(u, n)
             } else {
-                const h = Ya(s, e, n);
-                zn(o, h, !1), !r && !ke(e) && d.disconnect(u, n)
+                const h = Za(s, e, n);
+                Gn(o, h, !1), !r && !ke(e) && d.disconnect(u, n)
             }
         };
-        return Oe(a, [t, n], l => l[0] === t && l[1] === n, !0) ? (c.add(i), ye(e) ? $n(s, e, [n, i], !0) : zn(o, [e, n, i], !0), !0) : !1
+        return Oe(a, [t, n], l => l[0] === t && l[1] === n, !0) ? (c.add(i), be(e) ? qn(s, e, [n, i], !0) : Gn(o, [e, n, i], !0), !0) : !1
     },
-    Ja = (e, t, n, r) => {
+    ti = (e, t, n, r) => {
         const {
             activeInputs: s,
             passiveInputs: o
-        } = Z(t), a = Vr(s[r], e, n);
-        return a === null ? [Br(o, e, n, r)[2], !1] : [a[2], !0]
+        } = ee(t), a = $r(s[r], e, n);
+        return a === null ? [Dr(o, e, n, r)[2], !1] : [a[2], !0]
     },
-    ei = (e, t, n) => {
+    ni = (e, t, n) => {
         const {
             activeInputs: r,
             passiveInputs: s
-        } = Qe(t), o = Vr(r, e, n);
-        return o === null ? [$r(s, e, n)[1], !1] : [o[2], !0]
+        } = Ye(t), o = $r(r, e, n);
+        return o === null ? [qr(s, e, n)[1], !1] : [o[2], !0]
     },
-    an = (e, t, n, r, s) => {
-        const [o, a] = Ja(e, n, r, s);
-        if (o !== null && (Fr(e, o), a && !t && !ke(e) && Zt(ne(e), ne(n), r, s)), ye(n)) {
+    ln = (e, t, n, r, s) => {
+        const [o, a] = ti(e, n, r, s);
+        if (o !== null && (zr(e, o), a && !t && !ke(e) && en(re(e), re(n), r, s)), be(n)) {
             const {
                 activeInputs: c
-            } = Z(n);
-            Qt(n, c)
+            } = ee(n);
+            Kt(n, c)
         }
     },
-    cn = (e, t, n, r) => {
-        const [s, o] = ei(e, n, r);
-        s !== null && (Fr(e, s), o && !t && !ke(e) && ne(e).disconnect(qe(n), r))
+    un = (e, t, n, r) => {
+        const [s, o] = ni(e, n, r);
+        s !== null && (zr(e, s), o && !t && !ke(e) && re(e).disconnect(Ge(n), r))
     },
-    ti = (e, t) => {
-        const n = Z(e),
+    ri = (e, t) => {
+        const n = ee(e),
             r = [];
-        for (const s of n.outputs) Ye(s) ? an(e, t, ...s) : cn(e, t, ...s), r.push(s[0]);
+        for (const s of n.outputs) Ke(s) ? ln(e, t, ...s) : un(e, t, ...s), r.push(s[0]);
         return n.outputs.clear(), r
     },
-    ni = (e, t, n) => {
-        const r = Z(e),
+    si = (e, t, n) => {
+        const r = ee(e),
             s = [];
-        for (const o of r.outputs) o[1] === n && (Ye(o) ? an(e, t, ...o) : cn(e, t, ...o), s.push(o[0]), r.outputs.delete(o));
+        for (const o of r.outputs) o[1] === n && (Ke(o) ? ln(e, t, ...o) : un(e, t, ...o), s.push(o[0]), r.outputs.delete(o));
         return s
     },
-    ri = (e, t, n, r, s) => {
-        const o = Z(e);
-        return Array.from(o.outputs).filter(a => a[0] === n && (r === void 0 || a[1] === r) && (s === void 0 || a[2] === s)).map(a => (Ye(a) ? an(e, t, ...a) : cn(e, t, ...a), o.outputs.delete(a), a[0]))
+    oi = (e, t, n, r, s) => {
+        const o = ee(e);
+        return Array.from(o.outputs).filter(a => a[0] === n && (r === void 0 || a[1] === r) && (s === void 0 || a[2] === s)).map(a => (Ke(a) ? ln(e, t, ...a) : un(e, t, ...a), o.outputs.delete(a), a[0]))
     },
-    si = (e, t, n, r, s, o, a, c, i, l, d, u, h, p, m, g) => class extends l {
-        constructor(w, y, b, T) {
+    ai = (e, t, n, r, s, o, a, c, i, l, d, u, h, p, m, g) => class extends l {
+        constructor(w, y, b, M) {
             super(b), this._context = w, this._nativeAudioNode = b;
-            const E = d(w);
-            u(E) && n(qn, () => qn(E, g)) !== !0 && Ka(b), Ir.set(this, b), Pr.set(this, new Set), w.state !== "closed" && y && ze(this), e(this, T, b)
+            const _ = d(w);
+            u(_) && n(Hn, () => Hn(_, g)) !== !0 && Ja(b), Or.set(this, b), Br.set(this, new Set), w.state !== "closed" && y && qe(this), e(this, M, b)
         }
         get channelCount() {
             return this._nativeAudioNode.channelCount
@@ -2555,59 +2555,59 @@ const wa = e => ({
         }
         connect(w, y = 0, b = 0) {
             if (y < 0 || y >= this._nativeAudioNode.numberOfOutputs) throw s();
-            const T = d(this._context),
-                E = m(T);
+            const M = d(this._context),
+                _ = m(M);
             if (h(w) || p(w)) throw o();
-            if (ut(w)) {
-                const C = ne(w);
+            if (ft(w)) {
+                const C = re(w);
                 try {
-                    const j = Kt(this._nativeAudioNode, C, y, b),
-                        R = at(this);
-                    (E || R) && this._nativeAudioNode.disconnect(...j), this.context.state !== "closed" && !R && at(w) && ze(w)
-                } catch (j) {
-                    throw j.code === 12 ? o() : j
+                    const O = Jt(this._nativeAudioNode, C, y, b),
+                        S = ct(this);
+                    (_ || S) && this._nativeAudioNode.disconnect(...O), this.context.state !== "closed" && !S && ct(w) && qe(w)
+                } catch (O) {
+                    throw O.code === 12 ? o() : O
                 }
-                if (t(this, w, y, b, E)) {
-                    const j = i([this], w);
-                    Lt(j, r(E))
+                if (t(this, w, y, b, _)) {
+                    const O = i([this], w);
+                    Ut(O, r(_))
                 }
                 return w
             }
-            const x = qe(w);
+            const x = Ge(w);
             if (x.name === "playbackRate" && x.maxValue === 1024) throw a();
             try {
-                this._nativeAudioNode.connect(x, y), (E || at(this)) && this._nativeAudioNode.disconnect(x, y)
+                this._nativeAudioNode.connect(x, y), (_ || ct(this)) && this._nativeAudioNode.disconnect(x, y)
             } catch (C) {
                 throw C.code === 12 ? o() : C
             }
-            if (Za(this, w, y, E)) {
+            if (ei(this, w, y, _)) {
                 const C = i([this], w);
-                Lt(C, r(E))
+                Ut(C, r(_))
             }
         }
         disconnect(w, y, b) {
-            let T;
-            const E = d(this._context),
-                x = m(E);
-            if (w === void 0) T = ti(this, x);
+            let M;
+            const _ = d(this._context),
+                x = m(_);
+            if (w === void 0) M = ri(this, x);
             else if (typeof w == "number") {
                 if (w < 0 || w >= this.numberOfOutputs) throw s();
-                T = ni(this, x, w)
+                M = si(this, x, w)
             } else {
-                if (y !== void 0 && (y < 0 || y >= this.numberOfOutputs) || ut(w) && b !== void 0 && (b < 0 || b >= w.numberOfInputs)) throw s();
-                if (T = ri(this, x, w, y, b), T.length === 0) throw o()
+                if (y !== void 0 && (y < 0 || y >= this.numberOfOutputs) || ft(w) && b !== void 0 && (b < 0 || b >= w.numberOfInputs)) throw s();
+                if (M = oi(this, x, w, y, b), M.length === 0) throw o()
             }
-            for (const _ of T) {
-                const C = i([this], _);
-                Lt(C, c)
+            for (const E of M) {
+                const C = i([this], E);
+                Ut(C, c)
             }
         }
     },
-    oi = (e, t, n, r, s, o, a, c, i, l, d, u, h) => (p, m, g, v = null, w = null) => {
+    ii = (e, t, n, r, s, o, a, c, i, l, d, u, h) => (p, m, g, v = null, w = null) => {
         const y = g.value,
-            b = new va(y),
-            T = m ? r(b) : null,
-            E = {
+            b = new ya(y),
+            M = m ? r(b) : null,
+            _ = {
                 get defaultValue() {
                     return y
                 },
@@ -2621,62 +2621,62 @@ const wa = e => ({
                     return g.value
                 },
                 set value(x) {
-                    g.value = x, E.setValueAtTime(x, p.context.currentTime)
+                    g.value = x, _.setValueAtTime(x, p.context.currentTime)
                 },
                 cancelAndHoldAtTime(x) {
-                    if (typeof g.cancelAndHoldAtTime == "function") T === null && b.flush(p.context.currentTime), b.add(s(x)), g.cancelAndHoldAtTime(x);
+                    if (typeof g.cancelAndHoldAtTime == "function") M === null && b.flush(p.context.currentTime), b.add(s(x)), g.cancelAndHoldAtTime(x);
                     else {
-                        const _ = Array.from(b).pop();
-                        T === null && b.flush(p.context.currentTime), b.add(s(x));
+                        const E = Array.from(b).pop();
+                        M === null && b.flush(p.context.currentTime), b.add(s(x));
                         const C = Array.from(b).pop();
-                        g.cancelScheduledValues(x), _ !== C && C !== void 0 && (C.type === "exponentialRampToValue" ? g.exponentialRampToValueAtTime(C.value, C.endTime) : C.type === "linearRampToValue" ? g.linearRampToValueAtTime(C.value, C.endTime) : C.type === "setValue" ? g.setValueAtTime(C.value, C.startTime) : C.type === "setValueCurve" && g.setValueCurveAtTime(C.values, C.startTime, C.duration))
+                        g.cancelScheduledValues(x), E !== C && C !== void 0 && (C.type === "exponentialRampToValue" ? g.exponentialRampToValueAtTime(C.value, C.endTime) : C.type === "linearRampToValue" ? g.linearRampToValueAtTime(C.value, C.endTime) : C.type === "setValue" ? g.setValueAtTime(C.value, C.startTime) : C.type === "setValueCurve" && g.setValueCurveAtTime(C.values, C.startTime, C.duration))
                     }
-                    return E
+                    return _
                 },
                 cancelScheduledValues(x) {
-                    return T === null && b.flush(p.context.currentTime), b.add(o(x)), g.cancelScheduledValues(x), E
+                    return M === null && b.flush(p.context.currentTime), b.add(o(x)), g.cancelScheduledValues(x), _
                 },
-                exponentialRampToValueAtTime(x, _) {
+                exponentialRampToValueAtTime(x, E) {
                     if (x === 0) throw new RangeError;
-                    if (!Number.isFinite(_) || _ < 0) throw new RangeError;
+                    if (!Number.isFinite(E) || E < 0) throw new RangeError;
                     const C = p.context.currentTime;
-                    return T === null && b.flush(C), Array.from(b).length === 0 && (b.add(l(y, C)), g.setValueAtTime(y, C)), b.add(a(x, _)), g.exponentialRampToValueAtTime(x, _), E
+                    return M === null && b.flush(C), Array.from(b).length === 0 && (b.add(l(y, C)), g.setValueAtTime(y, C)), b.add(a(x, E)), g.exponentialRampToValueAtTime(x, E), _
                 },
-                linearRampToValueAtTime(x, _) {
+                linearRampToValueAtTime(x, E) {
                     const C = p.context.currentTime;
-                    return T === null && b.flush(C), Array.from(b).length === 0 && (b.add(l(y, C)), g.setValueAtTime(y, C)), b.add(c(x, _)), g.linearRampToValueAtTime(x, _), E
+                    return M === null && b.flush(C), Array.from(b).length === 0 && (b.add(l(y, C)), g.setValueAtTime(y, C)), b.add(c(x, E)), g.linearRampToValueAtTime(x, E), _
                 },
-                setTargetAtTime(x, _, C) {
-                    return T === null && b.flush(p.context.currentTime), b.add(i(x, _, C)), g.setTargetAtTime(x, _, C), E
+                setTargetAtTime(x, E, C) {
+                    return M === null && b.flush(p.context.currentTime), b.add(i(x, E, C)), g.setTargetAtTime(x, E, C), _
                 },
-                setValueAtTime(x, _) {
-                    return T === null && b.flush(p.context.currentTime), b.add(l(x, _)), g.setValueAtTime(x, _), E
+                setValueAtTime(x, E) {
+                    return M === null && b.flush(p.context.currentTime), b.add(l(x, E)), g.setValueAtTime(x, E), _
                 },
-                setValueCurveAtTime(x, _, C) {
-                    const S = x instanceof Float32Array ? x : new Float32Array(x);
+                setValueCurveAtTime(x, E, C) {
+                    const R = x instanceof Float32Array ? x : new Float32Array(x);
                     if (u !== null && u.name === "webkitAudioContext") {
-                        const j = _ + C,
-                            R = p.context.sampleRate,
-                            D = Math.ceil(_ * R),
-                            P = Math.floor(j * R),
-                            W = P - D,
-                            L = new Float32Array(W);
-                        for (let B = 0; B < W; B += 1) {
-                            const k = (S.length - 1) / C * ((D + B) / R - _),
-                                I = Math.floor(k),
-                                O = Math.ceil(k);
-                            L[B] = I === O ? S[I] : (1 - (k - I)) * S[I] + (1 - (O - k)) * S[O]
+                        const O = E + C,
+                            S = p.context.sampleRate,
+                            L = Math.ceil(E * S),
+                            P = Math.floor(O * S),
+                            D = P - L,
+                            B = new Float32Array(D);
+                        for (let U = 0; U < D; U += 1) {
+                            const N = (R.length - 1) / C * ((L + U) / S - E),
+                                k = Math.floor(N),
+                                T = Math.ceil(N);
+                            B[U] = k === T ? R[k] : (1 - (N - k)) * R[k] + (1 - (T - N)) * R[T]
                         }
-                        T === null && b.flush(p.context.currentTime), b.add(d(L, _, C)), g.setValueCurveAtTime(L, _, C);
-                        const M = P / R;
-                        M < j && h(E, L[L.length - 1], M), h(E, S[S.length - 1], j)
-                    } else T === null && b.flush(p.context.currentTime), b.add(d(S, _, C)), g.setValueCurveAtTime(S, _, C);
-                    return E
+                        M === null && b.flush(p.context.currentTime), b.add(d(B, E, C)), g.setValueCurveAtTime(B, E, C);
+                        const j = P / S;
+                        j < O && h(_, B[B.length - 1], j), h(_, R[R.length - 1], O)
+                    } else M === null && b.flush(p.context.currentTime), b.add(d(R, E, C)), g.setValueCurveAtTime(R, E, C);
+                    return _
                 }
             };
-        return n.set(E, g), t.set(E, p), e(E, T), E
+        return n.set(_, g), t.set(_, p), e(_, M), _
     },
-    ai = e => ({
+    ci = e => ({
         replay(t) {
             for (const n of e)
                 if (n.type === "exponentialRampToValue") {
@@ -2714,7 +2714,7 @@ const wa = e => ({
             } else throw new Error("Can't apply an unknown automation.")
         }
     });
-class zr {
+class Gr {
     constructor(t) {
         this._map = new Map(t)
     }
@@ -2740,7 +2740,7 @@ class zr {
         return this._map.values()
     }
 }
-const ii = {
+const li = {
         channelCount: 2,
         channelCountMode: "explicit",
         channelInterpretation: "speakers",
@@ -2749,31 +2749,31 @@ const ii = {
         parameterData: {},
         processorOptions: {}
     },
-    ci = (e, t, n, r, s, o, a, c, i, l, d, u, h, p) => class extends t {
+    ui = (e, t, n, r, s, o, a, c, i, l, d, u, h, p) => class extends t {
         constructor(g, v, w) {
             var y;
             const b = c(g),
-                T = i(b),
-                E = d({
-                    ...ii,
+                M = i(b),
+                _ = d({
+                    ...li,
                     ...w
                 });
-            h(E);
-            const x = Ht.get(b),
-                _ = x == null ? void 0 : x.get(v),
-                C = T || b.state !== "closed" ? b : (y = a(b)) !== null && y !== void 0 ? y : b,
-                S = s(C, T ? null : g.baseLatency, l, v, _, E),
-                j = T ? r(v, E, _) : null;
-            super(g, !0, S, j);
-            const R = [];
-            S.parameters.forEach((P, W) => {
-                const L = n(this, T, P);
-                R.push([W, L])
-            }), this._nativeAudioWorkletNode = S, this._onprocessorerror = null, this._parameters = new zr(R), T && e(b, this);
+            h(_);
+            const x = Qt.get(b),
+                E = x == null ? void 0 : x.get(v),
+                C = M || b.state !== "closed" ? b : (y = a(b)) !== null && y !== void 0 ? y : b,
+                R = s(C, M ? null : g.baseLatency, l, v, E, _),
+                O = M ? r(v, _, E) : null;
+            super(g, !0, R, O);
+            const S = [];
+            R.parameters.forEach((P, D) => {
+                const B = n(this, M, P);
+                S.push([D, B])
+            }), this._nativeAudioWorkletNode = R, this._onprocessorerror = null, this._parameters = new Gr(S), M && e(b, this);
             const {
-                activeInputs: D
+                activeInputs: L
             } = o(this);
-            u(S, D)
+            u(R, L)
         }
         get onprocessorerror() {
             return this._onprocessorerror
@@ -2792,7 +2792,7 @@ const ii = {
         }
     };
 
-function ft(e, t, n, r, s) {
+function mt(e, t, n, r, s) {
     if (typeof e.copyFromChannel == "function") t[n].byteLength === 0 && (t[n] = new Float32Array(128)), e.copyFromChannel(t[n], r, s);
     else {
         const o = e.getChannelData(r);
@@ -2803,10 +2803,10 @@ function ft(e, t, n, r, s) {
         }
     }
 }
-const qr = (e, t, n, r, s) => {
+const Hr = (e, t, n, r, s) => {
         typeof e.copyToChannel == "function" ? t[n].byteLength !== 0 && e.copyToChannel(t[n], r, s) : t[n].byteLength !== 0 && e.getChannelData(r).set(t[n], s)
     },
-    ht = (e, t) => {
+    pt = (e, t) => {
         const n = [];
         for (let r = 0; r < e; r += 1) {
             const s = [],
@@ -2816,21 +2816,21 @@ const qr = (e, t, n, r, s) => {
         }
         return n
     },
-    li = (e, t) => {
-        const n = ae(Xt, e),
-            r = ne(t);
+    di = (e, t) => {
+        const n = ae(Yt, e),
+            r = re(t);
         return ae(n, r)
     },
-    ui = async (e, t, n, r, s, o, a) => {
+    fi = async (e, t, n, r, s, o, a) => {
         const c = t === null ? Math.ceil(e.context.length / 128) * 128 : t.length,
             i = r.channelCount * r.numberOfInputs,
             l = s.reduce((v, w) => v + w, 0),
             d = l === 0 ? null : n.createBuffer(l, c, n.sampleRate);
         if (o === void 0) throw new Error("Missing the processor constructor.");
-        const u = Z(e),
-            h = await li(n, e),
-            p = ht(r.numberOfInputs, r.channelCount),
-            m = ht(r.numberOfOutputs, s),
+        const u = ee(e),
+            h = await di(n, e),
+            p = pt(r.numberOfInputs, r.channelCount),
+            m = pt(r.numberOfOutputs, s),
             g = Array.from(e.parameters.keys()).reduce((v, w) => ({
                 ...v,
                 [w]: new Float32Array(128)
@@ -2838,21 +2838,21 @@ const qr = (e, t, n, r, s) => {
         for (let v = 0; v < c; v += 128) {
             if (r.numberOfInputs > 0 && t !== null)
                 for (let w = 0; w < r.numberOfInputs; w += 1)
-                    for (let y = 0; y < r.channelCount; y += 1) ft(t, p[w], y, y, v);
+                    for (let y = 0; y < r.channelCount; y += 1) mt(t, p[w], y, y, v);
             o.parameterDescriptors !== void 0 && t !== null && o.parameterDescriptors.forEach(({
                 name: w
             }, y) => {
-                ft(t, g, w, i + y, v)
+                mt(t, g, w, i + y, v)
             });
             for (let w = 0; w < r.numberOfInputs; w += 1)
                 for (let y = 0; y < s[w]; y += 1) m[w][y].byteLength === 0 && (m[w][y] = new Float32Array(128));
             try {
-                const w = p.map((b, T) => u.activeInputs[T].size === 0 ? [] : b),
+                const w = p.map((b, M) => u.activeInputs[M].size === 0 ? [] : b),
                     y = a(v / n.sampleRate, n.sampleRate, () => h.process(w, m, g));
                 if (d !== null)
-                    for (let b = 0, T = 0; b < r.numberOfOutputs; b += 1) {
-                        for (let E = 0; E < s[b]; E += 1) qr(d, m[b], E, T + E, v);
-                        T += s[b]
+                    for (let b = 0, M = 0; b < r.numberOfOutputs; b += 1) {
+                        for (let _ = 0; _ < s[b]; _ += 1) Hr(d, m[b], _, M + _, v);
+                        M += s[b]
                     }
                 if (!y) break
             } catch (w) {
@@ -2866,84 +2866,84 @@ const qr = (e, t, n, r, s) => {
             }
         }
         return d
-    }, di = (e, t, n, r, s, o, a, c, i, l, d, u, h, p, m, g) => (v, w, y) => {
+    }, hi = (e, t, n, r, s, o, a, c, i, l, d, u, h, p, m, g) => (v, w, y) => {
         const b = new WeakMap;
-        let T = null;
-        const E = async (x, _) => {
+        let M = null;
+        const _ = async (x, E) => {
             let C = d(x),
-                S = null;
-            const j = on(C, _),
-                R = Array.isArray(w.outputChannelCount) ? w.outputChannelCount : Array.from(w.outputChannelCount);
+                R = null;
+            const O = cn(C, E),
+                S = Array.isArray(w.outputChannelCount) ? w.outputChannelCount : Array.from(w.outputChannelCount);
             if (u === null) {
-                const D = R.reduce((M, B) => M + B, 0),
-                    P = s(_, {
-                        channelCount: Math.max(1, D),
+                const L = S.reduce((j, U) => j + U, 0),
+                    P = s(E, {
+                        channelCount: Math.max(1, L),
                         channelCountMode: "explicit",
                         channelInterpretation: "discrete",
-                        numberOfOutputs: Math.max(1, D)
+                        numberOfOutputs: Math.max(1, L)
                     }),
-                    W = [];
-                for (let M = 0; M < x.numberOfOutputs; M += 1) W.push(r(_, {
+                    D = [];
+                for (let j = 0; j < x.numberOfOutputs; j += 1) D.push(r(E, {
                     channelCount: 1,
                     channelCountMode: "explicit",
                     channelInterpretation: "speakers",
-                    numberOfInputs: R[M]
+                    numberOfInputs: S[j]
                 }));
-                const L = a(_, {
+                const B = a(E, {
                     channelCount: w.channelCount,
                     channelCountMode: w.channelCountMode,
                     channelInterpretation: w.channelInterpretation,
                     gain: 1
                 });
-                L.connect = t.bind(null, W), L.disconnect = i.bind(null, W), S = [P, W, L]
-            } else j || (C = new u(_, v));
-            if (b.set(_, S === null ? C : S[2]), S !== null) {
-                if (T === null) {
+                B.connect = t.bind(null, D), B.disconnect = i.bind(null, D), R = [P, D, B]
+            } else O || (C = new u(E, v));
+            if (b.set(E, R === null ? C : R[2]), R !== null) {
+                if (M === null) {
                     if (y === void 0) throw new Error("Missing the processor constructor.");
                     if (h === null) throw new Error("Missing the native OfflineAudioContext constructor.");
-                    const B = x.channelCount * x.numberOfInputs,
-                        k = y.parameterDescriptors === void 0 ? 0 : y.parameterDescriptors.length,
-                        I = B + k;
-                    T = ui(x, I === 0 ? null : await (async () => {
-                        const U = new h(I, Math.ceil(x.context.length / 128) * 128, _.sampleRate),
+                    const U = x.channelCount * x.numberOfInputs,
+                        N = y.parameterDescriptors === void 0 ? 0 : y.parameterDescriptors.length,
+                        k = U + N;
+                    M = fi(x, k === 0 ? null : await (async () => {
+                        const W = new h(k, Math.ceil(x.context.length / 128) * 128, E.sampleRate),
                             H = [],
-                            pe = [];
-                        for (let z = 0; z < w.numberOfInputs; z += 1) H.push(a(U, {
+                            Y = [];
+                        for (let q = 0; q < w.numberOfInputs; q += 1) H.push(a(W, {
                             channelCount: w.channelCount,
                             channelCountMode: w.channelCountMode,
                             channelInterpretation: w.channelInterpretation,
                             gain: 1
-                        })), pe.push(s(U, {
+                        })), Y.push(s(W, {
                             channelCount: w.channelCount,
                             channelCountMode: "explicit",
                             channelInterpretation: "discrete",
                             numberOfOutputs: w.channelCount
                         }));
-                        const ge = await Promise.all(Array.from(x.parameters.values()).map(async z => {
-                                const K = o(U, {
+                        const ue = await Promise.all(Array.from(x.parameters.values()).map(async q => {
+                                const Z = o(W, {
                                     channelCount: 1,
                                     channelCountMode: "explicit",
                                     channelInterpretation: "discrete",
-                                    offset: z.value
+                                    offset: q.value
                                 });
-                                return await p(U, z, K.offset), K
+                                return await p(W, q, Z.offset), Z
                             })),
-                            ue = r(U, {
+                            pe = r(W, {
                                 channelCount: 1,
                                 channelCountMode: "explicit",
                                 channelInterpretation: "speakers",
-                                numberOfInputs: Math.max(1, B + k)
+                                numberOfInputs: Math.max(1, U + N)
                             });
-                        for (let z = 0; z < w.numberOfInputs; z += 1) {
-                            H[z].connect(pe[z]);
-                            for (let K = 0; K < w.channelCount; K += 1) pe[z].connect(ue, K, z * w.channelCount + K)
+                        for (let q = 0; q < w.numberOfInputs; q += 1) {
+                            H[q].connect(Y[q]);
+                            for (let Z = 0; Z < w.channelCount; Z += 1) Y[q].connect(pe, Z, q * w.channelCount + Z)
                         }
-                        for (const [z, K] of ge.entries()) K.connect(ue, 0, B + z), K.start(0);
-                        return ue.connect(U.destination), await Promise.all(H.map(z => m(x, U, z))), g(U)
-                    })(), _, w, R, y, l)
+                        for (const [q, Z] of ue.entries()) Z.connect(pe, 0, U + q), Z.start(0);
+                        return pe.connect(W.destination), await Promise.all(H.map(q => m(x, W, q))), g(W)
+                    })(), E, w, S, y, l)
                 }
-                const D = await T,
-                    P = n(_, {
+                const L = await M,
+                    P = n(E, {
                         buffer: null,
                         channelCount: 2,
                         channelCountMode: "max",
@@ -2953,29 +2953,29 @@ const qr = (e, t, n, r, s) => {
                         loopStart: 0,
                         playbackRate: 1
                     }),
-                    [W, L, M] = S;
-                D !== null && (P.buffer = D, P.start(0)), P.connect(W);
-                for (let B = 0, k = 0; B < x.numberOfOutputs; B += 1) {
-                    const I = L[B];
-                    for (let O = 0; O < R[B]; O += 1) W.connect(I, k + O, O);
-                    k += R[B]
+                    [D, B, j] = R;
+                L !== null && (P.buffer = L, P.start(0)), P.connect(D);
+                for (let U = 0, N = 0; U < x.numberOfOutputs; U += 1) {
+                    const k = B[U];
+                    for (let T = 0; T < S[U]; T += 1) D.connect(k, N + T, T);
+                    N += S[U]
                 }
-                return M
+                return j
             }
-            if (j)
-                for (const [D, P] of x.parameters.entries()) await e(_, P, C.parameters.get(D));
+            if (O)
+                for (const [L, P] of x.parameters.entries()) await e(E, P, C.parameters.get(L));
             else
-                for (const [D, P] of x.parameters.entries()) await p(_, P, C.parameters.get(D));
-            return await m(x, _, C), C
+                for (const [L, P] of x.parameters.entries()) await p(E, P, C.parameters.get(L));
+            return await m(x, E, C), C
         };
         return {
-            render(x, _) {
-                c(_, x);
-                const C = b.get(_);
-                return C !== void 0 ? Promise.resolve(C) : E(x, _)
+            render(x, E) {
+                c(E, x);
+                const C = b.get(E);
+                return C !== void 0 ? Promise.resolve(C) : _(x, E)
             }
         }
-    }, fi = (e, t) => (n, r) => {
+    }, mi = (e, t) => (n, r) => {
         const s = t.get(n);
         if (s !== void 0) return s;
         const o = e.get(n);
@@ -2986,26 +2986,26 @@ const qr = (e, t, n, r, s) => {
         } catch {
             return t.set(n, !1), !1
         }
-    }, hi = e => (t, n, r) => e(n, t, r), mi = e => (t, n, r = 0, s = 0) => {
+    }, pi = e => (t, n, r) => e(n, t, r), gi = e => (t, n, r = 0, s = 0) => {
         const o = t[r];
         if (o === void 0) throw e();
-        return dt(n) ? o.connect(n, 0, s) : o.connect(n, 0)
-    }, pi = {
+        return ht(n) ? o.connect(n, 0, s) : o.connect(n, 0)
+    }, vi = {
         channelCount: 2,
         channelCountMode: "max",
         channelInterpretation: "speakers",
         offset: 1
-    }, gi = (e, t, n, r, s, o, a) => class extends e {
+    }, wi = (e, t, n, r, s, o, a) => class extends e {
         constructor(i, l) {
             const d = s(i),
                 u = {
-                    ...pi,
+                    ...vi,
                     ...l
                 },
                 h = r(d, u),
                 p = o(d),
                 m = p ? n() : null;
-            super(i, !1, h, m), this._constantSourceNodeRenderer = m, this._nativeConstantSourceNode = h, this._offset = t(this, p, h.offset, Ct, Xe), this._onended = null
+            super(i, !1, h, m), this._constantSourceNodeRenderer = m, this._nativeConstantSourceNode = h, this._offset = t(this, p, h.offset, Et, Qe), this._onended = null
         }
         get offset() {
             return this._offset
@@ -3021,9 +3021,9 @@ const qr = (e, t, n, r, s) => {
         }
         start(i = 0) {
             if (this._nativeConstantSourceNode.start(i), this._constantSourceNodeRenderer !== null && (this._constantSourceNodeRenderer.start = i), this.context.state !== "closed") {
-                ze(this);
+                qe(this);
                 const l = () => {
-                    this._nativeConstantSourceNode.removeEventListener("ended", l), ye(this) && bt(this)
+                    this._nativeConstantSourceNode.removeEventListener("ended", l), be(this) && _t(this)
                 };
                 this._nativeConstantSourceNode.addEventListener("ended", l)
             }
@@ -3031,13 +3031,13 @@ const qr = (e, t, n, r, s) => {
         stop(i = 0) {
             this._nativeConstantSourceNode.stop(i), this._constantSourceNodeRenderer !== null && (this._constantSourceNodeRenderer.stop = i)
         }
-    }, vi = (e, t, n, r, s) => () => {
+    }, yi = (e, t, n, r, s) => () => {
         const o = new WeakMap;
         let a = null,
             c = null;
         const i = async (l, d) => {
             let u = n(l);
-            const h = on(u, d);
+            const h = cn(u, d);
             if (!h) {
                 const p = {
                     channelCount: u.channelCount,
@@ -3061,7 +3061,7 @@ const qr = (e, t, n, r, s) => {
                 return u !== void 0 ? Promise.resolve(u) : i(l, d)
             }
         }
-    }, wi = e => t => (e[0] = t, e[0]), yi = (e, t, n, r, s, o, a, c) => (i, l) => {
+    }, bi = e => t => (e[0] = t, e[0]), Ci = (e, t, n, r, s, o, a, c) => (i, l) => {
         const d = t.get(i);
         if (d === void 0) throw new Error("Missing the expected cycle count.");
         const u = o(i.context),
@@ -3073,7 +3073,7 @@ const qr = (e, t, n, r, s) => {
                         outputs: m
                     } = n(i);
                 for (const g of m)
-                    if (Ye(g)) {
+                    if (Ke(g)) {
                         const v = r(g[0]);
                         e(p, v, g[1], g[2])
                     } else {
@@ -3082,22 +3082,22 @@ const qr = (e, t, n, r, s) => {
                     }
             }
         } else t.set(i, d - l)
-    }, bi = e => (t, n, r, s) => e(t[s], o => o[0] === n && o[1] === r), Ci = e => (t, n) => {
+    }, _i = e => (t, n, r, s) => e(t[s], o => o[0] === n && o[1] === r), Ei = e => (t, n) => {
         e(t).delete(n)
-    }, _i = e => "delayTime" in e, Ei = (e, t, n) => function r(s, o) {
-        const a = ut(o) ? o : n(e, o);
-        if (_i(a)) return [];
+    }, xi = e => "delayTime" in e, Ai = (e, t, n) => function r(s, o) {
+        const a = ft(o) ? o : n(e, o);
+        if (xi(a)) return [];
         if (s[0] === a) return [s];
         if (s.includes(a)) return [];
         const {
             outputs: c
         } = t(a);
         return Array.from(c).map(i => r([...s, a], i[0])).reduce((i, l) => i.concat(l), [])
-    }, ot = (e, t, n) => {
+    }, it = (e, t, n) => {
         const r = t[n];
         if (r === void 0) throw e();
         return r
-    }, xi = e => (t, n = void 0, r = void 0, s = 0) => n === void 0 ? t.forEach(o => o.disconnect()) : typeof n == "number" ? ot(e, t, n).disconnect() : dt(n) ? r === void 0 ? t.forEach(o => o.disconnect(n)) : s === void 0 ? ot(e, t, r).disconnect(n, 0) : ot(e, t, r).disconnect(n, 0, s) : r === void 0 ? t.forEach(o => o.disconnect(n)) : ot(e, t, r).disconnect(n, 0), Ai = e => t => new Promise((n, r) => {
+    }, Ti = e => (t, n = void 0, r = void 0, s = 0) => n === void 0 ? t.forEach(o => o.disconnect()) : typeof n == "number" ? it(e, t, n).disconnect() : ht(n) ? r === void 0 ? t.forEach(o => o.disconnect(n)) : s === void 0 ? it(e, t, r).disconnect(n, 0) : it(e, t, r).disconnect(n, 0, s) : r === void 0 ? t.forEach(o => o.disconnect(n)) : it(e, t, r).disconnect(n, 0), Mi = e => t => new Promise((n, r) => {
         if (e === null) {
             r(new SyntaxError);
             return
@@ -3123,7 +3123,7 @@ const qr = (e, t, n, r, s) => {
                 l(), n()
             }, o.src = c, o.type = "module", s.appendChild(o)
         }
-    }), Ti = e => class {
+    }), Si = e => class {
         constructor(n) {
             this._nativeEventTarget = n, this._listeners = new WeakMap
         }
@@ -3140,7 +3140,7 @@ const qr = (e, t, n, r, s) => {
             const o = r === null ? void 0 : this._listeners.get(r);
             this._nativeEventTarget.removeEventListener(n, o === void 0 ? null : o, s)
         }
-    }, Mi = e => (t, n, r) => {
+    }, Ri = e => (t, n, r) => {
         Object.defineProperties(e, {
             currentFrame: {
                 configurable: !0,
@@ -3160,37 +3160,37 @@ const qr = (e, t, n, r, s) => {
         } finally {
             e !== null && (delete e.currentFrame, delete e.currentTime)
         }
-    }, Si = e => async t => {
+    }, ki = e => async t => {
         try {
             const n = await fetch(t);
             if (n.ok) return [await n.text(), n.url]
         } catch {}
         throw e()
-    }, Ri = (e, t) => n => t(e, n), ki = e => t => {
+    }, Ii = (e, t) => n => t(e, n), Ni = e => t => {
         const n = e(t);
         if (n.renderer === null) throw new Error("Missing the renderer of the given AudioNode in the audio graph.");
         return n.renderer
-    }, Ii = e => t => {
+    }, Oi = e => t => {
         var n;
         return (n = e.get(t)) !== null && n !== void 0 ? n : 0
-    }, Ni = e => t => {
+    }, ji = e => t => {
         const n = e(t);
         if (n.renderer === null) throw new Error("Missing the renderer of the given AudioParam in the audio graph.");
         return n.renderer
-    }, Oi = e => t => e.get(t), oe = () => new DOMException("", "InvalidStateError"), ji = e => t => {
+    }, Pi = e => t => e.get(t), oe = () => new DOMException("", "InvalidStateError"), Li = e => t => {
         const n = e.get(t);
         if (n === void 0) throw oe();
         return n
-    }, Pi = (e, t) => n => {
+    }, Bi = (e, t) => n => {
         let r = e.get(n);
         if (r !== void 0) return r;
         if (t === null) throw new Error("Missing the native OfflineAudioContext constructor.");
         return r = new t(1, 1, 44100), e.set(n, r), r
-    }, Li = e => t => {
+    }, Ui = e => t => {
         const n = e.get(t);
         if (n === void 0) throw new Error("The context has no set of AudioWorkletNodes.");
         return n
-    }, Bi = () => new DOMException("", "InvalidAccessError"), Ui = (e, t, n, r, s, o) => a => (c, i) => {
+    }, Di = () => new DOMException("", "InvalidAccessError"), Wi = (e, t, n, r, s, o) => a => (c, i) => {
         const l = e.get(c);
         if (l === void 0) {
             if (!a && o(c)) {
@@ -3199,7 +3199,7 @@ const qr = (e, t, n, r, s) => {
                         outputs: u
                     } = n(c);
                 for (const h of u)
-                    if (Ye(h)) {
+                    if (Ke(h)) {
                         const p = r(h[0]);
                         t(d, p, h[1], h[2])
                     } else {
@@ -3209,7 +3209,7 @@ const qr = (e, t, n, r, s) => {
             }
             e.set(c, i)
         } else e.set(c, l + i)
-    }, Di = e => t => e !== null && t instanceof e, Wi = e => t => e !== null && typeof e.AudioNode == "function" && t instanceof e.AudioNode, Vi = e => t => e !== null && typeof e.AudioParam == "function" && t instanceof e.AudioParam, Fi = e => t => e !== null && t instanceof e, $i = e => e !== null && e.isSecureContext, zi = (e, t, n, r) => class extends e {
+    }, Vi = e => t => e !== null && t instanceof e, Fi = e => t => e !== null && typeof e.AudioNode == "function" && t instanceof e.AudioNode, $i = e => t => e !== null && typeof e.AudioParam == "function" && t instanceof e.AudioParam, zi = e => t => e !== null && t instanceof e, qi = e => e !== null && e.isSecureContext, Gi = (e, t, n, r) => class extends e {
         constructor(o, a) {
             const c = n(o),
                 i = t(c, a);
@@ -3219,7 +3219,7 @@ const qr = (e, t, n, r, s) => {
         get mediaStream() {
             return this._nativeMediaStreamAudioSourceNode.mediaStream
         }
-    }, qi = (e, t, n, r, s) => class extends r {
+    }, Hi = (e, t, n, r, s) => class extends r {
         constructor(a = {}) {
             if (s === null) throw new Error("Missing the native AudioContext constructor.");
             let c;
@@ -3229,7 +3229,7 @@ const qr = (e, t, n, r, s) => {
                 throw d.code === 12 && d.message === "sampleRate is not in range" ? t() : d
             }
             if (c === null) throw n();
-            if (!Ga(a.latencyHint)) throw new TypeError(`The provided value '${a.latencyHint}' is not a valid enum value of type AudioContextLatencyCategory.`);
+            if (!Xa(a.latencyHint)) throw new TypeError(`The provided value '${a.latencyHint}' is not a valid enum value of type AudioContextLatencyCategory.`);
             if (a.sampleRate !== void 0 && c.sampleRate !== a.sampleRate) throw t();
             super(c, 2);
             const {
@@ -3255,7 +3255,7 @@ const qr = (e, t, n, r, s) => {
             return this.state === "closed" ? this._nativeAudioContext.close().then(() => {
                 throw e()
             }) : (this._state === "suspended" && (this._state = null), this._nativeAudioContext.close().then(() => {
-                this._nativeGainNode !== null && this._nativeOscillatorNode !== null && (this._nativeOscillatorNode.stop(), this._nativeGainNode.disconnect(), this._nativeOscillatorNode.disconnect()), qa(this)
+                this._nativeGainNode !== null && this._nativeOscillatorNode !== null && (this._nativeOscillatorNode.stop(), this._nativeGainNode.disconnect(), this._nativeOscillatorNode.disconnect()), Ha(this)
             }))
         }
         resume() {
@@ -3273,9 +3273,9 @@ const qr = (e, t, n, r, s) => {
                 throw a === void 0 ? e() : a
             })
         }
-    }, Gi = (e, t, n, r, s, o) => class extends n {
+    }, Xi = (e, t, n, r, s, o) => class extends n {
         constructor(c, i) {
-            super(c), this._nativeContext = c, jr.set(this, c), r(c) && s.set(c, new Set), this._destination = new e(this, i), this._listener = t(this, c), this._onstatechange = null
+            super(c), this._nativeContext = c, Lr.set(this, c), r(c) && s.set(c, new Set), this._destination = new e(this, i), this._listener = t(this, c), this._onstatechange = null
         }
         get currentTime() {
             return this._nativeContext.currentTime
@@ -3301,14 +3301,14 @@ const qr = (e, t, n, r, s) => {
         get state() {
             return this._nativeContext.state
         }
-    }, Gn = e => {
+    }, Xn = e => {
         const t = new Uint32Array([1179011410, 40, 1163280727, 544501094, 16, 131073, 44100, 176400, 1048580, 1635017060, 4, 0]);
         try {
             const n = e.decodeAudioData(t.buffer, () => {});
             return n === void 0 ? !1 : (n.catch(() => {}), !0)
         } catch {}
         return !1
-    }, Hi = (e, t) => (n, r, s) => {
+    }, Qi = (e, t) => (n, r, s) => {
         const o = new Set;
         return n.connect = (a => (c, i = 0, l = 0) => {
             const d = o.size === 0;
@@ -3330,12 +3330,12 @@ const qr = (e, t, n, r, s) => {
     }, Se = (e, t, n) => {
         const r = t[n];
         r !== void 0 && r !== e[n] && (e[n] = r)
-    }, Ke = (e, t) => {
+    }, Ze = (e, t) => {
         Se(e, t, "channelCount"), Se(e, t, "channelCountMode"), Se(e, t, "channelInterpretation")
-    }, Xi = e => e === null ? null : e.hasOwnProperty("AudioBuffer") ? e.AudioBuffer : null, ln = (e, t, n) => {
+    }, Yi = e => e === null ? null : e.hasOwnProperty("AudioBuffer") ? e.AudioBuffer : null, dn = (e, t, n) => {
         const r = t[n];
         r !== void 0 && r !== e[n].value && (e[n].value = r)
-    }, Qi = e => {
+    }, Ki = e => {
         e.start = (t => {
             let n = !1;
             return (r = 0, s = 0, o) => {
@@ -3343,20 +3343,20 @@ const qr = (e, t, n, r, s) => {
                 t.call(e, r, s, o), n = !0
             }
         })(e.start)
-    }, Gr = e => {
+    }, Xr = e => {
         e.start = (t => (n = 0, r = 0, s) => {
             if (typeof s == "number" && s < 0 || r < 0 || n < 0) throw new RangeError("The parameters can't be negative.");
             t.call(e, n, r, s)
         })(e.start)
-    }, Hr = e => {
+    }, Qr = e => {
         e.stop = (t => (n = 0) => {
             if (n < 0) throw new RangeError("The parameter can't be negative.");
             t.call(e, n)
         })(e.stop)
-    }, Yi = (e, t, n, r, s, o, a, c, i, l, d) => (u, h) => {
+    }, Zi = (e, t, n, r, s, o, a, c, i, l, d) => (u, h) => {
         const p = u.createBufferSource();
-        return Ke(p, h), ln(p, h, "playbackRate"), Se(p, h, "buffer"), Se(p, h, "loop"), Se(p, h, "loopEnd"), Se(p, h, "loopStart"), t(n, () => n(u)) || Qi(p), t(r, () => r(u)) || i(p), t(s, () => s(u)) || l(p, u), t(o, () => o(u)) || Gr(p), t(a, () => a(u)) || d(p, u), t(c, () => c(u)) || Hr(p), e(u, p), p
-    }, Ki = e => e === null ? null : e.hasOwnProperty("AudioContext") ? e.AudioContext : e.hasOwnProperty("webkitAudioContext") ? e.webkitAudioContext : null, Zi = (e, t) => (n, r, s) => {
+        return Ze(p, h), dn(p, h, "playbackRate"), Se(p, h, "buffer"), Se(p, h, "loop"), Se(p, h, "loopEnd"), Se(p, h, "loopStart"), t(n, () => n(u)) || Ki(p), t(r, () => r(u)) || i(p), t(s, () => s(u)) || l(p, u), t(o, () => o(u)) || Xr(p), t(a, () => a(u)) || d(p, u), t(c, () => c(u)) || Qr(p), e(u, p), p
+    }, Ji = e => e === null ? null : e.hasOwnProperty("AudioContext") ? e.AudioContext : e.hasOwnProperty("webkitAudioContext") ? e.webkitAudioContext : null, ec = (e, t) => (n, r, s) => {
         const o = n.destination;
         if (o.channelCount !== r) try {
             o.channelCount = r
@@ -3384,7 +3384,7 @@ const qr = (e, t, n, r, s) => {
         }), Object.defineProperty(a, "maxChannelCount", {
             get: () => o.maxChannelCount
         }), a.connect(o), a
-    }, Ji = e => e === null ? null : e.hasOwnProperty("AudioWorkletNode") ? e.AudioWorkletNode : null, ec = e => {
+    }, tc = e => e === null ? null : e.hasOwnProperty("AudioWorkletNode") ? e.AudioWorkletNode : null, nc = e => {
         const {
             port1: t
         } = new MessageChannel;
@@ -3393,7 +3393,7 @@ const qr = (e, t, n, r, s) => {
         } finally {
             t.close()
         }
-    }, tc = (e, t, n, r, s) => (o, a, c, i, l, d) => {
+    }, rc = (e, t, n, r, s) => (o, a, c, i, l, d) => {
         if (c !== null) try {
             const u = new c(o, i, d),
                 h = new Map;
@@ -3454,8 +3454,8 @@ const qr = (e, t, n, r, s) => {
             throw u.code === 11 ? r() : u
         }
         if (l === void 0) throw r();
-        return ec(d), t(o, a, l, d)
-    }, nc = (e, t) => e === null ? 512 : Math.max(512, Math.min(16384, Math.pow(2, Math.round(Math.log2(e * t))))), rc = e => new Promise((t, n) => {
+        return nc(d), t(o, a, l, d)
+    }, sc = (e, t) => e === null ? 512 : Math.max(512, Math.min(16384, Math.pow(2, Math.round(Math.log2(e * t))))), oc = e => new Promise((t, n) => {
         const {
             port1: r,
             port2: s
@@ -3469,33 +3469,33 @@ const qr = (e, t, n, r, s) => {
         }) => {
             r.close(), s.close(), n(o)
         }, s.postMessage(e)
-    }), sc = async (e, t) => {
-        const n = await rc(t);
+    }), ac = async (e, t) => {
+        const n = await oc(t);
         return new e(n)
-    }, oc = (e, t, n, r) => {
-        let s = Xt.get(e);
-        s === void 0 && (s = new WeakMap, Xt.set(e, s));
-        const o = sc(n, r);
+    }, ic = (e, t, n, r) => {
+        let s = Yt.get(e);
+        s === void 0 && (s = new WeakMap, Yt.set(e, s));
+        const o = ac(n, r);
         return s.set(t, o), o
-    }, ac = (e, t, n, r, s, o, a, c, i, l, d, u, h) => (p, m, g, v) => {
+    }, cc = (e, t, n, r, s, o, a, c, i, l, d, u, h) => (p, m, g, v) => {
         if (v.numberOfInputs === 0 && v.numberOfOutputs === 0) throw i();
         const w = Array.isArray(v.outputChannelCount) ? v.outputChannelCount : Array.from(v.outputChannelCount);
         if (w.some(A => A < 1)) throw i();
         if (w.length !== v.numberOfOutputs) throw t();
         if (v.channelCountMode !== "explicit") throw i();
         const y = v.channelCount * v.numberOfInputs,
-            b = w.reduce((A, N) => A + N, 0),
-            T = g.parameterDescriptors === void 0 ? 0 : g.parameterDescriptors.length;
-        if (y + T > 6 || b > 6) throw i();
-        const E = new MessageChannel,
+            b = w.reduce((A, I) => A + I, 0),
+            M = g.parameterDescriptors === void 0 ? 0 : g.parameterDescriptors.length;
+        if (y + M > 6 || b > 6) throw i();
+        const _ = new MessageChannel,
             x = [],
-            _ = [];
+            E = [];
         for (let A = 0; A < v.numberOfInputs; A += 1) x.push(a(p, {
             channelCount: v.channelCount,
             channelCountMode: v.channelCountMode,
             channelInterpretation: v.channelInterpretation,
             gain: 1
-        })), _.push(s(p, {
+        })), E.push(s(p, {
             channelCount: v.channelCount,
             channelCountMode: "explicit",
             channelInterpretation: "discrete",
@@ -3505,38 +3505,38 @@ const qr = (e, t, n, r, s) => {
         if (g.parameterDescriptors !== void 0)
             for (const {
                     defaultValue: A,
-                    maxValue: N,
-                    minValue: Q,
-                    name: q
+                    maxValue: I,
+                    minValue: X,
+                    name: z
                 }
                 of g.parameterDescriptors) {
-                const V = o(p, {
+                const F = o(p, {
                     channelCount: 1,
                     channelCountMode: "explicit",
                     channelInterpretation: "discrete",
-                    offset: v.parameterData[q] !== void 0 ? v.parameterData[q] : A === void 0 ? 0 : A
+                    offset: v.parameterData[z] !== void 0 ? v.parameterData[z] : A === void 0 ? 0 : A
                 });
-                Object.defineProperties(V.offset, {
+                Object.defineProperties(F.offset, {
                     defaultValue: {
                         get: () => A === void 0 ? 0 : A
                     },
                     maxValue: {
-                        get: () => N === void 0 ? Ct : N
+                        get: () => I === void 0 ? Et : I
                     },
                     minValue: {
-                        get: () => Q === void 0 ? Xe : Q
+                        get: () => X === void 0 ? Qe : X
                     }
-                }), C.push(V)
+                }), C.push(F)
             }
-        const S = r(p, {
+        const R = r(p, {
                 channelCount: 1,
                 channelCountMode: "explicit",
                 channelInterpretation: "speakers",
-                numberOfInputs: Math.max(1, y + T)
+                numberOfInputs: Math.max(1, y + M)
             }),
-            j = nc(m, p.sampleRate),
-            R = c(p, j, y + T, Math.max(1, b)),
-            D = s(p, {
+            O = sc(m, p.sampleRate),
+            S = c(p, O, y + M, Math.max(1, b)),
+            L = s(p, {
                 channelCount: Math.max(1, b),
                 channelCountMode: "explicit",
                 channelInterpretation: "discrete",
@@ -3550,22 +3550,22 @@ const qr = (e, t, n, r, s) => {
             numberOfInputs: w[A]
         }));
         for (let A = 0; A < v.numberOfInputs; A += 1) {
-            x[A].connect(_[A]);
-            for (let N = 0; N < v.channelCount; N += 1) _[A].connect(S, N, A * v.channelCount + N)
+            x[A].connect(E[A]);
+            for (let I = 0; I < v.channelCount; I += 1) E[A].connect(R, I, A * v.channelCount + I)
         }
-        const W = new zr(g.parameterDescriptors === void 0 ? [] : g.parameterDescriptors.map(({
+        const D = new Gr(g.parameterDescriptors === void 0 ? [] : g.parameterDescriptors.map(({
             name: A
-        }, N) => {
-            const Q = C[N];
-            return Q.connect(S, 0, y + N), Q.start(0), [A, Q.offset]
+        }, I) => {
+            const X = C[I];
+            return X.connect(R, 0, y + I), X.start(0), [A, X.offset]
         }));
-        S.connect(R);
-        let L = v.channelInterpretation,
-            M = null;
-        const B = v.numberOfOutputs === 0 ? [R] : P,
-            k = {
+        R.connect(S);
+        let B = v.channelInterpretation,
+            j = null;
+        const U = v.numberOfOutputs === 0 ? [S] : P,
+            N = {
                 get bufferSize() {
-                    return j
+                    return O
                 },
                 get channelCount() {
                     return v.channelCount
@@ -3580,14 +3580,14 @@ const qr = (e, t, n, r, s) => {
                     throw n()
                 },
                 get channelInterpretation() {
-                    return L
+                    return B
                 },
                 set channelInterpretation(A) {
-                    for (const N of x) N.channelInterpretation = A;
-                    L = A
+                    for (const I of x) I.channelInterpretation = A;
+                    B = A
                 },
                 get context() {
-                    return R.context
+                    return S.context
                 },
                 get inputs() {
                     return x
@@ -3599,158 +3599,158 @@ const qr = (e, t, n, r, s) => {
                     return v.numberOfOutputs
                 },
                 get onprocessorerror() {
-                    return M
+                    return j
                 },
                 set onprocessorerror(A) {
-                    typeof M == "function" && k.removeEventListener("processorerror", M), M = typeof A == "function" ? A : null, typeof M == "function" && k.addEventListener("processorerror", M)
+                    typeof j == "function" && N.removeEventListener("processorerror", j), j = typeof A == "function" ? A : null, typeof j == "function" && N.addEventListener("processorerror", j)
                 },
                 get parameters() {
-                    return W
+                    return D
                 },
                 get port() {
-                    return E.port2
+                    return _.port2
                 },
                 addEventListener(...A) {
-                    return R.addEventListener(A[0], A[1], A[2])
+                    return S.addEventListener(A[0], A[1], A[2])
                 },
-                connect: e.bind(null, B),
-                disconnect: l.bind(null, B),
+                connect: e.bind(null, U),
+                disconnect: l.bind(null, U),
                 dispatchEvent(...A) {
-                    return R.dispatchEvent(A[0])
+                    return S.dispatchEvent(A[0])
                 },
                 removeEventListener(...A) {
-                    return R.removeEventListener(A[0], A[1], A[2])
+                    return S.removeEventListener(A[0], A[1], A[2])
                 }
             },
-            I = new Map;
-        E.port1.addEventListener = (A => (...N) => {
-            if (N[0] === "message") {
-                const Q = typeof N[1] == "function" ? N[1] : typeof N[1] == "object" && N[1] !== null && typeof N[1].handleEvent == "function" ? N[1].handleEvent : null;
-                if (Q !== null) {
-                    const q = I.get(N[1]);
-                    q !== void 0 ? N[1] = q : (N[1] = V => {
-                        d(p.currentTime, p.sampleRate, () => Q(V))
-                    }, I.set(Q, N[1]))
+            k = new Map;
+        _.port1.addEventListener = (A => (...I) => {
+            if (I[0] === "message") {
+                const X = typeof I[1] == "function" ? I[1] : typeof I[1] == "object" && I[1] !== null && typeof I[1].handleEvent == "function" ? I[1].handleEvent : null;
+                if (X !== null) {
+                    const z = k.get(I[1]);
+                    z !== void 0 ? I[1] = z : (I[1] = F => {
+                        d(p.currentTime, p.sampleRate, () => X(F))
+                    }, k.set(X, I[1]))
                 }
             }
-            return A.call(E.port1, N[0], N[1], N[2])
-        })(E.port1.addEventListener), E.port1.removeEventListener = (A => (...N) => {
-            if (N[0] === "message") {
-                const Q = I.get(N[1]);
-                Q !== void 0 && (I.delete(N[1]), N[1] = Q)
+            return A.call(_.port1, I[0], I[1], I[2])
+        })(_.port1.addEventListener), _.port1.removeEventListener = (A => (...I) => {
+            if (I[0] === "message") {
+                const X = k.get(I[1]);
+                X !== void 0 && (k.delete(I[1]), I[1] = X)
             }
-            return A.call(E.port1, N[0], N[1], N[2])
-        })(E.port1.removeEventListener);
-        let O = null;
-        Object.defineProperty(E.port1, "onmessage", {
-            get: () => O,
+            return A.call(_.port1, I[0], I[1], I[2])
+        })(_.port1.removeEventListener);
+        let T = null;
+        Object.defineProperty(_.port1, "onmessage", {
+            get: () => T,
             set: A => {
-                typeof O == "function" && E.port1.removeEventListener("message", O), O = typeof A == "function" ? A : null, typeof O == "function" && (E.port1.addEventListener("message", O), E.port1.start())
+                typeof T == "function" && _.port1.removeEventListener("message", T), T = typeof A == "function" ? A : null, typeof T == "function" && (_.port1.addEventListener("message", T), _.port1.start())
             }
-        }), g.prototype.port = E.port1;
-        let U = null;
-        oc(p, k, g, v).then(A => U = A);
-        const pe = ht(v.numberOfInputs, v.channelCount),
-            ge = ht(v.numberOfOutputs, w),
-            ue = g.parameterDescriptors === void 0 ? [] : g.parameterDescriptors.reduce((A, {
-                name: N
+        }), g.prototype.port = _.port1;
+        let W = null;
+        ic(p, N, g, v).then(A => W = A);
+        const Y = pt(v.numberOfInputs, v.channelCount),
+            ue = pt(v.numberOfOutputs, w),
+            pe = g.parameterDescriptors === void 0 ? [] : g.parameterDescriptors.reduce((A, {
+                name: I
             }) => ({
                 ...A,
-                [N]: new Float32Array(128)
+                [I]: new Float32Array(128)
             }), {});
-        let z = !0;
-        const K = () => {
-                v.numberOfOutputs > 0 && R.disconnect(D);
-                for (let A = 0, N = 0; A < v.numberOfOutputs; A += 1) {
-                    const Q = P[A];
-                    for (let q = 0; q < w[A]; q += 1) D.disconnect(Q, N + q, q);
-                    N += w[A]
+        let q = !0;
+        const Z = () => {
+                v.numberOfOutputs > 0 && S.disconnect(L);
+                for (let A = 0, I = 0; A < v.numberOfOutputs; A += 1) {
+                    const X = P[A];
+                    for (let z = 0; z < w[A]; z += 1) L.disconnect(X, I + z, z);
+                    I += w[A]
                 }
             },
-            xe = new Map;
-        R.onaudioprocess = ({
+            ge = new Map;
+        S.onaudioprocess = ({
             inputBuffer: A,
-            outputBuffer: N
+            outputBuffer: I
         }) => {
-            if (U !== null) {
-                const Q = u(k);
-                for (let q = 0; q < j; q += 128) {
-                    for (let V = 0; V < v.numberOfInputs; V += 1)
-                        for (let X = 0; X < v.channelCount; X += 1) ft(A, pe[V], X, X, q);
+            if (W !== null) {
+                const X = u(N);
+                for (let z = 0; z < O; z += 128) {
+                    for (let F = 0; F < v.numberOfInputs; F += 1)
+                        for (let G = 0; G < v.channelCount; G += 1) mt(A, Y[F], G, G, z);
                     g.parameterDescriptors !== void 0 && g.parameterDescriptors.forEach(({
-                        name: V
-                    }, X) => {
-                        ft(A, ue, V, y + X, q)
+                        name: F
+                    }, G) => {
+                        mt(A, pe, F, y + G, z)
                     });
-                    for (let V = 0; V < v.numberOfInputs; V += 1)
-                        for (let X = 0; X < w[V]; X += 1) ge[V][X].byteLength === 0 && (ge[V][X] = new Float32Array(128));
+                    for (let F = 0; F < v.numberOfInputs; F += 1)
+                        for (let G = 0; G < w[F]; G += 1) ue[F][G].byteLength === 0 && (ue[F][G] = new Float32Array(128));
                     try {
-                        const V = pe.map((J, se) => {
-                            if (Q[se].size > 0) return xe.set(se, j / 128), J;
-                            const $ = xe.get(se);
-                            return $ === void 0 ? [] : (J.every(Y => Y.every(ie => ie === 0)) && ($ === 1 ? xe.delete(se) : xe.set(se, $ - 1)), J)
+                        const F = Y.map((J, ie) => {
+                            if (X[ie].size > 0) return ge.set(ie, O / 128), J;
+                            const Ue = ge.get(ie);
+                            return Ue === void 0 ? [] : (J.every(Q => Q.every($ => $ === 0)) && (Ue === 1 ? ge.delete(ie) : ge.set(ie, Ue - 1)), J)
                         });
-                        z = d(p.currentTime + q / p.sampleRate, p.sampleRate, () => U.process(V, ge, ue));
-                        for (let J = 0, se = 0; J < v.numberOfOutputs; J += 1) {
-                            for (let G = 0; G < w[J]; G += 1) qr(N, ge[J], G, se + G, q);
-                            se += w[J]
+                        q = d(p.currentTime + z / p.sampleRate, p.sampleRate, () => W.process(F, ue, pe));
+                        for (let J = 0, ie = 0; J < v.numberOfOutputs; J += 1) {
+                            for (let Ae = 0; Ae < w[J]; Ae += 1) Hr(I, ue[J], Ae, ie + Ae, z);
+                            ie += w[J]
                         }
-                    } catch (V) {
-                        z = !1, k.dispatchEvent(new ErrorEvent("processorerror", {
-                            colno: V.colno,
-                            filename: V.filename,
-                            lineno: V.lineno,
-                            message: V.message
+                    } catch (F) {
+                        q = !1, N.dispatchEvent(new ErrorEvent("processorerror", {
+                            colno: F.colno,
+                            filename: F.filename,
+                            lineno: F.lineno,
+                            message: F.message
                         }))
                     }
-                    if (!z) {
-                        for (let V = 0; V < v.numberOfInputs; V += 1) {
-                            x[V].disconnect(_[V]);
-                            for (let X = 0; X < v.channelCount; X += 1) _[q].disconnect(S, X, V * v.channelCount + X)
+                    if (!q) {
+                        for (let F = 0; F < v.numberOfInputs; F += 1) {
+                            x[F].disconnect(E[F]);
+                            for (let G = 0; G < v.channelCount; G += 1) E[z].disconnect(R, G, F * v.channelCount + G)
                         }
                         if (g.parameterDescriptors !== void 0) {
-                            const V = g.parameterDescriptors.length;
-                            for (let X = 0; X < V; X += 1) {
-                                const J = C[X];
-                                J.disconnect(S, 0, y + X), J.stop()
+                            const F = g.parameterDescriptors.length;
+                            for (let G = 0; G < F; G += 1) {
+                                const J = C[G];
+                                J.disconnect(R, 0, y + G), J.stop()
                             }
                         }
-                        S.disconnect(R), R.onaudioprocess = null, Fe ? K() : tt();
+                        R.disconnect(S), S.onaudioprocess = null, Pe ? Z() : Be();
                         break
                     }
                 }
             }
         };
-        let Fe = !1;
-        const Ae = a(p, {
+        let Pe = !1;
+        const Le = a(p, {
                 channelCount: 1,
                 channelCountMode: "explicit",
                 channelInterpretation: "discrete",
                 gain: 0
             }),
-            $e = () => R.connect(Ae).connect(p.destination),
-            tt = () => {
-                R.disconnect(Ae), Ae.disconnect()
+            nt = () => S.connect(Le).connect(p.destination),
+            Be = () => {
+                S.disconnect(Le), Le.disconnect()
             },
-            St = () => {
-                if (z) {
-                    tt(), v.numberOfOutputs > 0 && R.connect(D);
-                    for (let A = 0, N = 0; A < v.numberOfOutputs; A += 1) {
-                        const Q = P[A];
-                        for (let q = 0; q < w[A]; q += 1) D.connect(Q, N + q, q);
-                        N += w[A]
+            rt = () => {
+                if (q) {
+                    Be(), v.numberOfOutputs > 0 && S.connect(L);
+                    for (let A = 0, I = 0; A < v.numberOfOutputs; A += 1) {
+                        const X = P[A];
+                        for (let z = 0; z < w[A]; z += 1) L.connect(X, I + z, z);
+                        I += w[A]
                     }
                 }
-                Fe = !0
+                Pe = !0
             },
-            Pe = () => {
-                z && ($e(), K()), Fe = !1
+            kt = () => {
+                q && (nt(), Z()), Pe = !1
             };
-        return $e(), h(k, St, Pe)
-    }, ic = (e, t) => (n, r) => {
+        return nt(), h(N, rt, kt)
+    }, lc = (e, t) => (n, r) => {
         const s = n.createChannelMerger(r.numberOfInputs);
-        return e !== null && e.name === "webkitAudioContext" && t(n, s), Ke(s, r), s
-    }, cc = e => {
+        return e !== null && e.name === "webkitAudioContext" && t(n, s), Ze(s, r), s
+    }, uc = e => {
         const t = e.numberOfOutputs;
         Object.defineProperty(e, "channelCount", {
             get: () => t,
@@ -3768,14 +3768,14 @@ const qr = (e, t, n, r, s) => {
                 if (n !== "discrete") throw oe()
             }
         })
-    }, Xr = (e, t) => {
+    }, Yr = (e, t) => {
         const n = e.createChannelSplitter(t.numberOfOutputs);
-        return Ke(n, t), cc(n), n
-    }, lc = (e, t, n, r, s) => (o, a) => {
+        return Ze(n, t), uc(n), n
+    }, dc = (e, t, n, r, s) => (o, a) => {
         if (o.createConstantSource === void 0) return n(o, a);
         const c = o.createConstantSource();
-        return Ke(c, a), ln(c, a, "offset"), t(r, () => r(o)) || Gr(c), t(s, () => s(o)) || Hr(c), e(o, c), c
-    }, Qr = (e, t) => (e.connect = t.connect.bind(t), e.disconnect = t.disconnect.bind(t), e), uc = (e, t, n, r) => (s, {
+        return Ze(c, a), dn(c, a, "offset"), t(r, () => r(o)) || Xr(c), t(s, () => s(o)) || Qr(c), e(o, c), c
+    }, Kr = (e, t) => (e.connect = t.connect.bind(t), e.disconnect = t.disconnect.bind(t), e), fc = (e, t, n, r) => (s, {
         offset: o,
         ...a
     }) => {
@@ -3855,11 +3855,11 @@ const qr = (e, t, n, r, s) => {
             },
             h = () => i.connect(l),
             p = () => i.disconnect(l);
-        return e(s, i), r(Qr(u, l), h, p)
-    }, be = (e, t) => {
+        return e(s, i), r(Kr(u, l), h, p)
+    }, Ce = (e, t) => {
         const n = e.createGain();
-        return Ke(n, t), ln(n, t, "gain"), n
-    }, dc = (e, {
+        return Ze(n, t), dn(n, t, "gain"), n
+    }, hc = (e, {
         mediaStream: t
     }) => {
         const n = t.getAudioTracks();
@@ -3869,20 +3869,20 @@ const qr = (e, t, n, r, s) => {
         return Object.defineProperty(s, "mediaStream", {
             value: t
         }), s
-    }, fc = e => e === null ? null : e.hasOwnProperty("OfflineAudioContext") ? e.OfflineAudioContext : e.hasOwnProperty("webkitOfflineAudioContext") ? e.webkitOfflineAudioContext : null, un = (e, t, n, r) => e.createScriptProcessor(t, n, r), je = () => new DOMException("", "NotSupportedError"), hc = (e, t) => (n, r, s) => (e(r).replay(s), t(r, n, s)), mc = (e, t, n) => async (r, s, o) => {
+    }, mc = e => e === null ? null : e.hasOwnProperty("OfflineAudioContext") ? e.OfflineAudioContext : e.hasOwnProperty("webkitOfflineAudioContext") ? e.webkitOfflineAudioContext : null, fn = (e, t, n, r) => e.createScriptProcessor(t, n, r), je = () => new DOMException("", "NotSupportedError"), pc = (e, t) => (n, r, s) => (e(r).replay(s), t(r, n, s)), gc = (e, t, n) => async (r, s, o) => {
         const a = e(r);
         await Promise.all(a.activeInputs.map((c, i) => Array.from(c).map(async ([l, d]) => {
             const h = await t(l).render(l, s),
                 p = r.context.destination;
             !n(l) && (r !== p || !n(r)) && h.connect(o, d, i)
         })).reduce((c, i) => [...c, ...i], []))
-    }, pc = (e, t, n) => async (r, s, o) => {
+    }, vc = (e, t, n) => async (r, s, o) => {
         const a = t(r);
         await Promise.all(Array.from(a.activeInputs).map(async ([c, i]) => {
             const d = await e(c).render(c, s);
             n(c) || d.connect(o, i)
         }))
-    }, gc = (e, t, n, r) => s => e(Gn, () => Gn(s)) ? Promise.resolve(e(r, r)).then(o => {
+    }, wc = (e, t, n, r) => s => e(Xn, () => Xn(s)) ? Promise.resolve(e(r, r)).then(o => {
         if (!o) {
             const a = n(s, 512, 0, 1);
             s.oncomplete = () => {
@@ -3900,9 +3900,9 @@ const qr = (e, t, n, r, s) => {
         s.oncomplete = c => {
             a.disconnect(), o(c.renderedBuffer)
         }, a.connect(s.destination), s.startRendering()
-    }), vc = e => (t, n) => {
+    }), yc = e => (t, n) => {
         e.set(t, n)
-    }, wc = e => () => {
+    }, bc = e => () => {
         if (e === null) return !1;
         try {
             new e({
@@ -3913,7 +3913,7 @@ const qr = (e, t, n, r, s) => {
             return !1
         }
         return !0
-    }, yc = (e, t) => async () => {
+    }, Cc = (e, t) => async () => {
         if (e === null) return !0;
         if (t === null) return !1;
         const n = new Blob(['class A extends AudioWorkletProcessor{process(i){this.port.postMessage(i,[i[0][0].buffer])}}registerProcessor("a",A)'], {
@@ -3934,7 +3934,7 @@ const qr = (e, t, n, r, s) => {
             URL.revokeObjectURL(s)
         }
         return o && !a
-    }, bc = (e, t) => () => {
+    }, _c = (e, t) => () => {
         if (t === null) return Promise.resolve(!1);
         const n = new t(1, 1, 44100),
             r = e(n, {
@@ -3948,7 +3948,7 @@ const qr = (e, t, n, r, s) => {
                 r.disconnect(), s(n.currentTime !== 0)
             }, n.startRendering()
         })
-    }, Cc = () => new DOMException("", "UnknownError"), _c = () => typeof window > "u" ? null : window, Ec = (e, t) => n => {
+    }, Ec = () => new DOMException("", "UnknownError"), xc = () => typeof window > "u" ? null : window, Ac = (e, t) => n => {
         n.copyFromChannel = (r, s, o = 0) => {
             const a = e(o),
                 c = e(s);
@@ -3966,7 +3966,7 @@ const qr = (e, t, n, r, s) => {
                 d = r.length;
             for (let u = a < 0 ? -a : 0; u + a < i && u < d; u += 1) l[u + a] = r[u]
         }
-    }, xc = e => t => {
+    }, Tc = e => t => {
         t.copyFromChannel = (n => (r, s, o = 0) => {
             const a = e(o),
                 c = e(s);
@@ -3976,13 +3976,13 @@ const qr = (e, t, n, r, s) => {
                 c = e(s);
             if (a < t.length) return n.call(t, r, c, a)
         })(t.copyToChannel)
-    }, Ac = e => (t, n) => {
+    }, Mc = e => (t, n) => {
         const r = n.createBuffer(1, 1, 44100);
         t.buffer === null && (t.buffer = r), e(t, "buffer", s => () => {
             const o = s.call(t);
             return o === r ? null : o
         }, s => o => s.call(t, o === null ? r : o))
-    }, Tc = (e, t) => (n, r) => {
+    }, Sc = (e, t) => (n, r) => {
         r.channelCount = 1, r.channelCountMode = "explicit", Object.defineProperty(r, "channelCount", {
             get: () => 1,
             set: () => {
@@ -3999,7 +3999,7 @@ const qr = (e, t, n, r, s) => {
             const c = r.numberOfInputs;
             for (let i = 0; i < c; i += 1) s.connect(r, 0, i)
         }, () => s.disconnect(r))
-    }, Mc = (e, t, n) => e.copyFromChannel === void 0 ? e.getChannelData(n)[0] : (e.copyFromChannel(t, n), t[0]), dn = (e, t, n, r) => {
+    }, Rc = (e, t, n) => e.copyFromChannel === void 0 ? e.getChannelData(n)[0] : (e.copyFromChannel(t, n), t[0]), hn = (e, t, n, r) => {
         let s = e;
         for (; !s.hasOwnProperty(t);) s = Object.getPrototypeOf(s);
         const {
@@ -4010,19 +4010,19 @@ const qr = (e, t, n, r, s) => {
             get: n(o),
             set: r(a)
         })
-    }, Sc = e => ({
+    }, kc = e => ({
         ...e,
         outputChannelCount: e.outputChannelCount !== void 0 ? e.outputChannelCount : e.numberOfInputs === 1 && e.numberOfOutputs === 1 ? [e.channelCount] : Array.from({
             length: e.numberOfOutputs
         }, () => 1)
-    }), Yr = (e, t, n) => {
+    }), Zr = (e, t, n) => {
         try {
             e.setValueAtTime(t, n)
         } catch (r) {
             if (r.code !== 9) throw r;
-            Yr(e, t, n + 1e-7)
+            Zr(e, t, n + 1e-7)
         }
-    }, Rc = e => {
+    }, Ic = e => {
         const t = e.createBufferSource();
         t.start();
         try {
@@ -4031,7 +4031,7 @@ const qr = (e, t, n, r, s) => {
             return !0
         }
         return !1
-    }, kc = e => {
+    }, Nc = e => {
         const t = e.createBufferSource(),
             n = e.createBuffer(1, 1, 44100);
         t.buffer = n;
@@ -4041,7 +4041,7 @@ const qr = (e, t, n, r, s) => {
             return !1
         }
         return !0
-    }, Ic = e => {
+    }, Oc = e => {
         const t = e.createBufferSource();
         t.start();
         try {
@@ -4050,7 +4050,7 @@ const qr = (e, t, n, r, s) => {
             return !1
         }
         return !0
-    }, Kr = e => {
+    }, Jr = e => {
         const t = e.createOscillator();
         try {
             t.start(-1)
@@ -4058,7 +4058,7 @@ const qr = (e, t, n, r, s) => {
             return n instanceof RangeError
         }
         return !1
-    }, Nc = e => {
+    }, jc = e => {
         const t = e.createBuffer(1, 1, 44100),
             n = e.createBufferSource();
         n.buffer = t, n.start(), n.stop();
@@ -4067,7 +4067,7 @@ const qr = (e, t, n, r, s) => {
         } catch {
             return !1
         }
-    }, Zr = e => {
+    }, es = e => {
         const t = e.createOscillator();
         try {
             t.stop(-1)
@@ -4075,7 +4075,7 @@ const qr = (e, t, n, r, s) => {
             return n instanceof RangeError
         }
         return !1
-    }, Oc = e => {
+    }, Pc = e => {
         const {
             port1: t,
             port2: n
@@ -4085,19 +4085,19 @@ const qr = (e, t, n, r, s) => {
         } finally {
             t.close(), n.close()
         }
-    }, jc = e => {
+    }, Lc = e => {
         e.start = (t => (n = 0, r = 0, s) => {
             const o = e.buffer,
                 a = o === null ? r : Math.min(o.duration, r);
             o !== null && a > o.duration - .5 / e.context.sampleRate ? t.call(e, n, 0, 0) : t.call(e, n, a, s)
         })(e.start)
-    }, Pc = (e, t) => {
+    }, Bc = (e, t) => {
         const n = t.createGain();
         e.connect(n);
         const r = (s => () => {
             s.call(e, n), e.removeEventListener("ended", r)
         })(e.disconnect);
-        e.addEventListener("ended", r), Qr(e, n), e.stop = (s => {
+        e.addEventListener("ended", r), Kr(e, n), e.stop = (s => {
             let o = !1;
             return (a = 0) => {
                 if (o) try {
@@ -4107,7 +4107,7 @@ const qr = (e, t, n, r, s) => {
                 } else s.call(e, a), o = !0
             }
         })(e.stop)
-    }, Ze = (e, t) => n => {
+    }, Je = (e, t) => n => {
         const r = {
             value: e
         };
@@ -4115,19 +4115,19 @@ const qr = (e, t, n, r, s) => {
             currentTarget: r,
             target: r
         }), typeof t == "function" ? t.call(e, n) : t.handleEvent.call(e, n)
-    }, Lc = xa(Oe), Bc = ka(Oe), Uc = bi(yt), Dc = new WeakMap, Wc = Ii(Dc), De = fi(new Map, new WeakMap), ce = _c(), Jr = ki(Z), _t = mc(Z, Jr, ke), Ce = ji(jr), We = fc(ce), le = Fi(We), es = new WeakMap, ts = Ti(Ze), Et = Ki(ce), Vc = Di(Et), ns = Wi(ce), Fc = Vi(ce), Ge = Ji(ce), Je = si(Aa(kr), Ra(Lc, Bc, Kt, Uc, Zt, Z, Wc, He, ne, Oe, ye, ke, at), De, Ui(Gt, Zt, Z, ne, qe, ye), Ne, Bi, je, yi(Kt, Gt, Z, ne, qe, Ce, ye, le), Ei(es, Z, ae), ts, Ce, Vc, ns, Fc, le, Ge), $c = new WeakSet, Hn = Xi(ce), rs = wi(new Uint32Array(1)), zc = Ec(rs, Ne), qc = xc(rs), Gc = Pa($c, De, je, Hn, We, wc(Hn), zc, qc), fn = Ia(be), ss = pc(Jr, Qe, ke), hn = hi(ss), xt = Yi(fn, De, Rc, kc, Ic, Kr, Nc, Zr, jc, Ac(dn), Pc), mn = hc(Ni(Qe), ss), Hc = Ua(hn, xt, ne, mn, _t), At = oi(Ta(Nr), es, Or, ai, wa, ya, ba, Ca, _a, $t, Sr, Et, Yr), Xc = Ba(Je, Hc, At, oe, xt, Ce, le, Ze), Qc = Ha(Je, Xa, Ne, oe, Zi(be, dn), Ce, le, _t), Tt = Hi(Oe, ns), Yc = Tc(oe, Tt), pn = ic(Et, Yc), Kc = uc(fn, xt, be, Tt), et = lc(fn, De, Kc, Kr, Zr), Zc = vi(hn, et, ne, mn, _t), Jc = gi(Je, At, Zc, et, Ce, le, Ze), el = gc(De, be, un, bc(be, We)), tl = Qa(At, pn, et, un, je, Mc, le, dn), os = new WeakMap, nl = Gi(Qc, tl, ts, le, os, Ze), as = $i(ce), gn = Mi(ce), is = new WeakMap, rl = Pi(is, We), Xn = as ? Sa(De, je, Ai(ce), gn, Si(Ea), Ce, rl, le, Ge, new WeakMap, new WeakMap, yc(Ge, We), ce) : void 0, sl = zi(Je, dc, Ce, le), cs = Li(os), ol = Na(cs), ls = mi(Ne), al = Ci(cs), us = xi(Ne), ds = new WeakMap, il = Ri(ds, ae), cl = ac(ls, Ne, oe, pn, Xr, et, be, un, je, us, gn, il, Tt), ll = tc(oe, cl, be, je, Tt), ul = di(hn, ls, xt, pn, Xr, et, be, al, us, gn, ne, Ge, We, mn, _t, el), dl = Oi(is), fl = vc(ds), Qn = as ? ci(ol, Je, At, ul, ll, Z, dl, Ce, le, Ge, Sc, fl, Oc, Ze) : void 0, hl = qi(oe, je, Cc, nl, Et), fs = "Missing AudioWorklet support. Maybe this is not running in a secure context.", ml = async (e, t, n, r, s) => {
+    }, Uc = Ta(Oe), Dc = Na(Oe), Wc = _i(Ct), Vc = new WeakMap, Fc = Oi(Vc), Fe = mi(new Map, new WeakMap), ce = xc(), ts = Ni(ee), xt = gc(ee, ts, ke), _e = Li(Lr), $e = mc(ce), le = zi($e), ns = new WeakMap, rs = Si(Je), At = Ji(ce), $c = Vi(At), ss = Fi(ce), zc = $i(ce), He = tc(ce), et = ai(Ma(Nr), Ia(Uc, Dc, Jt, Wc, en, ee, Fc, Xe, re, Oe, be, ke, ct), Fe, Wi(Xt, en, ee, re, Ge, be), Ne, Di, je, Ci(Jt, Xt, ee, re, Ge, _e, be, le), Ai(ns, ee, ae), rs, _e, $c, ss, zc, le, He), qc = new WeakSet, Qn = Yi(ce), os = bi(new Uint32Array(1)), Gc = Ac(os, Ne), Hc = Tc(os), Xc = Ba(qc, Fe, je, Qn, $e, bc(Qn), Gc, Hc), mn = Oa(Ce), as = vc(ts, Ye, ke), pn = pi(as), Tt = Zi(mn, Fe, Ic, Nc, Oc, Jr, jc, es, Lc, Mc(hn), Bc), gn = pc(ji(Ye), as), Qc = Wa(pn, Tt, re, gn, xt), Mt = ii(Sa(jr), ns, Pr, ci, ba, Ca, _a, Ea, xa, qt, kr, At, Zr), Yc = Da(et, Qc, Mt, oe, Tt, _e, le, Je), Kc = Qa(et, Ya, Ne, oe, ec(Ce, hn), _e, le, xt), St = Qi(Oe, ss), Zc = Sc(oe, St), vn = lc(At, Zc), Jc = fc(mn, Tt, Ce, St), tt = dc(mn, Fe, Jc, Jr, es), el = yi(pn, tt, re, gn, xt), tl = wi(et, Mt, el, tt, _e, le, Je), nl = wc(Fe, Ce, fn, _c(Ce, $e)), rl = Ka(Mt, vn, tt, fn, je, Rc, le, hn), is = new WeakMap, sl = Xi(Kc, rl, rs, le, is, Je), cs = qi(ce), wn = Ri(ce), ls = new WeakMap, ol = Bi(ls, $e), Yn = cs ? ka(Fe, je, Mi(ce), wn, ki(Aa), _e, ol, le, He, new WeakMap, new WeakMap, Cc(He, $e), ce) : void 0, al = Gi(et, hc, _e, le), us = Ui(is), il = ja(us), ds = gi(Ne), cl = Ei(us), fs = Ti(Ne), hs = new WeakMap, ll = Ii(hs, ae), ul = cc(ds, Ne, oe, vn, Yr, tt, Ce, fn, je, fs, wn, ll, St), dl = rc(oe, ul, Ce, je, St), fl = hi(pn, ds, Tt, vn, Yr, tt, Ce, cl, fs, wn, re, He, $e, gn, xt, nl), hl = Pi(ls), ml = yc(hs), Kn = cs ? ui(il, et, Mt, fl, dl, ee, hl, _e, le, He, kc, ml, Pc, Je) : void 0, pl = Hi(oe, je, Ec, sl, At), ms = "Missing AudioWorklet support. Maybe this is not running in a secure context.", gl = async (e, t, n, r, s) => {
         const {
             encoderId: o,
             port: a
-        } = await xr(s, t.sampleRate);
-        if (Qn === void 0) throw new Error(fs);
-        const c = new Xc(t, {
+        } = await Tr(s, t.sampleRate);
+        if (Kn === void 0) throw new Error(ms);
+        const c = new Yc(t, {
                 buffer: e
             }),
-            i = new sl(t, {
+            i = new al(t, {
                 mediaStream: r
             }),
-            l = ma(Qn, t, {
+            l = ga(Kn, t, {
                 channelCount: n
             });
         return {
@@ -4137,22 +4137,22 @@ const qr = (e, t, n, r, s) => {
             port: a,
             recorderAudioWorkletNode: l
         }
-    }, pl = (e, t, n, r) => (s, o, a) => {
+    }, vl = (e, t, n, r) => (s, o, a) => {
         var c;
         const i = (c = o.getAudioTracks()[0]) === null || c === void 0 ? void 0 : c.getSettings().sampleRate,
-            l = new hl({
+            l = new pl({
                 latencyHint: "playback",
                 sampleRate: i
             }),
             d = Math.max(1024, Math.ceil(l.baseLatency * l.sampleRate)),
-            u = new Gc({
+            u = new Xc({
                 length: d,
                 sampleRate: l.sampleRate
             }),
             h = [],
-            p = ha(C => {
-                if (Xn === void 0) throw new Error(fs);
-                return Xn(l, C)
+            p = pa(C => {
+                if (Yn === void 0) throw new Error(ms);
+                return Yn(l, C)
             });
         let m = null,
             g = null,
@@ -4166,22 +4166,22 @@ const qr = (e, t, n, r, s) => {
                     })
                 }))
             },
-            T = async (C, S) => {
-                const j = await it(C, S);
-                v === null ? h.push(...j) : (b(j), w = T(C, S))
-            }, E = () => (y = !0, l.resume()), x = () => {
+            M = async (C, R) => {
+                const O = await lt(C, R);
+                v === null ? h.push(...O) : (b(O), w = M(C, R))
+            }, _ = () => (y = !0, l.resume()), x = () => {
                 v !== null && (m !== null && (o.removeEventListener("addtrack", m), o.removeEventListener("removetrack", m)), g !== null && clearTimeout(g), v.then(async ({
                     constantSourceNode: C,
-                    encoderId: S,
-                    mediaStreamAudioSourceNode: j,
-                    recorderAudioWorkletNode: R
+                    encoderId: R,
+                    mediaStreamAudioSourceNode: O,
+                    recorderAudioWorkletNode: S
                 }) => {
-                    w !== null && (w.catch(() => {}), w = null), await R.stop(), j.disconnect(R), C.stop();
-                    const D = await it(S, null);
-                    v === null && await _(), b([...h, ...D]), h.length = 0, s.dispatchEvent(new Event("stop"))
+                    w !== null && (w.catch(() => {}), w = null), await S.stop(), O.disconnect(S), C.stop();
+                    const L = await lt(R, null);
+                    v === null && await E(), b([...h, ...L]), h.length = 0, s.dispatchEvent(new Event("stop"))
                 }), v = null)
-            }, _ = () => (y = !1, l.suspend());
-        return _(), {
+            }, E = () => (y = !1, l.suspend());
+        return E(), {
             get mimeType() {
                 return a
             },
@@ -4190,53 +4190,53 @@ const qr = (e, t, n, r, s) => {
             },
             pause() {
                 if (v === null) throw n();
-                y && (_(), s.dispatchEvent(new Event("pause")))
+                y && (E(), s.dispatchEvent(new Event("pause")))
             },
             resume() {
                 if (v === null) throw n();
-                y || (E(), s.dispatchEvent(new Event("resume")))
+                y || (_(), s.dispatchEvent(new Event("resume")))
             },
             start(C) {
-                var S;
+                var R;
                 if (v !== null) throw n();
                 if (o.getVideoTracks().length > 0) throw r();
                 s.dispatchEvent(new Event("start"));
-                const j = o.getAudioTracks(),
-                    R = j.length === 0 ? 2 : (S = j[0].getSettings().channelCount) !== null && S !== void 0 ? S : 2;
-                v = Promise.all([E(), p.then(() => ml(u, l, R, o, a))]).then(async ([, {
+                const O = o.getAudioTracks(),
+                    S = O.length === 0 ? 2 : (R = O[0].getSettings().channelCount) !== null && R !== void 0 ? R : 2;
+                v = Promise.all([_(), p.then(() => gl(u, l, S, o, a))]).then(async ([, {
                     audioBufferSourceNode: P,
-                    encoderId: W,
-                    mediaStreamAudioSourceNode: L,
-                    port: M,
-                    recorderAudioWorkletNode: B
+                    encoderId: D,
+                    mediaStreamAudioSourceNode: B,
+                    port: j,
+                    recorderAudioWorkletNode: U
                 }]) => {
-                    L.connect(B), await new Promise(I => {
-                        P.onended = I, P.connect(B), P.start(l.currentTime + d / l.sampleRate)
-                    }), P.disconnect(B);
-                    const k = new Jc(l, {
+                    B.connect(U), await new Promise(k => {
+                        P.onended = k, P.connect(U), P.start(l.currentTime + d / l.sampleRate)
+                    }), P.disconnect(U);
+                    const N = new tl(l, {
                         offset: 0
                     });
-                    return k.onended = () => k.disconnect(), k.connect(l.destination), k.start(), await B.record(M), C !== void 0 && (w = T(W, C)), {
-                        constantSourceNode: k,
-                        encoderId: W,
-                        mediaStreamAudioSourceNode: L,
-                        recorderAudioWorkletNode: B
+                    return N.onended = () => N.disconnect(), N.connect(l.destination), N.start(), await U.record(j), C !== void 0 && (w = M(D, C)), {
+                        constantSourceNode: N,
+                        encoderId: D,
+                        mediaStreamAudioSourceNode: B,
+                        recorderAudioWorkletNode: U
                     }
                 });
-                const D = o.getTracks();
+                const L = o.getTracks();
                 m = () => {
                     x(), s.dispatchEvent(new ErrorEvent("error", {
                         error: t()
                     }))
                 }, o.addEventListener("addtrack", m), o.addEventListener("removetrack", m), g = setInterval(() => {
                     const P = o.getTracks();
-                    (P.length !== D.length || P.some((W, L) => W !== D[L])) && m !== null && m()
+                    (P.length !== L.length || P.some((D, B) => D !== L[B])) && m !== null && m()
                 }, 1e3)
             },
             stop: x
         }
     };
-class Bt {
+class Dt {
     constructor(t, n = 0, r) {
         if (n < 0 || r !== void 0 && r < 0) throw new RangeError;
         const s = t.reduce((d, u) => d + u.byteLength, 0);
@@ -4331,7 +4331,7 @@ class Bt {
         throw new RangeError
     }
 }
-const gl = (e, t, n, r, s) => (o, a, c, i) => {
+const wl = (e, t, n, r, s) => (o, a, c, i) => {
         const l = c.getAudioTracks(),
             d = [],
             u = l.length === 0 ? void 0 : l[0].getSettings().channelCount,
@@ -4348,9 +4348,9 @@ const gl = (e, t, n, r, s) => (o, a, c, i) => {
                     })
                 }))
             },
-            w = async (b, T) => {
-                const E = await it(b, T);
-                h.state === "inactive" ? d.push(...E) : (v(E), m = w(b, T))
+            w = async (b, M) => {
+                const _ = await lt(b, M);
+                h.state === "inactive" ? d.push(..._) : (v(_), m = w(b, M))
             }, y = () => {
                 h.state !== "inactive" && (m !== null && (m.catch(() => {}), m = null), g(), g = () => {}, h.stop())
             };
@@ -4375,72 +4375,72 @@ const gl = (e, t, n, r, s) => (o, a, c, i) => {
                 if (c.getVideoTracks().length > 0) throw n();
                 if (h.state === "inactive") {
                     if (p === void 0) throw new Error("The sampleRate is not defined.");
-                    let T = !1,
-                        E = !1,
+                    let M = !1,
+                        _ = !1,
                         x = 0,
-                        _ = xr(i, p);
+                        E = Tr(i, p);
                     g = () => {
-                        E = !0
+                        _ = !0
                     };
-                    const C = Mr(h, "dataavailable")(({
-                        data: S
+                    const C = Rr(h, "dataavailable")(({
+                        data: R
                     }) => {
-                        x += 1, _ = _.then(async ({
-                            dataView: j = null,
-                            elementType: R = null,
-                            encoderId: D,
+                        x += 1, E = E.then(async ({
+                            dataView: O = null,
+                            elementType: S = null,
+                            encoderId: L,
                             port: P
                         }) => {
-                            const W = await S.arrayBuffer();
+                            const D = await R.arrayBuffer();
                             x -= 1;
-                            const L = j === null ? new Bt([W]) : new Bt([...j.buffers, W], j.byteOffset);
-                            if (!T && h.state === "recording" && !E) {
-                                const O = s(L, 0);
-                                if (O === null) return {
-                                    dataView: L,
-                                    elementType: R,
-                                    encoderId: D,
+                            const B = O === null ? new Dt([D]) : new Dt([...O.buffers, D], O.byteOffset);
+                            if (!M && h.state === "recording" && !_) {
+                                const T = s(B, 0);
+                                if (T === null) return {
+                                    dataView: B,
+                                    elementType: S,
+                                    encoderId: L,
                                     port: P
                                 };
                                 const {
-                                    value: U
-                                } = O;
-                                if (U !== 172351395) return {
-                                    dataView: j,
-                                    elementType: R,
-                                    encoderId: D,
+                                    value: W
+                                } = T;
+                                if (W !== 172351395) return {
+                                    dataView: O,
+                                    elementType: S,
+                                    encoderId: L,
                                     port: P
                                 };
-                                T = !0
+                                M = !0
                             }
                             const {
-                                currentElementType: M,
-                                offset: B,
-                                contents: k
-                            } = r(L, R, u), I = B < L.byteLength ? new Bt(L.buffers, L.byteOffset + B) : null;
-                            return k.forEach(O => P.postMessage(O, O.map(({
-                                buffer: U
-                            }) => U))), x === 0 && (h.state === "inactive" || E) && (it(D, null).then(O => {
-                                v([...d, ...O]), d.length = 0, o.dispatchEvent(new Event("stop"))
+                                currentElementType: j,
+                                offset: U,
+                                contents: N
+                            } = r(B, S, u), k = U < B.byteLength ? new Dt(B.buffers, B.byteOffset + U) : null;
+                            return N.forEach(T => P.postMessage(T, T.map(({
+                                buffer: W
+                            }) => W))), x === 0 && (h.state === "inactive" || _) && (lt(L, null).then(T => {
+                                v([...d, ...T]), d.length = 0, o.dispatchEvent(new Event("stop"))
                             }), P.postMessage([]), P.close(), C()), {
-                                dataView: I,
-                                elementType: M,
-                                encoderId: D,
+                                dataView: k,
+                                elementType: j,
+                                encoderId: L,
                                 port: P
                             }
                         })
                     });
-                    b !== void 0 && _.then(({
-                        encoderId: S
-                    }) => m = w(S, b))
+                    b !== void 0 && E.then(({
+                        encoderId: R
+                    }) => m = w(R, b))
                 }
                 h.start(100)
             },
             stop: y
         }
     },
-    vl = () => typeof window > "u" ? null : window,
-    hs = (e, t) => {
+    yl = () => typeof window > "u" ? null : window,
+    ps = (e, t) => {
         if (t >= e.byteLength) return null;
         const n = e.getUint8(t);
         if (n > 127) return 1;
@@ -4451,10 +4451,10 @@ const gl = (e, t, n, r, s) => (o, a, c, i) => {
         if (n > 3) return 6;
         if (n > 1) return 7;
         if (n > 0) return 8;
-        const r = hs(e, t + 1);
+        const r = ps(e, t + 1);
         return r === null ? null : r + 8
     },
-    wl = (e, t) => n => {
+    bl = (e, t) => n => {
         const r = {
             value: e
         };
@@ -4463,31 +4463,31 @@ const gl = (e, t, n, r, s) => (o, a, c, i) => {
             target: r
         }), typeof t == "function" ? t.call(e, n) : t.handleEvent.call(e, n)
     },
-    ms = [],
-    Mt = vl(),
-    yl = Do(Mt),
-    ps = No(yl),
-    bl = pl(ps, rn, Lo, gt),
-    vn = zo(hs),
-    Cl = Fo(vn),
-    _l = $o(vn),
-    El = Oo(Cl, _l),
-    xl = gl(ps, rn, gt, El, vn),
-    Al = Po(Mt),
-    Tl = Vo(Mt),
-    Ml = Wo(rn, gt),
-    Sl = Uo(Ml, gt, bl, xl, ms, jo(Al, wl), Tl),
-    Rl = () => Bo(Mt),
-    kl = async e => {
-        ms.push(await Io(e))
-    }, Il = Object.freeze(Object.defineProperty({
+    gs = [],
+    Rt = yl(),
+    Cl = Vo(Rt),
+    vs = jo(Cl),
+    _l = vl(vs, on, Uo, wt),
+    yn = Go(ps),
+    El = zo(yn),
+    xl = qo(yn),
+    Al = Po(El, xl),
+    Tl = wl(vs, on, wt, Al, yn),
+    Ml = Bo(Rt),
+    Sl = $o(Rt),
+    Rl = Fo(on, wt),
+    kl = Wo(Rl, wt, _l, Tl, gs, Lo(Ml, bl), Sl),
+    Il = () => Do(Rt),
+    Nl = async e => {
+        gs.push(await Oo(e))
+    }, Ol = Object.freeze(Object.defineProperty({
         __proto__: null,
-        MediaRecorder: Sl,
-        isSupported: Rl,
-        register: kl
+        MediaRecorder: kl,
+        isSupported: Il,
+        register: Nl
     }, Symbol.toStringTag, {
         value: "Module"
-    })), Nl = ar(Il), Ol = _r({
+    })), jl = cr(Ol), Pl = xr({
         characterize: ({
             call: e
         }) => () => e("characterize"),
@@ -4506,31 +4506,31 @@ const gl = (e, t, n, r, s) => (o, a, c, i) => {
                 typedArrays: r
             }, r.map(({
                 buffer: s
-            }) => s))
+            }) => s).filter(s => s instanceof ArrayBuffer))
         }
-    }), jl = e => {
+    }), Ll = e => {
         const t = new Worker(e);
-        return Ol(t)
-    }, Pl = `(()=>{var e={455:function(e,t){!function(e){"use strict";var t=function(e){return function(t){var r=e(t);return t.add(r),r}},r=function(e){return function(t,r){return e.set(t,r),r}},n=void 0===Number.MAX_SAFE_INTEGER?9007199254740991:Number.MAX_SAFE_INTEGER,s=536870912,a=2*s,o=function(e,t){return function(r){var o=t.get(r),i=void 0===o?r.size:o<a?o+1:0;if(!r.has(i))return e(r,i);if(r.size<s){for(;r.has(i);)i=Math.floor(Math.random()*a);return e(r,i)}if(r.size>n)throw new Error("Congratulations, you created a collection of unique numbers which uses all available integers!");for(;r.has(i);)i=Math.floor(Math.random()*n);return e(r,i)}},i=new WeakMap,c=r(i),l=o(c,i),u=t(l);e.addUniqueNumber=u,e.generateUniqueNumber=l}(t)}},t={};function r(n){var s=t[n];if(void 0!==s)return s.exports;var a=t[n]={exports:{}};return e[n].call(a.exports,a,a.exports,r),a.exports}(()=>{"use strict";const e=-32603,t=-32602,n=-32601,s=(e,t)=>Object.assign(new Error(e),{status:t}),a=t=>s('The handler of the method called "'.concat(t,'" returned an unexpected result.'),e),o=(t,r)=>async({data:{id:o,method:i,params:c}})=>{const l=r[i];try{if(void 0===l)throw(e=>s('The requested method called "'.concat(e,'" is not supported.'),n))(i);const r=void 0===c?l():l(c);if(void 0===r)throw(t=>s('The handler of the method called "'.concat(t,'" returned no required result.'),e))(i);const u=r instanceof Promise?await r:r;if(null===o){if(void 0!==u.result)throw a(i)}else{if(void 0===u.result)throw a(i);const{result:e,transferables:r=[]}=u;t.postMessage({id:o,result:e},r)}}catch(e){const{message:r,status:n=-32603}=e;t.postMessage({error:{code:n,message:r},id:o})}};var i=r(455);const c=new Map,l=(e,r,n)=>({...r,connect:({port:t})=>{t.start();const n=e(t,r),s=(0,i.generateUniqueNumber)(c);return c.set(s,(()=>{n(),t.close(),c.delete(s)})),{result:s}},disconnect:({portId:e})=>{const r=c.get(e);if(void 0===r)throw(e=>s('The specified parameter called "portId" with the given value "'.concat(e,'" does not identify a port connected to this worker.'),t))(e);return r(),{result:null}},isSupported:async()=>{if(await new Promise((e=>{const t=new ArrayBuffer(0),{port1:r,port2:n}=new MessageChannel;r.onmessage=({data:t})=>e(null!==t),n.postMessage(t,[t])}))){const e=n();return{result:e instanceof Promise?await e:e}}return{result:!1}}}),u=(e,t,r=()=>!0)=>{const n=l(u,t,r),s=o(e,n);return e.addEventListener("message",s),()=>e.removeEventListener("message",s)},d=e=>e.reduce(((e,t)=>e+t.length),0),h=(e,t)=>{const r=[];let n=0;e:for(;n<t;){const t=e.length;for(let s=0;s<t;s+=1){const t=e[s];void 0===r[s]&&(r[s]=[]);const a=t.shift();if(void 0===a)break e;r[s].push(a),0===s&&(n+=a.length)}}if(n>t){const s=n-t;r.forEach(((t,r)=>{const n=t.pop(),a=n.length-s;t.push(n.subarray(0,a)),e[r].unshift(n.subarray(a))}))}return r},f=new Map,m=(e=>(t,r,n)=>{const s=e.get(t);if(void 0===s){const s={channelDataArrays:n.map((e=>[e])),isComplete:!0,sampleRate:r};return e.set(t,s),s}return s.channelDataArrays.forEach(((e,t)=>e.push(n[t]))),s})(f),p=((e,t)=>(r,n,s,a)=>{const o=s>>3,i="subsequent"===n?0:44,c=r.length,l=e(r[0]),u=new ArrayBuffer(l*c*o+i),d=new DataView(u);return"subsequent"!==n&&t(d,s,c,"complete"===n?l:Number.POSITIVE_INFINITY,a),r.forEach(((e,t)=>{let r=i+t*o;e.forEach((e=>{const t=e.length;for(let n=0;n<t;n+=1){const t=e[n];d.setInt16(r,t<0?32768*Math.max(-1,t):32767*Math.min(1,t),!0),r+=c*o}}))})),[u]})(d,((e,t,r,n,s)=>{const a=t>>3,o=Math.min(n*r*a,4294967251);e.setUint32(0,1380533830),e.setUint32(4,o+36,!0),e.setUint32(8,1463899717),e.setUint32(12,1718449184),e.setUint32(16,16,!0),e.setUint16(20,1,!0),e.setUint16(22,r,!0),e.setUint32(24,s,!0),e.setUint32(28,s*r*a,!0),e.setUint16(32,r*a,!0),e.setUint16(34,t,!0),e.setUint32(36,1684108385),e.setUint32(40,o,!0)})),v=new Map;u(self,{characterize:()=>({result:/^audio\\/wav$/}),encode:({recordingId:e,timeslice:t})=>{const r=v.get(e);void 0!==r&&(v.delete(e),r.reject(new Error("Another request was made to initiate an encoding.")));const n=f.get(e);if(null!==t){if(void 0===n||d(n.channelDataArrays[0])*(1e3/n.sampleRate)<t)return new Promise(((r,n)=>{v.set(e,{reject:n,resolve:r,timeslice:t})}));const r=h(n.channelDataArrays,Math.ceil(t*(n.sampleRate/1e3))),s=p(r,n.isComplete?"initial":"subsequent",16,n.sampleRate);return n.isComplete=!1,{result:s,transferables:s}}if(void 0!==n){const t=p(n.channelDataArrays,n.isComplete?"complete":"subsequent",16,n.sampleRate);return f.delete(e),{result:t,transferables:t}}return{result:[],transferables:[]}},record:({recordingId:e,sampleRate:t,typedArrays:r})=>{const n=m(e,t,r),s=v.get(e);if(void 0!==s&&d(n.channelDataArrays[0])*(1e3/t)>=s.timeslice){const r=h(n.channelDataArrays,Math.ceil(s.timeslice*(t/1e3))),a=p(r,n.isComplete?"initial":"subsequent",16,t);n.isComplete=!1,v.delete(e),s.resolve({result:a,transferables:a})}return{result:null}}})})()})();`, Ll = new Blob([Pl], {
+        return Pl(t)
+    }, Bl = `(()=>{var e={455:function(e,t){!function(e){"use strict";var t=function(e){return function(t){var r=e(t);return t.add(r),r}},r=function(e){return function(t,r){return e.set(t,r),r}},n=void 0===Number.MAX_SAFE_INTEGER?9007199254740991:Number.MAX_SAFE_INTEGER,s=536870912,a=2*s,o=function(e,t){return function(r){var o=t.get(r),i=void 0===o?r.size:o<a?o+1:0;if(!r.has(i))return e(r,i);if(r.size<s){for(;r.has(i);)i=Math.floor(Math.random()*a);return e(r,i)}if(r.size>n)throw new Error("Congratulations, you created a collection of unique numbers which uses all available integers!");for(;r.has(i);)i=Math.floor(Math.random()*n);return e(r,i)}},i=new WeakMap,c=r(i),l=o(c,i),u=t(l);e.addUniqueNumber=u,e.generateUniqueNumber=l}(t)}},t={};function r(n){var s=t[n];if(void 0!==s)return s.exports;var a=t[n]={exports:{}};return e[n].call(a.exports,a,a.exports,r),a.exports}(()=>{"use strict";const e=-32603,t=-32602,n=-32601,s=(e,t)=>Object.assign(new Error(e),{status:t}),a=t=>s('The handler of the method called "'.concat(t,'" returned an unexpected result.'),e),o=(t,r)=>async({data:{id:o,method:i,params:c}})=>{const l=r[i];try{if(void 0===l)throw(e=>s('The requested method called "'.concat(e,'" is not supported.'),n))(i);const r=void 0===c?l():l(c);if(void 0===r)throw(t=>s('The handler of the method called "'.concat(t,'" returned no required result.'),e))(i);const u=r instanceof Promise?await r:r;if(null===o){if(void 0!==u.result)throw a(i)}else{if(void 0===u.result)throw a(i);const{result:e,transferables:r=[]}=u;t.postMessage({id:o,result:e},r)}}catch(e){const{message:r,status:n=-32603}=e;t.postMessage({error:{code:n,message:r},id:o})}};var i=r(455);const c=new Map,l=(e,r,n)=>({...r,connect:({port:t})=>{t.start();const n=e(t,r),s=(0,i.generateUniqueNumber)(c);return c.set(s,()=>{n(),t.close(),c.delete(s)}),{result:s}},disconnect:({portId:e})=>{const r=c.get(e);if(void 0===r)throw(e=>s('The specified parameter called "portId" with the given value "'.concat(e,'" does not identify a port connected to this worker.'),t))(e);return r(),{result:null}},isSupported:async()=>{if(await new Promise(e=>{const t=new ArrayBuffer(0),{port1:r,port2:n}=new MessageChannel;r.onmessage=({data:t})=>e(null!==t),n.postMessage(t,[t])})){const e=n();return{result:e instanceof Promise?await e:e}}return{result:!1}}}),u=(e,t,r=()=>!0)=>{const n=l(u,t,r),s=o(e,n);return e.addEventListener("message",s),()=>e.removeEventListener("message",s)},d=e=>e.reduce((e,t)=>e+t.length,0),h=(e,t)=>{const r=[];let n=0;e:for(;n<t;){const t=e.length;for(let s=0;s<t;s+=1){const t=e[s];void 0===r[s]&&(r[s]=[]);const a=t.shift();if(void 0===a)break e;r[s].push(a),0===s&&(n+=a.length)}}if(n>t){const s=n-t;r.forEach((t,r)=>{const n=t.pop(),a=n.length-s;t.push(n.subarray(0,a)),e[r].unshift(n.subarray(a))})}return r},f=new Map,m=(e=>(t,r,n)=>{const s=e.get(t);if(void 0===s){const s={channelDataArrays:n.map(e=>[e]),isComplete:!0,sampleRate:r};return e.set(t,s),s}return s.channelDataArrays.forEach((e,t)=>e.push(n[t])),s})(f),p=((e,t)=>(r,n,s,a)=>{const o=s>>3,i="subsequent"===n?0:44,c=r.length,l=e(r[0]),u=new ArrayBuffer(l*c*o+i),d=new DataView(u);return"subsequent"!==n&&t(d,s,c,"complete"===n?l:Number.POSITIVE_INFINITY,a),r.forEach((e,t)=>{let r=i+t*o;e.forEach(e=>{const t=e.length;for(let n=0;n<t;n+=1){const t=e[n];d.setInt16(r,t<0?32768*Math.max(-1,t):32767*Math.min(1,t),!0),r+=c*o}})}),[u]})(d,(e,t,r,n,s)=>{const a=t>>3,o=Math.min(n*r*a,4294967251);e.setUint32(0,1380533830),e.setUint32(4,o+36,!0),e.setUint32(8,1463899717),e.setUint32(12,1718449184),e.setUint32(16,16,!0),e.setUint16(20,1,!0),e.setUint16(22,r,!0),e.setUint32(24,s,!0),e.setUint32(28,s*r*a,!0),e.setUint16(32,r*a,!0),e.setUint16(34,t,!0),e.setUint32(36,1684108385),e.setUint32(40,o,!0)}),v=new Map;u(self,{characterize:()=>({result:/^audio\\/wav$/}),encode:({recordingId:e,timeslice:t})=>{const r=v.get(e);void 0!==r&&(v.delete(e),r.reject(new Error("Another request was made to initiate an encoding.")));const n=f.get(e);if(null!==t){if(void 0===n||d(n.channelDataArrays[0])*(1e3/n.sampleRate)<t)return new Promise((r,n)=>{v.set(e,{reject:n,resolve:r,timeslice:t})});const r=h(n.channelDataArrays,Math.ceil(t*(n.sampleRate/1e3))),s=p(r,n.isComplete?"initial":"subsequent",16,n.sampleRate);return n.isComplete=!1,{result:s,transferables:s}}if(void 0!==n){const t=p(n.channelDataArrays,n.isComplete?"complete":"subsequent",16,n.sampleRate);return f.delete(e),{result:t,transferables:t}}return{result:[],transferables:[]}},record:({recordingId:e,sampleRate:t,typedArrays:r})=>{const n=m(e,t,r),s=v.get(e);if(void 0!==s&&d(n.channelDataArrays[0])*(1e3/t)>=s.timeslice){const r=h(n.channelDataArrays,Math.ceil(s.timeslice*(t/1e3))),a=p(r,n.isComplete?"initial":"subsequent",16,t);n.isComplete=!1,v.delete(e),s.resolve({result:a,transferables:a})}return{result:null}}})})()})();`, Ul = new Blob([Bl], {
         type: "application/javascript; charset=utf-8"
-    }), gs = URL.createObjectURL(Ll), Ve = jl(gs), Bl = Ve.characterize, Ul = Ve.connect, Dl = Ve.disconnect, Wl = Ve.encode, Vl = Ve.isSupported, Fl = Ve.record;
-URL.revokeObjectURL(gs);
-const $l = Object.freeze(Object.defineProperty({
+    }), ws = URL.createObjectURL(Ul), ze = Ll(ws), Dl = ze.characterize, Wl = ze.connect, Vl = ze.disconnect, Fl = ze.encode, $l = ze.isSupported, zl = ze.record;
+URL.revokeObjectURL(ws);
+const ql = Object.freeze(Object.defineProperty({
         __proto__: null,
-        characterize: Bl,
-        connect: Ul,
-        disconnect: Dl,
-        encode: Wl,
-        isSupported: Vl,
-        record: Fl
+        characterize: Dl,
+        connect: Wl,
+        disconnect: Vl,
+        encode: Fl,
+        isSupported: $l,
+        record: zl
     }, Symbol.toStringTag, {
         value: "Module"
     })),
-    zl = ar($l);
-var Yn;
+    Gl = cr(ql);
+var Zn;
 
-function ql() {
-    return Yn || (Yn = 1, function(e) {
+function Hl() {
+    return Zn || (Zn = 1, (function(e) {
         var t = Te && Te.__awaiter || function(l, d, u, h) {
                 function p(m) {
                     return m instanceof u ? m : new u(function(g) {
@@ -4541,16 +4541,16 @@ function ql() {
                     function v(b) {
                         try {
                             y(h.next(b))
-                        } catch (T) {
-                            g(T)
+                        } catch (M) {
+                            g(M)
                         }
                     }
 
                     function w(b) {
                         try {
                             y(h.throw(b))
-                        } catch (T) {
-                            g(T)
+                        } catch (M) {
+                            g(M)
                         }
                     }
 
@@ -4641,9 +4641,9 @@ function ql() {
         Object.defineProperty(e, "__esModule", {
             value: !0
         }), e.ReactMediaRecorder = e.useReactMediaRecorder = e.RecorderErrors = void 0;
-        var r = Nl,
-            s = Cs(),
-            o = zl,
+        var r = jl,
+            s = Es(),
+            o = Gl,
             a;
         (function(l) {
             l.AbortError = "media_aborted", l.NotAllowedError = "permission_denied", l.NotFoundError = "no_specified_media_found", l.NotReadableError = "media_in_use", l.OverconstrainedError = "invalid_media_constraints", l.TypeError = "no_constraints", l.NONE = "", l.NO_RECORDER = "recorder_error"
@@ -4657,211 +4657,214 @@ function ql() {
                 m = p === void 0 ? !1 : p,
                 g = l.selfBrowserSurface,
                 v = g === void 0 ? void 0 : g,
-                w = l.onStop,
-                y = w === void 0 ? function() {
-                    return null
-                } : w,
-                b = l.onStart,
-                T = b === void 0 ? function() {
+                w = l.preferCurrentTab,
+                y = w === void 0 ? !1 : w,
+                b = l.onStop,
+                M = b === void 0 ? function() {
                     return null
                 } : b,
+                _ = l.onStart,
+                x = _ === void 0 ? function() {
+                    return null
+                } : _,
                 E = l.blobPropertyBag,
-                x = l.screen,
-                _ = x === void 0 ? !1 : x,
-                C = l.mediaRecorderOptions,
-                S = C === void 0 ? void 0 : C,
-                j = l.customMediaStream,
-                R = j === void 0 ? null : j,
+                C = l.screen,
+                R = C === void 0 ? !1 : C,
+                O = l.mediaRecorderOptions,
+                S = O === void 0 ? void 0 : O,
+                L = l.customMediaStream,
+                P = L === void 0 ? null : L,
                 D = l.stopStreamsOnStop,
-                P = D === void 0 ? !0 : D,
-                W = l.askPermissionOnMount,
-                L = W === void 0 ? !1 : W,
-                M = (0, s.useRef)(null),
-                B = (0, s.useRef)([]),
-                k = (0, s.useRef)(null),
-                I = (0, s.useState)("idle"),
-                O = I[0],
-                U = I[1],
-                H = (0, s.useState)(!1),
-                pe = H[0],
-                ge = H[1],
-                ue = (0, s.useState)(void 0),
-                z = ue[0],
-                K = ue[1],
-                xe = (0, s.useState)("NONE"),
-                Fe = xe[0],
-                Ae = xe[1],
-                $e = (0, s.useState)(!1),
-                tt = $e[0],
-                St = $e[1];
+                B = D === void 0 ? !0 : D,
+                j = l.askPermissionOnMount,
+                U = j === void 0 ? !1 : j,
+                N = (0, s.useRef)(null),
+                k = (0, s.useRef)([]),
+                T = (0, s.useRef)(null),
+                W = (0, s.useState)("idle"),
+                H = W[0],
+                Y = W[1],
+                ue = (0, s.useState)(!1),
+                pe = ue[0],
+                q = ue[1],
+                Z = (0, s.useState)(void 0),
+                ge = Z[0],
+                Pe = Z[1],
+                Le = (0, s.useState)("NONE"),
+                nt = Le[0],
+                Be = Le[1],
+                rt = (0, s.useState)(!1),
+                kt = rt[0],
+                A = rt[1];
             (0, s.useEffect)(function() {
-                if (!tt) {
-                    var G = function() {
+                if (!kt) {
+                    var Q = function() {
                         return t(d, void 0, void 0, function() {
                             var $;
-                            return n(this, function(Y) {
-                                switch (Y.label) {
+                            return n(this, function(K) {
+                                switch (K.label) {
                                     case 0:
-                                        return Y.trys.push([0, 3, , 4]), $ = r.register, [4, (0, o.connect)()];
+                                        return K.trys.push([0, 3, , 4]), $ = r.register, [4, (0, o.connect)()];
                                     case 1:
-                                        return [4, $.apply(void 0, [Y.sent()])];
+                                        return [4, $.apply(void 0, [K.sent()])];
                                     case 2:
-                                        return Y.sent(), [3, 4];
+                                        return K.sent(), [3, 4];
                                     case 3:
-                                        return Y.sent(), [3, 4];
+                                        return K.sent(), [3, 4];
                                     case 4:
                                         return [2]
                                 }
                             })
                         })
                     };
-                    G(), St(!0)
+                    Q(), A(!0)
                 }
             }, []);
-            var Pe = (0, s.useCallback)(function() {
+            var I = (0, s.useCallback)(function() {
                 return t(d, void 0, void 0, function() {
-                    var G, $, Y, ie, nt;
+                    var Q, $, K, ve, st;
                     return n(this, function(de) {
                         switch (de.label) {
                             case 0:
-                                U("acquiring_media"), G = {
+                                Y("acquiring_media"), Q = {
                                     audio: typeof h == "boolean" ? !!h : h,
                                     video: typeof m == "boolean" ? !!m : m
                                 }, de.label = 1;
                             case 1:
-                                return de.trys.push([1, 9, , 10]), R ? (k.current = R, [3, 8]) : [3, 2];
+                                return de.trys.push([1, 9, , 10]), P ? (T.current = P, [3, 8]) : [3, 2];
                             case 2:
-                                return _ ? [4, window.navigator.mediaDevices.getDisplayMedia({
+                                return R ? [4, window.navigator.mediaDevices.getDisplayMedia({
                                     video: m || !0,
-                                    selfBrowserSurface: v
+                                    selfBrowserSurface: v,
+                                    preferCurrentTab: y
                                 })] : [3, 6];
                             case 3:
                                 return $ = de.sent(), $.getVideoTracks()[0].addEventListener("ended", function() {
-                                    se()
+                                    Ue()
                                 }), h ? [4, window.navigator.mediaDevices.getUserMedia({
                                     audio: h
                                 })] : [3, 5];
                             case 4:
-                                Y = de.sent(), Y.getAudioTracks().forEach(function(ys) {
-                                    return $.addTrack(ys)
+                                K = de.sent(), K.getAudioTracks().forEach(function(Cs) {
+                                    return $.addTrack(Cs)
                                 }), de.label = 5;
                             case 5:
-                                return k.current = $, [3, 8];
+                                return T.current = $, [3, 8];
                             case 6:
-                                return [4, window.navigator.mediaDevices.getUserMedia(G)];
+                                return [4, window.navigator.mediaDevices.getUserMedia(Q)];
                             case 7:
-                                ie = de.sent(), k.current = ie, de.label = 8;
+                                ve = de.sent(), T.current = ve, de.label = 8;
                             case 8:
-                                return U("idle"), [3, 10];
+                                return Y("idle"), [3, 10];
                             case 9:
-                                return nt = de.sent(), Ae(nt.name), U("idle"), [3, 10];
+                                return st = de.sent(), Be(st.name), Y("idle"), [3, 10];
                             case 10:
                                 return [2]
                         }
                     })
                 })
-            }, [h, m, _]);
+            }, [h, m, R]);
             (0, s.useEffect)(function() {
                 if (!window.MediaRecorder) throw new Error("Unsupported Browser");
-                if (_ && !window.navigator.mediaDevices.getDisplayMedia) throw new Error("This browser doesn't support screen capturing");
-                var G = function($) {
-                    var Y = navigator.mediaDevices.getSupportedConstraints(),
-                        ie = Object.keys($).filter(function(nt) {
-                            return !Y[nt]
+                if (R && !window.navigator.mediaDevices.getDisplayMedia) throw new Error("This browser doesn't support screen capturing");
+                var Q = function($) {
+                    var K = navigator.mediaDevices.getSupportedConstraints(),
+                        ve = Object.keys($).filter(function(st) {
+                            return !K[st]
                         });
-                    ie.length > 0 && console.error("The constraints " + ie.join(",") + " doesn't support on this browser. Please check your ReactMediaRecorder component.")
+                    ve.length > 0 && console.error("The constraints " + ve.join(",") + " doesn't support on this browser. Please check your ReactMediaRecorder component.")
                 };
-                return typeof h == "object" && G(h), typeof m == "object" && G(m), S && S.mimeType && (MediaRecorder.isTypeSupported(S.mimeType) || console.error("The specified MIME type you supplied for MediaRecorder doesn't support this browser")), !k.current && L && Pe(),
+                return typeof h == "object" && Q(h), typeof m == "object" && Q(m), S && S.mimeType && (MediaRecorder.isTypeSupported(S.mimeType) || console.error("The specified MIME type you supplied for MediaRecorder doesn't support this browser")), !T.current && U && I(),
                     function() {
-                        if (k.current) {
-                            var $ = k.current.getTracks();
-                            $.forEach(function(Y) {
-                                return Y.clone().stop()
+                        if (T.current) {
+                            var $ = T.current.getTracks();
+                            $.forEach(function(K) {
+                                return K.clone().stop()
                             })
                         }
                     }
-            }, [h, _, m, Pe, S, L]);
-            var A = function() {
+            }, [h, R, m, I, S, U]);
+            var X = function() {
                     return t(d, void 0, void 0, function() {
-                        var G;
+                        var Q;
                         return n(this, function($) {
                             switch ($.label) {
                                 case 0:
-                                    return Ae("NONE"), k.current ? [3, 2] : [4, Pe()];
+                                    return Be("NONE"), T.current ? [3, 2] : [4, I()];
                                 case 1:
                                     $.sent(), $.label = 2;
                                 case 2:
-                                    return k.current ? (G = k.current.getTracks().some(function(Y) {
-                                        return Y.readyState === "ended"
-                                    }), G ? [4, Pe()] : [3, 4]) : [3, 5];
+                                    return T.current ? (Q = T.current.getTracks().some(function(K) {
+                                        return K.readyState === "ended"
+                                    }), Q ? [4, I()] : [3, 4]) : [3, 5];
                                 case 3:
                                     $.sent(), $.label = 4;
                                 case 4:
-                                    if (!k.current.active) return [2];
-                                    M.current = new r.MediaRecorder(k.current, S || void 0), M.current.ondataavailable = N, M.current.onstop = q, M.current.onstart = Q, M.current.onerror = function() {
-                                        Ae("NO_RECORDER"), U("idle")
-                                    }, M.current.start(), U("recording"), $.label = 5;
+                                    if (!T.current.active) return [2];
+                                    N.current = new r.MediaRecorder(T.current, S || void 0), N.current.ondataavailable = z, N.current.onstop = G, N.current.onstart = F, N.current.onerror = function() {
+                                        Be("NO_RECORDER"), Y("idle")
+                                    }, N.current.start(), Y("recording"), $.label = 5;
                                 case 5:
                                     return [2]
                             }
                         })
                     })
                 },
-                N = function(G) {
-                    var $ = G.data;
-                    B.current.push($)
+                z = function(Q) {
+                    var $ = Q.data;
+                    k.current.push($)
                 },
-                Q = function() {
-                    T()
+                F = function() {
+                    x()
                 },
-                q = function() {
-                    var G = B.current[0],
+                G = function() {
+                    var Q = k.current[0],
                         $ = Object.assign({
-                            type: G.type
+                            type: Q.type
                         }, E || (m ? {
                             type: "video/mp4"
                         } : {
                             type: "audio/wav"
                         })),
-                        Y = new Blob(B.current, $),
-                        ie = URL.createObjectURL(Y);
-                    U("stopped"), K(ie), y(ie, Y)
+                        K = new Blob(k.current, $),
+                        ve = URL.createObjectURL(K);
+                    Y("stopped"), Pe(ve), M(ve, K)
                 },
-                V = function(G) {
-                    ge(G), k.current && k.current.getAudioTracks().forEach(function($) {
-                        return $.enabled = !G
+                J = function(Q) {
+                    q(Q), T.current && T.current.getAudioTracks().forEach(function($) {
+                        return $.enabled = !Q
                     })
                 },
-                X = function() {
-                    M.current && M.current.state === "recording" && (U("paused"), M.current.pause())
+                ie = function() {
+                    N.current && N.current.state === "recording" && (Y("paused"), N.current.pause())
                 },
-                J = function() {
-                    M.current && M.current.state === "paused" && (U("recording"), M.current.resume())
+                Ae = function() {
+                    N.current && N.current.state === "paused" && (Y("recording"), N.current.resume())
                 },
-                se = function() {
-                    M.current && M.current.state !== "inactive" && (U("stopping"), M.current.stop(), P && k.current && k.current.getTracks().forEach(function(G) {
-                        return G.stop()
-                    }), B.current = [])
+                Ue = function() {
+                    N.current && N.current.state !== "inactive" && (Y("stopping"), N.current.stop(), B && T.current && T.current.getTracks().forEach(function(Q) {
+                        return Q.stop()
+                    }), k.current = [])
                 };
             return {
-                error: a[Fe],
+                error: a[nt],
                 muteAudio: function() {
-                    return V(!0)
+                    return J(!0)
                 },
                 unMuteAudio: function() {
-                    return V(!1)
+                    return J(!1)
                 },
-                startRecording: A,
-                pauseRecording: X,
-                resumeRecording: J,
-                stopRecording: se,
-                mediaBlobUrl: z,
-                status: O,
+                startRecording: X,
+                pauseRecording: ie,
+                resumeRecording: Ae,
+                stopRecording: Ue,
+                mediaBlobUrl: ge,
+                status: H,
                 isAudioMuted: pe,
-                previewStream: k.current ? new MediaStream(k.current.getVideoTracks()) : null,
-                previewAudioStream: k.current ? new MediaStream(k.current.getAudioTracks()) : null,
+                previewStream: T.current ? new MediaStream(T.current.getVideoTracks()) : null,
+                previewAudioStream: T.current ? new MediaStream(T.current.getAudioTracks()) : null,
                 clearBlobUrl: function() {
-                    z && URL.revokeObjectURL(z), K(void 0), U("idle")
+                    ge && URL.revokeObjectURL(ge), Pe(void 0), Y("idle")
                 }
             }
         }
@@ -4870,50 +4873,50 @@ function ql() {
             return l.render(c(l))
         };
         e.ReactMediaRecorder = i
-    }(Te)), Te
+    })(Te)), Te
 }
-var Ut, Kn;
+var Wt, Jn;
 
-function Gl() {
-    return Kn || (Kn = 1, Ut = ql()), Ut
+function Xl() {
+    return Jn || (Jn = 1, Wt = Hl()), Wt
 }
-var Hl = Gl();
-const Xl = 3,
-    Zn = {
+var Ql = Xl();
+const Yl = 3,
+    er = {
         height: 111,
         width: "100%"
     },
-    Ql = e => {
-        const [t, n] = F.useState(!1), {
+    Kl = e => {
+        const [t, n] = V.useState(!1), {
             status: r,
             startRecording: s,
             stopRecording: o,
             mediaBlobUrl: a
-        } = Hl.useReactMediaRecorder({
+        } = Ql.useReactMediaRecorder({
             video: !1,
             audio: !0
         }), c = u => {
             t || fetch(u).then(h => h.blob()).then(h => {
                 const p = new File([h], `recording-${Date.now()}.wav`);
-                if (p.size / 1e6 > Xl) {
-                    _s({
+                if (p.size / 1e6 > Yl) {
+                    xs({
                         title: "Audio too long",
                         content: "Please record a shorter clip"
                     });
                     return
                 }
                 const m = new FormData;
-                m.append("file", p), n(!0), Jt({
+                m.append("file", p), n(!0), tn({
                     url: "/api/games/audio/add",
                     method: "post",
                     data: m,
                     success: g => e.onAudioChanged(g.url),
-                    error: g => Ft.error("Error uploading. Please try again."),
+                    error: g => zt.error("Error uploading. Please try again."),
                     both: () => n(!1)
                 })
             }).catch()
         }, i = () => {
-            new Audio(lr(e.audio)).play()
+            new Audio(dr(e.audio)).play()
         }, l = () => e.onAudioChanged(""), d = () => e.audio ? f.jsxs(f.Fragment, {
             children: [f.jsx(he, {
                 style: {
@@ -4927,21 +4930,21 @@ const Xl = 3,
                     marginTop: -8
                 },
                 children: "This audio will be played each time a student goes to answer this question."
-            }), f.jsx(Wt, {}), f.jsxs("div", {
+            }), f.jsx(Ft, {}), f.jsxs("div", {
                 className: "flex vc",
-                children: [f.jsx(ee, {
+                children: [f.jsx(te, {
                     size: "large",
                     type: "primary",
                     onClick: i,
-                    icon: f.jsx(Rs, {}),
+                    icon: f.jsx(Is, {}),
                     style: {
                         marginRight: 5
                     },
                     children: "Play Audio"
-                }), f.jsx(ee, {
+                }), f.jsx(te, {
                     size: "large",
                     type: "dashed",
-                    icon: f.jsx(fr, {}),
+                    icon: f.jsx(mr, {}),
                     onClick: l,
                     children: "Remove Audio"
                 })]
@@ -4961,7 +4964,7 @@ const Xl = 3,
                     lineHeight: 1.2
                 },
                 children: "Record your voice! It will be played each time a student goes to answer this question."
-            }), f.jsx(Wt, {}), f.jsxs("div", {
+            }), f.jsx(Ft, {}), f.jsxs("div", {
                 children: [a && r !== "recording" && f.jsxs(f.Fragment, {
                     children: [f.jsx(he, {
                         style: {
@@ -4977,21 +4980,21 @@ const Xl = 3,
                         style: {
                             marginTop: 10
                         },
-                        children: [f.jsx(ee, {
+                        children: [f.jsx(te, {
                             size: "large",
                             type: "primary",
-                            icon: f.jsx(Ss, {}),
+                            icon: f.jsx(ks, {}),
                             loading: t,
                             style: {
                                 marginRight: 10
                             },
                             onClick: () => c(a),
                             children: "Save"
-                        }), f.jsx(ee, {
+                        }), f.jsx(te, {
                             onClick: s,
                             size: "large",
                             type: "dashed",
-                            icon: f.jsx(Vt, {}),
+                            icon: f.jsx($t, {}),
                             children: "New Recording"
                         })]
                     }), f.jsx("div", {
@@ -4999,10 +5002,10 @@ const Xl = 3,
                             height: 10
                         }
                     })]
-                }), r === "idle" && f.jsx(ee, {
+                }), r === "idle" && f.jsx(te, {
                     onClick: s,
-                    style: Zn,
-                    icon: f.jsx(Vt, {}),
+                    style: er,
+                    icon: f.jsx($t, {}),
                     type: "dashed",
                     children: "Start Recording"
                 }), r === "recording" && f.jsxs(f.Fragment, {
@@ -5012,17 +5015,17 @@ const Xl = 3,
                             fontSize: 24
                         },
                         children: "Recording..."
-                    }), f.jsx(ee, {
+                    }), f.jsx(te, {
                         onClick: o,
-                        style: Zn,
+                        style: er,
                         type: "dashed",
-                        icon: f.jsx(eo, {}),
+                        icon: f.jsx(no, {}),
                         children: "Stop Recording"
                     })]
                 })]
             })]
         });
-        return f.jsx(ur, {
+        return f.jsx(fr, {
             open: e.visible,
             placement: "right",
             width: 515,
@@ -5037,11 +5040,11 @@ const Xl = 3,
             children: d()
         })
     },
-    Yl = e => {
-        const t = F.useRef(),
-            [n, r] = F.useState(e.latex);
-        return F.useEffect(() => {
-            const s = new ks({
+    Zl = e => {
+        const t = V.useRef(),
+            [n, r] = V.useState(e.latex);
+        return V.useEffect(() => {
+            const s = new Ns({
                 mathVirtualKeyboardPolicy: "auto"
             });
             e.latex && s.setValue(e.latex), document.body.style.setProperty("--keyboard-zindex", "10000"), s.addEventListener("mount", () => {
@@ -5054,18 +5057,18 @@ const Xl = 3,
                     r(c), e.onChange && e.onChange(c)
                 }
             }), t.current.appendChild(s)
-        }, []), f.jsxs(Kl, {
-            children: [f.jsx(Zl, {
+        }, []), f.jsxs(Jl, {
+            children: [f.jsx(eu, {
                 ref: t
-            }), n != null && n.length ? null : f.jsx(Jl, {
+            }), n != null && n.length ? null : f.jsx(tu, {
                 children: "Enter math..."
             })]
         })
     },
-    Kl = re.div`
+    Jl = se.div`
   position: relative;
 `,
-    Zl = re.div`
+    eu = se.div`
   math-field {
     font-size: 32px;
     color: ${me.Black};
@@ -5074,7 +5077,7 @@ const Xl = 3,
     width: 100%;
   }
 `,
-    Jl = re.div`
+    tu = se.div`
   position: absolute;
   top: 27px;
   left: 24px;
@@ -5084,13 +5087,13 @@ const Xl = 3,
   color: #bfbfbf;
   pointer-events: none;
 `,
-    vs = e => {
-        const [t, n] = F.useState(e.latex), r = F.useCallback(() => {
+    ys = e => {
+        const [t, n] = V.useState(e.latex), r = V.useCallback(() => {
             e.onChange(t), e.close()
         }, [t, e.onChange, e.close]), s = () => {
             e.onChange(void 0), e.close()
         };
-        return f.jsx(ir, {
+        return f.jsx(lr, {
             open: e.visible,
             width: 670,
             closable: !1,
@@ -5100,29 +5103,29 @@ const Xl = 3,
             },
             onCancel: e.close,
             footer: f.jsxs(f.Fragment, {
-                children: [f.jsx(ee, {
+                children: [f.jsx(te, {
                     onClick: e.close,
                     children: "Cancel"
-                }), e.latex ? f.jsx(ee, {
+                }), e.latex ? f.jsx(te, {
                     onClick: s,
                     children: "Remove Equation"
-                }) : null, f.jsx(ee, {
+                }) : null, f.jsx(te, {
                     type: "primary",
                     onClick: r,
                     children: e.latex ? "Update" : "Insert"
                 })]
             }),
-            children: f.jsx(Yl, {
+            children: f.jsx(Zl, {
                 latex: e.latex,
                 onChange: n
             })
         })
     },
-    eu = pt(e => {
-        const [t, n, r] = Le(!1), [s, o, a] = Le(!1), [c, i, l] = Le(!1), [d, u, h] = Le(!1), p = y => {
+    nu = vt(e => {
+        const [t, n, r] = De(!1), [s, o, a] = De(!1), [c, i, l] = De(!1), [d, u, h] = De(!1), p = y => {
             e.question.text = y
         }, m = () => {
-            rr() ? o() : i()
+            or() ? o() : i()
         }, g = y => {
             e.question.image = y
         }, v = y => {
@@ -5131,46 +5134,46 @@ const Xl = 3,
             e.question.latex = y
         };
         return f.jsxs(f.Fragment, {
-            children: [f.jsx(cr, {
+            children: [f.jsx(ur, {
                 visible: c,
                 close: l,
                 id: "add audio",
                 copy: {
-                    title: ro,
-                    description: so
+                    title: oo,
+                    description: ao
                 }
-            }), f.jsx(wr, {
+            }), f.jsx(br, {
                 visible: t,
                 close: r,
                 onImageChange: g,
                 currentImage: e.question.image
-            }), f.jsx(Ql, {
+            }), f.jsx(Kl, {
                 visible: s,
                 close: a,
                 onAudioChanged: v,
                 audio: e.question.audio
-            }), f.jsx(vs, {
+            }), f.jsx(ys, {
                 visible: d,
                 close: h,
                 latex: e.question.latex,
                 onChange: w
-            }), f.jsx(tu, {
+            }), f.jsx(ru, {
                 children: "Question"
-            }), f.jsx(vr, {
+            }), f.jsx(yr, {
                 value: e.question.text,
                 onTextChange: p,
                 placeholder: "Ask away...",
                 disabled: !1,
                 onPressEnter: e.onPressEnter
-            }), e.imagesBlocked && e.audioBlocked && e.latexBlocked ? null : f.jsxs(nu, {
-                children: [f.jsx(Dt, {
-                    icon: f.jsx(mr, {}),
+            }), e.imagesBlocked && e.audioBlocked && e.latexBlocked ? null : f.jsxs(su, {
+                children: [f.jsx(Vt, {
+                    icon: f.jsx(gr, {}),
                     label: "Add Photo",
                     onClick: n,
                     disabled: e.imagesBlocked || !!e.question.latex,
                     customContent: e.question.image ? f.jsx("div", {
                         className: "flex maxWidth hc vc",
-                        children: f.jsx(dr, {
+                        children: f.jsx(hr, {
                             image: e.question.image,
                             blockModalOpen: !0,
                             size: 30,
@@ -5181,24 +5184,24 @@ const Xl = 3,
                     style: {
                         width: 6
                     }
-                }), f.jsx(Dt, {
-                    disabled: e.audioBlocked || !window.MediaRecorder || en(),
-                    icon: f.jsx(Vt, {}),
+                }), f.jsx(Vt, {
+                    disabled: e.audioBlocked || !window.MediaRecorder || nn(),
+                    icon: f.jsx($t, {}),
                     label: `${e.question.audio?"":"Add "}Audio`,
                     onClick: m
                 }), f.jsx("div", {
                     style: {
                         width: 6
                     }
-                }), f.jsx(Dt, {
-                    icon: f.jsx(pr, {}),
+                }), f.jsx(Vt, {
+                    icon: f.jsx(vr, {}),
                     disabled: !!e.question.image,
                     label: "Add Equation",
                     customContent: e.question.latex ? f.jsx("div", {
                         style: {
                             cursor: "pointer"
                         },
-                        children: f.jsx(hr, {
+                        children: f.jsx(pr, {
                             latex: e.question.latex
                         })
                     }) : null,
@@ -5211,20 +5214,20 @@ const Xl = 3,
             })]
         })
     }),
-    tu = re.div`
+    ru = se.div`
   color: ${me.Black};
   font-family: ${Ie.SFPro};
   font-weight: ${Me.UltraBold};
   font-size: 23px;
   margin-bottom: 2px;
 `,
-    nu = re.div.attrs({
+    su = se.div.attrs({
         className: "flex maxWidth"
     })`
   margin-top: 8px;
   height: 48px;
 `,
-    Dt = e => f.jsx(ee, {
+    Vt = e => f.jsx(te, {
         disabled: e.disabled,
         style: {
             width: "33.33%",
@@ -5247,7 +5250,7 @@ const Xl = 3,
             })]
         })
     }),
-    ru = e => {
+    ou = e => {
         const t = {
             twoToneColor: e.correct ? "#4caf50" : "#f44336",
             style: {
@@ -5256,27 +5259,27 @@ const Xl = 3,
             },
             onClick: e.onClick
         };
-        return e.correct ? f.jsx(Bs, {
+        return e.correct ? f.jsx(Ds, {
             ...t
-        }) : f.jsx(Ws, {
+        }) : f.jsx(Fs, {
             ...t
         })
     },
-    su = e => {
-        const [t, n, r] = Le(!1), [s, o, a] = Le(!1), c = () => {
+    au = e => {
+        const [t, n, r] = De(!1), [s, o, a] = De(!1), c = () => {
             e.blockChangingCorrect || e.onCorrectChange && e.onCorrectChange(!e.correct)
-        }, i = () => e.image ? f.jsx(dr, {
+        }, i = () => e.image ? f.jsx(hr, {
             image: e.image,
             size: 40,
             blockModalOpen: !0,
             onClick: n,
             showBorder: !0
-        }) : e.latex ? f.jsx(au, {
+        }) : e.latex ? f.jsx(cu, {
             onClick: o,
-            children: f.jsx(hr, {
+            children: f.jsx(pr, {
                 latex: e.latex
             })
-        }) : f.jsx(vr, {
+        }) : f.jsx(yr, {
             value: e.text,
             onPressEnter: e.onPressEnter,
             onTextChange: e.onTextChange,
@@ -5287,30 +5290,30 @@ const Xl = 3,
                 key: "add-image",
                 label: "Add Image",
                 onClick: n,
-                icon: f.jsx(mr, {}),
+                icon: f.jsx(gr, {}),
                 disabled: !e.allowPhoto || !!e.image || !!e.latex || !!e.text
             }, {
                 key: "add-latex",
                 label: "Add Equation",
                 onClick: o,
-                icon: f.jsx(pr, {}),
+                icon: f.jsx(vr, {}),
                 disabled: !e.allowLatex || !!e.image || !!e.latex || !!e.text
             }, {
                 key: "remove",
                 label: "Remove Answer",
                 onClick: e.onRemove,
-                icon: f.jsx(fr, {}),
+                icon: f.jsx(mr, {}),
                 disabled: !e.canRemove,
                 danger: !0
             }];
             return f.jsxs("div", {
                 className: "maxWidth flex vc between",
-                children: [i(), f.jsx(Is, {
+                children: [i(), f.jsx(Os, {
                     menu: {
                         items: u
                     },
                     trigger: ["hover"],
-                    children: f.jsx(Es, {
+                    children: f.jsx(As, {
                         style: {
                             marginLeft: 10,
                             fontSize: 23,
@@ -5319,34 +5322,34 @@ const Xl = 3,
                     })
                 })]
             })
-        }, d = () => f.jsxs(kt, {
-            value: e.textType || Rt.exact,
+        }, d = () => f.jsxs(Nt, {
+            value: e.textType || It.exact,
             size: "large",
             style: {
                 marginRight: 10,
                 width: 120
             },
             onChange: e.onTextTypeChange,
-            children: [f.jsx(kt.Option, {
-                value: Rt.exact,
+            children: [f.jsx(Nt.Option, {
+                value: It.exact,
                 children: "Is Exactly"
-            }), f.jsx(kt.Option, {
-                value: Rt.contains,
+            }), f.jsx(Nt.Option, {
+                value: It.contains,
                 children: "Contains"
             })]
         });
         return f.jsxs(f.Fragment, {
-            children: [f.jsxs(ou, {
-                children: [e.questionType === te.textInput ? d() : f.jsx(ru, {
+            children: [f.jsxs(iu, {
+                children: [e.questionType === ne.textInput ? d() : f.jsx(ou, {
                     correct: e.correct,
                     onClick: c
                 }), l()]
-            }), f.jsx(wr, {
+            }), f.jsx(br, {
                 visible: t,
                 close: r,
                 currentImage: e.image,
                 onImageChange: e.onImageChange
-            }), f.jsx(vs, {
+            }), f.jsx(ys, {
                 visible: s,
                 close: a,
                 latex: e.latex,
@@ -5354,7 +5357,7 @@ const Xl = 3,
             })]
         })
     },
-    ou = re.div.attrs({
+    iu = se.div.attrs({
         className: "flex maxWidth vc"
     })`
   font-size: 28px;
@@ -5364,7 +5367,7 @@ const Xl = 3,
     align-items: center;
   }
 `,
-    au = re.div`
+    cu = se.div`
   cursor: pointer;
   font-size: 16px;
   color: ${me.Black};
@@ -5372,9 +5375,9 @@ const Xl = 3,
   border: 2px dashed ${me.BorderGray};
   border-radius: 6px;
 `,
-    iu = pt(e => {
-        const t = e.question.type === te.multipleChoice,
-            n = e.question.type === te.textInput,
+    lu = vt(e => {
+        const t = e.question.type === ne.multipleChoice,
+            n = e.question.type === ne.textInput,
             r = d => {
                 e.question.answers = e.question.answers.filter((u, h) => d !== h)
             },
@@ -5402,10 +5405,10 @@ const Xl = 3,
                 })
             };
         return f.jsxs(f.Fragment, {
-            children: [f.jsx(cu, {
-                children: xs("Answer", e.question.answers.length)
-            }), e.question.answers.map((d, u) => f.jsxs(F.Fragment, {
-                children: [f.jsx(su, {
+            children: [f.jsx(uu, {
+                children: Ts("Answer", e.question.answers.length)
+            }), e.question.answers.map((d, u) => f.jsxs(V.Fragment, {
+                children: [f.jsx(au, {
                     questionType: e.question.type,
                     onCorrectChange: h => o(u, h),
                     onTextChange: h => a(u, h),
@@ -5433,7 +5436,7 @@ const Xl = 3,
             }, `answer-${u}`)), e.question.answers.length < 4 && f.jsx(he, {
                 style: {
                     fontSize: 14,
-                    marginLeft: e.question.type === te.textInput ? 0 : 38,
+                    marginLeft: e.question.type === ne.textInput ? 0 : 38,
                     opacity: .7,
                     cursor: "pointer",
                     marginTop: -4,
@@ -5444,65 +5447,65 @@ const Xl = 3,
             })]
         })
     }),
-    cu = re.div`
+    uu = se.div`
   color: ${me.Black};
   font-family: ${Ie.SFPro};
   font-weight: ${Me.UltraBold};
   font-size: 23px;
   margin-bottom: 2px;
 `,
-    lu = e => {
-        const t = f.jsx(ee, {
+    du = e => {
+        const t = f.jsx(te, {
             loading: e.loading,
             type: "primary",
             disabled: e.disabled,
             onClick: e.onClick,
             children: e.label
         });
-        return e.disabledMessage ? f.jsx(Ns, {
+        return e.disabledMessage ? f.jsx(js, {
             title: e.disabledMessage,
             children: t
         }) : t
     },
-    Jn = "Question must have text, audio, image, or an equation",
-    ws = e => {
+    tr = "Question must have text, audio, image, or an equation",
+    bs = e => {
         if (e.text) {
-            if (!e.text.trim()) return Jn
-        } else if (!e.audio && !e.image && !e.latex) return Jn;
+            if (!e.text.trim()) return tr
+        } else if (!e.audio && !e.image && !e.latex) return tr;
         if (e.image && e.latex) return "Question cannot contain an image and equation.";
         const t = e.answers.filter(n => {
             var s;
             return !!(((s = n.text) == null ? void 0 : s.trim()) || n.image || n.latex)
         });
-        return e.type === te.multipleChoice && t.length < 2 ? "Question must have at least two answers." : t.length < 1 ? "Question must have at least one answer." : null
+        return e.type === ne.multipleChoice && t.length < 2 ? "Question must have at least two answers." : t.length < 1 ? "Question must have at least one answer." : null
     },
-    uu = e => ws(e) === null,
+    fu = e => bs(e) === null,
     Re = e => ({
         _id: Math.random().toString(),
         text: "",
         correct: e
     }),
-    er = () => ({
+    nr = () => ({
         _id: "",
         text: "",
-        type: te.multipleChoice,
+        type: ne.multipleChoice,
         image: "",
         audio: "",
         answers: [Re(!0), Re(!1), Re(!1), Re(!1)]
     }),
-    zu = pt(F.forwardRef((e, t) => {
+    Gu = vt(V.forwardRef((e, t) => {
         var a;
-        const n = to(() => er()),
-            r = uu(n) && !e.blockAddingNewQuestions,
+        const n = ro(() => nr()),
+            r = fu(n) && !e.blockAddingNewQuestions,
             s = () => {
-                const c = er();
+                const c = nr();
                 Object.keys(c).forEach(i => {
                     n[i] = c[i]
                 })
             };
-        F.useImperativeHandle(t, () => ({
+        V.useImperativeHandle(t, () => ({
             clear: s
-        })), F.useEffect(() => {
+        })), V.useEffect(() => {
             e.existingQuestion ? Object.keys(e.existingQuestion).forEach(c => {
                 n[c] = e.existingQuestion[c]
             }) : s()
@@ -5510,7 +5513,7 @@ const Xl = 3,
         const o = () => {
             r && e.submitQuestion(n)
         };
-        return f.jsxs(ir, {
+        return f.jsxs(lr, {
             open: e.visible,
             width: 670,
             style: {
@@ -5519,27 +5522,27 @@ const Xl = 3,
             onCancel: e.close,
             afterClose: e.afterClose,
             closable: !1,
-            footer: f.jsx(lu, {
+            footer: f.jsx(du, {
                 label: e.buttonLabel || "Add",
                 onClick: o,
                 loading: e.loading,
-                disabledMessage: ws(n),
+                disabledMessage: bs(n),
                 disabled: !r
             }),
-            children: [f.jsx(ho, {
+            children: [f.jsx(po, {
                 question: n
-            }), f.jsx(eu, {
+            }), f.jsx(nu, {
                 question: n,
                 onPressEnter: o,
                 imagesBlocked: e.imagesBlocked,
                 audioBlocked: e.audioBlocked,
                 latexBlocked: e.latexBlocked
-            }), f.jsx(iu, {
+            }), f.jsx(lu, {
                 question: n,
                 onPressEnter: o,
                 imagesBlocked: e.imagesBlocked,
                 latexBlocked: e.latexBlocked
-            }), e.errorMessage ? f.jsx(sr, {
+            }), e.errorMessage ? f.jsx(ar, {
                 message: "Error",
                 description: e.errorMessage,
                 type: "error",
@@ -5548,5 +5551,5 @@ const Xl = 3,
         })
     }));
 export {
-    Ql as A, lo as I, vs as M, zu as Q, mr as R, he as T, vr as a, pr as b, wr as c, so as d, ro as e, to as u
+    Kl as A, fo as I, ys as M, Gu as Q, gr as R, he as T, yr as a, vr as b, br as c, ao as d, oo as e, ro as u
 };

@@ -1,8 +1,8 @@
 import {
-    as as d,
+    am as d,
     L as e,
     al as w,
-    au as f
+    aq as f
 } from "./App-41.js";
 import {
     d as r,
@@ -119,7 +119,7 @@ const y = {
         t.parts.add.ninePatch({
             ...p.crossbar,
             layerId: e.DevicesUnderCharacters,
-            columns: [0, 0],
+            columns: [1, 1],
             rows: [200, 200],
             height: t.options.height,
             width: 203 * .15,
@@ -133,7 +133,7 @@ const y = {
             ...p.side_top,
             layerId: e.DepthSortedCharactersAndDevices,
             columns: [850, 850],
-            rows: [0, 0],
+            rows: [1, 1],
             height: 606 * .15,
             width: a(t.options.width + 30),
             scale: .15,
@@ -146,7 +146,7 @@ const y = {
             ...p.side_bottom,
             layerId: e.DepthSortedCharactersAndDevices,
             columns: [850, 850],
-            rows: [0, 0],
+            rows: [1e-5, 1e-5],
             height: 606 * .15,
             width: a(t.options.width + 30),
             scale: .15,

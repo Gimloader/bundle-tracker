@@ -1,0 +1,254 @@
+import {
+    Z as y
+} from "./ZoneConstants.js";
+import {
+    av as T,
+    aw as b,
+    ax as E,
+    al as F,
+    T as c,
+    ay as S,
+    am as f,
+    aq as R,
+    az as O
+} from "./App-41.js";
+import {
+    F as m,
+    I,
+    i as d,
+    d as l,
+    e as D
+} from "./FixSpinePlugin.js";
+import {
+    a as w
+} from "./ZonedDeviceDisplay.js";
+import {
+    G
+} from "./GetAssetPath.js";
+import {
+    F as Z,
+    R as H
+} from "./ReplaceVisualEditingPreview.js";
+import "./_index.js";
+import "./Button.js";
+import "./polished.esm.js";
+import "./inheritsLoose.js";
+import "./mobxreact.esm.js";
+import "./index-21.js";
+import "./QuizTypes.js";
+import "./MapModeType.js";
+import "./TutorialConsts.js";
+import "./ActionButton.js";
+import "./index-5.js";
+import "./playSound.js";
+import "./howler.js";
+import "./index-18.js";
+import "./context.js";
+import "./FontAwesomeIcon.js";
+import "./Centered.js";
+import "./CapitalizeFirstLetter.js";
+import "./index-4.js";
+import "./motion.js";
+import "./index-2.js";
+import "./index-14.js";
+import "./EditOutlined.js";
+import "./styleChecker.js";
+import "./index-3.js";
+import "./CheckOutlined.js";
+import "./CopyOutlined.js";
+import "./SixteenByNineScaler.js";
+import "./index-20.js";
+import "./index-22.js";
+import "./index-1.js";
+import "./progress.js";
+import "./ElementIds.js";
+import "./SeasonTicketName.js";
+import "./useQuery.js";
+import "./___vite-browser-external_commonjs-proxy.js";
+import "./util-1.js";
+import "./util-2.js";
+import "./Shortcut.js";
+import "./Names.js";
+import "./useWillUnmount.js";
+import "./use-motion-value.js";
+import "./use-transform.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
+import "./CircularProgress.js";
+import "./clsx.m.js";
+import "./index-17.js";
+import "./use-force-update.js";
+import "./GimkitLiveQuestion.js";
+import "./Text.js";
+import "./getCloudinaryUrl.js";
+import "./LazyLatexRenderer.js";
+import "./Tooltip.js";
+import "./index-9.js";
+import "./index-23.js";
+import "./useIntervalWhen.js";
+import "./index-10.js";
+import "./move.js";
+import "./react-flip-move.es.js";
+import "./sounds.js";
+import "./App-5.js";
+import "./AnimatedBackground-2.js";
+import "./useDebouncedValue.js";
+import "./MapStyle.js";
+import "./FillRemainingSpace.js";
+import "./index-24.js";
+const V = {
+        imageId: G("devices/zone/base.png"),
+        imageUrl: G("devices/zone/base.png")
+    },
+    x = s => {
+        const {
+            character: i
+        } = s, n = i.physics.state.jump.lastJumpGravityMultiplier ?? 1, t = T({
+            character: i
+        });
+        if (n === t) return;
+        const o = i.physics.state.forces.find(r => r.id === b.jump);
+        if (!o || !o.ticks || o.ticks.length === 0) return;
+        const e = o.ticks,
+            a = e.findIndex(r => r.y === 0),
+            p = a === -1 ? e : e.slice(0, a),
+            g = a === -1 ? 0 : e.length - a,
+            u = p.reduce((r, P) => r + -Math.min(P.y, 0), 0);
+        if (u <= 1e-6) {
+            o.ticks = Array.from({
+                length: g
+            }, () => ({
+                x: 0,
+                y: 0
+            }));
+            return
+        }
+        const v = n / t,
+            M = p.length;
+        let h = Math.round(M * v);
+        h < 1 && (h = 1);
+        const C = u * v,
+            A = [...E({
+                count: C,
+                numTicks: h,
+                ease: Phaser.Math.Easing.Quadratic.Out
+            }).map(r => ({
+                x: 0,
+                y: -r
+            })), ...Array.from({
+                length: g
+            }, () => ({
+                x: 0,
+                y: 0
+            }))];
+        o.ticks = A
+    },
+    W = s => {
+        const {
+            character: i
+        } = s;
+        i.physics.state.gravityZones.find(t => t.deviceId === s.deviceId) || (i.physics.state.gravityZones.push({
+            deviceId: s.deviceId,
+            gravityMultiplier: s.gravityMultiplier
+        }), x({
+            character: i
+        }))
+    },
+    z = s => {
+        const {
+            character: i
+        } = s;
+        i.physics.state.gravityZones.find(t => t.deviceId === s.deviceId) && (i.physics.state.gravityZones = i.physics.state.gravityZones.filter(t => t.deviceId !== s.deviceId), x({
+            character: i
+        }))
+    },
+    k = 55;
+class pi extends F {
+    constructor(i) {
+        if (super(i), this.onEnter = () => {
+                const t = m(c());
+                t && W({
+                    character: t,
+                    deviceId: this.id,
+                    gravityMultiplier: this.options.gravityMultiplier
+                })
+            }, this.onLeave = () => {
+                const t = m(c());
+                t && z({
+                    character: t,
+                    deviceId: this.id,
+                    gravityMultiplier: this.options.gravityMultiplier
+                })
+            }, this.onReconcile = () => {
+                const t = c(),
+                    o = m(t);
+                if (!o) return;
+                const e = S().bodies.find(this.sensor.bodyId);
+                o.physics.state.gravityZones.find(p => p.deviceId === this.id) !== void 0 ? e.sensor.charactersInSensor.add(t) : e.sensor.charactersInSensor.delete(t)
+            }, this.setupVisualEditing = () => {
+                if (!I() || !d()) return;
+                const t = Z(this, "width"),
+                    o = Z(this, "height");
+                this.visualEditing.add.box({
+                    width: this.options.width,
+                    height: this.options.height,
+                    angle: this.options.rotation,
+                    minWidth: t.min,
+                    maxWidth: t.max,
+                    minHeight: o.min,
+                    maxHeight: o.max,
+                    keepRatio: !1,
+                    onChange: e => {
+                        H(e.x, e.y, {
+                            rotation: e.angle,
+                            width: e.width,
+                            height: e.height
+                        })
+                    }
+                })
+            }, I() && d()) {
+            const t = this.parts.add.sprite({
+                ...V,
+                depthChange: f(2)
+            });
+            t.view.angle = this.options.rotation, t.view.setScale(.5)
+        }
+        if (l() || D() ? this.options.visibleInGame : w.shouldShow(this)) {
+            this.setupVisualEditing();
+            const t = R(this.options.color);
+            this.zone = this.parts.add.rect({
+                color: t,
+                alpha: this.getAlpha(),
+                width: Math.abs(this.options.width),
+                height: Math.abs(this.options.height),
+                angle: this.options.rotation,
+                borderColor: t,
+                borderAlpha: l() ? 0 : 1,
+                borderWidth: 4,
+                depthChange: f(1),
+                ignoreInput: !0
+            })
+        }
+        this.sensor = this.sensors.add.rect({
+            x: 0,
+            y: 0,
+            w: this.options.width - 2 * k,
+            h: this.options.height - 2 * k,
+            angle: this.options.rotation,
+            type: O.around,
+            onFresh: () => {
+                this.onEnter()
+            },
+            onStop: () => {
+                this.onLeave()
+            }
+        })
+    }
+    getAlpha() {
+        return l() ? y.alpha : d() && w.shouldShowInnerZone(this) ? y.alpha : 0
+    }
+}
+export {
+    pi as GravityZoneDevice, pi as
+    default
+};

@@ -694,7 +694,7 @@ function Fe() {
                 d = A ? e : _ ? e[p] : (e[p] || {})[s],
                 h, R, T;
             A && (g = p);
-            for (h in g) R = !j && d && d[h] !== void 0, !(R && n(W, h)) && (T = R ? d[h] : g[h], W[h] = A && typeof d[h] != "function" ? g[h] : V && R ? o(T, e) : B && d[h] == T ? function(G) {
+            for (h in g) R = !j && d && d[h] !== void 0, !(R && n(W, h)) && (T = R ? d[h] : g[h], W[h] = A && typeof d[h] != "function" ? g[h] : V && R ? o(T, e) : B && d[h] == T ? (function(G) {
                 var N = function(Y, D, te) {
                     if (this instanceof G) {
                         switch (arguments.length) {
@@ -710,7 +710,7 @@ function Fe() {
                     return G.apply(this, arguments)
                 };
                 return N[s] = G[s], N
-            }(T) : P && typeof T == "function" ? o(Function.call, T) : T, P && ((W.virtual || (W.virtual = {}))[h] = T, v & a.R && L && !L[h] && t(L, h, T)))
+            })(T) : P && typeof T == "function" ? o(Function.call, T) : T, P && ((W.virtual || (W.virtual = {}))[h] = T, v & a.R && L && !L[h] && t(L, h, T)))
         };
     return a.F = 1, a.G = 2, a.S = 4, a.P = 8, a.B = 16, a.W = 32, a.U = 64, a.R = 128, Ar = a, Ar
 }
@@ -1098,7 +1098,7 @@ function gu() {
             default: t
         }
     }
-    return ir.default = function() {
+    return ir.default = (function() {
         function t(n, s) {
             for (var a = 0; a < s.length; a++) {
                 var v = s[a];
@@ -1108,7 +1108,7 @@ function gu() {
         return function(n, s, a) {
             return s && t(n.prototype, s), a && t(n, a), n
         }
-    }(), ir
+    })(), ir
 }
 var yu = gu();
 const mu = je(yu);
@@ -1787,7 +1787,7 @@ function Bu() {
             if (r(t), !e(n) && n !== null) throw TypeError(n + ": can't set as prototype!")
         };
     return Tt = {
-        set: Object.setPrototypeOf || ("__proto__" in {} ? function(t, n, s) {
+        set: Object.setPrototypeOf || ("__proto__" in {} ? (function(t, n, s) {
             try {
                 s = pa()(Function.call, ja().f(Object.prototype, "__proto__").set, 2), s(t, []), n = !(t instanceof Array)
             } catch {
@@ -1796,7 +1796,7 @@ function Bu() {
             return function(v, p) {
                 return o(v, p), n ? v.__proto__ = p : s(v, p), v
             }
-        }({}, !1) : void 0),
+        })({}, !1) : void 0),
         check: o
     }, Tt
 }
@@ -2016,7 +2016,7 @@ function Ea() {
         function T(N, Y, D) {
             return typeof h == "string" ? h : h(N, Y, D)
         }
-        var G = function(N) {
+        var G = (function(N) {
             t(D, N);
             var Y = s(D);
 
@@ -2025,7 +2025,7 @@ function Ea() {
                 return o(this, D), ie = Y.call(this, T(te, ne, K)), ie.code = d, ie
             }
             return r(D)
-        }(R);
+        })(R);
         j[d] = G
     }
 
@@ -2405,7 +2405,7 @@ function rc() {
         return "".concat(Ae).concat(l ? Ce : "", `
 `).concat(C).concat(S).concat(c).concat(U)
     }
-    var Z = function(b, w) {
+    var Z = (function(b, w) {
         p(S, b);
         var $ = g(S);
 
@@ -2466,7 +2466,7 @@ should equal
                 }))
             }
         }]), S
-    }(_(Error), R.custom);
+    })(_(Error), R.custom);
     return Lt = Z, Lt
 }
 var Bt, Do;
@@ -2526,7 +2526,7 @@ function tc() {
                 $webkitStorageInfo: !0,
                 $window: !0
             },
-            j = function() {
+            j = (function() {
                 if (typeof window > "u") return !1;
                 for (var _ in window) try {
                     if (!g["$" + _] && r.call(window, _) && window[_] !== null && typeof window[_] == "object") try {
@@ -2538,7 +2538,7 @@ function tc() {
                     return !0
                 }
                 return !1
-            }(),
+            })(),
             A = function(_) {
                 if (typeof window > "u" || !j) return p(_);
                 try {
@@ -2582,10 +2582,10 @@ function Pa() {
         n = Object.keys;
     return t.shim = function() {
         if (Object.keys) {
-            var a = function() {
+            var a = (function() {
                 var v = Object.keys(arguments);
                 return v && v.length === arguments.length
-            }(1, 2);
+            })(1, 2);
             a || (Object.keys = function(p) {
                 return r(p) ? n(e.call(p)) : n(p)
             })
@@ -3645,7 +3645,7 @@ function _c(e, r, o) {
     }, 1e3);
     return g
 }
-var Cn = function(e) {
+var Cn = (function(e) {
     Qu(r, e);
 
     function r() {
@@ -3724,7 +3724,7 @@ var Cn = function(e) {
             }), s)
         }
     }]), r
-}(ce.PureComponent);
+})(ce.PureComponent);
 Cn.propTypes = {
     additionalProps: H.object,
     children: H.node,

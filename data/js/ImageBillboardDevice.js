@@ -1,22 +1,24 @@
 import {
     al as P,
-    aJ as x,
+    aS as x,
     L as I,
-    aY as C,
-    aQ as M,
-    aZ as y,
-    au as w,
-    ai as D
+    b5 as C,
+    b6 as M,
+    aq as w,
+    ai as y
 } from "./App-41.js";
 import {
-    d as p,
+    F as D
+} from "./FetchTextureDimensions.js";
+import {
+    d as n,
     I as g,
     i as G,
     e as v
 } from "./FixSpinePlugin.js";
 import {
     F as b,
-    R as Y
+    R as F
 } from "./ReplaceVisualEditingPreview.js";
 import "./_index.js";
 import "./Button.js";
@@ -110,14 +112,14 @@ const H = o => {
             originY: h
         } = o,
         m = [],
-        n = [];
+        p = [];
     t.forEach(a => {
         const f = Phaser.Math.Angle.Between(0, 0, (a.originX - r) * i, (a.originY - h) * e),
             u = Phaser.Math.Distance.Between(0, 0, (a.originX - r) * i, (a.originY - h) * e);
-        m.push(u * Math.cos(f + s)), n.push(u * Math.sin(f + s))
+        m.push(u * Math.cos(f + s)), p.push(u * Math.sin(f + s))
     });
     const d = Math.max(...m) - Math.min(...m),
-        c = Math.max(...n) - Math.min(...n);
+        c = Math.max(...p) - Math.min(...p);
     return {
         x: -r * d,
         y: -h * c,
@@ -125,7 +127,7 @@ const H = o => {
         height: c
     }
 };
-class qi extends P {
+class Qi extends P {
     constructor(t) {
         super(t), this.matchesPhase = !0, this.createVisuals = () => {
             this.matchesPhase && (this.createFrame(), this.createImage()), this.boundingBox.setHardcoded(H({
@@ -134,7 +136,7 @@ class qi extends P {
                 rotation: x(this.options.rotation)
             }))
         }, this.onStateChange = e => {
-            e === "frameColor" && (this.createFrame(), this.createImage()), e === "imageUrl" && this.createImage(), e === "visible" && p() && (this.state.visible ? (this.image && (this.image.view.alpha = 1), this.frame && (this.frame.view.alpha = 1)) : (this.image && (this.image.view.alpha = 0), this.frame && (this.frame.view.alpha = 0)))
+            e === "frameColor" && (this.createFrame(), this.createImage()), e === "imageUrl" && this.createImage(), e === "visible" && n() && (this.state.visible ? (this.image && (this.image.view.alpha = 1), this.frame && (this.frame.view.alpha = 1)) : (this.image && (this.image.view.alpha = 0), this.frame && (this.frame.view.alpha = 0)))
         }, this.setupVisualEditing = () => {
             if (!g() || !G()) return;
             const e = b(this, "width"),
@@ -149,7 +151,7 @@ class qi extends P {
                 maxHeight: s.max,
                 keepRatio: !1,
                 onChange: r => {
-                    Y(r.x, r.y, {
+                    F(r.x, r.y, {
                         width: r.width,
                         height: r.height,
                         rotation: r.angle
@@ -158,7 +160,7 @@ class qi extends P {
             })
         }, this.layers.setDefaultLayer(I.DevicesAboveCharacters), this.setupVisualEditing();
         let i = !0;
-        (this.options.visibleDuringPhase === l.game && !p() && v() || this.options.visibleDuringPhase === l.preGame && !g()) && (i = !1), this.matchesPhase = i, this.createVisuals()
+        (this.options.visibleDuringPhase === l.game && !n() && v() || this.options.visibleDuringPhase === l.preGame && !g()) && (i = !1), this.matchesPhase = i, this.createVisuals()
     }
     createImage() {
         if (!this.matchesPhase || v() && g() && this.options.visibleOnGameStart === "No") return;
@@ -172,14 +174,14 @@ class qi extends P {
                     return
                 }
                 this.image && this.parts.destroySpecificPart(this.image.id), this.image = i;
-                const e = M(t),
-                    s = y({
+                const e = D(t),
+                    s = M({
                         width: e.width,
                         height: e.height,
                         newWidth: Math.abs(this.options.width) * .75,
                         newHeight: Math.abs(this.options.height) * .75
                     });
-                i.view.displayWidth = s.width, i.view.displayHeight = s.height, this.boundingBox.clearHardcoded(), i.view.angle = this.options.rotation, p() ? i.view.alpha = this.state.visible ? this.options.alpha : 0 : i.view.alpha = this.options.alpha
+                i.view.displayWidth = s.width, i.view.displayHeight = s.height, this.boundingBox.clearHardcoded(), i.view.angle = this.options.rotation, n() ? i.view.alpha = this.state.visible ? this.options.alpha : 0 : i.view.alpha = this.options.alpha
             }
         })
     }
@@ -195,13 +197,13 @@ class qi extends P {
             borderAlpha: 1,
             width: Math.abs(this.options.width),
             height: Math.abs(this.options.height),
-            borderColor: w(D(t)),
+            borderColor: w(y(t)),
             borderWidth: 8,
             cornerRadius: 10
         }), this.frame.view.angle = this.options.rotation
     }
 }
 export {
-    qi as
+    Qi as
     default
 };

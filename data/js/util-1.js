@@ -346,7 +346,7 @@ function Bt() {
         q = function() {
             throw new u
         },
-        K = j ? function() {
+        K = j ? (function() {
             try {
                 return arguments.callee, q
             } catch {
@@ -356,7 +356,7 @@ function Bt() {
                     return q
                 }
             }
-        }() : q,
+        })() : q,
         C = Vt()(),
         I = be(),
         W = jt(),
@@ -615,9 +615,9 @@ function Zt() {
         s = function(u) {
             return c(u) ? !0 : u !== null && typeof u == "object" && "length" in u && typeof u.length == "number" && u.length >= 0 && a(u) !== "[object Array]" && "callee" in u && a(u.callee) === "[object Function]"
         },
-        d = function() {
+        d = (function() {
             return c(arguments)
-        }();
+        })();
     return c.isLegacyArguments = s, xr = d ? c : s, xr
 }
 var re, tt;
@@ -922,7 +922,7 @@ function an() {
 var pt;
 
 function un() {
-    return pt || (pt = 1, function(r) {
+    return pt || (pt = 1, (function(r) {
         var i = on(),
             a = dr(),
             c = he(),
@@ -934,7 +934,7 @@ function un() {
         }, a ? a(r.exports, "apply", {
             value: s
         }) : r.exports.apply = s
-    }(ue)), ue.exports
+    })(ue)), ue.exports
 }
 var le, dt;
 
@@ -1014,7 +1014,7 @@ function fn() {
 var vt;
 
 function cn() {
-    return vt || (vt = 1, function(r) {
+    return vt || (vt = 1, (function(r) {
         var i = Zt(),
             a = Qt(),
             c = qt(),
@@ -1243,7 +1243,7 @@ function cn() {
                 }
             })
         })
-    }(vr)), vr
+    })(vr)), vr
 }
 var de, ht;
 
@@ -1278,7 +1278,7 @@ function yn() {
 var mt;
 
 function pn() {
-    return mt || (mt = 1, function(r) {
+    return mt || (mt = 1, (function(r) {
         var i = {},
             a = Object.getOwnPropertyDescriptors || function(t) {
                 for (var o = Object.keys(t), S = {}, R = 0; R < o.length; R++) S[o[R]] = Object.getOwnPropertyDescriptor(t, o[R]);
@@ -1639,7 +1639,7 @@ function pn() {
             return Object.setPrototypeOf(t, Object.getPrototypeOf(e)), Object.defineProperties(t, a(e)), t
         }
         r.callbackify = Y
-    }(gr)), gr
+    })(gr)), gr
 }
 export {
     fr as a, fn as b, ar as c, pn as d, St as e, Pt as f, un as g, Bt as h, tn as i, nn as j, yn as r

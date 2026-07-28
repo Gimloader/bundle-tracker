@@ -1,6 +1,6 @@
 import {
     al as c,
-    aH as h,
+    aQ as h,
     T as n
 } from "./App-41.js";
 import {
@@ -80,7 +80,7 @@ import "./useDebouncedValue.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Yt extends c {
+class Ct extends c {
     constructor(p) {
         if (super(p), this.onStateChange = t => {
                 t === "beingRemoved" && this.state.beingRemoved && this.sticker && this.tweens.add({
@@ -124,6 +124,6 @@ class Yt extends c {
     }
 }
 export {
-    Yt as
+    Ct as
     default
 };

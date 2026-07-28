@@ -12,32 +12,32 @@ import {
     o as E,
     a9 as ka,
     aZ as or,
-    dD as xs,
+    dF as xs,
     ar as Le,
     ax as mc,
     bI as ze,
     bJ as kt,
-    d_ as ys,
-    d$ as Pa,
+    e0 as ys,
+    e1 as Pa,
     ah as yn,
     j as i,
     aw as Ar,
-    dL as gc,
+    dN as gc,
     d as k,
     e as de,
     a4 as Cs,
-    dM as vc,
-    e0 as bs,
+    dO as vc,
+    e2 as bs,
     D as ut,
     q as Cn,
-    dO as lt,
+    dQ as lt,
     F as Re,
     B as uo,
     a3 as xc,
     l as yc,
     S as Cc,
     M as bc,
-    e1 as wc
+    e3 as wc
 } from "./_index.js";
 import {
     i as F,
@@ -1179,7 +1179,7 @@ function kl(e) {
         n.getAttribute && n.getAttribute("aria-hidden") === "true" && t.push(n)
     }), t
 }
-var Pl = function() {
+var Pl = (function() {
     function e() {
         hc(this, e), this.modals = [], this.containers = []
     }
@@ -1232,7 +1232,7 @@ var Pl = function() {
             return this.modals.length > 0 && this.modals[this.modals.length - 1] === n
         }
     }]), e
-}();
+})();
 
 function Sl(e) {
     var t = e.children,
@@ -2392,7 +2392,7 @@ function pd() {
 var ai;
 
 function Bs() {
-    return ai || (ai = 1, function(e, t) {
+    return ai || (ai = 1, (function(e, t) {
         t.__esModule = !0, t.default = void 0;
         var n = a(kt()),
             o = a(ze()),
@@ -2443,7 +2443,7 @@ function Bs() {
                     return p
                 }
             },
-            v = function(C) {
+            v = (function(C) {
                 l(p, C);
 
                 function p(m, h) {
@@ -2490,13 +2490,13 @@ function Bs() {
                         B = g(this.state.children).map(S);
                     return delete P.appear, delete P.enter, delete P.exit, x === null ? B : o.default.createElement(x, P, B)
                 }, p
-            }(o.default.Component);
+            })(o.default.Component);
         v.childContextTypes = {
             transitionGroup: n.default.object.isRequired
         }, v.propTypes = {}, v.defaultProps = b;
         var y = (0, r.polyfill)(v);
         t.default = y, e.exports = t.default
-    }(Kr, Kr.exports)), Kr.exports
+    })(Kr, Kr.exports)), Kr.exports
 }
 var gr = {},
     vr = {},
@@ -2696,7 +2696,7 @@ function hd() {
         return C.targetTouches && C.targetTouches.length >= 1 ? C.targetTouches[0].clientY : C.clientY
     }
     var b = function() {},
-        v = function(C) {
+        v = (function(C) {
             l(p, C);
 
             function p() {
@@ -2825,7 +2825,7 @@ function hd() {
                     progress: G
                 }))))
             }, p
-        }(e.Component);
+        })(e.Component);
     v.propTypes = {
         closeButton: s.falseOrElement.isRequired,
         autoClose: s.falseOrDelay.isRequired,
@@ -2956,7 +2956,7 @@ function _s() {
     _e.ENTERED = g;
     var b = "exiting";
     _e.EXITING = b;
-    var v = function(p) {
+    var v = (function(p) {
         c(u, p);
 
         function u(h, x) {
@@ -3084,7 +3084,7 @@ function _s() {
             var _ = t.default.Children.only(P);
             return t.default.cloneElement(_, B)
         }, u
-    }(t.default.Component);
+    })(t.default.Component);
     v.contextTypes = {
         transitionGroup: e.object
     }, v.childContextTypes = {
@@ -3310,7 +3310,7 @@ function gd() {
     function u(x, S) {
         x.prototype = Object.create(S.prototype), x.prototype.constructor = x, x.__proto__ = S
     }
-    var m = function(x) {
+    var m = (function(x) {
         u(S, x);
 
         function S() {
@@ -3441,7 +3441,7 @@ function gd() {
                 className: "Toastify"
             }, this.renderToast())
         }, S
-    }(e.Component);
+    })(e.Component);
     m.propTypes = {
         position: t.default.oneOf((0, l.objectValues)(c.POSITION)),
         autoClose: l.falseOrDelay,
@@ -6131,7 +6131,7 @@ function f3() {
     Li = 1, Object.defineProperty(on, "__esModule", {
         value: !0
     });
-    var e = function() {
+    var e = (function() {
             function d(l, f) {
                 for (var g = 0; g < f.length; g++) {
                     var b = f[g];
@@ -6141,7 +6141,7 @@ function f3() {
             return function(l, f, g) {
                 return f && d(l.prototype, f), g && d(l, g), l
             }
-        }(),
+        })(),
         t = p3(),
         n = o(t);
 
@@ -6171,7 +6171,7 @@ function f3() {
             }
         }), l && (Object.setPrototypeOf ? Object.setPrototypeOf(d, l) : d.__proto__ = l)
     }
-    var c = function(d) {
+    var c = (function(d) {
         a(l, d);
 
         function l() {
@@ -6219,7 +6219,7 @@ function f3() {
                 }
             }
         }]), l
-    }(n.default);
+    })(n.default);
     return on.default = c, on
 }
 var Ai;
@@ -6229,7 +6229,7 @@ function E0() {
     Ai = 1, Object.defineProperty(nn, "__esModule", {
         value: !0
     });
-    var e = function() {
+    var e = (function() {
             function c(d, l) {
                 for (var f = 0; f < l.length; f++) {
                     var g = l[f];
@@ -6239,7 +6239,7 @@ function E0() {
             return function(d, l, f) {
                 return l && c(d.prototype, l), f && c(d, f), d
             }
-        }(),
+        })(),
         t = f3(),
         n = o(t);
 
@@ -6253,7 +6253,7 @@ function E0() {
         if (!(c instanceof d)) throw new TypeError("Cannot call a class as a function")
     }
     var s = 30,
-        a = function() {
+        a = (function() {
             function c() {
                 var d = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {},
                     l = d.radius,
@@ -6336,7 +6336,7 @@ function E0() {
                     return this._hasMoved = !1, this.pointer.equalsTo(l) && !b ? !1 : (this.pointer.update(l), b ? (this._hasMoved = !0, this.brush.update(l), !0) : (this._isEnabled ? (this.distance = this.pointer.getDistanceTo(this.brush), this.angle = this.pointer.getAngleTo(this.brush), this.distance > this.radius && (this.brush.moveByAngle(this.angle, this.distance - this.radius), this._hasMoved = !0)) : (this.distance = 0, this.angle = 0, this.brush.update(l), this._hasMoved = !0), !0))
                 }
             }]), c
-        }();
+        })();
     return nn.default = a, nn
 }
 var zi;
@@ -6371,7 +6371,7 @@ function h3() {
     Wi = 1, Object.defineProperty(cn, "__esModule", {
         value: !0
     });
-    var e = function() {
+    var e = (function() {
         function o(r, s) {
             for (var a = 0; a < s.length; a++) {
                 var c = s[a];
@@ -6381,12 +6381,12 @@ function h3() {
         return function(r, s, a) {
             return s && o(r.prototype, s), a && o(r, a), r
         }
-    }();
+    })();
 
     function t(o, r) {
         if (!(o instanceof r)) throw new TypeError("Cannot call a class as a function")
     }
-    var n = function() {
+    var n = (function() {
         function o(r, s) {
             t(this, o), this.x = r, this.y = s
         }
@@ -6407,7 +6407,7 @@ function h3() {
                 return Math.sqrt(Math.pow(a.x, 2) + Math.pow(a.y, 2))
             }
         }]), o
-    }();
+    })();
     return cn.default = n, cn
 }
 var Fi;
@@ -6417,7 +6417,7 @@ function j0() {
     Fi = 1, Object.defineProperty(an, "__esModule", {
         value: !0
     });
-    var e = function() {
+    var e = (function() {
             function c(d, l) {
                 for (var f = 0; f < l.length; f++) {
                     var g = l[f];
@@ -6427,7 +6427,7 @@ function j0() {
             return function(d, l, f) {
                 return l && c(d.prototype, l), f && c(d, f), d
             }
-        }(),
+        })(),
         t = h3(),
         n = o(t);
 
@@ -6441,7 +6441,7 @@ function j0() {
         if (!(c instanceof d)) throw new TypeError("Cannot call a class as a function")
     }
     var s = 1e-6,
-        a = function() {
+        a = (function() {
             function c() {
                 var d = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {},
                     l = d.segments,
@@ -6525,7 +6525,7 @@ function j0() {
                     return g = l.length, f.quadraticCurveTo(l[g - 4], l[g - 3], l[g - 2], l[g - 1]), y
                 }
             }]), c
-        }();
+        })();
     return an.default = a, an
 }
 var Ui;
@@ -6602,7 +6602,7 @@ var qi = Object.freeze({
         e: 0,
         f: 0
     }),
-    $0 = function() {
+    $0 = (function() {
         function e(t) {
             var n = this,
                 o = t.scaleExtents,
@@ -6810,7 +6810,7 @@ var qi = Object.freeze({
                 if (this.canvas) return this.canvas.getBoundingClientRect()
             }
         }]), e
-    }();
+    })();
 
 function N0(e) {
     var t = e === void 0 ? {} : e,
@@ -7160,7 +7160,7 @@ var X0 = {
         position: "absolute"
     },
     Qi = ["grid", "drawing", "temp", "interface"],
-    As = function(e) {
+    As = (function(e) {
         Q0(t, e);
 
         function t(o) {
@@ -7473,7 +7473,7 @@ var X0 = {
                 })
             }))
         }, t
-    }(w.PureComponent);
+    })(w.PureComponent);
 Z(As, "defaultProps", {
     onChange: null,
     loadTimeOffset: 5,
@@ -9514,7 +9514,7 @@ var Zn = {
     oa;
 
 function E3() {
-    return oa || (oa = 1, function(e) {
+    return oa || (oa = 1, (function(e) {
         var t = {};
         t.generateIdentifier = function() {
             return Math.random().toString(36).substr(2, 10)
@@ -9904,7 +9904,7 @@ t=0 0\r
                 if (o[r].length < 2 || o[r].charAt(1) !== "=") return !1;
             return !0
         }, e.exports = t
-    }(Zn)), Zn.exports
+    })(Zn)), Zn.exports
 }
 var eo, sa;
 
@@ -11346,7 +11346,7 @@ function Rp() {
             }
             return p
         },
-        t = function() {
+        t = (function() {
             function p(u, m) {
                 for (var h = 0; h < m.length; h++) {
                     var x = m[h];
@@ -11356,7 +11356,7 @@ function Rp() {
             return function(u, m, h) {
                 return m && p(u.prototype, m), h && p(u, h), u
             }
-        }(),
+        })(),
         n, o;
 
     function r(p, u) {
@@ -11395,7 +11395,7 @@ var s=[e.top.endX-e.top.startX,e.bottom.endX-e.bottom.startX,e.bottom.y-e.top.y+
             type: "application/javascript"
         }),
         C = ["delay", "legacyMode", "facingMode"];
-    return to = (o = n = function(p) {
+    return to = (o = n = (function(p) {
         a(u, p);
 
         function u(m) {
@@ -11654,7 +11654,7 @@ var s=[e.top.endX-e.top.startX,e.bottom.endX-e.bottom.startX,e.bottom.y-e.top.y+
                 })))
             }
         }]), u
-    }(d), n.propTypes = {
+    })(d), n.propTypes = {
         onScan: l.func.isRequired,
         onError: l.func.isRequired,
         onLoad: l.func,
@@ -12434,19 +12434,19 @@ var un = {
     ua;
 
 function y1() {
-    return ua || (ua = 1, function(e, t) {
+    return ua || (ua = 1, (function(e, t) {
         t.__esModule = !0, t.default = n;
 
         function n(o, r) {
             return o.classList ? !!r && o.classList.contains(r) : (" " + (o.className.baseVal || o.className) + " ").indexOf(" " + r + " ") !== -1
         }
         e.exports = t.default
-    }(fn, fn.exports)), fn.exports
+    })(fn, fn.exports)), fn.exports
 }
 var pa;
 
 function C1() {
-    return pa || (pa = 1, function(e, t) {
+    return pa || (pa = 1, (function(e, t) {
         var n = ks();
         t.__esModule = !0, t.default = r;
         var o = n(y1());
@@ -12455,7 +12455,7 @@ function C1() {
             s.classList ? s.classList.add(a) : (0, o.default)(s, a) || (typeof s.className == "string" ? s.className = s.className + " " + a : s.setAttribute("class", (s.className && s.className.baseVal || "") + " " + a))
         }
         e.exports = t.default
-    }(pn, pn.exports)), pn.exports
+    })(pn, pn.exports)), pn.exports
 }
 var ro, fa;
 
@@ -12473,7 +12473,7 @@ function b1() {
 var ha;
 
 function w1() {
-    return ha || (ha = 1, function(e, t) {
+    return ha || (ha = 1, (function(e, t) {
         t.__esModule = !0, t.default = void 0, c(kt());
         var n = a(C1()),
             o = a(b1()),
@@ -12522,7 +12522,7 @@ function w1() {
                     return (0, o.default)(C, u)
                 })
             },
-            b = function(y) {
+            b = (function(y) {
                 l(C, y);
 
                 function C() {
@@ -12586,13 +12586,13 @@ function w1() {
                         onExited: this.onExited
                     }))
                 }, C
-            }(r.default.Component);
+            })(r.default.Component);
         b.defaultProps = {
             classNames: ""
         }, b.propTypes = {};
         var v = b;
         t.default = v, e.exports = t.default
-    }(un, un.exports)), un.exports
+    })(un, un.exports)), un.exports
 }
 var hn = {
         exports: {}
@@ -12600,7 +12600,7 @@ var hn = {
     ma;
 
 function k1() {
-    return ma || (ma = 1, function(e, t) {
+    return ma || (ma = 1, (function(e, t) {
         t.__esModule = !0, t.default = void 0, s(kt());
         var n = s(ze()),
             o = Pa(),
@@ -12624,7 +12624,7 @@ function k1() {
         function c(f, g) {
             f.prototype = Object.create(g.prototype), f.prototype.constructor = f, f.__proto__ = g
         }
-        var d = function(f) {
+        var d = (function(f) {
             c(g, f);
 
             function g() {
@@ -12674,11 +12674,11 @@ function k1() {
                     onEntered: this.handleExited
                 }))
             }, g
-        }(n.default.Component);
+        })(n.default.Component);
         d.propTypes = {};
         var l = d;
         t.default = l, e.exports = t.default
-    }(hn, hn.exports)), hn.exports
+    })(hn, hn.exports)), hn.exports
 }
 var no, ga;
 

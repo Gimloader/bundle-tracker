@@ -111,7 +111,7 @@ function j() {
     w = 1, Object.defineProperty(f, "__esModule", {
         value: !0
     });
-    var y = function() {
+    var y = (function() {
             function t(e, o) {
                 for (var r = 0; r < o.length; r++) {
                     var a = o[r];
@@ -121,7 +121,7 @@ function j() {
             return function(e, o, r) {
                 return o && t(e.prototype, o), r && t(e, r), e
             }
-        }(),
+        })(),
         u = A(),
         p = v(u),
         d = C();
@@ -155,7 +155,7 @@ function j() {
     var c = {
             position: "relative"
         },
-        i = function(t) {
+        i = (function(t) {
             n(e, t);
 
             function e(o) {
@@ -183,7 +183,7 @@ function j() {
                     })
                 }
             }]), e
-        }(u.Component);
+        })(u.Component);
     return f.default = i, f
 }
 var q = j();

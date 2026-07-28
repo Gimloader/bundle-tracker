@@ -1,23 +1,23 @@
 import {
-    aW as r,
-    az as l,
-    aw as m
+    b3 as r,
+    aI as l,
+    aH as m
 } from "./App-41.js";
 import {
     s
 } from "./FixSpinePlugin.js";
-const a = e => {
+const c = e => {
         const n = r().interactiveItemsSlots,
             t = s.me.inventory.interactiveSlotsOrder;
         for (let o = 0; o < n; o++) {
             const i = t[o],
-                c = s.me.inventory.interactiveSlots.get(`${i}`);
-            if (e.callback(c, i)) return
+                a = s.me.inventory.interactiveSlots.get(`${i}`);
+            if (e.callback(a, i)) return
         }
     },
     f = e => {
         let n = 0;
-        return a({
+        return c({
             callback: t => {
                 (t.itemId === e.itemId || t.itemId === "" || !t.itemId) && (n += 1)
             }
@@ -26,7 +26,7 @@ const a = e => {
     v = e => {
         const n = l(e.itemId).maxStackSize ?? 1;
         let t = 0;
-        return a({
+        return c({
             ...e,
             callback: o => {
                 (o.itemId === e.itemId || o.itemId === "" || !o.itemId) && (t += n)

@@ -3,12 +3,12 @@ import {
 } from "./GetAssetPath.js";
 import {
     I as t,
-    i as m
+    i as p
 } from "./FixSpinePlugin.js";
 import {
-    al as p,
-    am as e,
-    an as s
+    al as m,
+    aA as e,
+    aB as s
 } from "./App-41.js";
 import "./_index.js";
 import "./MapModeType.js";
@@ -77,9 +77,9 @@ import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Bo extends p {
+class yo extends m {
     constructor(i) {
-        if (super(i), t() && m()) {
+        if (super(i), t() && p()) {
             const o = s.Utility;
             new e({
                 device: this,
@@ -95,6 +95,6 @@ class Bo extends p {
     }
 }
 export {
-    Bo as
+    yo as
     default
 };

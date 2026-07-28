@@ -2,7 +2,7 @@ import {
     m as y,
     o as e,
     aZ as O,
-    dD as d
+    dF as d
 } from "./_index.js";
 var P = Object.defineProperty,
     f = (p, o, a, c) => {
@@ -57,10 +57,10 @@ const h = {
         planCost: j,
         planDescription: k,
         accountCredit: x,
-        percentageOff: N,
-        amountOff: S,
-        couponDescription: w,
-        hasCoupon: F,
+        percentageOff: F,
+        amountOff: N,
+        couponDescription: S,
+        hasCoupon: w,
         couponOneUseOnly: K,
         couponIsOnlyForPlan: T,
         existingPayingPlan: U,
@@ -68,7 +68,7 @@ const h = {
     } = h;
 class t {
     constructor() {
-        this.planName = I, this.planId = D, this.couponId = _, this.planCost = j, this.planDescription = k, this.accountCredit = x, this.percentageOff = N, this.amountOff = S, this.couponDescription = w, this.hasCoupon = F, this.couponOneUseOnly = K, this.couponIsOnlyForPlan = T, this.existingPayingPlan = U, this.stripePublicKey = $, this.reset = () => {
+        this.planName = I, this.planId = D, this.couponId = _, this.planCost = j, this.planDescription = k, this.accountCredit = x, this.percentageOff = F, this.amountOff = N, this.couponDescription = S, this.hasCoupon = w, this.couponOneUseOnly = K, this.couponIsOnlyForPlan = T, this.existingPayingPlan = U, this.stripePublicKey = $, this.reset = () => {
             Object.keys(h).forEach(o => {
                 this[o] = h[o]
             })

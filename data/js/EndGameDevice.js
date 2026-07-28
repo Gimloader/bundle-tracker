@@ -11,8 +11,8 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     al as a,
-    am as s,
-    an as n
+    aA as s,
+    aB as n
 } from "./App-41.js";
 import "./TutorialConsts.js";
 import "./_index.js";
@@ -80,7 +80,7 @@ import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Bo extends a {
+class yo extends a {
     constructor(t) {
         if (super(t), this.onMessage = o => {
                 o.key == "end_game" && i({
@@ -103,6 +103,6 @@ class Bo extends a {
     }
 }
 export {
-    Bo as
+    yo as
     default
 };

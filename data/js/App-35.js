@@ -13,7 +13,7 @@ import {
     U as F,
     M as K,
     a3 as P,
-    dJ as O,
+    dL as O,
     n as R,
     S as _,
     T as H
@@ -38,7 +38,7 @@ import {
     s as I
 } from "./index-18.js";
 import {
-    T as L
+    T as Q
 } from "./index-5.js";
 import {
     u as Z
@@ -134,7 +134,7 @@ const se = () => t.jsxs(ie, {
                 children: s
             }), t.jsx(le, {
                 children: e.canEdit ? t.jsxs(t.Fragment, {
-                    children: [t.jsx(L, {
+                    children: [t.jsx(Q, {
                         title: "Edit Question",
                         children: t.jsx("div", {
                             onClick: e.openEditor,
@@ -145,7 +145,7 @@ const se = () => t.jsxs(ie, {
                                 name: "far fa-edit"
                             })
                         })
-                    }), t.jsx(L, {
+                    }), t.jsx(Q, {
                         title: "Delete Question",
                         children: t.jsx("div", {
                             onClick: e.deleteQuestion,
@@ -617,7 +617,7 @@ const he = e => {
             [l, y] = i.useState(""),
             [p, r] = i.useState(!1),
             [j, C] = i.useState(!1),
-            [T, Q] = i.useState(""),
+            [T, L] = i.useState(""),
             W = () => n("dashboard");
         i.useEffect(() => {
             S({
@@ -626,7 +626,7 @@ const he = e => {
                     b(h.sessionOwnerName), y(h.gameName), r(h.canAccess), C(h.mustBeLoggedIn)
                 },
                 error: h => {
-                    h && h.message && h.message.text ? Q(h.message.text) : Q("There was an error. Please try again later.")
+                    h && h.message && h.message.text ? L(h.message.text) : L("There was an error. Please try again later.")
                 },
                 both: () => {
                     x(!1)
@@ -658,7 +658,7 @@ const he = e => {
             })
         }) : t.jsxs(t.Fragment, {
             children: [t.jsx($, {
-                children: t.jsx(Qe, {
+                children: t.jsx(Le, {
                     children: U()
                 })
             }), t.jsx(H, {
@@ -674,7 +674,7 @@ const he = e => {
   color: ${N.Black};
   font-family: ${F.SFPro};
 `,
-    Qe = a(te)`
+    Le = a(te)`
   width: 90%;
   max-width: 640px;
   border-radius: 8px;

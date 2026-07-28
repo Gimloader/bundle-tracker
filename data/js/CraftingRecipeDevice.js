@@ -7,9 +7,9 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     al as s,
-    az as a,
-    am as c,
-    an as n
+    aI as a,
+    aA as c,
+    aB as n
 } from "./App-41.js";
 import {
     U as l

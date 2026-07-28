@@ -4,8 +4,8 @@ import {
 import {
     al as e,
     T as s,
-    am as a,
-    an as c
+    aA as a,
+    aB as c
 } from "./App-41.js";
 import {
     I as l,
@@ -79,7 +79,7 @@ import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var t = (i => (i.triggered = "triggered", i))(t || {});
-class Bo extends e {
+class Go extends e {
     constructor(m) {
         if (super(m), this.onMessage = o => {
                 var r;
@@ -106,6 +106,6 @@ class Bo extends e {
     }
 }
 export {
-    Bo as
+    Go as
     default
 };

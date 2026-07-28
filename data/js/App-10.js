@@ -552,6 +552,9 @@ const tn = i.forwardRef((t, n) => {
                         [`${n}-header-text`]: {
                             flex: "none",
                             cursor: "pointer"
+                        },
+                        [`${n}-expand-icon`]: {
+                            cursor: "pointer"
                         }
                     },
                     [`${n}-collapsible-icon`]: {

@@ -537,12 +537,12 @@ function $e() {
     if (Zr) return ur;
     Zr = 1;
     var n = me(),
-        t = function() {
+        t = (function() {
             try {
                 var e = n(Object, "defineProperty");
                 return e({}, "", {}), e
             } catch {}
-        }();
+        })();
     return ur = t, ur
 }
 var sr, Jr;

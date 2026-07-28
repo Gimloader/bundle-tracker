@@ -5,8 +5,8 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     al as a,
-    am as n,
-    an as l
+    aA as n,
+    aB as l
 } from "./App-41.js";
 import {
     G as u

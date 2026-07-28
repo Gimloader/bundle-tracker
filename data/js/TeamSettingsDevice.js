@@ -7,8 +7,8 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     al as p,
-    am as e,
-    an as s
+    aA as e,
+    aB as s
 } from "./App-41.js";
 import "./_index.js";
 import "./MapModeType.js";
@@ -77,7 +77,7 @@ import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Bo extends p {
+class So extends p {
     constructor(t) {
         if (super(t), r() && m()) {
             const o = s.Setting;
@@ -95,6 +95,6 @@ class Bo extends p {
     }
 }
 export {
-    Bo as
+    So as
     default
 };

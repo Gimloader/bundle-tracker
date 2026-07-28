@@ -5,15 +5,15 @@ import {
 } from "./_index.js";
 import {
     P as f,
-    D as w,
+    H as w,
     l as p,
     n as y,
     h as l,
     m as u,
     w as I,
     k as v,
-    H as B,
-    J as P
+    J as B,
+    K as P
 } from "./FixSpinePlugin.js";
 import {
     G as S

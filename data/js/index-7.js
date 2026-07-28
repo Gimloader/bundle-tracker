@@ -133,7 +133,7 @@ function de(e) {
 function we(e) {
     return typeof e == "number" ? !Number.isNaN(e) : e ? /^\s*-?\d+(\.\d+)?\s*$/.test(e) || /^\s*-?\d+\.\s*$/.test(e) || /^\s*-?\.\d+\s*$/.test(e) : !1
 }
-var Ht = function() {
+var Ht = (function() {
         function e(t) {
             if (He(this, e), y(this, "origin", ""), y(this, "negative", void 0), y(this, "integer", void 0), y(this, "decimal", void 0), y(this, "decimalLen", void 0), y(this, "empty", void 0), y(this, "nan", void 0), ze(t)) {
                 this.empty = !0;
@@ -252,8 +252,8 @@ var Ht = function() {
                 return n ? this.isInvalidate() ? "" : U("".concat(this.getMark()).concat(this.getIntegerStr(), ".").concat(this.getDecimalStr())).fullStr : this.origin
             }
         }]), e
-    }(),
-    Pt = function() {
+    })(),
+    Pt = (function() {
         function e(t) {
             if (He(this, e), y(this, "origin", ""), y(this, "number", void 0), y(this, "empty", void 0), ze(t)) {
                 this.empty = !0;
@@ -326,7 +326,7 @@ var Ht = function() {
                 return n ? this.isInvalidate() ? "" : de(this.number) : this.origin
             }
         }]), e
-    }();
+    })();
 
 function M(e) {
     return $e() ? new Ht(e) : new Pt(e)
@@ -440,8 +440,8 @@ function Xt(e) {
         };
     i.useEffect(function() {
         return function() {
-            c(), g.current.forEach(function(E) {
-                return ce.cancel(E)
+            c(), g.current.forEach(function(w) {
+                return ce.cancel(w)
             })
         }
     }, []);
@@ -449,15 +449,15 @@ function Xt(e) {
     if (S) return null;
     var N = "".concat(t, "-handler"),
         D = W(N, "".concat(N, "-up"), y({}, "".concat(N, "-up-disabled"), a)),
-        x = W(N, "".concat(N, "-down"), y({}, "".concat(N, "-down-disabled"), o)),
-        $ = function() {
+        $ = W(N, "".concat(N, "-down"), y({}, "".concat(N, "-down-disabled"), o)),
+        E = function() {
             return g.current.push(ce(c))
         },
         I = {
             unselectable: "on",
             role: "button",
-            onMouseUp: $,
-            onMouseLeave: $
+            onMouseUp: E,
+            onMouseLeave: E
         };
     return i.createElement("div", {
         className: "".concat(N, "-wrap")
@@ -477,7 +477,7 @@ function Xt(e) {
         },
         "aria-label": "Decrease Value",
         "aria-disabled": o,
-        className: x
+        className: $
     }), r || i.createElement("span", {
         unselectable: "on",
         className: "".concat(t, "-handler-down-inner")
@@ -489,7 +489,7 @@ function ke(e) {
         n = t.includes(".");
     return n ? U(t.replace(/(\d)\.(\d)/g, "$1$2.")).fullStr : e + "0"
 }
-const Yt = function() {
+const Yt = (function() {
     var e = i.useRef(0),
         t = function() {
             ce.cancel(e.current)
@@ -502,7 +502,7 @@ const Yt = function() {
                 n()
             })
         }
-};
+});
 var Jt = ["prefixCls", "className", "style", "min", "max", "step", "defaultValue", "value", "disabled", "readOnly", "upHandler", "downHandler", "keyboard", "changeOnWheel", "controls", "classNames", "stringMode", "parser", "formatter", "precision", "decimalSeparator", "onChange", "onInput", "onPressEnter", "onStep", "changeOnBlur", "domRef"],
     Zt = ["disabled", "style", "prefixCls", "value", "prefix", "suffix", "addonBefore", "addonAfter", "className", "classNames"],
     je = function(t, n) {
@@ -526,16 +526,16 @@ var Jt = ["prefixCls", "className", "style", "min", "max", "step", "defaultValue
             S = e.readOnly,
             N = e.upHandler,
             D = e.downHandler,
-            x = e.keyboard,
-            $ = e.changeOnWheel,
-            I = $ === void 0 ? !1 : $,
-            E = e.controls,
-            R = E === void 0 ? !0 : E;
+            $ = e.keyboard,
+            E = e.changeOnWheel,
+            I = E === void 0 ? !1 : E,
+            w = e.controls,
+            R = w === void 0 ? !0 : w;
         e.classNames;
         var d = e.stringMode,
             O = e.parser,
             A = e.formatter,
-            w = e.precision,
+            x = e.precision,
             B = e.decimalSeparator,
             P = e.onChange,
             V = e.onInput,
@@ -565,8 +565,8 @@ var Jt = ["prefixCls", "className", "style", "min", "max", "step", "defaultValue
             c === void 0 && X(u)
         }
         var pe = i.useCallback(function(u, s) {
-                if (!s) return w >= 0 ? w : Math.max(z(u), z(g))
-            }, [w, g]),
+                if (!s) return x >= 0 ? x : Math.max(z(u), z(g))
+            }, [x, g]),
             ve = i.useCallback(function(u) {
                 var s = String(u);
                 if (O) return O(s);
@@ -603,10 +603,10 @@ var Jt = ["prefixCls", "className", "style", "min", "max", "step", "defaultValue
         }
         var Y = i.useMemo(function() {
                 return Te(v)
-            }, [v, w]),
+            }, [v, x]),
             J = i.useMemo(function() {
                 return Te(o)
-            }, [o, w]),
+            }, [o, x]),
             Oe = i.useMemo(function() {
                 return !Y || !h || h.isInvalidate() ? !1 : Y.lessEquals(h)
             }, [Y, h]),
@@ -679,7 +679,7 @@ var Jt = ["prefixCls", "className", "style", "min", "max", "step", "defaultValue
             rt = function(s) {
                 var p = s.key,
                     l = s.shiftKey;
-                _.current = !0, K.current = l, p === "Enter" && (G.current || (_.current = !1), Ae(!1), k == null || k(s)), x !== !1 && !G.current && ["Up", "ArrowUp", "Down", "ArrowDown"].includes(p) && (Se(p === "Up" || p === "ArrowUp"), s.preventDefault())
+                _.current = !0, K.current = l, p === "Enter" && (G.current || (_.current = !1), Ae(!1), k == null || k(s)), $ !== !1 && !G.current && ["Up", "ArrowUp", "Down", "ArrowDown"].includes(p) && (Se(p === "Up" || p === "ArrowUp"), s.preventDefault())
             },
             at = function() {
                 _.current = !1, K.current = !1
@@ -703,7 +703,7 @@ var Jt = ["prefixCls", "className", "style", "min", "max", "step", "defaultValue
         };
         return Ie(function() {
             h.isInvalidate() || te(h, !1)
-        }, [w, A]), Ie(function() {
+        }, [x, A]), Ie(function() {
             var u = M(c);
             X(u);
             var s = M(ve(ee));
@@ -762,15 +762,15 @@ var Jt = ["prefixCls", "className", "style", "min", "max", "step", "defaultValue
             S = e.classNames,
             N = Pe(e, Zt),
             D = i.useRef(null),
-            x = i.useRef(null),
             $ = i.useRef(null),
+            E = i.useRef(null),
             I = function(R) {
-                $.current && Rt($.current, R)
+                E.current && Rt(E.current, R)
             };
         return i.useImperativeHandle(t, function() {
-            return Gt($.current, {
+            return Gt(E.current, {
                 focus: I,
-                nativeElement: D.current.nativeElement || x.current
+                nativeElement: D.current.nativeElement || $.current
             })
         }), i.createElement(xt, {
             className: b,
@@ -794,8 +794,8 @@ var Jt = ["prefixCls", "className", "style", "min", "max", "step", "defaultValue
         }, i.createElement(Qt, ae({
             prefixCls: o,
             disabled: n,
-            ref: $,
-            domRef: x,
+            ref: E,
+            domRef: $,
             className: S == null ? void 0 : S.input
         }, N)))
     });
@@ -854,15 +854,15 @@ const tn = e => {
             paddingBlockLG: S,
             paddingInlineLG: N,
             colorIcon: D,
-            motionDurationMid: x,
-            handleHoverColor: $,
+            motionDurationMid: $,
+            handleHoverColor: E,
             handleOpacity: I,
-            paddingInline: E,
+            paddingInline: w,
             paddingBlock: R,
             handleBg: d,
             handleActiveBg: O,
             colorTextDisabled: A,
-            borderRadiusSM: w,
+            borderRadiusSM: x,
             borderRadiusLG: B,
             controlWidth: P,
             handleBorderColor: V,
@@ -923,7 +923,7 @@ const tn = e => {
                 "&-sm": {
                     padding: 0,
                     fontSize: o,
-                    borderRadius: w,
+                    borderRadius: x,
                     [`input${t}-input`]: {
                         height: T(g).sub(T(n).mul(2)).equal(),
                         padding: `${C(b)} ${C(c)}`
@@ -952,7 +952,7 @@ const tn = e => {
                         },
                         "&-sm": {
                             [`${t}-group-addon`]: {
-                                borderRadius: w
+                                borderRadius: x
                             }
                         }
                     }, Ft(e)), kt(e)), {
@@ -981,13 +981,13 @@ const tn = e => {
                 [t]: {
                     "&-input": Object.assign(Object.assign(Object.assign(Object.assign({}, ye(e)), {
                         width: "100%",
-                        padding: `${C(R)} ${C(E)}`,
+                        padding: `${C(R)} ${C(w)}`,
                         textAlign: "start",
                         backgroundColor: "transparent",
                         border: 0,
                         borderRadius: a,
                         outline: 0,
-                        transition: `all ${x} linear`,
+                        transition: `all ${$} linear`,
                         appearance: "textfield",
                         fontSize: "inherit"
                     }), At(e.colorTextPlaceholder)), {
@@ -1018,7 +1018,7 @@ const tn = e => {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "stretch",
-                    transition: `all ${x}`,
+                    transition: `all ${$}`,
                     overflow: "hidden",
                     [`${t}-handler`]: {
                         display: "flex",
@@ -1044,7 +1044,7 @@ const tn = e => {
                     textAlign: "center",
                     cursor: "pointer",
                     borderInlineStart: `${C(n)} ${r} ${V}`,
-                    transition: `all ${x} linear`,
+                    transition: `all ${$} linear`,
                     "&:active": {
                         background: O
                     },
@@ -1054,12 +1054,12 @@ const tn = e => {
               ${t}-handler-up-inner,
               ${t}-handler-down-inner
             `]: {
-                            color: $
+                            color: E
                         }
                     },
                     "&-up-inner, &-down-inner": Object.assign(Object.assign({}, vt()), {
                         color: D,
-                        transition: `all ${x} linear`,
+                        transition: `all ${$} linear`,
                         userSelect: "none"
                     })
                 },
@@ -1227,11 +1227,11 @@ const Ue = i.forwardRef((e, t) => {
             prefix: S,
             suffix: N,
             bordered: D,
-            readOnly: x,
-            status: $,
+            readOnly: $,
+            status: E,
             controls: I,
-            variant: E
-        } = e, R = on(e, ["className", "rootClassName", "size", "disabled", "prefixCls", "addonBefore", "addonAfter", "prefix", "suffix", "bordered", "readOnly", "status", "controls", "variant"]), d = n("input-number", m), O = bt(d), [A, w, B] = an(d, O), {
+            variant: w
+        } = e, R = on(e, ["className", "rootClassName", "size", "disabled", "prefixCls", "addonBefore", "addonAfter", "prefix", "suffix", "bordered", "readOnly", "status", "controls", "variant"]), d = n("input-number", m), O = bt(d), [A, x, B] = an(d, O), {
             compactSize: P,
             compactItemClassnames: V
         } = St(d, r);
@@ -1252,22 +1252,22 @@ const Ue = i.forwardRef((e, t) => {
             status: fe,
             isFormItemInput: me,
             feedbackIcon: ie
-        } = i.useContext(Nt), L = jt(fe, $), H = It(h => {
+        } = i.useContext(Nt), L = jt(fe, E), H = It(h => {
             var X;
             return (X = f ?? P) !== null && X !== void 0 ? X : h
-        }), oe = i.useContext(yt), q = g ?? oe, [Q, _] = $t("inputNumber", E, D), G = Z && i.createElement(i.Fragment, null, ie), K = W({
+        }), oe = i.useContext(yt), q = g ?? oe, [Q, _] = $t("inputNumber", w, D), G = Z && i.createElement(i.Fragment, null, ie), K = W({
             [`${d}-lg`]: H === "large",
             [`${d}-sm`]: H === "small",
             [`${d}-rtl`]: r === "rtl",
             [`${d}-in-form-item`]: me
-        }, w), ge = `${d}-group`, se = i.createElement(en, Object.assign({
+        }, x), ge = `${d}-group`, se = i.createElement(en, Object.assign({
             ref: a,
             disabled: q,
             className: W(B, O, o, v, V),
             upHandler: k,
             downHandler: j,
             prefixCls: d,
-            readOnly: x,
+            readOnly: $,
             controls: T,
             prefix: S,
             suffix: G || N,
@@ -1288,17 +1288,17 @@ const Ue = i.forwardRef((e, t) => {
                     [`${d}-affix-wrapper-sm`]: H === "small",
                     [`${d}-affix-wrapper-lg`]: H === "large",
                     [`${d}-affix-wrapper-rtl`]: r === "rtl",
-                    [`${d}-affix-wrapper-without-controls`]: I === !1 || q
-                }, w),
+                    [`${d}-affix-wrapper-without-controls`]: I === !1 || q || $
+                }, x),
                 wrapper: W({
                     [`${ge}-rtl`]: r === "rtl"
-                }, w),
+                }, x),
                 groupWrapper: W({
                     [`${d}-group-wrapper-sm`]: H === "small",
                     [`${d}-group-wrapper-lg`]: H === "large",
                     [`${d}-group-wrapper-rtl`]: r === "rtl",
                     [`${d}-group-wrapper-${Q}`]: _
-                }, Fe(`${d}-group-wrapper`, L, Z), w)
+                }, Fe(`${d}-group-wrapper`, L, Z), x)
             }
         }, R));
         return A(se)

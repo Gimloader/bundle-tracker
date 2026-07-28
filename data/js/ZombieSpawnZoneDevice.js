@@ -1,7 +1,7 @@
 import {
     al as l,
-    as as m,
-    au as c,
+    am as s,
+    aq as c,
     L as g
 } from "./App-41.js";
 import {
@@ -14,7 +14,7 @@ import {
     a as h
 } from "./ZonedDeviceDisplay.js";
 import {
-    F as s,
+    F as m,
     R as u
 } from "./ReplaceVisualEditingPreview.js";
 import {
@@ -103,9 +103,9 @@ class Lt extends l {
                 }), this.rect && this.rect.updateAlpha(t)
             }, this.setupVisualEditing = () => {
                 if (!a() || !p()) return;
-                const t = s(this, "width"),
-                    i = s(this, "height");
-                s(this, "rotation"), this.visualEditing.add.box({
+                const t = m(this, "width"),
+                    i = m(this, "height");
+                m(this, "rotation"), this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
                     angle: this.options.rotation,
@@ -125,7 +125,7 @@ class Lt extends l {
                 })
             }, a() && p() && this.parts.add.sprite({
                 ...w,
-                depthChange: m(2)
+                depthChange: s(2)
             }).view.setScale(.17), r() || e() ? 0 : h.shouldShow(this)) {
             this.setupVisualEditing();
             const t = c("#00FF00");
@@ -138,7 +138,7 @@ class Lt extends l {
                 borderColor: t,
                 borderAlpha: r() || e() ? 0 : 1,
                 borderWidth: 4,
-                depthChange: m(1),
+                depthChange: s(1),
                 ignoreInput: !0,
                 angle: this.options.rotation
             })

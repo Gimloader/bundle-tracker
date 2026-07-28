@@ -4,7 +4,7 @@ import {
     d as i,
     r as h,
     e as N,
-    dO as D
+    dQ as D
 } from "./_index.js";
 import {
     t as T,
@@ -34,7 +34,7 @@ import {
 import {
     V as G,
     C as v,
-    a as H
+    a as Q
 } from "./Centered.js";
 import {
     F as C
@@ -46,10 +46,10 @@ import {
     o as E
 } from "./mobxreact.esm.js";
 import {
-    F as J
+    F as H
 } from "./FetchDeviceName.js";
 import {
-    D as Q
+    D as J
 } from "./TutorialConsts.js";
 import {
     C as X
@@ -176,7 +176,7 @@ const ie = t => e.jsxs(re, {
     se = () => e.jsx(R, {
         children: "Repeat the wire pulse!"
     }),
-    ae = i(H).attrs({
+    ae = i(Q).attrs({
         className: "maxWidth"
     })`
   padding: 20px;
@@ -195,7 +195,7 @@ const ie = t => e.jsxs(re, {
             s = t.side === "left",
             p = s ? t.wire.startDevice : t.wire.endDevice,
             r = A(p),
-            c = ((o = r == null ? void 0 : r.deviceOption) == null ? void 0 : o.id) === Q.wireRepeater,
+            c = ((o = r == null ? void 0 : r.deviceOption) == null ? void 0 : o.id) === J.wireRepeater,
             u = () => {
                 r && (g.me.editing.device.currentlyEditedDevice = {
                     id: r.id,
@@ -223,7 +223,7 @@ const ie = t => e.jsxs(re, {
                     },
                     level: 4,
                     onClick: u,
-                    children: J(p)
+                    children: H(p)
                 })
             }), c ? s ? e.jsx(ne, {}) : e.jsx(se, {}) : e.jsxs(e.Fragment, {
                 children: [e.jsx(pe, {

@@ -1,26 +1,25 @@
 import {
-    as as K,
-    au as A,
+    am as K,
+    aq as A,
     a0 as v,
-    b2 as tt,
-    b3 as nt,
-    aQ as B,
-    aZ as X,
-    aY as et,
-    aS as x,
-    b4 as it,
-    b5 as ot,
+    bb as tt,
+    bc as nt,
+    b6 as B,
+    b5 as et,
+    a$ as x,
+    bd as it,
+    be as ot,
     al as at,
     T as st
 } from "./App-41.js";
 import {
-    s as Y,
+    s as X,
     I,
     c as rt,
     a as z,
     g as N,
     S as D,
-    i as M,
+    i as b,
     d as ht
 } from "./FixSpinePlugin.js";
 import {
@@ -32,6 +31,9 @@ import {
 import {
     b as mt
 } from "./polished.esm.js";
+import {
+    F as Y
+} from "./FetchTextureDimensions.js";
 import {
     U as gt
 } from "./Assets.js";
@@ -45,7 +47,7 @@ import {
     T as lt
 } from "./TextPadding.js";
 import {
-    F as b,
+    F as M,
     R as U
 } from "./ReplaceVisualEditingPreview.js";
 import "./Button.js";
@@ -281,7 +283,7 @@ const u = (t, n) => t.options.height / 2 + K(n),
             intensity: t.grayScaleFactor
         }))
     },
-    W = (t, n) => {
+    q = (t, n) => {
         t.scene.plugins.get("rexGrayScalePipeline").remove(n.view)
     },
     Et = t => {
@@ -290,7 +292,7 @@ const u = (t, n) => t.options.height / 2 + K(n),
     },
     At = t => {
         var n, e;
-        t.grayScalePipelines.length !== 0 && ((n = t.requiredImage) != null && n.view && W(t, t.requiredImage), (e = t.grantedImage) != null && e.view && W(t, t.grantedImage), t.grayScalePipelines = [])
+        t.grayScalePipelines.length !== 0 && ((n = t.requiredImage) != null && n.view && q(t, t.requiredImage), (e = t.grantedImage) != null && e.view && q(t, t.grantedImage), t.grayScalePipelines = [])
     },
     _t = t => {
         t.grayScaleFactor > 0 ? (Et(t), t.grayScalePipelines.forEach(n => {
@@ -302,11 +304,11 @@ const u = (t, n) => t.options.height / 2 + K(n),
             ...gt
         };
         if (n) {
-            const p = Y.worldOptions.itemOptions.find(E => E.id === n);
+            const p = X.worldOptions.itemOptions.find(E => E.id === n);
             p && (h.imageId = p.id, h.imageUrl = p.previewImage)
         }
-        const m = B(h.imageId),
-            a = X({
+        const m = Y(h.imageId),
+            a = B({
                 height: m.height,
                 width: m.width,
                 newWidth: i,
@@ -324,7 +326,7 @@ const u = (t, n) => t.options.height / 2 + K(n),
         })
     },
     w = t => I() ? t.options.amountOfRequiredItem : t.state.cost ?? t.options.amountOfRequiredItem,
-    q = t => {
+    W = t => {
         let n = `${f(w(t))}`;
         return t.options.allowFunding ? `${f(t.state.fundedAmount||0)} / ${n}` : n
     },
@@ -338,11 +340,11 @@ const u = (t, n) => t.options.height / 2 + K(n),
         })), pt({
             familyName: V.fontFamily,
             onLoad: () => {
-                const e = q(t);
+                const e = W(t);
                 if (t.priceText) t.priceText.view.setText(e);
                 else {
                     const r = t.parts.add.text({
-                        text: q(t),
+                        text: W(t),
                         y: n,
                         depthChange: u(t, c.INFO),
                         textStyle: V
@@ -432,8 +434,8 @@ const u = (t, n) => t.options.height / 2 + K(n),
             y: -40 / 2,
             depthChange: u(t, c.GRANTED_ITEM),
             onReady: e => {
-                const i = B(n),
-                    o = X({
+                const i = Y(n),
+                    o = B({
                         height: i.height,
                         width: i.width,
                         newWidth: Math.min(s.ITEM_MAX_SIZE, t.options.width * .7),
@@ -443,7 +445,7 @@ const u = (t, n) => t.options.height / 2 + K(n),
             }
         })
     },
-    Mt = t => {
+    bt = t => {
         var n;
         return ((n = z().worldManager.devices.interactives.currentDevice) == null ? void 0 : n.id) === t
     },
@@ -451,10 +453,10 @@ const u = (t, n) => t.options.height / 2 + K(n),
     H = t => Math.max(0, w(t) - (C(t) && t.state.fundedAmount || 0)),
     S = t => {
         let n = 0;
-        const e = Y.me.inventory.slots.get(t.options.requiredItemId);
+        const e = X.me.inventory.slots.get(t.options.requiredItemId);
         return e && (n = e.amount), n
     },
-    bt = t => {
+    Mt = t => {
         const n = H(t),
             e = S(t);
         return C(t) && e < n ? g.fundingAction : g.purchaseAction
@@ -507,11 +509,11 @@ const u = (t, n) => t.options.height / 2 + K(n),
             t.interactiveZones.setForceDisabled(!0);
             return
         } else t.interactiveZones.setForceDisabled(!1);
-        if (!Mt(t.id) && !n) return;
+        if (!bt(t.id) && !n) return;
         const e = Ht(t),
             i = {
                 message: xt(t),
-                action: bt(t),
+                action: Mt(t),
                 topHeader: e == null ? void 0 : e.text,
                 topHeaderColor: e == null ? void 0 : e.color,
                 bottomHeader: Gt(t),
@@ -533,7 +535,7 @@ const u = (t, n) => t.options.height / 2 + K(n),
             J(t, !0)
         })
     };
-class ie extends at {
+class oe extends at {
     constructor(n) {
         if (super(n), this.grayScalePipelines = [], this.grayScaleFactor = 0, this.animationSpeedFactor = 1, this.rays = [], this.cumulTime = 0, this.currentRaysAngle = 0, this.onUpdate = e => {
                 if (this.cull.isInsideView) {
@@ -574,9 +576,9 @@ class ie extends at {
                     })
                 }))
             }, this.setupVisualEditing = () => {
-                if (!I() || !M()) return;
-                const e = b(this, "width"),
-                    i = b(this, "height");
+                if (!I() || !b()) return;
+                const e = M(this, "width"),
+                    i = M(this, "height");
                 this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
@@ -595,8 +597,8 @@ class ie extends at {
                     }
                 })
             }, this.setupVisualEditingInvisible = () => {
-                if (!I() || !M()) return;
-                const e = b(this, "radius");
+                if (!I() || !b()) return;
+                const e = M(this, "radius");
                 this.visualEditing.add.circle({
                     radius: this.options.radius,
                     minRadius: e.min,
@@ -610,7 +612,7 @@ class ie extends at {
                     }
                 })
             }, I() && !this.options.activeOnStart && (this.animationSpeedFactor = s.INACTIVE_ANIMATION_SLOW_DOWN, this.grayScaleFactor = s.INACTIVE_GRAY_SCALE_FACTOR), ht() && !this.state.active && (this.animationSpeedFactor = s.INACTIVE_ANIMATION_SLOW_DOWN, this.grayScaleFactor = s.INACTIVE_GRAY_SCALE_FACTOR), this.options.visibleInGame ? this.setupVisualEditing() : this.setupVisualEditingInvisible(), Ot(this), !this.options.visibleInGame) {
-            I() && M() ? this.addIconLook() : this.boundingBox.setHardcoded({
+            I() && b() ? this.addIconLook() : this.boundingBox.setHardcoded({
                 width: this.options.radius * 2,
                 height: this.options.radius * 2
             });
@@ -645,6 +647,6 @@ class ie extends at {
     }
 }
 export {
-    ie as
+    oe as
     default
 };

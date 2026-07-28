@@ -4,7 +4,7 @@ import {
 import {
     al as n,
     a8 as u,
-    aX as d
+    b4 as d
 } from "./App-41.js";
 import {
     g as m,
@@ -91,7 +91,7 @@ const w = {
 var i = (o => (o.stopped = "stopped", o.playing = "playing", o.fadingOut = "fadingOut", o))(i || {});
 const t = new Map,
     p = new Map;
-class Et extends n {
+class Dt extends n {
     constructor(e) {
         if (super(e), this.onMasterVolumeChange = () => {
                 this.howl && this.howl.volume(m({
@@ -140,6 +140,6 @@ class Et extends n {
     }
 }
 export {
-    Et as MusicDevice, Et as
+    Dt as MusicDevice, Dt as
     default
 };

@@ -594,7 +594,7 @@ var Ft = `.reactEasyCrop_Container {
     Wt = 1,
     Lt = 3,
     kt = 1,
-    Ut = function(n) {
+    Ut = (function(n) {
         wt(r, n);
 
         function r() {
@@ -1040,7 +1040,7 @@ var Ft = `.reactEasyCrop_Container {
                 y: Number(e.clientY)
             }
         }, r
-    }(m.Component);
+    })(m.Component);
 const L = "img-crop",
     be = 1,
     ne = .1,
@@ -1279,7 +1279,7 @@ const Ht = m.forwardRef((n, r) => {
                     Z(D)
                 }
             }), []),
-            Ee = m.useCallback(b => (A, E) => new Promise((w, Z) => ce(void 0, void 0, void 0, function*() {
+            Ee = m.useCallback(b => ((A, E) => new Promise((w, Z) => ce(void 0, void 0, void 0, function*() {
                 let I = A;
                 if (typeof M.current.beforeCrop == "function") try {
                     const j = yield M.current.beforeCrop(A, E);
@@ -1336,7 +1336,7 @@ const Ht = m.forwardRef((n, r) => {
                         })
                     }), G, e)
                 })
-            })), [se, e, K]),
+            }))), [se, e, K]),
             Je = m.useCallback(b => {
                 const A = Array.isArray(b) ? b[0] : b,
                     E = A.props,

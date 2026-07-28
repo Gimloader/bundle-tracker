@@ -8,13 +8,13 @@ import {
     e as y
 } from "./FixSpinePlugin.js";
 import {
-    al as I,
-    T as A,
-    b6 as f,
-    b7 as h,
-    b8 as u,
-    am as b,
-    an as C
+    al as A,
+    T as I,
+    bf as f,
+    bg as h,
+    bh as u,
+    aA as b,
+    aB as C
 } from "./App-41.js";
 import {
     p as g
@@ -88,11 +88,11 @@ import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var r = (o => (o.warning = "warning", o.outOfItem = "outOfItem", o))(r || {});
-class _t extends I {
+class _t extends A {
     constructor(v) {
         if (super(v), this.onMessage = t => {
                 var p, m, n, s, a;
-                ((p = t == null ? void 0 : t.data) == null ? void 0 : p.characterId) === A() && (t.key === r.warning ? (this.options.showWarningAlert && g({
+                ((p = t == null ? void 0 : t.data) == null ? void 0 : p.characterId) === I() && (t.key === r.warning ? (this.options.showWarningAlert && g({
                     path: i("sounds/alert-notification.mp3"),
                     volume: l({
                         type: c.soundEffect,

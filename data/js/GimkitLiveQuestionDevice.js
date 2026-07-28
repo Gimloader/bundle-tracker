@@ -12,7 +12,7 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     al as l,
-    a_ as n
+    b7 as n
 } from "./App-41.js";
 import {
     G as a

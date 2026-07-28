@@ -12,13 +12,13 @@ import {
     N as S
 } from "./NewWidthSameAspectRatio.js";
 import {
-    b2 as s,
-    al as O,
-    aS as W,
-    aT as b,
-    aU as C,
-    aV as A,
-    b9 as G,
+    bb as s,
+    al as b,
+    a$ as O,
+    b0 as W,
+    b1 as C,
+    b2 as A,
+    bi as G,
     L as f
 } from "./App-41.js";
 import {
@@ -116,38 +116,38 @@ const c = {
         return c[r]
     };
 var w = (e => (e.collect = "collect", e))(w || {});
-class ii extends O {
+class ii extends b {
     constructor(o) {
         super(o), this.hasLoaded = !1, this.isShowing = !0, this.isWithinInteractionRange = !1, this.itemDimensions = {
             width: 0,
             height: 0
         }, this.setInteractionInfo = () => {
             var u;
-            const t = W(this.options.itemId),
-                i = b(this.options.itemId),
+            const t = O(this.options.itemId),
+                i = W(this.options.itemId),
                 I = C(this.options.itemId);
-            let a = !0;
+            let n = !0;
             if (i || I) {
-                const n = ((u = l.me.inventory.slots.get(this.options.itemId)) == null ? void 0 : u.amount) ?? 0;
+                const a = ((u = l.me.inventory.slots.get(this.options.itemId)) == null ? void 0 : u.amount) ?? 0;
                 if (i) {
                     const h = R({
                         itemId: this.options.itemId
                     });
-                    a = n < h
+                    n = a < h
                 } else if (I) {
                     const h = T({
                         itemId: this.options.itemId
                     });
-                    a = n < h
+                    n = a < h
                 }
             }
             if (t) {
-                const n = this.options.itemAmount;
+                const a = this.options.itemAmount;
                 this.interactiveZones.setInfo({
-                    message: A(t, n),
+                    message: A(t, a),
                     action: p.interaction.message.action,
-                    allowedToInteract: a,
-                    topHeader: a ? void 0 : p.interaction.message.fullInventory,
+                    allowedToInteract: n,
+                    topHeader: n ? void 0 : p.interaction.message.fullInventory,
                     topHeaderColor: p.interaction.message.fullInventoryColor
                 })
             }

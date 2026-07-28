@@ -22,11 +22,11 @@ import {
     E as M,
     a as $,
     T as _,
-    K as ae,
+    L as ae,
     P as de
 } from "./FixSpinePlugin.js";
 import {
-    u as K,
+    u as U,
     c as p,
     a as ce,
     s as k,
@@ -152,7 +152,7 @@ const be = e => {
         const {
             me: t,
             gui: n
-        } = K();
+        } = U();
         h.useEffect(() => {
             const s = p(g.Adding.SwitchToRemoveMode(), () => {
                     ce() && k(L.removing)
@@ -260,12 +260,12 @@ const be = e => {
                         S = $().actionManager.multiselect.movedOrCopiedDevices,
                         A = $().actionManager.multiselect.movedOrCopiedDevices.filter(T => T.deviceOption.id === P.prop),
                         oe = A.length > 0,
-                        U = $().actionManager.multiselect.movedOrCopiedDevices.length === A.length;
+                        G = $().actionManager.multiselect.movedOrCopiedDevices.length === A.length;
                     let j = `Multiple ${d.device.plural}`;
-                    if (oe && !U ? j = `Multiple ${d.device.plural}/${d.prop.plural}` : U && (j = `Multiple ${d.prop.plural}`), S.length === 1) {
+                    if (oe && !G ? j = `Multiple ${d.device.plural}/${d.prop.plural}` : G && (j = `Multiple ${d.prop.plural}`), S.length === 1) {
                         const T = S[0],
-                            G = R(T == null ? void 0 : T.id);
-                        G && (j = G)
+                            K = R(T == null ? void 0 : T.id);
+                        K && (j = K)
                     }
                     return {
                         tagline: W ? "Copying" : "Moving",
@@ -384,7 +384,7 @@ const be = e => {
                     terrain: e
                 }
             }
-        } = K(), t = h.useRef(), n = h.useRef(), s = e.buildTerrainAsWall, c = () => {
+        } = U(), t = h.useRef(), n = h.useRef(), s = e.buildTerrainAsWall, c = () => {
             D() || (e.buildTerrainAsWall = !1)
         }, a = () => {
             D() || (e.buildTerrainAsWall = !0)
@@ -495,7 +495,7 @@ const be = e => {
                     __devicesUnderCursor: t
                 }
             }
-        } = K(), n = h.useMemo(() => e.hoveringOverSupportedDevice ? t[0] ? R(t[0]) ?? q(d.device.singular) : q(d.device.singular) : `Select a ${d.device.singular} or ${d.prop.singular} to ${e.startDeviceSelected?"complete":"start"} the ${d.wire.singular}`, [e.hoveringOverSupportedDevice, t, e.startDeviceSelected]);
+        } = U(), n = h.useMemo(() => e.hoveringOverSupportedDevice ? t[0] ? R(t[0]) ?? q(d.device.singular) : q(d.device.singular) : `Select a ${d.device.singular} or ${d.prop.singular} to ${e.startDeviceSelected?"complete":"start"} the ${d.wire.singular}`, [e.hoveringOverSupportedDevice, t, e.startDeviceSelected]);
         return i.jsxs(Me, {
             className: "maxWidth",
             children: [i.jsx(Be, {
@@ -541,7 +541,7 @@ const be = e => {
 `,
     Pe = O(() => ie() ? i.jsx(Ne, {}) : null),
     Re = e => i.jsxs(Ee, {
-        children: [i.jsxs(Ke, {
+        children: [i.jsxs(Ue, {
             children: [i.jsx(We, {
                 addingInfo: e.addingInfo
             }), i.jsx(Fe, {})]
@@ -550,7 +550,7 @@ const be = e => {
     Ee = l.div`
   padding: 25px;
 `,
-    Ke = l.div.attrs({
+    Ue = l.div.attrs({
         className: "flex between vc"
     })``,
     yt = O(() => {
@@ -570,7 +570,7 @@ const be = e => {
             xe(Z.home), k(L.none), Ce(ae.home)
         };
         return Te(de.Input.Keyboard.KeyCodes.ESC, a), e ? i.jsx(i.Fragment, {
-            children: i.jsx(Ue, {
+            children: i.jsx(Ge, {
                 children: i.jsxs(qe, {
                     initial: {
                         y: "100%",
@@ -588,7 +588,7 @@ const be = e => {
                         duration: .2,
                         ease: "easeOut"
                     },
-                    children: [i.jsx(Ge, {
+                    children: [i.jsx(Ke, {
                         children: i.jsx(te, {
                             children: i.jsx(se, {
                                 style: {
@@ -613,13 +613,13 @@ const be = e => {
             })
         }) : null
     }),
-    Ue = l.div.attrs({
+    Ge = l.div.attrs({
         className: "flex maxAll"
     })`
   align-items: flex-end;
   position: relative;
 `,
-    Ge = l.div.attrs({
+    Ke = l.div.attrs({
         className: "maxAll flex"
     })`
   position: absolute;

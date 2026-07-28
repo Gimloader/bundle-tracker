@@ -12,7 +12,7 @@ import {
     C as k
 } from "./Button.js";
 import {
-    Q as a,
+    U as a,
     a as I,
     P as w
 } from "./FixSpinePlugin.js";

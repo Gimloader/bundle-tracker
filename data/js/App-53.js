@@ -1,7 +1,7 @@
 const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/App-75.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/mobxreact.esm.js", "assets/TutorialConsts.js", "assets/Hook.js", "assets/App-41.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/FixSpinePlugin.js", "assets/GetAssetPath.js", "assets/MapModeType.js", "assets/MapStyle.js", "assets/playSound.js", "assets/howler.js", "assets/index-21.js", "assets/QuizTypes.js", "assets/ActionButton.js", "assets/index-5.js", "assets/index-18.js", "assets/context.js", "assets/FontAwesomeIcon.js", "assets/Centered.js", "assets/CapitalizeFirstLetter.js", "assets/index-4.js", "assets/motion.js", "assets/index-2.js", "assets/index-14.js", "assets/EditOutlined.js", "assets/styleChecker.js", "assets/index-3.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/SixteenByNineScaler.js", "assets/index-20.js", "assets/index-22.js", "assets/index-1.js", "assets/progress.js", "assets/ElementIds.js", "assets/SeasonTicketName.js", "assets/useQuery.js", "assets/___vite-browser-external_commonjs-proxy.js", "assets/util-1.js", "assets/util-2.js", "assets/Shortcut.js", "assets/Names.js", "assets/useWillUnmount.js", "assets/use-motion-value.js", "assets/use-transform.js", "assets/index-6.js", "assets/AccessibleAnchor.js", "assets/CircularProgress.js", "assets/clsx.m.js", "assets/index-17.js", "assets/use-force-update.js", "assets/GimkitLiveQuestion.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/Tooltip.js", "assets/index-9.js", "assets/index-23.js", "assets/useIntervalWhen.js", "assets/index-10.js", "assets/move.js", "assets/react-flip-move.es.js", "assets/sounds.js", "assets/App-5.js", "assets/AnimatedBackground-2.js", "assets/useDebouncedValue.js", "assets/FillRemainingSpace.js", "assets/index-24.js", "assets/Header.js", "assets/index-8.js", "assets/DownOutlined.js", "assets/ReplaceDevice.js", "assets/GetCurrentMapStyle.js", "assets/index-28.js", "assets/index-7.js", "assets/LoadGoogleFontAfterSceneStart.js", "assets/useItemAmount.js", "assets/clsx.js", "assets/index-29.js"]))) => i.map(i => d[i]);
 import {
     r as y,
-    dO as te,
+    dQ as te,
     j as s,
     d as v,
     B as U,
@@ -20,7 +20,7 @@ import {
     z as k,
     $ as E,
     M as b,
-    a0 as K,
+    a0 as Q,
     B as le,
     t as ce,
     y as de
@@ -29,20 +29,24 @@ import {
     R as ue
 } from "./ReplaceDevice.js";
 import {
-    D as Q
+    D as K
 } from "./TutorialConsts.js";
 import {
+    c as me,
+    s as g
+} from "./FixSpinePlugin.js";
+import {
     G as F,
-    C as me
+    C as pe
 } from "./GetCurrentMapStyle.js";
 import {
     S as he
 } from "./index-28.js";
 import {
-    T as pe
+    T as fe
 } from "./index-7.js";
 import {
-    L as fe
+    L as ye
 } from "./LoadGoogleFontAfterSceneStart.js";
 import {
     S as $
@@ -51,27 +55,24 @@ import {
     S as R
 } from "./index-2.js";
 import {
-    s as g
-} from "./FixSpinePlugin.js";
-import {
-    L as ye,
-    u as ve,
-    a as ge,
-    C as xe,
-    b as Oe,
-    c as Ce
+    L as ve,
+    u as ge,
+    a as xe,
+    C as Oe,
+    b as Ce,
+    c as Ie
 } from "./useItemAmount.js";
 import {
     M as T
 } from "./Button.js";
 import {
-    I as Ie
+    I as je
 } from "./index-3.js";
 import {
-    A as je
+    A as Pe
 } from "./index-29.js";
 import {
-    a as Pe
+    a as Se
 } from "./index-23.js";
 import {
     G as X
@@ -86,13 +87,13 @@ import {
     T as B
 } from "./index-14.js";
 import {
-    a as Se
+    a as we
 } from "./Centered.js";
 import {
-    E as we,
-    T as Ee
+    E as Ee,
+    T as Ae
 } from "./ActionButton.js";
-const Lt = {
+const Nt = {
         grid: {
             singular: "block",
             plural: "blocks"
@@ -101,19 +102,19 @@ const Lt = {
             plural: "pieces"
         }
     },
-    Nt = () => {
+    Mt = () => {
         const {
             me: e,
             world: {
                 devices: n
             }
-        } = D(), [t, a] = y.useState("{}"), [i, r] = y.useState("{}"), [c, o] = y.useState("{}");
+        } = D(), [t, a] = y.useState("{}"), [i, o] = y.useState("{}"), [c, r] = y.useState("{}");
         y.useEffect(() => {
             const u = te(() => n.devices.get(e.editing.device.currentlyEditedDevice.id), m => {
-                m && (a(JSON.stringify(m.options)), r(JSON.stringify({
+                m && (a(JSON.stringify(m.options)), o(JSON.stringify({
                     x: m.x,
                     y: m.y
-                })), m.hooks ? o(JSON.stringify(m.hooks)) : o("{}"))
+                })), m.hooks ? r(JSON.stringify(m.hooks)) : r("{}"))
             }, {
                 fireImmediately: !0
             });
@@ -123,79 +124,80 @@ const Lt = {
         }, []);
         const l = JSON.parse(t),
             d = JSON.parse(i),
-            p = JSON.parse(c);
+            h = JSON.parse(c);
         return {
             options: l,
             position: d,
-            hooks: p
+            hooks: h
         }
     },
-    Ae = ["shadowsEnabled", "shadowsPlacement"],
-    be = ["canBeDamaged", "health", "useAdaptiveHealth", "adaptiveHealthPerPlayer", "onDestroyedChannel", "UseColliders"],
+    be = ["shadowsEnabled", "shadowsPlacement"],
+    ke = ["canBeDamaged", "health", "useAdaptiveHealth", "adaptiveHealthPerPlayer", "onDestroyedChannel", "UseColliders"],
     Y = e => {
         var t;
         let n = !1;
         return (t = e.hideIf) != null && t.length && e.hideIf.forEach(a => {
             a.every(i => {
-                const r = e.options[i.key] ?? void 0;
+                const o = e.options[i.key] ?? void 0;
                 if (i.compare === "EQUAL") {
-                    if (i.value === r) return !0
+                    if (i.value === o) return !0
                 } else if (i.compare === "NOT_EQUAL") {
-                    if (i.value !== r) return !0
+                    if (i.value !== o) return !0
                 } else if (i.compare === "LESS_THAN") {
-                    if (Number(r) < Number(i.value)) return !0
-                } else if (i.compare === "GREATER_THAN" && Number(r) > Number(i.value)) return !0;
+                    if (Number(o) < Number(i.value)) return !0
+                } else if (i.compare === "GREATER_THAN" && Number(o) > Number(i.value)) return !0;
                 return !1
             }) && (n = !0)
         }), n
     },
-    ke = e => {
-        var t, a, i, r;
+    Le = e => {
+        var t, a, i, o;
         let n = e.optionSchema.options.filter(c => !c.option.hidden).filter(c => {
             var l;
-            let o = !1;
-            return (l = c.option.hideIf) != null && l.length && (o = Y({
+            let r = !1;
+            return (l = c.option.hideIf) != null && l.length && (r = Y({
                 hideIf: c.option.hideIf,
                 options: e.options
-            })), !o
+            })), !r
         });
-        if (e.device.deviceOption.id === Q.prop) {
+        if (e.device.deviceOption.id === K.prop) {
             const c = e.device.options,
-                o = ie(c.propId);
-            if (!o) return n;
-            const l = (((t = o.rectColliders) == null ? void 0 : t.length) ?? 0) + (((a = o.circleColliders) == null ? void 0 : a.length) ?? 0) + (((i = o.ellipseColliders) == null ? void 0 : i.length) ?? 0) > 0,
-                d = (((r = o.shadows) == null ? void 0 : r.length) ?? 0) > 0;
-            n = n.filter(p => !(!d && Ae.includes(p.key) || !l && be.includes(p.key)))
+                r = ie(c.propId);
+            if (!r) return n;
+            const l = me() ? r.colliders.platformer : r.colliders.topDown,
+                d = (((t = l.rectangle) == null ? void 0 : t.length) ?? 0) + (((a = l.circle) == null ? void 0 : a.length) ?? 0) + (((i = l.capsule) == null ? void 0 : i.length) ?? 0) > 0,
+                h = (((o = r.shadows) == null ? void 0 : o.length) ?? 0) > 0;
+            n = n.filter(u => !(!h && be.includes(u.key) || !d && ke.includes(u.key)))
         }
         return n
     },
-    Le = e => ke({
+    Ne = e => Le({
         device: e.device,
         options: e.options,
         optionSchema: e.optionSchema
     }),
-    Ne = e => {
+    Me = e => {
         const {
             deviceTypeId: n,
             optionName: t
         } = e, a = J(n);
         if (!a) return !1;
-        const i = a.optionSchema.options.find(r => r.key === t);
+        const i = a.optionSchema.options.find(o => o.key === t);
         return i ? i.supportedMapStyles ? i.supportedMapStyles.includes(F()) : !0 : !1
     },
-    Me = (e, n) => {
+    Te = (e, n) => {
         const t = J(e);
         if (!t) return !1;
         const a = t.optionSchema.options.find(c => c.key === n);
-        if (!Ne({
+        if (!Me({
                 deviceTypeId: e,
                 optionName: n
             })) return !1;
         const i = (a == null ? void 0 : a.minimumRoleLevel) ?? M.min,
-            r = (a == null ? void 0 : a.maximumRoleLevel) ?? M.max;
-        return k(i, r)
+            o = (a == null ? void 0 : a.maximumRoleLevel) ?? M.max;
+        return k(i, o)
     },
-    Te = (e, n) => Math.round(e / n) * n,
+    Be = (e, n) => Math.round(e / n) * n,
     _ = e => {
         const {
             value: n,
@@ -204,31 +206,31 @@ const Lt = {
         y.useEffect(() => {
             i(n)
         }, [n]);
-        const r = l => {
+        const o = l => {
                 if (l === null && e.optionProps.allowEmpty) {
                     i(void 0);
                     return
                 }
                 let d = l;
-                t.step && l && (d = Te(l, t.step)), i(d)
+                t.step && l && (d = Be(l, t.step)), i(d)
             },
             c = () => {
                 e.onChange(a)
             },
-            o = l => {
+            r = l => {
                 i(l), e.onChange(l)
             };
         return t.useSlider ? s.jsx(he, {
             value: a,
-            onChange: r,
-            onAfterChange: o,
+            onChange: o,
+            onAfterChange: r,
             min: t.min,
             max: t.max,
             step: t.step,
             disabled: e.readOnly
-        }) : s.jsx(pe, {
+        }) : s.jsx(fe, {
             value: a,
-            onChange: r,
+            onChange: o,
             onBlur: c,
             min: t.min,
             max: t.max,
@@ -246,51 +248,51 @@ const Lt = {
             optionProps: n
         } = e, t = y.useMemo(() => {
             if (e.value !== "") return e.value
-        }, [e.value]), a = y.useMemo(() => n.options.some(o => o.value === "Fugaz One"), [n == null ? void 0 : n.options]);
+        }, [e.value]), a = y.useMemo(() => n.options.some(r => r.value === "Fugaz One"), [n == null ? void 0 : n.options]);
         y.useEffect(() => {
-            a && n.options.forEach(o => {
-                fe({
-                    familyName: o.name
+            a && n.options.forEach(r => {
+                ye({
+                    familyName: r.name
                 })
             })
         }, [a]);
-        const i = (c = n == null ? void 0 : n.options) == null ? void 0 : c.filter(o => o != null && o.supportedMapStyles && !(o != null && o.supportedMapStyles.includes(F())) ? !1 : (o == null ? void 0 : o.minimumRoleLevel) !== void 0 || (o == null ? void 0 : o.maximumRoleLevel) !== void 0 ? k(o == null ? void 0 : o.minimumRoleLevel, o == null ? void 0 : o.maximumRoleLevel) : !0);
+        const i = (c = n == null ? void 0 : n.options) == null ? void 0 : c.filter(r => r != null && r.supportedMapStyles && !(r != null && r.supportedMapStyles.includes(F())) ? !1 : (r == null ? void 0 : r.minimumRoleLevel) !== void 0 || (r == null ? void 0 : r.maximumRoleLevel) !== void 0 ? k(r == null ? void 0 : r.minimumRoleLevel, r == null ? void 0 : r.maximumRoleLevel) : !0);
         if (!n || !i.length) return null;
-        const r = o => {
-            e.onChange(o)
+        const o = r => {
+            e.onChange(r)
         };
         return s.jsx($, {
             value: t ?? void 0,
             allowClear: n.allowEmpty,
             placeholder: n.placeholder || "None Selected",
-            onSelect: r,
-            onClear: () => r(void 0),
-            filterOption: (o, l) => l && l.name && l.name.toString().toUpperCase && o && o.toUpperCase ? l.name.toString().toUpperCase().indexOf(o.toUpperCase()) !== -1 : !1,
+            onSelect: o,
+            onClear: () => o(void 0),
+            filterOption: (r, l) => l && l.name && l.name.toString().toUpperCase && r && r.toUpperCase ? l.name.toString().toUpperCase().indexOf(r.toUpperCase()) !== -1 : !1,
             showSearch: !0,
             disabled: e.readOnly,
             style: {
                 width: "100%"
             },
-            children: i.map(o => s.jsx($.Option, {
-                value: o.value,
-                name: o.name,
+            children: i.map(r => s.jsx($.Option, {
+                value: r.value,
+                name: r.name,
                 style: a ? {
-                    fontFamily: o.value
+                    fontFamily: r.value
                 } : void 0,
-                children: o.image ? s.jsxs(R, {
+                children: r.image ? s.jsxs(R, {
                     direction: "horizontal",
                     size: 6,
                     children: [s.jsx("img", {
-                        src: o.image,
+                        src: r.image,
                         style: {
                             maxHeight: 30,
                             maxWidth: 30
                         }
                     }), s.jsx("div", {
-                        children: o.name
+                        children: r.name
                     })]
-                }) : o.name
-            }, `option-${o.value}`))
+                }) : r.name
+            }, `option-${r.value}`))
         })
     },
     j = {
@@ -301,7 +303,7 @@ const Lt = {
         playerProximitySetProperty: "other_character_set_property",
         playerProximityGetProperty: "other_character_get_property"
     },
-    Be = {
+    _e = {
         broadcastMessage: "channel_radio"
     },
     P = {
@@ -312,36 +314,36 @@ var x = (e => (e.textInput = "textInput", e.numberInput = "numberInput", e.selec
 const Z = (e, n) => {
         if (!e) return [];
         const t = [];
-        g.worldOptions.deviceOptions.forEach(r => {
-            r.optionSchema.options.forEach(c => {
-                var o;
+        g.worldOptions.deviceOptions.forEach(o => {
+            o.optionSchema.options.forEach(c => {
+                var r;
                 if (c.option.type === x.textInput) {
                     const l = c.option;
-                    ((o = l == null ? void 0 : l.props) == null ? void 0 : o.category) === e && t.push({
-                        deviceId: r.id,
+                    ((r = l == null ? void 0 : l.props) == null ? void 0 : r.category) === e && t.push({
+                        deviceId: o.id,
                         optionKey: String(c.key)
                     })
                 }
             })
         });
         const a = [],
-            i = r => {
-                if (r = r.trim(), !!r.length) {
-                    if (e === P.channel && r.includes(",")) {
-                        r.split(",").forEach(i);
+            i = o => {
+                if (o = o.trim(), !!o.length) {
+                    if (e === P.channel && o.includes(",")) {
+                        o.split(",").forEach(i);
                         return
                     }
-                    a.includes(r) || a.push(r)
+                    a.includes(o) || a.push(o)
                 }
             };
-        return g.world.devices.devices.forEach(r => {
-            t.map(c => c.deviceId).includes(r.deviceOption.id) && Object.keys(r.options || {}).forEach(c => {
-                t.map(o => o.optionKey).includes(c) && r.options[c] && i(r.options[c])
+        return g.world.devices.devices.forEach(o => {
+            t.map(c => c.deviceId).includes(o.deviceOption.id) && Object.keys(o.options || {}).forEach(c => {
+                t.map(r => r.optionKey).includes(c) && o.options[c] && i(o.options[c])
             })
-        }), e === P.channel && g.world.devices.devices.forEach(r => {
-            var c, o;
-            (o = (c = g.world.devices.codeGrids.get(r.id)) == null ? void 0 : c.items) == null || o.forEach(l => {
-                if (l.triggerType === Be.broadcastMessage && l.triggerValue && i(l.triggerValue), l.json) {
+        }), e === P.channel && g.world.devices.devices.forEach(o => {
+            var c, r;
+            (r = (c = g.world.devices.codeGrids.get(o.id)) == null ? void 0 : c.items) == null || r.forEach(l => {
+                if (l.triggerType === _e.broadcastMessage && l.triggerValue && i(l.triggerValue), l.json) {
                     const d = new E.Workspace;
                     E.serialization.workspaces.load(JSON.parse(l.json), d), d.getAllBlocks(!0).forEach(u => {
                         if ((u.type === j.messageBroadcaster || u.type === j.playerProximityMessageBroadcaster) && u.getChildren(!0).length) {
@@ -354,9 +356,9 @@ const Z = (e, n) => {
                     }), d.dispose()
                 }
             })
-        }), e === P.property && g.world.devices.devices.forEach(r => {
-            var c, o;
-            (o = (c = g.world.devices.codeGrids.get(r.id)) == null ? void 0 : c.items) == null || o.forEach(l => {
+        }), e === P.property && g.world.devices.devices.forEach(o => {
+            var c, r;
+            (r = (c = g.world.devices.codeGrids.get(o.id)) == null ? void 0 : c.items) == null || r.forEach(l => {
                 if (l.json) {
                     const d = new E.Workspace;
                     E.serialization.workspaces.load(JSON.parse(l.json), d), d.getAllBlocks(!0).forEach(u => {
@@ -372,16 +374,16 @@ const Z = (e, n) => {
             })
         }), a
     },
-    _e = () => {
+    De = () => {
         const e = [];
         return g.world.devices.devices.forEach(t => {
-            if (t.deviceOption.id === Q.property) {
+            if (t.deviceOption.id === K.property) {
                 const a = t.options;
                 e.push(a.propertyName)
             }
         }), Z(P.property).filter(t => !e.includes(t))
     },
-    De = e => {
+    Fe = e => {
         const {
             value: n,
             optionProps: t
@@ -389,13 +391,13 @@ const Z = (e, n) => {
         y.useEffect(() => {
             i(n)
         }, [n]);
-        const r = y.useMemo(() => {
+        const o = y.useMemo(() => {
                 if (t != null && t.category) {
                     const u = Z(t.category).map(m => ({
                         option: m
                     }));
                     if (t.category === P.property) {
-                        const m = _e(),
+                        const m = De(),
                             f = u.filter(C => !m.includes(C.option));
                         return [...m.map(C => ({
                             option: C,
@@ -408,7 +410,7 @@ const Z = (e, n) => {
             c = u => {
                 i(u)
             },
-            o = u => i(u.target.value),
+            r = u => i(u.target.value),
             l = () => {
                 e.onChange(a == null ? void 0 : a.trim())
             },
@@ -417,35 +419,35 @@ const Z = (e, n) => {
             };
         if (t.codeEditor) return s.jsx("div", {
             onBlur: l,
-            children: s.jsxs(ye, {
+            children: s.jsxs(ve, {
                 noInline: !0,
                 code: a,
                 scope: {
                     MapButton: T,
-                    CallAction: xe,
-                    usePropertyValue: ge,
-                    useItemAmount: ve
+                    CallAction: Oe,
+                    usePropertyValue: xe,
+                    useItemAmount: ge
                 },
-                children: [s.jsx(Oe, {
+                children: [s.jsx(Ce, {
                     onChange: d
-                }), s.jsx(Ce, {})]
+                }), s.jsx(Ie, {})]
             })
         });
-        if (t.textArea) return s.jsx(Ie.TextArea, {
+        if (t.textArea) return s.jsx(je.TextArea, {
             value: a,
-            onChange: o,
+            onChange: r,
             onBlur: l,
             placeholder: t.placeholder,
             style: {
                 width: "100%"
             }
         });
-        const p = (() => {
-            if ((t == null ? void 0 : t.category) === P.property && r.length) {
+        const h = (() => {
+            if ((t == null ? void 0 : t.category) === P.property && o.length) {
                 let u = [];
-                if (r.some(f => f.noMatchingDevice)) {
-                    const f = r.filter(O => O.noMatchingDevice),
-                        C = r.filter(O => !O.noMatchingDevice);
+                if (o.some(f => f.noMatchingDevice)) {
+                    const f = o.filter(O => O.noMatchingDevice),
+                        C = o.filter(O => !O.noMatchingDevice);
                     if (u.push({
                             label: s.jsxs(s.Fragment, {
                                 children: ["Properties without a corresponding Property", " ", b.device.singular]
@@ -463,13 +465,13 @@ const Z = (e, n) => {
                     }), u
                 }
             }
-            return r.map(u => ({
+            return o.map(u => ({
                 value: u.option
             }))
         })();
-        return s.jsx(je, {
+        return s.jsx(Pe, {
             value: a,
-            options: p,
+            options: h,
             onChange: c,
             onBlur: l,
             style: {
@@ -484,13 +486,13 @@ const Z = (e, n) => {
             disabled: e.readOnly
         })
     },
-    Fe = e => {
-        const n = Pe(t => {
+    Re = e => {
+        const n = Se(t => {
             e.onChange(t)
         }, 350);
-        return s.jsx(Re, {
+        return s.jsx(He, {
             readOnly: e.readOnly,
-            children: s.jsx(He, {
+            children: s.jsx(Ve, {
                 readOnly: e.readOnly,
                 children: s.jsx("input", {
                     type: "color",
@@ -502,20 +504,20 @@ const Z = (e, n) => {
             })
         })
     },
-    Re = v.div`
+    He = v.div`
   width: 100%;
   ${e=>e.readOnly&&"cursor: not-allowed;"}
 `,
-    He = v.div`
+    Ve = v.div`
   width: 100%;
   ${e=>e.readOnly&&"pointer-events: none; opacity: 0.6"}
 `,
     ee = e => {
-        const n = We(e.optionProps),
-            t = Ve(n).map(r => {
-                const c = K(r);
+        const n = $e(e.optionProps),
+            t = We(n).map(o => {
+                const c = Q(o);
                 return {
-                    value: r,
+                    value: o,
                     name: c.editorName
                 }
             }),
@@ -525,17 +527,17 @@ const Z = (e, n) => {
                 options: t
             };
         let i = e.value;
-        return i && !t.find(r => r.value === e.value) && (i = void 0), s.jsx(w, {
+        return i && !t.find(o => o.value === e.value) && (i = void 0), s.jsx(w, {
             ...e,
             value: i,
             optionProps: a
         })
     },
-    Ve = e => e.filter(n => {
-        const t = K(n);
+    We = e => e.filter(n => {
+        const t = Q(n);
         return !(!t || !k(t.minimumRoleLevel, t.maximumRoleLevel))
     }),
-    We = e => {
+    $e = e => {
         const n = [];
         return g.worldOptions.itemOptions.forEach(t => {
             var a;
@@ -552,8 +554,8 @@ const Z = (e, n) => {
             }
         }), n
     },
-    $e = e => {
-        const n = g.worldOptions.terrainOptions.filter(i => me(i.id)).map(i => ({
+    ze = e => {
+        const n = g.worldOptions.terrainOptions.filter(i => pe(i.id)).map(i => ({
                 value: i.id,
                 name: i.name
             })),
@@ -569,12 +571,12 @@ const Z = (e, n) => {
             optionProps: t
         })
     },
-    ze = e => {
+    Ge = e => {
         var i;
-        const n = g.worldOptions.skinOptions.filter(r => k(r.minimumRoleLevel, r.maximumRoleLevel)).map(r => ({
-                value: r.id,
-                name: r.name,
-                image: X("characters/spine/preview/" + r.id.replace("character_", "") + ".png")
+        const n = g.worldOptions.skinOptions.filter(o => k(o.minimumRoleLevel, o.maximumRoleLevel)).map(o => ({
+                value: o.id,
+                name: o.name,
+                image: X("characters/spine/preview/" + o.id.replace("character_", "") + ".png")
             })),
             t = {
                 placeholder: "Select a Gim",
@@ -582,37 +584,37 @@ const Z = (e, n) => {
                 options: n
             };
         let a = e.value;
-        return a && !n.find(r => r.value === e.value) && (a = void 0), s.jsx(w, {
+        return a && !n.find(o => o.value === e.value) && (a = void 0), s.jsx(w, {
             ...e,
             value: a,
             optionProps: t
         })
     },
-    Ge = e => {
+    Ue = e => {
         var t, a;
         const n = () => {
-            var r, c;
+            var o, c;
             const i = e.value ?? [];
             i.push({
                 itemId: void 0,
-                amount: ((r = e.optionProps.amount) == null ? void 0 : r.defaultValue) ?? 0,
+                amount: ((o = e.optionProps.amount) == null ? void 0 : o.defaultValue) ?? 0,
                 numParam: ((c = e.optionProps.numParam) == null ? void 0 : c.defaultValue) ?? 0
             }), e.onChange(i)
         };
-        return s.jsx(Ue, {
+        return s.jsx(Je, {
             readOnly: e.readOnly,
-            children: s.jsxs(Je, {
+            children: s.jsxs(Qe, {
                 readOnly: e.readOnly,
-                children: [(t = e.value) == null ? void 0 : t.map((i, r) => {
-                    var c, o;
+                children: [(t = e.value) == null ? void 0 : t.map((i, o) => {
+                    var c, r;
                     return s.jsxs("div", {
                         children: [s.jsxs(Ke, {
-                            children: [s.jsxs(Qe, {
-                                children: ["Item ", r + 1]
+                            children: [s.jsxs(Xe, {
+                                children: ["Item ", o + 1]
                             }), s.jsx(T, {
                                 onClick: () => {
                                     const l = e.value ?? [];
-                                    l.splice(r, 1), e.onChange(l)
+                                    l.splice(o, 1), e.onChange(l)
                                 },
                                 type: "danger",
                                 ariaLabel: "Remove Item",
@@ -621,16 +623,16 @@ const Z = (e, n) => {
                                     name: "fas fa-trash"
                                 })
                             })]
-                        }), s.jsxs(Xe, {
+                        }), s.jsxs(qe, {
                             children: [s.jsxs(L, {
                                 children: [s.jsx(N, {
                                     children: "Item"
-                                }), s.jsx(qe, {
+                                }), s.jsx(Ye, {
                                     children: s.jsx(ee, {
                                         value: i.itemId,
                                         onChange: l => {
                                             const d = e.value ?? [];
-                                            d[r].itemId = l, e.onChange(d)
+                                            d[o].itemId = l, e.onChange(d)
                                         },
                                         readOnly: e.readOnly,
                                         optionProps: e.optionProps
@@ -644,7 +646,7 @@ const Z = (e, n) => {
                                         value: i.amount,
                                         onChange: l => {
                                             const d = e.value ?? [];
-                                            d[r].amount = l, e.onChange(d)
+                                            d[o].amount = l, e.onChange(d)
                                         },
                                         readOnly: e.readOnly,
                                         optionProps: {
@@ -654,7 +656,7 @@ const Z = (e, n) => {
                                         }
                                     })
                                 })]
-                            }), ((o = e.optionProps.numParam) == null ? void 0 : o.use) && s.jsxs(L, {
+                            }), ((r = e.optionProps.numParam) == null ? void 0 : r.use) && s.jsxs(L, {
                                 children: [s.jsxs(N, {
                                     children: [e.optionProps.numParam.label || "Num Param", ":"]
                                 }), s.jsx(z, {
@@ -662,7 +664,7 @@ const Z = (e, n) => {
                                         value: i.numParam,
                                         onChange: l => {
                                             const d = e.value ?? [];
-                                            d[r].numParam = l, e.onChange(d)
+                                            d[o].numParam = l, e.onChange(d)
                                         },
                                         readOnly: e.readOnly,
                                         optionProps: {
@@ -674,8 +676,8 @@ const Z = (e, n) => {
                                 })]
                             })]
                         })]
-                    }, r)
-                }), s.jsx(Ye, {
+                    }, o)
+                }), s.jsx(Ze, {
                     children: s.jsx(T, {
                         disabled: e.readOnly || e.optionProps.maxItems <= ((a = e.value) == null ? void 0 : a.length),
                         onClick: n,
@@ -688,11 +690,11 @@ const Z = (e, n) => {
             })
         })
     },
-    Ue = v.div`
+    Je = v.div`
   width: 100%;
   ${e=>e.readOnly&&"cursor: not-allowed;"}
 `,
-    Je = v.div`
+    Qe = v.div`
   width: 100%;
   ${e=>e.readOnly&&"pointer-events: none; opacity: 0.6"}
 `,
@@ -702,11 +704,11 @@ const Z = (e, n) => {
   align-items: center;
   margin-bottom: 8px;
 `,
-    Qe = v.div`
+    Xe = v.div`
   font-weight: bold;
   font-size: 1.1em;
 `,
-    Xe = v.div`
+    qe = v.div`
   margin-left: 16px;
   margin-bottom: 24px;
 `,
@@ -720,7 +722,7 @@ const Z = (e, n) => {
   width: 120px;
   font-weight: 500;
 `,
-    qe = v.div`
+    Ye = v.div`
   flex: 1;
   overflow: hidden;
 `,
@@ -728,15 +730,15 @@ const Z = (e, n) => {
   flex: 1;
   overflow: hidden;
 `,
-    Ye = v.div`
+    Ze = v.div`
   margin-top: 8px;
 `,
-    Ze = ["a", "e", "i", "o", "u"],
-    et = e => {
+    et = ["a", "e", "i", "o", "u"],
+    tt = e => {
         const n = e.charAt(0).toLowerCase();
-        return `${Ze.includes(n)?"an":"a"} ${e}`
+        return `${et.includes(n)?"an":"a"} ${e}`
     },
-    tt = H(e => {
+    nt = H(e => {
         const {
             world: {
                 customAssets: {
@@ -745,14 +747,14 @@ const Z = (e, n) => {
             }
         } = D(), t = () => {
             e.optionProps.customAssetOptionId && (g.me.customAssets.isUIOpen = !0, g.me.customAssets.openOptionId = e.optionProps.customAssetOptionId)
-        }, a = Array.from(n.values()).filter(o => o.optionId === e.optionProps.customAssetOptionId).map(o => ({
-            value: o.id,
-            name: o.name ?? `Untitled ${i.singular}`,
-            image: o.icon.startsWith("data:") ? o.icon : X(o.icon)
-        })), i = b.customAsset[e.optionProps.customAssetOptionId] ?? b.customAsset.base, r = () => {
+        }, a = Array.from(n.values()).filter(r => r.optionId === e.optionProps.customAssetOptionId).map(r => ({
+            value: r.id,
+            name: r.name ?? `Untitled ${i.singular}`,
+            image: r.icon.startsWith("data:") ? r.icon : X(r.icon)
+        })), i = b.customAsset[e.optionProps.customAssetOptionId] ?? b.customAsset.base, o = () => {
             if (a.length === 0) return null;
-            const o = {
-                placeholder: `Select ${et(i.singular)}...`,
+            const r = {
+                placeholder: `Select ${tt(i.singular)}...`,
                 allowEmpty: !0,
                 options: a
             };
@@ -760,11 +762,11 @@ const Z = (e, n) => {
             return a.find(d => d.value === e.value) || (l = null), s.jsx(w, {
                 ...e,
                 value: l,
-                optionProps: o
+                optionProps: r
             })
         }, c = `Manage ${i.plural}`;
         return s.jsxs(s.Fragment, {
-            children: [r(), s.jsx(U, {
+            children: [o(), s.jsx(U, {
                 size: "small",
                 onClick: t,
                 type: "primary",
@@ -775,7 +777,7 @@ const Z = (e, n) => {
             })]
         })
     }),
-    nt = e => {
+    ot = e => {
         const {
             option: n,
             value: t,
@@ -786,12 +788,12 @@ const Z = (e, n) => {
             value: t,
             onChange: a,
             readOnly: e.readOnly
-        }) : n.type === x.itemsList ? s.jsx(Ge, {
+        }) : n.type === x.itemsList ? s.jsx(Ue, {
             optionProps: n.props,
             value: t,
             onChange: a,
             readOnly: e.readOnly
-        }) : n.type === x.textInput ? s.jsx(De, {
+        }) : n.type === x.textInput ? s.jsx(Fe, {
             optionProps: n.props,
             value: t,
             onChange: a,
@@ -806,50 +808,50 @@ const Z = (e, n) => {
             value: t,
             onChange: a,
             readOnly: e.readOnly
-        }) : n.type === x.skinId ? s.jsx(ze, {
+        }) : n.type === x.skinId ? s.jsx(Ge, {
             value: t,
             onChange: a,
             readOnly: e.readOnly,
             optionProps: n.props
-        }) : n.type === x.customAssetId ? s.jsx(tt, {
+        }) : n.type === x.customAssetId ? s.jsx(nt, {
             value: t,
             onChange: a,
             readOnly: e.readOnly,
             optionProps: n.props
-        }) : n.type === x.terrainId ? s.jsx($e, {
+        }) : n.type === x.terrainId ? s.jsx(ze, {
             optionProps: n.props,
             value: t,
             onChange: a,
             readOnly: e.readOnly
-        }) : n.type === x.color ? s.jsx(Fe, {
+        }) : n.type === x.color ? s.jsx(Re, {
             value: t,
             onChange: a,
             readOnly: e.readOnly
         }) : null
     },
-    ot = A.lazy(() => ne(() => import("./App-75.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83]))),
-    rt = e => {
+    rt = A.lazy(() => ne(() => import("./App-75.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83]))),
+    st = e => {
         const [n, t] = A.useState(!1);
         return A.useEffect(() => {
             e.visible && t(!0)
         }, [e.visible]), n ? s.jsx(A.Suspense, {
             fallback: null,
-            children: s.jsx(ot, {
+            children: s.jsx(rt, {
                 ...e
             })
         }) : null
     },
-    st = e => {
+    at = e => {
         const {
             option: n,
             value: t,
             onChange: a,
             readOnly: i
         } = e, {
-            label: r,
+            label: o,
             description: c
-        } = n.option, [o, l, d] = oe(!1);
-        return s.jsxs(at, {
+        } = n.option, [r, l, d] = oe(!1);
+        return s.jsxs(it, {
             children: [s.jsxs("div", {
                 className: "flex vc maxWidth between",
                 children: [s.jsx("div", {
@@ -859,7 +861,7 @@ const Z = (e, n) => {
                             fontWeight: re.Bold,
                             marginBottom: 0
                         },
-                        children: r
+                        children: o
                     })
                 }), e.showHooks ? s.jsx(U, {
                     size: "small",
@@ -875,67 +877,67 @@ const Z = (e, n) => {
                     italic: !0,
                     children: c
                 })
-            }) : null, s.jsx(it, {
+            }) : null, s.jsx(lt, {
                 style: {
                     marginTop: 5
                 },
-                children: s.jsx(nt, {
+                children: s.jsx(ot, {
                     value: t,
                     option: n.option,
                     onChange: a,
                     readOnly: i
                 })
-            }), s.jsx(rt, {
-                visible: o,
+            }), s.jsx(st, {
+                visible: r,
                 close: d,
                 ...e
             })]
         })
     },
-    at = v.div.attrs({
+    it = v.div.attrs({
         className: "maxWidth"
     })`
   padding: 20px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.07);
 `,
-    it = v.div.attrs({
+    lt = v.div.attrs({
         className: "maxWidth"
     })``,
-    lt = H(e => {
+    ct = H(e => {
         const {
             device: n,
             deviceOption: t,
             options: a,
             category: i,
-            setCategory: r
+            setCategory: o
         } = e, {
             me: {
                 roleLevel: c
             }
-        } = D(), o = c >= M.admin, l = (() => {
-            let d = Le({
+        } = D(), r = c >= M.admin, l = (() => {
+            let d = Ne({
                 device: n,
                 options: a,
                 optionSchema: t.optionSchema
-            }).filter(p => !!(!i || p.categories && p.categories.includes(i))).filter(p => Me(t.id, p.key));
-            return le(t.id, a) || (d = [], i && r(void 0)), d
+            }).filter(h => !!(!i || h.categories && h.categories.includes(i))).filter(h => Te(t.id, h.key));
+            return le(t.id, a) || (d = [], i && o(void 0)), d
         })();
         return l.length ? s.jsx(R, {
             size: 14,
             direction: "vertical",
             className: "maxWidth",
-            children: l.map(d => s.jsx(st, {
+            children: l.map(d => s.jsx(at, {
                 option: d,
                 value: a[d.key],
-                onChange: p => e.handleOptionChange(String(d.key), p),
+                onChange: h => e.handleOptionChange(String(d.key), h),
                 readOnly: e.readOnly,
                 deviceId: n.id,
                 deviceType: n.deviceOption.id,
                 hooks: e.hooks,
-                showHooks: o
+                showHooks: r
             }, `${n.id} ${String(d.key)}`))
-        }) : s.jsxs(Se, {
+        }) : s.jsxs(we, {
             className: "maxWidth",
             children: [s.jsx("div", {
                 style: {
@@ -956,18 +958,18 @@ const Z = (e, n) => {
         })
     }),
     I = "All Options",
-    Mt = H(e => {
+    Tt = H(e => {
         var C, O, V, W;
         const {
             device: n,
             deviceOption: t,
             position: a,
             options: i
-        } = e, [r, c] = y.useState(G(t.optionSchema)), o = !ce(), l = (h, S) => {
-            o || (we({
-                event: Ee.CHANGE_DEVICE_OPTION,
+        } = e, [o, c] = y.useState(G(t.optionSchema)), r = !ce(), l = (p, S) => {
+            r || (Ee({
+                event: Ae.CHANGE_DEVICE_OPTION,
                 device: n,
-                option: h,
+                option: p,
                 value: S
             }), ue({
                 deviceOption: t,
@@ -980,7 +982,7 @@ const Z = (e, n) => {
                 isPreview: !1,
                 options: {
                     ...i,
-                    [h]: S
+                    [p]: S
                 },
                 placedByClient: !0,
                 state: t.defaultState
@@ -989,31 +991,31 @@ const Z = (e, n) => {
             size: 12,
             direction: "vertical",
             className: "maxWidth",
-            children: s.jsx(lt, {
+            children: s.jsx(ct, {
                 device: n,
                 deviceOption: t,
                 options: i,
                 hooks: e.hooks,
-                readOnly: o,
+                readOnly: r,
                 handleOptionChange: l,
-                category: r === I ? void 0 : r,
+                category: o === I ? void 0 : o,
                 setCategory: c
             })
-        }), u = (((O = (C = t.optionSchema) == null ? void 0 : C.categories) == null ? void 0 : O.categories) || []).filter(h => h.supportedMapStyles === void 0 ? !0 : h.supportedMapStyles.includes(F())).filter(h => {
+        }), u = (((O = (C = t.optionSchema) == null ? void 0 : C.categories) == null ? void 0 : O.categories) || []).filter(p => p.supportedMapStyles === void 0 ? !0 : p.supportedMapStyles.includes(F())).filter(p => {
             var S;
-            return !((S = h.hideIf) != null && S.length && Y({
-                hideIf: h.hideIf,
+            return !((S = p.hideIf) != null && S.length && Y({
+                hideIf: p.hideIf,
                 options: i
             }))
         });
         if (y.useEffect(() => {
-                r && r !== I && !u.some(h => h.id === r) && c(G(t.optionSchema))
-            }, [r, u]), !u || !u.length) return d;
+                o && o !== I && !u.some(p => p.id === o) && c(G(t.optionSchema))
+            }, [o, u]), !u || !u.length) return d;
         const m = [];
-        return u.forEach(h => {
+        return u.forEach(p => {
             m.push({
-                id: h.id,
-                name: h.name
+                id: p.id,
+                name: p.name
             })
         }), ((W = (V = t.optionSchema) == null ? void 0 : V.categories) == null ? void 0 : W.showAllOptionsAt) === "start" || !1 ? m.unshift({
             id: I,
@@ -1030,21 +1032,21 @@ const Z = (e, n) => {
                 }
             },
             children: s.jsx(ae, {
-                activeKey: r,
-                onChange: h => {
-                    de(), c(h)
+                activeKey: o,
+                onChange: p => {
+                    de(), c(p)
                 },
                 className: "maxWidth",
                 style: {
                     marginTop: -18
                 },
                 size: "large",
-                items: m.map(h => ({
-                    label: h.name,
-                    key: h.id,
+                items: m.map(p => ({
+                    label: p.name,
+                    key: p.id,
                     children: d
                 })),
-                getPopupContainer: h => h.parentElement || document.body
+                getPopupContainer: p => p.parentElement || document.body
             })
         })
     }),
@@ -1056,5 +1058,5 @@ const Z = (e, n) => {
         return I
     };
 export {
-    j as B, Be as C, Mt as D, Z as F, nt as I, Lt as M, x as O, P as a, Nt as u
+    j as B, _e as C, Tt as D, Z as F, ot as I, Nt as M, x as O, P as a, Mt as u
 };

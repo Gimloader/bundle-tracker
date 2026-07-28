@@ -8,8 +8,8 @@ import {
 } from "./FixSpinePlugin.js";
 import {
     al as l,
-    am as d,
-    an as h
+    aA as d,
+    aB as h
 } from "./App-41.js";
 import {
     D as u

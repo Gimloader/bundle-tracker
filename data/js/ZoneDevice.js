@@ -3,8 +3,8 @@ import {
 } from "./ZoneConstants.js";
 import {
     al as f,
-    as as p,
-    au as w
+    am as p,
+    aq as w
 } from "./App-41.js";
 import {
     I as d,
@@ -94,7 +94,7 @@ const b = {
     imageId: g("devices/zone/base.png"),
     imageUrl: g("devices/zone/base.png")
 };
-class Li extends f {
+class Bi extends f {
     constructor(c) {
         if (super(c), this.onStateChange = i => {
                 if (i === "active" && this.zone && this.zone.view) {
@@ -179,6 +179,6 @@ class Li extends f {
     }
 }
 export {
-    Li as
+    Bi as
     default
 };

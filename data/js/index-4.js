@@ -163,7 +163,7 @@ const ae = e => {
         const n = z(e, {
             height: 150
         });
-        return [ae(n)]
+        return ae(n)
     }, re);
 var ce = function(e, n) {
     var s = {};
@@ -438,56 +438,55 @@ const Ce = b.forwardRef((e, n) => {
             iconPrefixCls: p,
             theme: c
         }, a.holderRender ? a.holderRender(r) : r)
-    });
-
-function N() {
-    if (!m) {
-        const e = document.createDocumentFragment(),
-            n = {
-                fragment: e
-            };
-        m = n, $(() => {
-            Z()(b.createElement(be, {
-                ref: t => {
-                    const {
-                        instance: o,
-                        sync: a
-                    } = t || {};
-                    Promise.resolve().then(() => {
-                        !n.instance && o && (n.instance = o, n.sync = a, N())
-                    })
-                }
-            }), e)
-        });
-        return
-    }
-    m.instance && (I.forEach(e => {
-        const {
-            type: n,
-            skipped: s
-        } = e;
-        if (!s) switch (n) {
-            case "open": {
-                $(() => {
-                    const t = m.instance.open(Object.assign(Object.assign({}, S), e.config));
-                    t == null || t.then(e.resolve), e.setCloseFn(t)
-                });
-                break
-            }
-            case "destroy":
-                $(() => {
-                    m == null || m.instance.destroy(e.key)
-                });
-                break;
-            default:
-                $(() => {
-                    var t;
-                    const o = (t = m.instance)[n].apply(t, ee(e.args));
-                    o == null || o.then(e.resolve), e.setCloseFn(o)
-                })
+    }),
+    N = () => {
+        if (!m) {
+            const e = document.createDocumentFragment(),
+                n = {
+                    fragment: e
+                };
+            m = n, $(() => {
+                Z()(b.createElement(be, {
+                    ref: t => {
+                        const {
+                            instance: o,
+                            sync: a
+                        } = t || {};
+                        Promise.resolve().then(() => {
+                            !n.instance && o && (n.instance = o, n.sync = a, N())
+                        })
+                    }
+                }), e)
+            });
+            return
         }
-    }), I = [])
-}
+        m.instance && (I.forEach(e => {
+            const {
+                type: n,
+                skipped: s
+            } = e;
+            if (!s) switch (n) {
+                case "open": {
+                    $(() => {
+                        const t = m.instance.open(Object.assign(Object.assign({}, S), e.config));
+                        t == null || t.then(e.resolve), e.setCloseFn(t)
+                    });
+                    break
+                }
+                case "destroy":
+                    $(() => {
+                        m == null || m.instance.destroy(e.key)
+                    });
+                    break;
+                default:
+                    $(() => {
+                        var t;
+                        const o = (t = m.instance)[n].apply(t, ee(e.args));
+                        o == null || o.then(e.resolve), e.setCloseFn(o)
+                    })
+            }
+        }), I = [])
+    };
 
 function Oe(e) {
     S = Object.assign(Object.assign({}, S), e), $(() => {

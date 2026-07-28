@@ -2,16 +2,16 @@ import {
     ai as G,
     bF as J,
     aj as K,
-    ak as F,
+    ak as _,
     aL as Y,
     r as n,
-    al as _,
-    am as T,
-    bb as L,
+    al as L,
+    am as P,
+    bb as M,
     aS as Z,
     d0 as ee,
     d1 as oe,
-    d2 as H,
+    d2 as F,
     d3 as re
 } from "./_index.js";
 import {
@@ -25,19 +25,19 @@ const ae = e => {
             lineWidth: l,
             tagPaddingHorizontal: o,
             componentCls: r,
-            calc: s
-        } = e, a = s(o).sub(l).equal(), u = s(t).sub(l).equal();
+            calc: a
+        } = e, c = a(o).sub(l).equal(), m = a(t).sub(l).equal();
         return {
             [r]: Object.assign(Object.assign({}, Y(e)), {
                 display: "inline-block",
                 height: "auto",
                 marginInlineEnd: e.marginXS,
-                paddingInline: a,
+                paddingInline: c,
                 fontSize: e.tagFontSize,
                 lineHeight: e.tagLineHeight,
                 whiteSpace: "nowrap",
                 background: e.defaultBg,
-                border: `${F(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,
+                border: `${_(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,
                 borderRadius: e.borderRadiusSM,
                 opacity: 1,
                 transition: `all ${e.motionDurationMid}`,
@@ -50,7 +50,7 @@ const ae = e => {
                     color: e.defaultColor
                 },
                 [`${r}-close-icon`]: {
-                    marginInlineStart: u,
+                    marginInlineStart: m,
                     fontSize: e.tagIconSize,
                     color: e.colorIcon,
                     cursor: "pointer",
@@ -90,7 +90,7 @@ const ae = e => {
                     display: "none"
                 },
                 [`> ${e.iconCls} + span, > span + ${e.iconCls}`]: {
-                    marginInlineStart: a
+                    marginInlineStart: c
                 }
             }),
             [`${r}-borderless`]: {
@@ -99,7 +99,7 @@ const ae = e => {
             }
         }
     },
-    I = e => {
+    j = e => {
         const {
             lineWidth: t,
             fontSizeIcon: l,
@@ -107,20 +107,20 @@ const ae = e => {
         } = e, r = e.fontSizeSM;
         return K(e, {
             tagFontSize: r,
-            tagLineHeight: F(o(e.lineHeightSM).mul(r).equal()),
+            tagLineHeight: _(o(e.lineHeightSM).mul(r).equal()),
             tagIconSize: o(l).sub(o(t).mul(2)).equal(),
             tagPaddingHorizontal: 8,
             tagBorderlessBg: e.defaultBg
         })
     },
-    P = e => ({
+    E = e => ({
         defaultBg: new J(e.colorFillQuaternary).onBackground(e.colorBgContainer).toHexString(),
         defaultColor: e.colorText
     }),
-    M = G("Tag", e => {
-        const t = I(e);
+    V = G("Tag", e => {
+        const t = j(e);
         return ae(t)
-    }, P);
+    }, E);
 var se = function(e, t) {
     var l = {};
     for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (l[o] = e[o]);
@@ -133,29 +133,31 @@ const ce = n.forwardRef((e, t) => {
             prefixCls: l,
             style: o,
             className: r,
-            checked: s,
-            onChange: a,
+            checked: a,
+            children: c,
+            icon: m,
+            onChange: i,
             onClick: u
-        } = e, d = se(e, ["prefixCls", "style", "className", "checked", "onChange", "onClick"]), {
-            getPrefixCls: m,
-            tag: g
-        } = n.useContext(_), f = h => {
-            a == null || a(!s), u == null || u(h)
-        }, C = m("tag", l), [y, S, i] = M(C), $ = T(C, `${C}-checkable`, {
-            [`${C}-checkable-checked`]: s
-        }, g == null ? void 0 : g.className, r, S, i);
-        return y(n.createElement("span", Object.assign({}, d, {
+        } = e, S = se(e, ["prefixCls", "style", "className", "checked", "children", "icon", "onChange", "onClick"]), {
+            getPrefixCls: f,
+            tag: d
+        } = n.useContext(L), $ = v => {
+            i == null || i(!a), u == null || u(v)
+        }, p = f("tag", l), [g, x, h] = V(p), O = P(p, `${p}-checkable`, {
+            [`${p}-checkable-checked`]: a
+        }, d == null ? void 0 : d.className, r, x, h);
+        return g(n.createElement("span", Object.assign({}, S, {
             ref: t,
-            style: Object.assign(Object.assign({}, o), g == null ? void 0 : g.style),
-            className: $,
-            onClick: f
-        })))
+            style: Object.assign(Object.assign({}, o), d == null ? void 0 : d.style),
+            className: O,
+            onClick: $
+        }), m, n.createElement("span", null, c)))
     }),
     ie = e => te(e, (t, {
         textColor: l,
         lightBorderColor: o,
         lightColor: r,
-        darkColor: s
+        darkColor: a
     }) => ({
         [`${e.componentCls}${e.componentCls}-${t}`]: {
             color: l,
@@ -163,23 +165,23 @@ const ce = n.forwardRef((e, t) => {
             borderColor: o,
             "&-inverse": {
                 color: e.colorTextLightSolid,
-                background: s,
-                borderColor: s
+                background: a,
+                borderColor: a
             },
             [`&${e.componentCls}-borderless`]: {
                 borderColor: "transparent"
             }
         }
     })),
-    de = L(["Tag", "preset"], e => {
-        const t = I(e);
+    de = M(["Tag", "preset"], e => {
+        const t = j(e);
         return ie(t)
-    }, P);
+    }, E);
 
 function ge(e) {
     return typeof e != "string" ? e : e.charAt(0).toUpperCase() + e.slice(1)
 }
-const v = (e, t, l) => {
+const y = (e, t, l) => {
         const o = ge(l);
         return {
             [`${e.componentCls}${e.componentCls}-${t}`]: {
@@ -192,10 +194,10 @@ const v = (e, t, l) => {
             }
         }
     },
-    ue = L(["Tag", "status"], e => {
-        const t = I(e);
-        return [v(t, "success", "Success"), v(t, "processing", "Info"), v(t, "error", "Error"), v(t, "warning", "Warning")]
-    }, P);
+    ue = M(["Tag", "status"], e => {
+        const t = j(e);
+        return [y(t, "success", "Success"), y(t, "processing", "Info"), y(t, "error", "Error"), y(t, "warning", "Warning")]
+    }, E);
 var Ce = function(e, t) {
     var l = {};
     for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (l[o] = e[o]);
@@ -208,72 +210,72 @@ const pe = n.forwardRef((e, t) => {
             prefixCls: l,
             className: o,
             rootClassName: r,
-            style: s,
-            children: a,
-            icon: u,
-            color: d,
-            onClose: m,
-            bordered: g = !0,
+            style: a,
+            children: c,
+            icon: m,
+            color: i,
+            onClose: u,
+            bordered: S = !0,
             visible: f
-        } = e, C = Ce(e, ["prefixCls", "className", "rootClassName", "style", "children", "icon", "color", "onClose", "bordered", "visible"]), {
-            getPrefixCls: y,
-            direction: S,
-            tag: i
-        } = n.useContext(_), [$, h] = n.useState(!0), V = Z(C, ["closeIcon", "closable"]);
+        } = e, d = Ce(e, ["prefixCls", "className", "rootClassName", "style", "children", "icon", "color", "onClose", "bordered", "visible"]), {
+            getPrefixCls: $,
+            direction: p,
+            tag: g
+        } = n.useContext(L), [x, h] = n.useState(!0), O = Z(d, ["closeIcon", "closable"]);
         n.useEffect(() => {
             f !== void 0 && h(f)
         }, [f]);
-        const j = le(d),
-            N = ne(d),
-            x = j || N,
+        const v = le(i),
+            N = ne(i),
+            T = v || N,
             W = Object.assign(Object.assign({
-                backgroundColor: d && !x ? d : void 0
-            }, i == null ? void 0 : i.style), s),
-            c = y("tag", l),
-            [R, k, q] = M(c),
-            A = T(c, i == null ? void 0 : i.className, {
-                [`${c}-${d}`]: x,
-                [`${c}-has-color`]: d && !x,
-                [`${c}-hidden`]: !$,
-                [`${c}-rtl`]: S === "rtl",
-                [`${c}-borderless`]: !g
+                backgroundColor: i && !T ? i : void 0
+            }, g == null ? void 0 : g.style), a),
+            s = $("tag", l),
+            [R, k, q] = V(s),
+            A = P(s, g == null ? void 0 : g.className, {
+                [`${s}-${i}`]: T,
+                [`${s}-has-color`]: i && !T,
+                [`${s}-hidden`]: !x,
+                [`${s}-rtl`]: p === "rtl",
+                [`${s}-borderless`]: !S
             }, o, r, k, q),
-            E = b => {
-                b.stopPropagation(), m == null || m(b), !b.defaultPrevented && h(!1)
+            w = b => {
+                b.stopPropagation(), u == null || u(b), !b.defaultPrevented && h(!1)
             },
-            [, X] = ee(H(e), H(i), {
+            [, X] = ee(F(e), F(g), {
                 closable: !1,
                 closeIconRender: b => {
                     const U = n.createElement("span", {
-                        className: `${c}-close-icon`,
-                        onClick: E
+                        className: `${s}-close-icon`,
+                        onClick: w
                     }, b);
-                    return oe(b, U, p => ({
-                        onClick: B => {
-                            var O;
-                            (O = p == null ? void 0 : p.onClick) === null || O === void 0 || O.call(p, B), E(B)
+                    return oe(b, U, C => ({
+                        onClick: H => {
+                            var I;
+                            (I = C == null ? void 0 : C.onClick) === null || I === void 0 || I.call(C, H), w(H)
                         },
-                        className: T(p == null ? void 0 : p.className, `${c}-close-icon`)
+                        className: P(C == null ? void 0 : C.className, `${s}-close-icon`)
                     }))
                 }
             }),
-            D = typeof C.onClick == "function" || a && a.type === "a",
-            w = u || null,
-            Q = w ? n.createElement(n.Fragment, null, w, a && n.createElement("span", null, a)) : a,
-            z = n.createElement("span", Object.assign({}, V, {
+            D = typeof d.onClick == "function" || c && c.type === "a",
+            z = m || null,
+            Q = z ? n.createElement(n.Fragment, null, z, c && n.createElement("span", null, c)) : c,
+            B = n.createElement("span", Object.assign({}, O, {
                 ref: t,
                 className: A,
                 style: W
-            }), Q, X, j && n.createElement(de, {
+            }), Q, X, v && n.createElement(de, {
                 key: "preset",
-                prefixCls: c
+                prefixCls: s
             }), N && n.createElement(ue, {
                 key: "status",
-                prefixCls: c
+                prefixCls: s
             }));
         return R(D ? n.createElement(re, {
             component: "Tag"
-        }, z) : z)
+        }, B) : B)
     }),
     be = pe;
 be.CheckableTag = ce;

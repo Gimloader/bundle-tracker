@@ -6,7 +6,7 @@ import {
 import {
     _ as W
 } from "./inheritsLoose.js";
-var h = function(r) {
+var h = (function(r) {
     W(e, r);
 
     function e(a) {
@@ -14,7 +14,7 @@ var h = function(r) {
         return t = r.call(this, "An error occurred. See https://github.com/styled-components/polished/blob/main/src/internalHelpers/errors.md#" + a + " for more information.") || this, D(t)
     }
     return e
-}(P(Error));
+})(P(Error));
 
 function T(r) {
     return Math.round(r * 255)

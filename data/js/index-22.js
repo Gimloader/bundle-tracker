@@ -1,5 +1,5 @@
 import {
-    dS as Me,
+    dU as Me,
     by as x,
     bw as Z,
     aA as v,
@@ -87,7 +87,7 @@ function _(a, o) {
 function P(a) {
     if (!a) throw new Error("Assertion error")
 }
-var T = function() {
+var T = (function() {
     function a(o, e) {
         Z(this, a), v(this, "modeBits", void 0), v(this, "numBitsCharCount", void 0), this.modeBits = o, this.numBitsCharCount = e
     }
@@ -97,7 +97,7 @@ var T = function() {
             return this.numBitsCharCount[Math.floor((e + 7) / 17)]
         }
     }]), a
-}();
+})();
 G = T;
 v(T, "NUMERIC", new G(1, [10, 12, 14]));
 v(T, "ALPHANUMERIC", new G(2, [9, 11, 13]));
@@ -112,7 +112,7 @@ v(O, "LOW", new Y(0, 1));
 v(O, "MEDIUM", new Y(1, 0));
 v(O, "QUARTILE", new Y(2, 3));
 v(O, "HIGH", new Y(3, 2));
-var $ = function() {
+var $ = (function() {
     function a(o, e, t) {
         if (Z(this, a), v(this, "mode", void 0), v(this, "numChars", void 0), v(this, "bitData", void 0), this.mode = o, this.numChars = e, this.bitData = t, e < 0) throw new RangeError("Invalid argument");
         this.bitData = t.slice()
@@ -215,11 +215,11 @@ var $ = function() {
             return r
         }
     }]), a
-}();
+})();
 v($, "NUMERIC_REGEX", /^[0-9]*$/);
 v($, "ALPHANUMERIC_REGEX", /^[A-Z0-9 $%*+.\/:-]*$/);
 v($, "ALPHANUMERIC_CHARSET", "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:");
-var U = function() {
+var U = (function() {
     function a(o, e, t, r) {
         Z(this, a), v(this, "size", void 0), v(this, "mask", void 0), v(this, "modules", []), v(this, "isFunction", []), v(this, "version", void 0), v(this, "errorCorrectionLevel", void 0);
         var n = r;
@@ -569,7 +569,7 @@ var U = function() {
             return P(r >>> 8 == 0), r
         }
     }]), a
-}();
+})();
 v(U, "MIN_VERSION", 1);
 v(U, "MAX_VERSION", 40);
 v(U, "PENALTY_N1", 3);
@@ -670,14 +670,14 @@ function Ve(a, o, e, t) {
 function $e(a, o) {
     return o != null ? Math.floor(o) : a ? De : _e
 }
-var Qe = function() {
+var Qe = (function() {
     try {
         new Path2D().addPath(new Path2D)
     } catch {
         return !1
     }
     return !0
-}();
+})();
 
 function ve(a) {
     var o = a.value,

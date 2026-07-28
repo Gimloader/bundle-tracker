@@ -13,7 +13,7 @@ import {
     u as pe
 } from "./_index.js";
 import {
-    y as B,
+    y as K,
     M as x,
     u as D,
     o as b,
@@ -50,7 +50,7 @@ import {
     s as I,
     A as z,
     M as W,
-    K as y
+    L as y
 } from "./FixSpinePlugin.js";
 import {
     I as j,
@@ -155,7 +155,7 @@ const {
         description: s,
         icon: l
     } = e, i = () => {
-        B(), e.onClick()
+        K(), e.onClick()
     };
     return t.jsx(Oe, {
         onClick: i,
@@ -320,14 +320,14 @@ const {
         focused: e.focused,
         onClick: () => {
             r(() => {
-                B()
+                K()
             })
         },
         ref: i,
-        children: [t.jsx(Ke, {
+        children: [t.jsx(Be, {
             src: s
         }), t.jsxs(Me, {
-            children: [t.jsx(Be, {
+            children: [t.jsx(Ke, {
                 level: 5,
                 className: "allCaps",
                 style: {
@@ -362,13 +362,13 @@ const Me = f.div`
   display: flex;
   flex-direction: column;
 `,
-    Ke = f.img`
+    Be = f.img`
   height: 54px;
   border-radius: 3px;
   border: 2px solid rgba(255, 255, 255, 0.25);
   margin-right: 15px;
 `,
-    Be = f(h.Title)`
+    Ke = f(h.Title)`
   margin-bottom: 0 !important;
 `,
     Le = () => t.jsx(h.Text, {
@@ -477,7 +477,7 @@ const Qe = de(qe),
         const {
             id: n,
             name: o,
-            imageUrl: s,
+            image: s,
             seasonTicketRequired: l
         } = e.option, i = p.useRef(null), a = Qe(i), {
             token: {
@@ -500,7 +500,7 @@ const Qe = de(qe),
             ref: i,
             onClick: () => {
                 c(() => {
-                    B()
+                    K()
                 })
             },
             focused: e.focused,
@@ -508,7 +508,7 @@ const Qe = de(qe),
             children: a ? t.jsxs(t.Fragment, {
                 children: [t.jsx(He, {
                     children: t.jsx(Je, {
-                        src: L(s)
+                        src: L(s.path)
                     })
                 }), t.jsx(Ye, {
                     level: 5,
@@ -679,7 +679,7 @@ const Qe = de(qe),
             focused: e.focused,
             onClick: () => {
                 r(() => {
-                    B()
+                    K()
                 })
             },
             children: [t.jsx(it, {
@@ -860,24 +860,24 @@ const Qe = de(qe),
   opacity: 0.85;
 `,
     k = `${S(x.device.plural)}`,
-    K = e => L(`editor/icons/device_collections/${e}.svg`),
+    B = e => L(`editor/icons/device_collections/${e}.svg`),
     vt = [{
-        icon: K("starting"),
+        icon: B("starting"),
         name: `Starting ${k}`,
         description: `${k} you might need for every map`,
         devices: [d.characterSpawnPad, d.trigger, d.gimkitLiveQuestion, d.itemGranter, d.itemSpawner, d.sentry, d.startingInventory, d.wireRepeater, d.teleporter]
     }, {
-        icon: K("inventory"),
+        icon: B("inventory"),
         name: `Inventory ${k}`,
         description: `${k} to manage what items & resources players have`,
         devices: [d.vendingMachine, d.itemGranter, d.startingInventory, d.itemSpawner, d.inventoryItemManager]
     }, {
-        icon: K("interaction"),
+        icon: B("interaction"),
         name: `Interaction ${k}`,
         description: `${k} to create rich interactions`,
         devices: [d.button, d.vendingMachine, d.zone, d.textExplainer, d.dialogue, d.textBillboard]
     }, {
-        icon: K("new"),
+        icon: B("new"),
         name: `New ${k}`,
         description: `${k} recently added to ${me} Creative`,
         devices: [d.scalableShape, d.popupListItem, d.character, d.dialogue, d.dialogueAction, d.damager, d.cameraPoint, d.playerPositionDetector, d.itemImage, d.ball, d.ballZone, d.craftingTable, d.craftingRecipe, d.damageBoost]

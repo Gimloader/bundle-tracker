@@ -306,10 +306,10 @@ var Te = I.exports,
     W;
 
 function Me() {
-    return W || (W = 1, function(n, t) {
+    return W || (W = 1, (function(n, t) {
         (function(a, o) {
             n.exports = o()
-        })(Te, function() {
+        })(Te, (function() {
             var a = {
                     AF: "Africa",
                     AN: "Antarctica",
@@ -4319,11 +4319,11 @@ function Me() {
                 countries: o,
                 languages: i,
                 languagesAll: m,
-                getEmojiFlag: v => S.test(v) ? h(v.split("").map(d => N + d.charCodeAt(0))) : "",
-                getUnicode: v => U(v).map(d => "U+" + Number(d).toString(16).toUpperCase()).join(" ")
+                getEmojiFlag: v => S.test(v) ? h(v.split("").map((d => N + d.charCodeAt(0)))) : "",
+                getUnicode: v => U(v).map((d => "U+" + Number(d).toString(16).toUpperCase())).join(" ")
             }
-        })
-    }(I)), I.exports
+        }))
+    })(I)), I.exports
 }
 var J = Me();
 const X = "US",

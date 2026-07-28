@@ -3,7 +3,7 @@ import {
     T as o
 } from "./ActionButton.js";
 import {
-    K as n,
+    L as n,
     s
 } from "./FixSpinePlugin.js";
 const m = e => {

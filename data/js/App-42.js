@@ -3,10 +3,10 @@ import {
     j as e,
     d as a,
     U as b,
-    dT as ce,
+    dV as ce,
     F as M,
     b6 as de,
-    y as q,
+    y as Q,
     u as x,
     r as l,
     B as u,
@@ -21,9 +21,9 @@ import {
     H as O,
     T as ue,
     co as ge,
-    dU as G,
-    p as Q,
-    dV as fe,
+    dW as G,
+    p as U,
+    dX as fe,
     ah as je
 } from "./_index.js";
 import {
@@ -43,14 +43,14 @@ import {
 } from "./FontAwesomeIcon.js";
 import {
     a as $,
-    V as J,
+    V as X,
     C as Ce
 } from "./Centered.js";
 import {
-    B as K
+    B as J
 } from "./index-24.js";
 import {
-    M as X,
+    M as K,
     C as _
 } from "./Button.js";
 import {
@@ -95,7 +95,7 @@ const D = {
                 children: "Creative"
             })]
         }), e.jsx(ze, {
-            children: e.jsx(K, {
+            children: e.jsx(J, {
                 children: "Welcome to Gimkit Creative, where you can build your very own game modes, maps, & worlds! Creative is in early access, so there may be bugs & issues. Have fun building!"
             })
         })]
@@ -139,12 +139,12 @@ const D = {
             children: e.jsx(Ae, {})
         }), e.jsxs(Be, {
             children: [e.jsx(Ie, {
-                children: e.jsx(K, {
+                children: e.jsx(J, {
                     children: "Complete the Gimkit Creative tutorial and receive the Blueprint Gim for free!"
                 })
             }), e.jsx(Pe, {
                 children: "The tutorial takes about 10 minutes to complete."
-            }), e.jsx(X, {
+            }), e.jsx(K, {
                 size: "small",
                 customFontWeight: M.Bold,
                 type: "success",
@@ -181,7 +181,7 @@ const D = {
   font-style: italic;
 `,
     ee = ["creative-created-maps"],
-    Fe = () => Z(ee, () => q({
+    Fe = () => Z(ee, () => Q({
         url: "/api/created-maps"
     })),
     B = () => de.invalidateQueries(ee),
@@ -361,7 +361,7 @@ const D = {
             })]
         })
     },
-    Oe = a(J).attrs({
+    Oe = a(X).attrs({
         className: "maxWidth between"
     })`
   padding: 11px 16px;
@@ -377,7 +377,7 @@ const D = {
     background: rgba(255, 255, 255, 0.17);
   }
 `,
-    U = t => {
+    Y = t => {
         const {
             image: i,
             name: r,
@@ -388,16 +388,16 @@ const D = {
             style: {
                 borderColor: t.selected ? _.Yellow : "rgba(255, 255, 255, 0.1)"
             },
-            children: [t.tag ? e.jsx(Ue, {
+            children: [t.tag ? e.jsx(Ye, {
                 children: t.tag
             }) : null, e.jsx(Ve, {
                 style: {
                     backgroundImage: `url("${i}")`
                 }
             }), e.jsxs(He, {
-                children: [e.jsx(Ye, {
+                children: [e.jsx(qe, {
                     children: r
-                }), e.jsx(qe, {
+                }), e.jsx(Qe, {
                     children: c
                 })]
             })]
@@ -432,7 +432,7 @@ const D = {
   padding: 10px;
   padding-top: 0px;
 `,
-    Ue = a.div`
+    Ye = a.div`
   font-family: ${b.FugazOne};
   text-transform: uppercase;
   font-size: 9px;
@@ -446,17 +446,17 @@ const D = {
   top: 10px;
   z-index: 2;
 `,
-    Ye = a.div`
+    qe = a.div`
   font-family: ${b.FugazOne};
   text-transform: uppercase;
   font-size: 16px;
 `,
-    qe = a.div`
+    Qe = a.div`
   font-family: ${b.SFPro};
   font-size: 13px;
   margin-top: -3px;
 `,
-    Qe = t => {
+    Ue = t => {
         const i = l.useRef(null),
             [r, c] = l.useState(""),
             [d, v] = l.useState(),
@@ -536,7 +536,7 @@ const D = {
                     className: "maxWidth",
                     children: [e.jsxs("div", {
                         className: "maxWidth",
-                        children: [e.jsx(Y, {
+                        children: [e.jsx(q, {
                             children: "Map Name"
                         }), e.jsx(A, {
                             ref: i,
@@ -549,7 +549,7 @@ const D = {
                         })]
                     }), e.jsxs("div", {
                         className: "maxWidth",
-                        children: [e.jsx(Y, {
+                        children: [e.jsx(q, {
                             children: "Map Style"
                         }), e.jsxs("div", {
                             className: "flex",
@@ -558,13 +558,13 @@ const D = {
                                 gap: 14,
                                 marginBottom: 3
                             },
-                            children: [e.jsx(U, {
+                            children: [e.jsx(Y, {
                                 image: R("creative/top-down.jpeg"),
                                 name: "Top-Down",
                                 description: "Players move in all four directions",
                                 selected: d === N.topDown,
                                 onSelect: () => S(N.topDown)
-                            }), e.jsx(U, {
+                            }), e.jsx(Y, {
                                 image: R("creative/platformer.jpeg"),
                                 name: "Platformer",
                                 description: "Players move left & right, but can also jump",
@@ -577,14 +577,14 @@ const D = {
             })
         })
     },
-    Y = a.div`
+    q = a.div`
   font-family: ${b.FugazOne};
   text-transform: uppercase;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 5px;
 `,
-    Je = t => {
+    Xe = t => {
         const {
             data: i,
             isLoading: r,
@@ -595,8 +595,8 @@ const D = {
             g = i.slice(0, t.mapLimit),
             h = i.slice(t.mapLimit);
         return e.jsxs(e.Fragment, {
-            children: [e.jsxs(Ke, {
-                children: [e.jsxs(Xe, {
+            children: [e.jsxs(Je, {
+                children: [e.jsxs(Ke, {
                     children: [e.jsxs(Ze, {
                         children: [e.jsx(te, {
                             children: "My Maps"
@@ -606,7 +606,7 @@ const D = {
                             marginTop: 8,
                             text: "Store up to 25 maps"
                         }) : null]
-                    }), m ? e.jsx(X, {
+                    }), m ? e.jsx(K, {
                         size: "small",
                         customFontWeight: M.Bold,
                         onClick: v,
@@ -665,16 +665,16 @@ const D = {
                         children: "Create New Map"
                     }), " button above to get started."]
                 })]
-            }), e.jsx(Qe, {
+            }), e.jsx(Ue, {
                 open: d,
                 close: p
             })]
         })
     },
-    Ke = a.div.attrs({
+    Je = a.div.attrs({
         className: "maxWidth"
     })``,
-    Xe = a.div.attrs({
+    Ke = a.div.attrs({
         className: "flex between maxWidth vc"
     })``,
     Ze = a.div``,
@@ -759,7 +759,7 @@ const D = {
         })
     }),
     it = a.div``,
-    nt = a(J).attrs({
+    nt = a(X).attrs({
         className: "maxWidth"
     })`
   padding: 20px;
@@ -774,7 +774,7 @@ const D = {
   }
 `,
     rt = ["creative-creative-basics"],
-    st = () => Z(rt, () => q({
+    st = () => Z(rt, () => Q({
         url: "/api/created-map/basics"
     })),
     ot = () => {
@@ -820,7 +820,7 @@ const D = {
                 children: [t.completedTutorial ? null : e.jsx(z, {
                     children: e.jsx(Le, {})
                 }), e.jsx(z, {
-                    children: e.jsx(Je, {
+                    children: e.jsx(Xe, {
                         mapLimit: t.mapLimit
                     })
                 }), e.jsx(z, {
@@ -834,8 +834,8 @@ const D = {
     })`
   padding: 35px 0px;
 `,
-    ct = l.lazy(() => Q(() => import("./App-64.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]))),
-    dt = l.lazy(() => Q(() => import("./App-65.js"), __vite__mapDeps([18, 1, 2, 3, 10, 14, 6, 7, 8, 9, 13, 5, 16, 17, 19, 20, 21, 22, 23, 4, 24, 15, 25, 26, 27, 28, 12, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 11, 47, 48, 49, 50]))),
+    ct = l.lazy(() => U(() => import("./App-64.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]))),
+    dt = l.lazy(() => U(() => import("./App-65.js"), __vite__mapDeps([18, 1, 2, 3, 10, 14, 6, 7, 8, 9, 13, 5, 16, 17, 19, 20, 21, 22, 23, 4, 24, 15, 25, 26, 27, 28, 12, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 11, 47, 48, 49, 50]))),
     mt = () => {
         he(() => {
             je("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap")

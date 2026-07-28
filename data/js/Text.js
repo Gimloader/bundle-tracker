@@ -4,7 +4,7 @@ import {
     _ as re,
     x as p,
     bx as fn,
-    dg as St,
+    dh as St,
     aK as dn,
     bg as pn,
     bI as Et,
@@ -16,7 +16,7 @@ import {
     m as vn,
     aZ as yn,
     o as Q,
-    dM as bn,
+    dO as bn,
     b4 as X
 } from "./_index.js";
 import {
@@ -292,7 +292,7 @@ var An = Object.values || function(t) {
             return e
         }
     },
-    Je = function(t) {
+    Je = (function(t) {
         zt(e, t);
 
         function e(n, o) {
@@ -345,7 +345,7 @@ var An = Object.values || function(t) {
                 value: s
             }, p.createElement(i, a, c))
         }, e
-    }(p.Component);
+    })(p.Component);
 Je.propTypes = {};
 Je.defaultProps = Wn;
 var Ln = typeof window > "u" ? f.useEffect : f.useLayoutEffect;
@@ -994,7 +994,7 @@ function lr(t, e) {
         r.textContent = e, r.type = "text/css", r.id = t, document.head.appendChild(r)
     }
 }
-var sr = function(t) {
+var sr = (function(t) {
         nr(r, t);
         var e = rr(r);
 
@@ -1018,7 +1018,7 @@ var sr = function(t) {
                 return null
             }
         }]), r
-    }(f.Component),
+    })(f.Component),
     ur = function(e) {
         var r = e.imageBackgroundColor;
         return `
@@ -1323,7 +1323,7 @@ function Ae(t, e, r) {
         writable: !0
     }) : t[e] = r, t
 }
-var at = function(t) {
+var at = (function(t) {
     xr(r, t);
     var e = Rr(r);
 
@@ -1361,7 +1361,7 @@ var at = function(t) {
             }))
         }
     }]), r
-}(f.Component);
+})(f.Component);
 
 function Ye(t) {
     "@babel/helpers - typeof";
@@ -1456,7 +1456,7 @@ function ae(t, e, r) {
         writable: !0
     }) : t[e] = r, t
 }
-var kt = function(t) {
+var kt = (function(t) {
         Pr(r, t);
         var e = Cr(r);
 
@@ -1619,7 +1619,7 @@ var kt = function(t) {
                 })))
             }
         }]), r
-    }(f.Component),
+    })(f.Component),
     ue = {},
     we = {},
     xe = {},
@@ -1647,7 +1647,7 @@ var Re = {},
     st;
 
 function kr() {
-    return st || (st = 1, function(t) {
+    return st || (st = 1, (function(t) {
         Object.defineProperties(t, {
             __esModule: {
                 value: !0
@@ -1760,7 +1760,7 @@ function kr() {
         var z = r.exports;
         const $ = e(z);
         t.default = $, t.process = $
-    }(We)), We
+    })(We)), We
 }
 var ut;
 
@@ -1892,7 +1892,7 @@ function Wr() {
             }
             return w
         },
-        e = function() {
+        e = (function() {
             function w(m, E) {
                 for (var v = 0; v < E.length; v++) {
                     var x = E[v];
@@ -1902,7 +1902,7 @@ function Wr() {
             return function(m, E, v) {
                 return E && w(m.prototype, E), v && w(m, v), m
             }
-        }(),
+        })(),
         r = Et(),
         n = T(r),
         o = hn(),
@@ -1961,7 +1961,7 @@ function Wr() {
     }
 
     function G() {}
-    var Z = function(w) {
+    var Z = (function(w) {
         R(m, w);
 
         function m(E) {
@@ -2103,7 +2103,7 @@ function Wr() {
                 }, j && typeof D == "function" ? Y ? D(j) : j : D))
             }
         }]), m
-    }(n.default.Component);
+    })(n.default.Component);
     return Z.propTypes = {
         children: i.default.node,
         text: i.default.string,
@@ -2202,14 +2202,14 @@ var ve = {},
     gt;
 
 function Br() {
-    return gt || (gt = 1, function(t) {
+    return gt || (gt = 1, (function(t) {
         function e(r) {
             return r && r.__esModule ? r : {
                 default: r
             }
         }
         t.exports = e, t.exports.__esModule = !0, t.exports.default = t.exports
-    }(Le)), Le.exports
+    })(Le)), Le.exports
 }
 var qe = {
         exports: {}
@@ -2220,7 +2220,7 @@ var qe = {
     vt;
 
 function Ur() {
-    return vt || (vt = 1, function(t) {
+    return vt || (vt = 1, (function(t) {
         function e(r) {
             "@babel/helpers - typeof";
             return t.exports = e = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(n) {
@@ -2230,12 +2230,12 @@ function Ur() {
             }, t.exports.__esModule = !0, t.exports.default = t.exports, e(r)
         }
         t.exports = e, t.exports.__esModule = !0, t.exports.default = t.exports
-    }(Fe)), Fe.exports
+    })(Fe)), Fe.exports
 }
 var yt;
 
 function Qr() {
-    return yt || (yt = 1, function(t) {
+    return yt || (yt = 1, (function(t) {
         var e = Ur().default;
 
         function r(n, o) {
@@ -2257,14 +2257,14 @@ function Qr() {
             }, t.exports.__esModule = !0, t.exports.default = t.exports)(n, o)
         }
         t.exports = r, t.exports.__esModule = !0, t.exports.default = t.exports
-    }(qe)), qe.exports
+    })(qe)), qe.exports
 }
 var He = {};
 const Zr = mn($n);
 var bt;
 
 function Kr() {
-    return bt || (bt = 1, function(t) {
+    return bt || (bt = 1, (function(t) {
         Object.defineProperty(t, "__esModule", {
             value: !0
         }), Object.defineProperty(t, "default", {
@@ -2274,7 +2274,7 @@ function Kr() {
             }
         });
         var e = Zr
-    }(He)), He
+    })(He)), He
 }
 var _t;
 
@@ -2482,7 +2482,7 @@ function co(t) {
 function fo(t) {
     return function(e) {
         var r, n;
-        return n = r = function(o) {
+        return n = r = (function(o) {
             zt(i, o);
 
             function i() {
@@ -2524,7 +2524,7 @@ function fo(t) {
                     contentRect: this.state.contentRect
                 }))
             }, i
-        }(f.Component), r.propTypes = {
+        })(f.Component), r.propTypes = {
             client: X.bool,
             offset: X.bool,
             scroll: X.bool,
