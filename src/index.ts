@@ -106,11 +106,7 @@ while(queue.length > 0) {
         await sendEmbed({
             title: "Failed to fetch Gimkit's bundle after five tries",
             description: `The following assets could not be fetched:\n${failedList}`,
-            color: 14948890,
-            author: {
-                name: "Gimkit Bundle Tracker",
-                url: "https://github.com/Gimloader/bundle-tracker"
-            }
+            color: 14948890
         });
         process.exit(1);
 
