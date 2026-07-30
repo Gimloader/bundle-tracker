@@ -1,1 +1,1 @@
-import{x as n}from"./_index.js";function t(e){n(function(){})}export{t as u};
+import{s as n}from"./_index.js";function s(e){n(function(){})}export{s as u};
