@@ -1,0 +1,1 @@
+import{a as h}from"./FixSpinePlugin.js";const r={width:0,height:0},n=i=>{const t=h().textures.get(i);if(!t)return r;const e=t.frames[t.firstFrame];return e?{width:e.width,height:e.height}:r};export{n as F};
