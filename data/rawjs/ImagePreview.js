@@ -1,4 +1,4 @@
-import{r as a,j as o,M as n,e as l,d as c}from"./_index.js";import{g}from"./getCloudinaryUrl.js";const d=c.img.attrs(i=>({src:i.image}))`
+import{r as a,j as o,M as n,e as l,b as c}from"./_index.js";import{g}from"./getCloudinaryUrl.js";const d=c.img.attrs(i=>({src:i.image}))`
   cursor: pointer;
   height: ${i=>i.size}px;
   width: ${i=>i.size}px;
