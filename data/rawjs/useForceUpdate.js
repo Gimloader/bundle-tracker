@@ -1,1 +1,1 @@
-import{r as t}from"./_index.js";function c(){const[,e]=t.useReducer(r=>r+1,0);return e}export{c as u};
+import{x as r}from"./_index.js";const o=()=>r.useReducer(e=>e+1,0);export{o as u};

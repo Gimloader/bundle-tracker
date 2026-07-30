@@ -1,4 +1,4 @@
-import{j as i,d as t}from"./_index.js";const s=a=>i.jsxs(e,{children:[i.jsx("div",{className:"area",children:i.jsxs("ul",{className:"circles",children:[i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{})]})}),i.jsx(l,{children:a.children})]}),e=t.div`
+import{j as i,b as t}from"./_index.js";const s=a=>i.jsxs(e,{children:[i.jsx("div",{className:"area",children:i.jsxs("ul",{className:"circles",children:[i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{})]})}),i.jsx(l,{children:a.children})]}),e=t.div`
   flex: 1;
   height: 100%;
   width: 100%;

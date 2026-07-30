@@ -1,4 +1,4 @@
-import{e as o,d as t,F as a}from"./_index.js";const s=t.div.attrs({className:"flex-column vc"})`
+import{e as o,b as t,F as a}from"./_index.js";const s=t.div.attrs({className:"flex-column vc"})`
   flex: 1;
   background: ${o.Snow};
 `,e=t.div`
