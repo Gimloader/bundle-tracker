@@ -1,4 +1,4 @@
-import{u as b,j as t,D as j,C as v,b as n,F as x,f as I,B as Q,e as y,c as w,r as p,aY as g}from"./_index.js";import{Q as B}from"./Question.js";import{T as h}from"./index-5.js";import{U as $}from"./App-2.js";import{R as D}from"./DownloadOutlined.js";const a={Red:"#d32f2f",Green:"#388e3c",Blue:"#303f9f"},A=n.div`
+import{u as v,j as t,D as j,C as b,d as n,F as x,f as I,B as Q,e as y,c as w,r as p,aY as g}from"./_index.js";import{Q as B}from"./Question.js";import{T as h}from"./index-5.js";import{U as $}from"./App-2.js";import{R as D}from"./DownloadOutlined.js";const a={Red:"#d32f2f",Green:"#388e3c",Blue:"#303f9f"},A=n.div`
   display: flex;
   flex-direction: column;
   min-height: max-content;
@@ -23,7 +23,7 @@ import{u as b,j as t,D as j,C as v,b as n,F as x,f as I,B as Q,e as y,c as w,r a
   @media print {
     display: none;
   }
-`,R=e=>{const[o,l,d]=b(!1),u=()=>{if(!I()){l();return}e==null||e.download()};return t.jsxs(t.Fragment,{children:[t.jsxs(A,{children:[t.jsxs(E,{children:[t.jsxs(k,{children:[t.jsx(M,{children:e.title}),e.description&&t.jsx(S,{children:e.description})]}),e.download?t.jsx(z,{style:{marginLeft:30},size:"large",icon:t.jsx(D,{}),onClick:u,children:"Export"}):null]}),t.jsx(j,{})]}),t.jsx($,{id:"report export",copy:{title:"Export reports with Pro",description:t.jsxs(t.Fragment,{children:["To export a game report to a spreadsheet file,"," ",t.jsxs("b",{children:["upgrade to ",v," Pro."]})]})},visible:o,close:d})]})},U=n(w)`
+`,R=e=>{const[o,l,d]=v(!1),u=()=>{if(!I()){l();return}e==null||e.download()};return t.jsxs(t.Fragment,{children:[t.jsxs(A,{children:[t.jsxs(E,{children:[t.jsxs(k,{children:[t.jsx(M,{children:e.title}),e.description&&t.jsx(S,{children:e.description})]}),e.download?t.jsx(z,{style:{marginLeft:30},size:"large",icon:t.jsx(D,{}),onClick:u,children:"Export"}):null]}),t.jsx(j,{})]}),t.jsx($,{id:"report export",copy:{title:"Export reports with Pro",description:t.jsxs(t.Fragment,{children:["To export a game report to a spreadsheet file,"," ",t.jsxs("b",{children:["upgrade to ",b," Pro."]})]})},visible:o,close:d})]})},U=n(w)`
   margin-bottom: 10px !important;
 `,N=n.h2`
   margin-bottom: -9px;

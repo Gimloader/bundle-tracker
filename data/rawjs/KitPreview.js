@@ -1,4 +1,4 @@
-import{j as t,e as s,aq as d,D as c,q as x,d as m,b as i,U as a,F as f,c as h}from"./_index.js";import{I as u}from"./ImagePreview.js";import{A as v}from"./AccessibleAnchor.js";import{N as g}from"./NavigateTo.js";const o=178,b=148,j=i(v).attrs({className:"maxWidth"})`
+import{j as t,e as s,aq as d,D as c,q as x,b as m,d as i,U as a,F as f,c as h}from"./_index.js";import{I as u}from"./ImagePreview.js";import{A as v}from"./AccessibleAnchor.js";import{N as g}from"./NavigateTo.js";const o=178,b=148,j=i(v).attrs({className:"maxWidth"})`
   display: flex;
   margin-bottom: 15px;
   text-decoration: none;

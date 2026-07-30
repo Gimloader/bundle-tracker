@@ -1,7 +1,7 @@
-import{U as b,r as l,u as Q,i as Y,f as w,j as e,e as d,b as i,D as P,F as $,x as y,a as R,t as X,M as U,S as K,C as I,B,aa as V,Z,af as J,ah as ee,l as te,E as se,cm as ie}from"./_index.js";import{E as j}from"./Sizes.js";import{A as D}from"./AccessibleAnchor.js";import{m as g}from"./motion.js";import{b as ne}from"./index-1.js";import{e as F}from"./price.js";import{T as oe}from"./TrackPostHogEvent.js";import{c as ae}from"./index-2.js";import{I as re}from"./index-3.js";import{s as le}from"./index-4.js";import{R as ce}from"./StarOutlined.js";const k={titleFont:b.FugazOne},T={Win:"Meta",Scroll:"ScrollLock",Spacebar:" ",Down:"ArrowDown",Left:"ArrowLeft",Right:"ArrowRight",Up:"ArrowUp",Del:"Delete",Crsel:"CrSel",Exsel:"ExSel",Apps:"ContextMenu",Esc:"Escape",Decimal:".",Multiply:"*",Add:"+",Subtract:"-",Divide:"/"},de=t=>{const s=t.key;if(Object.hasOwn(T,s)){const o=T[s];Object.defineProperty(t,"key",{configurable:!0,enumerable:!0,get:()=>o})}},he=(t,s)=>{const o=l.useRef();l.useEffect(()=>{o.current=n=>{de(n),(Array.isArray(t)?t.includes(n.key):t===n.key)&&(s==null||s(n))}},[t,s]),l.useEffect(()=>{const n=a=>{var r;return(r=o.current)==null?void 0:r.call(o,a)};return window.addEventListener("keydown",n),()=>window.removeEventListener("keydown",n)},[])};var x=(t=>(t.limitedModes="limitedModes",t.limitedGames="limitedGames",t))(x||{});const p=()=>"limitedModes",ue=()=>5,S=350,_=10,L=S+_,v=.2,me=t=>{const[s,o,n]=Q(!1),a=p(),r=l.useMemo(()=>t.isProExperience&&!Y()&&a===x.limitedModes&&!w(),[t.isProExperience,a]);return e.jsxs(xe,{onMouseEnter:o,onMouseLeave:n,style:{backgroundImage:`url('${t.image}')`,borderColor:t.currentlySelected?"#fdd835":d.White},onClick:t.onSelect,className:t.noShadowOnContainer?"":"light-shadow",children:[t.forcePremiumBadge||r?e.jsx(fe,{animate:{opacity:s?0:1},initial:{opacity:1},transition:{duration:v},children:e.jsx(ge,{})}):e.jsx("div",{}),e.jsxs(pe,{children:[r?e.jsx(ye,{animate:{opacity:s?0:1},initial:{opacity:1},transition:{duration:v},children:"Gimkit Pro Exclusive"}):null,!r&&t.tag?e.jsx(ve,{animate:{opacity:s?0:1},initial:{opacity:1},transition:{duration:v},children:t.tag}):null,e.jsx(je,{children:t.name}),e.jsx(we,{animate:{height:s?"auto":0},initial:{height:0},transition:{duration:v},children:t.tagline})]})]})},xe=i.div.attrs({className:"flex flex-column between"})`
+import{U as b,r as l,u as Q,i as Y,f as j,j as e,e as d,d as s,D as $,F as S,x as y,a as B,t as X,M as O,S as V,C as F,B as D,aa as Z,Z as J,af as ee,ah as te,l as ie,E as se,cm as ne}from"./_index.js";import{E as w}from"./Sizes.js";import{A as _}from"./AccessibleAnchor.js";import{m as g}from"./motion.js";import{b as oe}from"./index-1.js";import{e as L}from"./price.js";import{T as ae}from"./TrackPostHogEvent.js";import{c as re}from"./index-2.js";import{I as le}from"./index-3.js";import{s as ce}from"./index-4.js";import{R as de}from"./StarOutlined.js";const E={titleFont:b.FugazOne};var ue="Invariant failed";function C(t,i){throw new Error(ue)}var T=new Map([["Win","Meta"],["Scroll","ScrollLock"],["Spacebar"," "],["Down","ArrowDown"],["Left","ArrowLeft"],["Right","ArrowRight"],["Up","ArrowUp"],["Del","Delete"],["Crsel","CrSel"],["Exsel","ExSel"],["Apps","ContextMenu"],["Esc","Escape"],["Decimal","."],["Multiply","*"],["Add","+"],["Subtract","-"],["Divide","/"]]),he=function(i){if(T.has(i.key)){var a=T.get(i.key);Object.defineProperty(i,"key",{configurable:!0,enumerable:!0,get:function(){return a}})}},me=function(i,a){Array.isArray(i)||typeof i=="string"||C(),Array.isArray(i)&&i.forEach(function(n,r){typeof n!="string"&&C()}),typeof a=="function"||a==null||C();var o=l.useRef();l.useEffect(function(){o.current=function(n){he(n),(Array.isArray(i)?i.includes(n.key):i===n.key)&&(a==null||a(n))}},[i,a]),l.useEffect(function(){var n=function(u){o.current(u)};return window.addEventListener("keydown",n),function(){window.removeEventListener("keydown",n)}},[])},x=(t=>(t.limitedModes="limitedModes",t.limitedGames="limitedGames",t))(x||{});const p=()=>"limitedModes",xe=()=>5,A=350,H=10,W=A+H,v=.2,fe=t=>{const[i,a,o]=Q(!1),n=p(),r=l.useMemo(()=>t.isProExperience&&!Y()&&n===x.limitedModes&&!j(),[t.isProExperience,n]);return e.jsxs(ge,{onMouseEnter:a,onMouseLeave:o,style:{backgroundImage:`url('${t.image}')`,borderColor:t.currentlySelected?"#fdd835":d.White},onClick:t.onSelect,className:t.noShadowOnContainer?"":"light-shadow",children:[t.forcePremiumBadge||r?e.jsx(pe,{animate:{opacity:i?0:1},initial:{opacity:1},transition:{duration:v},children:e.jsx(ye,{})}):e.jsx("div",{}),e.jsxs(ve,{children:[r?e.jsx(we,{animate:{opacity:i?0:1},initial:{opacity:1},transition:{duration:v},children:"Gimkit Pro Exclusive"}):null,!r&&t.tag?e.jsx(je,{animate:{opacity:i?0:1},initial:{opacity:1},transition:{duration:v},children:t.tag}):null,e.jsx(be,{children:t.name}),e.jsx(Ee,{animate:{height:i?"auto":0},initial:{height:0},transition:{duration:v},children:t.tagline})]})]})},ge=s.div.attrs({className:"flex flex-column between"})`
   border-width: 4px;
   border-style: solid;
-  width: ${S}px;
+  width: ${A}px;
   height: 180px;
   border-radius: 4px;
   background-image: url('');
@@ -11,11 +11,11 @@ import{U as b,r as l,u as Q,i as Y,f as w,j as e,e as d,b as i,D as P,F as $,x a
   flex-shrink: 0;
   cursor: pointer;
   transition: border-color 0.3s;
-`,fe=i(g.div).attrs({className:"maxWidth"})`
+`,pe=s(g.div).attrs({className:"maxWidth"})`
   padding: 10px 15px;
-`,ge=i.img.attrs({src:"/client/img/pro/star.svg"})`
+`,ye=s.img.attrs({src:"/client/img/pro/star.svg"})`
   height: 20px;
-`,pe=i.div.attrs({className:"maxWidth flex-column"})`
+`,ve=s.div.attrs({className:"maxWidth flex-column"})`
   padding: 10px 15px;
   background: linear-gradient(
     to top,
@@ -38,15 +38,15 @@ import{U as b,r as l,u as Q,i as Y,f as w,j as e,e as d,b as i,D as P,F as $,x a
   );
   overflow: hidden;
   align-items: flex-start;
-`,ye=i(g.div)`
-  font-family: ${k.titleFont};
+`,we=s(g.div)`
+  font-family: ${E.titleFont};
   text-transform: uppercase;
   font-size: 12px;
   margin-bottom: -2px;
   text-shadow: 1px 1px 1px ${d.Black};
   color: ${d.White};
-`,ve=i(g.div)`
-  font-family: ${k.titleFont};
+`,je=s(g.div)`
+  font-family: ${E.titleFont};
   text-transform: uppercase;
   background: rgba(255, 87, 34, 0.8);
   padding: 7px 10px;
@@ -54,39 +54,39 @@ import{U as b,r as l,u as Q,i as Y,f as w,j as e,e as d,b as i,D as P,F as $,x a
   line-height: 1;
   border-radius: 10px;
   margin-bottom: 4px;
-`,je=i.div`
-  font-family: ${k.titleFont};
+`,be=s.div`
+  font-family: ${E.titleFont};
   text-transform: uppercase;
   font-size: 22px;
   text-shadow: 2px 2px 2px ${d.Black};
   color: ${d.White};
-`,we=i(g.div)`
+`,Ee=s(g.div)`
   font-size: 14px;
   text-shadow: 1px 1px 1px ${d.Black};
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 1px;
   overflow: hidden;
   font-family: ${b.ProductSans};
-`,be=t=>{const[s,o]=l.useState(0),n=l.useRef(!1),a=l.useRef(null),[r]=ne(a),u=l.useMemo(()=>t.verticalList?0:s*L*-1+j.sideMargin,[s,t.verticalList]),c=l.useMemo(()=>!(s<=0),[s]),f=()=>{n.current=!0},m=()=>{n.current=!1};he(["ArrowLeft","ArrowRight"],h=>{n.current&&(h.key==="ArrowLeft"&&N(),h.key==="ArrowRight"&&A())});const M=l.useMemo(()=>{if(s+1===t.list.items.length)return!1;const h=(r-j.sideMargin)/L;return!(s>=t.list.items.length-h)},[r,s,t.list.items.length]),N=()=>{c&&o(Math.max(0,s-1))},A=()=>{M&&o(s+1)};return e.jsxs(ke,{onMouseEnter:f,onMouseLeave:m,children:[t.hideListName?null:e.jsx(Ee,{children:t.list.name}),e.jsxs(Me,{children:[e.jsx(Ce,{animate:{x:u},initial:{x:t.verticalList?0:j.sideMargin},transition:{duration:.3,ease:"easeOut"},style:t.verticalList?{display:"grid",gridTemplateColumns:`repeat(auto-fill, ${S}px)`,justifyContent:"center",gap:20,margin:"0px 25px"}:{gap:_},ref:a,children:t.list.items.map(h=>e.jsx(me,{name:h.name,tagline:h.tagline,image:h.imageUrl,currentlySelected:t.forceAllSelected?!0:t.currentlySelectedExperienceId===h._id,onSelect:t.onExperienceSelected?()=>t.onExperienceSelected(h._id):null,isProExperience:h.isPremiumExperience,noShadowOnContainer:t.noShadowOnItems,forcePremiumBadge:t.forcePremiumBadge,tag:h.tag},`list-${t.list._id}-${h._id}`))}),t.verticalList?null:e.jsxs(Pe,{children:[e.jsx($e,{animate:{opacity:c?1:0},initial:{opacity:0},onClick:N,children:e.jsx(W,{style:{cursor:c?"pointer":"auto"},children:e.jsx("i",{className:"fas fa-chevron-left"})})}),e.jsx(Se,{animate:{opacity:M?1:0},initial:{opacity:0},onClick:A,children:e.jsx(W,{style:{cursor:M?"pointer":"auto"},children:e.jsx("i",{className:"fas fa-chevron-right"})})})]})]})]})},ke=i.div.attrs({className:"maxWidth"})``,Ee=i.div`
-  font-family: ${k.titleFont};
+`,ke=t=>{const[i,a]=l.useState(0),o=l.useRef(!1),n=l.useRef(null),[r]=oe(n),u=l.useMemo(()=>t.verticalList?0:i*W*-1+w.sideMargin,[i,t.verticalList]),c=l.useMemo(()=>!(i<=0),[i]),f=()=>{o.current=!0},m=()=>{o.current=!1};me(["ArrowLeft","ArrowRight"],h=>{o.current&&(h.key==="ArrowLeft"&&N(),h.key==="ArrowRight"&&I())});const M=l.useMemo(()=>{if(i+1===t.list.items.length)return!1;const h=(r-w.sideMargin)/W;return!(i>=t.list.items.length-h)},[r,i,t.list.items.length]),N=()=>{c&&a(Math.max(0,i-1))},I=()=>{M&&a(i+1)};return e.jsxs(Me,{onMouseEnter:f,onMouseLeave:m,children:[t.hideListName?null:e.jsx(Ce,{children:t.list.name}),e.jsxs(Pe,{children:[e.jsx($e,{animate:{x:u},initial:{x:t.verticalList?0:w.sideMargin},transition:{duration:.3,ease:"easeOut"},style:t.verticalList?{display:"grid",gridTemplateColumns:`repeat(auto-fill, ${A}px)`,justifyContent:"center",gap:20,margin:"0px 25px"}:{gap:H},ref:n,children:t.list.items.map(h=>e.jsx(fe,{name:h.name,tagline:h.tagline,image:h.imageUrl,currentlySelected:t.forceAllSelected?!0:t.currentlySelectedExperienceId===h._id,onSelect:t.onExperienceSelected?()=>t.onExperienceSelected(h._id):null,isProExperience:h.isPremiumExperience,noShadowOnContainer:t.noShadowOnItems,forcePremiumBadge:t.forcePremiumBadge,tag:h.tag},`list-${t.list._id}-${h._id}`))}),t.verticalList?null:e.jsxs(Se,{children:[e.jsx(Ae,{animate:{opacity:c?1:0},initial:{opacity:0},onClick:N,children:e.jsx(z,{style:{cursor:c?"pointer":"auto"},children:e.jsx("i",{className:"fas fa-chevron-left"})})}),e.jsx(Ne,{animate:{opacity:M?1:0},initial:{opacity:0},onClick:I,children:e.jsx(z,{style:{cursor:M?"pointer":"auto"},children:e.jsx("i",{className:"fas fa-chevron-right"})})})]})]})]})},Me=s.div.attrs({className:"maxWidth"})``,Ce=s.div`
+  font-family: ${E.titleFont};
   text-align: center;
   margin-bottom: 15px;
   text-transform: uppercase;
   font-size: 26px;
   color: rgba(255, 255, 255, 0.9);
-`,Me=i.div.attrs({className:"maxWidth"})`
+`,Pe=s.div.attrs({className:"maxWidth"})`
   position: relative;
   overflow: hidden;
-`,Ce=i(g.div).attrs({className:"flex"})``,Pe=i.div.attrs({className:"maxAll flex vc between"})`
+`,$e=s(g.div).attrs({className:"flex"})``,Se=s.div.attrs({className:"maxAll flex vc between"})`
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
-`,H=i(g.div).attrs({className:"flex-center maxHeight"})`
+`,q=s(g.div).attrs({className:"flex-center maxHeight"})`
   width: 60px;
   line-height: 1;
   color: ${d.White};
-`,$e=i(H)`
+`,Ae=s(q)`
   background: linear-gradient(
     to right,
     hsla(0, 0%, 0%, 0.61) 0%,
@@ -106,7 +106,7 @@ import{U as b,r as l,u as Q,i as Y,f as w,j as e,e as d,b as i,D as P,F as $,x a
     hsla(0, 0%, 0%, 0.016) 94.5%,
     hsla(0, 0%, 0%, 0) 100%
   );
-`,Se=i(H)`
+`,Ne=s(q)`
   background: linear-gradient(
     to left,
     hsla(0, 0%, 0%, 0.61) 0%,
@@ -126,7 +126,7 @@ import{U as b,r as l,u as Q,i as Y,f as w,j as e,e as d,b as i,D as P,F as $,x a
     hsla(0, 0%, 0%, 0.016) 94.5%,
     hsla(0, 0%, 0%, 0) 100%
   );
-`,W=i.div.attrs({className:"flex-center"})`
+`,z=s.div.attrs({className:"flex-center"})`
   font-size: 32px;
   pointer-events: all;
   will-change: transform;
@@ -134,9 +134,9 @@ import{U as b,r as l,u as Q,i as Y,f as w,j as e,e as d,b as i,D as P,F as $,x a
   &:hover {
     transform: scale(1.1);
   }
-`,Ne=[{question:"What happens if I pay now and my school pays later?",answer:e.jsxs("span",{children:["If your school purchases a group license and you've already purchased Gimkit Pro, you’ll get refunded for your unused time."," ",e.jsx("b",{children:"So if you purchase a year of Gimkit Pro today and your school upgrades next month, we’d refund you $54.89."})," ","That refund happens automatically. No need to contact support!"]})},{question:"What's included with Gimkit Pro?",answer:e.jsxs("span",{children:[p()===x.limitedModes?"Unrestricted access to all modes, including Gimkit Pro Exclusives.":"No game limits, host as many games as you'd like!"," ","You'll also be able to create assignments (play Gimkit asynchronously) and upload audio + images to your questions."]})},{question:"What's your refund policy?",answer:e.jsxs("span",{children:["Bad refund policies are infuriating. You feel like the company is just trying to rip you off. We never want our customers to feel that way, so our refund policy is simple: If you’re ever unhappy with your subscription for any reason, just contact us and we’ll take care of you."," ",e.jsx("a",{href:"https://www.notion.so/gimkit/A-fair-refund-policy-a1688f61330b49a495a48bd0fd08697b",target:"_blank",children:"Check out our full refund policy here."})]})}],Ae=()=>e.jsxs(e.Fragment,{children:[e.jsx(P,{style:{margin:"26px 0px"}}),e.jsx(Ie,{children:Ne.map(t=>e.jsxs(Fe,{children:[e.jsx(Te,{children:t.question}),e.jsx(Le,{children:t.answer})]},t.question))})]}),Ie=i.div.attrs({className:"maxWidth"})`
-  padding: 0px ${()=>E}px;
-`,Fe=i.div`
+`,Ie=[{question:"What happens if I pay now and my school pays later?",answer:e.jsxs("span",{children:["If your school purchases a group license and you've already purchased Gimkit Pro, you’ll get refunded for your unused time."," ",e.jsx("b",{children:"So if you purchase a year of Gimkit Pro today and your school upgrades next month, we’d refund you $54.89."})," ","That refund happens automatically. No need to contact support!"]})},{question:"What's included with Gimkit Pro?",answer:e.jsxs("span",{children:[p()===x.limitedModes?"Unrestricted access to all modes, including Gimkit Pro Exclusives.":"No game limits, host as many games as you'd like!"," ","You'll also be able to create assignments (play Gimkit asynchronously) and upload audio + images to your questions."]})},{question:"What's your refund policy?",answer:e.jsxs("span",{children:["Bad refund policies are infuriating. You feel like the company is just trying to rip you off. We never want our customers to feel that way, so our refund policy is simple: If you’re ever unhappy with your subscription for any reason, just contact us and we’ll take care of you."," ",e.jsx("a",{href:"https://www.notion.so/gimkit/A-fair-refund-policy-a1688f61330b49a495a48bd0fd08697b",target:"_blank",children:"Check out our full refund policy here."})]})}],Fe=()=>e.jsxs(e.Fragment,{children:[e.jsx($,{style:{margin:"26px 0px"}}),e.jsx(Le,{children:Ie.map(t=>e.jsxs(Te,{children:[e.jsx(We,{children:t.question}),e.jsx(ze,{children:t.answer})]},t.question))})]}),Le=s.div.attrs({className:"maxWidth"})`
+  padding: 0px ${()=>k}px;
+`,Te=s.div`
   margin-bottom: 15px;
   background: ${d.White};
   padding: 30px;
@@ -147,22 +147,22 @@ import{U as b,r as l,u as Q,i as Y,f as w,j as e,e as d,b as i,D as P,F as $,x a
   &:last-child {
     margin-bottom: 0px;
   }
-`,Te=i.div`
+`,We=s.div`
   font-size: 21px;
-  font-weight: ${$.Bold};
-`,Le=i.div`
+  font-weight: ${S.Bold};
+`,ze=s.div`
   font-size: 16px;
   margin-top: 5px;
-`,We=t=>{const[s,o]=y.useState(!0),[n,a]=y.useState(null),[r,u]=y.useState(null),c=()=>`${V()}/pay-for-me/${r}`,f=()=>{ae(c()),le.success("Pay For Me link copied to clipboard!")};return y.useEffect(()=>{R({method:"GET",url:"/api/billing/pay-for-me-link",success:m=>{u(m)},error:m=>{a(m),X({e:m,default:{title:"Error connecting to our server",content:"An error ocurred while connecting to our server. Please try again later."}})},both:()=>o(!1)})},[]),e.jsx(U,{open:t.showPayForMeModal,onCancel:t.onCancel,footer:null,closable:!1,width:690,bodyStyle:{padding:0},children:s?e.jsx("div",{style:{height:361},className:"flex maxWidth maxHeight hc vc",children:e.jsx(K,{size:"large"})}):e.jsxs(ze,{children:[e.jsx(Re,{onClick:t.onCancel}),e.jsxs(Ge,{children:[e.jsx("span",{style:{fontWeight:$.UltraBold},children:"Pay For Me"})," ","link"]}),e.jsxs(Oe,{children:["Send this link to someone to allow them to pay for your"," ",I," Pro subscription. Once they pay, you'll get one full year of ",I," Pro and we'll make sure autorenew is off so they aren't charged again.",e.jsx("br",{})," ",e.jsx("br",{}),"One more thing: once they pay for your subscription, we'll send you an email letting you know!"]}),e.jsx(P,{}),!n&&e.jsxs("div",{className:"flex",children:[e.jsx(re,{value:c(),size:"large",readOnly:!0}),e.jsx(B,{size:"large",type:"primary",style:{marginLeft:10},onClick:f,children:"Copy Link"})]})]})})},ze=i.div.attrs({className:"maxWidth"})`
+`,Re=t=>{const[i,a]=y.useState(!0),[o,n]=y.useState(null),[r,u]=y.useState(null),c=()=>`${Z()}/pay-for-me/${r}`,f=()=>{re(c()),ce.success("Pay For Me link copied to clipboard!")};return y.useEffect(()=>{B({method:"GET",url:"/api/billing/pay-for-me-link",success:m=>{u(m)},error:m=>{n(m),X({e:m,default:{title:"Error connecting to our server",content:"An error ocurred while connecting to our server. Please try again later."}})},both:()=>a(!1)})},[]),e.jsx(O,{open:t.showPayForMeModal,onCancel:t.onCancel,footer:null,closable:!1,width:690,bodyStyle:{padding:0},children:i?e.jsx("div",{style:{height:361},className:"flex maxWidth maxHeight hc vc",children:e.jsx(V,{size:"large"})}):e.jsxs(Ge,{children:[e.jsx(Oe,{onClick:t.onCancel}),e.jsxs(Ue,{children:[e.jsx("span",{style:{fontWeight:S.UltraBold},children:"Pay For Me"})," ","link"]}),e.jsxs(Be,{children:["Send this link to someone to allow them to pay for your"," ",F," Pro subscription. Once they pay, you'll get one full year of ",F," Pro and we'll make sure autorenew is off so they aren't charged again.",e.jsx("br",{})," ",e.jsx("br",{}),"One more thing: once they pay for your subscription, we'll send you an email letting you know!"]}),e.jsx($,{}),!o&&e.jsxs("div",{className:"flex",children:[e.jsx(le,{value:c(),size:"large",readOnly:!0}),e.jsx(D,{size:"large",type:"primary",style:{marginLeft:10},onClick:f,children:"Copy Link"})]})]})})},Ge=s.div.attrs({className:"maxWidth"})`
   color: ${d.Black};
   font-family: ${b.SFPro};
   padding: 30px;
-`,Ge=i.div`
+`,Ue=s.div`
   font-size: 32px;
-`,Oe=i.div`
+`,Be=s.div`
   font-size: 17px;
   margin-top: 14px;
-`,Re=i.i.attrs({className:"fal fa-times"})`
+`,Oe=s.i.attrs({className:"fal fa-times"})`
   position: absolute;
   font-size: 24px;
   top: 30px;
@@ -173,47 +173,47 @@ import{U as b,r as l,u as Q,i as Y,f as w,j as e,e as d,b as i,D as P,F as $,x a
   &:hover {
     opacity: 1;
   }
-`,Ue=t=>{const[s,o]=l.useState(!1),[n,a]=l.useState(!1),r=()=>o(!0);return e.jsxs("div",{className:"flex flex-column vc",style:{marginTop:t.showingModes?25:20,paddingBottom:30},children:[e.jsx(D,{to:Z,children:e.jsx(B,{type:"primary",size:"large",icon:e.jsx(ce,{}),style:{width:380,height:70},children:w()?"Upgrade to Gimkit Pro early":"Upgrade to Gimkit Pro"})}),null,e.jsx(P,{style:{margin:"26px 0px"}}),e.jsxs("div",{className:"flex vc",children:[e.jsx(C,{to:J,children:"Group license pricing"}),e.jsx(z,{}),e.jsx(C,{onClick:()=>a(!0),children:"Pay For Me Link"}),!s&&e.jsxs(e.Fragment,{children:[e.jsx(z,{}),e.jsx(C,{onClick:r,children:"FAQ"})]})]}),s&&e.jsx(Ae,{}),e.jsx(We,{showPayForMeModal:n,onCancel:()=>a(!1)})]})};i.div`
+`,De=t=>{const[i,a]=l.useState(!1),[o,n]=l.useState(!1),r=()=>a(!0);return e.jsxs("div",{className:"flex flex-column vc",style:{marginTop:t.showingModes?25:20,paddingBottom:30},children:[e.jsx(_,{to:J,children:e.jsx(D,{type:"primary",size:"large",icon:e.jsx(de,{}),style:{width:380,height:70},children:j()?"Upgrade to Gimkit Pro early":"Upgrade to Gimkit Pro"})}),null,e.jsx($,{style:{margin:"26px 0px"}}),e.jsxs("div",{className:"flex vc",children:[e.jsx(P,{to:ee,children:"Group license pricing"}),e.jsx(R,{}),e.jsx(P,{onClick:()=>n(!0),children:"Pay For Me Link"}),!i&&e.jsxs(e.Fragment,{children:[e.jsx(R,{}),e.jsx(P,{onClick:r,children:"FAQ"})]})]}),i&&e.jsx(Fe,{}),e.jsx(Re,{showPayForMeModal:o,onCancel:()=>n(!1)})]})};s.div`
   font-size: 14px;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 12px;
-`;const C=i(D)`
+`;const P=s(_)`
   font-size: 16px;
   display: block;
   color: ${d.Black};
   text-decoration: underline;
-`,z=i.i.attrs({className:"fas fa-circle"})`
+`,R=s.i.attrs({className:"fas fa-circle"})`
   margin: 0px 12px;
   font-size: 10px;
-`,q=180,Be=t=>{const{copy:s}=t,o=()=>s&&s.title?s.title:w()?e.jsx(e.Fragment,{children:"Your trial ends soon."}):p()===x.limitedGames?e.jsx(e.Fragment,{children:"Upgrade to host unlimited games"}):e.jsxs("div",{style:{fontSize:40,marginTop:30},children:["Get all game modes for ",F({simple:!0})," a month."]}),n=()=>{if(s&&s.description)return s.description;const a=p(),r=a===x.limitedModes?"a few game modes that rotate every few weeks":`host ${ue()} games per month`;return e.jsxs("div",{className:"maxWidth",style:{textAlign:"left"},children:[w()?`After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${r}.`:`You're on the free version of Gimkit, which limits you to ${r}.`,e.jsx("br",{})," ",e.jsx("br",{}),a===x.limitedModes?"Want access to every single mode?":"Want to host unlimited games?"," ","Upgrade to Gimkit Pro! It’s just"," ",F({simple:!0})," a month and you’ll be helping support us, an independent small business.",a===x.limitedModes?e.jsxs(e.Fragment,{children:[e.jsx("br",{})," ",e.jsx("br",{}),"Upgrade to get access to these game modes and more:"]}):null]})};return e.jsxs(De,{background:t.showingModes?"#0A2540":"transparent",color:t.showingModes?d.White:d.Black,bottomPadding:t.showingModes?q:0,maskImage:!!t.showingModes,children:[e.jsx(_e,{onClick:t.close}),e.jsxs(He,{children:[e.jsx(qe,{children:o()}),e.jsx(Qe,{style:{marginTop:t.showingModes?10:5},children:n()})]})]})},De=i.div.attrs({className:"maxWidth flex flex-column vc"})`
-  padding: ${()=>E}px 0px;
+`,K=180,_e=t=>{const{copy:i}=t,a=()=>i&&i.title?i.title:j()?e.jsx(e.Fragment,{children:"Your trial ends soon."}):p()===x.limitedGames?e.jsx(e.Fragment,{children:"Upgrade to host unlimited games"}):e.jsxs("div",{style:{fontSize:40,marginTop:30},children:["Get all game modes for ",L({simple:!0})," a month."]}),o=()=>{if(i&&i.description)return i.description;const n=p(),r=n===x.limitedModes?"a few game modes that rotate every few weeks":`host ${xe()} games per month`;return e.jsxs("div",{className:"maxWidth",style:{textAlign:"left"},children:[j()?`After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${r}.`:`You're on the free version of Gimkit, which limits you to ${r}.`,e.jsx("br",{})," ",e.jsx("br",{}),n===x.limitedModes?"Want access to every single mode?":"Want to host unlimited games?"," ","Upgrade to Gimkit Pro! It’s just"," ",L({simple:!0})," a month and you’ll be helping support us, an independent small business.",n===x.limitedModes?e.jsxs(e.Fragment,{children:[e.jsx("br",{})," ",e.jsx("br",{}),"Upgrade to get access to these game modes and more:"]}):null]})};return e.jsxs(He,{background:t.showingModes?"#0A2540":"transparent",color:t.showingModes?d.White:d.Black,bottomPadding:t.showingModes?K:0,maskImage:!!t.showingModes,children:[e.jsx(qe,{onClick:t.close}),e.jsxs(Ke,{children:[e.jsx(Qe,{children:a()}),e.jsx(Ye,{style:{marginTop:t.showingModes?10:5},children:o()})]})]})},He=s.div.attrs({className:"maxWidth flex flex-column vc"})`
+  padding: ${()=>k}px 0px;
   padding-top: 30px;
   background: ${t=>t.background};
   color: ${t=>t.color};
   text-align: center;
   padding-bottom: ${t=>t.bottomPadding}px;
   ${t=>t.maskImage?`mask-image: linear-gradient(\n    to bottom,\n    ${t.background} 50%,\n    transparent 100%);`:""}
-`,_e=i.i.attrs({className:"fal fa-times"})`
+`,qe=s.i.attrs({className:"fal fa-times"})`
   position: absolute;
   font-size: 24px;
   top: 25px;
-  right: ${()=>E}px;
+  right: ${()=>k}px;
   opacity: 0.8;
   transition: opacity 0.3s;
   cursor: pointer;
   &:hover {
     opacity: 1;
   }
-`,He=i.div.attrs({className:"maxWidth"})`
-  padding: 0px ${()=>E}px;
-`,qe=i.div`
+`,Ke=s.div.attrs({className:"maxWidth"})`
+  padding: 0px ${()=>k}px;
+`,Qe=s.div`
   font-size: 42px;
-  font-weight: ${$.UltraBold};
-`,Qe=i.div`
+  font-weight: ${S.UltraBold};
+`,Ye=s.div`
   font-size: 20px;
-`,G={Classic:1},Ye=()=>{const[t,s]=l.useState([]);return l.useEffect(()=>{R({url:"/api/experiences",data:{mode:"liveGame"},cacheKey:"EXPERIENCES",success:o=>{let n=[];const a=[],r=o.every(u=>u.items.every(c=>!c.isPremiumExperience));o.forEach(u=>{u.items.forEach(c=>{(c.isPremiumExperience||r)&&(a.includes(c._id)||(n.push({...c,isPremiumExperience:!0}),a.push(c._id)))})}),Object.keys(G).forEach(u=>{const c=G[u],f=n.find(m=>m.name===u);f&&(n=n.filter(m=>m.name!==u),n.splice(c,0,f))}),s(n)}})},[]),t.length?e.jsx(O,{children:e.jsx(be,{list:{_id:"_",name:"_",items:t},hideListName:!0,noShadowOnItems:!0,forceAllSelected:!0,forcePremiumBadge:!0})}):e.jsx(O,{children:e.jsx("div",{style:{height:180}})})},O=i.div.attrs({className:"maxWidth"})`
-  margin-top: ${()=>-q+25}px;
-`,E=j.sideMargin,rt=t=>{l.useEffect(()=>{t.visible&&t.showModes&&ee("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap")},[t.visible,t.showModes]),l.useEffect(()=>{t.visible&&oe({properties:{reason:t.id}})},[t.visible,t.id]);const s=te();if(!s)return null;const o=p(),n=t.showModes&&o===x.limitedModes;return e.jsx(se,{theme:{algorithm:ie.defaultAlgorithm},children:e.jsx(U,{footer:null,width:850,style:{top:30},styles:{content:{padding:0,borderRadius:10,overflow:"hidden"},body:{padding:0,color:d.Snow}},open:t.visible,onCancel:t.close,closable:!1,children:e.jsxs(Xe,{children:[e.jsx(Be,{user:s,close:t.close,copy:t.copy,showingModes:n}),n?e.jsx(Ye,{}):null,e.jsx(Ue,{showingModes:n})]})})})},Xe=i.div.attrs({className:"maxWidth"})`
+`,G={Classic:1},Xe=()=>{const[t,i]=l.useState([]);return l.useEffect(()=>{B({url:"/api/experiences",data:{mode:"liveGame"},cacheKey:"EXPERIENCES",success:a=>{let o=[];const n=[],r=a.every(u=>u.items.every(c=>!c.isPremiumExperience));a.forEach(u=>{u.items.forEach(c=>{(c.isPremiumExperience||r)&&(n.includes(c._id)||(o.push({...c,isPremiumExperience:!0}),n.push(c._id)))})}),Object.keys(G).forEach(u=>{const c=G[u],f=o.find(m=>m.name===u);f&&(o=o.filter(m=>m.name!==u),o.splice(c,0,f))}),i(o)}})},[]),t.length?e.jsx(U,{children:e.jsx(ke,{list:{_id:"_",name:"_",items:t},hideListName:!0,noShadowOnItems:!0,forceAllSelected:!0,forcePremiumBadge:!0})}):e.jsx(U,{children:e.jsx("div",{style:{height:180}})})},U=s.div.attrs({className:"maxWidth"})`
+  margin-top: ${()=>-K+25}px;
+`,k=w.sideMargin,ct=t=>{l.useEffect(()=>{t.visible&&t.showModes&&te("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap")},[t.visible,t.showModes]),l.useEffect(()=>{t.visible&&ae({properties:{reason:t.id}})},[t.visible,t.id]);const i=ie();if(!i)return null;const a=p(),o=t.showModes&&a===x.limitedModes;return e.jsx(se,{theme:{algorithm:ne.defaultAlgorithm},children:e.jsx(O,{footer:null,width:850,style:{top:30},styles:{content:{padding:0,borderRadius:10,overflow:"hidden"},body:{padding:0,color:d.Snow}},open:t.visible,onCancel:t.close,closable:!1,children:e.jsxs(Ve,{children:[e.jsx(_e,{user:i,close:t.close,copy:t.copy,showingModes:o}),o?e.jsx(Xe,{}):null,e.jsx(De,{showingModes:o})]})})})},Ve=s.div.attrs({className:"maxWidth"})`
   color: ${d.Black};
   font-family: ${b.SFPro};
-`;export{k as E,x as F,Be as T,rt as U,ue as a,be as b,p as g,he as u};
+`;export{E,x as F,_e as T,ct as U,xe as a,ke as b,p as g,C as i,me as u};
