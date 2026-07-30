@@ -7,8 +7,9 @@ export async function pushChanges() {
     let date = new Date();
     let dateStr = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
     
-    await $`git add data`;
+    await $`git add data/js data/lastRun.json`;
     await $`git commit -m "Update data (${dateStr})"`;
+    const hash = await $`git rev-parse HEAD`.text();
 
     // Try to rebase before pushing to avoid issues
     await $`git fetch`;
@@ -25,11 +26,12 @@ export async function pushChanges() {
         return;
     }
     
+    await $`git add data/rawjs`;
+    await $`git commit -m "Update raw js (${dateStr})`;
     await $`git push`;
 
     if(!Bun.env.WEBHOOK_URL) return;
 
-    let hash = await $`git rev-parse HEAD`.text();
     await sendEmbed({
         title: "New updates to Gimkit's bundle",
         description: `**[View changes](https://github.com/Gimloader/bundle-tracker/commit/${hash})**\n${stat}`,

@@ -18,7 +18,10 @@ import{r as a,j as t,F as b,D as w,d as i,l as y,a1 as r,t as j,a as C,B,e as l,
   padding: 20px;
   border-radius: 5px;
   cursor: pointer;
-  ${e=>e.disabled?`\n  pointer-events: none;\n  opacity: 0.2;\n  `:null}
+  ${e=>e.disabled?`
+  pointer-events: none;
+  opacity: 0.2;
+  `:null}
   border-color: ${e=>e.selected?ne:l.BorderGray};
   background: ${e=>e.selected?O:l.White};
   transition: all 0.35s;

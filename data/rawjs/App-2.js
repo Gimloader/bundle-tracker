@@ -192,7 +192,10 @@ import{U as b,r as l,u as Q,i as Y,f as j,j as e,e as d,d as s,D as $,F as S,x a
   color: ${t=>t.color};
   text-align: center;
   padding-bottom: ${t=>t.bottomPadding}px;
-  ${t=>t.maskImage?`mask-image: linear-gradient(\n    to bottom,\n    ${t.background} 50%,\n    transparent 100%);`:""}
+  ${t=>t.maskImage?`mask-image: linear-gradient(
+    to bottom,
+    ${t.background} 50%,
+    transparent 100%);`:""}
 `,qe=s.i.attrs({className:"fal fa-times"})`
   position: absolute;
   font-size: 24px;

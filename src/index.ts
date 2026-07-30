@@ -71,7 +71,7 @@ const seenUrls = new Set<string>(queue);
 let processed = 0;
 let clearLine = false;
 let fails = 0;
-let failedUrls = new Set<string>(["hithere.js"]);
+let failedUrls = new Set<string>();
 
 while(queue.length > 0) {
     const url = queue.shift()!;
@@ -108,8 +108,8 @@ while(queue.length > 0) {
             description: `The following assets could not be fetched:\n${failedList}`,
             color: 14948890
         });
-        process.exit(1);
 
+        process.exit(1);
     }
 
     const text = await res.text();
@@ -153,8 +153,12 @@ for(let i = 0; i < names.length; i++) {
 console.log("\nFormatting files...");
 
 const jsPath = join(data, "js");
+const rawjsPath = join(data, "rawjs");
+
 await fsp.rm(jsPath, { recursive: true, force: true });
 await fsp.mkdir(jsPath, { recursive: true });
+await fsp.rm(rawjsPath, { recursive: true, force: true });
+await fsp.mkdir(rawjsPath, { recursive: true });
 
 // Update the files to have consistent names and formatted code
 for(const url in urlMap) {
@@ -162,6 +166,7 @@ for(const url in urlMap) {
     const js = await fsp.readFile(filePath, "utf-8");
 
     await fsp.writeFile(join(jsPath, urlMap[url]), format(js));
+    await fsp.writeFile(join(rawjsPath, urlMap[url]), format(js, false));
 }
 
 // Delete the temp directory
@@ -190,8 +195,8 @@ function getUrls(code: string) {
     return urlSet;
 }
 
-function format(js: string) {
-    js = beautify.js(js);
+function format(js: string, pretty = true) {
+    if(pretty) js = beautify.js(js);
 
     // Replace the names in the file with the local names
     for(const url in urlMap) {

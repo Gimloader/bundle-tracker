@@ -23,7 +23,12 @@ import{x as r,r as l,j as e,d as s,a as X,ar as st,F as rt,dN as ct,u as lt}from
   border-color: rgba(0, 0, 0, 0.3);
   border-width: 6px;
   border-style: solid;
-  ${t=>t.isOnDesktop&&`\n    transition: background 0.18s ease-in-out;\n    &:hover {\n      background: ${G(.1,t.answerColors[t.position].background)};\n    }\n  `}
+  ${t=>t.isOnDesktop&&`
+    transition: background 0.18s ease-in-out;
+    &:hover {
+      background: ${G(.1,t.answerColors[t.position].background)};
+    }
+  `}
 `,ot=t=>{const[n,i]=r.useState(t.text),o=()=>{if(t.language!=="en"&&!(t.disableIfContains&&t.text.includes(t.disableIfContains))){if(t.translations&&t.translations[t.text]){i(t.translations[t.text]);return}X({url:"",data:{to:t.language,text:t.text},success:a=>{i(a),t.translations[t.text]=a}})}};r.useEffect(()=>{t.text!==n&&(i(t.text),o())},[t.text]);const c=()=>{let a=n;return t.suffix&&(a+=t.suffix),a};return e.jsx(e.Fragment,{children:c()})},C={White:"white",Black:"black",DisabledGray:"#838383"},Y='"Product Sans"',vt={mainFontName:Y,name:`${Y}, sans-serif`},jt=t=>{const[n,i]=r.useState(""),[o,c]=r.useState(!0),a=g=>{i(g.target.value)},h=g=>{g.preventDefault(),d()},d=()=>{n&&o&&(c(!1),t.onQuestionAnswered(n))};return e.jsxs(St,{children:[e.jsx(Wt,{onSubmit:h,children:e.jsx(Et,{autoFocus:!0,value:n,onChange:a,placeholder:"Enter answer here..."})}),e.jsx(Mt,{buttonColor:t.buttonColor,onClick:d,children:e.jsx(ot,{language:t.language,translations:t.translations,text:"Submit"})})]})},St=s.div`
   height: 100%;
   width: 100%;
@@ -81,7 +86,12 @@ import{x as r,r as l,j as e,d as s,a as X,ar as st,F as rt,dN as ct,u as lt}from
   border-width: 6px;
   border-style: solid;
   cursor: pointer;
-  ${t=>t.isOnDesktop&&`transition: background 0.15s;\n    &:hover {\n      background: ${G(.1,t.background)};\n    }\n\n  `}
+  ${t=>t.isOnDesktop&&`transition: background 0.15s;
+    &:hover {
+      background: ${G(.1,t.background)};
+    }
+
+  `}
 `,Rt=t=>{const n=1/t.actions.length*100;return e.jsx(Dt,{children:t.actions.filter(i=>i!==null).map(i=>e.jsx(Nt,{...i,heightPercentage:n,language:t.language,translations:t.translations,desktopBreakpoint:t.desktopBreakpoint,onActionSound:t.onActionSound},i.text))})},Dt=s.div.attrs({className:"maxWidth"})`
   height: 60%;
   text-align: center;
