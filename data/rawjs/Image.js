@@ -1,4 +1,4 @@
-import{j as t,d as i,U as r,i as a}from"./_index.js";import{b as c}from"./Centered.js";import{G as n}from"./GetAssetPath.js";import{S as d}from"./SeasonTicketName.js";import{C as l}from"./Names.js";import{S as u}from"./index-2.js";const m=e=>t.jsxs(p,{children:[t.jsx(g,{children:t.jsx(x,{src:n(`seasonTicket/${e.icon}.svg`)})}),t.jsxs(h,{children:[e.tag?t.jsx(f,{children:e.tag}):null,t.jsx(b,{children:e.title}),t.jsx(v,{children:e.description})]})]}),p=i(c).attrs({className:"maxWidth light-shadow"})`
+import{j as t,d as i,W as r,i as a}from"./_index.js";import{b as c}from"./Centered.js";import{G as n}from"./GetAssetPath.js";import{S as d}from"./SeasonTicketName.js";import{C as l}from"./Names.js";import{S as u}from"./index-2.js";const m=e=>t.jsxs(p,{children:[t.jsx(g,{children:t.jsx(x,{src:n(`seasonTicket/${e.icon}.svg`)})}),t.jsxs(h,{children:[e.tag?t.jsx(f,{children:e.tag}):null,t.jsx(b,{children:e.title}),t.jsx(v,{children:e.description})]})]}),p=i(c).attrs({className:"maxWidth light-shadow"})`
   padding: 28px 32px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;

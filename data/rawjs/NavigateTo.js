@@ -1,1 +1,1 @@
-import{cs as s}from"./_index.js";const a=o=>{s.push(o)};export{a as N};
+import{ct as t}from"./_index.js";const a=o=>{t.push(o)};export{a as N};

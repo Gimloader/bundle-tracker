@@ -1,4 +1,4 @@
-import{u as v,j as t,D as j,C as b,d as n,F as x,f as I,B as Q,e as y,c as w,r as p,aY as g}from"./_index.js";import{Q as B}from"./Question.js";import{T as h}from"./index-5.js";import{U as $}from"./App-2.js";import{R as D}from"./DownloadOutlined.js";const a={Red:"#d32f2f",Green:"#388e3c",Blue:"#303f9f"},A=n.div`
+import{u as v,j as t,D as j,C as b,d as n,F as x,f as I,B as Q,e as y,c as w,r as p,aZ as g}from"./_index.js";import{Q as B}from"./Question.js";import{T as h}from"./index-5.js";import{U as $}from"./App-2.js";import{R as D}from"./DownloadOutlined.js";const a={Red:"#d32f2f",Green:"#388e3c",Blue:"#303f9f"},A=n.div`
   display: flex;
   flex-direction: column;
   min-height: max-content;
@@ -76,9 +76,9 @@ import{u as v,j as t,D as j,C as b,d as n,F as x,f as I,B as Q,e as y,c as w,r a
   display: flex;
   width: 100%;
   justify-content: space-between;
-`,Y=n.div`
+`,L=n.div`
   width: 100%;
-`,L=e=>t.jsxs(O,{children:[t.jsx(Y,{children:t.jsx(B,{question:e.question})}),t.jsx(H,{correct:e.correct,incorrect:e.incorrect,accuracy:e.accuracy})]}),J=n.div`
+`,Y=e=>t.jsxs(O,{children:[t.jsx(L,{children:t.jsx(B,{question:e.question})}),t.jsx(H,{correct:e.correct,incorrect:e.incorrect,accuracy:e.accuracy})]}),Z=n.div`
   display: flex;
   justify-content: space-around;
   min-height: max-content;
@@ -89,4 +89,4 @@ import{u as v,j as t,D as j,C as b,d as n,F as x,f as I,B as Q,e as y,c as w,r a
   :not(:last-child) {
     margin-right: 10px;
   }
-`,et=e=>{const{player:o,questions:l}=e,d=p.useMemo(()=>{const r=new Set;o.correctQuestionIds.forEach(c=>{r.add(c)}),o.incorrectQuestionIds.forEach(c=>{r.add(c)});const i=[];return r.forEach(c=>{const s=l.find(C=>C._id===c);s&&i.push(s)}),i},[l.length,o.correctQuestionIds.length,o.incorrectQuestionIds.length]),u=p.useMemo(()=>d.map(r=>{let i=0,c=0;return o.correctQuestionIds.forEach(s=>{s===r._id&&i++}),o.incorrectQuestionIds.forEach(s=>{s===r._id&&c++}),{question:r,resultData:{correct:i,incorrect:c,accuracy:g(i,c)}}}),[d.length,o.correctQuestionIds.length,o.incorrectQuestionIds.length]);return t.jsxs(W,{preventScroll:e.preventScroll,children:[t.jsx(R,{title:o.name}),t.jsxs(J,{children:[t.jsx(m,{header:"Correct",content:o.correctQuestionIds.length,contentColor:a.Green}),t.jsx(m,{header:"Incorrect",content:o.incorrectQuestionIds.length,contentColor:a.Red}),t.jsx(m,{header:"Accuracy",content:`${g(o.correctQuestionIds.length,o.incorrectQuestionIds.length)}%`,contentColor:a.Blue})]}),t.jsx("div",{className:"maxWidth",children:t.jsx(j,{style:{fontSize:20,fontWeight:x.UltraBold},children:t.jsx("div",{children:"Questions"})})}),t.jsx("div",{children:u.sort((r,i)=>r.resultData.accuracy>i.resultData.accuracy?1:-1).map(r=>t.jsx(L,{question:r.question,correct:r.resultData.correct,incorrect:r.resultData.incorrect,accuracy:r.resultData.accuracy},r.question._id+"-"+o.name+"-breakdown"))})]})};export{L as B,W as C,R as H,T as I,et as P,H as Q,a};
+`,et=e=>{const{player:o,questions:l}=e,d=p.useMemo(()=>{const r=new Set;o.correctQuestionIds.forEach(c=>{r.add(c)}),o.incorrectQuestionIds.forEach(c=>{r.add(c)});const i=[];return r.forEach(c=>{const s=l.find(C=>C._id===c);s&&i.push(s)}),i},[l.length,o.correctQuestionIds.length,o.incorrectQuestionIds.length]),u=p.useMemo(()=>d.map(r=>{let i=0,c=0;return o.correctQuestionIds.forEach(s=>{s===r._id&&i++}),o.incorrectQuestionIds.forEach(s=>{s===r._id&&c++}),{question:r,resultData:{correct:i,incorrect:c,accuracy:g(i,c)}}}),[d.length,o.correctQuestionIds.length,o.incorrectQuestionIds.length]);return t.jsxs(W,{preventScroll:e.preventScroll,children:[t.jsx(R,{title:o.name}),t.jsxs(Z,{children:[t.jsx(m,{header:"Correct",content:o.correctQuestionIds.length,contentColor:a.Green}),t.jsx(m,{header:"Incorrect",content:o.incorrectQuestionIds.length,contentColor:a.Red}),t.jsx(m,{header:"Accuracy",content:`${g(o.correctQuestionIds.length,o.incorrectQuestionIds.length)}%`,contentColor:a.Blue})]}),t.jsx("div",{className:"maxWidth",children:t.jsx(j,{style:{fontSize:20,fontWeight:x.UltraBold},children:t.jsx("div",{children:"Questions"})})}),t.jsx("div",{children:u.sort((r,i)=>r.resultData.accuracy>i.resultData.accuracy?1:-1).map(r=>t.jsx(Y,{question:r.question,correct:r.resultData.correct,incorrect:r.resultData.incorrect,accuracy:r.resultData.accuracy},r.question._id+"-"+o.name+"-breakdown"))})]})};export{Y as B,W as C,R as H,T as I,et as P,H as Q,a};

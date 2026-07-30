@@ -1,4 +1,4 @@
-import{r as g,I as v,_ as b,j as e,ad as f,B as r,D as l,ae as $,af as y,d as t,e as n,F as c,a3 as k,s as C,ag as S,$ as z,T as I,E as N,ah as T}from"./_index.js";import{A as o}from"./AccessibleAnchor.js";import{R,S as A}from"./App-4.js";import"./Shortcut.js";import"./Names.js";import"./mobxreact.esm.js";import"./index-1.js";import"./index-2.js";import"./index-6.js";import"./FontAwesomeIcon.js";import"./App-2.js";import"./Sizes.js";import"./motion.js";import"./price.js";import"./TrackPostHogEvent.js";import"./index-3.js";import"./index-4.js";import"./context.js";import"./StarOutlined.js";import"./NavigateTo.js";import"./index-15.js";import"./colors.js";import"./useWarningOnMountInDevelopment.js";import"./index-10.js";import"./index-5.js";import"./move.js";var B={icon:{tag:"svg",attrs:{viewBox:"64 64 896 896",focusable:"false"},children:[{tag:"path",attrs:{d:"M678.3 642.4c24.2-13 51.9-20.4 81.4-20.4h.1c3 0 4.4-3.6 2.2-5.6a371.67 371.67 0 00-103.7-65.8c-.4-.2-.8-.3-1.2-.5C719.2 505 759.6 431.7 759.6 349c0-137-110.8-248-247.5-248S264.7 212 264.7 349c0 82.7 40.4 156 102.6 201.1-.4.2-.8.3-1.2.5-44.7 18.9-84.8 46-119.3 80.6a373.42 373.42 0 00-80.4 119.5A373.6 373.6 0 00137 888.8a8 8 0 008 8.2h59.9c4.3 0 7.9-3.5 8-7.8 2-77.2 32.9-149.5 87.6-204.3C357 628.2 432.2 597 512.2 597c56.7 0 111.1 15.7 158 45.1a8.1 8.1 0 008.1.3zM512.2 521c-45.8 0-88.9-17.9-121.4-50.4A171.2 171.2 0 01340.5 349c0-45.9 17.9-89.1 50.3-121.6S466.3 177 512.2 177s88.9 17.9 121.4 50.4A171.2 171.2 0 01683.9 349c0 45.9-17.9 89.1-50.3 121.6C601.1 503.1 558 521 512.2 521zM880 759h-84v-84c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v84h-84c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h84v84c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-84h84c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8z"}}]},name:"user-add",theme:"outlined"},G=function(s,w){return g.createElement(v,b({},s,{ref:w,icon:B}))},u=g.forwardRef(G);const m=890,W=()=>e.jsxs(E,{children:[e.jsx(h,{children:e.jsx("img",{src:"/client/img/home/left.png",style:{width:"100%"}})}),e.jsxs(D,{children:[e.jsx(F,{children:"Next level."}),e.jsxs(O,{children:["Hey, I'm Josh! I started Gimkit as a high school project.",e.jsx("br",{})," ",e.jsx("br",{}),"Games really helped me become engaged in school. That's why I built Gimkit — to be the kind of game I'd want to play in class.",e.jsx("br",{})," ",e.jsx("br",{}),"Can't wait for you to give it a try!",e.jsx("br",{})," ",e.jsx("br",{}),e.jsxs("div",{className:"flex vc",children:[e.jsx(L,{})," - Josh F."]})]}),e.jsx("div",{className:"flex flex-column vc"}),e.jsx(o,{to:f,children:e.jsx(r,{style:{width:277,height:61},size:"large",icon:e.jsx(u,{}),type:"primary",children:"Sign Up For Free"})}),e.jsxs("div",{className:"flex wrap vc",style:{marginTop:15},children:[e.jsx(o,{to:"/join",external:!0,children:e.jsxs(r,{type:"link",children:[e.jsx("i",{className:"far fa-gamepad-alt"}),"  Join Game"]})}),e.jsx(l,{type:"vertical"}),e.jsx(o,{to:$,children:e.jsxs(r,{type:"link",children:[e.jsx(R,{}),"Login"]})}),e.jsxs(M,{children:[e.jsx(l,{type:"vertical"}),e.jsx(o,{to:y,children:e.jsxs(r,{type:"link",children:[e.jsx("i",{className:"far fa-users"}),"  Group Pricing"]})})]})]})]}),e.jsx(h,{children:e.jsx("img",{src:"/client/img/home/right.png",style:{width:"100%"}})})]}),E=t.div.attrs({className:"maxWidth flex hc"})`
+import{r as g,I as v,_ as b,j as e,af as f,B as r,D as l,ag as y,ah as $,d as t,e as n,F as x,a5 as k,x as C,ai as S,a1 as z,T as I,H as N,aj as T}from"./_index.js";import{A as o}from"./AccessibleAnchor.js";import{R,S as A}from"./App-4.js";import"./Shortcut.js";import"./Names.js";import"./mobxreact.esm.js";import"./index-1.js";import"./index-2.js";import"./index-6.js";import"./FontAwesomeIcon.js";import"./App-2.js";import"./Sizes.js";import"./motion.js";import"./price.js";import"./TrackPostHogEvent.js";import"./index-3.js";import"./index-4.js";import"./context.js";import"./StarOutlined.js";import"./NavigateTo.js";import"./index-15.js";import"./colors.js";import"./useWarningOnMountInDevelopment.js";import"./index-10.js";import"./index-5.js";import"./move.js";var B={icon:{tag:"svg",attrs:{viewBox:"64 64 896 896",focusable:"false"},children:[{tag:"path",attrs:{d:"M678.3 642.4c24.2-13 51.9-20.4 81.4-20.4h.1c3 0 4.4-3.6 2.2-5.6a371.67 371.67 0 00-103.7-65.8c-.4-.2-.8-.3-1.2-.5C719.2 505 759.6 431.7 759.6 349c0-137-110.8-248-247.5-248S264.7 212 264.7 349c0 82.7 40.4 156 102.6 201.1-.4.2-.8.3-1.2.5-44.7 18.9-84.8 46-119.3 80.6a373.42 373.42 0 00-80.4 119.5A373.6 373.6 0 00137 888.8a8 8 0 008 8.2h59.9c4.3 0 7.9-3.5 8-7.8 2-77.2 32.9-149.5 87.6-204.3C357 628.2 432.2 597 512.2 597c56.7 0 111.1 15.7 158 45.1a8.1 8.1 0 008.1.3zM512.2 521c-45.8 0-88.9-17.9-121.4-50.4A171.2 171.2 0 01340.5 349c0-45.9 17.9-89.1 50.3-121.6S466.3 177 512.2 177s88.9 17.9 121.4 50.4A171.2 171.2 0 01683.9 349c0 45.9-17.9 89.1-50.3 121.6C601.1 503.1 558 521 512.2 521zM880 759h-84v-84c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v84h-84c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h84v84c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-84h84c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8z"}}]},name:"user-add",theme:"outlined"},G=function(s,w){return g.createElement(v,b({},s,{ref:w,icon:B}))},j=g.forwardRef(G);const m=890,W=()=>e.jsxs(E,{children:[e.jsx(h,{children:e.jsx("img",{src:"/client/img/home/left.png",style:{width:"100%"}})}),e.jsxs(D,{children:[e.jsx(F,{children:"Next level."}),e.jsxs(O,{children:["Hey, I'm Josh! I started Gimkit as a high school project.",e.jsx("br",{})," ",e.jsx("br",{}),"Games really helped me become engaged in school. That's why I built Gimkit — to be the kind of game I'd want to play in class.",e.jsx("br",{})," ",e.jsx("br",{}),"Can't wait for you to give it a try!",e.jsx("br",{})," ",e.jsx("br",{}),e.jsxs("div",{className:"flex vc",children:[e.jsx(L,{})," - Josh F."]})]}),e.jsx("div",{className:"flex flex-column vc"}),e.jsx(o,{to:f,children:e.jsx(r,{style:{width:277,height:61},size:"large",icon:e.jsx(j,{}),type:"primary",children:"Sign Up For Free"})}),e.jsxs("div",{className:"flex wrap vc",style:{marginTop:15},children:[e.jsx(o,{to:"/join",external:!0,children:e.jsxs(r,{type:"link",children:[e.jsx("i",{className:"far fa-gamepad-alt"}),"  Join Game"]})}),e.jsx(l,{type:"vertical"}),e.jsx(o,{to:y,children:e.jsxs(r,{type:"link",children:[e.jsx(R,{}),"Login"]})}),e.jsxs(M,{children:[e.jsx(l,{type:"vertical"}),e.jsx(o,{to:$,children:e.jsxs(r,{type:"link",children:[e.jsx("i",{className:"far fa-users"}),"  Group Pricing"]})})]})]})]}),e.jsx(h,{children:e.jsx("img",{src:"/client/img/home/right.png",style:{width:"100%"}})})]}),E=t.div.attrs({className:"maxWidth flex hc"})`
   align-items: center;
   margin-top: 40px;
   margin-bottom: 60px;
@@ -73,10 +73,10 @@ import{r as g,I as v,_ as b,j as e,ad as f,B as r,D as l,ae as $,af as y,d as t,
   @media (max-width: 950px) {
     display: none;
   }
-`,j=t.div`
+`,u=t.div`
   width: 90%;
   max-width: 900px;
-`,d=670,x=i=>{const s=i.imageSide==="right";return e.jsx(j,{children:e.jsxs(q,{row:s,children:[e.jsxs(P,{marginLeft:s?0:55,marginRight:s?55:0,children:[e.jsx(U,{children:i.title}),e.jsx(_,{children:i.description})]}),e.jsx(H,{style:{transform:`rotate(${s?2:-2}deg)`},src:i.image})]})})},q=t.div.attrs({className:"flex vc hc"})`
+`,d=670,c=i=>{const s=i.imageSide==="right";return e.jsx(u,{children:e.jsxs(q,{row:s,children:[e.jsxs(P,{marginLeft:s?0:55,marginRight:s?55:0,children:[e.jsx(H,{children:i.title}),e.jsx(U,{children:i.description})]}),e.jsx(_,{style:{transform:`rotate(${s?2:-2}deg)`},src:i.image})]})})},q=t.div.attrs({className:"flex vc hc"})`
   flex-direction: ${i=>i.row?"row":"row-reverse"};
   @media (max-width: ${d}px) {
     flex-direction: column;
@@ -90,18 +90,18 @@ import{r as g,I as v,_ as b,j as e,ad as f,B as r,D as l,ae as $,af as y,d as t,
     margin-right: 0px;
     text-align: center;
   }
-`,U=t.div`
+`,H=t.div`
   font-size: 40px;
-  font-weight: ${c.Bold};
+  font-weight: ${x.Bold};
   @media (max-width: ${d}px) {
     font-size: 32px;
   }
-`,_=t.div`
+`,U=t.div`
   font-size: 19px;
   @media (max-width: ${d}px) {
     font-size: 16px;
   }
-`,H=t.img`
+`,_=t.img`
   height: 390px;
   @media (max-width: ${d}px) {
     margin-top: 20px;
@@ -117,7 +117,7 @@ import{r as g,I as v,_ as b,j as e,ad as f,B as r,D as l,ae as $,af as y,d as t,
 `,Q=t.div`
   color: ${n.White};
   font-size: 40px;
-  font-weight: ${c.Bold};
+  font-weight: ${x.Bold};
   @media (max-width: 580px) {
     font-size: 27px;
   }
@@ -135,7 +135,7 @@ import{r as g,I as v,_ as b,j as e,ad as f,B as r,D as l,ae as $,af as y,d as t,
   @media (max-width: 800px) {
     display: none;
   }
-`,p=i=>{const s=i.imageSide==="left";return e.jsx(j,{children:e.jsxs(Z,{flexDirection:s?"row-reverse":"row",children:[e.jsxs(ee,{children:[e.jsx(te,{children:i.title}),e.jsx(ie,{children:i.description})]}),e.jsx(se,{marginLeft:s?0:50,marginRight:s?50:0,children:e.jsx(ne,{src:i.image})})]})})},Z=t.div.attrs({className:"maxWidth flex vc"})`
+`,p=i=>{const s=i.imageSide==="left";return e.jsx(u,{children:e.jsxs(Z,{flexDirection:s?"row-reverse":"row",children:[e.jsxs(ee,{children:[e.jsx(te,{children:i.title}),e.jsx(ie,{children:i.description})]}),e.jsx(se,{marginLeft:s?0:50,marginRight:s?50:0,children:e.jsx(ne,{src:i.image})})]})})},Z=t.div.attrs({className:"maxWidth flex vc"})`
   flex-direction: ${i=>i.flexDirection};
   @media (max-width: 890px) {
     flex-direction: column !important;
@@ -149,7 +149,7 @@ import{r as g,I as v,_ as b,j as e,ad as f,B as r,D as l,ae as $,af as y,d as t,
   }
 `,te=t.div`
   font-size: 40px;
-  font-weight: ${c.Bold};
+  font-weight: ${x.Bold};
 `,ie=t.div`
   font-size: 19px;
   margin-top: 8px;
@@ -165,7 +165,7 @@ import{r as g,I as v,_ as b,j as e,ad as f,B as r,D as l,ae as $,af as y,d as t,
     width: 100%;
     max-width: 465px;
   }
-`,ne=t.img.attrs({className:"maxWidth"})``,ae=()=>e.jsxs(re,{children:[e.jsxs(oe,{children:[e.jsx(de,{children:"Game on."}),e.jsx(ce,{children:"Get your first game going and see your students engaged like never before!"})]}),e.jsx(o,{to:f,children:e.jsx(r,{icon:e.jsx(u,{}),type:"primary",size:"large",style:{width:277,height:61},children:"Sign Up For Free"})})]}),re=t.div.attrs({className:"maxWidth flex flex-column vc"})`
+`,ne=t.img.attrs({className:"maxWidth"})``,ae=()=>e.jsxs(re,{children:[e.jsxs(oe,{children:[e.jsx(de,{children:"Game on."}),e.jsx(xe,{children:"Get your first game going and see your students engaged like never before!"})]}),e.jsx(o,{to:f,children:e.jsx(r,{icon:e.jsx(j,{}),type:"primary",size:"large",style:{width:277,height:61},children:"Sign Up For Free"})})]}),re=t.div.attrs({className:"maxWidth flex flex-column vc"})`
   background: #0a2540;
   color: ${n.White};
   padding: 100px 30px;
@@ -174,11 +174,11 @@ import{r as g,I as v,_ as b,j as e,ad as f,B as r,D as l,ae as $,af as y,d as t,
   text-align: center;
 `,de=t.div`
   font-size: 48px;
-  font-weight: ${c.Bold};
+  font-weight: ${x.Bold};
   @media (max-width: 580px) {
     font-size: 36px;
   }
-`,ce=t.div`
+`,xe=t.div`
   font-size: 22px;
   margin-top: -5px;
   margin-bottom: 20px;
@@ -187,7 +187,7 @@ import{r as g,I as v,_ as b,j as e,ad as f,B as r,D as l,ae as $,af as y,d as t,
     font-size: 18px;
     margin-top: -1px;
   }
-`,a=i=>e.jsx("div",{style:{height:i.height}}),xe=()=>e.jsxs(me,{children:[e.jsx(x,{title:"Answer",description:`Students answer questions on their own device at their own pace.\n            Throughout a Kit, each student will get exposure to the questions\n            multiple times to ensure mastery.`,image:"/client/img/home/answer.png",imageSide:"right"}),e.jsx(a,{height:50}),e.jsx(x,{title:"Earn",description:"Students earn in-game cash by answering questions correctly. But be careful, an incorrect answer will cost you!",image:"/client/img/home/earn.png",imageSide:"left"}),e.jsx(a,{height:50}),e.jsx(x,{title:"Shop",description:"Students can reinvest their money by purchasing upgrades & powerups. With millions of combinations, students can make purchases that suit their strengths.",image:"/client/img/home/shop.png",imageSide:"right"}),e.jsx(a,{height:50}),e.jsx(K,{}),e.jsx(a,{height:100}),e.jsx(p,{title:"Home works.",description:e.jsxs(e.Fragment,{children:["Gimkit doesn't just have to be used in class. You can also assign it as homework. ",e.jsx("br",{})," ",e.jsx("br",{}),"Students love it and assignments are graded for you automatically."]}),image:"/client/img/home/assignment.png",imageSide:"right"}),e.jsx(a,{height:100}),e.jsx(p,{title:"KitCollab",description:e.jsxs(e.Fragment,{children:["With KitCollab, students create questions for the game!",e.jsx("br",{})," ",e.jsx("br",{}),"In realtime, students submit questions, you accept them, and then the class plays a game with the questions they wrote!"]}),image:"/client/img/home/kitcollab.png",imageSide:"left"}),e.jsx(a,{height:100}),e.jsx(ae,{})]}),me=t.div.attrs({className:"flex-center flex-column maxWidth"})``,Le=()=>{const i=k();return C(()=>{i||T("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap")}),i?e.jsx(S,{to:z,replace:!0}):e.jsxs(e.Fragment,{children:[e.jsx(I,{title:"Gimkit - live learning game show",override:!0}),e.jsx(le,{children:e.jsxs(N,{theme:{token:{fontFamily:"Rubik, sans-serif"}},children:[e.jsx(A,{includeSpacer:!0}),e.jsxs(he,{children:[e.jsx(W,{}),e.jsx(xe,{})]})]})})]})},le=t.div.attrs({className:"flex-column vc maxWidth"})`
+`,a=i=>e.jsx("div",{style:{height:i.height}}),ce=()=>e.jsxs(me,{children:[e.jsx(c,{title:"Answer",description:`Students answer questions on their own device at their own pace.\n            Throughout a Kit, each student will get exposure to the questions\n            multiple times to ensure mastery.`,image:"/client/img/home/answer.png",imageSide:"right"}),e.jsx(a,{height:50}),e.jsx(c,{title:"Earn",description:"Students earn in-game cash by answering questions correctly. But be careful, an incorrect answer will cost you!",image:"/client/img/home/earn.png",imageSide:"left"}),e.jsx(a,{height:50}),e.jsx(c,{title:"Shop",description:"Students can reinvest their money by purchasing upgrades & powerups. With millions of combinations, students can make purchases that suit their strengths.",image:"/client/img/home/shop.png",imageSide:"right"}),e.jsx(a,{height:50}),e.jsx(K,{}),e.jsx(a,{height:100}),e.jsx(p,{title:"Home works.",description:e.jsxs(e.Fragment,{children:["Gimkit doesn't just have to be used in class. You can also assign it as homework. ",e.jsx("br",{})," ",e.jsx("br",{}),"Students love it and assignments are graded for you automatically."]}),image:"/client/img/home/assignment.png",imageSide:"right"}),e.jsx(a,{height:100}),e.jsx(p,{title:"KitCollab",description:e.jsxs(e.Fragment,{children:["With KitCollab, students create questions for the game!",e.jsx("br",{})," ",e.jsx("br",{}),"In realtime, students submit questions, you accept them, and then the class plays a game with the questions they wrote!"]}),image:"/client/img/home/kitcollab.png",imageSide:"left"}),e.jsx(a,{height:100}),e.jsx(ae,{})]}),me=t.div.attrs({className:"flex-center flex-column maxWidth"})``,Le=()=>{const i=k();return C(()=>{i||T("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap")}),i?e.jsx(S,{to:z,replace:!0}):e.jsxs(e.Fragment,{children:[e.jsx(I,{title:"Gimkit - live learning game show",override:!0}),e.jsx(le,{children:e.jsxs(N,{theme:{token:{fontFamily:"Rubik, sans-serif"}},children:[e.jsx(A,{includeSpacer:!0}),e.jsxs(he,{children:[e.jsx(W,{}),e.jsx(ce,{})]})]})})]})},le=t.div.attrs({className:"flex-column vc maxWidth"})`
   flex: 1;
   background: ${n.Snow};
   font-family: 'Rubik', sans-serif;

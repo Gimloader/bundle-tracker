@@ -1,4 +1,4 @@
-import{j as t,c1 as l,U as c,d,F as a,c as g,D as x,M as n,r as u,a as h,S as C,bA as G,B as j,c2 as b,e as y}from"./_index.js";import{c as w}from"./index-2.js";import{c as R}from"./Money.js";import{s as v}from"./index-4.js";import{I as S}from"./index-3.js";import{S as M}from"./App-4.js";import"./context.js";import"./Shortcut.js";import"./Names.js";import"./mobxreact.esm.js";import"./AccessibleAnchor.js";import"./index-1.js";import"./index-6.js";import"./FontAwesomeIcon.js";import"./App-2.js";import"./Sizes.js";import"./motion.js";import"./price.js";import"./TrackPostHogEvent.js";import"./StarOutlined.js";import"./NavigateTo.js";import"./index-15.js";import"./colors.js";import"./useWarningOnMountInDevelopment.js";import"./index-10.js";import"./index-5.js";import"./move.js";const $=d(g)`
+import{j as t,c2 as l,W as c,d,F as a,c as g,D as x,M as n,r as u,a as h,S as C,bB as G,B as j,c3 as b,e as y}from"./_index.js";import{c as w}from"./index-2.js";import{c as R}from"./Money.js";import{s as v}from"./index-4.js";import{I as S}from"./index-3.js";import{S as M}from"./App-4.js";import"./context.js";import"./Shortcut.js";import"./Names.js";import"./mobxreact.esm.js";import"./AccessibleAnchor.js";import"./index-1.js";import"./index-6.js";import"./FontAwesomeIcon.js";import"./App-2.js";import"./Sizes.js";import"./motion.js";import"./price.js";import"./TrackPostHogEvent.js";import"./StarOutlined.js";import"./NavigateTo.js";import"./index-15.js";import"./colors.js";import"./useWarningOnMountInDevelopment.js";import"./index-10.js";import"./index-5.js";import"./move.js";const $=d(g)`
   display: flex;
   padding: 20px;
   margin-bottom: 14px !important;
@@ -44,18 +44,18 @@ import{j as t,c1 as l,U as c,d,F as a,c as g,D as x,M as n,r as u,a as h,S as C,
   &:hover {
     cursor: pointer;
   }
-`,p=e=>e.replace(/(.{4})(.{4})(.{4})(.{4})(.{4})/,"$1-$2-$3-$4-$5"),P=e=>{w(p(e)),v.success("Gift card copied to clipboard!")},B=e=>t.jsxs($,{children:[t.jsxs(T,{children:[t.jsx(f,{children:R(e.value)}),e.purchaseDate&&t.jsxs(o,{children:["Purchased ",l(e.purchaseDate)," "]}),e.dateRedeemed?t.jsxs(o,{children:["Redeemed ",l(e.dateRedeemed)," "]}):t.jsx(o,{children:"Not yet redeemed"})]}),e.code&&t.jsxs(z,{children:[t.jsx(k,{children:"Gift Card Code:"}),t.jsx(D,{onClick:()=>P(e.code),children:p(e.code)})]})]}),F=d.div``,H=d.h2`
+`,p=e=>e.replace(/(.{4})(.{4})(.{4})(.{4})(.{4})/,"$1-$2-$3-$4-$5"),P=e=>{w(p(e)),v.success("Gift card copied to clipboard!")},B=e=>t.jsxs($,{children:[t.jsxs(T,{children:[t.jsx(f,{children:R(e.value)}),e.purchaseDate&&t.jsxs(o,{children:["Purchased ",l(e.purchaseDate)," "]}),e.dateRedeemed?t.jsxs(o,{children:["Redeemed ",l(e.dateRedeemed)," "]}):t.jsx(o,{children:"Not yet redeemed"})]}),e.code&&t.jsxs(z,{children:[t.jsx(k,{children:"Gift Card Code:"}),t.jsx(D,{onClick:()=>P(e.code),children:p(e.code)})]})]}),W=d.div``,F=d.h2`
   text-align: center;
   font-size: 36px;
   font-family: ${c.SFPro};
   font-weight: ${a.UltraBold};
-`,m=e=>e.gifts&&e.gifts.length!==0?t.jsxs(F,{children:[t.jsx(H,{children:e.title}),e.gifts.map(i=>t.jsx(B,{value:i.value,dateRedeemed:i.dateRedeemed,code:i.dateRedeemed?null:i.code,purchaseDate:e.hidePurchaseDate?null:i.createdAt},i.code))]}):null,W=d.div`
+`,m=e=>e.gifts&&e.gifts.length!==0?t.jsxs(W,{children:[t.jsx(F,{children:e.title}),e.gifts.map(i=>t.jsx(B,{value:i.value,dateRedeemed:i.dateRedeemed,code:i.dateRedeemed?null:i.code,purchaseDate:e.hidePurchaseDate?null:i.createdAt},i.code))]}):null,H=d.div`
   width: 80%;
 
   @media (max-width: 900px) {
     width: 100%;
   }
-`,A=e=>t.jsxs(W,{children:[t.jsx(m,{title:"Gifts you've purchased",gifts:e.purchasedGiftCards}),e.redeemedGiftCards&&e.redeemedGiftCards.length!==0&&e.purchasedGiftCards&&e.purchasedGiftCards.length!==0&&t.jsx(x,{}),t.jsx(m,{title:"Gifts you've redeemed",gifts:e.redeemedGiftCards,hidePurchaseDate:!0})]}),I=d(n)`
+`,A=e=>t.jsxs(H,{children:[t.jsx(m,{title:"Gifts you've purchased",gifts:e.purchasedGiftCards}),e.redeemedGiftCards&&e.redeemedGiftCards.length!==0&&e.purchasedGiftCards&&e.purchasedGiftCards.length!==0&&t.jsx(x,{}),t.jsx(m,{title:"Gifts you've redeemed",gifts:e.redeemedGiftCards,hidePurchaseDate:!0})]}),I=d(n)`
   font-family: ${c.SFPro};
   color: black;
 `,U=d.h2`
