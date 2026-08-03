@@ -1,11 +1,11 @@
 import {
     al as w,
-    ar as f,
-    T as b,
-    aq as v,
-    as as y,
-    at as x,
-    au as M,
+    ar as b,
+    T as f,
+    aq as M,
+    as as v,
+    at as y,
+    au as x,
     L as P
 } from "./App-41.js";
 import {
@@ -99,7 +99,7 @@ const F = {
         jsonUrl: c("devices/bounce_pad/spine/skeleton.json")
     },
     n = {
-        bounceAngleTolerance: 30,
+        bounceAngleTolerance: 45,
         boundingBox: {
             width: 130,
             height: 60
@@ -116,14 +116,14 @@ const F = {
             max: 180
         }
     };
-var d = (h => (h.use = "use", h))(d || {});
+var d = (l => (l.use = "use", l))(d || {});
 class Kt extends w {
     constructor(g) {
         super(g), this.use = () => {
             this.cull.isInsideView && B({
                 path: c(`devices/bounce_pad/sound/bounce${G.random(1,2)}.mp3`),
                 volume: C({
-                    volume: f(this.x, this.y) * .7,
+                    volume: b(this.x, this.y) * .7,
                     type: A.soundEffect
                 })
             }), this.playAnimation("rebound")
@@ -132,15 +132,15 @@ class Kt extends w {
             const i = t === "idle";
             this.spine.view.animationState.setAnimation(0, t, i)
         }, this.onMessage = t => {
-            t.key === d.use && t.data.characterId !== b() && this.use()
+            t.key === d.use && t.data.characterId !== f() && this.use()
         }, this.setupView = () => {
             const t = n.boundingBox.width * this.options.scale,
                 i = n.boundingBox.height * this.options.scale,
-                e = this.options.angle * Math.PI / 180,
-                s = Math.abs(Math.cos(e)),
-                p = Math.abs(Math.sin(e)),
-                o = t * s + i * p,
-                r = t * p + i * s;
+                s = this.options.angle * Math.PI / 180,
+                e = Math.abs(Math.cos(s)),
+                r = Math.abs(Math.sin(s)),
+                o = t * e + i * r,
+                p = t * r + i * e;
             this.spine = this.parts.add.spine({
                 ...F,
                 spineViewId: this.id,
@@ -148,41 +148,41 @@ class Kt extends w {
                 boundingBox: {
                     left: -o / 2,
                     right: o / 2,
-                    top: -r / 2,
-                    bottom: r / 2
+                    top: -p / 2,
+                    bottom: p / 2
                 },
                 onReady: a => {
                     a.view.setScale(n.spine.baseScale * this.options.scale), a.view.angle = this.options.angle;
-                    const l = v(this.options.color),
-                        m = Phaser.Display.Color.ColorToRGBA(l);
+                    const h = M(this.options.color),
+                        m = Phaser.Display.Color.ColorToRGBA(h);
                     a.view.skeleton.slots[1].color.r = m.r / 255, a.view.skeleton.slots[1].color.g = m.g / 255, a.view.skeleton.slots[1].color.b = m.b / 255
                 }
             })
         }, this.bounce = (t, i) => {
-            const e = u(t);
-            if (!e) return;
+            const s = u(t);
+            if (!s) return;
             this.use();
-            const s = Phaser.Math.DegToRad(i),
-                p = this.options.force,
-                o = Math.cos(s - Math.PI / 2) * p,
-                r = Math.sin(s - Math.PI / 2) * p,
-                a = e.physics.state.lastUsedVelocityToCalculateMovement.x;
-            let l = o;
-            Math.sign(a) !== Math.sign(o) ? l = o + a : Math.abs(a) > Math.abs(o) && (l = a), y({
-                character: e
-            }), x({
-                character: e,
-                x: l,
-                y: r,
+            const e = Phaser.Math.DegToRad(i),
+                r = this.options.force,
+                o = Math.cos(e - Math.PI / 2) * r,
+                p = Math.sin(e - Math.PI / 2) * r,
+                a = s.physics.state.lastUsedVelocityToCalculateMovement.x;
+            let h = o;
+            Math.sign(a) !== Math.sign(o) ? h = o + a : Math.abs(a) > Math.abs(o) && (h = a), v({
+                character: s
+            }), y({
+                character: s,
+                x: h,
+                y: p,
                 cancelInertiaOnNextGrounded: !0,
                 limitControlFactor: !0
             })
         }, this.onStop = (t, i) => {
             if (this.skipDownwardAngle(i)) return;
-            const e = u(t);
-            e && (e.physics.state.jump.jumpsLeft = Math.max(1, M({
+            const s = u(t);
+            s && (s.physics.state.jump.jumpsLeft = Math.max(1, x({
                 characterId: t
-            }).maxJumps), e.physics.state.jump.jumpCounter = 1)
+            }).maxJumps), s.physics.state.jump.jumpCounter = 1)
         }, this.skipDownwardAngle = t => {
             if (!this.options.disableDownward) return !1;
             const i = Phaser.Math.Wrap(t, -180, 180);
@@ -206,12 +206,12 @@ class Kt extends w {
             })
         }, this.handleCollision = (t, i) => {
             if (!i || !(i == null ? void 0 : i.normal1)) return;
-            const s = Phaser.Math.Angle.Between(0, 0, i.normal1.x, i.normal1.y),
-                p = Phaser.Math.RadToDeg(s);
-            if (this.skipDownwardAngle(p)) return;
-            const o = p - this.options.angle + 90,
-                r = n.bounceAngleTolerance;
-            o > -r && o < r ? this.bounce(t, this.options.angle) : o > 180 - r && o < 180 + r && this.bounce(t, this.options.angle + 180)
+            const e = Phaser.Math.Angle.Between(0, 0, i.normal1.x, i.normal1.y),
+                r = Phaser.Math.RadToDeg(e);
+            if (this.skipDownwardAngle(r)) return;
+            const o = Phaser.Math.Wrap(r - this.options.angle + 90, -180, 180),
+                p = n.bounceAngleTolerance;
+            Math.abs(o) <= p ? this.bounce(t, this.options.angle) : Math.abs(Math.abs(o) - 180) <= p && this.bounce(t, this.options.angle + 180)
         }, this.setupInViewCallbacks = () => {
             D() || this.cull.setOnEnterViewCallback(() => {
                 var t;
@@ -221,21 +221,21 @@ class Kt extends w {
             if (V() || k()) return;
             const t = I(this, "scale"),
                 i = n.boundingBox.width,
-                e = n.boundingBox.height;
+                s = n.boundingBox.height;
             this.visualEditing.add.box({
                 keepRatio: !0,
                 rotable: !0,
                 angle: this.options.angle,
                 width: i * this.options.scale,
-                height: e * this.options.scale,
+                height: s * this.options.scale,
                 minWidth: i * t.min,
                 maxWidth: i * t.max,
-                minHeight: e * t.min,
-                maxHeight: e * t.max,
-                onChange: s => {
-                    S(s.x, s.y, {
-                        scale: s.width / i,
-                        angle: s.angle
+                minHeight: s * t.min,
+                maxHeight: s * t.max,
+                onChange: e => {
+                    S(e.x, e.y, {
+                        scale: e.width / i,
+                        angle: e.angle
                     })
                 }
             })
