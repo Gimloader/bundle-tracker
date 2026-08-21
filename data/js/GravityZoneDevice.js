@@ -1,32 +1,32 @@
 import {
-    Z as y
+    Z as u
 } from "./ZoneConstants.js";
 import {
     av as T,
-    aw as b,
-    ax as E,
-    al as F,
-    T as c,
-    ay as S,
-    am as f,
+    aw as E,
+    ax as F,
+    al as S,
+    T as p,
+    ay as f,
+    am as I,
     aq as R,
-    az as O
+    az as D
 } from "./App-41.js";
 import {
     F as m,
-    I,
+    I as w,
     i as d,
     d as l,
-    e as D
+    e as O
 } from "./FixSpinePlugin.js";
 import {
-    a as w
+    a as G
 } from "./ZonedDeviceDisplay.js";
 import {
-    G
+    G as Z
 } from "./GetAssetPath.js";
 import {
-    F as Z,
+    F as k,
     R as H
 } from "./ReplaceVisualEditingPreview.js";
 import "./_index.js";
@@ -97,25 +97,25 @@ import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const V = {
-        imageId: G("devices/zone/base.png"),
-        imageUrl: G("devices/zone/base.png")
+        imageId: Z("devices/zone/base.png"),
+        imageUrl: Z("devices/zone/base.png")
     },
-    x = s => {
+    M = o => {
         const {
-            character: i
-        } = s, n = i.physics.state.jump.lastJumpGravityMultiplier ?? 1, t = T({
-            character: i
+            character: s
+        } = o, a = s.physics.state.jump.lastJumpGravityMultiplier ?? 1, t = T({
+            character: s
         });
-        if (n === t) return;
-        const o = i.physics.state.forces.find(r => r.id === b.jump);
-        if (!o || !o.ticks || o.ticks.length === 0) return;
-        const e = o.ticks,
-            a = e.findIndex(r => r.y === 0),
-            p = a === -1 ? e : e.slice(0, a),
-            g = a === -1 ? 0 : e.length - a,
-            u = p.reduce((r, P) => r + -Math.min(P.y, 0), 0);
-        if (u <= 1e-6) {
-            o.ticks = Array.from({
+        if (a === t) return;
+        const i = s.physics.state.forces.find(n => n.id === E.jump);
+        if (!i || !i.ticks || i.ticks.length === 0) return;
+        const e = i.ticks,
+            r = e.findIndex(n => n.y === 0),
+            h = r === -1 ? e : e.slice(0, r),
+            g = r === -1 ? 0 : e.length - r,
+            v = h.reduce((n, b) => n + -Math.min(b.y, 0), 0);
+        if (v <= 1e-6) {
+            i.ticks = Array.from({
                 length: g
             }, () => ({
                 x: 0,
@@ -123,80 +123,85 @@ const V = {
             }));
             return
         }
-        const v = n / t,
-            M = p.length;
-        let h = Math.round(M * v);
-        h < 1 && (h = 1);
-        const C = u * v,
-            A = [...E({
-                count: C,
-                numTicks: h,
+        const y = a / t,
+            C = h.length;
+        let c = Math.round(C * y);
+        c < 1 && (c = 1);
+        const A = v * y,
+            P = [...F({
+                count: A,
+                numTicks: c,
                 ease: Phaser.Math.Easing.Quadratic.Out
-            }).map(r => ({
+            }).map(n => ({
                 x: 0,
-                y: -r
+                y: -n
             })), ...Array.from({
                 length: g
             }, () => ({
                 x: 0,
                 y: 0
             }))];
-        o.ticks = A
+        i.ticks = P
     },
-    W = s => {
+    W = o => {
         const {
-            character: i
-        } = s;
-        i.physics.state.gravityZones.find(t => t.deviceId === s.deviceId) || (i.physics.state.gravityZones.push({
-            deviceId: s.deviceId,
-            gravityMultiplier: s.gravityMultiplier
-        }), x({
-            character: i
+            character: s
+        } = o;
+        s.physics.state.gravityZones.find(t => t.deviceId === o.deviceId) || (s.physics.state.gravityZones.push({
+            deviceId: o.deviceId,
+            gravityMultiplier: o.gravityMultiplier
+        }), M({
+            character: s
         }))
     },
-    z = s => {
+    z = o => {
         const {
-            character: i
-        } = s;
-        i.physics.state.gravityZones.find(t => t.deviceId === s.deviceId) && (i.physics.state.gravityZones = i.physics.state.gravityZones.filter(t => t.deviceId !== s.deviceId), x({
-            character: i
+            character: s
+        } = o;
+        s.physics.state.gravityZones.find(t => t.deviceId === o.deviceId) && (s.physics.state.gravityZones = s.physics.state.gravityZones.filter(t => t.deviceId !== o.deviceId), M({
+            character: s
         }))
     },
-    k = 55;
-class pi extends F {
-    constructor(i) {
-        if (super(i), this.onEnter = () => {
-                const t = m(c());
+    x = 55;
+class hi extends S {
+    constructor(s) {
+        if (super(s), this.onEnter = () => {
+                const t = m(p());
                 t && W({
                     character: t,
                     deviceId: this.id,
                     gravityMultiplier: this.options.gravityMultiplier
                 })
             }, this.onLeave = () => {
-                const t = m(c());
+                const t = m(p());
                 t && z({
                     character: t,
                     deviceId: this.id,
                     gravityMultiplier: this.options.gravityMultiplier
                 })
+            }, this.onDestroy = () => {
+                var e, r;
+                const t = p(),
+                    i = f().bodies.find(this.sensor.bodyId);
+                (r = (e = i == null ? void 0 : i.sensor) == null ? void 0 : e.charactersInSensor) != null && r.has(t) && this.onLeave()
             }, this.onReconcile = () => {
-                const t = c(),
-                    o = m(t);
-                if (!o) return;
-                const e = S().bodies.find(this.sensor.bodyId);
-                o.physics.state.gravityZones.find(p => p.deviceId === this.id) !== void 0 ? e.sensor.charactersInSensor.add(t) : e.sensor.charactersInSensor.delete(t)
+                const t = p(),
+                    i = m(t);
+                if (!i) return;
+                const e = f().bodies.find(this.sensor.bodyId);
+                i.physics.state.gravityZones.find(h => h.deviceId === this.id) !== void 0 ? e.sensor.charactersInSensor.add(t) : e.sensor.charactersInSensor.delete(t)
             }, this.setupVisualEditing = () => {
-                if (!I() || !d()) return;
-                const t = Z(this, "width"),
-                    o = Z(this, "height");
+                if (!w() || !d()) return;
+                const t = k(this, "width"),
+                    i = k(this, "height");
                 this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
                     angle: this.options.rotation,
                     minWidth: t.min,
                     maxWidth: t.max,
-                    minHeight: o.min,
-                    maxHeight: o.max,
+                    minHeight: i.min,
+                    maxHeight: i.max,
                     keepRatio: !1,
                     onChange: e => {
                         H(e.x, e.y, {
@@ -206,14 +211,14 @@ class pi extends F {
                         })
                     }
                 })
-            }, I() && d()) {
+            }, w() && d()) {
             const t = this.parts.add.sprite({
                 ...V,
-                depthChange: f(2)
+                depthChange: I(2)
             });
             t.view.angle = this.options.rotation, t.view.setScale(.5)
         }
-        if (l() || D() ? this.options.visibleInGame : w.shouldShow(this)) {
+        if (l() || O() ? this.options.visibleInGame : G.shouldShow(this)) {
             this.setupVisualEditing();
             const t = R(this.options.color);
             this.zone = this.parts.add.rect({
@@ -225,17 +230,17 @@ class pi extends F {
                 borderColor: t,
                 borderAlpha: l() ? 0 : 1,
                 borderWidth: 4,
-                depthChange: f(1),
+                depthChange: I(1),
                 ignoreInput: !0
             })
         }
         this.sensor = this.sensors.add.rect({
             x: 0,
             y: 0,
-            w: this.options.width - 2 * k,
-            h: this.options.height - 2 * k,
+            w: this.options.width - 2 * x,
+            h: this.options.height - 2 * x,
             angle: this.options.rotation,
-            type: O.around,
+            type: D.around,
             onFresh: () => {
                 this.onEnter()
             },
@@ -245,10 +250,10 @@ class pi extends F {
         })
     }
     getAlpha() {
-        return l() ? y.alpha : d() && w.shouldShowInnerZone(this) ? y.alpha : 0
+        return l() ? u.alpha : d() && G.shouldShowInnerZone(this) ? u.alpha : 0
     }
 }
 export {
-    pi as GravityZoneDevice, pi as
+    hi as GravityZoneDevice, hi as
     default
 };

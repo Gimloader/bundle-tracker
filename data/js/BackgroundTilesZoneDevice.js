@@ -1,25 +1,25 @@
 import {
     s as g,
-    a as u,
-    d as w,
-    e as M
+    a as Y,
+    d as f,
+    e as X
 } from "./FixSpinePlugin.js";
 import {
-    F as f,
-    R as S
+    F as B,
+    R as z
 } from "./ReplaceVisualEditingPreview.js";
 import {
-    aP as d,
-    am as T,
-    aQ as L,
-    al as C,
+    aP as c,
+    am as C,
+    aQ as D,
+    al as S,
     aq as F,
-    aR as D,
-    aA as _,
-    aB as k
+    aR as _,
+    aA as k,
+    aB as Z
 } from "./App-41.js";
 import {
-    G as P
+    G as E
 } from "./GetAssetPath.js";
 import "./_index.js";
 import "./MapModeType.js";
@@ -88,116 +88,123 @@ import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const b = o => {
-        const i = o.options.useFullMapSize ? 0 : y(o.options.zoneX - o.options.width / 2) + 1,
-            n = o.options.useFullMapSize ? 0 : y(o.options.zoneY - o.options.height / 2) + 1,
-            e = o.options.useFullMapSize ? g.world.width : y(o.options.zoneX + o.options.width / 2),
-            s = o.options.useFullMapSize ? g.world.height : y(o.options.zoneY + o.options.height / 2);
+const L = i => {
+        const o = T(i),
+            n = w(i),
+            s = o ? 0 : x(i.options.zoneX - i.options.width / 2) + 1,
+            e = n ? 0 : x(i.options.zoneY - i.options.height / 2) + 1,
+            r = o ? g.world.width : x(i.options.zoneX + i.options.width / 2),
+            t = n ? g.world.height : x(i.options.zoneY + i.options.height / 2);
         return {
-            minX: i,
-            minY: n,
-            maxX: e,
-            maxY: s
+            minX: s,
+            minY: e,
+            maxX: r,
+            maxY: t
         }
     },
-    z = o => {
-        const i = b(o);
+    u = i => {
+        const o = L(i);
         return {
-            minX: i.minX * d.width,
-            minY: i.minY * d.height,
-            maxX: i.maxX * d.width,
-            maxY: i.maxY * d.height
+            minX: o.minX * c.width,
+            minY: o.minY * c.height,
+            maxX: o.maxX * c.width,
+            maxY: o.maxY * c.height
         }
     },
-    y = o => Math.floor(o / d.width),
-    R = o => {
-        const i = {
-                x: o.x,
-                y: o.y
+    x = i => Math.floor(i / c.width),
+    T = i => i.options.useFullMapSize || i.options.expandToWorldWidth,
+    w = i => i.options.useFullMapSize || i.options.expandToWorldHeight,
+    P = i => {
+        const o = {
+                x: i.x,
+                y: i.y
             },
             {
                 minX: n,
-                minY: e,
-                maxX: s,
+                minY: s,
+                maxX: e,
                 maxY: r
-            } = z(o),
+            } = u(i),
             t = {
                 x: n,
-                y: e,
-                width: s - n,
-                height: r - e
+                y: s,
+                width: e - n,
+                height: r - s
             },
-            p = Math.max(t.x, Math.min(i.x, t.x + t.width)),
-            m = Math.max(t.y, Math.min(i.y, t.y + t.height));
-        if (i.x >= t.x && i.x <= t.x + t.width && i.y >= t.y && i.y <= t.y + t.height) {
-            const a = i.x - t.x,
-                l = t.x + t.width - i.x,
-                c = i.y - t.y,
-                B = t.y + t.height - i.y,
-                x = Math.min(a, l, c, B);
-            return x === a ? {
+            a = Math.max(t.x, Math.min(o.x, t.x + t.width)),
+            h = Math.max(t.y, Math.min(o.y, t.y + t.height));
+        if (o.x >= t.x && o.x <= t.x + t.width && o.y >= t.y && o.y <= t.y + t.height) {
+            const p = o.x - t.x,
+                m = t.x + t.width - o.x,
+                d = o.y - t.y,
+                W = t.y + t.height - o.y,
+                y = Math.min(p, m, d, W);
+            return y === p ? {
                 x: t.x,
-                y: i.y
-            } : x === l ? {
+                y: o.y
+            } : y === m ? {
                 x: t.x + t.width,
-                y: i.y
-            } : x === c ? {
-                x: i.x,
+                y: o.y
+            } : y === d ? {
+                x: o.x,
                 y: t.y
             } : {
-                x: i.x,
+                x: o.x,
                 y: t.y + t.height
             }
         }
         return {
-            x: p,
-            y: m
+            x: a,
+            y: h
         }
     },
-    Y = 1e3,
-    O = o => {
-        const i = L.Fill3 + .1,
-            n = (Y - o.options.order + T(o.y) / Y) * .1;
-        return i + n
+    M = 1e3,
+    R = i => {
+        const o = D.Fill3 + .1,
+            n = (M - i.options.order + C(i.y) / M) * .1;
+        return o + n
     },
-    h = {
+    l = {
         border: {
             alpha: .5,
             width: 5,
             color: 16711935
         }
     },
-    X = -999999999;
-class ti extends C {
-    constructor(i) {
-        if (super(i), this.addLayer = () => {
-                const e = g.worldOptions.terrainOptions.find(c => c.id === this.options.terrainId);
-                if (!e) return;
+    b = -999999999;
+class oi extends S {
+    constructor(o) {
+        if (super(o), this.addLayer = () => {
+                const s = g.worldOptions.terrainOptions.find(d => d.id === this.options.terrainId);
+                if (!s) return;
                 const {
-                    minX: s,
+                    minX: e,
                     minY: r,
                     maxX: t,
-                    maxY: p
-                } = b(this), m = O(this), a = u().tileManager.layerManager.backgroundLayersManager.createLayer({
+                    maxY: a
+                } = L(this), h = R(this), p = Y().tileManager.layerManager.backgroundLayersManager.createLayer({
                     layerId: this.id,
-                    depth: m
-                }), l = {
+                    depth: h
+                }), m = {
                     priority: this.layers.getGlobalDepth(),
-                    x: s,
+                    x: e,
                     y: r,
-                    width: t - s,
-                    height: p - r,
-                    terrainOption: e
+                    width: t - e,
+                    height: a - r,
+                    terrainOption: s,
+                    onlyFillTiles: this.options.onlyFillTiles,
+                    useAlphaTransition: this.options.useAlphaTransition,
+                    transitionDirection: this.options.transitionDirection
                 };
-                a.addFillZone(l), a.setScrollData({
+                p.addFillZone(m), p.setScrollData({
                     scrollFactor: this.options.scrollFactor,
                     speedX: this.options.overrideScrollingSpeed ? this.options.scrollingSpeedX : void 0,
                     speedY: this.options.overrideScrollingSpeed ? this.options.scrollingSpeedY : void 0
-                }), a.addTintModifier({
+                }), p.addTintModifier({
                     tint: F(this.options.tint)
                 })
             }, this.removeLayer = () => {
-                u().tileManager.layerManager.backgroundLayersManager.removeLayer({
+                Y().tileManager.layerManager.backgroundLayersManager.removeLayer({
                     layerId: this.id
                 })
             }, this.onShow = () => {
@@ -205,73 +212,86 @@ class ti extends C {
             }, this.onHide = () => {
                 this.removeLayer()
             }, this.addConnectionLine = () => {
-                if (this.options.useFullMapSize) return;
-                const e = R(this),
-                    s = Phaser.Math.Distance.Between(this.x, this.y, e.x, e.y),
-                    r = Phaser.Math.Angle.Between(this.x, this.y, e.x, e.y);
+                if (T(this) && w(this)) return;
+                const s = P(this),
+                    e = Phaser.Math.Distance.Between(this.x, this.y, s.x, s.y),
+                    r = Phaser.Math.Angle.Between(this.x, this.y, s.x, s.y);
                 this.parts.add.rect({
-                    x: (e.x - this.x) / 2,
-                    y: (e.y - this.y) / 2,
-                    width: s,
-                    height: h.border.width,
-                    angle: D(r),
-                    color: h.border.color,
-                    alpha: h.border.alpha
+                    x: (s.x - this.x) / 2,
+                    y: (s.y - this.y) / 2,
+                    width: e,
+                    height: l.border.width,
+                    angle: _(r),
+                    color: l.border.color,
+                    alpha: l.border.alpha
                 })
             }, this.addBoundsBox = () => {
                 const {
-                    minX: e,
-                    minY: s,
+                    minX: s,
+                    minY: e,
                     maxX: r,
                     maxY: t
-                } = z(this), p = e + (r - e) / 2 - this.x, m = s + (t - s) / 2 - this.y;
+                } = u(this), a = s + (r - s) / 2 - this.x, h = e + (t - e) / 2 - this.y;
                 this.parts.add.rect({
-                    x: p,
-                    y: m,
+                    x: a,
+                    y: h,
                     ignoreInput: !0,
-                    width: r - e,
-                    height: t - s,
+                    width: r - s,
+                    height: t - e,
                     color: 16777215,
                     alpha: 0,
-                    borderAlpha: h.border.alpha,
-                    borderColor: h.border.color,
-                    borderWidth: h.border.width
+                    borderAlpha: l.border.alpha,
+                    borderColor: l.border.color,
+                    borderWidth: l.border.width
                 })
             }, this.setupVisualEditing = () => {
-                if (w() || M() || this.options.useFullMapSize) return;
-                const e = f(this, "width"),
-                    s = f(this, "height");
+                if (f() || X()) return;
+                const s = T(this),
+                    e = w(this);
+                if (s && e) return;
+                const r = B(this, "width"),
+                    t = B(this, "height"),
+                    {
+                        minX: a,
+                        minY: h,
+                        maxX: p,
+                        maxY: m
+                    } = u(this);
                 this.visualEditing.add.box({
                     keepRatio: !1,
                     rotable: !1,
-                    width: this.options.width,
-                    height: this.options.height,
-                    minWidth: e.min,
-                    maxWidth: e.max,
-                    minHeight: s.min,
-                    maxHeight: s.max,
-                    x: this.options.zoneX - this.x,
-                    y: this.options.zoneY - this.y,
-                    onChange: r => {
-                        S(this.x, this.y, {
-                            width: r.width,
-                            height: r.height,
-                            zoneX: r.x,
-                            zoneY: r.y
+                    width: s ? p - a : this.options.width,
+                    height: e ? m - h : this.options.height,
+                    minWidth: r.min,
+                    maxWidth: r.max,
+                    minHeight: t.min,
+                    maxHeight: t.max,
+                    x: s ? a + (p - a) / 2 - this.x : this.options.zoneX - this.x,
+                    y: e ? h + (m - h) / 2 - this.y : this.options.zoneY - this.y,
+                    onChange: d => {
+                        z(this.x, this.y, {
+                            ...s ? {} : {
+                                width: d.width,
+                                zoneX: d.x
+                            },
+                            ...e ? {} : {
+                                height: d.height,
+                                zoneY: d.y
+                            }
                         })
                     }
                 })
-            }, this.destroy = e => {
-                super.destroy(e), this.removeLayer()
-            }, this.addLayer(), w() || M()) return;
-        const n = k.Setting;
-        new _({
+            }, this.destroy = s => {
+                super.destroy(s), this.removeLayer()
+            }, this.addLayer(), f() || X()) return;
+        const n = Z.Setting;
+        new k({
             device: this,
             baseColor: n.baseColor,
             boxColor: n.boxColor,
             content: {
                 icon: {
-                    image: P("devices/background_tile_zone/icon.png"),
+                    image: E("devices/background_tile_zone/icon.png"),
                     scale: 1
                 },
                 text: {
@@ -280,10 +300,10 @@ class ti extends C {
                     size: 24
                 }
             }
-        }), this.options.zoneX === X && (this.options.zoneX = this.x), this.options.zoneY === X && (this.options.zoneY = this.y), this.addConnectionLine(), this.addBoundsBox(), this.setupVisualEditing()
+        }), this.options.zoneX === b && (this.options.zoneX = this.x), this.options.zoneY === b && (this.options.zoneY = this.y), this.addConnectionLine(), this.addBoundsBox(), this.setupVisualEditing()
     }
 }
 export {
-    X as ZONE_UNSET_POSITION, ti as
+    b as ZONE_UNSET_POSITION, oi as
     default
 };
