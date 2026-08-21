@@ -3,7 +3,7 @@ import { join } from "path";
 import fsp from "node:fs/promises";
 import { parseArgs } from "util";
 import beautify from "js-beautify";
-import { pushChanges } from "./push";
+import { pushChanges, rebaseToLatest } from "./push";
 import { sendEmbed } from "./webhook";
 
 const { values: { force, push }} = parseArgs({
@@ -45,6 +45,7 @@ if(!force && lastIndex === indexUrl) {
     process.exit();
 }
 
+if(push) await rebaseToLatest();
 lastIndex = indexUrl;
 
 // Clear the temp directory
