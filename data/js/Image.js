@@ -17,9 +17,9 @@ import {
     C as l
 } from "./Names.js";
 import {
-    S as u
+    S as m
 } from "./index-2.js";
-const m = e => t.jsxs(p, {
+const u = e => t.jsxs(p, {
         children: [t.jsx(g, {
             children: t.jsx(x, {
                 src: n(`seasonTicket/${e.icon}.svg`)
@@ -109,15 +109,15 @@ const m = e => t.jsxs(p, {
         description: "Host live games with up to 15 players!",
         show: e => e ? a() : !0
     }],
-    w = e => t.jsx(u, {
+    w = e => t.jsx(m, {
         direction: "vertical",
         size: 20,
         className: "maxWidth",
-        children: y.filter(s => s.show ? s.show(e.forSelf) : !0).map((s, o) => t.jsx(m, {
+        children: y.filter(s => s.show ? s.show(e.forSelf) : !0).map((s, o) => t.jsx(u, {
             ...s
         }, "benefit" + o))
     }),
-    N = "August 26th",
+    N = "September 9th",
     I = n("stickers/season_2_2026.png");
 export {
     w as B, N as S, I as a
