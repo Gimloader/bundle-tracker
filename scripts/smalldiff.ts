@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 const diff = await readFile("./scripts/change.diff", "utf-8");
-const files = diff.split("\ndiff --git ");
+const files = diff.split(/(^|\n)diff --git /);
 
 files.splice(0, 1);
 
