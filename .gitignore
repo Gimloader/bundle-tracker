@@ -2,4 +2,3 @@ node_modules
 .env
 tmp
 *.diff
-tracker-temp

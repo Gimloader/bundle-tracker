@@ -3,6 +3,7 @@ import { sendError } from "./net/webhook";
 import { HandledError } from "./util";
 import extractCode from "./extractors/code";
 import { extractGamedata } from "./extractors/gamedata";
+import { extractMaps } from "./extractors/maps";
 
 const { values: { force, push }, positionals: [extractor] } = parseArgs({
     args: process.argv.slice(2),
@@ -17,8 +18,10 @@ if(extractor === "code") {
     extractCode(force, push).then(quit, onExtractError);
 } else if(extractor === "gamedata") {
     extractGamedata(push).then(quit, onExtractError);
+} else if(extractor === "maps") {
+    extractMaps(push).then(quit, onExtractError);
 } else {
-    throw new Error("Extractor must be either 'code' or 'gamedata'");
+    throw new Error("Extractor must be either 'code', 'gamedata', or 'maps'");
 }
 
 function quit() {

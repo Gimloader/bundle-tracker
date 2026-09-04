@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "getCode": "bun run src/index.ts code",
-    "getData": "bun run src/index.ts gamedata"
+    "getData": "bun run src/index.ts gamedata",
+    "getMaps": "bun run src/index.ts maps"
   },
   "private": true,
   "devDependencies": {

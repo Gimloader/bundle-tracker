@@ -1,0 +1,3413 @@
+{
+    "experience": {
+        "_id": "6757ef8cf3a11c849fa99eac",
+        "name": "Color Clash",
+        "tagline": "Claim your territory!",
+        "imageUrl": "/assets/map/modes/paint/modeImage.jpg",
+        "source": "map",
+        "pageId": "158474d56a64804e8eaed45fda0faa4d",
+        "mapId": "6757ee5510a33ff839dbf652",
+        "isPremiumExperience": true,
+        "tag": "",
+        "labels": {
+            "c": "Simple",
+            "d": "Short",
+            "s": "Team vs. Team"
+        }
+    },
+    "hooks": [
+        {
+            "key": "kit",
+            "type": "kit",
+            "options": {}
+        },
+        {
+            "key": "Game Duration (Minutes)",
+            "type": "number",
+            "options": {
+                "min": 2,
+                "max": 14,
+                "defaultValue": 6,
+                "step": 1
+            }
+        },
+        {
+            "key": "Energy Per Question",
+            "type": "number",
+            "options": {
+                "min": 100,
+                "max": 10000,
+                "defaultValue": 1000,
+                "step": 1
+            },
+            "displayDescription": "More energy allows players to move further for each question answered correctly"
+        }
+    ],
+    "terrain": [
+        {
+            "x": 173,
+            "y": 455,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 174,
+            "y": 456,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 175,
+            "y": 457,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 176,
+            "y": 461,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 176,
+            "y": 468,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 176,
+            "y": 473,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 176,
+            "y": 478,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 176,
+            "y": 482,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 176,
+            "y": 492,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 177,
+            "y": 462,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 177,
+            "y": 483,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 177,
+            "y": 493,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 178,
+            "y": 463,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 178,
+            "y": 484,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 178,
+            "y": 494,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 179,
+            "y": 488,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 180,
+            "y": 468,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 181,
+            "y": 478,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 191,
+            "y": 433,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 192,
+            "y": 434,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 193,
+            "y": 435,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 199,
+            "y": 405,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 199,
+            "y": 440,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 199,
+            "y": 488,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 200,
+            "y": 406,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 200,
+            "y": 441,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 200,
+            "y": 489,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 201,
+            "y": 407,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 201,
+            "y": 442,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 201,
+            "y": 469,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 201,
+            "y": 490,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 202,
+            "y": 476,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 205,
+            "y": 428,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 206,
+            "y": 447,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 206,
+            "y": 464,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 207,
+            "y": 465,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 213,
+            "y": 489,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 215,
+            "y": 455,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 219,
+            "y": 482,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 224,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 230,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 230,
+            "y": 489,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 231,
+            "y": 449,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 231,
+            "y": 459,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 232,
+            "y": 476,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 232,
+            "y": 480,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 233,
+            "y": 477,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 233,
+            "y": 481,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 233,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 235,
+            "y": 429,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 236,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 237,
+            "y": 476,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 241,
+            "y": 469,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 241,
+            "y": 482,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 241,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 242,
+            "y": 470,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 245,
+            "y": 465,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 246,
+            "y": 449,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 246,
+            "y": 454,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 247,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 247,
+            "y": 489,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 249,
+            "y": 432,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 249,
+            "y": 450,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 249,
+            "y": 476,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 249,
+            "y": 480,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 250,
+            "y": 433,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 250,
+            "y": 451,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 250,
+            "y": 477,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 250,
+            "y": 481,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 250,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 251,
+            "y": 434,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 251,
+            "y": 452,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 253,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 254,
+            "y": 428,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 254,
+            "y": 476,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 258,
+            "y": 469,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 258,
+            "y": 482,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 258,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 259,
+            "y": 470,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 262,
+            "y": 449,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 262,
+            "y": 465,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 263,
+            "y": 459,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 264,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 264,
+            "y": 489,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 266,
+            "y": 429,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 266,
+            "y": 476,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 266,
+            "y": 480,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 267,
+            "y": 440,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 267,
+            "y": 477,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 267,
+            "y": 481,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 267,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 268,
+            "y": 441,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 269,
+            "y": 442,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 270,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 271,
+            "y": 476,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 273,
+            "y": 435,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 275,
+            "y": 482,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 275,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 278,
+            "y": 455,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 281,
+            "y": 489,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 285,
+            "y": 447,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 294,
+            "y": 461,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 294,
+            "y": 466,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 295,
+            "y": 462,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 296,
+            "y": 463,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 296,
+            "y": 482,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 299,
+            "y": 408,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 299,
+            "y": 443,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 299,
+            "y": 455,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 299,
+            "y": 468,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 299,
+            "y": 477,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 299,
+            "y": 483,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 299,
+            "y": 488,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 300,
+            "y": 409,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 300,
+            "y": 444,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 300,
+            "y": 456,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 300,
+            "y": 478,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 300,
+            "y": 484,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 300,
+            "y": 489,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 301,
+            "y": 410,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 301,
+            "y": 445,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 301,
+            "y": 457,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 301,
+            "y": 490,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 302,
+            "y": 433,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 303,
+            "y": 434,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 305,
+            "y": 488,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 307,
+            "y": 436,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 308,
+            "y": 437,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 309,
+            "y": 438,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 320,
+            "y": 469,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 324,
+            "y": 468,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 324,
+            "y": 473,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 324,
+            "y": 478,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 325,
+            "y": 458,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 325,
+            "y": 464,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 325,
+            "y": 469,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 325,
+            "y": 474,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 325,
+            "y": 479,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 325,
+            "y": 485,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 326,
+            "y": 459,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 326,
+            "y": 465,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 326,
+            "y": 470,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 326,
+            "y": 475,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 326,
+            "y": 480,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 326,
+            "y": 486,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 327,
+            "y": 460,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 327,
+            "y": 466,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 327,
+            "y": 471,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 327,
+            "y": 476,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 327,
+            "y": 481,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        },
+        {
+            "x": 327,
+            "y": 487,
+            "terrain": "team_color_tile",
+            "collides": true,
+            "depth": 3
+        }
+    ],
+    "devices": [
+        {
+            "id": "pVNxUt6krw5fzNOnfJXgt",
+            "x": 0,
+            "y": 0,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "mapOptions",
+            "options": {
+                "backgroundTerrain": "Grass",
+                "platformerBackground": "paintedSkyStripes",
+                "bottomTerrain": "platformer_grass",
+                "gameClockMode": "Count Down",
+                "countdownTimeMinutes": 6,
+                "allowedGameClockModeType": "liveGame",
+                "musicUrl": "/assets/map/modes/paint/music.mp3",
+                "presetMusicId": "the_shakedown",
+                "musicVolume": 57,
+                "minPlayers": 2,
+                "teams": "Specific Team Amount",
+                "teamSize": 2,
+                "teamsNumber": 2,
+                "splitModeForSpecificTeamAmount": "Split Evenly",
+                "latePlayersJoinAsSpectators": false,
+                "allyIndicator": "Enabled",
+                "enemyIndicator": "Disabled",
+                "matchNametagToTeamColor": true,
+                "allowGameOwnerToSpectate": true,
+                "useInfiniteLives": true,
+                "numOfLives": 3,
+                "healthMode": "healthAndShield",
+                "maxHealth": 100,
+                "maxShield": 100,
+                "startingHealth": 100,
+                "startingShield": 100,
+                "startingFragility": 0,
+                "showHealthAndShield": false,
+                "spawnImmunity": 0,
+                "playerVsPlayerDamageEnabled": true,
+                "interactiveItemsSlots": 0,
+                "infiniteAmmo": true,
+                "instantReload": false,
+                "allowWeaponDrop": true,
+                "allowItemDrop": true,
+                "allowResourceDrop": false,
+                "weaponRespawnBehavior": "Keep",
+                "itemRespawnBehavior": "Keep",
+                "resourceRespawnBehavior": "Keep",
+                "infiniteDurability": true,
+                "droppedItemScope": "global",
+                "useScoreboard": true,
+                "scoreType": "Property",
+                "scoreResource": "cash",
+                "propertyResource": "tiles",
+                "scoreName": "Captured Tiles",
+                "scoreGroup": "team",
+                "sortMode": "Highest to lowest",
+                "showScoreboardOnGameEnd": true,
+                "includeSpectatorsInScoreboard": false,
+                "showPlayersPlacement": false,
+                "knockoutActivityFeedDisabled": false,
+                "dynamicBuildingAllowFloatingBuilds": true,
+                "dynamicBuildingHealthMultiplier": 1,
+                "disableDestructionOfDynamicBuildings": false,
+                "grantWhenDynamicBuildingDestroyed": true,
+                "maxGravityPerSecondMultiplier": 1,
+                "timeToMaxGravityMultiplier": 1,
+                "yTravelUntilMaxGravityMultiplier": 1,
+                "jumpHeightMultiplier": 1,
+                "jumpDurationMultiplier": 1,
+                "jumpHangTimeMultiplier": 1,
+                "subsequentJumpHeightMultiplier": 1,
+                "maxJumps": 2,
+                "wallJumpEnabled": false,
+                "lookAroundWithMouse": false
+            }
+        },
+        {
+            "id": "ZpCx36kBrOhQUrBb_uojA",
+            "x": 16191,
+            "y": 27716,
+            "depth": 27723.16844045253,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "E0zL_IpjumpEzam37f9Ta",
+            "x": 16319,
+            "y": 27844,
+            "depth": 27850.791202600867,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "QLQjBbOz1T2Qz7C7DsgM5",
+            "x": 16191,
+            "y": 28228,
+            "depth": 28233.65948904588,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "v-u_TqLTQ1Zl0SYVCf880",
+            "x": 16191,
+            "y": 28484,
+            "depth": 28488.527775490893,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "PiJYRxqLv-eeX1OV8Hat6",
+            "x": 16319,
+            "y": 28356,
+            "depth": 28361.282251194218,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "MSH1I9wp0JWpun-aMlDcW",
+            "x": 16319,
+            "y": 28100,
+            "depth": 28106.036726897542,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "eTRhLuyw9a8OoIT_32EkC",
+            "x": 16191,
+            "y": 27972,
+            "depth": 27978.413964749205,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "JtkEIBsWgaNA-P4N0JR63",
+            "x": 24643,
+            "y": 31644,
+            "depth": 31644.999996349216,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "teamSettings",
+            "options": {
+                "team": "2",
+                "teamName": "Team Green",
+                "whenPlayerJoinsTransmitOn": "",
+                "maxPlayers": 60,
+                "placementPriorityOnGameStart": 30,
+                "placementPriorityDuringGame": 30,
+                "allowCustomHostPlacement": true,
+                "color": "#4ebc60"
+            }
+        },
+        {
+            "id": "IZ-kxle93dpX45V09A7_8",
+            "x": 23961,
+            "y": 31278,
+            "depth": 31277.500003017485,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "guiDevice",
+            "options": {
+                "type": "Tracked Item",
+                "position": "Top Left",
+                "text": "",
+                "trackedItemId": "energy",
+                "showTrackedItemMaximumAmount": false,
+                "whenButtonClickedTransmitOnChannel": "",
+                "showOnGameStart": true,
+                "color": "#ffffff",
+                "contentScope": "global",
+                "visibilityScope": "global",
+                "showWhenReceivingFromChannel": "",
+                "hideWhenReceivingFromChannel": ""
+            }
+        },
+        {
+            "id": "9Vs3WthsNVHQGeeDk2rvr",
+            "x": 23962,
+            "y": 31013,
+            "depth": 31014.000005289912,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "scorebar",
+            "options": {
+                "numberOfTeams": 2,
+                "useTeamSettingsDeviceForColors": true,
+                "team1": "1",
+                "colorTeam1": "#e93d37",
+                "team2": "2",
+                "colorTeam2": "#4d56f3",
+                "team3": "3",
+                "colorTeam3": "#3ce634",
+                "team4": "4",
+                "colorTeam4": "#9d34e6"
+            }
+        },
+        {
+            "id": "S0U5W9NDcfbb5xNfH5lBU",
+            "x": 23966,
+            "y": 31619,
+            "depth": 31619.49999899417,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "guiDevice",
+            "options": {
+                "type": "Button",
+                "position": "Bottom Left",
+                "text": "Answer Questions",
+                "trackedItemId": null,
+                "showTrackedItemMaximumAmount": false,
+                "whenButtonClickedTransmitOnChannel": "",
+                "showOnGameStart": true,
+                "color": "#ffffff",
+                "contentScope": "global",
+                "visibilityScope": "global",
+                "showWhenReceivingFromChannel": "",
+                "hideWhenReceivingFromChannel": ""
+            }
+        },
+        {
+            "id": "Bom9-RdyuenEriUYla1GI",
+            "x": 24563,
+            "y": 31256,
+            "depth": 31255.833337186938,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "startingInventory",
+            "options": {
+                "itemId": "energy",
+                "itemAmount": 1500,
+                "equipOnGrant": false,
+                "grantDuringPhase": "game",
+                "grantForSavedCharacters": false,
+                "enabled": true
+            }
+        },
+        {
+            "id": "2sNPeYX1Sbo8Yyj8K3bwX",
+            "x": 24691,
+            "y": 30720,
+            "depth": null,
+            "deviceId": "wireRepeater",
+            "options": {
+                "delaySeconds": 0,
+                "team": "__ANY_TEAM__"
+            }
+        },
+        {
+            "id": "rAy03soqgrzAEK1NwLFie",
+            "x": 24691,
+            "y": 30990,
+            "depth": null,
+            "deviceId": "wireRepeater",
+            "options": {
+                "delaySeconds": 0,
+                "team": "__ANY_TEAM__"
+            }
+        },
+        {
+            "id": "GU0siXyihfv7m0xMjK4Eb",
+            "x": 24828,
+            "y": 31000,
+            "depth": null,
+            "deviceId": "soundEffect",
+            "options": {
+                "audioUrl": "/assets/map/sounds/alert-notification.mp3",
+                "volume": 40,
+                "playWhenReceivingFrom": "",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "dbxi4ZiXvl-X0o0eRzhYA",
+            "x": 24961,
+            "y": 30997,
+            "depth": null,
+            "deviceId": "notification",
+            "options": {
+                "title": "Low On Energy",
+                "description": "You're running low on energy! Answer some questions to make sure you don't run out!",
+                "notifyChannel": "",
+                "notificationType": "warning",
+                "notificationPlacement": "topRight",
+                "notificationDurationStrategy": "manual",
+                "customDurationSeconds": 5,
+                "sendTo": "characterTriggering"
+            }
+        },
+        {
+            "id": "N19_1AhGsbq05lzmbVRux",
+            "x": 24961,
+            "y": 30717,
+            "depth": null,
+            "deviceId": "notification",
+            "options": {
+                "title": "Out Of Energy!",
+                "description": "You ran out of energy -- you can’t move! Click \"Answer Questions\" to gain energy.",
+                "notifyChannel": "",
+                "notificationType": "error",
+                "notificationPlacement": "topRight",
+                "notificationDurationStrategy": "manual",
+                "customDurationSeconds": 6,
+                "sendTo": "characterTriggering"
+            }
+        },
+        {
+            "id": "X6V93Og-A09DISSTb5ZfZ",
+            "x": 24828,
+            "y": 30717,
+            "depth": null,
+            "deviceId": "soundEffect",
+            "options": {
+                "audioUrl": "/assets/map/sounds/power-down.mp3",
+                "volume": 32,
+                "playWhenReceivingFrom": "",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "xOCYIfyay1pgCIeHpntKa",
+            "x": 24132,
+            "y": 31617,
+            "depth": 31617,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "property",
+            "options": {
+                "propertyName": "energyPerQuestion",
+                "valueType": "number",
+                "defaultValueText": "",
+                "defaultValueNumber": 1000,
+                "defaultValueBoolean": true,
+                "propertyType": "global",
+                "whenValueChangesBroadcastOnChannel": "",
+                "broadcastValueChangesOnGameStart": true
+            }
+        },
+        {
+            "id": "vdLSePxwWpHsR1drsVlO9",
+            "x": 24250,
+            "y": 31600,
+            "depth": 31600,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "itemGranter",
+            "options": {
+                "itemId": "energy",
+                "itemChange": 1000,
+                "grantWhenReceivingFromChannel": "",
+                "fullStrategy": "overflow",
+                "replaceWhenFull": false
+            }
+        },
+        {
+            "id": "790u4oWzYCAQZdKyIMjUv",
+            "x": 24854,
+            "y": 31310,
+            "depth": 31310.33333995607,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "teamColorTilesManager",
+            "options": {
+                "updateProperty": true,
+                "property": "tiles"
+            }
+        },
+        {
+            "id": "W2NLky9uIt0fLnqmRMtzn",
+            "x": 24860,
+            "y": 31639,
+            "depth": null,
+            "deviceId": "lifecycle",
+            "options": {
+                "event": "characterCapturesTeamColorTile",
+                "transmitOnChannel": "capture"
+            }
+        },
+        {
+            "id": "3-vI7WTT1KCJ0wZ0z3_U4",
+            "x": 15871,
+            "y": 28484,
+            "depth": null,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "kUu6ciBVCYQJ46T3doh_I",
+            "x": 15743,
+            "y": 28356,
+            "depth": null,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "42vdt2xYnnnLFnN54XzVz",
+            "x": 15871,
+            "y": 28228,
+            "depth": null,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "v2hPzCgAz8P9e_uQKrQ2a",
+            "x": 15743,
+            "y": 28100,
+            "depth": null,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "-p0vAGufVG4RV8Eq6x7ok",
+            "x": 15871,
+            "y": 27972,
+            "depth": null,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "sH2x-fu28Vd8IrEZYUqv8",
+            "x": 15743,
+            "y": 27844,
+            "depth": null,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "jfgZIC1R4hvDED5TYeQ9N",
+            "x": 15871,
+            "y": 27716,
+            "depth": null,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "rsJjhe4Xioc1CtJsb_tpL",
+            "x": 16678,
+            "y": 27144,
+            "depth": 27144,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "imageBillboard",
+            "options": {
+                "imageUrl": "/assets/map/modes/paint/tutorial/3.jpg",
+                "frameColor": "Transparent",
+                "scope": "global",
+                "alpha": 1,
+                "visibleOnGameStart": "Yes",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "visibleDuringPhase": "preGame",
+                "width": 800,
+                "height": 532.5000184801429,
+                "rotation": 0
+            }
+        },
+        {
+            "id": "OIm2WHVNedIokjriwEC9X",
+            "x": 16038,
+            "y": 27144,
+            "depth": 27145,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "imageBillboard",
+            "options": {
+                "imageUrl": "/assets/map/modes/paint/tutorial/2.jpg",
+                "frameColor": "Transparent",
+                "scope": "global",
+                "alpha": 1,
+                "visibleOnGameStart": "Yes",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "visibleDuringPhase": "preGame",
+                "width": 800,
+                "height": 532.5000184801429,
+                "rotation": 0
+            }
+        },
+        {
+            "id": "TZYslikYGMEaJLHqBNAoe",
+            "x": 15398,
+            "y": 27144,
+            "depth": 27146,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "imageBillboard",
+            "options": {
+                "imageUrl": "/assets/map/modes/paint/tutorial/1.jpg",
+                "frameColor": "Transparent",
+                "scope": "global",
+                "alpha": 1,
+                "visibleOnGameStart": "Yes",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "visibleDuringPhase": "preGame",
+                "width": 800,
+                "height": 532.5000184801429,
+                "rotation": 0
+            }
+        },
+        {
+            "id": "NMDgFbasYHChGwVPKADZo",
+            "x": 15168,
+            "y": 27347,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "8nbQdMqZb-mFEwE3zdgeR",
+            "x": 15272,
+            "y": 27347,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "XGYtVFJgswv07X8824cjJ",
+            "x": 15376,
+            "y": 27347,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "GrXaULsI2h69o03U9KV1G",
+            "x": 15480,
+            "y": 27347,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "Uhxdl64zlaoxfozSlf2aU",
+            "x": 15586,
+            "y": 27347,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "XL-ntqzdS2gITZ-LwYeen",
+            "x": 15064,
+            "y": 27347,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "Q6xEINsox2hSA7AZVu_JV",
+            "x": 15686,
+            "y": 27347,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "oPoj-hKpchRDRxsdqnds5",
+            "x": 15774,
+            "y": 27347,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "99P3hMKdzXtyxi7b2fEZA",
+            "x": 16308,
+            "y": 27347,
+            "depth": 27347,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "xdzB6M7SzImj7h5D3n617",
+            "x": 16412,
+            "y": 27347,
+            "depth": 27347,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "b2bD0VGQB6Q7vPh69oqMy",
+            "x": 16516,
+            "y": 27347,
+            "depth": 27347,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "QkUC98Ahxfxbteeo6BvIp",
+            "x": 16620,
+            "y": 27347,
+            "depth": 27347,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "snsfehpha9TuaDLREOXsu",
+            "x": 16724,
+            "y": 27347,
+            "depth": 27347,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "H7v1w_0olIMOyad7PXxat",
+            "x": 16830,
+            "y": 27347,
+            "depth": 27347,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "O4Zw1AtWlA5HX4mIVEqSE",
+            "x": 16930,
+            "y": 27347,
+            "depth": 27347,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Pre-Game",
+                "teamId": "__ANY_TEAM__",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "odGQ01XmkHdsr9fjv8GIa",
+            "x": 19077,
+            "y": 31449,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "2",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "QIPj1F5pKAoTq_yuA9tJv",
+            "x": 18975,
+            "y": 31449,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "2",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "8gkjJIJyWYfhFqBjHe1K1",
+            "x": 18873,
+            "y": 31449,
+            "depth": 31449,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "2",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "1Z-TKo6ASVXJVxmPAAUO0",
+            "x": 18771,
+            "y": 31449,
+            "depth": 31449,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "2",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "rjL60OBDISYbphQA1-R-f",
+            "x": 18821,
+            "y": 31449,
+            "depth": 31449,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "2",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "k7BfxR4NkyEzDYIkZ4Bo9",
+            "x": 18915,
+            "y": 31449,
+            "depth": 31449,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "2",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "d4zOkuINj-Ft00Z5Au1Sj",
+            "x": 19023,
+            "y": 31449,
+            "depth": 31449,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "2",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "i-vFXwUuBuWe1f1yTLlkg",
+            "x": 18709,
+            "y": 31449,
+            "depth": 31449,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "2",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "VSOKth0eugNtMOM-YZIc3",
+            "x": 18651,
+            "y": 31449,
+            "depth": 31449,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "2",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "IUDfk7p26UmRa4jb1UKAI",
+            "x": 18597,
+            "y": 31449,
+            "depth": 31449,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "2",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "S2PAU510piQXk5HdMJwVE",
+            "x": 18549,
+            "y": 31449,
+            "depth": 31449,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "2",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "T5fIRKxgWaq4kruW7UJfL",
+            "x": 12990,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "A730NPCiehfy9HJ41uzeb",
+            "x": 13038,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "DPk4cfyIE_MdTyu__LuY6",
+            "x": 13090,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "ZrQQE3ZIyyP4I1A47uKLa",
+            "x": 13138,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "g7NcI2ZNX2MTIGuHgAJVb",
+            "x": 13186,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "BOREp9qYXBViYKFa64NPd",
+            "x": 13236,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "GPgPF8oGUJ_G1raPECANu",
+            "x": 13294,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "i2ro0Qc03VnWEeAX9WcM_",
+            "x": 13340,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "Dk9tIWc18Prrx0DnTBQIK",
+            "x": 13386,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "GqeGsD0HIXOIDQZGK_adI",
+            "x": 13432,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "xRP94FwM57VbjJlGj2Psz",
+            "x": 13492,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "7iicSnNnKWt1ruJKadZgl",
+            "x": 13546,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "2mZaXtiW8rlgtu7mj3C6l",
+            "x": 13584,
+            "y": 31447,
+            "depth": null,
+            "deviceId": "characterSpawnPad",
+            "options": {
+                "visibleInGame": false,
+                "phase": "Game",
+                "teamId": "1",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "LDRhD5oYUsxICElihJhfM",
+            "x": 18813,
+            "y": 31249,
+            "depth": 31248.86042579151,
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "TEAM",
+                "fontSize": 51,
+                "scope": "global",
+                "googleFont": "Fugaz One",
+                "color": "#0dc700",
+                "alpha": 0.9,
+                "strokeThickness": 10,
+                "strokeColor": "#000000",
+                "rotation": -15,
+                "visibleOnGameStart": "Yes",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "hRgULH8O3f-DvV2FOuNFF",
+            "x": 18831,
+            "y": 31309,
+            "depth": 31308.860428169464,
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "GREEN",
+                "fontSize": 70,
+                "scope": "global",
+                "googleFont": "Fugaz One",
+                "color": "#0dc700",
+                "alpha": 0.9,
+                "strokeThickness": 10,
+                "strokeColor": "#000000",
+                "rotation": -15,
+                "visibleOnGameStart": "Yes",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "lRYorf-Mhllk4-3EMPsMU",
+            "x": 13272,
+            "y": 31243,
+            "depth": 31242.860425553714,
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "TEAM",
+                "fontSize": 51,
+                "scope": "global",
+                "googleFont": "Fugaz One",
+                "color": "#dd46d0",
+                "alpha": 0.9,
+                "strokeThickness": 10,
+                "strokeColor": "#000000",
+                "rotation": -15,
+                "visibleOnGameStart": "Yes",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "pz96kAuJZEhe9ACYpbulR",
+            "x": 25514,
+            "y": 30969,
+            "depth": 30968.99992036038,
+            "deviceId": "endOfGameWidget",
+            "options": {
+                "widgetType": "Statistic",
+                "widgetPlacement": "Primary",
+                "statisticProperty": "correct - class",
+                "gameTimeLabel": "",
+                "statisticLabel": "Questions Answered Correctly (Entire Class)",
+                "imageStyle": "Contain",
+                "imageUrl": "",
+                "imageHeight": 100,
+                "imageBackgroundColor": "#ffffff",
+                "showTo": "gameOwners",
+                "showForModeType": "all",
+                "activeOnGameStart": true,
+                "scope": "player",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "m_2pqdulix1HOgzAZsP54",
+            "x": 25672,
+            "y": 30969,
+            "depth": 30968.99992051891,
+            "deviceId": "property",
+            "options": {
+                "propertyName": "correct - class",
+                "valueType": "number",
+                "defaultValueText": "",
+                "defaultValueNumber": 0,
+                "defaultValueBoolean": true,
+                "propertyType": "global",
+                "whenValueChangesBroadcastOnChannel": "",
+                "broadcastValueChangesOnGameStart": false
+            }
+        },
+        {
+            "id": "dSRMX5NQBU5aHfq4ZFG-Z",
+            "x": 25826,
+            "y": 30947,
+            "depth": 30947.000005548558,
+            "deviceId": "counter",
+            "options": {
+                "startingValue": 0,
+                "incrementWhenReceivingOn": "correct",
+                "decrementWhenReceivingOn": "",
+                "visibleInGame": false,
+                "scope": "global",
+                "resetToStartingValueWhenReceivingOn": "",
+                "updateProperty": true,
+                "property": "correct - class",
+                "useTarget": false,
+                "target": 10,
+                "whenTargetReachedTransmitOn": ""
+            }
+        },
+        {
+            "id": "-5G2zbCDA49VGuySkZ6Lx",
+            "x": 25672,
+            "y": 31229,
+            "depth": 31228.999930823364,
+            "deviceId": "property",
+            "options": {
+                "propertyName": "incorrect - class",
+                "valueType": "number",
+                "defaultValueText": "",
+                "defaultValueNumber": 0,
+                "defaultValueBoolean": true,
+                "propertyType": "global",
+                "whenValueChangesBroadcastOnChannel": "",
+                "broadcastValueChangesOnGameStart": false
+            }
+        },
+        {
+            "id": "S8gq6lno-g9BLVsZDl8FF",
+            "x": 25514,
+            "y": 31229,
+            "depth": 31228.999930664835,
+            "deviceId": "endOfGameWidget",
+            "options": {
+                "widgetType": "Statistic",
+                "widgetPlacement": "Primary",
+                "statisticProperty": "incorrect - class",
+                "gameTimeLabel": "",
+                "statisticLabel": "Questions Answered Incorrectly (Entire Class)",
+                "imageStyle": "Contain",
+                "imageUrl": "",
+                "imageHeight": 100,
+                "imageBackgroundColor": "#ffffff",
+                "showTo": "gameOwners",
+                "showForModeType": "all",
+                "activeOnGameStart": true,
+                "scope": "player",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "3U2cLXtp0OzLkblAdb951",
+            "x": 25672,
+            "y": 31771,
+            "depth": 31770.999952304184,
+            "deviceId": "property",
+            "options": {
+                "propertyName": "incorrect",
+                "valueType": "number",
+                "defaultValueText": "",
+                "defaultValueNumber": 0,
+                "defaultValueBoolean": true,
+                "propertyType": "player",
+                "whenValueChangesBroadcastOnChannel": "",
+                "broadcastValueChangesOnGameStart": false
+            }
+        },
+        {
+            "id": "93eoColwvyvMrbcsSmnCb",
+            "x": 25672,
+            "y": 31511,
+            "depth": 31510.99994199973,
+            "deviceId": "property",
+            "options": {
+                "propertyName": "correct",
+                "valueType": "number",
+                "defaultValueText": "",
+                "defaultValueNumber": 0,
+                "defaultValueBoolean": true,
+                "propertyType": "player",
+                "whenValueChangesBroadcastOnChannel": "",
+                "broadcastValueChangesOnGameStart": false
+            }
+        },
+        {
+            "id": "4Am35QCRw6Viw1oX8ORAx",
+            "x": 25514,
+            "y": 31511,
+            "depth": 31510.9999418412,
+            "deviceId": "endOfGameWidget",
+            "options": {
+                "widgetType": "Statistic",
+                "widgetPlacement": "Primary",
+                "statisticProperty": "correct",
+                "gameTimeLabel": "",
+                "statisticLabel": "Questions Answered Correctly",
+                "imageStyle": "Contain",
+                "imageUrl": "",
+                "imageHeight": 100,
+                "imageBackgroundColor": "#ffffff",
+                "showTo": "nonGameOwners",
+                "showForModeType": "all",
+                "activeOnGameStart": true,
+                "scope": "player",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "YBjAzX6hnCEBowR5CeYbV",
+            "x": 25514,
+            "y": 31771,
+            "depth": 31770.999952145656,
+            "deviceId": "endOfGameWidget",
+            "options": {
+                "widgetType": "Statistic",
+                "widgetPlacement": "Primary",
+                "statisticProperty": "incorrect",
+                "gameTimeLabel": "",
+                "statisticLabel": "Questions Answered Incorrectly",
+                "imageStyle": "Contain",
+                "imageUrl": "",
+                "imageHeight": 100,
+                "imageBackgroundColor": "#ffffff",
+                "showTo": "nonGameOwners",
+                "showForModeType": "all",
+                "activeOnGameStart": true,
+                "scope": "player",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "mRVMrzDkbZ4ZtygCQf24b",
+            "x": 25826,
+            "y": 31749,
+            "depth": 31749.000037333833,
+            "deviceId": "counter",
+            "options": {
+                "startingValue": 0,
+                "incrementWhenReceivingOn": "incorrect",
+                "decrementWhenReceivingOn": "",
+                "visibleInGame": false,
+                "scope": "player",
+                "resetToStartingValueWhenReceivingOn": "",
+                "updateProperty": true,
+                "property": "incorrect",
+                "useTarget": false,
+                "target": 10,
+                "whenTargetReachedTransmitOn": ""
+            }
+        },
+        {
+            "id": "BubT5iL9XD4-sGbbfKi3V",
+            "x": 25826,
+            "y": 31207,
+            "depth": 31207.000015853013,
+            "deviceId": "counter",
+            "options": {
+                "startingValue": 0,
+                "incrementWhenReceivingOn": "incorrect",
+                "decrementWhenReceivingOn": "",
+                "visibleInGame": false,
+                "scope": "global",
+                "resetToStartingValueWhenReceivingOn": "",
+                "updateProperty": true,
+                "property": "incorrect - class",
+                "useTarget": false,
+                "target": 10,
+                "whenTargetReachedTransmitOn": ""
+            }
+        },
+        {
+            "id": "vykpYmlMwq2oUOEvFGKKD",
+            "x": 25826,
+            "y": 31489,
+            "depth": 31489.00002702938,
+            "deviceId": "counter",
+            "options": {
+                "startingValue": 0,
+                "incrementWhenReceivingOn": "correct",
+                "decrementWhenReceivingOn": "",
+                "visibleInGame": false,
+                "scope": "player",
+                "resetToStartingValueWhenReceivingOn": "",
+                "updateProperty": true,
+                "property": "correct",
+                "useTarget": false,
+                "target": 10,
+                "whenTargetReachedTransmitOn": ""
+            }
+        },
+        {
+            "id": "eNGJWNY_-2PVyZWMXPU7_",
+            "x": 25672,
+            "y": 30685,
+            "depth": 30684.99990926328,
+            "deviceId": "property",
+            "options": {
+                "propertyName": "tiles captured",
+                "valueType": "number",
+                "defaultValueText": "",
+                "defaultValueNumber": 0,
+                "defaultValueBoolean": true,
+                "propertyType": "player",
+                "whenValueChangesBroadcastOnChannel": "",
+                "broadcastValueChangesOnGameStart": false
+            }
+        },
+        {
+            "id": "OGyaVkqMwrqYdi0AC6ZHW",
+            "x": 25672,
+            "y": 30403,
+            "depth": 30402.99989808691,
+            "deviceId": "property",
+            "options": {
+                "propertyName": "tiles captured - class",
+                "valueType": "number",
+                "defaultValueText": "",
+                "defaultValueNumber": 0,
+                "defaultValueBoolean": true,
+                "propertyType": "global",
+                "whenValueChangesBroadcastOnChannel": "",
+                "broadcastValueChangesOnGameStart": false
+            }
+        },
+        {
+            "id": "NWbzPz5hrDoex7Kq-HD25",
+            "x": 25826,
+            "y": 30381,
+            "depth": 30380.99998311656,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "counter",
+            "options": {
+                "startingValue": 0,
+                "incrementWhenReceivingOn": "capture",
+                "decrementWhenReceivingOn": "",
+                "visibleInGame": false,
+                "scope": "global",
+                "resetToStartingValueWhenReceivingOn": "",
+                "updateProperty": true,
+                "property": "tiles captured - class",
+                "useTarget": false,
+                "target": 10,
+                "whenTargetReachedTransmitOn": ""
+            }
+        },
+        {
+            "id": "krX3PjiG13smEg8iPsst3",
+            "x": 16032,
+            "y": 28487,
+            "depth": 0,
+            "deviceId": "cameraSize",
+            "options": {
+                "width": 9880.0001464367,
+                "height": 6360.00033167579
+            }
+        },
+        {
+            "id": "yzO20RPef65hm4JpzDsk6",
+            "x": 25826,
+            "y": 30663,
+            "depth": 30662.999994292928,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "counter",
+            "options": {
+                "startingValue": 0,
+                "incrementWhenReceivingOn": "capture",
+                "decrementWhenReceivingOn": "",
+                "visibleInGame": false,
+                "scope": "player",
+                "resetToStartingValueWhenReceivingOn": "",
+                "updateProperty": true,
+                "property": "tiles captured",
+                "useTarget": false,
+                "target": 10,
+                "whenTargetReachedTransmitOn": ""
+            }
+        },
+        {
+            "id": "v6K4frnd9zl30DF5dCvkD",
+            "x": 17471,
+            "y": 28932,
+            "depth": 28935.018824084254,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "yD3W2B0AbWL0TBO1tHi41",
+            "x": 18495,
+            "y": 29316,
+            "depth": 29319.018824084254,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "ghOkibQGFX8zXSGEFf3c8",
+            "x": 18995,
+            "y": 28860,
+            "depth": 28866.088058721296,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "pYH3K0h0WDCtc9sGTzdsd",
+            "x": 18995,
+            "y": 28700,
+            "depth": 28706.08806110548,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "5qISBrss2YrArIv0uozId",
+            "x": 13567,
+            "y": 29316,
+            "depth": 29318.26434838093,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "SyPKDHKWY-8wGrC6RLo2J",
+            "x": 14591,
+            "y": 28932,
+            "depth": 28934.641586232592,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "Pu8chR-MuyqTw4X8r4-LV",
+            "x": 13077,
+            "y": 28860,
+            "depth": 28866.088058721296,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "_hQTj4QAPYB5yHJ988W3j",
+            "x": 13077,
+            "y": 28700,
+            "depth": 28706.08806110548,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "vq5-djLTryZxcywBdjImu",
+            "x": 16383,
+            "y": 30148,
+            "depth": 30149.131713554987,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "A3WmsdQ1W4Rip9hc4CG_g",
+            "x": 16767,
+            "y": 30148,
+            "depth": 30149.50895140665,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "GqjPV5Y_qyTbOZqcJkigK",
+            "x": 18781,
+            "y": 30882,
+            "depth": 30882,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "WAIlKt-Fdu8SRmgV79noZ",
+            "x": 15679,
+            "y": 30148,
+            "depth": 30149.131713554987,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "t6TY1QExEMHB_DOqwGLVu",
+            "x": 15295,
+            "y": 30148,
+            "depth": 30148.754475703325,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "QiuYcAb-gVYeBdEFyAkSO",
+            "x": 13277,
+            "y": 30882,
+            "depth": 30882,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "jumpGranter",
+            "options": {
+                "mode": "grant",
+                "jumpsNumber": 1,
+                "disabledTime": 1,
+                "activeOnStart": true,
+                "activateOnChannel": "",
+                "deactivateOnChannel": "",
+                "scope": "player"
+            }
+        },
+        {
+            "id": "a9okyyFt8I7xDG7tWQxEK",
+            "x": 24052,
+            "y": 31742,
+            "depth": 31742,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "gimkitLiveQuestion",
+            "options": {
+                "kitId": "6a9a12c35cf345be80aed081",
+                "whenAnsweredCorrectlyTransmitOn": "correct",
+                "whenAnsweredIncorrectlyTransmitOn": "incorrect",
+                "openWhenReceivingOn": "",
+                "closable": true,
+                "textShownWhenAnsweringCorrectly": "",
+                "textShownWhenAnsweringIncorrectly": "",
+                "textShownWhenAnsweringScope": "global",
+                "closeWhenReceivingOn": "",
+                "enableWhenReceivingOn": "",
+                "disableWhenReceivingOn": "",
+                "whenOpenedChannel": "",
+                "whenClosedChannel": "",
+                "sound": "default",
+                "correctSound": "default",
+                "incorrectSound": "default",
+                "actionSound": "default",
+                "useCustomAction": false,
+                "customActionText": "",
+                "channelToTriggerCustomAction": "",
+                "size": 48
+            }
+        },
+        {
+            "id": "RBiA1wllo5_4ehXCBNfQd",
+            "x": 13284,
+            "y": 31305,
+            "depth": 31304.860428010936,
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "MAGENTA",
+                "fontSize": 70,
+                "scope": "global",
+                "googleFont": "Fugaz One",
+                "color": "#dd46d0",
+                "alpha": 0.9,
+                "strokeThickness": 10,
+                "strokeColor": "#000000",
+                "rotation": -15,
+                "visibleOnGameStart": "Yes",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "6PlaY_OdWcjPtXnTKlzp6",
+            "x": 25587,
+            "y": 30121,
+            "depth": 30120.9999667087,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "endOfGameWidget",
+            "options": {
+                "widgetType": "Image",
+                "widgetPlacement": "Featured",
+                "statisticProperty": "",
+                "gameTimeLabel": "",
+                "statisticLabel": "",
+                "imageStyle": "fullWidth",
+                "imageUrl": "/assets/map/modes/paint/magenta_win.jpg",
+                "imageHeight": 100,
+                "imageBackgroundColor": "#ffffff",
+                "showTo": "all",
+                "showForModeType": "all",
+                "activeOnGameStart": false,
+                "scope": "global",
+                "activateChannel": "magenta win",
+                "deactivateChannel": "tie, green win"
+            }
+        },
+        {
+            "id": "5tmNBIInVxOGvIUOw6igp",
+            "x": 25465,
+            "y": 30121,
+            "depth": 30120.9999667087,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "endOfGameWidget",
+            "options": {
+                "widgetType": "Image",
+                "widgetPlacement": "Featured",
+                "statisticProperty": "",
+                "gameTimeLabel": "",
+                "statisticLabel": "",
+                "imageStyle": "fullWidth",
+                "imageUrl": "/assets/map/modes/paint/tie.jpg",
+                "imageHeight": 100,
+                "imageBackgroundColor": "#ffffff",
+                "showTo": "all",
+                "showForModeType": "all",
+                "activeOnGameStart": true,
+                "scope": "global",
+                "activateChannel": "tie",
+                "deactivateChannel": "magenta win, green win"
+            }
+        },
+        {
+            "id": "ghcX-9wWISUWqUDDV_EL6",
+            "x": 25703,
+            "y": 30121,
+            "depth": 30120.9999667087,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "endOfGameWidget",
+            "options": {
+                "widgetType": "Image",
+                "widgetPlacement": "Featured",
+                "statisticProperty": "",
+                "gameTimeLabel": "",
+                "statisticLabel": "",
+                "imageStyle": "fullWidth",
+                "imageUrl": "/assets/map/modes/paint/green_win.jpg",
+                "imageHeight": 100,
+                "imageBackgroundColor": "#ffffff",
+                "showTo": "all",
+                "showForModeType": "all",
+                "activeOnGameStart": false,
+                "scope": "global",
+                "activateChannel": "green win",
+                "deactivateChannel": "tie, magenta win"
+            }
+        },
+        {
+            "id": "KQHAhh8fx-CDU2tWToEl8",
+            "x": 24511,
+            "y": 31644,
+            "depth": 31644.999996349216,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "teamSettings",
+            "options": {
+                "team": "1",
+                "teamName": "Team Magenta",
+                "whenPlayerJoinsTransmitOn": "",
+                "maxPlayers": 60,
+                "placementPriorityOnGameStart": 30,
+                "placementPriorityDuringGame": 30,
+                "allowCustomHostPlacement": true,
+                "color": "#fb10e5"
+            }
+        },
+        {
+            "id": "GTgzzRp7lCfityW0X__Co",
+            "x": 24565,
+            "y": 30995,
+            "depth": 30994.833342203663,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "movementMeter",
+            "options": {
+                "itemToTrack": "energy",
+                "drainAmount": 20,
+                "drainIntervalMs": 250,
+                "showOutOfItemAlert": false,
+                "outOfItemAlertTitle": "",
+                "outOfItemAlertContent": "",
+                "outOfItemChannel": "",
+                "speedWhenOutOfItem": 0,
+                "useAsDefault": true,
+                "warningAmount": 1000,
+                "showWarningAlert": false,
+                "warningAlertTitle": "",
+                "warningAlertContent": "",
+                "warningChannel": "",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "yiqyrZ8mLgXGMu2yT5gLX",
+            "x": 25466,
+            "y": 30401,
+            "depth": 30400.999897849117,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "endOfGameWidget",
+            "options": {
+                "widgetType": "Statistic",
+                "widgetPlacement": "Primary",
+                "statisticProperty": "tiles captured - class",
+                "gameTimeLabel": "",
+                "statisticLabel": "Total Tiles Captured (Entire Class)",
+                "imageStyle": "Contain",
+                "imageUrl": "",
+                "imageHeight": 100,
+                "imageBackgroundColor": "#ffffff",
+                "showTo": "gameOwners",
+                "showForModeType": "all",
+                "activeOnGameStart": true,
+                "scope": "player",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "VAZfSbpjow84JZnbq3TIb",
+            "x": 25514,
+            "y": 30685,
+            "depth": 30684.99990910475,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "endOfGameWidget",
+            "options": {
+                "widgetType": "Statistic",
+                "widgetPlacement": "Primary",
+                "statisticProperty": "tiles captured",
+                "gameTimeLabel": "",
+                "statisticLabel": "Total Tiles Captured",
+                "imageStyle": "Contain",
+                "imageUrl": "",
+                "imageHeight": 100,
+                "imageBackgroundColor": "#ffffff",
+                "showTo": "nonGameOwners",
+                "showForModeType": "all",
+                "activeOnGameStart": true,
+                "scope": "player",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "gVydgIfU88zDolzaInVDi",
+            "x": 25595,
+            "y": 29863,
+            "depth": 29862.9999667087,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "trigger",
+            "options": {
+                "channelToTrigger": "",
+                "triggerWhenReceivingOnChannel": "",
+                "visibleInGame": false,
+                "team": "__ANY_TEAM__",
+                "scope": "global",
+                "allowedModeType": "all",
+                "activeOnGameStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "activeScope": "global",
+                "triggeredByPlayerCollision": false
+            }
+        },
+        {
+            "id": "MspTtr_iqv2S5No_InN8d",
+            "x": 24974,
+            "y": 31306,
+            "depth": 31306.33333995607,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "property",
+            "options": {
+                "propertyName": "tiles",
+                "valueType": "number",
+                "defaultValueText": "",
+                "defaultValueNumber": 0,
+                "defaultValueBoolean": true,
+                "propertyType": "team",
+                "whenValueChangesBroadcastOnChannel": "",
+                "broadcastValueChangesOnGameStart": false
+            }
+        },
+        {
+            "id": "JrPXG3tnWI_qazqN32w-1",
+            "x": 25597,
+            "y": 29777,
+            "depth": -1862.4999722465873,
+            "deviceId": "lifecycle",
+            "options": {
+                "event": "gameEnding",
+                "transmitOnChannel": "capture"
+            }
+        }
+    ],
+    "codeGrids": {
+        "a9okyyFt8I7xDG7tWQxEK": {
+            "MJ6jU7g_v": {
+                "createdAt": 1733799151,
+                "json": {
+                    "blocks": {
+                        "languageVersion": 0,
+                        "blocks": [
+                            {
+                                "type": "message_correct_answer",
+                                "id": "w0qrxX17t@1CM{rkjME:",
+                                "x": 10,
+                                "y": 170,
+                                "inputs": {
+                                    "set_message_shown_when_player_answers_correctly": {
+                                        "block": {
+                                            "type": "text_join",
+                                            "id": "ClGXw%r`2c4iLJ9uV,y1",
+                                            "extraState": {
+                                                "itemCount": 3
+                                            },
+                                            "inputs": {
+                                                "ADD0": {
+                                                    "block": {
+                                                        "type": "text",
+                                                        "id": "NP}pOn.@vJi*V4_mzxHG",
+                                                        "fields": {
+                                                            "TEXT": "+"
+                                                        }
+                                                    }
+                                                },
+                                                "ADD1": {
+                                                    "block": {
+                                                        "type": "get_property",
+                                                        "id": "lwg[T[o9SddTzHkqbUA`",
+                                                        "inputs": {
+                                                            "get_property": {
+                                                                "block": {
+                                                                    "type": "text",
+                                                                    "id": "+)!U)2W]{])WV!i!oagk",
+                                                                    "fields": {
+                                                                        "TEXT": "energyPerQuestion"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "ADD2": {
+                                                    "block": {
+                                                        "type": "text",
+                                                        "id": ")r+}63nTlSvn@[D(+Tot",
+                                                        "fields": {
+                                                            "TEXT": " Energy"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "triggerType": "wire",
+                "updatedAt": 1733799215
+            }
+        },
+        "gVydgIfU88zDolzaInVDi": {
+            "OpM81hbD7": {
+                "createdAt": 1733813248,
+                "json": {
+                    "blocks": {
+                        "languageVersion": 0,
+                        "blocks": [
+                            {
+                                "type": "variables_set",
+                                "id": "i(z@^Y2Z0viV)p|$Y-#^",
+                                "x": 270,
+                                "y": 110,
+                                "fields": {
+                                    "VAR": {
+                                        "id": "_sI{-p)YiiXsSBGY/D|}"
+                                    }
+                                },
+                                "inputs": {
+                                    "VALUE": {
+                                        "block": {
+                                            "type": "get_team_score",
+                                            "id": "J^7Nr2m$CD(HP|!LFf-Y",
+                                            "inputs": {
+                                                "get_score_of_team": {
+                                                    "block": {
+                                                        "type": "math_number",
+                                                        "id": "P#@LO8+$.Bx}VqY2E[+h",
+                                                        "fields": {
+                                                            "NUM": 1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "next": {
+                                    "block": {
+                                        "type": "variables_set",
+                                        "id": "r=cYG(mX6jffU=9zS0J.",
+                                        "fields": {
+                                            "VAR": {
+                                                "id": "Zv@Q/h~fbt?1cR%S{u-U"
+                                            }
+                                        },
+                                        "inputs": {
+                                            "VALUE": {
+                                                "block": {
+                                                    "type": "get_team_score",
+                                                    "id": "6]HW.h5j6?#HVw2*k?n5",
+                                                    "inputs": {
+                                                        "get_score_of_team": {
+                                                            "block": {
+                                                                "type": "math_number",
+                                                                "id": "@]0-mz;w-mQI~Clpkh2z",
+                                                                "fields": {
+                                                                    "NUM": 2
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "next": {
+                                            "block": {
+                                                "type": "controls_if",
+                                                "id": "1t`)|9gBmNV?TW%.5Q[x",
+                                                "extraState": {
+                                                    "elseIfCount": 1,
+                                                    "hasElse": true
+                                                },
+                                                "inputs": {
+                                                    "IF0": {
+                                                        "block": {
+                                                            "type": "logic_compare",
+                                                            "id": "CP;np^6?5wh(yF%?j`XE",
+                                                            "fields": {
+                                                                "OP": "EQ"
+                                                            },
+                                                            "inputs": {
+                                                                "A": {
+                                                                    "block": {
+                                                                        "type": "variables_get",
+                                                                        "id": "b3YGk~froq+CA@XirBmm",
+                                                                        "fields": {
+                                                                            "VAR": {
+                                                                                "id": "_sI{-p)YiiXsSBGY/D|}"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "B": {
+                                                                    "block": {
+                                                                        "type": "variables_get",
+                                                                        "id": "(up?j35+E6WFTe%^jFtO",
+                                                                        "fields": {
+                                                                            "VAR": {
+                                                                                "id": "Zv@Q/h~fbt?1cR%S{u-U"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "DO0": {
+                                                        "block": {
+                                                            "type": "message_broadcaster",
+                                                            "id": "^=n=e=%r#$k?HUTtGUBG",
+                                                            "inputs": {
+                                                                "broadcast_message_on_channel": {
+                                                                    "block": {
+                                                                        "type": "text",
+                                                                        "id": "Q4+1?aC=@d`NSEC2Ft~D",
+                                                                        "fields": {
+                                                                            "TEXT": "tie"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "IF1": {
+                                                        "block": {
+                                                            "type": "logic_compare",
+                                                            "id": "e^:653khiVg%q8w@%]P3",
+                                                            "fields": {
+                                                                "OP": "GT"
+                                                            },
+                                                            "inputs": {
+                                                                "A": {
+                                                                    "block": {
+                                                                        "type": "variables_get",
+                                                                        "id": "5..jUJPpY5kS[A6-Hp}]",
+                                                                        "fields": {
+                                                                            "VAR": {
+                                                                                "id": "_sI{-p)YiiXsSBGY/D|}"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "B": {
+                                                                    "block": {
+                                                                        "type": "variables_get",
+                                                                        "id": "F|3U,iWh($,/zboNRG`P",
+                                                                        "fields": {
+                                                                            "VAR": {
+                                                                                "id": "Zv@Q/h~fbt?1cR%S{u-U"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "DO1": {
+                                                        "block": {
+                                                            "type": "message_broadcaster",
+                                                            "id": "SAi_ebIW@u1EDII*#EiM",
+                                                            "inputs": {
+                                                                "broadcast_message_on_channel": {
+                                                                    "block": {
+                                                                        "type": "text",
+                                                                        "id": "T]1+4SN21T0e6MDwh4;N",
+                                                                        "fields": {
+                                                                            "TEXT": "magenta win"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "ELSE": {
+                                                        "block": {
+                                                            "type": "message_broadcaster",
+                                                            "id": "]?TZ{+zZg~v@s/[s-gXD",
+                                                            "inputs": {
+                                                                "broadcast_message_on_channel": {
+                                                                    "block": {
+                                                                        "type": "text",
+                                                                        "id": "1tzL((Ef*``C_+@H3%#@",
+                                                                        "fields": {
+                                                                            "TEXT": "green win"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "variables": [
+                        {
+                            "name": "greenScore",
+                            "id": "Zv@Q/h~fbt?1cR%S{u-U"
+                        },
+                        {
+                            "name": "magentaScore",
+                            "id": "_sI{-p)YiiXsSBGY/D|}"
+                        }
+                    ]
+                },
+                "triggerType": "WHEN_TRIGGERED",
+                "updatedAt": 1733849786
+            }
+        }
+    }
+}

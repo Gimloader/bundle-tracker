@@ -1,5 +1,5 @@
 import { $ } from "bun";
-import { sendEmbed } from "./webhook";
+import { sendEmbed, sendError } from "./webhook";
 import { HandledError } from "../util";
 
 export async function rebaseToLatest() {
@@ -7,11 +7,10 @@ export async function rebaseToLatest() {
     const result = await $`git rebase --no-ff`.nothrow();
 
     if(result.exitCode !== 0) {
-        await sendEmbed({
-            title: "Failed to rebase",
-            description: `Could not rebase to latest commit before pushing changes. This will require manual fixing.`,
-            color: 14948890
-        });
+        await sendError(
+            "Failed to rebase",
+            "Could not rebase to latest commit before pushing changes. This will require manual fixing."
+        );
 
         await $`git rebase --abort`;
         throw new HandledError("Failed to rebase to latest commit");
@@ -38,6 +37,26 @@ export async function pushDataChanges() {
 
     await sendEmbed({
         title: "New updates to Gimkit's game data",
+        description: `**[View changes](https://github.com/Gimloader/bundle-tracker/commit/${hash})**\n${stat}`,
+        url: `https://github.com/Gimloader/bundle-tracker/commit/${hash}`,
+        color: 7220975
+    });
+}
+
+export async function pushMapChanges() {
+    const stat = await $`git diff --shortstat`.text();
+
+    const date = new Date();
+    const dateStr = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
+
+    await $`git add data`;
+    await $`git commit -m "Update map data (${dateStr})"`;
+    const hash = await $`git rev-parse HEAD`.text();
+
+    if(!Bun.env.WEBHOOK_URL) return;
+
+    await sendEmbed({
+        title: "New updates to Gimkit's map data",
         description: `**[View changes](https://github.com/Gimloader/bundle-tracker/commit/${hash})**\n${stat}`,
         url: `https://github.com/Gimloader/bundle-tracker/commit/${hash}`,
         color: 7220975

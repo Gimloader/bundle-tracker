@@ -1,26 +1,23 @@
-import { sendEmbed } from "../net/webhook";
-import { createGame, findServer, getSource, getToken } from "../net/fetch";
-import { Client } from "colyseus.js";
+import { sendError } from "../net/webhook";
+import { createCreativeGame, findServer, getRoom, getSource, getToken } from "../net/fetch";
 import { join } from "node:path";
 import { data, HandledError, prepareDataDir, writeJson } from "../util";
 import { checkIfChanges, pushDataChanges, rebaseToLatest } from "../net/git";
 
 export async function extractGamedata(push: boolean) {
     if(!process.env.CONNECT_SID) {
-        await sendEmbed({
-            title: "Cookie missing",
-            description: "Cannot fetch game data without a cookie manually specified.",
-            color: 14948890
-        });
+        await sendError(
+            "Cookie missing",
+            "Cannot fetch game data without a cookie manually specified.",
+        );
         throw new HandledError("CONNECT_SID environment variable missing");
     }
     
     if(!process.env.TOP_DOWN_MAP || !process.env.PLATFORMER_MAP) {
-        await sendEmbed({
-            title: "Map IDs missing",
-            description: "Cannot fetch game data without map IDs manually specified.",
-            color: 14948890
-        });
+        await sendError(
+            "Map IDs missing",
+            "Cannot fetch game data without map IDs manually specified.",
+        );
         throw new HandledError("TOP_DOWN_MAP or PLATFORMER_MAP environment variable missing");
     }
 
@@ -39,16 +36,10 @@ export async function extractGamedata(push: boolean) {
     if(push && await checkIfChanges()) await pushDataChanges();
     
     async function extractFromMap(mapId: string) {
-        const intentId = await createGame(mapId);
+        const intentId = await createCreativeGame(mapId);
         const source = await getSource(intentId);
         const serverUrl = await findServer(source);
-        const wsUrl = serverUrl.replace("https://", "wss://");
-        
-        const client = new Client(wsUrl);
-        const room = await client.create("MapRoom", {
-            intentId,
-            authToken
-        });
+        const room = await getRoom(serverUrl, intentId, authToken);
     
         return new Promise<void>((res, rej) => {
             let messagesGotten = 0;
