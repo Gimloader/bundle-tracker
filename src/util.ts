@@ -1,6 +1,13 @@
 import { writeFile, mkdir, rm } from "node:fs/promises";
 import { join, dirname } from "node:path";
 
+export class HandledError extends Error {
+    constructor(message: string) {
+        super(message);
+        this.name = "HandledError";
+    }
+}
+
 export const data = join(__dirname, "../", "data");
 
 export async function prepareDataDir(name: string) {

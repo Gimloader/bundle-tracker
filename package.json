@@ -3,14 +3,13 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "getCode": "bun run src/index.ts",
-    "getData": "bun run src/gamedata/index.ts"
+    "getCode": "bun run src/index.ts code",
+    "getData": "bun run src/index.ts gamedata"
   },
   "private": true,
   "devDependencies": {
     "@gimloader/types": "^2.1.0",
     "@types/bun": "latest",
-    "@types/cli-progress": "^3.11.6",
     "@types/js-beautify": "^1.14.3",
     "terser": "^5.49.0"
   },

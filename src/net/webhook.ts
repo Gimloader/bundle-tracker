@@ -1,3 +1,11 @@
+export async function sendError(title: string, description: string) {
+    await sendEmbed({
+        title,
+        description,
+        color: 14948890
+    });
+}
+
 export async function sendEmbed(embed: any) {
     const webhook = Bun.env.WEBHOOK_URL;
     if(!webhook) return;
