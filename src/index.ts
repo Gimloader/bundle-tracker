@@ -27,7 +27,9 @@ function quit() {
 }
 
 function onExtractError(err: unknown) {
-    console.error(err);
+    if(err instanceof Error) console.error(err, err.stack);
+    else console.error(err);
+
     if(err instanceof HandledError) process.exit(1);
 
     sendError("An Unexpected Error Occurred", `Failed to run ${extractor} extractor: ${err}`).then(() => {
